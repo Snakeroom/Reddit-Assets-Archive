@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.efad758ba56b5020a600.js
-// Retrieved at 10/25/2022, 7:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.937081a5fa6d6bc17386.js
+// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, r) {
@@ -1306,8 +1306,8 @@
 			const v = e => {
 				return Object(f.c)(e, {
 					experimentEligibilitySelector: f.a,
-					experimentName: b.wf
-				}) === b.Rd
+					experimentName: b.xf
+				}) === b.Sd
 			};
 			var x = r("./src/reddit/selectors/recapGame.ts"),
 				g = r("./src/reddit/selectors/user.ts"),
@@ -1346,7 +1346,7 @@
 						y && j(setTimeout(() => {
 							f.current && (f.current.classList.add(C.a.transform), f.current.style.width = `${N}px`)
 						}, 4750)), y && _(setTimeout(() => {
-							w(!1), Object(p.Sb)(L, !1)
+							w(!1), Object(p.Tb)(L, !1)
 						}, 5e3))
 					};
 				Object(n.useEffect)(() => {
@@ -1373,7 +1373,7 @@
 					},
 					onMouseLeave: B,
 					onClick: () => {
-						E && clearTimeout(E), S && clearTimeout(S), w(!1), Object(p.Sb)(L, !0), b((() => e => ({
+						E && clearTimeout(E), S && clearTimeout(S), w(!1), Object(p.Tb)(L, !0), b((() => e => ({
 							source: "recap",
 							action: "click",
 							noun: "feed_banana",
@@ -4221,7 +4221,7 @@
 				const t = Object(i.f)().getState(),
 					r = Object(b.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.dd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.dd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.dd.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.ed.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.ed.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.ed.LargeImagePreview ? e.reredditButtons : [];
 					return n.a.createElement(_, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -5539,7 +5539,7 @@
 					source: n.COMMUNITY_WIDGETS,
 					action: i.c.CLICK,
 					noun: s.SEE_MORE,
-					widget: Object(o.xb)(r, {
+					widget: Object(o.yb)(r, {
 						subredditId: e,
 						widgetKind: t
 					}),
@@ -5550,7 +5550,7 @@
 					action: i.c.CLICK,
 					noun: s.REREDDIT_PROMO,
 					post: o.K(r, e),
-					subreddit: o.jb(r),
+					subreddit: o.kb(r),
 					...t && {
 						banner: {
 							buttonText: t,
@@ -6264,4 +6264,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.efad758ba56b5020a600.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.937081a5fa6d6bc17386.js.map

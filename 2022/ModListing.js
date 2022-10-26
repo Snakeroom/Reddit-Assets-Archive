@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.dd8fc8b5d8c9837365a5.js
-// Retrieved at 10/25/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.65a81faf0d16c20c0bca.js
+// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, r) {
@@ -1681,14 +1681,14 @@
 			var z = Object(d.b)(Y, e => ({
 					hide: t => e(Object(m.hideSubreddit)(t))
 				}))(Object(F.c)(X)),
-				Z = r("./src/lib/lessComponent.tsx"),
-				W = r("./src/reddit/components/SubredditIcon/index.tsx"),
+				W = r("./src/lib/lessComponent.tsx"),
+				Z = r("./src/reddit/components/SubredditIcon/index.tsx"),
 				$ = r("./src/reddit/icons/fonts/Clear/index.tsx"),
 				ee = r("./src/reddit/selectors/profile.ts"),
 				te = r("./src/reddit/selectors/subreddit.ts"),
 				re = r("./src/reddit/components/ModListingSidebar/HideCommunities/SubredditsList/SubredditsListRow/index.m.less"),
 				ne = r.n(re);
-			const se = Z.a.wrapped(W.b, "SubredditIcon", ne.a),
+			const se = W.a.wrapped(Z.b, "SubredditIcon", ne.a),
 				ie = Object(a.c)({
 					isApiPending: K,
 					subredditOrProfile: (e, t) => {
@@ -1930,7 +1930,7 @@
 				const b = Object(o.e)(e => e.subreddits.survey[r]),
 					p = Object(o.e)(e => e.subreddits.progressModule[r]),
 					h = Object(o.e)(l.a),
-					f = h !== c.Ve.NewModule;
+					f = h !== c.We.NewModule;
 				return (null === (s = null == p ? void 0 : p.cards) || void 0 === s ? void 0 : s.length) > 0 && f ? i.a.createElement(m, {
 					closeModuleOnMount: !!t && t !== u.g.Large,
 					subredditId: r,
@@ -1992,15 +1992,15 @@
 			const o = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: i.R,
-						experimentName: n.xd
+						experimentName: n.yd
 					});
-					return !(!t || Object(n.yg)(t))
+					return !(!t || Object(n.zg)(t))
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: i.R,
-						experimentName: n.xd
-					}) === n.Vd.ListingEnabled
+						experimentName: n.yd
+					}) === n.Wd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/experiments/recapLeadUpGame.ts": function(e, t, r) {
@@ -2013,8 +2013,8 @@
 			const i = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.vf
-				}) === n.Rd
+					experimentName: n.wf
+				}) === n.Sd
 			}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, r) {
@@ -2146,4 +2146,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.dd8fc8b5d8c9837365a5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.65a81faf0d16c20c0bca.js.map

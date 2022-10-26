@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.c65d492ff5abd16fb528.js
-// Retrieved at 10/10/2022, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.8fddeee9db02a17ad265.js
+// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/components/CrowdControlAdoptionCampaign/CrowdControlModQueueCTA.m.less": function(e, t, n) {
@@ -37,7 +37,7 @@
 			var E = n("./src/reddit/icons/fonts/index.tsx"),
 				h = n("./src/reddit/components/CrowdControlAdoptionCampaign/CrowdControlModQueueCTA.m.less"),
 				g = n.n(h);
-			var w = e => {
+			var k = e => {
 					let {
 						subredditName: t,
 						onDismiss: n
@@ -48,7 +48,7 @@
 							source: "modqueue",
 							action: "view",
 							noun: "cc_banner",
-							subreddit: N.jb(e),
+							subreddit: N.kb(e),
 							...N.o(e)
 						}))())
 					}, [o]);
@@ -75,7 +75,7 @@
 								source: "modqueue",
 								action: "click",
 								noun: "cc_banner",
-								subreddit: N.jb(e),
+								subreddit: N.kb(e),
 								...N.o(e)
 							}))())
 						}
@@ -89,7 +89,7 @@
 								source: "modqueue",
 								action: "dismiss",
 								noun: "cc_banner",
-								subreddit: N.jb(e),
+								subreddit: N.kb(e),
 								...N.o(e)
 							}))()), n()
 						},
@@ -102,19 +102,19 @@
 						})
 					}))
 				},
-				k = n("./src/reddit/components/CrowdControlAdoptionCampaign/useCrowdControlCampaign.tsx"),
+				w = n("./src/reddit/components/CrowdControlAdoptionCampaign/useCrowdControlCampaign.tsx"),
 				v = n("./src/reddit/components/ModHub/InfoLink/index.tsx"),
 				L = n("./src/reddit/components/ModHub/StyledComponents/index.tsx"),
 				M = n("./src/reddit/components/ModQueueActivitySummaryCards/async.ts"),
 				O = n("./src/reddit/components/ModQueueList/index.tsx"),
 				D = n("./src/reddit/components/ModQueueList/LayoutNavigation.tsx"),
-				j = n("./src/reddit/components/ModHub/Content/index.m.less"),
-				Q = n.n(j);
+				Q = n("./src/reddit/components/ModHub/Content/index.m.less"),
+				S = n.n(Q);
 			t.default = e => {
 				const {
 					showCrowdControlCampaign: t,
 					dismissCrowdControlCampaign: n
-				} = Object(k.a)(), r = Object(c.d)(), C = Object(i.useCallback)(a()(() => r(Object(b.a)(e.subredditId)), 1e3), []), x = Object(i.useMemo)(() => ({
+				} = Object(w.a)(), r = Object(c.d)(), C = Object(i.useCallback)(a()(() => r(Object(b.a)(e.subredditId)), 1e3), []), x = Object(i.useMemo)(() => ({
 					input: {
 						channel: {
 							teamOwner: "MOD",
@@ -124,12 +124,12 @@
 					}
 				}), [e.subredditId]);
 				return d.a.createElement(L.a, {
-					className: Object(l.a)(Q.a.container, e.layout === p.g.Large ? Q.a.isLargePostLayout : void 0)
-				}, t && d.a.createElement(w, {
+					className: Object(l.a)(S.a.container, e.layout === p.g.Large ? S.a.isLargePostLayout : void 0)
+				}, t && d.a.createElement(k, {
 					subredditName: e.subredditName,
 					onDismiss: n
 				}), d.a.createElement("div", {
-					className: Q.a.titleContainer
+					className: S.a.titleContainer
 				}, d.a.createElement(L.b, null, (e => {
 					switch (e) {
 						case "modqueue":
@@ -160,7 +160,7 @@
 				})(e.pageName), d.a.createElement(v.a, {
 					linkUrl: `${o.a.redditModHelpUrl}/hc/en-us/articles/360010090132`
 				})), e.isRealtimeMQUpdatesExperimentEnabled ? d.a.createElement(d.a.Fragment, null, d.a.createElement(M.a, {
-					className: Q.a.modActivity
+					className: S.a.modActivity
 				}), d.a.createElement(u.a, {
 					variables: x,
 					onData: C,
@@ -214,4 +214,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.c65d492ff5abd16fb528.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.8fddeee9db02a17ad265.js.map

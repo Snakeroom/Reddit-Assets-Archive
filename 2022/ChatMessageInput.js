@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.04e74e1f7d7ac953b844.js
-// Retrieved at 10/25/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.a6c2ad3bb85301db5468.js
+// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, s) {},
@@ -582,9 +582,9 @@
 				j = s("./src/telemetry/index.ts");
 			const C = e => ({
 				...v.o(e),
-				screen: v.bb(e),
+				screen: v.cb(e),
 				profile: v.T(e),
-				subreddit: v.jb(e)
+				subreddit: v.kb(e)
 			});
 			var x = s("./src/reddit/helpers/trackers/postComposer.ts"),
 				E = s("./src/reddit/models/PostCreationForm/index.ts"),
@@ -2108,7 +2108,7 @@
 					if (t) {
 						const s = a.C(e, t.post.id),
 							r = a.K(e, t.post.id),
-							n = a.jb(e);
+							n = a.kb(e);
 						if (t.post.authorInfo && r && (r.authorId = t.post.authorInfo.id), s) {
 							s.streamPublicId = t.stream.stream_id, s.id = t.stream.stream_id;
 							const r = Object(o.j)(e, {
@@ -2123,7 +2123,7 @@
 						}
 					}
 					return {
-						subreddit: a.jb(e)
+						subreddit: a.kb(e)
 					}
 				},
 				c = (e, t, s) => {
@@ -2302,7 +2302,7 @@
 					action: "view",
 					noun: "post",
 					profile: a.T(t),
-					screen: a.bb(t),
+					screen: a.cb(t),
 					...i(t, e)
 				}),
 				F = e => t => {
@@ -2312,7 +2312,7 @@
 						action: "consume",
 						noun: "post",
 						profile: a.T(t),
-						screen: a.bb(t),
+						screen: a.cb(t),
 						...s
 					}
 				},
@@ -2333,7 +2333,7 @@
 					action: "click",
 					noun: "subscribe",
 					...i(t, e),
-					targetSubreddit: a.jb(t)
+					targetSubreddit: a.kb(t)
 				}),
 				L = (e, t) => s => ({
 					source: "stream_player",
@@ -3063,4 +3063,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.04e74e1f7d7ac953b844.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.a6c2ad3bb85301db5468.js.map

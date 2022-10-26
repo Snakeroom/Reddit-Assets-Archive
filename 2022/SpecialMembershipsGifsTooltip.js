@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.e2da59cf4b579b5cd9f3.js
-// Retrieved at 10/24/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.676b15ea895ebd8d04f7.js
+// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SpecialMembershipsGifsTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/BaseTooltip.m.less": function(e, t, s) {
@@ -124,10 +124,10 @@
 				_ = s("./src/reddit/selectors/economics.ts"),
 				v = s("./src/reddit/components/RichTextEditor/helpers/common.ts"),
 				C = s("./src/reddit/components/RichTextEditor/media/helpers.ts");
-			let k;
+			let I;
 
-			function I() {
-				k || (k = fetch("https://meta.redditmedia.com/public/fortnitebr/giphy_blacklist.json").then(e => e.json()))
+			function k() {
+				I || (I = fetch("https://meta.redditmedia.com/public/fortnitebr/giphy_blacklist.json").then(e => e.json()))
 			}
 			var w = s("./node_modules/lodash/debounce.js"),
 				G = s.n(w),
@@ -240,7 +240,7 @@
 					}
 				}
 				componentDidMount() {
-					this.mounted = !0, !this.state.query && this.state.loading && this.loadTrendingGifs(), I()
+					this.mounted = !0, !this.state.query && this.state.loading && this.loadTrendingGifs(), k()
 				}
 				componentWillUnmount() {
 					this.mounted = !1
@@ -263,7 +263,7 @@
 					} = this.state;
 					!e && s && null !== t && (await
 						function(e) {
-							return I(), k.then(t => {
+							return k(), I.then(t => {
 								return !!e.split(" ").concat(e).find(e => -1 !== t.indexOf(e.toLowerCase()))
 							}).catch(() => !1)
 						}(s) || (this.setState({
@@ -541,7 +541,7 @@
 						source: "meta",
 						action: e,
 						noun: "transaction",
-						subreddit: Object(i.kb)(a, s),
+						subreddit: Object(i.lb)(a, s),
 						actionInfo: {
 							settingValue: t,
 							reason: n
@@ -557,7 +557,7 @@
 					source: "meta",
 					action: "open",
 					noun: "gif_tooltip",
-					subreddit: t ? Object(i.kb)(s, t) : void 0,
+					subreddit: t ? Object(i.lb)(s, t) : void 0,
 					correlationId: e,
 					...Object(i.o)(s)
 				}),
@@ -565,7 +565,7 @@
 					source: "meta",
 					action: "open",
 					noun: "gif_upsell",
-					subreddit: t ? Object(i.kb)(s, t) : void 0,
+					subreddit: t ? Object(i.lb)(s, t) : void 0,
 					correlationId: e,
 					...Object(i.o)(s)
 				})
@@ -583,7 +583,7 @@
 					action: "change",
 					noun: "gif_tooltip_search",
 					correlationId: s,
-					subreddit: t ? i.kb(o, t) : void 0,
+					subreddit: t ? i.lb(o, t) : void 0,
 					post: i.k(o),
 					search: {
 						query: e
@@ -598,7 +598,7 @@
 						action: "select",
 						noun: "gif_tooltip_result",
 						correlationId: s,
-						subreddit: t ? i.kb(o, t) : void 0,
+						subreddit: t ? i.lb(o, t) : void 0,
 						post: i.k(o),
 						actionInfo: {
 							...n.actionInfo,
@@ -624,4 +624,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.e2da59cf4b579b5cd9f3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.676b15ea895ebd8d04f7.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.3b5ec339be98aa4bc065.js
-// Retrieved at 10/25/2022, 7:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.37148a2ec10f39e932f4.js
+// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -724,7 +724,7 @@
 					} = Ze,
 					[Qe, Je] = Object(n.useState)(!1),
 					$e = Object(n.useCallback)(() => {
-						Je(!Qe), Object(te.Qb)(), Le(Object(re.d)(_e))
+						Je(!Qe), Object(te.Rb)(), Le(Object(re.d)(_e))
 					}, [Qe, _e, Le]);
 				let Ye = r.a.createElement(Q.a, {
 					className: le.a.classicThumbnail,
@@ -4459,7 +4459,7 @@
 					}, i.a.createElement(h.b, {
 						textColor: c
 					})), i.a.createElement(O, {
-						qrCodeAsset: (() => n === f.ad.Enabled || r === f.sb.BlurredPreview || r === f.sb.NoPreview ? j.d2x_nsfw_signup_blocking_de_v1 : j.d2x_nsfw_signup_blocking_non_us_v1)()
+						qrCodeAsset: (() => n === f.bd.Enabled || r === f.sb.BlurredPreview || r === f.sb.NoPreview ? j.d2x_nsfw_signup_blocking_de_v1 : j.d2x_nsfw_signup_blocking_non_us_v1)()
 					}))
 				}
 		},
@@ -5148,9 +5148,9 @@
 					action: r.c.VIEW,
 					noun: "aggregate_stats",
 					source: "creator_stats",
-					subreddit: Object(o.jb)(s),
+					subreddit: Object(o.kb)(s),
 					post: Object(o.K)(s, e),
-					userSubreddit: Object(o.tb)(s),
+					userSubreddit: Object(o.ub)(s),
 					actionInfo: Object(o.d)(s, {
 						reason: i(t)
 					})
@@ -5161,8 +5161,8 @@
 					noun: e,
 					source: "creator_stats",
 					post: Object(o.K)(s, t),
-					subreddit: Object(o.jb)(s),
-					userSubreddit: Object(o.tb)(s)
+					subreddit: Object(o.kb)(s),
+					userSubreddit: Object(o.ub)(s)
 				}),
 				d = e => {
 					switch (e) {
@@ -5210,7 +5210,7 @@
 						reason: "stats"
 					}),
 					post: Object(o.K)(c, e, void 0, a),
-					subreddit: Object(o.jb)(c),
+					subreddit: Object(o.kb)(c),
 					outbound: {
 						postId: s,
 						url: t,
@@ -5228,7 +5228,7 @@
 						reason: d(t)
 					}),
 					post: Object(o.K)(n, e, void 0, s),
-					subreddit: Object(o.jb)(n)
+					subreddit: Object(o.kb)(n)
 				})
 		},
 		"./src/reddit/helpers/trackers/talkCreation.ts": function(e, t, s) {
@@ -5273,10 +5273,10 @@
 					source: "liveaudio",
 					action: r.c.CLICK,
 					noun: "go_live",
-					subreddit: i.jb(e),
+					subreddit: i.kb(e),
 					liveAudioRoom: {
-						title: Object(o.ub)(e),
-						topicIds: Object(o.tb)(e).topics.map(e => e.id)
+						title: Object(o.vb)(e),
+						topicIds: Object(o.ub)(e).topics.map(e => e.id)
 					}
 				}),
 				l = () => e => ({
@@ -5284,10 +5284,10 @@
 					source: "liveaudio",
 					action: r.c.CLICK,
 					noun: "schedule",
-					subreddit: i.jb(e),
+					subreddit: i.kb(e),
 					liveAudioRoom: {
-						title: Object(o.ub)(e),
-						topicIds: Object(o.tb)(e).topics.map(e => e.id)
+						title: Object(o.vb)(e),
+						topicIds: Object(o.ub)(e).topics.map(e => e.id)
 					}
 				}),
 				m = () => e => ({
@@ -5295,9 +5295,9 @@
 					source: "post_composer",
 					action: r.c.CLICK,
 					noun: "overflow",
-					subreddit: i.jb(e),
+					subreddit: i.kb(e),
 					liveAudioRoom: {
-						title: Object(o.ub)(e)
+						title: Object(o.vb)(e)
 					}
 				}),
 				u = e => t => ({
@@ -5305,7 +5305,7 @@
 					source: "global",
 					action: r.c.VIEW,
 					noun: r.b.SCREEN,
-					subreddit: i.jb(t),
+					subreddit: i.kb(t),
 					post: i.K(t, e),
 					postEvent: {
 						eventState: n.a.Future
@@ -5915,10 +5915,10 @@
 				r = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: r.ng,
+					experimentName: r.og,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				a = Object(n.a)(i, e => e === r.eg)
+				a = Object(n.a)(i, e => e === r.fg)
 		},
 		"./src/redditGQL/operations/CreateLiveAudioRoomOnProfile.json": function(e) {
 			e.exports = JSON.parse('{"id":"e35a47c6aa21"}')
@@ -5949,4 +5949,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.3b5ec339be98aa4bc065.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.37148a2ec10f39e932f4.js.map

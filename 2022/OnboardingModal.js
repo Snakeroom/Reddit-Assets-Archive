@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.88f7e869552d09a817a0.js
-// Retrieved at 10/25/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.4b0b2222b7510aaf6136.js
+// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -378,7 +378,7 @@
 				W = n("./src/lib/initializeClient/installReducer.ts"),
 				H = n("./src/reddit/reducers/features/marketplace/index.ts"),
 				U = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const Q = Object(U.a)(b.Wd);
+			const Q = Object(U.a)(b.Xd);
 			Object(W.a)({
 				features: {
 					marketplace: H.a
@@ -414,7 +414,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.yg)(p),
+						includeInterestTopics: !!p && !Object(b.zg)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: h && !(null === (s = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === s ? void 0 : s.total),
@@ -1749,7 +1749,7 @@
 						showAllLanguage: d,
 						toggleLanguageSelection: u
 					} = e;
-					const [m, p] = Object(a.useState)(!1), b = Object(i.e)(Z.eb), g = Object(i.e)(je.f) === Ce.cd.TopTwo, f = Object(i.e)(ke.b), h = Object(_.a)();
+					const [m, p] = Object(a.useState)(!1), b = Object(i.e)(Z.eb), g = Object(i.e)(je.f) === Ce.dd.TopTwo, f = Object(i.e)(ke.b), h = Object(_.a)();
 					Object(a.useEffect)(() => {
 						h(s ? Object(F.H)(f) : Object(F.z)(f))
 					}, [f, s, h]);
@@ -2148,7 +2148,7 @@
 						const n = Object(Le.b)(e, t.draftId),
 							s = t.destSubreddit || n.destSubreddit;
 						if (!n || !s.name) return;
-						const r = Object(Le.hb)(e),
+						const r = Object(Le.ib)(e),
 							a = {
 								...n,
 								destSubreddit: s,
@@ -2967,7 +2967,7 @@
 				const Ee = Object(i.e)(ke.b),
 					Se = Object(i.e)(ke.j),
 					ye = Object(i.e)(je.f),
-					Ne = ye === Ce.cd.TopTwo || ye === Ce.cd.All,
+					Ne = ye === Ce.dd.TopTwo || ye === Ce.dd.All,
 					Te = Object(a.useCallback)(async e => {
 						de(!0);
 						const n = await bn(e, t, Se);
@@ -2986,9 +2986,9 @@
 					Re = Object(i.e)(Z.T),
 					Le = Object(i.e)(ke.g),
 					Fe = Object(i.e)(Cn.a),
-					Ae = Fe === Ce.fg.CloseOnboarding,
-					Ge = Fe === Ce.fg.SkipTopicSelection,
-					Be = Fe === Ce.fg.SmartSignal,
+					Ae = Fe === Ce.gg.CloseOnboarding,
+					Ge = Fe === Ce.gg.SkipTopicSelection,
+					Be = Fe === Ce.gg.SmartSignal,
 					Me = Object(a.useCallback)(() => {
 						s(Object(b.g)(Ht.a.ONBOARDING_MODAL_D2X)), Pe && s(Object(g.h)()), h && (r(Object(F.t)()), Object(hn.a)()), Le && Re && s(Object(m.startChangeUsernameFlow)())
 					}, [s, Re, Le, h, Pe, r]),
@@ -5089,8 +5089,8 @@
 			const a = e => {
 				return !(Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.Ce
-				}) === s.Rd)
+					experimentName: s.De
+				}) === s.Sd)
 			}
 		},
 		"./src/reddit/selectors/experiments/inAppNotification.ts": function(e, t, n) {
@@ -5267,4 +5267,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.88f7e869552d09a817a0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.4b0b2222b7510aaf6136.js.map

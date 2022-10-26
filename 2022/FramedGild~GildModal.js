@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.9ec0902411d7a383d91e.js
-// Retrieved at 10/25/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.17b0bcd57d0af9e12ca6.js
+// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -3007,7 +3007,7 @@
 					const {
 						isAnonymous: e
 					} = this.props;
-					Object(p.Ab)(e)
+					Object(p.Bb)(e)
 				}
 				componentDidMount() {
 					document.addEventListener("keydown", this.handleEscapeKey);
@@ -3155,7 +3155,7 @@
 						})
 					})),
 					setIsAnonymous: t => {
-						e(Object(x.setIsAnonymous)(t)), Object(p.Ab)(t)
+						e(Object(x.setIsAnonymous)(t)), Object(p.Bb)(t)
 					},
 					subredditAboutRequested: t => e(Object(C.u)(t)),
 					subredditLockedCoinsRequested: (t, r) => e(Object(O.a)(t, r)),
@@ -4610,7 +4610,7 @@
 									...r.actionInfo,
 									reason: this.props.node.id
 								},
-								subreddit: p.jb(t)
+								subreddit: p.kb(t)
 							}
 						})
 					}
@@ -5006,12 +5006,12 @@
 						rtJsonElementProps: o
 					});
 					switch (a) {
-						case h.Yf.SmIcon:
+						case h.Zf.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case h.Yf.SmIconHc:
+						case h.Zf.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -5462,7 +5462,7 @@
 				p = e => ({
 					...u.o(e),
 					source: s,
-					screen: u.bb(e),
+					screen: u.cb(e),
 					discoveryUnit: {
 						id: "xd_100",
 						name: n.SUBREDDIT_HOVERCARD,
@@ -5508,7 +5508,7 @@
 					const n = Object(i.b)(r) ? r.belongsTo.id : r.subredditId;
 					return {
 						post: u.K(e, r.id),
-						subreddit: u.kb(e, n),
+						subreddit: u.lb(e, n),
 						...b(e, t)
 					}
 				},
@@ -5521,8 +5521,8 @@
 					source: "global",
 					action: a.c.VIEW,
 					noun: n.SUBREDDIT_HOVERCARD,
-					subreddit: u.lb(t, e),
-					screen: u.bb(t)
+					subreddit: u.mb(t, e),
+					screen: u.cb(t)
 				}),
 				v = (e, t) => r => ({
 					...p(r),
@@ -5530,8 +5530,8 @@
 					action: a.c.VIEW,
 					noun: n.ITEM_POST,
 					post: u.K(r, t),
-					subreddit: u.lb(r, e),
-					screen: u.bb(r)
+					subreddit: u.mb(r, e),
+					screen: u.cb(r)
 				}),
 				O = (e, t) => r => ({
 					...p(r),
@@ -5539,26 +5539,26 @@
 					action: a.c.CLICK,
 					noun: n.ITEM_POST,
 					post: u.K(r, t),
-					subreddit: u.lb(r, e),
-					screen: u.bb(r)
+					subreddit: u.mb(r, e),
+					screen: u.cb(r)
 				}),
 				x = e => t => ({
 					...p(t),
-					subreddit: u.kb(t, e) || null,
+					subreddit: u.lb(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: a.c.CLICK,
 					noun: n.HEADER_SUBREDDIT
 				}),
 				w = e => t => ({
 					...p(t),
-					subreddit: u.kb(t, e) || null,
+					subreddit: u.lb(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: a.c.CLICK,
 					noun: n.HEADER_SUBREDDIT_SUBSCRIBE
 				}),
 				j = e => t => ({
 					...p(t),
-					subreddit: u.kb(t, e) || null,
+					subreddit: u.lb(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: a.c.CLICK,
 					noun: n.HEADER_SUBREDDIT_UNSUBSCRIBE
@@ -6181,12 +6181,12 @@
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.Sf
+						experimentName: n.Tf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.Yf.SmIcon || t === n.Yf.SmIconHc
+					return t === n.Zf.SmIcon || t === n.Zf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -6236,4 +6236,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.9ec0902411d7a383d91e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.17b0bcd57d0af9e12ca6.js.map

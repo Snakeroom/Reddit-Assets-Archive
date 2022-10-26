@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.4e9b380e3e35d9ac6131.js
-// Retrieved at 10/25/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.393101715c0a54ae0801.js
+// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -617,7 +617,7 @@
 				poll: Object(i.P)(e, t),
 				post: Object(i.K)(e, t),
 				predictions: Object(i.Q)(e, t),
-				subreddit: Object(i.jb)(e)
+				subreddit: Object(i.kb)(e)
 			});
 			var d = n("./src/reddit/hooks/useTracking.ts"),
 				l = n("./src/reddit/models/Prediction/index.ts"),
@@ -1255,10 +1255,10 @@
 					source: "liveaudio",
 					action: r.c.CLICK,
 					noun: "go_live",
-					subreddit: s.jb(e),
+					subreddit: s.kb(e),
 					liveAudioRoom: {
-						title: Object(a.ub)(e),
-						topicIds: Object(a.tb)(e).topics.map(e => e.id)
+						title: Object(a.vb)(e),
+						topicIds: Object(a.ub)(e).topics.map(e => e.id)
 					}
 				}),
 				l = () => e => ({
@@ -1266,10 +1266,10 @@
 					source: "liveaudio",
 					action: r.c.CLICK,
 					noun: "schedule",
-					subreddit: s.jb(e),
+					subreddit: s.kb(e),
 					liveAudioRoom: {
-						title: Object(a.ub)(e),
-						topicIds: Object(a.tb)(e).topics.map(e => e.id)
+						title: Object(a.vb)(e),
+						topicIds: Object(a.ub)(e).topics.map(e => e.id)
 					}
 				}),
 				u = () => e => ({
@@ -1277,9 +1277,9 @@
 					source: "post_composer",
 					action: r.c.CLICK,
 					noun: "overflow",
-					subreddit: s.jb(e),
+					subreddit: s.kb(e),
 					liveAudioRoom: {
-						title: Object(a.ub)(e)
+						title: Object(a.vb)(e)
 					}
 				}),
 				m = e => t => ({
@@ -1287,7 +1287,7 @@
 					source: "global",
 					action: r.c.VIEW,
 					noun: r.b.SCREEN,
-					subreddit: s.jb(t),
+					subreddit: s.kb(t),
 					post: s.K(t, e),
 					postEvent: {
 						eventState: o.a.Future
@@ -1338,4 +1338,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.4e9b380e3e35d9ac6131.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.393101715c0a54ae0801.js.map

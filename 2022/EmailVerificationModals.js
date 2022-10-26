@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmailVerificationModals.df409293456cc21bf0f6.js
-// Retrieved at 10/25/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailVerificationModals.e87bad93b4b05a3380ba.js
+// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailVerificationModals"], {
 		"./src/lib/colors/constants.ts": function(e, t, a) {
@@ -367,12 +367,12 @@
 				Q = a("./src/reddit/selectors/meta.ts"),
 				Y = a("./src/reddit/components/Settings/DeactivateModal.tsx"),
 				V = a("./src/reddit/components/Settings/VerifyEmailModal.m.less"),
-				X = a.n(V);
-			const q = Object(l.c)({
+				q = a.n(V);
+			const X = Object(l.c)({
 					emailDigests: v.n,
 					isEmailPermissionRequired: Q.e
 				}),
-				z = Object(i.b)(q, e => ({
+				z = Object(i.b)(X, e => ({
 					resendEmail: () => e(Object(p.v)()),
 					toggleEmailDigests: t => e(Object(H.J)({
 						emailDigests: t
@@ -395,30 +395,30 @@
 						resendEmail: i
 					} = this.props, l = !!e;
 					return o.a.createElement(x.a, {
-						className: Object(r.a)(X.a.container, {
+						className: Object(r.a)(q.a.container, {
 							[k.a["m-responsive"]]: a
 						}),
 						description: o.a.createElement(o.a.Fragment, null, n.fbt._("Please check your email. If you do not receive it, please check it was not flagged as spam or try resending the email below.", null, {
 							hk: "1taLkO"
 						}), !t && o.a.createElement("span", {
-							className: X.a.reviewSettings
+							className: q.a.reviewSettings
 						}, ` ${n.fbt._("You can also",null,{hk:"14h75w"})} `, o.a.createElement(W.default, {
-							className: X.a.settingsLink,
+							className: q.a.settingsLink,
 							onMouseDown: this.trackEmailSettingsLinkClick,
 							to: "/settings"
 						}, n.fbt._("review your email settings", null, {
 							hk: "3eTpv8"
 						})), ` ${n.fbt._("to control what type of email you receive.",null,{hk:"bg4j6"})}`)),
-						descriptionClassName: X.a.description,
+						descriptionClassName: q.a.description,
 						icon: o.a.createElement(P, null),
 						onClose: s,
 						title: n.fbt._("Verification email sent", null, {
 							hk: "3rXaUZ"
 						})
 					}, t && o.a.createElement(Y.a, {
-						className: X.a.checkboxWrapper
+						className: q.a.checkboxWrapper
 					}, o.a.createElement(J.a, {
-						className: Object(r.a)(X.a.checkbox, !l && X.a.unchecked),
+						className: Object(r.a)(q.a.checkbox, !l && q.a.unchecked),
 						checkBoxStyle: {
 							backgroundColor: R.e,
 							borderRadius: "50%",
@@ -428,7 +428,7 @@
 						isCheckboxSelected: l,
 						toggleCheckbox: this.toggleEmailDigests
 					}), o.a.createElement("label", {
-						className: X.a.checkboxLabel,
+						className: q.a.checkboxLabel,
 						onClick: this.toggleEmailDigests
 					}, n.fbt._("You agree that Reddit can send you emails to help notify you of the best content and responses to you posts. Unsubscribe anytime!", null, {
 						hk: "2OiNgc"
@@ -458,8 +458,8 @@
 					checkEmailModalOpen: Object(ee.b)(T.c),
 					isEmailPermissionRequired: Q.e,
 					isResponsiveSettingsEnabled: te.a,
-					setEmailModalOpen: Object(ee.b)(T.g),
-					verifyEmailModalOpen: Object(ee.b)(T.p)
+					setEmailModalOpen: Object(ee.b)(T.h),
+					verifyEmailModalOpen: Object(ee.b)(T.q)
 				}),
 				oe = Object(i.b)(se, (e, t) => {
 					let {
@@ -470,7 +470,7 @@
 							a && e(Object(d.b)()), e(Object(m.g)(T.a))
 						},
 						closeSetEmailModal: () => e(Object(c.b)()),
-						closeVerifyEmailModal: () => e(Object(m.g)(T.p)),
+						closeVerifyEmailModal: () => e(Object(m.g)(T.q)),
 						toggleCheckEmailModal: () => e(Object(m.i)(T.c))
 					}
 				}),
@@ -1089,4 +1089,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.df409293456cc21bf0f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.e87bad93b4b05a3380ba.js.map

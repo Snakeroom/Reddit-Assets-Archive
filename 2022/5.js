@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/5.bea80493f7bcc3586a82.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/5.d0355c462354367e08f5.js
+// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[5], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -230,11 +230,11 @@
 				V = Object(r.b)(B, e => ({
 					closeUserInputModal: () => e(Object(i.a)())
 				})),
-				U = Object(l.a)(e => e.action && e.onAction ? a.a.createElement(S, {
+				L = Object(l.a)(e => e.action && e.onAction ? a.a.createElement(S, {
 					action: e.action,
 					onAction: e.onAction
 				}) : null);
-			t.default = V(e => a.a.createElement(U, P({}, e, {
+			t.default = V(e => a.a.createElement(L, P({}, e, {
 				withOverlay: !0,
 				onOverlayClick: e.closeUserInputModal
 			})))
@@ -702,7 +702,12 @@
 				const n = e.size || o.d.XS;
 				return a.a.createElement("button", {
 					"aria-checked": e.on,
-					className: Object(r.a)(i.a.toggleSwitch, e.className, i.a[n], {
+					className: Object(r.a)(i.a.toggleSwitch, e.className, {
+						[i.a.xs]: n === o.d.XS,
+						[i.a.s]: n === o.d.S,
+						[i.a.m]: n === o.d.M,
+						[i.a.l]: n === o.d.L,
+						[i.a.xl]: n === o.d.XL,
 						[i.a.mActive]: e.on && !e.disabled || e.forceOn && e.on,
 						[i.a.mDisabled]: e.disabled,
 						[i.a.redditStyle]: e.redditStyle
@@ -807,4 +812,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/5.bea80493f7bcc3586a82.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/5.d0355c462354367e08f5.js.map

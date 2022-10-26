@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Avatar.a43eb792dcb0962fe81c.js
-// Retrieved at 10/25/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Avatar.a97555c03172f2bddfae.js
+// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Avatar"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, a) {
@@ -65,13 +65,13 @@
 						activeDetails: M,
 						activeTab: T,
 						activeMeSubpage: R,
-						shopTabState: y
-					} = a, C = Object(r.useMemo)(() => ({
+						shopTabState: C
+					} = a, y = Object(r.useMemo)(() => ({
 						activeTab: T || void 0,
 						activeMeSubpage: R || void 0,
 						activeDetails: M || void 0,
-						shopTabState: y || void 0
-					}), [M, T, R, y]), I = Object(c.e)(e => !Object(m.R)(e) && Object(p.z)(e));
+						shopTabState: C || void 0
+					}), [M, T, R, C]), I = Object(c.e)(e => !Object(m.R)(e) && Object(p.z)(e));
 					if (!E || !j) return null;
 					if (I) return s.a.createElement("div", {
 						className: Object(o.a)(O.a.container, {
@@ -97,10 +97,10 @@
 							[O.a.containerExp]: g
 						})
 					}, k ? s.a.createElement(n.a, f({}, N, {
-						navState: C
+						navState: y
 					}), s.a.createElement(n.b, null)) : s.a.createElement(_, f({}, a, {
 						appWrapperProps: N,
-						navState: C
+						navState: y
 					})))
 				},
 				_ = e => {
@@ -261,8 +261,8 @@
 			}));
 			var n = a("./src/reddit/constants/experiments.ts"),
 				r = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const s = Object(r.a)(n.yd)
+			const s = Object(r.a)(n.zd)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.a43eb792dcb0962fe81c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.a97555c03172f2bddfae.js.map

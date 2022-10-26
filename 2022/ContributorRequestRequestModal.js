@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.f56351085037ded4d13b.js
-// Retrieved at 10/24/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.a534c1c3ddb4206b6840.js
+// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ContributorRequestRequestModal"], {
 		"./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less": function(e, t, a) {
@@ -26,7 +26,7 @@
 			a.r(t), a.d(t, "ModalHeader", (function() {
 				return S
 			})), a.d(t, "ModalTitle", (function() {
-				return k
+				return j
 			})), a.d(t, "CloseIcon", (function() {
 				return N
 			}));
@@ -55,9 +55,9 @@
 				g = a("./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less"),
 				F = a.n(g),
 				I = a("./src/lib/lessComponent.tsx");
-			const j = I.a.wrapped(m.e, "ModalBody", F.a),
+			const k = I.a.wrapped(m.e, "ModalBody", F.a),
 				S = I.a.wrapped(m.i, "ModalHeader", F.a),
-				k = I.a.div("ModalTitle", F.a),
+				j = I.a.div("ModalTitle", F.a),
 				M = I.a.div("Title", F.a),
 				O = I.a.div("Description", F.a),
 				N = I.a.wrapped(m.b, "CloseIcon", F.a);
@@ -80,9 +80,9 @@
 					const e = this.props.subreddit.displayText,
 						t = this.props.subredditAboutInfo.disableContributorRequests,
 						a = this.props.theme ? Object(E.f)(this.props.theme.newCommunityTheme.widgetColors.sidebarWidgetHeaderColor) : "";
-					return o.a.createElement(j, {
+					return o.a.createElement(k, {
 						className: F.a.requestModal
-					}, o.a.createElement(S, null, o.a.createElement(C.a, null, o.a.createElement("div", null, o.a.createElement(k, {
+					}, o.a.createElement(S, null, o.a.createElement(C.a, null, o.a.createElement("div", null, o.a.createElement(j, {
 						style: {
 							color: a
 						}
@@ -294,16 +294,16 @@
 					source: e,
 					action: "click",
 					noun: "request_restricted_approval_button",
-					subreddit: r.jb(t)
+					subreddit: r.kb(t)
 				}),
 				n = e => t => ({
 					...r.o(t),
 					source: "request_restricted_approval_form",
 					action: "click",
 					noun: e,
-					subreddit: r.jb(t)
+					subreddit: r.kb(t)
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.f56351085037ded4d13b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.a534c1c3ddb4206b6840.js.map

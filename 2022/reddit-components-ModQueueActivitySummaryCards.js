@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModQueueActivitySummaryCards.de7582f9a4f4a0700205.js
-// Retrieved at 10/24/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModQueueActivitySummaryCards.e4cbb99e91cca75ee780.js
+// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModQueueActivitySummaryCards", "reddit-components-ModQueueActivitySummaryCards-ModActivityPreview"], {
 		"./src/reddit/components/ModQueueActivitySummaryCards/ModActivityPreview.tsx": function(e, t, s) {
@@ -830,7 +830,7 @@
 					source: o.COMMUNITY_WIDGETS,
 					action: r.c.CLICK,
 					noun: n.SEE_MORE,
-					widget: Object(a.xb)(s, {
+					widget: Object(a.yb)(s, {
 						subredditId: e,
 						widgetKind: t
 					}),
@@ -841,7 +841,7 @@
 					action: r.c.CLICK,
 					noun: n.REREDDIT_PROMO,
 					post: a.K(s, e),
-					subreddit: a.jb(s),
+					subreddit: a.kb(s),
 					...t && {
 						banner: {
 							buttonText: t,
@@ -868,4 +868,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModQueueActivitySummaryCards.de7582f9a4f4a0700205.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModQueueActivitySummaryCards.e4cbb99e91cca75ee780.js.map

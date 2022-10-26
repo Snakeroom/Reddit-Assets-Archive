@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.c32ab2c36b497c9478be.js
-// Retrieved at 10/24/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.1c09357889fa9343c4ec.js
+// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsSubredditPremiumSidebarCards"], {
 		"./node_modules/lodash/forOwn.js": function(e, t, r) {
@@ -176,9 +176,9 @@
 			})), r.d(t, "e", (function() {
 				return S
 			})), r.d(t, "c", (function() {
-				return P
-			})), r.d(t, "f", (function() {
 				return k
+			})), r.d(t, "f", (function() {
+				return P
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = r("./node_modules/lodash/forOwn.js"),
@@ -296,7 +296,7 @@
 						products: a
 					}))
 				}
-			}, P = (e, t, r) => async (s, n, i) => {
+			}, k = (e, t, r) => async (s, n, i) => {
 				let {
 					apiContext: o
 				} = i;
@@ -319,7 +319,7 @@
 						initialView: b.c.MyBadges
 					}))
 				}
-			}, k = e => async (t, r, s) => {
+			}, P = e => async (t, r, s) => {
 				let {
 					apiContext: n
 				} = s;
@@ -484,7 +484,7 @@
 				}
 			}
 			const S = [],
-				P = Object(o.c)({
+				k = Object(o.c)({
 					badgeIds: (e, t) => {
 						let {
 							subredditId: r,
@@ -496,7 +496,7 @@
 					allBadges: e => e.badges.models,
 					useHovercard: b.d.spSpecialMemberships
 				}),
-				k = Object(o.c)({
+				P = Object(o.c)({
 					badgeIds: (e, t) => {
 						let {
 							subredditId: r
@@ -526,8 +526,8 @@
 					badges: i
 				}, s))
 			}
-			const N = Object(i.b)(P, _)(B),
-				M = Object(i.b)(k, _)(B)
+			const N = Object(i.b)(k, _)(B),
+				M = Object(i.b)(P, _)(B)
 		},
 		"./src/reddit/components/Economics/Confetti/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -905,8 +905,8 @@
 				w = r("./src/reddit/models/Badge/managementPage.ts"),
 				I = r("./src/reddit/selectors/telemetry.ts"),
 				S = r("./src/reddit/components/Economics/SubredditPremium/SidebarCards/SidebarButton/index.tsx"),
-				P = r("./src/reddit/components/Economics/SubredditPremium/SidebarCards/MembershipCard/Controls/index.m.less"),
-				k = r.n(P);
+				k = r("./src/reddit/components/Economics/SubredditPremium/SidebarCards/MembershipCard/Controls/index.m.less"),
+				P = r.n(k);
 			const _ = Object(o.c)({
 				customBadgesEnabled: d.d.spCustomBadgesAndEmotes,
 				hasGalleryBadges: (e, t) => {
@@ -941,7 +941,7 @@
 								action: "click",
 								noun: "subscription_sidebar_open_badge_gallery",
 								...I.o(e),
-								subreddit: I.jb(e)
+								subreddit: I.kb(e)
 							}))
 						},
 						onOpenUploadDialog: () => e(Object(x.j)())
@@ -952,25 +952,25 @@
 					}, e.userHasBadges && n.a.createElement(S.a, {
 						onClick: e.onOpenBadges
 					}, n.a.createElement(C.a, {
-						className: k.a.icon
+						className: P.a.icon
 					}), j.fbt._("Edit My Badges Appearance", null, {
 						hk: "4j32cW"
 					})), e.hasGalleryBadges && n.a.createElement(S.a, {
 						onClick: e.onOpenGallery
 					}, n.a.createElement(y.a, {
-						className: k.a.icon
+						className: P.a.icon
 					}), j.fbt._("Buy Badges", null, {
 						hk: "3HJQ3p"
 					})), e.customBadgesEnabled && n.a.createElement(S.a, {
 						onClick: e.onOpenUploadDialog
 					}, n.a.createElement(v.a, {
-						className: k.a.addIcon
+						className: P.a.addIcon
 					}), j.fbt._("Upload Badge", null, {
 						hk: "49njLC"
 					})), e.onOpenPurchaseModal && n.a.createElement(S.a, {
 						onClick: e.onOpenPurchaseModal
 					}, n.a.createElement(v.a, {
-						className: k.a.addIcon
+						className: P.a.addIcon
 					}), j.fbt._("Add Months", null, {
 						hk: "4k6iqB"
 					})))
@@ -1126,7 +1126,7 @@
 								action: "click",
 								noun: "subscription_sidebar_open_learn_more",
 								...I.o(e),
-								subreddit: I.jb(e)
+								subreddit: I.kb(e)
 							}))
 						}
 					}, j.fbt._("Get {membershipAlt}", [j.fbt._param("membershipAlt", e.meta.membershipAlt)], {
@@ -2020,4 +2020,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.c32ab2c36b497c9478be.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.1c09357889fa9343c4ec.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.27d959c3289a9feec899.js
-// Retrieved at 10/25/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.b5fcae0614db61164ed6.js
+// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1322,7 +1322,7 @@
 							count: f.length,
 							paneName: b.platform.currentPage ? b.platform.currentPage.urlParams.pageName : void 0
 						}),
-						screen: L.bb(b),
+						screen: L.cb(b),
 						correlationId: x
 					});
 					for (let t = 0; t < f.length; t++) {
@@ -1343,8 +1343,8 @@
 							}),
 							post: L.K(b, n),
 							profile: L.V(b, n),
-							screen: L.bb(b),
-							subreddit: L.mb(b, n),
+							screen: L.cb(b),
+							subreddit: L.nb(b, n),
 							correlationId: x
 						})
 					}
@@ -4922,7 +4922,7 @@
 					}),
 					correlationId: Object(o.d)(o.a.GoldPayment, !1),
 					profile: i.T(e),
-					subreddit: i.jb(e)
+					subreddit: i.kb(e)
 				}),
 				d = () => e => ({
 					source: "free_award_offer",
@@ -4969,7 +4969,7 @@
 					action: s.d.Click,
 					noun: s.e.MuteSubreddit,
 					targetUser: {
-						id: o.rb(e).id
+						id: o.sb(e).id
 					},
 					...o.o(e)
 				}),
@@ -4978,7 +4978,7 @@
 					action: s.d.Click,
 					noun: s.e.UnmuteSubreddit,
 					targetUser: {
-						id: o.rb(e).id
+						id: o.sb(e).id
 					},
 					...o.o(e)
 				}),
@@ -4987,7 +4987,7 @@
 					action: s.d.Click,
 					noun: s.e.MuteSubreddit,
 					targetUser: {
-						id: o.rb(e).id
+						id: o.sb(e).id
 					},
 					...o.o(e)
 				}),
@@ -4996,7 +4996,7 @@
 					action: s.d.Click,
 					noun: s.e.UnmuteSubreddit,
 					targetUser: {
-						id: o.rb(e).id
+						id: o.sb(e).id
 					},
 					...o.o(e)
 				}),
@@ -5005,7 +5005,7 @@
 					action: s.d.Click,
 					noun: s.e.MuteSubreddit,
 					targetUser: {
-						id: o.rb(e).id
+						id: o.sb(e).id
 					},
 					...o.o(e)
 				}),
@@ -5014,7 +5014,7 @@
 					action: s.d.Click,
 					noun: s.e.UnmuteSubreddit,
 					targetUser: {
-						id: o.rb(e).id
+						id: o.sb(e).id
 					},
 					...o.o(e)
 				}),
@@ -5023,7 +5023,7 @@
 					action: s.d.Click,
 					noun: s.e.MuteSubreddit,
 					targetUser: {
-						id: o.rb(e).id
+						id: o.sb(e).id
 					},
 					...o.o(e)
 				}),
@@ -5032,7 +5032,7 @@
 					action: s.d.Click,
 					noun: s.e.UnmuteSubreddit,
 					targetUser: {
-						id: o.rb(e).id
+						id: o.sb(e).id
 					},
 					...o.o(e)
 				})
@@ -5060,7 +5060,7 @@
 					source: s.COMMUNITY_WIDGETS,
 					action: r.c.CLICK,
 					noun: o.SEE_MORE,
-					widget: Object(i.xb)(n, {
+					widget: Object(i.yb)(n, {
 						subredditId: e,
 						widgetKind: t
 					}),
@@ -5071,7 +5071,7 @@
 					action: r.c.CLICK,
 					noun: o.REREDDIT_PROMO,
 					post: i.K(n, e),
-					subreddit: i.jb(n),
+					subreddit: i.kb(n),
 					...t && {
 						banner: {
 							buttonText: t,
@@ -5636,7 +5636,7 @@
 						source: e.includes("modqueue_sort") ? "moderator" : "bulk_mod_action",
 						action: "click",
 						noun: e,
-						screen: Object(E.bb)(t)
+						screen: Object(E.cb)(t)
 					}))
 				}
 				render() {
@@ -5741,7 +5741,7 @@
 			const a = e => Object(i.a)(e) && Object(s.c)(e, {
 				experimentEligibilitySelector: r.R,
 				experimentName: o.Ec
-			}) === o.Rd
+			}) === o.Sd
 		},
 		"./src/redditGQL/operations/DeleteSubredditMuteSettings.json": function(e) {
 			e.exports = JSON.parse('{"id":"c518a45f60a5"}')
@@ -5757,4 +5757,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.27d959c3289a9feec899.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.b5fcae0614db61164ed6.js.map

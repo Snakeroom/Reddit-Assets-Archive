@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit.5322fcfba8bc54b5b613.js
-// Retrieved at 10/25/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit.7a19a755d400757ecfea.js
+// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -1138,9 +1138,9 @@
 			n("./src/reddit/constants/categories.tsx");
 			var r = n("./src/reddit/selectors/telemetry.ts");
 			const s = e => ({
-					screen: r.bb(e),
+					screen: r.cb(e),
 					profile: r.T(e),
-					subreddit: r.jb(e)
+					subreddit: r.kb(e)
 				}),
 				o = e => t => ({
 					action: "click",
@@ -3655,10 +3655,10 @@
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(s.c)(e, {
-				experimentName: r.Me,
+				experimentName: r.Ne,
 				experimentEligibilitySelector: s.a
-			}) === r.Ue.Enabled
+			}) === r.Ve.Enabled
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~Reddit.5322fcfba8bc54b5b613.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~Reddit.7a19a755d400757ecfea.js.map

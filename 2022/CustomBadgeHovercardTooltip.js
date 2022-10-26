@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.7c5b61b240523446b691.js
-// Retrieved at 10/25/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.41195b9d92e35d0a6649.js
+// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CustomBadgeHovercardTooltip"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, r) {
@@ -104,7 +104,7 @@
 						noun: "custom_badges_hover_card",
 						correlationId: this.correlationId,
 						...O.o(e),
-						subreddit: O.jb(e)
+						subreddit: O.kb(e)
 					}))
 				}
 				onOpenUploadDialog() {
@@ -149,7 +149,7 @@
 								noun: "custom_badge_hover_open_learn_more",
 								correlationId: this.correlationId,
 								...O.o(e),
-								subreddit: O.jb(e)
+								subreddit: O.kb(e)
 							}))
 						}
 					}, n.a.createElement(y.a, {
@@ -620,9 +620,9 @@
 			})), r.d(t, "e", (function() {
 				return N
 			})), r.d(t, "d", (function() {
-				return j
-			})), r.d(t, "j", (function() {
 				return D
+			})), r.d(t, "j", (function() {
+				return j
 			})), r.d(t, "p", (function() {
 				return w
 			})), r.d(t, "k", (function() {
@@ -762,7 +762,7 @@
 				return r ? [].concat(r.locked, r.unlocked).filter(e => e.position).sort((e, t) => e.position - t.position) : y
 			}
 
-			function j(e, t) {
+			function D(e, t) {
 				const r = e.economics.subredditPremium[t];
 				if (r && r.status === l.a.Fetched) {
 					const e = r.data.collections[i.a.Cosmetic];
@@ -771,7 +771,7 @@
 				return y
 			}
 
-			function D(e, t) {
+			function j(e, t) {
 				return x(e, t, i.a.Cosmetic, i.c.Gallery).some(e => e.locked.some(e => Object(c.f)(e) || !!e.price))
 			}
 			const w = e => {
@@ -908,4 +908,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.7c5b61b240523446b691.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.41195b9d92e35d0a6649.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.1a505ca12e68305561bc.js
-// Retrieved at 10/24/2022, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.cd9e42cc55a04cd25f9c.js
+// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, o) {
@@ -1055,7 +1055,7 @@
 					...Object(n.o)(e),
 					post: Object(n.K)(e, t),
 					predictions: Object(n.Q)(e, t),
-					subreddit: Object(n.jb)(e)
+					subreddit: Object(n.kb)(e)
 				}),
 				r = e => t => ({
 					...s(t, e),
@@ -1242,4 +1242,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.1a505ca12e68305561bc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.cd9e42cc55a04cd25f9c.js.map

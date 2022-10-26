@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.361437ba2418bc6eea8d.js
-// Retrieved at 10/25/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.600ab4aada8b1ab5e600.js
+// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -796,8 +796,8 @@
 			const f = e => {
 				return Object(g.c)(e, {
 					experimentEligibilitySelector: g.a,
-					experimentName: h.wf
-				}) === h.Rd
+					experimentName: h.xf
+				}) === h.Sd
 			};
 			var x = s("./src/reddit/selectors/recapGame.ts"),
 				v = s("./src/reddit/selectors/user.ts"),
@@ -836,7 +836,7 @@
 						_ && j(setTimeout(() => {
 							g.current && (g.current.classList.add(y.a.transform), g.current.style.width = `${w}px`)
 						}, 4750)), _ && C(setTimeout(() => {
-							E(!1), Object(p.Sb)(B, !1)
+							E(!1), Object(p.Tb)(B, !1)
 						}, 5e3))
 					};
 				Object(n.useEffect)(() => {
@@ -863,7 +863,7 @@
 					},
 					onMouseLeave: G,
 					onClick: () => {
-						O && clearTimeout(O), k && clearTimeout(k), E(!1), Object(p.Sb)(B, !0), h((() => e => ({
+						O && clearTimeout(O), k && clearTimeout(k), E(!1), Object(p.Tb)(B, !0), h((() => e => ({
 							source: "recap",
 							action: "click",
 							noun: "feed_banana",
@@ -1019,8 +1019,8 @@
 							source: "layout_switch",
 							action: "click",
 							noun: e,
-							screen: Object(_.bb)(t),
-							subreddit: Object(_.jb)(t)
+							screen: Object(_.cb)(t),
+							subreddit: Object(_.kb)(t)
 						})))
 					}, this.renderItem = (e, t) => {
 						const {
@@ -1231,7 +1231,7 @@
 				const t = Object(i.f)().getState(),
 					s = Object(h.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.dd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.dd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.dd.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.ed.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.ed.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.ed.LargeImagePreview ? e.reredditButtons : [];
 					return n.a.createElement(C, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -2183,7 +2183,7 @@
 					action: n.d.Click,
 					noun: n.e.MuteSubreddit,
 					targetUser: {
-						id: r.rb(e).id
+						id: r.sb(e).id
 					},
 					...r.o(e)
 				}),
@@ -2192,7 +2192,7 @@
 					action: n.d.Click,
 					noun: n.e.UnmuteSubreddit,
 					targetUser: {
-						id: r.rb(e).id
+						id: r.sb(e).id
 					},
 					...r.o(e)
 				}),
@@ -2201,7 +2201,7 @@
 					action: n.d.Click,
 					noun: n.e.MuteSubreddit,
 					targetUser: {
-						id: r.rb(e).id
+						id: r.sb(e).id
 					},
 					...r.o(e)
 				}),
@@ -2210,7 +2210,7 @@
 					action: n.d.Click,
 					noun: n.e.UnmuteSubreddit,
 					targetUser: {
-						id: r.rb(e).id
+						id: r.sb(e).id
 					},
 					...r.o(e)
 				}),
@@ -2219,7 +2219,7 @@
 					action: n.d.Click,
 					noun: n.e.MuteSubreddit,
 					targetUser: {
-						id: r.rb(e).id
+						id: r.sb(e).id
 					},
 					...r.o(e)
 				}),
@@ -2228,7 +2228,7 @@
 					action: n.d.Click,
 					noun: n.e.UnmuteSubreddit,
 					targetUser: {
-						id: r.rb(e).id
+						id: r.sb(e).id
 					},
 					...r.o(e)
 				}),
@@ -2237,7 +2237,7 @@
 					action: n.d.Click,
 					noun: n.e.MuteSubreddit,
 					targetUser: {
-						id: r.rb(e).id
+						id: r.sb(e).id
 					},
 					...r.o(e)
 				}),
@@ -2246,7 +2246,7 @@
 					action: n.d.Click,
 					noun: n.e.UnmuteSubreddit,
 					targetUser: {
-						id: r.rb(e).id
+						id: r.sb(e).id
 					},
 					...r.o(e)
 				})
@@ -2274,7 +2274,7 @@
 					source: n.COMMUNITY_WIDGETS,
 					action: i.c.CLICK,
 					noun: r.SEE_MORE,
-					widget: Object(o.xb)(s, {
+					widget: Object(o.yb)(s, {
 						subredditId: e,
 						widgetKind: t
 					}),
@@ -2285,7 +2285,7 @@
 					action: i.c.CLICK,
 					noun: r.REREDDIT_PROMO,
 					post: o.K(s, e),
-					subreddit: o.jb(s),
+					subreddit: o.kb(s),
 					...t && {
 						banner: {
 							buttonText: t,
@@ -3228,4 +3228,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.361437ba2418bc6eea8d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.600ab4aada8b1ab5e600.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.5e7fecbf3e9bcef2e610.js
-// Retrieved at 10/24/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.d8c274845ecdc5e2a3e7.js
+// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsGifsTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/BaseTooltip.m.less": function(e, t, s) {
@@ -470,7 +470,7 @@
 					action: "change",
 					noun: "gif_tooltip_search",
 					correlationId: s,
-					subreddit: t ? o.kb(i, t) : void 0,
+					subreddit: t ? o.lb(i, t) : void 0,
 					post: o.k(i),
 					search: {
 						query: e
@@ -485,7 +485,7 @@
 						action: "select",
 						noun: "gif_tooltip_result",
 						correlationId: s,
-						subreddit: t ? o.kb(i, t) : void 0,
+						subreddit: t ? o.lb(i, t) : void 0,
 						post: o.k(i),
 						actionInfo: {
 							...n.actionInfo,
@@ -515,9 +515,9 @@
 					...i.o(e),
 					correlationId: Object(o.d)(o.a.PowerupsFlow, !1),
 					profile: i.T(e),
-					subreddit: i.jb(e),
+					subreddit: i.kb(e),
 					powerups: {
-						...i.ob(e),
+						...i.pb(e),
 						freeCount: t,
 						paidCount: s
 					}
@@ -534,7 +534,7 @@
 					noun: "add_custom_emojis",
 					...n(s),
 					powerups: {
-						...i.ob(s),
+						...i.pb(s),
 						emojiCount: e
 					}
 				}),
@@ -544,7 +544,7 @@
 					noun: "custom_emojis",
 					...n(s),
 					powerups: {
-						...i.ob(s),
+						...i.pb(s),
 						emojiCount: e
 					}
 				}),
@@ -557,7 +557,7 @@
 						noun: "custom_emojis",
 						...n(s),
 						powerups: {
-							...i.ob(s),
+							...i.pb(s),
 							emojiCount: e
 						}
 					})
@@ -566,7 +566,7 @@
 					source: "meta",
 					action: "open",
 					noun: "gif_tooltip",
-					subreddit: t ? i.kb(s, t) : void 0,
+					subreddit: t ? i.lb(s, t) : void 0,
 					...n(s),
 					correlationId: e
 				}),
@@ -578,10 +578,10 @@
 						value: String(t),
 						oldValue: String(s)
 					},
-					subreddit: i.jb(o),
+					subreddit: i.kb(o),
 					...i.o(o)
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.5e7fecbf3e9bcef2e610.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.d8c274845ecdc5e2a3e7.js.map

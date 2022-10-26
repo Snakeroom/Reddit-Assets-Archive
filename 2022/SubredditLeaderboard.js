@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.af9082e19097c6c1df0f.js
-// Retrieved at 10/25/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.3aa365d3186935668f0d.js
+// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, r) {
@@ -73,7 +73,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(u.xg)(e.category_name)
+									displayText: Object(u.yg)(e.category_name)
 								};
 								r.push(s.id), t[s.id] = s
 							}), {
@@ -93,7 +93,7 @@
 					t(k({
 						categoryId: e,
 						rank: n + 1
-					})), Object(m.ob)(Object(p.d)(r()))
+					})), Object(m.pb)(Object(p.d)(r()))
 				}
 		},
 		"./src/reddit/actions/pages/subredditLeaderboard.ts": function(e, t, r) {
@@ -125,7 +125,7 @@
 						actionSource: a.a.SubredditLeaderboard,
 						redirectUrl: c.c[c.b.SubredditLeaderboard]
 					})), t(i.m({
-						title: Object(n.q)()
+						title: Object(n.r)()
 					}));
 					const s = e.params && e.params.categoryName,
 						o = s && Object(u.b)(s);
@@ -242,8 +242,8 @@
 			const y = e => {
 				return Object(h.c)(e, {
 					experimentEligibilitySelector: h.a,
-					experimentName: g.wf
-				}) === g.Rd
+					experimentName: g.xf
+				}) === g.Sd
 			};
 			var f = r("./src/reddit/selectors/recapGame.ts"),
 				k = r("./src/reddit/selectors/user.ts"),
@@ -282,7 +282,7 @@
 						x && j(setTimeout(() => {
 							h.current && (h.current.classList.add(E.a.transform), h.current.style.width = `${T}px`)
 						}, 4750)), x && O(setTimeout(() => {
-							_(!1), Object(p.Sb)(M, !1)
+							_(!1), Object(p.Tb)(M, !1)
 						}, 5e3))
 					};
 				Object(s.useEffect)(() => {
@@ -309,7 +309,7 @@
 					},
 					onMouseLeave: A,
 					onClick: () => {
-						v && clearTimeout(v), N && clearTimeout(N), _(!1), Object(p.Sb)(M, !0), g((() => e => ({
+						v && clearTimeout(v), N && clearTimeout(N), _(!1), Object(p.Tb)(M, !0), g((() => e => ({
 							source: "recap",
 							action: "click",
 							noun: "feed_banana",
@@ -496,7 +496,7 @@
 				const t = Object(a.f)().getState(),
 					r = Object(g.a)(t, Object(o.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.dd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.dd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.dd.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.ed.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.ed.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.ed.LargeImagePreview ? e.reredditButtons : [];
 					return s.a.createElement(O, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -2192,7 +2192,7 @@
 					source: s.COMMUNITY_WIDGETS,
 					action: a.c.CLICK,
 					noun: n.SEE_MORE,
-					widget: Object(i.xb)(r, {
+					widget: Object(i.yb)(r, {
 						subredditId: e,
 						widgetKind: t
 					}),
@@ -2203,7 +2203,7 @@
 					action: a.c.CLICK,
 					noun: n.REREDDIT_PROMO,
 					post: i.K(r, e),
-					subreddit: i.jb(r),
+					subreddit: i.kb(r),
 					...t && {
 						banner: {
 							buttonText: t,
@@ -2399,7 +2399,7 @@
 				z = Object(o.b)(H, e => ({
 					fetchMoreSubreddits: (t, r) => e(Object(P.b)(t, r))
 				}));
-			class q extends i.a.Component {
+			class Q extends i.a.Component {
 				constructor() {
 					super(...arguments), this.fetchMoreSubreddits = e => {
 						const t = this.makeFetchVariables(),
@@ -2474,7 +2474,7 @@
 					})))))
 				}
 			}
-			var Q = Object(u.c)(z(q)),
+			var q = Object(u.c)(z(Q)),
 				J = r("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				K = r("./src/reddit/components/CategoryPickerWidget/index.m.less"),
 				U = r.n(K);
@@ -2661,7 +2661,7 @@
 					} = t;
 					return Object(g.b)(r.params.categoryName || "")
 				},
-				Ee = Object(m.wg)(p.i),
+				Ee = Object(m.xg)(p.i),
 				Ce = Object(d.c)({
 					categories: e => Object(ye.b)(e, {
 						categoriesOrder: Ee
@@ -2735,7 +2735,7 @@
 						m = (null === (e = a.find(e => e.id === u)) || void 0 === e ? void 0 : e.displayText) || "";
 					return i.a.createElement(l.a, null, i.a.createElement(k.a, {
 						className: Object(c.a)(t, C.a.mainContent),
-						content: i.a.createElement(Q, {
+						content: i.a.createElement(q, {
 							categoryId: u,
 							categoryName: d,
 							categoryDisplayText: m
@@ -2814,4 +2814,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.af9082e19097c6c1df0f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.3aa365d3186935668f0d.js.map

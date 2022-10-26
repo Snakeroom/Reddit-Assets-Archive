@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.e0403ca5e31576e5e173.js
-// Retrieved at 10/25/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.b326661a677059c56a9b.js
+// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, s) {
@@ -1450,7 +1450,7 @@
 							src: s,
 							errorSrc: n
 						} = e;
-					return s && n && Object(l.a)(s).catch(() => {
+					return s && n && Object(l.b)(s).catch(() => {
 						t.current && (t.current.style.backgroundImage = `url(${n})`)
 					}), r.a.createElement("div", {
 						"aria-label": e.alt,
@@ -1880,7 +1880,7 @@
 				_ = (e, t, s) => ({
 					...b.o(e),
 					source: O,
-					screen: b.bb(e),
+					screen: b.cb(e),
 					discoveryUnit: {
 						id: t.id,
 						type: t.unitType,
@@ -1903,9 +1903,9 @@
 				x = (e, t, s, n) => "unitName" in t ? _(e, t, n) : ((e, t, s) => ({
 					...b.o(e),
 					source: "search",
-					screen: b.bb(e),
+					screen: b.cb(e),
 					search: s ? {
-						...b.cb(e, s, d.a.SERP),
+						...b.db(e, s, d.a.SERP),
 						structureType: b.c.Trending
 					} : null,
 					discoveryUnit: {
@@ -1990,7 +1990,7 @@
 							query: o.rawQuery,
 							structureType: b.c.Trending,
 							impressionId: f.a.get(r),
-							queryId: b.db(i, r)
+							queryId: b.eb(i, r)
 						}
 					}
 				},
@@ -2097,7 +2097,7 @@
 					return e => ({
 						...S(e, n),
 						actionInfo: K(e, 0, s),
-						subreddit: b.kb(e, t)
+						subreddit: b.lb(e, t)
 					})
 				},
 				V = (e, t, s) => {
@@ -2112,7 +2112,7 @@
 					return e => ({
 						..._(e, i),
 						actionInfo: K(e, 0, s),
-						subreddit: b.kb(e, t) || null,
+						subreddit: b.lb(e, t) || null,
 						source: O,
 						action: o.c.VIEW,
 						noun: n.ITEM_SUBREDDIT
@@ -2134,7 +2134,7 @@
 					return e => ({
 						..._(e, r),
 						actionInfo: K(e, 0, i),
-						subreddit: b.kb(e, s) || null,
+						subreddit: b.lb(e, s) || null,
 						post: b.K(e, t) || null,
 						source: O,
 						action: o.c.CLICK,
@@ -2146,7 +2146,7 @@
 					return e => ({
 						..._(e, i),
 						actionInfo: K(e, 0, s),
-						subreddit: b.kb(e, t) || null,
+						subreddit: b.lb(e, t) || null,
 						source: O,
 						action: o.c.CLICK,
 						noun: n.ITEM_SUBREDDIT
@@ -2157,7 +2157,7 @@
 					return e => ({
 						..._(e, r),
 						actionInfo: K(e, 0, s),
-						subreddit: b.kb(e, t) || null,
+						subreddit: b.lb(e, t) || null,
 						post: i ? b.K(e, i) : null,
 						source: O,
 						action: o.c.CLICK,
@@ -2169,7 +2169,7 @@
 					return e => ({
 						..._(e, r),
 						actionInfo: K(e, 0, s),
-						subreddit: b.kb(e, t) || null,
+						subreddit: b.lb(e, t) || null,
 						post: i ? b.K(e, i) : null,
 						source: O,
 						action: o.c.CLICK,
@@ -2181,7 +2181,7 @@
 					return e => ({
 						..._(e, i),
 						actionInfo: K(e, 0, s),
-						subreddit: b.kb(e, t) || null,
+						subreddit: b.lb(e, t) || null,
 						source: O,
 						action: o.c.CLICK,
 						noun: n.ITEM_SUBREDDIT_HIDE
@@ -2192,7 +2192,7 @@
 					return e => ({
 						..._(e, i),
 						actionInfo: K(e, 0, s),
-						subreddit: b.kb(e, t) || null,
+						subreddit: b.lb(e, t) || null,
 						source: O,
 						action: o.c.CLICK,
 						noun: n.HEADER_SUBREDDIT
@@ -2353,4 +2353,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.e0403ca5e31576e5e173.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.b326661a677059c56a9b.js.map

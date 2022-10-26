@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.fee01209d7e457003edd.js
-// Retrieved at 10/25/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.52177289120ab495c2ca.js
+// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1605,7 +1605,7 @@
 				f = p.a.ol("Ol", m.a),
 				x = p.a.div("Title", m.a),
 				g = Object(a.c)({
-					submissionType: l.ob
+					submissionType: l.pb
 				});
 			t.a = p.a.wrapped(Object(i.b)(g)(e => {
 				const {
@@ -1733,7 +1733,7 @@
 					subredditRules: N,
 					currentPostCollection: f.g,
 					isOpenAIPilotV1: g.g,
-					submissionType: E.ob
+					submissionType: E.pb
 				}),
 				B = Object(d.b)(D),
 				F = e => {
@@ -2621,7 +2621,7 @@
 									...n.actionInfo,
 									reason: this.props.node.id
 								},
-								subreddit: p.jb(t)
+								subreddit: p.kb(t)
 							}
 						})
 					}
@@ -3015,7 +3015,7 @@
 				const t = Object(o.f)().getState(),
 					n = Object(h.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.dd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.dd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.dd.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.ed.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.ed.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.ed.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(O, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -3224,12 +3224,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case h.Yf.SmIcon:
+						case h.Zf.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case h.Yf.SmIconHc:
+						case h.Zf.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -3490,7 +3490,7 @@
 			const {
 				fbt: m
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), p = Object(c.c)({
-				title: d.ub
+				title: d.vb
 			});
 			var b = Object(a.b)(p)(e => {
 					const {
@@ -4023,7 +4023,7 @@
 					const n = {
 						...c.o(e),
 						action: o.c.CLICK,
-						subreddit: c.jb(e)
+						subreddit: c.kb(e)
 					};
 					return void 0 === t ? n : {
 						...n,
@@ -4058,7 +4058,7 @@
 				}),
 				x = e => ({
 					...c.o(e),
-					subreddit: c.jb(e),
+					subreddit: c.kb(e),
 					source: s.postComposer
 				}),
 				g = (e, t) => n => ({
@@ -4091,7 +4091,7 @@
 				}),
 				k = e => t => ({
 					...c.o(t),
-					subreddit: c.jb(t),
+					subreddit: c.kb(t),
 					source: s.collectionComposer,
 					action: o.c.CLICK,
 					noun: r.collectionDelete,
@@ -4160,7 +4160,7 @@
 						source: s.postComposer,
 						action: a.c.CLICK,
 						noun: "event_create",
-						subreddit: u.jb(e)
+						subreddit: u.kb(e)
 					})
 				},
 				h = e => {
@@ -4169,7 +4169,7 @@
 						source: s.postComposer,
 						action: a.c.CLICK,
 						noun: "event_edit",
-						subreddit: u.jb(e),
+						subreddit: u.kb(e),
 						postEvent: _(e),
 						postComposer: v(e)
 					})
@@ -4223,7 +4223,7 @@
 					const n = {
 						source: s.eventComposer,
 						action: a.c.CLICK,
-						subreddit: u.jb(e)
+						subreddit: u.kb(e)
 					};
 					return t ? {
 						...n,
@@ -4276,7 +4276,7 @@
 				p = e => ({
 					...u.o(e),
 					source: r,
-					screen: u.bb(e),
+					screen: u.cb(e),
 					discoveryUnit: {
 						id: "xd_100",
 						name: s.SUBREDDIT_HOVERCARD,
@@ -4322,7 +4322,7 @@
 					const s = Object(a.b)(n) ? n.belongsTo.id : n.subredditId;
 					return {
 						post: u.K(e, n.id),
-						subreddit: u.kb(e, s),
+						subreddit: u.lb(e, s),
 						...b(e, t)
 					}
 				},
@@ -4335,8 +4335,8 @@
 					source: "global",
 					action: o.c.VIEW,
 					noun: s.SUBREDDIT_HOVERCARD,
-					subreddit: u.lb(t, e),
-					screen: u.bb(t)
+					subreddit: u.mb(t, e),
+					screen: u.cb(t)
 				}),
 				g = (e, t) => n => ({
 					...p(n),
@@ -4344,8 +4344,8 @@
 					action: o.c.VIEW,
 					noun: s.ITEM_POST,
 					post: u.K(n, t),
-					subreddit: u.lb(n, e),
-					screen: u.bb(n)
+					subreddit: u.mb(n, e),
+					screen: u.cb(n)
 				}),
 				E = (e, t) => n => ({
 					...p(n),
@@ -4353,26 +4353,26 @@
 					action: o.c.CLICK,
 					noun: s.ITEM_POST,
 					post: u.K(n, t),
-					subreddit: u.lb(n, e),
-					screen: u.bb(n)
+					subreddit: u.mb(n, e),
+					screen: u.cb(n)
 				}),
 				_ = e => t => ({
 					...p(t),
-					subreddit: u.kb(t, e) || null,
+					subreddit: u.lb(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: s.HEADER_SUBREDDIT
 				}),
 				v = e => t => ({
 					...p(t),
-					subreddit: u.kb(t, e) || null,
+					subreddit: u.lb(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: s.HEADER_SUBREDDIT_SUBSCRIBE
 				}),
 				C = e => t => ({
 					...p(t),
-					subreddit: u.kb(t, e) || null,
+					subreddit: u.lb(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: s.HEADER_SUBREDDIT_UNSUBSCRIBE
@@ -4401,7 +4401,7 @@
 					source: r.COMMUNITY_WIDGETS,
 					action: o.c.CLICK,
 					noun: s.SEE_MORE,
-					widget: Object(i.xb)(n, {
+					widget: Object(i.yb)(n, {
 						subredditId: e,
 						widgetKind: t
 					}),
@@ -4412,7 +4412,7 @@
 					action: o.c.CLICK,
 					noun: s.REREDDIT_PROMO,
 					post: i.K(n, e),
-					subreddit: i.jb(n),
+					subreddit: i.kb(n),
 					...t && {
 						banner: {
 							buttonText: t,
@@ -4898,12 +4898,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Sf
+						experimentName: s.Tf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Yf.SmIcon || t === s.Yf.SmIconHc
+					return t === s.Zf.SmIcon || t === s.Zf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -4929,4 +4929,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.fee01209d7e457003edd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.52177289120ab495c2ca.js.map

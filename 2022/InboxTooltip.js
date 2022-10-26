@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxTooltip.44021f971b6c813be532.js
-// Retrieved at 10/25/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxTooltip.9722ec45efc6ad7a99be.js
+// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxTooltip", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -67,9 +67,9 @@
 			})), i.d(t, "subscribeForPNs", (function() {
 				return A
 			})), i.d(t, "unsubscribeFromPNs", (function() {
-				return R
-			})), i.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
 				return L
+			})), i.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
+				return R
 			})), i.d(t, "subscribeToPermissionsChange", (function() {
 				return U
 			}));
@@ -92,15 +92,15 @@
 				j = i("./src/reddit/helpers/trackers/notifications.ts"),
 				v = i("./src/reddit/models/Toast/index.ts"),
 				x = i("./src/reddit/selectors/activeModal.ts"),
-				k = i("./src/reddit/selectors/activeModalId.ts"),
-				S = i("./src/reddit/selectors/experiments/delayDnPermission.ts"),
+				S = i("./src/reddit/selectors/activeModalId.ts"),
+				k = i("./src/reddit/selectors/experiments/delayDnPermission.ts"),
 				w = i("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
 				N = i("./src/reddit/constants/experiments.ts"),
 				y = i("./src/reddit/helpers/chooseVariant/index.ts");
 			const _ = e => Object(y.c)(e, {
 				experimentName: N.mc,
 				experimentEligibilitySelector: y.a
-			}) === N.Rd;
+			}) === N.Sd;
 			var I = i("./src/reddit/selectors/meta.ts"),
 				P = i("./src/reddit/selectors/user.ts");
 			let E = !1;
@@ -132,8 +132,8 @@
 					const c = o(),
 						u = Object(I.f)(c),
 						l = _(c),
-						b = !!Object(k.a)(c),
-						f = Object(S.a)(c),
+						b = !!Object(S.a)(c),
+						f = Object(k.a)(c),
 						p = Object(w.e)(c),
 						g = Object(x.c)(m.a.NSFW_BLOCKING_MODAL_V2)(c);
 					if (p || g) return;
@@ -142,7 +142,7 @@
 					j.l(c), await Object(a.b)(e, t, () => {
 						l || f || b || n(Object(d.o)()), n(Object(d.n)()), j.j(c)
 					}, (e, t) => {
-						n(Object(d.l)()), n(R(t ? d.a.Denied : d.a.Closed)), e && (t ? j.e(c) : j.f(c)), i()
+						n(Object(d.l)()), n(L(t ? d.a.Denied : d.a.Closed)), e && (t ? j.e(c) : j.f(c)), i()
 					}, e => {
 						n(Object(d.m)()), n(A()), e && j.d(c), i()
 					}, () => {
@@ -170,7 +170,7 @@
 				} catch (r) {
 					j.k(s, "registration_failed_uncaught_exception"), console.error(r)
 				}
-			}, R = (e, t) => async i => {
+			}, L = (e, t) => async i => {
 				try {
 					Object(f.b)(e);
 					const o = await Object(u.a)();
@@ -184,7 +184,7 @@
 						})))
 					}
 				} catch (o) {}
-			}, L = e => async (t, i) => {
+			}, R = e => async (t, i) => {
 				const n = i();
 				if (Object(f.a)(n) === d.c.NotificationsSupported) switch (Object(a.a)()) {
 					case d.a.Default:
@@ -205,13 +205,13 @@
 				o.onchange = () => (t => {
 					switch (t) {
 						case d.a.Denied:
-							e(R(d.a.Denied)), j.e(n);
+							e(L(d.a.Denied)), j.e(n);
 							break;
 						case d.a.Granted:
 							e(A()), j.d(n);
 							break;
 						default:
-							e(R(d.a.Default))
+							e(L(d.a.Default))
 					}
 				})(o.state)
 			}
@@ -287,17 +287,17 @@
 					} = O;
 					var j, v, x;
 					e(f());
-					const k = g(i),
-						S = await Object(d.b)(h(), t, k);
-					if ((null === (v = null === (j = S.error) || void 0 === j ? void 0 : j.fields) || void 0 === v ? void 0 : v.length) || function(e) {
+					const S = g(i),
+						k = await Object(d.b)(h(), t, S);
+					if ((null === (v = null === (j = k.error) || void 0 === j ? void 0 : j.fields) || void 0 === v ? void 0 : v.length) || function(e) {
 							return Boolean(e && e.data && e.data.updateSubredditNotificationSettings)
-						}(S.body) && (null === (x = S.body.data.updateSubredditNotificationSettings.errors) || void 0 === x ? void 0 : x.length)) return e(p()), e(Object(a.f)({
+						}(k.body) && (null === (x = k.body.data.updateSubredditNotificationSettings.errors) || void 0 === x ? void 0 : x.length)) return e(p()), e(Object(a.f)({
 						kind: l.b.Error,
 						text: n.fbt._("Failed to change the frequency of notifications from this community, please try again.", null, {
 							hk: "4avFFV"
 						})
 					}));
-					S.ok && (e(Object(s.c)({
+					k.ok && (e(Object(s.c)({
 						subredditId: t,
 						notificationLevel: i
 					})), e(b({
@@ -384,8 +384,8 @@
 					isInboxInfiniteScrollEnabled: j,
 					isInboxPostEmbedEnabled: v,
 					isLoggedIn: x,
-					isOpen: k,
-					isPending: S,
+					isOpen: S,
+					isPending: k,
 					isPushNotificationsSupported: w,
 					markAllAsRead: N,
 					markNotificationAsRead: y,
@@ -398,15 +398,15 @@
 				const C = Object(f.a)(),
 					[B, A] = Object(n.useState)("");
 				return Object(n.useEffect)(() => {
-					if (k && !I.length && x) {
+					if (S && !I.length && x) {
 						c({
 							first: 5
 						})
 					}
-					k && x && (E(), C(Object(b.x)({
+					S && x && (E(), C(Object(b.x)({
 						badgeCount: O
 					})))
-				}, [k]), o.a.createElement(l.b, {
+				}, [S]), o.a.createElement(l.b, {
 					activeOverflowMenuId: B,
 					clearMessageTabBadgeCount: t,
 					cursor: i,
@@ -425,7 +425,7 @@
 					isInboxInfiniteScrollEnabled: j,
 					isInboxPostEmbedEnabled: v,
 					isLoggedIn: x,
-					isPending: S,
+					isPending: k,
 					markAllAsRead: N,
 					markNotificationAsRead: y,
 					messagesBadgeCount: _,
@@ -461,9 +461,9 @@
 			})), i.d(t, "a", (function() {
 				return x
 			})), i.d(t, "n", (function() {
-				return k
-			})), i.d(t, "o", (function() {
 				return S
+			})), i.d(t, "o", (function() {
+				return k
 			})), i.d(t, "h", (function() {
 				return w
 			})), i.d(t, "g", (function() {
@@ -576,7 +576,7 @@
 						type: "all"
 					}
 				}),
-				k = (e, t, i) => o => ({
+				S = (e, t, i) => o => ({
 					...n.o(o),
 					action: "set_frequency",
 					noun: i,
@@ -586,7 +586,7 @@
 						name: t.toLowerCase()
 					}
 				}),
-				S = () => e => ({
+				k = () => e => ({
 					...n.o(e),
 					action: s.c.View,
 					noun: "screen",
@@ -613,4 +613,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.44021f971b6c813be532.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.9722ec45efc6ad7a99be.js.map

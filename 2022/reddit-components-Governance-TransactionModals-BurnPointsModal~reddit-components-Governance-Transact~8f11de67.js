@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.67133e41f9c457a976bf.js
-// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.abed3c7ce172fa25afff.js
+// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67"], {
 		"./src/reddit/components/Governance/TransactionModals/ApprovalModal/ApprovalBar.m.less": function(A, e, t) {
@@ -1043,7 +1043,7 @@
 						source: "meta",
 						action: A,
 						noun: "transaction",
-						subreddit: Object(a.kb)(r, t),
+						subreddit: Object(a.lb)(r, t),
 						actionInfo: {
 							settingValue: e,
 							reason: s
@@ -1059,7 +1059,7 @@
 					source: "meta",
 					action: "open",
 					noun: "gif_tooltip",
-					subreddit: e ? Object(a.kb)(t, e) : void 0,
+					subreddit: e ? Object(a.lb)(t, e) : void 0,
 					correlationId: A,
 					...Object(a.o)(t)
 				}),
@@ -1067,11 +1067,11 @@
 					source: "meta",
 					action: "open",
 					noun: "gif_upsell",
-					subreddit: e ? Object(a.kb)(t, e) : void 0,
+					subreddit: e ? Object(a.lb)(t, e) : void 0,
 					correlationId: A,
 					...Object(a.o)(t)
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.67133e41f9c457a976bf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.abed3c7ce172fa25afff.js.map

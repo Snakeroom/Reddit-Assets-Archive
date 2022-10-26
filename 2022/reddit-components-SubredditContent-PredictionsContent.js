@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.d7344bd5fffc23acc3bd.js
-// Retrieved at 10/19/2022, 12:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.eba6f37bb8542ca1bf35.js
+// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-PredictionsContent"], {
 		"./src/reddit/components/Econ/Prediction/hooks/useTournamentsQuery.ts": function(e, t, n) {
@@ -157,8 +157,8 @@
 				};
 			var f = n("./src/reddit/controls/Button/index.tsx"),
 				_ = n("./src/reddit/controls/LoadingIcon/index.tsx"),
-				j = n("./src/reddit/helpers/trackers/predictions.ts"),
-				x = n("./src/reddit/hooks/useTracking.ts"),
+				x = n("./src/reddit/helpers/trackers/predictions.ts"),
+				j = n("./src/reddit/hooks/useTracking.ts"),
 				O = n("./src/reddit/models/Toast/index.ts"),
 				k = n("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
 				E = n("./src/reddit/components/PostCreationForm/Prompt/PromptModal.tsx");
@@ -197,7 +197,7 @@
 				let {
 					subredditId: t
 				} = e;
-				const n = Object(x.a)(),
+				const n = Object(j.a)(),
 					[r, a] = function(e, t) {
 						const n = Object(s.d)(),
 							o = Object(s.e)(t => Object(v.ab)(t, e)),
@@ -215,7 +215,7 @@
 				})), c.a.createElement(y.p, {
 					on: r,
 					onClick: () => {
-						n(Object(j.d)(!r)), a()
+						n(Object(x.d)(!r)), a()
 					},
 					label: o.fbt._("Allow Approved Users to Post / Resolve Predictions", null, {
 						hk: "49inYc"
@@ -234,7 +234,7 @@
 					subreddit: t
 				} = e;
 				const n = Object(s.d)(),
-					u = Object(x.a)(),
+					u = Object(j.a)(),
 					[m, b] = Object(r.useState)(""),
 					[h, E] = Object(r.useState)(!1),
 					[y, C] = Object(r.useState)(!1),
@@ -250,12 +250,12 @@
 						subredditId: t.id
 					}));
 				Object(r.useEffect)(() => {
-					u(Object(j.r)())
+					u(Object(x.r)())
 				}, [u]), Object(r.useEffect)(() => {
 					B && (b(B.name), T(A - B.name.length))
 				}, [B]);
 				const F = Object(r.useCallback)(() => {
-						u(Object(j.e)()), S(!0)
+						u(Object(x.e)()), S(!0)
 					}, [u]),
 					M = !!m && ((null == B ? void 0 : B.name) !== m && m.length > 3);
 				return c.a.createElement("div", {
@@ -300,7 +300,7 @@
 					disabled: !m || !B || I || !M,
 					onClick: async () => {
 						if (!B || !m) return null;
-						u(Object(j.j)()), E(!0);
+						u(Object(x.j)()), E(!0);
 						try {
 							await n(Object(i.w)(B.tournamentId, t.id, m))
 						} catch (e) {
@@ -383,9 +383,9 @@
 			})), n.d(t, "d", (function() {
 				return _
 			})), n.d(t, "h", (function() {
-				return j
-			})), n.d(t, "c", (function() {
 				return x
+			})), n.d(t, "c", (function() {
+				return j
 			})), n.d(t, "k", (function() {
 				return O
 			})), n.d(t, "i", (function() {
@@ -520,15 +520,15 @@
 						value: e ? "1" : "0",
 						oldValue: e ? "0" : "1"
 					},
-					subreddit: Object(r.jb)(t)
+					subreddit: Object(r.kb)(t)
 				}),
-				j = () => e => ({
+				x = () => e => ({
 					...Object(r.o)(e),
 					source: s,
 					action: "click",
 					noun: "next"
 				}),
-				x = () => e => ({
+				j = () => e => ({
 					...Object(r.o)(e),
 					source: s,
 					action: "click",
@@ -551,16 +551,16 @@
 					source: "predictions_tab",
 					action: "view",
 					noun: "predictions_how_it_works",
-					subreddit: Object(r.jb)(e)
+					subreddit: Object(r.kb)(e)
 				}),
 				g = () => e => ({
 					...Object(r.o)(e),
 					source: "predictions_how_it_works",
 					action: "click",
 					noun: "learn_more",
-					subreddit: Object(r.jb)(e)
+					subreddit: Object(r.kb)(e)
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.d7344bd5fffc23acc3bd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.eba6f37bb8542ca1bf35.js.map

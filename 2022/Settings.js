@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.ede10f75f20ae8c41692.js
-// Retrieved at 10/25/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.cbf620a306f5eff6d4f9.js
+// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -1608,7 +1608,7 @@
 					}
 				}
 				t(Object(S.m)({
-					title: Object(l.o)()
+					title: Object(l.p)()
 				}))
 			}
 		},
@@ -7734,7 +7734,7 @@
 					source: "meta",
 					action: e,
 					noun: "feed_claim_points_banner",
-					subreddit: Object(s.jb)(t)
+					subreddit: Object(s.kb)(t)
 				}),
 				a = () => o("view"),
 				r = () => o("tap"),
@@ -7744,7 +7744,7 @@
 					source: "meta",
 					action: "click",
 					noun: "cancel_membership_with_points",
-					subreddit: Object(s.kb)(t, e)
+					subreddit: Object(s.lb)(t, e)
 				})
 		},
 		"./src/reddit/helpers/trackers/followers.ts": function(e, t, n) {
@@ -8034,7 +8034,7 @@
 			const i = e => ({
 					...s.o(e),
 					correlationId: Object(r.c)(r.a.PremiumSettings),
-					screen: s.bb(e)
+					screen: s.cb(e)
 				}),
 				l = () => e => ({
 					...i(e),
@@ -9004,7 +9004,7 @@
 					openContentLanguageModal: () => e(Object(v.openD2xOnboardingModal)({
 						type: N.d.LANGUAGE_COLLECTION
 					})),
-					openSSOCreatePasswordForEmailModal: () => e(Object(_.h)(ee.l)),
+					openSSOCreatePasswordForEmailModal: () => e(Object(_.h)(ee.m)),
 					resendEmail: () => e(Object(y.v)())
 				})),
 				me = e => {
@@ -9075,7 +9075,7 @@
 						})()
 					}, []);
 					const D = Object(r.e)(I.f),
-						R = D === w.cd.TopTwo || D === w.cd.All,
+						R = D === w.dd.TopTwo || D === w.dd.All,
 						F = Object(o.useMemo)(() => Object(se.c)(T), [T]);
 					return c ? a.a.createElement(X, {
 						email: k.email
@@ -9216,8 +9216,8 @@
 				shouldShowCreatePasswordModal: T.d
 			});
 			var Fe = Object(r.b)(Re, e => ({
-					openSSOCreatePasswordForLinkAppleModal: () => e(Object(_.h)(ee.i)),
-					openSSOCreatePasswordForUnlinkAppleModal: () => e(Object(_.h)(ee.j)),
+					openSSOCreatePasswordForLinkAppleModal: () => e(Object(_.h)(ee.j)),
+					openSSOCreatePasswordForUnlinkAppleModal: () => e(Object(_.h)(ee.k)),
 					openLinkAppleSSOModal: () => e(Object(v.openLinkAppleSSOModal)()),
 					openUnlinkAppleSSOModal: () => e(Object(v.openUnlinkAppleSSOModal)())
 				}))(e => {
@@ -9280,8 +9280,8 @@
 				shouldShowCreatePasswordModal: T.d
 			});
 			var Ye = Object(r.b)(Ve, e => ({
-					openSSOCreatePasswordForLinkGoogleModal: () => e(Object(_.h)(ee.m)),
-					openSSOCreatePasswordForUnlinkGoogleModal: () => e(Object(_.h)(ee.n)),
+					openSSOCreatePasswordForLinkGoogleModal: () => e(Object(_.h)(ee.n)),
+					openSSOCreatePasswordForUnlinkGoogleModal: () => e(Object(_.h)(ee.o)),
 					openLinkGoogleSSOModal: () => e(Object(v.openLinkGoogleSSOModal)()),
 					openUnlinkGoogleSSOModal: () => e(Object(v.openUnlinkGoogleSSOModal)())
 				}))(e => {
@@ -9459,7 +9459,7 @@
 					deactivate: t => {
 						e(Object(y.u)(t))
 					},
-					openSSOCreatePasswordForLinkGoogleModal: () => e(Object(_.h)(ee.k)),
+					openSSOCreatePasswordForLinkGoogleModal: () => e(Object(_.h)(ee.l)),
 					optOut: async () => {
 						if ("new.reddit.com" === window.location.host) return window.location.assign("https://old.reddit.com/prefs");
 						f.a.get("rseor3") && f.a.remove("rseor3", {
@@ -10847,7 +10847,7 @@
 				ko = Object(r.b)(yo, (e, t) => ({
 					addBlocked: t => e(Object(Xs.h)(t)),
 					addWhitelisted: t => e(Object(At.g)(t)),
-					openSSOCreatePasswordFor2FAModal: () => e(Object(_.h)(ee.h)),
+					openSSOCreatePasswordFor2FAModal: () => e(Object(_.h)(ee.i)),
 					removeWhitelisted: t => e(Object(At.h)(t)),
 					removeBlocked: t => e(Object(Xs.g)(t)),
 					saveChatSettings: t => e(Object(Mt.d)(t)),
@@ -12114,9 +12114,9 @@
 					},
 					isDspEnabled: e => {
 						return Object(ae.c)(e, {
-							experimentName: w.md,
+							experimentName: w.nd,
 							experimentEligibilitySelector: ae.a
-						}) === w.Rd
+						}) === w.Sd
 					}
 				}),
 				yr = Object(ve.u)(),
@@ -12669,7 +12669,7 @@
 			const r = e => Object(o.c)(e, {
 				experimentName: s.E,
 				experimentEligibilitySelector: () => Object(a.Q)(e)
-			}) === s.Rd
+			}) === s.Sd
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -12833,4 +12833,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.ede10f75f20ae8c41692.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.cbf620a306f5eff6d4f9.js.map

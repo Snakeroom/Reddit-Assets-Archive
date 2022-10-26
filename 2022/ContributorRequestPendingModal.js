@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ContributorRequestPendingModal.4e114e1fb160d1307340.js
-// Retrieved at 10/24/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ContributorRequestPendingModal.01c740573bd2029804cc.js
+// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ContributorRequestPendingModal", "ContributorRequestRequestModal"], {
 		"./src/reddit/components/ContributorRequestFlow/PendingModal/index.m.less": function(e, t, n) {
@@ -69,11 +69,11 @@
 				h = n("./src/lib/lessComponent.tsx");
 			const E = h.a.div("DescriptionPending", f.a),
 				g = h.a.wrapped(u.e, "ModalBody", f.a),
-				q = Object(i.c)({
+				k = Object(i.c)({
 					restrictions: F.q,
 					subreddit: x.e
 				}),
-				k = Object(r.b)(q, e => ({
+				q = Object(r.b)(k, e => ({
 					openContributorRequestPendingModal: () => e(Object(l.i)(m.a.CONTRIBUTOR_REQUEST_PENDING))
 				}));
 			class y extends s.a.Component {
@@ -98,7 +98,7 @@
 					}))))
 				}
 			}
-			t.default = h.a.wrapped(Object(d.a)(k(y)), "Component", f.a)
+			t.default = h.a.wrapped(Object(d.a)(q(y)), "Component", f.a)
 		},
 		"./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -124,7 +124,7 @@
 			n.r(t), n.d(t, "ModalHeader", (function() {
 				return v
 			})), n.d(t, "ModalTitle", (function() {
-				return j
+				return T
 			})), n.d(t, "CloseIcon", (function() {
 				return w
 			}));
@@ -148,15 +148,15 @@
 				h = n("./src/reddit/models/SubredditRestrictions/index.ts"),
 				E = n("./src/reddit/models/Theme/index.ts"),
 				g = n("./src/reddit/selectors/platform.ts"),
-				q = n("./src/reddit/selectors/structuredStyles.ts"),
-				k = n("./src/reddit/selectors/subreddit.ts"),
+				k = n("./src/reddit/selectors/structuredStyles.ts"),
+				q = n("./src/reddit/selectors/subreddit.ts"),
 				y = n("./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less"),
 				R = n.n(y),
 				M = n("./src/lib/lessComponent.tsx");
 			const S = M.a.wrapped(m.e, "ModalBody", R.a),
 				v = M.a.wrapped(m.i, "ModalHeader", R.a),
-				j = M.a.div("ModalTitle", R.a),
-				T = M.a.div("Title", R.a),
+				T = M.a.div("ModalTitle", R.a),
+				j = M.a.div("Title", R.a),
 				I = M.a.div("Description", R.a),
 				w = M.a.wrapped(m.b, "CloseIcon", R.a);
 			class O extends r.a.Component {
@@ -180,13 +180,13 @@
 						n = this.props.theme ? Object(E.f)(this.props.theme.newCommunityTheme.widgetColors.sidebarWidgetHeaderColor) : "";
 					return r.a.createElement(S, {
 						className: R.a.requestModal
-					}, r.a.createElement(v, null, r.a.createElement(f.a, null, r.a.createElement("div", null, r.a.createElement(j, {
+					}, r.a.createElement(v, null, r.a.createElement(f.a, null, r.a.createElement("div", null, r.a.createElement(T, {
 						style: {
 							color: n
 						}
 					}, o.fbt._("Become an approved user of", null, {
 						hk: "u33RG"
-					})), r.a.createElement(T, {
+					})), r.a.createElement(j, {
 						style: {
 							color: n
 						}
@@ -228,10 +228,10 @@
 				}
 			}
 			t.default = M.a.wrapped(Object(a.a)(Object(l.a)(Object(i.b)(() => Object(d.c)({
-				subredditAboutInfo: k.g,
-				restrictions: k.q,
+				subredditAboutInfo: q.g,
+				restrictions: q.q,
 				subreddit: g.e,
-				subredditIcon: q.b
+				subredditIcon: k.b
 			}), e => ({
 				makeContributorRequest: (t, n, o) => e(Object(u.n)(t, n, o)),
 				toggleContributorRequestModal: () => e(Object(c.i)(x.a.CONTRIBUTOR_REQUEST))
@@ -392,16 +392,16 @@
 					source: e,
 					action: "click",
 					noun: "request_restricted_approval_button",
-					subreddit: o.jb(t)
+					subreddit: o.kb(t)
 				}),
 				s = e => t => ({
 					...o.o(t),
 					source: "request_restricted_approval_form",
 					action: "click",
 					noun: e,
-					subreddit: o.jb(t)
+					subreddit: o.kb(t)
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestPendingModal.4e114e1fb160d1307340.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestPendingModal.01c740573bd2029804cc.js.map

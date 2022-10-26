@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.efba5524cd6ba3868aa0.js
-// Retrieved at 10/25/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.d2d928c6241f34703eb3.js
+// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Economics-SubredditPremium-LFGBanner"], {
 		"./node_modules/lodash/_arraySample.js": function(e, t, n) {
@@ -1638,7 +1638,7 @@
 										paneName: le.get(e.type),
 										reason: t
 									},
-									subreddit: N.jb(n)
+									subreddit: N.kb(n)
 								}
 							})
 						}
@@ -1730,7 +1730,7 @@
 									noun: "lfg_banner_generate_badge",
 									correlationId: this.props.correlationId,
 									...N.o(e),
-									subreddit: N.jb(e)
+									subreddit: N.kb(e)
 								})))
 							}
 						}, r.fbt._("Generate Badge", null, {
@@ -1775,7 +1775,7 @@
 									reason: a,
 									paneName: E.a.LFG
 								},
-								subreddit: N.jb(t)
+								subreddit: N.kb(t)
 							}
 						})
 					}, this.handleDismiss = () => {
@@ -1795,7 +1795,7 @@
 									...t.actionInfo,
 									paneName: E.a.LFG
 								},
-								subreddit: N.jb(e)
+								subreddit: N.kb(e)
 							}
 						})), this.props.onDismissBanner()
 					}, this.handleUndoDismiss = () => {
@@ -1813,7 +1813,7 @@
 									...t.actionInfo,
 									paneName: E.a.LFG
 								},
-								subreddit: N.jb(e)
+								subreddit: N.kb(e)
 							}
 						})
 					}, this.state = {
@@ -1841,7 +1841,7 @@
 								...t.actionInfo,
 								paneName: E.a.LFG
 							},
-							subreddit: N.jb(e)
+							subreddit: N.kb(e)
 						}
 					})
 				}
@@ -3159,4 +3159,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.efba5524cd6ba3868aa0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.d2d928c6241f34703eb3.js.map

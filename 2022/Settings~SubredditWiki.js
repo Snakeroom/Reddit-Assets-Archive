@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.7e606ecaa8afd5ed87bb.js
-// Retrieved at 10/25/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.de9e5ef57ad9b508a25f.js
+// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, r) {
@@ -2491,7 +2491,7 @@
 					action: s.d.Click,
 					noun: s.e.MuteSubreddit,
 					targetUser: {
-						id: n.rb(e).id
+						id: n.sb(e).id
 					},
 					...n.o(e)
 				}),
@@ -2500,7 +2500,7 @@
 					action: s.d.Click,
 					noun: s.e.UnmuteSubreddit,
 					targetUser: {
-						id: n.rb(e).id
+						id: n.sb(e).id
 					},
 					...n.o(e)
 				}),
@@ -2509,7 +2509,7 @@
 					action: s.d.Click,
 					noun: s.e.MuteSubreddit,
 					targetUser: {
-						id: n.rb(e).id
+						id: n.sb(e).id
 					},
 					...n.o(e)
 				}),
@@ -2518,7 +2518,7 @@
 					action: s.d.Click,
 					noun: s.e.UnmuteSubreddit,
 					targetUser: {
-						id: n.rb(e).id
+						id: n.sb(e).id
 					},
 					...n.o(e)
 				}),
@@ -2527,7 +2527,7 @@
 					action: s.d.Click,
 					noun: s.e.MuteSubreddit,
 					targetUser: {
-						id: n.rb(e).id
+						id: n.sb(e).id
 					},
 					...n.o(e)
 				}),
@@ -2536,7 +2536,7 @@
 					action: s.d.Click,
 					noun: s.e.UnmuteSubreddit,
 					targetUser: {
-						id: n.rb(e).id
+						id: n.sb(e).id
 					},
 					...n.o(e)
 				}),
@@ -2545,7 +2545,7 @@
 					action: s.d.Click,
 					noun: s.e.MuteSubreddit,
 					targetUser: {
-						id: n.rb(e).id
+						id: n.sb(e).id
 					},
 					...n.o(e)
 				}),
@@ -2554,7 +2554,7 @@
 					action: s.d.Click,
 					noun: s.e.UnmuteSubreddit,
 					targetUser: {
-						id: n.rb(e).id
+						id: n.sb(e).id
 					},
 					...n.o(e)
 				})
@@ -2658,4 +2658,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.7e606ecaa8afd5ed87bb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.de9e5ef57ad9b508a25f.js.map

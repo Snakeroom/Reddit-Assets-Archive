@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Settings-CreatePasswordSSOModal.988c60f5787805bfcd5b.js
-// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Settings-CreatePasswordSSOModal.cc9263f571ee141c5be9.js
+// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Settings-CreatePasswordSSOModal"], {
 		"./src/reddit/components/EmailCollection/Envelope/index.m.less": function(e, s, t) {
@@ -261,13 +261,13 @@
 				N = t("./src/reddit/selectors/activeModalId.ts"),
 				S = t("./src/reddit/selectors/user.ts");
 			const D = Object(l.c)({
-					resetPasswordFor2FAModalOpen: Object(N.b)(A.h),
-					resetPasswordForEmailModalOpen: Object(N.b)(A.l),
-					resetPasswordForAppleLinkModalOpen: Object(N.b)(A.i),
-					resetPasswordForAppleUnlinkModalOpen: Object(N.b)(A.j),
-					resetPasswordForDeactivateAccountModalOpen: Object(N.b)(A.k),
-					resetPasswordForGoogleLinkModalOpen: Object(N.b)(A.m),
-					resetPasswordForGoogleUnlinkModalOpen: Object(N.b)(A.n),
+					resetPasswordFor2FAModalOpen: Object(N.b)(A.i),
+					resetPasswordForEmailModalOpen: Object(N.b)(A.m),
+					resetPasswordForAppleLinkModalOpen: Object(N.b)(A.j),
+					resetPasswordForAppleUnlinkModalOpen: Object(N.b)(A.k),
+					resetPasswordForDeactivateAccountModalOpen: Object(N.b)(A.l),
+					resetPasswordForGoogleLinkModalOpen: Object(N.b)(A.n),
+					resetPasswordForGoogleUnlinkModalOpen: Object(N.b)(A.o),
 					userEmail: S.o,
 					username: e => {
 						const s = Object(S.l)(e);
@@ -275,13 +275,13 @@
 					}
 				}),
 				L = Object(n.b)(D, e => ({
-					closeResetPasswordFor2FAModal: () => e(Object(r.g)(A.h)),
-					closeResetPasswordForEmailModal: () => e(Object(r.g)(A.l)),
-					closeResetPasswordForAppleLinkModal: () => e(Object(r.g)(A.i)),
-					closeResetPasswordForAppleUnlinkModal: () => e(Object(r.g)(A.j)),
-					closeResetPasswordForDeactivateAccountModal: () => e(Object(r.g)(A.k)),
-					closeResetPasswordForGoogleLinkModal: () => e(Object(r.g)(A.m)),
-					closeResetPasswordForGoogleUnlinkModal: () => e(Object(r.g)(A.n)),
+					closeResetPasswordFor2FAModal: () => e(Object(r.g)(A.i)),
+					closeResetPasswordForEmailModal: () => e(Object(r.g)(A.m)),
+					closeResetPasswordForAppleLinkModal: () => e(Object(r.g)(A.j)),
+					closeResetPasswordForAppleUnlinkModal: () => e(Object(r.g)(A.k)),
+					closeResetPasswordForDeactivateAccountModal: () => e(Object(r.g)(A.l)),
+					closeResetPasswordForGoogleLinkModal: () => e(Object(r.g)(A.n)),
+					closeResetPasswordForGoogleUnlinkModal: () => e(Object(r.g)(A.o)),
 					sendResetEmail: s => e(Object(i.w)(s))
 				}));
 			s.default = L(e => e.userEmail && e.username ? a.a.createElement(R, e) : null)
@@ -383,4 +383,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Settings-CreatePasswordSSOModal.988c60f5787805bfcd5b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Settings-CreatePasswordSSOModal.cc9263f571ee141c5be9.js.map
