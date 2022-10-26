@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ShortcutWrapper.9d5c8ec3d25444f93243.js
-// Retrieved at 10/25/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ShortcutWrapper.91c754b5d5d2a90ba554.js
+// Retrieved at 10/26/2022, 6:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ShortcutWrapper"], {
 		"./node_modules/combokeys/Combokeys/index.js": function(e, t, o) {
@@ -1291,9 +1291,9 @@
 			}, U = {
 				[m.c.Close]: e => async (t, o) => {
 					const s = Object(q.a)(o());
-					t(Object(B.recapGameCloseAction)()), e(Object(M.c)()), t(Object(L.a)(() => {})), t(Object(F.A)({
+					"on" === s.recapGameState && (t(Object(B.recapGameCloseAction)()), e(Object(M.c)()), t(Object(L.a)(() => {})), t(Object(F.A)({
 						nightmode: s.isNightModeOriginal
-					}))
+					})))
 				},
 				[m.c.CollapseOrLoad]: e => async (t, o, s) => {
 					let {
@@ -1526,4 +1526,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ShortcutWrapper.9d5c8ec3d25444f93243.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ShortcutWrapper.91c754b5d5d2a90ba554.js.map

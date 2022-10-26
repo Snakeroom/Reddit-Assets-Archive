@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.6c1d8a849bd255605713.js
-// Retrieved at 10/26/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.1fefcb6f1b0f4d65828b.js
+// Retrieved at 10/26/2022, 6:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -18225,7 +18225,7 @@
 					className: Dh.a.recapModalButton,
 					priority: ln.c.Secondary,
 					onClick: () => {
-						t(Object(Be.recapGameClose)()), n(Object(Ki.c)())
+						t(Object(Be.recapGameClose)())
 					}
 				}, Fh._("say goodbye", null, {
 					hk: "4xsOLo"
@@ -18244,8 +18244,8 @@
 						r = Object(ye.e)(v.R),
 						[a, c] = Object(u.useState)(!1);
 					return Object(u.useEffect)(() => {
-						c(Object(Tn.P)()), r && Object(Tn.eb)()
-					}, [r, s]), m.a.createElement("div", {
+						c(Object(Tn.P)()), n(Object(Be.recapGameSetOriginalNightModeAction)(o)), r && Object(Tn.eb)()
+					}, [r, s, n, o]), m.a.createElement("div", {
 						className: Dh.a.recapModal
 					}, m.a.createElement("div", {
 						className: Dh.a.recapModalInner,
@@ -18281,7 +18281,7 @@
 						className: Dh.a.recapModalButton,
 						priority: ln.c.Secondary,
 						onClick: () => {
-							r ? (n(Object(Be.recapGameSetOriginalNightModeAction)(o)), o || n(Object(cl.A)({
+							r ? (o || n(Object(cl.A)({
 								nightmode: !0
 							})), t && t(), s(Object(Ki.e)())) : (n(Object(Dt.k)({
 								actionSource: Dt.a.HeaderLogin
@@ -23874,4 +23874,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.6c1d8a849bd255605713.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.1fefcb6f1b0f4d65828b.js.map
