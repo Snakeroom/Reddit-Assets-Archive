@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.f70f0d534536ee98cc12.js
-// Retrieved at 10/26/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.441c59f7ef41863d7873.js
+// Retrieved at 10/26/2022, 2:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -13514,6 +13514,8 @@
 			"use strict";
 			s.r(t), s.d(t, "getCommentsPageKeyById", (function() {
 				return Lt
+			})), s.d(t, "_CommentsPage", (function() {
+				return Dt
 			})), s.d(t, "CommentsPage", (function() {
 				return Wt
 			}));
@@ -14025,32 +14027,32 @@
 					})
 				}
 				async componentDidMount() {
-					var e;
+					var e, t;
 					this.props.isQualifiedForUpvotePrompt && (this.upvotePromptId = setTimeout(() => {
 						this.props.triggerUpvotePrompt(this.props.postId, !1, () => this.setState({
 							isUpvotePromptTriggered: !0
 						}))
 					}, ce.b));
 					const {
-						commentFormRef: t,
-						commentSortRef: s,
+						commentFormRef: s,
+						commentSortRef: n,
 						props: {
-							isLoggedIn: n,
-							isNsfwBlurSubreddit: r,
-							isOverlay: o,
-							openNsfwModal: i,
-							post: a,
-							shouldScrollToComments: d,
-							subredditName: c
+							isLoggedIn: r,
+							isNsfwBlurSubreddit: o,
+							isOverlay: i,
+							openNsfwModal: a,
+							post: d,
+							shouldScrollToComments: c,
+							subredditName: l
 						}
-					} = this, l = new URLSearchParams(this.props.location.search).get("report") || "";
-					if (["true", "1"].includes(l) && this.props.openReportFlow(this.props.postId, o), a && !a.isSponsored && !a.isRemoved && a.belongsTo.type !== Z.a.PROFILE) {
-						const e = await this.props.fetchCommentsNativeAd(a.id);
+					} = this, m = new URLSearchParams(this.props.location.search).get("report") || "";
+					if (["true", "1"].includes(m) && this.props.openReportFlow(this.props.postId, i), d && !d.isSponsored && !d.isRemoved && d.belongsTo.type !== Z.a.PROFILE) {
+						const e = await this.props.fetchCommentsNativeAd(d.id);
 						e && this.setState({
 							commentNativeAdId: e
 						})
 					}
-					if (o ? (this.scrollContainerEl = document.getElementById(Y.e), d && (t || s || this.hasCommentAdRef()) && a && a.numComments ? this.scrollToComments() : O.a.write(() => {
+					if (i ? (this.scrollContainerEl = document.getElementById(Y.e), c && (s || n || this.hasCommentAdRef()) && d && d.numComments ? this.scrollToComments() : O.a.write(() => {
 							setTimeout(() => {
 								Object(_.c)(this.scrollContainerEl, 0)
 							})
@@ -14070,12 +14072,12 @@
 					}
 					if (this.needsUpdatedMeasurements = !0, this.addListeners(), this.checkAndSendScreenview(), O.a.read(() => {
 							const e = [Object(at.a)()];
-							this.props.isOverlay || Object(w.d)(w.c.CommentsPage, n, e)
+							this.props.isOverlay || Object(w.d)(w.c.CommentsPage, r, e)
 						}), this.props.inResonatePilot) {
 						const e = this.props.subredditName ? this.props.subredditName.toLowerCase() : "";
 						y.Rb.includes(e) && Object(pt.a)(e)
 					}
-					this.props.isLoggedIn && Object(se.c)() && this.props.submitCommentAfterSignUp(), (null == a ? void 0 : a.isNSFW) && c && r && i(), this.props.isLiveChatNuxReactionsEnabled && this.props.fetchUXExperiences()
+					this.props.isLoggedIn && Object(se.c)() && this.props.submitCommentAfterSignUp(), (null == d ? void 0 : d.isNSFW) && l && o && a(), this.props.isLiveChatNuxReactionsEnabled && (null === (t = this.props.post) || void 0 === t ? void 0 : t.discussionType) === h.m.Chat && this.props.fetchUXExperiences()
 				}
 				UNSAFE_componentWillReceiveProps(e) {
 					e.postId !== this.props.postId && (this.didRenderLoading = !1), e.commentId && e.commentId !== this.props.commentId && this.props.setCommentFocus(e.commentId)
@@ -15192,4 +15194,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.f70f0d534536ee98cc12.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.441c59f7ef41863d7873.js.map

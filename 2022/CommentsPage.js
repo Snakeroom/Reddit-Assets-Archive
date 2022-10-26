@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.19995d88c9abe500f673.js
-// Retrieved at 10/26/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.a3069db5c96fb0ec45d2.js
+// Retrieved at 10/26/2022, 2:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost", "Governance~ModListing~Reddit~Subreddit", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "ModListing~Reddit", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -38607,6 +38607,8 @@
 			"use strict";
 			n.r(t), n.d(t, "getCommentsPageKeyById", (function() {
 				return Nt
+			})), n.d(t, "_CommentsPage", (function() {
+				return Bt
 			})), n.d(t, "CommentsPage", (function() {
 				return Ut
 			}));
@@ -39118,32 +39120,32 @@
 					})
 				}
 				async componentDidMount() {
-					var e;
+					var e, t;
 					this.props.isQualifiedForUpvotePrompt && (this.upvotePromptId = setTimeout(() => {
 						this.props.triggerUpvotePrompt(this.props.postId, !1, () => this.setState({
 							isUpvotePromptTriggered: !0
 						}))
 					}, de.b));
 					const {
-						commentFormRef: t,
-						commentSortRef: n,
+						commentFormRef: n,
+						commentSortRef: s,
 						props: {
-							isLoggedIn: s,
-							isNsfwBlurSubreddit: r,
-							isOverlay: o,
-							openNsfwModal: i,
-							post: a,
-							shouldScrollToComments: c,
-							subredditName: d
+							isLoggedIn: r,
+							isNsfwBlurSubreddit: o,
+							isOverlay: i,
+							openNsfwModal: a,
+							post: c,
+							shouldScrollToComments: d,
+							subredditName: l
 						}
-					} = this, l = new URLSearchParams(this.props.location.search).get("report") || "";
-					if (["true", "1"].includes(l) && this.props.openReportFlow(this.props.postId, o), a && !a.isSponsored && !a.isRemoved && a.belongsTo.type !== J.a.PROFILE) {
-						const e = await this.props.fetchCommentsNativeAd(a.id);
+					} = this, u = new URLSearchParams(this.props.location.search).get("report") || "";
+					if (["true", "1"].includes(u) && this.props.openReportFlow(this.props.postId, i), c && !c.isSponsored && !c.isRemoved && c.belongsTo.type !== J.a.PROFILE) {
+						const e = await this.props.fetchCommentsNativeAd(c.id);
 						e && this.setState({
 							commentNativeAdId: e
 						})
 					}
-					if (o ? (this.scrollContainerEl = document.getElementById(Z.e), c && (t || n || this.hasCommentAdRef()) && a && a.numComments ? this.scrollToComments() : y.a.write(() => {
+					if (i ? (this.scrollContainerEl = document.getElementById(Z.e), d && (n || s || this.hasCommentAdRef()) && c && c.numComments ? this.scrollToComments() : y.a.write(() => {
 							setTimeout(() => {
 								Object(O.c)(this.scrollContainerEl, 0)
 							})
@@ -39163,12 +39165,12 @@
 					}
 					if (this.needsUpdatedMeasurements = !0, this.addListeners(), this.checkAndSendScreenview(), y.a.read(() => {
 							const e = [Object(at.a)()];
-							this.props.isOverlay || Object(I.d)(I.c.CommentsPage, s, e)
+							this.props.isOverlay || Object(I.d)(I.c.CommentsPage, r, e)
 						}), this.props.inResonatePilot) {
 						const e = this.props.subredditName ? this.props.subredditName.toLowerCase() : "";
 						x.Rb.includes(e) && Object(pt.a)(e)
 					}
-					this.props.isLoggedIn && Object(ne.c)() && this.props.submitCommentAfterSignUp(), (null == a ? void 0 : a.isNSFW) && d && r && i(), this.props.isLiveChatNuxReactionsEnabled && this.props.fetchUXExperiences()
+					this.props.isLoggedIn && Object(ne.c)() && this.props.submitCommentAfterSignUp(), (null == c ? void 0 : c.isNSFW) && l && o && a(), this.props.isLiveChatNuxReactionsEnabled && (null === (t = this.props.post) || void 0 === t ? void 0 : t.discussionType) === f.m.Chat && this.props.fetchUXExperiences()
 				}
 				UNSAFE_componentWillReceiveProps(e) {
 					e.postId !== this.props.postId && (this.didRenderLoading = !1), e.commentId && e.commentId !== this.props.commentId && this.props.setCommentFocus(e.commentId)
@@ -44762,4 +44764,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.19995d88c9abe500f673.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.a3069db5c96fb0ec45d2.js.map
