@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.6ac3c2cf278f1ae0c7b6.js
-// Retrieved at 10/26/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.c17efd1863215d7a5f49.js
+// Retrieved at 10/26/2022, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -83,15 +83,15 @@
 					I = Object(i.e)(E.R),
 					G = Object(i.e)(f.a),
 					F = encodeURIComponent(o.a.redditUrl + "/r/recap"),
-					B = o.a.accountManagerOrigin,
-					R = I ? "/r/recap" : `${B}/login/?dest=${F}`,
+					R = o.a.accountManagerOrigin,
+					B = I ? "/r/recap" : `${R}/login/?dest=${F}`,
 					M = P ? P.id : "anonymous",
 					D = "on" === G.recapGameState,
 					A = () => {
 						_ && N(setTimeout(() => {
 							g.current && (g.current.classList.add(S.a.transform), g.current.style.width = `${T}px`)
 						}, 4750)), _ && k(setTimeout(() => {
-							C(!1), Object(b.Tb)(M, !1)
+							C(!1), Object(b.Rb)(M, !1)
 						}, 5e3))
 					};
 				Object(r.useEffect)(() => {
@@ -111,14 +111,14 @@
 					style: u
 				}, _ && L && !s && !D ? a.a.createElement("a", {
 					ref: g,
-					href: R,
+					href: B,
 					className: S.a.bananaPill,
 					onMouseEnter: () => {
 						O && clearTimeout(O), j && clearTimeout(j), g.current && (g.current.classList.remove(S.a.transform), g.current.style.width = "65px")
 					},
 					onMouseLeave: A,
 					onClick: () => {
-						O && clearTimeout(O), j && clearTimeout(j), C(!1), Object(b.Tb)(M, !0), h((() => e => ({
+						O && clearTimeout(O), j && clearTimeout(j), C(!1), Object(b.Rb)(M, !0), h((() => e => ({
 							source: "recap",
 							action: "click",
 							noun: "feed_banana",
@@ -992,7 +992,7 @@
 						} = this.props;
 						if (!s) return;
 						const r = Object(y.c)(s, n);
-						t(Object(u.n)(e, r))
+						t(Object(u.h)(e, r))
 					}
 				}
 				render() {
@@ -1062,12 +1062,12 @@
 				I = s.n(L);
 			const {
 				fbt: G
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), F = 8, B = Array.from({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), F = 8, R = Array.from({
 				length: F
 			}).map((e, t) => r.a.createElement(P, {
 				className: I.a.Subreddit,
 				key: t
-			})), R = {
+			})), B = {
 				enabled: !0,
 				id: "xd_103",
 				layout: m.c.Large,
@@ -1079,7 +1079,7 @@
 			class M extends r.a.Component {
 				constructor() {
 					super(...arguments), this.onSeeMoreCommunities = () => {
-						this.props.onSeeMoreCommunities && (this.props.sendEvent(Object(u.w)(R)), this.props.onSeeMoreCommunities())
+						this.props.onSeeMoreCommunities && (this.props.sendEvent(Object(u.q)(B)), this.props.onSeeMoreCommunities())
 					}
 				}
 				render() {
@@ -1100,10 +1100,10 @@
 						className: I.a.SubredditList
 					}, n.length > 0 ? n.map(e => r.a.createElement(T, {
 						className: I.a.Subreddit,
-						discoveryUnit: R,
+						discoveryUnit: B,
 						key: e,
 						subredditId: e
-					})) : B), t.length > F && r.a.createElement(a.a, {
+					})) : R), t.length > F && r.a.createElement(a.a, {
 						to: s
 					}, r.a.createElement(l.r, {
 						className: I.a.SeeMore,
@@ -1579,10 +1579,10 @@
 				F = {
 					pageType: "crowdsource_feed_geo"
 				},
-				B = {
+				R = {
 					pageType: "geo_entry"
 				},
-				R = e => () => ({
+				B = e => () => ({
 					source: G,
 					noun: "skip",
 					action: "click",
@@ -1596,7 +1596,7 @@
 					action: "click",
 					subreddit: Object(I.a)(e),
 					userSubreddit: Object(I.g)(e.modPermissions, e.isSubscribed),
-					actionInfo: B
+					actionInfo: R
 				}),
 				D = J("select_location"),
 				A = J("confirm_location"),
@@ -1612,7 +1612,7 @@
 					subreddit: Object(I.a)(t),
 					userSubreddit: Object(I.g)(t.modPermissions, t.isSubscribed),
 					actionInfo: {
-						...B,
+						...R,
 						reason: s
 					}
 				})
@@ -1631,15 +1631,15 @@
 					}
 				})
 			}
-			var K = s("./src/reddit/icons/svgs/HamburgerClose/index.tsx"),
-				q = s("./src/reddit/models/Toast/index.ts");
+			var q = s("./src/reddit/icons/svgs/HamburgerClose/index.tsx"),
+				K = s("./src/reddit/models/Toast/index.ts");
 			const {
 				fbt: U
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 
 			function V(e) {
 				const t = Object(b.B)(Z) || [];
-				t.push(e), Object(b.Jb)(Z, t)
+				t.push(e), Object(b.Hb)(Z, t)
 			}
 
 			function Y(e) {
@@ -1661,7 +1661,7 @@
 
 				function y() {
 					o(Object(j.f)({
-						kind: q.b.SuccessMod,
+						kind: K.b.SuccessMod,
 						text: U._("Nice work!", null, {
 							hk: "2Wu6gX"
 						})
@@ -1682,9 +1682,9 @@
 				}, t.prefixedName)), r.a.createElement("button", {
 					className: S.a.dismiss,
 					onClick: function() {
-						V(t.id), _(R(t)), x(), s(t.id)
+						V(t.id), _(B(t)), x(), s(t.id)
 					}
-				}, r.a.createElement(K.a, null))), r.a.createElement("p", null, t.publicDescriptionText || t.title), t.geoPlace && !m ? r.a.createElement("div", {
+				}, r.a.createElement(q.a, null))), r.a.createElement("p", null, t.publicDescriptionText || t.title), t.geoPlace && !m ? r.a.createElement("div", {
 					className: S.a.questionContainer
 				}, r.a.createElement("div", {
 					className: S.a.question
@@ -1720,7 +1720,7 @@
 							sessionId: r
 						});
 						if (u(!1), !a.ok) return o(Object(j.f)({
-							kind: q.b.Error,
+							kind: K.b.Error,
 							text: U._("Something went wrong", null, {
 								hk: "2PnKbu"
 							}),
@@ -1854,4 +1854,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.6ac3c2cf278f1ae0c7b6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.c17efd1863215d7a5f49.js.map

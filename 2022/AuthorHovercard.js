@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.99f3fbfa9b3eb1c23a5d.js
-// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.eccb48a40cb4190c52ef.js
+// Retrieved at 10/26/2022, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -1848,7 +1848,7 @@
 					}, [c]);
 					const M = Object(o.d)(),
 						T = Object(a.useCallback)(e => {
-							j(e), Object(x.Jb)("modnote-draft", {
+							j(e), Object(x.Hb)("modnote-draft", {
 								[c]: e
 							})
 						}, [j, c]),
@@ -3727,9 +3727,9 @@
 					T = Object(m.a)(),
 					[L, D, H] = function(e, t, n) {
 						const [r, o] = Object(a.useState)(Object(u.r)(e, t) || 0), s = Object(a.useCallback)(() => {
-							o(r + 1), Object(u.Cb)(e, t, r + 1)
+							o(r + 1), Object(u.Ab)(e, t, r + 1)
 						}, []), i = Object(a.useCallback)(() => {
-							n > 0 && (o(n), Object(u.Cb)(e, t, n))
+							n > 0 && (o(n), Object(u.Ab)(e, t, n))
 						}, []);
 						return [r, s, i]
 					}(h, n.notificationName, (null === (v = n.persistence) || void 0 === v ? void 0 : v.maxViews) || 0),
@@ -4264,7 +4264,7 @@
 						[O, I] = function(e) {
 							const [t, n] = Object(r.useState)(() => Object(q.u)(e));
 							return [t, Object(r.useCallback)(() => {
-								n(!0), Object(q.Db)(e)
+								n(!0), Object(q.Bb)(e)
 							}, [e])]
 						}(x),
 						[C, N] = function(e) {
@@ -5933,7 +5933,7 @@
 			function o(e) {
 				const [t, n] = Object(a.useState)(Object(r.t)(e));
 				return [t, Object(a.useCallback)(() => {
-					n(!0), Object(r.sb)(e)
+					n(!0), Object(r.rb)(e)
 				}, [])]
 			}
 		},
@@ -6561,4 +6561,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.99f3fbfa9b3eb1c23a5d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.eccb48a40cb4190c52ef.js.map

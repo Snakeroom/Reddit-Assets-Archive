@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.6c709791d609d00e73a3.js
-// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.790c77a9c98672e6efa5.js
+// Retrieved at 10/26/2022, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -882,13 +882,9 @@
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return x
-			})), n.d(t, "d", (function() {
-				return y
-			})), n.d(t, "c", (function() {
-				return v
-			})), n.d(t, "b", (function() {
 				return j
+			})), n.d(t, "b", (function() {
+				return D
 			}));
 			var r, s = n("./src/lib/makeActionCreator/index.ts"),
 				i = n("./src/lib/performanceTimings/index.tsx"),
@@ -903,29 +899,86 @@
 			! function(e) {
 				e.DEFAULT = "DEFAULT", e.GEO = "GEO"
 			}(d || (d = {}));
-			var m = n("./src/reddit/selectors/focusedVerticalSuggestion.ts"),
-				p = n("./src/reddit/selectors/platform.ts"),
-				h = n("./src/reddit/selectors/user.ts");
-			const b = Object(s.a)(o.g),
-				f = Object(s.a)(o.e),
-				_ = Object(s.a)(o.h),
-				g = Object(s.a)(o.c),
-				x = Object(s.a)(o.f),
-				y = Object(s.a)(o.j),
-				v = Object(s.a)(o.i),
-				E = () => async (e, t, n) => {
+			var m = n("./src/lib/objectSelector/index.ts"),
+				p = n("./src/reddit/featureFlags/index.ts"),
+				h = n("./src/reddit/selectors/posts.ts"),
+				b = n("./src/reddit/selectors/subreddit.ts"),
+				f = n("./src/reddit/selectors/user.ts");
+			const _ = [],
+				g = (Object(m.a)((e, t) => {
+					const n = g(e, t);
+					if (!n) return _;
+					const r = Object(b.cb)(e, {
+						subredditName: n.name
+					});
+					return r && r.postIds && r.postIds.length ? r.postIds : _
+				}), (e, t) => {
+					const n = e.focusedVerticals.recommendedSubredditIds && e.focusedVerticals.recommendedSubredditIds[t];
+					return n ? Object(b.Y)(e, {
+						subredditId: n
+					}) : null
+				}),
+				x = (e, t, n, r, s) => {
+					const i = s.find(e => e <= t) || -1,
+						o = s.find(e => e > t) || 1 / 0;
+					return t !== o && t !== i && (!(i + n > t) && (!(t + n > o) && !((e, t, n) => {
+						const r = n[t - 1],
+							s = n[t],
+							i = s && Object(h.G)(e, {
+								postId: r
+							}) || null,
+							o = s && Object(h.G)(e, {
+								postId: s
+							}) || null;
+						return i && i.isSponsored || o && o.isSponsored
+					})(e, t, r)))
+				},
+				y = [3];
+			Object(m.a)((e, t) => {
+				let {
+					existingDUPositions: n,
+					listingProps: r
+				} = t;
+				const s = n.slice().sort();
+				let i = -1;
+				const o = Object(h.z)(e, {
+						listingKey: r.listingKey
+					}),
+					a = [];
+				return y.forEach(t => {
+					let n = i + t;
+					if (!(n >= o.length)) {
+						for (; n < o.length && !x(e, n, t, o, s);) n += 1;
+						n < o.length && (a.push(n), i = n)
+					}
+				}), a
+			});
+			var v = n("./src/reddit/selectors/platform.ts");
+			const E = Object(s.a)(o.f),
+				k = Object(s.a)(o.d),
+				C = Object(s.a)(o.g),
+				w = Object(s.a)(o.c),
+				j = Object(s.a)(o.e),
+				O = (Object(s.a)(o.i), Object(s.a)(o.h), () => async (e, t, n) => {
 					let {
 						gqlContext: s
 					} = n;
 					const i = t(),
-						o = Object(m.e)(i),
-						d = Object(m.d)(i),
-						p = Object(h.Q)(i);
+						o = (e => {
+							return e.focusedVerticals.api.pending.focusedVerticalGqlPending
+						})(i),
+						d = (e => {
+							const t = Object(f.Q)(e),
+								n = p.d.geoSubredditRecommendationDULoggedIn(e),
+								r = p.d.geoSubredditRecommendationDULoggedOut(e);
+							return t && n || !t && r
+						})(i),
+						m = Object(f.Q)(i);
 					if (o || !d) return;
-					e(_());
-					let x = !1;
+					e(C());
+					let h = !1;
 					try {
-						const t = p ? r.LoggedInGeo : r.LoggedOutGeo,
+						const t = m ? r.LoggedInGeo : r.LoggedOutGeo,
 							n = await ((e, t, n) => Object(a.a)(e, {
 								...c,
 								variables: {
@@ -937,15 +990,15 @@
 							const {
 								data: t
 							} = n.body;
-							if (k(t)) {
-								if (C(t)) {
-									e(g({
+							if (S(t)) {
+								if (T(t)) {
+									e(w({
 										recommendedSubredditIds: [],
 										interactedSubredditIds: [],
 										category: "",
 										lastLoadedEnv: "client"
-									})), x = !0
-								} else if (w(t)) {
+									})), h = !0
+								} else if (F(t)) {
 									const n = t.focusVerticalSubredditRecommendations,
 										{
 											recommendedSubreddit: r,
@@ -965,44 +1018,50 @@
 											category: i,
 											lastLoadedEnv: "client"
 										};
-									e(b(m)), x = !0
+									e(E(m)), h = !0
 								}
-							} else x = !1
+							} else h = !1
 						}
-					} catch (y) {
-						x = !1
+					} catch (b) {
+						h = !1
 					}
-					x || e(f({
+					h || e(k({
 						error: {
 							type: "Focused vertical experiment GQL API failed or caught by try and catch"
 						}
 					}))
-				}, k = e => {
+				}),
+				S = e => {
 					const t = e.focusVerticalSubredditRecommendations;
 					return !(!t || !t.focusRecommendations)
-				}, C = e => {
+				},
+				T = e => {
 					const t = e.focusVerticalSubredditRecommendations,
 						n = t && t.focusRecommendations;
 					return !(!n || 0 !== n.length)
-				}, w = e => {
+				},
+				F = e => {
 					const t = e.focusVerticalSubredditRecommendations,
 						n = t && t.focusRecommendations,
 						r = t && t.type;
-					return !!(n && !C(e) && r === d.GEO && n[0] && n[0].recommendedSubreddit && n[0].interactedSubreddit)
-				}, j = () => async (e, t, n) => {
+					return !!(n && !T(e) && r === d.GEO && n[0] && n[0].recommendedSubreddit && n[0].interactedSubreddit)
+				},
+				D = () => async (e, t, n) => {
 					var r, s;
 					const o = t(),
-						a = Object(m.g)(o);
-					if (Object(m.f)(o) || null === a || "client" === a) {
-						const n = null === (s = null === (r = Object(p.b)(t())) || void 0 === r ? void 0 : r.routeMatch) || void 0 === s ? void 0 : s.route.chunk,
-							a = Object(h.R)(o);
-						return Object(i.i)(() => e(E()), {
+						a = (e => e.focusedVerticals.lastLoadedEnv)(o);
+					if ((e => {
+							return e.focusedVerticals.api.error.focusedVerticalGqlError
+						})(o) || null === a || "client" === a) {
+						const n = null === (s = null === (r = Object(v.b)(t())) || void 0 === r ? void 0 : r.routeMatch) || void 0 === s ? void 0 : s.route.chunk,
+							a = Object(f.R)(o);
+						return Object(i.i)(() => e(O()), {
 							name: "getFocusedVerticalsRequested",
 							page: n,
 							isLoggedIn: a
 						})
 					}
-					if ("server" === a) return e(x({
+					if ("server" === a) return e(j({
 						lastLoadedEnv: "client"
 					}))
 				}
@@ -1148,7 +1207,7 @@
 				z = n.n(A);
 			const {
 				fbt: H
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), U = l.a.wrapped(I, "PrivateKey", z.a), q = l.a.div("ButtonsContainer", z.a), W = l.a.div("Container", z.a), V = l.a.div("ContainerExp", z.a), G = l.a.div("Description", z.a), Z = l.a.div("PrivateSubredditDetails", z.a), J = l.a.div("PrivateSubredditDescription", z.a), K = l.a.h3("PrivateSubredditName", z.a), Y = l.a.a("Link", z.a), X = l.a.wrapped(F.n, "LinkRouterButton", z.a), Q = l.a.wrapped(F.m, "LinkButton", z.a), $ = l.a.wrapped(F.q, "SecondaryLinkRouterButton", z.a), ee = l.a.wrapped(F.p, "SecondaryLinkButton", z.a), te = l.a.wrapped(X, "GoHomeLinkButton", z.a), ne = l.a.wrapped(b.a, "CreateCommunityButton", z.a), re = l.a.img("Image", z.a), se = l.a.img("ImagePlaceholder", z.a), ie = l.a.wrapped(X, "LeftLinkRouterButton", z.a), oe = l.a.wrapped(Q, "LeftLinkButton", z.a), ae = l.a.wrapped(ee, "SecondaryLeftLinkButton", z.a), ce = l.a.wrapped($, "SecondaryLeftLinkRouterButton", z.a), de = l.a.h3("Title", z.a), le = l.a.div("PageBody", z.a), ue = l.a.div("InterstitialMessageWrapper", z.a), me = Object(d.c)({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), U = l.a.wrapped(I, "PrivateKey", z.a), q = l.a.div("ButtonsContainer", z.a), W = l.a.div("Container", z.a), G = l.a.div("ContainerExp", z.a), V = l.a.div("Description", z.a), Z = l.a.div("PrivateSubredditDetails", z.a), J = l.a.div("PrivateSubredditDescription", z.a), K = l.a.h3("PrivateSubredditName", z.a), Y = l.a.a("Link", z.a), X = l.a.wrapped(F.n, "LinkRouterButton", z.a), Q = l.a.wrapped(F.m, "LinkButton", z.a), $ = l.a.wrapped(F.q, "SecondaryLinkRouterButton", z.a), ee = l.a.wrapped(F.p, "SecondaryLinkButton", z.a), te = l.a.wrapped(X, "GoHomeLinkButton", z.a), ne = l.a.wrapped(b.a, "CreateCommunityButton", z.a), re = l.a.img("Image", z.a), se = l.a.img("ImagePlaceholder", z.a), ie = l.a.wrapped(X, "LeftLinkRouterButton", z.a), oe = l.a.wrapped(Q, "LeftLinkButton", z.a), ae = l.a.wrapped(ee, "SecondaryLeftLinkButton", z.a), ce = l.a.wrapped($, "SecondaryLeftLinkRouterButton", z.a), de = l.a.h3("Title", z.a), le = l.a.div("PageBody", z.a), ue = l.a.div("InterstitialMessageWrapper", z.a), me = Object(d.c)({
 				isLoggedIn: M.Q,
 				origin: R.k,
 				user: M.l,
@@ -1218,7 +1277,7 @@
 							src: `${r.a.assetPath}/img/gold/premium-crest.png`
 						}), i.a.createElement(de, null, H._("r/{community name} is a Reddit Premium community", [H._param("community name", D)], {
 							hk: "2lyDwB"
-						})), i.a.createElement(G, null, H._("The moderators in this community have set it to Reddit Premium members only. You must upgrade to a Reddit Premium membership to continue.", null, {
+						})), i.a.createElement(V, null, H._("The moderators in this community have set it to Reddit Premium members only. You must upgrade to a Reddit Premium membership to continue.", null, {
 							hk: "mIiOw"
 						})), i.a.createElement(q, null, L ? i.a.createElement(ae, {
 							href: `${r.a.redditUrl}/premium`,
@@ -1249,7 +1308,7 @@
 							hk: "IQmEA"
 						}) : H._("You must be 18+ to view this Custom Feed", null, {
 							hk: "3pmHS2"
-						})), i.a.createElement(G, null, H._("You must be at least eighteen years old to view this content. Are you over eighteen and willing to see adult content?", null, {
+						})), i.a.createElement(V, null, H._("You must be at least eighteen years old to view this content. Are you over eighteen and willing to see adult content?", null, {
 							hk: "gI12S"
 						})), i.a.createElement(q, null, i.a.createElement(ie, {
 							to: "/",
@@ -1265,7 +1324,7 @@
 					case B.a.PrivateSubreddit:
 						return i.a.createElement("div", null, i.a.createElement(U, null), i.a.createElement(de, null, "r/", D, " ", H._("is a private community", null, {
 							hk: "7zZmq"
-						})), F && F.length && i.a.createElement(Z, null, i.a.createElement(K, null, "r/", D), i.a.createElement(J, null, i.a.createElement("div", null, F))), i.a.createElement(G, null, H._("The moderators of", null, {
+						})), F && F.length && i.a.createElement(Z, null, i.a.createElement(K, null, "r/", D), i.a.createElement(J, null, i.a.createElement("div", null, F))), i.a.createElement(V, null, H._("The moderators of", null, {
 							hk: "3QSrbr"
 						}), " ", "r/", D, " ", H._("have set this community as private.", null, {
 							hk: "3zhD9F"
@@ -1299,7 +1358,7 @@
 							src: `${r.a.assetPath}/img/content-gate-icons/quarantined.png`
 						}), i.a.createElement(de, null, H._("Are you sure you want to view this community?", null, {
 							hk: "2BtxLM"
-						})), i.a.createElement(G, null, H._("This community is {=quarantined}", [H._param("=quarantined", i.a.createElement(Y, {
+						})), i.a.createElement(V, null, H._("This community is {=quarantined}", [H._param("=quarantined", i.a.createElement(Y, {
 							href: "https://www.reddithelp.com/en/categories/reddit-101/rules-reporting/account-and-community-restrictions/quarantined-subreddits"
 						}, H._("quarantined", null, {
 							hk: "2XqfJa"
@@ -1342,7 +1401,7 @@
 					case B.a.GatedSubreddit:
 						return i.a.createElement("div", null, i.a.createElement(de, null, H._("Are you sure you want to view this community?", null, {
 							hk: "1K5UIm"
-						})), i.a.createElement(G, null, i.a.createElement(ue, null, j ? i.a.createElement(g.b, {
+						})), i.a.createElement(V, null, i.a.createElement(ue, null, j ? i.a.createElement(g.b, {
 							content: j,
 							rtJsonElementProps: {
 								pageLayer: f
@@ -1367,7 +1426,7 @@
 							src: `${r.a.assetPath}/img/content-gate-icons/banned.png`
 						}), i.a.createElement(de, null, H._("r/{community name} has been banned from Reddit", [H._param("community name", D)], {
 							hk: "2at9Se"
-						})), (e => i.a.createElement(G, null, e ? i.a.createElement(O, {
+						})), (e => i.a.createElement(V, null, e ? i.a.createElement(O, {
 							linkClassName: z.a.Link,
 							text: e,
 							parseMdLinks: !0,
@@ -1394,7 +1453,7 @@
 					case B.a.SubredditDoesNotExist:
 						return i.a.createElement("div", null, i.a.createElement(se, null), i.a.createElement(de, null, H._("Sorry, there aren’t any communities on Reddit with that name.", null, {
 							hk: "31DRpe"
-						})), i.a.createElement(G, null, H._("This community may have been banned or the community name is incorrect.", null, {
+						})), i.a.createElement(V, null, H._("This community may have been banned or the community name is incorrect.", null, {
 							hk: "1lYMG2"
 						})), i.a.createElement(q, null, L && i.a.createElement(ne, {
 							eventSource: "content_gate"
@@ -1434,7 +1493,7 @@
 								case B.a.ProfileDoesNotExist:
 									return i.a.createElement(i.a.Fragment, null, i.a.createElement(de, null, H._("Sorry, nobody on Reddit goes by that name.", null, {
 										hk: "3i02av"
-									})), i.a.createElement(G, null, H._("The person may have been banned or the username is incorrect.", null, {
+									})), i.a.createElement(V, null, H._("The person may have been banned or the username is incorrect.", null, {
 										hk: "36ab4J"
 									})))
 							}
@@ -1469,7 +1528,7 @@
 				}
 			};
 			t.default = pe(he(Object(a.i)(e => {
-				const t = Object(s.useContext)(c.a) ? V : W;
+				const t = Object(s.useContext)(c.a) ? G : W;
 				return i.a.createElement(t, null, i.a.createElement("div", {
 					"data-testid": "content-gate"
 				}, i.a.createElement(le, null, be(e))), i.a.createElement(f.b, null))
@@ -4533,10 +4592,10 @@
 				U = n("./src/reddit/selectors/user.ts"),
 				q = n("./src/reddit/actions/subscription/index.ts"),
 				W = n("./src/reddit/components/MultiredditTopBar/Button/index.m.less"),
-				V = n.n(W);
+				G = n.n(W);
 
-			function G() {
-				return (G = Object.assign || function(e) {
+			function V() {
+				return (V = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -4554,15 +4613,15 @@
 						icon: o,
 						...c
 					} = e;
-					return a.a.createElement("button", G({
-						className: Object(v.a)(t, V.a.button, s ? V.a.withHover : null),
+					return a.a.createElement("button", V({
+						className: Object(v.a)(t, G.a.button, s ? G.a.withHover : null),
 						onClick: n
 					}, c), a.a.createElement("span", {
-						className: V.a.icon
+						className: G.a.icon
 					}, o), i && a.a.createElement("span", {
-						className: V.a.text
+						className: G.a.text
 					}, i), s && a.a.createElement("span", {
-						className: V.a.hoverText
+						className: G.a.hoverText
 					}, s), r)
 				}),
 				J = n("./src/reddit/components/TrackingHelper/index.tsx"),
@@ -4856,11 +4915,11 @@
 					}
 				},
 				We = Object(d.a)(He, Ue, qe, (e, t, n) => Object(m.a)(n, e, t)),
-				Ve = Object(d.a)(Ue, e => {
+				Ge = Object(d.a)(Ue, e => {
 					const t = h.N in e && e[h.N].toUpperCase();
 					return "string" == typeof t && t in l.oc ? l.oc[t] : l.pc
 				}),
-				Ge = Object(d.c)({
+				Ve = Object(d.c)({
 					isNsfwBlurSubreddit: Pe.e,
 					isAllNsfwPagesEnabled: Pe.f,
 					listingKey: We,
@@ -4868,7 +4927,7 @@
 					multireddit: M.e,
 					over18Prefs: U.lb,
 					sort: He,
-					timeSort: Ve
+					timeSort: Ge
 				});
 			class Ze extends a.a.Component {
 				constructor() {
@@ -4940,7 +4999,7 @@
 					})
 				}
 			}
-			const Je = ze(Object(c.b)(Ge, (e, t) => ({
+			const Je = ze(Object(c.b)(Ve, (e, t) => ({
 				onLoadMorePosts: () => e(Object(p.moreOfMyMultiRequested)({
 					sort: t.match.params.sort,
 					multiredditName: t.match.params.multiredditName,
@@ -4971,113 +5030,6 @@
 						experimentEligibilitySelector: i.R,
 						experimentName: r.yd
 					}) === r.Wd.ListingEnabled
-				}
-		},
-		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "i", (function() {
-				return c
-			})), n.d(t, "h", (function() {
-				return d
-			})), n.d(t, "a", (function() {
-				return l
-			})), n.d(t, "k", (function() {
-				return m
-			})), n.d(t, "j", (function() {
-				return p
-			})), n.d(t, "b", (function() {
-				return f
-			})), n.d(t, "e", (function() {
-				return _
-			})), n.d(t, "f", (function() {
-				return g
-			})), n.d(t, "c", (function() {
-				return x
-			})), n.d(t, "g", (function() {
-				return y
-			})), n.d(t, "d", (function() {
-				return v
-			}));
-			var r = n("./src/lib/objectSelector/index.ts"),
-				s = n("./src/reddit/featureFlags/index.ts"),
-				i = n("./src/reddit/selectors/posts.ts"),
-				o = n("./src/reddit/selectors/subreddit.ts"),
-				a = n("./src/reddit/selectors/user.ts");
-			const c = (e, t) => {
-					const n = e.focusedVerticals.interactedSubredditIds && e.focusedVerticals.interactedSubredditIds[t];
-					if (n) {
-						const t = Object(o.Y)(e, {
-							subredditId: n
-						});
-						return t && t.displayText || ""
-					}
-					return ""
-				},
-				d = (e, t) => e.focusedVerticals.interactedSubredditIds && e.focusedVerticals.interactedSubredditIds[t] || "",
-				l = e => e.focusedVerticals.components.dismissed,
-				u = [],
-				m = Object(r.a)((e, t) => {
-					const n = p(e, t);
-					if (!n) return u;
-					const r = Object(o.cb)(e, {
-						subredditName: n.name
-					});
-					return r && r.postIds && r.postIds.length ? r.postIds : u
-				}),
-				p = (e, t) => {
-					const n = e.focusedVerticals.recommendedSubredditIds && e.focusedVerticals.recommendedSubredditIds[t];
-					return n ? Object(o.Y)(e, {
-						subredditId: n
-					}) : null
-				},
-				h = (e, t, n, r, s) => {
-					const o = s.find(e => e <= t) || -1,
-						a = s.find(e => e > t) || 1 / 0;
-					return t !== a && t !== o && (!(o + n > t) && (!(t + n > a) && !((e, t, n) => {
-						const r = n[t - 1],
-							s = n[t],
-							o = s && Object(i.G)(e, {
-								postId: r
-							}) || null,
-							a = s && Object(i.G)(e, {
-								postId: s
-							}) || null;
-						return o && o.isSponsored || a && a.isSponsored
-					})(e, t, r)))
-				},
-				b = [3],
-				f = Object(r.a)((e, t) => {
-					let {
-						existingDUPositions: n,
-						listingProps: r
-					} = t;
-					const s = n.slice().sort();
-					let o = -1;
-					const a = Object(i.z)(e, {
-							listingKey: r.listingKey
-						}),
-						c = [];
-					return b.forEach(t => {
-						let n = o + t;
-						if (!(n >= a.length)) {
-							for (; n < a.length && !h(e, n, t, a, s);) n += 1;
-							n < a.length && (c.push(n), o = n)
-						}
-					}), c
-				}),
-				_ = e => {
-					return e.focusedVerticals.api.pending.focusedVerticalGqlPending
-				},
-				g = e => {
-					return e.focusedVerticals.api.error.focusedVerticalGqlError
-				},
-				x = e => e.focusedVerticals.category,
-				y = e => e.focusedVerticals.lastLoadedEnv,
-				v = e => {
-					const t = Object(a.Q)(e),
-						n = s.d.geoSubredditRecommendationDULoggedIn(e),
-						r = s.d.geoSubredditRecommendationDULoggedOut(e);
-					return t && n || !t && r
 				}
 		},
 		"./src/reddit/selectors/subredditMention.ts": function(e, t, n) {
@@ -5137,4 +5089,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.6c709791d609d00e73a3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.790c77a9c98672e6efa5.js.map

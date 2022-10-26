@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.673d0b83598f633f621c.js
-// Retrieved at 10/26/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.a21cd5c1452130380b8d.js
+// Retrieved at 10/26/2022, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2664,7 +2664,7 @@
 						v && S(setTimeout(() => {
 							g.current && (g.current.classList.add(y.a.transform), g.current.style.width = `${N}px`)
 						}, 4750)), v && C(setTimeout(() => {
-							w(!1), Object(p.Tb)(M, !1)
+							w(!1), Object(p.Rb)(M, !1)
 						}, 5e3))
 					};
 				Object(r.useEffect)(() => {
@@ -2691,7 +2691,7 @@
 					},
 					onMouseLeave: W,
 					onClick: () => {
-						O && clearTimeout(O), j && clearTimeout(j), w(!1), Object(p.Tb)(M, !0), h((() => e => ({
+						O && clearTimeout(O), j && clearTimeout(j), w(!1), Object(p.Rb)(M, !0), h((() => e => ({
 							source: "recap",
 							action: "click",
 							noun: "feed_banana",
@@ -3035,7 +3035,7 @@
 							e.stopPropagation(), o.visible ? g() : x()
 						}, [g, x, o.visible]),
 						S = Object(s.useCallback)(t => {
-							t === v.c.FREQUENT && Object(W.gb)(e.userId, e.subredditId)
+							t === v.c.FREQUENT && Object(W.fb)(e.userId, e.subredditId)
 						}, [e.subredditId, e.userId]),
 						I = Object(s.useCallback)(s => {
 							const {
@@ -3309,7 +3309,7 @@
 					small: !0,
 					isFullWidth: !0,
 					afterUnsubscribeAction: () => {
-						t && (Object(W.gb)(e.userId, t), e.updateSubredditInfo())
+						t && (Object(W.fb)(e.userId, t), e.updateSubredditInfo())
 					}
 				})), I && r.a.createElement(be, {
 					onClickUnmute: e.unmuteSubreddit
@@ -8423,13 +8423,13 @@
 							discoveryUnit: t,
 							subreddit: n
 						} = this.props;
-						t && this.props.sendEvent(Object(ce.q)(t, e, void 0, n))
+						t && this.props.sendEvent(Object(ce.k)(t, e, void 0, n))
 					}, this.trackPostViewed = e => {
 						const {
 							discoveryUnit: t,
 							subreddit: n
 						} = this.props;
-						t && this.props.sendEvent(Object(ce.t)(t, e, void 0, n))
+						t && this.props.sendEvent(Object(ce.n)(t, e, void 0, n))
 					}
 				}
 				componentDidMount() {
@@ -11119,4 +11119,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.673d0b83598f633f621c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.a21cd5c1452130380b8d.js.map

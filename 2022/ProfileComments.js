@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.37148a2ec10f39e932f4.js
-// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.a459318d5fcff8c1bb83.js
+// Retrieved at 10/26/2022, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -724,7 +724,7 @@
 					} = Ze,
 					[Qe, Je] = Object(n.useState)(!1),
 					$e = Object(n.useCallback)(() => {
-						Je(!Qe), Object(te.Rb)(), Le(Object(re.d)(_e))
+						Je(!Qe), Object(te.Pb)(), Le(Object(re.d)(_e))
 					}, [Qe, _e, Le]);
 				let Ye = r.a.createElement(Q.a, {
 					className: le.a.classicThumbnail,
@@ -5949,4 +5949,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.37148a2ec10f39e932f4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.a459318d5fcff8c1bb83.js.map

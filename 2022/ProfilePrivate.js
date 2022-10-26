@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.d4540a3867e3072d7a2d.js
-// Retrieved at 10/26/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.80064b2383251db0a8af.js
+// Retrieved at 10/26/2022, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -774,7 +774,7 @@
 						y && _(setTimeout(() => {
 							g.current && (g.current.classList.add(C.a.transform), g.current.style.width = `${I}px`)
 						}, 4750)), y && j(setTimeout(() => {
-							E(!1), Object(p.Tb)(B, !1)
+							E(!1), Object(p.Rb)(B, !1)
 						}, 5e3))
 					};
 				Object(r.useEffect)(() => {
@@ -801,7 +801,7 @@
 					},
 					onMouseLeave: G,
 					onClick: () => {
-						w && clearTimeout(w), S && clearTimeout(S), E(!1), Object(p.Tb)(B, !0), h((() => e => ({
+						w && clearTimeout(w), S && clearTimeout(S), E(!1), Object(p.Rb)(B, !0), h((() => e => ({
 							source: "recap",
 							action: "click",
 							noun: "feed_banana",
@@ -1055,7 +1055,7 @@
 					} = qe,
 					[Qe, Ye] = Object(n.useState)(!1),
 					Ze = Object(n.useCallback)(() => {
-						Ye(!Qe), Object(te.Rb)(), Ne(Object(re.d)(xe))
+						Ye(!Qe), Object(te.Pb)(), Ne(Object(re.d)(xe))
 					}, [Qe, xe, Ne]);
 				let Xe = r.a.createElement(Q.a, {
 					className: le.a.classicThumbnail,
@@ -6815,4 +6815,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.d4540a3867e3072d7a2d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.80064b2383251db0a8af.js.map

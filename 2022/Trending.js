@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Trending.659a0ae9fe1affa9c94c.js
-// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Trending.39be0c3f280f870c1fb1.js
+// Retrieved at 10/26/2022, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Trending"], {
 		"./src/reddit/actions/search/trending.ts": function(e, t, s) {
@@ -286,7 +286,7 @@
 			}
 			var O = Object(i.b)(null, e => ({
 					fireAdPixelsOfType: (t, s) => e(Object(m.y)(t, s)),
-					trackPostClick: t => e((e, s) => g.u({
+					trackPostClick: t => e((e, s) => g.o({
 						state: s(),
 						trendingSearch: t,
 						telemetrySource: h.a.Popular
@@ -303,7 +303,7 @@
 				trendingItems: e => Object(w.a)(e, j.d.tile)
 			}), e => ({
 				fetchTrendingItems: () => e(Object(d.b)(j.d.tile)),
-				trackPostView: t => e((e, s) => g.v({
+				trackPostView: t => e((e, s) => g.p({
 					state: s(),
 					trendingSearch: t,
 					telemetrySource: h.a.Popular
@@ -469,4 +469,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Trending.659a0ae9fe1affa9c94c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Trending.39be0c3f280f870c1fb1.js.map

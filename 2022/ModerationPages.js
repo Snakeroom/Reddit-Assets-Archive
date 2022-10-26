@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.8933a75b095cb5697039.js
-// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.0a18355fad25bc3660a0.js
+// Retrieved at 10/26/2022, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~SubredditForkingCTA", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -2661,7 +2661,7 @@
 								commentId: e,
 								followState: t
 							})).ok) {
-							Object(K.zb)(null !== (u = null === (l = null === (c = r().pages) || void 0 === c ? void 0 : c.comments) || void 0 === l ? void 0 : l.followed) && void 0 !== u ? u : [], null === (m = r().user.account) || void 0 === m ? void 0 : m.id);
+							Object(K.xb)(null !== (u = null === (l = null === (c = r().pages) || void 0 === c ? void 0 : c.comments) || void 0 === l ? void 0 : l.followed) && void 0 !== u ? u : [], null === (m = r().user.account) || void 0 === m ? void 0 : m.id);
 							const e = o ? s.fbt._("Followed! You’ll get updates when there’s new activity.", null, {
 								hk: "2O1Ou3"
 							}) : s.fbt._("Unfollowed. You won’t get updates on this comment anymore.", null, {
@@ -7295,14 +7295,14 @@
 				c = e => {
 					switch (e) {
 						case r.a.Denied:
-							a.rb(!1), Object(s.c)();
+							a.qb(!1), Object(s.c)();
 							break;
 						case r.a.Default:
 						case r.a.Granted:
-							a.rb(!0), Object(s.c)();
+							a.qb(!0), Object(s.c)();
 							break;
 						case r.a.Closed:
-							a.rb(!0)
+							a.qb(!0)
 					}
 				}
 		},
@@ -9055,7 +9055,7 @@
 					id: "createPostCta",
 					kind: $.b.Modal,
 					name: "createPostCta",
-					secondButtonAction: async () => Object(X.Kb)(),
+					secondButtonAction: async () => Object(X.Ib)(),
 					secondButtonText: "Dismiss",
 					text: `There have been over ${g} visits to r/${o} in the past week. Create a new post and start the next conversation.`
 				}))
@@ -11558,7 +11558,7 @@
 						}),
 						kind: u.b.SuccessCommunity,
 						text: d
-					})), Object(a.wb)(r + 1)
+					})), Object(a.vb)(r + 1)
 				}
 		},
 		"./src/reddit/actions/postCreation/general.ts": function(e, t, n) {
@@ -26416,7 +26416,7 @@
 					update: l
 				} = e, u = Object(ae.a)(), m = Object(a.d)(), [p, b] = Object(o.useState)(n), [f, h] = Object(o.useState)(!1), [_, g] = Object(o.useState)(!0);
 				return Object(o.useEffect)(() => {
-					g(Object(ie.G)("location")), Object(ie.Mb)("location")
+					g(Object(ie.G)("location")), Object(ie.Kb)("location")
 				}, []), i.a.createElement(i.a.Fragment, null, i.a.createElement(Q.a, {
 					className: je.a.noMarginHeading
 				}, G.fbt._("Community Location and main language", null, {
@@ -27608,10 +27608,10 @@
 			}
 			var v = Object(i.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(c.i)()), Object(p.Eb)()
+					e(Object(c.i)()), Object(p.Cb)()
 				},
 				onViewTooltip: () => {
-					Object(p.fc)()
+					Object(p.dc)()
 				}
 			}))(Object(u.c)(g));
 			const x = "editable-primary-topic-idcard";
@@ -33752,9 +33752,9 @@
 					L = Object(m.a)(),
 					[D, F, U] = function(e, t, n) {
 						const [r, o] = Object(s.useState)(Object(u.r)(e, t) || 0), i = Object(s.useCallback)(() => {
-							o(r + 1), Object(u.Cb)(e, t, r + 1)
+							o(r + 1), Object(u.Ab)(e, t, r + 1)
 						}, []), a = Object(s.useCallback)(() => {
-							n > 0 && (o(n), Object(u.Cb)(e, t, n))
+							n > 0 && (o(n), Object(u.Ab)(e, t, n))
 						}, []);
 						return [r, i, a]
 					}(h, n.notificationName, (null === (_ = n.persistence) || void 0 === _ ? void 0 : _.maxViews) || 0),
@@ -34289,7 +34289,7 @@
 						[O, E] = function(e) {
 							const [t, n] = Object(r.useState)(() => Object(Q.u)(e));
 							return [t, Object(r.useCallback)(() => {
-								n(!0), Object(Q.Db)(e)
+								n(!0), Object(Q.Bb)(e)
 							}, [e])]
 						}(g),
 						[y, C] = function(e) {
@@ -45610,7 +45610,7 @@
 					super(e), this.onShowTooltip = () => {
 						Object(x.v)() || (this.props.onShowTooltip(ee), setTimeout(() => {
 							this.props.onHideTooltip()
-						}, te), Object(x.Yb)())
+						}, te), Object(x.Wb)())
 					}, this.onAddReason = () => {
 						this.setState({
 							reasonToEdit: null
@@ -59279,7 +59279,7 @@
 					}
 				}),
 				a = (e, t) => {
-					t && (Object(r.Fb)(e.postId), Object(r.Ob)(t)), e.impressionIdStr ? Object(r.Gb)(e.impressionIdStr) : e.impressionId && Object(r.Gb)(e.impressionId)
+					t && (Object(r.Db)(e.postId), Object(r.Mb)(t)), e.impressionIdStr ? Object(r.Eb)(e.impressionIdStr) : e.impressionId && Object(r.Eb)(e.impressionId)
 				}
 		},
 		"./src/reddit/helpers/trackers/blade.ts": function(e, t, n) {
@@ -65119,7 +65119,7 @@
 			function o(e) {
 				const [t, n] = Object(s.useState)(Object(r.t)(e));
 				return [t, Object(s.useCallback)(() => {
-					n(!0), Object(r.sb)(e)
+					n(!0), Object(r.rb)(e)
 				}, [])]
 			}
 		},
@@ -77266,4 +77266,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.8933a75b095cb5697039.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.0a18355fad25bc3660a0.js.map

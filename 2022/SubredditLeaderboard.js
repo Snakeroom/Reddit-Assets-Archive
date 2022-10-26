@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.88efb743cea0471b5439.js
-// Retrieved at 10/26/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.5cc4433ed5ac9d593e86.js
+// Retrieved at 10/26/2022, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, r) {
@@ -93,7 +93,7 @@
 					t(k({
 						categoryId: e,
 						rank: n + 1
-					})), Object(m.pb)(Object(p.d)(r()))
+					})), Object(m.ob)(Object(p.d)(r()))
 				}
 		},
 		"./src/reddit/actions/pages/subredditLeaderboard.ts": function(e, t, r) {
@@ -282,7 +282,7 @@
 						x && j(setTimeout(() => {
 							h.current && (h.current.classList.add(E.a.transform), h.current.style.width = `${T}px`)
 						}, 4750)), x && O(setTimeout(() => {
-							_(!1), Object(p.Tb)(M, !1)
+							_(!1), Object(p.Rb)(M, !1)
 						}, 5e3))
 					};
 				Object(s.useEffect)(() => {
@@ -309,7 +309,7 @@
 					},
 					onMouseLeave: A,
 					onClick: () => {
-						v && clearTimeout(v), N && clearTimeout(N), _(!1), Object(p.Tb)(M, !0), g((() => e => ({
+						v && clearTimeout(v), N && clearTimeout(N), _(!1), Object(p.Rb)(M, !0), g((() => e => ({
 							source: "recap",
 							action: "click",
 							noun: "feed_banana",
@@ -2814,4 +2814,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.88efb743cea0471b5439.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.5cc4433ed5ac9d593e86.js.map

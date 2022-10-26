@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.18aa0f1cf7960fd64010.js
-// Retrieved at 10/26/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.886cbe49d4a31083a364.js
+// Retrieved at 10/26/2022, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -1346,7 +1346,7 @@
 						y && j(setTimeout(() => {
 							f.current && (f.current.classList.add(C.a.transform), f.current.style.width = `${N}px`)
 						}, 4750)), y && _(setTimeout(() => {
-							w(!1), Object(p.Tb)(L, !1)
+							w(!1), Object(p.Rb)(L, !1)
 						}, 5e3))
 					};
 				Object(n.useEffect)(() => {
@@ -1373,7 +1373,7 @@
 					},
 					onMouseLeave: B,
 					onClick: () => {
-						E && clearTimeout(E), S && clearTimeout(S), w(!1), Object(p.Tb)(L, !0), b((() => e => ({
+						E && clearTimeout(E), S && clearTimeout(S), w(!1), Object(p.Rb)(L, !0), b((() => e => ({
 							source: "recap",
 							action: "click",
 							noun: "feed_banana",
@@ -6264,4 +6264,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.18aa0f1cf7960fd64010.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.886cbe49d4a31083a364.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.445dffc868ce94652ac1.js
-// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.1239b4fe3f07a7f13293.js
+// Retrieved at 10/26/2022, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent~TopWeekPostsDiscoveryUnit"], {
 		"./node_modules/react-motion/lib/Motion.js": function(e, t, s) {
@@ -1446,8 +1446,8 @@
 							pathname: Object(P.b)(t.permalink),
 							state: Object(k.b)(a)
 						})),
-						trackPostClick: (t, s) => e((e, a) => n ? S.p(a(), n, t, s) : null),
-						trackPostSubredditClick: t => e((e, a) => s ? S.r(a(), s, t) : n ? S.r(a(), n, t) : null),
+						trackPostClick: (t, s) => e((e, a) => n ? S.j(a(), n, t, s) : null),
+						trackPostSubredditClick: t => e((e, a) => s ? S.l(a(), s, t) : n ? S.l(a(), n, t) : null),
 						showModalOnPostLinkClick: t => e(Object(d.ab)(Object(P.b)(t.permalink), t.id))
 					}
 				}),
@@ -1471,7 +1471,7 @@
 							searchOptions: o
 						} = this.props;
 						let l;
-						return (l = "subreddit" === t && o ? S.y(o, r, a, i) : i && o ? S.z(o, r, null, a, i) : S.o(s, n))(e)
+						return (l = "subreddit" === t && o ? S.s(o, r, a, i) : i && o ? S.t(o, r, null, a, i) : S.i(s, n))(e)
 					}, this.renderPost = (e, t) => {
 						const {
 							isMiniCard: s,
@@ -2660,4 +2660,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.445dffc868ce94652ac1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.1239b4fe3f07a7f13293.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.cd4cabcc0f300bc98864.js
-// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.e59715ec241c364e22f1.js
+// Retrieved at 10/26/2022, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -176,7 +176,7 @@
 						})(t, n, s, o ? i : ""))
 					}
 				}));
-			class X extends i.a.PureComponent {
+			class z extends i.a.PureComponent {
 				constructor() {
 					super(...arguments), this.state = {
 						includeMessage: !1,
@@ -254,7 +254,7 @@
 					}), e(Object(h.viewGivePremiumModalEvent)())
 				}
 				componentWillUnmount() {
-					Object(p.Bb)(this.state.isAnonymous), document.removeEventListener("keydown", this.handleEscapeKey)
+					Object(p.zb)(this.state.isAnonymous), document.removeEventListener("keydown", this.handleEscapeKey)
 				}
 				getDropdownMenuItems() {
 					const {
@@ -346,8 +346,8 @@
 					}))))))
 				}
 			}
-			const z = Object(d.a)(Object(u.c)(X));
-			t.default = V(e => i.a.createElement(z, K({}, e, {
+			const X = Object(d.a)(Object(u.c)(z));
+			t.default = V(e => i.a.createElement(X, K({}, e, {
 				withOverlay: !0,
 				onOverlayClick: e.closeModal
 			})))
@@ -784,4 +784,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.cd4cabcc0f300bc98864.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.e59715ec241c364e22f1.js.map

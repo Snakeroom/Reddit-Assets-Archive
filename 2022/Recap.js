@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Recap.40e2d77726e83633074e.js
-// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Recap.c7dcc8267681de8729ce.js
+// Retrieved at 10/26/2022, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Recap", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, a, t) {
@@ -96,10 +96,10 @@
 				j = t("./src/reddit/selectors/experiments/delayDnPermission.ts"),
 				k = t("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
 				C = t("./src/reddit/constants/experiments.ts"),
-				y = t("./src/reddit/helpers/chooseVariant/index.ts");
-			const S = e => Object(y.c)(e, {
+				S = t("./src/reddit/helpers/chooseVariant/index.ts");
+			const y = e => Object(S.c)(e, {
 				experimentName: C.mc,
-				experimentEligibilitySelector: y.a
+				experimentEligibilitySelector: S.a
 			}) === C.Sd;
 			var I = t("./src/reddit/selectors/meta.ts"),
 				x = t("./src/reddit/selectors/user.ts");
@@ -131,7 +131,7 @@
 				return async (r, i, s) => {
 					const n = i(),
 						d = Object(I.f)(n),
-						m = S(n),
+						m = y(n),
 						u = !!Object(N.a)(n),
 						b = Object(j.a)(n),
 						p = Object(k.e)(n),
@@ -651,8 +651,8 @@
 			const j = "PersonalizedYearInReviewCommentCard",
 				k = "PersonalizedYearInReviewEndCard",
 				C = "PersonalizedYearInReviewGenericCard",
-				y = "PersonalizedYearInReviewIntroCard",
-				S = "PersonalizedYearInReviewPostCard",
+				S = "PersonalizedYearInReviewIntroCard",
+				y = "PersonalizedYearInReviewPostCard",
 				I = "PersonalizedYearInReviewShareCard",
 				x = "PersonalizedYearInReviewSubredditCard",
 				T = "PersonalizedYearInReviewSubredditListCard",
@@ -1076,9 +1076,9 @@
 				}, [h, p]);
 				const C = async () => {
 					await p(Object(Ee.requestBrowserNotificationPermissionPromptByUser)(ve.f)), Ke() && O(Ne.DONE), g(Object(K.g)())
-				}, y = () => {
-					p(Object(ge.h)(ve.a))
 				}, S = () => {
+					p(Object(ge.h)(ve.a))
+				}, y = () => {
 					p(async (e, a) => {
 						var t;
 						await e(Object(fe.d)({
@@ -1128,7 +1128,7 @@
 						case Ne.TURN_ON_DAYLY_DIGEST:
 							return Oe._("And {=stay in the loop.}", [Oe._param("=stay in the loop.", i.a.createElement("span", {
 								className: ne.a.asLink,
-								onClick: v === Ne.VERIFY_EMAIL ? y : S
+								onClick: v === Ne.VERIFY_EMAIL ? S : y
 							}, Oe._("stay in the loop.", null, {
 								hk: "20YrIt"
 							})))], {
@@ -1214,7 +1214,7 @@
 					})
 				})))
 			};
-			var ye = e => {
+			var Se = e => {
 				let {
 					card: {
 						title: a,
@@ -1285,7 +1285,7 @@
 				}))))
 			};
 			t("./node_modules/core-js/modules/web.dom.iterable.js");
-			var Se = e => {
+			var ye = e => {
 					let {
 						card: {
 							title: a,
@@ -1452,7 +1452,7 @@
 					j = Object(f.a)(),
 					k = Object(r.useRef)(null),
 					C = Object(r.useRef)(null),
-					[y, S] = Object(r.useState)(""),
+					[S, y] = Object(r.useState)(""),
 					I = Object(d.e)(e => e.recap.shouldHideAbilityCardUsername),
 					x = Object(d.e)(e => e.recap.shouldHideAbilityCardAvatar),
 					T = Object(d.e)(e => e.recap.shareCardWasOpened),
@@ -1480,7 +1480,7 @@
 					})
 				}, i.a.createElement("style", {
 					ref: C
-				}, `\n        ${y}\n        `), i.a.createElement("div", {
+				}, `\n        ${S}\n        `), i.a.createElement("div", {
 					id: T && v ? "abilityCardShareId" : "",
 					className: Object(m.a)(ne.a.flippingWrapper, {
 						[ne.a.flipped]: T,
@@ -1559,11 +1559,11 @@
 							d = 50 + (Math.abs(Math.floor(100 / n * c) - 100) - 50) / 1.5,
 							m = `background-position: ${o}% ${d}%;`,
 							u = `transform: rotateX(${(d-50)/2*-1}deg) rotateY(${(o-50)/1.5*.5}deg)`;
-						b !== O.Common && S(`.${ne.a.card}:hover::before { ${m} }`), a.setAttribute("style", u)
+						b !== O.Common && y(`.${ne.a.card}:hover::before { ${m} }`), a.setAttribute("style", u)
 					},
 					onMouseLeave: e => {
 						const a = k.current;
-						a && (a.removeAttribute("style"), S(""))
+						a && (a.removeAttribute("style"), y(""))
 					},
 					ref: k,
 					className: Object(m.a)(ne.a.card, {
@@ -1944,7 +1944,7 @@
 					} = e;
 					return i.a.createElement("div", {
 						className: s
-					}, " ", (() => a ? (e => e.__typename === y)(a) ? i.a.createElement(Ce, {
+					}, " ", (() => a ? (e => e.__typename === S)(a) ? i.a.createElement(Ce, {
 						card: a,
 						isSelected: t
 					}) : (e => e.__typename === C)(a) ? i.a.createElement(ke, {
@@ -1959,7 +1959,7 @@
 						card: a,
 						isSelected: t,
 						isForSharing: r
-					}) : (e => e.__typename === S)(a) ? i.a.createElement(ye, {
+					}) : (e => e.__typename === y)(a) ? i.a.createElement(Se, {
 						card: a,
 						isSelected: t,
 						isForSharing: r
@@ -1979,7 +1979,7 @@
 						card: a,
 						isSelected: t,
 						isForSharing: r
-					}) : (e => e.__typename === A)(a) ? i.a.createElement(Se, {
+					}) : (e => e.__typename === A)(a) ? i.a.createElement(ye, {
 						card: a,
 						isSelected: t,
 						isForSharing: r
@@ -2020,21 +2020,21 @@
 						O = Object(d.e)(e => e.recap.cards),
 						[j, k] = Object(r.useState)(!1),
 						C = Object(d.e)(e => Object(Xe.b)(p.a.SNOOVATAR_MODAL)(e)),
-						y = Object(d.e)(Qe.l),
-						S = Math.ceil((v + 1) / 6),
-						I = v - 6 * (S - 1),
-						x = O.length > 6 && S > 1,
-						T = 6 * (S - 1),
+						S = Object(d.e)(Qe.l),
+						y = Math.ceil((v + 1) / 6),
+						I = v - 6 * (y - 1),
+						x = O.length > 6 && y > 1,
+						T = 6 * (y - 1),
 						w = T + 6,
-						R = 6 * S < O.length,
+						R = 6 * y < O.length,
 						F = O.length && D(O[v]),
 						A = O.length && (O[v].cardTemplateColor === _.WHITE || O[v].cardTemplateColor === _.YELLOW),
 						L = Object(r.useCallback)(() => {
 							e(Object(u.c)()), e(Object(u.a)())
 						}, [e]);
 					Object(r.useEffect)(() => {
-						Object(u.d)(!0), y && Object(E.Ub)(null == y ? void 0 : y.id)
-					}, [C, e, y, a]), Object(r.useEffect)(() => {
+						Object(u.d)(!0), S && Object(E.Sb)(null == S ? void 0 : S.id)
+					}, [C, e, S, a]), Object(r.useEffect)(() => {
 						a(Object(K.n)()), L()
 					}, [L, a]), Object(r.useEffect)(() => {
 						O.length && a(Object(K.m)())
@@ -2187,4 +2187,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Recap.40e2d77726e83633074e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Recap.c7dcc8267681de8729ce.js.map

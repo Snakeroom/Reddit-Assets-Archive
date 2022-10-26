@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.d04d967729c7f3a37dc7.js
-// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.c3deb349db0fe348e934.js
+// Retrieved at 10/26/2022, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -689,7 +689,7 @@
 					t(S({
 						categoryId: e,
 						rank: o + 1
-					})), Object(u.pb)(Object(p.d)(s()))
+					})), Object(u.ob)(Object(p.d)(s()))
 				}
 		},
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, s) {
@@ -5043,7 +5043,7 @@
 						toggleModal: t
 					} = e;
 					const s = () => {
-						J.ac(), t()
+						J.Yb(), t()
 					};
 					return n.a.createElement(q.e, null, n.a.createElement($, null, n.a.createElement(Q.a, null, n.a.createElement("div", null, n.a.createElement("div", {
 						className: X.a.Title
@@ -7348,12 +7348,12 @@
 					this.props.sendEvent(Object(Ue.h)("guidebook", this.props.currentStream))
 				}
 				onOBSBannerDismissClick() {
-					J.vb(), this.setState({
+					J.ub(), this.setState({
 						shouldShowOBSBanner: !1
 					}), this.props.sendEvent(Object(Ue.g)("not_now", this.props.currentStream))
 				}
 				onOBSBannerLearnMoreClick() {
-					J.vb(), this.setState({
+					J.ub(), this.setState({
 						shouldShowOBSBanner: !1
 					}), this.props.sendEvent(Object(Ue.g)("learn_more", this.props.currentStream)), this.props.toggleOBSDownloadModal()
 				}
@@ -7361,7 +7361,7 @@
 					this.props.currentStream && this.props.sendEvent(Object(Ue.o)(this.props.currentStream, this.playbackStats))
 				}
 				handleFocusMessageInput() {
-					J.ab() || this.props.toggleIntroChatModal()
+					J.Z() || this.props.toggleIntroChatModal()
 				}
 				onUpvote() {
 					this.props.currentStream && this.props.sendEvent(Object(Ue.r)(this.props.currentStream, this.playbackStats))
@@ -8013,4 +8013,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.d04d967729c7f3a37dc7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.c3deb349db0fe348e934.js.map

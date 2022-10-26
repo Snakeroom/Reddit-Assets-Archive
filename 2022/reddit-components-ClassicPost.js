@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.e2d4061d849e750b8412.js
-// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.1a12d98be5e7e71b3144.js
+// Retrieved at 10/26/2022, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1239,7 +1239,7 @@
 					} = Ke,
 					[Qe, Je] = Object(r.useState)(!1),
 					Xe = Object(r.useCallback)(() => {
-						Je(!Qe), Object(te.Rb)(), Ae(Object(se.d)(ge))
+						Je(!Qe), Object(te.Pb)(), Ae(Object(se.d)(ge))
 					}, [Qe, ge, Ae]);
 				let Ze = s.a.createElement(Q.a, {
 					className: le.a.classicThumbnail,
@@ -7078,4 +7078,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.e2d4061d849e750b8412.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.1a12d98be5e7e71b3144.js.map
