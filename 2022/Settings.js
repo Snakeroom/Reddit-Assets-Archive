@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.9779b709540aca48eb4d.js
-// Retrieved at 10/25/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.ede10f75f20ae8c41692.js
+// Retrieved at 10/25/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -11648,8 +11648,8 @@
 					subreddit: o
 				}), a.a.createElement("div", {
 					className: Sa.a.title
-				}, s.fbt._("{community} Supporter Membership", [s.fbt._param("community", o.displayText)], {
-					hk: "eZ8PH"
+				}, s.fbt._("{community} Special Membership", [s.fbt._param("community", o.displayText)], {
+					hk: "1qzQgh"
 				}))), a.a.createElement("header", {
 					className: Sa.a.subTitle
 				}, s.fbt._("Support the {community} community and receive exclusive access to premium features.", [s.fbt._param("community", o.displayText)], {
@@ -11677,7 +11677,7 @@
 				}, s.fbt._("{price}/month", [s.fbt._param("price", Object(Ea.b)(n, {
 					locale: r
 				}))], {
-					hk: "4hvdfp"
+					hk: "4aO5sr"
 				})))
 			})));
 			var Ta = n("./src/reddit/components/Settings/SpecialMembership/Memberships/Membership/CancellationModal/index.m.less"),
@@ -12564,7 +12564,7 @@
 					memberAlt: "Subreddit Supporter",
 					memberAltPlural: "Subreddit Supporters",
 					membership: "Membership",
-					membershipAlt: "Supporter Membership"
+					membershipAlt: "Special Membership"
 				},
 				D = (e, t) => Object.values(e.products.models).filter(e => e.type === c.a.Membership && t && e.subredditId === t),
 				R = (e, t) => {
@@ -12833,4 +12833,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.9779b709540aca48eb4d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.ede10f75f20ae8c41692.js.map
