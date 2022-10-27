@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.b318bc758842eb5b52fb.js
-// Retrieved at 10/26/2022, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.5320e228804af171a85b.js
+// Retrieved at 10/27/2022, 1:50:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -7016,7 +7016,7 @@
 					let {
 						className: t
 					} = e;
-					return Object(s.e)(i.l) ? r.a.createElement(d, {
+					return Object(s.e)(i.k) ? r.a.createElement(d, {
 						className: t
 					}) : r.a.createElement(a, {
 						className: t
@@ -30143,7 +30143,7 @@
 						theme: l,
 						topics: u,
 						isUpcoming: m
-					} = Object(s.e)(A.ub), h = Object(s.e)(A.kb), b = Object(s.e)(L.r), f = Object(s.e)(F.l), [g, C] = Object(o.useState)(!1), E = Object(s.d)(), v = Object(P.a)(), y = Object(o.useMemo)(() => Object(w.d)(), [i.id]), S = Object(o.useMemo)(() => Object.keys(W).reduce((e, t) => (e[W[t]] = l === t, e), {}), [l]);
+					} = Object(s.e)(A.ub), h = Object(s.e)(A.kb), b = Object(s.e)(L.q), f = Object(s.e)(F.l), [g, C] = Object(o.useState)(!1), E = Object(s.d)(), v = Object(P.a)(), y = Object(o.useMemo)(() => Object(w.d)(), [i.id]), S = Object(o.useMemo)(() => Object.keys(W).reduce((e, t) => (e[W[t]] = l === t, e), {}), [l]);
 					Object(o.useEffect)(() => {
 						v(Object(I.d)())
 					}, [v]);
@@ -30370,7 +30370,7 @@
 			var ve = () => {
 				const [e, t] = Object(o.useState)(!1), {
 					topics: n
-				} = Object(s.e)(A.ub), i = Object(s.e)(L.r), c = Object(s.d)(), l = () => {
+				} = Object(s.e)(A.ub), i = Object(s.e)(L.q), c = Object(s.d)(), l = () => {
 					t(!1)
 				};
 				return r.a.createElement(r.a.Fragment, null, r.a.createElement(j.t, {
@@ -34457,7 +34457,7 @@
 						subredditId: n
 					} = e;
 					const i = Object(s.d)(),
-						c = Object(s.e)(L.k),
+						c = Object(s.e)(L.j),
 						l = Object(s.e)(e => Object(Vn.b)(e, {
 							subredditId: n
 						})),
@@ -34877,7 +34877,7 @@
 				}, e.children),
 				mu = Object(i.a)(A.d, A.e, A.h, A.T, A.cb, J.r, (e, t) => {
 					const n = Object(A.h)(e);
-					return Object(L.x)(e) && t.isTalkCreationAllowedForUser && n.isProfile
+					return Object(L.w)(e) && t.isTalkCreationAllowedForUser && n.isProfile
 				}, (e, t, n, o, r, s, i) => {
 					const {
 						images: a = !0,
@@ -35111,8 +35111,8 @@
 							subredditId: n.id
 						})
 					},
-					isTalkTopicSelectionEnabled: L.w,
-					isScheduledTalksEnabled: L.r
+					isTalkTopicSelectionEnabled: L.v,
+					isScheduledTalksEnabled: L.q
 				});
 			class Su extends r.a.Component {
 				constructor(e) {
@@ -35454,7 +35454,7 @@
 					const t = Object(G.a)(),
 						[n, i] = Object(o.useState)(!1),
 						a = Object(s.e)(e => Object(A.h)(e)),
-						c = Object(s.e)(L.x),
+						c = Object(s.e)(L.w),
 						d = Object(o.useMemo)(() => {
 							var e;
 							return !!(null === (e = a.allowedPostTypes) || void 0 === e ? void 0 : e.talks)
@@ -39026,4 +39026,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.b318bc758842eb5b52fb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.5320e228804af171a85b.js.map

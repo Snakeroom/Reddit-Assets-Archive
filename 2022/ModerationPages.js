@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.f173d6c14a3164dda832.js
-// Retrieved at 10/27/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.3ee17866ce08d70837dc.js
+// Retrieved at 10/27/2022, 1:50:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~SubredditForkingCTA", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -8095,7 +8095,7 @@
 					ye = me || Ee;
 				me && !Object(xe.b)(K, me) && await t(Object(L.g)(me));
 				const Ce = !!me && Object(xe.c)(oe, me),
-					je = Object(be.t)(K),
+					je = Object(be.s)(K),
 					ke = Object(fe.n)(oe, {
 						subredditId: ye
 					}),
@@ -9274,7 +9274,7 @@
 						} = t;
 						var m, p;
 						const b = Object(je.i)(e),
-							f = !!b && !Object(ve.zg)(b) && (o || b === ve.vb.Community),
+							f = !!b && !Object(ve.yg)(b) && (o || b === ve.vb.Community),
 							{
 								adsSeenCount: h,
 								totalPostsSeenCount: _,
@@ -29247,7 +29247,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!n.m[t]
 					},
-					importAsync: () => Promise.all([n.e(2), n.e(4)]).then(n.bind(null, "./src/reddit/components/ContentSurvey/index.tsx")),
+					importAsync: () => Promise.all([n.e(0), n.e(1)]).then(n.bind(null, "./src/reddit/components/ContentSurvey/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -30091,7 +30091,7 @@
 					const t = this.resolve(e);
 					return !1 !== this.resolved[t] && !!n.m[t]
 				},
-				importAsync: () => Promise.all([n.e("vendors~Avatar~CryptoLibEthers~GovernanceTransferPointsModal~MarketplaceClaimModal~MarketplaceInFeed~1befd72a"), n.e("vendors~Avatar~ChatPost~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~RealtimeGQLSubscr~bfab320d"), n.e("vendors~Avatar~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~SnoovatarModal"), n.e(0), n.e("NftProfileUnit")]).then(n.bind(null, "./src/reddit/components/Econ/Marketplace/NftProfileUnit/index.tsx")),
+				importAsync: () => Promise.all([n.e("vendors~Avatar~CryptoLibEthers~GovernanceTransferPointsModal~MarketplaceClaimModal~MarketplaceInFeed~1befd72a"), n.e("vendors~Avatar~ChatPost~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~RealtimeGQLSubscr~bfab320d"), n.e("vendors~Avatar~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~SnoovatarModal"), n.e("NftProfileUnit")]).then(n.bind(null, "./src/reddit/components/Econ/Marketplace/NftProfileUnit/index.tsx")),
 				requireAsync(e) {
 					const t = this.resolve(e);
 					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -57366,7 +57366,7 @@
 								experimentName: o.M,
 								expEventOverride: t
 							});
-							return !!(Object(o.zg)(n) ? void 0 : n)
+							return !!(Object(o.yg)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -68017,7 +68017,7 @@
 						subredditId: n.id
 					}) && (!Object(se.b)(e) || !Object(C.f)(e))
 				},
-				isTalkHostsExperimentEnabled: C.t,
+				isTalkHostsExperimentEnabled: C.s,
 				isEventPostUiHidden: te.a
 			});
 			class Ve extends i.a.Component {
@@ -68515,7 +68515,7 @@
 					return {
 						contentGateInfo: m,
 						isBroadcastingEnabled: !!b && Object(w.c)(u, b.id),
-						isTalkHostsEnabled: Object(C.t)(u),
+						isTalkHostsEnabled: Object(C.s)(u),
 						isContributor: f,
 						isEmployee: t,
 						layout: n,
@@ -74106,7 +74106,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: s.Rd
 				});
-				return !(!t || Object(s.zg)(t))
+				return !(!t || Object(s.yg)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/gqlSubredditPage.ts": function(e, t, n) {
@@ -75693,7 +75693,7 @@
 					} = e.onboarding;
 					if (t.success || t.failure) return t
 				},
-				x = Object(r.a)(m.i, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(i.zg)(e) ? t : null),
+				x = Object(r.a)(m.i, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(i.yg)(e) ? t : null),
 				O = Object(r.a)(m.i, (e, t) => {
 					let {
 						pageLayer: n
@@ -77269,4 +77269,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.f173d6c14a3164dda832.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.3ee17866ce08d70837dc.js.map

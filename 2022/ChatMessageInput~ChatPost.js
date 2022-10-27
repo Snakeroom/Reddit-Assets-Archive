@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.b66e32e05e8dcb8ca7d9.js
-// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.0add54b60b57a4ecaad0.js
+// Retrieved at 10/27/2022, 1:50:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -89,7 +89,7 @@
 					defaultImage: t,
 					userId: n
 				} = e;
-				const r = Object(c.e)(h.q),
+				const r = Object(c.e)(h.p),
 					{
 						processingAvatarImageUrl: a
 					} = s.a;
@@ -2740,4 +2740,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.b66e32e05e8dcb8ca7d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.0add54b60b57a4ecaad0.js.map

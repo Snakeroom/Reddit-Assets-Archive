@@ -1,60 +1,64 @@
-// https://www.redditstatic.com/desktop2x/NftProductDetailsModal.5b9209e3f1ce8f289a2a.js
-// Retrieved at 10/24/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NftProductDetailsModal.415d38fa7da47b38696f.js
+// Retrieved at 10/27/2022, 1:50:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NftProductDetailsModal"], {
-		"./src/reddit/components/Econ/Marketplace/NftProductDetails/index.m.less": function(e, t, r) {
+		"./src/reddit/components/Econ/Marketplace/NftProductDetails/index.m.less": function(e, t, a) {
 			e.exports = {
 				modal: "MzaTO6XfNAMcup963kPT2",
 				container: "_30RcuypcroQp3sThrxG8QS"
 			}
 		},
-		"./src/reddit/components/Econ/Marketplace/NftProductDetails/index.tsx": function(e, t, r) {
+		"./src/reddit/components/Econ/Marketplace/NftProductDetails/index.tsx": function(e, t, a) {
 			"use strict";
-			r.r(t), r.d(t, "NftProductDetails", (function() {
-				return b
+			a.r(t), a.d(t, "NftProductDetails", (function() {
+				return A
 			}));
-			var a = r("./node_modules/@reddit/marketplace/marketplace.es.js"),
-				n = r("./src/higherOrderComponents/asModal/index.tsx"),
-				s = r("./node_modules/react/index.js"),
-				c = r.n(s),
-				o = r("./node_modules/react-redux/es/index.js"),
-				i = r("./src/reddit/actions/snoovatarModal.ts"),
-				d = r("./src/reddit/components/Crypto/CryptoComponentsConfigProvider.tsx"),
-				l = r("./src/reddit/helpers/avatarRouting.ts"),
-				u = r("./src/reddit/selectors/activeModal.ts"),
-				p = r("./src/reddit/selectors/experiments/econ/index.ts"),
-				E = r("./src/reddit/selectors/user.ts"),
-				f = r("./src/reddit/components/Econ/Marketplace/NftProductDetails/index.m.less"),
-				v = r.n(f);
+			var r = a("./node_modules/@reddit/marketplace/marketplace.es.js"),
+				n = a("./src/higherOrderComponents/asModal/index.tsx"),
+				s = a("./node_modules/react/index.js"),
+				c = a.n(s),
+				o = a("./node_modules/react-redux/es/index.js"),
+				i = a("./src/reddit/actions/snoovatarModal.ts"),
+				d = a("./src/reddit/components/Marketplace/MarketplaceConfigProvider.tsx"),
+				l = a("./src/reddit/helpers/avatarRouting.ts"),
+				u = a("./src/reddit/selectors/activeModal.ts"),
+				p = a("./src/reddit/selectors/user.ts"),
+				E = a("./src/reddit/components/Econ/Marketplace/NftProductDetails/index.m.less"),
+				f = a.n(E);
 
-			function O() {
-				return (O = Object.assign || function(e) {
+			function v() {
+				return (v = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
-						var r = arguments[t];
-						for (var a in r) Object.prototype.hasOwnProperty.call(r, a) && (e[a] = r[a])
+						var a = arguments[t];
+						for (var r in a) Object.prototype.hasOwnProperty.call(a, r) && (e[r] = a[r])
 					}
 					return e
 				}).apply(this, arguments)
 			}
-			const b = e => {
+			const A = e => {
 					let {
 						onClose: t
 					} = e;
-					const r = Object(o.e)(E.Db),
+					const a = Object(o.e)(p.Db),
 						n = Object(o.e)(e => {
 							var t;
 							return null === (t = Object(u.a)(e)) || void 0 === t ? void 0 : t.itemId
 						}),
 						s = Object(o.d)();
-					Object(o.e)(p.h);
-					if (!r || !n) return null;
-					const f = () => {
+					if (!a || !n) return null;
+					return c.a.createElement("div", {
+						className: f.a.container
+					}, c.a.createElement(d.a, null, c.a.createElement(r.i, {
+						itemId: n,
+						onClose: t,
+						currentUserId: a,
+						onViewAvatar: () => {
 							t(), s(Object(i.b)({
 								activeTab: l.a.ME,
 								activeMeSubpage: "MY_STUFF"
 							}))
 						},
-						O = e => {
+						onSetAsAvatar: e => {
 							t(), s(Object(i.b)({
 								activeTab: l.a.ME,
 								activeMeSubpage: "MY_STUFF",
@@ -65,7 +69,7 @@
 								}
 							}))
 						},
-						b = e => {
+						onArtistClick: e => {
 							t(), s(Object(i.b)({
 								activeTab: l.a.SHOP,
 								shopTabState: {
@@ -73,35 +77,26 @@
 									activeSheet: l.b.ARTIST_PAGE
 								}
 							}))
-						};
-					return c.a.createElement("div", {
-						className: v.a.container
-					}, c.a.createElement(d.a, null, c.a.createElement(a.i, {
-						itemId: n,
-						onClose: t,
-						currentUserId: r,
-						onViewAvatar: f,
-						onSetAsAvatar: O,
-						onArtistClick: b
+						}
 					})))
 				},
-				m = Object(n.a)(b);
-			t.default = e => c.a.createElement(m, O({
+				O = Object(n.a)(A);
+			t.default = e => c.a.createElement(O, v({
 				withOverlay: !0,
-				className: v.a.modal
+				className: f.a.modal
 			}, e))
 		},
-		"./src/reddit/helpers/avatarRouting.ts": function(e, t, r) {
+		"./src/reddit/helpers/avatarRouting.ts": function(e, t, a) {
 			"use strict";
-			var a, n, s;
-			r.d(t, "a", (function() {
+			var r, n, s;
+			a.d(t, "a", (function() {
 					return n
-				})), r.d(t, "b", (function() {
+				})), a.d(t, "b", (function() {
 					return s
 				})),
 				function(e) {
 					e.BODY = "body", e.EYES = "eyes", e.HAIR = "hair", e.EXPRESSION = "expression", e.FACIAL_HAIR = "facial hair"
-				}(a || (a = {})),
+				}(r || (r = {})),
 				function(e) {
 					e.SHOP = "shop", e.EXPLORE = "explore", e.STYLE = "style", e.ME = "you", e.NFT = "nft"
 				}(n || (n = {})),
@@ -111,4 +106,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProductDetailsModal.5b9209e3f1ce8f289a2a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProductDetailsModal.415d38fa7da47b38696f.js.map

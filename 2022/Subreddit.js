@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.6147a091791d174bdea8.js
-// Retrieved at 10/27/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.0cd7d1a7d10e26e9532b.js
+// Retrieved at 10/27/2022, 1:50:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "ModListing~Reddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -3149,7 +3149,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!n.m[t]
 					},
-					importAsync: () => Promise.all([n.e(2), n.e(4)]).then(n.bind(null, "./src/reddit/components/ContentSurvey/index.tsx")),
+					importAsync: () => Promise.all([n.e(0), n.e(1)]).then(n.bind(null, "./src/reddit/components/ContentSurvey/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -3807,7 +3807,7 @@
 					let {
 						className: t
 					} = e;
-					return Object(o.e)(a.l) ? s.a.createElement(d, {
+					return Object(o.e)(a.k) ? s.a.createElement(d, {
 						className: t
 					}) : s.a.createElement(i, {
 						className: t
@@ -17119,7 +17119,7 @@
 					const t = this.resolve(e);
 					return !1 !== this.resolved[t] && !!n.m[t]
 				},
-				importAsync: () => Promise.all([n.e(2), n.e("CollectionCommentsPage~ModProgressModule~NewCommunityProgress"), n.e("NewCommunityProgress")]).then(n.bind(null, "./src/reddit/components/NewCommunityProgress/NewCommunityProgress.tsx")),
+				importAsync: () => Promise.all([n.e(0), n.e("CollectionCommentsPage~ModProgressModule~NewCommunityProgress"), n.e("NewCommunityProgress")]).then(n.bind(null, "./src/reddit/components/NewCommunityProgress/NewCommunityProgress.tsx")),
 				requireAsync(e) {
 					const t = this.resolve(e);
 					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -20531,7 +20531,7 @@
 						experimentEligibilitySelector: o.R,
 						experimentName: r.yd
 					});
-					return !(!t || Object(r.zg)(t))
+					return !(!t || Object(r.yg)(t))
 				},
 				i = e => {
 					return Object(s.c)(e, {
@@ -21008,4 +21008,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.6147a091791d174bdea8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.0cd7d1a7d10e26e9532b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.0299e98ef4ee9385cd14.js
-// Retrieved at 10/26/2022, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.456b1e3874e163d7da01.js
+// Retrieved at 10/27/2022, 1:50:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, r) {
@@ -859,7 +859,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!r.m[t]
 					},
-					importAsync: () => Promise.all([r.e(2), r.e(4)]).then(r.bind(null, "./src/reddit/components/ContentSurvey/index.tsx")),
+					importAsync: () => Promise.all([r.e(0), r.e(1)]).then(r.bind(null, "./src/reddit/components/ContentSurvey/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -1965,7 +1965,7 @@
 					const t = this.resolve(e);
 					return !1 !== this.resolved[t] && !!r.m[t]
 				},
-				importAsync: () => Promise.all([r.e(2), r.e("CollectionCommentsPage~ModProgressModule~NewCommunityProgress"), r.e("NewCommunityProgress")]).then(r.bind(null, "./src/reddit/components/NewCommunityProgress/NewCommunityProgress.tsx")),
+				importAsync: () => Promise.all([r.e(0), r.e("CollectionCommentsPage~ModProgressModule~NewCommunityProgress"), r.e("NewCommunityProgress")]).then(r.bind(null, "./src/reddit/components/NewCommunityProgress/NewCommunityProgress.tsx")),
 				requireAsync(e) {
 					const t = this.resolve(e);
 					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -2053,7 +2053,7 @@
 						experimentEligibilitySelector: i.R,
 						experimentName: n.yd
 					});
-					return !(!t || Object(n.zg)(t))
+					return !(!t || Object(n.yg)(t))
 				},
 				d = e => {
 					return Object(s.c)(e, {
@@ -2098,4 +2098,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.0299e98ef4ee9385cd14.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.456b1e3874e163d7da01.js.map

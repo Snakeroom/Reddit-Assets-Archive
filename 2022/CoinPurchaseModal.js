@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.6c63d65a9da991b0eca0.js
-// Retrieved at 10/25/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.6ec4f54b8e4b8c69bd7c.js
+// Retrieved at 10/27/2022, 1:50:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal", "gildActions"], {
 		"./src/reddit/actions/economics/powerups/helpers.ts": function(e, t, a) {
@@ -1235,7 +1235,7 @@
 				} = e;
 				const C = Object(g.a)(),
 					k = Object(u.d)(),
-					v = Object(u.e)(p.i),
+					v = Object(u.e)(p.h),
 					x = Object(u.e)(S.a),
 					E = !!r;
 				if (E && !v) {
@@ -1949,4 +1949,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.6c63d65a9da991b0eca0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.6ec4f54b8e4b8c69bd7c.js.map

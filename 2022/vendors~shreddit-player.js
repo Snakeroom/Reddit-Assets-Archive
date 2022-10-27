@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~shreddit-player.cdb0097dbe58ed7a4dc3.js
-// Retrieved at 10/19/2022, 1:30:25 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~shreddit-player.27751138347614416a3d.js
+// Retrieved at 10/27/2022, 1:50:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~shreddit-player"], {
 		"./node_modules/@reddit/faceplate/lib/custom-event.js": function(e, t, r) {
@@ -4520,7 +4520,7 @@
 			};
 			let jr = class extends i.a {
 				constructor() {
-					super(...arguments), this.hlsLibrary = () => r.e(7).then(r.t.bind(null, "./node_modules/@reddit/shreddit.components.shreddit-player/node_modules/hls.js/dist/hls.min.js", 7)), this.autoplay = !1, this.gif = !1, this.playOutOfViewport = !1, this.ui = "mobile", this.objectFit = "contain", this.showPreviewPoster = !0, this.handleLoadMediaClick = () => {
+					super(...arguments), this.hlsLibrary = () => r.e(3).then(r.t.bind(null, "./node_modules/@reddit/shreddit.components.shreddit-player/node_modules/hls.js/dist/hls.min.js", 7)), this.autoplay = !1, this.gif = !1, this.playOutOfViewport = !1, this.ui = "mobile", this.objectFit = "contain", this.showPreviewPoster = !0, this.handleLoadMediaClick = () => {
 						var e;
 						null === (e = this.hlsElement) || void 0 === e || e.startLoadingMedia(), this.showPreviewPoster = !1
 					}
@@ -7232,4 +7232,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~shreddit-player.cdb0097dbe58ed7a4dc3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~shreddit-player.27751138347614416a3d.js.map
