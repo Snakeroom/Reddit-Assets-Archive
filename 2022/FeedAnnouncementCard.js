@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeedAnnouncementCard.e77666447daae9530f83.js
-// Retrieved at 10/24/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeedAnnouncementCard.9044facf2cbe5ed84b2f.js
+// Retrieved at 10/27/2022, 5:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeedAnnouncementCard"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -96,7 +96,7 @@
 				p = n("./src/reddit/components/FeedAnnouncement/FeedAnnouncementCard/index.m.less"),
 				x = n.n(p);
 
-			function _(e) {
+			function C(e) {
 				const {
 					onClose: t
 				} = e;
@@ -108,7 +108,9 @@
 					hk: "1Sazf8"
 				})), r.a.createElement("button", {
 					className: x.a.headerCloseButton,
-					onClick: t,
+					onClick: e => {
+						e.stopPropagation(), t()
+					},
 					title: s.fbt._("Close", null, {
 						hk: "4CfMwa"
 					})
@@ -124,8 +126,10 @@
 					onClose: l
 				} = e;
 				return r.a.createElement("div", {
-					className: Object(o.a)(x.a.container)
-				}, r.a.createElement(_, {
+					className: Object(o.a)(x.a.container),
+					role: "button",
+					onClick: () => window.location.href = i
+				}, r.a.createElement(C, {
 					onClose: l
 				}), r.a.createElement("div", {
 					className: Object(o.a)(x.a.bodyContainer)
@@ -163,4 +167,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeedAnnouncementCard.e77666447daae9530f83.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeedAnnouncementCard.9044facf2cbe5ed84b2f.js.map

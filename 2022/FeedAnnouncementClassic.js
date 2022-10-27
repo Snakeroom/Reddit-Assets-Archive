@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeedAnnouncementClassic.2f6b37db2d9d0f7300c0.js
-// Retrieved at 10/25/2022, 7:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeedAnnouncementClassic.ef3f449ed2dd8a04ae0f.js
+// Retrieved at 10/27/2022, 5:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeedAnnouncementClassic"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, a) {
@@ -114,16 +114,18 @@
 					url: d,
 					layout: _,
 					onClose: p
-				} = e, x = _ === b.g.Compact;
+				} = e, C = _ === b.g.Compact;
 				return i.a.createElement("div", {
 					className: Object(c.a)({
 						[h.a.container]: !0,
-						[h.a.isCompact]: x
-					})
+						[h.a.isCompact]: C
+					}),
+					role: "button",
+					onClick: () => window.location.href = d
 				}, i.a.createElement("div", {
 					className: Object(c.a)({
 						[h.a.leftRail]: !0,
-						[h.a.isCompact]: x
+						[h.a.isCompact]: C
 					})
 				}, i.a.createElement("div", {
 					className: Object(c.a)(h.a.horizontalVotes)
@@ -143,7 +145,9 @@
 					className: Object(c.a)(h.a.title, h.a.ellipsis)
 				}, o), i.a.createElement("button", {
 					className: h.a.headerCloseButton,
-					onClick: p,
+					onClick: e => {
+						e.stopPropagation(), p()
+					},
 					title: s.fbt._("Close", null, {
 						hk: "4CfMwa"
 					})
@@ -225,4 +229,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeedAnnouncementClassic.2f6b37db2d9d0f7300c0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeedAnnouncementClassic.ef3f449ed2dd8a04ae0f.js.map
