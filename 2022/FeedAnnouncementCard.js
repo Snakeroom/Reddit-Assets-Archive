@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeedAnnouncementCard.9044facf2cbe5ed84b2f.js
-// Retrieved at 10/27/2022, 5:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeedAnnouncementCard.be114aed38ffb5ff0ac1.js
+// Retrieved at 10/27/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeedAnnouncementCard"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -124,7 +124,7 @@
 					cta: c,
 					url: i,
 					onClose: l
-				} = e;
+				} = e, d = Object(h.a)(t);
 				return r.a.createElement("div", {
 					className: Object(o.a)(x.a.container),
 					role: "button",
@@ -137,11 +137,11 @@
 					className: Object(o.a)(x.a.bodyContent)
 				}, r.a.createElement("h3", {
 					className: x.a.title
-				}, s), r.a.createElement("p", null, n)), r.a.createElement("div", {
+				}, s), r.a.createElement("p", null, n)), null != d ? r.a.createElement("div", {
 					className: Object(o.a)(x.a.thumbnailContainer)
 				}, r.a.createElement("img", {
-					src: Object(h.a)(t)
-				}))), null != c ? r.a.createElement("div", {
+					src: d
+				})) : null), null != c ? r.a.createElement("div", {
 					className: Object(o.a)(x.a.ctaContainer)
 				}, r.a.createElement("a", {
 					href: i,
@@ -154,10 +154,32 @@
 		"./src/reddit/components/FeedAnnouncement/utils.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return s
+				return r
 			}));
-			var a = n("./src/config.ts");
-			const s = e => ("test_id", `${a.a.assetPath}/img/announcements/test_id.png`)
+			n("./node_modules/core-js/modules/web.dom.iterable.js");
+			var a = n("./src/config.ts"),
+				s = n("./node_modules/react/index.js");
+			const o = new Map,
+				c = async e => {
+					if (o.has(e)) return await o.get(e);
+					const t = (async e => {
+						return (await fetch(e, {
+							method: "HEAD"
+						})).ok
+					})(e);
+					return o.set(e, t), await t
+				}, r = e => {
+					const [t, n] = Object(s.useState)(null);
+					return Object(s.useEffect)(() => {
+						const t = (e => `${a.a.assetPath}/img/announcements/${e}.png`)(e);
+						let s = !1;
+						return c(t).then(e => {
+							!1 === s && !0 === e && n(t)
+						}), () => {
+							s = !0
+						}
+					}, [e]), t
+				}
 		},
 		"./src/reddit/components/Snoo/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -167,4 +189,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeedAnnouncementCard.9044facf2cbe5ed84b2f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeedAnnouncementCard.be114aed38ffb5ff0ac1.js.map
