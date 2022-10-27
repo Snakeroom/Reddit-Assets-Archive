@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Recap.ae4b39a406045a23a6c9.js
-// Retrieved at 10/27/2022, 1:50:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Recap.5fe0b3501937c6658f07.js
+// Retrieved at 10/27/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Recap", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, a, t) {
@@ -96,11 +96,11 @@
 				j = t("./src/reddit/selectors/experiments/delayDnPermission.ts"),
 				k = t("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
 				C = t("./src/reddit/constants/experiments.ts"),
-				S = t("./src/reddit/helpers/chooseVariant/index.ts");
-			const y = e => Object(S.c)(e, {
+				y = t("./src/reddit/helpers/chooseVariant/index.ts");
+			const S = e => Object(y.c)(e, {
 				experimentName: C.mc,
-				experimentEligibilitySelector: S.a
-			}) === C.Sd;
+				experimentEligibilitySelector: y.a
+			}) === C.Vd;
 			var I = t("./src/reddit/selectors/meta.ts"),
 				x = t("./src/reddit/selectors/user.ts");
 			let T = !1;
@@ -131,7 +131,7 @@
 				return async (r, i, s) => {
 					const n = i(),
 						d = Object(I.f)(n),
-						m = y(n),
+						m = S(n),
 						u = !!Object(N.a)(n),
 						b = Object(j.a)(n),
 						p = Object(k.e)(n),
@@ -651,8 +651,8 @@
 			const j = "PersonalizedYearInReviewCommentCard",
 				k = "PersonalizedYearInReviewEndCard",
 				C = "PersonalizedYearInReviewGenericCard",
-				S = "PersonalizedYearInReviewIntroCard",
-				y = "PersonalizedYearInReviewPostCard",
+				y = "PersonalizedYearInReviewIntroCard",
+				S = "PersonalizedYearInReviewPostCard",
 				I = "PersonalizedYearInReviewShareCard",
 				x = "PersonalizedYearInReviewSubredditCard",
 				T = "PersonalizedYearInReviewSubredditListCard",
@@ -704,8 +704,8 @@
 					className: G.a.image,
 					src: `${B.a.assetPath}/img/recap/InfiniteLoad_4.gif`
 				})),
-				z = t("./src/higherOrderComponents/asModal/index.tsx");
-			var V = Object(z.a)(e => {
+				V = t("./src/higherOrderComponents/asModal/index.tsx");
+			var z = Object(V.a)(e => {
 					let {
 						children: a
 					} = e;
@@ -782,7 +782,7 @@
 						className: Object(m.a)(ee.a.title, {
 							[ee.a.selected]: n
 						})
-					}, Ve(a, Object(m.a)(ee.a.value, {
+					}, ze(a, Object(m.a)(ee.a.value, {
 						[ee.a.orange]: !d
 					}))), i.a.createElement("p", {
 						className: Object(m.a)(ee.a.subtitle, {
@@ -1076,9 +1076,9 @@
 				}, [h, p]);
 				const C = async () => {
 					await p(Object(Ee.requestBrowserNotificationPermissionPromptByUser)(ve.f)), Ke() && O(Ne.DONE), g(Object(K.g)())
-				}, S = () => {
-					p(Object(ge.h)(ve.a))
 				}, y = () => {
+					p(Object(ge.h)(ve.a))
+				}, S = () => {
 					p(async (e, a) => {
 						var t;
 						await e(Object(fe.d)({
@@ -1128,7 +1128,7 @@
 						case Ne.TURN_ON_DAYLY_DIGEST:
 							return Oe._("And {=stay in the loop.}", [Oe._param("=stay in the loop.", i.a.createElement("span", {
 								className: ne.a.asLink,
-								onClick: v === Ne.VERIFY_EMAIL ? S : y
+								onClick: v === Ne.VERIFY_EMAIL ? y : S
 							}, Oe._("stay in the loop.", null, {
 								hk: "20YrIt"
 							})))], {
@@ -1214,7 +1214,7 @@
 					})
 				})))
 			};
-			var Se = e => {
+			var ye = e => {
 				let {
 					card: {
 						title: a,
@@ -1285,7 +1285,7 @@
 				}))))
 			};
 			t("./node_modules/core-js/modules/web.dom.iterable.js");
-			var ye = e => {
+			var Se = e => {
 					let {
 						card: {
 							title: a,
@@ -1452,7 +1452,7 @@
 					j = Object(f.a)(),
 					k = Object(r.useRef)(null),
 					C = Object(r.useRef)(null),
-					[S, y] = Object(r.useState)(""),
+					[y, S] = Object(r.useState)(""),
 					I = Object(d.e)(e => e.recap.shouldHideAbilityCardUsername),
 					x = Object(d.e)(e => e.recap.shouldHideAbilityCardAvatar),
 					T = Object(d.e)(e => e.recap.shareCardWasOpened),
@@ -1480,7 +1480,7 @@
 					})
 				}, i.a.createElement("style", {
 					ref: C
-				}, `\n        ${S}\n        `), i.a.createElement("div", {
+				}, `\n        ${y}\n        `), i.a.createElement("div", {
 					id: T && v ? "abilityCardShareId" : "",
 					className: Object(m.a)(ne.a.flippingWrapper, {
 						[ne.a.flipped]: T,
@@ -1559,11 +1559,11 @@
 							d = 50 + (Math.abs(Math.floor(100 / n * c) - 100) - 50) / 1.5,
 							m = `background-position: ${o}% ${d}%;`,
 							u = `transform: rotateX(${(d-50)/2*-1}deg) rotateY(${(o-50)/1.5*.5}deg)`;
-						b !== O.Common && y(`.${ne.a.card}:hover::before { ${m} }`), a.setAttribute("style", u)
+						b !== O.Common && S(`.${ne.a.card}:hover::before { ${m} }`), a.setAttribute("style", u)
 					},
 					onMouseLeave: e => {
 						const a = k.current;
-						a && (a.removeAttribute("style"), y(""))
+						a && (a.removeAttribute("style"), S(""))
 					},
 					ref: k,
 					className: Object(m.a)(ne.a.card, {
@@ -1924,11 +1924,11 @@
 				[_.BLACK]: "#000",
 				[_.WHITE]: "#fff"
 			}, Ue = [434, 373, 212];
-			var ze;
+			var Ve;
 			! function(e) {
 				e.WHITE = "#fff", e.MANGO_100 = "#fff8b8", e.MANGO_300 = "#ffd635", e.MANGO_500 = "#ffa800"
-			}(ze || (ze = {}));
-			const Ve = (e, a) => {
+			}(Ve || (Ve = {}));
+			const ze = (e, a) => {
 					const t = /(\*\*.*?\*\*)/g;
 					return e.split(t).map((e, r) => t.test(e) ? i.a.createElement("span", {
 						key: e + r,
@@ -1944,7 +1944,7 @@
 					} = e;
 					return i.a.createElement("div", {
 						className: s
-					}, " ", (() => a ? (e => e.__typename === S)(a) ? i.a.createElement(Ce, {
+					}, " ", (() => a ? (e => e.__typename === y)(a) ? i.a.createElement(Ce, {
 						card: a,
 						isSelected: t
 					}) : (e => e.__typename === C)(a) ? i.a.createElement(ke, {
@@ -1959,7 +1959,7 @@
 						card: a,
 						isSelected: t,
 						isForSharing: r
-					}) : (e => e.__typename === y)(a) ? i.a.createElement(Se, {
+					}) : (e => e.__typename === S)(a) ? i.a.createElement(ye, {
 						card: a,
 						isSelected: t,
 						isForSharing: r
@@ -1979,7 +1979,7 @@
 						card: a,
 						isSelected: t,
 						isForSharing: r
-					}) : (e => e.__typename === A)(a) ? i.a.createElement(ye, {
+					}) : (e => e.__typename === A)(a) ? i.a.createElement(Se, {
 						card: a,
 						isSelected: t,
 						isForSharing: r
@@ -2020,21 +2020,21 @@
 						O = Object(d.e)(e => e.recap.cards),
 						[j, k] = Object(r.useState)(!1),
 						C = Object(d.e)(e => Object(Xe.b)(p.a.SNOOVATAR_MODAL)(e)),
-						S = Object(d.e)(Qe.l),
-						y = Math.ceil((v + 1) / 6),
-						I = v - 6 * (y - 1),
-						x = O.length > 6 && y > 1,
-						T = 6 * (y - 1),
+						y = Object(d.e)(Qe.l),
+						S = Math.ceil((v + 1) / 6),
+						I = v - 6 * (S - 1),
+						x = O.length > 6 && S > 1,
+						T = 6 * (S - 1),
 						w = T + 6,
-						R = 6 * y < O.length,
+						R = 6 * S < O.length,
 						F = O.length && D(O[v]),
 						A = O.length && (O[v].cardTemplateColor === _.WHITE || O[v].cardTemplateColor === _.YELLOW),
 						L = Object(r.useCallback)(() => {
 							e(Object(u.c)()), e(Object(u.a)())
 						}, [e]);
 					Object(r.useEffect)(() => {
-						Object(u.d)(!0), S && Object(E.Sb)(null == S ? void 0 : S.id)
-					}, [C, e, S, a]), Object(r.useEffect)(() => {
+						Object(u.d)(!0), y && Object(E.Sb)(null == y ? void 0 : y.id)
+					}, [C, e, y, a]), Object(r.useEffect)(() => {
 						a(Object(K.n)()), L()
 					}, [L, a]), Object(r.useEffect)(() => {
 						O.length && a(Object(K.m)())
@@ -2120,7 +2120,7 @@
 							[$e.a.black]: !!A
 						}),
 						iconClassName: $e.a.downButtonIcon
-					}), s && i.a.createElement(V, {
+					}), s && i.a.createElement(z, {
 						onOverlayClick: () => (() => e(Object(u.h)()))(),
 						withOverlay: !0
 					}, i.a.createElement("div", {
@@ -2187,4 +2187,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Recap.ae4b39a406045a23a6c9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Recap.5fe0b3501937c6658f07.js.map

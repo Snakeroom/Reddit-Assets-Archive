@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.9b8d6ea7a30ad8a1f945.js
-// Retrieved at 10/27/2022, 1:50:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.38fa5716413e8cf41840.js
+// Retrieved at 10/27/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeaturedLiveEntrypointAnnouncementsCarousel"], {
 		"./src/reddit/components/FeaturedLiveEntrypoint/AnnouncementsCarousel/index.m.less": function(e, t, n) {
@@ -105,7 +105,7 @@
 				g = (e, t) => n => {
 					if (n.experimentName) {
 						const t = e[n.experimentName.toLowerCase()];
-						if (t && Object(p.yg)(t.variant)) return !1
+						if (t && Object(p.Bg)(t.variant)) return !1
 					}
 					return !((t[n.id] || 0) >= n.maxImpressionsCount)
 				};
@@ -238,7 +238,7 @@
 				})({
 					visibleAnnouncements: r,
 					setIsHidden: m
-				}), y = (e => {
+				}), L = (e => {
 					let {
 						activeIndex: t,
 						setActiveIndex: n,
@@ -307,7 +307,7 @@
 					}),
 					isActive: t === h,
 					key: e.id,
-					onClick: y
+					onClick: L
 				}))), r.length > 1 ? o.a.createElement("button", {
 					className: f.a.RightArrow,
 					onClick: w("next")
@@ -330,4 +330,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.9b8d6ea7a30ad8a1f945.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.38fa5716413e8cf41840.js.map

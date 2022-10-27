@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.161549d91e401676f6d6.js
-// Retrieved at 10/27/2022, 1:50:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.44550034a9e92a722d05.js
+// Retrieved at 10/27/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -2220,7 +2220,7 @@
 			const D = e => _.d.reCaptchaEnterprise(e) && !Object(T.d)(e),
 				w = e => !!Object(S.c)(e, {
 					experimentEligibilitySelector: Object(I.d)(Object(I.b)(...a.d)),
-					experimentName: f.vf
+					experimentName: f.yf
 				}),
 				j = Object(r.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				C = () => l(e => p()([D, w, e => e.tracking.reCaptchaEnterprise.load === r.a.New], t => t(e)))(async e => {
@@ -4306,7 +4306,7 @@
 				const t = Object(E.q)(e, M.Pb);
 				return {
 					experimentState: e,
-					isActive: (null == t ? void 0 : t.variant) === M.Sd,
+					isActive: (null == t ? void 0 : t.variant) === M.Vd,
 					isBucketed: !!(null == t ? void 0 : t.variant)
 				}
 			}
@@ -4368,7 +4368,7 @@
 							function() {
 								let e = {};
 								A && F.type.length && (Object(G.d)(j, {
-									experimentName: M.Mc
+									experimentName: M.Pc
 								}), C && (e = {
 									...F
 								}));
@@ -25655,7 +25655,7 @@
 					if (!u(e)) return;
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: l,
-						experimentName: a.me,
+						experimentName: a.pe,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -25678,9 +25678,9 @@
 				},
 				b = e => !!p(e) && Object(o.c)(e, {
 					experimentEligibilitySelector: u,
-					experimentName: a.ne,
+					experimentName: a.qe,
 					expEventOverride: !1
-				}) !== a.oe.Readonly
+				}) !== a.re.Readonly
 		},
 		"./src/reddit/selectors/experiments/serpTabPreserved.ts": function(e, t, n) {
 			"use strict";
@@ -25691,10 +25691,10 @@
 				s = n("./src/reddit/selectors/telemetry.ts");
 
 			function a(e) {
-				const t = Object(s.q)(e, r.Mc);
+				const t = Object(s.q)(e, r.Pc);
 				return {
 					experimentState: e,
-					isActive: (null == t ? void 0 : t.variant) === r.Sd,
+					isActive: (null == t ? void 0 : t.variant) === r.Vd,
 					isBucketed: !!(null == t ? void 0 : t.variant)
 				}
 			}
@@ -25844,4 +25844,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.161549d91e401676f6d6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.44550034a9e92a722d05.js.map

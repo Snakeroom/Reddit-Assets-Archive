@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.143935016e9418eba30e.js
-// Retrieved at 10/27/2022, 1:50:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.6c2db99cef35691f9911.js
+// Retrieved at 10/27/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ClaimPointsModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -360,8 +360,8 @@
 			var R = n("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx"),
 				F = n("./src/reddit/components/SubredditIcon/index.tsx"),
 				L = n("./src/reddit/selectors/subreddit.ts"),
-				G = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx"),
-				V = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Overview.tsx"),
+				V = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx"),
+				G = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Overview.tsx"),
 				H = n("./src/reddit/components/Governance/TransactionModals/ClaimPointsModal/Approval.m.less"),
 				Y = n.n(H);
 
@@ -372,7 +372,7 @@
 				} = e, a = Object(o.e)(t => Object(w.b)(t, e)), i = a && a.pointsToClaim;
 				if (!i) throw new Error("Expected claim amount to approve");
 				const c = Object(o.e)(t => Object(L.Y)(t, e));
-				return r.a.createElement(V.a, {
+				return r.a.createElement(G.a, {
 					subredditId: t,
 					image: r.a.createElement(F.b, {
 						className: Y.a.subredditIcon,
@@ -387,13 +387,13 @@
 					pointsAmount: i
 				})
 			}
-			const W = e => r.a.createElement(G.b, {
+			const W = e => r.a.createElement(V.b, {
 				values: [
 					[s.fbt._("Karma earned", null, {
 						hk: "46NXlD"
 					}), e.transaction.arguments[2]],
-					[Object(G.c)(), e.transaction.arguments[1]],
-					[Object(G.a)(), e.transaction.contractAddress]
+					[Object(V.c)(), e.transaction.arguments[1]],
+					[Object(V.a)(), e.transaction.contractAddress]
 				]
 			});
 			t.default = Object(c.a)((function(e) {
@@ -1108,14 +1108,14 @@
 			const r = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.Ee
-					}) === s.Sd
+						experimentName: s.He
+					}) === s.Vd
 				},
 				o = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.Ce
-					}) === s.Sd
+						experimentName: s.Fe
+					}) === s.Vd
 				}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
@@ -1175,4 +1175,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.143935016e9418eba30e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.6c2db99cef35691f9911.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.456b1e3874e163d7da01.js
-// Retrieved at 10/27/2022, 1:50:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.8a793d096470900c70dd.js
+// Retrieved at 10/27/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, r) {
@@ -504,7 +504,7 @@
 			})), r.d(t, "morePostsFailed", (function() {
 				return H
 			})), r.d(t, "moreModListingRequested", (function() {
-				return D
+				return B
 			})), r.d(t, "hideSubredditSuccess", (function() {
 				return V
 			})), r.d(t, "hideSubredditPending", (function() {
@@ -604,7 +604,7 @@
 							hk: "3RYtBz"
 						})
 					})));
-					const _ = B(e.queryParams);
+					const _ = D(e.queryParams);
 					await r(R(p, {
 						...i()(e.queryParams, m.p),
 						...i()(e.queryParams, m.o),
@@ -617,7 +617,7 @@
 							hk: "3RYtBz"
 						})
 					})), Object(C.h)(s(), !0)
-				}, A = Object(d.a)(k.i), G = Object(d.a)(k.h), H = Object(d.a)(k.g), D = e => async (t, r, n) => {
+				}, A = Object(d.a)(k.i), G = Object(d.a)(k.h), H = Object(d.a)(k.g), B = e => async (t, r, n) => {
 					let {
 						apiContext: s
 					} = n;
@@ -632,7 +632,7 @@
 						y = d.listings.postOrder.fetchedTokens,
 						x = !(!y[f] || !y[f][g.token]);
 					if (_ || x) return;
-					const E = B(b);
+					const E = D(b);
 					t(A({
 						key: f,
 						fetchedToken: g.token
@@ -663,7 +663,7 @@
 					}))
 				};
 
-			function B(e) {
+			function D(e) {
 				const t = m.N in e && e[m.N].toUpperCase() || "";
 				return t in o.oc && o.oc[t]
 			}
@@ -1673,12 +1673,12 @@
 					action: "click",
 					noun: "hide_subreddit"
 				}),
-				D = () => e => ({
+				B = () => e => ({
 					source: "r_mod",
 					action: "click",
 					noun: "unhide_subreddit"
 				}),
-				B = e => t => ({
+				D = e => t => ({
 					source: "r_mod",
 					action: "click",
 					noun: e ? "unfiltered_subreddits" : "filtered_subreddits"
@@ -1740,14 +1740,14 @@
 			var z = Object(d.b)(Y, e => ({
 					hide: t => e(Object(m.hideSubreddit)(t))
 				}))(Object(F.c)(X)),
-				W = r("./src/lib/lessComponent.tsx"),
-				Z = r("./src/reddit/components/SubredditIcon/index.tsx"),
+				Z = r("./src/lib/lessComponent.tsx"),
+				W = r("./src/reddit/components/SubredditIcon/index.tsx"),
 				$ = r("./src/reddit/icons/fonts/Clear/index.tsx"),
 				ee = r("./src/reddit/selectors/profile.ts"),
 				te = r("./src/reddit/selectors/subreddit.ts"),
 				re = r("./src/reddit/components/ModListingSidebar/HideCommunities/SubredditsList/SubredditsListRow/index.m.less"),
 				ne = r.n(re);
-			const se = W.a.wrapped(Z.b, "SubredditIcon", ne.a),
+			const se = Z.a.wrapped(W.b, "SubredditIcon", ne.a),
 				ie = Object(a.c)({
 					isApiPending: K,
 					subredditOrProfile: (e, t) => {
@@ -1766,7 +1766,7 @@
 			class oe extends o.a.Component {
 				constructor() {
 					super(...arguments), this.onClickUnhideSubreddit = e => {
-						e.stopPropagation(), e.preventDefault(), this.props.subredditOrProfile && (this.props.sendEvent(D()), this.props.unhide(this.props.subredditName))
+						e.stopPropagation(), e.preventDefault(), this.props.subredditOrProfile && (this.props.sendEvent(B()), this.props.unhide(this.props.subredditName))
 					}
 				}
 				render() {
@@ -1825,7 +1825,7 @@
 			class ge extends o.a.Component {
 				constructor() {
 					super(...arguments), this.onToggleFiltered = () => {
-						this.props.sendEvent(B(this.props.filtered)), this.props.toggleFiltered()
+						this.props.sendEvent(D(this.props.filtered)), this.props.toggleFiltered()
 					}
 				}
 				render() {
@@ -1989,7 +1989,7 @@
 				const b = Object(o.e)(e => e.subreddits.survey[r]),
 					p = Object(o.e)(e => e.subreddits.progressModule[r]),
 					h = Object(o.e)(l.a),
-					f = h !== c.We.NewModule;
+					f = h !== c.Ze.NewModule;
 				return (null === (s = null == p ? void 0 : p.cards) || void 0 === s ? void 0 : s.length) > 0 && f ? i.a.createElement(m, {
 					closeModuleOnMount: !!t && t !== u.g.Large,
 					subredditId: r,
@@ -2051,15 +2051,15 @@
 			const o = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: i.R,
-						experimentName: n.yd
+						experimentName: n.Bd
 					});
-					return !(!t || Object(n.yg)(t))
+					return !(!t || Object(n.Bg)(t))
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: i.R,
-						experimentName: n.yd
-					}) === n.Wd.ListingEnabled
+						experimentName: n.Bd
+					}) === n.Zd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/experiments/recapLeadUpGame.ts": function(e, t, r) {
@@ -2072,8 +2072,8 @@
 			const i = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.wf
-				}) === n.Sd
+					experimentName: n.zf
+				}) === n.Vd
 			}
 		},
 		"./src/reddit/selectors/recapGame.ts": function(e, t, r) {
@@ -2098,4 +2098,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.456b1e3874e163d7da01.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.8a793d096470900c70dd.js.map
