@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.359122f7078c2e54cec1.js
-// Retrieved at 10/27/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.eebaa71ef088d5c8b8d3.js
+// Retrieved at 10/27/2022, 3:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(t, e, i) {
@@ -2942,35 +2942,35 @@
 				_ = t => {
 					return Object(l.c)(t, {
 						experimentEligibilitySelector: l.a,
-						experimentName: o.cf
-					}) === o.ef.ContentMatch
+						experimentName: o.bf
+					}) === o.df.ContentMatch
 				},
 				f = t => {
 					return Object(l.c)(t, {
 						experimentEligibilitySelector: l.a,
-						experimentName: o.cf
-					}) === o.ef.ConfidenceAndSuccess
+						experimentName: o.bf
+					}) === o.df.ConfidenceAndSuccess
 				},
 				p = t => {
 					const e = Object(l.c)(t, {
 						experimentEligibilitySelector: l.a,
-						experimentName: o.cf
+						experimentName: o.bf
 					});
-					return e === o.ef.ContentMatch || e === o.ef.ConfidenceAndSuccess || e === o.ab.Control1 || e === o.ab.Control2
+					return e === o.df.ContentMatch || e === o.df.ConfidenceAndSuccess || e === o.ab.Control1 || e === o.ab.Control2
 				},
 				m = t => {
 					const e = Object(l.c)(t, {
 						experimentEligibilitySelector: l.a,
-						experimentName: o.cf
+						experimentName: o.bf
 					});
 					return e === o.ab.Control1 || e === o.ab.Control2
 				},
 				b = t => {
 					const e = Object(l.c)(t, {
 						experimentEligibilitySelector: l.a,
-						experimentName: o.cf
+						experimentName: o.bf
 					});
-					return e === o.ef.ContentMatch || e === o.ef.ConfidenceAndSuccess
+					return e === o.df.ContentMatch || e === o.df.ConfidenceAndSuccess
 				},
 				E = t => t.creations.subredditRec.api.pending,
 				S = t => t.creations.subredditRec.api.error,
@@ -3051,9 +3051,9 @@
 					experimentName: r.pd,
 					experimentEligibilitySelector: t => c(t, e)
 				}), t => t),
-				d = t => t === r.kg.NoCommunityWidgets,
-				u = t => t === r.kg.NoRulesModerators,
-				_ = t => t === r.kg.RelatedPostsDu
+				d = t => t === r.jg.NoCommunityWidgets,
+				u = t => t === r.jg.NoRulesModerators,
+				_ = t => t === r.jg.RelatedPostsDu
 		},
 		"./src/reddit/selectors/tooltip.ts": function(t, e, i) {
 			"use strict";
@@ -3079,4 +3079,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.359122f7078c2e54cec1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.eebaa71ef088d5c8b8d3.js.map

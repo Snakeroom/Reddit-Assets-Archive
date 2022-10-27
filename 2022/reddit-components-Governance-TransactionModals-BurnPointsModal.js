@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.0c585c7ad5c5998a6406.js
-// Retrieved at 10/27/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.7ad366e39f019211f6f8.js
+// Retrieved at 10/27/2022, 3:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-BurnPointsModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
@@ -577,7 +577,7 @@
 				})))
 			}
 
-			function P(e) {
+			function G(e) {
 				return l.a.createElement(I.b, {
 					values: [
 						[Object(I.a)(), e.contractAddress],
@@ -590,7 +590,7 @@
 					]
 				})
 			}
-			const G = 15e3;
+			const P = 15e3;
 
 			function S(e) {
 				const {
@@ -611,7 +611,7 @@
 						subreddit: n,
 						pointsName: x
 					}),
-					approvalDetails: l.a.createElement(P, {
+					approvalDetails: l.a.createElement(G, {
 						contractAddress: v,
 						memo: a
 					}),
@@ -621,7 +621,7 @@
 							const t = Object(N.e)(i.fbt._("Burning your {pointsName}...", [i.fbt._param("pointsName", e)], {
 								hk: "2LoC1g"
 							}), F.b.SuccessCommunity);
-							return t.duration = G, Object(N.f)(t)
+							return t.duration = P, Object(N.f)(t)
 						}(x));
 						try {
 							await async function(e, t, a, n, l) {
@@ -639,7 +639,7 @@
 								const t = Object(N.e)(i.fbt._("Your {pointsName} were burnt!", [i.fbt._param("pointsName", e)], {
 									hk: "1BHX95"
 								}), F.b.SuccessCommunityGreen);
-								return t.duration = G, Object(N.f)(t)
+								return t.duration = P, Object(N.f)(t)
 							}(x))
 						} catch (t) {
 							b(t.toString()), r(function(e) {
@@ -1308,13 +1308,13 @@
 			const c = e => {
 					return Object(l.c)(e, {
 						experimentEligibilitySelector: l.a,
-						experimentName: n.He
+						experimentName: n.Ge
 					}) === n.Vd
 				},
 				s = e => {
 					return Object(l.c)(e, {
 						experimentEligibilitySelector: l.a,
-						experimentName: n.Fe
+						experimentName: n.Ee
 					}) === n.Vd
 				}
 		},
@@ -1372,4 +1372,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.0c585c7ad5c5998a6406.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.7ad366e39f019211f6f8.js.map

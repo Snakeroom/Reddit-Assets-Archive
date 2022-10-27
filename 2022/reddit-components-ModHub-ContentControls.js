@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.d250d4ed93927dbc8f79.js
-// Retrieved at 10/27/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.0c10e298e82cc0cb7273.js
+// Retrieved at 10/27/2022, 3:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-ContentControls"], {
 		"./node_modules/lodash/negate.js": function(e, t) {
@@ -172,8 +172,8 @@
 				O = 2,
 				M = 300,
 				D = 400,
-				j = 90,
-				I = 1e5,
+				I = 90,
+				j = 1e5,
 				H = 15,
 				A = 40,
 				W = 5,
@@ -671,11 +671,11 @@
 				Me = n("./src/reddit/controls/DiscreteSlideSelector/ThumbRail/index.m.less"),
 				De = n.n(Me);
 
-			function je(e, t) {
+			function Ie(e, t) {
 				return 0 === e ? 0 : e === t - 1 ? -16 : -8
 			}
 
-			function Ie(e) {
+			function je(e) {
 				const t = d.a.useRef(!1);
 				return d.a.createElement("div", {
 					className: Object(V.a)(De.a.container, e.className),
@@ -701,7 +701,7 @@
 					className: De.a.thumb,
 					style: {
 						left: (n = e.currentStop, s = e.numStops, `${n/(s-1)*100}%`),
-						marginLeft: je(e.currentStop, e.numStops)
+						marginLeft: Ie(e.currentStop, e.numStops)
 					},
 					onMouseDown: e => {
 						e.stopPropagation, t.current = !0
@@ -722,7 +722,7 @@
 					className: Ae.a.bars,
 					currentStop: t,
 					optionColors: e.options.map(e => e.color)
-				}), d.a.createElement(Ie, {
+				}), d.a.createElement(je, {
 					className: Ae.a.thumbRail,
 					currentStop: t,
 					numStops: e.options.length,
@@ -914,26 +914,24 @@
 						maxWords: 15
 					}))
 				};
-			var dt = n("./src/reddit/constants/experiments.ts"),
-				ct = n("./src/reddit/hooks/useExperimentVariant.ts"),
-				mt = n("./src/reddit/components/ModHub/ContentControls/FormSections/HatefulContentFilters/index.m.less"),
-				ut = n.n(mt);
+			var dt = n("./src/reddit/components/ModHub/ContentControls/FormSections/HatefulContentFilters/index.m.less"),
+				ct = n.n(dt);
 
-			function ht(e) {
+			function mt(e) {
 				const {
 					formState: t,
 					onChange: n
-				} = e, i = Object(ct.a)(dt.oe) === dt.Vd, o = $e.some(e => t.hatefulContentFilters[e.name] !== F.a.Off), r = i && o;
+				} = e, i = $e.some(e => t.hatefulContentFilters[e.name] !== F.a.Off);
 				return d.a.createElement("fieldset", null, d.a.createElement("legend", {
-					className: ut.a.title
+					className: ct.a.title
 				}, s.fbt._("Automated Filtering", null, {
 					hk: "18gDSg"
 				})), d.a.createElement("div", {
-					className: ut.a.options
+					className: ct.a.options
 				}, $e.map(e => {
 					const s = t.hatefulContentFilters[e.name];
 					return d.a.createElement(Ye, {
-						className: ut.a.filter,
+						className: ct.a.filter,
 						key: e.name,
 						currentLevel: s,
 						name: e.name,
@@ -947,7 +945,7 @@
 							}
 						})
 					})
-				})), r && d.a.createElement(lt, {
+				})), i && d.a.createElement(lt, {
 					value: t.hatefulContentFilters.permittedTerms,
 					onChange: e => n({
 						...t,
@@ -958,40 +956,40 @@
 					})
 				}))
 			}
-			var gt = n("./src/reddit/components/CharacterCountdown/index.tsx");
-			const bt = e => e.split(/[,;\s]/).filter(Boolean),
-				pt = e => e.join(", "),
-				ft = e => pt(bt(e)),
-				xt = ["i.redd.it", "v.redd.it"],
-				Ct = /^(?:[\w-]+\.)+[\w]+$/,
-				yt = e => xt.includes(e.toLowerCase());
-			var kt = e => {
-					const t = bt(e),
+			var ut = n("./src/reddit/components/CharacterCountdown/index.tsx");
+			const ht = e => e.split(/[,;\s]/).filter(Boolean),
+				gt = e => e.join(", "),
+				bt = e => gt(ht(e)),
+				pt = ["i.redd.it", "v.redd.it"],
+				ft = /^(?:[\w-]+\.)+[\w]+$/,
+				xt = e => pt.includes(e.toLowerCase());
+			var Ct = e => {
+					const t = ht(e),
 						n = [],
-						i = t.find(e => !(e => Ct.test(e))(e));
+						i = t.find(e => !(e => ft.test(e))(e));
 					return i && n.push(s.fbt._('Invalid domain: "{domainName}"', [s.fbt._param("domainName", i)], {
 						hk: "l57pV"
-					})), t.some(yt) && n.push(s.fbt._("Domains cannot include reddit hosted content.", null, {
+					})), t.some(xt) && n.push(s.fbt._("Domains cannot include reddit hosted content.", null, {
 						hk: "JUxdH"
 					})), n
 				},
-				St = n("./node_modules/lodash/mapValues.js"),
-				Et = n.n(St);
-			const Rt = (e, t) => {
+				yt = n("./node_modules/lodash/mapValues.js"),
+				kt = n.n(yt);
+			const St = (e, t) => {
 					const n = new Set(de(e)),
 						i = de(t).find(e => n.has(e));
 					return i ? [s.fbt._('Word "{word}" is required and banned at the same time', [s.fbt._param("word", i)], {
 						hk: "2Hyh3c"
 					}).toString()] : []
 				},
-				vt = (e, t) => {
+				Et = (e, t) => {
 					if (!t) return [];
 					const n = e.find(e => e.length > t);
 					return n ? [s.fbt._('Word "{word}" is longer than maximum title length', [s.fbt._param("word", n)], {
 						hk: "48duSv"
 					}).toString()] : []
 				},
-				_t = e => {
+				Rt = e => {
 					const t = e.titleRequiredStrings.enabled ? e.titleRequiredStrings.strings : [];
 					return {
 						blacklistedStrings: e.titleBlacklistedStrings.enabled ? e.titleBlacklistedStrings.strings : [],
@@ -999,32 +997,32 @@
 						requiredStrings: t
 					}
 				},
-				qt = e => {
+				vt = e => {
 					const {
 						bodyRequirement: t,
 						bodyRequiredStrings: n,
 						bodyBlacklistedStrings: s
 					} = e, i = t.restrictionPolicy !== E.a.NotAllowed, o = t.restrictionPolicy === E.a.Required;
-					return Rt(o && n.enabled ? n.strings : [], i && s.enabled ? s.strings : [])
+					return St(o && n.enabled ? n.strings : [], i && s.enabled ? s.strings : [])
 				},
-				Tt = qt,
-				wt = e => Et()(e, e => ({
+				_t = vt,
+				qt = e => kt()(e, e => ({
 					...e
 				})),
-				Bt = (e, t) => {
+				Tt = (e, t) => {
 					const n = t.filter(Boolean);
 					return 1 === n.length ? n[0] : null
 				},
-				Lt = (e, t) => {
+				wt = (e, t) => {
 					if (!t.length) return e;
-					const n = wt(e);
+					const n = qt(e);
 					return t.forEach(e => {
 						switch (e.field) {
 							case "titleRegexes":
 							case "bodyRegexes": {
 								const t = n[e.field];
 								t.serverErrors.push({
-									regex: Bt(e.message, t.regexes),
+									regex: Tt(e.message, t.regexes),
 									message: e.message
 								});
 								break
@@ -1035,12 +1033,12 @@
 						}
 					}), n
 				},
-				Nt = e => e.enabled && !e.guidelineText.trim() ? [s.fbt._("Guideline text cannot be empty", null, {
+				Bt = e => e.enabled && !e.guidelineText.trim() ? [s.fbt._("Guideline text cannot be empty", null, {
 					hk: "4pncO7"
 				})] : [],
-				Ft = e => {
-					const t = wt(e);
-					return t.guidelines.clientErrors = Nt(t.guidelines), t.linkDomains.clientErrors = kt(t.linkDomains.domainsText), t.titleLength.clientErrors = (e => {
+				Lt = e => {
+					const t = qt(e);
+					return t.guidelines.clientErrors = Bt(t.guidelines), t.linkDomains.clientErrors = Ct(t.linkDomains.domainsText), t.titleLength.clientErrors = (e => {
 						let {
 							min: t,
 							max: n
@@ -1051,20 +1049,20 @@
 							minLimit: O,
 							maxLimit: M
 						})
-					})(t.titleLength), t.bodyBlacklistedStrings.clientErrors = Tt(t), t.bodyRequiredStrings.clientErrors = qt(t), t.titleBlacklistedStrings.clientErrors = (e => {
-						const t = _t(e);
-						return [...Rt(t.requiredStrings, t.blacklistedStrings), ...vt(t.blacklistedStrings, t.maxTitleLength)]
+					})(t.titleLength), t.bodyBlacklistedStrings.clientErrors = _t(t), t.bodyRequiredStrings.clientErrors = vt(t), t.titleBlacklistedStrings.clientErrors = (e => {
+						const t = Rt(e);
+						return [...St(t.requiredStrings, t.blacklistedStrings), ...Et(t.blacklistedStrings, t.maxTitleLength)]
 					})(t), t.titleRequiredStrings.clientErrors = (e => {
-						const t = _t(e);
-						return [...Rt(t.requiredStrings, t.blacklistedStrings), ...vt(t.requiredStrings, t.maxTitleLength)]
+						const t = Rt(e);
+						return [...St(t.requiredStrings, t.blacklistedStrings), ...Et(t.requiredStrings, t.maxTitleLength)]
 					})(t), t
 				},
-				Pt = e => Object.keys(e).some(t => {
+				Nt = e => Object.keys(e).some(t => {
 					if ("hatefulContentFilters" === t) return !1;
 					const n = e[t];
 					return n.enabled && !(a()(n.clientErrors) && a()(n.serverErrors))
 				});
-			class Ot extends d.a.Component {
+			class Ft extends d.a.Component {
 				constructor() {
 					super(...arguments), this.onToggleGuidelines = () => {
 						const {
@@ -1145,7 +1143,7 @@
 							guidelines: {
 								...n.guidelines,
 								guidelineText: t,
-								clientErrors: Nt({
+								clientErrors: Bt({
 									...n.guidelines,
 									guidelineText: t
 								})
@@ -1215,7 +1213,7 @@
 					}, this.onLinkDomainsBlur = () => {
 						const {
 							linkDomains: e
-						} = this.props.formState, t = ft(e.domainsText), n = kt(t);
+						} = this.props.formState, t = bt(e.domainsText), n = Ct(t);
 						this.props.onChange({
 							linkDomains: {
 								...e,
@@ -1226,7 +1224,7 @@
 					}, this.onRepostFrequencyChange = e => {
 						const {
 							formState: t
-						} = this.props, n = ae(e.target.value, 1, j);
+						} = this.props, n = ae(e.target.value, 1, I);
 						this.props.onChange({
 							repostFrequency: {
 								...t.repostFrequency,
@@ -1269,7 +1267,7 @@
 						value: e.guidelines.guidelineText
 					}), e.guidelines.clientErrors.length ? d.a.createElement($.a, {
 						messages: e.guidelines.clientErrors
-					}) : d.a.createElement(gt.a, {
+					}) : d.a.createElement(ut.a, {
 						className: fe.a.characterCountdown,
 						maxChars: D,
 						text: e.guidelines.guidelineText
@@ -1379,7 +1377,7 @@
 					}, d.a.createElement("textarea", {
 						"aria-invalid": !!n.length,
 						className: fe.a.domainsTextarea,
-						maxLength: I,
+						maxLength: j,
 						onBlur: this.onLinkDomainsBlur,
 						onChange: this.onLinkDomainsTextChange,
 						placeholder: s.fbt._("Example: website.com", null, {
@@ -1405,7 +1403,7 @@
 						label: s.fbt._("number of days", null, {
 							hk: "1sPFop"
 						}),
-						max: j,
+						max: I,
 						min: 1,
 						onChange: this.onRepostFrequencyChange,
 						type: "number",
@@ -1414,8 +1412,8 @@
 				}
 			}
 
-			function Mt() {
-				return (Mt = Object.assign || function(e) {
+			function Pt() {
+				return (Pt = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -1423,13 +1421,13 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const Dt = Object(m.c)({
+			const Ot = Object(m.c)({
 				hatefulContentFiltersEnabled: X.d.hatefulContentFiltersEnabled
 			});
-			var jt = Object(c.b)(Dt)(e => d.a.createElement(d.a.Fragment, null, (e => [...e.hatefulContentFiltersEnabled ? [ht] : [], Ot, Ee])(e).map((t, n) => d.a.createElement(t, Mt({
+			var Mt = Object(c.b)(Ot)(e => d.a.createElement(d.a.Fragment, null, (e => [...e.hatefulContentFiltersEnabled ? [mt] : [], Ft, Ee])(e).map((t, n) => d.a.createElement(t, Pt({
 					key: n
 				}, e))))),
-				It = e => {
+				Dt = e => {
 					const {
 						bodyBlacklistedStrings: t,
 						bodyRegexes: n,
@@ -1500,7 +1498,7 @@
 						linkDomains: {
 							enabled: c !== E.b.None,
 							restrictionPolicy: c === E.b.None ? E.b.Whitelist : c,
-							domainsText: c !== E.b.None ? pt(c === E.b.Whitelist ? r : o) : "",
+							domainsText: c !== E.b.None ? gt(c === E.b.Whitelist ? r : o) : "",
 							clientErrors: [],
 							serverErrors: []
 						},
@@ -1513,7 +1511,7 @@
 						}
 					}
 				};
-			const Ht = {
+			const It = {
 					bodyBlacklistedStrings: [],
 					bodyRegexes: [],
 					bodyRequiredStrings: [],
@@ -1530,54 +1528,54 @@
 					titleTextMaxLength: null,
 					titleTextMinLength: null
 				},
-				At = e => e.filter(e => !!e);
-			var Wt = e => {
+				jt = e => e.filter(e => !!e);
+			var Ht = e => {
 					const t = {
-							...Ht,
+							...It,
 							bodyRestrictionPolicy: e.bodyRequirement.restrictionPolicy,
 							guidelinesText: e.guidelines.enabled ? e.guidelines.guidelineText : null,
 							isFlairRequired: e.flairRequirement.enabled,
 							linkRepostAge: e.repostFrequency.enabled ? e.repostFrequency.days : null,
 							linkRestrictionPolicy: e.linkDomains.enabled ? e.linkDomains.restrictionPolicy : E.b.None,
 							titleBlacklistedStrings: e.titleBlacklistedStrings.enabled ? e.titleBlacklistedStrings.strings : [],
-							titleRegexes: e.titleRegexes.enabled ? At(e.titleRegexes.regexes) : [],
+							titleRegexes: e.titleRegexes.enabled ? jt(e.titleRegexes.regexes) : [],
 							titleRequiredStrings: e.titleRequiredStrings.enabled ? e.titleRequiredStrings.strings : [],
 							titleTextMaxLength: e.titleLength.enabled ? e.titleLength.max : null,
 							titleTextMinLength: e.titleLength.enabled ? e.titleLength.min : null
 						},
 						n = e.bodyRequirement.restrictionPolicy !== E.a.NotAllowed,
 						s = e.bodyRequirement.restrictionPolicy === E.a.Required;
-					if (n && (t.bodyBlacklistedStrings = e.bodyBlacklistedStrings.enabled ? e.bodyBlacklistedStrings.strings : [], t.bodyRequiredStrings = s && e.bodyRequiredStrings.enabled ? e.bodyRequiredStrings.strings : [], t.bodyRegexes = e.bodyRegexes.enabled ? At(e.bodyRegexes.regexes) : []), e.linkDomains.enabled) {
-						const n = bt(e.linkDomains.domainsText);
+					if (n && (t.bodyBlacklistedStrings = e.bodyBlacklistedStrings.enabled ? e.bodyBlacklistedStrings.strings : [], t.bodyRequiredStrings = s && e.bodyRequiredStrings.enabled ? e.bodyRequiredStrings.strings : [], t.bodyRegexes = e.bodyRegexes.enabled ? jt(e.bodyRegexes.regexes) : []), e.linkDomains.enabled) {
+						const n = ht(e.linkDomains.domainsText);
 						e.linkDomains.restrictionPolicy === E.b.Whitelist ? t.domainWhitelist = n : e.linkDomains.restrictionPolicy === E.b.Blacklist && (t.domainBlacklist = n)
 					}
 					return t
 				},
-				Ut = n("./node_modules/lodash/isEqual.js"),
-				Gt = n.n(Ut),
-				Kt = (e, t) => {
-					if (Gt()(e, t)) return {
+				At = n("./node_modules/lodash/isEqual.js"),
+				Wt = n.n(At),
+				Ut = (e, t) => {
+					if (Wt()(e, t)) return {
 						hatefulContentFilters: {},
 						postRequirements: {}
 					};
-					const n = Wt(e),
-						s = Wt(t),
-						i = S()(n, (e, t) => Gt()(e, s[t])),
+					const n = Ht(e),
+						s = Ht(t),
+						i = S()(n, (e, t) => Wt()(e, s[t])),
 						o = {};
 					return Object.keys(t.hatefulContentFilters).forEach(n => {
 						const s = t.hatefulContentFilters[n],
 							i = e.hatefulContentFilters[n];
-						Gt()(s, i) || (o[n] = i)
+						Wt()(s, i) || (o[n] = i)
 					}), {
 						hatefulContentFilters: o,
 						postRequirements: i
 					}
 				},
-				Vt = n("./src/telemetry/models/Event.ts");
-			const Zt = (e, t) => n => ({
-					source: Vt.f.CommunitySettings,
-					action: Vt.d.Save,
-					noun: Vt.e.HarassmentControlLevel,
+				Gt = n("./src/telemetry/models/Event.ts");
+			const Kt = (e, t) => n => ({
+					source: Gt.f.CommunitySettings,
+					action: Gt.d.Save,
+					noun: Gt.e.HarassmentControlLevel,
 					setting: {
 						value: `${e}`,
 						oldValue: `${t}`
@@ -1585,20 +1583,20 @@
 					subreddit: Object(R.kb)(n),
 					...Object(R.o)(n)
 				}),
-				Jt = "PostReq-discard-confirmation",
-				zt = 150,
-				Qt = Object(m.c)({
+				Vt = "PostReq-discard-confirmation",
+				Zt = 150,
+				Jt = Object(m.c)({
 					allowNavigationCallback: L.a,
-					isDiscardModalOpen: Object(w.b)(Jt),
+					isDiscardModalOpen: Object(w.b)(Vt),
 					isLoading: B.a,
 					contentControls: B.b
 				}),
-				Xt = Object(c.b)(Qt, (e, t) => ({
+				zt = Object(c.b)(Jt, (e, t) => ({
 					closeAllModals: () => e(Object(h.f)()),
 					onSave: n => e(Object(u.b)(t.subredditName, n)),
 					toggleModal: t => e(Object(h.i)(t))
 				}));
-			class Yt extends d.a.Component {
+			class Qt extends d.a.Component {
 				constructor(e) {
 					var t;
 					super(e), t = this, this.formBodyRef = d.a.createRef(), this.isUnmounted = !1, this.resetPendingNavigation = () => {
@@ -1613,18 +1611,18 @@
 							initialFormState: n
 						} = this.state;
 						if (!e) return;
-						const s = Ft(this.state.formState);
-						if (Pt(s)) return void this.setState({
+						const s = Lt(this.state.formState);
+						if (Nt(s)) return void this.setState({
 							formState: s
 						}, this.focusErrorField);
 						const {
 							postRequirements: i,
 							hatefulContentFilters: o
-						} = Kt(s, n);
+						} = Ut(s, n);
 						if (a()(i) && a()(o)) return;
 						this.setState({
 							isSavePending: !0
-						}), a()(o) || t(Zt(o.hatefulContentThresholdAbuse, this.state.initialFormState.hatefulContentFilters.hatefulContentThresholdAbuse));
+						}), a()(o) || t(Kt(o.hatefulContentThresholdAbuse, this.state.initialFormState.hatefulContentFilters.hatefulContentThresholdAbuse));
 						const r = await this.props.onSave({
 							hatefulContentFilters: o,
 							postRequirements: i
@@ -1632,13 +1630,13 @@
 						if (!this.isUnmounted)
 							if (this.setState({
 									isSavePending: !1
-								}), r.success) this.props.sendEvent(T(Wt(s))), this.setState({
+								}), r.success) this.props.sendEvent(T(Ht(s))), this.setState({
 								formState: s,
 								initialFormState: s,
 								hasJustSaved: !0
 							});
 							else if (r.errors) {
-							const e = Lt(s, r.errors);
+							const e = wt(s, r.errors);
 							this.setState({
 								formState: e
 							}, this.focusErrorField)
@@ -1651,7 +1649,7 @@
 							} = e, {
 								hatefulContentFilters: s,
 								postRequirements: i
-							} = Kt(t, n), o = !a()(s) || !a()(i);
+							} = Ut(t, n), o = !a()(s) || !a()(i);
 							return o !== e.hasUnsavedChanges ? {
 								hasUnsavedChanges: o
 							} : null
@@ -1660,7 +1658,7 @@
 						maxWait: 500
 					}), this.focusErrorField = () => {
 						const e = this.formBodyRef.current.querySelector('[aria-invalid="true"]');
-						e instanceof HTMLElement && (e.focus(), e.getBoundingClientRect().top < zt && (e.scrollIntoView(), window.scroll(0, window.scrollY - zt)))
+						e instanceof HTMLElement && (e.focus(), e.getBoundingClientRect().top < Zt && (e.scrollIntoView(), window.scroll(0, window.scrollY - Zt)))
 					}, this.onFormFieldBlur = () => {
 						this.updateHasUnsavedChanges(), this.updateHasUnsavedChanges.flush()
 					}, this.onSaveClick = () => {
@@ -1676,13 +1674,13 @@
 								...t.formState,
 								...e
 							};
-							return n && (s = Ft(s)), {
+							return n && (s = Lt(s)), {
 								formState: s,
 								hasJustSaved: !1
 							}
 						})
 					};
-					const n = e.contentControls ? It(e.contentControls) : U;
+					const n = e.contentControls ? Dt(e.contentControls) : U;
 					this.state = {
 						areContentControlsLoaded: !!e.contentControls,
 						formState: n,
@@ -1700,7 +1698,7 @@
 						contentControls: n
 					} = this.props;
 					if (n && !this.state.areContentControlsLoaded) {
-						const e = It(n);
+						const e = Dt(n);
 						this.setState({
 							areContentControlsLoaded: !0,
 							formState: e,
@@ -1746,7 +1744,7 @@
 						className: fe.a.formBody,
 						onBlur: this.onFormFieldBlur,
 						ref: this.formBodyRef
-					}, d.a.createElement(jt, {
+					}, d.a.createElement(Mt, {
 						formState: this.state.formState,
 						isLoading: t,
 						onChange: this.onFormStateChange
@@ -1754,7 +1752,7 @@
 						isLoading: t
 					})), d.a.createElement(g.a, {
 						blockOnBeforeUnload: !0,
-						dialogId: Jt,
+						dialogId: Vt,
 						enabled: i
 					}), this.props.isDiscardModalOpen && d.a.createElement(b.a, {
 						actionText: s.fbt._("Discard", null, {
@@ -1772,7 +1770,7 @@
 					}))
 				}
 			}
-			t.default = Xt(Object(x.c)(Yt))
+			t.default = zt(Object(x.c)(Qt))
 		},
 		"./src/reddit/controls/DiscreteSlideSelector/Bars/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1803,4 +1801,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.d250d4ed93927dbc8f79.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.0c10e298e82cc0cb7273.js.map

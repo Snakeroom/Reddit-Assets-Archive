@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.d397582cd3e5a7fce287.js
-// Retrieved at 10/27/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.ff97829e7211c674189a.js
+// Retrieved at 10/27/2022, 3:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2624,7 +2624,7 @@
 			const f = e => {
 				return Object(g.c)(e, {
 					experimentEligibilitySelector: g.a,
-					experimentName: h.Af
+					experimentName: h.zf
 				}) === h.Vd
 			};
 			var x = n("./src/reddit/selectors/recapGame.ts"),
@@ -7678,12 +7678,12 @@
 						rtJsonElementProps: o
 					});
 					switch (i) {
-						case h.cg.SmIcon:
+						case h.bg.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case h.cg.SmIconHc:
+						case h.bg.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -8548,7 +8548,7 @@
 						} = t;
 						return Object(Le.c)(e, n)
 					},
-					isInNewModuleNCPV3Experiment: e => Object(Fe.a)(e) === Ie.Ze.NewModule,
+					isInNewModuleNCPV3Experiment: e => Object(Fe.a)(e) === Ie.Ye.NewModule,
 					showGovernance: Te.d.spPoints,
 					showLeaderboard: Te.d.spLeaderboard,
 					showPredictionsLeaderboard: (e, t) => {
@@ -10924,12 +10924,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Wf
+						experimentName: s.Vf
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.cg.SmIcon || t === s.cg.SmIconHc
+					return t === s.bg.SmIcon || t === s.bg.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -11119,4 +11119,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.d397582cd3e5a7fce287.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.ff97829e7211c674189a.js.map

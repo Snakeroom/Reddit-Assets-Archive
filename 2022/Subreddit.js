@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.7247dcc2a4a981845f23.js
-// Retrieved at 10/27/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.99178af8b880b175da92.js
+// Retrieved at 10/27/2022, 3:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "ModListing~Reddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -10290,12 +10290,12 @@
 						rtJsonElementProps: a
 					});
 					switch (o) {
-						case h.cg.SmIcon:
+						case h.bg.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: r,
 								rtJsonElementProps: a
 							});
-						case h.cg.SmIconHc:
+						case h.bg.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: r,
 								isHoverable: !0,
@@ -11160,7 +11160,7 @@
 						} = t;
 						return Object(Ae.c)(e, n)
 					},
-					isInNewModuleNCPV3Experiment: e => Object(Be.a)(e) === we.Ze.NewModule,
+					isInNewModuleNCPV3Experiment: e => Object(Be.a)(e) === we.Ye.NewModule,
 					showGovernance: Pe.d.spPoints,
 					showLeaderboard: Pe.d.spLeaderboard,
 					showPredictionsLeaderboard: (e, t) => {
@@ -17143,7 +17143,7 @@
 				const p = Object(a.e)(e => e.subreddits.survey[n]),
 					b = Object(a.e)(e => e.subreddits.progressModule[n]),
 					h = Object(a.e)(u.a),
-					f = h !== d.Ze.NewModule;
+					f = h !== d.Ye.NewModule;
 				return (null === (s = null == b ? void 0 : b.cards) || void 0 === s ? void 0 : s.length) > 0 && f ? o.a.createElement(m, {
 					closeModuleOnMount: !!t && t !== l.g.Large,
 					subredditId: n,
@@ -20531,7 +20531,7 @@
 						experimentEligibilitySelector: o.R,
 						experimentName: r.Bd
 					});
-					return !(!t || Object(r.Bg)(t))
+					return !(!t || Object(r.Ag)(t))
 				},
 				i = e => {
 					return Object(s.c)(e, {
@@ -20562,7 +20562,7 @@
 					if (!u(e)) return;
 					const t = Object(a.c)(e, {
 						experimentEligibilitySelector: l,
-						experimentName: o.pe,
+						experimentName: o.oe,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -20585,9 +20585,9 @@
 				},
 				b = e => !!m(e) && Object(a.c)(e, {
 					experimentEligibilitySelector: u,
-					experimentName: o.qe,
+					experimentName: o.pe,
 					expEventOverride: !1
-				}) !== o.re.Readonly
+				}) !== o.qe.Readonly
 		},
 		"./src/reddit/selectors/experiments/joinOptimizations.ts": function(e, t, n) {
 			"use strict";
@@ -20641,9 +20641,9 @@
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(s.c)(e, {
-				experimentName: r.Qe,
+				experimentName: r.Pe,
 				experimentEligibilitySelector: s.a
-			}) === r.Ye.Enabled
+			}) === r.Xe.Enabled
 		},
 		"./src/reddit/selectors/experiments/postActionBarAnimation.ts": function(e, t, n) {
 			"use strict";
@@ -20744,7 +20744,7 @@
 			const o = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.lf
+					experimentName: r.kf
 				}) === r.Vd
 			}
 		},
@@ -20758,7 +20758,7 @@
 			const o = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.zf
+					experimentName: r.yf
 				}) === r.Vd
 			}
 		},
@@ -20772,8 +20772,8 @@
 				o = n("./src/reddit/selectors/meta.ts");
 			const a = e => Object(s.c)(e, {
 				experimentEligibilitySelector: e => !Object(o.d)(e) && "US" === Object(o.b)(e),
-				experimentName: r.Df
-			}) === r.Kf.Enabled
+				experimentName: r.Cf
+			}) === r.Jf.Enabled
 		},
 		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, n) {
 			"use strict";
@@ -20883,12 +20883,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: r.Wf
+						experimentName: r.Vf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === r.cg.SmIcon || t === r.cg.SmIconHc
+					return t === r.bg.SmIcon || t === r.bg.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -21008,4 +21008,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.7247dcc2a4a981845f23.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.99178af8b880b175da92.js.map
