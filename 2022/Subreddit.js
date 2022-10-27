@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.7dfe559c019f5da0801c.js
-// Retrieved at 10/26/2022, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.6147a091791d174bdea8.js
+// Retrieved at 10/27/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "ModListing~Reddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -7725,7 +7725,7 @@
 				} = e;
 				const n = Object(o.d)(),
 					c = Object(d.b)(),
-					x = Object(o.e)(g.h),
+					x = Object(o.e)(g.i),
 					_ = x === l.vb.Feed ? t.topics.slice(0, 5) : t.topics,
 					[O, j] = Object(r.useState)(!1),
 					[C, k] = Object(r.useState)(),
@@ -17496,7 +17496,7 @@
 				isBlockingInterstitialEnabled: Ie.b,
 				isBlockingInterstitialV2Enabled: Ie.c,
 				interestTopicRecommendations: Ze.b,
-				reonboardingFlow: Pe.h
+				reonboardingFlow: Pe.i
 			}), jt = () => Object(b.a)(Ve.lb, ut, pt, bt, (e, t) => {
 				let {
 					match: n
@@ -21008,4 +21008,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.7dfe559c019f5da0801c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.6147a091791d174bdea8.js.map

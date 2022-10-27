@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.1d3631e61c31842b8003.js
-// Retrieved at 10/26/2022, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.f267cf15131f1d760a7d.js
+// Retrieved at 10/27/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -736,7 +736,7 @@
 						sort: d,
 						t: u,
 						correlationId: m
-					} = t, p = Object(F.h)(e), f = Object(D.ab)(e) || Object(D.R)(e), v = Object(L.a)(e), _ = Object(R.q)(e), y = Object(M.c)(e), x = Object(M.g)(e), E = x === b.qb.LoggedOutUiOnly || x === b.qb.LoggedOutHomeDefpop, k = Object(B.b)(e), {
+					} = t, p = Object(F.i)(e), f = Object(D.ab)(e) || Object(D.R)(e), v = Object(L.a)(e), _ = Object(R.q)(e), y = Object(M.c)(e), x = Object(M.g)(e), E = x === b.qb.LoggedOutUiOnly || x === b.qb.LoggedOutHomeDefpop, k = Object(B.b)(e), {
 						adsSeenCount: O,
 						totalPostsSeenCount: N,
 						sessionStartTime: j
@@ -4651,7 +4651,7 @@
 				} = e;
 				const n = Object(r.d)(),
 					o = Object(l.b)(),
-					_ = Object(r.e)(f.h),
+					_ = Object(r.e)(f.i),
 					E = _ === d.vb.Feed ? t.topics.slice(0, 5) : t.topics,
 					[k, O] = Object(a.useState)(!1),
 					[N, j] = Object(a.useState)(),
@@ -7482,7 +7482,7 @@
 				isBlockingInterstitialV2Enabled: X.c,
 				isTalkLiveBarEnabled: W.u,
 				interestTopicRecommendations: ce.b,
-				reonboardingFlow: Y.h,
+				reonboardingFlow: Y.i,
 				marketplaceFeedUnit: e => Object(z.a)(e) ? Object(ne.a)(e) : null,
 				merchandasingUnitAnnouncements: se.a,
 				inAppNotifications: ae.b,
@@ -8490,4 +8490,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.1d3631e61c31842b8003.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.f267cf15131f1d760a7d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.0a18355fad25bc3660a0.js
-// Retrieved at 10/26/2022, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.f173d6c14a3164dda832.js
+// Retrieved at 10/27/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~SubredditForkingCTA", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -7704,7 +7704,7 @@
 						type: d.d.REONBOARDING,
 						selectedInterests: {}
 					})), Object(a.d)();
-					const t = Object(c.h)(n);
+					const t = Object(c.i)(n);
 					Object(i.b)(d.f.FirstPopover, t)
 				}
 			}, m = Object(s.a)(o.a), p = Object(s.a)(o.c), b = Object(s.a)(o.b);
@@ -9273,7 +9273,7 @@
 							t: u
 						} = t;
 						var m, p;
-						const b = Object(je.h)(e),
+						const b = Object(je.i)(e),
 							f = !!b && !Object(ve.zg)(b) && (o || b === ve.vb.Community),
 							{
 								adsSeenCount: h,
@@ -74403,9 +74403,9 @@
 		},
 		"./src/reddit/selectors/experiments/onboarding.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "h", (function() {
+			n.d(t, "i", (function() {
 				return l
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "h", (function() {
 				return u
 			})), n.d(t, "a", (function() {
 				return m
@@ -74413,12 +74413,14 @@
 				return p
 			})), n.d(t, "e", (function() {
 				return b
-			})), n.d(t, "d", (function() {
-				return f
-			})), n.d(t, "c", (function() {
-				return h
 			})), n.d(t, "f", (function() {
+				return f
+			})), n.d(t, "d", (function() {
+				return h
+			})), n.d(t, "c", (function() {
 				return _
+			})), n.d(t, "g", (function() {
+				return g
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./node_modules/reselect/es/index.js"),
@@ -74458,10 +74460,11 @@
 					const t = m(e);
 					return (null == t ? void 0 : t.variantName) || void 0
 				}, d.a),
-				b = (Object(s.a)(p, e => e === r.tb.FruitVeg), Object(s.a)(p, e => e === r.tb.Karma), Object(s.a)(p, e => e === r.tb.Randomizer)),
-				f = Object(s.a)(p, e => e === r.tb.Interactive),
-				h = Object(s.a)(p, e => Object.values(r.tb).includes(e)),
-				_ = e => Object(o.c)(e, {
+				b = (Object(s.a)(p, e => e === r.tb.FruitVeg), Object(s.a)(p, e => e === r.tb.Karma)),
+				f = Object(s.a)(p, e => e === r.tb.Randomizer),
+				h = Object(s.a)(p, e => e === r.tb.Interactive),
+				_ = Object(s.a)(p, e => Object.values(r.tb).includes(e)),
+				g = e => Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
 					experimentName: r.tc
 				})
@@ -75690,8 +75693,8 @@
 					} = e.onboarding;
 					if (t.success || t.failure) return t
 				},
-				x = Object(r.a)(m.h, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(i.zg)(e) ? t : null),
-				O = Object(r.a)(m.h, (e, t) => {
+				x = Object(r.a)(m.i, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(i.zg)(e) ? t : null),
+				O = Object(r.a)(m.i, (e, t) => {
 					let {
 						pageLayer: n
 					} = t;
@@ -77266,4 +77269,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.0a18355fad25bc3660a0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.f173d6c14a3164dda832.js.map
