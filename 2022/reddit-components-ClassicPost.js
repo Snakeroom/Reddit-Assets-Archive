@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.5f698b06ade36c34846a.js
-// Retrieved at 10/27/2022, 3:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.bd6a03ab6c76491e8076.js
+// Retrieved at 10/27/2022, 7:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1135,8 +1135,8 @@
 				B = n("./src/reddit/components/PostContainer/index.tsx"),
 				V = n("./src/reddit/components/PostMeta/index.tsx"),
 				G = n("./src/reddit/components/PostOverflowMenu/index.tsx"),
-				Y = n("./src/reddit/components/PostRailAndVotes/index.tsx"),
-				W = n("./src/reddit/components/PostTitle/index.tsx"),
+				W = n("./src/reddit/components/PostRailAndVotes/index.tsx"),
+				Y = n("./src/reddit/components/PostTitle/index.tsx"),
 				q = n("./src/reddit/components/PostTopMeta/index.tsx"),
 				z = n("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/videoContext.tsx"),
 				K = n("./src/reddit/controls/OutboundLink/styled.tsx"),
@@ -1221,8 +1221,8 @@
 					Be = Object(D.c)(ve),
 					Ve = !!ve.media && ve.media.type === H.o.RTJSON,
 					Ge = Se && Ve,
-					Ye = g && !Ee,
-					We = !!ve.media && Object(H.H)(ve.media),
+					We = g && !Ee,
+					Ye = !!ve.media && Object(H.H)(ve.media),
 					qe = !!ve.recommendationContext,
 					ze = {
 						flairStyleTemplate: Ne,
@@ -1248,7 +1248,7 @@
 					post: Re || ve,
 					redditStyle: _e,
 					templatePlaceholderImage: Ne && Ne.postPlaceholderImage,
-					removeLink: We
+					removeLink: Ye
 				});
 				Object(h.c)(ve) && (Ze = s.a.createElement(I, {
 					post: ve
@@ -1265,7 +1265,7 @@
 					post: ve,
 					onClick: me,
 					eventFactory: _
-				}, s.a.createElement(Y.a, {
+				}, s.a.createElement(W.a, {
 					model: ve,
 					handleVote: f,
 					showBulkActionCheckbox: xe,
@@ -1284,8 +1284,8 @@
 				}), s.a.createElement("div", {
 					className: le.a.mainBody
 				}, s.a.createElement("div", {
-					className: Ye ? le.a.expandoContainer : le.a.thumbnailContainer
-				}, !Ye && Ze, s.a.createElement(A.a, {
+					className: We ? le.a.expandoContainer : le.a.thumbnailContainer
+				}, !We && Ze, s.a.createElement(A.a, {
 					crosspost: Re,
 					className: le.a.rightExpando,
 					isExpanded: !!v,
@@ -1300,13 +1300,13 @@
 					content: ve.recommendationContext.content,
 					layout: X.g.Classic,
 					post: ve
-				}), s.a.createElement(W.c, {
+				}), s.a.createElement(Y.c, {
 					className: he ? le.a.titleWithPoll : void 0,
 					format: x,
 					poll: he,
 					post: ve,
 					redditStyle: _e,
-					size: W.b.Medium,
+					size: Y.b.Medium,
 					titleColor: Ne && Ne.postTitleColor,
 					isOverlay: w
 				}, ve.source && !Re && !ve.isSurveyAd && s.a.createElement(K.a, {
@@ -1557,17 +1557,17 @@
 					rootMargin: "2000px 0px 2000px 0px"
 				});
 				Object(a.a)(T, V, G.current);
-				const Y = Object(o.a)(t);
+				const W = Object(o.a)(t);
 				Object(r.useEffect)(() => {
-					if (void 0 !== Y && Y !== t) {
-						const e = t - Y;
+					if (void 0 !== W && W !== t) {
+						const e = t - W;
 						D.current ? A.current(e) : M.current += e
 					}
 					return () => {
 						clearTimeout(R.current), clearTimeout(L.current), clearTimeout(P.current)
 					}
 				}, [t]);
-				const W = Object(r.useCallback)(() => j(!0), [j]),
+				const Y = Object(r.useCallback)(() => j(!0), [j]),
 					q = 0 === y.length,
 					z = E || q,
 					K = Object(r.useRef)(((e, t) => `${t}_${e}_count_anim`)(h, n));
@@ -1587,7 +1587,7 @@
 						"aria-hidden": !0,
 						className: l.a.digitDeltaWrapper,
 						key: t,
-						onTransitionEnd: W,
+						onTransitionEnd: Y,
 						style: x && y.length > 0 && !E ? {
 							transform: `translateY(-${_&&n.length>1?100:100*(n.length-1)}%)`,
 							transitionDuration: `${(_?500:750)/1e3}s`
@@ -2770,8 +2770,8 @@
 				B = n("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
 				V = n("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
 				G = n("./src/reddit/selectors/user.ts"),
-				Y = n("./src/telemetry/models/Outbound.ts"),
-				W = n("./src/reddit/components/PostTitle/getLeftAndRightFlair.ts"),
+				W = n("./src/telemetry/models/Outbound.ts"),
+				Y = n("./src/reddit/components/PostTitle/getLeftAndRightFlair.ts"),
 				q = n("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
 				z = n("./src/reddit/components/PostTitle/index.m.less"),
 				K = n.n(z);
@@ -2952,7 +2952,7 @@
 						post: r
 					} = e, {
 						isSponsored: s
-					} = r, o = e.isCommentsPage ? Y.SourceElement.PostLink : Y.SourceElement.ListingPostLink;
+					} = r, o = e.isCommentsPage ? W.SourceElement.PostLink : W.SourceElement.ListingPostLink;
 					if (Object(x.a)()) return null;
 					if (n && r.isNSFW) return null;
 					const a = !t && !e.isCrosspost && e.size !== D.Large && !r.isSponsored && !(r.media && Object(k.H)(r.media)) && (r.source || r.media && (r.media.type === k.o.GIFVIDEO || r.media.type === k.o.IMAGE || r.media.type === k.o.EMBED));
@@ -3004,7 +3004,7 @@
 					} = this.props, p = n === y.b.Left, b = Object(T.b)(c), {
 						leftFlair: f,
 						rightFlair: h
-					} = Object(W.a)({
+					} = Object(Y.a)({
 						flair: b,
 						isFlairPositionedLeft: p,
 						showNSFWSpoilerFlairsOnly: d,
@@ -3126,7 +3126,8 @@
 				votesContainer: "_1E9mcoVn4MYnuBQSVDt1gC",
 				bounceUp: "nmB1I04Z-G4nY3g3s_17F",
 				bounceDown: "_1L6r7KisMt3CYUGWSEMGiR",
-				disabledScore: "_3WPd5t8B-7mtiGONFotWAM"
+				disabledScore: "_3WPd5t8B-7mtiGONFotWAM",
+				disabledVoteIcon: "mvlZFfW9BWm1bmljE_0Rg"
 			}
 		},
 		"./src/reddit/components/VerticalVotes/index.tsx": function(e, t, n) {
@@ -4417,9 +4418,9 @@
 			})), n.d(t, "clickFilterEvent", (function() {
 				return G
 			})), n.d(t, "clickNextFiltersEvent", (function() {
-				return Y
-			})), n.d(t, "clickPreviousFiltersEvent", (function() {
 				return W
+			})), n.d(t, "clickPreviousFiltersEvent", (function() {
+				return Y
 			}));
 			var r = n("./src/reddit/helpers/trackers/commentsChat.ts"),
 				s = n("./src/reddit/models/Gold/Award.ts"),
@@ -4633,13 +4634,13 @@
 						filterName: e.content.markdown
 					}
 				}),
-				Y = () => e => ({
+				W = () => e => ({
 					...p(e),
 					source: "give_gold",
 					action: "click",
 					noun: "next_filters"
 				}),
-				W = () => e => ({
+				Y = () => e => ({
 					...p(e),
 					source: "give_gold",
 					action: "click",
@@ -7078,4 +7079,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.5f698b06ade36c34846a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.bd6a03ab6c76491e8076.js.map

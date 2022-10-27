@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.e4150284849824dc475b.js
-// Retrieved at 10/27/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.3170ec23a9079d57ea44.js
+// Retrieved at 10/27/2022, 7:10:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -836,7 +836,7 @@
 					ModListing: "379bd6957f5f124bcaf6",
 					"vendors~PostCreation~Subreddit": "31d6cfe0d16ae931b73c",
 					Subreddit: "2a96039ba0898b5fa3d6",
-					CommentsPage: "df227f28c2601f4ea67f",
+					CommentsPage: "cdbe9197a01df9594b2c",
 					"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "31d6cfe0d16ae931b73c",
 					CryptoHarbergerTaxManageModal: "2aa9ff783063788fb416",
 					HarbergerTaxManageModal: "921d6fe08b1d7814c1f3",
@@ -844,7 +844,7 @@
 					"vendors~PostCreation": "e1900a44b3591b7e9613",
 					PostCreation: "3484c2f4a29b97b21d3b",
 					"vendors~ModerationPages": "31d6cfe0d16ae931b73c",
-					ModerationPages: "e8f6fcd4058ce4981cfd",
+					ModerationPages: "8f59288db88a52a429c1",
 					"vendors~ModStatsChart~Settings~ViewsTooltip": "31d6cfe0d16ae931b73c",
 					"vendors~Settings": "31d6cfe0d16ae931b73c",
 					Settings: "5c75e5d13f1daf4fe406",
@@ -903,10 +903,10 @@
 					ChatPost: "4cb6a1428e174e9559e4",
 					ChatMessageInput: "42ee0f4cd526699d65f3",
 					RichTextEditor: "40b4690e12266f68d826",
-					"reddit-components-ClassicPost": "d25b5f3c58c92c78c635",
-					"reddit-components-CompactPost": "7153cfabd003c816e6d5",
-					"reddit-components-LargePost": "535a46b098aeaf7e9a48",
-					"reddit-components-MediumPost": "98350fc7352fa83d6860",
+					"reddit-components-ClassicPost": "d712340d2415c410960c",
+					"reddit-components-CompactPost": "b6e72cf724a21deddae5",
+					"reddit-components-LargePost": "aaf230c3a1a94bce9d56",
+					"reddit-components-MediumPost": "bff1ed4d624c2f551af5",
 					LiveVideoPlayer: "872d21bc6065510c215f",
 					"vendors~dashjs": "31d6cfe0d16ae931b73c",
 					"vendors~devPlatform-components-AdminPanel-Utilities-DevPlatformConfig~devPlatform-components-ContextActions": "31d6cfe0d16ae931b73c",
@@ -1564,7 +1564,7 @@
 						ModListing: "9ef36f1b8943d68bc5b6",
 						"vendors~PostCreation~Subreddit": "804e802e502ab366d223",
 						Subreddit: "99178af8b880b175da92",
-						CommentsPage: "7e0016046c48af3055e5",
+						CommentsPage: "1b1ec8fe82f6ecc619d7",
 						"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "fbf6b3871488094312c2",
 						CryptoHarbergerTaxManageModal: "7f1d18091972e1e07aca",
 						HarbergerTaxManageModal: "c1282819479fb98fc0ce",
@@ -1572,7 +1572,7 @@
 						"vendors~PostCreation": "a2355262c2d34d688b8f",
 						PostCreation: "fc038ee1ddd7597eb017",
 						"vendors~ModerationPages": "94c34813eaf24a1890ea",
-						ModerationPages: "1c089a81286383f92f79",
+						ModerationPages: "c79341a257c5cdd5db27",
 						"vendors~ModStatsChart~Settings~ViewsTooltip": "ca7c845d62fd39d960b6",
 						"vendors~Settings": "86b1cfc53320ea8eef91",
 						Settings: "8571c53a5c49290c92f4",
@@ -1631,10 +1631,10 @@
 						ChatPost: "653e63e50ee106e959e9",
 						ChatMessageInput: "e79cf061de8bef5af230",
 						RichTextEditor: "bc257247003a13211730",
-						"reddit-components-ClassicPost": "5f698b06ade36c34846a",
-						"reddit-components-CompactPost": "8e30b9fb29b0922af399",
-						"reddit-components-LargePost": "6f4db05ca789ecb61e87",
-						"reddit-components-MediumPost": "cbe183e4bf61364993be",
+						"reddit-components-ClassicPost": "bd6a03ab6c76491e8076",
+						"reddit-components-CompactPost": "1ba7daea1b64cea016a7",
+						"reddit-components-LargePost": "1eff6841dc8ab00a73c0",
+						"reddit-components-MediumPost": "c0e85248b6b35d2d7d8a",
 						LiveVideoPlayer: "3d01d733a8507722ed6c",
 						"vendors~dashjs": "518ef1c4a3ea00bc51bc",
 						"vendors~devPlatform-components-AdminPanel-Utilities-DevPlatformConfig~devPlatform-components-ContextActions": "45c256811d80b97f1ac6",
@@ -1814,4 +1814,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.e4150284849824dc475b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.3170ec23a9079d57ea44.js.map
