@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/devPlatform-components-AdminPanel-Utilities-DevPlatformConfig.488ebea317f978f69b41.js
-// Retrieved at 9/19/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/devPlatform-components-AdminPanel-Utilities-DevPlatformConfig.a0b6e3c15cd6e871aaa6.js
+// Retrieved at 10/31/2022, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["devPlatform-components-AdminPanel-Utilities-DevPlatformConfig"], {
 		"./src/devPlatform/components/AdminPanel/Utilities/DevPlatformConfig/index.tsx": function(t, e, a) {
@@ -7,20 +7,20 @@
 			a.r(e);
 			var o = a("./node_modules/react/index.js"),
 				s = a.n(o),
-				r = a("./node_modules/react-redux/es/index.js"),
-				i = a("./node_modules/reselect/es/index.js"),
+				i = a("./node_modules/react-redux/es/index.js"),
+				r = a("./node_modules/reselect/es/index.js"),
 				n = a("./src/config.ts"),
-				l = a("./src/reddit/actions/toaster.ts"),
-				d = a("./src/reddit/components/AdminPanel/Utilities/Section.tsx"),
+				d = a("./src/reddit/actions/toaster.ts"),
+				l = a("./src/reddit/components/AdminPanel/Utilities/Section.tsx"),
 				c = a("./src/reddit/controls/Button/index.tsx"),
 				u = a("./src/reddit/models/Toast/index.ts"),
 				g = a("./src/devPlatform/singleton/runtime.ts");
-			const m = Object(r.b)(() => Object(i.c)({}), t => ({
+			const h = Object(i.b)(() => Object(r.c)({}), t => ({
 				showToast: (e, a) => {
-					t(Object(l.f)(Object(l.e)(e, a)))
+					t(Object(d.f)(Object(d.e)(e, a)))
 				}
 			}));
-			class h extends s.a.Component {
+			class m extends s.a.Component {
 				constructor(t) {
 					super(t), this.gatewayUrlChanged = t => {
 						this.setState({
@@ -54,7 +54,7 @@
 					}
 				}
 				render() {
-					return s.a.createElement(d.a, {
+					return s.a.createElement(l.a, {
 						title: "Developer Platform"
 					}, s.a.createElement(s.a.Fragment, null, s.a.createElement("label", null, s.a.createElement("input", {
 						type: "checkbox",
@@ -84,7 +84,7 @@
 					}, "Clear")))
 				}
 			}
-			e.default = m(h)
+			e.default = h(m)
 		},
 		"./src/devPlatform/constants.ts": function(t, e, a) {
 			"use strict";
@@ -93,16 +93,16 @@
 			})), a.d(e, "c", (function() {
 				return s
 			})), a.d(e, "d", (function() {
-				return r
-			})), a.d(e, "e", (function() {
 				return i
+			})), a.d(e, "e", (function() {
+				return r
 			})), a.d(e, "a", (function() {
 				return n
 			}));
 			const o = "devvit-gateway-url",
 				s = "devvit-mock-metadata",
-				r = "devvit-debug-logging",
-				i = "DEV_PLAT__OPEN_USER_INPUT_MODAL";
+				i = "devvit-debug-logging",
+				r = "DEV_PLAT__OPEN_USER_INPUT_MODAL";
 			var n;
 			! function(t) {
 				t[t.POST = 0] = "POST", t[t.COMMENT = 1] = "COMMENT", t[t.SUBREDDIT = 2] = "SUBREDDIT", t[t.UNRECOGNIZED = -1] = "UNRECOGNIZED"
@@ -113,55 +113,59 @@
 			a("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = a("./src/config.ts"),
 				s = a("./node_modules/@devvit/protos/index.js"),
-				r = a("./node_modules/@devvit/runtimes/platform/browser/BrowserRuntime.js"),
-				i = a("./src/devPlatform/constants.ts"),
+				i = a("./node_modules/@devvit/runtimes/platform/browser/BrowserRuntime.js"),
+				r = a("./src/devPlatform/constants.ts"),
 				n = a("./node_modules/@devvit/runtimes/worker.bootstrap.cjs"),
-				l = a("./node_modules/@devvit/runtimes/worker.echo.cjs"),
-				d = a("./node_modules/@devvit/runtimes/worker.redditapi.cjs"),
+				d = a("./node_modules/@devvit/runtimes/worker.echo.cjs"),
+				l = a("./node_modules/@devvit/runtimes/worker.redditapi.cjs"),
 				c = a("./node_modules/@devvit/runtimes/worker.supervisor.cjs"),
 				u = a("./src/lib/localStorageAvailable/index.ts");
 			const g = new Map([
 				["bootstrap", n.a],
 				["supervisor", c.a],
-				["redditapi", d.a],
-				["echo", l.a]
+				["redditapi", l.a],
+				["echo", d.a]
 			]);
-			const m = new class {
+			const h = new class {
 				constructor() {
 					var t;
-					if (this.runtime = new r.a(g), this.gatewayUrl = "", this.loadedSubId = "", this.subActors = [], this.mockMetadata = null, this.localStorageAvailable = Object(u.a)(), this.runtimeInitialized = !1, this.debugLogging = !1, this.localStorageAvailable) {
-						this.gatewayUrl = null !== (t = localStorage.getItem(i.b)) && void 0 !== t ? t : o.a.devPlatformGatewayUrl;
-						const e = localStorage.getItem(i.c);
-						e && (this.mockMetadata = JSON.parse(e)), this.debugLogging = "true" === localStorage.getItem(i.d)
+					if (this.runtime = new i.a(g), this.gatewayUrl = "", this.loadedSubId = "", this.subActors = [], this.loadedMetadata = null, this.mockMetadata = null, this.localStorageAvailable = Object(u.a)(), this.runtimeInitialized = !1, this.debugLogging = !1, this.localStorageAvailable) {
+						this.gatewayUrl = null !== (t = localStorage.getItem(r.b)) && void 0 !== t ? t : o.a.devPlatformGatewayUrl;
+						const e = localStorage.getItem(r.c);
+						e && (this.mockMetadata = JSON.parse(e)), this.debugLogging = "true" === localStorage.getItem(r.d)
 					}
 				}
-				async init() {
-					this.runtimeInitialized || (this.runtimeInitialized = !0, await this.runtime.start())
+				init() {
+					this.runtimeInitialized || (this.runtimeInitialized = !0, this.runtime.start())
 				}
 				getGatewayUrl() {
 					return this.gatewayUrl
 				}
 				setGatewayUrl(t) {
-					return this.gatewayUrl = t, this.localStorageAvailable && (t === o.a.devPlatformGatewayUrl ? localStorage.removeItem(i.b) : localStorage.setItem(i.b, t)), this.reloadSubreddit(), this.subActors.length
+					return this.gatewayUrl = t, this.localStorageAvailable && (t === o.a.devPlatformGatewayUrl ? localStorage.removeItem(r.b) : localStorage.setItem(r.b, t)), this.reloadSubreddit(), this.subActors.length
 				}
 				getDebugLogging() {
 					return this.debugLogging
 				}
 				setDebugLogging(t) {
-					this.debugLogging = t, localStorage.setItem(i.d, t ? "true" : "false")
+					this.debugLogging = t, localStorage.setItem(r.d, t ? "true" : "false")
 				}
 				loadMockData(t) {
-					this.mockMetadata = t, this.localStorageAvailable && (t ? localStorage.setItem(i.c, JSON.stringify(t)) : localStorage.removeItem(i.c))
+					this.mockMetadata = t, this.localStorageAvailable && (t ? localStorage.setItem(r.c, JSON.stringify(t)) : localStorage.removeItem(r.c))
 				}
-				async loadSubreddit(t) {
-					let e = this.mockMetadata;
-					return t.devPlatformMetadata && (e = s.j.fromJSON(JSON.parse(atob(t.devPlatformMetadata))), this.debugLog("metadata:", e)), this.debugLog("metadata.contextActions:", null == e ? void 0 : e.contextActions), this.debugLog("metadata.installedRemoteApps:", null == e ? void 0 : e.installedRemoteApps), e ? t.id === this.loadedSubId ? e.contextActions : (this.unloadSubreddit(), this.loadedSubId = t.id, this.subActors = [], e.installedRemoteApps.forEach(t => {
+				loadSubreddit(t) {
+					var e, a, o, i;
+					if (t.id === this.loadedSubId) return null !== (a = null === (e = this.loadedMetadata) || void 0 === e ? void 0 : e.contextActions) && void 0 !== a ? a : [];
+					if (this.debugLog("Metadata not yet loaded"), void 0 !== t.devPlatformMetadata ? (this.debugLog("Loading metadata from Subreddit"), this.loadedMetadata = s.i.fromJSON(JSON.parse(atob(t.devPlatformMetadata))), this.debugLog("metadata.contextActions:", null === (o = this.loadedMetadata) || void 0 === o ? void 0 : o.contextActions), this.debugLog("metadata.installedRemoteApps:", null === (i = this.loadedMetadata) || void 0 === i ? void 0 : i.installedRemoteApps)) : null !== this.mockMetadata && (this.debugLog("Using mock metadata"), this.loadedMetadata = this.mockMetadata), !this.loadedMetadata) return this.debugLog("No metadata found"), [];
+					this.unloadSubreddit(), this.loadedSubId = t.id, this.subActors = [];
+					const r = this.loadedMetadata.installedRemoteApps.reduce((t, e) => (t.add(e.hostname.split(".")[0]), t), new Set);
+					return this.debugLog(`Connecting to ${this.loadedMetadata.installedRemoteApps.length} remote actors from ${r.size} apps`), this.loadedMetadata.installedRemoteApps.forEach(t => {
 						const e = {
 							hostname: t.hostname,
-							provides: s.i.fromSerializable(t.provides[0])
+							provides: s.h.fromSerializable(t.provides[0])
 						};
 						this.loadActor(e), this.subActors.push(e)
-					}), e.contextActions) : []
+					}), this.debugLog(`Found ${this.loadedMetadata.contextActions.reduce((t,e)=>t+e.actions.actions.length,0)} actions across ${this.loadedMetadata.contextActions.length} actors`), this.loadedMetadata.contextActions
 				}
 				getActor(t) {
 					return this.runtime.getActorRef(t)
@@ -174,10 +178,10 @@
 				loadActor(t) {
 					const e = t.hostname.split("."),
 						a = {
-							"devvit-installation": s.N.fromPartial({
+							"devvit-installation": s.L.fromPartial({
 								values: [e[0]]
 							}),
-							"devvit-actor": s.N.fromPartial({
+							"devvit-actor": s.L.fromPartial({
 								values: [e[2]]
 							})
 						};
@@ -193,9 +197,9 @@
 					}
 				}
 			};
-			e.a = m
+			e.a = h
 		},
 		"ignored /drone/src/node_modules/cron-parser/lib fs": function(t, e) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/devPlatform-components-AdminPanel-Utilities-DevPlatformConfig.488ebea317f978f69b41.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/devPlatform-components-AdminPanel-Utilities-DevPlatformConfig.a0b6e3c15cd6e871aaa6.js.map

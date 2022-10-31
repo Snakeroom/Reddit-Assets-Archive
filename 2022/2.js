@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/2.bf5aa5048aa0b3f67759.js
-// Retrieved at 10/27/2022, 1:50:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/2.a84cf939782c723404c0.js
+// Retrieved at 10/31/2022, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[2], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -75,11 +75,11 @@
 			const y = u.a.div("Wrapper", k.a),
 				N = u.a.div("ConfigFormRendererWrapper", k.a),
 				_ = u.a.p("TextWrapper", k.a),
-				O = u.a.div("ConfigFormRow", k.a),
-				I = u.a.div("ConfigFormStringRow", k.a),
+				I = u.a.div("ConfigFormRow", k.a),
+				O = u.a.div("ConfigFormStringRow", k.a),
 				R = u.a.div("NumberInputWrapper", k.a),
 				j = u.a.div("ConfigFormFooterWrapper", k.a);
-			class T extends a.a.Component {
+			class M extends a.a.Component {
 				constructor(e) {
 					super(e), this.state = {
 						values: new Map
@@ -96,7 +96,7 @@
 					})
 				}
 				onSubmit() {
-					const e = d.e.fromJSON(this.props.configForm);
+					const e = d.d.fromJSON(this.props.configForm);
 					for (const t of e.fields) t.response = JSON.stringify(this.state.values.get(t.key));
 					this.props.onSubmitClick(e)
 				}
@@ -108,9 +108,9 @@
 						configForm: l,
 						onCloseClick: i
 					} = this.props, u = [];
-					for (const c of l.fields) switch (Object(d.U)(c.fieldType)) {
-						case d.d.STRING:
-							u.push(a.a.createElement(I, {
+					for (const c of l.fields) switch (Object(d.R)(c.fieldType)) {
+						case d.c.STRING:
+							u.push(a.a.createElement(O, {
 								key: c.key
 							}, a.a.createElement("label", {
 								htmlFor: c.key
@@ -120,8 +120,8 @@
 								onChange: e => this.updateValue(c.key, e.target.value)
 							})));
 							break;
-						case d.d.PARAGRAPH:
-							u.push(a.a.createElement(I, {
+						case d.c.PARAGRAPH:
+							u.push(a.a.createElement(O, {
 								key: c.key
 							}, a.a.createElement("label", {
 								htmlFor: c.key
@@ -131,8 +131,8 @@
 								value: null !== (t = this.state.values.get(c.key)) && void 0 !== t ? t : ""
 							})));
 							break;
-						case d.d.NUMBER:
-							u.push(a.a.createElement(O, {
+						case d.c.NUMBER:
+							u.push(a.a.createElement(I, {
 								key: c.key
 							}, a.a.createElement("label", {
 								htmlFor: c.key
@@ -143,9 +143,9 @@
 								value: null !== (n = this.state.values.get(c.key)) && void 0 !== n ? n : 0
 							}))));
 							break;
-						case d.d.BOOLEAN:
+						case d.c.BOOLEAN:
 							const r = null !== (s = this.state.values.get(c.key)) && void 0 !== s && s;
-							u.push(a.a.createElement(O, {
+							u.push(a.a.createElement(I, {
 								key: c.key
 							}, a.a.createElement("label", {
 								htmlFor: c.key
@@ -155,7 +155,7 @@
 								onToggle: () => this.updateValue(c.key, !r)
 							})));
 							break;
-						case d.d.UNRECOGNIZED:
+						case d.c.UNRECOGNIZED:
 					}
 					return a.a.createElement(y, null, a.a.createElement(N, null, a.a.createElement(E, {
 						title: r,
@@ -167,7 +167,7 @@
 					})))))
 				}
 			}
-			var M = T;
+			var T = M;
 			const F = Object(o.c)({});
 			class D extends a.a.Component {
 				constructor() {
@@ -176,6 +176,12 @@
 							closeUserInputModal: t
 						} = this.props;
 						if ("Escape" === e.key) return t()
+					}, this.onSubmitClick = e => {
+						const {
+							onAction: t,
+							closeUserInputModal: n
+						} = this.props;
+						t(e), n()
 					}
 				}
 				componentDidMount() {
@@ -191,15 +197,14 @@
 							description: t,
 							userInput: n
 						},
-						onAction: s,
-						closeUserInputModal: r
+						closeUserInputModal: s
 					} = this.props;
-					return a.a.createElement(M, {
+					return a.a.createElement(T, {
 						title: e,
 						description: t,
 						configForm: n,
-						onSubmitClick: s,
-						onCloseClick: r
+						onSubmitClick: this.onSubmitClick,
+						onCloseClick: s
 					})
 				}
 			}
@@ -812,4 +817,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/2.bf5aa5048aa0b3f67759.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/2.a84cf939782c723404c0.js.map

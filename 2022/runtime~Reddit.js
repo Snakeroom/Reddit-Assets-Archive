@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.043cabe34b4d961ec5f6.js
-// Retrieved at 10/31/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.71beaa90d73a17c9af10.js
+// Retrieved at 10/31/2022, 5:50:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1399,7 +1399,7 @@
 					} [e] || e) + "." + {
 						0: "063653c1fa1f63a1a507",
 						1: "84dfc2c680ecb03615cd",
-						2: "bf5aa5048aa0b3f67759",
+						2: "a84cf939782c723404c0",
 						3: "8eda915c33374709108b",
 						4: "e7d8d9b8e9a374d654d4",
 						5: "8bbc0aacfa9efe3a1e79",
@@ -1639,8 +1639,8 @@
 						ChatMessageInput: "2fa8d9f0ba35cefc71f0",
 						RichTextEditor: "62bec509a9210fc9f77c",
 						LiveVideoPlayer: "924816afe689466c8d04",
-						"vendors~devPlatform-components-AdminPanel-Utilities-DevPlatformConfig~devPlatform-components-ContextActions": "45c256811d80b97f1ac6",
-						"devPlatform-components-ContextActions": "635b40af54cebae3c60d",
+						"vendors~devPlatform-components-AdminPanel-Utilities-DevPlatformConfig~devPlatform-components-ContextActions": "26c52526507c11e138b3",
+						"devPlatform-components-ContextActions": "f88702ea263702be912b",
 						"vendors~shreddit-player": "27751138347614416a3d",
 						ContributorRequestButton: "2dc6915f88180add0a01",
 						SubredditSearchCarousel: "eab433a007946551fcbe",
@@ -1668,7 +1668,7 @@
 						"reddit-components-NotificationUnit-Button": "727f374095ef205dd5bc",
 						CrisisFlow: "51b81efca7ed0a34646e",
 						EmailInvitePaintedDoor: "cf6eb7887dbd99171bd6",
-						"devPlatform-components-AdminPanel-Utilities-DevPlatformConfig": "488ebea317f978f69b41",
+						"devPlatform-components-AdminPanel-Utilities-DevPlatformConfig": "a0b6e3c15cd6e871aaa6",
 						"reddit-components-Governance-TransactionModals-TransferTransactionModal": "415af0037825ace55110",
 						GifTooltip: "8c5733466be16fcb1876",
 						PowerupsEmotesTooltip: "fa646620f5e9eda659f1",
@@ -1814,4 +1814,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.043cabe34b4d961ec5f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.71beaa90d73a17c9af10.js.map
