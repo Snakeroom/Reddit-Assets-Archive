@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.62bec509a9210fc9f77c.js
-// Retrieved at 10/31/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.61e768200032831cd3d1.js
+// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -1102,7 +1102,7 @@
 									draftKey: j,
 									upload: F
 								})), t) {
-								const e = Object(le.i)(v);
+								const e = Object(le.j)(v);
 								Object(i.a)(!!e)
 							}
 							const n = Object(ue.G)(g(), {
@@ -1231,7 +1231,7 @@
 								depth: p + 1,
 								upload: k
 							})), t) {
-							const e = Object(le.i)(g);
+							const e = Object(le.j)(g);
 							Object(i.a)(!!e)
 						}
 					} else {
@@ -5876,7 +5876,7 @@
 				l = o("./src/telemetry/index.ts"),
 				u = o("./src/reddit/constants/richTextJson.ts");
 			const m = e => {
-					const t = Object(d.o)(e);
+					const t = Object(d.p)(e);
 					return {
 						source: "comment_composer",
 						action: s.c.CLICK,
@@ -6320,4 +6320,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.62bec509a9210fc9f77c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.61e768200032831cd3d1.js.map

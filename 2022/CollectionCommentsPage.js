@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.591bd77152ac2549f240.js
-// Retrieved at 10/31/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.701c7ba9eb8e3d8e2c8b.js
+// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -1233,7 +1233,7 @@
 					} = n, v = h.pages.comments.keyToHeadCommentId.hasOwnProperty(b), C = h.pages.comments.api.fullyLoaded[b], _ = h.pages.comments.api.error[b];
 					if (h.pages.comments.api.pending[b] || v && !_) {
 						if (v && !h.sidebarPromotedPosts.firstFetch) {
-							const e = Object(A.i)(h) ? R.a.COMMENTS_OVERLAY : R.a.COMMENTS;
+							const e = Object(A.j)(h) ? R.a.COMMENTS_OVERLAY : R.a.COMMENTS;
 							window.addEventListener("load", () => {
 								i(Object(d.b)(e))
 							})
@@ -1275,7 +1275,7 @@
 							key: b,
 							postId: t
 						}));
-						const o = Object(A.i)(h) ? R.a.COMMENTS_OVERLAY : R.a.COMMENTS;
+						const o = Object(A.j)(h) ? R.a.COMMENTS_OVERLAY : R.a.COMMENTS;
 						i(Object(d.b)(o))
 					}
 					if (I.ok) {
@@ -1731,7 +1731,7 @@
 						};
 					return a ? (l.listingBelow = i || n, l.postFeed = l.listingBelow) : d ? l.nsfwListingBelow = !0 : l.postFeed = (i || n) && (!Object(D.i)(o) && !Object(Ge.d)(t, {
 						postId: s
-					}) && !!o || !Object(J.i)(t) && Object(z.e)(t)), e && (l.postQASchema = Object(z.d)(t)), c && (l.listingBelow = !0), l
+					}) && !!o || !Object(J.j)(t) && Object(z.e)(t)), e && (l.postQASchema = Object(z.d)(t)), c && (l.listingBelow = !0), l
 				},
 				gt = (e, t) => e || t.postFeed || t.listingBelow || t.nsfwListingBelow || t.postQASchema,
 				ft = e => ({
@@ -1786,7 +1786,7 @@
 							isLoggedIn: D
 						})]);
 						const n = s();
-						if (!Object(J.i)(n)) {
+						if (!Object(J.j)(n)) {
 							Object(Ze.a)(n) && t(Object(P.b)(e))
 						}
 						Object(ee.i)(n, e) && await t(Object(d.c)(u))
@@ -1920,7 +1920,7 @@
 						B = !!v.platform.lastPage;
 					if ((T || k && !P) && !(A && B)) {
 						if (k && !v.sidebarPromotedPosts.firstFetch) {
-							const e = Object(J.i)(v) ? le.a.COMMENTS_OVERLAY : le.a.COMMENTS;
+							const e = Object(J.j)(v) ? le.a.COMMENTS_OVERLAY : le.a.COMMENTS;
 							window.addEventListener("load", () => {
 								r(Object(ie.b)(e))
 							})
@@ -2059,7 +2059,7 @@
 						n && K.body.comments && Object.keys(K.body.comments).length < n.numComments ? r(_t(e, t, s)) : K.ok && r(yt({
 							key: y
 						}));
-						const o = Object(J.i)(v) ? le.a.COMMENTS_OVERLAY : le.a.COMMENTS;
+						const o = Object(J.j)(v) ? le.a.COMMENTS_OVERLAY : le.a.COMMENTS;
 						r(Object(ie.b)(o))
 					}
 					if (K.ok) {
@@ -15169,4 +15169,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.591bd77152ac2549f240.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.701c7ba9eb8e3d8e2c8b.js.map

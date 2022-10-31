@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.282de67a6fe210b95a21.js
-// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.d9fede9b7dfc0574658d.js
+// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -8518,7 +8518,7 @@
 						includeUserProfile: a,
 						substring: r.rawString
 					})
-				}, e => Object(Y.qb)(e) && Object(G.j)(e), (e, t, n) => {
+				}, e => Object(Y.qb)(e) && Object(G.k)(e), (e, t, n) => {
 					const {
 						suggestedItems: a,
 						fallbackItems: r,
@@ -9306,4 +9306,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.282de67a6fe210b95a21.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.d9fede9b7dfc0574658d.js.map

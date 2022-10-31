@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.6167f1630bb085a5c13e.js
-// Retrieved at 10/31/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.5d3dcb779c7b3f7a20d5.js
+// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -1372,25 +1372,28 @@
 		},
 		"./src/reddit/actions/happeningNow/constants.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "d", (function() {
+			n.d(t, "e", (function() {
 				return r
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "d", (function() {
 				return s
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "g", (function() {
 				return a
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "b", (function() {
 				return o
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "c", (function() {
 				return c
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "a", (function() {
 				return i
+			})), n.d(t, "f", (function() {
+				return d
 			}));
-			const r = "HAPPENING_NOW__SET_LIVE_CONTENT_AVAILABILITY",
-				s = "HAPPENING_NOW__SET_SHOULD_SHOW_FIRST_TIME_TOOLTIP",
-				a = "HAPPENING_NOW__FETCH_LIVE_DISCOVERY_CONTENT_PENDING",
-				o = "HAPPENING_NOW__FETCH_LIVE_DISCOVERY_CONTENT_SUCCESS",
-				c = "HAPPENING_NOW__FETCH_LIVE_DISCOVERY_CONTENT_FAILURE",
-				i = "HAPPENING_NOW__SET_SELECTED_FILTER"
+			const r = "HAPPENING_NOW__SET_LATEST_UNREAD_CONTENT_TIMESTAMP",
+				s = "HAPPENING_NOW__LAST_READ_TIMESTAMP",
+				a = "HAPPENING_NOW__SET_SHOULD_SHOW_FIRST_TIME_TOOLTIP",
+				o = "HAPPENING_NOW__FETCH_LIVE_DISCOVERY_CONTENT_PENDING",
+				c = "HAPPENING_NOW__FETCH_LIVE_DISCOVERY_CONTENT_SUCCESS",
+				i = "HAPPENING_NOW__FETCH_LIVE_DISCOVERY_CONTENT_FAILURE",
+				d = "HAPPENING_NOW__SET_SELECTED_FILTER"
 		},
 		"./src/reddit/actions/harbergerTax/constants.ts": function(e, t, n) {
 			"use strict";
@@ -4348,7 +4351,7 @@
 					{
 						nsfwSessionSetting: N
 					} = Object(f.b)(),
-					L = Object(a.e)(ee.r),
+					L = Object(a.e)(ee.s),
 					k = Object(a.e)(ee.d),
 					U = Object(z.c)(P),
 					M = Object(u.e)({
@@ -25701,7 +25704,7 @@
 					var t;
 					const n = p(e);
 					if (!n) return !1;
-					let r = Object(i.r)(e),
+					let r = Object(i.s)(e),
 						a = Object(i.d)(e);
 					if ("undefined" != typeof window && !a) {
 						const e = Object(c.a)("subreddit", window.location.href);
@@ -25881,4 +25884,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.6167f1630bb085a5c13e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.5d3dcb779c7b3f7a20d5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.44aaf513453dd00fb3c6.js
-// Retrieved at 10/31/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.638db90b4f35616c5798.js
+// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -3661,7 +3661,7 @@
 			var At = n("./src/reddit/selectors/telemetry.ts");
 			var Ut = n("./src/reddit/selectors/platform.ts");
 			var Ht = Object(o.b)(() => Object(m.c)({
-					postId: Ut.o,
+					postId: Ut.p,
 					subredditId: (e, t) => {
 						let {
 							subredditName: n
@@ -5470,7 +5470,7 @@
 					subreddit: a.kb(e)
 				}),
 				c = (e, t, n) => r => ({
-					source: Object(o.i)(r) || n ? "post_lightbox" : "post_detail",
+					source: Object(o.j)(r) || n ? "post_lightbox" : "post_detail",
 					action: "click",
 					noun: t,
 					...d(r),
@@ -5495,7 +5495,7 @@
 				u = (e, t) => n => {
 					const r = a.k(n);
 					return r ? c(r.id, e, t)(n) : {
-						source: Object(o.i)(n) || t ? "post_lightbox" : "post_detail",
+						source: Object(o.j)(n) || t ? "post_lightbox" : "post_detail",
 						action: "click",
 						noun: e,
 						...d(n)
@@ -6057,4 +6057,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.44aaf513453dd00fb3c6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.638db90b4f35616c5798.js.map

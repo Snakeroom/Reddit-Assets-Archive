@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.3adb09531819930ff3a9.js
-// Retrieved at 10/31/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.7a21e41cc3b1d0f3c8ae.js
+// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -454,7 +454,7 @@
 						sort: d,
 						t: u,
 						correlationId: m
-					} = t, p = Object(A.i)(e), h = Object(M.ab)(e) || Object(M.R)(e), O = Object(L.a)(e), x = Object(B.q)(e), v = Object(F.c)(e), _ = Object(F.g)(e), E = _ === b.qb.LoggedOutUiOnly || _ === b.qb.LoggedOutHomeDefpop, C = Object(G.b)(e), {
+					} = t, p = Object(A.i)(e), h = Object(M.ab)(e) || Object(M.R)(e), O = Object(L.a)(e), x = Object(B.r)(e), v = Object(F.c)(e), _ = Object(F.g)(e), E = _ === b.qb.LoggedOutUiOnly || _ === b.qb.LoggedOutHomeDefpop, C = Object(G.b)(e), {
 						adsSeenCount: j,
 						totalPostsSeenCount: k,
 						sessionStartTime: S
@@ -5227,4 +5227,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.3adb09531819930ff3a9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.7a21e41cc3b1d0f3c8ae.js.map

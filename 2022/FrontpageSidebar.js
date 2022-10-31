@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.f7925a4a4e938e7d87e7.js
-// Retrieved at 10/31/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.1f2b21d8dc406cf11c4a.js
+// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -1206,7 +1206,7 @@
 				}).apply(this, arguments)
 			}
 			const k = Object(i.c)({
-					isOnLeaderboardPage: e => !!Object(_.h)(e),
+					isOnLeaderboardPage: e => !!Object(_.i)(e),
 					isOnFrontpage: e => !!Object(_.g)(e)
 				}),
 				x = Object(a.b)(k, e => ({
@@ -2230,4 +2230,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.f7925a4a4e938e7d87e7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.1f2b21d8dc406cf11c4a.js.map

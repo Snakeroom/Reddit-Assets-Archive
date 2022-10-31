@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.efbbf236ececf9b1be6b.js
-// Retrieved at 10/31/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.82ff062570e410524b30.js
+// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit", "ModListing~Reddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -6838,7 +6838,7 @@
 				isSearchDropdownOpened: e => e.search.isDropdownOpen,
 				isHeaderDropdownOpened: e => e.header.isSubscriptionsDropdownOpen,
 				isLoggedIn: T.R,
-				queryParams: e => Object(P.q)(e)
+				queryParams: e => Object(P.r)(e)
 			}), D = Object(a.b)(R, e => ({
 				closeSearchDropdown: () => e(Object(m.l)()),
 				closeHeaderDropdown: () => e(Object(l.f)()),
@@ -8538,7 +8538,7 @@
 					let {
 						pageLayer: n
 					} = t;
-					return n && Object(p.n)(e, {
+					return n && Object(p.o)(e, {
 						page: n
 					})
 				}, (e, t) => {
@@ -10751,7 +10751,7 @@
 				l = n("./src/reddit/selectors/posts.ts");
 			const u = Object(a.c)({
 					postCount: l.M,
-					previousPageIsOverlay: d.p,
+					previousPageIsOverlay: d.q,
 					tabBadged: e => e.tabBadged
 				}),
 				m = Object(o.b)(u);
@@ -21907,7 +21907,7 @@
 					var t;
 					const n = m(e);
 					if (!n) return !1;
-					let r = Object(c.r)(e),
+					let r = Object(c.s)(e),
 						o = Object(c.d)(e);
 					if ("undefined" != typeof window && !o) {
 						const e = Object(i.a)("subreddit", window.location.href);
@@ -22453,4 +22453,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.efbbf236ececf9b1be6b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.82ff062570e410524b30.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.727f374095ef205dd5bc.js
-// Retrieved at 10/31/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.3c3725cdb8812d7c1df1.js
+// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./node_modules/lodash/map.js": function(t, e, o) {
@@ -377,7 +377,7 @@
 									draftKey: _,
 									upload: P
 								})), e) {
-								const t = Object(lt.i)(v);
+								const t = Object(lt.j)(v);
 								Object(i.a)(!!t)
 							}
 							const n = Object(mt.G)(g(), {
@@ -506,7 +506,7 @@
 								depth: p + 1,
 								upload: S
 							})), e) {
-							const t = Object(lt.i)(g);
+							const t = Object(lt.j)(g);
 							Object(i.a)(!!t)
 						}
 					} else {
@@ -2231,7 +2231,7 @@
 				l = o("./src/telemetry/index.ts"),
 				m = o("./src/reddit/constants/richTextJson.ts");
 			const u = t => {
-					const e = Object(a.o)(t);
+					const e = Object(a.p)(t);
 					return {
 						source: "comment_composer",
 						action: r.c.CLICK,
@@ -2462,4 +2462,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.727f374095ef205dd5bc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.3c3725cdb8812d7c1df1.js.map

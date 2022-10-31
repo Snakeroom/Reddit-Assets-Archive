@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.fe9fe394d4b426d5054d.js
-// Retrieved at 10/31/2022, 12:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.440417ba0acbed63efdf.js
+// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDetailStickyHeader"], {
 		"./src/reddit/actions/shortcuts/close.ts": function(t, e, s) {
@@ -190,14 +190,14 @@
 							post: n
 						} = e;
 						if (!s && !n) return null;
-						const o = n || Object(B.n)(t, {
+						const o = n || Object(B.o)(t, {
 							page: s
 						});
 						return (null == o ? void 0 : o.belongsTo) ? Object(M.Q)(t, {
 							identifier: o.belongsTo
 						}) : null
 					},
-					post: B.n,
+					post: B.o,
 					joinOptimizationsLightboxHeaderEnabled: t => Object(L.a)(t) || Object(L.d)(t) || Object(L.c)(t),
 					isVoteCountAnimation: (t, e) => {
 						let {
@@ -205,7 +205,7 @@
 							post: n
 						} = e;
 						if (!s && !n) return !1;
-						const o = s && Object(B.n)(t, {
+						const o = s && Object(B.o)(t, {
 							page: s
 						}) || n;
 						return !!o && Object(V.g)(t, {
@@ -541,4 +541,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.fe9fe394d4b426d5054d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.440417ba0acbed63efdf.js.map

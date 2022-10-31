@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.7e4a9f9f515f08de7671.js
-// Retrieved at 10/31/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.24ceb54f86b3d8615a4c.js
+// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, r) {
@@ -1065,7 +1065,7 @@
 				}).apply(this, arguments)
 			}
 			const k = Object(i.c)({
-					isOnLeaderboardPage: e => !!Object(y.h)(e),
+					isOnLeaderboardPage: e => !!Object(y.i)(e),
 					isOnFrontpage: e => !!Object(y.g)(e)
 				}),
 				x = Object(a.b)(k, e => ({
@@ -2393,7 +2393,7 @@
 						return Object(R.T)(e, r)
 					},
 					subreddits: R.fb,
-					isOnLeaderboardPage: e => !!Object(D.h)(e),
+					isOnLeaderboardPage: e => !!Object(D.i)(e),
 					isOnFrontpage: e => !!Object(D.g)(e)
 				}),
 				z = Object(o.b)(H, e => ({
@@ -2814,4 +2814,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.7e4a9f9f515f08de7671.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.24ceb54f86b3d8615a4c.js.map

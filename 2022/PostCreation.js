@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.50978756027e7e0ad757.js
-// Retrieved at 10/31/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.5fc5bf437b705eb54611.js
+// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -1048,7 +1048,7 @@
 									draftKey: k,
 									upload: M
 								})), t) {
-								const e = Object(le.i)(O);
+								const e = Object(le.j)(O);
 								Object(i.a)(!!e)
 							}
 							const o = Object(ue.G)(C(), {
@@ -1177,7 +1177,7 @@
 								depth: p + 1,
 								upload: j
 							})), t) {
-							const e = Object(le.i)(C);
+							const e = Object(le.j)(C);
 							Object(i.a)(!!e)
 						}
 					} else {
@@ -23867,7 +23867,7 @@
 						includeUserProfile: o,
 						substring: r.rawString
 					})
-				}, e => Object(Q.qb)(e) && Object(V.j)(e), (e, t, n) => {
+				}, e => Object(Q.qb)(e) && Object(V.k)(e), (e, t, n) => {
 					const {
 						suggestedItems: o,
 						fallbackItems: r,
@@ -26113,7 +26113,7 @@
 				l = n("./src/telemetry/index.ts"),
 				u = n("./src/reddit/constants/richTextJson.ts");
 			const m = e => {
-					const t = Object(c.o)(e);
+					const t = Object(c.p)(e);
 					return {
 						source: "comment_composer",
 						action: r.c.CLICK,
@@ -27002,7 +27002,7 @@
 					noun: r.collectionCancel
 				}),
 				x = () => e => {
-					const t = Object(a.o)(e) || void 0;
+					const t = Object(a.p)(e) || void 0;
 					return {
 						...m(e, t),
 						source: o.collectionComposer,
@@ -27038,7 +27038,7 @@
 					noun: r.startEvent
 				}),
 				j = () => e => {
-					const t = Object(a.o)(e) || void 0;
+					const t = Object(a.p)(e) || void 0;
 					return {
 						...m(e, t),
 						source: o.collectionComposer,
@@ -27107,18 +27107,18 @@
 					postEvent: v(e)
 				}),
 				g = e => t => ({
-					..._(t, Object(d.o)(t)),
+					..._(t, Object(d.p)(t)),
 					source: o.postComposer,
 					noun: "apply",
 					postComposer: y(e)
 				}),
 				C = () => e => ({
-					..._(e, Object(d.o)(e)),
+					..._(e, Object(d.p)(e)),
 					noun: "cancel",
 					actionInfo: p(e)
 				}),
 				E = e => t => ({
-					..._(t, Object(d.o)(t)),
+					..._(t, Object(d.p)(t)),
 					noun: "delete",
 					actionInfo: p(t),
 					postComposer: x(t),
@@ -39226,4 +39226,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.50978756027e7e0ad757.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.5fc5bf437b705eb54611.js.map

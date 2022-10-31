@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.31b41f162f0878c27d3c.js
-// Retrieved at 10/31/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.7550698726b56c28958b.js
+// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./node_modules/lodash/map.js": function(e, t, o) {
@@ -392,7 +392,7 @@
 									draftKey: v,
 									upload: N
 								})), t) {
-								const e = Object(le.i)(S);
+								const e = Object(le.j)(S);
 								Object(i.a)(!!e)
 							}
 							const n = Object(me.G)(j(), {
@@ -521,7 +521,7 @@
 								depth: p + 1,
 								upload: R
 							})), t) {
-							const e = Object(le.i)(j);
+							const e = Object(le.j)(j);
 							Object(i.a)(!!e)
 						}
 					} else {
@@ -2675,7 +2675,7 @@
 				l = o("./src/telemetry/index.ts"),
 				m = o("./src/reddit/constants/richTextJson.ts");
 			const u = e => {
-					const t = Object(a.o)(e);
+					const t = Object(a.p)(e);
 					return {
 						source: "comment_composer",
 						action: s.c.CLICK,
@@ -2948,4 +2948,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.31b41f162f0878c27d3c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.7550698726b56c28958b.js.map

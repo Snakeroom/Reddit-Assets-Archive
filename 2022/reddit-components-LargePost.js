@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.478e67ecbc941da8158a.js
-// Retrieved at 10/31/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.572807d5cbd596d8a74b.js
+// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -981,7 +981,7 @@
 									draftKey: y,
 									upload: A
 								})), t) {
-								const e = Object(le.i)(j);
+								const e = Object(le.j)(j);
 								Object(i.a)(!!e)
 							}
 							const n = Object(ue.G)(v(), {
@@ -1110,7 +1110,7 @@
 								depth: p + 1,
 								upload: k
 							})), t) {
-							const e = Object(le.i)(v);
+							const e = Object(le.j)(v);
 							Object(i.a)(!!e)
 						}
 					} else {
@@ -8231,7 +8231,7 @@
 				l = s("./src/telemetry/index.ts"),
 				u = s("./src/reddit/constants/richTextJson.ts");
 			const m = e => {
-					const t = Object(c.o)(e);
+					const t = Object(c.p)(e);
 					return {
 						source: "comment_composer",
 						action: o.c.CLICK,
@@ -10464,4 +10464,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.478e67ecbc941da8158a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.572807d5cbd596d8a74b.js.map

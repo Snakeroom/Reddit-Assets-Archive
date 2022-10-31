@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.5776e79d493984509bd5.js
-// Retrieved at 10/31/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.92dcb74b0cb699ebab83.js
+// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3678,7 +3678,7 @@
 									draftKey: j,
 									upload: N
 								})), t) {
-								const e = Object(le.i)(y);
+								const e = Object(le.j)(y);
 								Object(i.a)(!!e)
 							}
 							const s = Object(ue.G)(g(), {
@@ -3807,7 +3807,7 @@
 								depth: p + 1,
 								upload: k
 							})), t) {
-							const e = Object(le.i)(g);
+							const e = Object(le.j)(g);
 							Object(i.a)(!!e)
 						}
 					} else {
@@ -6533,7 +6533,7 @@
 						};
 					return a ? (l.listingBelow = i || s, l.postFeed = l.listingBelow) : c ? l.nsfwListingBelow = !0 : l.postFeed = (i || s) && (!Object(B.i)(o) && !Object(qe.d)(t, {
 						postId: n
-					}) && !!o || !Object(Q.i)(t) && Object(H.e)(t)), e && (l.postQASchema = Object(H.d)(t)), d && (l.listingBelow = !0), l
+					}) && !!o || !Object(Q.j)(t) && Object(H.e)(t)), e && (l.postQASchema = Object(H.d)(t)), d && (l.listingBelow = !0), l
 				},
 				Ct = (e, t) => e || t.postFeed || t.listingBelow || t.nsfwListingBelow || t.postQASchema,
 				ht = e => ({
@@ -6588,7 +6588,7 @@
 							isLoggedIn: B
 						})]);
 						const s = n();
-						if (!Object(Q.i)(s)) {
+						if (!Object(Q.j)(s)) {
 							Object(Je.a)(s) && t(Object(w.b)(e))
 						}
 						Object(ee.i)(s, e) && await t(Object(c.c)(m))
@@ -6722,7 +6722,7 @@
 						R = !!_.platform.lastPage;
 					if ((P || k && !w) && !(D && R)) {
 						if (k && !_.sidebarPromotedPosts.firstFetch) {
-							const e = Object(Q.i)(_) ? le.a.COMMENTS_OVERLAY : le.a.COMMENTS;
+							const e = Object(Q.j)(_) ? le.a.COMMENTS_OVERLAY : le.a.COMMENTS;
 							window.addEventListener("load", () => {
 								r(Object(ie.b)(e))
 							})
@@ -6861,7 +6861,7 @@
 						s && z.body.comments && Object.keys(z.body.comments).length < s.numComments ? r(Ot(e, t, n)) : z.ok && r(xt({
 							key: x
 						}));
-						const o = Object(Q.i)(_) ? le.a.COMMENTS_OVERLAY : le.a.COMMENTS;
+						const o = Object(Q.j)(_) ? le.a.COMMENTS_OVERLAY : le.a.COMMENTS;
 						r(Object(ie.b)(o))
 					}
 					if (z.ok) {
@@ -24624,7 +24624,7 @@
 					let {
 						pageLayer: n
 					} = t;
-					return n && Object(p.n)(e, {
+					return n && Object(p.o)(e, {
 						page: n
 					})
 				}, (e, t) => {
@@ -32265,7 +32265,7 @@
 				r = n("./src/reddit/selectors/platform.ts"),
 				o = n("./src/reddit/selectors/telemetry.ts");
 			const i = e => {
-					const t = Object(r.o)(e);
+					const t = Object(r.p)(e);
 					return {
 						actionInfo: Object(o.d)(e),
 						post: t && Object(o.K)(e, t) || null,
@@ -32631,7 +32631,7 @@
 				l = n("./src/telemetry/index.ts"),
 				u = n("./src/reddit/constants/richTextJson.ts");
 			const m = e => {
-					const t = Object(c.o)(e);
+					const t = Object(c.p)(e);
 					return {
 						source: "comment_composer",
 						action: r.c.CLICK,
@@ -34098,7 +34098,7 @@
 					subreddit: a.kb(e)
 				}),
 				d = (e, t, n) => s => ({
-					source: Object(i.i)(s) || n ? "post_lightbox" : "post_detail",
+					source: Object(i.j)(s) || n ? "post_lightbox" : "post_detail",
 					action: "click",
 					noun: t,
 					...c(s),
@@ -34123,7 +34123,7 @@
 				u = (e, t) => n => {
 					const s = a.k(n);
 					return s ? d(s.id, e, t)(n) : {
-						source: Object(i.i)(n) || t ? "post_lightbox" : "post_detail",
+						source: Object(i.j)(n) || t ? "post_lightbox" : "post_detail",
 						action: "click",
 						noun: e,
 						...c(n)
@@ -44842,4 +44842,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.5776e79d493984509bd5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.92dcb74b0cb699ebab83.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.178b1a0538b79b840202.js
-// Retrieved at 10/31/2022, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a13370df59e0d1048984.js
+// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3650,11 +3650,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("177419"),
+				buildNumber: Object(r.c)("177424"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1667251006"),
+				buildTimestamp: Object(r.b)("1667253349"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6390,14 +6390,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c0c118fb098a302cd30c400b1bd76e7936005065a-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c44112191b708d12db6f1760ea4441e5681623dc9-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "0c118fb098a302cd30c400b1bd76e7936005065a-production",
+						release: "44112191b708d12db6f1760ea4441e5681623dc9-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6933,7 +6933,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "0c118fb098a302cd30c400b1bd76e7936005065a-production",
+							releaseClient: "44112191b708d12db6f1760ea4441e5681623dc9-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -8966,14 +8966,14 @@
 					} = n;
 					var o;
 					const d = i(),
-						c = Object(_.q)(d),
+						c = Object(_.r)(d),
 						p = Object(l.b)(d, e),
 						h = p.length;
 					if (0 === h) return;
 					switch (e) {
 						case u.a.COMMENTS:
 						case u.a.COMMENTS_OVERLAY: {
-							const e = Object(_.n)(d, {
+							const e = Object(_.o)(d, {
 								page: d.platform.currentPage
 							});
 							if (!e || e.belongsTo.type === r.a.PROFILE) return;
@@ -9012,7 +9012,7 @@
 					} = n;
 					var s;
 					const o = i(),
-						d = Object(_.q)(o),
+						d = Object(_.r)(o),
 						l = await a({
 							context: r(),
 							count: 1,
@@ -9026,7 +9026,7 @@
 						apiContext: r
 					} = n;
 					const a = i(),
-						l = Object(_.q)(a),
+						l = Object(_.r)(a),
 						u = Object(_.d)(a),
 						c = await (async e => {
 							let {
@@ -11630,7 +11630,7 @@
 							} = o(),
 							E = i && i.match && i.match.queryParams,
 							S = E && E[`experiment_${u.ff}`];
-						Object(h.g)(o()), e.pathname.split("/").some(e => "comments" === e), Object(f.i)(o());
+						Object(h.g)(o()), e.pathname.split("/").some(e => "comments" === e), Object(f.j)(o());
 						s(F({
 							action: t,
 							listingKey: w,
@@ -14916,7 +14916,7 @@
 						surveyLastSeenTime: n
 					}, !1))
 				}, O = Object(n.a)(c.a), I = Object(n.a)(c.k), R = Object(n.a)(c.e), F = Object(n.a)(c.l), C = () => async (e, t) => {
-					const i = Object(u.q)(t());
+					const i = Object(u.r)(t());
 					!!i && "true" === i[o.H] && (e(F()), Object(r.a)(window.location.href, [o.H]))
 				}, N = () => async (e, t, i) => {
 					let {
@@ -15635,27 +15635,27 @@
 					})(n, e, t)
 				}, ne = (e, t) => async (i, n) => {
 					const r = n();
-					r.posts.video.autoPlayed[e] && Object(_.k)(r) && (c.f(r, e), void 0 !== t && i(ee({
+					r.posts.video.autoPlayed[e] && Object(_.l)(r) && (c.f(r, e), void 0 !== t && i(ee({
 						postId: e,
 						isBuffering: t
 					})))
 				}, re = e => async (t, i) => {
 					const n = i();
-					n.posts.video.autoPlayed[e] && Object(_.k)(n) && c.j(n, e)
+					n.posts.video.autoPlayed[e] && Object(_.l)(n) && c.j(n, e)
 				}, se = (e, t) => async (i, n) => {
 					i(H({
 						postId: e,
 						time: t
 					}));
 					const r = n();
-					Object(_.k)(r) && c.h(r, e)
+					Object(_.l)(r) && c.h(r, e)
 				}, oe = (e, t) => async (i, n) => {
 					i(K({
 						postId: e,
 						time: t
 					}));
 					const r = n();
-					Object(_.k)(r) && c.a(r, e)
+					Object(_.l)(r) && c.a(r, e)
 				}, de = e => async (t, i) => {
 					const n = i(),
 						r = n.posts.video.autoPlayed[e],
@@ -15664,14 +15664,14 @@
 						postId: e
 					})), t(Z({
 						postId: e
-					})), !s && r && Object(_.k)(n) && c.e(n, e)
+					})), !s && r && Object(_.l)(n) && c.e(n, e)
 				}, ae = e => async (t, i) => {
 					const n = i(),
 						r = n.posts.video.autoPlayed[e],
 						s = n.posts.video.consumed[e];
 					t(q({
 						postId: e
-					})), r && Object(_.k)(n) && !s && c.b(n, e)
+					})), r && Object(_.l)(n) && !s && c.b(n, e)
 				}, le = Object(n.a)(A), ue = (e, t) => async (i, n) => {
 					i(P({
 						postId: e,
@@ -22346,7 +22346,7 @@
 						case r.a.SUBREDDIT:
 						case r.a.COMMENTS_OVERLAY:
 						case r.a.COMMENTS: {
-							const t = Object(s.i)(e);
+							const t = Object(s.j)(e);
 							return [o(n.e.ABOVE_THE_FOLD, t, 0), o(n.e.BELOW_THE_FOLD, t, 1)]
 						}
 						case r.a.FRONTPAGE:
@@ -22649,7 +22649,7 @@
 						...r,
 						isOverride: !1
 					});
-					const o = Object(l.o)(e),
+					const o = Object(l.p)(e),
 						d = o ? u.K(e, o) : void 0,
 						c = {
 							...u.ab(e),
@@ -37547,7 +37547,7 @@
 				l = i("./src/reddit/selectors/platform.ts"),
 				u = i("./src/reddit/selectors/subreddit.ts");
 			const c = 10,
-				_ = Object(n.a)(o.f, a.d, l.l, l.f, u.o, (e, t, i, n, r) => i || n ? e && !t && !!r : e && !t),
+				_ = Object(n.a)(o.f, a.d, l.m, l.f, u.o, (e, t, i, n, r) => i || n ? e && !t && !!r : e && !t),
 				m = Object(n.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: _,
 					experimentName: r.Qb,
@@ -37666,7 +37666,7 @@
 					const n = Object(u.V)(e, i);
 					return n && n.displayText || i && i.author && Object(o.e)(i.author)
 				},
-				h = (e, t, i) => Object(_.f)(e) && !Object(_.i)(e) && !!t && !!t.title && !t.isNSFW && !!t.media && (Object(d.F)(t.media) || Object(d.K)(t.media)) && (e => !!e && !!e.media && (Object(d.F)(e.media) && (e => /https?:\/\/i\.redd\.it/.test(e))(e.media.content) || Object(d.K)(e.media) && e.media.richtextContent && e.media.richtextContent.document && e.media.richtextContent.document.some(e => {
+				h = (e, t, i) => Object(_.f)(e) && !Object(_.j)(e) && !!t && !!t.title && !t.isNSFW && !!t.media && (Object(d.F)(t.media) || Object(d.K)(t.media)) && (e => !!e && !!e.media && (Object(d.F)(e.media) && (e => /https?:\/\/i\.redd\.it/.test(e))(e.media.content) || Object(d.K)(e.media) && e.media.richtextContent && e.media.richtextContent.document && e.media.richtextContent.document.some(e => {
 					let {
 						e: t
 					} = e;
@@ -38725,25 +38725,25 @@
 			"use strict";
 			i.d(t, "b", (function() {
 				return d
-			})), i.d(t, "m", (function() {
+			})), i.d(t, "n", (function() {
 				return a
-			})), i.d(t, "r", (function() {
+			})), i.d(t, "s", (function() {
 				return l
 			})), i.d(t, "g", (function() {
 				return u
-			})), i.d(t, "k", (function() {
-				return c
 			})), i.d(t, "l", (function() {
+				return c
+			})), i.d(t, "m", (function() {
 				return _
-			})), i.d(t, "p", (function() {
+			})), i.d(t, "q", (function() {
 				return m
-			})), i.d(t, "i", (function() {
+			})), i.d(t, "j", (function() {
 				return p
 			})), i.d(t, "f", (function() {
 				return h
-			})), i.d(t, "j", (function() {
+			})), i.d(t, "k", (function() {
 				return f
-			})), i.d(t, "q", (function() {
+			})), i.d(t, "r", (function() {
 				return b
 			})), i.d(t, "c", (function() {
 				return g
@@ -38751,16 +38751,18 @@
 				return v
 			})), i.d(t, "e", (function() {
 				return w
-			})), i.d(t, "n", (function() {
+			})), i.d(t, "o", (function() {
 				return y
 			})), i.d(t, "a", (function() {
 				return E
-			})), i.d(t, "s", (function() {
+			})), i.d(t, "t", (function() {
 				return S
-			})), i.d(t, "o", (function() {
+			})), i.d(t, "p", (function() {
 				return T
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "i", (function() {
 				return O
+			})), i.d(t, "h", (function() {
+				return I
 			}));
 			var n = i("./src/lib/constants/index.ts"),
 				r = i("./src/lib/objectSelector/index.ts"),
@@ -38829,6 +38831,10 @@
 				O = e => {
 					var t, i, r;
 					return (null === (r = null === (i = null === (t = e.platform) || void 0 === t ? void 0 : t.currentPage) || void 0 === i ? void 0 : i.routeMatch) || void 0 === r ? void 0 : r.route.chunk) === n.u.SUBREDDIT_LEADERBOARD
+				},
+				I = e => {
+					var t, i, r;
+					return (null === (r = null === (i = null === (t = e.platform) || void 0 === t ? void 0 : t.currentPage) || void 0 === i ? void 0 : i.routeMatch) || void 0 === r ? void 0 : r.route.chunk) === n.u.HAPPENING_NOW
 				}
 		},
 		"./src/reddit/selectors/poll/index.ts": function(e, t, i) {
@@ -41175,7 +41181,7 @@
 				p = i("./src/reddit/selectors/user.ts");
 			const h = e => e.seo.crawler,
 				f = e => e.meta.crawler === n.GoogleBot,
-				b = Object(r.a)(p.Q, m.Q, c.i, e => Object(u.e)(e), e => {
+				b = Object(r.a)(p.Q, m.Q, c.j, e => Object(u.e)(e), e => {
 					const t = h(e);
 					return t && t.name || null
 				}, (e, t, i, n, r) => Boolean(r && !e && !i && n && !Object(l.i)(t))),
@@ -43168,7 +43174,7 @@
 				yt = (e, t) => {
 					const i = Object(B.S)(e, {});
 					let n;
-					Object(oe.f)(e) && (n = Object(oe.i)(e) ? "lightbox" : "post_detail");
+					Object(oe.f)(e) && (n = Object(oe.j)(e) ? "lightbox" : "post_detail");
 					let r = "default";
 					return e.user && e.user.prefs && e.user.prefs.nightmode && (r = "nightmode"), {
 						layout: i,
@@ -43593,12 +43599,12 @@
 				};
 				let o, d, a;
 				const l = Object(oe.b)(e),
-					u = Object(oe.m)(e);
+					u = Object(oe.n)(e);
 				Object(B.M)(l) ? ({
 					multiredditName: o,
 					subredditName: d,
 					username: a
-				} = null !== (n = null == l ? void 0 : l.urlParams) && void 0 !== n ? n : {}) : Object(B.x)(l) && Object(oe.i)(e) && Object(B.M)(u) && ({
+				} = null !== (n = null == l ? void 0 : l.urlParams) && void 0 !== n ? n : {}) : Object(B.x)(l) && Object(oe.j)(e) && Object(B.M)(u) && ({
 					multiredditName: o,
 					subredditName: d,
 					username: a
@@ -44361,7 +44367,7 @@
 				Te = Object(p.a)(e => {
 					if (!e.user || !e.user.account) return;
 					const t = a()(e.user.account, ["hasUnreadOldModmail", "hasUnreadMail", "hasUnreadModmail", "hasUnreadMessages", "hasUnreadNotifs", "inboxCount"]);
-					return e.platform.currentPage && e.platform.currentPage.routeMatch && Object(w.r)(e) === _.Sb.INBOX_PAGES && e.user.prefs.markMessagesRead && (t.inboxCount = 0), t
+					return e.platform.currentPage && e.platform.currentPage.routeMatch && Object(w.s)(e) === _.Sb.INBOX_PAGES && e.user.prefs.markMessagesRead && (t.inboxCount = 0), t
 				}),
 				Oe = (e, t) => {
 					const i = L(e);
@@ -44396,7 +44402,7 @@
 					return Object(E.a)(e) - parseInt(e.user.loid.loidCreated) < _.E
 				},
 				je = e => {
-					const t = Object(w.q)(e);
+					const t = Object(w.r)(e);
 					return Boolean((null == t ? void 0 : t[b.v]) && Object(h.a)(t[b.v]))
 				},
 				Pe = e => t => {
@@ -50346,4 +50352,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.178b1a0538b79b840202.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a13370df59e0d1048984.js.map

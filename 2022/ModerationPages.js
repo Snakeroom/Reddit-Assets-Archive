@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.888770152132783199b2.js
-// Retrieved at 10/31/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.2663f703a2975f222629.js
+// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -2174,7 +2174,7 @@
 									draftKey: j,
 									upload: R
 								})), t) {
-								const e = Object(le.i)(y);
+								const e = Object(le.j)(y);
 								Object(i.a)(!!e)
 							}
 							const s = Object(ue.G)(g(), {
@@ -2303,7 +2303,7 @@
 								depth: p + 1,
 								upload: k
 							})), t) {
-							const e = Object(le.i)(g);
+							const e = Object(le.j)(g);
 							Object(i.a)(!!e)
 						}
 					} else {
@@ -8132,7 +8132,7 @@
 						if (Object(he.e)(K, {
 								pageName: J
 							}) || s && !r) return;
-						if (!Object(_e.p)(K)) {
+						if (!Object(_e.q)(K)) {
 							const s = Object(T.e)(e, J, {
 								...k,
 								subreddit: C
@@ -9031,7 +9031,7 @@
 					r = Object(ne.e)(s);
 				if (!r || r.type !== Z.g.Public) return;
 				const o = r.name,
-					i = Object(ne.m)(s),
+					i = Object(ne.n)(s),
 					a = Object(W.z)(s, {
 						subredditName: o
 					});
@@ -9406,7 +9406,7 @@
 				Je.layout = pe.e[Object(be.S)(Te, {})], Ye && (Je.forceGeopopular = !0), a(Nt({
 					key: e
 				}));
-				const Xe = !ze && Object(ne.l)(Te) && Object(We.b)(Te),
+				const Xe = !ze && Object(ne.m)(Te) && Object(We.b)(Te),
 					$e = Ye && (Et(Te) || yt(Te)),
 					et = Ye && Ct(Te);
 				let tt, nt;
@@ -46371,7 +46371,7 @@
 					let {
 						pageLayer: n
 					} = t;
-					return n && Object(p.n)(e, {
+					return n && Object(p.o)(e, {
 						page: n
 					})
 				}, (e, t) => {
@@ -56322,7 +56322,7 @@
 						recentPostIds: C,
 						sort: j,
 						t: k
-					} = n, I = Object(E.ab)(e), S = Object(x.q)(e), w = Object(o.a)(t), T = Object(i.a)(t), N = Object(O.X)(e, {
+					} = n, I = Object(E.ab)(e), S = Object(x.r)(e), w = Object(o.a)(t), T = Object(i.a)(t), N = Object(O.X)(e, {
 						subredditId: Object(O.I)(e, t)
 					}).length > 0, P = (null === (r = e.user.account) || void 0 === r ? void 0 : r.username) || (null === (a = e.user.account) || void 0 === a ? void 0 : a.displayText), R = Object(E.p)(e), A = Object(E.ob)(e), {
 						adsSeenCount: M,
@@ -59980,7 +59980,7 @@
 				l = n("./src/telemetry/index.ts"),
 				u = n("./src/reddit/constants/richTextJson.ts");
 			const m = e => {
-					const t = Object(d.o)(e);
+					const t = Object(d.p)(e);
 					return {
 						source: "comment_composer",
 						action: r.c.CLICK,
@@ -61928,7 +61928,7 @@
 					subreddit: a.kb(e)
 				}),
 				c = (e, t, n) => s => ({
-					source: Object(i.i)(s) || n ? "post_lightbox" : "post_detail",
+					source: Object(i.j)(s) || n ? "post_lightbox" : "post_detail",
 					action: "click",
 					noun: t,
 					...d(s),
@@ -61953,7 +61953,7 @@
 				u = (e, t) => n => {
 					const s = a.k(n);
 					return s ? c(s.id, e, t)(n) : {
-						source: Object(i.i)(n) || t ? "post_lightbox" : "post_detail",
+						source: Object(i.j)(n) || t ? "post_lightbox" : "post_detail",
 						action: "click",
 						noun: e,
 						...d(n)
@@ -62945,7 +62945,7 @@
 					noun: r.collectionCancel
 				}),
 				O = () => e => {
-					const t = Object(a.o)(e) || void 0;
+					const t = Object(a.p)(e) || void 0;
 					return {
 						...m(e, t),
 						source: s.collectionComposer,
@@ -62981,7 +62981,7 @@
 					noun: r.startEvent
 				}),
 				k = () => e => {
-					const t = Object(a.o)(e) || void 0;
+					const t = Object(a.p)(e) || void 0;
 					return {
 						...m(e, t),
 						source: s.collectionComposer,
@@ -63539,18 +63539,18 @@
 					postEvent: x(e)
 				}),
 				_ = e => t => ({
-					...C(t, Object(c.o)(t)),
+					...C(t, Object(c.p)(t)),
 					source: s.postComposer,
 					noun: "apply",
 					postComposer: E(e)
 				}),
 				g = () => e => ({
-					...C(e, Object(c.o)(e)),
+					...C(e, Object(c.p)(e)),
 					noun: "cancel",
 					actionInfo: p(e)
 				}),
 				v = e => t => ({
-					...C(t, Object(c.o)(t)),
+					...C(t, Object(c.p)(t)),
 					noun: "delete",
 					actionInfo: p(t),
 					postComposer: O(t),
@@ -76114,7 +76114,7 @@
 				b = n("./src/reddit/selectors/platform.ts"),
 				f = n("./src/reddit/selectors/user.ts");
 			const h = e => {
-					const t = Object(b.q)(e);
+					const t = Object(b.r)(e);
 					return Boolean((null == t ? void 0 : t[a.G]) && Object(s.a)(t[a.G]))
 				},
 				_ = e => e.onboarding.shouldSkipOnboardingState,
@@ -77712,4 +77712,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.888770152132783199b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.2663f703a2975f222629.js.map

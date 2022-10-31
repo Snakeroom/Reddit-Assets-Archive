@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.d0be1af2e5b0c636fa5d.js
-// Retrieved at 10/31/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.207e5e89489e6879fdd9.js
+// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1416,7 +1416,7 @@
 						};
 					return i ? (l.listingBelow = a || o, l.postFeed = l.listingBelow) : d ? l.nsfwListingBelow = !0 : l.postFeed = (a || o) && (!Object(B.i)(r) && !Object(Ke.d)(t, {
 						postId: s
-					}) && !!r || !Object(z.i)(t) && Object(q.e)(t)), e && (l.postQASchema = Object(q.d)(t)), c && (l.listingBelow = !0), l
+					}) && !!r || !Object(z.j)(t) && Object(q.e)(t)), e && (l.postQASchema = Object(q.d)(t)), c && (l.listingBelow = !0), l
 				},
 				vt = (e, t) => e || t.postFeed || t.listingBelow || t.nsfwListingBelow || t.postQASchema,
 				gt = e => ({
@@ -1471,7 +1471,7 @@
 							isLoggedIn: B
 						})]);
 						const o = s();
-						if (!Object(z.i)(o)) {
+						if (!Object(z.j)(o)) {
 							Object(Ye.a)(o) && t(Object(I.b)(e))
 						}
 						Object(ee.i)(o, e) && await t(Object(d.c)(u))
@@ -1605,7 +1605,7 @@
 						D = !!S.platform.lastPage;
 					if ((L || x && !I) && !(A && D)) {
 						if (x && !S.sidebarPromotedPosts.firstFetch) {
-							const e = Object(z.i)(S) ? le.a.COMMENTS_OVERLAY : le.a.COMMENTS;
+							const e = Object(z.j)(S) ? le.a.COMMENTS_OVERLAY : le.a.COMMENTS;
 							window.addEventListener("load", () => {
 								n(Object(ae.b)(e))
 							})
@@ -1744,7 +1744,7 @@
 						o && J.body.comments && Object.keys(J.body.comments).length < o.numComments ? n(_t(e, t, s)) : J.ok && n(wt({
 							key: w
 						}));
-						const r = Object(z.i)(S) ? le.a.COMMENTS_OVERLAY : le.a.COMMENTS;
+						const r = Object(z.j)(S) ? le.a.COMMENTS_OVERLAY : le.a.COMMENTS;
 						n(Object(ae.b)(r))
 					}
 					if (J.ok) {
@@ -6897,7 +6897,7 @@
 					currentHlsUrl: Qe.b,
 					inViewerFeedTheMeter: (e, t) => Object(Ge.f)(e, t, Qe.d),
 					isIntroInProgress: Xe.b,
-					isOverlayOpen: We.i,
+					isOverlayOpen: We.j,
 					isReportFlowOpen: (e, t) => {
 						let {
 							streamIdFromPath: s
@@ -8037,4 +8037,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.d0be1af2e5b0c636fa5d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.207e5e89489e6879fdd9.js.map

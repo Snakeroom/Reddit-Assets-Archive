@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.527f3c7a1080597332e0.js
-// Retrieved at 10/31/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.ee9e1edb7dc9d24cab6c.js
+// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2129,7 +2129,7 @@
 					noun: s.collectionCancel
 				}),
 				v = () => e => {
-					const t = Object(a.o)(e) || void 0;
+					const t = Object(a.p)(e) || void 0;
 					return {
 						...m(e, t),
 						source: o.collectionComposer,
@@ -2165,7 +2165,7 @@
 					noun: s.startEvent
 				}),
 				j = () => e => {
-					const t = Object(a.o)(e) || void 0;
+					const t = Object(a.p)(e) || void 0;
 					return {
 						...m(e, t),
 						source: o.collectionComposer,
@@ -2234,18 +2234,18 @@
 					postEvent: k(e)
 				}),
 				x = e => t => ({
-					...w(t, Object(d.o)(t)),
+					...w(t, Object(d.p)(t)),
 					source: o.postComposer,
 					noun: "apply",
 					postComposer: E(e)
 				}),
 				_ = () => e => ({
-					...w(e, Object(d.o)(e)),
+					...w(e, Object(d.p)(e)),
 					noun: "cancel",
 					actionInfo: p(e)
 				}),
 				g = e => t => ({
-					...w(t, Object(d.o)(t)),
+					...w(t, Object(d.p)(t)),
 					noun: "delete",
 					actionInfo: p(t),
 					postComposer: v(t),
@@ -2772,4 +2772,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.527f3c7a1080597332e0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.ee9e1edb7dc9d24cab6c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.3457cf0336ad6b7d87a6.js
-// Retrieved at 10/31/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.704f59205a417d241539.js
+// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -736,7 +736,7 @@
 						sort: d,
 						t: u,
 						correlationId: m
-					} = t, p = Object(F.i)(e), f = Object(D.ab)(e) || Object(D.R)(e), v = Object(L.a)(e), _ = Object(B.q)(e), x = Object(M.c)(e), y = Object(M.g)(e), E = y === b.qb.LoggedOutUiOnly || y === b.qb.LoggedOutHomeDefpop, k = Object(R.b)(e), {
+					} = t, p = Object(F.i)(e), f = Object(D.ab)(e) || Object(D.R)(e), v = Object(L.a)(e), _ = Object(B.r)(e), x = Object(M.c)(e), y = Object(M.g)(e), E = y === b.qb.LoggedOutUiOnly || y === b.qb.LoggedOutHomeDefpop, k = Object(R.b)(e), {
 						adsSeenCount: O,
 						totalPostsSeenCount: j,
 						sessionStartTime: N
@@ -5557,7 +5557,7 @@
 				d = n("./src/reddit/selectors/posts.ts");
 			const u = Object(c.c)({
 					postCount: d.M,
-					previousPageIsOverlay: l.p,
+					previousPageIsOverlay: l.q,
 					tabBadged: e => e.tabBadged
 				}),
 				m = Object(r.b)(u);
@@ -5599,7 +5599,7 @@
 				}).apply(this, arguments)
 			}
 			const _ = Object(c.c)({
-					isOnLeaderboardPage: e => !!Object(f.h)(e),
+					isOnLeaderboardPage: e => !!Object(f.i)(e),
 					isOnFrontpage: e => !!Object(f.g)(e)
 				}),
 				x = Object(r.b)(_, e => ({
@@ -8566,4 +8566,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.3457cf0336ad6b7d87a6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.704f59205a417d241539.js.map
