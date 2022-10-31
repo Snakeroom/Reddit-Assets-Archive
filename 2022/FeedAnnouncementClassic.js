@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeedAnnouncementClassic.9d01382070706b8bbd0e.js
-// Retrieved at 10/27/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeedAnnouncementClassic.375e4ce491440c46788a.js
+// Retrieved at 10/31/2022, 4:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeedAnnouncementClassic"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, a) {
@@ -17,8 +17,8 @@
 				s = a.n(n),
 				c = a("./src/lib/classNames/index.ts"),
 				o = a("./src/lib/lessComponent.tsx"),
-				r = a("./src/chat/controls/Svg/index.m.less"),
-				i = a.n(r);
+				i = a("./src/chat/controls/Svg/index.m.less"),
+				r = a.n(i);
 			t.a = o.a.wrapped(e => {
 				const t = {
 						height: e.height || void 0,
@@ -31,15 +31,15 @@
 					} = e;
 				return s.a.createElement("svg", {
 					className: Object(c.a)(e.className, {
-						[i.a.disable]: a,
-						[i.a.active]: n,
-						[i.a.hover]: !!o
+						[r.a.disable]: a,
+						[r.a.active]: n,
+						[r.a.hover]: !!o
 					}),
 					viewBox: e.viewBox,
 					style: t,
 					onClick: e.onClick
 				}, e.children)
-			}, "Component", i.a)
+			}, "Component", r.a)
 		},
 		"./src/chat/icons/svgs/CaretRight/index.tsx": function(e, t, a) {
 			"use strict";
@@ -81,6 +81,7 @@
 				body: "_3I7gSpPtxc-UKJJ4SHSZzS",
 				fromReddit: "_2KPyW2Ac2eY9kNc1CLw2QK",
 				thumbnailContainer: "_3AmaG4v33kz3LwdWt3RREe",
+				thumbnailIcon: "_8FjFhLPPxOYrJHRr0IgEu",
 				ctaContainer: "_2aJlBdiCPrr6sB1O1CcGLs",
 				ctaText: "_2JeUVsd4VGGDf5hABXR4gh"
 			}
@@ -92,19 +93,37 @@
 				s = a("./node_modules/fbt/lib/FbtPublic.js"),
 				c = a("./src/lib/classNames/index.ts"),
 				o = a("./node_modules/react/index.js"),
-				r = a.n(o),
-				i = a("./src/reddit/components/VerticalVotes/DisabledVerticalVotes.tsx"),
+				i = a.n(o),
+				r = a("./src/reddit/components/VerticalVotes/DisabledVerticalVotes.tsx"),
 				l = a("./src/reddit/components/CompactPost/HorizontalVotes/index.m.less"),
 				d = a.n(l);
-			var m = () => r.a.createElement(i.a, {
+			var m = () => i.a.createElement(r.a, {
 					className: d.a.horizontalVotes,
 					scoreClassName: d.a.customScoreStyles
 				}),
 				u = a("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				b = a("./src/reddit/constants/postLayout.ts"),
-				h = a("./src/reddit/components/FeedAnnouncement/utils.ts"),
-				v = a("./src/reddit/components/FeedAnnouncement/FeedAnnouncementClassic/index.m.less"),
-				_ = a.n(v);
+				h = a("./src/reddit/icons/fonts/index.tsx"),
+				_ = a("./src/reddit/components/FeedAnnouncement/utils.ts"),
+				p = a("./src/reddit/components/FeedAnnouncement/FeedAnnouncementClassic/index.m.less"),
+				v = a.n(p);
+			const x = e => {
+				let {
+					imgUrl: t,
+					isCompact: a
+				} = e;
+				return a ? i.a.createElement("div", {
+					className: Object(c.a)(v.a.thumbnailIcon)
+				}, null == t ? i.a.createElement(h.a, {
+					name: "text_post"
+				}) : i.a.createElement(h.a, {
+					name: "image_post"
+				})) : null == t ? null : i.a.createElement("div", {
+					className: Object(c.a)(v.a.thumbnailContainer)
+				}, i.a.createElement("img", {
+					src: t
+				}))
+			};
 			t.default = function(e) {
 				const {
 					id: t,
@@ -112,57 +131,56 @@
 					title: o,
 					cta: l,
 					url: d,
-					layout: v,
+					layout: h,
 					onClose: p
-				} = e, x = Object(h.a)(t), C = v === b.g.Compact;
-				return r.a.createElement("div", {
+				} = e, C = Object(_.a)(t), E = h === b.g.Compact;
+				return i.a.createElement("div", {
 					className: Object(c.a)({
-						[_.a.container]: !0,
-						[_.a.isCompact]: C
+						[v.a.container]: !0,
+						[v.a.isCompact]: E
 					}),
 					role: "button",
 					onClick: () => window.location.href = d
-				}, r.a.createElement("div", {
+				}, i.a.createElement("div", {
 					className: Object(c.a)({
-						[_.a.leftRail]: !0,
-						[_.a.isCompact]: C
+						[v.a.leftRail]: !0,
+						[v.a.isCompact]: E
 					})
-				}, r.a.createElement("div", {
-					className: Object(c.a)(_.a.horizontalVotes)
-				}, r.a.createElement(m, null)), r.a.createElement("div", {
-					className: Object(c.a)(_.a.verticalVotes)
-				}, r.a.createElement(i.a, null))), r.a.createElement("div", {
-					className: Object(c.a)(_.a.innerContainer)
-				}, null != x ? r.a.createElement("div", {
-					className: Object(c.a)(_.a.thumbnailContainer)
-				}, r.a.createElement("img", {
-					src: x
-				})) : null, r.a.createElement("div", {
-					className: Object(c.a)(_.a.contentContainer)
-				}, r.a.createElement("div", {
-					className: Object(c.a)(_.a.headerContainer)
-				}, r.a.createElement("h3", {
-					className: Object(c.a)(_.a.title, _.a.ellipsis)
-				}, o), r.a.createElement("button", {
-					className: _.a.headerCloseButton,
+				}, i.a.createElement("div", {
+					className: Object(c.a)(v.a.horizontalVotes)
+				}, i.a.createElement(m, null)), i.a.createElement("div", {
+					className: Object(c.a)(v.a.verticalVotes)
+				}, i.a.createElement(r.a, null))), i.a.createElement("div", {
+					className: Object(c.a)(v.a.innerContainer)
+				}, i.a.createElement(x, {
+					imgUrl: C,
+					isCompact: E
+				}), i.a.createElement("div", {
+					className: Object(c.a)(v.a.contentContainer)
+				}, i.a.createElement("div", {
+					className: Object(c.a)(v.a.headerContainer)
+				}, i.a.createElement("h3", {
+					className: Object(c.a)(v.a.title, v.a.ellipsis)
+				}, o), i.a.createElement("button", {
+					className: v.a.headerCloseButton,
 					onClick: e => {
 						e.stopPropagation(), p()
 					},
 					title: s.fbt._("Close", null, {
 						hk: "4CfMwa"
 					})
-				}, r.a.createElement(u.b, null))), r.a.createElement("p", {
-					className: Object(c.a)(_.a.body, _.a.ellipsis)
-				}, a), r.a.createElement("div", {
-					className: Object(c.a)(_.a.fromReddit)
+				}, i.a.createElement(u.b, null))), i.a.createElement("p", {
+					className: Object(c.a)(v.a.body, v.a.ellipsis)
+				}, a), i.a.createElement("div", {
+					className: Object(c.a)(v.a.fromReddit)
 				}, s.fbt._("From Reddit", null, {
 					hk: "1Sazf8"
-				})), null != l ? r.a.createElement("div", {
-					className: Object(c.a)(_.a.ctaContainer)
-				}, r.a.createElement("a", {
+				})), null != l ? i.a.createElement("div", {
+					className: Object(c.a)(v.a.ctaContainer)
+				}, i.a.createElement("a", {
 					href: d,
-					className: Object(c.a)(_.a.ctaText)
-				}, l, r.a.createElement(n.a, {
+					className: Object(c.a)(v.a.ctaText)
+				}, l, i.a.createElement(n.a, {
 					height: "20px"
 				}))) : null)))
 			}
@@ -170,7 +188,7 @@
 		"./src/reddit/components/FeedAnnouncement/utils.ts": function(e, t, a) {
 			"use strict";
 			a.d(t, "a", (function() {
-				return r
+				return i
 			}));
 			a("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = a("./src/config.ts"),
@@ -184,10 +202,10 @@
 						})).ok
 					})(e);
 					return c.set(e, t), await t
-				}, r = e => {
+				}, i = e => {
 					const [t, a] = Object(s.useState)(null);
 					return Object(s.useEffect)(() => {
-						const t = (e => `${n.a.assetPath}/img/announcements/${e}.png`)(e);
+						const t = (e => e.match(/^images_in_comments/) ? `${n.a.assetPath}/img/announcements/images_in_comments.jpg` : `${n.a.assetPath}/img/announcements/${e}.png`)(e);
 						let s = !1;
 						return o(t).then(e => {
 							!1 === s && !0 === e && a(t)
@@ -203,8 +221,8 @@
 				s = a("./node_modules/react/index.js"),
 				c = a.n(s),
 				o = a("./src/lib/classNames/index.ts"),
-				r = a("./src/reddit/components/VerticalVotes/votes.tsx"),
-				i = a("./src/reddit/controls/Score/index.tsx"),
+				i = a("./src/reddit/components/VerticalVotes/votes.tsx"),
+				r = a("./src/reddit/controls/Score/index.tsx"),
 				l = a("./src/reddit/models/Vote/index.ts"),
 				d = a("./src/reddit/components/VerticalVotes/index.m.less"),
 				m = a.n(d);
@@ -223,11 +241,11 @@
 						}),
 						"aria-pressed": !1,
 						disabled: !0
-					}, c.a.createElement(r.d, {
+					}, c.a.createElement(i.d, {
 						compact: !1,
 						voteState: l.a.notVoted,
 						interactive: !1
-					})), c.a.createElement(i.a, {
+					})), c.a.createElement(r.a, {
 						disableInlineColor: !0,
 						className: Object(o.a)(m.a.Score, m.a.disabledScore, t),
 						score: 0,
@@ -240,7 +258,7 @@
 						}),
 						"aria-pressed": !1,
 						disabled: !0
-					}, c.a.createElement(r.c, {
+					}, c.a.createElement(i.c, {
 						compact: !1,
 						voteState: l.a.notVoted,
 						interactive: !1
@@ -251,4 +269,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeedAnnouncementClassic.9d01382070706b8bbd0e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeedAnnouncementClassic.375e4ce491440c46788a.js.map
