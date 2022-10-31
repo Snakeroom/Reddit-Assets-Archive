@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GildModal.b4873aec71978fde53b3.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GildModal.8b8026feb93e8b180088.js
+// Retrieved at 10/31/2022, 12:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GildModal"], {
 		"./src/reddit/components/GildModal/index.m.less": function(e, o, d) {
@@ -33,7 +33,7 @@
 				}).apply(this, arguments)
 			}
 			const O = Object(l.c)({
-					showPurchaseModal: i.u,
+					showPurchaseModal: i.v,
 					thingId: c.d
 				}),
 				g = Object(u.a)(e => {
@@ -62,4 +62,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GildModal.b4873aec71978fde53b3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GildModal.8b8026feb93e8b180088.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.47b0f567c1bad2e3200b.js
-// Retrieved at 10/27/2022, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.4909c9063de06aa35105.js
+// Retrieved at 10/31/2022, 12:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -818,7 +818,7 @@
 				}, Me = Object(be.a)(Te.e), De = e => async (t, n) => {
 					const s = n(),
 						r = s.platform.currentPage.routeMatch.match;
-					Object(me.o)(s) || Object(me.u)(s) || (e || t(Me()), await t(Be(r, !0)))
+					Object(me.p)(s) || Object(me.v)(s) || (e || t(Me()), await t(Be(r, !0)))
 				}, Ve = Object(be.a)(Te.h), qe = Object(be.a)(Te.g), We = Object(be.a)(Te.f), He = e => async (t, n, s) => {
 					let {
 						gqlContext: r
@@ -5227,4 +5227,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.47b0f567c1bad2e3200b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.4909c9063de06aa35105.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7d07eff517f13919ef24.js
-// Retrieved at 10/31/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e98b6afd13fa5a8cfe2f.js
+// Retrieved at 10/31/2022, 12:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3650,11 +3650,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("177337"),
+				buildNumber: Object(r.c)("177341"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1667228472"),
+				buildTimestamp: Object(r.b)("1667230805"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6390,14 +6390,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c7057bb27e01e58b1b23aee37a56acf886c7358ba-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cdbe6379cfbb1d9c23b83557c6a0fec848457c32d-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "7057bb27e01e58b1b23aee37a56acf886c7358ba-production",
+						release: "dbe6379cfbb1d9c23b83557c6a0fec848457c32d-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6933,7 +6933,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "7057bb27e01e58b1b23aee37a56acf886c7358ba-production",
+							releaseClient: "dbe6379cfbb1d9c23b83557c6a0fec848457c32d-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -10107,13 +10107,13 @@
 				return r
 			})), i.d(t, "C", (function() {
 				return s
-			})), i.d(t, "g", (function() {
-				return o
-			})), i.d(t, "A", (function() {
-				return d
-			})), i.d(t, "B", (function() {
-				return a
 			})), i.d(t, "D", (function() {
+				return o
+			})), i.d(t, "g", (function() {
+				return d
+			})), i.d(t, "A", (function() {
+				return a
+			})), i.d(t, "B", (function() {
 				return l
 			})), i.d(t, "E", (function() {
 				return u
@@ -10123,105 +10123,108 @@
 				return _
 			})), i.d(t, "H", (function() {
 				return m
-			})), i.d(t, "K", (function() {
-				return p
-			})), i.d(t, "J", (function() {
-				return h
 			})), i.d(t, "I", (function() {
-				return f
+				return p
 			})), i.d(t, "L", (function() {
+				return h
+			})), i.d(t, "K", (function() {
+				return f
+			})), i.d(t, "J", (function() {
 				return b
 			})), i.d(t, "M", (function() {
 				return g
 			})), i.d(t, "N", (function() {
 				return v
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "O", (function() {
 				return w
-			})), i.d(t, "k", (function() {
+			})), i.d(t, "f", (function() {
 				return y
-			})), i.d(t, "l", (function() {
+			})), i.d(t, "k", (function() {
 				return E
-			})), i.d(t, "m", (function() {
+			})), i.d(t, "l", (function() {
 				return S
-			})), i.d(t, "o", (function() {
+			})), i.d(t, "m", (function() {
 				return T
-			})), i.d(t, "n", (function() {
+			})), i.d(t, "o", (function() {
 				return O
-			})), i.d(t, "i", (function() {
+			})), i.d(t, "n", (function() {
 				return I
-			})), i.d(t, "j", (function() {
+			})), i.d(t, "i", (function() {
 				return R
-			})), i.d(t, "p", (function() {
+			})), i.d(t, "j", (function() {
 				return F
-			})), i.d(t, "q", (function() {
+			})), i.d(t, "p", (function() {
 				return C
-			})), i.d(t, "r", (function() {
+			})), i.d(t, "q", (function() {
 				return N
-			})), i.d(t, "s", (function() {
+			})), i.d(t, "r", (function() {
 				return A
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "s", (function() {
 				return j
-			})), i.d(t, "u", (function() {
+			})), i.d(t, "h", (function() {
 				return P
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "u", (function() {
 				return D
-			})), i.d(t, "y", (function() {
+			})), i.d(t, "c", (function() {
 				return x
-			})), i.d(t, "t", (function() {
+			})), i.d(t, "y", (function() {
 				return L
-			})), i.d(t, "v", (function() {
+			})), i.d(t, "t", (function() {
 				return k
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "v", (function() {
 				return B
-			})), i.d(t, "w", (function() {
+			})), i.d(t, "d", (function() {
 				return M
-			})), i.d(t, "x", (function() {
+			})), i.d(t, "w", (function() {
 				return U
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "x", (function() {
 				return G
-			})), i.d(t, "z", (function() {
+			})), i.d(t, "e", (function() {
 				return q
+			})), i.d(t, "z", (function() {
+				return V
 			}));
 			const n = "GOLD_PAYMENT__CARD_NAME_EMPTY",
 				r = "GOLD_PAYMENT__CARD_NAME_INPUT",
-				s = "GOLD_PAYMENT__POSTAL_CODE_INPUT",
-				o = "GOLD_PAYMENT__DELETE_SAVED_CARD",
-				d = "GOLD_PAYMENT__PAYMENT_COMPLETED",
-				a = "GOLD_PAYMENT__PAYPAL_API_ERROR",
-				l = "GOLD_PAYMENT__SAVED_CARDS_PENDING",
-				u = "GOLD_PAYMENT__SAVED_CARDS_SUCCESS",
-				c = "GOLD_PAYMENT__SELECT_PAYMENT_METHOD",
-				_ = "GOLD_PAYMENT__SELECT_SAVED_CARD",
-				m = "GOLD_PAYMENT__STRIPE_API_ERROR",
-				p = "GOLD_PAYMENT__STRIPE_CARD_NUMBER_CHANGE",
-				h = "GOLD_PAYMENT__STRIPE_CARD_EXPIRY_CHANGE",
-				f = "GOLD_PAYMENT__STRIPE_CARD_CVC_CHANGE",
-				b = "GOLD_PAYMENT__CARD_ERROR",
-				g = "GOLD_PAYMENT__STRIPE_TOKEN_PENDING",
-				v = "GOLD_PAYMENT__TOGGLE_REMEMBER_CARD",
-				w = "UPDATE_CARD_MODAL__CLOSE_UPDATE_CARD_MODAL",
-				y = "GOLD_PURCHASE__FETCH_PURCHASE_CATALOG_ERROR",
-				E = "GOLD_PURCHASE__FETCH_PURCHASE_CATALOG_REQUESTED",
-				S = "GOLD_PURCHASE__FETCH_PURCHASE_CATALOG_SUCCESS",
-				T = "GOLD_PURCHASE__FETCH_PURCHASE_OFFERS_REQUESTED",
-				O = "GOLD_PURCHASE__FETCH_PURCHASE_OFFERS_ERROR",
-				I = "GOLD_PURCHASE__FETCH_COINPACK_OFFERS_SUCCESS",
-				R = "GOLD_PURCHASE__FETCH_PREMIUM_OFFERS_SUCCESS",
-				F = "GOLD_PURCHASE__FETCH_RECOMMENDED_PACKAGE_ERROR",
-				C = "GOLD_PURCHASE__FETCH_RECOMMENDED_PACKAGE_REQUESTED",
-				N = "GOLD_PURCHASE__FETCH_RECOMMENDED_PACKAGE_SUCCESS",
-				A = "SPECIAL_EVENTS__FETCH_SPECIAL_EVENTS_SUCCESS",
-				j = "SPECIAL_EVENTS__FETCH_CLAIM_FREE_AWARDS_SUCCESS",
-				P = "COIN_PURCHASE_MODAL__OPEN_COIN_PURCHASE_MODAL",
-				D = "COIN_PURCHASE_MODAL__CLOSE_COIN_PURCHASE_MODAL",
-				x = "COIN_PURCHASE_MODAL__OPEN_TARGETED_OFFER_MODAL",
-				L = "COIN_PURCHASE_MODAL__OPEN_COIN_PACKAGE_OFFER_MODAL",
-				k = "PENNY_PURCHASE_MODAL__OPEN_PENNY_PURCHASE_MODAL",
-				B = "PENNY_PURCHASE_MODAL__CLOSE_PENNY_PURCHASE_MODAL",
-				M = "PENNY_PURCHASE_MODAL__OPEN_PENNY_PURCHASE_MODAL_TO_GILD",
-				U = "PREMIUM_PURCHASE_MODAL__OPEN_PREMIUM_PURCHASE_MODAL",
-				G = "PREMIUM_PURCHASE_MODAL__CLOSE_PREMIUM_PURCHASE_MODAL",
-				q = "PREMIUM_PURCHASE_MODAL__PAYMENT_BLOB_CREATED"
+				s = "GOLD_PAYMENT__POSTAL_CODE_EMPTY",
+				o = "GOLD_PAYMENT__POSTAL_CODE_INPUT",
+				d = "GOLD_PAYMENT__DELETE_SAVED_CARD",
+				a = "GOLD_PAYMENT__PAYMENT_COMPLETED",
+				l = "GOLD_PAYMENT__PAYPAL_API_ERROR",
+				u = "GOLD_PAYMENT__SAVED_CARDS_PENDING",
+				c = "GOLD_PAYMENT__SAVED_CARDS_SUCCESS",
+				_ = "GOLD_PAYMENT__SELECT_PAYMENT_METHOD",
+				m = "GOLD_PAYMENT__SELECT_SAVED_CARD",
+				p = "GOLD_PAYMENT__STRIPE_API_ERROR",
+				h = "GOLD_PAYMENT__STRIPE_CARD_NUMBER_CHANGE",
+				f = "GOLD_PAYMENT__STRIPE_CARD_EXPIRY_CHANGE",
+				b = "GOLD_PAYMENT__STRIPE_CARD_CVC_CHANGE",
+				g = "GOLD_PAYMENT__CARD_ERROR",
+				v = "GOLD_PAYMENT__STRIPE_TOKEN_PENDING",
+				w = "GOLD_PAYMENT__TOGGLE_REMEMBER_CARD",
+				y = "UPDATE_CARD_MODAL__CLOSE_UPDATE_CARD_MODAL",
+				E = "GOLD_PURCHASE__FETCH_PURCHASE_CATALOG_ERROR",
+				S = "GOLD_PURCHASE__FETCH_PURCHASE_CATALOG_REQUESTED",
+				T = "GOLD_PURCHASE__FETCH_PURCHASE_CATALOG_SUCCESS",
+				O = "GOLD_PURCHASE__FETCH_PURCHASE_OFFERS_REQUESTED",
+				I = "GOLD_PURCHASE__FETCH_PURCHASE_OFFERS_ERROR",
+				R = "GOLD_PURCHASE__FETCH_COINPACK_OFFERS_SUCCESS",
+				F = "GOLD_PURCHASE__FETCH_PREMIUM_OFFERS_SUCCESS",
+				C = "GOLD_PURCHASE__FETCH_RECOMMENDED_PACKAGE_ERROR",
+				N = "GOLD_PURCHASE__FETCH_RECOMMENDED_PACKAGE_REQUESTED",
+				A = "GOLD_PURCHASE__FETCH_RECOMMENDED_PACKAGE_SUCCESS",
+				j = "SPECIAL_EVENTS__FETCH_SPECIAL_EVENTS_SUCCESS",
+				P = "SPECIAL_EVENTS__FETCH_CLAIM_FREE_AWARDS_SUCCESS",
+				D = "COIN_PURCHASE_MODAL__OPEN_COIN_PURCHASE_MODAL",
+				x = "COIN_PURCHASE_MODAL__CLOSE_COIN_PURCHASE_MODAL",
+				L = "COIN_PURCHASE_MODAL__OPEN_TARGETED_OFFER_MODAL",
+				k = "COIN_PURCHASE_MODAL__OPEN_COIN_PACKAGE_OFFER_MODAL",
+				B = "PENNY_PURCHASE_MODAL__OPEN_PENNY_PURCHASE_MODAL",
+				M = "PENNY_PURCHASE_MODAL__CLOSE_PENNY_PURCHASE_MODAL",
+				U = "PENNY_PURCHASE_MODAL__OPEN_PENNY_PURCHASE_MODAL_TO_GILD",
+				G = "PREMIUM_PURCHASE_MODAL__OPEN_PREMIUM_PURCHASE_MODAL",
+				q = "PREMIUM_PURCHASE_MODAL__CLOSE_PREMIUM_PURCHASE_MODAL",
+				V = "PREMIUM_PURCHASE_MODAL__PAYMENT_BLOB_CREATED"
 		},
 		"./src/reddit/actions/header.ts": function(e, t, i) {
 			"use strict";
@@ -34492,7 +34495,7 @@
 						} = t.payload;
 						return e
 					}
-					case r.F:
+					case r.G:
 						return t.payload !== d.Lb ? "" : e;
 					case r.c:
 					case r.d:
@@ -34509,13 +34512,13 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "",
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case r.I: {
+						case r.J: {
 							const {
 								error: e
 							} = t.payload;
 							return e && e.message || ""
 						}
-						case r.F:
+						case r.G:
 							return t.payload !== d.Lb ? "" : e;
 						case r.c:
 						case r.d:
@@ -34531,13 +34534,13 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "",
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case r.J: {
+						case r.K: {
 							const {
 								error: e
 							} = t.payload;
 							return e && e.message || ""
 						}
-						case r.F:
+						case r.G:
 							return t.payload !== d.Lb ? "" : e;
 						case r.c:
 						case r.d:
@@ -34553,13 +34556,13 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "",
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case r.K: {
+						case r.L: {
 							const {
 								error: e
 							} = t.payload;
 							return e && e.message || ""
 						}
-						case r.F:
+						case r.G:
 							return t.payload !== d.Lb ? "" : e;
 						case r.c:
 						case r.d:
@@ -34579,7 +34582,27 @@
 							return t.payload.message || e;
 						case r.b:
 							return "";
-						case r.F:
+						case r.G:
+							return t.payload !== d.Lb ? "" : e;
+						case r.c:
+						case r.d:
+						case r.e:
+						case r.f:
+						case a.b:
+							return "";
+						default:
+							return e
+					}
+				},
+				postalCode: function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "",
+						t = arguments.length > 1 ? arguments[1] : void 0;
+					switch (t.type) {
+						case r.C:
+							return t.payload.message || e;
+						case r.D:
+							return "";
+						case r.G:
 							return t.payload !== d.Lb ? "" : e;
 						case r.c:
 						case r.d:
@@ -34596,7 +34619,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case r.F:
+						case r.G:
 							return t.payload;
 						default:
 							return e
@@ -34609,7 +34632,7 @@
 				switch (t.type) {
 					case r.B:
 						return t.payload || e;
-					case r.F: {
+					case r.G: {
 						const {
 							method: i
 						} = t.payload;
@@ -34646,13 +34669,13 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "",
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case r.C: {
+					case r.D: {
 						const {
 							postalCode: e
 						} = t.payload;
 						return e
 					}
-					case r.F:
+					case r.G:
 						return t.payload !== d.Lb ? "" : e;
 					case r.c:
 					case r.d:
@@ -34668,9 +34691,9 @@
 				let e = !(arguments.length > 0 && void 0 !== arguments[0]) || arguments[0],
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case r.N:
+					case r.O:
 						return !e;
-					case r.F:
+					case r.G:
 						return t.payload !== d.Lb || e;
 					case r.c:
 					case r.d:
@@ -34686,7 +34709,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : g,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case r.E:
+					case r.F:
 						return t.payload;
 					case r.g: {
 						const i = t.payload;
@@ -34700,9 +34723,9 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case r.D:
-						return !0;
 					case r.E:
+						return !0;
+					case r.F:
 						return !1;
 					default:
 						return e
@@ -34713,17 +34736,19 @@
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
 						case r.a:
-						case r.L:
+						case r.C:
+						case r.M:
 							return t.payload.message || e;
-						case r.H:
+						case r.I:
 							return t.payload;
+						case r.L:
 						case r.K:
 						case r.J:
-						case r.I:
 						case r.b:
-						case r.M:
+						case r.D:
+						case r.N:
 							return null;
-						case r.F:
+						case r.G:
 							return t.payload === d.Lb ? null : e;
 						default:
 							return e
@@ -34736,12 +34761,13 @@
 					switch (t.type) {
 						case E.c:
 						case r.a:
-						case r.H:
-						case r.L:
-							return !1;
-						case r.F:
-							return t.payload !== d.Lb && e;
+						case r.C:
+						case r.I:
 						case r.M:
+							return !1;
+						case r.G:
+							return t.payload !== d.Lb && e;
+						case r.N:
 							return !0;
 						default:
 							return e
@@ -34755,7 +34781,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case r.G:
+						case r.H:
 							return t.payload;
 						case r.g:
 							return t.payload === e ? null : e;
@@ -50299,4 +50325,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7d07eff517f13919ef24.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e98b6afd13fa5a8cfe2f.js.map

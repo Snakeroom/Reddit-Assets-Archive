@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.ef11867a6923407a71c5.js
-// Retrieved at 10/31/2022, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.9a19a183692a657b1825.js
+// Retrieved at 10/31/2022, 12:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -854,8 +854,8 @@
 							return d.c.captureException(x), void(x.message && e(Object(m.stripeApiError)(x.message)))
 						}
 						e(Object(m.stripeTokenPending)());
-						const j = Object(p.y)(h);
-						if (j || (g = await e(Object(m.validateAndCreateStripeToken)(t, n)), k = Object(p.v)(h), g)) try {
+						const j = Object(p.z)(h);
+						if (j || (g = await e(Object(m.validateAndCreateStripeToken)(t, n)), k = Object(p.w)(h), g)) try {
 							const n = Object(r.a)(),
 								s = j || k ? g && k ? Object(f.h)(u(), n, C, g.id) : j ? Object(f.j)(u(), n, C, j) : null : Object(f.i)(u(), n, C, g.id),
 								o = await s;
@@ -1205,50 +1205,53 @@
 				return u
 			})), n.d(t, "cardNameEmpty", (function() {
 				return m
-			})), n.d(t, "cardNumberChange", (function() {
+			})), n.d(t, "postalCodeEmpty", (function() {
 				return p
-			})), n.d(t, "cardExpiryChange", (function() {
+			})), n.d(t, "cardNumberChange", (function() {
 				return b
-			})), n.d(t, "cardCvcChange", (function() {
+			})), n.d(t, "cardExpiryChange", (function() {
 				return h
-			})), n.d(t, "stripeTokenPending", (function() {
+			})), n.d(t, "cardCvcChange", (function() {
 				return f
-			})), n.d(t, "stripeTokenError", (function() {
+			})), n.d(t, "stripeTokenPending", (function() {
 				return g
-			})), n.d(t, "stripeApiError", (function() {
+			})), n.d(t, "stripeTokenError", (function() {
 				return v
-			})), n.d(t, "validateAndCreateStripeToken", (function() {
+			})), n.d(t, "stripeApiError", (function() {
 				return _
-			})), n.d(t, "paypalApiError", (function() {
+			})), n.d(t, "validateAndCreateStripeToken", (function() {
 				return y
-			})), n.d(t, "toggleRememberCard", (function() {
+			})), n.d(t, "paypalApiError", (function() {
 				return k
-			})), n.d(t, "selectSavedCard", (function() {
+			})), n.d(t, "toggleRememberCard", (function() {
 				return C
-			})), n.d(t, "deleteSavedCard", (function() {
+			})), n.d(t, "selectSavedCard", (function() {
 				return j
-			})), n.d(t, "savedCardsPending", (function() {
+			})), n.d(t, "deleteSavedCard", (function() {
 				return x
-			})), n.d(t, "savedCardsSuccess", (function() {
+			})), n.d(t, "savedCardsPending", (function() {
 				return E
+			})), n.d(t, "savedCardsSuccess", (function() {
+				return O
 			}));
 			var s = n("./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js"),
 				o = n("./node_modules/fbt/lib/FbtPublic.js"),
 				a = n("./src/lib/makeActionCreator/index.ts"),
 				r = n("./src/reddit/selectors/goldPurchaseModals.ts"),
 				i = n("./src/reddit/actions/goldPurchaseModals/constants.ts");
-			const l = Object(a.a)(i.F),
+			const l = Object(a.a)(i.G),
 				c = Object(a.a)(i.A),
 				d = Object(a.a)(i.b),
-				u = Object(a.a)(i.C),
+				u = Object(a.a)(i.D),
 				m = Object(a.a)(i.a),
-				p = Object(a.a)(i.K),
-				b = Object(a.a)(i.J),
-				h = Object(a.a)(i.I),
-				f = Object(a.a)(i.M),
-				g = Object(a.a)(i.L),
-				v = Object(a.a)(i.H),
-				_ = (e, t) => async (n, a) => {
+				p = Object(a.a)(i.C),
+				b = Object(a.a)(i.L),
+				h = Object(a.a)(i.K),
+				f = Object(a.a)(i.J),
+				g = Object(a.a)(i.N),
+				v = Object(a.a)(i.M),
+				_ = Object(a.a)(i.I),
+				y = (e, t) => async (n, a) => {
 					const i = a(),
 						l = Object(r.h)(i),
 						c = Object(r.l)(i),
@@ -1256,15 +1259,22 @@
 					if (!d) return;
 					const {
 						token: u,
-						error: p
+						error: b
 					} = await e.createToken(d, {
 						name: l,
 						address_zip: c
-					});
-					if (l.trim()) {
-						if (!p && u) return u;
-						n(g(p || void 0))
-					} else {
+					}), h = !c.trim();
+					if (h) {
+						const e = o.fbt._("Your ZIP code is incomplete", null, {
+							hk: "4bttPr"
+						});
+						n(p({
+							message: e
+						}))
+					}
+					b && n(v(b));
+					const f = !l.trim();
+					if (f) {
 						const e = o.fbt._("Your card’s name field is incomplete", null, {
 							hk: "VBdRU"
 						});
@@ -1272,7 +1282,8 @@
 							message: e
 						}))
 					}
-				}, y = Object(a.a)(i.B), k = Object(a.a)(i.N), C = Object(a.a)(i.G), j = Object(a.a)(i.g), x = Object(a.a)(i.D), E = Object(a.a)(i.E)
+					return h || b || f ? void 0 : u
+				}, k = Object(a.a)(i.B), C = Object(a.a)(i.O), j = Object(a.a)(i.H), x = Object(a.a)(i.g), E = Object(a.a)(i.E), O = Object(a.a)(i.F)
 		},
 		"./src/reddit/actions/goldPurchaseModals/premiumPurchaseModal.ts": function(e, t, n) {
 			"use strict";
@@ -12719,7 +12730,7 @@
 					return (null == t ? void 0 : t[0]) || null
 				},
 				m = (e, t) => (null == e ? void 0 : e.pricePackages) ? null == e ? void 0 : e.pricePackages.filter(e => e.renewInterval === t && e.requiredPaymentProviders && (e => e[0] === r.b.PayPal || e[0] === r.b.Stripe)(e.requiredPaymentProviders)) : null,
-				p = Object(s.a)(u, i.p, (e, t) => m(e, t) || null),
+				p = Object(s.a)(u, i.q, (e, t) => m(e, t) || null),
 				b = Object(s.a)(p, (e, t) => {
 					let {
 						provider: n
@@ -12833,4 +12844,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.ef11867a6923407a71c5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.9a19a183692a657b1825.js.map

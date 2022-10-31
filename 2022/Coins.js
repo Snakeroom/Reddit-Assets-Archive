@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.7f0a74144ab1d7db5b8f.js
-// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.ba9525f15dc398a27d9c.js
+// Retrieved at 10/31/2022, 12:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, n) {
@@ -662,11 +662,11 @@
 							coins: u,
 							pennies: m
 						} = n,
-						b = Object(v.r)(d) || Object(f.d)(f.a.GoldPayment, !1);
+						b = Object(v.s)(d) || Object(f.d)(f.a.GoldPayment, !1);
 					let g, y;
 					s(Object(o.stripeTokenPending)());
-					const O = Object(v.y)(d);
-					if (O || (g = await s(Object(o.validateAndCreateStripeToken)(e, t)), y = Object(v.v)(d), g)) try {
+					const O = Object(v.z)(d);
+					if (O || (g = await s(Object(o.validateAndCreateStripeToken)(e, t)), y = Object(v.w)(d), g)) try {
 						const e = await Object(p.d)({
 							coins: u,
 							context: l(),
@@ -703,11 +703,11 @@
 							coins: y,
 							pennies: O
 						} = s,
-						j = Object(v.r)(m) || Object(f.d)(f.a.GoldPayment, !1);
+						j = Object(v.s)(m) || Object(f.d)(f.a.GoldPayment, !1);
 					let E, k;
 					i(Object(o.stripeTokenPending)());
-					const C = Object(v.y)(m);
-					if (C || (E = await i(Object(o.validateAndCreateStripeToken)(e, t)), k = Object(v.v)(m), E)) try {
+					const C = Object(v.z)(m);
+					if (C || (E = await i(Object(o.validateAndCreateStripeToken)(e, t)), k = Object(v.w)(m), E)) try {
 						const {
 							gildModalThingId: e,
 							isAnonymous: t,
@@ -811,7 +811,7 @@
 						apiContext: i
 					} = s;
 					const l = r(),
-						d = Object(v.r)(l) || Object(f.d)(f.a.GoldPayment, !1),
+						d = Object(v.s)(l) || Object(f.d)(f.a.GoldPayment, !1),
 						{
 							coins: u,
 							pennies: p
@@ -847,7 +847,7 @@
 						apiContext: d
 					} = l;
 					const u = i(),
-						p = Object(v.r)(u) || Object(f.d)(f.a.GoldPayment, !1),
+						p = Object(v.s)(u) || Object(f.d)(f.a.GoldPayment, !1),
 						{
 							coins: y,
 							pennies: O
@@ -926,50 +926,53 @@
 				return u
 			})), n.d(t, "cardNameEmpty", (function() {
 				return m
-			})), n.d(t, "cardNumberChange", (function() {
+			})), n.d(t, "postalCodeEmpty", (function() {
 				return p
-			})), n.d(t, "cardExpiryChange", (function() {
+			})), n.d(t, "cardNumberChange", (function() {
 				return f
-			})), n.d(t, "cardCvcChange", (function() {
+			})), n.d(t, "cardExpiryChange", (function() {
 				return b
-			})), n.d(t, "stripeTokenPending", (function() {
+			})), n.d(t, "cardCvcChange", (function() {
 				return g
-			})), n.d(t, "stripeTokenError", (function() {
+			})), n.d(t, "stripeTokenPending", (function() {
 				return h
-			})), n.d(t, "stripeApiError", (function() {
+			})), n.d(t, "stripeTokenError", (function() {
 				return y
-			})), n.d(t, "validateAndCreateStripeToken", (function() {
+			})), n.d(t, "stripeApiError", (function() {
 				return O
-			})), n.d(t, "paypalApiError", (function() {
+			})), n.d(t, "validateAndCreateStripeToken", (function() {
 				return v
-			})), n.d(t, "toggleRememberCard", (function() {
+			})), n.d(t, "paypalApiError", (function() {
 				return j
-			})), n.d(t, "selectSavedCard", (function() {
+			})), n.d(t, "toggleRememberCard", (function() {
 				return E
-			})), n.d(t, "deleteSavedCard", (function() {
+			})), n.d(t, "selectSavedCard", (function() {
 				return k
-			})), n.d(t, "savedCardsPending", (function() {
+			})), n.d(t, "deleteSavedCard", (function() {
 				return C
-			})), n.d(t, "savedCardsSuccess", (function() {
+			})), n.d(t, "savedCardsPending", (function() {
 				return _
+			})), n.d(t, "savedCardsSuccess", (function() {
+				return x
 			}));
 			var r = n("./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js"),
 				a = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./src/lib/makeActionCreator/index.ts"),
 				c = n("./src/reddit/selectors/goldPurchaseModals.ts"),
 				i = n("./src/reddit/actions/goldPurchaseModals/constants.ts");
-			const o = Object(s.a)(i.F),
+			const o = Object(s.a)(i.G),
 				l = Object(s.a)(i.A),
 				d = Object(s.a)(i.b),
-				u = Object(s.a)(i.C),
+				u = Object(s.a)(i.D),
 				m = Object(s.a)(i.a),
-				p = Object(s.a)(i.K),
-				f = Object(s.a)(i.J),
-				b = Object(s.a)(i.I),
-				g = Object(s.a)(i.M),
-				h = Object(s.a)(i.L),
-				y = Object(s.a)(i.H),
-				O = (e, t) => async (n, s) => {
+				p = Object(s.a)(i.C),
+				f = Object(s.a)(i.L),
+				b = Object(s.a)(i.K),
+				g = Object(s.a)(i.J),
+				h = Object(s.a)(i.N),
+				y = Object(s.a)(i.M),
+				O = Object(s.a)(i.I),
+				v = (e, t) => async (n, s) => {
 					const i = s(),
 						o = Object(c.h)(i),
 						l = Object(c.l)(i),
@@ -977,15 +980,22 @@
 					if (!d) return;
 					const {
 						token: u,
-						error: p
+						error: f
 					} = await e.createToken(d, {
 						name: o,
 						address_zip: l
-					});
-					if (o.trim()) {
-						if (!p && u) return u;
-						n(h(p || void 0))
-					} else {
+					}), b = !l.trim();
+					if (b) {
+						const e = a.fbt._("Your ZIP code is incomplete", null, {
+							hk: "4bttPr"
+						});
+						n(p({
+							message: e
+						}))
+					}
+					f && n(y(f));
+					const g = !o.trim();
+					if (g) {
 						const e = a.fbt._("Your card’s name field is incomplete", null, {
 							hk: "VBdRU"
 						});
@@ -993,7 +1003,8 @@
 							message: e
 						}))
 					}
-				}, v = Object(s.a)(i.B), j = Object(s.a)(i.N), E = Object(s.a)(i.G), k = Object(s.a)(i.g), C = Object(s.a)(i.D), _ = Object(s.a)(i.E)
+					return b || f || g ? void 0 : u
+				}, j = Object(s.a)(i.B), E = Object(s.a)(i.O), k = Object(s.a)(i.H), C = Object(s.a)(i.g), _ = Object(s.a)(i.E), x = Object(s.a)(i.F)
 		},
 		"./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts": function(e, t, n) {
 			"use strict";
@@ -1925,18 +1936,18 @@
 					})))))
 				},
 				z = n("./src/reddit/helpers/styles/mixins/loading.ts"),
-				Q = n("./src/reddit/components/CoinPurchasePackage/placeholder.m.less"),
-				Y = n.n(Q);
+				Y = n("./src/reddit/components/CoinPurchasePackage/placeholder.m.less"),
+				Q = n.n(Y);
 			var X = e => {
 					let {
 						className: t,
 						isLargeView: n,
 						...r
 					} = e;
-					const a = n ? Y.a.large : "",
+					const a = n ? Q.a.large : "",
 						s = Object(z.b)(r);
 					return o.a.createElement("div", {
-						className: Object(D.a)(s, Y.a.packagePlaceholder, a, t)
+						className: Object(D.a)(s, Q.a.packagePlaceholder, a, t)
 					})
 				},
 				W = n("./src/reddit/components/CollapsibleFAQ/index.tsx"),
@@ -2300,7 +2311,7 @@
 					return (null == t ? void 0 : t[0]) || null
 				},
 				m = (e, t) => (null == e ? void 0 : e.pricePackages) ? null == e ? void 0 : e.pricePackages.filter(e => e.renewInterval === t && e.requiredPaymentProviders && (e => e[0] === c.b.PayPal || e[0] === c.b.Stripe)(e.requiredPaymentProviders)) : null,
-				p = Object(r.a)(u, i.p, (e, t) => m(e, t) || null),
+				p = Object(r.a)(u, i.q, (e, t) => m(e, t) || null),
 				f = Object(r.a)(p, (e, t) => {
 					let {
 						provider: n
@@ -2322,4 +2333,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.7f0a74144ab1d7db5b8f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.ba9525f15dc398a27d9c.js.map

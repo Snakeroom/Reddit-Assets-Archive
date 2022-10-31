@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.be3adeb9720721cac7fb.js
-// Retrieved at 10/4/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.5bae71bbe3d344647dde.js
+// Retrieved at 10/31/2022, 12:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GoldPurchasePaymentActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -374,50 +374,53 @@
 				return l
 			})), r.d(t, "cardNameEmpty", (function() {
 				return p
-			})), r.d(t, "cardNumberChange", (function() {
+			})), r.d(t, "postalCodeEmpty", (function() {
 				return f
-			})), r.d(t, "cardExpiryChange", (function() {
+			})), r.d(t, "cardNumberChange", (function() {
 				return m
-			})), r.d(t, "cardCvcChange", (function() {
+			})), r.d(t, "cardExpiryChange", (function() {
 				return b
-			})), r.d(t, "stripeTokenPending", (function() {
+			})), r.d(t, "cardCvcChange", (function() {
 				return y
-			})), r.d(t, "stripeTokenError", (function() {
+			})), r.d(t, "stripeTokenPending", (function() {
 				return h
-			})), r.d(t, "stripeApiError", (function() {
+			})), r.d(t, "stripeTokenError", (function() {
 				return g
-			})), r.d(t, "validateAndCreateStripeToken", (function() {
+			})), r.d(t, "stripeApiError", (function() {
 				return O
-			})), r.d(t, "paypalApiError", (function() {
+			})), r.d(t, "validateAndCreateStripeToken", (function() {
 				return j
-			})), r.d(t, "toggleRememberCard", (function() {
+			})), r.d(t, "paypalApiError", (function() {
 				return P
-			})), r.d(t, "selectSavedCard", (function() {
+			})), r.d(t, "toggleRememberCard", (function() {
 				return v
-			})), r.d(t, "deleteSavedCard", (function() {
+			})), r.d(t, "selectSavedCard", (function() {
 				return _
-			})), r.d(t, "savedCardsPending", (function() {
+			})), r.d(t, "deleteSavedCard", (function() {
 				return E
-			})), r.d(t, "savedCardsSuccess", (function() {
+			})), r.d(t, "savedCardsPending", (function() {
 				return C
+			})), r.d(t, "savedCardsSuccess", (function() {
+				return k
 			}));
 			var n = r("./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js"),
 				o = r("./node_modules/fbt/lib/FbtPublic.js"),
 				a = r("./src/lib/makeActionCreator/index.ts"),
 				c = r("./src/reddit/selectors/goldPurchaseModals.ts"),
 				i = r("./src/reddit/actions/goldPurchaseModals/constants.ts");
-			const s = Object(a.a)(i.F),
+			const s = Object(a.a)(i.G),
 				d = Object(a.a)(i.A),
 				u = Object(a.a)(i.b),
-				l = Object(a.a)(i.C),
+				l = Object(a.a)(i.D),
 				p = Object(a.a)(i.a),
-				f = Object(a.a)(i.K),
-				m = Object(a.a)(i.J),
-				b = Object(a.a)(i.I),
-				y = Object(a.a)(i.M),
-				h = Object(a.a)(i.L),
-				g = Object(a.a)(i.H),
-				O = (e, t) => async (r, a) => {
+				f = Object(a.a)(i.C),
+				m = Object(a.a)(i.L),
+				b = Object(a.a)(i.K),
+				y = Object(a.a)(i.J),
+				h = Object(a.a)(i.N),
+				g = Object(a.a)(i.M),
+				O = Object(a.a)(i.I),
+				j = (e, t) => async (r, a) => {
 					const i = a(),
 						s = Object(c.h)(i),
 						d = Object(c.l)(i),
@@ -425,15 +428,22 @@
 					if (!u) return;
 					const {
 						token: l,
-						error: f
+						error: m
 					} = await e.createToken(u, {
 						name: s,
 						address_zip: d
-					});
-					if (s.trim()) {
-						if (!f && l) return l;
-						r(h(f || void 0))
-					} else {
+					}), b = !d.trim();
+					if (b) {
+						const e = o.fbt._("Your ZIP code is incomplete", null, {
+							hk: "4bttPr"
+						});
+						r(f({
+							message: e
+						}))
+					}
+					m && r(g(m));
+					const y = !s.trim();
+					if (y) {
 						const e = o.fbt._("Your card’s name field is incomplete", null, {
 							hk: "VBdRU"
 						});
@@ -441,7 +451,8 @@
 							message: e
 						}))
 					}
-				}, j = Object(a.a)(i.B), P = Object(a.a)(i.N), v = Object(a.a)(i.G), _ = Object(a.a)(i.g), E = Object(a.a)(i.D), C = Object(a.a)(i.E)
+					return b || m || y ? void 0 : l
+				}, P = Object(a.a)(i.B), v = Object(a.a)(i.O), _ = Object(a.a)(i.H), E = Object(a.a)(i.g), C = Object(a.a)(i.E), k = Object(a.a)(i.F)
 		},
 		"./src/reddit/actions/goldPurchaseModals/premiumPurchaseModal.ts": function(e, t, r) {
 			"use strict";
@@ -874,25 +885,25 @@
 		},
 		"./src/reddit/selectors/goldPurchaseModals.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "q", (function() {
+			r.d(t, "r", (function() {
 				return c
-			})), r.d(t, "s", (function() {
-				return i
-			})), r.d(t, "r", (function() {
-				return s
-			})), r.d(t, "u", (function() {
-				return d
 			})), r.d(t, "t", (function() {
+				return i
+			})), r.d(t, "s", (function() {
+				return s
+			})), r.d(t, "v", (function() {
+				return d
+			})), r.d(t, "u", (function() {
 				return u
 			})), r.d(t, "b", (function() {
 				return l
-			})), r.d(t, "p", (function() {
+			})), r.d(t, "q", (function() {
 				return p
 			})), r.d(t, "a", (function() {
 				return f
-			})), r.d(t, "n", (function() {
-				return m
 			})), r.d(t, "o", (function() {
+				return m
+			})), r.d(t, "p", (function() {
 				return b
 			})), r.d(t, "c", (function() {
 				return y
@@ -900,13 +911,13 @@
 				return h
 			})), r.d(t, "l", (function() {
 				return g
-			})), r.d(t, "w", (function() {
-				return O
 			})), r.d(t, "x", (function() {
-				return j
-			})), r.d(t, "v", (function() {
-				return P
+				return O
 			})), r.d(t, "y", (function() {
+				return j
+			})), r.d(t, "w", (function() {
+				return P
+			})), r.d(t, "z", (function() {
 				return v
 			})), r.d(t, "f", (function() {
 				return _
@@ -916,14 +927,16 @@
 				return C
 			})), r.d(t, "k", (function() {
 				return k
-			})), r.d(t, "j", (function() {
-				return I
 			})), r.d(t, "m", (function() {
+				return I
+			})), r.d(t, "j", (function() {
 				return x
-			})), r.d(t, "e", (function() {
+			})), r.d(t, "n", (function() {
 				return w
-			})), r.d(t, "d", (function() {
+			})), r.d(t, "e", (function() {
 				return S
+			})), r.d(t, "d", (function() {
+				return A
 			}));
 			var n = r("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				o = r("./src/lib/initializeClient/installReducer.ts"),
@@ -958,14 +971,15 @@
 				E = e => e.features.goldPurchase.payment.cardValidation.cardExpiry,
 				C = e => e.features.goldPurchase.payment.cardValidation.cardNumber,
 				k = e => e.features.goldPurchase.payment.cardValidation.nameOnCard,
-				I = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
-				x = e => e.features.goldPurchase.payment.stripeToken.pending,
-				w = e => e.features.goldPurchase.payment.paypal.passthrough,
-				S = e => e.features.goldPurchase.payment.paypal.errorMessage
+				I = e => e.features.goldPurchase.payment.cardValidation.postalCode,
+				x = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
+				w = e => e.features.goldPurchase.payment.stripeToken.pending,
+				S = e => e.features.goldPurchase.payment.paypal.passthrough,
+				A = e => e.features.goldPurchase.payment.paypal.errorMessage
 		},
 		"./src/redditGQL/operations/ChangeStripePaymentMethod.json": function(e) {
 			e.exports = JSON.parse('{"id":"ce700fb9b230"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.be3adeb9720721cac7fb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.5bae71bbe3d344647dde.js.map

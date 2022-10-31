@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.3042f3d6624c8baaacc1.js
-// Retrieved at 10/24/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.2c6ab5d9c151aa41f72a.js
+// Retrieved at 10/31/2022, 12:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./src/reddit/actions/goldPurchaseModals/premiumPurchaseModal.ts": function(e, t, r) {
@@ -359,7 +359,7 @@
 			}
 			const V = Object(o.c)({
 					activePremiumPackage: O.a,
-					activePage: O.n,
+					activePage: O.o,
 					allowNavigationCallback: e => {
 						const t = Object(j.a)(e);
 						return null === t ? void 0 : t
@@ -369,23 +369,23 @@
 					purchaseMethods: E.a,
 					selectedPayment: O.c,
 					stripeErrorMessage: O.j,
-					stripeTokenPending: O.m,
+					stripeTokenPending: O.n,
 					paypalErrorMessage: O.d,
 					userName: e => {
 						const t = Object(M.l)(e);
 						return `u/${Object(g.e)(t)}`
 					},
-					renewInterval: O.p,
+					renewInterval: O.q,
 					premiumProductOffer: _.d,
 					premiumPrice: _.b
 				}),
-				Z = Object(n.b)(V, (e, t) => ({
+				q = Object(n.b)(V, (e, t) => ({
 					closeModal: () => e(Object(b.closePremiumPurchaseModal)()),
 					onCloseModalClick: () => e(Object(b.closePremiumPurchaseModal)()),
 					onPaymentSelected: t => e(Object(p.selectPaymentMethod)(t)),
 					onLoadSavedCards: () => e(Object(u.d)())
 				})),
-				q = Object(l.a)(e => {
+				Z = Object(l.a)(e => {
 					let {
 						sendEvent: t,
 						activePage: r,
@@ -437,7 +437,7 @@
 						onClose: p
 					})
 				});
-			t.default = Z(Object(P.c)(class extends s.a.PureComponent {
+			t.default = q(Object(P.c)(class extends s.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onTryCloseModal = () => {
 						const {
@@ -449,7 +449,7 @@
 					}
 				}
 				render() {
-					return s.a.createElement(q, X({}, this.props, {
+					return s.a.createElement(Z, X({}, this.props, {
 						className: Object(i.a)(this.props.className, A.a.premiumPurchaseModal),
 						onCloseModal: this.onCloseModal,
 						onOverlayClick: this.onTryCloseModal,
@@ -461,4 +461,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.3042f3d6624c8baaacc1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.2c6ab5d9c151aa41f72a.js.map
