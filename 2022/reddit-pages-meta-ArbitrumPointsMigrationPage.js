@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.4ab6d42bcd7eab7894ef.js
-// Retrieved at 10/26/2022, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.2fe1e9e55cb7b53a8c33.js
+// Retrieved at 10/31/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-meta-ArbitrumPointsMigrationPage"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -1242,16 +1242,16 @@
 			var N = n("./src/reddit/helpers/localStorage/index.ts"),
 				_ = n("./src/reddit/selectors/user.ts"),
 				P = n("./src/reddit/icons/svgs/CheckmarkFitted/index.tsx"),
-				S = n("./src/reddit/icons/svgs/ClearFilled/index.tsx"),
-				I = n("./src/reddit/pages/meta/ArbitrumPointsMigrationPage/index.m.less"),
-				L = n.n(I);
+				I = n("./src/reddit/icons/svgs/ClearFilled/index.tsx"),
+				S = n("./src/reddit/pages/meta/ArbitrumPointsMigrationPage/index.m.less"),
+				L = n.n(S);
 			const F = () => i.a.createElement(u.a, {
 					className: L.a.loading
 				}),
 				B = () => i.a.createElement(P.a, {
 					className: L.a.succeeded
 				}),
-				D = () => i.a.createElement(S.a, {
+				D = () => i.a.createElement(I.a, {
 					className: L.a.failed
 				}),
 				R = "5391184";
@@ -1323,7 +1323,7 @@
 			const V = "arb-migration-l1";
 
 			function W(e) {
-				e ? Object(N.Hb)(V, e) : window.localStorage && window.localStorage.removeItem(V)
+				e ? Object(N.Ib)(V, e) : window.localStorage && window.localStorage.removeItem(V)
 			}
 
 			function q() {
@@ -1425,4 +1425,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.4ab6d42bcd7eab7894ef.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.2fe1e9e55cb7b53a8c33.js.map

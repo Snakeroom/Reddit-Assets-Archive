@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.decd307a6157c77954d7.js
-// Retrieved at 10/31/2022, 12:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.677513e1acbddc4e5d3f.js
+// Retrieved at 10/31/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -2971,7 +2971,7 @@
 						action: "view",
 						noun: l,
 						...Object(d.o)(e)
-					}))(f)), Object(i.Gb)(), Object(i.Fb)(S), a(m()), n && n()
+					}))(f)), Object(i.Hb)(), Object(i.Gb)(S), a(m()), n && n()
 				}, h = e => async (t, n) => {
 					Object(p.a)((e => ({
 						source: l,
@@ -4355,7 +4355,7 @@
 					U = Object(a.e)(q),
 					B = Object(J.c)(P),
 					F = Object(u.e)({
-						...W()(D || {}, z.C),
+						...W()(D || {}, z.D),
 						q: n.searchQuery,
 						restrict_sr: P.enabled ? "1" : ""
 					});
@@ -5569,19 +5569,19 @@
 				const b = [];
 				if (t.isTypeaheadSuggestion) f = i(t);
 				else {
-					if (b.push(`${a.y}=${Object(s.b)(t.rawQuery||t.searchQuery)}`), f = `/${d}`, t.section !== o.c.trending && t.section !== o.c.recent || n && n.source && b.push(`source=${n.source}`), null == l ? void 0 : l.enabled) switch (l.type) {
+					if (b.push(`${a.z}=${Object(s.b)(t.rawQuery||t.searchQuery)}`), f = `/${d}`, t.section !== o.c.trending && t.section !== o.c.recent || n && n.source && b.push(`source=${n.source}`), null == l ? void 0 : l.enabled) switch (l.type) {
 						case r.dc.Subreddit:
 							const e = l.payload;
-							f = `${e.url}${d}`, b.push(`${a.B}=1`), b.push(`${a.K}=${e.isNSFW?"1":""}`);
+							f = `${e.url}${d}`, b.push(`${a.C}=1`), b.push(`${a.L}=${e.isNSFW?"1":""}`);
 							break;
 						case r.dc.Multireddit:
 							const t = l.payload;
-							f = `${t.url}${d}`, b.push(`${a.B}=1`), b.push(`${a.K}=${t.isNSFW?"1":""}`), b.push(`${a.m}=1`);
+							f = `${t.url}${d}`, b.push(`${a.C}=1`), b.push(`${a.L}=${t.isNSFW?"1":""}`), b.push(`${a.n}=1`);
 							break;
 						case r.dc.SyntaxScoped:
-							f = `/${Object(c.a)(null===(p=l.payload)||void 0===p?void 0:p.title)}${d}`, b.push(`${a.B}=1`)
-					} else t.subredditOrProfileRestrictedName && (f = `${t.subredditOrProfileRestrictedName}${d}`, b.push(`${a.B}=1`));
-					u && b.push(`${a.l}=1`), (null == n ? void 0 : n.t) && n.t !== r.oc.ALL && b.push(`${a.N}=${n.t}`), (null == n ? void 0 : n.sort) && b.push(`${a.H}=${n.sort}`), (null == n ? void 0 : n.type) && (n.type.includes(r.ic.Posts) || b.push(`${a.O}=${n.type[0]}`))
+							f = `/${Object(c.a)(null===(p=l.payload)||void 0===p?void 0:p.title)}${d}`, b.push(`${a.C}=1`)
+					} else t.subredditOrProfileRestrictedName && (f = `${t.subredditOrProfileRestrictedName}${d}`, b.push(`${a.C}=1`));
+					u && b.push(`${a.m}=1`), (null == n ? void 0 : n.t) && n.t !== r.oc.ALL && b.push(`${a.O}=${n.t}`), (null == n ? void 0 : n.sort) && b.push(`${a.I}=${n.sort}`), (null == n ? void 0 : n.type) && (n.type.includes(r.ic.Posts) || b.push(`${a.P}=${n.type[0]}`))
 				}
 				return {
 					url: f,
@@ -25844,4 +25844,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.decd307a6157c77954d7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.677513e1acbddc4e5d3f.js.map

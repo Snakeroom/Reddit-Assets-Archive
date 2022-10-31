@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.3274085b3848a1dea9ad.js
-// Retrieved at 10/31/2022, 12:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.e5ad318ecbb5be6dbb7d.js
+// Retrieved at 10/31/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -3018,7 +3018,7 @@
 					const {
 						isAnonymous: e
 					} = this.props;
-					Object(p.zb)(e)
+					Object(p.Ab)(e)
 				}
 				componentDidMount() {
 					document.addEventListener("keydown", this.handleEscapeKey);
@@ -3166,7 +3166,7 @@
 						})
 					})),
 					setIsAnonymous: t => {
-						e(Object(w.setIsAnonymous)(t)), Object(p.zb)(t)
+						e(Object(w.setIsAnonymous)(t)), Object(p.Ab)(t)
 					},
 					subredditAboutRequested: t => e(Object(_.u)(t)),
 					subredditLockedCoinsRequested: (t, r) => e(Object(v.a)(t, r)),
@@ -5068,12 +5068,12 @@
 						rtJsonElementProps: o
 					});
 					switch (a) {
-						case h.bg.SmIcon:
+						case h.cg.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case h.bg.SmIconHc:
+						case h.cg.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -6281,12 +6281,12 @@
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.Vf
+						experimentName: n.Wf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.bg.SmIcon || t === n.bg.SmIconHc
+					return t === n.cg.SmIcon || t === n.cg.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -6336,4 +6336,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.3274085b3848a1dea9ad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.e5ad318ecbb5be6dbb7d.js.map

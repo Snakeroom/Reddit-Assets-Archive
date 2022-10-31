@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.102ddb7238c0356dc25b.js
-// Retrieved at 10/31/2022, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.c09d6eaf075bdf84fdbb.js
+// Retrieved at 10/31/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -54,13 +54,13 @@
 					experimentEligibilitySelector: m.a,
 					experimentName: u.Me
 				});
-				return Object(u.Ag)(t) ? void 0 : t
+				return Object(u.Bg)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
 					experimentName: u.Ne
 				});
-				return Object(u.Ag)(t) ? void 0 : t
+				return Object(u.Bg)(t) ? void 0 : t
 			}, (e, t) => e === u.Oe.Enabled && t === u.Oe.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
@@ -770,19 +770,19 @@
 			class se extends n.Component {
 				constructor(e) {
 					super(e), this.observableElement = r.a.createRef(), this.videoRef = r.a.createRef(), this.videoSessionManager = null, this.timerId = "rpan-du-active-watch-timer-id", this.handleSuccessfulPlayback = () => {
-						Object(O.bb)()
+						Object(O.cb)()
 					}, this.handleUnsuccessfulPlayback = () => {
-						const e = Number(Object(O.S)());
+						const e = Number(Object(O.T)());
 						if (e) {
 							if (Date.now() - e >= J) {
-								Object(O.bb)();
+								Object(O.cb)();
 								const e = 30 * l.E,
 									t = Date.now() - e + $;
 								this.props.onHideRpanUnit(t, {
 									showToast: !1
 								})
 							}
-						} else Object(O.Xb)(Date.now())
+						} else Object(O.Zb)(Date.now())
 					}, this.onResourceRemoved = () => {
 						this.subscribeStats()
 					}, this.onError = () => {
@@ -1881,4 +1881,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.102ddb7238c0356dc25b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.c09d6eaf075bdf84fdbb.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.0d835456b00ffe9ea1d9.js
-// Retrieved at 10/31/2022, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.37df00ae7662639e1f71.js
+// Retrieved at 10/31/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -665,7 +665,7 @@
 			const f = e => {
 				return Object(_.c)(e, {
 					experimentEligibilitySelector: _.a,
-					experimentName: b.zf
+					experimentName: b.Af
 				}) === b.Vd
 			};
 			var g = n("./src/reddit/selectors/recapGame.ts"),
@@ -705,7 +705,7 @@
 						y && O(setTimeout(() => {
 							_.current && (_.current.classList.add(v.a.transform), _.current.style.width = `${F}px`)
 						}, 4750)), y && S(setTimeout(() => {
-							w(!1), Object(p.Rb)(R, !1)
+							w(!1), Object(p.Sb)(R, !1)
 						}, 5e3))
 					};
 				Object(r.useEffect)(() => {
@@ -732,7 +732,7 @@
 					},
 					onMouseLeave: M,
 					onClick: () => {
-						C && clearTimeout(C), j && clearTimeout(j), w(!1), Object(p.Rb)(R, !0), b((() => e => ({
+						C && clearTimeout(C), j && clearTimeout(j), w(!1), Object(p.Sb)(R, !0), b((() => e => ({
 							source: "recap",
 							action: "click",
 							noun: "feed_banana",
@@ -975,7 +975,7 @@
 				} = e, T = async () => {
 					if (a ? await F() : await Object(m.p)(), l) {
 						const e = new URL(window.location.href);
-						e.searchParams.set(O.j, "1"), window.location.href = e.href
+						e.searchParams.set(O.k, "1"), window.location.href = e.href
 					} else window.location.reload()
 				};
 				switch (n) {
@@ -3571,4 +3571,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.0d835456b00ffe9ea1d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.37df00ae7662639e1f71.js.map

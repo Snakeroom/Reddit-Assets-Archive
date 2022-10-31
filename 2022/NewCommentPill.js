@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommentPill.d6f0c8bf46d992127fc9.js
-// Retrieved at 10/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommentPill.eb63818b6256471e91bf.js
+// Retrieved at 10/31/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommentPill"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, s) {
@@ -78,9 +78,9 @@
 				_ = s("./src/reddit/selectors/experiments/joinOptimizations.ts"),
 				h = s("./src/reddit/selectors/experiments/typingIndicators.ts"),
 				g = s("./src/lib/classNames/index.ts"),
-				C = s("./src/lib/constants/index.ts"),
-				N = s("./src/lib/makeCommentsPageKey/index.ts"),
-				I = s("./src/lib/scroll/index.ts"),
+				I = s("./src/lib/constants/index.ts"),
+				C = s("./src/lib/makeCommentsPageKey/index.ts"),
+				N = s("./src/lib/scroll/index.ts"),
 				x = s("./src/reddit/components/NewCommentPill/index.m.less"),
 				v = s.n(x);
 			const y = (e, t) => {
@@ -126,23 +126,23 @@
 						if (!R) return;
 						B(!1), k.current && (clearTimeout(k.current), k.current = null), L.current && (L.current = null), J.current = 2, (() => {
 							const e = new URLSearchParams(location.search);
-							e.get(j.H) !== C.w.NEW && (e.set(j.H, C.w.NEW), K(Object(i.b)(Object(r.c)({
+							e.get(j.I) !== I.w.NEW && (e.set(j.I, I.w.NEW), K(Object(i.b)(Object(r.c)({
 								pathname: location.pathname,
 								search: e.toString()
 							}, {
 								isOverlay: E
 							}))));
-							const n = Object(N.a)(s, t, {
+							const n = Object(C.a)(s, t, {
 								hasSortParam: !0,
-								sort: C.w.NEW
+								sort: I.w.NEW
 							});
 							K(Object(d.commentsPageRemoveLoadedFull)({
 								key: n
 							})), K(Object(d.commentsPageDataRequested)(s, t, {
 								hasSortParam: !0,
-								sort: C.w.NEW
-							}, C.w.NEW))
-						})(), Object(I.a)(!!E), T.current = setTimeout(() => w({
+								sort: I.w.NEW
+							}, I.w.NEW))
+						})(), Object(N.a)(!!E), T.current = setTimeout(() => w({
 							type: "reset"
 						}), 1e3)
 					}, [R]);
@@ -464,7 +464,7 @@
 							}
 						}
 					}), [l]),
-					C = Object(u.useMemo)(() => ({
+					I = Object(u.useMemo)(() => ({
 						input: {
 							channel: {
 								...O,
@@ -472,7 +472,7 @@
 							}
 						}
 					}), [l]),
-					N = Object(u.useMemo)(() => ({
+					C = Object(u.useMemo)(() => ({
 						input: {
 							channel: {
 								...O,
@@ -480,7 +480,7 @@
 							}
 						}
 					}), [l]),
-					[I, x] = Object(u.useState)(0),
+					[N, x] = Object(u.useState)(0),
 					[v, y] = Object(u.useState)(0),
 					E = Object(u.useCallback)(a()(e => {
 						e(0), S(null)
@@ -500,17 +500,17 @@
 					D = Object(u.useRef)(null);
 				Object(u.useEffect)(() => {
 					if (!t && !o) return void(w && S(null));
-					if (I >= j.a || v >= j.b) return P.current = ((e, t) => {
+					if (N >= j.a || v >= j.b) return P.current = ((e, t) => {
 						return t >= j.b ? n.fbt._("{number of people typing} people typing...", [n.fbt._param("number of people typing", h(t))], {
 							hk: "31RibC"
 						}) : n.fbt._("{number of users reading} people here", [n.fbt._param("number of users reading", h(e))], {
 							hk: "3foy5g"
 						})
-					})(I, v), void(w || S(Date.now()));
+					})(N, v), void(w || S(Date.now()));
 					if (!w) return;
 					const e = Date.now() - w;
 					e >= j.f ? S(null) : D.current = setTimeout(() => S(null), j.f - e)
-				}, [w, t, o, I, v]);
+				}, [w, t, o, N, v]);
 				const {
 					className: U,
 					shouldMount: A,
@@ -527,11 +527,11 @@
 					onData: i.a,
 					queryKey: "userIsReadingPost"
 				}), (s || t) && m.a.createElement(p.a, {
-					variables: C,
+					variables: I,
 					onData: t ? R : i.a,
 					queryKey: "usersReadingIndicator"
 				}), (c || o) && m.a.createElement(p.a, {
-					variables: N,
+					variables: C,
 					onData: o ? R : i.a,
 					queryKey: "postTypingIndicator"
 				}), A && m.a.createElement("div", {
@@ -617,4 +617,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommentPill.d6f0c8bf46d992127fc9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommentPill.eb63818b6256471e91bf.js.map

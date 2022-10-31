@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.0df2613e820f406cca48.js
-// Retrieved at 10/31/2022, 12:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.7db18382245f32ac4ef3.js
+// Retrieved at 10/31/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1239,7 +1239,7 @@
 					} = Ke,
 					[Qe, Je] = Object(r.useState)(!1),
 					Xe = Object(r.useCallback)(() => {
-						Je(!Qe), Object(te.Pb)(), Ae(Object(se.d)(ge))
+						Je(!Qe), Object(te.Qb)(), Ae(Object(se.d)(ge))
 					}, [Qe, ge, Ae]);
 				let Ze = s.a.createElement(Q.a, {
 					className: le.a.classicThumbnail,
@@ -6670,10 +6670,10 @@
 				s = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(r.a)(e => Object(o.c)(e, {
-					experimentName: s.qg,
+					experimentName: s.rg,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				a = Object(r.a)(i, e => e === s.hg)
+				a = Object(r.a)(i, e => e === s.ig)
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
 			"use strict";
@@ -7082,4 +7082,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.0df2613e820f406cca48.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.7db18382245f32ac4ef3.js.map

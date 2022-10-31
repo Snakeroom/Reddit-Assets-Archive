@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.944228fc7978881950f3.js
-// Retrieved at 10/27/2022, 3:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.f821ca04abced0d0598a.js
+// Retrieved at 10/31/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -425,7 +425,7 @@
 						return
 					}
 					const j = {
-						...i()(e.queryParams, [...g.p, g.k]),
+						...i()(e.queryParams, [...g.q, g.l]),
 						sort: a,
 						t: Object(P.a)(a, _)
 					};
@@ -486,7 +486,7 @@
 						dist: f.dist,
 						sort: m,
 						t: p,
-						...i()(d, g.p),
+						...i()(d, g.q),
 						layout: Object(_.S)(o, {}).toLowerCase()
 					}, Object(S.a)(o));
 					if (C.ok) {
@@ -724,7 +724,7 @@
 					} = Ze,
 					[Qe, Je] = Object(n.useState)(!1),
 					$e = Object(n.useCallback)(() => {
-						Je(!Qe), Object(te.Pb)(), Le(Object(re.d)(_e))
+						Je(!Qe), Object(te.Qb)(), Le(Object(re.d)(_e))
 					}, [Qe, _e, Le]);
 				let Ye = r.a.createElement(Q.a, {
 					className: le.a.classicThumbnail,
@@ -1649,7 +1649,7 @@
 				} = e, F = async () => {
 					if (a ? await I() : await Object(u.p)(), l) {
 						const e = new URL(window.location.href);
-						e.searchParams.set(P.j, "1"), window.location.href = e.href
+						e.searchParams.set(P.k, "1"), window.location.href = e.href
 					} else window.location.reload()
 				};
 				switch (s) {
@@ -5915,10 +5915,10 @@
 				r = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: r.qg,
+					experimentName: r.rg,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				a = Object(n.a)(i, e => e === r.hg)
+				a = Object(n.a)(i, e => e === r.ig)
 		},
 		"./src/redditGQL/operations/CreateLiveAudioRoomOnProfile.json": function(e) {
 			e.exports = JSON.parse('{"id":"e35a47c6aa21"}')
@@ -5949,4 +5949,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.944228fc7978881950f3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.f821ca04abced0d0598a.js.map

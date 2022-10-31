@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.7ec3e1898b15927109b1.js
-// Retrieved at 10/31/2022, 12:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.686add4c509895b2ff2e.js
+// Retrieved at 10/31/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -1535,7 +1535,7 @@
 								commentId: e,
 								followState: t
 							})).ok) {
-							Object(V.xb)(null !== (u = null === (l = null === (d = r().pages) || void 0 === d ? void 0 : d.comments) || void 0 === l ? void 0 : l.followed) && void 0 !== u ? u : [], null === (m = r().user.account) || void 0 === m ? void 0 : m.id);
+							Object(V.yb)(null !== (u = null === (l = null === (d = r().pages) || void 0 === d ? void 0 : d.comments) || void 0 === l ? void 0 : l.followed) && void 0 !== u ? u : [], null === (m = r().user.account) || void 0 === m ? void 0 : m.id);
 							const e = s ? o.fbt._("Followed! You’ll get updates when there’s new activity.", null, {
 								hk: "2O1Ou3"
 							}) : o.fbt._("Unfollowed. You won’t get updates on this comment anymore.", null, {
@@ -2868,7 +2868,7 @@
 						}),
 						kind: u.b.SuccessCommunity,
 						text: c
-					})), Object(a.vb)(r + 1)
+					})), Object(a.wb)(r + 1)
 				}
 		},
 		"./src/reddit/actions/postCreation/mediaUpload.ts": function(e, t, n) {
@@ -7402,8 +7402,8 @@
 					const n = t ? `/r/${t}/search` : "/search",
 						o = `${t?"flair_name":"flair"}:"${e}"`;
 					return Object(l.a)(n, {
-						[x.y]: o,
-						[x.B]: t ? "1" : ""
+						[x.z]: o,
+						[x.C]: t ? "1" : ""
 					})
 				},
 				L = e => e.isFlairFilter ? c.a.createElement(y.default, {
@@ -31064,7 +31064,7 @@
 						const {
 							doNotShowOriginalContentDisclaimerClicked: e
 						} = this.props;
-						e(), Object(zt.sb)(Kt.ORIGINAL_CONTENT_DISCLAIMER, !0), this.setState({
+						e(), Object(zt.tb)(Kt.ORIGINAL_CONTENT_DISCLAIMER, !0), this.setState({
 							showOCDisclaimer: !1
 						})
 					}, this.handleOriginalContentClick = () => {
@@ -31337,13 +31337,13 @@
 			const wn = [{
 					id: Gt.d,
 					getShowTimesLeft: zt.K,
-					setShowTimesLeft: zt.Ob,
+					setShowTimesLeft: zt.Pb,
 					tooltipShown: Tn.n,
 					tooltipDismissed: Tn.m
 				}, {
 					id: Gt.c,
 					getShowTimesLeft: zt.J,
-					setShowTimesLeft: zt.Nb,
+					setShowTimesLeft: zt.Ob,
 					tooltipShown: Tn.f,
 					tooltipDismissed: Tn.e
 				}],
@@ -38519,29 +38519,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.vg
+						experimentName: o.wg
 					}) === o.Vd
 				},
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.wg
+						experimentName: o.xg
 					}) === o.Vd
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.ug
+						experimentName: o.vg
 					});
-					return t === o.kg.TypingIndicators || t === o.kg.IndicatorsPlusCTA
+					return t === o.lg.TypingIndicators || t === o.lg.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.d)(e, {
-						experimentName: o.ug
+						experimentName: o.vg
 					});
-					return (null == t ? void 0 : t.variant) === o.kg.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.lg.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -39226,4 +39226,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.7ec3e1898b15927109b1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.686add4c509895b2ff2e.js.map

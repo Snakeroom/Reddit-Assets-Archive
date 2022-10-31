@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostSetPage.c68e6e53a0bbf1845b06.js
-// Retrieved at 10/27/2022, 3:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostSetPage.a9c39cb37a44c7c7b556.js
+// Retrieved at 10/31/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostSetPage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -862,7 +862,7 @@
 			const g = e => {
 				return Object(f.c)(e, {
 					experimentEligibilitySelector: f.a,
-					experimentName: h.zf
+					experimentName: h.Af
 				}) === h.Vd
 			};
 			var x = n("./src/reddit/selectors/recapGame.ts"),
@@ -902,7 +902,7 @@
 						_ && N(setTimeout(() => {
 							f.current && (f.current.classList.add(v.a.transform), f.current.style.width = `${w}px`)
 						}, 4750)), _ && C(setTimeout(() => {
-							O(!1), Object(b.Rb)(A, !1)
+							O(!1), Object(b.Sb)(A, !1)
 						}, 5e3))
 					};
 				Object(s.useEffect)(() => {
@@ -929,7 +929,7 @@
 					},
 					onMouseLeave: D,
 					onClick: () => {
-						k && clearTimeout(k), j && clearTimeout(j), O(!1), Object(b.Rb)(A, !0), h((() => e => ({
+						k && clearTimeout(k), j && clearTimeout(j), O(!1), Object(b.Sb)(A, !0), h((() => e => ({
 							source: "recap",
 							action: "click",
 							noun: "feed_banana",
@@ -2960,4 +2960,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.c68e6e53a0bbf1845b06.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.a9c39cb37a44c7c7b556.js.map

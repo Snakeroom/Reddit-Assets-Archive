@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.8b700d6aec10f6728d63.js
-// Retrieved at 10/27/2022, 3:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.a3abcb00b9d4d8954cfa.js
+// Retrieved at 10/31/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, r) {
@@ -73,7 +73,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(u.zg)(e.category_name)
+									displayText: Object(u.Ag)(e.category_name)
 								};
 								r.push(s.id), t[s.id] = s
 							}), {
@@ -93,7 +93,7 @@
 					t(k({
 						categoryId: e,
 						rank: n + 1
-					})), Object(m.ob)(Object(p.d)(r()))
+					})), Object(m.pb)(Object(p.d)(r()))
 				}
 		},
 		"./src/reddit/actions/pages/subredditLeaderboard.ts": function(e, t, r) {
@@ -242,7 +242,7 @@
 			const y = e => {
 				return Object(h.c)(e, {
 					experimentEligibilitySelector: h.a,
-					experimentName: g.zf
+					experimentName: g.Af
 				}) === g.Vd
 			};
 			var f = r("./src/reddit/selectors/recapGame.ts"),
@@ -282,7 +282,7 @@
 						x && j(setTimeout(() => {
 							h.current && (h.current.classList.add(E.a.transform), h.current.style.width = `${T}px`)
 						}, 4750)), x && O(setTimeout(() => {
-							_(!1), Object(p.Rb)(M, !1)
+							_(!1), Object(p.Sb)(M, !1)
 						}, 5e3))
 					};
 				Object(s.useEffect)(() => {
@@ -309,7 +309,7 @@
 					},
 					onMouseLeave: A,
 					onClick: () => {
-						v && clearTimeout(v), N && clearTimeout(N), _(!1), Object(p.Rb)(M, !0), g((() => e => ({
+						v && clearTimeout(v), N && clearTimeout(N), _(!1), Object(p.Sb)(M, !0), g((() => e => ({
 							source: "recap",
 							action: "click",
 							noun: "feed_banana",
@@ -2661,7 +2661,7 @@
 					} = t;
 					return Object(g.b)(r.params.categoryName || "")
 				},
-				Ee = Object(m.yg)(p.i),
+				Ee = Object(m.zg)(p.i),
 				Ce = Object(d.c)({
 					categories: e => Object(ye.b)(e, {
 						categoriesOrder: Ee
@@ -2814,4 +2814,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.8b700d6aec10f6728d63.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.a3abcb00b9d4d8954cfa.js.map

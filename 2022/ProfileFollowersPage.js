@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.f74d6a64de0ae1fdaeef.js
-// Retrieved at 10/27/2022, 3:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.01cf2f1876ae0be8508e.js
+// Retrieved at 10/31/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -799,7 +799,7 @@
 					const b = f.e[Object(x.S)(s(), {})],
 						g = p.toLowerCase(),
 						I = {
-							...n()(e.queryParams, v.p),
+							...n()(e.queryParams, v.q),
 							sort: u,
 							layout: b,
 							t: m
@@ -1306,7 +1306,7 @@
 			const v = e => {
 				return Object(f.c)(e, {
 					experimentEligibilitySelector: f.a,
-					experimentName: b.zf
+					experimentName: b.Af
 				}) === b.Vd
 			};
 			var x = s("./src/reddit/selectors/recapGame.ts"),
@@ -1346,7 +1346,7 @@
 						y && j(setTimeout(() => {
 							f.current && (f.current.classList.add(C.a.transform), f.current.style.width = `${N}px`)
 						}, 4750)), y && _(setTimeout(() => {
-							w(!1), Object(p.Rb)(L, !1)
+							w(!1), Object(p.Sb)(L, !1)
 						}, 5e3))
 					};
 				Object(n.useEffect)(() => {
@@ -1373,7 +1373,7 @@
 					},
 					onMouseLeave: B,
 					onClick: () => {
-						E && clearTimeout(E), S && clearTimeout(S), w(!1), Object(p.Rb)(L, !0), b((() => e => ({
+						E && clearTimeout(E), S && clearTimeout(S), w(!1), Object(p.Sb)(L, !0), b((() => e => ({
 							source: "recap",
 							action: "click",
 							noun: "feed_banana",
@@ -6264,4 +6264,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.f74d6a64de0ae1fdaeef.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.01cf2f1876ae0be8508e.js.map

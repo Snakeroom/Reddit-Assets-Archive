@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.f43501fd3625739278c6.js
-// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.c91cb3baffc268b0da33.js
+// Retrieved at 10/31/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -162,8 +162,8 @@
 					}), " ")
 				}),
 				L = n("./src/reddit/constants/parameters.ts"),
-				j = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				T = n("./src/reddit/controls/Button/index.tsx"),
+				T = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				j = n("./src/reddit/controls/Button/index.tsx"),
 				R = n("./src/chat/controls/Svg/index.tsx");
 
 			function O() {
@@ -189,7 +189,7 @@
 				A = n.n(N);
 			const {
 				fbt: G
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), H = u.a.wrapped(P, "PrivateKey", A.a), U = u.a.div("ButtonsContainer", A.a), W = u.a.div("Container", A.a), z = u.a.div("ContainerExp", A.a), K = u.a.div("Description", A.a), V = u.a.div("PrivateSubredditDetails", A.a), Z = u.a.div("PrivateSubredditDescription", A.a), J = u.a.h3("PrivateSubredditName", A.a), Y = u.a.a("Link", A.a), X = u.a.wrapped(T.n, "LinkRouterButton", A.a), Q = u.a.wrapped(T.m, "LinkButton", A.a), $ = u.a.wrapped(T.q, "SecondaryLinkRouterButton", A.a), ee = u.a.wrapped(T.p, "SecondaryLinkButton", A.a), te = u.a.wrapped(X, "GoHomeLinkButton", A.a), ne = u.a.wrapped(b.a, "CreateCommunityButton", A.a), re = u.a.img("Image", A.a), ae = u.a.img("ImagePlaceholder", A.a), oe = u.a.wrapped(X, "LeftLinkRouterButton", A.a), ie = u.a.wrapped(Q, "LeftLinkButton", A.a), se = u.a.wrapped(ee, "SecondaryLeftLinkButton", A.a), le = u.a.wrapped($, "SecondaryLeftLinkRouterButton", A.a), ce = u.a.h3("Title", A.a), ue = u.a.div("PageBody", A.a), de = u.a.div("InterstitialMessageWrapper", A.a), me = Object(c.c)({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), H = u.a.wrapped(P, "PrivateKey", A.a), U = u.a.div("ButtonsContainer", A.a), W = u.a.div("Container", A.a), z = u.a.div("ContainerExp", A.a), K = u.a.div("Description", A.a), V = u.a.div("PrivateSubredditDetails", A.a), Z = u.a.div("PrivateSubredditDescription", A.a), J = u.a.h3("PrivateSubredditName", A.a), Y = u.a.a("Link", A.a), X = u.a.wrapped(j.n, "LinkRouterButton", A.a), Q = u.a.wrapped(j.m, "LinkButton", A.a), $ = u.a.wrapped(j.q, "SecondaryLinkRouterButton", A.a), ee = u.a.wrapped(j.p, "SecondaryLinkButton", A.a), te = u.a.wrapped(X, "GoHomeLinkButton", A.a), ne = u.a.wrapped(b.a, "CreateCommunityButton", A.a), re = u.a.img("Image", A.a), ae = u.a.img("ImagePlaceholder", A.a), oe = u.a.wrapped(X, "LeftLinkRouterButton", A.a), ie = u.a.wrapped(Q, "LeftLinkButton", A.a), se = u.a.wrapped(ee, "SecondaryLeftLinkButton", A.a), le = u.a.wrapped($, "SecondaryLeftLinkRouterButton", A.a), ce = u.a.h3("Title", A.a), ue = u.a.div("PageBody", A.a), de = u.a.div("InterstitialMessageWrapper", A.a), me = Object(c.c)({
 				isLoggedIn: M.Q,
 				origin: F.k,
 				user: M.l,
@@ -208,7 +208,7 @@
 					return r > Date.now() - a
 				})(e),
 				isSeo: F.h
-			}), he = Object(j.u)(), pe = Object(i.b)(me, (e, t) => {
+			}), he = Object(T.u)(), pe = Object(i.b)(me, (e, t) => {
 				let {
 					subredditName: n
 				} = t;
@@ -243,14 +243,14 @@
 					interstitialWarningMessage: x,
 					interstitialWarningMessageHtml: C,
 					interstitialWarningMessageRTJson: w,
-					setNSFWPreference: j,
-					subredditDescription: T,
+					setNSFWPreference: T,
+					subredditDescription: j,
 					subredditName: R,
 					user: O
 				} = e, P = async () => {
-					if (s ? await j() : await Object(m.p)(), u) {
+					if (s ? await T() : await Object(m.p)(), u) {
 						const e = new URL(window.location.href);
-						e.searchParams.set(L.j, "1"), window.location.href = e.href
+						e.searchParams.set(L.k, "1"), window.location.href = e.href
 					} else window.location.reload()
 				};
 				switch (n) {
@@ -306,7 +306,7 @@
 					case D.a.PrivateSubreddit:
 						return o.a.createElement("div", null, o.a.createElement(H, null), o.a.createElement(ce, null, "r/", R, " ", G._("is a private community", null, {
 							hk: "7zZmq"
-						})), T && T.length && o.a.createElement(V, null, o.a.createElement(J, null, "r/", R), o.a.createElement(Z, null, o.a.createElement("div", null, T))), o.a.createElement(K, null, G._("The moderators of", null, {
+						})), j && j.length && o.a.createElement(V, null, o.a.createElement(J, null, "r/", R), o.a.createElement(Z, null, o.a.createElement("div", null, j))), o.a.createElement(K, null, G._("The moderators of", null, {
 							hk: "3QSrbr"
 						}), " ", "r/", R, " ", G._("have set this community as private.", null, {
 							hk: "3zhD9F"
@@ -760,4 +760,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.f43501fd3625739278c6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.c91cb3baffc268b0da33.js.map

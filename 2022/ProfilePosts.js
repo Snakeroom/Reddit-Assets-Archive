@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.ae64e8055c47be8a429d.js
-// Retrieved at 10/31/2022, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.c1d6cc06e5fdad12cb12.js
+// Retrieved at 10/31/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1269,7 +1269,7 @@
 						const n = {
 							includeIdentity: g,
 							includeModerated: x,
-							recentPostIds: Object(P.R)(null == _ ? void 0 : _.id).reverse()
+							recentPostIds: Object(P.S)(null == _ ? void 0 : _.id).reverse()
 						};
 						y = await ((e, t) => Object(d.a)(e, {
 							...p,
@@ -1544,7 +1544,7 @@
 				} = e, I = async () => {
 					if (a ? await P() : await Object(m.p)(), l) {
 						const e = new URL(window.location.href);
-						e.searchParams.set(S.j, "1"), window.location.href = e.href
+						e.searchParams.set(S.k, "1"), window.location.href = e.href
 					} else window.location.reload()
 				};
 				switch (n) {
@@ -4217,7 +4217,7 @@
 						experimentEligibilitySelector: i.R,
 						experimentName: r.Bd
 					});
-					return !(!t || Object(r.Ag)(t))
+					return !(!t || Object(r.Bg)(t))
 				},
 				a = e => {
 					return Object(s.c)(e, {
@@ -4252,4 +4252,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.ae64e8055c47be8a429d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.c1d6cc06e5fdad12cb12.js.map

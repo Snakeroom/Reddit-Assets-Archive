@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.f078240923e99cc1c5da.js
-// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.9e1fcaf4d47e81b76923.js
+// Retrieved at 10/31/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UsernameConfirmationModals"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -154,8 +154,8 @@
 				f = n("./src/reddit/components/InfoTextTooltip/Hooked.tsx"),
 				g = n("./src/reddit/components/Settings/ModalContainer/index.tsx"),
 				C = n("./src/reddit/controls/Button/index.tsx"),
-				_ = n("./src/reddit/controls/Link/index.tsx"),
-				E = n("./src/reddit/hooks/useInfoTextTooltip.ts"),
+				E = n("./src/reddit/controls/Link/index.tsx"),
+				_ = n("./src/reddit/hooks/useInfoTextTooltip.ts"),
 				O = n("./src/reddit/icons/fonts/index.tsx"),
 				N = n("./src/reddit/components/Onboarding/UsernameConfirmationModals/index.m.less"),
 				v = n.n(N);
@@ -248,7 +248,7 @@
 						username: d
 					} = e;
 					Object(s.useEffect)(l, []);
-					const m = Object(E.a)({
+					const m = Object(_.a)({
 							placement: "top"
 						}),
 						u = Object(s.useCallback)(e => {
@@ -291,7 +291,7 @@
 						className: Object(h.a)(v.a.confirmContainer, {
 							[v.a.mResponsive]: n
 						}),
-						description: a.fbt._("You’re logged in through a {=connected Google account}. If you have a different Reddit account you’d like to use, log in using your username and password.", [a.fbt._param("=connected Google account", o.a.createElement(_.a, {
+						description: a.fbt._("You’re logged in through a {=connected Google account}. If you have a different Reddit account you’d like to use, log in using your username and password.", [a.fbt._param("=connected Google account", o.a.createElement(E.a, {
 							target: "_blank",
 							href: "https://reddit.zendesk.com/hc/en-us/categories/200073949-Reddit-101"
 						}, a.fbt._("connected Google account", null, {
@@ -382,7 +382,7 @@
 					},
 					logOutAndOpenLoginModal: () => {
 						const e = Object(l.a)(window.location.href, {
-							[L.D]: !0
+							[L.E]: !0
 						});
 						Object(d.a)(e, []), t.logoutUser()
 					},
@@ -419,15 +419,15 @@
 						logOutAndOpenLoginModal: f,
 						openInterceptActionModal: g,
 						saveUsernameError: C,
-						saveUsernameSuccess: _,
-						username: E,
+						saveUsernameSuccess: E,
+						username: _,
 						welcomeBackModalOpen: O
 					} = e;
-					const [N, v] = Object(s.useState)(E || ""), [x, M] = Object(s.useState)(!1), S = Object(W.a)(), U = Object(s.useCallback)(async () => {
+					const [N, v] = Object(s.useState)(_ || ""), [x, M] = Object(s.useState)(!1), S = Object(W.a)(), U = Object(s.useCallback)(async () => {
 						M(!0);
 						const e = await Object(H.a)(t(), N);
-						e.ok ? (S(Object(D.j)()), _(N, E)) : (C(G(e.error)), M(!1))
-					}, [t, E, S, C, _, N]);
+						e.ok ? (S(Object(D.j)()), E(N, _)) : (C(G(e.error)), M(!1))
+					}, [t, _, S, C, E, N]);
 					return o.a.createElement(s.Fragment, null, O && o.a.createElement(y, {
 						isNameEditable: p,
 						isResponsive: h,
@@ -464,7 +464,7 @@
 						onView: () => S(Object(K.L)()),
 						username: N
 					}), n && o.a.createElement(A.a, {
-						initialUsername: E || "",
+						initialUsername: _ || "",
 						isResponsive: h,
 						onClose: r,
 						onContinue: () => {
@@ -500,8 +500,8 @@
 				f = n("./src/reddit/constants/headers.ts"),
 				g = n("./src/reddit/components/Settings/SuggestedUsernames/index.m.less"),
 				C = n.n(g);
-			const _ = m.a.wrapped(u.a, "refreshIcon", C.a),
-				E = m.a.button("refreshButton", C.a),
+			const E = m.a.wrapped(u.a, "refreshIcon", C.a),
+				_ = m.a.button("refreshButton", C.a),
 				O = e => e > 3 ? 3 : e;
 			var N = Object(p.b)(e => {
 					const {
@@ -550,10 +550,10 @@
 						hk: "2yXDBw"
 					}) : a.fbt._("Can’t think of one? Use one of these:", null, {
 						hk: "23kfek"
-					}), c.a.createElement(E, {
+					}), c.a.createElement(_, {
 						disabled: p,
 						onClick: v
-					}, c.a.createElement(_, null))), c.a.createElement("ul", {
+					}, c.a.createElement(E, null))), c.a.createElement("ul", {
 						className: C.a.suggestedUsernames
 					}, m.slice(...o).map(e => c.a.createElement("li", {
 						className: Object(i.a)(C.a.suggestedUsername, {
@@ -825,9 +825,9 @@
 			})), n.d(t, "d", (function() {
 				return C
 			})), n.d(t, "g", (function() {
-				return _
-			})), n.d(t, "c", (function() {
 				return E
+			})), n.d(t, "c", (function() {
+				return _
 			})), n.d(t, "i", (function() {
 				return O
 			})), n.d(t, "e", (function() {
@@ -890,13 +890,13 @@
 					},
 					source: e
 				}),
-				_ = () => e => ({
+				E = () => e => ({
 					...Object(u.o)(e),
 					action: l.c.VIEW,
 					noun: a.CHANGE_USERNAME_CONFIRMATION,
 					source: p
 				}),
-				E = e => t => ({
+				_ = e => t => ({
 					...Object(u.o)(t),
 					action: l.c.CLICK,
 					noun: a.CHANGE_USERNAME_CONFIRMATION,
@@ -978,4 +978,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.f078240923e99cc1c5da.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.9e1fcaf4d47e81b76923.js.map
