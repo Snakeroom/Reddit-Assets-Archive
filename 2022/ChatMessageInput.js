@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.e79cf061de8bef5af230.js
-// Retrieved at 10/27/2022, 1:50:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.2fa8d9f0ba35cefc71f0.js
+// Retrieved at 10/31/2022, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, s) {},
@@ -2453,22 +2453,6 @@
 					e.Comment = "comment", e.Post = "post", e.Profile = "profile", e.Subreddit = "subreddit"
 				}(a || (a = {}))
 		},
-		"./src/reddit/models/Product/index.ts": function(e, t, s) {
-			"use strict";
-			var r;
-
-			function n(e) {
-				return e.substring(e.lastIndexOf("|") + 1)
-			}
-			s.d(t, "a", (function() {
-					return r
-				})), s.d(t, "b", (function() {
-					return n
-				})),
-				function(e) {
-					e.Badge = "badge", e.EmotesPack = "emotes_pack", e.Giphy = "giphy", e.Membership = "membership"
-				}(r || (r = {}))
-		},
 		"./src/reddit/models/PublicAccessNetwork/index.ts": function(e, t, s) {
 			"use strict";
 			var r;
@@ -3063,4 +3047,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.e79cf061de8bef5af230.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.2fa8d9f0ba35cefc71f0.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.6ed200cfe8d5dae740dc.js
-// Retrieved at 10/27/2022, 1:50:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.43285939acba6024afc1.js
+// Retrieved at 10/31/2022, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1792,34 +1792,26 @@
 				p = s("./src/reddit/actions/toaster.ts"),
 				h = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				b = s("./src/reddit/controls/LoadingIcon/index.tsx"),
-				g = s("./src/config.ts"),
-				f = s("./src/lib/addQueryParams/index.ts");
-			const _ = "pg";
+				g = s("./src/reddit/endpoints/giphy/index.ts"),
+				f = s("./src/reddit/icons/svgs/Close/index.tsx"),
+				_ = s("./src/reddit/models/Toast/index.ts"),
+				x = s("./src/reddit/selectors/economics.ts"),
+				y = s("./src/reddit/components/RichTextEditor/helpers/common.ts"),
+				v = s("./src/reddit/components/RichTextEditor/media/helpers.ts");
+			let w;
 
-			function x(e) {
-				return e.json().then(e => {
-					if (200 !== e.meta.status) throw new Error(`${e.meta.status} ${e.meta.msg}`);
-					return e
-				})
+			function C() {
+				w || (w = fetch("https://meta.redditmedia.com/public/fortnitebr/giphy_blacklist.json").then(e => e.json()))
 			}
-			var y = s("./src/reddit/icons/svgs/Close/index.tsx"),
-				v = s("./src/reddit/models/Toast/index.ts"),
-				w = s("./src/reddit/selectors/economics.ts"),
-				C = s("./src/reddit/components/RichTextEditor/helpers/common.ts"),
-				k = s("./src/reddit/components/RichTextEditor/media/helpers.ts");
-			let E;
-
-			function j() {
-				E || (E = fetch("https://meta.redditmedia.com/public/fortnitebr/giphy_blacklist.json").then(e => e.json()))
-			}
-			var I = s("./node_modules/lodash/debounce.js"),
-				N = s.n(I),
-				O = s("./src/reddit/icons/svgs/Search/index.tsx"),
-				P = s("./src/reddit/selectors/user.ts"),
-				S = s("./src/reddit/components/RichTextEditor/media/GifTooltip/SearchBox/index.m.less"),
-				F = s.n(S);
-			const M = 400;
-			class T extends d.a.Component {
+			var k = s("./node_modules/lodash/debounce.js"),
+				E = s.n(k),
+				j = s("./src/config.ts"),
+				I = s("./src/reddit/icons/svgs/Search/index.tsx"),
+				N = s("./src/reddit/selectors/user.ts"),
+				O = s("./src/reddit/components/RichTextEditor/media/GifTooltip/SearchBox/index.m.less"),
+				P = s.n(O);
+			const S = 400;
+			class F extends d.a.Component {
 				constructor() {
 					super(...arguments), this.elementRef = null, this.state = {
 						query: ""
@@ -1827,9 +1819,9 @@
 						this.setState({
 							query: e.target.value
 						}, this.dispatchOnChange)
-					}, this.dispatchOnChange = N()(() => {
+					}, this.dispatchOnChange = E()(() => {
 						this.props.onChange(this.state.query)
-					}, M), this.focusOnInput = () => {
+					}, S), this.focusOnInput = () => {
 						this.elementRef && !1 !== this.props.autofocus && this.elementRef.focus()
 					}
 				}
@@ -1843,48 +1835,42 @@
 						query: t
 					} = this.state, s = `powered-by-giphy-${e?"dark":"light"}.png`;
 					return d.a.createElement("div", {
-						className: Object(n.a)(F.a.searchBox, this.props.className)
+						className: Object(n.a)(P.a.searchBox, this.props.className)
 					}, d.a.createElement("button", {
-						className: F.a.searchIconButton,
+						className: P.a.searchIconButton,
 						onClick: this.focusOnInput
-					}, d.a.createElement(O.a, {
-						className: F.a.searchIcon
+					}, d.a.createElement(I.a, {
+						className: P.a.searchIcon
 					})), d.a.createElement("input", {
 						ref: e => this.elementRef = e,
 						type: "text",
-						className: F.a.searchInput,
+						className: P.a.searchInput,
 						placeholder: i.fbt._("Search GIFs", null, {
 							hk: "3upjCv"
 						}),
 						value: t,
 						onChange: this.onQueryChange
 					}), t.length < 25 && d.a.createElement("div", {
-						className: F.a.poweredByGiphy,
+						className: P.a.poweredByGiphy,
 						style: {
-							backgroundImage: `url(${g.a.assetPath}/img/memberships/${s}`
+							backgroundImage: `url(${j.a.assetPath}/img/memberships/${s}`
 						},
 						onClick: this.focusOnInput
 					}))
 				}
 			}
-			const R = Object(u.c)({
-				isNightMode: P.eb
+			const M = Object(u.c)({
+				isNightMode: N.eb
 			});
-			var A = Object(m.b)(R)(T),
-				z = s("./src/lib/constants/icons.ts"),
-				B = s("./src/reddit/controls/Button/index.tsx"),
-				D = s("./src/reddit/icons/fonts/index.tsx");
-			var L = s("./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less"),
-				H = s.n(L);
-			const V = 4,
-				W = a()((function() {
-					const e = Object(f.a)("https://api.giphy.com/v1/gifs/trending", {
-						api_key: g.a.giphyApiKey,
-						rating: _
-					});
-					return fetch(e).then(x)
-				}));
-			class Z extends d.a.Component {
+			var T = Object(m.b)(M)(F),
+				R = s("./src/lib/constants/icons.ts"),
+				A = s("./src/reddit/controls/Button/index.tsx"),
+				z = s("./src/reddit/icons/fonts/index.tsx");
+			var B = s("./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less"),
+				D = s.n(B);
+			const L = 4,
+				H = a()(g.b);
+			class V extends d.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						columns: [
@@ -1918,24 +1904,24 @@
 					}, 300), this.onResultClick = e => {
 						this.props.onResultClick(this.props.hasGifProduct);
 						const t = this.props.editorState,
-							s = Object(k.k)(t, e.id, e.url, e.hasDownsizedImage, e.width, e.height, t.getSelection().getEndKey(), C.a.before);
+							s = Object(v.k)(t, e.id, e.url, e.hasDownsizedImage, e.width, e.height, t.getSelection().getEndKey(), y.a.before);
 						this.props.onChange(s), this.props.onClose()
 					}
 				}
 				componentDidMount() {
-					this.mounted = !0, !this.state.query && this.state.loading && this.loadTrendingGifs(), j()
+					this.mounted = !0, !this.state.query && this.state.loading && this.loadTrendingGifs(), C()
 				}
 				componentWillUnmount() {
 					this.mounted = !1
 				}
 				loadTrendingGifs() {
-					W().then(e => {
+					H().then(e => {
 						this.state.query || this.addGiphyResults(e)
 					}).catch(() => {
 						this.mounted && (this.setState({
 							showReload: !0,
 							loading: !1
-						}), W.cache.clear())
+						}), H.cache.clear())
 					})
 				}
 				async loadMoreResults() {
@@ -1946,20 +1932,12 @@
 					} = this.state;
 					!e && s && null !== t && (await
 						function(e) {
-							return j(), E.then(t => {
+							return C(), w.then(t => {
 								return !!e.split(" ").concat(e).find(e => -1 !== t.indexOf(e.toLowerCase()))
 							}).catch(() => !1)
 						}(s) || (this.setState({
 							loading: !0
-						}), function(e) {
-							const t = Object(f.a)("https://api.giphy.com/v1/gifs/search", {
-								api_key: g.a.giphyApiKey,
-								q: e.query,
-								offset: e.offset || 0,
-								rating: e.rating || _
-							});
-							return fetch(t).then(x)
-						}({
+						}), Object(g.c)({
 							query: s,
 							offset: t
 						}).then(e => {
@@ -1995,7 +1973,7 @@
 						}(e);
 						if (i) {
 							const e = s.reduce((e, t, i) => t < s[e] ? i : e, 0);
-							t[e].push(i), s[e] += i.fixedWidthHeight + V
+							t[e].push(i), s[e] += i.fixedWidthHeight + L
 						}
 					});
 					const i = e.pagination.offset + e.pagination.count;
@@ -2015,10 +1993,10 @@
 					} = this.state;
 					let a = null;
 					return a = r ? d.a.createElement("div", {
-						className: H.a.textContentContainer
-					}, d.a.createElement(B.t, {
-						priority: B.c.Plain,
-						size: B.d.XS,
+						className: D.a.textContentContainer
+					}, d.a.createElement(A.t, {
+						priority: A.c.Plain,
+						size: A.d.XS,
 						text: i.fbt._("Reload", null, {
 							hk: "4jkmsI"
 						}),
@@ -2026,25 +2004,25 @@
 							hk: "4jkmsI"
 						}),
 						onClick: this.reloadGifs,
-						Icon: Object(D.b)(z.a.refresh)
+						Icon: Object(z.b)(R.a.refresh)
 					})) : s ? d.a.createElement("div", {
-						className: H.a.loadingSpinner
+						className: D.a.loadingSpinner
 					}, d.a.createElement(b.a, {
 						sizePx: 20,
 						center: !0
 					})) : 0 === (null === (e = t[0]) || void 0 === e ? void 0 : e.length) ? d.a.createElement("div", {
-						className: Object(n.a)(H.a.textContentContainer, H.a.noResultsText)
+						className: Object(n.a)(D.a.textContentContainer, D.a.noResultsText)
 					}, i.fbt._("No results", null, {
 						hk: "2vJ2bd"
 					})) : d.a.createElement(d.a.Fragment, null, d.a.createElement("div", {
-						className: Object(n.a)(H.a.results, {
-							[H.a.disabled]: this.props.disabled
+						className: Object(n.a)(D.a.results, {
+							[D.a.disabled]: this.props.disabled
 						})
 					}, t.map((e, t) => d.a.createElement("div", {
-						className: H.a.column,
+						className: D.a.column,
 						key: t
 					}, e.map(e => d.a.createElement("button", {
-						className: H.a.gifResult,
+						className: D.a.gifResult,
 						key: e.url,
 						onClick: () => this.onResultClick(e),
 						style: {
@@ -2052,44 +2030,44 @@
 						},
 						disabled: this.props.disabled
 					}, d.a.createElement("img", {
-						className: H.a.gifResultImage,
+						className: D.a.gifResultImage,
 						src: e.url
 					})))))), this.props.children), d.a.createElement("div", {
-						className: H.a.tooltip
+						className: D.a.tooltip
 					}, d.a.createElement("div", {
-						className: H.a.header
+						className: D.a.header
 					}, d.a.createElement("div", {
-						className: H.a.searchLine
-					}, d.a.createElement(A, {
+						className: D.a.searchLine
+					}, d.a.createElement(T, {
 						autofocus: this.props.autofocus,
 						onChange: this.onQueryChange,
-						className: H.a.searchBox
-					}), d.a.createElement(y.a, {
-						className: H.a.closeIcon,
+						className: D.a.searchBox
+					}), d.a.createElement(f.a, {
+						className: D.a.closeIcon,
 						onClick: () => this.props.onClose(!0)
 					}))), d.a.createElement("div", {
-						className: H.a.body,
+						className: D.a.body,
 						onScroll: this.onScroll
 					}, a, d.a.createElement("div", {
-						className: H.a.whiteScrim
+						className: D.a.whiteScrim
 					})))
 				}
 			}
-			const G = Object(u.c)({
+			const W = Object(u.c)({
 				hasGifProduct: (e, t) => {
 					let {
 						subreddit: s
 					} = t;
-					return Object(w.w)(e, s.id)
+					return Object(x.w)(e, s.id)
 				}
 			});
-			t.a = Object(h.c)(Object(m.b)(G, e => ({
+			t.a = Object(h.c)(Object(m.b)(W, e => ({
 				showErrorToast: t => e(Object(p.f)({
 					text: t,
-					kind: v.b.Error,
+					kind: _.b.Error,
 					duration: 5e3
 				}))
-			}))(Z))
+			}))(V))
 		},
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/SearchBox/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -3290,6 +3268,44 @@
 						text: a
 					}))
 				}
+			}
+		},
+		"./src/reddit/endpoints/giphy/index.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "c", (function() {
+				return a
+			})), s.d(t, "b", (function() {
+				return o
+			})), s.d(t, "a", (function() {
+				return c
+			}));
+			var i = s("./src/config.ts"),
+				n = s("./src/lib/addQueryParams/index.ts");
+			const r = "pg";
+			async function a(e) {
+				return l(Object(n.a)("https://api.giphy.com/v1/gifs/search", {
+					api_key: i.a.giphyApiKey,
+					q: e.query,
+					offset: e.offset || 0,
+					rating: e.rating || r
+				}))
+			}
+			async function o() {
+				return l(Object(n.a)("https://api.giphy.com/v1/gifs/trending", {
+					api_key: i.a.giphyApiKey,
+					rating: r
+				}))
+			}
+			async function c(e) {
+				return l(Object(n.a)(`https://api.giphy.com/v1/gifs/${e}`, {
+					api_key: i.a.giphyApiKey
+				}))
+			}
+			async function l(e) {
+				const t = await fetch(e),
+					s = await t.json();
+				if (200 !== s.meta.status) throw new Error(`${s.meta.status} ${s.meta.msg}`);
+				return s
 			}
 		},
 		"./src/reddit/featureFlags/component.tsx": function(e, t, s) {
@@ -6932,4 +6948,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.6ed200cfe8d5dae740dc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.43285939acba6024afc1.js.map
