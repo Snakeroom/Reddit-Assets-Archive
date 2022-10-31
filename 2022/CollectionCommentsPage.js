@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.a85230e9ed835a45af6d.js
-// Retrieved at 10/31/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.0582571557e663bdaa5d.js
+// Retrieved at 10/31/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -742,31 +742,29 @@
 		"./src/reddit/actions/eligibleUxExperiences/eligibleUxExperiences.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return p
+				return m
 			})), s.d(t, "a", (function() {
-				return h
+				return p
 			})), s.d(t, "c", (function() {
-				return g
+				return b
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./src/lib/initializeClient/installReducer.ts"),
 				r = s("./src/lib/makeActionCreator/index.ts"),
 				o = s("./src/lib/sentry/index.ts"),
-				i = s("./src/lib/makeGqlRequest/index.ts"),
-				a = s("./src/redditGQL/operations/FetchEligibleUXExperiences.json"),
-				d = s("./src/redditGQL/operations/StoreUxTargetingAction.json");
-			var c = s("./src/reddit/reducers/features/eligibleUXExperiences/index.ts"),
-				l = s("./src/reddit/selectors/eligibleUXExperiences.ts"),
-				m = s("./src/redditGQL/types.ts"),
-				u = s("./src/reddit/actions/eligibleUxExperiences/constants.ts");
+				i = s("./src/reddit/endpoints/eligibleUXExperiences/eligibleUxExperiences.ts"),
+				a = s("./src/reddit/reducers/features/eligibleUXExperiences/index.ts"),
+				d = s("./src/reddit/selectors/eligibleUXExperiences.ts"),
+				c = s("./src/redditGQL/types.ts"),
+				l = s("./src/reddit/actions/eligibleUxExperiences/constants.ts");
 			Object(n.a)({
 				features: {
-					eligibleUXExperiences: c.a
+					eligibleUXExperiences: a.a
 				}
 			});
-			const p = Object(r.a)(u.b),
-				b = Object(r.a)(u.a),
-				h = e => {
+			const m = Object(r.a)(l.b),
+				u = Object(r.a)(l.a),
+				p = e => {
 					let {
 						experiences: t
 					} = e;
@@ -774,33 +772,28 @@
 						let {
 							gqlContext: r
 						} = n;
-						var d, c;
-						const m = s(),
-							u = Object.keys(t).filter(e => {
-								const s = Object(l.a)(m, {
+						var a, c;
+						const l = s(),
+							m = Object.keys(t).filter(e => {
+								const s = Object(d.a)(l, {
 									experience: e
 								});
 								return !(t[e].allowCached && (null == s ? void 0 : s.fetched))
 							});
-						if (!u.length) return;
-						const p = await ((e, t) => Object(i.a)(e, {
-							...a,
-							variables: {
-								experienceInputs: t
-							}
-						}))(r(), u);
+						if (!m.length) return;
+						const p = await Object(i.a)(r(), m);
 						if (p.ok) {
 							const t = p.body,
-								s = (null === (c = null === (d = null == t ? void 0 : t.data) || void 0 === d ? void 0 : d.eligibleUxExperiences) || void 0 === c ? void 0 : c.map(e => null == e ? void 0 : e.experience)) || [],
+								s = (null === (c = null === (a = null == t ? void 0 : t.data) || void 0 === a ? void 0 : a.eligibleUxExperiences) || void 0 === c ? void 0 : c.map(e => null == e ? void 0 : e.experience)) || [],
 								n = null == s ? void 0 : s.reduce((e, t) => ({
 									...e,
 									[t]: !0
 								}), {}),
-								r = u.reduce((e, t) => n[t] ? e : {
+								r = m.reduce((e, t) => n[t] ? e : {
 									...e,
 									[t]: !1
 								}, {});
-							e(b({
+							e(u({
 								experiences: {
 									...n,
 									...r
@@ -809,17 +802,12 @@
 						} else o.c.captureException(p.error)
 					}
 				},
-				g = e => async (t, s, n) => {
+				b = e => async (t, s, n) => {
 					let {
 						gqlContext: r
 					} = n;
-					((e, t) => Object(i.a)(e, {
-						...d,
-						variables: {
-							input: t
-						}
-					}))(r(), {
-						action: m.a.View,
+					Object(i.b)(r(), {
+						action: c.a.View,
 						eligibleExperience: {
 							experience: e
 						}
@@ -12271,6 +12259,41 @@
 				}
 			}
 		},
+		"./src/reddit/endpoints/eligibleUXExperiences/eligibleUxExperiences.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return d
+			})), s.d(t, "b", (function() {
+				return c
+			})), s.d(t, "c", (function() {
+				return l
+			}));
+			var n = s("./src/lib/makeGqlRequest/index.ts"),
+				r = s("./node_modules/react/index.js"),
+				o = s("./src/reddit/hooks/useGqlContext.ts"),
+				i = s("./src/redditGQL/operations/FetchEligibleUXExperiences.json"),
+				a = s("./src/redditGQL/operations/StoreUxTargetingAction.json");
+			const d = (e, t) => Object(n.a)(e, {
+					...i,
+					variables: {
+						experienceInputs: t
+					}
+				}),
+				c = (e, t) => Object(n.a)(e, {
+					...a,
+					variables: {
+						input: t
+					}
+				}),
+				l = (e, t, s) => {
+					const n = Object(o.a)();
+					return Object(r.useCallback)(() => c(n(), {
+						action: t,
+						eligibleExperience: e,
+						source: s
+					}), [n, e, t, s])
+				}
+		},
 		"./src/reddit/helpers/brandSafety/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
@@ -15146,4 +15169,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.a85230e9ed835a45af6d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.0582571557e663bdaa5d.js.map

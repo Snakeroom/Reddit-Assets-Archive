@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.0fd77bd04a0ebbee006c.js
-// Retrieved at 10/31/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.909e0a1de468ebe829b6.js
+// Retrieved at 10/31/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1431,7 +1431,7 @@
 						"CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a": "d7438db21c3f631fe12e",
 						"CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults": "d03797d8bd23332fe54b",
 						"CollectionCommentsPage~ModProgressModule~NewCommunityProgress": "62c2715ffc767196e7cc",
-						CollectionCommentsPage: "a85230e9ed835a45af6d",
+						CollectionCommentsPage: "0582571557e663bdaa5d",
 						ProfilePrivate: "4349ed990378852fdc3f",
 						"CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit": "37743857ee86ab845110",
 						ProfileComments: "f821ca04abced0d0598a",
@@ -1452,7 +1452,7 @@
 						FramedGild: "2da4476c1b0aad7e1af3",
 						GildModal: "8b8026feb93e8b180088",
 						HappeningNow: "71f313128e92c90e2a9a",
-						Frontpage: "6b61f5d2553a897fda5e",
+						Frontpage: "e46f989d813453ef80cb",
 						PostSetPage: "a9c39cb37a44c7c7b556",
 						Topic: "d320f11eed2aad60fdea",
 						CommunityAwards: "1e8e201223c7548c07a2",
@@ -1564,7 +1564,7 @@
 						ModListing: "35445b17a6c0ec40586f",
 						"vendors~PostCreation~Subreddit": "804e802e502ab366d223",
 						Subreddit: "a2bbbdac75b7f24c7056",
-						CommentsPage: "a144e7e910dbeb6e27ad",
+						CommentsPage: "4809e03441ddc0d8f1ea",
 						"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "fbf6b3871488094312c2",
 						CryptoHarbergerTaxManageModal: "7f1d18091972e1e07aca",
 						HarbergerTaxManageModal: "c1282819479fb98fc0ce",
@@ -1635,7 +1635,7 @@
 						removalReasonActions: "b0f295f846cdf42f27ea",
 						schedulePickerModal: "e5e2119ffe519d078d08",
 						"ChatMessageInput~ChatPost": "3265582f6d4f46374201",
-						ChatPost: "9573d307f0033391e718",
+						ChatPost: "c8e6f2f9f30d4ccbe618",
 						ChatMessageInput: "2fa8d9f0ba35cefc71f0",
 						RichTextEditor: "ea6f108239309dde3a67",
 						LiveVideoPlayer: "924816afe689466c8d04",
@@ -1814,4 +1814,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.0fd77bd04a0ebbee006c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.909e0a1de468ebe829b6.js.map

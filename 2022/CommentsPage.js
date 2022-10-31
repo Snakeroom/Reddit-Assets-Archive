@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.a144e7e910dbeb6e27ad.js
-// Retrieved at 10/31/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.4809e03441ddc0d8f1ea.js
+// Retrieved at 10/31/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -4863,31 +4863,29 @@
 		"./src/reddit/actions/eligibleUxExperiences/eligibleUxExperiences.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return p
+				return u
 			})), n.d(t, "a", (function() {
-				return f
+				return p
 			})), n.d(t, "c", (function() {
-				return C
+				return b
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./src/lib/initializeClient/installReducer.ts"),
 				r = n("./src/lib/makeActionCreator/index.ts"),
 				o = n("./src/lib/sentry/index.ts"),
-				i = n("./src/lib/makeGqlRequest/index.ts"),
-				a = n("./src/redditGQL/operations/FetchEligibleUXExperiences.json"),
-				c = n("./src/redditGQL/operations/StoreUxTargetingAction.json");
-			var d = n("./src/reddit/reducers/features/eligibleUXExperiences/index.ts"),
-				l = n("./src/reddit/selectors/eligibleUXExperiences.ts"),
-				u = n("./src/redditGQL/types.ts"),
-				m = n("./src/reddit/actions/eligibleUxExperiences/constants.ts");
+				i = n("./src/reddit/endpoints/eligibleUXExperiences/eligibleUxExperiences.ts"),
+				a = n("./src/reddit/reducers/features/eligibleUXExperiences/index.ts"),
+				c = n("./src/reddit/selectors/eligibleUXExperiences.ts"),
+				d = n("./src/redditGQL/types.ts"),
+				l = n("./src/reddit/actions/eligibleUxExperiences/constants.ts");
 			Object(s.a)({
 				features: {
-					eligibleUXExperiences: d.a
+					eligibleUXExperiences: a.a
 				}
 			});
-			const p = Object(r.a)(m.b),
-				b = Object(r.a)(m.a),
-				f = e => {
+			const u = Object(r.a)(l.b),
+				m = Object(r.a)(l.a),
+				p = e => {
 					let {
 						experiences: t
 					} = e;
@@ -4895,33 +4893,28 @@
 						let {
 							gqlContext: r
 						} = s;
-						var c, d;
-						const u = n(),
-							m = Object.keys(t).filter(e => {
-								const n = Object(l.a)(u, {
+						var a, d;
+						const l = n(),
+							u = Object.keys(t).filter(e => {
+								const n = Object(c.a)(l, {
 									experience: e
 								});
 								return !(t[e].allowCached && (null == n ? void 0 : n.fetched))
 							});
-						if (!m.length) return;
-						const p = await ((e, t) => Object(i.a)(e, {
-							...a,
-							variables: {
-								experienceInputs: t
-							}
-						}))(r(), m);
+						if (!u.length) return;
+						const p = await Object(i.a)(r(), u);
 						if (p.ok) {
 							const t = p.body,
-								n = (null === (d = null === (c = null == t ? void 0 : t.data) || void 0 === c ? void 0 : c.eligibleUxExperiences) || void 0 === d ? void 0 : d.map(e => null == e ? void 0 : e.experience)) || [],
+								n = (null === (d = null === (a = null == t ? void 0 : t.data) || void 0 === a ? void 0 : a.eligibleUxExperiences) || void 0 === d ? void 0 : d.map(e => null == e ? void 0 : e.experience)) || [],
 								s = null == n ? void 0 : n.reduce((e, t) => ({
 									...e,
 									[t]: !0
 								}), {}),
-								r = m.reduce((e, t) => s[t] ? e : {
+								r = u.reduce((e, t) => s[t] ? e : {
 									...e,
 									[t]: !1
 								}, {});
-							e(b({
+							e(m({
 								experiences: {
 									...s,
 									...r
@@ -4930,17 +4923,12 @@
 						} else o.c.captureException(p.error)
 					}
 				},
-				C = e => async (t, n, s) => {
+				b = e => async (t, n, s) => {
 					let {
 						gqlContext: r
 					} = s;
-					((e, t) => Object(i.a)(e, {
-						...c,
-						variables: {
-							input: t
-						}
-					}))(r(), {
-						action: u.a.View,
+					Object(i.b)(r(), {
+						action: d.a.View,
 						eligibleExperience: {
 							experience: e
 						}
@@ -31200,6 +31188,41 @@
 				}
 			})
 		},
+		"./src/reddit/endpoints/eligibleUXExperiences/eligibleUxExperiences.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return c
+			})), n.d(t, "b", (function() {
+				return d
+			})), n.d(t, "c", (function() {
+				return l
+			}));
+			var s = n("./src/lib/makeGqlRequest/index.ts"),
+				r = n("./node_modules/react/index.js"),
+				o = n("./src/reddit/hooks/useGqlContext.ts"),
+				i = n("./src/redditGQL/operations/FetchEligibleUXExperiences.json"),
+				a = n("./src/redditGQL/operations/StoreUxTargetingAction.json");
+			const c = (e, t) => Object(s.a)(e, {
+					...i,
+					variables: {
+						experienceInputs: t
+					}
+				}),
+				d = (e, t) => Object(s.a)(e, {
+					...a,
+					variables: {
+						input: t
+					}
+				}),
+				l = (e, t, n) => {
+					const s = Object(o.a)();
+					return Object(r.useCallback)(() => d(s(), {
+						action: t,
+						eligibleExperience: e,
+						source: n
+					}), [s, e, t, n])
+				}
+		},
 		"./src/reddit/endpoints/me/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -36753,6 +36776,21 @@
 				return Object(s.useEffect)(() => {
 					n(Object(o.b)(e))
 				}, [e]), t
+			}
+		},
+		"./src/reddit/hooks/useGqlContext.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return o
+			}));
+			var s = n("./node_modules/react/index.js"),
+				r = n("./src/reddit/contexts/ApiContext.tsx");
+
+			function o() {
+				const {
+					gqlContext: e
+				} = Object(s.useContext)(r.a);
+				return e
 			}
 		},
 		"./src/reddit/hooks/useInfoTextTooltip.ts": function(e, t, n) {
@@ -44804,4 +44842,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.a144e7e910dbeb6e27ad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.4809e03441ddc0d8f1ea.js.map
