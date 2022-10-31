@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.f646540261636bf44c93.js
-// Retrieved at 10/31/2022, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.1a663fec786d1a6955dd.js
+// Retrieved at 10/31/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -2308,12 +2308,12 @@
 						rtJsonElementProps: o
 					});
 					switch (a) {
-						case b.cg.SmIcon:
+						case b.bg.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.cg.SmIconHc:
+						case b.bg.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2814,12 +2814,12 @@
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: s.Wf
+						experimentName: s.Vf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.cg.SmIcon || t === s.cg.SmIconHc
+					return t === s.bg.SmIcon || t === s.bg.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -2845,4 +2845,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.f646540261636bf44c93.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.1a663fec786d1a6955dd.js.map

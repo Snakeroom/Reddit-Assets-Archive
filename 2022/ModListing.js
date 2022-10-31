@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.e33ead32b683d474fe27.js
-// Retrieved at 10/31/2022, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.e274cb8e10414a4fedbc.js
+// Retrieved at 10/31/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, r) {
@@ -504,7 +504,7 @@
 			})), r.d(t, "morePostsFailed", (function() {
 				return H
 			})), r.d(t, "moreModListingRequested", (function() {
-				return B
+				return D
 			})), r.d(t, "hideSubredditSuccess", (function() {
 				return V
 			})), r.d(t, "hideSubredditPending", (function() {
@@ -604,7 +604,7 @@
 							hk: "3RYtBz"
 						})
 					})));
-					const _ = D(e.queryParams);
+					const _ = B(e.queryParams);
 					await r(R(p, {
 						...i()(e.queryParams, m.q),
 						...i()(e.queryParams, m.p),
@@ -617,7 +617,7 @@
 							hk: "3RYtBz"
 						})
 					})), Object(C.h)(s(), !0)
-				}, A = Object(d.a)(k.i), G = Object(d.a)(k.h), H = Object(d.a)(k.g), B = e => async (t, r, n) => {
+				}, A = Object(d.a)(k.i), G = Object(d.a)(k.h), H = Object(d.a)(k.g), D = e => async (t, r, n) => {
 					let {
 						apiContext: s
 					} = n;
@@ -632,7 +632,7 @@
 						y = d.listings.postOrder.fetchedTokens,
 						x = !(!y[f] || !y[f][g.token]);
 					if (_ || x) return;
-					const E = D(b);
+					const E = B(b);
 					t(A({
 						key: f,
 						fetchedToken: g.token
@@ -663,7 +663,7 @@
 					}))
 				};
 
-			function D(e) {
+			function B(e) {
 				const t = m.O in e && e[m.O].toUpperCase() || "";
 				return t in o.oc && o.oc[t]
 			}
@@ -1678,12 +1678,12 @@
 					action: "click",
 					noun: "hide_subreddit"
 				}),
-				B = () => e => ({
+				D = () => e => ({
 					source: "r_mod",
 					action: "click",
 					noun: "unhide_subreddit"
 				}),
-				D = e => t => ({
+				B = e => t => ({
 					source: "r_mod",
 					action: "click",
 					noun: e ? "unfiltered_subreddits" : "filtered_subreddits"
@@ -1771,7 +1771,7 @@
 			class oe extends o.a.Component {
 				constructor() {
 					super(...arguments), this.onClickUnhideSubreddit = e => {
-						e.stopPropagation(), e.preventDefault(), this.props.subredditOrProfile && (this.props.sendEvent(B()), this.props.unhide(this.props.subredditName))
+						e.stopPropagation(), e.preventDefault(), this.props.subredditOrProfile && (this.props.sendEvent(D()), this.props.unhide(this.props.subredditName))
 					}
 				}
 				render() {
@@ -1830,7 +1830,7 @@
 			class ge extends o.a.Component {
 				constructor() {
 					super(...arguments), this.onToggleFiltered = () => {
-						this.props.sendEvent(D(this.props.filtered)), this.props.toggleFiltered()
+						this.props.sendEvent(B(this.props.filtered)), this.props.toggleFiltered()
 					}
 				}
 				render() {
@@ -1994,7 +1994,7 @@
 				const b = Object(o.e)(e => e.subreddits.survey[r]),
 					p = Object(o.e)(e => e.subreddits.progressModule[r]),
 					h = Object(o.e)(l.a),
-					f = h !== c.Ye.NewModule;
+					f = h !== c.Xe.NewModule;
 				return (null === (s = null == p ? void 0 : p.cards) || void 0 === s ? void 0 : s.length) > 0 && f ? i.a.createElement(m, {
 					closeModuleOnMount: !!t && t !== u.g.Large,
 					subredditId: r,
@@ -2056,15 +2056,15 @@
 			const o = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: i.R,
-						experimentName: n.Bd
+						experimentName: n.Ad
 					});
-					return !(!t || Object(n.Dg)(t))
+					return !(!t || Object(n.Cg)(t))
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: i.R,
-						experimentName: n.Bd
-					}) === n.Zd.ListingEnabled
+						experimentName: n.Ad
+					}) === n.Yd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/experiments/recapLeadUpGame.ts": function(e, t, r) {
@@ -2082,8 +2082,8 @@
 			const a = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: i.a,
-						experimentName: n.yf
-					}) === n.Vd
+						experimentName: n.xf
+					}) === n.Ud
 				},
 				c = Object(d.a)(o.R, (e, t) => {
 					let {
@@ -2094,8 +2094,8 @@
 				u = (e, t) => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: e => c(e, t),
-						experimentName: n.zf
-					}) === n.Vd
+						experimentName: n.yf
+					}) === n.Ud
 				}
 		},
 		"./src/reddit/selectors/recapGame.ts": function(e, t, r) {
@@ -2120,4 +2120,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.e33ead32b683d474fe27.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.e274cb8e10414a4fedbc.js.map

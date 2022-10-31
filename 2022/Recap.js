@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Recap.7b102a4a14efd10a1e5e.js
-// Retrieved at 10/31/2022, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Recap.7863862e4c13904b3bb8.js
+// Retrieved at 10/31/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Recap", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, a, t) {
@@ -98,9 +98,9 @@
 				C = t("./src/reddit/constants/experiments.ts"),
 				y = t("./src/reddit/helpers/chooseVariant/index.ts");
 			const S = e => Object(y.c)(e, {
-				experimentName: C.mc,
+				experimentName: C.lc,
 				experimentEligibilitySelector: y.a
-			}) === C.Vd;
+			}) === C.Ud;
 			var I = t("./src/reddit/selectors/meta.ts"),
 				x = t("./src/reddit/selectors/user.ts");
 			let T = !1;
@@ -704,8 +704,8 @@
 					className: G.a.image,
 					src: `${B.a.assetPath}/img/recap/InfiniteLoad_4.gif`
 				})),
-				V = t("./src/higherOrderComponents/asModal/index.tsx");
-			var z = Object(V.a)(e => {
+				z = t("./src/higherOrderComponents/asModal/index.tsx");
+			var V = Object(z.a)(e => {
 					let {
 						children: a
 					} = e;
@@ -782,7 +782,7 @@
 						className: Object(m.a)(ee.a.title, {
 							[ee.a.selected]: n
 						})
-					}, ze(a, Object(m.a)(ee.a.value, {
+					}, Ve(a, Object(m.a)(ee.a.value, {
 						[ee.a.orange]: !d
 					}))), i.a.createElement("p", {
 						className: Object(m.a)(ee.a.subtitle, {
@@ -1924,11 +1924,11 @@
 				[_.BLACK]: "#000",
 				[_.WHITE]: "#fff"
 			}, Ue = [434, 373, 212];
-			var Ve;
+			var ze;
 			! function(e) {
 				e.WHITE = "#fff", e.MANGO_100 = "#fff8b8", e.MANGO_300 = "#ffd635", e.MANGO_500 = "#ffa800"
-			}(Ve || (Ve = {}));
-			const ze = (e, a) => {
+			}(ze || (ze = {}));
+			const Ve = (e, a) => {
 					const t = /(\*\*.*?\*\*)/g;
 					return e.split(t).map((e, r) => t.test(e) ? i.a.createElement("span", {
 						key: e + r,
@@ -2120,7 +2120,7 @@
 							[$e.a.black]: !!A
 						}),
 						iconClassName: $e.a.downButtonIcon
-					}), s && i.a.createElement(z, {
+					}), s && i.a.createElement(V, {
 						onOverlayClick: () => (() => e(Object(u.h)()))(),
 						withOverlay: !0
 					}, i.a.createElement("div", {
@@ -2187,4 +2187,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Recap.7b102a4a14efd10a1e5e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Recap.7863862e4c13904b3bb8.js.map

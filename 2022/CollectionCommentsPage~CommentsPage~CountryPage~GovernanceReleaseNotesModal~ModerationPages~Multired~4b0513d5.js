@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5.3ec5f7d3ff587b79d858.js
-// Retrieved at 10/31/2022, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5.530590f8163691d06479.js
+// Retrieved at 10/31/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, n) {
@@ -617,7 +617,7 @@
 					s || D(e), i || U(e), N(Object(u.C)(h))
 				}
 
-				function W() {
+				function J() {
 					const e = {};
 					return w && (e.margin = "0 auto"), C || (e.maxHeight = `${p.e}px`), o.a.createElement(_, {
 						autoplay: I,
@@ -646,7 +646,7 @@
 						width: L ? void 0 : j
 					})
 				}
-				return C ? W() : o.a.createElement("div", {
+				return C ? J() : o.a.createElement("div", {
 					className: Object(l.a)(O.a.container, k, {
 						[O.a.centered]: w
 					})
@@ -654,7 +654,7 @@
 					href: S,
 					target: "_blank",
 					rel: "noopener noreferrer"
-				}, W()))
+				}, J()))
 			}
 		},
 		"./src/reddit/components/Media/index.m.less": function(e, t, n) {
@@ -1807,18 +1807,18 @@
 						f: n,
 						t: r
 					} = e, i = [];
-					if (!n) return J(0, r, t);
+					if (!n) return W(0, r, t);
 					const o = Object(s.a)(r);
 					let a = 0,
 						c = 0;
 					const d = n.length;
 					for (; a < d; a++) {
 						const [e, t, s] = n[a], d = t + s, l = o[t], u = o[d] - l;
-						l > c && i.push(J(0, r.substr(c, l - c), `between${a}`)), i.push(J(e, r.substr(l, u), a)), c = l + u
+						l > c && i.push(W(0, r.substr(c, l - c), `between${a}`)), i.push(W(e, r.substr(l, u), a)), c = l + u
 					}
-					return c < r.length && i.push(J(0, r.substr(c), `remaining${a}`)), i
+					return c < r.length && i.push(W(0, r.substr(c), `remaining${a}`)), i
 				},
-				W = {
+				J = {
 					[m.j.monospace]: c.h,
 					[m.j.bold]: c.b,
 					[m.j.italic]: c.f,
@@ -1827,9 +1827,9 @@
 					[m.j.subscript]: c.l,
 					[m.j.superscript]: c.m
 				},
-				J = (e, t, n) => {
+				W = (e, t, n) => {
 					let s = t;
-					return s = i()(W, (t, s, r) => e & parseInt(r, 10) ? a.a.createElement(s, {
+					return s = i()(J, (t, s, r) => e & parseInt(r, 10) ? a.a.createElement(s, {
 						key: n
 					}, t) : t, s)
 				},
@@ -1964,12 +1964,12 @@
 						rtJsonElementProps: o
 					});
 					switch (i) {
-						case b.cg.SmIcon:
+						case b.bg.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.cg.SmIconHc:
+						case b.bg.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2219,12 +2219,12 @@
 				c = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Wf
+						experimentName: s.Vf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.cg.SmIcon || t === s.cg.SmIconHc
+					return t === s.bg.SmIcon || t === s.bg.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -2250,4 +2250,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5.3ec5f7d3ff587b79d858.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5.530590f8163691d06479.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.5fe848ebaf2f8d33af1e.js
-// Retrieved at 10/31/2022, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.727f374095ef205dd5bc.js
+// Retrieved at 10/31/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./node_modules/lodash/map.js": function(t, e, o) {
@@ -71,9 +71,9 @@
 			})), o.d(e, "g", (function() {
 				return Kt
 			})), o.d(e, "h", (function() {
-				return Ft
-			})), o.d(e, "k", (function() {
 				return Ut
+			})), o.d(e, "k", (function() {
+				return Ft
 			})), o.d(e, "e", (function() {
 				return Ht
 			})), o.d(e, "d", (function() {
@@ -214,8 +214,8 @@
 					})
 				};
 			var K = o("./src/redditGQL/operations/UpdateComment.json");
-			var F = o("./src/redditGQL/operations/UpdateCommentFollowState.json");
-			var U = o("./src/reddit/endpoints/post/index.tsx"),
+			var U = o("./src/redditGQL/operations/UpdateCommentFollowState.json");
+			var F = o("./src/reddit/endpoints/post/index.tsx"),
 				B = o("./src/reddit/endpoints/post/convert.ts"),
 				H = o("./src/reddit/endpoints/publicAccessNetwork/index.ts"),
 				W = o("./src/reddit/featureFlags/index.ts"),
@@ -240,7 +240,7 @@
 			const at = Object(ct.a)(t => Object(it.c)(t, {
 				experimentEligibilitySelector: it.a,
 				experimentName: st.Jb
-			}), t => t === st.Vd);
+			}), t => t === st.Ud);
 			var dt = o("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				lt = o("./src/reddit/selectors/platform.ts"),
 				mt = o("./src/reddit/selectors/posts.ts"),
@@ -644,7 +644,7 @@
 					}
 				}, Kt = t => async e => {
 					e(Object(pt.r)(t)), e(Ht(t))
-				}, Ft = t => {
+				}, Ut = t => {
 					let {
 						parentCommentId: e,
 						commentsPageKey: o
@@ -661,7 +661,7 @@
 							commentsPageKey: o
 						}))
 					}
-				}, Ut = (t, e) => o => o(Mt({
+				}, Ft = (t, e) => o => o(Mt({
 					draftKey: t,
 					formData: e
 				})), Bt = Object(r.a)(bt.u), Ht = t => {
@@ -834,7 +834,7 @@
 						[t]: {
 							sendReplies: s
 						}
-					})), (await Object(U.q)(r(), t, s)).ok || e(Object(pt.j)({
+					})), (await Object(F.q)(r(), t, s)).ok || e(Object(pt.j)({
 						[t]: {
 							sendReplies: !s
 						}
@@ -856,7 +856,7 @@
 								expiresAt: Date.now() + 6048e5
 							};
 						if (o(Object(pt.p)(c)), (await ((t, e) => Object(y.a)(t, {
-								...F,
+								...U,
 								variables: {
 									input: e
 								}
@@ -1247,8 +1247,8 @@
 				L = o("./src/reddit/selectors/activeModalId.ts"),
 				A = o("./src/reddit/selectors/comments.ts"),
 				K = o("./src/reddit/selectors/moderatorPermissions.ts"),
-				F = o("./src/reddit/selectors/posts.ts"),
-				U = o("./src/reddit/selectors/tooltip.ts"),
+				U = o("./src/reddit/selectors/posts.ts"),
+				F = o("./src/reddit/selectors/tooltip.ts"),
 				B = o("./src/reddit/selectors/user.ts"),
 				H = o("./src/reddit/components/CommentSort/CommentSort.m.less"),
 				W = o.n(H),
@@ -1340,8 +1340,8 @@
 						})
 					},
 					contestModeModalIsOpen: Object(L.b)("CommentSort--ContestMode--Modal"),
-					dropdownIsOpen: Object(U.b)(Q),
-					highlightIsOpen: Object(U.b)(X),
+					dropdownIsOpen: Object(F.b)(Q),
+					highlightIsOpen: Object(F.b)(X),
 					hasModeratorPostPermissions: (t, e) => {
 						let {
 							postId: o
@@ -1351,8 +1351,8 @@
 						});
 						return !!n && n.posts
 					},
-					post: F.G,
-					postPermalink: F.F,
+					post: U.G,
+					postPermalink: U.F,
 					showCommentHighlighter: (t, e) => {
 						let {
 							postId: o
@@ -1361,7 +1361,7 @@
 							r = !!Object(K.m)(t, {
 								postId: o
 							}),
-							s = Object(F.G)(t, {
+							s = Object(U.G)(t, {
 								postId: o
 							});
 						return (r || n) && !!s && !!s.previousVisits && s.previousVisits.length > 0
@@ -1434,11 +1434,11 @@
 						suggestedSort: v,
 						showTooltip: k,
 						toggleContestModeModal: _
-					} = this.props, T = f.contestMode, E = !b.search.includes(d.w.CONFIDENCE), R = j === d.w.CONFIDENCE && E, P = u && !R, L = d.y[j], A = L ? L() : "", K = v && j === v && !R ? this.addSuggestedLabel(A) : A, F = T ? n.fbt._("End contest mode?", null, {
+					} = this.props, T = f.contestMode, E = !b.search.includes(d.w.CONFIDENCE), R = j === d.w.CONFIDENCE && E, P = u && !R, L = d.y[j], A = L ? L() : "", K = v && j === v && !R ? this.addSuggestedLabel(A) : A, U = T ? n.fbt._("End contest mode?", null, {
 						hk: "2AkJRZ"
 					}) : n.fbt._("Start contest?", null, {
 						hk: "2PQPOu"
-					}), U = T ? n.fbt._("End", null, {
+					}), F = T ? n.fbt._("End", null, {
 						hk: "1Q8KqM"
 					}) : n.fbt._("Start", null, {
 						hk: "Mjvpj"
@@ -1532,8 +1532,8 @@
 						selectedSort: O,
 						trackHighlight: N
 					})), r && s.a.createElement(x.a, {
-						actionText: U,
-						headerText: F,
+						actionText: F,
+						headerText: U,
 						modalText: B,
 						onConfirm: this.setContestMode,
 						toggleModal: _,
@@ -1718,17 +1718,17 @@
 						notificationId: A,
 						onEvent: K
 					} = t,
-					F = null == N ? void 0 : N.messageType,
-					U = F === O.a.CommentReply,
-					B = F === O.a.SubredditRecommendation,
-					H = F === O.a.LifecyclePostSuggestions,
+					U = null == N ? void 0 : N.messageType,
+					F = U === O.a.CommentReply,
+					B = U === O.a.SubredditRecommendation,
+					H = U === O.a.LifecyclePostSuggestions,
 					W = null === (e = null == N ? void 0 : N.post) || void 0 === e ? void 0 : e.permalink;
 				let G = null === (o = null == N ? void 0 : N.comment) || void 0 === o ? void 0 : o.id,
 					q = (null === (n = null == N ? void 0 : N.post) || void 0 === n ? void 0 : n.id) || (null === (x = null === (g = null == N ? void 0 : N.comment) || void 0 === g ? void 0 : g.postInfo) || void 0 === x ? void 0 : x.id);
 				const J = null === (k = null == N ? void 0 : N.subreddit) || void 0 === k ? void 0 : k.id,
 					V = null === (S = null === (_ = null == N ? void 0 : N.awarding) || void 0 === _ ? void 0 : _.award) || void 0 === S ? void 0 : S.id,
 					z = null === (I = null === (w = null == N ? void 0 : N.awarding) || void 0 === w ? void 0 : w.awarder) || void 0 === I ? void 0 : I.id;
-				if (F === O.a.CommentFollow || F === O.a.PostFollow) {
+				if (U === O.a.CommentFollow || U === O.a.PostFollow) {
 					const t = (t => {
 						const e = {},
 							{
@@ -1741,7 +1741,7 @@
 						return s && "r" === r && (e.subredditName = s), i && (e.postId = `${m.b}${i}`), c && (e.commentId = `${m.a}${c}`), e
 					})(R);
 					q = t.postId, G = t.commentId
-				} else F !== O.a.PostReply && F !== O.a.LifecyclePostSuggestions || (G = A);
+				} else U !== O.a.PostReply && U !== O.a.LifecyclePostSuggestions || (G = A);
 				const Q = t => {
 					if (q && G) {
 						const t = Object(c.a)(q, G, Object(b.c)(R)),
@@ -1755,7 +1755,7 @@
 					} else t.preventDefault(), T(Object(d.f)(v))
 				};
 				return (() => {
-					switch (F) {
+					switch (U) {
 						case O.a.HFNSubredditInterestingPost:
 						case O.a.LifecyclePostSuggestions:
 						case O.a.SubredditRecommendation: {
@@ -1793,8 +1793,8 @@
 						case O.a.CommentReply:
 						case O.a.PostFollow:
 						case O.a.CommentFollow: {
-							const t = U;
-							return U || t || E && D ? r.a.createElement(p.t, {
+							const t = F;
+							return F || t || E && D ? r.a.createElement(p.t, {
 								onClick: Q,
 								kind: p.b.InternalLink,
 								to: R,
@@ -1905,7 +1905,7 @@
 									[y.a.isNightMode]: L,
 									[y.a.inAppNotification]: !0
 								})
-							}, t(F))
+							}, t(U))
 						}
 						default:
 							return E && D ? r.a.createElement(p.t, {
@@ -2462,4 +2462,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.5fe848ebaf2f8d33af1e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.727f374095ef205dd5bc.js.map

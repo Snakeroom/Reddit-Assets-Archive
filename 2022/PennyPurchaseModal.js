@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.4af4c604f2329addc569.js
-// Retrieved at 10/31/2022, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.07398b1cf4e6d3d5fac0.js
+// Retrieved at 10/31/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./node_modules/@stripe/stripe-js/dist/stripe.esm.js": function(e, t, a) {
@@ -538,8 +538,8 @@
 					LoadingComponent: () => null
 				}),
 				T = a("./src/reddit/controls/Button/index.tsx"),
-				A = a("./src/reddit/helpers/trackers/goldPayment.ts"),
-				B = a("./src/reddit/selectors/gold/productOffers.ts"),
+				B = a("./src/reddit/helpers/trackers/goldPayment.ts"),
+				A = a("./src/reddit/selectors/gold/productOffers.ts"),
 				R = a("./src/reddit/components/CoinPurchaseModal/index.m.less"),
 				D = a.n(R);
 			const {
@@ -561,11 +561,11 @@
 				const j = Object(b.a)(),
 					E = Object(m.d)(),
 					O = Object(m.e)(p.h),
-					k = Object(m.e)(B.a),
+					k = Object(m.e)(A.a),
 					w = !!r;
 				if (w && !O) {
 					const e = () => {
-						x && P && (j(Object(A.c)(r)), l(x, P, n))
+						x && P && (j(Object(B.c)(r)), l(x, P, n))
 					};
 					return o.a.createElement("div", {
 						className: D.a.purchaseSelectPaymentFooter
@@ -600,7 +600,7 @@
 						pricePackage: N,
 						productsCount: N.quantity,
 						onButtonClick: () => {
-							S && j(Object(A.c)(r)), _ && j(Object(A.d)(r))
+							S && j(Object(B.c)(r)), _ && j(Object(B.d)(r))
 						},
 						onPaymentSuccess: () => {
 							E(Object(C.paymentCompleted)({
@@ -1602,11 +1602,11 @@
 					savedCard: e => Object(m.y)(e)[0],
 					stripeInfoLoading: m.x
 				}),
-				A = Object(s.b)(T, e => ({
+				B = Object(s.b)(T, e => ({
 					onClickDeleteCard: t => e(Object(d.b)(t)),
 					onToggleRememberCard: () => e(Object(i.toggleRememberCard)())
 				}));
-			class B extends n.a.PureComponent {
+			class A extends n.a.PureComponent {
 				render() {
 					const {
 						className: e,
@@ -1640,7 +1640,7 @@
 					}))
 				}
 			}
-			t.a = A(B)
+			t.a = B(A)
 		},
 		"./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less": function(e, t, a) {
 			e.exports = {
@@ -1998,8 +1998,8 @@
 				n = a("./src/lib/constants/index.ts"),
 				s = a("./src/reddit/constants/experiments.ts"),
 				o = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const c = Object(o.a)(s.ef),
-				d = Object(o.a)(s.ff),
+			const c = Object(o.a)(s.df),
+				d = Object(o.a)(s.ef),
 				i = Object(r.a)([c, d], (e, t) => new Set([e && n.Mb, t && n.Lb].filter(e => !!e)))
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, a) {
@@ -2009,7 +2009,7 @@
 			}));
 			var r = a("./src/reddit/constants/experiments.ts"),
 				n = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const s = Object(n.a)(r.Cd)
+			const s = Object(n.a)(r.Bd)
 		},
 		"./src/redditGQL/operations/CancelEconRecurringPayment.json": function(e) {
 			e.exports = JSON.parse('{"id":"ac36f7489268"}')
@@ -2046,4 +2046,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.4af4c604f2329addc569.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.07398b1cf4e6d3d5fac0.js.map

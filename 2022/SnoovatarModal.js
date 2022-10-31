@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SnoovatarModal.fdaa2f4f95c768dd54e5.js
-// Retrieved at 10/31/2022, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SnoovatarModal.7492b5a73419e909ab93.js
+// Retrieved at 10/31/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SnoovatarModal"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, r) {
@@ -63,14 +63,14 @@
 				const {
 					activeDetails: S,
 					activeTab: h,
-					activeMeSubpage: C,
-					shopTabState: k
+					activeMeSubpage: k,
+					shopTabState: C
 				} = r, N = Object(a.useMemo)(() => ({
 					activeTab: h || void 0,
-					activeMeSubpage: C || void 0,
+					activeMeSubpage: k || void 0,
 					activeDetails: S || void 0,
-					shopTabState: k || void 0
-				}), [S, h, C, k]), y = Object(o.e)(e => !Object(O.R)(e) && Object(p.y)(e));
+					shopTabState: C || void 0
+				}), [S, h, k, C]), y = Object(o.e)(e => !Object(O.R)(e) && Object(p.y)(e));
 				if (!j || !_) return null;
 				if (y) return n.a.createElement("div", {
 					className: Object(c.a)(b.a.container, {
@@ -221,8 +221,8 @@
 			}));
 			var s = r("./src/reddit/constants/experiments.ts"),
 				a = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const n = Object(a.a)(s.Cd)
+			const n = Object(a.a)(s.Bd)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.fdaa2f4f95c768dd54e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.7492b5a73419e909ab93.js.map

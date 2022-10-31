@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.249874f6ba3ae7aae601.js
-// Retrieved at 10/31/2022, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.2d12a1142d9df7015284.js
+// Retrieved at 10/31/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsFlairModal", "AchievementsActions"], {
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, r) {
@@ -606,8 +606,8 @@
 				k = e => N.includes(e),
 				T = Object(y.a)(e => Object(C.c)(e, {
 					experimentEligibilitySelector: C.a,
-					experimentName: S.re
-				}), e => e === S.Vd);
+					experimentName: S.qe
+				}), e => e === S.Ud);
 			var U = r("./src/reddit/selectors/gold/powerups/index.ts"),
 				L = r("./src/reddit/selectors/gold/powerups/flairs.ts"),
 				M = r("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
@@ -618,8 +618,8 @@
 				G = r("./src/reddit/components/Econ/PowerupsFlair/PowerupsFlairModal/PowerupsFlair.m.less"),
 				q = r.n(G);
 			const {
-				fbt: V
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), z = e => {
+				fbt: z
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), V = e => {
 				let {
 					flair: t,
 					onSelect: r
@@ -627,7 +627,7 @@
 				const s = Object(o.d)(),
 					a = Object(P.a)(),
 					d = `achievement-locked-${t.type}`,
-					c = t.isLocked ? V._("To use this achievement, you gotta earn it!", null, {
+					c = t.isLocked ? z._("To use this achievement, you gotta earn it!", null, {
 						hk: "2RYhLB"
 					}) : "",
 					l = t.description || c,
@@ -698,7 +698,7 @@
 					className: R.a.subtitle
 				}, s), n.a.createElement("div", {
 					className: R.a.flairsList
-				}, i.map(e => n.a.createElement(z, {
+				}, i.map(e => n.a.createElement(V, {
 					flair: e,
 					key: e.type,
 					onSelect: a
@@ -1107,4 +1107,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.249874f6ba3ae7aae601.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.2d12a1142d9df7015284.js.map
