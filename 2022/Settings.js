@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.54286b4d527f6feb5edb.js
-// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.fbf50dd222a6035439e4.js
+// Retrieved at 11/1/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -8989,8 +8989,8 @@
 				ae = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const re = Object(l.a)(e => Object(ae.c)(e, {
 				experimentEligibilitySelector: M.R,
-				experimentName: w.R
-			}), e => e === w.bb.Enabled);
+				experimentName: w.Q
+			}), e => e === w.ab.Enabled);
 			var ie = n("./src/reddit/selectors/meta.ts"),
 				le = n("./src/reddit/components/Settings/AccountPrefsSection/index.m.less"),
 				ce = n.n(le);
@@ -9086,7 +9086,7 @@
 						})()
 					}, []);
 					const D = Object(r.e)(I.g),
-						R = D === w.fd.TopTwo || D === w.fd.All,
+						R = D === w.ed.TopTwo || D === w.ed.All,
 						F = Object(o.useMemo)(() => Object(se.c)(T), [T]);
 					return c ? a.a.createElement(X, {
 						email: k.email
@@ -10819,17 +10819,17 @@
 				ao = n("./src/lib/constants/euCookiePolicy.ts");
 			const ro = Object(l.a)(e => Object(ae.c)(e, {
 					experimentEligibilitySelector: ae.a,
-					experimentName: w.l
-				}), e => e === w.e.Enabled),
+					experimentName: w.k
+				}), e => e === w.d.Enabled),
 				io = Object(l.a)(e => Object(M.h)(e), e => ao.b.includes(e)),
 				lo = Object(l.a)(e => Object(ae.c)(e, {
 					experimentEligibilitySelector: ae.a,
-					experimentName: w.i
-				}), e => e === w.c.Enabled),
+					experimentName: w.h
+				}), e => e === w.b.Enabled),
 				co = Object(l.a)(e => Object(ae.c)(e, {
 					experimentEligibilitySelector: M.R,
-					experimentName: w.O
-				}), e => e === w.Y.Enabled);
+					experimentName: w.N
+				}), e => e === w.X.Enabled);
 			var uo = n("./src/lib/hooks/usePrevious.ts"),
 				mo = n("./src/reddit/actions/subreddit/muting.ts"),
 				po = n("./src/telemetry/models/Event.ts");
@@ -12125,9 +12125,9 @@
 					},
 					isDspEnabled: e => {
 						return Object(ae.c)(e, {
-							experimentName: w.pd,
+							experimentName: w.od,
 							experimentEligibilitySelector: ae.a
-						}) === w.Ud
+						}) === w.Td
 					}
 				}),
 				yr = Object(ve.u)(),
@@ -12678,9 +12678,9 @@
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/user.ts");
 			const r = e => Object(o.c)(e, {
-				experimentName: s.E,
+				experimentName: s.D,
 				experimentEligibilitySelector: () => Object(a.Q)(e)
-			}) === s.Ud
+			}) === s.Td
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -12844,4 +12844,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.54286b4d527f6feb5edb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.fbf50dd222a6035439e4.js.map

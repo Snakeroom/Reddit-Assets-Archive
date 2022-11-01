@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.8ca3ce022231a523dba7.js
-// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.24eb02e08ab4c6a04499.js
+// Retrieved at 11/1/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -5895,25 +5895,25 @@
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.r
+						experimentName: r.q
 					});
-					return t === r.v.VoteCountOnly || t === r.v.CommentCountOnly || t === r.v.VoteAndCommentCount
+					return t === r.u.VoteCountOnly || t === r.u.CommentCountOnly || t === r.u.VoteAndCommentCount
 				},
 				l = e => {
 					if (Object(a.d)(e) || Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.r
+						experimentName: r.q
 					});
-					return t === r.v.VoteCountOnly || t === r.v.VoteAndCommentCount
+					return t === r.u.VoteCountOnly || t === r.u.VoteAndCommentCount
 				},
 				u = e => {
 					if (Object(a.d)(e) || Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.r
+						experimentName: r.q
 					});
-					return t === r.v.CommentCountOnly || t === r.v.VoteAndCommentCount
+					return t === r.u.CommentCountOnly || t === r.u.VoteAndCommentCount
 				},
 				m = (e, t) => {
 					let {
@@ -5930,10 +5930,10 @@
 					const s = e.posts.models[n];
 					if (Object(a.d)(e) || !s || s.isSponsored || s.isScoreHidden || s.score >= c || Object(i.a)(e)) return !1;
 					const d = Object(o.d)(e, {
-							experimentName: r.r
+							experimentName: r.q
 						}),
 						l = null == d ? void 0 : d.variant;
-					return l === r.v.VoteCountOnly || l === r.v.VoteAndCommentCount
+					return l === r.u.VoteCountOnly || l === r.u.VoteAndCommentCount
 				},
 				b = (e, t) => {
 					let {
@@ -5942,17 +5942,17 @@
 					const s = e.posts.models[n];
 					if (Object(a.d)(e) || !s || s.isSponsored || s.numComments >= c || Object(i.a)(e)) return !1;
 					const d = Object(o.d)(e, {
-							experimentName: r.r
+							experimentName: r.q
 						}),
 						l = null == d ? void 0 : d.variant;
-					return l === r.v.CommentCountOnly || l === r.v.VoteAndCommentCount
+					return l === r.u.CommentCountOnly || l === r.u.VoteAndCommentCount
 				},
 				f = e => {
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.Fc
-					}) === r.hd.Enabled
+						experimentName: r.Ec
+					}) === r.gd.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
@@ -5965,8 +5965,8 @@
 			const o = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.jf
-				}) === r.Ud
+					experimentName: r.if
+				}) === r.Td
 			}
 		},
 		"./src/reddit/selectors/experiments/web2x_cta.ts": function(e, t, n) {
@@ -5978,10 +5978,10 @@
 				s = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(r.a)(e => Object(o.c)(e, {
-					experimentName: s.qg,
+					experimentName: s.pg,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				a = Object(r.a)(i, e => e === s.hg)
+				a = Object(r.a)(i, e => e === s.gg)
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
 			"use strict";
@@ -6363,4 +6363,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.8ca3ce022231a523dba7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.24eb02e08ab4c6a04499.js.map

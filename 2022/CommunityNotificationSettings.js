@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.230702e3fb70d6c19606.js
-// Retrieved at 10/31/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.30133d1f289ed47cc212.js
+// Retrieved at 11/1/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityNotificationSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -95,7 +95,7 @@
 					onSelect: o
 				} = e;
 				var i, c;
-				const d = Object(_.a)(b.Q),
+				const d = Object(_.a)(b.P),
 					[l, u] = Object(a.useState)(!1),
 					E = Object(a.useRef)(),
 					C = Object(S.a)(),
@@ -106,7 +106,7 @@
 						isNsfw: w,
 						isMuted: I
 					} = t,
-					j = I && d === b.Ud,
+					j = I && d === b.Td,
 					L = j ? f.c.OFF : k,
 					T = t.styles.icon || (null === (i = t.styles.legacyIcon) || void 0 === i ? void 0 : i.url),
 					D = null !== (c = t.styles.primaryColor) && void 0 !== c ? c : void 0,
@@ -144,7 +144,7 @@
 								})
 						}
 					})(L),
-					B = (e => {
+					P = (e => {
 						switch (e) {
 							case f.c.OFF:
 								return r.a.createElement(p.a, {
@@ -161,7 +161,7 @@
 								})
 						}
 					})(L),
-					P = [{
+					B = [{
 						displayText: s.fbt._("Frequent", null, {
 							hk: "21spt7"
 						}),
@@ -218,13 +218,13 @@
 				})))), r.a.createElement(g.b, {
 					isCompactStyle: !0,
 					displayText: F,
-					options: P,
+					options: B,
 					onSelect: e => {
 						var t;
 						j ? (E.current = e.value, u(!0)) : (C(Object(O.n)(N, y, null === (t = e.value) || void 0 === t ? void 0 : t.toLowerCase())), o(N, e.value))
 					},
 					buttonClassName: v.a.dropdown,
-					buttonIcon: B
+					buttonIcon: P
 				}), l && r.a.createElement(m.a, {
 					withOverlay: !0,
 					headerText: s.fbt._("Unmute {name of subreddit to unmute}", [s.fbt._param("name of subreddit to unmute", `r/${t.name}`)], {
@@ -555,4 +555,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.230702e3fb70d6c19606.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.30133d1f289ed47cc212.js.map

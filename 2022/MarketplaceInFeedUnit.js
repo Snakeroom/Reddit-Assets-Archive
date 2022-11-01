@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.8a7d3ac63ddade66fcd9.js
-// Retrieved at 10/31/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.707cbd19abc7311c3528.js
+// Retrieved at 11/1/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MarketplaceInFeedUnit"], {
 		"./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx": function(e, t, n) {
@@ -83,7 +83,7 @@
 		"./src/reddit/components/Econ/Marketplace/InFeedUnit/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "MarketplaceInFeedUnit", (function() {
-				return A
+				return I
 			}));
 			var r = n("./node_modules/@reddit/marketplace/marketplace.es.js"),
 				s = n("./node_modules/@researchgate/react-intersection-observer/lib/es/index.js"),
@@ -135,8 +135,8 @@
 				})
 			};
 			var v = n("./src/reddit/components/Econ/Marketplace/InFeedUnit/index.m.less"),
-				I = n.n(v);
-			const A = e => {
+				A = n.n(v);
+			const I = e => {
 				let {
 					layout: t
 				} = e;
@@ -144,7 +144,7 @@
 					j = Object(f.a)(),
 					x = Object(i.e)(k.a),
 					[E, h] = Object(a.useState)(!1),
-					[v, A] = Object(a.useState)(!1);
+					[v, I] = Object(a.useState)(!1);
 				Object(b.a)(l.a);
 				const [g, M] = Object(_.a)("marketplaceClaimInFeedUnitDismissed", !1), [N, y] = Object(_.a)("marketplaceClaimInFeedUnitLoadCount", 0), L = Object(a.useRef)(N), U = L.current % 2 == 0;
 				if (Object(a.useEffect)(() => {
@@ -153,17 +153,17 @@
 				const T = t !== p.g.Large;
 				return o.a.createElement(o.a.Fragment, null, o.a.createElement(s.a, {
 					onChange: e => {
-						v || e.intersectionRatio < .75 || (j(Object(O.d)()), A(!0))
+						v || e.intersectionRatio < .75 || (j(Object(O.d)()), I(!0))
 					},
 					threshold: .75
 				}, o.a.createElement("div", {
 					"data-testid": "marketplace-claim-infeed-unit",
-					className: Object(c.a)(I.a.container, {
-						[I.a.isNotLarge]: T
+					className: Object(c.a)(A.a.container, {
+						[A.a.isNotLarge]: T
 					})
 				}, o.a.createElement(u.a, null, o.a.createElement(r.e, {
-					className: Object(c.a)(I.a.feedUnit, {
-						[I.a.isNotLarge]: T
+					className: Object(c.a)(A.a.feedUnit, {
+						[A.a.isNotLarge]: T
 					}),
 					onClickCta: () => {
 						j(Object(O.b)()), n(Object(d.h)(m.a.ECON_MARKETPLACE_CLAIM, {
@@ -182,7 +182,7 @@
 					}
 				}))
 			};
-			t.default = A
+			t.default = I
 		},
 		"./src/reddit/components/Marketplace/MarketplaceConfigProvider.tsx": function(e, t, n) {
 			"use strict";
@@ -284,8 +284,8 @@
 			}));
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const c = Object(s.a)(r.Bd)
+			const c = Object(s.a)(r.Ad)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.8a7d3ac63ddade66fcd9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.707cbd19abc7311c3528.js.map

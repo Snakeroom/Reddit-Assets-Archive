@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportPage.9bf83e87e43923fb88ed.js
-// Retrieved at 10/31/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportPage.9905a365e679b6c47380.js
+// Retrieved at 11/1/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportPage"], {
 		"./src/lib/formatPythonString/index.ts": function(e, t, n) {
@@ -1100,8 +1100,8 @@
 			}
 			var T = n("./src/reddit/components/AccordionSection/index.tsx"),
 				U = n("./src/reddit/components/ContentPolicy/index.tsx"),
-				j = n("./src/lib/classNames/index.ts"),
-				L = n("./src/reddit/components/StructuredStyles/RadioInput/RadioOptionElement/index.tsx"),
+				L = n("./src/lib/classNames/index.ts"),
+				j = n("./src/reddit/components/StructuredStyles/RadioInput/RadioOptionElement/index.tsx"),
 				D = n("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
 				M = n("./src/reddit/components/ReportPage/AdditionalInfoInput/index.m.less"),
 				A = n.n(M);
@@ -1158,7 +1158,7 @@
 				e[e.GreyFields = 1] = "GreyFields", e[e.WhiteFields = 2] = "WhiteFields"
 			}(J || (J = {}));
 			const $ = e => s.a.createElement("div", {
-					className: Object(j.a)(e.isRequired && z.a.required, e.className, {
+					className: Object(L.a)(e.isRequired && z.a.required, e.className, {
 						[z.a.container]: !e.isTextarea,
 						[z.a.textareaContainer]: !!e.isTextarea,
 						...!!e.isTextarea && {
@@ -1168,14 +1168,14 @@
 						}
 					})
 				}, s.a.createElement("label", {
-					className: Object(j.a)({
+					className: Object(L.a)({
 						[z.a.field]: !e.isTextarea,
 						[z.a.textareaField]: !!e.isTextarea
 					})
 				}, e.children, e.label && s.a.createElement("span", {
 					className: z.a.label
 				}, e.label), !!e.state && s.a.createElement(Z, {
-					className: Object(j.a)({
+					className: Object(L.a)({
 						[z.a.mValid]: e.state === Y.Valid,
 						[z.a.mInvalid]: e.state === Y.Invalid
 					})
@@ -1198,7 +1198,7 @@
 						label: o,
 						state: l
 					}, s.a.createElement("input", X({}, d, {
-						className: Object(j.a)(z.a.input, z.a.control, {
+						className: Object(L.a)(z.a.input, z.a.control, {
 							[z.a.hasState]: !!e.state,
 							[z.a.mWhiteField]: e.backgroundColorState === J.WhiteFields
 						}),
@@ -1466,7 +1466,7 @@
 					const l = i ? _e.a.open : _e.a.closed,
 						d = o ? _e.a.topLevelSubSection : _e.a.subSection;
 					return s.a.createElement("div", {
-						className: Object(j.a)(l, d, e.className)
+						className: Object(L.a)(l, d, e.className)
 					}, e.depthOfParentRule > 0 ? s.a.createElement("div", {
 						className: _e.a.radioOptionsSectionHeader
 					}, e.parentRule.nextStepHeader || Re._("Select a rule", null, {
@@ -1475,7 +1475,7 @@
 						const r = a === n;
 						return s.a.createElement(s.a.Fragment, {
 							key: t.reasonText || t.reasonTextToShow
-						}, s.a.createElement(L.a, {
+						}, s.a.createElement(j.a, {
 							altColor: !0,
 							value: t.reasonText ? t.reasonText : "",
 							label: t.reasonTextToShow,
@@ -1573,10 +1573,10 @@
 			const Ie = c.a.header("Header", m.a),
 				Te = c.a.wrapped(ke.a, "Footer", Ne.a),
 				Ue = c.a.wrapped(Pe.l, "SubmitButton", Ne.a),
-				je = Object(o.c)({
+				Le = Object(o.c)({
 					initialReason: e => e.reportPage.initialReason
 				});
-			class Le extends s.a.Component {
+			class je extends s.a.Component {
 				constructor(e) {
 					super(e), this.onSubmit = () => {
 						this.setState({
@@ -1662,7 +1662,7 @@
 					}))
 				}
 			}
-			var De = Object(a.b)(je)(Le),
+			var De = Object(a.b)(Le)(je),
 				Me = n("./src/reddit/contexts/ApiContext.tsx"),
 				Ae = n("./src/reddit/endpoints/accounts/index.ts"),
 				Ve = n("./src/reddit/endpoints/post/report.ts"),
@@ -1888,13 +1888,13 @@
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/user.ts");
-			const o = e => r.d.Enabled === Object(s.c)(e, {
+			const o = e => r.c.Enabled === Object(s.c)(e, {
 					experimentEligibilitySelector: a.R,
-					experimentName: r.j
+					experimentName: r.i
 				}),
-				i = e => r.f.Enabled === Object(s.c)(e, {
+				i = e => r.e.Enabled === Object(s.c)(e, {
 					experimentEligibilitySelector: a.R,
-					experimentName: r.n
+					experimentName: r.m
 				})
 		},
 		"./src/redditGQL/operations/ReportPost.json": function(e) {
@@ -1902,4 +1902,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportPage.9bf83e87e43923fb88ed.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportPage.9905a365e679b6c47380.js.map
