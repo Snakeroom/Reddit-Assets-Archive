@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.71455c37833e8fd8ea3a.js
-// Retrieved at 11/1/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.8772c907cc4df3c50aef.js
+// Retrieved at 11/1/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -30,9 +30,9 @@
 			s.r(t), s.d(t, "privateListingPending", (function() {
 				return B
 			})), s.d(t, "privateMixedListingLoaded", (function() {
-				return U
-			})), s.d(t, "privatePostListingLoaded", (function() {
 				return G
+			})), s.d(t, "privatePostListingLoaded", (function() {
+				return U
 			})), s.d(t, "privateListingFailed", (function() {
 				return D
 			})), s.d(t, "profilePrivateRequested", (function() {
@@ -216,8 +216,8 @@
 					}
 				},
 				B = Object(o.a)(T.b),
-				U = Object(o.a)(T.c),
-				G = Object(o.a)(T.i),
+				G = Object(o.a)(T.c),
+				U = Object(o.a)(T.i),
 				D = Object(o.a)(T.a),
 				W = e => async (t, s, o) => {
 					const {
@@ -268,11 +268,11 @@
 							includeIdentity: x,
 							includeModerated: y
 						});
-						m === v.b.Saved || m === v.b.ReceivedGildings || m === v.b.GivenGildings ? await t(U({
+						m === v.b.Saved || m === v.b.ReceivedGildings || m === v.b.GivenGildings ? await t(G({
 							listingKey: b,
 							profileName: l,
 							...e
-						})) : await t(G({
+						})) : await t(U({
 							listingKey: b,
 							profileName: l,
 							...e
@@ -769,8 +769,8 @@
 					A = d.a.accountManagerOrigin,
 					F = L ? "/r/recap" : `${A}/login/?dest=${M}`,
 					B = N ? N.id : "anonymous",
-					U = "on" === R.recapGameState,
-					G = () => {
+					G = "on" === R.recapGameState,
+					U = () => {
 						y && _(setTimeout(() => {
 							g.current && (g.current.classList.add(C.a.transform), g.current.style.width = `${I}px`)
 						}, 4750)), y && j(setTimeout(() => {
@@ -778,11 +778,11 @@
 						}, 5e3))
 					};
 				Object(r.useEffect)(() => {
-					U || setTimeout(() => {
+					G || setTimeout(() => {
 						const e = Object(p.N)(B);
 						e ? Object(c.e)(e.lastSeenTime) >= 24 && e.dropSkip === p.a.NONE ? E(!0) : Date.now() >= new Date(2022, 10, 2).getTime() && e.dropSkip !== p.a.SECOND && E(!0) : E(!0)
 					})
-				}, [B, U]);
+				}, [B, G]);
 				const D = Object(r.useCallback)(e => {
 					if (e) {
 						const t = e.clientWidth;
@@ -792,14 +792,14 @@
 				return o.a.createElement("div", {
 					className: Object(a.a)(t, C.a.container),
 					style: m
-				}, y && T && !s && !U ? o.a.createElement("a", {
+				}, y && T && !s && !G ? o.a.createElement("a", {
 					ref: g,
 					href: F,
 					className: C.a.bananaPill,
 					onMouseEnter: () => {
 						w && clearTimeout(w), S && clearTimeout(S), g.current && (g.current.classList.remove(C.a.transform), g.current.style.width = "65px")
 					},
-					onMouseLeave: G,
+					onMouseLeave: U,
 					onClick: () => {
 						w && clearTimeout(w), S && clearTimeout(S), E(!1), Object(p.Sb)(B, !0), h((() => e => ({
 							source: "recap",
@@ -825,7 +825,7 @@
 					hk: "4Foziy"
 				}), o.a.createElement(n.a, {
 					onChange: e => {
-						e.isIntersecting && (G(), h((() => e => ({
+						e.isIntersecting && (U(), h((() => e => ({
 							source: "recap",
 							action: "view",
 							noun: "feed_banana",
@@ -947,8 +947,8 @@
 				A = s("./src/reddit/components/ModModeReports/index.tsx"),
 				F = s("./src/reddit/components/ModModeReports/helpers.ts"),
 				B = s("./src/reddit/components/OneFeed/PostRecommendationContext.tsx"),
-				U = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
-				G = s("./src/reddit/components/PostContainer/index.tsx"),
+				G = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
+				U = s("./src/reddit/components/PostContainer/index.tsx"),
 				D = s("./src/reddit/components/PostMeta/index.tsx"),
 				W = s("./src/reddit/components/PostOverflowMenu/index.tsx"),
 				V = s("./src/reddit/components/PostRailAndVotes/index.tsx"),
@@ -1033,8 +1033,8 @@
 					Ae = Object(X.a)(oe),
 					Fe = Object($.a)(oe),
 					Be = ce && ee.a,
-					Ue = Object(M.a)(fe),
-					Ge = Object(F.c)(fe),
+					Ge = Object(M.a)(fe),
+					Ue = Object(F.c)(fe),
 					De = !!fe.media && fe.media.type === J.o.RTJSON,
 					We = Se && De,
 					Ve = x && !ke,
@@ -1069,7 +1069,7 @@
 				Object(g.c)(fe) && (Xe = r.a.createElement(I, {
 					post: fe
 				}));
-				const $e = r.a.createElement(G.b, {
+				const $e = r.a.createElement(U.b, {
 					className: Object(i.a)(ie.a.classicPostStyles, le.a.postContainer, Object(ne.a)(e), {
 						[le.a.shouldShowOverflow]: Ee
 					}, t),
@@ -1090,7 +1090,7 @@
 					flairStyleTemplate: Le,
 					redditStyle: ve,
 					postId: xe
-				}), r.a.createElement(U.a, {
+				}), r.a.createElement(G.a, {
 					className: Ee ? le.a.shouldUseRoundedBorder : void 0,
 					"data-click-id": "background",
 					flairStyleTemplate: Le
@@ -1132,9 +1132,9 @@
 					source: fe.source
 				}, Object(a.a)(fe))), r.a.createElement(D.a, me({
 					key: "PostMeta"
-				}, Ke)), ce && Me && Ue && r.a.createElement(R.a, {
+				}, Ke)), ce && Me && Ge && r.a.createElement(R.a, {
 					thing: fe
-				}), ce && Me && Ge && r.a.createElement(A.a, {
+				}), ce && Me && Ue && r.a.createElement(A.a, {
 					onIgnoreReports: pe,
 					reportable: fe
 				}), Ie && Je && Je.url && !fe.isSurveyAd && r.a.createElement(m.a, {
@@ -1383,8 +1383,8 @@
 				A = s("./src/reddit/components/DistinguishCommentDropdown/index.tsx"),
 				F = s("./src/reddit/components/ModActionsMenu/index.tsx"),
 				B = s("./src/reddit/components/ModModeReports/helpers.ts"),
-				U = s("./src/reddit/components/ViewReportsDropdown/Loader.ts"),
-				G = s("./src/reddit/contexts/InsideOverlay.tsx"),
+				G = s("./src/reddit/components/ViewReportsDropdown/Loader.ts"),
+				U = s("./src/reddit/contexts/InsideOverlay.tsx"),
 				D = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				W = s("./src/reddit/helpers/correlationIdTracker.ts"),
 				V = s("./src/reddit/helpers/hasModPostPermissions/index.ts"),
@@ -1552,7 +1552,7 @@
 						onClick: this.handleRestrictedButtonClick,
 						selected: this.props.activeTooltipId === Ie(e.id),
 						id: Ie(e.id)
-					}, r.a.createElement(U.a, {
+					}, r.a.createElement(G.a, {
 						model: e,
 						onIgnoreReports: this.handleIgnoreReports,
 						tooltipId: Ie(e.id)
@@ -1722,15 +1722,15 @@
 						},
 						toggleDeleteCommentModal: () => e(Object(I.i)(je(s.id)))
 					}
-				})(Object(ie.c)(Object(G.b)(Ne)))),
+				})(Object(ie.c)(Object(U.b)(Ne)))),
 				Le = s("./src/reddit/components/Comments/Comment/TopMeta/index.tsx"),
 				Re = s("./src/reddit/components/RichTextJson/index.tsx"),
 				Me = s("./src/reddit/helpers/getRichTextContent/index.ts"),
 				Ae = s("./src/reddit/selectors/commentSelector.ts"),
 				Fe = s("./src/reddit/components/Comments/ProfileComment/index.m.less"),
 				Be = s.n(Fe);
-			const Ue = ge.a.wrapped(Le.a, "TopMeta", Be.a),
-				Ge = ge.a.div("ProfileCommentWrapper", Be.a),
+			const Ge = ge.a.wrapped(Le.a, "TopMeta", Be.a),
+				Ue = ge.a.div("ProfileCommentWrapper", Be.a),
 				De = ge.a.div("CommentBody", Be.a),
 				We = Object(o.b)(() => Object(i.c)({
 					comment: (e, t) => Object(Ae.b)(e, t),
@@ -1757,11 +1757,11 @@
 						renderSmallMedia: !0
 					}
 				});
-				return r.a.createElement(Ge, {
+				return r.a.createElement(Ue, {
 					className: Object(d.a)({
 						[Be.a.isRemoved]: !!t.bannedBy
 					})
-				}, r.a.createElement(Ue, {
+				}, r.a.createElement(Ge, {
 					collapsedBecauseCrowdControl: !1,
 					collapsed: !1,
 					comment: t,
@@ -3165,8 +3165,8 @@
 				}),
 				F = Object(h.a)(O.a),
 				B = "profile-nav-menu-tooltip",
-				U = y.g + y.q + y.p;
-			var G;
+				G = y.g + y.q + y.p;
+			var U;
 			t.a = M(Object(m.b)(A, e => ({
 					toggleTooltip: t => e(Object(x.h)({
 						tooltipId: t
@@ -3195,20 +3195,20 @@
 							isSnoovatar30Enabled: p,
 							viewBlockedConsent: h
 						});
-						k(e.filter(e => e.position === G.MENU));
+						k(e.filter(e => e.position === U.MENU));
 						const t = [],
 							c = a()(() => {
 								const s = document.documentElement.clientWidth - 2 * y.p,
-									n = s > U ? U : s;
+									n = s > G ? G : s;
 								let r = 42;
 								t.forEach(t => {
 									r += t.offsetWidth;
 									const s = e.find(e => e.text.toString().toLowerCase() === t.text);
-									s.position = r > n ? G.DROPDOWN : G.MENU
+									s.position = r > n ? U.DROPDOWN : U.MENU
 								});
-								const o = e.filter(e => e.position === G.MENU);
+								const o = e.filter(e => e.position === U.MENU);
 								k(e => i()(o, e) ? e : o);
-								const d = e.filter(e => e.position === G.DROPDOWN);
+								const d = e.filter(e => e.position === U.DROPDOWN);
 								j(e => i()(d, e) ? e : d), x(d.length > 0)
 							}, 50);
 						return r.a.read(() => {
@@ -3249,7 +3249,7 @@
 				})),
 				function(e) {
 					e.MENU = "menu", e.DROPDOWN = "dropdown"
-				}(G || (G = {}));
+				}(U || (U = {}));
 			const D = e => {
 					let {
 						isActive: t,
@@ -3309,7 +3309,7 @@
 							hk: "2w1YRh"
 						}),
 						url: `/user/${t}/saved/`,
-						position: G.MENU
+						position: U.MENU
 					}, {
 						internal: !0,
 						isActive: r === f.Sb.PROFILE_PRIVATE && o === w.b.Hidden,
@@ -3318,7 +3318,7 @@
 							hk: "225tka"
 						}),
 						url: `/user/${t}/hidden/`,
-						position: G.MENU
+						position: U.MENU
 					}, {
 						internal: !0,
 						isActive: r === f.Sb.PROFILE_PRIVATE && o === w.b.Upvoted,
@@ -3327,7 +3327,7 @@
 							hk: "RKwFZ"
 						}),
 						url: `/user/${t}/upvoted/`,
-						position: G.MENU
+						position: U.MENU
 					}, {
 						internal: !0,
 						isActive: r === f.Sb.PROFILE_PRIVATE && o === w.b.Downvoted,
@@ -3336,7 +3336,7 @@
 							hk: "2F9IL4"
 						}),
 						url: `/user/${t}/downvoted/`,
-						position: G.MENU
+						position: U.MENU
 					}] : [];
 					s ? (c.push({
 						internal: !0,
@@ -3346,7 +3346,7 @@
 							hk: "iwLBV"
 						}),
 						url: `/user/${t}/gilded/`,
-						position: G.MENU
+						position: U.MENU
 					}), c.push({
 						internal: !0,
 						isActive: r === f.Sb.PROFILE_PRIVATE && o === w.b.GivenGildings,
@@ -3355,7 +3355,7 @@
 							hk: "2UPYZc"
 						}),
 						url: `/user/${t}/gilded/given/`,
-						position: G.MENU
+						position: U.MENU
 					})) : c.push({
 						internal: !1,
 						isActive: !1,
@@ -3364,7 +3364,7 @@
 							hk: "1YgfYU"
 						}),
 						url: `${b.a.oldRedditUrl}/user/${t}/gilded/`,
-						position: G.MENU
+						position: U.MENU
 					});
 					const l = i && s ? [{
 							internal: !0,
@@ -3374,7 +3374,7 @@
 								hk: "1fv1wp"
 							}),
 							url: `/user/${t}/history/`,
-							position: G.MENU
+							position: U.MENU
 						}] : [],
 						m = d ? [{
 							internal: !0,
@@ -3384,7 +3384,7 @@
 								hk: "3SSKff"
 							}),
 							url: `/user/${t}/snoo/`,
-							position: G.MENU
+							position: U.MENU
 						}] : [],
 						u = a ? "?consent=true" : "";
 					return [{
@@ -3395,7 +3395,7 @@
 							hk: "2IBbqy"
 						}),
 						url: `/user/${t}/${u}`,
-						position: G.MENU
+						position: U.MENU
 					}, {
 						internal: !0,
 						isActive: r === f.Sb.PROFILE_POSTS,
@@ -3404,7 +3404,7 @@
 							hk: "a1BoF"
 						}),
 						url: `${Object(N.a)(t)}/${u}`,
-						position: G.MENU
+						position: U.MENU
 					}, {
 						internal: !0,
 						isActive: r === f.Sb.PROFILE_COMMENTS,
@@ -3413,7 +3413,7 @@
 							hk: "2VwjOc"
 						}),
 						url: `/user/${t}/comments/${u}`,
-						position: G.MENU
+						position: U.MENU
 					}, ...m, ...l, ...c]
 				}
 		},
@@ -3571,83 +3571,84 @@
 				g = s("./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts"),
 				f = s("./src/reddit/selectors/experiments/navbarLikeMweb.ts"),
 				x = s("./src/reddit/selectors/meta.ts"),
-				v = s("./src/reddit/components/SidebarFooter/index.m.less"),
-				y = s.n(v);
+				v = s("./src/redditGQL/types.ts"),
+				y = s("./src/reddit/components/SidebarFooter/index.m.less"),
+				C = s.n(y);
 			const {
-				fbt: C
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), O = a.a.a("Link", y.a), k = Object(i.c)({
+				fbt: O
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), k = a.a.a("Link", C.a), E = Object(i.c)({
 				countryCode: x.b,
 				d2xPdpSideRailRecsVariant: g.a,
 				isCountrySitesEnabled: h.b,
 				isD2xPdpSideRailRecsEnabled: g.b,
 				isNavbarLikeMwebEnabled: f.a
-			}), E = Object(o.b)(k), w = Object(p.u)({
+			}), w = Object(o.b)(E), j = Object(p.u)({
 				isFrontpage: p.A,
 				isCountrySitePage: p.y
-			}), j = e => {
+			}), S = e => {
 				let {
 					countryCode: t,
 					reredditContent: s
 				} = e;
 				return r.a.createElement("div", {
-					className: y.a.GreyRereddit
+					className: C.a.GreyRereddit
 				}, s, !!u.c[t] && r.a.createElement("div", {
-					className: y.a.LinkContainer
+					className: C.a.LinkContainer
 				}, r.a.createElement("div", {
-					className: y.a.Column
-				}, r.a.createElement(O, {
+					className: C.a.Column
+				}, r.a.createElement(k, {
 					href: "https://www.redditinc.com/policies/impressum"
-				}, C._("Impressum", null, {
+				}, O._("Impressum", null, {
 					hk: "4cKXSI"
-				})), r.a.createElement(O, {
+				})), t === v.j.De && r.a.createElement(k, {
 					href: "https://reddit.zendesk.com/hc/de/requests/new?ticket_form_id=360000152352",
-					className: y.a.NoneCapitalizeLink
-				}, C._("Report NetzDG Content", null, {
+					className: C.a.NoneCapitalizeLink
+				}, O._("Report NetzDG Content", null, {
 					hk: "1nszCF"
 				}))), r.a.createElement("div", {
-					className: y.a.Column
-				}, r.a.createElement(O, {
+					className: C.a.Column
+				}, r.a.createElement(k, {
 					href: "https://www.reddithelp.com"
-				}, C._("help", null, {
+				}, O._("help", null, {
 					hk: "4lyYaD"
-				})), r.a.createElement(O, {
+				})), t === v.j.De && r.a.createElement(k, {
 					href: "https://reddit.zendesk.com/hc/de/articles/360045289772-Deutschland-Meldungen-nach-dem-Netzwerkdurchsetzungsgesetz-NetzDG-"
-				}, C._("Transparency report", null, {
+				}, O._("Transparency report", null, {
 					hk: "3CgBdG"
 				})))), r.a.createElement("div", {
-					className: y.a.LinkContainer
+					className: C.a.LinkContainer
 				}, r.a.createElement("div", {
-					className: y.a.Column
-				}, r.a.createElement(O, {
+					className: C.a.Column
+				}, r.a.createElement(k, {
 					href: "https://www.redditinc.com/policies/user-agreement"
-				}, C._("User Agreement", null, {
+				}, O._("User Agreement", null, {
 					hk: "2RA6JL"
-				})), r.a.createElement(O, {
+				})), r.a.createElement(k, {
 					href: "https://www.redditinc.com/policies/privacy-policy"
-				}, C._("Privacy policy", null, {
+				}, O._("Privacy policy", null, {
 					hk: "10K04G"
 				}))), r.a.createElement("div", {
-					className: y.a.Column
-				}, r.a.createElement(O, {
+					className: C.a.Column
+				}, r.a.createElement(k, {
 					href: "https://www.redditinc.com/policies/content-policy"
-				}, C._("Content policy", null, {
+				}, O._("Content policy", null, {
 					hk: "1DyxZS"
-				})), r.a.createElement(O, {
+				})), r.a.createElement(k, {
 					href: "https://www.redditinc.com/policies/moderator-guidelines"
-				}, C._("Moderator Code of Conduct", null, {
+				}, O._("Moderator Code of Conduct", null, {
 					hk: "tWEG"
 				})))), r.a.createElement("div", {
-					className: y.a.Copyright
-				}, C._("Reddit Inc © {year}. All rights reserved", [C._param("year", (new Date).getFullYear().toString())], {
+					className: C.a.Copyright
+				}, O._("Reddit Inc © {year}. All rights reserved", [O._param("year", (new Date).getFullYear().toString())], {
 					hk: "4BrCkA"
 				})))
 			};
-			t.a = w(E(Object(c.c)(e => {
+			t.a = j(w(Object(c.c)(e => {
 				const t = Object(o.f)().getState(),
 					s = Object(h.a)(t, Object(d.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
 					const t = e.d2xPdpSideRailRecsVariant === m.fd.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.fd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.fd.LargeImagePreview ? e.reredditButtons : [];
-					return r.a.createElement(j, {
+					return r.a.createElement(S, {
 						reredditContent: t,
 						countryCode: e.countryCode
 					})
@@ -3662,69 +3663,69 @@
 						it: "Italiano",
 						pt: "Português"
 					};
-					return s.includes(t) || "en" === t ? r.a.createElement(O, {
+					return s.includes(t) || "en" === t ? r.a.createElement(k, {
 						href: "en" === t ? "/" : `/${t}/`,
 						onClick: () => e.sendEvent(Object(b.a)(t))
 					}, n[t]) : null
 				};
 				return r.a.createElement(l.a, {
-					className: y.a.Widget,
+					className: C.a.Widget,
 					redditStyle: e.redditStyle,
 					contentOnly: !0
 				}, !!u.c[e.countryCode] && r.a.createElement("div", {
-					className: y.a.LinkContainer
+					className: C.a.LinkContainer
 				}, r.a.createElement("div", {
-					className: y.a.Column
-				}, r.a.createElement(O, {
+					className: C.a.Column
+				}, r.a.createElement(k, {
 					href: "https://www.redditinc.com/policies/impressum"
-				}, C._("Impressum", null, {
+				}, O._("Impressum", null, {
 					hk: "4cKXSI"
-				})), r.a.createElement(O, {
+				})), e.countryCode === v.j.De && r.a.createElement(k, {
 					href: "https://reddit.zendesk.com/hc/de/requests/new?ticket_form_id=360000152352",
-					className: y.a.NoneCapitalizeLink
-				}, C._("Report NetzDG Content", null, {
+					className: C.a.NoneCapitalizeLink
+				}, O._("Report NetzDG Content", null, {
 					hk: "1nszCF"
 				}))), r.a.createElement("div", {
-					className: y.a.Column
-				}, r.a.createElement(O, {
+					className: C.a.Column
+				}, r.a.createElement(k, {
 					href: "https://www.reddithelp.com"
-				}, C._("help", null, {
+				}, O._("help", null, {
 					hk: "4lyYaD"
-				})), r.a.createElement(O, {
+				})), e.countryCode === v.j.De && r.a.createElement(k, {
 					href: "https://reddit.zendesk.com/hc/de/articles/360045289772-Deutschland-Meldungen-nach-dem-Netzwerkdurchsetzungsgesetz-NetzDG-"
-				}, C._("Transparency report", null, {
+				}, O._("Transparency report", null, {
 					hk: "3CgBdG"
 				})))), r.a.createElement("div", {
-					className: y.a.LinkContainer
+					className: C.a.LinkContainer
 				}, r.a.createElement("div", {
-					className: y.a.Column
-				}, r.a.createElement(O, {
+					className: C.a.Column
+				}, r.a.createElement(k, {
 					href: "https://www.redditinc.com/policies/user-agreement"
-				}, C._("User Agreement", null, {
+				}, O._("User Agreement", null, {
 					hk: "2RA6JL"
-				})), r.a.createElement(O, {
+				})), r.a.createElement(k, {
 					href: "https://www.redditinc.com/policies/privacy-policy"
-				}, C._("Privacy policy", null, {
+				}, O._("Privacy policy", null, {
 					hk: "10K04G"
 				}))), r.a.createElement("div", {
-					className: y.a.Column
-				}, r.a.createElement(O, {
+					className: C.a.Column
+				}, r.a.createElement(k, {
 					href: "https://www.redditinc.com/policies/content-policy"
-				}, C._("Content policy", null, {
+				}, O._("Content policy", null, {
 					hk: "1DyxZS"
-				})), r.a.createElement(O, {
+				})), r.a.createElement(k, {
 					href: "https://www.redditinc.com/policies/moderator-guidelines"
-				}, C._("Moderator Code of Conduct", null, {
+				}, O._("Moderator Code of Conduct", null, {
 					hk: "tWEG"
 				})))), (e.isCountrySitePage || e.isCountrySitesEnabled) && r.a.createElement("div", {
-					className: y.a.LinkContainer
+					className: C.a.LinkContainer
 				}, r.a.createElement("div", {
-					className: y.a.Column
+					className: C.a.Column
 				}, n("en"), n("fr"), n("it")), r.a.createElement("div", {
-					className: y.a.Column
+					className: C.a.Column
 				}, n("de"), n("es"), n("pt"))), r.a.createElement("div", {
-					className: y.a.Copyright
-				}, C._("Reddit Inc © {year}. All rights reserved", [C._param("year", (new Date).getFullYear().toString())], {
+					className: C.a.Copyright
+				}, O._("Reddit Inc © {year}. All rights reserved", [O._param("year", (new Date).getFullYear().toString())], {
 					hk: "4BrCkA"
 				})))
 			})))
@@ -6476,7 +6477,7 @@
 						o = {};
 					return r.forEach(e => o[e] = n[e]), o
 				}),
-				U = Object(j.a)((e, t) => {
+				G = Object(j.a)((e, t) => {
 					let {
 						listingKey: s
 					} = t;
@@ -6487,7 +6488,7 @@
 						o = {};
 					return r.forEach(e => !!Object(k.a)(e) && (o[e] = n[e])), o
 				});
-			var G = s("./src/reddit/selectors/subreddit.ts"),
+			var U = s("./src/reddit/selectors/subreddit.ts"),
 				D = s("./src/reddit/selectors/tracking.ts"),
 				W = s("./src/reddit/selectors/user.ts");
 			const V = (e, t) => (e, t, s) => Object(k.a)(e) ? 120 : 47,
@@ -6512,9 +6513,9 @@
 						} = t;
 						return e.pages.profileOverview.chrono.loadMore[s]
 					},
-					subredditsById: G.fb,
+					subredditsById: U.fb,
 					viewportDataLoaded: D.a,
-					commentsById: U,
+					commentsById: G,
 					itemIds: R,
 					itemIdToPostId: A,
 					postsById: B,
@@ -6815,4 +6816,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.71455c37833e8fd8ea3a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.8772c907cc4df3c50aef.js.map
