@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.4239875214a786ba8612.js
-// Retrieved at 10/31/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.1646b801cd3898de4bfe.js
+// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/backo2/index.js": function(e, t) {
@@ -6425,24 +6425,22 @@
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "f", (function() {
+			n.d(t, "e", (function() {
 				return m
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "d", (function() {
 				return u
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "f", (function() {
 				return p
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "h", (function() {
 				return h
 			})), n.d(t, "a", (function() {
 				return b
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "g", (function() {
 				return C
 			})), n.d(t, "c", (function() {
 				return f
-			})), n.d(t, "d", (function() {
-				return v
 			})), n.d(t, "b", (function() {
-				return g
+				return v
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = n("./src/lib/constants/index.ts"),
@@ -6492,15 +6490,14 @@
 				b = e => e.pages.modHub.modQueue.bulkAction.api.pending,
 				C = e => e.pages.modHub.modQueue.moderatedCommunitiesOrder.data,
 				f = e => {
-					const t = e.platform && e.platform.currentPage;
-					return t && t.meta && (t.meta.name === o.Sb.MODERATION_PAGES || t.meta.name === o.Sb.MODQUEUE_PAGES)
-				},
-				v = e => {
 					var t;
 					const n = e.platform && e.platform.currentPage;
 					return (null === (t = null == n ? void 0 : n.meta) || void 0 === t ? void 0 : t.name) === o.Sb.MODQUEUE_PAGES
 				},
-				g = e => f(e) && Object(d.a)(e) || !1
+				v = e => (e => {
+					const t = e.platform && e.platform.currentPage;
+					return t && t.meta && (t.meta.name === o.Sb.MODERATION_PAGES || t.meta.name === o.Sb.MODQUEUE_PAGES)
+				})(e) && Object(d.a)(e) || !1
 		},
 		"./src/redditGQL/operations/AvailableAwards.json": function(e) {
 			e.exports = JSON.parse('{"id":"4778ed491384"}')
@@ -6525,4 +6522,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.4239875214a786ba8612.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.1646b801cd3898de4bfe.js.map

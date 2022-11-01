@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Collection.216dc5bd1cdbd6115a02.js
-// Retrieved at 10/25/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Collection.3dece9d77809866eddf0.js
+// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Collection"], {
 		"./src/reddit/components/Collection/PostAndPostEventMeta/index.m.less": function(e, t, o) {
@@ -156,7 +156,7 @@
 			} = o("./node_modules/fbt/lib/FbtPublic.js");
 			let X, Y;
 			const G = e => `${e}--collectionItem`,
-				J = e => {
+				z = e => {
 					const {
 						activeModalId: t,
 						addEventStartTime: o,
@@ -232,7 +232,7 @@
 						shouldShowDeleteButton: !1
 					}))
 				},
-				z = j.a,
+				J = j.a,
 				Q = e => {
 					const {
 						activeModalId: t,
@@ -276,7 +276,7 @@
 						style: {
 							backgroundImage: `url('${O}')`
 						}
-					}) : n.a.createElement(z, {
+					}) : n.a.createElement(J, {
 						className: W.a.galleryThumbnailPlaceholder,
 						thumbnailContainerClassName: W.a.thumbnailContainerClassName,
 						classNameInnerThumbnail: Object(a.a)(W.a.galleryPostPlaceholderThumbnailOverride, W.a.commonThumbnailOverride),
@@ -346,7 +346,7 @@
 						displayLayout: e,
 						post: t
 					} = this.props;
-					return t ? e === g.a.TIMELINE ? n.a.createElement(J, H({}, this.props, {
+					return t ? e === g.a.TIMELINE ? n.a.createElement(z, H({}, this.props, {
 						onPostSelection: this.onPostSelection,
 						onRemovePost: this.onRemovePost,
 						onStartEventNow: this.onStartEventNow,
@@ -360,17 +360,17 @@
 					})
 				}
 			}
-			var V = Object(v.u)({
+			var K = Object(v.u)({
 					currentProfileName: v.i,
 					isCommentsPage: v.x,
-					isProfilePostListing: v.L,
-					isProfilePage: v.J,
+					isProfilePostListing: v.M,
+					isProfilePage: v.K,
 					pageLayer: e => e
 				})(Object(l.b)(() => Object(i.c)({
 					activeModalId: A.a,
 					galleryThumbnail: y.e,
 					isFutureEvent: y.i,
-					layout: v.S,
+					layout: v.T,
 					post: f.G,
 					shouldShowCollectionPostEdits: y.s,
 					subredditOrProfile: f.V
@@ -394,13 +394,13 @@
 						}
 					}
 				})(Object(b.c)(Z))),
-				q = o("./src/reddit/components/Collection/index.m.less"),
-				K = o.n(q);
+				V = o("./src/reddit/components/Collection/index.m.less"),
+				q = o.n(V);
 			const {
 				fbt: $
 			} = o("./node_modules/fbt/lib/FbtPublic.js"), ee = e => n.a.createElement(m.a, {
 				author: e.author,
-				className: K.a.author,
+				className: q.a.author,
 				"data-click-id": "user",
 				isAuthorDeleted: e.isDeleted,
 				isUnstyled: !0
@@ -410,7 +410,7 @@
 				top: oe(e),
 				maxHeight: `calc(100vh - ${h.f+(e.isOverlay?h.m:0)+h.b+5}px)`
 			}), ne = Object(v.u)({
-				isProfilePage: v.J,
+				isProfilePage: v.K,
 				pageLayer: e => e
 			}), le = Object(l.b)(() => Object(i.c)({
 				collection: y.n,
@@ -467,14 +467,14 @@
 							id: C
 						} = t;
 						return n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
-							className: Object(a.a)(K.a.collectionTitleWrapper, {
-								[K.a.isProfilePage]: d,
-								[K.a.collectionTitleWrapperExp]: e
+							className: Object(a.a)(q.a.collectionTitleWrapper, {
+								[q.a.isProfilePage]: d,
+								[q.a.collectionTitleWrapperExp]: e
 							})
 						}, n.a.createElement("div", {
-							className: K.a.collectionMetaData
+							className: q.a.collectionMetaData
 						}, n.a.createElement("span", {
-							className: K.a.collectionBy
+							className: q.a.collectionBy
 						}, $._("Collection by {authorName}", [$._param("authorName", n.a.createElement(ee, {
 							author: m,
 							isDeleted: Object(_.p)(m)
@@ -483,40 +483,40 @@
 						})), n.a.createElement(O.a, {
 							isSmall: !0
 						}), n.a.createElement("span", {
-							className: K.a.postCount
+							className: q.a.postCount
 						}, $._({
 							"*": "{number} posts",
 							_1: "1 post"
 						}, [$._plural(h.length, "number")], {
 							hk: "2gFsfn"
 						}))), n.a.createElement("div", {
-							className: K.a.collectionTitleOptions
+							className: q.a.collectionTitleOptions
 						}, n.a.createElement("span", {
-							className: K.a.collectionTitle
+							className: q.a.collectionTitle
 						}, n.a.createElement(u.b, {
 							type: u.a.Collection
 						}, t.title)), s && n.a.createElement(p.a, {
 							post: s,
 							isEventFollow: d
 						}), n.a.createElement(P.a, {
-							className: K.a.overflowMenu,
+							className: q.a.overflowMenu,
 							collectionId: C,
 							isSubmitPage: !1,
 							permalink: t.permalink,
 							shouldShowCreatePost: !0
 						}))), n.a.createElement("div", {
-							className: K.a.postListWrapper
+							className: q.a.postListWrapper
 						}, n.a.createElement("div", {
 							id: E.c,
 							style: se(this.props),
-							className: K.a.collectionList
+							className: q.a.collectionList
 						}, b && b.trim() && n.a.createElement("div", {
-							className: K.a.collectionDescription
+							className: q.a.collectionDescription
 						}, b), n.a.createElement("div", {
 							className: Object(a.a)({
-								[K.a.galleryContainer]: o === g.a.GALLERY
+								[q.a.galleryContainer]: o === g.a.GALLERY
 							})
-						}, h.map(e => n.a.createElement(V, {
+						}, h.map(e => n.a.createElement(K, {
 							collectionId: C,
 							postId: e,
 							key: e,
@@ -744,4 +744,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Collection.216dc5bd1cdbd6115a02.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Collection.3dece9d77809866eddf0.js.map

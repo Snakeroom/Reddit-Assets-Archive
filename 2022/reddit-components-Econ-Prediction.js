@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.fef7043df50f5f7e0859.js
-// Retrieved at 10/31/2022, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.2864bd1c09380f6e651c.js
+// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, n) {
@@ -937,8 +937,8 @@
 						subredditId: t
 					})),
 					l = Object(a.x)(i),
-					u = Object(a.J)(i),
-					m = Object(a.O)(i);
+					u = Object(a.K)(i),
+					m = Object(a.P)(i);
 				if (Object(le.a)(c.name), (null == d ? void 0 : d.tournamentId) !== n) return null;
 				const {
 					name: b,
@@ -983,7 +983,7 @@
 				}),
 				Ne = Object(a.u)({
 					isCommentsPage: a.x,
-					isPredictionsPage: a.P
+					isPredictionsPage: a.Q
 				}),
 				Me = e => {
 					let {
@@ -1088,7 +1088,7 @@
 		"./src/reddit/hooks/usePageLayer.ts": function(e, t, n) {
 			"use strict";
 			var s = n("./src/reddit/contexts/PageLayer/index.tsx");
-			t.a = s.eb
+			t.a = s.fb
 		},
 		"./src/reddit/icons/svgs/Chevron/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1748,4 +1748,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.fef7043df50f5f7e0859.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.2864bd1c09380f6e651c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.572807d5cbd596d8a74b.js
-// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.91c912830b45e9656d42.js
+// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4349,14 +4349,14 @@
 					isModQueueDisplayEnabled: Ie.b,
 					activeModalId: C.a,
 					hideNSFWPref: N.G,
-					flairStyleTemplate: ue.W,
+					flairStyleTemplate: ue.X,
 					isBlurredPreview: ye.b,
 					isCurrentUserProfilePost: S.l,
 					isLoggedIn: N.R,
 					isActive: S.j,
 					showPromotedCTA: Re.a,
 					moderatorPermissions: k.m,
-					modModeEnabled: ue.U,
+					modModeEnabled: ue.V,
 					posts: Ve,
 					postHeightVariant: we,
 					shouldShowNsfwListingBelow: Le.b,
@@ -5808,8 +5808,8 @@
 					return s ? `${n}--${s}` : n
 				},
 				B = Object(b.u)({
-					isProfilePostListing: b.L,
-					isSubreddit: b.O
+					isProfilePostListing: b.M,
+					isSubreddit: b.P
 				}),
 				U = Object(a.c)({
 					isModQueueDisplayEnabled: S.b,
@@ -5821,7 +5821,7 @@
 							postId: s.id
 						})
 					},
-					modModeEnabled: b.U
+					modModeEnabled: b.V
 				}),
 				W = Object(i.b)(U, (e, t) => ({
 					onHideTooltip: () => e(Object(l.i)()),
@@ -6899,7 +6899,7 @@
 				}
 			}
 			t.c = i.a.memo((function(e) {
-				const t = Object(p.eb)(),
+				const t = Object(p.fb)(),
 					s = Object(p.w)(t),
 					n = Object(g.a)(),
 					o = Object(a.e)(o => Z(o, {
@@ -8929,7 +8929,7 @@
 		"./src/reddit/hooks/usePageLayer.ts": function(e, t, s) {
 			"use strict";
 			var n = s("./src/reddit/contexts/PageLayer/index.tsx");
-			t.a = n.eb
+			t.a = n.fb
 		},
 		"./src/reddit/hooks/useTheme.ts": function(e, t, s) {
 			"use strict";
@@ -10464,4 +10464,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.572807d5cbd596d8a74b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.91c912830b45e9656d42.js.map

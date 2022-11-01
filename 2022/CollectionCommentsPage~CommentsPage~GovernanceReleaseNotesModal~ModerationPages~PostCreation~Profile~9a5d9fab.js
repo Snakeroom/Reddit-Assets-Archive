@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.93ba7537bd05b444176c.js
-// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.620cbe60b7c912024b07.js
+// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -2392,19 +2392,19 @@
 		"./src/reddit/selectors/experiments/intuitivePostTypes.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return d
+				return a
 			}));
 			var i = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/helpers/isCrosspost.ts"),
-				o = s("./src/reddit/selectors/modQueue.ts"),
-				a = s("./src/reddit/selectors/platform.ts");
-			const d = (e, t) => {
+				o = s("./src/reddit/contexts/PageLayer/index.tsx");
+			const a = (e, t) => {
 				let {
-					post: s
+					post: s,
+					pageLayer: a
 				} = t;
-				if (Object(o.c)(e)) return !0;
-				const d = Object(a.f)(e),
+				if (Object(o.E)(a)) return !0;
+				const d = Object(o.x)(a),
 					l = Object(r.a)(s);
 				return !(!d || l) && (e => {
 					return Object(n.c)(e, {
@@ -2416,4 +2416,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.93ba7537bd05b444176c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.620cbe60b7c912024b07.js.map

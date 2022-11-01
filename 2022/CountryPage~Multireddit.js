@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.e699684cd7b1af3bd0b0.js
-// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.9d05e26a4776c6948fb6.js
+// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2180,8 +2180,8 @@
 					isCommentPermalink: p.w,
 					isCommentsPage: p.x,
 					isFrontpage: p.A,
-					isProfilePostListing: p.L,
-					isTopicPage: p.R,
+					isProfilePostListing: p.M,
+					isTopicPage: p.S,
 					pageLayer: e => e
 				})
 			}
@@ -2190,7 +2190,7 @@
 					apiError: y.c,
 					apiPending: y.d,
 					measureScrollFPS: f.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(p.S)(e, t),
+					layout: (e, t) => t.forcedLayout || Object(p.T)(e, t),
 					loadMore: y.g,
 					postsById: v.T,
 					postIds: Object(s.a)((e, t) => {
@@ -2203,7 +2203,7 @@
 					}),
 					subredditsById: x.fb,
 					viewportDataLoaded: k.a,
-					pageReferrer: p.V,
+					pageReferrer: p.W,
 					postListPlaceholderComponent: () => _.a,
 					isNpsScrollSurveyEnabled: g.e
 				},
@@ -2706,7 +2706,7 @@
 				fbt: je
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), Oe = Object(l.c)({
 				isLoggedIn: U.R,
-				layout: (e, t) => z.e[Object(N.S)(e, t)],
+				layout: (e, t) => z.e[Object(N.T)(e, t)],
 				userIsOwner: (e, t) => Object(q.c)(e, t.multireddit.url)
 			}), Fe = Object(c.b)(Oe), De = Object(N.u)(), Te = {};
 			var Se = De(Fe(e => a.a.createElement("div", {
@@ -2932,4 +2932,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.e699684cd7b1af3bd0b0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.9d05e26a4776c6948fb6.js.map

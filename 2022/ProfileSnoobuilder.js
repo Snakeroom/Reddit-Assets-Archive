@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.e33c3f067ffa64e9036a.js
-// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.98d4a2e32c449bd5c35a.js
+// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -1425,7 +1425,7 @@
 				h = n("./src/lib/lessComponent.tsx");
 			const b = Object(u.u)(),
 				_ = Object(o.c)({
-					layout: u.S
+					layout: u.T
 				}),
 				f = Object(i.b)(_);
 			class g extends r.a.Component {
@@ -1550,7 +1550,7 @@
 				}).apply(this, arguments)
 			}
 			const B = Object(v.u)({
-					routeName: v.Z,
+					routeName: v.ab,
 					privateListingType: v.j
 				}),
 				z = Object(p.c)({
@@ -3497,7 +3497,7 @@
 				_ = n("./src/reddit/selectors/user.ts");
 			const f = n("./src/reddit/components/Snoobuilder/index.tsx").default,
 				g = Object(a.u)(),
-				x = Object(o.a)(a.E, _.lb, (e, t) => {
+				x = Object(o.a)(a.F, _.lb, (e, t) => {
 					let {
 						match: n
 					} = t;
@@ -3571,4 +3571,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.e33c3f067ffa64e9036a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.98d4a2e32c449bd5c35a.js.map

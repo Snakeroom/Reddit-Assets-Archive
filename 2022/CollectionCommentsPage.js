@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.701c7ba9eb8e3d8e2c8b.js
-// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.c3ab2640a3818b4549cf.js
+// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -3825,7 +3825,7 @@
 						}) : null
 					},
 					prediction: vt.f,
-					modModeEnabled: ot.U,
+					modModeEnabled: ot.V,
 					errorMsgs: R.I,
 					replyFormOpen: R.L,
 					subreddit: ot.r,
@@ -8003,7 +8003,7 @@
 				pageLayer: e => e
 			}), It = Object(a.b)(() => Object(l.c)({
 				activeModalId: D.a,
-				flairStyleTemplate: Te.W,
+				flairStyleTemplate: Te.X,
 				currentUser: q.l,
 				crosspost: z.d,
 				hideNSFWPref: q.G,
@@ -8024,7 +8024,7 @@
 				showPromotedCTA: G.a,
 				post: z.G,
 				moderatorPermissions: V.m,
-				modModeEnabled: Te.U,
+				modModeEnabled: Te.V,
 				shouldTryToShowCrosspostModal: lt.e,
 				showEditFlair: Ae.a,
 				subredditOrProfile: z.V,
@@ -8174,7 +8174,8 @@
 					userIsOp: Ge,
 					pageLayer: qe
 				} = e, Ke = Object(we.b)(), Ye = Object(o.useRef)(null), [Qe, Je] = Object(o.useState)(Ae.authorIsBlocked), Ze = Object(A.J)(Ae), Xe = Object(a.e)(e => Object(Re.a)(e)), $e = Object(a.e)(e => Object(U.a)(e, {
-					post: Ae
+					post: Ae,
+					pageLayer: qe
 				})), tt = Object(c.a)(Ae), st = W || G, nt = st || V || H || q, rt = !!(O && (null == ze ? void 0 : ze.isNSFW));
 				Object(o.useEffect)(() => {
 					R && he()
@@ -9828,7 +9829,7 @@
 						to: t.url,
 						isActive: s,
 						onClick: e => {
-							Object(d.H)(o) && !Object(d.P)(o) && e.preventDefault(), n()
+							Object(d.I)(o) && !Object(d.Q)(o) && e.preventDefault(), n()
 						}
 					}, F._("Polls", null, {
 						hk: "1vWsZx"
@@ -9849,7 +9850,7 @@
 				const s = Object(o.d)(),
 					i = Object(L.a)(),
 					a = Object(W.a)(),
-					d = Object(D.Q)(i),
+					d = Object(D.R)(i),
 					[c, l] = Object(n.useState)(!1),
 					m = Object(o.e)(e => Object(N.Y)(e, {
 						subredditId: t
@@ -9893,7 +9894,7 @@
 				Q = Object(i.c)({
 					isMetaFilterEnabled: (e, t) => !!e.subreddits.appliedFilters.meta[t.subredditId],
 					isPostsRoute: (e, t) => !!t.pageLayer && !!t.pageLayer.meta && Y.indexOf(t.pageLayer.meta.name) > -1,
-					isPredictionsPage: (e, t) => !!t.pageLayer && Object(d.P)(t.pageLayer)
+					isPredictionsPage: (e, t) => !!t.pageLayer && Object(d.Q)(t.pageLayer)
 				});
 			var J = K(Object(o.b)(Q, (e, t) => ({
 					onTurnOffMetaFilter: () => e(Object(T.p)({
@@ -9982,7 +9983,7 @@
 			const le = Object(c.a)("spPolls", A),
 				me = Object(d.u)(),
 				ue = Object(i.c)({
-					layout: d.S,
+					layout: d.T,
 					widget: l.f
 				}),
 				pe = Object(o.b)(ue);
@@ -10624,8 +10625,8 @@
 			}
 			const j = 129,
 				k = Object(h.u)({
-					filterName: e => Object(h.X)(e)[b.j],
-					url: e => Object(h.db)(e)
+					filterName: e => Object(h.Y)(e)[b.j],
+					url: e => Object(h.eb)(e)
 				}),
 				w = Object(a.c)({
 					subredditId: (e, t) => Object(y.I)(e, t.subredditName)
@@ -12033,8 +12034,8 @@
 					isCommentPermalink: p.w,
 					isCommentsPage: p.x,
 					isFrontpage: p.A,
-					isProfilePostListing: p.L,
-					isTopicPage: p.R,
+					isProfilePostListing: p.M,
+					isTopicPage: p.S,
 					pageLayer: e => e
 				})
 			}
@@ -12043,7 +12044,7 @@
 					apiError: v.c,
 					apiPending: v.d,
 					measureScrollFPS: f.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(p.S)(e, t),
+					layout: (e, t) => t.forcedLayout || Object(p.T)(e, t),
 					loadMore: v.g,
 					postsById: C.T,
 					postIds: Object(o.a)((e, t) => {
@@ -12056,7 +12057,7 @@
 					}),
 					subredditsById: y.fb,
 					viewportDataLoaded: _.a,
-					pageReferrer: p.V,
+					pageReferrer: p.W,
 					postListPlaceholderComponent: () => g.a,
 					isNpsScrollSurveyEnabled: x.e
 				},
@@ -14877,7 +14878,7 @@
 				r = s("./src/reddit/constants/postLayout.ts"),
 				o = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				i = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const a = e => r.e[Object(o.S)(e, {})] === r.d.Card,
+			const a = e => r.e[Object(o.T)(e, {})] === r.d.Card,
 				d = e => Object(i.c)(e, {
 					experimentEligibilitySelector: a,
 					experimentName: n.yb
@@ -15169,4 +15170,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.701c7ba9eb8e3d8e2c8b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.c3ab2640a3818b4549cf.js.map

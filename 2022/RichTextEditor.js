@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.61e768200032831cd3d1.js
-// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.039a143e0e7134ede859.js
+// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -3855,7 +3855,7 @@
 						let {
 							pageLayer: o
 						} = t;
-						return Object(xe.cb)(e, o, f.e.Comment)
+						return Object(xe.db)(e, o, f.e.Comment)
 					},
 					postAuthorIsBlocked: Xe.w,
 					isTrueblockPCBlockeeEnabled: Ge.d
@@ -6320,4 +6320,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.61e768200032831cd3d1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.039a143e0e7134ede859.js.map

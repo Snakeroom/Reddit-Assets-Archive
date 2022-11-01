@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.883c1e3d1302c5be42a7.js
-// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.8ca3ce022231a523dba7.js
+// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1141,11 +1141,11 @@
 				Pe = () => Object(c.c)({
 					activeModalId: E.a,
 					crosspost: S.d,
-					flairStyleTemplate: ae.W,
+					flairStyleTemplate: ae.X,
 					isActive: S.j,
 					isExpanded: S.m,
 					showPromotedCTA: xe.a,
-					layout: ae.S,
+					layout: ae.T,
 					moderatorPermissions: y.m,
 					poll: (e, t) => {
 						const n = e.posts.metaMap[t.postId];
@@ -2699,7 +2699,7 @@
 				}
 			}
 			t.c = i.a.memo((function(e) {
-				const t = Object(p.eb)(),
+				const t = Object(p.fb)(),
 					n = Object(p.w)(t),
 					r = Object(C.a)(),
 					s = Object(a.e)(s => Q(s, {
@@ -4967,7 +4967,7 @@
 		"./src/reddit/hooks/usePageLayer.ts": function(e, t, n) {
 			"use strict";
 			var r = n("./src/reddit/contexts/PageLayer/index.tsx");
-			t.a = r.eb
+			t.a = r.fb
 		},
 		"./src/reddit/hooks/useTheme.ts": function(e, t, n) {
 			"use strict";
@@ -6363,4 +6363,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.883c1e3d1302c5be42a7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.8ca3ce022231a523dba7.js.map

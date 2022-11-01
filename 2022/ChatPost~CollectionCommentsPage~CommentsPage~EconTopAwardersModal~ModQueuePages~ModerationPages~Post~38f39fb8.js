@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.e04d519919824f702257.js
-// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.e7807bf60f38ab9f3073.js
+// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -2458,7 +2458,7 @@
 						ye = () => o.a.createElement(ne, {
 							className: e.metaSeparatorClassName
 						}, "•"),
-						Ie = Object(n.e)(e => Object(q.S)(e, {
+						Ie = Object(n.e)(e => Object(q.T)(e, {
 							pageLayer: w
 						})),
 						Ce = W.e[Ie] === W.d.Card,
@@ -2620,7 +2620,7 @@
 				b = i.a.div("Container", m.a),
 				f = Object(a.a)(d.b),
 				v = Object(c.u)({
-					isProfileListingPage: c.I
+					isProfileListingPage: c.J
 				});
 			class w extends n.a.Component {
 				constructor(e) {
@@ -3695,4 +3695,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.e04d519919824f702257.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.e7807bf60f38ab9f3073.js.map

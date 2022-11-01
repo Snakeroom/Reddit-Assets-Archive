@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.92dcb74b0cb699ebab83.js
-// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.03db0a3fefd573ae52a6.js
+// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -7334,7 +7334,7 @@
 					} else {
 						const t = {
 							...r()(e.queryParams, [...h.q, ...h.p, h.l]),
-							layout: Object(g.S)(T, {}).toLowerCase(),
+							layout: Object(g.T)(T, {}).toLowerCase(),
 							sort: j,
 							t: Object(L.a)(j, k)
 						};
@@ -7451,7 +7451,7 @@
 							sort: m,
 							t: p,
 							...r()(d, h.q),
-							layout: Object(g.S)(a, {}).toLowerCase()
+							layout: Object(g.T)(a, {}).toLowerCase()
 						};
 						E = await w(s(), b, e)
 					}
@@ -12295,7 +12295,7 @@
 							subredditId: n.subredditId
 						})
 					},
-					modModeEnabled: f.U
+					modModeEnabled: f.V
 				}),
 				P = Object(i.b)(T, (e, t) => {
 					let {
@@ -14045,7 +14045,7 @@
 						}) : null
 					},
 					prediction: _t.f,
-					modModeEnabled: ot.U,
+					modModeEnabled: ot.V,
 					errorMsgs: A.I,
 					replyFormOpen: A.L,
 					subreddit: ot.r,
@@ -21705,8 +21705,8 @@
 					return n ? `${s}--${n}` : s
 				},
 				B = Object(b.u)({
-					isProfilePostListing: b.L,
-					isSubreddit: b.O
+					isProfilePostListing: b.M,
+					isSubreddit: b.P
 				}),
 				U = Object(a.c)({
 					isModQueueDisplayEnabled: I.b,
@@ -21718,7 +21718,7 @@
 							postId: n.id
 						})
 					},
-					modModeEnabled: b.U
+					modModeEnabled: b.V
 				}),
 				V = Object(i.b)(U, (e, t) => ({
 					onHideTooltip: () => e(Object(l.i)()),
@@ -22388,7 +22388,7 @@
 				pageLayer: e => e
 			}), St = Object(a.b)(() => Object(l.c)({
 				activeModalId: B.a,
-				flairStyleTemplate: Pe.W,
+				flairStyleTemplate: Pe.X,
 				currentUser: K.l,
 				crosspost: H.d,
 				hideNSFWPref: K.G,
@@ -22409,7 +22409,7 @@
 				showPromotedCTA: q.a,
 				post: H.G,
 				moderatorPermissions: W.m,
-				modModeEnabled: Pe.U,
+				modModeEnabled: Pe.V,
 				shouldTryToShowCrosspostModal: lt.e,
 				showEditFlair: De.a,
 				subredditOrProfile: H.V,
@@ -22559,7 +22559,8 @@
 					userIsOp: qe,
 					pageLayer: Ke
 				} = e, ze = Object(Ie.b)(), Ze = Object(o.useRef)(null), [Ye, Qe] = Object(o.useState)(De.authorIsBlocked), Je = Object(D.J)(De), Xe = Object(a.e)(e => Object(Ae.a)(e)), $e = Object(a.e)(e => Object(U.a)(e, {
-					post: De
+					post: De,
+					pageLayer: Ke
 				})), tt = Object(d.a)(De), nt = V || q, st = nt || W || G || K, rt = !!(y && (null == He ? void 0 : He.isNSFW));
 				Object(o.useEffect)(() => {
 					A && fe()
@@ -23930,7 +23931,7 @@
 				}
 			}
 			t.c = i.a.memo((function(e) {
-				const t = Object(p.eb)(),
+				const t = Object(p.fb)(),
 					n = Object(p.w)(t),
 					s = Object(O.a)(),
 					r = Object(a.e)(r => X(r, {
@@ -25786,7 +25787,7 @@
 						to: t.url,
 						isActive: n,
 						onClick: e => {
-							Object(c.H)(o) && !Object(c.P)(o) && e.preventDefault(), s()
+							Object(c.I)(o) && !Object(c.Q)(o) && e.preventDefault(), s()
 						}
 					}, M._("Polls", null, {
 						hk: "1vWsZx"
@@ -25807,7 +25808,7 @@
 				const n = Object(o.d)(),
 					i = Object(N.a)(),
 					a = Object(V.a)(),
-					c = Object(B.Q)(i),
+					c = Object(B.R)(i),
 					[d, l] = Object(s.useState)(!1),
 					u = Object(o.e)(e => Object(T.Y)(e, {
 						subredditId: t
@@ -25851,7 +25852,7 @@
 				Y = Object(i.c)({
 					isMetaFilterEnabled: (e, t) => !!e.subreddits.appliedFilters.meta[t.subredditId],
 					isPostsRoute: (e, t) => !!t.pageLayer && !!t.pageLayer.meta && Z.indexOf(t.pageLayer.meta.name) > -1,
-					isPredictionsPage: (e, t) => !!t.pageLayer && Object(c.P)(t.pageLayer)
+					isPredictionsPage: (e, t) => !!t.pageLayer && Object(c.Q)(t.pageLayer)
 				});
 			var Q = z(Object(o.b)(Y, (e, t) => ({
 					onTurnOffMetaFilter: () => e(Object(P.p)({
@@ -25940,7 +25941,7 @@
 			const le = Object(d.a)("spPolls", D),
 				ue = Object(c.u)(),
 				me = Object(i.c)({
-					layout: c.S,
+					layout: c.T,
 					widget: l.f
 				}),
 				pe = Object(o.b)(me);
@@ -27772,8 +27773,8 @@
 			}
 			const j = 129,
 				k = Object(f.u)({
-					filterName: e => Object(f.X)(e)[b.j],
-					url: e => Object(f.db)(e)
+					filterName: e => Object(f.Y)(e)[b.j],
+					url: e => Object(f.eb)(e)
 				}),
 				I = Object(a.c)({
 					subredditId: (e, t) => Object(x.I)(e, t.subredditName)
@@ -29181,8 +29182,8 @@
 					isCommentPermalink: p.w,
 					isCommentsPage: p.x,
 					isFrontpage: p.A,
-					isProfilePostListing: p.L,
-					isTopicPage: p.R,
+					isProfilePostListing: p.M,
+					isTopicPage: p.S,
 					pageLayer: e => e
 				})
 			}
@@ -29191,7 +29192,7 @@
 					apiError: _.c,
 					apiPending: _.d,
 					measureScrollFPS: h.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(p.S)(e, t),
+					layout: (e, t) => t.forcedLayout || Object(p.T)(e, t),
 					loadMore: _.g,
 					postsById: v.T,
 					postIds: Object(o.a)((e, t) => {
@@ -29204,7 +29205,7 @@
 					}),
 					subredditsById: x.fb,
 					viewportDataLoaded: O.a,
-					pageReferrer: p.V,
+					pageReferrer: p.W,
 					postListPlaceholderComponent: () => C.a,
 					isNpsScrollSurveyEnabled: g.e
 				},
@@ -36981,7 +36982,7 @@
 		"./src/reddit/hooks/usePageLayer.ts": function(e, t, n) {
 			"use strict";
 			var s = n("./src/reddit/contexts/PageLayer/index.tsx");
-			t.a = s.eb
+			t.a = s.fb
 		},
 		"./src/reddit/hooks/usePostContext.ts": function(e, t, n) {
 			"use strict";
@@ -38073,7 +38074,7 @@
 			const b = Object(d.u)(),
 				f = Object(i.c)({
 					isEditing: l.i,
-					layout: (e, t) => t.forcedLayout || Object(d.S)(e, t)
+					layout: (e, t) => t.forcedLayout || Object(d.T)(e, t)
 				}),
 				C = Object(o.b)(f);
 			t.a = b(C(e => {
@@ -38092,7 +38093,7 @@
 				} = e;
 				return r.a.createElement("div", p({
 					className: Object(a.a)(t, m.a.styledContent, {
-						[m.a.mLargePostLayout]: f === c.g.Large || Object(d.P)(C),
+						[m.a.mLargePostLayout]: f === c.g.Large || Object(d.Q)(C),
 						[m.a.mDisableFullScreen]: s && !u,
 						[m.a.mClassicWidth]: u,
 						[m.a.mIsEditing]: !!b,
@@ -43418,7 +43419,7 @@
 				r = n("./src/reddit/constants/postLayout.ts"),
 				o = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				i = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const a = e => r.e[Object(o.S)(e, {})] === r.d.Card,
+			const a = e => r.e[Object(o.T)(e, {})] === r.d.Card,
 				c = e => Object(i.c)(e, {
 					experimentEligibilitySelector: a,
 					experimentName: s.yb
@@ -44061,7 +44062,7 @@
 					let {
 						pageLayer: n
 					} = t;
-					return Object(o.O)(n)
+					return Object(o.P)(n)
 				}, (e, t, n) => !e && !t && n),
 				d = Object(s.a)((e, t) => Object(i.c)(e, {
 					experimentName: r.od,
@@ -44842,4 +44843,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.92dcb74b0cb699ebab83.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.03db0a3fefd573ae52a6.js.map

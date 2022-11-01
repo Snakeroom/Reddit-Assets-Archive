@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.5d3dcb779c7b3f7a20d5.js
-// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.68ff168176f610b95d10.js
+// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -3889,7 +3889,7 @@
 				}
 			}
 			t.c = o.a.memo((function(e) {
-				const t = Object(f.eb)(),
+				const t = Object(f.fb)(),
 					n = Object(f.w)(t),
 					r = Object(O.a)(),
 					s = Object(c.e)(s => J(s, {
@@ -4339,7 +4339,7 @@
 				const O = (null === (v = n.searchQuery) || void 0 === v ? void 0 : v.trim()) || "",
 					I = Object(m.a)(),
 					S = Object(J.a)(),
-					D = Object($.Z)(S),
+					D = Object($.ab)(S),
 					w = Object(a.d)(),
 					{
 						experimentState: j,
@@ -6520,7 +6520,7 @@
 		"./src/reddit/hooks/usePageLayer.ts": function(e, t, n) {
 			"use strict";
 			var r = n("./src/reddit/contexts/PageLayer/index.tsx");
-			t.a = r.eb
+			t.a = r.fb
 		},
 		"./src/reddit/hooks/useTheme.ts": function(e, t, n) {
 			"use strict";
@@ -25884,4 +25884,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.5d3dcb779c7b3f7a20d5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.68ff168176f610b95d10.js.map

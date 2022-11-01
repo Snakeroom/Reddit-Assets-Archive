@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.1239b4fe3f07a7f13293.js
-// Retrieved at 10/26/2022, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.540bc39ccd1e080cb019.js
+// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent~TopWeekPostsDiscoveryUnit"], {
 		"./node_modules/react-motion/lib/Motion.js": function(e, t, s) {
@@ -2245,7 +2245,7 @@
 				}
 			}
 			t.c = i.a.memo((function(e) {
-				const t = Object(p.eb)(),
+				const t = Object(p.fb)(),
 					s = Object(p.w)(t),
 					n = Object(j.a)(),
 					a = Object(o.e)(a => J(a, {
@@ -2289,7 +2289,7 @@
 				h = o.a.div("Container", m.a),
 				b = Object(i.a)(l.b),
 				y = Object(c.u)({
-					isProfileListingPage: c.I
+					isProfileListingPage: c.J
 				});
 			class x extends r.a.Component {
 				constructor(e) {
@@ -2660,4 +2660,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.1239b4fe3f07a7f13293.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.540bc39ccd1e080cb019.js.map

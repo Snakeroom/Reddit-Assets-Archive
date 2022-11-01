@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.b1f0ac7771422a86617b.js
-// Retrieved at 10/31/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.081385e90f8e450f7b99.js
+// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -74,8 +74,8 @@
 				} = e;
 				const h = Object(l.b)(),
 					g = Object(r.useRef)(null),
-					[S, C] = Object(r.useState)(!1),
-					[O, k] = Object(r.useState)(),
+					[S, O] = Object(r.useState)(!1),
+					[C, k] = Object(r.useState)(),
 					[j, N] = Object(r.useState)(),
 					[T, w] = Object(r.useState)(0),
 					P = Object(i.e)(E.l),
@@ -91,13 +91,13 @@
 						S && N(setTimeout(() => {
 							g.current && (g.current.classList.add(_.a.transform), g.current.style.width = `${T}px`)
 						}, 4750)), S && k(setTimeout(() => {
-							C(!1), Object(b.Sb)(M, !1)
+							O(!1), Object(b.Sb)(M, !1)
 						}, 5e3))
 					};
 				Object(r.useEffect)(() => {
 					D || setTimeout(() => {
 						const e = Object(b.N)(M);
-						e ? Object(d.e)(e.lastSeenTime) >= 24 && e.dropSkip === b.a.NONE ? C(!0) : Date.now() >= new Date(2022, 10, 2).getTime() && e.dropSkip !== b.a.SECOND && C(!0) : C(!0)
+						e ? Object(d.e)(e.lastSeenTime) >= 24 && e.dropSkip === b.a.NONE ? O(!0) : Date.now() >= new Date(2022, 10, 2).getTime() && e.dropSkip !== b.a.SECOND && O(!0) : O(!0)
 					})
 				}, [M, D]);
 				const W = Object(r.useCallback)(e => {
@@ -114,11 +114,11 @@
 					href: R,
 					className: _.a.bananaPill,
 					onMouseEnter: () => {
-						O && clearTimeout(O), j && clearTimeout(j), g.current && (g.current.classList.remove(_.a.transform), g.current.style.width = "65px")
+						C && clearTimeout(C), j && clearTimeout(j), g.current && (g.current.classList.remove(_.a.transform), g.current.style.width = "65px")
 					},
 					onMouseLeave: A,
 					onClick: () => {
-						O && clearTimeout(O), j && clearTimeout(j), C(!1), Object(b.Sb)(M, !0), h((() => e => ({
+						C && clearTimeout(C), j && clearTimeout(j), O(!1), Object(b.Sb)(M, !0), h((() => e => ({
 							source: "recap",
 							action: "click",
 							noun: "feed_banana",
@@ -222,7 +222,7 @@
 				}(t, h, f(b, l)), {
 					highlightValue: _,
 					selectedIndex: v,
-					onKeyDown: O,
+					onKeyDown: C,
 					isClosed: k,
 					setClosed: j
 				} = function(e, t, s) {
@@ -254,7 +254,7 @@
 					className: Object(c.a)(y.a.geoInput, u),
 					name: N,
 					disabled: o,
-					onKeyDown: O,
+					onKeyDown: C,
 					value: _ && _.name || t,
 					placeholder: r.fbt._("Add location", null, {
 						hk: "1BaqFd"
@@ -266,7 +266,7 @@
 						g(!0), d()
 					},
 					onBlur: () => g(!1)
-				}), x.length && !k ? i.a.createElement(C, {
+				}), x.length && !k ? i.a.createElement(O, {
 					id: l,
 					items: x.map(e => e.name),
 					selectedIndex: v,
@@ -277,7 +277,7 @@
 				}) : null)
 			}
 
-			function C(e) {
+			function O(e) {
 				const {
 					id: t,
 					items: s,
@@ -296,7 +296,7 @@
 					})
 				}, e)))
 			}
-			const O = () => {};
+			const C = () => {};
 
 			function k(e) {
 				const {
@@ -304,9 +304,9 @@
 					initialValue: s,
 					initialPlace: n,
 					disabled: u = !1,
-					onFocus: m = O,
-					onPlace: b = O,
-					onValue: p = O,
+					onFocus: m = C,
+					onPlace: b = C,
+					onValue: p = C,
 					inputClassName: h
 				} = e, g = Object(l.a)(), [x] = Object(a.useState)(() => Object(o.a)()), [f, E] = Object(a.useState)(s || ""), [S, _] = Object(a.useState)(n);
 				return g ? i.a.createElement("form", {
@@ -451,7 +451,7 @@
 				isCountrySitesEnabled: h.b,
 				isD2xPdpSideRailRecsEnabled: g.b,
 				isNavbarLikeMwebEnabled: x.a
-			}), C = Object(a.b)(v), O = Object(b.u)({
+			}), O = Object(a.b)(v), C = Object(b.u)({
 				isFrontpage: b.A,
 				isCountrySitePage: b.y
 			}), k = e => {
@@ -512,7 +512,7 @@
 					hk: "4BrCkA"
 				})))
 			};
-			t.a = O(C(Object(d.c)(e => {
+			t.a = C(O(Object(d.c)(e => {
 				const t = Object(a.f)().getState(),
 					s = Object(h.a)(t, Object(o.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
@@ -675,7 +675,7 @@
 						})
 					}, t)
 				};
-			class C extends i.Component {
+			class O extends i.Component {
 				constructor(e) {
 					super(e), this.containerEl = null, this.windowHeight = 1 / 0, this.getStickyContents = () => ({
 						shouldAdSticky: this.windowHeight > S,
@@ -737,8 +737,8 @@
 					}))
 				}
 			}
-			const O = Object(m.u)();
-			t.a = O(C)
+			const C = Object(m.u)();
+			t.a = C(O)
 		},
 		"./src/reddit/components/StructuredStyles/BladeDrawerController/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -787,19 +787,19 @@
 				S = s.n(E);
 			const {
 				fbt: _
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), y = u.a.div("BladeContainer", S.a), v = u.a.wrapped(h.a, "CloseIcon", S.a), C = u.a.div("LoadingTitleContainer", S.a), O = u.a.div("LoadingNavContainer", S.a), k = u.a.div("ShortLoadingNav", S.a), j = u.a.wrapped(p.a, "ThemedChevron", S.a), N = e => {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), y = u.a.div("BladeContainer", S.a), v = u.a.wrapped(h.a, "CloseIcon", S.a), O = u.a.div("LoadingTitleContainer", S.a), C = u.a.div("LoadingNavContainer", S.a), k = u.a.div("ShortLoadingNav", S.a), j = u.a.wrapped(p.a, "ThemedChevron", S.a), N = e => {
 				let {
 					...t
 				} = e;
 				return i.a.createElement(y, null, i.a.createElement(v, null), i.a.createElement(b.k, null, i.a.createElement(b.p, null, _._("Back to mod tools", null, {
 					hk: "1YCI0W"
-				})), i.a.createElement(b.o, null, i.a.createElement(C, null, i.a.createElement("div", {
+				})), i.a.createElement(b.o, null, i.a.createElement(O, null, i.a.createElement("div", {
 					className: Object(l.a)(S.a.LoadingTitle, t.isLoading && S.a.loading)
-				})), i.a.createElement(O, null, i.a.createElement("div", {
+				})), i.a.createElement(C, null, i.a.createElement("div", {
 					className: Object(l.a)(S.a.LoadingNav, t.isLoading && S.a.loading)
-				}), i.a.createElement(j, null)), i.a.createElement(O, null, i.a.createElement(k, null), i.a.createElement(j, null)), i.a.createElement(O, null, i.a.createElement("div", {
+				}), i.a.createElement(j, null)), i.a.createElement(C, null, i.a.createElement(k, null), i.a.createElement(j, null)), i.a.createElement(C, null, i.a.createElement("div", {
 					className: Object(l.a)(S.a.LoadingNav, t.isLoading && S.a.loading)
-				}), i.a.createElement(j, null)), i.a.createElement(O, null, i.a.createElement(k, null), i.a.createElement(j, null)), i.a.createElement(O, null, i.a.createElement("div", {
+				}), i.a.createElement(j, null)), i.a.createElement(C, null, i.a.createElement(k, null), i.a.createElement(j, null)), i.a.createElement(C, null, i.a.createElement("div", {
 					className: Object(l.a)(S.a.LoadingNav, t.isLoading && S.a.loading)
 				}), i.a.createElement(j, null)))))
 			}, T = Object(d.a)({
@@ -973,11 +973,11 @@
 				_ = s("./src/reddit/helpers/name/index.ts"),
 				y = s("./src/reddit/helpers/widgets/index.tsx"),
 				v = s("./src/reddit/selectors/subreddit.ts"),
-				C = s("./src/reddit/selectors/user.ts"),
-				O = s("./src/reddit/components/TopicSidebar/SubredditList/Subreddit/index.m.less"),
-				k = s.n(O);
+				O = s("./src/reddit/selectors/user.ts"),
+				C = s("./src/reddit/components/TopicSidebar/SubredditList/Subreddit/index.m.less"),
+				k = s.n(C);
 			const j = Object(h.c)({
-				isLoggedIn: C.R,
+				isLoggedIn: O.R,
 				subreddit: v.Y,
 				subredditAboutInfo: v.y
 			});
@@ -1184,8 +1184,8 @@
 					const t = _(e);
 					return Object(f.f)(t)
 				};
-			var C = s("./src/reddit/components/Widgets/ThemedWidget/index.m.less"),
-				O = s.n(C);
+			var O = s("./src/reddit/components/Widgets/ThemedWidget/index.m.less"),
+				C = s.n(O);
 			const {
 				fbt: k
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), j = Object(u.u)(), N = Object(a.b)(() => Object(i.c)({
@@ -1243,19 +1243,19 @@
 						title: u,
 						titleClassName: b,
 						truncateThreshold: p
-					} = this.props, h = s ? O.a.widgetContentOnly : O.a.widgetContent, g = !n && this.props.styles, x = g ? this.getWidgetBackgroundStyles() : {}, f = g ? this.getWidgetHeaderStyles() : {};
+					} = this.props, h = s ? C.a.widgetContentOnly : C.a.widgetContent, g = !n && this.props.styles, x = g ? this.getWidgetBackgroundStyles() : {}, f = g ? this.getWidgetHeaderStyles() : {};
 					return r.a.createElement("div", {
-						className: Object(o.a)(t, O.a.widgetBackground, {
-							[O.a.redditStyle]: n,
-							[O.a.clickable]: !!c,
-							[O.a.truncatedGradient]: this.state.isTruncated && !this.props.noGradient
+						className: Object(o.a)(t, C.a.widgetBackground, {
+							[C.a.redditStyle]: n,
+							[C.a.clickable]: !!c,
+							[C.a.truncatedGradient]: this.state.isTruncated && !this.props.noGradient
 						}),
 						"data-redditstyle": n,
 						onClick: c,
 						style: x
 					}, u && r.a.createElement("div", {
-						className: Object(o.a)(O.a.widgetHeader, {
-							[O.a.clickable]: !!l
+						className: Object(o.a)(C.a.widgetHeader, {
+							[C.a.clickable]: !!l
 						}),
 						id: i,
 						style: {
@@ -1264,19 +1264,19 @@
 						},
 						onClick: l
 					}, r.a.createElement("div", {
-						className: Object(o.a)(O.a.widgetTitle, b)
+						className: Object(o.a)(C.a.widgetTitle, b)
 					}, r.a.createElement(d.b, {
 						type: d.a.Widget
 					}, u)), a), r.a.createElement("div", {
 						className: Object(o.a)(h, {
-							[O.a.truncated]: this.state.isTruncated
+							[C.a.truncated]: this.state.isTruncated
 						}),
 						ref: this.contentRef,
 						style: {
 							maxHeight: this.state.isTruncated ? p : "none"
 						}
 					}, e), this.state.isTruncated && r.a.createElement(m.r, {
-						className: O.a.seeMore,
+						className: C.a.seeMore,
 						onClick: this.handleSeeMoreClick
 					}, k._("See More", null, {
 						hk: "4w47Qu"
@@ -1400,12 +1400,21 @@
 			"use strict";
 			s.d(t, "a", (function() {
 				return r
+			})), s.d(t, "b", (function() {
+				return a
 			}));
 			var n = s("./node_modules/react/index.js");
 
 			function r() {
 				const [e, t] = Object(n.useState)(!1);
 				return Object(n.useEffect)(() => t(!0), []), e
+			}
+
+			function a() {
+				const e = Object(n.useRef)(!0);
+				return Object(n.useEffect)(() => () => {
+					e.current = !1
+				}, []), e
 			}
 		},
 		"./src/reddit/icons/svgs/Chevron/index.m.less": function(e, t, s) {
@@ -1545,9 +1554,9 @@
 					to: "/"
 				}, r.a.createElement(E.l, null, "Go Home")))
 			}
-			var C = s("./src/config.ts");
+			var O = s("./src/config.ts");
 			const {
-				fbt: O
+				fbt: C
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 
 			function k() {
@@ -1555,14 +1564,14 @@
 					className: _.a.header
 				}, r.a.createElement("img", {
 					className: _.a.headerImage,
-					src: `${C.a.assetPath}/img/mtm-snoo.png`
+					src: `${O.a.assetPath}/img/mtm-snoo.png`
 				}), r.a.createElement("div", null, r.a.createElement("p", {
 					className: _.a.headerText1
-				}, O._("Okay, lets do this", null, {
+				}, C._("Okay, lets do this", null, {
 					hk: "1AIkwG"
 				})), r.a.createElement("p", {
 					className: _.a.headerText2
-				}, O._("Thank you for your help. Add a location to the communities below, and we will do the rest.", null, {
+				}, C._("Thank you for your help. Add a location to the communities below, and we will do the rest.", null, {
 					hk: "fVUF3"
 				}))))
 			}
@@ -1854,4 +1863,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.b1f0ac7771422a86617b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.081385e90f8e450f7b99.js.map

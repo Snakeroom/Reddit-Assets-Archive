@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a.63e07b0f526bd9b20314.js
-// Retrieved at 10/31/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a.b08105899dd0e9daf67b.js
+// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a"], {
 		"./src/higherOrderComponents/withAdClickLocation/index.tsx": function(e, t, s) {
@@ -860,8 +860,8 @@
 					return s ? `${n}--${s}` : n
 				},
 				U = Object(b.u)({
-					isProfilePostListing: b.L,
-					isSubreddit: b.O
+					isProfilePostListing: b.M,
+					isSubreddit: b.P
 				}),
 				D = Object(i.c)({
 					isModQueueDisplayEnabled: I.b,
@@ -873,7 +873,7 @@
 							postId: s.id
 						})
 					},
-					modModeEnabled: b.U
+					modModeEnabled: b.V
 				}),
 				W = Object(a.b)(D, (e, t) => ({
 					onHideTooltip: () => e(Object(l.i)()),
@@ -904,8 +904,8 @@
 				const X = {
 						caretOnTop: !1
 					},
-					q = W.isRemoved && !W.modRemovalReason && !W.modNote && W.belongsTo.type === p.a.SUBREDDIT,
-					V = R("Approve", W.id, H),
+					V = W.isRemoved && !W.modRemovalReason && !W.modNote && W.belongsTo.type === p.a.SUBREDDIT,
+					q = R("Approve", W.id, H),
 					G = R("Archived", W.id, H),
 					K = R("Lock", W.id, H),
 					Q = R("Mod", W.id, H),
@@ -967,11 +967,11 @@
 					isFilled: !0,
 					className: Object(c.a)(g.a.icon, g.a.approveIcon),
 					desc: Object(v.a)(W),
-					id: V,
-					onMouseEnter: D(V),
+					id: q,
+					onMouseEnter: D(q),
 					onMouseLeave: y
 				}), r.a.createElement(m.c, T({
-					tooltipId: V,
+					tooltipId: q,
 					text: Object(v.a)(W)
 				}, X))), Object(x.a)(W) && r.a.createElement(o.Fragment, null, r.a.createElement(j.a, {
 					isFilled: !0,
@@ -980,7 +980,7 @@
 					id: Z,
 					onMouseEnter: D(Z),
 					onMouseLeave: y
-				}), q && r.a.createElement(u.a, {
+				}), V && r.a.createElement(u.a, {
 					className: g.a.addRemovalReason,
 					onClick: U,
 					text: n.fbt._("Add a removal reason", null, {
@@ -1321,7 +1321,7 @@
 				H = s("./src/reddit/selectors/profile.ts"),
 				J = s("./src/reddit/components/PromotedUserPostsAd/PromotedUserPostMedia/index.m.less"),
 				X = s.n(J);
-			const q = e => {
+			const V = e => {
 				let {
 					post: t
 				} = e;
@@ -1358,8 +1358,8 @@
 					wrapperClassName: X.a.userIconWrapper
 				})))
 			};
-			var V = s("./src/reddit/components/PromotedUserPostsAd/PromotedUserPost/index.m.less"),
-				G = s.n(V);
+			var q = s("./src/reddit/components/PromotedUserPostsAd/PromotedUserPost/index.m.less"),
+				G = s.n(q);
 			const K = Object(C.a)(null);
 			var Q = Object(I.b)(K(e => {
 					let {
@@ -1376,7 +1376,7 @@
 						className: G.a.container
 					}, o.a.createElement(F, {
 						post: t
-					}), o.a.createElement(q, {
+					}), o.a.createElement(V, {
 						post: t
 					})))
 				})),
@@ -2140,4 +2140,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a.63e07b0f526bd9b20314.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a.b08105899dd0e9daf67b.js.map

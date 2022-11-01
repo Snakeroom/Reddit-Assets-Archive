@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.2663f703a2975f222629.js
-// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.b237a7dd3461c0dfef55.js
+// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -6769,7 +6769,7 @@
 					} = l;
 					r(Object(i.c)());
 					const b = o(),
-						h = Object(M.i)(b),
+						h = Object(M.h)(b),
 						_ = b.user.account && b.user.account.displayText;
 					Object(u.d)(u.a.ModQueue);
 					const g = Object(u.c)(u.a.ModQueue);
@@ -8122,14 +8122,14 @@
 								sort: k.sort,
 								subreddit: C
 							}),
-							s = !!Object(he.f)(K, {
+							s = !!Object(he.e)(K, {
 								pageName: J,
 								page: `${I}`,
 								subredditName: C,
 								queryParams: k
 							}),
 							r = K.pages.modHub.modQueue[J].api.error;
-						if (Object(he.e)(K, {
+						if (Object(he.d)(K, {
 								pageName: J
 							}) || s && !r) return;
 						if (!Object(_e.q)(K)) {
@@ -8726,7 +8726,7 @@
 					} else {
 						const t = {
 							...r()(e.queryParams, [..._.q, ..._.p, _.l]),
-							layout: Object(g.S)(N, {}).toLowerCase(),
+							layout: Object(g.T)(N, {}).toLowerCase(),
 							sort: j,
 							t: Object(T.a)(j, k)
 						};
@@ -8843,7 +8843,7 @@
 							sort: m,
 							t: p,
 							...r()(c, _.q),
-							layout: Object(g.S)(a, {}).toLowerCase()
+							layout: Object(g.T)(a, {}).toLowerCase()
 						};
 						C = await w(s(), b, e)
 					}
@@ -9403,7 +9403,7 @@
 						...n,
 						recentPostIds: Te.posts.recent
 					} : n;
-				Je.layout = pe.e[Object(be.S)(Te, {})], Ye && (Je.forceGeopopular = !0), a(Nt({
+				Je.layout = pe.e[Object(be.T)(Te, {})], Ye && (Je.forceGeopopular = !0), a(Nt({
 					key: e
 				}));
 				const Xe = !ze && Object(ne.m)(Te) && Object(We.b)(Te),
@@ -11946,7 +11946,7 @@
 					t(d.i(e))
 				}, se = e => async (t, n) => {
 					const s = n(),
-						r = Object(c.G)(e),
+						r = Object(c.H)(e),
 						o = Object(C.H)(s);
 					if (r && o) {
 						Object(O.a)(s) !== g.d && t(ne(g.d))
@@ -15555,7 +15555,7 @@
 							after: j.token,
 							dist: j.dist,
 							forceGeopopular: u === x.d.Popular,
-							layout: E.e[Object(y.S)(b, {})],
+							layout: E.e[Object(y.T)(b, {})],
 							sort: S,
 							t: p,
 							...o()(_, [...O.q, O.l])
@@ -21269,7 +21269,7 @@
 				R = n.n(P);
 			const A = 24,
 				M = Object(T.u)({
-					username: e => Object(T.X)(e).user
+					username: e => Object(T.Y)(e).user
 				}),
 				L = Object(d.c)({
 					approvedSubmitters: S,
@@ -21540,7 +21540,7 @@
 				currentProfileName: T.i,
 				isCommentsPage: T.x,
 				isCommentPermalink: T.w,
-				isProfilePostListing: T.L,
+				isProfilePostListing: T.M,
 				pageLayer: e => e
 			}), D = I.a.wrapped(S.c, "UnthreadedComment", A.a), F = I.a.div("BanReason", A.a), U = I.a.div("ExpandedComponentContainer", A.a), B = I.a.div("ModNote", A.a), q = I.a.div("ModNoteContainer", A.a), G = I.a.div("SectionTitle", A.a), H = I.a.div("ContextContainer", A.a), W = e => () => {}, V = e => {
 				let {
@@ -22534,7 +22534,7 @@
 				Ae = n.n(Re);
 			const Me = Object(Ne.u)({
 					currentPageUrl: Ne.f,
-					queryParams: Ne.X
+					queryParams: Ne.Y
 				}),
 				Le = e => new Date(e).toISOString().slice(0, 10);
 			t.a = Me(e => {
@@ -23434,7 +23434,7 @@
 							subredditId: n.subredditId
 						})
 					},
-					modModeEnabled: f.U
+					modModeEnabled: f.V
 				}),
 				P = Object(i.b)(N, (e, t) => {
 					let {
@@ -28488,11 +28488,11 @@
 				Ne = () => Object(d.c)({
 					activeModalId: y.a,
 					crosspost: k.d,
-					flairStyleTemplate: ae.W,
+					flairStyleTemplate: ae.X,
 					isActive: k.j,
 					isExpanded: k.m,
 					showPromotedCTA: Oe.a,
-					layout: ae.S,
+					layout: ae.T,
 					moderatorPermissions: C.m,
 					poll: (e, t) => {
 						const n = e.posts.metaMap[t.postId];
@@ -31832,13 +31832,13 @@
 					currentProfileName: M.i,
 					isCommentPermalink: M.w,
 					isCommentsPage: M.x,
-					isProfilePostListing: M.L,
+					isProfilePostListing: M.M,
 					pageLayer: e => e
 				}),
 				Oe = Object(a.c)({
 					activeModalId: oe.a,
 					claimedFreeAward: ae.b,
-					layout: M.S,
+					layout: M.T,
 					userIsOp: U.Eb,
 					subreddit: M.r,
 					isBlockedUserBannerEnabled: (e, t) => {
@@ -39453,7 +39453,7 @@
 				He = n.n(Ge);
 			const We = Object(qe.u)({
 					currentPageUrl: qe.f,
-					queryParams: qe.X
+					queryParams: qe.Y
 				}),
 				Ve = Object(d.c)({
 					actionsList: j.c,
@@ -41532,8 +41532,8 @@
 					return n ? `${s}--${n}` : s
 				},
 				U = Object(b.u)({
-					isProfilePostListing: b.L,
-					isSubreddit: b.O
+					isProfilePostListing: b.M,
+					isSubreddit: b.P
 				}),
 				B = Object(a.c)({
 					isModQueueDisplayEnabled: I.b,
@@ -41545,7 +41545,7 @@
 							postId: n.id
 						})
 					},
-					modModeEnabled: b.U
+					modModeEnabled: b.V
 				}),
 				q = Object(i.b)(B, (e, t) => ({
 					onHideTooltip: () => e(Object(l.i)()),
@@ -43046,7 +43046,7 @@
 							post: r,
 							pageLayer: o
 						} = t;
-						return Object(M.E)(e, {
+						return Object(M.F)(e, {
 							pageLayer: o
 						}) && n && s && Object(re.Cb)(e, {
 							userName: r.author
@@ -44014,7 +44014,7 @@
 				}
 			}
 			t.c = i.a.memo((function(e) {
-				const t = Object(p.eb)(),
+				const t = Object(p.fb)(),
 					n = Object(p.w)(t),
 					s = Object(E.a)(),
 					r = Object(a.e)(r => Z(r, {
@@ -65553,18 +65553,6 @@
 				return t.current === e || Object(r.c)(t.current, e) || (t.current = e), t.current
 			}
 		},
-		"./src/reddit/hooks/useMounted.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return r
-			}));
-			var s = n("./node_modules/react/index.js");
-
-			function r() {
-				const [e, t] = Object(s.useState)(!1);
-				return Object(s.useEffect)(() => t(!0), []), e
-			}
-		},
 		"./src/reddit/hooks/useOutboundClickTracking.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -65629,7 +65617,7 @@
 		"./src/reddit/hooks/usePageLayer.ts": function(e, t, n) {
 			"use strict";
 			var s = n("./src/reddit/contexts/PageLayer/index.tsx");
-			t.a = s.eb
+			t.a = s.fb
 		},
 		"./src/reddit/hooks/usePostContext.ts": function(e, t, n) {
 			"use strict";
@@ -68928,7 +68916,7 @@
 						profileName: t.match.params.profileName
 					})
 				}),
-				st = Object(a.b)(() => Object(d.a)(Ze, N.O, g.S, et, N.lb, I.mb, nt, tt, $e, j.a, (e, t) => t.match.params.pageName, e => e, (e, t, n, s, r, o, i, a, d, c, l, u) => {
+				st = Object(a.b)(() => Object(d.a)(Ze, N.O, g.T, et, N.lb, I.mb, nt, tt, $e, j.a, (e, t) => t.match.params.pageName, e => e, (e, t, n, s, r, o, i, a, d, c, l, u) => {
 					let {
 						contentGateInfo: m
 					} = e, {
@@ -74225,7 +74213,7 @@
 			};
 
 			function c() {
-				const e = Object(r.eb)(),
+				const e = Object(r.fb)(),
 					t = Object(s.e)(t => Object(r.r)(t, {
 						pageLayer: e
 					})),
@@ -74830,7 +74818,7 @@
 								profileName: r.params.profileName
 							}),
 							o = !!(t && (null == t ? void 0 : t.isNSFW)),
-							i = Object(a.E)(e, {
+							i = Object(a.F)(e, {
 								pageLayer: s
 							});
 						return n && o && !i
@@ -75286,7 +75274,7 @@
 					let {
 						pageLayer: n
 					} = t;
-					return Object(o.O)(n)
+					return Object(o.P)(n)
 				}, (e, t, n) => !e && !t && n),
 				c = Object(s.a)((e, t) => Object(i.c)(e, {
 					experimentName: r.od,
@@ -76138,7 +76126,7 @@
 					let {
 						pageLayer: n
 					} = t;
-					return Object(d.I)(n) || Object(d.J)(n) || Object(d.y)(n)
+					return Object(d.J)(n) || Object(d.K)(n) || Object(d.y)(n)
 				}, l.b, u.a, _, (e, t, n, s, r) => e === i.vb.PopoverFeed15 && t && Object(c.c)() && !n && !s && !r)
 		},
 		"./src/reddit/selectors/removalReasons.ts": function(e, t, n) {
@@ -77712,4 +77700,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.2663f703a2975f222629.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.b237a7dd3461c0dfef55.js.map

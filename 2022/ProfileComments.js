@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.8d7bd27598315e6ed402.js
-// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.e54f2c6887c6516f1e90.js
+// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -487,7 +487,7 @@
 						sort: m,
 						t: p,
 						...i()(d, g.q),
-						layout: Object(_.S)(o, {}).toLowerCase()
+						layout: Object(_.T)(o, {}).toLowerCase()
 					}, Object(S.a)(o));
 					if (C.ok) {
 						const t = Object(N.f)(o, {
@@ -1123,7 +1123,7 @@
 						})
 					},
 					currentUser: te.l,
-					modModeEnabled: W.U,
+					modModeEnabled: W.V,
 					postIsLocked: (e, t) => {
 						let {
 							comment: s
@@ -2583,7 +2583,7 @@
 				h = s("./src/lib/lessComponent.tsx");
 			const b = Object(m.u)(),
 				f = Object(i.c)({
-					layout: m.S
+					layout: m.T
 				}),
 				g = Object(o.b)(f);
 			class _ extends r.a.Component {
@@ -2876,7 +2876,7 @@
 					currentProfileName: k.i,
 					isCommentsPage: k.x,
 					isCommentPermalink: k.w,
-					isProfilePostListing: k.L,
+					isProfilePostListing: k.M,
 					pageLayer: e => e
 				}),
 				L = P.a.wrapped(E.a, "OverviewCommentPost", O.a),
@@ -3603,7 +3603,7 @@
 				}).apply(this, arguments)
 			}
 			const A = Object(y.u)({
-					routeName: y.Z,
+					routeName: y.ab,
 					privateListingType: y.j
 				}),
 				M = Object(p.c)({
@@ -4843,14 +4843,14 @@
 					isLoggedIn: _.R,
 					showPromotedCTA: g.a,
 					moderatorPermissions: h.m,
-					modModeEnabled: d.U,
+					modModeEnabled: d.V,
 					poll: (e, t) => {
 						const s = e.posts.metaMap[t.postId];
 						return s ? e.polls.models[s] : null
 					},
 					showEditFlair: b.a,
 					showMedia: d.s,
-					flairStyleTemplate: d.W,
+					flairStyleTemplate: d.X,
 					showCTAExperimentDesign: p.a
 				},
 				v = Object(n.b)(() => Object(r.c)(x), (e, t) => {
@@ -5674,7 +5674,7 @@
 					apiPending: Y.b,
 					currentUser: te.l,
 					measureScrollFPS: Q.d.measureScrollFPS,
-					layout: P.S,
+					layout: P.T,
 					loadMore: Y.d,
 					subredditsById: X.fb,
 					viewportDataLoaded: ee.a,
@@ -5761,12 +5761,12 @@
 				}).apply(this, arguments)
 			}
 			const Ce = Object(P.u)(),
-				Ee = Object(c.a)(P.E, te.lb, (e, t) => {
+				Ee = Object(c.a)(P.F, te.lb, (e, t) => {
 					let {
 						location: s
 					} = t;
 					return r()([...Object(l.a)(s.search)])
-				}, P.S, (e, t) => {
+				}, P.T, (e, t) => {
 					let {
 						match: s
 					} = t;
@@ -5949,4 +5949,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.8d7bd27598315e6ed402.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.e54f2c6887c6516f1e90.js.map

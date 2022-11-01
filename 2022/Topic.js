@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.6701cfa0ca16fbe58901.js
-// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.42dc24765ea42093641a.js
+// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1056,7 +1056,7 @@
 				w = Object(h.u)(),
 				L = Object(a.c)({
 					dropdownIsOpen: Object(y.b)(C),
-					postLayout: h.S,
+					postLayout: h.T,
 					redditStyle: h.D
 				}),
 				I = Object(o.b)(L, e => ({
@@ -2095,8 +2095,8 @@
 					isCommentPermalink: p.w,
 					isCommentsPage: p.x,
 					isFrontpage: p.A,
-					isProfilePostListing: p.L,
-					isTopicPage: p.R,
+					isProfilePostListing: p.M,
+					isTopicPage: p.S,
 					pageLayer: e => e
 				})
 			}
@@ -2105,7 +2105,7 @@
 					apiError: v.c,
 					apiPending: v.d,
 					measureScrollFPS: f.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(p.S)(e, t),
+					layout: (e, t) => t.forcedLayout || Object(p.T)(e, t),
 					loadMore: v.g,
 					postsById: _.T,
 					postIds: Object(i.a)((e, t) => {
@@ -2118,7 +2118,7 @@
 					}),
 					subredditsById: y.fb,
 					viewportDataLoaded: S.a,
-					pageReferrer: p.V,
+					pageReferrer: p.W,
 					postListPlaceholderComponent: () => g.a,
 					isNpsScrollSurveyEnabled: x.e
 				},
@@ -2729,8 +2729,8 @@
 				}
 			}
 			var U = A,
-				V = s("./src/reddit/pages/Topic/Relationship/index.m.less"),
-				z = s.n(V);
+				z = s("./src/reddit/pages/Topic/Relationship/index.m.less"),
+				V = s.n(z);
 			const {
 				fbt: J
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), q = 5;
@@ -2764,9 +2764,9 @@
 						onClick: this.onClick,
 						to: "#"
 					}, n.a.createElement(I.r, {
-						className: z.a.SeeAllRelatedTopics
+						className: V.a.SeeAllRelatedTopics
 					}, J._("See all {=[Topic name plural]}", [J._param("=[Topic name plural]", n.a.createElement("span", {
-						className: z.a.TopicName
+						className: V.a.TopicName
 					}, J._("{Topic name plural}", [J._param("Topic name plural", e)], {
 						hk: "27C3n9"
 					})))], {
@@ -2961,7 +2961,7 @@
 				topicSlug: t.match.params.topicSlug
 			}), (e, t) => Object(Oe.b)(e, {
 				topicSlug: t.match.params.topicSlug
-			}), k.S, we, e => {
+			}), k.T, we, e => {
 				var t;
 				return null === (t = e.platform.currentPage) || void 0 === t ? void 0 : t.status
 			}, (e, t, s, r, n, i, o, a) => ({
@@ -3180,4 +3180,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.6701cfa0ca16fbe58901.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.42dc24765ea42093641a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostSetPage.c4801fd5c20660cd22d0.js
-// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostSetPage.465d8f65ab6df1d43683.js
+// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostSetPage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -2351,8 +2351,8 @@
 					isCommentPermalink: b.w,
 					isCommentsPage: b.x,
 					isFrontpage: b.A,
-					isProfilePostListing: b.L,
-					isTopicPage: b.R,
+					isProfilePostListing: b.M,
+					isTopicPage: b.S,
 					pageLayer: e => e
 				})
 			}
@@ -2361,7 +2361,7 @@
 					apiError: y.c,
 					apiPending: y.d,
 					measureScrollFPS: g.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(b.S)(e, t),
+					layout: (e, t) => t.forcedLayout || Object(b.T)(e, t),
 					loadMore: y.g,
 					postsById: _.T,
 					postIds: Object(i.a)((e, t) => {
@@ -2374,7 +2374,7 @@
 					}),
 					subredditsById: v.fb,
 					viewportDataLoaded: E.a,
-					pageReferrer: b.V,
+					pageReferrer: b.W,
 					postListPlaceholderComponent: () => f.a,
 					isNpsScrollSurveyEnabled: x.e
 				},
@@ -2960,4 +2960,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.c4801fd5c20660cd22d0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.465d8f65ab6df1d43683.js.map

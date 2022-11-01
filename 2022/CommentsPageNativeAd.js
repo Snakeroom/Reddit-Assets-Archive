@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.9f7c06281282d7f3fa25.js
-// Retrieved at 10/31/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.15e90fefa9f95dffe790.js
+// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/BlankPost/index.tsx": function(e, t, s) {
@@ -111,12 +111,12 @@
 					greyTextColor: e.greyTextColor
 				})),
 				M = s("./src/reddit/components/Media/index.tsx"),
-				W = s("./src/reddit/components/PlayButton/index.tsx"),
-				R = s("./src/reddit/components/Thumbnail/index.tsx"),
-				U = s("./src/reddit/icons/svgs/Close/index.tsx");
+				R = s("./src/reddit/components/PlayButton/index.tsx"),
+				W = s("./src/reddit/components/Thumbnail/index.tsx"),
+				V = s("./src/reddit/icons/svgs/Close/index.tsx");
 
-			function V() {
-				return (V = Object.assign || function(e) {
+			function U() {
+				return (U = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var a in s) Object.prototype.hasOwnProperty.call(s, a) && (e[a] = s[a])
@@ -139,7 +139,7 @@
 					usePreview: u,
 					mediaExpanded: h
 				} = e;
-				return i && i.media ? h && Object(x.N)(i.media) ? o.a.createElement("div", null, o.a.createElement(U.a, {
+				return i && i.media ? h && Object(x.N)(i.media) ? o.a.createElement("div", null, o.a.createElement(V.a, {
 					className: T.a.close,
 					onClick: s
 				}), o.a.createElement(M.a, {
@@ -155,7 +155,7 @@
 					showCentered: !1,
 					scrollerItemRef: c,
 					isCommentsPage: !0
-				})) : o.a.createElement(R.b, {
+				})) : o.a.createElement(W.b, {
 					className: Object(l.a)(T.a.thumbnail, t),
 					containerClassName: m,
 					crosspost: a,
@@ -166,7 +166,7 @@
 					removeLink: Object(x.N)(i.media),
 					url: Object(x.N)(i.media) ? void 0 : p,
 					usePreview: u
-				}) : o.a.createElement(R.b, {
+				}) : o.a.createElement(W.b, {
 					className: Object(l.a)(T.a.thumbnail, t),
 					containerClassName: m,
 					crosspost: a,
@@ -191,10 +191,10 @@
 						onClick: n ? () => r(!0) : void 0,
 						"data-adclicklocation": S.a.MEDIA,
 						"data-testid": "comments-page-ad-thumbnail"
-					}, o.a.createElement(D, V({}, e, {
+					}, o.a.createElement(D, U({}, e, {
 						mediaExpanded: a,
 						closeVideo: () => r(!1)
-					})), n && o.a.createElement(W.a, {
+					})), n && o.a.createElement(R.a, {
 						className: T.a.playContainer,
 						playIconClassName: T.a.playIcon,
 						onClick: () => r(!0)
@@ -374,14 +374,14 @@
 					isLoggedIn: v.R,
 					showPromotedCTA: E.a,
 					moderatorPermissions: x.m,
-					modModeEnabled: c.U,
+					modModeEnabled: c.V,
 					poll: (e, t) => {
 						const s = e.posts.metaMap[t.postId];
 						return s ? e.polls.models[s] : null
 					},
 					showEditFlair: h.a,
 					showMedia: c.s,
-					flairStyleTemplate: c.W,
+					flairStyleTemplate: c.X,
 					showCTAExperimentDesign: u.a
 				},
 				O = Object(a.b)(() => Object(r.c)(C), (e, t) => {
@@ -447,4 +447,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.9f7c06281282d7f3fa25.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.15e90fefa9f95dffe790.js.map

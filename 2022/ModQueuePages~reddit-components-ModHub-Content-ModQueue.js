@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.96a6f541f7c1a4a58bea.js
-// Retrieved at 10/31/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.c17375b1f4b8413fdf29.js
+// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/actions/modQueue/realtime.ts": function(e, t, s) {
@@ -179,7 +179,7 @@
 				N = Object(h.u)(),
 				T = Object(i.c)({
 					dropdownIsOpen: Object(E.b)(w),
-					postLayout: h.S,
+					postLayout: h.T,
 					redditStyle: h.D
 				}),
 				R = Object(a.b)(T, e => ({
@@ -1890,7 +1890,7 @@
 				Le = s("./src/reddit/components/PostList/Placeholder.tsx");
 			const Fe = Object(y.u)(),
 				De = Object(c.c)({
-					layout: y.S
+					layout: y.T
 				});
 			var Ae = Fe(Object(l.b)(De)(e => d.a.createElement(Le.a, {
 					isLoading: !0,
@@ -1928,7 +1928,7 @@
 					}) : void 0
 				}, e.buttonText),
 				dt = Object(c.c)({
-					selectedItems: Ce.i
+					selectedItems: Ce.h
 				}),
 				lt = Object(l.b)(dt, e => ({
 					onIgnoreReports: () => e(Object(p.f)(Oe.a.IgnoreReports)),
@@ -2032,7 +2032,7 @@
 					isApiPending: Ce.a,
 					moderatorPermissions: et.n,
 					posts: st.J,
-					selectedItems: Ce.i
+					selectedItems: Ce.h
 				}),
 				Et = Object(l.b)(Ot, e => ({
 					onApprove: () => e(Object(p.f)(Oe.a.Approve)),
@@ -2213,18 +2213,18 @@
 					isCommentPermalink: y.w,
 					isCommentsPage: y.x,
 					isFrontpage: y.A,
-					isProfilePostListing: y.L,
-					isTopicPage: y.R,
-					queryParams: y.X,
+					isProfilePostListing: y.M,
+					isTopicPage: y.S,
+					queryParams: y.Y,
 					pageLayer: e => e
 				}),
 				Tt = Object(c.c)({
 					currentPage: e => e.platform.currentPage,
-					isModQueueListingPending: Ce.e,
-					loadMore: Ce.g,
-					modQueueListingItems: Ce.f,
+					isModQueueListingPending: Ce.d,
+					loadMore: Ce.f,
+					modQueueListingItems: Ce.e,
 					origin: Ee.k,
-					selectedItems: Ce.i,
+					selectedItems: Ce.h,
 					subredditId: (e, t) => t.subredditName ? Object(ve.I)(e, t.subredditName) : null
 				}),
 				Rt = Object(l.b)(Tt, e => ({
@@ -2713,4 +2713,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.96a6f541f7c1a4a58bea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.c17375b1f4b8413fdf29.js.map

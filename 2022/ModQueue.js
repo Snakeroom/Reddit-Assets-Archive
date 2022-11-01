@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.1b45a070ec1093b39a63.js
-// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.d9cdfc6199e1f07f8f20.js
+// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, o) {
@@ -691,7 +691,7 @@
 					} = u;
 					r(Object(d.c)());
 					const p = n(),
-						O = Object(L.i)(p),
+						O = Object(L.h)(p),
 						v = p.user.account && p.user.account.displayText;
 					Object(l.d)(l.a.ModQueue);
 					const h = Object(l.c)(l.a.ModQueue);
@@ -1675,24 +1675,22 @@
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, o) {
 			"use strict";
-			o.d(t, "f", (function() {
+			o.d(t, "e", (function() {
 				return l
-			})), o.d(t, "e", (function() {
+			})), o.d(t, "d", (function() {
 				return m
-			})), o.d(t, "g", (function() {
+			})), o.d(t, "f", (function() {
 				return b
-			})), o.d(t, "i", (function() {
+			})), o.d(t, "h", (function() {
 				return p
 			})), o.d(t, "a", (function() {
 				return f
-			})), o.d(t, "h", (function() {
+			})), o.d(t, "g", (function() {
 				return O
 			})), o.d(t, "c", (function() {
 				return v
-			})), o.d(t, "d", (function() {
-				return h
 			})), o.d(t, "b", (function() {
-				return j
+				return h
 			}));
 			o("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = o("./src/lib/constants/index.ts"),
@@ -1742,16 +1740,15 @@
 				f = e => e.pages.modHub.modQueue.bulkAction.api.pending,
 				O = e => e.pages.modHub.modQueue.moderatedCommunitiesOrder.data,
 				v = e => {
-					const t = e.platform && e.platform.currentPage;
-					return t && t.meta && (t.meta.name === s.Sb.MODERATION_PAGES || t.meta.name === s.Sb.MODQUEUE_PAGES)
-				},
-				h = e => {
 					var t;
 					const o = e.platform && e.platform.currentPage;
 					return (null === (t = null == o ? void 0 : o.meta) || void 0 === t ? void 0 : t.name) === s.Sb.MODQUEUE_PAGES
 				},
-				j = e => v(e) && Object(c.a)(e) || !1
+				h = e => (e => {
+					const t = e.platform && e.platform.currentPage;
+					return t && t.meta && (t.meta.name === s.Sb.MODERATION_PAGES || t.meta.name === s.Sb.MODQUEUE_PAGES)
+				})(e) && Object(c.a)(e) || !1
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.1b45a070ec1093b39a63.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.d9cdfc6199e1f07f8f20.js.map

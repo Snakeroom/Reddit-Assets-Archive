@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.ea8fed3a95889e102b15.js
-// Retrieved at 10/31/2022, 7:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.db3e9bb219c8d0acbeb6.js
+// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -7896,7 +7896,7 @@
 				l = n("./src/reddit/selectors/user.ts");
 
 			function d(e) {
-				return Object(i.S)(e, {}) === r.g.Large && !Object(l.Q)(e) && !Object(c.d)(e)
+				return Object(i.T)(e, {}) === r.g.Large && !Object(l.Q)(e) && !Object(c.d)(e)
 			}
 
 			function u(e) {
@@ -11421,7 +11421,7 @@
 						o = Object(lo.c)(e),
 						r = Object(lo.b)(e),
 						a = Object(wn.n)(e),
-						i = Object(Bn.Z)(n);
+						i = Object(Bn.ab)(n);
 					switch (i) {
 						case "avatar":
 							return {
@@ -11534,7 +11534,7 @@
 								type: jo.Settings, model: c
 							}
 					}
-					const l = Object(Bn.T)(e, {
+					const l = Object(Bn.U)(e, {
 						pageLayer: n
 					});
 					if ("all" === l) return {
@@ -14142,8 +14142,8 @@
 				} = e;
 				var n, s;
 				const o = Object(ei.a)(),
-					r = Object(Bn.ab)(o),
-					a = Object(Bn.X)(o),
+					r = Object(Bn.bb)(o),
+					a = Object(Bn.Y)(o),
 					{
 						nsfwSessionSetting: i
 					} = Object(za.b)(),
@@ -15571,7 +15571,7 @@
 					var o;
 					const r = Object(ye.d)(),
 						a = Object(vi.a)(),
-						i = Object(Bn.eb)(),
+						i = Object(Bn.fb)(),
 						c = Object(ye.e)(e => e.user.account),
 						l = Object(ye.e)(mo.d),
 						d = Object(ye.e)(sc.b),
@@ -18791,7 +18791,7 @@
 					isRecapGameOn: e => {
 						return "on" === Object(gg.a)(e).recapGameState
 					},
-					showEmailCollectionBanner: e => !Object(Bn.N)(e.platform.currentPage) && xg(e),
+					showEmailCollectionBanner: e => !Object(Bn.O)(e.platform.currentPage) && xg(e),
 					signUpModalIsOpen: Object(Uc.c)(Qt.a.REGISTER_MODAL_ID),
 					suspensionDaysLeft: v.yb
 				}), e => ({
@@ -18972,8 +18972,8 @@
 			}
 			Sg.contextType = Re.a;
 			const Pg = Object(Qe.c)(e => {
-					const t = Object(Bn.eb)(),
-						n = Object(ng.db)(t),
+					const t = Object(Bn.fb)(),
+						n = Object(ng.eb)(t),
 						s = Object(u.useContext)(Ae.a),
 						o = Object(u.useMemo)(() => Object(ig.a)(e.location.search), [e.location.search]),
 						{
@@ -23928,4 +23928,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.ea8fed3a95889e102b15.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.db3e9bb219c8d0acbeb6.js.map

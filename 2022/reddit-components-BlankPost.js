@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.ddf4f3fff401c1896556.js
-// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.170f7b2af78cebe053ff.js
+// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-BlankPost"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, s) {
@@ -1051,7 +1051,7 @@
 					} else {
 						const t = {
 							...o()(e.queryParams, [...g.q, ...g.p, g.l]),
-							layout: Object(y.S)(x, {}).toLowerCase(),
+							layout: Object(y.T)(x, {}).toLowerCase(),
 							sort: w,
 							t: Object(D.a)(w, T)
 						};
@@ -1168,7 +1168,7 @@
 							sort: p,
 							t: b,
 							...o()(c, g.q),
-							layout: Object(y.S)(a, {}).toLowerCase()
+							layout: Object(y.T)(a, {}).toLowerCase()
 						};
 						E = await S(i(), m, e)
 					}
@@ -2675,4 +2675,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.ddf4f3fff401c1896556.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.170f7b2af78cebe053ff.js.map

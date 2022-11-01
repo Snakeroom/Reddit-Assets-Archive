@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.7a21e41cc3b1d0f3c8ae.js
-// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.d906e23c78a539642af9.js
+// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -706,7 +706,7 @@
 					var i, c, l, d, u, p, b, g;
 					const f = r();
 					if (f.listings.postOrder.api.pending[e]) return;
-					const h = re.e[Object(ae.S)(f, {})];
+					const h = re.e[Object(ae.T)(f, {})];
 					t.isMobile = Object(o.e)(f.meta.userAgent), t.recentPostIds = f.posts.recent, t.layout = h, t.useMockData = !!f.platform.currentPage && (!!f.platform.currentPage.queryParams.useMockData && Object(pe.b)(f)), n(we({
 						key: e
 					})), n(Le(!1)); {
@@ -854,7 +854,7 @@
 									limit: c,
 									sort: d,
 									t: Object(ie.a)(d, g),
-									layout: re.e[Object(ae.S)(i, {})],
+									layout: re.e[Object(ae.T)(i, {})],
 									useMockData: e
 								}; {
 								const e = i.platform.lastPage,
@@ -5227,4 +5227,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.7a21e41cc3b1d0f3c8ae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.d906e23c78a539642af9.js.map

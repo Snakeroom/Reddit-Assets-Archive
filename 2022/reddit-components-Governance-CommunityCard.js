@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.31547033949a88fc9a00.js
-// Retrieved at 10/31/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.5d1da08164b524ce2719.js
+// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -466,8 +466,8 @@
 				F = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/BlockchainWalletInfo/index.m.less"),
 				V = n.n(F);
 			const W = Object(w.a)(M.a),
-				H = "BlockchainWalletInfo--SettingsMenu";
-			class $ extends a.a.PureComponent {
+				$ = "BlockchainWalletInfo--SettingsMenu";
+			class q extends a.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onCopyToClipboard = () => {
 						Object(A.a)(this.props.publicAddress || "")
@@ -500,11 +500,11 @@
 						}),
 						role: "menu",
 						onClick: n,
-						id: H
+						id: $
 					}, a.a.createElement(D.a, {
 						className: V.a.settingsIcon
 					})), t && a.a.createElement(W, {
-						tooltipId: H,
+						tooltipId: $,
 						isOpen: e,
 						renderContentsHidden: !0
 					}, a.a.createElement(L.b, {
@@ -533,8 +533,8 @@
 					})))) : null
 				}
 			}
-			const q = Object(b.c)({
-					dropdownIsOpen: Object(B.b)(H),
+			const H = Object(b.c)({
+					dropdownIsOpen: Object(B.b)($),
 					isEthereumProvider: (e, t) => {
 						let {
 							subredditId: n
@@ -548,12 +548,12 @@
 						return Object(l.b)(e, n)
 					}
 				}),
-				Z = Object(i.b)(q, (e, t) => ({
+				Z = Object(i.b)(H, (e, t) => ({
 					onGovernanceError: t => {
 						Object(I.a)(e, t)
 					},
 					onOpenDropdown: () => e(Object(P.h)({
-						tooltipId: H
+						tooltipId: $
 					})),
 					onWalletRemoved: () => {
 						e(Object(E.h)({
@@ -566,7 +566,7 @@
 						}))
 					}
 				}));
-			var Y = Object(S.b)(Z($)),
+			var Y = Object(S.b)(Z(q)),
 				Q = n("./src/reddit/icons/svgs/QuarantineWarning/index.tsx"),
 				X = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/Risk/index.m.less"),
 				J = n.n(X);
@@ -802,7 +802,7 @@
 						forceState: !0
 					}))
 				}))((function(e) {
-					return Object(O.H)(e.pageLayer) && e.proposals.length ? a.a.createElement("div", {
+					return Object(O.I)(e.pageLayer) && e.proposals.length ? a.a.createElement("div", {
 						className: Object(c.a)(e.className, _e.a.container)
 					}, a.a.createElement(Ce, null, ye._("Latest Polls", null, {
 						hk: "1oGuW8"
@@ -1848,7 +1848,7 @@
 			};
 
 			function d() {
-				const e = Object(s.eb)(),
+				const e = Object(s.fb)(),
 					t = Object(r.e)(t => Object(s.r)(t, {
 						pageLayer: e
 					})),
@@ -1972,4 +1972,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.31547033949a88fc9a00.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.5d1da08164b524ce2719.js.map

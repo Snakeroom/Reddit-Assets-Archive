@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.272c9927a6b45e4c6c35.js
-// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.03c0fafaf85ca8f68f3c.js
+// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -5987,7 +5987,7 @@
 						to: t.url,
 						isActive: n,
 						onClick: e => {
-							Object(d.H)(i) && !Object(d.P)(i) && e.preventDefault(), s()
+							Object(d.I)(i) && !Object(d.Q)(i) && e.preventDefault(), s()
 						}
 					}, F._("Polls", null, {
 						hk: "1vWsZx"
@@ -6008,7 +6008,7 @@
 				const n = Object(i.d)(),
 					a = Object(D.a)(),
 					o = Object(z.a)(),
-					d = Object(W.Q)(a),
+					d = Object(W.R)(a),
 					[c, l] = Object(s.useState)(!1),
 					u = Object(i.e)(e => Object(T.Y)(e, {
 						subredditId: t
@@ -6052,7 +6052,7 @@
 				X = Object(a.c)({
 					isMetaFilterEnabled: (e, t) => !!e.subreddits.appliedFilters.meta[t.subredditId],
 					isPostsRoute: (e, t) => !!t.pageLayer && !!t.pageLayer.meta && Z.indexOf(t.pageLayer.meta.name) > -1,
-					isPredictionsPage: (e, t) => !!t.pageLayer && Object(d.P)(t.pageLayer)
+					isPredictionsPage: (e, t) => !!t.pageLayer && Object(d.Q)(t.pageLayer)
 				});
 			var J = K(Object(i.b)(X, (e, t) => ({
 					onTurnOffMetaFilter: () => e(Object(P.p)({
@@ -6141,7 +6141,7 @@
 			const le = Object(c.a)("spPolls", L),
 				ue = Object(d.u)(),
 				me = Object(a.c)({
-					layout: d.S,
+					layout: d.T,
 					widget: l.f
 				}),
 				pe = Object(i.b)(me);
@@ -7134,8 +7134,8 @@
 			}
 			const E = 129,
 				C = Object(h.u)({
-					filterName: e => Object(h.X)(e)[b.j],
-					url: e => Object(h.db)(e)
+					filterName: e => Object(h.Y)(e)[b.j],
+					url: e => Object(h.eb)(e)
 				}),
 				j = Object(o.c)({
 					subredditId: (e, t) => Object(y.I)(e, t.subredditName)
@@ -7969,11 +7969,11 @@
 				autoplayPref: b.c,
 				crosspostRoot: p.d,
 				crosspostSubredditOrProfile: p.e,
-				flairStyleTemplate: c.W,
+				flairStyleTemplate: c.X,
 				hideNSFWPref: b.G,
 				isActive: p.j,
 				moderatorPermissions: u.m,
-				modModeEnabled: c.U,
+				modModeEnabled: c.V,
 				showEditFlair: m.a
 			}), (e, t) => {
 				let {
@@ -8691,7 +8691,7 @@
 						} = t;
 						return Object(B.g)(e, n.params.subredditName)
 					},
-					layout: x.S,
+					layout: x.T,
 					over18Pref: B.lb,
 					subreddit: (e, t) => {
 						let {
@@ -8766,7 +8766,7 @@
 				r = n("./src/reddit/constants/postLayout.ts"),
 				i = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				a = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => r.e[Object(i.S)(e, {})] === r.d.Card,
+			const o = e => r.e[Object(i.T)(e, {})] === r.d.Card,
 				d = e => Object(a.c)(e, {
 					experimentEligibilitySelector: o,
 					experimentName: s.yb
@@ -8962,4 +8962,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.272c9927a6b45e4c6c35.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.03c0fafaf85ca8f68f3c.js.map
