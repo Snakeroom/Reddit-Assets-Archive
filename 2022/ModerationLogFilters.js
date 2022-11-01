@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationLogFilters.550513db1e182375089f.js
-// Retrieved at 10/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationLogFilters.bdf60e0562bbab725aee.js
+// Retrieved at 11/1/2022, 12:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationLogFilters"], {
 		"./src/reddit/components/CCM/ModerationLog/Filters/ActionsDropdown/ActionsTreeFilter/ActionBranch/index.m.less": function(e, t, a) {
@@ -44,8 +44,8 @@
 				b = a("./src/reddit/icons/fonts/Clear/index.tsx"),
 				C = a("./src/reddit/icons/fonts/DropdownTriangle/index.tsx"),
 				g = a("./src/reddit/selectors/tooltip.ts"),
-				h = (a("./node_modules/core-js/modules/web.dom.iterable.js"), a("./node_modules/lodash/flatten.js")),
-				x = a.n(h),
+				x = (a("./node_modules/core-js/modules/web.dom.iterable.js"), a("./node_modules/lodash/flatten.js")),
+				h = a.n(x),
 				f = a("./node_modules/lodash/isEmpty.js"),
 				_ = a.n(f),
 				k = a("./src/reddit/selectors/moderationLog.ts"),
@@ -125,7 +125,7 @@
 				},
 				L = a("./src/reddit/components/CCM/ModerationLog/Filters/ActionsDropdown/ActionsTreeFilter/index.m.less"),
 				S = a.n(L);
-			const B = e => x()(Object.keys(e).map(t => e[t]));
+			const B = e => h()(Object.keys(e).map(t => e[t]));
 			var I = e => {
 					const t = Object(c.a)(),
 						a = Object(r.e)(e => Object(k.b)(e)),
@@ -146,8 +146,8 @@
 						}, {}) : {}),
 						C = B(u).length,
 						g = !!C && C !== i.length,
-						h = C === i.length,
-						[x, f] = Object(o.useState)(""),
+						x = C === i.length,
+						[h, f] = Object(o.useState)(""),
 						w = Object(o.useCallback)(e => {
 							e.target instanceof HTMLAnchorElement && t(Object(p.g)())
 						}, [t]),
@@ -165,15 +165,15 @@
 							b(a)
 						}, [u]),
 						M = Object(o.useCallback)(e => {
-							b(h || g ? {} : a)
-						}, [h, g, a]),
+							b(x || g ? {} : a)
+						}, [x, g, a]),
 						A = Object(o.useCallback)(() => {
-							e.onApply(h ? {
+							e.onApply(x ? {
 								actions: void 0
 							} : {
 								actions: B(u)
 							}), e.onClose()
-						}, [e, h, u]);
+						}, [e, x, u]);
 					if (_()(a)) return null;
 					const F = ((e, t) => {
 							if (t) {
@@ -187,7 +187,7 @@
 								}, {})
 							}
 							return e
-						})(a, x),
+						})(a, h),
 						y = (e => Object.keys(e).sort())(F);
 					return s.a.createElement("div", {
 						className: Object(l.a)(e.className, S.a.container)
@@ -210,12 +210,12 @@
 						placeholder: n.fbt._("Search Actions", null, {
 							hk: "48XSyA"
 						}),
-						value: x
+						value: h
 					}), s.a.createElement("div", {
 						role: "menu",
 						className: S.a.list,
 						onClick: w
-					}, !x && s.a.createElement(j.a, {
+					}, !h && s.a.createElement(j.a, {
 						className: S.a.selectAllRow,
 						name: n.fbt._("Select all", null, {
 							hk: "3sUGlp"
@@ -223,7 +223,7 @@
 						title: n.fbt._("Select all", null, {
 							hk: "3sUGlp"
 						}),
-						selected: h,
+						selected: x,
 						isHalfSelected: g,
 						onToggle: M
 					}), y.map(e => s.a.createElement(T, {
@@ -231,7 +231,7 @@
 						actions: F[e],
 						actionCategory: e,
 						selectedActions: u[e] ? u[e] : [],
-						isAutoExpanded: !!x,
+						isAutoExpanded: !!h,
 						onChange: t => v(e, t.actions)
 					}))), s.a.createElement("div", {
 						className: S.a.bottom
@@ -257,8 +257,8 @@
 				const o = Object(c.a)(),
 					i = Object(r.d)(),
 					u = () => i(Object(m.i)()),
-					h = Object(r.e)(e => Object(g.b)("mod-log-action-filter-dropdown")(e)),
-					x = t ? s.a.createElement("span", {
+					x = Object(r.e)(e => Object(g.b)("mod-log-action-filter-dropdown")(e)),
+					h = t ? s.a.createElement("span", {
 						onClick: e => {
 							e.stopPropagation(), u(), a({
 								actions: void 0
@@ -271,7 +271,7 @@
 					className: P.a.container,
 					onClickCapture: U
 				}, s.a.createElement("button", {
-					"aria-expanded": h,
+					"aria-expanded": x,
 					"aria-label": n.fbt._("Start typing to filter the mod actions or use up and down to select.", null, {
 						hk: "32A4KB"
 					}),
@@ -291,9 +291,9 @@
 					hk: "1DhjPC"
 				}) : n.fbt._("Actions", null, {
 					hk: "1s4OJD"
-				}))(t)), x), s.a.createElement(H, {
+				}))(t)), h), s.a.createElement(H, {
 					tooltipId: "mod-log-action-filter-dropdown",
-					isOpen: h,
+					isOpen: x,
 					className: P.a.dropdown
 				}, s.a.createElement(I, {
 					className: P.a.dropdownContent,
@@ -333,8 +333,8 @@
 				b = a("./src/reddit/icons/fonts/Clear/index.tsx"),
 				C = a("./src/reddit/icons/fonts/DropdownTriangle/index.tsx"),
 				g = a("./src/reddit/controls/Button/index.tsx"),
-				h = a("./src/reddit/components/CCM/ModerationLog/Filters/DateRangeDropdown/DateRangeFilter/index.m.less"),
-				x = a.n(h);
+				x = a("./src/reddit/components/CCM/ModerationLog/Filters/DateRangeDropdown/DateRangeFilter/index.m.less"),
+				h = a.n(x);
 			const f = e => {
 				e.nativeEvent.stopImmediatePropagation()
 			};
@@ -364,37 +364,41 @@
 						className: u,
 						onClickCapture: f
 					}, s.a.createElement("h5", {
-						className: x.a.title
+						className: h.a.title
 					}, n.fbt._("Select a time frame", null, {
 						hk: "3fQ2m8"
 					})), s.a.createElement("div", {
-						className: x.a.rangeContainer
+						className: h.a.rangeContainer
 					}, s.a.createElement("div", {
-						className: x.a.range
+						className: h.a.range
 					}, s.a.createElement("h6", {
-						className: x.a.rangeTitle
+						className: h.a.rangeTitle
 					}, n.fbt._("From", null, {
 						hk: "1JlV6N"
 					})), s.a.createElement("input", {
-						className: x.a.rangeInput,
+						className: h.a.rangeInput,
 						type: "date",
 						onChange: c,
-						value: t
+						value: t,
+						min: e.minDate,
+						max: e.maxDate
 					})), s.a.createElement("div", {
-						className: x.a.range
+						className: h.a.range
 					}, s.a.createElement("h6", {
-						className: x.a.rangeTitle
+						className: h.a.rangeTitle
 					}, n.fbt._("To", null, {
 						hk: "22MrPI"
 					})), s.a.createElement("input", {
-						className: x.a.rangeInput,
+						className: h.a.rangeInput,
 						type: "date",
 						onChange: i,
-						value: r
+						value: r,
+						min: e.minDate,
+						max: e.maxDate
 					}))), s.a.createElement("div", {
-						className: x.a.controls
+						className: h.a.controls
 					}, s.a.createElement(g.a, {
-						className: x.a.button,
+						className: h.a.button,
 						kind: g.b.Button,
 						priority: g.c.Secondary,
 						text: n.fbt._("Cancel", null, {
@@ -402,7 +406,7 @@
 						}),
 						onClick: e.onClose
 					}), s.a.createElement(g.a, {
-						className: x.a.button,
+						className: h.a.button,
 						role: "submit",
 						kind: g.b.Button,
 						priority: g.c.Primary,
@@ -422,18 +426,20 @@
 				let {
 					startDate: t,
 					endDate: a,
-					onApply: o,
-					shouldShowDefaultTitle: i
+					maxDate: o,
+					minDate: i,
+					onApply: u,
+					shouldShowDefaultTitle: g
 				} = e;
-				const u = Object(c.a)(),
-					g = Object(r.d)(),
-					h = () => {
-						g(Object(d.i)())
+				const x = Object(c.a)(),
+					h = Object(r.d)(),
+					f = () => {
+						h(Object(d.i)())
 					},
-					x = Object(r.e)(e => Object(m.b)("mod-log-date-filter-dropdown")(e)),
-					f = i ? s.a.createElement(C.a, null) : s.a.createElement("span", {
+					k = Object(r.e)(e => Object(m.b)("mod-log-date-filter-dropdown")(e)),
+					N = g ? s.a.createElement(C.a, null) : s.a.createElement("span", {
 						onClick: e => {
-							e.stopPropagation(), h(), o({
+							e.stopPropagation(), f(), u({
 								startDate: void 0,
 								endDate: void 0
 							})
@@ -445,18 +451,18 @@
 					className: j.a.container,
 					onClickCapture: E
 				}, s.a.createElement("button", {
-					"aria-expanded": x,
+					"aria-expanded": k,
 					"aria-label": n.fbt._("Select dates from and to and apply.", null, {
 						hk: "2O0soE"
 					}),
 					className: Object(l.a)(j.a.filter, {
-						[j.a.selected]: !i
+						[j.a.selected]: !g
 					}),
 					id: "mod-log-date-filter-dropdown",
 					onClick: () => {
-						g(Object(d.h)({
+						h(Object(d.h)({
 							tooltipId: "mod-log-date-filter-dropdown"
-						})), u(Object(p.d)())
+						})), x(Object(p.d)())
 					},
 					role: "navigation"
 				}, s.a.createElement("span", {
@@ -473,18 +479,20 @@
 					}) : n.fbt._("Time frame", null, {
 						hk: "1Mv1rs"
 					})
-				})(t, a, i)), f), s.a.createElement(O, {
+				})(t, a, g)), N), s.a.createElement(O, {
 					tooltipId: "mod-log-date-filter-dropdown",
-					isOpen: x,
+					isOpen: k,
 					className: j.a.dropdown
 				}, s.a.createElement(_, {
 					className: Object(l.a)(j.a.dropdownContent, j.a.dateDropdownContent),
 					startDate: t,
 					endDate: a,
+					maxDate: o,
+					minDate: i,
 					onApply: e => {
-						o(e), u(Object(p.e)())
+						u(e), x(Object(p.e)())
 					},
-					onClose: h
+					onClose: f
 				})))
 			}
 		},
@@ -560,8 +568,8 @@
 				b = a("./src/reddit/icons/fonts/DropdownTriangle/index.tsx"),
 				C = a("./src/reddit/selectors/tooltip.ts"),
 				g = (a("./node_modules/core-js/modules/web.dom.iterable.js"), a("./src/lib/constants/index.ts")),
-				h = a("./src/reddit/selectors/moderationLog.ts"),
-				x = a("./src/reddit/components/CCM/ModerationLog/Filters/FilterCheckboxRow/index.tsx"),
+				x = a("./src/reddit/selectors/moderationLog.ts"),
+				h = a("./src/reddit/components/CCM/ModerationLog/Filters/FilterCheckboxRow/index.tsx"),
 				f = a("./src/reddit/controls/Button/index.tsx"),
 				_ = a("./src/reddit/controls/SearchBar/index.tsx"),
 				k = a("./src/reddit/icons/svgs/Close/index.tsx"),
@@ -575,7 +583,7 @@
 						onClose: i,
 						subredditId: d
 					} = e;
-					const m = Object(r.e)(e => Object(h.a)(e, d).sort((e, t) => {
+					const m = Object(r.e)(e => Object(x.a)(e, d).sort((e, t) => {
 							const a = e.name.toUpperCase(),
 								n = t.name.toUpperCase();
 							return a < n ? -1 : a > n ? 1 : 0
@@ -659,7 +667,7 @@
 					}), s.a.createElement("div", {
 						role: "menu",
 						className: O.a.list
-					}, !p && s.a.createElement(x.a, {
+					}, !p && s.a.createElement(h.a, {
 						className: O.a.selectAllRow,
 						name: n.fbt._("Select all", null, {
 							hk: "UVcST"
@@ -676,7 +684,7 @@
 							iconUrl: a,
 							title: n
 						} = e;
-						return s.a.createElement(x.a, {
+						return s.a.createElement(h.a, {
 							key: `${n}_${!!C[t]}`,
 							name: t,
 							title: n,
@@ -710,8 +718,8 @@
 				const i = Object(c.a)(),
 					m = Object(r.d)(),
 					g = () => m(Object(d.i)()),
-					h = Object(r.e)(e => Object(C.b)("mod-log-moderator-filter-dropdown")(e)),
-					x = t ? s.a.createElement("span", {
+					x = Object(r.e)(e => Object(C.b)("mod-log-moderator-filter-dropdown")(e)),
+					h = t ? s.a.createElement("span", {
 						onClick: e => {
 							e.stopPropagation(), g(), o({
 								moderatorNames: void 0
@@ -724,7 +732,7 @@
 					className: w.a.container,
 					onClickCapture: M
 				}, s.a.createElement("button", {
-					"aria-expanded": h,
+					"aria-expanded": x,
 					"aria-label": n.fbt._("Start typing to filter moderators or use up and down to select.", null, {
 						hk: "4ff0MW"
 					}),
@@ -746,9 +754,9 @@
 					hk: "302l1I"
 				}) : n.fbt._("Moderator", null, {
 					hk: "27CDKl"
-				}))(t)), x), s.a.createElement(v, {
+				}))(t)), h), s.a.createElement(v, {
 					tooltipId: "mod-log-moderator-filter-dropdown",
-					isOpen: h,
+					isOpen: x,
 					className: w.a.dropdown
 				}, s.a.createElement(E, {
 					className: w.a.dropdownContent,
@@ -789,8 +797,8 @@
 				b = a("./src/reddit/icons/fonts/Clear/index.tsx"),
 				C = a("./src/reddit/icons/fonts/DropdownTriangle/index.tsx"),
 				g = a("./src/reddit/selectors/tooltip.ts"),
-				h = a("./src/reddit/hooks/useGqlContext.ts"),
-				x = a("./src/reddit/constants/keycodes.ts"),
+				x = a("./src/reddit/hooks/useGqlContext.ts"),
+				h = a("./src/reddit/constants/keycodes.ts"),
 				f = a("./src/reddit/endpoints/redditor/index.ts"),
 				_ = a("./src/reddit/controls/Button/index.tsx"),
 				k = a("./src/reddit/icons/svgs/Close/index.tsx"),
@@ -804,7 +812,7 @@
 						onClose: c
 					} = e;
 					const d = Object(o.useRef)(null),
-						m = Object(h.a)(),
+						m = Object(x.a)(),
 						u = Object(o.useCallback)(async () => {
 							var e;
 							const t = (null === (e = d.current) || void 0 === e ? void 0 : e.value) || void 0;
@@ -838,7 +846,7 @@
 						autoFocus: !0,
 						type: "text",
 						onKeyPress: e => {
-							e.key !== x.b.Enter ? e.key === x.b.Escape && c() : u()
+							e.key !== h.b.Enter ? e.key === h.b.Escape && c() : u()
 						},
 						placeholder: n.fbt._("Enter exact username", null, {
 							hk: "2VEfHB"
@@ -870,8 +878,8 @@
 				const o = Object(c.a)(),
 					d = Object(r.d)(),
 					u = () => d(Object(m.i)()),
-					h = Object(r.e)(e => Object(g.b)("mod-log-username-filter-dropdown")(e)),
-					x = t ? s.a.createElement("span", {
+					x = Object(r.e)(e => Object(g.b)("mod-log-username-filter-dropdown")(e)),
+					h = t ? s.a.createElement("span", {
 						onClick: e => {
 							e.stopPropagation(), u(), a({
 								userName: void 0,
@@ -885,7 +893,7 @@
 					className: w.a.container,
 					onClickCapture: M
 				}, s.a.createElement("button", {
-					"aria-expanded": h,
+					"aria-expanded": x,
 					"aria-label": n.fbt._("Start typing to filter user name.", null, {
 						hk: "TlFcF"
 					}),
@@ -903,9 +911,9 @@
 					className: w.a.filterText
 				}, (e => e ? Object(i.e)(e) : n.fbt._("Username", null, {
 					hk: "11kann"
-				}))(t)), x), s.a.createElement(v, {
+				}))(t)), h), s.a.createElement(v, {
 					tooltipId: "mod-log-username-filter-dropdown",
-					isOpen: h,
+					isOpen: x,
 					className: w.a.dropdown
 				}, s.a.createElement(E, {
 					className: w.a.dropdownContent,
@@ -982,4 +990,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationLogFilters.550513db1e182375089f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationLogFilters.bdf60e0562bbab725aee.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.029506b1af02ea53a5e1.js
-// Retrieved at 11/1/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.31a04caf0ad7fdb59eef.js
+// Retrieved at 11/1/2022, 12:10:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1572,7 +1572,7 @@
 						"vendors~PostCreation": "a2355262c2d34d688b8f",
 						PostCreation: "5e6f09844e1d6d5ab0da",
 						"vendors~ModerationPages": "94c34813eaf24a1890ea",
-						ModerationPages: "8117688f9631190fb84e",
+						ModerationPages: "734bfbf0b7c7fb6fb135",
 						"vendors~ModStatsChart~Settings~ViewsTooltip": "ca7c845d62fd39d960b6",
 						"vendors~Settings": "86b1cfc53320ea8eef91",
 						Settings: "fbf50dd222a6035439e4",
@@ -1709,7 +1709,7 @@
 						"reddit-components-ScheduledPost-PostSchedulePickerModal": "53ff6ddbadccff5e4702",
 						AwardCreationModal: "552815bd942c9b170d05",
 						"reddit-components-ModHub-Content-ModQueue": "8fddeee9db02a17ad265",
-						ModerationLogFilters: "550513db1e182375089f",
+						ModerationLogFilters: "bdf60e0562bbab725aee",
 						"reddit-components-Wiki-ModHubWikiManagement": "58715493fe55075c024c",
 						"reddit-components-CommunitySettings-ModPnSettings": "02d25694fdefa486f815",
 						"reddit-components-ModHub-ContentControls": "516cbd7e9cddf8cbb074",
@@ -1814,4 +1814,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.029506b1af02ea53a5e1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.31a04caf0ad7fdb59eef.js.map

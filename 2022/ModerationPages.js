@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.8117688f9631190fb84e.js
-// Retrieved at 11/1/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.734bfbf0b7c7fb6fb135.js
+// Retrieved at 11/1/2022, 12:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -22592,8 +22592,10 @@
 						}), t(Object(b.n)())
 					}, [U, t]),
 					W = !I.length,
-					V = L.startDate ? L.startDate : Le(Date.now() - 90 * u.E),
-					z = L.endDate ? L.endDate : Le(Date.now());
+					V = Le(Date.now() - 90 * u.E),
+					z = Le(Date.now()),
+					K = L.startDate ? L.startDate : V,
+					Q = L.endDate ? L.endDate : z;
 				return i.a.createElement(we.a, {
 					className: Ae.a.contentContainer
 				}, i.a.createElement(we.b, null, r.fbt._("Mod Log", null, {
@@ -22611,8 +22613,10 @@
 					className: Ae.a.filters
 				}, i.a.createElement(y.a, {
 					shouldShowDefaultTitle: !L.startDate && !L.endDate,
-					startDate: V,
-					endDate: z,
+					startDate: K,
+					endDate: Q,
+					maxDate: z,
+					minDate: V,
 					onApply: G
 				}), i.a.createElement(C.a, {
 					moderatorNames: "string" == typeof L.moderatorNames ? [L.moderatorNames] : L.moderatorNames,
@@ -77505,7 +77509,7 @@
 			e.exports = JSON.parse('{"id":"a20cc8dd230d"}')
 		},
 		"./src/redditGQL/operations/PopularFeedElements.json": function(e) {
-			e.exports = JSON.parse('{"id":"03355ee848eb"}')
+			e.exports = JSON.parse('{"id":"3221670ba9a7"}')
 		},
 		"./src/redditGQL/operations/ProfileFeed.json": function(e) {
 			e.exports = JSON.parse('{"id":"930e32e2c70a"}')
@@ -77674,4 +77678,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.8117688f9631190fb84e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.734bfbf0b7c7fb6fb135.js.map
