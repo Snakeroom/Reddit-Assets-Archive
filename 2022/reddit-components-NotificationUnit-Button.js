@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.4f46b5d22d3cb4482d09.js
-// Retrieved at 11/1/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.875478fdd50b62e1a826.js
+// Retrieved at 11/1/2022, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./node_modules/lodash/map.js": function(t, e, o) {
@@ -2452,7 +2452,7 @@
 			t.exports = JSON.parse('{"id":"445164f0825f"}')
 		},
 		"./src/redditGQL/operations/CreateComment.json": function(t) {
-			t.exports = JSON.parse('{"id":"b282a5b92ecf"}')
+			t.exports = JSON.parse('{"id":"436652d677fd"}')
 		},
 		"./src/redditGQL/operations/UpdateComment.json": function(t) {
 			t.exports = JSON.parse('{"id":"3d83ef4f0375"}')
@@ -2462,4 +2462,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.4f46b5d22d3cb4482d09.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.875478fdd50b62e1a826.js.map
