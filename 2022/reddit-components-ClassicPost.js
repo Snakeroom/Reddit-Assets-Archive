@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.f624951a051817b1bd8d.js
-// Retrieved at 11/2/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.fe6f940b9993888055b0.js
+// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1142,8 +1142,8 @@
 				K = n("./src/reddit/controls/OutboundLink/styled.tsx"),
 				H = n("./src/reddit/models/Media/index.ts"),
 				Q = n("./src/reddit/components/ClassicPost/Thumbnail.tsx"),
-				X = n("./src/reddit/connectors/ClassicPost/index.tsx"),
-				J = n("./src/reddit/constants/postLayout.ts"),
+				J = n("./src/reddit/connectors/ClassicPost/index.tsx"),
+				X = n("./src/reddit/constants/postLayout.ts"),
 				Z = n("./src/reddit/helpers/hasModFlairPermissions/index.ts"),
 				$ = n("./src/reddit/helpers/hasModFullPermissions/index.ts"),
 				ee = n("./src/reddit/helpers/hasModPostPermissions/index.ts"),
@@ -1185,7 +1185,7 @@
 					isGalleryTileLayoutDefault: k,
 					isLoggedIn: S,
 					isOverlay: w,
-					imageGalleryCurrentItem: X,
+					imageGalleryCurrentItem: J,
 					moderatorPermissions: oe,
 					modModeEnabled: de,
 					onClickPost: me,
@@ -1233,13 +1233,13 @@
 						shouldShowSubscribeButton: !(y && S) || qe && S,
 						subredditOrProfile: ye
 					},
-					Ke = Object(o.t)(ve, X),
+					Ke = Object(o.t)(ve, J),
 					{
 						source: He
 					} = Ke,
-					[Qe, Xe] = Object(r.useState)(!1),
-					Je = Object(r.useCallback)(() => {
-						Xe(!Qe), Object(te.Qb)(), Ae(Object(se.d)(ge))
+					[Qe, Je] = Object(r.useState)(!1),
+					Xe = Object(r.useCallback)(() => {
+						Je(!Qe), Object(te.Qb)(), Ae(Object(se.d)(ge))
 					}, [Qe, ge, Ae]);
 				let Ze = s.a.createElement(Q.a, {
 					className: le.a.classicThumbnail,
@@ -1298,7 +1298,7 @@
 					"data-click-id": "body"
 				}, !!ve.recommendationContext && s.a.createElement(F.a, {
 					content: ve.recommendationContext.content,
-					layout: J.g.Classic,
+					layout: X.g.Classic,
 					post: ve
 				}), s.a.createElement(Y.c, {
 					className: he ? le.a.titleWithPoll : void 0,
@@ -1357,7 +1357,7 @@
 					hostPostData: C,
 					isOverlay: !!w,
 					modModeEnabled: de,
-					onClickInsightsButton: Je,
+					onClickInsightsButton: Xe,
 					onIgnoreReports: pe,
 					onOpenReportsDropdown: be,
 					post: ve,
@@ -1380,7 +1380,7 @@
 				})));
 				return s.a.createElement(z.b, null, $e)
 			});
-			t.default = Object(X.a)(me)
+			t.default = Object(J.a)(me)
 		},
 		"./src/reddit/components/CompactPost/HorizontalVotes/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -2834,7 +2834,7 @@
 						type: r
 					}, o) : o)
 				},
-				X = e => {
+				J = e => {
 					let {
 						className: t,
 						disableVisited: n,
@@ -2848,7 +2848,7 @@
 						})
 					}), s)
 				},
-				J = e => {
+				X = e => {
 					let {
 						disableVisited: t,
 						nowrap: n,
@@ -2867,7 +2867,7 @@
 						let {
 							pageLayer: n
 						} = t;
-						return Object(p.q)(e, {
+						return Object(p.r)(e, {
 							pageLayer: n
 						})
 					},
@@ -2883,7 +2883,7 @@
 					} = t, s = Object(a.d)(), o = Object(O.a)(), c = Object(a.e)(B.b), d = Object(a.e)(B.c), u = e => {
 						!c && !d || t.media && Object(k.H)(t.media) || (e.preventDefault(), s(Object(v.ab)(Object(g.b)(t.permalink), t.id)))
 					};
-					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return i.a.createElement(J, {
+					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return i.a.createElement(X, {
 						nowrap: e.nowrap
 					}, i.a.createElement(ee, e));
 					if (e.isCommentsPageAd && t.source && t.source.url) return i.a.createElement(b.b, {
@@ -2894,7 +2894,7 @@
 					}, i.a.createElement(ee, e)); {
 						const s = t.media && Object(k.H)(t.media) ? Object(_.c)(t.id, n.name) : t.permalink,
 							a = e.isCommentPermalink ? Object(g.b)(s) : Object(h.a)(s, void 0, o);
-						return i.a.createElement(J, {
+						return i.a.createElement(X, {
 							disableVisited: e.disableVisited,
 							nowrap: e.nowrap
 						}, r ? ((e, t) => {
@@ -2907,7 +2907,7 @@
 								postId: e.id,
 								source: n
 							}, i.a.createElement(ee, t)) : i.a.createElement(ee, t)
-						})(t, e) : i.a.createElement(X, {
+						})(t, e) : i.a.createElement(J, {
 							className: e.titleLinkClassName,
 							"data-click-id": "body",
 							disableVisited: e.disableVisited,
@@ -3041,8 +3041,8 @@
 				}
 			}
 			t.c = i.a.memo((function(e) {
-				const t = Object(p.fb)(),
-					n = Object(p.w)(t),
+				const t = Object(p.gb)(),
+					n = Object(p.x)(t),
 					r = Object(C.a)(),
 					s = Object(a.e)(s => Z(s, {
 						...r,
@@ -3306,14 +3306,14 @@
 					isLoggedIn: g.R,
 					showPromotedCTA: v.a,
 					moderatorPermissions: b.m,
-					modModeEnabled: d.V,
+					modModeEnabled: d.W,
 					poll: (e, t) => {
 						const n = e.posts.metaMap[t.postId];
 						return n ? e.polls.models[n] : null
 					},
 					showEditFlair: f.a,
-					showMedia: d.s,
-					flairStyleTemplate: d.X,
+					showMedia: d.t,
+					flairStyleTemplate: d.Y,
 					showCTAExperimentDesign: p.a
 				},
 				O = Object(r.b)(() => Object(s.c)(_), (e, t) => {
@@ -5665,11 +5665,6 @@
 				s = n("./src/reddit/selectors/removedPosts.ts");
 			const o = () => Object(r.e)(e => Object(s.d)(e))
 		},
-		"./src/reddit/hooks/usePageLayer.ts": function(e, t, n) {
-			"use strict";
-			var r = n("./src/reddit/contexts/PageLayer/index.tsx");
-			t.a = r.fb
-		},
 		"./src/reddit/hooks/useTheme.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -6643,8 +6638,8 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.Dc
-					}) === r.fd.Enabled
+						experimentName: r.Ec
+					}) === r.hd.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
@@ -6657,8 +6652,8 @@
 			const o = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.hf
-				}) === r.Sd
+					experimentName: r.jf
+				}) === r.Ud
 			}
 		},
 		"./src/reddit/selectors/experiments/web2x_cta.ts": function(e, t, n) {
@@ -6670,10 +6665,10 @@
 				s = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(r.a)(e => Object(o.c)(e, {
-					experimentName: s.og,
+					experimentName: s.qg,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				a = Object(r.a)(i, e => e === s.fg)
+				a = Object(r.a)(i, e => e === s.hg)
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
 			"use strict";
@@ -7082,4 +7077,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.f624951a051817b1bd8d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.fe6f940b9993888055b0.js.map

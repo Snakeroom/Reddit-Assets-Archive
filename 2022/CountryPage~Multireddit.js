@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.eb1d4ca498585e00f622.js
-// Retrieved at 11/2/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.50333f4fb3f98a5c57cd.js
+// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1201,7 +1201,7 @@
 					return r > Date.now() - i
 				})(e),
 				isSeo: A.h
-			}), pe = Object(D.u)(), he = Object(o.b)(me, (e, t) => {
+			}), pe = Object(D.v)(), he = Object(o.b)(me, (e, t) => {
 				let {
 					subredditName: n
 				} = t;
@@ -1934,7 +1934,7 @@
 					}, o.a.createElement(h.b, {
 						textColor: c
 					})), o.a.createElement(O, {
-						qrCodeAsset: (() => r === _.bd.Enabled || i === _.qb.BlurredPreview || i === _.qb.NoPreview ? C.d2x_nsfw_signup_blocking_de_v1 : C.d2x_nsfw_signup_blocking_non_us_v1)()
+						qrCodeAsset: (() => r === _.dd.Enabled || i === _.qb.BlurredPreview || i === _.qb.NoPreview ? C.d2x_nsfw_signup_blocking_de_v1 : C.d2x_nsfw_signup_blocking_non_us_v1)()
 					}))
 				}
 		},
@@ -2175,13 +2175,13 @@
 				k = n("./src/reddit/selectors/tracking.ts");
 
 			function E() {
-				return Object(p.u)({
-					currentProfileName: p.i,
-					isCommentPermalink: p.w,
-					isCommentsPage: p.x,
-					isFrontpage: p.A,
-					isProfilePostListing: p.M,
-					isTopicPage: p.S,
+				return Object(p.v)({
+					currentProfileName: p.j,
+					isCommentPermalink: p.x,
+					isCommentsPage: p.y,
+					isFrontpage: p.B,
+					isProfilePostListing: p.N,
+					isTopicPage: p.T,
 					pageLayer: e => e
 				})
 			}
@@ -2190,7 +2190,7 @@
 					apiError: y.c,
 					apiPending: y.d,
 					measureScrollFPS: f.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(p.T)(e, t),
+					layout: (e, t) => t.forcedLayout || Object(p.U)(e, t),
 					loadMore: y.g,
 					postsById: v.T,
 					postIds: Object(s.a)((e, t) => {
@@ -2203,7 +2203,7 @@
 					}),
 					subredditsById: x.fb,
 					viewportDataLoaded: k.a,
-					pageReferrer: p.W,
+					pageReferrer: p.X,
 					postListPlaceholderComponent: () => _.a,
 					isNpsScrollSurveyEnabled: g.e
 				},
@@ -2706,9 +2706,9 @@
 				fbt: je
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), Oe = Object(l.c)({
 				isLoggedIn: U.R,
-				layout: (e, t) => z.e[Object(N.T)(e, t)],
+				layout: (e, t) => z.e[Object(N.U)(e, t)],
 				userIsOwner: (e, t) => Object(q.c)(e, t.multireddit.url)
-			}), Fe = Object(c.b)(Oe), De = Object(N.u)(), Te = {};
+			}), Fe = Object(c.b)(Oe), De = Object(N.v)(), Te = {};
 			var Se = De(Fe(e => a.a.createElement("div", {
 					className: Ce.a.container
 				}, a.a.createElement("div", {
@@ -2777,7 +2777,7 @@
 				}) : r.fbt._("There are 0 communities in this custom feed", null, {
 					hk: "tKC2v"
 				}))),
-				Me = Object(N.u)({
+				Me = Object(N.v)({
 					currentMultireddit: N.d,
 					pageLayer: e => e
 				}),
@@ -2916,15 +2916,15 @@
 			const o = e => {
 					const t = Object(i.c)(e, {
 						experimentEligibilitySelector: s.R,
-						experimentName: r.yd
+						experimentName: r.Ad
 					});
-					return !(!t || Object(r.Ag)(t))
+					return !(!t || Object(r.Cg)(t))
 				},
 				a = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: s.R,
-						experimentName: r.yd
-					}) === r.Wd.ListingEnabled
+						experimentName: r.Ad
+					}) === r.Yd.ListingEnabled
 				}
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
@@ -2932,4 +2932,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.eb1d4ca498585e00f622.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.50333f4fb3f98a5c57cd.js.map

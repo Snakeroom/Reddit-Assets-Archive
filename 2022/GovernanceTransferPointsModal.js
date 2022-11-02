@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.5c70b17a863c016ef742.js
-// Retrieved at 11/2/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.3889bdd0b2005df37058.js
+// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -1515,7 +1515,7 @@
 			const tt = Object(P.c)({
 					isMainnetEnabled: T.b,
 					currentWallet: (e, t) => {
-						const n = Object(h.r)(e, t);
+						const n = Object(h.s)(e, t);
 						if (n) return Object(O.a)(e, {
 							subredditId: n.id
 						})
@@ -1523,15 +1523,15 @@
 					customCrypto: C.d.spCustomCrypto,
 					initialRecipient: e => e.transfers.communityPoints.initialRecipient,
 					isEthereumProvider: (e, t) => {
-						const n = Object(h.r)(e, t);
+						const n = Object(h.s)(e, t);
 						return Object(k.a)(e, null == n ? void 0 : n.id)
 					},
 					pointsDetails: (e, t) => {
-						const n = Object(h.r)(e, t);
+						const n = Object(h.s)(e, t);
 						return Object(k.b)(e, null == n ? void 0 : n.id)
 					},
 					publicAddress: e => e.transfers.communityPoints.publicAddress,
-					subreddit: h.r
+					subreddit: h.s
 				}),
 				nt = Object(l.b)(tt, e => ({
 					onClose: () => {
@@ -1543,7 +1543,7 @@
 						subredditId: s
 					}, !0))
 				})),
-				st = Object(h.u)();
+				st = Object(h.v)();
 			t.default = Object(d.a)(st(Object(b.b)(nt(et))))
 		},
 		"./src/reddit/components/Governance/hooks/usePurchaseEth.ts": function(e, t, n) {
@@ -2330,14 +2330,14 @@
 			const r = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.De
-					}) === s.Sd
+						experimentName: s.Fe
+					}) === s.Ud
 				},
 				o = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.Be
-					}) === s.Sd
+						experimentName: s.De
+					}) === s.Ud
 				}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
@@ -2387,11 +2387,11 @@
 					return n && n.amount || "0"
 				},
 				m = (e, t) => {
-					const n = Object(s.n)(e, t);
+					const n = Object(s.o)(e, t);
 					return n && e.subreddits.gov.releaseNotes[n] || a
 				},
 				p = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.5c70b17a863c016ef742.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.3889bdd0b2005df37058.js.map

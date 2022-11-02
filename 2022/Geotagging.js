@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.0d0ec3c927bb3718be8c.js
-// Retrieved at 11/2/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.a3df54f8f2e1e62345d2.js
+// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -51,8 +51,8 @@
 			const x = e => {
 				return Object(g.c)(e, {
 					experimentEligibilitySelector: g.a,
-					experimentName: h.xf
-				}) === h.Sd
+					experimentName: h.zf
+				}) === h.Ud
 			};
 			var f = s("./src/reddit/selectors/recapGame.ts"),
 				E = s("./src/reddit/selectors/user.ts"),
@@ -87,7 +87,7 @@
 					R = I ? "/r/recap" : `${B}/login/?dest=${F}`,
 					M = P ? P.id : "anonymous",
 					D = "on" === G.recapGameState,
-					A = () => {
+					W = () => {
 						S && N(setTimeout(() => {
 							g.current && (g.current.classList.add(_.a.transform), g.current.style.width = `${T}px`)
 						}, 4750)), S && j(setTimeout(() => {
@@ -100,7 +100,7 @@
 						e ? Object(d.e)(e.lastSeenTime) >= 24 && e.dropSkip === b.a.NONE ? C(!0) : Date.now() >= new Date(2022, 10, 2).getTime() && e.dropSkip !== b.a.SECOND && C(!0) : C(!0)
 					})
 				}, [M, D]);
-				const W = Object(r.useCallback)(e => {
+				const A = Object(r.useCallback)(e => {
 					if (e) {
 						const t = e.clientWidth;
 						w(t + 32)
@@ -116,7 +116,7 @@
 					onMouseEnter: () => {
 						O && clearTimeout(O), k && clearTimeout(k), g.current && (g.current.classList.remove(_.a.transform), g.current.style.width = "65px")
 					},
-					onMouseLeave: A,
+					onMouseLeave: W,
 					onClick: () => {
 						O && clearTimeout(O), k && clearTimeout(k), C(!1), Object(b.Sb)(M, !0), h((() => e => ({
 							source: "recap",
@@ -134,7 +134,7 @@
 				}), a.a.createElement("span", {
 					className: _.a.text
 				}, "+1"), y._("{=Back to Top}", [y._param("=Back to Top", a.a.createElement("span", {
-					ref: W,
+					ref: A,
 					className: _.a.altText
 				}, y._("Back to Top", null, {
 					hk: "4BTAZ0"
@@ -142,7 +142,7 @@
 					hk: "4Foziy"
 				}), a.a.createElement(n.a, {
 					onChange: e => {
-						e.isIntersecting && (A(), h((() => e => ({
+						e.isIntersecting && (W(), h((() => e => ({
 							source: "recap",
 							action: "view",
 							noun: "feed_banana",
@@ -452,9 +452,9 @@
 				isCountrySitesEnabled: h.b,
 				isD2xPdpSideRailRecsEnabled: g.b,
 				isNavbarLikeMwebEnabled: x.a
-			}), O = Object(a.b)(C), j = Object(b.u)({
-				isFrontpage: b.A,
-				isCountrySitePage: b.y
+			}), O = Object(a.b)(C), j = Object(b.v)({
+				isFrontpage: b.B,
+				isCountrySitePage: b.z
 			}), k = e => {
 				let {
 					countryCode: t,
@@ -517,7 +517,7 @@
 				const t = Object(a.f)().getState(),
 					s = Object(h.a)(t, Object(o.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.ed.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.ed.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.ed.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.gd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.gd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.gd.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(k, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -738,7 +738,7 @@
 					}))
 				}
 			}
-			const O = Object(m.u)();
+			const O = Object(m.v)();
 			t.a = O(C)
 		},
 		"./src/reddit/components/StructuredStyles/BladeDrawerController/index.m.less": function(e, t, s) {
@@ -1189,9 +1189,9 @@
 				O = s.n(C);
 			const {
 				fbt: j
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), k = Object(u.u)(), N = Object(a.b)(() => Object(i.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), k = Object(u.v)(), N = Object(a.b)(() => Object(i.c)({
 				forceRedditStyle: (e, t) => {
-					const s = Object(u.n)(e, t) || void 0,
+					const s = Object(u.o)(e, t) || void 0,
 						n = t.redditStyle || Object(g.l)(e, {
 							subredditId: s
 						}),
@@ -1199,7 +1199,7 @@
 					return n || r
 				},
 				nigtmode: x.eb,
-				subredditId: u.n,
+				subredditId: u.o,
 				topPostVariant: h.d
 			}));
 			class T extends r.a.Component {
@@ -1609,8 +1609,8 @@
 					actionInfo: B
 				}),
 				D = J("select_location"),
-				A = J("confirm_location"),
-				W = J("undo_location"),
+				W = J("confirm_location"),
+				A = J("undo_location"),
 				H = Q("verify_location"),
 				z = Q("reject_location");
 
@@ -1714,7 +1714,7 @@
 					disabled: l,
 					onFocus: () => S(M(t)),
 					onPlace: function(e) {
-						c && !e && S(W(t, c.id)), d(e), e && S(D(t, e.id))
+						c && !e && S(A(t, c.id)), d(e), e && S(D(t, e.id))
 					},
 					onSubmit: async function(e) {
 						let {
@@ -1736,7 +1736,7 @@
 							}),
 							duration: 5e3
 						}));
-						S(A(t, n.id)), x(), s(t.id), y()
+						S(W(t, n.id)), x(), s(t.id), y()
 					}
 				}))
 			}
@@ -1841,11 +1841,11 @@
 				c = s("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(o.h)(e) && Object(a.f)(e),
-					experimentName: n.tc
+					experimentName: n.uc
 				}), i.a),
 				l = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(o.h)(e) && Object(a.f)(e),
-					experimentName: n.sc
+					experimentName: n.tc
 				}), i.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -1864,4 +1864,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.0d0ec3c927bb3718be8c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.a3df54f8f2e1e62345d2.js.map

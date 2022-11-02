@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.c85a692bd5fc96f15deb.js
-// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.21040733a18f6df3f488.js
+// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxManageModal"], {
 		"./src/reddit/actions/harbergerTax/actionCreators.ts": function(e, t, n) {
@@ -516,21 +516,21 @@
 			}
 			const V = Object(i.c)({
 					mainHeaderAsset: (e, t) => {
-						const n = Object(m.r)(e, t);
+						const n = Object(m.s)(e, t);
 						if (n) return Object(g.a)(e, {
 							subredditId: n.id
 						})
 					},
 					savedStyles: (e, t) => {
-						const n = Object(m.r)(e, t);
+						const n = Object(m.s)(e, t);
 						return n ? e.structuredStyles.models[n.id] : {}
 					},
-					subreddit: m.r
+					subreddit: m.s
 				}),
 				Q = Object(d.b)(V, e => ({
 					onUpdateBanner: t => e(Object(l.c)(t))
 				})),
-				Z = Object(m.u)();
+				Z = Object(m.v)();
 			t.default = Object(b.a)("spHarberger", Object(c.a)(Z(Q(z))))
 		},
 		"./src/reddit/components/Governance/ModalClose/index.m.less": function(e, t, n) {
@@ -1018,11 +1018,11 @@
 					return n && n.amount || "0"
 				},
 				m = (e, t) => {
-					const n = Object(a.n)(e, t);
+					const n = Object(a.o)(e, t);
 					return n && e.subreddits.gov.releaseNotes[n] || r
 				},
 				p = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.c85a692bd5fc96f15deb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.21040733a18f6df3f488.js.map

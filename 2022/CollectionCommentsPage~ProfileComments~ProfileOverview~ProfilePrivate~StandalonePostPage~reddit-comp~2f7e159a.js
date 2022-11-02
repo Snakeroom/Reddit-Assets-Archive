@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a.a7eb1b4466a626bc39df.js
-// Retrieved at 11/2/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a.66c5f2456e378117b806.js
+// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a"], {
 		"./src/higherOrderComponents/withAdClickLocation/index.tsx": function(e, t, s) {
@@ -859,9 +859,9 @@
 					const n = `PostBadges--${e}--${t}`;
 					return s ? `${n}--${s}` : n
 				},
-				U = Object(b.u)({
-					isProfilePostListing: b.M,
-					isSubreddit: b.P
+				U = Object(b.v)({
+					isProfilePostListing: b.N,
+					isSubreddit: b.Q
 				}),
 				D = Object(i.c)({
 					isModQueueDisplayEnabled: I.b,
@@ -873,7 +873,7 @@
 							postId: s.id
 						})
 					},
-					modModeEnabled: b.V
+					modModeEnabled: b.W
 				}),
 				W = Object(a.b)(D, (e, t) => ({
 					onHideTooltip: () => e(Object(l.i)()),
@@ -904,8 +904,8 @@
 				const X = {
 						caretOnTop: !1
 					},
-					V = W.isRemoved && !W.modRemovalReason && !W.modNote && W.belongsTo.type === p.a.SUBREDDIT,
-					q = R("Approve", W.id, H),
+					q = W.isRemoved && !W.modRemovalReason && !W.modNote && W.belongsTo.type === p.a.SUBREDDIT,
+					V = R("Approve", W.id, H),
 					G = R("Archived", W.id, H),
 					K = R("Lock", W.id, H),
 					Q = R("Mod", W.id, H),
@@ -967,11 +967,11 @@
 					isFilled: !0,
 					className: Object(c.a)(g.a.icon, g.a.approveIcon),
 					desc: Object(v.a)(W),
-					id: q,
-					onMouseEnter: D(q),
+					id: V,
+					onMouseEnter: D(V),
 					onMouseLeave: y
 				}), r.a.createElement(m.c, T({
-					tooltipId: q,
+					tooltipId: V,
 					text: Object(v.a)(W)
 				}, X))), Object(x.a)(W) && r.a.createElement(o.Fragment, null, r.a.createElement(j.a, {
 					isFilled: !0,
@@ -980,7 +980,7 @@
 					id: Z,
 					onMouseEnter: D(Z),
 					onMouseLeave: y
-				}), V && r.a.createElement(u.a, {
+				}), q && r.a.createElement(u.a, {
 					className: g.a.addRemovalReason,
 					onClick: U,
 					text: n.fbt._("Add a removal reason", null, {
@@ -1253,8 +1253,8 @@
 				p = s("./node_modules/reselect/es/index.js");
 			const b = Object(p.a)(e => Object(u.c)(e, {
 				experimentEligibilitySelector: u.a,
-				experimentName: m.Bc
-			}), e => e === m.Sd);
+				experimentName: m.Cc
+			}), e => e === m.Ud);
 			var x = s("./node_modules/fbt/lib/FbtPublic.js"),
 				v = s("./src/lib/classNames/index.ts"),
 				E = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
@@ -1321,7 +1321,7 @@
 				H = s("./src/reddit/selectors/profile.ts"),
 				J = s("./src/reddit/components/PromotedUserPostsAd/PromotedUserPostMedia/index.m.less"),
 				X = s.n(J);
-			const V = e => {
+			const q = e => {
 				let {
 					post: t
 				} = e;
@@ -1358,8 +1358,8 @@
 					wrapperClassName: X.a.userIconWrapper
 				})))
 			};
-			var q = s("./src/reddit/components/PromotedUserPostsAd/PromotedUserPost/index.m.less"),
-				G = s.n(q);
+			var V = s("./src/reddit/components/PromotedUserPostsAd/PromotedUserPost/index.m.less"),
+				G = s.n(V);
 			const K = Object(C.a)(null);
 			var Q = Object(I.b)(K(e => {
 					let {
@@ -1368,7 +1368,7 @@
 					const s = Object(T.a)(),
 						n = Object(g.a)(),
 						r = Object(y.a)(),
-						a = Object(N.w)(s) && !n;
+						a = Object(N.x)(s) && !n;
 					return o.a.createElement(E.a, {
 						"data-testid": `promoted-user-post-${t.id}`,
 						to: a ? Object(S.b)(t.permalink) : Object(k.a)(t.permalink, !1, r)
@@ -1376,7 +1376,7 @@
 						className: G.a.container
 					}, o.a.createElement(F, {
 						post: t
-					}), o.a.createElement(V, {
+					}), o.a.createElement(q, {
 						post: t
 					})))
 				})),
@@ -2131,13 +2131,13 @@
 				a = s("./src/reddit/models/Post/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const c = e => Object(r.c)(e, {
-					experimentName: o.kf,
+					experimentName: o.mf,
 					experimentEligibilitySelector: r.a
 				}),
-				d = (e, t) => (t === o.sf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(a.A)(e),
+				d = (e, t) => (t === o.uf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(a.A)(e),
 				l = Object(n.a)(i.G, c, (e, t) => d(e, t));
 			Object(n.a)((e, t) => t, c, (e, t) => d(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a.a7eb1b4466a626bc39df.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a.66c5f2456e378117b806.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoVault.08b7fe736b9733268ff6.js
-// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoVault.3e4d05009d6e2b86a682.js
+// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoVault"], {
 		"./src/reddit/actions/economics/claims/constants.ts": function(e, t, n) {
@@ -72,9 +72,9 @@
 			})), n.d(t, "v", (function() {
 				return C
 			})), n.d(t, "w", (function() {
-				return R
-			})), n.d(t, "x", (function() {
 				return g
+			})), n.d(t, "x", (function() {
+				return R
 			}));
 			const r = "GOVERNANCE__COMMUNITY_DETAILS_SUCCESS",
 				i = "GOVERNANCE__NEW_SUBREDDIT_SUGGESTED",
@@ -98,8 +98,8 @@
 				y = "GOVERNANCE__TRANSFER_SUCCESS",
 				h = "GOVERNANCE__WALLETS_FETCH_FAILURE",
 				C = "GOVERNANCE__WALLETS_FETCH_PENDING",
-				R = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
-				g = "GOVERNANCE__WALLET_REGISTRATION_MODAL_OPENED"
+				g = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
+				R = "GOVERNANCE__WALLET_REGISTRATION_MODAL_OPENED"
 		},
 		"./src/reddit/components/Governance/Token/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -180,8 +180,8 @@
 
 			function A(e) {
 				const t = Object(s.d)(),
-					n = Object(E.fb)(),
-					r = Object(s.e)(e => Object(E.r)(e, {
+					n = Object(E.gb)(),
+					r = Object(s.e)(e => Object(E.s)(e, {
 						pageLayer: n
 					})),
 					i = Object(s.e)(e => Object(p.b)(e, null == r ? void 0 : r.id)),
@@ -248,8 +248,8 @@
 			}
 			t.default = function(e) {
 				const t = Object(o.d)(),
-					n = Object(a.fb)(),
-					r = Object(o.e)(e => Object(a.r)(e, {
+					n = Object(a.gb)(),
+					r = Object(o.e)(e => Object(a.s)(e, {
 						pageLayer: n
 					})),
 					b = Object(o.e)(m.d.spBurnLinks),
@@ -656,8 +656,8 @@
 			};
 
 			function u() {
-				const e = Object(i.fb)(),
-					t = Object(r.e)(t => Object(i.r)(t, {
+				const e = Object(i.gb)(),
+					t = Object(r.e)(t => Object(i.s)(t, {
 						pageLayer: e
 					})),
 					n = Object(r.e)(e => d(e, null == t ? void 0 : t.id));
@@ -674,4 +674,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoVault.08b7fe736b9733268ff6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoVault.3e4d05009d6e2b86a682.js.map

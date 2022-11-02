@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.d5a6b75cd92e7d046e97.js
-// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.8ae3e626dd913f65ea5f.js
+// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -5837,14 +5837,14 @@
 					wallet: lt.d
 				}),
 				rs = Object(r.b)((e, t) => {
-					const s = Object(at.r)(e, t);
+					const s = Object(at.s)(e, t);
 					return ns(e, {
 						...t,
 						subreddit: s,
 						subredditId: (null == s ? void 0 : s.id) || void 0
 					})
 				}),
-				as = Object(at.u)(),
+				as = Object(at.v)(),
 				os = Object(u.c)(is);
 			var cs = Object(ot.a)("spSpecialMemberships", Object(nt.a)(as(rs(os)))),
 				ls = s("./src/reddit/components/Economics/SubredditPremium/CheckoutModal/Products/index.m.less"),
@@ -6941,11 +6941,11 @@
 					return s && s.amount || "0"
 				},
 				u = (e, t) => {
-					const s = Object(i.n)(e, t);
+					const s = Object(i.o)(e, t);
 					return s && e.subreddits.gov.releaseNotes[s] || n
 				},
 				p = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.d5a6b75cd92e7d046e97.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.8ae3e626dd913f65ea5f.js.map

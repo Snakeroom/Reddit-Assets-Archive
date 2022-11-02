@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationLogFilters.bdf60e0562bbab725aee.js
-// Retrieved at 11/1/2022, 12:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationLogFilters.98c7dc90309ea9e94527.js
+// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationLogFilters"], {
 		"./src/reddit/components/CCM/ModerationLog/Filters/ActionsDropdown/ActionsTreeFilter/ActionBranch/index.m.less": function(e, t, a) {
@@ -30,25 +30,25 @@
 		"./src/reddit/components/CCM/ModerationLog/Filters/ActionsDropdown/index.tsx": function(e, t, a) {
 			"use strict";
 			a.r(t);
-			var n = a("./node_modules/fbt/lib/FbtPublic.js"),
-				o = a("./node_modules/react/index.js"),
-				s = a.n(o),
+			var o = a("./node_modules/fbt/lib/FbtPublic.js"),
+				n = a("./node_modules/react/index.js"),
+				s = a.n(n),
 				r = a("./node_modules/react-redux/es/index.js"),
 				l = a("./src/lib/classNames/index.ts"),
 				c = a("./src/reddit/hooks/useTracking.ts"),
 				i = a("./src/higherOrderComponents/asTooltip.tsx"),
 				d = a("./src/reddit/constants/moderationLog.ts"),
 				m = a("./src/reddit/actions/tooltip.ts"),
-				u = a("./src/reddit/controls/Dropdown/index.tsx"),
-				p = a("./src/reddit/helpers/trackers/modLog.ts"),
+				p = a("./src/reddit/controls/Dropdown/index.tsx"),
+				u = a("./src/reddit/helpers/trackers/modLog.ts"),
 				b = a("./src/reddit/icons/fonts/Clear/index.tsx"),
 				C = a("./src/reddit/icons/fonts/DropdownTriangle/index.tsx"),
 				g = a("./src/reddit/selectors/tooltip.ts"),
 				x = (a("./node_modules/core-js/modules/web.dom.iterable.js"), a("./node_modules/lodash/flatten.js")),
 				h = a.n(x),
 				f = a("./node_modules/lodash/isEmpty.js"),
-				_ = a.n(f),
-				k = a("./src/reddit/selectors/moderationLog.ts"),
+				k = a.n(f),
+				_ = a("./src/reddit/selectors/moderationLog.ts"),
 				j = a("./src/reddit/components/CCM/ModerationLog/Filters/FilterCheckboxRow/index.tsx"),
 				O = a("./src/reddit/controls/Button/index.tsx"),
 				E = a("./src/reddit/controls/SearchBar/index.tsx"),
@@ -57,22 +57,22 @@
 				v = a("./src/reddit/controls/Checkbox/index.tsx"),
 				M = a("./src/reddit/components/CCM/ModerationLog/Filters/ActionsDropdown/ActionsTreeFilter/ActionCategoryRow/index.m.less"),
 				A = a.n(M);
-			var F = e => {
+			var D = e => {
 					let {
 						actionCategory: t,
 						className: a,
-						isHalfSelected: n,
-						onClick: o,
+						isHalfSelected: o,
+						onClick: n,
 						onToggle: r,
 						selected: c
 					} = e;
 					return s.a.createElement("div", {
 						className: Object(l.a)(a, A.a.row),
-						onClick: o ? () => o(t) : void 0
+						onClick: n ? () => n(t) : void 0
 					}, s.a.createElement(v.a, {
 						className: A.a.checkbox,
 						isCheckboxSelected: c,
-						isHalfCheckboxSelected: n,
+						isHalfCheckboxSelected: o,
 						toggleCheckbox: r ? () => r(t) : void 0
 					}), s.a.createElement(w.a, {
 						category: t
@@ -80,41 +80,41 @@
 						className: A.a.arrow
 					}))
 				},
-				y = a("./src/reddit/components/CCM/ModerationLog/Filters/ActionsDropdown/ActionsTreeFilter/ActionBranch/index.m.less"),
-				D = a.n(y);
+				F = a("./src/reddit/components/CCM/ModerationLog/Filters/ActionsDropdown/ActionsTreeFilter/ActionBranch/index.m.less"),
+				y = a.n(F);
 			var T = e => {
-					const [t, a] = Object(o.useState)(0 === e.selectedActions.length);
-					Object(o.useEffect)(() => {
+					const [t, a] = Object(n.useState)(0 === e.selectedActions.length);
+					Object(n.useEffect)(() => {
 						e.isAutoExpanded && a(!1)
 					}, [e.isAutoExpanded]);
-					const n = e.selectedActions.length,
-						r = n === e.actions.length,
-						l = !!n && n !== e.actions.length,
-						c = Object(o.useCallback)(t => {
+					const o = e.selectedActions.length,
+						r = o === e.actions.length,
+						l = !!o && o !== e.actions.length,
+						c = Object(n.useCallback)(t => {
 							r || e.selectedActions.includes(t) ? e.onChange({
 								actions: e.selectedActions.filter(e => e !== t)
 							}) : e.onChange({
 								actions: [...e.selectedActions, t]
 							})
 						}, [e, r]),
-						i = Object(o.useCallback)(() => {
+						i = Object(n.useCallback)(() => {
 							r || l ? e.onChange({
 								actions: []
 							}) : e.onChange({
 								actions: e.actions
 							})
 						}, [r, l, e]),
-						m = Object(o.useCallback)(() => {
+						m = Object(n.useCallback)(() => {
 							a(!t)
 						}, [t]);
-					return s.a.createElement(s.a.Fragment, null, s.a.createElement(F, {
+					return s.a.createElement(s.a.Fragment, null, s.a.createElement(D, {
 						actionCategory: e.actionCategory,
 						selected: r,
 						isHalfSelected: l,
 						onToggle: i,
 						onClick: m
 					}), !t && e.actions.map(t => s.a.createElement(j.a, {
-						className: D.a.actionRow,
+						className: y.a.actionRow,
 						key: `${e.actionCategory}_${t}`,
 						name: t,
 						title: d.b[t] ? d.b[t]() : t,
@@ -128,74 +128,74 @@
 			const B = e => h()(Object.keys(e).map(t => e[t]));
 			var I = e => {
 					const t = Object(c.a)(),
-						a = Object(r.e)(e => Object(k.b)(e)),
+						a = Object(r.e)(e => Object(_.b)(e)),
 						i = B(a),
-						m = (e => _()(e) ? {} : Object.keys(e).reduce((t, a) => ({
+						m = (e => k()(e) ? {} : Object.keys(e).reduce((t, a) => ({
 							...t,
 							...e[a].reduce((e, t) => ({
 								...e,
 								[t]: a
 							}), {})
 						}), {}))(a),
-						[u, b] = Object(o.useState)(e.actions ? e.actions.reduce((t, n) => {
-							const o = m[n];
+						[p, b] = Object(n.useState)(e.actions ? e.actions.reduce((t, o) => {
+							const n = m[o];
 							return {
 								...t,
-								[o]: e.actions.filter(e => a[o] && a[o].includes(e))
+								[n]: e.actions.filter(e => a[n] && a[n].includes(e))
 							}
 						}, {}) : {}),
-						C = B(u).length,
+						C = B(p).length,
 						g = !!C && C !== i.length,
 						x = C === i.length,
-						[h, f] = Object(o.useState)(""),
-						w = Object(o.useCallback)(e => {
-							e.target instanceof HTMLAnchorElement && t(Object(p.g)())
+						[h, f] = Object(n.useState)(""),
+						w = Object(n.useCallback)(e => {
+							e.target instanceof HTMLAnchorElement && t(Object(u.g)())
 						}, [t]),
-						v = Object(o.useCallback)((e, t) => {
-							if (u[e] && 0 === t.length) {
+						v = Object(n.useCallback)((e, t) => {
+							if (p[e] && 0 === t.length) {
 								const t = {
-									...u
+									...p
 								};
 								return delete t[e], void b(t)
 							}
 							const a = {
-								...u,
+								...p,
 								[e]: t
 							};
 							b(a)
-						}, [u]),
-						M = Object(o.useCallback)(e => {
+						}, [p]),
+						M = Object(n.useCallback)(e => {
 							b(x || g ? {} : a)
 						}, [x, g, a]),
-						A = Object(o.useCallback)(() => {
+						A = Object(n.useCallback)(() => {
 							e.onApply(x ? {
 								actions: void 0
 							} : {
-								actions: B(u)
+								actions: B(p)
 							}), e.onClose()
-						}, [e, x, u]);
-					if (_()(a)) return null;
-					const F = ((e, t) => {
+						}, [e, x, p]);
+					if (k()(a)) return null;
+					const D = ((e, t) => {
 							if (t) {
 								const a = t.toLowerCase();
-								return Object.keys(e).reduce((t, n) => {
-									const o = e[n].filter(e => {
+								return Object.keys(e).reduce((t, o) => {
+									const n = e[o].filter(e => {
 										const t = d.b[e];
 										return !!t && t().toString().toLowerCase().includes(a)
 									});
-									return o.length && (t[n] = o), t
+									return n.length && (t[o] = n), t
 								}, {})
 							}
 							return e
 						})(a, h),
-						y = (e => Object.keys(e).sort())(F);
+						F = (e => Object.keys(e).sort())(D);
 					return s.a.createElement("div", {
 						className: Object(l.a)(e.className, S.a.container)
 					}, s.a.createElement("header", {
 						className: S.a.header
 					}, s.a.createElement("h3", {
 						className: S.a.title
-					}, n.fbt._("Actions", null, {
+					}, o.fbt._("Actions", null, {
 						hk: "2VlmHY"
 					})), s.a.createElement(N.a, {
 						className: S.a.closeBtn,
@@ -207,7 +207,7 @@
 							const t = e.currentTarget.value;
 							f(t)
 						},
-						placeholder: n.fbt._("Search Actions", null, {
+						placeholder: o.fbt._("Search Actions", null, {
 							hk: "48XSyA"
 						}),
 						value: h
@@ -217,20 +217,20 @@
 						onClick: w
 					}, !h && s.a.createElement(j.a, {
 						className: S.a.selectAllRow,
-						name: n.fbt._("Select all", null, {
+						name: o.fbt._("Select all", null, {
 							hk: "3sUGlp"
 						}),
-						title: n.fbt._("Select all", null, {
+						title: o.fbt._("Select all", null, {
 							hk: "3sUGlp"
 						}),
 						selected: x,
 						isHalfSelected: g,
 						onToggle: M
-					}), y.map(e => s.a.createElement(T, {
+					}), F.map(e => s.a.createElement(T, {
 						key: e,
-						actions: F[e],
+						actions: D[e],
 						actionCategory: e,
-						selectedActions: u[e] ? u[e] : [],
+						selectedActions: p[e] ? p[e] : [],
 						isAutoExpanded: !!h,
 						onChange: t => v(e, t.actions)
 					}))), s.a.createElement("div", {
@@ -239,14 +239,14 @@
 						className: S.a.applyBtn,
 						role: "submit",
 						onClick: A
-					}, n.fbt._("Apply", null, {
+					}, o.fbt._("Apply", null, {
 						hk: "20mTH3"
 					}))))
 				},
 				R = a("./src/reddit/components/CCM/ModerationLog/Filters/index.m.less"),
-				P = a.n(R);
-			const H = Object(i.a)(u.a),
-				U = e => {
+				H = a.n(R);
+			const U = Object(i.a)(p.a),
+				P = e => {
 					e.nativeEvent.stopImmediatePropagation()
 				};
 			t.default = e => {
@@ -254,54 +254,54 @@
 					actions: t,
 					onApply: a
 				} = e;
-				const o = Object(c.a)(),
+				const n = Object(c.a)(),
 					i = Object(r.d)(),
-					u = () => i(Object(m.i)()),
+					p = () => i(Object(m.i)()),
 					x = Object(r.e)(e => Object(g.b)("mod-log-action-filter-dropdown")(e)),
 					h = t ? s.a.createElement("span", {
 						onClick: e => {
-							e.stopPropagation(), u(), a({
+							e.stopPropagation(), p(), a({
 								actions: void 0
 							})
 						}
 					}, s.a.createElement(b.a, {
-						className: P.a.clearBtn
+						className: H.a.clearBtn
 					})) : s.a.createElement(C.a, null);
 				return s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
-					className: P.a.container,
-					onClickCapture: U
+					className: H.a.container,
+					onClickCapture: P
 				}, s.a.createElement("button", {
 					"aria-expanded": x,
-					"aria-label": n.fbt._("Start typing to filter the mod actions or use up and down to select.", null, {
+					"aria-label": o.fbt._("Start typing to filter the mod actions or use up and down to select.", null, {
 						hk: "32A4KB"
 					}),
-					className: Object(l.a)(P.a.filter, {
-						[P.a.selected]: !!t
+					className: Object(l.a)(H.a.filter, {
+						[H.a.selected]: !!t
 					}),
 					id: "mod-log-action-filter-dropdown",
 					onClick: () => {
 						i(Object(m.h)({
 							tooltipId: "mod-log-action-filter-dropdown"
-						})), o(Object(p.a)())
+						})), n(Object(u.a)())
 					},
 					role: "navigation"
 				}, s.a.createElement("span", {
-					className: P.a.filterText
-				}, (e => e && 0 !== e.length ? 1 === e.length ? d.b[e[0]] ? d.b[e[0]]() : e[0] : n.fbt._("{actionCount} actions", [n.fbt._param("actionCount", e.length.toString())], {
+					className: H.a.filterText
+				}, (e => e && 0 !== e.length ? 1 === e.length ? d.b[e[0]] ? d.b[e[0]]() : e[0] : o.fbt._("{actionCount} actions", [o.fbt._param("actionCount", e.length.toString())], {
 					hk: "1DhjPC"
-				}) : n.fbt._("Actions", null, {
+				}) : o.fbt._("Actions", null, {
 					hk: "1s4OJD"
-				}))(t)), h), s.a.createElement(H, {
+				}))(t)), h), s.a.createElement(U, {
 					tooltipId: "mod-log-action-filter-dropdown",
 					isOpen: x,
-					className: P.a.dropdown
+					className: H.a.dropdown
 				}, s.a.createElement(I, {
-					className: P.a.dropdownContent,
+					className: H.a.dropdownContent,
 					actions: t,
 					onApply: e => {
-						a(e), o(Object(p.c)())
+						a(e), n(Object(u.c)())
 					},
-					onClose: u
+					onClose: p
 				}))))
 			}
 		},
@@ -319,17 +319,17 @@
 		"./src/reddit/components/CCM/ModerationLog/Filters/DateRangeDropdown/index.tsx": function(e, t, a) {
 			"use strict";
 			a.r(t);
-			var n = a("./node_modules/fbt/lib/FbtPublic.js"),
-				o = a("./node_modules/react/index.js"),
-				s = a.n(o),
+			var o = a("./node_modules/fbt/lib/FbtPublic.js"),
+				n = a("./node_modules/react/index.js"),
+				s = a.n(n),
 				r = a("./node_modules/react-redux/es/index.js"),
 				l = a("./src/lib/classNames/index.ts"),
 				c = a("./src/reddit/hooks/useTracking.ts"),
 				i = a("./src/higherOrderComponents/asTooltip.tsx"),
 				d = a("./src/reddit/actions/tooltip.ts"),
 				m = a("./src/reddit/selectors/tooltip.ts"),
-				u = a("./src/reddit/controls/Dropdown/index.tsx"),
-				p = a("./src/reddit/helpers/trackers/modLog.ts"),
+				p = a("./src/reddit/controls/Dropdown/index.tsx"),
+				u = a("./src/reddit/helpers/trackers/modLog.ts"),
 				b = a("./src/reddit/icons/fonts/Clear/index.tsx"),
 				C = a("./src/reddit/icons/fonts/DropdownTriangle/index.tsx"),
 				g = a("./src/reddit/controls/Button/index.tsx"),
@@ -338,34 +338,34 @@
 			const f = e => {
 				e.nativeEvent.stopImmediatePropagation()
 			};
-			var _ = e => {
-					const [t, a] = Object(o.useState)(e.startDate || ""), [r, l] = Object(o.useState)(e.endDate || ""), c = Object(o.useCallback)(e => {
+			var k = e => {
+					const [t, a] = Object(n.useState)(e.startDate || ""), [r, l] = Object(n.useState)(e.endDate || ""), c = Object(n.useCallback)(e => {
 						const {
 							value: t
-						} = e.currentTarget, n = new Date(t);
-						r && n.valueOf() > new Date(r).valueOf() && l(t), a(t)
-					}, [r]), i = Object(o.useCallback)(e => {
+						} = e.currentTarget, o = new Date(t);
+						r && o.valueOf() > new Date(r).valueOf() && l(t), a(t)
+					}, [r]), i = Object(n.useCallback)(e => {
 						const {
-							value: n
-						} = e.currentTarget, o = new Date(n);
-						t && o.valueOf() < new Date(t).valueOf() && a(n), l(n)
+							value: o
+						} = e.currentTarget, n = new Date(o);
+						t && n.valueOf() < new Date(t).valueOf() && a(o), l(o)
 					}, [t]), {
 						onApply: d
-					} = e, m = Object(o.useCallback)(() => {
+					} = e, m = Object(n.useCallback)(() => {
 						d({
 							startDate: t || void 0,
 							endDate: r || void 0
 						})
 					}, [t, r, d]), {
-						className: u
+						className: p
 					} = e;
 					return s.a.createElement("div", {
 						role: "menu",
-						className: u,
+						className: p,
 						onClickCapture: f
 					}, s.a.createElement("h5", {
 						className: h.a.title
-					}, n.fbt._("Select a time frame", null, {
+					}, o.fbt._("Select a time frame", null, {
 						hk: "3fQ2m8"
 					})), s.a.createElement("div", {
 						className: h.a.rangeContainer
@@ -373,7 +373,7 @@
 						className: h.a.range
 					}, s.a.createElement("h6", {
 						className: h.a.rangeTitle
-					}, n.fbt._("From", null, {
+					}, o.fbt._("From", null, {
 						hk: "1JlV6N"
 					})), s.a.createElement("input", {
 						className: h.a.rangeInput,
@@ -386,7 +386,7 @@
 						className: h.a.range
 					}, s.a.createElement("h6", {
 						className: h.a.rangeTitle
-					}, n.fbt._("To", null, {
+					}, o.fbt._("To", null, {
 						hk: "22MrPI"
 					})), s.a.createElement("input", {
 						className: h.a.rangeInput,
@@ -401,7 +401,7 @@
 						className: h.a.button,
 						kind: g.b.Button,
 						priority: g.c.Secondary,
-						text: n.fbt._("Cancel", null, {
+						text: o.fbt._("Cancel", null, {
 							hk: "370pdF"
 						}),
 						onClick: e.onClose
@@ -410,15 +410,15 @@
 						role: "submit",
 						kind: g.b.Button,
 						priority: g.c.Primary,
-						text: n.fbt._("Apply", null, {
+						text: o.fbt._("Apply", null, {
 							hk: "2yCpXC"
 						}),
 						onClick: m
 					})))
 				},
-				k = a("./src/reddit/components/CCM/ModerationLog/Filters/index.m.less"),
-				j = a.n(k);
-			const O = Object(i.a)(u.a),
+				_ = a("./src/reddit/components/CCM/ModerationLog/Filters/index.m.less"),
+				j = a.n(_);
+			const O = Object(i.a)(p.a),
 				E = e => {
 					e.nativeEvent.stopImmediatePropagation()
 				};
@@ -426,9 +426,9 @@
 				let {
 					startDate: t,
 					endDate: a,
-					maxDate: o,
+					maxDate: n,
 					minDate: i,
-					onApply: u,
+					onApply: p,
 					shouldShowDefaultTitle: g
 				} = e;
 				const x = Object(c.a)(),
@@ -436,10 +436,10 @@
 					f = () => {
 						h(Object(d.i)())
 					},
-					k = Object(r.e)(e => Object(m.b)("mod-log-date-filter-dropdown")(e)),
+					_ = Object(r.e)(e => Object(m.b)("mod-log-date-filter-dropdown")(e)),
 					N = g ? s.a.createElement(C.a, null) : s.a.createElement("span", {
 						onClick: e => {
-							e.stopPropagation(), f(), u({
+							e.stopPropagation(), f(), p({
 								startDate: void 0,
 								endDate: void 0
 							})
@@ -451,8 +451,8 @@
 					className: j.a.container,
 					onClickCapture: E
 				}, s.a.createElement("button", {
-					"aria-expanded": k,
-					"aria-label": n.fbt._("Select dates from and to and apply.", null, {
+					"aria-expanded": _,
+					"aria-label": o.fbt._("Select dates from and to and apply.", null, {
 						hk: "2O0soE"
 					}),
 					className: Object(l.a)(j.a.filter, {
@@ -462,35 +462,35 @@
 					onClick: () => {
 						h(Object(d.h)({
 							tooltipId: "mod-log-date-filter-dropdown"
-						})), x(Object(p.d)())
+						})), x(Object(u.d)())
 					},
 					role: "navigation"
 				}, s.a.createElement("span", {
 					className: j.a.filterText
 				}, ((e, t, a) => {
-					const o = new Date(`${e} 00:00:00`).toLocaleDateString(),
+					const n = new Date(`${e} 00:00:00`).toLocaleDateString(),
 						s = new Date(`${t} 00:00:00`).toLocaleDateString();
-					return "Invalid Date" === o || "Invalid Date" === s || a ? n.fbt._("Time frame", null, {
+					return "Invalid Date" === n || "Invalid Date" === s || a ? o.fbt._("Time frame", null, {
 						hk: "h4sav"
-					}) : s === o ? o : o && s ? `${o}–${s}` : o ? n.fbt._("from {date from}", [n.fbt._param("date from", o)], {
+					}) : s === n ? n : n && s ? `${n}–${s}` : n ? o.fbt._("from {date from}", [o.fbt._param("date from", n)], {
 						hk: "PMhkT"
-					}) : s ? n.fbt._("to {date to}", [n.fbt._param("date to", s)], {
+					}) : s ? o.fbt._("to {date to}", [o.fbt._param("date to", s)], {
 						hk: "2rh6Yj"
-					}) : n.fbt._("Time frame", null, {
+					}) : o.fbt._("Time frame", null, {
 						hk: "1Mv1rs"
 					})
 				})(t, a, g)), N), s.a.createElement(O, {
 					tooltipId: "mod-log-date-filter-dropdown",
-					isOpen: k,
+					isOpen: _,
 					className: j.a.dropdown
-				}, s.a.createElement(_, {
+				}, s.a.createElement(k, {
 					className: Object(l.a)(j.a.dropdownContent, j.a.dateDropdownContent),
 					startDate: t,
 					endDate: a,
-					maxDate: o,
+					maxDate: n,
 					minDate: i,
 					onApply: e => {
-						u(e), x(Object(p.e)())
+						p(e), x(Object(u.e)())
 					},
 					onClose: f
 				})))
@@ -505,8 +505,8 @@
 		},
 		"./src/reddit/components/CCM/ModerationLog/Filters/FilterCheckboxRow/index.tsx": function(e, t, a) {
 			"use strict";
-			var n = a("./node_modules/react/index.js"),
-				o = a.n(n),
+			var o = a("./node_modules/react/index.js"),
+				n = a.n(o),
 				s = a("./src/lib/classNames/index.ts"),
 				r = a("./src/reddit/components/UserIcon/index.tsx"),
 				l = a("./src/reddit/controls/Checkbox/index.tsx"),
@@ -516,26 +516,26 @@
 				let {
 					className: t,
 					iconUrl: a,
-					isHalfSelected: n,
+					isHalfSelected: o,
 					name: c,
 					onToggle: d,
 					selected: m,
-					title: u
+					title: p
 				} = e;
-				return o.a.createElement("div", {
+				return n.a.createElement("div", {
 					className: Object(s.a)(t, i.a.row),
 					onClick: d ? () => d(c) : void 0
-				}, o.a.createElement(l.a, {
+				}, n.a.createElement(l.a, {
 					className: i.a.checkbox,
 					isCheckboxSelected: m,
-					isHalfCheckboxSelected: n
-				}), a && o.a.createElement("div", {
+					isHalfCheckboxSelected: o
+				}), a && n.a.createElement("div", {
 					className: i.a.iconWrapper
-				}, o.a.createElement(r.a, {
+				}, n.a.createElement(r.a, {
 					iconUrl: a,
 					userName: c,
 					isNSFW: !1
-				})), u)
+				})), p)
 			}
 		},
 		"./src/reddit/components/CCM/ModerationLog/Filters/ModeratorsDropdown/ModeratorsFilter/index.m.less": function(e, t, a) {
@@ -554,25 +554,25 @@
 		"./src/reddit/components/CCM/ModerationLog/Filters/ModeratorsDropdown/index.tsx": function(e, t, a) {
 			"use strict";
 			a.r(t);
-			var n = a("./node_modules/fbt/lib/FbtPublic.js"),
-				o = a("./node_modules/react/index.js"),
-				s = a.n(o),
+			var o = a("./node_modules/fbt/lib/FbtPublic.js"),
+				n = a("./node_modules/react/index.js"),
+				s = a.n(n),
 				r = a("./node_modules/react-redux/es/index.js"),
 				l = a("./src/lib/classNames/index.ts"),
 				c = a("./src/reddit/hooks/useTracking.ts"),
 				i = a("./src/higherOrderComponents/asTooltip.tsx"),
 				d = a("./src/reddit/actions/tooltip.ts"),
 				m = a("./src/reddit/controls/Dropdown/index.tsx"),
-				u = a("./src/reddit/helpers/trackers/modLog.ts"),
-				p = a("./src/reddit/icons/fonts/Clear/index.tsx"),
+				p = a("./src/reddit/helpers/trackers/modLog.ts"),
+				u = a("./src/reddit/icons/fonts/Clear/index.tsx"),
 				b = a("./src/reddit/icons/fonts/DropdownTriangle/index.tsx"),
 				C = a("./src/reddit/selectors/tooltip.ts"),
 				g = (a("./node_modules/core-js/modules/web.dom.iterable.js"), a("./src/lib/constants/index.ts")),
 				x = a("./src/reddit/selectors/moderationLog.ts"),
 				h = a("./src/reddit/components/CCM/ModerationLog/Filters/FilterCheckboxRow/index.tsx"),
 				f = a("./src/reddit/controls/Button/index.tsx"),
-				_ = a("./src/reddit/controls/SearchBar/index.tsx"),
-				k = a("./src/reddit/icons/svgs/Close/index.tsx"),
+				k = a("./src/reddit/controls/SearchBar/index.tsx"),
+				_ = a("./src/reddit/icons/svgs/Close/index.tsx"),
 				j = a("./src/reddit/components/CCM/ModerationLog/Filters/ModeratorsDropdown/ModeratorsFilter/index.m.less"),
 				O = a.n(j);
 			var E = e => {
@@ -585,19 +585,19 @@
 					} = e;
 					const m = Object(r.e)(e => Object(x.a)(e, d).sort((e, t) => {
 							const a = e.name.toUpperCase(),
-								n = t.name.toUpperCase();
-							return a < n ? -1 : a > n ? 1 : 0
+								o = t.name.toUpperCase();
+							return a < o ? -1 : a > o ? 1 : 0
 						})),
-						u = e => {
+						p = e => {
 							const t = [{
 								name: "a",
-								title: `${n.fbt._("Admins",null,{hk:"4mKRNI"})}`
+								title: `${o.fbt._("Admins",null,{hk:"4mKRNI"})}`
 							}, {
 								name: "reddit",
-								title: `${n.fbt._("Reddit",null,{hk:"2PddN0"})}`
+								title: `${o.fbt._("Reddit",null,{hk:"2PddN0"})}`
 							}, {
 								name: g.m,
-								title: `${n.fbt._("AutoModerator",null,{hk:"4wxc1W"})}`
+								title: `${o.fbt._("AutoModerator",null,{hk:"4wxc1W"})}`
 							}, ...m.map(e => ({
 								name: e.name,
 								title: `u/${e.name}`,
@@ -609,16 +609,16 @@
 							}
 							return t
 						},
-						[p, b] = Object(o.useState)(""),
-						[C, j] = Object(o.useState)(a ? a.reduce((e, t) => ({
+						[u, b] = Object(n.useState)(""),
+						[C, j] = Object(n.useState)(a ? a.reduce((e, t) => ({
 							...e,
 							[t]: !0
 						}), {}) : {}),
-						E = u(""),
+						E = p(""),
 						N = Object.keys(C).length,
 						w = !!N && N !== E.length,
 						v = N === E.length,
-						M = Object(o.useCallback)(e => {
+						M = Object(n.useCallback)(e => {
 							if (C[e]) {
 								const t = {
 									...C
@@ -630,10 +630,10 @@
 								[e]: !0
 							})
 						}, [C]),
-						A = Object(o.useCallback)(e => {
+						A = Object(n.useCallback)(e => {
 							j(v || w ? {} : E.reduce((e, t) => (e[t.name] = !0, e), {}))
 						}, [v, w, E]),
-						F = Object(o.useCallback)(() => {
+						D = Object(n.useCallback)(() => {
 							const e = Object.keys(C);
 							c(v ? {
 								moderatorNames: []
@@ -641,53 +641,53 @@
 								moderatorNames: e
 							}), i()
 						}, [C, c, i, v]),
-						y = u(p);
+						F = p(u);
 					return s.a.createElement("div", {
 						className: Object(l.a)(t, O.a.container)
 					}, s.a.createElement("header", {
 						className: O.a.header
 					}, s.a.createElement("h3", {
 						className: O.a.title
-					}, n.fbt._("Moderators", null, {
+					}, o.fbt._("Moderators", null, {
 						hk: "2mrndF"
-					})), s.a.createElement(k.a, {
+					})), s.a.createElement(_.a, {
 						className: O.a.closeBtn,
 						onClick: i
-					})), s.a.createElement(_.a, {
+					})), s.a.createElement(k.a, {
 						className: O.a.searchBar,
 						autoFocus: !0,
 						onTextChange: e => {
 							const t = e.currentTarget.value;
 							b(t)
 						},
-						placeholder: n.fbt._("Search Moderators", null, {
+						placeholder: o.fbt._("Search Moderators", null, {
 							hk: "1MQPef"
 						}),
-						value: p
+						value: u
 					}), s.a.createElement("div", {
 						role: "menu",
 						className: O.a.list
-					}, !p && s.a.createElement(h.a, {
+					}, !u && s.a.createElement(h.a, {
 						className: O.a.selectAllRow,
-						name: n.fbt._("Select all", null, {
+						name: o.fbt._("Select all", null, {
 							hk: "UVcST"
 						}),
-						title: n.fbt._("Select all", null, {
+						title: o.fbt._("Select all", null, {
 							hk: "UVcST"
 						}),
 						selected: v,
 						isHalfSelected: w,
 						onToggle: A
-					}), y.map(e => {
+					}), F.map(e => {
 						let {
 							name: t,
 							iconUrl: a,
-							title: n
+							title: o
 						} = e;
 						return s.a.createElement(h.a, {
-							key: `${n}_${!!C[t]}`,
+							key: `${o}_${!!C[t]}`,
 							name: t,
-							title: n,
+							title: o,
 							iconUrl: a,
 							selected: !!C[t],
 							isHalfSelected: !1,
@@ -698,8 +698,8 @@
 					}, s.a.createElement(f.t, {
 						className: O.a.applyBtn,
 						role: "submit",
-						onClick: F
-					}, n.fbt._("Apply", null, {
+						onClick: D
+					}, o.fbt._("Apply", null, {
 						hk: "20mTH3"
 					}))))
 				},
@@ -713,7 +713,7 @@
 				let {
 					moderatorNames: t,
 					subredditId: a,
-					onApply: o
+					onApply: n
 				} = e;
 				const i = Object(c.a)(),
 					m = Object(r.d)(),
@@ -721,11 +721,11 @@
 					x = Object(r.e)(e => Object(C.b)("mod-log-moderator-filter-dropdown")(e)),
 					h = t ? s.a.createElement("span", {
 						onClick: e => {
-							e.stopPropagation(), g(), o({
+							e.stopPropagation(), g(), n({
 								moderatorNames: void 0
 							})
 						}
-					}, s.a.createElement(p.a, {
+					}, s.a.createElement(u.a, {
 						className: w.a.clearBtn
 					})) : s.a.createElement(b.a, null);
 				return s.a.createElement("div", {
@@ -733,7 +733,7 @@
 					onClickCapture: M
 				}, s.a.createElement("button", {
 					"aria-expanded": x,
-					"aria-label": n.fbt._("Start typing to filter moderators or use up and down to select.", null, {
+					"aria-label": o.fbt._("Start typing to filter moderators or use up and down to select.", null, {
 						hk: "4ff0MW"
 					}),
 					className: Object(l.a)(w.a.filter, {
@@ -743,16 +743,16 @@
 					onClick: () => {
 						m(Object(d.h)({
 							tooltipId: "mod-log-moderator-filter-dropdown"
-						})), i(Object(u.f)())
+						})), i(Object(p.f)())
 					},
 					role: "navigation"
 				}, s.a.createElement("span", {
 					className: w.a.filterText
-				}, (e => e && 0 !== e.length ? 1 === e.length ? "a" === e[0] ? n.fbt._("Admins", null, {
+				}, (e => e && 0 !== e.length ? 1 === e.length ? "a" === e[0] ? o.fbt._("Admins", null, {
 					hk: "1qJDMA"
-				}) : e[0] : n.fbt._("{modCount} moderators", [n.fbt._param("modCount", e.length.toString())], {
+				}) : e[0] : o.fbt._("{modCount} moderators", [o.fbt._param("modCount", e.length.toString())], {
 					hk: "302l1I"
-				}) : n.fbt._("Moderator", null, {
+				}) : o.fbt._("Moderator", null, {
 					hk: "27CDKl"
 				}))(t)), h), s.a.createElement(v, {
 					tooltipId: "mod-log-moderator-filter-dropdown",
@@ -762,7 +762,7 @@
 					className: w.a.dropdownContent,
 					moderatorNames: t,
 					onApply: e => {
-						o(e), i(Object(u.h)())
+						n(e), i(Object(p.h)())
 					},
 					onClose: g,
 					subredditId: a
@@ -783,25 +783,25 @@
 		"./src/reddit/components/CCM/ModerationLog/Filters/UsernameDropdown/index.tsx": function(e, t, a) {
 			"use strict";
 			a.r(t);
-			var n = a("./node_modules/fbt/lib/FbtPublic.js"),
-				o = a("./node_modules/react/index.js"),
-				s = a.n(o),
+			var o = a("./node_modules/fbt/lib/FbtPublic.js"),
+				n = a("./node_modules/react/index.js"),
+				s = a.n(n),
 				r = a("./node_modules/react-redux/es/index.js"),
 				l = a("./src/lib/classNames/index.ts"),
 				c = a("./src/reddit/hooks/useTracking.ts"),
 				i = a("./src/reddit/helpers/name/index.ts"),
 				d = a("./src/higherOrderComponents/asTooltip.tsx"),
 				m = a("./src/reddit/actions/tooltip.ts"),
-				u = a("./src/reddit/controls/Dropdown/index.tsx"),
-				p = a("./src/reddit/helpers/trackers/modLog.ts"),
+				p = a("./src/reddit/controls/Dropdown/index.tsx"),
+				u = a("./src/reddit/helpers/trackers/modLog.ts"),
 				b = a("./src/reddit/icons/fonts/Clear/index.tsx"),
 				C = a("./src/reddit/icons/fonts/DropdownTriangle/index.tsx"),
 				g = a("./src/reddit/selectors/tooltip.ts"),
 				x = a("./src/reddit/hooks/useGqlContext.ts"),
 				h = a("./src/reddit/constants/keycodes.ts"),
 				f = a("./src/reddit/endpoints/redditor/index.ts"),
-				_ = a("./src/reddit/controls/Button/index.tsx"),
-				k = a("./src/reddit/icons/svgs/Close/index.tsx"),
+				k = a("./src/reddit/controls/Button/index.tsx"),
+				_ = a("./src/reddit/icons/svgs/Close/index.tsx"),
 				j = a("./src/reddit/components/CCM/ModerationLog/Filters/UsernameDropdown/UsernameFilter/index.m.less"),
 				O = a.n(j);
 			var E = e => {
@@ -811,20 +811,20 @@
 						onApply: r,
 						onClose: c
 					} = e;
-					const d = Object(o.useRef)(null),
+					const d = Object(n.useRef)(null),
 						m = Object(x.a)(),
-						u = Object(o.useCallback)(async () => {
+						p = Object(n.useCallback)(async () => {
 							var e;
 							const t = (null === (e = d.current) || void 0 === e ? void 0 : e.value) || void 0;
 							if (!t) return;
 							c();
 							const a = Object(i.j)(t),
-								n = await Object(f.a)(m(), {
+								o = await Object(f.a)(m(), {
 									name: a
 								});
-							r(n ? {
+							r(o ? {
 								userName: a,
-								userId: n
+								userId: o
 							} : {
 								userName: a,
 								userId: "no_id"
@@ -836,9 +836,9 @@
 						className: O.a.header
 					}, s.a.createElement("h3", {
 						className: O.a.title
-					}, n.fbt._("Username", null, {
+					}, o.fbt._("Username", null, {
 						hk: "lucEB"
-					})), s.a.createElement(k.a, {
+					})), s.a.createElement(_.a, {
 						className: O.a.closeBtn,
 						onClick: c
 					})), s.a.createElement("input", {
@@ -846,9 +846,9 @@
 						autoFocus: !0,
 						type: "text",
 						onKeyPress: e => {
-							e.key !== h.b.Enter ? e.key === h.b.Escape && c() : u()
+							e.key !== h.b.Enter ? e.key === h.b.Escape && c() : p()
 						},
-						placeholder: n.fbt._("Enter exact username", null, {
+						placeholder: o.fbt._("Enter exact username", null, {
 							hk: "2VEfHB"
 						}),
 						ref: d,
@@ -856,17 +856,17 @@
 						maxLength: 22
 					}), s.a.createElement("div", {
 						className: O.a.bottom
-					}, s.a.createElement(_.t, {
+					}, s.a.createElement(k.t, {
 						className: O.a.applyBtn,
 						role: "submit",
-						onClick: u
-					}, n.fbt._("Apply", null, {
+						onClick: p
+					}, o.fbt._("Apply", null, {
 						hk: "20mTH3"
 					}))))
 				},
 				N = a("./src/reddit/components/CCM/ModerationLog/Filters/index.m.less"),
 				w = a.n(N);
-			const v = Object(d.a)(u.a),
+			const v = Object(d.a)(p.a),
 				M = e => {
 					e.nativeEvent.stopImmediatePropagation()
 				};
@@ -875,13 +875,13 @@
 					userName: t,
 					onApply: a
 				} = e;
-				const o = Object(c.a)(),
+				const n = Object(c.a)(),
 					d = Object(r.d)(),
-					u = () => d(Object(m.i)()),
+					p = () => d(Object(m.i)()),
 					x = Object(r.e)(e => Object(g.b)("mod-log-username-filter-dropdown")(e)),
 					h = t ? s.a.createElement("span", {
 						onClick: e => {
-							e.stopPropagation(), u(), a({
+							e.stopPropagation(), p(), a({
 								userName: void 0,
 								userId: void 0
 							})
@@ -894,7 +894,7 @@
 					onClickCapture: M
 				}, s.a.createElement("button", {
 					"aria-expanded": x,
-					"aria-label": n.fbt._("Start typing to filter user name.", null, {
+					"aria-label": o.fbt._("Start typing to filter user name.", null, {
 						hk: "TlFcF"
 					}),
 					className: Object(l.a)(w.a.filter, {
@@ -904,12 +904,12 @@
 					onClick: () => {
 						d(Object(m.h)({
 							tooltipId: "mod-log-username-filter-dropdown"
-						})), o(Object(p.o)())
+						})), n(Object(u.o)())
 					},
 					role: "navigation"
 				}, s.a.createElement("span", {
 					className: w.a.filterText
-				}, (e => e ? Object(i.e)(e) : n.fbt._("Username", null, {
+				}, (e => e ? Object(i.e)(e) : o.fbt._("Username", null, {
 					hk: "11kann"
 				}))(t)), h), s.a.createElement(v, {
 					tooltipId: "mod-log-username-filter-dropdown",
@@ -919,9 +919,9 @@
 					className: w.a.dropdownContent,
 					userName: t,
 					onApply: e => {
-						a(e), o(Object(p.p)())
+						a(e), n(Object(u.p)())
 					},
-					onClose: u
+					onClose: p
 				}))))
 			}
 		},
@@ -939,55 +939,16 @@
 				clearBtn: "_209BGF40WyOUdhK_u4UyTR"
 			}
 		},
-		"./src/reddit/controls/SearchBar/index.m.less": function(e, t, a) {
-			e.exports = {
-				searchContainer: "_13yLxNALfY3_F48PYybgUr",
-				search: "RxQA71ktKLBiPThTT7ita",
-				mRightAlignedIcon: "_1NR83qzzPFX9KcVm-fxGFg",
-				searchIconContainer: "_1IUrembT3LfQzzy388S8eF",
-				mClickable: "_1K9n38-jQENV0_njgPIo_x",
-				mRightAligned: "_1fLhMe5y6XbNg-lgHQrh5e"
-			}
-		},
-		"./src/reddit/controls/SearchBar/index.tsx": function(e, t, a) {
-			"use strict";
-			var n = a("./node_modules/react/index.js"),
-				o = a.n(n),
-				s = a("./src/lib/classNames/index.ts"),
-				r = a("./src/reddit/icons/svgs/Search/index.tsx"),
-				l = a("./src/reddit/controls/SearchBar/index.m.less"),
-				c = a.n(l);
-			t.a = e => o.a.createElement("div", {
-				className: Object(s.a)(c.a.searchContainer, e.className)
-			}, o.a.createElement("input", {
-				className: Object(s.a)(c.a.search, {
-					[c.a.mRightAlignedIcon]: e.rightAlignedIcon
-				}),
-				autoFocus: e.autoFocus,
-				type: "text",
-				onChange: e.onTextChange,
-				onKeyPress: e.onKeyPress,
-				placeholder: e.placeholder,
-				ref: e.innerRef,
-				value: e.value
-			}), o.a.createElement("div", {
-				className: Object(s.a)(c.a.searchIconContainer, {
-					[c.a.mClickable]: !!e.onSearch,
-					[c.a.mRightAligned]: e.rightAlignedIcon
-				}),
-				onClick: e.onSearch
-			}, o.a.createElement(r.a, null)))
-		},
 		"./src/reddit/icons/fonts/Clear/index.tsx": function(e, t, a) {
 			"use strict";
-			var n = a("./node_modules/react/index.js"),
-				o = a.n(n),
+			var o = a("./node_modules/react/index.js"),
+				n = a.n(o),
 				s = a("./src/lib/classNames/index.ts"),
 				r = a("./src/reddit/icons/fonts/helpers.tsx");
-			t.a = e => o.a.createElement("i", {
+			t.a = e => n.a.createElement("i", {
 				className: Object(s.a)(Object(r.b)("clear", e.isFilled), e.className)
 			})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationLogFilters.bdf60e0562bbab725aee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationLogFilters.98c7dc90309ea9e94527.js.map

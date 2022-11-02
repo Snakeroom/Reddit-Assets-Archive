@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.6d73fef5c1c2954b39e9.js
-// Retrieved at 11/2/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.5e3a68f26cd6badef244.js
+// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2486,7 +2486,7 @@
 				y = n("./src/reddit/components/Comments/Comment/ModToolsFlatlist/RestrictedButton.tsx"),
 				S = n("./src/reddit/components/Comments/Comment/ModToolsFlatlist/index.m.less"),
 				w = n.n(S);
-			const I = Object(h.u)(),
+			const I = Object(h.v)(),
 				M = e => `Distinguish--Dropdown--${e}`,
 				N = Object(a.c)({
 					currentUser: O.l,
@@ -2508,11 +2508,11 @@
 						const {
 							comment: n
 						} = t;
-						return Object(h.h)(e, t) || Object(v.n)(e, {
+						return Object(h.i)(e, t) || Object(v.n)(e, {
 							subredditId: n.subredditId
 						})
 					},
-					modModeEnabled: h.V
+					modModeEnabled: h.W
 				}),
 				T = Object(i.b)(N, (e, t) => {
 					let {
@@ -6461,12 +6461,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case h.Zf.SmIcon:
+						case h.bg.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case h.Zf.SmIconHc:
+						case h.bg.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -6536,9 +6536,9 @@
 				C = n.n(j);
 			const {
 				fbt: y
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), S = Object(m.u)(), w = Object(o.b)(() => Object(i.c)({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), S = Object(m.v)(), w = Object(o.b)(() => Object(i.c)({
 				forceRedditStyle: (e, t) => {
-					const n = Object(m.n)(e, t) || void 0,
+					const n = Object(m.o)(e, t) || void 0,
 						s = t.redditStyle || Object(f.l)(e, {
 							subredditId: n
 						}),
@@ -6546,7 +6546,7 @@
 					return s || r
 				},
 				nigtmode: x.eb,
-				subredditId: m.n,
+				subredditId: m.o,
 				topPostVariant: h.d
 			}));
 			class I extends r.a.Component {
@@ -7028,7 +7028,7 @@
 					renderingObjectInfo: t,
 					pageLayer: n
 				} = e;
-				if (t && (Object(r.b)(t) || Object(o.b)(t))) return Object(r.b)(t) ? i.SourceElement.Comment : Object(s.x)(n) ? i.SourceElement.PostDetail : Object(s.I)(n) ? i.SourceElement.ListingPostDetail : void 0
+				if (t && (Object(r.b)(t) || Object(o.b)(t))) return Object(r.b)(t) ? i.SourceElement.Comment : Object(s.y)(n) ? i.SourceElement.PostDetail : Object(s.J)(n) ? i.SourceElement.ListingPostDetail : void 0
 			}
 		},
 		"./src/reddit/helpers/trackers/subredditMentions.ts": function(e, t, n) {
@@ -7953,7 +7953,7 @@
 			}, C.fbt._("Automoderator Config", null, {
 				hk: "2GBjtX"
 			})))), d.a.createElement(F.a, null, d.a.createElement(J, null)));
-			const K = Object(g.u)(),
+			const K = Object(g.v)(),
 				z = Object(l.c)({
 					queryParams: (e, t) => {
 						let {
@@ -7969,7 +7969,7 @@
 						} = t;
 						return r()([...Object(m.a)(n.search)])
 					},
-					layout: g.T,
+					layout: g.U,
 					isModerator: e => Object(k.o)(e, {}).length > 0,
 					isRealtimeMQUpdatesExperimentEnabled: E.a,
 					queryVariables: Object(u.a)(e => {
@@ -7985,7 +7985,7 @@
 						}))
 					})
 				}),
-				Y = Object(l.a)(z, g.T, k.o, (e, t) => {
+				Y = Object(l.a)(z, g.U, k.o, (e, t) => {
 					let {
 						match: n
 					} = t;
@@ -8142,8 +8142,8 @@
 				i = n("./src/reddit/selectors/experiments/modqueueActionBarUXImprovements.ts");
 			const a = e => Object(i.a)(e) && Object(r.c)(e, {
 				experimentEligibilitySelector: o.R,
-				experimentName: s.Ec
-			}) === s.Sd
+				experimentName: s.Fc
+			}) === s.Ud
 		},
 		"./src/reddit/selectors/subredditMention.ts": function(e, t, n) {
 			"use strict";
@@ -8168,12 +8168,12 @@
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Tf
+						experimentName: s.Vf
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.Zf.SmIcon || t === s.Zf.SmIconHc
+					return t === s.bg.SmIcon || t === s.bg.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -8211,4 +8211,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.6d73fef5c1c2954b39e9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.5e3a68f26cd6badef244.js.map

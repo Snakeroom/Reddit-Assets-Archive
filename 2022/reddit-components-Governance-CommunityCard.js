@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.46ba40596b625c783f8d.js
-// Retrieved at 11/2/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.d275b784d474fdef86fd.js
+// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -463,8 +463,8 @@
 				D = n("./src/reddit/icons/svgs/Settings/index.tsx"),
 				U = n("./src/reddit/models/Toast/index.ts"),
 				B = n("./src/reddit/selectors/tooltip.ts"),
-				V = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/BlockchainWalletInfo/index.m.less"),
-				F = n.n(V);
+				F = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/BlockchainWalletInfo/index.m.less"),
+				V = n.n(F);
 			const W = Object(w.a)(M.a),
 				$ = "BlockchainWalletInfo--SettingsMenu";
 			class q extends a.a.PureComponent {
@@ -485,16 +485,16 @@
 						publicAddress: o
 					} = this.props;
 					return r && o ? a.a.createElement("div", {
-						className: F.a.publicAddressSection
+						className: V.a.publicAddressSection
 					}, a.a.createElement("div", {
-						className: F.a.publicAddress,
+						className: V.a.publicAddress,
 						title: o
 					}, "publicAddress"), a.a.createElement("div", {
-						className: F.a.yourWalletAddress
+						className: V.a.yourWalletAddress
 					}, s.fbt._("Your Wallet Address", null, {
 						hk: "3mvAs1"
 					}), t && a.a.createElement("button", {
-						className: F.a.settingsButton,
+						className: V.a.settingsButton,
 						title: s.fbt._("Wallet address settings", null, {
 							hk: "3AlpJV"
 						}),
@@ -502,7 +502,7 @@
 						onClick: n,
 						id: $
 					}, a.a.createElement(D.a, {
-						className: F.a.settingsIcon
+						className: V.a.settingsIcon
 					})), t && a.a.createElement(W, {
 						tooltipId: $,
 						isOpen: e,
@@ -776,7 +776,7 @@
 					onFetchMeData: () => e(Object(v.b)()),
 					onOpenLoginModal: () => e(Object(C.openLoginModal)()),
 					onOpenRegistrationModal: () => e(Object(E.g)())
-				}))(Object(O.u)()(de)),
+				}))(Object(O.v)()(de)),
 				be = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./node_modules/react-router-dom/esm/react-router-dom.js")),
 				pe = n("./src/lib/permalinkToOverlayLocation/index.ts"),
 				fe = n("./src/reddit/actions/subreddit.ts"),
@@ -796,13 +796,13 @@
 			const Oe = Object(b.c)({
 				proposals: (e, t) => Object.keys(e.polls.models).map(t => e.polls.models[t]).filter(e => e.subredditId === t.subredditId).sort((e, t) => e.createdAt > t.createdAt ? -1 : e.createdAt < t.createdAt ? 1 : 0).map(t => e.posts.models[t.postId]).filter(Boolean).slice(0, 5)
 			});
-			var ge = Object(O.u)()(Object(i.b)(Oe, (e, t) => ({
+			var ge = Object(O.v)()(Object(i.b)(Oe, (e, t) => ({
 					onFilterProposals: () => e(Object(fe.p)({
 						subredditId: t.subredditId,
 						forceState: !0
 					}))
 				}))((function(e) {
-					return Object(O.I)(e.pageLayer) && e.proposals.length ? a.a.createElement("div", {
+					return Object(O.J)(e.pageLayer) && e.proposals.length ? a.a.createElement("div", {
 						className: Object(c.a)(e.className, _e.a.container)
 					}, a.a.createElement(Ce, null, ye._("Latest Polls", null, {
 						hk: "1oGuW8"
@@ -1848,8 +1848,8 @@
 			};
 
 			function d() {
-				const e = Object(s.fb)(),
-					t = Object(r.e)(t => Object(s.r)(t, {
+				const e = Object(s.gb)(),
+					t = Object(r.e)(t => Object(s.s)(t, {
 						pageLayer: e
 					})),
 					n = Object(r.e)(e => c(e, null == t ? void 0 : t.id));
@@ -1905,14 +1905,14 @@
 			const o = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.De
-					}) === r.Sd
+						experimentName: r.Fe
+					}) === r.Ud
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.Be
-					}) === r.Sd
+						experimentName: r.De
+					}) === r.Ud
 				}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
@@ -1962,7 +1962,7 @@
 					return n && n.amount || "0"
 				},
 				m = (e, t) => {
-					const n = Object(r.n)(e, t);
+					const n = Object(r.o)(e, t);
 					return n && e.subreddits.gov.releaseNotes[n] || s
 				},
 				b = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0
@@ -1972,4 +1972,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.46ba40596b625c783f8d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.d275b784d474fdef86fd.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlowNew.91084fa19d0e5201a7ca.js
-// Retrieved at 11/2/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlowNew.89d5eee1ccf4d1ccc518.js
+// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlowNew"], {
 		"./src/reddit/actions/blockedRedditors.ts": function(e, t, o) {
@@ -321,12 +321,12 @@
 				T = o("./src/reddit/selectors/experiments/reportAd.ts"),
 				G = o("./src/reddit/selectors/meta.ts"),
 				N = o("./src/reddit/selectors/posts.ts"),
-				B = o("./src/reddit/selectors/user.ts"),
-				U = o("./src/lib/lessComponent.tsx"),
+				U = o("./src/reddit/selectors/user.ts"),
+				B = o("./src/lib/lessComponent.tsx"),
 				q = o("./src/reddit/components/ReportFlow/index.m.less"),
 				D = o.n(q);
-			const $ = U.a.div("ReportLoaderWrapper", D.a),
-				Q = U.a.img("LoadingIcon", D.a),
+			const $ = B.a.div("ReportLoaderWrapper", D.a),
+				Q = B.a.img("LoadingIcon", D.a),
 				K = "2.1";
 			var J;
 			! function(e) {
@@ -369,7 +369,7 @@
 						(n ? n.author : i ? i.author : null) || t.author;
 						o.name
 					}),
-					isNightmodeOn: B.eb,
+					isNightmodeOn: U.eb,
 					locale: G.j,
 					isReportAnAdEnabled: T.a
 				}),
@@ -1032,10 +1032,10 @@
 				s = o("./src/reddit/constants/experiments.ts"),
 				n = o("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(r.a)(e => Object(n.c)(e, {
-					experimentName: s.Lc,
+					experimentName: s.Mc,
 					experimentEligibilitySelector: n.a
 				}), e => e),
-				d = Object(r.a)(i, e => e === s.Sd)
+				d = Object(r.a)(i, e => e === s.Ud)
 		},
 		"./src/redditGQL/operations/CreateLiveAudioRoomOnProfile.json": function(e) {
 			e.exports = JSON.parse('{"id":"e35a47c6aa21"}')
@@ -1081,4 +1081,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.91084fa19d0e5201a7ca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.89d5eee1ccf4d1ccc518.js.map

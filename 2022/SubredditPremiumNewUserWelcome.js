@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.501e43f9037b6744c0d8.js
-// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.e6385a9331499166e300.js
+// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumNewUserWelcome"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, n) {
@@ -927,23 +927,23 @@
 			}
 			const X = Object(c.c)({
 					bannerIsDismissed: (e, t) => {
-						const n = Object(b.n)(e, t);
+						const n = Object(b.o)(e, t);
 						return n ? Object(g.g)(e, n, p.a.NewUserWelcome) : void 0
 					},
 					eligibleForBanner: (e, t) => {
 						const n = e.user.account,
-							r = Object(b.r)(e, t);
+							r = Object(b.s)(e, t);
 						if (!n) return !1;
-						if (Object(b.T)(e, t) !== l.g.Large) return !1;
+						if (Object(b.U)(e, t) !== l.g.Large) return !1;
 						if (r) {
 							const t = Object(g.f)(e, r.id)[_.a.Achievement];
 							if (t && t.type === H) return !1
 						}
 						return !0
 					},
-					subreddit: b.r,
+					subreddit: b.s,
 					userIsSubscribed: (e, t) => {
-						const n = Object(b.r)(e, t);
+						const n = Object(b.s)(e, t);
 						return !!n && Object(h.kb)(e, {
 							identifier: {
 								name: n.name,
@@ -957,7 +957,7 @@
 					onDismissBanner: t => e(Object(a.a)(t, p.a.NewUserWelcome)),
 					onFetchDismissedBanners: t => e(Object(a.b)(t))
 				}))(J),
-				te = Object(b.u)()(ee),
+				te = Object(b.v)()(ee),
 				ne = Object(m.b)(te);
 			t.default = Object(m.b)(ne)
 		},
@@ -2414,4 +2414,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.501e43f9037b6744c0d8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.e6385a9331499166e300.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.a77caf8c7d91e2f241dc.js
-// Retrieved at 11/2/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.f2cdf1aff8ba290fe83f.js
+// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-BurnPointsModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
@@ -1308,14 +1308,14 @@
 			const c = e => {
 					return Object(l.c)(e, {
 						experimentEligibilitySelector: l.a,
-						experimentName: n.De
-					}) === n.Sd
+						experimentName: n.Fe
+					}) === n.Ud
 				},
 				s = e => {
 					return Object(l.c)(e, {
 						experimentEligibilitySelector: l.a,
-						experimentName: n.Be
-					}) === n.Sd
+						experimentName: n.De
+					}) === n.Ud
 				}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, a) {
@@ -1365,11 +1365,11 @@
 					return a && a.amount || "0"
 				},
 				u = (e, t) => {
-					const a = Object(n.n)(e, t);
+					const a = Object(n.o)(e, t);
 					return a && e.subreddits.gov.releaseNotes[a] || l
 				},
 				p = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.a77caf8c7d91e2f241dc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.f2cdf1aff8ba290fe83f.js.map

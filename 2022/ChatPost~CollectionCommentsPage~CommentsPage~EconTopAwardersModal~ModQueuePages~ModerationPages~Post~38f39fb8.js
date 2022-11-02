@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.3f5fae0655fbcd130b84.js
-// Retrieved at 11/2/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.80957eca52f17c586df0.js
+// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -2362,7 +2362,7 @@
 			const oe = e => Object(R.a)(Object(F.a)(e), Q.a.metaText, Q.b.metaText),
 				ne = l.a.wrapped(B.b, "MetaSeparator", ee.a),
 				ae = l.a.span("text", ee.a),
-				ie = Object(q.u)(),
+				ie = Object(q.v)(),
 				de = "post_author_link_icon",
 				ce = e => {
 					const t = Object(p.a)(re),
@@ -2458,7 +2458,7 @@
 						ye = () => o.a.createElement(ne, {
 							className: e.metaSeparatorClassName
 						}, "•"),
-						Ie = Object(n.e)(e => Object(q.T)(e, {
+						Ie = Object(n.e)(e => Object(q.U)(e, {
 							pageLayer: w
 						})),
 						Ce = W.e[Ie] === W.d.Card,
@@ -2619,8 +2619,8 @@
 				h = ["center", "bottom"],
 				b = i.a.div("Container", m.a),
 				f = Object(a.a)(d.b),
-				v = Object(c.u)({
-					isProfileListingPage: c.J
+				v = Object(c.v)({
+					isProfileListingPage: c.K
 				});
 			class w extends n.a.Component {
 				constructor(e) {
@@ -3627,15 +3627,15 @@
 			const a = e => {
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: n.R,
-						experimentName: s.yd
+						experimentName: s.Ad
 					});
-					return !(!t || Object(s.Ag)(t))
+					return !(!t || Object(s.Cg)(t))
 				},
 				i = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: n.R,
-						experimentName: s.yd
-					}) === s.Wd.ListingEnabled
+						experimentName: s.Ad
+					}) === s.Yd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/gold/topAwarded.ts": function(e, t, r) {
@@ -3695,4 +3695,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.3f5fae0655fbcd130b84.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.80957eca52f17c586df0.js.map

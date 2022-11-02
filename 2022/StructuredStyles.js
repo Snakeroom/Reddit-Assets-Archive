@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.110b6cc431774f44d7ee.js
-// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.5cc169044e4d45b91605.js
+// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -3683,8 +3683,8 @@
 				}, r.a.createElement(x.a, null, e.title, r.a.createElement(hr.a, {
 					className: Object(pe.a)(Er.a.OutboundLinkIcon, e.className)
 				}))));
-			var _r = Object(mr.u)()(Object(o.b)(() => Object(c.c)({
-				subreddit: mr.r
+			var _r = Object(mr.v)()(Object(o.b)(() => Object(c.c)({
+				subreddit: mr.s
 			}))(class extends pr {
 				constructor() {
 					super(...arguments), this.handleSubscribersTextChange = e => {
@@ -5788,8 +5788,8 @@
 				}))
 			};
 			var hl = n("./src/reddit/selectors/telemetry.ts");
-			const pl = Object(mr.u)({
-					queryParams: mr.Y
+			const pl = Object(mr.v)({
+					queryParams: mr.Z
 				}),
 				gl = e => t => t ? e.go(t.relativePosition) : e.goBack();
 			var bl = pl(Object(g.c)(e => {
@@ -7343,6 +7343,7 @@
 			t.a = e => r.a.createElement("div", {
 				className: Object(s.a)(o.a.searchContainer, e.className)
 			}, r.a.createElement("input", {
+				"data-testid": "SEARCH_BAR_TEST_ID",
 				className: Object(s.a)(o.a.search, {
 					[o.a.mRightAlignedIcon]: e.rightAlignedIcon
 				}),
@@ -7358,6 +7359,7 @@
 					[o.a.mClickable]: !!e.onSearch,
 					[o.a.mRightAligned]: e.rightAlignedIcon
 				}),
+				role: "submit",
 				onClick: e.onSearch
 			}, r.a.createElement(i.a, null)))
 		},
@@ -8506,7 +8508,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const J = Object(f.u)(),
+			const J = Object(f.v)(),
 				X = Object(u.a)(Object(c.a)((e, t) => t.value, (e, t) => {
 					let {
 						allowCrosspostableOnly: n,
@@ -9306,4 +9308,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.110b6cc431774f44d7ee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.5cc169044e4d45b91605.js.map

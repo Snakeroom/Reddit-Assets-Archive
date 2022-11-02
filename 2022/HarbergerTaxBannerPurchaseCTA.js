@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.8e173d57d17ac75195ce.js
-// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.e4e05ac717887b5876bd.js
+// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxBannerPurchaseCTA"], {
 		"./src/reddit/actions/economics/claims/constants.ts": function(e, t, n) {
@@ -64,9 +64,9 @@
 			})), n.d(t, "r", (function() {
 				return N
 			})), n.d(t, "s", (function() {
-				return h
-			})), n.d(t, "t", (function() {
 				return v
+			})), n.d(t, "t", (function() {
+				return h
 			})), n.d(t, "u", (function() {
 				return R
 			})), n.d(t, "v", (function() {
@@ -94,8 +94,8 @@
 				p = "GOVERNANCE__RELEASE_NOTES_SUCCESS",
 				A = "GOVERNANCE__TRANSFER_FAILURE",
 				N = "GOVERNANCE__TRANSFER_MODAL_OPENED",
-				h = "GOVERNANCE__TRANSFER_PENDING",
-				v = "GOVERNANCE__TRANSFER_SUCCESS",
+				v = "GOVERNANCE__TRANSFER_PENDING",
+				h = "GOVERNANCE__TRANSFER_SUCCESS",
 				R = "GOVERNANCE__WALLETS_FETCH_FAILURE",
 				C = "GOVERNANCE__WALLETS_FETCH_PENDING",
 				y = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
@@ -199,28 +199,28 @@
 				p = n("./src/reddit/selectors/crypto/points.ts"),
 				A = n("./src/reddit/selectors/crypto/wallet.ts"),
 				N = n("./src/reddit/selectors/gov.ts"),
-				h = n("./src/reddit/components/Governance/HarbergerTax/BannerPurchaseCTA/index.m.less"),
-				v = n.n(h);
+				v = n("./src/reddit/components/Governance/HarbergerTax/BannerPurchaseCTA/index.m.less"),
+				h = n.n(v);
 			const R = Object(c.c)({
 					cost: (e, t) => {
-						const n = Object(E.r)(e, t);
+						const n = Object(E.s)(e, t);
 						if (n) return Object(N.b)(e, {
 							subredditId: n.id
 						})
 					},
 					pointsDetails: (e, t) => {
-						const n = Object(E.r)(e, t);
+						const n = Object(E.s)(e, t);
 						return Object(p.b)(e, null == n ? void 0 : n.id)
 					},
 					publicAddress: (e, t) => {
-						const n = Object(E.r)(e, t);
+						const n = Object(E.s)(e, t);
 						return (null == n ? void 0 : n.id) ? Object(A.b)(e, {
 							subredditId: null == n ? void 0 : n.id
 						}) : void 0
 					},
-					subreddit: E.r,
+					subreddit: E.s,
 					userOwnsBanner: (e, t) => {
-						const n = Object(E.r)(e, t),
+						const n = Object(E.s)(e, t),
 							r = e.user.account;
 						if (n && r) {
 							return Object(N.c)(e, {
@@ -246,7 +246,7 @@
 						tooltipId: t
 					}))
 				})),
-				y = Object(E.u)();
+				y = Object(E.v)();
 			t.default = Object(m.a)("spHarberger", y(C((function(e) {
 				const {
 					cost: t,
@@ -262,28 +262,28 @@
 				if (!t || !p || !o) return null;
 				const A = Object(f.f)(),
 					N = !c && (!A || !!!n || p.inTransition),
-					h = `harberger-cta-${o.id}`;
+					v = `harberger-cta-${o.id}`;
 				return s.a.createElement("div", {
-					className: Object(d.a)(v.a.container, {
-						[v.a.disabled]: N
+					className: Object(d.a)(h.a.container, {
+						[h.a.disabled]: N
 					}),
-					id: h,
+					id: v,
 					onClick: () => {
 						if (N) return;
 						const e = !!p.blockchainProvider;
 						c ? l(o.id, e) : E(o.id, e)
 					},
-					onMouseOver: () => m(h),
+					onMouseOver: () => m(v),
 					onMouseOut: a
 				}, c ? r.fbt._("Manage Banner", null, {
 					hk: "aHDWM"
 				}) : s.a.createElement(i.Fragment, null, r.fbt._("Buy Banner", null, {
 					hk: "3Mp8CG"
 				}), s.a.createElement(b.a, {
-					className: v.a.token,
+					className: h.a.token,
 					subredditId: o.id
 				}), Object(u.a)(Object(O.c)(t, p.displayConversion))), N && s.a.createElement(_.c, {
-					tooltipId: h,
+					tooltipId: v,
 					text: A ? r.fbt._("You must register your wallet address to purchase the banner", null, {
 						hk: "38o58h"
 					}) : r.fbt._("You must have metamask installed to purchase the banner", null, {
@@ -831,8 +831,8 @@
 			};
 
 			function u() {
-				const e = Object(i.fb)(),
-					t = Object(r.e)(t => Object(i.r)(t, {
+				const e = Object(i.gb)(),
+					t = Object(r.e)(t => Object(i.s)(t, {
 						pageLayer: e
 					})),
 					n = Object(r.e)(e => d(e, null == t ? void 0 : t.id));
@@ -923,11 +923,11 @@
 					return n && n.amount || "0"
 				},
 				b = (e, t) => {
-					const n = Object(r.n)(e, t);
+					const n = Object(r.o)(e, t);
 					return n && e.subreddits.gov.releaseNotes[n] || i
 				},
 				_ = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.8e173d57d17ac75195ce.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.e4e05ac717887b5876bd.js.map

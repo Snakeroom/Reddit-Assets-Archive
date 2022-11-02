@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-AdHocMultiredditSidebar.2f71ce0de6c2ad498b68.js
-// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-AdHocMultiredditSidebar.cc032ac26009c4538e11.js
+// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-AdHocMultiredditSidebar"], {
 		"./src/reddit/actions/multireddit/constants.ts": function(e, n, t) {
@@ -116,10 +116,10 @@
 				o = t("./src/reddit/components/MultiredditSidebar/index.tsx"),
 				i = t("./src/reddit/contexts/PageLayer/index.tsx"),
 				u = t("./src/reddit/selectors/multireddit.ts");
-			const E = Object(i.u)(),
+			const E = Object(i.v)(),
 				D = Object(d.c)({
 					multireddit: u.a,
-					subredditCategory: i.m
+					subredditCategory: i.n
 				}),
 				_ = Object(c.b)(D);
 			n.default = E(_(e => s.a.createElement(o.a, e)))
@@ -215,4 +215,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-AdHocMultiredditSidebar.2f71ce0de6c2ad498b68.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-AdHocMultiredditSidebar.cc032ac26009c4538e11.js.map

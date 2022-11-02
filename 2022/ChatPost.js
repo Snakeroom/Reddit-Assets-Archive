@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.23f7600bd8a115e22b03.js
-// Retrieved at 11/2/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.adb95b1ed80d912f4ac5.js
+// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/backo2/index.js": function(e, t) {
@@ -3929,7 +3929,7 @@
 				Nn = 10,
 				Mn = Ve.a.wrapped(_n.b, "ErrorText", wn.a),
 				Ln = Ve.a.wrapped(Qe.a, "TopMeta", wn.a),
-				Sn = Object(En.u)(),
+				Sn = Object(En.v)(),
 				Rn = Object(p.b)(() => Object(ge.c)({
 					associatedAward: (e, t) => {
 						let {
@@ -3964,7 +3964,7 @@
 					},
 					isEditing: K.z,
 					prediction: Tn.f,
-					subreddit: En.r,
+					subreddit: En.s,
 					shouldRenderSystemMessages: yn
 				})),
 				An = Object(We.b)(e => ({
@@ -4404,7 +4404,7 @@
 				};
 			var ho = n("./src/reddit/components/CommentsChat/Comment/v2/index.m.less"),
 				bo = n.n(ho);
-			var Co = Object(En.u)()(Object(p.b)(() => Object(ge.c)({
+			var Co = Object(En.v)()(Object(p.b)(() => Object(ge.c)({
 				associatedAward: (e, t) => {
 					let {
 						commentId: n
@@ -4448,7 +4448,7 @@
 						commentsPageKey: o
 					})
 				},
-				subreddit: En.r,
+				subreddit: En.s,
 				shouldRenderSystemMessages: yn,
 				commentSubmitError: W.c,
 				isPendingComment: W.e,
@@ -6420,8 +6420,8 @@
 				r = n("./src/reddit/selectors/user.ts");
 			const a = e => Object(s.c)(e, {
 				experimentEligibilitySelector: r.R,
-				experimentName: o.gc
-			}) === o.Sd
+				experimentName: o.hc
+			}) === o.Ud
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, n) {
 			"use strict";
@@ -6522,4 +6522,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.23f7600bd8a115e22b03.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.adb95b1ed80d912f4ac5.js.map

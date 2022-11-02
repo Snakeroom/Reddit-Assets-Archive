@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.3e8892f2092b2e0ee09b.js
-// Retrieved at 11/2/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.9765169f7a0404a4889f.js
+// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -72,9 +72,9 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const C = Object(c.u)(),
+			const C = Object(c.v)(),
 				v = Object(r.c)({
-					isFakeSubreddit: c.z
+					isFakeSubreddit: c.A
 				}),
 				y = Object(o.b)(v),
 				P = e => {
@@ -222,9 +222,9 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const C = Object(c.u)(),
+			const C = Object(c.v)(),
 				v = Object(r.c)({
-					isFakeSubreddit: c.z
+					isFakeSubreddit: c.A
 				}),
 				y = Object(o.b)(v),
 				P = e => {
@@ -2154,9 +2154,9 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const P = Object(u.u)(),
+			const P = Object(u.v)(),
 				x = Object(d.c)({
-					isFakeSubreddit: u.z
+					isFakeSubreddit: u.A
 				}),
 				w = Object(l.b)(x),
 				O = e => {
@@ -2435,8 +2435,8 @@
 				o = s("./src/reddit/selectors/user.ts");
 			const r = e => Object(n.c)(e, {
 				experimentEligibilitySelector: o.R,
-				experimentName: i.gc
-			}) === i.Sd
+				experimentName: i.hc
+			}) === i.Ud
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, s) {
 			"use strict";
@@ -2519,4 +2519,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.3e8892f2092b2e0ee09b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.9765169f7a0404a4889f.js.map

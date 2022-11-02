@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.4d8a91da04c508855c7d.js
-// Retrieved at 11/2/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.5813aebfc4b657193b11.js
+// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~SubredditForkingCTA"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(t, e, r) {
@@ -52,8 +52,8 @@
 			}), u = r("./node_modules/fbt/lib/FbtPublic.js"), l = r("./src/reddit/models/Toast/index.ts"), b = r("./node_modules/reselect/es/index.js"), f = r("./src/reddit/constants/experiments.ts"), p = r("./src/reddit/helpers/chooseVariant/index.ts"), m = r("./src/reddit/selectors/user.ts");
 			const h = Object(b.a)(t => Object(p.c)(t, {
 				experimentEligibilitySelector: m.R,
-				experimentName: f.bc
-			}), t => t === f.Sd);
+				experimentName: f.cc
+			}), t => t === f.Ud);
 			var O = r("./src/reddit/actions/toaster.ts");
 			const _ = "SUBREDDIT_COUNTRY_SITE__LOADED",
 				y = "SUBREDDIT_COUNTRY_SITE__CHANGED",
@@ -1470,7 +1470,7 @@
 								postFieldValidationPending: Promise.resolve()
 							})), Object(l.b)(D)
 						}
-						await e(Object(n.b)(`${r.path}`)), p ? p === b.Ve.NewModule && e(Object(c.h)({
+						await e(Object(n.b)(`${r.path}`)), p ? p === b.Xe.NewModule && e(Object(c.h)({
 							tooltipId: u.MOD_WELCOME_TOOLTIP_ID
 						})) : (e(Object(o.h)(f.a.POST_FLOW_UPSELL_MODAL_ID)), Object(k.a)(Object(E.g)()(x))), Object(j.b)(j.a.SubredditCreation), e(Object(T.f)(i, null !== (g = Object(C.cb)(x)) && void 0 !== g ? g : Object(I.j)(x)))
 					} else w.error && Object(k.a)(Object(E.h)(w.error.type, N)(x)), e(U({
@@ -2842,8 +2842,8 @@
 			};
 
 			function c() {
-				const t = Object(s.fb)(),
-					e = Object(n.e)(e => Object(s.r)(e, {
+				const t = Object(s.gb)(),
+					e = Object(n.e)(e => Object(s.s)(e, {
 						pageLayer: t
 					})),
 					r = Object(n.e)(t => a(t, null == e ? void 0 : e.id));
@@ -3053,4 +3053,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.4d8a91da04c508855c7d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.5813aebfc4b657193b11.js.map

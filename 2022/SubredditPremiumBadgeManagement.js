@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.3df32232c2338b0ee6ca.js
-// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.b3580a2f57d718274063.js
+// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBadgeManagement"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, s) {
@@ -2489,7 +2489,7 @@
 			const Mt = Object(d.c)({
 					account: e => e.user.account,
 					appliedBadges: (e, t) => {
-						const s = Object(i.r)(e, t);
+						const s = Object(i.s)(e, t);
 						return s ? Object(p.f)(e, s.id) : {
 							[u.a.Loyalty]: void 0,
 							[u.a.Achievement]: void 0,
@@ -2500,7 +2500,7 @@
 					currentView: e => e.economics.currentBadgeManagementScreen.view,
 					initialSelectedBadge: (e, t) => {
 						const s = e.economics.currentBadgeManagementScreen.view,
-							n = Object(i.r)(e, t);
+							n = Object(i.s)(e, t);
 						let a;
 						if (n && e.economics.currentModalArgs && e.economics.currentModalArgs.badge) {
 							const t = e.economics.currentModalArgs.badge.type,
@@ -2518,10 +2518,10 @@
 						}
 						return a
 					},
-					subreddit: i.r
+					subreddit: i.s
 				}),
 				Lt = Object(r.b)(Mt),
-				At = Object(i.u)();
+				At = Object(i.v)();
 			t.default = Object(c.a)("spSpecialMemberships", Object(o.a)(At(Lt(It))))
 		},
 		"./src/reddit/components/Economics/SubredditPremium/Badges/UserDisplay/index.m.less": function(e, t, s) {
@@ -3626,4 +3626,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.3df32232c2338b0ee6ca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.b3580a2f57d718274063.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.20434d1ec31f67125a55.js
-// Retrieved at 11/2/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.aeb9cbed2582f5ef026f.js
+// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, r) {
@@ -73,7 +73,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(u.zg)(e.category_name)
+									displayText: Object(u.Bg)(e.category_name)
 								};
 								r.push(s.id), t[s.id] = s
 							}), {
@@ -242,8 +242,8 @@
 			const y = e => {
 				return Object(h.c)(e, {
 					experimentEligibilitySelector: h.a,
-					experimentName: g.xf
-				}) === g.Sd
+					experimentName: g.zf
+				}) === g.Ud
 			};
 			var f = r("./src/reddit/selectors/recapGame.ts"),
 				k = r("./src/reddit/selectors/user.ts"),
@@ -432,9 +432,9 @@
 				isCountrySitesEnabled: g.b,
 				isD2xPdpSideRailRecsEnabled: h.b,
 				isNavbarLikeMwebEnabled: y.a
-			}), v = Object(a.b)(_), O = Object(p.u)({
-				isFrontpage: p.A,
-				isCountrySitePage: p.y
+			}), v = Object(a.b)(_), O = Object(p.v)({
+				isFrontpage: p.B,
+				isCountrySitePage: p.z
 			}), j = e => {
 				let {
 					countryCode: t,
@@ -497,7 +497,7 @@
 				const t = Object(a.f)().getState(),
 					r = Object(g.a)(t, Object(o.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.ed.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.ed.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.ed.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.gd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.gd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.gd.LargeImagePreview ? e.reredditButtons : [];
 					return s.a.createElement(j, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -731,7 +731,7 @@
 					}))
 				}
 			}
-			const v = Object(m.u)();
+			const v = Object(m.v)();
 			t.a = v(_)
 		},
 		"./src/reddit/components/StructuredStyles/BladeDrawerController/index.m.less": function(e, t, r) {
@@ -1557,9 +1557,9 @@
 				v = r.n(_);
 			const {
 				fbt: O
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), j = Object(u.u)(), N = Object(a.b)(() => Object(i.c)({
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), j = Object(u.v)(), N = Object(a.b)(() => Object(i.c)({
 				forceRedditStyle: (e, t) => {
-					const r = Object(u.n)(e, t) || void 0,
+					const r = Object(u.o)(e, t) || void 0,
 						n = t.redditStyle || Object(h.l)(e, {
 							subredditId: r
 						}),
@@ -1567,7 +1567,7 @@
 					return n || s
 				},
 				nigtmode: y.eb,
-				subredditId: u.n,
+				subredditId: u.o,
 				topPostVariant: g.d
 			}));
 			class T extends s.a.Component {
@@ -2477,8 +2477,8 @@
 			}
 			var q = Object(u.c)(z(Q)),
 				J = r("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				K = r("./src/reddit/components/CategoryPickerWidget/index.m.less"),
-				U = r.n(K);
+				U = r("./src/reddit/components/CategoryPickerWidget/index.m.less"),
+				K = r.n(U);
 
 			function V() {
 				return (V = Object.assign || function(e) {
@@ -2496,7 +2496,7 @@
 					className: n,
 					isActive: s,
 					tabIndex: a
-				} = e, o = Object(c.a)(U.a.categoryLink, s && U.a.active, n);
+				} = e, o = Object(c.a)(K.a.categoryLink, s && K.a.active, n);
 				return i.a.createElement("li", null, i.a.createElement(J.a, V({}, t.anchorProps, {
 					className: o,
 					"data-active": s,
@@ -2550,7 +2550,7 @@
 						onItemClick: l
 					} = this.props, {
 						isExpanded: u
-					} = this.state, m = !u && d && r * d, b = a + (e ? r * e.length : 0), g = Object(c.a)(U.a.categoryList, u && U.a.expanded), h = e => !(!o || o !== Object($.i)(e)), y = i.a.createElement("ul", {
+					} = this.state, m = !u && d && r * d, b = a + (e ? r * e.length : 0), g = Object(c.a)(K.a.categoryList, u && K.a.expanded), h = e => !(!o || o !== Object($.i)(e)), y = i.a.createElement("ul", {
 						className: g,
 						style: {
 							height: m || b
@@ -2567,7 +2567,7 @@
 						}, e.name === p.m ? p.k : e.displayText || e.name)
 					}));
 					return i.a.createElement("div", {
-						className: Object(c.a)(U.a.categoryListContainer, n)
+						className: Object(c.a)(K.a.categoryListContainer, n)
 					}, y)
 				}
 				render() {
@@ -2578,16 +2578,16 @@
 						header: n,
 						headerClassName: s,
 						initialNumberOfCategories: a
-					} = this.props, o = t && a && t.length > a, d = Object(c.a)(r, U.a.container);
+					} = this.props, o = t && a && t.length > a, d = Object(c.a)(r, K.a.container);
 					return i.a.createElement(X.a, {
 						className: d,
 						contentOnly: !0
 					}, i.a.createElement("div", {
-						className: Object(c.a)(U.a.header, s)
+						className: Object(c.a)(K.a.header, s)
 					}, i.a.createElement("h2", null, n || ee._("Categories", null, {
 						hk: "46zLMb"
 					}))), this.renderCategoryList(), o && i.a.createElement(Y.r, {
-						className: Object(c.a)(U.a.button, e),
+						className: Object(c.a)(K.a.button, e),
 						onClick: this.toggleExpanded
 					}, o && !this.state.isExpanded ? ee._("Show More", null, {
 						hk: "1pCiqD"
@@ -2655,14 +2655,14 @@
 				};
 			var ye = r("./src/reddit/selectors/category.ts"),
 				fe = r("./src/reddit/selectors/moderatorPermissions.ts");
-			const ke = Object(b.u)(),
+			const ke = Object(b.v)(),
 				xe = (e, t) => {
 					let {
 						match: r
 					} = t;
 					return Object(g.b)(r.params.categoryName || "")
 				},
-				Ee = Object(m.yg)(p.i),
+				Ee = Object(m.Ag)(p.i),
 				Ce = Object(d.c)({
 					categories: e => Object(ye.b)(e, {
 						categoriesOrder: Ee
@@ -2773,11 +2773,11 @@
 				d = r("./node_modules/reselect/es/index.js");
 			const c = Object(d.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => Object(o.h)(e) && Object(a.f)(e),
-					experimentName: n.tc
+					experimentName: n.uc
 				}), i.a),
 				l = Object(d.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => !Object(o.h)(e) && Object(a.f)(e),
-					experimentName: n.sc
+					experimentName: n.tc
 				}), i.a),
 				u = Object(d.a)(c, l, (e, t) => e || t),
 				m = Object(d.a)(c, l, (e, t) => !(!e && !t))
@@ -2815,4 +2815,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.20434d1ec31f67125a55.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.aeb9cbed2582f5ef026f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.39efa92a404d5dde3b05.js
-// Retrieved at 11/1/2022, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.81936ab93603bdee1ca0.js
+// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, s) {
@@ -978,9 +978,9 @@
 				ie = s("./src/reddit/helpers/styles/mixins/loading.ts"),
 				re = s("./src/reddit/components/SubredditMention/MiniPost/Placeholder.m.less"),
 				oe = s.n(re);
-			const de = Object(ne.u)(),
+			const de = Object(ne.v)(),
 				ae = Object(a.c)({
-					isFakeSubreddit: ne.z
+					isFakeSubreddit: ne.A
 				});
 			var ce = de(Object(d.b)(ae)(e => {
 					let {
@@ -2267,4 +2267,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.39efa92a404d5dde3b05.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.81936ab93603bdee1ca0.js.map

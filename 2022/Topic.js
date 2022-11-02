@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.e557895803c4729f9d38.js
-// Retrieved at 11/2/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.cd594a969816f74c75eb.js
+// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -855,8 +855,8 @@
 			const f = e => {
 				return Object(g.c)(e, {
 					experimentEligibilitySelector: g.a,
-					experimentName: h.xf
-				}) === h.Sd
+					experimentName: h.zf
+				}) === h.Ud
 			};
 			var x = s("./src/reddit/selectors/recapGame.ts"),
 				v = s("./src/reddit/selectors/user.ts"),
@@ -1053,11 +1053,11 @@
 						hk: "49uLRt"
 					})
 				},
-				w = Object(h.u)(),
+				w = Object(h.v)(),
 				L = Object(a.c)({
 					dropdownIsOpen: Object(y.b)(C),
-					postLayout: h.T,
-					redditStyle: h.D
+					postLayout: h.U,
+					redditStyle: h.E
 				}),
 				I = Object(o.b)(L, e => ({
 					onListingLayoutChange: (t, s) => e(Object(u.y)(t, s)),
@@ -1226,9 +1226,9 @@
 				isCountrySitesEnabled: h.b,
 				isD2xPdpSideRailRecsEnabled: g.b,
 				isNavbarLikeMwebEnabled: f.a
-			}), O = Object(i.b)(E), C = Object(p.u)({
-				isFrontpage: p.A,
-				isCountrySitePage: p.y
+			}), O = Object(i.b)(E), C = Object(p.v)({
+				isFrontpage: p.B,
+				isCountrySitePage: p.z
 			}), k = e => {
 				let {
 					countryCode: t,
@@ -1291,7 +1291,7 @@
 				const t = Object(i.f)().getState(),
 					s = Object(h.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.ed.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.ed.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.ed.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.gd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.gd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.gd.LargeImagePreview ? e.reredditButtons : [];
 					return n.a.createElement(k, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -1512,7 +1512,7 @@
 					}))
 				}
 			}
-			const O = Object(m.u)();
+			const O = Object(m.v)();
 			t.a = O(E)
 		},
 		"./src/reddit/components/StructuredStyles/BladeDrawerController/index.m.less": function(e, t, s) {
@@ -1963,9 +1963,9 @@
 				O = s.n(E);
 			const {
 				fbt: C
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), k = Object(u.u)(), j = Object(i.b)(() => Object(o.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), k = Object(u.v)(), j = Object(i.b)(() => Object(o.c)({
 				forceRedditStyle: (e, t) => {
-					const s = Object(u.n)(e, t) || void 0,
+					const s = Object(u.o)(e, t) || void 0,
 						r = t.redditStyle || Object(g.l)(e, {
 							subredditId: s
 						}),
@@ -1973,7 +1973,7 @@
 					return r || n
 				},
 				nigtmode: f.eb,
-				subredditId: u.n,
+				subredditId: u.o,
 				topPostVariant: h.d
 			}));
 			class N extends n.a.Component {
@@ -2091,13 +2091,13 @@
 				S = s("./src/reddit/selectors/tracking.ts");
 
 			function T() {
-				return Object(p.u)({
-					currentProfileName: p.i,
-					isCommentPermalink: p.w,
-					isCommentsPage: p.x,
-					isFrontpage: p.A,
-					isProfilePostListing: p.M,
-					isTopicPage: p.S,
+				return Object(p.v)({
+					currentProfileName: p.j,
+					isCommentPermalink: p.x,
+					isCommentsPage: p.y,
+					isFrontpage: p.B,
+					isProfilePostListing: p.N,
+					isTopicPage: p.T,
 					pageLayer: e => e
 				})
 			}
@@ -2106,7 +2106,7 @@
 					apiError: v.c,
 					apiPending: v.d,
 					measureScrollFPS: f.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(p.T)(e, t),
+					layout: (e, t) => t.forcedLayout || Object(p.U)(e, t),
 					loadMore: v.g,
 					postsById: _.T,
 					postIds: Object(i.a)((e, t) => {
@@ -2119,7 +2119,7 @@
 					}),
 					subredditsById: y.fb,
 					viewportDataLoaded: S.a,
-					pageReferrer: p.W,
+					pageReferrer: p.X,
 					postListPlaceholderComponent: () => g.a,
 					isNpsScrollSurveyEnabled: x.e
 				},
@@ -2730,8 +2730,8 @@
 				}
 			}
 			var U = A,
-				V = s("./src/reddit/pages/Topic/Relationship/index.m.less"),
-				z = s.n(V);
+				z = s("./src/reddit/pages/Topic/Relationship/index.m.less"),
+				V = s.n(z);
 			const {
 				fbt: J
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), q = 5;
@@ -2765,9 +2765,9 @@
 						onClick: this.onClick,
 						to: "#"
 					}, n.a.createElement(I.r, {
-						className: z.a.SeeAllRelatedTopics
+						className: V.a.SeeAllRelatedTopics
 					}, J._("See all {=[Topic name plural]}", [J._param("=[Topic name plural]", n.a.createElement("span", {
-						className: z.a.TopicName
+						className: V.a.TopicName
 					}, J._("{Topic name plural}", [J._param("Topic name plural", e)], {
 						hk: "27C3n9"
 					})))], {
@@ -2951,7 +2951,7 @@
 				ke = s.n(Ce);
 			const {
 				fbt: je
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), Ne = Object(k.u)(), we = (e, t) => t.match.params.sort || a.cb, Le = e => {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), Ne = Object(k.v)(), we = (e, t) => t.match.params.sort || a.cb, Le = e => {
 				const t = [];
 				return e ? (e.hasPosts && t.push(H.Posts), e.hasSubreddits && t.push(H.Communities), e.childRelationships.length && t.push(H.RelatedTopics), t) : t
 			}, Ie = Object(d.b)(() => Object(i.a)((e, t) => Object(Oe.d)(e, t.match.params.topicSlug), (e, t) => Object(Oe.e)(e, {
@@ -2962,7 +2962,7 @@
 				topicSlug: t.match.params.topicSlug
 			}), (e, t) => Object(Oe.b)(e, {
 				topicSlug: t.match.params.topicSlug
-			}), k.T, we, e => {
+			}), k.U, we, e => {
 				var t;
 				return null === (t = e.platform.currentPage) || void 0 === t ? void 0 : t.status
 			}, (e, t, s, r, n, i, o, a) => ({
@@ -3143,11 +3143,11 @@
 				c = s("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: e => Object(a.h)(e) && Object(i.f)(e),
-					experimentName: r.tc
+					experimentName: r.uc
 				}), o.a),
 				l = Object(c.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.h)(e) && Object(i.f)(e),
-					experimentName: r.sc
+					experimentName: r.tc
 				}), o.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -3181,4 +3181,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.e557895803c4729f9d38.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.cd594a969816f74c75eb.js.map

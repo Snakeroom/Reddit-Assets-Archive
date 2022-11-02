@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.891e16a11a987899ca95.js
-// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.0c19f6023a85d45b6914.js
+// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, o) {
@@ -762,12 +762,12 @@
 				};
 			var W = o("./src/reddit/components/PostModModeDropdown/_PostModModeDropdown.m.less"),
 				B = o.n(W);
-			const V = Object(x.u)({
-					isProfilePage: x.K,
+			const V = Object(x.v)({
+					isProfilePage: x.L,
 					pageLayer: e => e
 				}),
 				H = Object(a.c)({
-					layout: x.T,
+					layout: x.U,
 					isDropdownOpen: (e, t) => {
 						let {
 							tooltipId: o
@@ -1242,4 +1242,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.891e16a11a987899ca95.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.0c19f6023a85d45b6914.js.map

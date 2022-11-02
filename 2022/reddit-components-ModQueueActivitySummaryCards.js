@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModQueueActivitySummaryCards.efdb95f9eb4f6107d97b.js
-// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModQueueActivitySummaryCards.6fd52b80894b00860b16.js
+// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModQueueActivitySummaryCards", "reddit-components-ModQueueActivitySummaryCards-ModActivityPreview"], {
 		"./src/reddit/components/ModQueueActivitySummaryCards/ModActivityPreview.tsx": function(e, t, s) {
@@ -710,9 +710,9 @@
 				x = s.n(S);
 			const {
 				fbt: E
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), j = Object(u.u)(), A = Object(r.b)(() => Object(a.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), j = Object(u.v)(), A = Object(r.b)(() => Object(a.c)({
 				forceRedditStyle: (e, t) => {
-					const s = Object(u.n)(e, t) || void 0,
+					const s = Object(u.o)(e, t) || void 0,
 						n = t.redditStyle || Object(h.l)(e, {
 							subredditId: s
 						}),
@@ -720,7 +720,7 @@
 					return n || o
 				},
 				nigtmode: g.eb,
-				subredditId: u.n,
+				subredditId: u.o,
 				topPostVariant: p.d
 			}));
 			class w extends o.a.Component {
@@ -868,4 +868,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModQueueActivitySummaryCards.efdb95f9eb4f6107d97b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModQueueActivitySummaryCards.6fd52b80894b00860b16.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.4c5709aec9976ca06ef8.js
-// Retrieved at 11/2/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.8ec463d5f22b8a9508b4.js
+// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -999,7 +999,7 @@
 						className: p.a.Title
 					}, n)
 				},
-				I = Object(b.u)(),
+				I = Object(b.v)(),
 				g = Object(i.b)(() => Object(s.a)((e, t) => {
 					let {
 						pageLayer: n
@@ -1107,7 +1107,7 @@
 					}, n))
 				},
 				j = d.a.div("BackupImage", g.a),
-				E = Object(b.u)();
+				E = Object(b.v)();
 			t.b = E(e => {
 				var t;
 				const n = Object(c.e)(O.eb);
@@ -3477,7 +3477,7 @@
 					return r ? r * o.Xb < 1639443600180 ? void 0 : O(e) : void 0
 				},
 				O = Object(r.a)(e => Object(c.c)(e, {
-					experimentName: i.Ne,
+					experimentName: i.Pe,
 					experimentEligibilitySelector: a.e
 				}), d.a)
 		},
@@ -3584,4 +3584,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.4c5709aec9976ca06ef8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.8ec463d5f22b8a9508b4.js.map

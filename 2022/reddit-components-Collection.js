@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Collection.3dece9d77809866eddf0.js
-// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Collection.11a7911fee7af1c9d926.js
+// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Collection"], {
 		"./src/reddit/components/Collection/PostAndPostEventMeta/index.m.less": function(e, t, o) {
@@ -360,17 +360,17 @@
 					})
 				}
 			}
-			var K = Object(v.u)({
-					currentProfileName: v.i,
-					isCommentsPage: v.x,
-					isProfilePostListing: v.M,
-					isProfilePage: v.K,
+			var V = Object(v.v)({
+					currentProfileName: v.j,
+					isCommentsPage: v.y,
+					isProfilePostListing: v.N,
+					isProfilePage: v.L,
 					pageLayer: e => e
 				})(Object(l.b)(() => Object(i.c)({
 					activeModalId: A.a,
 					galleryThumbnail: y.e,
 					isFutureEvent: y.i,
-					layout: v.T,
+					layout: v.U,
 					post: f.G,
 					shouldShowCollectionPostEdits: y.s,
 					subredditOrProfile: f.V
@@ -394,13 +394,13 @@
 						}
 					}
 				})(Object(b.c)(Z))),
-				V = o("./src/reddit/components/Collection/index.m.less"),
-				q = o.n(V);
+				q = o("./src/reddit/components/Collection/index.m.less"),
+				K = o.n(q);
 			const {
 				fbt: $
 			} = o("./node_modules/fbt/lib/FbtPublic.js"), ee = e => n.a.createElement(m.a, {
 				author: e.author,
-				className: q.a.author,
+				className: K.a.author,
 				"data-click-id": "user",
 				isAuthorDeleted: e.isDeleted,
 				isUnstyled: !0
@@ -409,8 +409,8 @@
 			}, se = e => ({
 				top: oe(e),
 				maxHeight: `calc(100vh - ${h.f+(e.isOverlay?h.m:0)+h.b+5}px)`
-			}), ne = Object(v.u)({
-				isProfilePage: v.K,
+			}), ne = Object(v.v)({
+				isProfilePage: v.L,
 				pageLayer: e => e
 			}), le = Object(l.b)(() => Object(i.c)({
 				collection: y.n,
@@ -467,14 +467,14 @@
 							id: C
 						} = t;
 						return n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
-							className: Object(a.a)(q.a.collectionTitleWrapper, {
-								[q.a.isProfilePage]: d,
-								[q.a.collectionTitleWrapperExp]: e
+							className: Object(a.a)(K.a.collectionTitleWrapper, {
+								[K.a.isProfilePage]: d,
+								[K.a.collectionTitleWrapperExp]: e
 							})
 						}, n.a.createElement("div", {
-							className: q.a.collectionMetaData
+							className: K.a.collectionMetaData
 						}, n.a.createElement("span", {
-							className: q.a.collectionBy
+							className: K.a.collectionBy
 						}, $._("Collection by {authorName}", [$._param("authorName", n.a.createElement(ee, {
 							author: m,
 							isDeleted: Object(_.p)(m)
@@ -483,40 +483,40 @@
 						})), n.a.createElement(O.a, {
 							isSmall: !0
 						}), n.a.createElement("span", {
-							className: q.a.postCount
+							className: K.a.postCount
 						}, $._({
 							"*": "{number} posts",
 							_1: "1 post"
 						}, [$._plural(h.length, "number")], {
 							hk: "2gFsfn"
 						}))), n.a.createElement("div", {
-							className: q.a.collectionTitleOptions
+							className: K.a.collectionTitleOptions
 						}, n.a.createElement("span", {
-							className: q.a.collectionTitle
+							className: K.a.collectionTitle
 						}, n.a.createElement(u.b, {
 							type: u.a.Collection
 						}, t.title)), s && n.a.createElement(p.a, {
 							post: s,
 							isEventFollow: d
 						}), n.a.createElement(P.a, {
-							className: q.a.overflowMenu,
+							className: K.a.overflowMenu,
 							collectionId: C,
 							isSubmitPage: !1,
 							permalink: t.permalink,
 							shouldShowCreatePost: !0
 						}))), n.a.createElement("div", {
-							className: q.a.postListWrapper
+							className: K.a.postListWrapper
 						}, n.a.createElement("div", {
 							id: E.c,
 							style: se(this.props),
-							className: q.a.collectionList
+							className: K.a.collectionList
 						}, b && b.trim() && n.a.createElement("div", {
-							className: q.a.collectionDescription
+							className: K.a.collectionDescription
 						}, b), n.a.createElement("div", {
 							className: Object(a.a)({
-								[q.a.galleryContainer]: o === g.a.GALLERY
+								[K.a.galleryContainer]: o === g.a.GALLERY
 							})
-						}, h.map(e => n.a.createElement(K, {
+						}, h.map(e => n.a.createElement(V, {
 							collectionId: C,
 							postId: e,
 							key: e,
@@ -744,4 +744,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Collection.3dece9d77809866eddf0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Collection.11a7911fee7af1c9d926.js.map

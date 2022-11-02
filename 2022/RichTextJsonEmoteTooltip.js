@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextJsonEmoteTooltip.ef02d081991545dcaa0f.js
-// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextJsonEmoteTooltip.1c26906307d973412945.js
+// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextJsonEmoteTooltip"], {
 		"./src/reddit/components/OverlayAwareTooltip/index.tsx": function(e, t, n) {
@@ -80,7 +80,7 @@
 							pageLayer: s
 						} = t;
 						const o = Object(p.b)(n),
-							r = Object(l.r)(e, {
+							r = Object(l.s)(e, {
 								pageLayer: s
 							});
 						if (r) {
@@ -92,7 +92,7 @@
 					}
 				}),
 				j = Object(r.b)(h),
-				b = Object(l.u)()(j((function(e) {
+				b = Object(l.v)()(j((function(e) {
 					return e.emote && e.emote.extra && e.emote.extra.rtDescription ? o.a.createElement("div", {
 						className: Object(a.a)(x.a.container, e.className),
 						style: e.style
@@ -114,4 +114,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextJsonEmoteTooltip.ef02d081991545dcaa0f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextJsonEmoteTooltip.1c26906307d973412945.js.map
