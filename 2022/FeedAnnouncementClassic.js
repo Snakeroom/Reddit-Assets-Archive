@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeedAnnouncementClassic.ae0dfcdaf495270a05b2.js
-// Retrieved at 11/2/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeedAnnouncementClassic.1771d0895dafab354125.js
+// Retrieved at 11/2/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeedAnnouncementClassic"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, a) {
@@ -83,7 +83,8 @@
 				thumbnailContainer: "_3AmaG4v33kz3LwdWt3RREe",
 				thumbnailIcon: "_8FjFhLPPxOYrJHRr0IgEu",
 				ctaContainer: "_2aJlBdiCPrr6sB1O1CcGLs",
-				ctaText: "_2JeUVsd4VGGDf5hABXR4gh"
+				ctaText: "_2JeUVsd4VGGDf5hABXR4gh",
+				ctaCaret: "XGdy-mMHrdZKlz1yxZ89C"
 			}
 		},
 		"./src/reddit/components/FeedAnnouncement/FeedAnnouncementClassic/index.tsx": function(e, t, a) {
@@ -103,20 +104,22 @@
 				}),
 				u = a("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				b = a("./src/reddit/constants/postLayout.ts"),
-				h = a("./src/reddit/icons/fonts/index.tsx"),
+				h = a("./src/reddit/helpers/styles/mixins/index.tsx"),
+				p = a("./src/reddit/hooks/useTheme.ts"),
+				C = a("./src/reddit/icons/fonts/index.tsx"),
 				_ = a("./src/reddit/components/FeedAnnouncement/utils.ts"),
-				p = a("./src/reddit/components/FeedAnnouncement/FeedAnnouncementClassic/index.m.less"),
-				A = a.n(p);
-			const C = e => {
+				v = a("./src/reddit/components/FeedAnnouncement/FeedAnnouncementClassic/index.m.less"),
+				A = a.n(v);
+			const x = e => {
 				let {
 					imgUrl: t,
 					isCompact: a
 				} = e;
 				return a ? i.a.createElement("div", {
 					className: Object(c.a)(A.a.thumbnailIcon)
-				}, null == t ? i.a.createElement(h.a, {
+				}, null == t ? i.a.createElement(C.a, {
 					name: "text_post"
-				}) : i.a.createElement(h.a, {
+				}) : i.a.createElement(C.a, {
 					name: "image_post"
 				})) : null == t ? null : i.a.createElement("div", {
 					className: Object(c.a)(A.a.thumbnailContainer)
@@ -131,46 +134,57 @@
 					title: o,
 					cta: l,
 					url: d,
-					layout: h,
-					onClose: p
-				} = e, v = Object(_.a)(t), x = h === b.g.Compact;
+					layout: C,
+					onClose: v
+				} = e, E = Object(p.a)(), f = Object(_.a)(t), j = C === b.g.Compact;
 				return i.a.createElement("div", {
 					className: Object(c.a)({
 						[A.a.container]: !0,
-						[A.a.isCompact]: x
+						[A.a.isCompact]: j
 					}),
 					role: "button",
 					onClick: () => window.location.href = d
 				}, i.a.createElement("div", {
 					className: Object(c.a)({
 						[A.a.leftRail]: !0,
-						[A.a.isCompact]: x
+						[A.a.isCompact]: j
 					})
 				}, i.a.createElement("div", {
 					className: Object(c.a)(A.a.horizontalVotes)
 				}, i.a.createElement(m, null)), i.a.createElement("div", {
 					className: Object(c.a)(A.a.verticalVotes)
 				}, i.a.createElement(r.a, null))), i.a.createElement("div", {
-					className: Object(c.a)(A.a.innerContainer)
-				}, i.a.createElement(C, {
-					imgUrl: v,
-					isCompact: x
+					className: Object(c.a)(A.a.innerContainer),
+					style: Object(h.c)(void 0, {
+						theme: E
+					})
+				}, i.a.createElement(x, {
+					imgUrl: f,
+					isCompact: j
 				}), i.a.createElement("div", {
 					className: Object(c.a)(A.a.contentContainer)
 				}, i.a.createElement("div", {
 					className: Object(c.a)(A.a.headerContainer)
 				}, i.a.createElement("h3", {
-					className: Object(c.a)(A.a.title, A.a.ellipsis)
+					className: Object(c.a)({
+						[A.a.title]: !0,
+						[A.a.ellipsis]: !0,
+						[A.a.isCompact]: j
+					})
 				}, o), i.a.createElement("button", {
 					className: A.a.headerCloseButton,
 					onClick: e => {
-						e.stopPropagation(), p()
+						e.stopPropagation(), v()
 					},
 					title: s.fbt._("Close", null, {
 						hk: "4CfMwa"
 					})
 				}, i.a.createElement(u.b, null))), i.a.createElement("p", {
-					className: Object(c.a)(A.a.body, A.a.ellipsis)
+					className: Object(c.a)({
+						[A.a.body]: !0,
+						[A.a.ellipsis]: !0,
+						[A.a.isCompact]: j
+					})
 				}, a), i.a.createElement("div", {
 					className: Object(c.a)(A.a.fromReddit)
 				}, s.fbt._("From Reddit", null, {
@@ -181,6 +195,7 @@
 					href: d,
 					className: Object(c.a)(A.a.ctaText)
 				}, l, i.a.createElement(n.a, {
+					className: Object(c.a)(A.a.ctaCaret),
 					height: "20px"
 				}))) : null)))
 			}
@@ -269,4 +284,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeedAnnouncementClassic.ae0dfcdaf495270a05b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeedAnnouncementClassic.1771d0895dafab354125.js.map

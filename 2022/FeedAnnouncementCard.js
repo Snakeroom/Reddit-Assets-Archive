@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeedAnnouncementCard.014b4d3d50f294e94fbf.js
-// Retrieved at 11/2/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeedAnnouncementCard.6bebdc06135e55803b5d.js
+// Retrieved at 11/2/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeedAnnouncementCard"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -76,7 +76,8 @@
 				bodyContent: "dku0Op6m8XlDzNXaT18Ao",
 				thumbnailContainer: "_161yAsr8ctyBKBDiKc3sh8",
 				ctaContainer: "_2RlwLUVQB26YQJao9PNk-N",
-				ctaText: "_151PrBg-rDa9Lc-V5BaoOd"
+				ctaText: "_151PrBg-rDa9Lc-V5BaoOd",
+				ctaCaret: "_1UIrgzG-hiGGr7IQkOsCIu"
 			}
 		},
 		"./src/reddit/components/FeedAnnouncement/FeedAnnouncementCard/index.tsx": function(e, t, n) {
@@ -92,22 +93,24 @@
 				d = n("./src/reddit/components/Snoo/index.m.less"),
 				m = n.n(d),
 				u = n("./src/lib/lessComponent.tsx").a.wrapped(l.a, "Component", m.a),
-				A = n("./src/reddit/components/FeedAnnouncement/utils.ts"),
-				h = n("./src/reddit/components/FeedAnnouncement/FeedAnnouncementCard/index.m.less"),
-				p = n.n(h);
+				h = n("./src/reddit/helpers/styles/mixins/index.tsx"),
+				A = n("./src/reddit/hooks/useTheme.ts"),
+				C = n("./src/reddit/components/FeedAnnouncement/utils.ts"),
+				p = n("./src/reddit/components/FeedAnnouncement/FeedAnnouncementCard/index.m.less"),
+				x = n.n(p);
 
-			function C(e) {
+			function _(e) {
 				const {
 					onClose: t
 				} = e;
 				return r.a.createElement("div", {
-					className: p.a.headerContainer
+					className: x.a.headerContainer
 				}, r.a.createElement(u, null), r.a.createElement("div", {
-					className: p.a.headerTitle
+					className: x.a.headerTitle
 				}, s.fbt._("From Reddit", null, {
 					hk: "1Sazf8"
 				})), r.a.createElement("button", {
-					className: p.a.headerCloseButton,
+					className: x.a.headerCloseButton,
 					onClick: e => {
 						e.stopPropagation(), t()
 					},
@@ -124,29 +127,33 @@
 					cta: c,
 					url: i,
 					onClose: l
-				} = e, d = Object(A.a)(t);
+				} = e, d = Object(A.a)(), m = Object(C.a)(t);
 				return r.a.createElement("div", {
-					className: Object(o.a)(p.a.container),
+					className: Object(o.a)(x.a.container),
 					role: "button",
-					onClick: () => window.location.href = i
-				}, r.a.createElement(C, {
+					onClick: () => window.location.href = i,
+					style: Object(h.c)(void 0, {
+						theme: d
+					})
+				}, r.a.createElement(_, {
 					onClose: l
 				}), r.a.createElement("div", {
-					className: Object(o.a)(p.a.bodyContainer)
+					className: Object(o.a)(x.a.bodyContainer)
 				}, r.a.createElement("div", {
-					className: Object(o.a)(p.a.bodyContent)
+					className: Object(o.a)(x.a.bodyContent)
 				}, r.a.createElement("h3", {
-					className: p.a.title
-				}, s), r.a.createElement("p", null, n)), null != d ? r.a.createElement("div", {
-					className: Object(o.a)(p.a.thumbnailContainer)
+					className: x.a.title
+				}, s), r.a.createElement("p", null, n)), null != m ? r.a.createElement("div", {
+					className: Object(o.a)(x.a.thumbnailContainer)
 				}, r.a.createElement("img", {
-					src: d
+					src: m
 				})) : null), null != c ? r.a.createElement("div", {
-					className: Object(o.a)(p.a.ctaContainer)
+					className: Object(o.a)(x.a.ctaContainer)
 				}, r.a.createElement("a", {
 					href: i,
-					className: Object(o.a)(p.a.ctaText)
+					className: Object(o.a)(x.a.ctaText)
 				}, c, r.a.createElement(a.a, {
+					className: Object(o.a)(x.a.ctaCaret),
 					height: "20px"
 				}))) : null)
 			}
@@ -189,4 +196,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeedAnnouncementCard.014b4d3d50f294e94fbf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeedAnnouncementCard.6bebdc06135e55803b5d.js.map
