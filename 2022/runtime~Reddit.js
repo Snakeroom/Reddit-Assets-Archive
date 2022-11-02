@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.175e58fef7d794153e17.js
-// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.0678c7baaf8893540054.js
+// Retrieved at 11/2/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
@@ -1424,7 +1424,7 @@
 						"CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~1fdd9b9b": "8cc71c5764714ad760ab",
 						"CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32": "9765169f7a0404a4889f",
 						"ModQueuePages~reddit-components-ModHub-Content-ModQueue": "a5ec5232ac8cf0b92cbf",
-						ModQueuePages: "5e3a68f26cd6badef244",
+						ModQueuePages: "f4b13bbf274084c7d8c9",
 						"CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5": "eb7b1aa2088b70e9aca1",
 						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab": "872b1d356c42e2a48270",
 						"CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e": "e5807366e32166ed38ca",
@@ -1482,7 +1482,7 @@
 						InboxPages: "558ce519df9ea6486195",
 						InboxTooltip: "4afc4ad967405ef4ad60",
 						MatrixChat: "8ddd3df5ae7588952710",
-						ModQueue: "82ce20a0b2a9686c2e5f",
+						ModQueue: "e642ede2e4f8af03034f",
 						ModToMemberShareModal: "7fa0cd184c8d0b3461e6",
 						ModerationDropdowns: "0c19f6023a85d45b6914",
 						MultiredditAddSubredditModal: "2a1ec63880c270323ade",
@@ -1572,7 +1572,7 @@
 						"vendors~PostCreation": "a2355262c2d34d688b8f",
 						PostCreation: "2740ca63ee1dad0bd473",
 						"vendors~ModerationPages": "94c34813eaf24a1890ea",
-						ModerationPages: "261b083e4c7f1c384c1b",
+						ModerationPages: "917b0b4f6d245cabe2ed",
 						"vendors~ModStatsChart~Settings~ViewsTooltip": "ca7c845d62fd39d960b6",
 						"vendors~Settings": "86b1cfc53320ea8eef91",
 						Settings: "fd9d45c2d37d26471c86",
@@ -1814,4 +1814,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.175e58fef7d794153e17.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.0678c7baaf8893540054.js.map

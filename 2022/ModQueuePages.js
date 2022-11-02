@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.5e3a68f26cd6badef244.js
-// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.f4b13bbf274084c7d8c9.js
+// Retrieved at 11/2/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -970,7 +970,8 @@
 				}(r, s.after));
 				const a = {};
 				s.sort === b.a.OldestFirst ? a.last = 25 : a.first = 25;
-				const d = Object(g.a)(r);
+				const d = Object(g.a)(r),
+					c = s.subreddit ? [s.subreddit] : [];
 				return {
 					queueType: y[n],
 					moderatedAfter: s.moderatedAfter,
@@ -978,15 +979,15 @@
 					...!!o && {
 						itemTypes: o
 					},
-					...!!s.subreddit && {
-						subredditNames: Array.isArray(s.subreddit) ? s.subreddit : [s.subreddit]
-					},
+					subredditNames: c,
 					...!!s.profile && {
 						subredditIds: [s.profile]
 					},
 					sort: s.sort === b.a.MostReportedFirst ? O.C.SortReports : O.C.SortDate,
 					...i,
-					includeModActivitySummaries: d
+					includeAllModActivitySummaries: d && 0 === c.length,
+					includeModActivitySummariesByNames: d && c.length > 0,
+					isModqueueListing: 0 === c.length
 				}
 			}
 			var I;
@@ -1031,17 +1032,18 @@
 			function T(e) {
 				let {
 					modQueueItems: t,
-					identity: n
+					identity: n,
+					moderatedSubredditActivityByNames: s
 				} = e;
-				var s, r, o, i, a;
-				const d = {
+				var r, o, i, a, d;
+				const c = {
 					posts: {},
 					comments: {},
 					reports: {},
 					modActivitySummaries: {},
 					modqueue: [],
 					authorFlair: {},
-					moderatedAfter: (null === (s = null == n ? void 0 : n.redditor.moderatedSubreddits) || void 0 === s ? void 0 : s.pageInfo.hasNextPage) ? null === (r = null == n ? void 0 : n.redditor.moderatedSubreddits) || void 0 === r ? void 0 : r.pageInfo.endCursor : null,
+					moderatedAfter: (null === (r = null == n ? void 0 : n.redditor.moderatedSubreddits) || void 0 === r ? void 0 : r.pageInfo.hasNextPage) ? null === (o = null == n ? void 0 : n.redditor.moderatedSubreddits) || void 0 === o ? void 0 : o.pageInfo.endCursor : null,
 					moderatingProfiles: {},
 					profiles: {},
 					listingOrder: [],
@@ -1051,22 +1053,39 @@
 					userFlair: {},
 					users: {}
 				};
-				if (!t) return d;
-				if (!t.edges) return d;
-				const c = null === (o = null == n ? void 0 : n.redditor.moderatedSubredditActivity) || void 0 === o ? void 0 : o.edges.reduce((e, t) => {
-					var n;
-					if (!(null === (n = null == t ? void 0 : t.node) || void 0 === n ? void 0 : n.moderation)) return e;
-					const {
-						subreddit: s,
-						summary: r
-					} = Object(k.a)(t.node);
-					return e.summaries[t.node.id] = r, e.subreddits[t.node.id] = s, e
-				}, {
-					subreddits: {},
-					summaries: {}
-				});
-				d.modActivitySummaries = (null == c ? void 0 : c.summaries) || {};
-				const l = null === (a = null === (i = null == n ? void 0 : n.redditor.moderatedSubreddits) || void 0 === i ? void 0 : i.edges) || void 0 === a ? void 0 : a.reduce((e, t) => {
+				if (!t) return c;
+				if (!t.edges) return c;
+				const l = null === (i = null == n ? void 0 : n.redditor.moderatedSubredditActivity) || void 0 === i ? void 0 : i.edges.reduce((e, t) => {
+						var n;
+						if (!(null === (n = null == t ? void 0 : t.node) || void 0 === n ? void 0 : n.moderation)) return e;
+						const {
+							subreddit: s,
+							summary: r
+						} = Object(k.a)(t.node);
+						return e.summaries[t.node.id] = r, e.subreddits[t.node.id] = s, e
+					}, {
+						subreddits: {},
+						summaries: {}
+					}),
+					m = null == s ? void 0 : s.reduce((e, t) => {
+						if ("Subreddit" !== (null == t ? void 0 : t.__typename)) return e;
+						if (!(null == t ? void 0 : t.modPermissions)) return e;
+						if (e.moderatingSubreddits[t.id] = M(t.modPermissions), !(null == t ? void 0 : t.moderation)) return e;
+						const {
+							subreddit: n,
+							summary: s
+						} = Object(k.a)(t);
+						return e.summaries[t.id] = s, e.subreddits[t.id] = n, e
+					}, {
+						subreddits: {},
+						summaries: {},
+						moderatingSubreddits: {}
+					});
+				c.modActivitySummaries = {
+					...null == l ? void 0 : l.summaries,
+					...null == m ? void 0 : m.summaries
+				};
+				const u = null === (d = null === (a = null == n ? void 0 : n.redditor.moderatedSubreddits) || void 0 === a ? void 0 : a.edges) || void 0 === d ? void 0 : d.reduce((e, t) => {
 					var n;
 					if (!(null === (n = null == t ? void 0 : t.node) || void 0 === n ? void 0 : n.modPermissions)) return e;
 					const s = t.node.modPermissions;
@@ -1075,30 +1094,33 @@
 					subreddits: {},
 					moderatingSubreddits: {}
 				});
-				return d.moderatingSubreddits = (null == l ? void 0 : l.moderatingSubreddits) || {}, d.subreddits = {
-					...null == c ? void 0 : c.subreddits,
-					...null == l ? void 0 : l.subreddits
+				return c.moderatingSubreddits = {
+					...null == u ? void 0 : u.moderatingSubreddits,
+					...null == m ? void 0 : m.moderatingSubreddits
+				}, c.subreddits = {
+					...null == l ? void 0 : l.subreddits,
+					...null == u ? void 0 : u.subreddits
 				}, t.edges.forEach(e => {
 					var t, n, s, r, o, i, a;
 					if (!e) return;
 					const {
-						node: c
+						node: d
 					} = e;
-					if (!c) return;
+					if (!d) return;
 					const {
 						__typename: l,
 						subredditInfo: m
-					} = c;
+					} = d;
 					if (!m) return;
 					const {
 						id: u
 					} = m;
-					if (d.subreddits[u] = Object(C.a)(m), d.moderatingSubreddits[u] || "Subreddit" !== (null == m ? void 0 : m.__typename) || (d.moderatingSubreddits[u] = M(m.modPermissions)), !d.postFlair[u] && "Subreddit" === m.__typename) {
+					if (c.subreddits[u] = Object(C.a)(m), c.moderatingSubreddits[u] || "Subreddit" !== (null == m ? void 0 : m.__typename) || (c.moderatingSubreddits[u] = M(m.modPermissions)), !c.postFlair[u] && "Subreddit" === m.__typename) {
 						const {
 							position: e,
 							isEnabled: n
 						} = (null == m ? void 0 : m.postFlairSettings) || {};
-						d.postFlair[u] = {
+						c.postFlair[u] = {
 							displaySettings: {
 								position: null == e ? void 0 : e.toLowerCase(),
 								isEnabled: n
@@ -1139,23 +1161,23 @@
 					if (l === I.Comment || l === I.ChatComment) {
 						const {
 							commentInfo: e
-						} = c;
+						} = d;
 						if (!e) return;
 						const t = Object(_.a)(e);
 						if (null === (n = e.moderationInfo) || void 0 === n ? void 0 : n.verdictBy) {
 							const t = N(null === (s = e.moderationInfo) || void 0 === s ? void 0 : s.verdictBy);
-							t.username && (d.users[null == t ? void 0 : t.username] = t)
+							t.username && (c.users[null == t ? void 0 : t.username] = t)
 						}
-						d.comments[t.id] = t, d.listingOrder.push({
+						c.comments[t.id] = t, c.listingOrder.push({
 							id: t.id,
 							type: "comment"
-						}), d.modqueue.push(t.id);
+						}), c.modqueue.push(t.id);
 						const {
 							authorInfo: o,
 							authorFlair: i
 						} = e, a = i ? null === (r = Object(E.a)(i)) || void 0 === r ? void 0 : r[0] : null;
-						d.authorFlair[u] = {
-							...d.authorFlair[u],
+						c.authorFlair[u] = {
+							...c.authorFlair[u],
 							...(null == o ? void 0 : o.name) ? {
 								[null == o ? void 0 : o.name]: a
 							} : {}
@@ -1172,28 +1194,28 @@
 								type: "user",
 								reason: e[0]
 							})
-						}), d.reports[t.id] = l
+						}), c.reports[t.id] = l
 					}
 					if (l === I.Post) {
 						const {
 							postInfo: e
-						} = c;
+						} = d;
 						if (null === (o = null == e ? void 0 : e.moderationInfo) || void 0 === o ? void 0 : o.verdictBy) {
 							const t = N(null === (i = e.moderationInfo) || void 0 === i ? void 0 : i.verdictBy);
-							t.username && (d.users[null == t ? void 0 : t.username] = t)
+							t.username && (c.users[null == t ? void 0 : t.username] = t)
 						}
 						if (!e) return;
 						const t = Object(j.f)(e);
-						d.posts[t.id] = t, d.listingOrder.push({
+						c.posts[t.id] = t, c.listingOrder.push({
 							id: t.id,
 							type: "post"
-						}), d.modqueue.push(t.id);
+						}), c.modqueue.push(t.id);
 						const {
 							authorInfo: n,
 							authorFlair: s
 						} = e, r = s ? null === (a = Object(E.a)(s)) || void 0 === a ? void 0 : a[0] : null;
-						d.authorFlair[u] = {
-							...d.authorFlair[u],
+						c.authorFlair[u] = {
+							...c.authorFlair[u],
 							...(null == n ? void 0 : n.name) ? {
 								[null == n ? void 0 : n.name]: r
 							} : {}
@@ -1210,9 +1232,9 @@
 								type: "user",
 								reason: e[0]
 							})
-						}), d.reports[t.id] = l
+						}), c.reports[t.id] = l
 					}
-				}), d
+				}), c
 			}
 			var R = n("./src/reddit/models/ModQueue/index.ts"),
 				A = n("./src/reddit/models/Toast/index.ts"),
@@ -8211,4 +8233,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.5e3a68f26cd6badef244.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.f4b13bbf274084c7d8c9.js.map

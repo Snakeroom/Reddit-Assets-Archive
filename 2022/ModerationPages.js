@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.261b083e4c7f1c384c1b.js
-// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.917b0b4f6d245cabe2ed.js
+// Retrieved at 11/2/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -6404,7 +6404,8 @@
 				}(r, s.after));
 				const a = {};
 				s.sort === b.a.OldestFirst ? a.last = 25 : a.first = 25;
-				const d = Object(v.a)(r);
+				const d = Object(v.a)(r),
+					c = s.subreddit ? [s.subreddit] : [];
 				return {
 					queueType: k[n],
 					moderatedAfter: s.moderatedAfter,
@@ -6412,15 +6413,15 @@
 					...!!o && {
 						itemTypes: o
 					},
-					...!!s.subreddit && {
-						subredditNames: Array.isArray(s.subreddit) ? s.subreddit : [s.subreddit]
-					},
+					subredditNames: c,
 					...!!s.profile && {
 						subredditIds: [s.profile]
 					},
 					sort: s.sort === b.a.MostReportedFirst ? x.C.SortReports : x.C.SortDate,
 					...i,
-					includeModActivitySummaries: d
+					includeAllModActivitySummaries: d && 0 === c.length,
+					includeModActivitySummariesByNames: d && c.length > 0,
+					isModqueueListing: 0 === c.length
 				}
 			}
 			var w;
@@ -6465,17 +6466,18 @@
 			function P(e) {
 				let {
 					modQueueItems: t,
-					identity: n
+					identity: n,
+					moderatedSubredditActivityByNames: s
 				} = e;
-				var s, r, o, i, a;
-				const d = {
+				var r, o, i, a, d;
+				const c = {
 					posts: {},
 					comments: {},
 					reports: {},
 					modActivitySummaries: {},
 					modqueue: [],
 					authorFlair: {},
-					moderatedAfter: (null === (s = null == n ? void 0 : n.redditor.moderatedSubreddits) || void 0 === s ? void 0 : s.pageInfo.hasNextPage) ? null === (r = null == n ? void 0 : n.redditor.moderatedSubreddits) || void 0 === r ? void 0 : r.pageInfo.endCursor : null,
+					moderatedAfter: (null === (r = null == n ? void 0 : n.redditor.moderatedSubreddits) || void 0 === r ? void 0 : r.pageInfo.hasNextPage) ? null === (o = null == n ? void 0 : n.redditor.moderatedSubreddits) || void 0 === o ? void 0 : o.pageInfo.endCursor : null,
 					moderatingProfiles: {},
 					profiles: {},
 					listingOrder: [],
@@ -6485,22 +6487,39 @@
 					userFlair: {},
 					users: {}
 				};
-				if (!t) return d;
-				if (!t.edges) return d;
-				const c = null === (o = null == n ? void 0 : n.redditor.moderatedSubredditActivity) || void 0 === o ? void 0 : o.edges.reduce((e, t) => {
-					var n;
-					if (!(null === (n = null == t ? void 0 : t.node) || void 0 === n ? void 0 : n.moderation)) return e;
-					const {
-						subreddit: s,
-						summary: r
-					} = Object(y.a)(t.node);
-					return e.summaries[t.node.id] = r, e.subreddits[t.node.id] = s, e
-				}, {
-					subreddits: {},
-					summaries: {}
-				});
-				d.modActivitySummaries = (null == c ? void 0 : c.summaries) || {};
-				const l = null === (a = null === (i = null == n ? void 0 : n.redditor.moderatedSubreddits) || void 0 === i ? void 0 : i.edges) || void 0 === a ? void 0 : a.reduce((e, t) => {
+				if (!t) return c;
+				if (!t.edges) return c;
+				const l = null === (i = null == n ? void 0 : n.redditor.moderatedSubredditActivity) || void 0 === i ? void 0 : i.edges.reduce((e, t) => {
+						var n;
+						if (!(null === (n = null == t ? void 0 : t.node) || void 0 === n ? void 0 : n.moderation)) return e;
+						const {
+							subreddit: s,
+							summary: r
+						} = Object(y.a)(t.node);
+						return e.summaries[t.node.id] = r, e.subreddits[t.node.id] = s, e
+					}, {
+						subreddits: {},
+						summaries: {}
+					}),
+					u = null == s ? void 0 : s.reduce((e, t) => {
+						if ("Subreddit" !== (null == t ? void 0 : t.__typename)) return e;
+						if (!(null == t ? void 0 : t.modPermissions)) return e;
+						if (e.moderatingSubreddits[t.id] = T(t.modPermissions), !(null == t ? void 0 : t.moderation)) return e;
+						const {
+							subreddit: n,
+							summary: s
+						} = Object(y.a)(t);
+						return e.summaries[t.id] = s, e.subreddits[t.id] = n, e
+					}, {
+						subreddits: {},
+						summaries: {},
+						moderatingSubreddits: {}
+					});
+				c.modActivitySummaries = {
+					...null == l ? void 0 : l.summaries,
+					...null == u ? void 0 : u.summaries
+				};
+				const m = null === (d = null === (a = null == n ? void 0 : n.redditor.moderatedSubreddits) || void 0 === a ? void 0 : a.edges) || void 0 === d ? void 0 : d.reduce((e, t) => {
 					var n;
 					if (!(null === (n = null == t ? void 0 : t.node) || void 0 === n ? void 0 : n.modPermissions)) return e;
 					const s = t.node.modPermissions;
@@ -6509,30 +6528,33 @@
 					subreddits: {},
 					moderatingSubreddits: {}
 				});
-				return d.moderatingSubreddits = (null == l ? void 0 : l.moderatingSubreddits) || {}, d.subreddits = {
-					...null == c ? void 0 : c.subreddits,
-					...null == l ? void 0 : l.subreddits
+				return c.moderatingSubreddits = {
+					...null == m ? void 0 : m.moderatingSubreddits,
+					...null == u ? void 0 : u.moderatingSubreddits
+				}, c.subreddits = {
+					...null == l ? void 0 : l.subreddits,
+					...null == m ? void 0 : m.subreddits
 				}, t.edges.forEach(e => {
 					var t, n, s, r, o, i, a;
 					if (!e) return;
 					const {
-						node: c
+						node: d
 					} = e;
-					if (!c) return;
+					if (!d) return;
 					const {
 						__typename: l,
 						subredditInfo: u
-					} = c;
+					} = d;
 					if (!u) return;
 					const {
 						id: m
 					} = u;
-					if (d.subreddits[m] = Object(j.a)(u), d.moderatingSubreddits[m] || "Subreddit" !== (null == u ? void 0 : u.__typename) || (d.moderatingSubreddits[m] = T(u.modPermissions)), !d.postFlair[m] && "Subreddit" === u.__typename) {
+					if (c.subreddits[m] = Object(j.a)(u), c.moderatingSubreddits[m] || "Subreddit" !== (null == u ? void 0 : u.__typename) || (c.moderatingSubreddits[m] = T(u.modPermissions)), !c.postFlair[m] && "Subreddit" === u.__typename) {
 						const {
 							position: e,
 							isEnabled: n
 						} = (null == u ? void 0 : u.postFlairSettings) || {};
-						d.postFlair[m] = {
+						c.postFlair[m] = {
 							displaySettings: {
 								position: null == e ? void 0 : e.toLowerCase(),
 								isEnabled: n
@@ -6573,23 +6595,23 @@
 					if (l === w.Comment || l === w.ChatComment) {
 						const {
 							commentInfo: e
-						} = c;
+						} = d;
 						if (!e) return;
 						const t = Object(O.a)(e);
 						if (null === (n = e.moderationInfo) || void 0 === n ? void 0 : n.verdictBy) {
 							const t = N(null === (s = e.moderationInfo) || void 0 === s ? void 0 : s.verdictBy);
-							t.username && (d.users[null == t ? void 0 : t.username] = t)
+							t.username && (c.users[null == t ? void 0 : t.username] = t)
 						}
-						d.comments[t.id] = t, d.listingOrder.push({
+						c.comments[t.id] = t, c.listingOrder.push({
 							id: t.id,
 							type: "comment"
-						}), d.modqueue.push(t.id);
+						}), c.modqueue.push(t.id);
 						const {
 							authorInfo: o,
 							authorFlair: i
 						} = e, a = i ? null === (r = Object(E.a)(i)) || void 0 === r ? void 0 : r[0] : null;
-						d.authorFlair[m] = {
-							...d.authorFlair[m],
+						c.authorFlair[m] = {
+							...c.authorFlair[m],
 							...(null == o ? void 0 : o.name) ? {
 								[null == o ? void 0 : o.name]: a
 							} : {}
@@ -6606,28 +6628,28 @@
 								type: "user",
 								reason: e[0]
 							})
-						}), d.reports[t.id] = l
+						}), c.reports[t.id] = l
 					}
 					if (l === w.Post) {
 						const {
 							postInfo: e
-						} = c;
+						} = d;
 						if (null === (o = null == e ? void 0 : e.moderationInfo) || void 0 === o ? void 0 : o.verdictBy) {
 							const t = N(null === (i = e.moderationInfo) || void 0 === i ? void 0 : i.verdictBy);
-							t.username && (d.users[null == t ? void 0 : t.username] = t)
+							t.username && (c.users[null == t ? void 0 : t.username] = t)
 						}
 						if (!e) return;
 						const t = Object(C.f)(e);
-						d.posts[t.id] = t, d.listingOrder.push({
+						c.posts[t.id] = t, c.listingOrder.push({
 							id: t.id,
 							type: "post"
-						}), d.modqueue.push(t.id);
+						}), c.modqueue.push(t.id);
 						const {
 							authorInfo: n,
 							authorFlair: s
 						} = e, r = s ? null === (a = Object(E.a)(s)) || void 0 === a ? void 0 : a[0] : null;
-						d.authorFlair[m] = {
-							...d.authorFlair[m],
+						c.authorFlair[m] = {
+							...c.authorFlair[m],
 							...(null == n ? void 0 : n.name) ? {
 								[null == n ? void 0 : n.name]: r
 							} : {}
@@ -6644,9 +6666,9 @@
 								type: "user",
 								reason: e[0]
 							})
-						}), d.reports[t.id] = l
+						}), c.reports[t.id] = l
 					}
-				}), d
+				}), c
 			}
 			var R = n("./src/reddit/models/ModQueue/index.ts"),
 				A = n("./src/reddit/models/Toast/index.ts"),
@@ -32858,59 +32880,60 @@
 					}
 				}
 				render() {
+					var e;
 					const {
-						props: e
+						props: t
 					} = this, {
-						hasError: t
-					} = e, n = e.flair || Be, s = Object(Ee.a)(), r = n.templateId, o = r && e.userFlairTemplates[r] || le.a, i = !!o && o.modOnly, a = !Object(ue.a)(n.cssClass || "");
+						hasError: n
+					} = t, s = t.flair || Be, r = Object(Ee.a)(), o = s.templateId, i = o && (null === (e = t.userFlairTemplates) || void 0 === e ? void 0 : e[o]) || le.a, a = !!i && i.modOnly, c = !Object(ue.a)(s.cssClass || "");
 					return d.a.createElement("div", {
-						className: Object(x.a)(ne.a.row, t ? ne.a.hasError : null)
+						className: Object(x.a)(ne.a.row, n ? ne.a.hasError : null)
 					}, d.a.createElement("div", {
 						className: ne.a.errorIndicator
 					}, d.a.createElement(C.a, null)), d.a.createElement(Ce.default, {
 						className: ne.a.userLink,
-						to: `/user/${e.username}`
+						to: `/user/${t.username}`
 					}, d.a.createElement(ye.a, {
-						user: e.username,
-						tooltipId: `grantuserflair--userhovercard--${e.username}`,
-						subredditId: e.subredditId,
+						user: t.username,
+						tooltipId: `grantuserflair--userhovercard--${t.username}`,
+						subredditId: t.subredditId,
 						sendHoverCardEvent: xe.a
-					}, e.username, d.a.createElement("div", {
+					}, t.username, d.a.createElement("div", {
 						className: ne.a.flairContainer
 					}, d.a.createElement(Oe.b, {
-						flair: n
+						flair: s
 					})))), d.a.createElement("div", {
 						className: ne.a.flairDetails
 					}, d.a.createElement("div", {
 						className: ne.a.column
 					}, d.a.createElement(Fe, {
 						onSelectFlairTemplate: this.onSelectFlairTemplate,
-						selectedTemplateId: r,
-						templateIds: e.templateIds,
-						userFlairTemplates: e.userFlairTemplates,
+						selectedTemplateId: o,
+						templateIds: t.templateIds,
+						userFlairTemplates: t.userFlairTemplates,
 						userName: this.props.username
 					})), d.a.createElement("div", {
 						className: ne.a.flairEditColumn
-					}, d.a.createElement(s, {
-						allowBlank: !e.isChanged,
-						emojiPickerId: Ue(e.username),
-						flair: n,
+					}, d.a.createElement(r, {
+						allowBlank: !t.isChanged,
+						emojiPickerId: Ue(t.username),
+						flair: s,
 						flairTemplateType: ke.d.UserFlair,
-						flairTemplate: o,
+						flairTemplate: i,
 						helperTextClass: ne.a.flairEditHelperText,
 						isCompact: !0,
-						isFlairModOnly: i,
+						isFlairModOnly: a,
 						onChange: this.onFlairContentChanged,
-						subredditId: e.subredditId
+						subredditId: t.subredditId
 					})), d.a.createElement("div", {
 						className: ne.a.column
 					}, d.a.createElement("input", {
 						className: Object(x.a)(ne.a.textInput, {
-							[ne.a.cssInputError]: !a
+							[ne.a.cssInputError]: !c
 						}),
-						value: n.cssClass || "",
+						value: s.cssClass || "",
 						onChange: this.onChangeCssClass,
-						disabled: !!o.id
+						disabled: !!i.id
 					})), d.a.createElement("button", {
 						className: ne.a.removeButton,
 						onClick: this.removeFlair
@@ -33065,19 +33088,20 @@
 					return !!i()(e, e => !fe(e)) ? k.a.Pending : t ? k.a.Failed : k.a.Complete
 				}
 				render() {
+					var e;
 					const {
-						props: e,
-						state: t
-					} = this, n = this.getIndicatorStatus(), o = e.pageInfo && (e.pageInfo.hasNextPage || e.pageInfo.hasPreviousPage), i = !e.flairedUserOrder.length && !o;
+						props: t,
+						state: n
+					} = this, o = this.getIndicatorStatus(), i = t.pageInfo && (t.pageInfo.hasNextPage || t.pageInfo.hasPreviousPage), a = !t.flairedUserOrder.length && !i;
 					return d.a.createElement(d.a.Fragment, null, d.a.createElement(v.c, {
 						className: ne.a.topBar
-					}, null !== n && d.a.createElement(S, {
-						status: n
+					}, null !== o && d.a.createElement(S, {
+						status: o
 					})), d.a.createElement(v.a, null, d.a.createElement(v.b, null, r.fbt._("Grant user flair", null, {
 						hk: "N1r42"
 					}), d.a.createElement(h.a, {
 						linkUrl: `${s.a.redditModHelpUrl}/hc/en-us/articles/360028091332`
-					})), !e.isUserFlairEnabled && d.a.createElement(f.a, {
+					})), !t.isUserFlairEnabled && d.a.createElement(f.a, {
 						className: ne.a.disabledBanner,
 						color: R.a.quarantine,
 						icon: d.a.createElement(Q.a, {
@@ -33090,18 +33114,18 @@
 							hk: "3E4WaA"
 						})
 					}), d.a.createElement(T.b, {
-						activeSearchQuery: t.searchTerm,
+						activeSearchQuery: n.searchTerm,
 						onSearch: this.onSearch
-					}, e.pageInfo && !t.searchTerm && d.a.createElement(g.a, {
-						prevTo: Object(u.a)(Object(p.a)(`${e.origin}${e.currentPageUrl}`), {
-							before: e.pageInfo.startCursor
+					}, t.pageInfo && !n.searchTerm && d.a.createElement(g.a, {
+						prevTo: Object(u.a)(Object(p.a)(`${t.origin}${t.currentPageUrl}`), {
+							before: t.pageInfo.startCursor
 						}),
-						prevButtonEnabled: e.pageInfo.hasPreviousPage,
+						prevButtonEnabled: t.pageInfo.hasPreviousPage,
 						prevButtonOnClick: this.onClickPrevPage,
-						nextButtonEnabled: e.pageInfo.hasNextPage,
+						nextButtonEnabled: t.pageInfo.hasNextPage,
 						nextButtonOnClick: this.onClickNextPage,
-						nextTo: Object(u.a)(Object(p.a)(`${e.origin}${e.currentPageUrl}`), {
-							after: e.pageInfo.endCursor
+						nextTo: Object(u.a)(Object(p.a)(`${t.origin}${t.currentPageUrl}`), {
+							after: t.pageInfo.endCursor
 						})
 					})), d.a.createElement("div", {
 						className: ne.a.titleRow
@@ -33153,23 +33177,23 @@
 						text: r.fbt._("CSS classes determine styling for flair in old Reddit", null, {
 							hk: "j4AU"
 						})
-					})))), t.searchTerm ? d.a.createElement(w.a, {
+					})))), n.searchTerm ? d.a.createElement(w.a, {
 						cancelSearch: this.onCancelSearch,
-						noResultsFound: !e.searchResult,
-						searchTerm: t.searchTerm,
-						searchPending: e.isSearchPending
-					}, e.searchResult && this.renderUserRow(e.searchResult)) : e.isFlairedUsersListPending ? d.a.createElement(N.a, null) : i ? d.a.createElement(se, null) : e.flairedUserOrder.map(this.renderUserRow), e.pageInfo && !t.searchTerm && d.a.createElement("div", {
+						noResultsFound: !t.searchResult,
+						searchTerm: n.searchTerm,
+						searchPending: t.isSearchPending
+					}, t.searchResult && this.renderUserRow(t.searchResult)) : t.isFlairedUsersListPending || !(null === (e = t.userFlairData) || void 0 === e ? void 0 : e.templates) ? d.a.createElement(N.a, null) : a ? d.a.createElement(se, null) : t.flairedUserOrder.map(this.renderUserRow), t.pageInfo && !n.searchTerm && d.a.createElement("div", {
 						className: ne.a.bottomBarRow
 					}, d.a.createElement(g.a, {
-						prevTo: Object(u.a)(Object(p.a)(`${e.origin}${e.currentPageUrl}`), {
-							before: e.pageInfo.startCursor
+						prevTo: Object(u.a)(Object(p.a)(`${t.origin}${t.currentPageUrl}`), {
+							before: t.pageInfo.startCursor
 						}),
-						prevButtonEnabled: e.pageInfo.hasPreviousPage,
+						prevButtonEnabled: t.pageInfo.hasPreviousPage,
 						prevButtonOnClick: this.onClickPrevPage,
-						nextButtonEnabled: e.pageInfo.hasNextPage,
+						nextButtonEnabled: t.pageInfo.hasNextPage,
 						nextButtonOnClick: this.onClickNextPage,
-						nextTo: Object(u.a)(Object(p.a)(`${e.origin}${e.currentPageUrl}`), {
-							after: e.pageInfo.endCursor
+						nextTo: Object(u.a)(Object(p.a)(`${t.origin}${t.currentPageUrl}`), {
+							after: t.pageInfo.endCursor
 						})
 					}))))
 				}
@@ -77624,7 +77648,7 @@
 			e.exports = JSON.parse('{"id":"023547ccdaf6"}')
 		},
 		"./src/redditGQL/operations/ModQueueItems.json": function(e) {
-			e.exports = JSON.parse('{"id":"7563ed48e49d"}')
+			e.exports = JSON.parse('{"id":"689b789f8c4d"}')
 		},
 		"./src/redditGQL/operations/ModQueueTriggers.json": function(e) {
 			e.exports = JSON.parse('{"id":"de8696c3b5fd"}')
@@ -77820,4 +77844,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.261b083e4c7f1c384c1b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.917b0b4f6d245cabe2ed.js.map
