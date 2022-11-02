@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.bc2a102867a14d39f654.js
-// Retrieved at 11/1/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.4eeb21b6a1a4b0e7df55.js
+// Retrieved at 11/2/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -873,9 +873,9 @@
 			})), r.d(t, "updateMessage", (function() {
 				return X
 			})), r.d(t, "gildGqlRequested", (function() {
-				return Q
-			})), r.d(t, "triggerLoader", (function() {
 				return Z
+			})), r.d(t, "triggerLoader", (function() {
+				return Q
 			})), r.d(t, "gildPending", (function() {
 				return ee
 			})), r.d(t, "gildFailed", (function() {
@@ -954,7 +954,7 @@
 				K = r("./src/reddit/actions/gold/econPurchase.ts");
 			const Y = Object(s.a)(z.r),
 				X = Object(s.a)(z.v),
-				Q = (e, t) => async (r, s) => {
+				Z = (e, t) => async (r, s) => {
 					const a = s(),
 						o = !Object(W.a)(e) && Object(E.f)(a, {
 							commentId: e
@@ -1067,9 +1067,9 @@
 					} finally {
 						Object(H.b)(H.a.GildingFlow)
 					}
-				}, Z = Object(s.a)(z.u), $ = Object(s.a)(z.q), ee = () => async (e, t) => {
+				}, Q = Object(s.a)(z.u), $ = Object(s.a)(z.q), ee = () => async (e, t) => {
 					e($()), window.setTimeout(() => {
-						t().gild.api.pending && e(Z())
+						t().gild.api.pending && e(Q())
 					}, 2e3)
 				}, te = Object(s.a)(z.p), re = e => async (t, r) => {
 					await t(te(e)), t(Object(u.f)({
@@ -2112,8 +2112,8 @@
 				K = r("./src/reddit/components/GildModalContent/AwardDetailsPane/index.m.less"),
 				Y = r.n(K),
 				X = r("./src/reddit/helpers/awards/message.ts"),
-				Q = r("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				Z = r("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
+				Z = r("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				Q = r("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
 				$ = r("./src/reddit/icons/svgs/Eye/index.tsx"),
 				ee = r("./src/reddit/icons/svgs/Moderate/index.tsx"),
 				te = r("./src/reddit/icons/svgs/CoinV2/index.tsx"),
@@ -2249,7 +2249,7 @@
 						forcePublic: e,
 						isAnonymous: t
 					} = this.props;
-					return e ? null : s.a.createElement(Z.a, {
+					return e ? null : s.a.createElement(Q.a, {
 						className: Y.a.giver,
 						isSelected: t,
 						text: i.fbt._("Make my gift anonymous", null, {
@@ -2281,7 +2281,7 @@
 						className: Object(c.a)(Y.a.textAreaWrapper, {
 							[Y.a.messageTooLong]: o
 						})
-					}, s.a.createElement(Q.t, pe({
+					}, s.a.createElement(Z.t, pe({
 						className: Y.a.textArea,
 						"data-redditstyle": !0,
 						name: "message",
@@ -2733,7 +2733,7 @@
 				}, s.a.createElement("button", {
 					className: Be.a.closeBtn,
 					onClick: r
-				}, s.a.createElement(Q.b, {
+				}, s.a.createElement(Z.b, {
 					className: Be.a.closeBtnIcon
 				})), s.a.createElement("div", {
 					className: Be.a.headerText
@@ -5070,12 +5070,12 @@
 						rtJsonElementProps: o
 					});
 					switch (a) {
-						case h.ag.SmIcon:
+						case h.Zf.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case h.ag.SmIconHc:
+						case h.Zf.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -6304,12 +6304,12 @@
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.Uf
+						experimentName: n.Tf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.ag.SmIcon || t === n.ag.SmIconHc
+					return t === n.Zf.SmIcon || t === n.Zf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -6359,4 +6359,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.bc2a102867a14d39f654.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.4eeb21b6a1a4b0e7df55.js.map

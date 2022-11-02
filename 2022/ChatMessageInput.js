@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.38e3a5284c289071b1a9.js
-// Retrieved at 11/1/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.1214e6c3fd40c5127967.js
+// Retrieved at 11/2/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, s) {},
@@ -1451,8 +1451,7 @@
 					errorType: B.N,
 					hasError: B.v,
 					isChatPost: N.d,
-					isLivePostSpamRateEnabled: Q.j,
-					isOptimisticUIEnabled: Q.i,
+					isLivePostSpamRateEnabled: Q.i,
 					liveStreamingChatCharacterLimit: e => {
 						const t = Object(R.a)(e);
 						return t ? t - 3 : 197
@@ -1561,10 +1560,9 @@
 						const {
 							postId: e,
 							replyComment: t,
-							isOptimisticUIEnabled: s,
-							isLivestreaming: r,
-							dispatchSubmit: n,
-							sendEvent: o
+							isLivestreaming: s,
+							dispatchSubmit: r,
+							sendEvent: n
 						} = this.props;
 						if (this.canSubmit()) {
 							const e = {
@@ -1574,7 +1572,7 @@
 								hasFocus: !0,
 								text: ""
 							};
-							this.cleanInputForm(), n(e, z.i.RICH_TEXT, t), s && setTimeout(() => this.focusOnForm(), 50), this.isAllowedToCreateLiveChatAssociation() && this.associationTimerId && !this.state.messageSent && (this.props.createChatTabAssociation({
+							this.cleanInputForm(), r(e, z.i.RICH_TEXT, t), setTimeout(() => this.focusOnForm(), 50), this.isAllowedToCreateLiveChatAssociation() && this.associationTimerId && !this.state.messageSent && (this.props.createChatTabAssociation({
 								postId: this.props.postId,
 								engagementType: X.o.Participated
 							}), clearTimeout(this.associationTimerId), this.setState({
@@ -1582,7 +1580,7 @@
 								hasCreatedLiveChatAssociation: !0
 							}), !this.isEmbeddedLiveChat() && this.props.fetchLiveChatPosts())
 						}
-						r && o(Object(A.z)(e)), t && o(Object(Y.d)(t.id))
+						s && n(Object(A.z)(e)), t && n(Object(Y.d)(t.id))
 					}, this.canSubmit = () => Boolean(!this.props.pending && this.state.hasChanged && !this.state.showError && (!this.props.isLivePostSpamRateEnabled || !this.state.spamTimeoutDraftKey)), this.state = {
 						hasChanged: !1,
 						showError: e.hasError,
@@ -3047,4 +3045,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.38e3a5284c289071b1a9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.1214e6c3fd40c5127967.js.map

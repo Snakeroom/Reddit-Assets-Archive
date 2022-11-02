@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.7f54f0c6cee060a05f65.js
-// Retrieved at 11/1/2022, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.56b94fd2a0f0bdd7a63f.js
+// Retrieved at 11/2/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -2230,7 +2230,7 @@
 			const D = e => O.d.reCaptchaEnterprise(e) && !Object(T.d)(e),
 				w = e => !!Object(S.c)(e, {
 					experimentEligibilitySelector: Object(I.d)(Object(I.b)(...a.d)),
-					experimentName: f.vf
+					experimentName: f.uf
 				}),
 				j = Object(r.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				C = () => l(e => p()([D, w, e => e.tracking.reCaptchaEnterprise.load === r.a.New], t => t(e)))(async e => {
@@ -4368,7 +4368,7 @@
 							function() {
 								let e = {};
 								A && M.type.length && (Object(X.d)(j, {
-									experimentName: Y.Nc
+									experimentName: Y.Mc
 								}), C && (e = {
 									...M
 								}));
@@ -5014,10 +5014,10 @@
 				b = n("./node_modules/reselect/es/index.js");
 			const h = Object(b.a)(e => Object(f.c)(e, {
 				experimentEligibilitySelector: f.a,
-				experimentName: p.xg
+				experimentName: p.wg
 			}), e => ({
-				promptBeforeClick: e === p.yg.PromptBeforeClick,
-				promptAfterClick: e === p.yg.PromptAfterClick
+				promptBeforeClick: e === p.xg.PromptBeforeClick,
+				promptAfterClick: e === p.xg.PromptAfterClick
 			}));
 			var y = n("./src/reddit/controls/Search/SearchScopePill/index.tsx"),
 				m = n("./src/reddit/controls/Search/SearchBar/index.m.less"),
@@ -25695,7 +25695,7 @@
 					if (!u(e)) return;
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: l,
-						experimentName: a.me,
+						experimentName: a.le,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -25718,9 +25718,9 @@
 				},
 				b = e => !!p(e) && Object(o.c)(e, {
 					experimentEligibilitySelector: u,
-					experimentName: a.ne,
+					experimentName: a.me,
 					expEventOverride: !1
-				}) !== a.oe.Readonly
+				}) !== a.ne.Readonly
 		},
 		"./src/reddit/selectors/experiments/serpTabPreserved.ts": function(e, t, n) {
 			"use strict";
@@ -25731,10 +25731,10 @@
 				s = n("./src/reddit/selectors/telemetry.ts");
 
 			function a(e) {
-				const t = Object(s.q)(e, r.Nc);
+				const t = Object(s.q)(e, r.Mc);
 				return {
 					experimentState: e,
-					isActive: (null == t ? void 0 : t.variant) === r.Td,
+					isActive: (null == t ? void 0 : t.variant) === r.Sd,
 					isBucketed: !!(null == t ? void 0 : t.variant)
 				}
 			}
@@ -25884,4 +25884,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.7f54f0c6cee060a05f65.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.56b94fd2a0f0bdd7a63f.js.map

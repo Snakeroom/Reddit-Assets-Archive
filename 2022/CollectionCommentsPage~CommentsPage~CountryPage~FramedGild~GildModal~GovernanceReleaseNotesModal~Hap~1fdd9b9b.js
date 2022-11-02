@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~1fdd9b9b.74810483737416e72bb1.js
-// Retrieved at 11/1/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~1fdd9b9b.89a04ac86ce827d4e8bf.js
+// Retrieved at 11/2/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~1fdd9b9b"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -150,8 +150,8 @@
 				f = r.a.div("Component", g.a),
 				x = s("./node_modules/lodash/clamp.js"),
 				y = s.n(x),
-				b = s("./node_modules/react-dom/index.js"),
-				S = s.n(b),
+				S = s("./node_modules/react-dom/index.js"),
+				b = s.n(S),
 				P = s("./src/lib/fastdom/index.ts");
 			const E = e => {
 					const t = Math.floor(e / 60).toString();
@@ -253,7 +253,7 @@
 							totalTime: t
 						} = this.props, s = t * (e / 100);
 						isNaN(s) || (this.previewThumbnailVideo && (this.previewThumbnailVideo.currentTime = s), this.previewThumbnailTime.innerHTML = C(s, t));
-						const i = S.a.findDOMNode(this);
+						const i = b.a.findDOMNode(this);
 						if (!i || !i.parentNode) return;
 						const a = i.parentNode;
 						if (!(a instanceof Element)) return;
@@ -513,9 +513,9 @@
 						hk: "2cQV3h"
 					}), y = i.fbt._("Pause", null, {
 						hk: "2YnRgT"
-					}), b = i.fbt._("Exit Fullscreen", null, {
+					}), S = i.fbt._("Exit Fullscreen", null, {
 						hk: "LnrWa"
-					}), S = i.fbt._("Fullscreen", null, {
+					}), b = i.fbt._("Fullscreen", null, {
 						hk: "3JvSdn"
 					}), {
 						currentTime: P
@@ -554,15 +554,15 @@
 					}, i.fbt._("Live", null, {
 						hk: "3bCYlO"
 					})) : o.a.createElement(ee, null, E(V)), v && r, !e && (this.props.isFullScreen ? o.a.createElement(oe, {
-						tooltip: b
-					}, o.a.createElement("button", {
-						"aria-label": b,
-						className: Y.a.button,
-						onClick: this.props.exitFullScreen
-					}, o.a.createElement(c.a, null))) : o.a.createElement(ae, {
 						tooltip: S
 					}, o.a.createElement("button", {
 						"aria-label": S,
+						className: Y.a.button,
+						onClick: this.props.exitFullScreen
+					}, o.a.createElement(c.a, null))) : o.a.createElement(ae, {
+						tooltip: b
+					}, o.a.createElement("button", {
+						"aria-label": b,
 						className: Y.a.button,
 						onClick: this.props.enterFullScreen
 					}, o.a.createElement(d.a, null)))))
@@ -861,8 +861,8 @@
 				f = s("./src/lib/loadWithRetries/index.ts"),
 				x = s("./src/lib/sentry/index.ts"),
 				y = s("./src/reddit/actions/media.ts"),
-				b = s("./src/reddit/actions/preferences.ts"),
-				S = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
+				S = s("./src/reddit/actions/preferences.ts"),
+				b = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
 				P = s("./src/reddit/actions/video.ts"),
 				E = s("./node_modules/fbt/lib/FbtPublic.js");
 			var C = e => c.a.createElement("svg", {
@@ -1098,8 +1098,8 @@
 				fe = s("./src/reddit/selectors/telemetry.ts"),
 				xe = s("./src/reddit/icons/svgs/VideoApplyNow/index.tsx"),
 				ye = s("./src/reddit/icons/svgs/VideoContactUs/index.tsx"),
-				be = s("./src/reddit/icons/svgs/VideoGetAQuote/index.tsx"),
-				Se = s("./src/reddit/icons/svgs/VideoGetShowtimes/index.tsx"),
+				Se = s("./src/reddit/icons/svgs/VideoGetAQuote/index.tsx"),
+				be = s("./src/reddit/icons/svgs/VideoGetShowtimes/index.tsx"),
 				Pe = s("./src/reddit/icons/svgs/VideoInstall/index.tsx"),
 				Ee = s("./src/reddit/icons/svgs/VideoLearnMore/index.tsx"),
 				Ce = s("./src/reddit/icons/svgs/VideoPlayNow/index.tsx"),
@@ -1114,8 +1114,8 @@
 				"Apply Now": c.a.createElement(xe.a, null),
 				"Contact Us": c.a.createElement(ye.a, null),
 				"Learn More": c.a.createElement(Ee.a, null),
-				"Get a Quote": c.a.createElement(be.a, null),
-				"Get Showtimes": c.a.createElement(Se.a, null),
+				"Get a Quote": c.a.createElement(Se.a, null),
+				"Get Showtimes": c.a.createElement(be.a, null),
 				Install: c.a.createElement(Pe.a, null),
 				Download: c.a.createElement(Pe.a, null),
 				"Learn More": c.a.createElement(Ee.a, null),
@@ -1268,7 +1268,7 @@
 								isPlaying: t
 							}))
 						},
-						setAutoplayPref: t => e(b.t(t)),
+						setAutoplayPref: t => e(S.t(t)),
 						setVideoFullscreen: () => {
 							s && e(P.F(s))
 						},
@@ -1498,7 +1498,7 @@
 								t.setState({
 									isHovered: !1
 								}), window.clearTimeout(t.hoverTimeout), t.hoverTimeout = void 0
-							}, S.n)
+							}, b.n)
 						} catch (i) {
 							e > 0 ? t.playVideo(e - 1) : (x.c.captureMessage(`Error playing video ${t.props.postId}: ${i}`), t.sendEvent("error", "video"))
 						}
@@ -1888,7 +1888,7 @@
 						videoHasError: f,
 						videoLoaded: x,
 						videoStarted: y
-					} = this.state, b = this.HTML5StreamPlayerVideo, S = v === Ge.SeekBar, P = x || !t, E = !x, C = !l && h, V = g && !S, w = {
+					} = this.state, S = this.HTML5StreamPlayerVideo, b = v === Ge.SeekBar, P = x || !t, E = !x, C = !l && h, V = g && !b, w = {
 						...this.props,
 						bitrateInfo: this.state.bitrateInfo,
 						resolution: this.state.resolution,
@@ -1951,7 +1951,7 @@
 					}), i && c.a.createElement(Z.b, {
 						clickSnoo: this.clickSnoo,
 						controlBarRef: this.setControlBarRef,
-						currentTime: b ? b.currentTime : 0,
+						currentTime: S ? S.currentTime : 0,
 						hasAudio: r,
 						updateContinuousStartTime: this.updateContinuousStartTime,
 						enterFullScreen: this.enterFullScreen,
@@ -2671,10 +2671,10 @@
 				a = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const n = Object(i.a)(e => Object(o.c)(e, {
-					experimentName: a.og,
+					experimentName: a.ng,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				r = Object(i.a)(n, e => e === a.gg)
+				r = Object(i.a)(n, e => e === a.fg)
 		},
 		"./src/reddit/selectors/experiments/videoReactions.ts": function(e, t, s) {
 			"use strict";
@@ -2687,14 +2687,14 @@
 				a = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = s("./src/reddit/selectors/experiments/index.ts");
 			const n = e => Object(a.c)(e, {
-					experimentName: i.yb,
+					experimentName: i.xb,
 					experimentEligibilitySelector: o.e
-				}) === i.Td,
+				}) === i.Sd,
 				r = e => Object(a.c)(e, {
-					experimentName: i.Dc,
+					experimentName: i.Cc,
 					experimentEligibilitySelector: a.a
-				}) === i.Td
+				}) === i.Sd
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~1fdd9b9b.74810483737416e72bb1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~1fdd9b9b.89a04ac86ce827d4e8bf.js.map

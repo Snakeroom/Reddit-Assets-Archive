@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.8abc7f6e15da3f1351ac.js
-// Retrieved at 11/1/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.b531525d775cf6ae1373.js
+// Retrieved at 11/2/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/actions/modQueue/realtime.ts": function(e, t, s) {
@@ -1303,7 +1303,7 @@
 				T = Object(d.c)({
 					currentPage: e => e.platform.currentPage,
 					origin: w.k,
-					isModQChatCommentsFilterEnabled: j.k
+					isModQChatCommentsFilterEnabled: j.j
 				});
 			var R = Object(i.b)(T)(e => a.a.createElement("div", null, a.a.createElement(y.default, {
 					onClick: e.sendEventWithName("content_type_both"),
@@ -1351,8 +1351,8 @@
 				A = s("./src/reddit/selectors/user.ts");
 			const M = e => Object(D.c)(e, {
 				experimentEligibilitySelector: A.R,
-				experimentName: F.ic
-			}) === F.Td;
+				experimentName: F.hc
+			}) === F.Sd;
 			var B = s("./src/reddit/components/ModQueueList/SortByNumReportsTooltip.m.less"),
 				Q = s.n(B);
 			const W = e => {
@@ -1510,7 +1510,7 @@
 					isPostTypeFilterDropdownOpen: Object(O.b)(ie),
 					isSubredditFilterDropdownOpen: Object(O.b)(ae),
 					isPostSortDropdownOpen: Object(O.b)(de),
-					isModQChatCommentsFilterEnabled: j.k,
+					isModQChatCommentsFilterEnabled: j.j,
 					profile: (e, t) => {
 						let {
 							profileName: s
@@ -2713,4 +2713,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.8abc7f6e15da3f1351ac.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.b531525d775cf6ae1373.js.map

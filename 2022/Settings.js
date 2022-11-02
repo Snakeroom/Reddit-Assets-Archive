@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.fbf50dd222a6035439e4.js
-// Retrieved at 11/1/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.be2975fe591366dd5d00.js
+// Retrieved at 11/2/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -8989,8 +8989,8 @@
 				ae = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const re = Object(l.a)(e => Object(ae.c)(e, {
 				experimentEligibilitySelector: M.R,
-				experimentName: w.Q
-			}), e => e === w.ab.Enabled);
+				experimentName: w.P
+			}), e => e === w.Z.Enabled);
 			var ie = n("./src/reddit/selectors/meta.ts"),
 				le = n("./src/reddit/components/Settings/AccountPrefsSection/index.m.less"),
 				ce = n.n(le);
@@ -9086,7 +9086,7 @@
 						})()
 					}, []);
 					const D = Object(r.e)(I.g),
-						R = D === w.ed.TopTwo || D === w.ed.All,
+						R = D === w.dd.TopTwo || D === w.dd.All,
 						F = Object(o.useMemo)(() => Object(se.c)(T), [T]);
 					return c ? a.a.createElement(X, {
 						email: k.email
@@ -10828,8 +10828,8 @@
 				}), e => e === w.b.Enabled),
 				co = Object(l.a)(e => Object(ae.c)(e, {
 					experimentEligibilitySelector: M.R,
-					experimentName: w.N
-				}), e => e === w.X.Enabled);
+					experimentName: w.M
+				}), e => e === w.W.Enabled);
 			var uo = n("./src/lib/hooks/usePrevious.ts"),
 				mo = n("./src/reddit/actions/subreddit/muting.ts"),
 				po = n("./src/telemetry/models/Event.ts");
@@ -12125,9 +12125,9 @@
 					},
 					isDspEnabled: e => {
 						return Object(ae.c)(e, {
-							experimentName: w.od,
+							experimentName: w.nd,
 							experimentEligibilitySelector: ae.a
-						}) === w.Td
+						}) === w.Sd
 					}
 				}),
 				yr = Object(ve.u)(),
@@ -12680,7 +12680,7 @@
 			const r = e => Object(o.c)(e, {
 				experimentName: s.D,
 				experimentEligibilitySelector: () => Object(a.Q)(e)
-			}) === s.Td
+			}) === s.Sd
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -12844,4 +12844,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.fbf50dd222a6035439e4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.be2975fe591366dd5d00.js.map

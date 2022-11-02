@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.451658ddaae61c0adca3.js
-// Retrieved at 11/1/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.ac177d8532ec6e8509c5.js
+// Retrieved at 11/2/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -52,16 +52,16 @@
 			const p = Object(o.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Ke
+					experimentName: u.Je
 				});
-				return Object(u.Bg)(t) ? void 0 : t
+				return Object(u.Ag)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Le
+					experimentName: u.Ke
 				});
-				return Object(u.Bg)(t) ? void 0 : t
-			}, (e, t) => e === u.Me.Enabled && t === u.Me.Enabled);
+				return Object(u.Ag)(t) ? void 0 : t
+			}, (e, t) => e === u.Le.Enabled && t === u.Le.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const E = e => {
@@ -122,8 +122,8 @@
 					playerName: I,
 					playerVersion: y,
 					respectDoNotTrack: D,
-					saltLength: T,
-					saltTimeToLive: N,
+					saltLength: N,
+					saltTimeToLive: T,
 					viewerUserIdLength: A
 				} = {
 					...g,
@@ -276,7 +276,7 @@
 						}
 					}
 				}
-				L.displayName = C(e), L.ANONYMOUS_USER_ID = s, L.DEBUG = d, L.DISABLE_COOKIES = u, L.DURATION_LIVE = 1 / 0, L.ENV_KEY = m, L.LOCAL_STORAGE_SALT_KEY = _, L.LOCAL_STORAGE_VIEWER_USER_ID_KEY = f, L.PLAYER_NAME = I, L.PLAYER_VERSION = y, L.RESPECT_DO_NOT_TRACK = D, L.SALT_LENGTH = T, L.SALT_TIME_TO_LIVE = N, L.STREAM_TYPE_LIVE = "live", L.STREAM_TYPE_ON_DEMAND = "on-demand", L.VIEWER_USER_ID_LENGTH = A;
+				L.displayName = C(e), L.ANONYMOUS_USER_ID = s, L.DEBUG = d, L.DISABLE_COOKIES = u, L.DURATION_LIVE = 1 / 0, L.ENV_KEY = m, L.LOCAL_STORAGE_SALT_KEY = _, L.LOCAL_STORAGE_VIEWER_USER_ID_KEY = f, L.PLAYER_NAME = I, L.PLAYER_VERSION = y, L.RESPECT_DO_NOT_TRACK = D, L.SALT_LENGTH = N, L.SALT_TIME_TO_LIVE = T, L.STREAM_TYPE_LIVE = "live", L.STREAM_TYPE_ON_DEMAND = "on-demand", L.VIEWER_USER_ID_LENGTH = A;
 				const x = Object(n.forwardRef)((e, t) => r.a.createElement(L, O({}, e, {
 						forwardedRef: t
 					}))),
@@ -392,9 +392,9 @@
 			})), s.d(t, "g", (function() {
 				return D
 			})), s.d(t, "h", (function() {
-				return T
-			})), s.d(t, "i", (function() {
 				return N
+			})), s.d(t, "i", (function() {
+				return T
 			}));
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
@@ -622,7 +622,7 @@
 					} : {}
 				}
 			}));
-			var T = Object(i.b)(() => Object(o.c)({
+			var N = Object(i.b)(() => Object(o.c)({
 				subredditOrProfile: (e, t) => Object(E.Q)(e, {
 					identifier: t
 				})
@@ -637,7 +637,7 @@
 					url: e.subredditOrProfile.title
 				}
 			}));
-			var N = Object(i.b)(() => Object(o.c)({
+			var T = Object(i.b)(() => Object(o.c)({
 				subreddit: (e, t) => {
 					let {
 						subredditId: s
@@ -691,8 +691,8 @@
 				I = s("./src/reddit/helpers/trackers/rpan.ts"),
 				y = s("./src/reddit/models/PublicAccessNetwork/index.ts"),
 				D = s("./src/reddit/models/Vote/index.ts"),
-				T = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
-				N = s("./src/reddit/selectors/platform.ts"),
+				N = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
+				T = s("./src/reddit/selectors/platform.ts"),
 				A = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
 				L = s("./src/reddit/selectors/user.ts"),
 				x = s("./src/reddit/components/ClassicPost/Placeholder.tsx"),
@@ -701,8 +701,8 @@
 				P = s("./src/reddit/components/Flatlist/ResponsiveRow.tsx"),
 				U = s("./src/reddit/components/HlsVideo/index.tsx"),
 				w = s("./src/reddit/components/OverflowMenu/index.tsx"),
-				M = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
-				k = s("./src/reddit/components/PostLeftRail/index.tsx"),
+				k = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
+				M = s("./src/reddit/components/PostLeftRail/index.tsx"),
 				V = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				H = s("./src/reddit/controls/Dropdown/Row.tsx"),
 				F = s("./src/reddit/controls/InternalLink/index.tsx"),
@@ -719,7 +719,7 @@
 			}), Q = Object(i.b)(() => Object(o.c)({
 				autoplay: L.c,
 				isLoggedIn: L.R,
-				isOverlayOpen: N.j,
+				isOverlayOpen: T.j,
 				location: (e, t) => {
 					let {
 						listingName: s
@@ -745,9 +745,9 @@
 					})
 				},
 				streamById: e => t => Object(A.l)(e, t),
-				rpanDuThresholdVariant: T.h,
-				inRpanDUPreloadExperiment: T.b,
-				inRpanDuTargetingExperiment: T.c
+				rpanDuThresholdVariant: N.h,
+				inRpanDUPreloadExperiment: N.b,
+				inRpanDuTargetingExperiment: N.c
 			}), (e, t) => ({
 				onHideRpanUnit: (s, n) => e(Object(h.F)(t.listingName, s, {
 					showToast: n.showToast
@@ -941,14 +941,14 @@
 							[q.a.classic]: e === S.g.Classic,
 							[q.a.compact]: e === S.g.Compact
 						}, this.props.className)
-					}, e !== S.g.Large && r.a.createElement(k.b, {
+					}, e !== S.g.Large && r.a.createElement(M.b, {
 						className: q.a.leftRail,
 						withoutComputedStyles: e === S.g.Compact
 					}, r.a.createElement(ne, {
 						isVertical: !0
 					}), e === S.g.Compact && r.a.createElement(ne, {
 						isVertical: !1
-					})), r.a.createElement(M.a, {
+					})), r.a.createElement(k.a, {
 						className: q.a.backgroundWrapper,
 						onClick: this.onHeaderClicked
 					}, t))
@@ -1103,7 +1103,7 @@
 							})
 						})
 					}, {
-						threshold: t ? Object(T.g)(t) : .01
+						threshold: t ? Object(N.g)(t) : .01
 					}), this.intersectionObserver.observe(e), this.loadingIntersectionObserver = new IntersectionObserver(e => {
 						e.forEach(e => {
 							this.setState({
@@ -1111,7 +1111,7 @@
 							})
 						})
 					}, {
-						threshold: t ? Object(T.g)(t) : .01,
+						threshold: t ? Object(N.g)(t) : .01,
 						rootMargin: s ? "400%" : "0px"
 					}), this.loadingIntersectionObserver.observe(e))
 				}
@@ -1421,9 +1421,9 @@
 			})), s.d(t, "e", (function() {
 				return D
 			})), s.d(t, "x", (function() {
-				return T
-			})), s.d(t, "u", (function() {
 				return N
+			})), s.d(t, "u", (function() {
+				return T
 			})), s.d(t, "a", (function() {
 				return A
 			})), s.d(t, "s", (function() {
@@ -1577,13 +1577,13 @@
 					noun: "edit_recurring_post",
 					...i(e)
 				}),
-				T = () => e => ({
+				N = () => e => ({
 					source: "recurring_post_composer",
 					action: "view",
 					noun: "recurring_post_composer",
 					...i(e)
 				}),
-				N = () => (e, t) => ({
+				T = () => (e, t) => ({
 					source: "recurring_post_composer",
 					action: "click",
 					noun: "update",
@@ -1871,14 +1871,14 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/experiments/index.ts");
 			const o = e => Object(r.c)(e, {
-					experimentName: n.yb,
+					experimentName: n.xb,
 					experimentEligibilitySelector: i.e
-				}) === n.Td,
+				}) === n.Sd,
 				a = e => Object(r.c)(e, {
-					experimentName: n.Dc,
+					experimentName: n.Cc,
 					experimentEligibilitySelector: r.a
-				}) === n.Td
+				}) === n.Sd
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.451658ddaae61c0adca3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.ac177d8532ec6e8509c5.js.map
