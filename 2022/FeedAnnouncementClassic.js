@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeedAnnouncementClassic.d6f60df8e9122413ad81.js
-// Retrieved at 10/31/2022, 7:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeedAnnouncementClassic.ae0dfcdaf495270a05b2.js
+// Retrieved at 11/2/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeedAnnouncementClassic"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, a) {
@@ -106,20 +106,20 @@
 				h = a("./src/reddit/icons/fonts/index.tsx"),
 				_ = a("./src/reddit/components/FeedAnnouncement/utils.ts"),
 				p = a("./src/reddit/components/FeedAnnouncement/FeedAnnouncementClassic/index.m.less"),
-				v = a.n(p);
-			const x = e => {
+				A = a.n(p);
+			const C = e => {
 				let {
 					imgUrl: t,
 					isCompact: a
 				} = e;
 				return a ? i.a.createElement("div", {
-					className: Object(c.a)(v.a.thumbnailIcon)
+					className: Object(c.a)(A.a.thumbnailIcon)
 				}, null == t ? i.a.createElement(h.a, {
 					name: "text_post"
 				}) : i.a.createElement(h.a, {
 					name: "image_post"
 				})) : null == t ? null : i.a.createElement("div", {
-					className: Object(c.a)(v.a.thumbnailContainer)
+					className: Object(c.a)(A.a.thumbnailContainer)
 				}, i.a.createElement("img", {
 					src: t
 				}))
@@ -133,36 +133,36 @@
 					url: d,
 					layout: h,
 					onClose: p
-				} = e, C = Object(_.a)(t), E = h === b.g.Compact;
+				} = e, v = Object(_.a)(t), x = h === b.g.Compact;
 				return i.a.createElement("div", {
 					className: Object(c.a)({
-						[v.a.container]: !0,
-						[v.a.isCompact]: E
+						[A.a.container]: !0,
+						[A.a.isCompact]: x
 					}),
 					role: "button",
 					onClick: () => window.location.href = d
 				}, i.a.createElement("div", {
 					className: Object(c.a)({
-						[v.a.leftRail]: !0,
-						[v.a.isCompact]: E
+						[A.a.leftRail]: !0,
+						[A.a.isCompact]: x
 					})
 				}, i.a.createElement("div", {
-					className: Object(c.a)(v.a.horizontalVotes)
+					className: Object(c.a)(A.a.horizontalVotes)
 				}, i.a.createElement(m, null)), i.a.createElement("div", {
-					className: Object(c.a)(v.a.verticalVotes)
+					className: Object(c.a)(A.a.verticalVotes)
 				}, i.a.createElement(r.a, null))), i.a.createElement("div", {
-					className: Object(c.a)(v.a.innerContainer)
-				}, i.a.createElement(x, {
-					imgUrl: C,
-					isCompact: E
+					className: Object(c.a)(A.a.innerContainer)
+				}, i.a.createElement(C, {
+					imgUrl: v,
+					isCompact: x
 				}), i.a.createElement("div", {
-					className: Object(c.a)(v.a.contentContainer)
+					className: Object(c.a)(A.a.contentContainer)
 				}, i.a.createElement("div", {
-					className: Object(c.a)(v.a.headerContainer)
+					className: Object(c.a)(A.a.headerContainer)
 				}, i.a.createElement("h3", {
-					className: Object(c.a)(v.a.title, v.a.ellipsis)
+					className: Object(c.a)(A.a.title, A.a.ellipsis)
 				}, o), i.a.createElement("button", {
-					className: v.a.headerCloseButton,
+					className: A.a.headerCloseButton,
 					onClick: e => {
 						e.stopPropagation(), p()
 					},
@@ -170,16 +170,16 @@
 						hk: "4CfMwa"
 					})
 				}, i.a.createElement(u.b, null))), i.a.createElement("p", {
-					className: Object(c.a)(v.a.body, v.a.ellipsis)
+					className: Object(c.a)(A.a.body, A.a.ellipsis)
 				}, a), i.a.createElement("div", {
-					className: Object(c.a)(v.a.fromReddit)
+					className: Object(c.a)(A.a.fromReddit)
 				}, s.fbt._("From Reddit", null, {
 					hk: "1Sazf8"
 				})), null != l ? i.a.createElement("div", {
-					className: Object(c.a)(v.a.ctaContainer)
+					className: Object(c.a)(A.a.ctaContainer)
 				}, i.a.createElement("a", {
 					href: d,
-					className: Object(c.a)(v.a.ctaText)
+					className: Object(c.a)(A.a.ctaText)
 				}, l, i.a.createElement(n.a, {
 					height: "20px"
 				}))) : null)))
@@ -203,12 +203,12 @@
 					})(e);
 					return c.set(e, t), await t
 				}, i = e => {
-					const [t, a] = Object(s.useState)(null);
+					const [t, a] = Object(s.useState)("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII");
 					return Object(s.useEffect)(() => {
 						const t = (e => e.match(/^images_in_comments/) ? `${n.a.assetPath}/img/announcements/images_in_comments.jpg` : `${n.a.assetPath}/img/announcements/${e}.png`)(e);
 						let s = !1;
 						return o(t).then(e => {
-							!1 === s && !0 === e && a(t)
+							!1 === s && a(e ? t : null)
 						}), () => {
 							s = !0
 						}
@@ -269,4 +269,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeedAnnouncementClassic.d6f60df8e9122413ad81.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeedAnnouncementClassic.ae0dfcdaf495270a05b2.js.map
