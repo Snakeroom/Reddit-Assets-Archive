@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.f9b1c0c5c9bbe156de05.js
-// Retrieved at 11/3/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.3504da54e661756a01e5.js
+// Retrieved at 11/3/2022, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -30357,9 +30357,9 @@
 		"./src/reddit/pages/ErrorPages/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return d
-			})), n.d(t, "a", (function() {
 				return l
+			})), n.d(t, "a", (function() {
+				return u
 			}));
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./node_modules/react/index.js"),
@@ -30369,7 +30369,28 @@
 				c = n.n(a);
 			const d = e => {
 					let {
-						message: t
+						shouldReloadHome: t
+					} = e;
+					return t ? s.a.createElement(i.a, {
+						kind: i.b.ExternalLink,
+						priority: i.c.Primary,
+						className: c.a.primaryRouterLink,
+						href: "/"
+					}, o.fbt._("Go Home", null, {
+						hk: "3E9E1g"
+					})) : s.a.createElement(i.a, {
+						kind: i.b.InternalLink,
+						priority: i.c.Primary,
+						className: c.a.primaryRouterLink,
+						to: "/"
+					}, o.fbt._("Go Home", null, {
+						hk: "3E9E1g"
+					}))
+				},
+				l = e => {
+					let {
+						message: t,
+						shouldReloadHome: n
 					} = e;
 					return s.a.createElement("div", {
 						className: c.a.container
@@ -30377,16 +30398,14 @@
 						className: c.a.title
 					}, t || o.fbt._("Sorry, there doesn't seem to be anything here.", null, {
 						hk: "3VvHek"
-					})), s.a.createElement(i.n, {
-						className: c.a.primaryRouterLink,
-						to: "/"
-					}, o.fbt._("Go Home", null, {
-						hk: "3E9E1g"
-					})))
+					})), s.a.createElement(d, {
+						shouldReloadHome: n
+					}))
 				},
-				l = e => {
+				u = e => {
 					let {
-						message: t
+						message: t,
+						shouldReloadHome: n
 					} = e;
 					return s.a.createElement("div", {
 						className: c.a.container
@@ -30394,12 +30413,9 @@
 						className: c.a.title
 					}, t || o.fbt._("Sorry, You do not have permission to view this page.", null, {
 						hk: "4lRbHD"
-					})), s.a.createElement(i.n, {
-						className: c.a.primaryRouterLink,
-						to: "/"
-					}, o.fbt._("Go Home", null, {
-						hk: "3E9E1g"
-					})))
+					})), s.a.createElement(d, {
+						shouldReloadHome: n
+					}))
 				}
 		},
 		"./src/reddit/pages/PostCreation/index.tsx": function(e, t, n) {
@@ -39365,4 +39381,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.f9b1c0c5c9bbe156de05.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.3504da54e661756a01e5.js.map
