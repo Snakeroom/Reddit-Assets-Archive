@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.035de00efecb88b313f9.js
-// Retrieved at 11/3/2022, 12:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.fd48676c1d929e853a24.js
+// Retrieved at 11/3/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -9594,11 +9594,13 @@
 						var n;
 						return null === (n = i()(e, e => (null == e ? void 0 : e.name.toLowerCase()) === t.toLowerCase())) || void 0 === n ? void 0 : n.id
 					})(ht.subreddits, t) : null;
-				if (ht && !Xe && !Ye) {
-					const e = await Object(Me.a)(c.gqlContext, ht.posts);
-					ht.posts = e;
-					const t = await Object(dt.a)(c.apiContext(), ht.posts, Te);
-					t && (ht.posts = t)
+				if (ht && !Xe) {
+					if (!Ye) {
+						const e = await Object(Me.a)(c.gqlContext, ht.posts);
+						ht.posts = e
+					}
+					const e = await Object(dt.a)(c.apiContext(), ht.posts, Te);
+					e && (ht.posts = e)
 				}
 				a(D.n(lt.status));
 				const Ot = `error-${e}`,
@@ -58296,36 +58298,37 @@
 						token: "",
 						trendingSubredditIds: []
 					},
-					a = e => {
+					a = function(e) {
+						let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
 						if (Object(c.j)(e) || Object(c.i)(e)) return null;
 						if (i.posts[e.id]) return e.id;
-						const t = Object(h.f)(e);
-						i.posts[t.id] = t;
+						const n = Object(h.f)(e);
+						i.posts[n.id] = n;
 						const {
-							crosspostRoot: n
+							crosspostRoot: d
 						} = e;
-						n && n.type === c.a.Post && n.postInfo && a(n.postInfo), Object(c.o)(e).forEach(a);
-						let d = t.id;
-						if (e.authorFlair && (i.authorFlair[t.belongsTo.id] || (i.authorFlair[t.belongsTo.id] = {}), i.authorFlair[t.belongsTo.id][t.author] = Object(m.a)(e.authorFlair)[0]), Object(c.l)(e)) i.profiles[e.profile.id] || (i.profiles[e.profile.id] = Object(g.a)(e.profile));
+						d && d.type === c.a.Post && d.postInfo && a(d.postInfo), Object(c.o)(e).forEach(e => a(e, !0));
+						let l = n.id;
+						if (e.authorFlair && (i.authorFlair[n.belongsTo.id] || (i.authorFlair[n.belongsTo.id] = {}), i.authorFlair[n.belongsTo.id][n.author] = Object(m.a)(e.authorFlair)[0]), Object(c.l)(e)) i.profiles[e.profile.id] || (i.profiles[e.profile.id] = Object(g.a)(e.profile));
 						else if (Object(c.n)(e)) i.subreddits[e.subreddit.id] || (i.subreddits[e.subreddit.id] = Object(x.a)(e.subreddit)), i.postFlair[e.subreddit.id] || (i.postFlair[e.subreddit.id] = Object(b.a)(e.subreddit));
 						else if (Object(c.h)(e)) {
-							const n = Object(h.b)(e);
-							if (!n) return null;
-							d = n, i.posts[n] = {
-								...t,
-								id: n,
-								permalink: `${t.permalink}?instanceId=${encodeURIComponent(n)}`
-							}, i.posts[t.id] || (i.posts[t.id] = {
-								...t,
+							const t = Object(h.b)(e);
+							if (!t) return null;
+							l = t, i.posts[t] = {
+								...n,
+								id: t,
+								permalink: `${n.permalink}?instanceId=${encodeURIComponent(t)}`
+							}, i.posts[n.id] || (i.posts[n.id] = {
+								...n,
 								events: []
-							}), i.postInstances[e.id] || (i.postInstances[e.id] = []), i.postInstances[e.id].push(n)
+							}), i.postInstances[e.id] || (i.postInstances[e.id] = []), i.postInstances[e.id].push(t)
 						} else try {
 							Object(s.a)(e)
-						} catch (l) {
+						} catch (u) {
 							const t = `Received unhandled element type when processing subreddit posts: "${e.__typename}"`;
 							Object(r.b)() || console.warn(t), o.c.captureMessage(t)
 						}
-						return d && i.postIds.push(d), d
+						return !t && l && i.postIds.push(l), l
 					};
 				if (e.forEach(e => a(e)), t) {
 					i.trendingSubredditIds = t.map(e => e.id);
@@ -77860,4 +77863,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.035de00efecb88b313f9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.fd48676c1d929e853a24.js.map

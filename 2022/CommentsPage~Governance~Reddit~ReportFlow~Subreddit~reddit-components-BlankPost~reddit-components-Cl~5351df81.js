@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.c63c4bab21245078de7b.js
-// Retrieved at 11/2/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.273cd39c98fcdb1bb62b.js
+// Retrieved at 11/3/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"], {
 		"./src/lib/name/index.ts": function(e, t, r) {
@@ -3094,11 +3094,13 @@
 						var r;
 						return null === (r = i()(e, e => (null == e ? void 0 : e.name.toLowerCase()) === t.toLowerCase())) || void 0 === r ? void 0 : r.id
 					})(Ot.subreddits, t) : null;
-				if (Ot && !Ye && !Ve) {
-					const e = await Object(Pe.a)(a.gqlContext, Ot.posts);
-					Ot.posts = e;
-					const t = await Object(ct.a)(a.apiContext(), Ot.posts, Ae);
-					t && (Ot.posts = t)
+				if (Ot && !Ye) {
+					if (!Ve) {
+						const e = await Object(Pe.a)(a.gqlContext, Ot.posts);
+						Ot.posts = e
+					}
+					const e = await Object(ct.a)(a.apiContext(), Ot.posts, Ae);
+					e && (Ot.posts = e)
 				}
 				d(U.n(ut.status));
 				const ht = `error-${e}`,
@@ -7604,36 +7606,37 @@
 						token: "",
 						trendingSubredditIds: []
 					},
-					d = e => {
+					d = function(e) {
+						let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
 						if (Object(a.j)(e) || Object(a.i)(e)) return null;
 						if (i.posts[e.id]) return e.id;
-						const t = Object(O.f)(e);
-						i.posts[t.id] = t;
+						const r = Object(O.f)(e);
+						i.posts[r.id] = r;
 						const {
-							crosspostRoot: r
+							crosspostRoot: c
 						} = e;
-						r && r.type === a.a.Post && r.postInfo && d(r.postInfo), Object(a.o)(e).forEach(d);
-						let c = t.id;
-						if (e.authorFlair && (i.authorFlair[t.belongsTo.id] || (i.authorFlair[t.belongsTo.id] = {}), i.authorFlair[t.belongsTo.id][t.author] = Object(b.a)(e.authorFlair)[0]), Object(a.l)(e)) i.profiles[e.profile.id] || (i.profiles[e.profile.id] = Object(j.a)(e.profile));
+						c && c.type === a.a.Post && c.postInfo && d(c.postInfo), Object(a.o)(e).forEach(e => d(e, !0));
+						let u = r.id;
+						if (e.authorFlair && (i.authorFlair[r.belongsTo.id] || (i.authorFlair[r.belongsTo.id] = {}), i.authorFlair[r.belongsTo.id][r.author] = Object(b.a)(e.authorFlair)[0]), Object(a.l)(e)) i.profiles[e.profile.id] || (i.profiles[e.profile.id] = Object(j.a)(e.profile));
 						else if (Object(a.n)(e)) i.subreddits[e.subreddit.id] || (i.subreddits[e.subreddit.id] = Object(I.a)(e.subreddit)), i.postFlair[e.subreddit.id] || (i.postFlair[e.subreddit.id] = Object(m.a)(e.subreddit));
 						else if (Object(a.h)(e)) {
-							const r = Object(O.b)(e);
-							if (!r) return null;
-							c = r, i.posts[r] = {
-								...t,
-								id: r,
-								permalink: `${t.permalink}?instanceId=${encodeURIComponent(r)}`
-							}, i.posts[t.id] || (i.posts[t.id] = {
-								...t,
+							const t = Object(O.b)(e);
+							if (!t) return null;
+							u = t, i.posts[t] = {
+								...r,
+								id: t,
+								permalink: `${r.permalink}?instanceId=${encodeURIComponent(t)}`
+							}, i.posts[r.id] || (i.posts[r.id] = {
+								...r,
 								events: []
-							}), i.postInstances[e.id] || (i.postInstances[e.id] = []), i.postInstances[e.id].push(r)
+							}), i.postInstances[e.id] || (i.postInstances[e.id] = []), i.postInstances[e.id].push(t)
 						} else try {
 							Object(s.a)(e)
-						} catch (u) {
+						} catch (l) {
 							const t = `Received unhandled element type when processing subreddit posts: "${e.__typename}"`;
 							Object(n.b)() || console.warn(t), o.c.captureMessage(t)
 						}
-						return c && i.postIds.push(c), c
+						return !t && u && i.postIds.push(u), u
 					};
 				if (e.forEach(e => d(e)), t) {
 					i.trendingSubredditIds = t.map(e => e.id);
@@ -12156,4 +12159,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.c63c4bab21245078de7b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.273cd39c98fcdb1bb62b.js.map
