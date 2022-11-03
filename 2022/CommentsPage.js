@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.b45c146ef818e6674c5b.js
-// Retrieved at 11/3/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.c2b1dd63ae9a2814ef78.js
+// Retrieved at 11/3/2022, 5:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -7173,8 +7173,8 @@
 					var n, s, r;
 					const o = {
 							authorFlair: {},
-							pinned: new Array,
-							postIds: new Array,
+							pinned: [],
+							postIds: [],
 							posts: {},
 							postFlair: {},
 							profiles: {},
@@ -7194,11 +7194,7 @@
 						e && o.postIds.push(e)
 					}
 					const c = null === (r = null === (s = null == e ? void 0 : e.redditorInfoByName) || void 0 === s ? void 0 : s.profile) || void 0 === r ? void 0 : r.stickyPosts;
-					if (c)
-						for (const {
-								id: d
-							} of c) o.pinned.push(d);
-					if (t) o.token = i.pageInfo.endCursor || "";
+					if (c && (o.pinned = c.map(e => e.id)), t) o.token = i.pageInfo.endCursor || "";
 					else {
 						const {
 							postIds: e
@@ -46698,4 +46694,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.b45c146ef818e6674c5b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.c2b1dd63ae9a2814ef78.js.map

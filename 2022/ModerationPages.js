@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.e46aeb99534c86254e9c.js
-// Retrieved at 11/3/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.d5a30a4f648bc9e77821.js
+// Retrieved at 11/3/2022, 5:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -8570,8 +8570,8 @@
 					var n, s, r;
 					const o = {
 							authorFlair: {},
-							pinned: new Array,
-							postIds: new Array,
+							pinned: [],
+							postIds: [],
 							posts: {},
 							postFlair: {},
 							profiles: {},
@@ -8591,11 +8591,7 @@
 						e && o.postIds.push(e)
 					}
 					const d = null === (r = null === (s = null == e ? void 0 : e.redditorInfoByName) || void 0 === s ? void 0 : s.profile) || void 0 === r ? void 0 : r.stickyPosts;
-					if (d)
-						for (const {
-								id: c
-							} of d) o.pinned.push(c);
-					if (t) o.token = i.pageInfo.endCursor || "";
+					if (d && (o.pinned = d.map(e => e.id)), t) o.token = i.pageInfo.endCursor || "";
 					else {
 						const {
 							postIds: e
@@ -77850,4 +77846,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.e46aeb99534c86254e9c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.d5a30a4f648bc9e77821.js.map

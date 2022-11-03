@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.91e301789f698cbc0875.js
-// Retrieved at 11/3/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.7be2b66c2464b71e9132.js
+// Retrieved at 11/3/2022, 5:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, s) {
@@ -289,8 +289,8 @@
 					var s, r, i;
 					const o = {
 							authorFlair: {},
-							pinned: new Array,
-							postIds: new Array,
+							pinned: [],
+							postIds: [],
 							posts: {},
 							postFlair: {},
 							profiles: {},
@@ -310,11 +310,7 @@
 						e && o.postIds.push(e)
 					}
 					const d = null === (i = null === (r = null == e ? void 0 : e.redditorInfoByName) || void 0 === r ? void 0 : r.profile) || void 0 === i ? void 0 : i.stickyPosts;
-					if (d)
-						for (const {
-								id: c
-							} of d) o.pinned.push(c);
-					if (t) o.token = n.pageInfo.endCursor || "";
+					if (d && (o.pinned = d.map(e => e.id)), t) o.token = n.pageInfo.endCursor || "";
 					else {
 						const {
 							postIds: e
@@ -4149,4 +4145,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.91e301789f698cbc0875.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.7be2b66c2464b71e9132.js.map
