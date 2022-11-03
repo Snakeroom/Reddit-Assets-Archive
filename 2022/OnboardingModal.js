@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.ce509b9bd2df7f245070.js
-// Retrieved at 11/3/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.e0981a5a1786be830e13.js
+// Retrieved at 11/3/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -2398,19 +2398,19 @@
 				} = e;
 				const l = Object(i.d)(),
 					u = Object(we.b)(),
-					m = () => {
+					m = e => {
 						l(Nt(b));
-						const e = Bt(n, s, b);
-						r(e), u(Xe(e))
+						const t = Bt(n, s, b);
+						r(t), e && u(Xe(t))
 					},
 					p = new Array(s.length).fill(0);
 				let b = Object(i.e)(De) || p;
 				Object(a.useEffect)(() => {
 					const e = Bt(n, s, b);
 					u(Je(e))
-				}, [u]), 0 === b.length && (b = new Array(s.length).fill(0), m(), c(!0));
+				}, [u]), 0 === b.length && (b = new Array(s.length).fill(0), m(!1), c(!0));
 				const g = (e, t) => {
-					b[e] = t, m()
+					b[e] = t, m(!0)
 				};
 				return o.a.createElement("div", {
 					className: ht.a.interactivePostBuilder
@@ -5234,4 +5234,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.ce509b9bd2df7f245070.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.e0981a5a1786be830e13.js.map
