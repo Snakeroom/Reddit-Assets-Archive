@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.fa2e32b72ca4c09dbe17.js
-// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.340116d942bd888fa0cf.js
+// Retrieved at 11/3/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -4265,13 +4265,13 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				s = n("./src/reddit/selectors/user.ts");
-			const a = e => o.c.Enabled === Object(r.c)(e, {
+			const a = e => o.b.Enabled === Object(r.c)(e, {
 					experimentEligibilitySelector: s.R,
-					experimentName: o.i
+					experimentName: o.g
 				}),
-				i = e => o.e.Enabled === Object(r.c)(e, {
+				i = e => o.d.Enabled === Object(r.c)(e, {
 					experimentEligibilitySelector: s.R,
-					experimentName: o.m
+					experimentName: o.k
 				})
 		},
 		"./src/reddit/selectors/experiments/reportAd.ts": function(e, t, n) {
@@ -4283,10 +4283,10 @@
 				r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const a = Object(o.a)(e => Object(s.c)(e, {
-					experimentName: r.Mc,
+					experimentName: r.Jc,
 					experimentEligibilitySelector: s.a
 				}), e => e),
-				i = Object(o.a)(a, e => e === r.Ud)
+				i = Object(o.a)(a, e => e === r.Rd)
 		},
 		"./src/redditGQL/operations/CreateLiveAudioRoomOnProfile.json": function(e) {
 			e.exports = JSON.parse('{"id":"e35a47c6aa21"}')
@@ -4332,4 +4332,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.fa2e32b72ca4c09dbe17.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.340116d942bd888fa0cf.js.map

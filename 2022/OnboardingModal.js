@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.96cce4a711aee399b686.js
-// Retrieved at 11/3/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.ce509b9bd2df7f245070.js
+// Retrieved at 11/3/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -437,7 +437,7 @@
 				W = n("./src/lib/initializeClient/installReducer.ts"),
 				U = n("./src/reddit/reducers/features/marketplace/index.ts"),
 				H = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const Q = Object(H.a)(b.Zd);
+			const Q = Object(H.a)(b.Wd);
 			Object(W.a)({
 				features: {
 					marketplace: U.a
@@ -454,7 +454,7 @@
 						sort: d,
 						t: u,
 						correlationId: m
-					} = t, p = Object(A.i)(e), h = Object(M.ab)(e) || Object(M.R)(e), O = Object(L.a)(e), x = Object(B.r)(e), v = Object(F.c)(e), _ = Object(F.g)(e), E = _ === b.ob.LoggedOutUiOnly || _ === b.ob.LoggedOutHomeDefpop, C = Object(G.b)(e), {
+					} = t, p = Object(A.i)(e), h = Object(M.ab)(e) || Object(M.R)(e), O = Object(L.a)(e), x = Object(B.r)(e), v = Object(F.c)(e), _ = Object(F.g)(e), E = _ === b.lb.LoggedOutUiOnly || _ === b.lb.LoggedOutHomeDefpop, C = Object(G.b)(e), {
 						adsSeenCount: j,
 						totalPostsSeenCount: k,
 						sessionStartTime: S
@@ -473,7 +473,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.Cg)(p),
+						includeInterestTopics: !!p && !Object(b.zg)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: h && !(null === (s = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === s ? void 0 : s.total),
@@ -486,7 +486,7 @@
 						},
 						enableMerchandisingUnitAnnouncements: Q(e)
 					};
-					return v ? (E && (C || _ !== b.ob.LoggedOutHomeDefpop) || (N.sort = q.H.Best, N.feedRankingContext.variant = _), N.feedRankingContext.loggedOutAllowNsfw = Object(D.a)(e)) : d && (N.sort = d.toUpperCase()), u && (N.range = u.toUpperCase()), o ? N.pageSize = Object(f.a)(i) : l && (N.pageSize = l), x && x.ad && (N.forceAds = {
+					return v ? (E && (C || _ !== b.lb.LoggedOutHomeDefpop) || (N.sort = q.H.Best, N.feedRankingContext.variant = _), N.feedRankingContext.loggedOutAllowNsfw = Object(D.a)(e)) : d && (N.sort = d.toUpperCase()), u && (N.range = u.toUpperCase()), o ? N.pageSize = Object(f.a)(i) : l && (N.pageSize = l), x && x.ad && (N.forceAds = {
 						ad: x.ad
 					}), r && (N.after = Object(c.a)(r)), N
 				},
@@ -1808,7 +1808,7 @@
 						showAllLanguage: d,
 						toggleLanguageSelection: u
 					} = e;
-					const [m, p] = Object(a.useState)(!1), b = Object(i.e)(Z.eb), g = Object(i.e)(je.g) === Ce.fd.TopTwo, f = Object(i.e)(ke.b), h = Object(_.a)();
+					const [m, p] = Object(a.useState)(!1), b = Object(i.e)(Z.eb), g = Object(i.e)(je.g) === Ce.cd.TopTwo, f = Object(i.e)(ke.b), h = Object(_.a)();
 					Object(a.useEffect)(() => {
 						h(s ? Object(F.H)(f) : Object(F.z)(f))
 					}, [f, s, h]);
@@ -2119,12 +2119,12 @@
 			var gt = (e, t) => {
 					const n = (e => {
 						return {
-							[Ce.rb.Default]: at,
-							[Ce.rb.FruitVeg]: lt,
-							[Ce.rb.Karma]: dt,
-							[Ce.rb.Interactive]: ut(e),
-							[Ce.rb.Randomizer]: mt,
-							[Ce.rb.FruitVegWithBody]: pt
+							[Ce.ob.Default]: at,
+							[Ce.ob.FruitVeg]: lt,
+							[Ce.ob.Karma]: dt,
+							[Ce.ob.Interactive]: ut(e),
+							[Ce.ob.Randomizer]: mt,
+							[Ce.ob.FruitVegWithBody]: pt
 						}
 					})(t);
 					return e in n ? n[e] : at
@@ -3011,7 +3011,7 @@
 				}, [I, y, t, he]), Object(a.useEffect)(() => {
 					y && Object(On.a)(null == S ? void 0 : S.genderCategory, y.success)
 				}, [y, S]);
-				const Oe = Object(i.e)(je.h) === Ce.sb.Removed;
+				const Oe = Object(i.e)(je.h) === Ce.pb.Removed;
 				Object(a.useEffect)(() => {
 					let e = !1;
 					return async function() {
@@ -3034,7 +3034,7 @@
 				const xe = Object(i.e)(ke.b),
 					ve = Object(i.e)(ke.j),
 					_e = Object(i.e)(je.g),
-					Ee = _e === Ce.fd.TopTwo || _e === Ce.fd.All,
+					Ee = _e === Ce.cd.TopTwo || _e === Ce.cd.All,
 					Se = Object(a.useCallback)(async e => {
 						ie(!0);
 						const n = await fn(e, t, ve);
@@ -3053,9 +3053,9 @@
 					Te = Object(i.e)(Z.T),
 					Ie = Object(i.e)(ke.g),
 					we = Object(i.e)(kn.a),
-					Re = we === Ce.ig.CloseOnboarding,
-					Le = we === Ce.ig.SkipTopicSelection,
-					Fe = we === Ce.ig.SmartSignal,
+					Re = we === Ce.fg.CloseOnboarding,
+					Le = we === Ce.fg.SkipTopicSelection,
+					Fe = we === Ce.fg.SmartSignal,
 					Ae = Object(a.useCallback)(() => {
 						s(Object(b.g)(Qt.a.ONBOARDING_MODAL_D2X)), ye && s(Object(g.h)()), h && (r(Object(F.t)()), Object(xn.a)()), Ie && Te && s(Object(m.startChangeUsernameFlow)())
 					}, [s, Te, Ie, h, ye, r]),
@@ -5163,8 +5163,8 @@
 			const a = e => {
 				return !(Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.Ee
-				}) === s.Ud)
+					experimentName: s.Be
+				}) === s.Rd)
 			}
 		},
 		"./src/reddit/selectors/experiments/inAppNotification.ts": function(e, t, n) {
@@ -5183,20 +5183,20 @@
 				a = n("./src/reddit/selectors/experiments/index.ts"),
 				o = n("./src/reddit/selectors/experiments/utils.ts");
 			const i = e => Object(r.c)(e, {
-					experimentName: s.Vb,
+					experimentName: s.Sb,
 					experimentEligibilitySelector: a.e
-				}) === s.cb.topOfFeedWithCTAs,
+				}) === s.Z.topOfFeedWithCTAs,
 				c = e => (e => Object(r.c)(e, {
-					experimentName: s.Vb,
+					experimentName: s.Sb,
 					experimentEligibilitySelector: a.e
-				}) === s.cb.topOfFeedNoCTAs)(e) || i(e),
+				}) === s.Z.topOfFeedNoCTAs)(e) || i(e),
 				l = e => Object(r.c)(e, {
-					experimentName: s.Vb,
+					experimentName: s.Sb,
 					experimentEligibilitySelector: a.e
-				}) === s.cb.floatInFeed,
+				}) === s.Z.floatInFeed,
 				d = e => {
 					const t = Object(r.c)(e, {
-						experimentName: s.Vb,
+						experimentName: s.Sb,
 						experimentEligibilitySelector: a.e
 					});
 					return Object(o.a)(t)
@@ -5234,4 +5234,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.96cce4a711aee399b686.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.ce509b9bd2df7f245070.js.map

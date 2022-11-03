@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.42cee90aac32fe067b2f.js
-// Retrieved at 11/3/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.961f26111b6203cb57da.js
+// Retrieved at 11/3/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./node_modules/lodash/map.js": function(e, t, n) {
@@ -223,9 +223,9 @@
 				q = n("./src/reddit/helpers/correlationIdTracker.ts"),
 				J = n("./src/reddit/helpers/dom/index.ts"),
 				z = n("./src/reddit/helpers/localStorage/index.ts"),
-				X = n("./src/reddit/helpers/sessionStorage/index.ts"),
-				Q = n("./src/reddit/helpers/trackers/commentsPage.ts"),
-				V = n("./src/reddit/models/Comment/index.ts"),
+				Q = n("./src/reddit/helpers/sessionStorage/index.ts"),
+				V = n("./src/reddit/helpers/trackers/commentsPage.ts"),
+				X = n("./src/reddit/models/Comment/index.ts"),
 				$ = n("./src/reddit/models/PostDraft/index.ts"),
 				Y = n("./src/reddit/models/RichTextJson/index.ts"),
 				Z = n("./src/reddit/models/RichTextJson/nodeMakers.ts"),
@@ -238,8 +238,8 @@
 				ie = n("./node_modules/reselect/es/index.js");
 			const ce = Object(ie.a)(e => Object(se.c)(e, {
 				experimentEligibilitySelector: se.a,
-				experimentName: re.Ib
-			}), e => e === re.Ud);
+				experimentName: re.Fb
+			}), e => e === re.Rd);
 			var ae = n("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				de = n("./src/reddit/selectors/platform.ts"),
 				le = n("./src/reddit/selectors/posts.ts"),
@@ -275,7 +275,7 @@
 				ye = async (e, t, n, o, r) => {
 					const s = o.ok && o.body,
 						i = s && s.comment && s.comment.id;
-					await Q.g(e, n, t, r, i)
+					await V.g(e, n, t, r, i)
 				}, Ce = "Toxicity_Warning__Modal", ve = e => async (t, n, o) => {
 					let {
 						gqlContext: r
@@ -302,7 +302,7 @@
 							r = Object(G.c)(e.formData, o.uploads);
 						t(Object(d.k)({
 							actionSource: d.a.Reply
-						})), t(Object(a.openRegisterModal)()), Object(X.d)({
+						})), t(Object(a.openRegisterModal)()), Object(Q.d)({
 							comment: {
 								...e,
 								richTextJSONData: n,
@@ -386,7 +386,7 @@
 						} else {
 							if (N.error) {
 								const e = t && r ? r : Object(G.c)(d, v.uploads);
-								Q.f({
+								V.f({
 									state: v,
 									bodyText: e,
 									postId: s,
@@ -406,7 +406,7 @@
 								text: n
 							}))
 						}
-						ye(g(), c, l, N, null == P ? void 0 : P.metadata).then(() => N.ok && l === T.i.RICH_TEXT ? Object(q.b)(q.a.CommentComposer) : void 0), u || Object(b.d)(), t && Object(X.a)()
+						ye(g(), c, l, N, null == P ? void 0 : P.metadata).then(() => N.ok && l === T.i.RICH_TEXT ? Object(q.b)(q.a.CommentComposer) : void 0), u || Object(b.d)(), t && Object(Q.a)()
 					}
 				},
 				Ie = e => async (t, n, o) => {
@@ -443,7 +443,7 @@
 							r = Object(G.c)(e.formData, o.uploads);
 						t(Object(d.k)({
 							actionSource: d.a.Reply
-						})), t(Object(a.openRegisterModal)()), Object(X.d)({
+						})), t(Object(a.openRegisterModal)()), Object(Q.d)({
 							comment: {
 								...e,
 								richTextJSONData: n,
@@ -512,7 +512,7 @@
 						if (I.error) {
 							if (!j) return;
 							const e = t && o ? o : Object(G.c)(f, g.uploads);
-							Q.f({
+							V.f({
 								state: g,
 								bodyText: e,
 								postId: j.postId,
@@ -526,9 +526,9 @@
 							error: I.error
 						}))
 					}
-					ye(s(), u, O, I, null == _ ? void 0 : _.metadata), Object(b.d)(), t && Object(X.a)()
+					ye(s(), u, O, I, null == _ ? void 0 : _.metadata), Object(b.d)(), t && Object(Q.a)()
 				}, Ee = () => async e => {
-					const t = Object(X.b)();
+					const t = Object(Q.b)();
 					if (t) {
 						const {
 							comment: {
@@ -673,7 +673,7 @@
 					} = e;
 					return async (e, i) => {
 						const c = i();
-						c.user.account && (Q.c(c), e(Ue({
+						c.user.account && (V.c(c), e(Ue({
 							commentId: t,
 							commentsPageKey: o,
 							draftKey: r,
@@ -702,7 +702,7 @@
 						if (!d.user.account) return;
 						e(He({
 							draftKey: o
-						})), Q.d(d);
+						})), V.d(d);
 						const l = Object(G.e)(r, d.uploads),
 							m = r.commentMode;
 						let u;
@@ -792,14 +792,14 @@
 							error: u.error
 						}))
 					}
-				}, Xe = Object(r.a)(pe.C), Qe = Object(r.a)(pe.B), Ve = Object(r.a)(pe.D), $e = (e, t) => async (n, o, r) => {
+				}, Qe = Object(r.a)(pe.C), Ve = Object(r.a)(pe.B), Xe = Object(r.a)(pe.D), $e = (e, t) => async (n, o, r) => {
 					let {
 						apiContext: s
 					} = r;
 					const i = o();
-					n(Xe({
+					n(Qe({
 						id: e
-					})), Q.a(e, i);
+					})), V.a(e, i);
 					const c = await ((e, t) => Object(x.a)(Object(C.a)(e, [S.a]), {
 						endpoint: Object(k.a)(`${e.apiUrl}/api/del`),
 						method: j.ob.POST,
@@ -817,10 +817,10 @@
 						...e,
 						error: e.error || Object(_.a)()
 					}))(s(), e);
-					c.ok ? n(Ve({
+					c.ok ? n(Xe({
 						id: e,
 						postId: t
-					})) : n(Qe({
+					})) : n(Ve({
 						id: e,
 						error: c.error
 					}))
@@ -849,7 +849,7 @@
 						hk: "3ebRql"
 					})));
 					else {
-						const s = t === V.a.FOLLOWED,
+						const s = t === X.a.FOLLOWED,
 							c = {
 								id: e,
 								expiresAt: Date.now() + 6048e5
@@ -1304,17 +1304,17 @@
 					action: t,
 					noun: e
 				}),
-				X = e => ({
+				Q = e => ({
 					subreddit: Object(q.kb)(e),
 					userSubreddit: Object(q.ub)(e)
 				}),
-				Q = e => t => ({
+				V = e => t => ({
 					source: "contest_mode",
 					action: "click",
 					noun: e ? "enable" : "disable",
-					...X
+					...Q
 				});
-			var V = n("./src/reddit/icons/svgs/Dropdown/index.tsx"),
+			var X = n("./src/reddit/icons/svgs/Dropdown/index.tsx"),
 				$ = n("./src/reddit/icons/svgs/Info/index.tsx"),
 				Y = n("./src/reddit/selectors/activeModalId.ts"),
 				Z = n("./src/reddit/selectors/comments.ts"),
@@ -1376,7 +1376,7 @@
 						id: t,
 						noHover: !0,
 						onClick: n
-					}), s.a.createElement(V.b, {
+					}), s.a.createElement(X.b, {
 						className: ie.a.DropdownTriangle,
 						onClick: n
 					}), s.a.createElement(ae, {
@@ -1479,7 +1479,7 @@
 					}, this.setTooltipTargetRef = e => this.tooltipTargetElement = e, this.onOpenHighlightSelector = () => {
 						this.props.onOpenHighlightDropdown(z("dropdown", "click"))
 					}, this.setContestMode = () => {
-						this.props.sendEvent(Q(!this.props.post.contestMode)), this.props.setContestMode(!this.props.post.contestMode)
+						this.props.sendEvent(V(!this.props.post.contestMode)), this.props.setContestMode(!this.props.post.contestMode)
 					}
 				}
 				addSuggestedLabel(e) {
@@ -1540,7 +1540,7 @@
 						noHover: !0,
 						skipRoleAttr: !0,
 						onClick: this.onOpenDropdownClick
-					}), s.a.createElement(V.b, {
+					}), s.a.createElement(X.b, {
 						className: ie.a.DropdownTriangle,
 						onClick: this.onOpenDropdownClick
 					})), i.bucketed && s.a.createElement("div", null, s.a.createElement(H, {
@@ -1807,7 +1807,7 @@
 					q = (null === (o = null == N ? void 0 : N.post) || void 0 === o ? void 0 : o.id) || (null === (x = null === (g = null == N ? void 0 : N.comment) || void 0 === g ? void 0 : g.postInfo) || void 0 === x ? void 0 : x.id);
 				const J = null === (S = null == N ? void 0 : N.subreddit) || void 0 === S ? void 0 : S.id,
 					z = null === (_ = null === (k = null == N ? void 0 : N.awarding) || void 0 === k ? void 0 : k.award) || void 0 === _ ? void 0 : _.id,
-					X = null === (w = null === (I = null == N ? void 0 : N.awarding) || void 0 === I ? void 0 : I.awarder) || void 0 === w ? void 0 : w.id;
+					Q = null === (w = null === (I = null == N ? void 0 : N.awarding) || void 0 === I ? void 0 : I.awarder) || void 0 === w ? void 0 : w.id;
 				if (F === O.a.CommentFollow || F === O.a.PostFollow) {
 					const e = (e => {
 						const t = {},
@@ -1822,7 +1822,7 @@
 					})(R);
 					q = e.postId, G = e.commentId
 				} else F !== O.a.PostReply && F !== O.a.LifecyclePostSuggestions || (G = A);
-				const Q = e => {
+				const V = e => {
 					if (q && G) {
 						const e = Object(c.a)(q, G, Object(b.c)(R)),
 							t = {
@@ -1875,7 +1875,7 @@
 						case O.a.CommentFollow: {
 							const e = U;
 							return U || e || E && D ? r.a.createElement(p.t, {
-								onClick: Q,
+								onClick: V,
 								kind: p.b.InternalLink,
 								to: R,
 								isFullWidth: P,
@@ -1895,16 +1895,16 @@
 							})) : null
 						}
 						case O.a.AwardReceived: {
-							if (!X) return null;
+							if (!Q) return null;
 							const e = e => {
-								e.preventDefault(), X ? K({
+								e.preventDefault(), Q ? K({
 									position: h.d.SECOND,
 									awardId: z
 								}) : T(Object(d.f)(v))
 							};
 							return r.a.createElement(l.b, {
-								userId: X,
-								contextId: X,
+								userId: Q,
+								contextId: Q,
 								onClick: e,
 								isFullWidth: P,
 								priority: p.c.Tertiary,
@@ -2567,11 +2567,11 @@
 				s = n("./node_modules/reselect/es/index.js");
 			const i = Object(s.a)(e => Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: o.Ab
+				experimentName: o.xb
 			}), e => ({
-				bucketed: e === o.Xc.ExpandedSearch || e === o.Xc.CollapsedSearch,
-				collapsed: e === o.Xc.CollapsedSearch,
-				expanded: e === o.Xc.ExpandedSearch
+				bucketed: e === o.Uc.ExpandedSearch || e === o.Uc.CollapsedSearch,
+				collapsed: e === o.Uc.CollapsedSearch,
+				expanded: e === o.Uc.ExpandedSearch
 			}))
 		},
 		"./src/reddit/selectors/experiments/contributeBeforeSignUp.ts": function(e, t, n) {
@@ -2596,11 +2596,11 @@
 				l = Object(o.a)(d, e => !!e),
 				m = e => {
 					const t = d(e);
-					return !!t && a(e, t) === r.bb.SkipOnboarding
+					return !!t && a(e, t) === r.Y.SkipOnboarding
 				},
 				u = e => {
 					const t = d(e);
-					return !!t && a(e, t) === r.bb.RegOnboarding
+					return !!t && a(e, t) === r.Y.RegOnboarding
 				}
 		},
 		"./src/redditGQL/operations/CommentToxicity.json": function(e) {
@@ -2617,4 +2617,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.42cee90aac32fe067b2f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.961f26111b6203cb57da.js.map

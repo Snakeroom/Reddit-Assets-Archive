@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.8bfc9b3cd3cd9614106d.js
-// Retrieved at 11/3/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.136f7a481736ac1ad32a.js
+// Retrieved at 11/3/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -963,8 +963,8 @@
 				ie = o("./node_modules/reselect/es/index.js");
 			const ae = Object(ie.a)(e => Object(re.c)(e, {
 				experimentEligibilitySelector: re.a,
-				experimentName: se.Ib
-			}), e => e === se.Ud);
+				experimentName: se.Fb
+			}), e => e === se.Rd);
 			var de = o("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				ce = o("./src/reddit/selectors/platform.ts"),
 				le = o("./src/reddit/selectors/posts.ts"),
@@ -3832,10 +3832,9 @@
 				He = o("./src/reddit/components/RequestPendingBanner/index.tsx"),
 				Ke = o("./src/reddit/models/User/index.ts"),
 				qe = o("./src/reddit/selectors/experiments/commentBox.ts"),
-				Ge = o("./src/reddit/selectors/experiments/antievil/index.tsx"),
-				Ve = o("./src/reddit/selectors/posts.ts");
-			const Xe = Object(xe.v)(),
-				Je = Object(d.c)({
+				Ge = o("./src/reddit/selectors/posts.ts");
+			const Ve = Object(xe.v)(),
+				Xe = Object(d.c)({
 					activeModalId: ve.a,
 					contributorRequestPending: (e, t) => {
 						let {
@@ -3856,10 +3855,9 @@
 						} = t;
 						return Object(xe.eb)(e, o, f.e.Comment)
 					},
-					postAuthorIsBlocked: Ve.w,
-					isTrueblockPCBlockeeEnabled: Ge.d
+					postAuthorIsBlocked: Ge.w
 				}),
-				Qe = Object(a.b)(Je, (e, t) => ({
+				Je = Object(a.b)(Xe, (e, t) => ({
 					onMount: () => e(c.a(t.draftKey)),
 					onCancel: () => {
 						t.draftType === he.c.edit ? e(l.d({
@@ -3888,7 +3886,7 @@
 						t.dispatchSubmit(o, e.draft.commentMode)
 					}
 				}));
-			class Ze extends i.a.Component {
+			class Qe extends i.a.Component {
 				constructor(e) {
 					super(e), this.getInstanceRef = e => this.formInstanceRef = e, this.onCancel = () => {
 						this.props.onCancel()
@@ -3931,7 +3929,7 @@
 					const {
 						props: e
 					} = this;
-					if (!e.draft || e.postAuthorIsBlocked && e.isTrueblockPCBlockeeEnabled) return null;
+					if (!e.draft || e.postAuthorIsBlocked) return null;
 					const t = e && e.draft && e.draft.rtJson || e.rtJson || void 0,
 						o = {
 							autofocus: e.autofocus || !1,
@@ -3970,7 +3968,7 @@
 					return e.contributorRequestPending ? i.a.createElement(He.a, null) : e.showContributorRequestFlow ? i.a.createElement(C, null) : e.draft.commentMode === pe.i.RICH_TEXT ? i.a.createElement(We, o) : i.a.createElement(m.b, o)
 				}
 			}
-			t.default = Xe(Qe(Ze))
+			t.default = Ve(Je(Qe))
 		},
 		"./src/reddit/components/CommentSort/CommentSort.m.less": function(e, t, o) {
 			e.exports = {
@@ -6302,8 +6300,8 @@
 			const a = Object(n.a)(i.R, i.Q, (e, t) => e || t),
 				d = Object(n.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: a,
-					experimentName: s.L
-				}), e => e === s.V.Enabled)
+					experimentName: s.I
+				}), e => e === s.S.Enabled)
 		},
 		"./src/reddit/selectors/experiments/contributeBeforeSignUp.ts": function(e, t, o) {
 			"use strict";
@@ -6327,11 +6325,11 @@
 				l = Object(n.a)(c, e => !!e),
 				u = e => {
 					const t = c(e);
-					return !!t && d(e, t) === s.bb.SkipOnboarding
+					return !!t && d(e, t) === s.Y.SkipOnboarding
 				},
 				m = e => {
 					const t = c(e);
-					return !!t && d(e, t) === s.bb.RegOnboarding
+					return !!t && d(e, t) === s.Y.RegOnboarding
 				}
 		},
 		"./src/reddit/selectors/experiments/imageComment.ts": function(e, t, o) {
@@ -6351,20 +6349,20 @@
 			const i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.se
-					}) === n.Ud
+						experimentName: n.pe
+					}) === n.Rd
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.te
-					}) === n.Ud
+						experimentName: n.qe
+					}) === n.Rd
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.de
-					}) === n.Ud
+						experimentName: n.ae
+					}) === n.Rd
 				},
 				c = (e, t) => {
 					let {
@@ -6402,29 +6400,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: n.vg
-					}) === n.Ud
+						experimentName: n.sg
+					}) === n.Rd
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: n.wg
-					}) === n.Ud
+						experimentName: n.tg
+					}) === n.Rd
 				},
 				c = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: n.ug
+						experimentName: n.rg
 					});
-					return t === n.kg.TypingIndicators || t === n.kg.IndicatorsPlusCTA
+					return t === n.hg.TypingIndicators || t === n.hg.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: n.ug
+						experimentName: n.rg
 					});
-					return (null == t ? void 0 : t.variant) === n.kg.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === n.hg.IndicatorsPlusCTA
 				}
 		},
 		"./src/redditGQL/operations/CommentToxicity.json": function(e) {
@@ -6441,4 +6439,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.8bfc9b3cd3cd9614106d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.136f7a481736ac1ad32a.js.map

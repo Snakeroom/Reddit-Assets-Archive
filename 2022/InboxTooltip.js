@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxTooltip.4afc4ad967405ef4ad60.js
-// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxTooltip.3f99ee310f567d317a78.js
+// Retrieved at 11/3/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxTooltip", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -67,9 +67,9 @@
 			})), i.d(t, "subscribeForPNs", (function() {
 				return A
 			})), i.d(t, "unsubscribeFromPNs", (function() {
-				return L
-			})), i.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
 				return R
+			})), i.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
+				return L
 			})), i.d(t, "subscribeToPermissionsChange", (function() {
 				return U
 			}));
@@ -98,9 +98,9 @@
 				N = i("./src/reddit/constants/experiments.ts"),
 				y = i("./src/reddit/helpers/chooseVariant/index.ts");
 			const _ = e => Object(y.c)(e, {
-				experimentName: N.kc,
+				experimentName: N.hc,
 				experimentEligibilitySelector: y.a
-			}) === N.Ud;
+			}) === N.Rd;
 			var I = i("./src/reddit/selectors/meta.ts"),
 				P = i("./src/reddit/selectors/user.ts");
 			let E = !1;
@@ -142,7 +142,7 @@
 					j.l(c), await Object(a.b)(e, t, () => {
 						l || f || b || n(Object(d.o)()), n(Object(d.n)()), j.j(c)
 					}, (e, t) => {
-						n(Object(d.l)()), n(L(t ? d.a.Denied : d.a.Closed)), e && (t ? j.e(c) : j.f(c)), i()
+						n(Object(d.l)()), n(R(t ? d.a.Denied : d.a.Closed)), e && (t ? j.e(c) : j.f(c)), i()
 					}, e => {
 						n(Object(d.m)()), n(A()), e && j.d(c), i()
 					}, () => {
@@ -170,7 +170,7 @@
 				} catch (r) {
 					j.k(s, "registration_failed_uncaught_exception"), console.error(r)
 				}
-			}, L = (e, t) => async i => {
+			}, R = (e, t) => async i => {
 				try {
 					Object(f.b)(e);
 					const o = await Object(u.a)();
@@ -184,7 +184,7 @@
 						})))
 					}
 				} catch (o) {}
-			}, R = e => async (t, i) => {
+			}, L = e => async (t, i) => {
 				const n = i();
 				if (Object(f.a)(n) === d.c.NotificationsSupported) switch (Object(a.a)()) {
 					case d.a.Default:
@@ -205,13 +205,13 @@
 				o.onchange = () => (t => {
 					switch (t) {
 						case d.a.Denied:
-							e(L(d.a.Denied)), j.e(n);
+							e(R(d.a.Denied)), j.e(n);
 							break;
 						case d.a.Granted:
 							e(A()), j.d(n);
 							break;
 						default:
-							e(L(d.a.Default))
+							e(R(d.a.Default))
 					}
 				})(o.state)
 			}
@@ -613,4 +613,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.4afc4ad967405ef4ad60.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.3f99ee310f567d317a78.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.18b5e627c437ee55c126.js
-// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.b1dca267bb7f6a582476.js
+// Retrieved at 11/3/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -2230,7 +2230,7 @@
 			const D = e => O.d.reCaptchaEnterprise(e) && !Object(T.d)(e),
 				w = e => !!Object(S.c)(e, {
 					experimentEligibilitySelector: Object(I.d)(Object(I.b)(...a.d)),
-					experimentName: f.wf
+					experimentName: f.tf
 				}),
 				j = Object(r.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				C = () => l(e => p()([D, w, e => e.tracking.reCaptchaEnterprise.load === r.a.New], t => t(e)))(async e => {
@@ -4368,7 +4368,7 @@
 							function() {
 								let e = {};
 								A && M.type.length && (Object(X.d)(j, {
-									experimentName: Y.Nc
+									experimentName: Y.Kc
 								}), C && (e = {
 									...M
 								}));
@@ -5014,10 +5014,10 @@
 				b = n("./node_modules/reselect/es/index.js");
 			const h = Object(b.a)(e => Object(f.c)(e, {
 				experimentEligibilitySelector: f.a,
-				experimentName: p.yg
+				experimentName: p.vg
 			}), e => ({
-				promptBeforeClick: e === p.zg.PromptBeforeClick,
-				promptAfterClick: e === p.zg.PromptAfterClick
+				promptBeforeClick: e === p.wg.PromptBeforeClick,
+				promptAfterClick: e === p.wg.PromptAfterClick
 			}));
 			var y = n("./src/reddit/controls/Search/SearchScopePill/index.tsx"),
 				m = n("./src/reddit/controls/Search/SearchBar/index.m.less"),
@@ -25678,11 +25678,11 @@
 				a = n("./node_modules/reselect/es/index.js");
 			const o = Object(a.a)(e => Object(s.c)(e, {
 				experimentEligibilitySelector: s.a,
-				experimentName: r.Ab
+				experimentName: r.xb
 			}), e => ({
-				bucketed: e === r.Xc.ExpandedSearch || e === r.Xc.CollapsedSearch,
-				collapsed: e === r.Xc.CollapsedSearch,
-				expanded: e === r.Xc.ExpandedSearch
+				bucketed: e === r.Uc.ExpandedSearch || e === r.Uc.CollapsedSearch,
+				collapsed: e === r.Uc.CollapsedSearch,
+				expanded: e === r.Uc.ExpandedSearch
 			}))
 		},
 		"./src/reddit/selectors/experiments/hotPotato.ts": function(e, t, n) {
@@ -25707,7 +25707,7 @@
 					if (!u(e)) return;
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: l,
-						experimentName: a.ne,
+						experimentName: a.ke,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -25730,9 +25730,9 @@
 				},
 				b = e => !!p(e) && Object(o.c)(e, {
 					experimentEligibilitySelector: u,
-					experimentName: a.oe,
+					experimentName: a.le,
 					expEventOverride: !1
-				}) !== a.pe.Readonly
+				}) !== a.me.Readonly
 		},
 		"./src/reddit/selectors/experiments/serpTabPreserved.ts": function(e, t, n) {
 			"use strict";
@@ -25743,10 +25743,10 @@
 				s = n("./src/reddit/selectors/telemetry.ts");
 
 			function a(e) {
-				const t = Object(s.q)(e, r.Nc);
+				const t = Object(s.q)(e, r.Kc);
 				return {
 					experimentState: e,
-					isActive: (null == t ? void 0 : t.variant) === r.Ud,
+					isActive: (null == t ? void 0 : t.variant) === r.Rd,
 					isBucketed: !!(null == t ? void 0 : t.variant)
 				}
 			}
@@ -25896,4 +25896,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.18b5e627c437ee55c126.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.b1dca267bb7f6a582476.js.map

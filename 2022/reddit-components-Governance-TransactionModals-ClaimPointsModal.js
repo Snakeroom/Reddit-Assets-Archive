@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.4d0d711eacf471e61e95.js
-// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.35b5ecd737fcd9c57a28.js
+// Retrieved at 11/3/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ClaimPointsModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -57,9 +57,9 @@
 			})), n.d(t, "d", (function() {
 				return B
 			})), n.d(t, "e", (function() {
-				return D
-			})), n.d(t, "h", (function() {
 				return R
+			})), n.d(t, "h", (function() {
+				return D
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				a = n("./src/lib/makeActionCreator/index.ts"),
@@ -137,7 +137,7 @@
 						pollId: e,
 						error: r.error || r.errors[0].message
 					})), Object(O.a)(n, r.error || r.errors[0].messsage)
-				}, D = (e, t) => async (n, a, i) => {
+				}, R = (e, t) => async (n, a, i) => {
 					let {
 						apiContext: l
 					} = i;
@@ -171,7 +171,7 @@
 					})), t && n(Object(o.f)())) : (n(_({
 						error: b.error
 					})), Object(O.a)(n, b.error))
-				}, R = e => async (t, n, s) => {
+				}, D = e => async (t, n, s) => {
 					let {
 						apiContext: a
 					} = s;
@@ -305,7 +305,7 @@
 						return t ? t.id : ""
 					}
 				}),
-				D = Object(o.b)(B)((function(e) {
+				R = Object(o.b)(B)((function(e) {
 					const {
 						onClose: t,
 						userId: n
@@ -356,8 +356,8 @@
 						scale: 5
 					}))))
 				}));
-			Object(c.a)(D);
-			var R = n("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx"),
+			Object(c.a)(R);
+			var D = n("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx"),
 				F = n("./src/reddit/components/SubredditIcon/index.tsx"),
 				L = n("./src/reddit/selectors/subreddit.ts"),
 				G = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx"),
@@ -410,7 +410,7 @@
 					pointsDetails: t => Object(E.b)(t, e.subredditId)
 				}));
 				if (!_ || !l) throw new Error("No available claim to make");
-				if (!l.address) return r.a.createElement(D, {
+				if (!l.address) return r.a.createElement(R, {
 					onClose: t
 				});
 				const T = Object(h.b)(_.contracts.distribution.address, l.round, l.address, l.userKarma, l.signature),
@@ -418,7 +418,7 @@
 						c(Object(y.c)("points_claim", n, _.displayConversion, e))
 					},
 					M = Object(j.c)(l.pointsToClaim, _.displayConversion);
-				return r.a.createElement(R.a, {
+				return r.a.createElement(D.a, {
 					approvalOverview: r.a.createElement(U, {
 						pointsDetails: _,
 						subredditId: n
@@ -1108,14 +1108,14 @@
 			const r = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.Fe
-					}) === s.Ud
+						experimentName: s.Ce
+					}) === s.Rd
 				},
 				o = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.De
-					}) === s.Ud
+						experimentName: s.Ae
+					}) === s.Rd
 				}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
@@ -1175,4 +1175,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.4d0d711eacf471e61e95.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.35b5ecd737fcd9c57a28.js.map

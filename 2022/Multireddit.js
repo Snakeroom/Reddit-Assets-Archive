@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.3cb9e498d052d6876890.js
-// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.e0371191d110dbfb94d1.js
+// Retrieved at 11/3/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, n) {
@@ -311,7 +311,7 @@
 			})), n.d(t, "d", (function() {
 				return N
 			})), n.d(t, "c", (function() {
-				return R
+				return U
 			})), n.d(t, "a", (function() {
 				return w
 			})), n.d(t, "b", (function() {
@@ -482,7 +482,7 @@
 						i(Object(l.f)(Object(l.e)(o, T.b.Error)))
 					}
 					return E.ok
-				}, U = Object(i.a)(d.f), R = e => async (t, n, r) => {
+				}, R = Object(i.a)(d.f), U = e => async (t, n, r) => {
 					let {
 						apiContext: o
 					} = r;
@@ -506,12 +506,12 @@
 						x = () => Object(C.kb)(n(), {
 							identifier: h
 						});
-					(x() || (await t(N([h], !0)), x())) && (t(U({
+					(x() || (await t(N([h], !0)), x())) && (t(R({
 						makeFavorite: p,
 						identifier: e,
 						subredditModels: _,
 						profileModels: E
-					})), (await Object(f.b)(o(), c, p)).ok || (t(U({
+					})), (await Object(f.b)(o(), c, p)).ok || (t(R({
 						makeFavorite: !p,
 						identifier: e,
 						subredditModels: _,
@@ -765,17 +765,17 @@
 					const o = n;
 					return a.a.createElement(E, v({
 						style: {
-							...U(!!t, o) || {}
+							...R(!!t, o) || {}
 						}
 					}, r))
 				}), "FlairEmojiDisplay", y.a),
-				U = (e, t) => {
+				R = (e, t) => {
 					if (!e && !!t.subredditContext.emojiHeight && !!t.subredditContext.emojiWidth) return {
 						height: `${t.subredditContext.emojiHeight}px`,
 						width: `${t.subredditContext.emojiWidth}px`
 					}
 				},
-				R = (e, t) => {
+				U = (e, t) => {
 					const n = t ? `/r/${t}/search` : "/search",
 						r = `${t?"flair_name":"flair"}:"${e}"`;
 					return Object(l.a)(n, {
@@ -788,7 +788,7 @@
 					to: e.to || ""
 				}, e.flair) : e.onClick ? a.a.createElement(S.default, {
 					onClick: () => e.onClick(e.searchableTerm),
-					to: R(e.searchableTerm, e.subredditName)
+					to: U(e.searchableTerm, e.subredditName)
 				}, e.flair) : e.flair;
 			class w extends a.a.Component {
 				constructor() {
@@ -1875,29 +1875,29 @@
 				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/experiments/index.ts");
 			const c = Object(r.a)(e => Object(s.c)(e, {
+					experimentName: o.Tb,
+					experimentEligibilitySelector: i.e
+				}), e => e === o.ab.Enabled),
+				a = Object(r.a)(e => Object(s.c)(e, {
+					experimentName: o.Ub,
+					experimentEligibilitySelector: i.e
+				}), e => e === o.bb.Enabled),
+				d = Object(r.a)(e => Object(s.c)(e, {
+					experimentName: o.Vb,
+					experimentEligibilitySelector: i.e
+				}), e => e === o.cb.Enabled),
+				l = Object(r.a)(e => Object(s.c)(e, {
 					experimentName: o.Wb,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.db.Enabled),
-				a = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Xb,
-					experimentEligibilitySelector: i.e
-				}), e => e === o.eb.Enabled),
-				d = Object(r.a)(e => Object(s.c)(e, {
+				u = Object(r.a)(e => Object(s.c)(e, {
 					experimentName: o.Yb,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.fb.Enabled),
-				l = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Zb,
-					experimentEligibilitySelector: i.e
-				}), e => e === o.gb.Enabled),
-				u = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.bc,
-					experimentEligibilitySelector: i.e
-				}), e => e === o.ib.Enabled),
 				m = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.ac,
+					experimentName: o.Xb,
 					experimentEligibilitySelector: i.e
-				}), e => e === o.hb.Enabled)
+				}), e => e === o.eb.Enabled)
 		},
 		"./src/reddit/selectors/experiments/recapLeadUpGame.ts": function(e, t, n) {
 			"use strict";
@@ -1914,8 +1914,8 @@
 			const a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.xf
-					}) === r.Ud
+						experimentName: r.uf
+					}) === r.Rd
 				},
 				d = Object(c.a)(i.R, (e, t) => {
 					let {
@@ -1926,8 +1926,8 @@
 				l = (e, t) => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: e => d(e, t),
-						experimentName: r.yf
-					}) === r.Ud
+						experimentName: r.vf
+					}) === r.Rd
 				}
 		},
 		"./src/reddit/selectors/recapGame.ts": function(e, t, n) {
@@ -1955,4 +1955,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.3cb9e498d052d6876890.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.e0371191d110dbfb94d1.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.d0280361d49fcef97763.js
-// Retrieved at 11/3/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.6e16e67ae10eb2b228f8.js
+// Retrieved at 11/3/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./node_modules/lodash/map.js": function(e, t, o) {
@@ -90,7 +90,7 @@
 			})), o.d(t, "k", (function() {
 				return Ue
 			})), o.d(t, "e", (function() {
-				return Fe
+				return Be
 			})), o.d(t, "d", (function() {
 				return qe
 			})), o.d(t, "a", (function() {
@@ -230,8 +230,8 @@
 				};
 			var K = o("./src/redditGQL/operations/UpdateComment.json");
 			var U = o("./src/redditGQL/operations/UpdateCommentFollowState.json");
-			var B = o("./src/reddit/endpoints/post/index.tsx"),
-				F = o("./src/reddit/endpoints/post/convert.ts"),
+			var F = o("./src/reddit/endpoints/post/index.tsx"),
+				B = o("./src/reddit/endpoints/post/convert.ts"),
 				G = o("./src/reddit/endpoints/publicAccessNetwork/index.ts"),
 				H = o("./src/reddit/featureFlags/index.ts"),
 				V = o("./src/reddit/helpers/comment/index.ts"),
@@ -253,8 +253,8 @@
 				ce = o("./node_modules/reselect/es/index.js");
 			const ie = Object(ce.a)(e => Object(re.c)(e, {
 				experimentEligibilitySelector: re.a,
-				experimentName: se.Ib
-			}), e => e === se.Ud);
+				experimentName: se.Fb
+			}), e => e === se.Rd);
 			var ae = o("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				de = o("./src/reddit/selectors/platform.ts"),
 				le = o("./src/reddit/selectors/posts.ts"),
@@ -576,7 +576,7 @@
 					})), s(Object(u.c)(e));
 					else {
 						s(Object(u.b)(o));
-						const r = await Object(F.a)(i(), e, a ? t : JSON.stringify(t));
+						const r = await Object(B.a)(i(), e, a ? t : JSON.stringify(t));
 						if (r.ok) {
 							const t = r.body.output;
 							s(Object(u.a)(o)), s(Pe({
@@ -657,7 +657,7 @@
 						}))
 					}
 				}, De = e => async t => {
-					t(Object(ue.r)(e)), t(Fe(e))
+					t(Object(ue.r)(e)), t(Be(e))
 				}, Ke = e => {
 					let {
 						parentCommentId: t,
@@ -678,7 +678,7 @@
 				}, Ue = (e, t) => o => o(Ne({
 					draftKey: e,
 					formData: t
-				})), Be = Object(s.a)(pe.u), Fe = e => {
+				})), Fe = Object(s.a)(pe.u), Be = e => {
 					let {
 						commentId: t,
 						commentMode: o,
@@ -688,7 +688,7 @@
 					} = e;
 					return async (e, c) => {
 						const i = c();
-						i.user.account && (Q.c(i), e(Be({
+						i.user.account && (Q.c(i), e(Fe({
 							commentId: t,
 							commentsPageKey: n,
 							draftKey: s,
@@ -848,7 +848,7 @@
 						[e]: {
 							sendReplies: r
 						}
-					})), (await Object(B.q)(s(), e, r)).ok || t(Object(ue.j)({
+					})), (await Object(F.q)(s(), e, r)).ok || t(Object(ue.j)({
 						[e]: {
 							sendReplies: !r
 						}
@@ -1522,8 +1522,8 @@
 				D = o("./src/lib/makeApiRequest/index.ts"),
 				K = o("./src/lib/omitHeaders/index.ts"),
 				U = o("./src/reddit/constants/headers.ts"),
-				B = o("./src/reddit/models/RichTextJson/addRTJParam.ts");
-			const F = (e, t) => Object(D.a)(Object(K.a)(e, [U.a]), {
+				F = o("./src/reddit/models/RichTextJson/addRTJParam.ts");
+			const B = (e, t) => Object(D.a)(Object(K.a)(e, [U.a]), {
 					endpoint: `${e.apiUrl}/api/v1/modactions/removal_reasons/`,
 					method: C.ob.POST,
 					type: "json",
@@ -1534,7 +1534,7 @@
 					}
 				}),
 				G = (e, t, o) => Object(D.a)(Object(K.a)(e, [U.a]), {
-					endpoint: Object(B.a)(`${e.apiUrl}/api/v1/modactions/removal_${o}_message/`),
+					endpoint: Object(F.a)(`${e.apiUrl}/api/v1/modactions/removal_${o}_message/`),
 					method: C.ob.POST,
 					type: "json",
 					data: t
@@ -1672,7 +1672,7 @@
 							modNote: s,
 							reasonId: t ? t.id : null
 						},
-						h = await F(d(), f);
+						h = await B(d(), f);
 					if (h.ok) {
 						if (c(he()), t) {
 							c(ge());
@@ -1768,7 +1768,7 @@
 							modNote: r,
 							reasonId: t ? t.id : null
 						},
-						b = await F(d(), p);
+						b = await B(d(), p);
 					if (b.ok) {
 						const n = {
 							ids: e,
@@ -1918,8 +1918,8 @@
 				D = o("./src/reddit/hooks/usePageLayer.ts"),
 				K = o("./src/reddit/selectors/platform.ts");
 			const U = "comment-search-bar",
-				B = "comment-search-button",
-				F = "search/";
+				F = "comment-search-button",
+				B = "search/";
 
 			function G(e) {
 				const {
@@ -1934,7 +1934,7 @@
 				function j() {
 					if (!l.trim() || !O) return;
 					const e = Object(T.b)(l),
-						t = `${new URL(O.permalink).pathname}${F}`,
+						t = `${new URL(O.permalink).pathname}${B}`,
 						o = {
 							[N.z]: e,
 							[N.P]: [d.ic.Comments],
@@ -1972,7 +1972,7 @@
 					},
 					value: l
 				})) : r.a.createElement("button", {
-					"data-testid": B,
+					"data-testid": F,
 					onClick: () => p(!0)
 				}, n.fbt._("Search comments", null, {
 					hk: "2ObH7B"
@@ -3053,11 +3053,11 @@
 				r = o("./node_modules/reselect/es/index.js");
 			const c = Object(r.a)(e => Object(s.c)(e, {
 				experimentEligibilitySelector: s.a,
-				experimentName: n.Ab
+				experimentName: n.xb
 			}), e => ({
-				bucketed: e === n.Xc.ExpandedSearch || e === n.Xc.CollapsedSearch,
-				collapsed: e === n.Xc.CollapsedSearch,
-				expanded: e === n.Xc.ExpandedSearch
+				bucketed: e === n.Uc.ExpandedSearch || e === n.Uc.CollapsedSearch,
+				collapsed: e === n.Uc.CollapsedSearch,
+				expanded: e === n.Uc.ExpandedSearch
 			}))
 		},
 		"./src/reddit/selectors/experiments/contributeBeforeSignUp.ts": function(e, t, o) {
@@ -3082,11 +3082,11 @@
 				l = Object(n.a)(d, e => !!e),
 				m = e => {
 					const t = d(e);
-					return !!t && a(e, t) === s.bb.SkipOnboarding
+					return !!t && a(e, t) === s.Y.SkipOnboarding
 				},
 				u = e => {
 					const t = d(e);
-					return !!t && a(e, t) === s.bb.RegOnboarding
+					return !!t && a(e, t) === s.Y.RegOnboarding
 				}
 		},
 		"./src/redditGQL/operations/CommentToxicity.json": function(e) {
@@ -3103,4 +3103,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.d0280361d49fcef97763.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.6e16e67ae10eb2b228f8.js.map

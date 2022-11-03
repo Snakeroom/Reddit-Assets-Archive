@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.b8e3957806934f6d0004.js
-// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.38feaf516bd3a82a41c2.js
+// Retrieved at 11/3/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -3950,8 +3950,8 @@
 					showContributorRequestFlow: e => Object(te.w)(e, et.e.Post),
 					showCreatePollButton: e => (e => Object(st.c)(e, {
 						experimentEligibilitySelector: st.a,
-						experimentName: Le.S
-					}) === Le.ab.Treatment)(e) && !Object(Ke.h)(),
+						experimentName: Le.P
+					}) === Le.X.Treatment)(e) && !Object(Ke.h)(),
 					shouldShowFlairPreview: (e, t) => {
 						let {
 							listingName: n
@@ -3992,7 +3992,7 @@
 					},
 					isInNCPV3Experiment: ot.a,
 					showCommunityDirectoryBacklink: rt.c,
-					isCommunityMutingEnabled: nt.b
+					isCommunityMutingEnabled: nt.a
 				}), (e, t) => ({
 					addToMultiClicked: () => {
 						e(Object(g.a)(() => Promise.all([n.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~1fdd9b9b"), n.e("CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5"), n.e("CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32"), n.e("CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit"), n.e("CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar"), n.e("CountryPage~Multireddit"), n.e("Multireddit")]).then(n.bind(null, "./src/reddit/actions/multireddit/index.ts")).then(e => e.myMultiredditsRequested))(!0, !0)), e(Object(x.h)(Ue.a.MULTIREDDIT_ADD_SUBREDDIT))
@@ -4219,7 +4219,7 @@
 						onClick: g ? _ : void 0,
 						headerButton: i.a.createElement("div", {
 							className: bt.a.headerButtonsContainer
-						}, !z && v && C && l !== Le.Xe.NewModule && i.a.createElement(a.a, {
+						}, !z && v && C && l !== Le.Ue.NewModule && i.a.createElement(a.a, {
 							className: bt.a.ModToolsLink,
 							to: C.posts ? `${v.url}about/modqueue` : `${v.url}about/`,
 							onClick: this.onClickModTools
@@ -6010,29 +6010,29 @@
 				i = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = n("./src/reddit/selectors/experiments/index.ts");
 			const a = Object(r.a)(e => Object(i.c)(e, {
+					experimentName: s.Tb,
+					experimentEligibilitySelector: o.e
+				}), e => e === s.ab.Enabled),
+				d = Object(r.a)(e => Object(i.c)(e, {
+					experimentName: s.Ub,
+					experimentEligibilitySelector: o.e
+				}), e => e === s.bb.Enabled),
+				c = Object(r.a)(e => Object(i.c)(e, {
+					experimentName: s.Vb,
+					experimentEligibilitySelector: o.e
+				}), e => e === s.cb.Enabled),
+				l = Object(r.a)(e => Object(i.c)(e, {
 					experimentName: s.Wb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.db.Enabled),
-				d = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Xb,
-					experimentEligibilitySelector: o.e
-				}), e => e === s.eb.Enabled),
-				c = Object(r.a)(e => Object(i.c)(e, {
+				u = Object(r.a)(e => Object(i.c)(e, {
 					experimentName: s.Yb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.fb.Enabled),
-				l = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Zb,
-					experimentEligibilitySelector: o.e
-				}), e => e === s.gb.Enabled),
-				u = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.bc,
-					experimentEligibilitySelector: o.e
-				}), e => e === s.ib.Enabled),
 				m = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.ac,
+					experimentName: s.Xb,
 					experimentEligibilitySelector: o.e
-				}), e => e === s.hb.Enabled)
+				}), e => e === s.eb.Enabled)
 		},
 		"./src/redditGQL/operations/DeleteSubredditMuteSettings.json": function(e) {
 			e.exports = JSON.parse('{"id":"c518a45f60a5"}')
@@ -6057,4 +6057,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.b8e3957806934f6d0004.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.38feaf516bd3a82a41c2.js.map
