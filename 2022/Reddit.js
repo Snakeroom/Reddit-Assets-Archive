@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.e186e407507f080b55f6.js
-// Retrieved at 11/2/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.5d031c5802fce1f30e08.js
+// Retrieved at 11/3/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -3469,6 +3469,7 @@
 		},
 		"./src/reddit/components/CreateAccountSection/index.m.less": function(e, t, n) {
 			e.exports = {
+				divider: "_2Dj4y3V6eat21HkRlbaeqL",
 				createTitle: "_2FBcfa5LIJrKSNuRAA7WWa",
 				createDesc: "_2gHNfZLuOuUSh3Ppfyc0JX",
 				createButton: "_2XQ3s48lqlzodYPpT2s-Iu"
@@ -12285,7 +12286,7 @@
 				})))
 			}
 
-			function Or(e, t, n) {
+			function Or(e, t) {
 				t.recentSubreddits.length && (e.push({
 					id: "header-subscriptions",
 					type: or.Header,
@@ -12299,7 +12300,7 @@
 					type: or.Subreddit,
 					model: t,
 					telemetryNoun: "community"
-				})), Cr(e, n, !0))
+				})))
 			}
 			const Cr = function(e, t) {
 				let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
@@ -12411,7 +12412,7 @@
 								subredditOrProfile: e.model
 							}), m.a.createElement("span", {
 								className: Pr.a.text
-							}, e.model.displayText), (e.isLoggedIn || e.isLoggedOutOneFeed) && m.a.createElement("div", {
+							}, e.model.displayText), e.isLoggedIn && m.a.createElement("div", {
 								onClick: e.toggleFavorite
 							}, m.a.createElement(co.a, {
 								name: "star",
@@ -12778,6 +12779,90 @@
 					}]
 				}, {
 					link: {
+						icon: "topic_business",
+						noun: "business",
+						title: "Business, Economics, and Finance",
+						url: "/t/business_economics_and_finance/"
+					},
+					sublinks: [{
+						noun: "gamestop",
+						title: "GameStop",
+						url: "/t/gamestop/"
+					}, {
+						noun: "moderna",
+						title: "Moderna",
+						url: "/t/moderna/"
+					}, {
+						noun: "pfizer",
+						title: "Pfizer",
+						url: "/t/pfizer/"
+					}, {
+						noun: "johnson_johnson",
+						title: "Johnson & Johnson",
+						url: "/t/johnson_johnson/"
+					}, {
+						noun: "astrazeneca",
+						title: "AstraZeneca",
+						url: "/t/astrazeneca/"
+					}, {
+						noun: "walgreens",
+						title: "Walgreens",
+						url: "/t/walgreens/"
+					}, {
+						noun: "best_buy",
+						title: "Best Buy",
+						url: "/t/best_buy/"
+					}, {
+						noun: "novavax",
+						title: "Novavax",
+						url: "/t/novavax/"
+					}, {
+						noun: "spacex",
+						title: "SpaceX",
+						url: "/t/spacex/"
+					}, {
+						noun: "tesla",
+						title: "Tesla",
+						url: "/t/tesla/"
+					}]
+				}, {
+					link: {
+						icon: "topic_crypto",
+						noun: "crypto",
+						title: "Crypto",
+						url: "/t/cryptocurrency/"
+					},
+					sublinks: [{
+						noun: "cardano",
+						title: "Cardano",
+						url: "/t/cardano/"
+					}, {
+						noun: "dogecoin",
+						title: "Dogecoin",
+						url: "/t/dogecoin/"
+					}, {
+						noun: "algorand",
+						title: "Algorand",
+						url: "/t/algorand/"
+					}, {
+						noun: "bitcoin",
+						title: "Bitcoin",
+						url: "/t/bitcoin/"
+					}, {
+						noun: "litecoin",
+						title: "Litecoin",
+						url: "/t/litecoin/"
+					}, {
+						noun: "basic_attention_token",
+						title: "Basic Attention Token",
+						url: "/t/basic_attention_token/"
+					}, {
+						noun: "bitcoin_cash",
+						title: "Bitcoin Cash",
+						url: "/t/bitcoin_cash/"
+					}]
+				}, {
+					link: {
 						icon: "topic_television",
 						noun: "tv",
 						title: "Television",
@@ -12871,90 +12956,6 @@
 						noun: "keanu_reeves",
 						title: "Keanu Reeves",
 						url: "/t/keanu_reeves/"
-					}]
-				}, {
-					link: {
-						icon: "topic_business",
-						noun: "business",
-						title: "Business, Economics, and Finance",
-						url: "/t/business_economics_and_finance/"
-					},
-					sublinks: [{
-						noun: "gamestop",
-						title: "GameStop",
-						url: "/t/gamestop/"
-					}, {
-						noun: "moderna",
-						title: "Moderna",
-						url: "/t/moderna/"
-					}, {
-						noun: "pfizer",
-						title: "Pfizer",
-						url: "/t/pfizer/"
-					}, {
-						noun: "johnson_johnson",
-						title: "Johnson & Johnson",
-						url: "/t/johnson_johnson/"
-					}, {
-						noun: "astrazeneca",
-						title: "AstraZeneca",
-						url: "/t/astrazeneca/"
-					}, {
-						noun: "walgreens",
-						title: "Walgreens",
-						url: "/t/walgreens/"
-					}, {
-						noun: "best_buy",
-						title: "Best Buy",
-						url: "/t/best_buy/"
-					}, {
-						noun: "novavax",
-						title: "Novavax",
-						url: "/t/novavax/"
-					}, {
-						noun: "spacex",
-						title: "SpaceX",
-						url: "/t/spacex/"
-					}, {
-						noun: "tesla",
-						title: "Tesla",
-						url: "/t/tesla/"
-					}]
-				}, {
-					link: {
-						icon: "topic_crypto",
-						noun: "crypto",
-						title: "Crypto",
-						url: "/t/cryptocurrency/"
-					},
-					sublinks: [{
-						noun: "cardano",
-						title: "Cardano",
-						url: "/t/cardano/"
-					}, {
-						noun: "dogecoin",
-						title: "Dogecoin",
-						url: "/t/dogecoin/"
-					}, {
-						noun: "algorand",
-						title: "Algorand",
-						url: "/t/algorand/"
-					}, {
-						noun: "bitcoin",
-						title: "Bitcoin",
-						url: "/t/bitcoin/"
-					}, {
-						noun: "litecoin",
-						title: "Litecoin",
-						url: "/t/litecoin/"
-					}, {
-						noun: "basic_attention_token",
-						title: "Basic Attention Token",
-						url: "/t/basic_attention_token/"
-					}, {
-						noun: "bitcoin_cash",
-						title: "Bitcoin Cash",
-						url: "/t/bitcoin_cash/"
 					}]
 				}, {
 					link: {
@@ -13471,13 +13472,13 @@
 								},
 								telemetryNoun: "community_hubs_landing_page"
 							}), g.forEach(e => o.push(e(r)))
-						} else n.subscriptions.length || Object(v.R)(e) ? ir().forEach(e => o.push(e(null))) : r ? (i ? h.forEach(e => e && o.push(e(null))) : dr.forEach(e => e && o.push(e(null))), d ? (n.recentSubreddits = n.recentSubreddits.filter(e => !e.isNSFW), Or(o, n, t)) : l || Or(o, n, t), function(e) {
+						} else n.subscriptions.length || Object(v.R)(e) ? ir().forEach(e => o.push(e(null))) : r ? (i ? h.forEach(e => e && o.push(e(null))) : dr.forEach(e => e && o.push(e(null))), d ? (n.recentSubreddits = n.recentSubreddits.filter(e => !e.isNSFW), Or(o, n)) : l || Or(o, n), function(e) {
 							e.push({
 								id: "header-explore-menu",
 								type: or.Header,
 								model: {
-									displayText: s.fbt._("Explore", null, {
-										hk: "4FrRPk"
+									displayText: s.fbt._("Topics", null, {
+										hk: "1ue48g"
 									}).toString()
 								}
 							}), e.push({
@@ -17585,8 +17586,8 @@
 						className: e,
 						href: mp(Ze.a.Register, t),
 						onClick: this.onClick
-					}, bp._("Create an account", null, {
-						hk: "4Dh0gy"
+					}, bp._("Join Reddit", null, {
+						hk: "3pGxYq"
 					}))
 				}
 			}
@@ -17609,11 +17610,9 @@
 					} = e;
 					return m.a.createElement("div", {
 						className: t
-					}, m.a.createElement(xr, {
-						className: Op.a.createTitle
-					}, Cp._("Join reddit", null, {
-						hk: "1fNfug"
-					})), m.a.createElement("div", {
+					}, m.a.createElement("div", {
+						className: Op.a.divider
+					}), m.a.createElement("div", {
 						className: Op.a.createDesc
 					}, Cp._("Create an account to follow your favorite communities and start taking part in conversations.", null, {
 						hk: "z6A2K"
@@ -24049,4 +24048,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.e186e407507f080b55f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.5d031c5802fce1f30e08.js.map
