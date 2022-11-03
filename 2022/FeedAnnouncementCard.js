@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeedAnnouncementCard.6bebdc06135e55803b5d.js
-// Retrieved at 11/2/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeedAnnouncementCard.e38d32e5ccd0901160ac.js
+// Retrieved at 11/3/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeedAnnouncementCard"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -125,18 +125,18 @@
 					body: n,
 					title: s,
 					cta: c,
-					url: i,
-					onClose: l
+					onClose: i,
+					onClick: l
 				} = e, d = Object(A.a)(), m = Object(C.a)(t);
 				return r.a.createElement("div", {
 					className: Object(o.a)(x.a.container),
 					role: "button",
-					onClick: () => window.location.href = i,
+					onClick: l,
 					style: Object(h.c)(void 0, {
 						theme: d
 					})
 				}, r.a.createElement(_, {
-					onClose: l
+					onClose: i
 				}), r.a.createElement("div", {
 					className: Object(o.a)(x.a.bodyContainer)
 				}, r.a.createElement("div", {
@@ -150,7 +150,7 @@
 				})) : null), null != c ? r.a.createElement("div", {
 					className: Object(o.a)(x.a.ctaContainer)
 				}, r.a.createElement("a", {
-					href: i,
+					onClick: l,
 					className: Object(o.a)(x.a.ctaText)
 				}, c, r.a.createElement(a.a, {
 					className: Object(o.a)(x.a.ctaCaret),
@@ -196,4 +196,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeedAnnouncementCard.6bebdc06135e55803b5d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeedAnnouncementCard.e38d32e5ccd0901160ac.js.map

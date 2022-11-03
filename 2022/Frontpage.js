@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.b8bb6e835725586ad9e0.js
-// Retrieved at 11/3/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.7aba0682cc4afe601595.js
+// Retrieved at 11/3/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1209,34 +1209,59 @@
 		"./src/reddit/actions/merchandisingUnitAnnouncements/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return d
+				return u
+			})), n.d(t, "b", (function() {
+				return m
 			}));
 			var a = n("./src/lib/makeActionCreator/index.ts"),
-				s = n("./node_modules/react/index.js"),
-				r = n("./node_modules/react-redux/es/index.js"),
-				c = n("./src/reddit/endpoints/eligibleUXExperiences/eligibleUxExperiences.ts"),
-				i = n("./src/redditGQL/types.ts"),
-				o = n("./src/reddit/actions/merchandisingUnitAnnouncements/constants.ts");
-			const l = Object(a.a)(o.a),
-				d = e => {
-					const t = Object(r.d)(),
-						n = Object(s.useMemo)(() => ({
-							experience: i.U.AnnouncementInFeed,
+				s = n("./src/lib/sentry/index.ts"),
+				r = n("./node_modules/react/index.js"),
+				c = n("./node_modules/react-redux/es/index.js"),
+				i = n("./src/reddit/endpoints/eligibleUXExperiences/eligibleUxExperiences.ts"),
+				o = n("./src/redditGQL/types.ts"),
+				l = n("./src/reddit/actions/merchandisingUnitAnnouncements/constants.ts");
+			const d = Object(a.a)(l.a),
+				u = e => {
+					const t = Object(c.d)(),
+						n = Object(r.useMemo)(() => ({
+							experience: o.U.AnnouncementInFeed,
 							uxVariant: {
 								variantId: e
 							}
 						}), [e]),
-						a = Object(c.c)(n, i.a.Dismiss);
-					return Object(s.useCallback)(async () => {
+						a = Object(i.c)(n, o.a.Dismiss);
+					return Object(r.useCallback)(async () => {
 						t((e => async (t, n) => {
-							t(l({
+							t(d({
 								id: e
 							}))
 						})(e));
 						try {
 							await a()
-						} catch {}
+						} catch (n) {
+							s.c.withScope(t => {
+								t.setExtra("announcementId", e), t.setExtra("uxAction", o.a.Dismiss), s.c.captureException(n)
+							})
+						}
 					}, [e, a, t])
+				},
+				m = e => {
+					const t = Object(r.useMemo)(() => ({
+							experience: o.U.AnnouncementInFeed,
+							uxVariant: {
+								variantId: e
+							}
+						}), [e]),
+						n = Object(i.c)(t, o.a.View);
+					return Object(r.useCallback)(async () => {
+						try {
+							await n()
+						} catch (t) {
+							s.c.withScope(n => {
+								n.setExtra("announcementId", e), n.setExtra("uxAction", o.a.View), s.c.captureException(t)
+							})
+						}
+					}, [e, n])
 				}
 		},
 		"./src/reddit/actions/subreddit/topSubreddits.ts": function(e, t, n) {
@@ -2836,28 +2861,36 @@
 			}
 
 			function f(e) {
-				var t;
+				var t, n;
 				const {
-					layout: n,
-					announcement: a
-				} = e, s = g(a), o = Object(c.a)(null !== (t = null == s ? void 0 : s.id) && void 0 !== t ? t : "THIS_SHOULD_NEVER_HAPPEN");
-				if (null == s) return null;
-				switch (n) {
+					layout: a,
+					announcement: o
+				} = e, d = g(o), m = Object(c.a)(null !== (t = null == d ? void 0 : d.id) && void 0 !== t ? t : "THIS_SHOULD_NEVER_HAPPEN"), b = Object(c.b)(null !== (n = null == d ? void 0 : d.id) && void 0 !== n ? n : "THIS_SHOULD_NEVER_HAPPEN");
+				if (Object(s.useEffect)(() => {
+						b()
+					}, []), null == d) return null;
+				const f = async () => {
+					await m(), window.location.href = d.url
+				};
+				switch (a) {
 					case i.g.Large:
 					case i.g.Medium:
-						return r.a.createElement(u, l({}, s, {
-							layout: n,
-							onClose: o
+						return r.a.createElement(u, l({}, d, {
+							layout: a,
+							onClose: m,
+							onClick: f
 						}));
 					case i.g.Classic:
-						return r.a.createElement(p, l({}, s, {
-							layout: n,
-							onClose: o
+						return r.a.createElement(p, l({}, d, {
+							layout: a,
+							onClose: m,
+							onClick: f
 						}));
 					case i.g.Compact:
-						return r.a.createElement(h, l({}, s, {
-							layout: n,
-							onClose: o
+						return r.a.createElement(h, l({}, d, {
+							layout: a,
+							onClose: m,
+							onClick: f
 						}));
 					default:
 						return null
@@ -8566,4 +8599,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.b8bb6e835725586ad9e0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.7aba0682cc4afe601595.js.map

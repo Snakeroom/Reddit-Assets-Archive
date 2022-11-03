@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeedAnnouncementClassic.1771d0895dafab354125.js
-// Retrieved at 11/2/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeedAnnouncementClassic.ff60d1db237275c27aea.js
+// Retrieved at 11/3/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeedAnnouncementClassic"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, a) {
@@ -105,8 +105,8 @@
 				u = a("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				b = a("./src/reddit/constants/postLayout.ts"),
 				h = a("./src/reddit/helpers/styles/mixins/index.tsx"),
-				p = a("./src/reddit/hooks/useTheme.ts"),
-				C = a("./src/reddit/icons/fonts/index.tsx"),
+				C = a("./src/reddit/hooks/useTheme.ts"),
+				p = a("./src/reddit/icons/fonts/index.tsx"),
 				_ = a("./src/reddit/components/FeedAnnouncement/utils.ts"),
 				v = a("./src/reddit/components/FeedAnnouncement/FeedAnnouncementClassic/index.m.less"),
 				A = a.n(v);
@@ -117,9 +117,9 @@
 				} = e;
 				return a ? i.a.createElement("div", {
 					className: Object(c.a)(A.a.thumbnailIcon)
-				}, null == t ? i.a.createElement(C.a, {
+				}, null == t ? i.a.createElement(p.a, {
 					name: "text_post"
-				}) : i.a.createElement(C.a, {
+				}) : i.a.createElement(p.a, {
 					name: "image_post"
 				})) : null == t ? null : i.a.createElement("div", {
 					className: Object(c.a)(A.a.thumbnailContainer)
@@ -133,21 +133,21 @@
 					body: a,
 					title: o,
 					cta: l,
-					url: d,
-					layout: C,
-					onClose: v
-				} = e, E = Object(p.a)(), f = Object(_.a)(t), j = C === b.g.Compact;
+					layout: d,
+					onClose: p,
+					onClick: v
+				} = e, E = Object(C.a)(), j = Object(_.a)(t), N = d === b.g.Compact;
 				return i.a.createElement("div", {
 					className: Object(c.a)({
 						[A.a.container]: !0,
-						[A.a.isCompact]: j
+						[A.a.isCompact]: N
 					}),
 					role: "button",
-					onClick: () => window.location.href = d
+					onClick: v
 				}, i.a.createElement("div", {
 					className: Object(c.a)({
 						[A.a.leftRail]: !0,
-						[A.a.isCompact]: j
+						[A.a.isCompact]: N
 					})
 				}, i.a.createElement("div", {
 					className: Object(c.a)(A.a.horizontalVotes)
@@ -159,8 +159,8 @@
 						theme: E
 					})
 				}, i.a.createElement(x, {
-					imgUrl: f,
-					isCompact: j
+					imgUrl: j,
+					isCompact: N
 				}), i.a.createElement("div", {
 					className: Object(c.a)(A.a.contentContainer)
 				}, i.a.createElement("div", {
@@ -169,12 +169,12 @@
 					className: Object(c.a)({
 						[A.a.title]: !0,
 						[A.a.ellipsis]: !0,
-						[A.a.isCompact]: j
+						[A.a.isCompact]: N
 					})
 				}, o), i.a.createElement("button", {
 					className: A.a.headerCloseButton,
 					onClick: e => {
-						e.stopPropagation(), v()
+						e.stopPropagation(), p()
 					},
 					title: s.fbt._("Close", null, {
 						hk: "4CfMwa"
@@ -183,7 +183,7 @@
 					className: Object(c.a)({
 						[A.a.body]: !0,
 						[A.a.ellipsis]: !0,
-						[A.a.isCompact]: j
+						[A.a.isCompact]: N
 					})
 				}, a), i.a.createElement("div", {
 					className: Object(c.a)(A.a.fromReddit)
@@ -192,7 +192,7 @@
 				})), null != l ? i.a.createElement("div", {
 					className: Object(c.a)(A.a.ctaContainer)
 				}, i.a.createElement("a", {
-					href: d,
+					onClick: v,
 					className: Object(c.a)(A.a.ctaText)
 				}, l, i.a.createElement(n.a, {
 					className: Object(c.a)(A.a.ctaCaret),
@@ -284,4 +284,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeedAnnouncementClassic.1771d0895dafab354125.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeedAnnouncementClassic.ff60d1db237275c27aea.js.map
