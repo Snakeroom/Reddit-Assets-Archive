@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.917b0b4f6d245cabe2ed.js
-// Retrieved at 11/2/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.802f1512f3b90b83d97f.js
+// Retrieved at 11/3/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -55160,7 +55160,7 @@
 				i = n("./src/reddit/icons/svgs/Search/index.tsx"),
 				a = n("./src/reddit/controls/SearchBar/index.m.less"),
 				d = n.n(a);
-			t.a = e => r.a.createElement("div", {
+			t.a = e => r.a.createElement("label", {
 				className: Object(o.a)(d.a.searchContainer, e.className)
 			}, r.a.createElement("input", {
 				"data-testid": "SEARCH_BAR_TEST_ID",
@@ -55179,7 +55179,7 @@
 					[d.a.mClickable]: !!e.onSearch,
 					[d.a.mRightAligned]: e.rightAlignedIcon
 				}),
-				role: "submit",
+				role: e.onSearch && "submit",
 				onClick: e.onSearch
 			}, r.a.createElement(i.a, null)))
 		},
@@ -77844,4 +77844,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.917b0b4f6d245cabe2ed.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.802f1512f3b90b83d97f.js.map

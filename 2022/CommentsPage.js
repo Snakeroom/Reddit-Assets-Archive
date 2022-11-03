@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.d354936e4b5d94c18dde.js
-// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.d3c5cfb4b899f7b10694.js
+// Retrieved at 11/3/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -32820,7 +32820,7 @@
 				i = n("./src/reddit/icons/svgs/Search/index.tsx"),
 				a = n("./src/reddit/controls/SearchBar/index.m.less"),
 				c = n.n(a);
-			t.a = e => r.a.createElement("div", {
+			t.a = e => r.a.createElement("label", {
 				className: Object(o.a)(c.a.searchContainer, e.className)
 			}, r.a.createElement("input", {
 				"data-testid": "SEARCH_BAR_TEST_ID",
@@ -32839,7 +32839,7 @@
 					[c.a.mClickable]: !!e.onSearch,
 					[c.a.mRightAligned]: e.rightAlignedIcon
 				}),
-				role: "submit",
+				role: e.onSearch && "submit",
 				onClick: e.onSearch
 			}, r.a.createElement(i.a, null)))
 		},
@@ -46725,4 +46725,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.d354936e4b5d94c18dde.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.d3c5cfb4b899f7b10694.js.map

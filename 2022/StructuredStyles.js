@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.5cc169044e4d45b91605.js
-// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.568315d5ce5672460441.js
+// Retrieved at 11/3/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -7340,7 +7340,7 @@
 				i = n("./src/reddit/icons/svgs/Search/index.tsx"),
 				l = n("./src/reddit/controls/SearchBar/index.m.less"),
 				o = n.n(l);
-			t.a = e => r.a.createElement("div", {
+			t.a = e => r.a.createElement("label", {
 				className: Object(s.a)(o.a.searchContainer, e.className)
 			}, r.a.createElement("input", {
 				"data-testid": "SEARCH_BAR_TEST_ID",
@@ -7359,7 +7359,7 @@
 					[o.a.mClickable]: !!e.onSearch,
 					[o.a.mRightAligned]: e.rightAlignedIcon
 				}),
-				role: "submit",
+				role: e.onSearch && "submit",
 				onClick: e.onSearch
 			}, r.a.createElement(i.a, null)))
 		},
@@ -9308,4 +9308,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.5cc169044e4d45b91605.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.568315d5ce5672460441.js.map

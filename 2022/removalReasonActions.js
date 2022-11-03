@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.475808e6f47997ab15e7.js
-// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.d0280361d49fcef97763.js
+// Retrieved at 11/3/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./node_modules/lodash/map.js": function(e, t, o) {
@@ -2515,7 +2515,7 @@
 				c = o("./src/reddit/icons/svgs/Search/index.tsx"),
 				i = o("./src/reddit/controls/SearchBar/index.m.less"),
 				a = o.n(i);
-			t.a = e => s.a.createElement("div", {
+			t.a = e => s.a.createElement("label", {
 				className: Object(r.a)(a.a.searchContainer, e.className)
 			}, s.a.createElement("input", {
 				"data-testid": "SEARCH_BAR_TEST_ID",
@@ -2534,7 +2534,7 @@
 					[a.a.mClickable]: !!e.onSearch,
 					[a.a.mRightAligned]: e.rightAlignedIcon
 				}),
-				role: "submit",
+				role: e.onSearch && "submit",
 				onClick: e.onSearch
 			}, s.a.createElement(c.a, null)))
 		},
@@ -3103,4 +3103,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.475808e6f47997ab15e7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.d0280361d49fcef97763.js.map
