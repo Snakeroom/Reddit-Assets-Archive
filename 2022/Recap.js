@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Recap.42ecb8d8fdcf6ac39f38.js
-// Retrieved at 11/3/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Recap.2449bd8cd2524b465c4a.js
+// Retrieved at 11/3/2022, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Recap", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, a, t) {
@@ -100,7 +100,7 @@
 			const y = e => Object(S.c)(e, {
 				experimentName: k.hc,
 				experimentEligibilitySelector: S.a
-			}) === k.Rd;
+			}) === k.Pd;
 			var I = t("./src/reddit/selectors/meta.ts"),
 				x = t("./src/reddit/selectors/user.ts");
 			let w = !1;
@@ -650,8 +650,8 @@
 				D = t("./node_modules/fbt/lib/FbtPublic.js"),
 				B = t("./src/reddit/components/ImageWithFallback/index.tsx");
 
-			function M() {
-				return (M = Object.assign || function(e) {
+			function P() {
+				return (P = Object.assign || function(e) {
 					for (var a = 1; a < arguments.length; a++) {
 						var t = arguments[a];
 						for (var r in t) Object.prototype.hasOwnProperty.call(t, r) && (e[r] = t[r])
@@ -659,7 +659,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var P = e => c.a.createElement("svg", M({}, e, {
+			var M = e => c.a.createElement("svg", P({}, e, {
 					className: e.className,
 					xmlns: "http://www.w3.org/2000/svg",
 					viewBox: "0 0 130 32"
@@ -690,7 +690,7 @@
 						className: Object(u.a)(Y.a.fallbackStaticImage)
 					})), c.a.createElement("div", {
 						className: Y.a.info
-					}, c.a.createElement(P, {
+					}, c.a.createElement(M, {
 						className: Y.a.logo
 					}), c.a.createElement("p", {
 						className: Y.a.title
@@ -778,7 +778,7 @@
 							[$.a.selected]: l,
 							[$.a.initialCard]: d
 						})
-					}, !o && c.a.createElement(P, {
+					}, !o && c.a.createElement(M, {
 						className: Object(u.a)($.a.logo, {
 							[$.a.white]: g,
 							[$.a.selected]: l
@@ -1819,7 +1819,7 @@
 				[r.WHITE]: [Ae.MANGO_500, Ae.MANGO_300, Ae.MANGO_100],
 				[r.YELLOW]: [Ae.WHITE, Ae.MANGO_300, Ae.MANGO_500]
 			};
-			var Me, Pe = e => {
+			var Pe, Me = e => {
 				let {
 					card: {
 						title: a,
@@ -1874,8 +1874,8 @@
 			};
 			! function(e) {
 				e.WHITE = "#fff", e.MANGO_300 = "#ffd635", e.MANGO_500 = "#ffa800"
-			}(Me || (Me = {}));
-			const We = [Me.WHITE, Me.MANGO_300, Me.MANGO_500];
+			}(Pe || (Pe = {}));
+			const We = [Pe.WHITE, Pe.MANGO_300, Pe.MANGO_500];
 			var Ye = e => {
 				let {
 					card: {
@@ -1978,7 +1978,7 @@
 						card: a,
 						isSelected: t,
 						isForSharing: r
-					}) : (e => e.__typename === I)(a) ? c.a.createElement(Pe, {
+					}) : (e => e.__typename === I)(a) ? c.a.createElement(Me, {
 						card: a,
 						isSelected: t,
 						isForSharing: r
@@ -2070,7 +2070,7 @@
 						className: Xe.a.card
 					}), !r && c.a.createElement("div", {
 						className: Xe.a.shareFooter
-					}, c.a.createElement(P, {
+					}, c.a.createElement(M, {
 						className: Object(u.a)(Xe.a.logo)
 					}), c.a.createElement("span", {
 						className: Xe.a.text
@@ -2122,8 +2122,8 @@
 						A = k.length > 6 && R > 1,
 						D = 6 * (R - 1),
 						B = D + 6,
-						M = 6 * R < k.length,
-						P = k.length && F(k[O]),
+						P = 6 * R < k.length,
+						M = k.length && F(k[O]),
 						W = k.length && (k[O].cardTemplateColor === r.WHITE || k[O].cardTemplateColor === r.YELLOW),
 						Y = Object(s.useCallback)(() => {
 							e(Object(b.c)()), e(Object(b.a)())
@@ -2147,24 +2147,24 @@
 						})),
 						G = Object(s.useCallback)(e => {
 							if (null !== e && k.length && !i) {
-								if (e.focus(), P && !j && !N) return C(!0);
+								if (e.focus(), M && !j && !N) return C(!0);
 								e.onwheel = e => {
-									x(!0), U.current(e, k.length, O, !!P, j, N)
+									x(!0), U.current(e, k.length, O, !!M, j, N)
 								}, e.onkeydown = e => {
-									x(!0), U.current(e, k.length, O, !!P, j, N)
+									x(!0), U.current(e, k.length, O, !!M, j, N)
 								}
 							}
-						}, [k, O, i, N, j, P]),
+						}, [k, O, i, N, j, M]),
 						V = c.a.useCallback(async () => {
 							let e = document.getElementById("shareId");
-							if (P && (e = document.getElementById("abilityCardShareId")), e) {
+							if (M && (e = document.getElementById("abilityCardShareId")), e) {
 								y(!0);
 								const a = await (() => t.e(4).then(t.bind(null, "./node_modules/html-to-image/es/index.js")))(),
 									r = await a.getFontEmbedCSS(e),
 									i = await a.toPng(e, {
-										backgroundColor: P ? "transparent" : Ue[k[O].cardTemplateColor],
-										canvasHeight: P ? 243 : 540,
-										canvasWidth: P ? 170 : 960,
+										backgroundColor: M ? "transparent" : Ue[k[O].cardTemplateColor],
+										canvasHeight: M ? 243 : 540,
+										canvasWidth: M ? 170 : 960,
 										style: {
 											scale: "1"
 										},
@@ -2204,7 +2204,7 @@
 								index: t + D
 							}))
 						}
-					})), M && c.a.createElement("div", {
+					})), P && c.a.createElement("div", {
 						className: Object(u.a)(ta.a.nextDot, {
 							[ta.a.black]: !!W
 						}),
@@ -2246,7 +2246,7 @@
 						withOverlay: !0,
 						card: k[O],
 						cardTemplateColor: Ue[k[O].cardTemplateColor],
-						isAbilityCard: !!P,
+						isAbilityCard: !!M,
 						isDownloading: S,
 						onDownloadCard: V,
 						onClose: n
@@ -2265,4 +2265,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Recap.42ecb8d8fdcf6ac39f38.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Recap.2449bd8cd2524b465c4a.js.map

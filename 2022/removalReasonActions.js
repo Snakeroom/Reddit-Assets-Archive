@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.6e16e67ae10eb2b228f8.js
-// Retrieved at 11/3/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.ac5f94a1a28a9650066c.js
+// Retrieved at 11/3/2022, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./node_modules/lodash/map.js": function(e, t, o) {
@@ -254,7 +254,7 @@
 			const ie = Object(ce.a)(e => Object(re.c)(e, {
 				experimentEligibilitySelector: re.a,
 				experimentName: se.Fb
-			}), e => e === se.Rd);
+			}), e => e === se.Pd);
 			var ae = o("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				de = o("./src/reddit/selectors/platform.ts"),
 				le = o("./src/reddit/selectors/posts.ts"),
@@ -3055,9 +3055,9 @@
 				experimentEligibilitySelector: s.a,
 				experimentName: n.xb
 			}), e => ({
-				bucketed: e === n.Uc.ExpandedSearch || e === n.Uc.CollapsedSearch,
-				collapsed: e === n.Uc.CollapsedSearch,
-				expanded: e === n.Uc.ExpandedSearch
+				bucketed: e === n.Tc.ExpandedSearch || e === n.Tc.CollapsedSearch,
+				collapsed: e === n.Tc.CollapsedSearch,
+				expanded: e === n.Tc.ExpandedSearch
 			}))
 		},
 		"./src/reddit/selectors/experiments/contributeBeforeSignUp.ts": function(e, t, o) {
@@ -3103,4 +3103,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.6e16e67ae10eb2b228f8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.ac5f94a1a28a9650066c.js.map

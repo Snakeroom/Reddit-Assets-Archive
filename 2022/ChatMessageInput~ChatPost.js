@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.c56dd09af11ea1be24a4.js
-// Retrieved at 11/3/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.2c7f2709ce6bead44eea.js
+// Retrieved at 11/3/2022, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -2035,7 +2035,7 @@
 							{
 								H: s,
 								D: a
-							} = W(e.a),
+							} = V(e.a),
 							{
 								c: d = []
 							} = e;
@@ -2153,16 +2153,16 @@
 						f: n,
 						t: r
 					} = e, a = [];
-					if (!n) return V(0, r, t);
+					if (!n) return W(0, r, t);
 					const o = Object(s.a)(r);
 					let i = 0,
 						c = 0;
 					const d = n.length;
 					for (; i < d; i++) {
 						const [e, t, s] = n[i], d = t + s, l = o[t], u = o[d] - l;
-						l > c && a.push(V(0, r.substr(c, l - c), `between${i}`)), a.push(V(e, r.substr(l, u), i)), c = l + u
+						l > c && a.push(W(0, r.substr(c, l - c), `between${i}`)), a.push(W(e, r.substr(l, u), i)), c = l + u
 					}
-					return c < r.length && a.push(V(0, r.substr(c), `remaining${i}`)), a
+					return c < r.length && a.push(W(0, r.substr(c), `remaining${i}`)), a
 				},
 				J = {
 					[m.j.monospace]: c.h,
@@ -2173,13 +2173,13 @@
 					[m.j.subscript]: c.l,
 					[m.j.superscript]: c.m
 				},
-				V = (e, t, n) => {
+				W = (e, t, n) => {
 					let s = t;
 					return s = a()(J, (t, s, r) => e & parseInt(r, 10) ? i.a.createElement(s, {
 						key: n
 					}, t) : t, s)
 				},
-				W = e => {
+				V = e => {
 					switch (e) {
 						case m.f:
 							return {
@@ -2310,12 +2310,12 @@
 						rtJsonElementProps: o
 					});
 					switch (a) {
-						case b.Yf.SmIcon:
+						case b.Wf.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.Yf.SmIconHc:
+						case b.Wf.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2837,12 +2837,12 @@
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: s.Sf
+						experimentName: s.Qf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Yf.SmIcon || t === s.Yf.SmIconHc
+					return t === s.Wf.SmIcon || t === s.Wf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -2868,4 +2868,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.c56dd09af11ea1be24a4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.2c7f2709ce6bead44eea.js.map

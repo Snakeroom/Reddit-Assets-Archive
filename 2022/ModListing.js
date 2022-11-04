@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.4560bae8c9d59bdd4b95.js
-// Retrieved at 11/3/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.2355abe56e6b3251ff1d.js
+// Retrieved at 11/3/2022, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, r) {
@@ -1994,7 +1994,7 @@
 				const b = Object(o.e)(e => e.subreddits.survey[r]),
 					p = Object(o.e)(e => e.subreddits.progressModule[r]),
 					h = Object(o.e)(l.a),
-					f = h !== c.Ue.NewModule;
+					f = h !== c.Se.NewModule;
 				return (null === (s = null == p ? void 0 : p.cards) || void 0 === s ? void 0 : s.length) > 0 && f ? i.a.createElement(m, {
 					closeModuleOnMount: !!t && t !== u.g.Large,
 					subredditId: r,
@@ -2056,15 +2056,15 @@
 			const o = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: i.R,
-						experimentName: n.xd
+						experimentName: n.vd
 					});
-					return !(!t || Object(n.zg)(t))
+					return !(!t || Object(n.xg)(t))
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: i.R,
-						experimentName: n.xd
-					}) === n.Vd.ListingEnabled
+						experimentName: n.vd
+					}) === n.Td.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/experiments/recapLeadUpGame.ts": function(e, t, r) {
@@ -2082,8 +2082,8 @@
 			const a = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: i.a,
-						experimentName: n.uf
-					}) === n.Rd
+						experimentName: n.sf
+					}) === n.Pd
 				},
 				c = Object(d.a)(o.R, (e, t) => {
 					let {
@@ -2094,8 +2094,8 @@
 				u = (e, t) => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: e => c(e, t),
-						experimentName: n.vf
-					}) === n.Rd
+						experimentName: n.tf
+					}) === n.Pd
 				}
 		},
 		"./src/reddit/selectors/recapGame.ts": function(e, t, r) {
@@ -2120,4 +2120,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.4560bae8c9d59bdd4b95.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.2355abe56e6b3251ff1d.js.map
