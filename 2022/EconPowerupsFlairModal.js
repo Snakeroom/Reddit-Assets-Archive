@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.ef205b4433fb25a66215.js
-// Retrieved at 11/7/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.10a507fc9ece723be3e9.js
+// Retrieved at 11/7/2022, 4:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsFlairModal", "AchievementsActions"], {
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, r) {
@@ -112,7 +112,7 @@
 						userId: a.id
 					});
 					!t && n || await r(y(e, [a.id]))
-				}, C = e => async (t, r) => !!e && (Object(h.f)(r()) ? (await t(Object(l.c)(e)), !!Object(v.c)(r(), {
+				}, C = e => async (t, r) => !!e && (Object(h.e)(r()) ? (await t(Object(l.c)(e)), !!Object(v.c)(r(), {
 					subredditId: e
 				})) : (await t(Object(u.e)(e, {
 					fullData: !0
@@ -606,8 +606,8 @@
 				k = e => N.includes(e),
 				T = Object(y.a)(e => Object(C.c)(e, {
 					experimentEligibilitySelector: C.a,
-					experimentName: S.je
-				}), e => e === S.Nd);
+					experimentName: S.ie
+				}), e => e === S.Md);
 			var U = r("./src/reddit/selectors/gold/powerups/index.ts"),
 				L = r("./src/reddit/selectors/gold/powerups/flairs.ts"),
 				M = r("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
@@ -687,7 +687,7 @@
 					flairs: i,
 					onClickFlair: a
 				} = e;
-				const d = Object(o.e)(_.f);
+				const d = Object(o.e)(_.e);
 				return n.a.createElement("div", {
 					className: t
 				}, n.a.createElement("h4", {
@@ -720,7 +720,7 @@
 						subredditId: t,
 						userId: r
 					})),
-					c = Object(o.e)(_.f),
+					c = Object(o.e)(_.e),
 					l = Object(o.e)(e => ((e, t) => T(e) && k(t))(e, t)),
 					u = Object(o.e)(e => Object(L.d)(e, {
 						subredditId: t,
@@ -1107,4 +1107,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.ef205b4433fb25a66215.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.10a507fc9ece723be3e9.js.map

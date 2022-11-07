@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.c4b64bc2a625d98983fc.js
-// Retrieved at 11/7/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.48f63484e3ee781b75d5.js
+// Retrieved at 11/7/2022, 4:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -588,7 +588,7 @@
 						postId: n,
 						author: o
 					} = t;
-					return Object(b.e)(_.p) && s.roomStatus === f.b.NotStarted ? r.a.createElement(O.a, {
+					return Object(b.e)(_.o) && s.roomStatus === f.b.NotStarted ? r.a.createElement(O.a, {
 						postId: n,
 						author: o,
 						roomId: s.roomId,
@@ -5816,10 +5816,10 @@
 				r = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: r.kg,
+					experimentName: r.jg,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				a = Object(n.a)(i, e => e === r.bg)
+				a = Object(n.a)(i, e => e === r.ag)
 		},
 		"./src/redditGQL/operations/CreateLiveAudioRoomOnProfile.json": function(e) {
 			e.exports = JSON.parse('{"id":"e35a47c6aa21"}')
@@ -5850,4 +5850,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.c4b64bc2a625d98983fc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.48f63484e3ee781b75d5.js.map

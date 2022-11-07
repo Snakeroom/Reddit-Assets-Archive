@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxTooltip.6eb015035e81e7909cad.js
-// Retrieved at 11/7/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxTooltip.6b102e4d124be42115cd.js
+// Retrieved at 11/7/2022, 4:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxTooltip", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -94,13 +94,13 @@
 				x = i("./src/reddit/selectors/activeModal.ts"),
 				k = i("./src/reddit/selectors/activeModalId.ts"),
 				S = i("./src/reddit/selectors/experiments/delayDnPermission.ts"),
-				N = i("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
-				w = i("./src/reddit/constants/experiments.ts"),
+				w = i("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
+				N = i("./src/reddit/constants/experiments.ts"),
 				y = i("./src/reddit/helpers/chooseVariant/index.ts");
 			const _ = e => Object(y.c)(e, {
-				experimentName: w.fc,
+				experimentName: N.fc,
 				experimentEligibilitySelector: y.a
-			}) === w.Nd;
+			}) === N.Md;
 			var I = i("./src/reddit/selectors/meta.ts"),
 				P = i("./src/reddit/selectors/user.ts");
 			let E = !1;
@@ -134,7 +134,7 @@
 						l = _(c),
 						b = !!Object(k.a)(c),
 						f = Object(S.a)(c),
-						p = Object(N.e)(c),
+						p = Object(w.e)(c),
 						g = Object(x.c)(m.a.NSFW_BLOCKING_MODAL_V2)(c);
 					if (p || g) return;
 					if (await Object(r.a)() || u) return;
@@ -386,8 +386,8 @@
 					isLoggedIn: x,
 					isOpen: k,
 					isPending: S,
-					isPushNotificationsSupported: N,
-					markAllAsRead: w,
+					isPushNotificationsSupported: w,
+					markAllAsRead: N,
 					markNotificationAsRead: y,
 					messagesBadgeCount: _,
 					notifications: I,
@@ -419,14 +419,14 @@
 					hideTooltip: p,
 					blockAwarder: m,
 					inboxBadgeCount: O,
-					isPushNotificationsSupported: N,
+					isPushNotificationsSupported: w,
 					isHotPotatoEnabled: g,
 					isInboxPolicyBannerEnabled: h,
 					isInboxInfiniteScrollEnabled: j,
 					isInboxPostEmbedEnabled: v,
 					isLoggedIn: x,
 					isPending: S,
-					markAllAsRead: w,
+					markAllAsRead: N,
 					markNotificationAsRead: y,
 					messagesBadgeCount: _,
 					notifications: I,
@@ -465,9 +465,9 @@
 			})), i.d(t, "o", (function() {
 				return S
 			})), i.d(t, "h", (function() {
-				return N
-			})), i.d(t, "g", (function() {
 				return w
+			})), i.d(t, "g", (function() {
+				return N
 			}));
 			var n = i("./src/reddit/selectors/telemetry.ts"),
 				o = i("./src/telemetry/index.ts"),
@@ -595,13 +595,13 @@
 						pageType: "community_alerts"
 					}
 				}),
-				N = () => e => ({
+				w = () => e => ({
 					...n.o(e),
 					action: "click",
 					noun: "desktop_notification_permissions",
 					source: "overlay"
 				}),
-				w = () => e => ({
+				N = () => e => ({
 					...n.o(e),
 					action: "auto_dismiss",
 					noun: "desktop_notification_permissions",
@@ -613,4 +613,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.6eb015035e81e7909cad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.6b102e4d124be42115cd.js.map

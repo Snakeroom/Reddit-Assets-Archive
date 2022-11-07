@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.e69a0a22244ef0bbdc1b.js
-// Retrieved at 11/7/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.52ef2b1ddb13018365cc.js
+// Retrieved at 11/7/2022, 4:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, r) {
@@ -73,7 +73,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(u.vg)(e.category_name)
+									displayText: Object(u.ug)(e.category_name)
 								};
 								r.push(s.id), t[s.id] = s
 							}), {
@@ -242,8 +242,8 @@
 			const y = e => {
 				return Object(h.c)(e, {
 					experimentEligibilitySelector: h.a,
-					experimentName: g.sf
-				}) === g.Nd
+					experimentName: g.rf
+				}) === g.Md
 			};
 			var f = r("./src/reddit/selectors/recapGame.ts"),
 				k = r("./src/reddit/selectors/user.ts"),
@@ -2662,7 +2662,7 @@
 					} = t;
 					return Object(g.b)(r.params.categoryName || "")
 				},
-				Ee = Object(m.ug)(p.i),
+				Ee = Object(m.tg)(p.i),
 				Ce = Object(d.c)({
 					categories: e => Object(ye.b)(e, {
 						categoriesOrder: Ee
@@ -2815,4 +2815,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.e69a0a22244ef0bbdc1b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.52ef2b1ddb13018365cc.js.map

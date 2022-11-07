@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.804b81afee59de70f167.js
-// Retrieved at 11/7/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.f7b0de52dad559f9c9b5.js
+// Retrieved at 11/7/2022, 4:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium~reddit-components-Econ-Prediction-PremiumModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -2151,7 +2151,7 @@
 					s = Object(O.a)(),
 					c = Object(i.e)(E.m),
 					l = !!c,
-					u = Object(i.e)(e => !r && l && Object(k.m)(e)),
+					u = Object(i.e)(e => !r && l && Object(k.l)(e)),
 					m = Object(i.e)(E.j),
 					p = Object(i.e)(E.l);
 				if (!(null == p ? void 0 : p.length)) return o.a.createElement("div", null, o.a.createElement(g.a, {
@@ -2601,4 +2601,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.804b81afee59de70f167.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.f7b0de52dad559f9c9b5.js.map

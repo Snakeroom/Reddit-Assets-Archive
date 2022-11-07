@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.6d97e52f520f43799431.js
-// Retrieved at 11/7/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.d65f21670d1e107fcd37.js
+// Retrieved at 11/7/2022, 4:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, o) {
@@ -351,7 +351,7 @@
 			! function(e) {
 				e.Comment = "ModQueueItemComment", e.Post = "ModQueueItemPost", e.ChatComment = "ModQueueItemChatComment"
 			}(I || (I = {}));
-			const C = e => ({
+			const M = e => ({
 					access: (null == e ? void 0 : e.isAccessEnabled) || !1,
 					all: (null == e ? void 0 : e.isAllAllowed) || !1,
 					chatConfig: (null == e ? void 0 : e.isChatConfigEditingAllowed) || !1,
@@ -362,7 +362,7 @@
 					posts: (null == e ? void 0 : e.isPostEditingAllowed) || !1,
 					wiki: (null == e ? void 0 : e.isWikiEditingAllowed) || !1
 				}),
-				M = e => {
+				C = e => {
 					let {
 						id: t,
 						icon: o,
@@ -427,7 +427,7 @@
 					l = null == s ? void 0 : s.reduce((e, t) => {
 						if ("Subreddit" !== (null == t ? void 0 : t.__typename)) return e;
 						if (!(null == t ? void 0 : t.modPermissions)) return e;
-						if (e.moderatingSubreddits[t.id] = C(t.modPermissions), !(null == t ? void 0 : t.moderation)) return e;
+						if (e.moderatingSubreddits[t.id] = M(t.modPermissions), !(null == t ? void 0 : t.moderation)) return e;
 						const {
 							subreddit: o,
 							summary: s
@@ -446,7 +446,7 @@
 					var o;
 					if (!(null === (o = null == t ? void 0 : t.node) || void 0 === o ? void 0 : o.modPermissions)) return e;
 					const s = t.node.modPermissions;
-					return e.moderatingSubreddits[t.node.id] = C(s), e.subreddits[t.node.id] = Object(E.a)(t.node), e
+					return e.moderatingSubreddits[t.node.id] = M(s), e.subreddits[t.node.id] = Object(E.a)(t.node), e
 				}, {
 					subreddits: {},
 					moderatingSubreddits: {}
@@ -472,7 +472,7 @@
 					const {
 						id: m
 					} = l;
-					if (c.subreddits[m] = Object(E.a)(l), c.moderatingSubreddits[m] || "Subreddit" !== (null == l ? void 0 : l.__typename) || (c.moderatingSubreddits[m] = C(l.modPermissions)), !c.postFlair[m] && "Subreddit" === l.__typename) {
+					if (c.subreddits[m] = Object(E.a)(l), c.moderatingSubreddits[m] || "Subreddit" !== (null == l ? void 0 : l.__typename) || (c.moderatingSubreddits[m] = M(l.modPermissions)), !c.postFlair[m] && "Subreddit" === l.__typename) {
 						const {
 							position: e,
 							isEnabled: o
@@ -522,7 +522,7 @@
 						if (!e) return;
 						const t = Object(_.a)(e);
 						if (null === (o = e.moderationInfo) || void 0 === o ? void 0 : o.verdictBy) {
-							const t = M(null === (s = e.moderationInfo) || void 0 === s ? void 0 : s.verdictBy);
+							const t = C(null === (s = e.moderationInfo) || void 0 === s ? void 0 : s.verdictBy);
 							t.username && (c.users[null == t ? void 0 : t.username] = t)
 						}
 						c.comments[t.id] = t, c.listingOrder.push({
@@ -558,7 +558,7 @@
 							postInfo: e
 						} = a;
 						if (null === (n = null == e ? void 0 : e.moderationInfo) || void 0 === n ? void 0 : n.verdictBy) {
-							const t = M(null === (d = e.moderationInfo) || void 0 === d ? void 0 : d.verdictBy);
+							const t = C(null === (d = e.moderationInfo) || void 0 === d ? void 0 : d.verdictBy);
 							t.username && (c.users[null == t ? void 0 : t.username] = t)
 						}
 						if (!e) return;
@@ -1189,8 +1189,8 @@
 				k = o("./src/lib/makeCommentsPageKey/index.ts"),
 				x = o("./src/lib/makeDraftKey/index.ts"),
 				I = o("./src/reddit/actions/bulkActions/index.ts"),
-				C = o("./src/reddit/actions/comment/index.ts"),
-				M = o("./src/reddit/actions/comment/authoring.ts"),
+				M = o("./src/reddit/actions/comment/index.ts"),
+				C = o("./src/reddit/actions/comment/authoring.ts"),
 				P = o("./src/reddit/actions/comment/moderation.ts"),
 				N = o("./src/reddit/actions/modal.ts"),
 				w = o("./src/reddit/actions/post.ts"),
@@ -1335,7 +1335,7 @@
 						m = e[0],
 						b = Object(V.a)(m) ? z.e.Post : z.e.Comment,
 						p = b === z.e.Post ? u.posts.models[m] : u.features.comments.models[m],
-						f = b === z.e.Post ? w.R : C.j;
+						f = b === z.e.Post ? w.R : M.j;
 					if (!p || !l) return !1;
 					d(Oe()), d(f({
 						[m]: {
@@ -1377,7 +1377,7 @@
 												hasSortParam: !0
 											})), b === z.e.Post) {
 											const o = Object(x.a)(K.c.replyToPost, m);
-											d(Object(M.r)({
+											d(Object(C.r)({
 												...t,
 												headCommentId: Object(J.w)(u, {
 													commentsPageKey: r
@@ -1390,7 +1390,7 @@
 												id: e.id,
 												postId: e.postId,
 												commentsPageKey: r
-											})), s && s !== e.id && d(Object(C.j)({
+											})), s && s !== e.id && d(Object(M.j)({
 												[s]: {
 													isStickied: !1
 												}
@@ -1401,7 +1401,7 @@
 													commentId: m,
 													commentsPageKey: r
 												});
-											d(Object(M.p)({
+											d(Object(C.p)({
 												...t,
 												parentCommentId: m,
 												commentsPageKey: r,
@@ -1679,7 +1679,7 @@
 			const d = e => Object(r.c)(e, {
 				experimentEligibilitySelector: n.R,
 				experimentName: s.cc
-			}) === s.Nd
+			}) === s.Md
 		},
 		"./src/reddit/selectors/experiments/realtimeMQUpdates.ts": function(e, t, o) {
 			"use strict";
@@ -1693,7 +1693,7 @@
 			const i = e => Object(d.a)(e) && Object(r.c)(e, {
 				experimentEligibilitySelector: n.R,
 				experimentName: s.Ac
-			}) === s.Nd
+			}) === s.Md
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, o) {
 			"use strict";
@@ -1773,4 +1773,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.6d97e52f520f43799431.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.d65f21670d1e107fcd37.js.map

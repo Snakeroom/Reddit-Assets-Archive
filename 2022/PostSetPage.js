@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostSetPage.f924e0fa86dac57bdbdb.js
-// Retrieved at 11/7/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostSetPage.1591a1f406de65184da0.js
+// Retrieved at 11/7/2022, 4:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostSetPage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -862,8 +862,8 @@
 			const g = e => {
 				return Object(f.c)(e, {
 					experimentEligibilitySelector: f.a,
-					experimentName: h.sf
-				}) === h.Nd
+					experimentName: h.rf
+				}) === h.Md
 			};
 			var x = n("./src/reddit/selectors/recapGame.ts"),
 				y = n("./src/reddit/selectors/user.ts"),
@@ -894,8 +894,8 @@
 					P = Object(o.e)(y.R),
 					R = Object(o.e)(x.a),
 					F = encodeURIComponent(a.a.redditUrl + "/r/recap"),
-					B = a.a.accountManagerOrigin,
-					M = P ? "/r/recap" : `${B}/login/?dest=${F}`,
+					M = a.a.accountManagerOrigin,
+					B = P ? "/r/recap" : `${M}/login/?dest=${F}`,
 					A = L ? L.id : "anonymous",
 					D = "on" === R.recapGameState,
 					W = () => {
@@ -922,7 +922,7 @@
 					style: u
 				}, v && T && !n && !D ? i.a.createElement("a", {
 					ref: f,
-					href: M,
+					href: B,
 					className: _.a.bananaPill,
 					onMouseEnter: () => {
 						k && clearTimeout(k), j && clearTimeout(j), f.current && (f.current.classList.remove(_.a.transform), f.current.style.width = "65px")
@@ -2923,13 +2923,13 @@
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: () => t,
 						experimentName: r.uc
-					}) === r.Nd
+					}) === r.Md
 				},
 				o = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
 						experimentName: r.tc
-					}) === r.Nd
+					}) === r.Md
 				}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, n) {
@@ -2961,4 +2961,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.f924e0fa86dac57bdbdb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.1591a1f406de65184da0.js.map

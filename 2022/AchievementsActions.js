@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AchievementsActions.be677298a27e5c0b9dcc.js
-// Retrieved at 11/7/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AchievementsActions.09ab2f8a3dbc72451f5b.js
+// Retrieved at 11/7/2022, 4:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AchievementsActions"], {
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, r) {
@@ -112,7 +112,7 @@
 						userId: d.id
 					});
 					!t && n || await r(P(e, [d.id]))
-				}, _ = e => async (t, r) => !!e && (Object(m.f)(r()) ? (await t(Object(u.c)(e)), !!Object(j.c)(r(), {
+				}, _ = e => async (t, r) => !!e && (Object(m.e)(r()) ? (await t(Object(u.c)(e)), !!Object(j.c)(r(), {
 					subredditId: e
 				})) : (await t(Object(l.e)(e, {
 					fullData: !0
@@ -245,4 +245,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AchievementsActions.be677298a27e5c0b9dcc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AchievementsActions.09ab2f8a3dbc72451f5b.js.map

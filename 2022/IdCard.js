@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.d579abddf5cbdbf50bb3.js
-// Retrieved at 11/7/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.a37863e1ef6714b8b7d9.js
+// Retrieved at 11/7/2022, 4:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -621,7 +621,7 @@
 						userId: i.id
 					});
 					!t && o || await n(S(e, [i.id]))
-				}, w = e => async (t, n) => !!e && (Object(h.f)(n()) ? (await t(Object(l.c)(e)), !!Object(g.c)(n(), {
+				}, w = e => async (t, n) => !!e && (Object(h.e)(n()) ? (await t(Object(l.c)(e)), !!Object(g.c)(n(), {
 					subredditId: e
 				})) : (await t(Object(u.e)(e, {
 					fullData: !0
@@ -4219,7 +4219,7 @@
 						onClick: g ? _ : void 0,
 						headerButton: i.a.createElement("div", {
 							className: bt.a.headerButtonsContainer
-						}, !z && v && C && l !== Le.Qe.NewModule && i.a.createElement(a.a, {
+						}, !z && v && C && l !== Le.Pe.NewModule && i.a.createElement(a.a, {
 							className: bt.a.ModToolsLink,
 							to: C.posts ? `${v.url}about/modqueue` : `${v.url}about/`,
 							onClick: this.onClickModTools
@@ -6057,4 +6057,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.d579abddf5cbdbf50bb3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.a37863e1ef6714b8b7d9.js.map

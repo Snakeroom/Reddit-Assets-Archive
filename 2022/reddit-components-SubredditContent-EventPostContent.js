@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.09f6aeb9ca937d5c120f.js
-// Retrieved at 11/7/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.66ab8cbcf7eca38ddd97.js
+// Retrieved at 11/7/2022, 4:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-EventPostContent"], {
 		"./src/reddit/components/ClassicPost/index.tsx": function(e, t, s) {
@@ -79,7 +79,7 @@
 						postId: o,
 						author: n
 					} = t;
-					return Object(x.e)(v.p) && s.roomStatus === h.b.NotStarted ? r.a.createElement(P.a, {
+					return Object(x.e)(v.o) && s.roomStatus === h.b.NotStarted ? r.a.createElement(P.a, {
 						postId: o,
 						author: n,
 						roomId: s.roomId,
@@ -1272,4 +1272,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.09f6aeb9ca937d5c120f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.66ab8cbcf7eca38ddd97.js.map

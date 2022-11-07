@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.020ee56ba7bceb787627.js
-// Retrieved at 11/7/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.4dca0ef8236735d4194f.js
+// Retrieved at 11/7/2022, 4:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -12108,7 +12108,7 @@
 					userIsWhitelistedCreator: jn.y,
 					allowNavigationCallback: ur.a,
 					isResponsiveSettingsEnabled: mr.a,
-					isTalkLiveBarOptOutEnabled: dr.t,
+					isTalkLiveBarOptOutEnabled: dr.s,
 					prefs: e => e.user.prefs,
 					userHasSpecialMembership: e => {
 						if (e.economics.me.fetched) {
@@ -12121,7 +12121,7 @@
 						return Object(ae.c)(e, {
 							experimentName: w.jd,
 							experimentEligibilitySelector: ae.a
-						}) === w.Nd
+						}) === w.Md
 					}
 				}),
 				_r = Object(ve.v)(),
@@ -12618,7 +12618,7 @@
 					return !!n && n.hasGifProduct
 				},
 				z = (e, t, n) => {
-					if (Object(b.e)(e)) return !!t && !!Object(f.a)(e, {
+					if (Object(b.d)(e)) return !!t && !!Object(f.a)(e, {
 						subredditId: t
 					});
 					if (Object(f.g)(e, {
@@ -12674,7 +12674,7 @@
 			const r = e => Object(o.c)(e, {
 				experimentName: s.y,
 				experimentEligibilitySelector: () => Object(a.Q)(e)
-			}) === s.Nd
+			}) === s.Md
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -12838,4 +12838,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.020ee56ba7bceb787627.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.4dca0ef8236735d4194f.js.map

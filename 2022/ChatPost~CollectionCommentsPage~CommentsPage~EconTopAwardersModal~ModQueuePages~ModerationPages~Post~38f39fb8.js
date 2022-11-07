@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.6d5975415bbdbb45e2c2.js
-// Retrieved at 11/7/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.c2b8ec5441350780ebc1.js
+// Retrieved at 11/7/2022, 4:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -3569,7 +3569,7 @@
 					return !!r && r.hasGifProduct
 				},
 				q = (e, t, r) => {
-					if (Object(h.e)(e)) return !!t && !!Object(f.a)(e, {
+					if (Object(h.d)(e)) return !!t && !!Object(f.a)(e, {
 						subredditId: t
 					});
 					if (Object(f.g)(e, {
@@ -3627,15 +3627,15 @@
 			const a = e => {
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: n.R,
-						experimentName: s.td
+						experimentName: s.sd
 					});
-					return !(!t || Object(s.wg)(t))
+					return !(!t || Object(s.vg)(t))
 				},
 				i = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: n.R,
-						experimentName: s.td
-					}) === s.Rd.ListingEnabled
+						experimentName: s.sd
+					}) === s.Qd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/gold/topAwarded.ts": function(e, t, r) {
@@ -3695,4 +3695,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.6d5975415bbdbb45e2c2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.c2b8ec5441350780ebc1.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.ef332fcf3919ad48fc82.js
-// Retrieved at 11/7/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.137d5008403ce10e9003.js
+// Retrieved at 11/7/2022, 4:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -2230,7 +2230,7 @@
 			const D = e => _.d.reCaptchaEnterprise(e) && !Object(T.d)(e),
 				w = e => !!Object(I.c)(e, {
 					experimentEligibilitySelector: Object(S.d)(Object(S.b)(...a.d)),
-					experimentName: f.pf
+					experimentName: f.of
 				}),
 				j = Object(r.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				C = () => l(e => p()([D, w, e => e.tracking.reCaptchaEnterprise.load === r.a.New], t => t(e)))(async e => {
@@ -5041,10 +5041,10 @@
 				b = n("./node_modules/reselect/es/index.js");
 			const h = Object(b.a)(e => Object(f.c)(e, {
 				experimentEligibilitySelector: f.a,
-				experimentName: p.sg
+				experimentName: p.rg
 			}), e => ({
-				promptBeforeClick: e === p.tg.PromptBeforeClick,
-				promptAfterClick: e === p.tg.PromptAfterClick
+				promptBeforeClick: e === p.sg.PromptBeforeClick,
+				promptAfterClick: e === p.sg.PromptAfterClick
 			}));
 			var y = n("./src/reddit/controls/Search/SearchScopePill/index.tsx"),
 				m = n("./src/reddit/controls/Search/SearchBar/index.m.less"),
@@ -25777,7 +25777,7 @@
 					if (!u(e)) return;
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: l,
-						experimentName: a.ge,
+						experimentName: a.fe,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -25800,9 +25800,9 @@
 				},
 				b = e => !!p(e) && Object(o.c)(e, {
 					experimentEligibilitySelector: u,
-					experimentName: a.he,
+					experimentName: a.ge,
 					expEventOverride: !1
-				}) !== a.ie.Readonly
+				}) !== a.he.Readonly
 		},
 		"./src/reddit/selectors/experiments/serpTabPreserved.ts": function(e, t, n) {
 			"use strict";
@@ -25816,7 +25816,7 @@
 				const t = Object(s.q)(e, r.Ic);
 				return {
 					experimentState: e,
-					isActive: (null == t ? void 0 : t.variant) === r.Nd,
+					isActive: (null == t ? void 0 : t.variant) === r.Md,
 					isBucketed: !!(null == t ? void 0 : t.variant)
 				}
 			}
@@ -25966,4 +25966,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.ef332fcf3919ad48fc82.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.137d5008403ce10e9003.js.map
