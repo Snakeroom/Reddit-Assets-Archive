@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.47182f9bb0b0b5f5b5d6.js
-// Retrieved at 11/7/2022, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.6fd96cf17407cb556ebf.js
+// Retrieved at 11/7/2022, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -19707,7 +19707,12 @@
 				thumbnailContainerRow: "ly1p6kYBCM7ZqoRjGeAhw",
 				postOverflow: "x4YOGJe9jA6wgzmbyKZK0",
 				postSource: "_2BgmOVmNwratQ_mDI9DaHR",
-				modModeBannerWrapper: "_1wpVciZItCVMc_3pYSceM5"
+				modModeBannerWrapper: "_1wpVciZItCVMc_3pYSceM5",
+				realtimeAnimation: "S33xGQRDwuEu0UCuySY-8",
+				realtimeFade: "_1I9NB7KmCGwAHbfEpCOf8V",
+				isNightMode: "MTt6QTOKMo8xdDlYmv456",
+				realtimeFadeNight: "_15WFTB2XFDPefKceV0OM7e",
+				realtimeUpdated: "lJOoJ1Pj5PqAnL0NdDYyM"
 			}
 		},
 		"./src/reddit/components/ModModeBanners/index.m.less": function(e, t, n) {
@@ -21656,14 +21661,15 @@
 					post: c,
 					redditStyle: l,
 					theme: p,
-					...b
+					overrideBackgroundColor: b,
+					...f
 				} = e;
 				return r.a.createElement("div", m({
 					className: Object(o.a)(u.a.backgroundWrapper, n),
-					style: Object(a.c)(s, e),
+					style: b || Object(a.c)(s, e),
 					onClick: i,
 					"data-adclicklocation": d.a.BACKGROUND
-				}, b), t)
+				}, f), t)
 			}))
 		},
 		"./src/reddit/components/PostBadges/index.m.less": function(e, t, n) {
@@ -28393,12 +28399,14 @@
 					backgroundClassName: t,
 					className: n,
 					headshot: r,
-					hasNftBorder: a
+					hasNftBorder: a,
+					style: d
 				} = e;
 				return o.a.createElement("div", {
 					className: Object(i.a)(c.a.snoovatarWrapper, n, {
 						[c.a.hasNftBorder]: Boolean(a)
-					})
+					}),
+					style: d
 				}, o.a.createElement("div", {
 					className: Object(i.a)(c.a.snoovatarBackground, t)
 				}), o.a.createElement("div", {
@@ -28460,20 +28468,23 @@
 					isNightMode: o,
 					isNSFW: d,
 					nsfwIconUrl: p,
-					shouldHideNSFW: b
+					shouldHideNSFW: b,
+					style: f
 				} = e;
 				if (s && m(n) || !s && !n) return i.a.createElement(c.a, {
 					className: Object(a.a)(l.a.DefaultUserIcon, t, {
 						[l.a.mNightmode]: o
-					})
+					}),
+					style: f
 				});
-				const f = !s && d && b ? p || u : n;
+				const C = !s && d && b ? p || u : n;
 				return i.a.createElement("img", {
 					alt: r.fbt._("User avatar", null, {
 						hk: "X43nA"
 					}),
 					className: Object(a.a)(l.a.UserIcon, t),
-					src: f
+					src: C,
+					style: f
 				})
 			}
 		},
@@ -28596,16 +28607,19 @@
 					user: T,
 					userName: L,
 					wrapperClassName: P,
-					...N
-				} = e, M = !!i && Object(u.e)(i) === L, A = M ? i : T, D = A && A.accountIcon || a, R = T ? T.isNSFW : f, F = Object(d.a)(D) && !m, B = F ? o.a.createElement(_.a, {
-					headshot: D,
+					style: N,
+					...M
+				} = e, A = !!i && Object(u.e)(i) === L, D = A ? i : T, R = D && D.accountIcon || a, F = T ? T.isNSFW : f, B = Object(d.a)(R) && !m, U = B ? o.a.createElement(_.a, {
+					headshot: R,
 					className: e.className,
-					hasNftBorder: b && Object(d.d)(a)
-				}) : o.a.createElement(v.b, O({}, N, {
-					iconUrl: m && n ? "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png" : D,
-					isCurrentUser: M,
-					isNSFW: R
-				})), [U, V] = Object(r.useState)(!1), W = Object(r.useMemo)(() => ({
+					hasNftBorder: b && Object(d.d)(a),
+					style: N
+				}) : o.a.createElement(v.b, O({}, M, {
+					iconUrl: m && n ? "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png" : R,
+					isCurrentUser: A,
+					isNSFW: F,
+					style: N
+				})), [V, W] = Object(r.useState)(!1), H = Object(r.useMemo)(() => ({
 					input: {
 						channel: {
 							teamOwner: "CONTENT_AND_COMMUNITIES",
@@ -28613,37 +28627,37 @@
 							userID: t
 						}
 					}
-				}), [t]), H = Object(r.useCallback)(e => {
+				}), [t]), G = Object(r.useCallback)(e => {
 					const {
 						isOnline: t
 					} = e.subscribe.data;
-					V(t)
-				}, []), G = Object(r.useRef)(null), [q, K] = Object(r.useState)(!1), z = Object(r.useCallback)(e => {
+					W(t)
+				}, []), q = Object(r.useRef)(null), [K, z] = Object(r.useState)(!1), Z = Object(r.useCallback)(e => {
 					e.forEach(e => {
 						const {
 							isIntersecting: t,
 							intersectionRatio: n
 						} = e, s = 1 !== n;
-						t ? K(!0) : s && K(!1)
+						t ? z(!0) : s && z(!1)
 					})
-				}, []), Z = Object(r.useRef)({
+				}, []), Y = Object(r.useRef)({
 					rootMargin: "750px 0px 1000px 0px"
 				});
-				return Object(l.a)(G, z, Z.current), I ? B : o.a.createElement("div", {
+				return Object(l.a)(q, Z, Y.current), I ? U : o.a.createElement("div", {
 					className: Object(s.a)(C.a.userIconWrapper, {
-						[C.a.hasHeadShotWrapper]: F,
+						[C.a.hasHeadShotWrapper]: B,
 						[C.a.isProfileIcon]: k
 					}, P),
-					ref: G
+					ref: q
 				}, b && o.a.createElement(h, {
 					iconUrl: a
-				}), B, w && (U || x && E) && o.a.createElement(g.default, {
+				}), U, w && (V || x && E) && o.a.createElement(g.default, {
 					showPresence: !0,
 					isHighlighted: p,
 					onceInViewport: S
-				}), (w || j) && !x && q && o.a.createElement(c.a, {
-					variables: W,
-					onData: w ? H : y,
+				}), (w || j) && !x && K && o.a.createElement(c.a, {
+					variables: H,
+					onData: w ? G : y,
 					queryKey: "isUserOnline"
 				}))
 			})
@@ -39457,7 +39471,8 @@
 			t.a = e => r.a.createElement("svg", {
 				className: e.className,
 				viewBox: "0 0 320 320",
-				xmlns: "http://www.w3.org/2000/svg"
+				xmlns: "http://www.w3.org/2000/svg",
+				style: e.style
 			}, r.a.createElement("g", {
 				fill: "inherit"
 			}, r.a.createElement("path", {
@@ -43527,8 +43542,8 @@
 							return !0;
 						case ct.b:
 						case ct.a:
-						case lt.u:
-						case lt.t:
+						case lt.x:
+						case lt.w:
 							return !1;
 						default:
 							return e
@@ -43687,9 +43702,9 @@
 					}
 					case lt.i:
 					case lt.f:
-					case lt.o:
 					case lt.r:
-					case lt.x: {
+					case lt.u:
+					case lt.A: {
 						const {
 							response: e
 						} = t.payload, {
@@ -43697,7 +43712,7 @@
 						} = e;
 						return n
 					}
-					case lt.m: {
+					case lt.n: {
 						const e = t.payload,
 							{
 								moderatedAfter: n
@@ -43715,9 +43730,9 @@
 				switch (t.type) {
 					case lt.i:
 					case lt.f:
-					case lt.o:
 					case lt.r:
-					case lt.x: {
+					case lt.u:
+					case lt.A: {
 						const {
 							response: e
 						} = t.payload, {
@@ -43725,7 +43740,7 @@
 						} = e;
 						return n
 					}
-					case lt.m: {
+					case lt.n: {
 						const n = t.payload,
 							{
 								listingOrder: s
@@ -43757,7 +43772,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case lt.m:
+						case lt.n:
 							return !0;
 						case lt.b:
 							return !1;
@@ -43856,10 +43871,10 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case lt.p:
-					case lt.o:
+					case lt.s:
+					case lt.r:
 						return null;
-					case lt.n:
+					case lt.q:
 						return t.payload;
 					default:
 						return e
@@ -43869,10 +43884,10 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case lt.p:
+						case lt.s:
 							return !0;
-						case lt.o:
-						case lt.n:
+						case lt.r:
+						case lt.q:
 							return !1;
 						default:
 							return e
@@ -43887,7 +43902,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : qt,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case lt.o: {
+					case lt.r: {
 						const {
 							listingKey: n,
 							page: s,
@@ -43912,7 +43927,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : zt,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case lt.o: {
+						case lt.r: {
 							const {
 								listingKey: n,
 								response: s
@@ -43937,10 +43952,10 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case lt.s:
-					case lt.r:
+					case lt.v:
+					case lt.u:
 						return null;
-					case lt.q:
+					case lt.t:
 						return t.payload;
 					default:
 						return e
@@ -43950,10 +43965,10 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case lt.s:
+						case lt.v:
 							return !0;
-						case lt.r:
-						case lt.q:
+						case lt.u:
+						case lt.t:
 							return !1;
 						default:
 							return e
@@ -43968,7 +43983,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : $t,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case lt.r: {
+					case lt.u: {
 						const {
 							listingKey: n,
 							page: s,
@@ -43993,7 +44008,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : tn,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case lt.r: {
+						case lt.u: {
 							const {
 								listingKey: n,
 								response: s
@@ -44018,10 +44033,10 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case lt.y:
-					case lt.x:
+					case lt.B:
+					case lt.A:
 						return null;
-					case lt.w:
+					case lt.z:
 						return t.payload;
 					default:
 						return e
@@ -44031,10 +44046,10 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case lt.y:
+						case lt.B:
 							return !0;
-						case lt.x:
-						case lt.w:
+						case lt.A:
+						case lt.z:
 							return !1;
 						default:
 							return e
@@ -44049,7 +44064,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : cn,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case lt.x: {
+					case lt.A: {
 						const {
 							listingKey: n,
 							page: s,
@@ -44074,7 +44089,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : ln,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case lt.x: {
+						case lt.A: {
 							const {
 								listingKey: n,
 								response: s
@@ -44677,12 +44692,12 @@
 					case f.i:
 					case f.g:
 					case f.f:
-					case f.p:
-					case f.o:
-					case f.r:
 					case f.s:
-					case f.y:
-					case f.x:
+					case f.r:
+					case f.u:
+					case f.v:
+					case f.B:
+					case f.A:
 						return t.payload && t.payload.response && t.payload.response.preferences ? G(e, t.payload.preferences) : e;
 					case w.n: {
 						const n = t.payload,
@@ -46425,4 +46440,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.47182f9bb0b0b5f5b5d6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.6fd96cf17407cb556ebf.js.map

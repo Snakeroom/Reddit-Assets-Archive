@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.8fddeee9db02a17ad265.js
-// Retrieved at 10/26/2022, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.c60b872129137e250baa.js
+// Retrieved at 11/7/2022, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/components/CrowdControlAdoptionCampaign/CrowdControlModQueueCTA.m.less": function(e, t, n) {
@@ -114,7 +114,9 @@
 				const {
 					showCrowdControlCampaign: t,
 					dismissCrowdControlCampaign: n
-				} = Object(w.a)(), r = Object(c.d)(), C = Object(i.useCallback)(a()(() => r(Object(b.a)(e.subredditId)), 1e3), []), x = Object(i.useMemo)(() => ({
+				} = Object(w.a)(), r = Object(c.d)(), C = Object(i.useCallback)(a()(t => {
+					r(Object(b.a)(e.subredditId)), r(Object(b.c)(t))
+				}, 1e3), []), x = Object(i.useMemo)(() => ({
 					input: {
 						channel: {
 							teamOwner: "MOD",
@@ -214,4 +216,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.8fddeee9db02a17ad265.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.c60b872129137e250baa.js.map

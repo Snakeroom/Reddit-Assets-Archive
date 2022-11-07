@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.9d7342fd9903f703ead3.js
-// Retrieved at 11/7/2022, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.0d9118e4d240853e07d3.js
+// Retrieved at 11/7/2022, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit", "ModListing~Reddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -8157,14 +8157,15 @@
 					post: c,
 					redditStyle: l,
 					theme: p,
-					...b
+					overrideBackgroundColor: b,
+					...h
 				} = e;
 				return s.a.createElement("div", m({
 					className: Object(o.a)(u.a.backgroundWrapper, n),
-					style: Object(i.c)(r, e),
+					style: b || Object(i.c)(r, e),
 					onClick: a,
 					"data-adclicklocation": d.a.BACKGROUND
-				}, b), t)
+				}, h), t)
 			}))
 		},
 		"./src/reddit/components/PublicAccessNetwork/ListingUnit/RpanScrollChild.tsx": function(e, t, n) {
@@ -11029,12 +11030,14 @@
 					backgroundClassName: t,
 					className: n,
 					headshot: s,
-					hasNftBorder: i
+					hasNftBorder: i,
+					style: d
 				} = e;
 				return o.a.createElement("div", {
 					className: Object(a.a)(c.a.snoovatarWrapper, n, {
 						[c.a.hasNftBorder]: Boolean(i)
-					})
+					}),
+					style: d
 				}, o.a.createElement("div", {
 					className: Object(a.a)(c.a.snoovatarBackground, t)
 				}), o.a.createElement("div", {
@@ -11096,20 +11099,23 @@
 					isNightMode: o,
 					isNSFW: d,
 					nsfwIconUrl: p,
-					shouldHideNSFW: b
+					shouldHideNSFW: b,
+					style: h
 				} = e;
 				if (r && m(n) || !r && !n) return a.a.createElement(c.a, {
 					className: Object(i.a)(l.a.DefaultUserIcon, t, {
 						[l.a.mNightmode]: o
-					})
+					}),
+					style: h
 				});
-				const h = !r && d && b ? p || u : n;
+				const f = !r && d && b ? p || u : n;
 				return a.a.createElement("img", {
 					alt: s.fbt._("User avatar", null, {
 						hk: "X43nA"
 					}),
 					className: Object(i.a)(l.a.UserIcon, t),
-					src: h
+					src: f,
+					style: h
 				})
 			}
 		},
@@ -11225,16 +11231,19 @@
 					user: w,
 					userName: P,
 					wrapperClassName: T,
-					...L
-				} = e, A = !!a && Object(u.e)(a) === P, B = A ? a : w, R = B && B.accountIcon || i, D = w ? w.isNSFW : h, M = Object(d.a)(R) && !m, F = M ? o.a.createElement(x.a, {
-					headshot: R,
+					style: L,
+					...A
+				} = e, B = !!a && Object(u.e)(a) === P, R = B ? a : w, D = R && R.accountIcon || i, M = w ? w.isNSFW : h, F = Object(d.a)(D) && !m, U = F ? o.a.createElement(x.a, {
+					headshot: D,
 					className: e.className,
-					hasNftBorder: b && Object(d.d)(i)
-				}) : o.a.createElement(y.b, E({}, L, {
-					iconUrl: m && n ? "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png" : R,
-					isCurrentUser: A,
-					isNSFW: D
-				})), [U, W] = Object(s.useState)(!1), H = Object(s.useMemo)(() => ({
+					hasNftBorder: b && Object(d.d)(i),
+					style: L
+				}) : o.a.createElement(y.b, E({}, A, {
+					iconUrl: m && n ? "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png" : D,
+					isCurrentUser: B,
+					isNSFW: M,
+					style: L
+				})), [W, H] = Object(s.useState)(!1), V = Object(s.useMemo)(() => ({
 					input: {
 						channel: {
 							teamOwner: "CONTENT_AND_COMMUNITIES",
@@ -11242,37 +11251,37 @@
 							userID: t
 						}
 					}
-				}), [t]), V = Object(s.useCallback)(e => {
+				}), [t]), G = Object(s.useCallback)(e => {
 					const {
 						isOnline: t
 					} = e.subscribe.data;
-					W(t)
-				}, []), G = Object(s.useRef)(null), [q, K] = Object(s.useState)(!1), z = Object(s.useCallback)(e => {
+					H(t)
+				}, []), q = Object(s.useRef)(null), [K, z] = Object(s.useState)(!1), Q = Object(s.useCallback)(e => {
 					e.forEach(e => {
 						const {
 							isIntersecting: t,
 							intersectionRatio: n
 						} = e, r = 1 !== n;
-						t ? K(!0) : r && K(!1)
+						t ? z(!0) : r && z(!1)
 					})
-				}, []), Q = Object(s.useRef)({
+				}, []), J = Object(s.useRef)({
 					rootMargin: "750px 0px 1000px 0px"
 				});
-				return Object(l.a)(G, z, Q.current), N ? F : o.a.createElement("div", {
+				return Object(l.a)(q, Q, J.current), N ? U : o.a.createElement("div", {
 					className: Object(r.a)(f.a.userIconWrapper, {
-						[f.a.hasHeadShotWrapper]: M,
+						[f.a.hasHeadShotWrapper]: F,
 						[f.a.isProfileIcon]: I
 					}, T),
-					ref: G
+					ref: q
 				}, b && o.a.createElement(g, {
 					iconUrl: i
-				}), F, k && (U || _ && j) && o.a.createElement(v.default, {
+				}), U, k && (W || _ && j) && o.a.createElement(v.default, {
 					showPresence: !0,
 					isHighlighted: p,
 					onceInViewport: S
-				}), (k || C) && !_ && q && o.a.createElement(c.a, {
-					variables: H,
-					onData: k ? V : O,
+				}), (k || C) && !_ && K && o.a.createElement(c.a, {
+					variables: V,
+					onData: k ? G : O,
 					queryKey: "isUserOnline"
 				}))
 			})
@@ -17775,7 +17784,8 @@
 			t.a = e => s.a.createElement("svg", {
 				className: e.className,
 				viewBox: "0 0 320 320",
-				xmlns: "http://www.w3.org/2000/svg"
+				xmlns: "http://www.w3.org/2000/svg",
+				style: e.style
 			}, s.a.createElement("g", {
 				fill: "inherit"
 			}, s.a.createElement("path", {
@@ -20603,8 +20613,8 @@
 							return !0;
 						case ct.b:
 						case ct.a:
-						case lt.u:
-						case lt.t:
+						case lt.x:
+						case lt.w:
 							return !1;
 						default:
 							return e
@@ -20763,9 +20773,9 @@
 					}
 					case lt.i:
 					case lt.f:
-					case lt.o:
 					case lt.r:
-					case lt.x: {
+					case lt.u:
+					case lt.A: {
 						const {
 							response: e
 						} = t.payload, {
@@ -20773,7 +20783,7 @@
 						} = e;
 						return n
 					}
-					case lt.m: {
+					case lt.n: {
 						const e = t.payload,
 							{
 								moderatedAfter: n
@@ -20791,9 +20801,9 @@
 				switch (t.type) {
 					case lt.i:
 					case lt.f:
-					case lt.o:
 					case lt.r:
-					case lt.x: {
+					case lt.u:
+					case lt.A: {
 						const {
 							response: e
 						} = t.payload, {
@@ -20801,7 +20811,7 @@
 						} = e;
 						return n
 					}
-					case lt.m: {
+					case lt.n: {
 						const n = t.payload,
 							{
 								listingOrder: r
@@ -20833,7 +20843,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case lt.m:
+						case lt.n:
 							return !0;
 						case lt.b:
 							return !1;
@@ -20932,10 +20942,10 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case lt.p:
-					case lt.o:
+					case lt.s:
+					case lt.r:
 						return null;
-					case lt.n:
+					case lt.q:
 						return t.payload;
 					default:
 						return e
@@ -20945,10 +20955,10 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case lt.p:
+						case lt.s:
 							return !0;
-						case lt.o:
-						case lt.n:
+						case lt.r:
+						case lt.q:
 							return !1;
 						default:
 							return e
@@ -20963,7 +20973,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : qt,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case lt.o: {
+					case lt.r: {
 						const {
 							listingKey: n,
 							page: r,
@@ -20988,7 +20998,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : zt,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case lt.o: {
+						case lt.r: {
 							const {
 								listingKey: n,
 								response: r
@@ -21013,10 +21023,10 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case lt.s:
-					case lt.r:
+					case lt.v:
+					case lt.u:
 						return null;
-					case lt.q:
+					case lt.t:
 						return t.payload;
 					default:
 						return e
@@ -21026,10 +21036,10 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case lt.s:
+						case lt.v:
 							return !0;
-						case lt.r:
-						case lt.q:
+						case lt.u:
+						case lt.t:
 							return !1;
 						default:
 							return e
@@ -21044,7 +21054,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : $t,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case lt.r: {
+					case lt.u: {
 						const {
 							listingKey: n,
 							page: r,
@@ -21069,7 +21079,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : tn,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case lt.r: {
+						case lt.u: {
 							const {
 								listingKey: n,
 								response: r
@@ -21094,10 +21104,10 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case lt.y:
-					case lt.x:
+					case lt.B:
+					case lt.A:
 						return null;
-					case lt.w:
+					case lt.z:
 						return t.payload;
 					default:
 						return e
@@ -21107,10 +21117,10 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case lt.y:
+						case lt.B:
 							return !0;
-						case lt.x:
-						case lt.w:
+						case lt.A:
+						case lt.z:
 							return !1;
 						default:
 							return e
@@ -21125,7 +21135,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : cn,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case lt.x: {
+					case lt.A: {
 						const {
 							listingKey: n,
 							page: r,
@@ -21150,7 +21160,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : ln,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case lt.x: {
+						case lt.A: {
 							const {
 								listingKey: n,
 								response: r
@@ -22400,4 +22410,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.9d7342fd9903f703ead3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.0d9118e4d240853e07d3.js.map

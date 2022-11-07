@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.b5f4eb0869f92d2e38e2.js
-// Retrieved at 11/7/2022, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.5f218d3a11b3e17ea1f5.js
+// Retrieved at 11/7/2022, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2226,14 +2226,15 @@
 					post: c,
 					redditStyle: l,
 					theme: p,
-					...b
+					overrideBackgroundColor: b,
+					...f
 				} = e;
 				return s.a.createElement("div", m({
 					className: Object(o.a)(u.a.backgroundWrapper, n),
-					style: Object(a.c)(r, e),
+					style: b || Object(a.c)(r, e),
 					onClick: i,
 					"data-adclicklocation": d.a.BACKGROUND
-				}, b), t)
+				}, f), t)
 			}))
 		},
 		"./src/reddit/components/PostContent/ViewCount.tsx": function(e, t, n) {
@@ -6358,4 +6359,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.b5f4eb0869f92d2e38e2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.5f218d3a11b3e17ea1f5.js.map

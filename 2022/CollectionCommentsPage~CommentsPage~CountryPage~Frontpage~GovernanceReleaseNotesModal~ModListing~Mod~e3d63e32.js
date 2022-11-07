@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.830d3c94823a13dd2a21.js
-// Retrieved at 11/7/2022, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.8b0dcfcddbda649bdef2.js
+// Retrieved at 11/7/2022, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -2440,22 +2440,24 @@
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, s) {
 			"use strict";
-			s.d(t, "e", (function() {
+			s.d(t, "d", (function() {
 				return h
-			})), s.d(t, "d", (function() {
-				return m
 			})), s.d(t, "f", (function() {
+				return m
+			})), s.d(t, "e", (function() {
 				return u
-			})), s.d(t, "h", (function() {
-				return p
-			})), s.d(t, "a", (function() {
-				return b
 			})), s.d(t, "g", (function() {
+				return p
+			})), s.d(t, "i", (function() {
+				return b
+			})), s.d(t, "a", (function() {
 				return g
-			})), s.d(t, "c", (function() {
+			})), s.d(t, "h", (function() {
 				return f
-			})), s.d(t, "b", (function() {
+			})), s.d(t, "c", (function() {
 				return C
+			})), s.d(t, "b", (function() {
+				return v
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var i = s("./src/lib/constants/index.ts"),
@@ -2485,31 +2487,33 @@
 						pageName: o,
 						page: r
 					} = t, a = c(0, t);
-					if (!(null === (n = null === (i = null === (s = e.pages.modHub.modQueue[o]) || void 0 === s ? void 0 : s.itemOrder) || void 0 === i ? void 0 : i[a]) || void 0 === n ? void 0 : n[r])) return;
-					const l = e.pages.modHub.modQueue[o].itemOrder[a][r];
-					return l ? l.map(t => e.posts.models[t] || e.features.comments.models[t]) : []
+					if (null === (n = null === (i = null === (s = e.pages.modHub.modQueue[o]) || void 0 === s ? void 0 : s.itemOrder) || void 0 === i ? void 0 : i[a]) || void 0 === n ? void 0 : n[r]) return e.pages.modHub.modQueue[o].itemOrder[a][r] || []
 				}),
-				m = (e, t) => {
+				m = Object(o.a)((e, t) => {
+					const s = h(e, t);
+					return s ? s.map(t => e.posts.models[t] || e.features.comments.models[t]) : void 0
+				}),
+				u = (e, t) => {
 					var s;
 					const {
 						pageName: i
 					} = t;
 					return null === (s = e.pages.modHub.modQueue[i]) || void 0 === s || !s.api || e.pages.modHub.modQueue[i].api.pending
 				},
-				u = (e, t) => {
+				p = (e, t) => {
 					var s;
 					const i = c(0, t);
 					return null === (s = e.pages.modHub.modQueue[t.pageName]) || void 0 === s ? void 0 : s.loadMore[i]
 				},
-				p = e => Object.keys(e.pages.modHub.modQueue.bulkAction.selectedItems),
-				b = e => e.pages.modHub.modQueue.bulkAction.api.pending,
-				g = e => e.pages.modHub.modQueue.moderatedCommunitiesOrder.data,
-				f = e => {
+				b = e => Object.keys(e.pages.modHub.modQueue.bulkAction.selectedItems),
+				g = e => e.pages.modHub.modQueue.bulkAction.api.pending,
+				f = e => e.pages.modHub.modQueue.moderatedCommunitiesOrder.data,
+				C = e => {
 					var t;
 					const s = e.platform && e.platform.currentPage;
 					return (null === (t = null == s ? void 0 : s.meta) || void 0 === t ? void 0 : t.name) === i.Sb.MODQUEUE_PAGES
 				},
-				C = e => (e => {
+				v = e => (e => {
 					const t = e.platform && e.platform.currentPage;
 					return t && t.meta && (t.meta.name === i.Sb.MODERATION_PAGES || t.meta.name === i.Sb.MODQUEUE_PAGES)
 				})(e) && Object(d.a)(e) || !1
@@ -2519,4 +2523,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.830d3c94823a13dd2a21.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.8b0dcfcddbda649bdef2.js.map

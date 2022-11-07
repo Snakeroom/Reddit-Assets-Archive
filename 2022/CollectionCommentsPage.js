@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.d5afc47f3a32f2c2c512.js
-// Retrieved at 11/7/2022, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.b6f2fbefdc8dc76cdf09.js
+// Retrieved at 11/7/2022, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -7215,7 +7215,12 @@
 				thumbnailContainerRow: "ly1p6kYBCM7ZqoRjGeAhw",
 				postOverflow: "x4YOGJe9jA6wgzmbyKZK0",
 				postSource: "_2BgmOVmNwratQ_mDI9DaHR",
-				modModeBannerWrapper: "_1wpVciZItCVMc_3pYSceM5"
+				modModeBannerWrapper: "_1wpVciZItCVMc_3pYSceM5",
+				realtimeAnimation: "S33xGQRDwuEu0UCuySY-8",
+				realtimeFade: "_1I9NB7KmCGwAHbfEpCOf8V",
+				isNightMode: "MTt6QTOKMo8xdDlYmv456",
+				realtimeFadeNight: "_15WFTB2XFDPefKceV0OM7e",
+				realtimeUpdated: "lJOoJ1Pj5PqAnL0NdDYyM"
 			}
 		},
 		"./src/reddit/components/ModProgressModule/index.m.less": function(e, t, s) {
@@ -16570,4 +16575,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.d5afc47f3a32f2c2c512.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.b6f2fbefdc8dc76cdf09.js.map

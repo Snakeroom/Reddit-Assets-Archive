@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.cc9cb38cfbeecb3aa79c.js
-// Retrieved at 11/7/2022, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.3b082a019942c33c8ed0.js
+// Retrieved at 11/7/2022, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/backo2/index.js": function(e, t) {
@@ -6236,22 +6236,24 @@
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "e", (function() {
+			n.d(t, "d", (function() {
 				return m
-			})), n.d(t, "d", (function() {
-				return u
 			})), n.d(t, "f", (function() {
+				return u
+			})), n.d(t, "e", (function() {
 				return p
-			})), n.d(t, "h", (function() {
-				return h
-			})), n.d(t, "a", (function() {
-				return b
 			})), n.d(t, "g", (function() {
+				return h
+			})), n.d(t, "i", (function() {
+				return b
+			})), n.d(t, "a", (function() {
 				return C
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "h", (function() {
 				return f
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "c", (function() {
 				return v
+			})), n.d(t, "b", (function() {
+				return g
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = n("./src/lib/constants/index.ts"),
@@ -6281,31 +6283,33 @@
 						pageName: r,
 						page: a
 					} = t, i = l(0, t);
-					if (!(null === (s = null === (o = null === (n = e.pages.modHub.modQueue[r]) || void 0 === n ? void 0 : n.itemOrder) || void 0 === o ? void 0 : o[i]) || void 0 === s ? void 0 : s[a])) return;
-					const c = e.pages.modHub.modQueue[r].itemOrder[i][a];
-					return c ? c.map(t => e.posts.models[t] || e.features.comments.models[t]) : []
+					if (null === (s = null === (o = null === (n = e.pages.modHub.modQueue[r]) || void 0 === n ? void 0 : n.itemOrder) || void 0 === o ? void 0 : o[i]) || void 0 === s ? void 0 : s[a]) return e.pages.modHub.modQueue[r].itemOrder[i][a] || []
 				}),
-				u = (e, t) => {
+				u = Object(r.a)((e, t) => {
+					const n = m(e, t);
+					return n ? n.map(t => e.posts.models[t] || e.features.comments.models[t]) : void 0
+				}),
+				p = (e, t) => {
 					var n;
 					const {
 						pageName: o
 					} = t;
 					return null === (n = e.pages.modHub.modQueue[o]) || void 0 === n || !n.api || e.pages.modHub.modQueue[o].api.pending
 				},
-				p = (e, t) => {
+				h = (e, t) => {
 					var n;
 					const o = l(0, t);
 					return null === (n = e.pages.modHub.modQueue[t.pageName]) || void 0 === n ? void 0 : n.loadMore[o]
 				},
-				h = e => Object.keys(e.pages.modHub.modQueue.bulkAction.selectedItems),
-				b = e => e.pages.modHub.modQueue.bulkAction.api.pending,
-				C = e => e.pages.modHub.modQueue.moderatedCommunitiesOrder.data,
-				f = e => {
+				b = e => Object.keys(e.pages.modHub.modQueue.bulkAction.selectedItems),
+				C = e => e.pages.modHub.modQueue.bulkAction.api.pending,
+				f = e => e.pages.modHub.modQueue.moderatedCommunitiesOrder.data,
+				v = e => {
 					var t;
 					const n = e.platform && e.platform.currentPage;
 					return (null === (t = null == n ? void 0 : n.meta) || void 0 === t ? void 0 : t.name) === o.Sb.MODQUEUE_PAGES
 				},
-				v = e => (e => {
+				g = e => (e => {
 					const t = e.platform && e.platform.currentPage;
 					return t && t.meta && (t.meta.name === o.Sb.MODERATION_PAGES || t.meta.name === o.Sb.MODQUEUE_PAGES)
 				})(e) && Object(d.a)(e) || !1
@@ -6327,4 +6331,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.cc9cb38cfbeecb3aa79c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.3b082a019942c33c8ed0.js.map

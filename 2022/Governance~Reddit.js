@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.137d5008403ce10e9003.js
-// Retrieved at 11/7/2022, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.953c465405d7006bc841.js
+// Retrieved at 11/7/2022, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -7773,9 +7773,9 @@
 						return Oe(e, t.payload);
 					case fe.i:
 					case fe.f:
-					case fe.o:
 					case fe.r:
-					case fe.x:
+					case fe.u:
+					case fe.A:
 						return Oe(e, t.payload.response);
 					case me.r: {
 						const {
@@ -8186,9 +8186,9 @@
 					case R.e:
 					case R.h:
 					case fe.f:
-					case fe.o:
 					case fe.r:
-					case fe.x:
+					case fe.u:
+					case fe.A:
 					case j.r:
 					case be.f:
 					case D.c:
@@ -12560,9 +12560,9 @@
 						}
 						case fe.i:
 						case fe.f:
-						case fe.o:
 						case fe.r:
-						case fe.x: {
+						case fe.u:
+						case fe.A: {
 							if (e) return e;
 							const {
 								response: n
@@ -14237,9 +14237,9 @@
 					}
 					case fe.i:
 					case fe.f:
-					case fe.o:
 					case fe.r:
-					case fe.x: {
+					case fe.u:
+					case fe.A: {
 						const {
 							response: n
 						} = t.payload, {
@@ -14254,7 +14254,7 @@
 					}
 					case H.f:
 					case R.e:
-					case fe.m: {
+					case fe.n: {
 						const n = t.payload,
 							{
 								moderatingSubreddits: r,
@@ -16356,9 +16356,9 @@
 						}
 						case fe.i:
 						case fe.f:
-						case fe.o:
 						case fe.r:
-						case fe.x: {
+						case fe.u:
+						case fe.A: {
 							const {
 								response: n
 							} = t.payload;
@@ -16840,9 +16840,9 @@
 					}
 					case fe.i:
 					case fe.f:
-					case fe.o:
 					case fe.r:
-					case fe.x: {
+					case fe.u:
+					case fe.A: {
 						const {
 							response: n
 						} = t.payload, {
@@ -16854,7 +16854,7 @@
 						}
 					}
 					case _f.b:
-					case fe.u: {
+					case fe.x: {
 						const {
 							operation: n,
 							ids: r,
@@ -18421,10 +18421,10 @@
 						return Object(ce.merge)(e, t.payload.profiles);
 					case fe.i:
 					case fe.f:
-					case fe.o:
 					case fe.r:
-					case fe.x:
-					case fe.m: {
+					case fe.u:
+					case fe.A:
+					case fe.n: {
 						const {
 							response: n
 						} = t.payload, r = n && n.profiles;
@@ -21361,7 +21361,7 @@
 					case C.b:
 					case R.e:
 					case R.h:
-					case fe.m:
+					case fe.n:
 					case j.r:
 					case j.u:
 					case gu.h:
@@ -21404,9 +21404,9 @@
 						return rO(e, t.payload.subreddits || {});
 					case fe.f:
 					case fe.i:
-					case fe.o:
 					case fe.r:
-					case fe.x: {
+					case fe.u:
+					case fe.A: {
 						const {
 							response: n
 						} = t.payload, {
@@ -23081,12 +23081,12 @@
 						case fe.i:
 						case fe.g:
 						case fe.f:
-						case fe.p:
-						case fe.o:
-						case fe.r:
 						case fe.s:
-						case fe.y:
-						case fe.x:
+						case fe.r:
+						case fe.u:
+						case fe.v:
+						case fe.B:
+						case fe.A:
 							if (t.payload && t.payload.response && t.payload.response.preferences && "nightmode" in t.payload.response.preferences) {
 								const {
 									nightmode: e
@@ -23699,14 +23699,14 @@
 						} : e;
 					case fe.i:
 					case fe.f:
-					case fe.o:
 					case fe.r:
-					case fe.x:
+					case fe.u:
+					case fe.A:
 					case fe.h:
 					case fe.e:
-					case fe.n:
 					case fe.q:
-					case fe.w: {
+					case fe.t:
+					case fe.z: {
 						const {
 							response: n
 						} = t.payload;
@@ -25966,4 +25966,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.137d5008403ce10e9003.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.953c465405d7006bc841.js.map

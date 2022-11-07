@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.897a570682eda6e29fc5.js
-// Retrieved at 11/7/2022, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.b125334254f5cae75b9d.js
+// Retrieved at 11/7/2022, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -1200,12 +1200,14 @@
 					backgroundClassName: t,
 					className: n,
 					headshot: o,
-					hasNftBorder: c
+					hasNftBorder: c,
+					style: d
 				} = e;
 				return i.a.createElement("div", {
 					className: Object(s.a)(a.a.snoovatarWrapper, n, {
 						[a.a.hasNftBorder]: Boolean(c)
-					})
+					}),
+					style: d
 				}, i.a.createElement("div", {
 					className: Object(s.a)(a.a.snoovatarBackground, t)
 				}), i.a.createElement("div", {
@@ -1267,20 +1269,23 @@
 					isNightMode: i,
 					isNSFW: d,
 					nsfwIconUrl: f,
-					shouldHideNSFW: m
+					shouldHideNSFW: m,
+					style: p
 				} = e;
 				if (r && b(n) || !r && !n) return s.a.createElement(a.a, {
 					className: Object(c.a)(u.a.DefaultUserIcon, t, {
 						[u.a.mNightmode]: i
-					})
+					}),
+					style: p
 				});
-				const p = !r && d && m ? f || l : n;
+				const O = !r && d && m ? f || l : n;
 				return s.a.createElement("img", {
 					alt: o.fbt._("User avatar", null, {
 						hk: "X43nA"
 					}),
 					className: Object(c.a)(u.a.UserIcon, t),
-					src: p
+					src: O,
+					style: p
 				})
 			}
 		},
@@ -1396,16 +1401,19 @@
 					user: k,
 					userName: P,
 					wrapperClassName: w,
-					...D
-				} = e, L = !!s && Object(l.e)(s) === P, A = L ? s : k, U = A && A.accountIcon || c, R = k ? k.isNSFW : p, M = Object(d.a)(U) && !b, B = M ? i.a.createElement(_.a, {
-					headshot: U,
+					style: D,
+					...L
+				} = e, A = !!s && Object(l.e)(s) === P, U = A ? s : k, R = U && U.accountIcon || c, M = k ? k.isNSFW : p, B = Object(d.a)(R) && !b, G = B ? i.a.createElement(_.a, {
+					headshot: R,
 					className: e.className,
-					hasNftBorder: m && Object(d.d)(c)
-				}) : i.a.createElement(x.b, S({}, D, {
-					iconUrl: b && n ? "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png" : U,
-					isCurrentUser: L,
-					isNSFW: R
-				})), [G, F] = Object(o.useState)(!1), H = Object(o.useMemo)(() => ({
+					hasNftBorder: m && Object(d.d)(c),
+					style: D
+				}) : i.a.createElement(x.b, S({}, L, {
+					iconUrl: b && n ? "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png" : R,
+					isCurrentUser: A,
+					isNSFW: M,
+					style: D
+				})), [F, H] = Object(o.useState)(!1), V = Object(o.useMemo)(() => ({
 					input: {
 						channel: {
 							teamOwner: "CONTENT_AND_COMMUNITIES",
@@ -1413,37 +1421,37 @@
 							userID: t
 						}
 					}
-				}), [t]), V = Object(o.useCallback)(e => {
+				}), [t]), q = Object(o.useCallback)(e => {
 					const {
 						isOnline: t
 					} = e.subscribe.data;
-					F(t)
-				}, []), q = Object(o.useRef)(null), [W, K] = Object(o.useState)(!1), Y = Object(o.useCallback)(e => {
+					H(t)
+				}, []), W = Object(o.useRef)(null), [K, Y] = Object(o.useState)(!1), z = Object(o.useCallback)(e => {
 					e.forEach(e => {
 						const {
 							isIntersecting: t,
 							intersectionRatio: n
 						} = e, r = 1 !== n;
-						t ? K(!0) : r && K(!1)
+						t ? Y(!0) : r && Y(!1)
 					})
-				}, []), z = Object(o.useRef)({
+				}, []), Q = Object(o.useRef)({
 					rootMargin: "750px 0px 1000px 0px"
 				});
-				return Object(u.a)(q, Y, z.current), C ? B : i.a.createElement("div", {
+				return Object(u.a)(W, z, Q.current), C ? G : i.a.createElement("div", {
 					className: Object(r.a)(O.a.userIconWrapper, {
-						[O.a.hasHeadShotWrapper]: M,
+						[O.a.hasHeadShotWrapper]: B,
 						[O.a.isProfileIcon]: N
 					}, w),
-					ref: q
+					ref: W
 				}, m && i.a.createElement(I, {
 					iconUrl: c
-				}), B, y && (G || h && E) && i.a.createElement(g.default, {
+				}), G, y && (F || h && E) && i.a.createElement(g.default, {
 					showPresence: !0,
 					isHighlighted: f,
 					onceInViewport: T
-				}), (y || v) && !h && W && i.a.createElement(a.a, {
-					variables: H,
-					onData: y ? V : j,
+				}), (y || v) && !h && K && i.a.createElement(a.a, {
+					variables: V,
+					onData: y ? q : j,
 					queryKey: "isUserOnline"
 				}))
 			})
@@ -3245,7 +3253,8 @@
 			t.a = e => o.a.createElement("svg", {
 				className: e.className,
 				viewBox: "0 0 320 320",
-				xmlns: "http://www.w3.org/2000/svg"
+				xmlns: "http://www.w3.org/2000/svg",
+				style: e.style
 			}, o.a.createElement("g", {
 				fill: "inherit"
 			}, o.a.createElement("path", {
@@ -3584,4 +3593,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.897a570682eda6e29fc5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.b125334254f5cae75b9d.js.map
