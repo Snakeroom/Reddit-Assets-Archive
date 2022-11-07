@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.d8f4ca1480da1860859b.js
-// Retrieved at 11/3/2022, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.2e5bd46acbd110acb4a2.js
+// Retrieved at 11/7/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -51,8 +51,8 @@
 			const x = e => {
 				return Object(g.c)(e, {
 					experimentEligibilitySelector: g.a,
-					experimentName: h.uf
-				}) === h.Pd
+					experimentName: h.vf
+				}) === h.Qd
 			};
 			var f = s("./src/reddit/selectors/recapGame.ts"),
 				E = s("./src/reddit/selectors/user.ts"),
@@ -517,7 +517,7 @@
 				const t = Object(a.f)().getState(),
 					s = Object(h.a)(t, Object(o.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.cd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.cd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.cd.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.dd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.dd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.dd.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(k, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -1608,13 +1608,13 @@
 					userSubreddit: Object(I.g)(e.modPermissions, e.isSubscribed),
 					actionInfo: B
 				}),
-				D = J("select_location"),
-				W = J("confirm_location"),
-				A = J("undo_location"),
-				H = Q("verify_location"),
-				z = Q("reject_location");
+				D = Q("select_location"),
+				W = Q("confirm_location"),
+				A = Q("undo_location"),
+				H = J("verify_location"),
+				z = J("reject_location");
 
-			function J(e) {
+			function Q(e) {
 				return (t, s) => () => ({
 					source: G,
 					noun: e,
@@ -1628,7 +1628,7 @@
 				})
 			}
 
-			function Q(e) {
+			function J(e) {
 				return (t, s) => () => ({
 					source: G,
 					noun: e,
@@ -1864,4 +1864,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.d8f4ca1480da1860859b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.2e5bd46acbd110acb4a2.js.map

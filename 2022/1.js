@@ -1,64 +1,64 @@
-// https://www.redditstatic.com/desktop2x/1.84dfc2c680ecb03615cd.js
-// Retrieved at 10/27/2022, 1:50:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/1.aff4730066a360dc6134.js
+// Retrieved at 11/7/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[1], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
-			var n = Math.ceil,
-				a = Math.max;
+			var a = Math.ceil,
+				n = Math.max;
 			e.exports = function(e, t, s, r) {
-				for (var o = -1, c = a(n((t - e) / (s || 1)), 0), i = Array(c); c--;) i[r ? c : ++o] = e, e += s;
+				for (var o = -1, c = n(a((t - e) / (s || 1)), 0), i = Array(c); c--;) i[r ? c : ++o] = e, e += s;
 				return i
 			}
 		},
-		"./node_modules/lodash/_createRange.js": function(e, t, n) {
-			var a = n("./node_modules/lodash/_baseRange.js"),
-				s = n("./node_modules/lodash/_isIterateeCall.js"),
-				r = n("./node_modules/lodash/toFinite.js");
+		"./node_modules/lodash/_createRange.js": function(e, t, a) {
+			var n = a("./node_modules/lodash/_baseRange.js"),
+				s = a("./node_modules/lodash/_isIterateeCall.js"),
+				r = a("./node_modules/lodash/toFinite.js");
 			e.exports = function(e) {
-				return function(t, n, o) {
-					return o && "number" != typeof o && s(t, n, o) && (n = o = void 0), t = r(t), void 0 === n ? (n = t, t = 0) : n = r(n), o = void 0 === o ? t < n ? 1 : -1 : r(o), a(t, n, o, e)
+				return function(t, a, o) {
+					return o && "number" != typeof o && s(t, a, o) && (a = o = void 0), t = r(t), void 0 === a ? (a = t, t = 0) : a = r(a), o = void 0 === o ? t < a ? 1 : -1 : r(o), n(t, a, o, e)
 				}
 			}
 		},
-		"./node_modules/lodash/flatMap.js": function(e, t, n) {
-			var a = n("./node_modules/lodash/_baseFlatten.js"),
-				s = n("./node_modules/lodash/map.js");
+		"./node_modules/lodash/flatMap.js": function(e, t, a) {
+			var n = a("./node_modules/lodash/_baseFlatten.js"),
+				s = a("./node_modules/lodash/map.js");
 			e.exports = function(e, t) {
-				return a(s(e, t), 1)
+				return n(s(e, t), 1)
 			}
 		},
-		"./node_modules/lodash/map.js": function(e, t, n) {
-			var a = n("./node_modules/lodash/_arrayMap.js"),
-				s = n("./node_modules/lodash/_baseIteratee.js"),
-				r = n("./node_modules/lodash/_baseMap.js"),
-				o = n("./node_modules/lodash/isArray.js");
+		"./node_modules/lodash/map.js": function(e, t, a) {
+			var n = a("./node_modules/lodash/_arrayMap.js"),
+				s = a("./node_modules/lodash/_baseIteratee.js"),
+				r = a("./node_modules/lodash/_baseMap.js"),
+				o = a("./node_modules/lodash/isArray.js");
 			e.exports = function(e, t) {
-				return (o(e) ? a : r)(e, s(t, 3))
+				return (o(e) ? n : r)(e, s(t, 3))
 			}
 		},
-		"./node_modules/lodash/range.js": function(e, t, n) {
-			var a = n("./node_modules/lodash/_createRange.js")();
-			e.exports = a
+		"./node_modules/lodash/range.js": function(e, t, a) {
+			var n = a("./node_modules/lodash/_createRange.js")();
+			e.exports = n
 		},
-		"./src/lib/hooks/useMutation.ts": function(e, t, n) {
+		"./src/lib/hooks/useMutation.ts": function(e, t, a) {
 			"use strict";
-			n.d(t, "a", (function() {
+			a.d(t, "a", (function() {
 				return r
 			}));
-			var a = n("./node_modules/react/index.js"),
-				s = n("./src/reddit/hooks/useGqlContext.ts");
+			var n = a("./node_modules/react/index.js"),
+				s = a("./src/reddit/hooks/useGqlContext.ts");
 
 			function r(e) {
 				const t = Object(s.a)(),
-					[n, r] = Object(a.useState)(!1),
-					[o, c] = Object(a.useState)(!1),
-					[i, l] = Object(a.useState)(null),
-					[d, u] = Object(a.useState)(null);
-				return [Object(a.useCallback)(async n => {
-					let a, s;
+					[a, r] = Object(n.useState)(!1),
+					[o, c] = Object(n.useState)(!1),
+					[i, l] = Object(n.useState)(null),
+					[d, u] = Object(n.useState)(null);
+				return [Object(n.useCallback)(async a => {
+					let n, s;
 					r(!0), c(!0);
 					try {
-						if ((s = (a = await e(t(), n)).body).error) throw new Error(s.error.message);
+						if ((s = (n = await e(t(), a)).body).error) throw new Error(s.error.message);
 						u(s.data)
 					} catch (i) {
 						l(i)
@@ -68,36 +68,36 @@
 				}, [t, e]), {
 					data: d,
 					error: i,
-					pending: n,
+					pending: a,
 					called: o
 				}]
 			}
 		},
-		"./src/reddit/components/ContentSurvey/RatingCard.tsx": function(e, t, n) {
+		"./src/reddit/components/ContentSurvey/RatingCard.tsx": function(e, t, a) {
 			"use strict";
-			n.d(t, "a", (function() {
+			a.d(t, "a", (function() {
 				return p
 			}));
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a),
-				r = n("./node_modules/react-redux/es/index.js"),
-				o = n("./src/reddit/components/ContentSurvey/index.m.less"),
-				c = n.n(o),
-				i = n("./src/lib/classNames/index.ts"),
-				l = n("./src/reddit/components/SubredditIcon/index.tsx"),
-				d = n("./src/reddit/hooks/useTheme.ts"),
-				u = n("./src/reddit/icons/svgs/Info/index.tsx"),
-				m = n("./src/reddit/models/Theme/index.ts"),
-				h = n("./src/reddit/models/Theme/NewColorSystem/index.ts"),
-				v = n("./src/reddit/selectors/subreddit.ts");
+			var n = a("./node_modules/react/index.js"),
+				s = a.n(n),
+				r = a("./node_modules/react-redux/es/index.js"),
+				o = a("./src/reddit/components/ContentSurvey/index.m.less"),
+				c = a.n(o),
+				i = a("./src/lib/classNames/index.ts"),
+				l = a("./src/reddit/components/SubredditIcon/index.tsx"),
+				d = a("./src/reddit/hooks/useTheme.ts"),
+				u = a("./src/reddit/icons/svgs/Info/index.tsx"),
+				m = a("./src/reddit/models/Theme/index.ts"),
+				h = a("./src/reddit/models/Theme/NewColorSystem/index.ts"),
+				v = a("./src/reddit/selectors/subreddit.ts");
 			const {
 				fbt: g
-			} = n("./node_modules/fbt/lib/FbtPublic.js");
+			} = a("./node_modules/fbt/lib/FbtPublic.js");
 
 			function p(e) {
-				var t, n;
+				var t, a;
 				const {
-					ratingResponse: a,
+					ratingResponse: n,
 					subredditId: o,
 					children: p
 				} = e, x = null !== (t = Object(r.e)(e => Object(v.Y)(e, {
@@ -105,7 +105,7 @@
 				}))) && void 0 !== t ? t : {}, f = Object(d.a)();
 				return s.a.createElement("div", {
 					className: c.a.ratingCard
-				}, "PENDING" === (null == a ? void 0 : a.status) && s.a.createElement("div", {
+				}, "PENDING" === (null == n ? void 0 : n.status) && s.a.createElement("div", {
 					className: Object(i.a)(c.a.card, c.a.pending)
 				}, s.a.createElement(u.a, {
 					className: c.a.infoIcon
@@ -126,51 +126,51 @@
 					}
 				}, s.a.createElement(l.b, {
 					className: c.a.communityIcon,
-					iconUrl: null === (n = x.icon) || void 0 === n ? void 0 : n.url
+					iconUrl: null === (a = x.icon) || void 0 === a ? void 0 : a.url
 				})), s.a.createElement("h3", {
 					className: c.a.communityName
-				}, a ? s.a.createElement("span", null, x.displayText, s.a.createElement("img", {
+				}, n ? s.a.createElement("span", null, x.displayText, s.a.createElement("img", {
 					className: c.a.ratingImg,
-					src: a.rating.icon.png
+					src: n.rating.icon.png
 				})) : x.displayText), p))
 			}
 		},
-		"./src/reddit/components/ContentSurvey/index.tsx": function(e, t, n) {
+		"./src/reddit/components/ContentSurvey/index.tsx": function(e, t, a) {
 			"use strict";
-			n.r(t), n.d(t, "default", (function() {
+			a.r(t), a.d(t, "default", (function() {
 				return U
 			}));
-			var a = n("./node_modules/icepick/icepick.js"),
-				s = n("./node_modules/lodash/flatMap.js"),
-				r = n.n(s),
-				o = n("./node_modules/lodash/sortBy.js"),
-				c = n.n(o),
-				i = n("./node_modules/react/index.js"),
-				l = n.n(i),
-				d = n("./node_modules/react-redux/es/index.js"),
-				u = n("./src/reddit/components/ContentSurvey/index.m.less"),
-				m = n.n(u),
-				h = n("./src/lib/hooks/useMutation.ts"),
-				v = n("./src/lib/sentry/index.ts"),
-				g = n("./src/reddit/actions/subreddit/constants.ts"),
-				p = n("./src/reddit/actions/toaster.ts"),
-				x = n("./node_modules/fbt/lib/FbtPublic.js"),
-				f = n("./node_modules/lodash/range.js"),
-				w = n.n(f),
-				y = n("./src/reddit/components/ModeratorSurvey/index.m.less"),
-				C = n.n(y),
-				b = n("./src/lib/classNames/index.ts");
-			var E = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				_ = n("./src/reddit/controls/Button/index.tsx"),
-				k = n("./src/reddit/controls/TextButton/index.tsx"),
-				j = n("./src/reddit/icons/svgs/Snoo/index.tsx"),
-				N = n("./src/reddit/icons/svgs/svgIcons.tsx");
+			var n = a("./node_modules/icepick/icepick.js"),
+				s = a("./node_modules/lodash/flatMap.js"),
+				r = a.n(s),
+				o = a("./node_modules/lodash/sortBy.js"),
+				c = a.n(o),
+				i = a("./node_modules/react/index.js"),
+				l = a.n(i),
+				d = a("./node_modules/react-redux/es/index.js"),
+				u = a("./src/reddit/components/ContentSurvey/index.m.less"),
+				m = a.n(u),
+				h = a("./src/lib/hooks/useMutation.ts"),
+				v = a("./src/lib/sentry/index.ts"),
+				g = a("./src/reddit/actions/subreddit/constants.ts"),
+				p = a("./src/reddit/actions/toaster.ts"),
+				x = a("./node_modules/fbt/lib/FbtPublic.js"),
+				f = a("./node_modules/lodash/range.js"),
+				w = a.n(f),
+				y = a("./src/reddit/components/ModeratorSurvey/index.m.less"),
+				C = a.n(y),
+				b = a("./src/lib/classNames/index.ts");
+			var E = a("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				_ = a("./src/reddit/controls/Button/index.tsx"),
+				k = a("./src/reddit/controls/TextButton/index.tsx"),
+				j = a("./src/reddit/icons/svgs/Snoo/index.tsx"),
+				N = a("./src/reddit/icons/svgs/svgIcons.tsx");
 
 			function M(e) {
 				const {
 					children: t,
-					activeSlide: n,
-					progressCurrent: a,
+					activeSlide: a,
+					progressCurrent: n,
 					progressTotal: s,
 					disableNext: r,
 					buttonText: o,
@@ -178,8 +178,8 @@
 					goBack: d,
 					onClose: u = (() => {})
 				} = e, m = function e(t) {
-					return i.Children.toArray(t).reduce((t, n) => n ? n.type === l.a.Fragment ? [...t, ...e(n.props.children)] : [...t, n] : t, [])
-				}(t), h = m.length, v = h > 1 && n > 0, g = null != a ? a : n + 1, p = null != s ? s : h;
+					return i.Children.toArray(t).reduce((t, a) => a ? a.type === l.a.Fragment ? [...t, ...e(a.props.children)] : [...t, a] : t, [])
+				}(t), h = m.length, v = h > 1 && a > 0, g = null != n ? n : a + 1, p = null != s ? s : h;
 				return l.a.createElement("div", {
 					className: C.a.container
 				}, l.a.createElement("div", {
@@ -201,13 +201,13 @@
 				})), l.a.createElement("div", {
 					className: C.a.slides,
 					style: {
-						transform: `translateX(${-600*n}px)`
+						transform: `translateX(${-600*a}px)`
 					}
 				}, m.map((e, t) => l.a.createElement("div", {
 					key: t,
 					className: C.a.slide,
-					"aria-hidden": n !== t,
-					"aria-current": n === t
+					"aria-hidden": a !== t,
+					"aria-current": a === t
 				}, e))), l.a.createElement("div", {
 					className: C.a.footer
 				}, l.a.createElement("div", {
@@ -226,43 +226,43 @@
 					className: C.a.footerButton,
 					onClick: c,
 					disabled: r
-				}, null != o ? o : n === h - 1 ? x.fbt._("Submit", null, {
+				}, null != o ? o : a === h - 1 ? x.fbt._("Submit", null, {
 					hk: "4aU3dh"
 				}) : x.fbt._("Next", null, {
 					hk: "2mEXAi"
 				}))))
 			}
-			var S = n("./src/redditGQL/operations/SubmitContentRatingSurvey.json"),
-				O = n("./src/lib/makeGqlRequest/index.ts");
+			var S = a("./src/redditGQL/operations/SubmitContentRatingSurvey.json"),
+				O = a("./src/lib/makeGqlRequest/index.ts");
 			var L, A = (e, t) => Object(O.a)(e, {
 					...S,
 					variables: t
 				}),
-				T = n("./src/reddit/helpers/trackers/contentTag.ts"),
-				Z = n("./src/reddit/hooks/useTracking.ts");
+				T = a("./src/reddit/helpers/trackers/contentTag.ts"),
+				Z = a("./src/reddit/hooks/useTracking.ts");
 			! function(e) {
 				e.Accepted = "ACCEPTED", e.Pending = "PENDING"
 			}(L || (L = {}));
-			var I = n("./src/reddit/models/Toast/index.ts"),
-				F = n("./node_modules/lodash/mapValues.js"),
-				B = n.n(F),
-				R = n("./src/reddit/controls/CheckboxInput/index.tsx");
+			var I = a("./src/reddit/models/Toast/index.ts"),
+				F = a("./node_modules/lodash/mapValues.js"),
+				B = a.n(F),
+				R = a("./src/reddit/controls/CheckboxInput/index.tsx");
 
 			function z(e) {
 				let {
 					children: t
 				} = e;
-				return l.a.createElement(l.a.Fragment, null, (n = t, n.split(/\*+/)).map((e, t) => t % 2 == 1 ? l.a.createElement("em", {
+				return l.a.createElement(l.a.Fragment, null, (a = t, a.split(/\*+/)).map((e, t) => t % 2 == 1 ? l.a.createElement("em", {
 					key: t
 				}, e) : e));
-				var n
+				var a
 			}
 
 			function P(e) {
 				let {
 					question: t,
-					selectedAnswers: n,
-					onChange: a
+					selectedAnswers: a,
+					onChange: n
 				} = e;
 				return l.a.createElement("div", null, l.a.createElement("h3", {
 					className: m.a.header
@@ -270,34 +270,34 @@
 					key: e.id,
 					name: e.id,
 					className: m.a.checkbox,
-					value: n[e.id],
+					value: a[e.id],
 					onChange: s => (function(e, s) {
 						const r = e.id;
-						if (e.isMutuallyExclusive) return a(t.id, {
+						if (e.isMutuallyExclusive) return n(t.id, {
 							[r]: s
 						});
 						if (s) {
 							const e = t.answerOptions.filter(e => e.isMutuallyExclusive).map(e => e.id),
-								s = B()(n, (t, n) => !e.includes(n) && t);
-							return s[r] = !0, a(t.id, s)
+								s = B()(a, (t, a) => !e.includes(a) && t);
+							return s[r] = !0, n(t.id, s)
 						}
 						const {
 							[r]: o, ...c
-						} = n;
-						a(t.id, c)
+						} = a;
+						n(t.id, c)
 					})(e, s)
 				}, l.a.createElement("span", {
 					id: e.id
 				}, e.answerText))))
 			}
-			var V = n("./src/reddit/components/ContentSurvey/RatingCard.tsx");
+			var V = a("./src/reddit/components/ContentSurvey/RatingCard.tsx");
 			const {
 				fbt: q
-			} = n("./node_modules/fbt/lib/FbtPublic.js");
+			} = a("./node_modules/fbt/lib/FbtPublic.js");
 			var H;
 
 			function U(e) {
-				var t, n;
+				var t, a;
 				const {
 					subredditId: s,
 					survey: r,
@@ -307,12 +307,12 @@
 					activeSlide: C
 				}, b] = Object(i.useReducer)((e, t) => {
 					let {
-						activeSlide: n
-					} = e;
-					const a = "forward" === t ? Math.min(n + 1, w.length + 1) : Math.max(n - 1, 0);
-					return {
-						surveyState: 0 === a ? H.Intro : a === w.length + 1 ? H.Tag : H.Survey,
 						activeSlide: a
+					} = e;
+					const n = "forward" === t ? Math.min(a + 1, w.length + 1) : Math.max(a - 1, 0);
+					return {
+						surveyState: 0 === n ? H.Intro : n === w.length + 1 ? H.Tag : H.Survey,
+						activeSlide: n
 					}
 				}, {
 					surveyState: H.Intro,
@@ -343,34 +343,34 @@
 				if (!r.isEligible) return null;
 
 				function F(e, t) {
-					x(Object(a.setIn)(u, [e], t)), _(Object(T.a)(E.pageType))
+					x(Object(n.setIn)(u, [e], t)), _(Object(T.a)(E.pageType))
 				}
 				const B = null !== (t = u[null == E ? void 0 : E.id]) && void 0 !== t ? t : {},
-					R = (null !== (n = null == E ? void 0 : E.answerOptions) && void 0 !== n ? n : []).map(e => e.id).some(e => B[e]),
+					R = (null !== (a = null == E ? void 0 : E.answerOptions) && void 0 !== a ? a : []).map(e => e.id).some(e => B[e]),
 					z = y === H.Survey && C > 1;
 				return l.a.createElement(M, {
 					activeSlide: C,
 					advance: async function() {
 						if (y === H.Survey && C === w.length && O(function(e, t) {
-								var n;
-								let a = null,
+								var a;
+								let n = null,
 									s = [];
 								const r = D(e.questions, t);
 								for (const o of r)
 									for (const e of o.answerOptions) {
-										if (!(null === (n = t[o.id]) || void 0 === n ? void 0 : n[e.id])) continue;
+										if (!(null === (a = t[o.id]) || void 0 === a ? void 0 : a[e.id])) continue;
 										if (!K(e)) continue;
 										const r = e.contentRatingTag;
-										(!a || a.weight < r.weight) && (a = r), r.weight > 0 && s.push(e)
+										(!n || n.weight < r.weight) && (n = r), r.weight > 0 && s.push(e)
 									}
-								if (s = c()(s, e => -e.contentRatingTag.weight), !a) throw new Error("no question was selected!");
+								if (s = c()(s, e => -e.contentRatingTag.weight), !n) throw new Error("no question was selected!");
 								return {
 									id: "",
 									version: e.version,
 									createdAt: Date.now(),
 									isFromMod: !0,
 									status: L.Pending,
-									rating: a,
+									rating: n,
 									ratingReasons: s
 								}
 							}(r, u)), y === H.Tag) {
@@ -504,23 +504,23 @@
 			}
 
 			function G(e, t) {
-				return e.answerOptions.filter(n => {
-					var a;
-					return null === (a = t[e.id]) || void 0 === a ? void 0 : a[n.id]
+				return e.answerOptions.filter(a => {
+					var n;
+					return null === (n = t[e.id]) || void 0 === n ? void 0 : n[a.id]
 				})
 			}
 
 			function D(e, t) {
-				let n = [];
-				for (const a of null != e ? e : []) {
-					const e = G(a, t),
+				let a = [];
+				for (const n of null != e ? e : []) {
+					const e = G(n, t),
 						s = r()(e, e => {
 							var t;
 							return null !== (t = e.subQuestions) && void 0 !== t ? t : []
 						});
-					n = [...n, a, ...D(s, t)]
+					a = [...a, n, ...D(s, t)]
 				}
-				return n
+				return a
 			}
 
 			function K(e) {
@@ -529,7 +529,7 @@
 				e[e.Intro = 0] = "Intro", e[e.Survey = 1] = "Survey", e[e.Tag = 2] = "Tag"
 			}(H || (H = {}))
 		},
-		"./src/reddit/components/ModeratorSurvey/index.m.less": function(e, t, n) {
+		"./src/reddit/components/ModeratorSurvey/index.m.less": function(e, t, a) {
 			e.exports = {
 				container: "_3sMj_ZIduvHMzSm-BL86UO",
 				header: "_1oy1EwAZphinH5qnfIi5kd",
@@ -546,35 +546,35 @@
 				footerButton: "_2sDqJ0jCELyq3Ut2qAXe08"
 			}
 		},
-		"./src/reddit/controls/CheckboxInput/index.m.less": function(e, t, n) {
+		"./src/reddit/controls/CheckboxInput/index.m.less": function(e, t, a) {
 			e.exports = {
 				checkboxInput: "_2BPowd18EKTnfZFrj5kY3G",
 				disabled: "_303iMx_S0pgrbpYhsYTV6K",
 				checkboxSelected: "_2VtQ8EjxlJXdicVJhc73gQ"
 			}
 		},
-		"./src/reddit/controls/CheckboxInput/index.tsx": function(e, t, n) {
+		"./src/reddit/controls/CheckboxInput/index.tsx": function(e, t, a) {
 			"use strict";
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a),
-				r = n("./src/lib/classNames/index.ts"),
-				o = n("./src/reddit/constants/keycodes.ts"),
-				c = n("./src/reddit/icons/svgs/Checkbox/index.tsx"),
-				i = n("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
-				l = n("./src/reddit/layout/row/Inline/index.tsx"),
-				d = n("./src/reddit/controls/CheckboxInput/index.m.less"),
-				u = n.n(d);
+			var n = a("./node_modules/react/index.js"),
+				s = a.n(n),
+				r = a("./src/lib/classNames/index.ts"),
+				o = a("./src/reddit/constants/keycodes.ts"),
+				c = a("./src/reddit/icons/svgs/Checkbox/index.tsx"),
+				i = a("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
+				l = a("./src/reddit/layout/row/Inline/index.tsx"),
+				d = a("./src/reddit/controls/CheckboxInput/index.m.less"),
+				u = a.n(d);
 			t.a = e => {
 				const t = e.onChange && !e.disabled ? t => {
 						t.key !== o.b.Enter && t.key !== o.b.Space || e.onChange(!e.value)
 					} : void 0,
-					n = e.onChange && !e.disabled ? () => e.onChange(!e.value) : void 0;
+					a = e.onChange && !e.disabled ? () => e.onChange(!e.value) : void 0;
 				return s.a.createElement(l.a, {
 					"aria-checked": !!e.value,
 					"aria-disabled": e.disabled,
 					"aria-labelledby": e.name,
 					className: Object(r.a)(e.className, u.a.checkboxInput, e.disabled ? u.a.disabled : null),
-					onClick: n,
+					onClick: a,
 					onKeyPress: t,
 					role: "checkbox",
 					tabIndex: 0
@@ -586,51 +586,36 @@
 				}) : s.a.createElement(c.a, null), e.children)
 			}
 		},
-		"./src/reddit/hooks/useGqlContext.ts": function(e, t, n) {
+		"./src/reddit/hooks/useTheme.ts": function(e, t, a) {
 			"use strict";
-			n.d(t, "a", (function() {
+			a.d(t, "a", (function() {
 				return r
 			}));
-			var a = n("./node_modules/react/index.js"),
-				s = n("./src/reddit/contexts/ApiContext.tsx");
+			var n = a("./node_modules/react/index.js"),
+				s = a("./src/lib/CSSVariableProvider/index.tsx");
 
 			function r() {
-				const {
-					gqlContext: e
-				} = Object(a.useContext)(s.a);
-				return e
+				return Object(n.useContext)(s.b)
 			}
 		},
-		"./src/reddit/hooks/useTheme.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return r
-			}));
-			var a = n("./node_modules/react/index.js"),
-				s = n("./src/lib/CSSVariableProvider/index.tsx");
-
-			function r() {
-				return Object(a.useContext)(s.b)
-			}
-		},
-		"./src/reddit/icons/svgs/Checkbox/index.m.less": function(e, t, n) {
+		"./src/reddit/icons/svgs/Checkbox/index.m.less": function(e, t, a) {
 			e.exports = {
 				checkbox: "_1vmueUAOJJg7fhS7wxztWa"
 			}
 		},
-		"./src/reddit/icons/svgs/Checkbox/index.tsx": function(e, t, n) {
+		"./src/reddit/icons/svgs/Checkbox/index.tsx": function(e, t, a) {
 			"use strict";
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a),
-				r = n("./src/lib/classNames/index.ts"),
-				o = n("./src/reddit/icons/svgs/Checkbox/index.m.less"),
-				c = n.n(o);
+			var n = a("./node_modules/react/index.js"),
+				s = a.n(n),
+				r = a("./src/lib/classNames/index.ts"),
+				o = a("./src/reddit/icons/svgs/Checkbox/index.m.less"),
+				c = a.n(o);
 
 			function i() {
 				return (i = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
-						var n = arguments[t];
-						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
+						var a = arguments[t];
+						for (var n in a) Object.prototype.hasOwnProperty.call(a, n) && (e[n] = a[n])
 					}
 					return e
 				}).apply(this, arguments)
@@ -638,7 +623,7 @@
 			t.a = e => {
 				let {
 					className: t,
-					...n
+					...a
 				} = e;
 				return s.a.createElement("svg", i({
 					xmlns: "http://www.w3.org/2000/svg",
@@ -646,22 +631,22 @@
 					height: "20",
 					viewBox: "0 0 20 20",
 					className: Object(r.a)(c.a.checkbox, t)
-				}, n), s.a.createElement("path", {
+				}, a), s.a.createElement("path", {
 					fill: "inherit",
 					d: "M1.66666667,3.34755033 L1.66666667,16.6524497 C1.66666667,17.5781756 2.42112363,18.3333333 3.34755033,18.3333333 L16.6524497,18.3333333 C17.5781756,18.3333333 18.3333333,17.5788764 18.3333333,16.6524497 L18.3333333,3.34755033 C18.3333333,2.42182438 17.5788764,1.66666667 16.6524497,1.66666667 L3.34755033,1.66666667 C2.42182438,1.66666667 1.66666667,2.42112363 1.66666667,3.34755033 Z M0,3.34755033 C0,1.49874933 1.5032506,0 3.34755033,0 L16.6524497,0 C18.5012507,0 20,1.5032506 20,3.34755033 L20,16.6524497 C20,18.5012507 18.4967494,20 16.6524497,20 L3.34755033,20 C1.49874933,20 0,18.4967494 0,16.6524497 L0,3.34755033 Z"
 				}))
 			}
 		},
-		"./src/reddit/icons/svgs/CheckboxSelected/index.tsx": function(e, t, n) {
+		"./src/reddit/icons/svgs/CheckboxSelected/index.tsx": function(e, t, a) {
 			"use strict";
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a);
+			var n = a("./node_modules/react/index.js"),
+				s = a.n(n);
 
 			function r() {
 				return (r = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
-						var n = arguments[t];
-						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
+						var a = arguments[t];
+						for (var n in a) Object.prototype.hasOwnProperty.call(a, n) && (e[n] = a[n])
 					}
 					return e
 				}).apply(this, arguments)
@@ -676,10 +661,10 @@
 				d: "M0,3.34755033 C0,1.49874933 1.5032506,0 3.34755033,0 L16.6524497,0 C18.5012507,0 20,1.5032506 20,3.34755033 L20,16.6524497 C20,18.5012507 18.4967494,20 16.6524497,20 L3.34755033,20 C1.49874933,20 0,18.4967494 0,16.6524497 L0,3.34755033 Z M8.50575,15.1995 L15.797625,7.907625 C16.25325,7.452625 16.25325,6.71325 15.797625,6.25825 C15.342,5.802625 14.602625,5.802625 14.147625,6.25825 L7.7295,12.676375 L5.635125,10.327625 C5.20575,9.846375 4.46825,9.805125 3.987625,10.23325 C3.506375,10.662625 3.4645,11.400125 3.89325,11.88075 L6.810125,15.151375 C7.023875,15.39075 7.327,15.531375 7.647625,15.54075 C7.658875,15.54075 7.6695,15.541375 7.68075,15.541375 C7.990125,15.541375 8.287,15.41825 8.50575,15.1995 Z"
 			}))
 		},
-		"./src/reddit/icons/svgs/ChevronDown/index.tsx": function(e, t, n) {
+		"./src/reddit/icons/svgs/ChevronDown/index.tsx": function(e, t, a) {
 			"use strict";
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a);
+			var n = a("./node_modules/react/index.js"),
+				s = a.n(n);
 			t.a = e => s.a.createElement("svg", {
 				className: e.className,
 				viewBox: "0 0 12 12",
@@ -690,10 +675,10 @@
 				points: "11.0584 4.0602 6.0292 9.0894 1 4.0602 2.0608 3 6.0292 6.9684 9.9982 3"
 			})))
 		},
-		"./src/reddit/icons/svgs/ChevronUp/index.tsx": function(e, t, n) {
+		"./src/reddit/icons/svgs/ChevronUp/index.tsx": function(e, t, a) {
 			"use strict";
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a);
+			var n = a("./node_modules/react/index.js"),
+				s = a.n(n);
 			t.a = e => s.a.createElement("svg", {
 				className: e.className,
 				viewBox: "0 0 12 12",
@@ -704,18 +689,18 @@
 				points: "11.0584 4.0602 6.0292 9.0894 1 4.0602 2.0608 3 6.0292 6.9684 9.9982 3"
 			})))
 		},
-		"./src/reddit/icons/svgs/Circle/index.m.less": function(e, t, n) {
+		"./src/reddit/icons/svgs/Circle/index.m.less": function(e, t, a) {
 			e.exports = {
 				circle: "_17IuRdA-NY8vFk-Tt991sn"
 			}
 		},
-		"./src/reddit/icons/svgs/Circle/index.tsx": function(e, t, n) {
+		"./src/reddit/icons/svgs/Circle/index.tsx": function(e, t, a) {
 			"use strict";
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a),
-				r = n("./src/lib/classNames/index.ts"),
-				o = n("./src/reddit/icons/svgs/Circle/index.m.less"),
-				c = n.n(o);
+			var n = a("./node_modules/react/index.js"),
+				s = a.n(n),
+				r = a("./src/lib/classNames/index.ts"),
+				o = a("./src/reddit/icons/svgs/Circle/index.m.less"),
+				c = a.n(o);
 			t.a = e => s.a.createElement("svg", {
 				className: Object(r.a)(c.a.circle, e.className),
 				xmlns: "http://www.w3.org/2000/svg",
@@ -729,10 +714,10 @@
 				cx: "4"
 			})))
 		},
-		"./src/reddit/icons/svgs/DizzySnoo/index.tsx": function(e, t, n) {
+		"./src/reddit/icons/svgs/DizzySnoo/index.tsx": function(e, t, a) {
 			"use strict";
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a);
+			var n = a("./node_modules/react/index.js"),
+				s = a.n(n);
 			t.a = e => s.a.createElement("svg", {
 				className: e.className,
 				xmlns: "http://www.w3.org/2000/svg",
@@ -757,10 +742,10 @@
 				d: "M31.51,35.16c-5.18.72-4.85-2.84-9.7-1.22-3,1-3,4.65-.45,6.32,3.2,2.09,9.08.72,11,.24C36.87,39.38,36.72,34.43,31.51,35.16Z"
 			}))
 		},
-		"./src/reddit/icons/svgs/Info/index.tsx": function(e, t, n) {
+		"./src/reddit/icons/svgs/Info/index.tsx": function(e, t, a) {
 			"use strict";
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a);
+			var n = a("./node_modules/react/index.js"),
+				s = a.n(n);
 			t.a = e => s.a.createElement("svg", {
 				className: e.className,
 				style: e.style,
@@ -771,10 +756,10 @@
 				d: "M10,8.5 C10.553,8.5 11,8.948 11,9.5 L11,13.5 C11,14.052 10.553,14.5 10,14.5 C9.447,14.5 9,14.052 9,13.5 L9,9.5 C9,8.948 9.447,8.5 10,8.5 Z M10.7002,5.79 C10.8012,5.89 10.8702,6 10.9212,6.12 C10.9712,6.24 11.0002,6.37 11.0002,6.5 C11.0002,6.57 10.9902,6.63 10.9802,6.7 C10.9712,6.76 10.9502,6.82 10.9212,6.88 C10.9002,6.94 10.8702,7 10.8302,7.05 C10.7902,7.11 10.7502,7.16 10.7002,7.21 C10.6602,7.25 10.6102,7.29 10.5512,7.33 C10.5002,7.37 10.4402,7.4 10.3812,7.42 C10.3202,7.45 10.2612,7.47 10.1902,7.48 C10.1312,7.49 10.0602,7.5 10.0002,7.5 C9.7402,7.5 9.4802,7.39 9.2902,7.21 C9.1102,7.02 9.0002,6.77 9.0002,6.5 C9.0002,6.37 9.0302,6.24 9.0802,6.12 C9.1312,5.99 9.2002,5.89 9.2902,5.79 C9.5202,5.56 9.8702,5.46 10.1902,5.52 C10.2612,5.53 10.3202,5.55 10.3812,5.58 C10.4402,5.6 10.5002,5.63 10.5512,5.67 C10.6102,5.71 10.6602,5.75 10.7002,5.79 Z M10,16 C6.691,16 4,13.309 4,10 C4,6.691 6.691,4 10,4 C13.309,4 16,6.691 16,10 C16,13.309 13.309,16 10,16 M10,2 C5.589,2 2,5.589 2,10 C2,14.411 5.589,18 10,18 C14.411,18 18,14.411 18,10 C18,5.589 14.411,2 10,2"
 			})))
 		},
-		"./src/reddit/icons/svgs/Lock/index.tsx": function(e, t, n) {
+		"./src/reddit/icons/svgs/Lock/index.tsx": function(e, t, a) {
 			"use strict";
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a);
+			var n = a("./node_modules/react/index.js"),
+				s = a.n(n);
 			t.a = e => s.a.createElement("svg", {
 				className: e.className,
 				id: e.id,
@@ -793,10 +778,10 @@
 				d: "M32.5,17.5v-2.6c0-6.8-5.6-12.4-12.4-12.4h-0.2c-6.8,0-12.4,5.6-12.4,12.4v2.6C6.1,17.5,5,18.6,5,20v10c0,5.5,4.5,10,10,10h10c5.5,0,10-4.5,10-10V20C35,18.6,33.9,17.5,32.5,17.5z M12.5,17.5v-2.6c0-4.1,3.3-7.4,7.4-7.4h0.2c4.1,0,7.4,3.3,7.4,7.4v2.6H12.5z"
 			})))
 		},
-		"./src/reddit/icons/svgs/Pencil/index.tsx": function(e, t, n) {
+		"./src/reddit/icons/svgs/Pencil/index.tsx": function(e, t, a) {
 			"use strict";
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a);
+			var n = a("./node_modules/react/index.js"),
+				s = a.n(n);
 			t.a = e => s.a.createElement("svg", {
 				className: e.className,
 				viewBox: "0 0 20 20",
@@ -808,24 +793,24 @@
 				d: "M15.75,7.834625 L12,4.084625 L12.808,3.276625 C13.8435,2.241125 15.5225,2.241125 16.558,3.276625 C17.5935,4.312125 17.5935,5.991125 16.558,7.026625 L15.75,7.834625 Z M11.366,5 L15.116,8.75 L7.25,16.616 L3.5,12.866 L11.366,5 Z M2.5035,13.5 L6.1125,17.109 L1,18.6125 L2.5035,13.5 Z"
 			})))
 		},
-		"./src/reddit/icons/svgs/RadioOff/index.m.less": function(e, t, n) {
+		"./src/reddit/icons/svgs/RadioOff/index.m.less": function(e, t, a) {
 			e.exports = {
 				icon: "_11Rht_b1e-kmk12gkz7Lug"
 			}
 		},
-		"./src/reddit/icons/svgs/RadioOff/index.tsx": function(e, t, n) {
+		"./src/reddit/icons/svgs/RadioOff/index.tsx": function(e, t, a) {
 			"use strict";
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a),
-				r = n("./src/lib/classNames/index.ts"),
-				o = n("./src/reddit/icons/svgs/RadioOff/index.m.less"),
-				c = n.n(o);
+			var n = a("./node_modules/react/index.js"),
+				s = a.n(n),
+				r = a("./src/lib/classNames/index.ts"),
+				o = a("./src/reddit/icons/svgs/RadioOff/index.m.less"),
+				c = a.n(o);
 
 			function i() {
 				return (i = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
-						var n = arguments[t];
-						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
+						var a = arguments[t];
+						for (var n in a) Object.prototype.hasOwnProperty.call(a, n) && (e[n] = a[n])
 					}
 					return e
 				}).apply(this, arguments)
@@ -840,16 +825,16 @@
 				d: "M10,1.66666667 C5.39762708,1.66666667 1.66666667,5.39762708 1.66666667,10 C1.66666667,14.6023729 5.39762708,18.3333333 10,18.3333333 C14.6023729,18.3333333 18.3333333,14.6023729 18.3333333,10 C18.3333333,5.39762708 14.6023729,1.66666667 10,1.66666667 Z M10,0 C15.5228475,-1.01453063e-15 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 C4.4771525,20 6.76353751e-16,15.5228475 0,10 C-6.76353751e-16,4.4771525 4.4771525,1.01453063e-15 10,0 Z"
 			})))
 		},
-		"./src/reddit/icons/svgs/RadioOn/index.tsx": function(e, t, n) {
+		"./src/reddit/icons/svgs/RadioOn/index.tsx": function(e, t, a) {
 			"use strict";
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a);
+			var n = a("./node_modules/react/index.js"),
+				s = a.n(n);
 
 			function r() {
 				return (r = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
-						var n = arguments[t];
-						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
+						var a = arguments[t];
+						for (var n in a) Object.prototype.hasOwnProperty.call(a, n) && (e[n] = a[n])
 					}
 					return e
 				}).apply(this, arguments)
@@ -864,10 +849,10 @@
 				d: "M10,6.66666667 C8.15905083,6.66666667 6.66666667,8.15905083 6.66666667,10 C6.66666667,11.8409492 8.15905083,13.3333333 10,13.3333333 C11.8409492,13.3333333 13.3333333,11.8409492 13.3333333,10 C13.3333333,8.15905083 11.8409492,6.66666667 10,6.66666667 Z M10,0 C15.5228475,-1.01453063e-15 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 C4.4771525,20 6.76353751e-16,15.5228475 0,10 C-6.76353751e-16,4.4771525 4.4771525,1.01453063e-15 10,0 Z"
 			})))
 		},
-		"./src/reddit/icons/svgs/Remove/index.tsx": function(e, t, n) {
+		"./src/reddit/icons/svgs/Remove/index.tsx": function(e, t, a) {
 			"use strict";
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a);
+			var n = a("./node_modules/react/index.js"),
+				s = a.n(n);
 			t.a = e => s.a.createElement("svg", {
 				className: e.className,
 				id: e.id,
@@ -882,10 +867,10 @@
 				d: "M13.5559061,14.5 C13.5559061,14.776 13.3283409,15 13.0479481,15 C12.7675552,15 12.53999,14.776 12.53999,14.5 L12.53999,9 C12.53999,8.724 12.7675552,8.5 13.0479481,8.5 C13.3283409,8.5 13.5559061,8.724 13.5559061,9 L13.5559061,14.5 Z M10.508158,14.5 C10.508158,14.776 10.2805928,15 10.0002,15 C9.71980718,15 9.49224199,14.776 9.49224199,14.5 L9.49224199,9 C9.49224199,8.724 9.71980718,8.5 10.0002,8.5 C10.2805928,8.5 10.508158,8.724 10.508158,9 L10.508158,14.5 Z M7.46040996,14.5 C7.46040996,14.776 7.23284477,15 6.95245195,15 C6.67205913,15 6.44449394,14.776 6.44449394,14.5 L6.44449394,9 C6.44449394,8.724 6.67205913,8.5 6.95245195,8.5 C7.23284477,8.5 7.46040996,8.724 7.46040996,9 L7.46040996,14.5 Z M15.492242,6 C15.7736507,6 16.0002,6.224 16.0002,6.5 L16.0002,16.5 C16.0002,17.327 15.3164885,18 14.476326,18 L5.52407403,18 C4.68391148,18 4.0002,17.327 4.0002,16.5 L4.0002,6.5 C4.0002,6.224 4.22674927,6 4.50815801,6 L15.492242,6 Z M15.491585,3 C15.7719541,3 15.9995,3.224 15.9995,3.5 L15.9995,4.5 C15.9995,4.776 15.7719541,5 15.491585,5 L4.50741501,5 C4.22704592,5 3.9995,4.776 3.9995,4.5 L3.9995,3.5 C3.9995,3.224 4.22704592,3 4.50741501,3 L7.51325603,3 L8.26598607,2.167 C8.36248993,2.061 8.50064281,2 8.6459065,2 L11.3541093,2 C11.4983572,2 11.6365101,2.061 11.7340298,2.167 L12.485744,3 L15.491585,3 Z"
 			})))
 		},
-		"./src/reddit/icons/svgs/Search/index.tsx": function(e, t, n) {
+		"./src/reddit/icons/svgs/Search/index.tsx": function(e, t, a) {
 			"use strict";
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a);
+			var n = a("./node_modules/react/index.js"),
+				s = a.n(n);
 			t.a = e => s.a.createElement("svg", {
 				className: e.className,
 				viewBox: "0 0 20 20",
@@ -894,11 +879,11 @@
 				d: "M15.59,13.91l2.78,2.69a1.25,1.25,0,1,1-1.74,1.8l-2.82-2.73a8,8,0,1,1,1.78-1.76ZM14.64,9.2A5.45,5.45,0,1,0,9.2,14.64,5.45,5.45,0,0,0,14.64,9.2Z"
 			}))
 		},
-		"./src/reddit/icons/svgs/Snoo/index.tsx": function(e, t, n) {
+		"./src/reddit/icons/svgs/Snoo/index.tsx": function(e, t, a) {
 			"use strict";
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a),
-				r = n("./src/reddit/constants/colors.ts");
+			var n = a("./node_modules/react/index.js"),
+				s = a.n(n),
+				r = a("./src/reddit/constants/colors.ts");
 			t.a = e => s.a.createElement("svg", {
 				xmlns: "http://www.w3.org/2000/svg",
 				viewBox: "0 0 20 20",
@@ -913,10 +898,10 @@
 				d: "M16.67,10A1.46,1.46,0,0,0,14.2,9a7.12,7.12,0,0,0-3.85-1.23L11,4.65,13.14,5.1a1,1,0,1,0,.13-0.61L10.82,4a0.31,0.31,0,0,0-.37.24L9.71,7.71a7.14,7.14,0,0,0-3.9,1.23A1.46,1.46,0,1,0,4.2,11.33a2.87,2.87,0,0,0,0,.44c0,2.24,2.61,4.06,5.83,4.06s5.83-1.82,5.83-4.06a2.87,2.87,0,0,0,0-.44A1.46,1.46,0,0,0,16.67,10Zm-10,1a1,1,0,1,1,1,1A1,1,0,0,1,6.67,11Zm5.81,2.75a3.84,3.84,0,0,1-2.47.77,3.84,3.84,0,0,1-2.47-.77,0.27,0.27,0,0,1,.38-0.38A3.27,3.27,0,0,0,10,14a3.28,3.28,0,0,0,2.09-.61A0.27,0.27,0,1,1,12.48,13.79Zm-0.18-1.71a1,1,0,1,1,1-1A1,1,0,0,1,12.29,12.08Z"
 			})))
 		},
-		"./src/reddit/icons/svgs/SnooFacepalm/index.tsx": function(e, t, n) {
+		"./src/reddit/icons/svgs/SnooFacepalm/index.tsx": function(e, t, a) {
 			"use strict";
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a);
+			var n = a("./node_modules/react/index.js"),
+				s = a.n(n);
 			t.a = e => s.a.createElement("svg", {
 				className: e.className,
 				viewBox: "0 0 24 21",
@@ -938,10 +923,10 @@
 				d: "M21.3 3.1c-.2.5-.6.9-1 1-.4.1-.9 0-1.3-.3s-.7-.7-.7-1.1c0-.2 0-.8.8-1.4.5-.4 1.4 0 1.9.4.2.4.5.8.3 1.4zM18 14.6c-.5-2.5-3.8-6.4-6.8-5.3-1.4.5-1.7 2.4-.8 3.5.7.8 2.1 1.2 3 1.6-.3 0-.6.1-.9 0 1.2 1.6.6 4.7 2.8 5.2 2.5.7 3.4-1.7 2.7-5z"
 			}))
 		},
-		"./src/reddit/icons/svgs/SnooHappy/index.tsx": function(e, t, n) {
+		"./src/reddit/icons/svgs/SnooHappy/index.tsx": function(e, t, a) {
 			"use strict";
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a);
+			var n = a("./node_modules/react/index.js"),
+				s = a.n(n);
 			t.a = e => s.a.createElement("svg", {
 				className: e.className,
 				viewBox: "0 0 24 25",
@@ -960,13 +945,13 @@
 				d: "M14 1.9c-.1-.6.4-1.1 1.1-1.2.8-.1 1.4.3 1.5 1 .1.7-.5 1.5-1.1 1.6-.7.1-1.4-.6-1.5-1.4z"
 			}))
 		},
-		"./src/reddit/icons/svgs/SparkleGradient/index.tsx": function(e, t, n) {
+		"./src/reddit/icons/svgs/SparkleGradient/index.tsx": function(e, t, a) {
 			"use strict";
-			n.d(t, "a", (function() {
+			a.d(t, "a", (function() {
 				return r
 			}));
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a);
+			var n = a("./node_modules/react/index.js"),
+				s = a.n(n);
 
 			function r(e) {
 				return s.a.createElement("svg", {
@@ -995,10 +980,10 @@
 				}))))
 			}
 		},
-		"./src/reddit/icons/svgs/Subreddit/index.tsx": function(e, t, n) {
+		"./src/reddit/icons/svgs/Subreddit/index.tsx": function(e, t, a) {
 			"use strict";
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a);
+			var n = a("./node_modules/react/index.js"),
+				s = a.n(n);
 			t.a = e => s.a.createElement("svg", {
 				className: e.className,
 				id: e.id,
@@ -1015,10 +1000,10 @@
 				d: "M10.68 7.87l.66-1.56a1.649 1.649 0 00-.46-.15 3 3 0 00-.7-.07c-.502-.01-1 .09-1.46.29-.38.18-.72.436-1 .75V6.2H6.13v7.3h1.61V9.3A1.71 1.71 0 018 8.43a1.64 1.64 0 01.66-.59 2.12 2.12 0 011-.22 2.08 2.08 0 011.02.25z"
 			}))
 		},
-		"./src/reddit/icons/svgs/Unlock/index.tsx": function(e, t, n) {
+		"./src/reddit/icons/svgs/Unlock/index.tsx": function(e, t, a) {
 			"use strict";
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a);
+			var n = a("./node_modules/react/index.js"),
+				s = a.n(n);
 			t.a = e => s.a.createElement("svg", {
 				className: e.className,
 				viewBox: "0 0 16 17",
@@ -1030,13 +1015,13 @@
 				d: "M14.9656 14.8328L13.6 13.4672V8.99847C13.6 8.55608 13.2416 8.19848 12.8 8.19848H12V6.59849C12 4.39291 10.2056 2.59853 8 2.59853C6.5712 2.59853 5.328 3.35852 4.624 4.49131L2.1656 2.03294C1.8528 1.72014 1.3472 1.72014 1.0344 2.03294C0.721605 2.34573 0.721605 2.85133 1.0344 3.16413L13.8344 15.964C13.9904 16.12 14.1952 16.1984 14.4 16.1984C14.6048 16.1984 14.8096 16.12 14.9656 15.964C15.2784 15.6512 15.2784 15.1456 14.9656 14.8328ZM4 8.19859H3.2C2.7584 8.19859 2.4 8.55619 2.4 8.99859V14.5986C2.4 15.041 2.7584 15.3986 3.2 15.3986H11.6688L4 7.72979V8.19859ZM10.4 6.59854C10.4 5.27534 9.32319 4.19854 7.99999 4.19854C7.00959 4.19854 6.15839 4.80174 5.79199 5.65934L8.33119 8.19853H10.4V6.59854Z"
 			}))
 		},
-		"./src/reddit/icons/svgs/Wordmark/index.tsx": function(e, t, n) {
+		"./src/reddit/icons/svgs/Wordmark/index.tsx": function(e, t, a) {
 			"use strict";
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a),
-				r = n("./src/lib/CSSVariableProvider/withTheme.tsx"),
-				o = n("./src/reddit/constants/colors.ts"),
-				c = n("./src/reddit/models/Theme/NewColorSystem/index.ts");
+			var n = a("./node_modules/react/index.js"),
+				s = a.n(n),
+				r = a("./src/lib/CSSVariableProvider/withTheme.tsx"),
+				o = a("./src/reddit/constants/colors.ts"),
+				c = a("./src/reddit/models/Theme/NewColorSystem/index.ts");
 			t.a = Object(r.a)(e => s.a.createElement("svg", {
 				className: e.className,
 				viewBox: "0 0 57 18",
@@ -1062,21 +1047,21 @@
 				d: "M7.68,6.53a1.19,1.19,0,0,0-1-1.18A4.56,4.56,0,0,0,2.39,6.91V6.75A1.2,1.2,0,0,0,0,6.75v9.77a1.23,1.23,0,0,0,1.12,1.24,1.19,1.19,0,0,0,1.26-1.1.66.66,0,0,0,0-.14v-5A3.62,3.62,0,0,1,5.81,7.7a4.87,4.87,0,0,1,.54,0h.24A1.18,1.18,0,0,0,7.68,6.53Z"
 			}))))
 		},
-		"./src/reddit/layout/row/Inline/index.m.less": function(e, t, n) {
+		"./src/reddit/layout/row/Inline/index.m.less": function(e, t, a) {
 			e.exports = {
 				inlineRow: "XZK-LTFT5CgGo9MvPQQsy"
 			}
 		},
-		"./src/reddit/layout/row/Inline/index.tsx": function(e, t, n) {
+		"./src/reddit/layout/row/Inline/index.tsx": function(e, t, a) {
 			"use strict";
-			var a = n("./src/lib/lessComponent.tsx"),
-				s = n("./src/reddit/layout/row/Inline/index.m.less"),
-				r = n.n(s);
-			t.a = a.a.div("inlineRow", r.a)
+			var n = a("./src/lib/lessComponent.tsx"),
+				s = a("./src/reddit/layout/row/Inline/index.m.less"),
+				r = a.n(s);
+			t.a = n.a.div("inlineRow", r.a)
 		},
 		"./src/redditGQL/operations/SubmitContentRatingSurvey.json": function(e) {
 			e.exports = JSON.parse('{"id":"8cd4e428e688"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.84dfc2c680ecb03615cd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.aff4730066a360dc6134.js.map

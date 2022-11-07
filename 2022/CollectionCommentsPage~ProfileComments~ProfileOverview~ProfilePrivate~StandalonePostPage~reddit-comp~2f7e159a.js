@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a.eef21cf79d28c11afc44.js
-// Retrieved at 11/3/2022, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a.d47f5c398e300264a221.js
+// Retrieved at 11/7/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a"], {
 		"./src/higherOrderComponents/withAdClickLocation/index.tsx": function(e, t, s) {
@@ -907,8 +907,8 @@
 					q = W.isRemoved && !W.modRemovalReason && !W.modNote && W.belongsTo.type === p.a.SUBREDDIT,
 					V = R("Approve", W.id, H),
 					G = R("Archived", W.id, H),
-					K = R("Lock", W.id, H),
-					Q = R("Mod", W.id, H),
+					Q = R("Lock", W.id, H),
+					K = R("Mod", W.id, H),
 					Z = R("Remove", W.id, H),
 					z = R("Report", W.id, H),
 					Y = R("Spam", W.id, H),
@@ -921,7 +921,7 @@
 					isFilled: !0,
 					className: Object(c.a)(g.a.icon, g.a.modIcon)
 				}), r.a.createElement(m.c, T({
-					tooltipId: Q,
+					tooltipId: K,
 					text: F(s)
 				}, X))), W.isArchived && r.a.createElement(o.Fragment, null, r.a.createElement(O.a, {
 					isFilled: !0,
@@ -937,11 +937,11 @@
 					isFilled: !0,
 					className: Object(c.a)(g.a.icon, g.a.lockIcon),
 					desc: A(),
-					id: K,
-					onMouseEnter: D(K),
+					id: Q,
+					onMouseEnter: D(Q),
 					onMouseLeave: y
 				}), r.a.createElement(m.c, T({
-					tooltipId: K,
+					tooltipId: Q,
 					text: A()
 				}, X))), a && Object(C.v)(W) && !l && r.a.createElement(o.Fragment, null, r.a.createElement(N.a, {
 					isFilled: !0,
@@ -1254,7 +1254,7 @@
 			const b = Object(p.a)(e => Object(u.c)(e, {
 				experimentEligibilitySelector: u.a,
 				experimentName: m.zc
-			}), e => e === m.Pd);
+			}), e => e === m.Qd);
 			var x = s("./node_modules/fbt/lib/FbtPublic.js"),
 				v = s("./src/lib/classNames/index.ts"),
 				E = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
@@ -1360,8 +1360,8 @@
 			};
 			var V = s("./src/reddit/components/PromotedUserPostsAd/PromotedUserPost/index.m.less"),
 				G = s.n(V);
-			const K = Object(N.a)(null);
-			var Q = Object(I.b)(K(e => {
+			const Q = Object(N.a)(null);
+			var K = Object(I.b)(Q(e => {
 					let {
 						post: t
 					} = e;
@@ -1386,7 +1386,7 @@
 				let {
 					postIds: t
 				} = e;
-				const s = t.map(e => o.a.createElement(Q, {
+				const s = t.map(e => o.a.createElement(K, {
 					postId: e,
 					key: e
 				}));
@@ -2131,13 +2131,13 @@
 				a = s("./src/reddit/models/Post/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const c = e => Object(r.c)(e, {
-					experimentName: o.hf,
+					experimentName: o.if,
 					experimentEligibilitySelector: r.a
 				}),
-				d = (e, t) => (t === o.pf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(a.A)(e),
+				d = (e, t) => (t === o.qf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(a.A)(e),
 				l = Object(n.a)(i.G, c, (e, t) => d(e, t));
 			Object(n.a)((e, t) => t, c, (e, t) => d(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a.eef21cf79d28c11afc44.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a.d47f5c398e300264a221.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.8da07a8cf9f8cdd883a3.js
-// Retrieved at 11/3/2022, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.c812aa904611f68ec63f.js
+// Retrieved at 11/7/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MarketplaceClaimModal"], {
 		"./src/reddit/actions/economics/marketplace/constants.ts": function(e, t, r) {
@@ -87,7 +87,7 @@
 		"./src/reddit/components/Econ/Marketplace/ClaimModal/index.tsx": function(e, t, r) {
 			"use strict";
 			r.r(t), r.d(t, "MarketplaceClaim", (function() {
-				return C
+				return x
 			}));
 			var n = r("./node_modules/@reddit/marketplace/marketplace.es.js"),
 				s = r("./src/higherOrderComponents/asModal/index.tsx"),
@@ -116,7 +116,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const C = e => {
+			const x = e => {
 					let {
 						onClose: t
 					} = e;
@@ -150,8 +150,8 @@
 						}
 					})))
 				},
-				M = Object(s.a)(C);
-			t.default = e => c.a.createElement(M, v({
+				C = Object(s.a)(x);
+			t.default = e => c.a.createElement(C, v({
 				withOverlay: !0,
 				className: A.a.modal
 			}, e))
@@ -210,8 +210,8 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(s.a)(n.wd)
+			const a = Object(s.a)(n.xd)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.8da07a8cf9f8cdd883a3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.c812aa904611f68ec63f.js.map

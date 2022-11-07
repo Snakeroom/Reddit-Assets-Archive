@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UpdateCardModal.a2e4518b35c39f961375.js
-// Retrieved at 11/3/2022, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UpdateCardModal.a537b7bf688f325f0706.js
+// Retrieved at 11/7/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UpdateCardModal"], {
 		"./node_modules/@stripe/stripe-js/dist/stripe.esm.js": function(e, t, r) {
@@ -84,8 +84,8 @@
 				f = r("./src/reddit/endpoints/gold/purchase.ts"),
 				w = r("./src/reddit/models/Toast/index.ts"),
 				b = r("./src/reddit/selectors/activeModalId.ts"),
-				j = r("./src/reddit/actions/goldPurchaseModals/constants.ts");
-			const x = Object(a.a)(j.f),
+				x = r("./src/reddit/actions/goldPurchaseModals/constants.ts");
+			const j = Object(a.a)(x.f),
 				v = e => async (t, r, n) => {
 					let {
 						gqlContext: s
@@ -108,7 +108,7 @@
 							duration: p.a,
 							text: e
 						})), t((() => async (e, t) => {
-							Object(b.b)(m.a)(t()) && (e(Object(l.i)(m.a)), e(x()))
+							Object(b.b)(m.a)(t()) && (e(Object(l.i)(m.a)), e(j()))
 						})())
 					}
 				};
@@ -153,8 +153,8 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const i = Object(s.a)(n.wd)
+			const i = Object(s.a)(n.xd)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UpdateCardModal.a2e4518b35c39f961375.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UpdateCardModal.a537b7bf688f325f0706.js.map

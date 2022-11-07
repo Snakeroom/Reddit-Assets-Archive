@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommunityProgress.459cc2b3185e4693095e.js
-// Retrieved at 10/24/2022, 9:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommunityProgress.b01c6828600323301efb.js
+// Retrieved at 11/7/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommunityProgress"], {
 		"./src/lib/colors/constants.ts": function(e, A, t) {
@@ -158,16 +158,16 @@
 				B = t("./src/reddit/icons/svgs/svgIcons.tsx"),
 				v = t("./src/reddit/models/NewCommunityProgress/index.ts"),
 				E = t("./src/reddit/selectors/activeModalId.ts"),
-				m = t("./src/reddit/selectors/subreddit.ts"),
-				w = t("./src/reddit/selectors/user.ts"),
+				w = t("./src/reddit/selectors/subreddit.ts"),
+				m = t("./src/reddit/selectors/user.ts"),
 				u = t("./src/config.ts"),
 				P = t("./node_modules/polished/dist/polished.es.js"),
 				D = t("./node_modules/query-string/index.js"),
 				Q = t("./src/lib/colors/constants.ts"),
 				I = t("./src/lib/copyToClipboard/index.ts"),
 				p = t("./src/reddit/actions/toaster.ts"),
-				x = t("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				b = t("./src/reddit/components/ProgressBar/index.tsx"),
+				b = t("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				x = t("./src/reddit/components/ProgressBar/index.tsx"),
 				M = t("./src/reddit/controls/Button/index.tsx"),
 				j = t("./src/reddit/controls/TextButton/index.tsx"),
 				N = t("./src/reddit/icons/fonts/index.tsx"),
@@ -238,8 +238,8 @@
 						colorIdentifier: d,
 						onActionCard: B = (() => {}),
 						onClose: E = (() => {}),
-						isNightMode: m,
-						subredditUrl: w,
+						isNightMode: w,
+						subredditUrl: m,
 						progressModule: P,
 						primaryButton: D,
 						progress: Y,
@@ -250,21 +250,21 @@
 						U = Object(f.a)(),
 						K = h.b[l],
 						J = K ? Object(N.b)(K) : null !== (X = h.a[l]) && void 0 !== X ? X : Object(N.b)("best"),
-						V = m ? Q.g : Q.f,
+						V = w ? Q.g : Q.f,
 						F = null !== (z = V[d]) && void 0 !== z ? z : V.downvote;
 
 					function S(e) {
 						(function(e) {
 							return "CommunityProgressShareButton" === e.__typename
-						})(e) && (Object(I.a)(`https://reddit.com${w}`), R(Object(p.f)(Object(p.e)("Copied community URL to clipboard!", O.b.SuccessCommunityGreen)))), g && E(v.b.CTA_BUTTON_CLICK), U(Object(C.b)(P, t, e.buttonText))
+						})(e) && (Object(I.a)(`https://reddit.com${m}`), R(Object(p.f)(Object(p.e)("Copied community URL to clipboard!", O.b.SuccessCommunityGreen)))), g && E(v.b.CTA_BUTTON_CLICK), U(Object(C.b)(P, t, e.buttonText))
 					}
 					const Z = (null == Y ? void 0 : Y.done) / (null == Y ? void 0 : Y.total) * 100 || 0,
-						W = y(D, w);
+						W = y(D, m);
 					return s.a.createElement("a", H({
 						className: Object(c.a)(o.a.ncpCard, {
 							[o.a.v2]: !g,
 							[o.a.isCompleted]: G === v.a.COMPLETED,
-							[o.a.nightMode]: !g && m
+							[o.a.nightMode]: !g && w
 						})
 					}, W && {
 						href: W
@@ -283,7 +283,7 @@
 					}), s.a.createElement(j.a, {
 						className: Object(c.a)(o.a.headerButton, o.a.closeButton, o.a.og),
 						onClick: () => E(v.b.HIDE_BUTTON_CLICK)
-					}, s.a.createElement(x.b, null), s.a.createElement("div", null, L._("Close", null, {
+					}, s.a.createElement(b.b, null), s.a.createElement("div", null, L._("Close", null, {
 						hk: "4gbyAA"
 					}))), s.a.createElement("div", {
 						className: o.a.iconCircle,
@@ -321,7 +321,7 @@
 						hk: "1Riqmr"
 					}), s.a.createElement("div", {
 						className: o.a.ratio
-					}, Y.done, "/", Y.total)), s.a.createElement(b.a, {
+					}, Y.done, "/", Y.total)), s.a.createElement(x.a, {
 						className: o.a.progressBar,
 						innerBarClassName: o.a.innerBar,
 						percent: Z
@@ -335,7 +335,7 @@
 					}), s.a.createElement("div", null, L._("Close", null, {
 						hk: "4gbyAA"
 					}))), i.length > 0 && s.a.createElement("div", null, i.map(e => {
-						const A = y(e, w),
+						const A = y(e, m),
 							t = g ? {
 								backgroundColor: F,
 								borderColor: F,
@@ -368,18 +368,18 @@
 					onCompleteCard: t,
 					onDismissCard: n
 				} = e;
-				return s.a.createElement(x.e, null, s.a.createElement(x.i, {
+				return s.a.createElement(b.e, null, s.a.createElement(b.i, {
 					className: o.a.modalHeader
 				}, G.fbt._("Remove this task?", null, {
 					hk: "3eHFY8"
 				}), s.a.createElement(j.a, {
 					className: o.a.closeModalButton,
 					onClick: A
-				}, s.a.createElement(x.b, null))), s.a.createElement(x.l, {
+				}, s.a.createElement(b.b, null))), s.a.createElement(b.l, {
 					className: o.a.modalMain
 				}, G.fbt._("If you remove this task, you won’t be able to see it anymore.", null, {
 					hk: "ycdgz"
-				})), s.a.createElement(x.g, null, s.a.createElement(M.t, {
+				})), s.a.createElement(b.g, null, s.a.createElement(M.t, {
 					className: o.a.modalButton,
 					onClick: A,
 					priority: M.c.Secondary
@@ -516,9 +516,9 @@
 				let Q;
 				Q = r.cards;
 				const I = Object(n.useRef)(null),
-					[p, x] = Object(n.useState)(!A),
-					b = Object(a.e)(w.eb),
-					M = Object(a.e)(e => Object(m.eb)(e, t)),
+					[p, b] = Object(n.useState)(!A),
+					x = Object(a.e)(m.eb),
+					M = Object(a.e)(e => Object(w.eb)(e, t)),
 					j = Object(f.a)();
 				Object(n.useEffect)(() => {
 					j(Object(C.g)(r, p ? "expanded_module" : "collapses_module"))
@@ -544,7 +544,7 @@
 						const n = {
 							key: e.id,
 							isInNCPControlGroup: D,
-							isNightMode: b,
+							isNightMode: x,
 							onClose: A => (async function(e, A) {
 								await N({
 									input: {
@@ -576,7 +576,7 @@
 					onToggle: () => {
 						var e;
 						const A = !!(null === (e = I.current) || void 0 === e ? void 0 : e.open);
-						x(A), j(A ? Object(C.f)(r) : Object(C.c)(r))
+						b(A), j(A ? Object(C.f)(r) : Object(C.c)(r))
 					}
 				}, s.a.createElement("summary", {
 					className: Object(c.a)(o.a.ncpHeading, {
@@ -724,21 +724,6 @@
 						width: `${n.toFixed(2)}%`
 					}
 				}))
-			}
-		},
-		"./src/reddit/hooks/useGqlContext.ts": function(e, A, t) {
-			"use strict";
-			t.d(A, "a", (function() {
-				return a
-			}));
-			var n = t("./node_modules/react/index.js"),
-				s = t("./src/reddit/contexts/ApiContext.tsx");
-
-			function a() {
-				const {
-					gqlContext: e
-				} = Object(n.useContext)(s.a);
-				return e
 			}
 		},
 		"./src/reddit/icons/svgs/Checkbox/index.m.less": function(e, A, t) {
@@ -1222,4 +1207,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.459cc2b3185e4693095e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.b01c6828600323301efb.js.map

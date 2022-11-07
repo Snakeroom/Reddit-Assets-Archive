@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.00b7670298703adcfdbf.js
-// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.be1747b3a7d7ea0560d9.js
+// Retrieved at 11/7/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -36,119 +36,121 @@
 		"./src/chat/initializer.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "default", (function() {
-				return Ce
+				return Ee
 			}));
-			var s = n("./node_modules/react/index.js"),
-				a = n.n(s),
-				c = n("./node_modules/history/esm/history.js"),
-				r = n("./node_modules/js-cookie/dist/js.cookie.js"),
-				i = n.n(r),
-				o = n("./node_modules/redux-thunk/es/index.js"),
-				d = n("./src/lib/constants/index.ts"),
-				u = n("./src/lib/initializeClient/index.tsx"),
-				l = n("./src/lib/matchRoute/index.ts"),
-				h = n("./src/reddit/contexts/ApiContext.tsx"),
-				b = n("./src/reduxMiddleware/apiContext.ts"),
-				m = n("./src/reduxMiddleware/gqlContext.ts"),
-				g = n("./src/chat/actions/apiRequestHeaders.ts"),
-				f = n("./src/chat/actions/notifications.ts"),
-				p = n("./src/chat/actions/platform.ts"),
-				x = n("./src/chat/actions/session.ts"),
-				v = n("./src/chat/actions/user.ts"),
-				j = n("./node_modules/react-redux/es/index.js"),
-				O = n("./src/lib/CSSVariableProvider/index.tsx"),
-				C = n("./src/lib/lessComponent.tsx"),
-				w = n("./src/chat/components/MinimizedPortalContainer/index.tsx"),
-				y = n("./src/chat/components/Root/index.tsx"),
+			var s = n("./src/chat/contexts/ConnectFnsContext.tsx"),
+				a = n("./node_modules/react/index.js"),
+				c = n.n(a),
+				r = n("./node_modules/history/esm/history.js"),
+				i = n("./node_modules/js-cookie/dist/js.cookie.js"),
+				o = n.n(i),
+				d = n("./node_modules/redux-thunk/es/index.js"),
+				u = n("./src/lib/constants/index.ts"),
+				l = n("./src/lib/initializeClient/index.tsx"),
+				h = n("./src/lib/matchRoute/index.ts"),
+				b = n("./src/reddit/contexts/ApiContext.tsx"),
+				m = n("./src/reduxMiddleware/apiContext.ts"),
+				g = n("./src/reduxMiddleware/gqlContext.ts"),
+				f = n("./src/chat/actions/apiRequestHeaders.ts"),
+				p = n("./src/chat/actions/notifications.ts"),
+				x = n("./src/chat/actions/platform.ts"),
+				v = n("./src/chat/actions/session.ts"),
+				j = n("./src/chat/actions/user.ts"),
+				O = n("./node_modules/react-redux/es/index.js"),
+				C = n("./src/lib/CSSVariableProvider/index.tsx"),
+				w = n("./src/lib/lessComponent.tsx"),
+				y = n("./src/chat/components/MinimizedPortalContainer/index.tsx"),
+				E = n("./src/chat/components/Root/index.tsx"),
 				_ = n("./src/chat/constants/container.ts"),
-				E = n("./src/chat/helpers/chatSelector.ts"),
-				M = n("./src/chat/actions/container.ts"),
-				P = n("./src/chat/components/PortalContainer/index.m.less"),
-				N = n.n(P);
+				M = n("./src/chat/helpers/chatSelector.ts"),
+				P = n("./src/chat/actions/container.ts"),
+				N = n("./src/chat/components/PortalContainer/index.m.less"),
+				A = n.n(N);
 			const {
-				embed: A,
-				hidden: T
+				embed: T,
+				hidden: k
 			} = _.b;
 
-			function k(e) {
+			function B(e) {
 				return void 0 !== e ? e : -1
 			}
-			const B = C.a.wrapped(e => a.a.createElement("div", {
+			const S = w.a.wrapped(e => c.a.createElement("div", {
 					className: e.className
-				}, e.children), "BasePortalContainer", N.a),
-				S = C.a.wrapped(e => {
-					const t = Object(j.d)(),
-						n = Object(s.useRef)(null),
-						c = e => {
+				}, e.children), "BasePortalContainer", A.a),
+				R = w.a.wrapped(e => {
+					const t = Object(O.d)(),
+						n = Object(a.useRef)(null),
+						s = e => {
 							var s;
 							if (e.target instanceof Node && e.target) {
 								const a = Boolean(null === (s = null == n ? void 0 : n.current) || void 0 === s ? void 0 : s.contains(e.target));
-								t(Object(M.changeFocus)(a))
+								t(Object(P.changeFocus)(a))
 							}
 						};
-					return Object(s.useEffect)(() => (document.addEventListener("focusin", c), () => {
-						document.removeEventListener("focusin", c)
-					})), a.a.createElement("div", {
+					return Object(a.useEffect)(() => (document.addEventListener("focusin", s), () => {
+						document.removeEventListener("focusin", s)
+					})), c.a.createElement("div", {
 						ref: n,
 						className: e.className,
 						style: {
-							width: `${k(A.width)}px`,
-							height: `${k(A.height)}px`
+							width: `${B(T.width)}px`,
+							height: `${B(T.height)}px`
 						}
 					}, e.children)
-				}, "EmbedPortalContainer", N.a),
-				R = C.a.wrapped(e => a.a.createElement("div", {
+				}, "EmbedPortalContainer", A.a),
+				D = w.a.wrapped(e => c.a.createElement("div", {
 					className: e.className,
 					style: {
-						width: `${k(T.width)}px`,
-						height: `${k(T.height)}px`
+						width: `${B(k.width)}px`,
+						height: `${B(k.height)}px`
 					}
-				}, e.children), "HiddenPortalContainer", N.a),
-				D = C.a.wrapped(w.a, "MinimizedRedesignPortalContainer", N.a),
-				I = B,
-				U = Object(E.a)({
+				}, e.children), "HiddenPortalContainer", A.a),
+				I = w.a.wrapped(y.a, "MinimizedRedesignPortalContainer", A.a),
+				U = S,
+				L = Object(M.a)({
 					container: e => e && e.container && e.container.size
 				});
 
-			function L(e) {
+			function q(e) {
 				switch (e.container) {
 					case _.a.EMBED:
-						return a.a.createElement(S, null, e.children);
+						return c.a.createElement(R, null, e.children);
 					case _.a.HIDDEN:
-						return a.a.createElement(R, null, e.children);
+						return c.a.createElement(D, null, e.children);
 					case _.a.FULL:
-						return a.a.createElement(I, null, e.children);
+						return c.a.createElement(U, null, e.children);
 					case _.a.MINIMIZED:
-						return a.a.createElement(D, null);
+						return c.a.createElement(I, null);
 					default:
-						return a.a.createElement(S, null, e.children)
+						return c.a.createElement(R, null, e.children)
 				}
 			}
-			var q = n("./src/chat/customMiddleware/channelsFilter.ts"),
-				z = n("./src/chat/customMiddleware/chatThemeKey.ts"),
-				H = n("./src/chat/customMiddleware/containerSize.ts"),
-				F = n("./src/chat/customMiddleware/draftMessageText.ts"),
-				G = n("./src/chat/customMiddleware/iframeDispatcher.ts"),
-				$ = n("./src/chat/customMiddleware/inviteLinkSettings.ts"),
+			var z = n("./src/chat/customMiddleware/channelsFilter.ts"),
+				H = n("./src/chat/customMiddleware/chatThemeKey.ts"),
+				F = n("./src/chat/customMiddleware/containerSize.ts"),
+				G = n("./src/chat/customMiddleware/draftMessageText.ts"),
+				$ = n("./src/chat/customMiddleware/iframeDispatcher.ts"),
+				V = n("./src/chat/customMiddleware/inviteLinkSettings.ts"),
 				W = n("./src/chat/customMiddleware/lastSelectedChannel.ts"),
-				V = n("./src/chat/customMiddleware/loggedOutPreferencesSync.ts"),
-				K = n("./src/chat/customMiddleware/sendbirdToken.ts"),
+				K = n("./src/chat/customMiddleware/loggedOutPreferencesSync.ts"),
+				Q = n("./src/chat/customMiddleware/sendbirdToken.ts"),
 				Y = n("./src/chat/customMiddleware/settings.ts"),
-				Q = n("./src/chat/customMiddleware/stateObserver/index.ts"),
-				J = n("./src/chat/customMiddleware/title.ts"),
-				X = n("./src/chat/customMiddleware/tokenRefresher.ts"),
-				Z = n("./src/chat/customMiddleware/tracking.ts"),
-				ee = n("./src/chat/customMiddleware/unreadMessageCount.ts"),
-				te = n("./src/chat/customMiddleware/uploadPrompt.ts"),
-				ne = n("./node_modules/lodash/uniqueId.js"),
-				se = n.n(ne),
-				ae = n("./src/chat/constants/theme.ts"),
-				ce = n("./src/chat/models/Theme/index.ts"),
-				re = n("./src/chat/reducers/experiments/helpers.ts"),
-				ie = n("./src/chat/reducers/meta/index.ts"),
-				oe = n("./src/chat/reducers/platform/index.ts"),
-				de = n("./src/lib/env/index.ts");
-			const ue = (e, t) => {
+				J = n("./src/chat/customMiddleware/stateObserver/index.ts"),
+				X = n("./src/chat/customMiddleware/title.ts"),
+				Z = n("./src/chat/customMiddleware/tokenRefresher.ts"),
+				ee = n("./src/chat/customMiddleware/tracking.ts"),
+				te = n("./src/chat/customMiddleware/unreadMessageCount.ts"),
+				ne = n("./src/chat/customMiddleware/uploadPrompt.ts"),
+				se = n("./node_modules/lodash/uniqueId.js"),
+				ae = n.n(se),
+				ce = n("./src/chat/constants/theme.ts"),
+				re = n("./src/chat/models/Theme/index.ts"),
+				ie = n("./src/chat/reducers/experiments/helpers.ts"),
+				oe = n("./src/chat/reducers/meta/index.ts"),
+				de = n("./src/chat/reducers/platform/index.ts"),
+				ue = n("./src/lib/env/index.ts"),
+				le = n("./src/redditGQL/types.ts");
+			const he = (e, t) => {
 					var n;
 					const {
 						account: s,
@@ -180,40 +182,40 @@
 						session: i && i.unsafeLoggedOut ? null : i
 					}, t
 				},
-				le = e => (e.meta = {
-					...ie.a,
+				be = e => (e.meta = {
+					...oe.a,
 					isRedesign: !0
 				}, e),
-				he = e => {
+				me = e => {
 					if (e.user && e.user.prefs && e.user.prefs.nightmode) {
 						const {
 							NIGHT: t,
 							REDDIT: n
-						} = ae.b, {
+						} = ce.b, {
 							nightmode: s
 						} = e.user.prefs, a = s ? t : n;
 						e.themes = {
-							current: ce.e[a],
+							current: re.e[a],
 							chatTheme: null,
 							cached: {}
 						}, e.user.prefs.globalTheme = a
 					}
 					return e
 				},
-				be = (e, t, n) => {
-					const s = se()(),
-						a = Object(c.c)(t.location, void 0, s),
-						r = Object(l.a)(Object(c.e)(a), n),
-						i = Object(oe.b)(oe.a, Object(p.e)({
+				ge = (e, t, n) => {
+					const s = ae()(),
+						a = Object(r.c)(t.location, void 0, s),
+						c = Object(h.a)(Object(r.e)(a), n),
+						i = Object(de.b)(de.a, Object(x.e)({
 							location: a,
 							action: "PUSH",
-							routeMatch: r
+							routeMatch: c
 						}));
 					return e.platform = {
 						...i
 					}, e
 				},
-				me = (e, t) => {
+				fe = (e, t) => {
 					var n, s, a, c, r;
 					const i = {},
 						o = null === (n = e.platform.currentPage) || void 0 === n ? void 0 : n.queryParams;
@@ -221,76 +223,96 @@
 						...null === (r = null === (c = null == e ? void 0 : e.user) || void 0 === c ? void 0 : c.experiments) || void 0 === r ? void 0 : r.byName[u],
 						isOverride: !1
 					};
-					const d = Object(re.a)(i, o);
+					const d = Object(ie.a)(i, o);
 					return t.experiments = {
 						models: {
 							...i,
-							...Object(de.b)() ? {} : d
+							...Object(ue.b)() ? {} : d
 						},
 						api: {
 							isPending: !1,
 							errors: []
 						}
 					}, t
+				},
+				pe = (e, t) => {
+					var n;
+					const s = null === (n = e.features) || void 0 === n ? void 0 : n.eligibleUXExperiences,
+						a = [le.U.LiveChatVideoEdu].reduce((e, t) => {
+							const n = null == s ? void 0 : s.experiences[t];
+							return (null == n ? void 0 : n.fetched) ? {
+								...e,
+								[t]: {
+									value: n.value,
+									fetched: n.fetched
+								}
+							} : e
+						}, {});
+					return t.uxExperiences = {
+						experiences: a
+					}, t
 				};
-			var ge = n("./src/chat/reducers/index.ts"),
-				fe = n("./src/chat/routes/index.ts"),
-				pe = n("./src/config.ts"),
-				xe = n("./src/chat/actions/liveChat/index.ts");
-			const ve = Object(b.a)({
+			var xe = n("./src/chat/reducers/index.ts"),
+				ve = n("./src/chat/routes/index.ts"),
+				je = n("./src/config.ts"),
+				Oe = n("./src/chat/actions/liveChat/index.ts");
+			const Ce = Object(m.a)({
 					actionDispatchers: {
-						loidReceived: v.p,
-						sessionTrackerReceived: v.s
+						loidReceived: j.p,
+						sessionTrackerReceived: j.s
 					},
-					cookies: i.a,
+					cookies: o.a,
 					receivedActions: {
-						headersReceived: g.a,
-						loidReceived: v.e,
-						sessionTrackerReceived: v.f,
-						userAuthenticated: x.a,
-						userLoggedOut: x.b,
-						userReauthenticated: x.c
+						headersReceived: f.a,
+						loidReceived: j.e,
+						sessionTrackerReceived: j.f,
+						userAuthenticated: v.a,
+						userLoggedOut: v.b,
+						userReauthenticated: v.c
 					},
-					statsAppName: d.o.Chat
+					statsAppName: u.o.Chat
 				}),
-				je = Object(m.a)(ve.apiContext),
-				Oe = Object(m.a)(ve.apiContext, pe.a.gqlRealtimeUrl);
+				we = Object(g.a)(Ce.apiContext),
+				ye = Object(g.a)(Ce.apiContext, je.a.gqlRealtimeUrl);
 
-			function Ce(e, t) {
-				let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "/chat/minimize";
-				const s = document.getElementById("2x-container"),
-					r = document.createElement("div");
-				return s.appendChild(r), Object(u.a)({
-					reducerMap: ge.a,
-					routes: fe.a,
-					apiContext: ve.apiContext,
-					gqlContext: je.gqlContext,
-					appFactory: (e, t) => a.a.createElement(h.a.Provider, {
+			function Ee(e, t) {
+				let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "/chat/minimize",
+					a = arguments.length > 3 ? arguments[3] : void 0;
+				const i = document.getElementById("2x-container"),
+					o = document.createElement("div");
+				return i.appendChild(o), Object(l.a)({
+					reducerMap: xe.a,
+					routes: ve.a,
+					apiContext: Ce.apiContext,
+					gqlContext: we.gqlContext,
+					appFactory: (e, t) => c.a.createElement(b.a.Provider, {
 						value: {
-							apiContext: ve.apiContext,
-							gqlContext: je.gqlContext
+							apiContext: Ce.apiContext,
+							gqlContext: we.gqlContext
 						}
+					}, c.a.createElement(s.a.Provider, {
+						value: a || {}
 					}, function(e, t) {
-						const n = Object(j.b)(U)(L);
-						return a.a.createElement("div", null, Object(O.d)(a.a.createElement(n, null, Object(y.a)(e, t)), document.body))
-					}(e, t)),
-					appName: d.o.Chat,
-					history: Object(c.d)({
+						const n = Object(O.b)(L)(q);
+						return c.a.createElement("div", null, Object(C.d)(c.a.createElement(n, null, Object(E.a)(e, t)), document.body))
+					}(e, t))),
+					appName: u.o.Chat,
+					history: Object(r.d)({
 						initialEntries: [n],
 						initialIndex: 0
 					}),
-					customMiddleware: [o.a.withExtraArgument({
-						routes: fe.a,
-						apiContext: ve.apiContext,
-						gqlContext: je.gqlContext,
-						gqlRealtimeContext: Oe.gqlContext
-					}), ve.middleware, X.a, Y.a, K.a, G.a, V.a, Object(Z.a)(t), H.a, Q.a, z.a, q.a, F.a, ee.a, W.a, J.a, te.a, $.a],
+					customMiddleware: [d.a.withExtraArgument({
+						routes: ve.a,
+						apiContext: Ce.apiContext,
+						gqlContext: we.gqlContext,
+						gqlRealtimeContext: ye.gqlContext
+					}), Ce.middleware, Z.a, Y.a, Q.a, $.a, K.a, Object(ee.a)(t), F.a, J.a, H.a, z.a, G.a, te.a, W.a, X.a, ne.a, V.a],
 					modifyInitialData: t => {
 						let {
 							initialData: n,
 							browserHistory: s
 						} = t;
-						return n = ue(e, n), n = le(n), n = he(n), n = be(n, s, fe.a), n = me(e, n)
+						return n = he(e, n), n = be(n), n = me(n), n = ge(n, s, ve.a), n = fe(e, n), n = pe(e, n)
 					},
 					preRender: e => {
 						let {
@@ -298,20 +320,20 @@
 							routes: n,
 							store: s
 						} = e;
-						return s.dispatch(Object(v.k)()), t.listen((e, t) => {
-							const a = Object(l.a)(Object(c.e)(e), n);
-							s.dispatch(Object(p.d)(e, t, a)), s.dispatch(Object(v.k)())
+						return s.dispatch(Object(j.k)()), t.listen((e, t) => {
+							const a = Object(h.a)(Object(r.e)(e), n);
+							s.dispatch(Object(x.d)(e, t, a)), s.dispatch(Object(j.k)())
 						}), "undefined" != typeof window && window.addEventListener("load", async () => {
-							s.dispatch(Object(f.a)(!1, !1))
+							s.dispatch(Object(p.a)(!1, !1))
 						}), {}
 					},
 					postRender: e => {
 						let {
 							store: t
 						} = e;
-						t.dispatch(xe.fetchActiveUsersInLiveChats)
+						t.dispatch(Oe.fetchActiveUsersInLiveChats)
 					},
-					target: r,
+					target: o,
 					timingsSampleRate: 1
 				})
 			}
@@ -674,4 +696,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.00b7670298703adcfdbf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.be1747b3a7d7ea0560d9.js.map
