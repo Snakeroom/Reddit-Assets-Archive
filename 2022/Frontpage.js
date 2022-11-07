@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.53d57aa49d084765c329.js
-// Retrieved at 11/7/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.b4db69b26dec6ffadd7b.js
+// Retrieved at 11/7/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -755,7 +755,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.wg)(p),
+						includeInterestTopics: !!p && !Object(b.xg)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: f && !(null === (a = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === a ? void 0 : a.total),
@@ -8349,7 +8349,7 @@
 						experimentEligibilitySelector: r.R,
 						experimentName: a.ud
 					});
-					return !(!t || Object(a.wg)(t))
+					return !(!t || Object(a.xg)(t))
 				},
 				i = e => {
 					return Object(s.c)(e, {
@@ -8558,4 +8558,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.53d57aa49d084765c329.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.b4db69b26dec6ffadd7b.js.map

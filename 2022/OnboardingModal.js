@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.ad2124f0241b965f11b3.js
-// Retrieved at 11/7/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.bc7f5e76f9a2776aac72.js
+// Retrieved at 11/7/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -473,7 +473,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.wg)(p),
+						includeInterestTopics: !!p && !Object(b.xg)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: h && !(null === (s = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === s ? void 0 : s.total),
@@ -3053,9 +3053,9 @@
 					Te = Object(i.e)(Z.T),
 					Ie = Object(i.e)(ke.g),
 					we = Object(i.e)(kn.a),
-					Re = we === Ce.cg.CloseOnboarding,
-					Le = we === Ce.cg.SkipTopicSelection,
-					Fe = we === Ce.cg.SmartSignal,
+					Re = we === Ce.dg.CloseOnboarding,
+					Le = we === Ce.dg.SkipTopicSelection,
+					Fe = we === Ce.dg.SmartSignal,
 					Ae = Object(a.useCallback)(() => {
 						s(Object(b.g)(Qt.a.ONBOARDING_MODAL_D2X)), Ne && s(Object(g.h)()), h && (r(Object(F.t)()), Object(xn.a)()), Ie && Te && s(Object(m.startChangeUsernameFlow)())
 					}, [s, Te, Ie, h, Ne, r]),
@@ -5234,4 +5234,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.ad2124f0241b965f11b3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.bc7f5e76f9a2776aac72.js.map
