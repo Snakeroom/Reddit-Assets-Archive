@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.348b6dab5d5d7d52e68a.js
-// Retrieved at 11/7/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.2e8b6fde5c8162d42c20.js
+// Retrieved at 11/7/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -680,15 +680,15 @@
 			function Me(e) {
 				return Object(Ge.c)(e, {
 					experimentEligibilitySelector: Ge.a,
-					experimentName: De.w
+					experimentName: De.u
 				})
 			}
 			var Ue = n("./src/reddit/selectors/experiments/utils.ts");
 			const Qe = Object(u.a)(e => Object(Ge.c)(e, {
-					experimentName: De.ue,
+					experimentName: De.se,
 					experimentEligibilitySelector: Ge.a
 				}), Ue.a),
-				qe = Object(u.a)(Qe, e => e === De.xe.Enabled);
+				qe = Object(u.a)(Qe, e => e === De.ve.Enabled);
 			var He = n("./src/reddit/selectors/experiments/loggedOutOneFeed.ts"),
 				Je = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Ze = n("./src/reddit/selectors/user.ts");
@@ -709,7 +709,7 @@
 					frontpageLinks: Ke.b,
 					isOver18: Ze.lb,
 					isInBFFSLeaderboardExperiment: function(e) {
-						return Me(e) === De.v.RotateEven
+						return Me(e) === De.t.RotateEven
 					},
 					bffsLeaderboardVariant: Me,
 					inRpanTopVideoEntrypointExperiment: Je.e,
@@ -720,8 +720,8 @@
 						return (!t || !n) && function(e) {
 							return Object(Ge.c)(e, {
 								experimentEligibilitySelector: Ze.R,
-								experimentName: De.Qc
-							}) === De.Qd
+								experimentName: De.Oc
+							}) === De.Od
 						}(e)
 					},
 					isNavbarLikeMwebEnabled: l.a,
@@ -745,7 +745,7 @@
 						}
 					}
 					let o, d, c, l, u;
-					n && t === De.v.RotateEven ? (o = Re.u, d = Re.n, c = Re.s, l = Re.a) : (o = Re.t, d = Re.j, c = Re.r, l = []), u = [o, ...l, ...c], s && u.unshift(d);
+					n && t === De.t.RotateEven ? (o = Re.u, d = Re.n, c = Re.s, l = Re.a) : (o = Re.t, d = Re.j, c = Re.r, l = []), u = [o, ...l, ...c], s && u.unshift(d);
 					const m = u[r()(u.length - 1)];
 					u = [], m.id !== o.id && u.push(o), s && m.id !== d.id && u.push(d);
 					let b = [...l, ...c];
@@ -2230,4 +2230,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.348b6dab5d5d7d52e68a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.2e8b6fde5c8162d42c20.js.map

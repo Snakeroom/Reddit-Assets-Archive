@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.4174fc123bfe65388001.js
-// Retrieved at 11/7/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.8ba7a51a1589fe450f92.js
+// Retrieved at 11/7/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, n) {
@@ -1875,29 +1875,29 @@
 				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/experiments/index.ts");
 			const c = Object(r.a)(e => Object(s.c)(e, {
+					experimentName: o.Rb,
+					experimentEligibilitySelector: i.e
+				}), e => e === o.Y.Enabled),
+				a = Object(r.a)(e => Object(s.c)(e, {
+					experimentName: o.Sb,
+					experimentEligibilitySelector: i.e
+				}), e => e === o.Z.Enabled),
+				d = Object(r.a)(e => Object(s.c)(e, {
 					experimentName: o.Tb,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.ab.Enabled),
-				a = Object(r.a)(e => Object(s.c)(e, {
+				l = Object(r.a)(e => Object(s.c)(e, {
 					experimentName: o.Ub,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.bb.Enabled),
-				d = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Vb,
-					experimentEligibilitySelector: i.e
-				}), e => e === o.cb.Enabled),
-				l = Object(r.a)(e => Object(s.c)(e, {
+				u = Object(r.a)(e => Object(s.c)(e, {
 					experimentName: o.Wb,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.db.Enabled),
-				u = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Yb,
-					experimentEligibilitySelector: i.e
-				}), e => e === o.fb.Enabled),
 				m = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Xb,
+					experimentName: o.Vb,
 					experimentEligibilitySelector: i.e
-				}), e => e === o.eb.Enabled)
+				}), e => e === o.cb.Enabled)
 		},
 		"./src/reddit/selectors/experiments/recapLeadUpGame.ts": function(e, t, n) {
 			"use strict";
@@ -1914,8 +1914,8 @@
 			const a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.tf
-					}) === r.Qd
+						experimentName: r.rf
+					}) === r.Od
 				},
 				d = Object(c.a)(i.R, (e, t) => {
 					let {
@@ -1926,8 +1926,8 @@
 				l = (e, t) => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: e => d(e, t),
-						experimentName: r.uf
-					}) === r.Qd
+						experimentName: r.sf
+					}) === r.Od
 				}
 		},
 		"./src/reddit/selectors/recapGame.ts": function(e, t, n) {
@@ -1955,4 +1955,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.4174fc123bfe65388001.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.8ba7a51a1589fe450f92.js.map

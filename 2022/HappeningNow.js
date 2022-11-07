@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HappeningNow.30a291c17ddf50cd0476.js
-// Retrieved at 11/7/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HappeningNow.95823d5415c7e8c1768b.js
+// Retrieved at 11/7/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HappeningNow"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -825,13 +825,13 @@
 					onClick: () => {
 						e.isSponsored && e.post.postId && (e.fireAdPixelsOfType && e.fireAdPixelsOfType(e.post, b.a.Click), Object(v.a)(e.post, e.pageType))
 					}
-				}, P(e)) : e.isListing && e.postPermalink ? o.a.createElement(i.a, {
+				}, F(e)) : e.isListing && e.postPermalink ? o.a.createElement(i.a, {
 					target: e.shouldOpenPostInNewTab ? "_blank" : void 0,
 					to: Object(m.a)(e.postPermalink, void 0, t),
 					onClick: e.onPostMediaClick
-				}, P(e)) : P(e)
+				}, F(e)) : F(e)
 			});
-			const F = (e, t) => o.a.createElement(M, {
+			const P = (e, t) => o.a.createElement(M, {
 					altText: t.altText,
 					className: Object(l.a)(t.imageClassName, {
 						[y.a]: !e
@@ -849,7 +849,7 @@
 					width: t.width,
 					renderSmallMedia: t.renderSmallMedia
 				}),
-				P = e => {
+				F = e => {
 					let {
 						onClick: t,
 						...n
@@ -860,7 +860,7 @@
 						className: `${s?`${y.a} `:""}${n.className||""}`
 					}), n.isListing ? o.a.createElement("div", {
 						className: n.contentImageClassName
-					}, F(s, n)) : o.a.createElement("a", {
+					}, P(s, n)) : o.a.createElement("a", {
 						href: n.originalSource,
 						onClick: t,
 						style: a ? {
@@ -869,7 +869,7 @@
 						target: "_blank",
 						rel: u.c,
 						className: S.a.imageLink
-					}, F(s, n), n.shouldBlur && !n.isVideoThumbnail && !n.isNsfwBlockingModalEligible && o.a.createElement(p.a, {
+					}, P(s, n), n.shouldBlur && !n.isVideoThumbnail && !n.isNsfwBlockingModalEligible && o.a.createElement(p.a, {
 						isNSFW: !!n.isNSFW,
 						isSpoiler: !!n.isSpoiler
 					})), n.isListing && !n.showFull && n.height > E.j && Object(E.L)(n.height, n.width) && o.a.createElement("div", {
@@ -1091,12 +1091,12 @@
 					I(e ? Object(u.r)(h) : Object(u.E)(h))
 				}
 
-				function F() {
+				function P() {
 					return I(Object(u.z)({
 						postId: h
 					}))
 				}
-				const P = s()(e => {
+				const F = s()(e => {
 					if (n) return;
 					const {
 						target: t
@@ -1105,7 +1105,7 @@
 				}, 200);
 
 				function B(e) {
-					e.persist(), P(e)
+					e.persist(), F(e)
 				}
 
 				function H(e) {
@@ -1152,7 +1152,7 @@
 						onLoadStart: A,
 						onLoadedData: H,
 						onLoadedMetadata: D,
-						onPause: F,
+						onPause: P,
 						onPlaying: U,
 						onTimeUpdate: B,
 						shouldLoad: b,
@@ -1843,8 +1843,8 @@
 				M = S.a.wrapped(x.a, "A", j.a),
 				I = S.a.wrapped(d.a, "ImageBox", j.a),
 				L = S.a.wrapped(e => o.a.createElement("p", e), "Caption", j.a),
-				F = S.a.div("Placeholder", j.a),
-				P = S.a.wrapped(e => {
+				P = S.a.div("Placeholder", j.a),
+				F = S.a.wrapped(e => {
 					let {
 						className: t,
 						e: n,
@@ -1862,7 +1862,7 @@
 						c && setTimeout(() => {
 							m(!0)
 						}, 1500)
-					}), o.a.createElement(F, R({
+					}), o.a.createElement(P, R({
 						className: Object(a.a)(t, {
 							[j.a.renderSmallMedia]: i,
 							[j.a.reload]: !!c
@@ -1930,7 +1930,7 @@
 					const b = f.F(s, t.id);
 					if (i) return [H(t, n, b)];
 					const x = [];
-					return !b || b.e === f.s && null === b.s.x && null === b.s.y ? x.push(((e, t, n, r) => o.a.createElement(P, {
+					return !b || b.e === f.s && null === b.s.x && null === b.s.y ? x.push(((e, t, n, r) => o.a.createElement(F, {
 						e,
 						key: t,
 						renderSmallMedia: n,
@@ -2060,7 +2060,7 @@
 			})), n.d(t, "b", (function() {
 				return L
 			})), n.d(t, "f", (function() {
-				return F
+				return P
 			})), n.d(t, "h", (function() {
 				return B
 			})), n.d(t, "g", (function() {
@@ -2187,7 +2187,7 @@
 					if (!o) return;
 					const a = o.length,
 						l = [];
-					for (let i = 0; i < a; i++) l.push(P(o[i], t, n, i, s));
+					for (let i = 0; i < a; i++) l.push(F(o[i], t, n, i, s));
 					return i.a.createElement(c.c, {
 						key: r
 					}, l)
@@ -2198,7 +2198,7 @@
 						key: t
 					}, i.a.createElement(c.h, null, n.reduce((e, t, n, r) => e += t.t + (n < r.length ? "\n" : ""), "")))
 				},
-				F = (e, t, n, r, s) => {
+				P = (e, t, n, r, s) => {
 					const o = e.c,
 						a = [],
 						l = o.length;
@@ -2206,14 +2206,14 @@
 						const e = o[u].c;
 						e && e.length && a.push(i.a.createElement(c.g, {
 							key: u
-						}, e.map((e, r) => P(e, t, n, r, s))))
+						}, e.map((e, r) => F(e, t, n, r, s))))
 					}
 					const d = e.o ? c.i : c.v;
 					return i.a.createElement(d, {
 						key: r
 					}, a)
 				},
-				P = (e, t, n, r, s) => {
+				F = (e, t, n, r, s) => {
 					switch (e.e) {
 						case m.b:
 							return I(e, t, n, r, s);
@@ -2224,7 +2224,7 @@
 						case m.l:
 							return M(r);
 						case m.p:
-							return F(e, t, n, r, s);
+							return P(e, t, n, r, s);
 						case m.v:
 							return H(e, t, n, r, s);
 						case m.A:
@@ -2519,12 +2519,12 @@
 						rtJsonElementProps: a
 					});
 					switch (o) {
-						case b.Xf.SmIcon:
+						case b.Vf.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: r,
 								rtJsonElementProps: a
 							});
-						case b.Xf.SmIconHc:
+						case b.Vf.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: r,
 								isHoverable: !0,
@@ -3100,8 +3100,8 @@
 					}, n.ctaText))
 				},
 				L = n("./src/reddit/actions/happeningNow/index.ts"),
-				F = n("./src/reddit/components/HappeningNow/Filter/index.m.less"),
-				P = n.n(F);
+				P = n("./src/reddit/components/HappeningNow/Filter/index.m.less"),
+				F = n.n(P);
 			var B = e => {
 				let {
 					filter: t
@@ -3115,8 +3115,8 @@
 					}, [n, r, t]);
 				return o.a.createElement("button", {
 					"aria-pressed": l,
-					className: Object(i.a)(P.a.filterButton, {
-						[P.a.selected]: l
+					className: Object(i.a)(F.a.filterButton, {
+						[F.a.selected]: l
 					}),
 					onClick: d
 				}, t.label)
@@ -3434,8 +3434,8 @@
 				Me = n("./src/reddit/components/RichTextJson/index.tsx"),
 				Ie = n("./src/reddit/helpers/getRichTextContent/index.ts"),
 				Le = n("./src/reddit/helpers/overlay/index.ts"),
-				Fe = n("./src/reddit/hooks/useIntersectionObserver.ts"),
-				Pe = n("./src/reddit/models/Media/index.ts"),
+				Pe = n("./src/reddit/hooks/useIntersectionObserver.ts"),
+				Fe = n("./src/reddit/models/Media/index.ts"),
 				Be = n("./src/reddit/components/HappeningNow/Post/index.m.less"),
 				He = n.n(Be);
 			var Ae = e => {
@@ -3451,7 +3451,7 @@
 						})),
 						u = Object(s.useMemo)(() => {
 							var e;
-							return (null === (e = null == d ? void 0 : d.media) || void 0 === e ? void 0 : e.type) === Pe.o.RTJSON
+							return (null === (e = null == d ? void 0 : d.media) || void 0 === e ? void 0 : e.type) === Fe.o.RTJSON
 						}, [d]),
 						m = Object(s.useCallback)(e => {
 							e && h(e.scrollHeight)
@@ -3467,7 +3467,7 @@
 						E = Object(s.useMemo)(() => ({
 							threshold: 1
 						}), []);
-					if (Object(Fe.a)(g, C, E), !l) return null;
+					if (Object(Pe.a)(g, C, E), !l) return null;
 					return o.a.createElement("article", {
 						className: He.a.post,
 						ref: g
@@ -3885,12 +3885,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: r.Rf
+						experimentName: r.Pf
 					}) || ""
 				},
 				l = e => {
 					const t = c(e);
-					return t === r.Xf.SmIcon || t === r.Xf.SmIconHc
+					return t === r.Vf.SmIcon || t === r.Vf.SmIconHc
 				},
 				d = (e, t) => {
 					let {
@@ -3919,4 +3919,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.30a291c17ddf50cd0476.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.95823d5415c7e8c1768b.js.map

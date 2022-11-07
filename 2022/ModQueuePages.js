@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.0406ed13ad0234964648.js
-// Retrieved at 11/7/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.252297152e3389a5ff4a.js
+// Retrieved at 11/7/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1261,8 +1261,8 @@
 				J = Object(o.a)(W.h),
 				Q = Object(o.a)(W.g),
 				K = Object(o.a)(W.f),
-				X = Object(o.a)(W.e),
-				z = Object(o.a)(W.p),
+				z = Object(o.a)(W.e),
+				X = Object(o.a)(W.p),
 				Y = Object(o.a)(W.o),
 				Z = Object(o.a)(W.n),
 				$ = Object(o.a)(W.s),
@@ -1280,13 +1280,13 @@
 					let b, h, f;
 					switch (t) {
 						case r.wb.Edited:
-							b = Q, h = X, f = K;
+							b = Q, h = z, f = K;
 							break;
 						case r.wb.Modqueue:
 							b = q, h = J, f = G;
 							break;
 						case r.wb.Reports:
-							b = z, h = Z, f = Y;
+							b = X, h = Z, f = Y;
 							break;
 						case r.wb.Spam:
 							b = $, h = te, f = ee;
@@ -1815,8 +1815,8 @@
 				J = n("./src/reddit/models/ModQueue/index.ts"),
 				Q = n("./src/reddit/models/PostDraft/index.ts"),
 				K = n("./src/reddit/models/RemovalReason/index.ts"),
-				X = n("./src/reddit/models/Toast/index.ts"),
-				z = n("./src/reddit/selectors/comments.ts"),
+				z = n("./src/reddit/models/Toast/index.ts"),
+				X = n("./src/reddit/selectors/comments.ts"),
 				Y = n("./src/reddit/selectors/platform.ts");
 			Object(r.a)({
 				features: {
@@ -1862,7 +1862,7 @@
 							subredditId: e,
 							reason: o
 						})), n(Object(P.f)({
-							kind: X.b.SuccessMod,
+							kind: z.b.SuccessMod,
 							text: s.fbt._("Removal reason added!", null, {
 								hk: "2WSh8N"
 							})
@@ -1886,7 +1886,7 @@
 						subredditId: e,
 						reason: t
 					})), n(Object(P.f)({
-						kind: X.b.SuccessMod,
+						kind: z.b.SuccessMod,
 						text: s.fbt._("Removal reason saved", null, {
 							hk: "28ScuL"
 						})
@@ -1905,7 +1905,7 @@
 						subredditId: e,
 						reasonId: t
 					})), n(Object(P.f)({
-						kind: X.b.SuccessMod,
+						kind: z.b.SuccessMod,
 						text: s.fbt._("Removal reason deleted", null, {
 							hk: "4xzgsa"
 						})
@@ -1972,7 +1972,7 @@
 											const n = Object(w.a)(Q.c.replyToPost, u);
 											i(Object(N.r)({
 												...t,
-												headCommentId: Object(z.w)(l, {
+												headCommentId: Object(X.w)(l, {
 													commentsPageKey: r
 												}),
 												commentsPageKey: r,
@@ -1990,7 +1990,7 @@
 											}))
 										} else if (p === K.e.Comment) {
 											const e = Object(w.a)(Q.c.replyToComment, b.id),
-												n = Object(z.j)(l, {
+												n = Object(X.j)(l, {
 													commentId: u,
 													commentsPageKey: r
 												});
@@ -2025,7 +2025,7 @@
 					if (!m) return;
 					i(fe());
 					const u = Object(P.f)({
-							kind: X.b.SuccessMod,
+							kind: z.b.SuccessMod,
 							text: s.fbt._({
 								"*": "Added removal reason for {number} posts/comments",
 								_1: "Added removal reason for 1 post/comment"
@@ -2912,12 +2912,12 @@
 						commentListNodeId: t
 					})), 5e3)
 				};
-			var X = n("./src/reddit/components/Comments/Comment/TopMeta/crowdControl.m.less"),
-				z = n.n(X);
+			var z = n("./src/reddit/components/Comments/Comment/TopMeta/crowdControl.m.less"),
+				X = n.n(z);
 			const {
 				fbt: Y
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), Z = () => o.a.createElement(_.a, {
-				className: z.a.crowdControlText
+				className: X.a.crowdControlText
 			}, Y._("Crowd Control", null, {
 				hk: "4WgEW"
 			}));
@@ -6483,12 +6483,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case h.Xf.SmIcon:
+						case h.Vf.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case h.Xf.SmIconHc:
+						case h.Vf.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -7976,7 +7976,7 @@
 				hk: "2GBjtX"
 			})))), d.a.createElement(F.a, null, d.a.createElement(J, null)));
 			const K = Object(g.v)(),
-				X = Object(l.c)({
+				z = Object(l.c)({
 					queryParams: (e, t) => {
 						let {
 							location: n
@@ -7984,7 +7984,7 @@
 						return r()([...Object(m.a)(n.search)])
 					}
 				}),
-				z = Object(l.c)({
+				X = Object(l.c)({
 					queryParams: (e, t) => {
 						let {
 							location: n
@@ -8007,7 +8007,7 @@
 						}))
 					})
 				}),
-				Y = Object(l.a)(X, g.U, k.o, (e, t) => {
+				Y = Object(l.a)(z, g.U, k.o, (e, t) => {
 					let {
 						match: n
 					} = t;
@@ -8051,7 +8051,7 @@
 						isRealtimeMQUpdatesExperimentEnabled: r
 					}
 				}),
-				Z = Object(c.b)(z, e => ({
+				Z = Object(c.b)(X, e => ({
 					handleRealtimeUpdates: i()(t => e(Object(b.a)(t.subscribe.data.subredditID)), 1e3)
 				}));
 			class $ extends d.a.Component {
@@ -8164,8 +8164,8 @@
 				i = n("./src/reddit/selectors/experiments/modqueueActionBarUXImprovements.ts");
 			const a = e => Object(i.a)(e) && Object(r.c)(e, {
 				experimentEligibilitySelector: o.R,
-				experimentName: s.Cc
-			}) === s.Qd
+				experimentName: s.Ac
+			}) === s.Od
 		},
 		"./src/reddit/selectors/subredditMention.ts": function(e, t, n) {
 			"use strict";
@@ -8190,12 +8190,12 @@
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Rf
+						experimentName: s.Pf
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.Xf.SmIcon || t === s.Xf.SmIconHc
+					return t === s.Vf.SmIcon || t === s.Vf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -8233,4 +8233,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.0406ed13ad0234964648.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.252297152e3389a5ff4a.js.map

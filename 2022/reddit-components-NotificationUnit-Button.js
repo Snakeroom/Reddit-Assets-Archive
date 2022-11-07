@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.8f427a17276ba13a4851.js
-// Retrieved at 11/7/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.651d646955e87d70b600.js
+// Retrieved at 11/7/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./node_modules/lodash/map.js": function(e, t, n) {
@@ -238,8 +238,8 @@
 				ie = n("./node_modules/reselect/es/index.js");
 			const ce = Object(ie.a)(e => Object(se.c)(e, {
 				experimentEligibilitySelector: se.a,
-				experimentName: re.Fb
-			}), e => e === re.Qd);
+				experimentName: re.Db
+			}), e => e === re.Od);
 			var ae = n("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				de = n("./src/reddit/selectors/platform.ts"),
 				le = n("./src/reddit/selectors/posts.ts"),
@@ -2567,11 +2567,11 @@
 				s = n("./node_modules/reselect/es/index.js");
 			const i = Object(s.a)(e => Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: o.xb
+				experimentName: o.vb
 			}), e => ({
-				bucketed: e === o.Uc.ExpandedSearch || e === o.Uc.CollapsedSearch,
-				collapsed: e === o.Uc.CollapsedSearch,
-				expanded: e === o.Uc.ExpandedSearch
+				bucketed: e === o.Sc.ExpandedSearch || e === o.Sc.CollapsedSearch,
+				collapsed: e === o.Sc.CollapsedSearch,
+				expanded: e === o.Sc.ExpandedSearch
 			}))
 		},
 		"./src/reddit/selectors/experiments/contributeBeforeSignUp.ts": function(e, t, n) {
@@ -2596,11 +2596,11 @@
 				l = Object(o.a)(d, e => !!e),
 				m = e => {
 					const t = d(e);
-					return !!t && a(e, t) === r.Y.SkipOnboarding
+					return !!t && a(e, t) === r.W.SkipOnboarding
 				},
 				u = e => {
 					const t = d(e);
-					return !!t && a(e, t) === r.Y.RegOnboarding
+					return !!t && a(e, t) === r.W.RegOnboarding
 				}
 		},
 		"./src/redditGQL/operations/CommentToxicity.json": function(e) {
@@ -2617,4 +2617,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.8f427a17276ba13a4851.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.651d646955e87d70b600.js.map

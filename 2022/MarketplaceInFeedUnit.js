@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.b53a40b5763a14fef897.js
-// Retrieved at 11/7/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.0f0c953ec2fb56b9d240.js
+// Retrieved at 11/7/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MarketplaceInFeedUnit"], {
 		"./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx": function(e, t, n) {
@@ -106,7 +106,7 @@
 				E = n.n(x);
 			const {
 				fbt: h
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), C = e => {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), v = e => {
 				let {
 					onDismiss: t,
 					onGoBack: n
@@ -134,8 +134,8 @@
 					withOverlay: !0
 				})
 			};
-			var v = n("./src/reddit/components/Econ/Marketplace/InFeedUnit/index.m.less"),
-				I = n.n(v);
+			var C = n("./src/reddit/components/Econ/Marketplace/InFeedUnit/index.m.less"),
+				I = n.n(C);
 			const A = e => {
 				let {
 					layout: t
@@ -144,7 +144,7 @@
 					j = Object(f.a)(),
 					x = Object(i.e)(k.a),
 					[E, h] = Object(a.useState)(!1),
-					[v, A] = Object(a.useState)(!1);
+					[C, A] = Object(a.useState)(!1);
 				Object(b.a)(l.a);
 				const [g, M] = Object(_.a)("marketplaceClaimInFeedUnitDismissed", !1), [N, y] = Object(_.a)("marketplaceClaimInFeedUnitLoadCount", 0), L = Object(a.useRef)(N), U = L.current % 2 == 0;
 				if (Object(a.useEffect)(() => {
@@ -153,7 +153,7 @@
 				const T = t !== p.g.Large;
 				return o.a.createElement(o.a.Fragment, null, o.a.createElement(s.a, {
 					onChange: e => {
-						v || e.intersectionRatio < .75 || (j(Object(O.d)()), A(!0))
+						C || e.intersectionRatio < .75 || (j(Object(O.d)()), A(!0))
 					},
 					threshold: .75
 				}, o.a.createElement("div", {
@@ -175,7 +175,7 @@
 					description: x.description,
 					ctaText: x.buttonCtaText,
 					isNotCardLayout: T
-				})))), E && o.a.createElement(C, {
+				})))), E && o.a.createElement(v, {
 					onGoBack: () => h(!1),
 					onDismiss: () => {
 						j(Object(O.c)()), M(!0)
@@ -284,8 +284,8 @@
 			}));
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const c = Object(s.a)(r.xd)
+			const c = Object(s.a)(r.vd)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.b53a40b5763a14fef897.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.0f0c953ec2fb56b9d240.js.map

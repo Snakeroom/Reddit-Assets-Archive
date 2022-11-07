@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.2e5bd46acbd110acb4a2.js
-// Retrieved at 11/7/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.edd9fb85559d8a862c7f.js
+// Retrieved at 11/7/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -51,8 +51,8 @@
 			const x = e => {
 				return Object(g.c)(e, {
 					experimentEligibilitySelector: g.a,
-					experimentName: h.vf
-				}) === h.Qd
+					experimentName: h.tf
+				}) === h.Od
 			};
 			var f = s("./src/reddit/selectors/recapGame.ts"),
 				E = s("./src/reddit/selectors/user.ts"),
@@ -517,7 +517,7 @@
 				const t = Object(a.f)().getState(),
 					s = Object(h.a)(t, Object(o.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.dd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.dd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.dd.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.bd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.bd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.bd.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(k, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -1608,13 +1608,13 @@
 					userSubreddit: Object(I.g)(e.modPermissions, e.isSubscribed),
 					actionInfo: B
 				}),
-				D = Q("select_location"),
-				W = Q("confirm_location"),
-				A = Q("undo_location"),
-				H = J("verify_location"),
-				z = J("reject_location");
+				D = J("select_location"),
+				W = J("confirm_location"),
+				A = J("undo_location"),
+				H = Q("verify_location"),
+				z = Q("reject_location");
 
-			function Q(e) {
+			function J(e) {
 				return (t, s) => () => ({
 					source: G,
 					noun: e,
@@ -1628,7 +1628,7 @@
 				})
 			}
 
-			function J(e) {
+			function Q(e) {
 				return (t, s) => () => ({
 					source: G,
 					noun: e,
@@ -1841,11 +1841,11 @@
 				c = s("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(o.h)(e) && Object(a.f)(e),
-					experimentName: n.rc
+					experimentName: n.pc
 				}), i.a),
 				l = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(o.h)(e) && Object(a.f)(e),
-					experimentName: n.qc
+					experimentName: n.oc
 				}), i.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -1864,4 +1864,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.2e5bd46acbd110acb4a2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.edd9fb85559d8a862c7f.js.map
