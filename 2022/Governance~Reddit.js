@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.ec494687607fb6ae79ff.js
-// Retrieved at 11/7/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.ef332fcf3919ad48fc82.js
+// Retrieved at 11/7/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -7430,8 +7430,14 @@
 					switch (t.type) {
 						case y.i:
 							return v(e, t.payload.postId, t.payload.vendorMetadata, "adImpression");
-						case y.b:
-							return v(e, t.payload.postId, t.payload.vendorMetadata, "adClick");
+						case y.b: {
+							const {
+								postId: n,
+								vendorMetadata: r,
+								currGallerySlideIdx: s
+							} = t.payload;
+							return v(e, n, r, Number.isInteger(s) ? `adClickSlide${s}` : "adClick")
+						}
 						case y.t:
 							return v(e, t.payload.postId, t.payload.vendorMetadata, "adViewableImpression");
 						case y.q:
@@ -25960,4 +25966,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.ec494687607fb6ae79ff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.ef332fcf3919ad48fc82.js.map
