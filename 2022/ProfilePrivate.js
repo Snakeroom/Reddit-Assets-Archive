@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.3977cad597300256bfa7.js
-// Retrieved at 11/7/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.ea548de29e7b611dd27b.js
+// Retrieved at 11/7/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -734,8 +734,8 @@
 			const g = e => {
 				return Object(f.c)(e, {
 					experimentEligibilitySelector: f.a,
-					experimentName: h.tf
-				}) === h.Od
+					experimentName: h.sf
+				}) === h.Nd
 			};
 			var x = s("./src/reddit/selectors/recapGame.ts"),
 				v = s("./src/reddit/selectors/user.ts"),
@@ -919,7 +919,7 @@
 						postId: n,
 						author: i
 					} = t;
-					return Object(h.e)(g.q) && s.roomStatus === f.b.NotStarted ? o.a.createElement(S.a, {
+					return Object(h.e)(g.p) && s.roomStatus === f.b.NotStarted ? o.a.createElement(S.a, {
 						postId: n,
 						author: i,
 						roomId: s.roomId,
@@ -6638,10 +6638,10 @@
 				o = s("./src/reddit/constants/experiments.ts"),
 				i = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const r = Object(n.a)(e => Object(i.c)(e, {
-					experimentName: o.lg,
+					experimentName: o.kg,
 					experimentEligibilitySelector: i.a
 				}), e => e),
-				d = Object(n.a)(r, e => e === o.cg)
+				d = Object(n.a)(r, e => e === o.bg)
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
 			"use strict";
@@ -6717,4 +6717,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.3977cad597300256bfa7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.ea548de29e7b611dd27b.js.map

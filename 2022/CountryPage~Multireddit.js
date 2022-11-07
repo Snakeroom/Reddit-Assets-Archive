@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.490ca2841a83c1870bf6.js
-// Retrieved at 11/7/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.884e262c37ed4fb5202e.js
+// Retrieved at 11/7/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2916,15 +2916,15 @@
 			const o = e => {
 					const t = Object(i.c)(e, {
 						experimentEligibilitySelector: s.R,
-						experimentName: r.ud
+						experimentName: r.td
 					});
-					return !(!t || Object(r.xg)(t))
+					return !(!t || Object(r.wg)(t))
 				},
 				a = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: s.R,
-						experimentName: r.ud
-					}) === r.Sd.ListingEnabled
+						experimentName: r.td
+					}) === r.Rd.ListingEnabled
 				}
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
@@ -2932,4 +2932,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.490ca2841a83c1870bf6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.884e262c37ed4fb5202e.js.map

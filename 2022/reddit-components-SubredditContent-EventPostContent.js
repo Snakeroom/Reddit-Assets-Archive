@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.6ba7496d736fdcff01e3.js
-// Retrieved at 11/2/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.09f6aeb9ca937d5c120f.js
+// Retrieved at 11/7/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-EventPostContent"], {
 		"./src/reddit/components/ClassicPost/index.tsx": function(e, t, s) {
@@ -79,7 +79,7 @@
 						postId: o,
 						author: n
 					} = t;
-					return Object(x.e)(v.q) && s.roomStatus === h.b.NotStarted ? r.a.createElement(P.a, {
+					return Object(x.e)(v.p) && s.roomStatus === h.b.NotStarted ? r.a.createElement(P.a, {
 						postId: o,
 						author: n,
 						roomId: s.roomId,
@@ -118,8 +118,8 @@
 				K = s("./src/reddit/controls/OutboundLink/styled.tsx"),
 				X = s("./src/reddit/models/Media/index.ts"),
 				Y = s("./src/reddit/components/ClassicPost/Thumbnail.tsx"),
-				q = s("./src/reddit/connectors/ClassicPost/index.tsx"),
-				$ = s("./src/reddit/constants/postLayout.ts"),
+				$ = s("./src/reddit/connectors/ClassicPost/index.tsx"),
+				q = s("./src/reddit/constants/postLayout.ts"),
 				z = s("./src/reddit/helpers/hasModFlairPermissions/index.ts"),
 				Z = s("./src/reddit/helpers/hasModFullPermissions/index.ts"),
 				ee = s("./src/reddit/helpers/hasModPostPermissions/index.ts"),
@@ -161,7 +161,7 @@
 					isGalleryTileLayoutDefault: y,
 					isLoggedIn: P,
 					isOverlay: _,
-					imageGalleryCurrentItem: q,
+					imageGalleryCurrentItem: $,
 					moderatorPermissions: ne,
 					modModeEnabled: ce,
 					onClickPost: me,
@@ -209,13 +209,13 @@
 						shouldShowSubscribeButton: !(S && P) || He && P,
 						subredditOrProfile: Se
 					},
-					Ke = Object(n.t)(ve, q),
+					Ke = Object(n.t)(ve, $),
 					{
 						source: Xe
 					} = Ke,
-					[Ye, qe] = Object(o.useState)(!1),
-					$e = Object(o.useCallback)(() => {
-						qe(!Ye), Object(te.Qb)(), Ne(Object(re.d)(fe))
+					[Ye, $e] = Object(o.useState)(!1),
+					qe = Object(o.useCallback)(() => {
+						$e(!Ye), Object(te.Qb)(), Ne(Object(re.d)(fe))
 					}, [Ye, fe, Ne]);
 				let ze = r.a.createElement(Y.a, {
 					className: le.a.classicThumbnail,
@@ -274,7 +274,7 @@
 					"data-click-id": "body"
 				}, !!ve.recommendationContext && r.a.createElement(F.a, {
 					content: ve.recommendationContext.content,
-					layout: $.g.Classic,
+					layout: q.g.Classic,
 					post: ve
 				}), r.a.createElement(J.c, {
 					className: he ? le.a.titleWithPoll : void 0,
@@ -333,7 +333,7 @@
 					hostPostData: E,
 					isOverlay: !!_,
 					modModeEnabled: ce,
-					onClickInsightsButton: $e,
+					onClickInsightsButton: qe,
 					onIgnoreReports: pe,
 					onOpenReportsDropdown: be,
 					post: ve,
@@ -356,7 +356,7 @@
 				})));
 				return r.a.createElement(W.b, null, Ze)
 			});
-			t.default = Object(q.a)(me)
+			t.default = Object($.a)(me)
 		},
 		"./src/reddit/components/CreatorStats/loader.tsx": function(e, t, s) {
 			"use strict";
@@ -1272,4 +1272,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.6ba7496d736fdcff01e3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.09f6aeb9ca937d5c120f.js.map

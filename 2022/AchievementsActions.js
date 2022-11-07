@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AchievementsActions.c1c305a9c85515a22fcc.js
-// Retrieved at 10/27/2022, 1:50:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AchievementsActions.be677298a27e5c0b9dcc.js
+// Retrieved at 11/7/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AchievementsActions"], {
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, r) {
@@ -17,9 +17,9 @@
 			})), r.d(t, "onSubredditUserPowerupsFlairVisibilityUpdate", (function() {
 				return x
 			})), r.d(t, "getSubredditUserPowerupsFlairsAndSupporterInfo", (function() {
-				return g
-			})), r.d(t, "getSubredditCurrentUserPowerupsFlairsAndSupporterInfo", (function() {
 				return P
+			})), r.d(t, "getSubredditCurrentUserPowerupsFlairsAndSupporterInfo", (function() {
+				return g
 			})), r.d(t, "shouldFetchCommentsPowerupsInfo", (function() {
 				return _
 			})), r.d(t, "getSubredditUserCommentsPowerupsInfoFromCommentLinks", (function() {
@@ -74,7 +74,7 @@
 				U = Object(s.a)(O.g),
 				A = Object(s.a)(O.e),
 				x = Object(s.a)(O.h),
-				g = (e, t) => async (r, i, s) => {
+				P = (e, t) => async (r, i, s) => {
 					let {
 						gqlContext: c
 					} = s;
@@ -100,7 +100,7 @@
 					} catch (u) {
 						d.c.captureException(u)
 					}
-				}, P = (e, t) => async (r, i) => {
+				}, g = (e, t) => async (r, i) => {
 					if (!e) return;
 					const s = i(),
 						d = Object(I.l)(s);
@@ -111,8 +111,8 @@
 						subredditId: e,
 						userId: d.id
 					});
-					!t && n || await r(g(e, [d.id]))
-				}, _ = e => async (t, r) => !!e && (Object(m.g)(r()) ? (await t(Object(u.c)(e)), !!Object(j.c)(r(), {
+					!t && n || await r(P(e, [d.id]))
+				}, _ = e => async (t, r) => !!e && (Object(m.f)(r()) ? (await t(Object(u.c)(e)), !!Object(j.c)(r(), {
 					subredditId: e
 				})) : (await t(Object(l.e)(e, {
 					fullData: !0
@@ -138,14 +138,14 @@
 						} = e;
 						return t
 					}));
-					await t(g(o, Array.from(c)))
+					await t(P(o, Array.from(c)))
 				}, E = (e, t) => async (r, i) => {
 					if (!t) return;
 					if (!(await r(_(e)))) return;
 					const s = new Set;
 					Object.values(t).forEach(e => {
 						s.add(e.authorId)
-					}), await r(g(e, Array.from(s)))
+					}), await r(P(e, Array.from(s)))
 				}, L = (e, t) => async (r, i) => {
 					const s = i(),
 						d = Object(I.l)(s);
@@ -245,4 +245,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AchievementsActions.c1c305a9c85515a22fcc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AchievementsActions.be677298a27e5c0b9dcc.js.map

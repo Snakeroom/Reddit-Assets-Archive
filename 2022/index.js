@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.ccc3bed174336f2fda9c.js
-// Retrieved at 11/7/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.31e8f1dd3cccff934202.js
+// Retrieved at 11/7/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -443,7 +443,7 @@
 					author: l
 				} = t, {
 					recordingStatus: m
-				} = n, p = Object(a.e)(d.q);
+				} = n, p = Object(a.e)(d.p);
 				return (() => {
 					const e = [c.a.NotAvailable, c.a.Removed].includes(null != m ? m : c.a.NotAvailable);
 					return p && n.roomStatus === c.b.NotStarted ? r.a.createElement(x.a, {
@@ -796,10 +796,10 @@
 				Y = n("./src/reddit/models/Vote/index.ts"),
 				W = n("./src/reddit/selectors/experiments/econ/index.ts");
 			const {
-				fbt: q
+				fbt: z
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			var z = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/TournamentPrediction/index.m.less"),
-				K = n.n(z);
+			var q = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/TournamentPrediction/index.m.less"),
+				K = n.n(q);
 
 			function Z() {
 				return (Z = Object.assign || function(e) {
@@ -827,7 +827,7 @@
 				} = function(e, t, n) {
 					const o = Object(a.d)(),
 						s = Object(a.e)(g.f),
-						i = Object(a.e)(W.i),
+						i = Object(a.e)(W.h),
 						c = Object(d.a)(),
 						u = Object(D.a)(),
 						{
@@ -861,7 +861,7 @@
 						},
 						predict: async t => {
 							if (t.currency === l.a.Coins && t.amount > s) return Object($.promptUserToBuyMoreCoins)(), void c(Q.b);
-							if (P) return u(q._("Error: Failed to make prediction. This prediction has already ended", null, {
+							if (P) return u(z._("Error: Failed to make prediction. This prediction has already ended", null, {
 								hk: "22UWEr"
 							})), void k(null);
 							if (!p || !j) throw new Error("Invalid arguments, optionId and pollId must be strings");
@@ -879,7 +879,7 @@
 									tournamentPostId: n.id
 								})), i && x < Y.a.upvoted && (o(Object(H.jb)(v)), o(Object(H.jb)(p)), m()), O(!1), k(null), I(!0)
 							} catch (r) {
-								O(!1), k(null), u(q._("Error: Failed to make prediction, please try again later", null, {
+								O(!1), k(null), u(z._("Error: Failed to make prediction, please try again later", null, {
 									hk: "1tECsx"
 								}))
 							}
@@ -1323,4 +1323,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.ccc3bed174336f2fda9c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.31e8f1dd3cccff934202.js.map
