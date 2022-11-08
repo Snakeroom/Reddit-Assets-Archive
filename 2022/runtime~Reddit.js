@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.22f5de5998998144564a.js
-// Retrieved at 11/8/2022, 2:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.a71efd2df360a1e562b0.js
+// Retrieved at 11/8/2022, 2:50:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -723,7 +723,7 @@
 					"FramedGild~GildModal": "fe7f27f258a50a4407b0",
 					FramedGild: "345514d9578a0c2ee3d3",
 					GildModal: "0354fb30b34cbada1e02",
-					HappeningNow: "a26dca3205529c02325f",
+					HappeningNow: "a4ac0ccf891ce2f62f51",
 					Frontpage: "020f293b7420ecc3f2df",
 					PostSetPage: "6f06f8680dddabb77098",
 					Topic: "21f0695a1bc742e68128",
@@ -1451,7 +1451,7 @@
 						"FramedGild~GildModal": "14110699960fd8a88834",
 						FramedGild: "2da4476c1b0aad7e1af3",
 						GildModal: "8b8026feb93e8b180088",
-						HappeningNow: "181311fdc7b1c7a6b091",
+						HappeningNow: "7c0e5b6cf69ddf84bd00",
 						Frontpage: "2b42f4785492b4085897",
 						PostSetPage: "4decbb90df247327ec5c",
 						Topic: "a28e8c247258b69f05d3",
@@ -1814,4 +1814,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.22f5de5998998144564a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.a71efd2df360a1e562b0.js.map
