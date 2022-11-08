@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.b62a45107ea8412651ed.js
-// Retrieved at 11/8/2022, 12:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.753065a231aab8fe13d2.js
+// Retrieved at 11/8/2022, 1:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -359,8 +359,8 @@
 						const e = 36 - (null !== (t = null == a ? void 0 : a.length) && void 0 !== t ? t : 0);
 						return n.displayText.length > e ? n.displayText.substring(0, e - 3) + "..." : n.displayText
 					}
-					c = i || Object(o.D)(e)
-				} else c = Object(o.D)(e);
+					c = i || Object(o.E)(e)
+				} else c = Object(o.E)(e);
 				const d = s.a.parse(c),
 					l = d.path || "",
 					u = l.length > 7 ? l.substring(0, 7) + "..." : l;
@@ -12180,7 +12180,7 @@
 					} = e, {
 						isSponsored: o
 					} = t, r = Object(a.d)(), s = Object(C.a)(), c = Object(a.e)(U.b), d = Object(a.e)(U.c), u = e => {
-						!c && !d || t.media && Object(j.H)(t.media) || (e.preventDefault(), r(Object(g.ab)(Object(v.b)(t.permalink), t.id)))
+						!c && !d || t.media && Object(j.J)(t.media) || (e.preventDefault(), r(Object(g.ab)(Object(v.b)(t.permalink), t.id)))
 					};
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return i.a.createElement(X, {
 						nowrap: e.nowrap
@@ -12191,7 +12191,7 @@
 						postId: t.id,
 						source: t.source
 					}, i.a.createElement(ee, e)); {
-						const r = t.media && Object(j.H)(t.media) ? Object(E.c)(t.id, n.name) : t.permalink,
+						const r = t.media && Object(j.J)(t.media) ? Object(E.c)(t.id, n.name) : t.permalink,
 							a = e.isCommentPermalink ? Object(v.b)(r) : Object(f.a)(r, void 0, s);
 						return i.a.createElement(X, {
 							disableVisited: e.disableVisited,
@@ -12254,11 +12254,11 @@
 					} = o, s = e.isCommentsPage ? H.SourceElement.PostLink : H.SourceElement.ListingPostLink;
 					if (Object(x.a)()) return null;
 					if (n && o.isNSFW) return null;
-					const a = !t && !e.isCrosspost && e.size !== A.Large && !o.isSponsored && !(o.media && Object(j.H)(o.media)) && (o.source || o.media && (o.media.type === j.o.GIFVIDEO || o.media.type === j.o.IMAGE || o.media.type === j.o.EMBED));
+					const a = !t && !e.isCrosspost && e.size !== A.Large && !o.isSponsored && !(o.media && Object(j.J)(o.media)) && (o.source || o.media && (o.media.type === j.p.GIFVIDEO || o.media.type === j.p.IMAGE || o.media.type === j.p.EMBED));
 					if (t || !e.isCommentsPage || e.isCommentPermalink || e.shouldLinkWrap) {
 						if (a) return i.a.createElement(b.a, {
 							className: e.outboundLinkClassName,
-							href: Object(j.D)(o),
+							href: Object(j.E)(o),
 							isSponsored: r,
 							postId: o.id,
 							source: o.source,
@@ -20691,11 +20691,11 @@
 						placeholderImage: O,
 						redditStyle: v,
 						theme: k
-					}), w = N(e), I = d ? g.SourceElement.PostImage : g.SourceElement.ListingPostImage, P = R(f, t, T, S, _, k, w, l, x, E, v, u, p, b, r), M = Object(h.D)(f);
+					}), w = N(e), I = d ? g.SourceElement.PostImage : g.SourceElement.ListingPostImage, P = R(f, t, T, S, _, k, w, l, x, E, v, u, p, b, r), M = Object(h.E)(f);
 					return Object(o.a)(M) && !E && M.indexOf("redditmedia") < 0 ? s.a.createElement("div", {
 						className: Object(i.a)(C.a.container, j ? C.a.usePreview : "", n)
 					}, s.a.createElement(m.b, {
-						href: Object(h.D)(f),
+						href: Object(h.E)(f),
 						isSponsored: f.isSponsored,
 						postId: f.id,
 						source: f.source,
@@ -20719,7 +20719,7 @@
 					} = t || n;
 					return r && s ? s.url : n.isSponsored && s && "default" === a.url ? s.url : M(i) ? i.scrubberThumbSource : a.url
 				},
-				M = e => !!e && e.type === h.o.LIVEVIDEO,
+				M = e => !!e && e.type === h.p.LIVEVIDEO,
 				R = (e, t, n, r, a, c, l, u, m, p, h, b, f, g, v) => {
 					const E = (e => e.source && !e.isSponsored || !1)(e);
 					if (Object(o.a)(l)) {
@@ -31853,18 +31853,18 @@
 						hk: "2KrrAO"
 					});
 					switch (o.media && o.media.type) {
-						case Ye.o.TEXT:
-						case Ye.o.RTJSON:
+						case Ye.p.TEXT:
+						case Ye.p.RTJSON:
 							return !r.text && d.fbt._("This community does not allow for crossposting of text posts", null, {
 								hk: "1a4voI"
 							});
-						case Ye.o.IMAGE:
+						case Ye.p.IMAGE:
 							return !r.images && d.fbt._("This community does not allow for crossposting of image posts", null, {
 								hk: "tGzk7"
 							});
-						case Ye.o.VIDEO:
-						case Ye.o.GIFVIDEO:
-						case Ye.o.EMBED:
+						case Ye.p.VIDEO:
+						case Ye.p.GIFVIDEO:
+						case Ye.p.EMBED:
 							return !r.videos && d.fbt._("This community does not allow for crossposting of video posts", null, {
 								hk: "w6HED"
 							})
@@ -32509,7 +32509,7 @@
 				ts = n.n(es);
 			const {
 				fbt: ns
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), os = new RegExp(`\\b(${[...Ye.x].join("|")})\\.com$`, "i"), rs = new RegExp(`\\.(${Ye.w.join("|")})$`), ss = Ge.a.div("TextContainer", ts.a);
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), os = new RegExp(`\\b(${[...Ye.y].join("|")})\\.com$`, "i"), rs = new RegExp(`\\.(${Ye.x.join("|")})$`), ss = Ge.a.div("TextContainer", ts.a);
 			class is extends r.a.Component {
 				constructor() {
 					super(...arguments), this.isUrlScraped = e => {
@@ -39020,7 +39020,7 @@
 						hk: "2CBRa4"
 					}).toString();
 					let r = Object(i.b)(e);
-					return r || (null === (t = e.media) || void 0 === t ? void 0 : t.type) !== a.o.TEXT || (r = e.media.markdownContent), r === n
+					return r || (null === (t = e.media) || void 0 === t ? void 0 : t.type) !== a.p.TEXT || (r = e.media.markdownContent), r === n
 				}),
 				p = Object(r.a)(s.a, e => {
 					var t;
@@ -39034,7 +39034,7 @@
 						hk: "12mOne"
 					}).toString();
 					let r = Object(i.b)(e);
-					return r || (null === (t = e.media) || void 0 === t ? void 0 : t.type) !== a.o.TEXT || (r = e.media.markdownContent), r === n
+					return r || (null === (t = e.media) || void 0 === t ? void 0 : t.type) !== a.p.TEXT || (r = e.media.markdownContent), r === n
 				}),
 				h = Object(r.a)(s.a, e => {
 					if (!e) return !1;
@@ -39371,4 +39371,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.b62a45107ea8412651ed.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.753065a231aab8fe13d2.js.map

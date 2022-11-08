@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.48dbae66d0649cb7c832.js
-// Retrieved at 11/8/2022, 12:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.a4d91241d349364df92c.js
+// Retrieved at 11/8/2022, 1:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -5510,17 +5510,17 @@
 					}
 				})),
 				D = {
-					[_.o.GIFVIDEO]: d.a.gif_post,
-					[_.o.IMAGE]: d.a.image_post,
-					[_.o.TEXT]: d.a.text_post,
-					[_.o.RTJSON]: d.a.text_post,
-					[_.o.VIDEO]: d.a.video_post,
-					[_.o.EMBED]: d.a.embed,
-					[_.o.LIVEVIDEO]: d.a.video_live,
-					[_.o.GALLERY]: d.a.media_gallery,
-					[_.o.LIVEAUDIO]: d.a.audio
+					[_.p.GIFVIDEO]: d.a.gif_post,
+					[_.p.IMAGE]: d.a.image_post,
+					[_.p.TEXT]: d.a.text_post,
+					[_.p.RTJSON]: d.a.text_post,
+					[_.p.VIDEO]: d.a.video_post,
+					[_.p.EMBED]: d.a.embed,
+					[_.p.LIVEVIDEO]: d.a.video_live,
+					[_.p.GALLERY]: d.a.media_gallery,
+					[_.p.LIVEAUDIO]: d.a.audio
 				},
-				F = e => D[(null == e ? void 0 : e.media) ? e.media.type : _.o.EMBED];
+				F = e => D[(null == e ? void 0 : e.media) ? e.media.type : _.p.EMBED];
 			class G extends r.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -24133,4 +24133,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.48dbae66d0649cb7c832.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.a4d91241d349364df92c.js.map

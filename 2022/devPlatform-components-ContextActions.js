@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.40f07039045758f96be5.js
-// Retrieved at 11/7/2022, 5:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.2e886f1d51a2b3aee445.js
+// Retrieved at 11/8/2022, 1:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["devPlatform-components-ContextActions"], {
 		"./src/devPlatform/components/ContextActions/index.m.less": function(e, t, o) {},
@@ -73,7 +73,7 @@
 				f = o("./src/reddit/models/Flair/index.ts"),
 				w = o("./src/reddit/models/Media/index.ts"),
 				A = e => {
-					var t, o, i, n, d, a, r, s, l, c, u, m, p, v, g, A, x, O, y;
+					var t, o, i, n, d, a, r, s, l, c, u, m, p, v, g, A, O, x, y;
 					return h.E.fromPartial({
 						approved: e.isApproved,
 						approvedAtUtc: null !== (t = e.approvedAtUTC) && void 0 !== t ? t : void 0,
@@ -120,17 +120,17 @@
 						topAwardedType: e.topAwardedType,
 						numComments: e.numComments,
 						over18: e.isNSFW,
-						selftext: e.media && Object(w.M)(e.media) ? e.media.markdownContent : void 0,
-						selftextHtml: e.media && Object(w.M)(e.media) ? e.media.content : void 0,
+						selftext: e.media && Object(w.O)(e.media) ? e.media.markdownContent : void 0,
+						selftextHtml: e.media && Object(w.O)(e.media) ? e.media.content : void 0,
 						spoiler: String(e.isSpoiler),
 						thumbnail: e.thumbnail.url,
-						thumbnailWidth: null !== (x = e.thumbnail.width) && void 0 !== x ? x : void 0,
-						thumbnailHeight: null !== (O = e.thumbnail.height) && void 0 !== O ? O : void 0,
+						thumbnailWidth: null !== (O = e.thumbnail.width) && void 0 !== O ? O : void 0,
+						thumbnailHeight: null !== (x = e.thumbnail.height) && void 0 !== x ? x : void 0,
 						title: e.title,
 						url: null === (y = e.source) || void 0 === y ? void 0 : y.url
 					})
 				},
-				x = e => h.M.fromPartial({
+				O = e => h.M.fromPartial({
 					freeFormReports: e.freeFormReports,
 					communityIcon: e.communityIcon,
 					displayName: e.name,
@@ -150,7 +150,7 @@
 					userIsSubscriber: e.isSubscribed,
 					id: e.id.replace(/t[1-5]_/, "")
 				}),
-				O = o("./src/devPlatform/components/UserInputModal/modals.ts"),
+				x = o("./src/devPlatform/components/UserInputModal/modals.ts"),
 				y = o("./src/devPlatform/singleton/runtime.ts"),
 				S = o("./src/higherOrderComponents/makeAsync.tsx"),
 				_ = o("./src/lib/loadWithRetries/index.ts"),
@@ -173,7 +173,7 @@
 						e(Object(r.f)(Object(r.e)(t, o)))
 					},
 					onShowUserInput: (t, o) => {
-						e(Object(O.b)({
+						e(Object(x.b)({
 							action: t,
 							onAction: o
 						}))
@@ -182,7 +182,7 @@
 				P = (e, t) => ({
 					post: e === h.g.POST ? A(t) : void 0,
 					comment: e === h.g.COMMENT ? g(t) : void 0,
-					subreddit: e === h.g.SUBREDDIT ? x(t) : void 0
+					subreddit: e === h.g.SUBREDDIT ? O(t) : void 0
 				});
 			t.default = M(e => {
 				const {
@@ -421,7 +421,7 @@
 		"./src/reddit/components/OverflowMenu/index.tsx": function(e, t, o) {
 			"use strict";
 			o.d(t, "a", (function() {
-				return O
+				return x
 			}));
 			var i = o("./node_modules/fbt/lib/FbtPublic.js"),
 				n = o("./node_modules/react/index.js"),
@@ -441,8 +441,8 @@
 				f = o.n(g);
 			const w = l.a.wrapped(m.a, "_Dropdown", f.a),
 				A = Object(u.a)(w),
-				x = l.a.button("MenuButton", f.a),
-				O = l.a.wrapped(p.b, "DropdownRow", f.a),
+				O = l.a.button("MenuButton", f.a),
+				x = l.a.wrapped(p.b, "DropdownRow", f.a),
 				y = Object(r.c)({
 					dropdownIsOpen: (e, t) => {
 						let {
@@ -464,7 +464,7 @@
 				_ = e => t => {
 					e.onClick && e.onClick(), e.toggleDropdown(), t.stopPropagation()
 				};
-			t.b = S(e => d.a.createElement(x, {
+			t.b = S(e => d.a.createElement(O, {
 				"aria-expanded": e.dropdownIsOpen,
 				"aria-haspopup": !0,
 				"aria-label": i.fbt._("more options", null, {
@@ -581,4 +581,4 @@
 		"ignored /drone/src/node_modules/cron-parser/lib fs": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.40f07039045758f96be5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.2e886f1d51a2b3aee445.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.bb08765b9407f1c55f66.js
-// Retrieved at 11/7/2022, 8:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.e9bf828f0dccf71bced5.js
+// Retrieved at 11/8/2022, 1:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent~TopWeekPostsDiscoveryUnit"], {
 		"./node_modules/react-motion/lib/Motion.js": function(e, t, s) {
@@ -780,8 +780,8 @@
 						const e = 36 - (null !== (t = null == o ? void 0 : o.length) && void 0 !== t ? t : 0);
 						return s.displayText.length > e ? s.displayText.substring(0, e - 3) + "..." : s.displayText
 					}
-					l = i || Object(n.D)(e)
-				} else l = Object(n.D)(e);
+					l = i || Object(n.E)(e)
+				} else l = Object(n.E)(e);
 				const c = r.a.parse(l),
 					d = c.path || "",
 					u = d.length > 7 ? d.substring(0, 7) + "..." : d;
@@ -1156,8 +1156,8 @@
 				G = s("./src/reddit/components/Media/index.tsx"),
 				K = s("./src/reddit/components/MiniCardPost/MetaLine/index.tsx"),
 				Y = s("./src/reddit/components/MiniCardPost/Thumbnail/index.tsx"),
-				X = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
-				J = s("./src/reddit/components/PostContainer/index.tsx"),
+				J = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
+				X = s("./src/reddit/components/PostContainer/index.tsx"),
 				$ = s("./src/reddit/components/PostTitle/index.tsx"),
 				ee = s("./src/reddit/connectors/miniCardPost.ts"),
 				te = s("./src/reddit/contexts/Post/index.tsx"),
@@ -1226,14 +1226,14 @@
 							showFull: !1
 						}),
 						k = !1;
-					_ && O && (_.type !== re.o.RTJSON && _.type !== re.o.TEXT ? (O = r.a.createElement("div", {
+					_ && O && (_.type !== re.p.RTJSON && _.type !== re.p.TEXT ? (O = r.a.createElement("div", {
 						className: pe.a.mediaWrapper
 					}, O), k = !0) : _ && _.content && Object(se.a)(p, null == v ? void 0 : v.subredditContext) && (O = r.a.createElement("div", {
 						className: pe.a.textWrapper
 					}, O)));
 					const C = !k && !j;
 					let P;
-					return g && (P = Object(oe.i)(g) ? Object(ae.b)(g) : Object(ae.c)(g)), r.a.createElement(J.b, {
+					return g && (P = Object(oe.i)(g) ? Object(ae.b)(g) : Object(ae.c)(g)), r.a.createElement(X.b, {
 						className: Object(c.a)(pe.a.container, ue.a.largeAndMediumActiveStyles, ue.a.largeAndMediumPostStyles, ce.a.postContainer, Object(ne.a)(this.props), s),
 						post: p,
 						onClick: m,
@@ -1244,7 +1244,7 @@
 							...this.props.style
 						},
 						"data-click-id": this.props["data-click-id"]
-					}, r.a.createElement(X.a, {
+					}, r.a.createElement(J.a, {
 						className: ce.a.backgroundWrapper,
 						flairStyleTemplate: o
 					}, r.a.createElement("div", {
@@ -1870,8 +1870,8 @@
 						id: c ? c(d.id) : d.id,
 						tabIndex: -1,
 						"data-adclicklocation": _.a.BACKGROUND
-					}, s), j = !!d.media && d.media.type === f.o.VIDEO;
-					return (e => d.media && Object(f.E)(d.media) && g ? a.a.createElement(u, {
+					}, s), j = !!d.media && d.media.type === f.p.VIDEO;
+					return (e => d.media && Object(f.G)(d.media) && g ? a.a.createElement(u, {
 						postId: d.id
 					}, e) : e)((e => d.isSponsored || j ? a.a.createElement(o.a, {
 						post: d,
@@ -2052,7 +2052,7 @@
 						})
 					}), a)
 				},
-				X = e => {
+				J = e => {
 					let {
 						disableVisited: t,
 						nowrap: s,
@@ -2066,7 +2066,7 @@
 						})
 					}, a)
 				},
-				J = Object(c.c)({
+				X = Object(c.c)({
 					flairPosition: (e, t) => {
 						let {
 							pageLayer: s
@@ -2085,9 +2085,9 @@
 					} = e, {
 						isSponsored: n
 					} = t, a = Object(o.d)(), r = Object(v.a)(), l = Object(o.e)(F.b), c = Object(o.e)(F.c), u = e => {
-						!l && !c || t.media && Object(P.H)(t.media) || (e.preventDefault(), a(Object(y.ab)(Object(x.b)(t.permalink), t.id)))
+						!l && !c || t.media && Object(P.J)(t.media) || (e.preventDefault(), a(Object(y.ab)(Object(x.b)(t.permalink), t.id)))
 					};
-					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return i.a.createElement(X, {
+					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return i.a.createElement(J, {
 						nowrap: e.nowrap
 					}, i.a.createElement(ee, e));
 					if (e.isCommentsPageAd && t.source && t.source.url) return i.a.createElement(f.b, {
@@ -2096,9 +2096,9 @@
 						postId: t.id,
 						source: t.source
 					}, i.a.createElement(ee, e)); {
-						const a = t.media && Object(P.H)(t.media) ? Object(g.c)(t.id, s.name) : t.permalink,
+						const a = t.media && Object(P.J)(t.media) ? Object(g.c)(t.id, s.name) : t.permalink,
 							o = e.isCommentPermalink ? Object(x.b)(a) : Object(b.a)(a, void 0, r);
-						return i.a.createElement(X, {
+						return i.a.createElement(J, {
 							disableVisited: e.disableVisited,
 							nowrap: e.nowrap
 						}, n ? ((e, t) => {
@@ -2159,11 +2159,11 @@
 					} = n, r = e.isCommentsPage ? H.SourceElement.PostLink : H.SourceElement.ListingPostLink;
 					if (Object(_.a)()) return null;
 					if (s && n.isNSFW) return null;
-					const o = !t && !e.isCrosspost && e.size !== V.Large && !n.isSponsored && !(n.media && Object(P.H)(n.media)) && (n.source || n.media && (n.media.type === P.o.GIFVIDEO || n.media.type === P.o.IMAGE || n.media.type === P.o.EMBED));
+					const o = !t && !e.isCrosspost && e.size !== V.Large && !n.isSponsored && !(n.media && Object(P.J)(n.media)) && (n.source || n.media && (n.media.type === P.p.GIFVIDEO || n.media.type === P.p.IMAGE || n.media.type === P.p.EMBED));
 					if (t || !e.isCommentsPage || e.isCommentPermalink || e.shouldLinkWrap) {
 						if (o) return i.a.createElement(h.a, {
 							className: e.outboundLinkClassName,
-							href: Object(P.D)(n),
+							href: Object(P.E)(n),
 							isSponsored: a,
 							postId: n.id,
 							source: n.source,
@@ -2248,7 +2248,7 @@
 				const t = Object(p.gb)(),
 					s = Object(p.x)(t),
 					n = Object(j.a)(),
-					a = Object(o.e)(a => J(a, {
+					a = Object(o.e)(a => X(a, {
 						...n,
 						...e,
 						isCommentPermalink: s,
@@ -2630,7 +2630,7 @@
 						hk: "2CBRa4"
 					}).toString();
 					let a = Object(i.b)(e);
-					return a || (null === (t = e.media) || void 0 === t ? void 0 : t.type) !== o.o.TEXT || (a = e.media.markdownContent), a === s
+					return a || (null === (t = e.media) || void 0 === t ? void 0 : t.type) !== o.p.TEXT || (a = e.media.markdownContent), a === s
 				}),
 				p = Object(a.a)(r.a, e => {
 					var t;
@@ -2644,7 +2644,7 @@
 						hk: "12mOne"
 					}).toString();
 					let a = Object(i.b)(e);
-					return a || (null === (t = e.media) || void 0 === t ? void 0 : t.type) !== o.o.TEXT || (a = e.media.markdownContent), a === s
+					return a || (null === (t = e.media) || void 0 === t ? void 0 : t.type) !== o.p.TEXT || (a = e.media.markdownContent), a === s
 				}),
 				f = Object(a.a)(r.a, e => {
 					if (!e) return !1;
@@ -2660,4 +2660,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.bb08765b9407f1c55f66.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.e9bf828f0dccf71bced5.js.map

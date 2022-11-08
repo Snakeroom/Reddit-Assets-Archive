@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.828d7b690e066932ff2a.js
-// Retrieved at 11/8/2022, 12:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.7be3a4d3054298d709c4.js
+// Retrieved at 11/8/2022, 1:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -38,9 +38,9 @@
 			})), s.d(t, "profilePrivateRequested", (function() {
 				return W
 			})), s.d(t, "morePending", (function() {
-				return H
-			})), s.d(t, "moreMixedLoaded", (function() {
 				return V
+			})), s.d(t, "moreMixedLoaded", (function() {
+				return H
 			})), s.d(t, "morePostLoaded", (function() {
 				return z
 			})), s.d(t, "moreFailed", (function() {
@@ -281,7 +281,7 @@
 						listingKey: b,
 						error: C.error
 					}))
-				}, H = Object(i.a)(T.f), V = Object(i.a)(T.e), z = Object(i.a)(T.g), K = Object(i.a)(T.d), q = e => async (t, s, n) => {
+				}, V = Object(i.a)(T.f), H = Object(i.a)(T.e), z = Object(i.a)(T.g), K = Object(i.a)(T.d), q = e => async (t, s, n) => {
 					const o = s(),
 						i = o.user.account && o.user.account.displayText && o.user.account.displayText.toLowerCase();
 					if (!i) return;
@@ -293,7 +293,7 @@
 						after: o.profilePrivatePage.pageInfo[r].endCursor,
 						first: T.h
 					};
-					t(H({
+					t(V({
 						listingKey: r
 					}));
 					const a = await M[e](n.gqlContext(), d);
@@ -304,7 +304,7 @@
 							listingType: e,
 							rawData: a.body.data
 						});
-						e === v.b.Saved || e === v.b.ReceivedGildings || e === v.b.GivenGildings ? await t(V({
+						e === v.b.Saved || e === v.b.ReceivedGildings || e === v.b.GivenGildings ? await t(H({
 							listingKey: r,
 							profileName: i,
 							...s
@@ -951,8 +951,8 @@
 				G = s("./src/reddit/components/PostContainer/index.tsx"),
 				D = s("./src/reddit/components/PostMeta/index.tsx"),
 				W = s("./src/reddit/components/PostOverflowMenu/index.tsx"),
-				H = s("./src/reddit/components/PostRailAndVotes/index.tsx"),
-				V = s("./src/reddit/components/PostTitle/index.tsx"),
+				V = s("./src/reddit/components/PostRailAndVotes/index.tsx"),
+				H = s("./src/reddit/components/PostTitle/index.tsx"),
 				z = s("./src/reddit/components/PostTopMeta/index.tsx"),
 				K = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/videoContext.tsx"),
 				q = s("./src/reddit/controls/OutboundLink/styled.tsx"),
@@ -1036,10 +1036,10 @@
 					Ue = le && ee.a,
 					Ge = Object(M.a)(xe),
 					De = Object(F.c)(xe),
-					We = !!xe.media && xe.media.type === J.o.RTJSON,
-					He = _e && We,
-					Ve = x && !we,
-					ze = !!xe.media && Object(J.H)(xe.media),
+					We = !!xe.media && xe.media.type === J.p.RTJSON,
+					Ve = _e && We,
+					He = x && !we,
+					ze = !!xe.media && Object(J.J)(xe.media),
 					Ke = !!xe.recommendationContext,
 					qe = {
 						flairStyleTemplate: Re,
@@ -1083,7 +1083,7 @@
 						post: xe,
 						onClick: pe,
 						eventFactory: v
-					}, o.a.createElement(H.a, {
+					}, o.a.createElement(V.a, {
 						model: xe,
 						handleVote: h,
 						showBulkActionCheckbox: Oe,
@@ -1102,8 +1102,8 @@
 					}), o.a.createElement("div", {
 						className: me.a.mainBody
 					}, o.a.createElement("div", {
-						className: Ve ? me.a.expandoContainer : me.a.thumbnailContainer
-					}, !Ve && $e, o.a.createElement(N.a, {
+						className: He ? me.a.expandoContainer : me.a.thumbnailContainer
+					}, !He && $e, o.a.createElement(N.a, {
 						crosspost: Me,
 						className: me.a.rightExpando,
 						isExpanded: !!g,
@@ -1118,13 +1118,13 @@
 						content: xe.recommendationContext.content,
 						layout: Z.g.Classic,
 						post: xe
-					}), o.a.createElement(V.c, {
+					}), o.a.createElement(H.c, {
 						className: ge ? me.a.titleWithPoll : void 0,
 						format: C,
 						poll: ge,
 						post: xe,
 						redditStyle: ye,
-						size: V.b.Medium,
+						size: H.b.Medium,
 						titleColor: Re && Re.postTitleColor,
 						isOverlay: _
 					}, xe.source && !Me && !xe.isSurveyAd && o.a.createElement(q.a, {
@@ -1180,7 +1180,7 @@
 						onOpenReportsDropdown: he,
 						post: xe,
 						shouldShowInsightsButton: ke,
-						showEditPost: He,
+						showEditPost: Ve,
 						showEditFlair: Ee,
 						tooltipType: _ ? z.f.Lightbox : void 0,
 						useFlatlistBreakpoints: Object(W.b)({
@@ -1389,8 +1389,8 @@
 				G = s("./src/reddit/contexts/InsideOverlay.tsx"),
 				D = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				W = s("./src/reddit/helpers/correlationIdTracker.ts"),
-				H = s("./src/reddit/helpers/hasModPostPermissions/index.ts"),
-				V = s("./src/reddit/helpers/overlay/index.ts"),
+				V = s("./src/reddit/helpers/hasModPostPermissions/index.ts"),
+				H = s("./src/reddit/helpers/overlay/index.ts"),
 				z = s("./src/reddit/helpers/trackers/lightbox.ts"),
 				K = s("./src/reddit/models/PostDraft/index.ts"),
 				q = s("./src/reddit/models/Comment/index.ts"),
@@ -1528,7 +1528,7 @@
 						moderatorPermissions: s,
 						modModeEnabled: n,
 						showModTools: i
-					} = this.props, r = Object(H.a)(s), d = !!t && t.displayText === e.author;
+					} = this.props, r = Object(V.a)(s), d = !!t && t.displayText === e.author;
 					if (i && r) return n ? o.a.createElement(ve, {
 						comment: e,
 						isCommentAuthor: d
@@ -1566,7 +1566,7 @@
 						modModeEnabled: n,
 						onDistinguishComment: i,
 						showModTools: r
-					} = this.props, d = Object(H.a)(s), a = !!t && t.displayText === e.author, c = !!t && t.isEmployee;
+					} = this.props, d = Object(V.a)(s), a = !!t && t.displayText === e.author, c = !!t && t.isEmployee;
 					if (r && a && !e.bannedBy && (c || d && !n)) return o.a.createElement(R.a, {
 						onClick: this.handleDistinguishToggle,
 						selected: this.props.activeTooltipId === je(e.id)
@@ -1597,7 +1597,7 @@
 						postIsLocked: l,
 						subreddit: m,
 						toggleDeleteCommentModal: u
-					} = this.props, p = Object(H.a)(c), b = !!i && i.displayText === e.author, h = (!l && !e.isLocked || p && d) && !Object(q.g)(e), f = i && e.isGildable && !Object(q.g)(e);
+					} = this.props, p = Object(V.a)(c), b = !!i && i.displayText === e.author, h = (!l && !e.isLocked || p && d) && !Object(q.g)(e), f = i && e.isGildable && !Object(q.g)(e);
 					return o.a.createElement("div", {
 						className: s
 					}, o.a.createElement(Oe, null, h && o.a.createElement(Ee, {
@@ -1709,7 +1709,7 @@
 									commentMode: s.media && s.media.rteMode,
 									commentsPageKey: n
 								};
-							e(Object(V.a)(t)), e(Object(j.g)(o))
+							e(Object(H.a)(t)), e(Object(j.g)(o))
 						},
 						handleReply: t => {
 							const n = Object(E.a)(s.postId, s.id, {}),
@@ -1717,7 +1717,7 @@
 									parentCommentId: s.id,
 									commentsPageKey: n
 								};
-							e(Object(V.a)(t)), e(Object(j.h)(o))
+							e(Object(H.a)(t)), e(Object(j.h)(o))
 						},
 						toggleDeleteCommentModal: () => e(Object(I.i)(ke(s.id)))
 					}
@@ -3139,7 +3139,7 @@
 					} = e;
 					const [g, x] = Object(c.useState)(!1), C = Object(c.useRef)(null), [O, E] = Object(c.useState)([]), [k, j] = Object(c.useState)([]);
 					return Object(c.useEffect)(() => {
-						const e = H({
+						const e = V({
 							isHistoryTabEnabled: s,
 							profileName: d,
 							isOwnProfile: n,
@@ -3244,7 +3244,7 @@
 						target: "_blank"
 					}, o)
 				},
-				H = e => {
+				V = e => {
 					let {
 						profileName: t,
 						isOwnProfile: s,
@@ -6394,8 +6394,8 @@
 			var G = s("./src/reddit/selectors/subreddit.ts"),
 				D = s("./src/reddit/selectors/tracking.ts"),
 				W = s("./src/reddit/selectors/user.ts");
-			const H = (e, t) => (e, t, s) => Object(E.a)(e) ? 120 : 47,
-				V = (Object(O.v)(), {
+			const V = (e, t) => (e, t, s) => Object(E.a)(e) ? 120 : 47,
+				H = (Object(O.v)(), {
 					apiError: (e, t) => {
 						let {
 							listingKey: s
@@ -6422,9 +6422,9 @@
 					itemIds: R,
 					itemIdToPostId: A,
 					postsById: B,
-					estimateItemHeight: H
+					estimateItemHeight: V
 				}),
-				z = Object(r.c)(V);
+				z = Object(r.c)(H);
 			Object(i.b)(z, (e, t) => ({
 				onBottomViewed: (t, s) => e(C.c(t, s)),
 				openPost: t => {
@@ -6499,7 +6499,7 @@
 						return -1 === s.indexOf(J.b.Saved) && -1 === s.indexOf(J.b.ReceivedGildings) && -1 === s.indexOf(J.b.GivenGildings) ? [] : e.profilePrivatePage.ids[s] || []
 					},
 					itemIdToPostId: Z,
-					estimateItemHeight: H
+					estimateItemHeight: V
 				}),
 				se = Object(r.c)({
 					...ee,
@@ -6719,4 +6719,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.828d7b690e066932ff2a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.7be3a4d3054298d709c4.js.map

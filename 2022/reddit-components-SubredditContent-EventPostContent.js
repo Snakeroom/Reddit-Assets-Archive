@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.bdaf9791a61763a0de32.js
-// Retrieved at 11/7/2022, 8:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.ad3c198db5d91bc04307.js
+// Retrieved at 11/8/2022, 1:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-EventPostContent"], {
 		"./src/reddit/components/ClassicPost/index.tsx": function(e, t, s) {
@@ -111,8 +111,8 @@
 				B = s("./src/reddit/components/PostContainer/index.tsx"),
 				U = s("./src/reddit/components/PostMeta/index.tsx"),
 				Q = s("./src/reddit/components/PostOverflowMenu/index.tsx"),
-				D = s("./src/reddit/components/PostRailAndVotes/index.tsx"),
-				J = s("./src/reddit/components/PostTitle/index.tsx"),
+				J = s("./src/reddit/components/PostRailAndVotes/index.tsx"),
+				D = s("./src/reddit/components/PostTitle/index.tsx"),
 				H = s("./src/reddit/components/PostTopMeta/index.tsx"),
 				W = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/videoContext.tsx"),
 				K = s("./src/reddit/controls/OutboundLink/styled.tsx"),
@@ -196,10 +196,10 @@
 					Ve = le && ee.a,
 					Be = Object(L.a)(fe),
 					Ue = Object(G.c)(fe),
-					Qe = !!fe.media && fe.media.type === X.o.RTJSON,
-					De = _e && Qe,
-					Je = f && !Ce,
-					He = !!fe.media && Object(X.H)(fe.media),
+					Qe = !!fe.media && fe.media.type === X.p.RTJSON,
+					Je = _e && Qe,
+					De = f && !Ce,
+					He = !!fe.media && Object(X.J)(fe.media),
 					We = !!fe.recommendationContext,
 					Ke = {
 						flairStyleTemplate: Re,
@@ -243,7 +243,7 @@
 						post: fe,
 						onClick: pe,
 						eventFactory: g
-					}, r.a.createElement(D.a, {
+					}, r.a.createElement(J.a, {
 						model: fe,
 						handleVote: x,
 						showBulkActionCheckbox: Ee,
@@ -262,8 +262,8 @@
 					}), r.a.createElement("div", {
 						className: ue.a.mainBody
 					}, r.a.createElement("div", {
-						className: Je ? ue.a.expandoContainer : ue.a.thumbnailContainer
-					}, !Je && Ze, r.a.createElement(N.a, {
+						className: De ? ue.a.expandoContainer : ue.a.thumbnailContainer
+					}, !De && Ze, r.a.createElement(N.a, {
 						crosspost: Le,
 						className: ue.a.rightExpando,
 						isExpanded: !!v,
@@ -278,13 +278,13 @@
 						content: fe.recommendationContext.content,
 						layout: q.g.Classic,
 						post: fe
-					}), r.a.createElement(J.c, {
+					}), r.a.createElement(D.c, {
 						className: ve ? ue.a.titleWithPoll : void 0,
 						format: j,
 						poll: ve,
 						post: fe,
 						redditStyle: Oe,
-						size: J.b.Medium,
+						size: D.b.Medium,
 						titleColor: Re && Re.postTitleColor,
 						isOverlay: _
 					}, fe.source && !Le && !fe.isSurveyAd && r.a.createElement(K.a, {
@@ -340,7 +340,7 @@
 						onOpenReportsDropdown: xe,
 						post: fe,
 						shouldShowInsightsButton: Se,
-						showEditPost: De,
+						showEditPost: Je,
 						showEditFlair: ke,
 						tooltipType: _ ? H.f.Lightbox : void 0,
 						useFlatlistBreakpoints: Object(Q.b)({
@@ -1274,4 +1274,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.bdaf9791a61763a0de32.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.ad3c198db5d91bc04307.js.map

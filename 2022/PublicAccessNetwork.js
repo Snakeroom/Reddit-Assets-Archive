@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.298e395bce5b8fb24ad8.js
-// Retrieved at 11/8/2022, 12:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.66316b54b4791ff265ff.js
+// Retrieved at 11/8/2022, 1:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1302,7 +1302,7 @@
 						listingKey: _
 					}), C = c && (i || !y || 0 === y.length), E = i, x = a, k = Object(ne.G)(f, {
 						postId: u
-					}), j = !!k && !!k.media && (Object(U.K)(k.media) || Object(U.F)(k.media)) && !k.media.altText;
+					}), j = !!k && !!k.media && (Object(U.M)(k.media) || Object(U.H)(k.media)) && !k.media.altText;
 					if (!(O || C || E || x || j || l)) return;
 					O && t(Object(ye.d)({
 						key: g
@@ -1510,7 +1510,7 @@
 								experimentEligibilitySelector: te,
 								experimentName: z.rf
 							}))(s())) return void t(Object(r.c)(n.url));
-						if ((G.media && G.media.type) === U.o.LIVEVIDEO) {
+						if ((G.media && G.media.type) === U.p.LIVEVIDEO) {
 							const e = `/rpan${G.belongsTo.type===D.a.SUBREDDIT?n.url:"/"}${Object(O.D)(G.id)}`;
 							return void t(Object(r.c)(e))
 						}
@@ -8054,4 +8054,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.298e395bce5b8fb24ad8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.66316b54b4791ff265ff.js.map

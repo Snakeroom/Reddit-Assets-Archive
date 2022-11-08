@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.9fdb29f5920474792662.js
-// Retrieved at 10/24/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.21abd71cbe891c892537.js
+// Retrieved at 11/8/2022, 1:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/Body/index.m.less": function(e, t, s) {
@@ -136,7 +136,7 @@
 						showPlaceholderContentType: !o || !o.postPlaceholderImage,
 						templatePlaceholderImage: o ? o.postPlaceholderImage : w,
 						usePreview: !0
-					})))) : b && p ? b.type !== j.o.RTJSON && b.type !== j.o.TEXT ? (x = !1, h = n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
+					})))) : b && p ? b.type !== j.p.RTJSON && b.type !== j.p.TEXT ? (x = !1, h = n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
 						className: U.a.flexSpacer
 					}), n.a.createElement("div", {
 						className: U.a.mediaWrapper
@@ -496,4 +496,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.9fdb29f5920474792662.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.21abd71cbe891c892537.js.map

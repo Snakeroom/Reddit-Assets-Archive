@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e.9fc3bc29287613dd9126.js
-// Retrieved at 11/8/2022, 12:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e.e38c2884bc5a16b6426a.js
+// Retrieved at 11/8/2022, 1:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, s) {
@@ -706,7 +706,7 @@
 					if (!c) return;
 					let d, l = j.i.RICH_TEXT,
 						p = "";
-					c.type === E.o.TEXT ? (l = j.i.MARKDOWN, p = c.content) : c.type === E.o.RTJSON && (p = (l = c.rteMode || j.i.RICH_TEXT) === j.i.MARKDOWN ? c.markdownContent : c.richtextContent, d = c.mediaMetadata || void 0), s(N({
+					c.type === E.p.TEXT ? (l = j.i.MARKDOWN, p = c.content) : c.type === E.p.RTJSON && (p = (l = c.rteMode || j.i.RICH_TEXT) === j.i.MARKDOWN ? c.markdownContent : c.richtextContent, d = c.mediaMetadata || void 0), s(N({
 						editorMode: l,
 						mediaMetadata: d,
 						postContent: p,
@@ -1770,7 +1770,7 @@
 						className: le.a.shareText
 					}, o.fbt._("share", null, {
 						hk: "1eAfZg"
-					}))), []), Je = !!b && Object(Q.e)(b) === de.author, ze = Object($.a)("View--Reports", de.id, ve), Xe = Object($.a)(d.wc, de.id, ve), Qe = Object(j.c)(de), Ye = _e("-mod-actions-menu", de.id, A, B), Ze = Object(j.a)(de), $e = de.postId, et = D === F.g.Large, tt = !S && et || C && q || Fe, st = !(A || S || O), ot = !de.authorIsBlocked && b && de.isGildable && !de.authorIsBlocked && !de.unrepliableReason, nt = de.media && de.media.type === J.o.LIVEVIDEO, rt = !!de.recommendationContext, it = de.isSponsored || Object(m.u)(ie);
+					}))), []), Je = !!b && Object(Q.e)(b) === de.author, ze = Object($.a)("View--Reports", de.id, ve), Xe = Object($.a)(d.wc, de.id, ve), Qe = Object(j.c)(de), Ye = _e("-mod-actions-menu", de.id, A, B), Ze = Object(j.a)(de), $e = de.postId, et = D === F.g.Large, tt = !S && et || C && q || Fe, st = !(A || S || O), ot = !de.authorIsBlocked && b && de.isGildable && !de.authorIsBlocked && !de.unrepliableReason, nt = de.media && de.media.type === J.p.LIVEVIDEO, rt = !!de.recommendationContext, it = de.isSponsored || Object(m.u)(ie);
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 						className: Object(c.a)(le.a.flatlistContainer, l)
 					}, r.a.createElement(g.a, {
@@ -5152,4 +5152,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e.9fc3bc29287613dd9126.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e.e38c2884bc5a16b6426a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.653c81f4e90ba6580e85.js
-// Retrieved at 11/8/2022, 12:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8a6abac16e4f60e77924.js
+// Retrieved at 11/8/2022, 1:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3650,11 +3650,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("178154"),
+				buildNumber: Object(r.c)("178155"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1667928017"),
+				buildTimestamp: Object(r.b)("1667929953"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6390,14 +6390,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cd4e07b30185d5803c996acaab639ef83b5a37f60-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cdf5ee279cae6170b725017c8283190a6c975be8d-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "d4e07b30185d5803c996acaab639ef83b5a37f60-production",
+						release: "df5ee279cae6170b725017c8283190a6c975be8d-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6933,7 +6933,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "d4e07b30185d5803c996acaab639ef83b5a37f60-production",
+							releaseClient: "df5ee279cae6170b725017c8283190a6c975be8d-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -10761,7 +10761,7 @@
 							height: t,
 							isDeleted: i,
 							postId: n
-						})), null !== p && p.type === c.o.EMBED && p.provider === c.v.Twitter && h !== t && await ((e, t, i) => Object(d.a)(Object(a.a)(e, [l.a]), {
+						})), null !== p && p.type === c.p.EMBED && p.provider === c.w.Twitter && h !== t && await ((e, t, i) => Object(d.a)(Object(a.a)(e, [l.a]), {
 							endpoint: Object(u.a)(`${e.apiUrl}/api/set_twitter`),
 							method: o.ob.POST,
 							data: {
@@ -12010,7 +12010,7 @@
 					const r = e.events;
 					let s = [];
 					const o = e.media;
-					if (o && Object(C.E)(o) && o.gallery && A.includes(t)) {
+					if (o && Object(C.G)(o) && o.gallery && A.includes(t)) {
 						const e = o.gallery.items[n];
 						s = (null == e ? void 0 : e.adEvents) || []
 					}
@@ -12219,7 +12219,7 @@
 				}, Xe = (e, t, i) => async (n, r) => {
 					const s = Object(D.b)(r(), e.id),
 						o = Object(T.a)(e.id, s, t),
-						d = e.media && Object(C.E)(e.media) ? Object(Se.d)(r(), e.id) : void 0;
+						d = e.media && Object(C.G)(e.media) ? Object(Se.d)(r(), e.id) : void 0;
 					$e[t] && e.isSponsored && n(Qe(String(t), {
 						postId: e.id,
 						vendorMetadata: o,
@@ -12721,7 +12721,7 @@
 							});
 							if (i) return e(Object(a.b)(`${i.url}predictions/`)), document.body.scrollTop = 0, void(document.documentElement.scrollTop = 0)
 						}
-						if (Object(ie.b)(t) && t.media && Object(C.H)(t.media)) {
+						if (Object(ie.b)(t) && t.media && Object(C.J)(t.media)) {
 							const {
 								id: e,
 								type: i
@@ -12745,7 +12745,7 @@
 						o = Object(D.G)(s, {
 							postId: e
 						});
-					if (!(o && o.media && Object(C.K)(o.media) && o.media.isRichtextPreview)) return;
+					if (!(o && o.media && Object(C.M)(o.media) && o.media.isRichtextPreview)) return;
 					const d = await ((e, t) => Object(Q.a)(e, {
 						...X,
 						variables: t
@@ -24312,11 +24312,11 @@
 			})), i.d(t, "d", (function() {
 				return x
 			})), i.d(t, "b", (function() {
-				return G
+				return q
 			})), i.d(t, "c", (function() {
-				return Y
+				return $
 			})), i.d(t, "f", (function() {
-				return X
+				return Z
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./src/lib/constants/index.ts"),
@@ -24532,39 +24532,50 @@
 						isSelfPost: i,
 						isSurveyAd: n
 					} = e;
-					if (n) return _.o.EMBED;
-					if (i) return e.content && e.content.richtext ? _.o.RTJSON : _.o.TEXT;
-					if (e.gallery) return _.o.GALLERY;
+					if (n) return _.p.EMBED;
+					if (i) return e.content && e.content.richtext ? _.p.RTJSON : _.p.TEXT;
+					if (e.gallery) return _.p.GALLERY;
 					switch (t && t.typeHint) {
 						case p.e.Image:
-							return _.o.IMAGE;
+							return _.p.IMAGE;
 						case p.e.Gifvideo:
-							return _.o.GIFVIDEO;
+							return _.p.GIFVIDEO;
 						case p.e.Video:
-							return _.o.VIDEO;
+							return _.p.VIDEO;
 						case p.e.Embed:
-							return _.o.EMBED;
+							return _.p.EMBED;
 						case p.e.RPAN:
-							return _.o.LIVEVIDEO;
+							return _.p.LIVEVIDEO;
 						default:
 							return null
 					}
 				},
 				L = e => e.authorOnlyInfo && e.authorOnlyInfo.contentMode === p.d.Markdown ? h.i.MARKDOWN : h.i.RICH_TEXT,
 				k = e => Math.min(e.height, e.width),
-				B = (e, t) => {
-					var i, n, r, s, o, d, a, l, u, c, m, p, h, f, b, g;
+				B = e => {
+					let {
+						media: t,
+						post: i,
+						domain: n
+					} = e;
+					var r, s, o, d, a;
+					const l = n && _.h[n];
+					return (null === (r = null == t ? void 0 : t.video) || void 0 === r ? void 0 : r.embedUrl) && !i.isSurveyAd ? t.video.embedUrl : l === _.w.Twitter ? Object(_.F)(i.id) : (null === (o = null === (s = null == t ? void 0 : t.still) || void 0 === s ? void 0 : s.source) || void 0 === o ? void 0 : o.url) ? null === (a = null === (d = null == t ? void 0 : t.still) || void 0 === d ? void 0 : d.source) || void 0 === a ? void 0 : a.url : null
+				},
+				M = (e, t) => {
+					var i, n, r, s, o, d, a, l, u, c, m, p, h;
 					const {
-						media: v,
-						content: w
-					} = e, y = (e => e.isSpoiler || e.isNsfw)(e) ? v && v.obfuscatedStill && v.obfuscatedStill.source && v.obfuscatedStill.source.url : null;
+						media: f,
+						content: b,
+						domain: g
+					} = e, v = (e => e.isSpoiler || e.isNsfw)(e) ? f && f.obfuscatedStill && f.obfuscatedStill.source && f.obfuscatedStill.source.url : null;
 					switch (t) {
-						case _.o.VIDEO: {
+						case _.p.VIDEO: {
 							const e = 400,
-								i = N(v),
-								n = v && v.still && v.still.source && {
-									url: v.still.source.url,
-									...v.still.source.dimensions
+								i = N(f),
+								n = f && f.still && f.still.source && {
+									url: f.still.source.url,
+									...f.still.source.dimensions
 								};
 							let r;
 							if (i.length) {
@@ -24574,71 +24585,75 @@
 							} else r = n;
 							return {
 								type: t,
-								obfuscated: y,
-								hlsUrl: v && v.streaming && v.streaming.hlsUrl || "",
-								dashUrl: v && v.streaming && v.streaming.dashUrl || "",
-								isGif: !!v && !!v.streaming && v.streaming.isGif,
-								scrubberThumbSource: v && v.streaming && v.streaming.scrubberMediaUrl || "",
-								width: v && v.streaming ? v.streaming.dimensions.width : 0,
-								height: v && v.streaming ? v.streaming.dimensions.height : 0,
+								obfuscated: v,
+								hlsUrl: f && f.streaming && f.streaming.hlsUrl || "",
+								dashUrl: f && f.streaming && f.streaming.dashUrl || "",
+								isGif: !!f && !!f.streaming && f.streaming.isGif,
+								scrubberThumbSource: f && f.streaming && f.streaming.scrubberMediaUrl || "",
+								width: f && f.streaming ? f.streaming.dimensions.width : 0,
+								height: f && f.streaming ? f.streaming.dimensions.height : 0,
 								posterUrl: r && r.url || void 0,
-								richtextContent: (null == w ? void 0 : w.richtext) ? x(w.richtext) : void 0
+								richtextContent: (null == b ? void 0 : b.richtext) ? x(b.richtext) : void 0
 							}
 						}
-						case _.o.LIVEVIDEO:
+						case _.p.LIVEVIDEO:
 							return {
-								type: t, obfuscated: null, hlsUrl: v && v.RPAN && v.RPAN.hlsUrl || "", scrubberThumbSource: v && v.RPAN && v.RPAN.scrubberMediaUrl || ""
+								type: t, obfuscated: null, hlsUrl: f && f.RPAN && f.RPAN.hlsUrl || "", scrubberThumbSource: f && f.RPAN && f.RPAN.scrubberMediaUrl || ""
 							};
-						case _.o.TEXT:
+						case _.p.TEXT:
 							return {
 								type: t, obfuscated: null, markdownContent: e.content ? e.content.markdown : "", content: "", rteMode: L(e)
 							};
-						case _.o.RTJSON:
+						case _.p.RTJSON:
 							return {
-								type: t, obfuscated: null, markdownContent: e.content ? e.content.markdown : "", richtextContent: x(w.richtext), content: "", rteMode: L(e), mediaMetadata: z(e)
+								type: t, obfuscated: null, markdownContent: e.content ? e.content.markdown : "", richtextContent: x(b.richtext), content: "", rteMode: L(e), mediaMetadata: Y(e)
 							};
-						case _.o.IMAGE: {
-							const n = v && v.animated && v.animated.gif_source ? "gif" : null;
+						case _.p.IMAGE: {
+							const n = f && f.animated && f.animated.gif_source ? "gif" : null;
 							let r = "";
-							return "i.redd.it" === e.domain && e.url ? r = e.url : v && v.still && v.still.source && (r = v.still.source.url), {
+							return "i.redd.it" === e.domain && e.url ? r = e.url : f && f.still && f.still.source && (r = f.still.source.url), {
 								type: t,
-								obfuscated: y,
-								resolutions: N(v, n),
-								width: v && v.still && v.still.source ? v.still.source.dimensions.width : 0,
-								height: v && v.still && v.still.source ? v.still.source.dimensions.height : 0,
+								obfuscated: v,
+								resolutions: N(f, n),
+								width: f && f.still && f.still.source ? f.still.source.dimensions.width : 0,
+								height: f && f.still && f.still.source ? f.still.source.dimensions.height : 0,
 								richtextContent: (null === (i = e.content) || void 0 === i ? void 0 : i.richtext) ? x(e.content.richtext) : void 0,
 								content: r
 							}
 						}
-						case _.o.EMBED:
+						case _.p.EMBED:
 							return {
-								type: t, obfuscated: y, width: (null === (r = null === (n = null == v ? void 0 : v.video) || void 0 === n ? void 0 : n.dimensions) || void 0 === r ? void 0 : r.width) || (null === (d = null === (o = null === (s = null == v ? void 0 : v.still) || void 0 === s ? void 0 : s.source) || void 0 === o ? void 0 : o.dimensions) || void 0 === d ? void 0 : d.width) || 0, height: (null === (l = null === (a = null == v ? void 0 : v.video) || void 0 === a ? void 0 : a.dimensions) || void 0 === l ? void 0 : l.height) || (null === (m = null === (c = null === (u = null == v ? void 0 : v.still) || void 0 === u ? void 0 : u.source) || void 0 === c ? void 0 : c.dimensions) || void 0 === m ? void 0 : m.height) || 0, provider: (null === (h = null === (p = null == v ? void 0 : v.video) || void 0 === p ? void 0 : p.attribution) || void 0 === h ? void 0 : h.providerName) || "", content: (null === (f = null == v ? void 0 : v.video) || void 0 === f ? void 0 : f.embedUrl) && !e.isSurveyAd ? v.video.embedUrl : (null === (g = null === (b = null == v ? void 0 : v.still) || void 0 === b ? void 0 : b.source) || void 0 === g ? void 0 : g.url) || ""
+								type: t, obfuscated: v, width: (null === (r = null === (n = null == f ? void 0 : f.video) || void 0 === n ? void 0 : n.dimensions) || void 0 === r ? void 0 : r.width) || (null === (d = null === (o = null === (s = null == f ? void 0 : f.still) || void 0 === s ? void 0 : s.source) || void 0 === o ? void 0 : o.dimensions) || void 0 === d ? void 0 : d.width) || 0, height: (null === (l = null === (a = null == f ? void 0 : f.video) || void 0 === a ? void 0 : a.dimensions) || void 0 === l ? void 0 : l.height) || (null === (m = null === (c = null === (u = null == f ? void 0 : f.still) || void 0 === u ? void 0 : u.source) || void 0 === c ? void 0 : c.dimensions) || void 0 === m ? void 0 : m.height) || 0, provider: (null === (h = null === (p = null == f ? void 0 : f.video) || void 0 === p ? void 0 : p.attribution) || void 0 === h ? void 0 : h.providerName) || g && _.h[g] || null, content: B({
+									media: f,
+									post: e,
+									domain: g
+								})
 							};
-						case _.o.GIFVIDEO:
+						case _.p.GIFVIDEO:
 							return {
-								type: t, obfuscated: y, resolutions: N(v, "mp4"), width: v && v.still && v.still.source ? v.still.source.dimensions.width : 0, height: v && v.still && v.still.source ? v.still.source.dimensions.height : 0, gifBackgroundImage: v && v.still && v.still.source ? v.still.source.url : "", content: v && v.animated && v.animated.mp4_source ? v.animated.mp4_source.url : "", richtextContent: (null == w ? void 0 : w.richtext) ? x(w.richtext) : void 0
+								type: t, obfuscated: v, resolutions: N(f, "mp4"), width: f && f.still && f.still.source ? f.still.source.dimensions.width : 0, height: f && f.still && f.still.source ? f.still.source.dimensions.height : 0, gifBackgroundImage: f && f.still && f.still.source ? f.still.source.url : "", content: f && f.animated && f.animated.mp4_source ? f.animated.mp4_source.url : "", richtextContent: (null == b ? void 0 : b.richtext) ? x(b.richtext) : void 0
 							};
-						case _.o.GALLERY: {
-							const i = $(e.gallery);
+						case _.p.GALLERY: {
+							const i = Q(e.gallery);
 							return {
 								type: t,
 								obfuscated: null,
 								gallery: i ? i.gallery : null,
 								mediaMetadata: i ? i.mediaMetadata : void 0,
-								crossPostRootId: Q(e.crosspostRoot),
-								crossPostParentId: Q(e.crosspostRoot),
+								crossPostRootId: J(e.crosspostRoot),
+								crossPostParentId: J(e.crosspostRoot),
 								numCrossposts: e.crosspostCount || 0,
 								isCrosspostable: e.isCrosspostable,
-								richtextContent: (null == w ? void 0 : w.richtext) ? x(w.richtext) : void 0
+								richtextContent: (null == b ? void 0 : b.richtext) ? x(b.richtext) : void 0
 							}
 						}
 						default:
-							return (null == w ? void 0 : w.richtext) ? {
-								richtextContent: x(w.richtext)
+							return (null == b ? void 0 : b.richtext) ? {
+								richtextContent: x(b.richtext)
 							} : null
 					}
 				},
-				M = {
+				U = {
 					adPromotedUserPostIds: [],
 					adSupplementaryText: null,
 					events: [],
@@ -24648,13 +24663,13 @@
 					isSponsored: !1,
 					isSurveyAd: !1
 				},
-				U = /\.gif\?(.*$)/,
-				G = e => {
+				G = /\.gif\?(.*$)/,
+				q = e => {
 					const t = e.adEvents.find(e => m(e.type) === r.a.Impression),
-						i = t && t.url && t.url.match(U);
+						i = t && t.url && t.url.match(G);
 					return i && i[1] ? `t3_${i[1]}` : null
 				},
-				q = e => {
+				V = e => {
 					const {
 						adEvents: t,
 						adSupplementaryTextRichtext: i,
@@ -24682,8 +24697,8 @@
 						subcaption: l
 					}
 				},
-				V = e => e ? e.toLowerCase() : null,
-				H = e => {
+				H = e => e ? e.toLowerCase() : null,
+				W = e => {
 					let {
 						isLive: t,
 						startsAt: i,
@@ -24697,17 +24712,17 @@
 				};
 			t.a = e => {
 				const t = {
-						post: X(e)
+						post: Z(e)
 					},
 					{
 						crosspostRoot: i
 					} = e;
-				return i && i.type === p.a.Post && i.postInfo && (t.crosspost = X(i.postInfo)), t
+				return i && i.type === p.a.Post && i.postInfo && (t.crosspost = Z(i.postInfo)), t
 			};
-			const W = e => e && e.__typename !== g.c.DeletedRedditor ? "name" in e && e.name || "" : n.H,
-				K = e => !(!e || e.__typename !== g.c.AvailableRedditor) && !!e.isPremiumMember,
-				z = e => e.content && e.content.richtextMedia && e.content.richtextMedia.length ? Y(e.content.richtextMedia) : null,
-				Y = (e, t) => e.length ? e.reduce((e, i) => {
+			const K = e => e && e.__typename !== g.c.DeletedRedditor ? "name" in e && e.name || "" : n.H,
+				z = e => !(!e || e.__typename !== g.c.AvailableRedditor) && !!e.isPremiumMember,
+				Y = e => e.content && e.content.richtextMedia && e.content.richtextMedia.length ? $(e.content.richtextMedia) : null,
+				$ = (e, t) => e.length ? e.reduce((e, i) => {
 					switch (i.__typename) {
 						case p.c.ImageAsset:
 							"image/gif" === i.mimetype ? e[i.id] = {
@@ -24753,7 +24768,7 @@
 					}
 					return e
 				}, {}) : null,
-				$ = e => {
+				Q = e => {
 					if (!(e && "items" in e)) return null;
 					const t = e.items,
 						i = {},
@@ -24798,8 +24813,8 @@
 						mediaMetadata: Object.keys(i).length > 0 ? i : null
 					}
 				},
-				Q = e => e ? e.type === p.a.Post ? e.postInfo && e.postInfo.id : e.comment && e.comment.id : null,
-				J = e => {
+				J = e => e ? e.type === p.a.Post ? e.postInfo && e.postInfo.id : e.comment && e.comment.id : null,
+				X = e => {
 					var t;
 					const {
 						profile: {
@@ -24831,7 +24846,7 @@
 						isQuarantined: l
 					}
 				},
-				X = e => {
+				Z = e => {
 					var t;
 					const {
 						audioRoom: i,
@@ -24859,19 +24874,19 @@
 						permalink: x,
 						removedBy: L,
 						removedByCategory: k,
-						poll: U,
+						poll: B,
 						predictionTournament: G,
-						score: z,
+						score: q,
 						suggestedCommentSort: Y,
 						title: $,
-						topAwardedType: X,
+						topAwardedType: Q,
 						upvoteRatio: Z,
 						viewCount: ee,
 						voteState: te,
 						isReactAllowed: ie,
 						attributionInfo: ne,
 						reactedFrom: re
-					} = e, se = k && "NONE" !== k ? k.toLowerCase() : null, oe = Q(c), de = {
+					} = e, se = k && "NONE" !== k ? k.toLowerCase() : null, oe = J(c), de = {
 						allAwardings: r ? Object(v.b)(r) : void 0,
 						audioRoom: i,
 						author: n.H,
@@ -24911,7 +24926,7 @@
 						isOriginalContent: C,
 						isPinned: !1,
 						isRemoved: !1,
-						isScoreHidden: null === z,
+						isScoreHidden: null === q,
 						isSpam: !1,
 						isSpoiler: A,
 						isStickied: j,
@@ -24925,7 +24940,7 @@
 						numCrossposts: u || 0,
 						numReports: null,
 						permalink: `https://www.reddit.com${x}`,
-						pollData: U && Object(a.a)(U) || void 0,
+						pollData: B && Object(a.a)(B) || void 0,
 						postCategories: null,
 						postId: h,
 						predictionTournament: G && Object(l.a)(G) || void 0,
@@ -24933,7 +24948,7 @@
 						removedBy: L && L.name ? L.name : null,
 						removedByCategory: se,
 						saved: N,
-						score: null !== z && z > 0 ? z : 0,
+						score: null !== q && q > 0 ? q : 0,
 						sendReplies: !1,
 						source: R(e),
 						suggestedSort: Y && n.w[Y] || null,
@@ -24943,12 +24958,12 @@
 							width: null
 						},
 						title: $ || "",
-						topAwardedType: X || void 0,
+						topAwardedType: Q || void 0,
 						upvoteRatio: Z,
 						userReports: [],
 						viewCount: ee || 0,
 						voteState: te ? Object(v.d)(te) : 0,
-						...Object(p.h)(e) ? q(e) : M,
+						...Object(p.h)(e) ? V(e) : U,
 						...Object(d.a)(e)
 					};
 					if (Object(p.i)(e) || Object(p.j)(e)) return de;
@@ -24967,16 +24982,16 @@
 					} : void 0)(pe);
 					return {
 						...de,
-						author: ae && W(ae) || n.H,
+						author: ae && K(ae) || n.H,
 						authorId: ae && ae.id || "",
 						authorIsBlocked: !1,
 						belongsTo: S(e),
-						distinguishType: V(ue),
+						distinguishType: H(ue),
 						isCrosspostable: ce,
 						isMediaOnly: _e,
 						isMeta: me,
-						isAuthorPremium: K(ae),
-						media: B(e, D(e)),
+						isAuthorPremium: z(ae),
+						media: M(e, D(e)),
 						thumbnail: E(e),
 						...fe && {
 							preview: fe
@@ -24985,10 +25000,10 @@
 							sendReplies: le.isReceivingPostReplies
 						},
 						...he && {
-							eventInfo: H(he)
+							eventInfo: W(he)
 						},
 						...Object(p.l)(e) && {
-							profile: J(e)
+							profile: X(e)
 						}
 					}
 				}
@@ -26982,7 +26997,7 @@
 					i.onload = () => t(), i.onerror = () => t(), i.src = e
 				}),
 				E = (e, t, i) => {
-					if (e.media && (e.media.type === r.o.IMAGE || e.media.type === r.o.GIFVIDEO)) {
+					if (e.media && (e.media.type === r.p.IMAGE || e.media.type === r.p.GIFVIDEO)) {
 						const n = e.media.resolutions;
 						for (let e = 0; e < n.length; e++) {
 							const r = n[e];
@@ -31125,27 +31140,27 @@
 		},
 		"./src/reddit/models/Media/index.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "v", (function() {
+			i.d(t, "w", (function() {
 				return n
-			})), i.d(t, "M", (function() {
+			})), i.d(t, "O", (function() {
 				return o
-			})), i.d(t, "N", (function() {
+			})), i.d(t, "P", (function() {
 				return d
-			})), i.d(t, "H", (function() {
+			})), i.d(t, "J", (function() {
 				return a
-			})), i.d(t, "G", (function() {
+			})), i.d(t, "I", (function() {
 				return l
 			})), i.d(t, "F", (function() {
 				return u
-			})), i.d(t, "E", (function() {
+			})), i.d(t, "H", (function() {
 				return c
-			})), i.d(t, "K", (function() {
+			})), i.d(t, "G", (function() {
 				return _
-			})), i.d(t, "o", (function() {
+			})), i.d(t, "M", (function() {
 				return m
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "p", (function() {
 				return p
-			})), i.d(t, "j", (function() {
+			})), i.d(t, "a", (function() {
 				return h
 			})), i.d(t, "k", (function() {
 				return f
@@ -31153,60 +31168,64 @@
 				return b
 			})), i.d(t, "m", (function() {
 				return g
-			})), i.d(t, "z", (function() {
-				return v
-			})), i.d(t, "i", (function() {
-				return w
-			})), i.d(t, "p", (function() {
-				return y
-			})), i.d(t, "y", (function() {
-				return E
-			})), i.d(t, "c", (function() {
-				return S
 			})), i.d(t, "n", (function() {
-				return T
+				return v
+			})), i.d(t, "A", (function() {
+				return w
+			})), i.d(t, "j", (function() {
+				return y
 			})), i.d(t, "q", (function() {
+				return E
+			})), i.d(t, "z", (function() {
+				return S
+			})), i.d(t, "c", (function() {
+				return T
+			})), i.d(t, "o", (function() {
 				return O
 			})), i.d(t, "r", (function() {
 				return I
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "s", (function() {
 				return R
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "e", (function() {
 				return F
-			})), i.d(t, "t", (function() {
+			})), i.d(t, "f", (function() {
 				return C
 			})), i.d(t, "u", (function() {
 				return N
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "v", (function() {
 				return A
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "h", (function() {
 				return j
-			})), i.d(t, "s", (function() {
+			})), i.d(t, "i", (function() {
 				return P
-			})), i.d(t, "x", (function() {
+			})), i.d(t, "b", (function() {
 				return x
-			})), i.d(t, "w", (function() {
+			})), i.d(t, "t", (function() {
 				return D
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "y", (function() {
 				return L
-			})), i.d(t, "g", (function() {
+			})), i.d(t, "x", (function() {
 				return k
-			})), i.d(t, "A", (function() {
+			})), i.d(t, "d", (function() {
 				return B
-			})), i.d(t, "D", (function() {
+			})), i.d(t, "g", (function() {
 				return M
-			})), i.d(t, "C", (function() {
-				return U
-			})), i.d(t, "L", (function() {
-				return G
 			})), i.d(t, "B", (function() {
+				return U
+			})), i.d(t, "E", (function() {
+				return G
+			})), i.d(t, "D", (function() {
 				return q
-			})), i.d(t, "O", (function() {
+			})), i.d(t, "N", (function() {
 				return V
-			})), i.d(t, "J", (function() {
+			})), i.d(t, "C", (function() {
 				return H
-			})), i.d(t, "I", (function() {
+			})), i.d(t, "Q", (function() {
 				return W
+			})), i.d(t, "L", (function() {
+				return K
+			})), i.d(t, "K", (function() {
+				return z
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n, r = i("./node_modules/node-libs-browser/node_modules/url/url.js"),
@@ -31214,14 +31233,15 @@
 			! function(e) {
 				e.YouTube = "YouTube", e.Vimeo = "Vimeo", e.BandCamp = "BandCamp", e.Clyp = "Clyp", e.Gfycat = "Gfycat", e.GfycatOld = "gfycat", e.Giphy = "Giphy", e.Imgur = "Imgur", e.RedGIFS = "RedGIFS", e.SoundCloud = "SoundCloud", e.Spotify = "Spotify", e.Streamable = "Streamable", e.Twitch = "Twitch.tv", e.Twitter = "Twitter", e.IFrameEmbed = "iframe embed"
 			}(n || (n = {}));
-			const o = e => e.type === m.TEXT,
-				d = e => e.type === m.VIDEO,
-				a = e => e.type === m.LIVEVIDEO,
-				l = e => e.type === m.LIVEAUDIO,
-				u = e => e.type === m.IMAGE,
-				c = e => e.type === m.GALLERY,
-				_ = e => "rtjson" === e.type,
-				m = {
+			const o = e => e.type === p.TEXT,
+				d = e => e.type === p.VIDEO,
+				a = e => e.type === p.LIVEVIDEO,
+				l = e => e.type === p.LIVEAUDIO,
+				u = e => `https://www.redditmedia.com/mediaembed/${e.replace("t3_","")}`,
+				c = e => e.type === p.IMAGE,
+				_ = e => e.type === p.GALLERY,
+				m = e => "rtjson" === e.type,
+				p = {
 					LIVEAUDIO: "liveaudio",
 					TEXT: "text",
 					VIDEO: "video",
@@ -31232,38 +31252,50 @@
 					LIVEVIDEO: "rpan",
 					GALLERY: "gallery"
 				},
-				p = new Set([m.TEXT, m.IMAGE, m.RTJSON, m.GALLERY]),
-				h = (new Set([n.YouTube, n.Vimeo, n.Streamable, n.Twitch, n.Gfycat, n.GfycatOld, n.RedGIFS]), 512),
-				f = 250,
-				b = 60,
-				g = 0,
-				v = 608,
-				w = 40,
-				y = 160,
-				E = 143.5,
-				S = .5625,
-				T = 869,
-				O = 273,
-				I = 486,
-				R = 700,
-				F = 822,
-				C = 363,
-				N = 645,
-				A = new Set([n.Clyp, n.Gfycat, n.GfycatOld, n.Giphy, n.RedGIFS, n.SoundCloud, n.Spotify, n.Twitter, n.Vimeo, n.YouTube]),
-				j = new Set([n.BandCamp, n.Gfycat, n.GfycatOld, n.Giphy, n.Imgur, n.RedGIFS, n.SoundCloud, n.Spotify, n.Streamable, n.Twitch, n.Twitter, n.YouTube, n.Vimeo]),
-				P = new Set([n.SoundCloud, n.Spotify, n.Streamable, n.Twitter, n.Vimeo, n.YouTube]),
-				x = new Set([n.Gfycat, n.GfycatOld, n.Imgur, n.RedGIFS]),
-				D = ["gif", "jpeg", "jpg", "png", "tiff"],
-				L = new Set([m.VIDEO, m.GIFVIDEO, m.EMBED, m.LIVEVIDEO]);
-			var k, B;
+				h = new Set([p.TEXT, p.IMAGE, p.RTJSON, p.GALLERY]),
+				f = (new Set([n.YouTube, n.Vimeo, n.Streamable, n.Twitch, n.Gfycat, n.GfycatOld, n.RedGIFS]), 512),
+				b = 250,
+				g = 60,
+				v = 0,
+				w = 608,
+				y = 40,
+				E = 160,
+				S = 143.5,
+				T = .5625,
+				O = 869,
+				I = 273,
+				R = 486,
+				F = 700,
+				C = 822,
+				N = 363,
+				A = 645,
+				j = {
+					"clyp.it": n.Clyp,
+					"gfycat.com": n.Gfycat,
+					"giphy.com": n.Giphy,
+					"redgifs.com": n.RedGIFS,
+					"soundcloud.com": n.SoundCloud,
+					"open.spotify.com": n.Spotify,
+					"twitter.com": n.Twitter,
+					"vimeo.com": n.Vimeo,
+					"youtube.com": n.YouTube,
+					"youtu.be": n.YouTube
+				},
+				P = new Set([n.Clyp, n.Gfycat, n.GfycatOld, n.Giphy, n.RedGIFS, n.SoundCloud, n.Spotify, n.Twitter, n.Vimeo, n.YouTube]),
+				x = new Set([n.BandCamp, n.Gfycat, n.GfycatOld, n.Giphy, n.Imgur, n.RedGIFS, n.SoundCloud, n.Spotify, n.Streamable, n.Twitch, n.Twitter, n.YouTube, n.Vimeo]),
+				D = new Set([n.SoundCloud, n.Spotify, n.Streamable, n.Twitter, n.Vimeo, n.YouTube]),
+				L = new Set([n.Gfycat, n.GfycatOld, n.Imgur, n.RedGIFS]),
+				k = ["gif", "jpeg", "jpg", "png", "tiff"],
+				B = new Set([p.VIDEO, p.GIFVIDEO, p.EMBED, p.LIVEVIDEO]);
+			var M, U;
 			! function(e) {
 				e.Mute = "mute", e.Pause = "pause", e.Play = "play"
-			}(k || (k = {})),
+			}(M || (M = {})),
 			function(e) {
 				e.Pause = "pauseVideo", e.Play = "playVideo", e.Mute = "mute"
-			}(B || (B = {}));
-			const M = e => e.source ? e.source.url : e.media && e.media.type !== m.VIDEO && e.media.type !== m.LIVEVIDEO && e.media.type !== m.LIVEAUDIO && e.media.content ? e.media.content : "",
-				U = e => {
+			}(U || (U = {}));
+			const G = e => e.source ? e.source.url : e.media && e.media.type !== p.VIDEO && e.media.type !== p.LIVEVIDEO && e.media.type !== p.LIVEAUDIO && e.media.content ? e.media.content : "",
+				q = e => {
 					if (!d(e)) return;
 					const t = e;
 					let i;
@@ -31277,22 +31309,22 @@
 						if (t && t.pathname) return t.pathname.split("/")[1]
 					})(i)
 				},
-				G = (e, t) => {
+				V = (e, t) => {
 					return e / t > 16 / 9
 				},
-				q = (e, t, i) => i ? 100 * i : e && t ? e / t * 100 : 100 * S,
-				V = e => {
-					const t = M(e);
+				H = (e, t, i) => i ? 100 * i : e && t ? e / t * 100 : 100 * T,
+				W = e => {
+					const t = G(e);
 					return "v.redd.it" === s.a.parse(t).hostname
 				},
-				H = e => {
+				K = e => {
 					var t, i, n, r, s, o;
 					return (null === (t = e.media) || void 0 === t ? void 0 : t.hasOwnProperty("content")) || (null === (i = e.media) || void 0 === i ? void 0 : i.hasOwnProperty("dashUrl")) || (null === (n = e.media) || void 0 === n ? void 0 : n.hasOwnProperty("hlsUrl")) || (null === (r = e.media) || void 0 === r ? void 0 : r.hasOwnProperty("gallery")) || !!((null === (o = null === (s = null == e ? void 0 : e.media) || void 0 === s ? void 0 : s.richtextContent) || void 0 === o ? void 0 : o.document.length) > 0) || !!(null == e ? void 0 : e.thumbnail)
 				},
-				W = e => {
+				z = e => {
 					var t, i, n, r, s;
 					const o = null == e ? void 0 : e.media;
-					return o && _(o) ? "[unavailable]" === (null === (s = null === (r = null === (n = null === (i = null === (t = null == o ? void 0 : o.richtextContent) || void 0 === t ? void 0 : t.document) || void 0 === i ? void 0 : i[0]) || void 0 === n ? void 0 : n.c) || void 0 === r ? void 0 : r[0]) || void 0 === s ? void 0 : s.t) : o && c(o) ? null === o.gallery : void 0
+					return o && m(o) ? "[unavailable]" === (null === (s = null === (r = null === (n = null === (i = null === (t = null == o ? void 0 : o.richtextContent) || void 0 === t ? void 0 : t.document) || void 0 === i ? void 0 : i[0]) || void 0 === n ? void 0 : n.c) || void 0 === r ? void 0 : r[0]) || void 0 === s ? void 0 : s.t) : o && _(o) ? null === o.gallery : void 0
 				}
 		},
 		"./src/reddit/models/ModQueue/index.ts": function(e, t, i) {
@@ -32249,7 +32281,7 @@
 			}(E || (E = {}));
 			const N = e => e.belongsTo.type === d.a.PROFILE,
 				A = e => e.belongsTo.type === d.a.SUBREDDIT,
-				j = e => !!e.media && e.media.type === u.o.LIVEVIDEO,
+				j = e => !!e.media && e.media.type === u.p.LIVEVIDEO,
 				P = e => !!e.audioRoom,
 				x = e => {
 					const {
@@ -32260,7 +32292,7 @@
 					return (!i || !i.type) && !!e.source && Object(o.a)(e.source.url)
 				},
 				D = e => !!e.subcaption,
-				L = (e, t) => D(e) || ((e, t) => !!e.media && Object(u.E)(e.media) && !Object(_.b)(t))(e, t),
+				L = (e, t) => D(e) || ((e, t) => !!e.media && Object(u.G)(e.media) && !Object(_.b)(t))(e, t),
 				k = e => e.isStickied && !e.isSponsored,
 				B = e => R(e) && e.promotedUserPosts ? e.promotedUserPosts : [];
 			var M;
@@ -36401,7 +36433,7 @@
 						predictionTournament: o(t)
 					} : i
 				},
-				v = e => e.media && Object(l.E)(e.media) ? {
+				v = e => e.media && Object(l.G)(e.media) ? {
 					...Object(n.unsetIn)(e, ["source"])
 				} : e,
 				w = e => t => {
@@ -36410,7 +36442,7 @@
 				},
 				y = e => t => {
 					const i = e[t.id];
-					return t && t.media && i && i.media && Object(l.K)(t.media) && t.media.isRichtextPreview && Object(l.K)(i.media) && !i.media.isRichtextPreview && (t.media.richtextContent = i.media.richtextContent, t.media.isRichtextPreview = !1), t
+					return t && t.media && i && i.media && Object(l.M)(t.media) && t.media.isRichtextPreview && Object(l.M)(i.media) && !i.media.isRichtextPreview && (t.media.richtextContent = i.media.richtextContent, t.media.isRichtextPreview = !1), t
 				},
 				E = e => t => {
 					const i = e[t.id];
@@ -37923,14 +37955,14 @@
 					const n = Object(u.V)(e, i);
 					return n && n.displayText || i && i.author && Object(o.e)(i.author)
 				},
-				h = (e, t, i) => Object(_.f)(e) && !Object(_.j)(e) && !!t && !!t.title && !t.isNSFW && !!t.media && (Object(d.F)(t.media) || Object(d.K)(t.media)) && (e => !!e && !!e.media && (Object(d.F)(e.media) && (e => /https?:\/\/i\.redd\.it/.test(e))(e.media.content) || Object(d.K)(e.media) && e.media.richtextContent && e.media.richtextContent.document && e.media.richtextContent.document.some(e => {
+				h = (e, t, i) => Object(_.f)(e) && !Object(_.j)(e) && !!t && !!t.title && !t.isNSFW && !!t.media && (Object(d.H)(t.media) || Object(d.M)(t.media)) && (e => !!e && !!e.media && (Object(d.H)(e.media) && (e => /https?:\/\/i\.redd\.it/.test(e))(e.media.content) || Object(d.M)(e.media) && e.media.richtextContent && e.media.richtextContent.document && e.media.richtextContent.document.some(e => {
 					let {
 						e: t
 					} = e;
 					return t === a.m
 				})))(t) && (i && !t.media.altText || !i),
 				f = (e, t) => {
-					const i = !!t && !!t.media && (Object(d.F)(t.media) || Object(d.K)(t.media)) && t.media.altText;
+					const i = !!t && !!t.media && (Object(d.H)(t.media) || Object(d.M)(t.media)) && t.media.altText;
 					return h(e, t, !1) && !!i && i.length <= 250 && t.title.toLowerCase() !== i.toLowerCase()
 				},
 				b = Object(n.a)(c.R, m, (e, t) => !e && t),
@@ -37954,7 +37986,7 @@
 					const i = Object(u.G)(e, {
 						postId: t
 					});
-					return i && i.media && (Object(d.F)(i.media) || Object(d.K)(i.media)) ? i.media.altText : null
+					return i && i.media && (Object(d.H)(i.media) || Object(d.M)(i.media)) ? i.media.altText : null
 				},
 				S = e => !!Object(s.b)(e, {
 					experimentEligibilitySelector: s.a,
@@ -39447,8 +39479,8 @@
 						postId: i
 					});
 					let r = null;
-					return n && (n.media && n.media.type !== a.o.GIFVIDEO && (r = Object(d.f)(n, 2 * s.b, 2 * s.a) || Object(d.f)(n, s.b, s.a)), !r && n.thumbnail && n.thumbnail.width && n.thumbnail.height && (r = n.thumbnail, (n.isNSFW || n.isSpoiler) && (r = (e => {
-						if (!e || e.type === a.o.RTJSON || e.type === a.o.TEXT || e.type === a.o.LIVEVIDEO || e.type === a.o.GALLERY) return null;
+					return n && (n.media && n.media.type !== a.p.GIFVIDEO && (r = Object(d.f)(n, 2 * s.b, 2 * s.a) || Object(d.f)(n, s.b, s.a)), !r && n.thumbnail && n.thumbnail.width && n.thumbnail.height && (r = n.thumbnail, (n.isNSFW || n.isSpoiler) && (r = (e => {
+						if (!e || e.type === a.p.RTJSON || e.type === a.p.TEXT || e.type === a.p.LIVEVIDEO || e.type === a.p.GALLERY) return null;
 						const t = e.obfuscated;
 						return t ? {
 							url: t,
@@ -40501,7 +40533,7 @@
 					const n = C(e, {
 						postId: i
 					});
-					if (n && n.media && n.media.type === u.o.GALLERY && n.media.gallery) {
+					if (n && n.media && n.media.type === u.p.GALLERY && n.media.gallery) {
 						const t = Object(h.d)(e, n.id);
 						return n.media.gallery.items[t]
 					}
@@ -40587,7 +40619,7 @@
 						const e = Object.keys(i).length;
 						c.eventGlobalCount = e
 					}
-					if (t && t.media && Object(u.N)(t.media)) {
+					if (t && t.media && Object(u.P)(t.media)) {
 						const n = Object(v.h)(e, {
 								postId: t.id
 							}),
@@ -40692,7 +40724,7 @@
 					});
 					if (!n) return "";
 					let r = n.permalink;
-					if (n.media && Object(u.H)(n.media)) {
+					if (n.media && Object(u.J)(n.media)) {
 						const {
 							id: t,
 							type: i
@@ -41490,7 +41522,7 @@
 						l = Object(_.G)(e, {
 							postId: r
 						});
-					return !(!l || !l.media) && (l.media.type === o.o.IMAGE || l.media.type === o.o.RTJSON && l.media.richtextContent && l.media.richtextContent.document && l.media.richtextContent.document.some(e => {
+					return !(!l || !l.media) && (l.media.type === o.p.IMAGE || l.media.type === o.p.RTJSON && l.media.richtextContent && l.media.richtextContent.document && l.media.richtextContent.document.some(e => {
 						let {
 							e: t
 						} = e;
@@ -43376,7 +43408,7 @@
 					if (void 0 === n) return null;
 					const r = {};
 					if (r.id = n.postId, n.media && "v.redd.it" === n.domain) {
-						const e = Object($.C)(n.media);
+						const e = Object($.D)(n.media);
 						e && (r.id = e)
 					}
 					if (i) r.loadTime = i;
@@ -43391,7 +43423,7 @@
 				},
 				pt = (e, t, i) => {
 					const n = e.posts.models[t];
-					if (void 0 === n || !n.media || !Object($.E)(n.media)) return null;
+					if (void 0 === n || !n.media || !Object($.G)(n.media)) return null;
 					let r, s, o, d;
 					if (n.media.mediaMetadata && n.media.gallery) {
 						d = n.media.gallery.items.map(e => e.mediaId);
@@ -50660,4 +50692,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.653c81f4e90ba6580e85.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8a6abac16e4f60e77924.js.map

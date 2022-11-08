@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.23d8086cf4393abf2de1.js
-// Retrieved at 11/8/2022, 12:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.2d8999c9a47eefd34963.js
+// Retrieved at 11/8/2022, 1:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -1532,7 +1532,7 @@
 						listingKey: O
 					}), j = c && (a || !_ || 0 === _.length), E = a, k = i, w = Object(re.G)(x, {
 						postId: u
-					}), I = !!w && !!w.media && (Object(U.K)(w.media) || Object(U.F)(w.media)) && !w.media.altText;
+					}), I = !!w && !!w.media && (Object(U.M)(w.media) || Object(U.H)(w.media)) && !w.media.altText;
 					if (!(C || j || E || k || I || l)) return;
 					C && t(Object(_e.d)({
 						key: f
@@ -1740,7 +1740,7 @@
 								experimentEligibilitySelector: te,
 								experimentName: Q.rf
 							}))(s())) return void t(Object(o.c)(r.url));
-						if ((H.media && H.media.type) === U.o.LIVEVIDEO) {
+						if ((H.media && H.media.type) === U.p.LIVEVIDEO) {
 							const e = `/rpan${H.belongsTo.type===A.a.SUBREDDIT?r.url:"/"}${Object(C.D)(H.id)}`;
 							return void t(Object(o.c)(e))
 						}
@@ -6515,7 +6515,7 @@
 			const i = /(?:reddit\.com\/r\/)(?<subreddit>[\w]+)(?:\/comments\/)?(?<postId>[\w]+)?/,
 				a = e => {
 					var t, s, a;
-					if ((null == e ? void 0 : e.media) && Object(o.K)(e.media) && (null === (s = null === (t = e.media.richtextContent) || void 0 === t ? void 0 : t.document) || void 0 === s ? void 0 : s.length) > 0) {
+					if ((null == e ? void 0 : e.media) && Object(o.M)(e.media) && (null === (s = null === (t = e.media.richtextContent) || void 0 === t ? void 0 : t.document) || void 0 === s ? void 0 : s.length) > 0) {
 						const t = Object(r.f)(e.media.richtextContent.document, !0);
 						return 0 === t.length ? [] : null === (a = t.reduce) || void 0 === a ? void 0 : a.call(t, (e, t) => {
 							var s;
@@ -7987,7 +7987,7 @@
 						expiresAt: 0
 					}))
 				}
-			}), It = e => e.media && e.media.type === M.o.EMBED && e.media.provider === M.v.Imgur && e.media.height > 700, Pt = new h.a, St = "VISIBLE", Nt = "NOT_VISIBLE", Tt = e => Pt.publish(e ? St : Nt), Lt = {
+			}), It = e => e.media && e.media.type === M.p.EMBED && e.media.provider === M.w.Imgur && e.media.height > 700, Pt = new h.a, St = "VISIBLE", Nt = "NOT_VISIBLE", Tt = e => Pt.publish(e ? St : Nt), Lt = {
 				threshold: [.85, .001],
 				rootMargin: `${1-Pe.f}px 0px 0px 0px`
 			}, Ft = e => {
@@ -8095,7 +8095,7 @@
 					subredditOrProfile: Ve,
 					userIsOp: He,
 					pageLayer: ze
-				} = e, Ge = Object(we.b)(), qe = Object(o.useRef)(null), [Ke, Ye] = Object(o.useState)(Te.authorIsBlocked), Qe = Object(M.J)(Te), Ze = Object(a.e)(e => Object(W.a)(e, {
+				} = e, Ge = Object(we.b)(), qe = Object(o.useRef)(null), [Ke, Ye] = Object(o.useState)(Te.authorIsBlocked), Qe = Object(M.L)(Te), Ze = Object(a.e)(e => Object(W.a)(e, {
 					post: Te,
 					pageLayer: ze
 				})), Je = Object(c.a)(Te), Xe = U || z, et = Xe || V || H || G, tt = !!(_ && (null == Ve ? void 0 : Ve.isNSFW));
@@ -8123,7 +8123,7 @@
 						const [n, r] = e ? [Object(v.e)(e) === s.author, e.isEmployee] : [!1, !1];
 						return n || t || r
 					})(n, bt, Te),
-					ft = !!Te.media && (Te.media.type === M.o.RTJSON || Te.media.type === M.o.TEXT),
+					ft = !!Te.media && (Te.media.type === M.p.RTJSON || Te.media.type === M.p.TEXT),
 					Ct = He && ft,
 					_t = Object(ce.a)(Te),
 					kt = Object(me.c)(Te);
@@ -8139,10 +8139,10 @@
 					Tt = Te.removedByCategory === A.g.AuthorDeleted,
 					Mt = n && (n.displayText === Te.author || n.username === Te.author),
 					Dt = !!Te.unrepliableReason,
-					Wt = !Ke && !Tt && !It(Te) && (Mt || f || !(Te.removedByCategory && Te.media && (Object(M.M)(Te.media) || Object(M.K)(Te.media) || Object(M.E)(Te.media)))),
+					Wt = !Ke && !Tt && !It(Te) && (Mt || f || !(Te.removedByCategory && Te.media && (Object(M.O)(Te.media) || Object(M.M)(Te.media) || Object(M.G)(Te.media)))),
 					Ut = Ze && Te.source;
 				let Vt;
-				Te.media && Te.media.type !== M.o.TEXT && (Vt = Te.media.richtextContent);
+				Te.media && Te.media.type !== M.p.TEXT && (Vt = Te.media.richtextContent);
 				const Ht = Object(m.t)(Te, h),
 					{
 						source: zt
@@ -8181,7 +8181,7 @@
 					$t = Object(oe.b)(Te),
 					es = () => {
 						const t = !(Dt && Ke),
-							n = Object(M.I)(Te);
+							n = Object(M.K)(Te);
 						return Dt && n ? i.a.createElement(gt, null) : Ke ? i.a.createElement($e, {
 							onBannerClick: () => Ye(!1),
 							isExpandable: Qe
@@ -8308,7 +8308,7 @@
 						shouldShowFollowButton: Kt && !t,
 						isFollowed: F,
 						onFollowPostClick: Yt
-					}), Qt, es(), Object(M.O)(Te) && i.a.createElement(Et, {
+					}), Qt, es(), Object(M.Q)(Te) && i.a.createElement(Et, {
 						post: Te
 					}), i.a.createElement(se.a, {
 						className: I ? xt.a.leftPadding : void 0,
@@ -8700,7 +8700,7 @@
 				}), W && o.a.createElement(v.b, {
 					isSponsored: B.isSponsored,
 					postId: B.id,
-					href: Object(O.D)(B),
+					href: Object(O.E)(B),
 					source: B.source
 				}, o.a.createElement(y.a, {
 					className: k.a.outboundLinkIcon
@@ -9155,7 +9155,7 @@
 						post: L,
 						url: void 0,
 						usePreview: !1
-					}), $ = X && Object(B.a)(X), ee = !!L.media && Object(A.H)(L.media), te = !j, se = Object(n.useMemo)(() => q ? void 0 : Object(D.a)(H, e => r.a.createElement("span", {
+					}), $ = X && Object(B.a)(X), ee = !!L.media && Object(A.J)(L.media), te = !j, se = Object(n.useMemo)(() => q ? void 0 : Object(D.a)(H, e => r.a.createElement("span", {
 						className: Object(o.a)(U.a.syntaxHighlight)
 					}, e), e => e), [q, H]), ne = {
 						flairStyleTemplate: K,
@@ -10650,7 +10650,7 @@
 				}),
 				_ = Object(d.b)(O),
 				j = C.a.wrapped(b.a, "ThemedWidget", v.a),
-				E = e => !(!e || e.isBlank) && (!e.isMediaOnly || !!(e.media && Object(f.F)(e.media) && e.media.content)),
+				E = e => !(!e || e.isBlank) && (!e.isMediaOnly || !!(e.media && Object(f.H)(e.media) && e.media.content)),
 				k = [{
 					img: "/img/house-ads/eatcheapandhealthy.png",
 					href: "/r/eatcheapandhealthy"
@@ -16581,4 +16581,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.23d8086cf4393abf2de1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.2d8999c9a47eefd34963.js.map

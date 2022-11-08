@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.473d196186d6f1845e60.js
-// Retrieved at 11/8/2022, 12:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.0f24e67317547ed0ecd7.js
+// Retrieved at 11/8/2022, 1:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -2149,10 +2149,10 @@
 					Be = le && ee.a,
 					ze = Object(A.a)(ve),
 					Ue = Object(F.c)(ve),
-					We = !!ve.media && ve.media.type === Z.o.RTJSON,
+					We = !!ve.media && ve.media.type === Z.p.RTJSON,
 					Ve = Pe && We,
 					qe = v && !Ce,
-					Ge = !!ve.media && Object(Z.H)(ve.media),
+					Ge = !!ve.media && Object(Z.J)(ve.media),
 					He = !!ve.recommendationContext,
 					Ke = {
 						flairStyleTemplate: Re,
@@ -4795,7 +4795,7 @@
 						showRealtimeUpdateAnimation: nt,
 						isUpdatedContent: ot,
 						isNightMode: rt
-					} = e, at = Object(_.a)(), it = Ze, ct = !!e.redditStyle || !!e["data-redditstyle"], dt = ct ? void 0 : C, lt = Object(l.a)(Te), mt = Le && lt, ut = Object(c.a)(Te), pt = Object(d.a)(Te), bt = Object(G.c)(De), ht = Object(V.a)(De), ft = !!De.media && De.media.type === y.o.RTJSON, xt = Qe && ft, vt = s ? s - Y.a : void 0, gt = !!De.recommendationContext, _t = !(le && ve || ke) || gt && ve, yt = (e => e === je.gf.OnlyTitles)(ze) && !Object(pe.a)(De), Et = (e => e === je.gf.MediumHeight)(ze) && !Object(pe.a)(De), Ot = (e => {
+					} = e, at = Object(_.a)(), it = Ze, ct = !!e.redditStyle || !!e["data-redditstyle"], dt = ct ? void 0 : C, lt = Object(l.a)(Te), mt = Le && lt, ut = Object(c.a)(Te), pt = Object(d.a)(Te), bt = Object(G.c)(De), ht = Object(V.a)(De), ft = !!De.media && De.media.type === y.p.RTJSON, xt = Qe && ft, vt = s ? s - Y.a : void 0, gt = !!De.recommendationContext, _t = !(le && ve || ke) || gt && ve, yt = (e => e === je.gf.OnlyTitles)(ze) && !Object(pe.a)(De), Et = (e => e === je.gf.MediumHeight)(ze) && !Object(pe.a)(De), Ot = (e => {
 						var t;
 						const {
 							post: s,
@@ -4811,7 +4811,7 @@
 							hasBottomCompactPostStyles: a,
 							showPinnnedHeader: r
 						}
-					})(e), Ct = Object(r.d)(), kt = Object(r.e)(Ce.b), jt = Object(r.e)(Ce.c), wt = Object(r.e)(P.kb), Pt = Object(ye.a)(), St = De.media && Object(y.H)(De.media) ? Object(xe.c)(De.id, it.name) : De.permalink, Nt = e.isCommentPermalink ? Object(he.b)(St) : Object(I.a)(St, void 0, Pt), It = !!(null == w ? void 0 : w.shouldShowLinkedPosts), Tt = (!ee || It || Ge) && !De.isSponsored, Lt = Object(S.t)(De, T), {
+					})(e), Ct = Object(r.d)(), kt = Object(r.e)(Ce.b), jt = Object(r.e)(Ce.c), wt = Object(r.e)(P.kb), Pt = Object(ye.a)(), St = De.media && Object(y.J)(De.media) ? Object(xe.c)(De.id, it.name) : De.permalink, Nt = e.isCommentPermalink ? Object(he.b)(St) : Object(I.a)(St, void 0, Pt), It = !!(null == w ? void 0 : w.shouldShowLinkedPosts), Tt = (!ee || It || Ge) && !De.isSponsored, Lt = Object(S.t)(De, T), {
 						source: Rt
 					} = Lt, At = Object(n.useRef)(null), Mt = Object(n.useCallback)(e => {
 						e.forEach(e => {
@@ -4827,8 +4827,8 @@
 					}, [Ft, at, Je]), zt = De.isSponsored && !(De.media && y.a.has(De.media.type)) && !$e, Ut = !!(te && (null == Ze ? void 0 : Ze.isNSFW)), Wt = Object(n.useRef)({
 						renderingObjectInfo: De
 					}), Vt = Object(n.useCallback)(e => {
-						!kt && !jt || De.media && Object(y.H)(De.media) || (e.preventDefault(), Ct(Object(u.ab)(Object(he.b)(De.permalink), De.id)))
-					}, [Ct, kt, jt, De.id, De.media, De.permalink]), qt = De && De.media && (De.media.type === y.o.TEXT || De.media.type === y.o.RTJSON), Gt = Object(E.s)(De);
+						!kt && !jt || De.media && Object(y.J)(De.media) || (e.preventDefault(), Ct(Object(u.ab)(Object(he.b)(De.permalink), De.id)))
+					}, [Ct, kt, jt, De.id, De.media, De.permalink]), qt = De && De.media && (De.media.type === y.p.TEXT || De.media.type === y.p.RTJSON), Gt = Object(E.s)(De);
 					return o.a.createElement(v.b, null, o.a.createElement(J.b, {
 						className: Object(N.a)(Be.a.container, i, ge.a.largeAndMediumPostStyles, ge.a.largeAndMediumActiveStyles, Object(m.a)(e), {
 							[ge.a.mUseRedditTheme]: ct,
@@ -4918,10 +4918,10 @@
 						className: Be.a.adSupplementaryText,
 						post: De,
 						size: ae.b.Large
-					}), De.source && !De.isSponsored && !(De.media && Object(y.H)(De.media)) && !Ut && o.a.createElement(o.a.Fragment, null, o.a.createElement(ce.a, {
+					}), De.source && !De.isSponsored && !(De.media && Object(y.J)(De.media)) && !Ut && o.a.createElement(o.a.Fragment, null, o.a.createElement(ce.a, {
 						className: Be.a.sourceLink,
 						post: De
-					}), et && De.media && De.media.type !== y.o.TEXT && De.media.type !== y.o.IMAGE && De.media.richtextContent && o.a.createElement(x.a, {
+					}), et && De.media && De.media.type !== y.p.TEXT && De.media.type !== y.p.IMAGE && De.media.richtextContent && o.a.createElement(x.a, {
 						content: De.media.richtextContent,
 						rtJsonElementProps: Wt.current
 					}))), o.a.createElement("div", {
@@ -6588,7 +6588,7 @@
 				}), z && r.a.createElement(g.b, {
 					isSponsored: D.isSponsored,
 					postId: D.id,
-					href: Object(E.D)(D),
+					href: Object(E.E)(D),
 					source: D.source
 				}, r.a.createElement(y.a, {
 					className: j.a.outboundLinkIcon
@@ -9703,7 +9703,7 @@
 						userIsOp: y
 					} = e, {
 						media: E
-					} = o || h, O = E && E.type, C = Object(we.b)(h.id), k = O === Le.o.RTJSON, j = y && k, P = Object(Te.a)(u), S = Object(Ne.a)(u), N = Object(Ie.a)(u), I = E && O !== Le.o.RTJSON && O !== Le.o.TEXT, T = O === Le.o.VIDEO || O === Le.o.GIFVIDEO || O === Le.o.LIVEVIDEO, R = Object(Re.q)(h), A = E && a.a.createElement(Ce.a, {
+					} = o || h, O = E && E.type, C = Object(we.b)(h.id), k = O === Le.p.RTJSON, j = y && k, P = Object(Te.a)(u), S = Object(Ne.a)(u), N = Object(Ie.a)(u), I = E && O !== Le.p.RTJSON && O !== Le.p.TEXT, T = O === Le.p.VIDEO || O === Le.p.GIFVIDEO || O === Le.p.LIVEVIDEO, R = Object(Re.q)(h), A = E && a.a.createElement(Ce.a, {
 						autoplayPref: t,
 						availableWidth: s,
 						className: ot.a.media,
@@ -10335,4 +10335,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.473d196186d6f1845e60.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.0f24e67317547ed0ecd7.js.map

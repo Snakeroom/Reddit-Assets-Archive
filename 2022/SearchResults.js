@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.a7f4ddef5a9779066e78.js
-// Retrieved at 11/8/2022, 12:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.78f2140ed9a8001bff59.js
+// Retrieved at 11/8/2022, 1:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -3210,8 +3210,8 @@
 						id: d ? d(l.id) : l.id,
 						tabIndex: -1,
 						"data-adclicklocation": j.a.BACKGROUND
-					}, s), C = !!l.media && l.media.type === b.o.VIDEO;
-					return (e => l.media && Object(b.E)(l.media) && v ? r.a.createElement(m, {
+					}, s), C = !!l.media && l.media.type === b.p.VIDEO;
+					return (e => l.media && Object(b.G)(l.media) && v ? r.a.createElement(m, {
 						postId: l.id
 					}, e) : e)((e => l.isSponsored || C ? r.a.createElement(a.a, {
 						post: l,
@@ -3702,7 +3702,7 @@
 						post: R,
 						url: void 0,
 						usePreview: !1
-					}), $ = Z && Object(B.a)(Z), ee = !!R.media && Object(A.H)(R.media), te = !E, se = Object(n.useMemo)(() => q ? void 0 : Object(D.a)(H, e => r.a.createElement("span", {
+					}), $ = Z && Object(B.a)(Z), ee = !!R.media && Object(A.J)(R.media), te = !E, se = Object(n.useMemo)(() => q ? void 0 : Object(D.a)(H, e => r.a.createElement("span", {
 						className: Object(o.a)(W.a.syntaxHighlight)
 					}, e), e => e), [q, H]), ne = {
 						flairStyleTemplate: z,
@@ -5191,7 +5191,7 @@
 					}), []), !de) return null;
 				const {
 					media: pe
-				} = Z || de || {}, be = (null == pe ? void 0 : pe.type) === M.o.EMBED && (null == pe ? void 0 : pe.provider) === M.v.Twitter, he = (null == pe ? void 0 : pe.type) === M.o.VIDEO || (null == pe ? void 0 : pe.type) === M.o.GIFVIDEO;
+				} = Z || de || {}, be = (null == pe ? void 0 : pe.type) === M.p.EMBED && (null == pe ? void 0 : pe.provider) === M.w.Twitter, he = (null == pe ? void 0 : pe.type) === M.p.VIDEO || (null == pe ? void 0 : pe.type) === M.p.GIFVIDEO;
 
 				function xe(e) {
 					e.stopPropagation(), e.preventDefault(), de.isSponsored ? (ae(Object(f.y)(de, _.a.Click)), de.source ? de.source.outboundUrl ? Object(x.e)(de.source.outboundUrl, x.d.BLANK) : Object(x.e)(de.source.url, x.d.BLANK) : Object(x.e)(de.permalink, x.d.BLANK)) : ae(ne || re ? Object(f.ab)(Object(I.b)(de.permalink), de.id) : Object(T.a)({
@@ -5274,7 +5274,7 @@
 						usePreview: !0
 					}));
 					else if (pe)
-						if (pe.type !== M.o.RTJSON && pe.type !== M.o.TEXT) e = o.a.createElement("div", {
+						if (pe.type !== M.p.RTJSON && pe.type !== M.p.TEXT) e = o.a.createElement("div", {
 							className: Object(n.a)(r, be && $.a.twitterEmbed),
 							onClickCapture: fe,
 							ref: e => l.current = e
@@ -5296,7 +5296,7 @@
 						else {
 							e = o.a.createElement("div", {
 								className: $.a.mediaPlaceholder
-							}), (pe.type === M.o.RTJSON && pe.richtextContent || pe.type === M.o.TEXT && pe.content) && Object(w.a)(de, null == ce ? void 0 : ce.subredditContext) && (e = o.a.createElement("div", {
+							}), (pe.type === M.p.RTJSON && pe.richtextContent || pe.type === M.p.TEXT && pe.content) && Object(w.a)(de, null == ce ? void 0 : ce.subredditContext) && (e = o.a.createElement("div", {
 								className: r,
 								onClickCapture: xe,
 								ref: e => l.current = e
@@ -9488,4 +9488,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.a7f4ddef5a9779066e78.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.78f2140ed9a8001bff59.js.map
