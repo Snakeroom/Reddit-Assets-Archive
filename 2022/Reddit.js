@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.57c859a37b2cec2c1344.js
-// Retrieved at 11/7/2022, 8:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.579460c53b7610afd0d8.js
+// Retrieved at 11/8/2022, 9:40:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -9224,73 +9224,80 @@
 		},
 		"./src/reddit/helpers/trackers/recap.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "n", (function() {
-				return o
-			})), n.d(t, "m", (function() {
+			n.d(t, "q", (function() {
 				return r
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "p", (function() {
 				return a
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "d", (function() {
 				return i
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "c", (function() {
 				return c
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "a", (function() {
 				return l
-			})), n.d(t, "b", (function() {
-				return d
-			})), n.d(t, "g", (function() {
-				return u
-			})), n.d(t, "f", (function() {
-				return m
-			})), n.d(t, "e", (function() {
-				return p
 			})), n.d(t, "i", (function() {
+				return d
+			})), n.d(t, "b", (function() {
+				return u
+			})), n.d(t, "h", (function() {
+				return m
+			})), n.d(t, "g", (function() {
+				return p
+			})), n.d(t, "f", (function() {
 				return b
 			})), n.d(t, "k", (function() {
 				return h
-			})), n.d(t, "l", (function() {
-				return g
 			})), n.d(t, "j", (function() {
+				return g
+			})), n.d(t, "n", (function() {
 				return f
+			})), n.d(t, "o", (function() {
+				return v
+			})), n.d(t, "l", (function() {
+				return O
+			})), n.d(t, "e", (function() {
+				return C
+			})), n.d(t, "m", (function() {
+				return y
 			}));
 			var s = n("./src/reddit/selectors/telemetry.ts");
-			const o = () => e => ({
+			const o = "recap",
+				r = () => e => ({
 					...s.o(e),
-					source: "recap",
+					source: o,
 					action: "view",
 					noun: "recap"
 				}),
-				r = () => e => ({
+				a = () => e => ({
 					...s.o(e),
-					source: "recap",
+					source: o,
 					action: "view",
 					noun: "card",
 					recap: s.Y(e)
 				}),
-				a = e => t => ({
+				i = e => t => ({
 					...s.o(t),
 					noun: "subreddit",
-					source: "recap",
+					source: o,
 					action: "click",
 					recap: s.Y(t),
 					subreddit: {
 						id: e
 					}
 				}),
-				i = e => t => ({
+				c = e => t => ({
 					...s.o(t),
 					noun: "post",
-					source: "recap",
+					source: o,
 					action: "click",
 					recap: s.Y(t),
 					post: {
 						id: e
 					}
 				}),
-				c = (e, t) => n => ({
+				l = (e, t) => n => ({
 					...s.o(n),
 					noun: "comment unit",
-					source: "recap",
+					source: o,
 					action: "click",
 					recap: s.Y(n),
 					comment: {
@@ -9298,66 +9305,84 @@
 						postId: t
 					}
 				}),
-				l = () => e => ({
+				d = () => e => ({
 					...s.o(e),
-					source: "recap",
+					source: o,
 					action: "click",
 					noun: "ability_card",
 					recap: s.Y(e)
 				}),
-				d = () => e => ({
+				u = () => e => ({
 					...s.o(e),
-					source: "recap",
+					source: o,
 					action: "click",
 					noun: "learn_more"
 				}),
-				u = () => e => ({
+				m = () => e => ({
 					...s.o(e),
-					source: "recap",
+					source: o,
 					action: "click",
 					noun: "PN_enable"
 				}),
-				m = () => e => ({
+				p = () => e => ({
 					...s.o(e),
-					source: "recap",
+					source: o,
 					action: "click",
 					noun: "Email_enable"
 				}),
-				p = () => e => ({
+				b = () => e => ({
 					...s.o(e),
-					source: "recap",
+					source: o,
 					action: "click",
 					noun: "edit_snoovatar"
 				}),
-				b = () => e => ({
+				h = () => e => ({
 					...s.o(e),
-					source: "recap",
+					source: o,
+					action: "click",
+					noun: "hide_username"
+				}),
+				g = () => e => ({
+					...s.o(e),
+					source: o,
 					action: "click",
 					noun: "hide_avatar"
 				}),
-				h = () => e => ({
+				f = () => e => ({
 					...s.o(e),
-					source: "recap",
+					source: o,
 					action: "click",
 					noun: "share",
 					recap: s.Y(e)
 				}),
-				g = (e, t, n) => o => ({
-					...s.o(o),
-					source: "recap",
+				v = (e, t, n) => r => ({
+					...s.o(r),
+					source: o,
 					action: "click",
 					noun: `${e?"subscribe":"unsubscribe"}`,
-					recap: s.Y(o),
+					recap: s.Y(r),
 					subreddit: {
 						id: n,
 						name: t
 					}
 				}),
-				f = () => e => ({
+				O = () => e => ({
 					...s.o(e),
-					source: "recap",
+					source: o,
 					action: "click",
 					noun: "recap"
+				}),
+				C = () => e => ({
+					...s.o(e),
+					source: o,
+					action: "click",
+					noun: "dismiss"
+				}),
+				y = () => e => ({
+					...s.o(e),
+					source: o,
+					action: "click",
+					noun: "place_timelapse"
 				})
 		},
 		"./src/reddit/helpers/trackers/shortcuts.ts": function(e, t, n) {
@@ -14753,7 +14778,7 @@
 							!g.visible && n.show()
 						},
 						onMouseLeave: n.hide,
-						onClick: () => e(Object(Pi.j)())
+						onClick: () => e(Object(Pi.l)())
 					}, m.a.createElement(So, {
 						className: Ai.a.psBattlesIcon
 					})), m.a.createElement(Ei.a, {
@@ -24070,7 +24095,7 @@
 			e.exports = JSON.parse('{"id":"de8b0fb0be5d"}')
 		},
 		"./src/redditGQL/operations/PersonalizedYearInReview.json": function(e) {
-			e.exports = JSON.parse('{"id":"dfa8dc37d0f5"}')
+			e.exports = JSON.parse('{"id":"cfd9d304b388"}')
 		},
 		"./src/redditGQL/operations/RedditorsInfoByIds.json": function(e) {
 			e.exports = JSON.parse('{"id":"b722cdefdc5c"}')
@@ -24121,4 +24146,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.57c859a37b2cec2c1344.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.579460c53b7610afd0d8.js.map
