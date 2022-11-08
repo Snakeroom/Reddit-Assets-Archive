@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.7aaf2fcc39a4a27fbd47.js
-// Retrieved at 11/8/2022, 6:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.210b9f9232fbff0f1a20.js
+// Retrieved at 11/8/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -480,6 +480,7 @@
 						includePostRecommendations: h || v,
 						includeFreeMarketplaceElement: Object(R.a)(e),
 						includeSubredditQuestions: h,
+						includeExposureEvents: !!t.isFirstLoad,
 						recentPostIds: e.posts.recent,
 						notificationContext: {
 							variant: null == O ? void 0 : O.toLowerCase()
@@ -709,7 +710,7 @@
 					const f = r();
 					if (f.listings.postOrder.api.pending[e]) return;
 					const h = re.e[Object(ae.U)(f, {})];
-					t.isMobile = Object(o.e)(f.meta.userAgent), t.recentPostIds = f.posts.recent, t.layout = h, t.useMockData = !!f.platform.currentPage && (!!f.platform.currentPage.queryParams.useMockData && Object(pe.b)(f)), n(Pe({
+					t.isFirstLoad = f.frontPageFirstLoaded, t.isMobile = Object(o.e)(f.meta.userAgent), t.recentPostIds = f.posts.recent, t.layout = h, t.useMockData = !!f.platform.currentPage && (!!f.platform.currentPage.queryParams.useMockData && Object(pe.b)(f)), n(Pe({
 						key: e
 					})), n(Le(!1)); {
 						const e = f.platform.currentPage,
@@ -5203,7 +5204,7 @@
 				}
 		},
 		"./src/redditGQL/operations/Frontpage.json": function(e) {
-			e.exports = JSON.parse('{"id":"62faa141b587"}')
+			e.exports = JSON.parse('{"id":"9ce50e970e8b"}')
 		},
 		"./src/redditGQL/operations/GetAccountGender.json": function(e) {
 			e.exports = JSON.parse('{"id":"1508e05ea2ee"}')
@@ -5234,4 +5235,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.7aaf2fcc39a4a27fbd47.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.210b9f9232fbff0f1a20.js.map
