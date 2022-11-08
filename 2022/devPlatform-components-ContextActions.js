@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.2e886f1d51a2b3aee445.js
-// Retrieved at 11/8/2022, 1:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.8045e7ab76b38d0cddf8.js
+// Retrieved at 11/8/2022, 2:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["devPlatform-components-ContextActions"], {
 		"./src/devPlatform/components/ContextActions/index.m.less": function(e, t, o) {},
@@ -155,17 +155,17 @@
 				S = o("./src/higherOrderComponents/makeAsync.tsx"),
 				_ = o("./src/lib/loadWithRetries/index.ts"),
 				I = o("./src/reddit/components/GlobalModalContainer/registry.ts"),
-				T = o("./src/reddit/constants/modals.ts");
-			const C = Object(S.a)({
+				C = o("./src/reddit/constants/modals.ts");
+			const R = Object(S.a)({
 					getComponent: () => Object(_.a)(() => o.e(2).then(o.bind(null, "./src/devPlatform/components/UserInputModal/index.tsx"))).then(e => e.default),
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
-				R = e => () => {
+				T = e => () => {
 					e()
 				};
-			Object(I.b)(T.a.DEV_PLATFORM_USER_INPUT_MODAL, e => n.a.createElement(C, {
-				onOverlayClick: R(e),
+			Object(I.b)(C.a.DEV_PLATFORM_USER_INPUT_MODAL, e => n.a.createElement(R, {
+				onOverlayClick: T(e),
 				withOverlay: !0
 			}));
 			const M = Object(d.b)(() => Object(a.c)({}), e => ({
@@ -222,7 +222,7 @@
 									var a, r;
 									return null === (r = null === (a = y.a.getActor(e)) || void 0 === a ? void 0 : a.As(h.e)) || void 0 === r ? void 0 : r.OnAction(h.f.fromPartial({
 										actionId: t.actionId,
-										contextType: o,
+										context: o,
 										...P(o, i),
 										userInput: d
 									})).then(e => {
@@ -581,4 +581,4 @@
 		"ignored /drone/src/node_modules/cron-parser/lib fs": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.2e886f1d51a2b3aee445.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.8045e7ab76b38d0cddf8.js.map
