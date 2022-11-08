@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.49ee065a31c0419513d8.js
-// Retrieved at 11/7/2022, 5:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.89b95fbedf8d233aadcc.js
+// Retrieved at 11/7/2022, 7:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/actions/modQueue/realtime.ts": function(e, t, s) {
@@ -1880,7 +1880,7 @@
 						toggleCheckbox: u
 					} = e, p = Object(A.a)(s), b = Object(h.c)(s);
 					return d.a.createElement(P.a, {
-						className: Object(f.a)(t, V.a.Component, V.a.UnthreadedCommentContainer, {
+						className: Object(f.a)(t, V.a.Component, V.a.UnthreadedCommentContainer, "UnthreadedComment", {
 							[V.a.isBanned]: !!s.bannedBy,
 							[V.a.isReported]: Object(q.a)(s)
 						}),
@@ -1955,7 +1955,7 @@
 						isNightMode: g
 					} = e, k = Object(A.a)(s);
 					return d.a.createElement(P.a, {
-						className: Object(f.a)(t, {
+						className: Object(f.a)(t, "UnthreadedComment", {
 							[ie.a.realtimeAnimation]: h,
 							[ie.a.realtimeUpdated]: x,
 							[ie.a.isNightMode]: g
@@ -2894,4 +2894,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.49ee065a31c0419513d8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.89b95fbedf8d233aadcc.js.map

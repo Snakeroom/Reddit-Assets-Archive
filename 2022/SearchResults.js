@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.68d1df97c2471fe446af.js
-// Retrieved at 11/7/2022, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.28720325513980cbc914.js
+// Retrieved at 11/7/2022, 7:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1087,6 +1087,54 @@
 					hk: "YjBtV"
 				})))
 			}
+		},
+		"./src/reddit/components/CCM/AddModNoteCTA/index.tsx": function(e, t, s) {
+			"use strict";
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				r = s("./node_modules/react/index.js"),
+				o = s.n(r),
+				i = s("./node_modules/react-redux/es/index.js"),
+				a = s("./src/lib/constants/index.ts"),
+				c = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				d = s("./src/reddit/actions/tooltip.ts"),
+				l = s("./src/reddit/components/Hovercards/AuthorHovercard/ModIdCard/async.tsx"),
+				m = s("./src/reddit/components/Hovercards/helpers.ts"),
+				u = s("./src/reddit/components/PostTopMeta/index.tsx"),
+				p = s("./src/reddit/hooks/useIsOverlay.ts"),
+				b = s("./src/reddit/models/Post/index.ts"),
+				h = s("./src/redditGQL/types.ts");
+			const x = Object(c.v)();
+			t.a = x(e => {
+				let {
+					pageLayer: t,
+					postOrComment: s,
+					className: c
+				} = e;
+				var x;
+				const f = Object(p.a)(),
+					O = Object(i.d)(),
+					v = (null === (x = null == t ? void 0 : t.urlParams) || void 0 === x ? void 0 : x.pageName) === a.wb.Modqueue,
+					g = Object(r.useCallback)(() => {
+						const e = Object(m.b)({
+							itemId: s.id,
+							tooltipIdPrefix: l.a,
+							tooltipType: f ? u.f.Lightbox : void 0
+						});
+						O(Object(d.h)({
+							tooltipId: e,
+							args: {
+								isModNotesView: !0,
+								modNotesFilter: h.w.Note
+							}
+						}))
+					}, [s, O, f]);
+				return !v || Object(b.p)(s.author) ? null : o.a.createElement("button", {
+					className: c,
+					onClick: g
+				}, n.fbt._("Add a note", null, {
+					hk: "1dmmma"
+				}))
+			})
 		},
 		"./src/reddit/components/CallToActionButton/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -9440,4 +9488,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.68d1df97c2471fe446af.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.28720325513980cbc914.js.map

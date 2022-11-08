@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.282d568f058c40b086e5.js
-// Retrieved at 11/7/2022, 5:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.6e7a9c319c0cf3c6ae39.js
+// Retrieved at 11/7/2022, 7:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1021,6 +1021,54 @@
 				avatarPostImage: "_2yQLdTnHA0y3hZ3I588oUM"
 			}
 		},
+		"./src/reddit/components/CCM/AddModNoteCTA/index.tsx": function(e, t, n) {
+			"use strict";
+			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
+				s = n("./node_modules/react/index.js"),
+				o = n.n(s),
+				i = n("./node_modules/react-redux/es/index.js"),
+				a = n("./src/lib/constants/index.ts"),
+				c = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				d = n("./src/reddit/actions/tooltip.ts"),
+				l = n("./src/reddit/components/Hovercards/AuthorHovercard/ModIdCard/async.tsx"),
+				u = n("./src/reddit/components/Hovercards/helpers.ts"),
+				m = n("./src/reddit/components/PostTopMeta/index.tsx"),
+				p = n("./src/reddit/hooks/useIsOverlay.ts"),
+				b = n("./src/reddit/models/Post/index.ts"),
+				f = n("./src/redditGQL/types.ts");
+			const h = Object(c.v)();
+			t.a = h(e => {
+				let {
+					pageLayer: t,
+					postOrComment: n,
+					className: c
+				} = e;
+				var h;
+				const v = Object(p.a)(),
+					_ = Object(i.d)(),
+					g = (null === (h = null == t ? void 0 : t.urlParams) || void 0 === h ? void 0 : h.pageName) === a.wb.Modqueue,
+					x = Object(s.useCallback)(() => {
+						const e = Object(u.b)({
+							itemId: n.id,
+							tooltipIdPrefix: l.a,
+							tooltipType: v ? m.f.Lightbox : void 0
+						});
+						_(Object(d.h)({
+							tooltipId: e,
+							args: {
+								isModNotesView: !0,
+								modNotesFilter: f.w.Note
+							}
+						}))
+					}, [n, _, v]);
+				return !g || Object(b.p)(n.author) ? null : o.a.createElement("button", {
+					className: c,
+					onClick: x
+				}, r.fbt._("Add a note", null, {
+					hk: "1dmmma"
+				}))
+			})
+		},
 		"./src/reddit/components/ConfirmUserActionModal/index.m.less": function(e, t, n) {
 			e.exports = {
 				buttonWidth: "ogOEj4x-0BpDZWeccJwxx",
@@ -1883,7 +1931,8 @@
 				postTopMeta: "iaAYGvTNtknkTxuHArCzL",
 				subredditName: "_1L0pdcPf58t25Jy6ljHIKR",
 				SubscribeButton: "_2r87gmhJ9n0MsylKHkgDcp",
-				subscribeButton: "_2r87gmhJ9n0MsylKHkgDcp"
+				subscribeButton: "_2r87gmhJ9n0MsylKHkgDcp",
+				addModNote: "CUh9f8Zri7XfZRUI18jS5"
 			}
 		},
 		"./src/reddit/components/PostMeta/index.tsx": function(e, t, n) {
@@ -1893,74 +1942,78 @@
 				o = n("./node_modules/react-redux/es/index.js"),
 				i = n("./src/reddit/selectors/moderatorPermissions.ts"),
 				a = n("./src/reddit/components/AwardBadges/index.tsx"),
-				c = n("./src/reddit/components/Hovercards/SubredditHovercard/index.tsx"),
-				d = n("./src/reddit/components/JSAPIContainers/index.tsx"),
-				l = n("./src/reddit/components/PostBadges/index.tsx"),
-				u = n("./src/reddit/components/PostTopMeta/index.tsx"),
-				m = n("./src/reddit/components/QuarantinedLabel/index.tsx"),
-				p = n("./src/reddit/components/SubredditNameLink/index.tsx"),
-				b = n("./src/reddit/components/SubscribeButton/Inline.tsx"),
-				f = n("./src/reddit/constants/posts.ts"),
-				h = n("./src/reddit/controls/Button/index.tsx"),
-				v = n("./src/reddit/controls/MetaSeparator/index.tsx"),
-				_ = n("./src/reddit/helpers/trackers/post.ts"),
-				g = n("./src/reddit/hooks/useClickSourceData.ts"),
-				x = n("./src/reddit/models/Subreddit/index.ts"),
-				y = n("./src/reddit/components/PostMeta/index.m.less"),
-				O = n.n(y);
+				c = n("./src/reddit/components/CCM/AddModNoteCTA/index.tsx"),
+				d = n("./src/reddit/components/Hovercards/SubredditHovercard/index.tsx"),
+				l = n("./src/reddit/components/JSAPIContainers/index.tsx"),
+				u = n("./src/reddit/components/PostBadges/index.tsx"),
+				m = n("./src/reddit/components/PostTopMeta/index.tsx"),
+				p = n("./src/reddit/components/QuarantinedLabel/index.tsx"),
+				b = n("./src/reddit/components/SubredditNameLink/index.tsx"),
+				f = n("./src/reddit/components/SubscribeButton/Inline.tsx"),
+				h = n("./src/reddit/constants/posts.ts"),
+				v = n("./src/reddit/controls/Button/index.tsx"),
+				_ = n("./src/reddit/controls/MetaSeparator/index.tsx"),
+				g = n("./src/reddit/helpers/trackers/post.ts"),
+				x = n("./src/reddit/hooks/useClickSourceData.ts"),
+				y = n("./src/reddit/models/Subreddit/index.ts"),
+				O = n("./src/reddit/components/PostMeta/index.m.less"),
+				E = n.n(O);
 			t.a = e => {
 				const {
 					flairStyleTemplate: t,
 					hideGildCta: n,
 					inSubredditOrProfile: r,
-					isCurrentUserProfilePost: y,
-					isOverlay: E,
-					isTopicPage: k,
-					post: j,
-					shouldShowSubscribeButton: C,
-					subredditOrProfile: w,
-					tooltipType: I
-				} = e, P = !!k, S = Object(g.a)(), T = Object(o.e)(e => !!w && Object(i.i)(e, w.id));
+					isCurrentUserProfilePost: O,
+					isOverlay: k,
+					isTopicPage: j,
+					post: C,
+					shouldShowSubscribeButton: w,
+					subredditOrProfile: I,
+					tooltipType: P
+				} = e, S = !!j, T = Object(x.a)(), N = Object(o.e)(e => !!I && Object(i.i)(e, I.id));
 				return s.a.createElement("div", {
-					className: O.a.metaContainer
-				}, !r && !j.isSponsored && w && s.a.createElement(c.a, {
-					postId: j.id,
-					subredditName: w.name
-				}, s.a.createElement(p.a, {
-					className: O.a.subredditName,
+					className: E.a.metaContainer
+				}, !r && !C.isSponsored && I && s.a.createElement(d.a, {
+					postId: C.id,
+					subredditName: I.name
+				}, s.a.createElement(b.a, {
+					className: E.a.subredditName,
 					"data-click-id": "subreddit",
 					to: {
-						pathname: w.url,
-						state: S
+						pathname: I.url,
+						state: T
 					}
-				}, w.displayText)), w && w.isQuarantined && s.a.createElement(m.a, null), !r && !j.isSponsored && w && C && !y && s.a.createElement(b.a, {
-					className: O.a.SubscribeButton,
-					getEventFactory: e => Object(_.k)(j.id, e ? "unsubscribe" : "subscribe"),
+				}, I.displayText)), I && I.isQuarantined && s.a.createElement(p.a, null), !r && !C.isSponsored && I && w && !O && s.a.createElement(f.a, {
+					className: E.a.SubscribeButton,
+					getEventFactory: e => Object(g.k)(C.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
-						name: w.name,
-						type: Object(x.i)(w) ? f.a.PROFILE : f.a.SUBREDDIT
+						name: I.name,
+						type: Object(y.i)(I) ? h.a.PROFILE : h.a.SUBREDDIT
 					},
-					postId: j.id,
-					size: h.d.XXS,
+					postId: C.id,
+					size: v.d.XXS,
 					small: !0
-				}), !r && !j.isSponsored && s.a.createElement(v.b, null), !r && !j.isSponsored && s.a.createElement(d.h, {
-					type: j.belongsTo.type,
-					id: j.belongsTo.id
-				}), s.a.createElement(u.g, {
-					className: O.a.postTopMeta,
+				}), !r && !C.isSponsored && s.a.createElement(_.b, null), !r && !C.isSponsored && s.a.createElement(l.h, {
+					type: C.belongsTo.type,
+					id: C.belongsTo.id
+				}), s.a.createElement(m.g, {
+					className: E.a.postTopMeta,
 					flairStyleTemplate: t,
-					post: j,
-					tooltipType: I,
-					isModWithUserNotesPermissions: T
-				}), s.a.createElement(l.a, {
-					displayText: w ? w.displayText : null,
+					post: C,
+					tooltipType: P,
+					isModWithUserNotesPermissions: N
+				}), s.a.createElement(u.a, {
+					displayText: I ? I.displayText : null,
 					inSubredditOrProfile: !!r,
-					post: j,
-					tooltipType: I
-				}), !P && s.a.createElement(a.a, {
+					post: C,
+					tooltipType: P
+				}), !S && s.a.createElement(a.a, {
 					hideCta: n,
-					thing: j,
-					tooltipType: E ? u.f.Lightbox : void 0
+					thing: C,
+					tooltipType: k ? m.f.Lightbox : void 0
+				}), N && s.a.createElement(c.a, {
+					postOrComment: C,
+					className: E.a.addModNote
 				}))
 			}
 		},
@@ -5080,4 +5133,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.282d568f058c40b086e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.6e7a9c319c0cf3c6ae39.js.map

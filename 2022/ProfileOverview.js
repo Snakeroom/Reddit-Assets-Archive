@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.5ea7bc602b96e2941cec.js
-// Retrieved at 11/7/2022, 5:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.5e3b02a0457e2f35f34e.js
+// Retrieved at 11/7/2022, 7:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -6471,7 +6471,8 @@
 				subredditIconWrapper: "_2dr_3pZUCk8KfJ-x0txT_l",
 				container: "_14-YvdFiW5iVvfe5wdgmET",
 				SubscribeButton: "_35dG7dsi4xKTT-_2MB74qq",
-				subscribeButton: "_35dG7dsi4xKTT-_2MB74qq"
+				subscribeButton: "_35dG7dsi4xKTT-_2MB74qq",
+				addModNote: "_2ELu43PpvGnJxizg4n_k9E"
 			}
 		},
 		"./src/reddit/components/PostTopLine/index.tsx": function(e, t, s) {
@@ -6482,111 +6483,116 @@
 				a = s("./node_modules/react-redux/es/index.js"),
 				i = s("./src/lib/classNames/index.ts"),
 				c = s("./src/reddit/components/AwardBadges/index.tsx"),
-				d = s("./src/reddit/components/JSAPIContainers/index.tsx"),
-				l = s("./src/reddit/components/NotificationButton/index.tsx"),
-				m = s("./src/reddit/components/PostBadges/index.tsx"),
-				u = s("./src/reddit/components/PostTopMeta/index.tsx"),
-				p = s("./src/reddit/components/SubredditIcon/index.tsx"),
-				b = s("./src/reddit/components/SubredditNameLink/index.tsx"),
-				h = s("./src/reddit/components/SubscribeButton/Inline.tsx"),
-				f = s("./src/reddit/constants/posts.ts"),
-				x = s("./src/reddit/controls/Button/index.tsx"),
-				v = s("./src/reddit/controls/OutboundLink/index.tsx"),
-				g = s("./src/reddit/helpers/trackers/post.ts"),
-				_ = s("./src/reddit/icons/fonts/OutboundLink/index.tsx"),
-				y = s("./src/reddit/models/Media/index.ts"),
-				E = s("./src/reddit/models/Subreddit/index.ts"),
-				O = s("./src/reddit/selectors/user.ts"),
-				C = s("./src/reddit/components/PostTopLine/index.m.less"),
-				k = s.n(C);
+				d = s("./src/reddit/components/CCM/AddModNoteCTA/index.tsx"),
+				l = s("./src/reddit/components/JSAPIContainers/index.tsx"),
+				m = s("./src/reddit/components/NotificationButton/index.tsx"),
+				u = s("./src/reddit/components/PostBadges/index.tsx"),
+				p = s("./src/reddit/components/PostTopMeta/index.tsx"),
+				b = s("./src/reddit/components/SubredditIcon/index.tsx"),
+				h = s("./src/reddit/components/SubredditNameLink/index.tsx"),
+				f = s("./src/reddit/components/SubscribeButton/Inline.tsx"),
+				x = s("./src/reddit/constants/posts.ts"),
+				v = s("./src/reddit/controls/Button/index.tsx"),
+				g = s("./src/reddit/controls/OutboundLink/index.tsx"),
+				_ = s("./src/reddit/helpers/trackers/post.ts"),
+				y = s("./src/reddit/icons/fonts/OutboundLink/index.tsx"),
+				E = s("./src/reddit/models/Media/index.ts"),
+				O = s("./src/reddit/models/Subreddit/index.ts"),
+				C = s("./src/reddit/selectors/user.ts"),
+				k = s("./src/reddit/components/PostTopLine/index.m.less"),
+				j = s.n(k);
 			t.a = e => {
 				let {
 					className: t,
 					flairStyleTemplate: s,
 					forceOpenInNewTab: o,
-					hideNSFWPref: C,
-					hostPostData: j,
-					iconClassName: w,
-					inSubredditOrProfile: P,
-					isCommentsPage: S,
-					isCompactPinnedPost: N,
-					isCurrentUserProfilePost: I,
-					isModWithUserNotesPermissions: T,
-					isOverlay: L,
-					isTopicPage: R,
-					listingKey: A,
-					post: M,
-					shouldShowSubscribeButton: F,
-					showCornerOutboundLink: D,
-					showSubreddit: B,
-					showSubredditIcon: z,
-					subredditOrProfile: U,
-					isFollowed: W,
-					shouldShowFollowButton: V,
-					onFollowPostClick: q
+					hideNSFWPref: k,
+					hostPostData: w,
+					iconClassName: P,
+					inSubredditOrProfile: S,
+					isCommentsPage: N,
+					isCompactPinnedPost: I,
+					isCurrentUserProfilePost: T,
+					isModQueuePage: L,
+					isModWithUserNotesPermissions: R,
+					isOverlay: A,
+					isTopicPage: M,
+					listingKey: F,
+					post: D,
+					shouldShowSubscribeButton: B,
+					showCornerOutboundLink: z,
+					showSubreddit: U,
+					showSubredditIcon: W,
+					subredditOrProfile: V,
+					isFollowed: q,
+					shouldShowFollowButton: G,
+					onFollowPostClick: H
 				} = e;
-				const G = R,
-					H = U && Object(E.i)(U),
-					K = Object(a.e)(e => {
-						if (!H) return !0;
-						const t = Object(O.Hb)(e, M.author || "");
+				const K = M,
+					Z = V && Object(O.i)(V),
+					Q = Object(a.e)(e => {
+						if (!Z) return !0;
+						const t = Object(C.Hb)(e, D.author || "");
 						return !t || t.enableFollowers
 					});
 				return r.a.createElement("div", {
-					className: Object(i.a)(k.a.container, t)
-				}, B && U && r.a.createElement("div", {
-					className: k.a.subredditIconWrapper
-				}, r.a.createElement(b.a, {
+					className: Object(i.a)(j.a.container, t)
+				}, U && V && r.a.createElement("div", {
+					className: j.a.subredditIconWrapper
+				}, r.a.createElement(h.a, {
 					"data-click-id": "subreddit",
-					to: U.url
-				}, z && r.a.createElement(p.b, {
-					className: Object(i.a)(k.a.subredditIcon, w),
-					shouldHideNsfwIcon: C,
-					subredditOrProfile: U
+					to: V.url
+				}, W && r.a.createElement(b.b, {
+					className: Object(i.a)(j.a.subredditIcon, P),
+					shouldHideNsfwIcon: k,
+					subredditOrProfile: V
 				}))), r.a.createElement("div", {
-					className: k.a.everythingElseWrapper
-				}, B && r.a.createElement(d.h, {
-					type: M.belongsTo.type,
-					id: M.belongsTo.id
-				}), r.a.createElement(u.g, {
-					className: k.a.postTopMeta,
+					className: j.a.everythingElseWrapper
+				}, U && r.a.createElement(l.h, {
+					type: D.belongsTo.type,
+					id: D.belongsTo.id
+				}), r.a.createElement(p.g, {
+					className: j.a.postTopMeta,
 					forceOpenInNewTab: o,
 					flairStyleTemplate: s,
-					isModWithUserNotesPermissions: T,
-					tooltipType: L ? u.f.Lightbox : void 0,
-					post: M,
-					showSub: B,
-					subredditOrProfile: U
-				}), r.a.createElement(m.a, {
-					className: k.a.postBadges,
-					displayText: U ? U.displayText : null,
-					inSubredditOrProfile: P,
-					isCompactPinnedPost: N,
-					post: M,
-					tooltipType: L ? u.f.Lightbox : void 0
-				}), !G && r.a.createElement(c.a, {
-					isPostDetail: S,
-					thing: M,
-					tooltipType: L ? u.f.Lightbox : void 0
-				})), U && K && B && F && !I && r.a.createElement(h.a, {
-					className: k.a.SubscribeButton,
-					getEventFactory: e => Object(g.k)(M.id, e ? "unsubscribe" : "subscribe", "post", A, j),
+					isModWithUserNotesPermissions: R,
+					tooltipType: A ? p.f.Lightbox : void 0,
+					post: D,
+					showSub: U,
+					subredditOrProfile: V
+				}), r.a.createElement(u.a, {
+					className: j.a.postBadges,
+					displayText: V ? V.displayText : null,
+					inSubredditOrProfile: S,
+					isCompactPinnedPost: I,
+					post: D,
+					tooltipType: A ? p.f.Lightbox : void 0
+				}), !K && r.a.createElement(c.a, {
+					isPostDetail: N,
+					thing: D,
+					tooltipType: A ? p.f.Lightbox : void 0
+				}), R && r.a.createElement(d.a, {
+					postOrComment: D,
+					className: j.a.addModNote
+				})), V && Q && U && B && !T && r.a.createElement(f.a, {
+					className: j.a.SubscribeButton,
+					getEventFactory: e => Object(_.k)(D.id, e ? "unsubscribe" : "subscribe", "post", F, w),
 					identifier: {
-						name: U.name,
-						type: H ? f.a.PROFILE : f.a.SUBREDDIT
+						name: V.name,
+						type: Z ? x.a.PROFILE : x.a.SUBREDDIT
 					},
-					postId: M.id,
-					size: x.d.XS
-				}), D && r.a.createElement(v.b, {
-					isSponsored: M.isSponsored,
-					postId: M.id,
-					href: Object(y.D)(M),
-					source: M.source
-				}, r.a.createElement(_.a, {
-					className: k.a.outboundLinkIcon
-				})), V && K && r.a.createElement(l.a, {
-					isFilled: !!W,
-					onClick: q,
+					postId: D.id,
+					size: v.d.XS
+				}), z && r.a.createElement(g.b, {
+					isSponsored: D.isSponsored,
+					postId: D.id,
+					href: Object(E.D)(D),
+					source: D.source
+				}, r.a.createElement(y.a, {
+					className: j.a.outboundLinkIcon
+				})), G && Q && r.a.createElement(m.a, {
+					isFilled: !!q,
+					onClick: H,
 					hasTooltip: !0,
 					tooltipText: n.fbt._("Follow post to stay updated", null, {
 						hk: "26UP9Z"
@@ -10327,4 +10333,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.5ea7bc602b96e2941cec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.5e3b02a0457e2f35f34e.js.map
