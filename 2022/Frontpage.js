@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.9e54602d0162992892c7.js
-// Retrieved at 11/7/2022, 5:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.8514145581185e41aabf.js
+// Retrieved at 11/7/2022, 8:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -849,17 +849,19 @@
 								}
 								const {
 									content: e,
-									subreddit: t,
-									typeIdentifier: n
+									isContextHidden: t,
+									subreddit: n,
+									typeIdentifier: a
 								} = k.recommendationContext;
 								if (k.postInfo && (null == e ? void 0 : e.richtext)) {
-									const a = P(k.postInfo);
-									a && (C.postIds.push(a), C.posts[a].recommendationContext = {
+									const s = P(k.postInfo);
+									s && (C.postIds.push(s), C.posts[s].recommendationContext = {
 										content: Object(E.d)(e.richtext),
+										isContextHidden: t,
 										source: {
-											source: null == n ? void 0 : n.toLowerCase(),
-											subredditId: null == t ? void 0 : t.id,
-											subredditName: null == t ? void 0 : t.prefixedName
+											source: null == a ? void 0 : a.toLowerCase(),
+											subredditId: null == n ? void 0 : n.id,
+											subredditName: null == n ? void 0 : n.prefixedName
 										}
 									})
 								}
@@ -8546,7 +8548,7 @@
 				}
 		},
 		"./src/redditGQL/operations/Frontpage.json": function(e) {
-			e.exports = JSON.parse('{"id":"f62050301faa"}')
+			e.exports = JSON.parse('{"id":"62faa141b587"}')
 		},
 		"./src/redditGQL/operations/GetNearbySubreddits.json": function(e) {
 			e.exports = JSON.parse('{"id":"aff6d12aa0c2"}')
@@ -8559,4 +8561,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.9e54602d0162992892c7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.8514145581185e41aabf.js.map

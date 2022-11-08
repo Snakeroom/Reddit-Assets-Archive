@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.28720325513980cbc914.js
-// Retrieved at 11/7/2022, 7:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.a089271e81a1526047cf.js
+// Retrieved at 11/7/2022, 8:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -362,7 +362,7 @@
 						} = e.params;
 					let v;
 					O && h && (v = Object(u.h)(O, h));
-					const g = x && Object(p.y)(x),
+					const g = x && Object(p.z)(x),
 						j = Object(a.b)(g || f || h, O, r);
 					await t(Object(d.d)({
 						key: j,
@@ -9455,7 +9455,7 @@
 					experimentName: r.ef,
 					experimentEligibilitySelector: o.a
 				}),
-				d = (e, t) => (t === r.mf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(i.A)(e),
+				d = (e, t) => (t === r.mf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(i.B)(e),
 				l = Object(n.a)(a.G, c, (e, t) => d(e, t));
 			Object(n.a)((e, t) => t, c, (e, t) => d(e, t))
 		},
@@ -9488,4 +9488,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.28720325513980cbc914.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.a089271e81a1526047cf.js.map

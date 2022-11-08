@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.8b0dcfcddbda649bdef2.js
-// Retrieved at 11/7/2022, 5:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.2eadc1b08ac8935340ef.js
+// Retrieved at 11/7/2022, 8:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -2395,7 +2395,7 @@
 				if (i.isBlank) return g;
 				const n = Object(d.q)(i),
 					o = t && n;
-				s !== a.g.Large || !v(i) || o || i.predictionTournament || Object(d.A)(i) || (s = a.g.Medium);
+				s !== a.g.Large || !v(i) || o || i.predictionTournament || Object(d.B)(i) || (s = a.g.Medium);
 				const l = b[s];
 				return void 0 === l ? (Object(r.a)(void 0, `Could not find component for layout ${s}.`), g) : l
 			}
@@ -2523,4 +2523,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.8b0dcfcddbda649bdef2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.2eadc1b08ac8935340ef.js.map

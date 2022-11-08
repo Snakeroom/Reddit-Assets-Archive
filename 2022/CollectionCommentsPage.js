@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.5d8ba48e251f7228616b.js
-// Retrieved at 11/7/2022, 7:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.155c79865673987d725c.js
+// Retrieved at 11/7/2022, 8:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -1060,7 +1060,7 @@
 						partialCommentId: d,
 						subredditName: c = "",
 						routePrefix: l
-					} = e.params, g = o ? Object(F.y)(o) : "", f = d && Object(L.h)(d), {
+					} = e.params, g = o ? Object(F.z)(o) : "", f = d && Object(L.h)(d), {
 						queryParams: y
 					} = e, O = s(), {
 						instanceId: _
@@ -1582,7 +1582,7 @@
 				Ke = e => {
 					var t, s;
 					const n = null === (s = null === (t = e.platform.currentPage) || void 0 === t ? void 0 : t.urlParams) || void 0 === s ? void 0 : s.partialPostId,
-						r = n && Object(C.y)(n),
+						r = n && Object(C.z)(n),
 						{
 							sortToUse: o
 						} = Object(D.a)(e, r);
@@ -1667,7 +1667,7 @@
 						partialCommentId: u
 					} = e.params, {
 						subredditName: p
-					} = e.params || "", b = c ? Object(C.y)(c) : "", h = u && Object(W.h)(u), {
+					} = e.params || "", b = c ? Object(C.z)(c) : "", h = u && Object(W.h)(u), {
 						path: g,
 						queryParams: f
 					} = e, x = Object(k.d)(g), {
@@ -1689,7 +1689,7 @@
 						B = Object(rt.a)(F),
 						V = e.url.includes("search");
 					if (V && B.bucketed) {
-						const s = c && Object(C.y)(c),
+						const s = c && Object(C.z)(c),
 							n = Object(i.e)(r()(e.queryParams, M.D)),
 							o = Object(i.b)(s, void 0, n);
 						await t(Object(ut.d)({
@@ -1741,7 +1741,7 @@
 								experimentName: Q.sf
 							}))(s())) return void t(Object(o.c)(r.url));
 						if ((H.media && H.media.type) === U.o.LIVEVIDEO) {
-							const e = `/rpan${H.belongsTo.type===A.a.SUBREDDIT?r.url:"/"}${Object(C.C)(H.id)}`;
+							const e = `/rpan${H.belongsTo.type===A.a.SUBREDDIT?r.url:"/"}${Object(C.D)(H.id)}`;
 							return void t(Object(o.c)(e))
 						}
 						if (H.belongsTo.type !== A.a.SUBREDDIT || H.isSponsored) {
@@ -2598,7 +2598,7 @@
 					className: n
 				} = e;
 				const u = Object(o.d)();
-				if (!Object(o.e)(m.a) || !Object(a.B)(t) || !t.adSupplementaryText || "string" == typeof t.adSupplementaryText) return null;
+				if (!Object(o.e)(m.a) || !Object(a.C)(t) || !t.adSupplementaryText || "string" == typeof t.adSupplementaryText) return null;
 				if (0 === t.adSupplementaryText.document.length) return null;
 				return r.a.createElement("div", {
 					className: Object(i.a)(n, b.a.AdSupplementaryText),
@@ -5177,7 +5177,7 @@
 							post: s,
 							isOverlay: n
 						} = t;
-						return !Object(N.s)(s) && !n && Object(L.a)(e) === I.Pe.NewModule
+						return !Object(N.t)(s) && !n && Object(L.a)(e) === I.Pe.NewModule
 					},
 					isLoggedIn: A.R,
 					postSEOV2IdCardVariant: F.h,
@@ -5295,7 +5295,7 @@
 					}, n && a.a.createElement(x.default, {
 						subredditId: u,
 						subredditName: p
-					}), Object(N.s)(i) ? a.a.createElement(H, {
+					}), Object(N.t)(i) ? a.a.createElement(H, {
 						profileName: p,
 						isOverlay: o || !1
 					}) : a.a.createElement(f.a, {
@@ -8175,7 +8175,7 @@
 							isCommentPermalink: s,
 							post: n
 						} = e;
-						return s ? Ne.g.Classic : Object(Ae.c)(n) ? Ne.g.Large : Object(Me.c)(n) ? Ne.g.Large : t || Object(A.A)(n) ? Ne.g.Large : !n.media || Object(A.q)(n) || It(n) ? Ne.g.Medium : Ne.g.Large
+						return s ? Ne.g.Classic : Object(Ae.c)(n) ? Ne.g.Large : Object(Me.c)(n) ? Ne.g.Large : t || Object(A.B)(n) ? Ne.g.Large : !n.media || Object(A.q)(n) || It(n) ? Ne.g.Medium : Ne.g.Large
 					})(e),
 					Xt = Object(a.e)(mt.b),
 					$t = Object(oe.b)(Te),
@@ -14919,7 +14919,7 @@
 						subredditName: f,
 						collectionId: x
 					} = a,
-					v = p ? Object(g.y)(p) : void 0,
+					v = p ? Object(g.z)(p) : void 0,
 					C = c && Object(h.h)(c),
 					y = r()([...Object(l.a)(e.location.search)]),
 					_ = {};
@@ -15314,7 +15314,7 @@
 						partialCommentId: o,
 						partialPostId: a,
 						subredditName: c
-					} = e.match.params, m = Object(ve.y)(a), p = o && Object(xe.h)(o), b = Object(he.a)(m), x = Object(f.e)(ce.b), v = Object(f.e)(e => Object(Re.z)(e, {
+					} = e.match.params, m = Object(ve.z)(a), p = o && Object(xe.h)(o), b = Object(he.a)(m), x = Object(f.e)(ce.b), v = Object(f.e)(e => Object(Re.z)(e, {
 						listingKey: b
 					})), C = Object(f.d)();
 					let y, O = "";
@@ -15539,7 +15539,7 @@
 							post: s
 						} = this.props;
 						t();
-						const n = s && Object(ve.w)(s) && s && s.belongsTo.id;
+						const n = s && Object(ve.x)(s) && s && s.belongsTo.id;
 						n && e(n), this.sendEventWithName("view_all_comments")()
 					}, this.handleContentClick = () => {
 						this.props.isCommentsListTruncated && this.props.expandCommentsList()
@@ -15615,7 +15615,7 @@
 						if (t) {
 							const s = null === (e = Object(bt.b)(t)[0]) || void 0 === e ? void 0 : e.components;
 							if (s && s.hasOwnProperty("postID36")) {
-								const e = Object(ve.y)(s.postID36);
+								const e = Object(ve.z)(s.postID36);
 								this.props.getIsTrackingCrossposts(e)
 							}
 						}
@@ -16197,7 +16197,7 @@
 					const {
 						partialPostId: t
 					} = e.match.params;
-					return t && Object(b.y)(t)
+					return t && Object(b.z)(t)
 				},
 				g = (e, t, s) => {
 					const n = h(e),
@@ -16581,4 +16581,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.5d8ba48e251f7228616b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.155c79865673987d725c.js.map

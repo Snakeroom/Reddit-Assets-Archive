@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.0d9118e4d240853e07d3.js
-// Retrieved at 11/7/2022, 5:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.10bcd2d12654e00a17e6.js
+// Retrieved at 11/7/2022, 8:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit", "ModListing~Reddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -16320,7 +16320,7 @@
 							const {
 								partialCommentId: s,
 								partialPostId: o
-							} = e.match.params, a = Object(b.y)(o), i = Object(l.a)(e, t, t.posts.models[a]);
+							} = e.match.params, a = Object(b.z)(o), i = Object(l.a)(e, t, t.posts.models[a]);
 							if (!i) return;
 							const c = s && Object(p.h)(s),
 								{
@@ -22410,4 +22410,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.0d9118e4d240853e07d3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.10bcd2d12654e00a17e6.js.map

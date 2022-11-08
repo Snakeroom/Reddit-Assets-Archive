@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.67560bac487046303c11.js
-// Retrieved at 11/7/2022, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.0b3b589f28529f94dd35.js
+// Retrieved at 11/7/2022, 8:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~SubredditForkingCTA"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(t, e, r) {
@@ -1063,7 +1063,7 @@
 						X(e, t)
 					}
 					const S = Object(R.o)(u.kind),
-						I = g.ok && g.body && g.body.id && Object(A.y)(g.body.id),
+						I = g.ok && g.body && g.body.id && Object(A.z)(g.body.id),
 						T = r();
 					E.B(T, S, I, t.correlationId)
 				}, X = (t, e) => {
@@ -3053,4 +3053,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.67560bac487046303c11.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.0b3b589f28529f94dd35.js.map

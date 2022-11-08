@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.6e7a9c319c0cf3c6ae39.js
-// Retrieved at 11/7/2022, 7:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.b552537d8398d3b664f5.js
+// Retrieved at 11/7/2022, 8:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1523,7 +1523,7 @@
 				}), o.a.createElement(u.c, T({
 					tooltipId: X,
 					text: A()
-				}, H))), i && Object(C.v)(G) && !l && o.a.createElement(s.Fragment, null, o.a.createElement(j.a, {
+				}, H))), i && Object(C.w)(G) && !l && o.a.createElement(s.Fragment, null, o.a.createElement(j.a, {
 					isFilled: !0,
 					className: Object(c.a)(S.a.icon, S.a.stickyIcon),
 					desc: R(),
@@ -1917,7 +1917,7 @@
 						crosspost: t,
 						primaryContent: !1
 					}
-				}) : Object(a.B)(t) && Object(a.A)(t) ? s.a.createElement(te, {
+				}) : Object(a.C)(t) && Object(a.B)(t) ? s.a.createElement(te, {
 					post: t
 				}) : s.a.createElement(i.a, {
 					...e,
@@ -5133,4 +5133,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.6e7a9c319c0cf3c6ae39.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.b552537d8398d3b664f5.js.map
