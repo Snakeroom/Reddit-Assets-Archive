@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/0.063653c1fa1f63a1a507.js
-// Retrieved at 10/27/2022, 1:50:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/0.77319d30c25f3c4339f4.js
+// Retrieved at 11/8/2022, 10:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[0], {
 		"./src/reddit/icons/svgs/AddCollection/index.tsx": function(e, s, t) {
@@ -568,58 +568,33 @@
 				d: "M10,1.5 C14.687,1.5 18.5,5.313 18.5,10 C18.5,14.687 14.687,18.5 10,18.5 C5.314,18.5 1.5,14.687 1.5,10 C1.5,5.313 5.314,1.5 10,1.5 Z M7.879,12.122 C6.709,10.952 6.709,9.049 7.879,7.879 C9.012,6.746 10.988,6.746 12.121,7.879 C12.512,8.269 13.145,8.269 13.535,7.879 C13.926,7.489 13.926,6.855 13.535,6.465 C12.591,5.52 11.336,5 10,5 C8.664,5 7.409,5.52 6.465,6.465 C4.516,8.414 4.516,11.586 6.465,13.536 C7.409,14.48 8.664,15 10,15 C11.336,15 12.591,14.48 13.535,13.536 C13.926,13.145 13.926,12.512 13.535,12.122 C13.145,11.731 12.512,11.731 12.121,12.122 C10.988,13.255 9.012,13.255 7.879,12.122 Z"
 			}))
 		},
-		"./src/reddit/icons/svgs/CoinV2/index.m.less": function(e, s, t) {
-			e.exports = {
-				shadow: "_1FZLzx9zXc2B6sAENx2Fl2",
-				standardColor: "_1nJ18ao-riTqosaH0xAHuA"
-			}
-		},
 		"./src/reddit/icons/svgs/CoinV2/index.tsx": function(e, s, t) {
 			"use strict";
 			var n = t("./node_modules/react/index.js"),
-				a = t.n(n),
-				i = t("./src/lib/classNames/index.ts"),
-				c = t("./src/reddit/icons/svgs/CoinV2/index.m.less"),
-				r = t.n(c);
+				a = t.n(n);
 			s.a = e => a.a.createElement("svg", {
 				className: e.className,
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, a.a.createElement("path", {
-				className: Object(i.a)(r.a.shadow, e.shadowClassName),
-				d: "M11.1 1.889H8.722v16.219h2.212a5.86 5.86 0 001.951-.274c3.658-1.158 5.837-5.614 4.856-9.933C16.92 4.28 14.134 1.886 11.1 1.89z"
+				d: "M7.9 18.8h3.8c3.9 0 7.1-3.8 7.1-8.5s-3.2-8.5-7.1-8.5H7.9",
+				fill: "#FFD635",
+				stroke: "#000",
+				strokeMiterlimit: "10",
+				strokeWidth: "1.25"
 			}), a.a.createElement("path", {
-				d: "M11.1 1.889H8.722v16.219h2.212a5.86 5.86 0 001.951-.274c3.658-1.158 5.837-5.614 4.856-9.933C16.92 4.28 14.134 1.886 11.1 1.89z",
-				fill: "url(#shine)",
-				fillOpacity: ".3"
+				d: "M8.2 1.8c-3.9 0-7 3.8-7 8.5s3.1 8.5 7 8.5 7-3.8 7-8.5-3.1-8.5-7-8.5z",
+				fill: "#FFD635",
+				stroke: "#000",
+				strokeMiterlimit: "10",
+				strokeWidth: "1.25"
 			}), a.a.createElement("path", {
-				className: Object(i.a)(r.a.standardColor, e.standardColorClassName),
-				d: "M6.991 2.166C3.334 3.324 1.155 7.78 2.135 12.1c.98 4.32 4.754 6.891 8.411 5.734 3.658-1.157 5.837-5.613 4.857-9.932-.98-4.32-4.754-6.892-8.412-5.735z"
+				d: "M6.2 14.4c-.6-.4-1.2-1-1.5-1.7-.4-.8-.6-1.6-.6-2.4 0-.8.2-1.7.6-2.4.3-.8.8-1.4 1.5-1.8.6-.4 1.3-.6 2-.6.4 0 .8.1 1.2.2.4.1.8.3 1.1.6l-.7 1.8c-.1-.2-.4-.4-.7-.5-.3-.2-.6-.2-.9-.2-.4 0-.8.1-1.2.3-.4.3-.7.6-.9 1-.2.5-.3 1-.3 1.5s.1 1 .3 1.5c.2.4.5.8.9 1 .4.3.8.4 1.2.4.3 0 .6-.1.9-.2.3-.1.5-.3.7-.5l.6 1.8c-.3.2-.7.4-1.1.6-.3.1-.7.2-1.1.2-.7 0-1.4-.2-2-.6z"
 			}), a.a.createElement("path", {
-				className: Object(i.a)(r.a.shadow, e.shadowClassName),
-				d: "M7.54 12.335c1.122.765 2.664.277 3.311-1.047.224-.457.718-.613 1.104-.35.387.264.52.847.296 1.304-.54 1.103-1.41 1.892-2.453 2.222-1.043.33-2.13.16-3.065-.476-1.929-1.316-2.592-4.24-1.479-6.517.54-1.104 1.41-1.893 2.453-2.223 1.042-.33 2.13-.16 3.065.477.387.263.52.847.296 1.303-.223.456-.717.612-1.104.35-1.121-.765-2.663-.277-3.31 1.047-.669 1.367-.271 3.121.887 3.91z"
-			}), a.a.createElement("defs", null, a.a.createElement("linearGradient", {
-				id: "shine",
-				x1: "11.107",
-				y1: "1.889",
-				x2: "11.107",
-				y2: "18.111",
-				gradientUnits: "userSpaceOnUse"
-			}, a.a.createElement("stop", {
-				offset: ".063",
-				stopColor: "#fff",
-				stopOpacity: "0"
-			}), a.a.createElement("stop", {
-				offset: ".302",
-				stopColor: "#fff"
-			}), a.a.createElement("stop", {
-				offset: "0.432",
-				stopColor: "#fff"
-			}), a.a.createElement("stop", {
-				offset: "0.474",
-				stopColor: "#fff",
-				stopOpacity: "0"
-			}))))
+				d: "M11.6 1.1H7.9C3.9 1.4.7 5.3.7 10.2s3.2 8.9 7.2 9.1h3.8c4.3 0 7.7-4.1 7.7-9.1s-3.5-9.1-7.8-9.1zm-9.7 9.1c0-4.3 2.9-7.9 6.4-7.9s6.4 3.5 6.4 7.9-2.9 7.9-6.4 7.9-6.4-3.5-6.4-7.9zm10.2 7.9c2.4-1.9 3.8-4.8 3.8-7.8.1-3.1-1.3-6-3.8-7.9 3.3.3 6 3.7 6 7.8s-2.6 7.6-6 7.9z"
+			}), a.a.createElement("path", {
+				d: "m10.5 14.2-.6-1.8c-.2.2-.4.4-.7.5-.3.1-.6.2-.9.2-.4 0-.9-.1-1.2-.4-.4-.3-.7-.6-.9-1-.2-.5-.3-1-.3-1.5s.1-1 .3-1.5c.1-.4.4-.7.8-1 .4-.2.8-.4 1.2-.4.3 0 .6.1.9.2.3.1.5.3.7.5l.6-1.8c-.3-.2-.6-.4-1-.5-.4-.1-.8-.2-1.2-.2-.7 0-1.4.2-2 .6-.7.4-1.2 1-1.5 1.7-.4.8-.6 1.6-.6 2.4 0 .8.2 1.7.6 2.4.3.8.8 1.4 1.5 1.8.6.4 1.3.6 2 .6.4 0 .8-.1 1.2-.2.4-.1.8-.3 1.1-.6z"
+			}))
 		},
 		"./src/reddit/icons/svgs/Collection/index.tsx": function(e, s, t) {
 			"use strict";
@@ -4248,4 +4223,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/0.063653c1fa1f63a1a507.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/0.77319d30c25f3c4339f4.js.map
