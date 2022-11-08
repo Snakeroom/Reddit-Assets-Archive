@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.bb52a92bb2c7ffbd454b.js
-// Retrieved at 11/8/2022, 1:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.975eddfa34220f73bbdb.js
+// Retrieved at 11/8/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDetailStickyHeader"], {
 		"./src/reddit/actions/shortcuts/close.ts": function(t, e, s) {
@@ -233,17 +233,17 @@
 					}
 				})),
 				y = {
-					[k.p.GIFVIDEO]: l.a.gif_post,
-					[k.p.IMAGE]: l.a.image_post,
-					[k.p.TEXT]: l.a.text_post,
-					[k.p.RTJSON]: l.a.text_post,
-					[k.p.VIDEO]: l.a.video_post,
-					[k.p.EMBED]: l.a.embed,
-					[k.p.LIVEVIDEO]: l.a.video_live,
-					[k.p.GALLERY]: l.a.media_gallery,
-					[k.p.LIVEAUDIO]: l.a.audio
+					[k.o.GIFVIDEO]: l.a.gif_post,
+					[k.o.IMAGE]: l.a.image_post,
+					[k.o.TEXT]: l.a.text_post,
+					[k.o.RTJSON]: l.a.text_post,
+					[k.o.VIDEO]: l.a.video_post,
+					[k.o.EMBED]: l.a.embed,
+					[k.o.LIVEVIDEO]: l.a.video_live,
+					[k.o.GALLERY]: l.a.media_gallery,
+					[k.o.LIVEAUDIO]: l.a.audio
 				},
-				H = t => y[(null == t ? void 0 : t.media) ? t.media.type : k.p.EMBED];
+				H = t => y[(null == t ? void 0 : t.media) ? t.media.type : k.o.EMBED];
 			class T extends i.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -541,4 +541,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.bb52a92bb2c7ffbd454b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.975eddfa34220f73bbdb.js.map

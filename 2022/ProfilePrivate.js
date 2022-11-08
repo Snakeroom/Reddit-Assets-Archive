@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.7be3a4d3054298d709c4.js
-// Retrieved at 11/8/2022, 1:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.8a2c7b8143dbe1e142bd.js
+// Retrieved at 11/8/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -1036,10 +1036,10 @@
 					Ue = le && ee.a,
 					Ge = Object(M.a)(xe),
 					De = Object(F.c)(xe),
-					We = !!xe.media && xe.media.type === J.p.RTJSON,
+					We = !!xe.media && xe.media.type === J.o.RTJSON,
 					Ve = _e && We,
 					He = x && !we,
-					ze = !!xe.media && Object(J.J)(xe.media),
+					ze = !!xe.media && Object(J.I)(xe.media),
 					Ke = !!xe.recommendationContext,
 					qe = {
 						flairStyleTemplate: Re,
@@ -6640,7 +6640,7 @@
 				o = s("./src/reddit/constants/experiments.ts"),
 				i = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const r = Object(n.a)(e => Object(i.c)(e, {
-					experimentName: o.ig,
+					experimentName: o.hg,
 					experimentEligibilitySelector: i.a
 				}), e => e),
 				d = Object(n.a)(r, e => e === o.Zf)
@@ -6719,4 +6719,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.7be3a4d3054298d709c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.8a2c7b8143dbe1e142bd.js.map

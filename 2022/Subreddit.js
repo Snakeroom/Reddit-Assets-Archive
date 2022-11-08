@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.71bc0f2d142479f22c4f.js
-// Retrieved at 11/8/2022, 1:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.2a70396176ad367d1e71.js
+// Retrieved at 11/8/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit", "ModListing~Reddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -8875,7 +8875,7 @@
 				}),
 				O = Object(c.b)(E),
 				j = y.a.wrapped(b.a, "ThemedWidget", x.a),
-				C = e => !(!e || e.isBlank) && (!e.isMediaOnly || !!(e.media && Object(g.H)(e.media) && e.media.content)),
+				C = e => !(!e || e.isBlank) && (!e.isMediaOnly || !!(e.media && Object(g.G)(e.media) && e.media.content)),
 				I = [{
 					img: "/img/house-ads/eatcheapandhealthy.png",
 					href: "/r/eatcheapandhealthy"
@@ -21824,7 +21824,7 @@
 						experimentEligibilitySelector: o.R,
 						experimentName: r.rd
 					});
-					return !(!t || Object(r.ug)(t))
+					return !(!t || Object(r.tg)(t))
 				},
 				i = e => {
 					return Object(s.c)(e, {
@@ -22410,4 +22410,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.71bc0f2d142479f22c4f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.2a70396176ad367d1e71.js.map

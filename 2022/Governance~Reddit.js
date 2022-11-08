@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.ebb4a7c7efc62af432ba.js
-// Retrieved at 11/8/2022, 1:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.3ddf117b2069b3925f38.js
+// Retrieved at 11/8/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -75,8 +75,8 @@
 						const e = 36 - (null !== (t = null == c ? void 0 : c.length) && void 0 !== t ? t : 0);
 						return n.displayText.length > e ? n.displayText.substring(0, e - 3) + "..." : n.displayText
 					}
-					i = o || Object(r.E)(e)
-				} else i = Object(r.E)(e);
+					i = o || Object(r.D)(e)
+				} else i = Object(r.D)(e);
 				const d = a.a.parse(i),
 					l = d.path || "",
 					u = l.length > 7 ? l.substring(0, 7) + "..." : l;
@@ -3730,7 +3730,7 @@
 					} = e, {
 						isSponsored: r
 					} = t, s = Object(c.d)(), a = Object(E.a)(), i = Object(c.e)(F.b), d = Object(c.e)(F.c), u = e => {
-						!i && !d || t.media && Object(D.J)(t.media) || (e.preventDefault(), s(Object(m.ab)(Object(g.b)(t.permalink), t.id)))
+						!i && !d || t.media && Object(D.I)(t.media) || (e.preventDefault(), s(Object(m.ab)(Object(g.b)(t.permalink), t.id)))
 					};
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(X, {
 						nowrap: e.nowrap
@@ -3741,7 +3741,7 @@
 						postId: t.id,
 						source: t.source
 					}, o.a.createElement(ee, e)); {
-						const s = t.media && Object(D.J)(t.media) ? Object(v.c)(t.id, n.name) : t.permalink,
+						const s = t.media && Object(D.I)(t.media) ? Object(v.c)(t.id, n.name) : t.permalink,
 							c = e.isCommentPermalink ? Object(g.b)(s) : Object(y.a)(s, void 0, a);
 						return o.a.createElement(X, {
 							disableVisited: e.disableVisited,
@@ -3804,11 +3804,11 @@
 					} = r, a = e.isCommentsPage ? H.SourceElement.PostLink : H.SourceElement.ListingPostLink;
 					if (Object(O.a)()) return null;
 					if (n && r.isNSFW) return null;
-					const c = !t && !e.isCrosspost && e.size !== U.Large && !r.isSponsored && !(r.media && Object(D.J)(r.media)) && (r.source || r.media && (r.media.type === D.p.GIFVIDEO || r.media.type === D.p.IMAGE || r.media.type === D.p.EMBED));
+					const c = !t && !e.isCrosspost && e.size !== U.Large && !r.isSponsored && !(r.media && Object(D.I)(r.media)) && (r.source || r.media && (r.media.type === D.o.GIFVIDEO || r.media.type === D.o.IMAGE || r.media.type === D.o.EMBED));
 					if (t || !e.isCommentsPage || e.isCommentPermalink || e.shouldLinkWrap) {
 						if (c) return o.a.createElement(h.a, {
 							className: e.outboundLinkClassName,
-							href: Object(D.E)(r),
+							href: Object(D.D)(r),
 							isSponsored: s,
 							postId: r.id,
 							source: r.source,
@@ -5028,10 +5028,10 @@
 				b = n("./node_modules/reselect/es/index.js");
 			const h = Object(b.a)(e => Object(f.c)(e, {
 				experimentEligibilitySelector: f.a,
-				experimentName: p.qg
+				experimentName: p.pg
 			}), e => ({
-				promptBeforeClick: e === p.rg.PromptBeforeClick,
-				promptAfterClick: e === p.rg.PromptAfterClick
+				promptBeforeClick: e === p.qg.PromptBeforeClick,
+				promptAfterClick: e === p.qg.PromptAfterClick
 			}));
 			var y = n("./src/reddit/controls/Search/SearchScopePill/index.tsx"),
 				m = n("./src/reddit/controls/Search/SearchBar/index.m.less"),
@@ -5560,7 +5560,7 @@
 				s = n("./src/reddit/models/Media/index.ts");
 
 			function a(e, t) {
-				return !(e.removedByCategory || !e.thumbnail || !e.thumbnail.url || e.thumbnail.url === r.a.SELF || e.thumbnail.url === r.a.NSFW || e.media && Object(s.G)(e.media) || t)
+				return !(e.removedByCategory || !e.thumbnail || !e.thumbnail.url || e.thumbnail.url === r.a.SELF || e.thumbnail.url === r.a.NSFW || e.media && Object(s.F)(e.media) || t)
 			}
 		},
 		"./src/reddit/helpers/economics/sortBadges.ts": function(e, t, n) {
@@ -16967,7 +16967,7 @@
 							postId: n,
 							richtextContent: r
 						} = t.payload, s = e[n];
-						return s && s.media && Object(Lf.M)(s.media) ? {
+						return s && s.media && Object(Lf.L)(s.media) ? {
 							...e,
 							[n]: {
 								...s,
@@ -25826,7 +25826,7 @@
 						hk: "2CBRa4"
 					}).toString();
 					let s = Object(o.b)(e);
-					return s || (null === (t = e.media) || void 0 === t ? void 0 : t.type) !== c.p.TEXT || (s = e.media.markdownContent), s === n
+					return s || (null === (t = e.media) || void 0 === t ? void 0 : t.type) !== c.o.TEXT || (s = e.media.markdownContent), s === n
 				}),
 				f = Object(s.a)(a.a, e => {
 					var t;
@@ -25840,7 +25840,7 @@
 						hk: "12mOne"
 					}).toString();
 					let s = Object(o.b)(e);
-					return s || (null === (t = e.media) || void 0 === t ? void 0 : t.type) !== c.p.TEXT || (s = e.media.markdownContent), s === n
+					return s || (null === (t = e.media) || void 0 === t ? void 0 : t.type) !== c.o.TEXT || (s = e.media.markdownContent), s === n
 				}),
 				b = Object(s.a)(a.a, e => {
 					if (!e) return !1;
@@ -25936,4 +25936,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.ebb4a7c7efc62af432ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.3ddf117b2069b3925f38.js.map

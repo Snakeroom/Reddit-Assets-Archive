@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.14110699960fd8a88834.js
-// Retrieved at 11/8/2022, 1:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.34c6b29ea060accbf7ce.js
+// Retrieved at 11/8/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -3296,7 +3296,7 @@
 					n = {
 						overflow: "hidden"
 					};
-				return n.width = e.width && !e.fullWidth ? `${e.width}px` : "100%", e.showCentered && (n.margin = "0 auto"), e.isListing || (n.maxHeight = `${u.e}px`), void 0 !== e.maxHeight && (n.maxHeight = e.maxHeight || void 0), e.isTweet || (n.height = "100%"), s.a.createElement("iframe", {
+				return n.width = e.width && !e.fullWidth ? `${e.width}px` : "100%", e.showCentered && (n.margin = "0 auto"), e.isListing || (n.maxHeight = `${u.d}px`), void 0 !== e.maxHeight && (n.maxHeight = e.maxHeight || void 0), e.isTweet || (n.height = "100%"), s.a.createElement("iframe", {
 					className: Object(c.a)(l.a, b.a.embedBox, e.className),
 					height: e.height,
 					width: e.width && !e.fullWidth ? e.width : "100%",
@@ -3364,7 +3364,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const N = e => e > 2 * w.e,
+			const N = e => e > 2 * w.d,
 				S = e => a.a.createElement("img", {
 					alt: e.altText || n.fbt._("Comment image", null, {
 						hk: "1DiDxV"
@@ -3380,7 +3380,7 @@
 							[k.a.mShowBlurred]: e.shouldBlur
 						}),
 						r = {};
-					e.showFull || e.isTall || (r.maxHeight = `${w.k}px`), e.isListing || e.isTall && N(e.height) || (r.maxHeight = `${w.e}px`), e.isExpando && e.maxHeight && (r.maxHeight = `${e.maxHeight}px`), e.isExpando && e.maxWidth && (r.maxWidth = `${e.maxWidth}px`);
+					e.showFull || e.isTall || (r.maxHeight = `${w.j}px`), e.isListing || e.isTall && N(e.height) || (r.maxHeight = `${w.d}px`), e.isExpando && e.maxHeight && (r.maxHeight = `${e.maxHeight}px`), e.isExpando && e.maxWidth && (r.maxWidth = `${e.maxWidth}px`);
 					const o = Object(s.useRef)(null),
 						[i, c] = Object(s.useState)(!1),
 						l = Object(s.useCallback)(e => {
@@ -3425,7 +3425,7 @@
 				},
 				T = e => {
 					const t = {};
-					return (!e.showFull && Object(w.N)(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = `${w.k}px`, e.shouldBlur && (t.maxWidth = Object(w.N)(e.height, e.width) ? `${w.A}px` : `${e.width}px`)), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = `${e.maxHeight}px`), a.a.createElement("div", {
+					return (!e.showFull && Object(w.M)(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = `${w.j}px`, e.shouldBlur && (t.maxWidth = Object(w.M)(e.height, e.width) ? `${w.z}px` : `${e.width}px`)), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = `${e.maxHeight}px`), a.a.createElement("div", {
 						className: Object(d.a)(k.a.container, e.className, {
 							[k.a.alignLeft]: e.alignLeft
 						}),
@@ -3488,7 +3488,7 @@
 						onClick: t,
 						...r
 					} = e;
-					const s = Object(w.N)(r.height, r.width),
+					const s = Object(w.M)(r.height, r.width),
 						o = N(r.height) && s;
 					return a.a.createElement(T, P({}, r, {
 						className: `${s?`${I.a} `:""}${r.className||""}`
@@ -3506,7 +3506,7 @@
 					}, L(s, r), r.shouldBlur && !r.isVideoThumbnail && !r.isNsfwBlockingModalEligible && a.a.createElement(p.a, {
 						isNSFW: !!r.isNSFW,
 						isSpoiler: !!r.isSpoiler
-					})), r.isListing && !r.showFull && r.height > w.k && Object(w.N)(r.height, r.width) && a.a.createElement("div", {
+					})), r.isListing && !r.showFull && r.height > w.j && Object(w.M)(r.height, r.width) && a.a.createElement("div", {
 						className: k.a.seeMore
 					}, n.fbt._("see full image", null, {
 						hk: "1Qygw5"
@@ -3540,7 +3540,7 @@
 				d = r.n(c);
 			const l = e => {
 				let t = null;
-				(e.showFull || e.height < i.k) && (t = e.height), e.maxGalleryHeight && (t = e.maxGalleryHeight);
+				(e.showFull || e.height < i.j) && (t = e.height), e.maxGalleryHeight && (t = e.maxGalleryHeight);
 				const r = {
 						...t ? {
 							maxHeight: `${t}px`
@@ -3556,7 +3556,7 @@
 						className: d.a.blur,
 						src: Object(o.a)(e.blurSrc)
 					}) : null,
-					c = Object(i.C)(e.height, e.width, e.forceAspectRatio);
+					c = Object(i.B)(e.height, e.width, e.forceAspectRatio);
 				return s.a.createElement("div", {
 					className: Object(a.a)(d.a.container, e.className, {
 						[d.a.video]: e.isVideo,
@@ -3771,7 +3771,7 @@
 
 				function H() {
 					const e = {};
-					return C && (e.margin = "0 auto"), I || (e.maxHeight = `${p.e}px`), o.a.createElement(w, {
+					return C && (e.margin = "0 auto"), I || (e.maxHeight = `${p.d}px`), o.a.createElement(w, {
 						autoplay: A,
 						className: Object(l.a)(m.a, y.a.styledVideo, {
 							[y.a.renderSmallMedia]: N
@@ -6334,4 +6334,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.14110699960fd8a88834.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.34c6b29ea060accbf7ce.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a.128aeebbd03d064cb65c.js
-// Retrieved at 11/8/2022, 1:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a.7071c1624c99403baf1e.js
+// Retrieved at 11/8/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a"], {
 		"./src/higherOrderComponents/withAdClickLocation/index.tsx": function(e, t, s) {
@@ -638,33 +638,33 @@
 						className: n
 					});
 					switch (e) {
-						case x.p.GIFVIDEO:
+						case x.o.GIFVIDEO:
 							return r.a.createElement(b.a, {
 								name: "gif_post",
 								className: n
 							});
-						case x.p.IMAGE:
+						case x.o.IMAGE:
 							return r.a.createElement(b.a, {
 								name: "image_post",
 								className: n
 							});
-						case x.p.TEXT:
-						case x.p.RTJSON:
+						case x.o.TEXT:
+						case x.o.RTJSON:
 							return r.a.createElement(b.a, {
 								name: "text_post",
 								className: n
 							});
-						case x.p.VIDEO:
+						case x.o.VIDEO:
 							return r.a.createElement(b.a, {
 								name: "video_post",
 								className: n
 							});
-						case x.p.GALLERY:
+						case x.o.GALLERY:
 							return r.a.createElement(b.a, {
 								name: "media_gallery",
 								className: n
 							});
-						case x.p.EMBED:
+						case x.o.EMBED:
 						default:
 							return r.a.createElement(b.a, {
 								name: "embed",
@@ -953,8 +953,8 @@
 						caretOnTop: !1
 					},
 					q = W.isRemoved && !W.modRemovalReason && !W.modNote && W.belongsTo.type === p.a.SUBREDDIT,
-					G = R("Approve", W.id, H),
-					V = R("Archived", W.id, H),
+					V = R("Approve", W.id, H),
+					G = R("Archived", W.id, H),
 					Q = R("Lock", W.id, H),
 					Z = R("Mod", W.id, H),
 					K = R("Remove", W.id, H),
@@ -975,11 +975,11 @@
 					isFilled: !0,
 					className: Object(c.a)(g.a.icon, g.a.archivedIcon),
 					desc: M(),
-					id: V,
-					onMouseEnter: D(V),
+					id: G,
+					onMouseEnter: D(G),
 					onMouseLeave: S
 				}), r.a.createElement(m.c, T({
-					tooltipId: V,
+					tooltipId: G,
 					text: M()
 				}, X))), W.isLocked && !W.isSponsored && r.a.createElement(o.Fragment, null, r.a.createElement(_.a, {
 					isFilled: !0,
@@ -1015,11 +1015,11 @@
 					isFilled: !0,
 					className: Object(c.a)(g.a.icon, g.a.approveIcon),
 					desc: Object(v.a)(W),
-					id: G,
-					onMouseEnter: D(G),
+					id: V,
+					onMouseEnter: D(V),
 					onMouseLeave: S
 				}), r.a.createElement(m.c, T({
-					tooltipId: G,
+					tooltipId: V,
 					text: Object(v.a)(W)
 				}, X))), Object(x.a)(W) && r.a.createElement(o.Fragment, null, r.a.createElement(j.a, {
 					isFilled: !0,
@@ -1183,8 +1183,8 @@
 						id: d ? d(l.id) : l.id,
 						tabIndex: -1,
 						"data-adclicklocation": _.a.BACKGROUND
-					}, s), j = !!l.media && l.media.type === b.p.VIDEO;
-					return (e => l.media && Object(b.G)(l.media) && f ? o.a.createElement(m, {
+					}, s), j = !!l.media && l.media.type === b.o.VIDEO;
+					return (e => l.media && Object(b.F)(l.media) && f ? o.a.createElement(m, {
 						postId: l.id
 					}, e) : e)((e => l.isSponsored || j ? o.a.createElement(i.a, {
 						post: l,
@@ -1406,8 +1406,8 @@
 					wrapperClassName: X.a.userIconWrapper
 				})))
 			};
-			var G = s("./src/reddit/components/PromotedUserPostsAd/PromotedUserPost/index.m.less"),
-				V = s.n(G);
+			var V = s("./src/reddit/components/PromotedUserPostsAd/PromotedUserPost/index.m.less"),
+				G = s.n(V);
 			const Q = Object(C.a)(null);
 			var Z = Object(I.b)(Q(e => {
 					let {
@@ -1421,7 +1421,7 @@
 						"data-testid": `promoted-user-post-${t.id}`,
 						to: a ? Object(y.b)(t.permalink) : Object(k.a)(t.permalink, !1, r)
 					}, o.a.createElement("div", {
-						className: V.a.container
+						className: G.a.container
 					}, o.a.createElement(F, {
 						post: t
 					}), o.a.createElement(q, {
@@ -2193,4 +2193,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a.128aeebbd03d064cb65c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a.7071c1624c99403baf1e.js.map

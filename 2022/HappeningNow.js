@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HappeningNow.7c0e5b6cf69ddf84bd00.js
-// Retrieved at 11/8/2022, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HappeningNow.88dcbb8fe874507518ba.js
+// Retrieved at 11/8/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HappeningNow"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -662,7 +662,7 @@
 					r = {
 						overflow: "hidden"
 					};
-				return r.width = e.width && !e.fullWidth ? `${e.width}px` : "100%", e.showCentered && (r.margin = "0 auto"), e.isListing || (r.maxHeight = `${u.e}px`), void 0 !== e.maxHeight && (r.maxHeight = e.maxHeight || void 0), e.isTweet || (r.height = "100%"), s.a.createElement("iframe", {
+				return r.width = e.width && !e.fullWidth ? `${e.width}px` : "100%", e.showCentered && (r.margin = "0 auto"), e.isListing || (r.maxHeight = `${u.d}px`), void 0 !== e.maxHeight && (r.maxHeight = e.maxHeight || void 0), e.isTweet || (r.height = "100%"), s.a.createElement("iframe", {
 					className: Object(c.a)(d.a, h.a.embedBox, e.className),
 					height: e.height,
 					width: e.width && !e.fullWidth ? e.width : "100%",
@@ -730,7 +730,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const T = e => e > 2 * E.e,
+			const T = e => e > 2 * E.d,
 				R = e => o.a.createElement("img", {
 					alt: e.altText || r.fbt._("Comment image", null, {
 						hk: "1DiDxV"
@@ -746,7 +746,7 @@
 							[S.a.mShowBlurred]: e.shouldBlur
 						}),
 						n = {};
-					e.showFull || e.isTall || (n.maxHeight = `${E.k}px`), e.isListing || e.isTall && T(e.height) || (n.maxHeight = `${E.e}px`), e.isExpando && e.maxHeight && (n.maxHeight = `${e.maxHeight}px`), e.isExpando && e.maxWidth && (n.maxWidth = `${e.maxWidth}px`);
+					e.showFull || e.isTall || (n.maxHeight = `${E.j}px`), e.isListing || e.isTall && T(e.height) || (n.maxHeight = `${E.d}px`), e.isExpando && e.maxHeight && (n.maxHeight = `${e.maxHeight}px`), e.isExpando && e.maxWidth && (n.maxWidth = `${e.maxWidth}px`);
 					const a = Object(s.useRef)(null),
 						[i, c] = Object(s.useState)(!1),
 						d = Object(s.useCallback)(e => {
@@ -791,7 +791,7 @@
 				},
 				I = e => {
 					const t = {};
-					return (!e.showFull && Object(E.N)(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = `${E.k}px`, e.shouldBlur && (t.maxWidth = Object(E.N)(e.height, e.width) ? `${E.A}px` : `${e.width}px`)), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = `${e.maxHeight}px`), o.a.createElement("div", {
+					return (!e.showFull && Object(E.M)(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = `${E.j}px`, e.shouldBlur && (t.maxWidth = Object(E.M)(e.height, e.width) ? `${E.z}px` : `${e.width}px`)), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = `${e.maxHeight}px`), o.a.createElement("div", {
 						className: Object(l.a)(S.a.container, e.className, {
 							[S.a.alignLeft]: e.alignLeft
 						}),
@@ -854,7 +854,7 @@
 						onClick: t,
 						...n
 					} = e;
-					const s = Object(E.N)(n.height, n.width),
+					const s = Object(E.M)(n.height, n.width),
 						a = T(n.height) && s;
 					return o.a.createElement(I, N({}, n, {
 						className: `${s?`${y.a} `:""}${n.className||""}`
@@ -872,7 +872,7 @@
 					}, F(s, n), n.shouldBlur && !n.isVideoThumbnail && !n.isNsfwBlockingModalEligible && o.a.createElement(p.a, {
 						isNSFW: !!n.isNSFW,
 						isSpoiler: !!n.isSpoiler
-					})), n.isListing && !n.showFull && n.height > E.k && Object(E.N)(n.height, n.width) && o.a.createElement("div", {
+					})), n.isListing && !n.showFull && n.height > E.j && Object(E.M)(n.height, n.width) && o.a.createElement("div", {
 						className: S.a.seeMore
 					}, r.fbt._("see full image", null, {
 						hk: "1Qygw5"
@@ -906,7 +906,7 @@
 				l = n.n(c);
 			const d = e => {
 				let t = null;
-				(e.showFull || e.height < i.k) && (t = e.height), e.maxGalleryHeight && (t = e.maxGalleryHeight);
+				(e.showFull || e.height < i.j) && (t = e.height), e.maxGalleryHeight && (t = e.maxGalleryHeight);
 				const n = {
 						...t ? {
 							maxHeight: `${t}px`
@@ -922,7 +922,7 @@
 						className: l.a.blur,
 						src: Object(a.a)(e.blurSrc)
 					}) : null,
-					c = Object(i.C)(e.height, e.width, e.forceAspectRatio);
+					c = Object(i.B)(e.height, e.width, e.forceAspectRatio);
 				return s.a.createElement("div", {
 					className: Object(o.a)(l.a.container, e.className, {
 						[l.a.video]: e.isVideo,
@@ -1137,7 +1137,7 @@
 
 				function V() {
 					const e = {};
-					return j && (e.margin = "0 auto"), y || (e.maxHeight = `${p.e}px`), a.a.createElement(E, {
+					return j && (e.margin = "0 auto"), y || (e.maxHeight = `${p.d}px`), a.a.createElement(E, {
 						autoplay: M,
 						className: Object(d.a)(m.a, _.a.styledVideo, {
 							[_.a.renderSmallMedia]: T
@@ -3451,7 +3451,7 @@
 						})),
 						u = Object(s.useMemo)(() => {
 							var e;
-							return (null === (e = null == d ? void 0 : d.media) || void 0 === e ? void 0 : e.type) === Pe.p.RTJSON
+							return (null === (e = null == d ? void 0 : d.media) || void 0 === e ? void 0 : e.type) === Pe.o.RTJSON
 						}, [d]),
 						m = Object(s.useCallback)(e => {
 							e && h(e.scrollHeight)
@@ -3919,4 +3919,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.7c0e5b6cf69ddf84bd00.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.88dcbb8fe874507518ba.js.map

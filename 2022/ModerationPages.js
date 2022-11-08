@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.ac25c713523f2b906158.js
-// Retrieved at 11/8/2022, 1:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.03ca42bc71d2ad95f944.js
+// Retrieved at 11/8/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -1148,8 +1148,8 @@
 						const e = 36 - (null !== (t = null == a ? void 0 : a.length) && void 0 !== t ? t : 0);
 						return n.displayText.length > e ? n.displayText.substring(0, e - 3) + "..." : n.displayText
 					}
-					d = i || Object(s.E)(e)
-				} else d = Object(s.E)(e);
+					d = i || Object(s.D)(e)
+				} else d = Object(s.D)(e);
 				const c = o.a.parse(d),
 					l = c.path || "",
 					u = l.length > 7 ? l.substring(0, 7) + "..." : l;
@@ -9403,7 +9403,7 @@
 						} = t;
 						var m, p;
 						const b = Object(je.i)(e),
-							f = !!b && !Object(ve.ug)(b) && (o || b === ve.ob.Community),
+							f = !!b && !Object(ve.tg)(b) && (o || b === ve.ob.Community),
 							{
 								adsSeenCount: h,
 								totalPostsSeenCount: _,
@@ -11646,7 +11646,7 @@
 					if (!d) return;
 					let c, l = j.i.RICH_TEXT,
 						u = "";
-					d.type === C.p.TEXT ? (l = j.i.MARKDOWN, u = d.content) : d.type === C.p.RTJSON && (u = (l = d.rteMode || j.i.RICH_TEXT) === j.i.MARKDOWN ? d.markdownContent : d.richtextContent, c = d.mediaMetadata || void 0), n(R({
+					d.type === C.o.TEXT ? (l = j.i.MARKDOWN, u = d.content) : d.type === C.o.RTJSON && (u = (l = d.rteMode || j.i.RICH_TEXT) === j.i.MARKDOWN ? d.markdownContent : d.richtextContent, c = d.mediaMetadata || void 0), n(R({
 						editorMode: l,
 						mediaMetadata: c,
 						postContent: u,
@@ -20955,7 +20955,7 @@
 						if (r()(this.state.event, e) || this.setState({
 								event: e
 							}), this.props.trackDisplay) {
-							const t = this.props.post.media && Object(b.G)(this.props.post.media);
+							const t = this.props.post.media && Object(b.F)(this.props.post.media);
 							this.viewabilityStats.forEach(n => {
 								(n.event !== p.a.GalleryItemImpression || t) && this.checkViewability(e, n)
 							})
@@ -28666,7 +28666,7 @@
 						showPromotedCTA: Ae,
 						showCTAExperimentDesign: Le,
 						isLiveChatUserCountEnabled: De
-					} = this.props, Ue = !!he.media && he.media.type === _.p.RTJSON, Be = ge && Ue, qe = Object(Y.b)(he.id, j), Ge = Object(be.a)(X), He = Object(me.a)(X), We = Object(pe.a)(X), Ve = `-mod-actions-menu-${he.id}`, ze = `voting-arrows-${he.id}`, Ke = !!r && Object(v.e)(r) === he.author, Qe = Object(q.a)(he), Ye = Object(H.c)(he), Je = Object(D.a)("View--Reports", he.id, Te), Xe = Object(H.a)(he), Ze = !(j || x || O), $e = he.media && he.media.type === _.p.LIVEVIDEO, et = e => Pe(Object(h.k)(he.id, e)), tt = Object(c.t)(he, u), {
+					} = this.props, Ue = !!he.media && he.media.type === _.o.RTJSON, Be = ge && Ue, qe = Object(Y.b)(he.id, j), Ge = Object(be.a)(X), He = Object(me.a)(X), We = Object(pe.a)(X), Ve = `-mod-actions-menu-${he.id}`, ze = `voting-arrows-${he.id}`, Ke = !!r && Object(v.e)(r) === he.author, Qe = Object(q.a)(he), Ye = Object(H.c)(he), Je = Object(D.a)("View--Reports", he.id, Te), Xe = Object(H.a)(he), Ze = !(j || x || O), $e = he.media && he.media.type === _.o.LIVEVIDEO, et = e => Pe(Object(h.k)(he.id, e)), tt = Object(c.t)(he, u), {
 						source: nt
 					} = tt, st = Object(g.s)(he), rt = o.a.createElement(Q.b, {
 						className: Object(l.a)(Ce.a.compactPostStyles, we.a.postContainer, Object(f.a)(this.props), t),
@@ -30753,33 +30753,33 @@
 						className: s
 					});
 					switch (e) {
-						case f.p.GIFVIDEO:
+						case f.o.GIFVIDEO:
 							return o.a.createElement(b.a, {
 								name: "gif_post",
 								className: s
 							});
-						case f.p.IMAGE:
+						case f.o.IMAGE:
 							return o.a.createElement(b.a, {
 								name: "image_post",
 								className: s
 							});
-						case f.p.TEXT:
-						case f.p.RTJSON:
+						case f.o.TEXT:
+						case f.o.RTJSON:
 							return o.a.createElement(b.a, {
 								name: "text_post",
 								className: s
 							});
-						case f.p.VIDEO:
+						case f.o.VIDEO:
 							return o.a.createElement(b.a, {
 								name: "video_post",
 								className: s
 							});
-						case f.p.GALLERY:
+						case f.o.GALLERY:
 							return o.a.createElement(b.a, {
 								name: "media_gallery",
 								className: s
 							});
-						case f.p.EMBED:
+						case f.o.EMBED:
 						default:
 							return o.a.createElement(b.a, {
 								name: "embed",
@@ -32046,7 +32046,7 @@
 						className: le.a.shareText
 					}, s.fbt._("share", null, {
 						hk: "1eAfZg"
-					}))), []), Ke = !!b && Object(J.e)(b) === ce.author, Qe = Object($.a)("View--Reports", ce.id, xe), Ye = Object($.a)(c.wc, ce.id, xe), Je = Object(j.c)(ce), Xe = Ee("-mod-actions-menu", ce.id, L, F), Ze = Object(j.a)(ce), $e = ce.postId, et = U === A.g.Large, tt = !N && et || g && V || Ae, nt = !(L || N || v), st = !ce.authorIsBlocked && b && ce.isGildable && !ce.authorIsBlocked && !ce.unrepliableReason, rt = ce.media && ce.media.type === K.p.LIVEVIDEO, ot = !!ce.recommendationContext, it = ce.isSponsored || Object(m.u)(ie);
+					}))), []), Ke = !!b && Object(J.e)(b) === ce.author, Qe = Object($.a)("View--Reports", ce.id, xe), Ye = Object($.a)(c.wc, ce.id, xe), Je = Object(j.c)(ce), Xe = Ee("-mod-actions-menu", ce.id, L, F), Ze = Object(j.a)(ce), $e = ce.postId, et = U === A.g.Large, tt = !N && et || g && V || Ae, nt = !(L || N || v), st = !ce.authorIsBlocked && b && ce.isGildable && !ce.authorIsBlocked && !ce.unrepliableReason, rt = ce.media && ce.media.type === K.o.LIVEVIDEO, ot = !!ce.recommendationContext, it = ce.isSponsored || Object(m.u)(ie);
 					return o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
 						className: Object(d.a)(le.a.flatlistContainer, l)
 					}, o.a.createElement(O.a, {
@@ -41889,8 +41889,8 @@
 						id: c ? c(l.id) : l.id,
 						tabIndex: -1,
 						"data-adclicklocation": O.a.BACKGROUND
-					}, n), E = !!l.media && l.media.type === b.p.VIDEO;
-					return (e => l.media && Object(b.G)(l.media) && v ? r.a.createElement(u, {
+					}, n), E = !!l.media && l.media.type === b.o.VIDEO;
+					return (e => l.media && Object(b.F)(l.media) && v ? r.a.createElement(u, {
 						postId: l.id
 					}, e) : e)((e => l.isSponsored || E ? r.a.createElement(a.a, {
 						post: l,
@@ -43941,7 +43941,7 @@
 					} = e, {
 						isSponsored: s
 					} = t, r = Object(a.d)(), o = Object(x.a)(), d = Object(a.e)(B.b), c = Object(a.e)(B.c), u = e => {
-						!d && !c || t.media && Object(k.J)(t.media) || (e.preventDefault(), r(Object(_.ab)(Object(g.b)(t.permalink), t.id)))
+						!d && !c || t.media && Object(k.I)(t.media) || (e.preventDefault(), r(Object(_.ab)(Object(g.b)(t.permalink), t.id)))
 					};
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return i.a.createElement(X, {
 						nowrap: e.nowrap
@@ -43952,7 +43952,7 @@
 						postId: t.id,
 						source: t.source
 					}, i.a.createElement(ee, e)); {
-						const r = t.media && Object(k.J)(t.media) ? Object(v.c)(t.id, n.name) : t.permalink,
+						const r = t.media && Object(k.I)(t.media) ? Object(v.c)(t.id, n.name) : t.permalink,
 							a = e.isCommentPermalink ? Object(g.b)(r) : Object(h.a)(r, void 0, o);
 						return i.a.createElement(X, {
 							disableVisited: e.disableVisited,
@@ -44015,11 +44015,11 @@
 					} = s, o = e.isCommentsPage ? H.SourceElement.PostLink : H.SourceElement.ListingPostLink;
 					if (Object(O.a)()) return null;
 					if (n && s.isNSFW) return null;
-					const a = !t && !e.isCrosspost && e.size !== D.Large && !s.isSponsored && !(s.media && Object(k.J)(s.media)) && (s.source || s.media && (s.media.type === k.p.GIFVIDEO || s.media.type === k.p.IMAGE || s.media.type === k.p.EMBED));
+					const a = !t && !e.isCrosspost && e.size !== D.Large && !s.isSponsored && !(s.media && Object(k.I)(s.media)) && (s.source || s.media && (s.media.type === k.o.GIFVIDEO || s.media.type === k.o.IMAGE || s.media.type === k.o.EMBED));
 					if (t || !e.isCommentsPage || e.isCommentPermalink || e.shouldLinkWrap) {
 						if (a) return i.a.createElement(f.a, {
 							className: e.outboundLinkClassName,
-							href: Object(k.E)(s),
+							href: Object(k.D)(s),
 							isSponsored: r,
 							postId: s.id,
 							source: s.source,
@@ -51221,11 +51221,11 @@
 						placeholderImage: y,
 						redditStyle: g,
 						theme: j
-					}), w = P(e), T = c ? _.SourceElement.PostImage : _.SourceElement.ListingPostImage, N = A(h, t, S, I, C, j, w, l, O, v, g, u, p, f, r), R = Object(b.E)(h);
+					}), w = P(e), T = c ? _.SourceElement.PostImage : _.SourceElement.ListingPostImage, N = A(h, t, S, I, C, j, w, l, O, v, g, u, p, f, r), R = Object(b.D)(h);
 					return Object(s.a)(R) && !v && R.indexOf("redditmedia") < 0 ? o.a.createElement("div", {
 						className: Object(i.a)(x.a.container, k ? x.a.usePreview : "", n)
 					}, o.a.createElement(m.b, {
-						href: Object(b.E)(h),
+						href: Object(b.D)(h),
 						isSponsored: h.isSponsored,
 						postId: h.id,
 						source: h.source,
@@ -51249,7 +51249,7 @@
 					} = t || n;
 					return r && o ? o.url : n.isSponsored && o && "default" === a.url ? o.url : R(i) ? i.scrubberThumbSource : a.url
 				},
-				R = e => !!e && e.type === b.p.LIVEVIDEO,
+				R = e => !!e && e.type === b.o.LIVEVIDEO,
 				A = (e, t, n, r, a, d, l, u, m, p, b, f, h, _, g) => {
 					const v = (e => e.source && !e.isSponsored || !1)(e);
 					if (Object(s.a)(l)) {
@@ -57779,7 +57779,7 @@
 								experimentName: o.F,
 								expEventOverride: t
 							});
-							return !!(Object(o.ug)(n) ? void 0 : n)
+							return !!(Object(o.tg)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -59019,19 +59019,19 @@
 					const d = e.over_18 || e.spoiler;
 					if (e.preview && (n = !!(a = e.preview.images[0].variants).mp4, r = e.preview.images[0].source, d && (s = a.obfuscated.source.url)), e.is_self) return {
 						content: e.selftext_html,
-						type: o.p.TEXT,
+						type: o.o.TEXT,
 						markdownContent: e.selftext,
 						obfuscated: s,
 						rteMode: e.rte_mode || i.i.RICH_TEXT,
 						...e.rtjson && {
 							richtextContent: e.rtjson,
-							type: o.p.RTJSON,
+							type: o.o.RTJSON,
 							mediaMetadata: e.media_metadata
 						}
 					};
 					if (e.secure_media && e.secure_media.oembed || e.is_survey_ad) return {
 						content: e.secure_media_embed.media_domain_url,
-						type: o.p.EMBED,
+						type: o.o.EMBED,
 						width: e.secure_media.oembed.width || 0,
 						height: e.secure_media.oembed.height || 0,
 						obfuscated: s,
@@ -59048,7 +59048,7 @@
 							posterUrl: t.url,
 							width: t.width,
 							height: t.height,
-							type: o.p.VIDEO
+							type: o.o.VIDEO
 						}
 					}
 					if (e.media && e.media.rpan_video) {
@@ -59056,12 +59056,12 @@
 						return {
 							hlsUrl: t.hls_url,
 							scrubberThumbSource: t.scrubber_media_url,
-							type: o.p.LIVEVIDEO
+							type: o.o.LIVEVIDEO
 						}
 					}
 					if (t && n) return {
 						content: a.mp4.source.url,
-						type: o.p.GIFVIDEO,
+						type: o.o.GIFVIDEO,
 						width: a.mp4.source.width,
 						height: a.mp4.source.height,
 						gifBackgroundImage: r.url,
@@ -59073,7 +59073,7 @@
 						const t = a.gif ? a.gif.resolutions : e.preview.images[0].resolutions;
 						return {
 							content: r.url,
-							type: o.p.IMAGE,
+							type: o.o.IMAGE,
 							width: r.width,
 							height: r.height,
 							obfuscated: s,
@@ -74752,7 +74752,7 @@
 						experimentName: o.Se
 					}) === o.Ld
 				},
-				p = e => !e.media || e.media.type !== d.p.RTJSON && e.media.type !== d.p.TEXT ? "" : e.media.markdownContent,
+				p = e => !e.media || e.media.type !== d.o.RTJSON && e.media.type !== d.o.TEXT ? "" : e.media.markdownContent,
 				b = e => !e.media && e.source && Object(s.a)(e.source.url) ? e.source.displayText : "",
 				f = (e, t) => {
 					const n = Object(u.G)(e, {
@@ -74786,7 +74786,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: s.Kd
 				});
-				return !(!t || Object(s.ug)(t))
+				return !(!t || Object(s.tg)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/gqlSubredditPage.ts": function(e, t, n) {
@@ -75568,7 +75568,7 @@
 				r = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(s.a)(e => Object(o.c)(e, {
-					experimentName: r.ig,
+					experimentName: r.hg,
 					experimentEligibilitySelector: o.a
 				}), e => e),
 				a = Object(s.a)(i, e => e === r.Zf)
@@ -76396,7 +76396,7 @@
 					} = e.onboarding;
 					if (t.success || t.failure) return t
 				},
-				x = Object(r.a)(m.i, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(i.ug)(e) ? t : null),
+				x = Object(r.a)(m.i, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(i.tg)(e) ? t : null),
 				O = Object(r.a)(m.i, (e, t) => {
 					let {
 						pageLayer: n
@@ -76460,7 +76460,7 @@
 						hk: "2CBRa4"
 					}).toString();
 					let r = Object(i.b)(e);
-					return r || (null === (t = e.media) || void 0 === t ? void 0 : t.type) !== a.p.TEXT || (r = e.media.markdownContent), r === n
+					return r || (null === (t = e.media) || void 0 === t ? void 0 : t.type) !== a.o.TEXT || (r = e.media.markdownContent), r === n
 				}),
 				p = Object(r.a)(o.a, e => {
 					var t;
@@ -76474,7 +76474,7 @@
 						hk: "12mOne"
 					}).toString();
 					let r = Object(i.b)(e);
-					return r || (null === (t = e.media) || void 0 === t ? void 0 : t.type) !== a.p.TEXT || (r = e.media.markdownContent), r === n
+					return r || (null === (t = e.media) || void 0 === t ? void 0 : t.type) !== a.o.TEXT || (r = e.media.markdownContent), r === n
 				}),
 				b = Object(r.a)(o.a, e => {
 					if (!e) return !1;
@@ -77975,4 +77975,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.ac25c713523f2b906158.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.03ca42bc71d2ad95f944.js.map

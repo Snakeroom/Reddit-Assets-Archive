@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.e4f46a9f4a0a6b9ac391.js
-// Retrieved at 11/8/2022, 1:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.7c6fdf6d60f705234e33.js
+// Retrieved at 11/8/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -1095,14 +1095,14 @@
 						const W = ye(e, i, s, v, P, w, this.props, t, this.props.hostPostData),
 							B = Pe(e, i, this.props, t),
 							U = xe(e, this.props, l),
-							q = V.media && V.media.type === oe.p.EMBED ? V.media.provider : null,
+							q = V.media && V.media.type === oe.o.EMBED ? V.media.provider : null,
 							D = u && !N.isSponsored,
 							Q = p && !N.isSponsored && !N.isScoreHidden,
 							z = !!(null == N ? void 0 : N.recommendationContext);
 						T = {
 							estHeight: Object(ne.c)(N, i),
 							id: e,
-							isFocusable: !(!V.media || !(i === I.g.Large || i === I.g.Classic && Object(oe.J)(V.media))) && (oe.d.has(V.media.type) && (!q || !oe.t.has(q)) && !V.isSpoiler),
+							isFocusable: !(!V.media || !(i === I.g.Large || i === I.g.Classic && Object(oe.I)(V.media))) && (oe.c.has(V.media.type) && (!q || !oe.s.has(q)) && !V.isSpoiler),
 							trackOnEnteredViewport: W,
 							trackOnExitedViewport: B,
 							render: u => {
@@ -2371,7 +2371,7 @@
 				g = e => o.a.createElement(c, e),
 				f = ["https://www.mcdonalds.com", "https://d2n94wep25xhn0.cloudfront.net", "https://d4wggo22afv97.cloudfront.net", "https://www.dyson.com", "https://dyson.com", "https://www.bestbuy.com", "https://www.goarmy.com", "https://www.samsung.com", "https://www.cyberpunk.net", "https://www.mms.com"],
 				C = e => e.source && e.source.url && e.isSponsored && f.some(t => e.source.url.startsWith(t)),
-				v = e => !e.media || e.media.type === l.p.EMBED && !e.isSurveyAd && !(l.b.has(e.media.provider) || C(e)),
+				v = e => !e.media || e.media.type === l.o.EMBED && !e.isSurveyAd && !(l.a.has(e.media.provider) || C(e)),
 				y = (e, t) => {
 					if (e.isBlank) return 0;
 					switch (t) {
@@ -2523,4 +2523,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.e4f46a9f4a0a6b9ac391.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.7c6fdf6d60f705234e33.js.map

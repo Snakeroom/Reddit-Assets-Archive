@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.4e58b7f138f5b7a6e522.js
-// Retrieved at 11/8/2022, 1:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.284362af602703c4ec72.js
+// Retrieved at 11/8/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"], {
 		"./src/lib/name/index.ts": function(e, t, r) {
@@ -2900,7 +2900,7 @@
 						} = t;
 						var b, p;
 						const m = Object(Se.i)(e),
-							f = !!m && !Object(_e.ug)(m) && (o || m === _e.ob.Community),
+							f = !!m && !Object(_e.tg)(m) && (o || m === _e.ob.Community),
 							{
 								adsSeenCount: O,
 								totalPostsSeenCount: g,
@@ -7398,7 +7398,7 @@
 								experimentName: o.F,
 								expEventOverride: t
 							});
-							return !!(Object(o.ug)(r) ? void 0 : r)
+							return !!(Object(o.tg)(r) ? void 0 : r)
 						})(r)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -8099,19 +8099,19 @@
 					const c = e.over_18 || e.spoiler;
 					if (e.preview && (r = !!(d = e.preview.images[0].variants).mp4, n = e.preview.images[0].source, c && (s = d.obfuscated.source.url)), e.is_self) return {
 						content: e.selftext_html,
-						type: o.p.TEXT,
+						type: o.o.TEXT,
 						markdownContent: e.selftext,
 						obfuscated: s,
 						rteMode: e.rte_mode || i.i.RICH_TEXT,
 						...e.rtjson && {
 							richtextContent: e.rtjson,
-							type: o.p.RTJSON,
+							type: o.o.RTJSON,
 							mediaMetadata: e.media_metadata
 						}
 					};
 					if (e.secure_media && e.secure_media.oembed || e.is_survey_ad) return {
 						content: e.secure_media_embed.media_domain_url,
-						type: o.p.EMBED,
+						type: o.o.EMBED,
 						width: e.secure_media.oembed.width || 0,
 						height: e.secure_media.oembed.height || 0,
 						obfuscated: s,
@@ -8128,7 +8128,7 @@
 							posterUrl: t.url,
 							width: t.width,
 							height: t.height,
-							type: o.p.VIDEO
+							type: o.o.VIDEO
 						}
 					}
 					if (e.media && e.media.rpan_video) {
@@ -8136,12 +8136,12 @@
 						return {
 							hlsUrl: t.hls_url,
 							scrubberThumbSource: t.scrubber_media_url,
-							type: o.p.LIVEVIDEO
+							type: o.o.LIVEVIDEO
 						}
 					}
 					if (t && r) return {
 						content: d.mp4.source.url,
-						type: o.p.GIFVIDEO,
+						type: o.o.GIFVIDEO,
 						width: d.mp4.source.width,
 						height: d.mp4.source.height,
 						gifBackgroundImage: n.url,
@@ -8153,7 +8153,7 @@
 						const t = d.gif ? d.gif.resolutions : e.preview.images[0].resolutions;
 						return {
 							content: n.url,
-							type: o.p.IMAGE,
+							type: o.o.IMAGE,
 							width: n.width,
 							height: n.height,
 							obfuscated: s,
@@ -10737,7 +10737,7 @@
 						experimentName: o.Se
 					}) === o.Ld
 				},
-				p = e => !e.media || e.media.type !== c.p.RTJSON && e.media.type !== c.p.TEXT ? "" : e.media.markdownContent,
+				p = e => !e.media || e.media.type !== c.o.RTJSON && e.media.type !== c.o.TEXT ? "" : e.media.markdownContent,
 				m = e => !e.media && e.source && Object(s.a)(e.source.url) ? e.source.displayText : "",
 				f = (e, t) => {
 					const r = Object(l.G)(e, {
@@ -11501,7 +11501,7 @@
 					} = e.onboarding;
 					if (t.success || t.failure) return t
 				},
-				I = Object(n.a)(b.i, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(i.ug)(e) ? t : null),
+				I = Object(n.a)(b.i, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(i.tg)(e) ? t : null),
 				h = Object(n.a)(b.i, (e, t) => {
 					let {
 						pageLayer: r
@@ -12198,4 +12198,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.4e58b7f138f5b7a6e522.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.284362af602703c4ec72.js.map

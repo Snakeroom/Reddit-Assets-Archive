@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.dce3160229f4513e4251.js
-// Retrieved at 11/8/2022, 1:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.8caffeeb62ef7d8b440a.js
+// Retrieved at 11/8/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, s) {
@@ -1995,7 +1995,7 @@
 						if (i()(this.state.event, e) || this.setState({
 								event: e
 							}), this.props.trackDisplay) {
-							const t = this.props.post.media && Object(b.G)(this.props.post.media);
+							const t = this.props.post.media && Object(b.F)(this.props.post.media);
 							this.viewabilityStats.forEach(s => {
 								(s.event !== p.a.GalleryItemImpression || t) && this.checkViewability(e, s)
 							})
@@ -3132,11 +3132,11 @@
 						placeholderImage: E,
 						redditStyle: g,
 						theme: S
-					}), I = D(e), k = c ? O.SourceElement.PostImage : O.SourceElement.ListingPostImage, w = L(h, t, P, v, x, S, I, l, j, _, g, u, p, f, i), F = Object(b.E)(h);
+					}), I = D(e), k = c ? O.SourceElement.PostImage : O.SourceElement.ListingPostImage, w = L(h, t, P, v, x, S, I, l, j, _, g, u, p, f, i), F = Object(b.D)(h);
 					return Object(r.a)(F) && !_ && F.indexOf("redditmedia") < 0 ? o.a.createElement("div", {
 						className: Object(n.a)(y.a.container, C ? y.a.usePreview : "", s)
 					}, o.a.createElement(m.b, {
-						href: Object(b.E)(h),
+						href: Object(b.D)(h),
 						isSponsored: h.isSponsored,
 						postId: h.id,
 						source: h.source,
@@ -3160,7 +3160,7 @@
 					} = t || s;
 					return i && o ? o.url : s.isSponsored && o && "default" === a.url ? o.url : F(n) ? n.scrubberThumbSource : a.url
 				},
-				F = e => !!e && e.type === b.p.LIVEVIDEO,
+				F = e => !!e && e.type === b.o.LIVEVIDEO,
 				L = (e, t, s, i, a, d, l, u, m, p, b, f, h, O, g) => {
 					const _ = (e => e.source && !e.isSponsored || !1)(e);
 					if (Object(r.a)(l)) {
@@ -4145,4 +4145,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.dce3160229f4513e4251.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.8caffeeb62ef7d8b440a.js.map
