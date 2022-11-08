@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.fcf6236af3a779945c7a.js
-// Retrieved at 11/7/2022, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.22dab6efe1aa75287c6c.js
+// Retrieved at 11/8/2022, 12:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -180,7 +180,7 @@
 			})), r.d(t, "c", (function() {
 				return T
 			})), r.d(t, "a", (function() {
-				return A
+				return M
 			})), r.d(t, "b", (function() {
 				return D
 			}));
@@ -387,7 +387,7 @@
 						text: E(),
 						kind: O.b.Error
 					}))))
-				}, M = Object(a.a)(d.d), A = e => async (t, r, n) => {
+				}, A = Object(a.a)(d.d), M = e => async (t, r, n) => {
 					let {
 						apiContext: o
 					} = n;
@@ -401,7 +401,7 @@
 						c = a[e];
 					if (!c) return void i();
 					const d = !c.isFavorited;
-					t(M({
+					t(A({
 						makeFavorite: d,
 						multiredditPath: e,
 						multiredditsModelsState: a
@@ -413,7 +413,7 @@
 							multipath: t,
 							api_type: "json"
 						}
-					}))(o(), e, d)).ok || (t(M({
+					}))(o(), e, d)).ok || (t(A({
 						makeFavorite: !d,
 						multiredditPath: e,
 						multiredditsModelsState: a
@@ -1180,7 +1180,7 @@
 			function T(e, t) {
 				return `profile--id-card--highlight-tooltip-${e?"-overlay":""}-${t}`
 			}
-			const M = e => {
+			const A = e => {
 				const t = Object(v.a)(),
 					r = Object(s.useCallback)(() => {
 						t(Object(b.b)())
@@ -1261,7 +1261,7 @@
 					tooltip: o.a.createElement(u.d, {
 						seconds: s
 					})
-				}), r && i > 0 && o.a.createElement(M, {
+				}), r && i > 0 && o.a.createElement(A, {
 					highlightClassName: d,
 					isOwnProfile: !!e.isOwnProfile,
 					profileName: e.profileName,
@@ -1282,7 +1282,7 @@
 		"./src/reddit/components/ProfileIdCard/Preview.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return M
+				return A
 			}));
 			var n = r("./node_modules/react/index.js"),
 				s = r.n(n),
@@ -1458,7 +1458,7 @@
 			const L = o.a.wrapped(i.b, "Widget", f.a),
 				F = o.a.div("Description", f.a),
 				T = o.a.wrapped(l, "Actions", f.a);
-			class M extends s.a.PureComponent {
+			class A extends s.a.PureComponent {
 				renderAwardedLastMonth() {
 					const {
 						recentAwardings: e,
@@ -2397,8 +2397,8 @@
 				L = r("./src/lib/classNames/index.ts"),
 				F = r("./src/lib/loadableAction/index.ts"),
 				T = r("./src/lib/copyToClipboard/index.ts"),
-				M = r("./src/reddit/actions/toaster.ts"),
-				A = r("./src/reddit/endpoints/chat/userSettings.ts"),
+				A = r("./src/reddit/actions/toaster.ts"),
+				M = r("./src/reddit/endpoints/chat/userSettings.ts"),
 				B = r("./src/reddit/models/Toast/index.ts");
 			var D = r("./src/reddit/actions/gold/modals.ts"),
 				R = r("./src/reddit/actions/modal.ts"),
@@ -2647,21 +2647,21 @@
 							let {
 								gqlContext: n
 							} = r;
-							const s = await Object(A.a)(n());
+							const s = await Object(M.a)(n());
 							if (s.ok) {
 								const t = s.body.data.createChatChannelInviteLink.inviteUrl;
 								if (t) {
 									Object(T.a)(t);
-									const r = Object(M.e)(N.fbt._("Copied link!", null, {
+									const r = Object(A.e)(N.fbt._("Copied link!", null, {
 										hk: "4a4E1x"
 									}), B.b.SuccessCommunity);
-									e(Object(M.f)(r))
+									e(Object(A.f)(r))
 								}
 							} else {
-								const t = Object(M.e)(N.fbt._("Something went wrong", null, {
+								const t = Object(A.e)(N.fbt._("Something went wrong", null, {
 									hk: "22u7ha"
 								}), B.b.Error);
-								e(Object(M.f)(t))
+								e(Object(A.f)(t))
 							}
 						})())
 					}
@@ -2844,8 +2844,8 @@
 					enableFollowers: L,
 					id: F,
 					isEmployee: T,
-					isGold: M,
-					prefShowSnoovatar: A,
+					isGold: A,
+					prefShowSnoovatar: M,
 					snoovatarFullBodyAsset: B,
 					username: D
 				} = k, R = !!a && a.id === F, G = !(!a || !a.snoovatarFullBodyAsset), W = O && O.bannerBackgroundImage, H = !!b && b.isNSFW, q = H && c, z = !(!h || !h.userIsSubscriber), K = `/user/${D}/`, Z = E && E.url === K, Q = !h || h.acceptChats, Y = !h || h.acceptPms, X = P && Object(ue.b)(B), V = () => {
@@ -2853,7 +2853,7 @@
 				};
 				return o.a.createElement(o.a.Fragment, null, o.a.createElement(m.a, {
 					isEmployee: T,
-					isGold: M,
+					isGold: A,
 					isNSFW: H,
 					isNftPreview: X,
 					isOverlay: l,
@@ -2899,7 +2899,7 @@
 						hasSubreddit: C,
 						isModerator: d,
 						isOwnProfile: R,
-						allowViewSnoovatar: A,
+						allowViewSnoovatar: M,
 						profileName: D,
 						sendEvent: _,
 						userAcceptsPms: Y,
@@ -3580,7 +3580,7 @@
 			const a = e => Object(s.c)(e, {
 				experimentName: n.y,
 				experimentEligibilitySelector: () => Object(o.Q)(e)
-			}) === n.Md
+			}) === n.Ld
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, r) {
 			"use strict";
@@ -3628,4 +3628,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.fcf6236af3a779945c7a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.22dab6efe1aa75287c6c.js.map
