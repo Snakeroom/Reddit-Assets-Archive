@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.a05fe464f2cfc9c87fb4.js
-// Retrieved at 11/8/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.2a3ccdb8ea23c9276129.js
+// Retrieved at 11/8/2022, 6:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit"], {
 		"./src/reddit/actions/subreddit/muting.ts": function(e, t, n) {
@@ -417,8 +417,8 @@
 			const S = e => {
 				return Object(f.c)(e, {
 					experimentEligibilitySelector: f.a,
-					experimentName: h.qf
-				}) === h.Ld
+					experimentName: h.pf
+				}) === h.Kd
 			};
 			var w = n("./src/reddit/selectors/recapGame.ts"),
 				k = n("./src/reddit/selectors/user.ts"),
@@ -838,7 +838,7 @@
 						}))
 					}
 				});
-			var Y = R.a.wrapped(z(q(Object(c.c)(e => s.a.createElement("div", {
+			var V = R.a.wrapped(z(q(Object(c.c)(e => s.a.createElement("div", {
 					className: e.className,
 					onClick: e.onOpenDropdown
 				}, !1 !== e.showTitle && s.a.createElement(H, null, w.fbt._("Sort", null, {
@@ -889,7 +889,7 @@
 						sort: t
 					}))
 				}))))))), "ListingSort", P.a),
-				V = n("./src/reddit/constants/parameters.ts");
+				Y = n("./src/reddit/constants/parameters.ts");
 			const Q = e => {
 					const t = J[e];
 					return t && t() || ""
@@ -1099,7 +1099,7 @@
 					}
 				}));
 			var ce = R.a.wrapped(ae(de(e => {
-				const t = `${e.baseUrl}?${V.l}=${m.C.UnitedStates}`;
+				const t = `${e.baseUrl}?${Y.l}=${m.C.UnitedStates}`;
 				return s.a.createElement("div", {
 					className: e.className,
 					onClick: e.onOpenDropdown
@@ -1270,7 +1270,7 @@
 				}))(e => {
 					const t = se(e.sort),
 						n = re(e.sort),
-						r = `${e.baseUrl}?${V.l}=`;
+						r = `${e.baseUrl}?${Y.l}=`;
 					return s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
 						className: Object(a.a)(be.a.countrySort, e.className),
 						onClick: () => e.dropdownIsOpen ? e.onCloseDropdown(me) : e.onOpenDropdown(me)
@@ -1356,7 +1356,7 @@
 							return e.urlParams.sort || Object(l.L)(e) || (n = ke.a.join(n, t)), n
 						})(e.pageLayer, e.listingSort),
 						r = Object(p.a)(n, {
-							[V.O]: t
+							[Y.O]: t
 						}),
 						o = r.split("?")[0],
 						i = `${r.replace(o+"?","")}`;
@@ -1497,7 +1497,7 @@
 						sortOptions: o,
 						timeSort: i
 					} = this.props, d = !t && Re.has(r), c = Be.has(r), l = o.filter(e => !this.isOverflowSort(e)), u = o.filter(e => this.isOverflowSort(e) && e !== r);
-					return s.a.createElement(s.a.Fragment, null, s.a.createElement(Y, Pe({}, this.props, {
+					return s.a.createElement(s.a.Fragment, null, s.a.createElement(V, Pe({}, this.props, {
 						buttonClassName: Le.a.DropdownButton,
 						className: Object(a.a)(Le.a.SortDropdown, e),
 						rowClassName: Le.a.DropdownRow,
@@ -1516,7 +1516,7 @@
 						rowSelectedClassName: Le.a.DropdownRowSelected,
 						timeSort: i || m.pc,
 						wrapperClassName: Le.a.DropdownSortWrapper
-					}), u.length > 0 && s.a.createElement(Y, Pe({}, this.props, {
+					}), u.length > 0 && s.a.createElement(V, Pe({}, this.props, {
 						className: Object(a.a)(Le.a.SortOverflow, e),
 						dropdownClassName: Le.a.Dropdown,
 						dropdownId: Ue,
@@ -1556,7 +1556,7 @@
 						}
 					}
 				});
-			class Ye extends s.a.Component {
+			class Ve extends s.a.Component {
 				constructor() {
 					super(...arguments), this.blurListingBroadcast = () => {
 						u.a.setState({
@@ -1602,7 +1602,7 @@
 					}))
 				}
 			}
-			t.a = Ke(qe(Object(c.c)(Ye)))
+			t.a = Ke(qe(Object(c.c)(Ve)))
 		},
 		"./src/reddit/components/ListingSort/ListingSortIcon.tsx": function(e, t, n) {
 			"use strict";
@@ -1782,7 +1782,7 @@
 				const t = Object(o.f)().getState(),
 					n = Object(h.a)(t, Object(i.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.ad.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.ad.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.ad.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Zc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Zc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Zc.LargeImagePreview ? e.reredditButtons : [];
 					return s.a.createElement(N, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -2426,6 +2426,20 @@
 					}
 				})
 		},
+		"./src/reddit/selectors/experiments/antievil/index.tsx": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return o
+			}));
+			var r = n("./src/reddit/constants/experiments.ts"),
+				s = n("./src/reddit/helpers/chooseVariant/index.ts");
+			const o = e => {
+				return Object(s.c)(e, {
+					experimentEligibilitySelector: s.a,
+					experimentName: r.I
+				}) === r.Kd
+			}
+		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -2441,11 +2455,11 @@
 				d = n("./node_modules/reselect/es/index.js");
 			const c = Object(d.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => Object(i.h)(e) && Object(o.f)(e),
-					experimentName: r.pc
+					experimentName: r.oc
 				}), a.a),
 				l = Object(d.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => !Object(i.h)(e) && Object(o.f)(e),
-					experimentName: r.oc
+					experimentName: r.nc
 				}), a.a),
 				u = Object(d.a)(c, l, (e, t) => e || t),
 				b = Object(d.a)(c, l, (e, t) => !(!e && !t))
@@ -2476,4 +2490,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.a05fe464f2cfc9c87fb4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.2a3ccdb8ea23c9276129.js.map

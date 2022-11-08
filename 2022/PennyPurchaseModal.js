@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.d81ec95517661c592095.js
-// Retrieved at 11/8/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.90267dbbbf5dceaf90fb.js
+// Retrieved at 11/8/2022, 6:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./node_modules/@stripe/stripe-js/dist/stripe.esm.js": function(e, t, a) {
@@ -532,12 +532,12 @@
 					} else "awardId" in t && e(Object(N.c)(r))
 				}
 			}))(S);
-			var I = Object(E.a)({
+			var T = Object(E.a)({
 					getComponent: () => Object(O.c)().then(() => M),
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
-				T = a("./src/reddit/controls/Button/index.tsx"),
+				I = a("./src/reddit/controls/Button/index.tsx"),
 				A = a("./src/reddit/helpers/trackers/goldPayment.ts"),
 				B = a("./src/reddit/selectors/gold/productOffers.ts"),
 				R = a("./src/reddit/components/CoinPurchaseModal/index.m.less"),
@@ -572,15 +572,15 @@
 					}, o.a.createElement(f.a, {
 						className: D.a.balance,
 						coinBalance: a
-					}), c === d.Mb && ((null == t ? void 0 : t.pennyPrice) && r ? o.a.createElement(I, {
+					}), c === d.Mb && ((null == t ? void 0 : t.pennyPrice) && r ? o.a.createElement(T, {
 						awardId: t.id,
 						className: Object(h.a)(D.a.purchaseButton, D.a.paypalCheckoutButton),
 						pennies: t.pennyPrice,
 						thingId: r
-					}) : n && o.a.createElement(I, {
+					}) : n && o.a.createElement(T, {
 						className: Object(h.a)(D.a.purchaseButton, D.a.paypalCheckoutButton),
 						coinPackage: n
-					})), c === d.Lb && o.a.createElement(T.l, {
+					})), c === d.Lb && o.a.createElement(I.l, {
 						className: D.a.purchaseButton,
 						"data-redditstyle": !0,
 						disabled: i || s,
@@ -1167,7 +1167,7 @@
 					...a,
 					onCompletePurchaseClick: (a, r) => t.dispatchCompletePurchase(a, r, e.isIframed)
 				}));
-			class I extends n.a.Component {
+			class T extends n.a.Component {
 				constructor() {
 					super(...arguments), this.handleEscapeKey = e => {
 						const {
@@ -1243,7 +1243,7 @@
 					}))
 				}
 			}
-			const T = Object(c.a)(I);
+			const I = Object(c.a)(T);
 			t.default = M(Object(h.c)(class extends n.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onTryCloseModal = () => {
@@ -1265,7 +1265,7 @@
 							paddingBottom: 12
 						} : {}
 					};
-					return n.a.createElement(T, _({}, this.props, {
+					return n.a.createElement(I, _({}, this.props, {
 						className: Object(i.a)(this.props.className, N.a.pennyPurchaseModal),
 						onCloseModal: this.onCloseModal,
 						onOverlayClick: this.onTryCloseModal,
@@ -1596,13 +1596,13 @@
 					})))
 				}
 			}
-			var I = M;
-			const T = Object(o.c)({
+			var T = M;
+			const I = Object(o.c)({
 					rememberCard: m.w,
 					savedCard: e => Object(m.y)(e)[0],
 					stripeInfoLoading: m.x
 				}),
-				A = Object(s.b)(T, e => ({
+				A = Object(s.b)(I, e => ({
 					onClickDeleteCard: t => e(Object(d.b)(t)),
 					onToggleRememberCard: () => e(Object(i.toggleRememberCard)())
 				}));
@@ -1630,7 +1630,7 @@
 					}, m && n.a.createElement(l.a, {
 						className: O.a.loader,
 						sizePx: 60
-					}), u && o && n.a.createElement("form", null, n.a.createElement(I, {
+					}), u && o && n.a.createElement("form", null, n.a.createElement(T, {
 						nightmode: t,
 						onDelete: a,
 						savedCard: o
@@ -1998,8 +1998,8 @@
 				n = a("./src/lib/constants/index.ts"),
 				s = a("./src/reddit/constants/experiments.ts"),
 				o = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const c = Object(o.a)(s.Ue),
-				d = Object(o.a)(s.Ve),
+			const c = Object(o.a)(s.Te),
+				d = Object(o.a)(s.Ue),
 				i = Object(r.a)([c, d], (e, t) => new Set([e && n.Mb, t && n.Lb].filter(e => !!e)))
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, a) {
@@ -2009,7 +2009,7 @@
 			}));
 			var r = a("./src/reddit/constants/experiments.ts"),
 				n = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const s = Object(n.a)(r.sd)
+			const s = Object(n.a)(r.rd)
 		},
 		"./src/redditGQL/operations/CancelEconRecurringPayment.json": function(e) {
 			e.exports = JSON.parse('{"id":"ac36f7489268"}')
@@ -2046,4 +2046,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.d81ec95517661c592095.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.90267dbbbf5dceaf90fb.js.map

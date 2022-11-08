@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.b7aef16eebd27959cbb9.js
-// Retrieved at 11/8/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.57bc23a4db67652ea29a.js
+// Retrieved at 11/8/2022, 6:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -283,8 +283,8 @@
 				q = n("./src/reddit/components/SubredditIcon/index.tsx"),
 				H = n("./src/reddit/constants/localStorage.ts"),
 				J = n("./src/reddit/contexts/ApiContext.tsx"),
-				Z = n("./src/reddit/featureFlags/component.tsx"),
-				K = n("./src/reddit/helpers/localStorage/index.ts"),
+				K = n("./src/reddit/featureFlags/component.tsx"),
+				Z = n("./src/reddit/helpers/localStorage/index.ts"),
 				X = n("./src/reddit/helpers/name/index.ts"),
 				z = n("./src/lib/makeApiRequest/index.ts"),
 				V = n("./src/lib/omitHeaders/index.ts"),
@@ -306,13 +306,13 @@
 					}
 				}
 				async getSubredditForAdoption() {
-					let e = ie.cachedData || Object(K.B)(H.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
+					let e = ie.cachedData || Object(Z.B)(H.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
 					if (!e || Date.now() - e.fetchedAt > re) {
 						const t = await $(this.props.apiContext());
 						t.ok && (e = {
 							subreddits: t.body.data.subreddits.map(e => e.name),
 							fetchedAt: Date.now()
-						}, Object(K.Ib)(H.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
+						}, Object(Z.Ib)(H.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
 					}
 					return ie.cachedData = e, e ? e.subreddits : []
 				}
@@ -351,7 +351,7 @@
 				}
 			}
 			ie.cachedData = null;
-			var oe = Object(Z.a)("srAdoptionWeek", Object(J.b)(ie)),
+			var oe = Object(K.a)("srAdoptionWeek", Object(J.b)(ie)),
 				de = n("./src/reddit/components/TopSubredditsWidget/Container.tsx"),
 				ce = n("./src/reddit/actions/post.ts"),
 				le = n("./src/reddit/components/MiniPost/index.tsx"),
@@ -680,19 +680,19 @@
 			function Me(e) {
 				return Object(Ge.c)(e, {
 					experimentEligibilitySelector: Ge.a,
-					experimentName: De.u
+					experimentName: De.t
 				})
 			}
 			var Ue = n("./src/reddit/selectors/experiments/utils.ts");
 			const Qe = Object(u.a)(e => Object(Ge.c)(e, {
-					experimentName: De.pe,
+					experimentName: De.oe,
 					experimentEligibilitySelector: Ge.a
 				}), Ue.a),
-				qe = Object(u.a)(Qe, e => e === De.se.Enabled);
+				qe = Object(u.a)(Qe, e => e === De.re.Enabled);
 			var He = n("./src/reddit/selectors/experiments/loggedOutOneFeed.ts"),
 				Je = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
-				Ze = n("./src/reddit/selectors/user.ts");
-			var Ke = n("./src/reddit/selectors/seo/linksModule.ts"),
+				Ke = n("./src/reddit/selectors/user.ts");
+			var Ze = n("./src/reddit/selectors/seo/linksModule.ts"),
 				Xe = n("./src/reddit/selectors/subreddit.ts"),
 				ze = n("./src/reddit/selectors/subredditLeaderboard.ts");
 			n("./src/reddit/components/TopSubredditsWidget/index.tsx"), n("./src/reddit/components/TopSubredditsWidget/SubredditRankItemPlaceholder.tsx");
@@ -701,15 +701,15 @@
 			const $e = "c1020",
 				et = "videos",
 				tt = Object(u.c)({
-					isMod: Ze.S,
-					isLoggedIn: Ze.Q,
+					isMod: Ke.S,
+					isLoggedIn: Ke.Q,
 					isLoggedOutOneFeed: He.c,
 					shouldShowLocalRecommendations: e => !1 !== e.user.prefs.showLocationBasedRecommendations,
-					currentUser: Ze.l,
-					frontpageLinks: Ke.b,
-					isOver18: Ze.lb,
+					currentUser: Ke.l,
+					frontpageLinks: Ze.b,
+					isOver18: Ke.lb,
 					isInBFFSLeaderboardExperiment: function(e) {
-						return Me(e) === De.t.RotateEven
+						return Me(e) === De.s.RotateEven
 					},
 					bffsLeaderboardVariant: Me,
 					inRpanTopVideoEntrypointExperiment: Je.e,
@@ -719,9 +719,9 @@
 							n = !!Object(Xe.T)(e, $e);
 						return (!t || !n) && function(e) {
 							return Object(Ge.c)(e, {
-								experimentEligibilitySelector: Ze.R,
-								experimentName: De.Nc
-							}) === De.Ld
+								experimentEligibilitySelector: Ke.R,
+								experimentName: De.Mc
+							}) === De.Kd
 						}(e)
 					},
 					isNavbarLikeMwebEnabled: l.a,
@@ -745,7 +745,7 @@
 						}
 					}
 					let o, d, c, l, u;
-					n && t === De.t.RotateEven ? (o = Re.u, d = Re.n, c = Re.s, l = Re.a) : (o = Re.t, d = Re.j, c = Re.r, l = []), u = [o, ...l, ...c], s && u.unshift(d);
+					n && t === De.s.RotateEven ? (o = Re.u, d = Re.n, c = Re.s, l = Re.a) : (o = Re.t, d = Re.j, c = Re.r, l = []), u = [o, ...l, ...c], s && u.unshift(d);
 					const m = u[r()(u.length - 1)];
 					u = [], m.id !== o.id && u.push(o), s && m.id !== d.id && u.push(d);
 					let b = [...l, ...c];
@@ -2230,4 +2230,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.b7aef16eebd27959cbb9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.57bc23a4db67652ea29a.js.map

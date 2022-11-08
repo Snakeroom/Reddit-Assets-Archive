@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.43da97064f2ea544e28b.js
-// Retrieved at 11/8/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.1d4818486e78dadd8359.js
+// Retrieved at 11/8/2022, 6:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ClaimPointsModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -358,8 +358,8 @@
 				}));
 			Object(c.a)(D);
 			var R = n("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx"),
-				L = n("./src/reddit/components/SubredditIcon/index.tsx"),
-				F = n("./src/reddit/selectors/subreddit.ts"),
+				F = n("./src/reddit/components/SubredditIcon/index.tsx"),
+				L = n("./src/reddit/selectors/subreddit.ts"),
 				G = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx"),
 				V = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Overview.tsx"),
 				H = n("./src/reddit/components/Governance/TransactionModals/ClaimPointsModal/Approval.m.less"),
@@ -371,10 +371,10 @@
 					pointsDetails: n
 				} = e, a = Object(o.e)(t => Object(w.b)(t, e)), i = a && a.pointsToClaim;
 				if (!i) throw new Error("Expected claim amount to approve");
-				const c = Object(o.e)(t => Object(F.Y)(t, e));
+				const c = Object(o.e)(t => Object(L.Y)(t, e));
 				return r.a.createElement(V.a, {
 					subredditId: t,
-					image: r.a.createElement(L.b, {
+					image: r.a.createElement(F.b, {
 						className: Y.a.subredditIcon,
 						subredditOrProfile: c
 					}),
@@ -1108,14 +1108,14 @@
 			const r = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.we
-					}) === s.Ld
+						experimentName: s.ve
+					}) === s.Kd
 				},
 				o = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.ue
-					}) === s.Ld
+						experimentName: s.te
+					}) === s.Kd
 				}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
@@ -1175,4 +1175,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.43da97064f2ea544e28b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.1d4818486e78dadd8359.js.map

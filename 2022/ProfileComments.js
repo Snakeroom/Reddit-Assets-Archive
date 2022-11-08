@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.df25ccb70fe8323988a6.js
-// Retrieved at 11/8/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.ac0b2c2ca7282c6550dd.js
+// Retrieved at 11/8/2022, 6:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -4412,7 +4412,7 @@
 					}, i.a.createElement(h.b, {
 						textColor: c
 					})), i.a.createElement(O, {
-						qrCodeAsset: (() => n === f.Xc.Enabled || r === f.lb.BlurredPreview || r === f.lb.NoPreview ? w.d2x_nsfw_signup_blocking_de_v1 : w.d2x_nsfw_signup_blocking_non_us_v1)()
+						qrCodeAsset: (() => n === f.Wc.Enabled || r === f.kb.BlurredPreview || r === f.kb.NoPreview ? w.d2x_nsfw_signup_blocking_de_v1 : w.d2x_nsfw_signup_blocking_non_us_v1)()
 					}))
 				}
 		},
@@ -5818,10 +5818,10 @@
 				r = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: r.hg,
+					experimentName: r.gg,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				a = Object(n.a)(i, e => e === r.Zf)
+				a = Object(n.a)(i, e => e === r.Yf)
 		},
 		"./src/redditGQL/operations/CreateLiveAudioRoomOnProfile.json": function(e) {
 			e.exports = JSON.parse('{"id":"e35a47c6aa21"}')
@@ -5852,4 +5852,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.df25ccb70fe8323988a6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.ac0b2c2ca7282c6550dd.js.map

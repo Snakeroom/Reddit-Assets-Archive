@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.3118855e2560f08a886e.js
-// Retrieved at 11/8/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.3fe84939b6f4a3addb95.js
+// Retrieved at 11/8/2022, 6:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -3950,8 +3950,8 @@
 					showContributorRequestFlow: e => Object(te.w)(e, et.e.Post),
 					showCreatePollButton: e => (e => Object(st.c)(e, {
 						experimentEligibilitySelector: st.a,
-						experimentName: Le.N
-					}) === Le.V.Treatment)(e) && !Object(Ke.h)(),
+						experimentName: Le.M
+					}) === Le.U.Treatment)(e) && !Object(Ke.h)(),
 					shouldShowFlairPreview: (e, t) => {
 						let {
 							listingName: n
@@ -4219,7 +4219,7 @@
 						onClick: g ? _ : void 0,
 						headerButton: i.a.createElement("div", {
 							className: bt.a.headerButtonsContainer
-						}, !z && v && C && l !== Le.Oe.NewModule && i.a.createElement(a.a, {
+						}, !z && v && C && l !== Le.Ne.NewModule && i.a.createElement(a.a, {
 							className: bt.a.ModToolsLink,
 							to: C.posts ? `${v.url}about/modqueue` : `${v.url}about/`,
 							onClick: this.onClickModTools
@@ -5990,6 +5990,20 @@
 				}))
 			}
 		},
+		"./src/reddit/selectors/experiments/antievil/index.tsx": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return i
+			}));
+			var r = n("./src/reddit/constants/experiments.ts"),
+				s = n("./src/reddit/helpers/chooseVariant/index.ts");
+			const i = e => {
+				return Object(s.c)(e, {
+					experimentEligibilitySelector: s.a,
+					experimentName: r.I
+				}) === r.Kd
+			}
+		},
 		"./src/reddit/selectors/experiments/joinOptimizations.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -6010,29 +6024,29 @@
 				i = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = n("./src/reddit/selectors/experiments/index.ts");
 			const a = Object(r.a)(e => Object(i.c)(e, {
+					experimentName: s.Qb,
+					experimentEligibilitySelector: o.e
+				}), e => e === s.X.Enabled),
+				d = Object(r.a)(e => Object(i.c)(e, {
 					experimentName: s.Rb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.Y.Enabled),
-				d = Object(r.a)(e => Object(i.c)(e, {
+				c = Object(r.a)(e => Object(i.c)(e, {
 					experimentName: s.Sb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.Z.Enabled),
-				c = Object(r.a)(e => Object(i.c)(e, {
+				l = Object(r.a)(e => Object(i.c)(e, {
 					experimentName: s.Tb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.ab.Enabled),
-				l = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Ub,
-					experimentEligibilitySelector: o.e
-				}), e => e === s.bb.Enabled),
 				u = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Wb,
-					experimentEligibilitySelector: o.e
-				}), e => e === s.db.Enabled),
-				m = Object(r.a)(e => Object(i.c)(e, {
 					experimentName: s.Vb,
 					experimentEligibilitySelector: o.e
-				}), e => e === s.cb.Enabled)
+				}), e => e === s.cb.Enabled),
+				m = Object(r.a)(e => Object(i.c)(e, {
+					experimentName: s.Ub,
+					experimentEligibilitySelector: o.e
+				}), e => e === s.bb.Enabled)
 		},
 		"./src/redditGQL/operations/DeleteSubredditMuteSettings.json": function(e) {
 			e.exports = JSON.parse('{"id":"c518a45f60a5"}')
@@ -6057,4 +6071,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.3118855e2560f08a886e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.3fe84939b6f4a3addb95.js.map

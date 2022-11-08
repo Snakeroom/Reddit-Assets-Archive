@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.7c6fdf6d60f705234e33.js
-// Retrieved at 11/8/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.90fc8747a2c3bb6cd499.js
+// Retrieved at 11/8/2022, 6:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -701,7 +701,7 @@
 				}, q._("Posts from communities similar to {subreddit name}", [q._param("subreddit name", t)], {
 					hk: "3pCPAD"
 				})))))
-			}, z = () => m.a.createElement("div", {
+			}, K = () => m.a.createElement("div", {
 				className: U.a.ThankYouView
 			}, m.a.createElement("div", {
 				className: U.a.Title
@@ -714,7 +714,7 @@
 				className: U.a.Subtitle
 			}, q._("Your feedback improves your feed.", null, {
 				hk: "2WLaqS"
-			}))), K = e => {
+			}))), z = e => {
 				let {
 					subredditId: t,
 					subredditName: s,
@@ -726,7 +726,7 @@
 						r(e => !e)
 					},
 					l = Object(V.a)();
-				return m.a.createElement(m.a.Fragment, null, m.a.createElement(z, null), m.a.createElement("div", {
+				return m.a.createElement(m.a.Fragment, null, m.a.createElement(K, null), m.a.createElement("div", {
 					className: U.a.MuteThankYouView
 				}, m.a.createElement("button", {
 					className: U.a.CommunityMutingTitle,
@@ -815,11 +815,11 @@
 						seeLessFromThisCommunity: S,
 						seeLessLikeThisCommunity: E,
 						seeLessOfThisPostClick: O
-					}), u === R.a.MuteThankYouView && m.a.createElement(K, {
+					}), u === R.a.MuteThankYouView && m.a.createElement(z, {
 						subredditId: b,
 						subredditName: y,
 						closeThankYouView: w
-					}), u === R.a.ThankYouView && m.a.createElement(z, null)) : null
+					}), u === R.a.ThankYouView && m.a.createElement(K, null)) : null
 				}),
 				Y = s("./src/reddit/components/PostList/LoadMore.tsx"),
 				X = s("./src/reddit/components/PostList/SomethingWrong.tsx"),
@@ -1098,7 +1098,7 @@
 							q = V.media && V.media.type === oe.o.EMBED ? V.media.provider : null,
 							D = u && !N.isSponsored,
 							Q = p && !N.isSponsored && !N.isScoreHidden,
-							z = !!(null == N ? void 0 : N.recommendationContext);
+							K = !!(null == N ? void 0 : N.recommendationContext);
 						T = {
 							estHeight: Object(ne.c)(N, i),
 							id: e,
@@ -1151,7 +1151,7 @@
 									sendEvent: this.props.sendEvent,
 									shouldHideFlair: R,
 									shouldShowInsightsButton: S
-								}), z && m.a.createElement(G, {
+								}), K && m.a.createElement(G, {
 									post: V,
 									layout: i,
 									parentPost: F
@@ -1464,8 +1464,8 @@
 				Q = Object(m.c)({
 					isOverlayOpen: F.j
 				}),
-				z = Object(c.b)(Q),
-				K = {};
+				K = Object(c.b)(Q),
+				z = {};
 
 			function G(e) {
 				return e === document
@@ -1803,8 +1803,8 @@
 					}), this.props.disableScrollCache && !this.props.preventScrollOnMount && Object(I.c)(this.scrollContainer, 0), this.setupScrollHandler(), p.a.write(() => {
 						if (!this.props.disableScrollCache) {
 							const e = this.getCacheKey(),
-								t = K[e];
-							r()(t) || (K[e] = void 0, this.scrollContainer && Object(I.c)(this.scrollContainer, t))
+								t = z[e];
+							r()(t) || (z[e] = void 0, this.scrollContainer && Object(I.c)(this.scrollContainer, t))
 						}
 						this.callOnScrollForItemsChanged(), this.props.onLastVisibleChildRendered && this.props.onLastVisibleChildRendered()
 					}), p.a.read(() => {
@@ -1833,7 +1833,7 @@
 				componentWillUnmount() {
 					if (this.callExitedViewportForUnmount(), this.cleanupScrollHandler(), clearTimeout(this.updateRenderableChildrenHandle), this.cancelPopulateRenderableChildrenWhenIdle(), this.scrollContainer && !this.props.disableScrollCache) {
 						const e = this.getCacheKey();
-						K[e] = this.lastRenderPosition
+						z[e] = this.lastRenderPosition
 					}
 					this.childMap = new S.a("id"), this.itemsInViewport = new S.a("id"), this.wrapperRefFNs = {}, this.childRefFns = {}, this.containerRef = null, this.loadMoreEl = void 0, this.scrollContainer = void 0, this.unmountItemsIdleId && (Object(h.cancelIdleCallback)(this.unmountItemsIdleId), this.unmountItemsIdleId = null)
 				}
@@ -1990,7 +1990,7 @@
 					return void 0 === e.onLoadMore || "loadMoreToken" in e
 				}
 			}
-			t.b = z(Object(V.b)(ce))
+			t.b = K(Object(V.b)(ce))
 		},
 		"./src/reddit/components/Scroller/getDocumentTop.ts": function(e, t, s) {
 			"use strict";
@@ -2435,8 +2435,8 @@
 				o = s("./src/reddit/selectors/user.ts");
 			const r = e => Object(n.c)(e, {
 				experimentEligibilitySelector: o.R,
-				experimentName: i.cc
-			}) === i.Ld
+				experimentName: i.bc
+			}) === i.Kd
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, s) {
 			"use strict";
@@ -2523,4 +2523,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.7c6fdf6d60f705234e33.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.90fc8747a2c3bb6cd499.js.map

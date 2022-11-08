@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.86060bee54d3e59e290d.js
-// Retrieved at 11/8/2022, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.eb094c12aa23e038deeb.js
+// Retrieved at 11/8/2022, 6:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -855,8 +855,8 @@
 			const f = e => {
 				return Object(g.c)(e, {
 					experimentEligibilitySelector: g.a,
-					experimentName: h.qf
-				}) === h.Ld
+					experimentName: h.pf
+				}) === h.Kd
 			};
 			var x = s("./src/reddit/selectors/recapGame.ts"),
 				v = s("./src/reddit/selectors/user.ts"),
@@ -1291,7 +1291,7 @@
 				const t = Object(i.f)().getState(),
 					s = Object(h.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.ad.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.ad.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.ad.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Zc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Zc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Zc.LargeImagePreview ? e.reredditButtons : [];
 					return n.a.createElement(k, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -2746,8 +2746,8 @@
 				}
 			}
 			var U = A,
-				z = s("./src/reddit/pages/Topic/Relationship/index.m.less"),
-				V = s.n(z);
+				V = s("./src/reddit/pages/Topic/Relationship/index.m.less"),
+				z = s.n(V);
 			const {
 				fbt: J
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), q = 5;
@@ -2781,9 +2781,9 @@
 						onClick: this.onClick,
 						to: "#"
 					}, n.a.createElement(I.r, {
-						className: V.a.SeeAllRelatedTopics
+						className: z.a.SeeAllRelatedTopics
 					}, J._("See all {=[Topic name plural]}", [J._param("=[Topic name plural]", n.a.createElement("span", {
-						className: V.a.TopicName
+						className: z.a.TopicName
 					}, J._("{Topic name plural}", [J._param("Topic name plural", e)], {
 						hk: "27C3n9"
 					})))], {
@@ -3144,6 +3144,20 @@
 			}
 			t.default = Ne(Ie(Re))
 		},
+		"./src/reddit/selectors/experiments/antievil/index.tsx": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return i
+			}));
+			var r = s("./src/reddit/constants/experiments.ts"),
+				n = s("./src/reddit/helpers/chooseVariant/index.ts");
+			const i = e => {
+				return Object(n.c)(e, {
+					experimentEligibilitySelector: n.a,
+					experimentName: r.I
+				}) === r.Kd
+			}
+		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
@@ -3159,11 +3173,11 @@
 				c = s("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: e => Object(a.h)(e) && Object(i.f)(e),
-					experimentName: r.pc
+					experimentName: r.oc
 				}), o.a),
 				l = Object(c.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.h)(e) && Object(i.f)(e),
-					experimentName: r.oc
+					experimentName: r.nc
 				}), o.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -3197,4 +3211,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.86060bee54d3e59e290d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.eb094c12aa23e038deeb.js.map
