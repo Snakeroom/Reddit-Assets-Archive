@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.0228926b052c7d5f50bc.js
-// Retrieved at 11/9/2022, 12:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.f42fe2070f1561eeb56b.js
+// Retrieved at 11/9/2022, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1220,13 +1220,13 @@
 		"./src/reddit/actions/merchandisingUnitAnnouncements/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
-				return h
+				return b
 			})), n.d(t, "b", (function() {
-				return g
+				return h
 			})), n.d(t, "d", (function() {
-				return f
+				return g
 			})), n.d(t, "a", (function() {
-				return v
+				return f
 			}));
 			var a = n("./src/lib/makeActionCreator/index.ts"),
 				s = n("./src/lib/sentry/index.ts"),
@@ -1248,11 +1248,7 @@
 			var u = n("./src/redditGQL/types.ts"),
 				m = n("./src/reddit/actions/merchandisingUnitAnnouncements/constants.ts");
 			const p = Object(a.a)(m.a),
-				b = e => async (t, n) => {
-					t(p({
-						id: e
-					}))
-				}, h = (e, t) => {
+				b = (e, t) => {
 					const n = Object(c.d)(),
 						a = Object(c.f)(),
 						o = Object(r.useMemo)(() => ({
@@ -1265,7 +1261,11 @@
 					return Object(r.useCallback)(async () => {
 						((e, t, n) => {
 							Object(l.a)(d(n, e, t, "dismiss"))
-						})(e, t, a.getState()), n(b(e));
+						})(e, t, a.getState()), n((e => async (t, n) => {
+							t(p({
+								id: e
+							}))
+						})(e));
 						try {
 							await m()
 						} catch (r) {
@@ -1274,29 +1274,30 @@
 							})
 						}
 					}, [e, t, m, n, a])
-				}, g = (e, t) => {
-					const n = Object(c.d)(),
-						a = Object(c.f)(),
-						o = Object(r.useMemo)(() => ({
+				},
+				h = (e, t) => {
+					const n = Object(c.f)(),
+						a = Object(r.useMemo)(() => ({
 							experience: u.V.AnnouncementInFeed,
 							uxVariant: {
 								variantId: e
 							}
 						}), [e]),
-						m = Object(i.c)(o, u.a.Dismiss);
+						o = Object(i.c)(a, u.a.Dismiss);
 					return Object(r.useCallback)(async () => {
 						((e, t, n) => {
 							Object(l.a)(d(n, e, t, "click"))
-						})(e, t, a.getState()), n(b(e));
+						})(e, t, n.getState());
 						try {
-							await m()
-						} catch (r) {
+							await o()
+						} catch (a) {
 							s.c.withScope(t => {
-								t.setExtra("announcementId", e), t.setExtra("uxAction", u.a.Dismiss), s.c.captureException(r)
+								t.setExtra("announcementId", e), t.setExtra("uxAction", u.a.Dismiss), s.c.captureException(a)
 							})
 						}
-					}, [e, t, m, n, a])
-				}, f = (e, t) => async (n, a, r) => {
+					}, [e, t, o, n])
+				},
+				g = (e, t) => async (n, a, r) => {
 					let {
 						gqlContext: c
 					} = r;
@@ -1319,7 +1320,7 @@
 							t.setExtra("announcementId", e), t.setExtra("uxAction", u.a.View), s.c.captureException(m)
 						})
 					}
-				}, v = (e, t) => async (n, a) => {
+				}, f = (e, t) => async (n, a) => {
 					((e, t, n) => {
 						Object(l.a)(d(n, e, t, "consume"))
 					})(e, t, a())
@@ -8634,4 +8635,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.0228926b052c7d5f50bc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.f42fe2070f1561eeb56b.js.map
