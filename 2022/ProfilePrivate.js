@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.e1639cb3c61c0df02542.js
-// Retrieved at 11/8/2022, 6:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.0985b24cb769a3406d94.js
+// Retrieved at 11/9/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -734,8 +734,8 @@
 			const g = e => {
 				return Object(f.c)(e, {
 					experimentEligibilitySelector: f.a,
-					experimentName: h.pf
-				}) === h.Kd
+					experimentName: h.nf
+				}) === h.Jd
 			};
 			var x = s("./src/reddit/selectors/recapGame.ts"),
 				v = s("./src/reddit/selectors/user.ts"),
@@ -919,7 +919,7 @@
 						postId: n,
 						author: r
 					} = t;
-					return Object(h.e)(g.o) && s.roomStatus === f.b.NotStarted ? i.a.createElement(S.a, {
+					return Object(h.e)(g.n) && s.roomStatus === f.b.NotStarted ? i.a.createElement(S.a, {
 						postId: n,
 						author: r,
 						roomId: s.roomId,
@@ -4729,14 +4729,14 @@
 						...m,
 						variables: t
 					});
-					return !!Object(o.c)(s) && (s.body.data.subredditInfoById.allowedPostTypes || []).includes(g.I.Talk)
+					return !!Object(o.c)(s) && (s.body.data.subredditInfoById.allowedPostTypes || []).includes(g.J.Talk)
 				}, y = async (e, t) => {
 					var s, n;
 					const i = await Object(r.a)(e, {
 						...u,
 						variables: t
 					});
-					return !!Object(o.c)(i) && (null !== (n = null === (s = i.body.data.profileByName) || void 0 === s ? void 0 : s.allowedPostTypes) && void 0 !== n ? n : []).includes(g.I.Talk)
+					return !!Object(o.c)(i) && (null !== (n = null === (s = i.body.data.profileByName) || void 0 === s ? void 0 : s.allowedPostTypes) && void 0 !== n ? n : []).includes(g.J.Talk)
 				}, C = async e => {
 					var t;
 					const s = await Object(r.a)(e, l);
@@ -4780,10 +4780,10 @@
 						hk: "2mGf21"
 					})
 				}, S = e => e.data.prepareAudioRoom || e.data.prepareAudioRoomOnProfile, _ = {
-					[g.K.ServiceError]: n.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+					[g.L.ServiceError]: n.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[g.K.UserNotAuthorized]: n.fbt._("You don't have permission to start talks in this community.", null, {
+					[g.L.UserNotAuthorized]: n.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					})
 				}, I = (e, t) => Object(r.a)(e, {
@@ -6618,7 +6618,7 @@
 				return Object(i.c)(e, {
 					experimentEligibilitySelector: i.a,
 					experimentName: n.I
-				}) === n.Kd
+				}) === n.Jd
 			}
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, s) {
@@ -6654,10 +6654,10 @@
 				i = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = Object(n.a)(e => Object(r.c)(e, {
-					experimentName: i.gg,
+					experimentName: i.eg,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				d = Object(n.a)(o, e => e === i.Yf)
+				d = Object(n.a)(o, e => e === i.Wf)
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
 			"use strict";
@@ -6733,4 +6733,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.e1639cb3c61c0df02542.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.0985b24cb769a3406d94.js.map

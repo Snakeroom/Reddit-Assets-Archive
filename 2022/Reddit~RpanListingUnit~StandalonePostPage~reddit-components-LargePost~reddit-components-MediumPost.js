@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost.c4246e45c39cf6f31653.js
-// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost.f16a9eab428cc9393b82.js
+// Retrieved at 11/9/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost"], {
 		"./src/lib/memoizeByReference/index.ts": function(e, t, n) {
@@ -251,15 +251,15 @@
 				}, [t, d, I]);
 				const N = Object(r.useRef)(() => {}),
 					M = Object(r.useRef)(),
-					F = Object(r.useRef)();
+					R = Object(r.useRef)();
 				N.current = Object(r.useCallback)(() => {
-					F.current = setTimeout(() => {
+					R.current = setTimeout(() => {
 						A.current();
 						const e = [...C].reverse().join("");
 						parseInt(e) < t && N.current()
 					}, w())
 				}, [t, w, C]);
-				const R = Object(r.useRef)(0),
+				const F = Object(r.useRef)(0),
 					D = Object(r.useRef)(!1),
 					G = Object(r.useCallback)(e => {
 						e.forEach(e => {
@@ -269,7 +269,7 @@
 							} = e, r = 1 !== n;
 							t ? (D.current = !0, P.current || (P.current = !0, M.current = setTimeout(() => {
 								A.current(), N.current()
-							}, u())), R.current > 0 && (A.current(R.current), R.current = 0)) : r && (D.current = !1)
+							}, u())), F.current > 0 && (A.current(F.current), F.current = 0)) : r && (D.current = !1)
 						})
 					}, []);
 				Object(a.a)(E, G);
@@ -289,10 +289,10 @@
 				Object(r.useEffect)(() => {
 					if (void 0 !== V && V !== t) {
 						const e = t - V;
-						D.current ? A.current(e) : R.current += e
+						D.current ? A.current(e) : F.current += e
 					}
 					return () => {
-						clearTimeout(M.current), clearTimeout(F.current), clearTimeout(S.current)
+						clearTimeout(M.current), clearTimeout(R.current), clearTimeout(S.current)
 					}
 				}, [t]);
 				const U = Object(r.useCallback)(() => x(!0), [x]),
@@ -1409,9 +1409,9 @@
 			})), n.d(t, "clickLearnMoreLinkEvent", (function() {
 				return M
 			})), n.d(t, "clickQuestionMarkEvent", (function() {
-				return F
-			})), n.d(t, "clickConfirmAwardEvent", (function() {
 				return R
+			})), n.d(t, "clickConfirmAwardEvent", (function() {
+				return F
 			})), n.d(t, "clickGetPremiumEvent", (function() {
 				return D
 			})), n.d(t, "clickAddCoinsButtonEvent", (function() {
@@ -1565,13 +1565,13 @@
 					action: "click",
 					noun: "learn_more"
 				}),
-				F = e => t => ({
+				R = e => t => ({
 					...p(t, e),
 					source: "give_gold",
 					action: "click",
 					noun: "question"
 				}),
-				R = (e, t) => n => ({
+				F = (e, t) => n => ({
 					...p(n, e),
 					source: "give_gold",
 					action: "click",
@@ -2096,10 +2096,8 @@
 					const n = o.kb(t),
 						{
 							userFlair: s,
-							achievementFlair: c,
-							supporterFlair: a
-						} = e,
-						i = c || a;
+							achievementFlair: c
+						} = e;
 					return {
 						source: "user_flair_picker",
 						action: "click",
@@ -2112,9 +2110,7 @@
 							isActive: !!s || void 0,
 							achievementFlairId: null == c ? void 0 : c.type,
 							achievementFlairTitle: null == c ? void 0 : c.name,
-							isLocked: null == i ? void 0 : i.isLocked,
-							supporterFlairId: null == a ? void 0 : a.type,
-							supporterFlairTitle: null == a ? void 0 : a.name
+							isLocked: null == c ? void 0 : c.isLocked
 						}
 					}
 				},
@@ -2608,4 +2604,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost.c4246e45c39cf6f31653.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost.f16a9eab428cc9393b82.js.map

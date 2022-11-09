@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.6224574ff281e6987038.js
-// Retrieved at 11/8/2022, 6:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.8d6bb8a55c39ef028658.js
+// Retrieved at 11/9/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -910,7 +910,7 @@
 			const ae = Object(ie.a)(e => Object(se.c)(e, {
 				experimentEligibilitySelector: se.a,
 				experimentName: re.Cb
-			}), e => e === re.Kd);
+			}), e => e === re.Jd);
 			var ce = n("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				de = n("./src/reddit/selectors/platform.ts"),
 				le = n("./src/reddit/selectors/posts.ts"),
@@ -5070,7 +5070,7 @@
 							tooltipId: e,
 							args: {
 								isModNotesView: !0,
-								modNotesFilter: b.w.Note
+								modNotesFilter: b.x.Note
 							}
 						}))
 					}, [n, v, g]);
@@ -7144,7 +7144,7 @@
 					let {
 						className: t
 					} = e;
-					return Object(s.e)(i.i) ? r.a.createElement(d, {
+					return Object(s.e)(i.h) ? r.a.createElement(d, {
 						className: t
 					}) : r.a.createElement(a, {
 						className: t
@@ -25175,14 +25175,14 @@
 						...u,
 						variables: t
 					});
-					return !!Object(i.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(g.I.Talk)
+					return !!Object(i.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(g.J.Talk)
 				}, C = async (e, t) => {
 					var n, o;
 					const r = await Object(s.a)(e, {
 						...m,
 						variables: t
 					});
-					return !!Object(i.c)(r) && (null !== (o = null === (n = r.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(g.I.Talk)
+					return !!Object(i.c)(r) && (null !== (o = null === (n = r.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(g.J.Talk)
 				}, x = async e => {
 					var t;
 					const n = await Object(s.a)(e, l);
@@ -25226,10 +25226,10 @@
 						hk: "2mGf21"
 					})
 				}, S = e => e.data.prepareAudioRoom || e.data.prepareAudioRoomOnProfile, T = {
-					[g.K.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+					[g.L.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[g.K.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
+					[g.L.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					})
 				}, w = (e, t) => Object(s.a)(e, {
@@ -28259,10 +28259,8 @@
 					const n = r.kb(t),
 						{
 							userFlair: s,
-							achievementFlair: i,
-							supporterFlair: a
-						} = e,
-						c = i || a;
+							achievementFlair: i
+						} = e;
 					return {
 						source: "user_flair_picker",
 						action: "click",
@@ -28275,9 +28273,7 @@
 							isActive: !!s || void 0,
 							achievementFlairId: null == i ? void 0 : i.type,
 							achievementFlairTitle: null == i ? void 0 : i.name,
-							isLocked: null == c ? void 0 : c.isLocked,
-							supporterFlairId: null == a ? void 0 : a.type,
-							supporterFlairTitle: null == a ? void 0 : a.name
+							isLocked: null == i ? void 0 : i.isLocked
 						}
 					}
 				},
@@ -30468,7 +30464,7 @@
 						theme: l,
 						topics: u,
 						isUpcoming: m
-					} = Object(s.e)(A.ub), h = Object(s.e)(A.kb), b = Object(s.e)(L.o), f = Object(s.e)(F.l), [g, v] = Object(o.useState)(!1), E = Object(s.d)(), C = Object(P.a)(), x = Object(o.useMemo)(() => Object(w.d)(), [i.id]), j = Object(o.useMemo)(() => Object.keys(W).reduce((e, t) => (e[W[t]] = l === t, e), {}), [l]);
+					} = Object(s.e)(A.ub), h = Object(s.e)(A.kb), b = Object(s.e)(L.n), f = Object(s.e)(F.l), [g, v] = Object(o.useState)(!1), E = Object(s.d)(), C = Object(P.a)(), x = Object(o.useMemo)(() => Object(w.d)(), [i.id]), j = Object(o.useMemo)(() => Object.keys(W).reduce((e, t) => (e[W[t]] = l === t, e), {}), [l]);
 					Object(o.useEffect)(() => {
 						C(Object(I.d)())
 					}, [C]);
@@ -30487,12 +30483,12 @@
 						});
 						if (!e.ok) return E(Object(O.f)({
 							kind: R.b.Error,
-							text: w.b[B.K.ServiceError]
+							text: w.b[B.L.ServiceError]
 						})), void v(!1);
 						const t = Object(w.i)(e.body);
 						if (null == t ? void 0 : t.errorState) return E(Object(O.f)({
 							kind: R.b.Error,
-							text: w.b[t.errorState.code] || w.b[B.K.ServiceError]
+							text: w.b[t.errorState.code] || w.b[B.L.ServiceError]
 						})), void v(!1);
 						if ((null == t ? void 0 : t.okState) && t.okState.postId && i)
 							if (i.type === N.g.User) {
@@ -30695,7 +30691,7 @@
 			var Ce = () => {
 				const [e, t] = Object(o.useState)(!1), {
 					topics: n
-				} = Object(s.e)(A.ub), i = Object(s.e)(L.o), c = Object(s.d)(), l = () => {
+				} = Object(s.e)(A.ub), i = Object(s.e)(L.n), c = Object(s.d)(), l = () => {
 					t(!1)
 				};
 				return r.a.createElement(r.a.Fragment, null, r.a.createElement(S.t, {
@@ -34782,7 +34778,7 @@
 						subredditId: n
 					} = e;
 					const i = Object(s.d)(),
-						c = Object(s.e)(L.h),
+						c = Object(s.e)(L.g),
 						l = Object(s.e)(e => Object(qn.b)(e, {
 							subredditId: n
 						})),
@@ -35202,7 +35198,7 @@
 				}, e.children),
 				mu = Object(i.a)(A.d, A.e, A.h, A.T, A.cb, Q.s, (e, t) => {
 					const n = Object(A.h)(e);
-					return Object(L.u)(e) && t.isTalkCreationAllowedForUser && n.isProfile
+					return Object(L.t)(e) && t.isTalkCreationAllowedForUser && n.isProfile
 				}, (e, t, n, o, r, s, i) => {
 					const {
 						images: a = !0,
@@ -35436,8 +35432,8 @@
 							subredditId: n.id
 						})
 					},
-					isTalkTopicSelectionEnabled: L.t,
-					isScheduledTalksEnabled: L.o
+					isTalkTopicSelectionEnabled: L.s,
+					isScheduledTalksEnabled: L.n
 				});
 			class ju extends r.a.Component {
 				constructor(e) {
@@ -35779,7 +35775,7 @@
 					const t = Object(G.a)(),
 						[n, i] = Object(o.useState)(!1),
 						a = Object(s.e)(e => Object(A.h)(e)),
-						c = Object(s.e)(L.u),
+						c = Object(s.e)(L.t),
 						d = Object(o.useMemo)(() => {
 							var e;
 							return !!(null === (e = a.allowedPostTypes) || void 0 === e ? void 0 : e.talks)
@@ -38560,7 +38556,7 @@
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: o.I
-				}) === o.Kd
+				}) === o.Jd
 			}
 		},
 		"./src/reddit/selectors/experiments/commentSearchPdp.ts": function(e, t, n) {
@@ -38641,9 +38637,9 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const s = e => Object(r.c)(e, {
-				experimentName: o.Ee,
+				experimentName: o.Ce,
 				experimentEligibilitySelector: r.a
-			}) === o.Me.Enabled
+			}) === o.Ke.Enabled
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
 			"use strict";
@@ -38655,8 +38651,8 @@
 			const s = e => {
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: o.Ze
-				}) === o.Kd
+					experimentName: o.Xe
+				}) === o.Jd
 			}
 		},
 		"./src/reddit/selectors/experiments/typingIndicators.ts": function(e, t, n) {
@@ -38678,29 +38674,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.lg
-					}) === o.Kd
+						experimentName: o.jg
+					}) === o.Jd
 				},
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.mg
-					}) === o.Kd
+						experimentName: o.kg
+					}) === o.Jd
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.kg
+						experimentName: o.ig
 					});
-					return t === o.bg.TypingIndicators || t === o.bg.IndicatorsPlusCTA
+					return t === o.Zf.TypingIndicators || t === o.Zf.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.d)(e, {
-						experimentName: o.kg
+						experimentName: o.ig
 					});
-					return (null == t ? void 0 : t.variant) === o.bg.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.Zf.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -39385,4 +39381,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.6224574ff281e6987038.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.8d6bb8a55c39ef028658.js.map

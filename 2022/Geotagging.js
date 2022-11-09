@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.2cb0f3f04e681190418c.js
-// Retrieved at 11/8/2022, 6:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.1e7ac043c9db0cba2b78.js
+// Retrieved at 11/9/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -51,8 +51,8 @@
 			const x = e => {
 				return Object(g.c)(e, {
 					experimentEligibilitySelector: g.a,
-					experimentName: h.pf
-				}) === h.Kd
+					experimentName: h.nf
+				}) === h.Jd
 			};
 			var f = s("./src/reddit/selectors/recapGame.ts"),
 				E = s("./src/reddit/selectors/user.ts"),
@@ -1641,8 +1641,8 @@
 					}
 				})
 			}
-			var K = s("./src/reddit/icons/svgs/HamburgerClose/index.tsx"),
-				q = s("./src/reddit/models/Toast/index.ts");
+			var q = s("./src/reddit/icons/svgs/HamburgerClose/index.tsx"),
+				K = s("./src/reddit/models/Toast/index.ts");
 			const {
 				fbt: U
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
@@ -1671,7 +1671,7 @@
 
 				function y() {
 					o(Object(k.f)({
-						kind: q.b.SuccessMod,
+						kind: K.b.SuccessMod,
 						text: U._("Nice work!", null, {
 							hk: "2Wu6gX"
 						})
@@ -1694,7 +1694,7 @@
 					onClick: function() {
 						V(t.id), S(R(t)), x(), s(t.id)
 					}
-				}, r.a.createElement(K.a, null))), r.a.createElement("p", null, t.publicDescriptionText || t.title), t.geoPlace && !m ? r.a.createElement("div", {
+				}, r.a.createElement(q.a, null))), r.a.createElement("p", null, t.publicDescriptionText || t.title), t.geoPlace && !m ? r.a.createElement("div", {
 					className: _.a.questionContainer
 				}, r.a.createElement("div", {
 					className: _.a.question
@@ -1730,7 +1730,7 @@
 							sessionId: r
 						});
 						if (u(!1), !a.ok) return o(Object(k.f)({
-							kind: q.b.Error,
+							kind: K.b.Error,
 							text: U._("Something went wrong", null, {
 								hk: "2PnKbu"
 							}),
@@ -1864,4 +1864,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.2cb0f3f04e681190418c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.1e7ac043c9db0cba2b78.js.map

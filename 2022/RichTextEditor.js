@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.edc6a4403e3d38382d34.js
-// Retrieved at 11/8/2022, 6:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.6f7e619c6b407657f8d2.js
+// Retrieved at 11/9/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -964,7 +964,7 @@
 			const ae = Object(ie.a)(e => Object(re.c)(e, {
 				experimentEligibilitySelector: re.a,
 				experimentName: se.Cb
-			}), e => e === se.Kd);
+			}), e => e === se.Jd);
 			var de = o("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				ce = o("./src/reddit/selectors/platform.ts"),
 				le = o("./src/reddit/selectors/posts.ts"),
@@ -6349,20 +6349,20 @@
 			const i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.ie
-					}) === n.Kd
+						experimentName: n.ge
+					}) === n.Jd
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.je
-					}) === n.Kd
+						experimentName: n.he
+					}) === n.Jd
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.Td
-					}) === n.Kd
+						experimentName: n.Sd
+					}) === n.Jd
 				},
 				c = (e, t) => {
 					let {
@@ -6400,29 +6400,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: n.lg
-					}) === n.Kd
+						experimentName: n.jg
+					}) === n.Jd
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: n.mg
-					}) === n.Kd
+						experimentName: n.kg
+					}) === n.Jd
 				},
 				c = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: n.kg
+						experimentName: n.ig
 					});
-					return t === n.bg.TypingIndicators || t === n.bg.IndicatorsPlusCTA
+					return t === n.Zf.TypingIndicators || t === n.Zf.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: n.kg
+						experimentName: n.ig
 					});
-					return (null == t ? void 0 : t.variant) === n.bg.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === n.Zf.IndicatorsPlusCTA
 				}
 		},
 		"./src/redditGQL/operations/CommentToxicity.json": function(e) {
@@ -6439,4 +6439,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.edc6a4403e3d38382d34.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.6f7e619c6b407657f8d2.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostSetPage.1289c681c842e50a100f.js
-// Retrieved at 11/8/2022, 6:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostSetPage.c31a06ed71bd6d9c9529.js
+// Retrieved at 11/9/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostSetPage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -862,8 +862,8 @@
 			const g = e => {
 				return Object(f.c)(e, {
 					experimentEligibilitySelector: f.a,
-					experimentName: h.pf
-				}) === h.Kd
+					experimentName: h.nf
+				}) === h.Jd
 			};
 			var x = n("./src/reddit/selectors/recapGame.ts"),
 				y = n("./src/reddit/selectors/user.ts"),
@@ -2897,7 +2897,7 @@
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
 					experimentName: r.I
-				}) === r.Kd
+				}) === r.Jd
 			}
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, n) {
@@ -2937,13 +2937,13 @@
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: () => t,
 						experimentName: r.tc
-					}) === r.Kd
+					}) === r.Jd
 				},
 				o = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
 						experimentName: r.sc
-					}) === r.Kd
+					}) === r.Jd
 				}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, n) {
@@ -2975,4 +2975,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.1289c681c842e50a100f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.c31a06ed71bd6d9c9529.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.be1747b3a7d7ea0560d9.js
-// Retrieved at 11/7/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.25054eb9fb4b32aed6a7.js
+// Retrieved at 11/9/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -106,8 +106,8 @@
 					}
 				}, e.children), "HiddenPortalContainer", A.a),
 				I = w.a.wrapped(y.a, "MinimizedRedesignPortalContainer", A.a),
-				U = S,
-				L = Object(M.a)({
+				L = S,
+				U = Object(M.a)({
 					container: e => e && e.container && e.container.size
 				});
 
@@ -118,7 +118,7 @@
 					case _.a.HIDDEN:
 						return c.a.createElement(D, null, e.children);
 					case _.a.FULL:
-						return c.a.createElement(U, null, e.children);
+						return c.a.createElement(L, null, e.children);
 					case _.a.MINIMIZED:
 						return c.a.createElement(I, null);
 					default:
@@ -238,7 +238,7 @@
 				pe = (e, t) => {
 					var n;
 					const s = null === (n = e.features) || void 0 === n ? void 0 : n.eligibleUXExperiences,
-						a = [le.U.LiveChatVideoEdu].reduce((e, t) => {
+						a = [le.V.LiveChatVideoEdu].reduce((e, t) => {
 							const n = null == s ? void 0 : s.experiences[t];
 							return (null == n ? void 0 : n.fetched) ? {
 								...e,
@@ -293,7 +293,7 @@
 					}, c.a.createElement(s.a.Provider, {
 						value: a || {}
 					}, function(e, t) {
-						const n = Object(O.b)(L)(q);
+						const n = Object(O.b)(U)(q);
 						return c.a.createElement("div", null, Object(C.d)(c.a.createElement(n, null, Object(E.a)(e, t)), document.body))
 					}(e, t))),
 					appName: u.o.Chat,
@@ -696,4 +696,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.be1747b3a7d7ea0560d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.25054eb9fb4b32aed6a7.js.map

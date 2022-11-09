@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.2b8daf948edbd8160f23.js
-// Retrieved at 11/8/2022, 6:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.2fe5d92781a4ea07ff3d.js
+// Retrieved at 11/9/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/backo2/index.js": function(e, t) {
@@ -1279,7 +1279,7 @@
 							tooltipId: e,
 							args: {
 								isModNotesView: !0,
-								modNotesFilter: b.w.Note
+								modNotesFilter: b.x.Note
 							}
 						}))
 					}, [n, v, f]);
@@ -4903,7 +4903,7 @@
 						const t = Object(Ce.d)(e),
 							n = Object(ye.a)(3 * s.E)(e),
 							o = Object(Mo.a)(e, {
-								experience: So.U.LiveChatReactionEdu
+								experience: So.V.LiveChatReactionEdu
 							});
 						return t && n && !!(null == o ? void 0 : o.value)
 					}
@@ -4932,9 +4932,9 @@
 								text: Gn
 							})
 						})), e(Object(ee.b)({
-							experience: So.U.LiveChatReactionEdu,
+							experience: So.V.LiveChatReactionEdu,
 							value: !1
-						})), e(Object(ee.c)(So.U.LiveChatReactionEdu))
+						})), e(Object(ee.c)(So.V.LiveChatReactionEdu))
 					}
 				}));
 			class Fo extends u.a.Component {
@@ -6285,7 +6285,7 @@
 			const a = e => Object(s.c)(e, {
 				experimentEligibilitySelector: r.R,
 				experimentName: o.bc
-			}) === o.Kd
+			}) === o.Jd
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, n) {
 			"use strict";
@@ -6384,4 +6384,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.2b8daf948edbd8160f23.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.2fe5d92781a4ea07ff3d.js.map

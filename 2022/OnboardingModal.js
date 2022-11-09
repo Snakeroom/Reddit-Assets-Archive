@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.1c87211db723bbbe1c6a.js
-// Retrieved at 11/8/2022, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.7f174307d8dcf5fac0ae.js
+// Retrieved at 11/9/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -445,7 +445,7 @@
 				H = n("./src/lib/initializeClient/installReducer.ts"),
 				U = n("./src/reddit/reducers/features/marketplace/index.ts"),
 				Q = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const z = Object(Q.a)(b.Pd);
+			const z = Object(Q.a)(b.Od);
 			Object(H.a)({
 				features: {
 					marketplace: U.a
@@ -481,7 +481,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.sg)(p),
+						includeInterestTopics: !!p && !Object(b.qg)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: h && !(null === (s = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === s ? void 0 : s.total),
@@ -495,7 +495,7 @@
 						},
 						enableMerchandisingUnitAnnouncements: z(e)
 					};
-					return v ? (E && (C || _ !== b.ib.LoggedOutHomeDefpop) || (y.sort = W.H.Best, y.feedRankingContext.variant = _), y.feedRankingContext.loggedOutAllowNsfw = Object(V.a)(e)) : d && (y.sort = d.toUpperCase()), u && (y.range = u.toUpperCase()), o ? y.pageSize = Object(f.a)(i) : l && (y.pageSize = l), x && x.ad && (y.forceAds = {
+					return v ? (E && (C || _ !== b.ib.LoggedOutHomeDefpop) || (y.sort = W.I.Best, y.feedRankingContext.variant = _), y.feedRankingContext.loggedOutAllowNsfw = Object(V.a)(e)) : d && (y.sort = d.toUpperCase()), u && (y.range = u.toUpperCase()), o ? y.pageSize = Object(f.a)(i) : l && (y.pageSize = l), x && x.ad && (y.forceAds = {
 						ad: x.ad
 					}), r && (y.after = Object(c.a)(r)), y
 				},
@@ -3063,9 +3063,9 @@
 					Ie = Object(i.e)(Z.T),
 					Te = Object(i.e)(ke.g),
 					Pe = Object(i.e)(jn.a),
-					Re = Pe === Ce.Zf.CloseOnboarding,
-					Le = Pe === Ce.Zf.SkipTopicSelection,
-					Fe = Pe === Ce.Zf.SmartSignal,
+					Re = Pe === Ce.Xf.CloseOnboarding,
+					Le = Pe === Ce.Xf.SkipTopicSelection,
+					Fe = Pe === Ce.Xf.SmartSignal,
 					Ge = Object(a.useCallback)(() => {
 						s(Object(b.g)(Qt.a.ONBOARDING_MODAL_D2X)), Ne && s(Object(g.h)()), h && (r(Object(F.t)()), Object(xn.a)()), Te && Ie && s(Object(m.startChangeUsernameFlow)())
 					}, [s, Ie, Te, h, Ne, r]),
@@ -5172,8 +5172,8 @@
 			const a = e => {
 				return !(Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.ue
-				}) === s.Kd)
+					experimentName: s.se
+				}) === s.Jd)
 			}
 		},
 		"./src/reddit/selectors/experiments/inAppNotification.ts": function(e, t, n) {
@@ -5243,4 +5243,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.1c87211db723bbbe1c6a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.7f174307d8dcf5fac0ae.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.119115486ef71135c6e8.js
-// Retrieved at 11/8/2022, 6:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.95598836164e19555d8f.js
+// Retrieved at 11/9/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/BlankPost/index.tsx": function(e, t, s) {
@@ -87,14 +87,14 @@
 				S = s("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
 				k = s("./src/reddit/components/AuthorLink/index.tsx"),
 				w = s("./src/reddit/components/SponsoredLabel/index.tsx"),
-				g = s("./src/reddit/components/UserIcon/index.tsx"),
-				L = s("./src/reddit/controls/MetaSeparator/index.tsx"),
+				L = s("./src/reddit/components/UserIcon/index.tsx"),
+				g = s("./src/reddit/controls/MetaSeparator/index.tsx"),
 				A = s("./src/reddit/components/CommentsPageNativeAd/index.m.less"),
 				T = s.n(A);
 			var I = e => o.a.createElement("div", {
 					className: T.a.adTopMetaContainer,
 					"data-adclicklocation": S.a.TOP_BAR
-				}, o.a.createElement(g.a, {
+				}, o.a.createElement(L.a, {
 					iconUrl: e.iconUrl,
 					isNSFW: !1,
 					userName: e.author,
@@ -104,7 +104,7 @@
 					className: T.a.authorLink,
 					"data-click-id": "user",
 					author: e.author
-				}, `u/${e.author}`), o.a.createElement(L.a, {
+				}, `u/${e.author}`), o.a.createElement(g.a, {
 					isSmall: !0,
 					className: T.a.metaSeparator
 				}), o.a.createElement(w.a, {
@@ -440,11 +440,11 @@
 				r = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const n = Object(a.a)(e => Object(o.c)(e, {
-					experimentName: r.gg,
+					experimentName: r.eg,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				i = Object(a.a)(n, e => e === r.Yf)
+				i = Object(a.a)(n, e => e === r.Wf)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.119115486ef71135c6e8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.95598836164e19555d8f.js.map

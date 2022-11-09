@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.2724c23d938a4c4ba446.js
-// Retrieved at 11/8/2022, 6:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.f0f7accb6a31124af5d1.js
+// Retrieved at 11/9/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./node_modules/lodash/map.js": function(e, t, o) {
@@ -94,9 +94,9 @@
 			})), o.d(t, "d", (function() {
 				return qe
 			})), o.d(t, "a", (function() {
-				return We
-			})), o.d(t, "j", (function() {
 				return Je
+			})), o.d(t, "j", (function() {
+				return We
 			})), o.d(t, "i", (function() {
 				return $e
 			})), o.d(t, "l", (function() {
@@ -236,8 +236,8 @@
 				V = o("./src/reddit/featureFlags/index.ts"),
 				H = o("./src/reddit/helpers/comment/index.ts"),
 				q = o("./src/reddit/helpers/correlationIdTracker.ts"),
-				W = o("./src/reddit/helpers/dom/index.ts"),
-				J = o("./src/reddit/helpers/localStorage/index.ts"),
+				J = o("./src/reddit/helpers/dom/index.ts"),
+				W = o("./src/reddit/helpers/localStorage/index.ts"),
 				z = o("./src/reddit/helpers/sessionStorage/index.ts"),
 				Q = o("./src/reddit/helpers/trackers/commentsPage.ts"),
 				X = o("./src/reddit/models/Comment/index.ts"),
@@ -254,7 +254,7 @@
 			const ie = Object(ce.a)(e => Object(re.c)(e, {
 				experimentEligibilitySelector: re.a,
 				experimentName: se.Cb
-			}), e => e === se.Kd);
+			}), e => e === se.Jd);
 			var ae = o("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				de = o("./src/reddit/selectors/platform.ts"),
 				le = o("./src/reddit/selectors/posts.ts"),
@@ -616,7 +616,7 @@
 						let p = "",
 							b = null;
 						const O = c.user.prefs.commentMode,
-							f = Object(W.d)();
+							f = Object(J.d)();
 						if (f) {
 							const e = f.filter(e => !!e && 10 !== e.charCodeAt(0));
 							if (O === I.i.MARKDOWN) p = e.map(e => `> ${e}\n`).join("");
@@ -701,7 +701,7 @@
 							}
 						})))
 					}
-				}, Ge = Object(s.a)(pe.F), Ve = Object(s.a)(pe.E), He = Object(s.a)(pe.G), qe = Object(s.a)(pe.j), We = Object(s.a)(pe.f), Je = e => {
+				}, Ge = Object(s.a)(pe.F), Ve = Object(s.a)(pe.E), He = Object(s.a)(pe.G), qe = Object(s.a)(pe.j), Je = Object(s.a)(pe.f), We = e => {
 					let {
 						id: t,
 						commentsPageKey: o,
@@ -878,7 +878,7 @@
 								commentId: e,
 								followState: t
 							})).ok) {
-							Object(J.yb)(null !== (m = null === (l = null === (d = s().pages) || void 0 === d ? void 0 : d.comments) || void 0 === l ? void 0 : l.followed) && void 0 !== m ? m : [], null === (u = s().user.account) || void 0 === u ? void 0 : u.id);
+							Object(W.yb)(null !== (m = null === (l = null === (d = s().pages) || void 0 === d ? void 0 : d.comments) || void 0 === l ? void 0 : l.followed) && void 0 !== m ? m : [], null === (u = s().user.account) || void 0 === u ? void 0 : u.id);
 							const e = r ? n.fbt._("Followed! You’ll get updates when there’s new activity.", null, {
 								hk: "2O1Ou3"
 							}) : n.fbt._("Unfollowed. You won’t get updates on this comment anymore.", null, {
@@ -1542,8 +1542,8 @@
 			var V = o("./src/reddit/helpers/isPost.ts"),
 				H = o("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
 				q = o("./src/reddit/helpers/routeKey/index.ts"),
-				W = o("./src/reddit/models/ModQueue/index.ts"),
-				J = o("./src/reddit/models/PostDraft/index.ts"),
+				J = o("./src/reddit/models/ModQueue/index.ts"),
+				W = o("./src/reddit/models/PostDraft/index.ts"),
 				z = o("./src/reddit/models/RemovalReason/index.ts"),
 				Q = o("./src/reddit/models/Toast/index.ts"),
 				X = o("./src/reddit/selectors/comments.ts"),
@@ -1699,7 +1699,7 @@
 												sort: C.x,
 												hasSortParam: !0
 											})), p === z.e.Post) {
-											const o = Object(E.a)(J.c.replyToPost, u);
+											const o = Object(E.a)(W.c.replyToPost, u);
 											c(Object(w.r)({
 												...t,
 												headCommentId: Object(X.w)(l, {
@@ -1719,7 +1719,7 @@
 												}
 											}))
 										} else if (p === z.e.Comment) {
-											const e = Object(E.a)(J.c.replyToComment, b.id),
+											const e = Object(E.a)(W.c.replyToComment, b.id),
 												o = Object(X.j)(l, {
 													commentId: u,
 													commentsPageKey: s
@@ -1772,7 +1772,7 @@
 					if (b.ok) {
 						const n = {
 							ids: e,
-							operation: W.a.RemovalReason,
+							operation: J.a.RemovalReason,
 							username: m,
 							options: {
 								modNote: r,
@@ -1982,7 +1982,7 @@
 				H = o("./src/reddit/helpers/path/index.ts"),
 				q = o("./src/reddit/selectors/telemetry.ts");
 			o("./src/telemetry/models/Event.ts");
-			const W = (e, t, o, n, s) => r => ({
+			const J = (e, t, o, n, s) => r => ({
 					source: "comment_sort",
 					action: "click",
 					noun: e,
@@ -1996,7 +1996,7 @@
 					}),
 					userSubreddit: Object(q.ub)(r)
 				}),
-				J = (e, t) => o => ({
+				W = (e, t) => o => ({
 					source: "comment_highlighting",
 					action: t,
 					noun: e
@@ -2166,7 +2166,7 @@
 				});
 			class je extends r.a.Component {
 				constructor() {
-					super(...arguments), this.tooltipTargetElement = null, this.sendCommentSortEvent = (e, t, o, n) => this.props.sendEvent(W(e, this.props.isOverlay, t, o, n)), this.onOpenDropdownClick = () => {
+					super(...arguments), this.tooltipTargetElement = null, this.sendCommentSortEvent = (e, t, o, n) => this.props.sendEvent(J(e, this.props.isOverlay, t, o, n)), this.onOpenDropdownClick = () => {
 						this.props.onOpenDropdown(), this.sendCommentSortEvent("sorting", void 0, this.props.sort, "post_detail")
 					}, this.onSortOptionClick = e => this.sendCommentSortEvent("sort_by", this.props.sort, e, "post_detail"), this.clearSortOnClick = () => {
 						this.props.onSetSuggestedSort(null), this.sendCommentSortEvent("clear_suggested_sort", this.props.sort)
@@ -2174,7 +2174,7 @@
 						const e = this.props.suggestedSort || void 0;
 						this.props.onSetSuggestedSort(this.props.sort), this.sendCommentSortEvent("set_suggested_sort", e, this.props.sort)
 					}, this.setTooltipTargetRef = e => this.tooltipTargetElement = e, this.onOpenHighlightSelector = () => {
-						this.props.onOpenHighlightDropdown(J("dropdown", "click"))
+						this.props.onOpenHighlightDropdown(W("dropdown", "click"))
 					}, this.setContestMode = () => {
 						this.props.sendEvent(Q(!this.props.post.contestMode)), this.props.setContestMode(!this.props.post.contestMode)
 					}
@@ -2307,7 +2307,7 @@
 						id: pe,
 						onOpen: this.onOpenHighlightSelector,
 						selectedSort: g,
-						trackHighlight: J
+						trackHighlight: W
 					})), i && r.a.createElement(x.a, {
 						actionText: D,
 						headerText: L,
@@ -3103,4 +3103,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.2724c23d938a4c4ba446.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.f0f7accb6a31124af5d1.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.51c5a219683e25904036.js
-// Retrieved at 11/8/2022, 6:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.1df506513797e7ae5ba2.js
+// Retrieved at 11/9/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -3631,14 +3631,14 @@
 						...u,
 						variables: t
 					});
-					return !!Object(a.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(x.I.Talk)
+					return !!Object(a.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(x.J.Talk)
 				}, O = async (e, t) => {
 					var n, o;
 					const r = await Object(s.a)(e, {
 						...p,
 						variables: t
 					});
-					return !!Object(a.c)(r) && (null !== (o = null === (n = r.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(x.I.Talk)
+					return !!Object(a.c)(r) && (null !== (o = null === (n = r.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(x.J.Talk)
 				}, C = async e => {
 					var t;
 					const n = await Object(s.a)(e, c);
@@ -3682,10 +3682,10 @@
 						hk: "2mGf21"
 					})
 				}, y = e => e.data.prepareAudioRoom || e.data.prepareAudioRoomOnProfile, k = {
-					[x.K.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+					[x.L.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[x.K.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
+					[x.L.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					})
 				}, I = (e, t) => Object(s.a)(e, {
@@ -4286,7 +4286,7 @@
 					experimentName: r.Gc,
 					experimentEligibilitySelector: s.a
 				}), e => e),
-				i = Object(o.a)(a, e => e === r.Kd)
+				i = Object(o.a)(a, e => e === r.Jd)
 		},
 		"./src/redditGQL/operations/CreateLiveAudioRoomOnProfile.json": function(e) {
 			e.exports = JSON.parse('{"id":"e35a47c6aa21"}')
@@ -4332,4 +4332,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.51c5a219683e25904036.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.1df506513797e7ae5ba2.js.map

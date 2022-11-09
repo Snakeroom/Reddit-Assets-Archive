@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Avatar.8325218d546ea2a68393.js
-// Retrieved at 11/8/2022, 6:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Avatar.6d7a8e59227501e588ff.js
+// Retrieved at 11/9/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Avatar"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, r) {
@@ -70,7 +70,7 @@
 					activeMeSubpage: R || void 0,
 					activeDetails: M || void 0,
 					shopTabState: T || void 0
-				}), [M, h, R, T]), N = Object(c.e)(e => !Object(O.R)(e) && Object(p.w)(e));
+				}), [M, h, R, T]), N = Object(c.e)(e => !Object(O.R)(e) && Object(p.v)(e));
 				if (!x || !f) return null;
 				if (N) return a.a.createElement("div", {
 					className: Object(o.a)(b.a.container, {
@@ -185,8 +185,8 @@
 			}));
 			var s = r("./src/reddit/constants/experiments.ts"),
 				n = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(n.a)(s.rd)
+			const a = Object(n.a)(s.qd)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.8325218d546ea2a68393.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.6d7a8e59227501e588ff.js.map

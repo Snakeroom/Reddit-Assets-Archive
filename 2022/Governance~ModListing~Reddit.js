@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.e77f3fcae23fa903842a.js
-// Retrieved at 11/8/2022, 6:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.657cf533449971411108.js
+// Retrieved at 11/9/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -396,9 +396,9 @@
 			})), n.d(t, "e", (function() {
 				return L
 			})), n.d(t, "b", (function() {
-				return F
-			})), n.d(t, "i", (function() {
 				return G
+			})), n.d(t, "i", (function() {
+				return F
 			})), n.d(t, "f", (function() {
 				return H
 			})), n.d(t, "c", (function() {
@@ -536,7 +536,7 @@
 					s && s !== i && n(M({
 						index: s
 					}))
-				}, M = Object(o.a)(c.g), B = (Object(o.a)(c.h), Object(o.a)(c.f)), F = e => async (t, n, o) => {
+				}, M = Object(o.a)(c.g), B = (Object(o.a)(c.h), Object(o.a)(c.f)), G = e => async (t, n, o) => {
 					let {
 						gqlContext: i
 					} = o;
@@ -559,7 +559,7 @@
 					} else t(Object(d.f)(Object(d.e)(r.fbt._("Failed to hide notification, please try again.", null, {
 						hk: "fL7uB"
 					}), C.b.Error)))
-				}, G = (e, t) => async (n, o, i) => {
+				}, F = (e, t) => async (n, o, i) => {
 					let {
 						gqlContext: s
 					} = i;
@@ -586,7 +586,7 @@
 						});
 						return Object(d.f)(Object(d.e)(n, C.b.Undo, r.fbt._("Undo", null, {
 							hk: "4zFGDk"
-						}), G(e, t)))
+						}), F(e, t)))
 					})()) : n(Object(d.f)(Object(d.e)(r.fbt._("Failed to hide notifications, please try again.", null, {
 						hk: "KEGcB"
 					}), C.b.Error)))
@@ -1403,7 +1403,7 @@
 					wrapperClassName: w,
 					style: D,
 					...L
-				} = e, A = !!s && Object(l.e)(s) === P, U = A ? s : k, R = U && U.accountIcon || c, M = k ? k.isNSFW : p, B = Object(d.a)(R) && !b, F = B ? i.a.createElement(_.a, {
+				} = e, A = !!s && Object(l.e)(s) === P, U = A ? s : k, R = U && U.accountIcon || c, M = k ? k.isNSFW : p, B = Object(d.a)(R) && !b, G = B ? i.a.createElement(_.a, {
 					headshot: R,
 					className: e.className,
 					hasNftBorder: m && Object(d.d)(c),
@@ -1413,7 +1413,7 @@
 					isCurrentUser: A,
 					isNSFW: M,
 					style: D
-				})), [G, H] = Object(o.useState)(!1), V = Object(o.useMemo)(() => ({
+				})), [F, H] = Object(o.useState)(!1), V = Object(o.useMemo)(() => ({
 					input: {
 						channel: {
 							teamOwner: "CONTENT_AND_COMMUNITIES",
@@ -1437,7 +1437,7 @@
 				}, []), Q = Object(o.useRef)({
 					rootMargin: "750px 0px 1000px 0px"
 				});
-				return Object(u.a)(W, z, Q.current), C ? F : i.a.createElement("div", {
+				return Object(u.a)(W, z, Q.current), C ? G : i.a.createElement("div", {
 					className: Object(r.a)(O.a.userIconWrapper, {
 						[O.a.hasHeadShotWrapper]: B,
 						[O.a.isProfileIcon]: N
@@ -1445,7 +1445,7 @@
 					ref: W
 				}, m && i.a.createElement(I, {
 					iconUrl: c
-				}), F, y && (G || h && E) && i.a.createElement(g.default, {
+				}), G, y && (F || h && E) && i.a.createElement(g.default, {
 					showPresence: !0,
 					isHighlighted: f,
 					onceInViewport: T
@@ -2350,7 +2350,7 @@
 			})), n.d(t, "j", (function() {
 				return B
 			})), n.d(t, "g", (function() {
-				return F
+				return G
 			})), n.d(t, "b", (function() {
 				return V
 			})), n.d(t, "a", (function() {
@@ -2508,7 +2508,7 @@
 							break
 						}
 						case i.Sb.FOLLOWERS:
-							G(t);
+							F(t);
 							break;
 						case i.Sb.PROFILE_MODERATION:
 							l && R(t, !0);
@@ -2545,7 +2545,7 @@
 							Object(C.a)(Y(n, r)(t));
 							break;
 						case i.Sb.INBOX_PAGES:
-							l && F(t);
+							l && G(t);
 							break;
 						case i.Sb.MODERATION_PAGES:
 							l && M(t, !0, a ? a.subredditName : null, a ? a.profileName : null);
@@ -2803,7 +2803,7 @@
 						adblock: N.e(e)
 					})
 				},
-				F = e => {
+				G = e => {
 					Object(C.a)({
 						source: "global",
 						action: "view",
@@ -2812,7 +2812,7 @@
 						actionInfo: N.d(e)
 					})
 				},
-				G = e => {
+				F = e => {
 					Object(C.a)({
 						source: "global",
 						action: "view",
@@ -3486,7 +3486,7 @@
 					return r ? r * o.Xb < 1639443600180 ? void 0 : O(e) : void 0
 				},
 				O = Object(r.a)(e => Object(c.c)(e, {
-					experimentName: i.Fe,
+					experimentName: i.De,
 					experimentEligibilitySelector: a.e
 				}), d.a)
 		},
@@ -3593,4 +3593,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.e77f3fcae23fa903842a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.657cf533449971411108.js.map

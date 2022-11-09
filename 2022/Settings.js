@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.b2e154a542ad787b0d85.js
-// Retrieved at 11/8/2022, 6:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.1a43cb85efafa88a9e2c.js
+// Retrieved at 11/9/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -1708,7 +1708,7 @@
 						const e = null == l ? void 0 : l.trim();
 						if (!(e && Object(u.g)(e) === u.d.Valid)) throw new Error(o.f);
 						t = e, n = null == i ? void 0 : i.trim()
-					} else if (r.socialLinkType === h.N.Reddit) {
+					} else if (r.socialLinkType === h.O.Reddit) {
 						const e = null == a ? void 0 : a.trim();
 						if (!(e && Object(m.f)(e) && e && e.length >= o.h && !/\s/.test(e))) throw new Error(o.e);
 						s = e
@@ -5942,81 +5942,81 @@
 					}),
 					i = o.i;
 				switch (t) {
-					case s.N.BuyMeACoffee:
+					case s.O.BuyMeACoffee:
 						a = r._("Buy Me a Coffee", null, {
 							hk: "ZTbP7"
 						});
 						break;
-					case s.N.CashApp:
+					case s.O.CashApp:
 						a = r._("Cash App", null, {
 							hk: "1aorWN"
 						});
 						break;
-					case s.N.Custom:
+					case s.O.Custom:
 						a = r._("Custom URL", null, {
 							hk: "2gveOb"
 						}), i = o.c, n = r._("https://website.com", null, {
 							hk: "1Kp5fF"
 						});
 						break;
-					case s.N.Reddit:
+					case s.O.Reddit:
 						i = r._("r/community, u/user", null, {
 							hk: "45oRo"
 						});
 						break;
-					case s.N.Discord:
+					case s.O.Discord:
 						i = o.c, n = r._("https://discord.com", null, {
 							hk: "6gcLP"
 						});
 						break;
-					case s.N.Facebook:
+					case s.O.Facebook:
 						i = o.c, n = r._("https://facebook.com", null, {
 							hk: "2v99jB"
 						});
 						break;
-					case s.N.Kickstarter:
+					case s.O.Kickstarter:
 						i = o.c, n = r._("https://kickstarter.com", null, {
 							hk: "132LC7"
 						});
 						break;
-					case s.N.Shopify:
+					case s.O.Shopify:
 						i = o.c, n = r._("https://shopify.com", null, {
 							hk: "2X1G4f"
 						});
 						break;
-					case s.N.Spotify:
+					case s.O.Spotify:
 						i = o.c, n = r._("https://spotify.com", null, {
 							hk: "3dZORp"
 						});
 						break;
-					case s.N.Substack:
+					case s.O.Substack:
 						i = o.c, n = r._("https://substack.com", null, {
 							hk: "1zQgL1"
 						});
 						break;
-					case s.N.Youtube:
+					case s.O.Youtube:
 						a = r._("YouTube", null, {
 							hk: "12AQG6"
 						}), i = o.c, n = r._("https://youtube.com", null, {
 							hk: "4FZQ2O"
 						});
 						break;
-					case s.N.Onlyfans:
+					case s.O.Onlyfans:
 						a = r._("OnlyFans", null, {
 							hk: "1JRN4C"
 						});
 						break;
-					case s.N.Paypal:
+					case s.O.Paypal:
 						a = r._("PayPal", null, {
 							hk: "3n7Il"
 						});
 						break;
-					case s.N.Soundcloud:
+					case s.O.Soundcloud:
 						a = r._("SoundCloud", null, {
 							hk: "34Xo4u"
 						});
 						break;
-					case s.N.Tiktok:
+					case s.O.Tiktok:
 						a = r._("TikTok", null, {
 							hk: "tajib"
 						})
@@ -6028,16 +6028,16 @@
 					socialLinkType: t
 				}
 			}, i = () => {
-				return Object.keys(s.N).map(e => {
-					const t = s.N[e];
+				return Object.keys(s.O).map(e => {
+					const t = s.O[e];
 					return a(e, t)
-				}).filter(e => e.socialLinkType !== s.N.Indiegogo)
+				}).filter(e => e.socialLinkType !== s.O.Indiegogo)
 			}, l = e => {
 				const t = e.toLowerCase();
 				return `${o.d}${t}.png`
 			}, c = e => {
-				for (const t in s.N)
-					if (s.N[t] === e) return t;
+				for (const t in s.O)
+					if (s.O[t] === e) return t;
 				return ""
 			}, d = e => {
 				let t = o.b;
@@ -12066,7 +12066,7 @@
 					userIsWhitelistedCreator: Cn.y,
 					allowNavigationCallback: ma.a,
 					isResponsiveSettingsEnabled: ua.a,
-					isTalkLiveBarOptOutEnabled: da.s,
+					isTalkLiveBarOptOutEnabled: da.r,
 					prefs: e => e.user.prefs,
 					userHasSpecialMembership: e => {
 						if (e.economics.me.fetched) {
@@ -12079,7 +12079,7 @@
 						return Object(re.c)(e, {
 							experimentName: w.hd,
 							experimentEligibilitySelector: re.a
-						}) === w.Kd
+						}) === w.Jd
 					}
 				}),
 				_a = Object(ve.v)(),
@@ -12632,7 +12632,7 @@
 			const a = e => Object(o.c)(e, {
 				experimentName: s.x,
 				experimentEligibilitySelector: () => Object(r.Q)(e)
-			}) === s.Kd
+			}) === s.Jd
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -12796,4 +12796,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.b2e154a542ad787b0d85.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.1a43cb85efafa88a9e2c.js.map

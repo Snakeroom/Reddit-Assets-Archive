@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.b87ed4892aaf9c19b85b.js
-// Retrieved at 11/7/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.dc4729c0f6ddadc48c0d.js
+// Retrieved at 11/9/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -7721,7 +7721,7 @@
 				}),
 				Wc = Object(i.b)(Gc, e => ({
 					fetchLiveChats: () => e(Object(a.fetchLiveChats)()),
-					fetchUXExperiences: () => e(Object(c.c)([Fc.U.LiveChatVideoEdu])),
+					fetchUXExperiences: () => e(Object(c.c)([Fc.V.LiveChatVideoEdu])),
 					sendChatTabViewEvent: () => e(Object(s.ob)())
 				}));
 			class zc extends o.a.Component {
@@ -11531,14 +11531,14 @@
 				De = n.n(Ae);
 			const Ue = () => {
 				var e;
-				const [t, n] = Object(a.useState)(!1), [r, o] = Object(a.useState)(!1), l = Object(a.useRef)(null), u = Object(a.useRef)(!1), h = Object(a.useRef)([0, 25, 50, 75, 100]), m = null === (e = Object(c.e)((e => t => t.uxExperiences.experiences[e] || null)(re.U.LiveChatVideoEdu))) || void 0 === e ? void 0 : e.value, b = Object(c.d)(), p = Object(a.useContext)(we.a), g = Object(a.useCallback)(() => {
+				const [t, n] = Object(a.useState)(!1), [r, o] = Object(a.useState)(!1), l = Object(a.useRef)(null), u = Object(a.useRef)(!1), h = Object(a.useRef)([0, 25, 50, 75, 100]), m = null === (e = Object(c.e)((e => t => t.uxExperiences.experiences[e] || null)(re.V.LiveChatVideoEdu))) || void 0 === e ? void 0 : e.value, b = Object(c.d)(), p = Object(a.useContext)(we.a), g = Object(a.useCallback)(() => {
 					var e;
-					const t = re.U.LiveChatVideoEdu;
-					b(Object(ke.e)(re.U.LiveChatVideoEdu)), b(Object(ke.d)({
+					const t = re.V.LiveChatVideoEdu;
+					b(Object(ke.e)(re.V.LiveChatVideoEdu)), b(Object(ke.d)({
 						experience: t,
 						value: !1
 					})), null === (e = null == p ? void 0 : p.updateUXExperienceValue) || void 0 === e || e.call(p, {
-						experience: re.U.LiveChatVideoEdu,
+						experience: re.V.LiveChatVideoEdu,
 						value: !1
 					})
 				}, [b]);
@@ -15873,7 +15873,7 @@
 				},
 				M = e => {
 					var t;
-					return (null === (t = e.post.media) || void 0 === t ? void 0 : t.typeHint) === N.s.Rpan
+					return (null === (t = e.post.media) || void 0 === t ? void 0 : t.typeHint) === N.t.Rpan
 				},
 				L = (e, t, n) => e[t] ? {
 					...e,
@@ -19997,4 +19997,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.b87ed4892aaf9c19b85b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.dc4729c0f6ddadc48c0d.js.map
