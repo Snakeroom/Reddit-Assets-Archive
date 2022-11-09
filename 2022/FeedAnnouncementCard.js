@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeedAnnouncementCard.055adbf658291d7999ee.js
-// Retrieved at 11/8/2022, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeedAnnouncementCard.12bc87b7a9c96ab6b2bb.js
+// Retrieved at 11/9/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeedAnnouncementCard"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -149,7 +149,7 @@
 					className: Object(o.a)(b.a.thumbnailContainer)
 				}, r.a.createElement("img", {
 					src: m
-				})) : null), null != c ? r.a.createElement("div", {
+				})) : null), c ? r.a.createElement("div", {
 					className: Object(o.a)(b.a.ctaContainer)
 				}, r.a.createElement("a", {
 					onClick: l,
@@ -200,4 +200,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeedAnnouncementCard.055adbf658291d7999ee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeedAnnouncementCard.12bc87b7a9c96ab6b2bb.js.map

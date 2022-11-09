@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeedAnnouncementClassic.8a3aab1a5739e7ffa41f.js
-// Retrieved at 11/8/2022, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeedAnnouncementClassic.0dd8f8593731020bbbaf.js
+// Retrieved at 11/9/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeedAnnouncementClassic"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, a) {
@@ -198,7 +198,7 @@
 					className: Object(c.a)(x.a.fromReddit)
 				}, s.fbt._("From Reddit", null, {
 					hk: "1Sazf8"
-				})), null != r ? i.a.createElement("div", {
+				})), r ? i.a.createElement("div", {
 					className: Object(c.a)(x.a.ctaContainer)
 				}, i.a.createElement("a", {
 					onClick: v,
@@ -295,4 +295,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeedAnnouncementClassic.8a3aab1a5739e7ffa41f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeedAnnouncementClassic.0dd8f8593731020bbbaf.js.map
