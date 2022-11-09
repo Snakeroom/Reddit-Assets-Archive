@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeedAnnouncementCard.e38d32e5ccd0901160ac.js
-// Retrieved at 11/3/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeedAnnouncementCard.055adbf658291d7999ee.js
+// Retrieved at 11/8/2022, 7:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeedAnnouncementCard"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -97,20 +97,20 @@
 				A = n("./src/reddit/hooks/useTheme.ts"),
 				C = n("./src/reddit/components/FeedAnnouncement/utils.ts"),
 				p = n("./src/reddit/components/FeedAnnouncement/FeedAnnouncementCard/index.m.less"),
-				x = n.n(p);
+				b = n.n(p);
 
-			function _(e) {
+			function x(e) {
 				const {
 					onClose: t
 				} = e;
 				return r.a.createElement("div", {
-					className: x.a.headerContainer
+					className: b.a.headerContainer
 				}, r.a.createElement(u, null), r.a.createElement("div", {
-					className: x.a.headerTitle
+					className: b.a.headerTitle
 				}, s.fbt._("From Reddit", null, {
 					hk: "1Sazf8"
 				})), r.a.createElement("button", {
-					className: x.a.headerCloseButton,
+					className: b.a.headerCloseButton,
 					onClick: e => {
 						e.stopPropagation(), t()
 					},
@@ -129,31 +129,35 @@
 					onClick: l
 				} = e, d = Object(A.a)(), m = Object(C.a)(t);
 				return r.a.createElement("div", {
-					className: Object(o.a)(x.a.container),
+					className: Object(o.a)(b.a.container),
 					role: "button",
 					onClick: l,
 					style: Object(h.c)(void 0, {
 						theme: d
-					})
-				}, r.a.createElement(_, {
+					}),
+					tabIndex: 0,
+					"aria-label": s
+				}, r.a.createElement(x, {
 					onClose: i
 				}), r.a.createElement("div", {
-					className: Object(o.a)(x.a.bodyContainer)
+					className: Object(o.a)(b.a.bodyContainer)
 				}, r.a.createElement("div", {
-					className: Object(o.a)(x.a.bodyContent)
+					className: Object(o.a)(b.a.bodyContent)
 				}, r.a.createElement("h3", {
-					className: x.a.title
+					className: b.a.title
 				}, s), r.a.createElement("p", null, n)), null != m ? r.a.createElement("div", {
-					className: Object(o.a)(x.a.thumbnailContainer)
+					className: Object(o.a)(b.a.thumbnailContainer)
 				}, r.a.createElement("img", {
 					src: m
 				})) : null), null != c ? r.a.createElement("div", {
-					className: Object(o.a)(x.a.ctaContainer)
+					className: Object(o.a)(b.a.ctaContainer)
 				}, r.a.createElement("a", {
 					onClick: l,
-					className: Object(o.a)(x.a.ctaText)
+					className: Object(o.a)(b.a.ctaText),
+					tabIndex: 0,
+					"aria-label": c
 				}, c, r.a.createElement(a.a, {
-					className: Object(o.a)(x.a.ctaCaret),
+					className: Object(o.a)(b.a.ctaCaret),
 					height: "20px"
 				}))) : null)
 			}
@@ -196,4 +200,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeedAnnouncementCard.e38d32e5ccd0901160ac.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeedAnnouncementCard.055adbf658291d7999ee.js.map

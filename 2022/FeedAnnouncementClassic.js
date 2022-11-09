@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeedAnnouncementClassic.5ea2d2a865eed57bd372.js
-// Retrieved at 11/8/2022, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeedAnnouncementClassic.8a3aab1a5739e7ffa41f.js
+// Retrieved at 11/8/2022, 7:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeedAnnouncementClassic"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, a) {
@@ -150,6 +150,8 @@
 						[x.a.isCompact]: j
 					}),
 					role: "button",
+					tabIndex: 0,
+					"aria-label": o,
 					onClick: v
 				}, i.a.createElement("div", {
 					className: Object(c.a)({
@@ -200,7 +202,9 @@
 					className: Object(c.a)(x.a.ctaContainer)
 				}, i.a.createElement("a", {
 					onClick: v,
-					className: Object(c.a)(x.a.ctaText)
+					className: Object(c.a)(x.a.ctaText),
+					tabIndex: 0,
+					"aria-label": r
 				}, r, i.a.createElement(n.a, {
 					className: Object(c.a)(x.a.ctaCaret),
 					height: "20px"
@@ -291,4 +295,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeedAnnouncementClassic.5ea2d2a865eed57bd372.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeedAnnouncementClassic.8a3aab1a5739e7ffa41f.js.map
