@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.1a43cb85efafa88a9e2c.js
-// Retrieved at 11/9/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.80b5b033d7909e368061.js
+// Retrieved at 11/9/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -7695,14 +7695,18 @@
 		},
 		"./src/reddit/helpers/trackers/communityPoints.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "d", (function() {
+			n.d(t, "f", (function() {
 				return r
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "e", (function() {
 				return a
 			})), n.d(t, "b", (function() {
 				return i
 			})), n.d(t, "a", (function() {
 				return l
+			})), n.d(t, "c", (function() {
+				return c
+			})), n.d(t, "d", (function() {
+				return d
 			}));
 			var s = n("./src/reddit/selectors/telemetry.ts");
 			const o = e => t => ({
@@ -7721,6 +7725,24 @@
 					action: "click",
 					noun: "cancel_membership_with_points",
 					subreddit: Object(s.lb)(t, e)
+				}),
+				c = e => t => ({
+					...Object(s.o)(t),
+					source: "meta",
+					action: "generate",
+					noun: "broken_wallet",
+					marketplace: {
+						walletAddress: e
+					}
+				}),
+				d = e => t => ({
+					...Object(s.o)(t),
+					source: "meta",
+					action: "generate",
+					noun: "unexpected_wallet",
+					marketplace: {
+						walletAddress: e
+					}
 				})
 		},
 		"./src/reddit/helpers/trackers/followers.ts": function(e, t, n) {
@@ -12796,4 +12818,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.1a43cb85efafa88a9e2c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.80b5b033d7909e368061.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.9eae008534110c99a1bf.js
-// Retrieved at 11/9/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.d1839aef4077cce6ec85.js
+// Retrieved at 11/9/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-ClaimPointsBanner"], {
 		"./src/lib/constants/specialMembership.ts": function(A, e, t) {
@@ -321,7 +321,7 @@
 					super(...arguments), this.state = {
 						modalVisible: !1
 					}, this.imageRef = null, this.hasFiredViewEvent = !1, this.showModal = () => {
-						this.props.sendEvent(Object(b.c)()), this.setState({
+						this.props.sendEvent(Object(b.e)()), this.setState({
 							modalVisible: !0
 						})
 					}, this.dismissBanner = () => {
@@ -355,7 +355,7 @@
 						tokenName: d
 					} = this.props;
 					if (!d || !A || !n || t) return null;
-					this.hasFiredViewEvent || (this.props.sendEvent(Object(b.d)()), this.hasFiredViewEvent = !0);
+					this.hasFiredViewEvent || (this.props.sendEvent(Object(b.f)()), this.hasFiredViewEvent = !0);
 					const c = r && r.claimCta || {
 							title: "",
 							body: ""
@@ -794,14 +794,18 @@
 		},
 		"./src/reddit/helpers/trackers/communityPoints.ts": function(A, e, t) {
 			"use strict";
-			t.d(e, "d", (function() {
+			t.d(e, "f", (function() {
 				return i
-			})), t.d(e, "c", (function() {
+			})), t.d(e, "e", (function() {
 				return s
 			})), t.d(e, "b", (function() {
 				return a
 			})), t.d(e, "a", (function() {
 				return d
+			})), t.d(e, "c", (function() {
+				return o
+			})), t.d(e, "d", (function() {
+				return c
 			}));
 			var n = t("./src/reddit/selectors/telemetry.ts");
 			const r = A => e => ({
@@ -820,6 +824,24 @@
 					action: "click",
 					noun: "cancel_membership_with_points",
 					subreddit: Object(n.lb)(e, A)
+				}),
+				o = A => e => ({
+					...Object(n.o)(e),
+					source: "meta",
+					action: "generate",
+					noun: "broken_wallet",
+					marketplace: {
+						walletAddress: A
+					}
+				}),
+				c = A => e => ({
+					...Object(n.o)(e),
+					source: "meta",
+					action: "generate",
+					noun: "unexpected_wallet",
+					marketplace: {
+						walletAddress: A
+					}
 				})
 		},
 		"./src/reddit/models/Badge/managementPage.ts": function(A, e, t) {
@@ -1653,4 +1675,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.9eae008534110c99a1bf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.d1839aef4077cce6ec85.js.map

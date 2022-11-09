@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.8a0b6fc3c48e856bca65.js
-// Retrieved at 11/9/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.0c1fcec8523332cfe29a.js
+// Retrieved at 11/9/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1551,7 +1551,7 @@
 						MarketplaceClaimModal: "45675dd873dd23186ecb",
 						SnoovatarModal: "ebaf7c0254216cf6cd47",
 						"vendors~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-~339111b0": "003c5a051b1aaec502e5",
-						"reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67": "abed3c7ce172fa25afff",
+						"reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67": "ad67fadaf017d0505236",
 						"reddit-components-Governance-TransactionModals-BurnPointsModal": "010af9e0d98d76ac4460",
 						"reddit-components-Governance-TransactionModals-ConvertToCoinsModal": "13712cc874443283544a",
 						"vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0": "201e0a53b4d00907b96f",
@@ -1575,7 +1575,7 @@
 						ModerationPages: "a0f01493e782776442c4",
 						"vendors~ModStatsChart~Settings~ViewsTooltip": "ca7c845d62fd39d960b6",
 						"vendors~Settings": "86b1cfc53320ea8eef91",
-						Settings: "1a43cb85efafa88a9e2c",
+						Settings: "80b5b033d7909e368061",
 						"vendors~ExportTheme~ImportTheme": "4e4dc70c7eeb3e02be12",
 						ExportTheme: "fba93d918b220f151980",
 						ImportTheme: "ffa092f19a1ee16c7439",
@@ -1703,7 +1703,7 @@
 						SubredditPremiumNewUserWelcome: "b2edfeb5926ee58fb23d",
 						"reddit-components-Econ-Prediction-CreatingTournamentBanner": "6cca4a0e599b67308232",
 						"reddit-components-Economics-SubredditPremium-LFGBanner": "c4e1f2459aaa54ef2094",
-						"reddit-components-Governance-ClaimPointsBanner": "9eae008534110c99a1bf",
+						"reddit-components-Governance-ClaimPointsBanner": "d1839aef4077cce6ec85",
 						"reddit-components-LayerEmbed": "b66acfe5da5e179a7628",
 						TimezoneList: "57988e1ba10253d58674",
 						"reddit-components-ScheduledPost-PostSchedulePickerModal": "53ff6ddbadccff5e4702",
@@ -1814,4 +1814,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.8a0b6fc3c48e856bca65.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.0c1fcec8523332cfe29a.js.map
