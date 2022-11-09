@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.0f0fd8c3772ebc96c732.js
-// Retrieved at 11/9/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.8579bd7b601c5a27810b.js
+// Retrieved at 11/9/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -9381,10 +9381,10 @@
 						let {
 							gqlContext: i
 						} = o;
-						if ((await u(i(), t)).ok) s && s(), g(n, I({
+						if ((await u(i(), t)).ok) s && s(), e(g(n, I({
 							subredditId: t,
 							subredditName: n
-						}));
+						})));
 						else {
 							e(h(`error-muting-${t}`))
 						}
@@ -9400,10 +9400,10 @@
 						let {
 							gqlContext: i
 						} = o;
-						if ((await m(i(), t)).ok) s && s(), _(n, k({
+						if ((await m(i(), t)).ok) s && s(), e(_(n, k({
 							subredditId: t,
 							subredditName: n
-						}));
+						})));
 						else {
 							e(h(`error-muting-${t}`))
 						}
@@ -46480,4 +46480,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.0f0fd8c3772ebc96c732.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.8579bd7b601c5a27810b.js.map

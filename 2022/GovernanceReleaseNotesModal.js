@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.5a764e7d80037c5e046e.js
-// Retrieved at 11/9/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.5a98b990800192d7c10e.js
+// Retrieved at 11/9/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -632,10 +632,10 @@
 						let {
 							gqlContext: o
 						} = s;
-						if ((await u(o(), t)).ok) r && r(), g(n, I({
+						if ((await u(o(), t)).ok) r && r(), e(g(n, I({
 							subredditId: t,
 							subredditName: n
-						}));
+						})));
 						else {
 							e(v(`error-muting-${t}`))
 						}
@@ -651,10 +651,10 @@
 						let {
 							gqlContext: o
 						} = s;
-						if ((await m(o(), t)).ok) r && r(), x(n, S({
+						if ((await m(o(), t)).ok) r && r(), e(x(n, S({
 							subredditId: t,
 							subredditName: n
-						}));
+						})));
 						else {
 							e(v(`error-muting-${t}`))
 						}
@@ -1448,4 +1448,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.5a764e7d80037c5e046e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.5a98b990800192d7c10e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.8d6bb8a55c39ef028658.js
-// Retrieved at 11/9/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.93c511c230b4125d3c9f.js
+// Retrieved at 11/9/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -4097,10 +4097,10 @@
 						let {
 							gqlContext: i
 						} = s;
-						if ((await u(i(), t)).ok) o && o(), v(n, S({
+						if ((await u(i(), t)).ok) o && o(), e(v(n, S({
 							subredditId: t,
 							subredditName: n
-						}));
+						})));
 						else {
 							e(g(`error-muting-${t}`))
 						}
@@ -4116,10 +4116,10 @@
 						let {
 							gqlContext: i
 						} = s;
-						if ((await m(i(), t)).ok) o && o(), E(n, j({
+						if ((await m(i(), t)).ok) o && o(), e(E(n, j({
 							subredditId: t,
 							subredditName: n
-						}));
+						})));
 						else {
 							e(g(`error-muting-${t}`))
 						}
@@ -39381,4 +39381,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.8d6bb8a55c39ef028658.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.93c511c230b4125d3c9f.js.map

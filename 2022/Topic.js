@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.34cd5681614affa7816b.js
-// Retrieved at 11/9/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.3ced7fe7b348a651256e.js
+// Retrieved at 11/9/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -533,10 +533,10 @@
 						let {
 							gqlContext: o
 						} = i;
-						if ((await u(o(), t)).ok) r && r(), x(s, k({
+						if ((await u(o(), t)).ok) r && r(), e(x(s, k({
 							subredditId: t,
 							subredditName: s
-						}));
+						})));
 						else {
 							e(f(`error-muting-${t}`))
 						}
@@ -552,10 +552,10 @@
 						let {
 							gqlContext: o
 						} = i;
-						if ((await m(o(), t)).ok) r && r(), v(s, C({
+						if ((await m(o(), t)).ok) r && r(), e(v(s, C({
 							subredditId: t,
 							subredditName: s
-						}));
+						})));
 						else {
 							e(f(`error-muting-${t}`))
 						}
@@ -3211,4 +3211,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.34cd5681614affa7816b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.3ced7fe7b348a651256e.js.map

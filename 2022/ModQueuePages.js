@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.f9b93def65a41b64b533.js
-// Retrieved at 11/9/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.f33fd2a5316567a0c688.js
+// Retrieved at 11/9/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2176,10 +2176,10 @@
 						let {
 							gqlContext: i
 						} = o;
-						if ((await m(i(), t)).ok) s && s(), v(n, S({
+						if ((await m(i(), t)).ok) s && s(), e(v(n, S({
 							subredditId: t,
 							subredditName: n
-						}));
+						})));
 						else {
 							e(x(`error-muting-${t}`))
 						}
@@ -2195,10 +2195,10 @@
 						let {
 							gqlContext: i
 						} = o;
-						if ((await u(i(), t)).ok) s && s(), g(n, y({
+						if ((await u(i(), t)).ok) s && s(), e(g(n, y({
 							subredditId: t,
 							subredditName: n
-						}));
+						})));
 						else {
 							e(x(`error-muting-${t}`))
 						}
@@ -8386,4 +8386,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.f9b93def65a41b64b533.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.f33fd2a5316567a0c688.js.map

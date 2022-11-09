@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.0985b24cb769a3406d94.js
-// Retrieved at 11/9/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.7932c5829060a932c4ac.js
+// Retrieved at 11/9/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -412,10 +412,10 @@
 						let {
 							gqlContext: o
 						} = r;
-						if ((await m(o(), t)).ok) n && n(), x(s, S({
+						if ((await m(o(), t)).ok) n && n(), e(x(s, S({
 							subredditId: t,
 							subredditName: s
-						}));
+						})));
 						else {
 							e(g(`error-muting-${t}`))
 						}
@@ -431,10 +431,10 @@
 						let {
 							gqlContext: o
 						} = r;
-						if ((await u(o(), t)).ok) n && n(), v(s, j({
+						if ((await u(o(), t)).ok) n && n(), e(v(s, j({
 							subredditId: t,
 							subredditName: s
-						}));
+						})));
 						else {
 							e(g(`error-muting-${t}`))
 						}
@@ -6733,4 +6733,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.0985b24cb769a3406d94.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.7932c5829060a932c4ac.js.map

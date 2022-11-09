@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.2128dc80b92bd3b16b3a.js
-// Retrieved at 11/9/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.2d38f85ab8b5cbec03bd.js
+// Retrieved at 11/9/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit"], {
 		"./src/reddit/actions/subreddit/muting.ts": function(e, t, n) {
@@ -95,10 +95,10 @@
 						let {
 							gqlContext: a
 						} = o;
-						if ((await u(a(), t)).ok) r && r(), w(n, N({
+						if ((await u(a(), t)).ok) r && r(), e(w(n, N({
 							subredditId: t,
 							subredditName: n
-						}));
+						})));
 						else {
 							e(S(`error-muting-${t}`))
 						}
@@ -114,10 +114,10 @@
 						let {
 							gqlContext: a
 						} = o;
-						if ((await b(a(), t)).ok) r && r(), k(n, E({
+						if ((await b(a(), t)).ok) r && r(), e(k(n, E({
 							subredditId: t,
 							subredditName: n
-						}));
+						})));
 						else {
 							e(S(`error-muting-${t}`))
 						}
@@ -2490,4 +2490,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.2128dc80b92bd3b16b3a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.2d38f85ab8b5cbec03bd.js.map

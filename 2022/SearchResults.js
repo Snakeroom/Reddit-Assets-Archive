@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.94874fb1fee0ad888c2e.js
-// Retrieved at 11/9/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.3d390a367cbcb5856b7c.js
+// Retrieved at 11/9/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -612,10 +612,10 @@
 						let {
 							gqlContext: i
 						} = o;
-						if ((await m(i(), t)).ok) n && n(), O(s, S({
+						if ((await m(i(), t)).ok) n && n(), e(O(s, S({
 							subredditId: t,
 							subredditName: s
-						}));
+						})));
 						else {
 							e(f(`error-muting-${t}`))
 						}
@@ -631,10 +631,10 @@
 						let {
 							gqlContext: i
 						} = o;
-						if ((await u(i(), t)).ok) n && n(), v(s, k({
+						if ((await u(i(), t)).ok) n && n(), e(v(s, k({
 							subredditId: t,
 							subredditName: s
-						}));
+						})));
 						else {
 							e(f(`error-muting-${t}`))
 						}
@@ -9502,4 +9502,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.94874fb1fee0ad888c2e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.3d390a367cbcb5856b7c.js.map
