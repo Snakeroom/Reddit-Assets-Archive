@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.e9b39d0631d8a610d07e.js
-// Retrieved at 11/9/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.6d361c493aa2ce9dd21e.js
+// Retrieved at 11/10/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1806,19 +1806,21 @@
 						p = null === (i = null === (a = Object($.b)(n())) || void 0 === a ? void 0 : a.routeMatch) || void 0 === i ? void 0 : i.route.chunk,
 						h = Object(b.a)(r.apiContext(), e, t, s, Object(W.a)(c), Je(c)),
 						v = l && m && Object(S.d)(r.gqlContext(), Object(G.e)(m)) || null,
-						f = Object(be.i)(() => g(r.gqlContext(), {
-							postId: e
+						f = Object(rt.c)(c),
+						O = Object(be.i)(() => g(r.gqlContext(), {
+							postId: e,
+							includeSubredditRankings: f
 						}), {
 							name: "fetchCommentsPageExtra",
 							isLoggedIn: l,
 							page: p
 						}),
-						[O, w, _] = await Promise.all([h, v, f]);
-					if (O.ok) {
-						if (St(w)) {
+						[w, _, C] = await Promise.all([h, v, O]);
+					if (w.ok) {
+						if (St(_)) {
 							const {
 								data: e
-							} = w.body, t = {
+							} = _.body, t = {
 								karma: {
 									...S.a
 								}
@@ -1830,24 +1832,36 @@
 									...s
 								}
 							}
-							O.body && O.body.account && Object.assign(O.body.account, t)
+							w.body && w.body.account && Object.assign(w.body.account, t)
 						}
-						if (St(_)) {
+						if (St(C)) {
 							const {
 								data: t
-							} = _.body;
-							O.body.posts[e] = {
-								...O.body.posts[e],
-								...t.postInfoById
+							} = C.body;
+							if (w.body.posts[e] = {
+									...w.body.posts[e],
+									...t.postInfoById
+								}, t.postInfoById && "SubredditPost" === t.postInfoById.__typename) {
+								const {
+									id: e,
+									directoryRankings: s
+								} = t.postInfoById.subreddit;
+								o(Object(P.c)({
+									subredditAboutInfo: {
+										[e]: {
+											directoryRankings: s
+										}
+									}
+								}))
 							}
 						}
-						const t = Object(F.a)(O.body, e, c);
+						const t = Object(F.a)(w.body, e, c);
 						o(vt({
 							key: d,
 							postId: e,
 							meta: c.meta,
 							shouldCollapse: t,
-							...O.body
+							...w.body
 						})), o(xt({
 							key: d
 						}));
@@ -1857,15 +1871,15 @@
 							});
 						s && "subreddit" === s.belongsTo.type && r && Object(se.a)(c, {
 							subredditId: r.id
-						}) && o(Object(u.h)(r.name, r.id)), s && "subreddit" === s.belongsTo.type && O.body.comments && await o(Object(y.a)({
-							commentIds: Object.keys(O.body.comments),
+						}) && o(Object(u.h)(r.name, r.id)), s && "subreddit" === s.belongsTo.type && w.body.comments && await o(Object(y.a)({
+							commentIds: Object.keys(w.body.comments),
 							postIds: [s.id],
 							subredditId: s.belongsTo.id
 						}))
 					} else o(gt({
-						error: O.error,
+						error: w.error,
 						key: d,
-						...O.body
+						...w.body
 					}))
 				}
 		},
@@ -8054,4 +8068,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.e9b39d0631d8a610d07e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.6d361c493aa2ce9dd21e.js.map

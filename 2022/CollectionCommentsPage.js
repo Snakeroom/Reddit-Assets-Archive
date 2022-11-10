@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.89f41b25d9180264e7b4.js
-// Retrieved at 11/9/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.f3eb39dbea1532ae7699.js
+// Retrieved at 11/10/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -2002,19 +2002,21 @@
 						p = null === (a = null === (i = Object($.b)(r())) || void 0 === i ? void 0 : i.routeMatch) || void 0 === a ? void 0 : a.route.chunk,
 						h = Object(b.a)(o.apiContext(), e, t, s, Object(q.a)(c), Ke(c)),
 						g = l && m && Object(v.d)(o.gqlContext(), Object(H.e)(m)) || null,
-						x = Object(be.i)(() => f(o.gqlContext(), {
-							postId: e
+						x = Object(ot.c)(c),
+						C = Object(be.i)(() => f(o.gqlContext(), {
+							postId: e,
+							includeSubredditRankings: x
 						}), {
 							name: "fetchCommentsPageExtra",
 							isLoggedIn: l,
 							page: p
 						}),
-						[C, y, O] = await Promise.all([h, g, x]);
-					if (C.ok) {
-						if (vt(y)) {
+						[y, O, j] = await Promise.all([h, g, C]);
+					if (y.ok) {
+						if (vt(O)) {
 							const {
 								data: e
-							} = y.body, t = {
+							} = O.body, t = {
 								karma: {
 									...v.a
 								}
@@ -2026,24 +2028,36 @@
 									...s
 								}
 							}
-							C.body && C.body.account && Object.assign(C.body.account, t)
+							y.body && y.body.account && Object.assign(y.body.account, t)
 						}
-						if (vt(O)) {
+						if (vt(j)) {
 							const {
 								data: t
-							} = O.body;
-							C.body.posts[e] = {
-								...C.body.posts[e],
-								...t.postInfoById
+							} = j.body;
+							if (y.body.posts[e] = {
+									...y.body.posts[e],
+									...t.postInfoById
+								}, t.postInfoById && "SubredditPost" === t.postInfoById.__typename) {
+								const {
+									id: e,
+									directoryRankings: s
+								} = t.postInfoById.subreddit;
+								n(Object(N.c)({
+									subredditAboutInfo: {
+										[e]: {
+											directoryRankings: s
+										}
+									}
+								}))
 							}
 						}
-						const t = Object(B.a)(C.body, e, c);
+						const t = Object(B.a)(y.body, e, c);
 						n(gt({
 							key: d,
 							postId: e,
 							meta: c.meta,
 							shouldCollapse: t,
-							...C.body
+							...y.body
 						})), n(kt({
 							key: d
 						}));
@@ -2053,15 +2067,15 @@
 							});
 						s && "subreddit" === s.belongsTo.type && o && Object(se.a)(c, {
 							subredditId: o.id
-						}) && n(Object(u.h)(o.name, o.id)), s && "subreddit" === s.belongsTo.type && C.body.comments && await n(Object(_.a)({
-							commentIds: Object.keys(C.body.comments),
+						}) && n(Object(u.h)(o.name, o.id)), s && "subreddit" === s.belongsTo.type && y.body.comments && await n(Object(_.a)({
+							commentIds: Object.keys(y.body.comments),
 							postIds: [s.id],
 							subredditId: s.belongsTo.id
 						}))
 					} else n(ft({
-						error: C.error,
+						error: y.error,
 						key: d,
-						...C.body
+						...y.body
 					}))
 				}
 		},
@@ -16561,4 +16575,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.89f41b25d9180264e7b4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.f3eb39dbea1532ae7699.js.map

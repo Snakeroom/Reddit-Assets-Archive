@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.13ccd846f62c40283cfb.js
-// Retrieved at 11/9/2022, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.80d88d461cc778028e99.js
+// Retrieved at 11/10/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"], {
 		"./src/lib/name/index.ts": function(e, t, r) {
@@ -3069,7 +3069,9 @@
 						const e = (null === (y = null === (j = null == yt ? void 0 : yt.subredditAboutInfo) || void 0 === j ? void 0 : j[wt]) || void 0 === y ? void 0 : y.isEligibleForContentBlocking) || (null === (T = null == vt ? void 0 : vt.subredditInfoByName) || void 0 === T ? void 0 : T.isEligibleForContentBlocking);
 						yt.subredditAboutInfo[wt].isEligibleForContentBlocking = e;
 						const t = (null === (D = null === (L = null == yt ? void 0 : yt.subredditAboutInfo) || void 0 === L ? void 0 : L[wt]) || void 0 === D ? void 0 : D.isMediaInCommentsSettingShown) || (null === (U = null == vt ? void 0 : vt.subredditInfoByName) || void 0 === U ? void 0 : U.isMediaInCommentsSettingShown);
-						yt.subredditAboutInfo[wt].isMediaInCommentsSettingShown = t, yt.subredditAboutInfo[wt].directoryRankings = null === (F = null == vt ? void 0 : vt.subredditInfoByName) || void 0 === F ? void 0 : F.directoryRankings
+						yt.subredditAboutInfo[wt].isMediaInCommentsSettingShown = t;
+						const r = Ye ? null : null === (F = null == vt ? void 0 : vt.subredditInfoByName) || void 0 === F ? void 0 : F.directoryRankings;
+						r && (yt.subredditAboutInfo[wt].directoryRankings = r)
 					}
 					if (vt) {
 						const e = null === (J = null === (q = vt.identity) || void 0 === q ? void 0 : q.redditor) || void 0 === J ? void 0 : J.karma,
@@ -6738,9 +6740,9 @@
 		"./src/reddit/endpoints/page/subredditPage.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "c", (function() {
-				return T
-			})), r.d(t, "b", (function() {
 				return S
+			})), r.d(t, "b", (function() {
+				return E
 			}));
 			var s = r("./src/config.ts"),
 				n = r("./src/lib/constants/index.ts"),
@@ -6757,70 +6759,72 @@
 				f = r("./src/reddit/models/RichTextJson/addRTJParam.ts"),
 				O = r("./src/reddit/models/Subreddit/index.ts"),
 				g = r("./src/reddit/selectors/adsSignals.ts"),
-				j = r("./src/reddit/selectors/experiments/devPlatform.ts"),
-				_ = r("./src/reddit/selectors/experiments/econ/index.ts"),
-				I = r("./src/reddit/selectors/platform.ts"),
-				h = r("./src/reddit/selectors/subreddit.ts"),
-				v = r("./src/reddit/selectors/user.ts"),
-				y = r("./src/redditGQL/operations/SubredditPage.json");
-			const T = (e, t, r, s) => {
+				j = r("./src/reddit/selectors/experiments/communityDirectoryBacklinks/index.ts"),
+				_ = r("./src/reddit/selectors/experiments/devPlatform.ts"),
+				I = r("./src/reddit/selectors/experiments/econ/index.ts"),
+				h = r("./src/reddit/selectors/platform.ts"),
+				v = r("./src/reddit/selectors/subreddit.ts"),
+				y = r("./src/reddit/selectors/user.ts"),
+				T = r("./src/redditGQL/operations/SubredditPage.json");
+			const S = (e, t, r, s) => {
 					var n, d, c, a;
 					const {
 						after: b,
 						geo_filter: m,
 						isMobile: f,
 						layout: O,
-						limit: y,
-						recentPostIds: T,
-						sort: S,
-						t: E
-					} = r, x = Object(v.ab)(e), C = Object(I.r)(e), w = Object(o.a)(t), A = Object(i.a)(t), N = Object(h.X)(e, {
-						subredditId: Object(h.I)(e, t)
-					}).length > 0, R = (null === (n = e.user.account) || void 0 === n ? void 0 : n.username) || (null === (d = e.user.account) || void 0 === d ? void 0 : d.displayText), k = Object(v.p)(e), L = Object(v.ob)(e), {
-						adsSeenCount: P,
-						totalPostsSeenCount: D,
-						sessionStartTime: G
-					} = Object(g.a)(e), U = Object(_.d)(e), F = Object(j.a)(e), q = {
+						limit: T,
+						recentPostIds: S,
+						sort: E,
+						t: x
+					} = r, C = Object(y.ab)(e), w = Object(h.r)(e), A = Object(o.a)(t), N = Object(i.a)(t), R = Object(v.X)(e, {
+						subredditId: Object(v.I)(e, t)
+					}).length > 0, k = (null === (n = e.user.account) || void 0 === n ? void 0 : n.username) || (null === (d = e.user.account) || void 0 === d ? void 0 : d.displayText), L = Object(y.p)(e), P = Object(y.ob)(e), {
+						adsSeenCount: D,
+						totalPostsSeenCount: G,
+						sessionStartTime: U
+					} = Object(g.a)(e), F = Object(I.d)(e), q = Object(_.a)(e), M = Object(j.c)(e), B = {
 						name: t,
-						includeIdentity: x && !e.user.account,
+						includeIdentity: C && !e.user.account,
 						adContext: {
 							layout: O ? O.toUpperCase() : u.a.Card,
 							clientSignalSessionData: {
-								adsSeenCount: P,
-								totalPostsSeenCount: D,
-								sessionStartTime: G
+								adsSeenCount: D,
+								totalPostsSeenCount: G,
+								sessionStartTime: U
 							}
 						},
-						isFake: A,
-						includeAchievementFlairs: s && !A,
-						includeAppliedFlair: !A && x && !!R && s,
-						includeCustomEmojis: s && !A && U,
-						includeDevPlatformMetadata: F,
-						includePowerups: s && !A,
-						includeQuestions: s && x && !A,
-						includeRecents: A && T && T.length > 0 || !1,
-						includeRedditorKarma: s && x && !(null === (a = null === (c = e.user.account) || void 0 === c ? void 0 : c.karma) || void 0 === a ? void 0 : a.total),
-						includeRules: s && !A && !N,
-						includeSubredditLinks: s && !A && !x,
-						includeTopicLinks: s && !A && !x,
-						includeTrending: A,
-						isAdHocMulti: w,
+						isFake: N,
+						includeAchievementFlairs: s && !N,
+						includeAppliedFlair: !N && C && !!k && s,
+						includeCustomEmojis: s && !N && F,
+						includeDevPlatformMetadata: q,
+						includePowerups: s && !N,
+						includeQuestions: s && C && !N,
+						includeRecents: N && S && S.length > 0 || !1,
+						includeRedditorKarma: s && C && !(null === (a = null === (c = e.user.account) || void 0 === c ? void 0 : c.karma) || void 0 === a ? void 0 : a.total),
+						includeRules: s && !N && !R,
+						includeSubredditLinks: s && !N && !C,
+						includeTopicLinks: s && !N && !C,
+						includeTrending: N,
+						includeSubredditRankings: M,
+						isAdHocMulti: A,
 						isAll: t === l.d.All,
-						isLoggedOutGatedOptedin: k,
-						isLoggedOutQuarantineOptedin: L,
+						isLoggedOutGatedOptedin: L,
+						isLoggedOutQuarantineOptedin: P,
 						isPopular: t === l.d.Popular,
-						recentPostIds: T || [],
-						subredditNames: w ? t.split("+") : [],
-						username: x && R && s ? R : ""
+						recentPostIds: S || [],
+						subredditNames: A ? t.split("+") : [],
+						username: C && k && s ? k : ""
 					};
-					return S && (q.sort = S.toUpperCase()), E && (q.range = E.toUpperCase()), f ? q.pageSize = Object(p.a)(O) : y && (q.pageSize = y), C && C.ad && (q.forceAds = {
-						ad: C.ad
-					}), (C && C.geo_filter || m) && (q.region = C && C.geo_filter || m), b && (q.after = btoa(b)), q
+					return E && (B.sort = E.toUpperCase()), x && (B.range = x.toUpperCase()), f ? B.pageSize = Object(p.a)(O) : T && (B.pageSize = T), w && w.ad && (B.forceAds = {
+						ad: w.ad
+					}), (w && w.geo_filter || m) && (B.region = w && w.geo_filter || m), b && (B.after = btoa(b)), B
 				},
-				S = async (e, t, r) => {
+				E = async (e, t, r) => {
 					const s = Date.now(),
 						o = await ((e, t) => Object(c.a)(e, {
-							...y,
+							...T,
 							variables: t
 						}))(e, t),
 						i = Date.now();
@@ -6843,17 +6847,17 @@
 					}), {
 						...o,
 						ok: !!d.data.subredditInfoByName && !Object(O.k)(d.data.subredditInfoByName),
-						status: E(d.data),
+						status: x(d.data),
 						body: l
 					}
-				}, E = e => {
+				}, x = e => {
 					if (!e.subredditInfoByName) return 404;
 					if (Object(O.k)(e.subredditInfoByName)) {
 						if (e.subredditInfoByName.forbiddenReason === O.d.Banned) return 404;
 						if (e.subredditInfoByName.forbiddenReason === O.d.GoldOnly || e.subredditInfoByName.forbiddenReason === O.d.Private || e.subredditInfoByName.forbiddenReason === O.d.Quarantined || e.subredditInfoByName.forbiddenReason === O.d.Gated) return 403
 					}
 					return 200
-				}, x = e => {
+				}, C = e => {
 					let {
 						recentPostIds: t,
 						...r
@@ -6866,7 +6870,7 @@
 			t.a = (e, t, r) => Object(d.a)(e, {
 				endpoint: Object(b.a)(Object(f.a)(`${s.a.gatewayUrl}/desktopapi/v1/subreddits/${t}`)),
 				method: n.ob.GET,
-				data: r && x(r) || {},
+				data: r && C(r) || {},
 				traceRequestName: "get_subreddit_page"
 			})
 		},
@@ -12142,7 +12146,7 @@
 			e.exports = JSON.parse('{"id":"29aee4089528"}')
 		},
 		"./src/redditGQL/operations/SubredditPage.json": function(e) {
-			e.exports = JSON.parse('{"id":"64479ef6d5de"}')
+			e.exports = JSON.parse('{"id":"9a90bdf112ec"}')
 		},
 		"./src/redditGQL/operations/SubredditPageExtra.json": function(e) {
 			e.exports = JSON.parse('{"id":"99a33079240e"}')
@@ -12203,4 +12207,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.13ccd846f62c40283cfb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.80d88d461cc778028e99.js.map

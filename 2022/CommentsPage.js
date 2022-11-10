@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.8579bd7b601c5a27810b.js
-// Retrieved at 11/9/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.3852c5e7d1f66da1c723.js
+// Retrieved at 11/10/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -6803,19 +6803,21 @@
 						p = null === (a = null === (i = Object($.b)(r())) || void 0 === i ? void 0 : i.routeMatch) || void 0 === a ? void 0 : a.route.chunk,
 						f = Object(b.a)(o.apiContext(), e, t, n, Object(K.a)(d), ze(d)),
 						C = l && u && Object(_.d)(o.gqlContext(), Object(H.e)(u)) || null,
-						g = Object(be.i)(() => h(o.gqlContext(), {
-							postId: e
+						g = Object(ot.c)(d),
+						v = Object(be.i)(() => h(o.gqlContext(), {
+							postId: e,
+							includeSubredditRankings: g
 						}), {
 							name: "fetchCommentsPageExtra",
 							isLoggedIn: l,
 							page: p
 						}),
-						[v, x, O] = await Promise.all([f, C, g]);
-					if (v.ok) {
-						if (_t(x)) {
+						[x, O, E] = await Promise.all([f, C, v]);
+					if (x.ok) {
+						if (_t(O)) {
 							const {
 								data: e
-							} = x.body, t = {
+							} = O.body, t = {
 								karma: {
 									..._.a
 								}
@@ -6827,24 +6829,36 @@
 									...n
 								}
 							}
-							v.body && v.body.account && Object.assign(v.body.account, t)
+							x.body && x.body.account && Object.assign(x.body.account, t)
 						}
-						if (_t(O)) {
+						if (_t(E)) {
 							const {
 								data: t
-							} = O.body;
-							v.body.posts[e] = {
-								...v.body.posts[e],
-								...t.postInfoById
+							} = E.body;
+							if (x.body.posts[e] = {
+									...x.body.posts[e],
+									...t.postInfoById
+								}, t.postInfoById && "SubredditPost" === t.postInfoById.__typename) {
+								const {
+									id: e,
+									directoryRankings: n
+								} = t.postInfoById.subreddit;
+								s(Object(L.c)({
+									subredditAboutInfo: {
+										[e]: {
+											directoryRankings: n
+										}
+									}
+								}))
 							}
 						}
-						const t = Object(F.a)(v.body, e, d);
+						const t = Object(F.a)(x.body, e, d);
 						s(Ct({
 							key: c,
 							postId: e,
 							meta: d.meta,
 							shouldCollapse: t,
-							...v.body
+							...x.body
 						})), s(kt({
 							key: c
 						}));
@@ -6854,15 +6868,15 @@
 							});
 						n && "subreddit" === n.belongsTo.type && o && Object(ne.a)(d, {
 							subredditId: o.id
-						}) && s(Object(m.h)(o.name, o.id)), n && "subreddit" === n.belongsTo.type && v.body.comments && await s(Object(y.a)({
-							commentIds: Object.keys(v.body.comments),
+						}) && s(Object(m.h)(o.name, o.id)), n && "subreddit" === n.belongsTo.type && x.body.comments && await s(Object(y.a)({
+							commentIds: Object.keys(x.body.comments),
 							postIds: [n.id],
 							subredditId: n.belongsTo.id
 						}))
 					} else s(ht({
-						error: v.error,
+						error: x.error,
 						key: c,
-						...v.body
+						...x.body
 					}))
 				}
 		},
@@ -46480,4 +46494,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.8579bd7b601c5a27810b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.3852c5e7d1f66da1c723.js.map
