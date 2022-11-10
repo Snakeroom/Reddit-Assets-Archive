@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.516cbd7e9cddf8cbb074.js
-// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.7b9e25fedcffa64bc107.js
+// Retrieved at 11/10/2022, 1:50:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-ContentControls"], {
 		"./node_modules/lodash/negate.js": function(e, t) {
@@ -1622,7 +1622,7 @@
 						if (a()(i) && a()(o)) return;
 						this.setState({
 							isSavePending: !0
-						}), a()(o) || t(Kt(o.hatefulContentThresholdAbuse, this.state.initialFormState.hatefulContentFilters.hatefulContentThresholdAbuse));
+						}), !a()(o) && o.hatefulContentThresholdAbuse && t(Kt(o.hatefulContentThresholdAbuse, this.state.initialFormState.hatefulContentFilters.hatefulContentThresholdAbuse));
 						const r = await this.props.onSave({
 							hatefulContentFilters: o,
 							postRequirements: i
@@ -1801,4 +1801,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.516cbd7e9cddf8cbb074.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.7b9e25fedcffa64bc107.js.map
