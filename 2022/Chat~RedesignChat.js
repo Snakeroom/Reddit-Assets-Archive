@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.dc4729c0f6ddadc48c0d.js
-// Retrieved at 11/9/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.d2761c95576b2e604301.js
+// Retrieved at 11/10/2022, 5:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -244,8 +244,8 @@
 						} = d;
 					if (!Object(D.i)(d, e) || !t) return;
 					if (!u) throw new S.a("session", u);
-					const h = Object(V.t)(d),
-						b = Object(V.v)(d),
+					const h = Object(V.w)(d),
+						b = Object(V.y)(d),
 						g = {
 							channelSendbirdId: e,
 							inviterUserId: t.id,
@@ -733,7 +733,7 @@
 				} = n;
 				const s = t(),
 					r = Object(p.o)(s),
-					i = Object(g.u)(s);
+					i = Object(g.x)(s);
 				r && (e(Object(l.V)()), await Promise.all([Object(h.m)(a(), r, i), f.a.setPushPreference(r, !0)]).then(() => {
 					e(Object(o.g)({
 						toast: u.a.MuteNotifications
@@ -750,7 +750,7 @@
 				} = n;
 				const s = t(),
 					r = Object(p.o)(s),
-					i = Object(g.u)(s);
+					i = Object(g.x)(s);
 				r && (e(Object(l.ib)()), await Promise.all([Object(h.o)(a(), r, i), f.a.setPushPreference(r, !1)]).then(() => {
 					e(Object(o.g)({
 						toast: u.a.UnmuteNotifications
@@ -1087,7 +1087,7 @@
 					const a = function(e) {
 						return Object.values(e.channels.liveChat.models).map(e => e.post.id)
 					}(t());
-					Object(i.b)(a, Object(r.r)(t()), Boolean(t().user.account), e, n)
+					Object(i.b)(a, Object(r.u)(t()), Boolean(t().user.account), e, n)
 				}
 		},
 		"./src/chat/actions/members.ts": function(e, t, n) {
@@ -3929,7 +3929,7 @@
 						return a && a.sender && (n || (null == a ? void 0 : a.messageData.type) !== d.c.TEXT) ? t === a.sender.userId ? l.fbt._("You:", null, {
 							hk: "wP43r"
 						}) : `${a.sender.nickname}:` : ""
-					})(e), g = Object(c.e)(b.n);
+					})(e), g = Object(c.e)(b.q);
 					if (o && (null == i ? void 0 : i.creationReason) === h.a.AWARDING) return s.a.createElement(s.a.Fragment, null, l.fbt._("Sent a note with an award", null, {
 						hk: "4FSnF0"
 					}));
@@ -4031,7 +4031,7 @@
 				const S = Object(c.e)(e => Object(C.w)(e, t)),
 					N = Object(c.e)(e => Object(C.l)(e, t)),
 					k = Object(c.e)(e => Object(C.N)(e, t)),
-					w = Object(c.e)(b.u),
+					w = Object(c.e)(b.x),
 					T = h === v.b.INVITED,
 					M = Object(a.useMemo)(() => T ? Object(j.channelAction)(t, v.a.VIEW_INVITE) : Object(j.channelUrl)(t), [T, t]),
 					L = Object(a.useMemo)(() => Object(j.getRedirectURL)(M), [M]),
@@ -4614,7 +4614,7 @@
 								category: "USER_IS_READING_POST"
 							}
 						}
-					}), [t]), m = Object(i.e)(H.r);
+					}), [t]), m = Object(i.e)(H.u);
 					if (Object(r.useEffect)(() => {
 							l(!0);
 							const e = t;
@@ -5947,7 +5947,7 @@
 					const n = Object(i.d)(),
 						a = Object(i.e)(e => Object(C.C)(e, t)),
 						c = Object(i.e)(C.M),
-						l = Object(i.e)(H.m),
+						l = Object(i.e)(H.p),
 						d = Object(i.e)(I.e),
 						u = Object(Dn.b)(Object(Hn.c)()),
 						h = {
@@ -6015,9 +6015,9 @@
 					hasUploadsToSubmit: (e, t) => Object(I.d)(e, t.channelId),
 					isFullSize: ht.h,
 					isChatContainerFocused: ht.c,
-					isImageRenderKillSwitchEnabled: e => Object(H.m)(e),
+					isImageRenderKillSwitchEnabled: e => Object(H.p)(e),
 					isChannelInPendingState: C.M,
-					isShortcutsSlashCommandEnabled: H.x
+					isShortcutsSlashCommandEnabled: H.A
 				});
 			class Qn extends r.PureComponent {
 				constructor(e) {
@@ -6729,7 +6729,7 @@
 				isRichUnitDataReceived: e => Object(Ha.c)(e),
 				isFullSize: ht.h,
 				showPrompt: wn.d,
-				isImageRenderKillSwitchEnabled: e => Object(H.m)(e),
+				isImageRenderKillSwitchEnabled: e => Object(H.p)(e),
 				isChannelInPendingState: C.M,
 				isBlockedUserMessageEnabled: H.d,
 				hasBlockedUsers: (e, t) => Object(C.G)(e, t.channel.channelId)
@@ -7549,15 +7549,15 @@
 				const c = Object(i.d)(),
 					[l, d] = Object(r.useState)(!1),
 					u = Object(i.e)(nc.a),
-					h = Object(i.e)(H.p);
+					h = Object(i.e)(H.s);
 				Object(r.useEffect)(() => {
 					d(!1)
 				}, [t]);
 				const m = Object(i.e)(e => Object(C.j)(e, t)),
 					b = Object(i.e)(e => Object(et.d)(e, t)),
 					p = Object(i.e)(e => Object(C.C)(e, t)),
-					g = Object(i.e)(H.t),
-					f = Object(i.e)(H.v),
+					g = Object(i.e)(H.w),
+					f = Object(i.e)(H.y),
 					O = Object(i.e)(H.d),
 					v = Object(i.e)(H.e),
 					E = g ? uc._("Block", null, {
@@ -7713,11 +7713,11 @@
 					container: ht.a,
 					userAccount: fa.e,
 					isSidebarVisible: Hc.b,
-					isImageRenderKillSwitchEnabled: e => Object(H.m)(e),
+					isImageRenderKillSwitchEnabled: e => Object(H.p)(e),
 					isChannelInPendingState: C.M,
 					queryParamsFromUrl: Bc.c,
-					isLiveChatInChatTabEnabled: e => Object(H.p)(e),
-					isLiveChatNuxVideoEnabled: H.q
+					isLiveChatInChatTabEnabled: e => Object(H.s)(e),
+					isLiveChatNuxVideoEnabled: H.t
 				}),
 				Wc = Object(i.b)(Gc, e => ({
 					fetchLiveChats: () => e(Object(a.fetchLiveChats)()),
@@ -8490,7 +8490,7 @@
 				IMAGE: lt
 			} = f.c, dt = () => {
 				const e = Object(r.d)();
-				return Object(r.e)(qe.s) ? c.a.createElement("div", {
+				return Object(r.e)(qe.v) ? c.a.createElement("div", {
 					className: Ye.a.ThemePrompt,
 					tabIndex: 0
 				}, c.a.createElement("button", {
@@ -8516,7 +8516,7 @@
 				} = e;
 				var E, j;
 				const _ = Object(l.b)(Object(Fe.h)(Boolean(h))),
-					C = Object(r.e)(e => Object(qe.m)(e)),
+					C = Object(r.e)(e => Object(qe.p)(e)),
 					I = Object(r.e)($e.a) === Je.a.SETTINGS;
 				return c.a.createElement("span", {
 					onMouseEnter: e => {
@@ -8578,7 +8578,7 @@
 					inPreview: b,
 					showUserPic: p,
 					withButton: g
-				} = e, O = Object(r.e)(e => Object(Qe.b)(e, h.messageData)), v = Object(r.e)(qe.j), E = Object(l.b)(Object(Fe.b)(n)), j = Object(l.b)(Object(Fe.d)()), _ = Object(l.b)(Object(Fe.e)(n)), C = Object(r.e)(e => Object(qe.m)(e)), [y, x] = Object(s.useState)(), S = Object(s.useRef)(y);
+				} = e, O = Object(r.e)(e => Object(Qe.b)(e, h.messageData)), v = Object(r.e)(qe.j), E = Object(l.b)(Object(Fe.b)(n)), j = Object(l.b)(Object(Fe.d)()), _ = Object(l.b)(Object(Fe.e)(n)), C = Object(r.e)(e => Object(qe.p)(e)), [y, x] = Object(s.useState)(), S = Object(s.useRef)(y);
 				if (Object(s.useEffect)(() => (S.current = y, clearTimeout(Number(S.current))), [y]), !h) return null;
 				const {
 					type: N,
@@ -10196,9 +10196,9 @@
 						return Boolean(n && Object(le.N)(e, n))
 					},
 					isFullSize: ie.h,
-					isThemesEnabled: de.y,
+					isThemesEnabled: de.B,
 					showSparkles: me.e,
-					isQuickActionsEnabled: de.u,
+					isQuickActionsEnabled: de.x,
 					isLinkSharingEnabledExperiment: de.i
 				});
 			var ve = Object(c.b)(Oe, (e, t) => ({
@@ -10255,7 +10255,7 @@
 						isQuickActionsEnabled: d,
 						isLinkSharingEnabledExperiment: h,
 						isModerator: b
-					} = e, v = Object(c.d)(), E = Object(c.e)(ue.a), j = Object(c.e)(ue.b), C = Object(c.e)(de.c), I = Object(c.e)(de.b), y = Object(c.e)(he.a), x = Object(c.e)(de.k), S = y === oe.a.SETTINGS, N = Object(O.b)(Object(W.f)()), k = Object(O.b)(Object(W.g)()), w = {
+					} = e, v = Object(c.d)(), E = Object(c.e)(ue.a), j = Object(c.e)(ue.b), C = Object(c.e)(de.c), I = Object(c.e)(de.b), y = Object(c.e)(he.a), x = Object(c.e)(de.m), S = y === oe.a.SETTINGS, N = Object(O.b)(Object(W.f)()), k = Object(O.b)(Object(W.g)()), w = {
 						...k.arrowProps,
 						style: {
 							...k.arrowProps.style,
@@ -11063,7 +11063,7 @@
 						n = Object(c.e)(f.I),
 						r = Object(c.e)(f.b),
 						h = Object(c.e)(v.a),
-						m = Object(c.e)(O.p),
+						m = Object(c.e)(O.s),
 						E = Object(a.useCallback)(() => {
 							n && !r && e(Object(l.E)({
 								recursively: !0
@@ -11099,7 +11099,7 @@
 					joinedChannels: f.e,
 					selectedChannelId: e => Object(f.E)(e, "channelId"),
 					hasInvitedChannels: f.H,
-					isLiveChatInChatTabEnabled: O.p
+					isLiveChatInChatTabEnabled: O.s
 				});
 			var T = Object(c.b)(w)(e => {
 					const {
@@ -11213,7 +11213,7 @@
 						liveCommentsUrl: n,
 						callback: s
 					} = e;
-					const r = Object(c.e)(O.o);
+					const r = Object(c.e)(O.r);
 					Object(a.useEffect)(() => {
 						if (r) return;
 						const e = t,
@@ -11666,7 +11666,7 @@
 				Ve = n.n(Fe);
 			const Ge = () => {
 				const e = Object(c.e)(Ne.a),
-					t = Object(c.e)(O.p);
+					t = Object(c.e)(O.s);
 				switch (e) {
 					case Se.g.Live:
 						return s.a.createElement(fe, null);
@@ -11685,7 +11685,7 @@
 						a = Object(c.e)(v.e),
 						r = Object(c.e)(v.b),
 						o = Object(c.e)(O.f),
-						d = Object(c.e)(O.p);
+						d = Object(c.e)(O.s);
 					return s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
 						className: Ve.a.Header
 					}, s.a.createElement("span", {
@@ -12483,7 +12483,7 @@
 				},
 				L = n("./src/chat/selectors/experiments.ts");
 			t.a = () => {
-				return Object(c.e)(L.p) ? s.a.createElement(M, null) : s.a.createElement(v, null)
+				return Object(c.e)(L.s) ? s.a.createElement(M, null) : s.a.createElement(v, null)
 			}
 		},
 		"./src/chat/controls/ChannelsFilter/v1/index.m.less": function(e, t, n) {
@@ -14155,7 +14155,7 @@
 			const O = d.a.i("FallbackAvatar", f.a),
 				v = d.a.wrapped(O, "FallbackAvatarWrapper", f.a),
 				E = d.a.wrapped(e => {
-					const t = Object(o.e)(b.w),
+					const t = Object(o.e)(b.z),
 						{
 							className: n,
 							height: s,
@@ -19997,4 +19997,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.dc4729c0f6ddadc48c0d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.d2761c95576b2e604301.js.map

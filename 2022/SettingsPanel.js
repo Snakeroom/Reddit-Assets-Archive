@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SettingsPanel.0f58a182fe0acefe51e7.js
-// Retrieved at 11/7/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SettingsPanel.3f81e3b00ff5a0cad9d5.js
+// Retrieved at 11/10/2022, 5:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SettingsPanel"], {
 		"./src/chat/components/Sidebar/SettingsPanel/SettingsGroup/index.m.less": function(e, t, a) {
@@ -45,8 +45,8 @@
 			var n = a("./node_modules/fbt/lib/FbtPublic.js"),
 				c = a("./node_modules/react/index.js"),
 				s = a.n(c),
-				l = a("./node_modules/react-redux/es/index.js"),
-				r = a("./src/chat/actions/channel.ts"),
+				r = a("./node_modules/react-redux/es/index.js"),
+				l = a("./src/chat/actions/channel.ts"),
 				o = a("./src/chat/actions/channel/dropdown.ts"),
 				i = a("./src/chat/actions/settings/index.ts"),
 				u = a("./src/chat/actions/tracking.ts"),
@@ -60,7 +60,7 @@
 					let {
 						userToLeave: t
 					} = e;
-					const a = Object(l.d)();
+					const a = Object(r.d)();
 					return s.a.createElement(d.c, {
 						submit: () => {
 							a(Object(m.a)()), a(Object(u.M)())
@@ -78,40 +78,40 @@
 				},
 				p = a("./src/chat/selectors/channels.ts");
 			const {
-				fbt: _
+				fbt: A
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
-			var A = () => {
-					const e = Object(l.d)(),
-						t = Object(l.e)(p.o);
+			var _ = () => {
+					const e = Object(r.d)(),
+						t = Object(r.e)(p.o);
 					return s.a.createElement(d.c, {
 						submit: () => {
-							t && e(Object(r.H)(t)), e(Object(u.M)())
+							t && e(Object(l.H)(t)), e(Object(u.M)())
 						},
-						submitButtonText: _._("Yes, Leave", null, {
+						submitButtonText: A._("Yes, Leave", null, {
 							hk: "1lG6hO"
 						})
-					}, s.a.createElement(d.b, null, _._("Leave group?", null, {
+					}, s.a.createElement(d.b, null, A._("Leave group?", null, {
 						hk: "4qlYAa"
-					})), s.a.createElement(d.a, null, _._("Once you leave, you won't get new messages and will need another invite to rejoin.", null, {
+					})), s.a.createElement(d.a, null, A._("Once you leave, you won't get new messages and will need another invite to rejoin.", null, {
 						hk: "1fBcJy"
 					})))
 				},
-				x = a("./src/lib/makeGqlRequest/index.ts"),
-				E = a("./src/redditGQL/operations/UpdateChatMessagesAsRead.json");
-			var k = a("./src/reddit/hooks/useGqlContext.ts");
+				k = a("./src/lib/makeGqlRequest/index.ts"),
+				x = a("./src/redditGQL/operations/UpdateChatMessagesAsRead.json");
+			var E = a("./src/reddit/hooks/useGqlContext.ts");
 			const {
 				fbt: S
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
 			var f = () => {
-					const e = Object(k.a)();
+					const e = Object(E.a)();
 					return s.a.createElement(d.c, {
 						submit: async () => {
 							await ((e, t) => {
 								const a = {
 									channels: t
 								};
-								return Object(x.a)(e, {
-									...E,
+								return Object(k.a)(e, {
+									...x,
 									variables: {
 										input: a
 									}
@@ -127,19 +127,19 @@
 						hk: "1iyaXi"
 					})))
 				},
-				g = a("./src/chat/components/Sidebar/SettingsPanel/SettingsGroup/index.m.less"),
-				j = a.n(g);
+				j = a("./src/chat/components/Sidebar/SettingsPanel/SettingsGroup/index.m.less"),
+				g = a.n(j);
 			var O = e => {
 					let {
 						headerText: t,
 						children: a
 					} = e;
 					return s.a.createElement("div", {
-						className: j.a.SettingsGroup
+						className: g.a.SettingsGroup
 					}, s.a.createElement("div", {
-						className: j.a.Header
+						className: g.a.Header
 					}, t), a ? s.a.createElement("div", {
-						className: j.a.Content
+						className: g.a.Content
 					}, a) : null)
 				},
 				w = a("./src/lib/classNames/index.ts"),
@@ -153,19 +153,19 @@
 						text: a,
 						onclick: n,
 						children: c,
-						isSelected: l,
-						shouldShowArrow: r
+						isSelected: r,
+						shouldShowArrow: l
 					} = e;
 					return s.a.createElement("div", {
 						className: Object(w.a)(N.a.SettingsItem, {
-							[N.a.selected]: l && r
+							[N.a.selected]: r && l
 						}, t),
 						onClick: Object(C.a)(n)
 					}, s.a.createElement("div", {
 						className: N.a.Icon
 					}, c), s.a.createElement("div", {
 						className: N.a.Text
-					}, a), r && !l ? s.a.createElement("div", {
+					}, a), l && !r ? s.a.createElement("div", {
 						className: N.a.OpenScreenArrow
 					}, s.a.createElement(L.a, null)) : null)
 				},
@@ -203,8 +203,8 @@
 				ce = a("./src/chat/icons/svgs/InviteMember/index.tsx"),
 				se = a("./src/chat/controls/Svg/index.tsx");
 
-			function le() {
-				return (le = Object.assign || function(e) {
+			function re() {
+				return (re = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var a = arguments[t];
 						for (var n in a) Object.prototype.hasOwnProperty.call(a, n) && (e[n] = a[n])
@@ -212,7 +212,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var re = e => s.a.createElement(se.a, le({}, e, {
+			var le = e => s.a.createElement(se.a, re({}, e, {
 					viewBox: "0 0 20 20"
 				}), s.a.createElement(s.a.Fragment, null, s.a.createElement("path", {
 					d: "M13,.375A6.633,6.633,0,0,0,6.375,7,6.559,6.559,0,0,0,6.8,9.318L.375,15.741v3.884h5.25v-3h3v-3H13A6.625,6.625,0,0,0,13,.375Zm0,12H7.375v3h-3v3H1.625V16.259L8.282,9.6,8.1,9.209A5.373,5.373,0,1,1,13,12.375Z"
@@ -262,16 +262,16 @@
 				be = a("./src/chat/models/Channel/index.ts"),
 				ve = a("./src/chat/models/Settings/index.ts"),
 				pe = a("./src/chat/selectors/experiments.ts"),
-				_e = a("./src/chat/selectors/platform.ts"),
-				Ae = a("./src/chat/selectors/theme.ts"),
-				xe = a("./src/chat/components/Sidebar/SettingsPanel/index.m.less"),
-				Ee = a.n(xe);
+				Ae = a("./src/chat/selectors/platform.ts"),
+				_e = a("./src/chat/selectors/theme.ts"),
+				ke = a("./src/chat/components/Sidebar/SettingsPanel/index.m.less"),
+				xe = a.n(ke);
 			const {
-				BLOCK_USER: ke,
+				BLOCK_USER: Ee,
 				LEAVE_CHAT: Se,
 				LEAVE_GROUP: fe,
-				MARK_ALL_AS_READ: ge
-			} = ve.a, je = e => {
+				MARK_ALL_AS_READ: je
+			} = ve.a, ge = e => {
 				switch (e) {
 					case P.About:
 						return {
@@ -326,13 +326,13 @@
 						return {
 							text: n.fbt._("Theme", null, {
 								hk: "4mjZrI"
-							}), icon: s.a.createElement(ee.a, null), shouldShowArrow: !0, className: Ee.a.Theme, channelAction: I.a.THEMES
+							}), icon: s.a.createElement(ee.a, null), shouldShowArrow: !0, className: xe.a.Theme, channelAction: I.a.THEMES
 						};
 					case P.PrivacyAndSupport:
 						return {
 							text: n.fbt._("Privacy & support", null, {
 								hk: "36YF4A"
-							}), icon: s.a.createElement(re, null), shouldShowArrow: !0
+							}), icon: s.a.createElement(le, null), shouldShowArrow: !0
 						};
 					case P.MarkAllAsRead:
 						return {
@@ -362,39 +362,56 @@
 					channel: t
 				} = e;
 				const a = d.d,
-					r = Object(l.d)(),
+					l = Object(r.d)(),
 					[m, b] = Object(c.useState)(null),
-					_ = Object(l.e)(e => Object(p.N)(e, t.channelId)),
-					x = Object(l.e)(pe.y),
-					E = Object(l.e)(pe.i),
-					k = Object(l.e)(p.a),
-					S = Object(l.e)(Ae.e),
-					g = Object(l.e)(_e.d),
-					j = Object(l.e)(p.t),
-					w = k && t.type === be.b.Group,
-					L = Object(c.useMemo)(() => {
+					A = Object(r.e)(e => Object(p.N)(e, t.channelId)),
+					k = Object(r.e)(pe.B),
+					x = Object(r.e)(pe.i),
+					E = Object(r.e)(pe.n),
+					S = Object(r.e)(pe.k),
+					j = Object(r.e)(pe.l),
+					g = E || S || j,
+					w = Object(r.e)(p.a),
+					L = Object(r.e)(_e.e),
+					M = Object(r.e)(Ae.d),
+					N = Object(r.e)(p.t),
+					C = w && t.type === be.b.Group,
+					I = Object(c.useMemo)(() => {
 						if (t) switch (t.type) {
 							case be.b.Direct:
-								return W.directChannel.filter(e => z(e, _) && Y(e, _) && K(e, x));
+								return W.directChannel.filter(e => z(e, A) && Y(e, A) && K(e, k));
 							case be.b.Group:
-								return W.groupChannel.filter(e => z(e, _) && Y(e, _) && K(e, x))
+								return W.groupChannel.filter(e => z(e, A) && Y(e, A) && K(e, k))
 						}
-					}, [t, _, x]),
-					M = e => e.map(e => e !== P.InviteLink || E ? s.a.createElement(y, {
-						className: S && x && e === P.Theme ? Ee.a.Theme : void 0,
+					}, [t, A, k]),
+					T = e => e.map(e => (e => {
+						switch (e) {
+							case P.InviteLink:
+								return !x;
+							case P.Theme:
+								return !E;
+							case P.MarkAllAsRead:
+								return !S;
+							case P.PrivacyAndSupport:
+								return !j;
+							default:
+								return !1
+						}
+					})(e) ? null : s.a.createElement(y, {
+						className: L && k && e === P.Theme ? xe.a.Theme : void 0,
 						onclick: () => (e => {
 							switch (e) {
 								case P.About:
-									r(Object(o.k)()), r(Object(u.ub)());
+									l(Object(o.k)()), l(Object(u.ub)());
 									break;
 								case P.InvitePeople:
-									r(Object(o.c)()), r(Object(u.c)());
+									l(Object(o.c)()), l(Object(u.c)());
 									break;
 								case P.MuteNotifications:
-									r(Object(o.e)()), r(Object(u.V)());
+									l(Object(o.e)()), l(Object(u.V)());
 									break;
 								case P.UnmuteNotifications:
-									r(Object(o.g)()), r(Object(u.ib)());
+									l(Object(o.g)()), l(Object(u.ib)());
 									break;
 								case P.LeaveChat:
 									b(Se);
@@ -403,75 +420,75 @@
 									b(fe);
 									break;
 								case P.Theme:
-									r(Object(i.h)()), r(Object(u.f)());
+									l(Object(i.h)()), l(Object(u.f)());
 									break;
 								case P.InviteLink:
-									r(Object(i.e)(i.b.SESSION_LAST)), r(Object(o.b)(t.channelId));
+									l(Object(i.e)(i.b.SESSION_LAST)), l(Object(o.b)(t.channelId));
 									break;
 								case P.StartGroupChat:
-									r(Object(o.i)());
+									l(Object(o.i)());
 									break;
 								case P.BlockUser:
-									b(ke);
+									b(Ee);
 									break;
 								case P.MarkAllAsRead:
-									b(ge);
+									b(je);
 									break;
 								case P.PrivacyAndSupport:
-									return r(Object(i.g)())
+									return l(Object(i.g)())
 							}
 						})(e),
-						isSelected: !!g && je(e).channelAction === g,
+						isSelected: !!M && ge(e).channelAction === M,
 						key: e,
-						text: je(e).text,
-						shouldShowArrow: je(e).shouldShowArrow
-					}, je(e).icon) : null);
+						text: ge(e).text,
+						shouldShowArrow: ge(e).shouldShowArrow
+					}, ge(e).icon));
 				return s.a.createElement("div", {
-					className: Ee.a.SettingsPanel
+					className: xe.a.SettingsPanel
 				}, s.a.createElement("div", {
-					className: Ee.a.Header
+					className: xe.a.Header
 				}, s.a.createElement(X.a, {
-					className: Ee.a.BackIcon,
+					className: xe.a.BackIcon,
 					onClick: () => {
-						r(Object(i.i)())
+						l(Object(i.i)())
 					}
 				}), n.fbt._("Settings", null, {
 					hk: "Mj4q4"
 				})), s.a.createElement("div", {
-					className: Ee.a.Content
+					className: xe.a.Content
 				}, s.a.createElement(O, {
 					headerText: (() => t.type === be.b.Direct ? n.fbt._("This chat", null, {
 						hk: "ao8jp"
 					}) : n.fbt._("This group", null, {
 						hk: "1phz2a"
 					}))()
-				}, L ? M(L) : null), w && E ? s.a.createElement(O, {
+				}, I ? T(I) : null), C && x ? s.a.createElement(O, {
 					headerText: n.fbt._("Host tools", null, {
 						hk: "2cuDsU"
 					})
-				}, M(W.hostTools)) : null, s.a.createElement(O, {
-					headerText: (() => w ? n.fbt._("Global settings", null, {
+				}, T(W.hostTools)) : null, g && s.a.createElement(O, {
+					headerText: (() => C ? n.fbt._("Global settings", null, {
 						hk: "1wpYs8"
 					}) : n.fbt._("Global", null, {
 						hk: "3UNhmn"
 					}))()
-				}, M(W.globalSettings)), s.a.createElement(a.Provider, {
+				}, T(W.globalSettings)), s.a.createElement(a.Provider, {
 					value: () => {
 						b(null)
 					}
 				}, (() => {
 					switch (m) {
-						case ke:
-							return j ? s.a.createElement(h.a, {
-								userToBlock: j
+						case Ee:
+							return N ? s.a.createElement(h.a, {
+								userToBlock: N
 							}) : null;
 						case fe:
-							return s.a.createElement(A, null);
-						case ge:
+							return s.a.createElement(_, null);
+						case je:
 							return s.a.createElement(f, null);
 						case Se:
-							return j ? s.a.createElement(v, {
-								userToLeave: j
+							return N ? s.a.createElement(v, {
+								userToLeave: N
 							}) : null;
 						default:
 							return null
@@ -481,21 +498,21 @@
 				let {
 					liveChatPost: t
 				} = e;
-				const a = Object(l.d)(),
+				const a = Object(r.d)(),
 					c = () => {
 						a(Object(i.i)())
 					};
 				return s.a.createElement("div", {
-					className: Ee.a.SettingsPanel
+					className: xe.a.SettingsPanel
 				}, s.a.createElement("div", {
-					className: Ee.a.Header
+					className: xe.a.Header
 				}, s.a.createElement(X.a, {
-					className: Ee.a.BackIcon,
+					className: xe.a.BackIcon,
 					onClick: c
 				}), n.fbt._("Settings", null, {
 					hk: "Mj4q4"
 				})), s.a.createElement("div", {
-					className: Ee.a.Content
+					className: xe.a.Content
 				}, s.a.createElement(O, {
 					headerText: n.fbt._("This chat", null, {
 						hk: "ao8jp"
@@ -504,20 +521,20 @@
 					onclick: () => (e => {
 						switch (e) {
 							case P.LeaveLiveChat:
-								a(Object(r.I)(t.post.id)), c()
+								a(Object(l.I)(t.post.id)), c()
 						}
 					})(e),
 					key: e,
-					text: je(e).text,
-					shouldShowArrow: je(e).shouldShowArrow
-				}, je(e).icon)))(W.liveChat))))
+					text: ge(e).text,
+					shouldShowArrow: ge(e).shouldShowArrow
+				}, ge(e).icon)))(W.liveChat))))
 			};
 			t.default = e => {
 				let {
 					channel: t,
 					liveChatPost: a
 				} = e;
-				return Object(l.e)(pe.p) && a ? s.a.createElement(we, {
+				return Object(r.e)(pe.s) && a ? s.a.createElement(we, {
 					liveChatPost: a
 				}) : t ? s.a.createElement(Oe, {
 					channel: t
@@ -530,8 +547,8 @@
 				c = a.n(n),
 				s = a("./src/chat/controls/Svg/index.tsx");
 
-			function l() {
-				return (l = Object.assign || function(e) {
+			function r() {
+				return (r = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var a = arguments[t];
 						for (var n in a) Object.prototype.hasOwnProperty.call(a, n) && (e[n] = a[n])
@@ -539,7 +556,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			t.a = e => c.a.createElement(s.a, l({}, e, {
+			t.a = e => c.a.createElement(s.a, r({}, e, {
 				viewBox: "0 0 20 20"
 			}), e.isFilled ? c.a.createElement("path", {
 				d: "M8.207,15.707,6.793,14.293,11.086,10,6.793,5.707,8.207,4.293l5,5a1,1,0,0,1,0,1.414Z"
@@ -552,4 +569,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SettingsPanel.0f58a182fe0acefe51e7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SettingsPanel.3f81e3b00ff5a0cad9d5.js.map

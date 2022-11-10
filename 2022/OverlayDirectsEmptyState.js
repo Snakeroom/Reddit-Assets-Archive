@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayDirectsEmptyState.74a1c78ae88879fa85cb.js
-// Retrieved at 10/25/2022, 3:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayDirectsEmptyState.26b904beb1a52cc2134d.js
+// Retrieved at 11/10/2022, 5:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayDirectsEmptyState"], {
 		"./src/chat/actions/navigate.ts": function(e, t, a) {
@@ -207,11 +207,11 @@
 				}))));
 			t.default = x(e => {
 				const t = Object(l.e)(N.a),
-					a = Object(l.e)(b.p),
-					n = Object(l.e)(b.l);
+					a = Object(l.e)(b.s),
+					n = Object(l.e)(b.o);
 				return a ? n ? s.a.createElement(H, e) : t === w.g.Live ? s.a.createElement(O, null) : s.a.createElement(k, e) : s.a.createElement(y, e)
 			})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayDirectsEmptyState.74a1c78ae88879fa85cb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayDirectsEmptyState.26b904beb1a52cc2134d.js.map
