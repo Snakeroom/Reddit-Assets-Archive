@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Recap.516ecc2ba4592f58df80.js
-// Retrieved at 11/9/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Recap.d32d4390cec5db445705.js
+// Retrieved at 11/10/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Recap", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, a, t) {
@@ -69,9 +69,9 @@
 			})), t.d(a, "unsubscribeFromPNs", (function() {
 				return A
 			})), t.d(a, "requestBrowserNotificationPermissionPromptByUser", (function() {
-				return D
-			})), t.d(a, "subscribeToPermissionsChange", (function() {
 				return B
+			})), t.d(a, "subscribeToPermissionsChange", (function() {
+				return D
 			}));
 			var r = t("./node_modules/fbt/lib/FbtPublic.js"),
 				c = t("./node_modules/lodash/omit.js"),
@@ -86,21 +86,21 @@
 				u = t("./src/reddit/actions/notifications/utils.ts"),
 				p = t("./src/reddit/actions/tabBadging.ts"),
 				g = t("./src/reddit/actions/toaster.ts"),
-				E = t("./src/reddit/constants/modals.ts"),
-				f = t("./src/reddit/helpers/parseUrl.ts"),
-				v = t("./src/reddit/helpers/tabBadging/index.ts"),
-				h = t("./src/reddit/helpers/trackers/notifications.ts"),
+				f = t("./src/reddit/constants/modals.ts"),
+				E = t("./src/reddit/helpers/parseUrl.ts"),
+				h = t("./src/reddit/helpers/tabBadging/index.ts"),
+				v = t("./src/reddit/helpers/trackers/notifications.ts"),
 				_ = t("./src/reddit/models/Toast/index.ts"),
 				O = t("./src/reddit/selectors/activeModal.ts"),
 				N = t("./src/reddit/selectors/activeModalId.ts"),
 				j = t("./src/reddit/selectors/experiments/delayDnPermission.ts"),
-				C = t("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
-				k = t("./src/reddit/constants/experiments.ts"),
+				k = t("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
+				C = t("./src/reddit/constants/experiments.ts"),
 				S = t("./src/reddit/helpers/chooseVariant/index.ts");
 			const y = e => Object(S.c)(e, {
-				experimentName: k.ec,
+				experimentName: C.ec,
 				experimentEligibilitySelector: S.a
-			}) === k.Jd;
+			}) === C.Kd;
 			var I = t("./src/reddit/selectors/meta.ts"),
 				x = t("./src/reddit/selectors/user.ts");
 			let w = !1;
@@ -113,18 +113,18 @@
 					const c = r.data,
 						s = c.command || c.type;
 					if ("registerWithServiceWorker" === s) R(e);
-					else if (s === v.a && t) {
+					else if (s === h.a && t) {
 						const e = i()(c, ["command"]);
 						a(Object(p.f)(e))
 					} else if ("navigate.chat" === s) {
-						const e = Object(f.a)(c.data.href);
+						const e = Object(E.a)(c.data.href);
 						e && e.pathname && a(Object(m.c)(e.pathname))
 					}
 				}), R(e)
 			}, R = e => {
 				navigator.serviceWorker.controller && navigator.serviceWorker.controller.postMessage({
 					command: "registerClient",
-					v2EventBoilerPlate: h.c(e)
+					v2EventBoilerPlate: v.c(e)
 				})
 			}, L = function(e, a) {
 				let t = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : () => {};
@@ -134,17 +134,17 @@
 						m = y(n),
 						b = !!Object(N.a)(n),
 						u = Object(j.a)(n),
-						p = Object(C.e)(n),
-						g = Object(O.c)(E.a.NSFW_BLOCKING_MODAL_V2)(n);
+						p = Object(k.e)(n),
+						g = Object(O.c)(f.a.NSFW_BLOCKING_MODAL_V2)(n);
 					if (p || g) return;
 					if (await Object(s.a)() || d) return;
 					await T(n, r);
-					h.l(n), await Object(l.b)(e, a, () => {
-						m || u || b || r(Object(o.o)()), r(Object(o.n)()), h.j(n)
+					v.l(n), await Object(l.b)(e, a, () => {
+						m || u || b || r(Object(o.o)()), r(Object(o.n)()), v.j(n)
 					}, (e, a) => {
-						r(Object(o.l)()), r(A(a ? o.a.Denied : o.a.Closed)), e && (a ? h.e(n) : h.f(n)), t()
+						r(Object(o.l)()), r(A(a ? o.a.Denied : o.a.Closed)), e && (a ? v.e(n) : v.f(n)), t()
 					}, e => {
-						r(Object(o.m)()), r(F()), e && h.d(n), t()
+						r(Object(o.m)()), r(F()), e && v.d(n), t()
 					}, () => {
 						r(Object(o.k)()), t()
 					})
@@ -154,7 +154,7 @@
 				try {
 					switch (await Object(n.b)(c.gqlContext)) {
 						case n.a.Success:
-							Object(u.b)(o.a.Granted), h.m(i), e && a(Object(g.f)({
+							Object(u.b)(o.a.Granted), v.m(i), e && a(Object(g.f)({
 								kind: _.b.SuccessCommunity,
 								text: r.fbt._("Changes saved", null, {
 									hk: "wGH5U"
@@ -162,13 +162,13 @@
 							}));
 							break;
 						case n.a.FailedResponse:
-							h.k(i, "registration_failed_generally");
+							v.k(i, "registration_failed_generally");
 							break;
 						case n.a.FailedGqlReponse:
-							h.k(i, "registration_failed_in_gql")
+							v.k(i, "registration_failed_in_gql")
 					}
 				} catch (s) {
-					h.k(i, "registration_failed_uncaught_exception"), console.error(s)
+					v.k(i, "registration_failed_uncaught_exception"), console.error(s)
 				}
 			}, A = (e, a) => async t => {
 				try {
@@ -184,7 +184,7 @@
 						})))
 					}
 				} catch (c) {}
-			}, D = e => async (a, t) => {
+			}, B = e => async (a, t) => {
 				const r = t();
 				if (Object(u.a)(r) === o.c.NotificationsSupported) switch (Object(l.a)()) {
 					case o.a.Default:
@@ -194,7 +194,7 @@
 					case o.a.Denied:
 						a(Object(b.h)(e))
 				}
-			}, B = () => async (e, a) => {
+			}, D = () => async (e, a) => {
 				var t;
 				if (!(null === (t = null === navigator || void 0 === navigator ? void 0 : navigator.permissions) || void 0 === t ? void 0 : t.query)) return;
 				const r = a();
@@ -205,10 +205,10 @@
 				c.onchange = () => (a => {
 					switch (a) {
 						case o.a.Denied:
-							e(A(o.a.Denied)), h.e(r);
+							e(A(o.a.Denied)), v.e(r);
 							break;
 						case o.a.Granted:
-							e(F()), h.d(r);
+							e(F()), v.d(r);
 							break;
 						default:
 							e(A(o.a.Default))
@@ -231,11 +231,11 @@
 			})), t.d(a, "m", (function() {
 				return g
 			})), t.d(a, "k", (function() {
-				return E
+				return f
 			})), t.d(a, "c", (function() {
-				return v
-			})), t.d(a, "b", (function() {
 				return h
+			})), t.d(a, "b", (function() {
+				return v
 			})), t.d(a, "i", (function() {
 				return _
 			})), t.d(a, "a", (function() {
@@ -245,9 +245,9 @@
 			})), t.d(a, "o", (function() {
 				return j
 			})), t.d(a, "h", (function() {
-				return C
-			})), t.d(a, "g", (function() {
 				return k
+			})), t.d(a, "g", (function() {
+				return C
 			}));
 			var r = t("./src/reddit/selectors/telemetry.ts"),
 				c = t("./src/telemetry/index.ts"),
@@ -311,25 +311,25 @@
 						source: "notification"
 					})
 				},
-				E = (e, a) => {
+				f = (e, a) => {
 					Object(c.a)({
 						...u(e, !1, a),
 						action: i.c.Bail,
 						source: "notification"
 					})
 				},
-				f = e => ({
+				E = e => ({
 					...r.o(e),
 					noun: "push_notification"
 				}),
-				v = e => ({
-					...f(e),
+				h = e => ({
+					...E(e),
 					notification: r.F(e, void 0, void 0),
 					action: void 0,
 					source: "notification",
 					correlationId: void 0
 				}),
-				h = (e, a) => t => ({
+				v = (e, a) => t => ({
 					...r.o(t),
 					action: l(e),
 					email: {
@@ -375,13 +375,13 @@
 						pageType: "community_alerts"
 					}
 				}),
-				C = () => e => ({
+				k = () => e => ({
 					...r.o(e),
 					action: "click",
 					noun: "desktop_notification_permissions",
 					source: "overlay"
 				}),
-				k = () => e => ({
+				C = () => e => ({
 					...r.o(e),
 					action: "auto_dismiss",
 					noun: "desktop_notification_permissions",
@@ -411,6 +411,7 @@
 				small: "ZKjDE_xgQg64-5JX7mfvC",
 				illustration: "_2SCbuF-0NbZReV6s7Nyh9b",
 				image: "_7PGeAYknEPulscfNx1Zht",
+				noBg: "TimZjENwe8TOIzwsSIeHh",
 				isCircle: "_33wC-mxWH3e9FVgBiwaBz0",
 				orange: "_2QS4phWYU6ucBxU42vDLDc",
 				post: "_1mFNY9hUJx094QedQVkReh",
@@ -473,6 +474,7 @@
 				epic: "_3kPmfy5WBLhgokakXvA_6L",
 				legendary: "_2eRJDug5HRVWHJlJYYkfj7",
 				topic: "_2JuIXbV95vsbm5v3UNUEH_",
+				topicBg: "_3GaIYjmHqjPAZk-ub-WDkd",
 				premiumIcon: "_3UvaCTByVClHjnhrrKGTgz",
 				toggles: "_2mrko_M41-aMp-HI9Jn4qt",
 				visible: "_1SGKVO17G2cqHugOYN718W",
@@ -629,10 +631,10 @@
 				u = t("./node_modules/react-router-redux/es/index.js"),
 				p = t("./src/lib/classNames/index.ts"),
 				g = t("./src/reddit/actions/recap/index.ts"),
-				E = t("./src/reddit/constants/keycodes.ts"),
-				f = t("./src/reddit/constants/modals.ts"),
-				v = t("./src/reddit/contexts/PageLayer/index.tsx"),
-				h = t("./src/reddit/controls/Button/index.tsx"),
+				f = t("./src/reddit/constants/keycodes.ts"),
+				E = t("./src/reddit/constants/modals.ts"),
+				h = t("./src/reddit/contexts/PageLayer/index.tsx"),
+				v = t("./src/reddit/controls/Button/index.tsx"),
 				_ = t("./src/reddit/helpers/localStorage/index.ts"),
 				O = t("./src/reddit/helpers/trackers/recap.ts"),
 				N = t("./src/reddit/hooks/useTracking.ts"),
@@ -643,8 +645,8 @@
 			function(e) {
 				e.Common = "COMMON", e.Rare = "RARE", e.Epic = "EPIC", e.Legendary = "LEGENDARY"
 			}(c || (c = {}));
-			const C = "PersonalizedYearInReviewCommentCard",
-				k = "PersonalizedYearInReviewEndCard",
+			const k = "PersonalizedYearInReviewCommentCard",
+				C = "PersonalizedYearInReviewEndCard",
 				S = "PersonalizedYearInReviewGenericCard",
 				y = "PersonalizedYearInReviewIntroCard",
 				I = "PersonalizedYearInReviewPostCard",
@@ -655,10 +657,10 @@
 				L = "PersonalizedYearInReviewAvatarCard",
 				F = "PersonalizedYearInReviewTopicListCard",
 				A = "PersonalizedYearInReviewRPlaceTileListCard",
-				D = "PersonalizedYearInReviewSingleTopicCard",
-				B = e => e.__typename === x;
-			var W = t("./src/config.ts"),
-				P = t("./src/reddit/components/ImageWithFallback/index.tsx");
+				B = "PersonalizedYearInReviewSingleTopicCard",
+				D = e => e.__typename === x;
+			var P = t("./src/config.ts"),
+				W = t("./src/reddit/components/ImageWithFallback/index.tsx");
 
 			function M() {
 				return (M = Object.assign || function(e) {
@@ -695,8 +697,8 @@
 						className: U.a.wrapper
 					}, s.a.createElement("div", {
 						className: Object(p.a)(U.a.image, U.a.isCircle)
-					}, s.a.createElement(P.a, {
-						src: `${W.a.assetPath}/img/recap/key_art_recap_2022.png`,
+					}, s.a.createElement(W.a, {
+						src: `${P.a.assetPath}/img/recap/key_art_recap_2022.png`,
 						className: Object(p.a)(U.a.fallbackStaticImage)
 					})), s.a.createElement("div", {
 						className: U.a.info
@@ -710,7 +712,7 @@
 						className: U.a.subtitle
 					}, o.fbt._("Something went wrong. Try that again.", null, {
 						hk: "fyv6n"
-					})), s.a.createElement(h.t, {
+					})), s.a.createElement(v.t, {
 						className: Object(p.a)(U.a.retryButton),
 						onClick: a
 					}, o.fbt._("Retry", null, {
@@ -723,7 +725,7 @@
 					className: z.a.circle
 				}, s.a.createElement("img", {
 					className: z.a.image,
-					src: `${W.a.assetPath}/img/recap/InfiniteLoad_4.gif`
+					src: `${P.a.assetPath}/img/recap/InfiniteLoad_4.gif`
 				})),
 				q = t("./src/higherOrderComponents/asModal/index.tsx"),
 				K = t("./src/lib/notifications/index.ts"),
@@ -747,7 +749,7 @@
 							[J.a.visible]: r,
 							[J.a.initialCard]: i
 						})
-					}, s.a.createElement(h.t, {
+					}, s.a.createElement(v.t, {
 						className: Object(p.a)(J.a.shareButton, {
 							[J.a.orange]: !c
 						}),
@@ -879,9 +881,9 @@
 					}), s.a.createElement("div", {
 						className: le.a.avatar,
 						style: {
-							backgroundImage: `url(${W.a.assetPath}/img/recap/left_side.png)`
+							backgroundImage: `url(${P.a.assetPath}/img/recap/left_side.png)`
 						}
-					}, s.a.createElement(P.a, {
+					}, s.a.createElement(W.a, {
 						src: c,
 						className: Object(p.a)(le.a.fallbackStaticImage, {
 							[le.a.isSelected]: n
@@ -890,9 +892,9 @@
 						className: Object(p.a)(le.a.avatar, le.a.left),
 						style: {
 							transitionDelay: ".65s",
-							backgroundImage: `url(${W.a.assetPath}/img/recap/right_side.png)`
+							backgroundImage: `url(${P.a.assetPath}/img/recap/right_side.png)`
 						}
-					}, s.a.createElement(P.a, {
+					}, s.a.createElement(W.a, {
 						src: i,
 						className: Object(p.a)(le.a.fallbackStaticImage, {
 							[le.a.isSelected]: n
@@ -904,7 +906,7 @@
 						className: Object(p.a)(le.a.collectibleAvatar, {
 							[le.a.selected]: n
 						})
-					}, s.a.createElement(P.a, {
+					}, s.a.createElement(W.a, {
 						src: i,
 						className: Object(p.a)(le.a.fallbackStaticImage, {
 							[le.a.isSelected]: n
@@ -929,9 +931,9 @@
 					tabIndex: u,
 					shouldAlternativeFocus: g
 				} = e;
-				const E = Object(b.d)(),
-					f = Object(N.a)(),
-					[v, _] = Object(i.useState)(!!m);
+				const f = Object(b.d)(),
+					E = Object(N.a)(),
+					[h, _] = Object(i.useState)(!!m);
 				return s.a.createElement("div", {
 					className: ue.a.subredditWrapper
 				}, s.a.createElement("div", {
@@ -944,29 +946,29 @@
 						[ue.a.micro]: "micro" === l,
 						[ue.a.red]: n
 					})
-				}, o && s.a.createElement(h.t, {
-					Icon: Object(j.b)(v ? "joined_fill" : "join"),
-					size: h.d.S,
-					priority: h.c.PlainLink,
+				}, o && s.a.createElement(v.t, {
+					Icon: Object(j.b)(h ? "joined_fill" : "join"),
+					size: v.d.S,
+					priority: v.c.PlainLink,
 					className: ue.a.addButton,
 					iconClassName: Object(p.a)(ue.a.icon, {
 						[ue.a.white]: n
 					}),
 					onClick: e => (e.stopPropagation(), ((e, a) => {
-						E(async t => {
+						f(async t => {
 							const r = await t(Object(me.d)([{
 								name: e,
 								type: "subreddit"
 							}], !a));
-							f(Object(O.o)(!a, e, d)), r && _(!v)
+							E(Object(O.o)(!a, e, d)), r && _(!h)
 						})
-					})(t, v)),
+					})(t, h)),
 					tabIndex: u
 				}), s.a.createElement(de.default, {
 					to: a,
 					target: "_blank",
 					rel: "noopener noreferrer",
-					onClick: () => f(Object(O.d)(d)),
+					onClick: () => E(Object(O.d)(d)),
 					className: Object(p.a)(ue.a.subreddit, {
 						[ue.a.red]: n,
 						[ue.a.big]: "big" === l,
@@ -999,21 +1001,21 @@
 							postId: u
 						},
 						isSelected: g,
-						isForSharing: E
+						isForSharing: f
 					} = e;
-					const f = Object(N.a)(),
-						v = i === r.RED,
+					const E = Object(N.a)(),
+						h = i === r.RED,
 						{
-							subredditName: h,
+							subredditName: v,
 							subredditLink: _
 						} = Ke(n),
-						C = Object(j.b)("external_link");
+						k = Object(j.b)("external_link");
 					return s.a.createElement(se, {
 						title: a,
 						subtitle: t,
 						cardTemplateColor: i,
 						isSelected: g,
-						isForSharing: E
+						isForSharing: f
 					}, s.a.createElement("div", {
 						className: le.a.commentWrapper
 					}, c ? s.a.createElement(de.default, {
@@ -1021,19 +1023,23 @@
 						rel: "noopener noreferrer",
 						to: n,
 						className: Object(p.a)(le.a.image, le.a.commentSubreddit, {
-							[le.a.orange]: !v,
+							[le.a.orange]: !h,
 							[le.a.selected]: g
 						}),
 						tabIndex: g ? 0 : -1
-					}, s.a.createElement(P.a, {
+					}, s.a.createElement(W.a, {
 						src: c,
 						className: Object(p.a)(le.a.subredditImage, {
 							[le.a.isSelected]: g
 						})
-					})) : s.a.createElement("div", {
+					})) : s.a.createElement(de.default, {
+						target: "_blank",
+						rel: "noopener noreferrer",
+						to: n,
 						className: Object(p.a)(le.a.commentSubreddit, le.a.asText, {
 							[le.a.selected]: g
-						})
+						}),
+						tabIndex: g ? 0 : -1
 					}, s.a.createElement("div", {
 						className: le.a.text
 					}, s.a.createElement("p", null, d))), s.a.createElement(de.default, {
@@ -1043,27 +1049,27 @@
 						to: o,
 						target: "_blank",
 						rel: "noopener noreferrer",
-						onClick: () => f(Object(O.a)(b, u)),
+						onClick: () => E(Object(O.a)(b, u)),
 						tabIndex: g ? 0 : -1
 					}, s.a.createElement("div", {
 						className: le.a.text
-					}, s.a.createElement("p", null, l)), h && s.a.createElement("div", {
+					}, s.a.createElement("p", null, l)), v && s.a.createElement("div", {
 						className: Object(p.a)(le.a.subredditFloating, le.a.isTag)
 					}, s.a.createElement(pe, {
 						deeplink: _,
-						subredditName: h,
-						size: "small",
+						subredditName: v,
+						size: "tiny",
 						isRed: !0,
 						subredditId: m,
 						tabIndex: g ? 0 : -1
-					})), !E && s.a.createElement(C, {
+					})), !f && s.a.createElement(k, {
 						className: le.a.externalLinkButton
 					}))))
 				},
-				Ee = t("./src/reddit/actions/modal.ts"),
-				fe = t("./src/reddit/actions/notifications/index.ts"),
-				ve = t("./src/reddit/actions/notificationSettingsLayout/index.ts"),
-				he = t("./src/reddit/actions/toaster.ts"),
+				fe = t("./src/reddit/actions/modal.ts"),
+				Ee = t("./src/reddit/actions/notifications/index.ts"),
+				he = t("./src/reddit/actions/notificationSettingsLayout/index.ts"),
+				ve = t("./src/reddit/actions/toaster.ts"),
 				_e = t("./src/reddit/components/Settings/modalIds.ts"),
 				Oe = t("./src/reddit/models/Toast/index.ts");
 			const {
@@ -1073,7 +1079,7 @@
 			! function(e) {
 				e[e.VERIFY_EMAIL = 0] = "VERIFY_EMAIL", e[e.TURN_ON_DAYLY_DIGEST = 1] = "TURN_ON_DAYLY_DIGEST", e[e.TURN_ON_DN = 2] = "TURN_ON_DN", e[e.DONE = 3] = "DONE"
 			}(je || (je = {}));
-			var Ce = e => {
+			var ke = e => {
 				let {
 					card: {
 						title: a,
@@ -1087,45 +1093,45 @@
 					isSelected: m,
 					isForSharing: g
 				} = e;
-				const E = Object(b.d)(),
-					f = Object(N.a)(),
-					v = Object(b.e)(e => {
+				const f = Object(b.d)(),
+					E = Object(N.a)(),
+					h = Object(b.e)(e => {
 						var a;
 						return null === (a = e.user.account) || void 0 === a ? void 0 : a.email
 					}),
-					h = Object(b.e)(e => e.user.accountSettings.changeEmail.api.pending),
+					v = Object(b.e)(e => e.user.accountSettings.changeEmail.api.pending),
 					[_, j] = Object(i.useState)(je.VERIFY_EMAIL),
-					C = Object(i.useRef)(v),
-					k = () => {
+					k = Object(i.useRef)(h),
+					C = () => {
 						Qe() ? j(je.DONE) : j(je.TURN_ON_DN)
 					},
 					S = () => {
-						l ? k() : j(je.TURN_ON_DAYLY_DIGEST)
+						l ? C() : j(je.TURN_ON_DAYLY_DIGEST)
 					};
 				Object(i.useEffect)(() => {
 					n ? S() : j(je.VERIFY_EMAIL)
 				}, [d]), Object(i.useEffect)(() => {
-					if (v !== C.current && _ === je.VERIFY_EMAIL) {
-						const e = Object(he.e)(Ne._("Email successfully updated!", null, {
+					if (h !== k.current && _ === je.VERIFY_EMAIL) {
+						const e = Object(ve.e)(Ne._("Email successfully updated!", null, {
 							hk: "3iPlUp"
 						}), Oe.b.SuccessCommunityGreen);
-						E(Object(he.f)(e)), S()
+						f(Object(ve.f)(e)), S()
 					}
-				}, [v, _]), Object(i.useEffect)(() => {
-					h && E(Object(Ee.g)(_e.a))
-				}, [h, E]);
+				}, [h, _]), Object(i.useEffect)(() => {
+					v && f(Object(fe.g)(_e.a))
+				}, [v, f]);
 				const y = async () => {
-					await E(Object(fe.requestBrowserNotificationPermissionPromptByUser)(_e.f)), Qe() && j(je.DONE), f(Object(O.h)())
+					await f(Object(Ee.requestBrowserNotificationPermissionPromptByUser)(_e.f)), Qe() && j(je.DONE), E(Object(O.h)())
 				}, I = () => {
-					E(Object(Ee.h)(_e.a))
+					f(Object(fe.h)(_e.a))
 				}, x = () => {
-					E(async (e, a) => {
+					f(async (e, a) => {
 						var t;
-						await e(Object(ve.d)({
+						await e(Object(he.d)({
 							isEnabled: !0,
 							messageType: "EMAIL_DIGEST"
-						})), !!(null === (t = a().user.notificationPrefs.pushSettingsLayout.rows.byId.EMAIL_DIGEST) || void 0 === t ? void 0 : t.isEnabled) && k()
-					}), f(Object(O.g)())
+						})), !!(null === (t = a().user.notificationPrefs.pushSettingsLayout.rows.byId.EMAIL_DIGEST) || void 0 === t ? void 0 : t.isEnabled) && C()
+					}), E(Object(O.g)())
 				};
 				return s.a.createElement(se, {
 					title: a,
@@ -1157,50 +1163,49 @@
 				})))), s.a.createElement("span", {
 					className: le.a.endText
 				}, (() => {
+					const e = m ? 0 : -1;
 					switch (_) {
 						case je.TURN_ON_DN:
-							return Ve(t, le.a.asLink, "", y);
+							return Ve(t, le.a.asLink, "", y, e);
 						case je.VERIFY_EMAIL:
 						case je.TURN_ON_DAYLY_DIGEST:
-							return Ve(t, le.a.asLink, "", _ === je.VERIFY_EMAIL ? I : x);
+							return Ve(t, le.a.asLink, "", _ === je.VERIFY_EMAIL ? I : x, e);
 						case je.DONE:
 							return Ve(t, le.a.asLink, "", () => {
-								E(Object(u.b)("/r/recap")), f(Object(O.b)())
-							})
+								f(Object(u.b)("/r/recap")), E(Object(O.b)())
+							}, e)
 					}
 				})()))
 			};
-			var ke = e => {
+			var Ce = e => {
 				let {
 					card: {
 						title: a,
 						subtitle: t,
-						templateImageUrl: c,
-						cardTemplateColor: i,
-						backgroundImageUrl: n
+						templateImageUrl: r,
+						cardTemplateColor: c,
+						backgroundImageUrl: i
 					},
-					isSelected: l,
-					isForSharing: o
+					isSelected: n,
+					isForSharing: l
 				} = e;
-				const d = i === r.RED;
 				return s.a.createElement(se, {
 					title: a,
 					subtitle: t,
-					cardTemplateColor: i,
-					isSelected: l,
-					isForSharing: o
+					cardTemplateColor: c,
+					isSelected: n,
+					isForSharing: l
 				}, s.a.createElement("div", {
-					className: Object(p.a)(le.a.image, le.a.isCircle, {
-						[le.a.orange]: !d,
-						[le.a.isSelected]: l
+					className: Object(p.a)(le.a.image, le.a.isCircle, le.a.noBg, {
+						[le.a.isSelected]: n
 					}),
 					style: {
-						backgroundImage: `url(${n})`
+						backgroundImage: `url(${i})`
 					}
-				}, s.a.createElement(P.a, {
-					src: c,
+				}, s.a.createElement(W.a, {
+					src: r,
 					className: Object(p.a)(le.a.fallbackStaticImage, le.a.illustration, {
-						[le.a.isSelected]: l
+						[le.a.isSelected]: n
 					})
 				})))
 			};
@@ -1209,42 +1214,40 @@
 					card: {
 						title: a,
 						subtitle: t,
-						templateImageUrl: c,
-						cardTemplateColor: n,
-						backgroundImageUrl: l,
-						dataCutoffText: o
+						templateImageUrl: r,
+						cardTemplateColor: c,
+						backgroundImageUrl: n,
+						dataCutoffText: l
 					},
-					isSelected: d
+					isSelected: o
 				} = e;
-				const m = n === r.RED,
-					[b, u] = Object(i.useState)(!1);
+				const [d, m] = Object(i.useState)(!1);
 				return Object(i.useEffect)(() => {
 					setTimeout(() => {
-						u(d)
+						m(o)
 					})
-				}, [d]), s.a.createElement(se, {
+				}, [o]), s.a.createElement(se, {
 					title: a,
 					subtitle: t,
-					cardTemplateColor: n,
+					cardTemplateColor: c,
 					shouldHideShareButton: !0,
-					isSelected: b,
+					isSelected: d,
 					isInitialCard: !0
 				}, s.a.createElement("div", {
-					className: Object(p.a)(le.a.image, le.a.isCircle, le.a.initialCard, {
-						[le.a.orange]: !m,
-						[le.a.isSelected]: b
+					className: Object(p.a)(le.a.image, le.a.isCircle, le.a.initialCard, le.a.noBg, {
+						[le.a.isSelected]: d
 					}),
 					style: {
-						backgroundImage: `url(${l})`
+						backgroundImage: `url(${n})`
 					}
-				}, s.a.createElement(P.a, {
-					src: c,
+				}, s.a.createElement(W.a, {
+					src: r,
 					className: Object(p.a)(le.a.fallbackStaticImage, le.a.illustration, le.a.initialCard, {
-						[le.a.isSelected]: b
+						[le.a.isSelected]: d
 					})
 				})), s.a.createElement("span", {
 					className: le.a.endText
-				}, o))
+				}, l))
 			};
 			var ye = e => {
 				let {
@@ -1263,11 +1266,11 @@
 					isForSharing: u
 				} = e;
 				const g = Object(N.a)(),
-					E = i === r.RED,
+					f = i === r.RED,
 					{
-						subredditLink: f
+						subredditLink: E
 					} = Ke(n),
-					v = Object(j.b)("external_link");
+					h = Object(j.b)("external_link");
 				return s.a.createElement(se, {
 					title: a,
 					subtitle: t,
@@ -1285,22 +1288,22 @@
 					tabIndex: b ? 0 : -1
 				}, c ? s.a.createElement("div", {
 					className: Object(p.a)(le.a.image, le.a.post, {
-						[le.a.orange]: !E,
+						[le.a.orange]: !f,
 						[le.a.isSelected]: b
 					})
-				}, s.a.createElement(P.a, {
+				}, s.a.createElement(W.a, {
 					src: c,
 					className: le.a.fallbackStaticImage
 				}), s.a.createElement("div", {
 					className: Object(p.a)(le.a.subredditFloating, le.a.isTag)
 				}, s.a.createElement(pe, {
-					deeplink: f,
+					deeplink: E,
 					subredditName: l,
-					size: "small",
+					size: "tiny",
 					isRed: !0,
 					subredditId: d,
 					tabIndex: b ? 0 : -1
-				})), !u && s.a.createElement(v, {
+				})), !u && s.a.createElement(h, {
 					className: le.a.externalLinkButton
 				})) : s.a.createElement("div", {
 					className: le.a.post
@@ -1309,13 +1312,13 @@
 				}, s.a.createElement("p", null, o)), s.a.createElement("div", {
 					className: Object(p.a)(le.a.subredditFloating, le.a.isTag)
 				}, s.a.createElement(pe, {
-					deeplink: f,
+					deeplink: E,
 					subredditName: l,
-					size: "small",
+					size: "tiny",
 					isRed: !0,
 					subredditId: d,
 					tabIndex: b ? 0 : -1
-				})), !u && s.a.createElement(v, {
+				})), !u && s.a.createElement(h, {
 					className: le.a.externalLinkButton
 				}))))
 			};
@@ -1332,7 +1335,7 @@
 						isForSharing: l
 					} = e;
 					const o = Object(N.a)(),
-						d = `${W.a.redditUrl}/r/place`,
+						d = `${P.a.redditUrl}/r/place`,
 						m = `${d}?fullscreen=true`,
 						b = Object(j.b)("external_link"),
 						u = c[0].toLowerCase() !== n.a.orangered;
@@ -1445,7 +1448,7 @@
 						className: Object(p.a)(le.a.canvas, {
 							[le.a.selected]: i
 						}),
-						src: `${W.a.assetPath}/img/recap/rplace_canvas.png`,
+						src: `${P.a.assetPath}/img/recap/rplace_canvas.png`,
 						alt: ""
 					}), s.a.createElement("div", {
 						className: Object(p.a)(le.a.subredditFloating, le.a.isTag, le.a.subreddit, {
@@ -1482,16 +1485,16 @@
 						userName: d,
 						userKarma: m,
 						level: u,
-						subredditListOptional: E,
-						isPremium: f,
-						topicImageUrl: v,
-						translatedLevel: h
+						subredditListOptional: f,
+						isPremium: E,
+						topicImageUrl: h,
+						translatedLevel: v
 					},
 					isSelected: _,
 					isForSharing: j
 				} = e;
-				const C = Object(b.d)(),
-					k = Object(N.a)(),
+				const k = Object(b.d)(),
+					C = Object(N.a)(),
 					S = Object(i.useRef)(null),
 					y = Object(i.useRef)(null),
 					[I, x] = Object(i.useState)(""),
@@ -1500,7 +1503,7 @@
 					R = Object(b.e)(e => e.recap.shareCardWasOpened),
 					L = l === r.WHITE || l === r.YELLOW,
 					F = () => {
-						j || (C(Object(g.b)()), k(Object(O.i)()))
+						j || (k(Object(g.b)()), C(Object(O.i)()))
 					};
 				return Object(i.useEffect)(() => {
 					!_ && R && F()
@@ -1538,10 +1541,10 @@
 					id: !R && j ? "abilityCardShareId" : ""
 				}, s.a.createElement("img", {
 					className: le.a.cardBackground,
-					src: `${W.a.assetPath}/img/recap/ability_card_front_side.png`,
+					src: `${P.a.assetPath}/img/recap/ability_card_front_side.png`,
 					alt: ""
 				}), s.a.createElement("img", {
-					src: `${W.a.assetPath}/img/recap/3d_icon_question_mark 2.png`,
+					src: `${P.a.assetPath}/img/recap/3d_icon_question_mark 2.png`,
 					alt: "",
 					className: Object(p.a)(le.a.cardIcon, {
 						[le.a.selected]: _
@@ -1556,8 +1559,8 @@
 					hk: "35uXbT"
 				})), s.a.createElement("div", {
 					className: le.a.frontSecondaryText
-				}, Re._("Tap to reveal", null, {
-					hk: "RdYjC"
+				}, Re._("Click to reveal", null, {
+					hk: "32dQl2"
 				})))), s.a.createElement("div", {
 					className: Object(p.a)(le.a.backCard, {
 						[le.a.selected]: _ && R
@@ -1620,16 +1623,16 @@
 				}, !j && s.a.createElement("button", {
 					className: le.a.editAvatarWrapper,
 					onClick: e => {
-						e.stopPropagation(), C(Object(xe.b)({
+						e.stopPropagation(), k(Object(xe.b)({
 							clickSource: "recap"
-						})), k(Object(O.f)())
+						})), C(Object(O.f)())
 					},
 					tabIndex: _ && R ? 0 : -1
 				}, s.a.createElement(Te.a, {
 					className: le.a.editAvatar
 				})), s.a.createElement("img", {
 					className: le.a.cardBackground,
-					src: `${W.a.assetPath}/img/recap/${u.toLowerCase()}_ability_card.png`,
+					src: `${P.a.assetPath}/img/recap/${u.toLowerCase()}_ability_card_v2.png`,
 					alt: ""
 				}), s.a.createElement("span", {
 					className: le.a.userName
@@ -1654,7 +1657,7 @@
 						[le.a.epic]: u === c.Epic,
 						[le.a.legendary]: u === c.Legendary
 					})
-				}, h)), s.a.createElement("div", {
+				}, v)), s.a.createElement("div", {
 					className: le.a.abilityWrapper
 				}, s.a.createElement("div", {
 					className: le.a.ability
@@ -1662,7 +1665,7 @@
 					className: le.a.stats
 				}, t), s.a.createElement("div", {
 					className: le.a.subreddits
-				}, (null == E ? void 0 : E.length) ? E.map(e => e ? s.a.createElement(pe, {
+				}, (null == f ? void 0 : f.length) ? f.map(e => e ? s.a.createElement(pe, {
 					key: e.subredditId,
 					className: le.a.subreddit,
 					deeplink: null == e ? void 0 : e.deeplink,
@@ -1672,12 +1675,14 @@
 					subredditId: e.subredditId,
 					tabIndex: -1
 				}) : null) : null)), s.a.createElement("img", {
+					className: le.a.topicBg,
+					src: `${P.a.assetPath}/img/recap/${u.toLowerCase()}_card_topic_bg.png`
+				}), s.a.createElement("img", {
 					className: le.a.topic,
-					src: v
-				}), f && s.a.createElement("img", {
+					src: h
+				}), E && s.a.createElement("img", {
 					className: le.a.premiumIcon,
-					src: `${W.a.assetPath}/img/recap/premium.png`,
-					alt: ""
+					src: `${P.a.assetPath}/img/recap/premium.png`
 				})))), !j && s.a.createElement("div", {
 					className: le.a.controls
 				}, s.a.createElement("div", {
@@ -1699,7 +1704,7 @@
 				}), s.a.createElement(we.a, {
 					on: w,
 					onToggle: () => {
-						C(Object(g.g)()), !w && k(Object(O.k)())
+						k(Object(g.g)()), !w && C(Object(O.k)())
 					},
 					className: le.a.toggleButton,
 					activeColorOverride: n.a.orangered,
@@ -1719,7 +1724,7 @@
 				}), s.a.createElement(we.a, {
 					on: T,
 					onToggle: () => {
-						C(Object(g.f)()), !T && k(Object(O.j)())
+						k(Object(g.f)()), !T && C(Object(O.j)())
 					},
 					className: le.a.toggleButton,
 					activeColorOverride: n.a.orangered,
@@ -1795,7 +1800,7 @@
 						[le.a.orange]: !o,
 						[le.a.isSelected]: n
 					})
-				}, s.a.createElement(P.a, {
+				}, s.a.createElement(W.a, {
 					src: i,
 					className: Object(p.a)(le.a.fallbackStaticImage, le.a.small, {
 						[le.a.isSelected]: n
@@ -1806,7 +1811,7 @@
 					})
 				}, "#1")))
 			};
-			var De, Be = e => {
+			var Be, De = e => {
 				let {
 					card: {
 						title: a,
@@ -1823,7 +1828,6 @@
 					isSelected: u,
 					isForSharing: g
 				} = e;
-				const E = i === r.RED;
 				return s.a.createElement(se, {
 					title: a,
 					subtitle: t,
@@ -1831,14 +1835,13 @@
 					isSelected: u,
 					isForSharing: g
 				}, s.a.createElement("div", {
-					className: Object(p.a)(le.a.image, le.a.isCircle, {
-						[le.a.orange]: !E,
+					className: Object(p.a)(le.a.image, le.a.isCircle, le.a.noBg, {
 						[le.a.isSelected]: u
 					}),
 					style: {
 						backgroundImage: `url(${d})`
 					}
-				}, s.a.createElement(P.a, {
+				}, s.a.createElement(W.a, {
 					src: c,
 					className: Object(p.a)(le.a.fallbackStaticImage, le.a.illustration, {
 						[le.a.isSelected]: u
@@ -1865,12 +1868,12 @@
 			};
 			! function(e) {
 				e.WHITE = "#fff", e.MANGO_100 = "#fff8b8", e.MANGO_300 = "#ffd635", e.MANGO_500 = "#ffa800"
-			}(De || (De = {}));
-			const We = {
-				[r.WHITE]: [De.MANGO_500, De.MANGO_300, De.MANGO_100],
-				[r.YELLOW]: [De.WHITE, De.MANGO_300, De.MANGO_500]
+			}(Be || (Be = {}));
+			const Pe = {
+				[r.WHITE]: [Be.MANGO_500, Be.MANGO_300, Be.MANGO_100],
+				[r.YELLOW]: [Be.WHITE, Be.MANGO_300, Be.MANGO_500]
 			};
-			var Pe, Me = e => {
+			var We, Me = e => {
 				let {
 					card: {
 						title: a,
@@ -1896,7 +1899,7 @@
 					}),
 					style: {
 						width: `${n?Ze[a]:0}px`,
-						backgroundColor: We[c][a],
+						backgroundColor: Pe[c][a],
 						transitionDelay: `${.25*a+.4}s`
 					}
 				}, s.a.createElement("div", {
@@ -1927,8 +1930,8 @@
 			};
 			! function(e) {
 				e.WHITE = "#fff", e.MANGO_300 = "#ffd635", e.MANGO_500 = "#ffa800"
-			}(Pe || (Pe = {}));
-			const He = [Pe.WHITE, Pe.MANGO_300, Pe.MANGO_500];
+			}(We || (We = {}));
+			const He = [We.WHITE, We.MANGO_300, We.MANGO_500];
 			var Ye = e => {
 				let {
 					card: {
@@ -1974,7 +1977,7 @@
 					style: {
 						transitionDelay: `${.25*a+.8}s`
 					}
-				}, s.a.createElement(P.a, {
+				}, s.a.createElement(W.a, {
 					src: e.topicImgUrl,
 					className: le.a.topicImage
 				}))))))
@@ -1991,10 +1994,17 @@
 			! function(e) {
 				e.WHITE = "#fff", e.MANGO_100 = "#fff8b8", e.MANGO_300 = "#ffd635", e.MANGO_500 = "#ffa800"
 			}(ze || (ze = {}));
-			const Ve = (e, a, t, r) => {
-					const c = /(\*\*.*?\*\*)/g;
-					return e.split(c).map((e, i) => c.test(e) ? s.a.createElement("span", {
-						key: e + i,
+			const Ve = function(e, a, t, r) {
+					let c = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : -1;
+					const i = /(\*\*.*?\*\*)/g,
+						n = e.split(i);
+					return n.map((e, n) => i.test(e) ? 0 === c ? s.a.createElement("button", {
+						key: e + n,
+						className: a,
+						onClick: r,
+						tabIndex: c
+					}, e.replace(/\*/g, "").replace(/ /g, " ")) : s.a.createElement("span", {
+						key: e + n,
 						className: Object(p.a)(a, {
 							[t]: /\d/.test(e)
 						}),
@@ -2013,7 +2023,7 @@
 					}, " ", (() => a ? (e => e.__typename === y)(a) ? s.a.createElement(Se, {
 						card: a,
 						isSelected: t
-					}) : (e => e.__typename === S)(a) ? s.a.createElement(ke, {
+					}) : (e => e.__typename === S)(a) ? s.a.createElement(Ce, {
 						card: a,
 						isSelected: t,
 						isForSharing: r
@@ -2021,7 +2031,7 @@
 						card: a,
 						isSelected: t,
 						isForSharing: r
-					}) : (e => e.__typename === w)(a) ? s.a.createElement(Be, {
+					}) : (e => e.__typename === w)(a) ? s.a.createElement(De, {
 						card: a,
 						isSelected: t,
 						isForSharing: r
@@ -2029,7 +2039,7 @@
 						card: a,
 						isSelected: t,
 						isForSharing: r
-					}) : (e => e.__typename === C)(a) ? s.a.createElement(ge, {
+					}) : (e => e.__typename === k)(a) ? s.a.createElement(ge, {
 						card: a,
 						isSelected: t,
 						isForSharing: r
@@ -2049,15 +2059,15 @@
 						card: a,
 						isSelected: t,
 						isForSharing: r
-					}) : (e => e.__typename === k)(a) ? s.a.createElement(Ce, {
+					}) : (e => e.__typename === C)(a) ? s.a.createElement(ke, {
 						card: a,
 						isSelected: t,
 						isForSharing: r
-					}) : B(a) ? s.a.createElement(Le, {
+					}) : D(a) ? s.a.createElement(Le, {
 						card: a,
 						isSelected: t,
 						isForSharing: r
-					}) : (e => e.__typename === D)(a) ? s.a.createElement(Ae, {
+					}) : (e => e.__typename === B)(a) ? s.a.createElement(Ae, {
 						card: a,
 						isSelected: t,
 						isForSharing: r
@@ -2087,7 +2097,7 @@
 							null !== e && t && e.focus()
 						}, [t]),
 						m = Object(i.useCallback)(e => {
-							console.log(e.key), e.key === E.b.Escape && l && l()
+							e.key === f.b.Escape && l && l()
 						}, [l]);
 					return Object(i.useEffect)(() => (window.addEventListener("keydown", m), () => window.removeEventListener("keydown", m)), [m]), s.a.createElement("div", {
 						className: Je.a.modalWrapper,
@@ -2098,9 +2108,9 @@
 						className: Je.a.titleCaption
 					}, o.fbt._("Share", null, {
 						hk: "2Y190R"
-					})), s.a.createElement(h.a, {
-						priority: h.c.PlainLink,
-						kind: h.b.Button,
+					})), s.a.createElement(v.a, {
+						priority: v.c.PlainLink,
+						kind: v.b.Button,
 						Icon: Object(j.b)("close"),
 						onClick: l,
 						disabled: n,
@@ -2133,14 +2143,14 @@
 						className: Je.a.controls
 					}, s.a.createElement("div", {
 						className: Je.a.download
-					}, s.a.createElement(h.a, {
-						priority: h.c.PlainLink,
-						kind: h.b.Button,
+					}, s.a.createElement(v.a, {
+						priority: v.c.PlainLink,
+						kind: v.b.Button,
 						className: Object(p.a)(Je.a.shareButton),
 						Icon: Object(j.b)("download"),
 						iconClassName: Object(p.a)(Je.a.shareIcon),
 						onClick: c,
-						size: h.d.XL,
+						size: v.d.XL,
 						disabled: n,
 						tabIndex: 1
 					}), s.a.createElement("div", {
@@ -2164,25 +2174,25 @@
 						n = () => e(Object(g.h)()),
 						l = Object(b.e)(e => e.recap.isCardsLoading),
 						d = Object(b.e)(e => e.recap.cardsLoadingError),
-						C = Object(b.e)(e => e.recap.currentCardIndex),
-						k = Object(b.e)(e => e.recap.shareCardWasOpened),
-						S = Object(b.e)(e => Object(v.X)(e, {
+						k = Object(b.e)(e => e.recap.currentCardIndex),
+						C = Object(b.e)(e => e.recap.shareCardWasOpened),
+						S = Object(b.e)(e => Object(h.X)(e, {
 							pageLayer: e.platform.currentPage
 						})),
 						[y, I] = Object(i.useState)(!1),
 						x = Object(b.e)(e => e.recap.cards),
 						[w, T] = Object(i.useState)(!1),
 						[R, L] = Object(i.useState)(!0),
-						F = Object(b.e)(e => Object(ea.b)(f.a.SNOOVATAR_MODAL)(e)),
+						F = Object(b.e)(e => Object(ea.b)(E.a.SNOOVATAR_MODAL)(e)),
 						A = Object(b.e)(aa.l),
-						D = Math.ceil((C + 1) / 6),
-						W = C - 6 * (D - 1),
-						P = x.length > 6 && D > 1,
-						M = 6 * (D - 1),
+						B = Math.ceil((k + 1) / 6),
+						P = k - 6 * (B - 1),
+						W = x.length > 6 && B > 1,
+						M = 6 * (B - 1),
 						H = M + 6,
-						Y = 6 * D < x.length,
-						U = x.length && B(x[C]),
-						Z = x.length && (x[C].cardTemplateColor === r.WHITE || x[C].cardTemplateColor === r.YELLOW),
+						Y = 6 * B < x.length,
+						U = x.length && D(x[k]),
+						Z = x.length && (x[k].cardTemplateColor === r.WHITE || x[k].cardTemplateColor === r.YELLOW),
 						z = Object(i.useCallback)(() => {
 							e(Object(g.c)()), e(Object(g.a)())
 						}, [e]);
@@ -2192,12 +2202,12 @@
 						a(Object(O.q)()), z()
 					}, [z, a]), Object(i.useEffect)(() => {
 						x.length && a(Object(O.p)())
-					}, [x, C, a]);
+					}, [x, k, a]);
 					const q = Object(i.useRef)(m()((a, t, r, c, i, s) => {
 							const n = t - 1;
 							let l = r;
 							if (c && i && !s) return e(Object(g.b)());
-							(a instanceof WheelEvent && a.deltaY > 0 || a instanceof KeyboardEvent && a.code === E.b.ArrowDown) && (l = r + 1 <= n && r + 1 >= 0 ? r + 1 : r), (a instanceof WheelEvent && a.deltaY < 0 || a instanceof KeyboardEvent && a.code === E.b.ArrowUp) && (l = r - 1 <= n && r - 1 >= 0 ? r - 1 : r), e(Object(g.e)({
+							(a instanceof WheelEvent && a.deltaY > 0 || a instanceof KeyboardEvent && a.code === f.b.ArrowDown) && (l = r + 1 <= n && r + 1 >= 0 ? r + 1 : r), (a instanceof WheelEvent && a.deltaY < 0 || a instanceof KeyboardEvent && a.code === f.b.ArrowUp) && (l = r - 1 <= n && r - 1 >= 0 ? r - 1 : r), e(Object(g.e)({
 								index: l
 							}))
 						}, 2e3, {
@@ -2205,14 +2215,14 @@
 						})),
 						K = Object(i.useCallback)(e => {
 							if (null !== e && x.length && !c) {
-								if (e.focus(), U && !y && !k) return I(!0);
+								if (e.focus(), U && !y && !C) return I(!0);
 								e.onwheel = e => {
-									L(!0), q.current(e, x.length, C, !!U, y, k)
+									L(!0), q.current(e, x.length, k, !!U, y, C)
 								}, e.onkeydown = e => {
-									e.key !== E.b.ArrowDown && e.key !== E.b.ArrowUp || (L(!0), q.current(e, x.length, C, !!U, y, k))
+									e.key !== f.b.ArrowDown && e.key !== f.b.ArrowUp || (L(!0), q.current(e, x.length, k, !!U, y, C))
 								}
 							}
-						}, [x, C, c, k, y, U]),
+						}, [x, k, c, C, y, U]),
 						Q = s.a.useCallback(async () => {
 							let e = document.getElementById("shareId");
 							if (U && (e = document.getElementById("abilityCardShareId")), e) {
@@ -2220,7 +2230,7 @@
 								const a = await (() => t.e(4).then(t.bind(null, "./node_modules/html-to-image/es/index.js")))(),
 									r = await a.getFontEmbedCSS(e),
 									c = await a.toPng(e, {
-										backgroundColor: U ? "transparent" : Ge[x[C].cardTemplateColor],
+										backgroundColor: U ? "transparent" : Ge[x[k].cardTemplateColor],
 										canvasHeight: U ? 243 : 540,
 										canvasWidth: U ? 170 : 960,
 										style: {
@@ -2230,16 +2240,16 @@
 									});
 								if (c) {
 									const e = document.createElement("a");
-									e.download = `reddit_recap_card${C}.png`, e.href = c, e.click(), T(!1), n()
+									e.download = `reddit_recap_card${k}.png`, e.href = c, e.click(), T(!1), n()
 								}
 							}
-						}, [e, C]),
+						}, [e, k]),
 						X = Object(i.useCallback)(() => {
 							e(S ? Object(u.a)() : Object(u.b)("/")), a(Object(O.e)())
 						}, [S, e, a]);
 					return d ? s.a.createElement(G, {
 						onRetry: z
-					}) : l ? s.a.createElement(V, null) : s.a.createElement(s.a.Fragment, null, l ? s.a.createElement(V, null) : s.a.createElement("div", {
+					}) : s.a.createElement(s.a.Fragment, null, l ? s.a.createElement(V, null) : s.a.createElement("div", {
 						ref: K,
 						className: ra.a.cardsContainer,
 						tabIndex: 0
@@ -2248,47 +2258,47 @@
 							[ra.a.animated]: R
 						}),
 						style: {
-							top: `${100*-C}%`,
-							backgroundColor: Ge[x[C].cardTemplateColor]
+							top: `${100*-k}%`,
+							backgroundColor: Ge[x[k].cardTemplateColor]
 						}
 					}, x.map((e, a) => s.a.createElement("div", {
 						className: ra.a.card,
 						key: e.id
 					}, s.a.createElement(qe, {
 						card: e,
-						isSelected: a === C
-					})))), C < x.length - 1 && s.a.createElement(h.a, {
+						isSelected: a === k
+					})))), k < x.length - 1 && s.a.createElement(v.a, {
 						onClick: () => {
 							e(Object(g.e)({
-								index: C + 1
+								index: k + 1
 							}))
 						},
-						priority: h.c.PlainLink,
-						kind: h.b.Button,
+						priority: v.c.PlainLink,
+						kind: v.b.Button,
 						Icon: Object(j.b)("down"),
-						key: C,
+						key: k,
 						className: Object(p.a)(ra.a.downButton, {
 							[ra.a.black]: !!Z
 						}),
 						iconClassName: ra.a.downButtonIcon
-					}), s.a.createElement(h.a, {
+					}), s.a.createElement(v.a, {
 						className: Object(p.a)(ra.a.closeButton, {
-							[ra.a.black]: x[C].cardTemplateColor === r.BLACK
+							[ra.a.black]: x[k].cardTemplateColor === r.BLACK
 						}),
 						Icon: Object(j.b)("close"),
 						iconClassName: Object(p.a)(ra.a.closeButtonIcon, {
 							[ra.a.black]: !!Z
 						}),
 						onClick: X,
-						priority: h.c.PlainLink,
-						kind: h.b.Button,
+						priority: v.c.PlainLink,
+						kind: v.b.Button,
 						title: o.fbt._("Close recap", null, {
 							hk: "3tZkDG"
 						}),
 						tabIndex: 0
 					}), s.a.createElement("div", {
 						className: ra.a.pager
-					}, P && s.a.createElement("button", {
+					}, W && s.a.createElement("button", {
 						className: Object(p.a)(ra.a.nextDot, {
 							[ra.a.black]: !!Z
 						}),
@@ -2301,7 +2311,7 @@
 					}), x.slice(M, H).map((a, t) => s.a.createElement("button", {
 						key: t,
 						className: Object(p.a)(ra.a.progressDot, {
-							[ra.a.active]: t === W,
+							[ra.a.active]: t === P,
 							[ra.a.black]: !!Z
 						}),
 						onClick: () => {
@@ -2323,8 +2333,8 @@
 					})), c && s.a.createElement($e, {
 						onOverlayClick: () => n(),
 						withOverlay: !0,
-						card: x[C],
-						cardTemplateColor: Ge[x[C].cardTemplateColor],
+						card: x[k],
+						cardTemplateColor: Ge[x[k].cardTemplateColor],
 						isAbilityCard: !!U,
 						isDownloading: w,
 						onDownloadCard: Q,
@@ -2344,4 +2354,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Recap.516ecc2ba4592f58df80.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Recap.d32d4390cec5db445705.js.map

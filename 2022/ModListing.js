@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.89ff2ec8f016b4dd1b73.js
-// Retrieved at 11/9/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.4bc0ac6543c2e382ccc6.js
+// Retrieved at 11/10/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, r) {
@@ -514,9 +514,9 @@
 			})), r.d(t, "unhideSubredditSuccess", (function() {
 				return U
 			})), r.d(t, "unhideSubredditPending", (function() {
-				return J
-			})), r.d(t, "unhideSubredditFailed", (function() {
 				return Q
+			})), r.d(t, "unhideSubredditFailed", (function() {
+				return J
 			})), r.d(t, "toggleHiddenSubreddit", (function() {
 				return Y
 			})), r.d(t, "hideSubreddit", (function() {
@@ -671,15 +671,15 @@
 				q = Object(d.a)(M.b),
 				K = Object(d.a)(M.a),
 				U = Object(d.a)(M.l),
-				J = Object(d.a)(M.k),
-				Q = Object(d.a)(M.j),
+				Q = Object(d.a)(M.k),
+				J = Object(d.a)(M.j),
 				Y = (e, t) => async (r, n, s) => {
 					let {
 						apiContext: i
 					} = s;
 					const o = n(),
 						d = Object(k.l)(o),
-						[a, c, u, l] = t ? [q, V, K, O] : [J, U, Q, E];
+						[a, c, u, l] = t ? [q, V, K, O] : [Q, U, J, E];
 					if (!d || !d.displayText) return;
 					const {
 						currentPage: m
@@ -1739,11 +1739,11 @@
 				q = r("./src/reddit/layout/row/Inline/index.tsx"),
 				K = r("./src/reddit/components/ModListingSidebar/HideCommunities/HideInput/index.m.less"),
 				U = r.n(K);
-			const J = Object(a.c)({
+			const Q = Object(a.c)({
 				apiError: e => e.modListingPage.filteredSubreddits.api.error,
 				isApiPending: D
 			});
-			class Q extends o.a.Component {
+			class J extends o.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						subredditInput: ""
@@ -1787,9 +1787,9 @@
 					}, e.apiError.explanation))
 				}
 			}
-			var Y = Object(d.b)(J, e => ({
+			var Y = Object(d.b)(Q, e => ({
 					hide: t => e(Object(m.hideSubreddit)(t))
-				}))(Object(F.c)(Q)),
+				}))(Object(F.c)(J)),
 				X = r("./src/lib/lessComponent.tsx"),
 				z = r("./src/reddit/components/SubredditIcon/index.tsx"),
 				Z = r("./src/reddit/icons/fonts/Clear/index.tsx"),
@@ -2039,7 +2039,7 @@
 				const b = Object(o.e)(e => e.subreddits.survey[r]),
 					p = Object(o.e)(e => e.subreddits.progressModule[r]),
 					h = Object(o.e)(l.a),
-					f = h !== c.Le.NewModule;
+					f = h !== c.Me.NewModule;
 				return (null === (s = null == p ? void 0 : p.cards) || void 0 === s ? void 0 : s.length) > 0 && f ? i.a.createElement(m, {
 					closeModuleOnMount: !!t && t !== u.g.Large,
 					subredditId: r,
@@ -2101,15 +2101,15 @@
 			const o = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: i.R,
-						experimentName: n.pd
+						experimentName: n.qd
 					});
-					return !(!t || Object(n.qg)(t))
+					return !(!t || Object(n.rg)(t))
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: i.R,
-						experimentName: n.pd
-					}) === n.Nd.ListingEnabled
+						experimentName: n.qd
+					}) === n.Od.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/experiments/recapLeadUpGame.ts": function(e, t, r) {
@@ -2127,8 +2127,8 @@
 			const a = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: i.a,
-						experimentName: n.lf
-					}) === n.Jd
+						experimentName: n.mf
+					}) === n.Kd
 				},
 				c = Object(d.a)(o.R, (e, t) => {
 					let {
@@ -2139,8 +2139,8 @@
 				u = (e, t) => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: e => c(e, t),
-						experimentName: n.mf
-					}) === n.Jd
+						experimentName: n.nf
+					}) === n.Kd
 				}
 		},
 		"./src/reddit/selectors/recapGame.ts": function(e, t, r) {
@@ -2165,4 +2165,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.89ff2ec8f016b4dd1b73.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.4bc0ac6543c2e382ccc6.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.0c832f9f41ca7e605bd4.js
-// Retrieved at 11/9/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.b332aa267cca44739955.js
+// Retrieved at 11/10/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -672,7 +672,7 @@
 						style: t
 					}, e.children)
 				},
-				B = Object(o.b)(() => Object(c.a)(v.F, O.kb, (e, t) => {
+				R = Object(o.b)(() => Object(c.a)(v.F, O.kb, (e, t) => {
 					let {
 						isSponsored: n,
 						postId: s
@@ -685,7 +685,7 @@
 					pageType: s.pageType,
 					post: r
 				})));
-			t.a = B(e => {
+			t.a = R(e => {
 				const t = Object(E.a)();
 				return e.outboundUrl && !e.shouldBlur ? a.a.createElement("a", {
 					"data-testid": "imagebox-outboundurl",
@@ -705,7 +705,7 @@
 					onClick: e.onPostMediaClick
 				}, D(e)) : D(e)
 			});
-			const R = (e, t) => a.a.createElement(S, {
+			const B = (e, t) => a.a.createElement(S, {
 					altText: t.altText,
 					className: Object(d.a)(t.imageClassName, {
 						[y.a]: !e
@@ -734,7 +734,7 @@
 						className: `${r?`${y.a} `:""}${n.className||""}`
 					}), n.isListing ? a.a.createElement("div", {
 						className: n.contentImageClassName
-					}, R(r, n)) : a.a.createElement("a", {
+					}, B(r, n)) : a.a.createElement("a", {
 						href: n.originalSource,
 						onClick: t,
 						style: o ? {
@@ -743,7 +743,7 @@
 						target: "_blank",
 						rel: u.c,
 						className: I.a.imageLink
-					}, R(r, n), n.shouldBlur && !n.isVideoThumbnail && !n.isNsfwBlockingModalEligible && a.a.createElement(h.a, {
+					}, B(r, n), n.shouldBlur && !n.isVideoThumbnail && !n.isNsfwBlockingModalEligible && a.a.createElement(h.a, {
 						isNSFW: !!n.isNSFW,
 						isSpoiler: !!n.isSpoiler
 					})), n.isListing && !n.showFull && n.height > _.j && Object(_.M)(n.height, n.width) && a.a.createElement("div", {
@@ -961,11 +961,11 @@
 					onClick: N
 				} = e, S = t && !(T && Object(d.hasAcceptableAds)()), L = Object(i.d)();
 
-				function B(e) {
+				function R(e) {
 					L(e ? Object(u.r)(p) : Object(u.E)(p))
 				}
 
-				function R() {
+				function B() {
 					return L(Object(u.z)({
 						postId: p
 					}))
@@ -1021,12 +1021,12 @@
 						isNotCardView: g,
 						key: p,
 						loop: !0,
-						onBufferingChange: B,
+						onBufferingChange: R,
 						onClick: N,
 						onLoadStart: F,
 						onLoadedData: H,
 						onLoadedMetadata: A,
-						onPause: R,
+						onPause: B,
 						onPlaying: U,
 						onTimeUpdate: P,
 						shouldLoad: b,
@@ -1633,8 +1633,8 @@
 			const N = /\/(\w+)\/asset\/(\w+)\//,
 				S = I.a.wrapped(f.a, "A", w.a),
 				L = I.a.wrapped(l.a, "ImageBox", w.a),
-				B = I.a.wrapped(e => a.a.createElement("p", e), "Caption", w.a),
-				R = I.a.div("Placeholder", w.a),
+				R = I.a.wrapped(e => a.a.createElement("p", e), "Caption", w.a),
+				B = I.a.div("Placeholder", w.a),
 				D = I.a.wrapped(e => {
 					let {
 						className: t,
@@ -1653,7 +1653,7 @@
 						c && setTimeout(() => {
 							m(!0)
 						}, 1500)
-					}), a.a.createElement(R, M({
+					}), a.a.createElement(B, M({
 						className: Object(o.a)(t, {
 							[w.a.renderSmallMedia]: i,
 							[w.a.reload]: !!c
@@ -1835,7 +1835,7 @@
 							postId: s,
 							isGif: m
 						})))
-					})(b, n, !!t.c, d)), t.c && f.push(((e, t) => a.a.createElement(B, {
+					})(b, n, !!t.c, d)), t.c && f.push(((e, t) => a.a.createElement(R, {
 						key: t
 					}, e))(t.c, `caption${n}`)), f
 				}
@@ -1849,9 +1849,9 @@
 			})), n.d(t, "a", (function() {
 				return L
 			})), n.d(t, "b", (function() {
-				return B
-			})), n.d(t, "f", (function() {
 				return R
+			})), n.d(t, "f", (function() {
+				return B
 			})), n.d(t, "h", (function() {
 				return P
 			})), n.d(t, "g", (function() {
@@ -1983,13 +1983,13 @@
 						key: s
 					}, d)
 				},
-				B = (e, t) => {
+				R = (e, t) => {
 					const n = e.c;
 					return i.a.createElement(c.k, {
 						key: t
 					}, i.a.createElement(c.h, null, n.reduce((e, t, n, s) => e += t.t + (n < s.length ? "\n" : ""), "")))
 				},
-				R = (e, t, n, s, r) => {
+				B = (e, t, n, s, r) => {
 					const a = e.c,
 						o = [],
 						d = a.length;
@@ -2009,13 +2009,13 @@
 						case m.b:
 							return L(e, t, n, s, r);
 						case m.c:
-							return B(e, s);
+							return R(e, s);
 						case m.k:
 							return N(e, n, s);
 						case m.l:
 							return S(s);
 						case m.p:
-							return R(e, t, n, s, r);
+							return B(e, t, n, s, r);
 						case m.v:
 							return H(e, t, n, s, r);
 						case m.A:
@@ -2310,12 +2310,12 @@
 						rtJsonElementProps: o
 					});
 					switch (a) {
-						case b.Qf.SmIcon:
+						case b.Rf.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.Qf.SmIconHc:
+						case b.Rf.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2837,12 +2837,12 @@
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: s.Kf
+						experimentName: s.Lf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Qf.SmIcon || t === s.Qf.SmIconHc
+					return t === s.Rf.SmIcon || t === s.Rf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -2868,4 +2868,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.0c832f9f41ca7e605bd4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.b332aa267cca44739955.js.map

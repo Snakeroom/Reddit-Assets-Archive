@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.657cf533449971411108.js
-// Retrieved at 11/9/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.2a45801fcffdb3f4b793.js
+// Retrieved at 11/10/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -1855,7 +1855,7 @@
 				e.HideNotifications = "hide_notification", e.HideSubreddit = "hide_subreddit", e.BlockAwarder = "block_awarder", e.DecreaseSubredditUpdates = "disable_frequent"
 			}(o || (o = {})),
 			function(e) {
-				e.MiniInbox = "mini_inbox", e.Inbox = "inbox"
+				e.MiniInbox = "mini-inbox", e.Inbox = "inbox"
 			}(i || (i = {})),
 			function(e) {
 				e.Inbox = "inbox", e.Nav = "nav", e.Settings = "notification_app_settings"
@@ -2062,7 +2062,7 @@
 					return e => ({
 						...u.o(e),
 						action: d.c.VIEW,
-						noun: "mini_inbox",
+						noun: "mini-inbox",
 						source: s.Inbox,
 						inbox: {
 							badgeCount: t,
@@ -2267,7 +2267,7 @@
 					...u.o(n),
 					action: d.c.CLICK,
 					noun: "inbox_banner",
-					source: "mini_inbox",
+					source: "mini-inbox",
 					actionInfo: {
 						...u.d(n),
 						type: t
@@ -2292,7 +2292,7 @@
 					...u.o(t),
 					action: d.c.RECEIVE,
 					noun: "inbox_banner",
-					source: "mini_inbox",
+					source: "mini-inbox",
 					actionInfo: {
 						...u.d(t)
 					},
@@ -2304,7 +2304,7 @@
 					...u.o(t),
 					action: d.c.VIEW,
 					noun: "inbox_banner",
-					source: "mini_inbox",
+					source: "mini-inbox",
 					actionInfo: {
 						...u.d(t)
 					},
@@ -3486,7 +3486,7 @@
 					return r ? r * o.Xb < 1639443600180 ? void 0 : O(e) : void 0
 				},
 				O = Object(r.a)(e => Object(c.c)(e, {
-					experimentName: i.De,
+					experimentName: i.Ee,
 					experimentEligibilitySelector: a.e
 				}), d.a)
 		},
@@ -3593,4 +3593,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.657cf533449971411108.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.2a45801fcffdb3f4b793.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.df53c6ccb4d8e31a909e.js
-// Retrieved at 11/9/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.6f14d8e903d927ef12f8.js
+// Retrieved at 11/10/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/actions/modQueue/realtime.ts": function(e, t, s) {
@@ -759,8 +759,8 @@
 					seconds: d
 				})))))
 			};
-			var X = s("./src/reddit/models/ModQueueTrigger/index.ts");
-			const K = e => {
+			var K = s("./src/reddit/models/ModQueueTrigger/index.ts");
+			const X = e => {
 				let {
 					content: t
 				} = e;
@@ -774,7 +774,7 @@
 						})
 					});
 					for (const n of t.modQueueTriggers || []) switch (n.type) {
-						case X.a.AUTOMOD:
+						case K.a.AUTOMOD:
 							s.push({
 								icon: "bot_fill",
 								heading: o.fbt._("Blocked by AutoMod", null, {
@@ -783,7 +783,7 @@
 								reason: n.message
 							});
 							break;
-						case X.a.SHADOWBANNED_SUBMITTER:
+						case K.a.SHADOWBANNED_SUBMITTER:
 							s.push({
 								icon: "ban_fill",
 								heading: o.fbt._("Blocked by automatic filter", null, {
@@ -792,7 +792,7 @@
 								reason: n.message
 							});
 							break;
-						case X.a.HATEFUL_CONTENT:
+						case K.a.HATEFUL_CONTENT:
 							s.push({
 								icon: "mod_mode_fill",
 								heading: o.fbt._("Blocked by automatic filter", null, {
@@ -801,7 +801,7 @@
 								reason: n.message
 							});
 							break;
-						case X.a.CROWD_CONTROL:
+						case K.a.CROWD_CONTROL:
 							s.push({
 								icon: "crowd_control",
 								heading: o.fbt._("Blocked by crowd control", null, {
@@ -810,7 +810,7 @@
 								reason: n.message
 							});
 							break;
-						case X.a.BAN_EVASION:
+						case K.a.BAN_EVASION:
 							s.push({
 								icon: "ban_fill",
 								heading: o.fbt._("Blocked by automatic filter", null, {
@@ -1001,7 +1001,7 @@
 										content: t
 									});
 								case n.FILTERED:
-									return a.a.createElement(K, {
+									return a.a.createElement(X, {
 										content: t
 									});
 								case n.REPORTED:
@@ -1040,8 +1040,8 @@
 							postId: t.id
 						})),
 						G = Object(k.a)(Z),
-						X = Object(g.a)(Z),
-						[K, J] = Object(r.useState)(!1),
+						K = Object(g.a)(Z),
+						[X, J] = Object(r.useState)(!1),
 						Y = Object(i.e)(e => {
 							var s, n;
 							return null === (n = null === (s = null == e ? void 0 : e.features) || void 0 === s ? void 0 : s.realtimeModqueue) || void 0 === n ? void 0 : n.toUpdate.includes(t.id)
@@ -1056,14 +1056,14 @@
 								s >= .5 ? J(!0) : t || J(!1)
 							})
 						}, []);
-					K && Y && U(Object(c.b)(t.id));
+					X && Y && U(Object(c.b)(t.id));
 					const te = Object(r.useMemo)(() => ({
 						threshold: [.5]
 					}), []);
 					Object(_.a)($, ee, te);
 					const se = [n.REPORTED, n.FILTERED, n.UNMODERATED].includes(W),
 						ne = [n.APPROVED, n.UNMODERATED, n.REPORTED].includes(W),
-						oe = H && X,
+						oe = H && K,
 						re = W === n.REMOVED && !t.modRemovalReason,
 						ae = W === n.FILTERED,
 						ie = !H,
@@ -1480,7 +1480,7 @@
 			const A = e => Object(D.c)(e, {
 				experimentEligibilitySelector: M.R,
 				experimentName: F.cc
-			}) === F.Jd;
+			}) === F.Kd;
 			var B = s("./src/reddit/components/ModQueueList/SortByNumReportsTooltip.m.less"),
 				Q = s.n(B);
 			const U = e => {
@@ -1509,15 +1509,15 @@
 				V = s("./src/reddit/selectors/moderatorPermissions.ts"),
 				Z = s("./src/reddit/components/ModQueueList/SubredditSelectorDropdown.m.less"),
 				G = s.n(Z);
-			const X = Object(W.v)({
+			const K = Object(W.v)({
 					currentPageUrl: W.f
 				}),
-				K = Object(d.c)({
+				X = Object(d.c)({
 					moderatingSubreddits: V.o,
 					origin: j.k,
 					isRealtimeMQUpdatesExperimentEnabled: H.a
 				}),
-				J = Object(i.b)(K),
+				J = Object(i.b)(X),
 				Y = m.a.div("DropdownContainer", G.a),
 				$ = m.a.div("SearchBarContainer", G.a),
 				ee = m.a.wrapped(_.b, "Row", G.a),
@@ -1585,7 +1585,7 @@
 					}))
 				}
 			}
-			var ne = X(J(Object(b.c)(se))),
+			var ne = K(J(Object(b.c)(se))),
 				oe = s("./src/reddit/helpers/trackers/modTools.ts"),
 				re = s("./src/reddit/components/ModQueueList/LayoutNavigation.m.less"),
 				ae = s.n(re);
@@ -1855,8 +1855,8 @@
 				V = s.n(H);
 			const Z = u.a.div("LeftRail", V.a),
 				G = u.a.wrapped(W.a, "BulkActionCheckbox", V.a),
-				X = u.a.div("CommentColumn", V.a),
-				K = u.a.div("VoteColumn", V.a),
+				K = u.a.div("CommentColumn", V.a),
+				X = u.a.div("VoteColumn", V.a),
 				J = u.a.wrapped(T.a, "ModToolsFlatlist", V.a),
 				Y = u.a.wrapped(U.a, "Votes", V.a),
 				$ = u.a.div("CommentContentWrapper", V.a),
@@ -1893,12 +1893,12 @@
 					}, m && d.a.createElement(G, {
 						isCheckboxSelected: r,
 						toggleCheckbox: u
-					})), d.a.createElement(K, null, d.a.createElement(Y, {
+					})), d.a.createElement(X, null, d.a.createElement(Y, {
 						compact: !1,
 						model: s,
 						onVoteClick: i,
 						scoreClassName: V.a.score
-					})), d.a.createElement(X, null, d.a.createElement(te, null, s.postTitle && d.a.createElement(ee, null, s.postTitle), s.postAuthor && d.a.createElement(D.a, {
+					})), d.a.createElement(K, null, d.a.createElement(te, null, s.postTitle && d.a.createElement(ee, null, s.postTitle), s.postAuthor && d.a.createElement(D.a, {
 						comment: s
 					})), d.a.createElement($, null, d.a.createElement(L.a, {
 						comment: s
@@ -2048,8 +2048,8 @@
 				Ve = s("./src/higherOrderComponents/asTooltip.tsx"),
 				Ze = s("./src/reddit/actions/modal.ts"),
 				Ge = s("./src/reddit/components/PostFlairPicker/index.tsx"),
-				Xe = s("./src/reddit/components/RestrictedFlatlistButton/index.tsx"),
-				Ke = s("./src/reddit/controls/Dropdown/index.tsx"),
+				Ke = s("./src/reddit/components/RestrictedFlatlistButton/index.tsx"),
+				Xe = s("./src/reddit/controls/Dropdown/index.tsx"),
 				Je = s("./src/reddit/controls/Dropdown/Row.tsx"),
 				Ye = s("./src/reddit/helpers/flair.ts"),
 				$e = s("./src/reddit/selectors/activeModalId.ts"),
@@ -2160,7 +2160,7 @@
 				ht = s.n(bt);
 			const xt = "BulkAction--BulkItemFilter",
 				ft = "BulkActions--PostFlair--Modal",
-				gt = Object(Ve.a)(Ke.a),
+				gt = Object(Ve.a)(Xe.a),
 				kt = e => d.a.createElement(Je.b, {
 					className: Object(f.a)(ht.a.DropdownRow, e.className),
 					displayText: e.displayText,
@@ -2285,28 +2285,28 @@
 						key: e.filterType,
 						displayText: e.name,
 						onClick: () => _(e.filterType)
-					})))), r && d.a.createElement(i.Fragment, null, d.a.createElement(Xe.c, {
+					})))), r && d.a.createElement(i.Fragment, null, d.a.createElement(Ke.c, {
 						className: ht.a.Button,
 						disabled: a,
 						text: x.fbt._("approve", null, {
 							hk: "4ib5o9"
 						}),
 						onClick: u
-					}, d.a.createElement(We.a, null)), d.a.createElement(Xe.c, {
+					}, d.a.createElement(We.a, null)), d.a.createElement(Ke.c, {
 						className: ht.a.Button,
 						disabled: a,
 						text: x.fbt._("remove", null, {
 							hk: "1ImNcF"
 						}),
 						onClick: b
-					}, d.a.createElement(ze.a, null)), d.a.createElement(Xe.c, {
+					}, d.a.createElement(ze.a, null)), d.a.createElement(Ke.c, {
 						className: ht.a.Button,
 						disabled: a,
 						text: x.fbt._("spam", null, {
 							hk: "36ppaW"
 						}),
 						onClick: h
-					}, d.a.createElement(qe.a, null)), d.a.createElement(Xe.c, {
+					}, d.a.createElement(qe.a, null)), d.a.createElement(Ke.c, {
 						className: ht.a.Button,
 						disabled: a,
 						onClick: e.onOpenModToolsDropdown
@@ -2314,7 +2314,7 @@
 						tooltipId: "BulkActions--ModTools"
 					}), d.a.createElement(Ue.a, {
 						name: "list_bulleted"
-					})), d.a.createElement("div", null, w && d.a.createElement(Xe.c, {
+					})), d.a.createElement("div", null, w && d.a.createElement(Ke.c, {
 						disabled: a,
 						onClick: g,
 						className: ht.a.Button
@@ -2894,4 +2894,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.df53c6ccb4d8e31a909e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.6f14d8e903d927ef12f8.js.map
