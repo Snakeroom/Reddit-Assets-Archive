@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.3ab5e8b24017ceaf1a1f.js
-// Retrieved at 11/10/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.056ae7dccf047923f21b.js
+// Retrieved at 11/10/2022, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -9513,10 +9513,10 @@
 			e.exports = JSON.parse('{"id":"c518a45f60a5"}')
 		},
 		"./src/redditGQL/operations/MutedSubreddits.json": function(e) {
-			e.exports = JSON.parse('{"id":"2717435b2dc0"}')
+			e.exports = JSON.parse('{"id":"c09ff0d041c1"}')
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"5398483b6e15"}')
+			e.exports = JSON.parse('{"id":"6a9f2388db84"}')
 		},
 		"./src/redditGQL/operations/UpdateSubredditMuteAndNotificationLevelSettings.json": function(e) {
 			e.exports = JSON.parse('{"id":"2620d72fd633"}')
@@ -9526,4 +9526,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.3ab5e8b24017ceaf1a1f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.056ae7dccf047923f21b.js.map

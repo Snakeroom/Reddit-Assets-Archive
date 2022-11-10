@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.0d4e789764e6d1b5c00f.js
-// Retrieved at 11/10/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.83aa5e191bd88af2c602.js
+// Retrieved at 11/10/2022, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -2376,13 +2376,13 @@
 				return d
 			}));
 			var s = n("./src/lib/loadableAction/index.ts");
-			const o = Object(s.a)(() => Promise.resolve().then(n.bind(null, "./src/reddit/actions/userFlair/userFlair.ts")).then(e => e.userFlairChanged)),
-				r = Object(s.a)(() => Promise.resolve().then(n.bind(null, "./src/reddit/actions/userFlair/userFlair.ts")).then(e => e.toggleUserFlairInSubreddit)),
-				a = Object(s.a)(() => Promise.resolve().then(n.bind(null, "./src/reddit/actions/userFlair/userFlair.ts")).then(e => e.toggleAssignOwnFlairPermission)),
-				i = Object(s.a)(() => Promise.resolve().then(n.bind(null, "./src/reddit/actions/userFlair/userFlair.ts")).then(e => e.saveUserFlairTemplate)),
-				c = Object(s.a)(() => Promise.resolve().then(n.bind(null, "./src/reddit/actions/userFlair/userFlair.ts")).then(e => e.deleteUserFlairTemplate)),
-				l = Object(s.a)(() => Promise.resolve().then(n.bind(null, "./src/reddit/actions/userFlair/userFlair.ts")).then(e => e.reorderUserFlairTemplates)),
-				d = Object(s.a)(() => Promise.resolve().then(n.bind(null, "./src/reddit/actions/userFlair/userFlair.ts")).then(e => e.userFlairLoadedAndModalOpened))
+			const o = Object(s.a)(() => n.e("UserFlair").then(n.bind(null, "./src/reddit/actions/userFlair/userFlair.ts")).then(e => e.userFlairChanged)),
+				r = Object(s.a)(() => n.e("UserFlair").then(n.bind(null, "./src/reddit/actions/userFlair/userFlair.ts")).then(e => e.toggleUserFlairInSubreddit)),
+				a = Object(s.a)(() => n.e("UserFlair").then(n.bind(null, "./src/reddit/actions/userFlair/userFlair.ts")).then(e => e.toggleAssignOwnFlairPermission)),
+				i = Object(s.a)(() => n.e("UserFlair").then(n.bind(null, "./src/reddit/actions/userFlair/userFlair.ts")).then(e => e.saveUserFlairTemplate)),
+				c = Object(s.a)(() => n.e("UserFlair").then(n.bind(null, "./src/reddit/actions/userFlair/userFlair.ts")).then(e => e.deleteUserFlairTemplate)),
+				l = Object(s.a)(() => n.e("UserFlair").then(n.bind(null, "./src/reddit/actions/userFlair/userFlair.ts")).then(e => e.reorderUserFlairTemplates)),
+				d = Object(s.a)(() => n.e("UserFlair").then(n.bind(null, "./src/reddit/actions/userFlair/userFlair.ts")).then(e => e.userFlairLoadedAndModalOpened))
 		},
 		"./src/reddit/components/AccountManagerModal/IFrame/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -21134,6 +21134,167 @@
 				}
 			}
 		},
+		"./src/reddit/reducers/features/userFlair/index.ts": function(e, t, n) {
+			"use strict";
+			n("./node_modules/core-js/modules/web.dom.iterable.js");
+			var s = n("./node_modules/lodash/omit.js"),
+				o = n.n(s),
+				r = n("./src/reddit/actions/grantUserFlair/constants.ts"),
+				a = n("./src/reddit/actions/modQueue/constants.ts"),
+				i = n("./src/reddit/actions/pages/constants.ts"),
+				c = n("./src/reddit/actions/pages/postCreation.ts"),
+				l = n("./src/reddit/actions/pages/postDraft.ts"),
+				d = n("./src/reddit/actions/pages/subreddit.ts"),
+				u = n("./src/reddit/actions/userFlair/constants.ts");
+			const m = {};
+			t.a = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : m,
+					t = arguments.length > 1 ? arguments[1] : void 0;
+				var n, s, p, b, h;
+				switch (t.type) {
+					case d.SUBREDDIT_LOADED:
+					case c.PAGE_LOADED:
+					case l.PAGE_LOADED:
+					case i.b:
+					case i.f:
+					case u.k:
+						return {
+							...e, ...t.payload.userFlair
+						};
+					case a.i:
+					case a.f:
+					case a.r:
+					case a.u:
+					case a.A: {
+						const {
+							response: n
+						} = t.payload, {
+							userFlair: s
+						} = n, o = {
+							...e
+						};
+						return Object.keys(s).forEach(e => {
+							o[e] || (o[e] = s[e])
+						}), o
+					}
+					case u.r: {
+						const {
+							subredditId: n,
+							applied: s,
+							displaySettings: o
+						} = t.payload;
+						return {
+							...e,
+							[n]: {
+								...e[n],
+								...s && {
+									applied: s
+								},
+								displaySettings: o
+							}
+						}
+					}
+					case r.h: {
+						const {
+							subredditId: n,
+							applied: s
+						} = t.payload;
+						return {
+							...e,
+							[n]: {
+								...e[n],
+								applied: s
+							}
+						}
+					}
+					case u.j: {
+						const {
+							subredditId: n,
+							isEnabled: s
+						} = t.payload, o = {
+							...e[n].displaySettings,
+							isEnabled: s
+						};
+						return {
+							...e,
+							[n]: {
+								...e[n],
+								displaySettings: o
+							}
+						}
+					}
+					case u.d: {
+						const {
+							subredditId: s,
+							canAssignOwn: o
+						} = t.payload, r = {
+							...null === (n = e[s]) || void 0 === n ? void 0 : n.permissions,
+							canAssignOwn: o
+						};
+						return {
+							...e,
+							[s]: {
+								...e[s],
+								permissions: r
+							}
+						}
+					}
+					case u.q: {
+						const n = t.payload,
+							o = e[n.subredditId],
+							r = null === (s = e[n.subredditId]) || void 0 === s ? void 0 : s.templates,
+							a = null === (p = e[n.subredditId]) || void 0 === p ? void 0 : p.templateIds,
+							i = (null === (b = n.template) || void 0 === b ? void 0 : b.id) || (null === (h = n.template) || void 0 === h ? void 0 : h.templateId);
+						if (!i) return;
+						const c = {
+								...r,
+								[i]: n.template
+							},
+							l = [...a];
+						return l.includes(i) || l.push(i), {
+							...e,
+							[n.subredditId]: {
+								...o,
+								templates: c,
+								templateIds: l
+							}
+						}
+					}
+					case u.g: {
+						const n = t.payload,
+							s = e[n.subredditId],
+							r = e[n.subredditId].templates,
+							a = e[n.subredditId].templateIds,
+							i = o()(r, n.templateId),
+							c = a.filter(e => e !== n.templateId);
+						return {
+							...e,
+							[n.subredditId]: {
+								...s,
+								templates: {
+									...i
+								},
+								templateIds: c
+							}
+						}
+					}
+					case u.m:
+					case u.l: {
+						const n = t.payload,
+							s = e[n.subredditId];
+						return {
+							...e,
+							[n.subredditId]: {
+								...s,
+								templateIds: n.templateIds
+							}
+						}
+					}
+					default:
+						return e
+				}
+			}
+		},
 		"./src/reddit/routes/acknowledgements/index.ts": function(e, t, n) {
 			"use strict";
 			var s = n("./node_modules/@loadable/component/dist/loadable.esm.js"),
@@ -23984,6 +24145,104 @@
 				d = Object(s.a)(i.Fb, e => !(!e || !e.includes(r.a.Google))),
 				u = Object(s.a)(a.a, e => !!e && [o.b, o.d, o.e, o.g, o.p, o.r].includes(e))
 		},
+		"./src/reddit/selectors/userFlair.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "d", (function() {
+				return l
+			})), n.d(t, "a", (function() {
+				return d
+			})), n.d(t, "e", (function() {
+				return u
+			})), n.d(t, "f", (function() {
+				return m
+			})), n.d(t, "b", (function() {
+				return p
+			})), n.d(t, "c", (function() {
+				return b
+			}));
+			var s = n("./src/lib/objectSelector/index.ts"),
+				o = n("./src/reddit/models/Flair/index.ts"),
+				r = n("./src/reddit/selectors/gold/powerups/index.ts"),
+				a = n("./src/reddit/selectors/moderatorPermissions.ts"),
+				i = n("./src/lib/initializeClient/installReducer.ts"),
+				c = n("./src/reddit/reducers/features/userFlair/index.ts");
+			Object(i.a)({
+				features: {
+					userFlair: c.a
+				}
+			});
+			const l = (e, t) => {
+					let {
+						subredditId: n
+					} = t;
+					return e.features.userFlair[n]
+				},
+				d = (e, t) => {
+					let {
+						subredditId: n
+					} = t;
+					var s, o;
+					return null === (s = e.features.userFlair[n]) || void 0 === s || !s.displaySettings || !!(null === (o = e.features.userFlair[n].displaySettings) || void 0 === o ? void 0 : o.isEnabled)
+				},
+				u = (e, t) => {
+					let {
+						subredditId: n
+					} = t;
+					var s, r;
+					return (null === (s = e.features.userFlair[n]) || void 0 === s ? void 0 : s.displaySettings) ? null === (r = e.features.userFlair[n].displaySettings) || void 0 === r ? void 0 : r.position : o.b.Right
+				},
+				m = Object(s.a)((e, t) => {
+					let {
+						subredditId: n
+					} = t;
+					const s = l(e, {
+						subredditId: n
+					});
+					if (s && s.displaySettings && s.permissions) return {
+						type: o.d.UserFlair,
+						displaySettings: s.displaySettings,
+						permissions: s.permissions
+					}
+				}),
+				p = (e, t) => {
+					let {
+						subredditId: n
+					} = t;
+					const s = d(e, {
+							subredditId: n
+						}),
+						o = m(e, {
+							subredditId: n
+						}),
+						r = l(e, {
+							subredditId: n
+						});
+					if (!s || !o || !r) return !1;
+					if (r.applied) return !0;
+					const i = Object(a.g)(e, {
+							subredditId: n
+						}),
+						{
+							canUserChange: c
+						} = o.permissions;
+					return !!(r.templateIds || []).find(e => {
+						return !r.templates[e].modOnly || i
+					}) && c
+				},
+				b = (e, t) => {
+					let {
+						subredditId: n
+					} = t;
+					if (!n) return !1;
+					const s = p(e, {
+							subredditId: n
+						}),
+						o = Object(r.f)(e, {
+							subredditId: n
+						});
+					return s || o
+				}
+		},
 		"./src/reddit/selectors/userPrefs.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
@@ -24074,7 +24333,7 @@
 			e.exports = JSON.parse('{"id":"445164f0825f"}')
 		},
 		"./src/redditGQL/operations/CreateComment.json": function(e) {
-			e.exports = JSON.parse('{"id":"eced54f14226"}')
+			e.exports = JSON.parse('{"id":"eeb2e6945769"}')
 		},
 		"./src/redditGQL/operations/EconAdminPanelQuery.json": function(e) {
 			e.exports = JSON.parse('{"id":"d47c78bc4284"}')
@@ -24143,7 +24402,7 @@
 		}
 	},
 	[
-		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "Governance~Reddit", "ModListing~Reddit"]
+		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "Governance~Reddit~reddit-components-MediumPost", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.0d4e789764e6d1b5c00f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.83aa5e191bd88af2c602.js.map

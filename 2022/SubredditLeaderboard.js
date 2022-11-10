@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.ad697159df9a6238cc07.js
-// Retrieved at 11/10/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.e789709fb6ab7842e49d.js
+// Retrieved at 11/10/2022, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, r) {
@@ -2832,11 +2832,11 @@
 				}
 		},
 		"./src/redditGQL/operations/GetNearbySubreddits.json": function(e) {
-			e.exports = JSON.parse('{"id":"aff6d12aa0c2"}')
+			e.exports = JSON.parse('{"id":"1ea6a2fd1417"}')
 		},
 		"./src/redditGQL/operations/TopSubreddits.json": function(e) {
-			e.exports = JSON.parse('{"id":"6104afd3cdeb"}')
+			e.exports = JSON.parse('{"id":"fe5a2ea90910"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.ad697159df9a6238cc07.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.e789709fb6ab7842e49d.js.map

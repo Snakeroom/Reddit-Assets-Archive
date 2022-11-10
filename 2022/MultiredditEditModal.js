@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditEditModal.68f70d07aad3412fb28e.js
-// Retrieved at 11/7/2022, 8:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditEditModal.840d0b02aaf532c08d86.js
+// Retrieved at 11/10/2022, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditEditModal"], {
 		"./src/reddit/actions/multireddit/index.ts": function(e, t, i) {
@@ -1429,11 +1429,11 @@
 			}
 		},
 		"./src/redditGQL/operations/AllUserMultireddits.json": function(e) {
-			e.exports = JSON.parse('{"id":"d5a173c1e5e2"}')
+			e.exports = JSON.parse('{"id":"b65f99b680f5"}')
 		},
 		"./src/redditGQL/operations/MultiredditListing.json": function(e) {
-			e.exports = JSON.parse('{"id":"01d818cbcf55"}')
+			e.exports = JSON.parse('{"id":"40569d46b8c6"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditEditModal.68f70d07aad3412fb28e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditEditModal.840d0b02aaf532c08d86.js.map
