@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModQueueActivitySummaryCards.ae6b060f3e801772e4ef.js
-// Retrieved at 11/9/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModQueueActivitySummaryCards.fcc9e1a6a844723e9f95.js
+// Retrieved at 11/10/2022, 7:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModQueueActivitySummaryCards", "reddit-components-ModQueueActivitySummaryCards-ModActivityPreview"], {
 		"./src/reddit/components/ModQueueActivitySummaryCards/ModActivityPreview.tsx": function(e, t, s) {
@@ -365,7 +365,7 @@
 								const {
 									moderatorInfo: s,
 									...n
-								} = null == e ? void 0 : e.node, o = null === (t = null == s ? void 0 : s.name) || void 0 === t ? void 0 : t.toLowerCase();
+								} = null == e ? void 0 : e.node, o = null === (t = null == s ? void 0 : s.displayName) || void 0 === t ? void 0 : t.toLowerCase();
 								"reddit" !== o && "automoderator" !== o && j({
 									info: s,
 									lastModAction: n
@@ -893,4 +893,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModQueueActivitySummaryCards.ae6b060f3e801772e4ef.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModQueueActivitySummaryCards.fcc9e1a6a844723e9f95.js.map

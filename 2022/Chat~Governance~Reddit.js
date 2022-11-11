@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.0ef1c2ad1521e8e696d7.js
-// Retrieved at 11/10/2022, 6:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e183b2efd039ebe03b00.js
+// Retrieved at 11/10/2022, 7:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3659,11 +3659,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("178461"),
+				buildNumber: Object(r.c)("178467"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1668119495"),
+				buildTimestamp: Object(r.b)("1668123617"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6399,14 +6399,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c2e1e3c06b8c436879a6ef88cda3412e1e2260bf7-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c9222a27e566050a5a301b8b882f89c9cffedfb3b-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "2e1e3c06b8c436879a6ef88cda3412e1e2260bf7-production",
+						release: "9222a27e566050a5a301b8b882f89c9cffedfb3b-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6942,7 +6942,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "2e1e3c06b8c436879a6ef88cda3412e1e2260bf7-production",
+							releaseClient: "9222a27e566050a5a301b8b882f89c9cffedfb3b-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -9814,10 +9814,10 @@
 					}
 				})({
 					experiences: {
-						[l.V.LiveChatVideoEdu]: {
+						[l.W.LiveChatVideoEdu]: {
 							allowCached: !0
 						},
-						[l.V.LiveChatReactionEdu]: {
+						[l.W.LiveChatReactionEdu]: {
 							allowCached: !0
 						}
 					}
@@ -20687,9 +20687,9 @@
 							id: e.profile.id,
 							isNSFW: e.profile.isNsfw,
 							name: e.profile.name,
-							type: T.Q.User,
+							type: T.R.User,
 							url: e.profile.path,
-							wls: e.whitelistStatus && T.W[e.whitelistStatus]
+							wls: e.whitelistStatus && T.X[e.whitelistStatus]
 						}
 					}(e),
 					_ = function(e) {
@@ -20710,10 +20710,10 @@
 							isNSFW: e.subreddit.isNsfw,
 							isQuarantined: e.subreddit.isQuarantined,
 							name: e.subreddit.name,
-							type: T.Q.Public,
+							type: T.R.Public,
 							url: e.subreddit.path,
 							subscribers: e.subreddit.subscribersCount,
-							wls: e.whitelistStatus && T.W[e.whitelistStatus]
+							wls: e.whitelistStatus && T.X[e.whitelistStatus]
 						}
 					}(e);
 				return {
@@ -20766,12 +20766,12 @@
 				H = i("./src/reddit/models/SearchDiscoveryUnit/index.ts");
 			const W = e => (null == e ? void 0 : e.__typename) === E.a.SubredditPost,
 				K = {
-					[T.U.PostSearchPromotedTrend]: H.b.PromotedTrendHero,
-					[T.U.PostSearchTrending]: H.b.Hero
+					[T.V.PostSearchPromotedTrend]: H.b.PromotedTrendHero,
+					[T.V.PostSearchTrending]: H.b.Hero
 				},
 				z = {
-					[T.U.PostSearchPromotedTrend]: V.f,
-					[T.U.PostSearchTrending]: V.l
+					[T.V.PostSearchPromotedTrend]: V.f,
+					[T.V.PostSearchTrending]: V.l
 				};
 
 			function Y(e, t, i, n) {
@@ -20849,11 +20849,11 @@
 			}
 			const Z = e => e && e.reduce((e, t) => "" === e ? e + t : e += `,${t}`, ""),
 				ee = {
-					[n.fc.Comments]: T.N.Comments,
-					[n.fc.Hot]: T.N.Hot,
-					[n.fc.New]: T.N.New,
-					[n.fc.Top]: T.N.Top,
-					[n.fc.Relevance]: T.N.Relevance
+					[n.fc.Comments]: T.O.Comments,
+					[n.fc.Hot]: T.O.Hot,
+					[n.fc.New]: T.O.New,
+					[n.fc.Top]: T.O.Top,
+					[n.fc.Relevance]: T.O.Relevance
 				},
 				te = e => !c()(e);
 
@@ -20904,7 +20904,7 @@
 						Ke = null === (N = null === (C = null === (F = null === (R = t.data.search) || void 0 === R ? void 0 : R.general) || void 0 === F ? void 0 : F.posts) || void 0 === C ? void 0 : C.feedMetadata) || void 0 === N ? void 0 : N.treatment;
 					ye = B(null === (x = null === (P = null === (j = null === (A = t.data.search) || void 0 === A ? void 0 : A.general) || void 0 === j ? void 0 : j.posts) || void 0 === P ? void 0 : P.feedMetadata) || void 0 === x ? void 0 : x.appliedSort);
 					const ze = null !== (L = null === (D = t.data) || void 0 === D ? void 0 : D.subredditsInfoByNames) && void 0 !== L ? L : [];
-					[Me, fe] = J(ze), Ue = Ke === T.U.PostSearchTrending || Ke === T.U.PostSearchPromotedTrend ? H.c.Trending : H.c.Default, [be, we, Ee, Se, Te, ve, ge] = function(e, t) {
+					[Me, fe] = J(ze), Ue = Ke === T.V.PostSearchTrending || Ke === T.V.PostSearchPromotedTrend ? H.c.Trending : H.c.Default, [be, we, Ee, Se, Te, ve, ge] = function(e, t) {
 						var i, n, r, s;
 						const o = {},
 							d = {},
@@ -21042,7 +21042,7 @@
 						He = null === (N = null === (C = null === (R = null === (I = t.data.search) || void 0 === I ? void 0 : I.general) || void 0 === R ? void 0 : R.posts) || void 0 === C ? void 0 : C.feedMetadata) || void 0 === N ? void 0 : N.treatment;
 					fe = B(null === (x = null === (P = null === (j = null === (A = t.data.search) || void 0 === A ? void 0 : A.general) || void 0 === j ? void 0 : j.posts) || void 0 === P ? void 0 : P.feedMetadata) || void 0 === x ? void 0 : x.appliedSort);
 					const We = null !== (k = null === (D = t.data) || void 0 === D ? void 0 : D.subredditsInfoByNames) && void 0 !== k ? k : [];
-					[ke, ge] = J(We), Be = He === T.U.PostSearchTrending || He === T.U.PostSearchPromotedTrend ? H.c.Trending : H.c.Default, [pe, Pe, he, xe, ve, we] = function(e, t) {
+					[ke, ge] = J(We), Be = He === T.V.PostSearchTrending || He === T.V.PostSearchPromotedTrend ? H.c.Trending : H.c.Default, [pe, Pe, he, xe, ve, we] = function(e, t) {
 						var i, n, r;
 						const s = {},
 							o = {},
@@ -21053,7 +21053,7 @@
 						if (e.length)
 							for (const c of e)
 								if (null === (i = null == c ? void 0 : c.node) || void 0 === i ? void 0 : i.id) {
-									if (t === T.U.PostSearchPromotedTrend || t === T.U.PostSearchTrending) {
+									if (t === T.V.PostSearchPromotedTrend || t === T.V.PostSearchTrending) {
 										const i = null === (r = null === (n = e[0]) || void 0 === n ? void 0 : n.node) || void 0 === r ? void 0 : r.id;
 										i && (l.push(i), u[i] = {
 											id: i,
@@ -24343,17 +24343,17 @@
 		"./src/reddit/helpers/graphql/normalizePostFromGql/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "e", (function() {
-				return w
+				return E
 			})), i.d(t, "g", (function() {
-				return I
+				return F
 			})), i.d(t, "d", (function() {
-				return x
+				return L
 			})), i.d(t, "b", (function() {
-				return q
+				return H
 			})), i.d(t, "c", (function() {
-				return $
+				return J
 			})), i.d(t, "f", (function() {
-				return Z
+				return ie
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./src/lib/constants/index.ts"),
@@ -24364,9 +24364,10 @@
 				a = i("./src/reddit/helpers/graphql/normalizePoll/index.ts"),
 				l = i("./src/reddit/helpers/graphql/normalizePredictionTournamentFromGql/index.ts"),
 				u = i("./src/reddit/helpers/isRedditMediaDomain.ts"),
-				c = i("./src/reddit/models/Flair/index.ts"),
-				_ = i("./src/reddit/models/Media/index.ts");
-			const m = e => {
+				c = i("./src/reddit/models/Audio/index.ts"),
+				_ = i("./src/reddit/models/Flair/index.ts"),
+				m = i("./src/reddit/models/Media/index.ts");
+			const p = e => {
 				switch (e) {
 					case "IMPRESSION":
 						return r.a.Impression;
@@ -24434,15 +24435,16 @@
 						return r.a.Impression
 				}
 			};
-			var p = i("./src/reddit/models/Post/index.ts"),
-				h = i("./src/reddit/models/PostCreationForm/index.ts"),
-				f = i("./src/reddit/models/RichTextJson/index.ts"),
-				b = i("./src/reddit/models/Subreddit/index.ts"),
-				g = i("./src/reddit/models/User/index.ts"),
-				v = i("./src/reddit/helpers/graphql/helpers.ts");
-			const w = e => Object(p.i)(e) || Object(p.j)(e),
-				y = [p.e.Embed, p.e.Image, p.e.Video, p.e.Gifvideo],
-				E = e => {
+			var h = i("./src/reddit/models/Post/index.ts"),
+				f = i("./src/reddit/models/PostCreationForm/index.ts"),
+				b = i("./src/reddit/models/RichTextJson/index.ts"),
+				g = i("./src/reddit/models/Subreddit/index.ts"),
+				v = i("./src/reddit/models/User/index.ts"),
+				w = i("./src/redditGQL/types.ts"),
+				y = i("./src/reddit/helpers/graphql/helpers.ts");
+			const E = e => Object(h.i)(e) || Object(h.j)(e),
+				S = [h.e.Embed, h.e.Image, h.e.Video, h.e.Gifvideo],
+				T = e => {
 					const t = e.thumbnail ? {
 						url: e.thumbnail.url,
 						...e.thumbnail.dimensions
@@ -24451,10 +24453,10 @@
 						width: null,
 						height: null
 					};
-					return Object(p.h)(e) && e.authorOnlyInfo && t.url ? t : Object(p.n)(e) && !e.subreddit.isThumbnailsEnabled ? e.isSelfPost ? {
+					return Object(h.h)(e) && e.authorOnlyInfo && t.url ? t : Object(h.n)(e) && !e.subreddit.isThumbnailsEnabled ? e.isSelfPost ? {
 						...t,
 						url: s.a.SELF
-					} : e.media && e.media.typeHint && y.includes(e.media.typeHint) ? {
+					} : e.media && e.media.typeHint && S.includes(e.media.typeHint) ? {
 						...t,
 						url: s.a.IMAGE
 					} : {
@@ -24462,14 +24464,14 @@
 						url: s.a.DEFAULT
 					} : t
 				},
-				S = e => Object(p.n)(e) ? {
+				O = e => Object(h.n)(e) ? {
 					id: e.subreddit.id,
 					type: "subreddit"
 				} : {
 					id: e.profile.id,
 					type: "profile"
 				},
-				T = e => {
+				I = e => {
 					let {
 						flair: t,
 						isNsfw: i,
@@ -24479,49 +24481,49 @@
 					const s = [];
 					t && s.push(...Object(o.c)(t)), n && s.push({
 						text: "spoiler",
-						type: c.f.Spoiler
+						type: _.f.Spoiler
 					}), i && s.push({
 						text: "nsfw",
-						type: c.f.Nsfw
+						type: _.f.Nsfw
 					});
 					let d = !1;
-					return Object(p.l)(r) ? d = r.profile.isQuarantined : Object(p.n)(r) && (d = r.subreddit.isQuarantined), d && s.push({
+					return Object(h.l)(r) ? d = r.profile.isQuarantined : Object(h.n)(r) && (d = r.subreddit.isQuarantined), d && s.push({
 						text: "quarantined",
-						type: c.f.Quarantined
+						type: _.f.Quarantined
 					}), s
 				},
-				O = e => e.map(e => {
+				R = e => e.map(e => {
 					let {
 						type: t,
 						url: i
 					} = e;
 					return {
 						url: i || "",
-						type: m(t)
+						type: p(t)
 					}
 				}),
-				I = 36e5,
-				R = e => {
+				F = 36e5,
+				C = e => {
 					let {
 						domain: t,
 						url: i,
 						...n
 					} = e;
-					if (Object(p.h)(n) || !n.isSelfPost && !Object(u.a)(t || "")) {
-						const e = n.outboundLink && n.outboundLink.expiresAt && Object(v.g)(n.outboundLink.expiresAt);
+					if (Object(h.h)(n) || !n.isSelfPost && !Object(u.a)(t || "")) {
+						const e = n.outboundLink && n.outboundLink.expiresAt && Object(y.g)(n.outboundLink.expiresAt);
 						return {
 							displayText: t || "",
 							url: i || "",
 							...n.outboundLink && {
 								outboundUrl: n.outboundLink.url || void 0,
-								outboundUrlCreated: e && e - I || void 0,
+								outboundUrlCreated: e && e - F || void 0,
 								outboundUrlExpiration: e || void 0
 							}
 						}
 					}
 					return null
 				},
-				F = {
+				N = {
 					small: 108,
 					medium: 216,
 					large: 320,
@@ -24529,7 +24531,7 @@
 					xxlarge: 960,
 					xxxlarge: 1080
 				},
-				C = {
+				A = {
 					originalObfuscated: "dynamic",
 					smallObfuscated: 108,
 					mediumObfuscated: 216,
@@ -24538,13 +24540,13 @@
 					xxlargeObfuscated: 960,
 					xxxlargeObfuscated: 1080
 				},
-				N = (e, t) => {
+				j = (e, t) => {
 					const i = e && (t ? e.animated : e.still);
 					if (!i) return [];
 					const n = e && e.still && e.still.source ? e.still.source.dimensions.width : 0;
-					return Object.keys(F).reduce((e, r) => {
+					return Object.keys(N).reduce((e, r) => {
 						const s = i[t ? `${t}_${r}` : r];
-						if (!s || F[r] > n) return e;
+						if (!s || N[r] > n) return e;
 						const o = {
 							url: s.url,
 							...s.dimensions
@@ -24552,7 +24554,7 @@
 						return o ? [...e, o] : e
 					}, [])
 				},
-				A = (e, t, i) => {
+				P = (e, t, i) => {
 					const n = i[t];
 					return n && n.url && n.dimensions && n.dimensions.width && n.dimensions.height && e.push({
 						x: n.dimensions.width,
@@ -24560,56 +24562,56 @@
 						u: n.url
 					}), e
 				},
-				j = e => Object.keys(F).reduce((t, i) => A(t, i, e), []),
-				P = e => Object.keys(C).reduce((t, i) => A(t, i, e), []),
-				x = e => Object(v.h)(e, f.i),
-				D = e => {
+				x = e => Object.keys(N).reduce((t, i) => P(t, i, e), []),
+				D = e => Object.keys(A).reduce((t, i) => P(t, i, e), []),
+				L = e => Object(y.h)(e, b.i),
+				k = e => {
 					const {
 						media: t,
 						isSelfPost: i,
 						isSurveyAd: n
 					} = e;
-					if (n) return _.o.EMBED;
-					if (i) return e.content && e.content.richtext ? _.o.RTJSON : _.o.TEXT;
-					if (e.gallery) return _.o.GALLERY;
+					if (n) return m.o.EMBED;
+					if (i) return e.content && e.content.richtext ? m.o.RTJSON : m.o.TEXT;
+					if (e.gallery) return m.o.GALLERY;
 					switch (t && t.typeHint) {
-						case p.e.Image:
-							return _.o.IMAGE;
-						case p.e.Gifvideo:
-							return _.o.GIFVIDEO;
-						case p.e.Video:
-							return _.o.VIDEO;
-						case p.e.Embed:
-							return _.o.EMBED;
-						case p.e.RPAN:
-							return _.o.LIVEVIDEO;
+						case h.e.Image:
+							return m.o.IMAGE;
+						case h.e.Gifvideo:
+							return m.o.GIFVIDEO;
+						case h.e.Video:
+							return m.o.VIDEO;
+						case h.e.Embed:
+							return m.o.EMBED;
+						case h.e.RPAN:
+							return m.o.LIVEVIDEO;
 						default:
 							return null
 					}
 				},
-				L = e => e.authorOnlyInfo && e.authorOnlyInfo.contentMode === p.d.Markdown ? h.i.MARKDOWN : h.i.RICH_TEXT,
-				k = e => Math.min(e.height, e.width),
-				B = e => {
+				B = e => e.authorOnlyInfo && e.authorOnlyInfo.contentMode === h.d.Markdown ? f.i.MARKDOWN : f.i.RICH_TEXT,
+				M = e => Math.min(e.height, e.width),
+				U = e => {
 					let {
 						media: t,
 						post: i,
 						domain: n
 					} = e;
 					var r, s, o, d, a;
-					const l = n && _.g[n];
-					return (null === (r = null == t ? void 0 : t.video) || void 0 === r ? void 0 : r.embedUrl) && !i.isSurveyAd ? t.video.embedUrl : l === _.v.Twitter ? Object(_.E)(i.id) : (null === (o = null === (s = null == t ? void 0 : t.still) || void 0 === s ? void 0 : s.source) || void 0 === o ? void 0 : o.url) ? null === (a = null === (d = null == t ? void 0 : t.still) || void 0 === d ? void 0 : d.source) || void 0 === a ? void 0 : a.url : null
+					const l = n && m.g[n];
+					return (null === (r = null == t ? void 0 : t.video) || void 0 === r ? void 0 : r.embedUrl) && !i.isSurveyAd ? t.video.embedUrl : l === m.v.Twitter ? Object(m.E)(i.id) : (null === (o = null === (s = null == t ? void 0 : t.still) || void 0 === s ? void 0 : s.source) || void 0 === o ? void 0 : o.url) ? null === (a = null === (d = null == t ? void 0 : t.still) || void 0 === d ? void 0 : d.source) || void 0 === a ? void 0 : a.url : null
 				},
-				M = (e, t) => {
-					var i, n, r, s, o, d, a, l, u, c, m, p, h;
+				G = (e, t) => {
+					var i, n, r, s, o, d, a, l, u, c, _, p, h;
 					const {
 						media: f,
 						content: b,
 						domain: g
 					} = e, v = (e => e.isSpoiler || e.isNsfw)(e) ? f && f.obfuscatedStill && f.obfuscatedStill.source && f.obfuscatedStill.source.url : null;
 					switch (t) {
-						case _.o.VIDEO: {
+						case m.o.VIDEO: {
 							const e = 400,
-								i = N(f),
+								i = j(f),
 								n = f && f.still && f.still.source && {
 									url: f.still.source.url,
 									...f.still.source.dimensions
@@ -24617,8 +24619,8 @@
 							let r;
 							if (i.length) {
 								r = i.reduce((e, t) => e.width > t.width ? e : t);
-								const t = i.reduce((t, i) => k(i) > e && n && k(i) < k(n) ? [...t, i] : t, []);
-								t.length && (r = t.reduce((e, t) => k(e) < k(t) ? e : t))
+								const t = i.reduce((t, i) => M(i) > e && n && M(i) < M(n) ? [...t, i] : t, []);
+								t.length && (r = t.reduce((e, t) => M(e) < M(t) ? e : t))
 							} else r = n;
 							return {
 								type: t,
@@ -24630,67 +24632,67 @@
 								width: f && f.streaming ? f.streaming.dimensions.width : 0,
 								height: f && f.streaming ? f.streaming.dimensions.height : 0,
 								posterUrl: r && r.url || void 0,
-								richtextContent: (null == b ? void 0 : b.richtext) ? x(b.richtext) : void 0
+								richtextContent: (null == b ? void 0 : b.richtext) ? L(b.richtext) : void 0
 							}
 						}
-						case _.o.LIVEVIDEO:
+						case m.o.LIVEVIDEO:
 							return {
 								type: t, obfuscated: null, hlsUrl: f && f.RPAN && f.RPAN.hlsUrl || "", scrubberThumbSource: f && f.RPAN && f.RPAN.scrubberMediaUrl || ""
 							};
-						case _.o.TEXT:
+						case m.o.TEXT:
 							return {
-								type: t, obfuscated: null, markdownContent: e.content ? e.content.markdown : "", content: "", rteMode: L(e)
+								type: t, obfuscated: null, markdownContent: e.content ? e.content.markdown : "", content: "", rteMode: B(e)
 							};
-						case _.o.RTJSON:
+						case m.o.RTJSON:
 							return {
-								type: t, obfuscated: null, markdownContent: e.content ? e.content.markdown : "", richtextContent: x(b.richtext), content: "", rteMode: L(e), mediaMetadata: Y(e)
+								type: t, obfuscated: null, markdownContent: e.content ? e.content.markdown : "", richtextContent: L(b.richtext), content: "", rteMode: B(e), mediaMetadata: Q(e)
 							};
-						case _.o.IMAGE: {
+						case m.o.IMAGE: {
 							const n = f && f.animated && f.animated.gif_source ? "gif" : null;
 							let r = "";
 							return "i.redd.it" === e.domain && e.url ? r = e.url : f && f.still && f.still.source && (r = f.still.source.url), {
 								type: t,
 								obfuscated: v,
-								resolutions: N(f, n),
+								resolutions: j(f, n),
 								width: f && f.still && f.still.source ? f.still.source.dimensions.width : 0,
 								height: f && f.still && f.still.source ? f.still.source.dimensions.height : 0,
-								richtextContent: (null === (i = e.content) || void 0 === i ? void 0 : i.richtext) ? x(e.content.richtext) : void 0,
+								richtextContent: (null === (i = e.content) || void 0 === i ? void 0 : i.richtext) ? L(e.content.richtext) : void 0,
 								content: r
 							}
 						}
-						case _.o.EMBED:
+						case m.o.EMBED:
 							return {
-								type: t, obfuscated: v, width: (null === (r = null === (n = null == f ? void 0 : f.video) || void 0 === n ? void 0 : n.dimensions) || void 0 === r ? void 0 : r.width) || (null === (d = null === (o = null === (s = null == f ? void 0 : f.still) || void 0 === s ? void 0 : s.source) || void 0 === o ? void 0 : o.dimensions) || void 0 === d ? void 0 : d.width) || 0, height: (null === (l = null === (a = null == f ? void 0 : f.video) || void 0 === a ? void 0 : a.dimensions) || void 0 === l ? void 0 : l.height) || (null === (m = null === (c = null === (u = null == f ? void 0 : f.still) || void 0 === u ? void 0 : u.source) || void 0 === c ? void 0 : c.dimensions) || void 0 === m ? void 0 : m.height) || 0, provider: (null === (h = null === (p = null == f ? void 0 : f.video) || void 0 === p ? void 0 : p.attribution) || void 0 === h ? void 0 : h.providerName) || g && _.g[g] || null, content: B({
+								type: t, obfuscated: v, width: (null === (r = null === (n = null == f ? void 0 : f.video) || void 0 === n ? void 0 : n.dimensions) || void 0 === r ? void 0 : r.width) || (null === (d = null === (o = null === (s = null == f ? void 0 : f.still) || void 0 === s ? void 0 : s.source) || void 0 === o ? void 0 : o.dimensions) || void 0 === d ? void 0 : d.width) || 0, height: (null === (l = null === (a = null == f ? void 0 : f.video) || void 0 === a ? void 0 : a.dimensions) || void 0 === l ? void 0 : l.height) || (null === (_ = null === (c = null === (u = null == f ? void 0 : f.still) || void 0 === u ? void 0 : u.source) || void 0 === c ? void 0 : c.dimensions) || void 0 === _ ? void 0 : _.height) || 0, provider: (null === (h = null === (p = null == f ? void 0 : f.video) || void 0 === p ? void 0 : p.attribution) || void 0 === h ? void 0 : h.providerName) || g && m.g[g] || null, content: U({
 									media: f,
 									post: e,
 									domain: g
 								})
 							};
-						case _.o.GIFVIDEO:
+						case m.o.GIFVIDEO:
 							return {
-								type: t, obfuscated: v, resolutions: N(f, "mp4"), width: f && f.still && f.still.source ? f.still.source.dimensions.width : 0, height: f && f.still && f.still.source ? f.still.source.dimensions.height : 0, gifBackgroundImage: f && f.still && f.still.source ? f.still.source.url : "", content: f && f.animated && f.animated.mp4_source ? f.animated.mp4_source.url : "", richtextContent: (null == b ? void 0 : b.richtext) ? x(b.richtext) : void 0
+								type: t, obfuscated: v, resolutions: j(f, "mp4"), width: f && f.still && f.still.source ? f.still.source.dimensions.width : 0, height: f && f.still && f.still.source ? f.still.source.dimensions.height : 0, gifBackgroundImage: f && f.still && f.still.source ? f.still.source.url : "", content: f && f.animated && f.animated.mp4_source ? f.animated.mp4_source.url : "", richtextContent: (null == b ? void 0 : b.richtext) ? L(b.richtext) : void 0
 							};
-						case _.o.GALLERY: {
-							const i = Q(e.gallery);
+						case m.o.GALLERY: {
+							const i = X(e.gallery);
 							return {
 								type: t,
 								obfuscated: null,
 								gallery: i ? i.gallery : null,
 								mediaMetadata: i ? i.mediaMetadata : void 0,
-								crossPostRootId: J(e.crosspostRoot),
-								crossPostParentId: J(e.crosspostRoot),
+								crossPostRootId: Z(e.crosspostRoot),
+								crossPostParentId: Z(e.crosspostRoot),
 								numCrossposts: e.crosspostCount || 0,
 								isCrosspostable: e.isCrosspostable,
-								richtextContent: (null == b ? void 0 : b.richtext) ? x(b.richtext) : void 0
+								richtextContent: (null == b ? void 0 : b.richtext) ? L(b.richtext) : void 0
 							}
 						}
 						default:
 							return (null == b ? void 0 : b.richtext) ? {
-								richtextContent: x(b.richtext)
+								richtextContent: L(b.richtext)
 							} : null
 					}
 				},
-				U = {
+				q = {
 					adPromotedUserPostIds: [],
 					adSupplementaryText: null,
 					events: [],
@@ -24700,13 +24702,13 @@
 					isSponsored: !1,
 					isSurveyAd: !1
 				},
-				G = /\.gif\?(.*$)/,
-				q = e => {
-					const t = e.adEvents.find(e => m(e.type) === r.a.Impression),
-						i = t && t.url && t.url.match(G);
+				V = /\.gif\?(.*$)/,
+				H = e => {
+					const t = e.adEvents.find(e => p(e.type) === r.a.Impression),
+						i = t && t.url && t.url.match(V);
 					return i && i[1] ? `t3_${i[1]}` : null
 				},
-				V = e => {
+				W = e => {
 					const {
 						adEvents: t,
 						adSupplementaryTextRichtext: i,
@@ -24721,10 +24723,10 @@
 					} = e;
 					return {
 						adPromotedUserPostIds: (u || []).map(e => e.id),
-						adSupplementaryText: x(i),
+						adSupplementaryText: L(i),
 						callToAction: n,
 						domainOverride: r,
-						events: O(t),
+						events: R(t),
 						impressionId: s,
 						impressionIdStr: null,
 						isBlank: o,
@@ -24734,8 +24736,8 @@
 						subcaption: l
 					}
 				},
-				H = e => e ? e.toLowerCase() : null,
-				W = e => {
+				K = e => e ? e.toLowerCase() : null,
+				z = e => {
 					let {
 						isLive: t,
 						startsAt: i,
@@ -24749,21 +24751,21 @@
 				};
 			t.a = e => {
 				const t = {
-						post: Z(e)
+						post: ie(e)
 					},
 					{
 						crosspostRoot: i
 					} = e;
-				return i && i.type === p.a.Post && i.postInfo && (t.crosspost = Z(i.postInfo)), t
+				return i && i.type === h.a.Post && i.postInfo && (t.crosspost = ie(i.postInfo)), t
 			};
-			const K = e => e && e.__typename !== g.c.DeletedRedditor ? "name" in e && e.name || "" : n.H,
-				z = e => !(!e || e.__typename !== g.c.AvailableRedditor) && !!e.isPremiumMember,
-				Y = e => e.content && e.content.richtextMedia && e.content.richtextMedia.length ? $(e.content.richtextMedia) : null,
-				$ = (e, t) => e.length ? e.reduce((e, i) => {
+			const Y = e => e && e.__typename !== v.c.DeletedRedditor ? "name" in e && e.name || "" : n.H,
+				$ = e => !(!e || e.__typename !== v.c.AvailableRedditor) && !!e.isPremiumMember,
+				Q = e => e.content && e.content.richtextMedia && e.content.richtextMedia.length ? J(e.content.richtextMedia) : null,
+				J = (e, t) => e.length ? e.reduce((e, i) => {
 					switch (i.__typename) {
-						case p.c.ImageAsset:
+						case h.c.ImageAsset:
 							"image/gif" === i.mimetype ? e[i.id] = {
-								e: f.r,
+								e: b.r,
 								id: i.id,
 								s: {
 									gif: i.url,
@@ -24771,7 +24773,7 @@
 									y: i.width
 								}
 							} : e[i.id] = {
-								e: f.s,
+								e: b.s,
 								id: i.id,
 								s: {
 									u: i.url,
@@ -24780,9 +24782,9 @@
 								}
 							};
 							break;
-						case p.c.AnimatedImageAsset:
+						case h.c.AnimatedImageAsset:
 							"image/gif" === i.mimetype && (e[i.id] = {
-								e: f.r,
+								e: b.r,
 								id: i.id,
 								s: {
 									gif: i.url,
@@ -24793,10 +24795,10 @@
 								}
 							});
 							break;
-						case p.c.VideoAsset:
+						case h.c.VideoAsset:
 							e[i.id] = {
 								dashUrl: i.dashUrl,
-								e: f.t,
+								e: b.t,
 								hlsUrl: i.hlsUrl,
 								id: i.id,
 								x: i.height,
@@ -24805,7 +24807,7 @@
 					}
 					return e
 				}, {}) : null,
-				Q = e => {
+				X = e => {
 					if (!(e && "items" in e)) return null;
 					const t = e.items,
 						i = {},
@@ -24822,7 +24824,7 @@
 								outboundUrl: e.outboundUrl || void 0,
 								callToAction: e.callToAction || void 0,
 								displayAddress: e.displayAddress || void 0,
-								adEvents: O(e.adEvents || [])
+								adEvents: R(e.adEvents || [])
 							}), t && e.media) {
 							const n = (e => e.length ? e.reduce((e, t) => {
 								let i;
@@ -24835,11 +24837,11 @@
 									y: t.height || 0,
 									u: t.url
 								}, e[t.id] = {
-									e: f.s,
+									e: b.s,
 									id: t.id,
 									m: t.mimetype || "",
-									o: P(t),
-									p: j(t),
+									o: D(t),
+									p: x(t),
 									s: i
 								}, e
 							}, {}) : null)([e.media]);
@@ -24850,8 +24852,8 @@
 						mediaMetadata: Object.keys(i).length > 0 ? i : null
 					}
 				},
-				J = e => e ? e.type === p.a.Post ? e.postInfo && e.postInfo.id : e.comment && e.comment.id : null,
-				X = e => {
+				Z = e => e ? e.type === h.a.Post ? e.postInfo && e.postInfo.id : e.comment && e.comment.id : null,
+				ee = e => {
 					var t;
 					const {
 						profile: {
@@ -24878,12 +24880,18 @@
 							width: null,
 							height: null
 						},
-						type: b.g.User,
+						type: g.g.User,
 						isNSFW: a,
 						isQuarantined: l
 					}
 				},
-				Z = e => {
+				te = {
+					[w.N.NotAvailable]: c.a.NotAvailable,
+					[w.N.Processing]: c.a.Processing,
+					[w.N.Available]: c.a.Available,
+					[w.N.Removed]: c.a.Removed
+				},
+				ie = e => {
 					var t;
 					const {
 						audioRoom: i,
@@ -24894,38 +24902,41 @@
 						crosspostRoot: c,
 						discussionType: _,
 						domain: m,
-						id: h,
+						id: p,
 						isArchived: f,
 						isCreatedFromAdsUi: b,
 						isContestMode: g,
-						isFollowed: w,
-						isGildable: y,
-						isHidden: O,
-						isLocked: I,
-						isNsfw: F,
-						isOriginalContent: C,
+						isFollowed: v,
+						isGildable: w,
+						isHidden: E,
+						isLocked: S,
+						isNsfw: R,
+						isOriginalContent: F,
 						isSaved: N,
 						isSpoiler: A,
 						isStickied: j,
 						liveCommentsWebsocket: P,
 						permalink: x,
-						removedBy: L,
-						removedByCategory: k,
+						removedBy: D,
+						removedByCategory: L,
 						poll: B,
-						predictionTournament: G,
-						score: q,
-						suggestedCommentSort: Y,
-						title: $,
+						predictionTournament: M,
+						score: U,
+						suggestedCommentSort: V,
+						title: H,
 						topAwardedType: Q,
-						upvoteRatio: Z,
-						viewCount: ee,
-						voteState: te,
-						isReactAllowed: ie,
-						attributionInfo: ne,
-						reactedFrom: re
-					} = e, se = k && "NONE" !== k ? k.toLowerCase() : null, oe = J(c), de = {
-						allAwardings: r ? Object(v.b)(r) : void 0,
-						audioRoom: i,
+						upvoteRatio: J,
+						viewCount: X,
+						voteState: ie,
+						isReactAllowed: ne,
+						attributionInfo: re,
+						reactedFrom: se
+					} = e, oe = L && "NONE" !== L ? L.toLowerCase() : null, de = Z(c), ae = {
+						allAwardings: r ? Object(y.b)(r) : void 0,
+						audioRoom: (null == i ? void 0 : i.roomId) ? {
+							...i,
+							recordingStatus: (null == i ? void 0 : i.recordingStatus) ? te[null == i ? void 0 : i.recordingStatus] : void 0
+						} : void 0,
 						author: n.H,
 						authorId: "",
 						authorIsBlocked: !1,
@@ -24938,15 +24949,15 @@
 							type: "subreddit"
 						},
 						contestMode: g,
-						created: Object(v.g)(o),
-						crosspostParentId: oe,
-						crosspostRootId: oe,
+						created: Object(y.g)(o),
+						crosspostParentId: de,
+						crosspostRootId: de,
 						discussionType: _,
 						distinguishType: null,
 						domain: m || "",
-						flair: T(e),
-						hidden: O,
-						id: h,
+						flair: I(e),
+						hidden: E,
+						id: p,
 						ignoreReports: !1,
 						isApproved: !1,
 						isArchived: f,
@@ -24954,23 +24965,23 @@
 						isCreatedFromAdsUi: b,
 						isCrosspostable: !1,
 						isEligibleForQASchema: null !== (t = e.isEligibleForQASchema) && void 0 !== t && t,
-						isFollowed: w,
-						isGildable: y,
-						isLocked: I,
+						isFollowed: v,
+						isGildable: w,
+						isLocked: S,
 						isMediaOnly: !1,
 						isMeta: !1,
-						isNSFW: F,
-						isOriginalContent: C,
+						isNSFW: R,
+						isOriginalContent: F,
 						isPinned: !1,
 						isRemoved: !1,
-						isScoreHidden: null === q,
+						isScoreHidden: null === U,
 						isSpam: !1,
 						isSpoiler: A,
 						isStickied: j,
 						liveCommentsWebsocket: P,
-						isReactAllowed: ie,
-						reactedFrom: re,
-						attributionInfo: ne,
+						isReactAllowed: ne,
+						reactedFrom: se,
+						attributionInfo: re,
 						media: null,
 						modReports: [],
 						numComments: s || 0,
@@ -24979,68 +24990,68 @@
 						permalink: `https://www.reddit.com${x}`,
 						pollData: B && Object(a.a)(B) || void 0,
 						postCategories: null,
-						postId: h,
-						predictionTournament: G && Object(l.a)(G) || void 0,
+						postId: p,
+						predictionTournament: M && Object(l.a)(M) || void 0,
 						previewComments: [],
-						removedBy: L && L.name ? L.name : null,
-						removedByCategory: se,
+						removedBy: D && D.name ? D.name : null,
+						removedByCategory: oe,
 						saved: N,
-						score: null !== q && q > 0 ? q : 0,
+						score: null !== U && U > 0 ? U : 0,
 						sendReplies: !1,
-						source: R(e),
-						suggestedSort: Y && n.w[Y] || null,
+						source: C(e),
+						suggestedSort: V && n.w[V] || null,
 						thumbnail: {
 							height: null,
 							url: "",
 							width: null
 						},
-						title: $ || "",
+						title: H || "",
 						topAwardedType: Q || void 0,
-						upvoteRatio: Z,
+						upvoteRatio: J,
 						userReports: [],
-						viewCount: ee || 0,
-						voteState: te ? Object(v.d)(te) : 0,
-						...Object(p.h)(e) ? V(e) : U,
+						viewCount: X || 0,
+						voteState: ie ? Object(y.d)(ie) : 0,
+						...Object(h.h)(e) ? W(e) : q,
 						...Object(d.a)(e)
 					};
-					if (Object(p.i)(e) || Object(p.j)(e)) return de;
+					if (Object(h.i)(e) || Object(h.j)(e)) return ae;
 					const {
-						authorInfo: ae,
-						authorOnlyInfo: le,
-						distinguishedAs: ue,
-						isCrosspostable: ce,
-						isMediaOnly: _e,
-						isPollIncluded: me,
-						media: pe,
-						postEventInfo: he
-					} = e, fe = (e => e && e.still && e.still.source ? {
+						authorInfo: le,
+						authorOnlyInfo: ue,
+						distinguishedAs: ce,
+						isCrosspostable: _e,
+						isMediaOnly: me,
+						isPollIncluded: pe,
+						media: he,
+						postEventInfo: fe
+					} = e, be = (e => e && e.still && e.still.source ? {
 						url: e.still.source.url,
 						...e.still.source.dimensions
-					} : void 0)(pe);
+					} : void 0)(he);
 					return {
-						...de,
-						author: ae && K(ae) || n.H,
-						authorId: ae && ae.id || "",
+						...ae,
+						author: le && Y(le) || n.H,
+						authorId: le && le.id || "",
 						authorIsBlocked: !1,
-						belongsTo: S(e),
-						distinguishType: H(ue),
-						isCrosspostable: ce,
-						isMediaOnly: _e,
-						isMeta: me,
-						isAuthorPremium: z(ae),
-						media: M(e, D(e)),
-						thumbnail: E(e),
+						belongsTo: O(e),
+						distinguishType: K(ce),
+						isCrosspostable: _e,
+						isMediaOnly: me,
+						isMeta: pe,
+						isAuthorPremium: $(le),
+						media: G(e, k(e)),
+						thumbnail: T(e),
+						...be && {
+							preview: be
+						},
+						...ue && {
+							sendReplies: ue.isReceivingPostReplies
+						},
 						...fe && {
-							preview: fe
+							eventInfo: z(fe)
 						},
-						...le && {
-							sendReplies: le.isReceivingPostReplies
-						},
-						...he && {
-							eventInfo: W(he)
-						},
-						...Object(p.l)(e) && {
-							profile: X(e)
+						...Object(h.l)(e) && {
+							profile: ee(e)
 						}
 					}
 				}
@@ -30212,6 +30223,30 @@
 				m = () => {
 					window.sessionStorage && window.sessionStorage.removeItem("account_manager_modal_storage")
 				}
+		},
+		"./src/reddit/models/Audio/index.ts": function(e, t, i) {
+			"use strict";
+			var n, r, s;
+
+			function o(e) {
+				return Boolean(e.audioRoom)
+			}
+			i.d(t, "a", (function() {
+					return r
+				})), i.d(t, "b", (function() {
+					return s
+				})), i.d(t, "c", (function() {
+					return o
+				})),
+				function(e) {
+					e.Unknown = "UNKNOWN", e.Twilio = "TWILIO"
+				}(n || (n = {})),
+				function(e) {
+					e[e.NotAvailable = 0] = "NotAvailable", e[e.Processing = 1] = "Processing", e[e.Available = 2] = "Available", e[e.Removed = 3] = "Removed"
+				}(r || (r = {})),
+				function(e) {
+					e[e.Unknown = 0] = "Unknown", e[e.NotStarted = 1] = "NotStarted", e[e.Scheduled = 2] = "Scheduled", e[e.InProgress = 3] = "InProgress", e[e.Ended = 4] = "Ended"
+				}(s || (s = {}))
 		},
 		"./src/reddit/models/Comment/addProfileImgParam.ts": function(e, t, i) {
 			"use strict";
@@ -45035,10 +45070,10 @@
 			e.exports = JSON.parse('{"id":"eb0965c8c3a7"}')
 		},
 		"./src/redditGQL/operations/GeneralSearch.json": function(e) {
-			e.exports = JSON.parse('{"id":"f97114eb919c"}')
+			e.exports = JSON.parse('{"id":"f1dcbbacf05f"}')
 		},
 		"./src/redditGQL/operations/GeneralSearchOptimized.json": function(e) {
-			e.exports = JSON.parse('{"id":"7e5045235dbc"}')
+			e.exports = JSON.parse('{"id":"1d8ff4915bf5"}')
 		},
 		"./src/redditGQL/operations/GetPostReactInfo.json": function(e) {
 			e.exports = JSON.parse('{"id":"72e76fc8e5c5"}')
@@ -45092,7 +45127,7 @@
 			e.exports = JSON.parse('{"id":"059a51904852"}')
 		},
 		"./src/redditGQL/operations/TopicBySlug.json": function(e) {
-			e.exports = JSON.parse('{"id":"351949f3bb4d"}')
+			e.exports = JSON.parse('{"id":"e5dedc01a3c4"}')
 		},
 		"./src/redditGQL/operations/UpdatePostDistinguishState.json": function(e) {
 			e.exports = JSON.parse('{"id":"e869489c84a4"}')
@@ -45200,26 +45235,28 @@
 				})), i.d(t, "M", (function() {
 					return ji
 				})), i.d(t, "N", (function() {
-					return Ji
+					return Wi
 				})), i.d(t, "O", (function() {
-					return en
+					return Ji
 				})), i.d(t, "P", (function() {
-					return nn
+					return en
 				})), i.d(t, "Q", (function() {
-					return On
+					return nn
 				})), i.d(t, "R", (function() {
-					return Pn
+					return On
 				})), i.d(t, "S", (function() {
-					return xn
+					return Pn
 				})), i.d(t, "T", (function() {
-					return Dn
+					return xn
 				})), i.d(t, "U", (function() {
-					return kn
+					return Dn
 				})), i.d(t, "V", (function() {
-					return Hn
+					return kn
 				})), i.d(t, "W", (function() {
-					return tr
+					return Hn
 				})), i.d(t, "X", (function() {
+					return tr
+				})), i.d(t, "Y", (function() {
 					return ir
 				})),
 				function(e) {
@@ -50588,4 +50625,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.0ef1c2ad1521e8e696d7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e183b2efd039ebe03b00.js.map

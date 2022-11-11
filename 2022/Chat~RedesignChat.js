@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.d2761c95576b2e604301.js
-// Retrieved at 11/10/2022, 5:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.25030c6fd6f9b2dbcecc.js
+// Retrieved at 11/10/2022, 7:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -7721,7 +7721,7 @@
 				}),
 				Wc = Object(i.b)(Gc, e => ({
 					fetchLiveChats: () => e(Object(a.fetchLiveChats)()),
-					fetchUXExperiences: () => e(Object(c.c)([Fc.V.LiveChatVideoEdu])),
+					fetchUXExperiences: () => e(Object(c.c)([Fc.W.LiveChatVideoEdu])),
 					sendChatTabViewEvent: () => e(Object(s.ob)())
 				}));
 			class zc extends o.a.Component {
@@ -11531,14 +11531,14 @@
 				De = n.n(Ae);
 			const Ue = () => {
 				var e;
-				const [t, n] = Object(a.useState)(!1), [r, o] = Object(a.useState)(!1), l = Object(a.useRef)(null), u = Object(a.useRef)(!1), h = Object(a.useRef)([0, 25, 50, 75, 100]), m = null === (e = Object(c.e)((e => t => t.uxExperiences.experiences[e] || null)(re.V.LiveChatVideoEdu))) || void 0 === e ? void 0 : e.value, b = Object(c.d)(), p = Object(a.useContext)(we.a), g = Object(a.useCallback)(() => {
+				const [t, n] = Object(a.useState)(!1), [r, o] = Object(a.useState)(!1), l = Object(a.useRef)(null), u = Object(a.useRef)(!1), h = Object(a.useRef)([0, 25, 50, 75, 100]), m = null === (e = Object(c.e)((e => t => t.uxExperiences.experiences[e] || null)(re.W.LiveChatVideoEdu))) || void 0 === e ? void 0 : e.value, b = Object(c.d)(), p = Object(a.useContext)(we.a), g = Object(a.useCallback)(() => {
 					var e;
-					const t = re.V.LiveChatVideoEdu;
-					b(Object(ke.e)(re.V.LiveChatVideoEdu)), b(Object(ke.d)({
+					const t = re.W.LiveChatVideoEdu;
+					b(Object(ke.e)(re.W.LiveChatVideoEdu)), b(Object(ke.d)({
 						experience: t,
 						value: !1
 					})), null === (e = null == p ? void 0 : p.updateUXExperienceValue) || void 0 === e || e.call(p, {
-						experience: re.V.LiveChatVideoEdu,
+						experience: re.W.LiveChatVideoEdu,
 						value: !1
 					})
 				}, [b]);
@@ -19997,4 +19997,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.d2761c95576b2e604301.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.25030c6fd6f9b2dbcecc.js.map

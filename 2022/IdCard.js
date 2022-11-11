@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.3b051e8bbd182375020a.js
-// Retrieved at 11/10/2022, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.33f643c12ee5017ad302.js
+// Retrieved at 11/10/2022, 7:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1945,24 +1945,24 @@
 					})
 				},
 				g = {
-					[s.P.Low]: r.fbt._("Low", null, {
+					[s.Q.Low]: r.fbt._("Low", null, {
 						hk: "4k3iTe"
 					}),
-					[s.P.High]: r.fbt._("High (default)", null, {
+					[s.Q.High]: r.fbt._("High (default)", null, {
 						hk: "2GOHsH"
 					}),
-					[s.P.All]: r.fbt._("All", null, {
+					[s.Q.All]: r.fbt._("All", null, {
 						hk: "gl6gc"
 					})
 				},
 				x = {
-					[s.P.Low]: r.fbt._("Low (default)", null, {
+					[s.Q.Low]: r.fbt._("Low (default)", null, {
 						hk: "2tqJd7"
 					}),
-					[s.P.High]: r.fbt._("High", null, {
+					[s.Q.High]: r.fbt._("High", null, {
 						hk: "ABfkc"
 					}),
-					[s.P.All]: r.fbt._("All", null, {
+					[s.Q.All]: r.fbt._("All", null, {
 						hk: "3bPDOM"
 					})
 				},
@@ -3185,8 +3185,8 @@
 				V = n.n(z);
 			const {
 				fbt: W
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), K = G.a.div("DescriptionContainer", V.a);
-			class Q extends i.a.Component {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Q = G.a.div("DescriptionContainer", V.a);
+			class K extends i.a.Component {
 				constructor(e) {
 					super(e), this.containerRef = null, this.textRef = null, this.showFullDescription = e => {
 						e.preventDefault(), e.stopPropagation(), this.setState({
@@ -3215,7 +3215,7 @@
 					} = this.state, o = n ? W._("Welcome to {subredditName}", [W._param("subredditName", n.name)], {
 						hk: "1dVVp0"
 					}) : "";
-					return i.a.createElement(K, {
+					return i.a.createElement(Q, {
 						className: Object(p.a)(V.a.descriptionContainer, s && V.a.truncated),
 						"data-redditstyle": !0,
 						innerRef: this.setContainerRef,
@@ -3233,7 +3233,7 @@
 					}))))
 				}
 			}
-			var J = Q,
+			var J = K,
 				Y = n("./src/reddit/components/SubredditUnsavedChangesModal/index.tsx"),
 				X = n("./src/reddit/controls/LoadingIcon/index.tsx"),
 				Z = n("./src/reddit/helpers/trackers/inlineSubredditEditing.ts"),
@@ -3488,8 +3488,8 @@
 				ze = n("./src/reddit/controls/ImageInput/index.tsx"),
 				Ve = n("./src/reddit/featureFlags/index.ts"),
 				We = n("./src/reddit/helpers/awards/isEligibleForCommunityAwards.ts"),
-				Ke = n("./src/reddit/helpers/localStorage/index.ts"),
-				Qe = n("./src/reddit/helpers/trackers/communityTopics.ts"),
+				Qe = n("./src/reddit/helpers/localStorage/index.ts"),
+				Ke = n("./src/reddit/helpers/trackers/communityTopics.ts"),
 				Je = n("./src/reddit/helpers/trackers/lightbox.ts"),
 				Ye = n("./src/reddit/helpers/trackers/modHub.ts"),
 				Xe = n("./src/reddit/helpers/trackers/subredditMuting.ts"),
@@ -3766,8 +3766,8 @@
 			var zt = n("./src/reddit/components/IdCard/StatsBlock/experiment.m.less"),
 				Vt = n.n(zt),
 				Wt = n("./src/reddit/components/IdCard/StatsBlock/index.m.less"),
-				Kt = n.n(Wt);
-			const Qt = e => {
+				Qt = n.n(Wt);
+			const Kt = e => {
 					let {
 						subreddit: t,
 						subscribersCount: n,
@@ -3775,7 +3775,7 @@
 					} = e;
 					const o = Object(qt.a)(t.name);
 					return i.a.createElement("span", {
-						className: Kt.a.compactStats
+						className: Qt.a.compactStats
 					}, o.map((e, t) => {
 						let {
 							color: n,
@@ -3785,7 +3785,7 @@
 							alt: 0 === t ? r.fbt._("Members icons", null, {
 								hk: "1ayNe4"
 							}) : "",
-							className: Kt.a.memberIcon,
+							className: Qt.a.memberIcon,
 							key: s,
 							src: s,
 							style: {
@@ -3793,18 +3793,18 @@
 							}
 						})
 					}), i.a.createElement("span", {
-						className: Kt.a.metaText
+						className: Qt.a.metaText
 					}, r.fbt._({
 						"*": "{number of members} members",
 						_1: "1 member"
 					}, [r.fbt._plural(n, "number of members", Object(Dt.b)(n))], {
 						hk: "4nET31"
 					})), i.a.createElement("span", {
-						className: Kt.a.metaText
+						className: Qt.a.metaText
 					}, r.fbt._("{viewingCount} online", [r.fbt._param("viewingCount", Object(Dt.b)(s))], {
 						hk: "cxviW"
 					})), i.a.createElement(Ht, {
-						className: Kt.a.metaText,
+						className: Qt.a.metaText,
 						isCompact: !0,
 						subredditName: t.name
 					}))
@@ -3822,28 +3822,28 @@
 						toggleTooltip: l
 					} = e;
 					return i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
-						className: c ? Vt.a.stats : Kt.a.stats
+						className: c ? Vt.a.stats : Qt.a.stats
 					}, i.a.createElement("div", {
 						onMouseEnter: () => l(s),
 						onMouseLeave: () => l(s)
 					}, i.a.createElement(Gt, {
 						printNumber: n,
-						printNumberClassname: Kt.a.count,
+						printNumberClassname: Qt.a.count,
 						tooltipId: s,
 						viewText: r,
-						viewTextClassname: c ? Kt.a.metaTextBacklinks : Kt.a.metaText
+						viewTextClassname: c ? Qt.a.metaTextBacklinks : Qt.a.metaText
 					})), i.a.createElement("div", {
 						onMouseEnter: () => l(d),
 						onMouseLeave: () => l(d)
 					}, i.a.createElement(Gt, {
 						printNumber: o,
-						printNumberClassname: c ? Kt.a.onlineCount : Kt.a.count,
+						printNumberClassname: c ? Qt.a.onlineCount : Qt.a.count,
 						tooltipId: d,
 						viewText: a,
-						viewTextClassname: c ? Kt.a.metaTextBacklinks : Kt.a.metaText
+						viewTextClassname: c ? Qt.a.metaTextBacklinks : Qt.a.metaText
 					})), i.a.createElement(Ht, {
-						className: Kt.a.count,
-						labelClassName: Kt.a.metaTextBacklinks,
+						className: Qt.a.count,
+						labelClassName: Qt.a.metaTextBacklinks,
 						subredditName: t
 					}), i.a.createElement("div", null)))
 				};
@@ -3986,7 +3986,7 @@
 					showCreatePollButton: e => (e => Object(st.c)(e, {
 						experimentEligibilitySelector: st.a,
 						experimentName: Me.M
-					}) === Me.U.Treatment)(e) && !Object(Ke.h)(),
+					}) === Me.U.Treatment)(e) && !Object(Qe.h)(),
 					shouldShowFlairPreview: (e, t) => {
 						let {
 							listingName: n
@@ -4198,7 +4198,7 @@
 						listingName: F,
 						subreddit: y,
 						idCardWidget: n
-					}), G = P || g || x, z = !P && y.id ? y.id : "", V = v && v.created, W = `IdCard--Subscribers--${g}--${z}`, K = `IdCard--CurrentlyViewing--${g}--${z}`, Q = `IdCard--CakeDay--${g}--${z}`, Y = `IdCard--CoinCoint--${g}--${z}`, X = m && !g, Z = !P && !u && !c, ee = !P && !g && j && !x, te = ee && !l ? i.a.createElement(oe, {
+					}), G = P || g || x, z = !P && y.id ? y.id : "", V = v && v.created, W = `IdCard--Subscribers--${g}--${z}`, Q = `IdCard--CurrentlyViewing--${g}--${z}`, K = `IdCard--CakeDay--${g}--${z}`, Y = `IdCard--CoinCoint--${g}--${z}`, X = m && !g, Z = !P && !u && !c, ee = !P && !g && j && !x, te = ee && !l ? i.a.createElement(oe, {
 						description: A,
 						shouldTruncateDescription: !1,
 						isCommentsPage: !!s,
@@ -4210,7 +4210,7 @@
 					}), ne = d && _, re = l ? ne && T && T > 0 : ne, se = I ? i.a.createElement(i.a.Fragment, null, !P && !X && V && i.a.createElement(i.a.Fragment, null, i.a.createElement(dn, {
 						className: bt.a.cakeDayBlock,
 						cakeDayCreated: V,
-						cakeDayTooltipId: Q,
+						cakeDayTooltipId: K,
 						showCommunityDirectoryBacklink: I,
 						toggleTooltip: k
 					})), Z && i.a.createElement(nn.a, {
@@ -4225,7 +4225,7 @@
 						subscribersTooltipId: W,
 						currentlyViewingCount: D,
 						currentlyViewingText: L,
-						currentlyViewingTooltipId: K,
+						currentlyViewingTooltipId: Q,
 						showCommunityDirectoryBacklink: I,
 						toggleTooltip: k,
 						subredditName: F
@@ -4235,14 +4235,14 @@
 						subscribersTooltipId: W,
 						currentlyViewingCount: D,
 						currentlyViewingText: L,
-						currentlyViewingTooltipId: K,
+						currentlyViewingTooltipId: Q,
 						toggleTooltip: k,
 						subredditName: F
 					}), !P && !X && V && i.a.createElement(i.a.Fragment, null, i.a.createElement("hr", {
 						className: bt.a.HorizontalLine
 					}), i.a.createElement(dn, {
 						cakeDayCreated: V,
-						cakeDayTooltipId: Q,
+						cakeDayTooltipId: K,
 						toggleTooltip: k
 					})), Z && i.a.createElement(nn.a, {
 						subredditId: z
@@ -4347,9 +4347,9 @@
 					}, r.fbt._("The community gets Coins from Awards given by members", null, {
 						hk: "3j3NSH"
 					}))))), (l ? ee && U > 100 : ee) && i.a.createElement(ue, {
-						context: Qe.a.idCard,
+						context: Ke.a.idCard,
 						subredditId: z
-					}), !P && X && i.a.createElement(Qt, {
+					}), !P && X && i.a.createElement(Kt, {
 						subreddit: y,
 						subscribersCount: U,
 						currentlyViewingCount: D
@@ -6361,4 +6361,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.3b051e8bbd182375020a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.33f643c12ee5017ad302.js.map
