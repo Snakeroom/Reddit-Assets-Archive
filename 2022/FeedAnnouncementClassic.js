@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeedAnnouncementClassic.0dd8f8593731020bbbaf.js
-// Retrieved at 11/9/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeedAnnouncementClassic.e8ffc043eb8c0497289f.js
+// Retrieved at 11/10/2022, 8:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeedAnnouncementClassic"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, a) {
@@ -231,7 +231,7 @@
 				}, i = e => {
 					const [t, a] = Object(s.useState)("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII");
 					return Object(s.useEffect)(() => {
-						const t = (e => e.match(/^images_in_comments/) ? `${n.a.assetPath}/img/announcements/images_in_comments.jpg` : `${n.a.assetPath}/img/announcements/${e}.png`)(e);
+						const t = (e => e.match(/^images_in_comments/) ? `${n.a.assetPath}/img/announcements/images_in_comments_announcement.jpg` : `${n.a.assetPath}/img/announcements/${e}.png`)(e);
 						let s = !1;
 						return o(t).then(e => {
 							!1 === s && a(e ? t : null)
@@ -272,8 +272,7 @@
 						voteState: r.a.notVoted,
 						interactive: !1
 					})), c.a.createElement(l.a, {
-						disableInlineColor: !0,
-						className: Object(o.a)(m.a.Score, m.a.disabledScore, t),
+						className: Object(o.a)(m.a.disabledScore, t),
 						score: 0,
 						voteState: r.a.notVoted,
 						isScoreHidden: !0
@@ -295,4 +294,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeedAnnouncementClassic.0dd8f8593731020bbbaf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeedAnnouncementClassic.e8ffc043eb8c0497289f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeedAnnouncementCard.12bc87b7a9c96ab6b2bb.js
-// Retrieved at 11/9/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeedAnnouncementCard.aae728c887398bb74ebf.js
+// Retrieved at 11/10/2022, 8:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeedAnnouncementCard"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -182,7 +182,7 @@
 				}, r = e => {
 					const [t, n] = Object(s.useState)("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII");
 					return Object(s.useEffect)(() => {
-						const t = (e => e.match(/^images_in_comments/) ? `${a.a.assetPath}/img/announcements/images_in_comments.jpg` : `${a.a.assetPath}/img/announcements/${e}.png`)(e);
+						const t = (e => e.match(/^images_in_comments/) ? `${a.a.assetPath}/img/announcements/images_in_comments_announcement.jpg` : `${a.a.assetPath}/img/announcements/${e}.png`)(e);
 						let s = !1;
 						return c(t).then(e => {
 							!1 === s && n(e ? t : null)
@@ -200,4 +200,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeedAnnouncementCard.12bc87b7a9c96ab6b2bb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeedAnnouncementCard.aae728c887398bb74ebf.js.map

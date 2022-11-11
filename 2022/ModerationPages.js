@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.b5730f4ab78cb742ed4d.js
-// Retrieved at 11/10/2022, 7:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.638b01449ccc004f6dab.js
+// Retrieved at 11/10/2022, 8:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -51403,8 +51403,7 @@
 						voteState: c.a.notVoted,
 						interactive: !1
 					})), o.a.createElement(d.a, {
-						disableInlineColor: !0,
-						className: Object(i.a)(u.a.Score, u.a.disabledScore, t),
+						className: Object(i.a)(u.a.disabledScore, t),
 						score: 0,
 						voteState: c.a.notVoted,
 						isScoreHidden: !0
@@ -51429,7 +51428,6 @@
 				votesContainer: "_1E9mcoVn4MYnuBQSVDt1gC",
 				bounceUp: "nmB1I04Z-G4nY3g3s_17F",
 				bounceDown: "_1L6r7KisMt3CYUGWSEMGiR",
-				disabledScore: "_3WPd5t8B-7mtiGONFotWAM",
 				disabledVoteIcon: "mvlZFfW9BWm1bmljE_0Rg"
 			}
 		},
@@ -54788,7 +54786,7 @@
 						R = n < 0 ? 0 : n;
 					return d.a.createElement("div", {
 						className: Object(r.a)(j.a.score, e.className),
-						style: e.disableInlineColor ? void 0 : t,
+						style: t,
 						onMouseEnter: v ? P.show : void 0,
 						onMouseLeave: v ? P.hide : void 0,
 						ref: v ? P.target.ref : void 0
@@ -77716,4 +77714,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.b5730f4ab78cb742ed4d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.638b01449ccc004f6dab.js.map

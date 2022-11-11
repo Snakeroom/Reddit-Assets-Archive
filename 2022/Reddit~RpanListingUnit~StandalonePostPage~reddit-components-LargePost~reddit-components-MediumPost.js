@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost.f16a9eab428cc9393b82.js
-// Retrieved at 11/9/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost.3fad2f0a7ed066f28167.js
+// Retrieved at 11/10/2022, 8:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost"], {
 		"./src/lib/memoizeByReference/index.ts": function(e, t, n) {
@@ -1023,7 +1023,7 @@
 						N = n < 0 ? 0 : n;
 					return i.a.createElement("div", {
 						className: Object(o.a)(C.a.score, e.className),
-						style: e.disableInlineColor ? void 0 : t,
+						style: t,
 						onMouseEnter: O ? S.show : void 0,
 						onMouseLeave: O ? S.hide : void 0,
 						ref: O ? S.target.ref : void 0
@@ -2604,4 +2604,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost.f16a9eab428cc9393b82.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost.3fad2f0a7ed066f28167.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.1349184a3d04e74c90a7.js
-// Retrieved at 11/10/2022, 7:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.8037ca75899974e10fc0.js
+// Retrieved at 11/10/2022, 8:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-LargePost~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -4721,7 +4721,6 @@
 				votesContainer: "_1E9mcoVn4MYnuBQSVDt1gC",
 				bounceUp: "nmB1I04Z-G4nY3g3s_17F",
 				bounceDown: "_1L6r7KisMt3CYUGWSEMGiR",
-				disabledScore: "_3WPd5t8B-7mtiGONFotWAM",
 				disabledVoteIcon: "mvlZFfW9BWm1bmljE_0Rg"
 			}
 		},
@@ -5245,7 +5244,7 @@
 						P = n < 0 ? 0 : n;
 					return c.a.createElement("div", {
 						className: Object(s.a)(y.a.score, e.className),
-						style: e.disableInlineColor ? void 0 : t,
+						style: t,
 						onMouseEnter: O ? N.show : void 0,
 						onMouseLeave: O ? N.hide : void 0,
 						ref: O ? N.target.ref : void 0
@@ -8835,4 +8834,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.1349184a3d04e74c90a7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.8037ca75899974e10fc0.js.map
