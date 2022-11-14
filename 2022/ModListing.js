@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.5a702dc7195315afd442.js
-// Retrieved at 11/10/2022, 7:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.10377598c80556dab16f.js
+// Retrieved at 11/14/2022, 10:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, r) {
@@ -411,8 +411,8 @@
 							const {
 								data: t
 							} = r.body;
-							if (L(t)) {
-								if (P(t)) {
+							if (P(t)) {
+								if (L(t)) {
 									e(j({
 										recommendedSubredditIds: [],
 										interactedSubredditIds: [],
@@ -452,11 +452,11 @@
 						}
 					}))
 				}),
-				L = e => {
+				P = e => {
 					const t = e.focusVerticalSubredditRecommendations;
 					return !(!t || !t.focusRecommendations)
 				},
-				P = e => {
+				L = e => {
 					const t = e.focusVerticalSubredditRecommendations,
 						r = t && t.focusRecommendations;
 					return !(!r || 0 !== r.length)
@@ -465,7 +465,7 @@
 					const t = e.focusVerticalSubredditRecommendations,
 						r = t && t.focusRecommendations,
 						n = t && t.type;
-					return !!(r && !P(e) && n === c.GEO && r[0] && r[0].recommendedSubreddit && r[0].interactedSubreddit)
+					return !!(r && !L(e) && n === c.GEO && r[0] && r[0].recommendedSubreddit && r[0].interactedSubreddit)
 				},
 				M = () => async (e, t, r) => {
 					var n, s;
@@ -492,9 +492,9 @@
 			r.r(t), r.d(t, "modListingDataPending", (function() {
 				return T
 			})), r.d(t, "modListingDataLoaded", (function() {
-				return N
-			})), r.d(t, "modListingDataFailed", (function() {
 				return w
+			})), r.d(t, "modListingDataFailed", (function() {
+				return N
 			})), r.d(t, "modListingPageRequested", (function() {
 				return F
 			})), r.d(t, "morePostsPending", (function() {
@@ -506,9 +506,9 @@
 			})), r.d(t, "moreModListingRequested", (function() {
 				return B
 			})), r.d(t, "hideSubredditSuccess", (function() {
-				return V
-			})), r.d(t, "hideSubredditPending", (function() {
 				return q
+			})), r.d(t, "hideSubredditPending", (function() {
+				return V
 			})), r.d(t, "hideSubredditFailed", (function() {
 				return K
 			})), r.d(t, "unhideSubredditSuccess", (function() {
@@ -561,13 +561,13 @@
 				j = r("./src/reddit/helpers/pageActionLoginRedirect.ts"),
 				I = r("./src/reddit/helpers/timeApiRoute/index.ts"),
 				C = r("./src/reddit/helpers/trackers/screenview.ts"),
-				L = r("./src/reddit/models/Toast/index.ts"),
-				P = r("./src/reddit/routes/modListing/index.ts"),
+				P = r("./src/reddit/models/Toast/index.ts"),
+				L = r("./src/reddit/routes/modListing/index.ts"),
 				k = r("./src/reddit/selectors/user.ts"),
 				M = r("./src/reddit/actions/pages/modListing/constants.ts");
 			const T = Object(d.a)(M.f),
-				N = Object(d.a)(M.e),
-				w = Object(d.a)(M.d),
+				w = Object(d.a)(M.e),
+				N = Object(d.a)(M.d),
 				R = (e, t) => async (r, s, i) => {
 					const o = s();
 					if (o.listings.postOrder.api.pending[e]) return;
@@ -576,17 +576,17 @@
 					}));
 					const d = await Object(I.a)("modListing", () => v(i.apiContext(), t)),
 						a = `error-${e}`;
-					d.ok ? (r(N({
+					d.ok ? (r(w({
 						key: e,
 						meta: o.meta,
 						...d.body
-					})), r(u.g(a))) : (r(w({
+					})), r(u.g(a))) : (r(N({
 						error: d.error,
 						key: e,
 						...d.body
 					})), 401 === d.status ? Object(j.a)(r, o) : r(u.f({
 						id: a,
-						kind: L.b.Error,
+						kind: P.b.Error,
 						text: n.fbt._("Sorry, we couldn't load posts for this page.", null, {
 							hk: "CvZvm"
 						}),
@@ -598,7 +598,7 @@
 				}, F = (e, t) => async (r, s) => {
 					const {
 						sort: d = o.cb
-					} = e.params, u = Object(P.d)(e.path), b = u ? l.f : l.e, p = Object(a.a)(b, d, e.queryParams), h = s(), f = h.listings.postOrder.ids[p], g = h.listings.postOrder.api.error[p];
+					} = e.params, u = Object(L.d)(e.path), b = u ? l.f : l.e, p = Object(a.a)(b, d, e.queryParams), h = s(), f = h.listings.postOrder.ids[p], g = h.listings.postOrder.api.error[p];
 					if (h.listings.postOrder.api.pending[p] || f && !g && !t) return void(f && r(c.m({
 						title: n.fbt._("Subreddits you moderate", null, {
 							hk: "3RYtBz"
@@ -626,7 +626,7 @@
 					if (!c) return;
 					const {
 						sort: u = o.cb
-					} = e, b = c.queryParams, p = Object(P.d)(c.url), h = p ? l.f : l.e, f = Object(a.a)(h, u, b), g = d.listings.postOrder.loadMore[f];
+					} = e, b = c.queryParams, p = Object(L.d)(c.url), h = p ? l.f : l.e, f = Object(a.a)(h, u, b), g = d.listings.postOrder.loadMore[f];
 					if (!g) return;
 					const _ = d.listings.postOrder.api.pending[f],
 						y = d.listings.postOrder.fetchedTokens,
@@ -667,8 +667,8 @@
 				const t = m.O in e && e[m.O].toUpperCase() || "";
 				return t in o.oc && o.oc[t]
 			}
-			const V = Object(d.a)(M.c),
-				q = Object(d.a)(M.b),
+			const q = Object(d.a)(M.c),
+				V = Object(d.a)(M.b),
 				K = Object(d.a)(M.a),
 				U = Object(d.a)(M.l),
 				Q = Object(d.a)(M.k),
@@ -679,7 +679,7 @@
 					} = s;
 					const o = n(),
 						d = Object(k.l)(o),
-						[a, c, u, l] = t ? [q, V, K, O] : [Q, U, J, E];
+						[a, c, u, l] = t ? [V, q, K, O] : [Q, U, J, E];
 					if (!d || !d.displayText) return;
 					const {
 						currentPage: m
@@ -1350,10 +1350,10 @@
 					showModalOnScroll: () => e(c.bb()),
 					surveyTriggerScrollCounted: () => e(Object(l.m)())
 				}),
-				L = e => Object(p.b)({
+				P = e => Object(p.b)({
 					...e
 				}),
-				P = (e, t, r, n) => {
+				L = (e, t, r, n) => {
 					const {
 						listingKey: s,
 						hostPostData: i,
@@ -1365,8 +1365,8 @@
 					...e,
 					...t,
 					...r,
-					postComponentForLayout: L,
-					postClickEventFactory: P
+					postComponentForLayout: P,
+					postClickEventFactory: L
 				}));
 			t.a = e => Object(m.c)(S(k(e)))
 		},
@@ -1598,6 +1598,50 @@
 				className: Object(i.a)(Object(o.b)("clear", e.isFilled), e.className)
 			})
 		},
+		"./src/reddit/icons/svgs/Dropdown/index.m.less": function(e, t, r) {
+			e.exports = {
+				dropdown: "XHbKeEqnW58ib9mTN6jnS",
+				mRedditStyle: "u_kypUXmB-k1A5TcC8MI9"
+			}
+		},
+		"./src/reddit/icons/svgs/Dropdown/index.tsx": function(e, t, r) {
+			"use strict";
+			r.d(t, "a", (function() {
+				return c
+			}));
+			var n = r("./node_modules/react/index.js"),
+				s = r.n(n),
+				i = r("./src/lib/classNames/index.ts"),
+				o = r("./src/reddit/icons/svgs/Dropdown/index.m.less"),
+				d = r.n(o);
+
+			function a() {
+				return (a = Object.assign || function(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var r = arguments[t];
+						for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n])
+					}
+					return e
+				}).apply(this, arguments)
+			}
+			const c = e => {
+				let {
+					className: t,
+					isSubreddit: r,
+					...n
+				} = e;
+				return s.a.createElement("svg", a({
+					className: Object(i.a)(d.a.dropdown, {
+						[d.a.mRedditStyle]: !r
+					}, t),
+					viewBox: "0 0 20 20",
+					xmlns: "http://www.w3.org/2000/svg"
+				}, n), s.a.createElement("path", {
+					d: "M14.17,9.35,10,13.53,5.83,9.35a.5.5,0,0,1,.35-.85h7.64a.5.5,0,0,1,.35.85"
+				}))
+			};
+			t.b = c
+		},
 		"./src/reddit/icons/svgs/Moderate/index.tsx": function(e, t, r) {
 			"use strict";
 			var n = r("./node_modules/react/index.js"),
@@ -1664,37 +1708,37 @@
 				j = r("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				I = r("./src/reddit/selectors/activeModalId.ts"),
 				C = r("./src/reddit/selectors/modQueue.ts"),
-				L = r("./src/reddit/components/ModListingSidebar/FeedDetails/index.m.less"),
-				P = r.n(L);
+				P = r("./src/reddit/components/ModListingSidebar/FeedDetails/index.m.less"),
+				L = r.n(P);
 			const {
 				fbt: k
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), M = Object(y.a)(e => o.a.createElement(x.e, {
-				className: P.a.modalBody
+				className: L.a.modalBody
 			}, o.a.createElement(x.i, null, o.a.createElement(j.a, null, o.a.createElement(x.q, {
-				className: P.a.modalTitle
+				className: L.a.modalTitle
 			}, o.a.createElement(S.a, {
-				className: P.a.modIcon
+				className: L.a.modIcon
 			}), k._("r/Mod", null, {
 				hk: "2a9ICx"
 			})), o.a.createElement(E.a, {
 				onClick: e.onCloseModal
 			}, o.a.createElement(x.b, null)))), o.a.createElement(x.l, {
-				className: P.a.modalMain
+				className: L.a.modalMain
 			}, o.a.createElement("div", {
-				className: P.a.modalDescription
+				className: L.a.modalDescription
 			}, k._("This is a feed for the communities that you moderate.", null, {
 				hk: "2XK5kH"
 			})), o.a.createElement(O.b, {
 				isSidebar: !1,
 				subredditsOrProfilesIds: e.moderatedCommunitiesIds
 			})))), T = e => o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
-				className: P.a.feedDetailsTitle
+				className: L.a.feedDetailsTitle
 			}, o.a.createElement(S.a, {
-				className: P.a.modIcon
+				className: L.a.modIcon
 			}), k._("r/Mod", null, {
 				hk: "2a9ICx"
 			})), o.a.createElement("div", {
-				className: P.a.feedDetailsDescription
+				className: L.a.feedDetailsDescription
 			}, k._("This is a feed for the communities that you moderate.", null, {
 				hk: "2XK5kH"
 			})), e.moderatedCommunitiesIds.length ? o.a.createElement(O.b, {
@@ -1702,12 +1746,12 @@
 				onSeeMoreDetails: e.onSeeMoreDetails,
 				subredditsOrProfilesIds: e.moderatedCommunitiesIds
 			}) : o.a.createElement("div", {
-				className: P.a.loadingBar
-			})), N = Object(a.c)({
+				className: L.a.loadingBar
+			})), w = Object(a.c)({
 				isModalOpen: Object(I.b)("MOD_LISTING_FEED_DETAILS_MODAL_ID"),
 				moderatedCommunitiesIds: C.h
 			});
-			var w = Object(d.b)(N, (e, t) => {
+			var N = Object(d.b)(w, (e, t) => {
 					let {} = t;
 					return {
 						toggleModal: () => e(Object(v.i)("MOD_LISTING_FEED_DETAILS_MODAL_ID"))
@@ -1735,8 +1779,8 @@
 				H = r("./src/reddit/helpers/trackers/modListing.ts"),
 				B = r("./src/reddit/routes/modListing/index.ts");
 			const D = e => e.modListingPage.filteredSubreddits.api.pending;
-			var V = r("./src/reddit/constants/keycodes.ts"),
-				q = r("./src/reddit/layout/row/Inline/index.tsx"),
+			var q = r("./src/reddit/constants/keycodes.ts"),
+				V = r("./src/reddit/layout/row/Inline/index.tsx"),
 				K = r("./src/reddit/components/ModListingSidebar/HideCommunities/HideInput/index.m.less"),
 				U = r.n(K);
 			const Q = Object(a.c)({
@@ -1758,14 +1802,14 @@
 					}, this.onChange = e => {
 						this.setSubredditInput(e.target.value)
 					}, this.onKeyPress = e => {
-						e.key === V.b.Enter && this.submitInput()
+						e.key === q.b.Enter && this.submitInput()
 					}, this.canSubmitInput = () => this.state.subredditInput && !this.props.isApiPending
 				}
 				render() {
 					const {
 						props: e
 					} = this;
-					return o.a.createElement(o.a.Fragment, null, o.a.createElement(q.a, null, o.a.createElement("input", {
+					return o.a.createElement(o.a.Fragment, null, o.a.createElement(V.a, null, o.a.createElement("input", {
 						className: U.a.input,
 						onChange: this.onChange,
 						onKeyPress: this.onKeyPress,
@@ -1792,8 +1836,8 @@
 				}))(Object(F.c)(J)),
 				X = r("./src/lib/lessComponent.tsx"),
 				z = r("./src/reddit/components/SubredditIcon/index.tsx"),
-				Z = r("./src/reddit/icons/fonts/Clear/index.tsx"),
-				W = r("./src/reddit/selectors/profile.ts"),
+				W = r("./src/reddit/icons/fonts/Clear/index.tsx"),
+				Z = r("./src/reddit/selectors/profile.ts"),
 				$ = r("./src/reddit/selectors/subreddit.ts"),
 				ee = r("./src/reddit/components/ModListingSidebar/HideCommunities/SubredditsList/SubredditsListRow/index.m.less"),
 				te = r.n(ee);
@@ -1806,7 +1850,7 @@
 						});
 						if (!r) {
 							const r = (e => e.startsWith(c.qc) ? e.slice(2) : e)(t.subredditName);
-							return r && Object(W.k)(e, {
+							return r && Object(Z.k)(e, {
 								profileName: r
 							}) || null
 						}
@@ -1836,7 +1880,7 @@
 						}),
 						className: te.a.unhideButton,
 						onClick: this.onClickUnhideSubreddit
-					}, o.a.createElement(Z.a, null))) : null
+					}, o.a.createElement(W.a, null))) : null
 				}
 			}
 			var ie = Object(d.b)(ne, e => ({
@@ -1917,7 +1961,7 @@
 					title: _.fbt._("Feed details", null, {
 						hk: "3JlrpB"
 					})
-				}, o.a.createElement(w, null), o.a.createElement(fe, null)), o.a.createElement(_e.a, null)),
+				}, o.a.createElement(N, null), o.a.createElement(fe, null)), o.a.createElement(_e.a, null)),
 				xe = r("./src/reddit/constants/page.ts"),
 				Oe = r("./src/reddit/constants/parameters.ts"),
 				Ee = r("./src/reddit/helpers/trackers/screenview.ts"),
@@ -1958,7 +2002,7 @@
 						sort: t.match.params.sort
 					}))
 				}));
-			class Le extends o.a.PureComponent {
+			class Pe extends o.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onViewed = (e, t) => Object(Ee.f)({
 						key: this.props.listingKey,
@@ -1992,7 +2036,7 @@
 					}))
 				}
 			}
-			t.default = Ce(Le)
+			t.default = Ce(Pe)
 		},
 		"./src/reddit/pages/Subreddit/SurveyUnit.tsx": function(e, t, r) {
 			"use strict";
@@ -2165,4 +2209,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.5a702dc7195315afd442.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.10377598c80556dab16f.js.map

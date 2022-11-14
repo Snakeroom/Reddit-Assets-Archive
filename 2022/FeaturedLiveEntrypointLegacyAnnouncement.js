@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointLegacyAnnouncement.c8061a8775e91fab30bf.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointLegacyAnnouncement.2b4361c3c571d990a9d3.js
+// Retrieved at 11/14/2022, 10:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeaturedLiveEntrypointLegacyAnnouncement"], {
 		"./src/reddit/components/FeaturedLiveEntrypoint/LegacyAnnouncement/index.m.less": function(e, n, t) {
@@ -77,25 +77,6 @@
 				}, "function" == typeof n.callToAction ? n.callToAction() : n.callToAction))
 			}
 		},
-		"./src/reddit/icons/svgs/Comments/index.tsx": function(e, n, t) {
-			"use strict";
-			var s = t("./node_modules/react/index.js"),
-				c = t.n(s);
-			n.a = e => {
-				let {
-					className: n
-				} = e;
-				return c.a.createElement("svg", {
-					className: n,
-					xmlns: "http://www.w3.org/2000/svg",
-					viewBox: "0 0 20 20"
-				}, c.a.createElement("path", {
-					d: "M15 4V3a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h1V6a2 2 0 0 1 2-2z"
-				}), c.a.createElement("path", {
-					d: "M17 5H6a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h3.36l1.76 1.83a.5.5 0 0 0 .75 0L13.64 16H17a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1z"
-				}))
-			}
-		},
 		"./src/reddit/icons/svgs/Moderate/index.tsx": function(e, n, t) {
 			"use strict";
 			var s = t("./node_modules/react/index.js"),
@@ -121,6 +102,25 @@
 				r: "4",
 				fill: e.isUnread ? a.a.orangered : "none"
 			}))
+		},
+		"./src/reddit/icons/svgs/Snoo/index.tsx": function(e, n, t) {
+			"use strict";
+			var s = t("./node_modules/react/index.js"),
+				c = t.n(s),
+				a = t("./src/reddit/constants/colors.ts");
+			n.a = e => c.a.createElement("svg", {
+				xmlns: "http://www.w3.org/2000/svg",
+				viewBox: "0 0 20 20",
+				className: e.className
+			}, c.a.createElement("g", null, c.a.createElement("circle", {
+				fill: a.a.snoo,
+				cx: "10",
+				cy: "10",
+				r: "10"
+			}), c.a.createElement("path", {
+				fill: "#FFF",
+				d: "M16.67,10A1.46,1.46,0,0,0,14.2,9a7.12,7.12,0,0,0-3.85-1.23L11,4.65,13.14,5.1a1,1,0,1,0,.13-0.61L10.82,4a0.31,0.31,0,0,0-.37.24L9.71,7.71a7.14,7.14,0,0,0-3.9,1.23A1.46,1.46,0,1,0,4.2,11.33a2.87,2.87,0,0,0,0,.44c0,2.24,2.61,4.06,5.83,4.06s5.83-1.82,5.83-4.06a2.87,2.87,0,0,0,0-.44A1.46,1.46,0,0,0,16.67,10Zm-10,1a1,1,0,1,1,1,1A1,1,0,0,1,6.67,11Zm5.81,2.75a3.84,3.84,0,0,1-2.47.77,3.84,3.84,0,0,1-2.47-.77,0.27,0.27,0,0,1,.38-0.38A3.27,3.27,0,0,0,10,14a3.28,3.28,0,0,0,2.09-.61A0.27,0.27,0,1,1,12.48,13.79Zm-0.18-1.71a1,1,0,1,1,1-1A1,1,0,0,1,12.29,12.08Z"
+			})))
 		},
 		"./src/reddit/icons/svgs/Sticky/index.tsx": function(e, n, t) {
 			"use strict";
@@ -165,4 +165,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointLegacyAnnouncement.c8061a8775e91fab30bf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointLegacyAnnouncement.2b4361c3c571d990a9d3.js.map

@@ -1,7 +1,7 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.0ff4662edeaf0b952a43.js
-// Retrieved at 11/10/2022, 7:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.3f49f2651e98fe532f65.js
+// Retrieved at 11/14/2022, 10:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
-	["ProfileComments"], {
+	["ProfileComments", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
 			"use strict";
 
@@ -4972,23 +4972,6 @@
 					variables: t
 				})
 		},
-		"./src/reddit/helpers/graphql/normalizePostsFromGql/index.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "a", (function() {
-				return r
-			}));
-			var n = s("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts");
-			const r = e => {
-				let {
-					edges: t
-				} = e;
-				const s = [];
-				for (const {
-						node: r
-					} of t) s.push(Object(n.f)(r));
-				return s
-			}
-		},
 		"./src/reddit/helpers/search/renderMedia.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
@@ -5809,20 +5792,6 @@
 				})
 			})))
 		},
-		"./src/reddit/selectors/experiments/web2x_cta.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "a", (function() {
-				return a
-			}));
-			var n = s("./node_modules/reselect/es/index.js"),
-				r = s("./src/reddit/constants/experiments.ts"),
-				o = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const i = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: r.fg,
-					experimentEligibilitySelector: o.a
-				}), e => e),
-				a = Object(n.a)(i, e => e === r.Xf)
-		},
 		"./src/redditGQL/operations/CreateLiveAudioRoomOnProfile.json": function(e) {
 			e.exports = JSON.parse('{"id":"e35a47c6aa21"}')
 		},
@@ -5852,4 +5821,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.0ff4662edeaf0b952a43.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.3f49f2651e98fe532f65.js.map

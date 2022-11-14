@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.cb7366654c2008ff43b8.js
-// Retrieved at 11/10/2022, 7:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.de88fc66852492ec8876.js
+// Retrieved at 11/14/2022, 10:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -4335,10 +4335,12 @@
 		},
 		"./src/reddit/controls/Search/SearchBar/index.tsx": function(e, t, n) {
 			"use strict";
-			n.d(t, "a", (function() {
+			n.d(t, "b", (function() {
 				return _
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "a", (function() {
 				return I
+			})), n.d(t, "c", (function() {
+				return S
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./src/lib/classNames/index.ts"),
@@ -4379,7 +4381,8 @@
 			}
 			O.queriesToBeShown = new Array(...E), O.showFirstValue = !0;
 			const _ = "search-bar-dismiss-button",
-				I = e => {
+				I = "header-search-bar",
+				S = e => {
 					let {
 						inputRef: t,
 						isOpen: n,
@@ -4389,22 +4392,22 @@
 						onFocusSearchBar: h,
 						onFormSubmit: g,
 						onKeyDown: E,
-						searchQuery: I,
-						showSearchScopePill: S,
-						searchScopePill: T,
-						searchOriginPage: w
+						searchQuery: S,
+						showSearchScopePill: T,
+						searchScopePill: w,
+						searchOriginPage: D
 					} = e;
-					var D;
+					var j;
 					const {
-						promptBeforeClick: j,
-						promptAfterClick: A
-					} = Object(d.e)(b), [C, P] = Object(o.useState)();
+						promptBeforeClick: A,
+						promptAfterClick: C
+					} = Object(d.e)(b), [P, R] = Object(o.useState)();
 					Object(o.useEffect)(() => {
-						A && "home" === w && P(void 0)
-					}, [A, w]);
-					const R = Object(o.useMemo)(() => j && "home" === w && O.get(), [j, w]),
-						N = "home" === w && (A && C || R),
-						x = S && T ? r.fbt._("Search within {subredditName}", [r.fbt._param("subredditName", T.title)], {
+						C && "home" === D && R(void 0)
+					}, [C, D]);
+					const N = Object(o.useMemo)(() => A && "home" === D && O.get(), [A, D]),
+						x = "home" === D && (C && P || N),
+						L = T && w ? r.fbt._("Search within {subredditName}", [r.fbt._param("subredditName", w.title)], {
 							hk: "2B6J3t"
 						}) : r.fbt._("Search all of Reddit", null, {
 							hk: "1Fi1f5"
@@ -4430,33 +4433,33 @@
 						className: m.a.icon
 					})), i.a.createElement(l.a, {
 						"aria-live": "assertive"
-					}, x)), S && T && i.a.createElement(y.b, {
+					}, L)), T && w && i.a.createElement(y.b, {
 						onClickDismiss: function() {
 							var e;
 							null === (e = t.current) || void 0 === e || e.focus(), f()
 						},
-						content: T
+						content: w
 					}), i.a.createElement("input", {
 						className: m.a.input,
-						defaultValue: I,
-						id: "header-search-bar",
+						defaultValue: S,
+						id: I,
 						name: "q",
 						onChange: c()((function() {
 							var e;
 							a((null === (e = null == t ? void 0 : t.current) || void 0 === e ? void 0 : e.value) || "")
 						}), 200),
 						onKeyDown: E,
-						onClick: A ? () => {
-							"home" === w && P(O.get())
+						onClick: C ? () => {
+							"home" === D && R(O.get())
 						} : void 0,
-						placeholder: N ? r.fbt._("{query}", [r.fbt._param("query", N)], {
+						placeholder: x ? r.fbt._("{query}", [r.fbt._param("query", x)], {
 							hk: "occSN"
 						}) : r.fbt._("{Text}", [r.fbt._param("Text", v)], {
 							hk: "DG9dX"
 						}),
 						ref: t,
 						type: "search"
-					})), (null === (D = null == t ? void 0 : t.current) || void 0 === D ? void 0 : D.value) ? i.a.createElement("button", {
+					})), (null === (j = null == t ? void 0 : t.current) || void 0 === j ? void 0 : j.value) ? i.a.createElement("button", {
 						"aria-label": r.fbt._("Remove search bar text", null, {
 							hk: "4twCsS"
 						}),
@@ -5488,6 +5491,104 @@
 					source: g,
 					action: c.c.CLICK,
 					noun: "see_all"
+				})
+		},
+		"./src/reddit/helpers/trackers/subredditCreation.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "c", (function() {
+				return a
+			})), n.d(t, "d", (function() {
+				return c
+			})), n.d(t, "b", (function() {
+				return o
+			})), n.d(t, "h", (function() {
+				return i
+			})), n.d(t, "a", (function() {
+				return d
+			})), n.d(t, "g", (function() {
+				return l
+			})), n.d(t, "e", (function() {
+				return u
+			})), n.d(t, "f", (function() {
+				return p
+			}));
+			var r = n("./src/reddit/helpers/correlationIdTracker.ts"),
+				s = n("./src/reddit/selectors/telemetry.ts");
+			const a = e => t => ({
+					source: e,
+					noun: "create_community_button",
+					action: "click",
+					...s.o(t),
+					actionInfo: s.d(t, {
+						settingValue: t.user.account && t.user.account.isMod ? "existing_mod" : "new_mod"
+					}),
+					correlationId: Object(r.d)(r.a.SubredditCreation, !0)
+				}),
+				c = (e, t, n) => a => ({
+					source: "community_form",
+					noun: "save_community_button",
+					action: "click",
+					...s.o(a),
+					actionInfo: s.d(a, {
+						settingValue: e
+					}),
+					subreddit: {
+						id: n,
+						name: t.name,
+						publicDescription: t.publicDescription,
+						nsfw: t.over18,
+						accessType: t.type,
+						topicTagContents: t.allTags,
+						topicTagPrimaryId: t.primaryTagId
+					},
+					correlationId: Object(r.c)(r.a.SubredditCreation)
+				}),
+				o = () => e => ({
+					source: "community_form",
+					noun: "cancel",
+					action: "click",
+					...s.o(e),
+					actionInfo: s.d(e),
+					correlationId: Object(r.c)(r.a.SubredditCreation)
+				}),
+				i = (e, t) => n => ({
+					source: "community_form",
+					noun: "error_message",
+					action: "view",
+					...s.o(n),
+					actionInfo: s.d(n, {
+						reason: e,
+						settingValue: t
+					}),
+					correlationId: Object(r.c)(r.a.SubredditCreation)
+				}),
+				d = () => e => ({
+					source: "user_dropdown",
+					noun: "create_community",
+					action: "click",
+					...s.o(e),
+					actionInfo: s.d(e)
+				}),
+				l = () => e => ({
+					source: "community_first_post",
+					noun: "modal",
+					action: "view",
+					...s.o(e),
+					actionInfo: s.d(e)
+				}),
+				u = () => e => ({
+					source: "community_first_post",
+					noun: "modal",
+					action: "click",
+					...s.o(e),
+					actionInfo: s.d(e)
+				}),
+				p = () => e => ({
+					source: "community_first_post",
+					noun: "modal",
+					action: "dismiss",
+					...s.o(e),
+					actionInfo: s.d(e)
 				})
 		},
 		"./src/reddit/helpers/trackers/subredditForking.ts": function(e, t, n) {
@@ -18088,7 +18189,7 @@
 				Lg = n("./src/reddit/components/SearchDropdown/index.tsx"),
 				kg = n("./src/reddit/controls/Search/SearchBar/index.tsx"),
 				Ug = n("./src/reddit/controls/Search/SearchScopePill/index.tsx");
-			const Mg = [Ug.a, kg.a],
+			const Mg = [Ug.a, kg.b],
 				Bg = [Lg.b, Lg.a];
 			var Fg = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
@@ -24444,4 +24545,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.cb7366654c2008ff43b8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.de88fc66852492ec8876.js.map

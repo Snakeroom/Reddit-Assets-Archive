@@ -1,7 +1,7 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.37289a20c53773e304f8.js
-// Retrieved at 11/10/2022, 7:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.4571b4a9242330d2f287.js
+// Retrieved at 11/14/2022, 10:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
-	["ProfileOverview"], {
+	["ProfileOverview", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
 			"use strict";
 
@@ -8457,23 +8457,6 @@
 				}
 			}
 		},
-		"./src/reddit/helpers/graphql/normalizePostsFromGql/index.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "a", (function() {
-				return o
-			}));
-			var n = s("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts");
-			const o = e => {
-				let {
-					edges: t
-				} = e;
-				const s = [];
-				for (const {
-						node: o
-					} of t) s.push(Object(n.f)(o));
-				return s
-			}
-		},
 		"./src/reddit/helpers/search/renderMedia.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
@@ -10256,20 +10239,6 @@
 				b = d(o.Ab, !1),
 				h = d(o.Bb, !1)
 		},
-		"./src/reddit/selectors/experiments/web2x_cta.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "a", (function() {
-				return i
-			}));
-			var n = s("./node_modules/reselect/es/index.js"),
-				o = s("./src/reddit/constants/experiments.ts"),
-				r = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const a = Object(n.a)(e => Object(r.c)(e, {
-					experimentName: o.fg,
-					experimentEligibilitySelector: r.a
-				}), e => e),
-				i = Object(n.a)(a, e => e === o.Xf)
-		},
 		"./src/reddit/selectors/i18n/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
@@ -10331,4 +10300,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.37289a20c53773e304f8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.4571b4a9242330d2f287.js.map
