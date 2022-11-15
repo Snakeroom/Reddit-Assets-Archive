@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.1b89221a66dac18f625a.js
-// Retrieved at 11/15/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.0fcd59ef73f61ae27210.js
+// Retrieved at 11/15/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -1971,8 +1971,8 @@
 				T = n("./src/reddit/selectors/meta.ts");
 			const w = e => _.d.reCaptchaEnterprise(e) && !Object(T.d)(e),
 				D = e => !!Object(S.c)(e, {
-					experimentEligibilitySelector: Object(I.d)(Object(I.b)(...a.d)),
-					experimentName: f.kf
+					experimentEligibilitySelector: Object(I.d)(Object(I.b)(...a.c)),
+					experimentName: f.if
 				}),
 				j = Object(r.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				A = () => l(e => p()([w, D, e => e.tracking.reCaptchaEnterprise.load === r.a.New], t => t(e)))(async e => {
@@ -4433,10 +4433,10 @@
 				h = n("./node_modules/reselect/es/index.js");
 			const b = Object(h.a)(e => Object(f.c)(e, {
 				experimentEligibilitySelector: f.a,
-				experimentName: p.mg
+				experimentName: p.kg
 			}), e => ({
-				promptBeforeClick: e === p.ng.PromptBeforeClick,
-				promptAfterClick: e === p.ng.PromptAfterClick
+				promptBeforeClick: e === p.lg.PromptBeforeClick,
+				promptAfterClick: e === p.lg.PromptAfterClick
 			}));
 			var y = n("./src/reddit/controls/Search/SearchScopePill/index.tsx"),
 				g = n("./src/reddit/controls/Search/SearchBar/index.m.less"),
@@ -24513,7 +24513,7 @@
 					if (!u(e)) return;
 					const t = Object(c.c)(e, {
 						experimentEligibilitySelector: l,
-						experimentName: a.ce,
+						experimentName: a.ae,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -24536,9 +24536,9 @@
 				},
 				h = e => !!p(e) && Object(c.c)(e, {
 					experimentEligibilitySelector: u,
-					experimentName: a.de,
+					experimentName: a.be,
 					expEventOverride: !1
-				}) !== a.ee.Readonly
+				}) !== a.ce.Readonly
 		},
 		"./src/reddit/selectors/trending.ts": function(e, t, n) {
 			"use strict";
@@ -24622,4 +24622,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.1b89221a66dac18f625a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.0fcd59ef73f61ae27210.js.map

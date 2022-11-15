@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.2f2c59ff8561ee970e2b.js
-// Retrieved at 11/15/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.0e99a87ebba93d10f78a.js
+// Retrieved at 11/15/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, n) {
@@ -315,7 +315,7 @@
 			})), n.d(t, "a", (function() {
 				return w
 			})), n.d(t, "b", (function() {
-				return P
+				return F
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				o = n("./src/lib/constants/index.ts"),
@@ -551,7 +551,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: i
 					})), c())
-				}, F = Object(i.a)(d.e), P = e => async (t, n, s) => {
+				}, P = Object(i.a)(d.e), F = e => async (t, n, s) => {
 					let {
 						apiContext: i
 					} = s;
@@ -574,7 +574,7 @@
 						u = a[e];
 					if (!u) return void d();
 					const f = !u.isFollowed;
-					t(F({
+					t(P({
 						follow: f,
 						multiredditPath: e,
 						multiredditsModelsState: a
@@ -587,7 +587,7 @@
 							api_type: "json"
 						},
 						type: "json"
-					}))(i(), e, f)).ok || (t(F({
+					}))(i(), e, f)).ok || (t(P({
 						follow: !f,
 						multiredditPath: e,
 						multiredditsModelsState: a
@@ -842,8 +842,8 @@
 					})
 				}
 			}
-			const F = Object(m.a)(w),
-				P = Object(m.a)(e => {
+			const P = Object(m.a)(w),
+				F = Object(m.a)(e => {
 					let t = "",
 						n = !1;
 					const r = e.richtext.map((r, o) => {
@@ -897,8 +897,8 @@
 					})
 				}),
 				B = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(g.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(C.a)(Object(g.a)(e).post, O.a.black, O.a.white) : e.textColor === j.e.Dark ? O.a.black : O.a.white,
-				G = b.a.wrapped(F, "TextFlair", y.a),
-				H = b.a.wrapped(P, "RichTextFlair", y.a),
+				G = b.a.wrapped(P, "TextFlair", y.a),
+				H = b.a.wrapped(F, "RichTextFlair", y.a),
 				W = e => {
 					switch (e.type) {
 						case "spoiler":
@@ -1875,29 +1875,29 @@
 				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/experiments/index.ts");
 			const c = Object(r.a)(e => Object(s.c)(e, {
+					experimentName: o.Ob,
+					experimentEligibilitySelector: i.e
+				}), e => e === o.W.Enabled),
+				a = Object(r.a)(e => Object(s.c)(e, {
+					experimentName: o.Pb,
+					experimentEligibilitySelector: i.e
+				}), e => e === o.X.Enabled),
+				d = Object(r.a)(e => Object(s.c)(e, {
 					experimentName: o.Qb,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.Y.Enabled),
-				a = Object(r.a)(e => Object(s.c)(e, {
+				l = Object(r.a)(e => Object(s.c)(e, {
 					experimentName: o.Rb,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.Z.Enabled),
-				d = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Sb,
-					experimentEligibilitySelector: i.e
-				}), e => e === o.ab.Enabled),
-				l = Object(r.a)(e => Object(s.c)(e, {
+				u = Object(r.a)(e => Object(s.c)(e, {
 					experimentName: o.Tb,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.bb.Enabled),
-				u = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Vb,
-					experimentEligibilitySelector: i.e
-				}), e => e === o.db.Enabled),
 				m = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Ub,
+					experimentName: o.Sb,
 					experimentEligibilitySelector: i.e
-				}), e => e === o.cb.Enabled)
+				}), e => e === o.ab.Enabled)
 		},
 		"./src/reddit/selectors/experiments/recapLeadUpGame.ts": function(e, t, n) {
 			"use strict";
@@ -1914,8 +1914,8 @@
 			const a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.lf
-					}) === r.Jd
+						experimentName: r.jf
+					}) === r.Hd
 				},
 				d = Object(c.a)(i.R, (e, t) => {
 					let {
@@ -1926,8 +1926,8 @@
 				l = (e, t) => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: e => d(e, t),
-						experimentName: r.mf
-					}) === r.Jd
+						experimentName: r.kf
+					}) === r.Hd
 				}
 		},
 		"./src/reddit/selectors/recapGame.ts": function(e, t, n) {
@@ -1955,4 +1955,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.2f2c59ff8561ee970e2b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.0e99a87ebba93d10f78a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.8573143c2290db219b24.js
-// Retrieved at 11/15/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.2f6d9c671e2519a94d64.js
+// Retrieved at 11/15/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -96,8 +96,8 @@
 			const y = e => {
 				return Object(S.c)(e, {
 					experimentEligibilitySelector: S.a,
-					experimentName: _.nf
-				}) === _.Jd
+					experimentName: _.lf
+				}) === _.Hd
 			};
 			var v = s("./src/reddit/selectors/recapGame.ts"),
 				C = s("./src/reddit/components/BackToTop/index.m.less"),
@@ -531,7 +531,7 @@
 				const t = Object(a.f)().getState(),
 					s = Object(h.a)(t, Object(o.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Zc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Zc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Zc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Xc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Xc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Xc.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(k, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -1622,13 +1622,13 @@
 					userSubreddit: Object(I.g)(e.modPermissions, e.isSubscribed),
 					actionInfo: F
 				}),
-				D = J("select_location"),
-				A = J("confirm_location"),
-				W = J("undo_location"),
-				H = Q("verify_location"),
-				z = Q("reject_location");
+				D = Q("select_location"),
+				A = Q("confirm_location"),
+				W = Q("undo_location"),
+				H = J("verify_location"),
+				z = J("reject_location");
 
-			function J(e) {
+			function Q(e) {
 				return (t, s) => () => ({
 					source: G,
 					noun: e,
@@ -1642,7 +1642,7 @@
 				})
 			}
 
-			function Q(e) {
+			function J(e) {
 				return (t, s) => () => ({
 					source: G,
 					noun: e,
@@ -1666,7 +1666,7 @@
 				t.push(e), Object(b.Ib)(Z, t)
 			}
 
-			function Y(e) {
+			function X(e) {
 				const {
 					subreddit: t,
 					onClose: s
@@ -1755,7 +1755,7 @@
 				}))
 			}
 			const {
-				fbt: X
+				fbt: Y
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), Z = "geotagging-dismissed";
 
 			function $() {
@@ -1789,7 +1789,7 @@
 				function c(e) {
 					o(a + 1)
 				}
-				return e ? r.a.createElement("div", null, r.a.createElement(j, null), X._("Error loading subreddits", null, {
+				return e ? r.a.createElement("div", null, r.a.createElement(j, null), Y._("Error loading subreddits", null, {
 					hk: "4hQNVu"
 				})) : t ? r.a.createElement(r.a.Fragment, null, r.a.createElement(j, null), r.a.createElement(i.a, {
 					isLoading: !0,
@@ -1806,7 +1806,7 @@
 				}), r.a.createElement(i.a, {
 					isLoading: !0,
 					className: S.a.subredditGeotag
-				})) : a >= s.length ? r.a.createElement(v, null) : r.a.createElement(r.a.Fragment, null, r.a.createElement(j, null), s.map(e => r.a.createElement(Y, {
+				})) : a >= s.length ? r.a.createElement(v, null) : r.a.createElement(r.a.Fragment, null, r.a.createElement(j, null), s.map(e => r.a.createElement(X, {
 					key: e.id,
 					subreddit: e,
 					onClose: c
@@ -1865,11 +1865,11 @@
 				c = s("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(o.h)(e) && Object(a.f)(e),
-					experimentName: n.nc
+					experimentName: n.lc
 				}), i.a),
 				l = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(o.h)(e) && Object(a.f)(e),
-					experimentName: n.mc
+					experimentName: n.kc
 				}), i.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -1888,4 +1888,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.8573143c2290db219b24.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.2f6d9c671e2519a94d64.js.map

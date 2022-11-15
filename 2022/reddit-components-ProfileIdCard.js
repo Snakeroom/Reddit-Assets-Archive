@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.35ab0180bff171882233.js
-// Retrieved at 11/15/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.2f04fa4f9465000bc226.js
+// Retrieved at 11/15/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -2734,8 +2734,8 @@
 				page: O.b,
 				allowNFTs: e => Object(y.c)(e, {
 					experimentEligibilitySelector: y.a,
-					experimentName: j.n
-				}) === j.p.Enabled,
+					experimentName: j.l
+				}) === j.n.Enabled,
 				isUserBlocked: k.M
 			}), he = e => {
 				let {
@@ -3578,9 +3578,9 @@
 				s = r("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = r("./src/reddit/selectors/user.ts");
 			const a = e => Object(s.c)(e, {
-				experimentName: n.x,
+				experimentName: n.v,
 				experimentEligibilitySelector: () => Object(o.Q)(e)
-			}) === n.Jd
+			}) === n.Hd
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, r) {
 			"use strict";
@@ -3592,13 +3592,13 @@
 			var n = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = r("./src/reddit/selectors/user.ts");
-			const a = e => n.b.Enabled === Object(s.c)(e, {
+			const a = e => n.a.Enabled === Object(s.c)(e, {
+					experimentEligibilitySelector: o.R,
+					experimentName: n.d
+				}),
+				i = e => n.b.Enabled === Object(s.c)(e, {
 					experimentEligibilitySelector: o.R,
 					experimentName: n.f
-				}),
-				i = e => n.c.Enabled === Object(s.c)(e, {
-					experimentEligibilitySelector: o.R,
-					experimentName: n.h
 				})
 		},
 		"./src/reddit/selectors/premium.ts": function(e, t, r) {
@@ -3628,4 +3628,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.35ab0180bff171882233.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.2f04fa4f9465000bc226.js.map

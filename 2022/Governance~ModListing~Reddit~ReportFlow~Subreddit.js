@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.94e5c580d80ebd93ce11.js
-// Retrieved at 11/15/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.0b635c5892e17f1f2a6b.js
+// Retrieved at 11/15/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(t, e, i) {
@@ -852,7 +852,7 @@
 							success: g.ok
 						}
 					})
-				}, q = Object(d.a)(A.l), Y = Object(d.a)(A.k), W = Object(d.a)(A.j), z = t => async (e, i, n) => {
+				}, q = Object(d.a)(A.l), W = Object(d.a)(A.k), Y = Object(d.a)(A.j), z = t => async (e, i, n) => {
 					let {
 						apiContext: r
 					} = n;
@@ -866,13 +866,13 @@
 					if (l.ok) {
 						const n = i().structuredStyles.models[t],
 							r = n ? n.mobileKeyColor : null;
-						e(Y({
+						e(W({
 							subredditId: t,
 							styles: {
 								mobileKeyColor: r
 							}
 						}))
-					} else e(W({
+					} else e(Y({
 						subredditId: t,
 						...l.error
 					}))
@@ -2306,9 +2306,9 @@
 			const d = t => {
 					return Object(r.c)(t, {
 						experimentEligibilitySelector: r.a,
-						experimentName: n.I,
+						experimentName: n.G,
 						expEventOverride: !1
-					}) === n.S.Enabled
+					}) === n.Q.Enabled
 				},
 				_ = (t, e) => {
 					let {
@@ -2378,12 +2378,12 @@
 					return Object(o.Q)(i)
 				}, (t, e, i) => !t && !e && i),
 				a = Object(n.a)((t, e) => Object(l.c)(t, {
-					experimentName: r.gd,
+					experimentName: r.ed,
 					experimentEligibilitySelector: t => c(t, e)
 				}), t => t),
-				d = t => t === r.Yf.NoCommunityWidgets,
-				_ = t => t === r.Yf.NoRulesModerators,
-				u = t => t === r.Yf.RelatedPostsDu
+				d = t => t === r.Wf.NoCommunityWidgets,
+				_ = t => t === r.Wf.NoRulesModerators,
+				u = t => t === r.Wf.RelatedPostsDu
 		},
 		"./src/reddit/selectors/tooltip.ts": function(t, e, i) {
 			"use strict";
@@ -2409,4 +2409,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.94e5c580d80ebd93ce11.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.0b635c5892e17f1f2a6b.js.map

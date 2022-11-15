@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.0b1dc5b58be0017e2fa5.js
-// Retrieved at 11/15/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.b781fd977bcccbaff162.js
+// Retrieved at 11/15/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./node_modules/lodash/map.js": function(e, t, s) {
@@ -521,10 +521,10 @@
 			var G = s("./src/reddit/helpers/isPost.ts"),
 				$ = s("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
 				J = s("./src/reddit/helpers/routeKey/index.ts"),
-				Q = s("./src/reddit/models/ModQueue/index.ts"),
-				z = s("./src/reddit/models/PostDraft/index.ts"),
-				q = s("./src/reddit/models/RemovalReason/index.ts"),
-				H = s("./src/reddit/models/Toast/index.ts"),
+				z = s("./src/reddit/models/ModQueue/index.ts"),
+				q = s("./src/reddit/models/PostDraft/index.ts"),
+				H = s("./src/reddit/models/RemovalReason/index.ts"),
+				Q = s("./src/reddit/models/Toast/index.ts"),
 				X = s("./src/reddit/selectors/comments.ts"),
 				Z = s("./src/reddit/selectors/platform.ts");
 			Object(n.a)({
@@ -571,7 +571,7 @@
 							subredditId: e,
 							reason: r
 						})), s(Object(P.f)({
-							kind: H.b.SuccessMod,
+							kind: Q.b.SuccessMod,
 							text: o.fbt._("Removal reason added!", null, {
 								hk: "2WSh8N"
 							})
@@ -595,7 +595,7 @@
 						subredditId: e,
 						reason: t
 					})), s(Object(P.f)({
-						kind: H.b.SuccessMod,
+						kind: Q.b.SuccessMod,
 						text: o.fbt._("Removal reason saved", null, {
 							hk: "28ScuL"
 						})
@@ -614,7 +614,7 @@
 						subredditId: e,
 						reasonId: t
 					})), s(Object(P.f)({
-						kind: H.b.SuccessMod,
+						kind: Q.b.SuccessMod,
 						text: o.fbt._("Removal reason deleted", null, {
 							hk: "4xzgsa"
 						})
@@ -635,9 +635,9 @@
 					const l = d(),
 						u = l.user.account && l.user.account.displayText,
 						m = e[0],
-						b = Object(G.a)(m) ? q.e.Post : q.e.Comment,
-						p = b === q.e.Post ? l.posts.models[m] : l.features.comments.models[m],
-						O = b === q.e.Post ? D.R : N.j;
+						b = Object(G.a)(m) ? H.e.Post : H.e.Comment,
+						p = b === H.e.Post ? l.posts.models[m] : l.features.comments.models[m],
+						O = b === H.e.Post ? D.R : N.j;
 					if (!p || !u) return !1;
 					a(Re()), a(O({
 						[m]: {
@@ -662,9 +662,9 @@
 									isLocked: r,
 									type: o
 								},
-								d = await K(i(), Object(q.h)(n, b), b);
+								d = await K(i(), Object(H.h)(n, b), b);
 							if (d.ok) {
-								if ([q.f.Public, q.f.PublicAsSubreddit].includes(o)) {
+								if ([H.f.Public, H.f.PublicAsSubreddit].includes(o)) {
 									if (a(je()), d.body) {
 										const e = Object($.a)(d.body),
 											t = {
@@ -677,8 +677,8 @@
 										if (n || (n = Object(y.a)(e.postId, null, {
 												sort: I.x,
 												hasSortParam: !0
-											})), b === q.e.Post) {
-											const s = Object(L.a)(z.c.replyToPost, m);
+											})), b === H.e.Post) {
+											const s = Object(L.a)(q.c.replyToPost, m);
 											a(Object(T.r)({
 												...t,
 												headCommentId: Object(X.w)(l, {
@@ -697,8 +697,8 @@
 													isStickied: !1
 												}
 											}))
-										} else if (b === q.e.Comment) {
-											const e = Object(L.a)(z.c.replyToComment, p.id),
+										} else if (b === H.e.Comment) {
+											const e = Object(L.a)(q.c.replyToComment, p.id),
 												s = Object(X.j)(l, {
 													commentId: m,
 													commentsPageKey: n
@@ -734,7 +734,7 @@
 					if (!u) return;
 					a(Re());
 					const m = Object(P.f)({
-							kind: H.b.SuccessMod,
+							kind: Q.b.SuccessMod,
 							text: o.fbt._({
 								"*": "Added removal reason for {number} posts/comments",
 								_1: "Added removal reason for 1 post/comment"
@@ -751,7 +751,7 @@
 					if (p.ok) {
 						const o = {
 							ids: e,
-							operation: Q.a.RemovalReason,
+							operation: z.a.RemovalReason,
 							username: u,
 							options: {
 								modNote: r,
@@ -765,7 +765,7 @@
 									title: t.title,
 									type: n
 								},
-								r = await K(i(), Object(q.h)(o, q.e.Bulk), q.e.Bulk);
+								r = await K(i(), Object(H.h)(o, H.e.Bulk), H.e.Bulk);
 							r.ok ? (a(Se()), a(m)) : a(ve(r.error))
 						} else a(m)
 					} else a(_e(p.error))
@@ -999,13 +999,13 @@
 				r = s("./node_modules/reselect/es/index.js");
 			const a = Object(r.a)(e => Object(n.c)(e, {
 				experimentEligibilitySelector: n.a,
-				experimentName: o.ub
+				experimentName: o.sb
 			}), e => ({
-				bucketed: e === o.Qc.ExpandedSearch || e === o.Qc.CollapsedSearch,
-				collapsed: e === o.Qc.CollapsedSearch,
-				expanded: e === o.Qc.ExpandedSearch
+				bucketed: e === o.Oc.ExpandedSearch || e === o.Oc.CollapsedSearch,
+				collapsed: e === o.Oc.CollapsedSearch,
+				expanded: e === o.Oc.ExpandedSearch
 			}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.0b1dc5b58be0017e2fa5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.b781fd977bcccbaff162.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.d7b376a861bf55493ad0.js
-// Retrieved at 11/15/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.091fc3b61e8866b07f1b.js
+// Retrieved at 11/15/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -4037,7 +4037,7 @@
 					return r ? r * o.Xb < 1639443600180 ? void 0 : O(e) : void 0
 				},
 				O = Object(r.a)(e => Object(c.c)(e, {
-					experimentName: i.De,
+					experimentName: i.Be,
 					experimentEligibilitySelector: a.e
 				}), d.a)
 		},
@@ -4082,35 +4082,35 @@
 				b = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: i.Oe
-					}) === i.Qe.ContentMatch
+						experimentName: i.Me
+					}) === i.Oe.ContentMatch
 				},
 				f = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: i.Oe
-					}) === i.Qe.ConfidenceAndSuccess
+						experimentName: i.Me
+					}) === i.Oe.ConfidenceAndSuccess
 				},
 				p = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: i.Oe
+						experimentName: i.Me
 					});
-					return t === i.Qe.ContentMatch || t === i.Qe.ConfidenceAndSuccess || t === i.T.Control1 || t === i.T.Control2
+					return t === i.Oe.ContentMatch || t === i.Oe.ConfidenceAndSuccess || t === i.R.Control1 || t === i.R.Control2
 				},
 				m = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: i.Oe
+						experimentName: i.Me
 					});
-					return t === i.T.Control1 || t === i.T.Control2
+					return t === i.R.Control1 || t === i.R.Control2
 				},
 				O = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: i.Oe
+						experimentName: i.Me
 					});
-					return t === i.Qe.ContentMatch || t === i.Qe.ConfidenceAndSuccess
+					return t === i.Oe.ContentMatch || t === i.Oe.ConfidenceAndSuccess
 				},
 				I = e => e.creations.subredditRec.api.pending,
 				_ = e => e.creations.subredditRec.api.error,
@@ -4263,4 +4263,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.d7b376a861bf55493ad0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.091fc3b61e8866b07f1b.js.map
