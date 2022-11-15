@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.0881c8bb935b9a64df45.js
-// Retrieved at 11/15/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.5f5659c50c29d39e759f.js
+// Retrieved at 11/15/2022, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -12350,15 +12350,18 @@
 					const s = F()([...Object(M.a)(e)]);
 					return Object(m.zc)(s.sort) && (t.sort = s.sort), Object(m.Ac)(s.t) && (t.t = s.t), t
 				},
-				V = (e, t, s, n) => () => e(e => ({
-					...Object(D.g)(e),
-					source: "search",
-					action: "click",
-					noun: t,
-					correlationId: Object(A.c)(A.a.SearchResults),
-					actionInfo: W.d(e),
-					search: W.db(e, U(s, n), B.a.SERP)
-				})),
+				V = (e, t, s, n) => () => e(e => {
+					const r = W.H(e, null);
+					return {
+						...Object(D.g)(e),
+						source: "search",
+						action: "click",
+						noun: t,
+						correlationId: Object(A.c)(A.a.SearchResults),
+						actionInfo: Object(D.l)(e, null, r),
+						search: W.db(e, U(s, n), B.a.SERP)
+					}
+				}),
 				H = e => {
 					let {
 						isSelected: t,
@@ -19215,4 +19218,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.0881c8bb935b9a64df45.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.5f5659c50c29d39e759f.js.map

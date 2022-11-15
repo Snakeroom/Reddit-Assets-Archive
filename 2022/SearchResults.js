@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.539fcff14de2504947a2.js
-// Retrieved at 11/15/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.8e8584a0ddb22d43dce8.js
+// Retrieved at 11/15/2022, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -7870,15 +7870,18 @@
 					const s = M()([...Object(L.a)(e)]);
 					return Object(m.zc)(s.sort) && (t.sort = s.sort), Object(m.Ac)(s.t) && (t.t = s.t), t
 				},
-				V = (e, t, s, n) => () => e(e => ({
-					...Object(D.g)(e),
-					source: "search",
-					action: "click",
-					noun: t,
-					correlationId: Object(A.c)(A.a.SearchResults),
-					actionInfo: U.d(e),
-					search: U.db(e, W(s, n), B.a.SERP)
-				})),
+				V = (e, t, s, n) => () => e(e => {
+					const r = U.H(e, null);
+					return {
+						...Object(D.g)(e),
+						source: "search",
+						action: "click",
+						noun: t,
+						correlationId: Object(A.c)(A.a.SearchResults),
+						actionInfo: Object(D.l)(e, null, r),
+						search: U.db(e, W(s, n), B.a.SERP)
+					}
+				}),
 				G = e => {
 					let {
 						isSelected: t,
@@ -11157,4 +11160,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.539fcff14de2504947a2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.8e8584a0ddb22d43dce8.js.map
