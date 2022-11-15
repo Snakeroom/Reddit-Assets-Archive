@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.7f493fe8aecbde2d4f08.js
-// Retrieved at 11/15/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.449241f444cf80e89232.js
+// Retrieved at 11/15/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less": function(e, t, s) {
@@ -35,9 +35,9 @@
 				y = s("./src/reddit/constants/experiments.ts"),
 				x = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				D = s("./src/reddit/selectors/user.ts");
-			const C = e => Object(D.O)(e) || y.Qf.ShowTopContent === Object(x.c)(e, {
+			const C = e => Object(D.O)(e) || y.Rf.ShowTopContent === Object(x.c)(e, {
 				experimentEligibilitySelector: x.a,
-				experimentName: y.Kf
+				experimentName: y.Lf
 			});
 			var v = s("./src/reddit/selectors/subreddit.ts"),
 				U = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
@@ -55,7 +55,7 @@
 					return `${s}-${t}`
 				})
 			}));
-			class O extends d.a.Component {
+			class L extends d.a.Component {
 				constructor() {
 					super(...arguments), this.onCloseClick = () => {
 						const {
@@ -117,8 +117,8 @@
 					})))
 				}
 			}
-			t.default = E(O)
+			t.default = E(L)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.7f493fe8aecbde2d4f08.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.449241f444cf80e89232.js.map

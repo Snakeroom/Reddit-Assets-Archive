@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.f9649c5190bf33dffdb4.js
-// Retrieved at 11/15/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.6ab13a2664db40651dd6.js
+// Retrieved at 11/15/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -443,7 +443,7 @@
 				q = n("./src/lib/initializeClient/installReducer.ts"),
 				W = n("./src/reddit/reducers/features/marketplace/index.ts"),
 				U = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const H = Object(U.a)(b.Nd);
+			const H = Object(U.a)(b.Od);
 			Object(q.a)({
 				features: {
 					marketplace: W.a
@@ -479,7 +479,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.pg)(p),
+						includeInterestTopics: !!p && !Object(b.qg)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: h && !(null === (s = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === s ? void 0 : s.total),
@@ -1814,7 +1814,7 @@
 						showAllLanguage: d,
 						toggleLanguageSelection: u
 					} = e;
-					const [m, p] = Object(a.useState)(!1), b = Object(i.e)(Z.eb), g = Object(i.e)(je.g) === Ce.Xc.TopTwo, f = Object(i.e)(ke.b), h = Object(_.a)();
+					const [m, p] = Object(a.useState)(!1), b = Object(i.e)(Z.eb), g = Object(i.e)(je.g) === Ce.Yc.TopTwo, f = Object(i.e)(ke.b), h = Object(_.a)();
 					Object(a.useEffect)(() => {
 						h(s ? Object(L.H)(f) : Object(L.z)(f))
 					}, [f, s, h]);
@@ -2125,12 +2125,12 @@
 			var gt = (e, t) => {
 					const n = (e => {
 						return {
-							[Ce.kb.Default]: at,
-							[Ce.kb.FruitVeg]: lt,
-							[Ce.kb.Karma]: dt,
-							[Ce.kb.Interactive]: ut(e),
-							[Ce.kb.Randomizer]: mt,
-							[Ce.kb.FruitVegWithBody]: pt
+							[Ce.lb.Default]: at,
+							[Ce.lb.FruitVeg]: lt,
+							[Ce.lb.Karma]: dt,
+							[Ce.lb.Interactive]: ut(e),
+							[Ce.lb.Randomizer]: mt,
+							[Ce.lb.FruitVegWithBody]: pt
 						}
 					})(t);
 					return e in n ? n[e] : at
@@ -3016,7 +3016,7 @@
 				}, [T, y, t, he]), Object(a.useEffect)(() => {
 					y && Object(On.a)(null == S ? void 0 : S.genderCategory, y.success)
 				}, [y, S]);
-				const Oe = Object(i.e)(je.h) === Ce.lb.Removed;
+				const Oe = Object(i.e)(je.h) === Ce.mb.Removed;
 				Object(a.useEffect)(() => {
 					let e = !1;
 					return async function() {
@@ -3039,7 +3039,7 @@
 				const xe = Object(i.e)(ke.b),
 					ve = Object(i.e)(ke.j),
 					_e = Object(i.e)(je.g),
-					Ee = _e === Ce.Xc.TopTwo || _e === Ce.Xc.All,
+					Ee = _e === Ce.Yc.TopTwo || _e === Ce.Yc.All,
 					Se = Object(a.useCallback)(async e => {
 						ie(!0);
 						const n = await fn(e, t, ve);
@@ -3058,9 +3058,9 @@
 					Ie = Object(i.e)(Z.T),
 					Te = Object(i.e)(ke.g),
 					we = Object(i.e)(jn.a),
-					Re = we === Ce.Wf.CloseOnboarding,
-					Fe = we === Ce.Wf.SkipTopicSelection,
-					Le = we === Ce.Wf.SmartSignal,
+					Re = we === Ce.Xf.CloseOnboarding,
+					Fe = we === Ce.Xf.SkipTopicSelection,
+					Le = we === Ce.Xf.SmartSignal,
 					Ge = Object(a.useCallback)(() => {
 						s(Object(b.g)(Qt.a.ONBOARDING_MODAL_D2X)), ye && s(Object(g.h)()), h && (r(Object(L.t)()), Object(xn.a)()), Te && Ie && s(Object(m.startChangeUsernameFlow)())
 					}, [s, Ie, Te, h, ye, r]),
@@ -5167,8 +5167,8 @@
 			const a = e => {
 				return !(Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.re
-				}) === s.Id)
+					experimentName: s.se
+				}) === s.Jd)
 			}
 		},
 		"./src/reddit/selectors/experiments/inAppNotification.ts": function(e, t, n) {
@@ -5187,20 +5187,20 @@
 				a = n("./src/reddit/selectors/experiments/index.ts"),
 				o = n("./src/reddit/selectors/experiments/utils.ts");
 			const i = e => Object(r.c)(e, {
-					experimentName: s.Ob,
+					experimentName: s.Pb,
 					experimentEligibilitySelector: a.e
-				}) === s.W.topOfFeedWithCTAs,
+				}) === s.X.topOfFeedWithCTAs,
 				c = e => (e => Object(r.c)(e, {
-					experimentName: s.Ob,
+					experimentName: s.Pb,
 					experimentEligibilitySelector: a.e
-				}) === s.W.topOfFeedNoCTAs)(e) || i(e),
+				}) === s.X.topOfFeedNoCTAs)(e) || i(e),
 				l = e => Object(r.c)(e, {
-					experimentName: s.Ob,
+					experimentName: s.Pb,
 					experimentEligibilitySelector: a.e
-				}) === s.W.floatInFeed,
+				}) === s.X.floatInFeed,
 				d = e => {
 					const t = Object(r.c)(e, {
-						experimentName: s.Ob,
+						experimentName: s.Pb,
 						experimentEligibilitySelector: a.e
 					});
 					return Object(o.a)(t)
@@ -5238,4 +5238,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.f9649c5190bf33dffdb4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.6ab13a2664db40651dd6.js.map

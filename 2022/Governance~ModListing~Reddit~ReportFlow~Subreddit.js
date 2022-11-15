@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.55a28f8c8be86181ccdf.js
-// Retrieved at 11/15/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.94e5c580d80ebd93ce11.js
+// Retrieved at 11/15/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(t, e, i) {
@@ -2306,9 +2306,9 @@
 			const d = t => {
 					return Object(r.c)(t, {
 						experimentEligibilitySelector: r.a,
-						experimentName: n.H,
+						experimentName: n.I,
 						expEventOverride: !1
-					}) === n.R.Enabled
+					}) === n.S.Enabled
 				},
 				_ = (t, e) => {
 					let {
@@ -2378,12 +2378,12 @@
 					return Object(o.Q)(i)
 				}, (t, e, i) => !t && !e && i),
 				a = Object(n.a)((t, e) => Object(l.c)(t, {
-					experimentName: r.fd,
+					experimentName: r.gd,
 					experimentEligibilitySelector: t => c(t, e)
 				}), t => t),
-				d = t => t === r.Xf.NoCommunityWidgets,
-				_ = t => t === r.Xf.NoRulesModerators,
-				u = t => t === r.Xf.RelatedPostsDu
+				d = t => t === r.Yf.NoCommunityWidgets,
+				_ = t => t === r.Yf.NoRulesModerators,
+				u = t => t === r.Yf.RelatedPostsDu
 		},
 		"./src/reddit/selectors/tooltip.ts": function(t, e, i) {
 			"use strict";
@@ -2409,4 +2409,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.55a28f8c8be86181ccdf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.94e5c580d80ebd93ce11.js.map

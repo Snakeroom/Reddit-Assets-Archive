@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.3291d37b22c234f85b87.js
-// Retrieved at 11/15/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.b386c2331f4d8b723d11.js
+// Retrieved at 11/15/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, r) {
@@ -707,9 +707,9 @@
 					api: G,
 					result: q
 				});
-			const Q = {};
-			var J = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Q,
+			const J = {};
+			var Q = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : J,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
 						case N.r: {
@@ -754,7 +754,7 @@
 					loadMore: T,
 					models: W,
 					search: K,
-					userOrder: J
+					userOrder: Q
 				});
 			Object(k.a)({
 				features: {
@@ -1121,8 +1121,8 @@
 				G = r("./src/reddit/components/ProfileIdCard/AwardedLastMonth.tsx"),
 				q = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/index.tsx"),
 				K = r("./src/reddit/actions/inContextModeration.ts"),
-				Q = r("./src/reddit/actions/modal.ts"),
-				J = r("./src/reddit/actions/subredditModeration/ban.ts"),
+				J = r("./src/reddit/actions/modal.ts"),
+				Q = r("./src/reddit/actions/subredditModeration/ban.ts"),
 				Y = r("./src/reddit/constants/modals.ts"),
 				Z = r("./src/reddit/components/Hovercards/helpers.ts"),
 				X = r("./src/reddit/icons/fonts/index.tsx"),
@@ -1200,8 +1200,8 @@
 						contextId: s
 					} = t;
 					return {
-						onUnbanUser: t => e(Object(J.e)(n, t)),
-						requestUserBanInfo: () => e(Object(J.c)(n, {
+						onUnbanUser: t => e(Object(Q.e)(n, t)),
+						requestUserBanInfo: () => e(Object(Q.c)(n, {
 							username: r
 						})),
 						toggleBanModal: () => {
@@ -1209,14 +1209,14 @@
 								username: r,
 								subredditId: n,
 								contextId: s
-							})), e(Object(J.a)(n, r))
+							})), e(Object(Q.a)(n, r))
 						},
 						toggleMuteModal: () => {
 							e(Object(K.d)({
 								username: r,
 								subredditId: n,
 								contextId: s
-							})), e(Object(Q.i)(Y.a.MUTE_USER))
+							})), e(Object(J.i)(Y.a.MUTE_USER))
 						}
 					}
 				})(se),
@@ -2662,8 +2662,8 @@
 			const a = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.I
-				}) === n.Id
+					experimentName: n.J
+				}) === n.Jd
 			}
 		},
 		"./src/redditGQL/operations/DeleteSubredditMuteSettings.json": function(e) {
@@ -2680,4 +2680,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.3291d37b22c234f85b87.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.b386c2331f4d8b723d11.js.map

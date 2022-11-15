@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.c2db9439ff3f9693dd81.js
-// Retrieved at 11/15/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.db48dd2ccd927fdb5ff6.js
+// Retrieved at 11/15/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~reddit-components-MediumPost"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, n) {
@@ -3653,11 +3653,11 @@
 				o = n("./node_modules/reselect/es/index.js");
 			const i = Object(o.a)(e => Object(s.c)(e, {
 				experimentEligibilitySelector: s.a,
-				experimentName: r.tb
+				experimentName: r.ub
 			}), e => ({
-				bucketed: e === r.Pc.ExpandedSearch || e === r.Pc.CollapsedSearch,
-				collapsed: e === r.Pc.CollapsedSearch,
-				expanded: e === r.Pc.ExpandedSearch
+				bucketed: e === r.Qc.ExpandedSearch || e === r.Qc.CollapsedSearch,
+				collapsed: e === r.Qc.CollapsedSearch,
+				expanded: e === r.Qc.ExpandedSearch
 			}))
 		},
 		"./src/reddit/selectors/removedPosts.ts": function(e, t, n) {
@@ -3728,4 +3728,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.c2db9439ff3f9693dd81.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.db48dd2ccd927fdb5ff6.js.map

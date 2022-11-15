@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.98ea795d7000688f577e.js
-// Retrieved at 11/15/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.b0d50d4c6c5234558a76.js
+// Retrieved at 11/15/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeaturedLiveEntrypointAnnouncementsCarousel"], {
 		"./src/reddit/components/FeaturedLiveEntrypoint/AnnouncementsCarousel/index.m.less": function(e, t, n) {
@@ -61,8 +61,8 @@
 				u = n("./node_modules/lodash/isEqual.js"),
 				b = n.n(u),
 				v = n("./src/lib/constants/index.ts"),
-				p = n("./src/reddit/constants/cookie.ts"),
-				A = n("./src/reddit/constants/experiments.ts"),
+				A = n("./src/reddit/constants/cookie.ts"),
+				p = n("./src/reddit/constants/experiments.ts"),
 				_ = n("./src/reddit/helpers/localStorage/index.ts"),
 				h = n("./src/reddit/selectors/telemetry.ts");
 			const x = (e, t) => {
@@ -97,7 +97,7 @@
 				C = n("./src/reddit/selectors/experiments/index.ts");
 			const E = e => {
 					const t = new Date;
-					t.setMonth(t.getMonth() + 1), m.a.set(p.h, e, {
+					t.setMonth(t.getMonth() + 1), m.a.set(A.h, e, {
 						...v.F,
 						expires: t
 					})
@@ -105,7 +105,7 @@
 				g = (e, t) => n => {
 					if (n.experimentName) {
 						const t = e[n.experimentName.toLowerCase()];
-						if (t && Object(A.pg)(t.variant)) return !1
+						if (t && Object(p.qg)(t.variant)) return !1
 					}
 					return !((t[n.id] || 0) >= n.maxImpressionsCount)
 				};
@@ -169,7 +169,7 @@
 				const n = Object(i.e)(e => e.live.shouldShowAnnouncements),
 					[r, d] = Object(a.useState)([]),
 					[m, u] = Object(a.useState)(!n),
-					[v, A] = Object(a.useState)(!0),
+					[v, p] = Object(a.useState)(!0),
 					[h, N] = Object(a.useState)(0);
 				(e => {
 					let {
@@ -185,7 +185,7 @@
 						const e = Object(_.f)(),
 							a = t.filter(g(l, e)).slice(0, 5),
 							i = [...a].sort((e => (t, n) => (e[t.id] || 0) - (e[n.id] || 0))(e))[0],
-							d = a.length ? p.i.Yes : p.i.No;
+							d = a.length ? A.i.Yes : A.i.No;
 						E(d), s || b()(a.map(e => e.id), r.map(e => e.id)) || (c(a), n(a.indexOf(i)), o(!1))
 					}, [])
 				})({
@@ -194,7 +194,7 @@
 					isHidden: m,
 					setVisibleAnnouncements: d,
 					visibleAnnouncements: r,
-					setIsLoading: A
+					setIsLoading: p
 				});
 				const {
 					onCarouselNavigate: w,
@@ -233,7 +233,7 @@
 								maxImpressionsCount: n
 							} = e;
 							Object(_.mb)(t, n)
-						}), s(O("dismiss_all")), E(p.i.No)
+						}), s(O("dismiss_all")), E(A.i.No)
 					}, [n, s, t])
 				})({
 					visibleAnnouncements: r,
@@ -267,7 +267,7 @@
 							a = Object(_.e)(e.id);
 						o(x("view", e)), Object(_.mb)(e.id, a + 1);
 						const i = Object(_.f)();
-						s.filter(g(c, i)).length || E(p.i.No)
+						s.filter(g(c, i)).length || E(A.i.No)
 					}, [t, c, o, n, s])
 				})({
 					activeIndex: h,
@@ -330,4 +330,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.98ea795d7000688f577e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.b0d50d4c6c5234558a76.js.map

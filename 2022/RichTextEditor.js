@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.a5be4e00ee8fbd366a7f.js
-// Retrieved at 11/15/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.596085aba831051785e0.js
+// Retrieved at 11/15/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -1771,8 +1771,8 @@
 				G = o("./src/reddit/components/UsersCountIndicator/constants.ts"),
 				X = o("./src/reddit/constants/componentSizes.ts"),
 				Z = o("./src/reddit/constants/componentTestIds.ts"),
-				Q = o("./src/reddit/selectors/activeModalId.ts"),
-				J = o("./src/reddit/selectors/comments.ts"),
+				J = o("./src/reddit/selectors/activeModalId.ts"),
+				Q = o("./src/reddit/selectors/comments.ts"),
 				Y = o("./src/reddit/selectors/editorContent.ts"),
 				$ = o("./src/reddit/selectors/experiments/typingIndicators.ts"),
 				ee = o("./src/reddit/actions/modal.ts"),
@@ -1797,10 +1797,10 @@
 				fe = 8,
 				_e = 16,
 				ge = Object(u.b)(() => Object(m.c)({
-					activeModalId: Q.a,
+					activeModalId: J.a,
 					userName: e => e.user.account ? Object(se.e)(e.user.account) : "",
 					pending: (e, t) => e.features.comments.submit.pending[t.draftKey],
-					draft: J.i,
+					draft: Q.i,
 					isConverting: (e, t) => Object(Y.a)(e, t.draftKey),
 					isTypingIndicatorsWriteTestEnabled: (e, t) => !!t.isTopLevelComment && Object($.d)(e)
 				}), (e, t) => ({
@@ -2368,8 +2368,8 @@
 				} = e, n = [];
 				return t && (n = Array.from(X.c)), o && (n = [...n, ...Array.from(X.a)]), n
 			}
-			var Q = o("./src/reddit/hooks/useTracking.ts"),
-				J = o("./src/reddit/selectors/experiments/imageComment.ts"),
+			var J = o("./src/reddit/hooks/useTracking.ts"),
+				Q = o("./src/reddit/selectors/experiments/imageComment.ts"),
 				Y = o("./src/reddit/components/RichTextEditor/Toolbar/CommentToolbar.m.less"),
 				$ = o.n(Y),
 				ee = o("./src/reddit/components/RichTextEditor/Toolbar/MediaInputButton/index.tsx");
@@ -2401,14 +2401,14 @@
 					v = Object(a.e)(e => void 0 !== E && oe(e, {
 						subredditId: E
 					})) && g,
-					k = Object(a.e)(e => Object(J.d)(e, {
+					k = Object(a.e)(e => Object(Q.d)(e, {
 						subredditId: E
 					})),
-					w = Object(a.e)(e => Object(J.b)(e, {
+					w = Object(a.e)(e => Object(Q.b)(e, {
 						subredditId: E
 					})),
 					j = k || w,
-					O = Object(Q.a)(),
+					O = Object(J.a)(),
 					T = Object(r.useCallback)(() => O(Object(u.l)()), [O]),
 					F = x.giphy.isEnabled,
 					R = Object(r.useMemo)(() => Z({
@@ -2547,13 +2547,13 @@
 					isTypingIndicatorsWriteTestEnabled: (e, t) => !!t.isTopLevelComment && Object(Te.d)(e),
 					isImageUploadEnabled: (e, t) => {
 						const o = Object(Ee.s)(e, t);
-						return Object(J.d)(e, {
+						return Object(Q.d)(e, {
 							subredditId: o ? o.id : void 0
 						})
 					},
 					isGifUploadEnabled: (e, t) => {
 						const o = Object(Ee.s)(e, t);
-						return Object(J.b)(e, {
+						return Object(Q.b)(e, {
 							subredditId: o ? o.id : void 0
 						})
 					},
@@ -2865,7 +2865,7 @@
 						t.dispatchSubmit(o, e.draft.commentMode)
 					}
 				}));
-			class Qe extends i.a.Component {
+			class Je extends i.a.Component {
 				constructor(e) {
 					super(e), this.getInstanceRef = e => this.formInstanceRef = e, this.onCancel = () => {
 						this.props.onCancel()
@@ -2947,7 +2947,7 @@
 					return e.contributorRequestPending ? i.a.createElement(He.a, null) : e.showContributorRequestFlow ? i.a.createElement(y, null) : e.draft.commentMode === pe.i.RICH_TEXT ? i.a.createElement(Ue, o) : i.a.createElement(m.b, o)
 				}
 			}
-			t.default = Ge(Ze(Qe))
+			t.default = Ge(Ze(Je))
 		},
 		"./src/reddit/components/ContributorRequestFlow/ContributorRequestButton/index.m.less": function(e, t, o) {
 			e.exports = {
@@ -4259,7 +4259,7 @@
 				d = Object(n.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: a,
 					experimentName: s.F
-				}), e => e === s.P.Enabled)
+				}), e => e === s.Q.Enabled)
 		},
 		"./src/reddit/selectors/experiments/imageComment.ts": function(e, t, o) {
 			"use strict";
@@ -4278,20 +4278,20 @@
 			const i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.fe
-					}) === n.Id
+						experimentName: n.ge
+					}) === n.Jd
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.ge
-					}) === n.Id
+						experimentName: n.he
+					}) === n.Jd
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.Rd
-					}) === n.Id
+						experimentName: n.Sd
+					}) === n.Jd
 				},
 				c = (e, t) => {
 					let {
@@ -4329,31 +4329,31 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: n.ig
-					}) === n.Id
+						experimentName: n.jg
+					}) === n.Jd
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: n.jg
-					}) === n.Id
+						experimentName: n.kg
+					}) === n.Jd
 				},
 				c = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: n.hg
+						experimentName: n.ig
 					});
-					return t === n.Yf.TypingIndicators || t === n.Yf.IndicatorsPlusCTA
+					return t === n.Zf.TypingIndicators || t === n.Zf.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: n.hg
+						experimentName: n.ig
 					});
-					return (null == t ? void 0 : t.variant) === n.Yf.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === n.Zf.IndicatorsPlusCTA
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.a5be4e00ee8fbd366a7f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.596085aba831051785e0.js.map

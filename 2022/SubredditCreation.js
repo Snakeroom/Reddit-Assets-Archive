@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.fc4642cca23453740452.js
-// Retrieved at 11/15/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.6163d2f286dadc68c29f.js
+// Retrieved at 11/15/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -346,8 +346,8 @@
 				P = n("./src/reddit/components/Settings/shared/Widgets.m.less"),
 				A = n.n(P);
 
-			function H() {
-				return (H = Object.assign || function(e) {
+			function W() {
+				return (W = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -355,8 +355,8 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const W = Object(d.a)(h.a),
-				G = C.a.wrapped(T.a, "Circle", A.a),
+			const G = Object(d.a)(h.a),
+				H = C.a.wrapped(T.a, "Circle", A.a),
 				V = C.a.h3("Label", A.a),
 				Y = C.a.wrapped(O.c, "Subtext", A.a),
 				J = C.a.wrapped(u.a, "HoverTooltip", A.a),
@@ -375,7 +375,7 @@
 						last: d,
 						...m
 					} = e;
-					return r.a.createElement("div", H({}, m, {
+					return r.a.createElement("div", W({}, m, {
 						className: Object(l.a)(A.a.Wrapper, t, {
 							[A.a.mColumn]: "column" === n,
 							[A.a.mDisabled]: !!o,
@@ -400,7 +400,7 @@
 					last: e.last
 				}, r.a.createElement(K, {
 					className: e.textContainerClassName
-				}, r.a.createElement(V, null, e.label, e.isRequired && r.a.createElement(G, null)), r.a.createElement(Y, null, e.subtext)), r.a.createElement(z, null, e.children)),
+				}, r.a.createElement(V, null, e.label, e.isRequired && r.a.createElement(H, null)), r.a.createElement(Y, null, e.subtext)), r.a.createElement(z, null, e.children)),
 				ne = C.a.div("StyledFlair", A.a),
 				ae = C.a.wrapped(ne, "SpoilerFlair", A.a),
 				re = C.a.wrapped(ne, "NSFWFlair", A.a),
@@ -549,7 +549,7 @@
 					id: `SettingDropdown--${e.id}`
 				}, e.displayTitle || e.selected), r.a.createElement(v.b, {
 					className: A.a.DropdownTriangle
-				}), r.a.createElement(W, {
+				}), r.a.createElement(G, {
 					container: void 0,
 					isOpen: e.isOpen,
 					renderContentsHidden: !0,
@@ -926,9 +926,9 @@
 				L = n("./src/reddit/models/Subreddit/index.ts"),
 				P = n("./src/reddit/models/SubredditRestrictions/index.ts"),
 				A = n("./src/reddit/selectors/experiments/emailInvite.ts"),
-				H = n("./src/reddit/selectors/subreddit.ts"),
-				W = n("./src/reddit/selectors/tags.ts"),
-				G = n("./src/reddit/selectors/user.ts"),
+				W = n("./src/reddit/selectors/subreddit.ts"),
+				G = n("./src/reddit/selectors/tags.ts"),
+				H = n("./src/reddit/selectors/user.ts"),
 				V = n("./src/lib/formatApiError/index.ts");
 			const Y = (e, t) => {
 				if (!e) return {};
@@ -975,17 +975,17 @@
 				ae = K.a.wrapped(B.a, "CloseButton", Q.a),
 				re = K.a.wrapped(N.b, "ErrorText", Q.a),
 				se = Object(o.c)({
-					error: H.f,
-					isCreatePending: H.l,
+					error: W.f,
+					isCreatePending: W.l,
 					isEmailInviteExperimentEnabled: A.a,
-					isEmployee: G.O,
-					crosspostId: H.k,
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(G.qb)(e),
-					userIsSuspended: G.Y,
-					allTags: W.e,
-					existingTags: W.f,
-					newTags: W.g,
-					selectedPrimaryTagId: W.h
+					isEmployee: H.O,
+					crosspostId: W.k,
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(H.qb)(e),
+					userIsSuspended: H.Y,
+					allTags: G.e,
+					existingTags: G.f,
+					newTags: G.g,
+					selectedPrimaryTagId: G.h
 				}),
 				ie = Object(i.b)(se, e => ({
 					createCommunity: t => e(Object(m.h)(t)),
@@ -1836,11 +1836,11 @@
 			const s = e => {
 				const t = Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: a.Hd
+					experimentName: a.Id
 				});
-				return !(!t || Object(a.pg)(t))
+				return !(!t || Object(a.qg)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.fc4642cca23453740452.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.6163d2f286dadc68c29f.js.map
