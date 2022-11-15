@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedModal.7f2433fcfe9f37966daa.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedModal.666e40ffbea53515aec2.js
+// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedModal"], {
 		"./src/reddit/components/CrisisFlow/_CrisisFlow.m.less": function(e, s, t) {
@@ -278,4 +278,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedModal.7f2433fcfe9f37966daa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedModal.666e40ffbea53515aec2.js.map

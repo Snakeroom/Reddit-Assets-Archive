@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NoGasPage.43590f648a94bdf47314.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NoGasPage.138e212898d06de2f2df.js
+// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NoGasPage"], {
 		"./src/reddit/pages/meta/NoGasPage/index.m.less": function(e, a, t) {
@@ -55,4 +55,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NoGasPage.43590f648a94bdf47314.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NoGasPage.138e212898d06de2f2df.js.map

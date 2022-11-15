@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SurveyAsync.250cbf5cff8395461d31.js
-// Retrieved at 10/25/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SurveyAsync.67bd25460cdbc4bc0b1b.js
+// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SurveyAsync"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, n) {
@@ -522,4 +522,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SurveyAsync.250cbf5cff8395461d31.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SurveyAsync.67bd25460cdbc4bc0b1b.js.map

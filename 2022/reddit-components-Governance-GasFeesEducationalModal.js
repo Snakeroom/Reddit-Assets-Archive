@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-GasFeesEducationalModal.b81ccec2f579dc7f33eb.js
-// Retrieved at 9/29/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-GasFeesEducationalModal.a850c3c86451478e85ff.js
+// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-GasFeesEducationalModal"], {
 		"./src/reddit/components/Governance/GasFeesEducationalModal/index.m.less": function(e, t, a) {
@@ -349,4 +349,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-GasFeesEducationalModal.b81ccec2f579dc7f33eb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-GasFeesEducationalModal.a850c3c86451478e85ff.js.map
