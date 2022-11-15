@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.0cd9b4cbdc2db70ec8c1.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.86982c5bfa96ace983e3.js
+// Retrieved at 11/15/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -1972,7 +1972,7 @@
 			const w = e => _.d.reCaptchaEnterprise(e) && !Object(T.d)(e),
 				D = e => !!Object(S.c)(e, {
 					experimentEligibilitySelector: Object(I.d)(Object(I.b)(...a.d)),
-					experimentName: f.lf
+					experimentName: f.jf
 				}),
 				j = Object(r.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				A = () => l(e => p()([w, D, e => e.tracking.reCaptchaEnterprise.load === r.a.New], t => t(e)))(async e => {
@@ -4433,10 +4433,10 @@
 				h = n("./node_modules/reselect/es/index.js");
 			const b = Object(h.a)(e => Object(f.c)(e, {
 				experimentEligibilitySelector: f.a,
-				experimentName: p.ng
+				experimentName: p.lg
 			}), e => ({
-				promptBeforeClick: e === p.og.PromptBeforeClick,
-				promptAfterClick: e === p.og.PromptAfterClick
+				promptBeforeClick: e === p.mg.PromptBeforeClick,
+				promptAfterClick: e === p.mg.PromptAfterClick
 			}));
 			var y = n("./src/reddit/controls/Search/SearchScopePill/index.tsx"),
 				g = n("./src/reddit/controls/Search/SearchBar/index.m.less"),
@@ -24513,7 +24513,7 @@
 					if (!u(e)) return;
 					const t = Object(c.c)(e, {
 						experimentEligibilitySelector: l,
-						experimentName: a.de,
+						experimentName: a.be,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -24536,9 +24536,9 @@
 				},
 				h = e => !!p(e) && Object(c.c)(e, {
 					experimentEligibilitySelector: u,
-					experimentName: a.ee,
+					experimentName: a.ce,
 					expEventOverride: !1
-				}) !== a.fe.Readonly
+				}) !== a.de.Readonly
 		},
 		"./src/reddit/selectors/trending.ts": function(e, t, n) {
 			"use strict";
@@ -24622,4 +24622,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.0cd9b4cbdc2db70ec8c1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.86982c5bfa96ace983e3.js.map

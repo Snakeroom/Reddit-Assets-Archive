@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.53479296663da57d6037.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.e05118400665f89d1f0d.js
+// Retrieved at 11/15/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -349,11 +349,11 @@
 					T = y("p24Bank", E),
 					M = y("epsBank", E),
 					L = y("payment", E),
-					R = y("paymentRequestButton", E),
-					B = y("linkAuthentication", E),
+					B = y("paymentRequestButton", E),
+					R = y("linkAuthentication", E),
 					D = y("shippingAddress", E),
 					G = y("afterpayClearpayMessage", E);
-				e.AfterpayClearpayMessageElement = G, e.AuBankAccountElement = I, e.CardCvcElement = P, e.CardElement = _, e.CardExpiryElement = k, e.CardNumberElement = C, e.Elements = O, e.ElementsConsumer = j, e.EpsBankElement = M, e.FpxBankElement = N, e.IbanElement = S, e.IdealBankElement = A, e.LinkAuthenticationElement = B, e.P24BankElement = T, e.PaymentElement = L, e.PaymentRequestButtonElement = R, e.ShippingAddressElement = D, e.useElements = function() {
+				e.AfterpayClearpayMessageElement = G, e.AuBankAccountElement = I, e.CardCvcElement = P, e.CardElement = _, e.CardExpiryElement = k, e.CardNumberElement = C, e.Elements = O, e.ElementsConsumer = j, e.EpsBankElement = M, e.FpxBankElement = N, e.IbanElement = S, e.IdealBankElement = A, e.LinkAuthenticationElement = R, e.P24BankElement = T, e.PaymentElement = L, e.PaymentRequestButtonElement = B, e.ShippingAddressElement = D, e.useElements = function() {
 					return v("calls useElements()").elements
 				}, e.useStripe = function() {
 					return v("calls useStripe()").stripe
@@ -929,16 +929,16 @@
 				T = r("./src/reddit/endpoints/awards/index.ts"),
 				M = r("./src/lib/makeGqlRequest/index.ts"),
 				L = r("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
-				R = r("./src/redditGQL/operations/GildComment.json"),
-				B = r("./src/redditGQL/operations/GildPost.json");
+				B = r("./src/redditGQL/operations/GildComment.json"),
+				R = r("./src/redditGQL/operations/GildPost.json");
 			const D = (e, t, r) => Object(M.a)(e, {
-					...B,
+					...R,
 					variables: t
 				}, {
 					query: r ? {} : Object(L.b)()
 				}),
 				G = (e, t, r) => Object(M.a)(e, {
-					...R,
+					...B,
 					variables: t
 				}, {
 					query: r ? {} : Object(L.b)()
@@ -1178,17 +1178,17 @@
 							t = document.getElementById(e);
 						t && t.dispatchEvent(new Event("awardAdded"))
 					}, 10);
-					const R = Date.now();
+					const B = Date.now();
 					await t(Object(c.b)({
 						correlationId: E,
 						forceLoad: !0
 					}));
-					const B = Date.now() - R;
+					const R = Date.now() - B;
 					if (M > 0) {
 						const e = Object(P.f)(r()).filter(e => j.a.has(e.dealInfo.type));
 						if (e.length) {
-							const r = Math.max(900 - B, 10),
-								n = Math.max(300 - B, 10),
+							const r = Math.max(900 - R, 10),
+								n = Math.max(300 - R, 10),
 								a = Object(W.a)(p) && Object(w.r)(Object(N.G)(s, {
 									postId: p
 								}));
@@ -2093,8 +2093,8 @@
 				T = r("./src/reddit/selectors/gold/econPurchase.ts"),
 				M = r("./src/reddit/selectors/gold/giveAwards.ts"),
 				L = r("./src/reddit/selectors/gold/purchaseCatalog.ts"),
-				R = r("./src/reddit/selectors/goldPurchaseModals.ts"),
-				B = r("./src/reddit/selectors/posts.ts"),
+				B = r("./src/reddit/selectors/goldPurchaseModals.ts"),
+				R = r("./src/reddit/selectors/posts.ts"),
 				D = r("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
 				G = r("./src/reddit/selectors/subreddit.ts"),
 				F = r("./src/reddit/selectors/user.ts"),
@@ -2362,7 +2362,7 @@
 			}));
 			var ve = Object(a.b)((e, t) => {
 					if (Object(l.a)(t.thingId)) {
-						const r = Object(B.G)(e, {
+						const r = Object(R.G)(e, {
 							postId: t.thingId
 						});
 						if (!r) return {};
@@ -2715,8 +2715,8 @@
 				}),
 				Me = r("./src/lib/localizeCurrency/index.ts"),
 				Le = r("./src/reddit/components/Econ/CoinsModalHeader/index.m.less"),
-				Re = r.n(Le),
-				Be = r("./src/reddit/icons/svgs/Plus/index.tsx");
+				Be = r.n(Le),
+				Re = r("./src/reddit/icons/svgs/Plus/index.tsx");
 			const {
 				fbt: De
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
@@ -2729,29 +2729,29 @@
 					buttonText: a
 				} = e;
 				return s.a.createElement("div", {
-					className: Re.a.gildHeader
+					className: Be.a.gildHeader
 				}, s.a.createElement("button", {
-					className: Re.a.closeBtn,
+					className: Be.a.closeBtn,
 					onClick: r
 				}, s.a.createElement(Q.b, {
-					className: Re.a.closeBtnIcon
+					className: Be.a.closeBtnIcon
 				})), s.a.createElement("div", {
-					className: Re.a.headerText
+					className: Be.a.headerText
 				}, n), s.a.createElement("button", {
-					className: Re.a.coinButton,
+					className: Be.a.coinButton,
 					onClick: t
 				}, s.a.createElement("div", {
-					className: Re.a.coinBalanceIndicator,
+					className: Be.a.coinBalanceIndicator,
 					tabIndex: -1
 				}, s.a.createElement(te.a, {
-					className: Re.a.coinIcon
+					className: Be.a.coinIcon
 				}), s.a.createElement("div", {
-					className: Re.a.coinBalance
+					className: Be.a.coinBalance
 				}, a)), s.a.createElement("div", {
-					className: Re.a.addCoins,
+					className: Be.a.addCoins,
 					tabIndex: -1
-				}, s.a.createElement(Be.a, {
-					className: Re.a.plusIcon
+				}, s.a.createElement(Re.a, {
+					className: Be.a.plusIcon
 				}))))
 			}
 			var Fe = r("./src/reddit/hooks/useLocale.ts"),
@@ -2801,7 +2801,7 @@
 						s = t && t.id
 					}
 					if (!s && Object(l.a)(r)) {
-						const t = Object(B.G)(e, {
+						const t = Object(R.G)(e, {
 							postId: r
 						});
 						s = t && t.belongsTo.id
@@ -2873,7 +2873,7 @@
 						let {
 							thingId: r
 						} = t;
-						return Object(l.a)(r) ? Object(B.G)(e, {
+						return Object(l.a)(r) ? Object(R.G)(e, {
 							postId: r
 						}) : Object(k.b)(e, {
 							commentId: r
@@ -2888,7 +2888,7 @@
 						})
 					},
 					purchaseCatalogPending: L.o,
-					showPurchaseModal: R.v,
+					showPurchaseModal: B.v,
 					selectedAward: M.b,
 					subreddit: G.O,
 					subredditCoins: (e, t) => {
@@ -2916,7 +2916,7 @@
 							s = t && t.id
 						}
 						if (!s && Object(l.a)(r)) {
-							const t = Object(B.G)(e, {
+							const t = Object(R.G)(e, {
 								postId: r
 							});
 							s = t && t.belongsTo.id
@@ -3459,11 +3459,11 @@
 					onClick: () => {
 						e.isSponsored && e.post.postId && (e.fireAdPixelsOfType && e.fireAdPixelsOfType(e.post, h.a.Click), Object(O.a)(e.post, e.pageType))
 					}
-				}, R(e)) : e.isListing && e.postPermalink ? a.a.createElement(i.a, {
+				}, B(e)) : e.isListing && e.postPermalink ? a.a.createElement(i.a, {
 					target: e.shouldOpenPostInNewTab ? "_blank" : void 0,
 					to: Object(m.a)(e.postPermalink, void 0, t),
 					onClick: e.onPostMediaClick
-				}, R(e)) : R(e)
+				}, B(e)) : B(e)
 			});
 			const L = (e, t) => a.a.createElement(A, {
 					altText: t.altText,
@@ -3483,7 +3483,7 @@
 					width: t.width,
 					renderSmallMedia: t.renderSmallMedia
 				}),
-				R = e => {
+				B = e => {
 					let {
 						onClick: t,
 						...r
@@ -3730,7 +3730,7 @@
 						postId: b
 					}))
 				}
-				const R = s()(e => {
+				const B = s()(e => {
 					if (r) return;
 					const {
 						target: t
@@ -3738,8 +3738,8 @@
 					t && t.played && 1 === t.played.length && 0 === t.played.start(0) && t.played.end(0) === t.duration && T(Object(u.s)(b))
 				}, 200);
 
-				function B(e) {
-					e.persist(), R(e)
+				function R(e) {
+					e.persist(), B(e)
 				}
 
 				function D(e) {
@@ -3788,7 +3788,7 @@
 						onLoadedMetadata: F,
 						onPause: L,
 						onPlaying: U,
-						onTimeUpdate: B,
+						onTimeUpdate: R,
 						shouldLoad: h,
 						shouldPause: j,
 						showCentered: C,
@@ -4259,7 +4259,7 @@
 		"./src/reddit/components/RichTextJson/media.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return B
+				return R
 			})), r.d(t, "b", (function() {
 				return G
 			}));
@@ -4395,7 +4395,7 @@
 				T = k.a.wrapped(l.a, "ImageBox", C.a),
 				M = k.a.wrapped(e => a.a.createElement("p", e), "Caption", C.a),
 				L = k.a.div("Placeholder", C.a),
-				R = k.a.wrapped(e => {
+				B = k.a.wrapped(e => {
 					let {
 						className: t,
 						e: r,
@@ -4431,7 +4431,7 @@
 						onClick: c
 					}))
 				}, "Placeholder", C.a),
-				B = (e, t) => {
+				R = (e, t) => {
 					let {
 						c: r,
 						x: n,
@@ -4481,7 +4481,7 @@
 					const h = f.F(s, t.id);
 					if (i) return [D(t, r, h)];
 					const g = [];
-					return !h || h.e === f.s && null === h.s.x && null === h.s.y ? g.push(((e, t, r, n) => a.a.createElement(R, {
+					return !h || h.e === f.s && null === h.s.x && null === h.s.y ? g.push(((e, t, r, n) => a.a.createElement(B, {
 						e,
 						key: t,
 						renderSmallMedia: r,
@@ -4613,7 +4613,7 @@
 			})), r.d(t, "f", (function() {
 				return L
 			})), r.d(t, "h", (function() {
-				return B
+				return R
 			})), r.d(t, "g", (function() {
 				return D
 			})), r.d(t, "i", (function() {
@@ -4738,7 +4738,7 @@
 					if (!a) return;
 					const o = a.length,
 						d = [];
-					for (let i = 0; i < o; i++) d.push(R(a[i], t, r, i, s));
+					for (let i = 0; i < o; i++) d.push(B(a[i], t, r, i, s));
 					return i.a.createElement(c.c, {
 						key: n
 					}, d)
@@ -4757,14 +4757,14 @@
 						const e = a[u].c;
 						e && e.length && o.push(i.a.createElement(c.g, {
 							key: u
-						}, e.map((e, n) => R(e, t, r, n, s))))
+						}, e.map((e, n) => B(e, t, r, n, s))))
 					}
 					const l = e.o ? c.i : c.v;
 					return i.a.createElement(l, {
 						key: n
 					}, o)
 				},
-				R = (e, t, r, n, s) => {
+				B = (e, t, r, n, s) => {
 					switch (e.e) {
 						case m.b:
 							return T(e, t, r, n, s);
@@ -4779,10 +4779,10 @@
 						case m.v:
 							return D(e, t, r, n, s);
 						case m.A:
-							return B(e, t, r, n, s)
+							return R(e, t, r, n, s)
 					}
 				},
-				B = (e, t, r, n, s) => {
+				R = (e, t, r, n, s) => {
 					const a = e.c,
 						o = e.h,
 						d = a.length,
@@ -5070,12 +5070,12 @@
 						rtJsonElementProps: o
 					});
 					switch (a) {
-						case h.Rf.SmIcon:
+						case h.Pf.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case h.Rf.SmIconHc:
+						case h.Pf.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -5935,7 +5935,7 @@
 			})), r.d(t, "c", (function() {
 				return L
 			})), r.d(t, "f", (function() {
-				return R
+				return B
 			})), r.d(t, "a", (function() {
 				return G
 			})), r.d(t, "j", (function() {
@@ -5971,7 +5971,7 @@
 						const r = e[t];
 						if (!r) return e;
 						const n = r.stream.state,
-							s = B(n, o.a.ENDED) ? o.a.ENDED : n,
+							s = R(n, o.a.ENDED) ? o.a.ENDED : n,
 							a = r.stream.vod_accessible;
 						return s === n && !0 === a ? e : {
 							...e,
@@ -5989,7 +5989,7 @@
 						const r = e[t];
 						if (!r) return e;
 						const n = r.stream.state,
-							s = B(n, o.a.ENDED) ? o.a.ENDED : n,
+							s = R(n, o.a.ENDED) ? o.a.ENDED : n,
 							a = r.stream.vod_accessible;
 						return s === n && !1 === a ? e : {
 							...e,
@@ -6117,14 +6117,14 @@
 					...t[r],
 					preloadedPreviewUrl: e[r]
 				})))), Object(n.a)(P, e => e.publicAccessNetwork.preloads.streamPreviews, (e, t) => e && t[e])),
-				R = Object(n.a)((e, t) => {
+				B = Object(n.a)((e, t) => {
 					let {
 						streamIdFromPath: r
 					} = t;
 					return r ? x(e, r) : void 0
 				}, e => !e || e.chat_disabled || e.post.isArchived || e.post.isLocked);
 
-			function B(e, t) {
+			function R(e, t) {
 				const r = {
 					[o.a.NOT_STARTED]: 0,
 					[o.a.PUBLISHED]: 1,
@@ -6279,12 +6279,12 @@
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.Lf
+						experimentName: n.Jf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.Rf.SmIcon || t === n.Rf.SmIconHc
+					return t === n.Pf.SmIcon || t === n.Pf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -6334,4 +6334,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.53479296663da57d6037.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.e05118400665f89d1f0d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.44de8cdb936ae4aa5909.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.459d65727faeae3c67eb.js
+// Retrieved at 11/15/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -626,8 +626,8 @@
 				H = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/videoContext.tsx"),
 				Z = s("./src/reddit/controls/OutboundLink/styled.tsx"),
 				K = s("./src/reddit/models/Media/index.ts"),
-				J = s("./src/reddit/components/ClassicPost/Thumbnail.tsx"),
-				Q = s("./src/reddit/connectors/ClassicPost/index.tsx"),
+				Q = s("./src/reddit/components/ClassicPost/Thumbnail.tsx"),
+				J = s("./src/reddit/connectors/ClassicPost/index.tsx"),
 				$ = s("./src/reddit/constants/postLayout.ts"),
 				Y = s("./src/reddit/helpers/hasModFlairPermissions/index.ts"),
 				X = s("./src/reddit/helpers/hasModFullPermissions/index.ts"),
@@ -671,7 +671,7 @@
 					isGalleryTileLayoutDefault: j,
 					isLoggedIn: O,
 					isOverlay: P,
-					imageGalleryCurrentItem: Q,
+					imageGalleryCurrentItem: J,
 					moderatorPermissions: oe,
 					modModeEnabled: le,
 					onClickPost: pe,
@@ -719,15 +719,15 @@
 						shouldShowSubscribeButton: !(w && O) || He && O,
 						subredditOrProfile: je
 					},
-					Ke = Object(o.t)(ge, Q),
+					Ke = Object(o.t)(ge, J),
 					{
-						source: Je
+						source: Qe
 					} = Ke,
-					[Qe, $e] = Object(n.useState)(!1),
+					[Je, $e] = Object(n.useState)(!1),
 					Ye = Object(n.useCallback)(() => {
-						$e(!Qe), Object(te.Qb)(), Ne(Object(re.d)(xe))
-					}, [Qe, xe, Ne]);
-				let Xe = r.a.createElement(J.a, {
+						$e(!Je), Object(te.Qb)(), Ne(Object(re.d)(xe))
+					}, [Je, xe, Ne]);
+				let Xe = r.a.createElement(Q.a, {
 					className: me.a.classicThumbnail,
 					crosspost: Ae && ge,
 					isMeta: ge.isMeta,
@@ -808,7 +808,7 @@
 					}), le && Me && We && r.a.createElement(M.a, {
 						onIgnoreReports: he,
 						reportable: ge
-					}), Se && Je && Je.url && !ge.isSurveyAd && r.a.createElement(m.a, {
+					}), Se && Qe && Qe.url && !ge.isSurveyAd && r.a.createElement(m.a, {
 						ctaExperimentDesign: Le && "classic",
 						className: Object(i.a)(me.a.adLinkWrapper, {
 							[me.a.ctaExperiment]: Le
@@ -859,7 +859,7 @@
 							mute: !Be,
 							save: !Be
 						})
-					})), r.a.createElement(F.d, null))), Object(se.a)(ge, me.a, ye, _, Ie, j), je && Qe && r.a.createElement(h.a, {
+					})), r.a.createElement(F.d, null))), Object(se.a)(ge, me.a, ye, _, Ie, j), je && Je && r.a.createElement(h.a, {
 						className: me.a.creatorStatsContainer,
 						post: ge,
 						subreddit: je,
@@ -867,7 +867,7 @@
 					})));
 				return r.a.createElement(H.b, null, tt)
 			});
-			t.default = Object(Q.a)(pe)
+			t.default = Object(J.a)(pe)
 		},
 		"./src/reddit/components/CommentBodyExpander/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1064,8 +1064,8 @@
 				H = s("./src/reddit/models/PostDraft/index.ts"),
 				Z = s("./src/reddit/models/Comment/index.ts"),
 				K = s("./src/reddit/selectors/activeModalId.ts"),
-				J = s("./src/reddit/selectors/comments.ts"),
-				Q = s("./src/reddit/selectors/experiments/reportingRevampDesktop.ts"),
+				Q = s("./src/reddit/selectors/comments.ts"),
+				J = s("./src/reddit/selectors/experiments/reportingRevampDesktop.ts"),
 				$ = s("./src/reddit/selectors/moderatorPermissions.ts"),
 				Y = s("./src/reddit/selectors/posts.ts"),
 				X = s("./src/reddit/selectors/tooltip.ts"),
@@ -1110,7 +1110,7 @@
 						let {
 							comment: s
 						} = t;
-						return Object(J.E)(e, {
+						return Object(Q.E)(e, {
 							commentId: s.postId
 						})
 					},
@@ -1137,7 +1137,7 @@
 						let {
 							comment: s
 						} = t;
-						return Object(J.m)(e, {
+						return Object(Q.m)(e, {
 							commentId: s.id
 						})
 					},
@@ -1157,7 +1157,7 @@
 							postId: s.postId
 						})
 					},
-					reportingRevampEnabled: Q.a
+					reportingRevampEnabled: J.a
 				});
 			class Se extends r.a.PureComponent {
 				constructor() {
@@ -1402,7 +1402,7 @@
 				ze = be.a.div("CommentBody", De.a),
 				We = Object(o.b)(() => Object(i.c)({
 					comment: (e, t) => Object(Ae.b)(e, t),
-					flair: J.e
+					flair: Q.e
 				})),
 				Ue = Object(d.b)(e => ({
 					renderingObjectInfo: e.comment
@@ -1587,7 +1587,7 @@
 				z = s.n(B);
 			const {
 				fbt: W
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), U = l.a.wrapped(F, "PrivateKey", z.a), q = l.a.div("ButtonsContainer", z.a), V = l.a.div("Container", z.a), G = l.a.div("ContainerExp", z.a), H = l.a.div("Description", z.a), Z = l.a.div("PrivateSubredditDetails", z.a), K = l.a.div("PrivateSubredditDescription", z.a), J = l.a.h3("PrivateSubredditName", z.a), Q = l.a.a("Link", z.a), $ = l.a.wrapped(S.n, "LinkRouterButton", z.a), Y = l.a.wrapped(S.m, "LinkButton", z.a), X = l.a.wrapped(S.q, "SecondaryLinkRouterButton", z.a), ee = l.a.wrapped(S.p, "SecondaryLinkButton", z.a), te = l.a.wrapped($, "GoHomeLinkButton", z.a), se = l.a.wrapped(b.a, "CreateCommunityButton", z.a), ne = l.a.img("Image", z.a), re = l.a.img("ImagePlaceholder", z.a), oe = l.a.wrapped($, "LeftLinkRouterButton", z.a), ie = l.a.wrapped(Y, "LeftLinkButton", z.a), ae = l.a.wrapped(ee, "SecondaryLeftLinkButton", z.a), ce = l.a.wrapped(X, "SecondaryLeftLinkRouterButton", z.a), de = l.a.h3("Title", z.a), le = l.a.div("PageBody", z.a), me = l.a.div("InterstitialMessageWrapper", z.a), ue = Object(d.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), U = l.a.wrapped(F, "PrivateKey", z.a), q = l.a.div("ButtonsContainer", z.a), V = l.a.div("Container", z.a), G = l.a.div("ContainerExp", z.a), H = l.a.div("Description", z.a), Z = l.a.div("PrivateSubredditDetails", z.a), K = l.a.div("PrivateSubredditDescription", z.a), Q = l.a.h3("PrivateSubredditName", z.a), J = l.a.a("Link", z.a), $ = l.a.wrapped(S.n, "LinkRouterButton", z.a), Y = l.a.wrapped(S.m, "LinkButton", z.a), X = l.a.wrapped(S.q, "SecondaryLinkRouterButton", z.a), ee = l.a.wrapped(S.p, "SecondaryLinkButton", z.a), te = l.a.wrapped($, "GoHomeLinkButton", z.a), se = l.a.wrapped(b.a, "CreateCommunityButton", z.a), ne = l.a.img("Image", z.a), re = l.a.img("ImagePlaceholder", z.a), oe = l.a.wrapped($, "LeftLinkRouterButton", z.a), ie = l.a.wrapped(Y, "LeftLinkButton", z.a), ae = l.a.wrapped(ee, "SecondaryLeftLinkButton", z.a), ce = l.a.wrapped(X, "SecondaryLeftLinkRouterButton", z.a), de = l.a.h3("Title", z.a), le = l.a.div("PageBody", z.a), me = l.a.div("InterstitialMessageWrapper", z.a), ue = Object(d.c)({
 				isLoggedIn: D.Q,
 				origin: R.k,
 				user: D.l,
@@ -1704,7 +1704,7 @@
 					case T.a.PrivateSubreddit:
 						return o.a.createElement("div", null, o.a.createElement(U, null), o.a.createElement(de, null, "r/", L, " ", W._("is a private community", null, {
 							hk: "7zZmq"
-						})), S && S.length && o.a.createElement(Z, null, o.a.createElement(J, null, "r/", L), o.a.createElement(K, null, o.a.createElement("div", null, S))), o.a.createElement(H, null, W._("The moderators of", null, {
+						})), S && S.length && o.a.createElement(Z, null, o.a.createElement(Q, null, "r/", L), o.a.createElement(K, null, o.a.createElement("div", null, S))), o.a.createElement(H, null, W._("The moderators of", null, {
 							hk: "3QSrbr"
 						}), " ", "r/", L, " ", W._("have set this community as private.", null, {
 							hk: "3zhD9F"
@@ -1738,7 +1738,7 @@
 							src: `${n.a.assetPath}/img/content-gate-icons/quarantined.png`
 						}), o.a.createElement(de, null, W._("Are you sure you want to view this community?", null, {
 							hk: "2BtxLM"
-						})), o.a.createElement(H, null, W._("This community is {=quarantined}", [W._param("=quarantined", o.a.createElement(Q, {
+						})), o.a.createElement(H, null, W._("This community is {=quarantined}", [W._param("=quarantined", o.a.createElement(J, {
 							href: "https://www.reddithelp.com/en/categories/reddit-101/rules-reporting/account-and-community-restrictions/quarantined-subreddits"
 						}, W._("quarantined", null, {
 							hk: "2XqfJa"
@@ -1863,7 +1863,7 @@
 										hk: "2IAF6m"
 									});
 								case T.a.ProfileSuspended:
-									return o.a.createElement(o.a.Fragment, null, W._("This account has been {=suspended} .", [W._param("=suspended", o.a.createElement(Q, {
+									return o.a.createElement(o.a.Fragment, null, W._("This account has been {=suspended} .", [W._param("=suspended", o.a.createElement(J, {
 										href: "https://www.reddithelp.com/en/categories/reddit-101/rules-reporting/account-and-community-restrictions/suspensions"
 									}, W._("suspended", null, {
 										hk: "3nHGgi"
@@ -4412,7 +4412,7 @@
 					}, i.a.createElement(h.b, {
 						textColor: c
 					})), i.a.createElement(O, {
-						qrCodeAsset: (() => n === f.Xc.Enabled || r === f.kb.BlurredPreview || r === f.kb.NoPreview ? w.d2x_nsfw_signup_blocking_de_v1 : w.d2x_nsfw_signup_blocking_non_us_v1)()
+						qrCodeAsset: (() => n === f.Vc.Enabled || r === f.jb.BlurredPreview || r === f.jb.NoPreview ? w.d2x_nsfw_signup_blocking_de_v1 : w.d2x_nsfw_signup_blocking_non_us_v1)()
 					}))
 				}
 		},
@@ -4910,14 +4910,14 @@
 						...m,
 						variables: t
 					});
-					return !!Object(i.c)(s) && (s.body.data.subredditInfoById.allowedPostTypes || []).includes(_.J.Talk)
+					return !!Object(i.c)(s) && (s.body.data.subredditInfoById.allowedPostTypes || []).includes(_.I.Talk)
 				}, v = async (e, t) => {
 					var s, n;
 					const r = await Object(o.a)(e, {
 						...u,
 						variables: t
 					});
-					return !!Object(i.c)(r) && (null !== (n = null === (s = r.body.data.profileByName) || void 0 === s ? void 0 : s.allowedPostTypes) && void 0 !== n ? n : []).includes(_.J.Talk)
+					return !!Object(i.c)(r) && (null !== (n = null === (s = r.body.data.profileByName) || void 0 === s ? void 0 : s.allowedPostTypes) && void 0 !== n ? n : []).includes(_.I.Talk)
 				}, y = async e => {
 					var t;
 					const s = await Object(o.a)(e, l);
@@ -4961,10 +4961,10 @@
 						hk: "2mGf21"
 					})
 				}, O = e => e.data.prepareAudioRoom || e.data.prepareAudioRoomOnProfile, P = {
-					[_.L.ServiceError]: n.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+					[_.K.ServiceError]: n.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[_.L.UserNotAuthorized]: n.fbt._("You don't have permission to start talks in this community.", null, {
+					[_.K.UserNotAuthorized]: n.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					})
 				}, I = (e, t) => Object(o.a)(e, {
@@ -5547,8 +5547,8 @@
 				H = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				Z = s("./src/reddit/helpers/postComponentForLayout/index.tsx"),
 				K = s("./src/reddit/helpers/trackers/post.ts"),
-				J = s("./src/reddit/featureFlags/index.ts"),
-				Q = s("./src/reddit/selectors/comments.ts"),
+				Q = s("./src/reddit/featureFlags/index.ts"),
+				J = s("./src/reddit/selectors/comments.ts"),
 				$ = s("./src/reddit/selectors/posts.ts"),
 				Y = s("./src/reddit/selectors/profileComments.ts"),
 				X = s("./src/reddit/selectors/subreddit.ts"),
@@ -5559,12 +5559,12 @@
 					apiError: Y.a,
 					apiPending: Y.b,
 					currentUser: te.l,
-					measureScrollFPS: J.d.measureScrollFPS,
+					measureScrollFPS: Q.d.measureScrollFPS,
 					layout: P.U,
 					loadMore: Y.d,
 					subredditsById: X.fb,
 					viewportDataLoaded: ee.a,
-					commentsById: Q.q,
+					commentsById: J.q,
 					itemIds: Y.f,
 					itemIdToPostId: Y.e,
 					postsById: $.J,
@@ -5821,4 +5821,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.44de8cdb936ae4aa5909.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.459d65727faeae3c67eb.js.map

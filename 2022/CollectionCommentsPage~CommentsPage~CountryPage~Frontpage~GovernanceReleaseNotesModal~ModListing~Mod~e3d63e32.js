@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.b896ac2902e4c70e60f3.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.6b5079f33acba33dd1c9.js
+// Retrieved at 11/15/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -701,7 +701,7 @@
 				}, q._("Posts from communities similar to {subreddit name}", [q._param("subreddit name", t)], {
 					hk: "3pCPAD"
 				})))))
-			}, K = () => m.a.createElement("div", {
+			}, z = () => m.a.createElement("div", {
 				className: U.a.ThankYouView
 			}, m.a.createElement("div", {
 				className: U.a.Title
@@ -714,7 +714,7 @@
 				className: U.a.Subtitle
 			}, q._("Your feedback improves your feed.", null, {
 				hk: "2WLaqS"
-			}))), z = e => {
+			}))), G = e => {
 				let {
 					subredditId: t,
 					subredditName: s,
@@ -726,7 +726,7 @@
 						r(e => !e)
 					},
 					l = Object(V.a)();
-				return m.a.createElement(m.a.Fragment, null, m.a.createElement(K, null), m.a.createElement("div", {
+				return m.a.createElement(m.a.Fragment, null, m.a.createElement(z, null), m.a.createElement("div", {
 					className: U.a.MuteThankYouView
 				}, m.a.createElement("button", {
 					className: U.a.CommunityMutingTitle,
@@ -748,7 +748,7 @@
 					}
 				})))
 			};
-			var G = Object(S.b)(e => {
+			var K = Object(S.b)(e => {
 					let {
 						gqlContext: t,
 						layout: s,
@@ -815,17 +815,17 @@
 						seeLessFromThisCommunity: S,
 						seeLessLikeThisCommunity: E,
 						seeLessOfThisPostClick: R
-					}), u === O.a.MuteThankYouView && m.a.createElement(z, {
+					}), u === O.a.MuteThankYouView && m.a.createElement(G, {
 						subredditId: b,
 						subredditName: P,
 						closeThankYouView: w
-					}), u === O.a.ThankYouView && m.a.createElement(K, null)) : null
+					}), u === O.a.ThankYouView && m.a.createElement(z, null)) : null
 				}),
 				Y = s("./src/reddit/components/PostList/LoadMore.tsx"),
 				X = s("./src/reddit/components/PostList/SomethingWrong.tsx"),
 				$ = s("./src/reddit/components/Scroller/Simple.tsx"),
-				J = s("./src/reddit/constants/adEvents.ts"),
-				Z = s("./src/reddit/constants/componentSizes.ts"),
+				Z = s("./src/reddit/constants/adEvents.ts"),
+				J = s("./src/reddit/constants/componentSizes.ts"),
 				ee = s("./src/reddit/contexts/OneFeed/index.ts");
 			var te = function(e) {
 					let {
@@ -879,7 +879,7 @@
 				let n = Ce.get(i);
 				return void 0 === n && (n = (e, i, n, o, r) => {
 					if (i.isSponsored) {
-						t.fireAdPixelsOfType(i, J.a.Click);
+						t.fireAdPixelsOfType(i, Z.a.Click);
 						const {
 							source: e
 						} = Object(b.t)(i, o);
@@ -1058,108 +1058,107 @@
 						isCommentPermalink: r,
 						isCommentsPage: a,
 						isFrontpage: l,
-						isLoggedOutOneFeed: d,
-						isProfilePostListing: c,
-						isTopicPage: h,
-						isCommentCountAnimationEnabled: u,
-						isVoteCountAnimationEnabled: p,
-						isCountAnimShadowTestEnabled: b,
-						listingBelowVariant: C,
-						listingKey: v,
-						listingName: y,
-						pageLayer: x,
-						pageReferrer: w,
-						redditStyle: R,
-						shouldHideFlair: O,
-						shouldShowInsightsButton: S,
-						triggerNewPostPill: E,
-						postIds: M
-					} = this.props, k = 0 === t, j = `post-${i}-${e}-${t}-${s?"last-index":""}-${y}-${v}-${w}`;
-					let T;
-					if (void 0 === (T = this.scrollChildCache.get(j))) {
+						isProfilePostListing: d,
+						isTopicPage: c,
+						isCommentCountAnimationEnabled: h,
+						isVoteCountAnimationEnabled: u,
+						isCountAnimShadowTestEnabled: p,
+						listingBelowVariant: b,
+						listingKey: C,
+						listingName: v,
+						pageLayer: y,
+						pageReferrer: x,
+						redditStyle: w,
+						shouldHideFlair: R,
+						shouldShowInsightsButton: O,
+						triggerNewPostPill: S,
+						postIds: E
+					} = this.props, M = 0 === t, k = `post-${i}-${e}-${t}-${s?"last-index":""}-${v}-${C}-${x}`;
+					let j;
+					if (void 0 === (j = this.scrollChildCache.get(k))) {
 						const {
-							inSubredditOrProfile: _,
-							postsById: L
-						} = this.props, N = L[e], V = N.crosspostRootId && L[N.crosspostRootId] ? L[N.crosspostRootId] : N;
-						let F;
-						N.crosspostRootId && L[N.crosspostRootId] && (F = N), N.crosspostRootId && !L[N.crosspostRootId] && P.c.withScope(e => {
-							e.setExtra("errorType", f.v.API), e.setExtra("description", `Post ${N.id} is crosspost of ${N.crosspostRootId}, but ` + `${N.crosspostRootId} details are missing in the state`), P.c.captureMessage("Crosspost parent details are missing")
+							inSubredditOrProfile: T,
+							postsById: _
+						} = this.props, L = _[e], N = L.crosspostRootId && _[L.crosspostRootId] ? _[L.crosspostRootId] : L;
+						let V;
+						L.crosspostRootId && _[L.crosspostRootId] && (V = L), L.crosspostRootId && !_[L.crosspostRootId] && P.c.withScope(e => {
+							e.setExtra("errorType", f.v.API), e.setExtra("description", `Post ${L.id} is crosspost of ${L.crosspostRootId}, but ` + `${L.crosspostRootId} details are missing in the state`), P.c.captureMessage("Crosspost parent details are missing")
 						});
-						const A = this.props.postComponentForLayout({
-							isCrosspost: !!N.crosspostRootId,
+						const F = this.props.postComponentForLayout({
+							isCrosspost: !!L.crosspostRootId,
 							layout: i,
-							post: V
+							post: N
 						});
-						let H = `post-list-item-[layout: ${i}]-[postId: ${e}]`;
-						this.props.listingBelowVariant && v && (H += `--${v}`);
-						const B = Pe(e, i, s, v, y, w, this.props, t, this.props.hostPostData),
-							W = ye(e, i, this.props, t),
-							U = xe(e, this.props, l),
-							q = V.media && V.media.type === oe.o.EMBED ? V.media.provider : null,
-							D = u && !N.isSponsored,
-							Q = p && !N.isSponsored && !N.isScoreHidden,
-							K = !!(null == N ? void 0 : N.recommendationContext);
-						T = {
-							estHeight: Object(ne.c)(N, i),
+						let A = `post-list-item-[layout: ${i}]-[postId: ${e}]`;
+						this.props.listingBelowVariant && C && (A += `--${C}`);
+						const H = Pe(e, i, s, C, v, x, this.props, t, this.props.hostPostData),
+							B = ye(e, i, this.props, t),
+							W = xe(e, this.props, l),
+							U = N.media && N.media.type === oe.o.EMBED ? N.media.provider : null,
+							q = h && !L.isSponsored,
+							D = u && !L.isSponsored && !L.isScoreHidden,
+							Q = !!(null == L ? void 0 : L.recommendationContext);
+						j = {
+							estHeight: Object(ne.c)(L, i),
 							id: e,
-							isFocusable: !(!V.media || !(i === I.g.Large || i === I.g.Classic && Object(oe.I)(V.media))) && (oe.c.has(V.media.type) && (!q || !oe.s.has(q)) && !V.isSpoiler),
-							trackOnEnteredViewport: B,
-							trackOnExitedViewport: W,
-							render: u => {
+							isFocusable: !(!N.media || !(i === I.g.Large || i === I.g.Classic && Object(oe.I)(N.media))) && (oe.c.has(N.media.type) && (!U || !oe.s.has(U)) && !N.isSpoiler),
+							trackOnEnteredViewport: H,
+							trackOnExitedViewport: B,
+							render: h => {
 								let {
-									className: p,
+									className: u,
 									height: f,
 									width: P,
-									remeasure: w,
+									remeasure: x,
 									setScrollerChildRef: I,
-									shouldLoadInitially: j
-								} = u;
+									shouldLoadInitially: k
+								} = h;
 								return m.a.createElement(te, {
-									key: H,
-									hideRecommendationContext: !!d
-								}, m.a.createElement(A, {
+									key: A,
+									hideRecommendationContext: !0
+								}, m.a.createElement(F, {
 									availableWidth: P,
-									className: Object(g.a)(p, this.props.postClassName),
+									className: Object(g.a)(u, this.props.postClassName),
 									currentProfileName: n,
 									eventFactory: this.eventFactoryHandler,
-									first: k,
-									forceLoadMedia: j,
+									first: M,
+									forceLoadMedia: k,
 									hostPostData: o,
-									inSubredditOrProfile: _,
-									isCommentCountAnimationEnabled: D,
+									inSubredditOrProfile: T,
+									isCommentCountAnimationEnabled: q,
 									isCommentPermalink: r,
 									isCommentsPage: a,
-									isCountAnimShadowTestEnabled: b,
+									isCountAnimShadowTestEnabled: p,
 									isFrontpage: l,
-									isProfilePostListing: c,
-									isTopicPage: h,
-									isVoteCountAnimationEnabled: Q,
-									key: H,
+									isProfilePostListing: d,
+									isTopicPage: c,
+									isVoteCountAnimationEnabled: D,
+									key: A,
 									last: s,
-									listingBelowVariant: C,
+									listingBelowVariant: b,
 									listingIndex: t,
-									listingKey: v,
-									listingName: y,
-									onceInViewport: E,
-									onClickPost: U,
-									onSizeChanged: w,
-									pageLayer: x,
+									listingKey: C,
+									listingName: v,
+									onceInViewport: S,
+									onClickPost: W,
+									onSizeChanged: x,
+									pageLayer: y,
 									postId: e,
-									postIds: M,
-									redditStyle: R,
+									postIds: E,
+									redditStyle: w,
 									scrollerItemRef: I,
 									sendEvent: this.props.sendEvent,
-									shouldHideFlair: O,
-									shouldShowInsightsButton: S
-								}), K && m.a.createElement(G, {
-									post: V,
+									shouldHideFlair: R,
+									shouldShowInsightsButton: O
+								}), Q && m.a.createElement(K, {
+									post: N,
 									layout: i,
-									parentPost: F
+									parentPost: V
 								}))
 							}
-						}, this.scrollChildCache.set(j, T)
+						}, this.scrollChildCache.set(k, j)
 					}
-					return T
+					return j
 				}
 				render() {
 					return this.hasPosts() ? (this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.renderList()) : this.showPlaceholder() ? (this.renderingEmpty = !1, this.renderingPlaceholder = !0, this.renderPlaceholder()) : (this.renderingEmpty = !0, this.renderingPlaceholder = !1, this.renderEmpty())
@@ -1261,7 +1260,7 @@
 						onScroll: this.onScrollPause,
 						preventScrollOnMount: this.props.preventScrollOnMount,
 						trackingName: C,
-						viewportTopPadding: Z.f
+						viewportTopPadding: J.f
 					}, f), this.isLoadingMore() && this.renderLoadMore())
 				}
 			}
@@ -1282,7 +1281,7 @@
 		"./src/reddit/components/Scroller/Simple.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return G
+				return K
 			}));
 			var i = s("./node_modules/lodash/debounce.js"),
 				n = s.n(i),
@@ -1464,10 +1463,10 @@
 				Q = Object(m.c)({
 					isOverlayOpen: F.j
 				}),
-				K = Object(c.b)(Q),
-				z = {};
+				z = Object(c.b)(Q),
+				G = {};
 
-			function G(e) {
+			function K(e) {
 				return e === document
 			}
 
@@ -1480,8 +1479,8 @@
 			}
 			const X = 10,
 				$ = .9,
-				J = .9,
-				Z = 1.8,
+				Z = .9,
+				J = 1.8,
 				ee = 5,
 				te = 1500,
 				se = 2 * u.N,
@@ -1644,8 +1643,8 @@
 							this.updateScrollMetrics();
 							const e = this.getAveragePixelsPerMilliSecond(),
 								t = e < $,
-								s = e < J,
-								i = e < Z;
+								s = e < Z,
+								i = e < J;
 							if (this.scrollContainer && !this.loadMoreFired && this.props.onLoadMore) {
 								let e = !1;
 								if (void 0 !== this.props.loadMoreToken && void 0 !== this.viewport && this.nextVisibleChildrenIndex >= this.props.children.length) {
@@ -1803,8 +1802,8 @@
 					}), this.props.disableScrollCache && !this.props.preventScrollOnMount && Object(I.c)(this.scrollContainer, 0), this.setupScrollHandler(), p.a.write(() => {
 						if (!this.props.disableScrollCache) {
 							const e = this.getCacheKey(),
-								t = z[e];
-							r()(t) || (z[e] = void 0, this.scrollContainer && Object(I.c)(this.scrollContainer, t))
+								t = G[e];
+							r()(t) || (G[e] = void 0, this.scrollContainer && Object(I.c)(this.scrollContainer, t))
 						}
 						this.callOnScrollForItemsChanged(), this.props.onLastVisibleChildRendered && this.props.onLastVisibleChildRendered()
 					}), p.a.read(() => {
@@ -1833,7 +1832,7 @@
 				componentWillUnmount() {
 					if (this.callExitedViewportForUnmount(), this.cleanupScrollHandler(), clearTimeout(this.updateRenderableChildrenHandle), this.cancelPopulateRenderableChildrenWhenIdle(), this.scrollContainer && !this.props.disableScrollCache) {
 						const e = this.getCacheKey();
-						z[e] = this.lastRenderPosition
+						G[e] = this.lastRenderPosition
 					}
 					this.childMap = new S.a("id"), this.itemsInViewport = new S.a("id"), this.wrapperRefFNs = {}, this.childRefFns = {}, this.containerRef = null, this.loadMoreEl = void 0, this.scrollContainer = void 0, this.unmountItemsIdleId && (Object(h.cancelIdleCallback)(this.unmountItemsIdleId), this.unmountItemsIdleId = null)
 				}
@@ -1872,7 +1871,7 @@
 					return this.props.children.map(e => e.id).join("-")
 				}
 				getScrollTop() {
-					return this.scrollContainer ? G(this.scrollContainer) ? Object(k.a)() : this.scrollContainer.scrollTop : 0
+					return this.scrollContainer ? K(this.scrollContainer) ? Object(k.a)() : this.scrollContainer.scrollTop : 0
 				}
 				updateViewportInfo() {
 					if (this.scrollContainer) {
@@ -1990,7 +1989,7 @@
 					return void 0 === e.onLoadMore || "loadMoreToken" in e
 				}
 			}
-			t.b = K(Object(V.b)(ce))
+			t.b = z(Object(V.b)(ce))
 		},
 		"./src/reddit/components/Scroller/getDocumentTop.ts": function(e, t, s) {
 			"use strict";
@@ -2435,8 +2434,8 @@
 				o = s("./src/reddit/selectors/user.ts");
 			const r = e => Object(n.c)(e, {
 				experimentEligibilitySelector: o.R,
-				experimentName: i.bc
-			}) === i.Kd
+				experimentName: i.Zb
+			}) === i.Id
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, s) {
 			"use strict";
@@ -2523,4 +2522,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.b896ac2902e4c70e60f3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.6b5079f33acba33dd1c9.js.map

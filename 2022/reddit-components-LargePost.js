@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.15212eb5c6dc723a2130.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.2cc3b941ee3443d5e347.js
+// Retrieved at 11/15/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost", "removalReasonActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -5322,7 +5322,7 @@
 			const Ie = Object(a.a)(k.N, e => e.some(Te.d)),
 				Ne = Object(a.a)(Ie, e => e),
 				we = (e, t) => Object(ke.c)(e, {
-					experimentName: Se.gd,
+					experimentName: Se.ed,
 					experimentEligibilitySelector: e => {
 						const {
 							listingKey: s
@@ -5493,7 +5493,7 @@
 						showRealtimeUpdateAnimation: st,
 						isUpdatedContent: nt,
 						isNightMode: rt
-					} = e, ot = Object(_.a)(), it = Ke, at = !!e.redditStyle || !!e["data-redditstyle"], ct = at ? void 0 : C, dt = Object(l.a)(Pe), lt = Ae && dt, ut = Object(c.a)(Pe), mt = Object(d.a)(Pe), pt = Object(q.c)(Ue), bt = Object(G.a)(Ue), ft = !!Ue.media && Ue.media.type === E.o.RTJSON, ht = Qe && ft, xt = s ? s - Z.a : void 0, vt = !!Ue.recommendationContext, Ot = !(le && ve || ye) || vt && ve, _t = (e => e === Se.ef.OnlyTitles)(Be) && !Object(pe.a)(Ue), Et = (e => e === Se.ef.MediumHeight)(Be) && !Object(pe.a)(Ue), gt = (e => {
+					} = e, ot = Object(_.a)(), it = Ke, at = !!e.redditStyle || !!e["data-redditstyle"], ct = at ? void 0 : C, dt = Object(l.a)(Pe), lt = Ae && dt, ut = Object(c.a)(Pe), mt = Object(d.a)(Pe), pt = Object(q.c)(Ue), bt = Object(G.a)(Ue), ft = !!Ue.media && Ue.media.type === E.o.RTJSON, ht = Qe && ft, xt = s ? s - Z.a : void 0, vt = !!Ue.recommendationContext, Ot = !(le && ve || ye) || vt && ve, _t = (e => e === Se.cf.OnlyTitles)(Be) && !Object(pe.a)(Ue), Et = (e => e === Se.cf.MediumHeight)(Be) && !Object(pe.a)(Ue), gt = (e => {
 						var t;
 						const {
 							post: s,
@@ -7374,8 +7374,8 @@
 				p = s("./node_modules/reselect/es/index.js");
 			const b = Object(p.a)(e => Object(m.c)(e, {
 				experimentEligibilitySelector: m.a,
-				experimentName: u.wc
-			}), e => e === u.Kd);
+				experimentName: u.uc
+			}), e => e === u.Id);
 			var f = s("./node_modules/fbt/lib/FbtPublic.js"),
 				h = s("./src/lib/classNames/index.ts"),
 				x = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
@@ -13380,11 +13380,11 @@
 				o = s("./node_modules/reselect/es/index.js");
 			const i = Object(o.a)(e => Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: n.ub
+				experimentName: n.tb
 			}), e => ({
-				bucketed: e === n.Rc.ExpandedSearch || e === n.Rc.CollapsedSearch,
-				collapsed: e === n.Rc.CollapsedSearch,
-				expanded: e === n.Rc.ExpandedSearch
+				bucketed: e === n.Pc.ExpandedSearch || e === n.Pc.CollapsedSearch,
+				collapsed: e === n.Pc.CollapsedSearch,
+				expanded: e === n.Pc.ExpandedSearch
 			}))
 		},
 		"./src/reddit/selectors/experiments/postActionBarAnimation.ts": function(e, t, s) {
@@ -13472,8 +13472,8 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: n.yc
-					}) === n.bd.Enabled
+						experimentName: n.wc
+					}) === n.Zc.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, s) {
@@ -13486,8 +13486,8 @@
 			const o = e => {
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: n.Ye
-				}) === n.Kd
+					experimentName: n.We
+				}) === n.Id
 			}
 		},
 		"./src/reddit/selectors/experiments/web2x_cta.ts": function(e, t, s) {
@@ -13499,10 +13499,10 @@
 				r = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: r.fg,
+					experimentName: r.dg,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				a = Object(n.a)(i, e => e === r.Xf)
+				a = Object(n.a)(i, e => e === r.Vf)
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, s) {
 			"use strict";
@@ -13752,7 +13752,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(r.rg)(t)
+					return Boolean(t) && !Object(r.pg)(t)
 				},
 				c = Object(n.a)(a, o.d, (e, t) => e && !t)
 		},
@@ -13830,10 +13830,10 @@
 				i = s("./src/reddit/models/Post/index.ts"),
 				a = s("./src/reddit/selectors/posts.ts");
 			const c = e => Object(o.c)(e, {
-					experimentName: r.bf,
+					experimentName: r.Ze,
 					experimentEligibilitySelector: o.a
 				}),
-				d = (e, t) => (t === r.jf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(i.B)(e),
+				d = (e, t) => (t === r.hf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(i.B)(e),
 				l = Object(n.a)(a.G, c, (e, t) => d(e, t));
 			Object(n.a)((e, t) => t, c, (e, t) => d(e, t))
 		},
@@ -13947,13 +13947,14 @@
 				return c
 			}));
 			var n = s("./src/lib/constants/index.ts"),
-				r = s("./src/reddit/selectors/experiments/loggedOutOneFeed.ts");
+				r = s("./src/reddit/selectors/user.ts");
 			const o = e => {
+					const t = Object(r.R)(e);
 					if (i(e)) return !1;
 					const {
-						subscriptionsPinned: t
+						subscriptionsPinned: s
 					} = e.user.prefs;
-					return !(void 0 !== t || !Object(r.c)(e)) || !!t
+					return void 0 === s && !t || !!s
 				},
 				i = e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== n.Sb.MODERATION_PAGES),
 				a = e => e.user.prefs.reduceAnimationsFromAwards,
@@ -14032,4 +14033,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.15212eb5c6dc723a2130.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.2cc3b941ee3443d5e347.js.map

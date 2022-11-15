@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.12466052b01151203d63.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.dd049cca6f437174f4f1.js
+// Retrieved at 11/15/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -130,8 +130,8 @@
 				F = n("./src/chat/customMiddleware/containerSize.ts"),
 				G = n("./src/chat/customMiddleware/draftMessageText.ts"),
 				$ = n("./src/chat/customMiddleware/iframeDispatcher.ts"),
-				W = n("./src/chat/customMiddleware/inviteLinkSettings.ts"),
-				V = n("./src/chat/customMiddleware/lastSelectedChannel.ts"),
+				V = n("./src/chat/customMiddleware/inviteLinkSettings.ts"),
+				W = n("./src/chat/customMiddleware/lastSelectedChannel.ts"),
 				K = n("./src/chat/customMiddleware/loggedOutPreferencesSync.ts"),
 				Q = n("./src/chat/customMiddleware/sendbirdToken.ts"),
 				Y = n("./src/chat/customMiddleware/settings.ts"),
@@ -238,7 +238,7 @@
 				pe = (e, t) => {
 					var n;
 					const s = null === (n = e.features) || void 0 === n ? void 0 : n.eligibleUXExperiences,
-						a = [le.W.LiveChatVideoEdu].reduce((e, t) => {
+						a = [le.V.LiveChatVideoEdu].reduce((e, t) => {
 							const n = null == s ? void 0 : s.experiences[t];
 							return (null == n ? void 0 : n.fetched) ? {
 								...e,
@@ -306,7 +306,7 @@
 						apiContext: Ce.apiContext,
 						gqlContext: we.gqlContext,
 						gqlRealtimeContext: ye.gqlContext
-					}), Ce.middleware, Z.a, Y.a, Q.a, $.a, K.a, Object(ee.a)(t), F.a, J.a, H.a, z.a, G.a, te.a, V.a, X.a, ne.a, W.a],
+					}), Ce.middleware, Z.a, Y.a, Q.a, $.a, K.a, Object(ee.a)(t), F.a, J.a, H.a, z.a, G.a, te.a, W.a, X.a, ne.a, V.a],
 					modifyInitialData: t => {
 						let {
 							initialData: n,
@@ -696,4 +696,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.12466052b01151203d63.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.dd049cca6f437174f4f1.js.map

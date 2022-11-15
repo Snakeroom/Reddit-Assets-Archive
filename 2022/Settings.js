@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.17f3fea4dcc721e052ac.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.4487d9fef387546be04e.js
+// Retrieved at 11/15/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -1708,7 +1708,7 @@
 						const e = null == l ? void 0 : l.trim();
 						if (!(e && Object(u.g)(e) === u.d.Valid)) throw new Error(o.f);
 						t = e, n = null == i ? void 0 : i.trim()
-					} else if (r.socialLinkType === h.P.Reddit) {
+					} else if (r.socialLinkType === h.O.Reddit) {
 						const e = null == a ? void 0 : a.trim();
 						if (!(e && Object(m.f)(e) && e && e.length >= o.h && !/\s/.test(e))) throw new Error(o.e);
 						s = e
@@ -5942,81 +5942,81 @@
 					}),
 					i = o.i;
 				switch (t) {
-					case s.P.BuyMeACoffee:
+					case s.O.BuyMeACoffee:
 						a = r._("Buy Me a Coffee", null, {
 							hk: "ZTbP7"
 						});
 						break;
-					case s.P.CashApp:
+					case s.O.CashApp:
 						a = r._("Cash App", null, {
 							hk: "1aorWN"
 						});
 						break;
-					case s.P.Custom:
+					case s.O.Custom:
 						a = r._("Custom URL", null, {
 							hk: "2gveOb"
 						}), i = o.c, n = r._("https://website.com", null, {
 							hk: "1Kp5fF"
 						});
 						break;
-					case s.P.Reddit:
+					case s.O.Reddit:
 						i = r._("r/community, u/user", null, {
 							hk: "45oRo"
 						});
 						break;
-					case s.P.Discord:
+					case s.O.Discord:
 						i = o.c, n = r._("https://discord.com", null, {
 							hk: "6gcLP"
 						});
 						break;
-					case s.P.Facebook:
+					case s.O.Facebook:
 						i = o.c, n = r._("https://facebook.com", null, {
 							hk: "2v99jB"
 						});
 						break;
-					case s.P.Kickstarter:
+					case s.O.Kickstarter:
 						i = o.c, n = r._("https://kickstarter.com", null, {
 							hk: "132LC7"
 						});
 						break;
-					case s.P.Shopify:
+					case s.O.Shopify:
 						i = o.c, n = r._("https://shopify.com", null, {
 							hk: "2X1G4f"
 						});
 						break;
-					case s.P.Spotify:
+					case s.O.Spotify:
 						i = o.c, n = r._("https://spotify.com", null, {
 							hk: "3dZORp"
 						});
 						break;
-					case s.P.Substack:
+					case s.O.Substack:
 						i = o.c, n = r._("https://substack.com", null, {
 							hk: "1zQgL1"
 						});
 						break;
-					case s.P.Youtube:
+					case s.O.Youtube:
 						a = r._("YouTube", null, {
 							hk: "12AQG6"
 						}), i = o.c, n = r._("https://youtube.com", null, {
 							hk: "4FZQ2O"
 						});
 						break;
-					case s.P.Onlyfans:
+					case s.O.Onlyfans:
 						a = r._("OnlyFans", null, {
 							hk: "1JRN4C"
 						});
 						break;
-					case s.P.Paypal:
+					case s.O.Paypal:
 						a = r._("PayPal", null, {
 							hk: "3n7Il"
 						});
 						break;
-					case s.P.Soundcloud:
+					case s.O.Soundcloud:
 						a = r._("SoundCloud", null, {
 							hk: "34Xo4u"
 						});
 						break;
-					case s.P.Tiktok:
+					case s.O.Tiktok:
 						a = r._("TikTok", null, {
 							hk: "tajib"
 						})
@@ -6028,16 +6028,16 @@
 					socialLinkType: t
 				}
 			}, i = () => {
-				return Object.keys(s.P).map(e => {
-					const t = s.P[e];
+				return Object.keys(s.O).map(e => {
+					const t = s.O[e];
 					return a(e, t)
-				}).filter(e => e.socialLinkType !== s.P.Indiegogo)
+				}).filter(e => e.socialLinkType !== s.O.Indiegogo)
 			}, l = e => {
 				const t = e.toLowerCase();
 				return `${o.d}${t}.png`
 			}, c = e => {
-				for (const t in s.P)
-					if (s.P[t] === e) return t;
+				for (const t in s.O)
+					if (s.O[t] === e) return t;
 				return ""
 			}, d = e => {
 				let t = o.b;
@@ -9073,7 +9073,7 @@
 						})()
 					}, []);
 					const R = Object(a.e)(I.g),
-						F = R === w.Zc.TopTwo || R === w.Zc.All,
+						F = R === w.Xc.TopTwo || R === w.Xc.All,
 						D = Object(o.useMemo)(() => Object(se.c)(T), [T]);
 					return c ? r.a.createElement(X, {
 						email: k.email
@@ -12099,9 +12099,9 @@
 					},
 					isDspEnabled: e => {
 						return Object(re.c)(e, {
-							experimentName: w.id,
+							experimentName: w.gd,
 							experimentEligibilitySelector: re.a
-						}) === w.Kd
+						}) === w.Id
 					}
 				}),
 				_a = Object(ve.v)(),
@@ -12654,7 +12654,7 @@
 			const a = e => Object(o.c)(e, {
 				experimentName: s.x,
 				experimentEligibilitySelector: () => Object(r.Q)(e)
-			}) === s.Kd
+			}) === s.Id
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -12818,4 +12818,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.17f3fea4dcc721e052ac.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.4487d9fef387546be04e.js.map

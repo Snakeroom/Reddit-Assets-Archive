@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.de06e0b8fa4a3fe9456d.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.aa48321172521bdd1af1.js
+// Retrieved at 11/15/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-meta-MainnetPointsMigrationPage"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -1008,9 +1008,9 @@
 				O = n("./src/reddit/icons/fonts/index.tsx"),
 				T = n("./src/reddit/actions/toaster.ts"),
 				A = (n("./src/reddit/helpers/localStorage/index.ts"), n("./src/reddit/models/Toast/index.ts"));
-			const S = "mainnet-migration";
+			const I = "mainnet-migration";
 
-			function I(e) {
+			function S(e) {
 				let {
 					locale: t,
 					balance: n
@@ -1138,11 +1138,11 @@
 				U = n("./src/reddit/components/Governance/Token/index.tsx"),
 				z = n("./src/reddit/hooks/useLocale.ts"),
 				Z = n("./src/reddit/icons/svgs/LoadingOrbit/index.tsx"),
-				Y = n("./src/higherOrderComponents/asModal/index.tsx"),
-				q = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				K = n("./node_modules/@ethersproject/address/lib.esm/index.js"),
-				G = n("./node_modules/lodash/debounce.js"),
-				X = n.n(G),
+				q = n("./src/higherOrderComponents/asModal/index.tsx"),
+				Y = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				G = n("./node_modules/@ethersproject/address/lib.esm/index.js"),
+				K = n("./node_modules/lodash/debounce.js"),
+				X = n.n(K),
 				J = n("./src/lib/classNames/index.ts"),
 				Q = n("./src/reddit/constants/colors.ts"),
 				$ = n("./src/reddit/controls/FormFields/index.tsx"),
@@ -1162,7 +1162,7 @@
 				} = e;
 				const [a, s] = Object(r.useState)(""), o = Object(r.useRef)(a), [l, c] = Object(r.useState)(re.Empty), d = l === re.Invalid, u = () => {
 					if (se.test(o.current)) {
-						if (!!Object(K.a)(o.current)) return c(re.Valid), void n(o.current, !0)
+						if (!!Object(G.a)(o.current)) return c(re.Valid), void n(o.current, !0)
 					}
 					c(re.Invalid)
 				}, m = Object(r.useMemo)(() => X()(u, 300), [o, n, u]);
@@ -1229,7 +1229,7 @@
 				hk: "39wkrJ"
 			}), le._("Transfer the points into your wallet.", null, {
 				hk: "vZ3gk"
-			})], de = Object(Y.a)(e => {
+			})], de = Object(q.a)(e => {
 				let {
 					amount: t,
 					subredditId: n,
@@ -1247,7 +1247,7 @@
 					"aria-label": le._("Close", null, {
 						hk: "3fyGPG"
 					})
-				}, i.a.createElement(q.b, {
+				}, i.a.createElement(Y.b, {
 					className: ae.a.closeIcon
 				})), i.a.createElement("h2", null, u ? le._("Transfer to Mainnet", null, {
 					hk: "4riDgo"
@@ -1485,11 +1485,11 @@
 					[j, M] = Object(r.useState)(!1),
 					O = (null == f ? void 0 : f.claimId) && !(null == f ? void 0 : f.claimed),
 					T = v || j,
-					A = v || !1 === (null == f ? void 0 : f.claimed) ? "0" : I({
+					A = v || !1 === (null == f ? void 0 : f.claimed) ? "0" : S({
 						locale: d,
 						balance: u
 					}),
-					S = I({
+					I = S({
 						locale: d,
 						balance: g || E
 					}),
@@ -1590,7 +1590,7 @@
 					subredditId: p
 				}), i.a.createElement(xe, {
 					isPending: v || !1 === (null == f ? void 0 : f.claimed),
-					value: S
+					value: I
 				}), T && i.a.createElement(Z.a, {
 					className: ge.a.loadingSpinner
 				})), w && i.a.createElement(ue, {
@@ -1755,7 +1755,7 @@
 					[p, y] = Object(r.useState)(Object(b.e)()),
 					[x, N] = Object(r.useReducer)(() => !0, !1),
 					[C, j] = Object(r.useState)(!1),
-					[M, O] = Object(k.a)(S, null),
+					[M, O] = Object(k.a)(I, null),
 					[T, A] = Object(k.a)("mainnet-migration-signer", "");
 				Object(r.useEffect)(() => {
 					(async () => {
@@ -1781,22 +1781,22 @@
 						}))
 					})
 				}, []);
-				let I = null;
-				n ? I = i.a.createElement("p", null, i.a.createElement("b", null, Ce._("Bridge is currently unavailable.", null, {
+				let S = null;
+				n ? S = i.a.createElement("p", null, i.a.createElement("b", null, Ce._("Bridge is currently unavailable.", null, {
 					hk: "1IAbL8"
-				}))) : (d || (I = i.a.createElement("p", null, i.a.createElement("b", null, Ce._("Please log in to continue.", null, {
+				}))) : (d || (S = i.a.createElement("p", null, i.a.createElement("b", null, Ce._("Please log in to continue.", null, {
 					hk: "3zILpv"
-				})))), u || t || (I = i.a.createElement("p", null, i.a.createElement("b", null, Ce._("Please install {=MetaMask} or an equivalent wallet.", [Ce._param("=MetaMask", i.a.createElement("a", {
+				})))), u || t || (S = i.a.createElement("p", null, i.a.createElement("b", null, Ce._("Please install {=MetaMask} or an equivalent wallet.", [Ce._param("=MetaMask", i.a.createElement("a", {
 					href: "https://metamask.io/"
 				}, Ce._("MetaMask", null, {
 					hk: "32IN7N"
 				})))], {
 					hk: "OvkQK"
-				})))), x || (I = i.a.createElement(R, {
+				})))), x || (S = i.a.createElement(R, {
 					walletAddress: u,
 					network: p,
 					onConnect: N
-				})), x && u && p && (I = i.a.createElement(_e, {
+				})), x && u && p && (S = i.a.createElement(_e, {
 					walletAddress: u,
 					network: p,
 					migrations: M,
@@ -1820,7 +1820,7 @@
 					hk: "2cW0jd"
 				})), i.a.createElement("div", {
 					className: V.a.content
-				}, I, x && !n && i.a.createElement("div", {
+				}, S, x && !n && i.a.createElement("div", {
 					className: V.a.unableToClaim
 				}, i.a.createElement("span", null, Ce._("Unable to claim? Click", null, {
 					hk: "tW7mZ"
@@ -1869,16 +1869,16 @@
 			const r = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: a.ue
-					}) === a.Kd
+						experimentName: a.se
+					}) === a.Id
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: a.se
-					}) === a.Kd
+						experimentName: a.qe
+					}) === a.Id
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.de06e0b8fa4a3fe9456d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.aa48321172521bdd1af1.js.map

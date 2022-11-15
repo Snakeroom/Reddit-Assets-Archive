@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.c3ef1ba5230e5c51fb7e.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.b931aaf6e6bbeb998d7a.js
+// Retrieved at 11/15/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1934,7 +1934,7 @@
 					}, o.a.createElement(h.b, {
 						textColor: c
 					})), o.a.createElement(O, {
-						qrCodeAsset: (() => r === _.Xc.Enabled || i === _.kb.BlurredPreview || i === _.kb.NoPreview ? C.d2x_nsfw_signup_blocking_de_v1 : C.d2x_nsfw_signup_blocking_non_us_v1)()
+						qrCodeAsset: (() => r === _.Vc.Enabled || i === _.jb.BlurredPreview || i === _.jb.NoPreview ? C.d2x_nsfw_signup_blocking_de_v1 : C.d2x_nsfw_signup_blocking_non_us_v1)()
 					}))
 				}
 		},
@@ -2916,15 +2916,15 @@
 			const o = e => {
 					const t = Object(i.c)(e, {
 						experimentEligibilitySelector: s.R,
-						experimentName: r.qd
+						experimentName: r.od
 					});
-					return !(!t || Object(r.rg)(t))
+					return !(!t || Object(r.pg)(t))
 				},
 				a = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: s.R,
-						experimentName: r.qd
-					}) === r.Od.ListingEnabled
+						experimentName: r.od
+					}) === r.Md.ListingEnabled
 				}
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
@@ -2932,4 +2932,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.c3ef1ba5230e5c51fb7e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.b931aaf6e6bbeb998d7a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.83f62f3e2b6ee4e34b46.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.b38af3799ff9b296938e.js
+// Retrieved at 11/15/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -240,8 +240,8 @@
 				k = n("./src/reddit/models/Toast/index.ts"),
 				_ = n("./src/redditGQL/types.ts");
 			const {
-				fbt: P
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), I = () => r.a.createElement("span", {
+				fbt: I
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), P = () => r.a.createElement("span", {
 				className: b.a.MicrophoneIcon
 			}, r.a.createElement(h, null));
 			var S = e => {
@@ -255,7 +255,7 @@
 					p = Object(E.a)();
 				return r.a.createElement(v.t, {
 					"data-testid": "audioroom-upcoming-start-talk",
-					Icon: i ? x.a : I,
+					Icon: i ? x.a : P,
 					iconClassName: i ? b.a.loadingIcon : "",
 					className: Object(s.a)(b.a.StartTalkButton, {
 						[b.a.isNightMode]: n
@@ -266,7 +266,7 @@
 					disabled: i,
 					text: r.a.createElement("span", {
 						className: b.a.StartTalkButtonText
-					}, P._("Start talk", null, {
+					}, I._("Start talk", null, {
 						hk: "46EMgy"
 					})),
 					onClick: async () => {
@@ -662,8 +662,8 @@
 				k = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/ViewTournamentLink/index.m.less"),
 				_ = n.n(k);
 			const {
-				fbt: P
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), I = e => {
+				fbt: I
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), P = e => {
 				let {
 					className: t,
 					postId: n
@@ -681,7 +681,7 @@
 						action: "click",
 						noun: "view_tournament"
 					}))(n))
-				}, P._("Go to Tournament", null, {
+				}, I._("Go to Tournament", null, {
 					hk: "1QaAgH"
 				}))
 			};
@@ -739,7 +739,7 @@
 					description: w._("May the odds be ever in your favor", null, {
 						hk: "1Brw70"
 					}),
-					cta: r.a.createElement(I, {
+					cta: r.a.createElement(P, {
 						className: N.a.cta,
 						postId: t
 					})
@@ -787,8 +787,8 @@
 			var M = n("./src/reddit/icons/fonts/index.tsx"),
 				B = n("./src/reddit/components/Econ/Prediction/PredictionCard/PredictionBody/index.tsx"),
 				U = n("./src/reddit/components/Econ/Prediction/PredictionModal/index.tsx"),
-				J = n("./src/reddit/actions/economics/helpers/index.ts"),
-				$ = n("./src/reddit/actions/economics/predictions/index.ts"),
+				$ = n("./src/reddit/actions/economics/helpers/index.ts"),
+				J = n("./src/reddit/actions/economics/predictions/index.ts"),
 				H = n("./src/reddit/actions/post.ts"),
 				X = n("./src/reddit/components/Econ/Prediction/hooks/useDelayedUpvoteAnimation.tsx"),
 				Q = n("./src/reddit/helpers/trackers/predictions.ts"),
@@ -845,8 +845,8 @@
 						E = t.userSelection,
 						[h, O] = r.a.useState(!1),
 						[j, k] = r.a.useState(null),
-						[_, P] = r.a.useState(!1),
-						I = b < Date.now();
+						[_, I] = r.a.useState(!1),
+						P = b < Date.now();
 					return {
 						isLoading: h,
 						isShowingVoteAnimation: _,
@@ -857,11 +857,11 @@
 							return t === j
 						}),
 						selectOption: e => {
-							I || E || k(e.id)
+							P || E || k(e.id)
 						},
 						predict: async t => {
-							if (t.currency === l.a.Coins && t.amount > s) return Object(J.promptUserToBuyMoreCoins)(), void c(Q.b);
-							if (I) return u(z._("Error: Failed to make prediction. This prediction has already ended", null, {
+							if (t.currency === l.a.Coins && t.amount > s) return Object($.promptUserToBuyMoreCoins)(), void c(Q.b);
+							if (P) return u(z._("Error: Failed to make prediction. This prediction has already ended", null, {
 								hk: "22UWEr"
 							})), void k(null);
 							if (!p || !j) throw new Error("Invalid arguments, optionId and pollId must be strings");
@@ -870,14 +870,14 @@
 								selectedNumberTokens: t.amount
 							}));
 							try {
-								await o(Object($.s)({
+								await o(Object(J.s)({
 									coinPackageId: t.id,
 									selectedOptionId: j,
 									price: t.amount,
 									pollId: p,
 									tournamentId: e,
 									tournamentPostId: n.id
-								})), i && x < Y.a.upvoted && (o(Object(H.jb)(v)), o(Object(H.jb)(p)), m()), O(!1), k(null), P(!0)
+								})), i && x < Y.a.upvoted && (o(Object(H.jb)(v)), o(Object(H.jb)(p)), m()), O(!1), k(null), I(!0)
 							} catch (r) {
 								O(!1), k(null), u(z._("Error: Failed to make prediction, please try again later", null, {
 									hk: "1tECsx"
@@ -888,7 +888,7 @@
 							k(null)
 						}, []),
 						hideAnimation: r.a.useCallback(() => {
-							P(!1)
+							I(!1)
 						}, [])
 					}
 				}(n, t, o);
@@ -1063,9 +1063,9 @@
 			})), n.d(t, "d", (function() {
 				return _
 			})), n.d(t, "h", (function() {
-				return P
-			})), n.d(t, "a", (function() {
 				return I
+			})), n.d(t, "a", (function() {
+				return P
 			})), n.d(t, "i", (function() {
 				return S
 			})), n.d(t, "b", (function() {
@@ -1097,14 +1097,14 @@
 						...u,
 						variables: t
 					});
-					return !!Object(s.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(v.J.Talk)
+					return !!Object(s.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(v.I.Talk)
 				}, h = async (e, t) => {
 					var n, o;
 					const r = await Object(a.a)(e, {
 						...m,
 						variables: t
 					});
-					return !!Object(s.c)(r) && (null !== (o = null === (n = r.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(v.J.Talk)
+					return !!Object(s.c)(r) && (null !== (o = null === (n = r.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(v.I.Talk)
 				}, O = async e => {
 					var t;
 					const n = await Object(a.a)(e, l);
@@ -1131,7 +1131,7 @@
 							subredditId: t.id
 						}
 					}
-				}), _ = () => Object(r.a)(), P = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile || e.data.startAudioRoom, I = {
+				}), _ = () => Object(r.a)(), I = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile || e.data.startAudioRoom, P = {
 					[v.k.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
@@ -1148,10 +1148,10 @@
 						hk: "2mGf21"
 					})
 				}, S = e => e.data.prepareAudioRoom || e.data.prepareAudioRoomOnProfile, C = {
-					[v.L.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+					[v.K.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[v.L.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
+					[v.K.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					})
 				}, N = (e, t) => Object(a.a)(e, {
@@ -1323,4 +1323,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.83f62f3e2b6ee4e34b46.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.b38af3799ff9b296938e.js.map

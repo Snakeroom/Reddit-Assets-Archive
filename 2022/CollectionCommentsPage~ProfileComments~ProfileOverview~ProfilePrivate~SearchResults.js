@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.684c93d26b8c6bb076c9.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.d46b763ad0a14cabc8d8.js
+// Retrieved at 11/15/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1425,8 +1425,8 @@
 				V = n("./src/reddit/helpers/showReportIndicator/index.ts"),
 				H = n("./src/reddit/icons/fonts/Approve/index.tsx"),
 				J = n("./src/reddit/icons/fonts/Lock/index.tsx"),
-				X = n("./src/reddit/icons/fonts/Remove/index.tsx"),
-				W = n("./src/reddit/icons/fonts/Report/index.tsx"),
+				W = n("./src/reddit/icons/fonts/Remove/index.tsx"),
+				X = n("./src/reddit/icons/fonts/Report/index.tsx"),
 				z = n("./src/reddit/icons/fonts/Spam/index.tsx"),
 				q = n("./src/reddit/selectors/modQueue.ts"),
 				Q = n("./src/reddit/components/Comments/Comment/TopMeta/modBadgeTooltip.m.less"),
@@ -1460,7 +1460,7 @@
 				}), r.a.createElement(w.c, {
 					tooltipId: h,
 					text: Object(U.a)(t)
-				})), Object(F.a)(t) && !m && r.a.createElement(r.a.Fragment, null, r.a.createElement(X.a, {
+				})), Object(F.a)(t) && !m && r.a.createElement(r.a.Fragment, null, r.a.createElement(W.a, {
 					className: K.a.removeIcon,
 					desc: Object(U.b)(t),
 					id: b,
@@ -1499,7 +1499,7 @@
 				}), r.a.createElement(w.c, {
 					tooltipId: v,
 					text: Object(U.d)(t)
-				})), Object(V.a)(t) && !m && r.a.createElement(r.a.Fragment, null, r.a.createElement(W.a, {
+				})), Object(V.a)(t) && !m && r.a.createElement(r.a.Fragment, null, r.a.createElement(X.a, {
 					className: K.a.reportIcon,
 					desc: Object(U.c)(t.numReports),
 					id: f,
@@ -1509,7 +1509,7 @@
 				}), r.a.createElement(w.c, {
 					tooltipId: f,
 					text: Object(U.c)(t.numReports)
-				})), t.isDeleted && d && !m && r.a.createElement(r.a.Fragment, null, r.a.createElement(X.a, {
+				})), t.isDeleted && d && !m && r.a.createElement(r.a.Fragment, null, r.a.createElement(W.a, {
 					className: K.a.removeIcon,
 					isFilled: !0
 				}), r.a.createElement("span", {
@@ -2593,11 +2593,11 @@
 				s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(o.a)(e => Object(r.c)(e, {
-					experimentName: s.fg,
+					experimentName: s.dg,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				a = Object(o.a)(i, e => e === s.Xf)
+				a = Object(o.a)(i, e => e === s.Vf)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.684c93d26b8c6bb076c9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.d46b763ad0a14cabc8d8.js.map
