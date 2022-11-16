@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.6c082dda5695dbef97e8.js
-// Retrieved at 11/16/2022, 11:20:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.51dd221b61035a43c9c2.js
+// Retrieved at 11/16/2022, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -33250,11 +33250,11 @@
 		"./src/reddit/connectors/PostList/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
-				return y
+				return E
 			})), n.d(t, "d", (function() {
-				return j
+				return k
 			})), n.d(t, "b", (function() {
-				return S
+				return I
 			}));
 			var s = n("./node_modules/react-redux/es/index.js"),
 				r = n("./node_modules/reselect/es/index.js"),
@@ -33275,9 +33275,10 @@
 				_ = n("./src/reddit/selectors/listings.ts"),
 				x = n("./src/reddit/selectors/posts.ts"),
 				v = n("./src/reddit/selectors/subreddit.ts"),
-				O = n("./src/reddit/selectors/tracking.ts");
+				O = n("./src/reddit/selectors/tracking.ts"),
+				y = n("./src/reddit/selectors/user.ts");
 
-			function y() {
+			function E() {
 				return Object(p.v)({
 					currentProfileName: p.j,
 					isCommentPermalink: p.x,
@@ -33288,8 +33289,8 @@
 					pageLayer: e => e
 				})
 			}
-			const E = y(),
-				j = {
+			const j = E(),
+				k = {
 					apiError: _.c,
 					apiPending: _.d,
 					measureScrollFPS: C.d.measureScrollFPS,
@@ -33308,10 +33309,11 @@
 					viewportDataLoaded: O.a,
 					pageReferrer: p.X,
 					postListPlaceholderComponent: () => h.a,
-					isNpsScrollSurveyEnabled: g.e
+					isNpsScrollSurveyEnabled: g.e,
+					isLoggedIn: y.R
 				},
-				k = Object(r.c)(j),
-				S = e => ({
+				S = Object(r.c)(k),
+				I = e => ({
 					onBottomViewed: (t, n) => e(l.c(t, n)),
 					onFirstPostChanged: t => e(Object(c.a)(t)),
 					adBrandSafetyStatusReceived: t => {
@@ -33336,10 +33338,10 @@
 					showModalOnScroll: () => e(d.bb()),
 					surveyTriggerScrollCounted: () => e(Object(u.m)())
 				}),
-				I = e => Object(b.b)({
+				w = e => Object(b.b)({
 					...e
 				}),
-				w = (e, t, n, s) => {
+				T = (e, t, n, s) => {
 					const {
 						listingKey: r,
 						hostPostData: o,
@@ -33347,14 +33349,14 @@
 					} = s;
 					return Object(f.k)(e, t, "post", r, o, i, void 0)
 				},
-				T = Object(s.b)(k, S, (e, t, n) => ({
+				L = Object(s.b)(S, I, (e, t, n) => ({
 					...e,
 					...t,
 					...n,
-					postComponentForLayout: I,
-					postClickEventFactory: w
+					postComponentForLayout: w,
+					postClickEventFactory: T
 				}));
-			t.a = e => Object(m.c)(E(T(e)))
+			t.a = e => Object(m.c)(j(L(e)))
 		},
 		"./src/reddit/connectors/PostViewable/index.ts": function(e, t, n) {
 			"use strict";
@@ -50359,4 +50361,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.6c082dda5695dbef97e8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.51dd221b61035a43c9c2.js.map

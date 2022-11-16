@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.b65682b4906318ed77ab.js
-// Retrieved at 11/16/2022, 10:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.a8747908294cd4771ac1.js
+// Retrieved at 11/16/2022, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -2077,11 +2077,11 @@
 		"./src/reddit/connectors/PostList/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
-				return S
+				return E
 			})), s.d(t, "d", (function() {
-				return O
+				return C
 			})), s.d(t, "b", (function() {
-				return k
+				return j
 			}));
 			var r = s("./node_modules/react-redux/es/index.js"),
 				n = s("./node_modules/reselect/es/index.js"),
@@ -2102,9 +2102,10 @@
 				v = s("./src/reddit/selectors/listings.ts"),
 				_ = s("./src/reddit/selectors/posts.ts"),
 				y = s("./src/reddit/selectors/subreddit.ts"),
-				T = s("./src/reddit/selectors/tracking.ts");
+				T = s("./src/reddit/selectors/tracking.ts"),
+				S = s("./src/reddit/selectors/user.ts");
 
-			function S() {
+			function E() {
 				return Object(p.v)({
 					currentProfileName: p.j,
 					isCommentPermalink: p.x,
@@ -2115,8 +2116,8 @@
 					pageLayer: e => e
 				})
 			}
-			const E = S(),
-				O = {
+			const O = E(),
+				C = {
 					apiError: v.c,
 					apiPending: v.d,
 					measureScrollFPS: f.d.measureScrollFPS,
@@ -2135,10 +2136,11 @@
 					viewportDataLoaded: T.a,
 					pageReferrer: p.X,
 					postListPlaceholderComponent: () => g.a,
-					isNpsScrollSurveyEnabled: x.e
+					isNpsScrollSurveyEnabled: x.e,
+					isLoggedIn: S.R
 				},
-				C = Object(n.c)(O),
-				k = e => ({
+				k = Object(n.c)(C),
+				j = e => ({
 					onBottomViewed: (t, s) => e(l.c(t, s)),
 					onFirstPostChanged: t => e(Object(c.a)(t)),
 					adBrandSafetyStatusReceived: t => {
@@ -2163,10 +2165,10 @@
 					showModalOnScroll: () => e(d.bb()),
 					surveyTriggerScrollCounted: () => e(Object(u.m)())
 				}),
-				j = e => Object(b.b)({
+				N = e => Object(b.b)({
 					...e
 				}),
-				N = (e, t, s, r) => {
+				w = (e, t, s, r) => {
 					const {
 						listingKey: n,
 						hostPostData: i,
@@ -2174,14 +2176,14 @@
 					} = r;
 					return Object(h.k)(e, t, "post", n, i, o, void 0)
 				},
-				w = Object(r.b)(C, k, (e, t, s) => ({
+				L = Object(r.b)(k, j, (e, t, s) => ({
 					...e,
 					...t,
 					...s,
-					postComponentForLayout: j,
-					postClickEventFactory: N
+					postComponentForLayout: N,
+					postClickEventFactory: w
 				}));
-			t.a = e => Object(m.c)(E(w(e)))
+			t.a = e => Object(m.c)(O(L(e)))
 		},
 		"./src/reddit/contexts/Tooltip.ts": function(e, t, s) {
 			"use strict";
@@ -3235,4 +3237,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.b65682b4906318ed77ab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.a8747908294cd4771ac1.js.map

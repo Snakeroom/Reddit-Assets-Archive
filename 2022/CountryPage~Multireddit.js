@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.155e6b82a0aa29642ec3.js
-// Retrieved at 11/16/2022, 10:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.5fb422b770117248d168.js
+// Retrieved at 11/16/2022, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2147,11 +2147,11 @@
 		"./src/reddit/connectors/PostList/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
-				return E
+				return w
 			})), n.d(t, "d", (function() {
-				return C
+				return j
 			})), n.d(t, "b", (function() {
-				return O
+				return F
 			}));
 			var r = n("./node_modules/react-redux/es/index.js"),
 				i = n("./node_modules/reselect/es/index.js"),
@@ -2172,9 +2172,10 @@
 				y = n("./src/reddit/selectors/listings.ts"),
 				v = n("./src/reddit/selectors/posts.ts"),
 				x = n("./src/reddit/selectors/subreddit.ts"),
-				k = n("./src/reddit/selectors/tracking.ts");
+				k = n("./src/reddit/selectors/tracking.ts"),
+				E = n("./src/reddit/selectors/user.ts");
 
-			function E() {
+			function w() {
 				return Object(p.v)({
 					currentProfileName: p.j,
 					isCommentPermalink: p.x,
@@ -2185,8 +2186,8 @@
 					pageLayer: e => e
 				})
 			}
-			const w = E(),
-				C = {
+			const C = w(),
+				j = {
 					apiError: y.c,
 					apiPending: y.d,
 					measureScrollFPS: f.d.measureScrollFPS,
@@ -2205,10 +2206,11 @@
 					viewportDataLoaded: k.a,
 					pageReferrer: p.X,
 					postListPlaceholderComponent: () => _.a,
-					isNpsScrollSurveyEnabled: g.e
+					isNpsScrollSurveyEnabled: g.e,
+					isLoggedIn: E.R
 				},
-				j = Object(i.c)(C),
-				O = e => ({
+				O = Object(i.c)(j),
+				F = e => ({
 					onBottomViewed: (t, n) => e(d.c(t, n)),
 					onFirstPostChanged: t => e(Object(c.a)(t)),
 					adBrandSafetyStatusReceived: t => {
@@ -2233,10 +2235,10 @@
 					showModalOnScroll: () => e(l.bb()),
 					surveyTriggerScrollCounted: () => e(Object(u.m)())
 				}),
-				F = e => Object(h.b)({
+				D = e => Object(h.b)({
 					...e
 				}),
-				D = (e, t, n, r) => {
+				T = (e, t, n, r) => {
 					const {
 						listingKey: i,
 						hostPostData: s,
@@ -2244,14 +2246,14 @@
 					} = r;
 					return Object(b.k)(e, t, "post", i, s, o, void 0)
 				},
-				T = Object(r.b)(j, O, (e, t, n) => ({
+				S = Object(r.b)(O, F, (e, t, n) => ({
 					...e,
 					...t,
 					...n,
-					postComponentForLayout: F,
-					postClickEventFactory: D
+					postComponentForLayout: D,
+					postClickEventFactory: T
 				}));
-			t.a = e => Object(m.c)(w(T(e)))
+			t.a = e => Object(m.c)(C(S(e)))
 		},
 		"./src/reddit/controls/LoadingIcon/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -2932,4 +2934,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.155e6b82a0aa29642ec3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.5fb422b770117248d168.js.map

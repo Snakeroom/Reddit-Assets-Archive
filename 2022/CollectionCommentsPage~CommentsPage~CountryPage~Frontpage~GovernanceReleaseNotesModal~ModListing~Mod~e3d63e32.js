@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.3822fa651121c80df44f.js
-// Retrieved at 11/16/2022, 11:20:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.7265262e3475076dd09c.js
+// Retrieved at 11/16/2022, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -1077,38 +1077,39 @@
 						shouldHideFlair: O,
 						shouldShowInsightsButton: R,
 						triggerNewPostPill: S,
-						postIds: E
-					} = this.props, M = 0 === t, k = `post-${i}-${e}-${t}-${s?"last-index":""}-${v}-${C}-${x}`;
-					let j;
-					if (void 0 === (j = this.scrollChildCache.get(k))) {
+						postIds: E,
+						isLoggedIn: M
+					} = this.props, k = 0 === t, j = `post-${i}-${e}-${t}-${s?"last-index":""}-${v}-${C}-${x}`;
+					let T;
+					if (void 0 === (T = this.scrollChildCache.get(j))) {
 						const {
-							inSubredditOrProfile: T,
-							postsById: _
-						} = this.props, L = _[e], N = L.crosspostRootId && _[L.crosspostRootId] ? _[L.crosspostRootId] : L;
-						let V;
-						L.crosspostRootId && _[L.crosspostRootId] && (V = L), L.crosspostRootId && !_[L.crosspostRootId] && P.c.withScope(e => {
-							e.setExtra("errorType", f.v.API), e.setExtra("description", `Post ${L.id} is crosspost of ${L.crosspostRootId}, but ` + `${L.crosspostRootId} details are missing in the state`), P.c.captureMessage("Crosspost parent details are missing")
+							inSubredditOrProfile: _,
+							postsById: L
+						} = this.props, N = L[e], V = N.crosspostRootId && L[N.crosspostRootId] ? L[N.crosspostRootId] : N;
+						let F;
+						N.crosspostRootId && L[N.crosspostRootId] && (F = N), N.crosspostRootId && !L[N.crosspostRootId] && P.c.withScope(e => {
+							e.setExtra("errorType", f.v.API), e.setExtra("description", `Post ${N.id} is crosspost of ${N.crosspostRootId}, but ` + `${N.crosspostRootId} details are missing in the state`), P.c.captureMessage("Crosspost parent details are missing")
 						});
-						const F = this.props.postComponentForLayout({
-							isCrosspost: !!L.crosspostRootId,
+						const A = this.props.postComponentForLayout({
+							isCrosspost: !!N.crosspostRootId,
 							layout: i,
-							post: N
+							post: V
 						});
-						let A = `post-list-item-[layout: ${i}]-[postId: ${e}]`;
-						this.props.listingBelowVariant && C && (A += `--${C}`);
-						const H = ye(e, i, s, C, v, x, this.props, t, this.props.hostPostData),
-							B = xe(e, i, this.props, t),
-							W = we(e, this.props, l),
-							U = N.media && N.media.type === oe.o.EMBED ? N.media.provider : null,
-							q = h && !L.isSponsored,
-							D = u && !L.isSponsored && !L.isScoreHidden,
-							Q = !!(null == L ? void 0 : L.recommendationContext);
-						j = {
-							estHeight: Object(ne.c)(L, i),
+						let H = `post-list-item-[layout: ${i}]-[postId: ${e}]`;
+						this.props.listingBelowVariant && C && (H += `--${C}`);
+						const B = ye(e, i, s, C, v, x, this.props, t, this.props.hostPostData),
+							W = xe(e, i, this.props, t),
+							U = we(e, this.props, l),
+							q = V.media && V.media.type === oe.o.EMBED ? V.media.provider : null,
+							D = h && !N.isSponsored,
+							Q = u && !N.isSponsored && !N.isScoreHidden,
+							z = !!(null == N ? void 0 : N.recommendationContext);
+						T = {
+							estHeight: Object(ne.c)(N, i),
 							id: e,
-							isFocusable: !(!N.media || !(i === I.g.Large || i === I.g.Classic && Object(oe.I)(N.media))) && (oe.c.has(N.media.type) && (!U || !oe.s.has(U)) && !N.isSpoiler),
-							trackOnEnteredViewport: H,
-							trackOnExitedViewport: B,
+							isFocusable: !(!V.media || !(i === I.g.Large || i === I.g.Classic && Object(oe.I)(V.media))) && (oe.c.has(V.media.type) && (!q || !oe.s.has(q)) && !V.isSpoiler),
+							trackOnEnteredViewport: B,
+							trackOnExitedViewport: W,
 							render: h => {
 								let {
 									className: u,
@@ -1116,36 +1117,36 @@
 									width: P,
 									remeasure: x,
 									setScrollerChildRef: I,
-									shouldLoadInitially: k
+									shouldLoadInitially: j
 								} = h;
 								return m.a.createElement(te, {
-									key: A,
-									hideRecommendationContext: !0
-								}, m.a.createElement(F, {
+									key: H,
+									hideRecommendationContext: !M
+								}, m.a.createElement(A, {
 									availableWidth: P,
 									className: Object(g.a)(u, this.props.postClassName),
 									currentProfileName: n,
 									eventFactory: this.eventFactoryHandler,
-									first: M,
-									forceLoadMedia: k,
+									first: k,
+									forceLoadMedia: j,
 									hostPostData: o,
-									inSubredditOrProfile: T,
-									isCommentCountAnimationEnabled: q,
+									inSubredditOrProfile: _,
+									isCommentCountAnimationEnabled: D,
 									isCommentPermalink: r,
 									isCommentsPage: a,
 									isCountAnimShadowTestEnabled: p,
 									isFrontpage: l,
 									isProfilePostListing: d,
 									isTopicPage: c,
-									isVoteCountAnimationEnabled: D,
-									key: A,
+									isVoteCountAnimationEnabled: Q,
+									key: H,
 									last: s,
 									listingBelowVariant: b,
 									listingIndex: t,
 									listingKey: C,
 									listingName: v,
 									onceInViewport: S,
-									onClickPost: W,
+									onClickPost: U,
 									onSizeChanged: x,
 									pageLayer: y,
 									postId: e,
@@ -1155,15 +1156,15 @@
 									sendEvent: this.props.sendEvent,
 									shouldHideFlair: O,
 									shouldShowInsightsButton: R
-								}), Q && m.a.createElement(G, {
-									post: N,
+								}), z && m.a.createElement(G, {
+									post: V,
 									layout: i,
-									parentPost: V
+									parentPost: F
 								}))
 							}
-						}, this.scrollChildCache.set(k, j)
+						}, this.scrollChildCache.set(j, T)
 					}
-					return j
+					return T
 				}
 				render() {
 					return this.hasPosts() ? (this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.renderList()) : this.showPlaceholder() ? (this.renderingEmpty = !1, this.renderingPlaceholder = !0, this.renderPlaceholder()) : (this.renderingEmpty = !0, this.renderingPlaceholder = !1, this.renderEmpty())
@@ -2527,4 +2528,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.3822fa651121c80df44f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.7265262e3475076dd09c.js.map

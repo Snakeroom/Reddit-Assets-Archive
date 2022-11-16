@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.99e3825b4a5adfd2ddf7.js
-// Retrieved at 11/16/2022, 10:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.79ebe79293683804807d.js
+// Retrieved at 11/16/2022, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -15689,11 +15689,11 @@
 		"./src/reddit/connectors/PostList/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
-				return _
+				return j
 			})), s.d(t, "d", (function() {
-				return E
+				return k
 			})), s.d(t, "b", (function() {
-				return S
+				return w
 			}));
 			var n = s("./node_modules/react-redux/es/index.js"),
 				r = s("./node_modules/reselect/es/index.js"),
@@ -15714,9 +15714,10 @@
 				v = s("./src/reddit/selectors/listings.ts"),
 				O = s("./src/reddit/selectors/posts.ts"),
 				y = s("./src/reddit/selectors/subreddit.ts"),
-				C = s("./src/reddit/selectors/tracking.ts");
+				C = s("./src/reddit/selectors/tracking.ts"),
+				_ = s("./src/reddit/selectors/user.ts");
 
-			function _() {
+			function j() {
 				return Object(p.v)({
 					currentProfileName: p.j,
 					isCommentPermalink: p.x,
@@ -15727,8 +15728,8 @@
 					pageLayer: e => e
 				})
 			}
-			const j = _(),
-				E = {
+			const E = j(),
+				k = {
 					apiError: v.c,
 					apiPending: v.d,
 					measureScrollFPS: f.d.measureScrollFPS,
@@ -15747,10 +15748,11 @@
 					viewportDataLoaded: C.a,
 					pageReferrer: p.X,
 					postListPlaceholderComponent: () => g.a,
-					isNpsScrollSurveyEnabled: x.e
+					isNpsScrollSurveyEnabled: x.e,
+					isLoggedIn: _.R
 				},
-				k = Object(r.c)(E),
-				S = e => ({
+				S = Object(r.c)(k),
+				w = e => ({
 					onBottomViewed: (t, s) => e(l.c(t, s)),
 					onFirstPostChanged: t => e(Object(c.a)(t)),
 					adBrandSafetyStatusReceived: t => {
@@ -15775,10 +15777,10 @@
 					showModalOnScroll: () => e(d.bb()),
 					surveyTriggerScrollCounted: () => e(Object(m.m)())
 				}),
-				w = e => Object(b.b)({
+				P = e => Object(b.b)({
 					...e
 				}),
-				P = (e, t, s, n) => {
+				I = (e, t, s, n) => {
 					const {
 						listingKey: r,
 						hostPostData: o,
@@ -15786,14 +15788,14 @@
 					} = n;
 					return Object(h.k)(e, t, "post", r, o, i, void 0)
 				},
-				I = Object(n.b)(k, S, (e, t, s) => ({
+				N = Object(n.b)(S, w, (e, t, s) => ({
 					...e,
 					...t,
 					...s,
-					postComponentForLayout: w,
-					postClickEventFactory: P
+					postComponentForLayout: P,
+					postClickEventFactory: I
 				}));
-			t.a = e => Object(u.c)(j(I(e)))
+			t.a = e => Object(u.c)(E(N(e)))
 		},
 		"./src/reddit/connectors/SearchPost/searchSyntaxHighlight.tsx": function(e, t, s) {
 			"use strict";
@@ -19226,4 +19228,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.99e3825b4a5adfd2ddf7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.79ebe79293683804807d.js.map
