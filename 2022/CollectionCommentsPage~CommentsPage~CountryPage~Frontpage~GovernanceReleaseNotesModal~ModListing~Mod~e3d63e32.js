@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.83c132813acc0d0e8473.js
-// Retrieved at 11/15/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.f6b21668745ad8c8a120.js
+// Retrieved at 11/15/2022, 7:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -46,7 +46,7 @@
 		"./src/reddit/components/ClassicPost/Placeholder.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return y
+				return P
 			}));
 			var i = s("./node_modules/react/index.js"),
 				n = s.n(i),
@@ -76,8 +76,8 @@
 				v = Object(r.c)({
 					isFakeSubreddit: c.A
 				}),
-				P = Object(o.b)(v),
-				y = e => {
+				y = Object(o.b)(v),
+				P = e => {
 					const t = {
 						interactive: !1,
 						voteState: m.a.notVoted
@@ -90,11 +90,11 @@
 						key: "d"
 					}, t)))
 				},
-				x = () => n.a.createElement(y, null, n.a.createElement("div", {
+				x = () => n.a.createElement(P, null, n.a.createElement("div", {
 					className: g.a.emptyScore,
 					key: "s"
 				}));
-			t.b = C(P(e => n.a.createElement("div", {
+			t.b = C(y(e => n.a.createElement("div", {
 				className: Object(a.a)(e.className, p.a.classicPostStyles, p.a.classicAndCompactPlaceholderStyles)
 			}, n.a.createElement(l.b, null, n.a.createElement(x, null)), n.a.createElement("div", {
 				className: g.a.mainBody
@@ -226,8 +226,8 @@
 				v = Object(r.c)({
 					isFakeSubreddit: c.A
 				}),
-				P = Object(o.b)(v),
-				y = e => {
+				y = Object(o.b)(v),
+				P = e => {
 					const t = {
 						interactive: !1,
 						voteState: m.a.notVoted
@@ -253,11 +253,11 @@
 				}), n.a.createElement("div", {
 					className: Object(a.a)(g.a.ellipsis, Object(h.b)(e))
 				}));
-			t.a = C(P(e => n.a.createElement("div", {
+			t.a = C(y(e => n.a.createElement("div", {
 				className: Object(a.a)(e.className, p.a.compactPostStyles, p.a.classicAndCompactPlaceholderStyles)
 			}, n.a.createElement("div", {
 				className: g.a.wrapper
-			}, n.a.createElement(y, f({
+			}, n.a.createElement(P, f({
 				key: "c"
 			}, e)), n.a.createElement("div", {
 				key: "a",
@@ -607,8 +607,8 @@
 				f = s("./src/lib/constants/index.ts"),
 				C = s("./src/lib/fastdom/index.ts"),
 				v = s("./src/lib/opener/index.ts"),
-				P = s("./src/lib/sentry/index.ts"),
-				y = s("./node_modules/react-redux/es/index.js"),
+				y = s("./src/lib/sentry/index.ts"),
+				P = s("./node_modules/react-redux/es/index.js"),
 				x = s("./src/reddit/actions/post.ts"),
 				w = s("./src/reddit/actions/subreddit/muting.ts"),
 				R = s("./src/reddit/actions/toaster.ts"),
@@ -647,9 +647,9 @@
 				F = s("./src/reddit/icons/fonts/index.tsx"),
 				A = s("./src/reddit/selectors/experiments/antievil/index.tsx"),
 				H = s("./src/reddit/selectors/subreddit.ts"),
-				B = s("./src/reddit/components/CommunityMuting/index.tsx"),
-				W = s("./src/reddit/components/OneFeed/Footer.m.less"),
-				U = s.n(W);
+				W = s("./src/reddit/components/CommunityMuting/index.tsx"),
+				B = s("./src/reddit/components/OneFeed/Footer.m.less"),
+				U = s.n(B);
 			const {
 				fbt: q
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), D = async e => {
@@ -714,13 +714,13 @@
 				className: U.a.Subtitle
 			}, q._("Your feedback improves your feed.", null, {
 				hk: "2WLaqS"
-			}))), G = e => {
+			}))), K = e => {
 				let {
 					subredditId: t,
 					subredditName: s,
 					closeThankYouView: i
 				} = e;
-				const n = Object(y.d)(),
+				const n = Object(P.d)(),
 					[o, r] = Object(h.useState)(!1),
 					a = () => {
 						r(e => !e)
@@ -737,7 +737,7 @@
 					className: U.a.Subtitle
 				}, q._("Hide community from feeds and notifications", null, {
 					hk: "2lFpIL"
-				})), o && m.a.createElement(B.a, {
+				})), o && m.a.createElement(W.a, {
 					subredditName: s,
 					toggleModal: a,
 					onConfirm: () => {
@@ -748,7 +748,7 @@
 					}
 				})))
 			};
-			var K = Object(S.b)(e => {
+			var G = Object(S.b)(e => {
 					let {
 						gqlContext: t,
 						layout: s,
@@ -756,10 +756,10 @@
 						parentPost: n
 					} = e;
 					var o;
-					const r = Object(y.d)(),
+					const r = Object(P.d)(),
 						a = Object(V.a)(),
 						l = Object(h.useRef)(!1),
-						d = Object(y.e)(A.a),
+						d = Object(P.e)(A.a),
 						{
 							hideRecommendationFooter: c,
 							recommendationFooterView: u,
@@ -771,7 +771,7 @@
 							subredditId: C,
 							subredditName: v
 						} = (null === (o = i.recommendationContext) || void 0 === o ? void 0 : o.source) || {},
-						P = Object(y.e)(e => Object(H.i)(e, i, n)),
+						y = Object(P.e)(e => Object(H.i)(e, i, n)),
 						w = Object(h.useCallback)(() => {
 							const e = !d,
 								t = l.current ? () => r(Object(x.eb)(f, !0, !1, e)) : c,
@@ -815,9 +815,9 @@
 						seeLessFromThisCommunity: S,
 						seeLessLikeThisCommunity: E,
 						seeLessOfThisPostClick: R
-					}), u === O.a.MuteThankYouView && m.a.createElement(G, {
+					}), u === O.a.MuteThankYouView && m.a.createElement(K, {
 						subredditId: b,
-						subredditName: P,
+						subredditName: y,
 						closeThankYouView: w
 					}), u === O.a.ThankYouView && m.a.createElement(z, null)) : null
 				}),
@@ -861,13 +861,13 @@
 				CLASSIC: 3,
 				COMPACT: 5,
 				SEARCH: 3
-			}, Pe = (e, t, s, i, n, o, r, a, l) => {
+			}, ye = (e, t, s, i, n, o, r, a, l) => {
 				const d = `entered-${e}-${t}-${s?`last-${i}-${n}`:""}-${o}`;
 				let c = ge.get(d);
 				return void 0 === c && (c = () => {
 					s && r.onBottomViewed(i, n), r.trackOnPostEnteredViewport(e, t, a, l)
 				}, ge.set(d, c)), c
-			}, ye = (e, t, s, i) => {
+			}, Pe = (e, t, s, i) => {
 				const n = `left-${e}-${t}`;
 				let o = fe.get(n);
 				return void 0 === o && (o = n => {
@@ -1066,7 +1066,7 @@
 						listingBelowVariant: b,
 						listingKey: C,
 						listingName: v,
-						pageLayer: y,
+						pageLayer: P,
 						pageReferrer: x,
 						redditStyle: w,
 						shouldHideFlair: R,
@@ -1081,8 +1081,8 @@
 							postsById: _
 						} = this.props, L = _[e], N = L.crosspostRootId && _[L.crosspostRootId] ? _[L.crosspostRootId] : L;
 						let V;
-						L.crosspostRootId && _[L.crosspostRootId] && (V = L), L.crosspostRootId && !_[L.crosspostRootId] && P.c.withScope(e => {
-							e.setExtra("errorType", f.v.API), e.setExtra("description", `Post ${L.id} is crosspost of ${L.crosspostRootId}, but ` + `${L.crosspostRootId} details are missing in the state`), P.c.captureMessage("Crosspost parent details are missing")
+						L.crosspostRootId && _[L.crosspostRootId] && (V = L), L.crosspostRootId && !_[L.crosspostRootId] && y.c.withScope(e => {
+							e.setExtra("errorType", f.v.API), e.setExtra("description", `Post ${L.id} is crosspost of ${L.crosspostRootId}, but ` + `${L.crosspostRootId} details are missing in the state`), y.c.captureMessage("Crosspost parent details are missing")
 						});
 						const F = this.props.postComponentForLayout({
 							isCrosspost: !!L.crosspostRootId,
@@ -1091,9 +1091,9 @@
 						});
 						let A = `post-list-item-[layout: ${i}]-[postId: ${e}]`;
 						this.props.listingBelowVariant && C && (A += `--${C}`);
-						const H = Pe(e, i, s, C, v, x, this.props, t, this.props.hostPostData),
-							B = ye(e, i, this.props, t),
-							W = xe(e, this.props, l),
+						const H = ye(e, i, s, C, v, x, this.props, t, this.props.hostPostData),
+							W = Pe(e, i, this.props, t),
+							B = xe(e, this.props, l),
 							U = N.media && N.media.type === oe.o.EMBED ? N.media.provider : null,
 							q = h && !L.isSponsored,
 							D = u && !L.isSponsored && !L.isScoreHidden,
@@ -1103,12 +1103,12 @@
 							id: e,
 							isFocusable: !(!N.media || !(i === I.g.Large || i === I.g.Classic && Object(oe.I)(N.media))) && (oe.c.has(N.media.type) && (!U || !oe.s.has(U)) && !N.isSpoiler),
 							trackOnEnteredViewport: H,
-							trackOnExitedViewport: B,
+							trackOnExitedViewport: W,
 							render: h => {
 								let {
 									className: u,
 									height: f,
-									width: P,
+									width: y,
 									remeasure: x,
 									setScrollerChildRef: I,
 									shouldLoadInitially: k
@@ -1117,7 +1117,7 @@
 									key: A,
 									hideRecommendationContext: !0
 								}, m.a.createElement(F, {
-									availableWidth: P,
+									availableWidth: y,
 									className: Object(g.a)(u, this.props.postClassName),
 									currentProfileName: n,
 									eventFactory: this.eventFactoryHandler,
@@ -1140,9 +1140,9 @@
 									listingKey: C,
 									listingName: v,
 									onceInViewport: S,
-									onClickPost: W,
+									onClickPost: B,
 									onSizeChanged: x,
-									pageLayer: y,
+									pageLayer: P,
 									postId: e,
 									postIds: E,
 									redditStyle: w,
@@ -1150,7 +1150,7 @@
 									sendEvent: this.props.sendEvent,
 									shouldHideFlair: R,
 									shouldShowInsightsButton: O
-								}), Q && m.a.createElement(K, {
+								}), Q && m.a.createElement(G, {
 									post: N,
 									layout: i,
 									parentPost: V
@@ -1281,7 +1281,7 @@
 		"./src/reddit/components/Scroller/Simple.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return K
+				return G
 			}));
 			var i = s("./node_modules/lodash/debounce.js"),
 				n = s.n(i),
@@ -1300,19 +1300,19 @@
 			const f = 500,
 				C = 1e3,
 				v = 40;
-			var P;
+			var y;
 			! function(e) {
 				e.Max10 = "0-10", e.Max20 = "11-20", e.Max30 = "21-30", e.Max40 = "31-40", e.Max50 = "41-50", e.Max60 = "51-60"
-			}(P || (P = {}));
-			const y = () => ({
-					[P.Max10]: 0,
-					[P.Max20]: 0,
-					[P.Max30]: 0,
-					[P.Max40]: 0,
-					[P.Max50]: 0,
-					[P.Max60]: 0
+			}(y || (y = {}));
+			const P = () => ({
+					[y.Max10]: 0,
+					[y.Max20]: 0,
+					[y.Max30]: 0,
+					[y.Max40]: 0,
+					[y.Max50]: 0,
+					[y.Max60]: 0
 				}),
-				x = [P.Max10, P.Max20, P.Max30, P.Max40, P.Max50, P.Max60],
+				x = [y.Max10, y.Max20, y.Max30, y.Max40, y.Max50, y.Max60],
 				w = e => ({
 					eventHandler: e
 				});
@@ -1327,7 +1327,7 @@
 				let o, r, a;
 				const l = () => {
 						if (n.length < v) return;
-						const e = y(),
+						const e = P(),
 							t = Math.min(C, n.length),
 							i = n.splice(0, t);
 						n.splice(0, n.length);
@@ -1335,9 +1335,9 @@
 						for (let s = i.shift(); i.length > 0; s = i.shift()) {
 							const t = i[0] - s,
 								n = Math.min(60, Math.ceil(1e3 / t));
-							e[n <= 10 ? P.Max10 : 60 === n ? P.Max60 : x[Math.ceil(n / 10) - 1]] += t
+							e[n <= 10 ? y.Max10 : 60 === n ? y.Max60 : x[Math.ceil(n / 10) - 1]] += t
 						}
-						const r = y();
+						const r = P();
 						for (const s in e) r[s] = e[s] / o;
 						s(r)
 					},
@@ -1455,8 +1455,8 @@
 				F = s("./src/reddit/selectors/platform.ts"),
 				A = s("./src/telemetry/helpers/sendEvent.ts"),
 				H = s("./src/telemetry/helpers/sendTiming.ts"),
-				B = s("./src/reddit/components/Scroller/Simple.m.less"),
-				W = s.n(B);
+				W = s("./src/reddit/components/Scroller/Simple.m.less"),
+				B = s.n(W);
 			const U = L.g,
 				q = 5 * u.N,
 				D = 3,
@@ -1464,9 +1464,9 @@
 					isOverlayOpen: F.j
 				}),
 				z = Object(c.b)(Q),
-				G = {};
+				K = {};
 
-			function K(e) {
+			function G(e) {
 				return e === document
 			}
 
@@ -1731,14 +1731,14 @@
 						const s = this.childMap.get(e);
 						if (!s || !s.el) return;
 						const i = s.el.firstChild;
-						i && (t !== s.el.style.height && (s.el.style.height = t), i.classList.add(W.a.Hidden), this.hiddenChildren[e] = t, s.loaded && p.a.write(() => {
+						i && (t !== s.el.style.height && (s.el.style.height = t), i.classList.add(B.a.Hidden), this.hiddenChildren[e] = t, s.loaded && p.a.write(() => {
 							s.itemRef && (s.loaded = !1, s.focused = !1, s.itemRef.unmountContent())
 						}))
 					}, this.showChild = e => {
 						const t = this.childMap.get(e);
 						if (!t || !t.el) return;
 						const s = t.el.firstChild;
-						s && (this.remeasureWhenShown[t.id] && (this.measurementsInvalid = !0, this.remeasureWhenShown[t.id] = void 0), t.el.style.height = "", s.classList.remove(W.a.Hidden), void 0 !== this.hiddenChildren[e] && (this.hiddenChildren[e] = void 0))
+						s && (this.remeasureWhenShown[t.id] && (this.measurementsInvalid = !0, this.remeasureWhenShown[t.id] = void 0), t.el.style.height = "", s.classList.remove(B.a.Hidden), void 0 !== this.hiddenChildren[e] && (this.hiddenChildren[e] = void 0))
 					}, this.getStylesForOuterWrapper = e => {
 						if (void 0 !== this.hiddenChildren[e]) return {
 							height: this.hiddenChildren[e]
@@ -1802,8 +1802,8 @@
 					}), this.props.disableScrollCache && !this.props.preventScrollOnMount && Object(I.c)(this.scrollContainer, 0), this.setupScrollHandler(), p.a.write(() => {
 						if (!this.props.disableScrollCache) {
 							const e = this.getCacheKey(),
-								t = G[e];
-							r()(t) || (G[e] = void 0, this.scrollContainer && Object(I.c)(this.scrollContainer, t))
+								t = K[e];
+							r()(t) || (K[e] = void 0, this.scrollContainer && Object(I.c)(this.scrollContainer, t))
 						}
 						this.callOnScrollForItemsChanged(), this.props.onLastVisibleChildRendered && this.props.onLastVisibleChildRendered()
 					}), p.a.read(() => {
@@ -1832,7 +1832,7 @@
 				componentWillUnmount() {
 					if (this.callExitedViewportForUnmount(), this.cleanupScrollHandler(), clearTimeout(this.updateRenderableChildrenHandle), this.cancelPopulateRenderableChildrenWhenIdle(), this.scrollContainer && !this.props.disableScrollCache) {
 						const e = this.getCacheKey();
-						G[e] = this.lastRenderPosition
+						K[e] = this.lastRenderPosition
 					}
 					this.childMap = new S.a("id"), this.itemsInViewport = new S.a("id"), this.wrapperRefFNs = {}, this.childRefFns = {}, this.containerRef = null, this.loadMoreEl = void 0, this.scrollContainer = void 0, this.unmountItemsIdleId && (Object(h.cancelIdleCallback)(this.unmountItemsIdleId), this.unmountItemsIdleId = null)
 				}
@@ -1871,7 +1871,7 @@
 					return this.props.children.map(e => e.id).join("-")
 				}
 				getScrollTop() {
-					return this.scrollContainer ? K(this.scrollContainer) ? Object(k.a)() : this.scrollContainer.scrollTop : 0
+					return this.scrollContainer ? G(this.scrollContainer) ? Object(k.a)() : this.scrollContainer.scrollTop : 0
 				}
 				updateViewportInfo() {
 					if (this.scrollContainer) {
@@ -1967,7 +1967,7 @@
 						ref: this.getWrapperRefFN(e.id),
 						style: this.getStylesForOuterWrapper(e.id)
 					}, l.a.createElement("div", {
-						className: this.hiddenChildren[e.id] ? W.a.Hidden : void 0
+						className: this.hiddenChildren[e.id] ? B.a.Hidden : void 0
 					}, e.render({
 						className: N.k,
 						height: e.estHeight,
@@ -2144,8 +2144,8 @@
 				C = s("./src/reddit/components/LargePost/placeholder.m.less"),
 				v = s.n(C);
 
-			function P() {
-				return (P = Object.assign || function(e) {
+			function y() {
+				return (y = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var i in s) Object.prototype.hasOwnProperty.call(s, i) && (e[i] = s[i])
@@ -2153,7 +2153,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const y = Object(u.v)(),
+			const P = Object(u.v)(),
 				x = Object(d.c)({
 					isFakeSubreddit: u.A
 				}),
@@ -2165,21 +2165,21 @@
 					};
 					return a.a.createElement("div", {
 						className: v.a.emptyVerticalVotes
-					}, a.a.createElement(m.d, P({
+					}, a.a.createElement(m.d, y({
 						key: "u"
 					}, t)), a.a.createElement("div", {
 						className: v.a.emptyScore,
 						key: "s"
-					}), a.a.createElement(m.c, P({
+					}), a.a.createElement(m.c, y({
 						key: "d"
 					}, t)))
 				},
-				O = e => a.a.createElement("div", P({
+				O = e => a.a.createElement("div", y({
 					className: Object(c.a)(v.a.subredditIcon, Object(p.a)({
 						isLoading: !0
 					}))
 				}, e));
-			var I = y(w(e => {
+			var I = P(w(e => {
 					let {
 						className: t,
 						dispatch: s,
@@ -2250,9 +2250,9 @@
 			s.d(t, "a", (function() {
 				return g
 			})), s.d(t, "c", (function() {
-				return P
-			})), s.d(t, "b", (function() {
 				return y
+			})), s.d(t, "b", (function() {
+				return P
 			}));
 			var i = s("./node_modules/@loadable/component/dist/loadable.esm.js"),
 				n = s("./node_modules/react/index.js"),
@@ -2268,7 +2268,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!s.m[t]
 					},
-					importAsync: () => Promise.all([s.e("CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"), s.e("Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"), s.e("reddit-components-BlankPost")]).then(s.bind(null, "./src/reddit/components/BlankPost/index.tsx")),
+					importAsync: () => Promise.all([s.e("CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"), s.e("reddit-components-BlankPost")]).then(s.bind(null, "./src/reddit/components/BlankPost/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -2288,7 +2288,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!s.m[t]
 					},
-					importAsync: () => Promise.all([s.e("vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e"), s.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~1fdd9b9b"), s.e("CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5"), s.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"), s.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"), s.e("CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e"), s.e("CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"), s.e("Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"), s.e("CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a"), s.e("reddit-components-ClassicPost")]).then(s.bind(null, "./src/reddit/components/ClassicPost/index.tsx")),
+					importAsync: () => Promise.all([s.e("vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e"), s.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~1fdd9b9b"), s.e("CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5"), s.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"), s.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"), s.e("CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e"), s.e("CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"), s.e("Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2"), s.e("CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a"), s.e("reddit-components-ClassicPost")]).then(s.bind(null, "./src/reddit/components/ClassicPost/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -2308,7 +2308,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!s.m[t]
 					},
-					importAsync: () => Promise.all([s.e("vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e"), s.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~1fdd9b9b"), s.e("CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5"), s.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"), s.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"), s.e("CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e"), s.e("CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"), s.e("Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"), s.e("CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a"), s.e("reddit-components-CompactPost")]).then(s.bind(null, "./src/reddit/components/CompactPost/index.tsx")),
+					importAsync: () => Promise.all([s.e("vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e"), s.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~1fdd9b9b"), s.e("CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5"), s.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"), s.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"), s.e("CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e"), s.e("CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"), s.e("Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2"), s.e("CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a"), s.e("reddit-components-CompactPost")]).then(s.bind(null, "./src/reddit/components/CompactPost/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -2328,7 +2328,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!s.m[t]
 					},
-					importAsync: () => Promise.all([s.e("vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e"), s.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~1fdd9b9b"), s.e("CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5"), s.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"), s.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"), s.e("CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e"), s.e("CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"), s.e("Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"), s.e("Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f"), s.e("reddit-components-LargePost")]).then(s.bind(null, "./src/reddit/components/LargePost/index.tsx")),
+					importAsync: () => Promise.all([s.e("vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e"), s.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~1fdd9b9b"), s.e("CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5"), s.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"), s.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"), s.e("CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e"), s.e("CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"), s.e("Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2"), s.e("Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f"), s.e("reddit-components-LargePost")]).then(s.bind(null, "./src/reddit/components/LargePost/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -2348,7 +2348,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!s.m[t]
 					},
-					importAsync: () => Promise.all([s.e("vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e"), s.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~1fdd9b9b"), s.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"), s.e("CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e"), s.e("CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"), s.e("Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"), s.e("Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f"), s.e("Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost"), s.e("Governance~Reddit~reddit-components-MediumPost"), s.e("reddit-components-MediumPost")]).then(s.bind(null, "./src/reddit/components/MediumPost/index.tsx")),
+					importAsync: () => Promise.all([s.e("vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e"), s.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~1fdd9b9b"), s.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"), s.e("CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e"), s.e("CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"), s.e("Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2"), s.e("Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f"), s.e("Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost"), s.e("reddit-components-MediumPost")]).then(s.bind(null, "./src/reddit/components/MediumPost/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -2371,7 +2371,7 @@
 				f = ["https://www.mcdonalds.com", "https://d2n94wep25xhn0.cloudfront.net", "https://d4wggo22afv97.cloudfront.net", "https://www.dyson.com", "https://dyson.com", "https://www.bestbuy.com", "https://www.goarmy.com", "https://www.samsung.com", "https://www.cyberpunk.net", "https://www.mms.com"],
 				C = e => e.source && e.source.url && e.isSponsored && f.some(t => e.source.url.startsWith(t)),
 				v = e => !e.media || e.media.type === l.o.EMBED && !e.isSurveyAd && !(l.a.has(e.media.provider) || C(e)),
-				P = (e, t) => {
+				y = (e, t) => {
 					if (e.isBlank) return 0;
 					switch (t) {
 						case a.g.Medium:
@@ -2385,7 +2385,7 @@
 					}
 				};
 
-			function y(e) {
+			function P(e) {
 				let {
 					isCrosspost: t,
 					layout: s,
@@ -2522,4 +2522,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.83c132813acc0d0e8473.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.f6b21668745ad8c8a120.js.map
