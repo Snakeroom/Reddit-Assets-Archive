@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a.847ea90abcb1b978a739.js
-// Retrieved at 11/16/2022, 10:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a.30461839c7657afa8243.js
+// Retrieved at 11/16/2022, 11:20:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a"], {
 		"./src/higherOrderComponents/withAdClickLocation/index.tsx": function(e, t, s) {
@@ -1393,7 +1393,7 @@
 					className: X.a.mediaThumbnail,
 					removeLink: !0,
 					containerClassName: X.a.mediaThumbnailContainer
-				}) : null, !u && (null === (a = null == l ? void 0 : l.icon) || void 0 === a ? void 0 : a.url) && !l.isNSFW && o.a.createElement("div", {
+				}) : null, !u && (null === (a = null == l ? void 0 : l.icon) || void 0 === a ? void 0 : a.url) && o.a.createElement("div", {
 					className: X.a.userIconContainer
 				}, o.a.createElement(U.a, {
 					className: Object(v.a)({
@@ -1402,8 +1402,8 @@
 					}, X.a.userIcon),
 					iconUrl: null === (i = null == l ? void 0 : l.icon) || void 0 === i ? void 0 : i.url,
 					userName: l.name,
-					isNSFW: t.isNSFW,
-					wrapperClassName: X.a.userIconWrapper
+					wrapperClassName: X.a.userIconWrapper,
+					isNSFW: !1
 				})))
 			};
 			var V = s("./src/reddit/components/PromotedUserPostsAd/PromotedUserPost/index.m.less"),
@@ -2193,4 +2193,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a.847ea90abcb1b978a739.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a.30461839c7657afa8243.js.map
