@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f.4625b4d908d2fd3fbecc.js
-// Retrieved at 11/16/2022, 10:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f.bc5d0bea6bb4c91e932e.js
+// Retrieved at 11/16/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f"], {
 		"./src/lib/scroll/index.ts": function(e, t, o) {
@@ -66,7 +66,7 @@
 			})), o.d(t, "k", (function() {
 				return Fe
 			})), o.d(t, "e", (function() {
-				return Ue
+				return He
 			})), o.d(t, "d", (function() {
 				return qe
 			})), o.d(t, "a", (function() {
@@ -206,8 +206,8 @@
 				};
 			var A = o("./src/redditGQL/operations/UpdateComment.json");
 			var F = o("./src/redditGQL/operations/UpdateCommentFollowState.json");
-			var H = o("./src/reddit/endpoints/post/index.tsx"),
-				U = o("./src/reddit/endpoints/post/convert.ts"),
+			var U = o("./src/reddit/endpoints/post/index.tsx"),
+				H = o("./src/reddit/endpoints/post/convert.ts"),
 				B = o("./src/reddit/endpoints/publicAccessNetwork/index.ts"),
 				G = o("./src/reddit/featureFlags/index.ts"),
 				W = o("./src/reddit/helpers/comment/index.ts"),
@@ -230,7 +230,7 @@
 			const ie = Object(ce.a)(e => Object(se.c)(e, {
 				experimentEligibilitySelector: se.a,
 				experimentName: re.Ab
-			}), e => e === re.Hd);
+			}), e => e === re.Id);
 			var ae = o("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				de = o("./src/reddit/selectors/platform.ts"),
 				le = o("./src/reddit/selectors/posts.ts"),
@@ -552,7 +552,7 @@
 					})), r(Object(u.c)(e));
 					else {
 						r(Object(u.b)(o));
-						const s = await Object(U.a)(i(), e, a ? t : JSON.stringify(t));
+						const s = await Object(H.a)(i(), e, a ? t : JSON.stringify(t));
 						if (s.ok) {
 							const t = s.body.output;
 							r(Object(u.a)(o)), r(Re({
@@ -633,7 +633,7 @@
 						}))
 					}
 				}, Ke = e => async t => {
-					t(Object(ue.r)(e)), t(Ue(e))
+					t(Object(ue.r)(e)), t(He(e))
 				}, Ae = e => {
 					let {
 						parentCommentId: t,
@@ -654,7 +654,7 @@
 				}, Fe = (e, t) => o => o(Pe({
 					draftKey: e,
 					formData: t
-				})), He = Object(r.a)(pe.u), Ue = e => {
+				})), Ue = Object(r.a)(pe.u), He = e => {
 					let {
 						commentId: t,
 						commentMode: o,
@@ -664,7 +664,7 @@
 					} = e;
 					return async (e, c) => {
 						const i = c();
-						i.user.account && (V.c(i), e(He({
+						i.user.account && (V.c(i), e(Ue({
 							commentId: t,
 							commentsPageKey: n,
 							draftKey: r,
@@ -824,7 +824,7 @@
 						[e]: {
 							sendReplies: s
 						}
-					})), (await Object(H.q)(r(), e, s)).ok || t(Object(ue.j)({
+					})), (await Object(U.q)(r(), e, s)).ok || t(Object(ue.j)({
 						[e]: {
 							sendReplies: !s
 						}
@@ -1177,8 +1177,8 @@
 				K = o("./src/reddit/selectors/activeModalId.ts"),
 				A = o("./src/reddit/selectors/comments.ts"),
 				F = o("./src/reddit/selectors/experiments/commentSearchPdp.ts"),
-				H = o("./src/reddit/selectors/moderatorPermissions.ts"),
-				U = o("./src/reddit/selectors/posts.ts"),
+				U = o("./src/reddit/selectors/moderatorPermissions.ts"),
+				H = o("./src/reddit/selectors/posts.ts"),
 				B = o("./src/reddit/selectors/tooltip.ts"),
 				G = o("./src/reddit/selectors/user.ts"),
 				W = o("./src/reddit/components/CommentSort/CommentSort.m.less"),
@@ -1278,22 +1278,22 @@
 						let {
 							postId: o
 						} = t;
-						const n = Object(H.m)(e, {
+						const n = Object(U.m)(e, {
 							postId: o
 						});
 						return !!n && n.posts
 					},
-					post: U.G,
-					postPermalink: U.F,
+					post: H.G,
+					postPermalink: H.F,
 					showCommentHighlighter: (e, t) => {
 						let {
 							postId: o
 						} = t;
 						const n = Object(G.w)(e),
-							r = !!Object(H.m)(e, {
+							r = !!Object(U.m)(e, {
 								postId: o
 							}),
-							s = Object(U.G)(e, {
+							s = Object(H.G)(e, {
 								postId: o
 							});
 						return (r || n) && !!s && !!s.previousVisits && s.previousVisits.length > 0
@@ -1368,7 +1368,7 @@
 						suggestedSort: _,
 						showTooltip: I,
 						toggleContestModeModal: N
-					} = this.props, P = f.contestMode, R = c.bucketed && !!O.search, K = !O.search.includes(d.w.CONFIDENCE), A = S === d.w.CONFIDENCE && K, F = b && !A, H = d.y[S], U = H ? H() : "", B = _ && S === _ && !A ? this.addSuggestedLabel(U) : U, G = P ? n.fbt._("End contest mode?", null, {
+					} = this.props, P = f.contestMode, R = c.bucketed && !!O.search, K = !O.search.includes(d.w.CONFIDENCE), A = S === d.w.CONFIDENCE && K, F = b && !A, U = d.y[S], H = U ? U() : "", B = _ && S === _ && !A ? this.addSuggestedLabel(H) : H, G = P ? n.fbt._("End contest mode?", null, {
 						hk: "2AkJRZ"
 					}) : n.fbt._("Start contest?", null, {
 						hk: "2PQPOu"
@@ -1620,16 +1620,16 @@
 					bucketed: o
 				} = e.experiment, l = Object(y.a)(), u = Object(C.a)(), h = (null == l ? void 0 : l.queryParams.q) || "", [v, R] = Object(r.useState)(h), [D, L] = Object(r.useState)(t), K = Object(c.d)(), A = Object(r.useRef)(null), F = Object(c.e)(e => Object(O.h)(e, {
 					pageLayer: l
-				})), H = Object(c.e)(e => Object(O.s)(e, {
+				})), U = Object(c.e)(e => Object(O.s)(e, {
 					pageLayer: l
-				})), U = Object(c.e)(e => Object(S.j)(e));
+				})), H = Object(c.e)(e => Object(S.j)(e));
 				var B, G;
 
 				function W() {
 					u(Object(x.p)(_.a.CommentSearchBar, P({
 						searchValue: v,
 						post: F,
-						subreddit: H
+						subreddit: U
 					}), j.a.SERP, l || void 0))
 				}
 
@@ -1639,7 +1639,7 @@
 						t = P({
 							searchValue: v,
 							post: F,
-							subreddit: H
+							subreddit: U
 						});
 					u(Object(x.p)(_.a.FullSearchButton, t, j.a.SERP, l || void 0));
 					const o = Object(f.b)(l),
@@ -1647,13 +1647,13 @@
 					K(Object(p.d)({
 						key: n,
 						options: t,
-						subredditName: null == H ? void 0 : H.name,
+						subredditName: null == U ? void 0 : U.name,
 						postId: F.id
 					}));
 					const r = Object(a.a)(e, t);
 					K(Object(i.b)(Object(g.b)(r), {
 						...o,
-						isOverlay: U,
+						isOverlay: H,
 						scrollOnLoad: !0
 					}))
 				}
@@ -2168,4 +2168,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f.4625b4d908d2fd3fbecc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f.bc5d0bea6bb4c91e932e.js.map

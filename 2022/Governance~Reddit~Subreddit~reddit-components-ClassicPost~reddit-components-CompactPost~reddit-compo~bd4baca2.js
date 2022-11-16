@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.743b0a913cdb1f003ce4.js
-// Retrieved at 11/16/2022, 10:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.4bafc9d48b3cd6ae90d8.js
+// Retrieved at 11/16/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, s) {
@@ -323,7 +323,7 @@
 				G = s("./node_modules/deep-diff/index.js"),
 				q = s("./src/lib/env/index.ts");
 			const B = new Set(["authorFlair.cssClass", "posts.adSupplementaryText", "posts.allAwardings", "posts.approvedAtUTC", "posts.approvedBy", "posts.attributionInfo", "posts.audioRoom", "posts.bannedAtUTC", "posts.bannedBy", "posts.collapsedBecauseCrowdControl", "posts.ignoreReports", "posts.isApproved", "posts.isAuthorPremium", "posts.isEligibleForLinkedPosts", "posts.isEligibleForQASchema", "posts.isFollowed", "posts.isPinned", "posts.isReactAllowed", "posts.isRemoved", "posts.isSpam", "posts.lastAuthorModNote", "posts.modQueueTriggers", "posts.modReportsDismissed", "posts.pollData", "posts.predictionTournament", "posts.previewComments", "posts.modReports", "posts.numReports", "posts.reactedFrom", "posts.removedBy", "posts.removedByCategory", "posts.topAwardedType", "posts.userReports", "posts.userReportsDismissed", "posts.modReasonBy", "subreddits.answerableQuestions", "subreddits.freeFormReports", "subreddits.isSubscribed", "authorFlair.richtext", "authorFlair.text", "posts.collectionIds", "posts.liveCommentsWebsocket", "posts.thumbnail.url", "posts.discussionType", "posts.eventsOnRender", "posts.flair", "posts.gildings", "posts.media", "posts.goldCount", "posts.sendReplies", "posts.score", "posts.sendReplies", "posts.source.url", "posts.source.outboundUrl", "posts.source.outboundUrlCreated", "posts.source.outboundUrlExpiration", "profiles.acceptFollowers", "profiles.communityIcon", "profiles.icon.url", "posts.upvoteRatio", "subreddits.acceptFollowers", "subreddits.allowChatPostCreation", "subreddits.communityIcon", "subreddits.icon.url", "subreddits.isChatPostFeatureEnabled", "subreddits.primaryColor", "subreddits.subscribers"]),
-				H = (e, t) => {
+				W = (e, t) => {
 					const s = {},
 						r = {};
 					Object.keys(e).forEach(i => {
@@ -351,7 +351,7 @@
 					}
 				};
 
-			function W(e) {
+			function H(e) {
 				let {
 					gatewayResponse: t,
 					normalizedGqlResponse: s,
@@ -363,7 +363,7 @@
 						allDiffs: e,
 						issueCounts: i,
 						totalIssues: o
-					} = H(t, s);
+					} = W(t, s);
 					console.groupCollapsed(`diff: ${o} issues`), console.log("lhs = gateway\nrhs = gql");
 					for (const t in e) {
 						if (console.groupCollapsed(`${t}: ${i[t]} issues`), i[t] > 0)
@@ -383,7 +383,7 @@
 						allDiffs: e,
 						issueCounts: r,
 						totalIssues: i
-					} = H(t, s);
+					} = W(t, s);
 					if (i <= 0) return;
 					V.l(t => {
 						t.setExtra("info", {
@@ -402,14 +402,14 @@
 			const K = e => {
 					return Object(X.c)(e, {
 						experimentEligibilitySelector: X.a,
-						experimentName: Q.rc
-					}) === Q.Hd
+						experimentName: Q.sc
+					}) === Q.Id
 				},
 				J = e => {
 					return Object(X.c)(e, {
 						experimentEligibilitySelector: X.a,
-						experimentName: Q.sc
-					}) === Q.Hd
+						experimentName: Q.tc
+					}) === Q.Id
 				};
 			var Z = s("./src/reddit/selectors/listings.ts"),
 				ee = s("./src/reddit/selectors/profile.ts"),
@@ -498,7 +498,7 @@
 							const {
 								data: e
 							} = t.body, s = U(e);
-							W({
+							H({
 								gatewayResponse: {
 									authorFlair: M.authorFlair,
 									pinned: M.pinned,
@@ -613,7 +613,7 @@
 							const {
 								data: e
 							} = t.body, s = U(e);
-							W({
+							H({
 								gatewayResponse: {
 									authorFlair: P.authorFlair,
 									pinned: P.pinned,
@@ -996,7 +996,7 @@
 						method: r.ob.GET
 					}))(i());
 					n.ok ? e(L(_(n.body))) : e(A(n.error))
-				}, R = "POST_DRAFT__SAVE_DRAFT_PENDING", M = "POST_DRAFT__SAVE_DRAFT_SUCCEEDED", U = "POST_DRAFT__SAVE_DRAFT_FAILED", V = "POST_DRAFT__SAVE_DRAFT_VALIDATION_FAILED", G = "POST_DRAFT__SAVE_DRAFT_SUBMIT_VALIDATION_FAILED", q = "POST_DRAFT__SAVE_DRAFT_CAPTCHA_REQUIRED", B = "POST_CREATION__TOGGLE_DRAFT_IS_PUBLIC", H = Object(o.a)(R), W = Object(o.a)(M), $ = Object(o.a)(U), z = Object(o.a)(V), Y = Object(o.a)(G), Q = Object(o.a)(q), X = Object(o.a)(B), K = e => async (t, s, o) => {
+				}, R = "POST_DRAFT__SAVE_DRAFT_PENDING", M = "POST_DRAFT__SAVE_DRAFT_SUCCEEDED", U = "POST_DRAFT__SAVE_DRAFT_FAILED", V = "POST_DRAFT__SAVE_DRAFT_VALIDATION_FAILED", G = "POST_DRAFT__SAVE_DRAFT_SUBMIT_VALIDATION_FAILED", q = "POST_DRAFT__SAVE_DRAFT_CAPTCHA_REQUIRED", B = "POST_CREATION__TOGGLE_DRAFT_IS_PUBLIC", W = Object(o.a)(R), H = Object(o.a)(M), $ = Object(o.a)(U), z = Object(o.a)(V), Y = Object(o.a)(G), Q = Object(o.a)(q), X = Object(o.a)(B), K = e => async (t, s, o) => {
 					let {
 						apiContext: n
 					} = o;
@@ -1006,7 +1006,7 @@
 					if (m || b) return;
 					const f = Object(C.h)(c, e);
 					if (!f) return;
-					t(H(f)), T.g(c, f);
+					t(W(f)), T.g(c, f);
 					const h = await ((e, t, s) => Object(l.a)(Object(u.a)(e, [p.a]), {
 						endpoint: `${e.apiUrl}/api/v1/draft`,
 						method: s ? r.ob.PUT : r.ob.POST,
@@ -1027,7 +1027,7 @@
 							id: s,
 							draftsCount: r
 						} = Object(y.c)(h.body);
-						t(W({
+						t(H({
 							draftId: s,
 							draftsCount: r
 						})), e || t(Object(a.a)(f.destSubreddit, s, !1))
@@ -2151,7 +2151,7 @@
 			})), s.d(t, "a", (function() {
 				return G
 			})), s.d(t, "b", (function() {
-				return W
+				return H
 			}));
 			var r = s("./node_modules/fbt/lib/FbtPublic.js"),
 				i = s("./node_modules/lodash/pick.js"),
@@ -2366,7 +2366,7 @@
 							return Object(n.i)(.1, Object(C.a)(o()(e, "theme", "redditStyle", "data-redditstyle")).button)
 					}
 				},
-				H = p.a.wrapped(e => {
+				W = p.a.wrapped(e => {
 					const t = B(e),
 						s = d.a.createElement("span", {
 							className: e.className,
@@ -2381,7 +2381,7 @@
 					})
 				}, "MetaFlair", P.a);
 
-			function W(e) {
+			function H(e) {
 				const {
 					className: t,
 					disabled: s = !1,
@@ -2445,7 +2445,7 @@
 						});
 					case S.f.Nsfw:
 					case S.f.Spoiler:
-						return d.a.createElement(H, {
+						return d.a.createElement(W, {
 							className: t,
 							text: i.text,
 							type: i.type
@@ -3823,7 +3823,7 @@
 					layout: void 0,
 					sort: void 0
 				},
-				H = (e, t) => {
+				W = (e, t) => {
 					if (!t) return e;
 					const s = c()({
 							...t.account,
@@ -3850,7 +3850,7 @@
 					}
 					return o()(n, e) ? e : n
 				},
-				W = (e, t, s) => H(e, {
+				H = (e, t, s) => W(e, {
 					subreddit: {
 						[t]: {
 							...B,
@@ -3919,7 +3919,7 @@
 							layout: s,
 							subredditId: r
 						} = t.payload;
-						return W(e, r, {
+						return H(e, r, {
 							layout: s
 						})
 					}
@@ -4027,13 +4027,13 @@
 					case I.a:
 					case L.c:
 					case C.TOPIC_DATA_LOADED:
-						return t.payload && t.payload.preferences ? H(e, t.payload.preferences) : e;
+						return t.payload && t.payload.preferences ? W(e, t.payload.preferences) : e;
 					case I.q: {
 						const {
 							subredditId: s,
 							prefs: r
 						} = t.payload;
-						return W(e, s, r)
+						return H(e, s, r)
 					}
 					case j.d:
 					case T.d:
@@ -4066,7 +4066,7 @@
 					case f.v:
 					case f.B:
 					case f.A:
-						return t.payload && t.payload.response && t.payload.response.preferences ? H(e, t.payload.preferences) : e;
+						return t.payload && t.payload.response && t.payload.response.preferences ? W(e, t.payload.preferences) : e;
 					case I.n: {
 						const s = t.payload,
 							{
@@ -4145,4 +4145,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.743b0a913cdb1f003ce4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.4bafc9d48b3cd6ae90d8.js.map

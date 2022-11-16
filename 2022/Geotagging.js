@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.9ff10770fab66af37161.js
-// Retrieved at 11/16/2022, 10:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.a8fa5c005bdb951092ae.js
+// Retrieved at 11/16/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -96,8 +96,8 @@
 			const y = e => {
 				return Object(S.c)(e, {
 					experimentEligibilitySelector: S.a,
-					experimentName: _.lf
-				}) === _.Hd
+					experimentName: _.mf
+				}) === _.Id
 			};
 			var v = s("./src/reddit/selectors/recapGame.ts"),
 				C = s("./src/reddit/components/BackToTop/index.m.less"),
@@ -531,7 +531,7 @@
 				const t = Object(a.f)().getState(),
 					s = Object(h.a)(t, Object(o.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Xc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Xc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Xc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Yc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Yc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Yc.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(k, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -1666,7 +1666,7 @@
 				t.push(e), Object(b.Ib)(Z, t)
 			}
 
-			function X(e) {
+			function Y(e) {
 				const {
 					subreddit: t,
 					onClose: s
@@ -1755,7 +1755,7 @@
 				}))
 			}
 			const {
-				fbt: Y
+				fbt: X
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), Z = "geotagging-dismissed";
 
 			function $() {
@@ -1789,7 +1789,7 @@
 				function c(e) {
 					o(a + 1)
 				}
-				return e ? r.a.createElement("div", null, r.a.createElement(j, null), Y._("Error loading subreddits", null, {
+				return e ? r.a.createElement("div", null, r.a.createElement(j, null), X._("Error loading subreddits", null, {
 					hk: "4hQNVu"
 				})) : t ? r.a.createElement(r.a.Fragment, null, r.a.createElement(j, null), r.a.createElement(i.a, {
 					isLoading: !0,
@@ -1806,7 +1806,7 @@
 				}), r.a.createElement(i.a, {
 					isLoading: !0,
 					className: S.a.subredditGeotag
-				})) : a >= s.length ? r.a.createElement(v, null) : r.a.createElement(r.a.Fragment, null, r.a.createElement(j, null), s.map(e => r.a.createElement(X, {
+				})) : a >= s.length ? r.a.createElement(v, null) : r.a.createElement(r.a.Fragment, null, r.a.createElement(j, null), s.map(e => r.a.createElement(Y, {
 					key: e.id,
 					subreddit: e,
 					onClose: c
@@ -1865,11 +1865,11 @@
 				c = s("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(o.h)(e) && Object(a.f)(e),
-					experimentName: n.lc
+					experimentName: n.mc
 				}), i.a),
 				l = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(o.h)(e) && Object(a.f)(e),
-					experimentName: n.kc
+					experimentName: n.lc
 				}), i.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -1888,4 +1888,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.9ff10770fab66af37161.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.a8fa5c005bdb951092ae.js.map

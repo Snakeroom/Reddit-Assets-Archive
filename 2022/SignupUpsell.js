@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SignupUpsell.8b9a5d14da4f576d1295.js
-// Retrieved at 11/16/2022, 10:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SignupUpsell.d5ffa5239015980ec08f.js
+// Retrieved at 11/16/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SignupUpsell"], {
 		"./src/reddit/components/Upsell/SSOButton/index.m.less": function(e, t, s) {
@@ -107,18 +107,18 @@
 				});
 			var E = s("./src/reddit/hooks/promo/useIsSignupUpsellVariantEligible.ts"),
 				O = s("./src/reddit/icons/svgs/AppleLogo/index.tsx"),
-				N = s("./src/reddit/icons/svgs/Close/index.tsx"),
-				B = s("./src/reddit/icons/svgs/GoogleLogo/index.tsx"),
-				w = s("./src/reddit/selectors/experiments/signupUpsellExperiment.ts"),
-				L = s("./src/reddit/components/Upsell/SignupUpsell/index.m.less"),
-				R = s.n(L);
-			const S = {
+				S = s("./src/reddit/icons/svgs/Close/index.tsx"),
+				N = s("./src/reddit/icons/svgs/GoogleLogo/index.tsx"),
+				B = s("./src/reddit/selectors/experiments/signupUpsellExperiment.ts"),
+				w = s("./src/reddit/components/Upsell/SignupUpsell/index.m.less"),
+				L = s.n(w);
+			const k = {
 					S: "small",
 					L: "large"
 				},
-				k = "d2x_geo_upsell_tier_0",
-				I = "d2x_geo_upsell_tier_1",
-				y = "d2x_geo_upsell_tier_2";
+				I = "d2x_geo_upsell_tier_0",
+				y = "d2x_geo_upsell_tier_1",
+				U = "d2x_geo_upsell_tier_2";
 			t.default = function(e) {
 				let {
 					onDismiss: t,
@@ -137,22 +137,22 @@
 					f = () => {
 						g(), m(Object(c.openRegisterModal)())
 					},
-					L = function() {
-						const e = Object(i.e)(w.b),
-							t = Object(i.e)(w.d),
-							s = Object(i.e)(w.f),
-							l = Object(E.a)(b.Rc.Bottom_sheet),
-							o = Object(E.a)(b.Rc.Bottom_cell),
-							c = Object(E.a)(b.Rc.Bottom_cell_dismissible),
-							r = Object(E.a)(b.Rc.Bottom_cell_dismissible_immediate_trigger),
-							a = Object(E.a)(b.Rc.Bottom_cell_signup_upsell_copy),
-							d = Object(E.a)(b.Rc.Bottom_cell_surprise_install_copy);
+					w = function() {
+						const e = Object(i.e)(B.b),
+							t = Object(i.e)(B.d),
+							s = Object(i.e)(B.f),
+							l = Object(E.a)(b.Sc.Bottom_sheet),
+							o = Object(E.a)(b.Sc.Bottom_cell),
+							c = Object(E.a)(b.Sc.Bottom_cell_dismissible),
+							r = Object(E.a)(b.Sc.Bottom_cell_dismissible_immediate_trigger),
+							a = Object(E.a)(b.Sc.Bottom_cell_signup_upsell_copy),
+							d = Object(E.a)(b.Sc.Bottom_cell_surprise_install_copy);
 						let p;
-						if (e) p = k;
-						else if (t) p = I;
+						if (e) p = I;
+						else if (t) p = y;
 						else {
 							if (!s) throw new Error("Not eligible for signup upsell");
-							p = y
+							p = U
 						}
 						const u = `${n.a.assetPath}/img/upsell/appQrCode/${p}/`;
 						if (l) return `${u}bottom_sheet.png`;
@@ -163,9 +163,9 @@
 						if (e && d) return `${u}bottom_cell_surprise_install_copy.png`;
 						throw new Error("Invalid variant for signup upsell")
 					}(),
-					U = Object(E.a)(b.Rc.Bottom_cell_signup_upsell_copy),
-					A = Object(E.a)(b.Rc.Bottom_cell_surprise_install_copy),
-					D = U ? l.fbt._("Come join us, we have snacks", null, {
+					R = Object(E.a)(b.Sc.Bottom_cell_signup_upsell_copy),
+					A = Object(E.a)(b.Sc.Bottom_cell_surprise_install_copy),
+					D = R ? l.fbt._("Come join us, we have snacks", null, {
 						hk: "1LUl2W"
 					}) : l.fbt._("Log in or sign up for the best experience", null, {
 						hk: "2LAHQy"
@@ -176,32 +176,32 @@
 						hk: "2NvKYa"
 					});
 				return o.createElement("div", {
-					className: Object(d.a)(R.a.wrapper, {
-						[R.a.small]: s === S.S,
-						[R.a.large]: s === S.L
+					className: Object(d.a)(L.a.wrapper, {
+						[L.a.small]: s === k.S,
+						[L.a.large]: s === k.L
 					})
 				}, t && o.createElement("button", {
 					"aria-label": l.fbt._("Close", null, {
 						hk: "3hZtiD"
 					}),
-					className: R.a.closeButton,
+					className: L.a.closeButton,
 					onClick: () => {
 						t(), u(h())
 					},
 					type: "button"
-				}, o.createElement(N.a, null)), o.createElement("div", {
-					className: R.a.title
+				}, o.createElement(S.a, null)), o.createElement("div", {
+					className: L.a.title
 				}, D), o.createElement("div", {
-					className: R.a.bottom
+					className: L.a.bottom
 				}, o.createElement("div", {
-					className: R.a.left
+					className: L.a.left
 				}, o.createElement(_, {
-					Icon: B.a,
+					Icon: N.a,
 					onClick: () => {
 						f(), u(j(x.Google))
 					},
 					size: p.d.M,
-					iconClassName: R.a.googleIcon
+					iconClassName: L.a.googleIcon
 				}, l.fbt._("Continue with Google", null, {
 					hk: "1jIIEZ"
 				})), o.createElement(_, {
@@ -210,14 +210,14 @@
 						f(), u(j(x.Apple))
 					},
 					size: p.d.M,
-					iconClassName: R.a.appleIcon,
-					className: R.a.appleButton
+					iconClassName: L.a.appleIcon,
+					className: L.a.appleButton
 				}, l.fbt._("Continue with Apple", null, {
 					hk: "2Jn3ON"
 				})), o.createElement("div", {
-					className: R.a.bottomWrapper
+					className: L.a.bottomWrapper
 				}, o.createElement(p.j, {
-					className: Object(d.a)(R.a.linkButton, R.a.emailButton),
+					className: Object(d.a)(L.a.linkButton, L.a.emailButton),
 					onClick: () => {
 						f(), u(j(x.Reddit))
 					},
@@ -226,7 +226,7 @@
 				}, l.fbt._("Continue with Email", null, {
 					hk: "2zvL1n"
 				})), o.createElement(p.j, {
-					className: R.a.linkButton,
+					className: L.a.linkButton,
 					onClick: () => {
 						g(), m(Object(c.openLoginModal)()), u(v())
 					},
@@ -235,17 +235,17 @@
 				}, l.fbt._("Log In", null, {
 					hk: "3HqaJR"
 				})))), o.createElement("div", {
-					className: R.a.divider
+					className: L.a.divider
 				}), o.createElement("div", {
-					className: R.a.right
+					className: L.a.right
 				}, o.createElement("img", {
 					alt: l.fbt._("QR Code to get the Reddit app", null, {
 						hk: "2uYhIL"
 					}),
-					className: R.a.img,
-					src: L
+					className: L.a.img,
+					src: w
 				}), o.createElement("div", {
-					className: R.a.downloadAppLabel
+					className: L.a.downloadAppLabel
 				}, H))))
 			}
 		},
@@ -335,9 +335,9 @@
 					experimentName: e,
 					experimentEligibilitySelector: r,
 					throttledVariants: {
-						[l.Rc.Bottom_cell_dismissible]: e,
-						[l.Rc.Bottom_cell_dismissible_immediate_trigger]: e,
-						[l.Rc.Bottom_sheet]: e
+						[l.Sc.Bottom_cell_dismissible]: e,
+						[l.Sc.Bottom_cell_dismissible_immediate_trigger]: e,
+						[l.Sc.Bottom_sheet]: e
 					},
 					expEventOverride: t
 				})
@@ -351,4 +351,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SignupUpsell.8b9a5d14da4f576d1295.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SignupUpsell.d5ffa5239015980ec08f.js.map

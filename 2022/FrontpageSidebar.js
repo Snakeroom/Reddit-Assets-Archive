@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.46d56dd129c167371f03.js
-// Retrieved at 11/16/2022, 10:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.1da4479c81e1eff689cc.js
+// Retrieved at 11/16/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -283,8 +283,8 @@
 				Q = n("./src/reddit/components/SubredditIcon/index.tsx"),
 				H = n("./src/reddit/constants/localStorage.ts"),
 				J = n("./src/reddit/contexts/ApiContext.tsx"),
-				K = n("./src/reddit/featureFlags/component.tsx"),
-				Z = n("./src/reddit/helpers/localStorage/index.ts"),
+				Z = n("./src/reddit/featureFlags/component.tsx"),
+				K = n("./src/reddit/helpers/localStorage/index.ts"),
 				X = n("./src/reddit/helpers/name/index.ts"),
 				z = n("./src/lib/makeApiRequest/index.ts"),
 				V = n("./src/lib/omitHeaders/index.ts"),
@@ -306,13 +306,13 @@
 					}
 				}
 				async getSubredditForAdoption() {
-					let e = ie.cachedData || Object(Z.B)(H.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
+					let e = ie.cachedData || Object(K.B)(H.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
 					if (!e || Date.now() - e.fetchedAt > re) {
 						const t = await $(this.props.apiContext());
 						t.ok && (e = {
 							subreddits: t.body.data.subreddits.map(e => e.name),
 							fetchedAt: Date.now()
-						}, Object(Z.Ib)(H.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
+						}, Object(K.Ib)(H.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
 					}
 					return ie.cachedData = e, e ? e.subreddits : []
 				}
@@ -351,7 +351,7 @@
 				}
 			}
 			ie.cachedData = null;
-			var oe = Object(K.a)("srAdoptionWeek", Object(J.b)(ie)),
+			var oe = Object(Z.a)("srAdoptionWeek", Object(J.b)(ie)),
 				de = n("./src/reddit/components/TopSubredditsWidget/Container.tsx"),
 				ce = n("./src/reddit/actions/post.ts"),
 				le = n("./src/reddit/components/MiniPost/index.tsx"),
@@ -685,14 +685,14 @@
 			}
 			var Ue = n("./src/reddit/selectors/experiments/utils.ts");
 			const qe = Object(u.a)(e => Object(Ge.c)(e, {
-					experimentName: De.ke,
+					experimentName: De.le,
 					experimentEligibilitySelector: Ge.a
 				}), Ue.a),
-				Qe = Object(u.a)(qe, e => e === De.ne.Enabled);
+				Qe = Object(u.a)(qe, e => e === De.oe.Enabled);
 			var He = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Je = n("./src/reddit/selectors/user.ts");
-			var Ke = n("./src/reddit/selectors/seo/linksModule.ts"),
-				Ze = n("./src/reddit/selectors/subreddit.ts"),
+			var Ze = n("./src/reddit/selectors/seo/linksModule.ts"),
+				Ke = n("./src/reddit/selectors/subreddit.ts"),
 				Xe = n("./src/reddit/selectors/subredditLeaderboard.ts");
 			n("./src/reddit/components/TopSubredditsWidget/index.tsx"), n("./src/reddit/components/TopSubredditsWidget/SubredditRankItemPlaceholder.tsx");
 			var ze = n("./src/reddit/helpers/createBannerProperties/index.ts"),
@@ -704,22 +704,22 @@
 					isLoggedIn: Je.Q,
 					shouldShowLocalRecommendations: e => !1 !== e.user.prefs.showLocationBasedRecommendations,
 					currentUser: Je.l,
-					frontpageLinks: Ke.b,
+					frontpageLinks: Ze.b,
 					isOver18: Je.lb,
 					isInBFFSLeaderboardExperiment: function(e) {
 						return Me(e) === De.q.RotateEven
 					},
 					bffsLeaderboardVariant: Me,
 					inRpanTopVideoEntrypointExperiment: He.e,
-					rankings: e => Object(Ze.T)(e, Ye),
+					rankings: e => Object(Ke.T)(e, Ye),
 					shouldShowTopicsWidget: e => {
 						const t = Object(He.e)(e),
-							n = !!Object(Ze.T)(e, Ye);
+							n = !!Object(Ke.T)(e, Ye);
 						return (!t || !n) && function(e) {
 							return Object(Ge.c)(e, {
 								experimentEligibilitySelector: Je.R,
-								experimentName: De.Kc
-							}) === De.Hd
+								experimentName: De.Lc
+							}) === De.Id
 						}(e)
 					},
 					isNavbarLikeMwebEnabled: l.a,
@@ -2228,4 +2228,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.46d56dd129c167371f03.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.1da4479c81e1eff689cc.js.map

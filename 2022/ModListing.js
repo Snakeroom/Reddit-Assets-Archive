@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.bdfb91773577ac60b35a.js
-// Retrieved at 11/16/2022, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.abf3d07181972e6b495c.js
+// Retrieved at 11/16/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, r) {
@@ -2085,7 +2085,7 @@
 				const b = Object(o.e)(e => e.subreddits.survey[r]),
 					p = Object(o.e)(e => e.subreddits.progressModule[r]),
 					h = Object(o.e)(l.a),
-					f = h !== c.Je.NewModule;
+					f = h !== c.Ke.NewModule;
 				return (null === (s = null == p ? void 0 : p.cards) || void 0 === s ? void 0 : s.length) > 0 && f ? i.a.createElement(m, {
 					closeModuleOnMount: !!t && t !== u.g.Large,
 					subredditId: r,
@@ -2147,15 +2147,15 @@
 			const o = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: i.R,
-						experimentName: n.nd
+						experimentName: n.od
 					});
-					return !(!t || Object(n.pg)(t))
+					return !(!t || Object(n.qg)(t))
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: i.R,
-						experimentName: n.nd
-					}) === n.Ld.ListingEnabled
+						experimentName: n.od
+					}) === n.Md.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/experiments/recapLeadUpGame.ts": function(e, t, r) {
@@ -2173,8 +2173,8 @@
 			const a = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: i.a,
-						experimentName: n.jf
-					}) === n.Hd
+						experimentName: n.kf
+					}) === n.Id
 				},
 				c = Object(d.a)(o.R, (e, t) => {
 					let {
@@ -2185,8 +2185,8 @@
 				u = (e, t) => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: e => c(e, t),
-						experimentName: n.kf
-					}) === n.Hd
+						experimentName: n.lf
+					}) === n.Id
 				}
 		},
 		"./src/reddit/selectors/recapGame.ts": function(e, t, r) {
@@ -2211,4 +2211,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.bdfb91773577ac60b35a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.abf3d07181972e6b495c.js.map
