@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.586baa7114c41cc5786c.js
-// Retrieved at 11/16/2022, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.c5fd54c354cc74179db5.js
+// Retrieved at 11/16/2022, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -34519,7 +34519,7 @@
 						submissionType: n,
 						subreddit: o
 					} = this.props;
-					return r.a.createElement("div", null, t && this.renderEditor(), t && n === h.bc.POLL && r.a.createElement("div", {
+					return r.a.createElement("div", null, t && this.renderEditor(), n === h.bc.POLL && r.a.createElement("div", {
 						className: Kd.a.pollCreator
 					}, r.a.createElement(Hd, {
 						className: Kd.a.govToggle
@@ -39511,4 +39511,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.586baa7114c41cc5786c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.c5fd54c354cc74179db5.js.map
