@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.c83ca5fedbb058f8c185.js
-// Retrieved at 11/16/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.586baa7114c41cc5786c.js
+// Retrieved at 11/16/2022, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -25258,14 +25258,14 @@
 						...u,
 						variables: t
 					});
-					return !!Object(i.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(g.I.Talk)
+					return !!Object(i.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(g.J.Talk)
 				}, C = async (e, t) => {
 					var n, o;
 					const r = await Object(s.a)(e, {
 						...m,
 						variables: t
 					});
-					return !!Object(i.c)(r) && (null !== (o = null === (n = r.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(g.I.Talk)
+					return !!Object(i.c)(r) && (null !== (o = null === (n = r.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(g.J.Talk)
 				}, x = async e => {
 					var t;
 					const n = await Object(s.a)(e, l);
@@ -25309,10 +25309,10 @@
 						hk: "2mGf21"
 					})
 				}, S = e => e.data.prepareAudioRoom || e.data.prepareAudioRoomOnProfile, T = {
-					[g.K.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+					[g.L.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[g.K.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
+					[g.L.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					})
 				}, w = (e, t) => Object(s.a)(e, {
@@ -30566,12 +30566,12 @@
 						});
 						if (!e.ok) return E(Object(O.f)({
 							kind: R.b.Error,
-							text: w.b[B.K.ServiceError]
+							text: w.b[B.L.ServiceError]
 						})), void v(!1);
 						const t = Object(w.i)(e.body);
 						if (null == t ? void 0 : t.errorState) return E(Object(O.f)({
 							kind: R.b.Error,
-							text: w.b[t.errorState.code] || w.b[B.K.ServiceError]
+							text: w.b[t.errorState.code] || w.b[B.L.ServiceError]
 						})), void v(!1);
 						if ((null == t ? void 0 : t.okState) && t.okState.postId && i)
 							if (i.type === N.g.User) {
@@ -39511,4 +39511,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.c83ca5fedbb058f8c185.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.586baa7114c41cc5786c.js.map

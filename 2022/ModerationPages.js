@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.f553570cd4fd3d98172f.js
-// Retrieved at 11/16/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.0256a920da34d6912d86.js
+// Retrieved at 11/16/2022, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -4393,7 +4393,7 @@
 							isStartImmediately: !0,
 							subredditId: e,
 							predictionDrafts: c,
-							currency: b.R.Tokens,
+							currency: b.S.Tokens,
 							tokenIcon: l
 						}),
 						m = Object(j.a)(u);
@@ -8734,7 +8734,7 @@
 						const e = E({
 							username: I,
 							profileSort: j,
-							filter: te.L.Posts,
+							filter: te.M.Posts,
 							shouldUseGqlCursor: !0
 						});
 						D = null === (x = null === (v = null === (o = null == (L = await Object(K.a)("profilePosts", () => O(s.gqlContext(), e))) ? void 0 : L.body) || void 0 === o ? void 0 : o.data) || void 0 === v ? void 0 : v.redditorInfoByName) || void 0 === x ? void 0 : x.__typename
@@ -8770,7 +8770,7 @@
 						const e = E({
 								username: I,
 								profileSort: j,
-								filter: te.L.Posts
+								filter: te.M.Posts
 							}),
 							t = await O(s.gqlContext(), e);
 						if (t.ok && t.body) {
@@ -8846,7 +8846,7 @@
 						const e = E({
 							username: b,
 							profileSort: m,
-							filter: te.L.Posts,
+							filter: te.M.Posts,
 							loadMoreData: h,
 							shouldUseGqlCursor: !0
 						});
@@ -8884,7 +8884,7 @@
 						const e = E({
 								username: b,
 								profileSort: m,
-								filter: te.L.Posts,
+								filter: te.M.Posts,
 								loadMoreData: h
 							}),
 							t = await O(o(), e);
@@ -17724,9 +17724,9 @@
 						modQueueSettings: F
 					} = e;
 					return {
-						allowGalleries: v.includes(h.I.Gallery),
-						allowImages: v.includes(h.I.Image),
-						allowPolls: v.includes(h.I.Poll),
+						allowGalleries: v.includes(h.J.Gallery),
+						allowImages: v.includes(h.J.Image),
+						allowPolls: v.includes(h.J.Poll),
 						archivePostsEnabled: r,
 						allowDiscovery: o,
 						allowChatPostCreation: i,
@@ -17780,19 +17780,19 @@
 				},
 				y = e => e ? O.indexOf(e) : 0,
 				C = e => {
-					if (e) return Object.values(h.P).find(t => t === (null == e ? void 0 : e.toUpperCase()))
+					if (e) return Object.values(h.Q).find(t => t === (null == e ? void 0 : e.toUpperCase()))
 				},
 				j = e => {
 					if (e) return Object.values(h.g).find(t => t === (null == e ? void 0 : e.toUpperCase()))
 				},
 				k = e => {
-					if (e) return Object.values(h.X).find(t => t === (null == e ? void 0 : e.toUpperCase()))
+					if (e) return Object.values(h.Y).find(t => t === (null == e ? void 0 : e.toUpperCase()))
 				},
 				I = e => {
-					if (e) return e > 0 ? h.S.Enabled : h.S.Disabled
+					if (e) return e > 0 ? h.T.Enabled : h.T.Disabled
 				},
 				S = e => {
-					if (e) return e === h.S.Enabled ? 1 : 0
+					if (e) return e === h.T.Enabled ? 1 : 0
 				},
 				w = e => {
 					let {
@@ -25805,24 +25805,24 @@
 					})
 				},
 				_ = {
-					[r.P.Low]: s.fbt._("Low", null, {
+					[r.Q.Low]: s.fbt._("Low", null, {
 						hk: "4k3iTe"
 					}),
-					[r.P.High]: s.fbt._("High (default)", null, {
+					[r.Q.High]: s.fbt._("High (default)", null, {
 						hk: "2GOHsH"
 					}),
-					[r.P.All]: s.fbt._("All", null, {
+					[r.Q.All]: s.fbt._("All", null, {
 						hk: "gl6gc"
 					})
 				},
 				g = {
-					[r.P.Low]: s.fbt._("Low (default)", null, {
+					[r.Q.Low]: s.fbt._("Low (default)", null, {
 						hk: "2tqJd7"
 					}),
-					[r.P.High]: s.fbt._("High", null, {
+					[r.Q.High]: s.fbt._("High", null, {
 						hk: "ABfkc"
 					}),
-					[r.P.All]: s.fbt._("All", null, {
+					[r.Q.All]: s.fbt._("All", null, {
 						hk: "3bPDOM"
 					})
 				},
@@ -27218,8 +27218,8 @@
 						spamSelfposts: j,
 						spoilersEnabled: I,
 						suggestedCommentSort: S
-					} = t, w = Object(a.e)(He.b), N = Object(a.e)(Ge.c), P = Object(a.e)(Ge.a), R = Object(a.e)(e => Object(Be.a)(e, d)), A = Object(a.e)(qe.h), M = Object(Ue.a)(Fe.Cf) === Fe.Id, L = w && R, D = (null == _ ? void 0 : _.allowedMediaTypes) || [], F = null === S ? "nullValue" : S, U = Object(o.useCallback)(() => s(!l, "archivePostsEnabled"), [l, s]), B = e => e.toUpperCase() === We.P.All, H = e => {
-						const n = B(t[e]) ? We.P.Low : We.P.All;
+					} = t, w = Object(a.e)(He.b), N = Object(a.e)(Ge.c), P = Object(a.e)(Ge.a), R = Object(a.e)(e => Object(Be.a)(e, d)), A = Object(a.e)(qe.h), M = Object(Ue.a)(Fe.Cf) === Fe.Id, L = w && R, D = (null == _ ? void 0 : _.allowedMediaTypes) || [], F = null === S ? "nullValue" : S, U = Object(o.useCallback)(() => s(!l, "archivePostsEnabled"), [l, s]), B = e => e.toUpperCase() === We.Q.All, H = e => {
+						const n = B(t[e]) ? We.Q.Low : We.Q.All;
 						s(n, e)
 					};
 					return i.a.createElement(k.a, null, i.a.createElement(C, null, i.a.createElement(k.b, null, G.fbt._("Post and Comment settings", null, {
@@ -78233,4 +78233,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.f553570cd4fd3d98172f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.0256a920da34d6912d86.js.map
