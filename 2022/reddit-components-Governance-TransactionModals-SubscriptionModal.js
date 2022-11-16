@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.0d8b4e3bff8a696dde70.js
-// Retrieved at 11/16/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.1ade5624663592522faf.js
+// Retrieved at 11/16/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-SubscriptionModal"], {
 		"./src/reddit/components/Governance/TokenAmount/index.m.less": function(e, t, n) {
@@ -102,7 +102,7 @@
 		"./src/reddit/components/Governance/TransactionModals/SubscriptionModal/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "default", (function() {
-				return C
+				return k
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				a = n("./node_modules/react/index.js"),
@@ -166,7 +166,7 @@
 				]
 			});
 
-			function C(e) {
+			function k(e) {
 				const {
 					price: t,
 					subredditId: n
@@ -322,21 +322,6 @@
 				type: "function"
 			}]
 		},
-		"./src/reddit/hooks/useApiContext.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return r
-			}));
-			var s = n("./node_modules/react/index.js"),
-				a = n("./src/reddit/contexts/ApiContext.tsx");
-
-			function r() {
-				const {
-					apiContext: e
-				} = Object(s.useContext)(a.a);
-				return e
-			}
-		},
 		"./src/reddit/selectors/experiments/mainnet.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
@@ -361,4 +346,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.0d8b4e3bff8a696dde70.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.1ade5624663592522faf.js.map

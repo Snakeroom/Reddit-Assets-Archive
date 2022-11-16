@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.0d889b26f6d9b005a29f.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.a38233d64fcaba34fcba.js
+// Retrieved at 11/16/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67"], {
 		"./src/reddit/components/Governance/TransactionModals/ApprovalModal/ApprovalBar.m.less": function(A, e, t) {
@@ -234,8 +234,8 @@
 				h = t("./node_modules/fbt/lib/FbtPublic.js"),
 				k = t("./src/lib/classNames/index.ts"),
 				b = t("./src/reddit/icons/svgs/Close/index.tsx"),
-				f = t("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/BaseModal.m.less"),
-				x = t.n(f);
+				x = t("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/BaseModal.m.less"),
+				f = t.n(x);
 			const C = () => h.fbt._("Continue in the Mobile App", null, {
 				hk: "2NW6Oz"
 			});
@@ -245,18 +245,18 @@
 					hk: "1VEmdd"
 				});
 				return a.a.createElement("div", {
-					className: Object(k.a)(x.a.container, A.className)
+					className: Object(k.a)(f.a.container, A.className)
 				}, a.a.createElement("header", {
-					className: x.a.header
+					className: f.a.header
 				}, a.a.createElement("div", {
-					className: x.a.title
+					className: f.a.title
 				}, e), a.a.createElement("button", {
-					className: x.a.closeButton,
+					className: f.a.closeButton,
 					onClick: A.onClose
 				}, a.a.createElement(b.a, {
-					className: x.a.closeIcon
+					className: f.a.closeIcon
 				}))), a.a.createElement("div", {
-					className: x.a.body
+					className: f.a.body
 				}, A.children))
 			}
 			var y = t("./src/reddit/controls/Button/index.tsx"),
@@ -539,9 +539,9 @@
 					subredditId: t,
 					transaction: h,
 					transactionIntent: k
-				} = A, b = Object(i.useRef)(!0), [f, x] = Object(p.a)(cA.LOADING_BACKUP, b), [C, B] = Object(p.a)(oA.NOT_LOADED, b), [y, w] = Object(p.a)(null, b), [X, v] = Object(p.a)("", b), R = Object(u.a)(), N = Object(m.a)(), j = Object(r.e)(e => Object(g.g)(e, A)).toLowerCase(), O = Object(r.e)(e => Object(I.b)(e, A.subredditId)), Q = Object(r.e)(E.b);
+				} = A, b = Object(i.useRef)(!0), [x, f] = Object(p.a)(cA.LOADING_BACKUP, b), [C, B] = Object(p.a)(oA.NOT_LOADED, b), [y, w] = Object(p.a)(null, b), [X, v] = Object(p.a)("", b), R = Object(u.a)(), N = Object(m.a)(), j = Object(r.e)(e => Object(g.g)(e, A)).toLowerCase(), O = Object(r.e)(e => Object(I.b)(e, A.subredditId)), Q = Object(r.e)(E.b);
 				Object(i.useEffect)(() => (A.transactionIsBlockedOnIOS ? D().then(A => {
-					A && Object(d.b)(A) ? x(cA.REQUEST_VAULT_PASSWORD) : M()
+					A && Object(d.b)(A) ? f(cA.REQUEST_VAULT_PASSWORD) : M()
 				}) : M(), () => {
 					b.current = !1
 				}), []);
@@ -560,12 +560,12 @@
 				}(R(), j).then(A => (w(A), B(oA.LOADED), A)).catch(A => {
 					console.error("Backup load failed", A), v(`Backup load failed: ${A}`), B(oA.FAILED)
 				})), M = async () => {
-					(await Object(s.n)(R(), k)).ok ? x(cA.PUSH_NOTIFICATION_SENT) : L()
+					(await Object(s.n)(R(), k)).ok ? f(cA.PUSH_NOTIFICATION_SENT) : L()
 				}, L = async () => {
-					await D() ? x(cA.REQUEST_VAULT_PASSWORD) : C === oA.FAILED ? (x(cA.TRANSACTION_FAILED), A.onTransactionFailure(X)) : x(cA.BACKUP_REQUIRED)
+					await D() ? f(cA.REQUEST_VAULT_PASSWORD) : C === oA.FAILED ? (f(cA.TRANSACTION_FAILED), A.onTransactionFailure(X)) : f(cA.BACKUP_REQUIRED)
 				}, V = async e => {
 					try {
-						x(cA.TRANSACTION_PENDING);
+						f(cA.TRANSACTION_PENDING);
 						const i = "function" == typeof h ? await h() : h;
 						if (!i) return;
 						const a = await Object(l.b)({
@@ -580,10 +580,10 @@
 						});
 						await A.onTransactionSuccess(a)
 					} catch (i) {
-						console.error("Error while submitting transaction", i), x(cA.TRANSACTION_FAILED), A.onTransactionFailure(i.toString())
+						console.error("Error while submitting transaction", i), f(cA.TRANSACTION_FAILED), A.onTransactionFailure(i.toString())
 					}
 				};
-				switch (f) {
+				switch (x) {
 					case cA.LOADING_BACKUP:
 					case cA.TRANSACTION_PENDING:
 						return a.a.createElement(q, {
@@ -921,12 +921,12 @@
 				h = t("./node_modules/@ethersproject/sha2/lib.esm/sha2.js"),
 				k = t("./node_modules/@ethersproject/sha2/lib.esm/types.js"),
 				b = t("./node_modules/@ethersproject/signing-key/lib.esm/index.js"),
-				f = t("./node_modules/@ethersproject/strings/lib.esm/utf8.js"),
-				x = t("./node_modules/@ethersproject/transactions/lib.esm/index.js"),
+				x = t("./node_modules/@ethersproject/strings/lib.esm/utf8.js"),
+				f = t("./node_modules/@ethersproject/transactions/lib.esm/index.js"),
 				C = t("./node_modules/@ethersproject/wordlists/lib.esm/wordlists.js");
 			const B = new(t("./node_modules/@ethersproject/logger/lib.esm/index.js").b)("BrokenHDNode/5.4.0"),
 				y = i.a.from("0xfffffffffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0364141"),
-				w = Object(f.f)("Bitcoin seed"),
+				w = Object(x.f)("Bitcoin seed"),
 				X = 2147483648;
 
 			function v(A) {
@@ -957,7 +957,7 @@
 						const A = new b.a(e);
 						Object(g.d)(this, "privateKey", A.privateKey), Object(g.d)(this, "publicKey", t || A.compressedPublicKey)
 					} else Object(g.d)(this, "privateKey", null), Object(g.d)(this, "publicKey", Object(I.i)(t));
-					Object(g.d)(this, "parentFingerprint", i), Object(g.d)(this, "fingerprint", Object(I.e)(Object(h.b)(Object(h.c)(this.publicKey)), 0, 4)), Object(g.d)(this, "address", Object(x.c)(this.publicKey)), Object(g.d)(this, "chainCode", a), Object(g.d)(this, "index", r), Object(g.d)(this, "depth", s), null == n ? (Object(g.d)(this, "mnemonic", null), Object(g.d)(this, "path", null)) : "string" == typeof n ? (Object(g.d)(this, "mnemonic", null), Object(g.d)(this, "path", n)) : (Object(g.d)(this, "mnemonic", n), Object(g.d)(this, "path", n.path))
+					Object(g.d)(this, "parentFingerprint", i), Object(g.d)(this, "fingerprint", Object(I.e)(Object(h.b)(Object(h.c)(this.publicKey)), 0, 4)), Object(g.d)(this, "address", Object(f.c)(this.publicKey)), Object(g.d)(this, "chainCode", a), Object(g.d)(this, "index", r), Object(g.d)(this, "depth", s), null == n ? (Object(g.d)(this, "mnemonic", null), Object(g.d)(this, "path", null)) : "string" == typeof n ? (Object(g.d)(this, "mnemonic", null), Object(g.d)(this, "path", n)) : (Object(g.d)(this, "mnemonic", n), Object(g.d)(this, "path", n.path))
 				}
 				get extendedKey() {
 					if (this.depth >= 256) throw new Error("Depth too large!");
@@ -1055,8 +1055,8 @@
 						return t[t.length - 1] <<= a, t[t.length - 1] |= r >> 8 - a, e.join(t.map(A => e.getWord(A)))
 					}(D(A, t = j(t)), t), Q._fromSeed(function(A, e) {
 						e || (e = "");
-						const t = Object(f.f)("mnemonic" + e, f.a.NFKD);
-						return Object(E.a)(Object(f.f)(A, f.a.NFKD), t, 2048, 64, "sha512")
+						const t = Object(x.f)("mnemonic" + e, x.a.NFKD);
+						return Object(E.a)(Object(x.f)(A, x.a.NFKD), t, 2048, 64, "sha512")
 					}(A, e), {
 						phrase: A,
 						path: "m",
@@ -1138,13 +1138,13 @@
 					sendEvent: d
 				}).connect(g), {
 					contractAddress: b,
-					contractABI: f,
-					contractMethod: x
+					contractABI: x,
+					contractMethod: f
 				} = n, C = {
 					apiContext: e,
-					contract: new a.ethers.Contract(b, f, k),
+					contract: new a.ethers.Contract(b, x, k),
 					contractAddress: b,
-					contractMethod: x,
+					contractMethod: f,
 					ethereumNetwork: E,
 					gasLimit: I,
 					pointsDetails: t,
@@ -1157,7 +1157,7 @@
 					let {
 						method: e
 					} = A;
-					return e === x
+					return e === f
 				});
 				return c && B ? V(C) : async function(A) {
 					let {
@@ -1196,20 +1196,20 @@
 						k = h.toNumber(),
 						b = new Date;
 					b.setHours(b.getHours() + 1);
-					const f = Math.round(b.getTime() / 1e3),
-						x = {
+					const x = Math.round(b.getTime() / 1e3),
+						f = {
 							from: p.address,
 							to: t,
 							value: i.a.from(0),
 							gas: i.a.from(n),
 							nonce: h,
 							data: m,
-							validUntilTime: i.a.from(f)
+							validUntilTime: i.a.from(x)
 						},
 						C = s.split(":"),
 						B = await u({
 							signer: p,
-							request: x,
+							request: f,
 							verifyingContract: d,
 							chainId: Number(C[1])
 						});
@@ -1219,7 +1219,7 @@
 							toContractAddress: t,
 							nonce: k,
 							populatedTransactionData: m,
-							validUntilTime: f
+							validUntilTime: x
 						},
 						signature: B,
 						subredditId: o
@@ -1349,7 +1349,22 @@
 					correlationId: A,
 					...Object(i.o)(t)
 				})
+		},
+		"./src/reddit/hooks/useApiContext.ts": function(A, e, t) {
+			"use strict";
+			t.d(e, "a", (function() {
+				return r
+			}));
+			var i = t("./node_modules/react/index.js"),
+				a = t("./src/reddit/contexts/ApiContext.tsx");
+
+			function r() {
+				const {
+					apiContext: A
+				} = Object(i.useContext)(a.a);
+				return A
+			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.0d889b26f6d9b005a29f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.a38233d64fcaba34fcba.js.map

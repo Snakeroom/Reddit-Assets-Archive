@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.b18b65304cd125001013.js
-// Retrieved at 11/16/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.493fea7c19a62d295a03.js
+// Retrieved at 11/16/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -2433,40 +2433,6 @@
 			e.exports = {
 				loggedInGoogleOneTap: "_2qW2MlTCwrBhUAXSCWhbPD"
 			}
-		},
-		"./src/reddit/components/Governance/GasFeesEducationalModal/async.tsx": function(e, t, n) {
-			"use strict";
-			var s = n("./node_modules/@loadable/component/dist/loadable.esm.js"),
-				r = n("./node_modules/react/index.js"),
-				o = n.n(r),
-				a = n("./src/reddit/components/GlobalModalContainer/registry.ts"),
-				i = n("./src/reddit/constants/modals.ts");
-			const c = Object(s.a)({
-				resolved: {},
-				chunkName: () => "reddit-components-Governance-GasFeesEducationalModal",
-				isReady(e) {
-					const t = this.resolve(e);
-					return !1 !== this.resolved[t] && !!n.m[t]
-				},
-				importAsync: () => n.e("reddit-components-Governance-GasFeesEducationalModal").then(n.bind(null, "./src/reddit/components/Governance/GasFeesEducationalModal/index.tsx")),
-				requireAsync(e) {
-					const t = this.resolve(e);
-					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
-				},
-				requireSync(e) {
-					const t = this.resolve(e);
-					return n(t)
-				},
-				resolve() {
-					return "./src/reddit/components/Governance/GasFeesEducationalModal/index.tsx"
-				}
-			}, {
-				ssr: !1
-			});
-			Object(a.b)(i.a.CRYPTO_GAS_FEES_EDUCATION, e => o.a.createElement(c, {
-				withOverlay: !0,
-				onOverlayClick: e
-			}))
 		},
 		"./src/reddit/components/Governance/MainnetAnnouncementModal/async.tsx": function(e, t, n) {
 			"use strict";
@@ -9160,7 +9126,6 @@
 				onOverlayClick: gs(e),
 				withOverlay: !0
 			}));
-			n("./src/reddit/components/Governance/GasFeesEducationalModal/async.tsx");
 			const fs = Object(Ut.a)({
 				ErrorComponent: () => null,
 				LoadingComponent: () => null,
@@ -22041,4 +22006,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.b18b65304cd125001013.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.493fea7c19a62d295a03.js.map

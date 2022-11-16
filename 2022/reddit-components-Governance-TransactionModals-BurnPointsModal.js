@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.e6010c33aff23860f410.js
-// Retrieved at 11/16/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.1ce2c7481b14427106a4.js
+// Retrieved at 11/16/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-BurnPointsModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
@@ -479,7 +479,7 @@
 					hk: "2JXqt"
 				})), l.a.createElement("div", {
 					className: f.a.sectionsContainer
-				}, l.a.createElement(x, {
+				}, l.a.createElement(E, {
 					image: l.a.createElement(u, null),
 					header: i.fbt._("Burn and be rewarded", null, {
 						hk: "1G5I22"
@@ -487,7 +487,7 @@
 					description: i.fbt._("Burn your {pointsName} to receive a reward created by the community.", [i.fbt._param("pointsName", t)], {
 						hk: "iRnjD"
 					})
-				}), l.a.createElement(x, {
+				}), l.a.createElement(E, {
 					image: l.a.createElement(p, null),
 					header: i.fbt._("No one gets the {pointsName}", [i.fbt._param("pointsName", t)], {
 						hk: "2hPu7L"
@@ -495,7 +495,7 @@
 					description: i.fbt._("When your {pointsName} disappear, it helps the rest of the community by making everyone else's slice of {pointsName2} larger.", [i.fbt._param("pointsName", t), i.fbt._param("pointsName2", t)], {
 						hk: "Baw1t"
 					})
-				}), l.a.createElement(x, {
+				}), l.a.createElement(E, {
 					image: l.a.createElement(h, null),
 					header: i.fbt._("Your community will thank you", null, {
 						hk: "2DLt1I"
@@ -516,7 +516,7 @@
 				}))))
 			}
 
-			function x(e) {
+			function E(e) {
 				return l.a.createElement("div", {
 					className: f.a.section
 				}, l.a.createElement("div", {
@@ -529,22 +529,22 @@
 					className: f.a.sectionDescription
 				}, e.description)))
 			}
-			var E = a("./node_modules/bignumber.js/bignumber.js"),
+			var x = a("./node_modules/bignumber.js/bignumber.js"),
 				M = a("./src/reddit/actions/governance/index.ts"),
 				g = a("./src/reddit/actions/modal.ts"),
 				N = a("./src/reddit/actions/toaster.ts"),
 				y = a("./src/reddit/actions/util/pollActionForSuccess.ts"),
 				_ = a("./src/reddit/endpoints/governance/crypto.ts"),
 				C = a("./src/reddit/helpers/crypto/transactions.ts"),
-				j = a("./src/reddit/helpers/crypto/vaultTransactions.ts"),
-				w = a("./src/reddit/helpers/governance/tokens.ts"),
+				w = a("./src/reddit/helpers/crypto/vaultTransactions.ts"),
+				j = a("./src/reddit/helpers/governance/tokens.ts"),
 				z = a("./src/reddit/helpers/trackers/crypto.ts"),
 				O = a("./src/reddit/hooks/useTracking.ts"),
 				F = a("./src/reddit/models/Toast/index.ts"),
 				T = a("./src/reddit/selectors/gov.ts"),
 				L = a("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx"),
-				A = a("./src/lib/classNames/index.ts"),
-				I = a("./src/reddit/components/Governance/TokenAmount/index.tsx"),
+				I = a("./src/lib/classNames/index.ts"),
+				A = a("./src/reddit/components/Governance/TokenAmount/index.tsx"),
 				k = a("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx"),
 				D = a("./src/reddit/components/Governance/TransactionModals/Common/CurrentBalance.tsx"),
 				B = a("./src/reddit/components/Governance/TransactionModals/BurnPointsModal/Approval.m.less"),
@@ -560,14 +560,14 @@
 				} = e;
 				return l.a.createElement("div", {
 					className: V.a.overview
-				}, l.a.createElement(I.a, {
+				}, l.a.createElement(A.a, {
 					amount: t,
 					className: V.a.amount,
 					subredditId: s.id
 				}), l.a.createElement(D.a, {
 					subredditId: s.id
 				}), l.a.createElement("div", {
-					className: Object(A.a)(V.a.memo, {
+					className: Object(I.a)(V.a.memo, {
 						[V.a.error]: !n
 					})
 				}, n ? i.fbt._("For “{memo}”. Fulfilled by the community, not Reddit.", [i.fbt._param("memo", a)], {
@@ -600,16 +600,16 @@
 					pointsDetails: s
 				} = e, r = Object(c.d)(), o = Object(O.a)(), d = () => r(Object(g.f)()), m = n.id, u = Object(c.e)(e => Object(T.e)(e, {
 					subredditId: m
-				})), p = new E.BigNumber(u).isGreaterThanOrEqualTo(t), h = Object(w.c)(t, null == s ? void 0 : s.displayConversion), v = s.contractAddress, f = Object(C.a)(v, t, a), b = e => {
+				})), p = new x.BigNumber(u).isGreaterThanOrEqualTo(t), h = Object(j.c)(t, null == s ? void 0 : s.displayConversion), v = s.contractAddress, f = Object(C.a)(v, t, a), b = e => {
 					o(Object(z.c)("burn_link", m, h, e))
-				}, x = s.name;
+				}, E = s.name;
 				return l.a.createElement(L.a, {
 					approvalOverview: l.a.createElement(H, {
 						burnAmount: t,
 						burnMemo: a,
 						hasEnoughPoints: p,
 						subreddit: n,
-						pointsName: x
+						pointsName: E
 					}),
 					approvalDetails: l.a.createElement(P, {
 						contractAddress: v,
@@ -622,10 +622,10 @@
 								hk: "2LoC1g"
 							}), F.b.SuccessCommunity);
 							return t.duration = G, Object(N.f)(t)
-						}(x));
+						}(E));
 						try {
 							await async function(e, t, a, n, l) {
-								await Object(j.a)(t, a), await e(Object(y.a)(Object(M.h)({
+								await Object(w.a)(t, a), await e(Object(y.a)(Object(M.h)({
 									subredditId: n
 								}), async e => {
 									const t = Object(T.e)(e(), {
@@ -640,13 +640,13 @@
 									hk: "1BHX95"
 								}), F.b.SuccessCommunityGreen);
 								return t.duration = G, Object(N.f)(t)
-							}(x))
+							}(E))
 						} catch (t) {
 							b(t.toString()), r(function(e) {
 								return Object(N.f)(Object(N.e)(i.fbt._("There was an error while burning your {pointsName}. Please try again later", [i.fbt._param("pointsName", e)], {
 									hk: "48Un5w"
 								}), F.b.Error))
-							}(x))
+							}(E))
 						}
 					},
 					onTransactionFailure: b,
@@ -768,8 +768,8 @@
 					}))))
 				}),
 				b = a("./src/reddit/controls/ErrorText/index.m.less"),
-				x = a.n(b);
-			class E extends i.a.Component {
+				E = a.n(b);
+			class x extends i.a.Component {
 				constructor(e) {
 					super(e), this.spanRef = i.a.createRef(), this.toggleModal = () => {
 						this.setState({
@@ -813,12 +813,12 @@
 						isModalOpen: r
 					} = this.state;
 					return i.a.createElement("div", {
-						className: Object(d.a)(x.a.wrapper, t)
+						className: Object(d.a)(E.a.wrapper, t)
 					}, i.a.createElement("span", {
-						className: x.a.description,
+						className: E.a.description,
 						ref: this.spanRef
 					}, e), s && i.a.createElement("span", {
-						className: x.a.moreText,
+						className: E.a.moreText,
 						onClick: this.toggleModal
 					}, c), r && i.a.createElement(f, {
 						onConfirmed: this.toggleModal,
@@ -836,7 +836,7 @@
 					} = e, s = c.length ? c : l ? [l] : [];
 					return s.length ? i.a.createElement("div", {
 						className: t
-					}, s.map((e, t) => i.a.createElement(E, {
+					}, s.map((e, t) => i.a.createElement(x, {
 						className: a,
 						errorModalTitle: n,
 						key: t
@@ -848,7 +848,7 @@
 					}),
 					messages: e
 				});
-			t.b = E
+			t.b = x
 		},
 		"./src/reddit/controls/FormFields/index.m.less": function(e, t, a) {
 			e.exports = {
@@ -876,7 +876,7 @@
 			})), a.d(t, "c", (function() {
 				return f
 			})), a.d(t, "d", (function() {
-				return E
+				return x
 			}));
 			a("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = a("./node_modules/react/index.js"),
@@ -957,18 +957,18 @@
 				}, e.text, " ", l.a.createElement(o.a, {
 					className: m.a.plus
 				}));
-			var x;
+			var E;
 			! function(e) {
 				e[e.ADD = 0] = "ADD", e[e.REMOVE = 1] = "REMOVE"
-			}(x || (x = {}));
-			class E extends l.a.Component {
+			}(E || (E = {}));
+			class x extends l.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						addingNewInputs: !1
 					}, this.addValue = () => {
 						const e = this.props.values.slice();
 						this.props.buttonOnTop ? e.unshift("") : e.push(""), this.props.onChange(e), this.props.onEvent && this.props.onEvent({
-							action: x.ADD
+							action: E.ADD
 						})
 					}, this.updateValue = (e, t) => {
 						const a = this.props.values.slice();
@@ -977,7 +977,7 @@
 						const t = this.props.values.slice(),
 							a = t[e];
 						t.splice(e, 1), this.props.onChange(t), this.props.onEvent && this.props.onEvent({
-							action: x.REMOVE,
+							action: E.REMOVE,
 							value: a,
 							index: e
 						})
@@ -1223,21 +1223,6 @@
 				return t.dividedBy(a).toString()
 			}
 		},
-		"./src/reddit/hooks/useApiContext.ts": function(e, t, a) {
-			"use strict";
-			a.d(t, "a", (function() {
-				return c
-			}));
-			var n = a("./node_modules/react/index.js"),
-				l = a("./src/reddit/contexts/ApiContext.tsx");
-
-			function c() {
-				const {
-					apiContext: e
-				} = Object(n.useContext)(l.a);
-				return e
-			}
-		},
 		"./src/reddit/hooks/useSafeState.ts": function(e, t, a) {
 			"use strict";
 			a.d(t, "a", (function() {
@@ -1372,4 +1357,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.e6010c33aff23860f410.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.1ce2c7481b14427106a4.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceMainnetAnnouncementModal.7a29f06436dbf76d3522.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceMainnetAnnouncementModal.e175118beef23f3ea80c.js
+// Retrieved at 11/16/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceMainnetAnnouncementModal"], {
 		"./src/reddit/components/Governance/MainnetAnnouncementModal/index.m.less": function(e, n, t) {
@@ -25,9 +25,9 @@
 				d = t("./src/reddit/constants/modals.ts"),
 				m = t("./src/reddit/controls/Button/index.tsx"),
 				u = t("./src/reddit/components/Governance/ModalFrame/index.tsx"),
-				v = t("./src/reddit/components/Governance/MainnetAnnouncementModal/index.m.less"),
-				x = t.n(v);
-			const h = e => `${r.a.assetPath}/img/communityPoints/${e}.png`;
+				x = t("./src/reddit/components/Governance/MainnetAnnouncementModal/index.m.less"),
+				v = t.n(x);
+			const f = e => `${r.a.assetPath}/img/communityPoints/${e}.png`;
 			n.default = Object(i.a)((function() {
 				const e = Object(o.d)();
 				return c.a.createElement(u.a, {
@@ -35,48 +35,48 @@
 						hk: "476od9"
 					})
 				}, c.a.createElement("div", {
-					className: x.a.grid
+					className: v.a.grid
 				}, c.a.createElement("img", {
-					className: x.a.image,
-					src: h("mainnet-announcement-1")
+					className: v.a.image,
+					src: f("mainnet-announcement-1")
 				}), c.a.createElement("div", {
-					className: x.a.section
+					className: v.a.section
 				}, c.a.createElement("div", {
-					className: x.a.sectionHead
+					className: v.a.sectionHead
 				}, a.fbt._("Mainnet means real blockchain", null, {
 					hk: "1vjB0J"
 				})), c.a.createElement("div", {
-					className: x.a.text
+					className: v.a.text
 				}, a.fbt._("Points are now linked to the main Ethereum network. This makes them more secure and useful, but also means network fees have to be paid.", null, {
 					hk: "4a44qF"
 				}))), c.a.createElement("img", {
-					className: x.a.image,
-					src: h("mainnet-announcement-2")
+					className: v.a.image,
+					src: f("mainnet-announcement-2")
 				}), c.a.createElement("div", {
-					className: x.a.section
+					className: v.a.section
 				}, c.a.createElement("div", {
-					className: x.a.sectionHead
+					className: v.a.sectionHead
 				}, a.fbt._("Earn and Spend Points like you do now", null, {
 					hk: "2eNmKO"
 				})), c.a.createElement("div", {
-					className: x.a.text
+					className: v.a.text
 				}, a.fbt._("You can earn Points and spend them on premium features like Special Memberships. Reddit pays network fees for these transactions.", null, {
 					hk: "33wZY3"
 				}))), c.a.createElement("img", {
-					className: x.a.wideImage,
-					src: h("network-fees-4")
+					className: v.a.wideImage,
+					src: f("network-fees-4")
 				}), c.a.createElement("div", {
-					className: x.a.section
+					className: v.a.section
 				}, c.a.createElement("div", {
-					className: x.a.sectionHead
+					className: v.a.sectionHead
 				}, a.fbt._("Tips require network fees", null, {
 					hk: "4kwupF"
 				})), c.a.createElement("div", {
-					className: x.a.text
-				}, a.fbt._("Tipping Points on mainnet requires fees to the blockchain network. You can purchase the necessary crypto to pay these fees via FTX through the community sidecard.", null, {
-					hk: "4vaHIQ"
+					className: v.a.text
+				}, a.fbt._("Tipping Points on mainnet requires fees to the blockchain network.", null, {
+					hk: "1F2edK"
 				})))), c.a.createElement(m.a, {
-					className: x.a.button,
+					className: v.a.button,
 					priority: m.c.Secondary,
 					onClick: () => e(Object(l.g)(d.a.GOVERNANCE_MAINNET_LAUNCH))
 				}, a.fbt._("Continue", null, {
@@ -179,4 +179,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceMainnetAnnouncementModal.7a29f06436dbf76d3522.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceMainnetAnnouncementModal.e175118beef23f3ea80c.js.map
