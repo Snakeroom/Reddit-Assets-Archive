@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.86031d6e15fde5fb1170.js
-// Retrieved at 11/15/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.99e3825b4a5adfd2ddf7.js
+// Retrieved at 11/16/2022, 10:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -450,7 +450,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(m.ng)(e.category_name)
+									displayText: Object(m.og)(e.category_name)
 								};
 								s.push(r.id), t[r.id] = r
 							}), {
@@ -9031,7 +9031,7 @@
 							canonicalUrl: n.canonical_url,
 							baseUrl: n.base_url,
 							hostPostId: t,
-							shouldShowLinkedPosts: !Object(x.og)(s) && !Object(P.a)(s),
+							shouldShowLinkedPosts: !Object(x.pg)(s) && !Object(P.a)(s),
 							subreddit: r
 						}
 					}
@@ -9094,7 +9094,7 @@
 						hostPostData: c,
 						listingBelowVariant: d
 					} = e;
-					if (d && !Object(x.og)(d) && !Object(P.a)(d) && !i) return a.a.createElement("div", {
+					if (d && !Object(x.pg)(d) && !Object(P.a)(d) && !i) return a.a.createElement("div", {
 						className: K.a.smallBanner
 					});
 					const {
@@ -19112,7 +19112,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(r.og)(t)
+					return Boolean(t) && !Object(r.pg)(t)
 				},
 				c = Object(n.a)(a, o.d, (e, t) => e && !t)
 		},
@@ -19226,4 +19226,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.86031d6e15fde5fb1170.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.99e3825b4a5adfd2ddf7.js.map

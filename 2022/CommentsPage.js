@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.620a663192678f5ea5f0.js
-// Retrieved at 11/15/2022, 7:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.70c21976602e229fb084.js
+// Retrieved at 11/16/2022, 10:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3361,7 +3361,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(u.ng)(e.category_name)
+									displayText: Object(u.og)(e.category_name)
 								};
 								n.push(r.id), t[r.id] = r
 							}), {
@@ -24739,7 +24739,7 @@
 							canonicalUrl: s.canonical_url,
 							baseUrl: s.base_url,
 							hostPostId: t,
-							shouldShowLinkedPosts: !Object(g.og)(n) && !Object(w.a)(n),
+							shouldShowLinkedPosts: !Object(g.pg)(n) && !Object(w.a)(n),
 							subreddit: r
 						}
 					}
@@ -24802,7 +24802,7 @@
 						hostPostData: c,
 						listingBelowVariant: d
 					} = e;
-					if (d && !Object(g.og)(d) && !Object(w.a)(d) && !i) return a.a.createElement("div", {
+					if (d && !Object(g.pg)(d) && !Object(w.a)(d) && !i) return a.a.createElement("div", {
 						className: q.a.smallBanner
 					});
 					const {
@@ -35379,10 +35379,10 @@
 				b = n("./node_modules/reselect/es/index.js");
 			const f = Object(b.a)(e => Object(p.c)(e, {
 				experimentEligibilitySelector: p.a,
-				experimentName: m.kg
+				experimentName: m.lg
 			}), e => ({
-				promptBeforeClick: e === m.lg.PromptBeforeClick,
-				promptAfterClick: e === m.lg.PromptAfterClick
+				promptBeforeClick: e === m.mg.PromptBeforeClick,
+				promptAfterClick: e === m.mg.PromptAfterClick
 			}));
 			var h = n("./src/reddit/controls/Search/SearchScopePill/index.tsx"),
 				C = n("./src/reddit/controls/Search/SearchBar/index.m.less"),
@@ -45637,6 +45637,7 @@
 						return e
 				}
 			};
+			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			const d = {
 					marketingEvent: {
 						active: !1,
@@ -45652,15 +45653,55 @@
 						max_event_views: 0,
 						min_days_since_last_event_interaction: 0,
 						webAssetUrls: []
-					}
+					},
+					pushcard: null
 				},
 				l = "avatar_quick_create_event",
 				u = "avatar_marketing_event",
-				m = "avatar_promo_archived",
-				p = e => {
+				m = "avatar_pushcard",
+				p = "avatar_promo_archived";
+			var b;
+			! function(e) {
+				e.MaxEventViews = "targeting:max_event_views", e.Title = "copy:pushcard_title", e.Cta = "copy:pushcard_cta", e.BannerTitle = "copy:banner_title", e.BannerBody = "copy:banner_body", e.Deeplink = "deeplink"
+			}(b || (b = {}));
+			const f = e => {
+					let {
+						startsAt: t,
+						endsAt: n
+					} = e;
+					const s = t && new Date(t) <= new Date,
+						r = !!n && new Date(n) < new Date;
+					return !!s && !r
+				},
+				h = e => {
+					const {
+						id: t,
+						tags: n,
+						webAssetUrls: s
+					} = e, [r, o, i] = s, a = n.reduce((e, t) => {
+						if (!t) return e;
+						const n = Object.values(b).find(e => t.startsWith(e));
+						return n ? (e[n] = t.slice(n.length + 1), e) : e
+					}, {});
+					return {
+						id: t,
+						maxViews: parseInt(a[b.MaxEventViews], 10),
+						banner: {
+							iconUrl: r,
+							title: a[b.BannerTitle],
+							body: a[b.BannerBody]
+						},
+						backgroundImageUrl: o,
+						foregroundImageUrl: i,
+						title: a[b.Title],
+						cta: a[b.Cta],
+						deeplink: a[b.Deeplink]
+					}
+				},
+				C = e => {
 					const t = {};
-					return e.forEach(e => {
-						if (e.startsWith("targeting:")) {
+					return null == e || e.forEach(e => {
+						if (null == e ? void 0 : e.startsWith("targeting:")) {
 							const n = e.split(":");
 							if (!n.length && n.length < 3) return null;
 							try {
@@ -45672,61 +45713,66 @@
 					}), t
 				};
 
-			function b(e) {
-				if (!e) return d;
-				const t = d;
+			function g(e) {
+				const t = {};
 				return e.forEach(e => {
 					var n;
 					const {
-						startsAt: s,
-						endsAt: r,
-						webAssetUrls: o,
-						tags: i
-					} = e, a = s && new Date(s) <= new Date, c = !!r && new Date(r) < new Date, d = !!a && !c, b = (i || []).includes(m);
-					if (i && i.includes(l) && !b) {
-						const {
-							text: n,
-							id: s
-						} = e, r = o || null, a = p(i);
-						t && (t.quickCreateV1 = {
-							...a,
-							id: s,
-							text: n,
-							active: d && !!r,
-							webAssetUrls: r
-						})
-					}
-					if (i && i.includes(u) && !b) {
-						const e = o || null,
-							s = (null === (n = i.find(e => e.startsWith("feature:") && e.includes("web"))) || void 0 === n ? void 0 : n.split("feature:")[1]) || null;
-						t && (t.marketingEvent = {
-							active: d && !!e,
-							assetUrls: e,
-							experimentRequired: s
-						})
+						webAssetUrls: s,
+						tags: r
+					} = e;
+					if (!(null == r ? void 0 : r.includes(p))) {
+						if ((null == r ? void 0 : r.includes(m)) && 3 === (null == s ? void 0 : s.length) && (t.pushcard = h(e)), null == r ? void 0 : r.includes(l)) {
+							const {
+								text: n,
+								id: o
+							} = e, i = s || null, a = C(r);
+							t.quickCreateV1 = {
+								...a,
+								id: o,
+								text: n,
+								active: f(e) && !!i,
+								webAssetUrls: i
+							}
+						}
+						if (null == r ? void 0 : r.includes(u)) {
+							const o = s || null,
+								i = (null === (n = r.find(e => (null == e ? void 0 : e.startsWith("feature:")) && e.includes("web"))) || void 0 === n ? void 0 : n.split("feature:")[1]) || null;
+							t.marketingEvent = {
+								active: f(e) && !!o,
+								assetUrls: o,
+								experimentRequired: i
+							}
+						}
 					}
 				}), t
 			}
-			var f = n("./src/reddit/actions/goldPurchaseModals/constants.ts"),
-				h = n("./src/reddit/actions/modal.ts"),
-				C = n("./src/reddit/constants/modals.ts");
-			var g = function() {
+			var _ = n("./src/reddit/actions/goldPurchaseModals/constants.ts"),
+				x = n("./src/reddit/actions/modal.ts"),
+				v = n("./src/reddit/constants/modals.ts");
+			var O = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
-				var n;
+				var n, s;
 				switch (t.type) {
-					case f.s:
+					case _.s:
 						const {
-							avatarMarketingEvents: s
+							avatarMarketingEvents: r
 						} = t.payload;
-						return s ? b(s) : d;
-					case h.c:
-						return (null === (n = t.payload) || void 0 === n ? void 0 : n.id) === C.a.SNOOVATAR_MODAL ? d : e;
+						return r ? {
+							...d,
+							...g(r)
+						} : d;
+					case x.c:
+						return (null === (n = t.payload) || void 0 === n ? void 0 : n.id) === v.a.SNOOVATAR_MODAL ? {
+							...d,
+							pushcard: null !== (s = null == e ? void 0 : e.pushcard) && void 0 !== s ? s : null
+						} : e;
 					default:
 						return e
 				}
 			};
-			var _ = function() {
+			var y = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -45745,9 +45791,9 @@
 				}
 			};
 			t.a = Object(o.c)({
-				marketing: g,
+				marketing: O,
 				avatarUser: c,
-				randomAvatar: _
+				randomAvatar: y
 			})
 		},
 		"./src/reddit/reducers/features/categories/index.ts": function(e, t, n) {
@@ -49785,7 +49831,7 @@
 				i = n("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(r.og)(t)
+					return Boolean(t) && !Object(r.pg)(t)
 				},
 				c = Object(s.a)(a, o.d, (e, t) => e && !t)
 		},
@@ -50311,4 +50357,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.620a663192678f5ea5f0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.70c21976602e229fb084.js.map

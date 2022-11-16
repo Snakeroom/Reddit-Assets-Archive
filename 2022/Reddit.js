@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.834173a8d68604b7e062.js
-// Retrieved at 11/15/2022, 8:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.21cb1040b91b3cd6c88f.js
+// Retrieved at 11/16/2022, 10:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -18747,6 +18747,7 @@
 						return e
 				}
 			};
+			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			const l = {
 					marketingEvent: {
 						active: !1,
@@ -18762,15 +18763,55 @@
 						max_event_views: 0,
 						min_days_since_last_event_interaction: 0,
 						webAssetUrls: []
-					}
+					},
+					pushcard: null
 				},
 				d = "avatar_quick_create_event",
 				u = "avatar_marketing_event",
-				m = "avatar_promo_archived",
-				p = e => {
+				m = "avatar_pushcard",
+				p = "avatar_promo_archived";
+			var b;
+			! function(e) {
+				e.MaxEventViews = "targeting:max_event_views", e.Title = "copy:pushcard_title", e.Cta = "copy:pushcard_cta", e.BannerTitle = "copy:banner_title", e.BannerBody = "copy:banner_body", e.Deeplink = "deeplink"
+			}(b || (b = {}));
+			const h = e => {
+					let {
+						startsAt: t,
+						endsAt: n
+					} = e;
+					const s = t && new Date(t) <= new Date,
+						r = !!n && new Date(n) < new Date;
+					return !!s && !r
+				},
+				g = e => {
+					const {
+						id: t,
+						tags: n,
+						webAssetUrls: s
+					} = e, [r, o, a] = s, i = n.reduce((e, t) => {
+						if (!t) return e;
+						const n = Object.values(b).find(e => t.startsWith(e));
+						return n ? (e[n] = t.slice(n.length + 1), e) : e
+					}, {});
+					return {
+						id: t,
+						maxViews: parseInt(i[b.MaxEventViews], 10),
+						banner: {
+							iconUrl: r,
+							title: i[b.BannerTitle],
+							body: i[b.BannerBody]
+						},
+						backgroundImageUrl: o,
+						foregroundImageUrl: a,
+						title: i[b.Title],
+						cta: i[b.Cta],
+						deeplink: i[b.Deeplink]
+					}
+				},
+				f = e => {
 					const t = {};
-					return e.forEach(e => {
-						if (e.startsWith("targeting:")) {
+					return null == e || e.forEach(e => {
+						if (null == e ? void 0 : e.startsWith("targeting:")) {
 							const n = e.split(":");
 							if (!n.length && n.length < 3) return null;
 							try {
@@ -18782,61 +18823,66 @@
 					}), t
 				};
 
-			function b(e) {
-				if (!e) return l;
-				const t = l;
+			function v(e) {
+				const t = {};
 				return e.forEach(e => {
 					var n;
 					const {
-						startsAt: s,
-						endsAt: r,
-						webAssetUrls: o,
-						tags: a
-					} = e, i = s && new Date(s) <= new Date, c = !!r && new Date(r) < new Date, l = !!i && !c, b = (a || []).includes(m);
-					if (a && a.includes(d) && !b) {
-						const {
-							text: n,
-							id: s
-						} = e, r = o || null, i = p(a);
-						t && (t.quickCreateV1 = {
-							...i,
-							id: s,
-							text: n,
-							active: l && !!r,
-							webAssetUrls: r
-						})
-					}
-					if (a && a.includes(u) && !b) {
-						const e = o || null,
-							s = (null === (n = a.find(e => e.startsWith("feature:") && e.includes("web"))) || void 0 === n ? void 0 : n.split("feature:")[1]) || null;
-						t && (t.marketingEvent = {
-							active: l && !!e,
-							assetUrls: e,
-							experimentRequired: s
-						})
+						webAssetUrls: s,
+						tags: r
+					} = e;
+					if (!(null == r ? void 0 : r.includes(p))) {
+						if ((null == r ? void 0 : r.includes(m)) && 3 === (null == s ? void 0 : s.length) && (t.pushcard = g(e)), null == r ? void 0 : r.includes(d)) {
+							const {
+								text: n,
+								id: o
+							} = e, a = s || null, i = f(r);
+							t.quickCreateV1 = {
+								...i,
+								id: o,
+								text: n,
+								active: h(e) && !!a,
+								webAssetUrls: a
+							}
+						}
+						if (null == r ? void 0 : r.includes(u)) {
+							const o = s || null,
+								a = (null === (n = r.find(e => (null == e ? void 0 : e.startsWith("feature:")) && e.includes("web"))) || void 0 === n ? void 0 : n.split("feature:")[1]) || null;
+							t.marketingEvent = {
+								active: h(e) && !!o,
+								assetUrls: o,
+								experimentRequired: a
+							}
+						}
 					}
 				}), t
 			}
-			var h = n("./src/reddit/actions/goldPurchaseModals/constants.ts"),
-				g = n("./src/reddit/actions/modal.ts"),
-				f = n("./src/reddit/constants/modals.ts");
-			var v = function() {
+			var O = n("./src/reddit/actions/goldPurchaseModals/constants.ts"),
+				C = n("./src/reddit/actions/modal.ts"),
+				y = n("./src/reddit/constants/modals.ts");
+			var E = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
-				var n;
+				var n, s;
 				switch (t.type) {
-					case h.s:
+					case O.s:
 						const {
-							avatarMarketingEvents: s
+							avatarMarketingEvents: r
 						} = t.payload;
-						return s ? b(s) : l;
-					case g.c:
-						return (null === (n = t.payload) || void 0 === n ? void 0 : n.id) === f.a.SNOOVATAR_MODAL ? l : e;
+						return r ? {
+							...l,
+							...v(r)
+						} : l;
+					case C.c:
+						return (null === (n = t.payload) || void 0 === n ? void 0 : n.id) === y.a.SNOOVATAR_MODAL ? {
+							...l,
+							pushcard: null !== (s = null == e ? void 0 : e.pushcard) && void 0 !== s ? s : null
+						} : e;
 					default:
 						return e
 				}
 			};
-			var O = function() {
+			var x = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -18855,9 +18901,9 @@
 				}
 			};
 			t.a = Object(o.c)({
-				marketing: v,
+				marketing: E,
 				avatarUser: c,
-				randomAvatar: O
+				randomAvatar: x
 			})
 		},
 		"./src/reddit/reducers/features/happeningNow/index.ts": function(e, t, n) {
@@ -21995,4 +22041,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.834173a8d68604b7e062.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.21cb1040b91b3cd6c88f.js.map

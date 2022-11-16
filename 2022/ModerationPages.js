@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.ccb9522f49f7bff42257.js
-// Retrieved at 11/15/2022, 7:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.0352e2a32a90a3e38cde.js
+// Retrieved at 11/16/2022, 10:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -9418,7 +9418,7 @@
 						} = t;
 						var m, p;
 						const b = Object(Ce.i)(e),
-							f = !!b && !Object(ge.og)(b) && (o || b === ge.lb.Community),
+							f = !!b && !Object(ge.pg)(b) && (o || b === ge.lb.Community),
 							{
 								adsSeenCount: h,
 								totalPostsSeenCount: _,
@@ -57979,7 +57979,7 @@
 								experimentName: o.C,
 								expEventOverride: t
 							});
-							return !!(Object(o.og)(n) ? void 0 : n)
+							return !!(Object(o.pg)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -69810,6 +69810,7 @@
 						return e
 				}
 			};
+			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			const c = {
 					marketingEvent: {
 						active: !1,
@@ -69825,15 +69826,55 @@
 						max_event_views: 0,
 						min_days_since_last_event_interaction: 0,
 						webAssetUrls: []
-					}
+					},
+					pushcard: null
 				},
 				l = "avatar_quick_create_event",
 				u = "avatar_marketing_event",
-				m = "avatar_promo_archived",
-				p = e => {
+				m = "avatar_pushcard",
+				p = "avatar_promo_archived";
+			var b;
+			! function(e) {
+				e.MaxEventViews = "targeting:max_event_views", e.Title = "copy:pushcard_title", e.Cta = "copy:pushcard_cta", e.BannerTitle = "copy:banner_title", e.BannerBody = "copy:banner_body", e.Deeplink = "deeplink"
+			}(b || (b = {}));
+			const f = e => {
+					let {
+						startsAt: t,
+						endsAt: n
+					} = e;
+					const s = t && new Date(t) <= new Date,
+						r = !!n && new Date(n) < new Date;
+					return !!s && !r
+				},
+				h = e => {
+					const {
+						id: t,
+						tags: n,
+						webAssetUrls: s
+					} = e, [r, o, i] = s, a = n.reduce((e, t) => {
+						if (!t) return e;
+						const n = Object.values(b).find(e => t.startsWith(e));
+						return n ? (e[n] = t.slice(n.length + 1), e) : e
+					}, {});
+					return {
+						id: t,
+						maxViews: parseInt(a[b.MaxEventViews], 10),
+						banner: {
+							iconUrl: r,
+							title: a[b.BannerTitle],
+							body: a[b.BannerBody]
+						},
+						backgroundImageUrl: o,
+						foregroundImageUrl: i,
+						title: a[b.Title],
+						cta: a[b.Cta],
+						deeplink: a[b.Deeplink]
+					}
+				},
+				_ = e => {
 					const t = {};
-					return e.forEach(e => {
-						if (e.startsWith("targeting:")) {
+					return null == e || e.forEach(e => {
+						if (null == e ? void 0 : e.startsWith("targeting:")) {
 							const n = e.split(":");
 							if (!n.length && n.length < 3) return null;
 							try {
@@ -69845,61 +69886,66 @@
 					}), t
 				};
 
-			function b(e) {
-				if (!e) return c;
-				const t = c;
+			function g(e) {
+				const t = {};
 				return e.forEach(e => {
 					var n;
 					const {
-						startsAt: s,
-						endsAt: r,
-						webAssetUrls: o,
-						tags: i
-					} = e, a = s && new Date(s) <= new Date, d = !!r && new Date(r) < new Date, c = !!a && !d, b = (i || []).includes(m);
-					if (i && i.includes(l) && !b) {
-						const {
-							text: n,
-							id: s
-						} = e, r = o || null, a = p(i);
-						t && (t.quickCreateV1 = {
-							...a,
-							id: s,
-							text: n,
-							active: c && !!r,
-							webAssetUrls: r
-						})
-					}
-					if (i && i.includes(u) && !b) {
-						const e = o || null,
-							s = (null === (n = i.find(e => e.startsWith("feature:") && e.includes("web"))) || void 0 === n ? void 0 : n.split("feature:")[1]) || null;
-						t && (t.marketingEvent = {
-							active: c && !!e,
-							assetUrls: e,
-							experimentRequired: s
-						})
+						webAssetUrls: s,
+						tags: r
+					} = e;
+					if (!(null == r ? void 0 : r.includes(p))) {
+						if ((null == r ? void 0 : r.includes(m)) && 3 === (null == s ? void 0 : s.length) && (t.pushcard = h(e)), null == r ? void 0 : r.includes(l)) {
+							const {
+								text: n,
+								id: o
+							} = e, i = s || null, a = _(r);
+							t.quickCreateV1 = {
+								...a,
+								id: o,
+								text: n,
+								active: f(e) && !!i,
+								webAssetUrls: i
+							}
+						}
+						if (null == r ? void 0 : r.includes(u)) {
+							const o = s || null,
+								i = (null === (n = r.find(e => (null == e ? void 0 : e.startsWith("feature:")) && e.includes("web"))) || void 0 === n ? void 0 : n.split("feature:")[1]) || null;
+							t.marketingEvent = {
+								active: f(e) && !!o,
+								assetUrls: o,
+								experimentRequired: i
+							}
+						}
 					}
 				}), t
 			}
-			var f = n("./src/reddit/actions/goldPurchaseModals/constants.ts"),
-				h = n("./src/reddit/actions/modal.ts"),
-				_ = n("./src/reddit/constants/modals.ts");
-			var g = function() {
+			var v = n("./src/reddit/actions/goldPurchaseModals/constants.ts"),
+				x = n("./src/reddit/actions/modal.ts"),
+				O = n("./src/reddit/constants/modals.ts");
+			var E = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
-				var n;
+				var n, s;
 				switch (t.type) {
-					case f.s:
+					case v.s:
 						const {
-							avatarMarketingEvents: s
+							avatarMarketingEvents: r
 						} = t.payload;
-						return s ? b(s) : c;
-					case h.c:
-						return (null === (n = t.payload) || void 0 === n ? void 0 : n.id) === _.a.SNOOVATAR_MODAL ? c : e;
+						return r ? {
+							...c,
+							...g(r)
+						} : c;
+					case x.c:
+						return (null === (n = t.payload) || void 0 === n ? void 0 : n.id) === O.a.SNOOVATAR_MODAL ? {
+							...c,
+							pushcard: null !== (s = null == e ? void 0 : e.pushcard) && void 0 !== s ? s : null
+						} : e;
 					default:
 						return e
 				}
 			};
-			var v = function() {
+			var y = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -69918,9 +69964,9 @@
 				}
 			};
 			t.a = Object(o.c)({
-				marketing: g,
+				marketing: E,
 				avatarUser: d,
-				randomAvatar: v
+				randomAvatar: y
 			})
 		},
 		"./src/reddit/reducers/features/creatorStats/index.ts": function(e, t, n) {
@@ -75031,7 +75077,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: s.Gd
 				});
-				return !(!t || Object(s.og)(t))
+				return !(!t || Object(s.pg)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/gqlSubredditPage.ts": function(e, t, n) {
@@ -76606,7 +76652,7 @@
 					} = e.onboarding;
 					if (t.success || t.failure) return t
 				},
-				x = Object(r.a)(m.i, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(i.og)(e) ? t : null),
+				x = Object(r.a)(m.i, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(i.pg)(e) ? t : null),
 				O = Object(r.a)(m.i, (e, t) => {
 					let {
 						pageLayer: n
@@ -78185,4 +78231,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.ccb9522f49f7bff42257.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.0352e2a32a90a3e38cde.js.map
