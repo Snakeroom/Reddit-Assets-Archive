@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a254d73807349ba5f6da.js
-// Retrieved at 11/17/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.780871e1cd7be86bf708.js
+// Retrieved at 11/17/2022, 2:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3659,11 +3659,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("179067"),
+				buildNumber: Object(r.c)("179084"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1668707225"),
+				buildTimestamp: Object(r.b)("1668709814"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5753,7 +5753,7 @@
 				},
 				At = " …",
 				jt = ["politics", "askreddit", "amitheasshole", "movies", "soccer", "memes", "news", "funny", "relationshipadvice", "wallstreetbets", "pics", "aww", "doctorwho", "porsche", "barista", "bourbon", "barefootrunning", "dexter", "fitmeals", "tifu", "coronavirus"],
-				Pt = new Set(["search_results", "search_results_trending", "typeahead", "search_dropdown", "search_authors_tab", "search_comments_tab", "search_communities_tab", "search_posts_tab"]),
+				Pt = new Set(["search_results", "search_results_trending", "typeahead", "search_dropdown", "search_authors_tab", "search_comments_tab", "search_communities_tab", "search_posts_tab", "post_detail_comment_search"]),
 				xt = new Set(["home", "popular", "news", "community"]),
 				Dt = new Set([...Pt, ...xt]),
 				Lt = new Set(["post_detail", "single_comment_thread", "community", "profile_overview"]),
@@ -6396,14 +6396,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c6586171ed33679e35695cd4ae630bfb455d57b91-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c6bceb4ac5b7121e8d6b8bacd903aad060c87a259-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "6586171ed33679e35695cd4ae630bfb455d57b91-production",
+						release: "6bceb4ac5b7121e8d6b8bacd903aad060c87a259-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6939,7 +6939,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "6586171ed33679e35695cd4ae630bfb455d57b91-production",
+							releaseClient: "6bceb4ac5b7121e8d6b8bacd903aad060c87a259-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -11699,35 +11699,35 @@
 		"./src/reddit/actions/platform.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "b", (function() {
-				return v
-			})), i.d(t, "c", (function() {
 				return w
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "c", (function() {
 				return y
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "e", (function() {
 				return E
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "d", (function() {
 				return S
-			})), i.d(t, "g", (function() {
+			})), i.d(t, "f", (function() {
 				return T
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "g", (function() {
 				return O
-			})), i.d(t, "i", (function() {
+			})), i.d(t, "a", (function() {
 				return I
-			})), i.d(t, "j", (function() {
+			})), i.d(t, "i", (function() {
 				return R
+			})), i.d(t, "j", (function() {
+				return F
 			})), i.d(t, "n", (function() {
-				return N
-			})), i.d(t, "o", (function() {
 				return A
-			})), i.d(t, "m", (function() {
+			})), i.d(t, "o", (function() {
 				return j
-			})), i.d(t, "l", (function() {
+			})), i.d(t, "m", (function() {
 				return P
-			})), i.d(t, "k", (function() {
+			})), i.d(t, "l", (function() {
 				return x
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "k", (function() {
 				return D
+			})), i.d(t, "h", (function() {
+				return L
 			}));
 			var n = i("./src/lib/areUrlsEqual/index.ts"),
 				r = i("./src/lib/constants/index.ts"),
@@ -11739,58 +11739,63 @@
 				u = i("./src/reddit/constants/experiments.ts"),
 				c = i("./src/reddit/constants/history.ts"),
 				_ = i("./src/reddit/constants/listings.ts"),
-				m = i("./src/reddit/helpers/installGoodVisitFeedSearchTracker/index.ts"),
-				p = i("./src/reddit/helpers/routeKey/index.ts"),
-				h = i("./src/reddit/selectors/experiments/postSeo.ts");
+				m = i("./src/reddit/helpers/clickSourceData/index.ts"),
+				p = i("./src/reddit/helpers/installGoodVisitFeedSearchTracker/index.ts"),
+				h = i("./src/reddit/helpers/routeKey/index.ts"),
+				f = i("./src/reddit/selectors/experiments/postSeo.ts");
 			i("./node_modules/core-js/modules/web.dom.iterable.js"), i("./src/reddit/helpers/chooseVariant/index.ts");
 			new Set([r.Sb.COMMENTS, r.Sb.INDEX, r.Sb.LISTING, r.Sb.PROFILE_COMMENTS, r.Sb.PROFILE_OVERVIEW, r.Sb.PROFILE_POSTS, r.Sb.SUBREDDIT]);
-			var f = i("./src/reddit/selectors/platform.ts"),
-				b = i("./src/reddit/selectors/telemetry.ts"),
-				g = i("./src/reddit/singleton/tracing/index.ts");
-			const v = "PLATFORM__HISTORY_LOCATION_SET",
-				w = "PLATFORM__INITIAL_REFERRER_SET",
-				y = "PLATFORM__NAVIGATION_CONFIRMATION_REQUESTED",
-				E = "PLATFORM__NAVIGATION_CONFIRMATION_DISCARDED",
-				S = "PLATFORM__PAGE_META_SET",
-				T = "PLATFORM__PAGE_STATUS_SET",
-				O = "PLATFORM__FEED_CORR_ID_SET",
-				I = e => async (t, i, n) => {
+			var b = i("./src/reddit/selectors/platform.ts"),
+				g = i("./src/reddit/selectors/telemetry.ts"),
+				v = i("./src/reddit/singleton/tracing/index.ts");
+			const w = "PLATFORM__HISTORY_LOCATION_SET",
+				y = "PLATFORM__INITIAL_REFERRER_SET",
+				E = "PLATFORM__NAVIGATION_CONFIRMATION_REQUESTED",
+				S = "PLATFORM__NAVIGATION_CONFIRMATION_DISCARDED",
+				T = "PLATFORM__PAGE_META_SET",
+				O = "PLATFORM__PAGE_STATUS_SET",
+				I = "PLATFORM__FEED_CORR_ID_SET",
+				R = e => async (t, i, n) => {
 					const {
 						currentPage: r
 					} = i().platform;
 					if (!r) return;
 					const s = Object(d.a)(r.url, e, i());
 					s && s.route.action(s.match)(t, i, n)
-				}, R = (e, t, i) => async (s, o, d) => {
+				}, F = (e, t, i) => async (s, o, d) => {
 					s(((e, t, i) => (s, o, d) => {
-						var a, l;
-						const v = o().platform.currentPage;
+						var a, l, w, y, E, S, T, O;
+						const I = o().platform.currentPage;
 						(!i || i.route.chunk === r.u.SUBREDDIT && _.a.has(i.match.params.subredditName.toLowerCase())) && window.location.replace(`https://www.reddit.com${e.pathname}${e.search}`);
-						const w = i ? Object(p.c)(i, o()).listingKey : null,
+						const R = i ? Object(h.c)(i, o()).listingKey : null,
 							{
-								user: y
+								user: F
 							} = o(),
-							E = i && i.match && i.match.queryParams,
-							S = E && E[`experiment_${u.Ue}`];
-						Object(h.g)(o()), e.pathname.split("/").some(e => "comments" === e), Object(f.j)(o());
-						s(F({
+							N = i && i.match && i.match.queryParams,
+							A = N && N[`experiment_${u.Ue}`];
+						Object(f.g)(o()), e.pathname.split("/").some(e => "comments" === e), Object(b.j)(o());
+						s(C({
 							action: t,
-							listingKey: w,
+							listingKey: R,
 							location: e,
 							routeMatch: i,
-							user: y
-						})), (null === (a = null == v ? void 0 : v.locationState) || void 0 === a ? void 0 : a.clickId) && m.d[v.locationState.clickId] && !m.d[v.locationState.clickId].completed && Object(m.b)(v.locationState.clickId);
-						const T = i && Object(b.w)(i);
-						(null === (l = null == e ? void 0 : e.state) || void 0 === l ? void 0 : l.clickId) && (m.d[e.state.clickId] ? Object(m.c)(e.state.clickId) : i && T && r.R.has(T) && r.Q.has(e.state.clickSource) && Object(m.a)(e.state.clickId, e.state.clickSource, o, i, e.state[c.b.ClickSourceFeedCorrelationId], v)), v && Object(n.a)(v.url, e) || g.b.isEnabled
+							user: F
+						}));
+						const j = (null === (w = null === (l = null === (a = null == I ? void 0 : I.routeMatch) || void 0 === a ? void 0 : a.route) || void 0 === l ? void 0 : l.meta) || void 0 === w ? void 0 : w.name) === (null === (E = null === (y = null == i ? void 0 : i.route) || void 0 === y ? void 0 : y.meta) || void 0 === E ? void 0 : E.name) && (null == i ? void 0 : i.route.meta.name) === r.Sb.COMMENTS && e.pathname.includes(m.b),
+							P = j && e.state.clickSource !== m.a.POST_DETAIL_COMMENT_SEARCH,
+							x = j && (null === (S = null == I ? void 0 : I.locationState) || void 0 === S ? void 0 : S.clickSource) === m.a.POST_DETAIL_COMMENT_SEARCH;
+						(null === (T = null == I ? void 0 : I.locationState) || void 0 === T ? void 0 : T.clickId) && p.d[I.locationState.clickId] && !p.d[I.locationState.clickId].completed && (P && !x || Object(p.b)(I.locationState.clickId));
+						const D = i && Object(g.w)(i);
+						(null === (O = null == e ? void 0 : e.state) || void 0 === O ? void 0 : O.clickId) && (p.d[e.state.clickId] ? Object(p.c)(e.state.clickId) : i && D && r.R.has(D) && r.Q.has(e.state.clickSource) && Object(p.a)(e.state.clickId, e.state.clickSource, o, i, e.state[c.b.ClickSourceFeedCorrelationId], I)), I && Object(n.a)(I.url, e) || v.b.isEnabled
 					})(e, t, i)), await s(((e, t) => async (i, r, s) => {
 						var o, d;
 						const u = r().platform.currentPage;
 						if (u && Object(n.a)(null == u ? void 0 : u.url, e)) return;
 						let c = !1;
-						if (g.b.isEnabled) {
+						if (v.b.isEnabled) {
 							if (Object(a.a)(null !== (d = null === (o = null == u ? void 0 : u.locationState) || void 0 === o ? void 0 : o.closeLocation) && void 0 !== d ? d : {}, e)) {
-								const e = g.b.createRootSpanId();
-								g.b.setParent(e), i(Object(l.b)(e.spanId))
+								const e = v.b.createRootSpanId();
+								v.b.setParent(e), i(Object(l.b)(e.spanId))
 							} else c = !0
 						}
 						if (t) {
@@ -11798,20 +11803,20 @@
 								match: e
 							} = t;
 							if (c) {
-								const n = g.b.createRootSpanId();
-								g.b.setParent(n), i(Object(l.b)(n.spanId));
+								const n = v.b.createRootSpanId();
+								v.b.setParent(n), i(Object(l.b)(n.spanId));
 								const o = null == t ? void 0 : t.route.action.name,
 									d = (null == t ? void 0 : t.route) ? `${o}_${t.route.meta.name}` : "",
 									a = {
-										[g.a.HttpUrl]: e.url
+										[v.a.HttpUrl]: e.url
 									};
-								await g.b.recordRequest(d, a, async () => {
+								await v.b.recordRequest(d, a, async () => {
 									await t.route.action(e)(i, r, s)
 								})
 							} else await t.route.action(e)(i, r, s)
 						}
 					})(e, i))
-				}, F = Object(o.a)(v), C = (Object(o.a)(w), Object(o.a)(S)), N = Object(o.a)(T), A = Object(o.a)(O), j = e => async (t, i, n) => {
+				}, C = Object(o.a)(w), N = (Object(o.a)(y), Object(o.a)(T)), A = Object(o.a)(O), j = Object(o.a)(I), P = e => async (t, i, n) => {
 					const r = i(),
 						{
 							currentPage: s
@@ -11820,11 +11825,11 @@
 					const {
 						key: o
 					} = s;
-					await t(C({
+					await t(N({
 						key: o,
 						meta: e
 					}))
-				}, P = Object(o.a)(y), x = Object(o.a)(E), D = () => async (e, t, i) => {
+				}, x = Object(o.a)(E), D = Object(o.a)(S), L = () => async (e, t, i) => {
 					if (window !== window.parent) {
 						Object(s.sendRavenError)(i.apiContext(), {
 							extra: {
@@ -12752,7 +12757,7 @@
 								n = Object(s.c)(i);
 							e(Object(se.a)({
 								pathname: n.pathname,
-								state: Object(Z.b)(t),
+								state: Object(Z.c)(t),
 								search: n.search
 							}))
 						}
@@ -22941,17 +22946,34 @@
 			"use strict";
 			i.d(t, "a", (function() {
 				return n
-			})), i.d(t, "c", (function() {
-				return a
 			})), i.d(t, "b", (function() {
+				return a
+			})), i.d(t, "e", (function() {
 				return l
+			})), i.d(t, "d", (function() {
+				return u
+			})), i.d(t, "c", (function() {
+				return c
 			}));
 			var n, r = i("./src/lib/constants/index.ts"),
 				s = i("./src/reddit/constants/history.ts"),
 				o = i("./src/reddit/selectors/telemetry.ts"),
 				d = i("./node_modules/uuid/dist/esm-browser/v4.js");
+			! function(e) {
+				e.SEARCH_RESULTS = "search_results", e.SEARCH_RESULTS_TRENDING = "search_results_trending", e.SEARCH_COMMENTS_BUTTON = "search_comments_button", e.SEARCH_COMMENTS_TAB = "search_comments_tab", e.SEARCH_COMMUNITIES_TAB = "search_communities_tab", e.SEARCH_AUTHORS_TAB = "search_authors_tab", e.SEARCH_POSTS_TAB = "search_posts_tab", e.TYPEAHEAD = "typeahead", e.SEARCH_DROPDOWN = "search_dropdown", e.POST_DETAIL = "post_detail", e.POST_DETAIL_COMMENT_SEARCH = "post_detail_comment_search"
+			}(n || (n = {}));
+			const a = "/search";
 
-			function a(e, t) {
+			function l(e) {
+				if (!(null == e ? void 0 : e.url.includes(a))) return !1;
+				const {
+					q: t,
+					type: i
+				} = (null == e ? void 0 : e.queryParams) || {};
+				return !!t && (null == i ? void 0 : i.includes(r.ic.Comments))
+			}
+
+			function u(e, t) {
 				let i = !(arguments.length > 2 && void 0 !== arguments[2]) || arguments[2];
 				return {
 					[s.b.SearchOriginPage]: t,
@@ -22962,7 +22984,7 @@
 				}
 			}
 
-			function l(e) {
+			function c(e) {
 				var t;
 				let i = e ? Object(o.v)(e) : void 0;
 				if (i === n.SEARCH_RESULTS)
@@ -22986,15 +23008,15 @@
 							default:
 								i = n.SEARCH_POSTS_TAB
 						}
-					} const a = null === (t = null == e ? void 0 : e.locationState) || void 0 === t ? void 0 : t[s.b.FeedCorrelationId];
+					}
+				else i === n.POST_DETAIL && l(e) && (i = n.POST_DETAIL_COMMENT_SEARCH);
+				const a = null === (t = null == e ? void 0 : e.locationState) || void 0 === t ? void 0 : t[s.b.FeedCorrelationId];
 				return {
 					[s.b.ClickSource]: i,
 					[s.b.ClickId]: Object(d.a)(),
 					[s.b.ClickSourceFeedCorrelationId]: a
 				}
-			}! function(e) {
-				e.SEARCH_RESULTS = "search_results", e.SEARCH_RESULTS_TRENDING = "search_results_trending", e.SEARCH_COMMENTS_TAB = "search_comments_tab", e.SEARCH_COMMUNITIES_TAB = "search_communities_tab", e.SEARCH_AUTHORS_TAB = "search_authors_tab", e.SEARCH_POSTS_TAB = "search_posts_tab", e.TYPEAHEAD = "typeahead", e.SEARCH_DROPDOWN = "search_dropdown"
-			}(n || (n = {}))
+			}
 		},
 		"./src/reddit/helpers/cookies/index.ts": function(e, t, i) {
 			"use strict";
@@ -43806,7 +43828,7 @@
 				e.Recent = "history", e.Search = "search", e.Topics = "topics", e.Trending = "trending", e.PromotedTrend = "promoted_trend", e.TrendingApproval = "trending_approval_tool"
 			}(Mt || (Mt = {})),
 			function(e) {
-				e.SearchBar = "search_bar", e.FullSearchButton = "full_search_button", e.CommentSearchBar = "comment_search_bar"
+				e.SearchBar = "search_bar", e.FullSearchButton = "full_search_button"
 			}(Ut || (Ut = {})),
 			function(e) {
 				e.Range = "range"
@@ -50665,4 +50687,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a254d73807349ba5f6da.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.780871e1cd7be86bf708.js.map

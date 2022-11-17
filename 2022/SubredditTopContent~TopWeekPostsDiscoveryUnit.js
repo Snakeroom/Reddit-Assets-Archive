@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.0f935aeab9d6b8beed6c.js
-// Retrieved at 11/16/2022, 11:20:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.0a6e751b8f597e3c5d92.js
+// Retrieved at 11/17/2022, 2:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent~TopWeekPostsDiscoveryUnit"], {
 		"./node_modules/react-motion/lib/Motion.js": function(e, t, s) {
@@ -1444,7 +1444,7 @@
 					return {
 						openOverlay: t => e(Object(C.a)({
 							pathname: Object(P.b)(t.permalink),
-							state: Object(k.b)(a)
+							state: Object(k.c)(a)
 						})),
 						trackPostClick: (t, s) => e((e, a) => n ? S.j(a(), n, t, s) : null),
 						trackPostSubredditClick: t => e((e, a) => s ? S.l(a(), s, t) : n ? S.l(a(), n, t) : null),
@@ -2662,4 +2662,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.0f935aeab9d6b8beed6c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.0a6e751b8f597e3c5d92.js.map
