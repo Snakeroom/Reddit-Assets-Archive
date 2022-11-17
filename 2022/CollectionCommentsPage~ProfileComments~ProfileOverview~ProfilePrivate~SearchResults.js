@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.074d29f95a734166af19.js
-// Retrieved at 11/16/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.413a03e0f1cfc7564174.js
+// Retrieved at 11/16/2022, 7:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -671,7 +671,8 @@
 							bannedAtUTC: Date.now(),
 							isApproved: !1,
 							isRemoved: !t,
-							isSpam: t
+							isSpam: t,
+							numReports: 0
 						}
 					})), (await Object(l.h)(a(), e, t)).ok ? n(Object(c.f)({
 						kind: h.b.SuccessMod,
@@ -686,7 +687,8 @@
 							bannedBy: u.bannedBy,
 							isApproved: u.isApproved,
 							isRemoved: u.isRemoved,
-							isSpam: u.isSpam
+							isSpam: u.isSpam,
+							numReports: u.numReports
 						}
 					})), Object(d.d)())
 				}, y = e => async (t, n, s) => {
@@ -2600,4 +2602,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.074d29f95a734166af19.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.413a03e0f1cfc7564174.js.map

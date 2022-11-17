@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModModeBanners.4c2b3e52192bab0d660f.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModModeBanners.7d8ab9867c0927b3a00a.js
+// Retrieved at 11/16/2022, 7:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModModeBanners"], {
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, s) {
@@ -126,7 +126,8 @@
 							bannedAtUTC: Date.now(),
 							isApproved: !1,
 							isRemoved: !t,
-							isSpam: t
+							isSpam: t,
+							numReports: 0
 						}
 					})), (await Object(m.h)(d(), e, t)).ok ? s(Object(c.f)({
 						kind: b.b.SuccessMod,
@@ -141,7 +142,8 @@
 							bannedBy: p.bannedBy,
 							isApproved: p.isApproved,
 							isRemoved: p.isRemoved,
-							isSpam: p.isSpam
+							isSpam: p.isSpam,
+							numReports: p.numReports
 						}
 					})), Object(i.d)())
 				}, C = e => async (t, s, n) => {
@@ -423,7 +425,7 @@
 					let e;
 					s();
 					const o = t.ignoreReports ? "restore_reports" : "ignore_reports";
-					e = Object(p.a)(t.id) ? Object(u.j)(o, t.id) : Object(u.i)(o, t.id), d(e)
+					e = Object(p.a)(t.id) ? Object(u.k)(o, t.id) : Object(u.j)(o, t.id), d(e)
 				}, c = (t.modReportsDismissed && t.modReportsDismissed.length || 0) + (t.userReportsDismissed && t.userReportsDismissed.length || 0);
 				return c ? r.a.createElement(_, {
 					collapseReports: o,
@@ -499,7 +501,7 @@
 					super(...arguments), this.tooltipTarget = null, this.setTooltipTargetRef = e => this.tooltipTarget = e, this.onSnoozeButtonClick = () => {
 						const e = this.props.isSnoozed ? i.kc.None : i.kc.Snoozed;
 						this.props.toggleSnooze(e);
-						const t = Object(g.n)(Object(R.a)(this.props.reportedThingId), this.props.isSnoozed, this.props.reportedThingId, this.props.reason);
+						const t = Object(g.o)(Object(R.a)(this.props.reportedThingId), this.props.isSnoozed, this.props.reportedThingId, this.props.reason);
 						this.props.sendEvent(t)
 					}
 				}
@@ -687,4 +689,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.4c2b3e52192bab0d660f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.7d8ab9867c0927b3a00a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.0256a920da34d6912d86.js
-// Retrieved at 11/16/2022, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.b89175a27863f5263f46.js
+// Retrieved at 11/16/2022, 7:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -3111,7 +3111,8 @@
 							bannedAtUTC: Date.now(),
 							isApproved: !1,
 							isRemoved: !t,
-							isSpam: t
+							isSpam: t,
+							numReports: 0
 						}
 					})), (await Object(u.h)(a(), e, t)).ok ? n(Object(c.f)({
 						kind: b.b.SuccessMod,
@@ -3126,7 +3127,8 @@
 							bannedBy: m.bannedBy,
 							isApproved: m.isApproved,
 							isRemoved: m.isRemoved,
-							isSpam: m.isSpam
+							isSpam: m.isSpam,
+							numReports: m.numReports
 						}
 					})), Object(d.d)())
 				}, j = e => async (t, n, r) => {
@@ -32210,7 +32212,7 @@
 					}, o.a.createElement(R.a, {
 						model: ce,
 						onIgnoreReports: () => {
-							re(), ue(Object(G.m)(ce.ignoreReports ? "restore_reports" : "ignore_reports", ce.id))
+							re(), ue(Object(G.n)(ce.ignoreReports ? "restore_reports" : "ignore_reports", ce.id))
 						},
 						tooltipId: Qe
 					}), o.a.createElement(W.a, {
@@ -62973,9 +62975,9 @@
 		},
 		"./src/reddit/helpers/trackers/modTools.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "k", (function() {
+			n.d(t, "l", (function() {
 				return i
-			})), n.d(t, "l", (function() {
+			})), n.d(t, "m", (function() {
 				return a
 			})), n.d(t, "b", (function() {
 				return d
@@ -62991,16 +62993,18 @@
 				return p
 			})), n.d(t, "f", (function() {
 				return b
-			})), n.d(t, "m", (function() {
-				return f
-			})), n.d(t, "j", (function() {
-				return h
-			})), n.d(t, "i", (function() {
-				return _
 			})), n.d(t, "n", (function() {
+				return f
+			})), n.d(t, "k", (function() {
+				return h
+			})), n.d(t, "j", (function() {
+				return _
+			})), n.d(t, "o", (function() {
 				return g
 			})), n.d(t, "h", (function() {
 				return v
+			})), n.d(t, "i", (function() {
+				return x
 			}));
 			var s = n("./src/reddit/constants/tracking.ts"),
 				r = n("./src/reddit/selectors/telemetry.ts");
@@ -63155,6 +63159,22 @@
 					actionInfo: {
 						pageType: "chat_live_post"
 					}
+				}),
+				x = (e, t, n) => s => ({
+					...o(s),
+					source: "moderator",
+					noun: "action",
+					action: "click",
+					actionInfo: {
+						pageType: "mod_queue",
+						paneName: n,
+						reason: t
+					},
+					comment: Object(r.h)({
+						state: s,
+						commentId: e
+					}) || void 0,
+					post: Object(r.K)(s, e)
 				})
 		},
 		"./src/reddit/helpers/trackers/moderationPages.ts": function(e, t, n) {
@@ -78233,4 +78253,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.0256a920da34d6912d86.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.b89175a27863f5263f46.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.47673553c6b269cd5f1b.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.d2a9701b6fa8217f6e81.js
+// Retrieved at 11/16/2022, 7:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, o) {
@@ -35,8 +35,8 @@
 				u = o("./src/reddit/models/Reportable/index.ts"),
 				b = o("./src/reddit/models/Toast/index.ts"),
 				x = o("./src/reddit/selectors/commentSelector.ts"),
-				g = o("./src/reddit/selectors/user.ts"),
-				R = o("./src/reddit/actions/comment/index.ts"),
+				R = o("./src/reddit/selectors/user.ts"),
+				g = o("./src/reddit/actions/comment/index.ts"),
 				h = o("./src/reddit/actions/comment/constants.ts");
 			const f = Object(r.a)(h.p),
 				j = e => async (t, o, s) => {
@@ -52,11 +52,11 @@
 					let {
 						apiContext: r
 					} = n;
-					if (!Object(g.R)(o())) return void t(Object(i.i)(l.a.LOGIN_MODAL_ID));
+					if (!Object(R.R)(o())) return void t(Object(i.i)(l.a.LOGIN_MODAL_ID));
 					const d = o().features.comments.models[e];
 					if (!d) return;
 					const c = d.isLocked ? p.l : p.f;
-					t(Object(R.j)({
+					t(Object(g.j)({
 						[e]: {
 							isLocked: !d.isLocked
 						}
@@ -67,7 +67,7 @@
 						}) : s.fbt._("comment has been locked", null, {
 							hk: "1pBDQl"
 						})
-					})) : t(Object(R.j)({
+					})) : t(Object(g.j)({
 						[e]: {
 							isLocked: d.isLocked
 						}
@@ -80,7 +80,7 @@
 					const i = o(),
 						l = i.features.comments.models[e],
 						m = i.user.account ? i.user.account.displayText : null;
-					l && m && (t(Object(R.j)({
+					l && m && (t(Object(g.j)({
 						[e]: {
 							isApproved: !0,
 							approvedBy: m,
@@ -98,7 +98,7 @@
 						text: s.fbt._("comment has been approved", null, {
 							hk: "4GfKQi"
 						})
-					})) : t(Object(R.j)({
+					})) : t(Object(g.j)({
 						[e]: {
 							isApproved: l.isApproved,
 							approvedBy: null,
@@ -119,14 +119,15 @@
 					const l = n(),
 						m = l.features.comments.models[e],
 						u = l.user.account ? l.user.account.displayText : null;
-					m && u && (o(Object(R.j)({
+					m && u && (o(Object(g.j)({
 						[e]: {
 							approvedBy: null,
 							bannedBy: u,
 							bannedAtUTC: Date.now(),
 							isApproved: !1,
 							isRemoved: !t,
-							isSpam: t
+							isSpam: t,
+							numReports: 0
 						}
 					})), (await Object(p.h)(i(), e, t)).ok ? o(Object(a.f)({
 						kind: b.b.SuccessMod,
@@ -135,13 +136,14 @@
 						}) : s.fbt._("comment has been removed", null, {
 							hk: "1qNTrD"
 						})
-					})) : o(Object(R.j)({
+					})) : o(Object(g.j)({
 						[e]: {
 							approvedBy: m.approvedBy,
 							bannedBy: m.bannedBy,
 							isApproved: m.isApproved,
 							isRemoved: m.isRemoved,
-							isSpam: m.isSpam
+							isSpam: m.isSpam,
+							numReports: m.numReports
 						}
 					})), Object(c.d)())
 				}, C = e => async (t, o, n) => {
@@ -151,7 +153,7 @@
 					const d = o().features.comments.models[e];
 					if (!d) return;
 					const i = d.ignoreReports ? p.k : p.e;
-					t(Object(R.j)({
+					t(Object(g.j)({
 						[e]: {
 							ignoreReports: !d.ignoreReports
 						}
@@ -162,7 +164,7 @@
 						}) : s.fbt._("comment has had its reports ignored", null, {
 							hk: "2q4sCp"
 						})
-					})) : t(Object(R.j)({
+					})) : t(Object(g.j)({
 						[e]: {
 							ignoreReports: d.ignoreReports
 						}
@@ -176,14 +178,14 @@
 					});
 					if (!l) return;
 					const p = o === n.kc.Snoozed,
-						g = {
+						R = {
 							itemId: e,
 							reportText: t,
 							isSnoozed: p
 						};
 					if ((await Object(m.a)(c(), {
-							input: g
-						})).ok) r(Object(R.j)({
+							input: R
+						})).ok) r(Object(g.j)({
 						[e]: {
 							userReports: Object(u.a)(l.userReports, t, p)
 						}
@@ -204,36 +206,36 @@
 					if (!m) return;
 					const u = m.postId,
 						b = l.postStickiedComments.data[u];
-					s(Object(R.j)({
+					s(Object(g.j)({
 						[e]: {
 							distinguishType: t,
 							isAdmin: t === n.J.ADMIN,
 							isMod: t === n.J.MODERATOR,
 							isStickied: !!o
 						}
-					})), o && b && b !== e && s(Object(R.j)({
+					})), o && b && b !== e && s(Object(g.j)({
 						[b]: {
 							isStickied: !1
 						}
 					}));
 					const x = Object(p.c)(a(), e, t),
-						g = Object(p.d)(a(), e, !!o),
+						R = Object(p.d)(a(), e, !!o),
 						h = [x];
-					(o || !o && e === b) && h.push(g), (await Promise.all(h)).every(e => e.ok) ? o && s(O({
+					(o || !o && e === b) && h.push(R), (await Promise.all(h)).every(e => e.ok) ? o && s(O({
 						id: e,
 						postId: u,
 						commentsPageKey: Object(d.a)(u, null, {
 							sort: n.w.CONFIDENCE,
 							...l.platform.currentPage.queryParams
 						})
-					})) : (s(Object(R.j)({
+					})) : (s(Object(g.j)({
 						[e]: {
 							distinguishType: m.distinguishType,
 							isAdmin: m.isAdmin,
 							isMod: m.isMod,
 							isStickied: m.isStickied
 						}
-					})), s(Object(R.j)({
+					})), s(Object(g.j)({
 						[b]: {
 							isStickied: l.features.comments.models[b].isStickied
 						}
@@ -270,8 +272,8 @@
 				u = o("./src/reddit/components/TrackingHelper/index.tsx"),
 				b = o("./src/reddit/controls/Dropdown/index.tsx"),
 				x = o("./src/reddit/controls/Dropdown/Row.tsx"),
-				g = o("./src/reddit/helpers/isComment.ts"),
-				R = o("./src/reddit/helpers/trackers/modTools.ts"),
+				R = o("./src/reddit/helpers/isComment.ts"),
+				g = o("./src/reddit/helpers/trackers/modTools.ts"),
 				h = o("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
 				f = o("./src/reddit/icons/svgs/ChevronUp/index.tsx"),
 				j = o("./src/reddit/icons/svgs/Clock/index.tsx"),
@@ -288,7 +290,7 @@
 					tooltipId: _(t.reason, t.reportedThingId)
 				})),
 				toggleSnooze: o => {
-					Object(g.a)(t.reportedThingId) ? e(Object(a.h)(t.reportedThingId, t.reason, o)) : e(Object(l.gb)(t.reportedThingId, t.reason, o))
+					Object(R.a)(t.reportedThingId) ? e(Object(a.h)(t.reportedThingId, t.reason, o)) : e(Object(l.gb)(t.reportedThingId, t.reason, o))
 				}
 			})), S = Object(m.a)(b.a);
 			class y extends n.a.Component {
@@ -296,7 +298,7 @@
 					super(...arguments), this.tooltipTarget = null, this.setTooltipTargetRef = e => this.tooltipTarget = e, this.onSnoozeButtonClick = () => {
 						const e = this.props.isSnoozed ? c.kc.None : c.kc.Snoozed;
 						this.props.toggleSnooze(e);
-						const t = Object(R.n)(Object(g.a)(this.props.reportedThingId), this.props.isSnoozed, this.props.reportedThingId, this.props.reason);
+						const t = Object(g.o)(Object(R.a)(this.props.reportedThingId), this.props.isSnoozed, this.props.reportedThingId, this.props.reason);
 						this.props.sendEvent(t)
 					}
 				}
@@ -442,14 +444,14 @@
 				u = o("./src/reddit/components/RestrictedFlatlistButton/index.tsx"),
 				b = o("./src/reddit/layout/row/Inline/index.tsx"),
 				x = o("./src/reddit/components/ViewReportsDropdown/ReportsList.m.less"),
-				g = o.n(x);
-			const R = i.a.wrapped(b.a, "Footer", g.a),
-				h = i.a.wrapped(u.c, "FooterButton", g.a);
+				R = o.n(x);
+			const g = i.a.wrapped(b.a, "Footer", R.a),
+				h = i.a.wrapped(u.c, "FooterButton", R.a);
 			var f = e => n.a.createElement("div", null, n.a.createElement(m.a, {
 					modReports: e.modReports,
 					userReports: e.userReports,
 					reportedThingId: e.reportedThingId
-				}), !e.isShowingHistoricalReports && n.a.createElement(R, null, n.a.createElement(h, {
+				}), !e.isShowingHistoricalReports && n.a.createElement(g, null, n.a.createElement(h, {
 					onClick: e.onIgnoreReports,
 					text: e.ignoreReports ? p.fbt._("Restore reports", null, {
 						hk: "3wbqh7"
@@ -566,4 +568,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.47673553c6b269cd5f1b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.d2a9701b6fa8217f6e81.js.map

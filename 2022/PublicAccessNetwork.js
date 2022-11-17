@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.c7cdc97c4e0796bfc657.js
-// Retrieved at 11/16/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.9dc34b3651ce88b9b309.js
+// Retrieved at 11/16/2022, 7:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -816,7 +816,8 @@
 							bannedAtUTC: Date.now(),
 							isApproved: !1,
 							isRemoved: !t,
-							isSpam: t
+							isSpam: t,
+							numReports: 0
 						}
 					})), (await Object(m.h)(i(), e, t)).ok ? s(Object(c.f)({
 						kind: b.b.SuccessMod,
@@ -831,7 +832,8 @@
 							bannedBy: u.bannedBy,
 							isApproved: u.isApproved,
 							isRemoved: u.isRemoved,
-							isSpam: u.isSpam
+							isSpam: u.isSpam,
+							numReports: u.numReports
 						}
 					})), Object(d.d)())
 				}, E = e => async (t, s, n) => {
@@ -8076,4 +8078,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.c7cdc97c4e0796bfc657.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.9dc34b3651ce88b9b309.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.d04b0533a7b56728928d.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.0473e070af7875cdd4b0.js
+// Retrieved at 11/16/2022, 7:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, o) {
@@ -858,7 +858,7 @@
 					layout: m,
 					modModeEnabled: p,
 					onApprovePost: () => {
-						b(), T(Object(_.l)("approve", y.id))
+						b(), T(Object(_.m)("approve", y.id))
 					},
 					onCancelPrediction: () => {
 						f(), T(Object(v.a)(y.id))
@@ -870,37 +870,37 @@
 						h(), T(Object(v.c)(y.id))
 					},
 					onRemovePost: () => {
-						g(), Object(C.b)(y) ? T(Object(v.d)(y.id)) : T(Object(_.l)("remove", y.id))
+						g(), Object(C.b)(y) ? T(Object(v.d)(y.id)) : T(Object(_.m)("remove", y.id))
 					},
 					onSpamPost: () => {
-						N(), T(Object(_.l)("spam", y.id))
+						N(), T(Object(_.m)("spam", y.id))
 					},
 					onDistinguishPost: () => {
-						O(L), T(Object(_.l)(I ? "undistinguish" : "distinguish", y.id))
+						O(L), T(Object(_.m)(I ? "undistinguish" : "distinguish", y.id))
 					},
 					onFlairPost: () => {
-						E(R), T(Object(_.l)("post_flair", y.id))
+						E(R), T(Object(_.m)("post_flair", y.id))
 					},
 					onLockPost: () => {
-						k(), T(Object(_.l)(y.isLocked ? "unlock" : "lock", y.id))
+						k(), T(Object(_.m)(y.isLocked ? "unlock" : "lock", y.id))
 					},
 					onNsfwPost: () => {
-						P(), T(Object(_.l)(y.isNSFW ? "unmark_nsfw" : "mark_nsfw", y.id))
+						P(), T(Object(_.m)(y.isNSFW ? "unmark_nsfw" : "mark_nsfw", y.id))
 					},
 					onOcPost: () => {
-						j(), T(Object(_.l)(y.isOriginalContent ? "unmark_original_content" : "mark_original_content", y.id))
+						j(), T(Object(_.m)(y.isOriginalContent ? "unmark_original_content" : "mark_original_content", y.id))
 					},
 					onCcPost: () => {
 						M()
 					},
 					onModToMemberShareOpened: () => {
-						D(), T(Object(_.l)("mod_to_member_share", y.id))
+						D(), T(Object(_.m)("mod_to_member_share", y.id))
 					},
 					onSpoilerPost: () => {
-						w(), T(Object(_.l)(y.isSpoiler ? "unmark_spoiler" : "mark_spoiler", y.id))
+						w(), T(Object(_.m)(y.isSpoiler ? "unmark_spoiler" : "mark_spoiler", y.id))
 					},
 					onStickyPost: () => {
-						S(), T(Object(_.l)(y.isStickied ? "unsticky" : "sticky", y.id))
+						S(), T(Object(_.m)(y.isStickied ? "unsticky" : "sticky", y.id))
 					},
 					post: y
 				}))
@@ -1242,4 +1242,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.d04b0533a7b56728928d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.0473e070af7875cdd4b0.js.map

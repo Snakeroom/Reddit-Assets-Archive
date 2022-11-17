@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost.1a7b66d6a1732dc78990.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost.6e0b23d74ce7361c4d99.js
+// Retrieved at 11/16/2022, 7:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./src/lib/memoizeByReference/index.ts": function(e, t, n) {
@@ -295,9 +295,9 @@
 						clearTimeout(M.current), clearTimeout(R.current), clearTimeout(S.current)
 					}
 				}, [t]);
-				const U = Object(r.useCallback)(() => x(!0), [x]),
-					q = 0 === C.length,
-					W = _ || q,
+				const q = Object(r.useCallback)(() => x(!0), [x]),
+					U = 0 === C.length,
+					W = _ || U,
 					H = Object(r.useRef)(((e, t) => `${t}_${e}_count_anim`)(h, n));
 				return o.a.createElement(o.a.Fragment, null, !f && o.a.createElement("div", {
 					className: l.a.countAnimation
@@ -315,7 +315,7 @@
 						"aria-hidden": !0,
 						className: l.a.digitDeltaWrapper,
 						key: t,
-						onTransitionEnd: U,
+						onTransitionEnd: q,
 						style: j && C.length > 0 && !_ ? {
 							transform: `translateY(-${O&&n.length>1?100:100*(n.length-1)}%)`,
 							transitionDuration: `${(O?500:750)/1e3}s`
@@ -1427,7 +1427,7 @@
 			})), n.d(t, "clickNextFiltersEvent", (function() {
 				return V
 			})), n.d(t, "clickPreviousFiltersEvent", (function() {
-				return U
+				return q
 			}));
 			var r = n("./src/reddit/helpers/trackers/commentsChat.ts"),
 				o = n("./src/reddit/models/Gold/Award.ts"),
@@ -1647,7 +1647,7 @@
 					action: "click",
 					noun: "next_filters"
 				}),
-				U = () => e => ({
+				q = () => e => ({
 					...p(e),
 					source: "give_gold",
 					action: "click",
@@ -1889,9 +1889,9 @@
 		},
 		"./src/reddit/helpers/trackers/modTools.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "k", (function() {
+			n.d(t, "l", (function() {
 				return c
-			})), n.d(t, "l", (function() {
+			})), n.d(t, "m", (function() {
 				return a
 			})), n.d(t, "b", (function() {
 				return i
@@ -1907,16 +1907,18 @@
 				return p
 			})), n.d(t, "f", (function() {
 				return f
-			})), n.d(t, "m", (function() {
-				return b
-			})), n.d(t, "j", (function() {
-				return h
-			})), n.d(t, "i", (function() {
-				return g
 			})), n.d(t, "n", (function() {
+				return b
+			})), n.d(t, "k", (function() {
+				return h
+			})), n.d(t, "j", (function() {
+				return g
+			})), n.d(t, "o", (function() {
 				return v
 			})), n.d(t, "h", (function() {
 				return O
+			})), n.d(t, "i", (function() {
+				return w
 			}));
 			var r = n("./src/reddit/constants/tracking.ts"),
 				o = n("./src/reddit/selectors/telemetry.ts");
@@ -2071,6 +2073,22 @@
 					actionInfo: {
 						pageType: "chat_live_post"
 					}
+				}),
+				w = (e, t, n) => r => ({
+					...s(r),
+					source: "moderator",
+					noun: "action",
+					action: "click",
+					actionInfo: {
+						pageType: "mod_queue",
+						paneName: n,
+						reason: t
+					},
+					comment: Object(o.h)({
+						state: r,
+						commentId: e
+					}) || void 0,
+					post: Object(o.K)(r, e)
 				})
 		},
 		"./src/reddit/helpers/trackers/userFlair.ts": function(e, t, n) {
@@ -2604,4 +2622,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost.1a7b66d6a1732dc78990.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost.6e0b23d74ce7361c4d99.js.map

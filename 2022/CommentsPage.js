@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.50d02c00df0085bfb234.js
-// Retrieved at 11/16/2022, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.8aef3e812504762dc14a.js
+// Retrieved at 11/16/2022, 7:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -4398,7 +4398,8 @@
 							bannedAtUTC: Date.now(),
 							isApproved: !1,
 							isRemoved: !t,
-							isSpam: t
+							isSpam: t,
+							numReports: 0
 						}
 					})), (await Object(u.h)(a(), e, t)).ok ? n(Object(d.f)({
 						kind: b.b.SuccessMod,
@@ -4413,7 +4414,8 @@
 							bannedBy: m.bannedBy,
 							isApproved: m.isApproved,
 							isRemoved: m.isRemoved,
-							isSpam: m.isSpam
+							isSpam: m.isSpam,
+							numReports: m.numReports
 						}
 					})), Object(c.d)())
 				}, j = e => async (t, n, r) => {
@@ -39129,9 +39131,9 @@
 		},
 		"./src/reddit/helpers/trackers/modTools.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "k", (function() {
+			n.d(t, "l", (function() {
 				return i
-			})), n.d(t, "l", (function() {
+			})), n.d(t, "m", (function() {
 				return a
 			})), n.d(t, "b", (function() {
 				return c
@@ -39147,16 +39149,18 @@
 				return p
 			})), n.d(t, "f", (function() {
 				return b
-			})), n.d(t, "m", (function() {
-				return f
-			})), n.d(t, "j", (function() {
-				return h
-			})), n.d(t, "i", (function() {
-				return C
 			})), n.d(t, "n", (function() {
+				return f
+			})), n.d(t, "k", (function() {
+				return h
+			})), n.d(t, "j", (function() {
+				return C
+			})), n.d(t, "o", (function() {
 				return g
 			})), n.d(t, "h", (function() {
 				return _
+			})), n.d(t, "i", (function() {
+				return x
 			}));
 			var s = n("./src/reddit/constants/tracking.ts"),
 				r = n("./src/reddit/selectors/telemetry.ts");
@@ -39311,6 +39315,22 @@
 					actionInfo: {
 						pageType: "chat_live_post"
 					}
+				}),
+				x = (e, t, n) => s => ({
+					...o(s),
+					source: "moderator",
+					noun: "action",
+					action: "click",
+					actionInfo: {
+						pageType: "mod_queue",
+						paneName: n,
+						reason: t
+					},
+					comment: Object(r.h)({
+						state: s,
+						commentId: e
+					}) || void 0,
+					post: Object(r.K)(s, e)
 				})
 		},
 		"./src/reddit/helpers/trackers/navigation.ts": function(e, t, n) {
@@ -50361,4 +50381,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.50d02c00df0085bfb234.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.8aef3e812504762dc14a.js.map

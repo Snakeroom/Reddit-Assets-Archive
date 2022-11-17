@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.6c665f8b01817e355811.js
-// Retrieved at 11/16/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.1f2ce02c9df5f1a3a9a8.js
+// Retrieved at 11/16/2022, 7:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./node_modules/lodash/map.js": function(e, t, s) {
@@ -150,7 +150,8 @@
 							bannedAtUTC: Date.now(),
 							isApproved: !1,
 							isRemoved: !t,
-							isSpam: t
+							isSpam: t,
+							numReports: 0
 						}
 					})), (await Object(u.h)(d(), e, t)).ok ? s(Object(i.f)({
 						kind: p.b.SuccessMod,
@@ -165,7 +166,8 @@
 							bannedBy: m.bannedBy,
 							isApproved: m.isApproved,
 							isRemoved: m.isRemoved,
-							isSpam: m.isSpam
+							isSpam: m.isSpam,
+							numReports: m.numReports
 						}
 					})), Object(c.d)())
 				}, I = e => async (t, s, n) => {
@@ -1008,4 +1010,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.6c665f8b01817e355811.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.1f2ce02c9df5f1a3a9a8.js.map

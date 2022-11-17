@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.13d23fbb6bc4ebccdb24.js
-// Retrieved at 11/16/2022, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.09f463bdc31bf6c2ef70.js
+// Retrieved at 11/16/2022, 7:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -4886,9 +4886,9 @@
 		},
 		"./src/reddit/helpers/trackers/modTools.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "k", (function() {
+			n.d(t, "l", (function() {
 				return i
-			})), n.d(t, "l", (function() {
+			})), n.d(t, "m", (function() {
 				return a
 			})), n.d(t, "b", (function() {
 				return c
@@ -4904,16 +4904,18 @@
 				return p
 			})), n.d(t, "f", (function() {
 				return b
-			})), n.d(t, "m", (function() {
-				return f
-			})), n.d(t, "j", (function() {
-				return h
-			})), n.d(t, "i", (function() {
-				return v
 			})), n.d(t, "n", (function() {
+				return f
+			})), n.d(t, "k", (function() {
+				return h
+			})), n.d(t, "j", (function() {
+				return v
+			})), n.d(t, "o", (function() {
 				return g
 			})), n.d(t, "h", (function() {
 				return _
+			})), n.d(t, "i", (function() {
+				return O
 			}));
 			var r = n("./src/reddit/constants/tracking.ts"),
 				s = n("./src/reddit/selectors/telemetry.ts");
@@ -5068,6 +5070,22 @@
 					actionInfo: {
 						pageType: "chat_live_post"
 					}
+				}),
+				O = (e, t, n) => r => ({
+					...o(r),
+					source: "moderator",
+					noun: "action",
+					action: "click",
+					actionInfo: {
+						pageType: "mod_queue",
+						paneName: n,
+						reason: t
+					},
+					comment: Object(s.h)({
+						state: r,
+						commentId: e
+					}) || void 0,
+					post: Object(s.K)(r, e)
 				})
 		},
 		"./src/reddit/helpers/trackers/scheduledPosts.ts": function(e, t, n) {
@@ -7109,4 +7127,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.13d23fbb6bc4ebccdb24.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.09f463bdc31bf6c2ef70.js.map

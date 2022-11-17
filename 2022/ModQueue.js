@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.35df6acc11b804e08064.js
-// Retrieved at 11/16/2022, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.33580d495ac028e17626.js
+// Retrieved at 11/16/2022, 7:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, o) {
@@ -141,7 +141,8 @@
 							bannedAtUTC: Date.now(),
 							isApproved: !1,
 							isRemoved: !t,
-							isSpam: t
+							isSpam: t,
+							numReports: 0
 						}
 					})), (await Object(l.h)(i(), e, t)).ok ? o(Object(c.f)({
 						kind: p.b.SuccessMod,
@@ -156,7 +157,8 @@
 							bannedBy: m.bannedBy,
 							isApproved: m.isApproved,
 							isRemoved: m.isRemoved,
-							isSpam: m.isSpam
+							isSpam: m.isSpam,
+							numReports: m.numReports
 						}
 					})), Object(a.d)())
 				}, E = e => async (t, o, r) => {
@@ -1844,4 +1846,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.35df6acc11b804e08064.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.33580d495ac028e17626.js.map

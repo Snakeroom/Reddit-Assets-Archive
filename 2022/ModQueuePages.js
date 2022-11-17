@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.d76c67d415366f1600fa.js
-// Retrieved at 11/16/2022, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.a5ae8528253727d43dd8.js
+// Retrieved at 11/16/2022, 7:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -784,7 +784,8 @@
 							bannedAtUTC: Date.now(),
 							isApproved: !1,
 							isRemoved: !t,
-							isSpam: t
+							isSpam: t,
+							numReports: 0
 						}
 					})), (await Object(m.h)(a(), e, t)).ok ? n(Object(c.f)({
 						kind: b.b.SuccessMod,
@@ -799,7 +800,8 @@
 							bannedBy: u.bannedBy,
 							isApproved: u.isApproved,
 							isRemoved: u.isRemoved,
-							isSpam: u.isSpam
+							isSpam: u.isSpam,
+							numReports: u.numReports
 						}
 					})), Object(d.d)())
 				}, k = e => async (t, n, r) => {
@@ -8459,4 +8461,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.d76c67d415366f1600fa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.a5ae8528253727d43dd8.js.map
