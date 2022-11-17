@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f.7c2f71ba37941b33550a.js
-// Retrieved at 11/17/2022, 2:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f.eb7b87c51abc34ac3046.js
+// Retrieved at 11/17/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f"], {
 		"./src/lib/scroll/index.ts": function(e, t, o) {
@@ -230,7 +230,7 @@
 			const ie = Object(ce.a)(e => Object(se.c)(e, {
 				experimentEligibilitySelector: se.a,
 				experimentName: re.Bb
-			}), e => e === re.Kd);
+			}), e => e === re.Ld);
 			var ae = o("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				de = o("./src/reddit/selectors/platform.ts"),
 				le = o("./src/reddit/selectors/posts.ts"),
@@ -2173,4 +2173,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f.7c2f71ba37941b33550a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f.eb7b87c51abc34ac3046.js.map

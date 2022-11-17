@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.085f54e02847ee992387.js
-// Retrieved at 11/17/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.1d5fdc7e19d46489d5a9.js
+// Retrieved at 11/17/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1379,7 +1379,7 @@
 				return Object(i.c)(e, {
 					experimentEligibilitySelector: i.a,
 					experimentName: r.H
-				}) === r.Kd
+				}) === r.Ld
 			}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
@@ -1448,4 +1448,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.085f54e02847ee992387.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.1d5fdc7e19d46489d5a9.js.map

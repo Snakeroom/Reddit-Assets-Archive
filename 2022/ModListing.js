@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.34fd805518125258081f.js
-// Retrieved at 11/17/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.62990ac7b90d3f208d30.js
+// Retrieved at 11/17/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, r) {
@@ -506,9 +506,9 @@
 			})), r.d(t, "moreModListingRequested", (function() {
 				return B
 			})), r.d(t, "hideSubredditSuccess", (function() {
-				return q
-			})), r.d(t, "hideSubredditPending", (function() {
 				return V
+			})), r.d(t, "hideSubredditPending", (function() {
+				return q
 			})), r.d(t, "hideSubredditFailed", (function() {
 				return K
 			})), r.d(t, "unhideSubredditSuccess", (function() {
@@ -667,8 +667,8 @@
 				const t = m.O in e && e[m.O].toUpperCase() || "";
 				return t in o.oc && o.oc[t]
 			}
-			const q = Object(d.a)(M.c),
-				V = Object(d.a)(M.b),
+			const V = Object(d.a)(M.c),
+				q = Object(d.a)(M.b),
 				K = Object(d.a)(M.a),
 				U = Object(d.a)(M.l),
 				Q = Object(d.a)(M.k),
@@ -679,7 +679,7 @@
 					} = s;
 					const o = n(),
 						d = Object(k.l)(o),
-						[a, c, u, l] = t ? [V, q, K, O] : [Q, U, J, E];
+						[a, c, u, l] = t ? [q, V, K, O] : [Q, U, J, E];
 					if (!d || !d.displayText) return;
 					const {
 						currentPage: m
@@ -1781,8 +1781,8 @@
 				H = r("./src/reddit/helpers/trackers/modListing.ts"),
 				B = r("./src/reddit/routes/modListing/index.ts");
 			const D = e => e.modListingPage.filteredSubreddits.api.pending;
-			var q = r("./src/reddit/constants/keycodes.ts"),
-				V = r("./src/reddit/layout/row/Inline/index.tsx"),
+			var V = r("./src/reddit/constants/keycodes.ts"),
+				q = r("./src/reddit/layout/row/Inline/index.tsx"),
 				K = r("./src/reddit/components/ModListingSidebar/HideCommunities/HideInput/index.m.less"),
 				U = r.n(K);
 			const Q = Object(a.c)({
@@ -1804,14 +1804,14 @@
 					}, this.onChange = e => {
 						this.setSubredditInput(e.target.value)
 					}, this.onKeyPress = e => {
-						e.key === q.b.Enter && this.submitInput()
+						e.key === V.b.Enter && this.submitInput()
 					}, this.canSubmitInput = () => this.state.subredditInput && !this.props.isApiPending
 				}
 				render() {
 					const {
 						props: e
 					} = this;
-					return o.a.createElement(o.a.Fragment, null, o.a.createElement(V.a, null, o.a.createElement("input", {
+					return o.a.createElement(o.a.Fragment, null, o.a.createElement(q.a, null, o.a.createElement("input", {
 						className: U.a.input,
 						onChange: this.onChange,
 						onKeyPress: this.onKeyPress,
@@ -2085,7 +2085,7 @@
 				const b = Object(o.e)(e => e.subreddits.survey[r]),
 					p = Object(o.e)(e => e.subreddits.progressModule[r]),
 					h = Object(o.e)(l.a),
-					f = h !== c.Me.NewModule;
+					f = h !== c.Ne.NewModule;
 				return (null === (s = null == p ? void 0 : p.cards) || void 0 === s ? void 0 : s.length) > 0 && f ? i.a.createElement(m, {
 					closeModuleOnMount: !!t && t !== u.g.Large,
 					subredditId: r,
@@ -2147,15 +2147,15 @@
 			const o = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: i.R,
-						experimentName: n.qd
+						experimentName: n.rd
 					});
-					return !(!t || Object(n.tg)(t))
+					return !(!t || Object(n.ug)(t))
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: i.R,
-						experimentName: n.qd
-					}) === n.Od.ListingEnabled
+						experimentName: n.rd
+					}) === n.Pd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/experiments/recapLeadUpGame.ts": function(e, t, r) {
@@ -2173,8 +2173,8 @@
 			const a = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: i.a,
-						experimentName: n.mf
-					}) === n.Kd
+						experimentName: n.nf
+					}) === n.Ld
 				},
 				c = Object(d.a)(o.R, (e, t) => {
 					let {
@@ -2185,8 +2185,8 @@
 				u = (e, t) => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: e => c(e, t),
-						experimentName: n.nf
-					}) === n.Kd
+						experimentName: n.of
+					}) === n.Ld
 				}
 		},
 		"./src/reddit/selectors/recapGame.ts": function(e, t, r) {
@@ -2211,4 +2211,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.34fd805518125258081f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.62990ac7b90d3f208d30.js.map

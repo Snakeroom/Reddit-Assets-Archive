@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.a811493e53e7ed917d92.js
-// Retrieved at 11/17/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.101ad141d06fa8662e79.js
+// Retrieved at 11/17/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -900,8 +900,8 @@
 			const T = e => {
 				return Object(y.c)(e, {
 					experimentEligibilitySelector: y.a,
-					experimentName: _.of
-				}) === _.Kd
+					experimentName: _.pf
+				}) === _.Ld
 			};
 			var S = s("./src/reddit/selectors/recapGame.ts"),
 				E = s("./src/reddit/components/BackToTop/index.m.less"),
@@ -1305,7 +1305,7 @@
 				const t = Object(i.f)().getState(),
 					s = Object(h.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.ad.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.ad.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.ad.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.bd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.bd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.bd.LargeImagePreview ? e.reredditButtons : [];
 					return n.a.createElement(k, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -2817,8 +2817,8 @@
 					})))
 				}
 			}
-			var K = q,
-				Y = s("./src/lib/prettyPrintNumber/index.ts"),
+			var Y = q,
+				K = s("./src/lib/prettyPrintNumber/index.ts"),
 				Z = s("./src/reddit/components/Flair/index.tsx"),
 				X = s("./src/reddit/components/SubredditIcon/index.tsx"),
 				$ = s("./src/reddit/components/SubscribeButton/index.tsx"),
@@ -2870,7 +2870,7 @@
 					}, ae._({
 						"*": "{subscribers count} members",
 						_1: "member"
-					}, [ae._plural(r.subscribers, "subscribers count", Object(Y.b)(r.subscribers))], {
+					}, [ae._plural(r.subscribers, "subscribers count", Object(K.b)(r.subscribers))], {
 						hk: "48BXj1"
 					})), r.isNSFW && n.a.createElement(Z.b, {
 						flair: le
@@ -3044,7 +3044,7 @@
 							timerMillis: e,
 							timeSort: this.props.timeSort
 						})
-					}, this.renderNoPosts = () => null, this.renderRelationship = (e, t) => n.a.createElement(K, {
+					}, this.renderNoPosts = () => null, this.renderRelationship = (e, t) => n.a.createElement(Y, {
 						key: e.slug,
 						openTab: this.openTab,
 						relationship: e,
@@ -3181,7 +3181,7 @@
 				return Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
 					experimentName: r.H
-				}) === r.Kd
+				}) === r.Ld
 			}
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, s) {
@@ -3237,4 +3237,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.a811493e53e7ed917d92.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.101ad141d06fa8662e79.js.map

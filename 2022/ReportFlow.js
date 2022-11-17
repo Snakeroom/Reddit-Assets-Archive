@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.b461a58247419db48917.js
-// Retrieved at 11/17/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.a8da244920aef86c64fc.js
+// Retrieved at 11/17/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -1136,7 +1136,7 @@
 						return e
 				}
 			};
-			var N = function() {
+			var L = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -1148,11 +1148,11 @@
 						return e
 				}
 			};
-			var L = Object(O.c)({
+			var N = Object(O.c)({
 				api: k,
 				openedFromModalPage: j,
 				postOrCommentId: T,
-				userIsMod: N,
+				userIsMod: L,
 				rulesCategory: function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 						t = arguments.length > 1 ? arguments[1] : void 0;
@@ -1165,7 +1165,7 @@
 			});
 			Object(R.a)({
 				features: {
-					reportFlow: L
+					reportFlow: N
 				}
 			});
 			const A = Object(r.a)(C.e),
@@ -1754,7 +1754,7 @@
 				I = c.a.wrapped(R.b, "DropdownRow", _.a),
 				j = c.a.div("PickerWrapper", _.a),
 				T = c.a.div("SelectARuleLabel", _.a),
-				N = e => {
+				L = e => {
 					let {
 						className: t,
 						isChosen: n,
@@ -1766,8 +1766,8 @@
 						})
 					}, o))
 				},
-				L = Object(b.a)(g.a),
-				A = c.a.wrapped(L, "Dropdown", _.a),
+				N = Object(b.a)(g.a),
+				A = c.a.wrapped(N, "Dropdown", _.a),
 				F = c.a.wrapped(O.b, "DropdownTriangle", _.a),
 				P = c.a.wrapped(R.b, "Row", _.a);
 			var D = n("./src/reddit/components/ReportFlow/FileAComplaint/index.m.less"),
@@ -1906,7 +1906,7 @@
 					}, s.a.createElement(P, {
 						displayText: d ? d.reasonTextToShow : "",
 						id: pe
-					}), s.a.createElement(F, null), s.a.createElement(N, {
+					}), s.a.createElement(F, null), s.a.createElement(L, {
 						isChosen: !!d
 					}, o.fbt._("Select a rule", null, {
 						hk: "26hOYU"
@@ -2023,7 +2023,7 @@
 					}, s.a.createElement(P, {
 						displayText: n,
 						id: Oe
-					}), s.a.createElement(F, null), s.a.createElement(N, {
+					}), s.a.createElement(F, null), s.a.createElement(L, {
 						isChosen: !!n
 					}, o.fbt._("Select a rule", null, {
 						hk: "26hOYU"
@@ -2066,8 +2066,8 @@
 				Ie = n("./src/reddit/models/Subreddit/index.ts"),
 				je = n("./src/reddit/components/ReportFlow/FirstPage/index.m.less"),
 				Te = n.n(je);
-			const Ne = c.a.wrapped(x.l, "SubmitButton", Te.a);
-			class Le extends s.a.Component {
+			const Le = c.a.wrapped(x.l, "SubmitButton", Te.a);
+			class Ne extends s.a.Component {
 				constructor(e) {
 					super(e), this.state = {
 						rulesSequence: new ke.a
@@ -2141,7 +2141,7 @@
 						onClick: e.onClose
 					}, o.fbt._("Close", null, {
 						hk: "4gbyAA"
-					})), s.a.createElement(Ne, {
+					})), s.a.createElement(Le, {
 						onClick: e.onSubmit,
 						disabled: !e.ruleIsChosen
 					}, e.submitButtonText ? e.submitButtonText : o.fbt._("Submit", null, {
@@ -2149,7 +2149,7 @@
 					}))))
 				}
 			}
-			var Ae = Le,
+			var Ae = Ne,
 				Fe = n("./src/reddit/icons/svgs/Close/index.tsx"),
 				Pe = n("./src/reddit/components/ReportFlow/Title/index.m.less"),
 				De = n.n(Pe);
@@ -2435,8 +2435,8 @@
 			var I = n("./src/reddit/endpoints/talk/index.ts"),
 				j = n("./src/reddit/contexts/ApiContext.tsx"),
 				T = n("./src/reddit/models/Post/index.ts"),
-				N = n("./src/reddit/models/Toast/index.ts"),
-				L = n("./src/reddit/models/WhitelistAndBlocked.ts"),
+				L = n("./src/reddit/models/Toast/index.ts"),
+				N = n("./src/reddit/models/WhitelistAndBlocked.ts"),
 				A = n("./src/reddit/selectors/commentSelector.ts"),
 				F = n("./src/reddit/selectors/experiments/reportAd.ts"),
 				P = n("./src/reddit/selectors/meta.ts"),
@@ -2505,7 +2505,7 @@
 							e(Object(O.h)(t))
 						},
 						showFailToast: () => e(Object(p.f)({
-							kind: N.b.Error,
+							kind: L.b.Error,
 							text: r.fbt._("Something went wrong!", null, {
 								hk: "1BEFhz"
 							})
@@ -2574,7 +2574,7 @@
 							blockUserPending: n,
 							sendEvent: o
 						} = this.props;
-						n.new !== L.a.pending && (this.props.onBlockUser(e), o(x(t)))
+						n.new !== N.a.pending && (this.props.onBlockUser(e), o(x(t)))
 					}, this.onOpenCtlFlow = () => {
 						this.props.postMessage && this.props.postMessage({
 							type: "openCtl"
@@ -4286,7 +4286,7 @@
 					experimentName: r.Hc,
 					experimentEligibilitySelector: s.a
 				}), e => e),
-				i = Object(o.a)(a, e => e === r.Kd)
+				i = Object(o.a)(a, e => e === r.Ld)
 		},
 		"./src/redditGQL/operations/CreateLiveAudioRoomOnProfile.json": function(e) {
 			e.exports = JSON.parse('{"id":"e35a47c6aa21"}')
@@ -4332,4 +4332,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.b461a58247419db48917.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.a8da244920aef86c64fc.js.map
