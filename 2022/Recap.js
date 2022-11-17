@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Recap.7e9b65bae8ec2fea917b.js
-// Retrieved at 11/17/2022, 12:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Recap.109d12c29c7fb35f6564.js
+// Retrieved at 11/17/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Recap", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, a, t) {
@@ -2421,4 +2421,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Recap.7e9b65bae8ec2fea917b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Recap.109d12c29c7fb35f6564.js.map
