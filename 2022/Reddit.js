@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.1e0c1ba2650e1c858b24.js
-// Retrieved at 11/17/2022, 2:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.21b970a1a6d49d95f680.js
+// Retrieved at 11/17/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -11240,7 +11240,7 @@
 										hk: "2du7dx"
 									}).toString()
 								}
-							}), o.isMod && fo.forEach(e => r.push(e(o))), r.push({
+							}), (null == o ? void 0 : o.isMod) && fo.forEach(e => r.push(e(o))), r.push({
 								id: xr.ModListing,
 								type: ro.GenericLink,
 								model: {
@@ -14184,9 +14184,13 @@
 						isOpen: r,
 						onClick: o,
 						sendEvent: a,
-						url: i
+						url: i,
+						useClassicUserMenuStyles: c = !1
 					} = e;
 					return m.a.createElement(Vo, {
+						buttonClassName: c ? _d.a.button : "",
+						headingClassName: c ? _d.a.headingContent : "",
+						noBottomDivider: c,
 						icon: m.a.createElement(lr.a, {
 							name: "info"
 						}),
@@ -14548,9 +14552,11 @@
 					user: i
 				} = e, c = i && i.id, l = Object(xe.e)(O.R), [d, p] = Object(u.useState)(!1), b = Object(u.useCallback)(e => {
 					e.nativeEvent.stopImmediatePropagation(), p(!d)
-				}, [d]);
+				}, [d]), [h, g] = Object(u.useState)(!1), f = Object(u.useCallback)(e => {
+					e.nativeEvent.stopImmediatePropagation(), g(!h)
+				}, [h]);
 				return Object(u.useEffect)(() => {
-					p(!1)
+					p(!1), g(!1)
 				}, [e.isOpen]), Object(u.useEffect)(() => {
 					o()
 				}, [c]), n ? m.a.createElement(Nd.a, null, m.a.createElement(Qd, e)) : l ? m.a.createElement(eu, {
@@ -14572,6 +14578,14 @@
 					toggleNightmode: e.toggleNightmode
 				}), m.a.createElement(ru, {
 					sendEvent: a
+				}), m.a.createElement(Fd, {
+					isOpen: h,
+					onClick: f,
+					isCommunityLinkVisible: e.isCommunityLinkVisible,
+					isLoggedIn: l,
+					url: e.url,
+					sendEvent: a,
+					useClassicUserMenuStyles: !0
 				}), m.a.createElement(kd, {
 					isOpen: d,
 					onClick: b,
@@ -15664,14 +15678,15 @@
 					})))
 				},
 				fp = e => {
-					const t = Object(u.useContext)(Re.a);
+					const t = Object(u.useContext)(Re.a),
+						n = Object(xe.e)(ur.c);
 					return m.a.createElement("div", {
 						className: Object(ke.a)(lp.a.layout, {
 							[lp.a.layoutContainer]: t
 						})
 					}, m.a.createElement(bp, dp({}, e, {
 						onReloadFrontpage: e.onReloadFrontpage
-					}), m.a.createElement(_a, null), m.a.createElement("div", {
+					}), !n && m.a.createElement(_a, null), m.a.createElement("div", {
 						className: lp.a.searchContainer
 					}, m.a.createElement(ui, {
 						className: lp.a.search
@@ -22228,4 +22243,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.1e0c1ba2650e1c858b24.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.21b970a1a6d49d95f680.js.map
