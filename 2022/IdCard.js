@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.1cc2c8432aa02aa95e52.js
-// Retrieved at 11/16/2022, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.68fb00cd41d747650f84.js
+// Retrieved at 11/17/2022, 9:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -4185,7 +4185,7 @@
 						onClick: g ? _ : void 0,
 						headerButton: i.a.createElement("div", {
 							className: bt.a.headerButtonsContainer
-						}, !z && v && C && l !== Le.Ke.NewModule && i.a.createElement(a.a, {
+						}, !z && v && C && l !== Le.Me.NewModule && i.a.createElement(a.a, {
 							className: bt.a.ModToolsLink,
 							to: C.posts ? `${v.url}about/modqueue` : `${v.url}about/`,
 							onClick: this.onClickModTools
@@ -5963,7 +5963,7 @@
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
 					experimentName: r.H
-				}) === r.Id
+				}) === r.Kd
 			}
 		},
 		"./src/reddit/selectors/experiments/joinOptimizations.ts": function(e, t, n) {
@@ -5986,27 +5986,27 @@
 				i = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = n("./src/reddit/selectors/experiments/index.ts");
 			const a = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Ob,
+					experimentName: s.Pb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.W.Enabled),
 				d = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Pb,
+					experimentName: s.Qb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.X.Enabled),
 				c = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Qb,
+					experimentName: s.Rb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.Y.Enabled),
 				l = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Rb,
+					experimentName: s.Sb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.Z.Enabled),
 				u = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Tb,
+					experimentName: s.Ub,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.bb.Enabled),
 				m = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Sb,
+					experimentName: s.Tb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.ab.Enabled)
 		},
@@ -6033,4 +6033,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.1cc2c8432aa02aa95e52.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.68fb00cd41d747650f84.js.map

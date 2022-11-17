@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.57b8cfce0c989f5b5bde.js
-// Retrieved at 11/16/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.39a481975fe575af5a4b.js
+// Retrieved at 11/17/2022, 9:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ClaimPointsModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -51,7 +51,7 @@
 			})), n.d(t, "c", (function() {
 				return C
 			})), n.d(t, "f", (function() {
-				return I
+				return T
 			})), n.d(t, "g", (function() {
 				return P
 			})), n.d(t, "d", (function() {
@@ -86,8 +86,8 @@
 				E = Object(a.a)(x.j),
 				N = Object(a.a)(x.k),
 				_ = Object(a.a)(x.q),
-				I = Object(a.a)(x.r),
-				T = Object(a.a)(x.s),
+				T = Object(a.a)(x.r),
+				I = Object(a.a)(x.s),
 				M = Object(a.a)(x.t),
 				k = Object(a.a)(x.u),
 				S = Object(a.a)(x.v),
@@ -142,7 +142,7 @@
 						apiContext: l
 					} = i;
 					var u;
-					n(T());
+					n(I());
 					const m = a().transfers.communityPoints.contentId || void 0,
 						b = await
 					function(e, t) {
@@ -290,8 +290,8 @@
 				E = n("./src/reddit/selectors/crypto/points.ts"),
 				N = n("./src/reddit/selectors/gov.ts"),
 				_ = n("./src/lib/addQueryParams/index.ts"),
-				I = n("./src/reddit/icons/svgs/Close/index.tsx"),
-				T = n("./src/reddit/selectors/user.ts"),
+				T = n("./src/reddit/icons/svgs/Close/index.tsx"),
+				I = n("./src/reddit/selectors/user.ts"),
 				M = n("./src/reddit/components/Governance/TransactionModals/Common/Bullet.tsx"),
 				k = n("./src/reddit/components/Governance/TransactionModals/Common/QRCode.tsx"),
 				S = n("./src/reddit/components/Governance/TransactionModals/CreateVaultModal/index.m.less"),
@@ -301,7 +301,7 @@
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			const B = Object(i.c)({
 					userId: e => {
-						const t = Object(T.l)(e);
+						const t = Object(I.l)(e);
 						return t ? t.id : ""
 					}
 				}),
@@ -318,7 +318,7 @@
 						className: A.a.title
 					}, P._("Create Your Vault on Your Smartphone", null, {
 						hk: "247Dqn"
-					})), r.a.createElement(I.a, {
+					})), r.a.createElement(T.a, {
 						className: A.a.closeButton,
 						onClick: t
 					})), r.a.createElement("div", {
@@ -387,7 +387,7 @@
 					pointsAmount: i
 				})
 			}
-			const q = e => r.a.createElement(G.b, {
+			const W = e => r.a.createElement(G.b, {
 				values: [
 					[s.fbt._("Karma earned", null, {
 						hk: "46NXlD"
@@ -413,8 +413,8 @@
 				if (!l.address) return r.a.createElement(D, {
 					onClose: t
 				});
-				const I = Object(x.b)(_.contracts.distribution.address, l.round, l.address, l.userKarma, l.signature),
-					T = e => {
+				const T = Object(x.b)(_.contracts.distribution.address, l.round, l.address, l.userKarma, l.signature),
+					I = e => {
 						c(Object(y.c)("points_claim", n, _.displayConversion, e))
 					},
 					M = Object(j.c)(l.pointsToClaim, _.displayConversion);
@@ -423,8 +423,8 @@
 						pointsDetails: _,
 						subredditId: n
 					}),
-					approvalDetails: r.a.createElement(q, {
-						transaction: I
+					approvalDetails: r.a.createElement(W, {
+						transaction: T
 					}),
 					onClose: t,
 					onTransactionSuccess: async e => {
@@ -450,7 +450,7 @@
 								}), C.b.SuccessCommunityGreen))
 							}(_.name))
 						}).catch(e => {
-							T(e.toString()), a(function(e) {
+							I(e.toString()), a(function(e) {
 								return Object(f.f)(Object(f.e)(s.fbt._("Failed to claim your {pointsName}. Try again later", [s.fbt._param("pointsName", e)], {
 									hk: "ch1Bl"
 								}), C.b.Error))
@@ -461,9 +461,9 @@
 							}))
 						})
 					},
-					onTransactionFailure: T,
+					onTransactionFailure: I,
 					subredditId: n,
-					transaction: I,
+					transaction: T,
 					transactionIntent: Object(h.c)(n)
 				})
 			}))
@@ -1093,14 +1093,14 @@
 			const r = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.se
-					}) === s.Id
+						experimentName: s.ue
+					}) === s.Kd
 				},
 				o = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.qe
-					}) === s.Id
+						experimentName: s.se
+					}) === s.Kd
 				}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
@@ -1160,4 +1160,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.57b8cfce0c989f5b5bde.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.39a481975fe575af5a4b.js.map

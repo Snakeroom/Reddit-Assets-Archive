@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a.b85c7222f097131955c2.js
-// Retrieved at 11/16/2022, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a.d9b0cade5234161d483d.js
+// Retrieved at 11/17/2022, 9:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a"], {
 		"./src/higherOrderComponents/withAdClickLocation/index.tsx": function(e, t, s) {
@@ -955,9 +955,9 @@
 					q = W.isRemoved && !W.modRemovalReason && !W.modNote && W.belongsTo.type === p.a.SUBREDDIT,
 					V = R("Approve", W.id, H),
 					G = R("Archived", W.id, H),
-					Z = R("Lock", W.id, H),
+					K = R("Lock", W.id, H),
 					Q = R("Mod", W.id, H),
-					K = R("Remove", W.id, H),
+					Z = R("Remove", W.id, H),
 					z = R("Report", W.id, H),
 					Y = R("Spam", W.id, H),
 					$ = R("Sticky", W.id, H),
@@ -985,11 +985,11 @@
 					isFilled: !0,
 					className: Object(c.a)(g.a.icon, g.a.lockIcon),
 					desc: A(),
-					id: Z,
-					onMouseEnter: D(Z),
+					id: K,
+					onMouseEnter: D(K),
 					onMouseLeave: S
 				}), r.a.createElement(m.c, T({
-					tooltipId: Z,
+					tooltipId: K,
 					text: A()
 				}, X))), a && Object(N.w)(W) && !l && r.a.createElement(o.Fragment, null, r.a.createElement(C.a, {
 					isFilled: !0,
@@ -1025,8 +1025,8 @@
 					isFilled: !0,
 					className: Object(c.a)(g.a.icon, g.a.removeIcon),
 					desc: Object(v.b)(W),
-					id: K,
-					onMouseEnter: D(K),
+					id: Z,
+					onMouseEnter: D(Z),
 					onMouseLeave: S
 				}), q && r.a.createElement(u.a, {
 					className: g.a.addRemovalReason,
@@ -1035,12 +1035,12 @@
 						hk: "1YDo3"
 					})
 				}), (W.modRemovalReason || W.modNote) && r.a.createElement(L, {
-					onMouseEnter: D(K),
+					onMouseEnter: D(Z),
 					onMouseLeave: S
 				}, n.fbt._("Removal reason", null, {
 					hk: "2DhKVZ"
 				})), r.a.createElement(m.c, T({
-					tooltipId: K,
+					tooltipId: Z,
 					text: Object(v.b)(W)
 				}, X))), W.bannedBy && W.isSpam && r.a.createElement(o.Fragment, null, r.a.createElement(k.a, {
 					isFilled: !0,
@@ -1301,8 +1301,8 @@
 				p = s("./node_modules/reselect/es/index.js");
 			const b = Object(p.a)(e => Object(u.c)(e, {
 				experimentEligibilitySelector: u.a,
-				experimentName: m.uc
-			}), e => e === m.Id);
+				experimentName: m.vc
+			}), e => e === m.Kd);
 			var x = s("./node_modules/fbt/lib/FbtPublic.js"),
 				v = s("./src/lib/classNames/index.ts"),
 				h = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
@@ -1408,8 +1408,8 @@
 			};
 			var V = s("./src/reddit/components/PromotedUserPostsAd/PromotedUserPost/index.m.less"),
 				G = s.n(V);
-			const Z = Object(C.a)(null);
-			var Q = Object(I.b)(Z(e => {
+			const K = Object(C.a)(null);
+			var Q = Object(I.b)(K(e => {
 					let {
 						post: t
 					} = e;
@@ -1428,8 +1428,8 @@
 						post: t
 					})))
 				})),
-				K = s("./src/reddit/components/PromotedUserPostsAd/PromotedUserPosts/index.m.less"),
-				z = s.n(K);
+				Z = s("./src/reddit/components/PromotedUserPostsAd/PromotedUserPosts/index.m.less"),
+				z = s.n(Z);
 			const Y = e => {
 				let {
 					postIds: t
@@ -2184,13 +2184,13 @@
 				a = s("./src/reddit/models/Post/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const c = e => Object(r.c)(e, {
-					experimentName: o.Ze,
+					experimentName: o.bf,
 					experimentEligibilitySelector: r.a
 				}),
-				d = (e, t) => (t === o.hf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(a.B)(e),
+				d = (e, t) => (t === o.jf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(a.B)(e),
 				l = Object(n.a)(i.G, c, (e, t) => d(e, t));
 			Object(n.a)((e, t) => t, c, (e, t) => d(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a.b85c7222f097131955c2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a.d9b0cade5234161d483d.js.map

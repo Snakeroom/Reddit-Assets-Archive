@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f.bc5d0bea6bb4c91e932e.js
-// Retrieved at 11/16/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f.ef1cf476d74af1c1154c.js
+// Retrieved at 11/17/2022, 9:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f"], {
 		"./src/lib/scroll/index.ts": function(e, t, o) {
@@ -66,7 +66,7 @@
 			})), o.d(t, "k", (function() {
 				return Fe
 			})), o.d(t, "e", (function() {
-				return He
+				return Be
 			})), o.d(t, "d", (function() {
 				return qe
 			})), o.d(t, "a", (function() {
@@ -207,8 +207,8 @@
 			var A = o("./src/redditGQL/operations/UpdateComment.json");
 			var F = o("./src/redditGQL/operations/UpdateCommentFollowState.json");
 			var U = o("./src/reddit/endpoints/post/index.tsx"),
-				H = o("./src/reddit/endpoints/post/convert.ts"),
-				B = o("./src/reddit/endpoints/publicAccessNetwork/index.ts"),
+				B = o("./src/reddit/endpoints/post/convert.ts"),
+				H = o("./src/reddit/endpoints/publicAccessNetwork/index.ts"),
 				G = o("./src/reddit/featureFlags/index.ts"),
 				W = o("./src/reddit/helpers/comment/index.ts"),
 				q = o("./src/reddit/helpers/correlationIdTracker.ts"),
@@ -229,8 +229,8 @@
 				ce = o("./node_modules/reselect/es/index.js");
 			const ie = Object(ce.a)(e => Object(se.c)(e, {
 				experimentEligibilitySelector: se.a,
-				experimentName: re.Ab
-			}), e => e === re.Id);
+				experimentName: re.Bb
+			}), e => e === re.Kd);
 			var ae = o("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				de = o("./src/reddit/selectors/platform.ts"),
 				le = o("./src/reddit/selectors/posts.ts"),
@@ -353,7 +353,7 @@
 						let N;
 						const M = f ? "" : t && o ? o : Object(W.e)(d, k.uploads),
 							P = Object(W.f)(M, k.uploads);
-						if (f ? (N = await Object(B.i)(x(), s, d, T), e(Object(p.a)({
+						if (f ? (N = await Object(H.i)(x(), s, d, T), e(Object(p.a)({
 								streamId: s,
 								level: N.body.automuteLevel
 							}))) : N = _e(I, k) ? await K(y(), s, null, d, M) : await L(x(), s, d, M), N.ok) {
@@ -552,7 +552,7 @@
 					})), r(Object(u.c)(e));
 					else {
 						r(Object(u.b)(o));
-						const s = await Object(H.a)(i(), e, a ? t : JSON.stringify(t));
+						const s = await Object(B.a)(i(), e, a ? t : JSON.stringify(t));
 						if (s.ok) {
 							const t = s.body.output;
 							r(Object(u.a)(o)), r(Re({
@@ -633,7 +633,7 @@
 						}))
 					}
 				}, Ke = e => async t => {
-					t(Object(ue.r)(e)), t(He(e))
+					t(Object(ue.r)(e)), t(Be(e))
 				}, Ae = e => {
 					let {
 						parentCommentId: t,
@@ -654,7 +654,7 @@
 				}, Fe = (e, t) => o => o(Pe({
 					draftKey: e,
 					formData: t
-				})), Ue = Object(r.a)(pe.u), He = e => {
+				})), Ue = Object(r.a)(pe.u), Be = e => {
 					let {
 						commentId: t,
 						commentMode: o,
@@ -677,7 +677,7 @@
 							}
 						})))
 					}
-				}, Be = Object(r.a)(pe.F), Ge = Object(r.a)(pe.E), We = Object(r.a)(pe.G), qe = Object(r.a)(pe.j), Je = Object(r.a)(pe.f), ze = e => {
+				}, He = Object(r.a)(pe.F), Ge = Object(r.a)(pe.E), We = Object(r.a)(pe.G), qe = Object(r.a)(pe.j), Je = Object(r.a)(pe.f), ze = e => {
 					let {
 						id: t,
 						commentsPageKey: o,
@@ -691,7 +691,7 @@
 						} = c;
 						const d = s();
 						if (!d.user.account) return;
-						e(Be({
+						e(He({
 							draftKey: n
 						})), V.d(d);
 						const l = Object(W.e)(r, d.uploads),
@@ -1178,8 +1178,8 @@
 				A = o("./src/reddit/selectors/comments.ts"),
 				F = o("./src/reddit/selectors/experiments/commentSearchPdp.ts"),
 				U = o("./src/reddit/selectors/moderatorPermissions.ts"),
-				H = o("./src/reddit/selectors/posts.ts"),
-				B = o("./src/reddit/selectors/tooltip.ts"),
+				B = o("./src/reddit/selectors/posts.ts"),
+				H = o("./src/reddit/selectors/tooltip.ts"),
 				G = o("./src/reddit/selectors/user.ts"),
 				W = o("./src/reddit/components/CommentSort/CommentSort.m.less"),
 				q = o.n(W),
@@ -1272,8 +1272,8 @@
 					},
 					commentSearchPdp: e => Object(F.a)(e),
 					contestModeModalIsOpen: Object(K.b)("CommentSort--ContestMode--Modal"),
-					dropdownIsOpen: Object(B.b)(Y),
-					highlightIsOpen: Object(B.b)(Z),
+					dropdownIsOpen: Object(H.b)(Y),
+					highlightIsOpen: Object(H.b)(Z),
 					hasModeratorPostPermissions: (e, t) => {
 						let {
 							postId: o
@@ -1283,8 +1283,8 @@
 						});
 						return !!n && n.posts
 					},
-					post: H.G,
-					postPermalink: H.F,
+					post: B.G,
+					postPermalink: B.F,
 					showCommentHighlighter: (e, t) => {
 						let {
 							postId: o
@@ -1293,7 +1293,7 @@
 							r = !!Object(U.m)(e, {
 								postId: o
 							}),
-							s = Object(H.G)(e, {
+							s = Object(B.G)(e, {
 								postId: o
 							});
 						return (r || n) && !!s && !!s.previousVisits && s.previousVisits.length > 0
@@ -1368,7 +1368,7 @@
 						suggestedSort: _,
 						showTooltip: I,
 						toggleContestModeModal: N
-					} = this.props, P = f.contestMode, R = c.bucketed && !!O.search, K = !O.search.includes(d.w.CONFIDENCE), A = S === d.w.CONFIDENCE && K, F = b && !A, U = d.y[S], H = U ? U() : "", B = _ && S === _ && !A ? this.addSuggestedLabel(H) : H, G = P ? n.fbt._("End contest mode?", null, {
+					} = this.props, P = f.contestMode, R = c.bucketed && !!O.search, K = !O.search.includes(d.w.CONFIDENCE), A = S === d.w.CONFIDENCE && K, F = b && !A, U = d.y[S], B = U ? U() : "", H = _ && S === _ && !A ? this.addSuggestedLabel(B) : B, G = P ? n.fbt._("End contest mode?", null, {
 						hk: "2AkJRZ"
 					}) : n.fbt._("Start contest?", null, {
 						hk: "2PQPOu"
@@ -1394,7 +1394,7 @@
 					}, s.a.createElement(v.b, {
 						className: Object(a.a)(q.a.SortPicker, q.a.Row),
 						textClassName: q.a.SortOptionDropdownText,
-						displayText: `${n.fbt._("Sort by",null,{hk:"E6T9r"})}: ${B}`,
+						displayText: `${n.fbt._("Sort by",null,{hk:"E6T9r"})}: ${H}`,
 						id: Y,
 						noHover: !0,
 						skipRoleAttr: !0,
@@ -1622,8 +1622,8 @@
 					pageLayer: l
 				})), U = Object(c.e)(e => Object(O.s)(e, {
 					pageLayer: l
-				})), H = Object(c.e)(e => Object(S.j)(e));
-				var B, G;
+				})), B = Object(c.e)(e => Object(S.j)(e));
+				var H, G;
 
 				function W() {
 					u(Object(x.p)(_.a.CommentSearchBar, P({
@@ -1653,18 +1653,18 @@
 					const r = Object(a.a)(e, t);
 					K(Object(i.b)(Object(g.b)(r), {
 						...o,
-						isOverlay: H,
+						isOverlay: B,
 						scrollOnLoad: !0
 					}))
 				}
-				return B = A, G = L, s.a.useEffect(() => {
+				return H = A, G = L, s.a.useEffect(() => {
 					function e(e) {
-						B.current && !B.current.contains(e.target) && G(!1)
+						H.current && !H.current.contains(e.target) && G(!1)
 					}
 					return document.addEventListener("mousedown", e), () => {
 						document.removeEventListener("mousedown", e)
 					}
-				}, [B]), o ? s.a.createElement("div", {
+				}, [H]), o ? s.a.createElement("div", {
 					className: w.a.flex
 				}, v || D ? s.a.createElement("div", {
 					"data-testid": E
@@ -2168,4 +2168,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f.bc5d0bea6bb4c91e932e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f.ef1cf476d74af1c1154c.js.map

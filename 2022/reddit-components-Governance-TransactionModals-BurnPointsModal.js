@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.1ce2c7481b14427106a4.js
-// Retrieved at 11/16/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.4d01ab6c882186bfc12e.js
+// Retrieved at 11/17/2022, 9:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-BurnPointsModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
@@ -543,9 +543,9 @@
 				F = a("./src/reddit/models/Toast/index.ts"),
 				T = a("./src/reddit/selectors/gov.ts"),
 				L = a("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx"),
-				I = a("./src/lib/classNames/index.ts"),
-				A = a("./src/reddit/components/Governance/TokenAmount/index.tsx"),
-				k = a("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx"),
+				A = a("./src/lib/classNames/index.ts"),
+				k = a("./src/reddit/components/Governance/TokenAmount/index.tsx"),
+				I = a("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx"),
 				D = a("./src/reddit/components/Governance/TransactionModals/Common/CurrentBalance.tsx"),
 				B = a("./src/reddit/components/Governance/TransactionModals/BurnPointsModal/Approval.m.less"),
 				V = a.n(B);
@@ -560,14 +560,14 @@
 				} = e;
 				return l.a.createElement("div", {
 					className: V.a.overview
-				}, l.a.createElement(A.a, {
+				}, l.a.createElement(k.a, {
 					amount: t,
 					className: V.a.amount,
 					subredditId: s.id
 				}), l.a.createElement(D.a, {
 					subredditId: s.id
 				}), l.a.createElement("div", {
-					className: Object(I.a)(V.a.memo, {
+					className: Object(A.a)(V.a.memo, {
 						[V.a.error]: !n
 					})
 				}, n ? i.fbt._("For “{memo}”. Fulfilled by the community, not Reddit.", [i.fbt._param("memo", a)], {
@@ -578,9 +578,9 @@
 			}
 
 			function P(e) {
-				return l.a.createElement(k.b, {
+				return l.a.createElement(I.b, {
 					values: [
-						[Object(k.a)(), e.contractAddress],
+						[Object(I.a)(), e.contractAddress],
 						[i.fbt._("Function", null, {
 							hk: "1Q0dwF"
 						}), "burn"],
@@ -1293,14 +1293,14 @@
 			const c = e => {
 					return Object(l.c)(e, {
 						experimentEligibilitySelector: l.a,
-						experimentName: n.se
-					}) === n.Id
+						experimentName: n.ue
+					}) === n.Kd
 				},
 				s = e => {
 					return Object(l.c)(e, {
 						experimentEligibilitySelector: l.a,
-						experimentName: n.qe
-					}) === n.Id
+						experimentName: n.se
+					}) === n.Kd
 				}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, a) {
@@ -1357,4 +1357,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.1ce2c7481b14427106a4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.4d01ab6c882186bfc12e.js.map

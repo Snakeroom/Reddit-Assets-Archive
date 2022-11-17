@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.be69e6788be0f1392c1d.js
-// Retrieved at 11/16/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.38675637406154a94b65.js
+// Retrieved at 11/17/2022, 9:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./node_modules/lodash/map.js": function(e, t, n) {
@@ -183,15 +183,15 @@
 				duration: d.a
 			};
 			t.default = e => {
-				var t, n, o, b, I, C, j, E, R, S;
+				var t, n, o, b, I, C, R, j, E, S;
 				const T = Object(r.d)(),
 					k = Object(r.e)(O.d),
 					{
 						context: g,
-						deeplinkUrl: P,
-						isFullWidth: L,
-						isUnread: A,
-						isInAppNotification: w,
+						deeplinkUrl: L,
+						isFullWidth: A,
+						isUnread: w,
+						isInAppNotification: P,
 						isNightMode: D,
 						notificationId: U,
 						onEvent: F
@@ -204,8 +204,8 @@
 				let J = null === (n = null == g ? void 0 : g.comment) || void 0 === n ? void 0 : n.id,
 					K = (null === (o = null == g ? void 0 : g.post) || void 0 === o ? void 0 : o.id) || (null === (I = null === (b = null == g ? void 0 : g.comment) || void 0 === b ? void 0 : b.postInfo) || void 0 === I ? void 0 : I.id);
 				const Q = null === (C = null == g ? void 0 : g.subreddit) || void 0 === C ? void 0 : C.id,
-					z = null === (E = null === (j = null == g ? void 0 : g.awarding) || void 0 === j ? void 0 : j.award) || void 0 === E ? void 0 : E.id,
-					X = null === (S = null === (R = null == g ? void 0 : g.awarding) || void 0 === R ? void 0 : R.awarder) || void 0 === S ? void 0 : S.id;
+					z = null === (j = null === (R = null == g ? void 0 : g.awarding) || void 0 === R ? void 0 : R.award) || void 0 === j ? void 0 : j.id,
+					X = null === (S = null === (E = null == g ? void 0 : g.awarding) || void 0 === E ? void 0 : E.awarder) || void 0 === S ? void 0 : S.id;
 				if (B === v.a.CommentFollow || B === v.a.PostFollow) {
 					const e = (e => {
 						const t = {},
@@ -217,12 +217,12 @@
 						if (!o) return t;
 						const [s, r, i, a] = o.slice(1);
 						return r && "r" === s && (t.subredditName = r), i && (t.postId = `${u.b}${i}`), a && (t.commentId = `${u.a}${a}`), t
-					})(P);
+					})(L);
 					K = e.postId, J = e.commentId
 				} else B !== v.a.PostReply && B !== v.a.LifecyclePostSuggestions || (J = U);
 				const Z = e => {
 					if (K && J) {
-						const e = Object(a.a)(K, J, Object(h.c)(P)),
+						const e = Object(a.a)(K, J, Object(h.c)(L)),
 							t = {
 								parentCommentId: J,
 								commentsPageKey: e
@@ -238,7 +238,7 @@
 						case v.a.LifecyclePostSuggestions:
 						case v.a.SubredditRecommendation: {
 							const e = W;
-							if (!(V || e || k && w)) return null;
+							if (!(V || e || k && P)) return null;
 							const t = e => {
 									H ? F({
 										position: f.d.SECOND,
@@ -251,16 +251,16 @@
 								});
 							return s.a.createElement(p.t, {
 								onClick: t,
-								isFullWidth: L,
+								isFullWidth: A,
 								priority: p.c.Tertiary,
 								redditStyle: !0,
 								className: Object(i.a)(_.a.notificationButton, {
-									[_.a.isUnread]: A && !w,
+									[_.a.isUnread]: w && !P,
 									[_.a.isNightMode]: D,
-									[_.a.inAppNotification]: w,
-									[_.a.isFullWidth]: L && !w
+									[_.a.inAppNotification]: P,
+									[_.a.isFullWidth]: A && !P
 								})
-							}, !w && s.a.createElement(x.a, {
+							}, !P && s.a.createElement(x.a, {
 								name: "text_post",
 								className: _.a.postIcon
 							}), y._("{check out button}", [y._param("check out button", n)], {
@@ -272,20 +272,20 @@
 						case v.a.PostFollow:
 						case v.a.CommentFollow: {
 							const e = M;
-							return M || e || k && w ? s.a.createElement(p.t, {
+							return M || e || k && P ? s.a.createElement(p.t, {
 								onClick: Z,
 								kind: p.b.InternalLink,
-								to: P,
-								isFullWidth: L,
+								to: L,
+								isFullWidth: A,
 								priority: p.c.Tertiary,
 								redditStyle: !0,
 								className: Object(i.a)(_.a.notificationButton, {
-									[_.a.isUnread]: A && !w,
+									[_.a.isUnread]: w && !P,
 									[_.a.isNightMode]: D,
-									[_.a.inAppNotification]: w,
-									[_.a.isFullWidth]: L && !w
+									[_.a.inAppNotification]: P,
+									[_.a.isFullWidth]: A && !P
 								})
-							}, !w && s.a.createElement(x.a, {
+							}, !P && s.a.createElement(x.a, {
 								name: "reply",
 								className: _.a.replyIcon
 							}), y._("Reply Back", null, {
@@ -304,17 +304,17 @@
 								userId: X,
 								contextId: X,
 								onClick: e,
-								isFullWidth: L,
+								isFullWidth: A,
 								priority: p.c.Tertiary,
 								redditStyle: !0,
 								eventSource: l.a.awardNotification,
 								className: Object(i.a)(_.a.notificationButton, {
-									[_.a.isUnread]: A && !w,
+									[_.a.isUnread]: w && !P,
 									[_.a.isNightMode]: D,
-									[_.a.inAppNotification]: w,
-									[_.a.isFullWidth]: L && !w
+									[_.a.inAppNotification]: P,
+									[_.a.isFullWidth]: A && !P
 								})
-							}, !w && s.a.createElement(x.a, {
+							}, !P && s.a.createElement(x.a, {
 								name: "chat_new",
 								className: _.a.replyIcon
 							}), y._("Say thanks", null, {
@@ -334,7 +334,7 @@
 						case v.a.OneOff:
 						case v.a.ModeratedSrViralCommentPost:
 						case v.a.TalkLive: {
-							if (!w) return null;
+							if (!P) return null;
 							const e = e => {
 								switch (e) {
 									case v.a.HFNSubredditInterestingPost:
@@ -376,7 +376,7 @@
 								onClick: () => F({
 									position: f.d.SECOND
 								}),
-								isFullWidth: L,
+								isFullWidth: A,
 								priority: p.c.Tertiary,
 								redditStyle: !0,
 								className: Object(i.a)(_.a.notificationButton, {
@@ -386,11 +386,11 @@
 							}, e(B))
 						}
 						default:
-							return k && w ? s.a.createElement(p.t, {
+							return k && P ? s.a.createElement(p.t, {
 								onClick: () => F({
 									position: f.d.SECOND
 								}),
-								isFullWidth: L,
+								isFullWidth: A,
 								priority: p.c.Tertiary,
 								redditStyle: !0,
 								className: Object(i.a)(_.a.notificationButton, {
@@ -513,13 +513,13 @@
 				r = n("./node_modules/reselect/es/index.js");
 			const i = Object(r.a)(e => Object(s.c)(e, {
 				experimentEligibilitySelector: s.a,
-				experimentName: o.sb
+				experimentName: o.tb
 			}), e => ({
-				bucketed: e === o.Pc.ExpandedSearch || e === o.Pc.CollapsedSearch,
-				collapsed: e === o.Pc.CollapsedSearch,
-				expanded: e === o.Pc.ExpandedSearch
+				bucketed: e === o.Rc.ExpandedSearch || e === o.Rc.CollapsedSearch,
+				collapsed: e === o.Rc.CollapsedSearch,
+				expanded: e === o.Rc.ExpandedSearch
 			}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.be69e6788be0f1392c1d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.38675637406154a94b65.js.map

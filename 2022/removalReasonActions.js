@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.1f2ce02c9df5f1a3a9a8.js
-// Retrieved at 11/16/2022, 7:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.281c8fa15f3a26ca1894.js
+// Retrieved at 11/17/2022, 9:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./node_modules/lodash/map.js": function(e, t, s) {
@@ -494,11 +494,11 @@
 				L = s("./src/lib/makeDraftKey/index.ts"),
 				k = s("./src/reddit/actions/bulkActions/index.ts"),
 				N = s("./src/reddit/actions/comment/index.ts"),
-				P = s("./src/reddit/actions/comment/authoring.ts"),
-				T = s("./src/reddit/actions/comment/moderation.ts"),
-				g = s("./src/reddit/actions/modal.ts"),
-				C = s("./src/reddit/actions/post.ts"),
-				D = s("./src/reddit/actions/toaster.ts"),
+				T = s("./src/reddit/actions/comment/authoring.ts"),
+				g = s("./src/reddit/actions/comment/moderation.ts"),
+				C = s("./src/reddit/actions/modal.ts"),
+				D = s("./src/reddit/actions/post.ts"),
+				P = s("./src/reddit/actions/toaster.ts"),
 				M = s("./src/reddit/constants/modals.ts"),
 				V = s("./src/lib/makeApiRequest/index.ts"),
 				w = s("./src/lib/omitHeaders/index.ts"),
@@ -572,7 +572,7 @@
 						s(oe({
 							subredditId: e,
 							reason: r
-						})), s(Object(D.f)({
+						})), s(Object(P.f)({
 							kind: Q.b.SuccessMod,
 							text: o.fbt._("Removal reason added!", null, {
 								hk: "2WSh8N"
@@ -596,7 +596,7 @@
 					c.ok ? (s(de({
 						subredditId: e,
 						reason: t
-					})), s(Object(D.f)({
+					})), s(Object(P.f)({
 						kind: Q.b.SuccessMod,
 						text: o.fbt._("Removal reason saved", null, {
 							hk: "28ScuL"
@@ -615,7 +615,7 @@
 					c.ok ? (s(ue({
 						subredditId: e,
 						reasonId: t
-					})), s(Object(D.f)({
+					})), s(Object(P.f)({
 						kind: Q.b.SuccessMod,
 						text: o.fbt._("Removal reason deleted", null, {
 							hk: "4xzgsa"
@@ -629,7 +629,7 @@
 					a.features.removalReasons.reasonOrder[e] && a.features.removalReasons.reasonOrder[e].length > 0 || s(te(e)), s(pe({
 						subredditId: e,
 						itemIds: t
-					})), s(Object(g.i)(M.a.ADD_REMOVAL_REASON))
+					})), s(Object(C.i)(M.a.ADD_REMOVAL_REASON))
 				}, Re = Object(h.a)("REMOVALREASONS__SUBMIT_PENDING"), fe = Object(h.a)("REMOVALREASONS__SUBMIT_SUCCESS"), _e = Object(h.a)("REMOVALREASONS__SUBMIT_FAILED"), Ee = Object(h.a)("REMOVALREASONS__MESSAGE_PENDING"), Se = Object(h.a)("REMOVALREASONS__MESSAGE_PRIVATE_SUCCESS"), je = Object(h.a)("REMOVALREASONS__MESSAGE_PUBLIC_SUCCESS"), ve = Object(h.a)("REMOVALREASONS__MESSAGE_FAILED"), Ae = (e, t, s, o, n, r) => async (a, d, c) => {
 					let {
 						apiContext: i
@@ -639,7 +639,7 @@
 						m = e[0],
 						b = Object(G.a)(m) ? H.e.Post : H.e.Comment,
 						p = b === H.e.Post ? l.posts.models[m] : l.features.comments.models[m],
-						O = b === H.e.Post ? C.R : N.j;
+						O = b === H.e.Post ? D.R : N.j;
 					if (!p || !u) return !1;
 					a(Re()), a(O({
 						[m]: {
@@ -681,7 +681,7 @@
 												hasSortParam: !0
 											})), b === H.e.Post) {
 											const s = Object(L.a)(q.c.replyToPost, m);
-											a(Object(P.r)({
+											a(Object(T.r)({
 												...t,
 												headCommentId: Object(X.w)(l, {
 													commentsPageKey: n
@@ -690,7 +690,7 @@
 												draftKey: s
 											}));
 											const o = l.postStickiedComments.data[m];
-											a(Object(T.f)({
+											a(Object(g.f)({
 												id: e.id,
 												postId: e.postId,
 												commentsPageKey: n
@@ -705,7 +705,7 @@
 													commentId: m,
 													commentsPageKey: n
 												});
-											a(Object(P.p)({
+											a(Object(T.p)({
 												...t,
 												parentCommentId: m,
 												commentsPageKey: n,
@@ -735,7 +735,7 @@
 						u = l.user.account && l.user.account.displayText;
 					if (!u) return;
 					a(Re());
-					const m = Object(D.f)({
+					const m = Object(P.f)({
 							kind: Q.b.SuccessMod,
 							text: o.fbt._({
 								"*": "Added removal reason for {number} posts/comments",
@@ -1001,13 +1001,13 @@
 				r = s("./node_modules/reselect/es/index.js");
 			const a = Object(r.a)(e => Object(n.c)(e, {
 				experimentEligibilitySelector: n.a,
-				experimentName: o.sb
+				experimentName: o.tb
 			}), e => ({
-				bucketed: e === o.Pc.ExpandedSearch || e === o.Pc.CollapsedSearch,
-				collapsed: e === o.Pc.CollapsedSearch,
-				expanded: e === o.Pc.ExpandedSearch
+				bucketed: e === o.Rc.ExpandedSearch || e === o.Rc.CollapsedSearch,
+				collapsed: e === o.Rc.CollapsedSearch,
+				expanded: e === o.Rc.ExpandedSearch
 			}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.1f2ce02c9df5f1a3a9a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.281c8fa15f3a26ca1894.js.map
