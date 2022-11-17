@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.bc99d494ef7f780c8a76.js
-// Retrieved at 11/16/2022, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.68f7a4d80788b080ad31.js
+// Retrieved at 11/17/2022, 12:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -1966,13 +1966,13 @@
 						}
 					}, []), Object(a.useEffect)(() => {
 						if (Object(x.a)()) {
-							const e = Object(_.B)("modnote-draft");
+							const e = Object(_.C)("modnote-draft");
 							y(e && e[c] ? e[c] : "")
 						}
 					}, [c]);
 					const T = Object(o.d)(),
 						L = Object(a.useCallback)(e => {
-							y(e), Object(_.Ib)("modnote-draft", {
+							y(e), Object(_.Kb)("modnote-draft", {
 								[c]: e
 							})
 						}, [y, c]),
@@ -3776,9 +3776,9 @@
 					T = Object(m.a)(),
 					[L, F, D] = function(e, t, n) {
 						const [r, o] = Object(a.useState)(Object(u.r)(e, t) || 0), s = Object(a.useCallback)(() => {
-							o(r + 1), Object(u.Bb)(e, t, r + 1)
+							o(r + 1), Object(u.Db)(e, t, r + 1)
 						}, []), i = Object(a.useCallback)(() => {
-							n > 0 && (o(n), Object(u.Bb)(e, t, n))
+							n > 0 && (o(n), Object(u.Db)(e, t, n))
 						}, []);
 						return [r, s, i]
 					}(h, n.notificationName, (null === (v = n.persistence) || void 0 === v ? void 0 : v.maxViews) || 0),
@@ -4313,7 +4313,7 @@
 						[I, C] = function(e) {
 							const [t, n] = Object(r.useState)(() => Object(Q.u)(e));
 							return [t, Object(r.useCallback)(() => {
-								n(!0), Object(Q.Cb)(e)
+								n(!0), Object(Q.Eb)(e)
 							}, [e])]
 						}(x),
 						[O, N] = function(e) {
@@ -5324,7 +5324,7 @@
 					url: P,
 					isHovercard: U
 				} = e;
-				const M = Object(o.e)(e => !O && !!E && Object(d.c)(e));
+				const M = Object(o.e)(e => !O && !!E && Object(d.d)(e));
 				return r.a.createElement(r.a.Fragment, null, r.a.createElement(m.a, {
 					bannerBackgroundImage: t,
 					editMode: !!p,
@@ -5934,7 +5934,7 @@
 			function o(e) {
 				const [t, n] = Object(a.useState)(Object(r.t)(e));
 				return [t, Object(a.useCallback)(() => {
-					n(!0), Object(r.sb)(e)
+					n(!0), Object(r.ub)(e)
 				}, [])]
 			}
 		},
@@ -6581,4 +6581,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.bc99d494ef7f780c8a76.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.68f7a4d80788b080ad31.js.map

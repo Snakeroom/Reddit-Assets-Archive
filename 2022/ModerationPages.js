@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.6a6d9fb8ba8a9351f3b9.js
-// Retrieved at 11/17/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.366256e31ccf622cb988.js
+// Retrieved at 11/17/2022, 12:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -2660,7 +2660,7 @@
 								commentId: e,
 								followState: t
 							})).ok) {
-							Object(K.yb)(null !== (u = null === (l = null === (c = r().pages) || void 0 === c ? void 0 : c.comments) || void 0 === l ? void 0 : l.followed) && void 0 !== u ? u : [], null === (m = r().user.account) || void 0 === m ? void 0 : m.id);
+							Object(K.Ab)(null !== (u = null === (l = null === (c = r().pages) || void 0 === c ? void 0 : c.comments) || void 0 === l ? void 0 : l.followed) && void 0 !== u ? u : [], null === (m = r().user.account) || void 0 === m ? void 0 : m.id);
 							const e = o ? s.fbt._("Followed! You’ll get updates when there’s new activity.", null, {
 								hk: "2O1Ou3"
 							}) : s.fbt._("Unfollowed. You won’t get updates on this comment anymore.", null, {
@@ -3836,6 +3836,25 @@
 				const s = await (() => n.e("EconHelperActions").then(n.bind(null, "./src/reddit/actions/economics/helpers/index.ts")).then(e => e.fetchAll))();
 				await t(s(e))
 			}
+		},
+		"./src/reddit/actions/economics/marketplace/constants.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "d", (function() {
+				return s
+			})), n.d(t, "c", (function() {
+				return r
+			})), n.d(t, "a", (function() {
+				return o
+			})), n.d(t, "b", (function() {
+				return i
+			})), n.d(t, "e", (function() {
+				return a
+			}));
+			const s = "ECON__MARKETPLACE_ITEM_CLAIMED",
+				r = "ECON__MARKETPLACE_ITEMS_OUT_OF_STOCK",
+				o = "X__MARKETPLACE_DISMISS_AVATAR_PUSHCARD",
+				i = "X__MARKETPLACE_DISMISS_AVATAR_PUSHCARD_BANNER",
+				a = "X__MARKETPLACE_VIEW_AVATAR_PUSHCARD"
 		},
 		"./src/reddit/actions/economics/me/constants.ts": function(e, t, n) {
 			"use strict";
@@ -5413,7 +5432,7 @@
 							gqlContext: a
 						} = i;
 						const d = r();
-						if (!(!Object(m.d)(d) || null != Object(p.a)(d, {
+						if (!(!Object(m.e)(d) || null != Object(p.a)(d, {
 								subredditId: e
 							})) || t.forceLoad) {
 							n(_());
@@ -5653,7 +5672,7 @@
 					n(T());
 					const u = t.fullData ? l.f : l.e;
 					try {
-						const s = await u(a(), e, !!t.includeIdentity, Object(m.d)(c));
+						const s = await u(a(), e, !!t.includeIdentity, Object(m.e)(c));
 						if (s.ok) {
 							const r = s.body;
 							if (null === (d = r.errors) || void 0 === d ? void 0 : d.length) return void(await n(A(r.errors[0].message)));
@@ -7316,14 +7335,14 @@
 				c = e => {
 					switch (e) {
 						case r.a.Denied:
-							a.rb(!1), Object(s.c)();
+							a.tb(!1), Object(s.c)();
 							break;
 						case r.a.Default:
 						case r.a.Granted:
-							a.rb(!0), Object(s.c)();
+							a.tb(!0), Object(s.c)();
 							break;
 						case r.a.Closed:
-							a.rb(!0)
+							a.tb(!0)
 					}
 				}
 		},
@@ -8116,7 +8135,7 @@
 					ye = me || Ee;
 				me && !Object(xe.b)(K, me) && await t(Object(L.g)(me));
 				const Ce = !!me && Object(xe.c)(oe, me),
-					je = Object(be.p)(K),
+					je = Object(be.q)(K),
 					ke = Object(fe.n)(oe, {
 						subredditId: ye
 					}),
@@ -9059,7 +9078,7 @@
 				} = a, l = !!d && d >= 51 && d <= 100, u = !o || Object(p.a)(o), m = i && i.urlParams.subredditName === o, b = Object(ne.R)(s), f = Object(ee.c)(s, {
 					subredditId: Object(H.I)(s, o)
 				});
-				if (u || m || Object(J.E)() || !l || !b || f) return;
+				if (u || m || Object(J.F)() || !l || !b || f) return;
 				const h = Object(W.d)(t(), {
 					subredditName: o
 				});
@@ -9073,7 +9092,7 @@
 					id: "createPostCta",
 					kind: Z.b.Modal,
 					name: "createPostCta",
-					secondButtonAction: async () => Object(J.Jb)(),
+					secondButtonAction: async () => Object(J.Lb)(),
 					secondButtonText: "Dismiss",
 					text: `There have been over ${g} visits to r/${o} in the past week. Create a new post and start the next conversation.`
 				}))
@@ -9433,7 +9452,7 @@
 								totalPostsSeenCount: _,
 								sessionStartTime: g
 							} = Object(Oe.a)(e),
-							v = Object(ye.d)(e),
+							v = Object(ye.e)(e),
 							x = Object(Ee.c)(e),
 							O = {
 								subredditName: r,
@@ -9555,7 +9574,7 @@
 				if (_t.ok && At || Ye && Ct) {
 					if ((Ye || !Ve && Nt) && Ct.geoFilter && i(Object(N.k)(Ct.geoFilter)), !Ve && Nt) {
 						let e, t;
-						if (e = Ze ? Ct : Object(S.b)(null == yt ? void 0 : yt.subredditInfoByName), Object(S.a)(i, Nt, e), Object(ye.d)(Te)) {
+						if (e = Ze ? Ct : Object(S.b)(null == yt ? void 0 : yt.subredditInfoByName), Object(S.a)(i, Nt, e), Object(ye.e)(Te)) {
 							let e;
 							e = Ze ? Ct : Object(w.b)(null == yt ? void 0 : yt.subredditInfoByName), Object(w.a)(i, Nt, e)
 						}
@@ -11754,7 +11773,7 @@
 						}),
 						kind: u.b.SuccessCommunity,
 						text: d
-					})), Object(a.wb)(r + 1)
+					})), Object(a.yb)(r + 1)
 				}
 		},
 		"./src/reddit/actions/postCreation/general.ts": function(e, t, n) {
@@ -26781,7 +26800,7 @@
 					update: l
 				} = e, u = Object(ae.a)(), m = Object(a.d)(), [p, b] = Object(o.useState)(n), [f, h] = Object(o.useState)(!1), [_, g] = Object(o.useState)(!0);
 				return Object(o.useEffect)(() => {
-					g(Object(ie.G)("location")), Object(ie.Lb)("location")
+					g(Object(ie.H)("location")), Object(ie.Nb)("location")
 				}, []), i.a.createElement(i.a.Fragment, null, i.a.createElement(Q.a, {
 					className: je.a.noMarginHeading
 				}, G.fbt._("Community Location and main language", null, {
@@ -27973,10 +27992,10 @@
 			}
 			var v = Object(i.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(c.i)()), Object(p.Db)()
+					e(Object(c.i)()), Object(p.Fb)()
 				},
 				onViewTooltip: () => {
-					Object(p.fc)()
+					Object(p.hc)()
 				}
 			}))(Object(u.c)(g));
 			const x = "editable-primary-topic-idcard";
@@ -34113,9 +34132,9 @@
 					L = Object(m.a)(),
 					[D, F, U] = function(e, t, n) {
 						const [r, o] = Object(s.useState)(Object(u.r)(e, t) || 0), i = Object(s.useCallback)(() => {
-							o(r + 1), Object(u.Bb)(e, t, r + 1)
+							o(r + 1), Object(u.Db)(e, t, r + 1)
 						}, []), a = Object(s.useCallback)(() => {
-							n > 0 && (o(n), Object(u.Bb)(e, t, n))
+							n > 0 && (o(n), Object(u.Db)(e, t, n))
 						}, []);
 						return [r, i, a]
 					}(h, n.notificationName, (null === (_ = n.persistence) || void 0 === _ ? void 0 : _.maxViews) || 0),
@@ -34650,7 +34669,7 @@
 						[O, E] = function(e) {
 							const [t, n] = Object(r.useState)(() => Object(Q.u)(e));
 							return [t, Object(r.useCallback)(() => {
-								n(!0), Object(Q.Cb)(e)
+								n(!0), Object(Q.Eb)(e)
 							}, [e])]
 						}(g),
 						[y, C] = function(e) {
@@ -44351,7 +44370,7 @@
 					})),
 					f = (null == b ? void 0 : b[S.a.CommentsWithGifs]) || !1,
 					h = Object(o.e)(T.b),
-					_ = Object(o.e)(w.d);
+					_ = Object(o.e)(w.e);
 				return r.a.createElement(u.a, {
 					className: C.a.contentContainer
 				}, r.a.createElement(u.b, null, a.fbt._("Powerups settings", null, {
@@ -44940,7 +44959,7 @@
 					url: N,
 					isHovercard: P
 				} = e;
-				const R = Object(o.e)(e => !y && !!I && Object(c.c)(e));
+				const R = Object(o.e)(e => !y && !!I && Object(c.d)(e));
 				return r.a.createElement(r.a.Fragment, null, r.a.createElement(m.a, {
 					bannerBackgroundImage: t,
 					editMode: !!b,
@@ -45936,7 +45955,7 @@
 					super(e), this.onShowTooltip = () => {
 						Object(x.v)() || (this.props.onShowTooltip(ee), setTimeout(() => {
 							this.props.onHideTooltip()
-						}, te), Object(x.Yb)())
+						}, te), Object(x.ac)())
 					}, this.onAddReason = () => {
 						this.setState({
 							reasonToEdit: null
@@ -56710,7 +56729,7 @@
 						adsSeenCount: R,
 						totalPostsSeenCount: A,
 						sessionStartTime: M
-					} = Object(_.a)(e), L = Object(x.d)(e), D = Object(v.a)(e), F = Object(g.c)(e), U = {
+					} = Object(_.a)(e), L = Object(x.e)(e), D = Object(v.a)(e), F = Object(g.c)(e), U = {
 						name: t,
 						includeIdentity: k && !e.user.account,
 						adContext: {
@@ -59965,7 +59984,7 @@
 					}
 				}),
 				a = (e, t) => {
-					t && (Object(r.Eb)(e.postId), Object(r.Nb)(t)), e.impressionIdStr ? Object(r.Fb)(e.impressionIdStr) : e.impressionId && Object(r.Fb)(e.impressionId)
+					t && (Object(r.Gb)(e.postId), Object(r.Pb)(t)), e.impressionIdStr ? Object(r.Hb)(e.impressionIdStr) : e.impressionId && Object(r.Hb)(e.impressionId)
 				}
 		},
 		"./src/reddit/helpers/trackers/blade.ts": function(e, t, n) {
@@ -65819,7 +65838,7 @@
 			function o(e) {
 				const [t, n] = Object(s.useState)(Object(r.t)(e));
 				return [t, Object(s.useCallback)(() => {
-					n(!0), Object(r.sb)(e)
+					n(!0), Object(r.ub)(e)
 				}, [])]
 			}
 		},
@@ -68853,9 +68872,9 @@
 					} = t;
 					return Object(re.b)(e, {
 						subredditId: n.id
-					}) && (!Object(se.b)(e) || !Object(C.d)(e))
+					}) && (!Object(se.b)(e) || !Object(C.e)(e))
 				},
-				isTalkHostsExperimentEnabled: C.p,
+				isTalkHostsExperimentEnabled: C.q,
 				isEventPostUiHidden: te.a
 			});
 			class Ve extends i.a.Component {
@@ -68889,7 +68908,7 @@
 				}
 				componentDidMount() {
 					this.setState({
-						locationSettingSeen: Object(K.G)("location")
+						locationSettingSeen: Object(K.H)("location")
 					})
 				}
 				render() {
@@ -69360,7 +69379,7 @@
 					return {
 						contentGateInfo: m,
 						isBroadcastingEnabled: !!b && Object(w.c)(u, b.id),
-						isTalkHostsEnabled: Object(C.p)(u),
+						isTalkHostsEnabled: Object(C.q)(u),
 						isContributor: f,
 						isEmployee: t,
 						layout: n,
@@ -69886,6 +69905,7 @@
 						id: t,
 						maxViews: parseInt(a[b.MaxEventViews], 10),
 						banner: {
+							id: t,
 							iconUrl: r,
 							title: a[b.BannerTitle],
 							body: a[b.BannerBody]
@@ -69946,15 +69966,16 @@
 					}
 				}), t
 			}
-			var v = n("./src/reddit/actions/goldPurchaseModals/constants.ts"),
-				x = n("./src/reddit/actions/modal.ts"),
-				O = n("./src/reddit/constants/modals.ts");
-			var E = function() {
+			var v = n("./src/reddit/actions/economics/marketplace/constants.ts"),
+				x = n("./src/reddit/actions/goldPurchaseModals/constants.ts"),
+				O = n("./src/reddit/actions/modal.ts"),
+				E = n("./src/reddit/constants/modals.ts");
+			var y = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				var n, s;
 				switch (t.type) {
-					case v.s:
+					case x.s:
 						const {
 							avatarMarketingEvents: r
 						} = t.payload;
@@ -69962,8 +69983,17 @@
 							...c,
 							...g(r)
 						} : c;
-					case x.c:
-						return (null === (n = t.payload) || void 0 === n ? void 0 : n.id) === O.a.SNOOVATAR_MODAL ? {
+					case v.a:
+					case v.b:
+					case v.e:
+						return (null == e ? void 0 : e.pushcard) ? {
+							...e,
+							pushcard: {
+								...e.pushcard
+							}
+						} : e;
+					case O.c:
+						return (null === (n = t.payload) || void 0 === n ? void 0 : n.id) === E.a.SNOOVATAR_MODAL ? {
 							...c,
 							pushcard: null !== (s = null == e ? void 0 : e.pushcard) && void 0 !== s ? s : null
 						} : e;
@@ -69971,7 +70001,7 @@
 						return e
 				}
 			};
-			var y = function() {
+			var C = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -69990,9 +70020,9 @@
 				}
 			};
 			t.a = Object(o.c)({
-				marketing: E,
+				marketing: y,
 				avatarUser: d,
-				randomAvatar: y
+				randomAvatar: C
 			})
 		},
 		"./src/reddit/reducers/features/creatorStats/index.ts": function(e, t, n) {
@@ -78257,4 +78287,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.6a6d9fb8ba8a9351f3b9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.366256e31ccf622cb988.js.map

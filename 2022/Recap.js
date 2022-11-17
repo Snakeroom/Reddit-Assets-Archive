@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Recap.32f23ff9da3f8ccf1cf7.js
-// Retrieved at 11/17/2022, 9:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Recap.7e9b65bae8ec2fea917b.js
+// Retrieved at 11/17/2022, 12:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Recap", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, a, t) {
@@ -2248,7 +2248,7 @@
 					Object(i.useEffect)(() => {
 						K()
 					}, [K]), Object(i.useEffect)(() => {
-						Object(g.d)(!0), P && Object(_.Tb)(null == P ? void 0 : P.id)
+						Object(g.d)(!0), P && Object(_.Vb)(null == P ? void 0 : P.id)
 					}, [F, e, P, a]), Object(i.useEffect)(() => {
 						a(Object(O.r)()), Q()
 					}, [Q, a]), Object(i.useEffect)(() => {
@@ -2421,4 +2421,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Recap.32f23ff9da3f8ccf1cf7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Recap.7e9b65bae8ec2fea917b.js.map

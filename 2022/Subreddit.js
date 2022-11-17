@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.bc09cc83e1cb461dbcd5.js
-// Retrieved at 11/17/2022, 9:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.65eeb41ef09bc7cb0474.js
+// Retrieved at 11/17/2022, 12:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit", "ModListing~Reddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -1968,14 +1968,14 @@
 				d = e => {
 					switch (e) {
 						case s.a.Denied:
-							i.rb(!1), Object(r.c)();
+							i.tb(!1), Object(r.c)();
 							break;
 						case s.a.Default:
 						case s.a.Granted:
-							i.rb(!0), Object(r.c)();
+							i.tb(!0), Object(r.c)();
 							break;
 						case s.a.Closed:
-							i.rb(!0)
+							i.tb(!0)
 					}
 				}
 		},
@@ -2729,7 +2729,7 @@
 				} = e, n = Object(c.g)(a.a.AWARDED_LISTING_BANNER, i.g), [u, m] = Object(r.useState)(n ? N.Hidden : N.Visible);
 				if (u === N.Hidden) return null;
 				const p = () => {
-					m(N.Visible), Object(c.ob)(a.a.AWARDED_LISTING_BANNER, !1, i.g)
+					m(N.Visible), Object(c.qb)(a.a.AWARDED_LISTING_BANNER, !1, i.g)
 				};
 				return u === N.Dismissed ? s.a.createElement("div", {
 					className: Object(o.a)(g.a.dismissedContainer, t)
@@ -2750,7 +2750,7 @@
 				})), s.a.createElement(C, null), s.a.createElement(l.a, {
 					className: g.a.close,
 					onClick: () => {
-						m(N.Dismissed), Object(c.ob)(a.a.AWARDED_LISTING_BANNER, !0, i.g)
+						m(N.Dismissed), Object(c.qb)(a.a.AWARDED_LISTING_BANNER, !0, i.g)
 					}
 				}))
 			}
@@ -3064,7 +3064,7 @@
 						a = Object(h.b)(E),
 						i = Object(h.b)(O),
 						[c, d] = function(e, t) {
-							const [n, s] = Object(r.useState)(Object(F.U)(e, t));
+							const [n, s] = Object(r.useState)(Object(F.V)(e, t));
 							return [n, Object(r.useCallback)(() => {
 								const n = Object(F.b)(e, t);
 								s(n)
@@ -3094,7 +3094,7 @@
 							e.stopPropagation(), a.visible ? f() : v()
 						}, [f, v, a.visible]),
 						S = Object(r.useCallback)(t => {
-							t === y.c.FREQUENT && Object(F.gb)(e.userId, e.subredditId)
+							t === y.c.FREQUENT && Object(F.hb)(e.userId, e.subredditId)
 						}, [e.subredditId, e.userId]),
 						w = Object(r.useCallback)(r => {
 							const {
@@ -3368,7 +3368,7 @@
 					small: !0,
 					isFullWidth: !0,
 					afterUnsubscribeAction: () => {
-						t && (Object(F.gb)(e.userId, t), e.updateSubredditInfo())
+						t && (Object(F.hb)(e.userId, t), e.updateSubredditInfo())
 					}
 				})), w && s.a.createElement(be, {
 					onClickUnmute: e.unmuteSubreddit
@@ -4195,7 +4195,7 @@
 			class _ extends o.a.Component {
 				constructor(e) {
 					super(e), this.closeBanner = () => {
-						Object(u.ob)(d.a.CREATE_POST_BANNER, !0, this.props.subreddit.id), this.setState({
+						Object(u.qb)(d.a.CREATE_POST_BANNER, !0, this.props.subreddit.id), this.setState({
 							visible: !1
 						}), this.props.showToast(), this.props.sendEvent(p())
 					}, this.createPost = () => {
@@ -4613,7 +4613,7 @@
 					let {
 						className: t
 					} = e;
-					return Object(o.e)(a.h) ? s.a.createElement(d, {
+					return Object(o.e)(a.i) ? s.a.createElement(d, {
 						className: t
 					}) : s.a.createElement(i, {
 						className: t
@@ -13993,7 +13993,7 @@
 					}
 				}),
 				i = (e, t) => {
-					t && (Object(s.Eb)(e.postId), Object(s.Nb)(t)), e.impressionIdStr ? Object(s.Fb)(e.impressionIdStr) : e.impressionId && Object(s.Fb)(e.impressionId)
+					t && (Object(s.Gb)(e.postId), Object(s.Pb)(t)), e.impressionIdStr ? Object(s.Hb)(e.impressionIdStr) : e.impressionId && Object(s.Hb)(e.impressionId)
 				}
 		},
 		"./src/reddit/helpers/trackers/communityHubs.ts": function(e, t, n) {
@@ -22430,4 +22430,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.bc09cc83e1cb461dbcd5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.65eeb41ef09bc7cb0474.js.map

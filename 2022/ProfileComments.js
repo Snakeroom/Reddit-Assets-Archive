@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.56cd58ea705760cb0c66.js
-// Retrieved at 11/17/2022, 9:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.3f5cd008c19b6043209a.js
+// Retrieved at 11/17/2022, 12:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -588,7 +588,7 @@
 						postId: n,
 						author: o
 					} = t;
-					return Object(b.e)(_.n) && s.roomStatus === f.b.NotStarted ? r.a.createElement(O.a, {
+					return Object(b.e)(_.o) && s.roomStatus === f.b.NotStarted ? r.a.createElement(O.a, {
 						postId: n,
 						author: o,
 						roomId: s.roomId,
@@ -725,7 +725,7 @@
 					} = Ke,
 					[Qe, $e] = Object(n.useState)(!1),
 					Ye = Object(n.useCallback)(() => {
-						$e(!Qe), Object(te.Qb)(), Ne(Object(re.d)(xe))
+						$e(!Qe), Object(te.Sb)(), Ne(Object(re.d)(xe))
 					}, [Qe, xe, Ne]);
 				let Xe = r.a.createElement(J.a, {
 					className: me.a.classicThumbnail,
@@ -5821,4 +5821,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.56cd58ea705760cb0c66.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.3f5cd008c19b6043209a.js.map

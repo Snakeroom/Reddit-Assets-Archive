@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Avatar.55f639273e8c5c395d99.js
-// Retrieved at 11/17/2022, 9:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Avatar.1fccf907386614d07eda.js
+// Retrieved at 11/17/2022, 12:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Avatar"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, r) {
@@ -70,7 +70,7 @@
 					activeMeSubpage: R || void 0,
 					activeDetails: M || void 0,
 					shopTabState: T || void 0
-				}), [M, h, R, T]), N = Object(c.e)(e => !Object(O.R)(e) && Object(p.v)(e));
+				}), [M, h, R, T]), N = Object(c.e)(e => !Object(O.R)(e) && Object(p.w)(e));
 				if (!x || !f) return null;
 				if (N) return a.a.createElement("div", {
 					className: Object(o.a)(b.a.container, {
@@ -189,4 +189,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.55f639273e8c5c395d99.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.1fccf907386614d07eda.js.map

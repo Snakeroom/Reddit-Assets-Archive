@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.c919e29f3db17383cb51.js
-// Retrieved at 11/17/2022, 9:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.f62c1613e6661a28a3e6.js
+// Retrieved at 11/17/2022, 12:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -1534,7 +1534,7 @@
 								commentId: e,
 								followState: t
 							})).ok) {
-							Object(q.yb)(null !== (u = null === (l = null === (d = r().pages) || void 0 === d ? void 0 : d.comments) || void 0 === l ? void 0 : l.followed) && void 0 !== u ? u : [], null === (m = r().user.account) || void 0 === m ? void 0 : m.id);
+							Object(q.Ab)(null !== (u = null === (l = null === (d = r().pages) || void 0 === d ? void 0 : d.comments) || void 0 === l ? void 0 : l.followed) && void 0 !== u ? u : [], null === (m = r().user.account) || void 0 === m ? void 0 : m.id);
 							const e = s ? o.fbt._("Followed! You’ll get updates when there’s new activity.", null, {
 								hk: "2O1Ou3"
 							}) : o.fbt._("Unfollowed. You won’t get updates on this comment anymore.", null, {
@@ -1657,6 +1657,25 @@
 			}));
 			const o = "ECONOMICS__CLAIMS__CLAIM_PENDING",
 				r = "ECONOMICS__CLAIMS__CLAIM_COMPLETED"
+		},
+		"./src/reddit/actions/economics/marketplace/constants.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "d", (function() {
+				return o
+			})), n.d(t, "c", (function() {
+				return r
+			})), n.d(t, "a", (function() {
+				return s
+			})), n.d(t, "b", (function() {
+				return i
+			})), n.d(t, "e", (function() {
+				return a
+			}));
+			const o = "ECON__MARKETPLACE_ITEM_CLAIMED",
+				r = "ECON__MARKETPLACE_ITEMS_OUT_OF_STOCK",
+				s = "X__MARKETPLACE_DISMISS_AVATAR_PUSHCARD",
+				i = "X__MARKETPLACE_DISMISS_AVATAR_PUSHCARD_BANNER",
+				a = "X__MARKETPLACE_VIEW_AVATAR_PUSHCARD"
 		},
 		"./src/reddit/actions/economics/me/constants.ts": function(e, t, n) {
 			"use strict";
@@ -2867,7 +2886,7 @@
 						}),
 						kind: u.b.SuccessCommunity,
 						text: c
-					})), Object(a.wb)(r + 1)
+					})), Object(a.yb)(r + 1)
 				}
 		},
 		"./src/reddit/actions/postCreation/mediaUpload.ts": function(e, t, n) {
@@ -7077,7 +7096,7 @@
 					let {
 						className: t
 					} = e;
-					return Object(s.e)(i.h) ? r.a.createElement(d, {
+					return Object(s.e)(i.i) ? r.a.createElement(d, {
 						className: t
 					}) : r.a.createElement(a, {
 						className: t
@@ -30547,7 +30566,7 @@
 						theme: l,
 						topics: u,
 						isUpcoming: m
-					} = Object(s.e)(A.ub), h = Object(s.e)(A.kb), b = Object(s.e)(L.n), f = Object(s.e)(F.l), [g, v] = Object(o.useState)(!1), E = Object(s.d)(), C = Object(P.a)(), x = Object(o.useMemo)(() => Object(w.d)(), [i.id]), j = Object(o.useMemo)(() => Object.keys(W).reduce((e, t) => (e[W[t]] = l === t, e), {}), [l]);
+					} = Object(s.e)(A.ub), h = Object(s.e)(A.kb), b = Object(s.e)(L.o), f = Object(s.e)(F.l), [g, v] = Object(o.useState)(!1), E = Object(s.d)(), C = Object(P.a)(), x = Object(o.useMemo)(() => Object(w.d)(), [i.id]), j = Object(o.useMemo)(() => Object.keys(W).reduce((e, t) => (e[W[t]] = l === t, e), {}), [l]);
 					Object(o.useEffect)(() => {
 						C(Object(I.d)())
 					}, [C]);
@@ -30774,7 +30793,7 @@
 			var Ce = () => {
 				const [e, t] = Object(o.useState)(!1), {
 					topics: n
-				} = Object(s.e)(A.ub), i = Object(s.e)(L.n), c = Object(s.d)(), l = () => {
+				} = Object(s.e)(A.ub), i = Object(s.e)(L.o), c = Object(s.d)(), l = () => {
 					t(!1)
 				};
 				return r.a.createElement(r.a.Fragment, null, r.a.createElement(S.t, {
@@ -31271,7 +31290,7 @@
 						const {
 							doNotShowOriginalContentDisclaimerClicked: e
 						} = this.props;
-						e(), Object(zt.tb)(Kt.ORIGINAL_CONTENT_DISCLAIMER, !0), this.setState({
+						e(), Object(zt.vb)(Kt.ORIGINAL_CONTENT_DISCLAIMER, !0), this.setState({
 							showOCDisclaimer: !1
 						})
 					}, this.handleOriginalContentClick = () => {
@@ -31543,14 +31562,14 @@
 				Tn = n("./src/reddit/helpers/trackers/postCollection.ts");
 			const wn = [{
 					id: Gt.d,
-					getShowTimesLeft: zt.K,
-					setShowTimesLeft: zt.Pb,
+					getShowTimesLeft: zt.L,
+					setShowTimesLeft: zt.Rb,
 					tooltipShown: Tn.n,
 					tooltipDismissed: Tn.m
 				}, {
 					id: Gt.c,
-					getShowTimesLeft: zt.J,
-					setShowTimesLeft: zt.Ob,
+					getShowTimesLeft: zt.K,
+					setShowTimesLeft: zt.Qb,
 					tooltipShown: Tn.f,
 					tooltipDismissed: Tn.e
 				}],
@@ -34861,7 +34880,7 @@
 						subredditId: n
 					} = e;
 					const i = Object(s.d)(),
-						c = Object(s.e)(L.g),
+						c = Object(s.e)(L.h),
 						l = Object(s.e)(e => Object(qn.b)(e, {
 							subredditId: n
 						})),
@@ -35281,7 +35300,7 @@
 				}, e.children),
 				mu = Object(i.a)(A.d, A.e, A.h, A.T, A.cb, Q.s, (e, t) => {
 					const n = Object(A.h)(e);
-					return Object(L.t)(e) && t.isTalkCreationAllowedForUser && n.isProfile
+					return Object(L.u)(e) && t.isTalkCreationAllowedForUser && n.isProfile
 				}, (e, t, n, o, r, s, i) => {
 					const {
 						images: a = !0,
@@ -35515,8 +35534,8 @@
 							subredditId: n.id
 						})
 					},
-					isTalkTopicSelectionEnabled: L.s,
-					isScheduledTalksEnabled: L.n
+					isTalkTopicSelectionEnabled: L.t,
+					isScheduledTalksEnabled: L.o
 				});
 			class ju extends r.a.Component {
 				constructor(e) {
@@ -35858,7 +35877,7 @@
 					const t = Object(G.a)(),
 						[n, i] = Object(o.useState)(!1),
 						a = Object(s.e)(e => Object(A.h)(e)),
-						c = Object(s.e)(L.t),
+						c = Object(s.e)(L.u),
 						d = Object(o.useMemo)(() => {
 							var e;
 							return !!(null === (e = a.allowedPostTypes) || void 0 === e ? void 0 : e.talks)
@@ -36257,6 +36276,7 @@
 						id: t,
 						maxViews: parseInt(a[h.MaxEventViews], 10),
 						banner: {
+							id: t,
 							iconUrl: r,
 							title: a[h.BannerTitle],
 							body: a[h.BannerBody]
@@ -36317,15 +36337,16 @@
 					}
 				}), t
 			}
-			var E = n("./src/reddit/actions/goldPurchaseModals/constants.ts"),
-				C = n("./src/reddit/actions/modal.ts"),
-				x = n("./src/reddit/constants/modals.ts");
-			var y = function() {
+			var E = n("./src/reddit/actions/economics/marketplace/constants.ts"),
+				C = n("./src/reddit/actions/goldPurchaseModals/constants.ts"),
+				x = n("./src/reddit/actions/modal.ts"),
+				y = n("./src/reddit/constants/modals.ts");
+			var O = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				var n, o;
 				switch (t.type) {
-					case E.s:
+					case C.s:
 						const {
 							avatarMarketingEvents: r
 						} = t.payload;
@@ -36333,8 +36354,17 @@
 							...d,
 							...v(r)
 						} : d;
-					case C.c:
-						return (null === (n = t.payload) || void 0 === n ? void 0 : n.id) === x.a.SNOOVATAR_MODAL ? {
+					case E.a:
+					case E.b:
+					case E.e:
+						return (null == e ? void 0 : e.pushcard) ? {
+							...e,
+							pushcard: {
+								...e.pushcard
+							}
+						} : e;
+					case x.c:
+						return (null === (n = t.payload) || void 0 === n ? void 0 : n.id) === y.a.SNOOVATAR_MODAL ? {
 							...d,
 							pushcard: null !== (o = null == e ? void 0 : e.pushcard) && void 0 !== o ? o : null
 						} : e;
@@ -36342,7 +36372,7 @@
 						return e
 				}
 			};
-			var O = function() {
+			var _ = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -36361,9 +36391,9 @@
 				}
 			};
 			t.a = Object(s.c)({
-				marketing: y,
+				marketing: O,
 				avatarUser: c,
-				randomAvatar: O
+				randomAvatar: _
 			})
 		},
 		"./src/reddit/reducers/features/crypto/index.ts": function(e, t, n) {
@@ -39511,4 +39541,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.c919e29f3db17383cb51.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.f62c1613e6661a28a3e6.js.map

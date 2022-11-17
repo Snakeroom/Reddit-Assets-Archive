@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.97659f9760dace518ca0.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.e56040a0679735a9557f.js
+// Retrieved at 11/17/2022, 12:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-meta-ArbitrumPointsMigrationPage"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -1242,16 +1242,16 @@
 			var N = n("./src/reddit/helpers/localStorage/index.ts"),
 				_ = n("./src/reddit/selectors/user.ts"),
 				P = n("./src/reddit/icons/svgs/CheckmarkFitted/index.tsx"),
-				I = n("./src/reddit/icons/svgs/ClearFilled/index.tsx"),
-				S = n("./src/reddit/pages/meta/ArbitrumPointsMigrationPage/index.m.less"),
-				L = n.n(S);
+				S = n("./src/reddit/icons/svgs/ClearFilled/index.tsx"),
+				I = n("./src/reddit/pages/meta/ArbitrumPointsMigrationPage/index.m.less"),
+				L = n.n(I);
 			const F = () => i.a.createElement(u.a, {
 					className: L.a.loading
 				}),
 				B = () => i.a.createElement(P.a, {
 					className: L.a.succeeded
 				}),
-				D = () => i.a.createElement(I.a, {
+				D = () => i.a.createElement(S.a, {
 					className: L.a.failed
 				}),
 				R = "5391184";
@@ -1323,7 +1323,7 @@
 			const V = "arb-migration-l1";
 
 			function W(e) {
-				e ? Object(N.Ib)(V, e) : window.localStorage && window.localStorage.removeItem(V)
+				e ? Object(N.Kb)(V, e) : window.localStorage && window.localStorage.removeItem(V)
 			}
 
 			function q() {
@@ -1334,7 +1334,7 @@
 					[p, y] = Object(r.useState)(Object(E.e)()),
 					[b, h] = Object(r.useState)(function() {
 						var e, t;
-						const n = Object(N.B)(V);
+						const n = Object(N.C)(V);
 						return n && (n.balance = a.a.from(n.balance), n.seqNums = null === (e = n.seqNums) || void 0 === e ? void 0 : e.map(e => a.a.from(e)), n.originalL2Balance = null !== (t = n.originalL2Balance) && void 0 !== t ? t : a.a.from(n.originalL2Balance)), n
 					}()),
 					[f, g] = Object(r.useState)((null == b ? void 0 : b.destinationAddress) || ""),
@@ -1425,4 +1425,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.97659f9760dace518ca0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.e56040a0679735a9557f.js.map

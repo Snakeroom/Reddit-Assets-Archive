@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.e469cecfd62ce8205f74.js
-// Retrieved at 11/17/2022, 9:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.48e4778f418ea6bbe9e4.js
+// Retrieved at 11/17/2022, 12:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -470,7 +470,7 @@
 					t(v({
 						categoryId: e,
 						rank: n + 1
-					})), Object(u.pb)(Object(p.d)(s()))
+					})), Object(u.rb)(Object(p.d)(s()))
 				}
 		},
 		"./src/reddit/actions/commentsListTruncated/index.ts": function(e, t, s) {
@@ -2713,12 +2713,12 @@
 						h && j(setTimeout(() => {
 							b.current && (b.current.classList.add(E.a.transform), b.current.style.width = `${w}px`)
 						}, 4750)), h && O(setTimeout(() => {
-							f(!1), Object(m.Sb)(L, !1)
+							f(!1), Object(m.Ub)(L, !1)
 						}, 5e3))
 					};
 				return Object(n.useEffect)(() => {
 					R || setTimeout(() => {
-						const e = Object(m.N)(L);
+						const e = Object(m.O)(L);
 						e ? Object(a.e)(e.lastSeenTime) >= 24 && e.dropSkip === m.a.NONE ? f(!0) : Date.now() >= new Date(2022, 10, 16).getTime() && e.dropSkip !== m.a.THIRD && f(!0) : f(!0)
 					})
 				}, [L, R]), r.a.createElement("div", {
@@ -2727,7 +2727,7 @@
 				}, h && N && !s && !R ? r.a.createElement(v, {
 					ref: b,
 					onBananaPillClick: () => {
-						x && clearTimeout(x), y && clearTimeout(y), f(!1), Object(m.Sb)(L, !0), p((() => e => ({
+						x && clearTimeout(x), y && clearTimeout(y), f(!1), Object(m.Ub)(L, !0), p((() => e => ({
 							source: "recap",
 							action: "click",
 							noun: "feed_banana",
@@ -11779,8 +11779,8 @@
 				const [e, t] = Object(i.useState)(!1);
 				return Object(i.useEffect)(() => {
 					var e;
-					const s = null !== (e = Object(p.B)("should-show-comment-tab-tooltip")) && void 0 !== e ? e : 2;
-					t(Boolean(s)), 2 === s ? Object(p.Ib)("should-show-comment-tab-tooltip", 1) : 1 === s && Object(p.Ib)("should-show-comment-tab-tooltip", !1)
+					const s = null !== (e = Object(p.C)("should-show-comment-tab-tooltip")) && void 0 !== e ? e : 2;
+					t(Boolean(s)), 2 === s ? Object(p.Kb)("should-show-comment-tab-tooltip", 1) : 1 === s && Object(p.Kb)("should-show-comment-tab-tooltip", !1)
 				}, []), {
 					get shouldShowCommentTabTooltip() {
 						return e
@@ -19228,4 +19228,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.e469cecfd62ce8205f74.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.48e4778f418ea6bbe9e4.js.map

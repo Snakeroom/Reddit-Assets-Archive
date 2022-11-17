@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.529256ff90a4706cbf3b.js
-// Retrieved at 11/17/2022, 9:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.bde2a906c5fe7203f188.js
+// Retrieved at 11/17/2022, 12:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -173,7 +173,7 @@
 						title: n
 					}, n))
 				},
-				I = e => {
+				L = e => {
 					let {
 						title: t,
 						isOpened: n,
@@ -209,7 +209,7 @@
 						hk: "439kAh"
 					})))))
 				};
-			class L extends d.a.Component {
+			class I extends d.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						openedSection: 0,
@@ -246,7 +246,7 @@
 							to: t,
 							title: n
 						})
-					}, this.renderSection = (e, t) => d.a.createElement(I, {
+					}, this.renderSection = (e, t) => d.a.createElement(L, {
 						key: e.title,
 						title: Object(C.b)(e.title),
 						isOpened: this.isOpened(t),
@@ -272,7 +272,7 @@
 					}, t.map(this.renderSection))
 				}
 			}
-			var A = L,
+			var A = I,
 				D = n("./src/reddit/components/SidebarAd/ListingPageSidebarAd.tsx"),
 				R = n("./src/reddit/components/SidebarContainer/index.tsx"),
 				W = n("./src/reddit/components/SidebarStickyBottom/index.tsx"),
@@ -306,13 +306,13 @@
 					}
 				}
 				async getSubredditForAdoption() {
-					let e = ie.cachedData || Object(Z.B)(H.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
+					let e = ie.cachedData || Object(Z.C)(H.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
 					if (!e || Date.now() - e.fetchedAt > re) {
 						const t = await $(this.props.apiContext());
 						t.ok && (e = {
 							subreddits: t.body.data.subreddits.map(e => e.name),
 							fetchedAt: Date.now()
-						}, Object(Z.Ib)(H.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
+						}, Object(Z.Kb)(H.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
 					}
 					return ie.cachedData = e, e ? e.subreddits : []
 				}
@@ -642,13 +642,13 @@
 						className: Be.a.bannerText
 					}, t))
 				},
-				Ie = e => `/t/${e}?activeTab=communities`,
-				Le = e => {
+				Le = e => `/t/${e}?activeTab=communities`,
+				Ie = e => {
 					const t = e.topic.getName();
 					return d.a.createElement("div", {
 						className: Be.a.itemContainer
 					}, d.a.createElement(Te.a, {
-						to: Ie(e.topic.url),
+						to: Le(e.topic.url),
 						onClick: () => e.sendEvent(Object(je.c)(t))
 					}, t))
 				};
@@ -666,7 +666,7 @@
 						widgetKind: e.widget && e.widget.kind
 					}, d.a.createElement(Pe, null), d.a.createElement("div", {
 						className: Be.a.container
-					}, n.map(e => d.a.createElement(Le, {
+					}, n.map(e => d.a.createElement(Ie, {
 						key: e.url,
 						topic: e,
 						sendEvent: t
@@ -2228,4 +2228,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.529256ff90a4706cbf3b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.bde2a906c5fe7203f188.js.map

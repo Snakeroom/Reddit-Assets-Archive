@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.9498af2533211d3a2410.js
-// Retrieved at 11/17/2022, 9:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.5f4e94b2c14c207bf6f4.js
+// Retrieved at 11/17/2022, 12:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, r) {
@@ -93,7 +93,7 @@
 					t(k({
 						categoryId: e,
 						rank: n + 1
-					})), Object(m.pb)(Object(p.d)(r()))
+					})), Object(m.rb)(Object(p.d)(r()))
 				}
 		},
 		"./src/reddit/actions/pages/subredditLeaderboard.ts": function(e, t, r) {
@@ -322,12 +322,12 @@
 						g && _(setTimeout(() => {
 							b.current && (b.current.classList.add(v.a.transform), b.current.style.width = `${N}px`)
 						}, 4750)), g && x(setTimeout(() => {
-							y(!1), Object(u.Sb)(I, !1)
+							y(!1), Object(u.Ub)(I, !1)
 						}, 5e3))
 					};
 				return Object(n.useEffect)(() => {
 					B || setTimeout(() => {
-						const e = Object(u.N)(I);
+						const e = Object(u.O)(I);
 						e ? Object(o.e)(e.lastSeenTime) >= 24 && e.dropSkip === u.a.NONE ? y(!0) : Date.now() >= new Date(2022, 10, 16).getTime() && e.dropSkip !== u.a.THIRD && y(!0) : y(!0)
 					})
 				}, [I, B]), s.a.createElement("div", {
@@ -336,7 +336,7 @@
 				}, g && L && !r && !B ? s.a.createElement(k, {
 					ref: b,
 					onBananaPillClick: () => {
-						f && clearTimeout(f), E && clearTimeout(E), y(!1), Object(u.Sb)(I, !0), p((() => e => ({
+						f && clearTimeout(f), E && clearTimeout(E), y(!1), Object(u.Ub)(I, !0), p((() => e => ({
 							source: "recap",
 							action: "click",
 							noun: "feed_banana",
@@ -2501,8 +2501,8 @@
 			}
 			var J = Object(u.c)(z(Q)),
 				q = r("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				K = r("./src/reddit/components/CategoryPickerWidget/index.m.less"),
-				U = r.n(K);
+				U = r("./src/reddit/components/CategoryPickerWidget/index.m.less"),
+				K = r.n(U);
 
 			function V() {
 				return (V = Object.assign || function(e) {
@@ -2520,7 +2520,7 @@
 					className: n,
 					isActive: s,
 					tabIndex: a
-				} = e, o = Object(c.a)(U.a.categoryLink, s && U.a.active, n);
+				} = e, o = Object(c.a)(K.a.categoryLink, s && K.a.active, n);
 				return i.a.createElement("li", null, i.a.createElement(q.a, V({}, t.anchorProps, {
 					className: o,
 					"data-active": s,
@@ -2574,7 +2574,7 @@
 						onItemClick: l
 					} = this.props, {
 						isExpanded: u
-					} = this.state, m = !u && d && r * d, b = a + (e ? r * e.length : 0), g = Object(c.a)(U.a.categoryList, u && U.a.expanded), h = e => !(!o || o !== Object($.i)(e)), y = i.a.createElement("ul", {
+					} = this.state, m = !u && d && r * d, b = a + (e ? r * e.length : 0), g = Object(c.a)(K.a.categoryList, u && K.a.expanded), h = e => !(!o || o !== Object($.i)(e)), y = i.a.createElement("ul", {
 						className: g,
 						style: {
 							height: m || b
@@ -2591,7 +2591,7 @@
 						}, e.name === p.m ? p.k : e.displayText || e.name)
 					}));
 					return i.a.createElement("div", {
-						className: Object(c.a)(U.a.categoryListContainer, n)
+						className: Object(c.a)(K.a.categoryListContainer, n)
 					}, y)
 				}
 				render() {
@@ -2602,16 +2602,16 @@
 						header: n,
 						headerClassName: s,
 						initialNumberOfCategories: a
-					} = this.props, o = t && a && t.length > a, d = Object(c.a)(r, U.a.container);
+					} = this.props, o = t && a && t.length > a, d = Object(c.a)(r, K.a.container);
 					return i.a.createElement(X.a, {
 						className: d,
 						contentOnly: !0
 					}, i.a.createElement("div", {
-						className: Object(c.a)(U.a.header, s)
+						className: Object(c.a)(K.a.header, s)
 					}, i.a.createElement("h2", null, n || ee._("Categories", null, {
 						hk: "46zLMb"
 					}))), this.renderCategoryList(), o && i.a.createElement(Y.r, {
-						className: Object(c.a)(U.a.button, e),
+						className: Object(c.a)(K.a.button, e),
 						onClick: this.toggleExpanded
 					}, o && !this.state.isExpanded ? ee._("Show More", null, {
 						hk: "1pCiqD"
@@ -2839,4 +2839,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.9498af2533211d3a2410.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.5f4e94b2c14c207bf6f4.js.map

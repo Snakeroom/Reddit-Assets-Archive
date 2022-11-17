@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.018c630fa6a529128179.js
-// Retrieved at 11/17/2022, 9:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.ab4f58e6db8dbaaa9632.js
+// Retrieved at 11/17/2022, 12:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -232,7 +232,7 @@
 					t(g({
 						categoryId: e,
 						rank: n + 1
-					})), Object(u.pb)(Object(p.d)(s()))
+					})), Object(u.rb)(Object(p.d)(s()))
 				}
 		},
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, s) {
@@ -2123,12 +2123,12 @@
 						h && E(setTimeout(() => {
 							b.current && (b.current.classList.add(S.a.transform), b.current.style.width = `${w}px`)
 						}, 4750)), h && j(setTimeout(() => {
-							x(!1), Object(m.Sb)(R, !1)
+							x(!1), Object(m.Ub)(R, !1)
 						}, 5e3))
 					};
 				return Object(n.useEffect)(() => {
 					F || setTimeout(() => {
-						const e = Object(m.N)(R);
+						const e = Object(m.O)(R);
 						e ? Object(a.e)(e.lastSeenTime) >= 24 && e.dropSkip === m.a.NONE ? x(!0) : Date.now() >= new Date(2022, 10, 16).getTime() && e.dropSkip !== m.a.THIRD && x(!0) : x(!0)
 					})
 				}, [R, F]), r.a.createElement("div", {
@@ -2137,7 +2137,7 @@
 				}, h && P && !s && !F ? r.a.createElement(g, {
 					ref: b,
 					onBananaPillClick: () => {
-						O && clearTimeout(O), v && clearTimeout(v), x(!1), Object(m.Sb)(R, !0), p((() => e => ({
+						O && clearTimeout(O), v && clearTimeout(v), x(!1), Object(m.Ub)(R, !0), p((() => e => ({
 							source: "recap",
 							action: "click",
 							noun: "feed_banana",
@@ -7299,8 +7299,8 @@
 				const [e, t] = Object(i.useState)(!1);
 				return Object(i.useEffect)(() => {
 					var e;
-					const s = null !== (e = Object(p.B)("should-show-comment-tab-tooltip")) && void 0 !== e ? e : 2;
-					t(Boolean(s)), 2 === s ? Object(p.Ib)("should-show-comment-tab-tooltip", 1) : 1 === s && Object(p.Ib)("should-show-comment-tab-tooltip", !1)
+					const s = null !== (e = Object(p.C)("should-show-comment-tab-tooltip")) && void 0 !== e ? e : 2;
+					t(Boolean(s)), 2 === s ? Object(p.Kb)("should-show-comment-tab-tooltip", 1) : 1 === s && Object(p.Kb)("should-show-comment-tab-tooltip", !1)
 				}, []), {
 					get shouldShowCommentTabTooltip() {
 						return e
@@ -11170,4 +11170,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.018c630fa6a529128179.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.ab4f58e6db8dbaaa9632.js.map

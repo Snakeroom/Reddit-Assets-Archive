@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.83f62f3e2b6ee4e34b46.js
-// Retrieved at 11/16/2022, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.9df0efcd182b97ce48d3.js
+// Retrieved at 11/17/2022, 12:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -222,8 +222,8 @@
 				m = n("./src/reddit/components/Econ/Audio/SpeakerRings/index.tsx"),
 				p = n("./src/reddit/components/Econ/Audio/UpcomingTalk/index.m.less"),
 				b = n.n(p),
-				f = n("./src/config.ts"),
-				g = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				g = n("./src/config.ts"),
+				f = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				v = n("./src/reddit/controls/Button/index.tsx"),
 				x = n("./src/reddit/controls/LoadingIcon/index.tsx"),
 				E = n("./src/reddit/hooks/useGqlContext.ts");
@@ -251,7 +251,7 @@
 				const n = Object(a.e)(u.eb),
 					[i, c] = Object(o.useState)(!1),
 					l = Object(a.d)(),
-					m = Object(g.b)(),
+					m = Object(f.b)(),
 					p = Object(E.a)();
 				return r.a.createElement(v.t, {
 					"data-testid": "audioroom-upcoming-start-talk",
@@ -285,7 +285,7 @@
 							kind: k.b.Error,
 							text: O.a[n.errorState.code] || O.a[_.k.ServiceError]
 						})), void c(!1);
-						(null == n ? void 0 : n.okState) && (window.location.href = `${f.a.redditUrl}/talk/${t}`)
+						(null == n ? void 0 : n.okState) && (window.location.href = `${g.a.redditUrl}/talk/${t}`)
 					}
 				})
 			};
@@ -297,9 +297,9 @@
 					author: t,
 					postId: n,
 					roomId: p,
-					isClassicView: f = !1
+					isClassicView: g = !1
 				} = e;
-				const g = Object(a.d)(),
+				const f = Object(a.d)(),
 					v = Object(l.a)(),
 					x = Object(a.e)(u.G),
 					E = Object(a.e)(u.eb),
@@ -312,13 +312,13 @@
 				Object(o.useEffect)(() => {
 					n && v && v(Object(d.f)(n))
 				}, [v, n]), Object(o.useEffect)(() => {
-					O || g(Object(i.d)(t))
-				}, [g, t, n, O]);
+					O || f(Object(i.d)(t))
+				}, [f, t, n, O]);
 				const j = () => r.a.createElement("div", {
 					"data-testid": "audioroom-avatar-upcoming",
 					key: `audioPostAvatar--${t}`,
 					className: Object(s.a)(b.a.hostAvatar, {
-						[b.a.classicView]: f
+						[b.a.classicView]: g
 					})
 				}, r.a.createElement("div", {
 					className: b.a.snoovatar
@@ -333,7 +333,7 @@
 					}),
 					ringClassName: "hostRing"
 				}));
-				return f ? r.a.createElement(j, null) : r.a.createElement("div", {
+				return g ? r.a.createElement(j, null) : r.a.createElement("div", {
 					className: b.a.upcomingTalkCard,
 					"data-testid": "audioroom-card-upcoming"
 				}, r.a.createElement("div", {
@@ -368,9 +368,9 @@
 				m = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./src/config.ts")),
 				p = n("./src/reddit/selectors/user.ts"),
 				b = n("./src/reddit/components/Econ/Audio/MuteIcon.tsx"),
-				f = n("./src/reddit/components/Econ/Audio/SpeakerRings/index.tsx");
+				g = n("./src/reddit/components/Econ/Audio/SpeakerRings/index.tsx");
 			const {
-				fbt: g
+				fbt: f
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			var v = e => {
 					let {
@@ -404,7 +404,7 @@
 						}, r.a.createElement("img", {
 							className: Object(s.a)(u.a.snoovatar, u.a.isListener),
 							src: `${m.a.assetPath}/img/talk/avatars/${e}.png`,
-							alt: g._("Reddit Talk", null, {
+							alt: f._("Reddit Talk", null, {
 								hk: "XNl4V"
 							})
 						})) : r.a.createElement("div", {
@@ -412,7 +412,7 @@
 							className: u.a.speaker
 						}, o === x && r.a.createElement("div", {
 							className: u.a.speakerRings
-						}, r.a.createElement(f.a, {
+						}, r.a.createElement(g.a, {
 							ringId: `${n}-${e}`,
 							className: v ? u.a.nightMode : "",
 							ringClassName: "speakerRing",
@@ -420,7 +420,7 @@
 						})), r.a.createElement("img", {
 							className: u.a.snoovatar,
 							src: `${m.a.assetPath}/img/talk/avatars/${e}.png`,
-							alt: g._("Reddit Talk", null, {
+							alt: f._("Reddit Talk", null, {
 								hk: "XNl4V"
 							})
 						}), o !== x && r.a.createElement("div", {
@@ -443,7 +443,7 @@
 					author: l
 				} = t, {
 					recordingStatus: m
-				} = n, p = Object(a.e)(d.n);
+				} = n, p = Object(a.e)(d.o);
 				return (() => {
 					const e = [c.a.NotAvailable, c.a.Removed].includes(null != m ? m : c.a.NotAvailable);
 					return p && n.roomStatus === c.b.NotStarted ? r.a.createElement(x.a, {
@@ -625,9 +625,9 @@
 				m = n("./src/reddit/selectors/poll/index.ts"),
 				p = n("./src/lib/classNames/index.ts"),
 				b = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				f = n("./src/reddit/selectors/user.ts"),
-				g = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionContainer/index.m.less"),
-				v = n.n(g);
+				g = n("./src/reddit/selectors/user.ts"),
+				f = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionContainer/index.m.less"),
+				v = n.n(f);
 
 			function x() {
 				return (x = Object.assign || function(e) {
@@ -645,7 +645,7 @@
 				} = e;
 				const o = Object(b.gb)(),
 					s = Object(b.y)(o),
-					i = Object(a.e)(f.eb);
+					i = Object(a.e)(g.eb);
 				return r.a.createElement("div", x({}, n, {
 					className: Object(p.a)(t, v.a.container, {
 						[v.a.commentsPage]: s,
@@ -765,7 +765,7 @@
 					className: o,
 					...s
 				} = e;
-				const i = Object(a.e)(f.eb),
+				const i = Object(a.e)(g.eb),
 					c = Math.floor(100 * t / n);
 				return r.a.createElement("div", G({
 					className: Object(p.a)(V.a.container, o, {
@@ -826,8 +826,8 @@
 					cancelAction: b
 				} = function(e, t, n) {
 					const o = Object(a.d)(),
-						s = Object(a.e)(f.f),
-						i = Object(a.e)(W.f),
+						s = Object(a.e)(g.f),
+						i = Object(a.e)(W.g),
 						c = Object(d.a)(),
 						u = Object(D.a)(),
 						{
@@ -836,7 +836,7 @@
 						{
 							id: p,
 							endsAt: b,
-							options: g
+							options: f
 						} = t,
 						{
 							id: v,
@@ -850,7 +850,7 @@
 					return {
 						isLoading: h,
 						isShowingVoteAnimation: _,
-						selectedOption: g.find(e => {
+						selectedOption: f.find(e => {
 							let {
 								id: t
 							} = e;
@@ -917,7 +917,7 @@
 						post: t,
 						predictions: n
 					} = e;
-					const o = Object(a.e)(f.eb),
+					const o = Object(a.e)(g.eb),
 						s = n.reduce((e, t) => {
 							let {
 								userSelection: n
@@ -930,7 +930,7 @@
 							isFirstSlide: u,
 							isLastSlide: m,
 							nextSlide: b,
-							prevSlide: g
+							prevSlide: f
 						} = function(e) {
 							const [t, n] = r.a.useState(0), o = 0 === t, a = t === e - 1;
 							return {
@@ -963,7 +963,7 @@
 								source: "predictions",
 								action: "click",
 								noun: "previous_post"
-							}))(t.id)), g()
+							}))(t.id)), f()
 						}
 					}, r.a.createElement(M.a, {
 						name: "caret_left",
@@ -996,7 +996,7 @@
 					const {
 						tournamentId: n,
 						status: o
-					} = t.predictionTournament, i = Object(d.a)(), p = Object(a.e)(e => Object(m.h)(e, n)), b = r.a.useMemo(() => p.filter(e => !e.isSpoiler && !e.isNSFW && !e.resolvedOptionId && e.predictionStatus === l.b.Open && e.endsAt > Date.now()).sort(s.a).map(e => e.id), [p.length]).map(e => p.find(t => t.id === e)).filter(e => Boolean(e)), f = b.some(e => {
+					} = t.predictionTournament, i = Object(d.a)(), p = Object(a.e)(e => Object(m.h)(e, n)), b = r.a.useMemo(() => p.filter(e => !e.isSpoiler && !e.isNSFW && !e.resolvedOptionId && e.predictionStatus === l.b.Open && e.endsAt > Date.now()).sort(s.a).map(e => e.id), [p.length]).map(e => p.find(t => t.id === e)).filter(e => Boolean(e)), g = b.some(e => {
 						let {
 							userSelection: t,
 							endsAt: n,
@@ -1006,7 +1006,7 @@
 					});
 					return r.a.useEffect(() => {
 						if (o === u.a.Closed) return;
-						const e = f ? (e => t => ({
+						const e = g ? (e => t => ({
 							...c(t, e),
 							source: "predictions",
 							action: "view",
@@ -1018,9 +1018,9 @@
 							noun: "predicted_all_post"
 						}))(t.id);
 						i(e)
-					}, [t.id, o, f, i]), o === u.a.Closed ? r.a.createElement(E, null, r.a.createElement(A, {
+					}, [t.id, o, g, i]), o === u.a.Closed ? r.a.createElement(E, null, r.a.createElement(A, {
 						postId: t.id
-					})) : r.a.createElement(E, null, f ? r.a.createElement(oe, {
+					})) : r.a.createElement(E, null, g ? r.a.createElement(oe, {
 						post: t,
 						predictions: b
 					}) : r.a.createElement(T, {
@@ -1085,11 +1085,11 @@
 				m = n("./src/redditGQL/operations/GetUserProfileAllowedPostTypes.json"),
 				p = n("./src/redditGQL/operations/PrepareLiveAudioRoom.json"),
 				b = n("./src/redditGQL/operations/PrepareLiveAudioRoomOnProfile.json"),
-				f = n("./src/redditGQL/operations/ReportTalk.json"),
-				g = n("./src/redditGQL/operations/StartLiveAudioRoom.json"),
+				g = n("./src/redditGQL/operations/ReportTalk.json"),
+				f = n("./src/redditGQL/operations/StartLiveAudioRoom.json"),
 				v = n("./src/redditGQL/types.ts");
 			const x = (e, t) => Object(a.a)(e, {
-					...f,
+					...g,
 					variables: t
 				}),
 				E = async (e, t) => {
@@ -1155,7 +1155,7 @@
 						hk: "1XY1Ss"
 					})
 				}, N = (e, t) => Object(a.a)(e, {
-					...g,
+					...f,
 					variables: t
 				})
 		},
@@ -1323,4 +1323,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.83f62f3e2b6ee4e34b46.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.9df0efcd182b97ce48d3.js.map

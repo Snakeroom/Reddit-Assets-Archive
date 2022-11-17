@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.41da457a4f67d97e63b8.js
-// Retrieved at 11/17/2022, 9:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.74a6b4fccec808e10b59.js
+// Retrieved at 11/17/2022, 12:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1269,7 +1269,7 @@
 						const n = {
 							includeIdentity: g,
 							includeModerated: x,
-							recentPostIds: Object(P.S)(null == _ ? void 0 : _.id).reverse()
+							recentPostIds: Object(P.T)(null == _ ? void 0 : _.id).reverse()
 						};
 						y = await ((e, t) => Object(d.a)(e, {
 							...p,
@@ -4101,7 +4101,7 @@
 				constructor(e) {
 					super(e), this.onStorage = () => {
 						this.setState({
-							showPostStatsUnit: Object(C.L)() <= 2
+							showPostStatsUnit: Object(C.M)() <= 2
 						})
 					}, this.getInjectChildren = () => {
 						const e = {};
@@ -4118,7 +4118,7 @@
 				}
 				componentDidMount() {
 					window.addEventListener("storage", this.onStorage), this.setState({
-						showPostStatsUnit: Object(C.L)() <= 2
+						showPostStatsUnit: Object(C.M)() <= 2
 					}), this.props.isProfileNSFW && !this.props.isOwnProfile && this.props.nsfwBlockingExperiment === L.a.Blurred && this.props.openNsfwModal()
 				}
 				componentWillUnmount() {
@@ -4254,4 +4254,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.41da457a4f67d97e63b8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.74a6b4fccec808e10b59.js.map

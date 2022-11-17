@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SnoovatarModal.df5ee356d3e67548a9fb.js
-// Retrieved at 11/17/2022, 9:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SnoovatarModal.572ad3f735c7ec621b13.js
+// Retrieved at 11/17/2022, 12:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SnoovatarModal"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, r) {
@@ -70,7 +70,7 @@
 					activeMeSubpage: k || void 0,
 					activeDetails: S || void 0,
 					shopTabState: C || void 0
-				}), [S, h, k, C]), y = Object(o.e)(e => !Object(O.R)(e) && Object(p.v)(e));
+				}), [S, h, k, C]), y = Object(o.e)(e => !Object(O.R)(e) && Object(p.w)(e));
 				if (!j || !_) return null;
 				if (y) return n.a.createElement("div", {
 					className: Object(c.a)(b.a.container, {
@@ -225,4 +225,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.df5ee356d3e67548a9fb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.572ad3f735c7ec621b13.js.map
