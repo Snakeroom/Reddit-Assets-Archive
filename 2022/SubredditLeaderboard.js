@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.5f4e94b2c14c207bf6f4.js
-// Retrieved at 11/17/2022, 12:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.c6dfbc34778fff641176.js
+// Retrieved at 11/17/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, r) {
@@ -73,7 +73,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(u.rg)(e.category_name)
+									displayText: Object(u.sg)(e.category_name)
 								};
 								r.push(s.id), t[s.id] = s
 							}), {
@@ -2500,9 +2500,9 @@
 				}
 			}
 			var J = Object(u.c)(z(Q)),
-				q = r("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				U = r("./src/reddit/components/CategoryPickerWidget/index.m.less"),
-				K = r.n(U);
+				U = r("./node_modules/react-router-dom/esm/react-router-dom.js"),
+				q = r("./src/reddit/components/CategoryPickerWidget/index.m.less"),
+				K = r.n(q);
 
 			function V() {
 				return (V = Object.assign || function(e) {
@@ -2521,7 +2521,7 @@
 					isActive: s,
 					tabIndex: a
 				} = e, o = Object(c.a)(K.a.categoryLink, s && K.a.active, n);
-				return i.a.createElement("li", null, i.a.createElement(q.a, V({}, t.anchorProps, {
+				return i.a.createElement("li", null, i.a.createElement(U.a, V({}, t.anchorProps, {
 					className: o,
 					"data-active": s,
 					onMouseDown: () => e.onSendEventClick(t.name),
@@ -2686,7 +2686,7 @@
 					} = t;
 					return Object(g.b)(r.params.categoryName || "")
 				},
-				Ee = Object(m.qg)(p.i),
+				Ee = Object(m.rg)(p.i),
 				Ce = Object(d.c)({
 					categories: e => Object(ye.b)(e, {
 						categoriesOrder: Ee
@@ -2839,4 +2839,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.5f4e94b2c14c207bf6f4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.c6dfbc34778fff641176.js.map

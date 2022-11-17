@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.f62c1613e6661a28a3e6.js
-// Retrieved at 11/17/2022, 12:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.2bf9a80d4a7dee9fa9a4.js
+// Retrieved at 11/17/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -38833,29 +38833,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.kg
+						experimentName: o.lg
 					}) === o.Kd
 				},
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.lg
+						experimentName: o.mg
 					}) === o.Kd
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.jg
+						experimentName: o.kg
 					});
-					return t === o.ag.TypingIndicators || t === o.ag.IndicatorsPlusCTA
+					return t === o.bg.TypingIndicators || t === o.bg.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.d)(e, {
-						experimentName: o.jg
+						experimentName: o.kg
 					});
-					return (null == t ? void 0 : t.variant) === o.ag.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.bg.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -39541,4 +39541,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.f62c1613e6661a28a3e6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.2bf9a80d4a7dee9fa9a4.js.map
