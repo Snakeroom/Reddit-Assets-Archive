@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.b66e033c5fab5322dc14.js
-// Retrieved at 11/17/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.485d26d2ded8f91404e4.js
+// Retrieved at 11/17/2022, 9:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -15746,7 +15746,7 @@
 							sizes: u.j,
 							commentsPageKey: t
 						});
-					return n ? this.renderRecommendationsSidebar() : a.a.createElement("div", {
+					return !Object(L.t)(i) && n ? this.renderRecommendationsSidebar() : a.a.createElement("div", {
 						className: Object(l.a)(U.a.outerWrapper, e)
 					}, s && a.a.createElement(g.default, {
 						subredditId: m,
@@ -50432,4 +50432,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.b66e033c5fab5322dc14.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.485d26d2ded8f91404e4.js.map
