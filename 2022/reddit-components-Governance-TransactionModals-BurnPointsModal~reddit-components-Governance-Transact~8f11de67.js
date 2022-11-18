@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.a38233d64fcaba34fcba.js
-// Retrieved at 11/16/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.42e91e6ee2443b6bb7b6.js
+// Retrieved at 11/17/2022, 8:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67"], {
 		"./src/reddit/components/Governance/TransactionModals/ApprovalModal/ApprovalBar.m.less": function(A, e, t) {
@@ -1113,7 +1113,7 @@
 				if (r.address.toLowerCase() === t.toLowerCase()) return r;
 				const s = Q.fromMnemonic(e).derivePath(),
 					n = new a.ethers.Wallet(s.privateKey);
-				return n.address.toLowerCase() === t.toLowerCase() ? (i(Object(p.c)(n.address)), n) : (i(Object(p.d)(n.address)), r)
+				return n.address.toLowerCase() === t.toLowerCase() ? (i(Object(p.b)(n.address)), n) : (i(Object(p.c)(n.address)), r)
 			};
 			async function L(A) {
 				let {
@@ -1253,38 +1253,22 @@
 		},
 		"./src/reddit/helpers/trackers/communityPoints.ts": function(A, e, t) {
 			"use strict";
-			t.d(e, "f", (function() {
-				return r
-			})), t.d(e, "e", (function() {
-				return s
+			t.d(e, "a", (function() {
+				return a
 			})), t.d(e, "b", (function() {
-				return n
-			})), t.d(e, "a", (function() {
-				return o
+				return r
 			})), t.d(e, "c", (function() {
-				return c
-			})), t.d(e, "d", (function() {
-				return d
+				return s
 			}));
 			var i = t("./src/reddit/selectors/telemetry.ts");
 			const a = A => e => ({
-					...Object(i.o)(e),
-					source: "meta",
-					action: A,
-					noun: "feed_claim_points_banner",
-					subreddit: Object(i.kb)(e)
-				}),
-				r = () => a("view"),
-				s = () => a("tap"),
-				n = () => a("dismiss"),
-				o = A => e => ({
 					...Object(i.o)(e),
 					source: "meta",
 					action: "click",
 					noun: "cancel_membership_with_points",
 					subreddit: Object(i.lb)(e, A)
 				}),
-				c = A => e => ({
+				r = A => e => ({
 					...Object(i.o)(e),
 					source: "meta",
 					action: "generate",
@@ -1293,7 +1277,7 @@
 						walletAddress: A
 					}
 				}),
-				d = A => e => ({
+				s = A => e => ({
 					...Object(i.o)(e),
 					source: "meta",
 					action: "generate",
@@ -1367,4 +1351,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.a38233d64fcaba34fcba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.42e91e6ee2443b6bb7b6.js.map
