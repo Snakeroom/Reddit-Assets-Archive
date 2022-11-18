@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.619e96ba813b6a387531.js
-// Retrieved at 11/17/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.c3b15c5f8a113674d0b2.js
+// Retrieved at 11/17/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, o) {
@@ -624,8 +624,8 @@
 			const G = Object(n.a)(V.k),
 				H = Object(n.a)(V.j),
 				$ = Object(n.a)(V.i),
-				K = Object(n.a)(V.h),
-				z = Object(n.a)(V.g),
+				z = Object(n.a)(V.h),
+				K = Object(n.a)(V.g),
 				W = Object(n.a)(V.f),
 				J = Object(n.a)(V.e),
 				X = Object(n.a)(V.s),
@@ -646,10 +646,10 @@
 					let p, f, O;
 					switch (t) {
 						case r.wb.Edited:
-							p = z, f = J, O = W;
+							p = K, f = J, O = W;
 							break;
 						case r.wb.Modqueue:
-							p = H, f = K, O = $;
+							p = H, f = z, O = $;
 							break;
 						case r.wb.Reports:
 							p = X, f = Z, O = Y;
@@ -1229,8 +1229,8 @@
 				G = o("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
 				H = o("./src/reddit/helpers/routeKey/index.ts"),
 				$ = o("./src/reddit/models/ModQueue/index.ts"),
-				K = o("./src/reddit/models/PostDraft/index.ts"),
-				z = o("./src/reddit/models/RemovalReason/index.ts"),
+				z = o("./src/reddit/models/PostDraft/index.ts"),
+				K = o("./src/reddit/models/RemovalReason/index.ts"),
 				W = o("./src/reddit/models/Toast/index.ts"),
 				J = o("./src/reddit/selectors/comments.ts"),
 				X = o("./src/reddit/selectors/platform.ts");
@@ -1342,9 +1342,9 @@
 					const u = i(),
 						l = u.user.account && u.user.account.displayText,
 						m = e[0],
-						b = Object(V.a)(m) ? z.e.Post : z.e.Comment,
-						p = b === z.e.Post ? u.posts.models[m] : u.features.comments.models[m],
-						f = b === z.e.Post ? w.R : M.j;
+						b = Object(V.a)(m) ? K.e.Post : K.e.Comment,
+						p = b === K.e.Post ? u.posts.models[m] : u.features.comments.models[m],
+						f = b === K.e.Post ? w.R : M.j;
 					if (!p || !l) return !1;
 					d(Oe()), d(f({
 						[m]: {
@@ -1369,9 +1369,9 @@
 									isLocked: n,
 									type: s
 								},
-								i = await B(c(), Object(z.h)(r, b), b);
+								i = await B(c(), Object(K.h)(r, b), b);
 							if (i.ok) {
-								if ([z.f.Public, z.f.PublicAsSubreddit].includes(s)) {
+								if ([K.f.Public, K.f.PublicAsSubreddit].includes(s)) {
 									if (d(Se()), i.body) {
 										const e = Object(G.a)(i.body),
 											t = {
@@ -1384,8 +1384,8 @@
 										if (r || (r = Object(k.a)(e.postId, null, {
 												sort: E.x,
 												hasSortParam: !0
-											})), b === z.e.Post) {
-											const o = Object(x.a)(K.c.replyToPost, m);
+											})), b === K.e.Post) {
+											const o = Object(x.a)(z.c.replyToPost, m);
 											d(Object(C.r)({
 												...t,
 												headCommentId: Object(J.w)(u, {
@@ -1404,8 +1404,8 @@
 													isStickied: !1
 												}
 											}))
-										} else if (b === z.e.Comment) {
-											const e = Object(x.a)(K.c.replyToComment, p.id),
+										} else if (b === K.e.Comment) {
+											const e = Object(x.a)(z.c.replyToComment, p.id),
 												o = Object(J.j)(u, {
 													commentId: m,
 													commentsPageKey: r
@@ -1472,7 +1472,7 @@
 									title: t.title,
 									type: r
 								},
-								n = await B(c(), Object(z.h)(s, z.e.Bulk), z.e.Bulk);
+								n = await B(c(), Object(K.h)(s, K.e.Bulk), K.e.Bulk);
 							n.ok ? (d(ge()), d(m)) : d(_e(n.error))
 						} else d(m)
 					} else d(je(p.error))
@@ -1748,7 +1748,7 @@
 			const d = e => Object(r.c)(e, {
 				experimentEligibilitySelector: n.R,
 				experimentName: s.ac
-			}) === s.Ld
+			}) === s.Md
 		},
 		"./src/reddit/selectors/experiments/realtimeMQUpdates.ts": function(e, t, o) {
 			"use strict";
@@ -1761,8 +1761,8 @@
 				d = o("./src/reddit/selectors/experiments/modqueueActionBarUXImprovements.ts");
 			const i = e => Object(d.a)(e) && Object(r.c)(e, {
 				experimentEligibilitySelector: n.R,
-				experimentName: s.yc
-			}) === s.Ld
+				experimentName: s.zc
+			}) === s.Md
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, o) {
 			"use strict";
@@ -1846,4 +1846,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.619e96ba813b6a387531.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.c3b15c5f8a113674d0b2.js.map

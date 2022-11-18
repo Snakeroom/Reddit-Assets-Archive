@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.35a7d006086b66c90c53.js
-// Retrieved at 11/17/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.ee1b7c7ad7861b1cac16.js
+// Retrieved at 11/17/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -2231,7 +2231,7 @@
 			const D = e => O.d.reCaptchaEnterprise(e) && !Object(T.d)(e),
 				w = e => !!Object(S.c)(e, {
 					experimentEligibilitySelector: Object(I.d)(Object(I.b)(...a.c)),
-					experimentName: f.mf
+					experimentName: f.nf
 				}),
 				j = Object(r.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				C = () => l(e => p()([D, w, e => e.tracking.reCaptchaEnterprise.load === r.a.New], t => t(e)))(async e => {
@@ -4335,7 +4335,7 @@
 					relativePosition: O
 				} = e;
 				var S, D, w, j, C, A;
-				const P = Object(a.e)(e => Object(H.a)(e, q.Df)),
+				const P = Object(a.e)(e => Object(H.a)(e, q.Ef)),
 					R = Object(m.a)(),
 					N = (null === (S = o.displayInfo) || void 0 === S ? void 0 : S.karma) || 0,
 					L = (null === (D = o.displayInfo) || void 0 === D ? void 0 : D.subscribers) || 0,
@@ -4473,7 +4473,7 @@
 					searchOriginPage: f
 				} = e;
 				const b = Object(m.a)(),
-					h = Object(a.e)(e => Object(H.a)(e, q.Df)),
+					h = Object(a.e)(e => Object(H.a)(e, q.Ef)),
 					g = Object(a.e)(_.lb),
 					{
 						nsfwTypeaheadExpanded: v,
@@ -4714,7 +4714,7 @@
 					onUpdateSearchQuery: C
 				} = e, A = Object(a.d)(), [P, R] = Object(r.useState)(null), [N, L] = Object(r.useState)(n), [M, B] = Object(r.useState)(new Array(Ee).fill(!1)), {
 					enabled: F
-				} = Object(a.e)(ne.j), G = Object(a.e)(e => Object(H.a)(e, q.Df)), V = !!(null === (t = m.searchQuery) || void 0 === t ? void 0 : t.trim()), Q = l || i, Y = F, K = [...b.communities, ...b.people, ...b.nsfw], $ = !l && (!V || h >= 0) && (G ? 0 === K.length : 0 === f.length) && !Y, z = {
+				} = Object(a.e)(ne.j), G = Object(a.e)(e => Object(H.a)(e, q.Ef)), V = !!(null === (t = m.searchQuery) || void 0 === t ? void 0 : t.trim()), Q = l || i, Y = F, K = [...b.communities, ...b.people, ...b.nsfw], $ = !l && (!V || h >= 0) && (G ? 0 === K.length : 0 === f.length) && !Y, z = {
 					width: N ? `${N}px` : "inherit",
 					overflow: "auto"
 				};
@@ -5110,10 +5110,10 @@
 				b = n("./node_modules/reselect/es/index.js");
 			const h = Object(b.a)(e => Object(f.c)(e, {
 				experimentEligibilitySelector: f.a,
-				experimentName: p.qg
+				experimentName: p.rg
 			}), e => ({
-				promptBeforeClick: e === p.rg.PromptBeforeClick,
-				promptAfterClick: e === p.rg.PromptAfterClick
+				promptBeforeClick: e === p.sg.PromptBeforeClick,
+				promptAfterClick: e === p.sg.PromptAfterClick
 			}));
 			var y = n("./src/reddit/controls/Search/SearchScopePill/index.tsx"),
 				m = n("./src/reddit/controls/Search/SearchBar/index.m.less"),
@@ -25918,9 +25918,9 @@
 				experimentEligibilitySelector: s.a,
 				experimentName: r.tb
 			}), e => ({
-				bucketed: e === r.Sc.ExpandedSearch || e === r.Sc.CollapsedSearch,
-				collapsed: e === r.Sc.CollapsedSearch,
-				expanded: e === r.Sc.ExpandedSearch
+				bucketed: e === r.Tc.ExpandedSearch || e === r.Tc.CollapsedSearch,
+				collapsed: e === r.Tc.CollapsedSearch,
+				expanded: e === r.Tc.ExpandedSearch
 			}))
 		},
 		"./src/reddit/selectors/experiments/hotPotato.ts": function(e, t, n) {
@@ -25945,7 +25945,7 @@
 					if (!u(e)) return;
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: l,
-						experimentName: a.ee,
+						experimentName: a.fe,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -25968,9 +25968,9 @@
 				},
 				b = e => !!p(e) && Object(o.c)(e, {
 					experimentEligibilitySelector: u,
-					experimentName: a.fe,
+					experimentName: a.ge,
 					expEventOverride: !1
-				}) !== a.ge.Readonly
+				}) !== a.he.Readonly
 		},
 		"./src/reddit/selectors/removedPosts.ts": function(e, t, n) {
 			"use strict";
@@ -26117,4 +26117,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.35a7d006086b66c90c53.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.ee1b7c7ad7861b1cac16.js.map

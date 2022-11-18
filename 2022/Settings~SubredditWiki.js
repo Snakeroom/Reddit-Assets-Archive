@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.815844be0a502475554e.js
-// Retrieved at 11/17/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.57e894c77016c8ef55b9.js
+// Retrieved at 11/17/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, r) {
@@ -584,7 +584,7 @@
 					pending: w
 				});
 			const A = {};
-			var F = function() {
+			var M = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : A,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -602,12 +602,12 @@
 							return e
 					}
 				},
-				M = r("./src/reddit/actions/inContextModeration.ts");
+				F = r("./src/reddit/actions/inContextModeration.ts");
 			var B = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case M.a:
+					case F.a:
 						return t.payload;
 					default:
 						return e
@@ -749,7 +749,7 @@
 				},
 				Y = Object(E.c)({
 					api: S,
-					fetchedTokens: F,
+					fetchedTokens: M,
 					inContext: B,
 					loadMore: T,
 					models: W,
@@ -1108,8 +1108,8 @@
 				w = r("./src/reddit/components/JSAPIContainers/index.tsx"),
 				S = r("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
 				A = r("./src/reddit/components/SubscribeButton/index.tsx"),
-				F = r("./src/reddit/components/UserIcon/index.tsx"),
-				M = r("./src/reddit/controls/Button/index.tsx"),
+				M = r("./src/reddit/components/UserIcon/index.tsx"),
+				F = r("./src/reddit/controls/Button/index.tsx"),
 				B = r("./src/reddit/endpoints/profile/info.ts"),
 				L = r("./src/reddit/helpers/trackers/authorHovercard.ts"),
 				T = r("./src/reddit/icons/fonts/Info/index.tsx"),
@@ -1249,7 +1249,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const me = E.a.wrapped(F.a, "UserIcon", le.a),
+			const me = E.a.wrapped(M.a, "UserIcon", le.a),
 				be = E.a.wrapped(A.a, "SubscribeButton", le.a),
 				fe = E.a.wrapped(P.b, "ChatButton", le.a),
 				pe = E.a.wrapped(R.a, "PremiumIcon", le.a),
@@ -1356,7 +1356,7 @@
 						P = null == u ? void 0 : u.flair,
 						S = null == u ? void 0 : u.access,
 						A = (null == I ? void 0 : I.templateIds) && (null === (t = null == I ? void 0 : I.templateIds) || void 0 === t ? void 0 : t.length) > 0,
-						F = null === (r = null == I ? void 0 : I.displaySettings) || void 0 === r ? void 0 : r.isEnabled,
+						M = null === (r = null == I ? void 0 : I.displaySettings) || void 0 === r ? void 0 : r.isEnabled,
 						{
 							awardedLastMonth: B
 						} = h,
@@ -1403,7 +1403,7 @@
 						username: g
 					}), c && !k && !_ && j && !C && s.a.createElement(fe, {
 						contextId: a,
-						priority: M.c.Secondary,
+						priority: F.c.Secondary,
 						userId: h.id,
 						text: y.fbt._("Start Chat", null, {
 							hk: "2mfqRE"
@@ -1422,7 +1422,7 @@
 						subredditId: v,
 						sendEvent: f,
 						username: g
-					}), P && a && A && F && v && s.a.createElement(de, {
+					}), P && a && A && M && v && s.a.createElement(de, {
 						contextId: a,
 						subredditId: v,
 						sendEvent: f,
@@ -1434,14 +1434,14 @@
 					}), !(S || c) && s.a.createElement(Ee, null))
 				},
 				Ae = Object(S.a)(Se),
-				Fe = e => {
+				Me = e => {
 					const t = e.activeTooltipId === e.tooltipId && !e.collapsed;
 					return s.a.createElement(Ae, ue({
 						isOpen: t
 					}, e))
 				};
-			Fe.WrappedComponent = Se;
-			var Me = Fe;
+			Me.WrappedComponent = Se;
+			var Fe = Me;
 			const Be = Object(o.c)({
 					activeTooltipId: h.a,
 					currentUser: I.l,
@@ -1550,7 +1550,7 @@
 				isNightMode: e.isNightMode,
 				lastAuthorModNote: e.lastAuthorModNote,
 				userIsSubscriber: e.userIsSubscriber
-			}) : Object(c.a)(e.userName) ? null : s.a.createElement(Me, {
+			}) : Object(c.a)(e.userName) ? null : s.a.createElement(Fe, {
 				activeTooltipId: e.activeTooltipId,
 				contextId: e.contextId,
 				currentUser: e.currentUser,
@@ -2663,7 +2663,7 @@
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
 					experimentName: n.H
-				}) === n.Ld
+				}) === n.Md
 			}
 		},
 		"./src/redditGQL/operations/DeleteSubredditMuteSettings.json": function(e) {
@@ -2680,4 +2680,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.815844be0a502475554e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.57e894c77016c8ef55b9.js.map

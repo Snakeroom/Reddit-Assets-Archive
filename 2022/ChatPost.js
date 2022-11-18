@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.b13f885e87eb50d6a993.js
-// Retrieved at 11/17/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.baddd4b58955f91aaa61.js
+// Retrieved at 11/17/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/backo2/index.js": function(e, t) {
@@ -6364,7 +6364,7 @@
 			const a = e => Object(s.c)(e, {
 				experimentEligibilitySelector: r.R,
 				experimentName: o.ac
-			}) === o.Ld
+			}) === o.Md
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, n) {
 			"use strict";
@@ -6463,4 +6463,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.b13f885e87eb50d6a993.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.baddd4b58955f91aaa61.js.map

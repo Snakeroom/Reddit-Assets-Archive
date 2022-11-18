@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.df2518f577882db31251.js
-// Retrieved at 11/17/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.80cf2fbfdc64d44a7799.js
+// Retrieved at 11/17/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, n) {
@@ -140,9 +140,9 @@
 			})), n.d(t, "w", (function() {
 				return y
 			})), n.d(t, "x", (function() {
-				return L
-			})), n.d(t, "d", (function() {
 				return v
+			})), n.d(t, "d", (function() {
+				return L
 			}));
 			const r = "MULTIREDDIT__MORE_POSTS_FAILED",
 				o = "MULTIREDDIT__MORE_POSTS_LOADED",
@@ -170,11 +170,11 @@
 				g = 10,
 				I = "MULTIREDDIT__REMOVE_SUBREDDIT_FAILURE",
 				y = "MULTIREDDIT__REMOVE_SUBREDDIT_PENDING",
-				L = "MULTIREDDIT__REMOVE_SUBREDDIT_SUCCESS";
-			var v;
+				v = "MULTIREDDIT__REMOVE_SUBREDDIT_SUCCESS";
+			var L;
 			! function(e) {
 				e.InvalidSrQuarantine = "INVALID_SR_QUARANTINE", e.TooManySubreddits = "MULTI_TOO_MANY_SUBREDDITS"
-			}(v || (v = {}))
+			}(L || (L = {}))
 		},
 		"./src/reddit/actions/postList.ts": function(e, t, n) {
 			"use strict";
@@ -381,8 +381,8 @@
 				}),
 				I = Object(i.a)(d.c),
 				y = Object(i.a)(d.b),
-				L = Object(i.a)(d.a),
-				v = Object(i.a)(d.h),
+				v = Object(i.a)(d.a),
+				L = Object(i.a)(d.h),
 				k = (Object(i.a)(d.i), Object(i.a)(d.g), () => async (e, t, n) => {
 					let {
 						gqlContext: r
@@ -394,7 +394,7 @@
 					if (s.ok) {
 						const t = O(s.body.data);
 						e(I(t))
-					} else e(L({
+					} else e(v({
 						error: s.error
 					}))
 				}),
@@ -426,7 +426,7 @@
 						}
 						if (!e.length && !p.length) return
 					}
-					i(v({
+					i(L({
 						identifiers: p,
 						nameIdentifiers: e,
 						profileModels: d().profiles.models,
@@ -467,7 +467,7 @@
 							text: 1 === e.length && "profile" === e[0].type ? t ? o : c : t ? a : d
 						}))
 					} else {
-						i(v({
+						i(L({
 							identifiers: p,
 							nameIdentifiers: e,
 							profileModels: d().profiles.models,
@@ -744,8 +744,8 @@
 				I = n("./src/reddit/components/Flair/index.m.less"),
 				y = n.n(I);
 
-			function L() {
-				return (L = Object.assign || function(e) {
+			function v() {
+				return (v = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -753,7 +753,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const v = Object(x.a)(h.b),
+			const L = Object(x.a)(h.b),
 				k = b.a.div("FlairWrapper", y.a),
 				A = b.a.wrapped(d.a, "CloseButton", y.a),
 				N = b.a.wrapped(Object(m.a)(e => {
@@ -763,7 +763,7 @@
 						...r
 					} = e;
 					const o = n;
-					return a.a.createElement(E, L({
+					return a.a.createElement(E, v({
 						style: {
 							...R(!!t, o) || {}
 						}
@@ -824,7 +824,7 @@
 						style: {
 							fill: this.props.backgroundColor || Object(g.a)(this.props).flair
 						}
-					})), !!this.props.tooltip && a.a.createElement(v, {
+					})), !!this.props.tooltip && a.a.createElement(L, {
 						text: this.props.tooltip,
 						isOpen: this.state.isTooltipOpen,
 						tooltipTarget: this.tooltipTargetElement,
@@ -1914,8 +1914,8 @@
 			const a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.nf
-					}) === r.Ld
+						experimentName: r.of
+					}) === r.Md
 				},
 				d = Object(c.a)(i.R, (e, t) => {
 					let {
@@ -1926,8 +1926,8 @@
 				l = (e, t) => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: e => d(e, t),
-						experimentName: r.of
-					}) === r.Ld
+						experimentName: r.pf
+					}) === r.Md
 				}
 		},
 		"./src/reddit/selectors/recapGame.ts": function(e, t, n) {
@@ -1955,4 +1955,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.df2518f577882db31251.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.80cf2fbfdc64d44a7799.js.map
