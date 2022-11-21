@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AchievementsActions.642f61aee983cb1852f2.js
-// Retrieved at 11/9/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AchievementsActions.32fd1d57ee421b216261.js
+// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AchievementsActions"], {
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, r) {
@@ -114,7 +114,7 @@
 							} = e;
 							return t
 						}),
-						n = Object(p.d)(s, {
+						n = Object(p.e)(s, {
 							commentIds: d
 						}),
 						c = null === (i = n.find(e => e && e.subredditId)) || void 0 === i ? void 0 : i.subredditId;
@@ -211,4 +211,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AchievementsActions.642f61aee983cb1852f2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AchievementsActions.32fd1d57ee421b216261.js.map

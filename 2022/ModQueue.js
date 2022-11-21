@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.c3b15c5f8a113674d0b2.js
-// Retrieved at 11/17/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.79302a27ab9489abca6d.js
+// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, o) {
@@ -188,7 +188,7 @@
 					let {
 						gqlContext: a
 					} = i;
-					const u = Object(f.b)(d(), {
+					const u = Object(f.c)(d(), {
 						commentId: e
 					});
 					if (!u) return;
@@ -323,7 +323,7 @@
 				s.after && (c[s.sort === p.a.OldestFirst ? "before" : "after"] = function(e, t) {
 					const o = Object(f.a)(t) ? Object(v.G)(e, {
 						postId: t
-					}) : Object(O.b)(e, {
+					}) : Object(O.c)(e, {
 						commentId: t
 					});
 					if (o) return Object(b.btoa)(`${o.id}|${o.created}`)
@@ -1846,4 +1846,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.c3b15c5f8a113674d0b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.79302a27ab9489abca6d.js.map

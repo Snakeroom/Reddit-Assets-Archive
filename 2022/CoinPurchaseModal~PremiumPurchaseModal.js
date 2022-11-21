@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PremiumPurchaseModal.d10c87810644622cd9cc.js
-// Retrieved at 11/17/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PremiumPurchaseModal.3be14128c5c72635bdae.js
+// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal~PremiumPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -2217,8 +2217,8 @@
 				a = r("./src/lib/constants/index.ts"),
 				o = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const c = Object(s.a)(o.Ue),
-				i = Object(s.a)(o.Ve),
+			const c = Object(s.a)(o.Ve),
+				i = Object(s.a)(o.We),
 				d = Object(n.a)([c, i], (e, t) => new Set([e && a.Mb, t && a.Lb].filter(e => !!e)))
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, r) {
@@ -2330,4 +2330,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PremiumPurchaseModal.d10c87810644622cd9cc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PremiumPurchaseModal.3be14128c5c72635bdae.js.map

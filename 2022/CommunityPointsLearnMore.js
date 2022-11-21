@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.c670abd4558863d51f02.js
-// Retrieved at 11/17/2022, 12:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.86ccaab1304620e59b68.js
+// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, o) {
@@ -2792,7 +2792,7 @@
 					if (Object(b.g)(e, {
 							subredditId: t
 						})) return !0;
-					const n = "replyToPost" !== o && Object(h.b)(e, {
+					const n = "replyToPost" !== o && Object(h.c)(e, {
 						commentId: o
 					});
 					return !(!n || !Object(i.a)(n))
@@ -2813,7 +2813,7 @@
 					return !!K(e, t) || a && i
 				},
 				H = (e, t) => {
-					const o = "replyToPost" !== t && Object(h.b)(e, {
+					const o = "replyToPost" !== t && Object(h.c)(e, {
 						commentId: t
 					});
 					if (o && Object(i.b)(o)) return !0
@@ -2833,4 +2833,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.c670abd4558863d51f02.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.86ccaab1304620e59b68.js.map

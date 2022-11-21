@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.5f0a72929fd3586b04f6.js
-// Retrieved at 11/17/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.650e85c22a21f697b548.js
+// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -2845,7 +2845,7 @@
 				Be = he.a.div("ProfileCommentWrapper", Fe.a),
 				ze = he.a.div("CommentBody", Fe.a),
 				Ue = Object(r.b)(() => Object(a.c)({
-					comment: (e, t) => Object(Ae.b)(e, t),
+					comment: (e, t) => Object(Ae.c)(e, t),
 					flair: Q.e
 				})),
 				We = Object(c.b)(e => ({
@@ -4792,7 +4792,7 @@
 						showRealtimeUpdateAnimation: st,
 						isUpdatedContent: nt,
 						isNightMode: ot
-					} = e, rt = Object(_.a)(), at = Ze, it = !!e.redditStyle || !!e["data-redditstyle"], dt = it ? void 0 : C, ct = Object(l.a)(Te), lt = Le && ct, mt = Object(d.a)(Te), ut = Object(c.a)(Te), pt = Object(G.c)(Be), bt = Object(V.a)(Be), ht = !!Be.media && Be.media.type === y.o.RTJSON, ft = Qe && ht, xt = s ? s - Y.a : void 0, vt = !!Be.recommendationContext, gt = !(le && ve || ke) || vt && ve, _t = (e => e === je.gf.OnlyTitles)(ze) && !Object(pe.a)(Be), yt = (e => e === je.gf.MediumHeight)(ze) && !Object(pe.a)(Be), Et = (e => {
+					} = e, rt = Object(_.a)(), at = Ze, it = !!e.redditStyle || !!e["data-redditstyle"], dt = it ? void 0 : C, ct = Object(l.a)(Te), lt = Le && ct, mt = Object(d.a)(Te), ut = Object(c.a)(Te), pt = Object(G.c)(Be), bt = Object(V.a)(Be), ht = !!Be.media && Be.media.type === y.o.RTJSON, ft = Qe && ht, xt = s ? s - Y.a : void 0, vt = !!Be.recommendationContext, gt = !(le && ve || ke) || vt && ve, _t = (e => e === je.hf.OnlyTitles)(ze) && !Object(pe.a)(Be), yt = (e => e === je.hf.MediumHeight)(ze) && !Object(pe.a)(Be), Et = (e => {
 						var t;
 						const {
 							post: s,
@@ -5167,7 +5167,7 @@
 					className: s
 				} = e;
 				const n = Object(f.e)(e => Object(x.a)(e, t));
-				return Object(f.e)(v.e) ? a.a.createElement(h, {
+				return Object(f.e)(v.f) ? a.a.createElement(h, {
 					userCount: n,
 					className: s
 				}) : null
@@ -6223,7 +6223,7 @@
 			const {
 				fbt: k
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), j = c.a.wrapped(f.default, "InternalLink", C.a), w = c.a.div("Wrapper", C.a), P = c.a.div("Row", C.a), S = c.a.wrapped(_.a, "CommentIcon", C.a), N = c.a.div("TitleContainer", C.a), I = c.a.div("PostTitleContainer", C.a), T = c.a.wrapped(u.c, "PostTitle", C.a), L = c.a.wrapped(p.g, "PostTopMeta", C.a), R = c.a.wrapped(p.a, "MetaSeparator", C.a), A = Object(r.b)(() => Object(a.c)({
-				comment: y.b,
+				comment: y.c,
 				isBlockingInterstitialEnabled: E.b,
 				isBlockingInterstitialV2Enabled: E.b
 			}), e => ({
@@ -6381,9 +6381,9 @@
 				O = m.a.div("Wrapper", _.a),
 				C = m.a.div("CommentSeparator", _.a),
 				k = Object(i.b)(() => Object(d.c)({
-					comment: (e, t) => Object(f.b)(e, t),
+					comment: (e, t) => Object(f.c)(e, t),
 					isAwarded: (e, t) => {
-						const s = Object(f.b)(e, t);
+						const s = Object(f.c)(e, t);
 						return !(!s || !s.awardCountsById) && Object.keys(s.awardCountsById).some(t => {
 							const s = Object(x.a)(e, t);
 							return s && s.coinPrice >= c.g
@@ -10320,7 +10320,7 @@
 				a = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(o.vg)(t)
+					return Boolean(t) && !Object(o.wg)(t)
 				},
 				d = Object(n.a)(i, r.d, (e, t) => e && !t)
 		},
@@ -10368,4 +10368,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.5f0a72929fd3586b04f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.650e85c22a21f697b548.js.map

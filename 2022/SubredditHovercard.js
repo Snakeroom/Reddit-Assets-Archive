@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditHovercard.c57fba4fd8fa3941dbcb.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditHovercard.08afb1327c67393f6d59.js
+// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditHovercard"], {
 		"./src/reddit/components/CommunityType/index.m.less": function(e, t, s) {
@@ -521,7 +521,7 @@
 				v = s("./src/reddit/selectors/commentSelector.ts"),
 				h = s("./src/reddit/selectors/subreddit.ts");
 			const f = (e, t) => {
-				const s = Object(v.b)(e, t),
+				const s = Object(v.c)(e, t),
 					o = Object(h.N)(e, t);
 				return {
 					comment: s,
@@ -560,7 +560,7 @@
 				}
 			}));
 			const E = (e, t) => {
-				const s = Object(v.b)(e, t),
+				const s = Object(v.c)(e, t),
 					o = Object(h.N)(e, t);
 				return {
 					comment: s,
@@ -873,4 +873,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.c57fba4fd8fa3941dbcb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.08afb1327c67393f6d59.js.map

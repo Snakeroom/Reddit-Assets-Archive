@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.e105d221d5925429cd45.js
-// Retrieved at 11/17/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.e06e580d5a0e29144636.js
+// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -863,7 +863,7 @@
 					let {
 						gqlContext: c
 					} = a;
-					const l = Object(h.b)(i(), {
+					const l = Object(h.c)(i(), {
 						commentId: e
 					});
 					if (!l) return;
@@ -7294,12 +7294,12 @@
 						rtJsonElementProps: i
 					});
 					switch (r) {
-						case h.Uf.SmIcon:
+						case h.Vf.SmIcon:
 							return o.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: i
 							});
-						case h.Uf.SmIconHc:
+						case h.Vf.SmIconHc:
 							return o.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -10211,7 +10211,7 @@
 			const r = e => {
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.af
+					experimentName: n.bf
 				}) === n.Md
 			}
 		},
@@ -10228,7 +10228,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(o.vg)(t)
+					return Boolean(t) && !Object(o.wg)(t)
 				},
 				c = Object(n.a)(a, r.d, (e, t) => e && !t)
 		},
@@ -10306,10 +10306,10 @@
 				i = s("./src/reddit/models/Post/index.ts"),
 				a = s("./src/reddit/selectors/posts.ts");
 			const c = e => Object(r.c)(e, {
-					experimentName: o.df,
+					experimentName: o.ef,
 					experimentEligibilitySelector: r.a
 				}),
-				d = (e, t) => (t === o.lf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(i.B)(e),
+				d = (e, t) => (t === o.mf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(i.B)(e),
 				l = Object(n.a)(a.G, c, (e, t) => d(e, t));
 			Object(n.a)((e, t) => t, c, (e, t) => d(e, t))
 		},
@@ -10336,12 +10336,12 @@
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.Of
+						experimentName: n.Pf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.Uf.SmIcon || t === n.Uf.SmIconHc
+					return t === n.Vf.SmIcon || t === n.Vf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -10460,4 +10460,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.e105d221d5925429cd45.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.e06e580d5a0e29144636.js.map

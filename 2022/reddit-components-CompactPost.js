@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.626866ba9f8a484dc5c8.js
-// Retrieved at 11/17/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.b3dadc4caac9c2be9618.js
+// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1179,7 +1179,7 @@
 						return !!n && Object(j.i)(e, n.id)
 					},
 					showCTAExperimentDesign: xe.a,
-					isLiveChatUserCountEnabled: je.e
+					isLiveChatUserCountEnabled: je.f
 				}),
 				Ne = (e, t) => {
 					let {
@@ -2132,7 +2132,7 @@
 					className: n
 				} = e;
 				const r = Object(h.e)(e => Object(v.a)(e, t));
-				return Object(h.e)(_.e) ? i.a.createElement(f, {
+				return Object(h.e)(_.f) ? i.a.createElement(f, {
 					userCount: r,
 					className: n
 				}) : null
@@ -3460,9 +3460,9 @@
 		},
 		"./src/reddit/helpers/trackers/commentsChat.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "i", (function() {
+			n.d(t, "k", (function() {
 				return l
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "l", (function() {
 				return m
 			})), n.d(t, "f", (function() {
 				return p
@@ -3476,14 +3476,18 @@
 				return v
 			})), n.d(t, "a", (function() {
 				return _
-			})), n.d(t, "l", (function() {
+			})), n.d(t, "n", (function() {
 				return g
 			})), n.d(t, "g", (function() {
 				return O
 			})), n.d(t, "h", (function() {
 				return x
-			})), n.d(t, "k", (function() {
+			})), n.d(t, "m", (function() {
 				return C
+			})), n.d(t, "i", (function() {
+				return E
+			})), n.d(t, "j", (function() {
+				return y
 			}));
 			var r = n("./src/lib/makeCommentsPageKey/index.ts"),
 				s = n("./src/reddit/constants/tracking.ts"),
@@ -3502,7 +3506,7 @@
 					})
 				}),
 				l = (e, t) => {
-					const n = Object(i.b)(e, {
+					const n = Object(i.c)(e, {
 							commentId: t
 						}),
 						s = n && Object(r.a)(n.postId);
@@ -3642,6 +3646,28 @@
 						source: "chat_post",
 						action: s.c.VIEW,
 						noun: "hint"
+					}
+				},
+				E = e => t => {
+					const n = d(t, e);
+					return n.comment.type = "thread_chat", {
+						...n,
+						source: "live_post",
+						action: s.c.CLICK,
+						noun: "chat_thread",
+						actionInfo: Object(a.d)(t, {
+							pageType: "actions_menu"
+						})
+					}
+				},
+				y = e => t => {
+					const n = d(t, e);
+					return n.comment.type = "thread_chat", {
+						...n,
+						source: "live_post",
+						action: s.c.SUBMIT,
+						noun: "comment",
+						actionInfo: Object(a.d)(t)
 					}
 				}
 		},
@@ -3857,7 +3883,7 @@
 					...t
 				}),
 				p = (e, t, n) => {
-					const s = t && Object(o.f)(e, {
+					const s = t && Object(o.g)(e, {
 						commentId: t
 					});
 					return {
@@ -3875,7 +3901,7 @@
 						screen: i.cb(e),
 						subreddit: i.kb(e),
 						userSubreddit: i.ub(e),
-						listing: t ? Object(r.i)(e, t) : void 0
+						listing: t ? Object(r.k)(e, t) : void 0
 					}
 				},
 				b = (e, t) => n => ({
@@ -6053,7 +6079,7 @@
 			const o = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.af
+					experimentName: r.bf
 				}) === r.Md
 			}
 		},
@@ -6066,10 +6092,10 @@
 				s = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(r.a)(e => Object(o.c)(e, {
-					experimentName: s.ig,
+					experimentName: s.jg,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				a = Object(r.a)(i, e => e === s.ag)
+				a = Object(r.a)(i, e => e === s.bg)
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
 			"use strict";
@@ -6157,7 +6183,7 @@
 						c = l.find(e => e >= r),
 						u = s ? Object(a.G)(e, {
 							postId: s
-						}) || Object(o.b)(e, {
+						}) || Object(o.c)(e, {
 							commentId: s
 						}) : void 0;
 					return n.reduce((e, t) => (t && (e[t.id] = m({
@@ -6452,4 +6478,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.626866ba9f8a484dc5c8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.b3dadc4caac9c2be9618.js.map

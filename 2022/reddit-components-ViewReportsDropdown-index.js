@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.d2a9701b6fa8217f6e81.js
-// Retrieved at 11/16/2022, 7:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.ec6856a7bbdffb5ab098.js
+// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, o) {
@@ -173,7 +173,7 @@
 					let {
 						gqlContext: c
 					} = i;
-					const l = Object(x.b)(d(), {
+					const l = Object(x.c)(d(), {
 						commentId: e
 					});
 					if (!l) return;
@@ -568,4 +568,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.d2a9701b6fa8217f6e81.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.ec6856a7bbdffb5ab098.js.map

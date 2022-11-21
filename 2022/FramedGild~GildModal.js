@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.29a9ffba35a8baa249cc.js
-// Retrieved at 11/17/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.9354589c548e43c0021a.js
+// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -956,7 +956,7 @@
 				X = Object(s.a)(z.v),
 				Q = (e, t) => async (r, s) => {
 					const a = s(),
-						o = !Object(W.a)(e) && Object(E.f)(a, {
+						o = !Object(W.a)(e) && Object(E.g)(a, {
 							commentId: e
 						});
 					r(ee());
@@ -1082,7 +1082,7 @@
 						id: r
 					} = t, n = Object(W.a)(r) ? Object(N.G)(e, {
 						postId: r
-					}) : Object(E.b)(e, {
+					}) : Object(E.c)(e, {
 						commentId: r
 					}), s = Object(A.l)(e), a = e.gild, {
 						isAnonymous: o
@@ -2875,7 +2875,7 @@
 						} = t;
 						return Object(l.a)(r) ? Object(R.G)(e, {
 							postId: r
-						}) : Object(k.b)(e, {
+						}) : Object(k.c)(e, {
 							commentId: r
 						})
 					},
@@ -5070,12 +5070,12 @@
 						rtJsonElementProps: o
 					});
 					switch (a) {
-						case h.Uf.SmIcon:
+						case h.Vf.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case h.Uf.SmIconHc:
+						case h.Vf.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -6279,12 +6279,12 @@
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.Of
+						experimentName: n.Pf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.Uf.SmIcon || t === n.Uf.SmIconHc
+					return t === n.Vf.SmIcon || t === n.Vf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -6334,4 +6334,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.29a9ffba35a8baa249cc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.9354589c548e43c0021a.js.map

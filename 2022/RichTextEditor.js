@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.bfef04b1f3300c38814e.js
-// Retrieved at 11/17/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.2502f6367529ae87db9d.js
+// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -4329,31 +4329,31 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: n.ng
+						experimentName: n.og
 					}) === n.Md
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: n.og
+						experimentName: n.pg
 					}) === n.Md
 				},
 				c = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: n.mg
+						experimentName: n.ng
 					});
-					return t === n.dg.TypingIndicators || t === n.dg.IndicatorsPlusCTA
+					return t === n.eg.TypingIndicators || t === n.eg.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: n.mg
+						experimentName: n.ng
 					});
-					return (null == t ? void 0 : t.variant) === n.dg.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === n.eg.IndicatorsPlusCTA
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.bfef04b1f3300c38814e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.2502f6367529ae87db9d.js.map

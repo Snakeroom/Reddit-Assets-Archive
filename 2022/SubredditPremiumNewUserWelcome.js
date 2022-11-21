@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.4678dad30ae6429c9ef2.js
-// Retrieved at 11/17/2022, 12:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.d61e174419f1803ed13f.js
+// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumNewUserWelcome"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, n) {
@@ -2341,7 +2341,7 @@
 					if (Object(_.g)(e, {
 							subredditId: t
 						})) return !0;
-					const r = "replyToPost" !== n && Object(b.b)(e, {
+					const r = "replyToPost" !== n && Object(b.c)(e, {
 						commentId: n
 					});
 					return !(!r || !Object(o.a)(r))
@@ -2362,7 +2362,7 @@
 					return !!q(e, t) || s && o
 				},
 				Y = (e, t) => {
-					const n = "replyToPost" !== t && Object(b.b)(e, {
+					const n = "replyToPost" !== t && Object(b.c)(e, {
 						commentId: t
 					});
 					if (n && Object(o.b)(n)) return !0
@@ -2414,4 +2414,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.4678dad30ae6429c9ef2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.d61e174419f1803ed13f.js.map

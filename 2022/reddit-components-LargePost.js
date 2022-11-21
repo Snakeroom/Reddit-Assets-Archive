@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.cfad022afe8c99194ed2.js
-// Retrieved at 11/17/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.df52c0a938908c5372ff.js
+// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -803,7 +803,7 @@
 					let {
 						gqlContext: c
 					} = i;
-					const l = Object(f.b)(a(), {
+					const l = Object(f.c)(a(), {
 						commentId: e
 					});
 					if (!l) return;
@@ -3905,7 +3905,7 @@
 						showRealtimeUpdateAnimation: st,
 						isUpdatedContent: nt,
 						isNightMode: ot
-					} = e, rt = Object(_.a)(), at = Ye, it = !!e.redditStyle || !!e["data-redditstyle"], ct = it ? void 0 : C, dt = Object(l.a)(Ne), lt = Ae && dt, ut = Object(c.a)(Ne), mt = Object(d.a)(Ne), pt = Object(z.c)(Be), bt = Object(G.a)(Be), ft = !!Be.media && Be.media.type === g.o.RTJSON, ht = Qe && ft, vt = s ? s - Z.a : void 0, xt = !!Be.recommendationContext, Ot = !(le && xe || ye) || xt && xe, _t = (e => e === ke.gf.OnlyTitles)(Ue) && !Object(pe.a)(Be), gt = (e => e === ke.gf.MediumHeight)(Ue) && !Object(pe.a)(Be), Et = (e => {
+					} = e, rt = Object(_.a)(), at = Ye, it = !!e.redditStyle || !!e["data-redditstyle"], ct = it ? void 0 : C, dt = Object(l.a)(Ne), lt = Ae && dt, ut = Object(c.a)(Ne), mt = Object(d.a)(Ne), pt = Object(z.c)(Be), bt = Object(G.a)(Be), ft = !!Be.media && Be.media.type === g.o.RTJSON, ht = Qe && ft, vt = s ? s - Z.a : void 0, xt = !!Be.recommendationContext, Ot = !(le && xe || ye) || xt && xe, _t = (e => e === ke.hf.OnlyTitles)(Ue) && !Object(pe.a)(Be), gt = (e => e === ke.hf.MediumHeight)(Ue) && !Object(pe.a)(Be), Et = (e => {
 						var t;
 						const {
 							post: s,
@@ -4183,7 +4183,7 @@
 					className: s
 				} = e;
 				const n = Object(h.e)(e => Object(v.a)(e, t));
-				return Object(h.e)(x.e) ? a.a.createElement(f, {
+				return Object(h.e)(x.f) ? a.a.createElement(f, {
 					userCount: n,
 					className: s
 				}) : null
@@ -7964,9 +7964,9 @@
 		},
 		"./src/reddit/helpers/trackers/commentsChat.ts": function(e, t, s) {
 			"use strict";
-			s.d(t, "i", (function() {
+			s.d(t, "k", (function() {
 				return l
-			})), s.d(t, "j", (function() {
+			})), s.d(t, "l", (function() {
 				return m
 			})), s.d(t, "f", (function() {
 				return p
@@ -7980,14 +7980,18 @@
 				return v
 			})), s.d(t, "a", (function() {
 				return x
-			})), s.d(t, "l", (function() {
+			})), s.d(t, "n", (function() {
 				return O
 			})), s.d(t, "g", (function() {
 				return _
 			})), s.d(t, "h", (function() {
 				return g
-			})), s.d(t, "k", (function() {
+			})), s.d(t, "m", (function() {
 				return E
+			})), s.d(t, "i", (function() {
+				return j
+			})), s.d(t, "j", (function() {
+				return C
 			}));
 			var n = s("./src/lib/makeCommentsPageKey/index.ts"),
 				o = s("./src/reddit/constants/tracking.ts"),
@@ -8006,7 +8010,7 @@
 					})
 				}),
 				l = (e, t) => {
-					const s = Object(a.b)(e, {
+					const s = Object(a.c)(e, {
 							commentId: t
 						}),
 						o = s && Object(n.a)(s.postId);
@@ -8146,6 +8150,28 @@
 						source: "chat_post",
 						action: o.c.VIEW,
 						noun: "hint"
+					}
+				},
+				j = e => t => {
+					const s = d(t, e);
+					return s.comment.type = "thread_chat", {
+						...s,
+						source: "live_post",
+						action: o.c.CLICK,
+						noun: "chat_thread",
+						actionInfo: Object(i.d)(t, {
+							pageType: "actions_menu"
+						})
+					}
+				},
+				C = e => t => {
+					const s = d(t, e);
+					return s.comment.type = "thread_chat", {
+						...s,
+						source: "live_post",
+						action: o.c.SUBMIT,
+						noun: "comment",
+						actionInfo: Object(i.d)(t)
 					}
 				}
 		},
@@ -8481,7 +8507,7 @@
 					...t
 				}),
 				p = (e, t, s) => {
-					const o = t && Object(r.f)(e, {
+					const o = t && Object(r.g)(e, {
 						commentId: t
 					});
 					return {
@@ -8499,7 +8525,7 @@
 						screen: a.cb(e),
 						subreddit: a.kb(e),
 						userSubreddit: a.ub(e),
-						listing: t ? Object(n.i)(e, t) : void 0
+						listing: t ? Object(n.k)(e, t) : void 0
 					}
 				},
 				b = (e, t) => s => ({
@@ -11272,7 +11298,7 @@
 			const r = e => {
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.af
+					experimentName: n.bf
 				}) === n.Md
 			}
 		},
@@ -11285,10 +11311,10 @@
 				o = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const a = Object(n.a)(e => Object(r.c)(e, {
-					experimentName: o.ig,
+					experimentName: o.jg,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				i = Object(n.a)(a, e => e === o.ag)
+				i = Object(n.a)(a, e => e === o.bg)
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, s) {
 			"use strict";
@@ -11376,7 +11402,7 @@
 						c = l.find(e => e >= n),
 						u = o ? Object(i.G)(e, {
 							postId: o
-						}) || Object(r.b)(e, {
+						}) || Object(r.c)(e, {
 							commentId: o
 						}) : void 0;
 					return s.reduce((e, t) => (t && (e[t.id] = m({
@@ -11538,7 +11564,7 @@
 				a = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(o.vg)(t)
+					return Boolean(t) && !Object(o.wg)(t)
 				},
 				c = Object(n.a)(i, r.d, (e, t) => e && !t)
 		},
@@ -11616,10 +11642,10 @@
 				a = s("./src/reddit/models/Post/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const c = e => Object(r.c)(e, {
-					experimentName: o.df,
+					experimentName: o.ef,
 					experimentEligibilitySelector: r.a
 				}),
-				d = (e, t) => (t === o.lf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(a.B)(e),
+				d = (e, t) => (t === o.mf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(a.B)(e),
 				l = Object(n.a)(i.G, c, (e, t) => d(e, t));
 			Object(n.a)((e, t) => t, c, (e, t) => d(e, t))
 		},
@@ -11718,4 +11744,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.cfad022afe8c99194ed2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.df52c0a938908c5372ff.js.map

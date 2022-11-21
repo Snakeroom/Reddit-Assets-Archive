@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit.6ab129b9221480a88948.js
-// Retrieved at 11/17/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit.5cd2b5af7b7dd33b9107.js
+// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -1950,7 +1950,7 @@
 						return e
 				}
 			};
-			var X = function() {
+			var G = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -1963,9 +1963,9 @@
 							return e
 					}
 				},
-				G = Object(r.c)({
+				X = Object(r.c)({
 					error: Q,
-					pending: X
+					pending: G
 				});
 			var Y = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
@@ -1988,7 +1988,7 @@
 					}
 				},
 				Z = Object(r.c)({
-					api: G,
+					api: X,
 					result: Y
 				});
 			const $ = {};
@@ -2578,8 +2578,8 @@
 					error: He,
 					pending: Je
 				}),
-				Xe = n("./node_modules/lodash/isEqual.js"),
-				Ge = n.n(Xe);
+				Ge = n("./node_modules/lodash/isEqual.js"),
+				Xe = n.n(Ge);
 			var Ye = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 						t = arguments.length > 1 ? arguments[1] : void 0;
@@ -2597,7 +2597,7 @@
 								userId: n,
 								permissions: r
 							} = t.payload;
-							return e && e.id === n && !Ge()(e.modPermissions, r) ? {
+							return e && e.id === n && !Xe()(e.modPermissions, r) ? {
 								...e,
 								modPermissions: r
 							} : e
@@ -3150,12 +3150,12 @@
 							return e
 					}
 				},
-				Xt = Object(r.c)({
+				Gt = Object(r.c)({
 					api: qt,
 					itemOrder: Ht,
 					loadMore: Qt
 				});
-			var Gt = function() {
+			var Xt = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -3182,7 +3182,7 @@
 					}
 				},
 				Zt = Object(r.c)({
-					error: Gt,
+					error: Xt,
 					pending: Yt
 				});
 			const $t = {};
@@ -3322,7 +3322,7 @@
 					edited: Nt,
 					moderatedCommunitiesOrder: Lt,
 					modqueue: Kt,
-					reports: Xt,
+					reports: Gt,
 					spam: rn,
 					unmoderated: pn
 				});
@@ -3563,10 +3563,10 @@
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(s.c)(e, {
-				experimentName: r.Fe,
+				experimentName: r.Ge,
 				experimentEligibilitySelector: s.a
-			}) === r.Ne.Enabled
+			}) === r.Oe.Enabled
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~Reddit.6ab129b9221480a88948.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~Reddit.5cd2b5af7b7dd33b9107.js.map

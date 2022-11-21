@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.34ab29517be5c1f48609.js
-// Retrieved at 11/17/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.43ba7a9f9b1c31b1f547.js
+// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2644,7 +2644,7 @@
 			const k = e => {
 				return Object(y.c)(e, {
 					experimentEligibilitySelector: y.a,
-					experimentName: x.qf
+					experimentName: x.rf
 				}) === x.Md
 			};
 			var w = n("./src/reddit/selectors/recapGame.ts"),
@@ -4508,7 +4508,7 @@
 				h = n("./src/reddit/selectors/commentSelector.ts"),
 				g = n("./src/reddit/selectors/subreddit.ts");
 			const f = (e, t) => {
-				const n = Object(h.b)(e, t),
+				const n = Object(h.c)(e, t),
 					s = Object(g.N)(e, t);
 				return {
 					comment: n,
@@ -4547,7 +4547,7 @@
 				}
 			}));
 			const _ = (e, t) => {
-				const n = Object(h.b)(e, t),
+				const n = Object(h.c)(e, t),
 					s = Object(g.N)(e, t);
 				return {
 					comment: n,
@@ -6632,7 +6632,7 @@
 						} = t;
 						return Object(Fe.c)(e, n)
 					},
-					isInNewModuleNCPV3Experiment: e => Object(Re.a)(e) === Ie.Oe.NewModule,
+					isInNewModuleNCPV3Experiment: e => Object(Re.a)(e) === Ie.Pe.NewModule,
 					showGovernance: Te.d.spPoints,
 					showLeaderboard: Te.d.spLeaderboard,
 					showPredictionsLeaderboard: (e, t) => {
@@ -8987,4 +8987,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.34ab29517be5c1f48609.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.43ba7a9f9b1c31b1f547.js.map

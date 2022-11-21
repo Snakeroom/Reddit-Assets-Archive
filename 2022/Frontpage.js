@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.a742cdfe6287b483b7df.js
-// Retrieved at 11/17/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.918982d359cc5a8a45cc.js
+// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -752,7 +752,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.vg)(p),
+						includeInterestTopics: !!p && !Object(b.wg)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: f && !(null === (a = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === a ? void 0 : a.total),
@@ -3543,7 +3543,7 @@
 					experimentName: Fe.pe,
 					experimentEligibilitySelector: Ue.a
 				}), Ze.a),
-				We = Object(u.a)(Ve, e => e === Fe.se.Enabled);
+				We = Object(u.a)(Ve, e => e === Fe.te.Enabled);
 			var He = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Ge = n("./src/reddit/selectors/user.ts");
 			var Ke = n("./src/reddit/selectors/seo/linksModule.ts"),
@@ -7903,7 +7903,7 @@
 				const p = Object(c.e)(e => e.subreddits.survey[n]),
 					b = Object(c.e)(e => e.subreddits.progressModule[n]),
 					h = Object(c.e)(u.a),
-					g = h !== l.Oe.NewModule;
+					g = h !== l.Pe.NewModule;
 				return (null === (s = null == b ? void 0 : b.cards) || void 0 === s ? void 0 : s.length) > 0 && g ? r.a.createElement(m, {
 					closeModuleOnMount: !!t && t !== d.g.Large,
 					subredditId: n,
@@ -8385,7 +8385,7 @@
 			const r = e => {
 				return !(Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: a.ve
+					experimentName: a.we
 				}) === a.Md)
 			}
 		},
@@ -8404,7 +8404,7 @@
 						experimentEligibilitySelector: r.R,
 						experimentName: a.sd
 					});
-					return !(!t || Object(a.vg)(t))
+					return !(!t || Object(a.wg)(t))
 				},
 				i = e => {
 					return Object(s.c)(e, {
@@ -8613,4 +8613,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.a742cdfe6287b483b7df.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.918982d359cc5a8a45cc.js.map

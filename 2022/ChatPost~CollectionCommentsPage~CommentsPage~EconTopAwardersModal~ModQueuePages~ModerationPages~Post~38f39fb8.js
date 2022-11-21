@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.e434ad7b15400a2a9df6.js
-// Retrieved at 11/17/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.126f494378d4fb4b013c.js
+// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -1867,7 +1867,7 @@
 				b = r("./src/reddit/selectors/commentSelector.ts"),
 				f = r("./src/reddit/selectors/subreddit.ts");
 			const v = (e, t) => {
-				const r = Object(b.b)(e, t),
+				const r = Object(b.c)(e, t),
 					s = Object(f.N)(e, t);
 				return {
 					comment: r,
@@ -1906,7 +1906,7 @@
 				}
 			}));
 			const g = (e, t) => {
-				const r = Object(b.b)(e, t),
+				const r = Object(b.c)(e, t),
 					s = Object(f.N)(e, t);
 				return {
 					comment: r,
@@ -3665,7 +3665,7 @@
 					if (Object(f.g)(e, {
 							subredditId: t
 						})) return !0;
-					const s = "replyToPost" !== r && Object(p.b)(e, {
+					const s = "replyToPost" !== r && Object(p.c)(e, {
 						commentId: r
 					});
 					return !(!s || !Object(n.a)(s))
@@ -3686,7 +3686,7 @@
 					return !!V(e, t) || o && n
 				},
 				z = (e, t) => {
-					const r = "replyToPost" !== t && Object(p.b)(e, {
+					const r = "replyToPost" !== t && Object(p.c)(e, {
 						commentId: t
 					});
 					if (r && Object(n.b)(r)) return !0
@@ -3719,7 +3719,7 @@
 						experimentEligibilitySelector: n.R,
 						experimentName: s.sd
 					});
-					return !(!t || Object(s.vg)(t))
+					return !(!t || Object(s.wg)(t))
 				},
 				i = e => {
 					return Object(o.c)(e, {
@@ -3785,4 +3785,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.e434ad7b15400a2a9df6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.126f494378d4fb4b013c.js.map

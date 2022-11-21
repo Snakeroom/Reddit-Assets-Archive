@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.a3d8c495daab6f341a57.js
-// Retrieved at 11/17/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.943ec8e5c99de07653e3.js
+// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -779,7 +779,7 @@
 			const O = e => {
 				return Object(C.c)(e, {
 					experimentEligibilitySelector: C.a,
-					experimentName: y.qf
+					experimentName: y.rf
 				}) === y.Md
 			};
 			var E = s("./src/reddit/selectors/recapGame.ts"),
@@ -1746,7 +1746,7 @@
 				Ue = he.a.div("ProfileCommentWrapper", Fe.a),
 				Ge = he.a.div("CommentBody", Fe.a),
 				De = Object(o.b)(() => Object(r.c)({
-					comment: (e, t) => Object(Me.b)(e, t),
+					comment: (e, t) => Object(Me.c)(e, t),
 					flair: Q.e
 				})),
 				We = Object(c.b)(e => ({
@@ -2424,7 +2424,7 @@
 					className: s
 				} = e;
 				const n = Object(f.e)(e => Object(g.a)(e, t));
-				return Object(f.e)(x.e) ? r.a.createElement(h, {
+				return Object(f.e)(x.f) ? r.a.createElement(h, {
 					userCount: n,
 					className: s
 				}) : null
@@ -2512,9 +2512,9 @@
 				v = s("./src/reddit/components/OverviewChronoComment/index.m.less"),
 				y = s.n(v);
 			const C = Object(r.b)(() => Object(d.c)({
-				comment: f.b,
+				comment: f.c,
 				isAwarded: (e, t) => {
-					const s = Object(f.b)(e, t);
+					const s = Object(f.c)(e, t);
 					return !(!s || !s.awardCountsById) && Object.keys(s.awardCountsById).some(t => {
 						const s = Object(g.a)(e, t);
 						return s && s.coinPrice >= a.g
@@ -2682,7 +2682,7 @@
 			const {
 				fbt: k
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), j = c.a.wrapped(f.default, "InternalLink", w.a), _ = c.a.div("Wrapper", w.a), S = c.a.div("Row", w.a), I = c.a.wrapped(y.a, "CommentIcon", w.a), P = c.a.div("TitleContainer", w.a), N = c.a.div("PostTitleContainer", w.a), T = c.a.wrapped(u.c, "PostTitle", w.a), L = c.a.wrapped(p.g, "PostTopMeta", w.a), R = c.a.wrapped(p.a, "MetaSeparator", w.a), M = Object(o.b)(() => Object(r.c)({
-				comment: C.b,
+				comment: C.c,
 				isBlockingInterstitialEnabled: O.b,
 				isBlockingInterstitialV2Enabled: O.b
 			}), e => ({
@@ -6727,4 +6727,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.a3d8c495daab6f341a57.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.943ec8e5c99de07653e3.js.map

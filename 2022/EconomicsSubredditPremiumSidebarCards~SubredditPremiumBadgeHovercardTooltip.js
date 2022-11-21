@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip.5376ac63e2fa056b509c.js
-// Retrieved at 11/17/2022, 12:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip.cb249e65ee1801b4da24.js
+// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -2413,7 +2413,7 @@
 					if (Object(h.g)(e, {
 							subredditId: t
 						})) return !0;
-					const r = "replyToPost" !== n && Object(f.b)(e, {
+					const r = "replyToPost" !== n && Object(f.c)(e, {
 						commentId: n
 					});
 					return !(!r || !Object(s.a)(r))
@@ -2434,7 +2434,7 @@
 					return !!Y(e, t) || i && s
 				},
 				q = (e, t) => {
-					const n = "replyToPost" !== t && Object(f.b)(e, {
+					const n = "replyToPost" !== t && Object(f.c)(e, {
 						commentId: t
 					});
 					if (n && Object(s.b)(n)) return !0
@@ -2486,4 +2486,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip.5376ac63e2fa056b509c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip.cb249e65ee1801b4da24.js.map

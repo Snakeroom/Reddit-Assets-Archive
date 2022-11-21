@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconHelperActions.09eea77d0bf0a06f87c8.js
-// Retrieved at 11/17/2022, 12:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconHelperActions.a2644f2d9f407a6de02f.js
+// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconHelperActions"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, r) {
@@ -2143,7 +2143,7 @@
 					if (Object(f.g)(e, {
 							subredditId: t
 						})) return !0;
-					const n = "replyToPost" !== r && Object(_.b)(e, {
+					const n = "replyToPost" !== r && Object(_.c)(e, {
 						commentId: r
 					});
 					return !(!n || !Object(o.a)(n))
@@ -2164,7 +2164,7 @@
 					return !!q(e, t) || s && o
 				},
 				Y = (e, t) => {
-					const r = "replyToPost" !== t && Object(_.b)(e, {
+					const r = "replyToPost" !== t && Object(_.c)(e, {
 						commentId: t
 					});
 					if (r && Object(o.b)(r)) return !0
@@ -2216,4 +2216,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconHelperActions.09eea77d0bf0a06f87c8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconHelperActions.a2644f2d9f407a6de02f.js.map

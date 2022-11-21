@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.e546e521c702ba590e54.js
-// Retrieved at 11/17/2022, 12:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.9070e9f446e54eea3cd8.js
+// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, s) {},
@@ -1245,7 +1245,7 @@
 				}, (e, t, s, r) => {
 					return {
 						commentAwardIds: t.length ? t.reduce((t, s) => {
-							const r = Object(p.b)(e, {
+							const r = Object(p.c)(e, {
 								commentId: s.id
 							});
 							if (r) {
@@ -1451,7 +1451,7 @@
 					errorType: B.N,
 					hasError: B.v,
 					isChatPost: N.d,
-					isLivePostSpamRateEnabled: Q.i,
+					isLivePostSpamRateEnabled: Q.j,
 					liveStreamingChatCharacterLimit: e => {
 						const t = Object(R.a)(e);
 						return t ? t - 3 : 197
@@ -1460,7 +1460,8 @@
 					post: U.G,
 					isLiveChatInChatTabEnabled: Q.c,
 					currentUserId: M.j,
-					isTalkPost: Object(l.a)(U.G, e => Object(T.y)(e))
+					isTalkPost: Object(l.a)(U.G, e => Object(T.y)(e)),
+					isLiveChatThreadingEnabled: Q.e
 				}), (e, t) => {
 					let {
 						isEditing: s,
@@ -1473,7 +1474,7 @@
 						scrollToBottom: d
 					} = t;
 					return {
-						dispatchSubmit: async (t, i, u) => {
+						dispatchSubmit: async (t, i, u, l) => {
 							s && r ? await e(Object(g.j)({
 								id: r.id,
 								commentsPageKey: n,
@@ -1561,8 +1562,9 @@
 							postId: e,
 							replyComment: t,
 							isLivestreaming: s,
-							dispatchSubmit: r,
-							sendEvent: n
+							isLiveChatThreadingEnabled: r,
+							dispatchSubmit: n,
+							sendEvent: o
 						} = this.props;
 						if (this.canSubmit()) {
 							const e = {
@@ -1572,7 +1574,7 @@
 								hasFocus: !0,
 								text: ""
 							};
-							this.cleanInputForm(), r(e, z.i.RICH_TEXT, t), setTimeout(() => this.focusOnForm(), 50), this.isAllowedToCreateLiveChatAssociation() && this.associationTimerId && !this.state.messageSent && (this.props.createChatTabAssociation({
+							this.cleanInputForm(), n(e, z.i.RICH_TEXT, t, r), setTimeout(() => this.focusOnForm(), 50), this.isAllowedToCreateLiveChatAssociation() && this.associationTimerId && !this.state.messageSent && (this.props.createChatTabAssociation({
 								postId: this.props.postId,
 								engagementType: X.o.Participated
 							}), clearTimeout(this.associationTimerId), this.setState({
@@ -1580,7 +1582,7 @@
 								hasCreatedLiveChatAssociation: !0
 							}), !this.isEmbeddedLiveChat() && this.props.fetchLiveChatPosts())
 						}
-						s && n(Object(A.z)(e)), t && n(Object(Y.d)(t.id))
+						s && o(Object(A.z)(e)), t && (o(Object(Y.d)(t.id)), r && o(Object(Y.j)(t.id)))
 					}, this.canSubmit = () => Boolean(!this.props.pending && this.state.hasChanged && !this.state.showError && (!this.props.isLivePostSpamRateEnabled || !this.state.spamTimeoutDraftKey)), this.state = {
 						hasChanged: !1,
 						showError: e.hasError,
@@ -1650,13 +1652,14 @@
 						post: _,
 						postId: f,
 						replyComment: g,
-						isEmbeddedLiveChat: y
-					} = this.props, v = c ? r.fbt._("Send message ({characterLimit} character limit)", [r.fbt._param("characterLimit", h.toLocaleString())], {
+						isEmbeddedLiveChat: y,
+						isLiveChatThreadingEnabled: v
+					} = this.props, j = c ? r.fbt._("Send message ({characterLimit} character limit)", [r.fbt._param("characterLimit", h.toLocaleString())], {
 						hk: "RIcb6"
 					}) : r.fbt._("Send a message (use the Enter key)", null, {
 						hk: "3yojgj"
-					}), j = _.isGildable && c && !i, k = c, w = a === K.L.RATELIMIT && parseInt(null === (e = null == n ? void 0 : n[0]) || void 0 === e ? void 0 : e.replace(/\D/g, "")) || te;
-					return d.a.createElement("div", {
+					}), k = _.isGildable && c && !i, w = c, A = a === K.L.RATELIMIT && parseInt(null === (e = null == n ? void 0 : n[0]) || void 0 === e ? void 0 : e.replace(/\D/g, "")) || te;
+					return v && (null == g ? void 0 : g.isDeleted) ? null : d.a.createElement("div", {
 						className: Object(m.a)(Z.a.FormWrapper, {
 							[Z.a.LivestreamingWrapper]: c,
 							[Z.a.v2]: t,
@@ -1667,13 +1670,13 @@
 					}, r.fbt._("Time until you can message", null, {
 						hk: "3mkJ7J"
 					}), " ", d.a.createElement(x, {
-						durationSec: w,
+						durationSec: A,
 						onTimeout: () => {
 							this.props.clearSubmitError(this.state.spamTimeoutDraftKey), this.setState({
 								spamTimeoutDraftKey: null
 							})
 						}
-					}), d.a.createElement(I.a, null)), !i && g && d.a.createElement(C.a, {
+					}), d.a.createElement(I.a, null)), !i && g && !v && d.a.createElement(C.a, {
 						commentId: g.id,
 						isMessageComposer: !0,
 						isLivestreaming: c,
@@ -1709,9 +1712,9 @@
 						onChange: this.handleChange,
 						onFocus: this.handleFocus,
 						onSubmit: this.onSubmit,
-						placeholderText: v,
+						placeholderText: j,
 						readOnly: b,
-						showSubmitButton: k && !this.state.showError,
+						showSubmitButton: w && !this.state.showError,
 						submitButtonClassName: Object(m.a)(Z.a.insetSubmitButton, Z.a.submitButton),
 						submitOnEnter: !0,
 						trackToolbarClick: o.a,
@@ -1723,7 +1726,7 @@
 							[Z.a.LivestreamingResetButton]: c
 						}),
 						type: "reset"
-					}, d.a.createElement(S.a, null)), !k && d.a.createElement(O.e, {
+					}, d.a.createElement(S.a, null)), !w && d.a.createElement(O.e, {
 						className: Object(m.a)(Z.a.ChatButton, {
 							[Z.a.LivestreamingChatButton]: c && !i,
 							[Z.a.LivestreamingResetButton]: c && i,
@@ -1734,8 +1737,8 @@
 						"aria-label": r.fbt._("send a message", null, {
 							hk: "4bL65Y"
 						})
-					}, t ? d.a.createElement(P.a, null) : d.a.createElement(L.a, null))), j && d.a.createElement(G.a, {
-						showSubmitInsideTextArea: k,
+					}, t ? d.a.createElement(P.a, null) : d.a.createElement(L.a, null))), k && d.a.createElement(G.a, {
+						showSubmitInsideTextArea: w,
 						isLivestreaming: c,
 						sendEvent: l,
 						postId: f,
@@ -3004,7 +3007,7 @@
 					if (Object(_.g)(e, {
 							subredditId: t
 						})) return !0;
-					const r = "replyToPost" !== s && Object(p.b)(e, {
+					const r = "replyToPost" !== s && Object(p.c)(e, {
 						commentId: s
 					});
 					return !(!r || !Object(o.a)(r))
@@ -3025,7 +3028,7 @@
 					return !!Z(e, t) || n && o
 				},
 				W = (e, t) => {
-					const s = "replyToPost" !== t && Object(p.b)(e, {
+					const s = "replyToPost" !== t && Object(p.c)(e, {
 						commentId: t
 					});
 					if (s && Object(o.b)(s)) return !0
@@ -3045,4 +3048,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.e546e521c702ba590e54.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.9070e9f446e54eea3cd8.js.map

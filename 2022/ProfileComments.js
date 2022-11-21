@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.e4be612a3d7cf7c93668.js
-// Retrieved at 11/17/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.aecdae5d9d31a04bb233.js
+// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -1401,7 +1401,7 @@
 				Be = be.a.div("ProfileCommentWrapper", De.a),
 				ze = be.a.div("CommentBody", De.a),
 				We = Object(o.b)(() => Object(i.c)({
-					comment: (e, t) => Object(Ae.b)(e, t),
+					comment: (e, t) => Object(Ae.c)(e, t),
 					flair: J.e
 				})),
 				Ue = Object(d.b)(e => ({
@@ -2705,7 +2705,7 @@
 					className: s
 				} = e;
 				const n = Object(f.e)(e => Object(_.a)(e, t));
-				return Object(f.e)(g.e) ? i.a.createElement(b, {
+				return Object(f.e)(g.f) ? i.a.createElement(b, {
 					userCount: n,
 					className: s
 				}) : null
@@ -2793,9 +2793,9 @@
 				x = s("./src/reddit/components/OverviewChronoComment/index.m.less"),
 				v = s.n(x);
 			const y = Object(i.b)(() => Object(a.c)({
-				comment: f.b,
+				comment: f.c,
 				isAwarded: (e, t) => {
-					const s = Object(f.b)(e, t);
+					const s = Object(f.c)(e, t);
 					return !(!s || !s.awardCountsById) && Object.keys(s.awardCountsById).some(t => {
 						const s = Object(_.a)(e, t);
 						return s && s.coinPrice >= c.g
@@ -2963,7 +2963,7 @@
 			const {
 				fbt: w
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), j = d.a.wrapped(f.default, "InternalLink", k.a), O = d.a.div("Wrapper", k.a), P = d.a.div("Row", k.a), I = d.a.wrapped(v.a, "CommentIcon", k.a), S = d.a.div("TitleContainer", k.a), L = d.a.div("PostTitleContainer", k.a), N = d.a.wrapped(u.c, "PostTitle", k.a), F = d.a.wrapped(p.g, "PostTopMeta", k.a), T = d.a.wrapped(p.a, "MetaSeparator", k.a), A = Object(o.b)(() => Object(i.c)({
-				comment: y.b,
+				comment: y.c,
 				isBlockingInterstitialEnabled: C.b,
 				isBlockingInterstitialV2Enabled: C.b
 			}), e => ({
@@ -3111,9 +3111,9 @@
 				E = m.a.div("Wrapper", v.a),
 				k = m.a.div("CommentSeparator", v.a),
 				w = Object(a.b)(() => Object(c.c)({
-					comment: (e, t) => Object(f.b)(e, t),
+					comment: (e, t) => Object(f.c)(e, t),
 					isAwarded: (e, t) => {
-						const s = Object(f.b)(e, t);
+						const s = Object(f.c)(e, t);
 						return !(!s || !s.awardCountsById) && Object.keys(s.awardCountsById).some(t => {
 							const s = Object(_.a)(e, t);
 							return s && s.coinPrice >= d.g
@@ -5476,7 +5476,7 @@
 						let {
 							itemId: s
 						} = t;
-						return Object(S.b)(e, {
+						return Object(S.c)(e, {
 							commentId: s
 						})
 					},
@@ -5821,4 +5821,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.e4be612a3d7cf7c93668.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.aecdae5d9d31a04bb233.js.map

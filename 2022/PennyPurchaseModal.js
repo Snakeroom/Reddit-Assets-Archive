@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.e2fdad250b8f874a5eaa.js
-// Retrieved at 11/17/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.1000532a6ee8040a7eb2.js
+// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./node_modules/@stripe/stripe-js/dist/stripe.esm.js": function(e, t, a) {
@@ -707,8 +707,8 @@
 					})))
 				},
 				J = a("./src/reddit/components/PaymentMethodSelector/index.tsx"),
-				U = a("./src/reddit/components/StripePaymentForm/index.tsx"),
-				z = a("./src/reddit/helpers/createEmojiText/index.tsx");
+				z = a("./src/reddit/components/StripePaymentForm/index.tsx"),
+				U = a("./src/reddit/helpers/createEmojiText/index.tsx");
 			const X = e => {
 				const t = Object(Q.a)(),
 					a = Object(c.a)(),
@@ -739,7 +739,7 @@
 					let {
 						stripe: a
 					} = t;
-					return o.a.createElement(U.a, {
+					return o.a.createElement(z.a, {
 						nightmode: e.nightmode,
 						stripe: a
 					})
@@ -769,7 +769,7 @@
 				})({
 					...e,
 					locale: t
-				}), Object(z.a)(n.fbt._("By purchasing Coins and Awards, you agree to the :agreement:.", null, {
+				}), Object(U.a)(n.fbt._("By purchasing Coins and Awards, you agree to the :agreement:.", null, {
 					hk: "1eCqza"
 				}), {
 					":agreement:": o.a.createElement("a", {
@@ -1998,8 +1998,8 @@
 				n = a("./src/lib/constants/index.ts"),
 				s = a("./src/reddit/constants/experiments.ts"),
 				o = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const c = Object(o.a)(s.Ue),
-				d = Object(o.a)(s.Ve),
+			const c = Object(o.a)(s.Ve),
+				d = Object(o.a)(s.We),
 				i = Object(r.a)([c, d], (e, t) => new Set([e && n.Mb, t && n.Lb].filter(e => !!e)))
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, a) {
@@ -2046,4 +2046,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.e2fdad250b8f874a5eaa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.1000532a6ee8040a7eb2.js.map

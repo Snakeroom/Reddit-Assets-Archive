@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.39535faf121fbb5973fc.js
-// Retrieved at 11/17/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.a53ea0dfa3a58907f2e4.js
+// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, r) {
@@ -73,7 +73,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(u.ug)(e.category_name)
+									displayText: Object(u.vg)(e.category_name)
 								};
 								r.push(s.id), t[s.id] = s
 							}), {
@@ -287,7 +287,7 @@
 			const C = e => {
 				return Object(E.c)(e, {
 					experimentEligibilitySelector: E.a,
-					experimentName: x.qf
+					experimentName: x.rf
 				}) === x.Md
 			};
 			var S = r("./src/reddit/selectors/recapGame.ts"),
@@ -2500,9 +2500,9 @@
 				}
 			}
 			var J = Object(u.c)(z(Q)),
-				q = r("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				U = r("./src/reddit/components/CategoryPickerWidget/index.m.less"),
-				K = r.n(U);
+				U = r("./node_modules/react-router-dom/esm/react-router-dom.js"),
+				q = r("./src/reddit/components/CategoryPickerWidget/index.m.less"),
+				K = r.n(q);
 
 			function V() {
 				return (V = Object.assign || function(e) {
@@ -2521,7 +2521,7 @@
 					isActive: s,
 					tabIndex: a
 				} = e, o = Object(c.a)(K.a.categoryLink, s && K.a.active, n);
-				return i.a.createElement("li", null, i.a.createElement(q.a, V({}, t.anchorProps, {
+				return i.a.createElement("li", null, i.a.createElement(U.a, V({}, t.anchorProps, {
 					className: o,
 					"data-active": s,
 					onMouseDown: () => e.onSendEventClick(t.name),
@@ -2686,7 +2686,7 @@
 					} = t;
 					return Object(g.b)(r.params.categoryName || "")
 				},
-				Ee = Object(m.tg)(p.i),
+				Ee = Object(m.ug)(p.i),
 				Ce = Object(d.c)({
 					categories: e => Object(ye.b)(e, {
 						categoriesOrder: Ee
@@ -2839,4 +2839,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.39535faf121fbb5973fc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.a53ea0dfa3a58907f2e4.js.map

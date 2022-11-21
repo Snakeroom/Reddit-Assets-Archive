@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.145886152decdf2dbb06.js
-// Retrieved at 11/17/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.aecaddfa5351b9f48057.js
+// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, r) {
@@ -1314,7 +1314,7 @@
 			const I = e => {
 				return Object(C.c)(e, {
 					experimentEligibilitySelector: C.a,
-					experimentName: y.qf
+					experimentName: y.rf
 				}) === y.Md
 			};
 			var O = r("./src/reddit/selectors/recapGame.ts"),
@@ -1987,7 +1987,7 @@
 						if (!t.contextId) return;
 						const r = Object(c.a)(t.contextId) ? Object(b.G)(e, {
 							postId: t.contextId
-						}) : Object(u.b)(e, {
+						}) : Object(u.c)(e, {
 							commentId: t.contextId
 						});
 						return Object(h.b)(e, null == r ? void 0 : r.authorId, t.subredditId)
@@ -2395,7 +2395,7 @@
 				b = r("./src/reddit/selectors/commentSelector.ts"),
 				f = r("./src/reddit/selectors/subreddit.ts");
 			const v = (e, t) => {
-				const r = Object(b.b)(e, t),
+				const r = Object(b.c)(e, t),
 					s = Object(f.N)(e, t);
 				return {
 					comment: r,
@@ -2434,7 +2434,7 @@
 				}
 			}));
 			const g = (e, t) => {
-				const r = Object(b.b)(e, t),
+				const r = Object(b.c)(e, t),
 					s = Object(f.N)(e, t);
 				return {
 					comment: r,
@@ -6313,4 +6313,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.145886152decdf2dbb06.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.aecaddfa5351b9f48057.js.map

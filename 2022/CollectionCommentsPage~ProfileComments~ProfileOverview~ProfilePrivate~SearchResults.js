@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.56f66f2210deeb41a3c3.js
-// Retrieved at 11/21/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.01038b7d78a1c1fa8815.js
+// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -718,7 +718,7 @@
 					let {
 						gqlContext: d
 					} = a;
-					const m = Object(b.b)(i(), {
+					const m = Object(b.c)(i(), {
 						commentId: e
 					});
 					if (!m) return;
@@ -2611,11 +2611,11 @@
 				s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(o.a)(e => Object(r.c)(e, {
-					experimentName: s.ig,
+					experimentName: s.jg,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				a = Object(o.a)(i, e => e === s.ag)
+				a = Object(o.a)(i, e => e === s.bg)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.56f66f2210deeb41a3c3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.01038b7d78a1c1fa8815.js.map

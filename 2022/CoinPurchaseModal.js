@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.6705128a46266a15cd27.js
-// Retrieved at 11/17/2022, 12:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.21593ff54ca7f34af116.js
+// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal", "gildActions"], {
 		"./src/reddit/actions/economics/powerups/helpers.ts": function(e, t, a) {
@@ -139,7 +139,7 @@
 				Y = Object(s.a)(J.v),
 				V = (e, t) => async (a, s) => {
 					const n = s(),
-						c = !Object(Q.a)(e) && Object(k.f)(n, {
+						c = !Object(Q.a)(e) && Object(k.g)(n, {
 							commentId: e
 						});
 					a(ee());
@@ -265,7 +265,7 @@
 						id: a
 					} = t, r = Object(Q.a)(a) ? Object(A.G)(e, {
 						postId: a
-					}) : Object(k.b)(e, {
+					}) : Object(k.c)(e, {
 						commentId: a
 					}), s = Object(N.l)(e), n = e.gild, {
 						isAnonymous: c
@@ -1949,4 +1949,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.6705128a46266a15cd27.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.21593ff54ca7f34af116.js.map

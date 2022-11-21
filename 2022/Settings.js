@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.626ea5db525869783aae.js
-// Retrieved at 11/17/2022, 8:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.ad72077d1aef44e98b3f.js
+// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -2657,7 +2657,7 @@
 				h = n("./src/reddit/selectors/commentSelector.ts"),
 				f = n("./src/reddit/selectors/subreddit.ts");
 			const g = (e, t) => {
-				const n = Object(h.b)(e, t),
+				const n = Object(h.c)(e, t),
 					s = Object(f.N)(e, t);
 				return {
 					comment: n,
@@ -2696,7 +2696,7 @@
 				}
 			}));
 			const _ = (e, t) => {
-				const n = Object(h.b)(e, t),
+				const n = Object(h.c)(e, t),
 					s = Object(f.N)(e, t);
 				return {
 					comment: n,
@@ -12516,7 +12516,7 @@
 					if (Object(f.g)(e, {
 							subredditId: t
 						})) return !0;
-					const s = "replyToPost" !== n && Object(p.b)(e, {
+					const s = "replyToPost" !== n && Object(p.c)(e, {
 						commentId: n
 					});
 					return !(!s || !Object(r.a)(s))
@@ -12537,7 +12537,7 @@
 					return !!V(e, t) || o && r
 				},
 				Q = (e, t) => {
-					const n = "replyToPost" !== t && Object(p.b)(e, {
+					const n = "replyToPost" !== t && Object(p.c)(e, {
 						commentId: t
 					});
 					if (n && Object(r.b)(n)) return !0
@@ -12730,4 +12730,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.626ea5db525869783aae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.ad72077d1aef44e98b3f.js.map

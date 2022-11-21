@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.9304e854c8bba48e5329.js
-// Retrieved at 11/17/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.0a58284b0877e74fb585.js
+// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -623,7 +623,7 @@
 							} = e;
 							return t
 						}),
-						o = Object(b.d)(s, {
+						o = Object(b.e)(s, {
 							commentIds: i
 						}),
 						a = null === (r = o.find(e => e && e.subredditId)) || void 0 === r ? void 0 : r.subredditId;
@@ -4185,7 +4185,7 @@
 						onClick: g ? _ : void 0,
 						headerButton: i.a.createElement("div", {
 							className: bt.a.headerButtonsContainer
-						}, !z && v && C && l !== Le.Oe.NewModule && i.a.createElement(a.a, {
+						}, !z && v && C && l !== Le.Pe.NewModule && i.a.createElement(a.a, {
 							className: bt.a.ModToolsLink,
 							to: C.posts ? `${v.url}about/modqueue` : `${v.url}about/`,
 							onClick: this.onClickModTools
@@ -6033,4 +6033,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.9304e854c8bba48e5329.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.0a58284b0877e74fb585.js.map

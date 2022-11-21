@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CrisisFlow-CrisisFlowPage.71631ab2458fbe7a8521.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CrisisFlow-CrisisFlowPage.5ffd2492801a4f62d89f.js
+// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CrisisFlow-CrisisFlowPage"], {
 		"./src/reddit/actions/reportFlow/index.ts": function(e, t, s) {
@@ -101,7 +101,7 @@
 				I = s.n(S);
 			const {
 				fbt: A
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), y = g.a.div("CrisisImageContainer", x.a), D = g.a.h2("CrisisTitle", x.a), N = g.a.p("CrisisDescription", x.a), z = g.a.div("CrisisOtherActions", I.a), V = g.a.h4("CrisisOtherActionsTitle", I.a), q = g.a.div("CrisisLinkIconContainer", I.a), B = g.a.div("CrisisLinkText", I.a), Y = g.a.h3("CrisisLinkTitle", I.a), $ = g.a.p("CrisisLinkDescription", I.a);
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), y = g.a.div("CrisisImageContainer", x.a), D = g.a.h2("CrisisTitle", x.a), N = g.a.p("CrisisDescription", x.a), z = g.a.div("CrisisOtherActions", I.a), V = g.a.h4("CrisisOtherActionsTitle", I.a), q = g.a.div("CrisisLinkIconContainer", I.a), Y = g.a.div("CrisisLinkText", I.a), B = g.a.h3("CrisisLinkTitle", I.a), $ = g.a.p("CrisisLinkDescription", I.a);
 			var M = e => i.a.createElement("div", {
 					className: I.a.CrisisThankYouPage
 				}, i.a.createElement(y, null, i.a.createElement(O.a, {
@@ -116,7 +116,7 @@
 					href: "https://www.reddithelp.com/en/categories/rules-reporting/suicide-response/what-do-i-do-if-someone-talks-about-seriously-hurting",
 					target: "_blank",
 					className: I.a.CrisisLink
-				}, i.a.createElement(q, null, i.a.createElement(T.a, null)), i.a.createElement(B, null, i.a.createElement(Y, null, A._("Learn how to help someone in crisis", null, {
+				}, i.a.createElement(q, null, i.a.createElement(T.a, null)), i.a.createElement(Y, null, i.a.createElement(B, null, A._("Learn how to help someone in crisis", null, {
 					hk: "3HohFx"
 				})), i.a.createElement($, null, A._("Get advice on what you can say and how to be supportive.", null, {
 					hk: "1NHS5d"
@@ -126,7 +126,7 @@
 					href: "https://www.reddithelp.com/en/categories/rules-reporting/suicide-response/how-do-i-get-myself-support-after-helping-someone",
 					target: "_blank",
 					className: I.a.CrisisLink
-				}, i.a.createElement(q, null, i.a.createElement(j.a, null)), i.a.createElement(B, null, i.a.createElement(Y, null, A._("Get yourself support", null, {
+				}, i.a.createElement(q, null, i.a.createElement(j.a, null)), i.a.createElement(Y, null, i.a.createElement(B, null, A._("Get yourself support", null, {
 					hk: "kTT0U"
 				})), i.a.createElement($, null, A._("If this has brought up difficult emotions, there are people and resources here for you too.", null, {
 					hk: "37R4JZ"
@@ -498,8 +498,7 @@
 			}, i.a.createElement("path", {
 				fillRule: "evenodd",
 				clipRule: "evenodd",
-				d: "M12.504 1.40581C10.8548 0.436577 8.91582 0.0822804 7.03046 0.405669C5.1451 0.729058 3.43503 1.70926 2.20312 3.17267C0.971219 4.63608 0.296983 6.48826 0.299833 8.40115H0.299805L0.299872 8.40828C0.313102 9.81313 0.695242 11.187 1.40423 12.3936L0.35366 15.2932C0.235566 15.6192 0.315178 15.984 0.558332 16.2311C0.801486 16.4782 1.16495 16.5636 1.49275 16.4508L4.41155 15.4461C4.8205 15.6752 5.24681 15.8723 5.68667 16.0356C6.15267 16.2085 6.67064 15.971 6.84359 15.505C7.01655 15.039 6.77899 14.521 6.31299 14.348C5.85073 14.1765 5.40714 13.9583 4.98911 13.6968C4.75881 13.5527 4.47577 13.5204 4.21892 13.6088L2.68747 14.1359L3.246 12.5944C3.34354 12.3252 3.30716 12.0256 3.14802 11.7876C2.47615 10.7827 2.1119 9.60363 2.09983 8.3949C2.09845 6.90836 2.62279 5.46917 3.58017 4.33187C4.53832 3.19367 5.86837 2.43129 7.33476 2.17976C8.80115 1.92824 10.3092 2.2038 11.5919 2.95764C12.8746 3.71149 13.8491 4.89497 14.3428 6.29846C14.5078 6.76735 15.0216 7.01375 15.4905 6.84881C15.9594 6.68386 16.2058 6.17004 16.0408 5.70115C15.4061 3.89665 14.1531 2.37504 12.504 1.40581ZM18.8305 8.17201C17.1805 7.45435 15.3385 7.30651 13.5952 7.75182C11.8518 8.19714 10.3064 9.21026 9.20265 10.6313C8.09895 12.0524 7.49983 13.8005 7.49983 15.5998H7.49979L7.49987 15.6083C7.5131 17.0132 7.89524 18.387 8.60423 19.5937L7.55365 22.4932C7.43556 22.8192 7.51517 23.184 7.75833 23.4311C8.00148 23.6782 8.36494 23.7637 8.69274 23.6508L11.6074 22.6476C13.0373 23.4576 14.6834 23.8153 16.3272 23.6671C18.1192 23.5055 19.8065 22.7519 21.1227 21.525C22.4389 20.2982 23.3092 18.668 23.5961 16.8917C23.8831 15.1154 23.5705 13.2941 22.7075 11.7152C21.8446 10.1363 20.4805 8.88968 18.8305 8.17201ZM14.0406 9.49583C15.3966 9.14947 16.8292 9.26445 18.1126 9.82264C19.3959 10.3808 20.4569 11.3504 21.1281 12.5785C21.7992 13.8065 22.0424 15.2231 21.8192 16.6046C21.596 17.9862 20.9191 19.2541 19.8954 20.2083C18.8717 21.1625 17.5594 21.7487 16.1655 21.8744C14.7717 22.0001 13.3757 21.658 12.1978 20.9023C11.9661 20.7537 11.6792 20.7192 11.4189 20.8088L9.88747 21.336L10.446 19.7944C10.5435 19.5252 10.5072 19.2256 10.348 18.9876C9.67627 17.9829 9.31203 16.8041 9.29983 15.5956C9.30077 14.1976 9.76668 12.8396 10.6242 11.7354C11.4827 10.6302 12.6847 9.84218 14.0406 9.49583Z",
-				fill: "#1A1A1B"
+				d: "M12.504 1.40581C10.8548 0.436577 8.91582 0.0822804 7.03046 0.405669C5.1451 0.729058 3.43503 1.70926 2.20312 3.17267C0.971219 4.63608 0.296983 6.48826 0.299833 8.40115H0.299805L0.299872 8.40828C0.313102 9.81313 0.695242 11.187 1.40423 12.3936L0.35366 15.2932C0.235566 15.6192 0.315178 15.984 0.558332 16.2311C0.801486 16.4782 1.16495 16.5636 1.49275 16.4508L4.41155 15.4461C4.8205 15.6752 5.24681 15.8723 5.68667 16.0356C6.15267 16.2085 6.67064 15.971 6.84359 15.505C7.01655 15.039 6.77899 14.521 6.31299 14.348C5.85073 14.1765 5.40714 13.9583 4.98911 13.6968C4.75881 13.5527 4.47577 13.5204 4.21892 13.6088L2.68747 14.1359L3.246 12.5944C3.34354 12.3252 3.30716 12.0256 3.14802 11.7876C2.47615 10.7827 2.1119 9.60363 2.09983 8.3949C2.09845 6.90836 2.62279 5.46917 3.58017 4.33187C4.53832 3.19367 5.86837 2.43129 7.33476 2.17976C8.80115 1.92824 10.3092 2.2038 11.5919 2.95764C12.8746 3.71149 13.8491 4.89497 14.3428 6.29846C14.5078 6.76735 15.0216 7.01375 15.4905 6.84881C15.9594 6.68386 16.2058 6.17004 16.0408 5.70115C15.4061 3.89665 14.1531 2.37504 12.504 1.40581ZM18.8305 8.17201C17.1805 7.45435 15.3385 7.30651 13.5952 7.75182C11.8518 8.19714 10.3064 9.21026 9.20265 10.6313C8.09895 12.0524 7.49983 13.8005 7.49983 15.5998H7.49979L7.49987 15.6083C7.5131 17.0132 7.89524 18.387 8.60423 19.5937L7.55365 22.4932C7.43556 22.8192 7.51517 23.184 7.75833 23.4311C8.00148 23.6782 8.36494 23.7637 8.69274 23.6508L11.6074 22.6476C13.0373 23.4576 14.6834 23.8153 16.3272 23.6671C18.1192 23.5055 19.8065 22.7519 21.1227 21.525C22.4389 20.2982 23.3092 18.668 23.5961 16.8917C23.8831 15.1154 23.5705 13.2941 22.7075 11.7152C21.8446 10.1363 20.4805 8.88968 18.8305 8.17201ZM14.0406 9.49583C15.3966 9.14947 16.8292 9.26445 18.1126 9.82264C19.3959 10.3808 20.4569 11.3504 21.1281 12.5785C21.7992 13.8065 22.0424 15.2231 21.8192 16.6046C21.596 17.9862 20.9191 19.2541 19.8954 20.2083C18.8717 21.1625 17.5594 21.7487 16.1655 21.8744C14.7717 22.0001 13.3757 21.658 12.1978 20.9023C11.9661 20.7537 11.6792 20.7192 11.4189 20.8088L9.88747 21.336L10.446 19.7944C10.5435 19.5252 10.5072 19.2256 10.348 18.9876C9.67627 17.9829 9.31203 16.8041 9.29983 15.5956C9.30077 14.1976 9.76668 12.8396 10.6242 11.7354C11.4827 10.6302 12.6847 9.84218 14.0406 9.49583Z"
 			}))
 		},
 		"./src/reddit/icons/svgs/Person/index.tsx": function(e, t, s) {
@@ -574,4 +573,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CrisisFlow-CrisisFlowPage.71631ab2458fbe7a8521.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CrisisFlow-CrisisFlowPage.5ffd2492801a4f62d89f.js.map
