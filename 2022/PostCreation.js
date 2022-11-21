@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.54f1a1ee0f392aaa2a67.js
-// Retrieved at 11/17/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.fea69c873625051b7674.js
+// Retrieved at 11/21/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -6359,12 +6359,12 @@
 						on: D
 					})), i.bucketed && s.a.createElement(s.a.Fragment, null, !L && s.a.createElement("span", {
 						className: q.a.verticalDivider
-					}, "|"), null == n && s.a.createElement("div", null, s.a.createElement(T.b, {
+					}, "|"), null == n && s.a.createElement("div", null, s.a.createElement(T.c, {
 						experiment: i,
 						commentId: n,
 						prevLocation: f,
 						postId: this.props.postId
-					})))), _ && s.a.createElement("div", {
+					})))), _ && !i.bucketed && s.a.createElement("div", {
 						className: q.a.containerRow
 					}, s.a.createElement(X, {
 						changeHighlightSort: e,
@@ -22767,13 +22767,15 @@
 		"./src/reddit/controls/Search/CommentSearch/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return T
-			})), n.d(t, "c", (function() {
-				return P
-			})), n.d(t, "d", (function() {
-				return N
+				return S
 			})), n.d(t, "b", (function() {
-				return M
+				return T
+			})), n.d(t, "d", (function() {
+				return I
+			})), n.d(t, "e", (function() {
+				return P
+			})), n.d(t, "c", (function() {
+				return N
 			}));
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./node_modules/react/index.js"),
@@ -22784,154 +22786,155 @@
 				d = n("./src/lib/classNames/index.ts"),
 				l = n("./src/lib/constants/index.ts"),
 				u = n("./src/lib/makeSearchKey/index.ts"),
-				m = n("./src/lib/search/index.ts"),
-				p = n("./src/reddit/actions/pages/search/index.ts"),
-				h = n("./src/reddit/constants/keycodes.ts"),
-				b = n("./src/reddit/constants/parameters.ts"),
-				f = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				g = n("./src/reddit/helpers/path/index.ts"),
-				v = n("./src/reddit/helpers/search/SearchTelemetrySource.ts"),
-				E = n("./src/reddit/helpers/trackers/searchResults.ts"),
-				C = n("./src/reddit/hooks/usePageLayer.ts"),
-				x = n("./src/reddit/hooks/useTracking.ts"),
-				y = n("./src/reddit/icons/fonts/index.tsx"),
-				O = n("./src/reddit/selectors/platform.ts"),
-				_ = n("./src/reddit/selectors/telemetry.ts"),
-				k = n("./src/reddit/controls/Search/CommentSearch/index.m.less"),
-				j = n.n(k);
-			const S = "SEARCH_BAR_TEST_ID",
-				T = "comment_search-bar",
-				w = "comment-search-button",
-				I = "search-bar-dismiss-button",
-				P = "search/";
+				m = n("./src/reddit/actions/pages/search/index.ts"),
+				p = n("./src/reddit/constants/keycodes.ts"),
+				h = n("./src/reddit/constants/parameters.ts"),
+				b = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				f = n("./src/reddit/helpers/path/index.ts"),
+				g = n("./src/reddit/helpers/search/SearchTelemetrySource.ts"),
+				v = n("./src/reddit/helpers/trackers/searchResults.ts"),
+				E = n("./src/reddit/hooks/usePageLayer.ts"),
+				C = n("./src/reddit/hooks/useTracking.ts"),
+				x = n("./src/reddit/icons/fonts/index.tsx"),
+				y = n("./src/reddit/selectors/platform.ts"),
+				O = n("./src/reddit/selectors/telemetry.ts"),
+				_ = n("./src/reddit/controls/Search/CommentSearch/index.m.less"),
+				k = n.n(_);
+			const j = "SEARCH_BAR_TEST_ID",
+				S = "comment_search-bar",
+				T = "comment-search-button",
+				w = "search-bar-dismiss-button",
+				I = "search/";
 
-			function N(e) {
+			function P(e) {
 				let {
 					searchValue: t,
 					post: n,
 					subreddit: o
 				} = e;
-				const r = Object(m.b)(t);
 				return {
-					[b.z]: r,
-					[b.P]: [l.ic.Comments],
-					[b.C]: "1",
+					[h.z]: t,
+					[h.P]: [l.ic.Comments],
+					[h.C]: "1",
 					...(null == o ? void 0 : o.isNSFW) ? {
-						[b.L]: "1"
+						[h.L]: "1"
 					} : {},
 					...(null == n ? void 0 : n.isNSFW) ? {
-						[b.m]: "1"
+						[h.m]: "1"
 					} : {}
 				}
 			}
 
-			function M(e) {
+			function N(e) {
 				const {
 					expanded: t,
-					bucketed: n
-				} = e.experiment, l = Object(C.a)(), m = Object(x.a)(), b = (null == l ? void 0 : l.queryParams.q) || "", [k, M] = Object(r.useState)(b), [R, D] = Object(r.useState)(t), L = Object(i.d)(), A = Object(r.useRef)(null), F = Object(i.e)(e => Object(f.h)(e, {
-					pageLayer: l
-				})), B = Object(i.e)(e => Object(f.s)(e, {
-					pageLayer: l
-				})), U = Object(i.e)(e => Object(O.j)(e));
-				var K, W;
+					bucketed: n,
+					collapsed: l
+				} = e.experiment, h = Object(E.a)(), _ = Object(C.a)(), N = (null == h ? void 0 : h.queryParams.q) || "", [M, R] = Object(r.useState)(N), [D, L] = Object(r.useState)(t), A = Object(i.d)(), F = Object(r.useRef)(null), B = Object(i.e)(e => Object(b.h)(e, {
+					pageLayer: h
+				})), U = Object(i.e)(e => Object(b.s)(e, {
+					pageLayer: h
+				})), K = Object(i.e)(e => Object(y.j)(e));
+				var W, H, G;
 
-				function H() {
-					m(Object(E.p)(_.a.SearchBar, N({
-						searchValue: k,
-						post: F,
-						subreddit: B
-					}), v.a.SERP, l || void 0))
+				function z() {
+					_(Object(v.p)(O.a.SearchBar, P({
+						searchValue: M,
+						post: B,
+						subreddit: U
+					}), g.a.SERP, h || void 0))
 				}
 
-				function G() {
+				function V() {
 					var t;
-					if (!k.trim() || !F) return;
-					const n = `${new URL(F.permalink).pathname}${P}`,
-						o = N({
-							searchValue: k,
-							post: F,
-							subreddit: B
+					if (!M.trim() || !B) return;
+					const n = `${new URL(B.permalink).pathname}${I}`,
+						o = P({
+							searchValue: M,
+							post: B,
+							subreddit: U
 						});
-					m(Object(E.p)(_.a.FullSearchButton, o, v.a.SERP, l || void 0));
-					const r = Object(u.b)(F.id, void 0, o);
-					L(Object(p.d)({
+					_(Object(v.p)(O.a.FullSearchButton, o, g.a.SERP, h || void 0));
+					const r = Object(u.b)(B.id, void 0, o);
+					A(Object(m.d)({
 						key: r,
 						options: o,
-						subredditName: null == B ? void 0 : B.name,
-						postId: F.id
+						subredditName: null == U ? void 0 : U.name,
+						postId: B.id
 					}));
 					const s = Object(c.a)(n, o);
-					L(Object(a.b)(Object(g.b)(s), {
+					A(Object(a.b)(Object(f.b)(s), {
 						...null === (t = e.prevLocation) || void 0 === t ? void 0 : t.state,
-						isOverlay: U,
+						isOverlay: K,
 						scrollOnLoad: !0
 					}))
 				}
-				return K = A, W = D, s.a.useEffect(() => {
-					function e(e) {
-						K.current && !K.current.contains(e.target) && W(!1)
-					}
-					return document.addEventListener("mousedown", e), () => {
+				return W = F, H = L, G = l, Object(r.useEffect)(() => {
+					if (G) return document.addEventListener("mousedown", e), () => {
 						document.removeEventListener("mousedown", e)
+					};
+
+					function e(e) {
+						W.current && !W.current.contains(e.target) && H(!1)
 					}
-				}, [K]), n ? s.a.createElement("div", {
-					className: j.a.flex
-				}, k || R ? s.a.createElement("div", {
-					"data-testid": T
+				}, [W]), n ? s.a.createElement("div", {
+					className: k.a.flex
+				}, M || D ? s.a.createElement("div", {
+					"data-testid": S
 				}, s.a.createElement("label", {
-					className: Object(d.a)(j.a.flex, j.a.relative)
+					className: Object(d.a)(k.a.flex, k.a.relative)
 				}, s.a.createElement("div", {
-					className: j.a.absolute,
+					className: k.a.absolute,
 					role: "submit",
-					onClick: G
-				}, s.a.createElement(y.a, {
-					className: Object(d.a)(j.a.postIcon, j.a.paddingIcon),
+					onClick: V
+				}, s.a.createElement(x.a, {
+					className: Object(d.a)(k.a.postIcon, k.a.paddingIcon),
 					name: "search"
 				})), s.a.createElement("input", {
-					className: Object(d.a)(j.a.metadataFont, j.a.input),
-					"data-testid": S,
-					id: T,
+					className: Object(d.a)(k.a.metadataFont, k.a.input),
+					"data-testid": j,
+					id: S,
 					type: "search",
 					onChange: e => {
-						M(e.target.value)
+						R(e.target.value)
 					},
-					onClick: H,
+					onClick: z,
 					onKeyPress: function(e) {
-						e.key === h.b.Enter && G()
+						e.key === p.b.Enter && V()
 					},
 					placeholder: o.fbt._("Search comments", null, {
 						hk: "2ObH7B"
 					}),
-					ref: A,
-					value: k
-				}), k && s.a.createElement("button", {
+					ref: F,
+					value: M
+				}), M && s.a.createElement("button", {
 					"aria-label": o.fbt._("Remove search bar text", null, {
 						hk: "4twCsS"
 					}),
-					id: I,
-					className: j.a.dismissButton,
-					"data-testid": I,
-					onClick: () => {
-						M("")
-					}
-				}, s.a.createElement(y.a, {
-					className: j.a.dismissIcon,
-					name: "clear"
-				})))) : s.a.createElement("button", {
-					className: j.a.linkTextColor,
+					id: w,
+					className: k.a.dismissButton,
 					"data-testid": w,
 					onClick: () => {
-						H(), Promise.resolve(D(!0)).then(() => {
+						R("")
+					}
+				}, s.a.createElement(x.a, {
+					className: k.a.dismissIcon,
+					name: "clear"
+				})))) : s.a.createElement("button", {
+					className: k.a.linkTextColor,
+					"data-testid": T,
+					id: T,
+					onClick: () => {
+						z(), Promise.resolve(L(!0)).then(() => {
 							var e;
-							return null === (e = A.current) || void 0 === e ? void 0 : e.focus()
+							return null === (e = F.current) || void 0 === e ? void 0 : e.focus()
 						})
 					}
-				}, s.a.createElement(y.a, {
-					className: Object(d.a)(j.a.searchIcon, j.a.paddingIcon),
+				}, s.a.createElement(x.a, {
+					className: Object(d.a)(k.a.searchIcon, k.a.paddingIcon),
 					name: "search"
 				}), s.a.createElement("span", {
-					className: j.a.actionFont
+					className: k.a.actionFont
 				}, o.fbt._("Search comments", null, {
 					hk: "2ObH7B"
 				})))) : null
@@ -39546,4 +39549,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.54f1a1ee0f392aaa2a67.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.fea69c873625051b7674.js.map
