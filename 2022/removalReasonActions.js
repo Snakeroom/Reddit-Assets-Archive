@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.c8ebe2569439db8d53da.js
-// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.5fa876b088aa52dfe060.js
+// Retrieved at 11/29/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./node_modules/lodash/map.js": function(e, t, s) {
@@ -37,11 +37,11 @@
 			})), s.d(t, "a", (function() {
 				return A
 			})), s.d(t, "e", (function() {
-				return x
-			})), s.d(t, "g", (function() {
 				return I
-			})), s.d(t, "h", (function() {
+			})), s.d(t, "g", (function() {
 				return h
+			})), s.d(t, "h", (function() {
+				return x
 			})), s.d(t, "b", (function() {
 				return y
 			}));
@@ -135,7 +135,7 @@
 							numReports: l.numReports || null
 						}
 					})), Object(c.d)())
-				}, x = (e, t) => async (s, n, r) => {
+				}, I = (e, t) => async (s, n, r) => {
 					let {
 						apiContext: a,
 						gqlContext: d
@@ -170,14 +170,14 @@
 							numReports: m.numReports
 						}
 					})), Object(c.d)())
-				}, I = e => async (t, s, n) => {
+				}, h = e => async (t, s, n) => {
 					let {
 						apiContext: r
 					} = n;
 					const a = s().features.comments.models[e];
 					if (!a) return;
 					const d = a.ignoreReports ? u.k : u.e;
-					t(Object(f.j)({
+					a.ignoreReports || t(A(e)), t(Object(f.j)({
 						[e]: {
 							ignoreReports: !a.ignoreReports
 						}
@@ -193,7 +193,7 @@
 							ignoreReports: a.ignoreReports
 						}
 					}))
-				}, h = (e, t, s) => async (r, a, d) => {
+				}, x = (e, t, s) => async (r, a, d) => {
 					let {
 						gqlContext: c
 					} = d;
@@ -321,7 +321,7 @@
 			})), s.d(t, "submitRemovalReason", (function() {
 				return Ae
 			})), s.d(t, "submitBulkRemovalReason", (function() {
-				return xe
+				return Ie
 			}));
 			var o = s("./node_modules/fbt/lib/FbtPublic.js"),
 				n = s("./src/lib/initializeClient/installReducer.ts"),
@@ -482,22 +482,22 @@
 							return e
 					}
 				},
-				x = Object(r.c)({
+				I = Object(r.c)({
 					api: _,
 					models: S,
 					reasonOrder: v,
 					removedItemIds: A
 				}),
-				I = s("./src/lib/constants/index.ts"),
-				h = s("./src/lib/makeActionCreator/index.ts"),
+				h = s("./src/lib/constants/index.ts"),
+				x = s("./src/lib/makeActionCreator/index.ts"),
 				y = s("./src/lib/makeCommentsPageKey/index.ts"),
 				L = s("./src/lib/makeDraftKey/index.ts"),
 				k = s("./src/reddit/actions/bulkActions/index.ts"),
 				T = s("./src/reddit/actions/comment/index.ts"),
 				N = s("./src/reddit/actions/comment/authoring.ts"),
-				g = s("./src/reddit/actions/comment/moderation.ts"),
-				C = s("./src/reddit/actions/modal.ts"),
-				D = s("./src/reddit/actions/post.ts"),
+				C = s("./src/reddit/actions/comment/moderation.ts"),
+				D = s("./src/reddit/actions/modal.ts"),
+				g = s("./src/reddit/actions/post.ts"),
 				P = s("./src/reddit/actions/toaster.ts"),
 				M = s("./src/reddit/constants/modals.ts"),
 				V = s("./src/lib/makeApiRequest/index.ts"),
@@ -506,7 +506,7 @@
 				U = s("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const F = (e, t) => Object(V.a)(Object(w.a)(e, [B.a]), {
 					endpoint: `${e.apiUrl}/api/v1/modactions/removal_reasons/`,
-					method: I.ob.POST,
+					method: h.ob.POST,
 					type: "json",
 					data: {
 						item_ids: t.itemIds,
@@ -516,7 +516,7 @@
 				}),
 				K = (e, t, s) => Object(V.a)(Object(w.a)(e, [B.a]), {
 					endpoint: Object(U.a)(`${e.apiUrl}/api/v1/modactions/removal_${s}_message/`),
-					method: I.ob.POST,
+					method: h.ob.POST,
 					type: "json",
 					data: t
 				});
@@ -531,12 +531,12 @@
 				Z = s("./src/reddit/selectors/platform.ts");
 			Object(n.a)({
 				features: {
-					removalReasons: x
+					removalReasons: I
 				}
 			});
-			const W = Object(h.a)("REMOVALREASONS__LOAD_PENDING"),
-				Y = Object(h.a)(a),
-				ee = Object(h.a)("REMOVALREASONS__LOAD_FAILED"),
+			const W = Object(x.a)("REMOVALREASONS__LOAD_PENDING"),
+				Y = Object(x.a)(a),
+				ee = Object(x.a)("REMOVALREASONS__LOAD_FAILED"),
 				te = e => async (t, s, o) => {
 					let {
 						apiContext: n
@@ -545,13 +545,13 @@
 					t(W());
 					const a = await ((e, t) => Object(V.a)(Object(w.a)(e, [B.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons.json`,
-						method: I.ob.GET
+						method: h.ob.GET
 					}))(n(), r);
 					a.ok ? t(Y({
 						subredditId: e,
 						response: a.body
 					})) : t(ee(a.error))
-				}, se = Object(h.a)(d), oe = Object(h.a)(c), ne = Object(h.a)(i), re = (e, t) => async (s, n, r) => {
+				}, se = Object(x.a)(d), oe = Object(x.a)(c), ne = Object(x.a)(i), re = (e, t) => async (s, n, r) => {
 					let {
 						apiContext: a
 					} = r;
@@ -559,7 +559,7 @@
 					s(se());
 					const c = await ((e, t, s) => Object(V.a)(Object(w.a)(e, [B.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons`,
-						method: I.ob.POST,
+						method: h.ob.POST,
 						data: s
 					}))(a(), d, t);
 					if (c.ok) {
@@ -579,7 +579,7 @@
 							})
 						}))
 					} else s(ne(c.error))
-				}, ae = Object(h.a)(l), de = Object(h.a)(u), ce = Object(h.a)(m), ie = (e, t) => async (s, n, r) => {
+				}, ae = Object(x.a)(l), de = Object(x.a)(u), ce = Object(x.a)(m), ie = (e, t) => async (s, n, r) => {
 					let {
 						apiContext: a
 					} = r;
@@ -587,7 +587,7 @@
 					s(ae());
 					const c = await ((e, t, s) => Object(V.a)(Object(w.a)(e, [B.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons/${s.id}`,
-						method: I.ob.PUT,
+						method: h.ob.PUT,
 						data: {
 							message: s.message,
 							title: s.title
@@ -602,7 +602,7 @@
 							hk: "28ScuL"
 						})
 					}))) : s(ce(c.error))
-				}, le = Object(h.a)(b), ue = Object(h.a)(p), me = Object(h.a)(O), be = (e, t) => async (s, n, r) => {
+				}, le = Object(x.a)(b), ue = Object(x.a)(p), me = Object(x.a)(O), be = (e, t) => async (s, n, r) => {
 					let {
 						apiContext: a
 					} = r;
@@ -610,7 +610,7 @@
 					s(le());
 					const c = await ((e, t, s) => Object(V.a)(Object(w.a)(e, [B.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons/${s}`,
-						method: I.ob.DELETE
+						method: h.ob.DELETE
 					}))(a(), d, t);
 					c.ok ? (s(ue({
 						subredditId: e,
@@ -621,7 +621,7 @@
 							hk: "4xzgsa"
 						})
 					}))) : s(me(c.error))
-				}, pe = Object(h.a)("REMOVALREASONS__REMOVEDITEMS_SELECTED"), Oe = (e, t) => async (s, o, n) => {
+				}, pe = Object(x.a)("REMOVALREASONS__REMOVEDITEMS_SELECTED"), Oe = (e, t) => async (s, o, n) => {
 					let {
 						apiContext: r
 					} = n;
@@ -629,8 +629,8 @@
 					a.features.removalReasons.reasonOrder[e] && a.features.removalReasons.reasonOrder[e].length > 0 || s(te(e)), s(pe({
 						subredditId: e,
 						itemIds: t
-					})), s(Object(C.i)(M.a.ADD_REMOVAL_REASON))
-				}, Re = Object(h.a)("REMOVALREASONS__SUBMIT_PENDING"), fe = Object(h.a)("REMOVALREASONS__SUBMIT_SUCCESS"), _e = Object(h.a)("REMOVALREASONS__SUBMIT_FAILED"), Ee = Object(h.a)("REMOVALREASONS__MESSAGE_PENDING"), Se = Object(h.a)("REMOVALREASONS__MESSAGE_PRIVATE_SUCCESS"), je = Object(h.a)("REMOVALREASONS__MESSAGE_PUBLIC_SUCCESS"), ve = Object(h.a)("REMOVALREASONS__MESSAGE_FAILED"), Ae = (e, t, s, o, n, r) => async (a, d, c) => {
+					})), s(Object(D.i)(M.a.ADD_REMOVAL_REASON))
+				}, Re = Object(x.a)("REMOVALREASONS__SUBMIT_PENDING"), fe = Object(x.a)("REMOVALREASONS__SUBMIT_SUCCESS"), _e = Object(x.a)("REMOVALREASONS__SUBMIT_FAILED"), Ee = Object(x.a)("REMOVALREASONS__MESSAGE_PENDING"), Se = Object(x.a)("REMOVALREASONS__MESSAGE_PRIVATE_SUCCESS"), je = Object(x.a)("REMOVALREASONS__MESSAGE_PUBLIC_SUCCESS"), ve = Object(x.a)("REMOVALREASONS__MESSAGE_FAILED"), Ae = (e, t, s, o, n, r) => async (a, d, c) => {
 					let {
 						apiContext: i
 					} = c;
@@ -639,7 +639,7 @@
 						m = e[0],
 						b = Object(G.a)(m) ? H.e.Post : H.e.Comment,
 						p = b === H.e.Post ? l.posts.models[m] : l.features.comments.models[m],
-						O = b === H.e.Post ? D.R : T.j;
+						O = b === H.e.Post ? g.R : T.j;
 					if (!p || !u) return !1;
 					a(Re()), a(O({
 						[m]: {
@@ -677,7 +677,7 @@
 											o = l.platform.currentPage && l.platform.currentPage.routeMatch;
 										let n = s && o && Object(J.a)(o, l, l.posts.models[e.postId]);
 										if (n || (n = Object(y.a)(e.postId, null, {
-												sort: I.x,
+												sort: h.x,
 												hasSortParam: !0
 											})), b === H.e.Post) {
 											const s = Object(L.a)(q.c.replyToPost, m);
@@ -690,7 +690,7 @@
 												draftKey: s
 											}));
 											const o = l.postStickiedComments.data[m];
-											a(Object(g.f)({
+											a(Object(C.f)({
 												id: e.id,
 												postId: e.postId,
 												commentsPageKey: n
@@ -727,7 +727,7 @@
 						}
 					}));
 					return !1
-				}, xe = (e, t, s, n, r) => async (a, d, c) => {
+				}, Ie = (e, t, s, n, r) => async (a, d, c) => {
 					let {
 						apiContext: i
 					} = c;
@@ -944,11 +944,6 @@
 				};
 			t.a = r
 		},
-		"./src/reddit/hooks/usePageLayer.ts": function(e, t, s) {
-			"use strict";
-			var o = s("./src/reddit/contexts/PageLayer/index.tsx");
-			t.a = o.gb
-		},
 		"./src/reddit/models/RemovalReason/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
@@ -1010,4 +1005,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.c8ebe2569439db8d53da.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.5fa876b088aa52dfe060.js.map

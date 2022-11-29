@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.55767cbd9551c8a89392.js
-// Retrieved at 11/29/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.30db834d5ed8ccc17953.js
+// Retrieved at 11/29/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3659,11 +3659,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("179627"),
+				buildNumber: Object(r.c)("179636"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1669751311"),
+				buildTimestamp: Object(r.b)("1669753163"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6396,14 +6396,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cf9a20dfbb4cd08056182265cf6797eaf2c1ba143-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c06fe85b896ce65abbb0f6320a75fbd5bf418209a-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "f9a20dfbb4cd08056182265cf6797eaf2c1ba143-production",
+						release: "06fe85b896ce65abbb0f6320a75fbd5bf418209a-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6939,7 +6939,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "f9a20dfbb4cd08056182265cf6797eaf2c1ba143-production",
+							releaseClient: "06fe85b896ce65abbb0f6320a75fbd5bf418209a-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -12526,7 +12526,7 @@
 					const o = i().posts.models[e];
 					if (!o) return;
 					const d = o.ignoreReports ? $.v : $.k;
-					t(xe({
+					o.ignoreReports || t(et(e)), t(xe({
 						[e]: {
 							ignoreReports: !o.ignoreReports
 						}
@@ -20145,15 +20145,17 @@
 				},
 				Ne = e => e ? e.url : "",
 				Ae = (e, t) => {
-					let i, {
-						pageLayer: n
+					let {
+						pageLayer: i
 					} = t;
-					if (void 0 !== (i = void 0 === n ? e.platform.currentPage : n)) {
-						const t = Q(i);
+					var n, r, s, d, a;
+					let l;
+					if (void 0 !== (l = void 0 === i ? null === (n = null == e ? void 0 : e.platform) || void 0 === n ? void 0 : n.currentPage : i)) {
+						const t = Q(l);
 						if (t === o.Sb.POST_CREATION) return p.g.Large;
 						if (t === o.Sb.SUBREDDIT_WIKI) return p.g.Classic;
 						if (t === o.Sb.EXPLORE) return p.g.Classic;
-						if (t === o.Sb.TOPIC) return e.user.prefs.layout ? p.b[e.user.prefs.layout] : p.g.Large;
+						if (t === o.Sb.TOPIC) return (null === (s = null === (r = null == e ? void 0 : e.user) || void 0 === r ? void 0 : r.prefs) || void 0 === s ? void 0 : s.layout) ? p.b[e.user.prefs.layout] : p.g.Large;
 						if (t === o.Sb.PROFILE_SNOOBUILDER) return p.g.Classic;
 						if (t === o.Sb.SUBREDDIT && e.user.prefs.rememberCommunityLayout) {
 							const t = ((e, t) => {
@@ -20169,19 +20171,19 @@
 								}
 								return null
 							})(e, {
-								pageLayer: n
+								pageLayer: i
 							});
 							if (t) return p.b[t]
 						}
 						if (o.Hb.has(t)) {
 							if (t === o.Sb.PROFILE_OVERVIEW) return p.g.Large;
 							return je(e, {
-								pageLayer: n
+								pageLayer: i
 							}) ? t === o.Sb.PROFILE_POSTS || t === o.Sb.PROFILE_PRIVATE ? p.g.Classic : p.g.Compact : p.g.Classic
 						}
 						if (t === o.Sb.POST_SET) return p.g.Classic
 					}
-					return e.user.prefs.layout ? p.b[e.user.prefs.layout] : p.g.Classic
+					return (null === (a = null === (d = null == e ? void 0 : e.user) || void 0 === d ? void 0 : d.prefs) || void 0 === a ? void 0 : a.layout) ? p.b[e.user.prefs.layout] : p.g.Classic
 				},
 				je = (e, t) => {
 					let {
@@ -50716,4 +50718,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.55767cbd9551c8a89392.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.30db834d5ed8ccc17953.js.map

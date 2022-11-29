@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.98ea1664ddf6e43577db.js
-// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.d102b0e4ed1c92f533c1.js
+// Retrieved at 11/29/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -46,7 +46,7 @@
 		"./src/reddit/components/ClassicPost/Placeholder.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return y
+				return P
 			}));
 			var i = s("./node_modules/react/index.js"),
 				n = s.n(i),
@@ -76,8 +76,8 @@
 				v = Object(r.c)({
 					isFakeSubreddit: c.A
 				}),
-				P = Object(o.b)(v),
-				y = e => {
+				y = Object(o.b)(v),
+				P = e => {
 					const t = {
 						interactive: !1,
 						voteState: m.a.notVoted
@@ -90,11 +90,11 @@
 						key: "d"
 					}, t)))
 				},
-				x = () => n.a.createElement(y, null, n.a.createElement("div", {
+				x = () => n.a.createElement(P, null, n.a.createElement("div", {
 					className: g.a.emptyScore,
 					key: "s"
 				}));
-			t.b = C(P(e => n.a.createElement("div", {
+			t.b = C(y(e => n.a.createElement("div", {
 				className: Object(a.a)(e.className, p.a.classicPostStyles, p.a.classicAndCompactPlaceholderStyles)
 			}, n.a.createElement(l.b, null, n.a.createElement(x, null)), n.a.createElement("div", {
 				className: g.a.mainBody
@@ -226,8 +226,8 @@
 				v = Object(r.c)({
 					isFakeSubreddit: c.A
 				}),
-				P = Object(o.b)(v),
-				y = e => {
+				y = Object(o.b)(v),
+				P = e => {
 					const t = {
 						interactive: !1,
 						voteState: m.a.notVoted
@@ -253,11 +253,11 @@
 				}), n.a.createElement("div", {
 					className: Object(a.a)(g.a.ellipsis, Object(h.b)(e))
 				}));
-			t.a = C(P(e => n.a.createElement("div", {
+			t.a = C(y(e => n.a.createElement("div", {
 				className: Object(a.a)(e.className, p.a.compactPostStyles, p.a.classicAndCompactPlaceholderStyles)
 			}, n.a.createElement("div", {
 				className: g.a.wrapper
-			}, n.a.createElement(y, f({
+			}, n.a.createElement(P, f({
 				key: "c"
 			}, e)), n.a.createElement("div", {
 				key: "a",
@@ -436,9 +436,9 @@
 		"./src/reddit/components/PostLeftRail/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return m
+				return b
 			})), s.d(t, "c", (function() {
-				return u
+				return g
 			}));
 			var i = s("./node_modules/react/index.js"),
 				n = s.n(i),
@@ -446,23 +446,30 @@
 				r = s("./src/lib/classNames/index.ts"),
 				a = s("./src/lib/CSSVariableProvider/withTheme.tsx"),
 				l = s("./src/reddit/constants/colors.ts"),
-				d = s("./src/reddit/selectors/modQueue.ts"),
-				c = s("./src/reddit/components/PostLeftRail/index.m.less"),
-				h = s.n(c);
-			const m = 40,
-				u = e => e.isRemoved ? l.a.removed : e.isReported ? l.a.reported : "transparent",
-				p = Object(a.a)(e => {
-					const t = Object(o.e)(d.b) ? "transparent" : u(e),
-						s = {
-							width: `${m}px`,
-							borderLeft: `4px solid ${t}`
+				d = s("./src/reddit/constants/postLayout.ts"),
+				c = s("./src/reddit/contexts/PageLayer/selectors.ts"),
+				h = s("./src/reddit/hooks/usePageLayer.ts"),
+				m = s("./src/reddit/selectors/modQueue.ts"),
+				u = s("./src/reddit/components/PostLeftRail/index.m.less"),
+				p = s.n(u);
+			const b = 40,
+				g = e => e.isRemoved ? l.a.removed : e.isReported ? l.a.reported : "transparent",
+				f = Object(a.a)(e => {
+					const t = Object(h.a)(),
+						s = Object(o.e)(e => d.e[Object(c.V)(e, {
+							pageLayer: t
+						})] === d.d.Card),
+						i = Object(o.e)(e => Object(m.b)(e, s)) ? "transparent" : g(e),
+						a = {
+							width: `${b}px`,
+							borderLeft: `4px solid ${i}`
 						};
 					return n.a.createElement("div", {
-						className: Object(r.a)(h.a.postLeftRail, e.className),
-						style: e.withoutComputedStyles ? {} : s
+						className: Object(r.a)(p.a.postLeftRail, e.className),
+						style: e.withoutComputedStyles ? {} : a
 					}, e.children)
 				});
-			t.b = p
+			t.b = f
 		},
 		"./src/reddit/components/PostList/LoadMore.m.less": function(e, t, s) {
 			e.exports = {
@@ -607,8 +614,8 @@
 				f = s("./src/lib/constants/index.ts"),
 				C = s("./src/lib/fastdom/index.ts"),
 				v = s("./src/lib/opener/index.ts"),
-				P = s("./src/lib/sentry/index.ts"),
-				y = s("./node_modules/react-redux/es/index.js"),
+				y = s("./src/lib/sentry/index.ts"),
+				P = s("./node_modules/react-redux/es/index.js"),
 				x = s("./src/reddit/actions/post.ts"),
 				w = s("./src/reddit/actions/subreddit/muting.ts"),
 				O = s("./src/reddit/actions/toaster.ts"),
@@ -720,7 +727,7 @@
 					subredditName: s,
 					closeThankYouView: i
 				} = e;
-				const n = Object(y.d)(),
+				const n = Object(P.d)(),
 					[o, r] = Object(h.useState)(!1),
 					a = () => {
 						r(e => !e)
@@ -756,10 +763,10 @@
 						parentPost: n
 					} = e;
 					var o;
-					const r = Object(y.d)(),
+					const r = Object(P.d)(),
 						a = Object(V.a)(),
 						l = Object(h.useRef)(!1),
-						d = Object(y.e)(A.a),
+						d = Object(P.e)(A.a),
 						{
 							hideRecommendationFooter: c,
 							recommendationFooterView: u,
@@ -771,7 +778,7 @@
 							subredditId: C,
 							subredditName: v
 						} = (null === (o = i.recommendationContext) || void 0 === o ? void 0 : o.source) || {},
-						P = Object(y.e)(e => Object(H.i)(e, i, n)),
+						y = Object(P.e)(e => Object(H.i)(e, i, n)),
 						w = Object(h.useCallback)(() => {
 							const e = !d,
 								t = l.current ? () => r(Object(x.eb)(f, !0, !1, e)) : c,
@@ -817,7 +824,7 @@
 						seeLessOfThisPostClick: O
 					}), u === R.a.MuteThankYouView && m.a.createElement(K, {
 						subredditId: b,
-						subredditName: P,
+						subredditName: y,
 						closeThankYouView: w
 					}), u === R.a.ThankYouView && m.a.createElement(z, null)) : null
 				}),
@@ -856,13 +863,13 @@
 				ue = s.n(me);
 			const {
 				fbt: pe
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), be = 500, ge = 20, fe = new de.a(be), Ce = new de.a(be), ve = new de.a(be), Pe = {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), be = 500, ge = 20, fe = new de.a(be), Ce = new de.a(be), ve = new de.a(be), ye = {
 				LARGE: 1,
 				MEDIUM: 1,
 				CLASSIC: 3,
 				COMPACT: 5,
 				SEARCH: 3
-			}, ye = (e, t, s, i, n, o, r, a, l) => {
+			}, Pe = (e, t, s, i, n, o, r, a, l) => {
 				const d = `entered-${e}-${t}-${s?`last-${i}-${n}`:""}-${o}`;
 				let c = fe.get(d);
 				return void 0 === c && (c = () => {
@@ -1071,7 +1078,7 @@
 						listingBelowVariant: b,
 						listingKey: C,
 						listingName: v,
-						pageLayer: y,
+						pageLayer: P,
 						pageReferrer: x,
 						redditStyle: w,
 						shouldHideFlair: O,
@@ -1087,8 +1094,8 @@
 							postsById: L
 						} = this.props, N = L[e], V = N.crosspostRootId && L[N.crosspostRootId] ? L[N.crosspostRootId] : N;
 						let F;
-						N.crosspostRootId && L[N.crosspostRootId] && (F = N), N.crosspostRootId && !L[N.crosspostRootId] && P.c.withScope(e => {
-							e.setExtra("errorType", f.v.API), e.setExtra("description", `Post ${N.id} is crosspost of ${N.crosspostRootId}, but ` + `${N.crosspostRootId} details are missing in the state`), P.c.captureMessage("Crosspost parent details are missing")
+						N.crosspostRootId && L[N.crosspostRootId] && (F = N), N.crosspostRootId && !L[N.crosspostRootId] && y.c.withScope(e => {
+							e.setExtra("errorType", f.v.API), e.setExtra("description", `Post ${N.id} is crosspost of ${N.crosspostRootId}, but ` + `${N.crosspostRootId} details are missing in the state`), y.c.captureMessage("Crosspost parent details are missing")
 						});
 						const A = this.props.postComponentForLayout({
 							isCrosspost: !!N.crosspostRootId,
@@ -1097,7 +1104,7 @@
 						});
 						let H = `post-list-item-[layout: ${i}]-[postId: ${e}]`;
 						this.props.listingBelowVariant && C && (H += `--${C}`);
-						const B = ye(e, i, s, C, v, x, this.props, t, this.props.hostPostData),
+						const B = Pe(e, i, s, C, v, x, this.props, t, this.props.hostPostData),
 							W = xe(e, i, this.props, t),
 							U = we(e, this.props, l),
 							q = V.media && V.media.type === oe.o.EMBED ? V.media.provider : null,
@@ -1114,7 +1121,7 @@
 								let {
 									className: u,
 									height: f,
-									width: P,
+									width: y,
 									remeasure: x,
 									setScrollerChildRef: I,
 									shouldLoadInitially: j
@@ -1123,7 +1130,7 @@
 									key: H,
 									hideRecommendationContext: !M
 								}, m.a.createElement(A, {
-									availableWidth: P,
+									availableWidth: y,
 									className: Object(g.a)(u, this.props.postClassName),
 									currentProfileName: n,
 									eventFactory: this.eventFactoryHandler,
@@ -1148,7 +1155,7 @@
 									onceInViewport: S,
 									onClickPost: U,
 									onSizeChanged: x,
-									pageLayer: y,
+									pageLayer: P,
 									postId: e,
 									postIds: E,
 									redditStyle: w,
@@ -1210,7 +1217,7 @@
 						className: n,
 						isLoading: !!t,
 						layout: i,
-						countOverride: Pe[i]
+						countOverride: ye[i]
 					}), !!e && m.a.createElement(X.a, {
 						apiError: e,
 						onTryAgain: o
@@ -1306,19 +1313,19 @@
 			const f = 500,
 				C = 1e3,
 				v = 40;
-			var P;
+			var y;
 			! function(e) {
 				e.Max10 = "0-10", e.Max20 = "11-20", e.Max30 = "21-30", e.Max40 = "31-40", e.Max50 = "41-50", e.Max60 = "51-60"
-			}(P || (P = {}));
-			const y = () => ({
-					[P.Max10]: 0,
-					[P.Max20]: 0,
-					[P.Max30]: 0,
-					[P.Max40]: 0,
-					[P.Max50]: 0,
-					[P.Max60]: 0
+			}(y || (y = {}));
+			const P = () => ({
+					[y.Max10]: 0,
+					[y.Max20]: 0,
+					[y.Max30]: 0,
+					[y.Max40]: 0,
+					[y.Max50]: 0,
+					[y.Max60]: 0
 				}),
-				x = [P.Max10, P.Max20, P.Max30, P.Max40, P.Max50, P.Max60],
+				x = [y.Max10, y.Max20, y.Max30, y.Max40, y.Max50, y.Max60],
 				w = e => ({
 					eventHandler: e
 				});
@@ -1333,7 +1340,7 @@
 				let o, r, a;
 				const l = () => {
 						if (n.length < v) return;
-						const e = y(),
+						const e = P(),
 							t = Math.min(C, n.length),
 							i = n.splice(0, t);
 						n.splice(0, n.length);
@@ -1341,9 +1348,9 @@
 						for (let s = i.shift(); i.length > 0; s = i.shift()) {
 							const t = i[0] - s,
 								n = Math.min(60, Math.ceil(1e3 / t));
-							e[n <= 10 ? P.Max10 : 60 === n ? P.Max60 : x[Math.ceil(n / 10) - 1]] += t
+							e[n <= 10 ? y.Max10 : 60 === n ? y.Max60 : x[Math.ceil(n / 10) - 1]] += t
 						}
-						const r = y();
+						const r = P();
 						for (const s in e) r[s] = e[s] / o;
 						s(r)
 					},
@@ -2150,8 +2157,8 @@
 				C = s("./src/reddit/components/LargePost/placeholder.m.less"),
 				v = s.n(C);
 
-			function P() {
-				return (P = Object.assign || function(e) {
+			function y() {
+				return (y = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var i in s) Object.prototype.hasOwnProperty.call(s, i) && (e[i] = s[i])
@@ -2159,7 +2166,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const y = Object(u.v)(),
+			const P = Object(u.v)(),
 				x = Object(d.c)({
 					isFakeSubreddit: u.A
 				}),
@@ -2171,21 +2178,21 @@
 					};
 					return a.a.createElement("div", {
 						className: v.a.emptyVerticalVotes
-					}, a.a.createElement(m.d, P({
+					}, a.a.createElement(m.d, y({
 						key: "u"
 					}, t)), a.a.createElement("div", {
 						className: v.a.emptyScore,
 						key: "s"
-					}), a.a.createElement(m.c, P({
+					}), a.a.createElement(m.c, y({
 						key: "d"
 					}, t)))
 				},
-				R = e => a.a.createElement("div", P({
+				R = e => a.a.createElement("div", y({
 					className: Object(c.a)(v.a.subredditIcon, Object(p.a)({
 						isLoading: !0
 					}))
 				}, e));
-			var I = y(w(e => {
+			var I = P(w(e => {
 					let {
 						className: t,
 						dispatch: s,
@@ -2256,9 +2263,9 @@
 			s.d(t, "a", (function() {
 				return g
 			})), s.d(t, "c", (function() {
-				return P
-			})), s.d(t, "b", (function() {
 				return y
+			})), s.d(t, "b", (function() {
+				return P
 			}));
 			var i = s("./node_modules/@loadable/component/dist/loadable.esm.js"),
 				n = s("./node_modules/react/index.js"),
@@ -2377,7 +2384,7 @@
 				f = ["https://www.mcdonalds.com", "https://d2n94wep25xhn0.cloudfront.net", "https://d4wggo22afv97.cloudfront.net", "https://www.dyson.com", "https://dyson.com", "https://www.bestbuy.com", "https://www.goarmy.com", "https://www.samsung.com", "https://www.cyberpunk.net", "https://www.mms.com"],
 				C = e => e.source && e.source.url && e.isSponsored && f.some(t => e.source.url.startsWith(t)),
 				v = e => !e.media || e.media.type === l.o.EMBED && !e.isSurveyAd && !(l.a.has(e.media.provider) || C(e)),
-				P = (e, t) => {
+				y = (e, t) => {
 					if (e.isBlank) return 0;
 					switch (t) {
 						case a.g.Medium:
@@ -2391,7 +2398,7 @@
 					}
 				};
 
-			function y(e) {
+			function P(e) {
 				let {
 					isCrosspost: t,
 					layout: s,
@@ -2518,14 +2525,14 @@
 					const s = e.platform && e.platform.currentPage;
 					return (null === (t = null == s ? void 0 : s.meta) || void 0 === t ? void 0 : t.name) === i.Sb.MODQUEUE_PAGES
 				},
-				v = e => (e => {
+				v = (e, t) => (e => {
 					const t = e.platform && e.platform.currentPage;
 					return t && t.meta && (t.meta.name === i.Sb.MODERATION_PAGES || t.meta.name === i.Sb.MODQUEUE_PAGES)
-				})(e) && Object(d.a)(e) || !1
+				})(e) && Object(d.a)(e) && t || !1
 		},
 		"./src/redditGQL/operations/UpdateRecommendationPreferences.json": function(e) {
 			e.exports = JSON.parse('{"id":"fa7b23e7dbc7"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.98ea1664ddf6e43577db.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.d102b0e4ed1c92f533c1.js.map

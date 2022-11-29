@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.51ffdd91458f72e6d0c4.js
-// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.e49ff0b72d1d79f7143b.js
+// Retrieved at 11/29/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -392,9 +392,9 @@
 		"./src/reddit/actions/notificationsInbox/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "d", (function() {
-				return D
-			})), n.d(t, "e", (function() {
 				return L
+			})), n.d(t, "e", (function() {
+				return D
 			})), n.d(t, "b", (function() {
 				return G
 			})), n.d(t, "i", (function() {
@@ -450,7 +450,7 @@
 			const k = Object(o.a)(c.e),
 				P = Object(o.a)(c.b),
 				w = Object(o.a)(c.a),
-				D = e => async (t, n, r) => {
+				L = e => async (t, n, r) => {
 					let {
 						gqlContext: o
 					} = r;
@@ -472,7 +472,7 @@
 						t(R(m.notifications, e.length))
 					}
 					t(P(m)), t(Object(s.b)(m.banners))
-				}, L = () => async (e, t, n) => {
+				}, D = () => async (e, t, n) => {
 					let {
 						gqlContext: r
 					} = n;
@@ -1401,18 +1401,18 @@
 					user: k,
 					userName: P,
 					wrapperClassName: w,
-					style: D,
-					...L
+					style: L,
+					...D
 				} = e, A = !!s && Object(l.e)(s) === P, U = A ? s : k, R = U && U.accountIcon || c, M = k ? k.isNSFW : p, B = Object(d.a)(R) && !b, G = B ? i.a.createElement(_.a, {
 					headshot: R,
 					className: e.className,
 					hasNftBorder: m && Object(d.d)(c),
-					style: D
-				}) : i.a.createElement(x.b, S({}, L, {
+					style: L
+				}) : i.a.createElement(x.b, S({}, D, {
 					iconUrl: b && n ? "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png" : R,
 					isCurrentUser: A,
 					isNSFW: M,
-					style: D
+					style: L
 				})), [F, H] = Object(o.useState)(!1), V = Object(o.useMemo)(() => ({
 					input: {
 						channel: {
@@ -1833,9 +1833,9 @@
 			})), n.d(t, "b", (function() {
 				return w
 			})), n.d(t, "o", (function() {
-				return D
-			})), n.d(t, "A", (function() {
 				return L
+			})), n.d(t, "A", (function() {
+				return D
 			})), n.d(t, "p", (function() {
 				return A
 			})), n.d(t, "B", (function() {
@@ -2250,7 +2250,7 @@
 			! function(e) {
 				e.DISMISS = "dismiss", e.BANNER = "banner", e.CTA_1 = "cta1", e.CTA_2 = "cta2"
 			}(w || (w = {}));
-			const D = (e, t) => n => ({
+			const L = (e, t) => n => ({
 					...u.o(n),
 					action: d.c.CLICK,
 					noun: "inbox_banner",
@@ -2263,7 +2263,7 @@
 						id: e
 					}
 				}),
-				L = (e, t) => n => ({
+				D = (e, t) => n => ({
 					...u.o(n),
 					action: d.c.CLICK,
 					noun: "inbox_banner",
@@ -2336,9 +2336,9 @@
 			})), n.d(t, "r", (function() {
 				return w
 			})), n.d(t, "o", (function() {
-				return D
-			})), n.d(t, "s", (function() {
 				return L
+			})), n.d(t, "s", (function() {
+				return D
 			})), n.d(t, "c", (function() {
 				return A
 			})), n.d(t, "l", (function() {
@@ -2498,13 +2498,13 @@
 								sort: c = i.Jb,
 								t: a = i.Kb
 							} = s;
-							Object(C.a)(D(o, c, n, r, a)(t));
+							Object(C.a)(L(o, c, n, r, a)(t));
 							break
 						}
 						case i.Sb.PROFILE_PRIVATE: {
 							const o = Object(u.d)(e, t);
 							if (!o) return;
-							Object(C.a)(L(o)(r, n)(t));
+							Object(C.a)(D(o)(r, n)(t));
 							break
 						}
 						case i.Sb.FOLLOWERS:
@@ -2673,7 +2673,7 @@
 						adblock: N.e(i)
 					}
 				},
-				D = (e, t, n, r, o) => i => {
+				L = (e, t, n, r, o) => i => {
 					const s = N.W(i, e);
 					s && (s.sort = t, o && (s.sortTime = o));
 					const {
@@ -2695,7 +2695,7 @@
 						adblock: N.e(i)
 					}
 				},
-				L = e => (t, n) => r => {
+				D = e => (t, n) => r => {
 					const o = !r.profilePrivatePage.api.error[e] && !r.profilePrivatePage.api.pending[e];
 					return {
 						source: "global",
@@ -3161,6 +3161,11 @@
 				}
 			}
 		},
+		"./src/reddit/hooks/usePageLayer.ts": function(e, t, n) {
+			"use strict";
+			var r = n("./src/reddit/contexts/PageLayer/index.tsx");
+			t.a = r.gb
+		},
 		"./src/reddit/hooks/useTracking.ts": function(e, t, n) {
 			"use strict";
 			var r = n("./src/reddit/components/TrackingHelper/index.tsx");
@@ -3593,4 +3598,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.51ffdd91458f72e6d0c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.e49ff0b72d1d79f7143b.js.map
