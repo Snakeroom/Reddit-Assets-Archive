@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.2595d8813b5ef4c0c113.js
-// Retrieved at 11/29/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.bbb0237d926818dd8eaa.js
+// Retrieved at 11/29/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -6830,7 +6830,7 @@
 							ne.body.posts[e] = {
 								...ne.body.posts[e],
 								isRobotIndexable: Object(nt.a)(r, e)
-							}, ae && (ne.body.subreddits[n.belongsTo.id] = {
+							}, ae && ne.body.subreddits[n.belongsTo.id] && (ne.body.subreddits[n.belongsTo.id] = {
 								...ne.body.subreddits[n.belongsTo.id],
 								devPlatformMetadata: ae
 							}), o(xt({
@@ -50539,4 +50539,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.2595d8813b5ef4c0c113.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.bbb0237d926818dd8eaa.js.map

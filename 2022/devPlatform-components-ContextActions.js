@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.826b1058949f1f4befb4.js
-// Retrieved at 11/15/2022, 7:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.d710abce1982044aeb07.js
+// Retrieved at 11/29/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["devPlatform-components-ContextActions"], {
 		"./src/devPlatform/components/ContextActions/index.m.less": function(e, t, o) {},
@@ -10,8 +10,8 @@
 				i = o.n(n),
 				d = o("./node_modules/react-redux/es/index.js"),
 				s = o("./node_modules/reselect/es/index.js"),
-				r = o("./src/reddit/actions/toaster.ts"),
-				a = o("./src/reddit/components/OverflowMenu/index.tsx"),
+				a = o("./src/reddit/actions/toaster.ts"),
+				r = o("./src/reddit/components/OverflowMenu/index.tsx"),
 				l = o("./src/reddit/contexts/PageLayer/index.tsx"),
 				c = o("./src/reddit/icons/fonts/index.tsx"),
 				u = o("./src/reddit/models/Toast/index.ts"),
@@ -21,7 +21,7 @@
 				h = o("./node_modules/@devvit/protos/index.js"),
 				b = o("./src/reddit/models/Vote/index.ts"),
 				g = e => {
-					var t, o, n, i, d, s, r, a, l, c, u, m, p, v, g, f, w, x;
+					var t, o, n, i, d, s, a, r, l, c, u, m, p, v, g, f, w, x;
 					return h.E.fromPartial({
 						approved: e.isApproved,
 						approvedAtUtc: null !== (t = e.approvedAtUTC) && void 0 !== t ? t : void 0,
@@ -36,8 +36,8 @@
 						bodyHtml: null !== (s = e.body) && void 0 !== s ? s : "",
 						canGild: e.isGildable,
 						collapsed: e.collapsed,
-						collapsedBecauseCrowdControl: null !== (r = e.collapsedBecauseCrowdControl) && void 0 !== r && r,
-						collapsedReason: null !== (a = e.collapsedReason) && void 0 !== a ? a : void 0,
+						collapsedBecauseCrowdControl: null !== (a = e.collapsedBecauseCrowdControl) && void 0 !== a && a,
+						collapsedReason: null !== (r = e.collapsedReason) && void 0 !== r ? r : void 0,
 						collapsedReasonCode: null !== (l = e.collapsedReasonCode) && void 0 !== l ? l : void 0,
 						commentType: null !== (c = e.commentType) && void 0 !== c ? c : void 0,
 						created: e.created,
@@ -73,7 +73,7 @@
 				f = o("./src/reddit/models/Flair/index.ts"),
 				w = o("./src/reddit/models/Media/index.ts"),
 				x = e => {
-					var t, o, n, i, d, s, r, a, l, c, u, m, p, v, g, x, A, O, y;
+					var t, o, n, i, d, s, a, r, l, c, u, m, p, v, g, x, A, O, y;
 					return h.E.fromPartial({
 						approved: e.isApproved,
 						approvedAtUtc: null !== (t = e.approvedAtUTC) && void 0 !== t ? t : void 0,
@@ -84,8 +84,8 @@
 						authorFlairCssClass: null === (i = e.flair[0]) || void 0 === i ? void 0 : i.cssClass,
 						authorFlairRichtext: (null === (d = e.flair[0]) || void 0 === d ? void 0 : d.type) === f.f.Richtext ? e.flair[0].richtext : void 0,
 						authorFlairTemplateId: null === (s = e.flair[0]) || void 0 === s ? void 0 : s.templateId,
-						authorFlairText: (null === (r = e.flair[0]) || void 0 === r ? void 0 : r.type) === f.f.Text ? e.flair[0].text : void 0,
-						authorFlairTextColor: null === (a = e.flair[0]) || void 0 === a ? void 0 : a.textColor,
+						authorFlairText: (null === (a = e.flair[0]) || void 0 === a ? void 0 : a.type) === f.f.Text ? e.flair[0].text : void 0,
+						authorFlairTextColor: null === (r = e.flair[0]) || void 0 === r ? void 0 : r.textColor,
 						authorFlairType: null === (l = e.flair[0]) || void 0 === l ? void 0 : l.type,
 						authorFullname: e.authorId,
 						authorIsBlocked: e.authorIsBlocked,
@@ -170,7 +170,7 @@
 			}));
 			const M = Object(d.b)(() => Object(s.c)({}), e => ({
 					showToast: (t, o) => {
-						e(Object(r.f)(Object(r.e)(t, o)))
+						e(Object(a.f)(Object(a.e)(t, o)))
 					},
 					onShowUserInput: (t, o) => {
 						e(Object(O.b)({
@@ -190,20 +190,20 @@
 					contextType: o,
 					contextData: n,
 					showToast: s,
-					onShowUserInput: r
+					onShowUserInput: a
 				} = e, p = Object(d.e)(m.a), b = Object(l.gb)(), g = Object(d.e)(e => Object(l.s)(e, {
 					pageLayer: b
 				}));
 				let f = [];
 				p && g && (y.a.init(), f = y.a.loadSubreddit(g));
 				const w = (e, t) => {
-						r(e, t)
+						a(e, t)
 					},
 					x = [];
 				return f.forEach(e => {
 					var d;
 					return null === (d = e.actions) || void 0 === d ? void 0 : d.actions.filter(((e, t) => o => {
-						var n, i, d, s, r;
+						var n, i, d, s, a;
 						if (t && !(null === (n = o.users) || void 0 === n ? void 0 : n.moderator) || !t && (null === (i = o.users) || void 0 === i ? void 0 : i.moderator)) return !1;
 						switch (e) {
 							case h.g.POST:
@@ -211,7 +211,7 @@
 							case h.g.COMMENT:
 								return !!(null === (s = o.contexts) || void 0 === s ? void 0 : s.comment);
 							case h.g.SUBREDDIT:
-								return !!(null === (r = o.contexts) || void 0 === r ? void 0 : r.subreddit);
+								return !!(null === (a = o.contexts) || void 0 === a ? void 0 : a.subreddit);
 							default:
 								return !1
 						}
@@ -219,8 +219,8 @@
 						const d = function(e, t, o, n, i, d) {
 							return () => {
 								const s = d => {
-									var s, r;
-									return null === (r = null === (s = y.a.getActor(e)) || void 0 === s ? void 0 : s.As(h.e)) || void 0 === r ? void 0 : r.OnAction(h.f.fromPartial({
+									var s, a;
+									return null === (a = null === (s = y.a.getActor(e)) || void 0 === s ? void 0 : s.As(h.e)) || void 0 === a ? void 0 : a.OnAction(h.f.fromPartial({
 										actionId: t.actionId,
 										context: o,
 										...P(o, n),
@@ -233,7 +233,7 @@
 								t.userInput ? d(t, s) : s()
 							}
 						}(e.actorHostname, t, o, n, s, w);
-						x.push(i.a.createElement(a.a, {
+						x.push(i.a.createElement(r.a, {
 							displayText: t.name,
 							key: `${e.actorHostname}.${t.actionId}`,
 							onClick: d
@@ -256,14 +256,14 @@
 				i = o("./src/lib/makeActionCreator/index.ts"),
 				d = o("./src/reddit/actions/modal.ts"),
 				s = o("./src/reddit/constants/modals.ts"),
-				r = o("./src/reddit/reducers/features/devPlatform/index.ts"),
-				a = o("./src/devPlatform/constants.ts");
+				a = o("./src/reddit/reducers/features/devPlatform/index.ts"),
+				r = o("./src/devPlatform/constants.ts");
 			Object(n.a)({
 				features: {
-					devPlatform: r.a
+					devPlatform: a.a
 				}
 			});
-			const l = Object(i.a)(a.e),
+			const l = Object(i.a)(r.e),
 				c = e => {
 					let {
 						action: t,
@@ -287,16 +287,16 @@
 				i = o("./node_modules/@devvit/protos/index.js"),
 				d = o("./node_modules/@devvit/runtimes/platform/browser/BrowserRuntime.js"),
 				s = o("./src/devPlatform/constants.ts"),
-				r = o("./node_modules/@devvit/runtimes/worker.bootstrap.cjs"),
-				a = o("./node_modules/@devvit/runtimes/worker.echo.cjs"),
+				a = o("./node_modules/@devvit/runtimes/worker.bootstrap.cjs"),
+				r = o("./node_modules/@devvit/runtimes/worker.echo.cjs"),
 				l = o("./node_modules/@devvit/runtimes/worker.redditapi.cjs"),
 				c = o("./node_modules/@devvit/runtimes/worker.supervisor.cjs"),
 				u = o("./src/lib/localStorageAvailable/index.ts");
 			const m = new Map([
-				["bootstrap", r.a],
+				["bootstrap", a.a],
 				["supervisor", c.a],
 				["redditapi", l.a],
-				["echo", a.a]
+				["echo", r.a]
 			]);
 			class p {
 				constructor(e) {
@@ -336,7 +336,7 @@
 				}
 				loadSubreddit(e) {
 					if (e.id === this.loadedSubId) return this.sortedContextActions;
-					if (this.debugLog(() => "Metadata not yet loaded"), void 0 !== e.devPlatformMetadata ? (this.debugLog(() => {
+					if (this.loadedMetadata = null, this.debugLog(() => "Metadata not yet loaded"), void 0 !== e.devPlatformMetadata ? (this.debugLog(() => {
 							var t;
 							return `Loading metadata from Subreddit (${null===(t=e.devPlatformMetadata)||void 0===t?void 0:t.length} bytes)`
 						}), this.loadedMetadata = i.i.fromJSON(JSON.parse(atob(e.devPlatformMetadata))), this.debugLog(() => {
@@ -452,8 +452,8 @@
 				i = o("./node_modules/react/index.js"),
 				d = o.n(i),
 				s = o("./node_modules/react-redux/es/index.js"),
-				r = o("./node_modules/reselect/es/index.js"),
-				a = o("./src/lib/classNames/index.ts"),
+				a = o("./node_modules/reselect/es/index.js"),
+				r = o("./src/lib/classNames/index.ts"),
 				l = o("./src/lib/lessComponent.tsx"),
 				c = o("./src/reddit/actions/tooltip.ts"),
 				u = o("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
@@ -468,7 +468,7 @@
 				x = Object(u.a)(w),
 				A = l.a.button("MenuButton", f.a),
 				O = l.a.wrapped(p.b, "DropdownRow", f.a),
-				y = Object(r.c)({
+				y = Object(a.c)({
 					dropdownIsOpen: (e, t) => {
 						let {
 							dropdownId: o
@@ -495,7 +495,7 @@
 				"aria-label": n.fbt._("more options", null, {
 					hk: "2EnY1x"
 				}),
-				className: Object(a.a)(e.className, {
+				className: Object(r.a)(e.className, {
 					[f.a.mIsEnabled]: !e.disabled && !e.defaultButtonOutline
 				}),
 				disabled: e.disabled,
@@ -525,10 +525,10 @@
 				i = o.n(n),
 				d = o("./src/higherOrderComponents/asTooltip.tsx"),
 				s = o("./src/reddit/constants/elementIds.ts"),
-				r = o("./src/reddit/contexts/InsideOverlay.tsx");
+				a = o("./src/reddit/contexts/InsideOverlay.tsx");
 
-			function a() {
-				return (a = Object.assign || function(e) {
+			function r() {
+				return (r = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var o = arguments[t];
 						for (var n in o) Object.prototype.hasOwnProperty.call(o, n) && (e[n] = o[n])
@@ -554,13 +554,13 @@
 						}
 					}
 					render() {
-						return i.a.createElement(o, a({}, this.props, {
+						return i.a.createElement(o, r({}, this.props, {
 							container: this.state.container || this.props.container,
 							excludeContainerPosition: this.props.isOverlay
 						}))
 					}
 				}
-				return Object(r.b)(n)
+				return Object(a.b)(n)
 			}
 		},
 		"./src/reddit/reducers/features/devPlatform/index.ts": function(e, t, o) {
@@ -584,7 +584,7 @@
 						return e
 				}
 			};
-			var r = function() {
+			var a = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					const o = t.payload;
@@ -595,15 +595,15 @@
 							return e
 					}
 				},
-				a = Object(n.c)({
+				r = Object(n.c)({
 					action: s,
-					onAction: r
+					onAction: a
 				}),
 				l = t.a = Object(n.c)({
-					userInputModal: a
+					userInputModal: r
 				})
 		},
 		"ignored /drone/src/node_modules/cron-parser/lib fs": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.826b1058949f1f4befb4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.d710abce1982044aeb07.js.map

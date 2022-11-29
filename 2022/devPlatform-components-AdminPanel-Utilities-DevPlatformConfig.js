@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/devPlatform-components-AdminPanel-Utilities-DevPlatformConfig.4e10fa17936991c581d0.js
-// Retrieved at 11/15/2022, 7:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/devPlatform-components-AdminPanel-Utilities-DevPlatformConfig.2a1bbec40486eaf907fc.js
+// Retrieved at 11/29/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["devPlatform-components-AdminPanel-Utilities-DevPlatformConfig"], {
 		"./src/devPlatform/components/AdminPanel/Utilities/DevPlatformConfig/index.tsx": function(t, e, a) {
@@ -15,12 +15,12 @@
 				c = a("./src/reddit/controls/Button/index.tsx"),
 				u = a("./src/reddit/models/Toast/index.ts"),
 				g = a("./src/devPlatform/singleton/runtime.ts");
-			const m = Object(i.b)(() => Object(n.c)({}), t => ({
+			const h = Object(i.b)(() => Object(n.c)({}), t => ({
 				showToast: (e, a) => {
 					t(Object(l.f)(Object(l.e)(e, a)))
 				}
 			}));
-			class h extends s.a.Component {
+			class m extends s.a.Component {
 				constructor(t) {
 					super(t), this.gatewayUrlChanged = t => {
 						this.setState({
@@ -84,7 +84,7 @@
 					}, "Clear")))
 				}
 			}
-			e.default = m(h)
+			e.default = h(m)
 		},
 		"./src/devPlatform/constants.ts": function(t, e, a) {
 			"use strict";
@@ -126,7 +126,7 @@
 				["redditapi", d.a],
 				["echo", l.a]
 			]);
-			class m {
+			class h {
 				constructor(t) {
 					this.hostname = t
 				}
@@ -135,7 +135,7 @@
 				onUnbind() {}
 				post() {}
 			}
-			const h = new class {
+			const m = new class {
 				constructor() {
 					var t;
 					if (this.runtime = new i.a(g), this.gatewayUrl = "", this.loadedSubId = "", this.subActors = [], this.loadedMetadata = null, this.mockMetadata = null, this.sortedContextActions = [], this.localStorageAvailable = Object(u.a)(), this.runtimeInitialized = !1, this.debugLogging = !1, this.localStorageAvailable) {
@@ -164,7 +164,7 @@
 				}
 				loadSubreddit(t) {
 					if (t.id === this.loadedSubId) return this.sortedContextActions;
-					if (this.debugLog(() => "Metadata not yet loaded"), void 0 !== t.devPlatformMetadata ? (this.debugLog(() => {
+					if (this.loadedMetadata = null, this.debugLog(() => "Metadata not yet loaded"), void 0 !== t.devPlatformMetadata ? (this.debugLog(() => {
 							var e;
 							return `Loading metadata from Subreddit (${null===(e=t.devPlatformMetadata)||void 0===e?void 0:e.length} bytes)`
 						}), this.loadedMetadata = s.i.fromJSON(JSON.parse(atob(t.devPlatformMetadata))), this.debugLog(() => {
@@ -197,7 +197,7 @@
 				}
 				unloadSubreddit() {
 					this.subActors.forEach(t => {
-						this.runtime.unbind(new m(t.hostname))
+						this.runtime.unbind(new h(t.hostname))
 					})
 				}
 				loadActor(t) {
@@ -222,9 +222,9 @@
 					}
 				}
 			};
-			e.a = h
+			e.a = m
 		},
 		"ignored /drone/src/node_modules/cron-parser/lib fs": function(t, e) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/devPlatform-components-AdminPanel-Utilities-DevPlatformConfig.4e10fa17936991c581d0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/devPlatform-components-AdminPanel-Utilities-DevPlatformConfig.2a1bbec40486eaf907fc.js.map
