@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.9657a03d25400fb5ace6.js
-// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.952f63882df2935830b8.js
+// Retrieved at 11/29/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -4176,7 +4176,7 @@
 					to: {
 						pathname: B && Object(l.a)(B) || "",
 						search: F,
-						state: Object(b.d)(b.a.SEARCH_DROPDOWN, S, O.isProfile || O.isSubreddit)
+						state: Object(b.c)(b.a.SEARCH_DROPDOWN, S, O.isProfile || O.isSubreddit)
 					}
 				}, s.a.createElement("div", {
 					className: T.a.flexAlignCenter
@@ -4283,7 +4283,7 @@
 						to: {
 							pathname: I && Object(l.a)(I) || "",
 							search: S,
-							state: Object(b.d)(b.a.TYPEAHEAD, p)
+							state: Object(b.c)(b.a.TYPEAHEAD, p)
 						}
 					}, s.a.createElement("div", null, O && s.a.createElement("div", {
 						className: Object(c.a)(T.a.active, T.a.labelsFont, T.a.marginBottom2)
@@ -4371,7 +4371,7 @@
 					tabIndex: -1,
 					to: {
 						pathname: Object(h.b)(o),
-						state: Object(b.d)(b.a.TYPEAHEAD, p)
+						state: Object(b.c)(b.a.TYPEAHEAD, p)
 					}
 				}, s.a.createElement(I, {
 					searchItem: o,
@@ -4648,7 +4648,7 @@
 									activeSearchScope: j,
 									includeNsfwResults: C && A
 								}), r = {
-									...Object(b.d)(b.a.TYPEAHEAD, d),
+									...Object(b.c)(b.a.TYPEAHEAD, d),
 									routeName: P,
 									subredditName: R
 								};
@@ -26117,4 +26117,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.9657a03d25400fb5ace6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.952f63882df2935830b8.js.map

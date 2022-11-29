@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.30db834d5ed8ccc17953.js
-// Retrieved at 11/29/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.bd2397e59bca44892ede.js
+// Retrieved at 11/29/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3659,11 +3659,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("179636"),
+				buildNumber: Object(r.c)("179643"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1669753163"),
+				buildTimestamp: Object(r.b)("1669755056"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6396,14 +6396,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c06fe85b896ce65abbb0f6320a75fbd5bf418209a-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c66f419e8dca90506d03fdaecf67ce5ce05860849-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "06fe85b896ce65abbb0f6320a75fbd5bf418209a-production",
+						release: "66f419e8dca90506d03fdaecf67ce5ce05860849-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6939,7 +6939,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "06fe85b896ce65abbb0f6320a75fbd5bf418209a-production",
+							releaseClient: "66f419e8dca90506d03fdaecf67ce5ce05860849-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -11699,103 +11699,105 @@
 		"./src/reddit/actions/platform.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "b", (function() {
-				return w
-			})), i.d(t, "c", (function() {
 				return y
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "c", (function() {
 				return E
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "e", (function() {
 				return S
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "d", (function() {
 				return T
-			})), i.d(t, "g", (function() {
+			})), i.d(t, "f", (function() {
 				return O
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "g", (function() {
 				return I
-			})), i.d(t, "i", (function() {
+			})), i.d(t, "a", (function() {
 				return R
-			})), i.d(t, "j", (function() {
+			})), i.d(t, "i", (function() {
 				return F
+			})), i.d(t, "j", (function() {
+				return C
 			})), i.d(t, "n", (function() {
-				return A
-			})), i.d(t, "o", (function() {
 				return j
-			})), i.d(t, "m", (function() {
+			})), i.d(t, "o", (function() {
 				return P
-			})), i.d(t, "l", (function() {
+			})), i.d(t, "m", (function() {
 				return x
-			})), i.d(t, "k", (function() {
+			})), i.d(t, "l", (function() {
 				return D
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "k", (function() {
 				return L
+			})), i.d(t, "h", (function() {
+				return k
 			}));
+			i("./src/lib/addQueryParams/index.ts");
 			var n = i("./src/lib/areUrlsEqual/index.ts"),
 				r = i("./src/lib/constants/index.ts"),
-				s = i("./src/lib/logs/errors.ts"),
-				o = i("./src/lib/makeActionCreator/index.ts"),
-				d = i("./src/lib/matchRoute/index.ts"),
-				a = (i("./src/lib/addQueryParams/index.ts"), i("./src/lib/isEqualWithoutKey/index.ts")),
+				s = i("./src/lib/isEqualWithoutKey/index.ts"),
+				o = i("./src/lib/logs/errors.ts"),
+				d = i("./src/lib/makeActionCreator/index.ts"),
+				a = i("./src/lib/matchRoute/index.ts"),
 				l = i("./src/reddit/actions/tracing.ts"),
-				u = i("./src/reddit/constants/experiments.ts"),
-				c = i("./src/reddit/constants/history.ts"),
-				_ = i("./src/reddit/constants/listings.ts"),
-				m = i("./src/reddit/helpers/clickSourceData/index.ts"),
-				p = i("./src/reddit/helpers/installGoodVisitFeedSearchTracker/index.ts"),
-				h = i("./src/reddit/helpers/routeKey/index.ts"),
-				f = i("./src/reddit/selectors/experiments/postSeo.ts");
+				u = i("./src/reddit/components/SearchResultsContent/helpers/isCommentSearchRoute.ts"),
+				c = i("./src/reddit/constants/experiments.ts"),
+				_ = i("./src/reddit/constants/history.ts"),
+				m = i("./src/reddit/constants/listings.ts"),
+				p = i("./src/reddit/helpers/clickSourceData/index.ts"),
+				h = i("./src/reddit/helpers/installGoodVisitFeedSearchTracker/index.ts"),
+				f = i("./src/reddit/helpers/routeKey/index.ts"),
+				b = i("./src/reddit/selectors/experiments/postSeo.ts");
 			i("./node_modules/core-js/modules/web.dom.iterable.js"), i("./src/reddit/helpers/chooseVariant/index.ts");
 			new Set([r.Sb.COMMENTS, r.Sb.INDEX, r.Sb.LISTING, r.Sb.PROFILE_COMMENTS, r.Sb.PROFILE_OVERVIEW, r.Sb.PROFILE_POSTS, r.Sb.SUBREDDIT]);
-			var b = i("./src/reddit/selectors/platform.ts"),
-				g = i("./src/reddit/selectors/telemetry.ts"),
-				v = i("./src/reddit/singleton/tracing/index.ts");
-			const w = "PLATFORM__HISTORY_LOCATION_SET",
-				y = "PLATFORM__INITIAL_REFERRER_SET",
-				E = "PLATFORM__NAVIGATION_CONFIRMATION_REQUESTED",
-				S = "PLATFORM__NAVIGATION_CONFIRMATION_DISCARDED",
-				T = "PLATFORM__PAGE_META_SET",
-				O = "PLATFORM__PAGE_STATUS_SET",
-				I = "PLATFORM__FEED_CORR_ID_SET",
-				R = e => async (t, i, n) => {
+			var g = i("./src/reddit/selectors/platform.ts"),
+				v = i("./src/reddit/selectors/telemetry.ts"),
+				w = i("./src/reddit/singleton/tracing/index.ts");
+			const y = "PLATFORM__HISTORY_LOCATION_SET",
+				E = "PLATFORM__INITIAL_REFERRER_SET",
+				S = "PLATFORM__NAVIGATION_CONFIRMATION_REQUESTED",
+				T = "PLATFORM__NAVIGATION_CONFIRMATION_DISCARDED",
+				O = "PLATFORM__PAGE_META_SET",
+				I = "PLATFORM__PAGE_STATUS_SET",
+				R = "PLATFORM__FEED_CORR_ID_SET",
+				F = e => async (t, i, n) => {
 					const {
 						currentPage: r
 					} = i().platform;
 					if (!r) return;
-					const s = Object(d.a)(r.url, e, i());
+					const s = Object(a.a)(r.url, e, i());
 					s && s.route.action(s.match)(t, i, n)
-				}, F = (e, t, i) => async (s, o, d) => {
-					s(((e, t, i) => (s, o, d) => {
-						var a, l, w, y, E, S, T, O;
-						const I = o().platform.currentPage;
-						(!i || i.route.chunk === r.u.SUBREDDIT && _.a.has(i.match.params.subredditName.toLowerCase())) && window.location.replace(`https://www.reddit.com${e.pathname}${e.search}`);
-						const R = i ? Object(h.c)(i, o()).listingKey : null,
+				}, C = (e, t, i) => async (o, d, a) => {
+					o(((e, t, i) => (s, o, d) => {
+						var a, l, y, E, S, T, O, I;
+						const R = o().platform.currentPage;
+						(!i || i.route.chunk === r.u.SUBREDDIT && m.a.has(i.match.params.subredditName.toLowerCase())) && window.location.replace(`https://www.reddit.com${e.pathname}${e.search}`);
+						const F = i ? Object(f.c)(i, o()).listingKey : null,
 							{
-								user: F
+								user: C
 							} = o(),
-							N = i && i.match && i.match.queryParams,
-							A = N && N[`experiment_${u.Xe}`];
-						Object(f.g)(o()), e.pathname.split("/").some(e => "comments" === e), Object(b.j)(o());
-						s(C({
+							A = i && i.match && i.match.queryParams,
+							j = A && A[`experiment_${c.Xe}`];
+						Object(b.g)(o()), e.pathname.split("/").some(e => "comments" === e), Object(g.j)(o());
+						s(N({
 							action: t,
-							listingKey: R,
+							listingKey: F,
 							location: e,
 							routeMatch: i,
-							user: F
+							user: C
 						}));
-						const j = (null === (w = null === (l = null === (a = null == I ? void 0 : I.routeMatch) || void 0 === a ? void 0 : a.route) || void 0 === l ? void 0 : l.meta) || void 0 === w ? void 0 : w.name) === (null === (E = null === (y = null == i ? void 0 : i.route) || void 0 === y ? void 0 : y.meta) || void 0 === E ? void 0 : E.name) && (null == i ? void 0 : i.route.meta.name) === r.Sb.COMMENTS && e.pathname.includes(m.b),
-							P = j && e.state.clickSource !== m.a.POST_DETAIL_COMMENT_SEARCH,
-							x = j && (null === (S = null == I ? void 0 : I.locationState) || void 0 === S ? void 0 : S.clickSource) === m.a.POST_DETAIL_COMMENT_SEARCH;
-						(null === (T = null == I ? void 0 : I.locationState) || void 0 === T ? void 0 : T.clickId) && p.d[I.locationState.clickId] && !p.d[I.locationState.clickId].completed && (P && !x || Object(p.b)(I.locationState.clickId));
-						const D = i && Object(g.w)(i);
-						(null === (O = null == e ? void 0 : e.state) || void 0 === O ? void 0 : O.clickId) && (p.d[e.state.clickId] ? Object(p.c)(e.state.clickId) : i && D && r.R.has(D) && r.Q.has(e.state.clickSource) && Object(p.a)(e.state.clickId, e.state.clickSource, o, i, e.state[c.b.ClickSourceFeedCorrelationId], I)), I && Object(n.a)(I.url, e) || v.b.isEnabled
-					})(e, t, i)), await s(((e, t) => async (i, r, s) => {
-						var o, d;
+						const P = (null === (y = null === (l = null === (a = null == R ? void 0 : R.routeMatch) || void 0 === a ? void 0 : a.route) || void 0 === l ? void 0 : l.meta) || void 0 === y ? void 0 : y.name) === (null === (S = null === (E = null == i ? void 0 : i.route) || void 0 === E ? void 0 : E.meta) || void 0 === S ? void 0 : S.name) && (null == i ? void 0 : i.route.meta.name) === r.Sb.COMMENTS && e.pathname.includes(u.a),
+							x = P && e.state.clickSource !== p.a.POST_DETAIL_COMMENT_SEARCH,
+							D = P && (null === (T = null == R ? void 0 : R.locationState) || void 0 === T ? void 0 : T.clickSource) === p.a.POST_DETAIL_COMMENT_SEARCH;
+						(null === (O = null == R ? void 0 : R.locationState) || void 0 === O ? void 0 : O.clickId) && h.d[R.locationState.clickId] && !h.d[R.locationState.clickId].completed && (x && !D || Object(h.b)(R.locationState.clickId));
+						const L = i && Object(v.w)(i);
+						(null === (I = null == e ? void 0 : e.state) || void 0 === I ? void 0 : I.clickId) && (h.d[e.state.clickId] ? Object(h.c)(e.state.clickId) : i && L && r.R.has(L) && r.Q.has(e.state.clickSource) && Object(h.a)(e.state.clickId, e.state.clickSource, o, i, e.state[_.b.ClickSourceFeedCorrelationId], R)), R && Object(n.a)(R.url, e) || w.b.isEnabled
+					})(e, t, i)), await o(((e, t) => async (i, r, o) => {
+						var d, a;
 						const u = r().platform.currentPage;
 						if (u && Object(n.a)(null == u ? void 0 : u.url, e)) return;
 						let c = !1;
-						if (v.b.isEnabled) {
-							if (Object(a.a)(null !== (d = null === (o = null == u ? void 0 : u.locationState) || void 0 === o ? void 0 : o.closeLocation) && void 0 !== d ? d : {}, e)) {
-								const e = v.b.createRootSpanId();
-								v.b.setParent(e), i(Object(l.b)(e.spanId))
+						if (w.b.isEnabled) {
+							if (Object(s.a)(null !== (a = null === (d = null == u ? void 0 : u.locationState) || void 0 === d ? void 0 : d.closeLocation) && void 0 !== a ? a : {}, e)) {
+								const e = w.b.createRootSpanId();
+								w.b.setParent(e), i(Object(l.b)(e.spanId))
 							} else c = !0
 						}
 						if (t) {
@@ -11803,20 +11805,20 @@
 								match: e
 							} = t;
 							if (c) {
-								const n = v.b.createRootSpanId();
-								v.b.setParent(n), i(Object(l.b)(n.spanId));
-								const o = null == t ? void 0 : t.route.action.name,
-									d = (null == t ? void 0 : t.route) ? `${o}_${t.route.meta.name}` : "",
+								const n = w.b.createRootSpanId();
+								w.b.setParent(n), i(Object(l.b)(n.spanId));
+								const s = null == t ? void 0 : t.route.action.name,
+									d = (null == t ? void 0 : t.route) ? `${s}_${t.route.meta.name}` : "",
 									a = {
-										[v.a.HttpUrl]: e.url
+										[w.a.HttpUrl]: e.url
 									};
-								await v.b.recordRequest(d, a, async () => {
-									await t.route.action(e)(i, r, s)
+								await w.b.recordRequest(d, a, async () => {
+									await t.route.action(e)(i, r, o)
 								})
-							} else await t.route.action(e)(i, r, s)
+							} else await t.route.action(e)(i, r, o)
 						}
 					})(e, i))
-				}, C = Object(o.a)(w), N = (Object(o.a)(y), Object(o.a)(T)), A = Object(o.a)(O), j = Object(o.a)(I), P = e => async (t, i, n) => {
+				}, N = Object(d.a)(y), A = (Object(d.a)(E), Object(d.a)(O)), j = Object(d.a)(I), P = Object(d.a)(R), x = e => async (t, i, n) => {
 					const r = i(),
 						{
 							currentPage: s
@@ -11825,13 +11827,13 @@
 					const {
 						key: o
 					} = s;
-					await t(N({
+					await t(A({
 						key: o,
 						meta: e
 					}))
-				}, x = Object(o.a)(E), D = Object(o.a)(S), L = () => async (e, t, i) => {
+				}, D = Object(d.a)(S), L = Object(d.a)(T), k = () => async (e, t, i) => {
 					if (window !== window.parent) {
-						Object(s.sendRavenError)(i.apiContext(), {
+						Object(o.sendRavenError)(i.apiContext(), {
 							extra: {
 								errorType: r.v.NOT_ALLOWED_ACCESS,
 								value: "Page was unexpectedly loaded inside iframe"
@@ -12757,7 +12759,7 @@
 								n = Object(s.c)(i);
 							e(Object(se.a)({
 								pathname: n.pathname,
-								state: Object(Z.c)(t),
+								state: Object(Z.b)(t),
 								search: n.search
 							}))
 						}
@@ -16214,6 +16216,32 @@
 						}
 					}
 				}
+		},
+		"./src/reddit/components/SearchResultsContent/helpers/isCommentSearchRoute.ts": function(e, t, i) {
+			"use strict";
+			i.d(t, "a", (function() {
+				return r
+			})), i.d(t, "b", (function() {
+				return s
+			})), i.d(t, "c", (function() {
+				return d
+			}));
+			var n = i("./src/lib/constants/index.ts");
+			const r = "/search";
+
+			function s(e) {
+				if (!(null == e ? void 0 : e.url.includes(r))) return !1;
+				const {
+					q: t,
+					type: i
+				} = (null == e ? void 0 : e.queryParams) || {};
+				return !!t && (null == i ? void 0 : i.includes(n.ic.Comments))
+			}
+			const o = Date.UTC(2020, 1, 1);
+
+			function d(e) {
+				return e && (null == e ? void 0 : e.created) > o
+			}
 		},
 		"./src/reddit/components/Settings/modalIds.ts": function(e, t, i) {
 			"use strict";
@@ -22959,49 +22987,33 @@
 			"use strict";
 			i.d(t, "a", (function() {
 				return n
-			})), i.d(t, "b", (function() {
-				return a
-			})), i.d(t, "e", (function() {
-				return l
-			})), i.d(t, "d", (function() {
-				return u
 			})), i.d(t, "c", (function() {
-				return c
+				return l
+			})), i.d(t, "b", (function() {
+				return u
 			}));
 			var n, r = i("./src/lib/constants/index.ts"),
-				s = i("./src/reddit/constants/history.ts"),
-				o = i("./src/reddit/selectors/telemetry.ts"),
-				d = i("./node_modules/uuid/dist/esm-browser/v4.js");
-			! function(e) {
-				e.SEARCH_RESULTS = "search_results", e.SEARCH_RESULTS_TRENDING = "search_results_trending", e.SEARCH_COMMENTS_BUTTON = "search_comments_button", e.SEARCH_COMMENTS_TAB = "search_comments_tab", e.SEARCH_COMMUNITIES_TAB = "search_communities_tab", e.SEARCH_AUTHORS_TAB = "search_authors_tab", e.SEARCH_POSTS_TAB = "search_posts_tab", e.TYPEAHEAD = "typeahead", e.SEARCH_DROPDOWN = "search_dropdown", e.POST_DETAIL = "post_detail", e.POST_DETAIL_COMMENT_SEARCH = "post_detail_comment_search"
-			}(n || (n = {}));
-			const a = "/search";
+				s = i("./src/reddit/components/SearchResultsContent/helpers/isCommentSearchRoute.ts"),
+				o = i("./src/reddit/constants/history.ts"),
+				d = i("./src/reddit/selectors/telemetry.ts"),
+				a = i("./node_modules/uuid/dist/esm-browser/v4.js");
 
-			function l(e) {
-				if (!(null == e ? void 0 : e.url.includes(a))) return !1;
-				const {
-					q: t,
-					type: i
-				} = (null == e ? void 0 : e.queryParams) || {};
-				return !!t && (null == i ? void 0 : i.includes(r.ic.Comments))
-			}
-
-			function u(e, t) {
+			function l(e, t) {
 				let i = !(arguments.length > 2 && void 0 !== arguments[2]) || arguments[2];
 				return {
-					[s.b.SearchOriginPage]: t,
+					[o.b.SearchOriginPage]: t,
 					...i && {
-						[s.b.ClickId]: Object(d.a)(),
-						[s.b.ClickSource]: e
+						[o.b.ClickId]: Object(a.a)(),
+						[o.b.ClickSource]: e
 					}
 				}
 			}
 
-			function c(e) {
+			function u(e) {
 				var t;
-				let i = e ? Object(o.v)(e) : void 0;
+				let i = e ? Object(d.v)(e) : void 0;
 				if (i === n.SEARCH_RESULTS)
-					if (Object(o.jb)(e) === o.c.Trending) i = n.SEARCH_RESULTS_TRENDING;
+					if (Object(d.jb)(e) === d.c.Trending) i = n.SEARCH_RESULTS_TRENDING;
 					else {
 						const {
 							type: t
@@ -23022,14 +23034,16 @@
 								i = n.SEARCH_POSTS_TAB
 						}
 					}
-				else i === n.POST_DETAIL && l(e) && (i = n.POST_DETAIL_COMMENT_SEARCH);
-				const a = null === (t = null == e ? void 0 : e.locationState) || void 0 === t ? void 0 : t[s.b.FeedCorrelationId];
+				else i === n.POST_DETAIL && Object(s.b)(e) && (i = n.POST_DETAIL_COMMENT_SEARCH);
+				const l = null === (t = null == e ? void 0 : e.locationState) || void 0 === t ? void 0 : t[o.b.FeedCorrelationId];
 				return {
-					[s.b.ClickSource]: i,
-					[s.b.ClickId]: Object(d.a)(),
-					[s.b.ClickSourceFeedCorrelationId]: a
+					[o.b.ClickSource]: i,
+					[o.b.ClickId]: Object(a.a)(),
+					[o.b.ClickSourceFeedCorrelationId]: l
 				}
-			}
+			}! function(e) {
+				e.SEARCH_RESULTS = "search_results", e.SEARCH_RESULTS_TRENDING = "search_results_trending", e.SEARCH_COMMENTS_BUTTON = "search_comments_button", e.SEARCH_COMMENTS_TAB = "search_comments_tab", e.SEARCH_COMMUNITIES_TAB = "search_communities_tab", e.SEARCH_AUTHORS_TAB = "search_authors_tab", e.SEARCH_POSTS_TAB = "search_posts_tab", e.TYPEAHEAD = "typeahead", e.SEARCH_DROPDOWN = "search_dropdown", e.POST_DETAIL = "post_detail", e.POST_DETAIL_COMMENT_SEARCH = "post_detail_comment_search"
+			}(n || (n = {}))
 		},
 		"./src/reddit/helpers/cookies/index.ts": function(e, t, i) {
 			"use strict";
@@ -50718,4 +50732,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.30db834d5ed8ccc17953.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.bd2397e59bca44892ede.js.map

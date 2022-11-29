@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.6aef54a7a7f89463eb2f.js
-// Retrieved at 11/29/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.a470621af116f3b5ed3d.js
+// Retrieved at 11/29/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -12598,7 +12598,7 @@
 								},
 								d = {},
 								u = !0;
-							if (x && x.searchQuery === re ? ((c = x).id || (c.id = Object(wa.a)()), c.section === Ba.c.recent ? (d = Object(Za.d)(Za.a.SEARCH_DROPDOWN, ae, c.isProfile || c.isSubreddit), a = Aa.a.Recent, Ee(o, c, l)) : c.section === Ba.c.typeahead ? (d = Object(Za.d)(Za.a.TYPEAHEAD, ae), u = !1, ye(o, c, l, l)) : c.section === Ba.c.trending ? (d = Object(Za.d)(Za.a.TYPEAHEAD, ae), a = (null === (n = c.post) || void 0 === n ? void 0 : n.isSponsored) ? Aa.a.PromotedTrend : Aa.a.Trending, I((e, t) => Object(Ja.o)({
+							if (x && x.searchQuery === re ? ((c = x).id || (c.id = Object(wa.a)()), c.section === Ba.c.recent ? (d = Object(Za.c)(Za.a.SEARCH_DROPDOWN, ae, c.isProfile || c.isSubreddit), a = Aa.a.Recent, Ee(o, c, l)) : c.section === Ba.c.typeahead ? (d = Object(Za.c)(Za.a.TYPEAHEAD, ae), u = !1, ye(o, c, l, l)) : c.section === Ba.c.trending ? (d = Object(Za.c)(Za.a.TYPEAHEAD, ae), a = (null === (n = c.post) || void 0 === n ? void 0 : n.isSponsored) ? Aa.a.PromotedTrend : Aa.a.Trending, I((e, t) => Object(Ja.o)({
 									state: t(),
 									trendingSearch: c,
 									telemetrySource: Ha.a.Typeahead
@@ -22248,4 +22248,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.6aef54a7a7f89463eb2f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.a470621af116f3b5ed3d.js.map
