@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeedAnnouncementCard.4583a096a5908d4f86d3.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeedAnnouncementCard.5b0964688c780b817610.js
+// Retrieved at 11/29/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeedAnnouncementCard"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -15,11 +15,11 @@
 			"use strict";
 			var a = n("./node_modules/react/index.js"),
 				s = n.n(a),
-				o = n("./src/lib/classNames/index.ts"),
-				c = n("./src/lib/lessComponent.tsx"),
+				c = n("./src/lib/classNames/index.ts"),
+				o = n("./src/lib/lessComponent.tsx"),
 				r = n("./src/chat/controls/Svg/index.m.less"),
 				i = n.n(r);
-			t.a = c.a.wrapped(e => {
+			t.a = o.a.wrapped(e => {
 				const t = {
 						height: e.height || void 0,
 						width: e.width || void 0
@@ -27,13 +27,13 @@
 					{
 						disable: n,
 						active: a,
-						hover: c
+						hover: o
 					} = e;
 				return s.a.createElement("svg", {
-					className: Object(o.a)(e.className, {
+					className: Object(c.a)(e.className, {
 						[i.a.disable]: n,
 						[i.a.active]: a,
-						[i.a.hover]: !!c
+						[i.a.hover]: !!o
 					}),
 					viewBox: e.viewBox,
 					style: t,
@@ -45,10 +45,10 @@
 			"use strict";
 			var a = n("./node_modules/react/index.js"),
 				s = n.n(a),
-				o = n("./src/chat/controls/Svg/index.tsx");
+				c = n("./src/chat/controls/Svg/index.tsx");
 
-			function c() {
-				return (c = Object.assign || function(e) {
+			function o() {
+				return (o = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -56,7 +56,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			t.a = e => s.a.createElement(o.a, c({}, e, {
+			t.a = e => s.a.createElement(c.a, o({}, e, {
 				viewBox: "0 0 20 20"
 			}), e.isFilled ? s.a.createElement("path", {
 				d: "M8.207,15.707,6.793,14.293,11.086,10,6.793,5.707,8.207,4.293l5,5a1,1,0,0,1,0,1.414Z"
@@ -85,32 +85,32 @@
 			n.r(t);
 			var a = n("./src/chat/icons/svgs/CaretRight/index.tsx"),
 				s = n("./node_modules/fbt/lib/FbtPublic.js"),
-				o = n("./src/lib/classNames/index.ts"),
-				c = n("./node_modules/react/index.js"),
-				r = n.n(c),
+				c = n("./src/lib/classNames/index.ts"),
+				o = n("./node_modules/react/index.js"),
+				r = n.n(o),
 				i = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				l = n("./src/reddit/icons/svgs/Snoo/index.tsx"),
 				d = n("./src/reddit/components/Snoo/index.m.less"),
 				m = n.n(d),
 				u = n("./src/lib/lessComponent.tsx").a.wrapped(l.a, "Component", m.a),
 				h = n("./src/reddit/helpers/styles/mixins/index.tsx"),
-				A = n("./src/reddit/hooks/useTheme.ts"),
-				C = n("./src/reddit/components/FeedAnnouncement/utils.ts"),
-				p = n("./src/reddit/components/FeedAnnouncement/FeedAnnouncementCard/index.m.less"),
-				b = n.n(p);
+				p = n("./src/reddit/hooks/useTheme.ts"),
+				A = n("./src/reddit/components/FeedAnnouncement/utils.ts"),
+				x = n("./src/reddit/components/FeedAnnouncement/FeedAnnouncementCard/index.m.less"),
+				C = n.n(x);
 
-			function x(e) {
+			function _(e) {
 				const {
 					onClose: t
 				} = e;
 				return r.a.createElement("div", {
-					className: b.a.headerContainer
+					className: C.a.headerContainer
 				}, r.a.createElement(u, null), r.a.createElement("div", {
-					className: b.a.headerTitle
+					className: C.a.headerTitle
 				}, s.fbt._("From Reddit", null, {
 					hk: "1Sazf8"
 				})), r.a.createElement("button", {
-					className: b.a.headerCloseButton,
+					className: C.a.headerCloseButton,
 					onClick: e => {
 						e.stopPropagation(), t()
 					},
@@ -121,43 +121,44 @@
 			}
 			t.default = function(e) {
 				const {
-					id: t,
-					body: n,
-					title: s,
-					cta: c,
-					onClose: i,
-					onClick: l
-				} = e, d = Object(A.a)(), m = Object(C.a)(t);
+					announcement: t,
+					onClose: n,
+					onClick: s
+				} = e, {
+					body: o,
+					title: i,
+					cta: l
+				} = t, d = Object(p.a)(), m = Object(A.a)(t);
 				return r.a.createElement("div", {
-					className: Object(o.a)(b.a.container),
+					className: Object(c.a)(C.a.container),
 					role: "button",
-					onClick: l,
+					onClick: s,
 					style: Object(h.c)(void 0, {
 						theme: d
 					}),
 					tabIndex: 0,
-					"aria-label": s
-				}, r.a.createElement(x, {
-					onClose: i
+					"aria-label": i
+				}, r.a.createElement(_, {
+					onClose: n
 				}), r.a.createElement("div", {
-					className: Object(o.a)(b.a.bodyContainer)
+					className: Object(c.a)(C.a.bodyContainer)
 				}, r.a.createElement("div", {
-					className: Object(o.a)(b.a.bodyContent)
+					className: Object(c.a)(C.a.bodyContent)
 				}, r.a.createElement("h3", {
-					className: b.a.title
-				}, s), r.a.createElement("p", null, n)), null != m ? r.a.createElement("div", {
-					className: Object(o.a)(b.a.thumbnailContainer)
+					className: C.a.title
+				}, i), r.a.createElement("p", null, o)), null != m ? r.a.createElement("div", {
+					className: Object(c.a)(C.a.thumbnailContainer)
 				}, r.a.createElement("img", {
 					src: m
-				})) : null), c ? r.a.createElement("div", {
-					className: Object(o.a)(b.a.ctaContainer)
+				})) : null), l ? r.a.createElement("div", {
+					className: Object(c.a)(C.a.ctaContainer)
 				}, r.a.createElement("a", {
-					onClick: l,
-					className: Object(o.a)(b.a.ctaText),
+					onClick: s,
+					className: Object(c.a)(C.a.ctaText),
 					tabIndex: 0,
-					"aria-label": c
-				}, c, r.a.createElement(a.a, {
-					className: Object(o.a)(b.a.ctaCaret),
+					"aria-label": l
+				}, l, r.a.createElement(a.a, {
+					className: Object(c.a)(C.a.ctaCaret),
 					height: "20px"
 				}))) : null)
 			}
@@ -165,13 +166,14 @@
 		"./src/reddit/components/FeedAnnouncement/utils.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return r
+				return i
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var a = n("./src/config.ts"),
-				s = n("./node_modules/react/index.js");
+				s = n("./src/lib/sentry/index.ts"),
+				c = n("./node_modules/react/index.js");
 			const o = new Map,
-				c = async e => {
+				r = async e => {
 					if (o.has(e)) return await o.get(e);
 					const t = (async e => {
 						return (await fetch(e, {
@@ -179,17 +181,39 @@
 						})).ok
 					})(e);
 					return o.set(e, t), await t
-				}, r = e => {
-					const [t, n] = Object(s.useState)("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII");
-					return Object(s.useEffect)(() => {
-						const t = (e => e.match(/^images_in_comments/) ? `${a.a.assetPath}/img/announcements/images_in_comments_announcement.jpg` : `${a.a.assetPath}/img/announcements/${e}.png`)(e);
+				}, i = e => {
+					const {
+						id: t
+					} = e, n = (e => {
+						const {
+							id: t,
+							images: n
+						} = e;
+						if (null == n || 0 === n.length) return null;
+						if (n.length > 1) return s.c.withScope(e => {
+							e.setExtra("announcementId", t), s.c.captureException("Gallery announcements are not supported")
+						}), null;
+						const a = n[0];
+						switch (a.__typename) {
+							case "ImageAsset":
+							case "AnimatedImageAsset":
+								return a.url || null;
+							default:
+								return s.c.withScope(e => {
+									e.setExtra("announcementId", t), s.c.captureException(`MediaAsset type [${a.__typename}] in images field is not supported.`)
+								}), null
+						}
+					})(e), [o, i] = Object(c.useState)(n || "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII");
+					return Object(c.useEffect)(() => {
+						if (n) return;
+						const e = (e => e.match(/^images_in_comments/) ? `${a.a.assetPath}/img/announcements/images_in_comments_announcement.jpg` : `${a.a.assetPath}/img/announcements/${e}.png`)(t);
 						let s = !1;
-						return c(t).then(e => {
-							!1 === s && n(e ? t : null)
+						return r(e).then(t => {
+							!1 === s && i(t ? e : null)
 						}), () => {
 							s = !0
 						}
-					}, [e]), t
+					}, [t]), o
 				}
 		},
 		"./src/reddit/components/Snoo/index.m.less": function(e, t, n) {
@@ -200,4 +224,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeedAnnouncementCard.4583a096a5908d4f86d3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeedAnnouncementCard.5b0964688c780b817610.js.map

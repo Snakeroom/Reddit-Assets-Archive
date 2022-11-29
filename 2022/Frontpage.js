@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.918982d359cc5a8a45cc.js
-// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.6cac27d88b8dec58c327.js
+// Retrieved at 11/29/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -2806,18 +2806,8 @@
 				i = n("./src/reddit/actions/merchandisingUnitAnnouncements/index.ts"),
 				o = n("./src/reddit/constants/postLayout.ts"),
 				l = n("./src/reddit/helpers/loadingPostComponentForLayout/index.ts");
-
-			function d() {
-				return (d = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var n = arguments[t];
-						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
-					}
-					return e
-				}).apply(this, arguments)
-			}
-			const u = Object(l.a)(o.g.Large)[0],
-				m = Object(a.a)({
+			const d = Object(l.a)(o.g.Large)[0],
+				u = Object(a.a)({
 					resolved: {},
 					chunkName: () => "FeedAnnouncementCard",
 					isReady(e) {
@@ -2837,12 +2827,12 @@
 						return "./src/reddit/components/FeedAnnouncement/FeedAnnouncementCard/index.tsx"
 					}
 				}, {
-					fallback: c.a.createElement(u, {
+					fallback: c.a.createElement(d, {
 						isLoading: !0
 					})
 				}),
-				p = Object(l.a)(o.g.Classic)[0],
-				b = Object(a.a)({
+				m = Object(l.a)(o.g.Classic)[0],
+				p = Object(a.a)({
 					resolved: {},
 					chunkName: () => "FeedAnnouncementClassic",
 					isReady(e) {
@@ -2862,12 +2852,12 @@
 						return "./src/reddit/components/FeedAnnouncement/FeedAnnouncementClassic/index.tsx"
 					}
 				}, {
-					fallback: c.a.createElement(p, {
+					fallback: c.a.createElement(m, {
 						isLoading: !0
 					})
 				}),
-				h = Object(l.a)(o.g.Compact)[0],
-				g = Object(a.a)({
+				b = Object(l.a)(o.g.Compact)[0],
+				h = Object(a.a)({
 					resolved: {},
 					chunkName: () => "FeedAnnouncementClassic",
 					isReady(e) {
@@ -2887,61 +2877,47 @@
 						return "./src/reddit/components/FeedAnnouncement/FeedAnnouncementClassic/index.tsx"
 					}
 				}, {
-					fallback: c.a.createElement(h, {
+					fallback: c.a.createElement(b, {
 						isLoading: !0
 					})
 				});
 
-			function f(e) {
-				const {
-					id: t,
-					title: n,
-					body: a,
-					url: s,
-					cta: r
-				} = e;
-				return {
-					id: t,
-					title: n,
-					body: a,
-					url: s,
-					cta: r
-				}
-			}
-
-			function v(e) {
+			function g(e) {
 				const {
 					layout: t,
 					announcement: n,
 					position: a
-				} = e, r = f(n), l = r.id, u = Object(i.c)(l, a), p = Object(i.b)(l, a), h = async () => {
-					await p(), window.location.href = r.url
+				} = e, r = n.id, l = Object(i.c)(r, a), d = Object(i.b)(r, a), m = async () => {
+					await d(), window.location.href = n.url
 				};
 				switch (t) {
 					case o.g.Large:
 					case o.g.Medium:
-						return c.a.createElement(m, d({}, r, {
+						return c.a.createElement(u, {
+							announcement: n,
 							layout: t,
-							onClose: u,
-							onClick: h
-						}));
+							onClose: l,
+							onClick: m
+						});
 					case o.g.Classic:
-						return c.a.createElement(b, d({}, r, {
+						return c.a.createElement(p, {
+							announcement: n,
 							layout: t,
-							onClose: u,
-							onClick: h
-						}));
+							onClose: l,
+							onClick: m
+						});
 					case o.g.Compact:
-						return c.a.createElement(g, d({}, r, {
+						return c.a.createElement(h, {
+							announcement: n,
 							layout: t,
-							onClose: u,
-							onClick: h
-						}));
+							onClose: l,
+							onClick: m
+						});
 					default:
 						return s.c.captureException(`Layout ${o.g} not supported by FeedAnnouncement`), null
 				}
 			}
-			t.a = v
+			t.a = g
 		},
 		"./src/reddit/components/FrontpageSidebar/index.tsx": function(e, t, n) {
 			"use strict";
@@ -8613,4 +8589,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.918982d359cc5a8a45cc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.6cac27d88b8dec58c327.js.map

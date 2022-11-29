@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.531df44f8515ebf1030d.js
-// Retrieved at 11/29/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.339194e2ca9ee77aaa49.js
+// Retrieved at 11/29/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -921,8 +921,8 @@
 					NewCommunityProgress: "00fb41f256fa96245554",
 					FeaturedLiveEntrypointAnnouncement: "5173795b82258aeaaca8",
 					FeaturedLiveEntrypointAnnouncementsCarousel: "a3ec48dc178b4a5290db",
-					FeedAnnouncementCard: "32f4843b67ef49727e7e",
-					FeedAnnouncementClassic: "084cdf757f0653cef08f",
+					FeedAnnouncementCard: "610bd65e067526468f10",
+					FeedAnnouncementClassic: "99100221c90bc7886af8",
 					Trending: "381cc40bf38795aebea1",
 					"reddit-components-InFeedPostCreation": "ce47f644cb33940d52b3",
 					"reddit-components-TabBadger-Component": "4516d1024029d4c8f8e6",
@@ -1444,7 +1444,7 @@
 						FramedGild: "5cda3622d5f2cc6d9e75",
 						GildModal: "086195bd13b2a2b62691",
 						HappeningNow: "b5eff90108e2ca754b97",
-						Frontpage: "918982d359cc5a8a45cc",
+						Frontpage: "6cac27d88b8dec58c327",
 						PostSetPage: "cb10d9e806c2abd2135b",
 						Topic: "eebda1bbbc58fdd838f9",
 						CommunityAwards: "1e8e201223c7548c07a2",
@@ -1645,8 +1645,8 @@
 						NewCommunityProgress: "c6def2f1ac190e49b294",
 						FeaturedLiveEntrypointAnnouncement: "34892a7da4c11121f89f",
 						FeaturedLiveEntrypointAnnouncementsCarousel: "a06e3a4d5c1ddfd2d0b7",
-						FeedAnnouncementCard: "4583a096a5908d4f86d3",
-						FeedAnnouncementClassic: "5e9d88d1ba41dc029dcd",
+						FeedAnnouncementCard: "5b0964688c780b817610",
+						FeedAnnouncementClassic: "ec55c092a9a1b48e9b46",
 						Trending: "96ae1abb6853fff062c0",
 						"reddit-components-InFeedPostCreation": "e98ae5052aa42292f1e2",
 						"reddit-components-TabBadger-Component": "b67a9378fb0414d144c5",
@@ -1804,4 +1804,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.531df44f8515ebf1030d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.339194e2ca9ee77aaa49.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeedAnnouncementClassic.5e9d88d1ba41dc029dcd.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeedAnnouncementClassic.ec55c092a9a1b48e9b46.js
+// Retrieved at 11/29/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeedAnnouncementClassic"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, a) {
@@ -105,108 +105,109 @@
 				}),
 				u = a("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				b = a("./src/reddit/constants/postLayout.ts"),
-				h = a("./src/reddit/helpers/styles/mixins/index.tsx"),
-				_ = a("./src/reddit/hooks/useTheme.ts"),
-				p = a("./src/reddit/icons/fonts/index.tsx"),
-				C = a("./src/reddit/components/FeedAnnouncement/utils.ts"),
-				v = a("./src/reddit/components/FeedAnnouncement/FeedAnnouncementClassic/index.m.less"),
-				x = a.n(v);
-			const A = e => {
+				p = a("./src/reddit/helpers/styles/mixins/index.tsx"),
+				h = a("./src/reddit/hooks/useTheme.ts"),
+				_ = a("./src/reddit/icons/fonts/index.tsx"),
+				x = a("./src/reddit/components/FeedAnnouncement/utils.ts"),
+				C = a("./src/reddit/components/FeedAnnouncement/FeedAnnouncementClassic/index.m.less"),
+				A = a.n(C);
+			const v = e => {
 				let {
 					imgUrl: t,
 					isCompact: a
 				} = e;
 				return a ? i.a.createElement("div", {
-					className: Object(c.a)(x.a.compactThumbnail)
-				}, null == t ? i.a.createElement(p.a, {
+					className: Object(c.a)(A.a.compactThumbnail)
+				}, null == t ? i.a.createElement(_.a, {
 					name: "text_post"
-				}) : i.a.createElement(p.a, {
+				}) : i.a.createElement(_.a, {
 					name: "image_post"
 				})) : null == t ? i.a.createElement("div", {
-					className: Object(c.a)(x.a.classicThumbnail)
+					className: Object(c.a)(A.a.classicThumbnail)
 				}, i.a.createElement("div", {
-					className: Object(c.a)(x.a.imgPlaceholder)
-				}, i.a.createElement(p.a, {
+					className: Object(c.a)(A.a.imgPlaceholder)
+				}, i.a.createElement(_.a, {
 					name: "text_post"
 				}))) : i.a.createElement("div", {
-					className: Object(c.a)(x.a.classicThumbnail)
+					className: Object(c.a)(A.a.classicThumbnail)
 				}, i.a.createElement("img", {
 					src: t
 				}))
 			};
 			t.default = function(e) {
 				const {
-					id: t,
-					body: a,
-					title: o,
-					cta: r,
-					layout: d,
-					onClose: p,
-					onClick: v
-				} = e, E = Object(_.a)(), f = Object(C.a)(t), j = d === b.g.Compact;
+					announcement: t,
+					layout: a,
+					onClose: o,
+					onClick: r
+				} = e, {
+					body: d,
+					title: _,
+					cta: C
+				} = t, E = Object(h.a)(), f = Object(x.a)(t), g = a === b.g.Compact;
 				return i.a.createElement("div", {
 					className: Object(c.a)({
-						[x.a.container]: !0,
-						[x.a.isCompact]: j
+						[A.a.container]: !0,
+						[A.a.isCompact]: g
 					}),
 					role: "button",
 					tabIndex: 0,
-					"aria-label": o,
-					onClick: v
+					"aria-label": _,
+					onClick: r
 				}, i.a.createElement("div", {
 					className: Object(c.a)({
-						[x.a.leftRail]: !0,
-						[x.a.isCompact]: j
+						[A.a.leftRail]: !0,
+						[A.a.isCompact]: g
 					})
 				}, i.a.createElement("div", {
-					className: Object(c.a)(x.a.horizontalVotes)
+					className: Object(c.a)(A.a.horizontalVotes)
 				}, i.a.createElement(m, null)), i.a.createElement("div", {
-					className: Object(c.a)(x.a.verticalVotes)
+					className: Object(c.a)(A.a.verticalVotes)
 				}, i.a.createElement(l.a, null))), i.a.createElement("div", {
-					className: Object(c.a)(x.a.innerContainer),
-					style: Object(h.c)(void 0, {
+					className: Object(c.a)(A.a.innerContainer),
+					style: Object(p.c)(void 0, {
 						theme: E
 					})
-				}, i.a.createElement(A, {
+				}, i.a.createElement(v, {
 					imgUrl: f,
-					isCompact: j
+					isCompact: g
 				}), i.a.createElement("div", {
-					className: Object(c.a)(x.a.contentContainer)
+					className: Object(c.a)(A.a.contentContainer)
 				}, i.a.createElement("div", {
-					className: Object(c.a)(x.a.headerContainer)
+					className: Object(c.a)(A.a.headerContainer)
 				}, i.a.createElement("h3", {
 					className: Object(c.a)({
-						[x.a.title]: !0,
-						[x.a.ellipsis]: !0,
-						[x.a.isCompact]: j
+						[A.a.title]: !0,
+						[A.a.ellipsis]: !0,
+						[A.a.isCompact]: g
 					})
-				}, o), i.a.createElement("button", {
-					className: x.a.headerCloseButton,
+				}, _), i.a.createElement("button", {
+					className: A.a.headerCloseButton,
 					onClick: e => {
-						e.stopPropagation(), p()
+						e.stopPropagation(), o()
 					},
 					title: s.fbt._("Close", null, {
 						hk: "4CfMwa"
 					})
 				}, i.a.createElement(u.b, null))), i.a.createElement("p", {
 					className: Object(c.a)({
-						[x.a.body]: !0,
-						[x.a.ellipsis]: !0,
-						[x.a.isCompact]: j
+						[A.a.body]: !0,
+						[A.a.ellipsis]: !0,
+						[A.a.isCompact]: g
 					})
-				}, a), i.a.createElement("div", {
-					className: Object(c.a)(x.a.fromReddit)
+				}, d), i.a.createElement("div", {
+					className: Object(c.a)(A.a.fromReddit)
 				}, s.fbt._("From Reddit", null, {
 					hk: "1Sazf8"
-				})), r ? i.a.createElement("div", {
-					className: Object(c.a)(x.a.ctaContainer)
+				})), C ? i.a.createElement("div", {
+					className: Object(c.a)(A.a.ctaContainer)
 				}, i.a.createElement("a", {
-					onClick: v,
-					className: Object(c.a)(x.a.ctaText),
+					onClick: r,
+					className: Object(c.a)(A.a.ctaText),
 					tabIndex: 0,
-					"aria-label": r
-				}, r, i.a.createElement(n.a, {
-					className: Object(c.a)(x.a.ctaCaret),
+					"aria-label": C
+				}, C, i.a.createElement(n.a, {
+					className: Object(c.a)(A.a.ctaCaret),
 					height: "20px"
 				}))) : null)))
 			}
@@ -214,31 +215,54 @@
 		"./src/reddit/components/FeedAnnouncement/utils.ts": function(e, t, a) {
 			"use strict";
 			a.d(t, "a", (function() {
-				return i
+				return l
 			}));
 			a("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = a("./src/config.ts"),
-				s = a("./node_modules/react/index.js");
-			const c = new Map,
-				o = async e => {
-					if (c.has(e)) return await c.get(e);
+				s = a("./src/lib/sentry/index.ts"),
+				c = a("./node_modules/react/index.js");
+			const o = new Map,
+				i = async e => {
+					if (o.has(e)) return await o.get(e);
 					const t = (async e => {
 						return (await fetch(e, {
 							method: "HEAD"
 						})).ok
 					})(e);
-					return c.set(e, t), await t
-				}, i = e => {
-					const [t, a] = Object(s.useState)("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII");
-					return Object(s.useEffect)(() => {
-						const t = (e => e.match(/^images_in_comments/) ? `${n.a.assetPath}/img/announcements/images_in_comments_announcement.jpg` : `${n.a.assetPath}/img/announcements/${e}.png`)(e);
+					return o.set(e, t), await t
+				}, l = e => {
+					const {
+						id: t
+					} = e, a = (e => {
+						const {
+							id: t,
+							images: a
+						} = e;
+						if (null == a || 0 === a.length) return null;
+						if (a.length > 1) return s.c.withScope(e => {
+							e.setExtra("announcementId", t), s.c.captureException("Gallery announcements are not supported")
+						}), null;
+						const n = a[0];
+						switch (n.__typename) {
+							case "ImageAsset":
+							case "AnimatedImageAsset":
+								return n.url || null;
+							default:
+								return s.c.withScope(e => {
+									e.setExtra("announcementId", t), s.c.captureException(`MediaAsset type [${n.__typename}] in images field is not supported.`)
+								}), null
+						}
+					})(e), [o, l] = Object(c.useState)(a || "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII");
+					return Object(c.useEffect)(() => {
+						if (a) return;
+						const e = (e => e.match(/^images_in_comments/) ? `${n.a.assetPath}/img/announcements/images_in_comments_announcement.jpg` : `${n.a.assetPath}/img/announcements/${e}.png`)(t);
 						let s = !1;
-						return o(t).then(e => {
-							!1 === s && a(e ? t : null)
+						return i(e).then(t => {
+							!1 === s && l(t ? e : null)
 						}), () => {
 							s = !0
 						}
-					}, [e]), t
+					}, [t]), o
 				}
 		},
 		"./src/reddit/components/VerticalVotes/DisabledVerticalVotes.tsx": function(e, t, a) {
@@ -294,4 +318,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeedAnnouncementClassic.5e9d88d1ba41dc029dcd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeedAnnouncementClassic.ec55c092a9a1b48e9b46.js.map
