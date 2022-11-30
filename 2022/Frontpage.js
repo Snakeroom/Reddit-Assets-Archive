@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.25f733792d742c43bafa.js
-// Retrieved at 11/30/2022, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.cbf07ed1f1190f38ff01.js
+// Retrieved at 11/30/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -733,7 +733,7 @@
 						sort: d,
 						t: u,
 						correlationId: m
-					} = t, p = Object(R.i)(e), f = Object(D.ab)(e) || Object(D.R)(e), v = Object(M.a)(e), _ = Object(B.r)(e), x = Object(F.b)(e), {
+					} = t, p = Object(R.i)(e), f = Object(D.ab)(e) || Object(D.R)(e), v = Object(F.b)(e), _ = Object(M.a)(e), x = Object(B.r)(e), {
 						adsSeenCount: y,
 						totalPostsSeenCount: E,
 						sessionStartTime: O
@@ -762,12 +762,12 @@
 						includeExposureEvents: !!t.isFirstLoad,
 						recentPostIds: e.posts.recent,
 						notificationContext: {
-							variant: null == v ? void 0 : v.toLowerCase()
+							variant: null == _ ? void 0 : _.toLowerCase()
 						},
 						enableMerchandisingUnitAnnouncements: H(e)
 					};
-					return f || x ? d && (k.sort = d.toUpperCase()) : (k.sort = W.J.Best, k.feedRankingContext.variant = "lo_d2x_def_pop"), k.feedRankingContext.loggedOutAllowNsfw = Object(U.a)(e), u && (k.range = u.toUpperCase()), c ? k.pageSize = Object(g.a)(i) : l && (k.pageSize = l), _ && _.ad && (k.forceAds = {
-						ad: _.ad
+					return v ? (k.sort = W.J.Best, k.feedRankingContext.variant = "lo_d2x_def_pop") : d && (k.sort = d.toUpperCase()), k.feedRankingContext.loggedOutAllowNsfw = Object(U.a)(e), u && (k.range = u.toUpperCase()), c ? k.pageSize = Object(g.a)(i) : l && (k.pageSize = l), x && x.ad && (k.forceAds = {
+						ad: x.ad
 					}), s && (k.after = Object(o.a)(s)), k
 				},
 				z = async (e, t, n, a) => {
@@ -6851,7 +6851,7 @@
 				}
 			}), xe = Object(u.c)({
 				isCommentCountAnimationEnabled: Y.d,
-				isFrontPageFirstLoaded: ee.b,
+				shouldRenderLoggedOutHomeFeed: ee.b,
 				isVoteCountAnimationEnabled: Y.h,
 				isCountAnimShadowTestEnabled: Y.e,
 				isLoggedIn: ie.R,
@@ -7076,7 +7076,7 @@
 						isBlockingInterstitialV2Enabled: t,
 						isCommentCountAnimationEnabled: n,
 						isCountAnimShadowTestEnabled: a,
-						isFrontPageFirstLoaded: s,
+						shouldRenderLoggedOutHomeFeed: s,
 						isLoggedIn: r,
 						isPopular: c,
 						isTalkLiveBarEnabled: i,
@@ -7085,7 +7085,7 @@
 						listingKey: p,
 						showSignupUpsell: b,
 						liveBarItems: h
-					} = this.props, g = this.memoizedGetInjectChildren(this.props), f = c && !r && s, v = r || s, _ = {
+					} = this.props, g = this.memoizedGetInjectChildren(this.props), f = c && !r && !s, v = r || !s, _ = {
 						baseUrl: "",
 						countrySort: this.props.countrySort,
 						sort: this.props.sort,
@@ -7889,4 +7889,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.25f733792d742c43bafa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.cbf07ed1f1190f38ff01.js.map

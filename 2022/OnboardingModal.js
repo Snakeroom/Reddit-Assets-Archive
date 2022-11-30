@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.c9645adc74c65783ffd0.js
-// Retrieved at 11/30/2022, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.4d123af4559b4c60ceac.js
+// Retrieved at 11/30/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -451,7 +451,7 @@
 						sort: d,
 						t: u,
 						correlationId: m
-					} = t, p = Object(G.i)(e), h = Object(M.ab)(e) || Object(M.R)(e), O = Object(L.a)(e), x = Object(B.r)(e), v = Object(A.b)(e), {
+					} = t, p = Object(G.i)(e), h = Object(M.ab)(e) || Object(M.R)(e), O = Object(A.b)(e), x = Object(L.a)(e), v = Object(B.r)(e), {
 						adsSeenCount: _,
 						totalPostsSeenCount: E,
 						sessionStartTime: C
@@ -480,12 +480,12 @@
 						includeExposureEvents: !!t.isFirstLoad,
 						recentPostIds: e.posts.recent,
 						notificationContext: {
-							variant: null == O ? void 0 : O.toLowerCase()
+							variant: null == x ? void 0 : x.toLowerCase()
 						},
 						enableMerchandisingUnitAnnouncements: U(e)
 					};
-					return h || v ? d && (j.sort = d.toUpperCase()) : (j.sort = Q.J.Best, j.feedRankingContext.variant = "lo_d2x_def_pop"), j.feedRankingContext.loggedOutAllowNsfw = Object(D.a)(e), u && (j.range = u.toUpperCase()), o ? j.pageSize = Object(f.a)(i) : l && (j.pageSize = l), x && x.ad && (j.forceAds = {
-						ad: x.ad
+					return O ? (j.sort = Q.J.Best, j.feedRankingContext.variant = "lo_d2x_def_pop") : d && (j.sort = d.toUpperCase()), j.feedRankingContext.loggedOutAllowNsfw = Object(D.a)(e), u && (j.range = u.toUpperCase()), o ? j.pageSize = Object(f.a)(i) : l && (j.pageSize = l), v && v.ad && (j.forceAds = {
+						ad: v.ad
 					}), r && (j.after = Object(c.a)(r)), j
 				},
 				K = async (e, t, n, s) => {
@@ -5229,4 +5229,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.c9645adc74c65783ffd0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.4d123af4559b4c60ceac.js.map
