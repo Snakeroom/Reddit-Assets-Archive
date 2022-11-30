@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostSetPage.cb10d9e806c2abd2135b.js
-// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostSetPage.8f31f2c17a7b32c108d9.js
+// Retrieved at 11/30/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostSetPage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -910,12 +910,23 @@
 					experimentName: v.rf
 				}) === v.Md
 			};
-			var S = n("./src/reddit/selectors/recapGame.ts"),
-				O = n("./src/reddit/components/BackToTop/index.m.less"),
-				k = n.n(O);
+			var S = n("./src/reddit/selectors/experiments/shredditParity.ts"),
+				O = n("./src/reddit/selectors/recapGame.ts"),
+				k = n("./src/reddit/components/BackToTop/index.m.less"),
+				C = n.n(k);
+
+			function j() {
+				return (j = Object.assign || function(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var n = arguments[t];
+						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
+					}
+					return e
+				}).apply(this, arguments)
+			}
 			const {
-				fbt: C
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), j = e => {
+				fbt: N
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), w = e => {
 				if (e) {
 					const e = document.getElementById(c.e);
 					e && e.scroll(0, 0)
@@ -931,32 +942,33 @@
 					p = Object(r.useRef)(null),
 					[h, g] = Object(r.useState)(!1),
 					[x, v] = Object(r.useState)(),
-					[_, O] = Object(r.useState)(),
-					[N, w] = Object(r.useState)(0),
-					I = Object(i.e)(f.l),
-					T = Object(i.e)(E),
-					L = Object(i.e)(S.a),
-					P = I ? I.id : "anonymous",
-					R = "on" === L.recapGameState,
-					B = () => {
-						h && O(setTimeout(() => {
-							p.current && (p.current.classList.add(k.a.transform), p.current.style.width = `${N}px`)
+					[_, k] = Object(r.useState)(),
+					[I, T] = Object(r.useState)(0),
+					L = Object(i.e)(f.l),
+					P = Object(i.e)(E),
+					R = Object(i.e)(S.a),
+					B = Object(i.e)(O.a),
+					M = L ? L.id : "anonymous",
+					F = "on" === B.recapGameState,
+					A = () => {
+						h && k(setTimeout(() => {
+							p.current && (p.current.classList.add(C.a.transform), p.current.style.width = `${I}px`)
 						}, 4750)), h && v(setTimeout(() => {
-							g(!1), Object(u.Ub)(P, !1)
+							g(!1), Object(u.Ub)(M, !1)
 						}, 5e3))
 					};
 				return Object(r.useEffect)(() => {
-					R || setTimeout(() => {
-						const e = Object(u.O)(P);
+					F || setTimeout(() => {
+						const e = Object(u.O)(M);
 						e ? Object(a.e)(e.lastSeenTime) >= 24 && e.dropSkip === u.a.NONE ? g(!0) : Date.now() >= new Date(2022, 10, 16).getTime() && e.dropSkip !== u.a.THIRD && g(!0) : g(!0)
 					})
-				}, [P, R]), s.a.createElement("div", {
-					className: Object(o.a)(t, k.a.container),
+				}, [M, F]), s.a.createElement("div", {
+					className: Object(o.a)(t, C.a.container),
 					style: c
-				}, h && T && !n && !R ? s.a.createElement(y, {
+				}, h && P && !n && !F ? s.a.createElement(y, {
 					ref: p,
 					onBananaPillClick: () => {
-						x && clearTimeout(x), _ && clearTimeout(_), g(!1), Object(u.Ub)(P, !0), b((() => e => ({
+						x && clearTimeout(x), _ && clearTimeout(_), g(!1), Object(u.Ub)(M, !0), b((() => e => ({
 							source: "recap",
 							action: "click",
 							noun: "feed_banana",
@@ -964,22 +976,25 @@
 						}))())
 					},
 					onMouseEnter: () => {
-						x && clearTimeout(x), _ && clearTimeout(_), p.current && (p.current.classList.remove(k.a.transform), p.current.style.width = "65px")
+						x && clearTimeout(x), _ && clearTimeout(_), p.current && (p.current.classList.remove(C.a.transform), p.current.style.width = "65px")
 					},
-					onSetTimer: B,
-					setAltTextWidth: w,
+					onSetTimer: A,
+					setAltTextWidth: T,
 					setTimerByObserver: e => {
-						e.isIntersecting && (B(), b((() => e => ({
+						e.isIntersecting && (A(), b((() => e => ({
 							source: "recap",
 							action: "view",
 							noun: "feed_banana",
 							...m.o(e)
 						}))()))
 					}
-				}) : s.a.createElement(l.a, {
-					className: k.a.button,
-					onClick: () => j(n)
-				}, C._("Back to Top", null, {
+				}) : s.a.createElement(l.a, j({
+					className: C.a.button,
+					onClick: () => w(n)
+				}, R && {
+					priority: l.c.Secondary,
+					rplStyle: !0
+				}), N._("Back to Top", null, {
 					hk: "YjBtV"
 				})))
 			}
@@ -3001,4 +3016,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.cb10d9e806c2abd2135b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.8f31f2c17a7b32c108d9.js.map

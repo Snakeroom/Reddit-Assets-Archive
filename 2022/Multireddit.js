@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.71d35c6e43962d85baac.js
-// Retrieved at 11/29/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.91f826e96427280979b1.js
+// Retrieved at 11/30/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, n) {
@@ -128,11 +128,11 @@
 			})), n.d(t, "c", (function() {
 				return S
 			})), n.d(t, "A", (function() {
-				return C
-			})), n.d(t, "B", (function() {
-				return D
-			})), n.d(t, "z", (function() {
 				return j
+			})), n.d(t, "B", (function() {
+				return C
+			})), n.d(t, "z", (function() {
+				return D
 			})), n.d(t, "y", (function() {
 				return g
 			})), n.d(t, "v", (function() {
@@ -164,9 +164,9 @@
 				O = "MULTIREDDIT__ADD_SUBREDDIT_FAILURE",
 				T = "MULTIREDDIT__ADD_SUBREDDIT_PENDING",
 				S = "MULTIREDDIT__ADD_SUBREDDIT_SUCCESS",
-				C = "MULTIREDDIT__SUBREDDIT_RECOMMENDATIONS_PENDING",
-				D = "MULTIREDDIT__SUBREDDIT_RECOMMENDATIONS_SUCCESS",
-				j = "MULTIREDDIT__SUBREDDIT_RECOMMENDATIONS_FAILURE",
+				j = "MULTIREDDIT__SUBREDDIT_RECOMMENDATIONS_PENDING",
+				C = "MULTIREDDIT__SUBREDDIT_RECOMMENDATIONS_SUCCESS",
+				D = "MULTIREDDIT__SUBREDDIT_RECOMMENDATIONS_FAILURE",
 				g = 10,
 				I = "MULTIREDDIT__REMOVE_SUBREDDIT_FAILURE",
 				y = "MULTIREDDIT__REMOVE_SUBREDDIT_PENDING",
@@ -373,9 +373,9 @@
 			}
 			var T = n("./src/reddit/models/Toast/index.ts"),
 				S = n("./src/reddit/selectors/profile.ts"),
-				C = n("./src/reddit/selectors/subreddit.ts"),
-				D = n("./src/reddit/selectors/subscriptions.ts"),
-				j = n("./src/reddit/selectors/user.ts");
+				j = n("./src/reddit/selectors/subreddit.ts"),
+				C = n("./src/reddit/selectors/subscriptions.ts"),
+				D = n("./src/reddit/selectors/user.ts");
 			const g = () => r.fbt._("Sorry, failed to update favorites.", null, {
 					hk: "40XHkp"
 				}),
@@ -403,7 +403,7 @@
 					let {
 						apiContext: b
 					} = m, p = e.map(e => e.type === u.a.SUBREDDIT ? {
-						id: Object(C.I)(d(), e.name),
+						id: Object(j.I)(d(), e.name),
 						name: e.name,
 						type: e.type
 					} : {
@@ -411,10 +411,10 @@
 						name: `${o.qc}${e.name}`,
 						type: e.type
 					});
-					if (!Object(j.R)(d())) return i(Object(a.k)({
+					if (!Object(D.R)(d())) return i(Object(a.k)({
 						actionSource: a.a.Subscribe
 					})), void i(Object(c.openRegisterModal)());
-					const _ = Object(j.l)(d());
+					const _ = Object(D.l)(d());
 					if (_) {
 						const t = p.length,
 							n = e.length;
@@ -431,7 +431,7 @@
 						nameIdentifiers: e,
 						profileModels: d().profiles.models,
 						subredditModels: d().subreddits.models,
-						subscriptionsCount: Object(D.b)(d()),
+						subscriptionsCount: Object(C.b)(d()),
 						userIsSubscriber: t,
 						widgetId: n
 					}));
@@ -472,7 +472,7 @@
 							nameIdentifiers: e,
 							profileModels: d().profiles.models,
 							subredditModels: d().subreddits.models,
-							subscriptionsCount: Object(D.b)(d()),
+							subscriptionsCount: Object(C.b)(d()),
 							userIsSubscriber: !t,
 							widgetId: n
 						}));
@@ -487,7 +487,7 @@
 						apiContext: o
 					} = r;
 					const s = n(),
-						i = Object(C.Q)(s, {
+						i = Object(j.Q)(s, {
 							identifier: e
 						});
 					if (!i) throw new Error(`actions.subscription -- No subreddit or profile found with id ${e.id}`);
@@ -503,7 +503,7 @@
 							type: e.type,
 							name: i.name
 						},
-						x = () => Object(C.kb)(n(), {
+						x = () => Object(j.kb)(n(), {
 							identifier: h
 						});
 					(x() || (await t(N([h], !0)), x())) && (t(R({
@@ -557,7 +557,7 @@
 					} = s;
 					const c = n(),
 						a = c.multireddits.models;
-					if (!Object(j.R)(c)) return;
+					if (!Object(D.R)(c)) return;
 					const d = function() {
 							let e = !(arguments.length > 0 && void 0 !== arguments[0]) || arguments[0];
 							t(Object(l.f)({
@@ -737,9 +737,9 @@
 				O = n("./src/reddit/constants/colors.ts"),
 				T = n("./src/reddit/constants/parameters.ts"),
 				S = n("./src/reddit/controls/InternalLink/index.tsx"),
-				C = n("./src/reddit/helpers/styles/smartTextColor.ts"),
-				D = n("./src/reddit/icons/svgs/Close/index.tsx"),
-				j = n("./src/reddit/models/Flair/index.ts"),
+				j = n("./src/reddit/helpers/styles/smartTextColor.ts"),
+				C = n("./src/reddit/icons/svgs/Close/index.tsx"),
+				D = n("./src/reddit/models/Flair/index.ts"),
 				g = n("./src/reddit/models/Theme/NewColorSystem/index.ts"),
 				I = n("./src/reddit/components/Flair/index.m.less"),
 				y = n.n(I);
@@ -819,7 +819,7 @@
 					}, this.props.text, this.props.isSelected && a.a.createElement(A, {
 						to: "./",
 						onClick: this.props.onCloseClick
-					}, a.a.createElement(D.a, {
+					}, a.a.createElement(C.a, {
 						className: y.a.CloseIcon,
 						style: {
 							fill: this.props.backgroundColor || Object(g.a)(this.props).flair
@@ -847,7 +847,7 @@
 					let t = "",
 						n = !1;
 					const r = e.richtext.map((r, o) => {
-						if (r.e === j.c.Emoji) {
+						if (r.e === D.c.Emoji) {
 							const s = r;
 							return t += s.a, n = !0, a.a.createElement(N, {
 								forceSmallEmojis: e.forceSmallEmojis,
@@ -878,7 +878,7 @@
 					}, r, e.isSelected && a.a.createElement(A, {
 						to: "./",
 						onClick: e.onCloseClick
-					}, a.a.createElement(D.a, {
+					}, a.a.createElement(C.a, {
 						className: y.a.CloseIcon,
 						style: {
 							fill: e.backgroundColor || Object(g.a)(e).flair
@@ -896,7 +896,7 @@
 						to: e.to
 					})
 				}),
-				B = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(g.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(C.a)(Object(g.a)(e).post, O.a.black, O.a.white) : e.textColor === j.e.Dark ? O.a.black : O.a.white,
+				B = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(g.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(j.a)(Object(g.a)(e).post, O.a.black, O.a.white) : e.textColor === D.e.Dark ? O.a.black : O.a.white,
 				G = b.a.wrapped(P, "TextFlair", y.a),
 				H = b.a.wrapped(F, "RichTextFlair", y.a),
 				W = e => {
@@ -944,7 +944,7 @@
 					[y.a.large]: s && e.large
 				}, t);
 				switch (o.type) {
-					case j.f.Richtext:
+					case D.f.Richtext:
 						return n || !o.richtext ? null : a.a.createElement(H, {
 							backgroundColor: o.backgroundColor,
 							className: _,
@@ -960,7 +960,7 @@
 							textColor: o.textColor,
 							to: f
 						});
-					case j.f.Text:
+					case D.f.Text:
 						return n || !o.text ? null : a.a.createElement(G, {
 							backgroundColor: o.backgroundColor,
 							className: _,
@@ -975,7 +975,7 @@
 							redditStyle: !b,
 							to: f
 						});
-					case j.f.Meta:
+					case D.f.Meta:
 						return a.a.createElement(G, {
 							backgroundColor: o.backgroundColor,
 							className: t,
@@ -986,20 +986,20 @@
 							redditStyle: !b,
 							to: f
 						});
-					case j.f.Nsfw:
-					case j.f.Spoiler:
+					case D.f.Nsfw:
+					case D.f.Spoiler:
 						return a.a.createElement(V, {
 							className: t,
 							text: o.text,
 							type: o.type
 						});
-					case j.f.Quarantined:
+					case D.f.Quarantined:
 						return null;
-					case j.f.Oc:
+					case D.f.Oc:
 						return a.a.createElement(G, {
 							backgroundColor: O.a.alienblue,
 							text: o.text,
-							textColor: j.e.Light,
+							textColor: D.e.Light,
 							tooltip: r.fbt._("This post is marked as Original Content [OC]", null, {
 								hk: "h7je6"
 							})
@@ -1930,6 +1930,29 @@
 					}) === r.Md
 				}
 		},
+		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return a
+			})), n.d(t, "b", (function() {
+				return l
+			}));
+			var r = n("./src/reddit/constants/experiments.ts"),
+				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
+				s = n("./node_modules/reselect/es/index.js"),
+				i = n("./src/reddit/selectors/user.ts");
+			const c = Object(s.a)(i.R, e => !e),
+				a = Object(s.a)(e => Object(o.c)(e, {
+					experimentEligibilitySelector: c,
+					experimentName: r.Hf
+				}), e => e === r.Md),
+				d = /^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/,
+				l = (e, t) => {
+					a(t) && e.block(e => {
+						if (e.pathname.match(d)) return window.location.href = e.pathname, !1
+					})
+				}
+		},
 		"./src/reddit/selectors/recapGame.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -1955,4 +1978,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.71d35c6e43962d85baac.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.91f826e96427280979b1.js.map

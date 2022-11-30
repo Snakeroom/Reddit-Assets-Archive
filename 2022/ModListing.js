@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.9ea006559dfc38506f40.js
-// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.d1dbf2e45e0aadcdddae.js
+// Retrieved at 11/30/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, r) {
@@ -2189,6 +2189,29 @@
 					}) === n.Md
 				}
 		},
+		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "a", (function() {
+				return a
+			})), r.d(t, "b", (function() {
+				return u
+			}));
+			var n = r("./src/reddit/constants/experiments.ts"),
+				s = r("./src/reddit/helpers/chooseVariant/index.ts"),
+				i = r("./node_modules/reselect/es/index.js"),
+				o = r("./src/reddit/selectors/user.ts");
+			const d = Object(i.a)(o.R, e => !e),
+				a = Object(i.a)(e => Object(s.c)(e, {
+					experimentEligibilitySelector: d,
+					experimentName: n.Hf
+				}), e => e === n.Md),
+				c = /^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/,
+				u = (e, t) => {
+					a(t) && e.block(e => {
+						if (e.pathname.match(c)) return window.location.href = e.pathname, !1
+					})
+				}
+		},
 		"./src/reddit/selectors/recapGame.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
@@ -2211,4 +2234,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.9ea006559dfc38506f40.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.d1dbf2e45e0aadcdddae.js.map

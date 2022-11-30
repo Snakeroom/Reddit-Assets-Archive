@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.b67d649a38a16cbb81fb.js
-// Retrieved at 11/29/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.d54c3cf8129d07221c44.js
+// Retrieved at 11/30/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -20394,20 +20394,23 @@
 							doNotHideOtherSubscribeButtons: m,
 							getEventFactory: p,
 							onSubscriptionsRequested: h,
-							...b
-						} = this.props, f = this.state.isHovered, g = Object(c.a)({
+							priority: b,
+							isShredditParityEnabled: f,
+							...g
+						} = this.props, v = this.state.isHovered, E = Object(c.a)({
 							type: t.type,
-							key: f ? "unsubscribe" : "subscribed"
-						});
+							key: v ? "unsubscribe" : "subscribed"
+						}), C = g.shouldReverseColor ? a.c.Secondary : a.c.Primary;
 						return r.a.createElement(a.t, u({
 							className: e,
-							priority: b.shouldReverseColor ? a.c.Primary : a.c.Secondary,
-							text: g,
+							priority: b || C,
+							rplStyle: f,
+							text: E,
 							onClick: this.onClick,
 							onMouseEnter: this.onMouseEnter,
 							onMouseLeave: this.onMouseLeave,
 							size: a.d.XSP
-						}, b))
+						}, g))
 					}, this.renderSubscribeButton = () => {
 						const {
 							className: e,
@@ -20421,18 +20424,21 @@
 							doNotHideOtherSubscribeButtons: m,
 							getEventFactory: p,
 							onSubscriptionsRequested: h,
-							...b
-						} = this.props, f = Object(c.a)({
+							priority: b,
+							isShredditParityEnabled: f,
+							...g
+						} = this.props, v = Object(c.a)({
 							type: t.type,
 							key: "subscribe"
-						});
+						}), E = g.shouldReverseColor ? a.c.Secondary : a.c.Primary;
 						return r.a.createElement(a.t, u({
 							className: e,
-							priority: b.shouldReverseColor ? a.c.Secondary : a.c.Primary,
+							priority: b || E,
 							size: a.d.XSP,
-							text: f,
+							rplStyle: f,
+							text: v,
 							onClick: this.onClick
-						}, b, {
+						}, g, {
 							id: `subscribe-button-${s}`,
 							onMouseEnter: this.onMouseEnter,
 							onMouseLeave: this.onMouseLeave
@@ -39579,4 +39585,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.b67d649a38a16cbb81fb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.d54c3cf8129d07221c44.js.map

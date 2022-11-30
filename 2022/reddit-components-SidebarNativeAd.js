@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.9cdb24420ad72537685f.js
-// Retrieved at 11/29/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.a3fbe8d179d7343372f5.js
+// Retrieved at 11/30/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2955,20 +2955,23 @@
 							doNotHideOtherSubscribeButtons: m,
 							getEventFactory: p,
 							onSubscriptionsRequested: b,
-							...f
-						} = this.props, h = this.state.isHovered, v = Object(c.a)({
+							priority: f,
+							isShredditParityEnabled: h,
+							...v
+						} = this.props, _ = this.state.isHovered, g = Object(c.a)({
 							type: t.type,
-							key: h ? "unsubscribe" : "subscribed"
-						});
+							key: _ ? "unsubscribe" : "subscribed"
+						}), x = v.shouldReverseColor ? a.c.Secondary : a.c.Primary;
 						return s.a.createElement(a.t, u({
 							className: e,
-							priority: f.shouldReverseColor ? a.c.Primary : a.c.Secondary,
-							text: v,
+							priority: f || x,
+							rplStyle: h,
+							text: g,
 							onClick: this.onClick,
 							onMouseEnter: this.onMouseEnter,
 							onMouseLeave: this.onMouseLeave,
 							size: a.d.XSP
-						}, f))
+						}, v))
 					}, this.renderSubscribeButton = () => {
 						const {
 							className: e,
@@ -2982,18 +2985,21 @@
 							doNotHideOtherSubscribeButtons: m,
 							getEventFactory: p,
 							onSubscriptionsRequested: b,
-							...f
-						} = this.props, h = Object(c.a)({
+							priority: f,
+							isShredditParityEnabled: h,
+							...v
+						} = this.props, _ = Object(c.a)({
 							type: t.type,
 							key: "subscribe"
-						});
+						}), g = v.shouldReverseColor ? a.c.Secondary : a.c.Primary;
 						return s.a.createElement(a.t, u({
 							className: e,
-							priority: f.shouldReverseColor ? a.c.Secondary : a.c.Primary,
+							priority: f || g,
 							size: a.d.XSP,
-							text: h,
+							rplStyle: h,
+							text: _,
 							onClick: this.onClick
-						}, f, {
+						}, v, {
 							id: `subscribe-button-${o}`,
 							onMouseEnter: this.onMouseEnter,
 							onMouseLeave: this.onMouseLeave
@@ -5241,4 +5247,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.9cdb24420ad72537685f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.a3fbe8d179d7343372f5.js.map

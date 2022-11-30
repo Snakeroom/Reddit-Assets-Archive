@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.64f71d6b26ee6614818f.js
-// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.882dd2ca865d9acf4eb8.js
+// Retrieved at 11/30/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -99,12 +99,23 @@
 					experimentName: _.rf
 				}) === _.Md
 			};
-			var v = s("./src/reddit/selectors/recapGame.ts"),
+			var v = s("./src/reddit/selectors/experiments/shredditParity.ts"),
+				O = s("./src/reddit/selectors/recapGame.ts"),
 				C = s("./src/reddit/components/BackToTop/index.m.less"),
-				O = s.n(C);
+				j = s.n(C);
+
+			function k() {
+				return (k = Object.assign || function(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var s = arguments[t];
+						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
+					}
+					return e
+				}).apply(this, arguments)
+			}
 			const {
-				fbt: j
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), k = e => {
+				fbt: N
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), T = e => {
 				if (e) {
 					const e = document.getElementById(d.e);
 					e && e.scroll(0, 0)
@@ -121,31 +132,32 @@
 					[h, x] = Object(n.useState)(!1),
 					[f, _] = Object(n.useState)(),
 					[S, C] = Object(n.useState)(),
-					[N, T] = Object(n.useState)(0),
-					w = Object(a.e)(g.l),
-					P = Object(a.e)(y),
-					L = Object(a.e)(v.a),
-					I = w ? w.id : "anonymous",
-					G = "on" === L.recapGameState,
-					B = () => {
+					[w, P] = Object(n.useState)(0),
+					L = Object(a.e)(g.l),
+					I = Object(a.e)(y),
+					G = Object(a.e)(v.a),
+					B = Object(a.e)(O.a),
+					F = L ? L.id : "anonymous",
+					R = "on" === B.recapGameState,
+					M = () => {
 						h && C(setTimeout(() => {
-							p.current && (p.current.classList.add(O.a.transform), p.current.style.width = `${N}px`)
+							p.current && (p.current.classList.add(j.a.transform), p.current.style.width = `${w}px`)
 						}, 4750)), h && _(setTimeout(() => {
-							x(!1), Object(u.Ub)(I, !1)
+							x(!1), Object(u.Ub)(F, !1)
 						}, 5e3))
 					};
 				return Object(n.useEffect)(() => {
-					G || setTimeout(() => {
-						const e = Object(u.O)(I);
+					R || setTimeout(() => {
+						const e = Object(u.O)(F);
 						e ? Object(o.e)(e.lastSeenTime) >= 24 && e.dropSkip === u.a.NONE ? x(!0) : Date.now() >= new Date(2022, 10, 16).getTime() && e.dropSkip !== u.a.THIRD && x(!0) : x(!0)
 					})
-				}, [I, G]), r.a.createElement("div", {
-					className: Object(i.a)(t, O.a.container),
+				}, [F, R]), r.a.createElement("div", {
+					className: Object(i.a)(t, j.a.container),
 					style: d
-				}, h && P && !s && !G ? r.a.createElement(E, {
+				}, h && I && !s && !R ? r.a.createElement(E, {
 					ref: p,
 					onBananaPillClick: () => {
-						f && clearTimeout(f), S && clearTimeout(S), x(!1), Object(u.Ub)(I, !0), b((() => e => ({
+						f && clearTimeout(f), S && clearTimeout(S), x(!1), Object(u.Ub)(F, !0), b((() => e => ({
 							source: "recap",
 							action: "click",
 							noun: "feed_banana",
@@ -153,22 +165,25 @@
 						}))())
 					},
 					onMouseEnter: () => {
-						f && clearTimeout(f), S && clearTimeout(S), p.current && (p.current.classList.remove(O.a.transform), p.current.style.width = "65px")
+						f && clearTimeout(f), S && clearTimeout(S), p.current && (p.current.classList.remove(j.a.transform), p.current.style.width = "65px")
 					},
-					onSetTimer: B,
-					setAltTextWidth: T,
+					onSetTimer: M,
+					setAltTextWidth: P,
 					setTimerByObserver: e => {
-						e.isIntersecting && (B(), b((() => e => ({
+						e.isIntersecting && (M(), b((() => e => ({
 							source: "recap",
 							action: "view",
 							noun: "feed_banana",
 							...m.o(e)
 						}))()))
 					}
-				}) : r.a.createElement(l.a, {
-					className: O.a.button,
-					onClick: () => k(s)
-				}, j._("Back to Top", null, {
+				}) : r.a.createElement(l.a, k({
+					className: j.a.button,
+					onClick: () => T(s)
+				}, G && {
+					priority: l.c.Secondary,
+					rplStyle: !0
+				}), N._("Back to Top", null, {
 					hk: "YjBtV"
 				})))
 			}
@@ -236,7 +251,7 @@
 				}(t, h, f(b, l)), {
 					highlightValue: S,
 					selectedIndex: v,
-					onKeyDown: O,
+					onKeyDown: C,
 					isClosed: j,
 					setClosed: k
 				} = function(e, t, s) {
@@ -268,7 +283,7 @@
 					className: Object(c.a)(y.a.geoInput, u),
 					name: N,
 					disabled: o,
-					onKeyDown: O,
+					onKeyDown: C,
 					value: S && S.name || t,
 					placeholder: r.fbt._("Add location", null, {
 						hk: "1BaqFd"
@@ -280,7 +295,7 @@
 						g(!0), d()
 					},
 					onBlur: () => g(!1)
-				}), x.length && !j ? i.a.createElement(C, {
+				}), x.length && !j ? i.a.createElement(O, {
 					id: l,
 					items: x.map(e => e.name),
 					selectedIndex: v,
@@ -291,7 +306,7 @@
 				}) : null)
 			}
 
-			function C(e) {
+			function O(e) {
 				const {
 					id: t,
 					items: s,
@@ -310,7 +325,7 @@
 					})
 				}, e)))
 			}
-			const O = () => {};
+			const C = () => {};
 
 			function j(e) {
 				const {
@@ -318,9 +333,9 @@
 					initialValue: s,
 					initialPlace: n,
 					disabled: u = !1,
-					onFocus: m = O,
-					onPlace: b = O,
-					onValue: p = O,
+					onFocus: m = C,
+					onPlace: b = C,
+					onValue: p = C,
 					inputClassName: h
 				} = e, g = Object(l.a)(), [x] = Object(a.useState)(() => Object(o.a)()), [f, E] = Object(a.useState)(s || ""), [_, S] = Object(a.useState)(n);
 				return g ? i.a.createElement("form", {
@@ -460,13 +475,13 @@
 				S = s.n(_);
 			const {
 				fbt: y
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), v = c.a.a("Link", S.a), C = Object(i.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), v = c.a.a("Link", S.a), O = Object(i.c)({
 				countryCode: f.b,
 				d2xPdpSideRailRecsVariant: g.a,
 				isCountrySitesEnabled: h.b,
 				isD2xPdpSideRailRecsEnabled: g.b,
 				isNavbarLikeMwebEnabled: x.a
-			}), O = Object(a.b)(C), j = Object(b.v)({
+			}), C = Object(a.b)(O), j = Object(b.v)({
 				isFrontpage: b.B,
 				isCountrySitePage: b.z
 			}), k = e => {
@@ -527,7 +542,7 @@
 					hk: "4BrCkA"
 				})))
 			};
-			t.a = j(O(Object(d.c)(e => {
+			t.a = j(C(Object(d.c)(e => {
 				const t = Object(a.f)().getState(),
 					s = Object(h.a)(t, Object(o.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
@@ -690,7 +705,7 @@
 						})
 					}, t)
 				};
-			class C extends i.Component {
+			class O extends i.Component {
 				constructor(e) {
 					super(e), this.containerEl = null, this.windowHeight = 1 / 0, this.getStickyContents = () => ({
 						shouldAdSticky: this.windowHeight > _,
@@ -752,8 +767,8 @@
 					}))
 				}
 			}
-			const O = Object(m.v)();
-			t.a = O(C)
+			const C = Object(m.v)();
+			t.a = C(O)
 		},
 		"./src/reddit/components/StructuredStyles/BladeDrawerController/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -802,19 +817,19 @@
 				_ = s.n(E);
 			const {
 				fbt: S
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), y = u.a.div("BladeContainer", _.a), v = u.a.wrapped(h.a, "CloseIcon", _.a), C = u.a.div("LoadingTitleContainer", _.a), O = u.a.div("LoadingNavContainer", _.a), j = u.a.div("ShortLoadingNav", _.a), k = u.a.wrapped(p.a, "ThemedChevron", _.a), N = e => {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), y = u.a.div("BladeContainer", _.a), v = u.a.wrapped(h.a, "CloseIcon", _.a), O = u.a.div("LoadingTitleContainer", _.a), C = u.a.div("LoadingNavContainer", _.a), j = u.a.div("ShortLoadingNav", _.a), k = u.a.wrapped(p.a, "ThemedChevron", _.a), N = e => {
 				let {
 					...t
 				} = e;
 				return i.a.createElement(y, null, i.a.createElement(v, null), i.a.createElement(b.k, null, i.a.createElement(b.p, null, S._("Back to mod tools", null, {
 					hk: "1YCI0W"
-				})), i.a.createElement(b.o, null, i.a.createElement(C, null, i.a.createElement("div", {
+				})), i.a.createElement(b.o, null, i.a.createElement(O, null, i.a.createElement("div", {
 					className: Object(l.a)(_.a.LoadingTitle, t.isLoading && _.a.loading)
-				})), i.a.createElement(O, null, i.a.createElement("div", {
+				})), i.a.createElement(C, null, i.a.createElement("div", {
 					className: Object(l.a)(_.a.LoadingNav, t.isLoading && _.a.loading)
-				}), i.a.createElement(k, null)), i.a.createElement(O, null, i.a.createElement(j, null), i.a.createElement(k, null)), i.a.createElement(O, null, i.a.createElement("div", {
+				}), i.a.createElement(k, null)), i.a.createElement(C, null, i.a.createElement(j, null), i.a.createElement(k, null)), i.a.createElement(C, null, i.a.createElement("div", {
 					className: Object(l.a)(_.a.LoadingNav, t.isLoading && _.a.loading)
-				}), i.a.createElement(k, null)), i.a.createElement(O, null, i.a.createElement(j, null), i.a.createElement(k, null)), i.a.createElement(O, null, i.a.createElement("div", {
+				}), i.a.createElement(k, null)), i.a.createElement(C, null, i.a.createElement(j, null), i.a.createElement(k, null)), i.a.createElement(C, null, i.a.createElement("div", {
 					className: Object(l.a)(_.a.LoadingNav, t.isLoading && _.a.loading)
 				}), i.a.createElement(k, null)))))
 			}, T = Object(d.a)({
@@ -988,11 +1003,11 @@
 				S = s("./src/reddit/helpers/name/index.ts"),
 				y = s("./src/reddit/helpers/widgets/index.tsx"),
 				v = s("./src/reddit/selectors/subreddit.ts"),
-				C = s("./src/reddit/selectors/user.ts"),
-				O = s("./src/reddit/components/TopicSidebar/SubredditList/Subreddit/index.m.less"),
-				j = s.n(O);
+				O = s("./src/reddit/selectors/user.ts"),
+				C = s("./src/reddit/components/TopicSidebar/SubredditList/Subreddit/index.m.less"),
+				j = s.n(C);
 			const k = Object(h.c)({
-				isLoggedIn: C.R,
+				isLoggedIn: O.R,
 				subreddit: v.Y,
 				subredditAboutInfo: v.y
 			});
@@ -1199,8 +1214,8 @@
 					const t = S(e);
 					return Object(f.f)(t)
 				};
-			var C = s("./src/reddit/components/Widgets/ThemedWidget/index.m.less"),
-				O = s.n(C);
+			var O = s("./src/reddit/components/Widgets/ThemedWidget/index.m.less"),
+				C = s.n(O);
 			const {
 				fbt: j
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), k = Object(u.v)(), N = Object(a.b)(() => Object(i.c)({
@@ -1258,19 +1273,19 @@
 						title: u,
 						titleClassName: b,
 						truncateThreshold: p
-					} = this.props, h = s ? O.a.widgetContentOnly : O.a.widgetContent, g = !n && this.props.styles, x = g ? this.getWidgetBackgroundStyles() : {}, f = g ? this.getWidgetHeaderStyles() : {};
+					} = this.props, h = s ? C.a.widgetContentOnly : C.a.widgetContent, g = !n && this.props.styles, x = g ? this.getWidgetBackgroundStyles() : {}, f = g ? this.getWidgetHeaderStyles() : {};
 					return r.a.createElement("div", {
-						className: Object(o.a)(t, O.a.widgetBackground, {
-							[O.a.redditStyle]: n,
-							[O.a.clickable]: !!c,
-							[O.a.truncatedGradient]: this.state.isTruncated && !this.props.noGradient
+						className: Object(o.a)(t, C.a.widgetBackground, {
+							[C.a.redditStyle]: n,
+							[C.a.clickable]: !!c,
+							[C.a.truncatedGradient]: this.state.isTruncated && !this.props.noGradient
 						}),
 						"data-redditstyle": n,
 						onClick: c,
 						style: x
 					}, u && r.a.createElement("div", {
-						className: Object(o.a)(O.a.widgetHeader, {
-							[O.a.clickable]: !!l
+						className: Object(o.a)(C.a.widgetHeader, {
+							[C.a.clickable]: !!l
 						}),
 						id: i,
 						style: {
@@ -1279,19 +1294,19 @@
 						},
 						onClick: l
 					}, r.a.createElement("div", {
-						className: Object(o.a)(O.a.widgetTitle, b)
+						className: Object(o.a)(C.a.widgetTitle, b)
 					}, r.a.createElement(d.b, {
 						type: d.a.Widget
 					}, u)), a), r.a.createElement("div", {
 						className: Object(o.a)(h, {
-							[O.a.truncated]: this.state.isTruncated
+							[C.a.truncated]: this.state.isTruncated
 						}),
 						ref: this.contentRef,
 						style: {
 							maxHeight: this.state.isTruncated ? p : "none"
 						}
 					}, e), this.state.isTruncated && r.a.createElement(m.r, {
-						className: O.a.seeMore,
+						className: C.a.seeMore,
 						onClick: this.handleSeeMoreClick
 					}, j._("See More", null, {
 						hk: "4w47Qu"
@@ -1569,9 +1584,9 @@
 					to: "/"
 				}, r.a.createElement(E.l, null, "Go Home")))
 			}
-			var C = s("./src/config.ts");
+			var O = s("./src/config.ts");
 			const {
-				fbt: O
+				fbt: C
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 
 			function j() {
@@ -1579,14 +1594,14 @@
 					className: S.a.header
 				}, r.a.createElement("img", {
 					className: S.a.headerImage,
-					src: `${C.a.assetPath}/img/mtm-snoo.png`
+					src: `${O.a.assetPath}/img/mtm-snoo.png`
 				}), r.a.createElement("div", null, r.a.createElement("p", {
 					className: S.a.headerText1
-				}, O._("Okay, lets do this", null, {
+				}, C._("Okay, lets do this", null, {
 					hk: "1AIkwG"
 				})), r.a.createElement("p", {
 					className: S.a.headerText2
-				}, O._("Thank you for your help. Add a location to the communities below, and we will do the rest.", null, {
+				}, C._("Thank you for your help. Add a location to the communities below, and we will do the rest.", null, {
 					hk: "fVUF3"
 				}))))
 			}
@@ -1888,4 +1903,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.64f71d6b26ee6614818f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.882dd2ca865d9acf4eb8.js.map

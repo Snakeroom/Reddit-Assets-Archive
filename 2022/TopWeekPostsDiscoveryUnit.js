@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.1085bc2917e2d49681a4.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.2e3d7d297df555933925.js
+// Retrieved at 11/30/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/Body/index.m.less": function(e, t, s) {
@@ -68,8 +68,8 @@
 				p = s("./src/lib/CSSVariableProvider/withTheme.tsx"),
 				h = s("./src/reddit/components/JSAPIContainers/index.tsx"),
 				x = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
-				v = s("./src/reddit/components/PostContainer/index.tsx"),
-				y = s("./src/reddit/connectors/miniCardPost.ts"),
+				y = s("./src/reddit/components/PostContainer/index.tsx"),
+				v = s("./src/reddit/connectors/miniCardPost.ts"),
 				S = s("./src/reddit/contexts/Post/index.tsx"),
 				C = s("./src/reddit/helpers/styles/mixins/index.tsx"),
 				P = s("./src/reddit/models/Subreddit/index.ts"),
@@ -121,8 +121,8 @@
 						showFull: !1
 					});
 					let h, x = !0;
-					const v = !!d.source && Object(E.a)(d.source.url) || !!d.thumbnail && Object(E.a)(d.thumbnail.url);
-					return !b && v ? (x = !1, h = n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
+					const y = !!d.source && Object(E.a)(d.source.url) || !!d.thumbnail && Object(E.a)(d.thumbnail.url);
+					return !b && y ? (x = !1, h = n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
 						className: U.a.flexSpacer
 					}), n.a.createElement("div", {
 						className: U.a.mediaWrapper
@@ -264,7 +264,7 @@
 						subscribedProfiles: d,
 						subscribedSubreddits: l
 					});
-					return n.a.createElement(v.b, {
+					return n.a.createElement(y.b, {
 						className: Object(a.a)(ee.a.container, Z.a.largeAndMediumActiveStyles, Z.a.largeAndMediumPostStyles, Z.a.mUseRedditTheme, F.a.postContainer, Object(C.a)(this.props), e),
 						eventFactory: s,
 						onClick: i,
@@ -288,7 +288,7 @@
 					})), n.a.createElement(h.d, null))
 				}
 			}
-			const re = Object(S.b)(Object(y.a)(Object(p.a)(se)));
+			const re = Object(S.b)(Object(v.a)(Object(p.a)(se)));
 			class ne extends n.a.Component {
 				render() {
 					return n.a.createElement(re, this.props)
@@ -315,7 +315,7 @@
 				}),
 				postIds: pe
 			}), xe = Object(i.b)(he);
-			class ve extends n.a.Component {
+			class ye extends n.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						isVisible: !0
@@ -366,7 +366,7 @@
 					}))) : null
 				}
 			}
-			t.default = xe(ve)
+			t.default = xe(ye)
 		},
 		"./src/reddit/components/SubscribeButton/Inline.m.less": function(e, t, s) {
 			e.exports = {
@@ -432,20 +432,23 @@
 							doNotHideOtherSubscribeButtons: u,
 							getEventFactory: b,
 							onSubscriptionsRequested: p,
-							...h
-						} = this.props, x = this.state.isHovered, v = Object(c.a)({
+							priority: h,
+							isShredditParityEnabled: x,
+							...y
+						} = this.props, v = this.state.isHovered, S = Object(c.a)({
 							type: t.type,
-							key: x ? "unsubscribe" : "subscribed"
-						});
+							key: v ? "unsubscribe" : "subscribed"
+						}), C = y.shouldReverseColor ? a.c.Secondary : a.c.Primary;
 						return n.a.createElement(a.t, m({
 							className: e,
-							priority: h.shouldReverseColor ? a.c.Primary : a.c.Secondary,
-							text: v,
+							priority: h || C,
+							rplStyle: x,
+							text: S,
 							onClick: this.onClick,
 							onMouseEnter: this.onMouseEnter,
 							onMouseLeave: this.onMouseLeave,
 							size: a.d.XSP
-						}, h))
+						}, y))
 					}, this.renderSubscribeButton = () => {
 						const {
 							className: e,
@@ -459,18 +462,21 @@
 							doNotHideOtherSubscribeButtons: u,
 							getEventFactory: b,
 							onSubscriptionsRequested: p,
-							...h
-						} = this.props, x = Object(c.a)({
+							priority: h,
+							isShredditParityEnabled: x,
+							...y
+						} = this.props, v = Object(c.a)({
 							type: t.type,
 							key: "subscribe"
-						});
+						}), S = y.shouldReverseColor ? a.c.Secondary : a.c.Primary;
 						return n.a.createElement(a.t, m({
 							className: e,
-							priority: h.shouldReverseColor ? a.c.Secondary : a.c.Primary,
+							priority: h || S,
 							size: a.d.XSP,
-							text: x,
+							rplStyle: x,
+							text: v,
 							onClick: this.onClick
-						}, h, {
+						}, y, {
 							id: `subscribe-button-${i}`,
 							onMouseEnter: this.onMouseEnter,
 							onMouseLeave: this.onMouseLeave
@@ -496,4 +502,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.1085bc2917e2d49681a4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.2e3d7d297df555933925.js.map

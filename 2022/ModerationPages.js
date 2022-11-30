@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.85b6e166a51af57457a1.js
-// Retrieved at 11/29/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.8fad84d1068b9b8b5b5e.js
+// Retrieved at 11/30/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -22764,6 +22764,7 @@
 				isRight: "_36ucS75syCWwJ_ee7IieXZ",
 				active: "NPw0Z_HL-yJPXnZ3mpWEA",
 				redditStyle: "OGOshepc50ul-kJHrocIO",
+				rplStyle: "_2sQjgE-zw2MQovQiJwdvVD",
 				mNotCardView: "_33VrFkg3gJpkL8AlPfcHUE"
 			}
 		},
@@ -51078,20 +51079,23 @@
 							doNotHideOtherSubscribeButtons: m,
 							getEventFactory: p,
 							onSubscriptionsRequested: b,
-							...f
-						} = this.props, h = this.state.isHovered, _ = Object(d.a)({
+							priority: f,
+							isShredditParityEnabled: h,
+							..._
+						} = this.props, g = this.state.isHovered, v = Object(d.a)({
 							type: t.type,
-							key: h ? "unsubscribe" : "subscribed"
-						});
+							key: g ? "unsubscribe" : "subscribed"
+						}), x = _.shouldReverseColor ? a.c.Secondary : a.c.Primary;
 						return r.a.createElement(a.t, u({
 							className: e,
-							priority: f.shouldReverseColor ? a.c.Primary : a.c.Secondary,
-							text: _,
+							priority: f || x,
+							rplStyle: h,
+							text: v,
 							onClick: this.onClick,
 							onMouseEnter: this.onMouseEnter,
 							onMouseLeave: this.onMouseLeave,
 							size: a.d.XSP
-						}, f))
+						}, _))
 					}, this.renderSubscribeButton = () => {
 						const {
 							className: e,
@@ -51105,18 +51109,21 @@
 							doNotHideOtherSubscribeButtons: m,
 							getEventFactory: p,
 							onSubscriptionsRequested: b,
-							...f
-						} = this.props, h = Object(d.a)({
+							priority: f,
+							isShredditParityEnabled: h,
+							..._
+						} = this.props, g = Object(d.a)({
 							type: t.type,
 							key: "subscribe"
-						});
+						}), v = _.shouldReverseColor ? a.c.Secondary : a.c.Primary;
 						return r.a.createElement(a.t, u({
 							className: e,
-							priority: f.shouldReverseColor ? a.c.Secondary : a.c.Primary,
+							priority: f || v,
 							size: a.d.XSP,
-							text: h,
+							rplStyle: h,
+							text: g,
 							onClick: this.onClick
-						}, f, {
+						}, _, {
 							id: `subscribe-button-${o}`,
 							onMouseEnter: this.onMouseEnter,
 							onMouseLeave: this.onMouseLeave
@@ -53371,6 +53378,7 @@
 				PremiumButtonColors: "q_unSaY23rpdd3lDvGZ-",
 				premiumButtonColors: "q_unSaY23rpdd3lDvGZ-",
 				secondary: "_2tU8R9NTqhvBrhoNAXWWcP",
+				rplStyle: "_2Z-LWN_PrkTncEM_mPuEW5",
 				tertiary: "_4Glnzr5LA7bNBGMWGW4pU",
 				plain: "_3zbhtNO0bdck0oYbYRhjMC",
 				isIconOnly: "_1tPpYVD73ugqp4k-VMFRki",
@@ -53472,27 +53480,30 @@
 						kind: O = b.Button,
 						priority: E = m.Primary,
 						redditStyle: y,
-						size: C = u.S,
-						text: j,
-						textClassName: k,
-						...I
-					} = e, S = (e => {
+						rplStyle: C,
+						size: j = u.S,
+						text: k,
+						textClassName: I,
+						...S
+					} = e, w = (e => {
 						let {
 							baseClassName: t,
 							redditStyle: n,
-							dataRedditStyle: s,
-							Icon: r,
-							isFullWidth: i,
-							isSquare: a,
-							priority: c,
-							size: l,
-							text: u
+							rplStyle: s,
+							dataRedditStyle: r,
+							Icon: i,
+							isFullWidth: a,
+							isSquare: c,
+							priority: l,
+							size: u,
+							text: m
 						} = e;
-						return Object(o.a)(t, d.a.Button, c && d.a[c], l && d.a[l], {
-							[d.a.isFullWidth]: i,
-							[d.a.isIconOnly]: !!r && !u,
-							[d.a.isSquare]: a,
-							[d.a.redditStyle]: !(!n && !s)
+						return Object(o.a)(t, d.a.Button, l && d.a[l], u && d.a[u], {
+							[d.a.isFullWidth]: a,
+							[d.a.isIconOnly]: !!i && !m,
+							[d.a.isSquare]: c,
+							[d.a.redditStyle]: !(!n && !r),
+							[d.a.rplStyle]: s
 						})
 					})({
 						baseClassName: x,
@@ -53503,9 +53514,10 @@
 						isSquare: f,
 						priority: E,
 						redditStyle: y,
-						size: C,
-						text: j
-					}), w = (e => {
+						rplStyle: C,
+						size: j,
+						text: k
+					}), T = (e => {
 						let {
 							children: t,
 							text: n,
@@ -53530,20 +53542,20 @@
 						}))
 					})({
 						children: v,
-						text: j,
+						text: k,
 						Icon: n,
 						iconClassName: s,
 						iconPosition: i,
 						priority: E,
-						textClassName: k
+						textClassName: I
 					});
-					return O === b.InternalLink && (e => "to" in e)(I) ? r.a.createElement(h, c({}, l, I, {
-						className: S
-					}), w) : O === b.ExternalLink && (e => "href" in e)(I) ? r.a.createElement(_, c({}, l, I, {
-						className: S
-					}), w) : r.a.createElement(g, c({}, l, I, {
-						className: S
-					}), w)
+					return O === b.InternalLink && (e => "to" in e)(S) ? r.a.createElement(h, c({}, l, S, {
+						className: w
+					}), T) : O === b.ExternalLink && (e => "href" in e)(S) ? r.a.createElement(_, c({}, l, S, {
+						className: w
+					}), T) : r.a.createElement(g, c({}, l, S, {
+						className: w
+					}), T)
 				},
 				h = e => r.a.createElement(i.default, e),
 				_ = e => r.a.createElement("a", e),
@@ -78370,4 +78382,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.85b6e166a51af57457a1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.8fad84d1068b9b8b5b5e.js.map
