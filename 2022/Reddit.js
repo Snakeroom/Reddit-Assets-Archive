@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.98d905a1799ce9c50fe8.js
-// Retrieved at 11/30/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.51398d3713085cd8b784.js
+// Retrieved at 11/30/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -21074,7 +21074,7 @@
 		"./src/reddit/selectors/accountManager/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return _
+				return P
 			}));
 			var s = n("./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js"),
 				r = n("./node_modules/@reddit/i18n-tools/runtime/helpers/locale/constants.js"),
@@ -21082,89 +21082,98 @@
 				a = n("./node_modules/reselect/es/index.js"),
 				i = n("./src/lib/addQueryParams/index.ts"),
 				c = n("./src/reddit/constants/accountManager.ts"),
-				l = n("./src/reddit/constants/experiments.ts"),
-				d = n("./src/reddit/selectors/experiments/d2xAmModalDesignUpdate.ts"),
-				u = n("./src/reddit/selectors/experiments/frontpageSignup.ts"),
-				m = n("./src/reddit/helpers/chooseVariant/index.ts"),
-				p = n("./src/reddit/selectors/experiments/index.ts");
-			const b = Object(a.a)(e => Object(m.c)(e, {
-				experimentEligibilitySelector: p.f,
+				l = n("./src/reddit/constants/experiments.ts");
+			var d;
+			! function(e) {
+				e.Enabled = "enabled"
+			}(d || (d = {}));
+			var u = n("./src/reddit/selectors/experiments/d2xAmModalDesignUpdate.ts"),
+				m = n("./src/reddit/selectors/experiments/frontpageSignup.ts"),
+				p = n("./src/reddit/helpers/chooseVariant/index.ts"),
+				b = n("./src/reddit/selectors/experiments/index.ts");
+			const h = Object(a.a)(e => Object(p.c)(e, {
+				experimentEligibilitySelector: b.f,
 				experimentName: l.Wd
 			}), e => e === l.ae.Enabled);
-			var h = n("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
-				g = n("./src/reddit/selectors/experiments/magicLink.ts"),
-				f = n("./src/lib/getParsedUserAgent/index.ts");
-			const v = Object(a.a)(e => Object(m.c)(e, {
-				experimentEligibilitySelector: e => Object(f.g)(e.meta.userAgent) && Object(p.f)(e),
+			var g = n("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
+				f = n("./src/reddit/selectors/experiments/magicLink.ts"),
+				v = n("./src/lib/getParsedUserAgent/index.ts");
+			const O = Object(a.a)(e => Object(p.c)(e, {
+				experimentEligibilitySelector: e => Object(v.g)(e.meta.userAgent) && Object(b.f)(e),
 				experimentName: l.Df
 			}), e => e === l.Sf.Enabled);
-			var O = n("./src/reddit/selectors/meta.ts"),
-				C = n("./src/reddit/selectors/responsiveSettings.ts"),
-				y = n("./src/reddit/selectors/accountManager/modalData.ts");
-			const E = Object(a.c)({
-					frontpageSignupVariant: u.a,
-					magicLinkVariant: g.a,
-					ssoLoginLinkVariant: e => Object(m.c)(e, {
-						experimentEligibilitySelector: e => !Object(p.e)(e),
+			var C = n("./src/reddit/selectors/meta.ts"),
+				y = n("./src/reddit/actions/modal.ts"),
+				E = n("./src/reddit/selectors/accountManager/modalData.ts");
+			const x = Object(a.a)(b.f, C.b, E.a, (e, t, n) => e && "DE" === t && n === y.a.Report);
+			var _ = n("./src/reddit/selectors/responsiveSettings.ts");
+			const j = Object(a.c)({
+					frontpageSignupVariant: m.a,
+					isNetzDGComplianceEnabled: x,
+					magicLinkVariant: f.a,
+					ssoLoginLinkVariant: e => Object(p.c)(e, {
+						experimentEligibilitySelector: e => !Object(b.e)(e),
 						experimentName: l.Jf
 					}),
-					blockingInterstitialVariant: h.e,
-					blockingInterstitialV2Variant: h.f
+					blockingInterstitialVariant: g.e,
+					blockingInterstitialV2Variant: g.f
 				}),
-				x = Object(a.c)({
-					isAmModalDesignUpdateEnabled: d.a,
-					isBlockingInterstitialEnabled: h.b,
-					isBlockingInterstitialV2Enabled: h.c,
-					isGoogleSsoGisEnabled: b,
-					isSafariOneTapEnabled: v
+				S = Object(a.c)({
+					isAmModalDesignUpdateEnabled: u.a,
+					isBlockingInterstitialEnabled: g.b,
+					isBlockingInterstitialV2Enabled: g.c,
+					isGoogleSsoGisEnabled: h,
+					isSafariOneTapEnabled: O
 				}),
-				_ = Object(a.a)((e, t) => t.path, (e, t) => t.uiMode, e => Object(y.c)(e), y.a, C.a, O.j, E, x, (e, t, n, a, d, u, m, p) => {
+				P = Object(a.a)((e, t) => t.path, (e, t) => t.uiMode, e => Object(E.c)(e), E.a, _.a, C.j, j, S, (e, t, n, a, u, m, p, b) => {
 					const {
-						blockingInterstitialVariant: b,
-						blockingInterstitialV2Variant: h,
-						frontpageSignupVariant: g,
-						ssoLoginLinkVariant: f,
-						magicLinkVariant: v
-					} = m, {
-						isAmModalDesignUpdateEnabled: O,
-						isBlockingInterstitialEnabled: C,
-						isBlockingInterstitialV2Enabled: y,
-						isGoogleSsoGisEnabled: E,
-						isSafariOneTapEnabled: x
-					} = p;
-					let _ = `${o.a.accountManagerOrigin}${e}`;
-					if (_ = Object(i.a)(_, {
+						isNetzDGComplianceEnabled: h,
+						blockingInterstitialVariant: g,
+						blockingInterstitialV2Variant: f,
+						frontpageSignupVariant: v,
+						ssoLoginLinkVariant: O,
+						magicLinkVariant: C
+					} = p, {
+						isAmModalDesignUpdateEnabled: y,
+						isBlockingInterstitialEnabled: E,
+						isBlockingInterstitialV2Enabled: x,
+						isGoogleSsoGisEnabled: _,
+						isSafariOneTapEnabled: j
+					} = b;
+					let S = `${o.a.accountManagerOrigin}${e}`;
+					if (S = Object(i.a)(S, {
 							experiment_d2x_2020ify_buttons: "enabled"
-						}), f && (_ = Object(i.a)(_, {
-							[`experiment_${l.Jf}`]: f
-						})), E && (_ = Object(i.a)(_, {
+						}), O && (S = Object(i.a)(S, {
+							[`experiment_${l.Jf}`]: O
+						})), _ && (S = Object(i.a)(S, {
 							[`experiment_${l.Wd}`]: "enabled"
-						})), _ = Object(i.a)(_, {
+						})), h && (S = Object(i.a)(S, {
+							experiment_d2x_netzdg_compliance: d.Enabled,
 							thing_id: n
-						}), _ = Object(i.a)(_, {
+						})), S = Object(i.a)(S, {
 							experiment_d2x_onboarding: "enabled"
-						}), x && (_ = Object(i.a)(_, {
+						}), j && (S = Object(i.a)(S, {
 							[`experiment_${l.Df}`]: "enabled"
-						})), C && (_ = Object(i.a)(_, {
-							[`experiment_${l.Ib}`]: b
-						})), y && (_ = Object(i.a)(_, {
-							[`experiment_${l.Jb}`]: h
-						})), O && (_ = Object(i.a)(_, {
+						})), E && (S = Object(i.a)(S, {
+							[`experiment_${l.Ib}`]: g
+						})), x && (S = Object(i.a)(S, {
+							[`experiment_${l.Jb}`]: f
+						})), y && (S = Object(i.a)(S, {
 							[`experiment_${l.qb}`]: "enabled"
-						})), g && (_ = Object(i.a)(_, {
-							[l.hd]: g,
+						})), v && (S = Object(i.a)(S, {
+							[l.hd]: v,
 							uiMode: t
-						})), v && (_ = Object(i.a)(_, {
-							[`experiment_${l.ue}`]: v
-						})), d && (_ = Object(i.a)(_, {
+						})), C && (S = Object(i.a)(S, {
+							[`experiment_${l.ue}`]: C
+						})), u && (S = Object(i.a)(S, {
 							mweb_responsive_settings: "treatment"
-						})), u) {
-						const e = Object(s.isoLocaleToR2Language)(u);
-						u !== r.DEFAULT_LOCALE && e && (_ = Object(i.a)(_, {
+						})), m) {
+						const e = Object(s.isoLocaleToR2Language)(m);
+						m !== r.DEFAULT_LOCALE && e && (S = Object(i.a)(S, {
 							lang: e
 						}))
 					}
-					return e === c.c.Index || e === c.c.ChangePassword ? _ : _ = Object(i.a)(_, {
+					return e === c.c.Index || e === c.c.ChangePassword ? S : S = Object(i.a)(S, {
 						actionSource: a
 					})
 				})
@@ -22244,4 +22253,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.98d905a1799ce9c50fe8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.51398d3713085cd8b784.js.map
