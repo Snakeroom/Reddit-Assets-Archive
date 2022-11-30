@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostSetPage.8f31f2c17a7b32c108d9.js
-// Retrieved at 11/30/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostSetPage.08a248697e75502863af.js
+// Retrieved at 11/30/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostSetPage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -540,7 +540,9 @@
 						let {
 							gqlContext: o
 						} = i;
-						if ((await u(o(), t)).ok) r && r(), e(x(n, j({
+						var a, d;
+						const c = await u(o(), t);
+						if (c.ok && c.body && (null === (d = null === (a = c.body) || void 0 === a ? void 0 : a.data.updateSubredditMuteSettings) || void 0 === d ? void 0 : d.ok)) r && r(), e(x(n, j({
 							subredditId: t,
 							subredditName: n
 						})));
@@ -559,7 +561,9 @@
 						let {
 							gqlContext: o
 						} = i;
-						if ((await m(o(), t)).ok) r && r(), e(y(n, C({
+						var a, d;
+						const c = await m(o(), t);
+						if (c.ok && c.body && (null === (d = null === (a = c.body) || void 0 === a ? void 0 : a.data.deleteSubredditMuteSettings) || void 0 === d ? void 0 : d.ok)) r && r(), e(y(n, C({
 							subredditId: t,
 							subredditName: n
 						})));
@@ -578,7 +582,9 @@
 						let {
 							gqlContext: o
 						} = i;
-						if ((await u(o(), t)).ok) r && r(), e(Object(h.c)({
+						var a, d;
+						const c = await u(o(), t);
+						if (c.ok && c.body && (null === (d = null === (a = c.body) || void 0 === a ? void 0 : a.data.updateSubredditMuteSettings) || void 0 === d ? void 0 : d.ok)) r && r(), e(Object(h.c)({
 							subredditAboutInfo: {
 								[t]: {
 									isMuted: !0
@@ -603,7 +609,9 @@
 						let {
 							gqlContext: o
 						} = i;
-						if ((await m(o(), t)).ok) r && r(), e(Object(h.c)({
+						var a, d;
+						const c = await m(o(), t);
+						if (c.ok && c.body && (null === (d = null === (a = c.body) || void 0 === a ? void 0 : a.data.deleteSubredditMuteSettings) || void 0 === d ? void 0 : d.ok)) r && r(), e(Object(h.c)({
 							subredditAboutInfo: {
 								[t]: {
 									isMuted: !1
@@ -627,16 +635,18 @@
 						let {
 							gqlContext: d
 						} = a;
-						const l = Object(h.a)(n);
-						(await ((e, t, n) => Object(o.a)(e, {
-							...c,
-							variables: {
-								input: {
-									...n,
-									subredditId: t
+						var l, u;
+						const m = Object(h.a)(n),
+							p = await ((e, t, n) => Object(o.a)(e, {
+								...c,
+								variables: {
+									input: {
+										...n,
+										subredditId: t
+									}
 								}
-							}
-						}))(d(), t, l)).ok ? (e(S({
+							}))(d(), t, m);
+						p.ok && p.body && (null === (u = null === (l = p.body) || void 0 === l ? void 0 : l.data.updateSubredditMuteAndNotificationLevelSettings) || void 0 === u ? void 0 : u.ok) ? (e(S({
 							subredditId: t,
 							notificationLevel: n
 						})), e(Object(i.f)({
@@ -678,11 +688,9 @@
 						let {
 							gqlContext: i
 						} = s;
-						const o = await m(i(), t),
-							{
-								data: a
-							} = o.body;
-						if (o.ok && a.deleteSubredditMuteSettings.ok) e(O(t)), e(y(n));
+						var o, a;
+						const d = await m(i(), t);
+						if (d.ok && d.body && (null === (a = null === (o = d.body) || void 0 === o ? void 0 : o.data.deleteSubredditMuteSettings) || void 0 === a ? void 0 : a.ok)) e(O(t)), e(y(n));
 						else {
 							e(g(`error-unmuting-${t}`))
 						}
@@ -695,10 +703,11 @@
 						let {
 							gqlContext: o
 						} = s;
-						const a = n(),
-							d = Object(f.t)(a).find(e => e.name.toLowerCase() === t.toLowerCase());
-						if (d) {
-							const t = d.name,
+						var a, d;
+						const c = n(),
+							l = Object(f.t)(c).find(e => e.name.toLowerCase() === t.toLowerCase());
+						if (l) {
+							const t = l.name,
 								n = `error-muting-duplicate-${t}`;
 							return e(Object(i.f)({
 								id: n,
@@ -709,12 +718,12 @@
 								})
 							}))
 						}
-						const c = await Object(v.a)(o(), t, !0),
+						const m = await Object(v.a)(o(), t, !0),
 							{
-								data: l
-							} = c.body,
-							m = l && l.subreddit;
-						if (!c.ok || null === m) {
+								data: p
+							} = m.body,
+							h = p && p.subreddit;
+						if (!m.ok || null === h) {
 							return e(((e, t) => Object(i.f)({
 								id: e,
 								kind: b.b.Error,
@@ -724,14 +733,11 @@
 								})
 							}))(`error-muting-${t}`, t))
 						}
-						const p = m.id,
-							h = await u(o(), p),
-							{
-								data: y
-							} = h.body;
-						if (h.ok && y.updateSubredditMuteSettings.ok) e(k([m])), e(x(m.name));
+						const y = h.id,
+							_ = await u(o(), y);
+						if (_.ok && _.body && (null === (d = null === (a = _.body) || void 0 === a ? void 0 : a.data.updateSubredditMuteSettings) || void 0 === d ? void 0 : d.ok)) e(k([h])), e(x(h.name));
 						else {
-							e(g(`error-muting-${p}`))
+							e(g(`error-muting-${y}`))
 						}
 					}
 				}
@@ -947,28 +953,28 @@
 					L = Object(i.e)(f.l),
 					P = Object(i.e)(E),
 					R = Object(i.e)(S.a),
-					B = Object(i.e)(O.a),
-					M = L ? L.id : "anonymous",
-					F = "on" === B.recapGameState,
+					M = Object(i.e)(O.a),
+					B = L ? L.id : "anonymous",
+					F = "on" === M.recapGameState,
 					A = () => {
 						h && k(setTimeout(() => {
 							p.current && (p.current.classList.add(C.a.transform), p.current.style.width = `${I}px`)
 						}, 4750)), h && v(setTimeout(() => {
-							g(!1), Object(u.Ub)(M, !1)
+							g(!1), Object(u.Ub)(B, !1)
 						}, 5e3))
 					};
 				return Object(r.useEffect)(() => {
 					F || setTimeout(() => {
-						const e = Object(u.O)(M);
+						const e = Object(u.O)(B);
 						e ? Object(a.e)(e.lastSeenTime) >= 24 && e.dropSkip === u.a.NONE ? g(!0) : Date.now() >= new Date(2022, 10, 16).getTime() && e.dropSkip !== u.a.THIRD && g(!0) : g(!0)
 					})
-				}, [M, F]), s.a.createElement("div", {
+				}, [B, F]), s.a.createElement("div", {
 					className: Object(o.a)(t, C.a.container),
 					style: c
 				}, h && P && !n && !F ? s.a.createElement(y, {
 					ref: p,
 					onBananaPillClick: () => {
-						x && clearTimeout(x), _ && clearTimeout(_), g(!1), Object(u.Ub)(M, !0), b((() => e => ({
+						x && clearTimeout(x), _ && clearTimeout(_), g(!1), Object(u.Ub)(B, !0), b((() => e => ({
 							source: "recap",
 							action: "click",
 							noun: "feed_banana",
@@ -3016,4 +3022,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.8f31f2c17a7b32c108d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.08a248697e75502863af.js.map

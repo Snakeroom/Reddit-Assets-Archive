@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.8fad84d1068b9b8b5b5e.js
-// Retrieved at 11/30/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.e3d83129dc6942e89167.js
+// Retrieved at 11/30/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -15907,7 +15907,9 @@
 						let {
 							gqlContext: i
 						} = o;
-						if ((await u(i(), t)).ok) s && s(), e(g(n, I({
+						var a, d;
+						const c = await u(i(), t);
+						if (c.ok && c.body && (null === (d = null === (a = c.body) || void 0 === a ? void 0 : a.data.updateSubredditMuteSettings) || void 0 === d ? void 0 : d.ok)) s && s(), e(g(n, I({
 							subredditId: t,
 							subredditName: n
 						})));
@@ -15926,7 +15928,9 @@
 						let {
 							gqlContext: i
 						} = o;
-						if ((await m(i(), t)).ok) s && s(), e(v(n, k({
+						var a, d;
+						const c = await m(i(), t);
+						if (c.ok && c.body && (null === (d = null === (a = c.body) || void 0 === a ? void 0 : a.data.deleteSubredditMuteSettings) || void 0 === d ? void 0 : d.ok)) s && s(), e(v(n, k({
 							subredditId: t,
 							subredditName: n
 						})));
@@ -15945,7 +15949,9 @@
 						let {
 							gqlContext: i
 						} = o;
-						if ((await u(i(), t)).ok) s && s(), e(Object(f.c)({
+						var a, d;
+						const c = await u(i(), t);
+						if (c.ok && c.body && (null === (d = null === (a = c.body) || void 0 === a ? void 0 : a.data.updateSubredditMuteSettings) || void 0 === d ? void 0 : d.ok)) s && s(), e(Object(f.c)({
 							subredditAboutInfo: {
 								[t]: {
 									isMuted: !0
@@ -15970,7 +15976,9 @@
 						let {
 							gqlContext: i
 						} = o;
-						if ((await m(i(), t)).ok) s && s(), e(Object(f.c)({
+						var a, d;
+						const c = await m(i(), t);
+						if (c.ok && c.body && (null === (d = null === (a = c.body) || void 0 === a ? void 0 : a.data.deleteSubredditMuteSettings) || void 0 === d ? void 0 : d.ok)) s && s(), e(Object(f.c)({
 							subredditAboutInfo: {
 								[t]: {
 									isMuted: !1
@@ -15994,16 +16002,18 @@
 						let {
 							gqlContext: d
 						} = a;
-						const l = Object(f.a)(n);
-						(await ((e, t, n) => Object(i.a)(e, {
-							...c,
-							variables: {
-								input: {
-									...n,
-									subredditId: t
+						var l, u;
+						const m = Object(f.a)(n),
+							b = await ((e, t, n) => Object(i.a)(e, {
+								...c,
+								variables: {
+									input: {
+										...n,
+										subredditId: t
+									}
 								}
-							}
-						}))(d(), t, l)).ok ? (e(y({
+							}))(d(), t, m);
+						b.ok && b.body && (null === (u = null === (l = b.body) || void 0 === l ? void 0 : l.data.updateSubredditMuteAndNotificationLevelSettings) || void 0 === u ? void 0 : u.ok) ? (e(y({
 							subredditId: t,
 							notificationLevel: n
 						})), e(Object(o.f)({
@@ -16045,11 +16055,9 @@
 						let {
 							gqlContext: o
 						} = r;
-						const i = await m(o(), t),
-							{
-								data: a
-							} = i.body;
-						if (i.ok && a.deleteSubredditMuteSettings.ok) e(C(t)), e(v(n));
+						var i, a;
+						const d = await m(o(), t);
+						if (d.ok && d.body && (null === (a = null === (i = d.body) || void 0 === i ? void 0 : i.data.deleteSubredditMuteSettings) || void 0 === a ? void 0 : a.ok)) e(C(t)), e(v(n));
 						else {
 							e(_(`error-unmuting-${t}`))
 						}
@@ -16062,10 +16070,11 @@
 						let {
 							gqlContext: i
 						} = r;
-						const a = n(),
-							d = Object(h.t)(a).find(e => e.name.toLowerCase() === t.toLowerCase());
-						if (d) {
-							const t = d.name,
+						var a, d;
+						const c = n(),
+							l = Object(h.t)(c).find(e => e.name.toLowerCase() === t.toLowerCase());
+						if (l) {
+							const t = l.name,
 								n = `error-muting-duplicate-${t}`;
 							return e(Object(o.f)({
 								id: n,
@@ -16076,12 +16085,12 @@
 								})
 							}))
 						}
-						const c = await Object(x.a)(i(), t, !0),
+						const m = await Object(x.a)(i(), t, !0),
 							{
-								data: l
-							} = c.body,
-							m = l && l.subreddit;
-						if (!c.ok || null === m) {
+								data: b
+							} = m.body,
+							f = b && b.subreddit;
+						if (!m.ok || null === f) {
 							return e(((e, t) => Object(o.f)({
 								id: e,
 								kind: p.b.Error,
@@ -16091,14 +16100,11 @@
 								})
 							}))(`error-muting-${t}`, t))
 						}
-						const b = m.id,
-							f = await u(i(), b),
-							{
-								data: v
-							} = f.body;
-						if (f.ok && v.updateSubredditMuteSettings.ok) e(j([m])), e(g(m.name));
+						const v = f.id,
+							O = await u(i(), v);
+						if (O.ok && O.body && (null === (d = null === (a = O.body) || void 0 === a ? void 0 : a.data.updateSubredditMuteSettings) || void 0 === d ? void 0 : d.ok)) e(j([f])), e(g(f.name));
 						else {
-							e(_(`error-muting-${b}`))
+							e(_(`error-muting-${v}`))
 						}
 					}
 				}
@@ -78382,4 +78388,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.8fad84d1068b9b8b5b5e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.e3d83129dc6942e89167.js.map
