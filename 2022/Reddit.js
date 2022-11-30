@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.1958e993b78d7d2c1ddb.js
-// Retrieved at 11/30/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.54d60397a2f25013ee70.js
+// Retrieved at 11/30/2022, 4:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -6765,7 +6765,7 @@
 				},
 				m = (e, t) => {
 					const n = Object(r.d)(e, t),
-						s = (null == n ? void 0 : n.contentType) === c.s.Chat,
+						s = (null == n ? void 0 : n.contentType) === c.t.Chat,
 						o = Object(r.b)(e).indexOf(t),
 						a = Object(r.c)(e),
 						i = a.indexOf(t),
@@ -7031,13 +7031,14 @@
 					action: s.c.SUBMIT,
 					noun: i.ONBOARDING_COMMUNITY_RECOMMENDATIONS
 				}),
-				O = e => t => ({
-					...Object(r.o)(t),
+				O = (e, t) => n => ({
+					...Object(r.o)(n),
 					source: a,
 					action: s.c.SUBMIT,
 					noun: i.ONBOARDING_LANGUAGE_SELECTION,
 					actionInfo: {
-						...Object(r.d)(t),
+						...Object(r.d)(n),
+						reason: t,
 						type: e
 					}
 				}),
@@ -15027,7 +15028,7 @@
 					l = Object(xe.e)(km.b),
 					d = Object(ji.a)(),
 					p = null === (o = Object(xe.e)(e => Object(Nm.a)(e, {
-						experience: Mm.X.LiveChatVideoEdu
+						experience: Mm.Y.LiveChatVideoEdu
 					}))) || void 0 === o ? void 0 : o.value,
 					b = Object(u.useMemo)(() => l === Pm.b.IS_SHOWING, [l]),
 					h = Object(u.useMemo)(() => b ? (e => ({
@@ -21885,12 +21886,12 @@
 						case o.a.Chat:
 							return t.filter(t => {
 								var n;
-								return (null === (n = p(e, t)) || void 0 === n ? void 0 : n.contentType) === c.s.Chat
+								return (null === (n = p(e, t)) || void 0 === n ? void 0 : n.contentType) === c.t.Chat
 							});
 						case o.a.Talk:
 							return t.filter(t => {
 								var n;
-								return (null === (n = p(e, t)) || void 0 === n ? void 0 : n.contentType) === c.s.Talk
+								return (null === (n = p(e, t)) || void 0 === n ? void 0 : n.contentType) === c.t.Talk
 							});
 						case o.a.All:
 						default:
@@ -22253,4 +22254,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.1958e993b78d7d2c1ddb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.54d60397a2f25013ee70.js.map

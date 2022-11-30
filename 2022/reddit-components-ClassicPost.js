@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.55f90442fcc79df9a256.js
-// Retrieved at 11/30/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.7c66c6c84f0bcf9dcb9f.js
+// Retrieved at 11/30/2022, 4:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1351,7 +1351,7 @@
 						post: _e,
 						adLinkContent: He,
 						ctaExperimentDesign: Ae && "classic"
-					})), _e.discussionType === ce.m.Chat && s.a.createElement(de.a, {
+					})), _e.discussionType === ce.n.Chat && s.a.createElement(de.a, {
 						postId: _e.id
 					}), s.a.createElement("div", {
 						className: ue.a.flatlistContainer
@@ -3695,14 +3695,14 @@
 						...u,
 						variables: t
 					});
-					return !!Object(i.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(v.K.Talk)
+					return !!Object(i.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(v.L.Talk)
 				}, O = async (e, t) => {
 					var n, r;
 					const s = await Object(o.a)(e, {
 						...m,
 						variables: t
 					});
-					return !!Object(i.c)(s) && (null !== (r = null === (n = s.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== r ? r : []).includes(v.K.Talk)
+					return !!Object(i.c)(s) && (null !== (r = null === (n = s.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== r ? r : []).includes(v.L.Talk)
 				}, x = async e => {
 					var t;
 					const n = await Object(o.a)(e, l);
@@ -3746,10 +3746,10 @@
 						hk: "2mGf21"
 					})
 				}, S = e => e.data.prepareAudioRoom || e.data.prepareAudioRoomOnProfile, w = {
-					[v.M.ServiceError]: r.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+					[v.N.ServiceError]: r.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[v.M.UserNotAuthorized]: r.fbt._("You don't have permission to start talks in this community.", null, {
+					[v.N.UserNotAuthorized]: r.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					})
 				}, I = (e, t) => Object(o.a)(e, {
@@ -7169,4 +7169,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.55f90442fcc79df9a256.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.7c66c6c84f0bcf9dcb9f.js.map

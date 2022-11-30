@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.2b809a3b22bcc711ca26.js
-// Retrieved at 11/30/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.29a3b97a3a029a7347db.js
+// Retrieved at 11/30/2022, 4:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1076,7 +1076,7 @@
 							tooltipId: e,
 							args: {
 								isModNotesView: !0,
-								modNotesFilter: f.x.Note
+								modNotesFilter: f.y.Note
 							}
 						}))
 					}, [n, _, v]);
@@ -5233,4 +5233,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.2b809a3b22bcc711ca26.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.29a3b97a3a029a7347db.js.map

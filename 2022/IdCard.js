@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.bb76b926288c115e16d3.js
-// Retrieved at 11/30/2022, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.16f7c776ec0a28ab3f8c.js
+// Retrieved at 11/30/2022, 4:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1882,24 +1882,24 @@
 					})
 				},
 				g = {
-					[s.R.Low]: r.fbt._("Low", null, {
+					[s.S.Low]: r.fbt._("Low", null, {
 						hk: "4k3iTe"
 					}),
-					[s.R.High]: r.fbt._("High (default)", null, {
+					[s.S.High]: r.fbt._("High (default)", null, {
 						hk: "2GOHsH"
 					}),
-					[s.R.All]: r.fbt._("All", null, {
+					[s.S.All]: r.fbt._("All", null, {
 						hk: "gl6gc"
 					})
 				},
 				x = {
-					[s.R.Low]: r.fbt._("Low (default)", null, {
+					[s.S.Low]: r.fbt._("Low (default)", null, {
 						hk: "2tqJd7"
 					}),
-					[s.R.High]: r.fbt._("High", null, {
+					[s.S.High]: r.fbt._("High", null, {
 						hk: "ABfkc"
 					}),
-					[s.R.All]: r.fbt._("All", null, {
+					[s.S.All]: r.fbt._("All", null, {
 						hk: "3bPDOM"
 					})
 				},
@@ -6039,4 +6039,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.bb76b926288c115e16d3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.16f7c776ec0a28ab3f8c.js.map

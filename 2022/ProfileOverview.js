@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.ad30caa56aa7d09f72b2.js
-// Retrieved at 11/30/2022, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.eb3e05ac8eac0908d9bf.js
+// Retrieved at 11/30/2022, 4:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -702,7 +702,7 @@
 						})(e),
 						n = Object(g.d)(e, s);
 					return null == n ? void 0 : n.includes(t)
-				}, j = [y.w.ApproveComment, y.w.ApproveLink, y.w.RemoveComment, y.w.RemoveLink, y.w.SpamComment, y.w.SpamLink], w = e => async (t, s, n) => {
+				}, j = [y.x.ApproveComment, y.x.ApproveLink, y.x.RemoveComment, y.x.RemoveLink, y.x.SpamComment, y.x.SpamLink], w = e => async (t, s, n) => {
 					let {
 						gqlContext: o
 					} = n;
@@ -2261,7 +2261,7 @@
 						post: ve,
 						adLinkContent: Ze,
 						ctaExperimentDesign: Ie && "classic"
-					})), ve.discussionType === de.m.Chat && o.a.createElement(ce.a, {
+					})), ve.discussionType === de.n.Chat && o.a.createElement(ce.a, {
 						postId: ve.id
 					}), o.a.createElement("div", {
 						className: me.a.flatlistContainer
@@ -8433,14 +8433,14 @@
 						...m,
 						variables: t
 					});
-					return !!Object(a.c)(s) && (s.body.data.subredditInfoById.allowedPostTypes || []).includes(x.K.Talk)
+					return !!Object(a.c)(s) && (s.body.data.subredditInfoById.allowedPostTypes || []).includes(x.L.Talk)
 				}, _ = async (e, t) => {
 					var s, n;
 					const o = await Object(r.a)(e, {
 						...u,
 						variables: t
 					});
-					return !!Object(a.c)(o) && (null !== (n = null === (s = o.body.data.profileByName) || void 0 === s ? void 0 : s.allowedPostTypes) && void 0 !== n ? n : []).includes(x.K.Talk)
+					return !!Object(a.c)(o) && (null !== (n = null === (s = o.body.data.profileByName) || void 0 === s ? void 0 : s.allowedPostTypes) && void 0 !== n ? n : []).includes(x.L.Talk)
 				}, y = async e => {
 					var t;
 					const s = await Object(r.a)(e, l);
@@ -8484,10 +8484,10 @@
 						hk: "2mGf21"
 					})
 				}, w = e => e.data.prepareAudioRoom || e.data.prepareAudioRoomOnProfile, P = {
-					[x.M.ServiceError]: n.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+					[x.N.ServiceError]: n.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[x.M.UserNotAuthorized]: n.fbt._("You don't have permission to start talks in this community.", null, {
+					[x.N.UserNotAuthorized]: n.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					})
 				}, S = (e, t) => Object(r.a)(e, {
@@ -10380,4 +10380,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.ad30caa56aa7d09f72b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.eb3e05ac8eac0908d9bf.js.map

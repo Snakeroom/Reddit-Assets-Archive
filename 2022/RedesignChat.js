@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.f80ef259b183280a65c4.js
-// Retrieved at 11/30/2022, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.2c5ed65cc132230de1b0.js
+// Retrieved at 11/30/2022, 4:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -132,11 +132,11 @@
 				$ = n("./src/chat/customMiddleware/iframeDispatcher.ts"),
 				V = n("./src/chat/customMiddleware/inviteLinkSettings.ts"),
 				W = n("./src/chat/customMiddleware/lastSelectedChannel.ts"),
-				K = n("./src/chat/customMiddleware/loggedOutPreferencesSync.ts"),
-				Q = n("./src/chat/customMiddleware/sendbirdToken.ts"),
-				Y = n("./src/chat/customMiddleware/settings.ts"),
-				X = n("./src/chat/customMiddleware/stateObserver/index.ts"),
-				J = n("./src/chat/customMiddleware/title.ts"),
+				Y = n("./src/chat/customMiddleware/loggedOutPreferencesSync.ts"),
+				K = n("./src/chat/customMiddleware/sendbirdToken.ts"),
+				Q = n("./src/chat/customMiddleware/settings.ts"),
+				J = n("./src/chat/customMiddleware/stateObserver/index.ts"),
+				X = n("./src/chat/customMiddleware/title.ts"),
 				Z = n("./src/chat/customMiddleware/tokenRefresher.ts"),
 				ee = n("./src/chat/customMiddleware/tracking.ts"),
 				te = n("./src/chat/customMiddleware/unreadMessageCount.ts"),
@@ -238,7 +238,7 @@
 				pe = (e, t) => {
 					var n;
 					const s = null === (n = e.features) || void 0 === n ? void 0 : n.eligibleUXExperiences,
-						a = [le.X.LiveChatVideoEdu].reduce((e, t) => {
+						a = [le.Y.LiveChatVideoEdu].reduce((e, t) => {
 							const n = null == s ? void 0 : s.experiences[t];
 							return (null == n ? void 0 : n.fetched) ? {
 								...e,
@@ -306,7 +306,7 @@
 						apiContext: Ce.apiContext,
 						gqlContext: we.gqlContext,
 						gqlRealtimeContext: ye.gqlContext
-					}), Ce.middleware, Z.a, Y.a, Q.a, $.a, K.a, Object(ee.a)(t), F.a, X.a, H.a, z.a, G.a, te.a, W.a, J.a, ne.a, V.a],
+					}), Ce.middleware, Z.a, Q.a, K.a, $.a, Y.a, Object(ee.a)(t), F.a, J.a, H.a, z.a, G.a, te.a, W.a, X.a, ne.a, V.a],
 					modifyInitialData: t => {
 						let {
 							initialData: n,
@@ -696,4 +696,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.f80ef259b183280a65c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.2c5ed65cc132230de1b0.js.map

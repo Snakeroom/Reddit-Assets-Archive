@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.cbf9abbf33763f2cffe9.js
-// Retrieved at 11/30/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.40e40dcb776020cbc39b.js
+// Retrieved at 11/30/2022, 4:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit", "ModListing~Reddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -5464,7 +5464,7 @@
 						})),
 						r = Object(o.e)(e => n ? Object(S.h)(e, n.tournamentId) : []);
 					if (!n) return null;
-					if (n.status === k.L.Closed) return s.a.createElement(B, null);
+					if (n.status === k.M.Closed) return s.a.createElement(B, null);
 					const a = r.filter(e => e.predictionStatus === N.b.Open && e.endsAt > Date.now()),
 						i = a.length > 0,
 						c = a.length && a.some(e => !e.userSelection);
@@ -15435,13 +15435,14 @@
 					action: r.c.SUBMIT,
 					noun: i.ONBOARDING_COMMUNITY_RECOMMENDATIONS
 				}),
-				x = e => t => ({
-					...Object(s.o)(t),
+				x = (e, t) => n => ({
+					...Object(s.o)(n),
 					source: a,
 					action: r.c.SUBMIT,
 					noun: i.ONBOARDING_LANGUAGE_SELECTION,
 					actionInfo: {
-						...Object(s.d)(t),
+						...Object(s.d)(n),
+						reason: t,
 						type: e
 					}
 				}),
@@ -22626,4 +22627,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.cbf9abbf33763f2cffe9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.40e40dcb776020cbc39b.js.map

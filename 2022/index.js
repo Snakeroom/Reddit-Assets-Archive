@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.c488483a1183441bc769.js
-// Retrieved at 11/30/2022, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.315bdb25d4c013bb4556.js
+// Retrieved at 11/30/2022, 4:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -758,7 +758,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const M = e => {
+			const F = e => {
 				let {
 					value: t,
 					count: n,
@@ -784,7 +784,7 @@
 					hk: "1dMoEh"
 				})))
 			};
-			var F = n("./src/reddit/icons/fonts/index.tsx"),
+			var M = n("./src/reddit/icons/fonts/index.tsx"),
 				B = n("./src/reddit/components/Econ/Prediction/PredictionCard/PredictionBody/index.tsx"),
 				U = n("./src/reddit/components/Econ/Prediction/PredictionModal/index.tsx"),
 				$ = n("./src/reddit/actions/economics/helpers/index.ts"),
@@ -965,7 +965,7 @@
 								noun: "previous_post"
 							}))(t.id)), f()
 						}
-					}, r.a.createElement(F.a, {
+					}, r.a.createElement(M.a, {
 						name: "caret_left",
 						className: ne.a.icon,
 						isFilled: !0
@@ -979,11 +979,11 @@
 								noun: "next_post"
 							}))(t.id)), b()
 						}
-					}, r.a.createElement(F.a, {
+					}, r.a.createElement(M.a, {
 						name: "caret_right",
 						className: ne.a.icon,
 						isFilled: !0
-					})), r.a.createElement(M, {
+					})), r.a.createElement(F, {
 						className: ne.a.counter,
 						value: s,
 						count: n.length
@@ -1097,14 +1097,14 @@
 						...u,
 						variables: t
 					});
-					return !!Object(s.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(v.K.Talk)
+					return !!Object(s.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(v.L.Talk)
 				}, h = async (e, t) => {
 					var n, o;
 					const r = await Object(a.a)(e, {
 						...m,
 						variables: t
 					});
-					return !!Object(s.c)(r) && (null !== (o = null === (n = r.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(v.K.Talk)
+					return !!Object(s.c)(r) && (null !== (o = null === (n = r.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(v.L.Talk)
 				}, O = async e => {
 					var t;
 					const n = await Object(a.a)(e, l);
@@ -1148,10 +1148,10 @@
 						hk: "2mGf21"
 					})
 				}, S = e => e.data.prepareAudioRoom || e.data.prepareAudioRoomOnProfile, C = {
-					[v.M.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+					[v.N.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[v.M.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
+					[v.N.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					})
 				}, N = (e, t) => Object(a.a)(e, {
@@ -1323,4 +1323,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.c488483a1183441bc769.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.315bdb25d4c013bb4556.js.map

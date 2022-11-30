@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.e375337c6d9d362db5b1.js
-// Retrieved at 11/30/2022, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.8456416831aa1617242f.js
+// Retrieved at 11/30/2022, 4:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/actions/modQueue/realtime.ts": function(e, t, s) {
@@ -87,7 +87,7 @@
 						})(e),
 						n = Object(k.d)(e, s);
 					return null == n ? void 0 : n.includes(t)
-				}, j = [v.w.ApproveComment, v.w.ApproveLink, v.w.RemoveComment, v.w.RemoveLink, v.w.SpamComment, v.w.SpamLink], w = e => async (t, s, n) => {
+				}, j = [v.x.ApproveComment, v.x.ApproveLink, v.x.RemoveComment, v.x.RemoveLink, v.x.SpamComment, v.x.SpamLink], w = e => async (t, s, n) => {
 					let {
 						gqlContext: o
 					} = n;
@@ -3000,4 +3000,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.e375337c6d9d362db5b1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.8456416831aa1617242f.js.map

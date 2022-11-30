@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.68cb8fcf11c0a129f282.js
-// Retrieved at 11/30/2022, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.3b9bdf43b0eb2a845b36.js
+// Retrieved at 11/30/2022, 4:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -817,7 +817,7 @@
 						post: ge,
 						adLinkContent: Ke,
 						ctaExperimentDesign: Le && "classic"
-					})), ge.discussionType === ce.m.Chat && r.a.createElement(de.a, {
+					})), ge.discussionType === ce.n.Chat && r.a.createElement(de.a, {
 						postId: ge.id
 					}), r.a.createElement("div", {
 						className: me.a.flatlistContainer
@@ -4918,14 +4918,14 @@
 						...m,
 						variables: t
 					});
-					return !!Object(i.c)(s) && (s.body.data.subredditInfoById.allowedPostTypes || []).includes(_.K.Talk)
+					return !!Object(i.c)(s) && (s.body.data.subredditInfoById.allowedPostTypes || []).includes(_.L.Talk)
 				}, v = async (e, t) => {
 					var s, n;
 					const r = await Object(o.a)(e, {
 						...u,
 						variables: t
 					});
-					return !!Object(i.c)(r) && (null !== (n = null === (s = r.body.data.profileByName) || void 0 === s ? void 0 : s.allowedPostTypes) && void 0 !== n ? n : []).includes(_.K.Talk)
+					return !!Object(i.c)(r) && (null !== (n = null === (s = r.body.data.profileByName) || void 0 === s ? void 0 : s.allowedPostTypes) && void 0 !== n ? n : []).includes(_.L.Talk)
 				}, y = async e => {
 					var t;
 					const s = await Object(o.a)(e, l);
@@ -4969,10 +4969,10 @@
 						hk: "2mGf21"
 					})
 				}, O = e => e.data.prepareAudioRoom || e.data.prepareAudioRoomOnProfile, P = {
-					[_.M.ServiceError]: n.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+					[_.N.ServiceError]: n.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[_.M.UserNotAuthorized]: n.fbt._("You don't have permission to start talks in this community.", null, {
+					[_.N.UserNotAuthorized]: n.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					})
 				}, I = (e, t) => Object(o.a)(e, {
@@ -5829,4 +5829,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.68cb8fcf11c0a129f282.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.3b9bdf43b0eb2a845b36.js.map

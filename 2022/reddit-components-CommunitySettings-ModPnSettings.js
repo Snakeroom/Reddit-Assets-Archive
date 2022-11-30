@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.12401fcf53bf9b9761da.js
-// Retrieved at 11/30/2022, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.4d46ad10da5b74fbd451.js
+// Retrieved at 11/30/2022, 4:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CommunitySettings-ModPnSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -61,8 +61,8 @@
 			}
 			var u = n("./src/reddit/selectors/telemetry.ts"),
 				g = n("./src/redditGQL/types.ts");
-			const m = Object.values(g.z),
-				p = Object.values(g.A),
+			const m = Object.values(g.A),
+				p = Object.values(g.B),
 				b = e => t => {
 					return {
 						source: "mod_pn_settings",
@@ -174,7 +174,7 @@
 				}))
 			}
 
-			function v(e) {
+			function C(e) {
 				let {
 					isEnabled: t,
 					onChange: n,
@@ -195,7 +195,7 @@
 				})
 			}
 
-			function C(e) {
+			function v(e) {
 				let {
 					disabled: t,
 					isEnabled: n,
@@ -244,7 +244,7 @@
 						});
 					case "ModPnSettingsLayoutRowSectionToggle": {
 						const e = o[s.id];
-						return i.a.createElement(v, {
+						return i.a.createElement(C, {
 							settingLayoutData: s,
 							onChange: r,
 							isEnabled: e.isEnabled
@@ -252,7 +252,7 @@
 					}
 					case "ModPnSettingsLayoutRowToggle": {
 						const e = o[s.id];
-						return i.a.createElement(C, {
+						return i.a.createElement(v, {
 							settingLayoutData: s,
 							disabled: t,
 							onChange: r,
@@ -426,7 +426,7 @@
 				const {
 					subredditId: t,
 					subredditName: n
-				} = e, [a, c] = Object(o.useState)(null), [l, u] = Object(o.useState)({}), [b, S] = Object(o.useState)(!0), y = Object(Y.a)(), E = Object(r.d)(), x = Object(h.a)(), [v, C] = Object(o.useState)(["page__root"]);
+				} = e, [a, c] = Object(o.useState)(null), [l, u] = Object(o.useState)({}), [b, S] = Object(o.useState)(!0), y = Object(Y.a)(), E = Object(r.d)(), x = Object(h.a)(), [C, v] = Object(o.useState)(["page__root"]);
 				Object(o.useEffect)(() => {
 					(async () => {
 						const e = await I(y(), t);
@@ -474,7 +474,7 @@
 							return {
 								subredditId: t,
 								name: n,
-								status: e.isEnabled ? g.B.Enabled : g.B.Disabled
+								status: e.isEnabled ? g.C.Enabled : g.C.Disabled
 							}
 						}
 						if (p.includes(n)) {
@@ -503,8 +503,8 @@
 				if (b || !a) return i.a.createElement(M.a, {
 					rowsCount: 5
 				});
-				const j = v[v.length - 1],
-					w = v.length > 1;
+				const j = C[C.length - 1],
+					w = C.length > 1;
 				return i.a.createElement(N, {
 					pageId: j,
 					showBackButton: w,
@@ -527,12 +527,12 @@
 					layoutData: a,
 					settings: l,
 					pushPage: e => {
-						C([...v, e]), x(_(e))
+						v([...C, e]), x(_(e))
 					},
 					goBack: () => {
-						if (1 === v.length) return;
-						const e = [...v];
-						e.pop(), C(e)
+						if (1 === C.length) return;
+						const e = [...C];
+						e.pop(), v(e)
 					},
 					subredditName: n
 				})
@@ -682,4 +682,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.12401fcf53bf9b9761da.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.4d46ad10da5b74fbd451.js.map

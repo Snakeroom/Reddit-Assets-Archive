@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HappeningNow.7686a33acc40d9cf1fb0.js
-// Retrieved at 11/30/2022, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HappeningNow.78ee4c014a2638d07d22.js
+// Retrieved at 11/30/2022, 4:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HappeningNow"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2998,14 +2998,14 @@
 									a[e.id] = e
 								}
 								switch (l) {
-									case x.s.Chat: {
+									case x.t.Chat: {
 										const e = null === (r = null === (n = null === (t = null == c ? void 0 : c.commentForest) || void 0 === t ? void 0 : t.trees) || void 0 === n ? void 0 : n.map(e => v(null == e ? void 0 : e.node))) || void 0 === r ? void 0 : r.filter(d.a);
 										(null == e ? void 0 : e.length) && m.push(...e);
 										const s = v(c.authorInfo);
 										s && m.push(s);
 										break
 									}
-									case x.s.Talk:
+									case x.t.Talk:
 										f = c.talkRoom, Array.isArray(null === (s = null == c ? void 0 : c.talkRoom) || void 0 === s ? void 0 : s.topUsers) && m.push(...c.talkRoom.topUsers)
 								}
 								return {
@@ -3218,11 +3218,11 @@
 				ee = n("./src/reddit/components/HappeningNow/Post/Header/index.m.less"),
 				te = n.n(ee);
 			const ne = {
-				[x.s.Unknown]: "",
-				[x.s.Chat]: r.fbt._("Chat", null, {
+				[x.t.Unknown]: "",
+				[x.t.Chat]: r.fbt._("Chat", null, {
 					hk: "1oa6K"
 				}),
-				[x.s.Talk]: r.fbt._("Talk", null, {
+				[x.t.Talk]: r.fbt._("Talk", null, {
 					hk: "1lMkQn"
 				})
 			};
@@ -3255,7 +3255,7 @@
 					}), o.a.createElement(Y.b, {
 						className: te.a.subredditIcon,
 						iconUrl: d
-					}), t.contentType === x.s.Chat ? o.a.createElement(q, {
+					}), t.contentType === x.t.Chat ? o.a.createElement(q, {
 						className: Object(i.a)(te.a.liveChatIcon, {
 							[te.a.nightMode]: l
 						})
@@ -3478,10 +3478,10 @@
 						onClick: () => {
 							var e;
 							switch (l.contentType) {
-								case x.s.Chat:
+								case x.t.Chat:
 									r(Object(Le.a)(d.permalink));
 									break;
-								case x.s.Talk:
+								case x.t.Talk:
 									window.open(`${k.a.redditUrl}/talk/${null===(e=l.talkRoom)||void 0===e?void 0:e.roomId}`)
 							}
 							c(Object(j.d)(t))
@@ -3788,11 +3788,11 @@
 				tt = n("./src/reddit/pages/HappeningNow/index.m.less"),
 				nt = n.n(tt);
 			const rt = {
-					[x.r.Unknown]: "",
-					[x.r.Popular]: r.fbt._("Popular", null, {
+					[x.s.Unknown]: "",
+					[x.s.Popular]: r.fbt._("Popular", null, {
 						hk: "2pUvlx"
 					}),
-					[x.r.Recommended]: r.fbt._("For you", null, {
+					[x.s.Recommended]: r.fbt._("For you", null, {
 						hk: "19HGNV"
 					})
 				},
@@ -3820,12 +3820,12 @@
 					}, o.a.createElement("div", {
 						className: Object(i.a)(nt.a.column, nt.a.content)
 					}, !!t.length && o.a.createElement(Ve, {
-						title: rt[x.r.Recommended]
+						title: rt[x.s.Recommended]
 					}, t.map(e => o.a.createElement(Ae, {
 						key: e,
 						postId: e
 					}))), !!e.length && o.a.createElement(Ve, {
-						title: rt[x.r.Popular]
+						title: rt[x.s.Popular]
 					}, e.map(e => o.a.createElement(Ae, {
 						key: e,
 						postId: e
@@ -3919,4 +3919,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.7686a33acc40d9cf1fb0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.78ee4c014a2638d07d22.js.map

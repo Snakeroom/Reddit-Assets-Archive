@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.162ebd0da2171281b41d.js
-// Retrieved at 11/30/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.d8a64bb3c038dfdb03d8.js
+// Retrieved at 11/30/2022, 4:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1178,7 +1178,7 @@
 						})(e),
 						n = Object(O.d)(e, s);
 					return null == n ? void 0 : n.includes(t)
-				}, k = [g.w.ApproveComment, g.w.ApproveLink, g.w.RemoveComment, g.w.RemoveLink, g.w.SpamComment, g.w.SpamLink], S = e => async (t, s, n) => {
+				}, k = [g.x.ApproveComment, g.x.ApproveLink, g.x.RemoveComment, g.x.RemoveLink, g.x.SpamComment, g.x.SpamLink], S = e => async (t, s, n) => {
 					let {
 						gqlContext: o
 					} = n;
@@ -2174,7 +2174,7 @@
 							tooltipId: e,
 							args: {
 								isModNotesView: !0,
-								modNotesFilter: f.x.Note
+								modNotesFilter: f.y.Note
 							}
 						}))
 					}, [s, x, v]);
@@ -11768,4 +11768,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.162ebd0da2171281b41d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.d8a64bb3c038dfdb03d8.js.map
