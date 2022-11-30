@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.53bf6d70e7c58e87ada5.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.93b8a075342f66cfa040.js
+// Retrieved at 11/29/2022, 7:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/CommentsPageNativeAd/index.m.less": function(e, t, s) {
@@ -55,9 +55,9 @@
 				f = s("./src/reddit/components/PostContainer/index.tsx"),
 				_ = s("./src/reddit/components/PostTitle/index.tsx"),
 				y = s("./src/reddit/constants/componentTestIds.ts"),
-				P = s("./src/reddit/controls/OutboundLink/index.tsx"),
-				S = s("./src/reddit/helpers/search/renderMedia.tsx"),
-				N = s("./src/reddit/components/PostTopMeta/index.tsx"),
+				N = s("./src/reddit/controls/OutboundLink/index.tsx"),
+				P = s("./src/reddit/helpers/search/renderMedia.tsx"),
+				S = s("./src/reddit/components/PostTopMeta/index.tsx"),
 				j = s("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
 				k = s("./src/reddit/components/AuthorLink/index.tsx"),
 				w = s("./src/reddit/components/SponsoredLabel/index.tsx"),
@@ -68,13 +68,16 @@
 			var I = e => r.a.createElement("div", {
 					className: T.a.adTopMetaContainer,
 					"data-adclicklocation": j.a.TOP_BAR
+				}, r.a.createElement(k.a, {
+					className: T.a.authorLink,
+					author: e.author
 				}, r.a.createElement(L.a, {
 					iconUrl: e.iconUrl,
 					isNSFW: !1,
 					userName: e.author,
 					className: T.a.userIcon,
 					omitResponsivePresenceWrapper: !0
-				}), r.a.createElement(k.a, {
+				})), r.a.createElement(k.a, {
 					className: T.a.authorLink,
 					"data-click-id": "user",
 					author: e.author
@@ -214,7 +217,7 @@
 					const i = Object(l.a)(T.a.styledOutboundLink, {
 						[T.a.ctaExperiment]: o
 					});
-					return r.a.createElement(P.b, {
+					return r.a.createElement(N.b, {
 						className: i,
 						href: a.source.url,
 						postId: a.id,
@@ -240,7 +243,7 @@
 						post: p,
 						redditStyle: h,
 						scrollerItemRef: b,
-						showMedia: P,
+						showMedia: N,
 						showCTAExperiment: j
 					} = this.props;
 					if (p.isBlank) return r.a.createElement(v.default, {
@@ -263,12 +266,12 @@
 					}, r.a.createElement(I, {
 						author: p.author,
 						iconUrl: o,
-						greyTextColor: Object(N.h)(this.props)
+						greyTextColor: Object(S.h)(this.props)
 					}), r.a.createElement("div", {
 						className: Object(l.a)(T.a.contentRow, {
 							[T.a.contentRowExpanded]: this.state.mediaExpanded
 						})
-					}, !(n && !P) && r.a.createElement(V, {
+					}, !(n && !N) && r.a.createElement(V, {
 						isMeta: p.isMeta,
 						post: p,
 						redditStyle: h,
@@ -311,7 +314,7 @@
 						showCTAExperiment: j
 					}, p.callToAction)))), r.a.createElement("div", {
 						className: T.a.spacer
-					}), r.a.createElement(O.d, null))), Object(S.a)(p, T.a, b, t, !1, !1)), r.a.createElement("div", {
+					}), r.a.createElement(O.d, null))), Object(P.a)(p, T.a, b, t, !1, !1)), r.a.createElement("div", {
 						className: T.a.commentsSpacer
 					}))
 				}
@@ -407,4 +410,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.53bf6d70e7c58e87ada5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.93b8a075342f66cfa040.js.map
