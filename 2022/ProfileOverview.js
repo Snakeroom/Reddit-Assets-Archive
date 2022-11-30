@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.e81ca9b2f9ab3677d923.js
-// Retrieved at 11/30/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.ad30caa56aa7d09f72b2.js
+// Retrieved at 11/30/2022, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -8433,14 +8433,14 @@
 						...m,
 						variables: t
 					});
-					return !!Object(a.c)(s) && (s.body.data.subredditInfoById.allowedPostTypes || []).includes(x.J.Talk)
+					return !!Object(a.c)(s) && (s.body.data.subredditInfoById.allowedPostTypes || []).includes(x.K.Talk)
 				}, _ = async (e, t) => {
 					var s, n;
 					const o = await Object(r.a)(e, {
 						...u,
 						variables: t
 					});
-					return !!Object(a.c)(o) && (null !== (n = null === (s = o.body.data.profileByName) || void 0 === s ? void 0 : s.allowedPostTypes) && void 0 !== n ? n : []).includes(x.J.Talk)
+					return !!Object(a.c)(o) && (null !== (n = null === (s = o.body.data.profileByName) || void 0 === s ? void 0 : s.allowedPostTypes) && void 0 !== n ? n : []).includes(x.K.Talk)
 				}, y = async e => {
 					var t;
 					const s = await Object(r.a)(e, l);
@@ -8484,10 +8484,10 @@
 						hk: "2mGf21"
 					})
 				}, w = e => e.data.prepareAudioRoom || e.data.prepareAudioRoomOnProfile, P = {
-					[x.L.ServiceError]: n.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+					[x.M.ServiceError]: n.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[x.L.UserNotAuthorized]: n.fbt._("You don't have permission to start talks in this community.", null, {
+					[x.M.UserNotAuthorized]: n.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					})
 				}, S = (e, t) => Object(r.a)(e, {
@@ -10380,4 +10380,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.e81ca9b2f9ab3677d923.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.ad30caa56aa7d09f72b2.js.map

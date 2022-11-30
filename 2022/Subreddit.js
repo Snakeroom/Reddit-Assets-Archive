@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.4d1c6e186c8330f05ed2.js
-// Retrieved at 11/30/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.4f139d080af637b97cb0.js
+// Retrieved at 11/30/2022, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit", "ModListing~Reddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -5441,7 +5441,7 @@
 						})),
 						r = Object(o.e)(e => n ? Object(S.h)(e, n.tournamentId) : []);
 					if (!n) return null;
-					if (n.status === k.K.Closed) return s.a.createElement(B, null);
+					if (n.status === k.L.Closed) return s.a.createElement(B, null);
 					const i = r.filter(e => e.predictionStatus === N.b.Open && e.endsAt > Date.now()),
 						a = i.length > 0,
 						c = i.length && i.some(e => !e.userSelection);
@@ -22421,4 +22421,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.4d1c6e186c8330f05ed2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.4f139d080af637b97cb0.js.map

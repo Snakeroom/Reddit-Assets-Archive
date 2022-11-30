@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.549a8772c2473ac0013f.js
-// Retrieved at 11/29/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.60631f3f934ba71968ac.js
+// Retrieved at 11/30/2022, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/backo2/index.js": function(e, t) {
@@ -1764,8 +1764,8 @@
 				z = n("./src/reddit/icons/fonts/Report/index.tsx"),
 				J = n("./src/reddit/icons/fonts/Spam/index.tsx"),
 				Z = n("./src/reddit/selectors/modQueue.ts"),
-				Y = n("./src/reddit/components/Comments/Comment/TopMeta/modBadgeTooltip.m.less"),
-				X = n.n(Y);
+				X = n("./src/reddit/components/Comments/Comment/TopMeta/modBadgeTooltip.m.less"),
+				Y = n.n(X);
 			const $ = e => {
 				let {
 					comment: t,
@@ -1790,7 +1790,7 @@
 					g = b("CommentTopMeta--Spam--"),
 					_ = p(f);
 				return r.a.createElement(r.a.Fragment, null, (t.approvedBy || t.isApproved) && !u && r.a.createElement(r.a.Fragment, null, r.a.createElement(K.a, {
-					className: X.a.approveIcon,
+					className: Y.a.approveIcon,
 					desc: Object(V.a)(t),
 					id: C,
 					onMouseEnter: p(C),
@@ -1800,7 +1800,7 @@
 					tooltipId: C,
 					text: Object(V.a)(t)
 				})), Object(H.a)(t) && !u && r.a.createElement(r.a.Fragment, null, r.a.createElement(q.a, {
-					className: X.a.removeIcon,
+					className: Y.a.removeIcon,
 					desc: Object(V.b)(t),
 					id: f,
 					onMouseEnter: _,
@@ -1810,26 +1810,26 @@
 					tooltipId: f,
 					text: Object(V.b)(t)
 				})), Object(H.a)(t) && t.isRemoved && !t.modNote && !t.modRemovalReason && !u && r.a.createElement("a", {
-					className: X.a.removalReason,
+					className: Y.a.removalReason,
 					onClick: () => {
 						Promise.all([n.e("Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f"), n.e("removalReasonActions")]).then(n.bind(null, "./src/reddit/actions/removalReasons/index.ts")).then(e => d(e.fetchReasonsAndOpenModal(t.subredditId, [t.id])))
 					}
 				}, o.fbt._("Add a removal reason", null, {
 					hk: "L6yrL"
 				})), Object(H.a)(t) && !(t.isRemoved && !t.modNote && !t.modRemovalReason) && !u && r.a.createElement("a", {
-					className: X.a.removalReason,
+					className: Y.a.removalReason,
 					onMouseEnter: _,
 					onMouseLeave: h
 				}, o.fbt._("Removal reason", null, {
 					hk: "20NRw8"
 				})), t.isLocked && !s && r.a.createElement(Q.a, {
-					className: X.a.lockIcon,
+					className: Y.a.lockIcon,
 					desc: o.fbt._("Locked", null, {
 						hk: "40Ju3g"
 					}),
 					isFilled: !0
 				}), t.bannedBy && t.isSpam && !u && r.a.createElement(r.a.Fragment, null, r.a.createElement(J.a, {
-					className: X.a.spamIcon,
+					className: Y.a.spamIcon,
 					desc: Object(V.d)(t),
 					id: g,
 					onMouseEnter: p(g),
@@ -1839,7 +1839,7 @@
 					tooltipId: g,
 					text: Object(V.d)(t)
 				})), Object(G.a)(t) && !u && r.a.createElement(r.a.Fragment, null, r.a.createElement(z.a, {
-					className: X.a.reportIcon,
+					className: Y.a.reportIcon,
 					desc: Object(V.c)(t.numReports),
 					id: v,
 					onMouseEnter: p(v),
@@ -1849,10 +1849,10 @@
 					tooltipId: v,
 					text: Object(V.c)(t.numReports)
 				})), t.isDeleted && c && !u && r.a.createElement(r.a.Fragment, null, r.a.createElement(q.a, {
-					className: X.a.removeIcon,
+					className: Y.a.removeIcon,
 					isFilled: !0
 				}), r.a.createElement("span", {
-					className: X.a.userDeletion
+					className: Y.a.userDeletion
 				}, o.fbt._("Comment deleted by user", null, {
 					hk: "1Rtt4V"
 				}))))
@@ -3044,8 +3044,8 @@
 				z = n("./src/reddit/actions/comment/websocket/constants.ts");
 			const J = Object(v.a)(z.b),
 				Z = Object(v.a)(z.c),
-				Y = Object(v.a)(z.a),
-				X = Object(v.a)(z.d),
+				X = Object(v.a)(z.a),
+				Y = Object(v.a)(z.d),
 				$ = {},
 				ee = (e, t, n, o) => async (s, r) => {
 					(e => new Promise(t => {
@@ -3136,7 +3136,7 @@
 										o = Object(Q.c)(n, {
 											commentId: e
 										});
-									o && !o.isDeleted ? s(Y({
+									o && !o.isDeleted ? s(X({
 										id: e
 									})) : $[e] = D.DELETE_COMMENT;
 									break
@@ -3152,7 +3152,7 @@
 										c = !!e && !!Object(q.m)(o, {
 											postId: e
 										});
-									!a || a.isRemoved && a.isDeleted || i || c ? $[n] = D.REMOVE_COMMENT : s(Y({
+									!a || a.isRemoved && a.isDeleted || i || c ? $[n] = D.REMOVE_COMMENT : s(X({
 										id: n
 									}));
 									break
@@ -3162,7 +3162,7 @@
 											isSystem: !0
 										}),
 										o = !0;
-									n && s(X({
+									n && s(Y({
 										comment: n,
 										commentsPageKey: e,
 										isChatSort: o
@@ -3422,8 +3422,8 @@
 				ze = n("./src/reddit/helpers/awards/message.ts"),
 				Je = n("./src/reddit/helpers/getRichTextContent/index.ts"),
 				Ze = n("./src/reddit/components/RichTextJson/index.tsx"),
-				Ye = n("./src/reddit/icons/svgs/Sparkle/index.tsx"),
-				Xe = n("./src/reddit/icons/svgs/Star/index.tsx"),
+				Xe = n("./src/reddit/icons/svgs/Sparkle/index.tsx"),
+				Ye = n("./src/reddit/icons/svgs/Star/index.tsx"),
 				$e = n("./src/reddit/icons/svgs/Star2/index.tsx"),
 				et = n("./src/reddit/components/CommentsChat/Comment/AwardComment/index.m.less"),
 				tt = n.n(et);
@@ -3443,15 +3443,15 @@
 						className: Object(s.a)(tt.a.awardComment, r)
 					}, p.a.createElement("div", {
 						className: tt.a.imageContainer
-					}, a && p.a.createElement(p.a.Fragment, null, p.a.createElement(Xe.a, {
+					}, a && p.a.createElement(p.a.Fragment, null, p.a.createElement(Ye.a, {
 						className: Object(s.a)(tt.a.backgroundAnimation, tt.a.backgroundStar)
 					}), p.a.createElement($e.a, {
 						className: Object(s.a)(tt.a.backgroundAnimation, tt.a.backgroundStar, tt.a.backgroundStar2)
-					})), i && p.a.createElement(p.a.Fragment, null, p.a.createElement(Ye.a, {
+					})), i && p.a.createElement(p.a.Fragment, null, p.a.createElement(Xe.a, {
 						className: Object(s.a)(tt.a.backgroundAnimation, tt.a.backgroundSparkle, tt.a.sparkleBottomLeft)
-					}), p.a.createElement(Ye.a, {
+					}), p.a.createElement(Xe.a, {
 						className: Object(s.a)(tt.a.backgroundAnimation, tt.a.backgroundSparkle, tt.a.sparkleTopRight)
-					}), p.a.createElement(Ye.a, {
+					}), p.a.createElement(Xe.a, {
 						className: Object(s.a)(tt.a.backgroundAnimation, tt.a.backgroundSparkle, tt.a.sparkleBottomRight)
 					})), p.a.createElement("img", {
 						src: o
@@ -3688,8 +3688,8 @@
 			var zt = n("./src/reddit/actions/reportFlow/index.ts"),
 				Jt = n("./src/reddit/actions/userBlocks.ts"),
 				Zt = n("./src/reddit/icons/fonts/Pencil/index.tsx"),
-				Yt = n("./src/reddit/icons/fonts/Report/index.tsx"),
-				Xt = n("./src/reddit/icons/svgs/Trash3/index.tsx"),
+				Xt = n("./src/reddit/icons/fonts/Report/index.tsx"),
+				Yt = n("./src/reddit/icons/svgs/Trash3/index.tsx"),
 				$t = n("./src/reddit/icons/svgs/UserBlock/index.tsx"),
 				en = n("./src/reddit/models/PostDraft/index.ts");
 			const tn = e => `Comment-${e}--Modal--DeleteComment`,
@@ -3746,7 +3746,7 @@
 							hk: "4lt26q"
 						}),
 						onClick: b
-					}, p.a.createElement(Xt.a, {
+					}, p.a.createElement(Yt.a, {
 						className: Nt.a.dropdownIcon
 					})), !l && p.a.createElement(Ht.b, {
 						className: Nt.a.dropdownMenuItem,
@@ -3754,7 +3754,7 @@
 							hk: "4oVcnd"
 						}),
 						onClick: u
-					}, p.a.createElement(Yt.a, {
+					}, p.a.createElement(Xt.a, {
 						className: Nt.a.dropdownIcon
 					})), Boolean(c) && Boolean(t.authorId) && !l && !d && p.a.createElement(Ht.b, {
 						className: Nt.a.dropdownMenuItem,
@@ -4340,11 +4340,11 @@
 				}, Object(Qn.b)(null !== (d = null === (c = o.awardCountsById) || void 0 === c ? void 0 : c[r.id]) && void 0 !== d ? d : 0)))
 			};
 			var Zn = n("./src/reddit/components/CommentsChat/Comment/v2/DeletedComment/index.m.less"),
-				Yn = n.n(Zn);
-			const Xn = () => p.a.createElement(p.a.Fragment, null, p.a.createElement("div", {
-				className: Yn.a.icon
-			}, p.a.createElement(Xt.a, null)), p.a.createElement("span", {
-				className: Yn.a.label
+				Xn = n.n(Zn);
+			const Yn = () => p.a.createElement(p.a.Fragment, null, p.a.createElement("div", {
+				className: Xn.a.icon
+			}, p.a.createElement(Yt.a, null)), p.a.createElement("span", {
+				className: Xn.a.label
 			}, o.fbt._("This message was deleted", null, {
 				hk: "23fI7b"
 			})));
@@ -4694,8 +4694,8 @@
 					}, [w]), !a) return null;
 				const J = a.isSystem,
 					Z = !a.isDeleted && !J,
-					Y = !!t,
-					X = Object.keys(a.awardCountsById || {}).length > 0,
+					X = !!t,
+					Y = Object.keys(a.awardCountsById || {}).length > 0,
 					$ = !!(null == Q ? void 0 : Q.length),
 					ee = null === (A = null == a ? void 0 : a.id) || void 0 === A ? void 0 : A.includes("cb_botmsg");
 				return F ? p.a.createElement(it, {
@@ -4759,7 +4759,7 @@
 					className: Object(s.a)(go.a.commentBody, {
 						[go.a.expanded]: H
 					})
-				}, Y && t && v ? p.a.createElement(ot, {
+				}, X && t && v ? p.a.createElement(ot, {
 					award: t,
 					comment: a,
 					iconUrl: n
@@ -4773,9 +4773,9 @@
 					content: Object(Je.a)(a),
 					rtJsonElementProps: K,
 					useExplicitTextColor: v
-				}), (X || $) && p.a.createElement("div", {
+				}), (Y || $) && p.a.createElement("div", {
 					className: go.a.reactions
-				}, X && p.a.createElement(ho, {
+				}, Y && p.a.createElement(ho, {
 					postOrComment: a
 				}), $ && Q.map(e => {
 					let {
@@ -4814,7 +4814,7 @@
 					commentsPageKey: c,
 					isEditing: C,
 					comment: a
-				})), a.isDeleted && p.a.createElement(Xn, null), Z && !C && l && l.map((e, t) => p.a.createElement(En.b, {
+				})), a.isDeleted && p.a.createElement(Yn, null), Z && !C && l && l.map((e, t) => p.a.createElement(En.b, {
 					key: `${t}-${e}`,
 					className: go.a.errorText
 				}, e)), !C && G && !H && p.a.createElement("button", {
@@ -5141,7 +5141,7 @@
 						const t = Object(Ce.d)(e),
 							n = Object(ye.a)(3 * r.E)(e),
 							o = Object(Do.a)(e, {
-								experience: Fo.W.LiveChatReactionEdu
+								experience: Fo.X.LiveChatReactionEdu
 							});
 						return t && n && !!(null == o ? void 0 : o.value)
 					}
@@ -5174,16 +5174,16 @@
 								text: Gn
 							})
 						})), e(Object(te.b)({
-							experience: Fo.W.LiveChatReactionEdu,
+							experience: Fo.X.LiveChatReactionEdu,
 							value: !1
-						})), e(Object(te.c)(Fo.W.LiveChatReactionEdu))
+						})), e(Object(te.c)(Fo.X.LiveChatReactionEdu))
 					}
 				})),
-				Yo = e => {
+				Xo = e => {
 					const t = new Set;
 					return e.filter(e => !t.has(e.id) && (t.add(e.id), !0))
 				};
-			class Xo extends p.a.Component {
+			class Yo extends p.a.Component {
 				constructor(e) {
 					super(e), this._refList = {}, this._refScroller = p.a.createRef(), this._refThreadScroller = p.a.createRef(), this._timestampUpdater = null, this.scrollToBottom = () => {
 						this._refScroller && this._refScroller.current && this._refScroller.current.scrollToLastBottomChunk()
@@ -5384,7 +5384,7 @@
 						comments: o,
 						chatCommentLinks: s
 					} = this.props;
-					return Yo(s).filter(s => {
+					return Xo(s).filter(s => {
 						if (n) {
 							const n = null == o ? void 0 : o[s.id];
 							if (!n) return !1;
@@ -5515,7 +5515,7 @@
 					}))
 				}
 			}
-			t.default = Zo(Object(Po.c)(Xo))
+			t.default = Zo(Object(Po.c)(Yo))
 		},
 		"./src/reddit/components/ContentTooltip/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -6768,4 +6768,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.549a8772c2473ac0013f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.60631f3f934ba71968ac.js.map

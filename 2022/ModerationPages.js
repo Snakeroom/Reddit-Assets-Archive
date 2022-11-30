@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.e3d83129dc6942e89167.js
-// Retrieved at 11/30/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.8d1601e7b7ed4021d21d.js
+// Retrieved at 11/30/2022, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -4417,7 +4417,7 @@
 							isStartImmediately: !0,
 							subredditId: e,
 							predictionDrafts: c,
-							currency: b.S.Tokens,
+							currency: b.T.Tokens,
 							tokenIcon: l
 						}),
 						m = Object(j.a)(u);
@@ -8462,33 +8462,33 @@
 		"./src/reddit/actions/pages/profilePosts.ts": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "PROFILE_POSTS_PENDING", (function() {
-				return ne
-			})), n.d(t, "PROFILE_POSTS_LOADED", (function() {
 				return se
-			})), n.d(t, "PROFILE_POSTS_FAILED", (function() {
+			})), n.d(t, "PROFILE_POSTS_LOADED", (function() {
 				return re
-			})), n.d(t, "profilePostsPending", (function() {
+			})), n.d(t, "PROFILE_POSTS_FAILED", (function() {
 				return oe
-			})), n.d(t, "profilePostsLoaded", (function() {
+			})), n.d(t, "profilePostsPending", (function() {
 				return ie
-			})), n.d(t, "profilePostsFailed", (function() {
+			})), n.d(t, "profilePostsLoaded", (function() {
 				return ae
-			})), n.d(t, "profilePostsRequested", (function() {
+			})), n.d(t, "profilePostsFailed", (function() {
 				return de
-			})), n.d(t, "MORE_POSTS_PENDING", (function() {
+			})), n.d(t, "profilePostsRequested", (function() {
 				return ce
-			})), n.d(t, "MORE_POSTS_LOADED", (function() {
+			})), n.d(t, "MORE_POSTS_PENDING", (function() {
 				return le
-			})), n.d(t, "MORE_POSTS_FAILED", (function() {
+			})), n.d(t, "MORE_POSTS_LOADED", (function() {
 				return ue
-			})), n.d(t, "morePostsPending", (function() {
+			})), n.d(t, "MORE_POSTS_FAILED", (function() {
 				return me
-			})), n.d(t, "morePostsLoaded", (function() {
+			})), n.d(t, "morePostsPending", (function() {
 				return pe
-			})), n.d(t, "morePostsFailed", (function() {
+			})), n.d(t, "morePostsLoaded", (function() {
 				return be
-			})), n.d(t, "morePostsRequested", (function() {
+			})), n.d(t, "morePostsFailed", (function() {
 				return fe
+			})), n.d(t, "morePostsRequested", (function() {
+				return he
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./node_modules/lodash/pick.js"),
@@ -8508,41 +8508,48 @@
 				_ = n("./src/reddit/constants/parameters.ts"),
 				g = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				v = n("./src/lib/makeGqlRequest/index.ts"),
-				x = n("./src/redditGQL/operations/ProfileFeed.json");
-			const O = async (e, t) => await Object(v.a)(e, {
+				x = n("./src/redditGQL/operations/ProfileFeed.json"),
+				O = n("./src/redditGQL/types.ts");
+			const E = async (e, t) => await Object(v.a)(e, {
 				...x,
 				variables: t
-			}), E = e => {
+			}), y = (e, t) => {
+				if (!e) return;
+				const n = e.toUpperCase();
+				return t.includes(n) ? n : void 0
+			}, C = e => {
 				let {
 					username: t,
 					profileSort: n,
 					filter: s,
-					loadMoreData: r,
-					shouldUseGqlCursor: o
+					timeSort: r,
+					loadMoreData: o,
+					shouldUseGqlCursor: i
 				} = e;
-				const i = {
+				const a = {
 					username: t,
-					sort: n.toUpperCase(),
+					sort: y(n, Object.values(O.J)),
+					range: y(r, Object.values(O.I)),
 					filter: s
 				};
-				if (r) {
+				if (o) {
 					const {
 						token: e
-					} = r;
-					i.after = o ? e : btoa(e)
+					} = o;
+					a.after = i ? e : btoa(e)
 				}
-				return i
+				return a
 			};
-			var y = n("./src/config.ts"),
-				C = n("./src/lib/addAllowQuarantinedParam/index.ts"),
-				j = n("./src/lib/constants/index.ts"),
-				k = n("./src/lib/makeApiRequest/index.ts"),
-				I = n("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
-				S = n("./src/reddit/models/RichTextJson/addRTJParam.ts");
-			const w = (e, t, n) => Object(k.a)(e, {
+			var j = n("./src/config.ts"),
+				k = n("./src/lib/addAllowQuarantinedParam/index.ts"),
+				I = n("./src/lib/constants/index.ts"),
+				S = n("./src/lib/makeApiRequest/index.ts"),
+				w = n("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
+				T = n("./src/reddit/models/RichTextJson/addRTJParam.ts");
+			const N = (e, t, n) => Object(S.a)(e, {
 				data: n,
-				endpoint: Object(I.a)(Object(C.a)(Object(S.a)(`${y.a.gatewayUrl}/desktopapi/v1/user/${t}/posts`))),
-				method: j.ob.GET
+				endpoint: Object(w.a)(Object(k.a)(Object(T.a)(`${j.a.gatewayUrl}/desktopapi/v1/user/${t}/posts`))),
+				method: I.ob.GET
 			}).then(e => "pinned" in e.body ? e : "postIds" in e.body ? {
 				...e,
 				body: {
@@ -8550,17 +8557,17 @@
 					pinned: e.body.postIds.filter(t => e.body.posts[t] && e.body.posts[t].isPinned).reverse()
 				}
 			} : e);
-			var T = n("./src/reddit/helpers/getTimeSortForListing/index.ts"),
-				N = n("./src/reddit/helpers/graphql/normalizeFlairFromGql/index.ts"),
-				P = n("./src/reddit/helpers/graphql/normalizePostFlairFromGql/index.ts"),
-				R = n("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts"),
-				A = n("./src/reddit/helpers/graphql/normalizeProfileFromGql/index.ts"),
-				M = n("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts"),
-				L = n("./src/reddit/models/Post/index.ts");
-			const D = (e, t) => {
-				if (!Object(L.l)(t) && !Object(L.n)(t)) return null;
+			var P = n("./src/reddit/helpers/getTimeSortForListing/index.ts"),
+				R = n("./src/reddit/helpers/graphql/normalizeFlairFromGql/index.ts"),
+				A = n("./src/reddit/helpers/graphql/normalizePostFlairFromGql/index.ts"),
+				M = n("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts"),
+				L = n("./src/reddit/helpers/graphql/normalizeProfileFromGql/index.ts"),
+				D = n("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts"),
+				F = n("./src/reddit/models/Post/index.ts");
+			const U = (e, t) => {
+				if (!Object(F.l)(t) && !Object(F.n)(t)) return null;
 				if (e.posts[t.id]) return t.id;
-				const n = Object(R.f)(t),
+				const n = Object(M.f)(t),
 					{
 						id: s
 					} = n;
@@ -8568,29 +8575,29 @@
 				const {
 					crosspostRoot: r
 				} = t;
-				r && r.type === L.a.Post && r.postInfo && D(e, r.postInfo);
+				r && r.type === F.a.Post && r.postInfo && U(e, r.postInfo);
 				const {
 					authorFlair: o
 				} = t;
 				if (o) {
 					const t = n.belongsTo.id;
-					e.authorFlair[t] || (e.authorFlair[t] = {}), e.authorFlair[t][n.author] = Object(N.a)(o)[0]
+					e.authorFlair[t] || (e.authorFlair[t] = {}), e.authorFlair[t][n.author] = Object(R.a)(o)[0]
 				}
-				if (Object(L.l)(t)) {
+				if (Object(F.l)(t)) {
 					const {
 						profile: n
 					} = t;
-					e.profiles[n.id] || (e.profiles[n.id] = Object(A.a)(n))
-				} else if (Object(L.n)(t)) {
+					e.profiles[n.id] || (e.profiles[n.id] = Object(L.a)(n))
+				} else if (Object(F.n)(t)) {
 					const {
 						subreddit: n
 					} = t;
-					e.subreddits[n.id] || (e.subreddits[n.id] = Object(M.a)(n)), e.postFlair[n.id] || (e.postFlair[n.id] = Object(P.a)(n))
+					e.subreddits[n.id] || (e.subreddits[n.id] = Object(D.a)(n)), e.postFlair[n.id] || (e.postFlair[n.id] = Object(A.a)(n))
 				}
 				return s
 			};
-			var F = n("./src/reddit/models/Comment/index.ts"),
-				U = (e, t) => {
+			var B = n("./src/reddit/models/Comment/index.ts"),
+				q = (e, t) => {
 					var n, s, r;
 					const o = {
 							authorFlair: {},
@@ -8610,8 +8617,8 @@
 					for (const {
 							node: c
 						} of a) {
-						if (!c || c.__typename === F.d.Comment) continue;
-						const e = D(o, c);
+						if (!c || c.__typename === B.d.Comment) continue;
+						const e = U(o, c);
 						e && o.postIds.push(e)
 					}
 					const d = null === (r = null === (s = null == e ? void 0 : e.redditorInfoByName) || void 0 === s ? void 0 : s.profile) || void 0 === r ? void 0 : r.stickyPosts;
@@ -8624,11 +8631,11 @@
 					}
 					return o
 				},
-				B = n("./node_modules/@sentry/minimal/esm/index.js"),
-				q = n("./node_modules/deep-diff/index.js"),
-				G = n("./src/lib/env/index.ts");
-			const H = new Set(["authorFlair.cssClass", "posts.adSupplementaryText", "posts.allAwardings", "posts.approvedAtUTC", "posts.approvedBy", "posts.attributionInfo", "posts.audioRoom", "posts.bannedAtUTC", "posts.bannedBy", "posts.collapsedBecauseCrowdControl", "posts.ignoreReports", "posts.isApproved", "posts.isAuthorPremium", "posts.isEligibleForLinkedPosts", "posts.isEligibleForQASchema", "posts.isFollowed", "posts.isPinned", "posts.isReactAllowed", "posts.isRemoved", "posts.isSpam", "posts.lastAuthorModNote", "posts.modQueueTriggers", "posts.modReportsDismissed", "posts.pollData", "posts.predictionTournament", "posts.previewComments", "posts.modReports", "posts.numReports", "posts.reactedFrom", "posts.removedBy", "posts.removedByCategory", "posts.topAwardedType", "posts.userReports", "posts.userReportsDismissed", "posts.modReasonBy", "subreddits.answerableQuestions", "subreddits.freeFormReports", "subreddits.isSubscribed", "authorFlair.richtext", "authorFlair.text", "posts.collectionIds", "posts.liveCommentsWebsocket", "posts.thumbnail.url", "posts.discussionType", "posts.eventsOnRender", "posts.flair", "posts.gildings", "posts.media", "posts.goldCount", "posts.sendReplies", "posts.score", "posts.sendReplies", "posts.source.url", "posts.source.outboundUrl", "posts.source.outboundUrlCreated", "posts.source.outboundUrlExpiration", "profiles.acceptFollowers", "profiles.communityIcon", "profiles.icon.url", "posts.upvoteRatio", "subreddits.acceptFollowers", "subreddits.allowChatPostCreation", "subreddits.communityIcon", "subreddits.icon.url", "subreddits.isChatPostFeatureEnabled", "subreddits.primaryColor", "subreddits.subscribers"]),
-				W = (e, t) => {
+				G = n("./node_modules/@sentry/minimal/esm/index.js"),
+				H = n("./node_modules/deep-diff/index.js"),
+				W = n("./src/lib/env/index.ts");
+			const V = new Set(["authorFlair.cssClass", "posts.adSupplementaryText", "posts.allAwardings", "posts.approvedAtUTC", "posts.approvedBy", "posts.attributionInfo", "posts.audioRoom", "posts.bannedAtUTC", "posts.bannedBy", "posts.collapsedBecauseCrowdControl", "posts.ignoreReports", "posts.isApproved", "posts.isAuthorPremium", "posts.isEligibleForLinkedPosts", "posts.isEligibleForQASchema", "posts.isFollowed", "posts.isPinned", "posts.isReactAllowed", "posts.isRemoved", "posts.isSpam", "posts.lastAuthorModNote", "posts.modQueueTriggers", "posts.modReportsDismissed", "posts.pollData", "posts.predictionTournament", "posts.previewComments", "posts.modReports", "posts.numReports", "posts.reactedFrom", "posts.removedBy", "posts.removedByCategory", "posts.topAwardedType", "posts.userReports", "posts.userReportsDismissed", "posts.modReasonBy", "subreddits.answerableQuestions", "subreddits.freeFormReports", "subreddits.isSubscribed", "authorFlair.richtext", "authorFlair.text", "posts.collectionIds", "posts.liveCommentsWebsocket", "posts.thumbnail.url", "posts.discussionType", "posts.eventsOnRender", "posts.flair", "posts.gildings", "posts.media", "posts.goldCount", "posts.sendReplies", "posts.score", "posts.sendReplies", "posts.source.url", "posts.source.outboundUrl", "posts.source.outboundUrlCreated", "posts.source.outboundUrlExpiration", "profiles.acceptFollowers", "profiles.communityIcon", "profiles.icon.url", "posts.upvoteRatio", "subreddits.acceptFollowers", "subreddits.allowChatPostCreation", "subreddits.communityIcon", "subreddits.icon.url", "subreddits.isChatPostFeatureEnabled", "subreddits.primaryColor", "subreddits.subscribers"]),
+				z = (e, t) => {
 					const n = {},
 						s = {};
 					Object.keys(e).forEach(r => {
@@ -8637,8 +8644,8 @@
 						n[r] = {}, s[r] = 0, Object.keys(o).forEach(e => {
 							const t = o[e],
 								a = i[e],
-								d = Object(q.diff)(t, a, {
-									prefilter: (e, t) => H.has(`${r}.${e.length?`${e.join(".")}.`:""}${t}`) || H.has(`${r}.${t}`),
+								d = Object(H.diff)(t, a, {
+									prefilter: (e, t) => V.has(`${r}.${e.length?`${e.join(".")}.`:""}${t}`) || V.has(`${r}.${t}`),
 									normalize: (e, t, n, s) => n || s ? [n, s] : [n, n]
 								});
 							s[r] = d ? s[r] + d.length : (null == s ? void 0 : s[r]) || 0, d && (n[r][e] = {
@@ -8656,19 +8663,19 @@
 					}
 				};
 
-			function V(e) {
+			function K(e) {
 				let {
 					gatewayResponse: t,
 					normalizedGqlResponse: n,
 					rawGqlResponse: s
 				} = e;
-				if (Object(G.a)()) {
+				if (Object(W.a)()) {
 					console.group("GQL Profiles Shadowtest"), console.groupCollapsed("raw gql response"), console.log(s), console.groupEnd(), console.groupCollapsed("normalized gql response"), console.log(n), console.groupEnd(), console.groupCollapsed("gateway response"), console.log(t), console.groupEnd();
 					const {
 						allDiffs: e,
 						issueCounts: r,
 						totalIssues: o
-					} = W(t, n);
+					} = z(t, n);
 					console.groupCollapsed(`diff: ${o} issues`), console.log("lhs = gateway\nrhs = gql");
 					for (const t in e) {
 						if (console.groupCollapsed(`${t}: ${r[t]} issues`), r[t] > 0)
@@ -8683,67 +8690,66 @@
 					}
 					console.groupEnd()
 				}
-				if (Object(G.b)()) {
+				if (Object(W.b)()) {
 					const {
 						allDiffs: e,
 						issueCounts: s,
 						totalIssues: r
-					} = W(t, n);
+					} = z(t, n);
 					if (r <= 0) return;
-					B.l(t => {
+					G.l(t => {
 						t.setExtra("info", {
 							allDiffs: e,
 							issueCounts: s,
 							totalIssues: r
-						}), t.setExtra("bypassSampling", !0), B.d("GQL Profiles Shadowtest Diff")
+						}), t.setExtra("bypassSampling", !0), G.d("GQL Profiles Shadowtest Diff")
 					})
 				}
 			}
-			var z = n("./src/reddit/helpers/post/index.ts"),
-				K = n("./src/reddit/helpers/timeApiRoute/index.ts"),
-				Q = n("./src/reddit/models/User/index.ts"),
-				Y = n("./src/reddit/constants/experiments.ts"),
-				J = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const X = e => {
-					return Object(J.c)(e, {
-						experimentEligibilitySelector: J.a,
-						experimentName: Y.uc
-					}) === Y.Md
+			var Q = n("./src/reddit/helpers/post/index.ts"),
+				Y = n("./src/reddit/helpers/timeApiRoute/index.ts"),
+				J = n("./src/reddit/models/User/index.ts"),
+				X = n("./src/reddit/constants/experiments.ts"),
+				Z = n("./src/reddit/helpers/chooseVariant/index.ts");
+			const $ = e => {
+					return Object(Z.c)(e, {
+						experimentEligibilitySelector: Z.a,
+						experimentName: X.uc
+					}) === X.Md
 				},
-				Z = e => {
-					return Object(J.c)(e, {
-						experimentEligibilitySelector: J.a,
-						experimentName: Y.vc
-					}) === Y.Md
+				ee = e => {
+					return Object(Z.c)(e, {
+						experimentEligibilitySelector: Z.a,
+						experimentName: X.vc
+					}) === X.Md
 				};
-			var $ = n("./src/reddit/selectors/listings.ts"),
-				ee = n("./src/reddit/selectors/profile.ts"),
-				te = n("./src/redditGQL/types.ts");
-			const ne = "PAGE__PROFILE_POSTS_PENDING",
-				se = "PAGE__PROFILE_POSTS_LOADED",
-				re = "PAGE__PROFILE_POSTS_FAILED",
-				oe = Object(o.a)(ne),
+			var te = n("./src/reddit/selectors/listings.ts"),
+				ne = n("./src/reddit/selectors/profile.ts");
+			const se = "PAGE__PROFILE_POSTS_PENDING",
+				re = "PAGE__PROFILE_POSTS_LOADED",
+				oe = "PAGE__PROFILE_POSTS_FAILED",
 				ie = Object(o.a)(se),
 				ae = Object(o.a)(re),
-				de = e => async (t, n, s) => {
+				de = Object(o.a)(oe),
+				ce = e => async (t, n, s) => {
 					var o, v, x;
 					const {
 						queryParams: y,
-						params: C
+						params: j
 					} = e, {
-						sort: j,
-						t: k
+						sort: k,
+						t: I
 					} = Object(u.b)(y), {
-						profileName: I
-					} = C, S = Object(i.a)(`u_${I}`, j, y), N = n(), P = Object(a.a)(N.listings.postOrder.ids, S), R = Object($.c)(N, {
-						listingKey: S
-					}), A = Object($.d)(N, {
-						listingKey: S
+						profileName: S
+					} = j, w = Object(i.a)(`u_${S}`, k, y), T = n(), R = Object(a.a)(T.listings.postOrder.ids, w), A = Object(te.c)(T, {
+						listingKey: w
+					}), M = Object(te.d)(T, {
+						listingKey: w
 					});
-					if (await t(b.d(I)), A || P && !R) {
-						if (P) {
-							const e = Object(ee.s)(n(), {
-								profileName: I
+					if (await t(b.d(S)), M || R && !A) {
+						if (R) {
+							const e = Object(ne.s)(n(), {
+								profileName: S
 							});
 							t(p.m({
 								title: e
@@ -8751,88 +8757,89 @@
 						}
 						return
 					}
-					t(oe({
-						key: S
+					t(ie({
+						key: w
 					}));
-					const M = Z(N);
-					let L, D, F;
-					if (M) {
-						const e = E({
-							username: I,
-							profileSort: j,
-							filter: te.M.Posts,
+					const L = ee(T);
+					let D, F, U;
+					if (L) {
+						const e = C({
+							username: S,
+							profileSort: k,
+							filter: O.N.Posts,
+							timeSort: Object(P.a)(k, I),
 							shouldUseGqlCursor: !0
 						});
-						D = null === (x = null === (v = null === (o = null == (L = await Object(K.a)("profilePosts", () => O(s.gqlContext(), e))) ? void 0 : L.body) || void 0 === o ? void 0 : o.data) || void 0 === v ? void 0 : v.redditorInfoByName) || void 0 === x ? void 0 : x.__typename
+						F = null === (x = null === (v = null === (o = null == (D = await Object(Y.a)("profilePosts", () => E(s.gqlContext(), e))) ? void 0 : D.body) || void 0 === o ? void 0 : o.data) || void 0 === v ? void 0 : v.redditorInfoByName) || void 0 === x ? void 0 : x.__typename
 					} else {
 						const t = {
 							...r()(e.queryParams, [..._.q, ..._.p, _.l]),
-							layout: Object(g.U)(N, {}).toLowerCase(),
-							sort: j,
-							t: Object(T.a)(j, k)
+							layout: Object(g.U)(T, {}).toLowerCase(),
+							sort: k,
+							t: Object(P.a)(k, I)
 						};
-						L = await Object(K.a)("profilePosts", () => w(s.apiContext(), I, t))
+						D = await Object(Y.a)("profilePosts", () => N(s.apiContext(), S, t))
 					}
-					if (!L.ok || M && D !== Q.c.AvailableRedditor) return t(ae({
-						account: !M && L.body.data ? L.body.data.account : null,
-						error: L.body.reason ? {
-							type: L.body.reason
-						} : L.error,
-						key: S
-					})), L.body.reason === h.a.DeletedProfile || D === Q.c.DeletedRedditor ? t(Object(d.u)({
-						profileName: I
-					})) : D === Q.c.UnavailableRedditor ? t(Object(d.A)({
-						profileName: I
-					})) : M && !D && t(Object(d.o)({
-						profileName: I
-					})), void t(p.n(L.status));
-					if (M) {
+					if (!D.ok || L && F !== J.c.AvailableRedditor) return t(de({
+						account: !L && D.body.data ? D.body.data.account : null,
+						error: D.body.reason ? {
+							type: D.body.reason
+						} : D.error,
+						key: w
+					})), D.body.reason === h.a.DeletedProfile || F === J.c.DeletedRedditor ? t(Object(d.u)({
+						profileName: S
+					})) : F === J.c.UnavailableRedditor ? t(Object(d.A)({
+						profileName: S
+					})) : L && !F && t(Object(d.o)({
+						profileName: S
+					})), void t(p.n(D.status));
+					if (L) {
 						const {
 							data: e
-						} = L.body;
-						F = U(e, !0)
-					} else F = L.body, await Object(z.a)(s.gqlContext, F.posts).then(e => F.posts = e);
-					if (!M && X(N)) {
-						const e = E({
-								username: I,
-								profileSort: j,
-								filter: te.M.Posts
+						} = D.body;
+						U = q(e, !0)
+					} else U = D.body, await Object(Q.a)(s.gqlContext, U.posts).then(e => U.posts = e);
+					if (!L && $(T)) {
+						const e = C({
+								username: S,
+								profileSort: k,
+								filter: O.N.Posts
 							}),
-							t = await O(s.gqlContext(), e);
+							t = await E(s.gqlContext(), e);
 						if (t.ok && t.body) {
 							const {
 								data: e
-							} = t.body, n = U(e);
-							V({
+							} = t.body, n = q(e);
+							K({
 								gatewayResponse: {
-									authorFlair: F.authorFlair,
-									pinned: F.pinned,
-									postIds: F.postIds,
-									posts: F.posts,
-									postFlair: F.postFlair,
-									profiles: F.profiles,
-									subreddits: F.subreddits,
-									token: F.token
+									authorFlair: U.authorFlair,
+									pinned: U.pinned,
+									postIds: U.postIds,
+									posts: U.posts,
+									postFlair: U.postFlair,
+									profiles: U.profiles,
+									subreddits: U.subreddits,
+									token: U.token
 								},
 								normalizedGqlResponse: n,
 								rawGqlResponse: e
 							})
 						}
 					}
-					t(ie({
-						key: S,
+					t(ae({
+						key: w,
 						meta: n().meta,
-						...F
+						...U
 					}));
-					const B = Object(ee.o)(n(), I),
+					const B = Object(ne.o)(n(), S),
 						{
-							pinned: q
-						} = F;
+							pinned: G
+						} = U;
 					t(Object(m.h)({
 						profileId: B,
-						pinned: q
-					})), await Promise.all([t(Object(u.c)(I)), t(Object(f.q)()), t(Object(l.b)()), t(c.o(I))])
-				}, ce = "PROFILE_POSTS__MORE_POSTS_PENDING", le = "PROFILE_POSTS__MORE_POSTS_LOADED", ue = "PROFILE_POSTS__MORE_POSTS_FAILED", me = Object(o.a)(ce), pe = Object(o.a)(le), be = Object(o.a)(ue), fe = () => async (e, t, n) => {
+						pinned: G
+					})), await Promise.all([t(Object(u.c)(S)), t(Object(f.q)()), t(Object(l.b)()), t(c.o(S))])
+				}, le = "PROFILE_POSTS__MORE_POSTS_PENDING", ue = "PROFILE_POSTS__MORE_POSTS_LOADED", me = "PROFILE_POSTS__MORE_POSTS_FAILED", pe = Object(o.a)(le), be = Object(o.a)(ue), fe = Object(o.a)(me), he = () => async (e, t, n) => {
 					let {
 						apiContext: s,
 						gqlContext: o
@@ -8850,33 +8857,34 @@
 						t: p
 					} = Object(u.b)(c), {
 						profileName: b
-					} = l, f = Object(i.a)(`u_${b}`, m, c), h = Object($.g)(a, {
+					} = l, f = Object(i.a)(`u_${b}`, m, c), h = Object(te.g)(a, {
 						listingKey: f
 					});
 					if (!h) return;
-					const v = Object($.d)(a, {
+					const v = Object(te.d)(a, {
 							listingKey: f
 						}),
-						x = Object($.e)(a, {
+						x = Object(te.e)(a, {
 							listingKey: f,
 							token: h.token
 						});
 					if (v || x) return;
-					e(me({
+					e(pe({
 						key: f,
 						fetchedToken: h.token
 					}));
-					const y = Z(a);
-					let C, j;
+					const y = ee(a);
+					let j, k;
 					if (y) {
-						const e = E({
+						const e = C({
 							username: b,
 							profileSort: m,
-							filter: te.M.Posts,
+							filter: O.N.Posts,
+							timeSort: Object(P.a)(m, p),
 							loadMoreData: h,
 							shouldUseGqlCursor: !0
 						});
-						C = await O(o(), e)
+						j = await E(o(), e)
 					} else {
 						const e = {
 							after: h.token,
@@ -8886,59 +8894,59 @@
 							...r()(c, _.q),
 							layout: Object(g.U)(a, {}).toLowerCase()
 						};
-						C = await w(s(), b, e)
+						j = await N(s(), b, e)
 					}
-					if (!C.ok) return void e(be({
-						account: !y && C.body.data ? C.body.data.account : null,
-						error: C.error,
+					if (!j.ok) return void e(fe({
+						account: !y && j.body.data ? j.body.data.account : null,
+						error: j.error,
 						fetchedToken: h.token,
 						key: f
 					}));
 					if (y) {
 						const {
 							data: e
-						} = C.body;
-						j = U(e, !0)
-					} else j = C.body, await Object(z.a)(o, j.posts).then(e => j.posts = e);
-					const k = a.listings.postOrder.ids[f],
-						I = j.postIds || [],
-						S = {
-							...j,
-							postIds: I.filter(e => !k || !k.includes(e))
+						} = j.body;
+						k = q(e, !0)
+					} else k = j.body, await Object(Q.a)(o, k.posts).then(e => k.posts = e);
+					const I = a.listings.postOrder.ids[f],
+						S = k.postIds || [],
+						w = {
+							...k,
+							postIds: S.filter(e => !I || !I.includes(e))
 						};
-					if (X(a)) {
-						const e = E({
+					if ($(a)) {
+						const e = C({
 								username: b,
 								profileSort: m,
-								filter: te.M.Posts,
+								filter: O.N.Posts,
 								loadMoreData: h
 							}),
-							t = await O(o(), e);
+							t = await E(o(), e);
 						if (t.ok && t.body) {
 							const {
 								data: e
-							} = t.body, n = U(e);
-							V({
+							} = t.body, n = q(e);
+							K({
 								gatewayResponse: {
-									authorFlair: S.authorFlair,
-									pinned: S.pinned,
-									postIds: S.postIds,
-									posts: S.posts,
-									postFlair: S.postFlair,
-									profiles: S.profiles,
-									subreddits: S.subreddits,
-									token: S.token
+									authorFlair: w.authorFlair,
+									pinned: w.pinned,
+									postIds: w.postIds,
+									posts: w.posts,
+									postFlair: w.postFlair,
+									profiles: w.profiles,
+									subreddits: w.subreddits,
+									token: w.token
 								},
 								normalizedGqlResponse: n,
 								rawGqlResponse: e
 							})
 						}
 					}
-					e(pe({
+					e(be({
 						fetchedToken: h.token,
 						key: f,
 						meta: a.meta,
-						...S
+						...w
 					})), await e(Object(u.c)(b))
 				}
 		},
@@ -17763,9 +17771,9 @@
 						modQueueSettings: F
 					} = e;
 					return {
-						allowGalleries: v.includes(h.J.Gallery),
-						allowImages: v.includes(h.J.Image),
-						allowPolls: v.includes(h.J.Poll),
+						allowGalleries: v.includes(h.K.Gallery),
+						allowImages: v.includes(h.K.Image),
+						allowPolls: v.includes(h.K.Poll),
 						archivePostsEnabled: r,
 						allowDiscovery: o,
 						allowChatPostCreation: i,
@@ -17819,19 +17827,19 @@
 				},
 				y = e => e ? O.indexOf(e) : 0,
 				C = e => {
-					if (e) return Object.values(h.Q).find(t => t === (null == e ? void 0 : e.toUpperCase()))
+					if (e) return Object.values(h.R).find(t => t === (null == e ? void 0 : e.toUpperCase()))
 				},
 				j = e => {
 					if (e) return Object.values(h.g).find(t => t === (null == e ? void 0 : e.toUpperCase()))
 				},
 				k = e => {
-					if (e) return Object.values(h.Y).find(t => t === (null == e ? void 0 : e.toUpperCase()))
+					if (e) return Object.values(h.Z).find(t => t === (null == e ? void 0 : e.toUpperCase()))
 				},
 				I = e => {
-					if (e) return e > 0 ? h.T.Enabled : h.T.Disabled
+					if (e) return e > 0 ? h.U.Enabled : h.U.Disabled
 				},
 				S = e => {
-					if (e) return e === h.T.Enabled ? 1 : 0
+					if (e) return e === h.U.Enabled ? 1 : 0
 				},
 				w = e => {
 					let {
@@ -25880,24 +25888,24 @@
 					})
 				},
 				_ = {
-					[r.Q.Low]: s.fbt._("Low", null, {
+					[r.R.Low]: s.fbt._("Low", null, {
 						hk: "4k3iTe"
 					}),
-					[r.Q.High]: s.fbt._("High (default)", null, {
+					[r.R.High]: s.fbt._("High (default)", null, {
 						hk: "2GOHsH"
 					}),
-					[r.Q.All]: s.fbt._("All", null, {
+					[r.R.All]: s.fbt._("All", null, {
 						hk: "gl6gc"
 					})
 				},
 				g = {
-					[r.Q.Low]: s.fbt._("Low (default)", null, {
+					[r.R.Low]: s.fbt._("Low (default)", null, {
 						hk: "2tqJd7"
 					}),
-					[r.Q.High]: s.fbt._("High", null, {
+					[r.R.High]: s.fbt._("High", null, {
 						hk: "ABfkc"
 					}),
-					[r.Q.All]: s.fbt._("All", null, {
+					[r.R.All]: s.fbt._("All", null, {
 						hk: "3bPDOM"
 					})
 				},
@@ -27295,8 +27303,8 @@
 					} = t, w = Object(a.e)(Ge.b), N = Object(a.e)(qe.c), P = Object(a.e)(qe.a), R = Object(a.e)(e => ((e, t) => {
 						const n = t && e.subreddits.about[t];
 						return Boolean(n && n.isMediaInCommentsSettingShown)
-					})(e, d)), A = Object(a.e)(Be.i), M = Object(Ue.a)(Fe.If) === Fe.Md, L = w && R, D = (null == _ ? void 0 : _.allowedMediaTypes) || [], F = null === S ? "nullValue" : S, U = Object(o.useCallback)(() => s(!l, "archivePostsEnabled"), [l, s]), B = e => e.toUpperCase() === He.Q.All, H = e => {
-						const n = B(t[e]) ? He.Q.Low : He.Q.All;
+					})(e, d)), A = Object(a.e)(Be.i), M = Object(Ue.a)(Fe.If) === Fe.Md, L = w && R, D = (null == _ ? void 0 : _.allowedMediaTypes) || [], F = null === S ? "nullValue" : S, U = Object(o.useCallback)(() => s(!l, "archivePostsEnabled"), [l, s]), B = e => e.toUpperCase() === He.R.All, H = e => {
+						const n = B(t[e]) ? He.R.Low : He.R.All;
 						s(n, e)
 					};
 					return i.a.createElement(k.a, null, i.a.createElement(C, null, i.a.createElement(k.b, null, G.fbt._("Post and Comment settings", null, {
@@ -78388,4 +78396,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.e3d83129dc6942e89167.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.8d1601e7b7ed4021d21d.js.map

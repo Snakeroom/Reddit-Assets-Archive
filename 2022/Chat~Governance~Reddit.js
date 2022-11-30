@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a9dfac288aa41f228c03.js
-// Retrieved at 11/30/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.67ee2e43fefccc8c1d16.js
+// Retrieved at 11/30/2022, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3659,11 +3659,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("179752"),
+				buildNumber: Object(r.c)("179759"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1669827970"),
+				buildTimestamp: Object(r.b)("1669829808"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6396,14 +6396,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c5504a219a6ea6a65f28ccd4b4d8f67d062e1fc32-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c1ff56bbe5be1116a018d860083e04e821125be38-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "5504a219a6ea6a65f28ccd4b4d8f67d062e1fc32-production",
+						release: "1ff56bbe5be1116a018d860083e04e821125be38-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6939,7 +6939,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "5504a219a6ea6a65f28ccd4b4d8f67d062e1fc32-production",
+							releaseClient: "1ff56bbe5be1116a018d860083e04e821125be38-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -9826,10 +9826,10 @@
 					}
 				})({
 					experiences: {
-						[l.W.LiveChatVideoEdu]: {
+						[l.X.LiveChatVideoEdu]: {
 							allowCached: !0
 						},
-						[l.W.LiveChatReactionEdu]: {
+						[l.X.LiveChatReactionEdu]: {
 							allowCached: !0
 						}
 					}
@@ -20763,9 +20763,9 @@
 							id: e.profile.id,
 							isNSFW: e.profile.isNsfw,
 							name: e.profile.name,
-							type: T.R.User,
+							type: T.S.User,
 							url: e.profile.path,
-							wls: e.whitelistStatus && T.X[e.whitelistStatus]
+							wls: e.whitelistStatus && T.Y[e.whitelistStatus]
 						}
 					}(e),
 					_ = function(e) {
@@ -20786,10 +20786,10 @@
 							isNSFW: e.subreddit.isNsfw,
 							isQuarantined: e.subreddit.isQuarantined,
 							name: e.subreddit.name,
-							type: T.R.Public,
+							type: T.S.Public,
 							url: e.subreddit.path,
 							subscribers: e.subreddit.subscribersCount,
-							wls: e.whitelistStatus && T.X[e.whitelistStatus]
+							wls: e.whitelistStatus && T.Y[e.whitelistStatus]
 						}
 					}(e);
 				return {
@@ -20842,12 +20842,12 @@
 				H = i("./src/reddit/models/SearchDiscoveryUnit/index.ts");
 			const W = e => (null == e ? void 0 : e.__typename) === E.a.SubredditPost,
 				K = {
-					[T.V.PostSearchPromotedTrend]: H.b.PromotedTrendHero,
-					[T.V.PostSearchTrending]: H.b.Hero
+					[T.W.PostSearchPromotedTrend]: H.b.PromotedTrendHero,
+					[T.W.PostSearchTrending]: H.b.Hero
 				},
 				z = {
-					[T.V.PostSearchPromotedTrend]: V.f,
-					[T.V.PostSearchTrending]: V.l
+					[T.W.PostSearchPromotedTrend]: V.f,
+					[T.W.PostSearchTrending]: V.l
 				};
 
 			function Y(e, t, i, n) {
@@ -20925,11 +20925,11 @@
 			}
 			const Z = e => e && e.reduce((e, t) => "" === e ? e + t : e += `,${t}`, ""),
 				ee = {
-					[n.fc.Comments]: T.O.Comments,
-					[n.fc.Hot]: T.O.Hot,
-					[n.fc.New]: T.O.New,
-					[n.fc.Top]: T.O.Top,
-					[n.fc.Relevance]: T.O.Relevance
+					[n.fc.Comments]: T.P.Comments,
+					[n.fc.Hot]: T.P.Hot,
+					[n.fc.New]: T.P.New,
+					[n.fc.Top]: T.P.Top,
+					[n.fc.Relevance]: T.P.Relevance
 				},
 				te = e => !c()(e);
 
@@ -20980,7 +20980,7 @@
 						Ke = null === (N = null === (C = null === (F = null === (R = t.data.search) || void 0 === R ? void 0 : R.general) || void 0 === F ? void 0 : F.posts) || void 0 === C ? void 0 : C.feedMetadata) || void 0 === N ? void 0 : N.treatment;
 					ye = B(null === (x = null === (P = null === (j = null === (A = t.data.search) || void 0 === A ? void 0 : A.general) || void 0 === j ? void 0 : j.posts) || void 0 === P ? void 0 : P.feedMetadata) || void 0 === x ? void 0 : x.appliedSort);
 					const ze = null !== (L = null === (D = t.data) || void 0 === D ? void 0 : D.subredditsInfoByNames) && void 0 !== L ? L : [];
-					[Me, fe] = J(ze), Ue = Ke === T.V.PostSearchTrending || Ke === T.V.PostSearchPromotedTrend ? H.c.Trending : H.c.Default, [be, we, Ee, Se, Te, ve, ge] = function(e, t) {
+					[Me, fe] = J(ze), Ue = Ke === T.W.PostSearchTrending || Ke === T.W.PostSearchPromotedTrend ? H.c.Trending : H.c.Default, [be, we, Ee, Se, Te, ve, ge] = function(e, t) {
 						var i, n, r, s;
 						const o = {},
 							d = {},
@@ -21118,7 +21118,7 @@
 						He = null === (N = null === (C = null === (R = null === (I = t.data.search) || void 0 === I ? void 0 : I.general) || void 0 === R ? void 0 : R.posts) || void 0 === C ? void 0 : C.feedMetadata) || void 0 === N ? void 0 : N.treatment;
 					fe = B(null === (x = null === (P = null === (j = null === (A = t.data.search) || void 0 === A ? void 0 : A.general) || void 0 === j ? void 0 : j.posts) || void 0 === P ? void 0 : P.feedMetadata) || void 0 === x ? void 0 : x.appliedSort);
 					const We = null !== (k = null === (D = t.data) || void 0 === D ? void 0 : D.subredditsInfoByNames) && void 0 !== k ? k : [];
-					[ke, ge] = J(We), Be = He === T.V.PostSearchTrending || He === T.V.PostSearchPromotedTrend ? H.c.Trending : H.c.Default, [pe, Pe, he, xe, ve, we] = function(e, t) {
+					[ke, ge] = J(We), Be = He === T.W.PostSearchTrending || He === T.W.PostSearchPromotedTrend ? H.c.Trending : H.c.Default, [pe, Pe, he, xe, ve, we] = function(e, t) {
 						var i, n, r;
 						const s = {},
 							o = {},
@@ -21129,7 +21129,7 @@
 						if (e.length)
 							for (const c of e)
 								if (null === (i = null == c ? void 0 : c.node) || void 0 === i ? void 0 : i.id) {
-									if (t === T.V.PostSearchPromotedTrend || t === T.V.PostSearchTrending) {
+									if (t === T.W.PostSearchPromotedTrend || t === T.W.PostSearchTrending) {
 										const i = null === (r = null === (n = e[0]) || void 0 === n ? void 0 : n.node) || void 0 === r ? void 0 : r.id;
 										i && (l.push(i), u[i] = {
 											id: i,
@@ -24959,10 +24959,10 @@
 					}
 				},
 				te = {
-					[w.N.NotAvailable]: c.a.NotAvailable,
-					[w.N.Processing]: c.a.Processing,
-					[w.N.Available]: c.a.Available,
-					[w.N.Removed]: c.a.Removed
+					[w.O.NotAvailable]: c.a.NotAvailable,
+					[w.O.Processing]: c.a.Processing,
+					[w.O.Available]: c.a.Available,
+					[w.O.Removed]: c.a.Removed
 				},
 				ie = e => {
 					var t;
@@ -32589,7 +32589,7 @@
 				return Boolean(null === (t = e.pollData) || void 0 === t ? void 0 : t.isPrediction)
 			}
 			i.d(t, "a", (function() {
-				return n.K
+				return n.L
 			}))
 		},
 		"./src/reddit/models/Prediction/index.ts": function(e, t, i) {
@@ -44209,7 +44209,7 @@
 						subredditId: t.id
 					});
 					if (!n) return;
-					i.tournamentId = n.tournamentId, i.tournamentState = n.status === Ie.K.Live || n.status === Ie.K.LiveInProgress ? "active" : "not_active";
+					i.tournamentId = n.tournamentId, i.tournamentState = n.status === Ie.L.Live || n.status === Ie.L.LiveInProgress ? "active" : "not_active";
 					const r = Object(se.h)(e, n.tournamentId).filter(e => e.predictionStatus === he.b.Open && e.endsAt > Date.now());
 					return r.length ? i.userState = r.some(e => !e.userSelection) ? "predictions_available" : "predicted_all" : i.userState = "no_available_predictions", i
 				},
@@ -45326,38 +45326,40 @@
 				})), i.d(t, "H", (function() {
 					return fi
 				})), i.d(t, "I", (function() {
-					return vi
+					return gi
 				})), i.d(t, "J", (function() {
-					return Ii
+					return vi
 				})), i.d(t, "K", (function() {
-					return Ni
+					return Ii
 				})), i.d(t, "L", (function() {
-					return Ai
+					return Ni
 				})), i.d(t, "M", (function() {
-					return xi
+					return Ai
 				})), i.d(t, "N", (function() {
-					return zi
+					return xi
 				})), i.d(t, "O", (function() {
-					return Zi
+					return zi
 				})), i.d(t, "P", (function() {
-					return nn
+					return Zi
 				})), i.d(t, "Q", (function() {
-					return sn
+					return nn
 				})), i.d(t, "R", (function() {
-					return Rn
+					return sn
 				})), i.d(t, "S", (function() {
-					return Dn
+					return Rn
 				})), i.d(t, "T", (function() {
-					return Ln
+					return Dn
 				})), i.d(t, "U", (function() {
-					return kn
+					return Ln
 				})), i.d(t, "V", (function() {
-					return Mn
+					return kn
 				})), i.d(t, "W", (function() {
-					return Kn
+					return Mn
 				})), i.d(t, "X", (function() {
-					return nr
+					return Kn
 				})), i.d(t, "Y", (function() {
+					return nr
+				})), i.d(t, "Z", (function() {
 					return rr
 				})),
 				function(e) {
@@ -50732,4 +50734,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a9dfac288aa41f228c03.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.67ee2e43fefccc8c1d16.js.map
