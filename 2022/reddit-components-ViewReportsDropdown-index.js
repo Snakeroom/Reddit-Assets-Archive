@@ -1,23 +1,23 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.226f6d4424f02751fd2e.js
-// Retrieved at 11/29/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.94131befc40a803bbbdc.js
+// Retrieved at 11/30/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, o) {
 			"use strict";
 			o.d(t, "d", (function() {
-				return j
-			})), o.d(t, "c", (function() {
-				return v
-			})), o.d(t, "f", (function() {
 				return O
+			})), o.d(t, "c", (function() {
+				return j
+			})), o.d(t, "f", (function() {
+				return v
 			})), o.d(t, "a", (function() {
 				return w
 			})), o.d(t, "e", (function() {
 				return k
 			})), o.d(t, "g", (function() {
-				return C
-			})), o.d(t, "h", (function() {
 				return _
+			})), o.d(t, "h", (function() {
+				return C
 			})), o.d(t, "b", (function() {
 				return E
 			}));
@@ -39,7 +39,7 @@
 				g = o("./src/reddit/actions/comment/index.ts"),
 				h = o("./src/reddit/actions/comment/constants.ts");
 			const f = Object(r.a)(h.p),
-				j = e => async (t, o, s) => {
+				O = e => async (t, o, s) => {
 					let {
 						apiContext: n
 					} = s;
@@ -48,7 +48,7 @@
 							commentId: e
 						}))
 					})(e))
-				}, v = e => async (t, o, n) => {
+				}, j = e => async (t, o, n) => {
 					let {
 						apiContext: r
 					} = n;
@@ -72,7 +72,7 @@
 							isLocked: d.isLocked
 						}
 					}))
-				}, O = Object(r.a)(h.J), w = e => async (t, o, n) => {
+				}, v = Object(r.a)(h.J), w = e => async (t, o, n) => {
 					let {
 						apiContext: r,
 						gqlContext: d
@@ -146,7 +146,7 @@
 							numReports: m.numReports
 						}
 					})), Object(c.d)())
-				}, C = e => async (t, o, n) => {
+				}, _ = e => async (t, o, n) => {
 					let {
 						apiContext: r
 					} = n;
@@ -169,7 +169,7 @@
 							ignoreReports: d.ignoreReports
 						}
 					}))
-				}, _ = (e, t, o) => async (r, d, i) => {
+				}, C = (e, t, o) => async (r, d, i) => {
 					let {
 						gqlContext: c
 					} = i;
@@ -221,7 +221,7 @@
 					const x = Object(p.c)(a(), e, t),
 						R = Object(p.d)(a(), e, !!o),
 						h = [x];
-					(o || !o && e === b) && h.push(R), (await Promise.all(h)).every(e => e.ok) ? o && s(O({
+					(o || !o && e === b) && h.push(R), (await Promise.all(h)).every(e => e.ok) ? o && s(v({
 						id: e,
 						postId: u,
 						commentsPageKey: Object(d.a)(u, null, {
@@ -276,24 +276,24 @@
 				g = o("./src/reddit/helpers/trackers/modTools.ts"),
 				h = o("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
 				f = o("./src/reddit/icons/svgs/ChevronUp/index.tsx"),
-				j = o("./src/reddit/icons/svgs/Clock/index.tsx"),
-				v = o("./src/reddit/icons/svgs/Undo/index.tsx"),
-				O = o("./src/reddit/selectors/tooltip.ts"),
+				O = o("./src/reddit/icons/svgs/Clock/index.tsx"),
+				j = o("./src/reddit/icons/svgs/Undo/index.tsx"),
+				v = o("./src/reddit/selectors/tooltip.ts"),
 				w = o("./src/reddit/components/Reports/SnoozableReport/index.m.less"),
 				k = o.n(w);
 			const {
-				fbt: C
-			} = o("./node_modules/fbt/lib/FbtPublic.js"), _ = (e, t) => `SnoozableReport--${t}--${e}`, E = Object(r.b)(() => Object(d.c)({
-				isDropdownOpen: (e, t) => Object(O.b)(_(t.reason, t.reportedThingId))(e)
+				fbt: _
+			} = o("./node_modules/fbt/lib/FbtPublic.js"), C = (e, t) => `SnoozableReport--${t}--${e}`, E = Object(r.b)(() => Object(d.c)({
+				isDropdownOpen: (e, t) => Object(v.b)(C(t.reason, t.reportedThingId))(e)
 			}), (e, t) => ({
 				openDropdown: () => e(Object(p.h)({
-					tooltipId: _(t.reason, t.reportedThingId)
+					tooltipId: C(t.reason, t.reportedThingId)
 				})),
 				toggleSnooze: o => {
 					Object(R.a)(t.reportedThingId) ? e(Object(a.h)(t.reportedThingId, t.reason, o)) : e(Object(l.gb)(t.reportedThingId, t.reason, o))
 				}
 			})), S = Object(m.a)(b.a);
-			class y extends n.a.Component {
+			class T extends n.a.Component {
 				constructor() {
 					super(...arguments), this.tooltipTarget = null, this.setTooltipTargetRef = e => this.tooltipTarget = e, this.onSnoozeButtonClick = () => {
 						const e = this.props.isSnoozed ? c.kc.None : c.kc.Snoozed;
@@ -314,7 +314,7 @@
 						className: a,
 						dropdownClassName: l,
 						iconClassName: p
-					} = this.props, m = _(e, o);
+					} = this.props, m = C(e, o);
 					return n.a.createElement("div", {
 						ref: this.setTooltipTargetRef
 					}, n.a.createElement(x.b, {
@@ -324,7 +324,7 @@
 					}, n.a.createElement("label", {
 						htmlFor: m,
 						className: k.a.DropdownLabel
-					}, d ? C._("Reporter snoozed", null, {
+					}, d ? _._("Reporter snoozed", null, {
 						hk: "1rCWql"
 					}) : c ? `${e} (${t})` : `${t}: ${e}`, r ? n.a.createElement(f.a, null) : n.a.createElement(h.a, null))), n.a.createElement(S, {
 						isOpen: r,
@@ -336,18 +336,18 @@
 						onClick: this.onSnoozeButtonClick
 					}, n.a.createElement("div", {
 						className: k.a.SnoozeButtonContent
-					}, d ? n.a.createElement(n.a.Fragment, null, n.a.createElement(v.a, {
+					}, d ? n.a.createElement(n.a.Fragment, null, n.a.createElement(j.a, {
 						className: p
-					}), C._("Undo snoozing reports from this user", null, {
+					}), _._("Undo snoozing reports from this user", null, {
 						hk: "1CloXT"
-					})) : n.a.createElement(n.a.Fragment, null, n.a.createElement(j.a, {
+					})) : n.a.createElement(n.a.Fragment, null, n.a.createElement(O.a, {
 						className: p
-					}), C._("Snooze reports from this user for 7 days", null, {
+					}), _._("Snooze reports from this user for 7 days", null, {
 						hk: "1i0sOW"
 					}))))))
 				}
 			}
-			t.a = E(Object(u.c)(y))
+			t.a = E(Object(u.c)(T))
 		},
 		"./src/reddit/components/Reports/index.m.less": function(e, t, o) {
 			e.exports = {
@@ -459,9 +459,9 @@
 						hk: "4dr3Qm"
 					})
 				}))),
-				j = o("./src/reddit/components/ViewReportsDropdown/index.m.less"),
-				v = o.n(j);
-			const O = i.a.wrapped(a.a, "StyledDropdown", v.a),
+				O = o("./src/reddit/components/ViewReportsDropdown/index.m.less"),
+				j = o.n(O);
+			const v = i.a.wrapped(a.a, "StyledDropdown", j.a),
 				w = Object(d.c)({
 					isDropdownOpen: (e, t) => {
 						let {
@@ -471,12 +471,12 @@
 					}
 				}),
 				k = Object(r.b)(w),
-				C = Object(c.a)(O),
-				_ = k(e => {
+				_ = Object(c.a)(v),
+				C = k(e => {
 					const t = !(!e.model.numReports || -1 !== e.model.numReports),
 						o = t ? e.model.modReportsDismissed || [] : e.model.modReports,
 						s = t ? e.model.userReportsDismissed || [] : e.model.userReports;
-					return n.a.createElement(C, {
+					return n.a.createElement(_, {
 						className: e.className,
 						isOpen: e.isDropdownOpen,
 						tooltipId: e.tooltipId
@@ -489,21 +489,7 @@
 						reportedThingId: e.model.id
 					}))
 				});
-			t.default = _
-		},
-		"./src/reddit/icons/svgs/ChevronDown/index.tsx": function(e, t, o) {
-			"use strict";
-			var s = o("./node_modules/react/index.js"),
-				n = o.n(s);
-			t.a = e => n.a.createElement("svg", {
-				className: e.className,
-				viewBox: "0 0 12 12",
-				xmlns: "http://www.w3.org/2000/svg",
-				onClick: e.onClick
-			}, n.a.createElement("g", null, n.a.createElement("polygon", {
-				fill: "inherit",
-				points: "11.0584 4.0602 6.0292 9.0894 1 4.0602 2.0608 3 6.0292 6.9684 9.9982 3"
-			})))
+			t.default = C
 		},
 		"./src/reddit/icons/svgs/ChevronUp/index.tsx": function(e, t, o) {
 			"use strict";
@@ -568,4 +554,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.226f6d4424f02751fd2e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.94131befc40a803bbbdc.js.map

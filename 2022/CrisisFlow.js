@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrisisFlow.37fa4bf07b5ec0b6c9f5.js
-// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrisisFlow.2e8d7803d4d17cb68ae1.js
+// Retrieved at 11/30/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrisisFlow", "reddit-components-CrisisFlow-CrisisFlowPage"], {
 		"./src/reddit/actions/reportFlow/index.ts": function(e, s, t) {
@@ -80,10 +80,10 @@
 				_ = t.n(f);
 			const {
 				fbt: b
-			} = t("./node_modules/fbt/lib/FbtPublic.js"), v = g.a.div("CrisisContent", _.a), E = g.a.div("CrisisImageContainer", x.a), k = g.a.img("CrisisImage", _.a), L = g.a.h2("CrisisTitle", x.a), R = g.a.p("CrisisDescription", x.a);
-			var F = e => r.a.createElement(v, null, r.a.createElement(E, null, r.a.createElement(k, {
+			} = t("./node_modules/fbt/lib/FbtPublic.js"), v = g.a.div("CrisisContent", _.a), E = g.a.div("CrisisImageContainer", x.a), L = g.a.img("CrisisImage", _.a), k = g.a.h2("CrisisTitle", x.a), R = g.a.p("CrisisDescription", x.a);
+			var F = e => r.a.createElement(v, null, r.a.createElement(E, null, r.a.createElement(L, {
 					src: `${h.a.assetPath}/img/crisis-line-icon.png`
-				})), r.a.createElement(L, null, b._("Would you like Reddit to reach out to {username} ?", [b._param("username", r.a.createElement("span", null, "u/", e.username))], {
+				})), r.a.createElement(k, null, b._("Would you like Reddit to reach out to {username} ?", [b._param("username", r.a.createElement("span", null, "u/", e.username))], {
 					hk: "3RFVlj"
 				})), r.a.createElement(R, null, b._("We’ve partnered with {=Crisis Text Line} to provide redditors with support from trained Crisis Counselors, and will reach out (confidentially) to let {username} know that there are people who are here for them.", [b._param("=Crisis Text Line", r.a.createElement(C.a, {
 					href: "https://www.crisistextline.org/",
@@ -101,7 +101,7 @@
 				y = t.n(O);
 			const {
 				fbt: D
-			} = t("./node_modules/fbt/lib/FbtPublic.js"), I = g.a.div("CrisisImageContainer", x.a), A = g.a.h2("CrisisTitle", x.a), N = g.a.p("CrisisDescription", x.a), z = g.a.div("CrisisOtherActions", y.a), V = g.a.h4("CrisisOtherActionsTitle", y.a), H = g.a.div("CrisisLinkIconContainer", y.a), q = g.a.div("CrisisLinkText", y.a), M = g.a.h3("CrisisLinkTitle", y.a), G = g.a.p("CrisisLinkDescription", y.a);
+			} = t("./node_modules/fbt/lib/FbtPublic.js"), I = g.a.div("CrisisImageContainer", x.a), A = g.a.h2("CrisisTitle", x.a), N = g.a.p("CrisisDescription", x.a), z = g.a.div("CrisisOtherActions", y.a), V = g.a.h4("CrisisOtherActionsTitle", y.a), H = g.a.div("CrisisLinkIconContainer", y.a), M = g.a.div("CrisisLinkText", y.a), q = g.a.h3("CrisisLinkTitle", y.a), G = g.a.p("CrisisLinkDescription", y.a);
 			var Y = e => r.a.createElement("div", {
 					className: y.a.CrisisThankYouPage
 				}, r.a.createElement(I, null, r.a.createElement(S.a, {
@@ -116,7 +116,7 @@
 					href: "https://www.reddithelp.com/en/categories/rules-reporting/suicide-response/what-do-i-do-if-someone-talks-about-seriously-hurting",
 					target: "_blank",
 					className: y.a.CrisisLink
-				}, r.a.createElement(H, null, r.a.createElement(T.a, null)), r.a.createElement(q, null, r.a.createElement(M, null, D._("Learn how to help someone in crisis", null, {
+				}, r.a.createElement(H, null, r.a.createElement(T.b, null)), r.a.createElement(M, null, r.a.createElement(q, null, D._("Learn how to help someone in crisis", null, {
 					hk: "3HohFx"
 				})), r.a.createElement(G, null, D._("Get advice on what you can say and how to be supportive.", null, {
 					hk: "1NHS5d"
@@ -126,7 +126,7 @@
 					href: "https://www.reddithelp.com/en/categories/rules-reporting/suicide-response/how-do-i-get-myself-support-after-helping-someone",
 					target: "_blank",
 					className: y.a.CrisisLink
-				}, r.a.createElement(H, null, r.a.createElement(j.a, null)), r.a.createElement(q, null, r.a.createElement(M, null, D._("Get yourself support", null, {
+				}, r.a.createElement(H, null, r.a.createElement(j.a, null)), r.a.createElement(M, null, r.a.createElement(q, null, D._("Get yourself support", null, {
 					hk: "kTT0U"
 				})), r.a.createElement(G, null, D._("If this has brought up difficult emotions, there are people and resources here for you too.", null, {
 					hk: "37R4JZ"
@@ -548,14 +548,23 @@
 		},
 		"./src/reddit/icons/svgs/ChatBubbles/index.tsx": function(e, s, t) {
 			"use strict";
+			t.d(s, "a", (function() {
+				return i
+			}));
 			var n = t("./node_modules/react/index.js"),
 				r = t.n(n);
-			s.a = e => r.a.createElement("svg", {
+			const i = e => r.a.createElement("svg", {
+				className: e.className,
+				viewBox: "0 0 20 20",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, r.a.createElement("path", {
+				d: "M4.88595 13.444C4.36701 13.2885 3.86823 13.0723 3.39995 12.8L1.14695 13.362C1.04227 13.3879 0.932671 13.3863 0.828782 13.3574C0.724894 13.3285 0.630237 13.2732 0.553985 13.1969C0.477733 13.1207 0.422472 13.026 0.393557 12.9221C0.364642 12.8183 0.363055 12.7087 0.388949 12.604L0.949948 10.354C0.0362578 8.79992 -0.232941 6.94998 0.199949 5.19997C0.500428 3.96481 1.14111 2.83861 2.04929 1.94916C2.95748 1.05971 4.09679 0.442643 5.33795 0.167974C6.47394 -0.0883142 7.65628 -0.0533851 8.77516 0.269517C9.89404 0.59242 10.9132 1.19282 11.7379 2.01497C12.5377 2.81615 13.1259 3.80335 13.4499 4.88797C12.727 4.8582 12.0031 4.9207 11.2959 5.07397C9.80268 5.40459 8.43199 6.14717 7.33944 7.21745C6.24689 8.28772 5.47624 9.64283 5.11495 11.129C4.93328 11.8866 4.85623 12.6655 4.88595 13.444ZM17.9859 8.26497C17.1609 7.44322 16.1418 6.84307 15.023 6.5202C13.9042 6.19732 12.722 6.16216 11.5859 6.41797C10.3453 6.69314 9.20666 7.31044 8.29905 8.19985C7.39143 9.08926 6.75119 10.2152 6.45095 11.45C6.01885 13.1986 6.28766 15.0469 7.19995 16.6L6.63595 18.852C6.60975 18.9567 6.61112 19.0664 6.63993 19.1704C6.66873 19.2745 6.72399 19.3693 6.80032 19.4456C6.87665 19.5219 6.97145 19.5772 7.07548 19.606C7.17951 19.6348 7.28923 19.6362 7.39395 19.61L9.64695 19.047C10.7002 19.6709 11.9018 20.0001 13.1259 20C13.6895 19.9994 14.2511 19.9323 14.7989 19.8C16.0342 19.5 17.1607 18.8597 18.0505 17.9519C18.9403 17.0441 19.5578 15.905 19.8329 14.664C20.0882 13.5282 20.0529 12.3463 19.7302 11.2278C19.4076 10.1093 18.808 9.09026 17.9869 8.26497H17.9859Z"
+			}));
+			s.b = e => r.a.createElement("svg", {
 				className: e.className,
 				width: "24",
 				height: "24",
 				viewBox: "0 0 24 24",
-				fill: "none",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, r.a.createElement("path", {
 				fillRule: "evenodd",
@@ -635,4 +644,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrisisFlow.37fa4bf07b5ec0b6c9f5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrisisFlow.2e8d7803d4d17cb68ae1.js.map

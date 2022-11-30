@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CrisisFlow-CrisisFlowPage.5ffd2492801a4f62d89f.js
-// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CrisisFlow-CrisisFlowPage.a03bc428af0b86c25e1f.js
+// Retrieved at 11/30/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CrisisFlow-CrisisFlowPage"], {
 		"./src/reddit/actions/reportFlow/index.ts": function(e, t, s) {
@@ -43,7 +43,7 @@
 				fbt: u
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), m = 10;
 
-			function p(e) {
+			function C(e) {
 				const {
 					thankYouControls: t,
 					onCloseReportFlow: s,
@@ -71,7 +71,7 @@
 					hk: "12gtn"
 				})))
 			}
-			var C = s("./src/reddit/controls/Link/index.tsx"),
+			var p = s("./src/reddit/controls/Link/index.tsx"),
 				h = s("./src/config.ts"),
 				g = s("./src/lib/lessComponent.tsx"),
 				w = s("./src/reddit/components/CrisisFlow/CrisisFlowPage.m.less"),
@@ -80,12 +80,12 @@
 				_ = s.n(f);
 			const {
 				fbt: b
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), v = g.a.div("CrisisContent", _.a), k = g.a.div("CrisisImageContainer", x.a), E = g.a.img("CrisisImage", _.a), L = g.a.h2("CrisisTitle", x.a), R = g.a.p("CrisisDescription", x.a);
-			var F = e => i.a.createElement(v, null, i.a.createElement(k, null, i.a.createElement(E, {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), v = g.a.div("CrisisContent", _.a), k = g.a.div("CrisisImageContainer", x.a), L = g.a.img("CrisisImage", _.a), E = g.a.h2("CrisisTitle", x.a), R = g.a.p("CrisisDescription", x.a);
+			var F = e => i.a.createElement(v, null, i.a.createElement(k, null, i.a.createElement(L, {
 					src: `${h.a.assetPath}/img/crisis-line-icon.png`
-				})), i.a.createElement(L, null, b._("Would you like Reddit to reach out to {username} ?", [b._param("username", i.a.createElement("span", null, "u/", e.username))], {
+				})), i.a.createElement(E, null, b._("Would you like Reddit to reach out to {username} ?", [b._param("username", i.a.createElement("span", null, "u/", e.username))], {
 					hk: "3RFVlj"
-				})), i.a.createElement(R, null, b._("We’ve partnered with {=Crisis Text Line} to provide redditors with support from trained Crisis Counselors, and will reach out (confidentially) to let {username} know that there are people who are here for them.", [b._param("=Crisis Text Line", i.a.createElement(C.a, {
+				})), i.a.createElement(R, null, b._("We’ve partnered with {=Crisis Text Line} to provide redditors with support from trained Crisis Counselors, and will reach out (confidentially) to let {username} know that there are people who are here for them.", [b._param("=Crisis Text Line", i.a.createElement(p.a, {
 					href: "https://www.crisistextline.org/",
 					target: "_blank"
 				}, b._("Crisis Text Line", null, {
@@ -101,34 +101,34 @@
 				I = s.n(S);
 			const {
 				fbt: A
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), y = g.a.div("CrisisImageContainer", x.a), D = g.a.h2("CrisisTitle", x.a), N = g.a.p("CrisisDescription", x.a), z = g.a.div("CrisisOtherActions", I.a), V = g.a.h4("CrisisOtherActionsTitle", I.a), q = g.a.div("CrisisLinkIconContainer", I.a), Y = g.a.div("CrisisLinkText", I.a), B = g.a.h3("CrisisLinkTitle", I.a), $ = g.a.p("CrisisLinkDescription", I.a);
-			var M = e => i.a.createElement("div", {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), N = g.a.div("CrisisImageContainer", x.a), y = g.a.h2("CrisisTitle", x.a), D = g.a.p("CrisisDescription", x.a), z = g.a.div("CrisisOtherActions", I.a), V = g.a.h4("CrisisOtherActionsTitle", I.a), q = g.a.div("CrisisLinkIconContainer", I.a), B = g.a.div("CrisisLinkText", I.a), M = g.a.h3("CrisisLinkTitle", I.a), Y = g.a.p("CrisisLinkDescription", I.a);
+			var $ = e => i.a.createElement("div", {
 					className: I.a.CrisisThankYouPage
-				}, i.a.createElement(y, null, i.a.createElement(O.a, {
+				}, i.a.createElement(N, null, i.a.createElement(O.a, {
 					className: I.a.CrisisTickImage
-				})), i.a.createElement(D, null, A._("Thanks for caring about your fellow redditor", null, {
+				})), i.a.createElement(y, null, A._("Thanks for caring about your fellow redditor", null, {
 					hk: "1ePh84"
-				})), i.a.createElement(N, null, A._("We’ve reached out to {username} . By letting us know, you’ve helped connect them to people who are there to listen and provide support.", [A._param("username", i.a.createElement("span", null, "u/", e.username))], {
+				})), i.a.createElement(D, null, A._("We’ve reached out to {username} . By letting us know, you’ve helped connect them to people who are there to listen and provide support.", [A._param("username", i.a.createElement("span", null, "u/", e.username))], {
 					hk: "3X1mGY"
 				})), i.a.createElement(z, null, i.a.createElement(V, null, A._("Other things you can do", null, {
 					hk: "4oCunD"
-				})), i.a.createElement(C.a, {
+				})), i.a.createElement(p.a, {
 					href: "https://www.reddithelp.com/en/categories/rules-reporting/suicide-response/what-do-i-do-if-someone-talks-about-seriously-hurting",
 					target: "_blank",
 					className: I.a.CrisisLink
-				}, i.a.createElement(q, null, i.a.createElement(T.a, null)), i.a.createElement(Y, null, i.a.createElement(B, null, A._("Learn how to help someone in crisis", null, {
+				}, i.a.createElement(q, null, i.a.createElement(T.b, null)), i.a.createElement(B, null, i.a.createElement(M, null, A._("Learn how to help someone in crisis", null, {
 					hk: "3HohFx"
-				})), i.a.createElement($, null, A._("Get advice on what you can say and how to be supportive.", null, {
+				})), i.a.createElement(Y, null, A._("Get advice on what you can say and how to be supportive.", null, {
 					hk: "1NHS5d"
 				}))), i.a.createElement(P.a, {
 					className: I.a.CrisisLinkArrow
-				})), i.a.createElement(C.a, {
+				})), i.a.createElement(p.a, {
 					href: "https://www.reddithelp.com/en/categories/rules-reporting/suicide-response/how-do-i-get-myself-support-after-helping-someone",
 					target: "_blank",
 					className: I.a.CrisisLink
-				}, i.a.createElement(q, null, i.a.createElement(j.a, null)), i.a.createElement(Y, null, i.a.createElement(B, null, A._("Get yourself support", null, {
+				}, i.a.createElement(q, null, i.a.createElement(j.a, null)), i.a.createElement(B, null, i.a.createElement(M, null, A._("Get yourself support", null, {
 					hk: "kTT0U"
-				})), i.a.createElement($, null, A._("If this has brought up difficult emotions, there are people and resources here for you too.", null, {
+				})), i.a.createElement(Y, null, A._("If this has brought up difficult emotions, there are people and resources here for you too.", null, {
 					hk: "37R4JZ"
 				}))), i.a.createElement(P.a, {
 					className: I.a.CrisisLinkArrow
@@ -194,11 +194,11 @@
 						props: t,
 						onCrisisFlowSubmit: s
 					} = this;
-					return i.a.createElement(U, null, e.showThankYouPage ? i.a.createElement(M, {
+					return i.a.createElement(U, null, e.showThankYouPage ? i.a.createElement($, {
 						username: t.username
 					}) : i.a.createElement(F, {
 						username: t.username
-					}), i.a.createElement(p, {
+					}), i.a.createElement(C, {
 						onCrisisFlowSubmit: s,
 						onCloseReportFlow: t.onCloseReportFlow,
 						pending: e.requestProcessing,
@@ -299,7 +299,7 @@
 			})), s.d(t, "a", (function() {
 				return m
 			})), s.d(t, "b", (function() {
-				return p
+				return C
 			})), s.d(t, "c", (function() {
 				return h
 			}));
@@ -319,12 +319,12 @@
 			! function(e) {
 				e.Rule = "rule", e.SiteRule = "siteRule", e.Other = "other", e.FileComplaint = "fileComplaint", e.CrisisTextLine = "crisisTextLine"
 			}(m || (m = {}));
-			const p = (e, t) => Object(i.a)(Object(o.a)(e, [a.a]), {
+			const C = (e, t) => Object(i.a)(Object(o.a)(e, [a.a]), {
 					method: n.ob.POST,
 					endpoint: Object(l.a)(`${e.apiUrl}/api/report`),
-					data: C(t)
+					data: p(t)
 				}),
-				C = e => {
+				p = e => {
 					const t = {
 							thing_id: e.id,
 							api_type: "json",
@@ -370,9 +370,9 @@
 			s.d(t, "d", (function() {
 				return m
 			})), s.d(t, "e", (function() {
-				return p
-			})), s.d(t, "c", (function() {
 				return C
+			})), s.d(t, "c", (function() {
+				return p
 			})), s.d(t, "b", (function() {
 				return h
 			})), s.d(t, "a", (function() {
@@ -388,8 +388,8 @@
 				d = `^${r}?(?:mod.reddit.com/mail)/(?:[^/]+)/(\\w+)/(\\w+)(?:/)?$`,
 				u = `^${r}${i}/(?:rpan|live)/(?:(?:r)/(?:[^/]+)/)?(\\w+)(?:/.*)?`,
 				m = `(?:${a}|${o}|${l}|${c}|${d}|${u})`,
-				p = `(?:(?:${r}?${i}/)?(?:user|u)/)?([\\w-]+)(?:/)?`,
-				C = `(?:(?:${r}?${i}/)?(?:r)/)?([\\w-]+)(?:/)?`,
+				C = `(?:(?:${r}?${i}/)?(?:user|u)/)?([\\w-]+)(?:/)?`,
+				p = `(?:(?:${r}?${i}/)?(?:r)/)?([\\w-]+)(?:/)?`,
 				h = e => {
 					const t = new RegExp(o),
 						s = new RegExp(a),
@@ -417,8 +417,8 @@
 							e && e.length > 1 && (g = e[1])
 						}
 					}
-					const x = new RegExp(p),
-						f = new RegExp(C),
+					const x = new RegExp(C),
+						f = new RegExp(p),
 						_ = [];
 					let b;
 					if (e.subredditName) {
@@ -486,14 +486,23 @@
 		},
 		"./src/reddit/icons/svgs/ChatBubbles/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return r
+			}));
 			var n = s("./node_modules/react/index.js"),
 				i = s.n(n);
-			t.a = e => i.a.createElement("svg", {
+			const r = e => i.a.createElement("svg", {
+				className: e.className,
+				viewBox: "0 0 20 20",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, i.a.createElement("path", {
+				d: "M4.88595 13.444C4.36701 13.2885 3.86823 13.0723 3.39995 12.8L1.14695 13.362C1.04227 13.3879 0.932671 13.3863 0.828782 13.3574C0.724894 13.3285 0.630237 13.2732 0.553985 13.1969C0.477733 13.1207 0.422472 13.026 0.393557 12.9221C0.364642 12.8183 0.363055 12.7087 0.388949 12.604L0.949948 10.354C0.0362578 8.79992 -0.232941 6.94998 0.199949 5.19997C0.500428 3.96481 1.14111 2.83861 2.04929 1.94916C2.95748 1.05971 4.09679 0.442643 5.33795 0.167974C6.47394 -0.0883142 7.65628 -0.0533851 8.77516 0.269517C9.89404 0.59242 10.9132 1.19282 11.7379 2.01497C12.5377 2.81615 13.1259 3.80335 13.4499 4.88797C12.727 4.8582 12.0031 4.9207 11.2959 5.07397C9.80268 5.40459 8.43199 6.14717 7.33944 7.21745C6.24689 8.28772 5.47624 9.64283 5.11495 11.129C4.93328 11.8866 4.85623 12.6655 4.88595 13.444ZM17.9859 8.26497C17.1609 7.44322 16.1418 6.84307 15.023 6.5202C13.9042 6.19732 12.722 6.16216 11.5859 6.41797C10.3453 6.69314 9.20666 7.31044 8.29905 8.19985C7.39143 9.08926 6.75119 10.2152 6.45095 11.45C6.01885 13.1986 6.28766 15.0469 7.19995 16.6L6.63595 18.852C6.60975 18.9567 6.61112 19.0664 6.63993 19.1704C6.66873 19.2745 6.72399 19.3693 6.80032 19.4456C6.87665 19.5219 6.97145 19.5772 7.07548 19.606C7.17951 19.6348 7.28923 19.6362 7.39395 19.61L9.64695 19.047C10.7002 19.6709 11.9018 20.0001 13.1259 20C13.6895 19.9994 14.2511 19.9323 14.7989 19.8C16.0342 19.5 17.1607 18.8597 18.0505 17.9519C18.9403 17.0441 19.5578 15.905 19.8329 14.664C20.0882 13.5282 20.0529 12.3463 19.7302 11.2278C19.4076 10.1093 18.808 9.09026 17.9869 8.26497H17.9859Z"
+			}));
+			t.b = e => i.a.createElement("svg", {
 				className: e.className,
 				width: "24",
 				height: "24",
 				viewBox: "0 0 24 24",
-				fill: "none",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, i.a.createElement("path", {
 				fillRule: "evenodd",
@@ -573,4 +582,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CrisisFlow-CrisisFlowPage.5ffd2492801a4f62d89f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CrisisFlow-CrisisFlowPage.a03bc428af0b86c25e1f.js.map

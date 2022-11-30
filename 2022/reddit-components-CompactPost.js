@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.b7d5d0d583971b65aa8f.js
-// Retrieved at 11/30/2022, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.8e993e831e95933d3601.js
+// Retrieved at 11/30/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1053,7 +1053,7 @@
 		"./src/reddit/components/CompactPost/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "renderSubredditIcon", (function() {
-				return Le
+				return De
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/react/index.js"),
@@ -1088,8 +1088,8 @@
 				N = n("./src/reddit/components/CompactPost/HorizontalVotes/index.tsx"),
 				R = n("./src/reddit/components/EventPost/EventMetaHeader/index.tsx"),
 				M = n("./src/reddit/components/ExpandoButton/index.tsx"),
-				D = n("./src/reddit/components/Flatlist/index.tsx"),
-				L = n("./src/reddit/components/Flatlist/getFlatlistTooltipId.ts"),
+				L = n("./src/reddit/components/Flatlist/index.tsx"),
+				D = n("./src/reddit/components/Flatlist/getFlatlistTooltipId.ts"),
 				F = n("./src/reddit/components/JSAPIContainers/index.tsx"),
 				U = n("./src/reddit/components/ModActionsMenu/index.tsx"),
 				B = n("./src/reddit/components/ModModeFilteredReason/index.tsx"),
@@ -1251,9 +1251,9 @@
 						sendEvent: Ae,
 						shouldShowGalleryTileOption: Ne,
 						showPromotedCTA: Re,
-						showCTAExperimentDesign: De,
-						isLiveChatUserCountEnabled: Le
-					} = this.props, Ue = !!he.media && he.media.type === v.o.RTJSON, Be = _e && Ue, Ve = Object(Z.b)(he.id, j), Ge = Object(be.a)(J), We = Object(me.a)(J), Ye = Object(pe.a)(J), qe = `-mod-actions-menu-${he.id}`, ze = `voting-arrows-${he.id}`, Ke = !!s && Object(g.e)(s) === he.author, He = Object(V.a)(he), Ze = Object(W.c)(he), Xe = Object(L.a)("View--Reports", he.id, Ie), Je = Object(W.a)(he), Qe = !(j || O || x), $e = he.media && he.media.type === v.o.LIVEVIDEO, et = e => Ae(Object(h.k)(he.id, e)), tt = Object(d.t)(he, u), {
+						showCTAExperimentDesign: Le,
+						isLiveChatUserCountEnabled: De
+					} = this.props, Ue = !!he.media && he.media.type === v.o.RTJSON, Be = _e && Ue, Ve = Object(Z.b)(he.id, j), Ge = Object(be.a)(J), We = Object(me.a)(J), Ye = Object(pe.a)(J), qe = `-mod-actions-menu-${he.id}`, ze = `voting-arrows-${he.id}`, Ke = !!s && Object(g.e)(s) === he.author, He = Object(V.a)(he), Ze = Object(W.c)(he), Xe = Object(D.a)("View--Reports", he.id, Ie), Je = Object(W.a)(he), Qe = !(j || O || x), $e = he.media && he.media.type === v.o.LIVEVIDEO, et = e => Ae(Object(h.k)(he.id, e)), tt = Object(d.t)(he, u), {
 						source: nt
 					} = tt, rt = Object(_.s)(he), st = o.a.createElement(H.b, {
 						className: Object(l.a)(ye.a.compactPostStyles, Te.a.postContainer, Object(f.a)(this.props), t),
@@ -1347,7 +1347,7 @@
 						tooltipType: j ? te.f.Lightbox : void 0
 					}), he.discussionType === Se.m.Chat && o.a.createElement(we.a, {
 						postId: he.id
-					})), Qe && !$e && !Le && o.a.createElement("div", null, o.a.createElement(P.a, {
+					})), Qe && !$e && !De && o.a.createElement("div", null, o.a.createElement(P.a, {
 						className: Te.a.liveDiscussionIcon,
 						postId: he.postId
 					})), !he.isSurveyAd && o.a.createElement("div", {
@@ -1373,7 +1373,7 @@
 					}), Ge && o.a.createElement(U.a, {
 						dropdownId: qe,
 						onClick: () => et("post_mod_action_menu")
-					}, o.a.createElement(D.b, null), o.a.createElement(Q.a, {
+					}, o.a.createElement(L.b, null), o.a.createElement(Q.a, {
 						canEditFlair: We && je,
 						hasModPostPerms: Ge,
 						hasModFullPerms: Ye,
@@ -1424,14 +1424,14 @@
 						useMediaIcons: !0
 					}))), Re && nt && nt.url && !he.isSurveyAd && o.a.createElement(k.a, {
 						className: Object(l.a)(Te.a.adLinkWrapper, {
-							[Te.a.ctaExperiment]: De
+							[Te.a.ctaExperiment]: Le
 						}),
-						ctaExperimentDesign: De && "compact"
+						ctaExperimentDesign: Le && "compact"
 					}, o.a.createElement(T.a, {
 						post: he,
 						adLinkContent: tt,
 						isCompact: !0,
-						ctaExperimentDesign: De && "compact"
+						ctaExperimentDesign: Le && "compact"
 					})), se && Ge && He && o.a.createElement("div", {
 						className: Te.a.modModeBannerWrapper
 					}, o.a.createElement(B.a, {
@@ -1461,8 +1461,8 @@
 					flairStyleTemplate: e.flairStyleTemplate
 				}, e.post.crosspostRootId ? o.a.createElement("div", {
 					className: Te.a.crosspostMediaWrapper
-				}, De(e.post, e.scrollerItemRef, e.shouldShowGalleryTileOption, e.isGalleryTileLayoutDefault)) : De(e.post, e.scrollerItemRef, e.shouldShowGalleryTileOption, e.isGalleryTileLayoutDefault)),
-				De = (e, t, n, r) => o.a.createElement(J.a, {
+				}, Le(e.post, e.scrollerItemRef, e.shouldShowGalleryTileOption, e.isGalleryTileLayoutDefault)) : Le(e.post, e.scrollerItemRef, e.shouldShowGalleryTileOption, e.isGalleryTileLayoutDefault)),
+				Le = (e, t, n, r) => o.a.createElement(J.a, {
 					isExpando: !0,
 					isGalleryTileLayoutDefault: r,
 					isListing: !0,
@@ -1476,7 +1476,7 @@
 					showFull: !0,
 					showPromotedCTA: !0
 				}),
-				Le = e => o.a.createElement(a.a, {
+				De = e => o.a.createElement(a.a, {
 					"data-click-id": "subreddit",
 					to: e.url
 				}, o.a.createElement(oe.b, {
@@ -1641,17 +1641,17 @@
 						parseInt(e) < t && N.current()
 					}, O())
 				}, [t, O, j]);
-				const D = Object(r.useRef)(0),
-					L = Object(r.useRef)(!1),
+				const L = Object(r.useRef)(0),
+					D = Object(r.useRef)(!1),
 					F = Object(r.useCallback)(e => {
 						e.forEach(e => {
 							const {
 								isIntersecting: t,
 								intersectionRatio: n
 							} = e, r = 1 !== n;
-							t ? (L.current = !0, T.current || (T.current = !0, R.current = setTimeout(() => {
+							t ? (D.current = !0, T.current || (T.current = !0, R.current = setTimeout(() => {
 								P.current(), N.current()
-							}, u())), D.current > 0 && (P.current(D.current), D.current = 0)) : r && (L.current = !1)
+							}, u())), L.current > 0 && (P.current(L.current), L.current = 0)) : r && (D.current = !1)
 						})
 					}, []);
 				Object(a.a)(I, F);
@@ -1671,7 +1671,7 @@
 				Object(r.useEffect)(() => {
 					if (void 0 !== W && W !== t) {
 						const e = t - W;
-						L.current ? P.current(e) : D.current += e
+						D.current ? P.current(e) : L.current += e
 					}
 					return () => {
 						clearTimeout(R.current), clearTimeout(M.current), clearTimeout(A.current)
@@ -2424,8 +2424,8 @@
 				N = n("./node_modules/fbt/lib/FbtPublic.js"),
 				R = n("./src/lib/prettyPrintNumber/index.ts"),
 				M = n("./src/reddit/components/Poll/PollExpiry/index.tsx"),
-				D = n("./src/reddit/components/Poll/PostTitleMetaData/index.m.less"),
-				L = n.n(D);
+				L = n("./src/reddit/components/Poll/PostTitleMetaData/index.m.less"),
+				D = n.n(L);
 			const F = Object(d.c)({
 				poll: (e, t) => e.polls.models[t.pollId],
 				resultsByVoters: (e, t) => e.polls.results.byVoters[t.pollId]
@@ -2436,14 +2436,14 @@
 						resultsByVoters: n
 					} = e, r = n ? n.totalVotes : "0";
 					return Object(C.a)() ? null : i.a.createElement("div", {
-						className: Object(u.a)(e.className, L.a.proposalMetaData)
+						className: Object(u.a)(e.className, D.a.proposalMetaData)
 					}, i.a.createElement("span", null, N.fbt._({
 						"*": "{count} votes",
 						_1: "{count} vote"
 					}, [N.fbt._param("count", Object(R.a)(r)), N.fbt._plural(parseInt(r))], {
 						hk: "4rP1VK"
 					})), t && i.a.createElement(M.a, {
-						className: L.a.proposalExpiry,
+						className: D.a.proposalExpiry,
 						poll: t
 					}))
 				})),
@@ -3847,9 +3847,9 @@
 			})), n.d(t, "clickQuestionMarkEvent", (function() {
 				return M
 			})), n.d(t, "clickConfirmAwardEvent", (function() {
-				return D
-			})), n.d(t, "clickGetPremiumEvent", (function() {
 				return L
+			})), n.d(t, "clickGetPremiumEvent", (function() {
+				return D
 			})), n.d(t, "clickAddCoinsButtonEvent", (function() {
 				return F
 			})), n.d(t, "clickNextButtonEvent", (function() {
@@ -4007,7 +4007,7 @@
 					action: "click",
 					noun: "question"
 				}),
-				D = (e, t) => n => ({
+				L = (e, t) => n => ({
 					...p(n, e),
 					source: "give_gold",
 					action: "click",
@@ -4017,7 +4017,7 @@
 						...m(t)
 					}
 				}),
-				L = (e, t) => n => ({
+				D = (e, t) => n => ({
 					...p(n, e),
 					source: "give_gold",
 					action: "click",
@@ -5067,20 +5067,6 @@
 				title: e.title,
 				className: `${Object(o.b)("premium",e.isFilled)} ${e.className}`
 			}), "PremiumIcon", a.a)
-		},
-		"./src/reddit/icons/svgs/ChevronDown/index.tsx": function(e, t, n) {
-			"use strict";
-			var r = n("./node_modules/react/index.js"),
-				s = n.n(r);
-			t.a = e => s.a.createElement("svg", {
-				className: e.className,
-				viewBox: "0 0 12 12",
-				xmlns: "http://www.w3.org/2000/svg",
-				onClick: e.onClick
-			}, s.a.createElement("g", null, s.a.createElement("polygon", {
-				fill: "inherit",
-				points: "11.0584 4.0602 6.0292 9.0894 1 4.0602 2.0608 3 6.0292 6.9684 9.9982 3"
-			})))
 		},
 		"./src/reddit/icons/svgs/Pencil/index.tsx": function(e, t, n) {
 			"use strict";
@@ -6478,4 +6464,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.b7d5d0d583971b65aa8f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.8e993e831e95933d3601.js.map
