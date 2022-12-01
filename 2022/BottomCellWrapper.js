@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BottomCellWrapper.6f2f0d7a8509074b5e09.js
-// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BottomCellWrapper.ed3b0274d348e04cae1d.js
+// Retrieved at 12/1/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BottomCellWrapper", "SignupUpsell"], {
 		"./src/reddit/components/ErrorBoundary/index.tsx": function(e, t, s) {
@@ -190,7 +190,7 @@
 				},
 				I = "d2x_geo_upsell_tier_0",
 				U = "d2x_geo_upsell_tier_1",
-				D = "d2x_geo_upsell_tier_2";
+				V = "d2x_geo_upsell_tier_2";
 			t.default = function(e) {
 				let {
 					onDismiss: t,
@@ -213,18 +213,18 @@
 						const e = Object(i.e)(w.b),
 							t = Object(i.e)(w.d),
 							s = Object(i.e)(w.f),
-							o = Object(O.a)(b.Wc.Bottom_sheet),
-							l = Object(O.a)(b.Wc.Bottom_cell),
-							r = Object(O.a)(b.Wc.Bottom_cell_dismissible),
-							c = Object(O.a)(b.Wc.Bottom_cell_dismissible_immediate_trigger),
-							a = Object(O.a)(b.Wc.Bottom_cell_signup_upsell_copy),
-							d = Object(O.a)(b.Wc.Bottom_cell_surprise_install_copy);
+							o = Object(O.a)(b.Vc.Bottom_sheet),
+							l = Object(O.a)(b.Vc.Bottom_cell),
+							r = Object(O.a)(b.Vc.Bottom_cell_dismissible),
+							c = Object(O.a)(b.Vc.Bottom_cell_dismissible_immediate_trigger),
+							a = Object(O.a)(b.Vc.Bottom_cell_signup_upsell_copy),
+							d = Object(O.a)(b.Vc.Bottom_cell_surprise_install_copy);
 						let p;
 						if (e) p = I;
 						else if (t) p = U;
 						else {
 							if (!s) throw new Error("Not eligible for signup upsell");
-							p = D
+							p = V
 						}
 						const u = `${n.a.assetPath}/img/upsell/appQrCode/${p}/`;
 						if (o) return `${u}bottom_sheet.png`;
@@ -235,14 +235,14 @@
 						if (e && d) return `${u}bottom_cell_surprise_install_copy.png`;
 						throw new Error("Invalid variant for signup upsell")
 					}(),
-					y = Object(O.a)(b.Wc.Bottom_cell_signup_upsell_copy),
-					W = Object(O.a)(b.Wc.Bottom_cell_surprise_install_copy),
-					A = y ? o.fbt._("Come join us, we have snacks", null, {
+					D = Object(O.a)(b.Vc.Bottom_cell_signup_upsell_copy),
+					y = Object(O.a)(b.Vc.Bottom_cell_surprise_install_copy),
+					H = D ? o.fbt._("Come join us, we have snacks", null, {
 						hk: "1LUl2W"
 					}) : o.fbt._("Log in or sign up for the best experience", null, {
 						hk: "2LAHQy"
 					}),
-					H = W ? o.fbt._("Scan the QR code, it's super fun", null, {
+					A = y ? o.fbt._("Scan the QR code, it's super fun", null, {
 						hk: "1nNmn7"
 					}) : o.fbt._("Get the app", null, {
 						hk: "2NvKYa"
@@ -263,7 +263,7 @@
 					type: "button"
 				}, l.createElement(B.a, null)), l.createElement("div", {
 					className: k.a.title
-				}, A), l.createElement("div", {
+				}, H), l.createElement("div", {
 					className: k.a.bottom
 				}, l.createElement("div", {
 					className: k.a.left
@@ -318,7 +318,7 @@
 					src: S
 				}), l.createElement("div", {
 					className: k.a.downloadAppLabel
-				}, H))))
+				}, A))))
 			}
 		},
 		"./src/reddit/hooks/promo/useIsPromoShown.ts": function(e, t, s) {
@@ -430,20 +430,20 @@
 					experimentName: e,
 					experimentEligibilitySelector: c,
 					throttledVariants: {
-						[o.Wc.Bottom_cell_dismissible]: e,
-						[o.Wc.Bottom_cell_dismissible_immediate_trigger]: e,
-						[o.Wc.Bottom_sheet]: e
+						[o.Vc.Bottom_cell_dismissible]: e,
+						[o.Vc.Bottom_cell_dismissible_immediate_trigger]: e,
+						[o.Vc.Bottom_sheet]: e
 					},
 					expEventOverride: t
 				})
 			}
-			const d = a(o.yb, !0),
-				p = a(o.zb, !0),
-				u = a(o.Ab, !0),
-				m = a(o.yb, !1),
-				_ = a(o.zb, !1),
-				b = a(o.Ab, !1)
+			const d = a(o.xb, !0),
+				p = a(o.yb, !0),
+				u = a(o.zb, !0),
+				m = a(o.xb, !1),
+				_ = a(o.yb, !1),
+				b = a(o.zb, !1)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.6f2f0d7a8509074b5e09.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.ed3b0274d348e04cae1d.js.map

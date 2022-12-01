@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.0196c02a3af158e1e4a2.js
-// Retrieved at 11/30/2022, 4:30:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.96bca13dfcbadfc5040f.js
+// Retrieved at 12/1/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, r) {
@@ -1314,8 +1314,8 @@
 			const I = e => {
 				return Object(C.c)(e, {
 					experimentEligibilitySelector: C.a,
-					experimentName: y.rf
-				}) === y.Md
+					experimentName: y.qf
+				}) === y.Ld
 			};
 			var O = r("./src/reddit/selectors/experiments/shredditParity.ts"),
 				w = r("./src/reddit/selectors/recapGame.ts"),
@@ -4225,7 +4225,7 @@
 				const t = Object(i.f)().getState(),
 					r = Object(b.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.cd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.cd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.cd.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.bd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.bd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.bd.LargeImagePreview ? e.reredditButtons : [];
 					return n.a.createElement(j, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -6270,11 +6270,11 @@
 				d = r("./node_modules/reselect/es/index.js");
 			const l = Object(d.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: e => Object(a.h)(e) && Object(i.f)(e),
-					experimentName: s.oc
+					experimentName: s.nc
 				}), o.a),
 				c = Object(d.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.h)(e) && Object(i.f)(e),
-					experimentName: s.nc
+					experimentName: s.mc
 				}), o.a),
 				u = Object(d.a)(l, c, (e, t) => e || t),
 				m = Object(d.a)(l, c, (e, t) => !(!e && !t))
@@ -6328,4 +6328,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.0196c02a3af158e1e4a2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.96bca13dfcbadfc5040f.js.map

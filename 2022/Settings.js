@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.f117ee3067aab8e7b3cf.js
-// Retrieved at 11/30/2022, 4:30:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.b1169a8080ff10e9339e.js
+// Retrieved at 12/1/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -8960,8 +8960,8 @@
 				re = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const ae = Object(l.a)(e => Object(re.c)(e, {
 				experimentEligibilitySelector: M.R,
-				experimentName: w.I
-			}), e => e === w.S.Enabled);
+				experimentName: w.H
+			}), e => e === w.R.Enabled);
 			var ie = n("./src/reddit/selectors/meta.ts"),
 				le = n("./src/reddit/components/Settings/AccountPrefsSection/index.m.less"),
 				ce = n.n(le);
@@ -9057,7 +9057,7 @@
 						})()
 					}, []);
 					const R = Object(a.e)(I.g),
-						D = R === w.bd.TopTwo || R === w.bd.All,
+						D = R === w.ad.TopTwo || R === w.ad.All,
 						F = Object(o.useMemo)(() => Object(se.c)(T), [T]);
 					return c ? r.a.createElement(X, {
 						email: C.email
@@ -10782,8 +10782,8 @@
 				oo = n("./src/reddit/selectors/experiments/antievil/index.tsx");
 			const ro = Object(l.a)(e => Object(re.c)(e, {
 				experimentEligibilitySelector: M.R,
-				experimentName: w.F
-			}), e => e === w.P.Enabled);
+				experimentName: w.E
+			}), e => e === w.O.Enabled);
 			var ao = n("./src/lib/hooks/usePrevious.ts"),
 				io = n("./src/reddit/actions/subreddit/muting.ts"),
 				lo = n("./src/telemetry/models/Event.ts");
@@ -12011,9 +12011,9 @@
 					},
 					isDspEnabled: e => {
 						return Object(re.c)(e, {
-							experimentName: w.kd,
+							experimentName: w.jd,
 							experimentEligibilitySelector: re.a
-						}) === w.Md
+						}) === w.Ld
 					}
 				}),
 				fa = Object(ve.v)(),
@@ -12564,9 +12564,9 @@
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = n("./src/reddit/selectors/user.ts");
 			const a = e => Object(o.c)(e, {
-				experimentName: s.v,
+				experimentName: s.u,
 				experimentEligibilitySelector: () => Object(r.Q)(e)
-			}) === s.Md
+			}) === s.Ld
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -12730,4 +12730,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.f117ee3067aab8e7b3cf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.b1169a8080ff10e9339e.js.map

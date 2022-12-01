@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.34df2c8cdcd84f867ace.js
-// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.3d9e3c21ead159ac68e1.js
+// Retrieved at 12/1/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -195,7 +195,7 @@
 			})), n.d(t, "f", (function() {
 				return w
 			})), n.d(t, "g", (function() {
-				return S
+				return M
 			})), n.d(t, "d", (function() {
 				return L
 			})), n.d(t, "e", (function() {
@@ -233,8 +233,8 @@
 				A = Object(s.a)(C.t),
 				T = Object(s.a)(C.u),
 				P = Object(s.a)(C.v),
-				M = Object(s.a)(C.w),
-				S = Object(s.a)(C.x),
+				S = Object(s.a)(C.w),
+				M = Object(s.a)(C.x),
 				L = (e, t) => async (n, r, s) => {
 					let o, {
 							apiContext: i,
@@ -319,7 +319,7 @@
 					} = r;
 					t(P());
 					const o = await Object(p.a)(s(), e);
-					o.ok ? t(M(o.body)) : t(T({
+					o.ok ? t(S(o.body)) : t(T({
 						error: o.error
 					}))
 				}
@@ -455,8 +455,8 @@
 				A = n("./src/reddit/actions/governance/errorToast.ts"),
 				T = n("./src/reddit/actions/toaster.ts"),
 				P = n("./src/reddit/actions/tooltip.ts"),
-				M = n("./src/reddit/contexts/ApiContext.tsx"),
-				S = n("./src/reddit/controls/Dropdown/index.tsx"),
+				S = n("./src/reddit/contexts/ApiContext.tsx"),
+				M = n("./src/reddit/controls/Dropdown/index.tsx"),
 				L = n("./src/reddit/controls/Dropdown/Row.tsx"),
 				G = n("./src/reddit/endpoints/governance/crypto.ts"),
 				R = n("./src/reddit/helpers/governance/ethereum.ts"),
@@ -465,7 +465,7 @@
 				B = n("./src/reddit/selectors/tooltip.ts"),
 				V = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/BlockchainWalletInfo/index.m.less"),
 				F = n.n(V);
-			const W = Object(w.a)(S.a),
+			const W = Object(w.a)(M.a),
 				H = "BlockchainWalletInfo--SettingsMenu";
 			class Z extends i.a.PureComponent {
 				constructor() {
@@ -566,7 +566,7 @@
 						}))
 					}
 				}));
-			var Y = Object(M.b)($(Z)),
+			var Y = Object(S.b)($(Z)),
 				Q = n("./src/reddit/icons/svgs/QuarantineWarning/index.tsx"),
 				X = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/Risk/index.m.less"),
 				J = n.n(X);
@@ -830,7 +830,7 @@
 				fbt: Pe
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function Me(e) {
+			function Se(e) {
 				const [t, n] = Object(ke.a)("MAINNET_ANNOUNCEMENT", !1), r = Object(a.d)(), {
 					pointsDetails: s
 				} = Object(l.c)(), {
@@ -872,8 +872,8 @@
 					hk: "lqkYM"
 				}))) : null
 			}
-			var Se = n("./src/reddit/components/Governance/CommunityCard/index.m.less"),
-				Le = n.n(Se);
+			var Me = n("./src/reddit/components/Governance/CommunityCard/index.m.less"),
+				Le = n.n(Me);
 			const Ge = Object(b.c)({
 				isMainnet: u.b,
 				distribution: (e, t) => e.subreddits.gov.distributions[t.subredditId],
@@ -905,7 +905,7 @@
 					pointsDetails: r,
 					subredditId: o,
 					wallet: a
-				}), i.a.createElement(Me, {
+				}), i.a.createElement(Se, {
 					className: Object(c.a)(Le.a.section, {
 						[Le.a.noborder]: e.isMainnet
 					}),
@@ -1813,14 +1813,14 @@
 			const o = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.xe
-					}) === r.Md
+						experimentName: r.we
+					}) === r.Ld
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.ve
-					}) === r.Md
+						experimentName: r.ue
+					}) === r.Ld
 				}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
@@ -1880,4 +1880,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.34df2c8cdcd84f867ace.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.3d9e3c21ead159ac68e1.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.46d4849e5e46f65a4a8d.js
-// Retrieved at 11/30/2022, 4:30:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.b231cafeb8e04f0561b8.js
+// Retrieved at 12/1/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/backo2/index.js": function(e, t) {
@@ -4014,9 +4014,9 @@
 				xn = n("./src/reddit/constants/experiments.ts"),
 				On = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const yn = e => Object(On.c)(e, {
-					experimentName: xn.sb,
+					experimentName: xn.rb,
 					experimentEligibilitySelector: On.a
-				}) === xn.nb.Enabled,
+				}) === xn.mb.Enabled,
 				In = (e, t) => {
 					let {
 						commentId: n
@@ -6677,8 +6677,8 @@
 				r = n("./src/reddit/selectors/user.ts");
 			const a = e => Object(s.c)(e, {
 				experimentEligibilitySelector: r.R,
-				experimentName: o.ac
-			}) === o.Md
+				experimentName: o.Zb
+			}) === o.Ld
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, n) {
 			"use strict";
@@ -6777,4 +6777,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.46d4849e5e46f65a4a8d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.b231cafeb8e04f0561b8.js.map

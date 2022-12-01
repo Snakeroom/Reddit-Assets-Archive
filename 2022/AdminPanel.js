@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminPanel.fc8db7112c4d172b46c7.js
-// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminPanel.7afbfe589022e5a9c0b2.js
+// Retrieved at 12/1/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminPanel"], {
 		"./src/devPlatform/components/AdminPanel/Utilities/DevPlatformConfig/DevPlatformConfigLoader.tsx": function(e, t, n) {
@@ -847,9 +847,9 @@
 				rt = x.a.wrapped(qe.b, "DropdownRow", $e.a),
 				it = e => `experiment-${e}`;
 			var ot = e => {
-					const t = ["control_1", "control_2", ...Je.h[e.experimentName]];
+					const t = ["control_1", "control_2", ...Je.g[e.experimentName]];
 					if (!t) return null;
-					const n = Je.Nd.has(e.experimentName);
+					const n = Je.Md.has(e.experimentName);
 					return s.a.createElement(G.a, {
 						className: e.className
 					}, s.a.createElement(et, null, `${e.experimentName}${n?"*":""}`), s.a.createElement(tt, {
@@ -884,7 +884,7 @@
 			const dt = x.a.wrapped(Ne.l, "PrimaryButton", lt.a),
 				mt = x.a.wrapped(ot, "Experiment", lt.a),
 				ut = x.a.div("Footnote", lt.a),
-				pt = Object(h.a)(e => e.user.experiments.byName, e => e.experimentOverrides, (e, t) => Object.keys(Je.h).reduce((n, a) => {
+				pt = Object(h.a)(e => e.user.experiments.byName, e => e.experimentOverrides, (e, t) => Object.keys(Je.g).reduce((n, a) => {
 					var s;
 					const r = e[a.toLowerCase()],
 						i = null == r ? void 0 : r.variant;
@@ -932,7 +932,7 @@
 					}, s.a.createElement(dt, {
 						onClick: this.onCopyClick
 					}, "Copy Experiment Config URL"), s.a.createElement(Ge, {
-						items: Object.keys(Je.h),
+						items: Object.keys(Je.g),
 						listItem: this.renderExperiment
 					}), s.a.createElement(ut, null, "* Whitelisted for query param override in production"))
 				}
@@ -2010,4 +2010,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.fc8db7112c4d172b46c7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.7afbfe589022e5a9c0b2.js.map

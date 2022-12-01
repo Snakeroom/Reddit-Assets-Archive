@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.91f826e96427280979b1.js
-// Retrieved at 11/30/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.2c8c850255180d33ee34.js
+// Retrieved at 12/1/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, n) {
@@ -140,9 +140,9 @@
 			})), n.d(t, "w", (function() {
 				return y
 			})), n.d(t, "x", (function() {
-				return v
-			})), n.d(t, "d", (function() {
 				return L
+			})), n.d(t, "d", (function() {
+				return v
 			}));
 			const r = "MULTIREDDIT__MORE_POSTS_FAILED",
 				o = "MULTIREDDIT__MORE_POSTS_LOADED",
@@ -170,11 +170,11 @@
 				g = 10,
 				I = "MULTIREDDIT__REMOVE_SUBREDDIT_FAILURE",
 				y = "MULTIREDDIT__REMOVE_SUBREDDIT_PENDING",
-				v = "MULTIREDDIT__REMOVE_SUBREDDIT_SUCCESS";
-			var L;
+				L = "MULTIREDDIT__REMOVE_SUBREDDIT_SUCCESS";
+			var v;
 			! function(e) {
 				e.InvalidSrQuarantine = "INVALID_SR_QUARANTINE", e.TooManySubreddits = "MULTI_TOO_MANY_SUBREDDITS"
-			}(L || (L = {}))
+			}(v || (v = {}))
 		},
 		"./src/reddit/actions/postList.ts": function(e, t, n) {
 			"use strict";
@@ -381,8 +381,8 @@
 				}),
 				I = Object(i.a)(d.c),
 				y = Object(i.a)(d.b),
-				v = Object(i.a)(d.a),
-				L = Object(i.a)(d.h),
+				L = Object(i.a)(d.a),
+				v = Object(i.a)(d.h),
 				k = (Object(i.a)(d.i), Object(i.a)(d.g), () => async (e, t, n) => {
 					let {
 						gqlContext: r
@@ -394,7 +394,7 @@
 					if (s.ok) {
 						const t = O(s.body.data);
 						e(I(t))
-					} else e(v({
+					} else e(L({
 						error: s.error
 					}))
 				}),
@@ -426,7 +426,7 @@
 						}
 						if (!e.length && !p.length) return
 					}
-					i(L({
+					i(v({
 						identifiers: p,
 						nameIdentifiers: e,
 						profileModels: d().profiles.models,
@@ -467,7 +467,7 @@
 							text: 1 === e.length && "profile" === e[0].type ? t ? o : c : t ? a : d
 						}))
 					} else {
-						i(L({
+						i(v({
 							identifiers: p,
 							nameIdentifiers: e,
 							profileModels: d().profiles.models,
@@ -694,7 +694,7 @@
 			})), n.d(t, "a", (function() {
 				return G
 			})), n.d(t, "b", (function() {
-				return q
+				return z
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				o = n("./node_modules/lodash/pick.js"),
@@ -744,8 +744,8 @@
 				I = n("./src/reddit/components/Flair/index.m.less"),
 				y = n.n(I);
 
-			function v() {
-				return (v = Object.assign || function(e) {
+			function L() {
+				return (L = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -753,7 +753,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const L = Object(x.a)(h.b),
+			const v = Object(x.a)(h.b),
 				k = b.a.div("FlairWrapper", y.a),
 				A = b.a.wrapped(d.a, "CloseButton", y.a),
 				N = b.a.wrapped(Object(m.a)(e => {
@@ -763,7 +763,7 @@
 						...r
 					} = e;
 					const o = n;
-					return a.a.createElement(E, v({
+					return a.a.createElement(E, L({
 						style: {
 							...R(!!t, o) || {}
 						}
@@ -824,7 +824,7 @@
 						style: {
 							fill: this.props.backgroundColor || Object(g.a)(this.props).flair
 						}
-					})), !!this.props.tooltip && a.a.createElement(L, {
+					})), !!this.props.tooltip && a.a.createElement(v, {
 						text: this.props.tooltip,
 						isOpen: this.state.isTooltipOpen,
 						tooltipTarget: this.tooltipTargetElement,
@@ -924,7 +924,7 @@
 					})
 				}, "MetaFlair", y.a);
 
-			function q(e) {
+			function z(e) {
 				const {
 					className: t,
 					disabled: n = !1,
@@ -1875,29 +1875,29 @@
 				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/experiments/index.ts");
 			const c = Object(r.a)(e => Object(s.c)(e, {
+					experimentName: o.Ob,
+					experimentEligibilitySelector: i.e
+				}), e => e === o.V.Enabled),
+				a = Object(r.a)(e => Object(s.c)(e, {
 					experimentName: o.Pb,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.W.Enabled),
-				a = Object(r.a)(e => Object(s.c)(e, {
+				d = Object(r.a)(e => Object(s.c)(e, {
 					experimentName: o.Qb,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.X.Enabled),
-				d = Object(r.a)(e => Object(s.c)(e, {
+				l = Object(r.a)(e => Object(s.c)(e, {
 					experimentName: o.Rb,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.Y.Enabled),
-				l = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Sb,
-					experimentEligibilitySelector: i.e
-				}), e => e === o.Z.Enabled),
 				u = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Ub,
-					experimentEligibilitySelector: i.e
-				}), e => e === o.bb.Enabled),
-				m = Object(r.a)(e => Object(s.c)(e, {
 					experimentName: o.Tb,
 					experimentEligibilitySelector: i.e
-				}), e => e === o.ab.Enabled)
+				}), e => e === o.ab.Enabled),
+				m = Object(r.a)(e => Object(s.c)(e, {
+					experimentName: o.Sb,
+					experimentEligibilitySelector: i.e
+				}), e => e === o.Z.Enabled)
 		},
 		"./src/reddit/selectors/experiments/recapLeadUpGame.ts": function(e, t, n) {
 			"use strict";
@@ -1914,8 +1914,8 @@
 			const a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.pf
-					}) === r.Md
+						experimentName: r.of
+					}) === r.Ld
 				},
 				d = Object(c.a)(i.R, (e, t) => {
 					let {
@@ -1926,8 +1926,8 @@
 				l = (e, t) => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: e => d(e, t),
-						experimentName: r.qf
-					}) === r.Md
+						experimentName: r.pf
+					}) === r.Ld
 				}
 		},
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, n) {
@@ -1944,8 +1944,8 @@
 			const c = Object(s.a)(i.R, e => !e),
 				a = Object(s.a)(e => Object(o.c)(e, {
 					experimentEligibilitySelector: c,
-					experimentName: r.Hf
-				}), e => e === r.Md),
+					experimentName: r.Gf
+				}), e => e === r.Ld),
 				d = /^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/,
 				l = (e, t) => {
 					a(t) && e.block(e => {
@@ -1978,4 +1978,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.91f826e96427280979b1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.2c8c850255180d33ee34.js.map

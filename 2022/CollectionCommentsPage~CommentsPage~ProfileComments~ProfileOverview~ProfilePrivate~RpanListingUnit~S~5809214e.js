@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e.9aaaa9aca7f9ae6c9ec4.js
-// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e.bcbcf3429477d28e6574.js
+// Retrieved at 12/1/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, s) {
@@ -5128,10 +5128,10 @@
 				n = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(o.a)(e => Object(r.c)(e, {
-					experimentName: n.Ic,
+					experimentName: n.Hc,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				a = Object(o.a)(i, e => e === n.Md)
+				a = Object(o.a)(i, e => e === n.Ld)
 		},
 		"./src/reddit/selectors/experiments/reportingRevampDesktop.ts": function(e, t, s) {
 			"use strict";
@@ -5152,4 +5152,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e.9aaaa9aca7f9ae6c9ec4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e.bcbcf3429477d28e6574.js.map

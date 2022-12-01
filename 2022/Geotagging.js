@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.3fac01d1041fb7407f83.js
-// Retrieved at 11/30/2022, 4:30:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.ef5c285a4e6f7fc4a35f.js
+// Retrieved at 12/1/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -96,8 +96,8 @@
 			const y = e => {
 				return Object(S.c)(e, {
 					experimentEligibilitySelector: S.a,
-					experimentName: _.rf
-				}) === _.Md
+					experimentName: _.qf
+				}) === _.Ld
 			};
 			var v = s("./src/reddit/selectors/experiments/shredditParity.ts"),
 				O = s("./src/reddit/selectors/recapGame.ts"),
@@ -546,7 +546,7 @@
 				const t = Object(a.f)().getState(),
 					s = Object(h.a)(t, Object(o.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.cd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.cd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.cd.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.bd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.bd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.bd.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(k, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -1880,11 +1880,11 @@
 				c = s("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(o.h)(e) && Object(a.f)(e),
-					experimentName: n.oc
+					experimentName: n.nc
 				}), i.a),
 				l = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(o.h)(e) && Object(a.f)(e),
-					experimentName: n.nc
+					experimentName: n.mc
 				}), i.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -1903,4 +1903,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.3fac01d1041fb7407f83.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.ef5c285a4e6f7fc4a35f.js.map

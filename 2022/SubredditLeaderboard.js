@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.109dd526ffd43a19a8f8.js
-// Retrieved at 11/30/2022, 4:30:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.6c7076f0cfd1d8777be2.js
+// Retrieved at 12/1/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, r) {
@@ -73,7 +73,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(u.vg)(e.category_name)
+									displayText: Object(u.ug)(e.category_name)
 								};
 								r.push(s.id), t[s.id] = s
 							}), {
@@ -287,8 +287,8 @@
 			const C = e => {
 				return Object(E.c)(e, {
 					experimentEligibilitySelector: E.a,
-					experimentName: x.rf
-				}) === x.Md
+					experimentName: x.qf
+				}) === x.Ld
 			};
 			var S = r("./src/reddit/selectors/experiments/shredditParity.ts"),
 				_ = r("./src/reddit/selectors/recapGame.ts"),
@@ -526,7 +526,7 @@
 				const t = Object(a.f)().getState(),
 					r = Object(g.a)(t, Object(o.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.cd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.cd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.cd.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.bd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.bd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.bd.LargeImagePreview ? e.reredditButtons : [];
 					return s.a.createElement(N, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -1958,9 +1958,9 @@
 				z = r("./src/reddit/constants/posts.ts"),
 				Q = r("./src/reddit/controls/Button/index.tsx"),
 				J = r("./src/reddit/icons/fonts/index.tsx"),
-				U = r("./src/reddit/selectors/experiments/shredditParity.ts"),
-				q = r("./src/reddit/components/TopSubredditsWidget/index.m.less"),
-				K = r.n(q);
+				q = r("./src/reddit/selectors/experiments/shredditParity.ts"),
+				U = r("./src/reddit/components/TopSubredditsWidget/index.m.less"),
+				K = r.n(U);
 			const V = e => i.a.createElement(i.a.Fragment, null, i.a.createElement(G.b, {
 					className: K.a.subredditIcon,
 					subredditOrProfile: e.subreddit
@@ -1980,7 +1980,7 @@
 					hk: "4CmlZJ"
 				})))),
 				Z = e => {
-					const t = Object(o.e)(U.a),
+					const t = Object(o.e)(q.a),
 						r = Object(c.a)(K.a.subredditRankItem, e.large && K.a.large, {
 							[K.a.handleOverflow]: e.isOnFrontpage
 						}),
@@ -2390,7 +2390,7 @@
 					key: e
 				}))),
 				Me = e => {
-					const t = Object(o.e)(U.a),
+					const t = Object(o.e)(q.a),
 						r = e.isSecondaryButton || t ? Q.q : Q.n,
 						n = e.linkColor ? {
 							backgroundColor: e.linkColor,
@@ -2506,8 +2506,8 @@
 				Qe = r("./src/reddit/endpoints/subreddit/topSubreddits.ts"),
 				Je = r("./src/reddit/helpers/graphql/normalizeTopSubredditsFromGql/index.ts");
 
-			function Ue() {
-				return (Ue = Object.assign || function(e) {
+			function qe() {
+				return (qe = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n])
@@ -2515,11 +2515,11 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const qe = Object(d.c)({
+			const Ue = Object(d.c)({
 					isOnLeaderboardPage: e => !!Object($.i)(e),
 					isOnFrontpage: e => !!Object($.g)(e)
 				}),
-				Ke = Object(o.b)(qe, e => ({
+				Ke = Object(o.b)(Ue, e => ({
 					updateSubredditModels: t => e(Object(R.a)({
 						subreddits: t
 					}))
@@ -2590,7 +2590,7 @@
 					const {
 						category: e
 					} = this.props, t = e && e.name, r = e && e.displayText, n = t || p.c, s = this.state[n], a = s ? s.rankings : [], o = s ? s.subreddits : {}, d = a && a[0] && a[0].id, c = o && o[d], l = !(c && c.isNSFW) || this.props.isOver18;
-					return i.a.createElement(Ge, Ue({
+					return i.a.createElement(Ge, qe({
 						categoryName: t,
 						categoryDisplayText: r,
 						onSendEventClick: this.sendEventClick,
@@ -2640,7 +2640,7 @@
 					} = t;
 					return Object(g.b)(r.params.categoryName || "")
 				},
-				st = Object(m.ug)(p.i),
+				st = Object(m.tg)(p.i),
 				at = Object(d.c)({
 					categories: e => Object(et.b)(e, {
 						categoriesOrder: st
@@ -2751,11 +2751,11 @@
 				d = r("./node_modules/reselect/es/index.js");
 			const c = Object(d.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => Object(o.h)(e) && Object(a.f)(e),
-					experimentName: n.oc
+					experimentName: n.nc
 				}), i.a),
 				l = Object(d.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => !Object(o.h)(e) && Object(a.f)(e),
-					experimentName: n.nc
+					experimentName: n.mc
 				}), i.a),
 				u = Object(d.a)(c, l, (e, t) => e || t),
 				m = Object(d.a)(c, l, (e, t) => !(!e && !t))
@@ -2793,4 +2793,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.109dd526ffd43a19a8f8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.6c7076f0cfd1d8777be2.js.map
