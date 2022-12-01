@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.5198555382196dd5fd41.js
-// Retrieved at 12/1/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.30f73d3b2552eee2e405.js
+// Retrieved at 12/1/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -3244,12 +3244,8 @@
 						const i = T && T.hasVerifiedEmail;
 						return r.a.createElement("div", null, r.a.createElement(se, {
 							src: `${n.a.assetPath}/img/content-gate-icons/quarantined_interstitial.svg`
-						}), r.a.createElement(ie, null, U._("r/{subredditName} is {=quarantined}", [U._param("subredditName", I), U._param("=quarantined", r.a.createElement(J, {
-							href: "https://www.reddithelp.com/en/categories/reddit-101/rules-reporting/account-and-community-restrictions/quarantined-subreddits"
-						}, U._("quarantined", null, {
-							hk: "Jsxea"
-						})))], {
-							hk: "1nnkMd"
+						}), r.a.createElement(ie, null, U._("r/{subredditName} is quarantined", [U._param("subredditName", I)], {
+							hk: "2pxhFx"
 						})), r.a.createElement(H, null, r.a.createElement(ce, null, O ? r.a.createElement(v.b, {
 							content: O,
 							rtJsonElementProps: {
@@ -10380,4 +10376,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.5198555382196dd5fd41.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.30f73d3b2552eee2e405.js.map

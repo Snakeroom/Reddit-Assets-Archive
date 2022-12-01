@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.8a5cab80e51bde3238c0.js
-// Retrieved at 12/1/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.787eadd02983a1237c17.js
+// Retrieved at 12/1/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1180,7 +1180,7 @@
 				M = n.n(R);
 			const {
 				fbt: q
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), U = d.a.wrapped(L, "PrivateKey", M.a), H = d.a.div("ButtonsContainer", M.a), G = d.a.div("Container", M.a), Z = d.a.div("ContainerExp", M.a), W = d.a.div("Description", M.a), V = d.a.div("PrivateSubredditDetails", M.a), K = d.a.div("PrivateSubredditDescription", M.a), Q = d.a.h3("PrivateSubredditName", M.a), J = d.a.a("Link", M.a), Y = d.a.wrapped(T.n, "LinkRouterButton", M.a), X = d.a.wrapped(T.m, "LinkButton", M.a), $ = d.a.wrapped(T.p, "SecondaryLinkButton", M.a), ee = d.a.wrapped(Y, "GoHomeLinkButton", M.a), te = d.a.wrapped(b.a, "CreateCommunityButton", M.a), ne = d.a.img("Image", M.a), re = d.a.img("ImagePlaceholder", M.a), ie = d.a.wrapped(Y, "LeftLinkRouterButton", M.a), se = d.a.wrapped(X, "LeftLinkButton", M.a), oe = d.a.wrapped($, "SecondaryLeftLinkButton", M.a), ae = d.a.h3("Title", M.a), ce = d.a.div("PageBody", M.a), le = d.a.div("InterstitialMessageWrapper", M.a), de = d.a.div("QuarantineLearnMore", M.a), ue = Object(l.c)({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), U = d.a.wrapped(L, "PrivateKey", M.a), H = d.a.div("ButtonsContainer", M.a), G = d.a.div("Container", M.a), Z = d.a.div("ContainerExp", M.a), W = d.a.div("Description", M.a), V = d.a.div("PrivateSubredditDetails", M.a), K = d.a.div("PrivateSubredditDescription", M.a), Q = d.a.h3("PrivateSubredditName", M.a), Y = d.a.a("Link", M.a), J = d.a.wrapped(T.n, "LinkRouterButton", M.a), X = d.a.wrapped(T.m, "LinkButton", M.a), $ = d.a.wrapped(T.p, "SecondaryLinkButton", M.a), ee = d.a.wrapped(J, "GoHomeLinkButton", M.a), te = d.a.wrapped(b.a, "CreateCommunityButton", M.a), ne = d.a.img("Image", M.a), re = d.a.img("ImagePlaceholder", M.a), ie = d.a.wrapped(J, "LeftLinkRouterButton", M.a), se = d.a.wrapped(X, "LeftLinkButton", M.a), oe = d.a.wrapped($, "SecondaryLeftLinkButton", M.a), ae = d.a.h3("Title", M.a), ce = d.a.div("PageBody", M.a), le = d.a.div("InterstitialMessageWrapper", M.a), de = d.a.div("QuarantineLearnMore", M.a), ue = Object(l.c)({
 				isLoggedIn: N.Q,
 				origin: A.k,
 				user: N.l,
@@ -1262,7 +1262,7 @@
 							redditStyle: !0
 						}, q._("Sign Up", null, {
 							hk: "rvpjy"
-						})), I ? s.a.createElement(Y, {
+						})), I ? s.a.createElement(J, {
 							to: "/",
 							redditStyle: !0
 						}, q._("Go Home", null, {
@@ -1318,7 +1318,7 @@
 							redditStyle: !0
 						}, q._("Sign Up", null, {
 							hk: "rvpjy"
-						})), s.a.createElement(Y, {
+						})), s.a.createElement(J, {
 							to: "/",
 							redditStyle: !0
 						}, q._("Browse Reddit", null, {
@@ -1330,12 +1330,8 @@
 						const a = I && I.hasVerifiedEmail;
 						return s.a.createElement("div", null, s.a.createElement(ne, {
 							src: `${r.a.assetPath}/img/content-gate-icons/quarantined_interstitial.svg`
-						}), s.a.createElement(ae, null, q._("r/{subredditName} is {=quarantined}", [q._param("subredditName", S), q._param("=quarantined", s.a.createElement(J, {
-							href: "https://www.reddithelp.com/en/categories/reddit-101/rules-reporting/account-and-community-restrictions/quarantined-subreddits"
-						}, q._("quarantined", null, {
-							hk: "Jsxea"
-						})))], {
-							hk: "1nnkMd"
+						}), s.a.createElement(ae, null, q._("r/{subredditName} is quarantined", [q._param("subredditName", S)], {
+							hk: "2pxhFx"
 						})), s.a.createElement(W, null, s.a.createElement(le, null, E ? s.a.createElement(g.b, {
 							content: E,
 							rtJsonElementProps: {
@@ -1374,7 +1370,7 @@
 							}, q._("Verify Email", null, {
 								hk: "1893cq"
 							})))
-						})(I, i, y)), s.a.createElement(de, null, q._("Learn more about {=quarantined communities}.", [q._param("=quarantined communities", s.a.createElement(J, {
+						})(I, i, y)), s.a.createElement(de, null, q._("Learn more about {=quarantined communities}.", [q._param("=quarantined communities", s.a.createElement(Y, {
 							href: "https://reddit.zendesk.com/hc/en-us/articles/360043069012-Quarantined-Subreddits"
 						}, q._("quarantined communities", null, {
 							hk: "3yq6Z5"
@@ -1416,7 +1412,7 @@
 							parseRegularLinks: !0
 						}) : q._("This community has been banned for violating the Reddit rules.", null, {
 							hk: "3iUVxA"
-						})))(t), s.a.createElement(H, null, s.a.createElement(Y, {
+						})))(t), s.a.createElement(H, null, s.a.createElement(J, {
 							to: "/",
 							redditStyle: !0
 						}, q._("Explore Reddit", null, {
@@ -1427,7 +1423,7 @@
 							src: `${r.a.assetPath}/img/snoomoji/snoo_thoughtful.png`
 						}), s.a.createElement(ae, null, q._("This content has been restricted in your country in response to a legal request.", null, {
 							hk: "4bCnhl"
-						})), s.a.createElement(H, null, s.a.createElement(Y, {
+						})), s.a.createElement(H, null, s.a.createElement(J, {
 							to: "/",
 							redditStyle: !0
 						}, q._("Explore Reddit", null, {
@@ -1466,7 +1462,7 @@
 										hk: "2IAF6m"
 									});
 								case B.a.ProfileSuspended:
-									return s.a.createElement(s.a.Fragment, null, q._("This account has been {=suspended} .", [q._param("=suspended", s.a.createElement(J, {
+									return s.a.createElement(s.a.Fragment, null, q._("This account has been {=suspended} .", [q._param("=suspended", s.a.createElement(Y, {
 										href: "https://www.reddithelp.com/en/categories/reddit-101/rules-reporting/account-and-community-restrictions/suspensions"
 									}, q._("suspended", null, {
 										hk: "3nHGgi"
@@ -1502,7 +1498,7 @@
 							src: `${r.a.assetPath}/img/snoomoji/snoo_thoughtful.png`
 						}), s.a.createElement(ae, null, q._("This content has been restricted in your country in response to a legal request.", null, {
 							hk: "1q1rVU"
-						})), s.a.createElement(H, null, s.a.createElement(Y, {
+						})), s.a.createElement(H, null, s.a.createElement(J, {
 							to: "/",
 							redditStyle: !0
 						}, q._("Browse Reddit", null, {
@@ -2531,17 +2527,17 @@
 				}),
 				K = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				Q = n("./src/reddit/helpers/trackers/customFeeds.ts"),
-				J = n("./src/reddit/icons/fonts/index.tsx");
-			const Y = Object(c.b)(null, (e, t) => ({
+				Y = n("./src/reddit/icons/fonts/index.tsx");
+			const J = Object(c.b)(null, (e, t) => ({
 				onFollowClick: () => {
 					e(Object(H.b)(t.multireddit.url)), t.multireddit.isFollowed ? t.sendEvent(Object(Q.g)(t.multireddit.url)) : t.sendEvent(Object(Q.d)(t.multireddit.url))
 				}
 			}));
-			var X = Object(K.c)(Y(e => a.a.createElement(V, {
+			var X = Object(K.c)(J(e => a.a.createElement(V, {
 					hoverText: e.multireddit.isFollowed ? r.fbt._("Unfollow", null, {
 						hk: "PezOE"
 					}) : void 0,
-					icon: a.a.createElement(J.a, {
+					icon: a.a.createElement(Y.a, {
 						name: e.multireddit.isFollowed ? "checkmark" : "add"
 					}),
 					onClick: e.onFollowClick,
@@ -2942,4 +2938,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.8a5cab80e51bde3238c0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.787eadd02983a1237c17.js.map

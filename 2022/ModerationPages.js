@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.57cff655c67f3bef53eb.js
-// Retrieved at 12/1/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.ffbf597caafeced61784.js
+// Retrieved at 12/1/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -29474,12 +29474,8 @@
 						const a = P && P.hasVerifiedEmail;
 						return o.a.createElement("div", null, o.a.createElement(ne, {
 							src: `${s.a.assetPath}/img/content-gate-icons/quarantined_interstitial.svg`
-						}), o.a.createElement(ae, null, q._("r/{subredditName} is {=quarantined}", [q._param("subredditName", N), q._param("=quarantined", o.a.createElement(J, {
-							href: "https://www.reddithelp.com/en/categories/reddit-101/rules-reporting/account-and-community-restrictions/quarantined-subreddits"
-						}, q._("quarantined", null, {
-							hk: "Jsxea"
-						})))], {
-							hk: "1nnkMd"
+						}), o.a.createElement(ae, null, q._("r/{subredditName} is quarantined", [q._param("subredditName", N)], {
+							hk: "2pxhFx"
 						})), o.a.createElement(z, null, o.a.createElement(ce, null, y ? o.a.createElement(g.b, {
 							content: y,
 							rtJsonElementProps: {
@@ -78431,4 +78427,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.57cff655c67f3bef53eb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.ffbf597caafeced61784.js.map

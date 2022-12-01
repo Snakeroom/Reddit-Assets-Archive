@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.75b5317aa9cdb170b474.js
-// Retrieved at 12/1/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.7059192f5ab00d9fa3c0.js
+// Retrieved at 12/1/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -973,14 +973,14 @@
 								data: t
 							} = n.body;
 							if (S(t)) {
-								if (P(t)) {
+								if (F(t)) {
 									e(C({
 										recommendedSubredditIds: [],
 										interactedSubredditIds: [],
 										category: "",
 										lastLoadedEnv: "client"
 									})), h = !0
-								} else if (F(t)) {
+								} else if (P(t)) {
 									const n = t.focusVerticalSubredditRecommendations,
 										{
 											recommendedSubreddit: r,
@@ -1017,16 +1017,16 @@
 					const t = e.focusVerticalSubredditRecommendations;
 					return !(!t || !t.focusRecommendations)
 				},
-				P = e => {
+				F = e => {
 					const t = e.focusVerticalSubredditRecommendations,
 						n = t && t.focusRecommendations;
 					return !(!n || 0 !== n.length)
 				},
-				F = e => {
+				P = e => {
 					const t = e.focusVerticalSubredditRecommendations,
 						n = t && t.focusRecommendations,
 						r = t && t.type;
-					return !!(n && !P(e) && r === d.GEO && n[0] && n[0].recommendedSubreddit && n[0].interactedSubreddit)
+					return !!(n && !F(e) && r === d.GEO && n[0] && n[0].recommendedSubreddit && n[0].interactedSubreddit)
 				},
 				N = () => async (e, t, n) => {
 					var r, s;
@@ -1177,8 +1177,8 @@
 					}
 					return o
 				},
-				P = n("./src/reddit/helpers/localStorage/index.ts"),
-				F = n("./src/reddit/helpers/makeProfileListingKey/index.ts"),
+				F = n("./src/reddit/helpers/localStorage/index.ts"),
+				P = n("./src/reddit/helpers/makeProfileListingKey/index.ts"),
 				N = n("./src/reddit/selectors/experiments/d2xHistoryTab.ts"),
 				L = n("./src/reddit/actions/pages/profilePrivate/constants.ts"),
 				I = n("./src/lib/initializeClient/installReducer.ts"),
@@ -1246,7 +1246,7 @@
 					const {
 						profileName: l,
 						listingType: u
-					} = e.params, m = n(), h = Object(F.c)(l.toLowerCase(), u), b = m.profilePrivatePage.ids[h] && m.profilePrivatePage.ids[h].length > 0, f = !!m.profilePrivatePage.api.error[h];
+					} = e.params, m = n(), h = Object(P.c)(l.toLowerCase(), u), b = m.profilePrivatePage.ids[h] && m.profilePrivatePage.ids[h].length > 0, f = !!m.profilePrivatePage.api.error[h];
 					if (m.profilePrivatePage.api.pending[h] || b && !f) return;
 					const {
 						account: _
@@ -1269,7 +1269,7 @@
 						const n = {
 							includeIdentity: g,
 							includeModerated: x,
-							recentPostIds: Object(P.T)(null == _ ? void 0 : _.id).reverse()
+							recentPostIds: Object(F.T)(null == _ ? void 0 : _.id).reverse()
 						};
 						y = await ((e, t) => Object(d.a)(e, {
 							...p,
@@ -1308,7 +1308,7 @@
 					const s = n(),
 						i = s.user.account && s.user.account.displayText && s.user.account.displayText.toLowerCase();
 					if (!i) return;
-					const o = Object(F.c)(i, e);
+					const o = Object(P.c)(i, e);
 					if (!s.profilePrivatePage.ids[o] || !s.profilePrivatePage.ids[o].length || !s.profilePrivatePage.pageInfo || !s.profilePrivatePage.pageInfo[o].hasNextPage || s.profilePrivatePage.api.error[o] || s.profilePrivatePage.api.pending[o]) return;
 					const a = {
 						includeIdentity: !1,
@@ -1454,8 +1454,8 @@
 					}), " ")
 				}),
 				S = n("./src/reddit/constants/parameters.ts"),
-				P = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				F = n("./src/reddit/controls/Button/index.tsx"),
+				F = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				P = n("./src/reddit/controls/Button/index.tsx"),
 				N = n("./src/chat/controls/Svg/index.tsx");
 
 			function L() {
@@ -1481,7 +1481,7 @@
 				M = n.n(R);
 			const {
 				fbt: q
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), G = l.a.wrapped(I, "PrivateKey", M.a), U = l.a.div("ButtonsContainer", M.a), W = l.a.div("Container", M.a), H = l.a.div("ContainerExp", M.a), V = l.a.div("Description", M.a), Z = l.a.div("PrivateSubredditDetails", M.a), K = l.a.div("PrivateSubredditDescription", M.a), Q = l.a.h3("PrivateSubredditName", M.a), Y = l.a.a("Link", M.a), J = l.a.wrapped(F.n, "LinkRouterButton", M.a), $ = l.a.wrapped(F.m, "LinkButton", M.a), X = l.a.wrapped(F.p, "SecondaryLinkButton", M.a), ee = l.a.wrapped(J, "GoHomeLinkButton", M.a), te = l.a.wrapped(b.a, "CreateCommunityButton", M.a), ne = l.a.img("Image", M.a), re = l.a.img("ImagePlaceholder", M.a), se = l.a.wrapped(J, "LeftLinkRouterButton", M.a), ie = l.a.wrapped($, "LeftLinkButton", M.a), oe = l.a.wrapped(X, "SecondaryLeftLinkButton", M.a), ae = l.a.h3("Title", M.a), ce = l.a.div("PageBody", M.a), de = l.a.div("InterstitialMessageWrapper", M.a), le = l.a.div("QuarantineLearnMore", M.a), ue = Object(d.c)({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), G = l.a.wrapped(I, "PrivateKey", M.a), U = l.a.div("ButtonsContainer", M.a), W = l.a.div("Container", M.a), H = l.a.div("ContainerExp", M.a), V = l.a.div("Description", M.a), Z = l.a.div("PrivateSubredditDetails", M.a), K = l.a.div("PrivateSubredditDescription", M.a), Q = l.a.h3("PrivateSubredditName", M.a), Y = l.a.a("Link", M.a), J = l.a.wrapped(P.n, "LinkRouterButton", M.a), $ = l.a.wrapped(P.m, "LinkButton", M.a), X = l.a.wrapped(P.p, "SecondaryLinkButton", M.a), ee = l.a.wrapped(J, "GoHomeLinkButton", M.a), te = l.a.wrapped(b.a, "CreateCommunityButton", M.a), ne = l.a.img("Image", M.a), re = l.a.img("ImagePlaceholder", M.a), se = l.a.wrapped(J, "LeftLinkRouterButton", M.a), ie = l.a.wrapped($, "LeftLinkButton", M.a), oe = l.a.wrapped(X, "SecondaryLeftLinkButton", M.a), ae = l.a.h3("Title", M.a), ce = l.a.div("PageBody", M.a), de = l.a.div("InterstitialMessageWrapper", M.a), le = l.a.div("QuarantineLearnMore", M.a), ue = Object(d.c)({
 				isLoggedIn: A.Q,
 				origin: z.k,
 				user: A.l,
@@ -1500,7 +1500,7 @@
 					return r > Date.now() - s
 				})(e),
 				isSeo: z.h
-			}), me = Object(P.v)(), pe = Object(o.b)(ue, (e, t) => {
+			}), me = Object(F.v)(), pe = Object(o.b)(ue, (e, t) => {
 				let {
 					subredditName: n
 				} = t;
@@ -1535,12 +1535,12 @@
 					interstitialWarningMessage: w,
 					interstitialWarningMessageHtml: C,
 					interstitialWarningMessageRTJson: j,
-					setNSFWPreference: P,
-					subredditDescription: F,
+					setNSFWPreference: F,
+					subredditDescription: P,
 					subredditName: N,
 					user: L
 				} = e, I = async () => {
-					if (a ? await P() : await Object(m.p)(), l) {
+					if (a ? await F() : await Object(m.p)(), l) {
 						const e = new URL(window.location.href);
 						e.searchParams.set(S.k, "1"), window.location.href = e.href
 					} else window.location.reload()
@@ -1598,7 +1598,7 @@
 					case D.a.PrivateSubreddit:
 						return i.a.createElement("div", null, i.a.createElement(G, null), i.a.createElement(ae, null, "r/", N, " ", q._("is a private community", null, {
 							hk: "7zZmq"
-						})), F && F.length && i.a.createElement(Z, null, i.a.createElement(Q, null, "r/", N), i.a.createElement(K, null, i.a.createElement("div", null, F))), i.a.createElement(V, null, q._("The moderators of", null, {
+						})), P && P.length && i.a.createElement(Z, null, i.a.createElement(Q, null, "r/", N), i.a.createElement(K, null, i.a.createElement("div", null, P))), i.a.createElement(V, null, q._("The moderators of", null, {
 							hk: "3QSrbr"
 						}), " ", "r/", N, " ", q._("have set this community as private.", null, {
 							hk: "3zhD9F"
@@ -1631,12 +1631,8 @@
 						const a = L && L.hasVerifiedEmail;
 						return i.a.createElement("div", null, i.a.createElement(ne, {
 							src: `${r.a.assetPath}/img/content-gate-icons/quarantined_interstitial.svg`
-						}), i.a.createElement(ae, null, q._("r/{subredditName} is {=quarantined}", [q._param("subredditName", N), q._param("=quarantined", i.a.createElement(Y, {
-							href: "https://www.reddithelp.com/en/categories/reddit-101/rules-reporting/account-and-community-restrictions/quarantined-subreddits"
-						}, q._("quarantined", null, {
-							hk: "Jsxea"
-						})))], {
-							hk: "1nnkMd"
+						}), i.a.createElement(ae, null, q._("r/{subredditName} is quarantined", [q._param("subredditName", N)], {
+							hk: "2pxhFx"
 						})), i.a.createElement(V, null, i.a.createElement(de, null, k ? i.a.createElement(g.b, {
 							content: k,
 							rtJsonElementProps: {
@@ -2300,8 +2296,8 @@
 				j = n("./src/reddit/featureFlags/index.ts"),
 				O = n("./src/reddit/selectors/experiments/d2xHistoryTab.ts"),
 				S = n("./src/reddit/selectors/tooltip.ts"),
-				P = n("./src/reddit/selectors/user.ts"),
-				F = n("./src/reddit/selectors/userPrefs.ts"),
+				F = n("./src/reddit/selectors/user.ts"),
+				P = n("./src/reddit/selectors/userPrefs.ts"),
 				N = n("./src/server/helpers/profileRedirect.ts"),
 				L = n("./src/reddit/components/ProfileNavMenu/index.m.less"),
 				I = n.n(L);
@@ -2321,10 +2317,10 @@
 				}),
 				T = Object(p.c)({
 					isDropdownMenuOpen: e => Object(S.a)(e) === z,
-					isOwnProfile: (e, t) => Object(P.X)(e, t.profileName),
+					isOwnProfile: (e, t) => Object(F.X)(e, t.profileName),
 					isHistoryTabEnabled: O.a,
 					isSnoovatar30Enabled: j.d.snoovatar30,
-					isSubscriptionsPinned: F.c
+					isSubscriptionsPinned: P.c
 				}),
 				A = Object(b.a)(E.a),
 				z = "profile-nav-menu-tooltip",
@@ -3631,10 +3627,10 @@
 					showModalOnScroll: () => e(d.bb()),
 					surveyTriggerScrollCounted: () => e(Object(u.m)())
 				}),
-				P = e => Object(h.b)({
+				F = e => Object(h.b)({
 					...e
 				}),
-				F = (e, t, n, r) => {
+				P = (e, t, n, r) => {
 					const {
 						listingKey: s,
 						hostPostData: i,
@@ -3646,8 +3642,8 @@
 					...e,
 					...t,
 					...n,
-					postComponentForLayout: P,
-					postClickEventFactory: F
+					postComponentForLayout: F,
+					postClickEventFactory: P
 				}));
 			t.a = e => Object(m.c)(C(N(e)))
 		},
@@ -4026,8 +4022,8 @@
 				j = n("./src/reddit/helpers/name/index.ts"),
 				O = n("./src/reddit/helpers/trackers/screenview.ts"),
 				S = n("./src/reddit/hooks/useSessionBlockingModal.tsx"),
-				P = n("./src/reddit/layout/page/Listing/index.tsx"),
-				F = n("./src/reddit/models/ContentGate.ts"),
+				F = n("./src/reddit/layout/page/Listing/index.tsx"),
+				P = n("./src/reddit/models/ContentGate.ts"),
 				N = n("./src/reddit/pages/ProfileBlockInterstitial/index.tsx"),
 				L = n("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
 				I = n("./src/reddit/selectors/profile.ts"),
@@ -4151,7 +4147,7 @@
 					} = this.props;
 					if (!m || !p) return null;
 					if (t && (t.profileDeleted || t.profileSuspended)) return o.a.createElement(b.default, {
-						contentGateType: t.profileDeleted ? F.a.ProfileDeleted : F.a.ProfileSuspended,
+						contentGateType: t.profileDeleted ? P.a.ProfileDeleted : P.a.ProfileSuspended,
 						profileName: p
 					});
 					const w = m.queryParams && "true" === m.queryParams.consent;
@@ -4160,7 +4156,7 @@
 						avatar: e
 					});
 					if (404 === m.status || (null == t ? void 0 : t.profileDoesNotExist)) return o.a.createElement(b.default, {
-						contentGateType: F.a.ProfileDoesNotExist,
+						contentGateType: P.a.ProfileDoesNotExist,
 						profileName: p
 					});
 					const C = p.toLowerCase(),
@@ -4173,7 +4169,7 @@
 						contentTitle: Object(j.e)(p)
 					});
 					if (!u && s && !r && a !== L.a.Blurred) return o.a.createElement(b.default, {
-						contentGateType: F.a.Nsfw,
+						contentGateType: P.a.Nsfw,
 						subredditName: p
 					});
 					const D = {
@@ -4183,7 +4179,7 @@
 						subredditId: this.props.subredditId,
 						timeSort: f
 					};
-					return o.a.createElement(P.a, {
+					return o.a.createElement(F.a, {
 						className: this.props.className,
 						fitPageToContent: !0,
 						contentNavBar: o.a.createElement(o.a.Fragment, null, o.a.createElement(y.a, {
@@ -4262,4 +4258,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.75b5317aa9cdb170b474.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.7059192f5ab00d9fa3c0.js.map
