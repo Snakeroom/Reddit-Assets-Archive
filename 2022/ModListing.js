@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.c6b06b304c24703bdef9.js
-// Retrieved at 12/1/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.c36a1f7422023b35b662.js
+// Retrieved at 12/1/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, r) {
@@ -2144,7 +2144,7 @@
 			var i;
 			Object(s.a)("SHREDDIT_PDP_EXPERIMENT_HEADER_ACTION");
 			! function(e) {
-				e[e.Test = 0] = "Test", e[e.Control = 1] = "Control", e[e.Off = 2] = "Off"
+				e[e.Treatment = 0] = "Treatment", e[e.Control = 1] = "Control", e[e.Off = 2] = "Off"
 			}(i || (i = {}));
 			const o = i.Off;
 			t.b = function() {
@@ -2234,11 +2234,11 @@
 				}), e => e === n.Kd),
 				u = Object(o.a)(c, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? t : i.a.Off),
 				l = (e, t) => {
-					u(t) === i.a.Test && e.block(e => {
+					u(t) === i.a.Treatment && e.block(e => {
 						if ((e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname)) return window.location.href = e.pathname, !1
 					})
 				},
-				m = Object(o.a)(u, e => e === i.a.Test || e === i.a.Control)
+				m = Object(o.a)(u, e => e === i.a.Treatment || e === i.a.Control)
 		},
 		"./src/reddit/selectors/recapGame.ts": function(e, t, r) {
 			"use strict";
@@ -2262,4 +2262,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.c6b06b304c24703bdef9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.c36a1f7422023b35b662.js.map

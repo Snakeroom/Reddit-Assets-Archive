@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.003e42a001eb9e99d835.js
-// Retrieved at 12/1/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.ad4f3e3979c0ff7d4806.js
+// Retrieved at 12/1/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -25782,7 +25782,7 @@
 			var a;
 			Object(s.a)("SHREDDIT_PDP_EXPERIMENT_HEADER_ACTION");
 			! function(e) {
-				e[e.Test = 0] = "Test", e[e.Control = 1] = "Control", e[e.Off = 2] = "Off"
+				e[e.Treatment = 0] = "Treatment", e[e.Control = 1] = "Control", e[e.Off = 2] = "Off"
 			}(a || (a = {}));
 			const o = a.Off;
 			t.b = function() {
@@ -26129,4 +26129,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.003e42a001eb9e99d835.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.ad4f3e3979c0ff7d4806.js.map

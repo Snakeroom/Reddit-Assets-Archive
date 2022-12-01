@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.e6833be8dc7efa832920.js
-// Retrieved at 12/1/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.8a1c3ee198e1ea003d2a.js
+// Retrieved at 12/1/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -21841,11 +21841,11 @@
 				}), e => e === s.Kd),
 				d = Object(a.a)(l, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? t : o.a.Off),
 				u = (e, t) => {
-					d(t) === o.a.Test && e.block(e => {
+					d(t) === o.a.Treatment && e.block(e => {
 						if ((e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname)) return window.location.href = e.pathname, !1
 					})
 				},
-				m = Object(a.a)(d, e => e === o.a.Test || e === o.a.Control)
+				m = Object(a.a)(d, e => e === o.a.Treatment || e === o.a.Control)
 		},
 		"./src/reddit/selectors/features/happeningNow/index.ts": function(e, t, n) {
 			"use strict";
@@ -22259,4 +22259,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.e6833be8dc7efa832920.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.8a1c3ee198e1ea003d2a.js.map
