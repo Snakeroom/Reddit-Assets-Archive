@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.68254740ee5484a36c68.js
-// Retrieved at 12/1/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.352f1790e7501cf8bbb6.js
+// Retrieved at 12/1/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit", "ModListing~Reddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -22350,9 +22350,9 @@
 			n.d(t, "c", (function() {
 				return l
 			})), n.d(t, "b", (function() {
-				return m
+				return u
 			})), n.d(t, "a", (function() {
-				return p
+				return m
 			}));
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
@@ -22365,13 +22365,12 @@
 					experimentName: r.Gf
 				}), e => e === r.Ld),
 				l = Object(a.a)(d, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? t : o.a.Off),
-				u = /^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/,
-				m = (e, t) => {
+				u = (e, t) => {
 					l(t) === o.a.Test && e.block(e => {
-						if (e.pathname.match(u)) return window.location.href = e.pathname, !1
+						if ((e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname)) return window.location.href = e.pathname, !1
 					})
 				},
-				p = Object(a.a)(l, e => e === o.a.Test || e === o.a.Control)
+				m = Object(a.a)(l, e => e === o.a.Test || e === o.a.Control)
 		},
 		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, n) {
 			"use strict";
@@ -22656,4 +22655,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.68254740ee5484a36c68.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.352f1790e7501cf8bbb6.js.map

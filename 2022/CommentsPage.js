@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.dc57d39591fb55415c48.js
-// Retrieved at 12/1/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.ad7da36f9b5692c1f7b3.js
+// Retrieved at 12/1/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -49687,9 +49687,9 @@
 			n.d(t, "c", (function() {
 				return l
 			})), n.d(t, "b", (function() {
-				return m
+				return u
 			})), n.d(t, "a", (function() {
-				return p
+				return m
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
@@ -49702,13 +49702,12 @@
 					experimentName: s.Gf
 				}), e => e === s.Ld),
 				l = Object(i.a)(d, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? t : o.a.Off),
-				u = /^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/,
-				m = (e, t) => {
+				u = (e, t) => {
 					l(t) === o.a.Test && e.block(e => {
-						if (e.pathname.match(u)) return window.location.href = e.pathname, !1
+						if ((e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname)) return window.location.href = e.pathname, !1
 					})
 				},
-				p = Object(i.a)(l, e => e === o.a.Test || e === o.a.Control)
+				m = Object(i.a)(l, e => e === o.a.Test || e === o.a.Control)
 		},
 		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, n) {
 			"use strict";
@@ -50641,4 +50640,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.dc57d39591fb55415c48.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.ad7da36f9b5692c1f7b3.js.map
