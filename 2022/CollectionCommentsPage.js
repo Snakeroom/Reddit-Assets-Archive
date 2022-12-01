@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.4b344cac2ec22603bba2.js
-// Retrieved at 12/1/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.457b5033d279dba92da9.js
+// Retrieved at 12/1/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -8137,17 +8137,14 @@
 			const {
 				fbt: yt
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), Ot = p.a.wrapped(_e.c, "PostTitle", xt.a), Ct = p.a.wrapped(te.a, "ExpandoButton", xt.a), _t = p.a.wrapped(F, "ClassicExpandoMotion", xt.a), jt = p.a.wrapped(ne.c, "FullWidthFlatlist", xt.a), Et = e => {
-				let {
-					post: t
-				} = e;
-				var s;
+				var t;
 				return i.a.createElement("p", {
 					className: xt.a.VideoProcessingStatus
-				}, (null === (s = t.mediaStatus) || void 0 === s ? void 0 : s.transcodingStatus) === ut.W.Error ? yt._("The video file submitted for this post failed to process successfully.", null, {
+				}, (null === (t = e.post.mediaStatus) || void 0 === t ? void 0 : t.transcodingStatus) === ut.W.Error ? yt._("The video file submitted for this post failed to process successfully.", null, {
 					hk: "2ybSik"
-				}) : yt._("Your video is processing. We'll send you a notification when it's done.", null, {
+				}) : e.isAuthorCurrentUser ? yt._("Your video is processing. We'll send you a notification when it's done.", null, {
 					hk: "1rkfJE"
-				}))
+				}) : null)
 			}, kt = Object(Te.v)({
 				isCommentsPage: Te.y,
 				pageLayer: e => e
@@ -8535,7 +8532,8 @@
 						isFollowed: R,
 						onFollowPostClick: Yt
 					}), Qt, es(), Object(M.P)(Te) && i.a.createElement(Et, {
-						post: Te
+						post: Te,
+						isAuthorCurrentUser: !!Mt
 					}), i.a.createElement(se.a, {
 						className: P ? xt.a.leftPadding : void 0,
 						post: Te,
@@ -19322,4 +19320,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.4b344cac2ec22603bba2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.457b5033d279dba92da9.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.4cc6ad31d168f56b5419.js
-// Retrieved at 12/1/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.dc57d39591fb55415c48.js
+// Retrieved at 12/1/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -22880,17 +22880,14 @@
 			const {
 				fbt: vt
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), xt = p.a.wrapped(ye.c, "PostTitle", gt.a), Ot = p.a.wrapped(te.a, "ExpandoButton", gt.a), yt = p.a.wrapped(R, "ClassicExpandoMotion", gt.a), Et = p.a.wrapped(se.c, "FullWidthFlatlist", gt.a), jt = e => {
-				let {
-					post: t
-				} = e;
-				var n;
+				var t;
 				return i.a.createElement("p", {
 					className: gt.a.VideoProcessingStatus
-				}, (null === (n = t.mediaStatus) || void 0 === n ? void 0 : n.transcodingStatus) === mt.W.Error ? vt._("The video file submitted for this post failed to process successfully.", null, {
+				}, (null === (t = e.post.mediaStatus) || void 0 === t ? void 0 : t.transcodingStatus) === mt.W.Error ? vt._("The video file submitted for this post failed to process successfully.", null, {
 					hk: "2ybSik"
-				}) : vt._("Your video is processing. We'll send you a notification when it's done.", null, {
+				}) : e.isAuthorCurrentUser ? vt._("Your video is processing. We'll send you a notification when it's done.", null, {
 					hk: "1rkfJE"
-				}))
+				}) : null)
 			}, kt = Object(Pe.v)({
 				isCommentsPage: Pe.y,
 				pageLayer: e => e
@@ -23278,7 +23275,8 @@
 						isFollowed: M,
 						onFollowPostClick: Zt
 					}), Yt, en(), Object(A.P)(Pe) && i.a.createElement(jt, {
-						post: Pe
+						post: Pe,
+						isAuthorCurrentUser: !!At
 					}), i.a.createElement(ne.a, {
 						className: I ? gt.a.leftPadding : void 0,
 						post: Pe,
@@ -48404,6 +48402,30 @@
 				muted: Nn
 			})
 		},
+		"./src/reddit/reducers/user/experiments/shredditPDPExperimentHeader/index.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return o
+			}));
+			var s = n("./src/lib/sentry/index.ts"),
+				r = n("./src/lib/makeActionCreator/index.ts");
+			var o;
+			Object(r.a)("SHREDDIT_PDP_EXPERIMENT_HEADER_ACTION");
+			! function(e) {
+				e[e.Test = 0] = "Test", e[e.Control = 1] = "Control", e[e.Off = 2] = "Off"
+			}(o || (o = {}));
+			const i = o.Off;
+			t.b = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : i,
+					t = arguments.length > 1 ? arguments[1] : void 0;
+				switch (t.type) {
+					case "SHREDDIT_PDP_EXPERIMENT_HEADER_ACTION":
+						return s.c.captureException("PDP Experiment Header should only be set on the server."), e;
+					default:
+						return e
+				}
+			}
+		},
 		"./src/reddit/reducers/user/prefs/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
@@ -49662,26 +49684,31 @@
 		},
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "a", (function() {
-				return c
-			})), n.d(t, "b", (function() {
+			n.d(t, "c", (function() {
 				return l
+			})), n.d(t, "b", (function() {
+				return m
+			})), n.d(t, "a", (function() {
+				return p
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
-				o = n("./node_modules/reselect/es/index.js"),
-				i = n("./src/reddit/selectors/user.ts");
-			const a = Object(o.a)(i.R, e => !e),
-				c = Object(o.a)(e => Object(r.c)(e, {
-					experimentEligibilitySelector: a,
+				o = n("./src/reddit/reducers/user/experiments/shredditPDPExperimentHeader/index.ts"),
+				i = n("./node_modules/reselect/es/index.js"),
+				a = n("./src/reddit/selectors/user.ts");
+			const c = Object(i.a)(a.R, e => !e),
+				d = Object(i.a)(e => Object(r.c)(e, {
+					experimentEligibilitySelector: c,
 					experimentName: s.Gf
 				}), e => e === s.Ld),
-				d = /^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/,
-				l = (e, t) => {
-					c(t) && e.block(e => {
-						if (e.pathname.match(d)) return window.location.href = e.pathname, !1
+				l = Object(i.a)(d, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? t : o.a.Off),
+				u = /^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/,
+				m = (e, t) => {
+					l(t) === o.a.Test && e.block(e => {
+						if (e.pathname.match(u)) return window.location.href = e.pathname, !1
 					})
-				}
+				},
+				p = Object(i.a)(l, e => e === o.a.Test || e === o.a.Control)
 		},
 		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, n) {
 			"use strict";
@@ -50614,4 +50641,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.4cc6ad31d168f56b5419.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.dc57d39591fb55415c48.js.map
