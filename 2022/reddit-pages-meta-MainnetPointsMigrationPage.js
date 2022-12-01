@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.82d514d243eaa9691438.js
-// Retrieved at 12/1/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.439b84f7c6e96d13ae77.js
+// Retrieved at 12/1/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-meta-MainnetPointsMigrationPage"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -1056,11 +1056,11 @@
 						})
 					}
 				};
-			var L, F = n("./src/reddit/pages/meta/MainnetPointsMigrationPage/index.m.less"),
-				V = n.n(F);
+			var F, L = n("./src/reddit/pages/meta/MainnetPointsMigrationPage/index.m.less"),
+				V = n.n(L);
 			! function(e) {
 				e[e.Starting = 0] = "Starting", e[e.Wallet = 1] = "Wallet", e[e.TestNetwork = 2] = "TestNetwork", e[e.Bridge = 3] = "Bridge"
-			}(L || (L = {}));
+			}(F || (F = {}));
 			const R = e => {
 					const t = Object(o.d)(),
 						{
@@ -1068,33 +1068,33 @@
 						} = e,
 						a = W(e);
 					return Object(r.useEffect)(() => {
-						a === L.TestNetwork && (async () => await B({
+						a === F.TestNetwork && (async () => await B({
 							network: "5391184",
 							dispatch: t
 						}))()
 					}, [a, t]), i.a.createElement("div", {
 						className: V.a.spacedFlex
 					}, i.a.createElement(D, {
-						step: L.Wallet,
+						step: F.Wallet,
 						currentStep: a,
 						withConnection: !0
-					}, a === L.Wallet ? i.a.createElement(M.t, {
+					}, a === F.Wallet ? i.a.createElement(M.t, {
 						onClick: b.b
 					}, j.fbt._("Connect to Metamask", null, {
 						hk: "2DzFph"
 					})) : i.a.createElement("p", null, j.fbt._("Connect to Metamask", null, {
 						hk: "3ASitB"
 					}))), i.a.createElement(D, {
-						step: L.TestNetwork,
+						step: F.TestNetwork,
 						currentStep: a,
 						withConnection: !0
 					}, i.a.createElement("p", null, j.fbt._("Switch to {lineBreak} Reddit Test Network", [j.fbt._param("lineBreak", i.a.createElement("br", null))], {
 						hk: "2ua2Ev"
 					}))), i.a.createElement(D, {
-						step: L.Bridge,
+						step: F.Bridge,
 						currentStep: a,
 						withConnection: !1
-					}, a === L.Bridge ? i.a.createElement(M.t, {
+					}, a === F.Bridge ? i.a.createElement(M.t, {
 						onClick: n
 					}, j.fbt._("Connect to Bridge", null, {
 						hk: "4oBHSw"
@@ -1107,7 +1107,7 @@
 						walletAddress: t,
 						network: n
 					} = e;
-					return t ? "5391184" !== n ? L.TestNetwork : t && "5391184" === n ? L.Bridge : L.Starting : L.Wallet
+					return t ? "5391184" !== n ? F.TestNetwork : t && "5391184" === n ? F.Bridge : F.Starting : F.Wallet
 				},
 				D = e => {
 					let {
@@ -1140,9 +1140,9 @@
 				Z = n("./src/reddit/icons/svgs/LoadingOrbit/index.tsx"),
 				Y = n("./src/higherOrderComponents/asModal/index.tsx"),
 				q = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				G = n("./node_modules/@ethersproject/address/lib.esm/index.js"),
-				K = n("./node_modules/lodash/debounce.js"),
-				X = n.n(K),
+				K = n("./node_modules/@ethersproject/address/lib.esm/index.js"),
+				G = n("./node_modules/lodash/debounce.js"),
+				X = n.n(G),
 				J = n("./src/lib/classNames/index.ts"),
 				Q = n("./src/reddit/constants/colors.ts"),
 				$ = n("./src/reddit/controls/FormFields/index.tsx"),
@@ -1162,7 +1162,7 @@
 				} = e;
 				const [a, s] = Object(r.useState)(""), o = Object(r.useRef)(a), [l, c] = Object(r.useState)(re.Empty), d = l === re.Invalid, u = () => {
 					if (se.test(o.current)) {
-						if (!!Object(G.a)(o.current)) return c(re.Valid), void n(o.current, !0)
+						if (!!Object(K.a)(o.current)) return c(re.Valid), void n(o.current, !0)
 					}
 					c(re.Invalid)
 				}, m = Object(r.useMemo)(() => X()(u, 300), [o, n, u]);
@@ -1495,8 +1495,8 @@
 					}),
 					{
 						transferOut: B,
-						claimTransfer: L,
-						getMainnetBalance: F,
+						claimTransfer: F,
+						getMainnetBalance: L,
 						checkMigrationStatus: V,
 						updateMigrationState: R,
 						switchToTestnet: W,
@@ -1530,13 +1530,13 @@
 				}, [x, f, V, j, v, m, R, y]), Object(r.useEffect)(() => {
 					let e;
 					return j && f && (e = setInterval(async () => {
-						const t = await F({
+						const t = await L({
 							mainnetAddress: m,
 							recipient: f.recipient
 						});
 						t.gt(E) && (_(t), M(!1), clearInterval(e))
 					}, 1e3)), () => window.clearInterval(e)
-				}, [F, m, E, j, f]);
+				}, [L, m, E, j, f]);
 				return i.a.createElement("div", {
 					className: ge.a.row,
 					key: p
@@ -1564,7 +1564,7 @@
 					handleClaimTransfer: async () => {
 						var e, t;
 						try {
-							await L({
+							await F({
 								status: f
 							}), M(!0)
 						} catch (n) {
@@ -1573,7 +1573,7 @@
 								updates: {
 									transferStatus: null
 								}
-							}), F({
+							}), L({
 								mainnetAddress: null == f ? void 0 : f.token,
 								recipient: null == f ? void 0 : f.recipient
 							})), P({
@@ -1869,16 +1869,16 @@
 			const r = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: a.we
-					}) === a.Ld
+						experimentName: a.ve
+					}) === a.Kd
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: a.ue
-					}) === a.Ld
+						experimentName: a.te
+					}) === a.Kd
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.82d514d243eaa9691438.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.439b84f7c6e96d13ae77.js.map

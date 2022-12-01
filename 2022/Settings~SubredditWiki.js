@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.bc966a37eb1fe4fee3f1.js
-// Retrieved at 12/1/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.5b40a49a84346bddde07.js
+// Retrieved at 12/1/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, r) {
@@ -694,7 +694,7 @@
 					error: z,
 					pending: D
 				});
-			var q = function() {
+			var K = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -709,9 +709,9 @@
 							return e
 					}
 				},
-				K = Object(E.c)({
+				q = Object(E.c)({
 					api: G,
-					result: q
+					result: K
 				});
 			const Q = {};
 			var J = function() {
@@ -759,7 +759,7 @@
 					inContext: B,
 					loadMore: T,
 					models: W,
-					search: K,
+					search: q,
 					userOrder: J
 				});
 			Object(N.a)({
@@ -1125,8 +1125,8 @@
 				z = r("./src/reddit/models/User/index.ts"),
 				D = r("./src/reddit/components/HumanDate/index.tsx"),
 				G = r("./src/reddit/components/ProfileIdCard/AwardedLastMonth.tsx"),
-				q = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/index.tsx"),
-				K = r("./src/reddit/actions/inContextModeration.ts"),
+				K = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/index.tsx"),
+				q = r("./src/reddit/actions/inContextModeration.ts"),
 				Q = r("./src/reddit/actions/modal.ts"),
 				J = r("./src/reddit/actions/subredditModeration/ban.ts"),
 				Y = r("./src/reddit/constants/modals.ts"),
@@ -1211,14 +1211,14 @@
 							username: r
 						})),
 						toggleBanModal: () => {
-							e(Object(K.c)({
+							e(Object(q.c)({
 								username: r,
 								subredditId: n,
 								contextId: s
 							})), e(Object(J.a)(n, r))
 						},
 						toggleMuteModal: () => {
-							e(Object(K.d)({
+							e(Object(q.d)({
 								username: r,
 								subredditId: n,
 								contextId: s
@@ -1377,7 +1377,7 @@
 						style: {
 							backgroundImage: `url('${R}')`
 						}
-					}), s.a.createElement(Ne, null, T ? s.a.createElement(q.a, {
+					}), s.a.createElement(Ne, null, T ? s.a.createElement(K.a, {
 						isHovercard: !0,
 						bannerBackgroundImage: R,
 						compact: !0,
@@ -2668,8 +2668,8 @@
 			const a = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.G
-				}) === n.Ld
+					experimentName: n.F
+				}) === n.Kd
 			}
 		},
 		"./src/redditGQL/operations/DeleteSubredditMuteSettings.json": function(e) {
@@ -2686,4 +2686,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.bc966a37eb1fe4fee3f1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.5b40a49a84346bddde07.js.map

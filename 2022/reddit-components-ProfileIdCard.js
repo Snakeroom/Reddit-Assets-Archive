@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.8a5cd9f38b7fd466c4ab.js
-// Retrieved at 12/1/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.a4b47af6b45e280a0b44.js
+// Retrieved at 12/1/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -2406,12 +2406,12 @@
 				W = r("./src/reddit/components/CrisisFlow/index.tsx"),
 				H = r("./src/higherOrderComponents/makeAsync.tsx"),
 				q = r("./src/lib/loadWithRetries/index.ts");
-			var z = Object(H.a)({
+			var K = Object(H.a)({
 					getComponent: () => Object(q.a)(() => r.e("GivePremiumModal").then(r.bind(null, "./src/reddit/components/GivePremiumModal/index.tsx"))).then(e => e.default),
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
-				K = r("./src/reddit/constants/modals.ts"),
+				z = r("./src/reddit/constants/modals.ts"),
 				Z = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				Q = r("./src/reddit/helpers/styles/mixins/loading.ts"),
 				Y = r("./src/reddit/models/Gold/Premium/index.ts"),
@@ -2614,7 +2614,7 @@
 					}, o.a.createElement(b.r, {
 						className: ee.a.expandButton,
 						onClick: this.moreOptionsToggled
-					}, s)), e && o.a.createElement(z, null), this.state.showCrisisModal && o.a.createElement(W.b, {
+					}, s)), e && o.a.createElement(K, null), this.state.showCrisisModal && o.a.createElement(W.b, {
 						withOverlay: !0,
 						overlayCustomStyles: W.a,
 						fromUserProfile: !0,
@@ -2630,7 +2630,7 @@
 					} = t;
 					return {
 						addToMultiClicked: () => {
-							e(Object(F.a)(() => Promise.all([r.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~1fdd9b9b"), r.e("CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5"), r.e("CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32"), r.e("CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit"), r.e("CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar"), r.e("CountryPage~Multireddit"), r.e("Multireddit")]).then(r.bind(null, "./src/reddit/actions/multireddit/index.ts")).then(e => e.myMultiredditsRequested))(!0, !0)), e(Object(R.h)(K.a.MULTIREDDIT_ADD_SUBREDDIT))
+							e(Object(F.a)(() => Promise.all([r.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~1fdd9b9b"), r.e("CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5"), r.e("CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32"), r.e("CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit"), r.e("CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar"), r.e("CountryPage~Multireddit"), r.e("Multireddit")]).then(r.bind(null, "./src/reddit/actions/multireddit/index.ts")).then(e => e.myMultiredditsRequested))(!0, !0)), e(Object(R.h)(z.a.MULTIREDDIT_ADD_SUBREDDIT))
 						},
 						onClickGivePremium: t => e(Object(D.e)({
 							correlationId: t,
@@ -2848,7 +2848,7 @@
 					prefShowSnoovatar: M,
 					snoovatarFullBodyAsset: B,
 					username: D
-				} = P, R = !!a && a.id === F, G = !(!a || !a.snoovatarFullBodyAsset), W = O && O.bannerBackgroundImage, H = !!b && b.isNSFW, q = H && c, z = !(!h || !h.userIsSubscriber), K = `/user/${D}/`, Z = E && E.url === K, Q = !h || h.acceptChats, Y = !h || h.acceptPms, X = k && Object(ue.b)(B), V = () => {
+				} = P, R = !!a && a.id === F, G = !(!a || !a.snoovatarFullBodyAsset), W = O && O.bannerBackgroundImage, H = !!b && b.isNSFW, q = H && c, K = !(!h || !h.userIsSubscriber), z = `/user/${D}/`, Z = E && E.url === z, Q = !h || h.acceptChats, Y = !h || h.acceptPms, X = k && Object(ue.b)(B), V = () => {
 					r(e => !e)
 				};
 				return o.a.createElement(o.a.Fragment, null, o.a.createElement(m.a, {
@@ -2860,7 +2860,7 @@
 					isOwnProfile: R,
 					publicDescription: h ? h.publicDescription : void 0,
 					title: b ? b.title : void 0,
-					url: Z ? null : K,
+					url: Z ? null : z,
 					userCreated: U,
 					username: D,
 					recentAwardings: S,
@@ -2888,7 +2888,7 @@
 								noun: n.FOLLOW
 							}))(F))
 						},
-						userIsSubscriber: z,
+						userIsSubscriber: K,
 						isUserBlocked: y,
 						onClickUnblockUser: V,
 						enableFollowers: L
@@ -3580,7 +3580,7 @@
 			const a = e => Object(s.c)(e, {
 				experimentName: n.u,
 				experimentEligibilitySelector: () => Object(o.Q)(e)
-			}) === n.Ld
+			}) === n.Kd
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, r) {
 			"use strict";
@@ -3628,4 +3628,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.8a5cd9f38b7fd466c4ab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.a4b47af6b45e280a0b44.js.map

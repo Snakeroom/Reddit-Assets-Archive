@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.6a496dee4e0cd3a9fc44.js
-// Retrieved at 12/1/2022, 10:00:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.d1c0d0a4c838d5a3af8b.js
+// Retrieved at 12/1/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -3922,8 +3922,8 @@
 					showContributorRequestFlow: e => Object(te.w)(e, et.e.Post),
 					showCreatePollButton: e => (e => Object(st.c)(e, {
 						experimentEligibilitySelector: st.a,
-						experimentName: Le.K
-					}) === Le.S.Treatment)(e) && !Object(Ke.h)(),
+						experimentName: Le.J
+					}) === Le.R.Treatment)(e) && !Object(Ke.h)(),
 					shouldShowFlairPreview: (e, t) => {
 						let {
 							listingName: n
@@ -4191,7 +4191,7 @@
 						onClick: g ? v : void 0,
 						headerButton: i.a.createElement("div", {
 							className: bt.a.headerButtonsContainer
-						}, !z && _ && C && l !== Le.Oe.NewModule && i.a.createElement(a.a, {
+						}, !z && _ && C && l !== Le.Ne.NewModule && i.a.createElement(a.a, {
 							className: bt.a.ModToolsLink,
 							to: C.posts ? `${_.url}about/modqueue` : `${_.url}about/`,
 							onClick: this.onClickModTools
@@ -5968,8 +5968,8 @@
 			const i = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.G
-				}) === r.Ld
+					experimentName: r.F
+				}) === r.Kd
 			}
 		},
 		"./src/reddit/selectors/experiments/joinOptimizations.ts": function(e, t, n) {
@@ -5992,29 +5992,29 @@
 				i = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = n("./src/reddit/selectors/experiments/index.ts");
 			const a = Object(r.a)(e => Object(i.c)(e, {
+					experimentName: s.Nb,
+					experimentEligibilitySelector: o.e
+				}), e => e === s.U.Enabled),
+				d = Object(r.a)(e => Object(i.c)(e, {
 					experimentName: s.Ob,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.V.Enabled),
-				d = Object(r.a)(e => Object(i.c)(e, {
+				c = Object(r.a)(e => Object(i.c)(e, {
 					experimentName: s.Pb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.W.Enabled),
-				c = Object(r.a)(e => Object(i.c)(e, {
+				l = Object(r.a)(e => Object(i.c)(e, {
 					experimentName: s.Qb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.X.Enabled),
-				l = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Rb,
-					experimentEligibilitySelector: o.e
-				}), e => e === s.Y.Enabled),
 				u = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Tb,
-					experimentEligibilitySelector: o.e
-				}), e => e === s.ab.Enabled),
-				m = Object(r.a)(e => Object(i.c)(e, {
 					experimentName: s.Sb,
 					experimentEligibilitySelector: o.e
-				}), e => e === s.Z.Enabled)
+				}), e => e === s.Z.Enabled),
+				m = Object(r.a)(e => Object(i.c)(e, {
+					experimentName: s.Rb,
+					experimentEligibilitySelector: o.e
+				}), e => e === s.Y.Enabled)
 		},
 		"./src/redditGQL/operations/DeleteSubredditMuteSettings.json": function(e) {
 			e.exports = JSON.parse('{"id":"c518a45f60a5"}')
@@ -6039,4 +6039,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.6a496dee4e0cd3a9fc44.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.d1c0d0a4c838d5a3af8b.js.map

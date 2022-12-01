@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.b654fc6350337df26ac1.js
-// Retrieved at 12/1/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.90bd15b40d940770444f.js
+// Retrieved at 12/1/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, n) {
@@ -1899,29 +1899,29 @@
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/experiments/index.ts");
 			const c = Object(r.a)(e => Object(o.c)(e, {
+					experimentName: s.Nb,
+					experimentEligibilitySelector: i.e
+				}), e => e === s.U.Enabled),
+				a = Object(r.a)(e => Object(o.c)(e, {
 					experimentName: s.Ob,
 					experimentEligibilitySelector: i.e
 				}), e => e === s.V.Enabled),
-				a = Object(r.a)(e => Object(o.c)(e, {
+				d = Object(r.a)(e => Object(o.c)(e, {
 					experimentName: s.Pb,
 					experimentEligibilitySelector: i.e
 				}), e => e === s.W.Enabled),
-				d = Object(r.a)(e => Object(o.c)(e, {
+				l = Object(r.a)(e => Object(o.c)(e, {
 					experimentName: s.Qb,
 					experimentEligibilitySelector: i.e
 				}), e => e === s.X.Enabled),
-				l = Object(r.a)(e => Object(o.c)(e, {
-					experimentName: s.Rb,
-					experimentEligibilitySelector: i.e
-				}), e => e === s.Y.Enabled),
 				u = Object(r.a)(e => Object(o.c)(e, {
-					experimentName: s.Tb,
-					experimentEligibilitySelector: i.e
-				}), e => e === s.ab.Enabled),
-				m = Object(r.a)(e => Object(o.c)(e, {
 					experimentName: s.Sb,
 					experimentEligibilitySelector: i.e
-				}), e => e === s.Z.Enabled)
+				}), e => e === s.Z.Enabled),
+				m = Object(r.a)(e => Object(o.c)(e, {
+					experimentName: s.Rb,
+					experimentEligibilitySelector: i.e
+				}), e => e === s.Y.Enabled)
 		},
 		"./src/reddit/selectors/experiments/recapLeadUpGame.ts": function(e, t, n) {
 			"use strict";
@@ -1938,8 +1938,8 @@
 			const a = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: r.of
-					}) === r.Ld
+						experimentName: r.nf
+					}) === r.Kd
 				},
 				d = Object(c.a)(i.R, (e, t) => {
 					let {
@@ -1950,8 +1950,8 @@
 				l = (e, t) => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: e => d(e, t),
-						experimentName: r.pf
-					}) === r.Ld
+						experimentName: r.of
+					}) === r.Kd
 				}
 		},
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, n) {
@@ -1971,8 +1971,8 @@
 			const a = Object(i.a)(c.R, e => !e),
 				d = Object(i.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: a,
-					experimentName: r.Gf
-				}), e => e === r.Ld),
+					experimentName: r.Ff
+				}), e => e === r.Kd),
 				l = Object(i.a)(d, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? t : o.a.Off),
 				u = (e, t) => {
 					l(t) === o.a.Test && e.block(e => {
@@ -2006,4 +2006,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.b654fc6350337df26ac1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.90bd15b40d940770444f.js.map
