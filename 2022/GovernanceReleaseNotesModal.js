@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.17618ba94c7cef175dff.js
-// Retrieved at 12/1/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.cb5482259e237cfaacc9.js
+// Retrieved at 12/1/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -554,7 +554,7 @@
 			})), n.d(t, "f", (function() {
 				return T
 			})), n.d(t, "b", (function() {
-				return R
+				return L
 			}));
 			var i = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./src/lib/makeActionCreator/index.ts"),
@@ -787,7 +787,7 @@
 							e(p(`error-unmuting-${t}`))
 						}
 					}
-				}, R = e => {
+				}, L = e => {
 					let {
 						subredditName: t
 					} = e;
@@ -1113,16 +1113,16 @@
 				})))
 			}
 			var T = n("./src/reddit/components/Governance/ReleaseNotesModal/SlideIndicator/index.m.less"),
-				R = n.n(T);
+				L = n.n(T);
 
-			function L(e) {
+			function R(e) {
 				return o.a.createElement("div", {
-					className: Object(h.a)(R.a.container, e.className)
+					className: Object(h.a)(L.a.container, e.className)
 				}, Array.from({
 					length: e.totalSlides
 				}).map((t, n) => o.a.createElement("div", {
-					className: Object(h.a)(R.a.dot, {
-						[R.a.dotSelected]: n === e.currentSlide
+					className: Object(h.a)(L.a.dot, {
+						[L.a.dotSelected]: n === e.currentSlide
 					})
 				})))
 			}
@@ -1167,7 +1167,7 @@
 					}, o.a.createElement(w, {
 						className: A.a.controlBox,
 						date: e.created
-					}), o.a.createElement(L, {
+					}), o.a.createElement(R, {
 						className: A.a.controlBox,
 						currentSlide: this.state.currentlyViewingIndex,
 						totalSlides: this.props.releaseNotes.length
@@ -1385,7 +1385,7 @@
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: i.F
-				}) === i.Kd
+				}) === i.Ld
 			}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
@@ -1454,4 +1454,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.17618ba94c7cef175dff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.cb5482259e237cfaacc9.js.map

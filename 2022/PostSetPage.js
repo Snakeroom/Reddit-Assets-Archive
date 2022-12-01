@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostSetPage.a628724074ad8768ac02.js
-// Retrieved at 12/1/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostSetPage.e24ca81594b8debfee4c.js
+// Retrieved at 12/1/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostSetPage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -265,7 +265,7 @@
 			n.d(t, "a", (function() {
 				return C
 			})), n.d(t, "b", (function() {
-				return T
+				return L
 			}));
 			var r, s = n("./src/lib/makeActionCreator/index.ts"),
 				i = n("./src/lib/performanceTimings/index.tsx"),
@@ -427,7 +427,7 @@
 						r = t && t.type;
 					return !!(n && !w(e) && r === c.GEO && n[0] && n[0].recommendedSubreddit && n[0].interactedSubreddit)
 				},
-				T = () => async (e, t, n) => {
+				L = () => async (e, t, n) => {
 					var r, s;
 					const o = t(),
 						a = (e => e.focusedVerticals.lastLoadedEnv)(o);
@@ -458,9 +458,9 @@
 			})), n.d(t, "g", (function() {
 				return I
 			})), n.d(t, "a", (function() {
-				return T
-			})), n.d(t, "f", (function() {
 				return L
+			})), n.d(t, "f", (function() {
+				return T
 			})), n.d(t, "b", (function() {
 				return P
 			}));
@@ -660,7 +660,7 @@
 						}))
 					}
 				},
-				T = () => async (e, t, n) => {
+				L = () => async (e, t, n) => {
 					let {
 						gqlContext: s
 					} = n;
@@ -679,7 +679,7 @@
 							hk: "2dCj3Q"
 						})
 					}))
-				}, L = e => {
+				}, T = e => {
 					let {
 						subredditId: t,
 						subredditName: n
@@ -913,8 +913,8 @@
 			const E = e => {
 				return Object(_.c)(e, {
 					experimentEligibilitySelector: _.a,
-					experimentName: v.pf
-				}) === v.Kd
+					experimentName: v.qf
+				}) === v.Ld
 			};
 			var S = n("./src/reddit/selectors/experiments/shredditParity.ts"),
 				O = n("./src/reddit/selectors/recapGame.ts"),
@@ -949,12 +949,12 @@
 					[h, g] = Object(r.useState)(!1),
 					[x, v] = Object(r.useState)(),
 					[_, k] = Object(r.useState)(),
-					[I, T] = Object(r.useState)(0),
-					L = Object(i.e)(f.l),
+					[I, L] = Object(r.useState)(0),
+					T = Object(i.e)(f.l),
 					P = Object(i.e)(E),
 					R = Object(i.e)(S.a),
 					B = Object(i.e)(O.a),
-					M = L ? L.id : "anonymous",
+					M = T ? T.id : "anonymous",
 					F = "on" === B.recapGameState,
 					A = () => {
 						h && k(setTimeout(() => {
@@ -985,7 +985,7 @@
 						x && clearTimeout(x), _ && clearTimeout(_), p.current && (p.current.classList.remove(C.a.transform), p.current.style.width = "65px")
 					},
 					onSetTimer: A,
-					setAltTextWidth: T,
+					setAltTextWidth: L,
 					setTimerByObserver: e => {
 						e.isIntersecting && (A(), b((() => e => ({
 							source: "recap",
@@ -1352,7 +1352,7 @@
 				const t = Object(i.f)().getState(),
 					n = Object(h.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.ad.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.ad.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.ad.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.bd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.bd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.bd.LargeImagePreview ? e.reredditButtons : [];
 					return s.a.createElement(j, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -2453,14 +2453,14 @@
 					} = r;
 					return Object(h.k)(e, t, "post", s, i, o, void 0)
 				},
-				T = Object(r.b)(j, N, (e, t, n) => ({
+				L = Object(r.b)(j, N, (e, t, n) => ({
 					...e,
 					...t,
 					...n,
 					postComponentForLayout: w,
 					postClickEventFactory: I
 				}));
-			t.a = e => Object(m.c)(k(T(e)))
+			t.a = e => Object(m.c)(k(L(e)))
 		},
 		"./src/reddit/controls/LoadingIcon/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -2944,7 +2944,7 @@
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
 					experimentName: r.F
-				}) === r.Kd
+				}) === r.Ld
 			}
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, n) {
@@ -2984,13 +2984,13 @@
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: () => t,
 						experimentName: r.rc
-					}) === r.Kd
+					}) === r.Ld
 				},
 				o = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
 						experimentName: r.qc
-					}) === r.Kd
+					}) === r.Ld
 				}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, n) {
@@ -3022,4 +3022,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.a628724074ad8768ac02.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.e24ca81594b8debfee4c.js.map

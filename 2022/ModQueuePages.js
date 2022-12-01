@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.37e2385a6d368082c747.js
-// Retrieved at 12/1/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.4a7b6a4076d4e4329ca2.js
+// Retrieved at 12/1/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -4827,11 +4827,11 @@
 				} = e, T = t && !(I && Object(c.hasAcceptableAds)()), R = Object(a.d)();
 
 				function A(e) {
-					R(e ? Object(m.r)(b) : Object(m.E)(b))
+					R(e ? Object(m.s)(b) : Object(m.Q)(b))
 				}
 
 				function P() {
-					return R(Object(m.z)({
+					return R(Object(m.L)({
 						postId: b
 					}))
 				}
@@ -4840,7 +4840,7 @@
 					const {
 						target: t
 					} = e;
-					t && t.played && 1 === t.played.length && 0 === t.played.start(0) && t.played.end(0) === t.duration && R(Object(m.s)(b))
+					t && t.played && 1 === t.played.length && 0 === t.played.start(0) && t.played.end(0) === t.duration && R(Object(m.D)(b))
 				}, 200);
 
 				function F(e) {
@@ -4849,16 +4849,16 @@
 
 				function B(e) {
 					var t;
-					(r || U(e), d) || (t = e.timeStamp, R(Object(m.A)(b, t)))
+					(r || U(e), d) || (t = e.timeStamp, R(Object(m.M)(b, t)))
 				}
 
 				function D(e) {
-					R(Object(m.q)(b, e.timeStamp))
+					R(Object(m.r)(b, e.timeStamp))
 				}
 
 				function U(e) {
 					! function(e) {
-						R(Object(m.D)({
+						R(Object(m.P)({
 							metadata: e,
 							postId: b
 						}))
@@ -4871,7 +4871,7 @@
 				}
 
 				function H(e) {
-					s || B(e), r || U(e), R(Object(m.C)(b))
+					s || B(e), r || U(e), R(Object(m.O)(b))
 				}
 
 				function W() {
@@ -6671,12 +6671,12 @@
 						rtJsonElementProps: i
 					});
 					switch (r) {
-						case h.Tf.SmIcon:
+						case h.Uf.SmIcon:
 							return o.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case h.Tf.SmIconHc:
+						case h.Uf.SmIconHc:
 							return o.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -8414,7 +8414,7 @@
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
 					experimentName: s.F
-				}) === s.Kd
+				}) === s.Ld
 			}
 		},
 		"./src/reddit/selectors/experiments/realtimeMQUpdates.ts": function(e, t, n) {
@@ -8429,7 +8429,7 @@
 			const a = e => Object(i.a)(e) && Object(o.c)(e, {
 				experimentEligibilitySelector: r.R,
 				experimentName: s.xc
-			}) === s.Kd
+			}) === s.Ld
 		},
 		"./src/reddit/selectors/subredditMention.ts": function(e, t, n) {
 			"use strict";
@@ -8454,12 +8454,12 @@
 				d = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Nf
+						experimentName: s.Of
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.Tf.SmIcon || t === s.Tf.SmIconHc
+					return t === s.Uf.SmIcon || t === s.Uf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -8497,4 +8497,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.37e2385a6d368082c747.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.4a7b6a4076d4e4329ca2.js.map

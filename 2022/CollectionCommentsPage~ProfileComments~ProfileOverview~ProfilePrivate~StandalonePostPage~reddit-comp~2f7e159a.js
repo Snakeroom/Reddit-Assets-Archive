@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a.28fd82b7eb1018dda1c5.js
-// Retrieved at 12/1/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a.0bae594b3d8b6e750cf2.js
+// Retrieved at 12/1/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a"], {
 		"./src/higherOrderComponents/withAdClickLocation/index.tsx": function(e, t, s) {
@@ -961,8 +961,8 @@
 					q = U("Approve", W.id, H),
 					G = U("Archived", W.id, H),
 					Q = U("Lock", W.id, H),
-					K = U("Mod", W.id, H),
-					Z = U("Remove", W.id, H),
+					Z = U("Mod", W.id, H),
+					K = U("Remove", W.id, H),
 					z = U("Report", W.id, H),
 					Y = U("Spam", W.id, H),
 					$ = U("Sticky", W.id, H),
@@ -974,7 +974,7 @@
 					isFilled: !0,
 					className: Object(c.a)(T.a.icon, T.a.modIcon)
 				}), r.a.createElement(m.c, L({
-					tooltipId: K,
+					tooltipId: Z,
 					text: w(s)
 				}, X))), W.isArchived && r.a.createElement(o.Fragment, null, r.a.createElement(_.a, {
 					isFilled: !0,
@@ -1030,8 +1030,8 @@
 					isFilled: !0,
 					className: Object(c.a)(T.a.icon, T.a.removeIcon),
 					desc: Object(h.b)(W),
-					id: Z,
-					onMouseEnter: D(Z),
+					id: K,
+					onMouseEnter: D(K),
 					onMouseLeave: S
 				}), V && r.a.createElement(u.a, {
 					className: T.a.addRemovalReason,
@@ -1040,12 +1040,12 @@
 						hk: "1YDo3"
 					})
 				}), (W.modRemovalReason || W.modNote) && r.a.createElement(M, {
-					onMouseEnter: D(Z),
+					onMouseEnter: D(K),
 					onMouseLeave: S
 				}, n.fbt._("Removal reason", null, {
 					hk: "2DhKVZ"
 				})), r.a.createElement(m.c, L({
-					tooltipId: Z,
+					tooltipId: K,
 					text: Object(h.b)(W)
 				}, X))), W.bannedBy && W.isSpam && r.a.createElement(o.Fragment, null, r.a.createElement(C.a, {
 					isFilled: !0,
@@ -1307,7 +1307,7 @@
 			const b = Object(p.a)(e => Object(u.c)(e, {
 				experimentEligibilitySelector: u.a,
 				experimentName: m.uc
-			}), e => e === m.Kd);
+			}), e => e === m.Ld);
 			var x = s("./node_modules/fbt/lib/FbtPublic.js"),
 				v = s("./src/lib/classNames/index.ts"),
 				h = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
@@ -1414,7 +1414,7 @@
 			var q = s("./src/reddit/components/PromotedUserPostsAd/PromotedUserPost/index.m.less"),
 				G = s.n(q);
 			const Q = Object(C.a)(null);
-			var K = Object(I.b)(Q(e => {
+			var Z = Object(I.b)(Q(e => {
 					let {
 						post: t
 					} = e;
@@ -1433,13 +1433,13 @@
 						post: t
 					})))
 				})),
-				Z = s("./src/reddit/components/PromotedUserPostsAd/PromotedUserPosts/index.m.less"),
-				z = s.n(Z);
+				K = s("./src/reddit/components/PromotedUserPostsAd/PromotedUserPosts/index.m.less"),
+				z = s.n(K);
 			const Y = e => {
 				let {
 					postIds: t
 				} = e;
-				const s = t.map(e => o.a.createElement(K, {
+				const s = t.map(e => o.a.createElement(Z, {
 					postId: e,
 					key: e
 				}));
@@ -2195,13 +2195,13 @@
 				a = s("./src/reddit/models/Post/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const c = e => Object(r.c)(e, {
-					experimentName: o.cf,
+					experimentName: o.df,
 					experimentEligibilitySelector: r.a
 				}),
-				d = (e, t) => (t === o.kf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(a.B)(e),
+				d = (e, t) => (t === o.lf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(a.B)(e),
 				l = Object(n.a)(i.G, c, (e, t) => d(e, t));
 			Object(n.a)((e, t) => t, c, (e, t) => d(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a.28fd82b7eb1018dda1c5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a.0bae594b3d8b6e750cf2.js.map
