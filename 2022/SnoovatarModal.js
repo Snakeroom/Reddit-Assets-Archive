@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SnoovatarModal.e7c7105e2e21d61f1dd8.js
-// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SnoovatarModal.08f512fe8fa07ff4dd52.js
+// Retrieved at 12/1/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SnoovatarModal"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, r) {
@@ -52,8 +52,8 @@
 					j = Object(o.e)(e => e.user.session),
 					[_, f] = Object(a.useState)(!1),
 					E = Object(a.useContext)(d.a),
-					g = Object(o.d)(),
-					M = () => g(Object(i.openLoginModal)()),
+					M = Object(o.d)(),
+					g = () => M(Object(i.openLoginModal)()),
 					A = Object(v.a)();
 				Object(a.useEffect)(() => {
 					m(l.r)
@@ -77,7 +77,7 @@
 						[b.a.containerExp]: E
 					})
 				}, n.a.createElement(s.f, {
-					openLogin: M,
+					openLogin: g,
 					fancyBackground: !0
 				}));
 				const R = {
@@ -96,7 +96,8 @@
 						[b.a.containerExp]: E
 					})
 				}, n.a.createElement(s.a, x({}, R, {
-					navState: N
+					navState: N,
+					isModal: t
 				}), n.a.createElement(s.b, null)))
 			}
 		},
@@ -225,4 +226,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.e7c7105e2e21d61f1dd8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.08f512fe8fa07ff4dd52.js.map

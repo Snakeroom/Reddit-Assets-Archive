@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.ec3165fd3d572f3a3879.js
-// Retrieved at 11/30/2022, 4:30:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.7a3c715c059133896e71.js
+// Retrieved at 12/1/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1520,15 +1520,15 @@
 						"reddit-components-PostCreationForm-PredictionEditor-InactivityModal": "7c898c7d98c4b30720cd",
 						"reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal": "5416dc67e1ff136cabb0",
 						"translations/bn_BD-json": "a8f14368bde73d5078c0",
-						"translations/de_DE-json": "f861ac19f4cf8acf4ef9",
-						"translations/es_ES-json": "445352ba0a5022d282fa",
-						"translations/es_MX-json": "3fd7c37fb114a63336aa",
-						"translations/fr_FR-json": "f49974e330cd2a54fb14",
+						"translations/de_DE-json": "ebd7a509f2c8e683b5d4",
+						"translations/es_ES-json": "97c1205e8f6fd2df9184",
+						"translations/es_MX-json": "5e29ba83777eae06a19d",
+						"translations/fr_FR-json": "d5a602b0412efcd64f7c",
 						"translations/hi_IN-json": "8512e87237f868c5f0c9",
-						"translations/it_IT-json": "24d3c6682f74af6e3645",
+						"translations/it_IT-json": "ba25bb8a68ff394058a4",
 						"translations/pseudo-json": "124472961195a237ad4f",
-						"translations/pt_BR-json": "b8fb5ca9fc68272a0a2b",
-						"translations/pt_PT-json": "6dd60662c01fe9a58d12",
+						"translations/pt_BR-json": "5c65474fec7acdef79b3",
+						"translations/pt_PT-json": "74b6177d246412a02a46",
 						"vendors~AdminPanel": "eae9f345b12b82989d37",
 						AdminPanel: "fc8db7112c4d172b46c7",
 						"vendors~Avatar~ChatPost~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~RealtimeGQLSubscr~bfab320d": "a668d51b1ce27b994b5f",
@@ -1537,10 +1537,10 @@
 						GovernanceTransferPointsModal: "0fa46f324b07c1afaade",
 						"reddit-pages-meta-ArbitrumPointsMigrationPage": "e56040a0679735a9557f",
 						"reddit-pages-meta-MainnetPointsMigrationPage": "be89c64be01f281b3235",
-						"vendors~Avatar~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~SnoovatarModal": "7559dca1a0e8efe0637f",
-						Avatar: "068d356f6ca905c62288",
+						"vendors~Avatar~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~SnoovatarModal": "e89d2d123c91f5827d90",
+						Avatar: "bae35413d89ac2d93da9",
 						MarketplaceClaimModal: "f180738800a2aaf29b39",
-						SnoovatarModal: "e7c7105e2e21d61f1dd8",
+						SnoovatarModal: "08f512fe8fa07ff4dd52",
 						"vendors~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-~339111b0": "003c5a051b1aaec502e5",
 						"reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67": "42e91e6ee2443b6bb7b6",
 						"reddit-components-Governance-TransactionModals-BurnPointsModal": "55fc3dbb6d24121181dd",
@@ -1718,7 +1718,7 @@
 						UpdateCardModal: "9c596137414aa632943b",
 						"reddit-components-Settings-CreatePasswordSSOModal": "6b7203bcc8ded3b04cad",
 						"Download OBS Modal": "cabe92c1fd8cfddf7b9a",
-						NftProductDetailsModal: "20e12890a07b06f3693f",
+						NftProductDetailsModal: "535a3fc3191661c3c12f",
 						"vendors~chat-components-OverlayReport-FormBuilder~reddit-components-FormBuilder": "cca0b8e181c976b99176",
 						"reddit-components-FormBuilder": "f680c896b135bbd55540",
 						CrosspostsStat: "ffd361a28dd0908bbf77",
@@ -1804,4 +1804,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.ec3165fd3d572f3a3879.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.7a3c715c059133896e71.js.map
