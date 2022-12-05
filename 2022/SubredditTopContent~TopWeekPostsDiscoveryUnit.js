@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.01ac20e72fa562654b80.js
-// Retrieved at 11/30/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.b7db95ef44e18750e3fc.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent~TopWeekPostsDiscoveryUnit"], {
 		"./node_modules/react-motion/lib/Motion.js": function(e, t, s) {
@@ -2078,7 +2078,7 @@
 						})
 					},
 					isNsfwBlurSubreddit: H.e,
-					shouldOpenPostInNewTab: Q.kb
+					shouldOpenPostInNewTab: Q.lb
 				}),
 				te = e => {
 					const {
@@ -2643,9 +2643,9 @@
 					}
 					return !(e.created > Date.UTC(2019, 0))
 				}),
-				b = Object(r.a)(c.l, a.a, (e, t) => !!((null == e ? void 0 : e.id) && (null == t ? void 0 : t.authorId)) && e.id === t.authorId),
+				b = Object(r.a)(c.m, a.a, (e, t) => !!((null == e ? void 0 : e.id) && (null == t ? void 0 : t.authorId)) && e.id === t.authorId),
 				h = Object(r.a)(a.a, e => !(!e || !1 !== e.isRobotIndexable))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.01ac20e72fa562654b80.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.b7db95ef44e18750e3fc.js.map

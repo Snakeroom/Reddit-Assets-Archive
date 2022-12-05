@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationUnit.fca92cfe06e849aa5e7e.js
-// Retrieved at 12/1/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationUnit.f743fba580481433500a.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationUnit"], {
 		"./src/reddit/components/NotificationUnit/Avatar.tsx": function(e, t, i) {
@@ -444,7 +444,7 @@
 					var t, i, n, s, w, U, _, y, S, k, M, H;
 					const C = Object(f.a)(),
 						D = Object(g.d)(),
-						F = Object(g.e)(E.eb),
+						F = Object(g.e)(E.fb),
 						B = Object(g.e)(N.d),
 						[P, L] = Object(r.useState)(!1),
 						{
@@ -791,4 +791,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.fca92cfe06e849aa5e7e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.f743fba580481433500a.js.map

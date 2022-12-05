@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.6d728f87fe9c4052b67f.js
-// Retrieved at 11/17/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.b4f85613bd1a1c36b252.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~Governance~Reddit"], {
 		"./node_modules/@loadable/component/dist/loadable.esm.js": function(e, t, n) {
@@ -15065,6 +15065,12 @@
 			e.exports = Array.isArray || function(e) {
 				return "[object Array]" == n.call(e)
 			}
+		},
+		"./node_modules/isomorphic-ws/browser.js": function(e, t, n) {
+			(function(t) {
+				var n = null;
+				"undefined" != typeof WebSocket ? n = WebSocket : "undefined" != typeof MozWebSocket ? n = MozWebSocket : void 0 !== t ? n = t.WebSocket || t.MozWebSocket : "undefined" != typeof window ? n = window.WebSocket || window.MozWebSocket : "undefined" != typeof self && (n = self.WebSocket || self.MozWebSocket), e.exports = n
+			}).call(this, n("./node_modules/webpack/buildin/global.js"))
 		},
 		"./node_modules/js-cookie/dist/js.cookie.js": function(e, t, n) {
 			e.exports = function() {
@@ -33092,7 +33098,7 @@
 		"./node_modules/thrift/lib/nodejs/lib/thrift/ws_connection.js": function(e, t, n) {
 			(function(e) {
 				var r = n("./node_modules/util/util.js"),
-					o = n("./node_modules/thrift/node_modules/isomorphic-ws/browser.js"),
+					o = n("./node_modules/isomorphic-ws/browser.js"),
 					i = n("./node_modules/node-libs-browser/node_modules/events/events.js").EventEmitter,
 					s = n("./node_modules/thrift/lib/nodejs/lib/thrift/thrift.js"),
 					a = n("./node_modules/thrift/lib/nodejs/lib/thrift/buffered_transport.js"),
@@ -33292,12 +33298,6 @@
 					return new l(e, t, n)
 				}, t.createXHRClient = c
 			}).call(this, n("./node_modules/buffer/index.js").Buffer)
-		},
-		"./node_modules/thrift/node_modules/isomorphic-ws/browser.js": function(e, t, n) {
-			(function(t) {
-				var n = null;
-				"undefined" != typeof WebSocket ? n = WebSocket : "undefined" != typeof MozWebSocket ? n = MozWebSocket : void 0 !== t ? n = t.WebSocket || t.MozWebSocket : "undefined" != typeof window ? n = window.WebSocket || window.MozWebSocket : "undefined" != typeof self && (n = self.WebSocket || self.MozWebSocket), e.exports = n
-			}).call(this, n("./node_modules/webpack/buildin/global.js"))
 		},
 		"./node_modules/timers-browserify/main.js": function(e, t, n) {
 			(function(e) {
@@ -36039,4 +36039,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.6d728f87fe9c4052b67f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.b4f85613bd1a1c36b252.js.map

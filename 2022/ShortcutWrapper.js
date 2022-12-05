@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ShortcutWrapper.8312927348a60b67cd73.js
-// Retrieved at 10/31/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ShortcutWrapper.d5d6f4d8f0508df37ea9.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ShortcutWrapper"], {
 		"./node_modules/combokeys/Combokeys/index.js": function(e, t, o) {
@@ -1216,6 +1216,9 @@
 						[m.c.PrevPost]: "k",
 						[m.c.Expando]: "x",
 						[m.c.NewPost]: "c"
+					},
+					[m.d.CommunityChat]: {
+						...y
 					}
 				},
 				v = o("./node_modules/react-router-redux/es/index.js"),
@@ -1526,4 +1529,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ShortcutWrapper.8312927348a60b67cd73.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ShortcutWrapper.d5d6f4d8f0508df37ea9.js.map

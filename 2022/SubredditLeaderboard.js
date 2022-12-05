@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.dc5207d2bf5a4267bc9a.js
-// Retrieved at 12/5/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.b6e5e8d0d2a0cb59f617.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, r) {
@@ -133,7 +133,7 @@
 				}, f = e => async (t, r) => {
 					await t(Object(s.a)());
 					const n = r(),
-						a = Object(g.S)(n);
+						a = Object(g.T)(n);
 					if (Object(b.a)(n, e)) return;
 					const i = e && Object(p.e)(n, {
 							categoryName: e
@@ -250,7 +250,7 @@
 								d(t + 32)
 							}
 						}, []),
-						u = Object(a.e)(h.R),
+						u = Object(a.e)(h.S),
 						m = encodeURIComponent(b.a.redditUrl + "/r/recap"),
 						y = b.a.accountManagerOrigin,
 						k = u ? "/r/recap" : `${y}/login/?dest=${m}`;
@@ -324,7 +324,7 @@
 					[f, x] = Object(n.useState)(),
 					[E, v] = Object(n.useState)(),
 					[w, P] = Object(n.useState)(0),
-					L = Object(a.e)(h.l),
+					L = Object(a.e)(h.m),
 					I = Object(a.e)(C),
 					B = Object(a.e)(S.a),
 					D = Object(a.e)(_.a),
@@ -1186,10 +1186,10 @@
 						n = t.redditStyle || Object(h.l)(e, {
 							subredditId: r
 						}),
-						s = Object(y.eb)(e);
+						s = Object(y.fb)(e);
 					return n || s
 				},
-				nigtmode: y.eb,
+				nigtmode: y.fb,
 				subredditId: u.o,
 				topPostVariant: g.d
 			}));
@@ -2078,7 +2078,7 @@
 						} = t;
 						return Object(re.b)(e, r)
 					},
-					isMod: ne.S,
+					isMod: ne.T,
 					rankings: (e, t) => {
 						let {
 							categoryId: r
@@ -2796,4 +2796,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.dc5207d2bf5a4267bc9a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.b6e5e8d0d2a0cb59f617.js.map

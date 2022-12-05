@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HappeningNow.54819b0c1977b495c783.js
-// Retrieved at 12/5/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HappeningNow.3c47abbb2979a0c52e63.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HappeningNow"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -651,7 +651,7 @@
 				h = n.n(p);
 			const b = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				f = Object(o.b)(() => Object(a.c)({
-					isNightmodeOn: m.eb
+					isNightmodeOn: m.fb
 				}));
 			t.a = f(e => {
 				const t = {
@@ -798,7 +798,7 @@
 						style: t
 					}, e.children)
 				},
-				L = Object(a.b)(() => Object(c.a)(w.F, k.kb, (e, t) => {
+				L = Object(a.b)(() => Object(c.a)(w.F, k.lb, (e, t) => {
 					let {
 						isSponsored: n,
 						postId: r
@@ -1055,7 +1055,7 @@
 			var w = n("./src/reddit/components/Media/VideoBox/index.m.less"),
 				_ = n.n(w);
 			const k = Object(c.c)({
-				autoplayPref: h.c,
+				autoplayPref: h.d,
 				consumed: b.a,
 				loadTimes: b.f,
 				metadata: b.h,
@@ -3236,7 +3236,7 @@
 						c = Object(a.e)(e => Object(Q.V)(e, {
 							postId: t.postId
 						})),
-						l = Object(a.e)($.eb),
+						l = Object(a.e)($.fb),
 						d = Object(s.useMemo)(() => {
 							var e, t, r;
 							return (null === (e = null == c ? void 0 : c.icon) || void 0 === e ? void 0 : e.url) || (null === (r = null === (t = n.profile) || void 0 === t ? void 0 : t.icon) || void 0 === r ? void 0 : r.url) || ""
@@ -3300,7 +3300,7 @@
 							var n, r;
 							return (null === (r = null === (n = e.features) || void 0 === n ? void 0 : n.reportFlow) || void 0 === r ? void 0 : r.postOrCommentId) === t.id
 						}),
-						c = Object(a.e)($.j) === t.authorId,
+						c = Object(a.e)($.k) === t.authorId,
 						l = Object(s.useMemo)(() => (e => `HappeningNowPost--menu--${e}`)(t.id), [t.id]),
 						d = Object(a.e)(e => Object(pe.b)(l)(e)),
 						u = o.a.useCallback(() => {
@@ -3351,7 +3351,7 @@
 						participantAvatars: n = [],
 						userCount: c,
 						postId: l
-					} = t, d = Object(s.useMemo)(() => c <= 0 ? 0 : c <= 1 ? 1 : c <= 2 ? 2 : c < 100 ? 3 : c < 500 ? 4 : 5, [c]), u = Object(a.e)($.eb), m = Object(s.useMemo)(() => {
+					} = t, d = Object(s.useMemo)(() => c <= 0 ? 0 : c <= 1 ? 1 : c <= 2 ? 2 : c < 100 ? 3 : c < 500 ? 4 : 5, [c]), u = Object(a.e)($.fb), m = Object(s.useMemo)(() => {
 						const e = n.slice(0, d);
 						if (e.length >= d) return e;
 						const t = d - e.length;
@@ -3919,4 +3919,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.54819b0c1977b495c783.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.3c47abbb2979a0c52e63.js.map

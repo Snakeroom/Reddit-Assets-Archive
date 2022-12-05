@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.6fdebe7ed768ce47af2e.js
-// Retrieved at 12/5/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.3eef1d2e5bac51f212c7.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -1215,7 +1215,7 @@
 					if (!R && !f) return;
 					const O = f ? p.features.comments.models[e] : p.posts.models[e];
 					if (!O) return;
-					if (!Object(g.R)(r())) return o(Object(s.openRegisterModal)()), void o(Object(a.k)({
+					if (!Object(g.S)(r())) return o(Object(s.openRegisterModal)()), void o(Object(a.k)({
 						actionSource: a.a.Report,
 						redirectUrl: O.permalink,
 						thingId: e
@@ -1384,7 +1384,7 @@
 						apiContext: c
 					} = r;
 					const u = n(),
-						p = Object(d.l)(u),
+						p = Object(d.m)(u),
 						m = p ? p.id : void 0,
 						h = u.user.blocked.data.filter(t => t.name === e)[0];
 					m && (t(O({
@@ -2489,7 +2489,7 @@
 						(s ? s.author : a ? a.author : null) || t.author;
 						n.name
 					}),
-					isNightmodeOn: M.eb,
+					isNightmodeOn: M.fb,
 					locale: P.j,
 					isReportAnAdEnabled: F.a
 				}),
@@ -4266,11 +4266,11 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				s = n("./src/reddit/selectors/user.ts");
 			const a = e => o.a.Enabled === Object(r.c)(e, {
-					experimentEligibilitySelector: s.R,
+					experimentEligibilitySelector: s.S,
 					experimentName: o.d
 				}),
 				i = e => o.b.Enabled === Object(r.c)(e, {
-					experimentEligibilitySelector: s.R,
+					experimentEligibilitySelector: s.S,
 					experimentName: o.f
 				})
 		},
@@ -4332,4 +4332,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.6fdebe7ed768ce47af2e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.3eef1d2e5bac51f212c7.js.map

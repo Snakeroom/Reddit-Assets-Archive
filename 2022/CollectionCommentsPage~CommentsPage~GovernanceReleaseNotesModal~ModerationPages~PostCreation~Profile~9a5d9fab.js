@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.d930889f947274782fb0.js
-// Retrieved at 12/1/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.cdbcab359e54c0de5c6d.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -314,7 +314,7 @@
 						forwardedRef: t
 					}))),
 					N = Object(o.c)({
-						redditUserId: b.j,
+						redditUserId: b.k,
 						isMuxEnabled: p
 					});
 				return Object(r.b)(N, null, null, {
@@ -941,7 +941,7 @@
 			const {
 				fbt: g
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), x = Object(o.b)(() => Object(h.c)({
-				autoplayPref: p.c
+				autoplayPref: p.d
 			}), (e, t) => {
 				let {
 					postId: s
@@ -1417,8 +1417,8 @@
 					},
 					isBlockingInterstitialEnabled: ne.b,
 					isBlockingInterstitialV2Enabled: ne.c,
-					currentUserId: pe.Db,
-					nightmode: pe.eb,
+					currentUserId: pe.Eb,
+					nightmode: pe.fb,
 					shouldUseShredditPlayer: (e, t) => {
 						let {
 							pageLayer: s,
@@ -2459,4 +2459,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.d930889f947274782fb0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.cdbcab359e54c0de5c6d.js.map

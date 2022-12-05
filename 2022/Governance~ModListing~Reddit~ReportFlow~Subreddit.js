@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.284b30143fe2f8168203.js
-// Retrieved at 12/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.2657a3d0c26910bf0279.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(t, e, i) {
@@ -930,7 +930,7 @@
 				}, z = Object(d.a)(A.d), H = t => async (e, i, n) => {
 					const r = i(),
 						o = r.structuredStyles.models[t] || {},
-						l = Object(C.eb)(r);
+						l = Object(C.fb)(r);
 					e(z({
 						isNightmodeOn: l,
 						styles: o,
@@ -1035,7 +1035,7 @@
 					Object(B.a)(u)
 				}, tt = Object(d.a)(A.e), et = () => async (t, e, i) => {
 					const n = e(),
-						r = Object(C.fb)(n),
+						r = Object(C.gb)(n),
 						o = !!Object(L.a)(n);
 					if (t(tt({
 							nightmodeTempUpdated: r
@@ -1052,7 +1052,7 @@
 					}) ? e(Object(f.i)(O.a.BLADE_UNSAVED_CHANGES)) : e(rt()))
 				}, lt = t => async (e, i) => {
 					const n = i();
-					Object(U.i)(n) || e(Object(C.eb)(n) ? Object(f.i)(O.a.BLADE_NIGHTMODE) : H(t))
+					Object(U.i)(n) || e(Object(C.fb)(n) ? Object(f.i)(O.a.BLADE_NIGHTMODE) : H(t))
 				}, st = Object(d.a)(A.i), ct = Object(d.a)(A.h), at = Object(d.a)(A.g), dt = (t, e) => async (i, n, r) => {
 					let {
 						gqlContext: o,
@@ -1623,7 +1623,7 @@
 					return l
 				})),
 				function(t) {
-					t.CommentPage = "CommentPage", t.Global = "Global", t.Lightbox = "Lightbox", t.Listing = "Listing", t.Modqueue = "Modqueue"
+					t.CommentPage = "CommentPage", t.Global = "Global", t.Lightbox = "Lightbox", t.Listing = "Listing", t.Modqueue = "Modqueue", t.CommunityChat = "CommunityChat"
 				}(n || (n = {})),
 				function(t) {
 					t.Close = "CLOSE", t.CollapseOrLoad = "COLLAPSE_OR_LOAD", t.Downvote = "DOWNVOTE", t.Expando = "EXPANDO", t.Hide = "HIDE", t.Konami = "KONAMI", t.NewPost = "NEW_POST", t.NextComment = "NEXT_COMMENT", t.NextPost = "NEXT_POST", t.OpenIndex = "OPEN_INDEX", t.OpenLightbox = "OPEN_LIGHTBOX", t.OpenLink = "OPEN_LINK", t.PrevComment = "PREV_COMMENT", t.PrevPost = "PREV_POST", t.Reply = "REPLY", t.Save = "SAVE", t.Upvote = "UPVOTE"
@@ -2557,7 +2557,7 @@
 					const {
 						draftId: i,
 						destSubreddit: n
-					} = e, r = Object(_.l)(t), o = Object(a.d)(t, {
+					} = e, r = Object(_.m)(t), o = Object(a.d)(t, {
 						draftId: i
 					}), l = {
 						authorId: r ? r.id : void 0,
@@ -2590,7 +2590,7 @@
 					}
 				},
 				G = (t, e) => {
-					const i = Object(_.l)(t),
+					const i = Object(_.m)(t),
 						n = {
 							authorId: i ? i.id : void 0,
 							createdTimestamp: e.created,
@@ -3041,7 +3041,7 @@
 				o = i("./src/reddit/contexts/PageLayer/index.tsx"),
 				l = i("./src/reddit/helpers/chooseVariant/index.ts"),
 				s = i("./src/reddit/selectors/user.ts");
-			const c = Object(n.a)(s.R, (t, e) => {
+			const c = Object(n.a)(s.S, (t, e) => {
 					let {
 						pageLayer: i
 					} = e;
@@ -3084,4 +3084,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.284b30143fe2f8168203.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.2657a3d0c26910bf0279.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Settings-CreatePasswordSSOModal.6b7203bcc8ded3b04cad.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Settings-CreatePasswordSSOModal.f702755c2a2bb4ab36a7.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Settings-CreatePasswordSSOModal"], {
 		"./src/reddit/components/EmailCollection/Envelope/index.m.less": function(e, s, t) {
@@ -268,9 +268,9 @@
 					resetPasswordForDeactivateAccountModalOpen: Object(N.b)(A.l),
 					resetPasswordForGoogleLinkModalOpen: Object(N.b)(A.n),
 					resetPasswordForGoogleUnlinkModalOpen: Object(N.b)(A.o),
-					userEmail: S.o,
+					userEmail: S.p,
 					username: e => {
-						const s = Object(S.l)(e);
+						const s = Object(S.m)(e);
 						return s && Object(F.e)(s) || ""
 					}
 				}),
@@ -383,4 +383,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Settings-CreatePasswordSSOModal.6b7203bcc8ded3b04cad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Settings-CreatePasswordSSOModal.f702755c2a2bb4ab36a7.js.map

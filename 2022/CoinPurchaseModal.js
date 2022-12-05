@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.21593ff54ca7f34af116.js
-// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.8d4b94386c611aefc6c9.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal", "gildActions"], {
 		"./src/reddit/actions/economics/powerups/helpers.ts": function(e, t, a) {
@@ -267,7 +267,7 @@
 						postId: a
 					}) : Object(k.c)(e, {
 						commentId: a
-					}), s = Object(N.l)(e), n = e.gild, {
+					}), s = Object(N.m)(e), n = e.gild, {
 						isAnonymous: c
 					} = n, o = !c && s && (s.username || s.displayText) ? s.username || s.displayText : void 0, d = r ? r.author : void 0, i = Object(M.O)(e, {
 						thingId: a
@@ -286,7 +286,7 @@
 						} = e,
 						g = Object(v.a)(s, m),
 						h = e.awardKarmaReceived,
-						j = Object(N.l)(s),
+						j = Object(N.m)(s),
 						k = Object(x.b)(s) || Object(q.d)(q.a.GildingFlow, !1);
 					if (Object(x.g)(s)) {
 						const e = "success.gild",
@@ -1587,13 +1587,13 @@
 						const t = Object(E.a)(e);
 						return null === t ? void 0 : t
 					},
-					coinBalance: I.f,
+					coinBalance: I.g,
 					coinPackages: v.d,
 					correlationId: e => Object(x.s)(e) || Object(f.d)(f.a.GoldPayment, !1),
 					dealCoinPackages: v.f,
 					gildThingId: x.t,
 					isIframed: C.g,
-					nightmode: I.eb,
+					nightmode: I.fb,
 					savedCardsPending: x.x,
 					selectedAward: k.b,
 					selectedPayment: x.c,
@@ -1606,7 +1606,7 @@
 					purchasePackageId: x.u,
 					recommendedPackages: v.r,
 					userName: e => {
-						const t = Object(I.l)(e);
+						const t = Object(I.m)(e);
 						return `u/${Object(y.e)(t)}`
 					}
 				}),
@@ -1949,4 +1949,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.21593ff54ca7f34af116.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.8d4b94386c611aefc6c9.js.map

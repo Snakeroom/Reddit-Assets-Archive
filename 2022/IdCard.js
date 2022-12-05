@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.5c4d99032a6b1f587ac0.js
-// Retrieved at 12/5/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.d3f42a26095daf63958a.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -603,7 +603,7 @@
 				}, T = (e, t) => async (n, r) => {
 					if (!e) return;
 					const s = r(),
-						i = Object(g.l)(s);
+						i = Object(g.m)(s);
 					if (!i || !Object(h.f)(s, {
 							subredditId: e
 						})) return;
@@ -644,7 +644,7 @@
 					}), await n(j(e, Array.from(s)))
 				}, N = (e, t) => async (n, r) => {
 					const s = r(),
-						i = Object(g.l)(s);
+						i = Object(g.m)(s);
 					if (!i) return;
 					const o = i.id;
 					n(P({
@@ -657,7 +657,7 @@
 						gqlContext: a
 					} = i;
 					const d = n(),
-						c = Object(g.l)(d);
+						c = Object(g.m)(d);
 					if (!c) return;
 					const u = c.id;
 					t(_(e));
@@ -684,7 +684,7 @@
 						gqlContext: d
 					} = a;
 					const c = i(),
-						u = Object(g.l)(c);
+						u = Object(g.m)(c);
 					if (!u) return;
 					const b = u.id,
 						h = {
@@ -1370,10 +1370,10 @@
 						name: `${s.qc}${e.name}`,
 						type: e.type
 					});
-					if (!Object(k.R)(c())) return o(Object(d.k)({
+					if (!Object(k.S)(c())) return o(Object(d.k)({
 						actionSource: d.a.Subscribe
 					})), void o(Object(a.openRegisterModal)());
-					const f = Object(k.l)(c());
+					const f = Object(k.m)(c());
 					if (f) {
 						const t = b.length,
 							n = e.length;
@@ -1516,7 +1516,7 @@
 					} = i;
 					const a = n(),
 						d = a.multireddits.models;
-					if (!Object(k.R)(a)) return;
+					if (!Object(k.S)(a)) return;
 					const c = function() {
 							let e = !(arguments.length > 0 && void 0 !== arguments[0]) || arguments[0];
 							t(Object(l.f)({
@@ -2145,8 +2145,8 @@
 			const C = "create-community-button",
 				v = x.a.wrapped(l.c, "StyledTooltip", g.a),
 				y = Object(a.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(h.qb)(e),
-					userIsSuspended: h.Y
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(h.rb)(e),
+					userIsSuspended: h.Z
 				});
 			t.a = Object(o.b)(y, (e, t) => {
 				let {
@@ -2266,7 +2266,7 @@
 					userHasBadge: f,
 					usernameClassName: g
 				} = e;
-				const x = Object(o.e)(e => Object(m.l)(e));
+				const x = Object(o.e)(e => Object(m.m)(e));
 				return x ? i.a.createElement("div", {
 					className: Object(r.a)(b.a.flairPreview, t),
 					"data-testid": "user-flair-preview"
@@ -3073,7 +3073,7 @@
 				}).apply(this, arguments)
 			}
 			const M = Object(m.c)({
-				isLoggedIn: N.R
+				isLoggedIn: N.S
 			});
 			var D = Object(o.b)(M, e => ({
 				openLoginModal: () => {
@@ -3346,7 +3346,7 @@
 			const {
 				fbt: Oe
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), ke = z.a.div("FlairSettingsContainer", Ee.a), je = z.a.div("FlairPreviewWrapper", Ee.a), Te = z.a.div("PreviewTitle", Ee.a), Se = z.a.wrapped(S.r, "TertiaryButton", Ee.a), Ie = z.a.wrapped(Se, "IconButton", Ee.a), we = Object(m.c)({
-				currentUser: N.l,
+				currentUser: N.m,
 				isAchievementFlairModalEnabled: (e, t) => Object(Ce.f)(e, {
 					subredditId: t.subredditId
 				}),
@@ -3465,8 +3465,8 @@
 				vt = n.n(Ct);
 			const yt = z.a.wrapped(S.t, "TertiaryButton", vt.a),
 				_t = Object(m.c)({
-					stylesDisabledForSubreddit: N.rb,
-					stylesDisabledGlobally: N.sb
+					stylesDisabledForSubreddit: N.sb,
+					stylesDisabledGlobally: N.tb
 				});
 			class Et extends i.a.Component {
 				constructor(e) {
@@ -3906,8 +3906,8 @@
 						subredditName: t.listingName
 					}),
 					isContributorRequestPending: e => Object(te.e)(e, et.e.Post),
-					isGQLLoggedIn: N.Q,
-					isLoggedIn: N.R,
+					isGQLLoggedIn: N.R,
+					isLoggedIn: N.S,
 					isNsfwBlurSubreddit: at.e,
 					isMuted: (e, t) => Object(te.K)(e, {
 						subredditName: t.listingName
@@ -6039,4 +6039,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.5c4d99032a6b1f587ac0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.d3f42a26095daf63958a.js.map

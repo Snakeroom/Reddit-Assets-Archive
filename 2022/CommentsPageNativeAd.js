@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.93b8a075342f66cfa040.js
-// Retrieved at 11/29/2022, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.5800c7cd61133d96c90a.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/CommentsPageNativeAd/index.m.less": function(e, t, s) {
@@ -53,11 +53,11 @@
 				C = s("./src/reddit/components/CallToActionButton/index.tsx"),
 				O = s("./src/reddit/components/JSAPIContainers/index.tsx"),
 				f = s("./src/reddit/components/PostContainer/index.tsx"),
-				_ = s("./src/reddit/components/PostTitle/index.tsx"),
-				y = s("./src/reddit/constants/componentTestIds.ts"),
-				N = s("./src/reddit/controls/OutboundLink/index.tsx"),
-				P = s("./src/reddit/helpers/search/renderMedia.tsx"),
-				S = s("./src/reddit/components/PostTopMeta/index.tsx"),
+				S = s("./src/reddit/components/PostTitle/index.tsx"),
+				_ = s("./src/reddit/constants/componentTestIds.ts"),
+				y = s("./src/reddit/controls/OutboundLink/index.tsx"),
+				N = s("./src/reddit/helpers/search/renderMedia.tsx"),
+				P = s("./src/reddit/components/PostTopMeta/index.tsx"),
 				j = s("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
 				k = s("./src/reddit/components/AuthorLink/index.tsx"),
 				w = s("./src/reddit/components/SponsoredLabel/index.tsx"),
@@ -217,7 +217,7 @@
 					const i = Object(l.a)(T.a.styledOutboundLink, {
 						[T.a.ctaExperiment]: o
 					});
-					return r.a.createElement(N.b, {
+					return r.a.createElement(y.b, {
 						className: i,
 						href: a.source.url,
 						postId: a.id,
@@ -243,7 +243,7 @@
 						post: p,
 						redditStyle: h,
 						scrollerItemRef: b,
-						showMedia: N,
+						showMedia: y,
 						showCTAExperiment: j
 					} = this.props;
 					if (p.isBlank) return r.a.createElement(v.default, {
@@ -266,12 +266,12 @@
 					}, r.a.createElement(I, {
 						author: p.author,
 						iconUrl: o,
-						greyTextColor: Object(S.h)(this.props)
+						greyTextColor: Object(P.h)(this.props)
 					}), r.a.createElement("div", {
 						className: Object(l.a)(T.a.contentRow, {
 							[T.a.contentRowExpanded]: this.state.mediaExpanded
 						})
-					}, !(n && !N) && r.a.createElement(V, {
+					}, !(n && !y) && r.a.createElement(V, {
 						isMeta: p.isMeta,
 						post: p,
 						redditStyle: h,
@@ -283,7 +283,7 @@
 						})
 					}), r.a.createElement("div", {
 						className: T.a.contentColumn
-					}, r.a.createElement(_.c, {
+					}, r.a.createElement(S.c, {
 						format: s,
 						outboundLinkClassName: T.a.outboundLink,
 						className: T.a.postTitle,
@@ -298,7 +298,7 @@
 						className: k,
 						rel: "nofollow",
 						"data-click-id": "comments",
-						"data-test-id": y.a,
+						"data-test-id": _.a,
 						to: this.props.isOverlay ? Object(u.a)(p.permalink, !0) : Object(B.b)(p.permalink),
 						onClick: this.props.onClick
 					}, a.fbt._("Join the conversation", null, {
@@ -314,7 +314,7 @@
 						showCTAExperiment: j
 					}, p.callToAction)))), r.a.createElement("div", {
 						className: T.a.spacer
-					}), r.a.createElement(O.d, null))), Object(P.a)(p, T.a, b, t, !1, !1)), r.a.createElement("div", {
+					}), r.a.createElement(O.d, null))), Object(N.a)(p, T.a, b, t, !1, !1)), r.a.createElement("div", {
 						className: T.a.commentsSpacer
 					}))
 				}
@@ -341,14 +341,14 @@
 				E = s("./src/reddit/selectors/showPromotedCTA.ts"),
 				v = s("./src/reddit/selectors/user.ts");
 			const C = {
-					autoplayPref: v.c,
+					autoplayPref: v.d,
 					activeModalId: m.a,
 					crosspost: b.d,
 					isActive: b.j,
 					isChatPost: p.d,
 					isCurrentUserProfilePost: b.l,
 					isExpanded: b.m,
-					isLoggedIn: v.R,
+					isLoggedIn: v.S,
 					showPromotedCTA: E.a,
 					moderatorPermissions: x.m,
 					modModeEnabled: c.W,
@@ -410,4 +410,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.93b8a075342f66cfa040.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.5800c7cd61133d96c90a.js.map

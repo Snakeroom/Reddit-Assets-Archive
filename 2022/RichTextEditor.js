@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.0608487d66929446225e.js
-// Retrieved at 12/1/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.2d5d4027c7973ff89c53.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -1768,8 +1768,8 @@
 				q = o("./src/reddit/constants/keycodes.ts"),
 				K = o("./src/reddit/components/CommentCreation/getCancelModalId.ts"),
 				V = o("./src/realtime/GQLSubscription/async.tsx"),
-				G = o("./src/reddit/components/UsersCountIndicator/constants.ts"),
-				X = o("./src/reddit/constants/componentSizes.ts"),
+				X = o("./src/reddit/components/UsersCountIndicator/constants.ts"),
+				G = o("./src/reddit/constants/componentSizes.ts"),
 				Z = o("./src/reddit/constants/componentTestIds.ts"),
 				Q = o("./src/reddit/selectors/activeModalId.ts"),
 				J = o("./src/reddit/selectors/comments.ts"),
@@ -1813,9 +1813,9 @@
 						this.props.onCancel(), this.onBlur()
 					}, this.setUserStoppedTyping = r()(() => this.setState({
 						isUserTyping: !1
-					}), G.c), this.detectBreakout = () => {
+					}), X.c), this.detectBreakout = () => {
 						if (!this.wrapperEl || !this.wrapperEl.parentElement || this.props.isTopLevelComment) return;
-						const e = this.wrapperEl.parentElement.getBoundingClientRect().width < X.c,
+						const e = this.wrapperEl.parentElement.getBoundingClientRect().width < G.c,
 							t = this.getWrapperHeight();
 						e === this.state.breakOut && t === this.state.wrapperHeight || w.a.write(() => {
 							this.setState({
@@ -1936,7 +1936,7 @@
 				getWrapperHeight() {
 					if (!this.textAreaRef) return;
 					const e = Object(l.findDOMNode)(this.textAreaRef);
-					return e instanceof Element ? e.getBoundingClientRect().height + fe + _e + X.n : void 0
+					return e instanceof Element ? e.getBoundingClientRect().height + fe + _e + G.n : void 0
 				}
 				render() {
 					const {
@@ -2358,15 +2358,15 @@
 				})
 			}
 			var V = o("./src/reddit/selectors/comments.ts"),
-				G = o("./src/reddit/selectors/experiments/mediaInComments.ts"),
-				X = o("./src/lib/constants/index.ts");
+				X = o("./src/reddit/selectors/experiments/mediaInComments.ts"),
+				G = o("./src/lib/constants/index.ts");
 
 			function Z(e) {
 				let {
 					isImageUploadEnabled: t,
 					isGifUploadEnabled: o
 				} = e, n = [];
-				return t && (n = Array.from(X.c)), o && (n = [...n, ...Array.from(X.a)]), n
+				return t && (n = Array.from(G.c)), o && (n = [...n, ...Array.from(G.a)]), n
 			}
 			var Q = o("./src/reddit/hooks/useTracking.ts"),
 				J = o("./src/reddit/selectors/experiments/imageComment.ts"),
@@ -2374,7 +2374,7 @@
 				$ = o.n(Y),
 				ee = o("./src/reddit/components/RichTextEditor/Toolbar/MediaInputButton/index.tsx");
 			const te = p.a.div("SectionSpacer", $.a),
-				oe = Object(d.a)(G.a, V.C, B.c, S.d.spGiphy, (e, t, o, n) => e ? !!t || !!n : o);
+				oe = Object(d.a)(X.a, V.C, B.c, S.d.spGiphy, (e, t, o, n) => e ? !!t || !!n : o);
 
 			function ne(e) {
 				const {
@@ -2533,7 +2533,7 @@
 					},
 					draft: V.i,
 					isCommentBeforeSignUpEnabled: we.a,
-					isLoggedIn: je.R,
+					isLoggedIn: je.S,
 					isLoginModalOpened: Object(Ce.c)(ae.a.LOGIN_MODAL_ID),
 					isRegisterModalOpened: Object(Ce.c)(ae.a.REGISTER_MODAL_ID),
 					userCanUseEmojis: (e, t) => {
@@ -2812,8 +2812,8 @@
 				qe = o("./src/reddit/models/User/index.ts"),
 				Ke = o("./src/reddit/selectors/experiments/commentBox.ts"),
 				Ve = o("./src/reddit/selectors/posts.ts");
-			const Ge = Object(xe.v)(),
-				Xe = Object(d.c)({
+			const Xe = Object(xe.v)(),
+				Ge = Object(d.c)({
 					activeModalId: ve.a,
 					contributorRequestPending: (e, t) => {
 						let {
@@ -2836,7 +2836,7 @@
 					},
 					postAuthorIsBlocked: Ve.w
 				}),
-				Ze = Object(a.b)(Xe, (e, t) => ({
+				Ze = Object(a.b)(Ge, (e, t) => ({
 					onMount: () => e(c.a(t.draftKey)),
 					onCancel: () => {
 						t.draftType === he.c.edit ? e(l.d({
@@ -2947,7 +2947,7 @@
 					return e.contributorRequestPending ? i.a.createElement(He.a, null) : e.showContributorRequestFlow ? i.a.createElement(y, null) : e.draft.commentMode === pe.i.RICH_TEXT ? i.a.createElement(Ne, o) : i.a.createElement(m.b, o)
 				}
 			}
-			t.default = Ge(Ze(Qe))
+			t.default = Xe(Ze(Qe))
 		},
 		"./src/reddit/components/ContributorRequestFlow/ContributorRequestButton/index.m.less": function(e, t, o) {
 			e.exports = {
@@ -3586,7 +3586,7 @@
 					rteDraft: _.m,
 					subreddit: T.s,
 					uploads: e => e.uploads,
-					user: S.l,
+					user: S.m,
 					isCommentsPage: f.f
 				}),
 				H = Object(d.b)(N, (e, t) => ({
@@ -3959,10 +3959,10 @@
 				}).apply(this, arguments)
 			}
 			const f = Object(a.c)({
-					currentUser: c.l,
-					isNightMode: c.eb,
-					isPresenceUserPrefEnabled: c.W,
-					shouldHideNSFW: c.G
+					currentUser: c.m,
+					isNightMode: c.fb,
+					isPresenceUserPrefEnabled: c.X,
+					shouldHideNSFW: c.H
 				}),
 				_ = Object(i.b)(f);
 			t.a = _(e => {
@@ -4255,7 +4255,7 @@
 				s = o("./src/reddit/constants/experiments.ts"),
 				r = o("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = o("./src/reddit/selectors/user.ts");
-			const a = Object(n.a)(i.R, i.Q, (e, t) => e || t),
+			const a = Object(n.a)(i.S, i.R, (e, t) => e || t),
 				d = Object(n.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: a,
 					experimentName: s.B
@@ -4356,4 +4356,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.0608487d66929446225e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.2d5d4027c7973ff89c53.js.map

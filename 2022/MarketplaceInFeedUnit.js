@@ -1,11 +1,11 @@
-// https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.8e99281031b684f6a76d.js
-// Retrieved at 12/1/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.3ce9e79d4f72243a7e50.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MarketplaceInFeedUnit"], {
 		"./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return O
+				return _
 			}));
 			var r = n("./src/config.ts"),
 				s = n("./src/lib/env/index.ts"),
@@ -25,15 +25,15 @@
 					SNOOVATAR_BASE_URL: r.a.snoovatarUrl,
 					SNOOVATAR_API_URL: `${r.a.snoovatarUrl}/api`
 				},
-				O = () => {
+				_ = () => {
 					const e = Object(a.e)(d.a),
 						t = Object(a.e)(e => e.user.session),
 						n = t ? t.accessToken : "",
 						s = t ? new Date(t.expires).getTime() : 1,
-						O = Object(a.e)(u.eb),
-						_ = Object(i.a)(),
-						b = m ? o.a.Rinkeby : o.a.Ethereum,
-						f = Object(c.useMemo)(() => ({
+						_ = Object(a.e)(u.fb),
+						f = Object(i.a)(),
+						O = m ? o.a.Rinkeby : o.a.Ethereum,
+						b = Object(c.useMemo)(() => ({
 							headers: {
 								Authorization: `Bearer ${n}`
 							},
@@ -43,10 +43,10 @@
 							...p,
 							STRIPE_API_KEY: r.a.stripe.apiKey(e),
 							ACCESS_TOKEN: n,
-							BLOCKCHAIN_PROVIDER: b
+							BLOCKCHAIN_PROVIDER: O
 						},
 						j = Object(c.useCallback)(e => {
-							_(t => {
+							f(t => {
 								const n = l.o(t);
 								return {
 									...n,
@@ -59,13 +59,13 @@
 									}
 								}
 							})
-						}, [_]);
+						}, [f]);
 					return Object(c.useMemo)(() => ({
-						authHeaders: f,
+						authHeaders: b,
 						config: k,
-						isNightMode: O,
+						isNightMode: _,
 						sendEvent: j
-					}), [f, k, O, j])
+					}), [b, k, _, j])
 				}
 		},
 		"./src/reddit/components/Econ/Marketplace/InFeedUnit/confirmDismissModalStyles.m.less": function(e, t, n) {
@@ -96,10 +96,10 @@
 				u = n("./src/reddit/components/Marketplace/MarketplaceConfigProvider.tsx"),
 				m = n("./src/reddit/constants/modals.ts"),
 				p = n("./src/reddit/constants/postLayout.ts"),
-				O = n("./src/reddit/helpers/trackers/marketplace/claims.ts"),
-				_ = n("./src/reddit/hooks/useLocalStorage.ts"),
-				b = n("./src/reddit/hooks/usePreloadModal.ts"),
-				f = n("./src/reddit/hooks/useTracking.ts"),
+				_ = n("./src/reddit/helpers/trackers/marketplace/claims.ts"),
+				f = n("./src/reddit/hooks/useLocalStorage.ts"),
+				O = n("./src/reddit/hooks/usePreloadModal.ts"),
+				b = n("./src/reddit/hooks/useTracking.ts"),
 				k = n("./src/reddit/selectors/gold/marketplace/claimFlow.ts"),
 				j = n("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
 				x = n("./src/reddit/components/Econ/Marketplace/InFeedUnit/confirmDismissModalStyles.m.less"),
@@ -141,19 +141,19 @@
 					layout: t
 				} = e;
 				const n = Object(i.d)(),
-					j = Object(f.a)(),
+					j = Object(b.a)(),
 					x = Object(i.e)(k.a),
 					[E, h] = Object(a.useState)(!1),
 					[v, A] = Object(a.useState)(!1);
-				Object(b.a)(l.a);
-				const [g, M] = Object(_.a)("marketplaceClaimInFeedUnitDismissed", !1), [N, y] = Object(_.a)("marketplaceClaimInFeedUnitLoadCount", 0), L = Object(a.useRef)(N), U = L.current % 2 == 0;
+				Object(O.a)(l.a);
+				const [g, M] = Object(f.a)("marketplaceClaimInFeedUnitDismissed", !1), [N, y] = Object(f.a)("marketplaceClaimInFeedUnitLoadCount", 0), L = Object(a.useRef)(N), U = L.current % 2 == 0;
 				if (Object(a.useEffect)(() => {
 						g || y(L.current + 1)
 					}, [y, L, j, U, g]), !(null == x ? void 0 : x.id) || g || !U) return null;
 				const T = t !== p.g.Large;
 				return o.a.createElement(o.a.Fragment, null, o.a.createElement(s.a, {
 					onChange: e => {
-						v || e.intersectionRatio < .75 || (j(Object(O.d)()), A(!0))
+						v || e.intersectionRatio < .75 || (j(Object(_.d)()), A(!0))
 					},
 					threshold: .75
 				}, o.a.createElement("div", {
@@ -166,7 +166,7 @@
 						[I.a.isNotLarge]: T
 					}),
 					onClickCta: () => {
-						j(Object(O.b)()), n(Object(d.h)(m.a.ECON_MARKETPLACE_CLAIM, {
+						j(Object(_.b)()), n(Object(d.h)(m.a.ECON_MARKETPLACE_CLAIM, {
 							claimId: x.id
 						}))
 					},
@@ -178,7 +178,7 @@
 				})))), E && o.a.createElement(C, {
 					onGoBack: () => h(!1),
 					onDismiss: () => {
-						j(Object(O.c)()), M(!0)
+						j(Object(_.c)()), M(!0)
 					}
 				}))
 			};
@@ -285,7 +285,8 @@
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
 			const c = Object(s.a)(r.sd)
-		}
+		},
+		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.8e99281031b684f6a76d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.3ce9e79d4f72243a7e50.js.map

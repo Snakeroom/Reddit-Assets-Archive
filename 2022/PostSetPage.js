@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostSetPage.cfa47aef76c346f717d2.js
-// Retrieved at 12/5/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostSetPage.0b97e0111197af740f18.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostSetPage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -349,12 +349,12 @@
 							return e.focusedVerticals.api.pending.focusedVerticalGqlPending
 						})(i),
 						c = (e => {
-							const t = Object(f.Q)(e),
+							const t = Object(f.R)(e),
 								n = b.d.geoSubredditRecommendationDULoggedIn(e),
 								r = b.d.geoSubredditRecommendationDULoggedOut(e);
 							return t && n || !t && r
 						})(i),
-						m = Object(f.Q)(i);
+						m = Object(f.R)(i);
 					if (o || !c) return;
 					e(O());
 					let p = !1;
@@ -435,7 +435,7 @@
 							return e.focusedVerticals.api.error.focusedVerticalGqlError
 						})(o) || null === a || "client" === a) {
 						const n = null === (s = null === (r = Object(_.b)(t())) || void 0 === r ? void 0 : r.routeMatch) || void 0 === s ? void 0 : s.route.chunk,
-							a = Object(f.R)(o);
+							a = Object(f.S)(o);
 						return Object(i.i)(() => e(j()), {
 							name: "getFocusedVerticalsRequested",
 							page: n,
@@ -876,7 +876,7 @@
 								d(t + 32)
 							}
 						}, []),
-						u = Object(i.e)(f.R),
+						u = Object(i.e)(f.S),
 						m = encodeURIComponent(p.a.redditUrl + "/r/recap"),
 						g = p.a.accountManagerOrigin,
 						y = u ? "/r/recap" : `${g}/login/?dest=${m}`;
@@ -950,7 +950,7 @@
 					[x, v] = Object(r.useState)(),
 					[_, k] = Object(r.useState)(),
 					[I, L] = Object(r.useState)(0),
-					T = Object(i.e)(f.l),
+					T = Object(i.e)(f.m),
 					P = Object(i.e)(E),
 					R = Object(i.e)(S.a),
 					B = Object(i.e)(O.a),
@@ -1458,7 +1458,7 @@
 				h = n("./src/reddit/components/SidebarProfileModeratedSubreddits/index.m.less"),
 				f = n.n(h);
 			const g = Object(a.c)({
-					currentUser: p.l,
+					currentUser: p.m,
 					moderated: m.p,
 					subscriptions: b.e,
 					hasMoreModerated: m.e,
@@ -1973,8 +1973,8 @@
 					onClick: e.onBottomButtonClick
 				}, e.bottomButtonText)))),
 				j = Object(d.c)({
-					hideNSFWPref: _.G,
-					nightmode: _.eb
+					hideNSFWPref: _.H,
+					nightmode: _.fb
 				}),
 				N = Object(o.b)(j)(e => i.a.createElement("div", {
 					className: Object(c.a)(O.a.communityItemContainer, {
@@ -2179,7 +2179,7 @@
 					let {
 						subredditOrProfile: n
 					} = t;
-					return n.type === l.a.PROFILE ? Object(p.Bb)(e, {
+					return n.type === l.a.PROFILE ? Object(p.Cb)(e, {
 						userName: n.name
 					}) : null
 				}
@@ -2260,10 +2260,10 @@
 						r = t.redditStyle || Object(f.l)(e, {
 							subredditId: n
 						}),
-						s = Object(g.eb)(e);
+						s = Object(g.fb)(e);
 					return r || s
 				},
-				nigtmode: g.eb,
+				nigtmode: g.fb,
 				subredditId: u.o,
 				topPostVariant: h.d
 			}));
@@ -2414,7 +2414,7 @@
 					pageReferrer: b.X,
 					postListPlaceholderComponent: () => f.a,
 					isNpsScrollSurveyEnabled: x.e,
-					isLoggedIn: S.R
+					isLoggedIn: S.S
 				},
 				j = Object(s.c)(C),
 				N = e => ({
@@ -2887,7 +2887,7 @@
 					partialPostSetId: n
 				} = e.match.params, l = Object(b.A)(n), x = Object(u.b)(t, l), E = l.toLowerCase(), S = Object(i.e)(e => Object(f.Q)(e, {
 					listingKey: x
-				})), O = Object(i.e)(g.l), [k, C] = Object(r.useState)(!1);
+				})), O = Object(i.e)(g.m), [k, C] = Object(r.useState)(!1);
 				Object(r.useEffect)(() => {
 					if (O) {
 						const e = Object(p.e)(O);
@@ -3022,4 +3022,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.cfa47aef76c346f717d2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.0b97e0111197af740f18.js.map

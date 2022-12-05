@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Talk.d67106b2ccd1890969dd.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Talk.efdafda4cb1ea4cc1a96.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Talk"], {
 		"./src/reddit/components/CollapsibleFAQ/index.m.less": function(e, a, t) {
@@ -338,8 +338,8 @@
 				p = t("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				_ = t("./src/reddit/selectors/user.ts"),
 				E = t("./src/reddit/pages/Talk/CommunitiesWithTalk.m.less"),
-				N = t.n(E);
-			const f = [{
+				f = t.n(E);
+			const N = [{
 					key: "relationships",
 					title: g.fbt._("Identity & Relationships", null, {
 						hk: "4AIB1A"
@@ -401,19 +401,19 @@
 						imageAlt: r
 					} = e;
 					return i.a.createElement("div", {
-						className: N.a.communityCell
+						className: f.a.communityCell
 					}, i.a.createElement("div", {
-						className: N.a.communityImageBackgroundCircle
+						className: f.a.communityImageBackgroundCircle
 					}, i.a.createElement("img", {
 						alt: r,
-						className: N.a.communityImage,
+						className: f.a.communityImage,
 						src: `${l.a.assetPath}/img/talk/${n}.png`
 					})), i.a.createElement("h3", {
-						className: N.a.communityTitle
+						className: f.a.communityTitle
 					}, a), i.a.createElement("h4", {
-						className: N.a.communityDescription
+						className: f.a.communityDescription
 					}, t.map(e => i.a.createElement(p.a, {
-						className: N.a.communityLink,
+						className: f.a.communityLink,
 						key: e,
 						to: e,
 						target: s.d.BLANK,
@@ -421,24 +421,24 @@
 					}, e))))
 				},
 				v = () => {
-					const e = Object(h.e)(_.eb);
+					const e = Object(h.e)(_.fb);
 					return i.a.createElement("div", {
-						className: Object(r.a)(N.a.communitiesSection, {
-							[N.a.isNightmodeOn]: e
+						className: Object(r.a)(f.a.communitiesSection, {
+							[f.a.isNightmodeOn]: e
 						})
 					}, i.a.createElement("div", {
-						className: N.a.communitiesContentWrapper
+						className: f.a.communitiesContentWrapper
 					}, i.a.createElement("img", {
 						alt: y,
-						className: N.a.communitiesSectionBoltImage,
+						className: f.a.communitiesSectionBoltImage,
 						src: `${l.a.assetPath}/img/talk/communities-hosting.svg`
 					}), i.a.createElement("h2", {
-						className: N.a.communitiesSectionTitle
+						className: f.a.communitiesSectionTitle
 					}, g.fbt._("Check out the communities hosting talks", null, {
 						hk: "2eOJeR"
 					})), i.a.createElement("div", {
-						className: Object(r.a)(N.a.communitiesSectionGrid, N.a.contentWrapper)
-					}, f.map(e => {
+						className: Object(r.a)(f.a.communitiesSectionGrid, f.a.contentWrapper)
+					}, N.map(e => {
 						let {
 							key: a,
 							title: t,
@@ -734,4 +734,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Talk.d67106b2ccd1890969dd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Talk.efdafda4cb1ea4cc1a96.js.map

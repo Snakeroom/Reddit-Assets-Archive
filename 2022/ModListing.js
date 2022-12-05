@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.db31931671b98bbf8014.js
-// Retrieved at 12/5/2022, 10:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.323d2781e6ff218606f8.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, r) {
@@ -389,12 +389,12 @@
 							return e.focusedVerticals.api.pending.focusedVerticalGqlPending
 						})(i),
 						c = (e => {
-							const t = Object(f.Q)(e),
+							const t = Object(f.R)(e),
 								r = b.d.geoSubredditRecommendationDULoggedIn(e),
 								n = b.d.geoSubredditRecommendationDULoggedOut(e);
 							return t && r || !t && n
 						})(i),
-						m = Object(f.Q)(i);
+						m = Object(f.R)(i);
 					if (o || !c) return;
 					e(S());
 					let p = !1;
@@ -475,7 +475,7 @@
 							return e.focusedVerticals.api.error.focusedVerticalGqlError
 						})(o) || null === d || "client" === d) {
 						const r = null === (s = null === (n = Object(x.b)(t())) || void 0 === n ? void 0 : n.routeMatch) || void 0 === s ? void 0 : s.route.chunk,
-							d = Object(f.R)(o);
+							d = Object(f.S)(o);
 						return Object(i.i)(() => e(C()), {
 							name: "getFocusedVerticalsRequested",
 							page: r,
@@ -514,9 +514,9 @@
 			})), r.d(t, "unhideSubredditSuccess", (function() {
 				return U
 			})), r.d(t, "unhideSubredditPending", (function() {
-				return Q
-			})), r.d(t, "unhideSubredditFailed", (function() {
 				return J
+			})), r.d(t, "unhideSubredditFailed", (function() {
+				return Q
 			})), r.d(t, "toggleHiddenSubreddit", (function() {
 				return X
 			})), r.d(t, "hideSubreddit", (function() {
@@ -671,15 +671,15 @@
 				q = Object(d.a)(k.b),
 				K = Object(d.a)(k.a),
 				U = Object(d.a)(k.l),
-				Q = Object(d.a)(k.k),
-				J = Object(d.a)(k.j),
+				J = Object(d.a)(k.k),
+				Q = Object(d.a)(k.j),
 				X = (e, t) => async (r, n, s) => {
 					let {
 						apiContext: i
 					} = s;
 					const o = n(),
-						d = Object(T.l)(o),
-						[a, c, u, l] = t ? [q, V, K, O] : [Q, U, J, E];
+						d = Object(T.m)(o),
+						[a, c, u, l] = t ? [q, V, K, O] : [J, U, Q, E];
 					if (!d || !d.displayText) return;
 					const {
 						currentPage: m
@@ -1324,7 +1324,7 @@
 					pageReferrer: b.X,
 					postListPlaceholderComponent: () => f.a,
 					isNpsScrollSurveyEnabled: _.e,
-					isLoggedIn: E.R
+					isLoggedIn: E.S
 				},
 				C = Object(s.c)(I),
 				P = e => ({
@@ -1785,11 +1785,11 @@
 				q = r("./src/reddit/layout/row/Inline/index.tsx"),
 				K = r("./src/reddit/components/ModListingSidebar/HideCommunities/HideInput/index.m.less"),
 				U = r.n(K);
-			const Q = Object(a.c)({
+			const J = Object(a.c)({
 				apiError: e => e.modListingPage.filteredSubreddits.api.error,
 				isApiPending: B
 			});
-			class J extends o.a.Component {
+			class Q extends o.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						subredditInput: ""
@@ -1833,9 +1833,9 @@
 					}, e.apiError.explanation))
 				}
 			}
-			var X = Object(d.b)(Q, e => ({
+			var X = Object(d.b)(J, e => ({
 					hide: t => e(Object(m.hideSubreddit)(t))
-				}))(Object(F.c)(J)),
+				}))(Object(F.c)(Q)),
 				Y = r("./src/lib/lessComponent.tsx"),
 				z = r("./src/reddit/components/SubredditIcon/index.tsx"),
 				W = r("./src/reddit/icons/fonts/Clear/index.tsx"),
@@ -2170,14 +2170,14 @@
 				i = r("./src/reddit/selectors/user.ts");
 			const o = e => {
 					const t = Object(s.c)(e, {
-						experimentEligibilitySelector: i.R,
+						experimentEligibilitySelector: i.S,
 						experimentName: n.rd
 					});
 					return !(!t || Object(n.vg)(t))
 				},
 				d = e => {
 					return Object(s.c)(e, {
-						experimentEligibilitySelector: i.R,
+						experimentEligibilitySelector: i.S,
 						experimentName: n.rd
 					}) === n.Pd.ListingEnabled
 				}
@@ -2200,7 +2200,7 @@
 						experimentName: n.of
 					}) === n.Ld
 				},
-				c = Object(d.a)(o.R, (e, t) => {
+				c = Object(d.a)(o.S, (e, t) => {
 					let {
 						pageLayer: r
 					} = t;
@@ -2225,7 +2225,7 @@
 				i = r("./src/reddit/reducers/user/experiments/shredditPDPExperimentHeader/index.ts"),
 				o = r("./node_modules/reselect/es/index.js"),
 				d = r("./src/reddit/selectors/user.ts");
-			const a = Object(o.a)(d.R, e => !e),
+			const a = Object(o.a)(d.S, e => !e),
 				c = Object(o.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: a,
 					experimentName: n.Gf
@@ -2260,4 +2260,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.db31931671b98bbf8014.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.323d2781e6ff218606f8.js.map

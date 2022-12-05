@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Recap.277699511add3700e659.js
-// Retrieved at 12/1/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Recap.11d3292a8cda305b9047.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Recap", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, a, t) {
@@ -105,7 +105,7 @@
 				x = t("./src/reddit/selectors/user.ts");
 			let w = !1;
 			const R = async (e, a) => {
-				const t = Object(x.Q)(e);
+				const t = Object(x.R)(e);
 				if (w) return;
 				if (w = !0, Object(u.a)(e) !== o.c.NotificationsSupported) return;
 				await Object(d.a)();
@@ -230,7 +230,7 @@
 					title: Object(r.n)()
 				}));
 				const t = a();
-				if (!Object(c.R)(t)) return Object(s.a)(e, t)
+				if (!Object(c.S)(t)) return Object(s.a)(e, t)
 			}
 		},
 		"./src/reddit/helpers/trackers/notifications.ts": function(e, a, t) {
@@ -2287,7 +2287,7 @@
 						[T, L] = Object(s.useState)(!0),
 						[F, B] = Object(s.useState)(!1),
 						A = Object(b.e)(e => Object(ra.b)(h.a.SNOOVATAR_MODAL)(e)),
-						P = Object(b.e)(ia.l),
+						P = Object(b.e)(ia.m),
 						W = Math.ceil((k + 1) / 6),
 						M = k - 6 * (W - 1),
 						H = x.length > 6 && W > 1,
@@ -2486,4 +2486,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Recap.277699511add3700e659.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Recap.11d3292a8cda305b9047.js.map

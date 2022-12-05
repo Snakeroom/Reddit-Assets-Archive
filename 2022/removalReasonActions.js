@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.715cbbc065c5611e8c10.js
-// Retrieved at 12/1/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.1f342743fb462b00f7eb.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./node_modules/lodash/map.js": function(e, t, s) {
@@ -76,7 +76,7 @@
 					let {
 						apiContext: r
 					} = n;
-					if (!Object(R.R)(s())) return void t(Object(d.i)(l.a.LOGIN_MODAL_ID));
+					if (!Object(R.S)(s())) return void t(Object(d.i)(l.a.LOGIN_MODAL_ID));
 					const a = s().features.comments.models[e];
 					if (!a) return;
 					const c = a.isLocked ? u.l : u.f;
@@ -1005,4 +1005,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.715cbbc065c5611e8c10.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.1f342743fb462b00f7eb.js.map

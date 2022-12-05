@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxTooltip.65685081e49585712d72.js
-// Retrieved at 12/1/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxTooltip.a49489c1e131450bf968.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxTooltip", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -105,7 +105,7 @@
 				P = i("./src/reddit/selectors/user.ts");
 			let E = !1;
 			const F = async (e, t) => {
-				const i = Object(P.Q)(e);
+				const i = Object(P.R)(e);
 				if (E) return;
 				if (E = !0, Object(f.a)(e) !== d.c.NotificationsSupported) return;
 				await Object(u.a)();
@@ -613,4 +613,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.65685081e49585712d72.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.a49489c1e131450bf968.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.845a3dbae94b62ac60e5.js
-// Retrieved at 11/30/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.75fbcc977b0297994f09.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -6990,10 +6990,10 @@
 				}).apply(this, arguments)
 			}
 			const b = Object(l.c)({
-					currentUser: d.l,
-					isNightMode: d.eb,
-					isPresenceUserPrefEnabled: d.W,
-					shouldHideNSFW: d.G
+					currentUser: d.m,
+					isNightMode: d.fb,
+					isPresenceUserPrefEnabled: d.X,
+					shouldHideNSFW: d.H
 				}),
 				f = Object(i.b)(b);
 			t.a = f(e => {
@@ -8519,7 +8519,7 @@
 						includeUserProfile: a,
 						substring: r.rawString
 					})
-				}, e => Object(Y.qb)(e) && Object(G.k)(e), (e, t, n) => {
+				}, e => Object(Y.rb)(e) && Object(G.k)(e), (e, t, n) => {
 					const {
 						suggestedItems: a,
 						fallbackItems: r,
@@ -9279,4 +9279,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.845a3dbae94b62ac60e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.75fbcc977b0297994f09.js.map

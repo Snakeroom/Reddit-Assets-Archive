@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SocialLinks.1a33e9661a0a4b38bbf3.js
-// Retrieved at 12/5/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SocialLinks.6f21e5a0afc641a5601c.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SocialLinks"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -369,7 +369,7 @@
 							rawTitle: h,
 							url: p
 						} = t;
-					if (!Object(m.X)(u, e)) return;
+					if (!Object(m.Y)(u, e)) return;
 					const f = w({
 							socialLinkOption: d,
 							rawHandle: _,
@@ -416,7 +416,7 @@
 						gqlContext: r
 					} = n;
 					const c = i();
-					if (!Object(m.X)(c, t)) return;
+					if (!Object(m.Y)(c, t)) return;
 					const l = await (async (e, t) => {
 						return await Object(o.a)(e, {
 							...a,
@@ -447,7 +447,7 @@
 							rawTitle: p,
 							url: f
 						} = s;
-					if (!Object(m.X)(d, t)) return;
+					if (!Object(m.Y)(d, t)) return;
 					const b = {
 							...w({
 								socialLinkOption: _,
@@ -925,4 +925,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SocialLinks.1a33e9661a0a4b38bbf3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SocialLinks.6f21e5a0afc641a5601c.js.map

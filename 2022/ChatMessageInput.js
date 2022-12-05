@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.957ad216eeac4e7f6f51.js
-// Retrieved at 12/5/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.3e78548b427afcf50d49.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, s) {},
@@ -579,8 +579,8 @@
 				g = s("./src/reddit/helpers/media/index.ts"),
 				y = s("./src/reddit/models/Upload/index.ts"),
 				v = s("./src/reddit/selectors/telemetry.ts"),
-				j = s("./src/telemetry/index.ts");
-			const C = e => ({
+				C = s("./src/telemetry/index.ts");
+			const j = e => ({
 				...v.o(e),
 				screen: v.cb(e),
 				profile: v.T(e),
@@ -673,12 +673,12 @@
 									height: m.height,
 									duration: m.videoDuration && Math.round(1e3 * m.videoDuration)
 								};
-								Object(j.a)({
+								Object(C.a)({
 									source: "post_composer",
 									action: "upload",
 									correlationId: i,
 									noun: b ? "video" : "image",
-									...C(t),
+									...j(t),
 									actionInfo: {
 										...v.d(t),
 										success: _,
@@ -714,7 +714,7 @@
 						}
 					};
 					return await E(Object(d.l)(e, t, async _ => {
-						var y, v, j, C;
+						var y, v, C, j;
 						z = !0, Object(d.k)(_.id, () => {
 							U(!0)
 						});
@@ -847,11 +847,11 @@
 											uploadLeaseUrl: s,
 											uploadLeaseHeaders: null === (v = t.data.createMediaUploadLease) || void 0 === v ? void 0 : v.uploadLease.uploadLeaseHeaders
 										});
-									return T = (null === (j = t.data.createMediaUploadLease) || void 0 === j ? void 0 : j.mediaId) || null, {
+									return T = (null === (C = t.data.createMediaUploadLease) || void 0 === C ? void 0 : C.mediaId) || null, {
 										uploadLease: r
 									}
 								} {
-									const t = null === (C = e.body.data.createMediaUploadLease) || void 0 === C ? void 0 : C.errors;
+									const t = null === (j = e.body.data.createMediaUploadLease) || void 0 === j ? void 0 : j.errors;
 									let s = null;
 									return t && (s = {
 										fields: [{
@@ -1060,8 +1060,8 @@
 				g = Object(a.a)(u),
 				y = Object(a.a)(l),
 				v = Object(a.a)(m),
-				j = Object(a.a)(p),
-				C = Object(a.a)(h),
+				C = Object(a.a)(p),
+				j = Object(a.a)(h),
 				x = Object(a.a)(b),
 				E = Object(a.a)(_),
 				k = new Map,
@@ -1093,7 +1093,7 @@
 							error: h
 						} = await s(d().uploads[u]);
 						if (m()) return;
-						if (h || !p) return void a(C({
+						if (h || !p) return void a(j({
 							key: u,
 							error: h
 						}));
@@ -1119,7 +1119,7 @@
 						if (b = null, !m())
 							if (_.ok) {
 								const e = decodeURIComponent(_.body.PostResponse.Location);
-								a(j({
+								a(C({
 									key: u,
 									url: e
 								}))
@@ -1134,7 +1134,7 @@
 											}]
 										} : {}
 									};
-								a(C({
+								a(j({
 									key: u,
 									error: t
 								}))
@@ -1215,7 +1215,7 @@
 					}, t) : null)
 				}
 			}
-			var j = Object(d.b)(() => Object(u.c)({
+			var C = Object(d.b)(() => Object(u.c)({
 				iconUrl: (e, t) => {
 					let {
 						awardId: s
@@ -1228,7 +1228,7 @@
 					})
 				}
 			}))(v);
-			const C = Object(d.b)(() => Object(u.a)(e => e, (e, t) => {
+			const j = Object(d.b)(() => Object(u.a)(e => e, (e, t) => {
 					let {
 						postId: s
 					} = t;
@@ -1283,7 +1283,7 @@
 						className: n,
 						isFullyLoaded: a
 					} = this.props;
-					if (!a) return o.a.createElement(j, {
+					if (!a) return o.a.createElement(C, {
 						className: n,
 						count: 0
 					});
@@ -1291,7 +1291,7 @@
 						c = r.length - 1,
 						d = r[c],
 						u = r.length !== t.length;
-					return o.a.createElement(j, {
+					return o.a.createElement(C, {
 						awardId: d,
 						className: n,
 						count: i,
@@ -1300,7 +1300,7 @@
 					})
 				}
 			}
-			var k = C(E),
+			var k = j(E),
 				w = s("./src/reddit/components/CommentsChat/MessageInput/index.m.less"),
 				O = s.n(w);
 			t.a = e => {
@@ -1394,8 +1394,8 @@
 				g = s("./src/reddit/actions/comment/authoring.ts"),
 				y = s("./src/reddit/actions/gold/modals.ts"),
 				v = s("./src/reddit/actions/publicAccessNetwork/theaterSettings.ts"),
-				j = s("./src/reddit/components/CommentsChat/Comment/ChatIcon/index.tsx"),
-				C = s("./src/reddit/components/CommentsChat/Comment/Reply/index.tsx");
+				C = s("./src/reddit/components/CommentsChat/Comment/ChatIcon/index.tsx"),
+				j = s("./src/reddit/components/CommentsChat/Comment/Reply/index.tsx");
 			const x = e => {
 				let {
 					durationSec: t,
@@ -1459,7 +1459,7 @@
 					pending: (e, t) => e.features.comments.submit.pending[t.draftKey],
 					post: U.G,
 					isLiveChatInChatTabEnabled: Q.c,
-					currentUserId: M.j,
+					currentUserId: M.k,
 					isTalkPost: Object(l.a)(U.G, e => Object(T.y)(e)),
 					isLiveChatThreadingEnabled: Q.e
 				}), (e, t) => {
@@ -1654,7 +1654,7 @@
 						replyComment: g,
 						isEmbeddedLiveChat: y,
 						isLiveChatThreadingEnabled: v
-					} = this.props, j = c ? r.fbt._("Send message ({characterLimit} character limit)", [r.fbt._param("characterLimit", h.toLocaleString())], {
+					} = this.props, C = c ? r.fbt._("Send message ({characterLimit} character limit)", [r.fbt._param("characterLimit", h.toLocaleString())], {
 						hk: "RIcb6"
 					}) : r.fbt._("Send a message (use the Enter key)", null, {
 						hk: "3yojgj"
@@ -1676,7 +1676,7 @@
 								spamTimeoutDraftKey: null
 							})
 						}
-					}), d.a.createElement(I.a, null)), !i && g && !v && d.a.createElement(C.a, {
+					}), d.a.createElement(I.a, null)), !i && g && !v && d.a.createElement(j.a, {
 						commentId: g.id,
 						isMessageComposer: !0,
 						isLivestreaming: c,
@@ -1712,7 +1712,7 @@
 						onChange: this.handleChange,
 						onFocus: this.handleFocus,
 						onSubmit: this.onSubmit,
-						placeholderText: j,
+						placeholderText: C,
 						readOnly: b,
 						showSubmitButton: w && !this.state.showError,
 						submitButtonClassName: Object(m.a)(Z.a.insetSubmitButton, Z.a.submitButton),
@@ -1751,11 +1751,11 @@
 					isEditing: t,
 					isLivestreaming: s
 				} = e;
-				return s ? null : t ? d.a.createElement(j.a, {
+				return s ? null : t ? d.a.createElement(C.a, {
 					className: Z.a.SmallChatUserIcon,
 					height: 20,
 					width: 20
-				}) : d.a.createElement(j.a, {
+				}) : d.a.createElement(C.a, {
 					height: 25,
 					width: 25
 				})
@@ -1820,10 +1820,10 @@
 				}).apply(this, arguments)
 			}
 			const _ = Object(i.c)({
-					currentUser: d.l,
-					isNightMode: d.eb,
-					isPresenceUserPrefEnabled: d.W,
-					shouldHideNSFW: d.G
+					currentUser: d.m,
+					isNightMode: d.fb,
+					isPresenceUserPrefEnabled: d.X,
+					shouldHideNSFW: d.H
 				}),
 				f = Object(a.b)(_);
 			t.a = f(e => {
@@ -2055,9 +2055,9 @@
 			})), s.d(t, "x", (function() {
 				return v
 			})), s.d(t, "r", (function() {
-				return j
-			})), s.d(t, "p", (function() {
 				return C
+			})), s.d(t, "p", (function() {
+				return j
 			})), s.d(t, "q", (function() {
 				return x
 			})), s.d(t, "o", (function() {
@@ -2241,7 +2241,7 @@
 					...d(t),
 					...i(t, e)
 				}),
-				j = (e, t) => s => ({
+				C = (e, t) => s => ({
 					source: "stream_player",
 					action: "click",
 					noun: "upvote",
@@ -2249,7 +2249,7 @@
 					...d(s),
 					...i(s, e)
 				}),
-				C = (e, t) => s => ({
+				j = (e, t) => s => ({
 					source: "stream_player",
 					action: "click",
 					noun: "downvote",
@@ -2467,7 +2467,7 @@
 		"./src/reddit/selectors/PublicAccessNetwork/streams.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "l", (function() {
-				return C
+				return j
 			})), s.d(t, "m", (function() {
 				return k
 			})), s.d(t, "i", (function() {
@@ -2512,7 +2512,7 @@
 				g = e => e.publicAccessNetwork.hlsStreams,
 				y = Object(r.a)(g, e => e.ended),
 				v = Object(r.a)(g, e => e.removed),
-				j = Object(r.a)(p, y, v, (e, t, s) => {
+				C = Object(r.a)(p, y, v, (e, t, s) => {
 					const r = t.reduce((e, t) => {
 						const s = e[t];
 						if (!s) return e;
@@ -2550,15 +2550,15 @@
 						}
 					}, r)
 				}),
-				C = (e, t) => {
-					return j(e)[Object(o.g)(t)]
+				j = (e, t) => {
+					return C(e)[Object(o.g)(t)]
 				},
 				x = Object(r.a)((e, t) => {
 					let {
 						streamIdFromPath: s
 					} = t;
 					return s
-				}, (e, t) => l(t.listingName)(e, t), j, h, i.h, (e, t, s, r, n) => {
+				}, (e, t) => l(t.listingName)(e, t), C, h, i.h, (e, t, s, r, n) => {
 					const i = [];
 					if (e) {
 						const t = Object(o.g)(e);
@@ -2577,7 +2577,7 @@
 						count: s
 					} = t;
 					return s
-				}, j, (e, t) => {
+				}, C, (e, t) => {
 					let {
 						listingName: s,
 						streamIdFromPath: r
@@ -2590,7 +2590,7 @@
 					const r = s.map(e => t[e]).sort((e, t) => t.rank - e.rank).map(e => e.post.id);
 					return e ? r.slice(0, e) : r
 				}),
-				k = Object(r.a)(j, E, (e, t) => {
+				k = Object(r.a)(C, E, (e, t) => {
 					const s = t[0];
 					if (s) return e[s]
 				}),
@@ -2614,7 +2614,7 @@
 						streamIdFromPath: s
 					} = t;
 					return s
-				}, j, (e, t) => {
+				}, C, (e, t) => {
 					let {
 						related: s,
 						streamIdFromPath: r,
@@ -2635,7 +2635,7 @@
 					});
 					return i ? i.post.id : void 0
 				}),
-				D = Object(n.a)(Object(r.a)(O, j, (e, t) => e ? t[e] : void 0)),
+				D = Object(n.a)(Object(r.a)(O, C, (e, t) => e ? t[e] : void 0)),
 				F = Object(r.a)((e, t) => {
 					let {
 						streamIdFromPath: s
@@ -2656,10 +2656,10 @@
 				I = Object(r.a)(_, f, (e, t) => {
 					if (e > 0) return t[e - 1]
 				}),
-				S = Object(n.a)(Object(r.a)(F, j, (e, t) => e ? t[e] : void 0)),
-				L = Object(n.a)(Object(r.a)(A, j, (e, t) => e ? t[e] : void 0)),
-				P = Object(n.a)(Object(r.a)(I, j, (e, t) => e ? t[e] : void 0)),
-				T = (Object(n.a)(Object(r.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, j, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => ({
+				S = Object(n.a)(Object(r.a)(F, C, (e, t) => e ? t[e] : void 0)),
+				L = Object(n.a)(Object(r.a)(A, C, (e, t) => e ? t[e] : void 0)),
+				P = Object(n.a)(Object(r.a)(I, C, (e, t) => e ? t[e] : void 0)),
+				T = (Object(n.a)(Object(r.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, C, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => ({
 					...t[s],
 					preloadedPreviewUrl: e[s]
 				})))), Object(r.a)(F, e => e.publicAccessNetwork.preloads.streamPreviews, (e, t) => e && t[e])),
@@ -2667,7 +2667,7 @@
 					let {
 						streamIdFromPath: s
 					} = t;
-					return s ? C(e, s) : void 0
+					return s ? j(e, s) : void 0
 				}, e => !e || e.chat_disabled || e.post.isArchived || e.post.isLocked);
 
 			function N(e, t) {
@@ -2687,7 +2687,7 @@
 			! function(e) {
 				e[e.LIVE = 0] = "LIVE", e[e.VOD = 1] = "VOD", e[e.UNAVAILABLE = 2] = "UNAVAILABLE", e[e.INTRO = 3] = "INTRO"
 			}(U || (U = {}));
-			const R = Object(r.a)(F, j, m.b, (e, t, s) => {
+			const R = Object(r.a)(F, C, m.b, (e, t, s) => {
 					if (s) return U.INTRO;
 					const r = e && t[e];
 					if (!r) return U.UNAVAILABLE;
@@ -2740,9 +2740,9 @@
 			})), s.d(t, "o", (function() {
 				return v
 			})), s.d(t, "a", (function() {
-				return j
-			})), s.d(t, "x", (function() {
 				return C
+			})), s.d(t, "x", (function() {
+				return j
 			})), s.d(t, "f", (function() {
 				return x
 			})), s.d(t, "i", (function() {
@@ -2821,18 +2821,18 @@
 					const s = y(e, t);
 					return s && s.endsAt || null
 				};
-			var j;
+			var C;
 			! function(e) {
 				e[e.DontKnow = 0] = "DontKnow", e[e.NotSubscribed = 1] = "NotSubscribed", e[e.Subscribed = 2] = "Subscribed"
-			}(j || (j = {}));
-			const C = (e, t) => {
+			}(C || (C = {}));
+			const j = (e, t) => {
 					const s = e.economics.subredditPremium[t];
 					if (s && s.status === l.a.Fetched) {
 						const s = v(e, t),
 							r = Date.now();
-						return s && r < s ? j.Subscribed : j.NotSubscribed
+						return s && r < s ? C.Subscribed : C.NotSubscribed
 					}
-					return j.DontKnow
+					return C.DontKnow
 				},
 				x = (e, t) => {
 					const s = e.user.account,
@@ -3048,4 +3048,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.957ad216eeac4e7f6f51.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.3e78548b427afcf50d49.js.map

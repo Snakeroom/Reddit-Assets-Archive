@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.064d6e046395316a9115.js
-// Retrieved at 12/5/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.0de87629160f021d809c.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -947,7 +947,7 @@
 						activeDetails: b,
 						shopTabState: f
 					} = e, h = n();
-					o && Object(d.a)(Object(a.g)(o)(h)), Object(c.R)(h) ? await t(Object(s.h)(i.a.SNOOVATAR_MODAL, {
+					o && Object(d.a)(Object(a.g)(o)(h)), Object(c.S)(h) ? await t(Object(s.h)(i.a.SNOOVATAR_MODAL, {
 						share: l,
 						source: u,
 						activeTab: m,
@@ -2553,7 +2553,7 @@
 						})
 					},
 					isNsfwBlurSubreddit: W.e,
-					shouldOpenPostInNewTab: Y.kb
+					shouldOpenPostInNewTab: Y.lb
 				}),
 				te = e => {
 					const {
@@ -2833,7 +2833,7 @@
 				_ = n("./src/reddit/components/VerticalVotes/index.m.less"),
 				g = n.n(_);
 			const O = Object(a.c)({
-					isNightMode: h.eb,
+					isNightMode: h.fb,
 					isAnimatingUpvotePostId: f.k
 				}),
 				x = Object(i.b)(O),
@@ -4831,7 +4831,7 @@
 				d = (e, t) => n => {
 					const {
 						id: r
-					} = Object(i.Bb)(n, {
+					} = Object(i.Cb)(n, {
 						userName: t
 					});
 					return {
@@ -5961,7 +5961,7 @@
 					const c = !n && !!Object(o.m)(e, {
 						postId: t
 					});
-					return Object(a.Eb)(e, {
+					return Object(a.Fb)(e, {
 						postId: t
 					}) || c
 				}
@@ -6196,7 +6196,7 @@
 						minSize: n,
 						userName: r
 					} = t;
-					const s = Object(c.Bb)(e, {
+					const s = Object(c.Cb)(e, {
 						userName: r
 					});
 					if (s && s.awardedLastMonth && s.awardedLastMonth.topAward) return b(e, {
@@ -6378,7 +6378,7 @@
 					}
 					return !(e.created > Date.UTC(2019, 0))
 				}),
-				f = Object(s.a)(d.l, o.a, (e, t) => !!((null == e ? void 0 : e.id) && (null == t ? void 0 : t.authorId)) && e.id === t.authorId),
+				f = Object(s.a)(d.m, o.a, (e, t) => !!((null == e ? void 0 : e.id) && (null == t ? void 0 : t.authorId)) && e.id === t.authorId),
 				h = Object(s.a)(o.a, e => !(!e || !1 !== e.isRobotIndexable))
 		},
 		"./src/reddit/selectors/userPrefs.ts": function(e, t, n) {
@@ -6395,7 +6395,7 @@
 			var r = n("./src/lib/constants/index.ts"),
 				s = n("./src/reddit/selectors/user.ts");
 			const o = e => {
-					const t = Object(s.R)(e);
+					const t = Object(s.S)(e);
 					if (i(e)) return !1;
 					const {
 						subscriptionsPinned: n
@@ -6464,4 +6464,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.064d6e046395316a9115.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.0de87629160f021d809c.js.map

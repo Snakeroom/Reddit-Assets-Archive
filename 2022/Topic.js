@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.d4da7e825c63503351b1.js
-// Retrieved at 12/5/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.92c8589c5094d8ecd8ed.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -342,12 +342,12 @@
 							return e.focusedVerticals.api.pending.focusedVerticalGqlPending
 						})(i),
 						c = (e => {
-							const t = Object(g.Q)(e),
+							const t = Object(g.R)(e),
 								s = p.d.geoSubredditRecommendationDULoggedIn(e),
 								r = p.d.geoSubredditRecommendationDULoggedOut(e);
 							return t && s || !t && r
 						})(i),
-						m = Object(g.Q)(i);
+						m = Object(g.R)(i);
 					if (o || !c) return;
 					e(E());
 					let b = !1;
@@ -428,7 +428,7 @@
 							return e.focusedVerticals.api.error.focusedVerticalGqlError
 						})(o) || null === a || "client" === a) {
 						const s = null === (n = null === (r = Object(_.b)(t())) || void 0 === r ? void 0 : r.routeMatch) || void 0 === n ? void 0 : n.route.chunk,
-							a = Object(g.R)(o);
+							a = Object(g.S)(o);
 						return Object(i.i)(() => e(k()), {
 							name: "getFocusedVerticalsRequested",
 							page: s,
@@ -869,7 +869,7 @@
 								d(t + 32)
 							}
 						}, []),
-						u = Object(i.e)(g.R),
+						u = Object(i.e)(g.S),
 						m = encodeURIComponent(b.a.redditUrl + "/r/recap"),
 						f = b.a.accountManagerOrigin,
 						v = u ? "/r/recap" : `${f}/login/?dest=${m}`;
@@ -943,7 +943,7 @@
 					[x, y] = Object(r.useState)(),
 					[_, O] = Object(r.useState)(),
 					[w, L] = Object(r.useState)(0),
-					I = Object(i.e)(g.l),
+					I = Object(i.e)(g.m),
 					P = Object(i.e)(S),
 					R = Object(i.e)(T.a),
 					F = Object(i.e)(E.a),
@@ -1787,7 +1787,7 @@
 				O = s("./src/reddit/components/TopicSidebar/SubredditList/Subreddit/index.m.less"),
 				C = s.n(O);
 			const k = Object(h.c)({
-				isLoggedIn: E.R,
+				isLoggedIn: E.S,
 				subreddit: T.Y,
 				subredditAboutInfo: T.y
 			});
@@ -2004,10 +2004,10 @@
 						r = t.redditStyle || Object(g.l)(e, {
 							subredditId: s
 						}),
-						n = Object(f.eb)(e);
+						n = Object(f.fb)(e);
 					return r || n
 				},
-				nigtmode: f.eb,
+				nigtmode: f.fb,
 				subredditId: u.o,
 				topPostVariant: h.d
 			}));
@@ -2158,7 +2158,7 @@
 					pageReferrer: p.X,
 					postListPlaceholderComponent: () => g.a,
 					isNpsScrollSurveyEnabled: x.e,
-					isLoggedIn: T.R
+					isLoggedIn: T.S
 				},
 				k = Object(n.c)(C),
 				j = e => ({
@@ -2797,8 +2797,8 @@
 				V = s.n(z);
 			const {
 				fbt: J
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), Q = 5;
-			class q extends n.a.Component {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), q = 5;
+			class Q extends n.a.Component {
 				constructor() {
 					super(...arguments), this.onClick = () => {
 						const {
@@ -2814,7 +2814,7 @@
 						relatedTopics: t
 					} = this.props.relationship;
 					return n.a.createElement(_, {
-						limit: Q,
+						limit: q,
 						title: e,
 						topics: t
 					}, this.renderSeeMoreButton())
@@ -2824,7 +2824,7 @@
 						namePlural: e,
 						relatedTopics: t
 					} = this.props.relationship;
-					return t.length < Q ? null : n.a.createElement(L.a, {
+					return t.length < q ? null : n.a.createElement(L.a, {
 						onClick: this.onClick,
 						to: "#"
 					}, n.a.createElement(I.r, {
@@ -2838,7 +2838,7 @@
 					})))
 				}
 			}
-			var Y = q,
+			var Y = Q,
 				K = s("./src/lib/prettyPrintNumber/index.ts"),
 				Z = s("./src/reddit/components/Flair/index.tsx"),
 				X = s("./src/reddit/components/SubredditIcon/index.tsx"),
@@ -2853,7 +2853,7 @@
 			const {
 				fbt: ae
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), de = Object(i.c)({
-				isLoggedIn: ne.R,
+				isLoggedIn: ne.S,
 				subreddit: re.Y,
 				subredditAboutInfo: (e, t) => {
 					let {
@@ -3258,4 +3258,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.d4da7e825c63503351b1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.92c8589c5094d8ecd8ed.js.map

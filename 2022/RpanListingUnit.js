@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.1c36bf4ee0edcb1987f5.js
-// Retrieved at 12/1/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.a0e7267154de06294bf6.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -281,7 +281,7 @@
 						forwardedRef: t
 					}))),
 					R = Object(o.c)({
-						redditUserId: b.j,
+						redditUserId: b.k,
 						isMuxEnabled: p
 					});
 				return Object(i.b)(R, null, null, {
@@ -717,8 +717,8 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), z = 20, J = l.xc, $ = l.xc, X = Object(c.a)(U.a, {
 				playerName: "RPAN DU Video Player"
 			}), Q = Object(i.b)(() => Object(o.c)({
-				autoplay: L.c,
-				isLoggedIn: L.R,
+				autoplay: L.d,
+				isLoggedIn: L.S,
 				isOverlayOpen: T.j,
 				location: (e, t) => {
 					let {
@@ -1881,4 +1881,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.1c36bf4ee0edcb1987f5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.a0e7267154de06294bf6.js.map

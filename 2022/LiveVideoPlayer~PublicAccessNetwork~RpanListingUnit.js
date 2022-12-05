@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.a12a1fc166564fbf3144.js
-// Retrieved at 11/17/2022, 12:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.a419003b18b46d388a76.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit"], {
 		"./src/lib/VideoSession/VideoSessionManager.ts": function(e, t, s) {
@@ -1233,7 +1233,7 @@
 						apiContext: n
 					} = r;
 					const o = a();
-					Object(h.R)(o) ? await Object(m.g)(n(), e, t) : s(Object(p.openLoginModal)())
+					Object(h.S)(o) ? await Object(m.g)(n(), e, t) : s(Object(p.openLoginModal)())
 				})(t, s))
 			}))(class extends a.Component {
 				constructor(e) {
@@ -1425,7 +1425,7 @@
 					isSubscribed: i
 				}));
 				return o && o.enableFollowers ? d : null
-			}, Ce = e => Object(n.e)(t => Object(h.Bb)(t, {
+			}, Ce = e => Object(n.e)(t => Object(h.Cb)(t, {
 				userName: e
 			})), xe = e => Object(n.e)(t => Object(H.kb)(t, {
 				identifier: {
@@ -1479,9 +1479,9 @@
 			}, r.a.createElement("path", {
 				d: "M12.8,6.4 L9.6,6.4 L9.6,3.2 C9.6,2.7576 9.2424,2.4 8.8,2.4 L7.2,2.4 C6.7576,2.4 6.4,2.7576 6.4,3.2 L6.4,6.4 L3.2,6.4 C2.7584,6.4 2.4,6.7576 2.4,7.2 L2.4,8.8 C2.4,9.2424 2.7584,9.6 3.2,9.6 L6.4,9.6 L6.4,12.8 C6.4,13.2424 6.7576,13.6 7.2,13.6 L8.8,13.6 C9.2424,13.6 9.6,13.2424 9.6,12.8 L9.6,9.6 L12.8,9.6 C13.2424,9.6 13.6,9.2424 13.6,8.8 L13.6,7.2 C13.6,6.7576 13.2424,6.4 12.8,6.4"
 			})), ke = e => {
-				const t = Object(n.e)(h.l),
-					s = Object(n.e)(h.G),
-					a = Object(n.e)(h.lb);
+				const t = Object(n.e)(h.m),
+					s = Object(n.e)(h.H),
+					a = Object(n.e)(h.mb);
 				return !!e && (!!e.accountIcon && (!!t && (t.id === e.id || (!e.isNSFW || !!a && !s))))
 			}
 		},
@@ -1658,4 +1658,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.a12a1fc166564fbf3144.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.a419003b18b46d388a76.js.map

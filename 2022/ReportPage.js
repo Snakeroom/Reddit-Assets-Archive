@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportPage.ec2367db345782c706a2.js
-// Retrieved at 12/1/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportPage.0d2c17b64af8266f440c.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportPage"], {
 		"./src/lib/formatPythonString/index.ts": function(e, t, n) {
@@ -1674,7 +1674,7 @@
 			const {
 				fbt: We
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), ze = Object(o.c)({
-				currentUser: Ge.l,
+				currentUser: Ge.m,
 				reportPageRules: e => e.reportPage.reportPageRules,
 				crisisFlowEnabled: He.b
 			}), Xe = Object(a.b)(ze);
@@ -1889,11 +1889,11 @@
 				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/user.ts");
 			const o = e => r.a.Enabled === Object(s.c)(e, {
-					experimentEligibilitySelector: a.R,
+					experimentEligibilitySelector: a.S,
 					experimentName: r.d
 				}),
 				i = e => r.b.Enabled === Object(s.c)(e, {
-					experimentEligibilitySelector: a.R,
+					experimentEligibilitySelector: a.S,
 					experimentName: r.f
 				})
 		},
@@ -1902,4 +1902,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportPage.ec2367db345782c706a2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportPage.0d2c17b64af8266f440c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.cb4b751f615c9249c92e.js
-// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.b970c5f5279e35bfdade.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsFlairModal", "AchievementsActions"], {
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, s) {
@@ -94,7 +94,7 @@
 				}, y = (e, t) => async (s, r) => {
 					if (!e) return;
 					const i = r(),
-						a = Object(v.l)(i);
+						a = Object(v.m)(i);
 					if (!a || !Object(h.f)(i, {
 							subredditId: e
 						})) return;
@@ -135,7 +135,7 @@
 					}), await s(P(e, Array.from(i)))
 				}, N = (e, t) => async (s, r) => {
 					const i = r(),
-						a = Object(v.l)(i);
+						a = Object(v.m)(i);
 					if (!a) return;
 					const n = a.id;
 					s(T({
@@ -148,7 +148,7 @@
 						gqlContext: o
 					} = a;
 					const c = s(),
-						d = Object(v.l)(c);
+						d = Object(v.m)(c);
 					if (!d) return;
 					const u = d.id;
 					t(w(e));
@@ -175,7 +175,7 @@
 						gqlContext: c
 					} = o;
 					const d = a(),
-						u = Object(v.l)(d);
+						u = Object(v.m)(d);
 					if (!u) return;
 					const b = u.id,
 						h = {
@@ -718,7 +718,7 @@
 				} = e;
 				const a = Object(o.d)(),
 					c = Object(P.a)(),
-					d = Object(o.e)(b.l);
+					d = Object(o.e)(b.m);
 				return d ? n.a.createElement("div", {
 					className: Object(i.a)(W.a.container, t)
 				}, n.a.createElement("div", {
@@ -757,7 +757,7 @@
 				Object(a.useLayoutEffect)(() => {
 					r()
 				});
-				const f = Object(o.e)(b.l),
+				const f = Object(o.e)(b.m),
 					v = Object(o.e)(p.e),
 					x = Object(o.e)(e => v ? Object(h.b)(e, {
 						subredditId: v.id
@@ -860,7 +860,7 @@
 					userHasBadge: f,
 					usernameClassName: v
 				} = e;
-				const x = Object(n.e)(e => Object(m.l)(e));
+				const x = Object(n.e)(e => Object(m.m)(e));
 				return x ? a.a.createElement("div", {
 					className: Object(r.a)(b.a.flairPreview, t),
 					"data-testid": "user-flair-preview"
@@ -1000,4 +1000,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.cb4b751f615c9249c92e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.b970c5f5279e35bfdade.js.map

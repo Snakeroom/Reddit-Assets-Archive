@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.35ed141296b4bb708b8b.js
-// Retrieved at 12/5/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.2951b106d25556d2dc1d.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -526,12 +526,12 @@
 							return e.focusedVerticals.api.pending.focusedVerticalGqlPending
 						})(r),
 						l = (e => {
-							const t = Object(g.Q)(e),
+							const t = Object(g.R)(e),
 								n = p.d.geoSubredditRecommendationDULoggedIn(e),
 								a = p.d.geoSubredditRecommendationDULoggedOut(e);
 							return t && n || !t && a
 						})(r),
-						m = Object(g.Q)(r);
+						m = Object(g.R)(r);
 					if (c || !l) return;
 					e(k());
 					let b = !1;
@@ -612,7 +612,7 @@
 							return e.focusedVerticals.api.error.focusedVerticalGqlError
 						})(c) || null === i || "client" === i) {
 						const n = null === (s = null === (a = Object(y.b)(t())) || void 0 === a ? void 0 : a.routeMatch) || void 0 === s ? void 0 : s.route.chunk,
-							i = Object(g.R)(c);
+							i = Object(g.S)(c);
 						return Object(r.i)(() => e(A()), {
 							name: "getFocusedVerticalsRequested",
 							page: n,
@@ -733,7 +733,7 @@
 						sort: d,
 						t: u,
 						correlationId: m
-					} = t, p = Object(R.i)(e), f = Object(D.ab)(e) || Object(D.R)(e), v = Object(F.b)(e), _ = Object(M.a)(e), x = Object(B.r)(e), {
+					} = t, p = Object(R.i)(e), f = Object(D.bb)(e) || Object(D.S)(e), v = Object(F.b)(e), _ = Object(M.a)(e), x = Object(B.r)(e), {
 						adsSeenCount: y,
 						totalPostsSeenCount: E,
 						sessionStartTime: O
@@ -999,8 +999,8 @@
 					const v = Object(Ie.a)();
 					t.correlationId = v;
 					const _ = null === (o = null === (i = Object(B.b)(g)) || void 0 === i ? void 0 : i.routeMatch) || void 0 === o ? void 0 : o.route.chunk,
-						x = Object(D.R)(g),
-						y = await Object(m.i)(() => z(r.gqlContext(), K(s(), t), Object(D.ab)(g), t.statsdPathsForExperiments), {
+						x = Object(D.S)(g),
+						y = await Object(m.i)(() => z(r.gqlContext(), K(s(), t), Object(D.bb)(g), t.statsdPathsForExperiments), {
 							name: "fetchFrontpageData",
 							isLoggedIn: x,
 							page: _
@@ -1086,7 +1086,7 @@
 					const s = t();
 					if (Object(Oe.a)(s)) return;
 					const r = null === (a = null === (n = Object(B.b)(t())) || void 0 === n ? void 0 : n.routeMatch) || void 0 === a ? void 0 : a.route.chunk,
-						c = Object(D.R)(s);
+						c = Object(D.S)(s);
 					return Object(m.i)(() => e(Object(Ee.d)()), {
 						name: "frontpageLinksRequested",
 						page: r,
@@ -1141,7 +1141,7 @@
 								t && (b.clickUrl = t)
 							}
 							b.correlationId = i.listings.postOrder.correlationIds[m];
-							const g = () => z(s(), K(i, b), Object(D.ab)(i), l),
+							const g = () => z(s(), K(i, b), Object(D.bb)(i), l),
 								f = await g(),
 								v = {
 									...f.body,
@@ -3529,12 +3529,12 @@
 			const Xe = "c1020",
 				Ye = "videos",
 				$e = Object(u.c)({
-					isMod: He.S,
-					isLoggedIn: He.Q,
+					isMod: He.T,
+					isLoggedIn: He.R,
 					shouldShowLocalRecommendations: e => !1 !== e.user.prefs.showLocationBasedRecommendations,
-					currentUser: He.l,
+					currentUser: He.m,
 					frontpageLinks: We.b,
-					isOver18: He.lb,
+					isOver18: He.mb,
 					isInBFFSLeaderboardExperiment: function(e) {
 						return Ue(e) === Re.p.RotateEven
 					},
@@ -3546,7 +3546,7 @@
 							n = !!Object(Ke.T)(e, Xe);
 						return (!t || !n) && function(e) {
 							return Object(De.c)(e, {
-								experimentEligibilitySelector: He.R,
+								experimentEligibilitySelector: He.S,
 								experimentName: Re.Nc
 							}) === Re.Ld
 						}(e)
@@ -4226,7 +4226,7 @@
 				} = e;
 				const i = Object(N.a)(),
 					l = Object(s.createRef)(),
-					d = Object(c.e)(S.eb),
+					d = Object(c.e)(S.fb),
 					u = Object(c.e)(C.a),
 					[m, p] = Object(s.useState)(null),
 					[b, h] = Object(s.useState)(null),
@@ -4335,7 +4335,7 @@
 				const n = Object(s.useRef)(null),
 					[m, p] = Object(s.useState)(""),
 					[E, O] = Object(s.useState)(!1),
-					I = Object(c.e)(S.eb),
+					I = Object(c.e)(S.fb),
 					w = Object(c.e)(A.a),
 					P = Object(c.e)(C.a),
 					T = Object(s.useRef)([]),
@@ -5388,7 +5388,7 @@
 						listingName: n,
 						pageLayer: a
 					}),
-					r = Object(l.F)(e) || Object(o.a)(e),
+					r = Object(l.G)(e) || Object(o.a)(e),
 					c = Object(i.e)(e);
 				return {
 					canShowAd: s && !r,
@@ -5596,7 +5596,7 @@
 					pageReferrer: p.X,
 					postListPlaceholderComponent: () => g.a,
 					isNpsScrollSurveyEnabled: v.e,
-					isLoggedIn: O.R
+					isLoggedIn: O.S
 				},
 				A = Object(s.c)(N),
 				C = e => ({
@@ -6854,7 +6854,7 @@
 				shouldRenderLoggedOutHomeFeed: ee.b,
 				isVoteCountAnimationEnabled: Y.h,
 				isCountAnimShadowTestEnabled: Y.e,
-				isLoggedIn: ie.R,
+				isLoggedIn: ie.S,
 				isPopular: U.H,
 				isRpanDuVisible: e => Object(ce.a)(e, {
 					listingName: le.R
@@ -7287,7 +7287,7 @@
 				i = n("./src/reddit/selectors/user.ts"),
 				o = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				l = n("./src/reddit/selectors/PublicAccessNetwork/api.ts");
-			const d = Object(a.a)(i.l, i.Ib, (e, t) => {
+			const d = Object(a.a)(i.m, i.Jb, (e, t) => {
 					let {
 						listingName: n
 					} = t;
@@ -7624,7 +7624,7 @@
 
 			function c(e) {
 				return Object(s.c)(e, {
-					experimentEligibilitySelector: r.R,
+					experimentEligibilitySelector: r.S,
 					experimentName: a.ld
 				})
 			}
@@ -7632,7 +7632,7 @@
 
 			function o(e) {
 				if (c(e)) return !1;
-				const t = Object(r.l)(e);
+				const t = Object(r.m)(e);
 				if (!t) return !1;
 				const n = (new Date).getTime() / 1e3 - t.created;
 				return n >= i && n <= 1.25 * i
@@ -7677,14 +7677,14 @@
 				r = n("./src/reddit/selectors/user.ts");
 			const c = e => {
 					const t = Object(s.c)(e, {
-						experimentEligibilitySelector: r.R,
+						experimentEligibilitySelector: r.S,
 						experimentName: a.rd
 					});
 					return !(!t || Object(a.vg)(t))
 				},
 				i = e => {
 					return Object(s.c)(e, {
-						experimentEligibilitySelector: r.R,
+						experimentEligibilitySelector: r.S,
 						experimentName: a.rd
 					}) === a.Pd.ListingEnabled
 				}
@@ -7889,4 +7889,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.35ed141296b4bb708b8b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.2951b106d25556d2dc1d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.0776bf82b5ed27923895.js
-// Retrieved at 12/5/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.628408559ab5d5d55acd.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1023,7 +1023,7 @@
 						activeDetails: b,
 						shopTabState: f
 					} = e, h = n();
-					o && Object(d.a)(Object(a.g)(o)(h)), Object(c.R)(h) ? await t(Object(s.h)(i.a.SNOOVATAR_MODAL, {
+					o && Object(d.a)(Object(a.g)(o)(h)), Object(c.S)(h) ? await t(Object(s.h)(i.a.SNOOVATAR_MODAL, {
 						share: l,
 						source: u,
 						activeTab: m,
@@ -1208,7 +1208,7 @@
 				L = Object(c.c)({
 					isCurrentUserProfilePost: _.l,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== h.Sb.TOPIC),
-					shouldOpenPostInNewTab: g.kb
+					shouldOpenPostInNewTab: g.lb
 				}),
 				R = Object(i.b)(L);
 			t.c = Object(v.b)(R(e => {
@@ -2237,7 +2237,7 @@
 						})
 					},
 					isNsfwBlurSubreddit: V.e,
-					shouldOpenPostInNewTab: H.kb
+					shouldOpenPostInNewTab: H.lb
 				}),
 				te = e => {
 					const {
@@ -3998,7 +3998,7 @@
 				d = (e, t) => n => {
 					const {
 						id: r
-					} = Object(i.Bb)(n, {
+					} = Object(i.Cb)(n, {
 						userName: t
 					});
 					return {
@@ -5046,7 +5046,7 @@
 						minSize: n,
 						userName: r
 					} = t;
-					const s = Object(c.Bb)(e, {
+					const s = Object(c.Cb)(e, {
 						userName: r
 					});
 					if (s && s.awardedLastMonth && s.awardedLastMonth.topAward) return b(e, {
@@ -5228,9 +5228,9 @@
 					}
 					return !(e.created > Date.UTC(2019, 0))
 				}),
-				f = Object(s.a)(d.l, o.a, (e, t) => !!((null == e ? void 0 : e.id) && (null == t ? void 0 : t.authorId)) && e.id === t.authorId),
+				f = Object(s.a)(d.m, o.a, (e, t) => !!((null == e ? void 0 : e.id) && (null == t ? void 0 : t.authorId)) && e.id === t.authorId),
 				h = Object(s.a)(o.a, e => !(!e || !1 !== e.isRobotIndexable))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.0776bf82b5ed27923895.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.628408559ab5d5d55acd.js.map

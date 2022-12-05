@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.c54004fe558ec8fe53f9.js
-// Retrieved at 12/1/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.e896986fd84065361b21.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, r) {
@@ -901,7 +901,7 @@
 							await r(Object(c.o)(t.name))
 						}
 					})(), (async () => {
-						const n = Object(y.Bb)(s, {
+						const n = Object(y.Cb)(s, {
 							userName: t
 						});
 						if (!n) return;
@@ -1144,7 +1144,7 @@
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(I.Bb)(e, {
+				user: (e, t) => Object(I.Cb)(e, {
 					userName: t.username
 				})
 			});
@@ -1450,9 +1450,9 @@
 			var Fe = Me;
 			const Be = Object(o.c)({
 					activeTooltipId: h.a,
-					currentUser: I.l,
-					isLoggedIn: I.R,
-					hideNSFWPref: I.G,
+					currentUser: I.m,
+					isLoggedIn: I.S,
+					hideNSFWPref: I.H,
 					moderatorPermissions: (e, t) => {
 						let {
 							subredditId: r
@@ -1479,7 +1479,7 @@
 							minSize: 32
 						})
 					},
-					user: I.Bb,
+					user: I.Cb,
 					userFlair: (e, t) => {
 						let {
 							subredditId: r
@@ -1505,7 +1505,7 @@
 						return !!s && Object(b.i)(e, s)
 					},
 					trophyCase: (e, t) => Object(v.t)(e, Object(v.o)(e, t.userName)),
-					isNightMode: I.eb,
+					isNightMode: I.fb,
 					lastAuthorModNote: (e, t) => {
 						if (!t.contextId) return;
 						const r = Object(l.a)(t.contextId) ? Object(p.G)(e, {
@@ -1773,8 +1773,8 @@
 				a = r("./src/reddit/actions/preferences.ts"),
 				o = r("./src/reddit/selectors/user.ts");
 			const d = Object(s.c)({
-					currentUser: o.l,
-					hideNSFWPref: o.G
+					currentUser: o.m,
+					hideNSFWPref: o.H
 				}),
 				i = Object(n.b)(d, e => ({
 					imageUpdateRequested: (t, r) => e(Object(a.D)(t, r))
@@ -2686,4 +2686,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.c54004fe558ec8fe53f9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.e896986fd84065361b21.js.map

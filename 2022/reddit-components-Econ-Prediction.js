@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.7e53cabbe7fe3e3349e0.js
-// Retrieved at 11/29/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.e59b012b0596fe946c5f.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, n) {
@@ -493,14 +493,14 @@
 					post: t,
 					prediction: n
 				} = e;
-				const i = Object(r.e)(m.Db),
+				const i = Object(r.e)(m.Eb),
 					{
 						isLoading: c,
 						selectedVoteOption: a,
 						setVoteOptionId: d,
 						predict: l
 					} = function(e) {
-						const [t, n] = Object(s.useState)(!1), [o, i] = Object(s.useState)(null), c = Object(I.a)(), a = Object(r.e)(m.f), d = Object(x.a)(), l = Object(r.d)(), u = e.options.find(e => {
+						const [t, n] = Object(s.useState)(!1), [o, i] = Object(s.useState)(null), c = Object(I.a)(), a = Object(r.e)(m.g), d = Object(x.a)(), l = Object(r.d)(), u = e.options.find(e => {
 							let {
 								id: t
 							} = e;
@@ -875,9 +875,9 @@
 					subredditId: s
 				} = e;
 				var i;
-				const a = Object(r.e)(m.eb),
-					d = Object(r.e)(m.l),
-					l = Object(r.e)(m.G),
+				const a = Object(r.e)(m.fb),
+					d = Object(r.e)(m.m),
+					l = Object(r.e)(m.H),
 					u = Object(r.e)(e => Object(fe.f)(e, {
 						subredditId: s
 					}));
@@ -979,7 +979,7 @@
 					prediction: d.g,
 					post: u.G,
 					subredditOrProfile: u.V,
-					userId: m.Db
+					userId: m.Eb
 				}),
 				Ne = Object(a.v)({
 					isCommentsPage: a.y,
@@ -1743,4 +1743,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.7e53cabbe7fe3e3349e0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.e59b012b0596fe946c5f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.1074291be232e5b1fe21.js
-// Retrieved at 12/5/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.90a13977ab74addbbcdd.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, s) {
@@ -67,7 +67,7 @@
 					let {
 						apiContext: n
 					} = r;
-					if (!Object(O.R)(s())) return void t(Object(a.i)(u.a.LOGIN_MODAL_ID));
+					if (!Object(O.S)(s())) return void t(Object(a.i)(u.a.LOGIN_MODAL_ID));
 					const d = s().features.comments.models[e];
 					if (!d) return;
 					const i = d.isLocked ? l.l : l.f;
@@ -1748,7 +1748,7 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				n = s("./src/reddit/selectors/user.ts");
 			const d = e => Object(r.c)(e, {
-				experimentEligibilitySelector: n.R,
+				experimentEligibilitySelector: n.S,
 				experimentName: o.Yb
 			}) === o.Ld
 		},
@@ -1762,7 +1762,7 @@
 				n = s("./src/reddit/selectors/user.ts"),
 				d = s("./src/reddit/selectors/experiments/modqueueActionBarUXImprovements.ts");
 			const a = e => Object(d.a)(e) && Object(r.c)(e, {
-				experimentEligibilitySelector: n.R,
+				experimentEligibilitySelector: n.S,
 				experimentName: o.xc
 			}) === o.Ld
 		},
@@ -1848,4 +1848,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.1074291be232e5b1fe21.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.90a13977ab74addbbcdd.js.map

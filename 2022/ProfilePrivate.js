@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.d3509511080d068225b4.js
-// Retrieved at 12/5/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.fd8cc46006cd72b00eb0.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -748,7 +748,7 @@
 								a(t + 32)
 							}
 						}, []),
-						m = Object(o.e)(f.R),
+						m = Object(o.e)(f.S),
 						u = encodeURIComponent(b.a.redditUrl + "/r/recap"),
 						g = b.a.accountManagerOrigin,
 						x = m ? "/r/recap" : `${g}/login/?dest=${u}`;
@@ -822,7 +822,7 @@
 					[v, y] = Object(n.useState)(),
 					[C, w] = Object(n.useState)(),
 					[P, N] = Object(n.useState)(0),
-					T = Object(o.e)(f.l),
+					T = Object(o.e)(f.m),
 					L = Object(o.e)(O),
 					R = Object(o.e)(E.a),
 					M = Object(o.e)(k.a),
@@ -908,7 +908,7 @@
 					let {
 						postId: t
 					} = e;
-					const s = Object(h.e)(C.eb),
+					const s = Object(h.e)(C.fb),
 						[o, d] = Object(n.useState)(!1),
 						[a, c] = Object(n.useState)(w());
 					return Object(n.useEffect)(() => {
@@ -1480,7 +1480,7 @@
 							commentId: s.postId
 						})
 					},
-					isLoggedIn: ee.R,
+					isLoggedIn: ee.S,
 					moderatorPermissions: (e, t) => {
 						let {
 							comment: s
@@ -1489,7 +1489,7 @@
 							subredditId: s.subredditId
 						})
 					},
-					currentUser: ee.l,
+					currentUser: ee.m,
 					modModeEnabled: D.W,
 					postIsLocked: (e, t) => {
 						let {
@@ -2082,7 +2082,7 @@
 				let {
 					roomId: t
 				} = e;
-				const s = Object(o.e)(m.eb),
+				const s = Object(o.e)(m.fb),
 					[d, a] = Object(n.useState)(!1),
 					l = Object(o.d)(),
 					u = Object(f.b)(),
@@ -2135,12 +2135,12 @@
 				} = e;
 				const f = Object(o.d)(),
 					g = Object(l.a)(),
-					v = Object(o.e)(m.G),
-					x = Object(o.e)(m.eb),
-					y = Object(o.e)(e => Object(m.Eb)(e, {
+					v = Object(o.e)(m.H),
+					x = Object(o.e)(m.fb),
+					y = Object(o.e)(e => Object(m.Fb)(e, {
 						postId: s
 					})),
-					C = Object(o.e)(e => Object(m.Bb)(e, {
+					C = Object(o.e)(e => Object(m.Cb)(e, {
 						userName: t
 					}));
 				Object(n.useEffect)(() => {
@@ -2541,7 +2541,7 @@
 						return s && s.coinPrice >= a.g
 					})
 				},
-				isNightmodeOn: v.eb
+				isNightmodeOn: v.fb
 			}), e => ({
 				openPost: t => e(Object(m.K)(t))
 			}));
@@ -3146,7 +3146,7 @@
 				}),
 				A = Object(p.c)({
 					isDropdownMenuOpen: e => Object(_.a)(e) === B,
-					isOwnProfile: (e, t) => Object(I.X)(e, t.profileName),
+					isOwnProfile: (e, t) => Object(I.Y)(e, t.profileName),
 					isHistoryTabEnabled: S.a,
 					isSnoovatar30Enabled: j.d.snoovatar30,
 					isSubscriptionsPinned: P.c
@@ -3741,7 +3741,7 @@
 				h = s("./src/reddit/components/SidebarProfileModeratedSubreddits/index.m.less"),
 				f = s.n(h);
 			const g = Object(d.c)({
-					currentUser: b.l,
+					currentUser: b.m,
 					moderated: u.p,
 					subscriptions: p.e,
 					hasMoreModerated: u.e,
@@ -4243,8 +4243,8 @@
 					onClick: e.onBottomButtonClick
 				}, e.bottomButtonText)))),
 				S = Object(a.c)({
-					hideNSFWPref: C.G,
-					nightmode: C.eb
+					hideNSFWPref: C.H,
+					nightmode: C.fb
 				}),
 				_ = Object(r.b)(S)(e => o.a.createElement("div", {
 					className: Object(c.a)(k.a.communityItemContainer, {
@@ -4449,7 +4449,7 @@
 					let {
 						subredditOrProfile: s
 					} = t;
-					return s.type === l.a.PROFILE ? Object(b.Bb)(e, {
+					return s.type === l.a.PROFILE ? Object(b.Cb)(e, {
 						userName: s.name
 					}) : null
 				}
@@ -4530,10 +4530,10 @@
 						n = t.redditStyle || Object(f.l)(e, {
 							subredditId: s
 						}),
-						i = Object(g.eb)(e);
+						i = Object(g.fb)(e);
 					return n || i
 				},
-				nigtmode: g.eb,
+				nigtmode: g.fb,
 				subredditId: m.o,
 				topPostVariant: h.d
 			}));
@@ -4640,14 +4640,14 @@
 				g = s("./src/reddit/selectors/showPromotedCTA.ts"),
 				v = s("./src/reddit/selectors/user.ts");
 			const x = {
-					autoplayPref: v.c,
+					autoplayPref: v.d,
 					activeModalId: m.a,
 					crosspost: f.d,
 					isActive: f.j,
 					isChatPost: u.d,
 					isCurrentUserProfilePost: f.l,
 					isExpanded: f.m,
-					isLoggedIn: v.R,
+					isLoggedIn: v.S,
 					showPromotedCTA: g.a,
 					moderatorPermissions: b.m,
 					modModeEnabled: c.W,
@@ -6426,7 +6426,7 @@
 						} = t;
 						return e.pages.profileOverview.chrono.api.pending[s]
 					},
-					currentUser: W.l,
+					currentUser: W.m,
 					layout: O.U,
 					loadMore: (e, t) => {
 						let {
@@ -6505,11 +6505,11 @@
 					subredditsById: e => e.subreddits.models,
 					postsById: e => e.posts.models,
 					viewportDataLoaded: (e, t) => !Q(e, t) && !Y(e, t),
-					isLoggedIn: W.R
+					isLoggedIn: W.S
 				},
 				te = Object(r.c)({
 					...ee,
-					currentUser: W.l,
+					currentUser: W.m,
 					commentsById: e => e.features.comments.models,
 					itemIds: (e, t) => {
 						let {
@@ -6565,7 +6565,7 @@
 				ce = s("./src/reddit/pages/ProfilePrivate/index.m.less"),
 				le = s.n(ce);
 			const me = Object(r.c)({
-					currentUser: W.l
+					currentUser: W.m
 				}),
 				ue = Object(o.b)(me, (e, t) => ({
 					onLoadMore: () => e(Object(d.moreProfilePrivateRequested)(t.match.params.listingType))
@@ -6748,4 +6748,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.d3509511080d068225b4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.fd8cc46006cd72b00eb0.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Predictions.7021a5595235113b3710.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Predictions.076eaff435be831154c0.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Predictions"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -872,7 +872,7 @@
 				tournamentName: "2020 Eurocup"
 			}], H = () => {
 				const e = Object(k.a)(),
-					t = Object(l.e)(q.eb),
+					t = Object(l.e)(q.fb),
 					a = Object(L.a)(),
 					r = () => {
 						e((() => e => ({
@@ -1122,7 +1122,7 @@
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
 			t.default = () => {
 				const e = Object(k.a)(),
-					t = Object(l.e)(q.eb),
+					t = Object(l.e)(q.fb),
 					[a, m] = Object(r.useState)(!1);
 				let d = !1;
 				"undefined" != typeof window && void 0 !== window.navigator && (d = Object(c.b)() === c.a), Object(r.useEffect)(() => {
@@ -1289,7 +1289,7 @@
 				}))
 			};
 			const ce = () => {
-				const e = Object(l.e)(q.eb);
+				const e = Object(l.e)(q.fb);
 				return i.a.createElement("div", {
 					className: le.a.ctaButtonCirclesAndBolt
 				}, i.a.createElement("div", {
@@ -1312,4 +1312,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Predictions.7021a5595235113b3710.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Predictions.076eaff435be831154c0.js.map

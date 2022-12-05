@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.b783627fddab4f80d3ed.js
-// Retrieved at 12/1/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.d73c370658221f544a80.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~SubredditForkingCTA"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, r) {
@@ -51,7 +51,7 @@
 				variables: a(t)
 			}), u = r("./node_modules/fbt/lib/FbtPublic.js"), l = r("./src/reddit/models/Toast/index.ts"), b = r("./node_modules/reselect/es/index.js"), f = r("./src/reddit/constants/experiments.ts"), p = r("./src/reddit/helpers/chooseVariant/index.ts"), m = r("./src/reddit/selectors/user.ts");
 			const h = Object(b.a)(e => Object(p.c)(e, {
-				experimentEligibilitySelector: m.R,
+				experimentEligibilitySelector: m.S,
 				experimentName: f.Tb
 			}), e => e === f.Ld);
 			var O = r("./src/reddit/actions/toaster.ts");
@@ -1042,7 +1042,7 @@
 								kind: I.p.POLL,
 								poll: y
 							}) : u.kind === I.p.GALLERY ? await Object(h.a)(d(), u) : await Object(h.c)(d(), u)).ok) {
-						const e = Object(N.l)(c),
+						const e = Object(N.m)(c),
 							r = g.body;
 						t(M({
 							draftId: u.draftId,
@@ -1472,7 +1472,7 @@
 						}
 						await t(Object(s.b)(`${r.path}`)), p ? p === b.Oe.NewModule && t(Object(c.h)({
 							tooltipId: u.MOD_WELCOME_TOOLTIP_ID
-						})) : (t(Object(o.h)(f.a.POST_FLOW_UPSELL_MODAL_ID)), Object(k.a)(Object(E.g)()(T))), Object(j.b)(j.a.SubredditCreation), t(Object(x.f)(d, null !== (g = Object(C.cb)(T)) && void 0 !== g ? g : Object(P.j)(T)))
+						})) : (t(Object(o.h)(f.a.POST_FLOW_UPSELL_MODAL_ID)), Object(k.a)(Object(E.g)()(T))), Object(j.b)(j.a.SubredditCreation), t(Object(x.f)(d, null !== (g = Object(C.db)(T)) && void 0 !== g ? g : Object(P.j)(T)))
 					} else w.error && Object(k.a)(Object(E.h)(w.error.type, N)(T)), t(U({
 						subredditName: N,
 						error: w.error
@@ -2955,4 +2955,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.b783627fddab4f80d3ed.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.d73c370658221f544a80.js.map

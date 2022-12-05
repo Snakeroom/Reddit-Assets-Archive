@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.97214d1158df97f7c263.js
-// Retrieved at 12/5/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.9e6aa8494ef86e906a39.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -491,7 +491,7 @@
 							await n(Object(d.o)(t.name))
 						}
 					})(), (async () => {
-						const a = Object(k.Bb)(r, {
+						const a = Object(k.Cb)(r, {
 							userName: t
 						});
 						if (!a) return;
@@ -1396,7 +1396,7 @@
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(g.Bb)(e, {
+				user: (e, t) => Object(g.Cb)(e, {
 					userName: t.username
 				})
 			});
@@ -1702,9 +1702,9 @@
 			var Ae = Be;
 			const Te = Object(s.c)({
 					activeTooltipId: _.a,
-					currentUser: g.l,
-					isLoggedIn: g.R,
-					hideNSFWPref: g.G,
+					currentUser: g.m,
+					isLoggedIn: g.S,
+					hideNSFWPref: g.H,
 					moderatorPermissions: (e, t) => {
 						let {
 							subredditId: n
@@ -1731,7 +1731,7 @@
 							minSize: 32
 						})
 					},
-					user: g.Bb,
+					user: g.Cb,
 					userFlair: (e, t) => {
 						let {
 							subredditId: n
@@ -1757,7 +1757,7 @@
 						return !!r && Object(b.i)(e, r)
 					},
 					trophyCase: (e, t) => Object(h.t)(e, Object(h.o)(e, t.userName)),
-					isNightMode: g.eb,
+					isNightMode: g.fb,
 					lastAuthorModNote: (e, t) => {
 						if (!t.contextId) return;
 						const n = Object(l.a)(t.contextId) ? Object(f.G)(e, {
@@ -1948,7 +1948,7 @@
 						subredditId: s,
 						userId: c,
 						thingId: l
-					} = e, [m, b] = Object(a.useState)(), [p, h] = Object(a.useState)(!0), [g, y] = Object(a.useState)(""), [S, B] = Object(a.useState)(!1), A = Object(o.e)(E.eb);
+					} = e, [m, b] = Object(a.useState)(), [p, h] = Object(a.useState)(!0), [g, y] = Object(a.useState)(""), [S, B] = Object(a.useState)(!1), A = Object(o.e)(E.fb);
 					Object(a.useEffect)(() => {
 						const e = e => {
 							e.style.height = "inherit";
@@ -2328,7 +2328,7 @@
 						onClickLinked: a
 					} = e;
 					var s, i;
-					const c = Object(o.e)(E.eb),
+					const c = Object(o.e)(E.fb),
 						l = "label" in n && n.label || j.c,
 						u = "note" in n ? n.note : void 0,
 						m = n.postInfo ? null === (s = n.postInfo) || void 0 === s ? void 0 : s.permalink : n.commentInfo ? null === (i = n.commentInfo) || void 0 === i ? void 0 : i.permalink : void 0;
@@ -2544,7 +2544,7 @@
 					const {
 						modNote: t,
 						subredditId: n
-					} = e, a = Object(o.e)(E.eb), s = Object(b.a)(), i = !!t.__typename && ["ModActionNote", "ModActionNotePost", "ModActionNoteComment"].includes(t.__typename);
+					} = e, a = Object(o.e)(E.fb), s = Object(b.a)(), i = !!t.__typename && ["ModActionNote", "ModActionNotePost", "ModActionNoteComment"].includes(t.__typename);
 					return r.a.createElement("div", {
 						className: Object(d.a)(J.a.wrapper, e.className)
 					}, r.a.createElement("div", {
@@ -2644,7 +2644,7 @@
 							userId: i,
 							filter: c
 						} = e,
-						l = Object(o.e)(e => Object(E.Ab)(e, {
+						l = Object(o.e)(e => Object(E.Bb)(e, {
 							userId: i
 						})),
 						u = Object(o.e)(e => Object(T.Y)(e, {
@@ -2725,7 +2725,7 @@
 						subredditId: n,
 						userId: s,
 						filter: c
-					} = e, l = Object(o.d)(), u = Object(o.e)(E.eb), [m, b] = Object(a.useState)(!0);
+					} = e, l = Object(o.d)(), u = Object(o.e)(E.fb), [m, b] = Object(a.useState)(!0);
 					Object(a.useEffect)(() => {
 						setTimeout(() => b(!1), 0)
 					}, []);
@@ -2811,7 +2811,7 @@
 						} = e,
 						[x, _] = Object(a.useState)(h || S.y.All),
 						[g, I] = Object(a.useState)(s),
-						C = Object(o.e)(E.eb),
+						C = Object(o.e)(E.fb),
 						O = Object(b.a)(),
 						N = e => {
 							t(Object(i.f)({
@@ -2942,7 +2942,7 @@
 						x = Object(o.e)(t => Object(ft.b)(bt.c.access)(t, e)),
 						_ = Object(o.e)(t => Object(ft.b)(bt.c.mail)(t, e)),
 						g = Object(o.e)(t => Object(ft.b)(bt.c.flair)(t, e)),
-						I = Object(o.e)(e => Object(E.Bb)(e, {
+						I = Object(o.e)(e => Object(E.Cb)(e, {
 							userName: u
 						})),
 						C = Object(o.e)(e => !!Object(pt.b)(e, {
@@ -2951,7 +2951,7 @@
 						})),
 						O = Object(o.e)(e => Object(ht.a)(e, l, I.id)),
 						N = Object(o.e)(e => Object(vt.g)(e, l, I.id)),
-						j = Object(o.e)(E.l),
+						j = Object(o.e)(E.m),
 						y = !!j && Object(rt.e)(j) === u,
 						w = Object(o.e)(e => l ? e.subreddits.models[l] : null),
 						P = Object(o.e)(e => {
@@ -3405,7 +3405,7 @@
 						}
 					})()
 				}, [c]);
-				const l = Object(o.e)(e => c && Object(E.Bb)(e, {
+				const l = Object(o.e)(e => c && Object(E.Cb)(e, {
 					userName: c
 				}));
 				return i ? c && l ? r.a.createElement(Tt, Mt({}, e, {
@@ -3887,7 +3887,7 @@
 					isFromMiniInbox: t
 				} = e;
 				const n = Object(o.e)(h),
-					a = Object(o.e)(v.j);
+					a = Object(o.e)(v.k);
 				return (null == n ? void 0 : n.length) && a ? r.a.createElement(r.a.Fragment, null, null == n ? void 0 : n.map(e => r.a.createElement(g, {
 					banner: e,
 					isFromMiniInbox: t,
@@ -4507,7 +4507,7 @@
 				e.LastAuthorUserNoteTooltip = "LastAuthorUserNoteTooltip", e.ModIdCard = "ModIdCard"
 			}(a || (a = {}));
 			t.b = e => {
-				const t = Object(s.e)(p.eb),
+				const t = Object(s.e)(p.fb),
 					{
 						className: n,
 						modNote: a,
@@ -4886,8 +4886,8 @@
 				o = n("./src/reddit/actions/preferences.ts"),
 				s = n("./src/reddit/selectors/user.ts");
 			const i = Object(r.c)({
-					currentUser: s.l,
-					hideNSFWPref: s.G
+					currentUser: s.m,
+					hideNSFWPref: s.H
 				}),
 				c = Object(a.b)(i, e => ({
 					imageUpdateRequested: (t, n) => e(Object(o.D)(t, n))
@@ -6371,7 +6371,7 @@
 						subredditId: n,
 						username: a
 					} = t;
-					const r = Object(s.Bb)(e, {
+					const r = Object(s.Cb)(e, {
 						userName: a
 					});
 					if (!r) return;
@@ -6581,4 +6581,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.97214d1158df97f7c263.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.9e6aa8494ef86e906a39.js.map

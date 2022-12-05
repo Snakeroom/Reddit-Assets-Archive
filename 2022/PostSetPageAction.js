@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostSetPageAction.b69924c5c49d869ee252.js
-// Retrieved at 12/1/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostSetPageAction.59bd0f04814a130ce501.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostSetPageAction"], {
 		"./src/reddit/actions/pages/postSetPage/index.ts": function(e, t, s) {
@@ -7,9 +7,9 @@
 			s.r(t), s.d(t, "postSetPagePending", (function() {
 				return x
 			})), s.d(t, "postSetPageLoaded", (function() {
-				return g
+				return m
 			})), s.d(t, "postSetPageFailed", (function() {
-				return j
+				return g
 			})), s.d(t, "postSetPageRequested", (function() {
 				return y
 			}));
@@ -26,20 +26,20 @@
 				b = s("./src/reddit/selectors/user.ts"),
 				O = s("./src/reddit/actions/pages/postSetPage/constants.ts");
 			const x = Object(i.a)(O.c),
-				g = Object(i.a)(O.b),
-				j = Object(i.a)(O.a),
-				m = (e, t) => async (s, r, i) => {
+				m = Object(i.a)(O.b),
+				g = Object(i.a)(O.a),
+				j = (e, t) => async (s, r, i) => {
 					let {
 						gqlContext: l
 					} = i;
 					const b = r(),
 						O = Object(p.A)(t),
-						m = Object(a.b)(e, O);
+						j = Object(a.b)(e, O);
 					if (Object(u.Q)(b, {
-							listingKey: m
+							listingKey: j
 						}).length > 0) return;
 					s(x({
-						key: m
+						key: j
 					}));
 					const y = await (async (e, t) => {
 						return await Object(o.a)(e, {
@@ -61,8 +61,8 @@
 									post: e
 								} = Object(d.a)(s);
 								n[e.id] = e
-							} s(g({
-							key: m,
+							} s(m({
+							key: j,
 							posts: n,
 							postIds: r
 						}))
@@ -70,8 +70,8 @@
 						const e = y.error || {
 							type: n.L.UNKNOWN_ERROR
 						};
-						s(j({
-							key: m,
+						s(g({
+							key: j,
 							error: e
 						}))
 					}
@@ -81,8 +81,8 @@
 					} = e, {
 						profileName: i,
 						partialPostSetId: o
-					} = n, c = s(), d = Object(b.l)(c), a = !!d && d.displayText === i, p = Object(l.b)(c, a), u = Object(l.a)(c);
-					t(p || u ? m(i, o) : Object(r.c)(`/user/${i}/`))
+					} = n, c = s(), d = Object(b.m)(c), a = !!d && d.displayText === i, p = Object(l.b)(c, a), u = Object(l.a)(c);
+					t(p || u ? j(i, o) : Object(r.c)(`/user/${i}/`))
 				}
 		},
 		"./src/reddit/selectors/experiments/postSets.ts": function(e, t, s) {
@@ -112,4 +112,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPageAction.b69924c5c49d869ee252.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPageAction.59bd0f04814a130ce501.js.map

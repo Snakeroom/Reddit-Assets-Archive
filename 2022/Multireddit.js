@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.6096fd29897c0248a8a8.js
-// Retrieved at 12/5/2022, 10:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.877b1e5318febccff86c.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, n) {
@@ -411,10 +411,10 @@
 						name: `${s.qc}${e.name}`,
 						type: e.type
 					});
-					if (!Object(j.R)(d())) return i(Object(a.k)({
+					if (!Object(j.S)(d())) return i(Object(a.k)({
 						actionSource: a.a.Subscribe
 					})), void i(Object(c.openRegisterModal)());
-					const _ = Object(j.l)(d());
+					const _ = Object(j.m)(d());
 					if (_) {
 						const t = p.length,
 							n = e.length;
@@ -557,7 +557,7 @@
 					} = o;
 					const c = n(),
 						a = c.multireddits.models;
-					if (!Object(j.R)(c)) return;
+					if (!Object(j.S)(c)) return;
 					const d = function() {
 							let e = !(arguments.length > 0 && void 0 !== arguments[0]) || arguments[0];
 							t(Object(l.f)({
@@ -1425,10 +1425,10 @@
 				}).apply(this, arguments)
 			}
 			const _ = Object(c.c)({
-					currentUser: d.l,
-					isNightMode: d.eb,
-					isPresenceUserPrefEnabled: d.W,
-					shouldHideNSFW: d.G
+					currentUser: d.m,
+					isNightMode: d.fb,
+					isPresenceUserPrefEnabled: d.X,
+					shouldHideNSFW: d.H
 				}),
 				E = Object(i.b)(_);
 			t.a = E(e => {
@@ -1941,7 +1941,7 @@
 						experimentName: r.of
 					}) === r.Ld
 				},
-				d = Object(c.a)(i.R, (e, t) => {
+				d = Object(c.a)(i.S, (e, t) => {
 					let {
 						pageLayer: n
 					} = t;
@@ -1966,7 +1966,7 @@
 				o = n("./src/reddit/reducers/user/experiments/shredditPDPExperimentHeader/index.ts"),
 				i = n("./node_modules/reselect/es/index.js"),
 				c = n("./src/reddit/selectors/user.ts");
-			const a = Object(i.a)(c.R, e => !e),
+			const a = Object(i.a)(c.S, e => !e),
 				d = Object(i.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: a,
 					experimentName: r.Gf
@@ -2004,4 +2004,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.6096fd29897c0248a8a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.877b1e5318febccff86c.js.map

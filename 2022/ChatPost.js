@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.b8c1f4093e3926bab5e7.js
-// Retrieved at 12/5/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.66c9e6ae1d47cd1263c5.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/backo2/index.js": function(e, t) {
@@ -1205,7 +1205,7 @@
 						apiContext: l
 					} = s;
 					const m = n(),
-						u = Object(d.l)(m),
+						u = Object(d.m)(m),
 						p = u ? u.id : void 0,
 						h = m.user.blocked.data.filter(t => t.name === e)[0];
 					p && (t(_({
@@ -3220,7 +3220,7 @@
 					});
 					if (!a) return;
 					const i = Object(be.a)(e, n),
-						c = Object(ye.j)(e);
+						c = Object(ye.k)(e);
 					return Object(se.a)(null === (r = e.user.session) || void 0 === r ? void 0 : r.accessToken).mutate({
 						mutation: re.publish,
 						variables: {
@@ -3260,7 +3260,7 @@
 						gqlContext: r
 					} = s;
 					const a = n();
-					if (!Object(ye.R)(a)) return t(Object(ae.openLoginModal)());
+					if (!Object(ye.S)(a)) return t(Object(ae.openLoginModal)());
 					if (!Oe(a, e.awardId, e.commentId)) {
 						t(we(e));
 						try {
@@ -3316,7 +3316,7 @@
 						gqlContext: a
 					} = r;
 					const i = s();
-					if (!Object(ye.R)(i)) return n(Object(ae.openLoginModal)());
+					if (!Object(ye.S)(i)) return n(Object(ae.openLoginModal)());
 					if (!Oe(i, e.awardId, e.commentId)) {
 						n(Me(e));
 						try {
@@ -3684,7 +3684,7 @@
 					const r = t.id,
 						a = Object(h.d)(),
 						i = Object(Et.a)(),
-						c = Object(h.e)(ye.l),
+						c = Object(h.e)(ye.m),
 						d = Object(h.e)(e => Object(kt.c)(e, t.authorId)),
 						l = c && c.id === t.authorId,
 						m = p.a.useCallback(e => {
@@ -3803,7 +3803,7 @@
 						} = t;
 						return Ee(e, n.subredditId)
 					},
-					currentUser: ye.l,
+					currentUser: ye.m,
 					isMod: (e, t) => {
 						let {
 							comment: n
@@ -4124,7 +4124,7 @@
 							thing: t
 						})),
 						d = Object(h.e)(e => {
-							const n = Object(ye.l)(e);
+							const n = Object(ye.m)(e);
 							return (null == n ? void 0 : n.id) === t.authorId
 						}),
 						l = Mt(),
@@ -4839,12 +4839,12 @@
 					liveCommentsWebsocket: _o.E,
 					moreCommentsLink: K.H,
 					isCommentReactionStreamingKillSwitchEnabled: Ce.g,
-					currentUserId: ye.j,
+					currentUserId: ye.k,
 					comments: q.a,
 					isLiveChatThreadingEnabled: Ce.e,
 					showReactionsHint: e => {
 						const t = Object(Ce.d)(e),
-							n = Object(ye.a)(3 * r.E)(e),
+							n = Object(ye.b)(3 * r.E)(e),
 							o = Object(go.a)(e, {
 								experience: Eo.Y.LiveChatReactionEdu
 							});
@@ -6381,7 +6381,7 @@
 				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = n("./src/reddit/selectors/user.ts");
 			const a = e => Object(s.c)(e, {
-				experimentEligibilitySelector: r.R,
+				experimentEligibilitySelector: r.S,
 				experimentName: o.Yb
 			}) === o.Ld
 		},
@@ -6482,4 +6482,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.b8c1f4093e3926bab5e7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.66c9e6ae1d47cd1263c5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.6ae7348c5351b66c4122.js
-// Retrieved at 11/30/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.70ef48b956c6d0a13bfc.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, s) {
@@ -138,7 +138,7 @@
 			})), s.d(t, "d", (function() {
 				return L
 			})), s.d(t, "c", (function() {
-				return R
+				return M
 			})), s.d(t, "a", (function() {
 				return A
 			})), s.d(t, "b", (function() {
@@ -238,10 +238,10 @@
 						name: `${i.qc}${e.name}`,
 						type: e.type
 					});
-					if (!Object(j.R)(c())) return o(Object(a.k)({
+					if (!Object(j.S)(c())) return o(Object(a.k)({
 						actionSource: a.a.Subscribe
 					})), void o(Object(d.openRegisterModal)());
-					const f = Object(j.l)(c());
+					const f = Object(j.m)(c());
 					if (f) {
 						const t = p.length,
 							s = e.length;
@@ -309,7 +309,7 @@
 						o(Object(l.f)(Object(l.e)(i, y.b.Error)))
 					}
 					return O.ok
-				}, D = Object(o.a)(c.f), R = e => async (t, s, n) => {
+				}, D = Object(o.a)(c.f), M = e => async (t, s, n) => {
 					let {
 						apiContext: i
 					} = n;
@@ -347,7 +347,7 @@
 						text: v(),
 						kind: y.b.Error
 					}))))
-				}, M = Object(o.a)(c.d), A = e => async (t, s, n) => {
+				}, R = Object(o.a)(c.d), A = e => async (t, s, n) => {
 					let {
 						apiContext: r
 					} = n;
@@ -361,7 +361,7 @@
 						a = o[e];
 					if (!a) return void d();
 					const c = !a.isFavorited;
-					t(M({
+					t(R({
 						makeFavorite: c,
 						multiredditPath: e,
 						multiredditsModelsState: o
@@ -373,7 +373,7 @@
 							multipath: t,
 							api_type: "json"
 						}
-					}))(r(), e, c)).ok || (t(M({
+					}))(r(), e, c)).ok || (t(R({
 						makeFavorite: !c,
 						multiredditPath: e,
 						multiredditsModelsState: o
@@ -384,7 +384,7 @@
 					} = r;
 					const d = s(),
 						a = d.multireddits.models;
-					if (!Object(j.R)(d)) return;
+					if (!Object(j.S)(d)) return;
 					const c = function() {
 							let e = !(arguments.length > 0 && void 0 !== arguments[0]) || arguments[0];
 							t(Object(l.f)({
@@ -778,15 +778,15 @@
 				w = s("./src/lib/prettyPrintNumber/index.ts"),
 				L = s("./src/reddit/actions/focusedVerticals/constants.ts"),
 				D = s("./src/reddit/components/SubredditIcon/index.tsx"),
-				R = s("./src/reddit/components/SubredditNameLink/index.tsx"),
-				M = s("./src/reddit/components/SubscribeButton/Inline.tsx"),
+				M = s("./src/reddit/components/SubredditNameLink/index.tsx"),
+				R = s("./src/reddit/components/SubscribeButton/Inline.tsx"),
 				A = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				U = s("./src/reddit/constants/posts.ts"),
 				B = s("./src/reddit/controls/MetaData/index.tsx"),
 				F = s("./src/reddit/helpers/trackers/discoveryUnit.ts"),
 				q = s("./src/reddit/helpers/trackers/subredditMentions.ts"),
-				G = s("./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/SubredditItem/index.m.less"),
-				H = s.n(G);
+				H = s("./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/SubredditItem/index.m.less"),
+				G = s.n(H);
 			const {
 				fbt: W
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), K = Object(a.c)({
@@ -847,27 +847,27 @@
 						a = Object(w.b)(d),
 						c = Object(w.b)(i.accountsActive);
 					return o.a.createElement("div", {
-						className: Object(P.a)(H.a.subredditContainer, {
-							[H.a.hideBottomBorder]: e
+						className: Object(P.a)(G.a.subredditContainer, {
+							[G.a.hideBottomBorder]: e
 						})
 					}, o.a.createElement("div", {
-						className: H.a.subredditContent
+						className: G.a.subredditContent
 					}, o.a.createElement("div", null, o.a.createElement(k.a, {
 						to: n.url,
 						onClick: this.onSubredditClick
 					}, o.a.createElement(D.b, {
 						subredditOrProfile: n,
-						className: H.a.iconContainer
+						className: G.a.iconContainer
 					}))), o.a.createElement("div", {
-						className: H.a.subredditBodyWrapper
+						className: G.a.subredditBodyWrapper
 					}, o.a.createElement("div", {
-						className: H.a.subredditBody,
+						className: G.a.subredditBody,
 						"data-click-id": "body"
-					}, o.a.createElement(R.a, {
-						className: H.a.subredditTitle,
+					}, o.a.createElement(M.a, {
+						className: G.a.subredditTitle,
 						to: n.url,
 						onClick: this.onSubredditClick
-					}, n.displayText), o.a.createElement("div", null, o.a.createElement(M.a, {
+					}, n.displayText), o.a.createElement("div", null, o.a.createElement(R.a, {
 						identifier: {
 							name: n.name,
 							type: U.a.SUBREDDIT
@@ -876,21 +876,21 @@
 						shouldReverseColor: !0,
 						getEventFactory: this.getSubscribeEventFactory
 					}))), o.a.createElement("div", {
-						className: H.a.subredditMeta
+						className: G.a.subredditMeta
 					}, W._({
 						"*": "{number} members",
 						_1: "1 member"
 					}, [W._plural(d, "number", a)], {
 						hk: "4yqFU9"
 					})), s && o.a.createElement("div", {
-						className: H.a.subredditMeta
+						className: G.a.subredditMeta
 					}, o.a.createElement(B.c, null), W._({
 						"*": "{number} onlines",
 						_1: "1 online"
 					}, [W._plural(i.accountsActive, "number", c)], {
 						hk: "1oCA5j"
 					})), t && r && o.a.createElement(k.a, {
-						className: H.a.subredditDescriptionContainer,
+						className: G.a.subredditDescriptionContainer,
 						to: n.url,
 						onClick: this.onSubredditClick,
 						style: {
@@ -953,7 +953,7 @@
 					}, o.a.createElement("p", {
 						className: Z.a.title,
 						title: t.title
-					}, t.title), s && n && n.displayText && o.a.createElement(R.a, {
+					}, t.title), s && n && n.displayText && o.a.createElement(M.a, {
 						to: n.url,
 						onClick: this.onClickSubreddit
 					}, n.displayText), o.a.createElement("div", null, o.a.createElement("span", {
@@ -1024,8 +1024,8 @@
 				fbt: he
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), fe = e => `subreddit-mention-${e}`, Oe = Object(a.c)({
 				haveError: y.d,
-				hideNSFWPref: be.G,
-				isEmployee: be.O,
+				hideNSFWPref: be.H,
+				isEmployee: be.P,
 				isPending: y.c,
 				postIds: y.f,
 				subreddit: E.a,
@@ -1814,9 +1814,9 @@
 			})), s.d(t, "c", (function() {
 				return D
 			})), s.d(t, "j", (function() {
-				return R
-			})), s.d(t, "k", (function() {
 				return M
+			})), s.d(t, "k", (function() {
+				return R
 			})), s.d(t, "t", (function() {
 				return A
 			})), s.d(t, "s", (function() {
@@ -2001,10 +2001,10 @@
 						noun: "show_less_often"
 					})
 				},
-				R = (e, t, s, n) => {
-					Object(h.a)(M(t, s, n)(e))
+				M = (e, t, s, n) => {
+					Object(h.a)(R(t, s, n)(e))
 				},
-				M = (e, t, s, i) => r => {
+				R = (e, t, s, i) => r => {
 					return {
 						...I(r, e, s, i),
 						source: O,
@@ -2042,9 +2042,9 @@
 					post: b.K(i, s)
 				}),
 				q = (e, t, s, n) => {
-					Object(h.a)(G(t, s, n)(e))
+					Object(h.a)(H(t, s, n)(e))
 				},
-				G = (e, t, s, n) => i => {
+				H = (e, t, s, n) => i => {
 					const r = Object(u.c)(i, {
 							postId: t
 						}),
@@ -2058,7 +2058,7 @@
 						post: b.K(i, t)
 					}
 				},
-				H = () => ({
+				G = () => ({
 					id: "xd_focus_verticals",
 					unitType: c.e.Listing,
 					experiment: "",
@@ -2073,7 +2073,7 @@
 					position: s
 				}),
 				K = (e, t, s) => {
-					const i = H();
+					const i = G();
 					return e => ({
 						..._(e, i),
 						actionInfo: W(e, 0, s),
@@ -2084,7 +2084,7 @@
 					})
 				},
 				V = (e, t, s) => {
-					const i = H();
+					const i = G();
 					return e => ({
 						..._(e, i),
 						actionInfo: W(e, 0, s),
@@ -2095,7 +2095,7 @@
 					})
 				},
 				z = (e, t, s, i) => {
-					const r = H();
+					const r = G();
 					return e => ({
 						..._(e, r),
 						actionInfo: W(e, 0, s),
@@ -2107,7 +2107,7 @@
 					})
 				},
 				Q = (e, t, s, i) => {
-					const r = H();
+					const r = G();
 					return e => ({
 						..._(e, r),
 						actionInfo: W(e, 0, s),
@@ -2273,4 +2273,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.6ae7348c5351b66c4122.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.70ef48b956c6d0a13bfc.js.map

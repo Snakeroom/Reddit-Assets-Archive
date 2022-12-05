@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditHovercard.08afb1327c67393f6d59.js
-// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditHovercard.98d099f424457b064817.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditHovercard"], {
 		"./src/reddit/components/CommunityType/index.m.less": function(e, t, s) {
@@ -363,7 +363,7 @@
 			};
 			const V = Object(p.c)({
 				activeTooltipId: v.a,
-				hideNSFWPref: h.G,
+				hideNSFWPref: h.H,
 				subreddit: b.C,
 				subredditAboutInfo: b.z
 			});
@@ -387,8 +387,8 @@
 				tooltipType: e.tooltipType,
 				shouldOpenNewTabOnClicks: e.shouldOpenNewTabOnClicks
 			}))));
-			const G = "SubredditInfoTooltip";
-			class $ extends r.a.Component {
+			const $ = "SubredditInfoTooltip";
+			class G extends r.a.Component {
 				constructor() {
 					super(...arguments), this.sendEvent = () => this.props.sendEvent(c(this.props.subredditName, this.props.postId))
 				}
@@ -398,7 +398,7 @@
 					} = this, t = Object(i.b)({
 						itemId: e.postId,
 						subredditName: e.subredditName,
-						tooltipIdPrefix: G,
+						tooltipIdPrefix: $,
 						tooltipType: e.tooltipType
 					}), s = `${t}-hover-id`;
 					return r.a.createElement(n.c, {
@@ -420,7 +420,7 @@
 					}))
 				}
 			}
-			t.default = Object(d.c)($)
+			t.default = Object(d.c)(G)
 		},
 		"./src/reddit/components/Hovercards/helpers.m.less": function(e, t, s) {
 			e.exports = {
@@ -873,4 +873,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.08afb1327c67393f6d59.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.98d099f424457b064817.js.map

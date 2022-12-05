@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.5e3d66094e2bd797ffe3.js
-// Retrieved at 12/5/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.e10c640a2ee955b25166.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-BlankPost"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, s) {
@@ -719,7 +719,7 @@
 				n = s("./src/reddit/selectors/user.ts");
 			const a = "MOD_PERMS__REQUEST_LOADED",
 				d = (Object(i.a)("MOD_PERMS__REQUEST_PENDING"), Object(i.a)(a), Object(i.a)("MOD_PERMS__REQUEST_FAILED"), () => async (e, t) => {
-					const s = Object(n.l)(t());
+					const s = Object(n.m)(t());
 					if (s) {
 						const t = Object(r.e)(s);
 						await e(Object(o.b)(t))
@@ -1582,7 +1582,7 @@
 						apiContext: o
 					} = s;
 					const r = t();
-					if (!Object(S.l)(r) || Object(T.b)(r)) return;
+					if (!Object(S.m)(r) || Object(T.b)(r)) return;
 					e(A());
 					const n = await (e => Object(l.a)(Object(u.a)(e, [b.a]), {
 						endpoint: `${e.apiUrl}/api/v1/drafts.json`,
@@ -1646,7 +1646,7 @@
 							s = Object(C.r)(n, {
 								profileId: e.subredditId
 							}),
-							i = Object(S.l)(n);
+							i = Object(S.m)(n);
 						t ? r = {
 							isProfile: !1,
 							name: t.name
@@ -2190,11 +2190,11 @@
 
 			function u() {
 				const e = Object(r.e)(e => ({
-					currentUser: Object(d.l)(e),
+					currentUser: Object(d.m)(e),
 					modModeEnabled: e.modModeEnabled,
-					nightmodeEnabled: Object(d.eb)(e),
+					nightmodeEnabled: Object(d.fb)(e),
 					prefs: e.user.prefs,
-					isLoggedIn: Object(d.R)(e)
+					isLoggedIn: Object(d.S)(e)
 				}));
 				return Object(n.a)(e)
 			}
@@ -2679,4 +2679,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.5e3d66094e2bd797ffe3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.e10c640a2ee955b25166.js.map

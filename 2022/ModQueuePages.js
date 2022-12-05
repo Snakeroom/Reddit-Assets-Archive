@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.7523ca630485fabb83cc.js
-// Retrieved at 12/5/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.86011ace36f99444e2e4.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -710,7 +710,7 @@
 					let {
 						apiContext: r
 					} = o;
-					if (!Object(f.R)(n())) return void t(Object(a.i)(l.a.LOGIN_MODAL_ID));
+					if (!Object(f.S)(n())) return void t(Object(a.i)(l.a.LOGIN_MODAL_ID));
 					const i = n().features.comments.models[e];
 					if (!i) return;
 					const d = i.isLocked ? m.l : m.f;
@@ -2576,7 +2576,7 @@
 			const I = Object(h.v)(),
 				M = e => `Distinguish--Dropdown--${e}`,
 				N = Object(a.c)({
-					currentUser: O.l,
+					currentUser: O.m,
 					collapsedBecauseCrowdControl: (e, t) => {
 						let {
 							comment: n
@@ -3822,7 +3822,7 @@
 						var s;
 						return (null === (s = e.features) || void 0 === s ? void 0 : s.realtimeUpdateAnimationId) === n
 					},
-					isNightMode: I.eb
+					isNightMode: I.fb
 				}),
 				U = Object(r.b)(D, (e, t) => {
 					let {
@@ -4390,7 +4390,7 @@
 				b = n.n(p);
 			const h = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				f = Object(r.b)(() => Object(i.c)({
-					isNightmodeOn: u.eb
+					isNightmodeOn: u.fb
 				}));
 			t.a = f(e => {
 				const t = {
@@ -4537,7 +4537,7 @@
 						style: t
 					}, e.children)
 				},
-				A = Object(i.b)(() => Object(d.a)(E.F, C.kb, (e, t) => {
+				A = Object(i.b)(() => Object(d.a)(E.F, C.lb, (e, t) => {
 					let {
 						isSponsored: n,
 						postId: s
@@ -4794,7 +4794,7 @@
 			var E = n("./src/reddit/components/Media/VideoBox/index.m.less"),
 				j = n.n(E);
 			const C = Object(d.c)({
-				autoplayPref: b.c,
+				autoplayPref: b.d,
 				consumed: h.a,
 				loadTimes: h.f,
 				metadata: h.h,
@@ -6752,10 +6752,10 @@
 						s = t.redditStyle || Object(f.l)(e, {
 							subredditId: n
 						}),
-						o = Object(x.eb)(e);
+						o = Object(x.fb)(e);
 					return s || o
 				},
-				nigtmode: x.eb,
+				nigtmode: x.fb,
 				subredditId: m.o,
 				topPostVariant: h.d
 			}));
@@ -8427,7 +8427,7 @@
 				r = n("./src/reddit/selectors/user.ts"),
 				i = n("./src/reddit/selectors/experiments/modqueueActionBarUXImprovements.ts");
 			const a = e => Object(i.a)(e) && Object(o.c)(e, {
-				experimentEligibilitySelector: r.R,
+				experimentEligibilitySelector: r.S,
 				experimentName: s.xc
 			}) === s.Ld
 		},
@@ -8497,4 +8497,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.7523ca630485fabb83cc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.86011ace36f99444e2e4.js.map

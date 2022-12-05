@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.83ac26e3857b41ceda3b.js
-// Retrieved at 12/5/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.9219b194e6b1f129e034.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1084,7 +1084,7 @@
 						postId: r
 					}) : Object(E.c)(e, {
 						commentId: r
-					}), s = Object(A.l)(e), a = e.gild, {
+					}), s = Object(A.m)(e), a = e.gild, {
 						isAnonymous: o
 					} = a, i = !o && s && (s.username || s.displayText) ? s.username || s.displayText : void 0, c = n ? n.author : void 0, d = Object(S.O)(e, {
 						thingId: r
@@ -1103,7 +1103,7 @@
 						} = e,
 						h = Object(I.a)(s, m),
 						f = e.awardKarmaReceived,
-						g = Object(A.l)(s),
+						g = Object(A.m)(s),
 						E = Object(_.b)(s) || Object(H.d)(H.a.GildingFlow, !1);
 					if (Object(_.g)(s)) {
 						const e = "success.gild",
@@ -2861,12 +2861,12 @@
 						})
 					},
 					correlationId: e => Object(S.b)(e) || Object(m.d)(m.a.GildingFlow, !1),
-					currentUser: F.l,
+					currentUser: F.m,
 					errorMessage: S.a,
 					isAnonymous: S.f,
 					iFramed: S.g,
 					isGildPending: S.e,
-					isEmployee: F.O,
+					isEmployee: F.P,
 					isRecommendedCoinPackagePending: L.q,
 					message: S.c,
 					postOrComment: (e, t) => {
@@ -2926,7 +2926,7 @@
 						}) : []
 					},
 					userCoins: (e, t) => {
-						const r = Object(F.f)(e),
+						const r = Object(F.g)(e),
 							n = ze(e, t);
 						return r + Object(T.a)(e, {
 							subredditId: n
@@ -3285,7 +3285,7 @@
 				b = r.n(p);
 			const h = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				f = Object(a.b)(() => Object(o.c)({
-					isNightmodeOn: m.eb
+					isNightmodeOn: m.fb
 				}));
 			t.a = f(e => {
 				const t = {
@@ -3432,7 +3432,7 @@
 						style: t
 					}, e.children)
 				},
-				M = Object(o.b)(() => Object(c.a)(x.F, E.kb, (e, t) => {
+				M = Object(o.b)(() => Object(c.a)(x.F, E.lb, (e, t) => {
 					let {
 						isSponsored: r,
 						postId: n
@@ -3689,7 +3689,7 @@
 			var x = r("./src/reddit/components/Media/VideoBox/index.m.less"),
 				y = r.n(x);
 			const E = Object(c.c)({
-				autoplayPref: b.c,
+				autoplayPref: b.d,
 				consumed: h.a,
 				loadTimes: h.f,
 				metadata: h.h,
@@ -6334,4 +6334,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.83ac26e3857b41ceda3b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.9219b194e6b1f129e034.js.map

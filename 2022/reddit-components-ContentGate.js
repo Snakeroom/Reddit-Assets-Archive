@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.017f95032d811ceb0352.js
-// Retrieved at 12/1/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.8239df5cb9331e8060f9.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -187,15 +187,15 @@
 				N = n.n(G);
 			const {
 				fbt: U
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), I = u.a.wrapped(q, "PrivateKey", N.a), H = u.a.div("ButtonsContainer", N.a), W = u.a.div("Container", N.a), z = u.a.div("ContainerExp", N.a), Z = u.a.div("Description", N.a), J = u.a.div("PrivateSubredditDetails", N.a), K = u.a.div("PrivateSubredditDescription", N.a), V = u.a.h3("PrivateSubredditName", N.a), Q = u.a.a("Link", N.a), Y = u.a.wrapped(P.n, "LinkRouterButton", N.a), X = u.a.wrapped(P.m, "LinkButton", N.a), $ = u.a.wrapped(P.p, "SecondaryLinkButton", N.a), ee = u.a.wrapped(Y, "GoHomeLinkButton", N.a), te = u.a.wrapped(b.a, "CreateCommunityButton", N.a), ne = u.a.img("Image", N.a), ae = u.a.img("ImagePlaceholder", N.a), re = u.a.wrapped(Y, "LeftLinkRouterButton", N.a), oe = u.a.wrapped(X, "LeftLinkButton", N.a), ie = u.a.wrapped($, "SecondaryLeftLinkButton", N.a), se = u.a.h3("Title", N.a), le = u.a.div("PageBody", N.a), ce = u.a.div("InterstitialMessageWrapper", N.a), ue = u.a.div("QuarantineLearnMore", N.a), de = Object(c.c)({
-				isLoggedIn: M.Q,
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), I = u.a.wrapped(q, "PrivateKey", N.a), H = u.a.div("ButtonsContainer", N.a), W = u.a.div("Container", N.a), z = u.a.div("ContainerExp", N.a), Z = u.a.div("Description", N.a), J = u.a.div("PrivateSubredditDetails", N.a), K = u.a.div("PrivateSubredditDescription", N.a), V = u.a.h3("PrivateSubredditName", N.a), Y = u.a.a("Link", N.a), Q = u.a.wrapped(P.n, "LinkRouterButton", N.a), X = u.a.wrapped(P.m, "LinkButton", N.a), $ = u.a.wrapped(P.p, "SecondaryLinkButton", N.a), ee = u.a.wrapped(Q, "GoHomeLinkButton", N.a), te = u.a.wrapped(b.a, "CreateCommunityButton", N.a), ne = u.a.img("Image", N.a), ae = u.a.img("ImagePlaceholder", N.a), re = u.a.wrapped(Q, "LeftLinkRouterButton", N.a), oe = u.a.wrapped(X, "LeftLinkButton", N.a), ie = u.a.wrapped($, "SecondaryLeftLinkButton", N.a), se = u.a.h3("Title", N.a), le = u.a.div("PageBody", N.a), ce = u.a.div("InterstitialMessageWrapper", N.a), ue = u.a.div("QuarantineLearnMore", N.a), de = Object(c.c)({
+				isLoggedIn: M.R,
 				origin: A.k,
-				user: M.l,
+				user: M.m,
 				isPrivateSubredditContributorRequestPending: e => (e => {
-					if (!Object(M.R)(e)) return !1;
+					if (!Object(M.S)(e)) return !1;
 					const t = Object(F.d)(e);
 					if (!t) return !1;
-					const n = Object(M.g)(e, t);
+					const n = Object(M.h)(e, t);
 					if (!n) return !1;
 					if (!n.privateSubreddit) return !1;
 					const {
@@ -269,7 +269,7 @@
 							redditStyle: !0
 						}, U._("Sign Up", null, {
 							hk: "rvpjy"
-						})), O ? o.a.createElement(Y, {
+						})), O ? o.a.createElement(Q, {
 							to: "/",
 							redditStyle: !0
 						}, U._("Go Home", null, {
@@ -325,7 +325,7 @@
 							redditStyle: !0
 						}, U._("Sign Up", null, {
 							hk: "rvpjy"
-						})), o.a.createElement(Y, {
+						})), o.a.createElement(Q, {
 							to: "/",
 							redditStyle: !0
 						}, U._("Browse Reddit", null, {
@@ -377,7 +377,7 @@
 							}, U._("Verify Email", null, {
 								hk: "1893cq"
 							})))
-						})(O, r, v)), o.a.createElement(ue, null, U._("Learn more about {=quarantined communities}.", [U._param("=quarantined communities", o.a.createElement(Q, {
+						})(O, r, v)), o.a.createElement(ue, null, U._("Learn more about {=quarantined communities}.", [U._param("=quarantined communities", o.a.createElement(Y, {
 							href: "https://reddit.zendesk.com/hc/en-us/articles/360043069012-Quarantined-Subreddits"
 						}, U._("quarantined communities", null, {
 							hk: "3yq6Z5"
@@ -419,7 +419,7 @@
 							parseRegularLinks: !0
 						}) : U._("This community has been banned for violating the Reddit rules.", null, {
 							hk: "3iUVxA"
-						})))(t), o.a.createElement(H, null, o.a.createElement(Y, {
+						})))(t), o.a.createElement(H, null, o.a.createElement(Q, {
 							to: "/",
 							redditStyle: !0
 						}, U._("Explore Reddit", null, {
@@ -430,7 +430,7 @@
 							src: `${a.a.assetPath}/img/snoomoji/snoo_thoughtful.png`
 						}), o.a.createElement(se, null, U._("This content has been restricted in your country in response to a legal request.", null, {
 							hk: "4bCnhl"
-						})), o.a.createElement(H, null, o.a.createElement(Y, {
+						})), o.a.createElement(H, null, o.a.createElement(Q, {
 							to: "/",
 							redditStyle: !0
 						}, U._("Explore Reddit", null, {
@@ -469,7 +469,7 @@
 										hk: "2IAF6m"
 									});
 								case T.a.ProfileSuspended:
-									return o.a.createElement(o.a.Fragment, null, U._("This account has been {=suspended} .", [U._param("=suspended", o.a.createElement(Q, {
+									return o.a.createElement(o.a.Fragment, null, U._("This account has been {=suspended} .", [U._param("=suspended", o.a.createElement(Y, {
 										href: "https://www.reddithelp.com/en/categories/reddit-101/rules-reporting/account-and-community-restrictions/suspensions"
 									}, U._("suspended", null, {
 										hk: "3nHGgi"
@@ -505,7 +505,7 @@
 							src: `${a.a.assetPath}/img/snoomoji/snoo_thoughtful.png`
 						}), o.a.createElement(se, null, U._("This content has been restricted in your country in response to a legal request.", null, {
 							hk: "1q1rVU"
-						})), o.a.createElement(H, null, o.a.createElement(Y, {
+						})), o.a.createElement(H, null, o.a.createElement(Q, {
 							to: "/",
 							redditStyle: !0
 						}, U._("Browse Reddit", null, {
@@ -583,4 +583,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.017f95032d811ceb0352.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.8239df5cb9331e8060f9.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.8a8e887b4c2460e2abfe.js
-// Retrieved at 12/1/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.22dda2424e265e5147db.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -790,7 +790,7 @@
 				O = () => async (e, t) => {
 					const n = t(),
 						r = Object(s.g)(n, {});
-					if (!(Object(u.Q)(n) || Object(u.R)(n)) || !r) return;
+					if (!(Object(u.R)(n) || Object(u.S)(n)) || !r) return;
 					const o = Object(d.i)(n);
 					m(o, r), e(f({
 						hasUnreadMessages: !!o
@@ -1110,7 +1110,7 @@
 				E = Object(b.v)();
 			t.b = E(e => {
 				var t;
-				const n = Object(c.e)(O.eb);
+				const n = Object(c.e)(O.fb);
 				let i, d, u;
 				if (e.subredditOrProfile) {
 					const {
@@ -1375,10 +1375,10 @@
 			}
 			const j = () => {},
 				E = Object(c.c)({
-					currentUser: h.l,
-					isNightMode: h.eb,
-					shouldHideNSFW: h.G,
-					user: h.Bb
+					currentUser: h.m,
+					isNightMode: h.fb,
+					shouldHideNSFW: h.H,
+					user: h.Cb
 				}),
 				v = Object(s.b)(E);
 			t.a = v(e => {
@@ -1578,7 +1578,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const E = Object(u.a)(S.b, S.l, (e, t) => {
+			const E = Object(u.a)(S.c, S.m, (e, t) => {
 					let {
 						isSponsored: n,
 						postId: r
@@ -2438,7 +2438,7 @@
 								path: a
 							} = e.match, {
 								sort: d = (o.sort ? o.sort : i.bb.HOT)
-							} = s, l = c.t, b = a === p.a;
+							} = s, l = c.t, b = a === p.b;
 							Object(C.a)(k({
 								key: o.listingKey,
 								sort: d,
@@ -3479,7 +3479,7 @@
 					if (!Object(u.n)(e, {
 							subredditId: t
 						})) return;
-					if (Object(f.O)(e)) return O(e);
+					if (Object(f.P)(e)) return O(e);
 					const n = Object(b.M)(e, {
 						identifier: {
 							id: t,
@@ -3598,4 +3598,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.8a8e887b4c2460e2abfe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.22dda2424e265e5147db.js.map

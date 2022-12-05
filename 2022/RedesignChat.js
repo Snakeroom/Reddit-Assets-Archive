@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.5387810db691855b56d1.js
-// Retrieved at 12/5/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.8ab278beb98aa5282265.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -71,10 +71,10 @@
 				hidden: k
 			} = _.b;
 
-			function B(e) {
+			function S(e) {
 				return void 0 !== e ? e : -1
 			}
-			const S = w.a.wrapped(e => c.a.createElement("div", {
+			const B = w.a.wrapped(e => c.a.createElement("div", {
 					className: e.className
 				}, e.children), "BasePortalContainer", A.a),
 				R = w.a.wrapped(e => {
@@ -93,20 +93,20 @@
 						ref: n,
 						className: e.className,
 						style: {
-							width: `${B(T.width)}px`,
-							height: `${B(T.height)}px`
+							width: `${S(T.width)}px`,
+							height: `${S(T.height)}px`
 						}
 					}, e.children)
 				}, "EmbedPortalContainer", A.a),
 				D = w.a.wrapped(e => c.a.createElement("div", {
 					className: e.className,
 					style: {
-						width: `${B(k.width)}px`,
-						height: `${B(k.height)}px`
+						width: `${S(k.width)}px`,
+						height: `${S(k.height)}px`
 					}
 				}, e.children), "HiddenPortalContainer", A.a),
 				I = w.a.wrapped(y.a, "MinimizedRedesignPortalContainer", A.a),
-				L = S,
+				L = B,
 				U = Object(M.a)({
 					container: e => e && e.container && e.container.size
 				});
@@ -509,7 +509,7 @@
 				f = () => async (e, t) => {
 					const n = t(),
 						s = Object(r.g)(n, {});
-					if (!(Object(u.Q)(n) || Object(u.R)(n)) || !s) return;
+					if (!(Object(u.R)(n) || Object(u.S)(n)) || !s) return;
 					const a = Object(d.i)(n);
 					m(a, s), e(b({
 						hasUnreadMessages: !!a
@@ -696,4 +696,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.5387810db691855b56d1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.8ab278beb98aa5282265.js.map

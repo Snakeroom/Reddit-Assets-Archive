@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.4999c43aaa773d5e0e24.js
-// Retrieved at 12/1/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.243e9bf261bd0d019ec4.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-InFeedPostCreation"], {
 		"./src/reddit/components/InFeedPostCreation/index.m.less": function(e, t, n) {
@@ -67,9 +67,9 @@
 					}
 				},
 				L = Object(a.c)({
-					currentUser: U.l,
+					currentUser: U.m,
 					isPresenceConsumptionExpEnabled: E.c,
-					isPresenceTogglePref: U.W,
+					isPresenceTogglePref: U.X,
 					subreddit: O.C,
 					subredditAboutInfo: O.z
 				}),
@@ -210,10 +210,10 @@
 				}).apply(this, arguments)
 			}
 			const x = Object(i.c)({
-					currentUser: d.l,
-					isNightMode: d.eb,
-					isPresenceUserPrefEnabled: d.W,
-					shouldHideNSFW: d.G
+					currentUser: d.m,
+					isNightMode: d.fb,
+					isPresenceUserPrefEnabled: d.X,
+					shouldHideNSFW: d.H
 				}),
 				f = Object(o.b)(x);
 			t.a = f(e => {
@@ -281,4 +281,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.4999c43aaa773d5e0e24.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.243e9bf261bd0d019ec4.js.map

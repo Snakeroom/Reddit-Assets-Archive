@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModQueueActivitySummaryCards.e39b164b75d42883ce08.js
-// Retrieved at 12/5/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModQueueActivitySummaryCards.247f4f9b6fb1f491aa6b.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModQueueActivitySummaryCards", "reddit-components-ModQueueActivitySummaryCards-ModActivityPreview"], {
 		"./src/reddit/components/ModQueueActivitySummaryCards/ModActivityPreview.tsx": function(e, t, s) {
@@ -384,7 +384,7 @@
 					}, [P, N, I, C, r]),
 					L = Object(i.e)(e => Object(k.b)(N)(e)),
 					U = Object(i.e)(x.c),
-					W = Object(i.e)(f.l),
+					W = Object(i.e)(f.m),
 					B = n || 5;
 				return d.a.createElement("div", {
 					className: Object(o.a)(O.a.preview, t),
@@ -741,10 +741,10 @@
 						n = t.redditStyle || Object(h.l)(e, {
 							subredditId: s
 						}),
-						o = Object(x.eb)(e);
+						o = Object(x.fb)(e);
 					return n || o
 				},
-				nigtmode: x.eb,
+				nigtmode: x.fb,
 				subredditId: u.o,
 				topPostVariant: p.d
 			}));
@@ -893,4 +893,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModQueueActivitySummaryCards.e39b164b75d42883ce08.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModQueueActivitySummaryCards.247f4f9b6fb1f491aa6b.js.map

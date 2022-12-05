@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PushNotifications.7a416f8bfb0c7b0fec85.js
-// Retrieved at 12/1/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PushNotifications.99501eafe4e0a3da7699.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -65,9 +65,9 @@
 			})), i.d(t, "requestNotificationsPermissions", (function() {
 				return G
 			})), i.d(t, "subscribeForPNs", (function() {
-				return L
-			})), i.d(t, "unsubscribeFromPNs", (function() {
 				return R
+			})), i.d(t, "unsubscribeFromPNs", (function() {
+				return L
 			})), i.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
 				return P
 			})), i.d(t, "subscribeToPermissionsChange", (function() {
@@ -105,7 +105,7 @@
 				C = i("./src/reddit/selectors/user.ts");
 			let W = !1;
 			const q = async (e, t) => {
-				const i = Object(C.Q)(e);
+				const i = Object(C.R)(e);
 				if (W) return;
 				if (W = !0, Object(b.a)(e) !== d.c.NotificationsSupported) return;
 				await Object(u.a)();
@@ -142,14 +142,14 @@
 					_.l(c), await Object(a.b)(e, t, () => {
 						l || b || f || n(Object(d.o)()), n(Object(d.n)()), _.j(c)
 					}, (e, t) => {
-						n(Object(d.l)()), n(R(t ? d.a.Denied : d.a.Closed)), e && (t ? _.e(c) : _.f(c)), i()
+						n(Object(d.l)()), n(L(t ? d.a.Denied : d.a.Closed)), e && (t ? _.e(c) : _.f(c)), i()
 					}, e => {
-						n(Object(d.m)()), n(L()), e && _.d(c), i()
+						n(Object(d.m)()), n(R()), e && _.d(c), i()
 					}, () => {
 						n(Object(d.k)()), i()
 					})
 				}
-			}, L = e => async (t, i, s) => {
+			}, R = e => async (t, i, s) => {
 				const o = i();
 				try {
 					switch (await Object(c.b)(s.gqlContext)) {
@@ -170,7 +170,7 @@
 				} catch (r) {
 					_.k(o, "registration_failed_uncaught_exception"), console.error(r)
 				}
-			}, R = (e, t) => async i => {
+			}, L = (e, t) => async i => {
 				try {
 					Object(b.b)(e);
 					const s = await Object(u.a)();
@@ -205,13 +205,13 @@
 				s.onchange = () => (t => {
 					switch (t) {
 						case d.a.Denied:
-							e(R(d.a.Denied)), _.e(n);
+							e(L(d.a.Denied)), _.e(n);
 							break;
 						case d.a.Granted:
-							e(L()), _.d(n);
+							e(R()), _.d(n);
 							break;
 						default:
-							e(R(d.a.Default))
+							e(L(d.a.Default))
 					}
 				})(s.state)
 			}
@@ -393,4 +393,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.7a416f8bfb0c7b0fec85.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.99501eafe4e0a3da7699.js.map

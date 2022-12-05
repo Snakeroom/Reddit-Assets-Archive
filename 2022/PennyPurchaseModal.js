@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.540a4dd7304ba18beadf.js
-// Retrieved at 12/1/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.7a9df23b8916ed6944fa.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./node_modules/@stripe/stripe-js/dist/stripe.esm.js": function(e, t, a) {
@@ -260,7 +260,7 @@
 							if (n && n.ok) {
 								const t = n.body.data.createEconPayment;
 								if (null === (b = null == t ? void 0 : t.errors) || void 0 === b ? void 0 : b.length) return e(Object(u.paypalApiError)(f(t.errors))), null;
-								const a = Object(h.l)(i());
+								const a = Object(h.m)(i());
 								if (t.ok) {
 									const {
 										status: e
@@ -1136,10 +1136,10 @@
 						const t = Object(j.a)(e);
 						return null === t ? void 0 : t
 					},
-					coinBalance: E.f,
+					coinBalance: E.g,
 					gildThingId: v.t,
 					isIframed: x.g,
-					nightmode: E.eb,
+					nightmode: E.fb,
 					savedCardsPending: v.x,
 					selectedAward: P.b,
 					selectedPayment: v.c,
@@ -1148,7 +1148,7 @@
 					paypalErrorMessage: v.d,
 					purchaseMethods: y.a,
 					userName: e => {
-						const t = Object(E.l)(e);
+						const t = Object(E.m)(e);
 						return `u/${Object(f.e)(t)}`
 					}
 				}),
@@ -2046,4 +2046,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.540a4dd7304ba18beadf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.7a9df23b8916ed6944fa.js.map

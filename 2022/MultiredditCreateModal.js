@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.bbaa680d45713760d168.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.e279ec460b473f1db0d6.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditCreateModal"], {
 		"./src/reddit/actions/multireddit/index.ts": function(e, t, r) {
@@ -225,7 +225,7 @@
 							gqlContext: n
 						} = s;
 						const a = i();
-						if (!Object(I.l)(a)) return;
+						if (!Object(I.m)(a)) return;
 						if (!e && Object(q.h)(a) || Object(q.i)(a)) return;
 						r(z());
 						const o = await y(n(), {
@@ -251,7 +251,7 @@
 							apiContext: c
 						} = o;
 						const l = d(),
-							m = Object(I.l)(l);
+							m = Object(I.m)(l);
 						if (!m) return;
 						e(K());
 						const b = await ((e, t, r) => Object(f.a)(Object(h.a)(e, [x.a]), {
@@ -291,7 +291,7 @@
 						apiContext: i
 					} = r;
 					const s = t(),
-						n = Object(I.l)(s),
+						n = Object(I.m)(s),
 						o = Object(w.j)(s) ? Object(w.n)(s) : Object(w.b)(s),
 						c = o && o.routeMatch && o.routeMatch.match;
 					if (!c) return;
@@ -309,7 +309,7 @@
 						j = Object(l.a)(x, p, O),
 						g = b.O in O && O[b.O].toUpperCase() || "",
 						y = a.oc[g] || !1,
-						_ = Object(I.l)(s);
+						_ = Object(I.m)(s);
 					(h || _ && _.displayText) && await e(Object(m.multiredditFeedRequested)(j, (h || _.displayText).toLowerCase(), f.toLowerCase(), {
 						...d()(O, b.q),
 						...d()(O, b.p),
@@ -328,7 +328,7 @@
 							apiContext: l
 						} = c;
 						const m = o(),
-							b = Object(I.l)(m);
+							b = Object(I.m)(m);
 						if (!b || !b.displayText) return;
 						const j = Object(T.h)((d || b.displayText).toLowerCase(), s.toLowerCase());
 						e(V());
@@ -378,7 +378,7 @@
 							apiContext: c
 						} = n;
 						const l = d(),
-							m = Object(I.l)(l);
+							m = Object(I.m)(l);
 						if (!m || l.multireddits.api.addSubreddit.pending) return;
 						e(Z({
 							name: r.name
@@ -441,7 +441,7 @@
 							apiContext: c
 						} = o;
 						const l = n(),
-							m = Object(I.l)(l);
+							m = Object(I.m)(l);
 						if (!m || !m.displayText || l.multireddits.api.removeSubreddit.pending) return;
 						e(ie({
 							id: t
@@ -481,7 +481,7 @@
 						apiContext: d
 					} = s;
 					const o = r();
-					if (!Object(I.l)(o)) return;
+					if (!Object(I.m)(o)) return;
 					t(oe());
 					const c = await ((e, t) => Object(f.a)(Object(h.a)(e, [x.a]), {
 						endpoint: Object(O.a)(`${e.apiUrl}/api/multi${t}`),
@@ -504,7 +504,7 @@
 							apiContext: c
 						} = o;
 						const l = n();
-						if (!Object(I.R)(l)) return;
+						if (!Object(I.S)(l)) return;
 						e(me());
 						const m = await (e => {
 							let {
@@ -555,7 +555,7 @@
 							gqlContext: n
 						} = d;
 						const a = s(),
-							o = Object(I.l)(a);
+							o = Object(I.m)(a);
 						if (!(r || o && o.displayText)) return;
 						const c = Object(T.h)(r || o.displayText, t),
 							l = a.multireddits.models[c];
@@ -659,7 +659,7 @@
 							key: e,
 							meta: b.meta,
 							...i,
-							account: i.account || Object(C.l)(b),
+							account: i.account || Object(C.m)(b),
 							multiredditsModelsState: b.multireddits.models
 						})), d && n(m.g(F)), n(Object(o.recommendationsRequested)({
 							multiredditName: r,
@@ -1309,4 +1309,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditCreateModal.bbaa680d45713760d168.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditCreateModal.e279ec460b473f1db0d6.js.map

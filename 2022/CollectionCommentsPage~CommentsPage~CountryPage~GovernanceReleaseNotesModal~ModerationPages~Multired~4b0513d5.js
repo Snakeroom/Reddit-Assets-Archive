@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5.57c981c276bf2e4837d6.js
-// Retrieved at 12/5/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5.0cdf66efe52d94dfa8c3.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, n) {
@@ -133,7 +133,7 @@
 				h = n.n(p);
 			const b = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				x = Object(i.b)(() => Object(o.c)({
-					isNightmodeOn: m.eb
+					isNightmodeOn: m.fb
 				}));
 			t.a = x(e => {
 				const t = {
@@ -280,7 +280,7 @@
 						style: t
 					}, e.children)
 				},
-				R = Object(o.b)(() => Object(c.a)(O.F, v.kb, (e, t) => {
+				R = Object(o.b)(() => Object(c.a)(O.F, v.lb, (e, t) => {
 					let {
 						isSponsored: n,
 						postId: s
@@ -537,7 +537,7 @@
 			var O = n("./src/reddit/components/Media/VideoBox/index.m.less"),
 				_ = n.n(O);
 			const v = Object(c.c)({
-				autoplayPref: h.c,
+				autoplayPref: h.d,
 				consumed: b.a,
 				loadTimes: b.f,
 				metadata: b.h,
@@ -2273,4 +2273,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5.57c981c276bf2e4837d6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5.0cdf66efe52d94dfa8c3.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MatrixChat.c32a3b3d5b7ca1b2e929.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MatrixChat.61be497ef7803a2f6ccc.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MatrixChat"], {
 		"./src/reddit/components/IFrame/index.m.less": function(e, t, a) {
@@ -171,7 +171,7 @@
 				e.CLOSE = "matrix-chat.close", e.MINIMIZE = "matrix-chat.minimize", e.MAXIMIZE = "matrix-chat.maximize", e.LOADED = "matrix-chat.loaded", e.NOTIFICATIONS = "matrix-chat.notifications"
 			}(_ || (_ = {}));
 			const w = () => {
-				const [e, t] = r.a.useState(!1), a = r.a.useRef(null), s = Object(c.d)(), u = Object(c.e)(M.j), m = Object(c.e)(h.c), b = Object(c.e)(h.b), x = Object(c.e)(h.d), f = Object(v.a)(), E = b === j.b.CHAT_WITH_USER ? `${m}/user/${x}` : m, p = e => {
+				const [e, t] = r.a.useState(!1), a = r.a.useRef(null), s = Object(c.d)(), u = Object(c.e)(M.k), m = Object(c.e)(h.c), b = Object(c.e)(h.b), x = Object(c.e)(h.d), f = Object(v.a)(), E = b === j.b.CHAT_WITH_USER ? `${m}/user/${x}` : m, p = e => {
 					null == e || e.stopPropagation(), s(Object(d.c)({
 						state: j.b.CLOSED
 					}))
@@ -239,4 +239,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MatrixChat.c32a3b3d5b7ca1b2e929.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MatrixChat.61be497ef7803a2f6ccc.js.map

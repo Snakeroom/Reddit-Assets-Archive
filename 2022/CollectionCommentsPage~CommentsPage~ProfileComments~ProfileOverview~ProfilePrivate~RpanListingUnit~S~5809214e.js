@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e.7a04bf9a32cb029ad4ca.js
-// Retrieved at 12/1/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e.a7f63eaa2b2d4830f5ad.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, s) {
@@ -1086,7 +1086,7 @@
 				isChatPost: E.d,
 				isPostSEOEligible: w.e,
 				postPermalink: I.F,
-				shouldOpenPostInNewTab: y.kb,
+				shouldOpenPostInNewTab: y.lb,
 				isBlockingInterstitialEnabled: j.b,
 				isBlockingInterstitialV2Enabled: j.c
 			}));
@@ -1647,7 +1647,7 @@
 					activeModalId: re.a,
 					claimedFreeAward: ie.b,
 					layout: R.U,
-					userIsOp: D.Eb,
+					userIsOp: D.Fb,
 					subreddit: R.s,
 					isReportAnAdEnabled: B.a
 				}),
@@ -2639,7 +2639,7 @@
 						subredditId: s
 					}) : void 0
 				},
-				user: y.l
+				user: y.m
 			});
 			class D extends i.a.PureComponent {
 				constructor() {
@@ -3292,7 +3292,7 @@
 						} = t;
 						return Object(R.G)(e, {
 							pageLayer: r
-						}) && s && o && Object(ne.Cb)(e, {
+						}) && s && o && Object(ne.Db)(e, {
 							userName: n.author
 						})
 					},
@@ -5143,7 +5143,7 @@
 				r = s("./src/reddit/selectors/runTimeEnvVars.ts"),
 				i = s("./src/reddit/selectors/user.ts");
 			const a = e => !!Object(r.b)(e) || Object(n.c)(e, {
-				experimentEligibilitySelector: i.R,
+				experimentEligibilitySelector: i.S,
 				experimentName: o.e
 			}) === o.c.Enabled
 		},
@@ -5152,4 +5152,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e.7a04bf9a32cb029ad4ca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e.a7f63eaa2b2d4830f5ad.js.map

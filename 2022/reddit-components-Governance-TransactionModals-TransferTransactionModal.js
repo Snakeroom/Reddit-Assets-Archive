@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.9c992bf8a976cfe27b6c.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.5dfc1e4459b43848d991.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-TransferTransactionModal"], {
 		"./src/reddit/actions/util/pollActionForSuccess.ts": function(e, t, n) {
@@ -163,7 +163,7 @@
 			function D(e) {
 				const {
 					recipient: t
-				} = e, n = Object(c.e)(h.l);
+				} = e, n = Object(c.e)(h.m);
 				return o.a.createElement(M.a, {
 					subredditId: e.subredditId,
 					image: o.a.createElement(y.a, {
@@ -192,7 +192,7 @@
 					recipient: n,
 					subredditId: a,
 					transferAmount: d
-				} = e, y = Object(c.d)(), I = Object(_.a)(), M = Object(c.e)(e => Object(h.Bb)(e, {
+				} = e, y = Object(c.d)(), I = Object(_.a)(), M = Object(c.e)(e => Object(h.Cb)(e, {
 					userName: n
 				})), {
 					currentPointsAmount: E,
@@ -287,4 +287,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.9c992bf8a976cfe27b6c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.5dfc1e4459b43848d991.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.41a690589f5d13ab4f03.js
-// Retrieved at 12/1/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.72b718388bd188bee0b6.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -338,10 +338,10 @@
 						name: `${r.qc}${e.name}`,
 						type: e.type
 					});
-					if (!Object(I.R)(d())) return i(Object(c.k)({
+					if (!Object(I.S)(d())) return i(Object(c.k)({
 						actionSource: c.a.Subscribe
 					})), void i(Object(a.openRegisterModal)());
-					const f = Object(I.l)(d());
+					const f = Object(I.m)(d());
 					if (f) {
 						const t = b.length,
 							s = e.length;
@@ -484,7 +484,7 @@
 					} = o;
 					const a = s(),
 						c = a.multireddits.models;
-					if (!Object(I.R)(a)) return;
+					if (!Object(I.S)(a)) return;
 					const d = function() {
 							let e = !(arguments.length > 0 && void 0 !== arguments[0]) || arguments[0];
 							t(Object(u.f)({
@@ -713,7 +713,7 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), D = Object(d.a)(v.a, {
 				playerName: "RPAN Listing Player"
 			}), A = 3e3, V = Object(c.c)({
-				autoplay: T.c,
+				autoplay: T.d,
 				isOverlayOpen: j.j,
 				mutedInFeed: N.i,
 				unavailableVideoUrl: C.o,
@@ -1978,4 +1978,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.41a690589f5d13ab4f03.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.72b718388bd188bee0b6.js.map

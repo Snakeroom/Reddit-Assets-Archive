@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.5d43c0011bf136500603.js
-// Retrieved at 11/17/2022, 12:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.515b9747ac4a349d2fd0.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -65,11 +65,11 @@
 				h = n("./src/reddit/helpers/trackers/givePremium.ts"),
 				b = n("./src/lib/constants/index.ts"),
 				x = n("./src/lib/makeActionCreator/index.ts"),
-				f = n("./src/reddit/actions/toaster.ts"),
-				g = n("./src/lib/makeApiRequest/index.ts"),
-				C = n("./src/lib/omitHeaders/index.ts"),
-				O = n("./src/reddit/constants/headers.ts"),
-				v = n("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts");
+				g = n("./src/reddit/actions/toaster.ts"),
+				C = n("./src/lib/makeApiRequest/index.ts"),
+				f = n("./src/lib/omitHeaders/index.ts"),
+				v = n("./src/reddit/constants/headers.ts"),
+				O = n("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts");
 			var E = async (e, t, n, s, o, i) => {
 				const c = {
 					recipient: n,
@@ -78,7 +78,7 @@
 					message: o,
 					correlation_id: i
 				};
-				return Object(g.a)(Object(C.a)(e, [O.a]), {
+				return Object(C.a)(Object(f.a)(e, [v.a]), {
 					method: b.ob.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/give_premium`,
 					data: c
@@ -86,7 +86,7 @@
 					...e
 				} : e.error && e.error.type ? e : {
 					...e,
-					error: Object(v.a)(e)
+					error: Object(O.a)(e)
 				})
 			}, k = n("./src/reddit/helpers/correlationIdTracker.ts"), _ = n("./src/reddit/models/Toast/index.ts"), y = n("./src/reddit/selectors/premium.ts"), I = n("./src/reddit/actions/gold/constants.ts");
 			Object(x.a)(I.y), Object(x.a)(I.A), Object(x.a)(I.z), Object(x.a)(I.C);
@@ -110,9 +110,9 @@
 									return t
 							}
 						})(e, o);
-						t(Object(f.f)({
+						t(Object(g.f)({
 							kind: _.b.Error,
-							duration: f.a,
+							duration: g.a,
 							text: n
 						}))
 					}
@@ -123,7 +123,7 @@
 					const c = s.fbt._("Success! You’ve given Premium to {recipient username}!", [s.fbt._param("recipient username", `u/${i}`)], {
 						hk: "3cBrLk"
 					});
-					t(Object(f.f)({
+					t(Object(g.f)({
 						kind: _.b.SuccessCommunity,
 						text: c
 					}))
@@ -150,8 +150,8 @@
 			}
 			const W = 10,
 				H = Object(a.c)({
-					coinBalance: G.f,
-					isEmployee: G.O,
+					coinBalance: G.g,
+					isEmployee: G.P,
 					isPending: y.b,
 					recipientName: y.d
 				}),
@@ -784,4 +784,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.5d43c0011bf136500603.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.515b9747ac4a349d2fd0.js.map

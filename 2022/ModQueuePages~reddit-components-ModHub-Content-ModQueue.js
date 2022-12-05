@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.ef016811ccc879ed3131.js
-// Retrieved at 12/5/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.2c3b01594f7862bd1c75.js
+// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/actions/modQueue/realtime.ts": function(e, t, s) {
@@ -96,11 +96,11 @@
 						moderatorID: i,
 						targetID: l,
 						action: m
-					} = null === (r = null == e ? void 0 : e.subscribe) || void 0 === r ? void 0 : r.data, u = s(), p = Object(O.j)(u), b = j.includes(m), h = i === p, x = y(u, l);
+					} = null === (r = null == e ? void 0 : e.subscribe) || void 0 === r ? void 0 : r.data, u = s(), p = Object(O.k)(u), b = j.includes(m), h = i === p, x = y(u, l);
 					if (!b || h || !x) return;
 					const f = await Object(c.b)(o(), {
 						id: i
-					}) || (null === (a = Object(O.Ab)(u, {
+					}) || (null === (a = Object(O.Bb)(u, {
 						userId: i
 					})) || void 0 === a ? void 0 : a.username);
 					f && t(Object(d.z)(f)), t(_({
@@ -750,8 +750,8 @@
 					const u = Object(g.a)(),
 						p = Object(i.d)(),
 						f = Object(b.b)(t),
-						C = Object(i.e)(q.j),
-						_ = Object(i.e)(q.O),
+						C = Object(i.e)(q.k),
+						_ = Object(i.e)(q.P),
 						y = Object(i.e)(z.b),
 						j = Object(Q.a)(c),
 						w = f ? x.k : H,
@@ -963,7 +963,7 @@
 				} = e;
 				var s;
 				const n = (null == t ? void 0 : t.approvedBy) || "",
-					r = Object(i.e)(e => (null == t ? void 0 : t.approvedBy) ? Object(q.Bb)(e, {
+					r = Object(i.e)(e => (null == t ? void 0 : t.approvedBy) ? Object(q.Cb)(e, {
 						userName: n
 					}) : null),
 					d = t.approvedAtUTC ? (null === (s = t.approvedAtUTC) || void 0 === s ? void 0 : s.toString().length) > 10 ? t.approvedAtUTC / 1e3 : t.approvedAtUTC : null;
@@ -1075,7 +1075,7 @@
 					content: t
 				} = e;
 				var s;
-				const n = Object(i.e)(e => (null == t ? void 0 : t.bannedBy) && "string" == typeof(null == t ? void 0 : t.bannedBy) ? Object(q.Bb)(e, {
+				const n = Object(i.e)(e => (null == t ? void 0 : t.bannedBy) && "string" == typeof(null == t ? void 0 : t.bannedBy) ? Object(q.Cb)(e, {
 						userName: null == t ? void 0 : t.bannedBy
 					}) : null),
 					r = Object(b.b)(t),
@@ -1544,7 +1544,7 @@
 				F = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				A = s("./src/reddit/selectors/user.ts");
 			const M = e => Object(F.c)(e, {
-				experimentEligibilitySelector: A.R,
+				experimentEligibilitySelector: A.S,
 				experimentName: D.Zb
 			}) === D.Ld;
 			var B = s("./src/reddit/components/ModQueueList/SortByNumReportsTooltip.m.less"),
@@ -3000,4 +3000,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.ef016811ccc879ed3131.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.2c3b01594f7862bd1c75.js.map
