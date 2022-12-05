@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconManagement.ca90ac1b816180be5859.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconManagement.97e857200531c6a49622.js
+// Retrieved at 12/5/2022, 5:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconManagement"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, a, t) {
@@ -149,7 +149,7 @@
 						entity: a
 					} = e;
 					const t = Object(s.d)(),
-						n = Object(s.e)(e => Object(v.d)(e, a.typename)),
+						n = Object(s.e)(e => Object(v.e)(e, a.typename)),
 						[l, o] = Object(c.useState)(null);
 					if (!n.length || !a.entityId) return null;
 					const m = `${a.typename}:${a.entityId}`;
@@ -366,7 +366,7 @@
 						activeTab: a
 					} = e;
 					const t = Object(s.d)(),
-						n = Object(s.e)(e => Object(v.e)(e, a)),
+						n = Object(s.e)(e => Object(v.f)(e, a)),
 						l = void 0 === n,
 						o = null === n;
 					return Object(c.useEffect)(() => {
@@ -400,7 +400,7 @@
 				const e = Object(s.e)(v.b),
 					a = Object(s.e)(v.a),
 					t = ((e, a) => a === l.a.Loading ? "Loading..." : e ? `${e.type}: ${e.id}` : "Enter id or username in the field above")(e, a),
-					i = Object(s.e)(v.f),
+					i = Object(s.e)(v.g),
 					[o, m] = Object(c.useState)(null);
 				return Object(c.useEffect)(() => {
 					e || m(null)
@@ -431,4 +431,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconManagement.ca90ac1b816180be5859.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconManagement.97e857200531c6a49622.js.map
