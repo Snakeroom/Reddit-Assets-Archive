@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.1593ddc97b1f1b4fe3af.js
-// Retrieved at 12/5/2022, 2:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.e58dc0c0f45abab4dcb1.js
+// Retrieved at 12/5/2022, 4:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -4417,7 +4417,7 @@
 							isStartImmediately: !0,
 							subredditId: e,
 							predictionDrafts: c,
-							currency: b.U.Tokens,
+							currency: b.V.Tokens,
 							tokenIcon: l
 						}),
 						m = Object(j.a)(u);
@@ -8528,8 +8528,8 @@
 				} = e;
 				const a = {
 					username: t,
-					sort: y(n, Object.values(O.K)),
-					range: y(r, Object.values(O.J)),
+					sort: y(n, Object.values(O.L)),
+					range: y(r, Object.values(O.K)),
 					filter: s
 				};
 				if (o) {
@@ -8766,7 +8766,7 @@
 						const e = C({
 							username: S,
 							profileSort: k,
-							filter: O.O.Posts,
+							filter: O.P.Posts,
 							timeSort: Object(P.a)(k, I),
 							shouldUseGqlCursor: !0
 						});
@@ -8803,7 +8803,7 @@
 						const e = C({
 								username: S,
 								profileSort: k,
-								filter: O.O.Posts
+								filter: O.P.Posts
 							}),
 							t = await E(s.gqlContext(), e);
 						if (t.ok && t.body) {
@@ -8879,7 +8879,7 @@
 						const e = C({
 							username: b,
 							profileSort: m,
-							filter: O.O.Posts,
+							filter: O.P.Posts,
 							timeSort: Object(P.a)(m, p),
 							loadMoreData: h,
 							shouldUseGqlCursor: !0
@@ -8918,7 +8918,7 @@
 						const e = C({
 								username: b,
 								profileSort: m,
-								filter: O.O.Posts,
+								filter: O.P.Posts,
 								loadMoreData: h
 							}),
 							t = await E(o(), e);
@@ -17772,9 +17772,9 @@
 						modQueueSettings: U
 					} = e;
 					return {
-						allowGalleries: O.includes(h.L.Gallery),
-						allowImages: O.includes(h.L.Image),
-						allowPolls: O.includes(h.L.Poll),
+						allowGalleries: O.includes(h.M.Gallery),
+						allowImages: O.includes(h.M.Image),
+						allowPolls: O.includes(h.M.Poll),
 						archivePostsEnabled: r,
 						allowDiscovery: o,
 						allowChatPostCreation: i,
@@ -17829,19 +17829,19 @@
 				},
 				y = e => e ? O.indexOf(e) : 0,
 				C = e => {
-					if (e) return Object.values(h.S).find(t => t === (null == e ? void 0 : e.toUpperCase()))
+					if (e) return Object.values(h.T).find(t => t === (null == e ? void 0 : e.toUpperCase()))
 				},
 				j = e => {
 					if (e) return Object.values(h.g).find(t => t === (null == e ? void 0 : e.toUpperCase()))
 				},
 				k = e => {
-					if (e) return Object.values(h.ab).find(t => t === (null == e ? void 0 : e.toUpperCase()))
+					if (e) return Object.values(h.bb).find(t => t === (null == e ? void 0 : e.toUpperCase()))
 				},
 				I = e => {
-					if (e) return e > 0 ? h.V.Enabled : h.V.Disabled
+					if (e) return e > 0 ? h.W.Enabled : h.W.Disabled
 				},
 				S = e => {
-					if (e) return e === h.V.Enabled ? 1 : 0
+					if (e) return e === h.W.Enabled ? 1 : 0
 				},
 				w = e => {
 					let {
@@ -25892,24 +25892,24 @@
 					})
 				},
 				_ = {
-					[r.S.Low]: s.fbt._("Low", null, {
+					[r.T.Low]: s.fbt._("Low", null, {
 						hk: "4k3iTe"
 					}),
-					[r.S.High]: s.fbt._("High (default)", null, {
+					[r.T.High]: s.fbt._("High (default)", null, {
 						hk: "2GOHsH"
 					}),
-					[r.S.All]: s.fbt._("All", null, {
+					[r.T.All]: s.fbt._("All", null, {
 						hk: "gl6gc"
 					})
 				},
 				g = {
-					[r.S.Low]: s.fbt._("Low (default)", null, {
+					[r.T.Low]: s.fbt._("Low (default)", null, {
 						hk: "2tqJd7"
 					}),
-					[r.S.High]: s.fbt._("High", null, {
+					[r.T.High]: s.fbt._("High", null, {
 						hk: "ABfkc"
 					}),
-					[r.S.All]: s.fbt._("All", null, {
+					[r.T.All]: s.fbt._("All", null, {
 						hk: "3bPDOM"
 					})
 				},
@@ -27307,8 +27307,8 @@
 					} = t, w = Object(a.e)(He.b), N = Object(a.e)(Ge.c), P = Object(a.e)(Ge.a), R = Object(a.e)(e => ((e, t) => {
 						const n = t && e.subreddits.about[t];
 						return Boolean(n && n.isMediaInCommentsSettingShown)
-					})(e, d)), A = Object(a.e)(qe.h), M = Object(Be.a)(Ue.Hf) === Ue.Ld, L = w && R, D = (null == _ ? void 0 : _.allowedMediaTypes) || [], F = null === S ? "nullValue" : S, U = Object(o.useCallback)(() => s(!l, "archivePostsEnabled"), [l, s]), B = e => e.toUpperCase() === q.S.All, W = e => {
-						const n = B(t[e]) ? q.S.Low : q.S.All;
+					})(e, d)), A = Object(a.e)(qe.h), M = Object(Be.a)(Ue.Hf) === Ue.Ld, L = w && R, D = (null == _ ? void 0 : _.allowedMediaTypes) || [], F = null === S ? "nullValue" : S, U = Object(o.useCallback)(() => s(!l, "archivePostsEnabled"), [l, s]), B = e => e.toUpperCase() === q.T.All, W = e => {
+						const n = B(t[e]) ? q.T.Low : q.T.All;
 						s(n, e)
 					};
 					return i.a.createElement(k.a, null, i.a.createElement(C, null, i.a.createElement(k.b, null, H.fbt._("Post and Comment settings", null, {
@@ -78427,4 +78427,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.1593ddc97b1f1b4fe3af.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.e58dc0c0f45abab4dcb1.js.map

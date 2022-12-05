@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SocialLinks.6f21e5a0afc641a5601c.js
-// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SocialLinks.e4cff23368752e3f7c37.js
+// Retrieved at 12/5/2022, 4:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SocialLinks"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -346,7 +346,7 @@
 						const e = null == c ? void 0 : c.trim();
 						if (!(e && Object(_.g)(e) === _.d.Valid)) throw new Error(n.f);
 						t = e, s = null == a ? void 0 : a.trim()
-					} else if (r.socialLinkType === p.R.Reddit) {
+					} else if (r.socialLinkType === p.S.Reddit) {
 						const e = null == o ? void 0 : o.trim();
 						if (!(e && Object(d.f)(e) && e && e.length >= n.h && !/\s/.test(e))) throw new Error(n.e);
 						i = e
@@ -608,81 +608,81 @@
 					}),
 					a = n.i;
 				switch (t) {
-					case i.R.BuyMeACoffee:
+					case i.S.BuyMeACoffee:
 						o = r._("Buy Me a Coffee", null, {
 							hk: "ZTbP7"
 						});
 						break;
-					case i.R.CashApp:
+					case i.S.CashApp:
 						o = r._("Cash App", null, {
 							hk: "1aorWN"
 						});
 						break;
-					case i.R.Custom:
+					case i.S.Custom:
 						o = r._("Custom URL", null, {
 							hk: "2gveOb"
 						}), a = n.c, s = r._("https://website.com", null, {
 							hk: "1Kp5fF"
 						});
 						break;
-					case i.R.Reddit:
+					case i.S.Reddit:
 						a = r._("r/community, u/user", null, {
 							hk: "45oRo"
 						});
 						break;
-					case i.R.Discord:
+					case i.S.Discord:
 						a = n.c, s = r._("https://discord.com", null, {
 							hk: "6gcLP"
 						});
 						break;
-					case i.R.Facebook:
+					case i.S.Facebook:
 						a = n.c, s = r._("https://facebook.com", null, {
 							hk: "2v99jB"
 						});
 						break;
-					case i.R.Kickstarter:
+					case i.S.Kickstarter:
 						a = n.c, s = r._("https://kickstarter.com", null, {
 							hk: "132LC7"
 						});
 						break;
-					case i.R.Shopify:
+					case i.S.Shopify:
 						a = n.c, s = r._("https://shopify.com", null, {
 							hk: "2X1G4f"
 						});
 						break;
-					case i.R.Spotify:
+					case i.S.Spotify:
 						a = n.c, s = r._("https://spotify.com", null, {
 							hk: "3dZORp"
 						});
 						break;
-					case i.R.Substack:
+					case i.S.Substack:
 						a = n.c, s = r._("https://substack.com", null, {
 							hk: "1zQgL1"
 						});
 						break;
-					case i.R.Youtube:
+					case i.S.Youtube:
 						o = r._("YouTube", null, {
 							hk: "12AQG6"
 						}), a = n.c, s = r._("https://youtube.com", null, {
 							hk: "4FZQ2O"
 						});
 						break;
-					case i.R.Onlyfans:
+					case i.S.Onlyfans:
 						o = r._("OnlyFans", null, {
 							hk: "1JRN4C"
 						});
 						break;
-					case i.R.Paypal:
+					case i.S.Paypal:
 						o = r._("PayPal", null, {
 							hk: "3n7Il"
 						});
 						break;
-					case i.R.Soundcloud:
+					case i.S.Soundcloud:
 						o = r._("SoundCloud", null, {
 							hk: "34Xo4u"
 						});
 						break;
-					case i.R.Tiktok:
+					case i.S.Tiktok:
 						o = r._("TikTok", null, {
 							hk: "tajib"
 						})
@@ -694,16 +694,16 @@
 					socialLinkType: t
 				}
 			}, a = () => {
-				return Object.keys(i.R).map(e => {
-					const t = i.R[e];
+				return Object.keys(i.S).map(e => {
+					const t = i.S[e];
 					return o(e, t)
-				}).filter(e => e.socialLinkType !== i.R.Indiegogo)
+				}).filter(e => e.socialLinkType !== i.S.Indiegogo)
 			}, c = e => {
 				const t = e.toLowerCase();
 				return `${n.d}${t}.png`
 			}, l = e => {
-				for (const t in i.R)
-					if (i.R[t] === e) return t;
+				for (const t in i.S)
+					if (i.S[t] === e) return t;
 				return ""
 			}, u = e => {
 				let t = n.b;
@@ -796,16 +796,16 @@
 					}))
 				}, [w, y]);
 				const A = Object(o.e)(e => Object(f.b)(e, y)),
-					O = Object(n.useCallback)(() => {
+					S = Object(n.useCallback)(() => {
 						C(void 0), w(Object(l.h)(g.a));
 						const e = ((null == A ? void 0 : A.length) || 0) + 1;
 						E(e);
 						const t = s ? "profile_settings" : "profile";
 						z(Object(d.a)(t))
 					}, [w, s, z, A]),
-					S = Object(o.e)(e => Object(p.c)(g.a)(e)),
+					O = Object(o.e)(e => Object(p.c)(g.a)(e)),
 					B = Object(_.a)(),
-					R = Object(n.useCallback)((e, i) => {
+					T = Object(n.useCallback)((e, i) => {
 						const n = i + 1,
 							r = {
 								socialLinkType: e.type,
@@ -822,7 +822,7 @@
 							window.open(t, "_blank"), z(Object(d.f)(r)), B(t, b.SourceElement.SocialLink, void 0, void 0, e.type)
 						}
 					}, [w, t, s, z, B]),
-					T = Object(n.useCallback)((e, t, s) => {
+					I = Object(n.useCallback)((e, t, s) => {
 						const {
 							handle: i,
 							id: n,
@@ -838,31 +838,31 @@
 							isNew: !1
 						}))
 					}, [w, z, y]),
-					I = t && (s || A && A.length < g.g),
-					Z = t && !s && A && A.length >= g.g;
+					Z = t && (s || A && A.length < g.g),
+					P = t && !s && A && A.length >= g.g;
 				return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 					className: Object(a.a)(x.a.socialLinks, i)
 				}, A && A.map((e, t) => r.a.createElement(k.a, {
 					key: e.id,
 					socialLinkType: e.type,
-					onClick: () => R(e, t)
+					onClick: () => T(e, t)
 				}, e.handle || e.title, s && r.a.createElement(m.a, {
 					name: c.a.clear,
 					className: x.a.removeIcon,
-					onClick: s => T(s, e, t)
-				}))), I && r.a.createElement(k.a, {
+					onClick: s => I(s, e, t)
+				}))), Z && r.a.createElement(k.a, {
 					disabled: !A || A.length >= g.g,
-					onClick: O
+					onClick: S
 				}, r.a.createElement(m.a, {
 					name: c.a.add,
 					className: x.a.addIcon
 				}), v._("Add social link", null, {
 					hk: "4hANO2"
-				})), Z && r.a.createElement(F, {
+				})), P && r.a.createElement(F, {
 					to: "/settings/profile"
 				}, r.a.createElement(k.a, null, v._("Edit", null, {
 					hk: "3MTv8r"
-				}))), t && S && r.a.createElement(D, {
+				}))), t && O && r.a.createElement(D, {
 					socialLink: j,
 					socialLinkPosition: L,
 					username: y,
@@ -925,4 +925,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SocialLinks.6f21e5a0afc641a5601c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SocialLinks.e4cff23368752e3f7c37.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.cda795da5bf78a859557.js
-// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.12a1037561112db03a1a.js
+// Retrieved at 12/5/2022, 4:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -749,8 +749,8 @@
 				R = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionsCarousel/PredictionsProgress/index.m.less"),
 				V = n.n(R);
 
-			function F() {
-				return (F = Object.assign || function(e) {
+			function M() {
+				return (M = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
@@ -758,7 +758,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const G = e => {
+			const F = e => {
 				let {
 					value: t,
 					count: n,
@@ -767,7 +767,7 @@
 				} = e;
 				const i = Object(a.e)(f.fb),
 					c = Math.floor(100 * t / n);
-				return r.a.createElement("div", F({
+				return r.a.createElement("div", M({
 					className: Object(p.a)(V.a.container, o, {
 						[V.a.isNightMode]: i
 					})
@@ -784,7 +784,7 @@
 					hk: "1dMoEh"
 				})))
 			};
-			var M = n("./src/reddit/icons/fonts/index.tsx"),
+			var G = n("./src/reddit/icons/fonts/index.tsx"),
 				B = n("./src/reddit/components/Econ/Prediction/PredictionCard/PredictionBody/index.tsx"),
 				U = n("./src/reddit/components/Econ/Prediction/PredictionModal/index.tsx"),
 				$ = n("./src/reddit/actions/economics/helpers/index.ts"),
@@ -965,7 +965,7 @@
 								noun: "previous_post"
 							}))(t.id)), g()
 						}
-					}, r.a.createElement(M.a, {
+					}, r.a.createElement(G.a, {
 						name: "caret_left",
 						className: ne.a.icon,
 						isFilled: !0
@@ -979,11 +979,11 @@
 								noun: "next_post"
 							}))(t.id)), b()
 						}
-					}, r.a.createElement(M.a, {
+					}, r.a.createElement(G.a, {
 						name: "caret_right",
 						className: ne.a.icon,
 						isFilled: !0
-					})), r.a.createElement(G, {
+					})), r.a.createElement(F, {
 						className: ne.a.counter,
 						value: s,
 						count: n.length
@@ -1097,14 +1097,14 @@
 						...u,
 						variables: t
 					});
-					return !!Object(s.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(v.L.Talk)
+					return !!Object(s.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(v.M.Talk)
 				}, h = async (e, t) => {
 					var n, o;
 					const r = await Object(a.a)(e, {
 						...m,
 						variables: t
 					});
-					return !!Object(s.c)(r) && (null !== (o = null === (n = r.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(v.L.Talk)
+					return !!Object(s.c)(r) && (null !== (o = null === (n = r.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(v.M.Talk)
 				}, O = async e => {
 					var t;
 					const n = await Object(a.a)(e, l);
@@ -1148,10 +1148,10 @@
 						hk: "2mGf21"
 					})
 				}, C = e => e.data.prepareAudioRoom || e.data.prepareAudioRoomOnProfile, S = {
-					[v.N.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+					[v.O.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[v.N.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
+					[v.O.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					})
 				}, N = (e, t) => Object(a.a)(e, {
@@ -1323,4 +1323,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.cda795da5bf78a859557.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.12a1037561112db03a1a.js.map

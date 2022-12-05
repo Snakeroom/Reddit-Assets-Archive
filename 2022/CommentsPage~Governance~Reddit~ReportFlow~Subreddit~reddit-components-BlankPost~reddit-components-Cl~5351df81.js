@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.a00dda16e2d351ccb2f0.js
-// Retrieved at 12/5/2022, 2:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.4ae9a0fb27634c705e7a.js
+// Retrieved at 12/5/2022, 4:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"], {
 		"./src/lib/name/index.ts": function(e, t, r) {
@@ -1145,7 +1145,7 @@
 							isStartImmediately: !0,
 							subredditId: e,
 							predictionDrafts: a,
-							currency: m.U.Tokens,
+							currency: m.V.Tokens,
 							tokenIcon: u
 						}),
 						b = Object(S.a)(l);
@@ -4624,9 +4624,9 @@
 						modQueueSettings: F
 					} = e;
 					return {
-						allowGalleries: v.includes(O.L.Gallery),
-						allowImages: v.includes(O.L.Image),
-						allowPolls: v.includes(O.L.Poll),
+						allowGalleries: v.includes(O.M.Gallery),
+						allowImages: v.includes(O.M.Image),
+						allowPolls: v.includes(O.M.Poll),
 						archivePostsEnabled: n,
 						allowDiscovery: o,
 						allowChatPostCreation: i,
@@ -4681,19 +4681,19 @@
 				},
 				y = e => e ? v.indexOf(e) : 0,
 				T = e => {
-					if (e) return Object.values(O.S).find(t => t === (null == e ? void 0 : e.toUpperCase()))
+					if (e) return Object.values(O.T).find(t => t === (null == e ? void 0 : e.toUpperCase()))
 				},
 				S = e => {
 					if (e) return Object.values(O.g).find(t => t === (null == e ? void 0 : e.toUpperCase()))
 				},
 				E = e => {
-					if (e) return Object.values(O.ab).find(t => t === (null == e ? void 0 : e.toUpperCase()))
+					if (e) return Object.values(O.bb).find(t => t === (null == e ? void 0 : e.toUpperCase()))
 				},
 				x = e => {
-					if (e) return e > 0 ? O.V.Enabled : O.V.Disabled
+					if (e) return e > 0 ? O.W.Enabled : O.W.Disabled
 				},
 				C = e => {
-					if (e) return e === O.V.Enabled ? 1 : 0
+					if (e) return e === O.W.Enabled ? 1 : 0
 				},
 				A = e => {
 					let {
@@ -12034,4 +12034,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.a00dda16e2d351ccb2f0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.4ae9a0fb27634c705e7a.js.map
