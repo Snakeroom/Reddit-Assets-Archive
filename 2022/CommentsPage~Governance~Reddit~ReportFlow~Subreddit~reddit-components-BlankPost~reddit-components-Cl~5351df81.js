@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.09b573be185a5bf77373.js
-// Retrieved at 12/5/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.f64d893b19f454151edc.js
+// Retrieved at 12/5/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"], {
 		"./src/lib/name/index.ts": function(e, t, r) {
@@ -7478,7 +7478,7 @@
 						let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
 						if (Object(a.j)(e) || Object(a.i)(e)) return null;
 						if (d.posts[e.id]) return e.id;
-						const r = Object(O.f)(e);
+						const r = Object(O.f)(e, !0);
 						d.posts[r.id] = r;
 						const {
 							crosspostRoot: u
@@ -12034,4 +12034,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.09b573be185a5bf77373.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.f64d893b19f454151edc.js.map

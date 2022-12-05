@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.76d0d473b08221b1ac0a.js
-// Retrieved at 12/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.9b19d8aa4e198af51725.js
+// Retrieved at 12/5/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -58697,7 +58697,7 @@
 						let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
 						if (Object(c.j)(e) || Object(c.i)(e)) return null;
 						if (a.posts[e.id]) return e.id;
-						const n = Object(h.f)(e);
+						const n = Object(h.f)(e, !0);
 						a.posts[n.id] = n;
 						const {
 							crosspostRoot: l
@@ -78427,4 +78427,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.76d0d473b08221b1ac0a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.9b19d8aa4e198af51725.js.map

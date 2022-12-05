@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.679879a0f689ba3a9545.js
-// Retrieved at 12/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.07a3baf77b1912e93d18.js
+// Retrieved at 12/5/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1416,8 +1416,8 @@
 						"CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~1fdd9b9b": "cd04885a9e8e870170ea",
 						"CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32": "83b802ce55c312bf1e79",
 						"ModQueuePages~reddit-components-ModHub-Content-ModQueue": "ef016811ccc879ed3131",
-						ModQueuePages: "f206b282c51386c5461a",
-						"CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5": "5407b1e1c1776d2bd082",
+						ModQueuePages: "7523ca630485fabb83cc",
+						"CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5": "57c981c276bf2e4837d6",
 						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab": "d930889f947274782fb0",
 						"CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e": "7a04bf9a32cb029ad4ca",
 						"CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a": "ca12764cf7a3f124acaa",
@@ -1440,10 +1440,10 @@
 						"SubredditWiki~reddit-components-Wiki-ModHubWikiManagement": "7b12faa23c98107bb33d",
 						"Settings~SubredditWiki": "c54004fe558ec8fe53f9",
 						SubredditWiki: "1343d0d7e03862a495b1",
-						"FramedGild~GildModal": "ecb3c6aad40024d74339",
+						"FramedGild~GildModal": "83ac26e3857b41ceda3b",
 						FramedGild: "5cda3622d5f2cc6d9e75",
 						GildModal: "086195bd13b2a2b62691",
-						HappeningNow: "5adca20fce4a72a4d1e3",
+						HappeningNow: "54819b0c1977b495c783",
 						Frontpage: "35ed141296b4bb708b8b",
 						PostSetPage: "cfa47aef76c346f717d2",
 						Topic: "d4da7e825c63503351b1",
@@ -1563,7 +1563,7 @@
 						"vendors~PostCreation": "316b47c22fec0d1b4d7b",
 						PostCreation: "f143f4587dc2cb9ae71b",
 						"vendors~ModerationPages": "94c34813eaf24a1890ea",
-						ModerationPages: "76d0d473b08221b1ac0a",
+						ModerationPages: "9b19d8aa4e198af51725",
 						"vendors~ModStatsChart~Settings~ViewsTooltip": "ca7c845d62fd39d960b6",
 						"vendors~Settings": "86b1cfc53320ea8eef91",
 						Settings: "92c47f1c7fdb683129bd",
@@ -1593,7 +1593,7 @@
 						UserAchievementFlair: "7f1c7894a149d0709616",
 						"reddit-components-ModQueueActivitySummaryCards": "e39b164b75d42883ce08",
 						"reddit-components-ModQueueActivitySummaryCards-ModActivityPreview": "81e55503a4efe62dd4aa",
-						"reddit-components-MediumPost": "f5fcf5c14e4bfce4eb1c",
+						"reddit-components-MediumPost": "00f3669f06889cd07441",
 						"reddit-components-ClassicPost": "eb75c63e26acf3be8952",
 						"reddit-components-CompactPost": "064d6e046395316a9115",
 						"reddit-components-LargePost": "834edbd023e98d190107",
@@ -1626,7 +1626,7 @@
 						"reddit-components-ViewReportsDropdown-index": "94131befc40a803bbbdc",
 						"reddit-pages-CommentsPage-OtherDiscussions": "7ec5d32ce86ed21a4cff",
 						schedulePickerModal: "6b4538044a155d65f80a",
-						"ChatMessageInput~ChatPost": "fb81efc683a515232315",
+						"ChatMessageInput~ChatPost": "9f5fbbeec85542515844",
 						ChatPost: "b8c1f4093e3926bab5e7",
 						ChatMessageInput: "957ad216eeac4e7f6f51",
 						RichTextEditor: "0608487d66929446225e",
@@ -1804,4 +1804,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.679879a0f689ba3a9545.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.07a3baf77b1912e93d18.js.map
