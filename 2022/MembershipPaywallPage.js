@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.4b0735f88f8c1de45d25.js
-// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.fcb06f495a4be2f44f18.js
+// Retrieved at 12/5/2022, 5:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -252,7 +252,6 @@
 				}, s._detect = t, s.detect = t, s
 			}, e.exports ? e.exports = i() : s("./node_modules/webpack/buildin/amd-define.js")("bowser", i)
 		},
-		"./node_modules/draft-js/dist/Draft.css": function(e, t, s) {},
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
 			"use strict";
 
@@ -414,66 +413,9 @@
 				return t.src_pseudo_letter = "(?:(?![><｜]|" + t.src_ZPCc + ")" + t.src_Any + ")", t.src_ip4 = "(?:(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)", t.src_auth = "(?:(?:(?!" + t.src_ZCc + "|[@/\\[\\]()]).)+@)?", t.src_port = "(?::(?:6(?:[0-4]\\d{3}|5(?:[0-4]\\d{2}|5(?:[0-2]\\d|3[0-5])))|[1-5]?\\d{1,4}))?", t.src_host_terminator = "(?=$|[><｜]|" + t.src_ZPCc + ")(?!-|_|:\\d|\\.-|\\.(?!$|" + t.src_ZPCc + "))", t.src_path = "(?:[/?#](?:(?!" + t.src_ZCc + "|[><｜]|[()[\\]{}.,\"'?!\\-]).|\\[(?:(?!" + t.src_ZCc + "|\\]).)*\\]|\\((?:(?!" + t.src_ZCc + "|[)]).)*\\)|\\{(?:(?!" + t.src_ZCc + '|[}]).)*\\}|\\"(?:(?!' + t.src_ZCc + '|["]).)+\\"|\\\'(?:(?!' + t.src_ZCc + "|[']).)+\\'|\\'(?=" + t.src_pseudo_letter + "|[-]).|\\.{2,3}[a-zA-Z0-9%/]|\\.(?!" + t.src_ZCc + "|[.]).|" + (e && e["---"] ? "\\-(?!--(?:[^-]|$))(?:-*)|" : "\\-+|") + "\\,(?!" + t.src_ZCc + ").|\\!(?!" + t.src_ZCc + "|[!]).|\\?(?!" + t.src_ZCc + "|[?]).)+|\\/)?", t.src_email_name = '[\\-;:&=\\+\\$,\\"\\.a-zA-Z0-9_]+', t.src_xn = "xn--[a-z0-9\\-]{1,59}", t.src_domain_root = "(?:" + t.src_xn + "|" + t.src_pseudo_letter + "{1,63})", t.src_domain = "(?:" + t.src_xn + "|(?:" + t.src_pseudo_letter + ")|(?:" + t.src_pseudo_letter + "(?:-(?!-)|" + t.src_pseudo_letter + "){0,61}" + t.src_pseudo_letter + "))", t.src_host = "(?:(?:(?:(?:" + t.src_domain + ")\\.)*" + t.src_domain + "))", t.tpl_host_fuzzy = "(?:" + t.src_ip4 + "|(?:(?:(?:" + t.src_domain + ")\\.)+(?:%TLDS%)))", t.tpl_host_no_ip_fuzzy = "(?:(?:(?:" + t.src_domain + ")\\.)+(?:%TLDS%))", t.src_host_strict = t.src_host + t.src_host_terminator, t.tpl_host_fuzzy_strict = t.tpl_host_fuzzy + t.src_host_terminator, t.src_host_port_strict = t.src_host + t.src_port + t.src_host_terminator, t.tpl_host_port_fuzzy_strict = t.tpl_host_fuzzy + t.src_port + t.src_host_terminator, t.tpl_host_port_no_ip_fuzzy_strict = t.tpl_host_no_ip_fuzzy + t.src_port + t.src_host_terminator, t.tpl_host_fuzzy_test = "localhost|www\\.|\\.\\d{1,3}\\.|(?:\\.(?:%TLDS%)(?:" + t.src_ZPCc + "|>|$))", t.tpl_email_fuzzy = "(^|[><｜]|\\(|" + t.src_ZCc + ")(" + t.src_email_name + "@" + t.tpl_host_fuzzy_strict + ")", t.tpl_link_fuzzy = "(^|(?![.:/\\-_@])(?:[$+<=>^`|｜]|" + t.src_ZPCc + "))((?![$+<=>^`|｜])" + t.tpl_host_port_fuzzy_strict + t.src_path + ")", t.tpl_link_no_ip_fuzzy = "(^|(?![.:/\\-_@])(?:[$+<=>^`|｜]|" + t.src_ZPCc + "))((?![$+<=>^`|｜])" + t.tpl_host_port_no_ip_fuzzy_strict + t.src_path + ")", t
 			}
 		},
-		"./node_modules/lodash/_arrayReduceRight.js": function(e, t) {
-			e.exports = function(e, t, s, i) {
-				var n = null == e ? 0 : e.length;
-				for (i && n && (s = e[--n]); n--;) s = t(s, e[n], n, e);
-				return s
-			}
-		},
 		"./node_modules/lodash/_baseClamp.js": function(e, t) {
 			e.exports = function(e, t, s) {
 				return e == e && (void 0 !== s && (e = e <= s ? e : s), void 0 !== t && (e = e >= t ? e : t)), e
-			}
-		},
-		"./node_modules/lodash/_baseEachRight.js": function(e, t, s) {
-			var i = s("./node_modules/lodash/_baseForOwnRight.js"),
-				n = s("./node_modules/lodash/_createBaseEach.js")(i, !0);
-			e.exports = n
-		},
-		"./node_modules/lodash/_baseExtremum.js": function(e, t, s) {
-			var i = s("./node_modules/lodash/isSymbol.js");
-			e.exports = function(e, t, s) {
-				for (var n = -1, r = e.length; ++n < r;) {
-					var a = e[n],
-						o = t(a);
-					if (null != o && (void 0 === c ? o == o && !i(o) : s(o, c))) var c = o,
-						l = a
-				}
-				return l
-			}
-		},
-		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
-			var i = s("./node_modules/lodash/_baseEach.js");
-			e.exports = function(e, t) {
-				var s = [];
-				return i(e, (function(e, i, n) {
-					t(e, i, n) && s.push(e)
-				})), s
-			}
-		},
-		"./node_modules/lodash/_baseForOwnRight.js": function(e, t, s) {
-			var i = s("./node_modules/lodash/_baseForRight.js"),
-				n = s("./node_modules/lodash/keys.js");
-			e.exports = function(e, t) {
-				return e && i(e, t, n)
-			}
-		},
-		"./node_modules/lodash/_baseForRight.js": function(e, t, s) {
-			var i = s("./node_modules/lodash/_createBaseFor.js")(!0);
-			e.exports = i
-		},
-		"./node_modules/lodash/_baseGt.js": function(e, t) {
-			e.exports = function(e, t) {
-				return e > t
-			}
-		},
-		"./node_modules/lodash/_baseRange.js": function(e, t) {
-			var s = Math.ceil,
-				i = Math.max;
-			e.exports = function(e, t, n, r) {
-				for (var a = -1, o = i(s((t - e) / (n || 1)), 0), c = Array(o); o--;) c[r ? o : ++a] = e, e += n;
-				return c
 			}
 		},
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -483,85 +425,11 @@
 				})), s
 			}
 		},
-		"./node_modules/lodash/_baseWhile.js": function(e, t, s) {
-			var i = s("./node_modules/lodash/_baseSlice.js");
-			e.exports = function(e, t, s, n) {
-				for (var r = e.length, a = n ? r : -1;
-					(n ? a-- : ++a < r) && t(e[a], a, e););
-				return s ? i(e, n ? 0 : a, n ? a + 1 : r) : i(e, n ? a + 1 : 0, n ? r : a)
-			}
-		},
-		"./node_modules/lodash/_charsEndIndex.js": function(e, t, s) {
-			var i = s("./node_modules/lodash/_baseIndexOf.js");
-			e.exports = function(e, t) {
-				for (var s = e.length; s-- && i(t, e[s], 0) > -1;);
-				return s
-			}
-		},
-		"./node_modules/lodash/_createRange.js": function(e, t, s) {
-			var i = s("./node_modules/lodash/_baseRange.js"),
-				n = s("./node_modules/lodash/_isIterateeCall.js"),
-				r = s("./node_modules/lodash/toFinite.js");
-			e.exports = function(e) {
-				return function(t, s, a) {
-					return a && "number" != typeof a && n(t, s, a) && (s = a = void 0), t = r(t), void 0 === s ? (s = t, t = 0) : s = r(s), a = void 0 === a ? t < s ? 1 : -1 : r(a), i(t, s, a, e)
-				}
-			}
-		},
-		"./node_modules/lodash/_escapeHtmlChar.js": function(e, t, s) {
-			var i = s("./node_modules/lodash/_basePropertyOf.js")({
-				"&": "&amp;",
-				"<": "&lt;",
-				">": "&gt;",
-				'"': "&quot;",
-				"'": "&#39;"
-			});
-			e.exports = i
-		},
-		"./node_modules/lodash/chunk.js": function(e, t, s) {
-			var i = s("./node_modules/lodash/_baseSlice.js"),
-				n = s("./node_modules/lodash/_isIterateeCall.js"),
-				r = s("./node_modules/lodash/toInteger.js"),
-				a = Math.ceil,
-				o = Math.max;
-			e.exports = function(e, t, s) {
-				t = (s ? n(e, t, s) : void 0 === t) ? 1 : o(r(t), 0);
-				var c = null == e ? 0 : e.length;
-				if (!c || t < 1) return [];
-				for (var l = 0, d = 0, m = Array(a(c / t)); l < c;) m[d++] = i(e, l, l += t);
-				return m
-			}
-		},
 		"./node_modules/lodash/clamp.js": function(e, t, s) {
 			var i = s("./node_modules/lodash/_baseClamp.js"),
 				n = s("./node_modules/lodash/toNumber.js");
 			e.exports = function(e, t, s) {
 				return void 0 === s && (s = t, t = void 0), void 0 !== s && (s = (s = n(s)) == s ? s : 0), void 0 !== t && (t = (t = n(t)) == t ? t : 0), i(n(e), t, s)
-			}
-		},
-		"./node_modules/lodash/dropRightWhile.js": function(e, t, s) {
-			var i = s("./node_modules/lodash/_baseIteratee.js"),
-				n = s("./node_modules/lodash/_baseWhile.js");
-			e.exports = function(e, t) {
-				return e && e.length ? n(e, i(t, 3), !0, !0) : []
-			}
-		},
-		"./node_modules/lodash/escape.js": function(e, t, s) {
-			var i = s("./node_modules/lodash/_escapeHtmlChar.js"),
-				n = s("./node_modules/lodash/toString.js"),
-				r = /[&<>"']/g,
-				a = RegExp(r.source);
-			e.exports = function(e) {
-				return (e = n(e)) && a.test(e) ? e.replace(r, i) : e
-			}
-		},
-		"./node_modules/lodash/filter.js": function(e, t, s) {
-			var i = s("./node_modules/lodash/_arrayFilter.js"),
-				n = s("./node_modules/lodash/_baseFilter.js"),
-				r = s("./node_modules/lodash/_baseIteratee.js"),
-				a = s("./node_modules/lodash/isArray.js");
-			e.exports = function(e, t) {
-				return (a(e) ? i : n)(e, r(t, 3))
 			}
 		},
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -576,65 +444,6 @@
 				n = 1 / 0;
 			e.exports = function(e) {
 				return (null == e ? 0 : e.length) ? i(e, n) : []
-			}
-		},
-		"./node_modules/lodash/includes.js": function(e, t, s) {
-			var i = s("./node_modules/lodash/_baseIndexOf.js"),
-				n = s("./node_modules/lodash/isArrayLike.js"),
-				r = s("./node_modules/lodash/isString.js"),
-				a = s("./node_modules/lodash/toInteger.js"),
-				o = s("./node_modules/lodash/values.js"),
-				c = Math.max;
-			e.exports = function(e, t, s, l) {
-				e = n(e) ? e : o(e), s = s && !l ? a(s) : 0;
-				var d = e.length;
-				return s < 0 && (s = c(d + s, 0)), r(e) ? s <= d && e.indexOf(t, s) > -1 : !!d && i(e, t, s) > -1
-			}
-		},
-		"./node_modules/lodash/maxBy.js": function(e, t, s) {
-			var i = s("./node_modules/lodash/_baseExtremum.js"),
-				n = s("./node_modules/lodash/_baseGt.js"),
-				r = s("./node_modules/lodash/_baseIteratee.js");
-			e.exports = function(e, t) {
-				return e && e.length ? i(e, r(t, 2), n) : void 0
-			}
-		},
-		"./node_modules/lodash/range.js": function(e, t, s) {
-			var i = s("./node_modules/lodash/_createRange.js")();
-			e.exports = i
-		},
-		"./node_modules/lodash/reduceRight.js": function(e, t, s) {
-			var i = s("./node_modules/lodash/_arrayReduceRight.js"),
-				n = s("./node_modules/lodash/_baseEachRight.js"),
-				r = s("./node_modules/lodash/_baseIteratee.js"),
-				a = s("./node_modules/lodash/_baseReduce.js"),
-				o = s("./node_modules/lodash/isArray.js");
-			e.exports = function(e, t, s) {
-				var c = o(e) ? i : a,
-					l = arguments.length < 3;
-				return c(e, r(t, 4), s, l, n)
-			}
-		},
-		"./node_modules/lodash/takeWhile.js": function(e, t, s) {
-			var i = s("./node_modules/lodash/_baseIteratee.js"),
-				n = s("./node_modules/lodash/_baseWhile.js");
-			e.exports = function(e, t) {
-				return e && e.length ? n(e, i(t, 3)) : []
-			}
-		},
-		"./node_modules/lodash/trimEnd.js": function(e, t, s) {
-			var i = s("./node_modules/lodash/_baseToString.js"),
-				n = s("./node_modules/lodash/_castSlice.js"),
-				r = s("./node_modules/lodash/_charsEndIndex.js"),
-				a = s("./node_modules/lodash/_stringToArray.js"),
-				o = s("./node_modules/lodash/toString.js"),
-				c = s("./node_modules/lodash/_trimmedEndIndex.js");
-			e.exports = function(e, t, s) {
-				if ((e = o(e)) && (s || void 0 === t)) return e.slice(0, c(e) + 1);
-				if (!e || !(t = i(t))) return e;
-				var l = a(e),
-					d = r(l, a(t)) + 1;
-				return n(l, 0, d).join("")
 			}
 		},
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -1806,10 +1615,10 @@
 			var k = s("./node_modules/lodash/debounce.js"),
 				E = s.n(k),
 				j = s("./src/config.ts"),
-				I = s("./src/reddit/icons/svgs/Search/index.tsx"),
-				N = s("./src/reddit/selectors/user.ts"),
-				O = s("./src/reddit/components/RichTextEditor/media/GifTooltip/SearchBox/index.m.less"),
-				P = s.n(O);
+				N = s("./src/reddit/icons/svgs/Search/index.tsx"),
+				O = s("./src/reddit/selectors/user.ts"),
+				I = s("./src/reddit/components/RichTextEditor/media/GifTooltip/SearchBox/index.m.less"),
+				P = s.n(I);
 			const S = 400;
 			class F extends d.a.Component {
 				constructor() {
@@ -1839,7 +1648,7 @@
 					}, d.a.createElement("button", {
 						className: P.a.searchIconButton,
 						onClick: this.focusOnInput
-					}, d.a.createElement(I.a, {
+					}, d.a.createElement(N.a, {
 						className: P.a.searchIcon
 					})), d.a.createElement("input", {
 						ref: e => this.elementRef = e,
@@ -1860,7 +1669,7 @@
 				}
 			}
 			const M = Object(u.c)({
-				isNightMode: N.fb
+				isNightMode: O.fb
 			});
 			var T = Object(m.b)(M)(F),
 				R = s("./src/lib/constants/icons.ts"),
@@ -2261,24 +2070,24 @@
 			}
 			var E = s("./src/lib/scheduler/index.ts"),
 				j = s("./src/lib/domUtils/index.ts"),
-				I = s("./src/lib/LinkedListMap/index.ts");
-			const N = (e, t) => e < 0 ? t + e : e % t;
-			class O {
+				N = s("./src/lib/LinkedListMap/index.ts");
+			const O = (e, t) => e < 0 ? t + e : e % t;
+			class I {
 				constructor(e) {
 					this.head = 0, this.size = 0, this.maxSize = e, this.items = new Array(e)
 				}
 				push(e) {
-					return this.items[this.head] = e, this.head = N(this.head + 1, this.maxSize), this.size < this.maxSize && this.size++, this
+					return this.items[this.head] = e, this.head = O(this.head + 1, this.maxSize), this.size < this.maxSize && this.size++, this
 				}
 				pop() {
 					if (this.size > 0) {
-						const e = N(this.head - 1, this.maxSize),
+						const e = O(this.head - 1, this.maxSize),
 							t = this.items[e];
 						return this.items[e] = void 0, this.head = e, this.size--, t
 					}
 				}
 				forEach(e) {
-					let t = this.size < this.maxSize ? N(this.head - this.size, this.maxSize) : this.head;
+					let t = this.size < this.maxSize ? O(this.head - this.size, this.maxSize) : this.head;
 					for (let s = 0; s < this.size; s++) e(this.items[t], s, this.size), t = (t + 1) % this.maxSize
 				}
 				map(e) {
@@ -2389,7 +2198,7 @@
 				ce = () => oe ? performance.now() : Date.now();
 
 			function le(e, t) {
-				return I.a.fromArray(e.children.map((e, s) => {
+				return N.a.fromArray(e.children.map((e, s) => {
 					const i = t && t.get(e.id);
 					return i ? (i.isFocusable = !!e.isFocusable, i.trackOnEnteredViewport = e.trackOnEnteredViewport, i.trackOnExitedViewport = e.trackOnExitedViewport, i) : {
 						el: null,
@@ -2493,7 +2302,7 @@
 						})
 					}, this.elementIsVisible = e => !!this.viewport && this.viewport.intersects(e), this.getItemsInViewportWithFilter = e => {
 						this.updateViewportInfo();
-						const t = new I.a("id");
+						const t = new N.a("id");
 						return this.state.renderableChildren.forEach(s => {
 							const i = this.childMap.get(s.id);
 							i && e(i) && t.push(i)
@@ -2556,7 +2365,7 @@
 								}
 							}
 							this.populateRenderableChildrenIfLastChildIsVisible();
-							const n = new I.a("id");
+							const n = new N.a("id");
 							let r, a;
 							const o = [];
 							this.state.renderableChildren.forEach(e => {
@@ -2665,7 +2474,7 @@
 							return n >= s + e && n < i
 						}
 						return !1
-					}, this.childMap = le(e), this.containerRef = null, this.itemsInViewport = new I.a("id"), this.loadMoreFired = !1, this.pixelsPerMSRing = new O(Y), this.wrapperRefFNs = {}, this.childRefFns = {}, this.childrenToHide = {}, this.childrenToShow = {}, this.canFocusItems = !0, this.focusedChild = void 0, this.hiddenChildren = {}, this.nextVisibleChildrenIndex = 0, this.lastVisibleEl = null, this.lastVisibleElId = null, this.remeasureWhenShown = {}, this.timeoutForUpdateIdleCallback = re;
+					}, this.childMap = le(e), this.containerRef = null, this.itemsInViewport = new N.a("id"), this.loadMoreFired = !1, this.pixelsPerMSRing = new I(Y), this.wrapperRefFNs = {}, this.childRefFns = {}, this.childrenToHide = {}, this.childrenToShow = {}, this.canFocusItems = !0, this.focusedChild = void 0, this.hiddenChildren = {}, this.nextVisibleChildrenIndex = 0, this.lastVisibleEl = null, this.lastVisibleElId = null, this.remeasureWhenShown = {}, this.timeoutForUpdateIdleCallback = re;
 					const s = this.getVisibleChildren();
 					s.length && (this.lastVisibleElId = s[s.length - 1].id), this.nextVisibleChildrenIndex = s.length, this.updateRenderableChildrenHandle = null, this.state = {
 						renderableChildren: s
@@ -2731,7 +2540,7 @@
 						const e = this.getCacheKey();
 						q[e] = this.lastRenderPosition
 					}
-					this.childMap = new I.a("id"), this.itemsInViewport = new I.a("id"), this.wrapperRefFNs = {}, this.childRefFns = {}, this.containerRef = null, this.loadMoreEl = void 0, this.scrollContainer = void 0, this.unmountItemsIdleId && (Object(m.cancelIdleCallback)(this.unmountItemsIdleId), this.unmountItemsIdleId = null)
+					this.childMap = new N.a("id"), this.itemsInViewport = new N.a("id"), this.wrapperRefFNs = {}, this.childRefFns = {}, this.containerRef = null, this.loadMoreEl = void 0, this.scrollContainer = void 0, this.unmountItemsIdleId && (Object(m.cancelIdleCallback)(this.unmountItemsIdleId), this.unmountItemsIdleId = null)
 				}
 				didLayoutAloneChange(e, t) {
 					return "string" == typeof e.layoutKey && "string" == typeof t.layoutKey && e.layoutKey !== t.layoutKey && "string" == typeof e.dataKey && "string" == typeof t.layoutKey && e.dataKey === t.dataKey
@@ -4321,9 +4130,9 @@
 				},
 				E = s("./src/reddit/selectors/economics.ts"),
 				j = s("./src/reddit/components/RichTextEditor/index.tsx"),
-				I = s("./src/reddit/components/RichTextEditor/RTEState/index.tsx"),
-				N = s("./src/reddit/components/ScrollAnimation/index.tsx"),
-				O = s("./src/reddit/helpers/richTextEditor/index.ts"),
+				N = s("./src/reddit/components/RichTextEditor/RTEState/index.tsx"),
+				O = s("./src/reddit/components/ScrollAnimation/index.tsx"),
+				I = s("./src/reddit/helpers/richTextEditor/index.ts"),
 				P = s("./src/reddit/pages/meta/MembershipPaywallPage/getSrc.ts"),
 				S = s("./src/reddit/icons/svgs/FormattingBold/index.tsx"),
 				F = s("./src/reddit/icons/svgs/FormattingHyperlink/index.tsx"),
@@ -4762,13 +4571,13 @@
 					}, n.a.createElement("img", {
 						className: oe.a.rescuerLegs,
 						src: Object(P.a)(s, "rescuer_legs@2x.png")
-					}), n.a.createElement(N.a, {
+					}), n.a.createElement(O.a, {
 						scrollRange: i
 					}, e => n.a.createElement("img", {
 						className: oe.a.rescuerArm,
 						src: Object(P.a)(s, "rescuer_arm@2x.png"),
 						style: e
-					})), n.a.createElement(N.a, {
+					})), n.a.createElement(O.a, {
 						scrollRange: i
 					}, e => n.a.createElement("img", {
 						className: oe.a.rescuerTorso,
@@ -4777,7 +4586,7 @@
 					})), n.a.createElement("img", {
 						className: oe.a.woundedBody,
 						src: Object(P.a)(s, "wounded_body@2x.png")
-					}), n.a.createElement(N.a, {
+					}), n.a.createElement(O.a, {
 						scrollRange: i
 					}, e => n.a.createElement("img", {
 						className: oe.a.woundedHead,
@@ -4801,7 +4610,7 @@
 						hk: "1hZivq"
 					})), n.a.createElement(j.a, {
 						className: oe.a.editor,
-						editorType: O.a.Comment,
+						editorType: I.a.Comment,
 						placeholderText: _.fbt._("Try adding a GIF", null, {
 							hk: "tHtDe"
 						}),
@@ -4811,7 +4620,7 @@
 							subreddit: s,
 							type: "gif"
 						}, e)),
-						rteState: I.a.createInitial(),
+						rteState: N.a.createInitial(),
 						toolbarPosition: "bottom",
 						trackToolbarClick: function() {},
 						onChange: function() {},
@@ -4884,7 +4693,7 @@
 						hk: "2MjrRF"
 					})), n.a.createElement(j.a, {
 						className: _e.a.editor,
-						editorType: O.a.Comment,
+						editorType: I.a.Comment,
 						placeholderText: _.fbt._("Try adding an emote", null, {
 							hk: "3H8jm8"
 						}),
@@ -4893,7 +4702,7 @@
 							subreddit: t,
 							type: "emoji"
 						}, e)),
-						rteState: I.a.createInitial(),
+						rteState: N.a.createInitial(),
 						toolbarPosition: "bottom",
 						trackToolbarClick: function() {},
 						onChange: function() {},
@@ -4977,9 +4786,9 @@
 				}
 			}
 			var je = s("./src/reddit/pages/meta/MembershipPaywallPage/Benefits/Section/index.m.less"),
-				Ie = s.n(je);
+				Ne = s.n(je);
 
-			function Ne(e) {
+			function Oe(e) {
 				const t = e.showProgressBar ? 1 / 0 : 6,
 					s = e.items.reduce((e, s) => {
 						const i = he()(e);
@@ -4988,32 +4797,32 @@
 						[]
 					]);
 				return n.a.createElement("section", {
-					className: Object(l.a)(Ie.a.container, e.className)
+					className: Object(l.a)(Ne.a.container, e.className)
 				}, n.a.createElement("header", {
-					className: Ie.a.title
+					className: Ne.a.title
 				}, e.title), n.a.createElement("article", {
-					className: Ie.a.description
+					className: Ne.a.description
 				}, e.description), n.a.createElement("footer", {
-					className: Ie.a.footer
+					className: Ne.a.footer
 				}, e.showProgressBar && n.a.createElement("div", {
-					className: Ie.a.progressBar
+					className: Ne.a.progressBar
 				}, n.a.createElement("div", {
-					className: Ie.a.progressThumb
+					className: Ne.a.progressThumb
 				})), s.map((e, t) => n.a.createElement("div", {
-					className: Ie.a.row,
+					className: Ne.a.row,
 					key: t
 				}, e.map(e => n.a.createElement("div", {
-					className: Ie.a.item,
+					className: Ne.a.item,
 					key: e.text
 				}, n.a.createElement("img", {
-					className: Ie.a.itemIcon,
+					className: Ne.a.itemIcon,
 					src: e.icon
 				}), n.a.createElement("div", {
-					className: Ie.a.itemText
+					className: Ne.a.itemText
 				}, e.text)))))))
 			}
-			var Oe = s("./src/reddit/pages/meta/MembershipPaywallPage/Benefits/StyleBadges/index.m.less"),
-				Pe = s.n(Oe);
+			var Ie = s("./src/reddit/pages/meta/MembershipPaywallPage/Benefits/StyleBadges/index.m.less"),
+				Pe = s.n(Ie);
 			const Se = 1e3,
 				Fe = 66;
 			class Me extends n.a.Component {
@@ -5149,7 +4958,7 @@
 							...g.o(e),
 							subreddit: g.kb(e)
 						})
-					}, n.a.createElement(Ne, {
+					}, n.a.createElement(Oe, {
 						showProgressBar: !0,
 						className: ze.a.section,
 						title: _.fbt._("Loyalty Badges", null, {
@@ -5169,7 +4978,7 @@
 							...g.o(e),
 							subreddit: g.kb(e)
 						})
-					}, n.a.createElement(Ne, {
+					}, n.a.createElement(Oe, {
 						className: ze.a.section,
 						title: _.fbt._("Achievement Badges", null, {
 							hk: "4asfWh"
@@ -5361,19 +5170,19 @@
 				}, n.a.createElement("img", {
 					className: Ke.a.pianoKeyboard,
 					src: Object(P.a)(e.subreddit, "piano_keyboard@2x.png")
-				}), n.a.createElement(N.a, {
+				}), n.a.createElement(O.a, {
 					scrollRange: Ye
 				}, t => n.a.createElement("img", {
 					className: Ke.a.pianoCrowdBottom,
 					src: Object(P.a)(e.subreddit, "piano_crowd_bottom@2x.png"),
 					style: t
-				})), n.a.createElement(N.a, {
+				})), n.a.createElement(O.a, {
 					scrollRange: Ye
 				}, t => n.a.createElement("img", {
 					className: Ke.a.pianoCrowdTop,
 					src: Object(P.a)(e.subreddit, "piano_crowd_top@2x.png"),
 					style: t
-				})), n.a.createElement(N.a, {
+				})), n.a.createElement(O.a, {
 					scrollRange: Ye
 				}, t => n.a.createElement("img", {
 					className: Ke.a.pianoFlier,
@@ -5498,7 +5307,7 @@
 					return Object(E.r)(e, s)
 				}
 			});
-			var It = Object(r.b)(jt)((function(e) {
+			var Nt = Object(r.b)(jt)((function(e) {
 					const {
 						className: t,
 						meta: s,
@@ -5517,8 +5326,8 @@
 						onClick: e.onClose
 					}))
 				})),
-				Nt = s("./node_modules/bignumber.js/bignumber.js"),
-				Ot = s("./src/reddit/components/Economics/SubredditPremium/Badges/ManagementModal/Preview/BadgeCard/CosmeticFooter/PurchaseButton/index.tsx"),
+				Ot = s("./node_modules/bignumber.js/bignumber.js"),
+				It = s("./src/reddit/components/Economics/SubredditPremium/Badges/ManagementModal/Preview/BadgeCard/CosmeticFooter/PurchaseButton/index.tsx"),
 				Pt = s("./src/reddit/controls/Button/index.tsx"),
 				St = s("./node_modules/react-router-redux/es/index.js"),
 				Ft = s("./src/reddit/actions/economics/subredditPremium/actionCreators.ts"),
@@ -5675,7 +5484,7 @@
 			function Jt(e) {
 				return n.a.createElement("div", {
 					className: Kt.a.dollarPurchase
-				}, e.target.type === es.Badge && e.target.product.price && n.a.createElement(Ot.a, {
+				}, e.target.type === es.Badge && e.target.product.price && n.a.createElement(It.a, {
 					correlationId: e.correlationId,
 					key: "checkout-purchase-button",
 					price: e.target.product.price,
@@ -5696,7 +5505,7 @@
 			}
 
 			function Qt(e) {
-				return !e.wallet || new Nt.BigNumber(e.wallet.amount).isLessThan(new Nt.BigNumber(e.tokenPrice)) ? n.a.createElement(Pt.l, {
+				return !e.wallet || new Ot.BigNumber(e.wallet.amount).isLessThan(new Ot.BigNumber(e.tokenPrice)) ? n.a.createElement(Pt.l, {
 					className: Kt.a.notEnoughTokens,
 					disabled: !0
 				}, Yt._("Not enough {token-name}", [Yt._param("token-name", e.tokenName)], {
@@ -5791,7 +5600,7 @@
 						u = (null == o ? void 0 : o.name) || "";
 					return n.a.createElement("div", {
 						className: ss.a.container
-					}, n.a.createElement(It, {
+					}, n.a.createElement(Nt, {
 						purchaseType: t.type,
 						subredditId: s.id,
 						onClose: r
@@ -6000,7 +5809,7 @@
 					return Object(E.r)(e, s.id)
 				}
 			});
-			var Es, js, Is = Object(r.b)(ks)((function(e) {
+			var Es, js, Ns = Object(r.b)(ks)((function(e) {
 					const {
 						className: t,
 						correlationId: s,
@@ -6030,8 +5839,8 @@
 						subredditId: r.id
 					}))
 				})),
-				Ns = s("./src/reddit/icons/svgs/Checkmark/index.tsx"),
-				Os = s("./node_modules/react-motion/lib/react-motion.js"),
+				Os = s("./src/reddit/icons/svgs/Checkmark/index.tsx"),
+				Is = s("./node_modules/react-motion/lib/react-motion.js"),
 				Ps = s("./src/reddit/pages/meta/MembershipPaywallPage/WhatDoYouGet/Testimonials/index.m.less"),
 				Ss = s.n(Ps);
 			! function(e) {
@@ -6159,7 +5968,7 @@
 					} = this.state;
 					return n.a.createElement("div", {
 						className: Object(l.a)(e, Ss.a.container)
-					}, n.a.createElement(Os.TransitionMotion, {
+					}, n.a.createElement(Is.TransitionMotion, {
 						defaultStyles: [{
 							key: "slide-0",
 							data: {
@@ -6177,9 +5986,9 @@
 								index: r
 							},
 							style: {
-								left: Object(Os.spring)(Es.Center),
-								marginLeft: Object(Os.spring)(js.Center),
-								opacity: Object(Os.spring)(1)
+								left: Object(Is.spring)(Es.Center),
+								marginLeft: Object(Is.spring)(js.Center),
+								opacity: Object(Is.spring)(1)
 							}
 						}],
 						willEnter: () => ({
@@ -6188,9 +5997,9 @@
 							opacity: 0
 						}),
 						willLeave: () => ({
-							left: Object(Os.spring)(Es.Left),
-							marginLeft: Object(Os.spring)(js.Left),
-							opacity: Object(Os.spring)(0)
+							left: Object(Is.spring)(Es.Left),
+							marginLeft: Object(Is.spring)(js.Left),
+							opacity: Object(Is.spring)(0)
 						})
 					}, e => n.a.createElement(i.Fragment, null, e.map(e => {
 						const r = s[e.data.index],
@@ -6298,15 +6107,15 @@
 						className: As.a.benefits
 					}, a.styleBadges && n.a.createElement("div", {
 						className: As.a.benefit
-					}, n.a.createElement(Ns.a, {
+					}, n.a.createElement(Os.a, {
 						className: As.a.check
 					}), "Add a badge and color to your username"), a.emotes && n.a.createElement("div", {
 						className: As.a.benefit
-					}, n.a.createElement(Ns.a, {
+					}, n.a.createElement(Os.a, {
 						className: As.a.check
 					}), "Get access to premium animated emotes"), a.gifs && n.a.createElement("div", {
 						className: As.a.benefit
-					}, n.a.createElement(Ns.a, {
+					}, n.a.createElement(Os.a, {
 						className: As.a.check
 					}), "Add GIFs to your comments")), n.a.createElement(vs, {
 						subredditId: r.id,
@@ -6339,7 +6148,7 @@
 					href: "https://www.reddit.com/r/FortNiteBR/comments/a1hxn4/the_moment_my_son_discovered_that_his_skin/",
 					target: "_blank",
 					rel: "noopener noreferrer"
-				}, n.a.createElement(N.a, {
+				}, n.a.createElement(O.a, {
 					scrollRange: Zs
 				}, e => n.a.createElement("img", {
 					className: Ws.a.chickenRightArm,
@@ -6348,7 +6157,7 @@
 				})), n.a.createElement("img", {
 					className: Ws.a.chickenTorso,
 					src: Object(P.a)(s, "chicken_torso@2x.png")
-				}), n.a.createElement(N.a, {
+				}), n.a.createElement(O.a, {
 					scrollRange: Zs
 				}, e => n.a.createElement("img", {
 					className: Ws.a.chickenLeftArm,
@@ -6495,7 +6304,7 @@
 							...g.o(e),
 							subreddit: g.kb(e)
 						})
-					}, n.a.createElement(Is, {
+					}, n.a.createElement(Ns, {
 						correlationId: this.correlationId,
 						subreddit: t
 					})), n.a.createElement(Qs, {
@@ -6600,11 +6409,11 @@
 			})), s.d(t, "h", (function() {
 				return j
 			})), s.d(t, "z", (function() {
-				return I
-			})), s.d(t, "l", (function() {
 				return N
-			})), s.d(t, "n", (function() {
+			})), s.d(t, "l", (function() {
 				return O
+			})), s.d(t, "n", (function() {
+				return I
 			})), s.d(t, "e", (function() {
 				return P
 			})), s.d(t, "d", (function() {
@@ -6719,12 +6528,12 @@
 					}
 				};
 
-			function I(e, t) {
+			function N(e, t) {
 				const s = (e.economics.me.data.specialMemberships || {})[t];
 				return !!(s && s.settings && s.settings.optOut)
 			}
 
-			function N(e, t) {
+			function O(e, t) {
 				const {
 					badge: s,
 					subredditId: i
@@ -6736,7 +6545,7 @@
 				return Object.keys(o).map(e => r[e]).find(e => e && e.type === c)
 			}
 
-			function O(e, t, s, i) {
+			function I(e, t, s, i) {
 				const n = e.economics.subredditPremium[t];
 				if (n && n.status === m.a.Fetched) {
 					if (s === o.a.Loyalty || s === o.a.Achievement) return n.data.collections[s];
@@ -6746,7 +6555,7 @@
 			}
 
 			function P(e, t) {
-				const s = O(e, t, o.a.Loyalty).find(e => "membership" === e.id);
+				const s = I(e, t, o.a.Loyalty).find(e => "membership" === e.id);
 				return s ? [].concat(s.locked, s.unlocked).filter(e => e.position).sort((e, t) => e.position - t.position) : _
 			}
 
@@ -6760,7 +6569,7 @@
 			}
 
 			function F(e, t) {
-				return O(e, t, o.a.Cosmetic, o.c.Gallery).some(e => e.locked.some(e => Object(a.f)(e) || !!e.price))
+				return I(e, t, o.a.Cosmetic, o.c.Gallery).some(e => e.locked.some(e => Object(a.f)(e) || !!e.price))
 			}
 			const M = e => {
 				const t = [],
@@ -6948,4 +6757,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.4b0735f88f8c1de45d25.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.fcb06f495a4be2f44f18.js.map
