@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.50e62849b5edac5d6d56.js
-// Retrieved at 12/1/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.db31931671b98bbf8014.js
+// Retrieved at 12/5/2022, 10:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, r) {
@@ -2215,11 +2215,9 @@
 		},
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "c", (function() {
-				return u
-			})), r.d(t, "b", (function() {
+			r.d(t, "a", (function() {
 				return l
-			})), r.d(t, "a", (function() {
+			})), r.d(t, "b", (function() {
 				return m
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
@@ -2233,12 +2231,12 @@
 					experimentName: n.Gf
 				}), e => e === n.Ld),
 				u = Object(o.a)(c, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? t : i.a.Off),
-				l = (e, t) => {
-					u(t) === i.a.Treatment && e.block(e => {
+				l = Object(o.a)(u, e => e === i.a.Treatment),
+				m = (e, t) => {
+					l(t) && e.block(e => {
 						if ((e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname)) return window.location.href = e.pathname, !1
 					})
-				},
-				m = Object(o.a)(u, e => e === i.a.Treatment || e === i.a.Control)
+				}
 		},
 		"./src/reddit/selectors/recapGame.ts": function(e, t, r) {
 			"use strict";
@@ -2262,4 +2260,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.50e62849b5edac5d6d56.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.db31931671b98bbf8014.js.map
