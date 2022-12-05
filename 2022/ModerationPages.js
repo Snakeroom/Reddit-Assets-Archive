@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.8338a5a1f6f2b8fbcf1a.js
-// Retrieved at 12/1/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.dd84a325502f34d7b8fd.js
+// Retrieved at 12/5/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-components-Not~05f7c62f", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -27623,8 +27623,8 @@
 				$e = e => {
 					const t = [...e];
 					for (let n = 0; n < t.length; n++)
-						if (t[n] === q.m.ONBOARDING) return t.splice(n, 1), t;
-					return t.push(q.m.ONBOARDING), t
+						if (t[n] === q.m.Onboarding) return t.splice(n, 1), t;
+					return t.push(q.m.Onboarding), t
 				};
 
 			function et(e) {
@@ -27650,7 +27650,7 @@
 					toxicityThresholdChatLevel: O
 				} = o, {
 					showCrowdControlCampaign: E
-				} = Object(ze.b)(), y = Math.max(p - 1, 0), j = s || r, I = !(null === (t = null == v ? void 0 : v.disabledDiscoveryTypes) || void 0 === t ? void 0 : t.find(e => e === q.m.ONBOARDING)), S = Object(a.e)(Ke.e);
+				} = Object(ze.b)(), y = Math.max(p - 1, 0), j = s || r, I = !(null === (t = null == v ? void 0 : v.disabledDiscoveryTypes) || void 0 === t ? void 0 : t.find(e => e === q.m.Onboarding)), S = Object(a.e)(Ke.e);
 				return i.a.createElement(k.a, null, i.a.createElement(C, null, i.a.createElement(k.b, {
 					className: ke.a.pageTitle
 				}, H.fbt._("Safety & privacy settings", null, {
@@ -27936,7 +27936,7 @@
 							if (n === Qe) {
 								const n = null === (r = e) || void 0 === r ? void 0 : r.disabledDiscoveryTypes;
 								if (Array.isArray(n)) {
-									const e = !n.find(e => e === q.m.ONBOARDING);
+									const e = !n.find(e => e === q.m.Onboarding);
 									t.props.sendEvent(Object(T.g)(e, t.state.settings.title))
 								}
 							} else t.props.sendEvent(Object(T.f)(n, e, t.state.settings[n]));
@@ -78427,4 +78427,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.8338a5a1f6f2b8fbcf1a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.dd84a325502f34d7b8fd.js.map
