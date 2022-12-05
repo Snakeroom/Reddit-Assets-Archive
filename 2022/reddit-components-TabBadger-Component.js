@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-TabBadger-Component.b67a9378fb0414d144c5.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-TabBadger-Component.b1a6018cd9c8b4d29557.js
+// Retrieved at 12/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-TabBadger-Component"], {
 		"./src/reddit/components/Pill/PillButton/index.m.less": function(t, e, i) {
@@ -229,4 +229,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-TabBadger-Component.b67a9378fb0414d144c5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-TabBadger-Component.b1a6018cd9c8b4d29557.js.map
