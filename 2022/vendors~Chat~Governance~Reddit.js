@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.b4f85613bd1a1c36b252.js
-// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.129ad206362dbdcb7a01.js
+// Retrieved at 12/6/2022, 2:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~Governance~Reddit"], {
 		"./node_modules/@loadable/component/dist/loadable.esm.js": function(e, t, n) {
@@ -8984,12 +8984,12 @@
 		},
 		"./node_modules/decode-uri-component/index.js": function(e, t, n) {
 			"use strict";
-			var r = new RegExp("%[a-f0-9]{2}", "gi"),
+			var r = new RegExp("(%[a-f0-9]{2})|([^%]+?)", "gi"),
 				o = new RegExp("(%[a-f0-9]{2})+", "gi");
 
 			function i(e, t) {
 				try {
-					return decodeURIComponent(e.join(""))
+					return [decodeURIComponent(e.join(""))]
 				} catch (o) {}
 				if (1 === e.length) return e;
 				t = t || 1;
@@ -9002,7 +9002,7 @@
 				try {
 					return decodeURIComponent(e)
 				} catch (o) {
-					for (var t = e.match(r), n = 1; n < t.length; n++) t = (e = i(t, n).join("")).match(r);
+					for (var t = e.match(r) || [], n = 1; n < t.length; n++) t = (e = i(t, n).join("")).match(r) || [];
 					return e
 				}
 			}
@@ -21272,7 +21272,7 @@
 		"./node_modules/query-string/index.js": function(e, t, n) {
 			"use strict";
 			const r = n("./node_modules/strict-uri-encode/index.js"),
-				o = n("./node_modules/decode-uri-component/index.js"),
+				o = n("./node_modules/query-string/node_modules/decode-uri-component/index.js"),
 				i = n("./node_modules/split-on-first/index.js");
 
 			function s(e) {
@@ -21404,6 +21404,58 @@
 					a = Object.assign(i, e.query);
 				let u = t.stringify(a, n);
 				return u && (u = `?${u}`), `${r}${u}${s}`
+			}
+		},
+		"./node_modules/query-string/node_modules/decode-uri-component/index.js": function(e, t, n) {
+			"use strict";
+			var r = new RegExp("%[a-f0-9]{2}", "gi"),
+				o = new RegExp("(%[a-f0-9]{2})+", "gi");
+
+			function i(e, t) {
+				try {
+					return decodeURIComponent(e.join(""))
+				} catch (o) {}
+				if (1 === e.length) return e;
+				t = t || 1;
+				var n = e.slice(0, t),
+					r = e.slice(t);
+				return Array.prototype.concat.call([], i(n), i(r))
+			}
+
+			function s(e) {
+				try {
+					return decodeURIComponent(e)
+				} catch (o) {
+					for (var t = e.match(r), n = 1; n < t.length; n++) t = (e = i(t, n).join("")).match(r);
+					return e
+				}
+			}
+			e.exports = function(e) {
+				if ("string" != typeof e) throw new TypeError("Expected `encodedURI` to be of type `string`, got `" + typeof e + "`");
+				try {
+					return e = e.replace(/\+/g, " "), decodeURIComponent(e)
+				} catch (t) {
+					return function(e) {
+						for (var n = {
+								"%FE%FF": "��",
+								"%FF%FE": "��"
+							}, r = o.exec(e); r;) {
+							try {
+								n[r[0]] = decodeURIComponent(r[0])
+							} catch (t) {
+								var i = s(r[0]);
+								i !== r[0] && (n[r[0]] = i)
+							}
+							r = o.exec(e)
+						}
+						n["%C2"] = "�";
+						for (var a = Object.keys(n), u = 0; u < a.length; u++) {
+							var c = a[u];
+							e = e.replace(new RegExp(c, "g"), n[c])
+						}
+						return e
+					}(e)
+				}
 			}
 		},
 		"./node_modules/querystring-es3/decode.js": function(e, t, n) {
@@ -36039,4 +36091,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.b4f85613bd1a1c36b252.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.129ad206362dbdcb7a01.js.map
