@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Recap.11d3292a8cda305b9047.js
-// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Recap.0addae299a543ae13124.js
+// Retrieved at 12/6/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Recap", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, a, t) {
@@ -65,9 +65,9 @@
 			})), t.d(a, "requestNotificationsPermissions", (function() {
 				return L
 			})), t.d(a, "subscribeForPNs", (function() {
-				return F
-			})), t.d(a, "unsubscribeFromPNs", (function() {
 				return B
+			})), t.d(a, "unsubscribeFromPNs", (function() {
+				return F
 			})), t.d(a, "requestBrowserNotificationPermissionPromptByUser", (function() {
 				return A
 			})), t.d(a, "subscribeToPermissionsChange", (function() {
@@ -88,13 +88,13 @@
 				g = t("./src/reddit/actions/toaster.ts"),
 				f = t("./src/reddit/constants/modals.ts"),
 				h = t("./src/reddit/helpers/parseUrl.ts"),
-				E = t("./src/reddit/helpers/tabBadging/index.ts"),
-				v = t("./src/reddit/helpers/trackers/notifications.ts"),
+				v = t("./src/reddit/helpers/tabBadging/index.ts"),
+				E = t("./src/reddit/helpers/trackers/notifications.ts"),
 				_ = t("./src/reddit/models/Toast/index.ts"),
 				O = t("./src/reddit/selectors/activeModal.ts"),
 				j = t("./src/reddit/selectors/activeModalId.ts"),
-				C = t("./src/reddit/selectors/experiments/delayDnPermission.ts"),
-				k = t("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
+				k = t("./src/reddit/selectors/experiments/delayDnPermission.ts"),
+				C = t("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
 				N = t("./src/reddit/constants/experiments.ts"),
 				S = t("./src/reddit/helpers/chooseVariant/index.ts");
 			const y = e => Object(S.c)(e, {
@@ -113,7 +113,7 @@
 					const i = r.data,
 						c = i.command || i.type;
 					if ("registerWithServiceWorker" === c) T(e);
-					else if (c === E.a && t) {
+					else if (c === v.a && t) {
 						const e = s()(i, ["command"]);
 						a(Object(p.f)(e))
 					} else if ("navigate.chat" === c) {
@@ -124,7 +124,7 @@
 			}, T = e => {
 				navigator.serviceWorker.controller && navigator.serviceWorker.controller.postMessage({
 					command: "registerClient",
-					v2EventBoilerPlate: v.c(e)
+					v2EventBoilerPlate: E.c(e)
 				})
 			}, L = function(e, a) {
 				let t = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : () => {};
@@ -133,28 +133,28 @@
 						d = Object(I.f)(n),
 						m = y(n),
 						b = !!Object(j.a)(n),
-						u = Object(C.a)(n),
-						p = Object(k.e)(n),
+						u = Object(k.a)(n),
+						p = Object(C.e)(n),
 						g = Object(O.c)(f.a.NSFW_BLOCKING_MODAL_V2)(n);
 					if (p || g) return;
 					if (await Object(c.a)() || d) return;
 					await R(n, r);
-					v.l(n), await Object(l.b)(e, a, () => {
-						m || u || b || r(Object(o.o)()), r(Object(o.n)()), v.j(n)
+					E.l(n), await Object(l.b)(e, a, () => {
+						m || u || b || r(Object(o.o)()), r(Object(o.n)()), E.j(n)
 					}, (e, a) => {
-						r(Object(o.l)()), r(B(a ? o.a.Denied : o.a.Closed)), e && (a ? v.e(n) : v.f(n)), t()
+						r(Object(o.l)()), r(F(a ? o.a.Denied : o.a.Closed)), e && (a ? E.e(n) : E.f(n)), t()
 					}, e => {
-						r(Object(o.m)()), r(F()), e && v.d(n), t()
+						r(Object(o.m)()), r(B()), e && E.d(n), t()
 					}, () => {
 						r(Object(o.k)()), t()
 					})
 				}
-			}, F = e => async (a, t, i) => {
+			}, B = e => async (a, t, i) => {
 				const s = t();
 				try {
 					switch (await Object(n.b)(i.gqlContext)) {
 						case n.a.Success:
-							Object(u.b)(o.a.Granted), v.m(s), e && a(Object(g.f)({
+							Object(u.b)(o.a.Granted), E.m(s), e && a(Object(g.f)({
 								kind: _.b.SuccessCommunity,
 								text: r.fbt._("Changes saved", null, {
 									hk: "wGH5U"
@@ -162,15 +162,15 @@
 							}));
 							break;
 						case n.a.FailedResponse:
-							v.k(s, "registration_failed_generally");
+							E.k(s, "registration_failed_generally");
 							break;
 						case n.a.FailedGqlReponse:
-							v.k(s, "registration_failed_in_gql")
+							E.k(s, "registration_failed_in_gql")
 					}
 				} catch (c) {
-					v.k(s, "registration_failed_uncaught_exception"), console.error(c)
+					E.k(s, "registration_failed_uncaught_exception"), console.error(c)
 				}
-			}, B = (e, a) => async t => {
+			}, F = (e, a) => async t => {
 				try {
 					Object(u.b)(e);
 					const i = await Object(d.a)();
@@ -205,13 +205,13 @@
 				i.onchange = () => (a => {
 					switch (a) {
 						case o.a.Denied:
-							e(B(o.a.Denied)), v.e(r);
+							e(F(o.a.Denied)), E.e(r);
 							break;
 						case o.a.Granted:
-							e(F()), v.d(r);
+							e(B()), E.d(r);
 							break;
 						default:
-							e(B(o.a.Default))
+							e(F(o.a.Default))
 					}
 				})(i.state)
 			}
@@ -250,9 +250,9 @@
 			})), t.d(a, "k", (function() {
 				return f
 			})), t.d(a, "c", (function() {
-				return E
-			})), t.d(a, "b", (function() {
 				return v
+			})), t.d(a, "b", (function() {
+				return E
 			})), t.d(a, "i", (function() {
 				return _
 			})), t.d(a, "a", (function() {
@@ -260,9 +260,9 @@
 			})), t.d(a, "n", (function() {
 				return j
 			})), t.d(a, "o", (function() {
-				return C
-			})), t.d(a, "h", (function() {
 				return k
+			})), t.d(a, "h", (function() {
+				return C
 			})), t.d(a, "g", (function() {
 				return N
 			}));
@@ -339,14 +339,14 @@
 					...r.o(e),
 					noun: "push_notification"
 				}),
-				E = e => ({
+				v = e => ({
 					...h(e),
 					notification: r.F(e, void 0, void 0),
 					action: void 0,
 					source: "notification",
 					correlationId: void 0
 				}),
-				v = (e, a) => t => ({
+				E = (e, a) => t => ({
 					...r.o(t),
 					action: l(e),
 					email: {
@@ -383,7 +383,7 @@
 						name: a.toLowerCase()
 					}
 				}),
-				C = () => e => ({
+				k = () => e => ({
 					...r.o(e),
 					action: s.c.View,
 					noun: "screen",
@@ -392,7 +392,7 @@
 						pageType: "community_alerts"
 					}
 				}),
-				k = () => e => ({
+				C = () => e => ({
 					...r.o(e),
 					action: "click",
 					noun: "desktop_notification_permissions",
@@ -562,6 +562,15 @@
 				image: "_7Hjths-BWbWSUqPcsiRkd"
 			}
 		},
+		"./src/reddit/pages/Recap/Components/Pager/index.m.less": function(e, a, t) {
+			e.exports = {
+				pager: "_3DMxIYiAWRanoZy9hUAwYd",
+				progressDot: "_3Y90MllTkKOwIqPwsDqLnH",
+				active: "_36h8GclKI0s8-ZmDsZ9ahR",
+				black: "_3sUBMoHPyyEgv4iNymC-LA",
+				nextDot: "_2wSjI4vEKKyW52zlEFC1jM"
+			}
+		},
 		"./src/reddit/pages/Recap/Components/ShareButton/index.m.less": function(e, a, t) {
 			e.exports = {
 				shareContainer: "iBTnlL3S2stj2beMaG637",
@@ -618,17 +627,13 @@
 		"./src/reddit/pages/Recap/Components/index.m.less": function(e, a, t) {
 			e.exports = {
 				cardsContainer: "_1IHzyKlGYPr5q1Kg0OL-3r",
-				pager: "_2_i4EC42S2Fdde63T8plXo",
-				progressDot: "_3YwfIeih-fIHk7MGud93qQ",
-				active: "_1jp56XyBH5dmACHKZVLTsV",
-				black: "_25yWR7Mez06MDyLE4cCFxL",
-				nextDot: "ON91STkOKKrasysjaPNNn",
 				wrapper: "_7Le_Dd5cPtJaT3KvpCN-9",
 				animated: "_13DIB6QJZGZEPmWasjPWo6",
 				card: "o06JQ6d-oXiCqpl6DOJKt",
 				downButton: "_26595aKEasiROJPZzGsZ-0",
 				fadeUp: "_378OfjACgQdkjjeWY8tTut",
 				downButtonIcon: "_13O7BZDC0K1kA8PAHXxPus",
+				black: "_25yWR7Mez06MDyLE4cCFxL",
 				shareButton: "_2R-wYMVA9PP3Nn__jrlmDC",
 				white: "_2LHVYstSI66GqM0aE0lyFV",
 				shareButtonIcon: "c2Vk-4PHgOqPD71lmQVZw",
@@ -661,19 +666,19 @@
 				g = t("./src/reddit/actions/recap/index.ts"),
 				f = t("./src/reddit/constants/keycodes.ts"),
 				h = t("./src/reddit/constants/modals.ts"),
-				E = t("./src/reddit/contexts/PageLayer/index.tsx"),
-				v = t("./src/reddit/controls/Button/index.tsx"),
+				v = t("./src/reddit/contexts/PageLayer/index.tsx"),
+				E = t("./src/reddit/controls/Button/index.tsx"),
 				_ = t("./src/reddit/helpers/localStorage/index.ts"),
 				O = t("./src/reddit/helpers/trackers/recap.ts"),
 				j = t("./src/reddit/hooks/useTracking.ts"),
-				C = t("./src/reddit/icons/fonts/index.tsx");
+				k = t("./src/reddit/icons/fonts/index.tsx");
 			! function(e) {
 				e.YELLOW = "YELLOW", e.WHITE = "WHITE", e.RED = "RED", e.BLACK = "BLACK"
 			}(r || (r = {})),
 			function(e) {
 				e.Common = "COMMON", e.Rare = "RARE", e.Epic = "EPIC", e.Legendary = "LEGENDARY"
 			}(i || (i = {}));
-			const k = "PersonalizedYearInReviewCommentCard",
+			const C = "PersonalizedYearInReviewCommentCard",
 				N = "PersonalizedYearInReviewEndCard",
 				S = "PersonalizedYearInReviewGenericCard",
 				y = "PersonalizedYearInReviewIntroCard",
@@ -683,8 +688,8 @@
 				R = "PersonalizedYearInReviewSubredditListCard",
 				T = "PersonalizedYearInReviewSingleStatSubredditListCard",
 				L = "PersonalizedYearInReviewAvatarCard",
-				F = "PersonalizedYearInReviewTopicListCard",
-				B = "PersonalizedYearInReviewRPlaceTileListCard",
+				B = "PersonalizedYearInReviewTopicListCard",
+				F = "PersonalizedYearInReviewRPlaceTileListCard",
 				A = "PersonalizedYearInReviewSingleTopicCard",
 				D = e => e.__typename === x;
 			var P = t("./src/config.ts"),
@@ -740,27 +745,75 @@
 						className: Y.a.subtitle
 					}, o.fbt._("Something went wrong. Try that again.", null, {
 						hk: "fyv6n"
-					})), c.a.createElement(v.t, {
+					})), c.a.createElement(E.t, {
 						className: Object(p.a)(Y.a.retryButton),
 						onClick: a
 					}, o.fbt._("Retry", null, {
 						hk: "2NAMZ4"
 					}))))
 				},
-				Z = t("./src/reddit/pages/Recap/Components/LoadingIcon/index.m.less"),
-				z = t.n(Z);
+				z = t("./src/reddit/pages/Recap/Components/LoadingIcon/index.m.less"),
+				Z = t.n(z);
 			var V = () => c.a.createElement("div", {
-					className: z.a.circle
+					className: Z.a.circle
 				}, c.a.createElement("img", {
-					className: z.a.image,
+					className: Z.a.image,
 					src: `${P.a.assetPath}/img/recap/InfiniteLoad_4.gif`
 				})),
-				q = t("./src/higherOrderComponents/asModal/index.tsx"),
-				Q = t("./src/lib/notifications/index.ts"),
-				K = t("./src/lib/notifications/constants.ts"),
-				X = t("./src/reddit/pages/Recap/Components/ShareButton/index.m.less"),
-				J = t.n(X);
-			var $ = e => {
+				q = t("./src/reddit/pages/Recap/Components/Pager/index.m.less"),
+				Q = t.n(q);
+			var K = e => {
+					let {
+						cards: a,
+						cardIndex: t,
+						isBlack: r,
+						onClick: i
+					} = e;
+					const s = Math.ceil((t + 1) / 6),
+						n = t - 6 * (s - 1),
+						l = a.length > 6 && s > 1,
+						o = 6 * (s - 1),
+						d = o + 6,
+						m = 6 * s < a.length;
+					return c.a.createElement("div", {
+						className: Q.a.pager
+					}, l && c.a.createElement("button", {
+						className: Object(p.a)(Q.a.nextDot, {
+							[Q.a.black]: !!r
+						}),
+						onClick: () => {
+							i(o - 1)
+						},
+						tabIndex: 0,
+						title: `Card #${o}`
+					}), a.slice(o, d).map((e, a) => c.a.createElement("button", {
+						key: a,
+						className: Object(p.a)(Q.a.progressDot, {
+							[Q.a.active]: a === n,
+							[Q.a.black]: !!r
+						}),
+						onClick: () => {
+							i(a + o)
+						},
+						tabIndex: 0,
+						title: `Card #${a+o+1}`
+					})), m && c.a.createElement("button", {
+						className: Object(p.a)(Q.a.nextDot, {
+							[Q.a.black]: !!r
+						}),
+						onClick: () => {
+							i(d)
+						},
+						tabIndex: 0,
+						title: `Card #${d+1}`
+					}))
+				},
+				X = t("./src/higherOrderComponents/asModal/index.tsx"),
+				J = t("./src/lib/notifications/index.ts"),
+				$ = t("./src/lib/notifications/constants.ts"),
+				ee = t("./src/reddit/pages/Recap/Components/ShareButton/index.m.less"),
+				ae = t.n(ee);
+			var te = e => {
 					let {
 						isSelected: a,
 						isForAbilityCard: t,
@@ -771,19 +824,19 @@
 					const n = Object(b.d)(),
 						l = Object(j.a)();
 					return c.a.createElement("div", {
-						className: Object(p.a)(J.a.shareContainer, {
-							[J.a.selected]: a,
-							[J.a.forAbility]: t,
-							[J.a.visible]: r,
-							[J.a.initialCard]: s
+						className: Object(p.a)(ae.a.shareContainer, {
+							[ae.a.selected]: a,
+							[ae.a.forAbility]: t,
+							[ae.a.visible]: r,
+							[ae.a.initialCard]: s
 						})
-					}, c.a.createElement(v.t, {
-						className: Object(p.a)(J.a.shareButton, {
-							[J.a.orange]: !i
+					}, c.a.createElement(E.t, {
+						className: Object(p.a)(ae.a.shareButton, {
+							[ae.a.orange]: !i
 						}),
-						Icon: Object(C.b)("share_ios"),
-						iconClassName: Object(p.a)(J.a.shareIcon, {
-							[J.a.white]: !i
+						Icon: Object(k.b)("share_ios"),
+						iconClassName: Object(p.a)(ae.a.shareIcon, {
+							[ae.a.white]: !i
 						}),
 						onClick: () => {
 							n(Object(g.h)()), l(Object(O.n)())
@@ -793,12 +846,12 @@
 						hk: "1q5t1q"
 					})))
 				},
-				ee = t("./src/reddit/pages/Recap/Components/Info/index.m.less"),
-				ae = t.n(ee);
+				re = t("./src/reddit/pages/Recap/Components/Info/index.m.less"),
+				ie = t.n(re);
 			const {
-				fbt: te
+				fbt: se
 			} = t("./node_modules/fbt/lib/FbtPublic.js");
-			var re = e => {
+			var ce = e => {
 					let {
 						title: a,
 						subtitle: t,
@@ -813,47 +866,47 @@
 					const g = Object(s.useRef)(null),
 						f = i === r.RED,
 						h = i === r.BLACK,
-						E = i === r.WHITE,
-						v = m()(() => {
+						v = i === r.WHITE,
+						E = m()(() => {
 							var e;
 							g.current && window.innerWidth <= 960 ? g.current.clientHeight >= 200 && (g.current.style.lineHeight = "40px", g.current.style.fontSize = "28px") : null === (e = g.current) || void 0 === e || e.removeAttribute("style")
 						}, 500);
-					return Object(s.useEffect)(() => (o && !d ? (v(), window.addEventListener("resize", v)) : window.removeEventListener("resize", v), () => window.removeEventListener("resize", v)), [v, o, d]), c.a.createElement("div", {
-						className: Object(p.a)(ae.a.info, {
-							[ae.a.black]: !f && !h,
-							[ae.a.selected]: o,
-							[ae.a.initialCard]: b,
-							[ae.a.isResponsive]: !d
+					return Object(s.useEffect)(() => (o && !d ? (E(), window.addEventListener("resize", E)) : window.removeEventListener("resize", E), () => window.removeEventListener("resize", E)), [E, o, d]), c.a.createElement("div", {
+						className: Object(p.a)(ie.a.info, {
+							[ie.a.black]: !f && !h,
+							[ie.a.selected]: o,
+							[ie.a.initialCard]: b,
+							[ie.a.isResponsive]: !d
 						})
 					}, !d && c.a.createElement(H, {
-						className: Object(p.a)(ae.a.logo, {
-							[ae.a.white]: E,
-							[ae.a.selected]: o
+						className: Object(p.a)(ie.a.logo, {
+							[ie.a.white]: v,
+							[ie.a.selected]: o
 						})
 					}), c.a.createElement("p", {
 						ref: g,
-						className: Object(p.a)(ae.a.title, {
-							[ae.a.selected]: o
+						className: Object(p.a)(ie.a.title, {
+							[ie.a.selected]: o
 						})
-					}, Ke(a, Object(p.a)(ae.a.value, {
-						[ae.a.orange]: !f
-					}), ae.a.numeric)), c.a.createElement("p", {
-						className: Object(p.a)(ae.a.subtitle, {
-							[ae.a.selected]: o
+					}, $e(a, Object(p.a)(ie.a.value, {
+						[ie.a.orange]: !f
+					}), ie.a.numeric)), c.a.createElement("p", {
+						className: Object(p.a)(ie.a.subtitle, {
+							[ie.a.selected]: o
 						})
 					}, u ? n : t.replace(/\//g, "/⁠")), b && c.a.createElement("p", {
-						className: Object(p.a)(ae.a.cutoffText, {
-							[ae.a.selected]: o
+						className: Object(p.a)(ie.a.cutoffText, {
+							[ie.a.selected]: o
 						})
-					}, n), !l && !d && c.a.createElement($, {
+					}, n), !l && !d && c.a.createElement(te, {
 						isSelected: o,
 						isRedTemplate: f,
 						isInitialCard: b
 					}))
 				},
-				ie = t("./src/reddit/pages/Recap/Components/Card/index.m.less"),
-				se = t.n(ie);
-			var ce = e => {
+				ne = t("./src/reddit/pages/Recap/Components/Card/index.m.less"),
+				le = t.n(ne);
+			var oe = e => {
 					let {
 						cardTemplateColor: a,
 						title: t,
@@ -869,14 +922,14 @@
 					} = e;
 					const [u, g] = c.a.Children.toArray(i);
 					return c.a.createElement("div", {
-						className: Object(p.a)(se.a.wrapper, {
-							[se.a.forAbility]: d,
-							[se.a.forSharing]: l,
-							[se.a.isResponsive]: !l
+						className: Object(p.a)(le.a.wrapper, {
+							[le.a.forAbility]: d,
+							[le.a.forSharing]: l,
+							[le.a.isResponsive]: !l
 						})
 					}, c.a.createElement("div", {
-						className: se.a.content
-					}, u), !o && c.a.createElement(re, {
+						className: le.a.content
+					}, u), !o && c.a.createElement(ce, {
 						title: t,
 						subtitle: r,
 						cardTemplateColor: a,
@@ -888,10 +941,10 @@
 						isEndCard: b
 					}))
 				},
-				ne = t("./src/reddit/pages/Recap/CardTemplates/index.m.less"),
-				le = t.n(ne);
-			const oe = "https://i.redd.it/snoovatar/avatars/184bcb77-f84f-4c04-94c5-bec0e209b4ba.png";
-			var de = e => {
+				de = t("./src/reddit/pages/Recap/CardTemplates/index.m.less"),
+				me = t.n(de);
+			const be = "https://i.redd.it/snoovatar/avatars/184bcb77-f84f-4c04-94c5-bec0e209b4ba.png";
+			var ue = e => {
 					let {
 						card: {
 							title: a,
@@ -903,65 +956,65 @@
 						isSelected: n,
 						isForSharing: l
 					} = e;
-					return c.a.createElement(ce, {
+					return c.a.createElement(oe, {
 						title: a,
 						subtitle: t,
 						cardTemplateColor: r,
 						isSelected: n,
 						isForSharing: l
 					}, c.a.createElement("div", {
-						className: le.a.avatarsWrapper
+						className: me.a.avatarsWrapper
 					}, (null == i ? void 0 : i.length) && s.length ? c.a.createElement("div", {
-						className: Object(p.a)(le.a.avatars, {
-							[le.a.selected]: n,
-							[le.a.isResponsive]: !l
+						className: Object(p.a)(me.a.avatars, {
+							[me.a.selected]: n,
+							[me.a.isResponsive]: !l
 						})
 					}, c.a.createElement("div", {
-						className: le.a.lightning
+						className: me.a.lightning
 					}), c.a.createElement("div", {
-						className: le.a.avatar,
+						className: me.a.avatar,
 						style: {
 							backgroundImage: `url(${P.a.assetPath}/img/recap/left_side.png)`
 						}
 					}, c.a.createElement(W.a, {
 						src: i,
-						className: Object(p.a)(le.a.fallbackStaticImage, {
-							[le.a.isSelected]: n
+						className: Object(p.a)(me.a.fallbackStaticImage, {
+							[me.a.isSelected]: n
 						}),
-						errorSrc: oe
+						errorSrc: be
 					})), c.a.createElement("div", {
-						className: Object(p.a)(le.a.avatar, le.a.left),
+						className: Object(p.a)(me.a.avatar, me.a.left),
 						style: {
 							transitionDelay: ".65s",
 							backgroundImage: `url(${P.a.assetPath}/img/recap/right_side.png)`
 						}
 					}, c.a.createElement(W.a, {
 						src: s,
-						className: Object(p.a)(le.a.fallbackStaticImage, {
-							[le.a.isSelected]: n
+						className: Object(p.a)(me.a.fallbackStaticImage, {
+							[me.a.isSelected]: n
 						}),
 						style: {
 							transitionDelay: ".85s"
 						},
-						errorSrc: oe
+						errorSrc: be
 					}))) : c.a.createElement("div", {
-						className: Object(p.a)(le.a.collectibleAvatar, {
-							[le.a.selected]: n,
-							[le.a.isResponsive]: !l
+						className: Object(p.a)(me.a.collectibleAvatar, {
+							[me.a.selected]: n,
+							[me.a.isResponsive]: !l
 						})
 					}, c.a.createElement(W.a, {
 						src: s,
-						className: Object(p.a)(le.a.fallbackStaticImage, {
-							[le.a.isSelected]: n
+						className: Object(p.a)(me.a.fallbackStaticImage, {
+							[me.a.isSelected]: n
 						}),
-						errorSrc: oe
+						errorSrc: be
 					}))))
 				},
-				me = t("./src/reddit/controls/InternalLink/index.tsx"),
-				be = t("./src/reddit/actions/subscription/index.ts"),
-				ue = t("./src/reddit/pages/Recap/Components/Subreddit/index.m.less"),
-				pe = t.n(ue);
-			var ge = e => {
+				pe = t("./src/reddit/controls/InternalLink/index.tsx"),
+				ge = t("./src/reddit/actions/subscription/index.ts"),
+				fe = t("./src/reddit/pages/Recap/Components/Subreddit/index.m.less"),
+				he = t.n(fe);
+			var ve = e => {
 				let {
 					deeplink: a,
 					subredditName: t,
@@ -977,60 +1030,60 @@
 				} = e;
 				const f = Object(b.d)(),
 					h = Object(j.a)(),
-					[E, _] = Object(s.useState)(!!m);
+					[v, _] = Object(s.useState)(!!m);
 				return c.a.createElement("div", {
-					className: pe.a.subredditWrapper
+					className: he.a.subredditWrapper
 				}, c.a.createElement("div", {
 					onClick: e => e.stopPropagation(),
-					className: Object(p.a)(pe.a.container, r, {
-						[pe.a.long]: i,
-						[pe.a.big]: "big" === l,
-						[pe.a.small]: "small" === l,
-						[pe.a.tiny]: "tiny" === l,
-						[pe.a.micro]: "micro" === l,
-						[pe.a.red]: n
+					className: Object(p.a)(he.a.container, r, {
+						[he.a.long]: i,
+						[he.a.big]: "big" === l,
+						[he.a.small]: "small" === l,
+						[he.a.tiny]: "tiny" === l,
+						[he.a.micro]: "micro" === l,
+						[he.a.red]: n
 					})
-				}, o && c.a.createElement(v.t, {
-					Icon: Object(C.b)(E ? "joined_fill" : "join"),
-					size: v.d.S,
-					priority: v.c.PlainLink,
-					className: pe.a.addButton,
-					iconClassName: Object(p.a)(pe.a.icon, {
-						[pe.a.white]: n
+				}, o && c.a.createElement(E.t, {
+					Icon: Object(k.b)(v ? "joined_fill" : "join"),
+					size: E.d.S,
+					priority: E.c.PlainLink,
+					className: he.a.addButton,
+					iconClassName: Object(p.a)(he.a.icon, {
+						[he.a.white]: n
 					}),
 					onClick: e => (e.stopPropagation(), ((e, a) => {
 						f(async t => {
-							const r = await t(Object(be.d)([{
+							const r = await t(Object(ge.d)([{
 								name: e,
 								type: "subreddit"
 							}], !a));
-							h(Object(O.o)(!a, e, d)), r && _(!E)
+							h(Object(O.o)(!a, e, d)), r && _(!v)
 						})
-					})(t, E)),
+					})(t, v)),
 					tabIndex: u
-				}), c.a.createElement(me.default, {
+				}), c.a.createElement(pe.default, {
 					to: a,
 					target: "_blank",
 					rel: "noopener noreferrer",
 					onClick: () => h(Object(O.d)(d)),
-					className: Object(p.a)(pe.a.subreddit, {
-						[pe.a.red]: n,
-						[pe.a.big]: "big" === l,
-						[pe.a.small]: "small" === l,
-						[pe.a.tiny]: "tiny" === l,
-						[pe.a.micro]: "micro" === l,
-						[pe.a.withButton]: o,
-						[pe.a.alternativeFocusColor]: g
+					className: Object(p.a)(he.a.subreddit, {
+						[he.a.red]: n,
+						[he.a.big]: "big" === l,
+						[he.a.small]: "small" === l,
+						[he.a.tiny]: "tiny" === l,
+						[he.a.micro]: "micro" === l,
+						[he.a.withButton]: o,
+						[he.a.alternativeFocusColor]: g
 					}),
 					tabIndex: u
 				}, c.a.createElement("div", {
-					className: pe.a.text
+					className: he.a.text
 				}, c.a.createElement("span", {
-					className: pe.a.subredditPrefix
+					className: he.a.subredditPrefix
 				}, "r/"), t))))
 			};
-			const fe = Object(C.b)("external_link"),
-				he = e => {
+			const Ee = Object(k.b)("external_link"),
+				_e = e => {
 					let {
 						deeplink: a,
 						imageUrl: t,
@@ -1044,40 +1097,40 @@
 						shouldShowSubreddit: m,
 						onClick: b
 					} = e;
-					return c.a.createElement(me.default, {
+					return c.a.createElement(pe.default, {
 						target: "_blank",
 						rel: "noopener noreferrer",
 						to: a,
-						className: Object(p.a)(t ? le.a.image : le.a.asText, m ? le.a.comment : le.a.commentSubreddit, {
-							[le.a.comment]: m,
-							[le.a.selected]: i,
-							[le.a.isResponsive]: !s,
-							[le.a.orange]: !n
+						className: Object(p.a)(t ? me.a.image : me.a.asText, m ? me.a.comment : me.a.commentSubreddit, {
+							[me.a.comment]: m,
+							[me.a.selected]: i,
+							[me.a.isResponsive]: !s,
+							[me.a.orange]: !n
 						}),
 						tabIndex: i ? 0 : -1,
 						onClick: b
 					}, t ? c.a.createElement(W.a, {
 						src: t,
-						className: Object(p.a)(le.a.subredditImage, {
-							[le.a.isSelected]: i
+						className: Object(p.a)(me.a.subredditImage, {
+							[me.a.isSelected]: i
 						}),
 						errorSrc: `${P.a.assetPath}/img/planet.png`
 					}) : c.a.createElement("div", {
-						className: le.a.text
+						className: me.a.text
 					}, c.a.createElement("p", null, r)), m && l && o && d && c.a.createElement("div", {
-						className: Object(p.a)(le.a.subredditFloating, le.a.isTag)
-					}, c.a.createElement(ge, {
+						className: Object(p.a)(me.a.subredditFloating, me.a.isTag)
+					}, c.a.createElement(ve, {
 						deeplink: o,
 						subredditName: l,
 						size: "tiny",
 						isRed: !0,
 						subredditId: d,
 						tabIndex: i ? 0 : -1
-					})), !s && c.a.createElement(fe, {
-						className: le.a.externalLinkButton
+					})), !s && c.a.createElement(Ee, {
+						className: me.a.externalLinkButton
 					}))
 				};
-			var Ee = e => {
+			var Oe = e => {
 					let {
 						card: {
 							title: a,
@@ -1096,72 +1149,72 @@
 						isSelected: f,
 						isForSharing: h
 					} = e;
-					const E = Object(j.a)(),
-						v = s === r.RED,
+					const v = Object(j.a)(),
+						E = s === r.RED,
 						{
 							subredditName: _,
-							subredditLink: C
-						} = Je(n);
-					return c.a.createElement(ce, {
+							subredditLink: k
+						} = aa(n);
+					return c.a.createElement(oe, {
 						title: a,
 						subtitle: t,
 						cardTemplateColor: s,
 						isSelected: f,
 						isForSharing: h
 					}, c.a.createElement("div", {
-						className: Object(p.a)(le.a.commentWrapper, {
-							[le.a.isResponsive]: !h
+						className: Object(p.a)(me.a.commentWrapper, {
+							[me.a.isResponsive]: !h
 						})
-					}, i ? c.a.createElement(he, {
+					}, i ? c.a.createElement(_e, {
 						isSelected: f,
-						onClick: () => E(Object(O.c)(u, m)),
+						onClick: () => v(Object(O.c)(u, m)),
 						deeplink: n,
 						imageUrl: i,
 						isForSharing: h,
-						isRedTemplate: v
-					}) : c.a.createElement(he, {
+						isRedTemplate: E
+					}) : c.a.createElement(_e, {
 						isSelected: f,
-						onClick: () => E(Object(O.c)(u, m)),
+						onClick: () => v(Object(O.c)(u, m)),
 						deeplink: n,
 						isForSharing: h,
 						text: d
-					}), g ? c.a.createElement(he, {
+					}), g ? c.a.createElement(_e, {
 						isSelected: f,
-						onClick: () => E(Object(O.a)(b, u)),
+						onClick: () => v(Object(O.a)(b, u)),
 						deeplink: o,
 						imageUrl: g,
 						isForSharing: h,
-						isRedTemplate: v,
+						isRedTemplate: E,
 						shouldShowSubreddit: !0,
-						subredditLink: C,
+						subredditLink: k,
 						subredditName: _,
 						subredditId: m
-					}) : c.a.createElement(he, {
+					}) : c.a.createElement(_e, {
 						isSelected: f,
-						onClick: () => E(Object(O.a)(b, u)),
+						onClick: () => v(Object(O.a)(b, u)),
 						deeplink: o,
 						isForSharing: h,
 						text: l,
 						shouldShowSubreddit: !0,
-						subredditLink: C,
+						subredditLink: k,
 						subredditName: _,
 						subredditId: m
 					})))
 				},
-				ve = t("./src/reddit/actions/modal.ts"),
-				_e = t("./src/reddit/actions/notifications/index.ts"),
-				Oe = t("./src/reddit/actions/notificationSettingsLayout/index.ts"),
-				je = t("./src/reddit/actions/toaster.ts"),
-				Ce = t("./src/reddit/components/Settings/modalIds.ts"),
-				ke = t("./src/reddit/models/Toast/index.ts");
+				je = t("./src/reddit/actions/modal.ts"),
+				ke = t("./src/reddit/actions/notifications/index.ts"),
+				Ce = t("./src/reddit/actions/notificationSettingsLayout/index.ts"),
+				Ne = t("./src/reddit/actions/toaster.ts"),
+				Se = t("./src/reddit/components/Settings/modalIds.ts"),
+				ye = t("./src/reddit/models/Toast/index.ts");
 			const {
-				fbt: Ne
+				fbt: Ie
 			} = t("./node_modules/fbt/lib/FbtPublic.js");
-			var Se;
+			var xe;
 			! function(e) {
 				e[e.VERIFY_EMAIL = 0] = "VERIFY_EMAIL", e[e.TURN_ON_DAYLY_DIGEST = 1] = "TURN_ON_DAYLY_DIGEST", e[e.TURN_ON_DN = 2] = "TURN_ON_DN", e[e.DONE = 3] = "DONE"
-			}(Se || (Se = {}));
-			var ye = e => {
+			}(xe || (xe = {}));
+			var we = e => {
 				let {
 					card: {
 						title: a,
@@ -1177,45 +1230,45 @@
 				} = e;
 				const f = Object(b.d)(),
 					h = Object(j.a)(),
-					E = Object(b.e)(e => {
+					v = Object(b.e)(e => {
 						var a;
 						return null === (a = e.user.account) || void 0 === a ? void 0 : a.email
 					}),
-					v = Object(b.e)(e => e.user.accountSettings.changeEmail.api.pending),
-					[_, C] = Object(s.useState)(Se.VERIFY_EMAIL),
-					k = Object(s.useRef)(E),
+					E = Object(b.e)(e => e.user.accountSettings.changeEmail.api.pending),
+					[_, k] = Object(s.useState)(xe.VERIFY_EMAIL),
+					C = Object(s.useRef)(v),
 					N = () => {
-						$e() ? C(Se.DONE) : C(Se.TURN_ON_DN)
+						ta() ? k(xe.DONE) : k(xe.TURN_ON_DN)
 					},
 					S = () => {
-						l ? N() : C(Se.TURN_ON_DAYLY_DIGEST)
+						l ? N() : k(xe.TURN_ON_DAYLY_DIGEST)
 					};
 				Object(s.useEffect)(() => {
-					n ? S() : C(Se.VERIFY_EMAIL)
+					n ? S() : k(xe.VERIFY_EMAIL)
 				}, [d]), Object(s.useEffect)(() => {
-					if (E !== k.current && _ === Se.VERIFY_EMAIL) {
-						const e = Object(je.e)(Ne._("Email successfully updated!", null, {
+					if (v !== C.current && _ === xe.VERIFY_EMAIL) {
+						const e = Object(Ne.e)(Ie._("Email successfully updated!", null, {
 							hk: "3iPlUp"
-						}), ke.b.SuccessCommunityGreen);
-						f(Object(je.f)(e)), S()
+						}), ye.b.SuccessCommunityGreen);
+						f(Object(Ne.f)(e)), S()
 					}
-				}, [E, _]), Object(s.useEffect)(() => {
-					v && f(Object(ve.g)(Ce.a))
-				}, [v, f]);
+				}, [v, _]), Object(s.useEffect)(() => {
+					E && f(Object(je.g)(Se.a))
+				}, [E, f]);
 				const y = async () => {
-					await f(Object(_e.requestBrowserNotificationPermissionPromptByUser)(Ce.f)), $e() && C(Se.DONE), h(Object(O.h)())
+					await f(Object(ke.requestBrowserNotificationPermissionPromptByUser)(Se.f)), ta() && k(xe.DONE), h(Object(O.h)())
 				}, I = () => {
-					f(Object(ve.h)(Ce.a)), h(Object(O.p)())
+					f(Object(je.h)(Se.a)), h(Object(O.p)())
 				}, x = () => {
 					f(async (e, a) => {
 						var t;
-						await e(Object(Oe.d)({
+						await e(Object(Ce.d)({
 							isEnabled: !0,
 							messageType: "EMAIL_DIGEST"
 						})), !!(null === (t = a().user.notificationPrefs.pushSettingsLayout.rows.byId.EMAIL_DIGEST) || void 0 === t ? void 0 : t.isEnabled) && N()
 					}), h(Object(O.g)())
 				};
-				return c.a.createElement(ce, {
+				return c.a.createElement(oe, {
 					title: a,
 					subtitle: t,
 					cardTemplateColor: i,
@@ -1223,18 +1276,18 @@
 					isForSharing: g,
 					isEndCard: !0
 				}, c.a.createElement("div", {
-					className: Object(p.a)(le.a.subredditList, {
-						[le.a.isResponsive]: !g
+					className: Object(p.a)(me.a.subredditList, {
+						[me.a.isResponsive]: !g
 					})
 				}, o.map((e, a) => c.a.createElement("div", {
 					key: e.subredditId,
 					style: {
 						transitionDelay: `${.25*a+.4}s`
 					},
-					className: Object(p.a)(le.a.subreddit, {
-						[le.a.selected]: m
+					className: Object(p.a)(me.a.subreddit, {
+						[me.a.selected]: m
 					})
-				}, c.a.createElement(ge, {
+				}, c.a.createElement(ve, {
 					key: e.subredditId,
 					withAddButton: !0,
 					deeplink: e.deeplink,
@@ -1245,23 +1298,23 @@
 					subscribed: e.isSubscribed,
 					tabIndex: m ? 0 : -1
 				})))), c.a.createElement("span", {
-					className: le.a.endText
+					className: me.a.endText
 				}, (() => {
 					const e = m ? 0 : -1;
 					switch (_) {
-						case Se.TURN_ON_DN:
-							return Ke(t, le.a.asLink, "", y, e);
-						case Se.VERIFY_EMAIL:
-						case Se.TURN_ON_DAYLY_DIGEST:
-							return Ke(t, le.a.asLink, "", _ === Se.VERIFY_EMAIL ? I : x, e);
-						case Se.DONE:
-							return Ke(t, le.a.asLink, "", () => {
+						case xe.TURN_ON_DN:
+							return $e(t, me.a.asLink, "", y, e);
+						case xe.VERIFY_EMAIL:
+						case xe.TURN_ON_DAYLY_DIGEST:
+							return $e(t, me.a.asLink, "", _ === xe.VERIFY_EMAIL ? I : x, e);
+						case xe.DONE:
+							return $e(t, me.a.asLink, "", () => {
 								f(Object(u.b)("/r/recap")), h(Object(O.b)())
 							}, e)
 					}
 				})()))
 			};
-			var Ie = e => {
+			var Re = e => {
 				let {
 					card: {
 						title: a,
@@ -1273,28 +1326,28 @@
 					isSelected: n,
 					isForSharing: l
 				} = e;
-				return c.a.createElement(ce, {
+				return c.a.createElement(oe, {
 					title: a,
 					subtitle: t,
 					cardTemplateColor: i,
 					isSelected: n,
 					isForSharing: l
 				}, c.a.createElement("div", {
-					className: Object(p.a)(le.a.image, le.a.isCircle, le.a.noBg, {
-						[le.a.isSelected]: n,
-						[le.a.isResponsive]: !l
+					className: Object(p.a)(me.a.image, me.a.isCircle, me.a.noBg, {
+						[me.a.isSelected]: n,
+						[me.a.isResponsive]: !l
 					}),
 					style: {
 						backgroundImage: `url(${s})`
 					}
 				}, c.a.createElement(W.a, {
 					src: r,
-					className: Object(p.a)(le.a.fallbackStaticImage, le.a.illustration, {
-						[le.a.isSelected]: n
+					className: Object(p.a)(me.a.fallbackStaticImage, me.a.illustration, {
+						[me.a.isSelected]: n
 					})
 				})))
 			};
-			var xe = e => {
+			var Te = e => {
 				let {
 					card: {
 						title: a,
@@ -1313,7 +1366,7 @@
 					})
 				}, [o]), Object(s.useEffect)(() => {
 					0 !== f && g(!1)
-				}, [f]), c.a.createElement(ce, {
+				}, [f]), c.a.createElement(oe, {
 					title: a,
 					subtitle: t,
 					cardTemplateColor: i,
@@ -1321,24 +1374,24 @@
 					isSelected: d,
 					isInitialCard: u
 				}, c.a.createElement("div", {
-					className: Object(p.a)(le.a.image, le.a.isCircle, le.a.noBg, le.a.isResponsive, {
-						[le.a.isSelected]: d,
-						[le.a.initialCard]: u
+					className: Object(p.a)(me.a.image, me.a.isCircle, me.a.noBg, me.a.isResponsive, {
+						[me.a.isSelected]: d,
+						[me.a.initialCard]: u
 					}),
 					style: {
 						backgroundImage: `url(${n})`
 					}
 				}, c.a.createElement(W.a, {
 					src: r,
-					className: Object(p.a)(le.a.fallbackStaticImage, le.a.illustration, {
-						[le.a.isSelected]: d,
-						[le.a.initialCard]: u
+					className: Object(p.a)(me.a.fallbackStaticImage, me.a.illustration, {
+						[me.a.isSelected]: d,
+						[me.a.initialCard]: u
 					})
 				})), c.a.createElement("span", {
-					className: le.a.endText
+					className: me.a.endText
 				}, l))
 			};
-			var we = e => {
+			var Le = e => {
 				let {
 					card: {
 						title: a,
@@ -1358,18 +1411,18 @@
 					f = s === r.RED,
 					{
 						subredditLink: h
-					} = Je(n),
-					E = Object(C.b)("external_link");
-				return c.a.createElement(ce, {
+					} = aa(n),
+					v = Object(k.b)("external_link");
+				return c.a.createElement(oe, {
 					title: a,
 					subtitle: t,
 					cardTemplateColor: s,
 					isSelected: b,
 					isForSharing: u
-				}, c.a.createElement(me.default, {
-					className: Object(p.a)(le.a.postWrapper, {
-						[le.a.selected]: b,
-						[le.a.isResponsive]: !u
+				}, c.a.createElement(pe.default, {
+					className: Object(p.a)(me.a.postWrapper, {
+						[me.a.selected]: b,
+						[me.a.isResponsive]: !u
 					}),
 					to: n,
 					target: "_blank",
@@ -1377,43 +1430,43 @@
 					onClick: () => g(Object(O.c)(m, d)),
 					tabIndex: b ? 0 : -1
 				}, i ? c.a.createElement("div", {
-					className: Object(p.a)(le.a.image, le.a.post, {
-						[le.a.orange]: !f,
-						[le.a.isSelected]: b,
-						[le.a.isResponsive]: !u
+					className: Object(p.a)(me.a.image, me.a.post, {
+						[me.a.orange]: !f,
+						[me.a.isSelected]: b,
+						[me.a.isResponsive]: !u
 					})
 				}, c.a.createElement(W.a, {
 					src: i,
-					className: le.a.fallbackStaticImage
+					className: me.a.fallbackStaticImage
 				}), c.a.createElement("div", {
-					className: Object(p.a)(le.a.subredditFloating, le.a.isTag)
-				}, c.a.createElement(ge, {
+					className: Object(p.a)(me.a.subredditFloating, me.a.isTag)
+				}, c.a.createElement(ve, {
 					deeplink: h,
 					subredditName: l,
 					size: "tiny",
 					isRed: !0,
 					subredditId: d,
 					tabIndex: b ? 0 : -1
-				})), !u && c.a.createElement(E, {
-					className: le.a.externalLinkButton
+				})), !u && c.a.createElement(v, {
+					className: me.a.externalLinkButton
 				})) : c.a.createElement("div", {
-					className: le.a.post
+					className: me.a.post
 				}, c.a.createElement("div", {
-					className: le.a.text
+					className: me.a.text
 				}, c.a.createElement("p", null, o)), c.a.createElement("div", {
-					className: Object(p.a)(le.a.subredditFloating, le.a.isTag)
-				}, c.a.createElement(ge, {
+					className: Object(p.a)(me.a.subredditFloating, me.a.isTag)
+				}, c.a.createElement(ve, {
 					deeplink: h,
 					subredditName: l,
 					size: "tiny",
 					isRed: !0,
 					subredditId: d,
 					tabIndex: b ? 0 : -1
-				})), !u && c.a.createElement(E, {
-					className: le.a.externalLinkButton
+				})), !u && c.a.createElement(v, {
+					className: me.a.externalLinkButton
 				}))))
 			};
-			var Re = e => {
+			var Be = e => {
 					let {
 						card: {
 							title: a,
@@ -1427,17 +1480,17 @@
 					const o = Object(j.a)(),
 						d = `${P.a.redditUrl}/r/place`,
 						m = `${d}?fullscreen=true`,
-						b = Object(C.b)("external_link"),
+						b = Object(k.b)("external_link"),
 						u = i[0].toLowerCase() !== n.a.orangered;
-					return c.a.createElement(ce, {
+					return c.a.createElement(oe, {
 						title: a,
 						subtitle: t,
 						cardTemplateColor: r,
 						isSelected: s,
 						isForSharing: l
-					}, c.a.createElement(me.default, {
-						className: Object(p.a)(le.a.rplaceWrapper, {
-							[le.a.isResponsive]: !l
+					}, c.a.createElement(pe.default, {
+						className: Object(p.a)(me.a.rplaceWrapper, {
+							[me.a.isResponsive]: !l
 						}),
 						to: m,
 						target: "_blank",
@@ -1447,9 +1500,9 @@
 							o(Object(O.m)())
 						}
 					}, c.a.createElement("div", {
-						className: Object(p.a)(le.a.rplaceContainer, {
-							[le.a.selected]: s,
-							[le.a.forSharing]: l
+						className: Object(p.a)(me.a.rplaceContainer, {
+							[me.a.selected]: s,
+							[me.a.forSharing]: l
 						})
 					}, 1 === i.length ? Array.from(Array(20).keys()).map((e, a) => c.a.createElement("div", {
 						key: a,
@@ -1537,17 +1590,17 @@
 							backgroundColor: 3 === i.length ? i[2] : i[1]
 						}
 					}))), c.a.createElement(c.a.Fragment, null, !l && c.a.createElement("img", {
-						className: Object(p.a)(le.a.canvas, {
-							[le.a.selected]: s
+						className: Object(p.a)(me.a.canvas, {
+							[me.a.selected]: s
 						}),
 						src: `${P.a.assetPath}/img/recap/rplace_canvas.png`,
 						alt: ""
 					}), c.a.createElement("div", {
-						className: Object(p.a)(le.a.subredditFloating, le.a.isTag, le.a.subreddit, {
-							[le.a.selected]: s,
-							[le.a.forSharing]: l
+						className: Object(p.a)(me.a.subredditFloating, me.a.isTag, me.a.subreddit, {
+							[me.a.selected]: s,
+							[me.a.forSharing]: l
 						})
-					}, c.a.createElement(ge, {
+					}, c.a.createElement(ve, {
 						deeplink: d,
 						subredditName: "place",
 						size: "tiny",
@@ -1555,20 +1608,20 @@
 						subredditId: "t5_2sxhs",
 						tabIndex: s ? 0 : -1
 					})), !l && c.a.createElement("span", {
-						className: Object(p.a)(le.a.externalLinkWrapper, {
-							[le.a.selected]: s
+						className: Object(p.a)(me.a.externalLinkWrapper, {
+							[me.a.selected]: s
 						})
 					}, c.a.createElement(b, {
-						className: le.a.icon
+						className: me.a.icon
 					})))))
 				},
-				Te = t("./src/reddit/actions/snoovatarModal.ts"),
-				Le = t("./src/reddit/controls/ToggleSwitch/index.tsx"),
-				Fe = t("./src/reddit/icons/svgs/EditPencil/index.tsx");
+				Fe = t("./src/reddit/actions/snoovatarModal.ts"),
+				Ae = t("./src/reddit/controls/ToggleSwitch/index.tsx"),
+				De = t("./src/reddit/icons/svgs/EditPencil/index.tsx");
 			const {
-				fbt: Be
+				fbt: Pe
 			} = t("./node_modules/fbt/lib/FbtPublic.js");
-			var Ae = e => {
+			var We = e => {
 				let {
 					card: {
 						title: a,
@@ -1580,13 +1633,13 @@
 						level: u,
 						subredditListOptional: f,
 						isPremium: h,
-						topicImageUrl: E,
-						translatedLevel: v
+						topicImageUrl: v,
+						translatedLevel: E
 					},
 					isSelected: _,
-					isForSharing: C
+					isForSharing: k
 				} = e;
-				const k = Object(b.d)(),
+				const C = Object(b.d)(),
 					N = Object(j.a)(),
 					S = Object(s.useRef)(null),
 					y = Object(s.useRef)(null),
@@ -1595,68 +1648,68 @@
 					R = Object(b.e)(e => e.recap.shouldHideAbilityCardAvatar),
 					T = Object(b.e)(e => e.recap.shareCardWasOpened),
 					L = l === r.WHITE || l === r.YELLOW,
-					F = () => {
-						C || (k(Object(g.b)()), !T && N(Object(O.i)()))
+					B = () => {
+						k || (C(Object(g.b)()), !T && N(Object(O.i)()))
 					};
 				return Object(s.useEffect)(() => {
-					!_ && T && F()
-				}, [_]), c.a.createElement(ce, {
+					!_ && T && B()
+				}, [_]), c.a.createElement(oe, {
 					title: a,
 					subtitle: t,
 					cardTemplateColor: l,
-					isForSharing: C,
+					isForSharing: k,
 					shouldHideInfo: !0,
-					isForAbilityCard: !C
+					isForAbilityCard: !k
 				}, c.a.createElement("div", {
-					className: Object(p.a)(le.a.visibilityWrapper, {
-						[le.a.selected]: _
+					className: Object(p.a)(me.a.visibilityWrapper, {
+						[me.a.selected]: _
 					}),
 					tabIndex: -1
 				}, c.a.createElement("div", {
-					className: Object(p.a)(le.a.abilityCardWrapper, {
-						[le.a.selected]: _,
-						[le.a.forSharing]: C
+					className: Object(p.a)(me.a.abilityCardWrapper, {
+						[me.a.selected]: _,
+						[me.a.forSharing]: k
 					})
 				}, c.a.createElement("style", {
 					ref: y
 				}, `\n        ${I}\n        `), c.a.createElement("div", {
-					id: T && C ? "abilityCardShareId" : "",
-					className: Object(p.a)(le.a.flippingWrapper, {
-						[le.a.flipped]: T,
-						[le.a.unflipped]: !T,
-						[le.a.forSharing]: C
+					id: T && k ? "abilityCardShareId" : "",
+					className: Object(p.a)(me.a.flippingWrapper, {
+						[me.a.flipped]: T,
+						[me.a.unflipped]: !T,
+						[me.a.forSharing]: k
 					}),
-					onClick: F
+					onClick: B
 				}, c.a.createElement("div", {
-					className: Object(p.a)(le.a.frontCard, {
-						[le.a.selected]: _
+					className: Object(p.a)(me.a.frontCard, {
+						[me.a.selected]: _
 					}),
-					id: !T && C ? "abilityCardShareId" : ""
+					id: !T && k ? "abilityCardShareId" : ""
 				}, c.a.createElement("img", {
-					className: le.a.cardBackground,
+					className: me.a.cardBackground,
 					src: `${P.a.assetPath}/img/recap/ability_card_front_side.png`,
 					alt: ""
 				}), c.a.createElement("img", {
 					src: `${P.a.assetPath}/img/recap/3d_icon_question_mark 2.png`,
 					alt: "",
-					className: Object(p.a)(le.a.cardIcon, {
-						[le.a.selected]: _
+					className: Object(p.a)(me.a.cardIcon, {
+						[me.a.selected]: _
 					})
 				}), c.a.createElement("div", {
-					className: Object(p.a)(le.a.frontText, {
-						[le.a.selected]: _
+					className: Object(p.a)(me.a.frontText, {
+						[me.a.selected]: _
 					})
 				}, c.a.createElement("div", {
-					className: le.a.frontMainText
-				}, Be._("What’s your secret Reddit ability?", null, {
+					className: me.a.frontMainText
+				}, Pe._("What’s your secret Reddit ability?", null, {
 					hk: "35uXbT"
 				})), c.a.createElement("div", {
-					className: le.a.frontSecondaryText
-				}, Be._("Click to reveal", null, {
+					className: me.a.frontSecondaryText
+				}, Pe._("Click to reveal", null, {
 					hk: "32dQl2"
 				})))), c.a.createElement("div", {
-					className: Object(p.a)(le.a.backCard, {
-						[le.a.selected]: _ && T
+					className: Object(p.a)(me.a.backCard, {
+						[me.a.selected]: _ && T
 					})
 				}, c.a.createElement("svg", {
 					style: {
@@ -1698,70 +1751,70 @@
 							m = 50 + (Math.abs(Math.floor(100 / l * n) - 100) - 50) / 1.5,
 							b = `background-position: ${d}% ${m}%;`,
 							p = `transform: rotateX(${(m-50)/2*-1}deg) rotateY(${(d-50)/1.5*.5}deg)`;
-						u !== i.Common && x(`.${le.a.card}:hover::before { ${b} }`), a.setAttribute("style", p)
+						u !== i.Common && x(`.${me.a.card}:hover::before { ${b} }`), a.setAttribute("style", p)
 					},
 					onMouseLeave: e => {
 						const a = S.current;
 						a && (a.removeAttribute("style"), x(""))
 					},
 					ref: S,
-					className: Object(p.a)(le.a.card, {
-						[le.a.common]: u === i.Common,
-						[le.a.rare]: u === i.Rare,
-						[le.a.epic]: u === i.Epic,
-						[le.a.legendary]: u === i.Legendary,
-						[le.a.flipped]: T,
-						[le.a.shiny]: u !== i.Common
+					className: Object(p.a)(me.a.card, {
+						[me.a.common]: u === i.Common,
+						[me.a.rare]: u === i.Rare,
+						[me.a.epic]: u === i.Epic,
+						[me.a.legendary]: u === i.Legendary,
+						[me.a.flipped]: T,
+						[me.a.shiny]: u !== i.Common
 					})
-				}, !C && c.a.createElement("button", {
-					className: le.a.editAvatarWrapper,
+				}, !k && c.a.createElement("button", {
+					className: me.a.editAvatarWrapper,
 					onClick: e => {
-						e.stopPropagation(), k(Object(Te.b)({
+						e.stopPropagation(), C(Object(Fe.b)({
 							clickSource: "recap"
 						})), N(Object(O.f)())
 					},
 					tabIndex: _ && T ? 0 : -1
-				}, c.a.createElement(Fe.a, {
-					className: le.a.editAvatar
+				}, c.a.createElement(De.a, {
+					className: me.a.editAvatar
 				})), c.a.createElement("img", {
-					className: le.a.cardBackground,
+					className: me.a.cardBackground,
 					src: `${P.a.assetPath}/img/recap/${u.toLowerCase()}_ability_card_v2.png`,
 					alt: ""
 				}), c.a.createElement("span", {
-					className: le.a.userName
-				}, w ? Be._("Redditor", null, {
+					className: me.a.userName
+				}, w ? Pe._("Redditor", null, {
 					hk: "UOiBC"
 				}) : d), c.a.createElement(W.a, {
 					src: R ? "https://i.redd.it/snoovatar/avatars/184bcb77-f84f-4c04-94c5-bec0e209b4ba.png" : o,
-					className: le.a.abilityAvatar,
+					className: me.a.abilityAvatar,
 					errorSrc: "https://i.redd.it/snoovatar/avatars/184bcb77-f84f-4c04-94c5-bec0e209b4ba.png"
 				}), c.a.createElement("div", {
-					className: le.a.karma
+					className: me.a.karma
 				}, c.a.createElement("span", {
-					className: le.a.karmaValue
-				}, m), Be._("{=karma}", [Be._param("=karma", c.a.createElement("span", {
-					className: le.a.karmaTitle
-				}, Be._("karma", null, {
+					className: me.a.karmaValue
+				}, m), Pe._("{=karma}", [Pe._param("=karma", c.a.createElement("span", {
+					className: me.a.karmaTitle
+				}, Pe._("karma", null, {
 					hk: "rtxTV"
 				})))], {
 					hk: "1vxzil"
 				}), c.a.createElement("div", {
-					className: Object(p.a)(le.a.cardRarity, {
-						[le.a.rare]: u === i.Rare,
-						[le.a.epic]: u === i.Epic,
-						[le.a.legendary]: u === i.Legendary
+					className: Object(p.a)(me.a.cardRarity, {
+						[me.a.rare]: u === i.Rare,
+						[me.a.epic]: u === i.Epic,
+						[me.a.legendary]: u === i.Legendary
 					})
-				}, v)), c.a.createElement("div", {
-					className: le.a.abilityWrapper
+				}, E)), c.a.createElement("div", {
+					className: me.a.abilityWrapper
 				}, c.a.createElement("div", {
-					className: le.a.ability
+					className: me.a.ability
 				}, c.a.createElement("span", null, a)), c.a.createElement("p", {
-					className: le.a.stats
+					className: me.a.stats
 				}, t), c.a.createElement("div", {
-					className: le.a.subreddits
-				}, (null == f ? void 0 : f.length) ? f.map(e => e ? c.a.createElement(ge, {
+					className: me.a.subreddits
+				}, (null == f ? void 0 : f.length) ? f.map(e => e ? c.a.createElement(ve, {
 					key: e.subredditId,
-					className: le.a.subreddit,
+					className: me.a.subreddit,
 					deeplink: null == e ? void 0 : e.deeplink,
 					subredditName: null == e ? void 0 : e.subredditName,
 					isRed: !0,
@@ -1769,67 +1822,67 @@
 					subredditId: e.subredditId,
 					tabIndex: -1
 				}) : null) : null)), c.a.createElement("img", {
-					className: le.a.topicBg,
+					className: me.a.topicBg,
 					src: `${P.a.assetPath}/img/recap/${u.toLowerCase()}_card_topic_bg.png`
 				}), c.a.createElement("img", {
-					className: le.a.topic,
-					src: E
+					className: me.a.topic,
+					src: v
 				}), h && c.a.createElement("img", {
-					className: le.a.premiumIcon,
+					className: me.a.premiumIcon,
 					src: `${P.a.assetPath}/img/recap/premium.png`
-				})))), !C && c.a.createElement("div", {
-					className: le.a.controls
+				})))), !k && c.a.createElement("div", {
+					className: me.a.controls
 				}, c.a.createElement("div", {
-					className: Object(p.a)(le.a.toggles, {
-						[le.a.visible]: T
+					className: Object(p.a)(me.a.toggles, {
+						[me.a.visible]: T
 					})
 				}, c.a.createElement("div", {
-					className: Object(p.a)(le.a.hideName, {
-						[le.a.selected]: _
+					className: Object(p.a)(me.a.hideName, {
+						[me.a.selected]: _
 					})
-				}, Be._("{=Hide username}", [Be._param("=Hide username", c.a.createElement("div", {
-					className: Object(p.a)(le.a.text, {
-						[le.a.black]: L
+				}, Pe._("{=Hide username}", [Pe._param("=Hide username", c.a.createElement("div", {
+					className: Object(p.a)(me.a.text, {
+						[me.a.black]: L
 					})
-				}, Be._("Hide username", null, {
+				}, Pe._("Hide username", null, {
 					hk: "2Q5Y03"
 				})))], {
 					hk: "3tRMJD"
-				}), c.a.createElement(Le.a, {
+				}), c.a.createElement(Ae.a, {
 					on: w,
 					onToggle: () => {
-						k(Object(g.g)()), !w && N(Object(O.k)())
+						C(Object(g.g)()), !w && N(Object(O.k)())
 					},
-					className: le.a.toggleButton,
+					className: me.a.toggleButton,
 					activeColorOverride: n.a.orangered,
 					tabIndex: _ && T ? 0 : -1
 				})), c.a.createElement("div", {
-					className: Object(p.a)(le.a.hideAvatar, {
-						[le.a.selected]: _
+					className: Object(p.a)(me.a.hideAvatar, {
+						[me.a.selected]: _
 					})
-				}, Be._("{=Hide avatar}", [Be._param("=Hide avatar", c.a.createElement("div", {
-					className: Object(p.a)(le.a.text, {
-						[le.a.black]: L
+				}, Pe._("{=Hide avatar}", [Pe._param("=Hide avatar", c.a.createElement("div", {
+					className: Object(p.a)(me.a.text, {
+						[me.a.black]: L
 					})
-				}, Be._("Hide avatar", null, {
+				}, Pe._("Hide avatar", null, {
 					hk: "2395yu"
 				})))], {
 					hk: "3Mkh3e"
-				}), c.a.createElement(Le.a, {
+				}), c.a.createElement(Ae.a, {
 					on: R,
 					onToggle: () => {
-						k(Object(g.f)()), !R && N(Object(O.j)())
+						C(Object(g.f)()), !R && N(Object(O.j)())
 					},
-					className: le.a.toggleButton,
+					className: me.a.toggleButton,
 					activeColorOverride: n.a.orangered,
 					tabIndex: _ && T ? 0 : -1
-				}))), c.a.createElement($, {
+				}))), c.a.createElement(te, {
 					isSelected: _,
 					isForAbilityCard: !0,
 					tabIndex: _ ? 0 : -1
 				})))))
 			};
-			var De = e => {
+			var Me = e => {
 				let {
 					card: {
 						title: a,
@@ -1841,25 +1894,25 @@
 					isSelected: l,
 					isForSharing: o
 				} = e;
-				return c.a.createElement(ce, {
+				return c.a.createElement(oe, {
 					title: a,
 					subtitle: t,
 					cardTemplateColor: i,
 					isSelected: l,
 					isForSharing: o
 				}, c.a.createElement("div", {
-					className: Object(p.a)(le.a.subredditList, {
-						[le.a.isResponsive]: !o
+					className: Object(p.a)(me.a.subredditList, {
+						[me.a.isResponsive]: !o
 					})
 				}, s.map((e, a) => c.a.createElement("div", {
 					key: e.subredditId,
 					style: {
 						transitionDelay: `${.25*a+.4}s`
 					},
-					className: Object(p.a)(le.a.subreddit, {
-						[le.a.selected]: l
+					className: Object(p.a)(me.a.subreddit, {
+						[me.a.selected]: l
 					})
-				}, c.a.createElement(ge, {
+				}, c.a.createElement(ve, {
 					withAddButton: !n,
 					key: e.subredditId,
 					deeplink: e.deeplink,
@@ -1871,7 +1924,7 @@
 					tabIndex: l ? 0 : -1
 				})))))
 			};
-			var Pe = e => {
+			var He = e => {
 				let {
 					card: {
 						title: a,
@@ -1885,30 +1938,30 @@
 					isForSharing: l
 				} = e;
 				const o = i === r.RED;
-				return c.a.createElement(ce, {
+				return c.a.createElement(oe, {
 					title: a,
 					subtitle: t,
 					cardTemplateColor: i,
 					isSelected: n,
 					isForSharing: l
 				}, c.a.createElement("div", {
-					className: Object(p.a)(le.a.image, le.a.isCircle, {
-						[le.a.orange]: !o,
-						[le.a.isSelected]: n,
-						[le.a.isResponsive]: !l
+					className: Object(p.a)(me.a.image, me.a.isCircle, {
+						[me.a.orange]: !o,
+						[me.a.isSelected]: n,
+						[me.a.isResponsive]: !l
 					})
 				}, c.a.createElement(W.a, {
 					src: s,
-					className: Object(p.a)(le.a.fallbackStaticImage, le.a.small, {
-						[le.a.isSelected]: n
+					className: Object(p.a)(me.a.fallbackStaticImage, me.a.small, {
+						[me.a.isSelected]: n
 					})
 				}), c.a.createElement("div", {
-					className: Object(p.a)(le.a.unitCircle, {
-						[le.a.selected]: n
+					className: Object(p.a)(me.a.unitCircle, {
+						[me.a.selected]: n
 					})
 				}, "#1")))
 			};
-			var We, Me = e => {
+			var Ue, Ye = e => {
 				let {
 					card: {
 						title: a,
@@ -1925,30 +1978,30 @@
 					isSelected: u,
 					isForSharing: g
 				} = e;
-				return c.a.createElement(ce, {
+				return c.a.createElement(oe, {
 					title: a,
 					subtitle: t,
 					cardTemplateColor: s,
 					isSelected: u,
 					isForSharing: g
 				}, c.a.createElement("div", {
-					className: Object(p.a)(le.a.image, le.a.isCircle, le.a.noBg, {
-						[le.a.isSelected]: u,
-						[le.a.isResponsive]: !g
+					className: Object(p.a)(me.a.image, me.a.isCircle, me.a.noBg, {
+						[me.a.isSelected]: u,
+						[me.a.isResponsive]: !g
 					}),
 					style: {
 						backgroundImage: `url(${d})`
 					}
 				}, c.a.createElement(W.a, {
 					src: i,
-					className: Object(p.a)(le.a.fallbackStaticImage, le.a.illustration, {
-						[le.a.isSelected]: u
+					className: Object(p.a)(me.a.fallbackStaticImage, me.a.illustration, {
+						[me.a.isSelected]: u
 					})
 				}), c.a.createElement("div", {
-					className: Object(p.a)(le.a.subredditFloating, le.a.animated, {
-						[le.a.selected]: u
-					}, le.a.isSubredditCard)
-				}, c.a.createElement(ge, {
+					className: Object(p.a)(me.a.subredditFloating, me.a.animated, {
+						[me.a.selected]: u
+					}, me.a.isSubredditCard)
+				}, c.a.createElement(ve, {
 					deeplink: l,
 					subredditName: n,
 					isLong: !0,
@@ -1957,21 +2010,21 @@
 					subredditId: o,
 					tabIndex: u ? 0 : -1
 				})), m && c.a.createElement("div", {
-					className: Object(p.a)(le.a.unitCircle, le.a.top, {
-						[le.a.selected]: u
+					className: Object(p.a)(me.a.unitCircle, me.a.top, {
+						[me.a.selected]: u
 					})
 				}, m, c.a.createElement("span", {
-					className: le.a.timeUnit
+					className: me.a.timeUnit
 				}, b))))
 			};
 			! function(e) {
 				e.WHITE = "#fff", e.MANGO_100 = "#fff8b8", e.MANGO_300 = "#ffd635", e.MANGO_500 = "#ffa800"
-			}(We || (We = {}));
-			const He = {
-				[r.WHITE]: [We.MANGO_500, We.MANGO_300, We.MANGO_100],
-				[r.YELLOW]: [We.WHITE, We.MANGO_300, We.MANGO_500]
+			}(Ue || (Ue = {}));
+			const Ge = {
+				[r.WHITE]: [Ue.MANGO_500, Ue.MANGO_300, Ue.MANGO_100],
+				[r.YELLOW]: [Ue.WHITE, Ue.MANGO_300, Ue.MANGO_500]
 			};
-			var Ue, Ye = e => {
+			var ze, Ze = e => {
 				let {
 					card: {
 						title: a,
@@ -1982,43 +2035,43 @@
 					isSelected: n,
 					isForSharing: l
 				} = e;
-				return c.a.createElement(ce, {
+				return c.a.createElement(oe, {
 					title: a,
 					subtitle: t,
 					cardTemplateColor: i,
 					isSelected: n,
 					isForSharing: l
 				}, c.a.createElement("div", {
-					className: Object(p.a)(le.a.subredditList, {
-						[le.a.isResponsive]: !l
+					className: Object(p.a)(me.a.subredditList, {
+						[me.a.isResponsive]: !l
 					})
 				}, s.map((e, a) => c.a.createElement("div", {
 					key: e.subredditId,
-					className: Object(p.a)(le.a.subredditBar, {
-						[le.a.selected]: n
+					className: Object(p.a)(me.a.subredditBar, {
+						[me.a.selected]: n
 					}),
 					style: {
-						width: `${n?qe[a]:0}px`,
-						backgroundColor: He[i][a],
+						width: `${n?Xe[a]:0}px`,
+						backgroundColor: Ge[i][a],
 						transitionDelay: `${.25*a+.4}s`
 					}
 				}, c.a.createElement("div", {
-					className: Object(p.a)(le.a.time, {
-						[le.a.selected]: n
+					className: Object(p.a)(me.a.time, {
+						[me.a.selected]: n
 					}),
 					style: {
 						transitionDelay: `${.125*a+.5*s.length}s`
 					}
 				}, e.totalTimeOnSubreddit, c.a.createElement("div", {
-					className: le.a.unit
+					className: me.a.unit
 				}, e.timeUnit)), c.a.createElement("div", {
 					style: {
 						transitionDelay: `${.25*a+.8}s`
 					},
-					className: Object(p.a)(le.a.subreddit, {
-						[le.a.selected]: n
+					className: Object(p.a)(me.a.subreddit, {
+						[me.a.selected]: n
 					})
-				}, c.a.createElement(ge, {
+				}, c.a.createElement(ve, {
 					deeplink: e.deeplink,
 					subredditName: e.subredditName,
 					isRed: i !== r.RED,
@@ -2030,9 +2083,9 @@
 			};
 			! function(e) {
 				e.WHITE = "#fff", e.MANGO_300 = "#ffd635", e.MANGO_500 = "#ffa800"
-			}(Ue || (Ue = {}));
-			const Ge = [Ue.WHITE, Ue.MANGO_300, Ue.MANGO_500];
-			var Ze = e => {
+			}(ze || (ze = {}));
+			const Ve = [ze.WHITE, ze.MANGO_300, ze.MANGO_500];
+			var qe = e => {
 				let {
 					card: {
 						title: a,
@@ -2043,60 +2096,60 @@
 					isSelected: s,
 					isForSharing: n
 				} = e;
-				return c.a.createElement(ce, {
+				return c.a.createElement(oe, {
 					title: a,
 					subtitle: t,
 					cardTemplateColor: r,
 					isSelected: s,
 					isForSharing: n
 				}, c.a.createElement("div", {
-					className: Object(p.a)(le.a.subredditList, {
-						[le.a.isResponsive]: !n
+					className: Object(p.a)(me.a.subredditList, {
+						[me.a.isResponsive]: !n
 					})
 				}, i.map((e, a) => c.a.createElement("div", {
 					key: e.topicName,
-					className: Object(p.a)(le.a.subredditBar, {
-						[le.a.selected]: s
+					className: Object(p.a)(me.a.subredditBar, {
+						[me.a.selected]: s
 					}),
 					style: {
-						width: `${s?qe[a]:0}px`,
-						backgroundColor: Ge[a],
+						width: `${s?Xe[a]:0}px`,
+						backgroundColor: Ve[a],
 						transitionDelay: `${.25*a+.4}s`
 					}
 				}, c.a.createElement("div", {
-					className: Object(p.a)(le.a.time, le.a.isTopic, {
-						[le.a.selected]: s
+					className: Object(p.a)(me.a.time, me.a.isTopic, {
+						[me.a.selected]: s
 					}),
 					style: {
 						transitionDelay: `${.125*a+.5*i.length}s`
 					}
 				}, `#${a+1}`, c.a.createElement("div", {
-					className: le.a.unit
+					className: me.a.unit
 				}, e.topicName)), c.a.createElement("div", {
-					className: Object(p.a)(le.a.topicIcon, {
-						[le.a.selected]: s
+					className: Object(p.a)(me.a.topicIcon, {
+						[me.a.selected]: s
 					}),
 					style: {
 						transitionDelay: `${.25*a+.8}s`
 					}
 				}, c.a.createElement(W.a, {
 					src: e.topicImgUrl,
-					className: le.a.topicImage
+					className: me.a.topicImage
 				}))))))
 			};
 			const {
-				fbt: ze
-			} = t("./node_modules/fbt/lib/FbtPublic.js"), Ve = {
+				fbt: Qe
+			} = t("./node_modules/fbt/lib/FbtPublic.js"), Ke = {
 				[r.RED]: "#ff4500",
 				[r.YELLOW]: "#fff8b8",
 				[r.BLACK]: "#000",
 				[r.WHITE]: "#fff"
-			}, qe = [434, 373, 246];
-			var Qe;
+			}, Xe = [434, 373, 246];
+			var Je;
 			! function(e) {
 				e.WHITE = "#fff", e.MANGO_100 = "#fff8b8", e.MANGO_300 = "#ffd635", e.MANGO_500 = "#ffa800"
-			}(Qe || (Qe = {}));
-			const Ke = function(e, a, t, r) {
+			}(Je || (Je = {}));
+			const $e = function(e, a, t, r) {
 					let i = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : -1;
 					const s = /(\*\*.*?\*\*)/g,
 						n = e.split(s);
@@ -2113,7 +2166,7 @@
 						onClick: r
 					}, e.replace(/\*/g, "").replace(/ /g, " ").replace(/-/g, "-⁠")) : e)
 				},
-				Xe = e => {
+				ea = e => {
 					let {
 						card: a,
 						isSelected: t,
@@ -2122,60 +2175,60 @@
 					} = e;
 					return c.a.createElement("div", {
 						className: i
-					}, " ", (() => a ? (e => e.__typename === y)(a) ? c.a.createElement(xe, {
+					}, " ", (() => a ? (e => e.__typename === y)(a) ? c.a.createElement(Te, {
 						card: a,
 						isSelected: t
-					}) : (e => e.__typename === S)(a) ? c.a.createElement(Ie, {
+					}) : (e => e.__typename === S)(a) ? c.a.createElement(Re, {
 						card: a,
 						isSelected: t,
 						isForSharing: r
-					}) : (e => e.__typename === T)(a) ? c.a.createElement(De, {
+					}) : (e => e.__typename === T)(a) ? c.a.createElement(Me, {
 						card: a,
 						isSelected: t,
 						isForSharing: r
-					}) : (e => e.__typename === w)(a) ? c.a.createElement(Me, {
+					}) : (e => e.__typename === w)(a) ? c.a.createElement(Ye, {
 						card: a,
 						isSelected: t,
 						isForSharing: r
-					}) : (e => e.__typename === I)(a) ? c.a.createElement(we, {
+					}) : (e => e.__typename === I)(a) ? c.a.createElement(Le, {
 						card: a,
 						isSelected: t,
 						isForSharing: r
-					}) : (e => e.__typename === k)(a) ? c.a.createElement(Ee, {
+					}) : (e => e.__typename === C)(a) ? c.a.createElement(Oe, {
 						card: a,
 						isSelected: t,
 						isForSharing: r
-					}) : (e => e.__typename === R)(a) ? c.a.createElement(Ye, {
+					}) : (e => e.__typename === R)(a) ? c.a.createElement(Ze, {
 						card: a,
 						isSelected: t,
 						isForSharing: r
-					}) : (e => e.__typename === L)(a) ? c.a.createElement(de, {
+					}) : (e => e.__typename === L)(a) ? c.a.createElement(ue, {
 						card: a,
 						isSelected: t,
 						isForSharing: r
-					}) : (e => e.__typename === F)(a) ? c.a.createElement(Ze, {
+					}) : (e => e.__typename === B)(a) ? c.a.createElement(qe, {
 						card: a,
 						isSelected: t,
 						isForSharing: r
-					}) : (e => e.__typename === B)(a) ? c.a.createElement(Re, {
+					}) : (e => e.__typename === F)(a) ? c.a.createElement(Be, {
 						card: a,
 						isSelected: t,
 						isForSharing: r
-					}) : (e => e.__typename === N)(a) ? c.a.createElement(ye, {
+					}) : (e => e.__typename === N)(a) ? c.a.createElement(we, {
 						card: a,
 						isSelected: t,
 						isForSharing: r
-					}) : D(a) ? c.a.createElement(Ae, {
+					}) : D(a) ? c.a.createElement(We, {
 						card: a,
 						isSelected: t,
 						isForSharing: r
-					}) : (e => e.__typename === A)(a) ? c.a.createElement(Pe, {
+					}) : (e => e.__typename === A)(a) ? c.a.createElement(He, {
 						card: a,
 						isSelected: t,
 						isForSharing: r
 					}) : c.a.createElement("div", null, a.title) : null)())
 				},
-				Je = e => {
+				aa = e => {
 					const a = e.match(/(\/r\/)(.+?)(\/.*)/i),
 						t = null == a ? void 0 : a[2];
 					return {
@@ -2183,10 +2236,10 @@
 						subredditLink: `/r/${t}/`
 					}
 				},
-				$e = () => Object(Q.a)() === K.a.Granted;
-			var ea = t("./src/reddit/pages/Recap/Components/ShareModal/index.m.less"),
-				aa = t.n(ea);
-			var ta = Object(q.a)(e => {
+				ta = () => Object(J.a)() === $.a.Granted;
+			var ra = t("./src/reddit/pages/Recap/Components/ShareModal/index.m.less"),
+				ia = t.n(ra);
+			var sa = Object(X.a)(e => {
 					let {
 						cardTemplateColor: a,
 						card: t,
@@ -2202,62 +2255,62 @@
 							e.key === f.b.Escape && l && l()
 						}, [l]);
 					return Object(s.useEffect)(() => (window.addEventListener("keydown", m), () => window.removeEventListener("keydown", m)), [m]), c.a.createElement("div", {
-						className: aa.a.modalWrapper,
+						className: ia.a.modalWrapper,
 						ref: d
 					}, c.a.createElement("div", {
-						className: aa.a.title
+						className: ia.a.title
 					}, c.a.createElement("span", {
-						className: aa.a.titleCaption
+						className: ia.a.titleCaption
 					}, o.fbt._("Share", null, {
 						hk: "2Y190R"
-					})), c.a.createElement(v.a, {
-						priority: v.c.PlainLink,
-						kind: v.b.Button,
-						Icon: Object(C.b)("close"),
+					})), c.a.createElement(E.a, {
+						priority: E.c.PlainLink,
+						kind: E.b.Button,
+						Icon: Object(k.b)("close"),
 						onClick: l,
 						disabled: n,
-						className: aa.a.titleCloseButton,
-						iconClassName: aa.a.titleCloseButtonIcon,
+						className: ia.a.titleCloseButton,
+						iconClassName: ia.a.titleCloseButtonIcon,
 						tabIndex: 1
 					})), c.a.createElement("div", {
-						className: aa.a.shareWrapper,
+						className: ia.a.shareWrapper,
 						style: {
 							backgroundColor: r ? "none" : a
 						}
 					}, c.a.createElement("div", {
-						className: aa.a.shareContainer,
+						className: ia.a.shareContainer,
 						id: "shareId",
 						style: {
 							backgroundColor: r ? "none" : a
 						}
-					}, c.a.createElement(Xe, {
+					}, c.a.createElement(ea, {
 						card: t,
 						isSelected: !0,
 						isForSharing: !0,
-						className: aa.a.card
+						className: ia.a.card
 					}), !r && c.a.createElement("div", {
-						className: aa.a.shareFooter
+						className: ia.a.shareFooter
 					}, c.a.createElement(H, {
-						className: Object(p.a)(aa.a.logo)
+						className: Object(p.a)(ia.a.logo)
 					}), c.a.createElement("span", {
-						className: aa.a.text
+						className: ia.a.text
 					}, "2022")))), c.a.createElement("div", {
-						className: aa.a.controls
+						className: ia.a.controls
 					}, c.a.createElement("div", {
-						className: aa.a.download
-					}, c.a.createElement(v.a, {
-						priority: v.c.PlainLink,
-						kind: v.b.Button,
-						className: Object(p.a)(aa.a.shareButton),
-						Icon: Object(C.b)("download"),
-						iconClassName: Object(p.a)(aa.a.shareIcon),
+						className: ia.a.download
+					}, c.a.createElement(E.a, {
+						priority: E.c.PlainLink,
+						kind: E.b.Button,
+						className: Object(p.a)(ia.a.shareButton),
+						Icon: Object(k.b)("download"),
+						iconClassName: Object(p.a)(ia.a.shareIcon),
 						onClick: i,
-						size: v.d.XL,
+						size: E.d.XL,
 						disabled: n,
 						tabIndex: 1
 					}), c.a.createElement("div", {
-						className: Object(p.a)(aa.a.title, {
-							[aa.a.downloadIndicator]: n
+						className: Object(p.a)(ia.a.title, {
+							[ia.a.downloadIndicator]: n
 						})
 					}, n ? o.fbt._("Downloading...", null, {
 						hk: "37jEC2"
@@ -2265,58 +2318,120 @@
 						hk: "3UONFz"
 					})))))
 				}),
-				ra = t("./src/reddit/selectors/activeModalId.ts"),
-				ia = t("./src/reddit/selectors/user.ts"),
-				sa = t("./src/reddit/pages/Recap/Components/index.m.less"),
-				ca = t.n(sa);
-			var na = () => {
+				ca = t("./src/reddit/selectors/activeModalId.ts"),
+				na = t("./src/reddit/selectors/user.ts"),
+				la = t("./src/reddit/pages/Recap/Components/index.m.less"),
+				oa = t.n(la);
+			const da = e => {
+					let {
+						onClick: a,
+						cardIndex: t,
+						isBlack: r
+					} = e;
+					return c.a.createElement(E.a, {
+						onClick: a,
+						priority: E.c.PlainLink,
+						kind: E.b.Button,
+						Icon: Object(k.b)("down"),
+						key: t,
+						className: Object(p.a)(oa.a.downButton, {
+							[oa.a.black]: r
+						}),
+						iconClassName: oa.a.downButtonIcon
+					})
+				},
+				ma = e => {
+					let {
+						isWhite: a,
+						onClick: t
+					} = e;
+					return c.a.createElement(E.a, {
+						className: Object(p.a)(oa.a.shareButton, {
+							[oa.a.white]: a
+						}),
+						iconClassName: Object(p.a)(oa.a.shareButtonIcon, {
+							[oa.a.white]: a
+						}),
+						onClick: t,
+						Icon: Object(k.b)("share_ios"),
+						priority: E.c.PlainLink,
+						kind: E.b.Button,
+						title: o.fbt._("Share Your Recap", null, {
+							hk: "1HiouD"
+						}),
+						tabIndex: 0
+					})
+				},
+				ba = e => {
+					let {
+						isBlackButton: a,
+						isBlackIcon: t,
+						onClick: r
+					} = e;
+					return c.a.createElement(E.a, {
+						className: Object(p.a)(oa.a.closeButton, {
+							[oa.a.black]: a
+						}),
+						Icon: Object(k.b)("close"),
+						iconClassName: Object(p.a)(oa.a.closeButtonIcon, {
+							[oa.a.black]: t
+						}),
+						onClick: r,
+						priority: E.c.PlainLink,
+						kind: E.b.Button,
+						title: o.fbt._("Close recap", null, {
+							hk: "3tZkDG"
+						}),
+						tabIndex: 0
+					})
+				};
+			var ua = () => {
 					const e = Object(b.d)(),
 						a = Object(j.a)(),
 						i = Object(b.e)(e => e.recap.shouldShowShareModal),
 						n = () => e(Object(g.h)()),
 						l = Object(b.e)(e => e.recap.isCardsLoading),
-						d = Object(b.e)(e => e.recap.cardsLoadingError),
-						k = Object(b.e)(e => e.recap.currentCardIndex),
-						N = Object(b.e)(e => e.recap.shareCardWasOpened),
-						S = Object(b.e)(e => Object(E.X)(e, {
+						o = Object(b.e)(e => e.recap.cardsLoadingError),
+						d = Object(b.e)(e => e.recap.currentCardIndex),
+						E = Object(b.e)(e => e.recap.shareCardWasOpened),
+						k = Object(b.e)(e => Object(v.X)(e, {
 							pageLayer: e.platform.currentPage
 						})),
-						[y, I] = Object(s.useState)(!1),
-						x = Object(b.e)(e => e.recap.cards),
-						[w, R] = Object(s.useState)(!1),
-						[T, L] = Object(s.useState)(!0),
-						[F, B] = Object(s.useState)(!1),
-						A = Object(b.e)(e => Object(ra.b)(h.a.SNOOVATAR_MODAL)(e)),
-						P = Object(b.e)(ia.m),
-						W = Math.ceil((k + 1) / 6),
-						M = k - 6 * (W - 1),
-						H = x.length > 6 && W > 1,
-						U = 6 * (W - 1),
-						Y = U + 6,
-						Z = 6 * W < x.length,
-						z = x.length && D(x[k]),
-						q = x.length && (x[k].cardTemplateColor === r.WHITE || x[k].cardTemplateColor === r.YELLOW),
-						Q = Object(s.useCallback)(() => {
+						C = Object(b.e)(e => {
+							var a;
+							return null === (a = e.platform.currentPage) || void 0 === a ? void 0 : a.key
+						}),
+						[N, S] = Object(s.useState)(!1),
+						y = Object(b.e)(e => e.recap.cards),
+						[I, x] = Object(s.useState)(!1),
+						[w, R] = Object(s.useState)(!0),
+						[T, L] = Object(s.useState)(!1),
+						[B, F] = Object(s.useState)(0),
+						A = Object(b.e)(e => Object(ca.b)(h.a.SNOOVATAR_MODAL)(e)),
+						P = Object(b.e)(na.m),
+						W = y.length && D(y[d]),
+						M = y.length && (y[d].cardTemplateColor === r.WHITE || y[d].cardTemplateColor === r.YELLOW),
+						H = Object(s.useCallback)(() => {
 							e(Object(g.c)()), e(Object(g.a)())
 						}, [e]),
-						K = Object(s.useCallback)(() => {
+						U = Object(s.useCallback)(() => {
 							let e = [];
-							for (let a = 0; a < x.length - 1 && (x[a].hasOwnProperty("templateImageUrl") && (e = [...e, x[a].templateImageUrl]), x[a].hasOwnProperty("backgroundImageUrl") && (e = [...e, x[a].backgroundImageUrl]), 3 !== a); ++a);
+							for (let a = 0; a < y.length - 1 && (y[a].hasOwnProperty("templateImageUrl") && (e = [...e, y[a].templateImageUrl]), y[a].hasOwnProperty("backgroundImageUrl") && (e = [...e, y[a].backgroundImageUrl]), 3 !== a); ++a);
 							Promise.all(e.map(e => new Promise(a => {
 								const t = new Image;
 								t.onload = () => a(), t.src = e
-							}))).then(() => B(!0))
-						}, [x]);
+							}))).then(() => L(!0))
+						}, [y]);
 					Object(s.useEffect)(() => {
-						K()
-					}, [K]), Object(s.useEffect)(() => {
+						U()
+					}, [U]), Object(s.useEffect)(() => {
 						Object(g.d)(!0), P && Object(_.Vb)(null == P ? void 0 : P.id)
-					}, [A, e, P, a]), Object(s.useEffect)(() => {
-						a(Object(O.r)()), Q()
-					}, [Q, a]), Object(s.useEffect)(() => {
-						x.length && a(Object(O.q)())
-					}, [x, k, a]);
-					const X = Object(s.useRef)(m()((t, r, i, s, c, n) => {
+					}, [A, P]), Object(s.useEffect)(() => {
+						a(Object(O.r)()), H()
+					}, [H, a]), Object(s.useEffect)(() => {
+						y.length && a(Object(O.q)())
+					}, [y, d, a]);
+					const Y = Object(s.useRef)(m()((t, r, i, s, c, n) => {
 							const l = r - 1;
 							let o = i;
 							if (s && c && !n) return a(Object(O.i)()), e(Object(g.b)());
@@ -2326,26 +2441,31 @@
 						}, 2e3, {
 							trailing: !1
 						})),
-						J = Object(s.useCallback)(e => {
-							if (null !== e && x.length && !i) {
-								if (e.focus(), z && !y && !N) return I(!0);
+						z = Object(s.useRef)(null),
+						Z = Object(s.useCallback)(() => {
+							(null == z ? void 0 : z.current) && y.length && (R(!1), F(z.current.clientHeight / y.length))
+						}, [y]);
+					Object(s.useEffect)(() => (Z(), addEventListener("resize", Z), () => removeEventListener("resize", Z)), [z, y.length, Z]);
+					const q = Object(s.useCallback)(e => {
+							if (null !== e && y.length && !i) {
+								if (e.focus(), W && !N && !E) return S(!0);
 								e.onwheel = e => {
-									L(!0), X.current(e, x.length, k, !!z, y, N)
+									R(!0), Y.current(e, y.length, d, !!W, N, E)
 								}, e.onkeydown = e => {
-									e.key !== f.b.ArrowDown && e.key !== f.b.ArrowUp || (L(!0), X.current(e, x.length, k, !!z, y, N))
+									e.key !== f.b.ArrowDown && e.key !== f.b.ArrowUp || (R(!0), Y.current(e, y.length, d, !!W, N, E))
 								}
 							}
-						}, [x, k, i, N, y, z]),
-						$ = c.a.useCallback(async () => {
+						}, [y, d, i, E, N, W]),
+						Q = c.a.useCallback(async () => {
 							let e = document.getElementById("shareId");
-							if (z && (e = document.getElementById("abilityCardShareId")), e) {
-								R(!0);
+							if (W && (e = document.getElementById("abilityCardShareId")), e) {
+								x(!0);
 								const a = await (() => t.e(4).then(t.bind(null, "./node_modules/html-to-image/es/index.js")))(),
 									r = await a.getFontEmbedCSS(e),
 									i = await a.toPng(e, {
-										backgroundColor: z ? "transparent" : Ve[x[k].cardTemplateColor],
-										canvasHeight: z ? 486 : 540,
-										canvasWidth: z ? 340 : 960,
+										backgroundColor: W ? "transparent" : Ke[y[d].cardTemplateColor],
+										canvasHeight: W ? 486 : 540,
+										canvasWidth: W ? 340 : 960,
 										style: {
 											scale: "1"
 										},
@@ -2353,131 +2473,75 @@
 									});
 								if (i) {
 									const e = document.createElement("a");
-									e.download = `reddit_recap_card${k}.png`, e.href = i, e.click(), R(!1), n()
+									e.download = `reddit_recap_card${d}.png`, e.href = i, e.click(), x(!1), n()
 								}
 							}
-						}, [e, k]),
-						ee = Object(s.useCallback)(() => {
-							e(S ? Object(u.a)() : Object(u.b)("/")), a(Object(O.e)())
-						}, [S, e, a]);
-					return d ? c.a.createElement(G, {
-						onRetry: Q
-					}) : l || !F ? c.a.createElement(V, null) : c.a.createElement(c.a.Fragment, null, x.length ? c.a.createElement("div", {
-						ref: J,
-						className: ca.a.cardsContainer,
+						}, [e, d]),
+						X = Object(s.useCallback)(() => {
+							e(k && C ? Object(u.a)() : Object(u.b)("/")), a(Object(O.e)())
+						}, [k, C, e, a]);
+					return o ? c.a.createElement(G, {
+						onRetry: H
+					}) : l || !T ? c.a.createElement(V, null) : c.a.createElement(c.a.Fragment, null, y.length ? c.a.createElement("div", {
+						ref: q,
+						className: oa.a.cardsContainer,
 						tabIndex: 0
 					}, c.a.createElement("div", {
-						className: Object(p.a)(ca.a.wrapper, {
-							[ca.a.animated]: T
+						ref: z,
+						className: Object(p.a)(oa.a.wrapper, {
+							[oa.a.animated]: w
 						}),
 						style: {
-							top: `${100*-k}%`,
-							backgroundColor: Ve[x[k].cardTemplateColor]
+							transform: `translateY(${-d*B}px)`,
+							backgroundColor: Ke[y[d].cardTemplateColor]
 						}
-					}, x.map((e, a) => c.a.createElement("div", {
-						className: ca.a.card,
+					}, y.map((e, a) => c.a.createElement("div", {
+						className: oa.a.card,
 						key: e.id
-					}, c.a.createElement(Xe, {
+					}, c.a.createElement(ea, {
 						card: e,
-						isSelected: a === k
-					})))), k < x.length - 1 && c.a.createElement(v.a, {
+						isSelected: a === d
+					})))), d < y.length - 1 && c.a.createElement(da, {
+						isBlack: !!M,
 						onClick: () => {
 							e(Object(g.e)({
-								index: k + 1
+								index: d + 1
 							}))
 						},
-						priority: v.c.PlainLink,
-						kind: v.b.Button,
-						Icon: Object(C.b)("down"),
-						key: k,
-						className: Object(p.a)(ca.a.downButton, {
-							[ca.a.black]: !!q
-						}),
-						iconClassName: ca.a.downButtonIcon
-					}), c.a.createElement(v.a, {
-						className: Object(p.a)(ca.a.closeButton, {
-							[ca.a.black]: x[k].cardTemplateColor === r.BLACK
-						}),
-						Icon: Object(C.b)("close"),
-						iconClassName: Object(p.a)(ca.a.closeButtonIcon, {
-							[ca.a.black]: !!q
-						}),
-						onClick: ee,
-						priority: v.c.PlainLink,
-						kind: v.b.Button,
-						title: o.fbt._("Close recap", null, {
-							hk: "3tZkDG"
-						}),
-						tabIndex: 0
-					}), k > 0 && c.a.createElement(v.a, {
-						className: Object(p.a)(ca.a.shareButton, {
-							[ca.a.white]: x[k].cardTemplateColor === r.WHITE
-						}),
-						iconClassName: Object(p.a)(ca.a.shareButtonIcon, {
-							[ca.a.white]: x[k].cardTemplateColor === r.WHITE
-						}),
-						onClick: n,
-						Icon: Object(C.b)("share_ios"),
-						priority: v.c.PlainLink,
-						kind: v.b.Button,
-						title: o.fbt._("Share Your Recap", null, {
-							hk: "1HiouD"
-						}),
-						tabIndex: 0
-					}), c.a.createElement("div", {
-						className: ca.a.pager
-					}, H && c.a.createElement("button", {
-						className: Object(p.a)(ca.a.nextDot, {
-							[ca.a.black]: !!q
-						}),
-						onClick: () => {
-							L(!1), e(Object(g.e)({
-								index: U - 1
+						cardIndex: d
+					}), c.a.createElement(ba, {
+						isBlackButton: y[d].cardTemplateColor === r.BLACK,
+						isBlackIcon: !!M,
+						onClick: X
+					}), d > 0 && c.a.createElement(ma, {
+						isWhite: y[d].cardTemplateColor === r.WHITE,
+						onClick: n
+					}), c.a.createElement(K, {
+						cards: y,
+						cardIndex: d,
+						isBlack: !!M,
+						onClick: a => {
+							R(!1), e(Object(g.e)({
+								index: a
 							}))
-						},
-						tabIndex: 0,
-						title: `Card #${U}`
-					}), x.slice(U, Y).map((a, t) => c.a.createElement("button", {
-						key: t,
-						className: Object(p.a)(ca.a.progressDot, {
-							[ca.a.active]: t === M,
-							[ca.a.black]: !!q
-						}),
-						onClick: () => {
-							L(!1), e(Object(g.e)({
-								index: t + U
-							}))
-						},
-						tabIndex: 0,
-						title: `Card #${t+U+1}`
-					})), Z && c.a.createElement("button", {
-						className: Object(p.a)(ca.a.nextDot, {
-							[ca.a.black]: !!q
-						}),
-						onClick: () => {
-							L(!1), e(Object(g.e)({
-								index: Y
-							}))
-						},
-						tabIndex: 0,
-						title: `Card #${Y+1}`
-					})), i && c.a.createElement(ta, {
+						}
+					}), i && c.a.createElement(sa, {
 						onOverlayClick: n,
 						withOverlay: !0,
-						card: x[k],
-						cardTemplateColor: Ve[x[k].cardTemplateColor],
-						isAbilityCard: !!z,
-						isDownloading: w,
-						onDownloadCard: $,
+						card: y[d],
+						cardTemplateColor: Ke[y[d].cardTemplateColor],
+						isAbilityCard: !!W,
+						isDownloading: I,
+						onDownloadCard: Q,
 						onClose: n,
-						overlayClassName: ca.a.shareModal
+						overlayClassName: oa.a.shareModal
 					})) : null)
 				},
-				la = t("./src/reddit/pages/Recap/index.m.less"),
-				oa = t.n(la);
+				pa = t("./src/reddit/pages/Recap/index.m.less"),
+				ga = t.n(pa);
 			a.default = () => c.a.createElement(l.a, {
-				content: c.a.createElement(na, null),
-				className: oa.a.content,
+				content: c.a.createElement(ua, null),
+				className: ga.a.content,
 				backgroundColor: n.a.orangered
 			})
 		},
@@ -2486,4 +2550,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Recap.11d3292a8cda305b9047.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Recap.0addae299a543ae13124.js.map
