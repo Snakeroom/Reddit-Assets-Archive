@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UserDataRequestPage.db9f0ac2169279544071.js
-// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UserDataRequestPage.ea1808c81770c762820b.js
+// Retrieved at 12/6/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UserDataRequestPage"], {
 		"./src/reddit/actions/userDataRequest.ts": function(e, t, a) {
@@ -234,10 +234,10 @@
 			}(g || (g = {}));
 			var R = a("./src/reddit/selectors/user.ts"),
 				_ = a("./src/reddit/selectors/userDataRequest.ts"),
-				q = a("./node_modules/reselect/es/index.js"),
-				v = a("./src/reddit/pages/UserDataRequestPage/index.m.less"),
-				N = a.n(v);
-			const y = Object(q.c)({
+				v = a("./node_modules/reselect/es/index.js"),
+				q = a("./src/reddit/pages/UserDataRequestPage/index.m.less"),
+				N = a.n(q);
+			const y = Object(v.c)({
 					currentUser: R.m,
 					userDataExportEligibility: _.a,
 					userDataRequestPageLoadingApiState: _.b
@@ -264,7 +264,7 @@
 				}),
 				value: P.GDPR
 			}, {
-				getName: () => "California Consumer Privacy Act (CCPA)",
+				getName: () => "California Consumer Privacy Act (CCPA) / California Privacy Rights Act (CPRA)",
 				value: P.CCPA
 			}, {
 				getName: () => s.fbt._("Other", null, {
@@ -539,4 +539,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserDataRequestPage.db9f0ac2169279544071.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserDataRequestPage.ea1808c81770c762820b.js.map
