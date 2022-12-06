@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.3599ff2feb6716c15fb2.js
-// Retrieved at 12/6/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.d5e8e43b1be8668256c9.js
+// Retrieved at 12/6/2022, 4:20:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "PostCreation~Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-c~93a1f1ba", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -26879,142 +26879,118 @@
 				}
 			};
 			const Dt = e => {
-				const t = Object(o.useRef)(!1);
-				let n = !1,
-					s = !1;
-				const c = new u.a(250),
-					p = Object(o.useRef)(),
-					f = Object(o.useRef)(null),
-					h = Object(o.useRef)(!1),
-					C = Object(ae.gb)(),
-					g = Object(oe.b)(),
-					_ = Object(a.d)(),
+				const t = new u.a(250),
+					n = Object(o.useRef)(),
+					s = Object(o.useRef)(null),
+					c = Object(ae.gb)(),
+					p = Object(oe.b)(),
+					f = Object(a.d)(),
 					{
-						identifiers: v,
-						listingKey: x,
-						searchOptions: O,
-						componentType: y,
-						sidebar: E,
-						originElement: j,
-						pageKey: k
+						identifiers: h,
+						listingKey: C,
+						searchOptions: g,
+						componentType: _,
+						sidebar: v,
+						originElement: x,
+						pageKey: O,
+						fireScreenview: y
 					} = e,
 					{
-						cacheName: S,
-						Component: I,
-						moreResultsTypes: w,
-						Placeholder: T,
-						selector: L,
-						telemetryComponentName: P,
-						telemetryViewEvent: N
-					} = At[y],
+						cacheName: E,
+						Component: j,
+						moreResultsTypes: k,
+						Placeholder: S,
+						selector: I,
+						telemetryComponentName: w,
+						telemetryViewEvent: T
+					} = At[_],
 					{
-						apiError: M,
-						apiPending: R,
-						loadMore: A,
-						viewportDataLoaded: D
-					} = Object(a.e)(t => L(t, e)),
-					F = Object(a.e)(e => Object(ke.j)(e)),
-					B = E ? Tt : v.length,
-					U = E ? Tt : 10,
-					V = Object(l.a)(F),
+						apiError: L,
+						apiPending: P,
+						loadMore: N
+					} = Object(a.e)(t => I(t, e)),
+					M = !!Object(a.e)(e => Object(ke.j)(e)),
+					R = v ? Tt : h.length,
+					A = v ? Tt : 10,
+					D = Object(l.a)(M),
+					F = Object(l.a)(h.length),
+					B = () => Boolean(L) || !1 === P,
+					U = () => h.length > 0,
+					V = !(U() || B()),
 					W = () => {
-						const e = Ie.c.has(x) ? Ie.c.end(x) : 0;
-						g(Object(je.v)(x, O, we.TimerType.InApp, e, C)), h.current = !0
-					},
-					H = () => {
-						Z() && W()
-					},
-					G = () => {
-						const e = p.current && Array.from(p.current.children),
-							t = e && e.pop();
-						return t && t.getBoundingClientRect().bottom > window.innerHeight
+						if (!y) return;
+						const e = Ie.c.has(C) ? Ie.c.end(C) : 0;
+						p(Object(je.v)(C, g, we.TimerType.InApp, e, c))
 					};
 				Object(o.useEffect)(() => {
-					H(), f.current && Object(Ie.b)(d.o.Redesign, {
-						type: "mount",
-						component: P,
-						duration: Ie.c.end(f.current)
-					})
-				}, []), Object(o.useEffect)(() => {
-					if (H(), f.current && Ie.c.has(f.current)) {
-						const e = Ie.c.end(f.current);
+					if (s.current && Ie.c.has(s.current)) {
+						const e = Ie.c.end(s.current);
 						if (e < 10) return;
 						Object(Ie.b)(d.o.Redesign, {
 							duration: e,
 							type: "mount",
-							component: P
+							component: w
 						})
 					}
-				});
-				const q = Object(l.a)(x),
-					K = Object(l.a)(v.length);
-				Object(o.useEffect)(() => {
-					f.current && Ie.c.cancel(f.current), v.length && (f.current = Ie.c.start()), (x !== q || !G() && v.length !== K) && (t.current = !1)
-				}, [f, x, v.length, q, K, t]), Object(o.useEffect)(() => () => {
-					f.current && Ie.c.cancel(f.current), p.current = void 0, t.current = !1
 				}), Object(o.useEffect)(() => {
-					V && !F && (!Ie.c.has(x) && h.current || W())
-				}, [F, V]);
-				const z = () => {
-						t.current = !0, H()
+					V || W()
+				}, [V]), Object(o.useEffect)(() => {
+					s.current && Ie.c.cancel(s.current), h.length && (s.current = Ie.c.start())
+				}, [s, C, h.length, F]), Object(o.useEffect)(() => {
+					D && !M && W()
+				}, [M, D]);
+				const H = e => {
+						n.current = e instanceof Element ? e : void 0
 					},
-					Z = () => {
-						const e = G();
-						return (Ie.c.has(x) || !h.current) && (M || !s && (n || t && (e || D)))
-					},
-					Y = e => {
-						p.current = e instanceof Element ? e : void 0
-					},
-					Q = () => {
-						const e = v.slice(0, B).map((e, t) => ((e, t) => {
-							let n;
-							n = function(e) {
+					G = () => {
+						const e = h.slice(0, R).map((e, n) => ((e, n) => {
+							let s;
+							s = function(e) {
 								return void 0 !== e.type
 							}(e) ? e.id : e;
-							const s = `${S}-search-${t}-${x}`,
-								r = Object(pt.b)(n, x, () => N(g, O, e, x, C, j));
-							let o;
-							if (void 0 === (o = c.get(s))) {
-								const s = `${S}-search-item-[id:${n}]`;
-								o = {
+							const r = `${E}-search-${n}-${C}`,
+								o = Object(pt.b)(s, C, () => T(p, g, e, C, c, x));
+							let a;
+							if (void 0 === (a = t.get(r))) {
+								const t = `${E}-search-item-[id:${s}]`;
+								a = {
 									estHeight: 32,
-									trackOnEnteredViewport: r,
-									id: n,
-									render: () => i.a.createElement(I, {
+									trackOnEnteredViewport: o,
+									id: s,
+									render: () => i.a.createElement(j, {
 										className: wt.a.separatedCommunity,
-										first: 0 === t,
+										first: 0 === n,
 										identifier: e,
-										key: s,
-										listingKey: x,
-										searchOptions: O,
-										sidebar: E,
-										pageKey: k
+										key: t,
+										listingKey: C,
+										searchOptions: g,
+										sidebar: v,
+										pageKey: O
 									})
 								}
 							}
-							return c.set(s, o), o
-						})(e, t));
+							return t.set(r, a), a
+						})(e, n));
 						return i.a.createElement(b.b, {
-							getContainer: () => F ? document.getElementById(Ee.e) : null,
-							key: x,
-							innerRef: Y,
-							loadMoreToken: A && A.token ? A.token : void 0,
-							onLastVisibleChildRendered: z,
+							getContainer: () => M ? document.getElementById(Ee.e) : null,
+							key: C,
+							innerRef: H,
+							loadMoreToken: N && N.token ? N.token : void 0,
 							onLoadMore: () => {
-								_(Object(m.n)(w))
+								f(Object(m.n)(k))
 							}
 						}, e)
 					};
-				return (() => v.length > 0)() ? (n = !1, s = !1, Q()) : (() => Boolean(M) || !1 === R)() ? (n = !0, s = !1, Q()) : (n = !1, s = !0, (() => {
-					const e = !M;
+				return U() ? G() : B() ? G() : (() => {
+					const e = !L;
 					return i.a.createElement("div", {
-						"data-testid": `${y}-list-placeholder`
-					}, r()(U, t => i.a.createElement(T, {
+						"data-testid": `${_}-list-placeholder`
+					}, r()(A, t => i.a.createElement(S, {
 						key: t,
 						isLoading: e,
 						sidebar: !1
 					})))
-				})())
+				})()
 			}
 		},
 		"./src/reddit/components/SearchResultsContent/helpers/viewSearchThingTracker.ts": function(e, t, n) {
@@ -27554,7 +27530,8 @@
 					listingKey: t,
 					searchOptions: n,
 					componentType: Ke.c.Comments,
-					originElement: s
+					originElement: s,
+					fireScreenview: !0
 				}), c && o.a.Children.toArray(qe()(3, He()(o.a.createElement(ze.a, {
 					className: Ye.a.loadMoreItem,
 					isLoading: !0
@@ -27578,7 +27555,8 @@
 						identifiers: s,
 						listingKey: t,
 						searchOptions: n,
-						componentType: Ke.c.Subreddits
+						componentType: Ke.c.Subreddits,
+						fireScreenview: !0
 					}), Xe(s, r) && o.a.Children.toArray(qe()(3, He()(o.a.createElement(Je.a, {
 						className: Ye.a.loadMoreItem,
 						isLoading: !0
@@ -27602,7 +27580,8 @@
 					identifiers: s,
 					listingKey: t,
 					searchOptions: n,
-					componentType: Ke.c.Users
+					componentType: Ke.c.Users,
+					fireScreenview: !0
 				}), Xe(s, r) && o.a.Children.toArray(qe()(3, He()(o.a.createElement(Je.a, {
 					className: Ye.a.loadMoreItem,
 					isLoading: !0
@@ -27648,7 +27627,8 @@
 					identifiers: s,
 					listingKey: t,
 					searchOptions: n,
-					componentType: Ke.c.Posts
+					componentType: Ke.c.Posts,
+					fireScreenview: !0
 				}), function(e, t) {
 					return Boolean(t && t.token) && e.length > 0
 				}(s, a) && o.a.Children.toArray(qe()(3, He()(o.a.createElement(st.a, {
@@ -50861,4 +50841,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.3599ff2feb6716c15fb2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.d5e8e43b1be8668256c9.js.map

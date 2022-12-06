@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.c9419584e3ed39853465.js
-// Retrieved at 12/6/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.cdd291588b89453e14df.js
+// Retrieved at 12/6/2022, 4:20:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -10971,142 +10971,118 @@
 				}
 			};
 			const Bt = e => {
-				const t = Object(o.useRef)(!1);
-				let s = !1,
-					n = !1;
-				const c = new m.a(250),
-					p = Object(o.useRef)(),
-					h = Object(o.useRef)(null),
-					g = Object(o.useRef)(!1),
-					f = Object(ae.gb)(),
-					x = Object(oe.b)(),
-					v = Object(a.d)(),
+				const t = new m.a(250),
+					s = Object(o.useRef)(),
+					n = Object(o.useRef)(null),
+					c = Object(ae.gb)(),
+					p = Object(oe.b)(),
+					h = Object(a.d)(),
 					{
-						identifiers: O,
-						listingKey: y,
-						searchOptions: C,
-						componentType: _,
-						sidebar: j,
-						originElement: E,
-						pageKey: k
+						identifiers: g,
+						listingKey: f,
+						searchOptions: x,
+						componentType: v,
+						sidebar: O,
+						originElement: y,
+						pageKey: C,
+						fireScreenview: _
 					} = e,
 					{
-						cacheName: S,
-						Component: w,
-						moreResultsTypes: P,
-						Placeholder: I,
-						selector: N,
-						telemetryComponentName: T,
-						telemetryViewEvent: L
-					} = Mt[_],
+						cacheName: j,
+						Component: E,
+						moreResultsTypes: k,
+						Placeholder: S,
+						selector: w,
+						telemetryComponentName: P,
+						telemetryViewEvent: I
+					} = Mt[v],
 					{
-						apiError: R,
-						apiPending: F,
-						loadMore: M,
-						viewportDataLoaded: B
-					} = Object(a.e)(t => N(t, e)),
-					A = Object(a.e)(e => Object(ke.j)(e)),
-					D = j ? It : O.length,
-					W = j ? It : 10,
-					U = Object(l.a)(A),
+						apiError: N,
+						apiPending: T,
+						loadMore: L
+					} = Object(a.e)(t => w(t, e)),
+					R = !!Object(a.e)(e => Object(ke.j)(e)),
+					F = O ? It : g.length,
+					M = O ? It : 10,
+					B = Object(l.a)(R),
+					A = Object(l.a)(g.length),
+					D = () => Boolean(N) || !1 === T,
+					W = () => g.length > 0,
+					U = !(W() || D()),
 					V = () => {
-						const e = we.c.has(y) ? we.c.end(y) : 0;
-						x(Object(Ee.v)(y, C, Pe.TimerType.InApp, e, f)), g.current = !0
-					},
-					H = () => {
-						Y() && V()
-					},
-					z = () => {
-						const e = p.current && Array.from(p.current.children),
-							t = e && e.pop();
-						return t && t.getBoundingClientRect().bottom > window.innerHeight
+						if (!_) return;
+						const e = we.c.has(f) ? we.c.end(f) : 0;
+						p(Object(Ee.v)(f, x, Pe.TimerType.InApp, e, c))
 					};
 				Object(o.useEffect)(() => {
-					H(), h.current && Object(we.b)(d.o.Redesign, {
-						type: "mount",
-						component: T,
-						duration: we.c.end(h.current)
-					})
-				}, []), Object(o.useEffect)(() => {
-					if (H(), h.current && we.c.has(h.current)) {
-						const e = we.c.end(h.current);
+					if (n.current && we.c.has(n.current)) {
+						const e = we.c.end(n.current);
 						if (e < 10) return;
 						Object(we.b)(d.o.Redesign, {
 							duration: e,
 							type: "mount",
-							component: T
+							component: P
 						})
 					}
-				});
-				const K = Object(l.a)(y),
-					q = Object(l.a)(O.length);
-				Object(o.useEffect)(() => {
-					h.current && we.c.cancel(h.current), O.length && (h.current = we.c.start()), (y !== K || !z() && O.length !== q) && (t.current = !1)
-				}, [h, y, O.length, K, q, t]), Object(o.useEffect)(() => () => {
-					h.current && we.c.cancel(h.current), p.current = void 0, t.current = !1
 				}), Object(o.useEffect)(() => {
-					U && !A && (!we.c.has(y) && g.current || V())
-				}, [A, U]);
-				const G = () => {
-						t.current = !0, H()
+					U || V()
+				}, [U]), Object(o.useEffect)(() => {
+					n.current && we.c.cancel(n.current), g.length && (n.current = we.c.start())
+				}, [n, f, g.length, A]), Object(o.useEffect)(() => {
+					B && !R && V()
+				}, [R, B]);
+				const H = e => {
+						s.current = e instanceof Element ? e : void 0
 					},
-					Y = () => {
-						const e = z();
-						return (we.c.has(y) || !g.current) && (R || !n && (s || t && (e || B)))
-					},
-					Q = e => {
-						p.current = e instanceof Element ? e : void 0
-					},
-					J = () => {
-						const e = O.slice(0, D).map((e, t) => ((e, t) => {
-							let s;
-							s = function(e) {
+					z = () => {
+						const e = g.slice(0, F).map((e, s) => ((e, s) => {
+							let n;
+							n = function(e) {
 								return void 0 !== e.type
 							}(e) ? e.id : e;
-							const n = `${S}-search-${t}-${y}`,
-								r = Object(pt.b)(s, y, () => L(x, C, e, y, f, E));
-							let o;
-							if (void 0 === (o = c.get(n))) {
-								const n = `${S}-search-item-[id:${s}]`;
-								o = {
+							const r = `${j}-search-${s}-${f}`,
+								o = Object(pt.b)(n, f, () => I(p, x, e, f, c, y));
+							let a;
+							if (void 0 === (a = t.get(r))) {
+								const t = `${j}-search-item-[id:${n}]`;
+								a = {
 									estHeight: 32,
-									trackOnEnteredViewport: r,
-									id: s,
-									render: () => i.a.createElement(w, {
+									trackOnEnteredViewport: o,
+									id: n,
+									render: () => i.a.createElement(E, {
 										className: Pt.a.separatedCommunity,
-										first: 0 === t,
+										first: 0 === s,
 										identifier: e,
-										key: n,
-										listingKey: y,
-										searchOptions: C,
-										sidebar: j,
-										pageKey: k
+										key: t,
+										listingKey: f,
+										searchOptions: x,
+										sidebar: O,
+										pageKey: C
 									})
 								}
 							}
-							return c.set(n, o), o
-						})(e, t));
+							return t.set(r, a), a
+						})(e, s));
 						return i.a.createElement(b.b, {
-							getContainer: () => A ? document.getElementById(je.e) : null,
-							key: y,
-							innerRef: Q,
-							loadMoreToken: M && M.token ? M.token : void 0,
-							onLastVisibleChildRendered: G,
+							getContainer: () => R ? document.getElementById(je.e) : null,
+							key: f,
+							innerRef: H,
+							loadMoreToken: L && L.token ? L.token : void 0,
 							onLoadMore: () => {
-								v(Object(u.n)(P))
+								h(Object(u.n)(k))
 							}
 						}, e)
 					};
-				return (() => O.length > 0)() ? (s = !1, n = !1, J()) : (() => Boolean(R) || !1 === F)() ? (s = !0, n = !1, J()) : (s = !1, n = !0, (() => {
-					const e = !R;
+				return W() ? z() : D() ? z() : (() => {
+					const e = !N;
 					return i.a.createElement("div", {
-						"data-testid": `${_}-list-placeholder`
-					}, r()(W, t => i.a.createElement(I, {
+						"data-testid": `${v}-list-placeholder`
+					}, r()(M, t => i.a.createElement(S, {
 						key: t,
 						isLoading: e,
 						sidebar: !1
 					})))
-				})())
+				})()
 			}
 		},
 		"./src/reddit/components/SearchResultsContent/helpers/viewSearchThingTracker.ts": function(e, t, s) {
@@ -11646,7 +11622,8 @@
 					listingKey: t,
 					searchOptions: s,
 					componentType: qe.c.Comments,
-					originElement: n
+					originElement: n,
+					fireScreenview: !0
 				}), c && o.a.Children.toArray(Ke()(3, He()(o.a.createElement(Ge.a, {
 					className: Qe.a.loadMoreItem,
 					isLoading: !0
@@ -11670,7 +11647,8 @@
 						identifiers: n,
 						listingKey: t,
 						searchOptions: s,
-						componentType: qe.c.Subreddits
+						componentType: qe.c.Subreddits,
+						fireScreenview: !0
 					}), Xe(n, r) && o.a.Children.toArray(Ke()(3, He()(o.a.createElement(Ze.a, {
 						className: Qe.a.loadMoreItem,
 						isLoading: !0
@@ -11694,7 +11672,8 @@
 					identifiers: n,
 					listingKey: t,
 					searchOptions: s,
-					componentType: qe.c.Users
+					componentType: qe.c.Users,
+					fireScreenview: !0
 				}), Xe(n, r) && o.a.Children.toArray(Ke()(3, He()(o.a.createElement(Ze.a, {
 					className: Qe.a.loadMoreItem,
 					isLoading: !0
@@ -11740,7 +11719,8 @@
 					identifiers: n,
 					listingKey: t,
 					searchOptions: s,
-					componentType: qe.c.Posts
+					componentType: qe.c.Posts,
+					fireScreenview: !0
 				}), function(e, t) {
 					return Boolean(t && t.token) && e.length > 0
 				}(n, a) && o.a.Children.toArray(Ke()(3, He()(o.a.createElement(nt.a, {
@@ -19541,4 +19521,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.c9419584e3ed39853465.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.cdd291588b89453e14df.js.map

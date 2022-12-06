@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.e7fdd8ab0c3b32e0d714.js
-// Retrieved at 12/6/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.8c86705cd371b2ce63de.js
+// Retrieved at 12/6/2022, 4:20:03 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1425,12 +1425,12 @@
 						"CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a": "585e0368d8f79f4efe3e",
 						"CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults": "dc81417594858a2cc471",
 						"CollectionCommentsPage~ModProgressModule~NewCommunityProgress": "62c2715ffc767196e7cc",
-						CollectionCommentsPage: "c9419584e3ed39853465",
+						CollectionCommentsPage: "cdd291588b89453e14df",
 						ProfilePrivate: "e0c6a50bcd8a64d54a60",
 						"CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit": "97bfcfab024d80d51484",
 						ProfileComments: "1d783cf216e5f0743e7e",
 						ProfileOverview: "b6e405ead910b00066ab",
-						SearchResults: "7514581f1b99ed6b2e44",
+						SearchResults: "987ddb6a1bced04dce7b",
 						GovernanceReleaseNotesModal: "3afe4195881b215444ca",
 						"CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar": "69c5378c04a79c880f32",
 						"CountryPage~Multireddit": "9aea523217dc7e331f40",
@@ -1557,7 +1557,7 @@
 						ModListing: "4ee645f251d6f799274f",
 						"vendors~PostCreation~Subreddit": "fd29d4253376c8d4c526",
 						Subreddit: "65c23fa4f8e9576df969",
-						CommentsPage: "3599ff2feb6716c15fb2",
+						CommentsPage: "d5e8e43b1be8668256c9",
 						"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "fbf6b3871488094312c2",
 						CryptoHarbergerTaxManageModal: "012b7599ba7aeda39444",
 						HarbergerTaxManageModal: "320c57533a5fde47ba8a",
@@ -1807,4 +1807,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.e7fdd8ab0c3b32e0d714.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.8c86705cd371b2ce63de.js.map
