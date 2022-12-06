@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.2096a82e51efcfe22f9f.js
-// Retrieved at 12/6/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.d6e10c28c614cc9b8132.js
+// Retrieved at 12/6/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "PostCreation~Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-c~93a1f1ba", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -29161,8 +29161,8 @@
 			t.a = Object(i.a)(e => o.a.createElement(a.e, null, o.a.createElement(a.i, null, o.a.createElement(c.a, null, o.a.createElement(a.q, null, e.headerText || s.fbt._("Confirm", null, {
 				hk: "2zlvKa"
 			})), o.a.createElement(d.a, {
-				onClick: () => {
-					e.onClose && e.onClose(), e.toggleModal && e.toggleModal()
+				onClick: t => {
+					e.onClose && e.onClose(t), e.toggleModal && e.toggleModal()
 				}
 			}, o.a.createElement(a.b, null)))), o.a.createElement(a.l, null, o.a.createElement(a.p, {
 				className: u.a.ModalText
@@ -29179,7 +29179,7 @@
 				className: u.a.buttonWidth,
 				onMouseDown: m,
 				onClick: t => {
-					e.onConfirm(), e.toggleModal && e.toggleModal(), e.trackClick && e.trackClick()
+					e.onConfirm(t), e.toggleModal && e.toggleModal(), e.trackClick && e.trackClick()
 				},
 				"data-redditstyle": !e.disableRedditStyle,
 				disabled: e.isDisabled
@@ -62550,54 +62550,85 @@
 		},
 		"./src/reddit/helpers/trackers/marketplace/claims.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "d", (function() {
-				return r
-			})), n.d(t, "b", (function() {
+			n.d(t, "j", (function() {
 				return o
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "d", (function() {
 				return i
-			})), n.d(t, "a", (function() {
-				return a
 			})), n.d(t, "e", (function() {
+				return a
+			})), n.d(t, "a", (function() {
 				return d
+			})), n.d(t, "k", (function() {
+				return c
+			})), n.d(t, "h", (function() {
+				return u
+			})), n.d(t, "b", (function() {
+				return m
+			})), n.d(t, "i", (function() {
+				return p
+			})), n.d(t, "c", (function() {
+				return b
+			})), n.d(t, "f", (function() {
+				return f
+			})), n.d(t, "g", (function() {
+				return h
 			}));
-			var s = n("./src/reddit/selectors/telemetry.ts");
-			const r = () => e => ({
-					...Object(s.o)(e),
+			var s = n("./src/reddit/selectors/avatarPushcard.ts"),
+				r = n("./src/reddit/selectors/telemetry.ts");
+			const o = () => e => ({
+					...Object(r.o)(e),
 					source: "marketplace",
 					action: "view",
 					noun: "claim_post_unit"
 				}),
-				o = () => e => ({
-					...Object(s.o)(e),
+				i = () => e => ({
+					...Object(r.o)(e),
 					source: "marketplace",
 					action: "click",
 					noun: "claim_post_unit"
 				}),
-				i = () => e => ({
-					...Object(s.o)(e),
+				a = () => e => ({
+					...Object(r.o)(e),
 					source: "marketplace",
 					action: "close",
 					noun: "claim_post_unit"
 				});
-			var a;
+			var d;
 			! function(e) {
 				e.Profile = "profile", e.Hovercard = "hovercard"
-			}(a || (a = {}));
-			const d = e => t => {
-				const n = Object(s.o)(t);
-				return {
-					...n,
-					source: "marketplace",
-					action: "view",
-					noun: "product_detail_page",
-					actionInfo: {
-						...n.actionInfo,
-						reason: e,
-						pageType: "product_detail_page"
+			}(d || (d = {}));
+			const c = e => t => {
+					const n = Object(r.o)(t);
+					return {
+						...n,
+						source: "marketplace",
+						action: "view",
+						noun: "product_detail_page",
+						actionInfo: {
+							...n.actionInfo,
+							reason: e,
+							pageType: "product_detail_page"
+						}
 					}
-				}
-			}
+				},
+				l = (e, t, n) => o => {
+					const i = Object(s.a)(o).id;
+					return {
+						...Object(r.o)(o),
+						source: e,
+						action: t,
+						noun: n,
+						goldPurchase: {
+							offerContext: i
+						}
+					}
+				},
+				u = l("marketplace_top_nav", "view", "achievement_icon"),
+				m = l("marketplace_top_nav", "click", "achievement_icon"),
+				p = l("user_drawer", "view", "pushcard"),
+				b = l("user_drawer", "click", "pushcard"),
+				f = l("user_drawer", "dismiss", "pushcard"),
+				h = l("user_drawer", "dismiss_confirm", "pushcard")
 		},
 		"./src/reddit/helpers/trackers/modHub.ts": function(e, t, n) {
 			"use strict";
@@ -70046,25 +70077,24 @@
 						id: t,
 						tags: n,
 						webAssetUrls: s
-					} = e, [r, o, i] = s, a = n.reduce((e, t) => {
+					} = e, [r, o] = s, i = n.reduce((e, t) => {
 						if (!t) return e;
 						const n = Object.values(b).find(e => t.startsWith(e));
 						return n ? (e[n] = t.slice(n.length + 1), e) : e
 					}, {});
 					return {
 						id: t,
-						maxViews: parseInt(a[b.MaxEventViews], 10),
+						maxViews: parseInt(i[b.MaxEventViews], 10),
 						banner: {
 							id: t,
 							iconUrl: r,
-							title: a[b.BannerTitle],
-							body: a[b.BannerBody]
+							title: i[b.BannerTitle],
+							body: i[b.BannerBody]
 						},
-						backgroundImageUrl: o,
-						foregroundImageUrl: i,
-						title: a[b.Title],
-						cta: a[b.Cta],
-						deeplink: a[b.Deeplink]
+						imageUrl: o,
+						title: i[b.Title],
+						cta: i[b.Cta],
+						deeplink: i[b.Deeplink]
 					}
 				},
 				_ = e => {
@@ -70091,7 +70121,7 @@
 						tags: r
 					} = e;
 					if (!(null == r ? void 0 : r.includes(p))) {
-						if ((null == r ? void 0 : r.includes(m)) && 3 === (null == s ? void 0 : s.length) && (t.pushcard = h(e)), null == r ? void 0 : r.includes(l)) {
+						if ((null == r ? void 0 : r.includes(m)) && s && s.length >= 2 && (t.pushcard = h(e)), null == r ? void 0 : r.includes(l)) {
 							const {
 								text: n,
 								id: o
@@ -74359,6 +74389,46 @@
 					return !i.experimentRequired || Object(o.a)(i.experimentRequired)(e) ? a : null
 				}
 		},
+		"./src/reddit/selectors/avatarPushcard.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return d
+			})), n.d(t, "c", (function() {
+				return c
+			})), n.d(t, "b", (function() {
+				return l
+			}));
+			var s = n("./node_modules/reselect/es/index.js"),
+				r = n("./src/lib/initializeClient/installReducer.ts"),
+				o = n("./src/reddit/helpers/localStorage/index.ts"),
+				i = n("./src/reddit/reducers/features/avatar/index.ts"),
+				a = n("./src/reddit/selectors/experiments/econ/index.ts");
+			Object(r.a)({
+				features: {
+					avatar: i.a
+				}
+			});
+			const d = e => {
+					var t, n, s;
+					return null === (s = null === (n = null === (t = e.features) || void 0 === t ? void 0 : t.avatar) || void 0 === n ? void 0 : n.marketing) || void 0 === s ? void 0 : s.pushcard
+				},
+				c = Object(s.a)(d, a.b, (e, t) => {
+					if (!e || !t) return null;
+					const {
+						id: n,
+						eventViews: s
+					} = Object(o.y)();
+					return n === e.id && s > e.maxViews ? null : e
+				}),
+				l = Object(s.a)(c, e => {
+					if (!e) return null;
+					const {
+						id: t,
+						lastInteractionTimestamp: n
+					} = Object(o.y)();
+					return t === e.id && n > 0 ? null : e.banner
+				})
+		},
 		"./src/reddit/selectors/bannedUser.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "h", (function() {
@@ -78430,4 +78500,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.2096a82e51efcfe22f9f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.d6e10c28c614cc9b8132.js.map

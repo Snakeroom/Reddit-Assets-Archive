@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.1c3a08cf44fe0218404b.js
-// Retrieved at 12/6/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.3599ff2feb6716c15fb2.js
+// Retrieved at 12/6/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "PostCreation~Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-c~93a1f1ba", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -16018,8 +16018,8 @@
 			t.a = Object(i.a)(e => o.a.createElement(a.e, null, o.a.createElement(a.i, null, o.a.createElement(d.a, null, o.a.createElement(a.q, null, e.headerText || s.fbt._("Confirm", null, {
 				hk: "2zlvKa"
 			})), o.a.createElement(c.a, {
-				onClick: () => {
-					e.onClose && e.onClose(), e.toggleModal && e.toggleModal()
+				onClick: t => {
+					e.onClose && e.onClose(t), e.toggleModal && e.toggleModal()
 				}
 			}, o.a.createElement(a.b, null)))), o.a.createElement(a.l, null, o.a.createElement(a.p, {
 				className: u.a.ModalText
@@ -16036,7 +16036,7 @@
 				className: u.a.buttonWidth,
 				onMouseDown: m,
 				onClick: t => {
-					e.onConfirm(), e.toggleModal && e.toggleModal(), e.trackClick && e.trackClick()
+					e.onConfirm(t), e.toggleModal && e.toggleModal(), e.trackClick && e.trackClick()
 				},
 				"data-redditstyle": !e.disableRedditStyle,
 				disabled: e.isDisabled
@@ -46081,25 +46081,24 @@
 						id: t,
 						tags: n,
 						webAssetUrls: s
-					} = e, [r, o, i] = s, a = n.reduce((e, t) => {
+					} = e, [r, o] = s, i = n.reduce((e, t) => {
 						if (!t) return e;
 						const n = Object.values(b).find(e => t.startsWith(e));
 						return n ? (e[n] = t.slice(n.length + 1), e) : e
 					}, {});
 					return {
 						id: t,
-						maxViews: parseInt(a[b.MaxEventViews], 10),
+						maxViews: parseInt(i[b.MaxEventViews], 10),
 						banner: {
 							id: t,
 							iconUrl: r,
-							title: a[b.BannerTitle],
-							body: a[b.BannerBody]
+							title: i[b.BannerTitle],
+							body: i[b.BannerBody]
 						},
-						backgroundImageUrl: o,
-						foregroundImageUrl: i,
-						title: a[b.Title],
-						cta: a[b.Cta],
-						deeplink: a[b.Deeplink]
+						imageUrl: o,
+						title: i[b.Title],
+						cta: i[b.Cta],
+						deeplink: i[b.Deeplink]
 					}
 				},
 				C = e => {
@@ -46126,7 +46125,7 @@
 						tags: r
 					} = e;
 					if (!(null == r ? void 0 : r.includes(p))) {
-						if ((null == r ? void 0 : r.includes(m)) && 3 === (null == s ? void 0 : s.length) && (t.pushcard = h(e)), null == r ? void 0 : r.includes(l)) {
+						if ((null == r ? void 0 : r.includes(m)) && s && s.length >= 2 && (t.pushcard = h(e)), null == r ? void 0 : r.includes(l)) {
 							const {
 								text: n,
 								id: o
@@ -50862,4 +50861,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.1c3a08cf44fe0218404b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.3599ff2feb6716c15fb2.js.map

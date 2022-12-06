@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.060f3f47774944214a19.js
-// Retrieved at 12/6/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.eb77cbdecfa7907b4088.js
+// Retrieved at 12/6/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit", "ContributorRequestButton"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, n) {},
@@ -5940,8 +5940,8 @@
 			t.a = Object(i.a)(e => s.a.createElement(a.e, null, s.a.createElement(a.i, null, s.a.createElement(l.a, null, s.a.createElement(a.q, null, e.headerText || o.fbt._("Confirm", null, {
 				hk: "2zlvKa"
 			})), s.a.createElement(c.a, {
-				onClick: () => {
-					e.onClose && e.onClose(), e.toggleModal && e.toggleModal()
+				onClick: t => {
+					e.onClose && e.onClose(t), e.toggleModal && e.toggleModal()
 				}
 			}, s.a.createElement(a.b, null)))), s.a.createElement(a.l, null, s.a.createElement(a.p, {
 				className: u.a.ModalText
@@ -5958,7 +5958,7 @@
 				className: u.a.buttonWidth,
 				onMouseDown: p,
 				onClick: t => {
-					e.onConfirm(), e.toggleModal && e.toggleModal(), e.trackClick && e.trackClick()
+					e.onConfirm(t), e.toggleModal && e.toggleModal(), e.trackClick && e.trackClick()
 				},
 				"data-redditstyle": !e.disableRedditStyle,
 				disabled: e.isDisabled
@@ -35195,25 +35195,24 @@
 						id: t,
 						tags: n,
 						webAssetUrls: o
-					} = e, [r, s, i] = o, a = n.reduce((e, t) => {
+					} = e, [r, s] = o, i = n.reduce((e, t) => {
 						if (!t) return e;
 						const n = Object.values(h).find(e => t.startsWith(e));
 						return n ? (e[n] = t.slice(n.length + 1), e) : e
 					}, {});
 					return {
 						id: t,
-						maxViews: parseInt(a[h.MaxEventViews], 10),
+						maxViews: parseInt(i[h.MaxEventViews], 10),
 						banner: {
 							id: t,
 							iconUrl: r,
-							title: a[h.BannerTitle],
-							body: a[h.BannerBody]
+							title: i[h.BannerTitle],
+							body: i[h.BannerBody]
 						},
-						backgroundImageUrl: s,
-						foregroundImageUrl: i,
-						title: a[h.Title],
-						cta: a[h.Cta],
-						deeplink: a[h.Deeplink]
+						imageUrl: s,
+						title: i[h.Title],
+						cta: i[h.Cta],
+						deeplink: i[h.Deeplink]
 					}
 				},
 				g = e => {
@@ -35240,7 +35239,7 @@
 						tags: r
 					} = e;
 					if (!(null == r ? void 0 : r.includes(m))) {
-						if ((null == r ? void 0 : r.includes(p)) && 3 === (null == o ? void 0 : o.length) && (t.pushcard = f(e)), null == r ? void 0 : r.includes(d)) {
+						if ((null == r ? void 0 : r.includes(p)) && o && o.length >= 2 && (t.pushcard = f(e)), null == r ? void 0 : r.includes(d)) {
 							const {
 								text: n,
 								id: s
@@ -38428,4 +38427,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.060f3f47774944214a19.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.eb77cbdecfa7907b4088.js.map

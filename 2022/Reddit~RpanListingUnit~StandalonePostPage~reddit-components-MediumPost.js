@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost.e9bdde6e7747eeba3b61.js
-// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost.8657c56803ce08e299dc.js
+// Retrieved at 12/6/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./src/lib/memoizeByReference/index.ts": function(e, t, n) {
@@ -171,8 +171,8 @@
 			t.a = Object(c.a)(e => s.a.createElement(a.e, null, s.a.createElement(a.i, null, s.a.createElement(d.a, null, s.a.createElement(a.q, null, e.headerText || r.fbt._("Confirm", null, {
 				hk: "2zlvKa"
 			})), s.a.createElement(i.a, {
-				onClick: () => {
-					e.onClose && e.onClose(), e.toggleModal && e.toggleModal()
+				onClick: t => {
+					e.onClose && e.onClose(t), e.toggleModal && e.toggleModal()
 				}
 			}, s.a.createElement(a.b, null)))), s.a.createElement(a.l, null, s.a.createElement(a.p, {
 				className: u.a.ModalText
@@ -189,7 +189,7 @@
 				className: u.a.buttonWidth,
 				onMouseDown: m,
 				onClick: t => {
-					e.onConfirm(), e.toggleModal && e.toggleModal(), e.trackClick && e.trackClick()
+					e.onConfirm(t), e.toggleModal && e.toggleModal(), e.trackClick && e.trackClick()
 				},
 				"data-redditstyle": !e.disableRedditStyle,
 				disabled: e.isDisabled
@@ -2648,4 +2648,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost.e9bdde6e7747eeba3b61.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost.8657c56803ce08e299dc.js.map

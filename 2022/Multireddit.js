@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.7a790542cead26fe4e22.js
-// Retrieved at 12/6/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.c950c01d50ae24191772.js
+// Retrieved at 12/6/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, n) {
@@ -635,8 +635,8 @@
 			t.a = Object(i.a)(e => o.a.createElement(c.e, null, o.a.createElement(c.i, null, o.a.createElement(d.a, null, o.a.createElement(c.q, null, e.headerText || r.fbt._("Confirm", null, {
 				hk: "2zlvKa"
 			})), o.a.createElement(a.a, {
-				onClick: () => {
-					e.onClose && e.onClose(), e.toggleModal && e.toggleModal()
+				onClick: t => {
+					e.onClose && e.onClose(t), e.toggleModal && e.toggleModal()
 				}
 			}, o.a.createElement(c.b, null)))), o.a.createElement(c.l, null, o.a.createElement(c.p, {
 				className: u.a.ModalText
@@ -653,7 +653,7 @@
 				className: u.a.buttonWidth,
 				onMouseDown: m,
 				onClick: t => {
-					e.onConfirm(), e.toggleModal && e.toggleModal(), e.trackClick && e.trackClick()
+					e.onConfirm(t), e.toggleModal && e.toggleModal(), e.trackClick && e.trackClick()
 				},
 				"data-redditstyle": !e.disableRedditStyle,
 				disabled: e.isDisabled
@@ -2007,4 +2007,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.7a790542cead26fe4e22.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.c950c01d50ae24191772.js.map

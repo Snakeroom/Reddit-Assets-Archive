@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.fbf1f9425e2bfd2f4288.js
-// Retrieved at 12/6/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.24565017ba6a93a2f479.js
+// Retrieved at 12/6/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MarketplaceClaimModal"], {
 		"./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx": function(e, t, r) {
@@ -32,8 +32,8 @@
 						s = t ? new Date(t.expires).getTime() : 1,
 						O = Object(o.e)(u.fb),
 						E = Object(i.a)(),
-						b = p ? c.a.Rinkeby : c.a.Ethereum,
-						_ = Object(a.useMemo)(() => ({
+						_ = p ? c.a.Rinkeby : c.a.Ethereum,
+						b = Object(a.useMemo)(() => ({
 							headers: {
 								Authorization: `Bearer ${r}`
 							},
@@ -43,7 +43,7 @@
 							...m,
 							STRIPE_API_KEY: n.a.stripe.apiKey(e),
 							ACCESS_TOKEN: r,
-							BLOCKCHAIN_PROVIDER: b
+							BLOCKCHAIN_PROVIDER: _
 						},
 						v = Object(a.useCallback)(e => {
 							E(t => {
@@ -61,11 +61,11 @@
 							})
 						}, [E]);
 					return Object(a.useMemo)(() => ({
-						authHeaders: _,
+						authHeaders: b,
 						config: f,
 						isNightMode: O,
 						sendEvent: v
-					}), [_, f, O, v])
+					}), [b, f, O, v])
 				}
 		},
 		"./src/reddit/components/Econ/Marketplace/ClaimModal/index.m.less": function(e, t, r) {
@@ -92,8 +92,8 @@
 				m = r("./src/reddit/helpers/avatarRouting.ts"),
 				O = r("./src/reddit/models/Toast/index.ts"),
 				E = r("./src/reddit/selectors/activeModal.ts"),
-				b = r("./src/reddit/selectors/experiments/econ/index.ts"),
-				_ = r("./src/reddit/selectors/user.ts"),
+				_ = r("./src/reddit/selectors/experiments/econ/index.ts"),
+				b = r("./src/reddit/selectors/user.ts"),
 				f = r("./src/reddit/components/Econ/Marketplace/ClaimModal/index.m.less"),
 				v = r.n(f);
 
@@ -110,13 +110,13 @@
 					let {
 						onClose: t
 					} = e;
-					const r = Object(i.e)(_.Eb),
+					const r = Object(i.e)(b.Eb),
 						a = Object(i.e)(e => {
 							var t;
 							return null === (t = Object(E.a)(e)) || void 0 === t ? void 0 : t.claimId
 						}),
 						o = Object(i.d)(),
-						f = Object(i.e)(b.v);
+						f = Object(i.e)(_.v);
 					if (!r || !a) return null;
 					return c.a.createElement("div", {
 						className: v.a.container
@@ -133,7 +133,7 @@
 						onEvent: e => {
 							var t;
 							if ("CLAIM_ERROR" === e.type) {
-								if ("NO_NFT_LEFT" === (null === (t = e.data) || void 0 === t ? void 0 : t.status)) return void o(Object(d.c)({
+								if ("NO_NFT_LEFT" === (null === (t = e.data) || void 0 === t ? void 0 : t.status)) return void o(Object(d.d)({
 									claimId: a
 								}));
 								o(Object(u.f)({
@@ -144,7 +144,7 @@
 									duration: 3e3
 								}))
 							}
-							"CLAIM_SUCCESS" === e.type && o(Object(d.b)({
+							"CLAIM_SUCCESS" === e.type && o(Object(d.c)({
 								claimId: a
 							}))
 						}
@@ -215,4 +215,4 @@
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.fbf1f9425e2bfd2f4288.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.24565017ba6a93a2f479.js.map

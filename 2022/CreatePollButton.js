@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CreatePollButton.8932bd8dc0666ad4f8c8.js
-// Retrieved at 11/17/2022, 12:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CreatePollButton.d6a1ec2c40eb0e8623a4.js
+// Retrieved at 12/6/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CreatePollButton"], {
 		"./src/reddit/components/ConfirmUserActionModal/index.m.less": function(e, a, t) {
@@ -24,8 +24,8 @@
 			a.a = Object(r.a)(e => n.a.createElement(i.e, null, n.a.createElement(i.i, null, n.a.createElement(c.a, null, n.a.createElement(i.q, null, e.headerText || o.fbt._("Confirm", null, {
 				hk: "2zlvKa"
 			})), n.a.createElement(l.a, {
-				onClick: () => {
-					e.onClose && e.onClose(), e.toggleModal && e.toggleModal()
+				onClick: a => {
+					e.onClose && e.onClose(a), e.toggleModal && e.toggleModal()
 				}
 			}, n.a.createElement(i.b, null)))), n.a.createElement(i.l, null, n.a.createElement(i.p, {
 				className: m.a.ModalText
@@ -42,7 +42,7 @@
 				className: m.a.buttonWidth,
 				onMouseDown: u,
 				onClick: a => {
-					e.onConfirm(), e.toggleModal && e.toggleModal(), e.trackClick && e.trackClick()
+					e.onConfirm(a), e.toggleModal && e.toggleModal(), e.trackClick && e.trackClick()
 				},
 				"data-redditstyle": !e.disableRedditStyle,
 				disabled: e.isDisabled
@@ -113,4 +113,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CreatePollButton.8932bd8dc0666ad4f8c8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CreatePollButton.d6a1ec2c40eb0e8623a4.js.map

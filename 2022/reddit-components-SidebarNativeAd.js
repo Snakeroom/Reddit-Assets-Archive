@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.089ff2d9ddbd87df0925.js
-// Retrieved at 12/6/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.980db97ce77be7c6d237.js
+// Retrieved at 12/6/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1110,8 +1110,8 @@
 			t.a = Object(i.a)(e => o.a.createElement(a.e, null, o.a.createElement(a.i, null, o.a.createElement(d.a, null, o.a.createElement(a.q, null, e.headerText || r.fbt._("Confirm", null, {
 				hk: "2zlvKa"
 			})), o.a.createElement(c.a, {
-				onClick: () => {
-					e.onClose && e.onClose(), e.toggleModal && e.toggleModal()
+				onClick: t => {
+					e.onClose && e.onClose(t), e.toggleModal && e.toggleModal()
 				}
 			}, o.a.createElement(a.b, null)))), o.a.createElement(a.l, null, o.a.createElement(a.p, {
 				className: u.a.ModalText
@@ -1128,7 +1128,7 @@
 				className: u.a.buttonWidth,
 				onMouseDown: m,
 				onClick: t => {
-					e.onConfirm(), e.toggleModal && e.toggleModal(), e.trackClick && e.trackClick()
+					e.onConfirm(t), e.toggleModal && e.toggleModal(), e.trackClick && e.trackClick()
 				},
 				"data-redditstyle": !e.disableRedditStyle,
 				disabled: e.isDisabled
@@ -4716,25 +4716,24 @@
 						id: t,
 						tags: n,
 						webAssetUrls: r
-					} = e, [s, o, i] = r, a = n.reduce((e, t) => {
+					} = e, [s, o] = r, i = n.reduce((e, t) => {
 						if (!t) return e;
 						const n = Object.values(b).find(e => t.startsWith(e));
 						return n ? (e[n] = t.slice(n.length + 1), e) : e
 					}, {});
 					return {
 						id: t,
-						maxViews: parseInt(a[b.MaxEventViews], 10),
+						maxViews: parseInt(i[b.MaxEventViews], 10),
 						banner: {
 							id: t,
 							iconUrl: s,
-							title: a[b.BannerTitle],
-							body: a[b.BannerBody]
+							title: i[b.BannerTitle],
+							body: i[b.BannerBody]
 						},
-						backgroundImageUrl: o,
-						foregroundImageUrl: i,
-						title: a[b.Title],
-						cta: a[b.Cta],
-						deeplink: a[b.Deeplink]
+						imageUrl: o,
+						title: i[b.Title],
+						cta: i[b.Cta],
+						deeplink: i[b.Deeplink]
 					}
 				},
 				v = e => {
@@ -4761,7 +4760,7 @@
 						tags: s
 					} = e;
 					if (!(null == s ? void 0 : s.includes(p))) {
-						if ((null == s ? void 0 : s.includes(m)) && 3 === (null == r ? void 0 : r.length) && (t.pushcard = h(e)), null == s ? void 0 : s.includes(l)) {
+						if ((null == s ? void 0 : s.includes(m)) && r && r.length >= 2 && (t.pushcard = h(e)), null == s ? void 0 : s.includes(l)) {
 							const {
 								text: n,
 								id: o
@@ -5233,4 +5232,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.089ff2d9ddbd87df0925.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.980db97ce77be7c6d237.js.map

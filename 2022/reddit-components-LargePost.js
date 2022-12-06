@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.bdad0b12e64e8afed7bf.js
-// Retrieved at 12/6/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.8becb16f55fc96929388.js
+// Retrieved at 12/6/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2361,8 +2361,8 @@
 			t.a = Object(a.a)(e => r.a.createElement(i.e, null, r.a.createElement(i.i, null, r.a.createElement(d.a, null, r.a.createElement(i.q, null, e.headerText || n.fbt._("Confirm", null, {
 				hk: "2zlvKa"
 			})), r.a.createElement(c.a, {
-				onClick: () => {
-					e.onClose && e.onClose(), e.toggleModal && e.toggleModal()
+				onClick: t => {
+					e.onClose && e.onClose(t), e.toggleModal && e.toggleModal()
 				}
 			}, r.a.createElement(i.b, null)))), r.a.createElement(i.l, null, r.a.createElement(i.p, {
 				className: u.a.ModalText
@@ -2379,7 +2379,7 @@
 				className: u.a.buttonWidth,
 				onMouseDown: m,
 				onClick: t => {
-					e.onConfirm(), e.toggleModal && e.toggleModal(), e.trackClick && e.trackClick()
+					e.onConfirm(t), e.toggleModal && e.toggleModal(), e.trackClick && e.trackClick()
 				},
 				"data-redditstyle": !e.disableRedditStyle,
 				disabled: e.isDisabled
@@ -10736,25 +10736,24 @@
 						id: t,
 						tags: s,
 						webAssetUrls: n
-					} = e, [o, r, a] = n, i = s.reduce((e, t) => {
+					} = e, [o, r] = n, a = s.reduce((e, t) => {
 						if (!t) return e;
 						const s = Object.values(b).find(e => t.startsWith(e));
 						return s ? (e[s] = t.slice(s.length + 1), e) : e
 					}, {});
 					return {
 						id: t,
-						maxViews: parseInt(i[b.MaxEventViews], 10),
+						maxViews: parseInt(a[b.MaxEventViews], 10),
 						banner: {
 							id: t,
 							iconUrl: o,
-							title: i[b.BannerTitle],
-							body: i[b.BannerBody]
+							title: a[b.BannerTitle],
+							body: a[b.BannerBody]
 						},
-						backgroundImageUrl: r,
-						foregroundImageUrl: a,
-						title: i[b.Title],
-						cta: i[b.Cta],
-						deeplink: i[b.Deeplink]
+						imageUrl: r,
+						title: a[b.Title],
+						cta: a[b.Cta],
+						deeplink: a[b.Deeplink]
 					}
 				},
 				v = e => {
@@ -10781,7 +10780,7 @@
 						tags: o
 					} = e;
 					if (!(null == o ? void 0 : o.includes(p))) {
-						if ((null == o ? void 0 : o.includes(m)) && 3 === (null == n ? void 0 : n.length) && (t.pushcard = h(e)), null == o ? void 0 : o.includes(l)) {
+						if ((null == o ? void 0 : o.includes(m)) && n && n.length >= 2 && (t.pushcard = h(e)), null == o ? void 0 : o.includes(l)) {
 							const {
 								text: s,
 								id: r
@@ -11794,4 +11793,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.bdad0b12e64e8afed7bf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.8becb16f55fc96929388.js.map

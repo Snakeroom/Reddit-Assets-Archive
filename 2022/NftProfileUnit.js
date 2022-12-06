@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NftProfileUnit.be7fadfec9c2e84554bf.js
-// Retrieved at 12/6/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NftProfileUnit.c3a7ec23ee422a42e9ca.js
+// Retrieved at 12/6/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NftProfileUnit"], {
 		"./node_modules/classnames/index.js": function(e, t, r) {
@@ -145,7 +145,7 @@
 				}), s.a.createElement(i.g, {
 					className: y.a.detailsButton,
 					onClick: () => {
-						d(Object(f.e)(n)), c(Object(o.h)(u.a.ECON_NFT_PRODUCT_DETAILS, {
+						d(Object(f.k)(n)), c(Object(o.h)(u.a.ECON_NFT_PRODUCT_DETAILS, {
 							itemId: m
 						}))
 					}
@@ -372,4 +372,4 @@
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProfileUnit.be7fadfec9c2e84554bf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProfileUnit.c3a7ec23ee422a42e9ca.js.map

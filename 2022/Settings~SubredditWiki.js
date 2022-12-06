@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.4345dfc787bc7655d304.js
-// Retrieved at 12/6/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.e98e7b965eb3096ea893.js
+// Retrieved at 12/6/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, r) {
@@ -112,7 +112,7 @@
 			r.d(t, "c", (function() {
 				return N
 			})), r.d(t, "d", (function() {
-				return E
+				return k
 			})), r.d(t, "e", (function() {
 				return P
 			})), r.d(t, "g", (function() {
@@ -202,7 +202,7 @@
 						} = a;
 						var i, d;
 						const c = await u(o(), t);
-						if (c.ok && c.body && (null === (d = null === (i = c.body) || void 0 === i ? void 0 : i.data.updateSubredditMuteSettings) || void 0 === d ? void 0 : d.ok)) n && n(), e(g(r, k({
+						if (c.ok && c.body && (null === (d = null === (i = c.body) || void 0 === i ? void 0 : i.data.updateSubredditMuteSettings) || void 0 === d ? void 0 : d.ok)) n && n(), e(g(r, E({
 							subredditId: t,
 							subredditName: r
 						})));
@@ -211,7 +211,7 @@
 						}
 					}
 				},
-				k = e => {
+				E = e => {
 					let {
 						subredditId: t,
 						subredditName: r,
@@ -232,7 +232,7 @@
 						}
 					}
 				},
-				E = e => {
+				k = e => {
 					let {
 						subredditId: t,
 						subredditName: r,
@@ -277,7 +277,7 @@
 									isMuted: !1
 								}
 							}
-						})), e(h(r, E({
+						})), e(h(r, k({
 							subredditId: t,
 							subredditName: r
 						})));
@@ -540,8 +540,8 @@
 				j = r("./src/reddit/selectors/subreddit.ts"),
 				y = r("./src/reddit/selectors/user.ts"),
 				N = r("./src/reddit/actions/subredditModeration/constants.ts"),
-				k = r("./src/lib/initializeClient/installReducer.ts"),
-				E = r("./node_modules/redux/es/redux.js");
+				E = r("./src/lib/initializeClient/installReducer.ts"),
+				k = r("./node_modules/redux/es/redux.js");
 			var P = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
@@ -585,7 +585,7 @@
 							return e
 					}
 				},
-				w = Object(E.c)({
+				w = Object(k.c)({
 					error: P,
 					pending: U
 				});
@@ -690,7 +690,7 @@
 							return e
 					}
 				},
-				D = Object(E.c)({
+				D = Object(k.c)({
 					error: G,
 					pending: z
 				});
@@ -709,7 +709,7 @@
 							return e
 					}
 				},
-				Q = Object(E.c)({
+				Q = Object(k.c)({
 					api: D,
 					result: K
 				});
@@ -753,7 +753,7 @@
 							return e
 					}
 				},
-				X = Object(E.c)({
+				X = Object(k.c)({
 					api: w,
 					fetchedTokens: A,
 					inContext: B,
@@ -762,7 +762,7 @@
 					search: Q,
 					userOrder: q
 				});
-			Object(k.a)({
+			Object(E.a)({
 				features: {
 					banned: X
 				}
@@ -1133,8 +1133,8 @@
 				j = r("./src/reddit/components/Hovercards/AuthorHovercard/ModIdCard/async.tsx"),
 				y = r("./node_modules/fbt/lib/FbtPublic.js"),
 				N = r("./src/config.ts"),
-				k = r("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				E = r("./src/lib/lessComponent.tsx"),
+				E = r("./node_modules/react-router-dom/esm/react-router-dom.js"),
+				k = r("./src/lib/lessComponent.tsx"),
 				P = r("./src/lib/prettyPrintNumber/index.ts"),
 				S = r("./src/reddit/components/ChatButton/index.tsx"),
 				U = r("./src/reddit/components/JSAPIContainers/index.tsx"),
@@ -1281,24 +1281,24 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const me = E.a.wrapped(A.a, "UserIcon", le.a),
-				be = E.a.wrapped(F.a, "SubscribeButton", le.a),
-				fe = E.a.wrapped(S.b, "ChatButton", le.a),
-				pe = E.a.wrapped(R.a, "PremiumIcon", le.a),
-				ve = E.a.wrapped(k.a, "UserNameLink", le.a),
-				xe = E.a.div("UserNameMetaData", le.a),
-				ge = E.a.div("MetaDataItem", le.a),
-				he = E.a.div("Bullet", le.a),
-				Ie = E.a.div("UserNameContainer", le.a),
-				_e = E.a.div("KarmaGrid", le.a),
-				Ce = E.a.div("GenericKarma", le.a),
-				Oe = E.a.a("InfoLink", le.a),
-				je = E.a.div("KarmaCount", le.a),
-				ye = E.a.div("GenericKarmaLabel", le.a),
-				Ne = E.a.div("BannerImage", le.a),
-				ke = E.a.div("UserContainer", le.a),
-				Ee = E.a.div("BottomSpacer", le.a),
-				Pe = E.a.div("Container", le.a),
+			const me = k.a.wrapped(A.a, "UserIcon", le.a),
+				be = k.a.wrapped(F.a, "SubscribeButton", le.a),
+				fe = k.a.wrapped(S.b, "ChatButton", le.a),
+				pe = k.a.wrapped(R.a, "PremiumIcon", le.a),
+				ve = k.a.wrapped(E.a, "UserNameLink", le.a),
+				xe = k.a.div("UserNameMetaData", le.a),
+				ge = k.a.div("MetaDataItem", le.a),
+				he = k.a.div("Bullet", le.a),
+				Ie = k.a.div("UserNameContainer", le.a),
+				_e = k.a.div("KarmaGrid", le.a),
+				Ce = k.a.div("GenericKarma", le.a),
+				Oe = k.a.a("InfoLink", le.a),
+				je = k.a.div("KarmaCount", le.a),
+				ye = k.a.div("GenericKarmaLabel", le.a),
+				Ne = k.a.div("BannerImage", le.a),
+				Ee = k.a.div("UserContainer", le.a),
+				ke = k.a.div("BottomSpacer", le.a),
+				Pe = k.a.div("Container", le.a),
 				Se = e => s.a.createElement("div", null, s.a.createElement("div", null, s.a.createElement(ve, {
 					to: `/user/${e.userName}/`
 				}, e.title || e.userName), e.user.isEmployee && s.a.createElement(H.a, {
@@ -1306,7 +1306,7 @@
 					title: y.fbt._("Reddit admin", null, {
 						hk: "15wBTE"
 					})
-				}), e.user.isGold && s.a.createElement(k.a, {
+				}), e.user.isGold && s.a.createElement(E.a, {
 					to: "/premium"
 				}, s.a.createElement(pe, null))), s.a.createElement(xe, null, s.a.createElement(ge, null, `u/${e.userName}`, s.a.createElement(he, null, "•")), s.a.createElement(ge, null, (e.user.createdUtc || e.user.created) && s.a.createElement(z.d, {
 					seconds: e.user.createdUtc || e.user.created
@@ -1382,8 +1382,8 @@
 					if (!h) return s.a.createElement(Pe, {
 						style: p
 					});
-					const k = !!o && Object(G.e)(o) === g,
-						E = !!(null == o ? void 0 : o.snoovatarFullBodyAsset),
+					const E = !!o && Object(G.e)(o) === g,
+						k = !!(null == o ? void 0 : o.snoovatarFullBodyAsset),
 						P = h.accountIcon || `${N.a.assetPath}/img/snoo_user_placeholder.png`,
 						S = null == u ? void 0 : u.flair,
 						w = null == u ? void 0 : u.access,
@@ -1403,15 +1403,15 @@
 						style: {
 							backgroundImage: `url('${R}')`
 						}
-					}), s.a.createElement(ke, null, T ? s.a.createElement(K.a, {
+					}), s.a.createElement(Ee, null, T ? s.a.createElement(K.a, {
 						isHovercard: !0,
 						bannerBackgroundImage: R,
 						compact: !0,
-						currentUserHasSnoovatar: E,
+						currentUserHasSnoovatar: k,
 						isEmployee: h.isEmployee,
 						isGold: h.isGold,
 						isNSFW: h.isNSFW,
-						isOwnProfile: k,
+						isOwnProfile: E,
 						onClickSnoovatar: () => l && l(),
 						prefersReducedAnimations: !!m,
 						snoovatarUrl: h.snoovatarFullBodyAsset,
@@ -1433,7 +1433,7 @@
 						recentAwardings: B,
 						topAwardIcon: x,
 						username: g
-					}), c && !k && !_ && O && !j && s.a.createElement(fe, {
+					}), c && !E && !_ && O && !j && s.a.createElement(fe, {
 						contextId: a,
 						priority: M.c.Secondary,
 						userId: h.id,
@@ -1441,7 +1441,7 @@
 							hk: "2mfqRE"
 						}),
 						isFullWidth: !0
-					}), h.hasUserProfile && !_ && !j && !k && h.enableFollowers && s.a.createElement(be, {
+					}), h.hasUserProfile && !_ && !j && !E && h.enableFollowers && s.a.createElement(be, {
 						identifier: {
 							name: e.user.username,
 							type: "profile"
@@ -1449,7 +1449,7 @@
 						getEventFactory: e => Object(L.h)(e ? "unfollow" : "follow", a),
 						isFullWidth: !0,
 						small: !0
-					})), w && a && !k && v && s.a.createElement(ae, {
+					})), w && a && !E && v && s.a.createElement(ae, {
 						contextId: a,
 						subredditId: v,
 						sendEvent: f,
@@ -1463,7 +1463,7 @@
 						contextId: a,
 						subredditId: v,
 						user: h
-					}), !(w || c) && s.a.createElement(Ee, null))
+					}), !(w || c) && s.a.createElement(ke, null))
 				},
 				Fe = Object(w.a)(we),
 				Ae = e => {
@@ -2230,14 +2230,14 @@
 					onClickSnoovatar: j,
 					onDeleteBanner: y,
 					prefersReducedAnimations: N,
-					snoovatarUrl: k,
-					title: E,
+					snoovatarUrl: E,
+					title: k,
 					userCreated: P,
 					username: S,
 					url: U,
 					isHovercard: w
 				} = e;
-				const F = Object(a.e)(e => !O && !!k && Object(c.d)(e));
+				const F = Object(a.e)(e => !O && !!E && Object(c.d)(e));
 				return s.a.createElement(s.a.Fragment, null, s.a.createElement(m.a, {
 					bannerBackgroundImage: t,
 					editMode: !!f,
@@ -2253,14 +2253,14 @@
 					className: x.a.settingsIcon
 				})), s.a.createElement(g.a, {
 					isGold: _,
-					snoovatarUrl: k,
+					snoovatarUrl: E,
 					prefersReducedAnimations: N,
 					origin: w ? i.a.Hovercard : i.a.Profile
 				}), s.a.createElement(h.a, {
 					isEmployee: I,
 					isGold: _,
 					isNSFW: C,
-					title: E,
+					title: k,
 					username: S
 				}), s.a.createElement(b.a, {
 					className: p.a.snoovatarUserName,
@@ -2268,7 +2268,7 @@
 					username: S,
 					userCreated: P,
 					url: U
-				}), (O || !n && !!k) && s.a.createElement(l.a, {
+				}), (O || !n && !!E) && s.a.createElement(l.a, {
 					compact: r,
 					currentUserHasSnoovatar: n,
 					isOwnProfile: O,
@@ -2512,57 +2512,6 @@
 			}));
 			const n = e => !!e && e.endsWith("-ModTeam")
 		},
-		"./src/reddit/helpers/trackers/marketplace/claims.ts": function(e, t, r) {
-			"use strict";
-			r.d(t, "d", (function() {
-				return s
-			})), r.d(t, "b", (function() {
-				return a
-			})), r.d(t, "c", (function() {
-				return o
-			})), r.d(t, "a", (function() {
-				return i
-			})), r.d(t, "e", (function() {
-				return d
-			}));
-			var n = r("./src/reddit/selectors/telemetry.ts");
-			const s = () => e => ({
-					...Object(n.o)(e),
-					source: "marketplace",
-					action: "view",
-					noun: "claim_post_unit"
-				}),
-				a = () => e => ({
-					...Object(n.o)(e),
-					source: "marketplace",
-					action: "click",
-					noun: "claim_post_unit"
-				}),
-				o = () => e => ({
-					...Object(n.o)(e),
-					source: "marketplace",
-					action: "close",
-					noun: "claim_post_unit"
-				});
-			var i;
-			! function(e) {
-				e.Profile = "profile", e.Hovercard = "hovercard"
-			}(i || (i = {}));
-			const d = e => t => {
-				const r = Object(n.o)(t);
-				return {
-					...r,
-					source: "marketplace",
-					action: "view",
-					noun: "product_detail_page",
-					actionInfo: {
-						...r.actionInfo,
-						reason: e,
-						pageType: "product_detail_page"
-					}
-				}
-			}
-		},
 		"./src/reddit/helpers/trackers/subredditMuting.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
@@ -2804,4 +2753,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.4345dfc787bc7655d304.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.e98e7b965eb3096ea893.js.map
