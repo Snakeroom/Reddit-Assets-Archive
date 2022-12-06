@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PushNotifications.99501eafe4e0a3da7699.js
-// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PushNotifications.f6c6bc3f3562e98a796d.js
+// Retrieved at 12/6/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -98,9 +98,9 @@
 				S = i("./src/reddit/constants/experiments.ts"),
 				F = i("./src/reddit/helpers/chooseVariant/index.ts");
 			const N = e => Object(F.c)(e, {
-				experimentName: S.bc,
+				experimentName: S.cc,
 				experimentEligibilitySelector: F.a
-			}) === S.Ld;
+			}) === S.Nd;
 			var x = i("./src/reddit/selectors/meta.ts"),
 				C = i("./src/reddit/selectors/user.ts");
 			let W = !1;
@@ -393,4 +393,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.99501eafe4e0a3da7699.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.f6c6bc3f3562e98a796d.js.map

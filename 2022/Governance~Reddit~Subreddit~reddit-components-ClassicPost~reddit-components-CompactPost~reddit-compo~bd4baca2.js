@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.3e9be25d9c1cb007810f.js
-// Retrieved at 12/5/2022, 5:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.a5420b1461bd001f06d9.js
+// Retrieved at 12/6/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, s) {
@@ -409,14 +409,14 @@
 			const Z = e => {
 					return Object(J.c)(e, {
 						experimentEligibilitySelector: J.a,
-						experimentName: X.sc
-					}) === X.Ld
+						experimentName: X.uc
+					}) === X.Nd
 				},
 				ee = e => {
 					return Object(J.c)(e, {
 						experimentEligibilitySelector: J.a,
-						experimentName: X.tc
-					}) === X.Ld
+						experimentName: X.vc
+					}) === X.Nd
 				};
 			var te = s("./src/reddit/selectors/listings.ts"),
 				se = s("./src/reddit/selectors/profile.ts");
@@ -481,11 +481,11 @@
 							type: R.body.reason
 						} : R.error,
 						key: I
-					})), R.body.reason === h.a.DeletedProfile || M === K.c.DeletedRedditor ? t(Object(d.u)({
+					})), R.body.reason === h.a.DeletedProfile || M === K.c.DeletedRedditor ? t(Object(d.v)({
 						profileName: P
-					})) : M === K.c.UnavailableRedditor ? t(Object(d.A)({
+					})) : M === K.c.UnavailableRedditor ? t(Object(d.B)({
 						profileName: P
-					})) : N && !M && t(Object(d.o)({
+					})) : N && !M && t(Object(d.p)({
 						profileName: P
 					})), void t(p.n(R.status));
 					if (N) {
@@ -3951,7 +3951,7 @@
 						};
 					case m.j:
 						return {
-							...e, over18: !0
+							...e, over18: t.payload.over18
 						};
 					case I.c:
 						return void 0 !== t.payload ? {
@@ -4162,4 +4162,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.3e9be25d9c1cb007810f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.a5420b1461bd001f06d9.js.map

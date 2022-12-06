@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationUnit.cb07295c63d4d786cd18.js
-// Retrieved at 12/5/2022, 5:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationUnit.d29fb671ddb1f4488178.js
+// Retrieved at 12/6/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationUnit"], {
 		"./src/reddit/components/NotificationUnit/Avatar.tsx": function(e, t, i) {
@@ -770,20 +770,20 @@
 				o = i("./src/reddit/selectors/experiments/index.ts"),
 				s = i("./src/reddit/selectors/experiments/utils.ts");
 			const r = e => Object(a.c)(e, {
-					experimentName: n.Mb,
+					experimentName: n.Nb,
 					experimentEligibilitySelector: o.e
 				}) === n.T.topOfFeedWithCTAs,
 				c = e => (e => Object(a.c)(e, {
-					experimentName: n.Mb,
+					experimentName: n.Nb,
 					experimentEligibilitySelector: o.e
 				}) === n.T.topOfFeedNoCTAs)(e) || r(e),
 				l = e => Object(a.c)(e, {
-					experimentName: n.Mb,
+					experimentName: n.Nb,
 					experimentEligibilitySelector: o.e
 				}) === n.T.floatInFeed,
 				d = e => {
 					const t = Object(a.c)(e, {
-						experimentName: n.Mb,
+						experimentName: n.Nb,
 						experimentEligibilitySelector: o.e
 					});
 					return Object(s.a)(t)
@@ -791,4 +791,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.cb07295c63d4d786cd18.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.d29fb671ddb1f4488178.js.map

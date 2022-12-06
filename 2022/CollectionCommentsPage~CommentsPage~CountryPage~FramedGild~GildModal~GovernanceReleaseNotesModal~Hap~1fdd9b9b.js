@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~1fdd9b9b.383573eec60872a9845e.js
-// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~1fdd9b9b.c50ad151ca6c8ea17334.js
+// Retrieved at 12/6/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~1fdd9b9b"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -904,8 +904,8 @@
 				H = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const A = e => Object(H.c)(e, {
 				experimentEligibilitySelector: H.a,
-				experimentName: I.Pc
-			}) === I.Ld;
+				experimentName: I.Rc
+			}) === I.Nd;
 			var O = s("./src/reddit/selectors/experiments/videoReactions.ts"),
 				j = s("./src/reddit/selectors/media.ts"),
 				D = s("./src/reddit/selectors/platform.ts"),
@@ -2718,14 +2718,14 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = s("./src/reddit/selectors/experiments/index.ts");
 			const n = e => Object(o.c)(e, {
-					experimentName: i.nb,
+					experimentName: i.ob,
 					experimentEligibilitySelector: a.e
-				}) === i.Ld,
+				}) === i.Nd,
 				r = e => Object(o.c)(e, {
-					experimentName: i.vc,
+					experimentName: i.xc,
 					experimentEligibilitySelector: o.a
-				}) === i.Ld
+				}) === i.Nd
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~1fdd9b9b.383573eec60872a9845e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~1fdd9b9b.c50ad151ca6c8ea17334.js.map

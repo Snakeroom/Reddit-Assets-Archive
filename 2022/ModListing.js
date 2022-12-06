@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.323d2781e6ff218606f8.js
-// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.4ee645f251d6f799274f.js
+// Retrieved at 12/6/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, r) {
@@ -412,14 +412,14 @@
 								data: t
 							} = r.body;
 							if (P(t)) {
-								if (L(t)) {
+								if (T(t)) {
 									e(j({
 										recommendedSubredditIds: [],
 										interactedSubredditIds: [],
 										category: "",
 										lastLoadedEnv: "client"
 									})), p = !0
-								} else if (T(t)) {
+								} else if (L(t)) {
 									const r = t.focusVerticalSubredditRecommendations,
 										{
 											recommendedSubreddit: n,
@@ -456,16 +456,16 @@
 					const t = e.focusVerticalSubredditRecommendations;
 					return !(!t || !t.focusRecommendations)
 				},
-				L = e => {
+				T = e => {
 					const t = e.focusVerticalSubredditRecommendations,
 						r = t && t.focusRecommendations;
 					return !(!r || 0 !== r.length)
 				},
-				T = e => {
+				L = e => {
 					const t = e.focusVerticalSubredditRecommendations,
 						r = t && t.focusRecommendations,
 						n = t && t.type;
-					return !!(r && !L(e) && n === c.GEO && r[0] && r[0].recommendedSubreddit && r[0].interactedSubreddit)
+					return !!(r && !T(e) && n === c.GEO && r[0] && r[0].recommendedSubreddit && r[0].interactedSubreddit)
 				},
 				k = () => async (e, t, r) => {
 					var n, s;
@@ -514,9 +514,9 @@
 			})), r.d(t, "unhideSubredditSuccess", (function() {
 				return U
 			})), r.d(t, "unhideSubredditPending", (function() {
-				return J
-			})), r.d(t, "unhideSubredditFailed", (function() {
 				return Q
+			})), r.d(t, "unhideSubredditFailed", (function() {
+				return J
 			})), r.d(t, "toggleHiddenSubreddit", (function() {
 				return X
 			})), r.d(t, "hideSubreddit", (function() {
@@ -562,8 +562,8 @@
 				I = r("./src/reddit/helpers/timeApiRoute/index.ts"),
 				C = r("./src/reddit/helpers/trackers/screenview.ts"),
 				P = r("./src/reddit/models/Toast/index.ts"),
-				L = r("./src/reddit/routes/modListing/index.ts"),
-				T = r("./src/reddit/selectors/user.ts"),
+				T = r("./src/reddit/routes/modListing/index.ts"),
+				L = r("./src/reddit/selectors/user.ts"),
 				k = r("./src/reddit/actions/pages/modListing/constants.ts");
 			const M = Object(d.a)(k.f),
 				w = Object(d.a)(k.e),
@@ -598,7 +598,7 @@
 				}, F = (e, t) => async (r, s) => {
 					const {
 						sort: d = o.cb
-					} = e.params, u = Object(L.d)(e.path), b = u ? l.f : l.e, p = Object(a.a)(b, d, e.queryParams), h = s(), f = h.listings.postOrder.ids[p], g = h.listings.postOrder.api.error[p];
+					} = e.params, u = Object(T.d)(e.path), b = u ? l.f : l.e, p = Object(a.a)(b, d, e.queryParams), h = s(), f = h.listings.postOrder.ids[p], g = h.listings.postOrder.api.error[p];
 					if (h.listings.postOrder.api.pending[p] || f && !g && !t) return void(f && r(c.m({
 						title: n.fbt._("Subreddits you moderate", null, {
 							hk: "3RYtBz"
@@ -626,7 +626,7 @@
 					if (!c) return;
 					const {
 						sort: u = o.cb
-					} = e, b = c.queryParams, p = Object(L.d)(c.url), h = p ? l.f : l.e, f = Object(a.a)(h, u, b), g = d.listings.postOrder.loadMore[f];
+					} = e, b = c.queryParams, p = Object(T.d)(c.url), h = p ? l.f : l.e, f = Object(a.a)(h, u, b), g = d.listings.postOrder.loadMore[f];
 					if (!g) return;
 					const _ = d.listings.postOrder.api.pending[f],
 						y = d.listings.postOrder.fetchedTokens,
@@ -671,15 +671,15 @@
 				q = Object(d.a)(k.b),
 				K = Object(d.a)(k.a),
 				U = Object(d.a)(k.l),
-				J = Object(d.a)(k.k),
-				Q = Object(d.a)(k.j),
+				Q = Object(d.a)(k.k),
+				J = Object(d.a)(k.j),
 				X = (e, t) => async (r, n, s) => {
 					let {
 						apiContext: i
 					} = s;
 					const o = n(),
-						d = Object(T.m)(o),
-						[a, c, u, l] = t ? [q, V, K, O] : [J, U, Q, E];
+						d = Object(L.m)(o),
+						[a, c, u, l] = t ? [q, V, K, O] : [Q, U, J, E];
 					if (!d || !d.displayText) return;
 					const {
 						currentPage: m
@@ -1352,10 +1352,10 @@
 					showModalOnScroll: () => e(c.bb()),
 					surveyTriggerScrollCounted: () => e(Object(l.m)())
 				}),
-				L = e => Object(p.b)({
+				T = e => Object(p.b)({
 					...e
 				}),
-				T = (e, t, r, n) => {
+				L = (e, t, r, n) => {
 					const {
 						listingKey: s,
 						hostPostData: i,
@@ -1367,8 +1367,8 @@
 					...e,
 					...t,
 					...r,
-					postComponentForLayout: L,
-					postClickEventFactory: T
+					postComponentForLayout: T,
+					postClickEventFactory: L
 				}));
 			t.a = e => Object(m.c)(j(k(e)))
 		},
@@ -1711,44 +1711,44 @@
 				I = r("./src/reddit/selectors/activeModalId.ts"),
 				C = r("./src/reddit/selectors/modQueue.ts"),
 				P = r("./src/reddit/components/ModListingSidebar/FeedDetails/index.m.less"),
-				L = r.n(P);
+				T = r.n(P);
 			const {
-				fbt: T
+				fbt: L
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), k = Object(y.a)(e => o.a.createElement(x.e, {
-				className: L.a.modalBody
+				className: T.a.modalBody
 			}, o.a.createElement(x.i, null, o.a.createElement(j.a, null, o.a.createElement(x.q, {
-				className: L.a.modalTitle
+				className: T.a.modalTitle
 			}, o.a.createElement(S.a, {
-				className: L.a.modIcon
-			}), T._("r/Mod", null, {
+				className: T.a.modIcon
+			}), L._("r/Mod", null, {
 				hk: "2a9ICx"
 			})), o.a.createElement(E.a, {
 				onClick: e.onCloseModal
 			}, o.a.createElement(x.b, null)))), o.a.createElement(x.l, {
-				className: L.a.modalMain
+				className: T.a.modalMain
 			}, o.a.createElement("div", {
-				className: L.a.modalDescription
-			}, T._("This is a feed for the communities that you moderate.", null, {
+				className: T.a.modalDescription
+			}, L._("This is a feed for the communities that you moderate.", null, {
 				hk: "2XK5kH"
 			})), o.a.createElement(O.b, {
 				isSidebar: !1,
 				subredditsOrProfilesIds: e.moderatedCommunitiesIds
 			})))), M = e => o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
-				className: L.a.feedDetailsTitle
+				className: T.a.feedDetailsTitle
 			}, o.a.createElement(S.a, {
-				className: L.a.modIcon
-			}), T._("r/Mod", null, {
+				className: T.a.modIcon
+			}), L._("r/Mod", null, {
 				hk: "2a9ICx"
 			})), o.a.createElement("div", {
-				className: L.a.feedDetailsDescription
-			}, T._("This is a feed for the communities that you moderate.", null, {
+				className: T.a.feedDetailsDescription
+			}, L._("This is a feed for the communities that you moderate.", null, {
 				hk: "2XK5kH"
 			})), e.moderatedCommunitiesIds.length ? o.a.createElement(O.b, {
 				isSidebar: !0,
 				onSeeMoreDetails: e.onSeeMoreDetails,
 				subredditsOrProfilesIds: e.moderatedCommunitiesIds
 			}) : o.a.createElement("div", {
-				className: L.a.loadingBar
+				className: T.a.loadingBar
 			})), w = Object(a.c)({
 				isModalOpen: Object(I.b)("MOD_LISTING_FEED_DETAILS_MODAL_ID"),
 				moderatedCommunitiesIds: C.h
@@ -1785,11 +1785,11 @@
 				q = r("./src/reddit/layout/row/Inline/index.tsx"),
 				K = r("./src/reddit/components/ModListingSidebar/HideCommunities/HideInput/index.m.less"),
 				U = r.n(K);
-			const J = Object(a.c)({
+			const Q = Object(a.c)({
 				apiError: e => e.modListingPage.filteredSubreddits.api.error,
 				isApiPending: B
 			});
-			class Q extends o.a.Component {
+			class J extends o.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						subredditInput: ""
@@ -1833,9 +1833,9 @@
 					}, e.apiError.explanation))
 				}
 			}
-			var X = Object(d.b)(J, e => ({
+			var X = Object(d.b)(Q, e => ({
 					hide: t => e(Object(m.hideSubreddit)(t))
-				}))(Object(F.c)(Q)),
+				}))(Object(F.c)(J)),
 				Y = r("./src/lib/lessComponent.tsx"),
 				z = r("./src/reddit/components/SubredditIcon/index.tsx"),
 				W = r("./src/reddit/icons/fonts/Clear/index.tsx"),
@@ -2085,7 +2085,7 @@
 				const b = Object(o.e)(e => e.subreddits.survey[r]),
 					p = Object(o.e)(e => e.subreddits.progressModule[r]),
 					h = Object(o.e)(l.a),
-					f = h !== c.Oe.NewModule;
+					f = h !== c.Qe.NewModule;
 				return (null === (s = null == p ? void 0 : p.cards) || void 0 === s ? void 0 : s.length) > 0 && f ? i.a.createElement(m, {
 					closeModuleOnMount: !!t && t !== u.g.Large,
 					subredditId: r,
@@ -2171,15 +2171,15 @@
 			const o = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: i.S,
-						experimentName: n.rd
+						experimentName: n.td
 					});
-					return !(!t || Object(n.vg)(t))
+					return !(!t || Object(n.xg)(t))
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: i.S,
-						experimentName: n.rd
-					}) === n.Pd.ListingEnabled
+						experimentName: n.td
+					}) === n.Rd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/experiments/recapLeadUpGame.ts": function(e, t, r) {
@@ -2197,8 +2197,8 @@
 			const a = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: i.a,
-						experimentName: n.of
-					}) === n.Ld
+						experimentName: n.qf
+					}) === n.Nd
 				},
 				c = Object(d.a)(o.S, (e, t) => {
 					let {
@@ -2209,8 +2209,8 @@
 				u = (e, t) => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: e => c(e, t),
-						experimentName: n.pf
-					}) === n.Ld
+						experimentName: n.rf
+					}) === n.Nd
 				}
 		},
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, r) {
@@ -2228,8 +2228,8 @@
 			const a = Object(o.a)(d.S, e => !e),
 				c = Object(o.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: a,
-					experimentName: n.Gf
-				}), e => e === n.Ld),
+					experimentName: n.If
+				}), e => e === n.Nd),
 				u = Object(o.a)(c, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? t : i.a.Off),
 				l = Object(o.a)(u, e => e === i.a.Treatment),
 				m = (e, t) => {
@@ -2260,4 +2260,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.323d2781e6ff218606f8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.4ee645f251d6f799274f.js.map

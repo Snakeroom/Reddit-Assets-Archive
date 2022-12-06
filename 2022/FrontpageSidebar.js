@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.51b447fdc5d58dac0259.js
-// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.35e63e8a23b62d750811.js
+// Retrieved at 12/6/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -277,8 +277,8 @@
 				G = n("./src/reddit/components/SidebarContainer/index.tsx"),
 				D = n("./src/reddit/components/SidebarStickyBottom/index.tsx"),
 				U = n("./node_modules/lodash/sampleSize.js"),
-				W = n.n(U),
-				q = n("./node_modules/request-idle-callback/index.js"),
+				q = n.n(U),
+				W = n("./node_modules/request-idle-callback/index.js"),
 				Q = n("./src/lib/constants/index.ts"),
 				K = n("./src/reddit/components/SubredditIcon/index.tsx"),
 				M = n("./src/reddit/constants/localStorage.ts"),
@@ -317,10 +317,10 @@
 					return ie.cachedData = e, e ? e.subreddits : []
 				}
 				componentDidMount() {
-					Object(q.requestIdleCallback)(async () => {
+					Object(W.requestIdleCallback)(async () => {
 						const e = await this.getSubredditForAdoption();
 						this.setState({
-							subredditNames: W()(e, se)
+							subredditNames: q()(e, se)
 						})
 					})
 				}
@@ -682,12 +682,12 @@
 					experimentName: Ie.q
 				})
 			}
-			var We = n("./src/reddit/selectors/experiments/utils.ts");
-			const qe = Object(u.a)(e => Object(De.c)(e, {
-					experimentName: Ie.oe,
+			var qe = n("./src/reddit/selectors/experiments/utils.ts");
+			const We = Object(u.a)(e => Object(De.c)(e, {
+					experimentName: Ie.qe,
 					experimentEligibilitySelector: De.a
-				}), We.a),
-				Qe = Object(u.a)(qe, e => e === Ie.se.Enabled);
+				}), qe.a),
+				Qe = Object(u.a)(We, e => e === Ie.ue.Enabled);
 			var Ke = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Me = n("./src/reddit/selectors/user.ts");
 			var He = n("./src/reddit/selectors/seo/linksModule.ts"),
@@ -716,8 +716,8 @@
 						return (!t || !n) && function(e) {
 							return Object(De.c)(e, {
 								experimentEligibilitySelector: Me.S,
-								experimentName: Ie.Nc
-							}) === Ie.Ld
+								experimentName: Ie.Pc
+							}) === Ie.Nd
 						}(e)
 					},
 					isNavbarLikeMwebEnabled: c.a,
@@ -1514,4 +1514,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.51b447fdc5d58dac0259.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.35e63e8a23b62d750811.js.map

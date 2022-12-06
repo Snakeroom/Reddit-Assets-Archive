@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.fda819ecdc0bbc39402e.js
-// Retrieved at 12/1/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.5ff0477960bc53b0c2ab.js
+// Retrieved at 12/6/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-SubscriptionModal"], {
 		"./src/reddit/components/Governance/TokenAmount/index.m.less": function(e, t, n) {
@@ -129,8 +129,8 @@
 				w = n("./src/reddit/selectors/subreddit.ts"),
 				I = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx"),
 				g = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Overview.tsx"),
-				h = n("./src/reddit/components/Governance/TransactionModals/SubscriptionModal/Approval.m.less"),
-				N = n.n(h);
+				N = n("./src/reddit/components/Governance/TransactionModals/SubscriptionModal/Approval.m.less"),
+				h = n.n(N);
 
 			function E(e) {
 				const t = Object(i.e)(t => Object(w.Y)(t, e)),
@@ -141,14 +141,14 @@
 				return r.a.createElement(g.a, {
 					subredditId: e.subredditId,
 					image: r.a.createElement("div", {
-						className: N.a.membershipFrame
+						className: h.a.membershipFrame
 					}, r.a.createElement(A.a, {
-						className: N.a.userIcon
+						className: h.a.userIcon
 					}), r.a.createElement("img", {
-						className: N.a.frameImage,
+						className: h.a.frameImage,
 						src: c
 					}), r.a.createElement(_.b, {
-						className: N.a.subredditIcon,
+						className: h.a.subredditIcon,
 						subredditOrProfile: t
 					})),
 					title: a,
@@ -334,16 +334,16 @@
 			const r = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.we
-					}) === s.Ld
+						experimentName: s.ye
+					}) === s.Nd
 				},
 				i = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.ue
-					}) === s.Ld
+						experimentName: s.we
+					}) === s.Nd
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.fda819ecdc0bbc39402e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.5ff0477960bc53b0c2ab.js.map

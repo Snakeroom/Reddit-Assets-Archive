@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.b67a47c2d1faa4d11604.js
-// Retrieved at 12/5/2022, 5:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.272f74160892ce77180f.js
+// Retrieved at 12/6/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -743,7 +743,7 @@
 			})), n.d(t, "e", (function() {
 				return L
 			})), n.d(t, "d", (function() {
-				return U
+				return N
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -1112,7 +1112,7 @@
 							}))
 						}
 					}(h)), p.filter(e => e.isValid).map(e => e.uploadKey)
-				}, U = (e, t) => async (n, s) => {
+				}, N = (e, t) => async (n, s) => {
 					const r = s(),
 						i = Object(j.X)(r),
 						{
@@ -1549,13 +1549,13 @@
 					return c.a.createElement(B, n)
 				},
 				L = T.a.div("Wrapper", z.a),
-				U = T.a.wrapped(R.a, "MarkdownModeIcon", z.a),
-				N = e => {
+				N = T.a.wrapped(R.a, "MarkdownModeIcon", z.a),
+				U = e => {
 					let {
 						isFilled: t,
 						...n
 					} = e;
-					return c.a.createElement(U, n)
+					return c.a.createElement(N, n)
 				};
 			var W = c.a.memo((function(e) {
 					const t = o.fbt._("Switch to fancy pants editor", null, {
@@ -1568,7 +1568,7 @@
 						innerRef: e.buttonRef,
 						className: e.className,
 						onClick: e.onClick,
-						Icon: e.isConverting ? P : N
+						Icon: e.isConverting ? P : U
 					}, c.a.createElement(M.a, {
 						text: t
 					})))
@@ -2099,8 +2099,8 @@
 				B = n("./src/reddit/selectors/gold/enabledFeatures.ts"),
 				P = n("./src/reddit/selectors/gold/powerups/index.ts"),
 				L = n("./src/reddit/components/RichTextEditor/Toolbar/FormatterButton/index.tsx"),
-				U = n("./src/reddit/components/RichTextEditor/Toolbar/EmoteButton/index.m.less"),
-				N = n.n(U);
+				N = n("./src/reddit/components/RichTextEditor/Toolbar/EmoteButton/index.m.less"),
+				U = n.n(N);
 			const W = Object(d.c)({
 				emotes: (e, t) => {
 					let {
@@ -2132,17 +2132,17 @@
 					});
 					return i.a.createElement(L.a, {
 						Icon: () => i.a.createElement(A.a, {
-							className: N.a.smile
+							className: U.a.smile
 						}),
 						tooltip: r,
 						enabled: t.emote.isEnabled,
 						onClick: o
 					}, i.a.createElement("div", {
-						className: Object(w.a)(N.a.emotes, {
-							[N.a.emoteMask]: n.length > 1
+						className: Object(w.a)(U.a.emotes, {
+							[U.a.emoteMask]: n.length > 1
 						})
 					}, n.map(e => i.a.createElement("img", {
-						className: N.a.emote,
+						className: U.a.emote,
 						key: e.id,
 						src: e.emoji.path
 					}))))
@@ -2330,7 +2330,7 @@
 						}))))
 					}
 				},
-				Ue = Object(a.b)(() => Object(d.c)({
+				Ne = Object(a.b)(() => Object(d.c)({
 					activeModalId: ve.a,
 					destSubreddit: (e, t) => {
 						const n = Object(Ee.s)(e, t);
@@ -2377,7 +2377,7 @@
 						}))
 					}
 				}));
-			class Ne extends i.a.Component {
+			class Ue extends i.a.Component {
 				constructor(e) {
 					super(e), this.getToolbarRenderer = Object(O.a)((e, t, n, o, s, r, i) => Le({
 						cancelButtonEnabled: e,
@@ -2541,7 +2541,7 @@
 						breakOut: B,
 						formHeight: P,
 						rteState: L
-					} = this.state, U = Object(me.a)(a), N = r.draftType === he.c.edit, W = d !== he.c.replyToPost;
+					} = this.state, N = Object(me.a)(a), U = r.draftType === he.c.edit, W = d !== he.c.replyToPost;
 					return i.a.createElement("div", {
 						className: Object(w.a)(Me.a.FormWrapper, n, {
 							[Me.a.isTopLevelComment]: y,
@@ -2559,7 +2559,7 @@
 					}))), i.a.createElement(le.a, {
 						breakOut: B,
 						depth: o,
-						isEditing: N
+						isEditing: U
 					}, i.a.createElement(D.a, {
 						allowMediaUploads: R || M,
 						shouldOmitImageCaptionBlock: !0,
@@ -2594,7 +2594,7 @@
 						trackToolbarClick: this.onTrackToolbarClick,
 						toolbarPosition: "bottom",
 						renderToolbar: this.getToolbarRenderer(W, a, !h && u, m, g, E, z)
-					})), this.state.showError ? Object(de.c)(c) : null, e === U && i.a.createElement(F.a, {
+					})), this.state.showError ? Object(de.c)(c) : null, e === N && i.a.createElement(F.a, {
 						actionText: C.fbt._("Discard", null, {
 							hk: "1kJ5PR"
 						}),
@@ -2616,7 +2616,7 @@
 					}))
 				}
 			}
-			var We = Object(xe.v)()(Ue(Object(Oe.c)(Ne))),
+			var We = Object(xe.v)()(Ne(Object(Oe.c)(Ue))),
 				He = n("./src/reddit/components/RequestPendingBanner/index.tsx"),
 				qe = n("./src/reddit/models/User/index.ts"),
 				Ke = n("./src/reddit/selectors/experiments/commentBox.ts"),
@@ -3382,8 +3382,8 @@
 			const B = A.a.div("BottomRow", z.a),
 				P = A.a.div("FormContent", z.a),
 				L = A.a.wrapped(R.l, "SubmitButton", z.a),
-				U = A.a.wrapped(M.a, "LoadingIcon", z.a),
-				N = Object(T.v)(),
+				N = A.a.wrapped(M.a, "LoadingIcon", z.a),
+				U = Object(T.v)(),
 				W = Object(l.c)({
 					destSubreddit: _.h,
 					editorMode: _.i,
@@ -3557,7 +3557,7 @@
 					})), a.a.createElement(L, {
 						disabled: !!i || !!y.length || !this.hasChanged() || v,
 						onClick: this.onSubmit
-					}, i ? a.a.createElement(U, {
+					}, i ? a.a.createElement(N, {
 						sizePx: 10
 					}) : o.fbt._("Save", null, {
 						hk: "4yMsMq"
@@ -3574,7 +3574,7 @@
 					}))
 				}
 			}
-			t.default = N(H(q))
+			t.default = U(H(q))
 		},
 		"./src/reddit/components/RequestPendingBanner/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -4087,20 +4087,20 @@
 			const i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.ie
-					}) === o.Ld
+						experimentName: o.ke
+					}) === o.Nd
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.je
-					}) === o.Ld
+						experimentName: o.le
+					}) === o.Nd
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.Ud
-					}) === o.Ld
+						experimentName: o.Wd
+					}) === o.Nd
 				},
 				c = (e, t) => {
 					let {
@@ -4138,31 +4138,31 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.ng
-					}) === o.Ld
+						experimentName: o.pg
+					}) === o.Nd
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.og
-					}) === o.Ld
+						experimentName: o.qg
+					}) === o.Nd
 				},
 				c = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.mg
+						experimentName: o.og
 					});
-					return t === o.dg.TypingIndicators || t === o.dg.IndicatorsPlusCTA
+					return t === o.fg.TypingIndicators || t === o.fg.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: o.mg
+						experimentName: o.og
 					});
-					return (null == t ? void 0 : t.variant) === o.dg.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.fg.IndicatorsPlusCTA
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.b67a47c2d1faa4d11604.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.272f74160892ce77180f.js.map

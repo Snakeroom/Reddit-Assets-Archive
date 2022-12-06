@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.877b1e5318febccff86c.js
-// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.7a790542cead26fe4e22.js
+// Retrieved at 12/6/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, n) {
@@ -1522,33 +1522,36 @@
 		},
 		"./src/reddit/helpers/counters/nsfwblocking.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "a", (function() {
+			n.d(t, "b", (function() {
 				return i
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "a", (function() {
 				return c
 			})), n.d(t, "c", (function() {
 				return a
+			})), n.d(t, "d", (function() {
+				return d
 			}));
 			var r = n("./src/lib/constants/index.ts"),
 				s = n("./src/lib/sample/index.ts"),
 				o = n("./src/telemetry/helpers/sendCounter.ts");
-			var i;
+			const i = () => !1;
+			var c;
 			! function(e) {
 				e.Dismiss = "dismiss", e.Login = "login", e.Signup = "signup", e.View = "view"
-			}(i || (i = {}));
-			const c = e => {
-					Object(o.b)(r.o.Redesign, {
+			}(c || (c = {}));
+			const a = e => {
+					i() || Object(o.b)(r.o.Redesign, {
 						type: o.a.NsfwBlocking,
 						data: {
 							action: e
 						}
 					})
 				},
-				a = e => {
-					e && Object(s.b)(10) && Object(o.b)(r.o.Redesign, {
+				d = e => {
+					!i() && e && Object(s.b)(10) && Object(o.b)(r.o.Redesign, {
 						type: o.a.NsfwBlocking,
 						data: {
-							action: i.View,
+							action: c.View,
 							variant: e
 						}
 					})
@@ -1899,27 +1902,27 @@
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/experiments/index.ts");
 			const c = Object(r.a)(e => Object(o.c)(e, {
-					experimentName: s.Nb,
+					experimentName: s.Ob,
 					experimentEligibilitySelector: i.e
 				}), e => e === s.U.Enabled),
 				a = Object(r.a)(e => Object(o.c)(e, {
-					experimentName: s.Ob,
+					experimentName: s.Pb,
 					experimentEligibilitySelector: i.e
 				}), e => e === s.V.Enabled),
 				d = Object(r.a)(e => Object(o.c)(e, {
-					experimentName: s.Pb,
+					experimentName: s.Qb,
 					experimentEligibilitySelector: i.e
 				}), e => e === s.W.Enabled),
 				l = Object(r.a)(e => Object(o.c)(e, {
-					experimentName: s.Qb,
+					experimentName: s.Rb,
 					experimentEligibilitySelector: i.e
 				}), e => e === s.X.Enabled),
 				u = Object(r.a)(e => Object(o.c)(e, {
-					experimentName: s.Sb,
+					experimentName: s.Tb,
 					experimentEligibilitySelector: i.e
 				}), e => e === s.Z.Enabled),
 				m = Object(r.a)(e => Object(o.c)(e, {
-					experimentName: s.Rb,
+					experimentName: s.Sb,
 					experimentEligibilitySelector: i.e
 				}), e => e === s.Y.Enabled)
 		},
@@ -1938,8 +1941,8 @@
 			const a = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: r.of
-					}) === r.Ld
+						experimentName: r.qf
+					}) === r.Nd
 				},
 				d = Object(c.a)(i.S, (e, t) => {
 					let {
@@ -1950,8 +1953,8 @@
 				l = (e, t) => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: e => d(e, t),
-						experimentName: r.pf
-					}) === r.Ld
+						experimentName: r.rf
+					}) === r.Nd
 				}
 		},
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, n) {
@@ -1969,8 +1972,8 @@
 			const a = Object(i.a)(c.S, e => !e),
 				d = Object(i.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: a,
-					experimentName: r.Gf
-				}), e => e === r.Ld),
+					experimentName: r.If
+				}), e => e === r.Nd),
 				l = Object(i.a)(d, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? t : o.a.Off),
 				u = Object(i.a)(l, e => e === o.a.Treatment),
 				m = (e, t) => {
@@ -2004,4 +2007,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.877b1e5318febccff86c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.7a790542cead26fe4e22.js.map

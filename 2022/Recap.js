@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Recap.0addae299a543ae13124.js
-// Retrieved at 12/6/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Recap.f50178d77d212ed83ca1.js
+// Retrieved at 12/6/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Recap", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, a, t) {
@@ -63,9 +63,9 @@
 			t.r(a), t.d(a, "initializeServiceWorkerChannel", (function() {
 				return R
 			})), t.d(a, "requestNotificationsPermissions", (function() {
-				return L
-			})), t.d(a, "subscribeForPNs", (function() {
 				return B
+			})), t.d(a, "subscribeForPNs", (function() {
+				return L
 			})), t.d(a, "unsubscribeFromPNs", (function() {
 				return F
 			})), t.d(a, "requestBrowserNotificationPermissionPromptByUser", (function() {
@@ -98,9 +98,9 @@
 				N = t("./src/reddit/constants/experiments.ts"),
 				S = t("./src/reddit/helpers/chooseVariant/index.ts");
 			const y = e => Object(S.c)(e, {
-				experimentName: N.bc,
+				experimentName: N.cc,
 				experimentEligibilitySelector: S.a
-			}) === N.Ld;
+			}) === N.Nd;
 			var I = t("./src/reddit/selectors/meta.ts"),
 				x = t("./src/reddit/selectors/user.ts");
 			let w = !1;
@@ -126,7 +126,7 @@
 					command: "registerClient",
 					v2EventBoilerPlate: E.c(e)
 				})
-			}, L = function(e, a) {
+			}, B = function(e, a) {
 				let t = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : () => {};
 				return async (r, i, s) => {
 					const n = i(),
@@ -144,12 +144,12 @@
 					}, (e, a) => {
 						r(Object(o.l)()), r(F(a ? o.a.Denied : o.a.Closed)), e && (a ? E.e(n) : E.f(n)), t()
 					}, e => {
-						r(Object(o.m)()), r(B()), e && E.d(n), t()
+						r(Object(o.m)()), r(L()), e && E.d(n), t()
 					}, () => {
 						r(Object(o.k)()), t()
 					})
 				}
-			}, B = e => async (a, t, i) => {
+			}, L = e => async (a, t, i) => {
 				const s = t();
 				try {
 					switch (await Object(n.b)(i.gqlContext)) {
@@ -189,7 +189,7 @@
 				if (Object(u.a)(r) === o.c.NotificationsSupported) switch (Object(l.a)()) {
 					case o.a.Default:
 					case o.a.Closed:
-						await a(L(!0, !0));
+						await a(B(!0, !0));
 						break;
 					case o.a.Denied:
 						a(Object(b.h)(e))
@@ -208,7 +208,7 @@
 							e(F(o.a.Denied)), E.e(r);
 							break;
 						case o.a.Granted:
-							e(B()), E.d(r);
+							e(L()), E.d(r);
 							break;
 						default:
 							e(F(o.a.Default))
@@ -687,8 +687,8 @@
 				w = "PersonalizedYearInReviewSubredditCard",
 				R = "PersonalizedYearInReviewSubredditListCard",
 				T = "PersonalizedYearInReviewSingleStatSubredditListCard",
-				L = "PersonalizedYearInReviewAvatarCard",
-				B = "PersonalizedYearInReviewTopicListCard",
+				B = "PersonalizedYearInReviewAvatarCard",
+				L = "PersonalizedYearInReviewTopicListCard",
 				F = "PersonalizedYearInReviewRPlaceTileListCard",
 				A = "PersonalizedYearInReviewSingleTopicCard",
 				D = e => e.__typename === x;
@@ -1391,7 +1391,7 @@
 					className: me.a.endText
 				}, l))
 			};
-			var Le = e => {
+			var Be = e => {
 				let {
 					card: {
 						title: a,
@@ -1466,7 +1466,7 @@
 					className: me.a.externalLinkButton
 				}))))
 			};
-			var Be = e => {
+			var Le = e => {
 					let {
 						card: {
 							title: a,
@@ -1647,12 +1647,12 @@
 					w = Object(b.e)(e => e.recap.shouldHideAbilityCardUsername),
 					R = Object(b.e)(e => e.recap.shouldHideAbilityCardAvatar),
 					T = Object(b.e)(e => e.recap.shareCardWasOpened),
-					L = l === r.WHITE || l === r.YELLOW,
-					B = () => {
+					B = l === r.WHITE || l === r.YELLOW,
+					L = () => {
 						k || (C(Object(g.b)()), !T && N(Object(O.i)()))
 					};
 				return Object(s.useEffect)(() => {
-					!_ && T && B()
+					!_ && T && L()
 				}, [_]), c.a.createElement(oe, {
 					title: a,
 					subtitle: t,
@@ -1679,7 +1679,7 @@
 						[me.a.unflipped]: !T,
 						[me.a.forSharing]: k
 					}),
-					onClick: B
+					onClick: L
 				}, c.a.createElement("div", {
 					className: Object(p.a)(me.a.frontCard, {
 						[me.a.selected]: _
@@ -1842,7 +1842,7 @@
 					})
 				}, Pe._("{=Hide username}", [Pe._param("=Hide username", c.a.createElement("div", {
 					className: Object(p.a)(me.a.text, {
-						[me.a.black]: L
+						[me.a.black]: B
 					})
 				}, Pe._("Hide username", null, {
 					hk: "2Q5Y03"
@@ -1862,7 +1862,7 @@
 					})
 				}, Pe._("{=Hide avatar}", [Pe._param("=Hide avatar", c.a.createElement("div", {
 					className: Object(p.a)(me.a.text, {
-						[me.a.black]: L
+						[me.a.black]: B
 					})
 				}, Pe._("Hide avatar", null, {
 					hk: "2395yu"
@@ -2190,7 +2190,7 @@
 						card: a,
 						isSelected: t,
 						isForSharing: r
-					}) : (e => e.__typename === I)(a) ? c.a.createElement(Le, {
+					}) : (e => e.__typename === I)(a) ? c.a.createElement(Be, {
 						card: a,
 						isSelected: t,
 						isForSharing: r
@@ -2202,15 +2202,15 @@
 						card: a,
 						isSelected: t,
 						isForSharing: r
-					}) : (e => e.__typename === L)(a) ? c.a.createElement(ue, {
+					}) : (e => e.__typename === B)(a) ? c.a.createElement(ue, {
 						card: a,
 						isSelected: t,
 						isForSharing: r
-					}) : (e => e.__typename === B)(a) ? c.a.createElement(qe, {
+					}) : (e => e.__typename === L)(a) ? c.a.createElement(qe, {
 						card: a,
 						isSelected: t,
 						isForSharing: r
-					}) : (e => e.__typename === F)(a) ? c.a.createElement(Be, {
+					}) : (e => e.__typename === F)(a) ? c.a.createElement(Le, {
 						card: a,
 						isSelected: t,
 						isForSharing: r
@@ -2405,8 +2405,8 @@
 						y = Object(b.e)(e => e.recap.cards),
 						[I, x] = Object(s.useState)(!1),
 						[w, R] = Object(s.useState)(!0),
-						[T, L] = Object(s.useState)(!1),
-						[B, F] = Object(s.useState)(0),
+						[T, B] = Object(s.useState)(!1),
+						[L, F] = Object(s.useState)(0),
 						A = Object(b.e)(e => Object(ca.b)(h.a.SNOOVATAR_MODAL)(e)),
 						P = Object(b.e)(na.m),
 						W = y.length && D(y[d]),
@@ -2420,7 +2420,7 @@
 							Promise.all(e.map(e => new Promise(a => {
 								const t = new Image;
 								t.onload = () => a(), t.src = e
-							}))).then(() => L(!0))
+							}))).then(() => B(!0))
 						}, [y]);
 					Object(s.useEffect)(() => {
 						U()
@@ -2492,7 +2492,7 @@
 							[oa.a.animated]: w
 						}),
 						style: {
-							transform: `translateY(${-d*B}px)`,
+							transform: `translateY(${-d*L}px)`,
 							backgroundColor: Ke[y[d].cardTemplateColor]
 						}
 					}, y.map((e, a) => c.a.createElement("div", {
@@ -2550,4 +2550,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Recap.0addae299a543ae13124.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Recap.f50178d77d212ed83ca1.js.map

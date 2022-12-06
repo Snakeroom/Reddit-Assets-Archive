@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.6bf527a765270b263b46.js
-// Retrieved at 12/5/2022, 5:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.100894a296505394e917.js
+// Retrieved at 12/6/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2644,8 +2644,8 @@
 			const k = e => {
 				return Object(y.c)(e, {
 					experimentEligibilitySelector: y.a,
-					experimentName: x.qf
-				}) === x.Ld
+					experimentName: x.sf
+				}) === x.Nd
 			};
 			var C = n("./src/reddit/selectors/experiments/shredditParity.ts"),
 				w = n("./src/reddit/selectors/recapGame.ts"),
@@ -3729,7 +3729,7 @@
 						await e(p.v(n)), window.location.reload()
 					},
 					setNSFWPreference: async () => {
-						await e(Object(m.q)())
+						await e(Object(m.r)())
 					}
 				}
 			}), be = e => {
@@ -3757,7 +3757,7 @@
 					subredditName: T,
 					user: P
 				} = e, D = async () => {
-					if (o ? await N() : await Object(m.p)(), l) {
+					if (o ? await N() : await Object(m.q)(), l) {
 						const e = new URL(window.location.href);
 						e.searchParams.set(S.k, "1"), window.location.href = e.href
 					} else window.location.reload()
@@ -5838,7 +5838,7 @@
 				const t = Object(i.f)().getState(),
 					n = Object(h.a)(t, Object(o.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.bd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.bd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.bd.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.dd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.dd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.dd.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(j, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -7332,7 +7332,7 @@
 						} = t;
 						return Object(rt.c)(e, n)
 					},
-					isInNewModuleNCPV3Experiment: e => Object(it.a)(e) === et.Oe.NewModule,
+					isInNewModuleNCPV3Experiment: e => Object(it.a)(e) === et.Qe.NewModule,
 					showCommunityChat: ot.a,
 					showGovernance: tt.d.spPoints,
 					showLeaderboard: tt.d.spLeaderboard,
@@ -9574,8 +9574,8 @@
 			const o = e => r.e[Object(i.U)(e, {})] === r.d.Card,
 				d = e => Object(a.c)(e, {
 					experimentEligibilitySelector: o,
-					experimentName: s.mb
-				}) === s.Rc.Treatment
+					experimentName: s.nb
+				}) === s.Tc.Treatment
 		},
 		"./src/reddit/selectors/experiments/communityChat.ts": function(e, t, n) {
 			"use strict";
@@ -9587,7 +9587,7 @@
 				i = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts"),
 				a = n("./src/reddit/selectors/platform.ts");
 			const o = Object(s.a)(a.c, e => "t5_7bf0ce" === e),
-				d = Object(i.a)(r.Ub),
+				d = Object(i.a)(r.Vb),
 				c = Object(s.a)(o, d, (e, t) => e && t)
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, n) {
@@ -9605,11 +9605,11 @@
 				d = n("./node_modules/reselect/es/index.js");
 			const c = Object(d.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(o.h)(e) && Object(i.f)(e),
-					experimentName: s.mc
+					experimentName: s.oc
 				}), a.a),
 				l = Object(d.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(o.h)(e) && Object(i.f)(e),
-					experimentName: s.lc
+					experimentName: s.nc
 				}), a.a),
 				u = Object(d.a)(c, l, (e, t) => e || t),
 				m = Object(d.a)(c, l, (e, t) => !(!e && !t))
@@ -9780,4 +9780,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.6bf527a765270b263b46.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.100894a296505394e917.js.map

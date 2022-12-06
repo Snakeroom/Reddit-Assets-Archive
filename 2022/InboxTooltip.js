@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxTooltip.a49489c1e131450bf968.js
-// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxTooltip.64927e90ede1ed28f890.js
+// Retrieved at 12/6/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxTooltip", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -67,9 +67,9 @@
 			})), i.d(t, "subscribeForPNs", (function() {
 				return A
 			})), i.d(t, "unsubscribeFromPNs", (function() {
-				return L
-			})), i.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
 				return R
+			})), i.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
+				return L
 			})), i.d(t, "subscribeToPermissionsChange", (function() {
 				return U
 			}));
@@ -94,13 +94,13 @@
 				x = i("./src/reddit/selectors/activeModal.ts"),
 				k = i("./src/reddit/selectors/activeModalId.ts"),
 				S = i("./src/reddit/selectors/experiments/delayDnPermission.ts"),
-				w = i("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
-				N = i("./src/reddit/constants/experiments.ts"),
+				N = i("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
+				w = i("./src/reddit/constants/experiments.ts"),
 				y = i("./src/reddit/helpers/chooseVariant/index.ts");
 			const _ = e => Object(y.c)(e, {
-				experimentName: N.bc,
+				experimentName: w.cc,
 				experimentEligibilitySelector: y.a
-			}) === N.Ld;
+			}) === w.Nd;
 			var I = i("./src/reddit/selectors/meta.ts"),
 				P = i("./src/reddit/selectors/user.ts");
 			let E = !1;
@@ -134,7 +134,7 @@
 						l = _(c),
 						b = !!Object(k.a)(c),
 						f = Object(S.a)(c),
-						p = Object(w.e)(c),
+						p = Object(N.e)(c),
 						g = Object(x.c)(m.a.NSFW_BLOCKING_MODAL_V2)(c);
 					if (p || g) return;
 					if (await Object(r.a)() || u) return;
@@ -142,7 +142,7 @@
 					j.l(c), await Object(a.b)(e, t, () => {
 						l || f || b || n(Object(d.o)()), n(Object(d.n)()), j.j(c)
 					}, (e, t) => {
-						n(Object(d.l)()), n(L(t ? d.a.Denied : d.a.Closed)), e && (t ? j.e(c) : j.f(c)), i()
+						n(Object(d.l)()), n(R(t ? d.a.Denied : d.a.Closed)), e && (t ? j.e(c) : j.f(c)), i()
 					}, e => {
 						n(Object(d.m)()), n(A()), e && j.d(c), i()
 					}, () => {
@@ -170,7 +170,7 @@
 				} catch (r) {
 					j.k(s, "registration_failed_uncaught_exception"), console.error(r)
 				}
-			}, L = (e, t) => async i => {
+			}, R = (e, t) => async i => {
 				try {
 					Object(f.b)(e);
 					const o = await Object(u.a)();
@@ -184,7 +184,7 @@
 						})))
 					}
 				} catch (o) {}
-			}, R = e => async (t, i) => {
+			}, L = e => async (t, i) => {
 				const n = i();
 				if (Object(f.a)(n) === d.c.NotificationsSupported) switch (Object(a.a)()) {
 					case d.a.Default:
@@ -205,13 +205,13 @@
 				o.onchange = () => (t => {
 					switch (t) {
 						case d.a.Denied:
-							e(L(d.a.Denied)), j.e(n);
+							e(R(d.a.Denied)), j.e(n);
 							break;
 						case d.a.Granted:
 							e(A()), j.d(n);
 							break;
 						default:
-							e(L(d.a.Default))
+							e(R(d.a.Default))
 					}
 				})(o.state)
 			}
@@ -386,8 +386,8 @@
 					isLoggedIn: x,
 					isOpen: k,
 					isPending: S,
-					isPushNotificationsSupported: w,
-					markAllAsRead: N,
+					isPushNotificationsSupported: N,
+					markAllAsRead: w,
 					markNotificationAsRead: y,
 					messagesBadgeCount: _,
 					notifications: I,
@@ -419,14 +419,14 @@
 					hideTooltip: p,
 					blockAwarder: m,
 					inboxBadgeCount: O,
-					isPushNotificationsSupported: w,
+					isPushNotificationsSupported: N,
 					isHotPotatoEnabled: g,
 					isInboxPolicyBannerEnabled: h,
 					isInboxInfiniteScrollEnabled: j,
 					isInboxPostEmbedEnabled: v,
 					isLoggedIn: x,
 					isPending: S,
-					markAllAsRead: N,
+					markAllAsRead: w,
 					markNotificationAsRead: y,
 					messagesBadgeCount: _,
 					notifications: I,
@@ -465,9 +465,9 @@
 			})), i.d(t, "o", (function() {
 				return S
 			})), i.d(t, "h", (function() {
-				return w
-			})), i.d(t, "g", (function() {
 				return N
+			})), i.d(t, "g", (function() {
+				return w
 			}));
 			var n = i("./src/reddit/selectors/telemetry.ts"),
 				o = i("./src/telemetry/index.ts"),
@@ -595,13 +595,13 @@
 						pageType: "community_alerts"
 					}
 				}),
-				w = () => e => ({
+				N = () => e => ({
 					...n.o(e),
 					action: "click",
 					noun: "desktop_notification_permissions",
 					source: "overlay"
 				}),
-				N = () => e => ({
+				w = () => e => ({
 					...n.o(e),
 					action: "auto_dismiss",
 					noun: "desktop_notification_permissions",
@@ -613,4 +613,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.a49489c1e131450bf968.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.64927e90ede1ed28f890.js.map

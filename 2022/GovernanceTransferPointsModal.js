@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.ba06650d92aa186625ad.js
-// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.779e642ad9db41fb1731.js
+// Retrieved at 12/6/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -589,7 +589,7 @@
 				transferIsPending: e => e.transfers.communityPoints.api.pending,
 				wallet: B.d
 			});
-			var L = Object(l.b)(V)((function(e) {
+			var W = Object(l.b)(V)((function(e) {
 					const {
 						amount: t,
 						className: n,
@@ -631,13 +631,13 @@
 						hk: "2jpbqY"
 					})))
 				})),
-				W = n("./src/reddit/components/Governance/ModalFrame/index.tsx"),
+				L = n("./src/reddit/components/Governance/ModalFrame/index.tsx"),
 				U = n("./src/reddit/components/Governance/TransferPointsModal/FeesInfo/index.m.less"),
 				H = n.n(U);
 			const Y = e => `${x.a.assetPath}/img/communityPoints/${e}.png`;
 
 			function z(e) {
-				return c.a.createElement(W.a, {
+				return c.a.createElement(L.a, {
 					className: e.className,
 					title: D.fbt._("What is the network fee?", null, {
 						hk: "4zafLX"
@@ -843,7 +843,7 @@
 					onBack: r,
 					onShowFeesInfo: i
 				} = e;
-				return c.a.createElement(W.a, {
+				return c.a.createElement(L.a, {
 					className: t,
 					headerRight: c.a.createElement(te, {
 						amount: a.amount,
@@ -1104,13 +1104,13 @@
 						return A.a.warning
 				}
 			}
-			var Le = n("./src/reddit/components/Governance/ModalTitle/index.tsx");
+			var We = n("./src/reddit/components/Governance/ModalTitle/index.tsx");
 
-			function We(e) {
+			function Le(e) {
 				const {
 					tokenName: t
 				} = e;
-				return c.a.createElement(Le.a, {
+				return c.a.createElement(We.a, {
 					className: e.className
 				}, D.fbt._("Tip {tokenName}", [D.fbt._param("tokenName", t)], {
 					hk: "44Htik"
@@ -1140,7 +1140,7 @@
 					});
 					return c.a.createElement("div", {
 						className: Ye.a.container
-					}, c.a.createElement(We, {
+					}, c.a.createElement(Le, {
 						className: Ye.a.title,
 						subredditId: s.id,
 						tokenName: a
@@ -1276,7 +1276,7 @@
 						ethAmount: (null == e ? void 0 : e.ethAmount) || "0",
 						subredditId: o.id,
 						tokenName: i.name
-					}) : c.a.createElement(We, {
+					}) : c.a.createElement(Le, {
 						className: Ke.a.title,
 						subredditId: o.id,
 						tokenName: i.name
@@ -1313,7 +1313,7 @@
 						tabIndex: 2,
 						onChange: this.handleRecipientChange,
 						subredditId: o.id
-					})), c.a.createElement(L, {
+					})), c.a.createElement(W, {
 						amount: this.state.tokenAmount,
 						className: Ke.a.controls,
 						submissionEnabled: !!this.state.tokenAmount && this.state.recipientIsValid && this.canAffordFees(),
@@ -2050,14 +2050,14 @@
 			const r = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.we
-					}) === s.Ld
+						experimentName: s.ye
+					}) === s.Nd
 				},
 				i = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.ue
-					}) === s.Ld
+						experimentName: s.we
+					}) === s.Nd
 				}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
@@ -2114,4 +2114,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.ba06650d92aa186625ad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.779e642ad9db41fb1731.js.map
