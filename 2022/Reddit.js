@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.e08fa5eac8c4ad64fa23.js
-// Retrieved at 12/7/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.4b8ed0c316d2edd68f41.js
+// Retrieved at 12/7/2022, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -21670,7 +21670,7 @@
 			var s = n("./src/lib/initializeClient/installReducer.ts"),
 				r = n("./src/reddit/models/EconManagement/index.ts"),
 				o = n("./src/reddit/actions/economics/econManagement/constants.ts");
-			const a = e => e.map(e => {
+			const a = e => e ? e.map(e => {
 					let {
 						backup_created_at: t,
 						backup_modified_at: n,
@@ -21687,7 +21687,7 @@
 						hiddenAt: r,
 						modifiedAt: o
 					}
-				}),
+				}) : [],
 				i = {
 					displayState: r.a.Default,
 					currentEntity: null,
@@ -22605,4 +22605,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "PostCreation~Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-c~93a1f1ba", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.e08fa5eac8c4ad64fa23.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.4b8ed0c316d2edd68f41.js.map
