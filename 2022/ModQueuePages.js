@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.f1b6b77d4a6e3b60597f.js
-// Retrieved at 12/6/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.001838a6bfd21c302b08.js
+// Retrieved at 12/7/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1269,8 +1269,8 @@
 			const J = Object(r.a)(G.k),
 				Q = Object(r.a)(G.j),
 				K = Object(r.a)(G.i),
-				z = Object(r.a)(G.h),
-				X = Object(r.a)(G.g),
+				X = Object(r.a)(G.h),
+				z = Object(r.a)(G.g),
 				Y = Object(r.a)(G.f),
 				Z = Object(r.a)(G.e),
 				$ = Object(r.a)(G.s),
@@ -1291,10 +1291,10 @@
 					let f, x, v;
 					switch (t) {
 						case o.wb.Edited:
-							f = X, x = Z, v = Y;
+							f = z, x = Z, v = Y;
 							break;
 						case o.wb.Modqueue:
-							f = Q, x = z, v = K;
+							f = Q, x = X, v = K;
 							break;
 						case o.wb.Reports:
 							f = $, x = te, v = ee;
@@ -1826,8 +1826,8 @@
 				J = n("./src/reddit/models/ModQueue/index.ts"),
 				Q = n("./src/reddit/models/PostDraft/index.ts"),
 				K = n("./src/reddit/models/RemovalReason/index.ts"),
-				z = n("./src/reddit/models/Toast/index.ts"),
-				X = n("./src/reddit/selectors/comments.ts"),
+				X = n("./src/reddit/models/Toast/index.ts"),
+				z = n("./src/reddit/selectors/comments.ts"),
 				Y = n("./src/reddit/selectors/platform.ts");
 			Object(o.a)({
 				features: {
@@ -1873,7 +1873,7 @@
 							subredditId: e,
 							reason: r
 						})), n(Object(P.f)({
-							kind: z.b.SuccessMod,
+							kind: X.b.SuccessMod,
 							text: s.fbt._("Removal reason added!", null, {
 								hk: "2WSh8N"
 							})
@@ -1897,7 +1897,7 @@
 						subredditId: e,
 						reason: t
 					})), n(Object(P.f)({
-						kind: z.b.SuccessMod,
+						kind: X.b.SuccessMod,
 						text: s.fbt._("Removal reason saved", null, {
 							hk: "28ScuL"
 						})
@@ -1916,7 +1916,7 @@
 						subredditId: e,
 						reasonId: t
 					})), n(Object(P.f)({
-						kind: z.b.SuccessMod,
+						kind: X.b.SuccessMod,
 						text: s.fbt._("Removal reason deleted", null, {
 							hk: "4xzgsa"
 						})
@@ -1983,7 +1983,7 @@
 											const n = Object(w.a)(Q.c.replyToPost, u);
 											i(Object(N.r)({
 												...t,
-												headCommentId: Object(X.w)(l, {
+												headCommentId: Object(z.w)(l, {
 													commentsPageKey: o
 												}),
 												commentsPageKey: o,
@@ -2001,7 +2001,7 @@
 											}))
 										} else if (p === K.e.Comment) {
 											const e = Object(w.a)(Q.c.replyToComment, b.id),
-												n = Object(X.j)(l, {
+												n = Object(z.j)(l, {
 													commentId: u,
 													commentsPageKey: o
 												});
@@ -2036,7 +2036,7 @@
 					if (!m) return;
 					i(fe());
 					const u = Object(P.f)({
-							kind: z.b.SuccessMod,
+							kind: X.b.SuccessMod,
 							text: s.fbt._({
 								"*": "Added removal reason for {number} posts/comments",
 								_1: "Added removal reason for 1 post/comment"
@@ -3170,8 +3170,8 @@
 				J = n("./src/reddit/icons/fonts/Lock/index.tsx"),
 				Q = n("./src/reddit/icons/fonts/Remove/index.tsx"),
 				K = n("./src/reddit/icons/fonts/Report/index.tsx"),
-				z = n("./src/reddit/icons/fonts/Spam/index.tsx"),
-				X = n("./src/reddit/selectors/modQueue.ts"),
+				X = n("./src/reddit/icons/fonts/Spam/index.tsx"),
+				z = n("./src/reddit/selectors/modQueue.ts"),
 				Y = n("./src/reddit/components/Comments/Comment/TopMeta/modBadgeTooltip.m.less"),
 				Z = n.n(Y);
 			const $ = e => {
@@ -3186,7 +3186,7 @@
 					m = Object(i.e)(e => D.e[Object(U.V)(e, {
 						pageLayer: l
 					})] === D.d.Card),
-					u = Object(i.e)(e => Object(X.b)(e, m)),
+					u = Object(i.e)(e => Object(z.b)(e, m)),
 					p = e => () => c(Object(S.f)({
 						tooltipId: e
 					})),
@@ -3236,7 +3236,7 @@
 						hk: "40Ju3g"
 					}),
 					isFilled: !0
-				}), t.bannedBy && t.isSpam && !u && r.a.createElement(r.a.Fragment, null, r.a.createElement(z.a, {
+				}), t.bannedBy && t.isSpam && !u && r.a.createElement(r.a.Fragment, null, r.a.createElement(X.a, {
 					className: Z.a.spamIcon,
 					desc: Object(W.d)(t),
 					id: g,
@@ -6671,12 +6671,12 @@
 						rtJsonElementProps: i
 					});
 					switch (r) {
-						case h.Wf.SmIcon:
+						case h.Xf.SmIcon:
 							return o.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case h.Wf.SmIconHc:
+						case h.Xf.SmIconHc:
 							return o.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -8164,7 +8164,7 @@
 				hk: "2GBjtX"
 			})))), d.a.createElement(F.a, null, d.a.createElement(J, null)));
 			const K = Object(g.v)(),
-				z = Object(l.c)({
+				X = Object(l.c)({
 					queryParams: (e, t) => {
 						let {
 							location: n
@@ -8172,7 +8172,7 @@
 						return o()([...Object(m.a)(n.search)])
 					}
 				}),
-				X = Object(l.c)({
+				z = Object(l.c)({
 					queryParams: (e, t) => {
 						let {
 							location: n
@@ -8195,7 +8195,7 @@
 						}))
 					})
 				}),
-				Y = Object(l.a)(z, g.U, j.o, (e, t) => {
+				Y = Object(l.a)(X, g.U, j.o, (e, t) => {
 					let {
 						match: n
 					} = t;
@@ -8239,7 +8239,7 @@
 						isRealtimeMQUpdatesExperimentEnabled: o
 					}
 				}),
-				Z = Object(c.b)(X, e => ({
+				Z = Object(c.b)(z, e => ({
 					handleRealtimeUpdates: i()(t => {
 						e(Object(b.a)(t.subscribe.data.subredditID)), e(Object(b.c)(t))
 					}, 1e3)
@@ -8414,7 +8414,7 @@
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
 					experimentName: s.F
-				}) === s.Nd
+				}) === s.Od
 			}
 		},
 		"./src/reddit/selectors/experiments/realtimeMQUpdates.ts": function(e, t, n) {
@@ -8428,8 +8428,8 @@
 				i = n("./src/reddit/selectors/experiments/modqueueActionBarUXImprovements.ts");
 			const a = e => Object(i.a)(e) && Object(o.c)(e, {
 				experimentEligibilitySelector: r.S,
-				experimentName: s.zc
-			}) === s.Nd
+				experimentName: s.Ac
+			}) === s.Od
 		},
 		"./src/reddit/selectors/subredditMention.ts": function(e, t, n) {
 			"use strict";
@@ -8454,12 +8454,12 @@
 				d = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Qf
+						experimentName: s.Rf
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.Wf.SmIcon || t === s.Wf.SmIconHc
+					return t === s.Xf.SmIcon || t === s.Xf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -8497,4 +8497,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.f1b6b77d4a6e3b60597f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.001838a6bfd21c302b08.js.map

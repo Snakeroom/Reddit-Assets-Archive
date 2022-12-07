@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.1d783cf216e5f0743e7e.js
-// Retrieved at 12/6/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.af974ab392fddaeee840.js
+// Retrieved at 12/7/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -4498,7 +4498,7 @@
 					}, a.a.createElement(b.b, {
 						textColor: d
 					})), a.a.createElement(M, {
-						qrCodeAsset: (() => s === _.ad.Enabled || r === _.gb.BlurredPreview || r === _.gb.NoPreview ? F.d2x_nsfw_signup_blocking_de_v1 : F.d2x_nsfw_signup_blocking_non_us_v1)()
+						qrCodeAsset: (() => s === _.bd.Enabled || r === _.gb.BlurredPreview || r === _.gb.NoPreview ? F.d2x_nsfw_signup_blocking_de_v1 : F.d2x_nsfw_signup_blocking_non_us_v1)()
 					}))
 				},
 				B = e => {
@@ -6048,4 +6048,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.1d783cf216e5f0743e7e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.af974ab392fddaeee840.js.map

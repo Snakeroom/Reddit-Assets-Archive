@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.6cadd74ad81cba25ddd3.js
-// Retrieved at 12/6/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.c979a2df7506ccee9da1.js
+// Retrieved at 12/7/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./node_modules/lodash/map.js": function(e, t, n) {
@@ -192,8 +192,8 @@
 						isFullWidth: w,
 						isUnread: L,
 						isInAppNotification: P,
-						isNightMode: U,
-						notificationId: D,
+						isNightMode: D,
+						notificationId: U,
 						onEvent: F
 					} = e,
 					B = null == g ? void 0 : g.messageType,
@@ -219,7 +219,7 @@
 						return i && "r" === s && (t.subredditName = i), r && (t.postId = `${u.b}${r}`), a && (t.commentId = `${u.a}${a}`), t
 					})(A);
 					K = e.postId, J = e.commentId
-				} else B !== x.a.PostReply && B !== x.a.LifecyclePostSuggestions || (J = D);
+				} else B !== x.a.PostReply && B !== x.a.LifecyclePostSuggestions || (J = U);
 				const Z = e => {
 					if (K && J) {
 						const e = Object(a.a)(K, J, Object(h.c)(A)),
@@ -256,7 +256,7 @@
 								redditStyle: !0,
 								className: Object(r.a)(_.a.notificationButton, {
 									[_.a.isUnread]: L && !P,
-									[_.a.isNightMode]: U,
+									[_.a.isNightMode]: D,
 									[_.a.inAppNotification]: P,
 									[_.a.isFullWidth]: w && !P
 								})
@@ -281,7 +281,7 @@
 								redditStyle: !0,
 								className: Object(r.a)(_.a.notificationButton, {
 									[_.a.isUnread]: L && !P,
-									[_.a.isNightMode]: U,
+									[_.a.isNightMode]: D,
 									[_.a.inAppNotification]: P,
 									[_.a.isFullWidth]: w && !P
 								})
@@ -310,7 +310,7 @@
 								eventSource: l.a.awardNotification,
 								className: Object(r.a)(_.a.notificationButton, {
 									[_.a.isUnread]: L && !P,
-									[_.a.isNightMode]: U,
+									[_.a.isNightMode]: D,
 									[_.a.inAppNotification]: P,
 									[_.a.isFullWidth]: w && !P
 								})
@@ -380,7 +380,7 @@
 								priority: p.c.Tertiary,
 								redditStyle: !0,
 								className: Object(r.a)(_.a.notificationButton, {
-									[_.a.isNightMode]: U,
+									[_.a.isNightMode]: D,
 									[_.a.inAppNotification]: !0
 								})
 							}, e(B))
@@ -394,7 +394,7 @@
 								priority: p.c.Tertiary,
 								redditStyle: !0,
 								className: Object(r.a)(_.a.notificationButton, {
-									[_.a.isNightMode]: U,
+									[_.a.isNightMode]: D,
 									[_.a.inAppNotification]: !0
 								})
 							}, y._("See more", null, {
@@ -510,11 +510,11 @@
 				experimentEligibilitySelector: s.a,
 				experimentName: o.sb
 			}), e => ({
-				bucketed: e === o.Uc.ExpandedSearch || e === o.Uc.CollapsedSearch,
-				collapsed: e === o.Uc.CollapsedSearch,
-				expanded: e === o.Uc.ExpandedSearch
+				bucketed: e === o.Vc.ExpandedSearch || e === o.Vc.CollapsedSearch,
+				collapsed: e === o.Vc.CollapsedSearch,
+				expanded: e === o.Vc.ExpandedSearch
 			}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.6cadd74ad81cba25ddd3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.c979a2df7506ccee9da1.js.map

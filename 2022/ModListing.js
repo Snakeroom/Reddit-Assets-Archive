@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.4ee645f251d6f799274f.js
-// Retrieved at 12/6/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.bfe739853e7fac2cbc38.js
+// Retrieved at 12/7/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, r) {
@@ -514,9 +514,9 @@
 			})), r.d(t, "unhideSubredditSuccess", (function() {
 				return U
 			})), r.d(t, "unhideSubredditPending", (function() {
-				return Q
-			})), r.d(t, "unhideSubredditFailed", (function() {
 				return J
+			})), r.d(t, "unhideSubredditFailed", (function() {
+				return Q
 			})), r.d(t, "toggleHiddenSubreddit", (function() {
 				return X
 			})), r.d(t, "hideSubreddit", (function() {
@@ -671,15 +671,15 @@
 				q = Object(d.a)(k.b),
 				K = Object(d.a)(k.a),
 				U = Object(d.a)(k.l),
-				Q = Object(d.a)(k.k),
-				J = Object(d.a)(k.j),
+				J = Object(d.a)(k.k),
+				Q = Object(d.a)(k.j),
 				X = (e, t) => async (r, n, s) => {
 					let {
 						apiContext: i
 					} = s;
 					const o = n(),
 						d = Object(L.m)(o),
-						[a, c, u, l] = t ? [q, V, K, O] : [Q, U, J, E];
+						[a, c, u, l] = t ? [q, V, K, O] : [J, U, Q, E];
 					if (!d || !d.displayText) return;
 					const {
 						currentPage: m
@@ -1785,11 +1785,11 @@
 				q = r("./src/reddit/layout/row/Inline/index.tsx"),
 				K = r("./src/reddit/components/ModListingSidebar/HideCommunities/HideInput/index.m.less"),
 				U = r.n(K);
-			const Q = Object(a.c)({
+			const J = Object(a.c)({
 				apiError: e => e.modListingPage.filteredSubreddits.api.error,
 				isApiPending: B
 			});
-			class J extends o.a.Component {
+			class Q extends o.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						subredditInput: ""
@@ -1833,9 +1833,9 @@
 					}, e.apiError.explanation))
 				}
 			}
-			var X = Object(d.b)(Q, e => ({
+			var X = Object(d.b)(J, e => ({
 					hide: t => e(Object(m.hideSubreddit)(t))
-				}))(Object(F.c)(J)),
+				}))(Object(F.c)(Q)),
 				Y = r("./src/lib/lessComponent.tsx"),
 				z = r("./src/reddit/components/SubredditIcon/index.tsx"),
 				W = r("./src/reddit/icons/fonts/Clear/index.tsx"),
@@ -2085,7 +2085,7 @@
 				const b = Object(o.e)(e => e.subreddits.survey[r]),
 					p = Object(o.e)(e => e.subreddits.progressModule[r]),
 					h = Object(o.e)(l.a),
-					f = h !== c.Qe.NewModule;
+					f = h !== c.Re.NewModule;
 				return (null === (s = null == p ? void 0 : p.cards) || void 0 === s ? void 0 : s.length) > 0 && f ? i.a.createElement(m, {
 					closeModuleOnMount: !!t && t !== u.g.Large,
 					subredditId: r,
@@ -2171,15 +2171,15 @@
 			const o = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: i.S,
-						experimentName: n.td
+						experimentName: n.ud
 					});
-					return !(!t || Object(n.xg)(t))
+					return !(!t || Object(n.yg)(t))
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: i.S,
-						experimentName: n.td
-					}) === n.Rd.ListingEnabled
+						experimentName: n.ud
+					}) === n.Sd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/experiments/recapLeadUpGame.ts": function(e, t, r) {
@@ -2197,8 +2197,8 @@
 			const a = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: i.a,
-						experimentName: n.qf
-					}) === n.Nd
+						experimentName: n.rf
+					}) === n.Od
 				},
 				c = Object(d.a)(o.S, (e, t) => {
 					let {
@@ -2209,8 +2209,8 @@
 				u = (e, t) => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: e => c(e, t),
-						experimentName: n.rf
-					}) === n.Nd
+						experimentName: n.sf
+					}) === n.Od
 				}
 		},
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, r) {
@@ -2228,8 +2228,8 @@
 			const a = Object(o.a)(d.S, e => !e),
 				c = Object(o.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: a,
-					experimentName: n.If
-				}), e => e === n.Nd),
+					experimentName: n.Jf
+				}), e => e === n.Od),
 				u = Object(o.a)(c, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? t : i.a.Off),
 				l = Object(o.a)(u, e => e === i.a.Treatment),
 				m = (e, t) => {
@@ -2260,4 +2260,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.4ee645f251d6f799274f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.bfe739853e7fac2cbc38.js.map

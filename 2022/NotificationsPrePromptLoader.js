@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.3306ed1ea3dab4985262.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.dd30c7bf318ff23266e3.js
+// Retrieved at 12/7/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsPrePromptLoader"], {
 		"./src/reddit/components/NotificationsPrePrompt/index.m.less": function(t, n, o) {
@@ -39,11 +39,11 @@
 					[r, d] = Object(e.useState)();
 				return Object(e.useEffect)(() => {
 					d(setTimeout(() => {
-						o(Object(s.k)()), n(Object(u.g)())
+						o(Object(s.n)()), n(Object(u.g)())
 					}, 5e3))
 				}, [o, n]), i.a.createElement(p, l({
 					onOverlayClick: () => {
-						clearTimeout(Number(r)), o(Object(s.k)()), n(Object(u.h)())
+						clearTimeout(Number(r)), o(Object(s.n)()), n(Object(u.h)())
 					}
 				}, t, {
 					overlayClassName: f.a.overlay,
@@ -78,9 +78,9 @@
 			})), o.d(n, "n", (function() {
 				return g
 			})), o.d(n, "o", (function() {
-				return k
-			})), o.d(n, "h", (function() {
 				return x
+			})), o.d(n, "h", (function() {
+				return k
 			})), o.d(n, "g", (function() {
 				return w
 			}));
@@ -201,7 +201,7 @@
 						name: n.toLowerCase()
 					}
 				}),
-				k = () => t => ({
+				x = () => t => ({
 					...e.o(t),
 					action: c.c.View,
 					noun: "screen",
@@ -210,7 +210,7 @@
 						pageType: "community_alerts"
 					}
 				}),
-				x = () => t => ({
+				k = () => t => ({
 					...e.o(t),
 					action: "click",
 					noun: "desktop_notification_permissions",
@@ -225,4 +225,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.3306ed1ea3dab4985262.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.dd30c7bf318ff23266e3.js.map

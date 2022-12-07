@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.4a46f1423268a48fd216.js
-// Retrieved at 12/6/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.997dacaeb4ed7899f4bd.js
+// Retrieved at 12/7/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/backo2/index.js": function(e, t) {
@@ -1746,8 +1746,8 @@
 				q = n("./src/reddit/icons/fonts/Lock/index.tsx"),
 				Q = n("./src/reddit/icons/fonts/Remove/index.tsx"),
 				z = n("./src/reddit/icons/fonts/Report/index.tsx"),
-				Z = n("./src/reddit/icons/fonts/Spam/index.tsx"),
-				J = n("./src/reddit/selectors/modQueue.ts"),
+				J = n("./src/reddit/icons/fonts/Spam/index.tsx"),
+				Z = n("./src/reddit/selectors/modQueue.ts"),
 				X = n("./src/reddit/components/Comments/Comment/TopMeta/modBadgeTooltip.m.less"),
 				Y = n.n(X);
 			const $ = e => {
@@ -1762,7 +1762,7 @@
 					m = Object(a.e)(e => F.e[Object(U.V)(e, {
 						pageLayer: l
 					})] === F.d.Card),
-					u = Object(a.e)(e => Object(J.b)(e, m)),
+					u = Object(a.e)(e => Object(Z.b)(e, m)),
 					p = e => () => d(Object(k.f)({
 						tooltipId: e
 					})),
@@ -1812,7 +1812,7 @@
 						hk: "40Ju3g"
 					}),
 					isFilled: !0
-				}), t.bannedBy && t.isSpam && !u && r.a.createElement(r.a.Fragment, null, r.a.createElement(Z.a, {
+				}), t.bannedBy && t.isSpam && !u && r.a.createElement(r.a.Fragment, null, r.a.createElement(J.a, {
 					className: Y.a.spamIcon,
 					desc: Object(G.d)(t),
 					id: g,
@@ -2981,8 +2981,8 @@
 				q = n("./src/reddit/selectors/commentSelector.ts"),
 				Q = n("./src/reddit/selectors/moderatorPermissions.ts"),
 				z = n("./src/reddit/actions/comment/websocket/constants.ts");
-			const Z = Object(v.a)(z.b),
-				J = Object(v.a)(z.c),
+			const J = Object(v.a)(z.b),
+				Z = Object(v.a)(z.c),
 				X = Object(v.a)(z.a),
 				Y = Object(v.a)(z.d),
 				$ = {},
@@ -3018,14 +3018,14 @@
 											const t = Object(K.w)(i, {
 												commentsPageKey: e
 											});
-											s(Z({
+											s(J({
 												authorFlair: n,
 												comment: a,
 												commentsPageKey: e,
 												headCommentId: t,
 												numComments: r
 											}))
-										} else s(J({
+										} else s(Z({
 											authorFlair: n,
 											comment: a,
 											commentsPageKey: e,
@@ -3044,7 +3044,7 @@
 									if (i && c) {
 										const n = L(0, o, t.payload),
 											r = t.payload.total_comment_count;
-										s(J({
+										s(Z({
 											authorFlair: n,
 											comment: c,
 											commentsPageKey: e,
@@ -3060,7 +3060,7 @@
 										i = Object(q.c)(a, {
 											commentId: n
 										});
-									i && s(J({
+									i && s(Z({
 										comment: {
 											...i,
 											score: o
@@ -3396,8 +3396,8 @@
 					var o, s, r;
 					return null !== (r = null === (s = null === (o = null == e ? void 0 : e.continueThreads) || void 0 === o ? void 0 : o.models[`continueThread-${n}`]) || void 0 === s ? void 0 : s.count) && void 0 !== r ? r : 0
 				};
-			var Ze = n("./src/lib/makeDraftKey/index.ts"),
-				Je = n("./src/reddit/actions/comment/authoring.ts"),
+			var Je = n("./src/lib/makeDraftKey/index.ts"),
+				Ze = n("./src/reddit/actions/comment/authoring.ts"),
 				Xe = n("./src/reddit/components/Comments/Comment/TopMeta/index.tsx"),
 				Ye = n("./src/reddit/components/Comments/PredictionComment/async.ts"),
 				$e = n("./src/lib/objectSelector/index.ts"),
@@ -3585,8 +3585,8 @@
 				qt = n("./src/reddit/icons/fonts/Approve/index.tsx"),
 				Qt = n("./src/reddit/icons/fonts/Remove/index.tsx"),
 				zt = n("./src/reddit/icons/fonts/Spam/index.tsx"),
-				Zt = n("./src/reddit/icons/svgs/Bling/index.tsx"),
-				Jt = n("./src/reddit/icons/svgs/Distinguish/index.tsx");
+				Jt = n("./src/reddit/icons/svgs/Bling/index.tsx"),
+				Zt = n("./src/reddit/icons/svgs/Distinguish/index.tsx");
 			const Xt = e => {
 				let {
 					comment: t,
@@ -3625,7 +3625,7 @@
 						hk: "2ohUEB"
 					}),
 					onClick: _
-				}, p.a.createElement(Zt.a, {
+				}, p.a.createElement(Jt.a, {
 					className: At.a.dropdownIcon
 				})), n && !d && p.a.createElement(Kt.b, {
 					className: At.a.dropdownMenuItem,
@@ -3633,7 +3633,7 @@
 						hk: "jywZz"
 					}),
 					onClick: g
-				}, p.a.createElement(Jt.a, {
+				}, p.a.createElement(Zt.a, {
 					className: At.a.dropdownIcon
 				})), (t.bannedBy || a) && p.a.createElement(Kt.b, {
 					className: At.a.dropdownMenuItem,
@@ -3698,9 +3698,9 @@
 						}, [a, m, t]),
 						C = p.a.useCallback(() => {
 							const e = t.media && t.media.rteMode;
-							n && a(Object(Je.e)({
+							n && a(Object(Ze.e)({
 								commentId: t.id,
-								draftKey: Object(Ze.a)(sn.c.edit, t.id),
+								draftKey: Object(Je.a)(sn.c.edit, t.id),
 								text: t.bodyMD || "",
 								commentMode: e,
 								commentsPageKey: n
@@ -3848,7 +3848,7 @@
 						commentsPageKey: o
 					} = t;
 					return {
-						onReplyClick: () => e(Object(Je.s)({
+						onReplyClick: () => e(Object(Ze.s)({
 							parentCommentId: n.id,
 							commentsPageKey: o,
 							singleOpen: !0
@@ -3860,7 +3860,7 @@
 								thingId: n.id
 							}))
 						},
-						deleteComment: () => o && e(Object(Je.i)(n.id, n.postId)),
+						deleteComment: () => o && e(Object(Ze.i)(n.id, n.postId)),
 						toggleDeleteCommentModal: () => e(Object(bt.i)(rn(n.id)))
 					}
 				})(e => {
@@ -4183,8 +4183,8 @@
 						hk: "hGgqt"
 					})))))) : null
 				};
-			var Zn = n("./src/reddit/components/CommentsChat/Comment/AwardsBadge/index.m.less"),
-				Jn = n.n(Zn);
+			var Jn = n("./src/reddit/components/CommentsChat/Comment/AwardsBadge/index.m.less"),
+				Zn = n.n(Jn);
 			const Xn = () => {},
 				Yn = e => {
 					let {
@@ -4227,14 +4227,14 @@
 						tooltipId: n
 					}, p.a.createElement("button", {
 						id: n,
-						className: Object(s.a)(Jn.a.badge, {
-							[Jn.a.awarded]: l
+						className: Object(s.a)(Zn.a.badge, {
+							[Zn.a.awarded]: l
 						}),
 						onClick: b
 					}, f.map(e => p.a.createElement("img", {
 						key: e.id,
 						alt: e.name,
-						className: Jn.a.awardIcon,
+						className: Zn.a.awardIcon,
 						src: Object(fe.c)({
 							award: e,
 							postOrComment: t,
@@ -4242,7 +4242,7 @@
 							prefersReducedMotion: m
 						})
 					})), p.a.createElement("span", {
-						className: Jn.a.countText
+						className: Zn.a.countText
 					}, o.fbt._({
 						"*": "{number} awards",
 						_1: "1 award"
@@ -4320,12 +4320,12 @@
 						isLivestreaming: s
 					} = t;
 					return {
-						onSubmitRetry: () => e(Object(Je.n)({
+						onSubmitRetry: () => e(Object(Ze.n)({
 							commentId: n,
 							commentsPageKey: o,
 							isLivestreaming: s
 						})),
-						triggerReplyForm: () => e(Object(Je.s)({
+						triggerReplyForm: () => e(Object(Ze.s)({
 							parentCommentId: n,
 							commentsPageKey: o,
 							singleOpen: !0
@@ -4399,8 +4399,8 @@
 						}, [b]), p.a.useEffect(() => {
 							B.current && w && w(B)
 						}, [w]), !a) return null;
-					const Z = a.isSystem,
-						J = !a.isDeleted && !Z,
+					const J = a.isSystem,
+						Z = !a.isDeleted && !J,
 						X = !!t,
 						Y = Object.keys(a.awardCountsById || {}).length > 0,
 						$ = !!(null == q ? void 0 : q.length),
@@ -4430,12 +4430,12 @@
 					})), p.a.createElement("div", {
 						id: T ? "targetComment" : void 0,
 						className: Object(s.a)({
-							[eo.a.comment]: !Z,
-							[eo.a.systemMessageComment]: Z && !v && L,
+							[eo.a.comment]: !J,
+							[eo.a.systemMessageComment]: J && !v && L,
 							[eo.a.highlighted]: T,
 							[eo.a.expanded]: H
 						})
-					}, J && p.a.createElement(p.a.Fragment, null, p.a.createElement("div", {
+					}, Z && p.a.createElement(p.a.Fragment, null, p.a.createElement("div", {
 						className: eo.a.avatar
 					}, ee ? p.a.createElement(He.a, null) : p.a.createElement(Tn.a, {
 						className: Object(s.a)(eo.a.icon),
@@ -4517,11 +4517,11 @@
 						isEmbeddedLiveChat: g,
 						postId: x,
 						sendEvent: I,
-						draftKey: Object(Ze.a)(sn.c.edit, a.id),
+						draftKey: Object(Je.a)(sn.c.edit, a.id),
 						commentsPageKey: c,
 						isEditing: C,
 						comment: a
-					})), a.isDeleted && p.a.createElement(pt.a, null), J && !C && l && l.map((e, t) => p.a.createElement(Sn.b, {
+					})), a.isDeleted && p.a.createElement(pt.a, null), Z && !C && l && l.map((e, t) => p.a.createElement(Sn.b, {
 						key: `${t}-${e}`,
 						className: eo.a.errorText
 					}, e)), !C && V && !H && p.a.createElement("button", {
@@ -4534,7 +4534,7 @@
 						}
 					}, o.fbt._("Read more", null, {
 						hk: "3s9Bqf"
-					})), Z && !v && L && p.a.createElement(In, {
+					})), J && !v && L && p.a.createElement(In, {
 						comment: a
 					}), Q && !k && (!!(null === (P = null == A ? void 0 : A.replyCommentIds[a.id]) || void 0 === P ? void 0 : P.length) || !!u) && p.a.createElement(jn, {
 						onClick: () => {
@@ -4864,12 +4864,12 @@
 					}, r.w.NEW, null == n ? void 0 : n.threadRequest)),
 					fetchAvailableReactionAwards: async t => e(Re(t)),
 					processReactionAwardStreamData: t => e(Ae(t)),
-					clearReplyForm: n => e(Object(Je.b)({
+					clearReplyForm: n => e(Object(Ze.b)({
 						parentCommentId: n,
 						commentsPageKey: t.commentsPageKey
 					})),
 					createBotComment: () => {
-						e(Z({
+						e(J({
 							authorFlair: void 0,
 							headCommentId: void 0,
 							numComments: 0,
@@ -6382,8 +6382,8 @@
 				r = n("./src/reddit/selectors/user.ts");
 			const a = e => Object(s.c)(e, {
 				experimentEligibilitySelector: r.S,
-				experimentName: o.Zb
-			}) === o.Nd
+				experimentName: o.ac
+			}) === o.Od
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, n) {
 			"use strict";
@@ -6482,4 +6482,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.4a46f1423268a48fd216.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.997dacaeb4ed7899f4bd.js.map

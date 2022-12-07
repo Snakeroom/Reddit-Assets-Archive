@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.740db7be5b4eb1057e3b.js
-// Retrieved at 12/6/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.65776fea7af6b2288ffb.js
+// Retrieved at 12/7/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -346,7 +346,7 @@
 				i = n("./src/lib/notifications/featureFlags.ts"),
 				s = n("./src/reddit/featureFlags/index.ts"),
 				c = n("./src/reddit/helpers/localStorage/index.ts");
-			const a = e => s.d.pushNotificationsBrowserSupported(e) ? Object(i.a)() : o.c.BrowserUnsupported,
+			const a = e => s.d.pushNotificationsBrowserSupported(e) ? Object(i.a)() : o.d.BrowserUnsupported,
 				d = e => {
 					switch (e) {
 						case o.a.Denied:
@@ -3491,7 +3491,7 @@
 					return r ? r * o.Xb < 1639443600180 ? void 0 : O(e) : void 0
 				},
 				O = Object(r.a)(e => Object(c.c)(e, {
-					experimentName: i.Ie,
+					experimentName: i.Je,
 					experimentEligibilitySelector: a.e
 				}), d.a)
 		},
@@ -3501,21 +3501,24 @@
 				return r
 			})), n.d(t, "b", (function() {
 				return o
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "g", (function() {
 				return i
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "f", (function() {
 				return s
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "e", (function() {
 				return c
 			})), n.d(t, "c", (function() {
 				return a
+			})), n.d(t, "d", (function() {
+				return d
 			}));
 			const r = e => e.user.notificationPrefs.api.getPreferences.loaded,
 				o = e => e.user.notificationPrefs.api.getPreferences.pending,
 				i = e => e.user.notificationPrefs.api.setPreferences.pending,
 				s = e => e.user.notificationPrefs.preferences,
 				c = e => e.user.notificationPrefs.isNotificationPromptVisible,
-				a = (e, t) => {
+				a = e => e.user.notificationPrefs.isAskNotificationPromptVisible,
+				d = (e, t) => {
 					var n, r;
 					const o = (e => e.user.notificationPrefs.pushSettingsLayout)(e),
 						i = null === (n = null == o ? void 0 : o.rows) || void 0 === n ? void 0 : n.byId;
@@ -3567,7 +3570,7 @@
 					}
 					return null
 				}),
-				p = Object(i.a)(o.a, e => e === r.c.NotificationsSupported)
+				p = Object(i.a)(o.a, e => e === r.d.NotificationsSupported)
 		},
 		"./src/redditGQL/operations/BadgeIndicators.json": function(e) {
 			e.exports = JSON.parse('{"id":"9d105ce5d71a"}')
@@ -3598,4 +3601,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.740db7be5b4eb1057e3b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.65776fea7af6b2288ffb.js.map

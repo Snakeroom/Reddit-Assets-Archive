@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.5ff0477960bc53b0c2ab.js
-// Retrieved at 12/6/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.eb703212830f9faa206e.js
+// Retrieved at 12/7/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-SubscriptionModal"], {
 		"./src/reddit/components/Governance/TokenAmount/index.m.less": function(e, t, n) {
@@ -119,36 +119,36 @@
 				y = n("./src/reddit/hooks/useTracking.ts"),
 				v = n("./src/reddit/models/Badge/managementPage.ts"),
 				x = n("./src/reddit/models/Toast/index.ts"),
-				f = n("./src/reddit/selectors/crypto/points.ts"),
-				O = n("./src/reddit/selectors/gov.ts"),
+				O = n("./src/reddit/selectors/crypto/points.ts"),
+				f = n("./src/reddit/selectors/gov.ts"),
 				j = n("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx"),
 				T = n("./src/config.ts"),
 				_ = n("./src/reddit/components/SubredditIcon/index.tsx"),
 				A = n("./src/reddit/components/UserIcon/CurrentUserIcon.tsx"),
 				M = n("./src/reddit/selectors/economics.ts"),
-				w = n("./src/reddit/selectors/subreddit.ts"),
-				I = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx"),
-				g = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Overview.tsx"),
-				N = n("./src/reddit/components/Governance/TransactionModals/SubscriptionModal/Approval.m.less"),
-				h = n.n(N);
+				I = n("./src/reddit/selectors/subreddit.ts"),
+				g = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx"),
+				w = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Overview.tsx"),
+				h = n("./src/reddit/components/Governance/TransactionModals/SubscriptionModal/Approval.m.less"),
+				N = n.n(h);
 
 			function E(e) {
-				const t = Object(i.e)(t => Object(w.Y)(t, e)),
+				const t = Object(i.e)(t => Object(I.Y)(t, e)),
 					n = Object(i.e)(t => Object(M.r)(t, e.subredditId)),
 					a = n.membershipAlt,
 					o = n.prices.points,
 					c = `${T.a.assetPath}/img/memberships/paywall/${t.name.toLowerCase()}/membership_frame.svg`;
-				return r.a.createElement(g.a, {
+				return r.a.createElement(w.a, {
 					subredditId: e.subredditId,
 					image: r.a.createElement("div", {
-						className: h.a.membershipFrame
+						className: N.a.membershipFrame
 					}, r.a.createElement(A.a, {
-						className: h.a.userIcon
+						className: N.a.userIcon
 					}), r.a.createElement("img", {
-						className: h.a.frameImage,
+						className: N.a.frameImage,
 						src: c
 					}), r.a.createElement(_.b, {
-						className: h.a.subredditIcon,
+						className: N.a.subredditIcon,
 						subredditOrProfile: t
 					})),
 					title: a,
@@ -159,10 +159,10 @@
 					})
 				})
 			}
-			const S = e => r.a.createElement(I.b, {
+			const S = e => r.a.createElement(g.b, {
 				values: [
-					[Object(I.c)(), e.transaction.arguments[0]],
-					[Object(I.a)(), e.transaction.contractAddress]
+					[Object(g.c)(), e.transaction.arguments[0]],
+					[Object(g.a)(), e.transaction.contractAddress]
 				]
 			});
 
@@ -174,12 +174,12 @@
 					pointsDetails: _,
 					walletAddress: A
 				} = Object(i.e)(Object(o.c)({
-					pointsDetails: e => Object(f.b)(e, n),
-					walletAddress: t => Object(O.g)(t, e)
+					pointsDetails: e => Object(O.b)(e, n),
+					walletAddress: t => Object(f.g)(t, e)
 				}));
 				if (!_) return null;
 				const M = Object(m.d)(_.contracts.subscriptions.address, A, !0),
-					w = Object(p.c)(t, _.displayConversion);
+					I = Object(p.c)(t, _.displayConversion);
 				return r.a.createElement(j.a, {
 					approvalOverview: r.a.createElement(E, {
 						subredditId: n
@@ -193,7 +193,7 @@
 							subredditId: n,
 							price: t,
 							providerArgs: r
-						})), T(Object(b.d)("subscribe", n, w)), a(Object(l.f)({
+						})), T(Object(b.d)("subscribe", n, I)), a(Object(l.f)({
 							duration: 1e4,
 							kind: x.b.SuccessCommunityGreen,
 							text: s.fbt._("Your purchase was successful! Thank you for your support!", null, {
@@ -205,7 +205,7 @@
 						})), e.onPaymentComplete()
 					},
 					onTransactionFailure: e => {
-						T(Object(b.c)("subscribe", n, w, e))
+						T(Object(b.c)("subscribe", n, I, e))
 					},
 					subredditId: n,
 					transaction: M,
@@ -334,16 +334,16 @@
 			const r = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.ye
-					}) === s.Nd
+						experimentName: s.ze
+					}) === s.Od
 				},
 				i = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.we
-					}) === s.Nd
+						experimentName: s.xe
+					}) === s.Od
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.5ff0477960bc53b0c2ab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.eb703212830f9faa206e.js.map
