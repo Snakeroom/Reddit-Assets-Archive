@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.7b12faa23c98107bb33d.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.3847d12109c86c0215f5.js
+// Retrieved at 12/8/2022, 11:50:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki~reddit-components-Wiki-ModHubWikiManagement"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, i) {
@@ -1361,9 +1361,10 @@
 				b = i("./src/lib/constants/index.ts"),
 				g = i("./src/lib/makeApiRequest/index.ts"),
 				f = i("./src/lib/omitHeaders/index.ts"),
-				k = i("./src/reddit/constants/headers.ts");
-			var v = e => Object(g.a)(Object(f.a)(e.context, [k.a]), {
-					endpoint: `${e.context.apiUrl}/r/${e.subredditName}/api/wiki/edit`,
+				k = i("./src/reddit/constants/headers.ts"),
+				v = i("./src/reddit/helpers/addRedesignIdentifier/index.ts");
+			var x = e => Object(g.a)(Object(f.a)(e.context, [k.a]), {
+					endpoint: Object(v.a)(`${e.context.apiUrl}/r/${e.subredditName}/api/wiki/edit`),
 					method: b.ob.POST,
 					data: {
 						content: e.pageContent,
@@ -1372,33 +1373,33 @@
 						reason: e.revisionReason
 					}
 				}),
-				x = i("./src/reddit/helpers/wiki/makeRevisionsListingKey.ts"),
-				w = i("./src/reddit/helpers/wiki/makeWikiPageKey.ts"),
-				_ = i("./src/reddit/models/Toast/index.ts"),
-				E = i("./src/reddit/routes/subredditWiki/normalizeWikiUrl.ts"),
-				N = i("./src/reddit/actions/wiki/wikiEditing/constants.ts");
-			const y = Object(u.a)(N.a);
-			var P = i("./src/reddit/components/BlockNavigation/index.tsx"),
-				C = i("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
-				R = i("./src/reddit/components/ResizableAutosizeTextarea/index.tsx"),
-				j = i("./src/reddit/components/TrackingHelper/index.tsx"),
-				T = i("./src/reddit/components/Wiki/common/ContentPlaceholder/index.tsx"),
-				O = i("./src/reddit/components/Wiki/common/LoadingPlaceholder/index.tsx"),
-				W = i("./src/reddit/contexts/NavbarExp.ts"),
-				M = i("./src/reddit/controls/Button/index.tsx"),
-				L = i("./src/reddit/helpers/trackers/subredditWiki.ts"),
-				H = i("./src/reddit/helpers/wiki/validatePageName.ts"),
-				S = i("./src/reddit/models/SubredditWikiPage/index.ts"),
-				I = i("./src/reddit/selectors/activeModalId.ts"),
-				z = i("./src/reddit/selectors/platform.ts"),
-				A = i("./src/reddit/selectors/subredditWiki.ts"),
-				B = i("./src/higherOrderComponents/asModal/index.tsx"),
-				U = i("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				D = i("./src/reddit/controls/LoadingIcon/index.tsx"),
-				F = i("./src/reddit/controls/TextButton/index.tsx"),
-				V = i("./src/reddit/components/Wiki/WikiPageEditor/AddRevisionReasonModal/index.m.less"),
-				G = i.n(V);
-			class q extends o.a.PureComponent {
+				w = i("./src/reddit/helpers/wiki/makeRevisionsListingKey.ts"),
+				_ = i("./src/reddit/helpers/wiki/makeWikiPageKey.ts"),
+				E = i("./src/reddit/models/Toast/index.ts"),
+				N = i("./src/reddit/routes/subredditWiki/normalizeWikiUrl.ts"),
+				y = i("./src/reddit/actions/wiki/wikiEditing/constants.ts");
+			const P = Object(u.a)(y.a);
+			var C = i("./src/reddit/components/BlockNavigation/index.tsx"),
+				R = i("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
+				j = i("./src/reddit/components/ResizableAutosizeTextarea/index.tsx"),
+				T = i("./src/reddit/components/TrackingHelper/index.tsx"),
+				O = i("./src/reddit/components/Wiki/common/ContentPlaceholder/index.tsx"),
+				W = i("./src/reddit/components/Wiki/common/LoadingPlaceholder/index.tsx"),
+				M = i("./src/reddit/contexts/NavbarExp.ts"),
+				L = i("./src/reddit/controls/Button/index.tsx"),
+				H = i("./src/reddit/helpers/trackers/subredditWiki.ts"),
+				S = i("./src/reddit/helpers/wiki/validatePageName.ts"),
+				I = i("./src/reddit/models/SubredditWikiPage/index.ts"),
+				z = i("./src/reddit/selectors/activeModalId.ts"),
+				A = i("./src/reddit/selectors/platform.ts"),
+				B = i("./src/reddit/selectors/subredditWiki.ts"),
+				U = i("./src/higherOrderComponents/asModal/index.tsx"),
+				D = i("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				F = i("./src/reddit/controls/LoadingIcon/index.tsx"),
+				V = i("./src/reddit/controls/TextButton/index.tsx"),
+				G = i("./src/reddit/components/Wiki/WikiPageEditor/AddRevisionReasonModal/index.m.less"),
+				q = i.n(G);
+			class K extends o.a.PureComponent {
 				constructor() {
 					super(...arguments), this.state = {
 						text: ""
@@ -1420,22 +1421,22 @@
 						text: t
 					} = this.state, i = h.g - t.length;
 					return o.a.createElement("div", {
-						className: G.a.container
-					}, o.a.createElement(U.i, {
-						className: G.a.modalHeader
-					}, o.a.createElement(U.q, null, n.fbt._("Add a reason for your revision", null, {
+						className: q.a.container
+					}, o.a.createElement(D.i, {
+						className: q.a.modalHeader
+					}, o.a.createElement(D.q, null, n.fbt._("Add a reason for your revision", null, {
 						hk: "3ozq8e"
-					})), o.a.createElement(F.a, {
+					})), o.a.createElement(V.a, {
 						onClick: this.props.onCancel
-					}, o.a.createElement(U.b, null))), o.a.createElement("div", {
-						className: G.a.contentBlock
+					}, o.a.createElement(D.b, null))), o.a.createElement("div", {
+						className: q.a.contentBlock
 					}, o.a.createElement("label", null, o.a.createElement("span", {
-						className: G.a.labelText
+						className: q.a.labelText
 					}, n.fbt._("Revision reason", null, {
 						hk: "W55mK"
 					})), o.a.createElement("input", {
 						autoFocus: !0,
-						className: G.a.reasonInput,
+						className: q.a.reasonInput,
 						maxLength: h.g,
 						onChange: this.onTextChange,
 						placeholder: n.fbt._("Ex: Added source to appendix", null, {
@@ -1443,68 +1444,68 @@
 						}),
 						value: t
 					})), o.a.createElement("div", {
-						className: G.a.details
+						className: q.a.details
 					}, n.fbt._({
 						"*": "{number} characters left",
 						_1: "1 character left"
 					}, [n.fbt._plural(i, "number")], {
 						hk: "1Ra9c8"
-					}))), o.a.createElement(U.g, {
-						className: G.a.modalFooter
-					}, o.a.createElement(U.a, {
+					}))), o.a.createElement(D.g, {
+						className: q.a.modalFooter
+					}, o.a.createElement(D.a, {
 						onClick: this.props.onCancel
 					}, n.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), o.a.createElement(M.l, {
+					})), o.a.createElement(L.l, {
 						onClick: this.onSaveButtonClick,
 						disabled: e
-					}, e ? o.a.createElement(D.a, {
-						className: G.a.loadingIcon,
+					}, e ? o.a.createElement(F.a, {
+						className: q.a.loadingIcon,
 						sizePx: 10
 					}) : n.fbt._("Save", null, {
 						hk: "4yMsMq"
 					}))))
 				}
 			}
-			var K = Object(B.a)(q),
-				J = i("./src/reddit/components/Wiki/WikiPageEditor/index.m.less"),
-				Y = i.n(J);
-			const Z = "Discard-wiki-page-changes",
-				$ = "Add-wiki-revision-reason",
-				X = 2,
-				Q = (e, t, i) => {
+			var J = Object(U.a)(K),
+				Y = i("./src/reddit/components/Wiki/WikiPageEditor/index.m.less"),
+				Z = i.n(Y);
+			const $ = "Discard-wiki-page-changes",
+				X = "Add-wiki-revision-reason",
+				Q = 2,
+				ee = (e, t, i) => {
 					const s = t.status,
 						o = {
-							[H.a.InvalidPageName]: n.fbt._("Page name is invalid", null, {
+							[S.a.InvalidPageName]: n.fbt._("Page name is invalid", null, {
 								hk: "3Ogzsc"
 							}),
-							[H.a.MaxLengthExceed]: n.fbt._("Page name must be shorter than {maxPageLen} characters", [n.fbt._param("maxPageLen", `${h.d}`)], {
+							[S.a.MaxLengthExceed]: n.fbt._("Page name must be shorter than {maxPageLen} characters", [n.fbt._param("maxPageLen", `${h.d}`)], {
 								hk: "11HwWR"
 							}),
-							[H.a.PageAlreadyExists]: n.fbt._("Page with this name already exists", null, {
+							[S.a.PageAlreadyExists]: n.fbt._("Page with this name already exists", null, {
 								hk: "3WRlhT"
 							}),
-							[H.a.RestrictedPageName]: n.fbt._("This page uses a restricted URL and can not be used as a wiki page", null, {
+							[S.a.RestrictedPageName]: n.fbt._("This page uses a restricted URL and can not be used as a wiki page", null, {
 								hk: "BQtR2"
 							})
 						};
 					if (e) {
-						if (s === S.b.Valid) return o[H.a.PageAlreadyExists];
-						if (s === S.b.PageNotFound) return n.fbt._("You do not have permission to create this page", null, {
+						if (s === I.b.Valid) return o[S.a.PageAlreadyExists];
+						if (s === I.b.PageNotFound) return n.fbt._("You do not have permission to create this page", null, {
 							hk: "423aTf"
 						});
 						if (i) return o[i]
-					} else if (s === S.b.Valid && !t.isRevisable) return n.fbt._("You do not have permission to edit this page", null, {
+					} else if (s === I.b.Valid && !t.isRevisable) return n.fbt._("You do not have permission to edit this page", null, {
 						hk: "1bUgsZ"
 					})
 				},
-				ee = Object(r.c)({
-					allowNavigationCallback: z.a,
-					isRevisionReasonModalOpen: Object(I.b)($),
-					isSaveBeforeLeaveModalOpen: Object(I.b)(Z),
-					wikiPage: A.c
+				te = Object(r.c)({
+					allowNavigationCallback: A.a,
+					isRevisionReasonModalOpen: Object(z.b)(X),
+					isSaveBeforeLeaveModalOpen: Object(z.b)($),
+					wikiPage: B.c
 				}),
-				te = Object(a.b)(ee, (e, t) => ({
+				ie = Object(a.b)(te, (e, t) => ({
 					onSaveWikiPage: (i, s) => e((e => {
 						let {
 							pageContent: t,
@@ -1514,24 +1515,24 @@
 						} = e;
 						return async (e, a, r) => {
 							var d, c, l;
-							const u = await v({
+							const u = await x({
 								context: r.apiContext(),
 								pageContent: t,
 								revisionReason: s,
 								subredditName: o,
 								wikiPageName: i
 							});
-							if (u.ok) e(y({
-								pageKey: Object(w.a)({
+							if (u.ok) e(P({
+								pageKey: Object(_.a)({
 									subredditName: o,
 									wikiPageName: i
 								}),
-								pageRevisionsListingKey: Object(x.a)({
+								pageRevisionsListingKey: Object(w.a)({
 									subredditName: o,
 									wikiPageName: i,
 									isRecent: !1
 								}),
-								recentRevisionsListingKey: Object(x.a)({
+								recentRevisionsListingKey: Object(w.a)({
 									subredditName: o,
 									wikiPageName: i,
 									isRecent: !0
@@ -1549,7 +1550,7 @@
 								"RESTRICTED_PAGE" === (null === (d = null == u ? void 0 : u.body) || void 0 === d ? void 0 : d.reason) ? t = n.fbt._("Cannot create/edit restricted page", null, {
 									hk: "2pUIkm"
 								}): "SPECIAL_ERRORS" === (null === (c = null == u ? void 0 : u.body) || void 0 === c ? void 0 : c.reason) && (t = null === (l = null == u ? void 0 : u.body) || void 0 === l ? void 0 : l.special_errors.map((e, t) => `${t+1}). ${e.toString()}`)), e(Object(p.f)({
-									kind: _.b.Error,
+									kind: E.b.Error,
 									text: t
 								}))
 							}
@@ -1571,7 +1572,7 @@
 								const {
 									subredditName: e,
 									wikiPageName: i
-								} = n.urlParams, s = Object(E.a)(n.url, {
+								} = n.urlParams, s = Object(N.a)(n.url, {
 									subredditName: e,
 									wikiPageName: i
 								});
@@ -1582,7 +1583,7 @@
 					closeAllModals: () => e(Object(c.f)()),
 					toggleModal: t => e(Object(c.i)(t))
 				}));
-			class ie extends o.a.Component {
+			class ne extends o.a.Component {
 				constructor(e) {
 					super(e), this.isUnmounted = !1, this.onSaveWithReason = async e => {
 						const {
@@ -1590,7 +1591,7 @@
 						} = this.state;
 						this.setState({
 							isSavePending: !0
-						}), this.props.sendEvent(Object(L.m)(this.props.isCreation));
+						}), this.props.sendEvent(Object(H.m)(this.props.isCreation));
 						const i = await this.props.onSaveWikiPage(t, e);
 						this.isUnmounted || (this.setState({
 							isSavePending: !1
@@ -1606,7 +1607,7 @@
 					}, this.onCancelAddingRevisionReason = () => {
 						this.finishPendingNavTransition(!1), this.props.closeAllModals()
 					}, this.showRevisionReasonModal = () => {
-						this.props.isRevisionReasonModalOpen || this.props.toggleModal($)
+						this.props.isRevisionReasonModalOpen || this.props.toggleModal(X)
 					}, this.onCancel = () => {
 						this.props.onFinishWikiEdit(!0)
 					}, this.onTextChange = e => {
@@ -1624,53 +1625,53 @@
 							disableBlocking: c,
 							isSavePending: l,
 							markdown: u
-						} = this.state, m = a && a.content && a.content.markdown || "", p = !u.trim(), h = u !== m, b = t && a ? Object(H.b)(a.name) : void 0, g = !(!a || a.status !== S.b.PageNotCreated || b), f = !(!a || a.status !== S.b.Valid || !a.isRevisable), k = t ? g : f, v = k && h && !p && !l && !b;
+						} = this.state, m = a && a.content && a.content.markdown || "", p = !u.trim(), h = u !== m, b = t && a ? Object(S.b)(a.name) : void 0, g = !(!a || a.status !== I.b.PageNotCreated || b), f = !(!a || a.status !== I.b.Valid || !a.isRevisable), k = t ? g : f, v = k && h && !p && !l && !b;
 						return o.a.createElement("div", {
-							className: Object(d.a)(Y.a.container, this.props.className)
+							className: Object(d.a)(Z.a.container, this.props.className)
 						}, o.a.createElement("div", {
-							className: Object(d.a)(this.props.topBarClassName, Y.a.topBar, {
-								[Y.a.modHubTopBarExp]: e
+							className: Object(d.a)(this.props.topBarClassName, Z.a.topBar, {
+								[Z.a.modHubTopBarExp]: e
 							})
-						}, o.a.createElement(M.o, {
+						}, o.a.createElement(L.o, {
 							onClick: this.onCancel,
 							disabled: l
 						}, n.fbt._("Cancel", null, {
 							hk: "2TSLl5"
-						})), o.a.createElement(M.l, {
+						})), o.a.createElement(L.l, {
 							disabled: !v,
 							onClick: this.showRevisionReasonModal
 						}, n.fbt._("Save", null, {
 							hk: "4yMsMq"
 						}))), o.a.createElement("div", {
-							className: Object(d.a)(this.props.contentClassName, Y.a.content)
-						}, a ? k ? o.a.createElement(R.a, {
+							className: Object(d.a)(this.props.contentClassName, Z.a.content)
+						}, a ? k ? o.a.createElement(j.a, {
 							autoFocus: !0,
-							className: Y.a.resizableTextarea,
+							className: Z.a.resizableTextarea,
 							disabled: l,
 							onChange: this.onTextChange,
 							placeholder: n.fbt._("Add page content here", null, {
 								hk: "4fxFCc"
 							}),
 							value: u
-						}) : o.a.createElement(T.a, {
-							description: Q(t, a, b),
+						}) : o.a.createElement(O.a, {
+							description: ee(t, a, b),
 							title: t ? n.fbt._('"{pageName}" cannot be created', [n.fbt._param("pageName", r)], {
 								hk: "235tfC"
 							}) : n.fbt._('"{pageName}" cannot be edited', [n.fbt._param("pageName", r)], {
 								hk: "4qKJob"
 							})
-						}) : o.a.createElement(O.a, {
-							paragraphsCount: X
-						})), i && o.a.createElement(K, {
+						}) : o.a.createElement(W.a, {
+							paragraphsCount: Q
+						})), i && o.a.createElement(J, {
 							withOverlay: !0,
 							onCancel: this.onCancelAddingRevisionReason,
 							onSave: this.onSaveWithReason,
 							isPending: l
-						}), o.a.createElement(P.a, {
+						}), o.a.createElement(C.a, {
 							blockOnBeforeUnload: !0,
-							dialogId: Z,
+							dialogId: $,
 							enabled: h && !c
-						}), s && o.a.createElement(C.a, {
+						}), s && o.a.createElement(R.a, {
 							actionText: n.fbt._("Discard", null, {
 								hk: "1SiwLl"
 							}),
@@ -1710,10 +1711,10 @@
 					this.props.allowNavigationCallback && this.props.allowNavigationCallback(e)
 				}
 				render() {
-					return o.a.createElement(W.a.Consumer, null, this.renderWikiPageEditor)
+					return o.a.createElement(M.a.Consumer, null, this.renderWikiPageEditor)
 				}
 			}
-			t.a = te(Object(j.c)(ie))
+			t.a = ie(Object(T.c)(ne))
 		},
 		"./src/reddit/components/Wiki/WikiPageSource/index.m.less": function(e, t, i) {
 			e.exports = {
@@ -2291,4 +2292,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.7b12faa23c98107bb33d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.3847d12109c86c0215f5.js.map

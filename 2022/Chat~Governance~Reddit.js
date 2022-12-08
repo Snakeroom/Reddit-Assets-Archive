@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c2476e0143a980a5f33f.js
-// Retrieved at 12/8/2022, 10:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d471a7eb28f899ee0e03.js
+// Retrieved at 12/8/2022, 11:50:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3601,11 +3601,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("180391"),
+				buildNumber: Object(r.c)("180399"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1670509915"),
+				buildTimestamp: Object(r.b)("1670515919"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6339,14 +6339,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %ce4a6675c9e6c32c2c72635ae9c4b5709287161a3-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %ce8ed5ae3b937e61b6508fd6fba442a894c16240c-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "e4a6675c9e6c32c2c72635ae9c4b5709287161a3-production",
+						release: "e8ed5ae3b937e61b6508fd6fba442a894c16240c-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6882,7 +6882,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "e4a6675c9e6c32c2c72635ae9c4b5709287161a3-production",
+							releaseClient: "e8ed5ae3b937e61b6508fd6fba442a894c16240c-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -20391,31 +20391,31 @@
 		"./src/reddit/endpoints/flair/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "h", (function() {
-				return c
-			})), i.d(t, "i", (function() {
 				return _
-			})), i.d(t, "j", (function() {
+			})), i.d(t, "i", (function() {
 				return m
-			})), i.d(t, "m", (function() {
+			})), i.d(t, "j", (function() {
 				return p
-			})), i.d(t, "l", (function() {
+			})), i.d(t, "m", (function() {
 				return h
-			})), i.d(t, "k", (function() {
+			})), i.d(t, "l", (function() {
 				return f
-			})), i.d(t, "g", (function() {
+			})), i.d(t, "k", (function() {
 				return b
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "g", (function() {
 				return g
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "b", (function() {
 				return v
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "f", (function() {
 				return w
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "d", (function() {
 				return y
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "a", (function() {
 				return E
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "c", (function() {
 				return S
+			})), i.d(t, "e", (function() {
+				return T
 			}));
 			var n = i("./src/config.ts"),
 				r = i("./src/lib/constants/index.ts"),
@@ -20423,9 +20423,10 @@
 				o = i("./src/lib/makeGqlRequest/index.ts"),
 				d = i("./src/lib/omitHeaders/index.ts"),
 				a = i("./src/reddit/constants/headers.ts"),
-				l = i("./src/reddit/models/RichTextJson/addRTJParam.ts"),
-				u = i("./src/redditGQL/operations/FetchSubredditUserFlairTemplates.json");
-			const c = (e, t, i, n, o, l) => Object(s.a)(Object(d.a)(e, [a.a]), {
+				l = i("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
+				u = i("./src/reddit/models/RichTextJson/addRTJParam.ts"),
+				c = i("./src/redditGQL/operations/FetchSubredditUserFlairTemplates.json");
+			const _ = (e, t, i, n, o, l) => Object(s.a)(Object(d.a)(e, [a.a]), {
 					endpoint: `${e.apiUrl}/r/${i}/api/selectflair`,
 					method: r.ob.POST,
 					data: {
@@ -20436,8 +20437,8 @@
 						css_class: l
 					}
 				}),
-				_ = (e, t, i, n) => Object(s.a)(Object(d.a)(e, [a.a]), {
-					endpoint: `${e.apiUrl}/api/selectflair`,
+				m = (e, t, i, n) => Object(s.a)(Object(d.a)(e, [a.a]), {
+					endpoint: Object(l.a)(`${e.apiUrl}/api/selectflair`),
 					method: r.ob.POST,
 					data: {
 						api_type: "json",
@@ -20446,7 +20447,7 @@
 						text: n
 					}
 				}),
-				m = (e, t, i) => Object(s.a)(Object(d.a)(e, [a.a]), {
+				p = (e, t, i) => Object(s.a)(Object(d.a)(e, [a.a]), {
 					endpoint: `${e.apiUrl}/r/${i}/api/setflairenabled`,
 					method: r.ob.POST,
 					data: {
@@ -20454,21 +20455,21 @@
 						flair_enabled: t
 					}
 				}),
-				p = async (e, t, i) => Object(s.a)(Object(d.a)(e, [a.a]), {
+				h = async (e, t, i) => Object(s.a)(Object(d.a)(e, [a.a]), {
 					endpoint: `${e.apiUrl}/api/enable_sr_user_flair.json`,
 					method: r.ob.POST,
 					data: {
 						subreddit: t,
 						enabled: i
 					}
-				}), h = async (e, t, i) => Object(s.a)(Object(d.a)(e, [a.a]), {
+				}), f = async (e, t, i) => Object(s.a)(Object(d.a)(e, [a.a]), {
 					endpoint: `${e.apiUrl}/api/enable_sr_link_flair.json`,
 					method: r.ob.POST,
 					data: {
 						subreddit: t,
 						enabled: i
 					}
-				}), f = async (e, t, i, n) => Object(s.a)(Object(d.a)(e, [a.a]), {
+				}), b = async (e, t, i, n) => Object(s.a)(Object(d.a)(e, [a.a]), {
 					endpoint: `${e.apiUrl}/api/enable_sr_user_flair_self_assign.json`,
 					method: r.ob.POST,
 					data: {
@@ -20476,7 +20477,7 @@
 						flair_type: i,
 						enabled: t
 					}
-				}), b = async (e, t, i, n) => Object(s.a)(Object(d.a)(e, [a.a]), {
+				}), g = async (e, t, i, n) => Object(s.a)(Object(d.a)(e, [a.a]), {
 					endpoint: `${e.apiUrl}/api/flairtemplate_v2`,
 					method: r.ob.POST,
 					data: {
@@ -20492,36 +20493,36 @@
 						mod_only: t.modOnly,
 						r: i
 					}
-				}), g = async (e, t, i) => Object(s.a)(Object(d.a)(e, [a.a]), {
+				}), v = async (e, t, i) => Object(s.a)(Object(d.a)(e, [a.a]), {
 					endpoint: `${e.apiUrl}/api/deleteflairtemplate`,
 					method: r.ob.POST,
 					data: {
 						flair_template_id: t,
 						r: i
 					}
-				}), v = async (e, t, i, n) => Object(s.a)(Object(d.a)(e, [a.a]), {
+				}), w = async (e, t, i, n) => Object(s.a)(Object(d.a)(e, [a.a]), {
 					endpoint: `${e.apiUrl}/api/v1/${t}/flair_template_order/${i}`,
 					method: r.ob.PATCH,
 					type: "json",
 					data: n
-				}), w = async (e, t) => Object(s.a)(e, {
+				}), y = async (e, t) => Object(s.a)(e, {
 					endpoint: `${n.a.gatewayUrl}/desktopapi/v1/subreddits/${t}/userFlair`,
 					method: r.ob.GET,
 					headers: {
 						[a.a]: a.a
 					}
-				}), y = async (e, t, i) => Object(s.a)(Object(d.a)(e, [a.a]), {
+				}), E = async (e, t, i) => Object(s.a)(Object(d.a)(e, [a.a]), {
 					endpoint: `${e.apiUrl}/r/${i}/api/deleteflair`,
 					method: r.ob.POST,
 					data: {
 						api_type: "json",
 						name: t
 					}
-				}), E = async (e, t) => Object(s.a)(Object(d.a)(e, [a.a]), {
-					endpoint: Object(l.a)(`${e.apiUrl}/api/top_flair_in_subreddit.json?subreddit=${t}`),
+				}), S = async (e, t) => Object(s.a)(Object(d.a)(e, [a.a]), {
+					endpoint: Object(u.a)(`${e.apiUrl}/api/top_flair_in_subreddit.json?subreddit=${t}`),
 					method: r.ob.GET
-				}), S = (e, t) => Object(o.a)(e, {
-					...u,
+				}), T = (e, t) => Object(o.a)(e, {
+					...c,
 					variables: t
 				})
 		},
@@ -21567,14 +21568,14 @@
 					}
 				}),
 				U = (e, t) => Object(r.a)(Object(o.a)(e, [d.a]), {
-					endpoint: `${e.apiUrl}/api/ignore_reports`,
+					endpoint: Object(a.a)(`${e.apiUrl}/api/ignore_reports`),
 					method: n.ob.POST,
 					data: {
 						id: t
 					}
 				}),
 				G = (e, t) => Object(r.a)(Object(o.a)(e, [d.a]), {
-					endpoint: `${e.apiUrl}/api/unignore_reports`,
+					endpoint: Object(a.a)(`${e.apiUrl}/api/unignore_reports`),
 					method: n.ob.POST,
 					data: {
 						id: t
@@ -50799,4 +50800,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c2476e0143a980a5f33f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d471a7eb28f899ee0e03.js.map

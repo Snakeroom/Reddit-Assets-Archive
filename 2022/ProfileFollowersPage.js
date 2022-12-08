@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.ce5c021d06f2fb1e2651.js
-// Retrieved at 12/7/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.046c40ac502ee3b76110.js
+// Retrieved at 12/8/2022, 11:50:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -1140,11 +1140,11 @@
 						apiContext: l
 					} = d;
 					const u = o(),
-						f = u.subreddits.models[e].url,
-						v = u.subreddits.models[e].name;
+						v = u.subreddits.models[e].url,
+						y = u.subreddits.models[e].name;
 					t.username = Object(g.a)(t.username), n(Object(a.h)(s));
-					const y = await ((e, t, s) => Object(p.a)(Object(h.a)(e, [b.a]), {
-						endpoint: `${e.apiUrl}${t}api/friend`,
+					const I = await ((e, t, s) => Object(p.a)(Object(h.a)(e, [b.a]), {
+						endpoint: Object(f.a)(`${e.apiUrl}${t}api/friend`),
 						method: m.ob.POST,
 						data: {
 							api_type: "json",
@@ -1156,8 +1156,8 @@
 							ban_context: s.contextId,
 							type: "banned"
 						}
-					}))(l(), f, t);
-					if (y.ok) {
+					}))(l(), v, t);
+					if (I.ok) {
 						n(Object(a.e)(s));
 						const e = {
 							username: t.username
@@ -1168,11 +1168,11 @@
 								hk: "1kORpS"
 							})
 						}));
-						const i = await x(l(), v, e);
+						const i = await x(l(), y, e);
 						i.ok && n(ne(i.body))
 					} else {
-						n(Object(a.f)(s, y.error));
-						const e = i()(y, "body.json.errors[0][1]", r.fbt._("Something went wrong", null, {
+						n(Object(a.f)(s, I.error));
+						const e = i()(I, "body.json.errors[0][1]", r.fbt._("Something went wrong", null, {
 							hk: "1IJNeH"
 						}));
 						n(Object(c.f)({
@@ -1187,7 +1187,7 @@
 					} = o;
 					const d = n().subreddits.models[e].url,
 						l = await ((e, t, s) => Object(p.a)(Object(h.a)(e, [b.a]), {
-							endpoint: `${e.apiUrl}${t}api/unfriend`,
+							endpoint: Object(f.a)(`${e.apiUrl}${t}api/unfriend`),
 							method: m.ob.POST,
 							data: {
 								api_type: "json",
@@ -6277,4 +6277,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.ce5c021d06f2fb1e2651.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.046c40ac502ee3b76110.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.ecd54b0a77a3f1e41116.js
-// Retrieved at 12/7/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.83c27ec8d6ea4da739a0.js
+// Retrieved at 12/8/2022, 11:50:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"], {
 		"./src/lib/name/index.ts": function(e, t, r) {
@@ -5929,14 +5929,14 @@
 					}
 				}),
 				E = (e, t) => Object(u.a)(Object(b.a)(e, [p.a]), {
-					endpoint: `${e.apiUrl}/api/ignore_reports`,
+					endpoint: Object(m.a)(`${e.apiUrl}/api/ignore_reports`),
 					method: a.ob.POST,
 					data: {
 						id: t
 					}
 				}),
 				x = (e, t) => Object(u.a)(Object(b.a)(e, [p.a]), {
-					endpoint: `${e.apiUrl}/api/unignore_reports`,
+					endpoint: Object(m.a)(`${e.apiUrl}/api/unignore_reports`),
 					method: a.ob.POST,
 					data: {
 						id: t
@@ -12117,4 +12117,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.ecd54b0a77a3f1e41116.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.83c27ec8d6ea4da739a0.js.map

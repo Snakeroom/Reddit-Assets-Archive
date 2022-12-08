@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.c5fd0e45f776507c336e.js
-// Retrieved at 12/7/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.7bb3ab7e8fc83ea9c73e.js
+// Retrieved at 12/8/2022, 11:50:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -1421,59 +1421,59 @@
 		"./src/reddit/actions/removalReasons/index.ts": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "removalReasonsPending", (function() {
-				return X
-			})), s.d(t, "removalReasonsLoaded", (function() {
 				return $
-			})), s.d(t, "removalReasonsFailed", (function() {
+			})), s.d(t, "removalReasonsLoaded", (function() {
 				return ee
-			})), s.d(t, "removalReasonsRequested", (function() {
+			})), s.d(t, "removalReasonsFailed", (function() {
 				return te
-			})), s.d(t, "removalReasonAddedPending", (function() {
+			})), s.d(t, "removalReasonsRequested", (function() {
 				return se
-			})), s.d(t, "removalReasonAddedSuccess", (function() {
+			})), s.d(t, "removalReasonAddedPending", (function() {
 				return ne
-			})), s.d(t, "removalReasonAddedFailed", (function() {
+			})), s.d(t, "removalReasonAddedSuccess", (function() {
 				return oe
-			})), s.d(t, "addRemovalReason", (function() {
+			})), s.d(t, "removalReasonAddedFailed", (function() {
 				return re
-			})), s.d(t, "editRemovalReasonPending", (function() {
+			})), s.d(t, "addRemovalReason", (function() {
 				return ae
-			})), s.d(t, "editRemovalReasonSuccess", (function() {
+			})), s.d(t, "editRemovalReasonPending", (function() {
 				return ie
-			})), s.d(t, "editRemovalReasonFailed", (function() {
+			})), s.d(t, "editRemovalReasonSuccess", (function() {
 				return ce
-			})), s.d(t, "editRemovalReason", (function() {
+			})), s.d(t, "editRemovalReasonFailed", (function() {
 				return de
-			})), s.d(t, "deleteRemovalReasonPending", (function() {
+			})), s.d(t, "editRemovalReason", (function() {
 				return le
-			})), s.d(t, "deleteRemovalReasonSuccess", (function() {
+			})), s.d(t, "deleteRemovalReasonPending", (function() {
 				return me
-			})), s.d(t, "deleteRemovalReasonFailed", (function() {
+			})), s.d(t, "deleteRemovalReasonSuccess", (function() {
 				return ue
-			})), s.d(t, "deleteRemovalReason", (function() {
+			})), s.d(t, "deleteRemovalReasonFailed", (function() {
 				return pe
-			})), s.d(t, "removedItemsSelected", (function() {
+			})), s.d(t, "deleteRemovalReason", (function() {
 				return be
-			})), s.d(t, "fetchReasonsAndOpenModal", (function() {
+			})), s.d(t, "removedItemsSelected", (function() {
 				return he
-			})), s.d(t, "removalReasonSubmittedPending", (function() {
+			})), s.d(t, "fetchReasonsAndOpenModal", (function() {
 				return fe
-			})), s.d(t, "removalReasonSubmittedSuccess", (function() {
+			})), s.d(t, "removalReasonSubmittedPending", (function() {
 				return xe
-			})), s.d(t, "removalReasonSubmittedFailed", (function() {
+			})), s.d(t, "removalReasonSubmittedSuccess", (function() {
 				return ve
-			})), s.d(t, "removalReasonMessagePending", (function() {
+			})), s.d(t, "removalReasonSubmittedFailed", (function() {
 				return ge
-			})), s.d(t, "removalReasonPrivateMessageSuccess", (function() {
+			})), s.d(t, "removalReasonMessagePending", (function() {
 				return _e
-			})), s.d(t, "removalReasonPublicMessageSuccess", (function() {
+			})), s.d(t, "removalReasonPrivateMessageSuccess", (function() {
 				return ye
-			})), s.d(t, "removalReasonMessageFailed", (function() {
+			})), s.d(t, "removalReasonPublicMessageSuccess", (function() {
 				return Ee
-			})), s.d(t, "submitRemovalReason", (function() {
+			})), s.d(t, "removalReasonMessageFailed", (function() {
 				return Oe
-			})), s.d(t, "submitBulkRemovalReason", (function() {
+			})), s.d(t, "submitRemovalReason", (function() {
 				return ke
+			})), s.d(t, "submitBulkRemovalReason", (function() {
+				return Ce
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				o = s("./src/lib/initializeClient/installReducer.ts"),
@@ -1655,9 +1655,10 @@
 				F = s("./src/lib/makeApiRequest/index.ts"),
 				D = s("./src/lib/omitHeaders/index.ts"),
 				B = s("./src/reddit/constants/headers.ts"),
-				U = s("./src/reddit/models/RichTextJson/addRTJParam.ts");
-			const z = (e, t) => Object(F.a)(Object(D.a)(e, [B.a]), {
-					endpoint: `${e.apiUrl}/api/v1/modactions/removal_reasons/`,
+				U = s("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
+				z = s("./src/reddit/models/RichTextJson/addRTJParam.ts");
+			const W = (e, t) => Object(F.a)(Object(D.a)(e, [B.a]), {
+					endpoint: Object(U.a)(`${e.apiUrl}/api/v1/modactions/removal_reasons/`),
 					method: C.ob.POST,
 					type: "json",
 					data: {
@@ -1666,51 +1667,51 @@
 						mod_note: t.modNote
 					}
 				}),
-				W = (e, t, s) => Object(F.a)(Object(D.a)(e, [B.a]), {
-					endpoint: Object(U.a)(`${e.apiUrl}/api/v1/modactions/removal_${s}_message/`),
+				V = (e, t, s) => Object(F.a)(Object(D.a)(e, [B.a]), {
+					endpoint: Object(U.a)(Object(z.a)(`${e.apiUrl}/api/v1/modactions/removal_${s}_message/`)),
 					method: C.ob.POST,
 					type: "json",
 					data: t
 				});
-			var V = s("./src/reddit/helpers/isPost.ts"),
-				q = s("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
-				G = s("./src/reddit/helpers/routeKey/index.ts"),
-				H = s("./src/reddit/models/ModQueue/index.ts"),
-				K = s("./src/reddit/models/PostDraft/index.ts"),
-				Z = s("./src/reddit/models/RemovalReason/index.ts"),
-				Q = s("./src/reddit/models/Toast/index.ts"),
-				J = s("./src/reddit/selectors/comments.ts"),
-				Y = s("./src/reddit/selectors/platform.ts");
+			var q = s("./src/reddit/helpers/isPost.ts"),
+				G = s("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
+				H = s("./src/reddit/helpers/routeKey/index.ts"),
+				K = s("./src/reddit/models/ModQueue/index.ts"),
+				Z = s("./src/reddit/models/PostDraft/index.ts"),
+				Q = s("./src/reddit/models/RemovalReason/index.ts"),
+				J = s("./src/reddit/models/Toast/index.ts"),
+				Y = s("./src/reddit/selectors/comments.ts"),
+				X = s("./src/reddit/selectors/platform.ts");
 			Object(o.a)({
 				features: {
 					removalReasons: k
 				}
 			});
-			const X = Object(j.a)("REMOVALREASONS__LOAD_PENDING"),
-				$ = Object(j.a)(a),
-				ee = Object(j.a)("REMOVALREASONS__LOAD_FAILED"),
-				te = e => async (t, s, n) => {
+			const $ = Object(j.a)("REMOVALREASONS__LOAD_PENDING"),
+				ee = Object(j.a)(a),
+				te = Object(j.a)("REMOVALREASONS__LOAD_FAILED"),
+				se = e => async (t, s, n) => {
 					let {
 						apiContext: o
 					} = n;
 					const r = s().subreddits.models[e].name;
-					t(X());
+					t($());
 					const a = await ((e, t) => Object(F.a)(Object(D.a)(e, [B.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons.json`,
 						method: C.ob.GET
 					}))(o(), r);
-					a.ok ? t($({
+					a.ok ? t(ee({
 						subredditId: e,
 						response: a.body
-					})) : t(ee(a.error))
-				}, se = Object(j.a)(i), ne = Object(j.a)(c), oe = Object(j.a)(d), re = (e, t) => async (s, o, r) => {
+					})) : t(te(a.error))
+				}, ne = Object(j.a)(i), oe = Object(j.a)(c), re = Object(j.a)(d), ae = (e, t) => async (s, o, r) => {
 					let {
 						apiContext: a
 					} = r;
 					const i = o().subreddits.models[e].name;
-					s(se());
+					s(ne());
 					const c = await ((e, t, s) => Object(F.a)(Object(D.a)(e, [B.a]), {
-						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons`,
+						endpoint: Object(U.a)(`${e.apiUrl}/api/v1/${t}/removal_reasons`),
 						method: C.ob.POST,
 						data: s
 					}))(a(), i, t);
@@ -1721,79 +1722,79 @@
 							...t,
 							id: o
 						};
-						s(ne({
+						s(oe({
 							subredditId: e,
 							reason: r
 						})), s(Object(A.f)({
-							kind: Q.b.SuccessMod,
+							kind: J.b.SuccessMod,
 							text: n.fbt._("Removal reason added!", null, {
 								hk: "2WSh8N"
 							})
 						}))
-					} else s(oe(c.error))
-				}, ae = Object(j.a)(l), ie = Object(j.a)(m), ce = Object(j.a)(u), de = (e, t) => async (s, o, r) => {
+					} else s(re(c.error))
+				}, ie = Object(j.a)(l), ce = Object(j.a)(m), de = Object(j.a)(u), le = (e, t) => async (s, o, r) => {
 					let {
 						apiContext: a
 					} = r;
 					const i = o().subreddits.models[e].name;
-					s(ae());
+					s(ie());
 					const c = await ((e, t, s) => Object(F.a)(Object(D.a)(e, [B.a]), {
-						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons/${s.id}`,
+						endpoint: Object(U.a)(`${e.apiUrl}/api/v1/${t}/removal_reasons/${s.id}`),
 						method: C.ob.PUT,
 						data: {
 							message: s.message,
 							title: s.title
 						}
 					}))(a(), i, t);
-					c.ok ? (s(ie({
+					c.ok ? (s(ce({
 						subredditId: e,
 						reason: t
 					})), s(Object(A.f)({
-						kind: Q.b.SuccessMod,
+						kind: J.b.SuccessMod,
 						text: n.fbt._("Removal reason saved", null, {
 							hk: "28ScuL"
 						})
-					}))) : s(ce(c.error))
-				}, le = Object(j.a)(p), me = Object(j.a)(b), ue = Object(j.a)(h), pe = (e, t) => async (s, o, r) => {
+					}))) : s(de(c.error))
+				}, me = Object(j.a)(p), ue = Object(j.a)(b), pe = Object(j.a)(h), be = (e, t) => async (s, o, r) => {
 					let {
 						apiContext: a
 					} = r;
 					const i = o().subreddits.models[e].name;
-					s(le());
+					s(me());
 					const c = await ((e, t, s) => Object(F.a)(Object(D.a)(e, [B.a]), {
-						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons/${s}`,
+						endpoint: Object(U.a)(`${e.apiUrl}/api/v1/${t}/removal_reasons/${s}`),
 						method: C.ob.DELETE
 					}))(a(), i, t);
-					c.ok ? (s(me({
+					c.ok ? (s(ue({
 						subredditId: e,
 						reasonId: t
 					})), s(Object(A.f)({
-						kind: Q.b.SuccessMod,
+						kind: J.b.SuccessMod,
 						text: n.fbt._("Removal reason deleted", null, {
 							hk: "4xzgsa"
 						})
-					}))) : s(ue(c.error))
-				}, be = Object(j.a)("REMOVALREASONS__REMOVEDITEMS_SELECTED"), he = (e, t) => async (s, n, o) => {
+					}))) : s(pe(c.error))
+				}, he = Object(j.a)("REMOVALREASONS__REMOVEDITEMS_SELECTED"), fe = (e, t) => async (s, n, o) => {
 					let {
 						apiContext: r
 					} = o;
 					const a = n();
-					a.features.removalReasons.reasonOrder[e] && a.features.removalReasons.reasonOrder[e].length > 0 || s(te(e)), s(be({
+					a.features.removalReasons.reasonOrder[e] && a.features.removalReasons.reasonOrder[e].length > 0 || s(se(e)), s(he({
 						subredditId: e,
 						itemIds: t
 					})), s(Object(L.i)(M.a.ADD_REMOVAL_REASON))
-				}, fe = Object(j.a)("REMOVALREASONS__SUBMIT_PENDING"), xe = Object(j.a)("REMOVALREASONS__SUBMIT_SUCCESS"), ve = Object(j.a)("REMOVALREASONS__SUBMIT_FAILED"), ge = Object(j.a)("REMOVALREASONS__MESSAGE_PENDING"), _e = Object(j.a)("REMOVALREASONS__MESSAGE_PRIVATE_SUCCESS"), ye = Object(j.a)("REMOVALREASONS__MESSAGE_PUBLIC_SUCCESS"), Ee = Object(j.a)("REMOVALREASONS__MESSAGE_FAILED"), Oe = (e, t, s, n, o, r) => async (a, i, c) => {
+				}, xe = Object(j.a)("REMOVALREASONS__SUBMIT_PENDING"), ve = Object(j.a)("REMOVALREASONS__SUBMIT_SUCCESS"), ge = Object(j.a)("REMOVALREASONS__SUBMIT_FAILED"), _e = Object(j.a)("REMOVALREASONS__MESSAGE_PENDING"), ye = Object(j.a)("REMOVALREASONS__MESSAGE_PRIVATE_SUCCESS"), Ee = Object(j.a)("REMOVALREASONS__MESSAGE_PUBLIC_SUCCESS"), Oe = Object(j.a)("REMOVALREASONS__MESSAGE_FAILED"), ke = (e, t, s, n, o, r) => async (a, i, c) => {
 					let {
 						apiContext: d
 					} = c;
 					const l = i(),
 						m = l.user.account && l.user.account.displayText,
 						u = e[0],
-						p = Object(V.a)(u) ? Z.e.Post : Z.e.Comment,
-						b = p === Z.e.Post ? l.posts.models[u] : l.features.comments.models[u],
-						h = p === Z.e.Post ? R.R : N.j;
+						p = Object(q.a)(u) ? Q.e.Post : Q.e.Comment,
+						b = p === Q.e.Post ? l.posts.models[u] : l.features.comments.models[u],
+						h = p === Q.e.Post ? R.R : N.j;
 					if (!b || !m) return !1;
-					a(fe()), a(h({
+					a(xe()), a(h({
 						[u]: {
 							modNote: o,
 							modRemovalReason: t && t.title,
@@ -1805,10 +1806,10 @@
 							modNote: o,
 							reasonId: t ? t.id : null
 						},
-						x = await z(d(), f);
+						x = await W(d(), f);
 					if (x.ok) {
-						if (a(xe()), t) {
-							a(ge());
+						if (a(ve()), t) {
+							a(_e());
 							const o = {
 									itemId: e,
 									message: s,
@@ -1816,26 +1817,26 @@
 									isLocked: r,
 									type: n
 								},
-								i = await W(d(), Object(Z.h)(o, p), p);
+								i = await V(d(), Object(Q.h)(o, p), p);
 							if (i.ok) {
-								if ([Z.f.Public, Z.f.PublicAsSubreddit].includes(n)) {
-									if (a(ye()), i.body) {
-										const e = Object(q.a)(i.body),
+								if ([Q.f.Public, Q.f.PublicAsSubreddit].includes(n)) {
+									if (a(Ee()), i.body) {
+										const e = Object(G.a)(i.body),
 											t = {
 												comment: e,
 												parentId: u
 											},
-											s = Object(Y.f)(l),
+											s = Object(X.f)(l),
 											n = l.platform.currentPage && l.platform.currentPage.routeMatch;
-										let o = s && n && Object(G.a)(n, l, l.posts.models[e.postId]);
+										let o = s && n && Object(H.a)(n, l, l.posts.models[e.postId]);
 										if (o || (o = Object(w.a)(e.postId, null, {
 												sort: C.x,
 												hasSortParam: !0
-											})), p === Z.e.Post) {
-											const s = Object(P.a)(K.c.replyToPost, u);
+											})), p === Q.e.Post) {
+											const s = Object(P.a)(Z.c.replyToPost, u);
 											a(Object(I.r)({
 												...t,
-												headCommentId: Object(J.w)(l, {
+												headCommentId: Object(Y.w)(l, {
 													commentsPageKey: o
 												}),
 												commentsPageKey: o,
@@ -1851,9 +1852,9 @@
 													isStickied: !1
 												}
 											}))
-										} else if (p === Z.e.Comment) {
-											const e = Object(P.a)(K.c.replyToComment, b.id),
-												s = Object(J.j)(l, {
+										} else if (p === Q.e.Comment) {
+											const e = Object(P.a)(Z.c.replyToComment, b.id),
+												s = Object(Y.j)(l, {
 													commentId: u,
 													commentsPageKey: o
 												});
@@ -1866,12 +1867,12 @@
 											}))
 										}
 									}
-								} else a(_e());
+								} else a(ye());
 								return !0
 							}
-							return a(Ee(i.error)), !1
+							return a(Oe(i.error)), !1
 						}
-					} else a(ve(x.error)), a(h({
+					} else a(ge(x.error)), a(h({
 						[u]: {
 							modNote: b.modNote,
 							modRemovalReason: b.modRemovalReason,
@@ -1879,16 +1880,16 @@
 						}
 					}));
 					return !1
-				}, ke = (e, t, s, o, r) => async (a, i, c) => {
+				}, Ce = (e, t, s, o, r) => async (a, i, c) => {
 					let {
 						apiContext: d
 					} = c;
 					const l = i(),
 						m = l.user.account && l.user.account.displayText;
 					if (!m) return;
-					a(fe());
+					a(xe());
 					const u = Object(A.f)({
-							kind: Q.b.SuccessMod,
+							kind: J.b.SuccessMod,
 							text: n.fbt._({
 								"*": "Added removal reason for {number} posts/comments",
 								_1: "Added removal reason for 1 post/comment"
@@ -1901,11 +1902,11 @@
 							modNote: r,
 							reasonId: t ? t.id : null
 						},
-						b = await z(d(), p);
+						b = await W(d(), p);
 					if (b.ok) {
 						const n = {
 							ids: e,
-							operation: H.a.RemovalReason,
+							operation: K.a.RemovalReason,
 							username: m,
 							options: {
 								modNote: r,
@@ -1919,10 +1920,10 @@
 									title: t.title,
 									type: o
 								},
-								r = await W(d(), Object(Z.h)(n, Z.e.Bulk), Z.e.Bulk);
-							r.ok ? (a(_e()), a(u)) : a(Ee(r.error))
+								r = await V(d(), Object(Q.h)(n, Q.e.Bulk), Q.e.Bulk);
+							r.ok ? (a(ye()), a(u)) : a(Oe(r.error))
 						} else a(u)
-					} else a(ve(b.error))
+					} else a(ge(b.error))
 				}
 		},
 		"./src/reddit/components/AdSupplementaryText/index.m.less": function(e, t, s) {
@@ -10599,4 +10600,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.c5fd0e45f776507c336e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.7bb3ab7e8fc83ea9c73e.js.map
