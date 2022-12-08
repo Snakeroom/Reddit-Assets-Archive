@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.eba210672e140e3141c0.js
-// Retrieved at 12/8/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.d00adb62191b34a7647e.js
+// Retrieved at 12/8/2022, 6:40:03 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1570,15 +1570,15 @@
 						RedesignChat: "1a24e47df46930f3a9a8",
 						ModListing: "9cafa0cda1ca17f8358b",
 						"vendors~PostCreation~Subreddit": "fd29d4253376c8d4c526",
-						Subreddit: "f4ab26216be5a8f49a9c",
-						CommentsPage: "60afaab52243f95978bd",
+						Subreddit: "7a816adc6f157f220df5",
+						CommentsPage: "e8e4db4e63bbf514ea49",
 						"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "fbf6b3871488094312c2",
 						CryptoHarbergerTaxManageModal: "012b7599ba7aeda39444",
 						HarbergerTaxManageModal: "320c57533a5fde47ba8a",
 						SubredditPremiumUploadModal: "18f7cec504d8287b832e",
-						PostCreation: "0c88e2afe904cb4b0fa6",
+						PostCreation: "462012032bcb8fdd1b32",
 						"vendors~ModerationPages": "94c34813eaf24a1890ea",
-						ModerationPages: "5c9c4e0c0fe9c9ff4442",
+						ModerationPages: "0eed10f2bce544158daf",
 						"vendors~ModStatsChart~Settings~ViewsTooltip": "ca7c845d62fd39d960b6",
 						"vendors~Settings": "86b1cfc53320ea8eef91",
 						Settings: "7ea6a2ca1fc98469dc51",
@@ -1737,7 +1737,7 @@
 						"Download OBS Modal": "cabe92c1fd8cfddf7b9a",
 						NftProductDetailsModal: "ec757b3ebba5f4d9c53e",
 						"vendors~chat-components-OverlayReport-FormBuilder~reddit-components-FormBuilder": "cca0b8e181c976b99176",
-						"reddit-components-FormBuilder": "f680c896b135bbd55540",
+						"reddit-components-FormBuilder": "3d766fa47e0dc5f8bdab",
 						CrosspostsStat: "ffd361a28dd0908bbf77",
 						"vendors~ModStatsChart~ViewsTooltip": "b642007ba6a9c10cda83",
 						ViewsTooltip: "8094283dbf2e66b764c1",
@@ -1821,4 +1821,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.eba210672e140e3141c0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.d00adb62191b34a7647e.js.map

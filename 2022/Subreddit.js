@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.f4ab26216be5a8f49a9c.js
-// Retrieved at 12/8/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.7a816adc6f157f220df5.js
+// Retrieved at 12/8/2022, 6:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit", "ModListing~Reddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -9098,7 +9098,7 @@
 				}
 				createSensor() {
 					if (!this.containerRef || this.sensor) return;
-					this.sensor = document.createElement("object"), this.sensor.setAttribute("style", "\n      display: block;\n      position: absolute;\n      top: 0;\n      left: 0;\n      height: 100%;\n      width: 100%;\n      overflow: hidden;\n      pointer-events: none;\n      z-index: -1;\n    "), this.sensor.setAttribute("tabindex", "-1"), this.sensor.onload = () => {
+					this.sensor = document.createElement("object"), this.sensor.setAttribute("style", "\n      display: block;\n      position: absolute;\n      top: 0;\n      left: 0;\n      height: 100%;\n      width: 100%;\n      overflow: hidden;\n      pointer-events: none;\n      z-index: -1;\n      visibility: hidden;\n    "), this.sensor.setAttribute("tabindex", "-1"), this.sensor.onload = () => {
 						this.props.onResize(), this.sensor && this.sensor.contentDocument && this.sensor.contentDocument.defaultView && this.sensor.contentDocument.defaultView.addEventListener("resize", this.handleResize)
 					}, this.sensor.type = "text/html";
 					const e = this.isIE();
@@ -23618,4 +23618,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.f4ab26216be5a8f49a9c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.7a816adc6f157f220df5.js.map
