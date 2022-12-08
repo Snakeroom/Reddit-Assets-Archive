@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.877bada3463164958300.js
-// Retrieved at 12/8/2022, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.b278c983f22de28fc9cd.js
+// Retrieved at 12/8/2022, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -1342,14 +1342,14 @@
 					let {
 						apiContext: d
 					} = r;
-					var c;
+					var c, u;
 					if (n().blockUser.api.pending[e]) return;
 					t(m({
 						username: e
 					}));
-					const u = await Object(i.a)(d(), e),
-						p = `error-block-${e}`;
-					if (u.ok) u.body.name && t(h(u.body)), u.body.id && t(Object(s.f)(u.body.id)), t(a.g(p)), t(a.f({
+					const p = await Object(i.a)(d(), e),
+						x = `error-block-${e}`;
+					if (p.ok) p.body.name && t(h(p.body)), p.body.id && t(Object(s.f)(p.body.id)), t(a.g(x)), t(a.f({
 						kind: l.b.SuccessCommunity,
 						text: o.fbt._("{username} is now blocked", [o.fbt._param("username", e)], {
 							hk: "MI2y8"
@@ -1357,18 +1357,24 @@
 					}));
 					else {
 						const n = {
-							type: u.error ? u.error.type : "Unknown error",
+							type: p.error ? p.error.type : "Unknown error",
 							username: e
 						};
-						t(b(n)), "REBLOCK_RATE_LIMIT" === (null === (c = u.body) || void 0 === c ? void 0 : c.reason) ? t(a.f({
-							id: p,
+						t(b(n)), "REBLOCK_RATE_LIMIT" === (null === (c = p.body) || void 0 === c ? void 0 : c.reason) ? t(a.f({
+							id: x,
 							kind: l.b.Error,
 							text: o.fbt._("You can't block u/{username} for 24 hours after unblocking them", [o.fbt._param("username", e)], {
 								hk: "W0oUd"
 							}),
 							buttonAction: f(e)
+						})) : "BLOCK_MAXIMUM" === (null === (u = p.body) || void 0 === u ? void 0 : u.reason) ? t(a.f({
+							id: x,
+							kind: l.b.Error,
+							text: o.fbt._("You cannot block more than 1000 users.", null, {
+								hk: "1G5SbN"
+							})
 						})) : t(a.f({
-							id: p,
+							id: x,
 							kind: l.b.Error,
 							text: o.fbt._("An error has occured. Please try again later", null, {
 								hk: "2FpsLy"
@@ -1794,8 +1800,8 @@
 				Q = n("./src/reddit/components/ReportFlow/FinalPage/index.m.less"),
 				z = n.n(Q);
 			const J = c.a.wrapped(h.a, "blockUserHolder", z.a),
-				V = c.a.wrapped(W.a, "BlockUserIcon", z.a),
-				Y = c.a.div("BlockUserHeader", z.a),
+				Y = c.a.wrapped(W.a, "BlockUserIcon", z.a),
+				V = c.a.div("BlockUserHeader", z.a),
 				X = c.a.div("OptionHolder", z.a),
 				Z = c.a.div("OptionHeader", z.a),
 				$ = c.a.div("OptionDescription", z.a),
@@ -1842,7 +1848,7 @@
 						} = this, t = this.getBlockUserHeaderText();
 						return s.a.createElement(J, {
 							onClick: () => this.onBlockAuthor(e.authorName)
-						}, s.a.createElement(V, null), s.a.createElement("div", null, s.a.createElement(Y, null, t), s.a.createElement($, null, o.fbt._("You won't see posts or comments from {username}. You can change this later in your preference.", [o.fbt._param("username", e.authorName)], {
+						}, s.a.createElement(Y, null), s.a.createElement("div", null, s.a.createElement(V, null, t), s.a.createElement($, null, o.fbt._("You won't see posts or comments from {username}. You can change this later in your preference.", [o.fbt._param("username", e.authorName)], {
 							hk: "2iUUlN"
 						}))))
 					}
@@ -2166,8 +2172,8 @@
 				Qe = n("./src/reddit/selectors/posts.ts"),
 				ze = n("./src/reddit/components/ReportFlow/_ReportFlow.m.less"),
 				Je = n.n(ze);
-			const Ve = c.a.div("CloseWrapper", Je.a),
-				Ye = c.a.wrapped(Fe.a, "Close", Je.a),
+			const Ye = c.a.div("CloseWrapper", Je.a),
+				Ve = c.a.wrapped(Fe.a, "Close", Je.a),
 				Xe = Object(i.c)({
 					comment: (e, t) => {
 						let {
@@ -2330,9 +2336,9 @@
 					} = this;
 					if (t.crisisFlowEnabled && e.chosenRuleKind === ce.a.CrisisTextLine && e.showCTLPage) {
 						let e;
-						if (t.commentId ? e = t.comment && t.comment.author : t.postId && (e = t.post && t.post.author), e) return s.a.createElement(r.Fragment, null, s.a.createElement(Ve, {
+						if (t.commentId ? e = t.comment && t.comment.author : t.postId && (e = t.post && t.post.author), e) return s.a.createElement(r.Fragment, null, s.a.createElement(Ye, {
 							onClick: this.handleReportFlowClose
-						}, s.a.createElement(Ye, null)), s.a.createElement(u.a, {
+						}, s.a.createElement(Ve, null)), s.a.createElement(u.a, {
 							onCloseReportFlow: this.handleReportFlowClose,
 							thingId: t.commentId ? t.commentId : t.postId,
 							username: e
@@ -2541,7 +2547,7 @@
 						return e ? JSON.parse(e) : null
 					}
 				};
-			class V extends l.a.Component {
+			class Y extends l.a.Component {
 				constructor(e) {
 					super(e), this.getItemMetadata = () => {
 						const {
@@ -2741,7 +2747,7 @@
 					}))
 				}
 			}
-			t.default = Object(j.b)(z(Object(h.c)(V)))
+			t.default = Object(j.b)(z(Object(h.c)(Y)))
 		},
 		"./src/reddit/components/ReportFlow/_ReportFlowNewModal.tsx": function(e, t, n) {
 			"use strict";
@@ -4332,4 +4338,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.877bada3463164958300.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.b278c983f22de28fc9cd.js.map

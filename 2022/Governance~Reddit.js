@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.d027ebccc1af5c2b5d3d.js
-// Retrieved at 12/8/2022, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.9aa6019498a4e13324dd.js
+// Retrieved at 12/8/2022, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -3122,14 +3122,14 @@
 					let {
 						apiContext: d
 					} = s;
-					var l;
+					var l, u;
 					if (n().blockUser.api.pending[e]) return;
 					t(f({
 						username: e
 					}));
-					const u = await Object(c.a)(d(), e),
-						p = `error-block-${e}`;
-					if (u.ok) u.body.name && t(b(u.body)), u.body.id && t(Object(a.f)(u.body.id)), t(o.g(p)), t(o.f({
+					const p = await Object(c.a)(d(), e),
+						m = `error-block-${e}`;
+					if (p.ok) p.body.name && t(b(p.body)), p.body.id && t(Object(a.f)(p.body.id)), t(o.g(m)), t(o.f({
 						kind: i.b.SuccessCommunity,
 						text: r.fbt._("{username} is now blocked", [r.fbt._param("username", e)], {
 							hk: "MI2y8"
@@ -3137,18 +3137,24 @@
 					}));
 					else {
 						const n = {
-							type: u.error ? u.error.type : "Unknown error",
+							type: p.error ? p.error.type : "Unknown error",
 							username: e
 						};
-						t(h(n)), "REBLOCK_RATE_LIMIT" === (null === (l = u.body) || void 0 === l ? void 0 : l.reason) ? t(o.f({
-							id: p,
+						t(h(n)), "REBLOCK_RATE_LIMIT" === (null === (l = p.body) || void 0 === l ? void 0 : l.reason) ? t(o.f({
+							id: m,
 							kind: i.b.Error,
 							text: r.fbt._("You can't block u/{username} for 24 hours after unblocking them", [r.fbt._param("username", e)], {
 								hk: "W0oUd"
 							}),
 							buttonAction: y(e)
+						})) : "BLOCK_MAXIMUM" === (null === (u = p.body) || void 0 === u ? void 0 : u.reason) ? t(o.f({
+							id: m,
+							kind: i.b.Error,
+							text: r.fbt._("You cannot block more than 1000 users.", null, {
+								hk: "1G5SbN"
+							})
 						})) : t(o.f({
-							id: p,
+							id: m,
 							kind: i.b.Error,
 							text: r.fbt._("An error has occured. Please try again later", null, {
 								hk: "2FpsLy"
@@ -26213,4 +26219,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.d027ebccc1af5c2b5d3d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.9aa6019498a4e13324dd.js.map

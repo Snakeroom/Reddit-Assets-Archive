@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.913036c81af9c09c3a6c.js
-// Retrieved at 12/8/2022, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.913b1976408dec8e9f5f.js
+// Retrieved at 12/8/2022, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -180,7 +180,7 @@
 			})), r.d(t, "c", (function() {
 				return T
 			})), r.d(t, "a", (function() {
-				return M
+				return A
 			})), r.d(t, "b", (function() {
 				return D
 			}));
@@ -387,7 +387,7 @@
 						text: j(),
 						kind: O.b.Error
 					}))))
-				}, A = Object(a.a)(d.d), M = e => async (t, r, n) => {
+				}, M = Object(a.a)(d.d), A = e => async (t, r, n) => {
 					let {
 						apiContext: o
 					} = n;
@@ -401,7 +401,7 @@
 						c = a[e];
 					if (!c) return void i();
 					const d = !c.isFavorited;
-					t(A({
+					t(M({
 						makeFavorite: d,
 						multiredditPath: e,
 						multiredditsModelsState: a
@@ -413,7 +413,7 @@
 							multipath: t,
 							api_type: "json"
 						}
-					}))(o(), e, d)).ok || (t(A({
+					}))(o(), e, d)).ok || (t(M({
 						makeFavorite: !d,
 						multiredditPath: e,
 						multiredditsModelsState: a
@@ -497,14 +497,14 @@
 					let {
 						apiContext: d
 					} = s;
-					var l;
+					var l, u;
 					if (r().blockUser.api.pending[e]) return;
 					t(p({
 						username: e
 					}));
-					const u = await Object(i.a)(d(), e),
-						m = `error-block-${e}`;
-					if (u.ok) u.body.name && t(f(u.body)), u.body.id && t(Object(o.f)(u.body.id)), t(a.g(m)), t(a.f({
+					const m = await Object(i.a)(d(), e),
+						h = `error-block-${e}`;
+					if (m.ok) m.body.name && t(f(m.body)), m.body.id && t(Object(o.f)(m.body.id)), t(a.g(h)), t(a.f({
 						kind: c.b.SuccessCommunity,
 						text: n.fbt._("{username} is now blocked", [n.fbt._param("username", e)], {
 							hk: "MI2y8"
@@ -512,18 +512,24 @@
 					}));
 					else {
 						const r = {
-							type: u.error ? u.error.type : "Unknown error",
+							type: m.error ? m.error.type : "Unknown error",
 							username: e
 						};
-						t(b(r)), "REBLOCK_RATE_LIMIT" === (null === (l = u.body) || void 0 === l ? void 0 : l.reason) ? t(a.f({
-							id: m,
+						t(b(r)), "REBLOCK_RATE_LIMIT" === (null === (l = m.body) || void 0 === l ? void 0 : l.reason) ? t(a.f({
+							id: h,
 							kind: c.b.Error,
 							text: n.fbt._("You can't block u/{username} for 24 hours after unblocking them", [n.fbt._param("username", e)], {
 								hk: "W0oUd"
 							}),
 							buttonAction: v(e)
+						})) : "BLOCK_MAXIMUM" === (null === (u = m.body) || void 0 === u ? void 0 : u.reason) ? t(a.f({
+							id: h,
+							kind: c.b.Error,
+							text: n.fbt._("You cannot block more than 1000 users.", null, {
+								hk: "1G5SbN"
+							})
 						})) : t(a.f({
-							id: m,
+							id: h,
 							kind: c.b.Error,
 							text: n.fbt._("An error has occured. Please try again later", null, {
 								hk: "2FpsLy"
@@ -1180,7 +1186,7 @@
 			function T(e, t) {
 				return `profile--id-card--highlight-tooltip-${e?"-overlay":""}-${t}`
 			}
-			const A = e => {
+			const M = e => {
 				const t = Object(v.a)(),
 					r = Object(s.useCallback)(() => {
 						t(Object(b.b)())
@@ -1261,7 +1267,7 @@
 					tooltip: o.a.createElement(u.d, {
 						seconds: s
 					})
-				}), r && i > 0 && o.a.createElement(A, {
+				}), r && i > 0 && o.a.createElement(M, {
 					highlightClassName: d,
 					isOwnProfile: !!e.isOwnProfile,
 					profileName: e.profileName,
@@ -1282,7 +1288,7 @@
 		"./src/reddit/components/ProfileIdCard/Preview.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return A
+				return M
 			}));
 			var n = r("./node_modules/react/index.js"),
 				s = r.n(n),
@@ -1458,7 +1464,7 @@
 			const L = o.a.wrapped(i.b, "Widget", f.a),
 				F = o.a.div("Description", f.a),
 				T = o.a.wrapped(l, "Actions", f.a);
-			class A extends s.a.PureComponent {
+			class M extends s.a.PureComponent {
 				renderAwardedLastMonth() {
 					const {
 						recentAwardings: e,
@@ -2397,8 +2403,8 @@
 				L = r("./src/lib/classNames/index.ts"),
 				F = r("./src/lib/loadableAction/index.ts"),
 				T = r("./src/lib/copyToClipboard/index.ts"),
-				A = r("./src/reddit/actions/toaster.ts"),
-				M = r("./src/reddit/endpoints/chat/userSettings.ts"),
+				M = r("./src/reddit/actions/toaster.ts"),
+				A = r("./src/reddit/endpoints/chat/userSettings.ts"),
 				B = r("./src/reddit/models/Toast/index.ts");
 			var D = r("./src/reddit/actions/gold/modals.ts"),
 				R = r("./src/reddit/actions/modal.ts"),
@@ -2413,8 +2419,8 @@
 				}),
 				K = r("./src/reddit/constants/modals.ts"),
 				Z = r("./src/reddit/helpers/correlationIdTracker.ts"),
-				Q = r("./src/reddit/helpers/styles/mixins/loading.ts"),
-				Y = r("./src/reddit/models/Gold/Premium/index.ts"),
+				Y = r("./src/reddit/helpers/styles/mixins/loading.ts"),
+				Q = r("./src/reddit/models/Gold/Premium/index.ts"),
 				V = r("./src/reddit/selectors/experiments/chatInviteLinkSharing.ts"),
 				X = r("./src/reddit/selectors/experiments/crisisTextLine.ts"),
 				J = r("./src/reddit/selectors/premium.ts"),
@@ -2447,7 +2453,7 @@
 						...r
 					} = e;
 					return o.a.createElement("div", te({}, r, {
-						className: Object(L.a)(ee.a.Shimmer, Object(Q.b)({
+						className: Object(L.a)(ee.a.Shimmer, Object(Y.b)({
 							isLoading: t
 						}))
 					}))
@@ -2494,7 +2500,7 @@
 							onClickChatInviteLink: f,
 							onClickUnblockUser: b,
 							isUserBlocked: v
-						} = this.props, h = a && Object(Y.d)(n, o).length && !c || o, g = S()([(c || i) && s ? {
+						} = this.props, h = a && Object(Q.d)(n, o).length && !c || o, g = S()([(c || i) && s ? {
 							text: w.fbt._("Profile Moderation", null, {
 								hk: "4x1una"
 							}),
@@ -2647,21 +2653,21 @@
 							let {
 								gqlContext: n
 							} = r;
-							const s = await Object(M.a)(n());
+							const s = await Object(A.a)(n());
 							if (s.ok) {
 								const t = s.body.data.createChatChannelInviteLink.inviteUrl;
 								if (t) {
 									Object(T.a)(t);
-									const r = Object(A.e)(w.fbt._("Copied link!", null, {
+									const r = Object(M.e)(w.fbt._("Copied link!", null, {
 										hk: "4a4E1x"
 									}), B.b.SuccessCommunity);
-									e(Object(A.f)(r))
+									e(Object(M.f)(r))
 								}
 							} else {
-								const t = Object(A.e)(w.fbt._("Something went wrong", null, {
+								const t = Object(M.e)(w.fbt._("Something went wrong", null, {
 									hk: "22u7ha"
 								}), B.b.Error);
-								e(Object(A.f)(t))
+								e(Object(M.f)(t))
 							}
 						})())
 					}
@@ -2844,16 +2850,16 @@
 					enableFollowers: L,
 					id: F,
 					isEmployee: T,
-					isGold: A,
-					prefShowSnoovatar: M,
+					isGold: M,
+					prefShowSnoovatar: A,
 					snoovatarFullBodyAsset: B,
 					username: D
-				} = P, R = !!a && a.id === F, G = !(!a || !a.snoovatarFullBodyAsset), W = O && O.bannerBackgroundImage, H = !!b && b.isNSFW, q = H && c, z = !(!h || !h.userIsSubscriber), K = `/user/${D}/`, Z = j && j.url === K, Q = !h || h.acceptChats, Y = !h || h.acceptPms, V = k && Object(ue.b)(B), X = () => {
+				} = P, R = !!a && a.id === F, G = !(!a || !a.snoovatarFullBodyAsset), W = O && O.bannerBackgroundImage, H = !!b && b.isNSFW, q = H && c, z = !(!h || !h.userIsSubscriber), K = `/user/${D}/`, Z = j && j.url === K, Y = !h || h.acceptChats, Q = !h || h.acceptPms, V = k && Object(ue.b)(B), X = () => {
 					r(e => !e)
 				};
 				return o.a.createElement(o.a.Fragment, null, o.a.createElement(m.a, {
 					isEmployee: T,
-					isGold: A,
+					isGold: M,
 					isNSFW: H,
 					isNftPreview: V,
 					isOverlay: l,
@@ -2892,17 +2898,17 @@
 						isUserBlocked: y,
 						onClickUnblockUser: X,
 						enableFollowers: L
-					}), !!a && !R && !y && Q && xe({
+					}), !!a && !R && !y && Y && xe({
 						userId: F
 					})),
 					footer: y ? void 0 : o.a.createElement(oe, {
 						hasSubreddit: C,
 						isModerator: d,
 						isOwnProfile: R,
-						allowViewSnoovatar: M,
+						allowViewSnoovatar: A,
 						profileName: D,
 						sendEvent: _,
-						userAcceptsPms: Y,
+						userAcceptsPms: Q,
 						isUserBlocked: y
 					}),
 					onClickSnoovatar: p,
@@ -3699,4 +3705,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.913036c81af9c09c3a6c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.913b1976408dec8e9f5f.js.map

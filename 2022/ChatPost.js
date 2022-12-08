@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.9eef80ddae578b653cc8.js
-// Retrieved at 12/8/2022, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.02fbcd1372bc3781730d.js
+// Retrieved at 12/8/2022, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/backo2/index.js": function(e, t) {
@@ -1163,14 +1163,14 @@
 					let {
 						apiContext: d
 					} = s;
-					var l;
+					var l, m;
 					if (n().blockUser.api.pending[e]) return;
 					t(p({
 						username: e
 					}));
-					const m = await Object(i.a)(d(), e),
-						u = `error-block-${e}`;
-					if (m.ok) m.body.name && t(h(m.body)), m.body.id && t(Object(r.f)(m.body.id)), t(a.g(u)), t(a.f({
+					const u = await Object(i.a)(d(), e),
+						f = `error-block-${e}`;
+					if (u.ok) u.body.name && t(h(u.body)), u.body.id && t(Object(r.f)(u.body.id)), t(a.g(f)), t(a.f({
 						kind: c.b.SuccessCommunity,
 						text: o.fbt._("{username} is now blocked", [o.fbt._param("username", e)], {
 							hk: "MI2y8"
@@ -1178,18 +1178,24 @@
 					}));
 					else {
 						const n = {
-							type: m.error ? m.error.type : "Unknown error",
+							type: u.error ? u.error.type : "Unknown error",
 							username: e
 						};
-						t(b(n)), "REBLOCK_RATE_LIMIT" === (null === (l = m.body) || void 0 === l ? void 0 : l.reason) ? t(a.f({
-							id: u,
+						t(b(n)), "REBLOCK_RATE_LIMIT" === (null === (l = u.body) || void 0 === l ? void 0 : l.reason) ? t(a.f({
+							id: f,
 							kind: c.b.Error,
 							text: o.fbt._("You can't block u/{username} for 24 hours after unblocking them", [o.fbt._param("username", e)], {
 								hk: "W0oUd"
 							}),
 							buttonAction: C(e)
+						})) : "BLOCK_MAXIMUM" === (null === (m = u.body) || void 0 === m ? void 0 : m.reason) ? t(a.f({
+							id: f,
+							kind: c.b.Error,
+							text: o.fbt._("You cannot block more than 1000 users.", null, {
+								hk: "1G5SbN"
+							})
 						})) : t(a.f({
-							id: u,
+							id: f,
 							kind: c.b.Error,
 							text: o.fbt._("An error has occured. Please try again later", null, {
 								hk: "2FpsLy"
@@ -6482,4 +6488,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.9eef80ddae578b653cc8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.02fbcd1372bc3781730d.js.map
