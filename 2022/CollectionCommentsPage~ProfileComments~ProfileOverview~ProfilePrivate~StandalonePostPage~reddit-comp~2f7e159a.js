@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a.9216a013eaabbdba87e9.js
-// Retrieved at 12/8/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a.c82d9cf15f12b80c6a0c.js
+// Retrieved at 12/8/2022, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a"], {
 		"./src/higherOrderComponents/withAdClickLocation/index.tsx": function(e, t, s) {
@@ -957,8 +957,8 @@
 				const X = {
 						caretOnTop: !1
 					},
-					V = W.isRemoved && !W.modRemovalReason && !W.modNote && W.belongsTo.type === b.a.SUBREDDIT,
-					q = U("Approve", W.id, H),
+					q = W.isRemoved && !W.modRemovalReason && !W.modNote && W.belongsTo.type === b.a.SUBREDDIT,
+					V = U("Approve", W.id, H),
 					G = U("Archived", W.id, H),
 					Q = U("Lock", W.id, H),
 					Z = U("Mod", W.id, H),
@@ -1020,11 +1020,11 @@
 					isFilled: !0,
 					className: Object(c.a)(T.a.icon, T.a.approveIcon),
 					desc: Object(h.a)(W),
-					id: q,
-					onMouseEnter: D(q),
+					id: V,
+					onMouseEnter: D(V),
 					onMouseLeave: S
 				}), r.a.createElement(m.c, L({
-					tooltipId: q,
+					tooltipId: V,
 					text: Object(h.a)(W)
 				}, X))), Object(v.a)(W) && r.a.createElement(o.Fragment, null, r.a.createElement(P.a, {
 					isFilled: !0,
@@ -1033,7 +1033,7 @@
 					id: K,
 					onMouseEnter: D(K),
 					onMouseLeave: S
-				}), V && r.a.createElement(u.a, {
+				}), q && r.a.createElement(u.a, {
 					className: T.a.addRemovalReason,
 					onClick: g,
 					text: n.fbt._("Add a removal reason", null, {
@@ -1307,7 +1307,7 @@
 			const b = Object(p.a)(e => Object(u.c)(e, {
 				experimentEligibilitySelector: u.a,
 				experimentName: m.yc
-			}), e => e === m.Pd);
+			}), e => e === m.Qd);
 			var x = s("./node_modules/fbt/lib/FbtPublic.js"),
 				v = s("./src/lib/classNames/index.ts"),
 				h = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
@@ -1374,7 +1374,7 @@
 				H = s("./src/reddit/selectors/profile.ts"),
 				J = s("./src/reddit/components/PromotedUserPostsAd/PromotedUserPostMedia/index.m.less"),
 				X = s.n(J);
-			const V = e => {
+			const q = e => {
 				let {
 					post: t
 				} = e;
@@ -1411,8 +1411,8 @@
 					isNSFW: !1
 				})))
 			};
-			var q = s("./src/reddit/components/PromotedUserPostsAd/PromotedUserPost/index.m.less"),
-				G = s.n(q);
+			var V = s("./src/reddit/components/PromotedUserPostsAd/PromotedUserPost/index.m.less"),
+				G = s.n(V);
 			const Q = Object(C.a)(null);
 			var Z = Object(I.b)(Q(e => {
 					let {
@@ -1429,7 +1429,7 @@
 						className: G.a.container
 					}, o.a.createElement(F, {
 						post: t
-					}), o.a.createElement(V, {
+					}), o.a.createElement(q, {
 						post: t
 					})))
 				})),
@@ -2195,13 +2195,13 @@
 				a = s("./src/reddit/models/Post/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const c = e => Object(r.c)(e, {
-					experimentName: o.hf,
+					experimentName: o.if,
 					experimentEligibilitySelector: r.a
 				}),
-				d = (e, t) => (t === o.pf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(a.B)(e),
+				d = (e, t) => (t === o.qf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(a.B)(e),
 				l = Object(n.a)(i.G, c, (e, t) => d(e, t));
 			Object(n.a)((e, t) => t, c, (e, t) => d(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a.9216a013eaabbdba87e9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a.c82d9cf15f12b80c6a0c.js.map

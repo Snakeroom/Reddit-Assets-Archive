@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.9e0125b3c3668087e31e.js
-// Retrieved at 12/8/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.913036c81af9c09c3a6c.js
+// Retrieved at 12/8/2022, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -2413,8 +2413,8 @@
 				}),
 				K = r("./src/reddit/constants/modals.ts"),
 				Z = r("./src/reddit/helpers/correlationIdTracker.ts"),
-				Y = r("./src/reddit/helpers/styles/mixins/loading.ts"),
-				Q = r("./src/reddit/models/Gold/Premium/index.ts"),
+				Q = r("./src/reddit/helpers/styles/mixins/loading.ts"),
+				Y = r("./src/reddit/models/Gold/Premium/index.ts"),
 				V = r("./src/reddit/selectors/experiments/chatInviteLinkSharing.ts"),
 				X = r("./src/reddit/selectors/experiments/crisisTextLine.ts"),
 				J = r("./src/reddit/selectors/premium.ts"),
@@ -2447,7 +2447,7 @@
 						...r
 					} = e;
 					return o.a.createElement("div", te({}, r, {
-						className: Object(L.a)(ee.a.Shimmer, Object(Y.b)({
+						className: Object(L.a)(ee.a.Shimmer, Object(Q.b)({
 							isLoading: t
 						}))
 					}))
@@ -2494,7 +2494,7 @@
 							onClickChatInviteLink: f,
 							onClickUnblockUser: b,
 							isUserBlocked: v
-						} = this.props, h = a && Object(Q.d)(n, o).length && !c || o, g = S()([(c || i) && s ? {
+						} = this.props, h = a && Object(Y.d)(n, o).length && !c || o, g = S()([(c || i) && s ? {
 							text: w.fbt._("Profile Moderation", null, {
 								hk: "4x1una"
 							}),
@@ -2848,7 +2848,7 @@
 					prefShowSnoovatar: M,
 					snoovatarFullBodyAsset: B,
 					username: D
-				} = P, R = !!a && a.id === F, G = !(!a || !a.snoovatarFullBodyAsset), W = O && O.bannerBackgroundImage, H = !!b && b.isNSFW, q = H && c, z = !(!h || !h.userIsSubscriber), K = `/user/${D}/`, Z = j && j.url === K, Y = !h || h.acceptChats, Q = !h || h.acceptPms, V = k && Object(ue.b)(B), X = () => {
+				} = P, R = !!a && a.id === F, G = !(!a || !a.snoovatarFullBodyAsset), W = O && O.bannerBackgroundImage, H = !!b && b.isNSFW, q = H && c, z = !(!h || !h.userIsSubscriber), K = `/user/${D}/`, Z = j && j.url === K, Q = !h || h.acceptChats, Y = !h || h.acceptPms, V = k && Object(ue.b)(B), X = () => {
 					r(e => !e)
 				};
 				return o.a.createElement(o.a.Fragment, null, o.a.createElement(m.a, {
@@ -2892,7 +2892,7 @@
 						isUserBlocked: y,
 						onClickUnblockUser: X,
 						enableFollowers: L
-					}), !!a && !R && !y && Y && xe({
+					}), !!a && !R && !y && Q && xe({
 						userId: F
 					})),
 					footer: y ? void 0 : o.a.createElement(oe, {
@@ -2902,7 +2902,7 @@
 						allowViewSnoovatar: M,
 						profileName: D,
 						sendEvent: _,
-						userAcceptsPms: Q,
+						userAcceptsPms: Y,
 						isUserBlocked: y
 					}),
 					onClickSnoovatar: p,
@@ -3651,7 +3651,7 @@
 			const a = e => Object(s.c)(e, {
 				experimentName: n.u,
 				experimentEligibilitySelector: () => Object(o.R)(e)
-			}) === n.Pd
+			}) === n.Qd
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, r) {
 			"use strict";
@@ -3699,4 +3699,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.9e0125b3c3668087e31e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.913036c81af9c09c3a6c.js.map

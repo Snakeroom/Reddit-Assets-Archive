@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.699ae13f18935d13ce18.js
-// Retrieved at 12/8/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.8bb31d39f0ba44b384a4.js
+// Retrieved at 12/8/2022, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./node_modules/lodash/map.js": function(e, t, n) {
@@ -198,14 +198,14 @@
 					} = e,
 					B = null == g ? void 0 : g.messageType,
 					M = B === x.a.CommentReply,
-					W = B === x.a.SubredditRecommendation,
-					V = B === x.a.LifecyclePostSuggestions,
+					V = B === x.a.SubredditRecommendation,
+					W = B === x.a.LifecyclePostSuggestions,
 					H = null === (t = null == g ? void 0 : g.post) || void 0 === t ? void 0 : t.permalink;
 				let J = null === (n = null == g ? void 0 : g.comment) || void 0 === n ? void 0 : n.id,
 					K = (null === (o = null == g ? void 0 : g.post) || void 0 === o ? void 0 : o.id) || (null === (I = null === (b = null == g ? void 0 : g.comment) || void 0 === b ? void 0 : b.postInfo) || void 0 === I ? void 0 : I.id);
-				const Q = null === (C = null == g ? void 0 : g.subreddit) || void 0 === C ? void 0 : C.id,
-					z = null === (E = null === (j = null == g ? void 0 : g.awarding) || void 0 === j ? void 0 : j.award) || void 0 === E ? void 0 : E.id,
-					X = null === (S = null === (R = null == g ? void 0 : g.awarding) || void 0 === R ? void 0 : R.awarder) || void 0 === S ? void 0 : S.id;
+				const X = null === (C = null == g ? void 0 : g.subreddit) || void 0 === C ? void 0 : C.id,
+					Q = null === (E = null === (j = null == g ? void 0 : g.awarding) || void 0 === j ? void 0 : j.award) || void 0 === E ? void 0 : E.id,
+					z = null === (S = null === (R = null == g ? void 0 : g.awarding) || void 0 === R ? void 0 : R.awarder) || void 0 === S ? void 0 : S.id;
 				if (B === x.a.CommentFollow || B === x.a.PostFollow) {
 					const e = (e => {
 						const t = {},
@@ -237,13 +237,13 @@
 						case x.a.HFNSubredditInterestingPost:
 						case x.a.LifecyclePostSuggestions:
 						case x.a.SubredditRecommendation: {
-							const e = V;
-							if (!(W || e || k && P)) return null;
+							const e = W;
+							if (!(V || e || k && P)) return null;
 							const t = e => {
 									H ? F({
 										position: f.d.SECOND,
 										postId: K,
-										subredditId: Q
+										subredditId: X
 									}) : (e.preventDefault(), T(Object(d.f)(N)))
 								},
 								n = y._("Check It Out", null, {
@@ -293,16 +293,16 @@
 							})) : null
 						}
 						case x.a.AwardReceived: {
-							if (!X) return null;
+							if (!z) return null;
 							const e = e => {
-								e.preventDefault(), X ? F({
+								e.preventDefault(), z ? F({
 									position: f.d.SECOND,
-									awardId: z
+									awardId: Q
 								}) : T(Object(d.f)(N))
 							};
 							return s.a.createElement(l.b, {
-								userId: X,
-								contextId: X,
+								userId: z,
+								contextId: z,
 								onClick: e,
 								isFullWidth: w,
 								priority: p.c.Tertiary,
@@ -510,11 +510,11 @@
 				experimentEligibilitySelector: s.a,
 				experimentName: o.sb
 			}), e => ({
-				bucketed: e === o.Wc.ExpandedSearch || e === o.Wc.CollapsedSearch,
-				collapsed: e === o.Wc.CollapsedSearch,
-				expanded: e === o.Wc.ExpandedSearch
+				bucketed: e === o.Xc.ExpandedSearch || e === o.Xc.CollapsedSearch,
+				collapsed: e === o.Xc.CollapsedSearch,
+				expanded: e === o.Xc.ExpandedSearch
 			}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.699ae13f18935d13ce18.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.8bb31d39f0ba44b384a4.js.map

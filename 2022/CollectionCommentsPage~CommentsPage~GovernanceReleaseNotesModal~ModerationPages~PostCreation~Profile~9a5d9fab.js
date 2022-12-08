@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.5c6062c4b2ff1af496fa.js
-// Retrieved at 12/8/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.ccbb4d7fd391142e1f94.js
+// Retrieved at 12/8/2022, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -85,16 +85,16 @@
 			const p = Object(o.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Ge
+					experimentName: u.He
 				});
-				return Object(u.zg)(t) ? void 0 : t
+				return Object(u.Ag)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.He
+					experimentName: u.Ie
 				});
-				return Object(u.zg)(t) ? void 0 : t
-			}, (e, t) => e === u.Ie.Enabled && t === u.Ie.Enabled);
+				return Object(u.Ag)(t) ? void 0 : t
+			}, (e, t) => e === u.Je.Enabled && t === u.Je.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const g = e => {
@@ -614,8 +614,8 @@
 					J = G > 0,
 					K = G < h.length - 1,
 					Y = Object(p.a)(),
-					z = Object(i.useRef)(null),
 					$ = Object(i.useRef)(null),
+					z = Object(i.useRef)(null),
 					[q, Q] = Object(i.useState)(F ? G : -1),
 					[X, Z] = Object(i.useState)(F ? G : -1),
 					ee = Object(l.a)(F),
@@ -635,7 +635,7 @@
 							}, 1e3)) : (q < 0 || X - q == 0) && clearTimeout(se.current)
 						})
 					}, [q, X, h.length]);
-				Object(o.a)($, ie);
+				Object(o.a)(z, ie);
 				const ne = Object(i.useCallback)(e => {
 						t(Object(x.f)({
 							postId: B,
@@ -674,7 +674,7 @@
 						const e = h[G] && h[G].outboundUrl;
 						e && Y(u.c(B, e))
 					}, [Y, B, G, h]);
-				m(y.a.ArrowLeft, z.current, de), m(y.a.ArrowRight, z.current, ae);
+				m(y.a.ArrowLeft, $.current, de), m(y.a.ArrowRight, $.current, ae);
 				const ce = h[G] && h[G].caption,
 					ue = h[G] && h[G].outboundUrl,
 					me = ((e, t, s) => {
@@ -692,7 +692,7 @@
 				return n.a.createElement("div", {
 					"data-adclicklocation": C.a.MEDIA,
 					className: Object(a.a)(S.a.outerContainer),
-					ref: z,
+					ref: $,
 					tabIndex: 0
 				}, L ? n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
 					className: Object(a.a)(S.a.tilesWrapper, {
@@ -726,7 +726,7 @@
 				})) : n.a.createElement("div", {
 					className: S.a.slideshowContainer,
 					tabIndex: -1,
-					ref: $,
+					ref: z,
 					onClick: e.onClickRevealBlurred,
 					style: me
 				}, n.a.createElement("div", {
@@ -762,7 +762,7 @@
 					})
 				})), !e.shouldBlur && n.a.createElement(n.a.Fragment, null, n.a.createElement(M, {
 					onClick: de,
-					setFocusTo: $,
+					setFocusTo: z,
 					hasMoreSlides: J,
 					title: T._("Previous", null, {
 						hk: "3dZcTi"
@@ -771,7 +771,7 @@
 					className: S.a.prevButton
 				}), n.a.createElement(M, {
 					onClick: ae,
-					setFocusTo: $,
+					setFocusTo: z,
 					hasMoreSlides: K,
 					title: T._("Next", null, {
 						hk: "3Ajk1H"
@@ -1292,8 +1292,8 @@
 				J = s("./src/reddit/constants/componentSizes.ts"),
 				K = s("./src/reddit/constants/screenWidths.ts"),
 				Y = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				z = s("./src/reddit/helpers/canPreviewSelfText/index.ts"),
-				$ = s("./src/reddit/helpers/getRichTextContent/index.ts"),
+				$ = s("./src/reddit/helpers/canPreviewSelfText/index.ts"),
+				z = s("./src/reddit/helpers/getRichTextContent/index.ts"),
 				q = s("./src/reddit/helpers/mediaGallery/index.tsx"),
 				Q = s("./src/reddit/helpers/path/index.ts"),
 				X = s("./src/reddit/helpers/postHasSelfText/index.ts"),
@@ -1796,9 +1796,9 @@
 					if (!P.media) return null;
 					switch (P.media.type) {
 						case te.o.RTJSON:
-							const e = Object($.a)(P, null);
+							const e = Object(z.a)(P, null);
 							if (null === e) return null;
-							if (!J && !Object(z.a)(P, null === (t = this.props.theme) || void 0 === t ? void 0 : t.subredditContext)) return null;
+							if (!J && !Object($.a)(P, null === (t = this.props.theme) || void 0 === t ? void 0 : t.subredditContext)) return null;
 							const r = P.isMeta ? Object(ee.a)(e, P.id) : e;
 							return u.a.createElement(u.a.Fragment, null, Te && u.a.createElement(B.a, {
 								canLoadContent: se,
@@ -2428,8 +2428,8 @@
 					var i;
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: n.Oc
-					}) === n.Pd && !s.isSponsored && o.includes(null === (i = null == t ? void 0 : t.meta) || void 0 === i ? void 0 : i.name)
+						experimentName: n.Pc
+					}) === n.Qd && !s.isSponsored && o.includes(null === (i = null == t ? void 0 : t.meta) || void 0 === i ? void 0 : i.name)
 				}
 		},
 		"./src/reddit/selectors/experiments/intuitivePostTypes.ts": function(e, t, s) {
@@ -2453,10 +2453,10 @@
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
 						experimentName: i.Ob
-					}) === i.Pd
+					}) === i.Qd
 				})(e)
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.5c6062c4b2ff1af496fa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.ccbb4d7fd391142e1f94.js.map

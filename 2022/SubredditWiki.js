@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.5341b3e0984b68d2dbae.js
-// Retrieved at 12/8/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.06c24658cec0a69b115d.js
+// Retrieved at 12/8/2022, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2644,8 +2644,8 @@
 			const k = e => {
 				return Object(y.c)(e, {
 					experimentEligibilitySelector: y.a,
-					experimentName: x.uf
-				}) === x.Pd
+					experimentName: x.vf
+				}) === x.Qd
 			};
 			var C = n("./src/reddit/selectors/experiments/shredditParity.ts"),
 				w = n("./src/reddit/selectors/recapGame.ts"),
@@ -5847,7 +5847,7 @@
 				const t = Object(i.f)().getState(),
 					n = Object(h.a)(t, Object(o.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.fd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.fd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.fd.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.gd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.gd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.gd.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(j, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -7341,7 +7341,7 @@
 						} = t;
 						return Object(lt.c)(e, n)
 					},
-					isInNewModuleNCPV3Experiment: e => Object(ut.a)(e) === at.Se.NewModule,
+					isInNewModuleNCPV3Experiment: e => Object(ut.a)(e) === at.Te.NewModule,
 					showCommunityChat: pt.a,
 					showGovernance: ot.d.spPoints,
 					showLeaderboard: ot.d.spLeaderboard,
@@ -9584,7 +9584,7 @@
 				d = e => Object(a.c)(e, {
 					experimentEligibilitySelector: o,
 					experimentName: s.nb
-				}) === s.Vc.Treatment
+				}) === s.Wc.Treatment
 		},
 		"./src/reddit/selectors/experiments/communityChat.ts": function(e, t, n) {
 			"use strict";
@@ -9789,4 +9789,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.5341b3e0984b68d2dbae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.06c24658cec0a69b115d.js.map

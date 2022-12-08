@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.b21c385c9c450a5bee8c.js
-// Retrieved at 12/8/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.b7b7fc50726c69ae8c7f.js
+// Retrieved at 12/8/2022, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, r) {
@@ -73,7 +73,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(u.yg)(e.category_name)
+									displayText: Object(u.zg)(e.category_name)
 								};
 								r.push(s.id), t[s.id] = s
 							}), {
@@ -287,8 +287,8 @@
 			const C = e => {
 				return Object(E.c)(e, {
 					experimentEligibilitySelector: E.a,
-					experimentName: x.uf
-				}) === x.Pd
+					experimentName: x.vf
+				}) === x.Qd
 			};
 			var S = r("./src/reddit/selectors/experiments/shredditParity.ts"),
 				_ = r("./src/reddit/selectors/recapGame.ts"),
@@ -526,7 +526,7 @@
 				const t = Object(a.f)().getState(),
 					r = Object(g.a)(t, Object(o.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.fd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.fd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.fd.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.gd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.gd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.gd.LargeImagePreview ? e.reredditButtons : [];
 					return s.a.createElement(N, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -2643,7 +2643,7 @@
 					} = t;
 					return Object(g.b)(r.params.categoryName || "")
 				},
-				at = Object(m.xg)(p.i),
+				at = Object(m.yg)(p.i),
 				it = Object(d.c)({
 					categories: e => Object(tt.b)(e, {
 						categoriesOrder: at
@@ -2796,4 +2796,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.b21c385c9c450a5bee8c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.b7b7fc50726c69ae8c7f.js.map

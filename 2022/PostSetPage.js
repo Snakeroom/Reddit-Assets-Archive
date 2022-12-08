@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostSetPage.42db69e1dd35dd036242.js
-// Retrieved at 12/8/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostSetPage.b1ca3b4e59ccdba05bd3.js
+// Retrieved at 12/8/2022, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostSetPage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -913,8 +913,8 @@
 			const E = e => {
 				return Object(_.c)(e, {
 					experimentEligibilitySelector: _.a,
-					experimentName: v.uf
-				}) === v.Pd
+					experimentName: v.vf
+				}) === v.Qd
 			};
 			var S = n("./src/reddit/selectors/experiments/shredditParity.ts"),
 				O = n("./src/reddit/selectors/recapGame.ts"),
@@ -1352,7 +1352,7 @@
 				const t = Object(i.f)().getState(),
 					n = Object(h.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.fd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.fd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.fd.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.gd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.gd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.gd.LargeImagePreview ? e.reredditButtons : [];
 					return s.a.createElement(j, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -2944,7 +2944,7 @@
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
 					experimentName: r.F
-				}) === r.Pd
+				}) === r.Qd
 			}
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, n) {
@@ -2984,13 +2984,13 @@
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: () => t,
 						experimentName: r.vc
-					}) === r.Pd
+					}) === r.Qd
 				},
 				o = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
 						experimentName: r.uc
-					}) === r.Pd
+					}) === r.Qd
 				}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, n) {
@@ -3022,4 +3022,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.42db69e1dd35dd036242.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.b1ca3b4e59ccdba05bd3.js.map

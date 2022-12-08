@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.21a461021f5b7005469d.js
-// Retrieved at 12/8/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.61e7503eef5a19944334.js
+// Retrieved at 12/8/2022, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -906,8 +906,8 @@
 			const S = e => {
 				return Object(_.c)(e, {
 					experimentEligibilitySelector: _.a,
-					experimentName: y.uf
-				}) === y.Pd
+					experimentName: y.vf
+				}) === y.Qd
 			};
 			var T = s("./src/reddit/selectors/experiments/shredditParity.ts"),
 				E = s("./src/reddit/selectors/recapGame.ts"),
@@ -1326,7 +1326,7 @@
 				const t = Object(i.f)().getState(),
 					s = Object(h.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.fd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.fd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.fd.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.gd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.gd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.gd.LargeImagePreview ? e.reredditButtons : [];
 					return n.a.createElement(k, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -2797,8 +2797,8 @@
 				V = s.n(z);
 			const {
 				fbt: J
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), q = 5;
-			class Q extends n.a.Component {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), Q = 5;
+			class q extends n.a.Component {
 				constructor() {
 					super(...arguments), this.onClick = () => {
 						const {
@@ -2814,7 +2814,7 @@
 						relatedTopics: t
 					} = this.props.relationship;
 					return n.a.createElement(_, {
-						limit: q,
+						limit: Q,
 						title: e,
 						topics: t
 					}, this.renderSeeMoreButton())
@@ -2824,7 +2824,7 @@
 						namePlural: e,
 						relatedTopics: t
 					} = this.props.relationship;
-					return t.length < q ? null : n.a.createElement(L.a, {
+					return t.length < Q ? null : n.a.createElement(L.a, {
 						onClick: this.onClick,
 						to: "#"
 					}, n.a.createElement(I.r, {
@@ -2838,7 +2838,7 @@
 					})))
 				}
 			}
-			var Y = Q,
+			var Y = q,
 				K = s("./src/lib/prettyPrintNumber/index.ts"),
 				Z = s("./src/reddit/components/Flair/index.tsx"),
 				X = s("./src/reddit/components/SubredditIcon/index.tsx"),
@@ -3202,7 +3202,7 @@
 				return Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
 					experimentName: r.F
-				}) === r.Pd
+				}) === r.Qd
 			}
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, s) {
@@ -3258,4 +3258,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.21a461021f5b7005469d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.61e7503eef5a19944334.js.map

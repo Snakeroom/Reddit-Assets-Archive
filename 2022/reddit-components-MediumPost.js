@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.5e8409486cae638877cd.js
-// Retrieved at 12/8/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.e85f25ebe91740f5be76.js
+// Retrieved at 12/8/2022, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -7311,12 +7311,12 @@
 						rtJsonElementProps: i
 					});
 					switch (r) {
-						case h.Yf.SmIcon:
+						case h.Zf.SmIcon:
 							return o.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: i
 							});
-						case h.Yf.SmIconHc:
+						case h.Zf.SmIconHc:
 							return o.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -10114,9 +10114,9 @@
 				experimentEligibilitySelector: o.a,
 				experimentName: n.sb
 			}), e => ({
-				bucketed: e === n.Wc.ExpandedSearch || e === n.Wc.CollapsedSearch,
-				collapsed: e === n.Wc.CollapsedSearch,
-				expanded: e === n.Wc.ExpandedSearch
+				bucketed: e === n.Xc.ExpandedSearch || e === n.Xc.CollapsedSearch,
+				collapsed: e === n.Xc.CollapsedSearch,
+				expanded: e === n.Xc.ExpandedSearch
 			}))
 		},
 		"./src/reddit/selectors/experiments/intuitivePostTypes.ts": function(e, t, s) {
@@ -10140,7 +10140,7 @@
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
 						experimentName: n.Ob
-					}) === n.Pd
+					}) === n.Qd
 				})(e)
 			}
 		},
@@ -10230,7 +10230,7 @@
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
 						experimentName: n.Ac
-					}) === n.gd.Enabled
+					}) === n.hd.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, s) {
@@ -10243,8 +10243,8 @@
 			const r = e => {
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.ef
-				}) === n.Pd
+					experimentName: n.ff
+				}) === n.Qd
 			}
 		},
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, s) {
@@ -10262,8 +10262,8 @@
 			const c = Object(i.a)(a.S, e => !e),
 				d = Object(i.a)(e => Object(o.c)(e, {
 					experimentEligibilitySelector: c,
-					experimentName: n.Kf
-				}), e => e === n.Pd),
+					experimentName: n.Lf
+				}), e => e === n.Qd),
 				l = Object(i.a)(d, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? t : r.a.Off),
 				u = Object(i.a)(l, e => e === r.a.Treatment),
 				m = (e, t) => {
@@ -10285,7 +10285,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(o.zg)(t)
+					return Boolean(t) && !Object(o.Ag)(t)
 				},
 				c = Object(n.a)(a, r.d, (e, t) => e && !t)
 		},
@@ -10363,10 +10363,10 @@
 				i = s("./src/reddit/models/Post/index.ts"),
 				a = s("./src/reddit/selectors/posts.ts");
 			const c = e => Object(r.c)(e, {
-					experimentName: o.hf,
+					experimentName: o.if,
 					experimentEligibilitySelector: r.a
 				}),
-				d = (e, t) => (t === o.pf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(i.B)(e),
+				d = (e, t) => (t === o.qf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(i.B)(e),
 				l = Object(n.a)(a.G, c, (e, t) => d(e, t));
 			Object(n.a)((e, t) => t, c, (e, t) => d(e, t))
 		},
@@ -10393,12 +10393,12 @@
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.Sf
+						experimentName: n.Tf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.Yf.SmIcon || t === n.Yf.SmIconHc
+					return t === n.Zf.SmIcon || t === n.Zf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -10517,4 +10517,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.5e8409486cae638877cd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.e85f25ebe91740f5be76.js.map

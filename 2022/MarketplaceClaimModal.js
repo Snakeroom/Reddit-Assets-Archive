@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.80aa61f4bec6231c793a.js
-// Retrieved at 12/8/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.57b442021b4924d17d4d.js
+// Retrieved at 12/8/2022, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MarketplaceClaimModal"], {
 		"./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx": function(e, t, r) {
@@ -77,7 +77,7 @@
 		"./src/reddit/components/Econ/Marketplace/ClaimModal/index.tsx": function(e, t, r) {
 			"use strict";
 			r.r(t), r.d(t, "MarketplaceClaim", (function() {
-				return x
+				return j
 			}));
 			var n = r("./node_modules/@reddit/marketplace/marketplace.es.js"),
 				s = r("./node_modules/fbt/lib/FbtPublic.js"),
@@ -97,8 +97,8 @@
 				f = r("./src/reddit/components/Econ/Marketplace/ClaimModal/index.m.less"),
 				v = r.n(f);
 
-			function j() {
-				return (j = Object.assign || function(e) {
+			function x() {
+				return (x = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n])
@@ -106,7 +106,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const x = e => {
+			const j = e => {
 					let {
 						onClose: t
 					} = e;
@@ -150,8 +150,8 @@
 						}
 					})))
 				},
-				A = Object(a.a)(x);
-			t.default = e => c.a.createElement(A, j({
+				A = Object(a.a)(j);
+			t.default = e => c.a.createElement(A, x({
 				withOverlay: !0,
 				className: v.a.modal
 			}, e))
@@ -210,9 +210,9 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(s.a)(n.wd)
+			const a = Object(s.a)(n.xd)
 		},
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.80aa61f4bec6231c793a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.57b442021b4924d17d4d.js.map

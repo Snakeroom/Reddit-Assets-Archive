@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.9f0e8381c6a25228f89f.js
-// Retrieved at 12/8/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.c29a6aca51624cf26724.js
+// Retrieved at 12/8/2022, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -4087,20 +4087,20 @@
 			const i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.me
-					}) === o.Pd
+						experimentName: o.ne
+					}) === o.Qd
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.ne
-					}) === o.Pd
+						experimentName: o.oe
+					}) === o.Qd
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.Yd
-					}) === o.Pd
+						experimentName: o.Zd
+					}) === o.Qd
 				},
 				c = (e, t) => {
 					let {
@@ -4138,31 +4138,31 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.rg
-					}) === o.Pd
+						experimentName: o.sg
+					}) === o.Qd
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.sg
-					}) === o.Pd
+						experimentName: o.tg
+					}) === o.Qd
 				},
 				c = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.qg
+						experimentName: o.rg
 					});
-					return t === o.hg.TypingIndicators || t === o.hg.IndicatorsPlusCTA
+					return t === o.ig.TypingIndicators || t === o.ig.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: o.qg
+						experimentName: o.rg
 					});
-					return (null == t ? void 0 : t.variant) === o.hg.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.ig.IndicatorsPlusCTA
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.9f0e8381c6a25228f89f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.c29a6aca51624cf26724.js.map

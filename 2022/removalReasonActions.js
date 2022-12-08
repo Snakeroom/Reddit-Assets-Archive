@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.7c3b6133c6be6785f8ee.js
-// Retrieved at 12/8/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.39d15c957b91c1b52894.js
+// Retrieved at 12/8/2022, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./node_modules/lodash/map.js": function(e, t, s) {
@@ -526,10 +526,10 @@
 				z = s("./src/reddit/helpers/routeKey/index.ts"),
 				q = s("./src/reddit/models/ModQueue/index.ts"),
 				H = s("./src/reddit/models/PostDraft/index.ts"),
-				Q = s("./src/reddit/models/RemovalReason/index.ts"),
-				W = s("./src/reddit/models/Toast/index.ts"),
-				X = s("./src/reddit/selectors/comments.ts"),
-				Z = s("./src/reddit/selectors/platform.ts");
+				X = s("./src/reddit/models/RemovalReason/index.ts"),
+				Q = s("./src/reddit/models/Toast/index.ts"),
+				Z = s("./src/reddit/selectors/comments.ts"),
+				W = s("./src/reddit/selectors/platform.ts");
 			Object(n.a)({
 				features: {
 					removalReasons: I
@@ -574,7 +574,7 @@
 							subredditId: e,
 							reason: r
 						})), s(Object(P.f)({
-							kind: W.b.SuccessMod,
+							kind: Q.b.SuccessMod,
 							text: o.fbt._("Removal reason added!", null, {
 								hk: "2WSh8N"
 							})
@@ -598,7 +598,7 @@
 						subredditId: e,
 						reason: t
 					})), s(Object(P.f)({
-						kind: W.b.SuccessMod,
+						kind: Q.b.SuccessMod,
 						text: o.fbt._("Removal reason saved", null, {
 							hk: "28ScuL"
 						})
@@ -617,7 +617,7 @@
 						subredditId: e,
 						reasonId: t
 					})), s(Object(P.f)({
-						kind: W.b.SuccessMod,
+						kind: Q.b.SuccessMod,
 						text: o.fbt._("Removal reason deleted", null, {
 							hk: "4xzgsa"
 						})
@@ -638,9 +638,9 @@
 					const l = d(),
 						u = l.user.account && l.user.account.displayText,
 						m = e[0],
-						b = Object($.a)(m) ? Q.e.Post : Q.e.Comment,
-						p = b === Q.e.Post ? l.posts.models[m] : l.features.comments.models[m],
-						O = b === Q.e.Post ? D.R : N.j;
+						b = Object($.a)(m) ? X.e.Post : X.e.Comment,
+						p = b === X.e.Post ? l.posts.models[m] : l.features.comments.models[m],
+						O = b === X.e.Post ? D.R : N.j;
 					if (!p || !u) return !1;
 					a(fe()), a(O({
 						[m]: {
@@ -665,26 +665,26 @@
 									isLocked: r,
 									type: o
 								},
-								d = await G(i(), Object(Q.h)(n, b), b);
+								d = await G(i(), Object(X.h)(n, b), b);
 							if (d.ok) {
-								if ([Q.f.Public, Q.f.PublicAsSubreddit].includes(o)) {
+								if ([X.f.Public, X.f.PublicAsSubreddit].includes(o)) {
 									if (a(ve()), d.body) {
 										const e = Object(J.a)(d.body),
 											t = {
 												comment: e,
 												parentId: m
 											},
-											s = Object(Z.f)(l),
+											s = Object(W.f)(l),
 											o = l.platform.currentPage && l.platform.currentPage.routeMatch;
 										let n = s && o && Object(z.a)(o, l, l.posts.models[e.postId]);
 										if (n || (n = Object(y.a)(e.postId, null, {
 												sort: h.x,
 												hasSortParam: !0
-											})), b === Q.e.Post) {
+											})), b === X.e.Post) {
 											const s = Object(L.a)(H.c.replyToPost, m);
 											a(Object(T.r)({
 												...t,
-												headCommentId: Object(X.w)(l, {
+												headCommentId: Object(Z.w)(l, {
 													commentsPageKey: n
 												}),
 												commentsPageKey: n,
@@ -700,9 +700,9 @@
 													isStickied: !1
 												}
 											}))
-										} else if (b === Q.e.Comment) {
+										} else if (b === X.e.Comment) {
 											const e = Object(L.a)(H.c.replyToComment, p.id),
-												s = Object(X.j)(l, {
+												s = Object(Z.j)(l, {
 													commentId: m,
 													commentsPageKey: n
 												});
@@ -737,7 +737,7 @@
 					if (!u) return;
 					a(fe());
 					const m = Object(P.f)({
-							kind: W.b.SuccessMod,
+							kind: Q.b.SuccessMod,
 							text: o.fbt._({
 								"*": "Added removal reason for {number} posts/comments",
 								_1: "Added removal reason for 1 post/comment"
@@ -768,7 +768,7 @@
 									title: t.title,
 									type: n
 								},
-								r = await G(i(), Object(Q.h)(o, Q.e.Bulk), Q.e.Bulk);
+								r = await G(i(), Object(X.h)(o, X.e.Bulk), X.e.Bulk);
 							r.ok ? (a(Se()), a(m)) : a(Ae(r.error))
 						} else a(m)
 					} else a(je(p.error))
@@ -999,11 +999,11 @@
 				experimentEligibilitySelector: n.a,
 				experimentName: o.sb
 			}), e => ({
-				bucketed: e === o.Wc.ExpandedSearch || e === o.Wc.CollapsedSearch,
-				collapsed: e === o.Wc.CollapsedSearch,
-				expanded: e === o.Wc.ExpandedSearch
+				bucketed: e === o.Xc.ExpandedSearch || e === o.Xc.CollapsedSearch,
+				collapsed: e === o.Xc.CollapsedSearch,
+				expanded: e === o.Xc.ExpandedSearch
 			}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.7c3b6133c6be6785f8ee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.39d15c957b91c1b52894.js.map

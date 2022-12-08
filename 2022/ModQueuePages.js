@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.4f1f2c03b14c51ae7799.js
-// Retrieved at 12/8/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.63dca4a43e20a1857c83.js
+// Retrieved at 12/8/2022, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -6672,12 +6672,12 @@
 						rtJsonElementProps: i
 					});
 					switch (r) {
-						case h.Yf.SmIcon:
+						case h.Zf.SmIcon:
 							return o.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case h.Yf.SmIconHc:
+						case h.Zf.SmIconHc:
 							return o.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -8415,7 +8415,7 @@
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
 					experimentName: s.F
-				}) === s.Pd
+				}) === s.Qd
 			}
 		},
 		"./src/reddit/selectors/experiments/realtimeMQUpdates.ts": function(e, t, n) {
@@ -8430,7 +8430,7 @@
 			const a = e => Object(i.a)(e) && Object(o.c)(e, {
 				experimentEligibilitySelector: r.S,
 				experimentName: s.Bc
-			}) === s.Pd
+			}) === s.Qd
 		},
 		"./src/reddit/selectors/subredditMention.ts": function(e, t, n) {
 			"use strict";
@@ -8455,12 +8455,12 @@
 				d = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Sf
+						experimentName: s.Tf
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.Yf.SmIcon || t === s.Yf.SmIconHc
+					return t === s.Zf.SmIcon || t === s.Zf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -8498,4 +8498,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.4f1f2c03b14c51ae7799.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.63dca4a43e20a1857c83.js.map
