@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.eb703212830f9faa206e.js
-// Retrieved at 12/7/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.08d89b0ce0e9b78bec1d.js
+// Retrieved at 12/8/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-SubscriptionModal"], {
 		"./src/reddit/components/Governance/TokenAmount/index.m.less": function(e, t, n) {
@@ -119,8 +119,8 @@
 				y = n("./src/reddit/hooks/useTracking.ts"),
 				v = n("./src/reddit/models/Badge/managementPage.ts"),
 				x = n("./src/reddit/models/Toast/index.ts"),
-				O = n("./src/reddit/selectors/crypto/points.ts"),
-				f = n("./src/reddit/selectors/gov.ts"),
+				f = n("./src/reddit/selectors/crypto/points.ts"),
+				O = n("./src/reddit/selectors/gov.ts"),
 				j = n("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx"),
 				T = n("./src/config.ts"),
 				_ = n("./src/reddit/components/SubredditIcon/index.tsx"),
@@ -174,8 +174,8 @@
 					pointsDetails: _,
 					walletAddress: A
 				} = Object(i.e)(Object(o.c)({
-					pointsDetails: e => Object(O.b)(e, n),
-					walletAddress: t => Object(f.g)(t, e)
+					pointsDetails: e => Object(f.b)(e, n),
+					walletAddress: t => Object(O.g)(t, e)
 				}));
 				if (!_) return null;
 				const M = Object(m.d)(_.contracts.subscriptions.address, A, !0),
@@ -334,16 +334,16 @@
 			const r = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.ze
-					}) === s.Od
+						experimentName: s.Ae
+					}) === s.Pd
 				},
 				i = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.xe
-					}) === s.Od
+						experimentName: s.ye
+					}) === s.Pd
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.eb703212830f9faa206e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.08d89b0ce0e9b78bec1d.js.map

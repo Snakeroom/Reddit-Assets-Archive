@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HappeningNow.e11f70458211894cfd72.js
-// Retrieved at 12/7/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HappeningNow.e3790edf73b3a9f9c0ec.js
+// Retrieved at 12/8/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HappeningNow"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2519,12 +2519,12 @@
 						rtJsonElementProps: a
 					});
 					switch (o) {
-						case b.Xf.SmIcon:
+						case b.Yf.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: r,
 								rtJsonElementProps: a
 							});
-						case b.Xf.SmIconHc:
+						case b.Yf.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: r,
 								isHoverable: !0,
@@ -3149,7 +3149,7 @@
 				G = n("./src/reddit/components/Econ/Audio/SpeakerRings/SpeakerRingOuter.tsx"),
 				W = n("./src/reddit/components/HappeningNow/Post/LiveRing/index.m.less"),
 				J = n.n(W);
-			var Z = e => {
+			var Y = e => {
 					let {
 						id: t,
 						className: n,
@@ -3170,7 +3170,7 @@
 						className: J.a.speakerRingOuter
 					})))
 				},
-				Y = n("./src/reddit/components/SubredditIcon/index.tsx");
+				Z = n("./src/reddit/components/SubredditIcon/index.tsx");
 
 			function K() {
 				return (K = Object.assign || function(e) {
@@ -3249,10 +3249,10 @@
 						className: te.a.header
 					}, o.a.createElement("div", {
 						className: te.a.subredditIconContainer
-					}, o.a.createElement(Z, {
+					}, o.a.createElement(Y, {
 						id: n.id,
 						isAnimated: !0
-					}), o.a.createElement(Y.b, {
+					}), o.a.createElement(Z.b, {
 						className: te.a.subredditIcon,
 						iconUrl: d
 					}), t.contentType === x.t.Chat ? o.a.createElement(q, {
@@ -3632,8 +3632,8 @@
 					stopColor: "#FF7A00"
 				})))),
 				Je = n("./src/reddit/components/HappeningNow/SidebarContent/index.m.less"),
-				Ze = n.n(Je);
-			const Ye = [{
+				Ye = n.n(Je);
+			const Ze = [{
 					url: "https://www.reddithelp.com",
 					label: r.fbt._("Help", null, {
 						hk: "1RgRee"
@@ -3723,7 +3723,7 @@
 					})
 				}],
 				qe = e => o.a.createElement("a", {
-					className: Ze.a.link,
+					className: Ye.a.link,
 					href: e.url,
 					rel: e.rel
 				}, e.label);
@@ -3742,21 +3742,21 @@
 						className: t
 					} = e;
 					return o.a.createElement("div", {
-						className: Object(i.a)(Ze.a.liveDiscoveryContentIntro, t)
+						className: Object(i.a)(Ye.a.liveDiscoveryContentIntro, t)
 					}, o.a.createElement("img", {
-						className: Ze.a.img,
+						className: Ye.a.img,
 						src: `${k.a.assetPath}/img/happeningNow/live-content-intro-snoo.png`,
 						alt: r.fbt._("Snoo sitting on a sofa with popcorn", null, {
 							hk: "1Rm16Z"
 						})
 					}), o.a.createElement(We, {
-						className: Ze.a.background
+						className: Ye.a.background
 					}), o.a.createElement("h2", {
-						className: Ze.a.header
+						className: Ye.a.header
 					}, r.fbt._("Here's what's happening!", null, {
 						hk: "2LRkyC"
 					})), o.a.createElement("p", {
-						className: Ze.a.description
+						className: Ye.a.description
 					}, r.fbt._("Explore live chats and audio talks happening across Reddit.", null, {
 						hk: "3HDfwU"
 					})))
@@ -3766,19 +3766,19 @@
 						className: t
 					} = e;
 					return o.a.createElement("div", {
-						className: Object(i.a)(Ze.a.links, t)
+						className: Object(i.a)(Ye.a.links, t)
 					}, o.a.createElement("div", {
-						className: Ze.a.linksWrapper
+						className: Ye.a.linksWrapper
 					}, o.a.createElement("div", {
-						className: Ze.a.column
-					}, Ye.map((e, t) => o.a.createElement(qe, Xe({
+						className: Ye.a.column
+					}, Ze.map((e, t) => o.a.createElement(qe, Xe({
 						key: `first_column_link_${t}`
 					}, e)))), o.a.createElement("div", {
-						className: Ze.a.column
+						className: Ye.a.column
 					}, Ke.map((e, t) => o.a.createElement(qe, Xe({
 						key: `second_column_link_${t}`
 					}, e))))), o.a.createElement("span", {
-						className: Ze.a.copyright
+						className: Ye.a.copyright
 					}, r.fbt._("Reddit Inc © {year}. All rights reserved", [r.fbt._param("year", (new Date).getFullYear().toString())], {
 						hk: "4BrCkA"
 					})))
@@ -3885,12 +3885,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: r.Rf
+						experimentName: r.Sf
 					}) || ""
 				},
 				l = e => {
 					const t = c(e);
-					return t === r.Xf.SmIcon || t === r.Xf.SmIconHc
+					return t === r.Yf.SmIcon || t === r.Yf.SmIconHc
 				},
 				d = (e, t) => {
 					let {
@@ -3919,4 +3919,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.e11f70458211894cfd72.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.e3790edf73b3a9f9c0ec.js.map

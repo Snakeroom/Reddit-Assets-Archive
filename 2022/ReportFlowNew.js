@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlowNew.17fd9c3083a571815c95.js
-// Retrieved at 12/7/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlowNew.df85cc3cfd5a2fb0c844.js
+// Retrieved at 12/8/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlowNew"], {
 		"./src/reddit/actions/blockedRedditors.ts": function(e, t, o) {
@@ -258,7 +258,7 @@
 		"./src/reddit/components/ReportFlow/_ReportFlowNew.tsx": function(e, t, o) {
 			"use strict";
 			o.r(t), o.d(t, "ValidThingReportTypes", (function() {
-				return K
+				return M
 			}));
 			var r = o("./src/config.ts"),
 				s = o("./node_modules/fbt/lib/FbtPublic.js"),
@@ -327,12 +327,12 @@
 				D = o.n(q);
 			const $ = U.a.div("ReportLoaderWrapper", D.a),
 				Q = U.a.img("LoadingIcon", D.a),
-				J = "2.1";
-			var K;
+				K = "2.1";
+			var M;
 			! function(e) {
 				e.Post = "post", e.Comment = "comment", e.Message = "message"
-			}(K || (K = {}));
-			const M = Object(l.c)({
+			}(M || (M = {}));
+			const J = Object(l.c)({
 					post: (e, t) => {
 						let {
 							postId: o
@@ -373,7 +373,7 @@
 					locale: G.j,
 					isReportAnAdEnabled: T.a
 				}),
-				Y = Object(c.b)(M, (e, t) => {
+				Y = Object(c.b)(J, (e, t) => {
 					let {
 						timestamp: o
 					} = t;
@@ -432,11 +432,11 @@
 							post: s
 						} = this.props;
 						let n, i, d, a;
-						if (this.props.author && (d = this.props.author), t) n = t, i = K.Comment, this.props.comment && !d && (d = this.props.comment.author, a = this.props.comment.authorId);
-						else if (e) n = e, s && s.isSponsored && r && (n = `ad_${s.impressionId}_${s.postId}`), i = K.Post, this.props.post && !d && (d = this.props.post.author, a = this.props.post.authorId);
+						if (this.props.author && (d = this.props.author), t) n = t, i = M.Comment, this.props.comment && !d && (d = this.props.comment.author, a = this.props.comment.authorId);
+						else if (e) n = e, s && s.isSponsored && r && (n = `ad_${s.impressionId}_${s.postId}`), i = M.Post, this.props.post && !d && (d = this.props.post.author, a = this.props.post.authorId);
 						else {
 							if (!o) throw new Error("Invalid object type passed to reporting flow");
-							n = o, i = K.Message
+							n = o, i = M.Message
 						}
 						return {
 							itemId: n,
@@ -495,7 +495,7 @@
 						}
 						let h;
 						switch (l) {
-							case K.Post:
+							case M.Post:
 								if (null === (o = this.props.post) || void 0 === o ? void 0 : o.audioRoom) {
 									const e = new URLSearchParams(window.location.href),
 										t = parseInt(e.get("reportedTimeInSeconds") || "0", 10),
@@ -528,7 +528,7 @@
 									input: e
 								});
 								break;
-							case K.Comment:
+							case M.Comment:
 								const t = {
 									commentId: c,
 									...b
@@ -537,7 +537,7 @@
 									input: t
 								}));
 								break;
-							case K.Message:
+							case M.Message:
 								const s = {
 									messageId: c,
 									...b
@@ -565,7 +565,7 @@
 						gqlContext: o,
 						hostAppName: r
 					} = this.props;
-					H(o(), e, J, r, t).then(e => {
+					H(o(), e, K, r, t).then(e => {
 						e && this.setState({
 							formComponent: e.component,
 							formState: e.state,
@@ -1032,10 +1032,10 @@
 				s = o("./src/reddit/constants/experiments.ts"),
 				n = o("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(r.a)(e => Object(n.c)(e, {
-					experimentName: s.Jc,
+					experimentName: s.Kc,
 					experimentEligibilitySelector: n.a
 				}), e => e),
-				d = Object(r.a)(i, e => e === s.Od)
+				d = Object(r.a)(i, e => e === s.Pd)
 		},
 		"./src/redditGQL/operations/CreateLiveAudioRoomOnProfile.json": function(e) {
 			e.exports = JSON.parse('{"id":"e35a47c6aa21"}')
@@ -1081,4 +1081,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.17fd9c3083a571815c95.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.df85cc3cfd5a2fb0c844.js.map

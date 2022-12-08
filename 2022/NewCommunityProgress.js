@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommunityProgress.e5aeed1fbb03e5a55ec6.js
-// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommunityProgress.49b4dde54cf9736f9280.js
+// Retrieved at 12/8/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommunityProgress"], {
 		"./src/lib/colors/constants.ts": function(e, A, t) {
@@ -448,7 +448,7 @@
 						hk: "19KsIY"
 					}) : U._("Get more tips and quick to-dos to help your community grow.", null, {
 						hk: "1Ggc77"
-					}))), s.a.createElement(B.a, {
+					}))), s.a.createElement(B.b, {
 						className: o.a.arrowIcon
 					}))
 				}),
@@ -597,11 +597,11 @@
 						percentage: Z,
 						ratioString: `${null===(e=r.progress)||void 0===e?void 0:e.done}/${null===(A=r.progress)||void 0===A?void 0:A.total}`
 					}))
-				})(), p ? s.a.createElement(B.c, {
+				})(), p ? s.a.createElement(B.d, {
 					className: Object(c.a)(o.a.chevron, {
 						[o.a.v2]: !D
 					})
-				}) : s.a.createElement(B.b, {
+				}) : s.a.createElement(B.c, {
 					className: Object(c.a)(o.a.chevron, {
 						[o.a.v2]: !D
 					})
@@ -1207,4 +1207,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.e5aeed1fbb03e5a55ec6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.49b4dde54cf9736f9280.js.map

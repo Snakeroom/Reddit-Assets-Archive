@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Avatar.fe4cbebc2e59ba01b9ba.js
-// Retrieved at 12/7/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Avatar.2197a0c5ba30711892cf.js
+// Retrieved at 12/8/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Avatar"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, r) {
@@ -32,10 +32,10 @@
 				m = r("./src/reddit/selectors/user.ts"),
 				O = r("./src/reddit/components/AvatarBuilder/index.m.less"),
 				b = r.n(O),
-				v = r("./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx");
+				_ = r("./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx");
 
-			function _() {
-				return (_ = Object.assign || function(e) {
+			function v() {
+				return (v = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var s in r) Object.prototype.hasOwnProperty.call(r, s) && (e[s] = r[s])
@@ -54,7 +54,7 @@
 					E = Object(n.useContext)(d.a),
 					A = Object(c.d)(),
 					g = () => A(Object(i.openLoginModal)()),
-					S = Object(v.a)();
+					S = Object(_.a)();
 				Object(n.useEffect)(() => {
 					O(l.r)
 				}, [O]), Object(n.useEffect)(() => {
@@ -95,7 +95,7 @@
 						[b.a.snoovatarModalBuilderV2]: t,
 						[b.a.containerExp]: E
 					})
-				}, a.a.createElement(s.a, _({}, C, {
+				}, a.a.createElement(s.a, v({}, C, {
 					navState: N,
 					isModal: t
 				}), a.a.createElement(s.b, null)))
@@ -131,8 +131,8 @@
 						n = t ? new Date(t.expires).getTime() : 1,
 						O = Object(c.e)(u.fb),
 						b = Object(i.a)(),
-						v = p ? o.a.Rinkeby : o.a.Ethereum,
-						_ = Object(a.useMemo)(() => ({
+						_ = p ? o.a.Rinkeby : o.a.Ethereum,
+						v = Object(a.useMemo)(() => ({
 							headers: {
 								Authorization: `Bearer ${r}`
 							},
@@ -142,7 +142,7 @@
 							...m,
 							STRIPE_API_KEY: s.a.stripe.apiKey(e),
 							ACCESS_TOKEN: r,
-							BLOCKCHAIN_PROVIDER: v
+							BLOCKCHAIN_PROVIDER: _
 						},
 						x = Object(a.useCallback)(e => {
 							b(t => {
@@ -160,11 +160,11 @@
 							})
 						}, [b]);
 					return Object(a.useMemo)(() => ({
-						authHeaders: _,
+						authHeaders: v,
 						config: f,
 						isNightMode: O,
 						sendEvent: x
-					}), [_, f, O, x])
+					}), [v, f, O, x])
 				}
 		},
 		"./src/reddit/pages/Avatar/index.tsx": function(e, t, r) {
@@ -186,9 +186,9 @@
 			}));
 			var s = r("./src/reddit/constants/experiments.ts"),
 				n = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(n.a)(s.vd)
+			const a = Object(n.a)(s.wd)
 		},
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.fe4cbebc2e59ba01b9ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.2197a0c5ba30711892cf.js.map

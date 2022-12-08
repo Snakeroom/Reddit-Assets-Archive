@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.b134169f0803fa2b7e6a.js
-// Retrieved at 12/8/2022, 11:50:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.2d614d4435d1169e203d.js
+// Retrieved at 12/8/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, s) {
@@ -605,20 +605,20 @@
 				T = s("./src/reddit/selectors/subreddit.ts"),
 				q = s("./src/reddit/selectors/telemetry.ts"),
 				Q = s("./src/telemetry/index.ts"),
-				U = s("./src/lib/initializeClient/installReducer.ts"),
-				B = s("./src/reddit/reducers/features/modActivitySummaries/index.ts"),
+				B = s("./src/lib/initializeClient/installReducer.ts"),
+				U = s("./src/reddit/reducers/features/modActivitySummaries/index.ts"),
 				V = s("./src/reddit/reducers/features/realtimeModqueue/index.ts"),
 				G = s("./src/reddit/reducers/pages/modHub/index.ts"),
 				H = s("./src/reddit/actions/modQueue/constants.ts");
-			Object(U.a)({
+			Object(B.a)({
 				pages: {
 					modHub: G.a
 				}
-			}), Object(U.a)({
+			}), Object(B.a)({
 				features: {
-					modActivitySummaries: B.a
+					modActivitySummaries: U.a
 				}
-			}), Object(U.a)({
+			}), Object(B.a)({
 				features: {
 					realtimeModqueue: V.a
 				}
@@ -1211,8 +1211,8 @@
 				T = s("./src/lib/omitHeaders/index.ts"),
 				q = s("./src/reddit/constants/headers.ts"),
 				Q = s("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
-				U = s("./src/reddit/models/RichTextJson/addRTJParam.ts");
-			const B = (e, t) => Object(F.a)(Object(T.a)(e, [q.a]), {
+				B = s("./src/reddit/models/RichTextJson/addRTJParam.ts");
+			const U = (e, t) => Object(F.a)(Object(T.a)(e, [q.a]), {
 					endpoint: Object(Q.a)(`${e.apiUrl}/api/v1/modactions/removal_reasons/`),
 					method: E.ob.POST,
 					type: "json",
@@ -1223,7 +1223,7 @@
 					}
 				}),
 				V = (e, t, s) => Object(F.a)(Object(T.a)(e, [q.a]), {
-					endpoint: Object(Q.a)(Object(U.a)(`${e.apiUrl}/api/v1/modactions/removal_${s}_message/`)),
+					endpoint: Object(Q.a)(Object(B.a)(`${e.apiUrl}/api/v1/modactions/removal_${s}_message/`)),
 					method: E.ob.POST,
 					type: "json",
 					data: t
@@ -1361,7 +1361,7 @@
 							modNote: r,
 							reasonId: t ? t.id : null
 						},
-						v = await B(c(), O);
+						v = await U(c(), O);
 					if (v.ok) {
 						if (d(je()), t) {
 							d(ge());
@@ -1457,7 +1457,7 @@
 							modNote: n,
 							reasonId: t ? t.id : null
 						},
-						p = await B(c(), b);
+						p = await U(c(), b);
 					if (p.ok) {
 						const o = {
 							ids: e,
@@ -1750,8 +1750,8 @@
 				n = s("./src/reddit/selectors/user.ts");
 			const d = e => Object(r.c)(e, {
 				experimentEligibilitySelector: n.S,
-				experimentName: o.ac
-			}) === o.Od
+				experimentName: o.bc
+			}) === o.Pd
 		},
 		"./src/reddit/selectors/experiments/realtimeMQUpdates.ts": function(e, t, s) {
 			"use strict";
@@ -1764,8 +1764,8 @@
 				d = s("./src/reddit/selectors/experiments/modqueueActionBarUXImprovements.ts");
 			const a = e => Object(d.a)(e) && Object(r.c)(e, {
 				experimentEligibilitySelector: n.S,
-				experimentName: o.Ac
-			}) === o.Od
+				experimentName: o.Bc
+			}) === o.Pd
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, s) {
 			"use strict";
@@ -1849,4 +1849,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.b134169f0803fa2b7e6a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.2d614d4435d1169e203d.js.map

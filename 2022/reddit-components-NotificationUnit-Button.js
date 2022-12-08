@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.c979a2df7506ccee9da1.js
-// Retrieved at 12/7/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.699ae13f18935d13ce18.js
+// Retrieved at 12/8/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./node_modules/lodash/map.js": function(e, t, n) {
@@ -198,8 +198,8 @@
 					} = e,
 					B = null == g ? void 0 : g.messageType,
 					M = B === x.a.CommentReply,
-					V = B === x.a.SubredditRecommendation,
-					W = B === x.a.LifecyclePostSuggestions,
+					W = B === x.a.SubredditRecommendation,
+					V = B === x.a.LifecyclePostSuggestions,
 					H = null === (t = null == g ? void 0 : g.post) || void 0 === t ? void 0 : t.permalink;
 				let J = null === (n = null == g ? void 0 : g.comment) || void 0 === n ? void 0 : n.id,
 					K = (null === (o = null == g ? void 0 : g.post) || void 0 === o ? void 0 : o.id) || (null === (I = null === (b = null == g ? void 0 : g.comment) || void 0 === b ? void 0 : b.postInfo) || void 0 === I ? void 0 : I.id);
@@ -237,8 +237,8 @@
 						case x.a.HFNSubredditInterestingPost:
 						case x.a.LifecyclePostSuggestions:
 						case x.a.SubredditRecommendation: {
-							const e = W;
-							if (!(V || e || k && P)) return null;
+							const e = V;
+							if (!(W || e || k && P)) return null;
 							const t = e => {
 									H ? F({
 										position: f.d.SECOND,
@@ -510,11 +510,11 @@
 				experimentEligibilitySelector: s.a,
 				experimentName: o.sb
 			}), e => ({
-				bucketed: e === o.Vc.ExpandedSearch || e === o.Vc.CollapsedSearch,
-				collapsed: e === o.Vc.CollapsedSearch,
-				expanded: e === o.Vc.ExpandedSearch
+				bucketed: e === o.Wc.ExpandedSearch || e === o.Wc.CollapsedSearch,
+				collapsed: e === o.Wc.CollapsedSearch,
+				expanded: e === o.Wc.ExpandedSearch
 			}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.c979a2df7506ccee9da1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.699ae13f18935d13ce18.js.map
