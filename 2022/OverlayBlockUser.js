@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayBlockUser.bd50b54bda72ea4530e5.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayBlockUser.e897f9f910e35cf34254.js
+// Retrieved at 12/8/2022, 10:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayBlockUser"], {
 		"./src/chat/components/OverlayBlockUser/index.m.less": function(e, t, n) {
@@ -15,8 +15,8 @@
 			n.r(t);
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				o = n("./node_modules/react/index.js"),
-				r = n.n(o),
-				a = n("./node_modules/react-redux/es/index.js"),
+				a = n.n(o),
+				r = n("./node_modules/react-redux/es/index.js"),
 				c = n("./src/chat/actions/tracking.ts"),
 				l = n("./src/chat/actions/user.ts"),
 				d = n("./src/chat/components/OverlayNav/index.tsx"),
@@ -28,35 +28,35 @@
 			const b = Object(m.a)({
 					blockedUser: (e, t) => e.contacts.models[t.blockedUserId]
 				}),
-				k = Object(a.b)(b, e => ({
+				k = Object(r.b)(b, e => ({
 					onChannelBlock: t => {
-						e(l.m(t)), e(c.db(t))
+						e(l.m(t)), e(c.ab(t))
 					}
 				}))(e => {
 					const {
 						blockedUser: t,
 						blockedUserId: n,
 						onChannelBlock: o
-					} = e, a = t ? t.name : s.fbt._("user", null, {
+					} = e, r = t ? t.name : s.fbt._("user", null, {
 						hk: "3ddTpU"
 					});
-					return r.a.createElement(i.a, null, r.a.createElement(d.a, {
+					return a.a.createElement(i.a, null, a.a.createElement(d.a, {
 						channelId: e.channelId,
-						title: s.fbt._("Block {username}", [s.fbt._param("username", a)], {
+						title: s.fbt._("Block {username}", [s.fbt._param("username", r)], {
 							hk: "2aTkTS"
 						})
-					}), r.a.createElement("div", {
+					}), a.a.createElement("div", {
 						className: _.a.Container
-					}, r.a.createElement("p", {
+					}, a.a.createElement("p", {
 						className: _.a.Text
 					}, s.fbt._("Are you sure you want to block this user?", null, {
 						hk: "31Tn9j"
-					}))), r.a.createElement(u.a, {
+					}))), a.a.createElement(u.a, {
 						primaryButtonText: s.fbt._("Block", null, {
 							hk: "8i5gq"
 						}),
 						primaryButtonAction: () => o(n)
-					}, r.a.createElement("p", null, s.fbt._("You will no longer see their comments, posts, and messages. They will not know that you've blocked them. You will no longer get notifications from this user", null, {
+					}, a.a.createElement("p", null, s.fbt._("You will no longer see their comments, posts, and messages. They will not know that you've blocked them. You will no longer get notifications from this user", null, {
 						hk: "4xn1p1"
 					}))))
 				});
@@ -64,4 +64,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayBlockUser.bd50b54bda72ea4530e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayBlockUser.e897f9f910e35cf34254.js.map

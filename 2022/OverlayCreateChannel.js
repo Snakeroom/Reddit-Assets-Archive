@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayCreateChannel.869b016a5863436d69ec.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayCreateChannel.0a2a5a765d1e875fe06f.js
+// Retrieved at 12/8/2022, 10:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayCreateChannel"], {
 		"./src/chat/components/OverlayCreateChannel/index.m.less": function(e, t, n) {
@@ -51,7 +51,9 @@
 		},
 		"./src/chat/components/OverlayCreateChannel/index.tsx": function(e, t, n) {
 			"use strict";
-			n.r(t), n.d(t, "OverlayCreateChannel", (function() {
+			n.r(t), n.d(t, "CopyInviteLink", (function() {
+				return J
+			})), n.d(t, "OverlayCreateChannel", (function() {
 				return Y
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -66,8 +68,8 @@
 				d = n("./src/chat/actions/channel/dropdown.ts"),
 				u = n("./src/chat/actions/inviteLink/index.ts"),
 				p = n("./src/chat/actions/sendbird/index.ts"),
-				b = n("./src/chat/actions/tracking.ts"),
-				C = n("./src/chat/actions/user.ts"),
+				C = n("./src/chat/actions/tracking.ts"),
+				b = n("./src/chat/actions/user.ts"),
 				x = n("./src/chat/components/OverlayNav/index.tsx"),
 				_ = n("./src/chat/components/Scroller/index.tsx"),
 				g = n("./src/chat/components/SearchBar/index.tsx"),
@@ -145,7 +147,7 @@
 					memberCount: e => Object(R.E)(e, "memberCount"),
 					selectedUsers: H.j,
 					selectedUsersCount: H.k,
-					isBlockedUserMessageEnabled: W.d,
+					isBlockedUserMessageEnabled: W.a,
 					directChatOpponentId: R.u
 				}),
 				K = Object(h.b)(Z, e => ({
@@ -155,11 +157,11 @@
 						username: t
 					})),
 					onCancelAndGoBack: () => {
-						e(Object(m.P)()), e(Object(b.k)())
+						e(Object(m.P)()), e(Object(C.k)())
 					},
-					onSelectUser: t => e(Object(C.l)(t)),
-					onUnselectUser: t => e(Object(C.r)(t)),
-					removeAllSelectedUsers: () => e(Object(C.q)()),
+					onSelectUser: t => e(Object(b.l)(t)),
+					onUnselectUser: t => e(Object(b.r)(t)),
+					removeAllSelectedUsers: () => e(Object(b.q)()),
 					requestSuggestedContacts: () => e(Object(p.m)())
 				})),
 				J = e => {
@@ -168,14 +170,12 @@
 						isHidden: n
 					} = e;
 					const a = Object(h.d)(),
-						r = Object(h.e)(W.i),
-						c = Object(h.e)(W.g),
-						i = Object(h.e)(M.a),
-						o = t || i,
-						m = Object(h.e)(R.a),
-						p = Object(h.e)(e => Object(A.a)(e, o)),
-						C = Object(h.e)(e => Object(A.b)(e, o));
-					return r && t || c && !t ? l.a.createElement("span", {
+						r = Object(h.e)(M.a),
+						c = t || r,
+						i = Object(h.e)(R.a),
+						o = Object(h.e)(e => Object(A.a)(e, c)),
+						m = Object(h.e)(e => Object(A.b)(e, c));
+					return t ? l.a.createElement("span", {
 						className: D.a.CopyInviteLink
 					}, l.a.createElement(v.b, {
 						className: D.a.LinkButton
@@ -187,19 +187,19 @@
 						hk: "37SZLa"
 					}) : s.fbt._("Start a direct chat", null, {
 						hk: "3TR4iZ"
-					})), p && C && l.a.createElement("div", {
+					})), o && m && l.a.createElement("div", {
 						className: D.a.CopyInviteLinkContentBody
-					}, `${s.fbt._("Limited to",null,{hk:"3uHU48"})} ${C} ${s.fbt._("invites",null,{hk:"iP9qt"})}. `, !t || m ? l.a.createElement("button", {
+					}, `${s.fbt._("Limited to",null,{hk:"3uHU48"})} ${m} ${s.fbt._("invites",null,{hk:"iP9qt"})}. `, !t || i ? l.a.createElement("button", {
 						role: "button",
 						onClick: Object(j.b)(() => {
-							a(Object(d.b)(o, !t))
+							a(Object(d.b)(c, !t))
 						}),
 						className: D.a.SettingsButton
 					}, s.fbt._("Edit link", null, {
 						hk: "2ryT90"
 					})) : null)), l.a.createElement(v.a, {
 						onClick: Object(j.b)(() => {
-							a(Object(u.e)(o, !t)), a(Object(b.p)(u.b.CHAT_SETTINGS))
+							a(Object(u.e)(c, !t)), a(Object(C.p)(u.b.CHAT_SETTINGS))
 						}),
 						secondary: !0,
 						isSmall: !0,
@@ -373,8 +373,8 @@
 						isUserSelected: d,
 						isExistingGroupUser: u,
 						onFilterReset: p,
-						onFilterContacts: b,
-						onContactsSelect: C,
+						onFilterContacts: C,
+						onContactsSelect: b,
 						onSubmit: E,
 						onCancel: S
 					} = this, k = this.getSelectedContacts(), U = this.getFilteredContacts(), v = !this.getIsValidUser(o), T = this.handleChannelNameInput, w = this.availableCharacters(m), R = this.isSubmitDisabled(w), H = this.primaryButtonText(), W = this.isCreateChannelURLAction(), A = this.isShareToNewChannelAction(), F = this.isStartGroupChannelAction(), M = n >= y.h, P = F || (W || A) && n > 1;
@@ -421,7 +421,7 @@
 						resetFilter: h,
 						selectedContacts: k,
 						onFilterReset: p,
-						onFilterContacts: b,
+						onFilterContacts: C,
 						onIdentifyContact: t,
 						onUnselect: this.props.onUnselectUser
 					}), v ? l.a.createElement("span", {
@@ -444,7 +444,7 @@
 					}, l.a.createElement(f.a, {
 						formName: G,
 						contact: t,
-						onChange: C,
+						onChange: b,
 						isChecked: d(t.id)
 					}))], [])))), k.length && !F || F && k.length > 1 ? l.a.createElement(B.a, {
 						primaryButtonText: H,
@@ -499,7 +499,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var b = e => i.a.createElement(u.a, p({}, e, {
+			var C = e => i.a.createElement(u.a, p({}, e, {
 					viewBox: "0 0 20 20"
 				}), i.a.createElement("rect", {
 					x: "1",
@@ -570,7 +570,7 @@
 					height: "1.25",
 					transform: "translate(3.338 13.658) rotate(-59.989)"
 				})),
-				C = n("./src/chat/icons/svgs/Search/index.tsx"),
+				b = n("./src/chat/icons/svgs/Search/index.tsx"),
 				x = n("./src/chat/components/SearchBar/index.m.less"),
 				_ = n.n(x),
 				g = n("./src/lib/combineRefs/index.tsx");
@@ -649,9 +649,9 @@
 					return i.a.createElement(h.a, {
 						autoScrollBottom: !0,
 						className: Object(o.a)(_.a.SearchBarWrapper, c)
-					}, a.length ? null : e ? i.a.createElement(b, {
+					}, a.length ? null : e ? i.a.createElement(C, {
 						className: _.a.LoadIcon
-					}) : i.a.createElement(C.a, {
+					}) : i.a.createElement(b.a, {
 						className: _.a.SearchIcon
 					}), i.a.createElement(E, null, a && a.length > 0 && a.map((e, t) => i.a.createElement(f, {
 						key: `selected-contact-${t}`,
@@ -774,4 +774,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayCreateChannel.869b016a5863436d69ec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayCreateChannel.0a2a5a765d1e875fe06f.js.map

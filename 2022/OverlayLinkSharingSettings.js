@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayLinkSharingSettings.625fc9bd5a9d3db845c7.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayLinkSharingSettings.06836434821cfd50d6e8.js
+// Retrieved at 12/8/2022, 10:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayLinkSharingSettings"], {
 		"./src/chat/components/OverlayLinkSharingSettings/index.m.less": function(e, t, n) {
@@ -132,7 +132,7 @@
 					displayText: String(e),
 					onClick: () => {
 						(e => {
-							C(e), w.hide(), k(Object(p.U)(r.a.MEMBER, e))
+							C(e), w.hide(), k(Object(p.R)(r.a.MEMBER, e))
 						})(e)
 					},
 					tabIndex: 2,
@@ -171,7 +171,7 @@
 						displayText: (null === (n = d.d[e]) || void 0 === n ? void 0 : n.label()) || "",
 						onClick: () => {
 							(e => {
-								g(e), A.hide(), k(Object(p.U)(r.a.TIME, d.d[e].originalLabel))
+								g(e), A.hide(), k(Object(p.R)(r.a.TIME, d.d[e].originalLabel))
 							})(e)
 						},
 						tabIndex: 3,
@@ -185,7 +185,7 @@
 						hk: "3p3aDn"
 					}),
 					actionButtonAction: () => {
-						k(Object(r.g)(t, n)), k(Object(p.z)())
+						k(Object(r.g)(t, n)), k(Object(p.y)())
 					},
 					actionButtonText: a.fbt._("Reset", null, {
 						hk: "1AvXhB"
@@ -293,4 +293,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayLinkSharingSettings.625fc9bd5a9d3db845c7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayLinkSharingSettings.06836434821cfd50d6e8.js.map

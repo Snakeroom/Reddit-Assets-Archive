@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayGroupAbout.86ff100117222be431c9.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayGroupAbout.b8c9e2d8d90a082d28a5.js
+// Retrieved at 12/8/2022, 10:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayGroupAbout"], {
 		"./src/chat/components/OverlayGroupAbout/index.m.less": function(e, t, n) {
@@ -67,11 +67,11 @@
 				if (n) {
 					const {
 						channelState: c
-					} = n, o = c === h.b.INVITED, j = c === h.b.JOINED, A = () => {
+					} = n, o = c === h.b.INVITED, A = c === h.b.JOINED, B = () => {
 						!N && E && g({
 							loadMore: !0
 						})
-					}, B = () => !!N;
+					}, j = () => !!N;
 					N || C.length || g();
 					const L = e => {
 							f(e)
@@ -81,7 +81,7 @@
 							f(n.name)
 						},
 						M = () => {
-							y && (v(Object(r.j)(y)), v(Object(i.ab)()))
+							y && (v(Object(r.h)(y)), v(Object(i.X)()))
 						},
 						J = () => {
 							v(Object(r.c)())
@@ -115,12 +115,12 @@
 						text: `${l} ${a.fbt._("Members",null,{hk:"2vedT1"})}`
 					}), s.a.createElement(d.a, {
 						className: O.a.Scroller,
-						loadMoreRows: A,
-						isLoadMoreRowsComplete: B
+						loadMoreRows: B,
+						isLoadMoreRowsComplete: j
 					}, s.a.createElement(m.a, {
 						channelId: t,
 						modIndicator: !0,
-						useNSFWIcons: o || j
+						useNSFWIcons: o || A
 					}), N && s.a.createElement("div", {
 						role: "progressbar",
 						className: O.a.LoadingIndicator
@@ -227,4 +227,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayGroupAbout.86ff100117222be431c9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayGroupAbout.b8c9e2d8d90a082d28a5.js.map
