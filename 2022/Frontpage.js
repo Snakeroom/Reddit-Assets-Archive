@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.f03dc072ba9b7b1a58a6.js
-// Retrieved at 12/8/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.190e7ceb3ecfa388220a.js
+// Retrieved at 12/8/2022, 7:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -733,7 +733,7 @@
 						sort: d,
 						t: u,
 						correlationId: m
-					} = t, p = Object(R.i)(e), f = Object(D.bb)(e) || Object(D.S)(e), v = Object(F.b)(e), _ = Object(M.a)(e), x = Object(B.r)(e), {
+					} = t, p = Object(R.j)(e), f = Object(D.bb)(e) || Object(D.S)(e), v = Object(F.b)(e), _ = Object(M.a)(e), x = Object(B.r)(e), {
 						adsSeenCount: y,
 						totalPostsSeenCount: E,
 						sessionStartTime: O
@@ -752,7 +752,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.Ag)(p),
+						includeInterestTopics: !!p && !Object(b.Cg)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: f && !(null === (a = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === a ? void 0 : a.total),
@@ -4723,7 +4723,7 @@
 				} = e;
 				const n = Object(r.d)(),
 					o = Object(l.b)(),
-					_ = Object(r.e)(f.i),
+					_ = Object(r.e)(f.j),
 					E = _ === d.kb.Feed ? t.topics.slice(0, 5) : t.topics,
 					[O, k] = Object(a.useState)(!1),
 					[j, N] = Object(a.useState)(),
@@ -6867,7 +6867,7 @@
 				isBlockingInterstitialV2Enabled: J.c,
 				isTalkLiveBarEnabled: W.r,
 				interestTopicRecommendations: re.b,
-				reonboardingFlow: X.i,
+				reonboardingFlow: X.j,
 				marketplaceFeedUnit: e => Object(z.a)(e) ? Object(te.a)(e) : null,
 				merchandasingUnitAnnouncements: ae.a,
 				inAppNotifications: ne.b,
@@ -7680,7 +7680,7 @@
 						experimentEligibilitySelector: r.S,
 						experimentName: a.wd
 					});
-					return !(!t || Object(a.Ag)(t))
+					return !(!t || Object(a.Cg)(t))
 				},
 				i = e => {
 					return Object(s.c)(e, {
@@ -7889,4 +7889,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.f03dc072ba9b7b1a58a6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.190e7ceb3ecfa388220a.js.map

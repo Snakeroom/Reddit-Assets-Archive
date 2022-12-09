@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.648065dc6e0a5805c537.js
-// Retrieved at 12/8/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.d25c67858ab7ceb679f4.js
+// Retrieved at 12/8/2022, 7:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -785,7 +785,7 @@
 			const E = e => {
 				return Object(C.c)(e, {
 					experimentEligibilitySelector: C.a,
-					experimentName: y.vf
+					experimentName: y.xf
 				}) === y.Qd
 			};
 			var O = s("./src/reddit/selectors/experiments/shredditParity.ts"),
@@ -6765,4 +6765,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.648065dc6e0a5805c537.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.d25c67858ab7ceb679f4.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostSetPage.75e4754a94267f4cd80c.js
-// Retrieved at 12/8/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostSetPage.7e846581f447d8fb886b.js
+// Retrieved at 12/8/2022, 7:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostSetPage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -913,7 +913,7 @@
 			const E = e => {
 				return Object(_.c)(e, {
 					experimentEligibilitySelector: _.a,
-					experimentName: v.vf
+					experimentName: v.xf
 				}) === v.Qd
 			};
 			var S = n("./src/reddit/selectors/experiments/shredditParity.ts"),
@@ -3022,4 +3022,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.75e4754a94267f4cd80c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.7e846581f447d8fb886b.js.map

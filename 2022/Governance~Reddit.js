@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.cfbff46e57286a89c34f.js
-// Retrieved at 12/8/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.e50ff1b4f316bcb4f419.js
+// Retrieved at 12/8/2022, 7:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -2231,7 +2231,7 @@
 			const D = e => O.d.reCaptchaEnterprise(e) && !Object(T.d)(e),
 				w = e => !!Object(S.c)(e, {
 					experimentEligibilitySelector: Object(I.d)(Object(I.b)(...a.c)),
-					experimentName: f.sf
+					experimentName: f.uf
 				}),
 				j = Object(r.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				C = () => l(e => p()([D, w, e => e.tracking.reCaptchaEnterprise.load === r.a.New], t => t(e)))(async e => {
@@ -4408,7 +4408,7 @@
 					relativePosition: O
 				} = e;
 				var S, D, w, j, C, A;
-				const P = Object(a.e)(e => Object(H.a)(e, q.Jf)),
+				const P = Object(a.e)(e => Object(H.a)(e, q.Lf)),
 					R = Object(m.a)(),
 					N = (null === (S = o.displayInfo) || void 0 === S ? void 0 : S.karma) || 0,
 					L = (null === (D = o.displayInfo) || void 0 === D ? void 0 : D.subscribers) || 0,
@@ -4546,7 +4546,7 @@
 					searchOriginPage: f
 				} = e;
 				const b = Object(m.a)(),
-					h = Object(a.e)(e => Object(H.a)(e, q.Jf)),
+					h = Object(a.e)(e => Object(H.a)(e, q.Lf)),
 					g = Object(a.e)(_.mb),
 					{
 						nsfwTypeaheadExpanded: v,
@@ -4787,7 +4787,7 @@
 					onUpdateSearchQuery: C
 				} = e, A = Object(a.d)(), [P, R] = Object(r.useState)(null), [N, L] = Object(r.useState)(n), [M, B] = Object(r.useState)(new Array(Ee).fill(!1)), {
 					enabled: F
-				} = Object(a.e)(ne.j), G = Object(a.e)(e => Object(H.a)(e, q.Jf)), V = !!(null === (t = m.searchQuery) || void 0 === t ? void 0 : t.trim()), Q = l || i, Y = F, K = [...b.communities, ...b.people, ...b.nsfw], $ = !l && (!V || h >= 0) && (G ? 0 === K.length : 0 === f.length) && !Y, z = {
+				} = Object(a.e)(ne.j), G = Object(a.e)(e => Object(H.a)(e, q.Lf)), V = !!(null === (t = m.searchQuery) || void 0 === t ? void 0 : t.trim()), Q = l || i, Y = F, K = [...b.communities, ...b.people, ...b.nsfw], $ = !l && (!V || h >= 0) && (G ? 0 === K.length : 0 === f.length) && !Y, z = {
 					width: N ? `${N}px` : "inherit",
 					overflow: "auto"
 				};
@@ -5183,10 +5183,10 @@
 				b = n("./node_modules/reselect/es/index.js");
 			const h = Object(b.a)(e => Object(f.c)(e, {
 				experimentEligibilitySelector: f.a,
-				experimentName: p.wg
+				experimentName: p.yg
 			}), e => ({
-				promptBeforeClick: e === p.xg.PromptBeforeClick,
-				promptAfterClick: e === p.xg.PromptAfterClick
+				promptBeforeClick: e === p.zg.PromptBeforeClick,
+				promptAfterClick: e === p.zg.PromptAfterClick
 			}));
 			var y = n("./src/reddit/controls/Search/SearchScopePill/index.tsx"),
 				m = n("./src/reddit/controls/Search/SearchBar/index.m.less"),
@@ -26219,4 +26219,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.cfbff46e57286a89c34f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.e50ff1b4f316bcb4f419.js.map
