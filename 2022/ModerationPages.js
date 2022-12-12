@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.e04b237903928423e9df.js
-// Retrieved at 12/12/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.51d30151c01677f6a60b.js
+// Retrieved at 12/12/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "PostCreation~Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-c~93a1f1ba", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -3236,21 +3236,23 @@
 				return i
 			})), n.d(t, "a", (function() {
 				return a
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "d", (function() {
 				return d
+			})), n.d(t, "c", (function() {
+				return c
 			}));
 			var s = n("./src/lib/initializeClient/installReducer.ts"),
 				r = n("./src/lib/makeActionCreator/index.ts"),
 				o = n("./src/reddit/reducers/features/communityChat/index.ts");
-			const i = "COMMUNITY_CHAT_SET_SELECTED_CHANNEL",
-				a = "COMMUNITY_CHAT_CHANNELS_LOADED";
+			const i = "COMMUNITY_CHAT__SET_SELECTED_CHANNEL_ID",
+				a = "COMMUNITY_CHAT__CHANNELS_LOADED";
 			Object(s.a)({
 				features: {
 					communityChat: o.a
 				}
 			});
-			Object(r.a)(i);
-			const d = Object(r.a)(a)
+			const d = Object(r.a)(i),
+				c = Object(r.a)(a)
 		},
 		"./src/reddit/actions/contentControls/constants.ts": function(e, t, n) {
 			"use strict";
@@ -9642,7 +9644,8 @@
 						const n = $e ? null : null === (D = null == jt ? void 0 : jt.subredditInfoByName) || void 0 === D ? void 0 : D.directoryRankings;
 						n && (Pt.subredditAboutInfo[Rt].directoryRankings = n)
 					}
-					if (Pt.channels && Pt.channelIds && i(Object(tt.c)({
+					if (Rt && Pt.channels && Pt.channelIds && i(Object(tt.c)({
+							subredditId: Rt,
 							channels: Pt.channels,
 							channelIds: Pt.channelIds
 						})), jt) {
@@ -9833,6 +9836,7 @@
 				} = e.queryParams, g = s(), y = Object(Se.a)(e.params, g);
 				if ("Popular" === b) return void n(Object(c.c)(e.url.replace("r/Popular", "r/popular")));
 				if ("All" === b) return void n(Object(c.c)(e.url.replace("r/All", "r/all")));
+				e.params.channelId && n(Object(tt.d)(e.params.channelId));
 				const j = Object(h.d)(e.queryParams, Object(ne.mb)(g)),
 					k = At({
 						subredditName: b,
@@ -56820,9 +56824,9 @@
 		"./src/reddit/endpoints/page/subredditPage.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
-				return j
-			})), n.d(t, "b", (function() {
 				return k
+			})), n.d(t, "b", (function() {
+				return I
 			}));
 			var s = n("./src/config.ts"),
 				r = n("./src/lib/constants/index.ts"),
@@ -56839,14 +56843,15 @@
 				f = n("./src/reddit/models/RichTextJson/addRTJParam.ts"),
 				h = n("./src/reddit/models/Subreddit/index.ts"),
 				_ = n("./src/reddit/selectors/adsSignals.ts"),
-				g = n("./src/reddit/selectors/experiments/communityDirectoryBacklinks/index.ts"),
-				v = n("./src/reddit/selectors/experiments/devPlatform.ts"),
-				x = n("./src/reddit/selectors/experiments/econ/index.ts"),
-				O = n("./src/reddit/selectors/platform.ts"),
-				E = n("./src/reddit/selectors/subreddit.ts"),
-				y = n("./src/reddit/selectors/user.ts"),
-				C = n("./src/redditGQL/operations/SubredditPage.json");
-			const j = (e, t, n, s) => {
+				g = n("./src/reddit/selectors/experiments/communityChat.ts"),
+				v = n("./src/reddit/selectors/experiments/communityDirectoryBacklinks/index.ts"),
+				x = n("./src/reddit/selectors/experiments/devPlatform.ts"),
+				O = n("./src/reddit/selectors/experiments/econ/index.ts"),
+				E = n("./src/reddit/selectors/platform.ts"),
+				y = n("./src/reddit/selectors/subreddit.ts"),
+				C = n("./src/reddit/selectors/user.ts"),
+				j = n("./src/redditGQL/operations/SubredditPage.json");
+			const k = (e, t, n, s) => {
 					var r, a;
 					const {
 						after: d,
@@ -56855,55 +56860,56 @@
 						layout: b,
 						limit: f,
 						recentPostIds: h,
-						sort: C,
-						t: j
-					} = n, k = Object(y.bb)(e), I = Object(O.r)(e), S = Object(o.a)(t), w = Object(i.a)(t), T = Object(E.X)(e, {
-						subredditId: Object(E.I)(e, t)
-					}).length > 0, N = Object(y.q)(e), P = Object(y.pb)(e), {
-						adsSeenCount: R,
-						totalPostsSeenCount: A,
-						sessionStartTime: M
-					} = Object(_.a)(e), L = Object(x.e)(e), D = Object(v.a)(e), F = Object(g.c)(e), U = {
+						sort: j,
+						t: k
+					} = n, I = Object(C.bb)(e), S = Object(E.r)(e), w = Object(o.a)(t), T = Object(i.a)(t), N = Object(y.X)(e, {
+						subredditId: Object(y.I)(e, t)
+					}).length > 0, P = Object(C.q)(e), R = Object(C.pb)(e), {
+						adsSeenCount: A,
+						totalPostsSeenCount: M,
+						sessionStartTime: L
+					} = Object(_.a)(e), D = Object(O.e)(e), F = Object(x.a)(e), U = Object(v.c)(e), B = Object(g.a)(e), q = {
 						name: t,
-						includeIdentity: k && !e.user.account,
+						includeIdentity: I && !e.user.account,
 						adContext: {
 							layout: b ? b.toUpperCase() : l.a.Card,
 							clientSignalSessionData: {
-								adsSeenCount: R,
-								totalPostsSeenCount: A,
-								sessionStartTime: M
+								adsSeenCount: A,
+								totalPostsSeenCount: M,
+								sessionStartTime: L
 							}
 						},
-						isFake: w,
-						includeAchievementFlairs: s && !w,
-						includeAppliedFlair: !w && k && s,
-						includeCustomEmojis: s && !w && L,
-						includeDevPlatformMetadata: D,
-						includePowerups: s && !w,
-						includeQuestions: s && k && !w,
-						includeRecents: w && h && h.length > 0 || !1,
-						includeRedditorKarma: s && k && !(null === (a = null === (r = e.user.account) || void 0 === r ? void 0 : r.karma) || void 0 === a ? void 0 : a.total),
-						includeRules: s && !w && !T,
-						includeSubredditLinks: s && !w && !k,
-						includeTopicLinks: s && !w && !k,
-						includeTrending: w,
-						includeSubredditRankings: F,
-						isAdHocMulti: S,
+						isFake: T,
+						includeAchievementFlairs: s && !T,
+						includeAppliedFlair: !T && I && s,
+						includeCustomEmojis: s && !T && D,
+						includeDevPlatformMetadata: F,
+						includePowerups: s && !T,
+						includeQuestions: s && I && !T,
+						includeRecents: T && h && h.length > 0 || !1,
+						includeRedditorKarma: s && I && !(null === (a = null === (r = e.user.account) || void 0 === r ? void 0 : r.karma) || void 0 === a ? void 0 : a.total),
+						includeRules: s && !T && !N,
+						includeSubredditLinks: s && !T && !I,
+						includeTopicLinks: s && !T && !I,
+						includeTrending: T,
+						includeSubredditRankings: U,
+						includeSubredditChannels: B,
+						isAdHocMulti: w,
 						isAll: t === u.d.All,
-						isLoggedOutGatedOptedin: N,
-						isLoggedOutQuarantineOptedin: P,
+						isLoggedOutGatedOptedin: P,
+						isLoggedOutQuarantineOptedin: R,
 						isPopular: t === u.d.Popular,
 						recentPostIds: h || [],
-						subredditNames: S ? t.split("+") : []
+						subredditNames: w ? t.split("+") : []
 					};
-					return C && (U.sort = C.toUpperCase()), j && (U.range = j.toUpperCase()), m ? U.pageSize = Object(p.a)(b) : f && (U.pageSize = f), I && I.ad && (U.forceAds = {
-						ad: I.ad
-					}), (I && I.geo_filter || c) && (U.region = I && I.geo_filter || c), d && (U.after = btoa(d)), U
+					return j && (q.sort = j.toUpperCase()), k && (q.range = k.toUpperCase()), m ? q.pageSize = Object(p.a)(b) : f && (q.pageSize = f), S && S.ad && (q.forceAds = {
+						ad: S.ad
+					}), (S && S.geo_filter || c) && (q.region = S && S.geo_filter || c), d && (q.after = btoa(d)), q
 				},
-				k = async (e, t, n) => {
+				I = async (e, t, n) => {
 					const s = Date.now(),
 						o = await ((e, t) => Object(d.a)(e, {
-							...C,
+							...j,
 							variables: t
 						}))(e, t),
 						i = Date.now();
@@ -56926,17 +56932,17 @@
 					}), {
 						...o,
 						ok: !!a.data.subredditInfoByName && !Object(h.k)(a.data.subredditInfoByName),
-						status: I(a.data),
+						status: S(a.data),
 						body: u
 					}
-				}, I = e => {
+				}, S = e => {
 					if (!e.subredditInfoByName) return 404;
 					if (Object(h.k)(e.subredditInfoByName)) {
 						if (e.subredditInfoByName.forbiddenReason === h.d.Banned) return 404;
 						if (e.subredditInfoByName.forbiddenReason === h.d.GoldOnly || e.subredditInfoByName.forbiddenReason === h.d.Private || e.subredditInfoByName.forbiddenReason === h.d.Quarantined || e.subredditInfoByName.forbiddenReason === h.d.Gated) return 403
 					}
 					return 200
-				}, S = e => {
+				}, w = e => {
 					let {
 						recentPostIds: t,
 						...n
@@ -56949,7 +56955,7 @@
 			t.a = (e, t, n) => Object(a.a)(e, {
 				endpoint: Object(m.a)(Object(f.a)(`${s.a.gatewayUrl}/desktopapi/v1/subreddits/${t}`)),
 				method: r.ob.GET,
-				data: n && S(n) || {},
+				data: n && w(n) || {},
 				traceRequestName: "get_subreddit_page"
 			})
 		},
@@ -70255,9 +70261,9 @@
 			"use strict";
 			var s = n("./src/reddit/actions/communityChat/index.ts");
 			const r = {
-				selectedChannel: null,
+				selectedChannelId: "",
 				models: {},
-				channelIds: []
+				channelIds: {}
 			};
 			t.a = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : r,
@@ -70265,12 +70271,26 @@
 				switch (t.type) {
 					case s.b:
 						return {
-							...e, selectedChannel: t.payload
+							...e, selectedChannelId: t.payload
 						};
-					case s.a:
+					case s.a: {
+						const {
+							subredditId: n,
+							channelIds: s,
+							channels: r
+						} = t.payload;
 						return {
-							...e, channelIds: t.payload.channelIds, models: t.payload.channels
-						};
+							...e,
+							channelIds: {
+								...e.channelIds,
+								[n]: s
+							},
+							models: {
+								...e.models,
+								...r
+							}
+						}
+					}
 					default:
 						return e
 				}
@@ -75249,6 +75269,21 @@
 				expanded: e === s.Wc.ExpandedSearch
 			}))
 		},
+		"./src/reddit/selectors/experiments/communityChat.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return d
+			})), n.d(t, "b", (function() {
+				return c
+			}));
+			var s = n("./node_modules/reselect/es/index.js");
+			var r = n("./src/reddit/constants/experiments.ts"),
+				o = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts"),
+				i = n("./src/reddit/selectors/platform.ts");
+			const a = Object(s.a)(i.c, e => "t5_7bf0ce" === e),
+				d = Object(o.a)(r.Wb),
+				c = Object(s.a)(a, d, (e, t) => e && t)
+		},
 		"./src/reddit/selectors/experiments/communityDirectoryBacklinks/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
@@ -78456,7 +78491,7 @@
 			e.exports = JSON.parse('{"id":"29aee4089528"}')
 		},
 		"./src/redditGQL/operations/SubredditPage.json": function(e) {
-			e.exports = JSON.parse('{"id":"f57e867ffec5"}')
+			e.exports = JSON.parse('{"id":"04f4f8f2fc62"}')
 		},
 		"./src/redditGQL/operations/SubredditPageExtra.json": function(e) {
 			e.exports = JSON.parse('{"id":"99a33079240e"}')
@@ -78580,4 +78615,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.e04b237903928423e9df.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.51d30151c01677f6a60b.js.map
