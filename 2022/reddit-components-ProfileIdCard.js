@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.f728a1d231f6067ec559.js
-// Retrieved at 12/12/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.49eb9285d0984e9348bc.js
+// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -3387,7 +3387,7 @@
 			const a = e => ({
 					screen: s.cb(e),
 					profile: s.T(e),
-					subreddit: s.kb(e)
+					subreddit: s.lb(e)
 				}),
 				i = e => t => ({
 					source: "user_dropdown",
@@ -3657,7 +3657,7 @@
 			const a = e => Object(s.c)(e, {
 				experimentName: n.u,
 				experimentEligibilitySelector: () => Object(o.R)(e)
-			}) === n.Pd
+			}) === n.Qd
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, r) {
 			"use strict";
@@ -3705,4 +3705,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.f728a1d231f6067ec559.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.49eb9285d0984e9348bc.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.307005924a9e6ebd2b3f.js
-// Retrieved at 12/12/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.5d7f985a69c5d8712907.js
+// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -7606,7 +7606,7 @@
 					source: "meta",
 					action: "click",
 					noun: "cancel_membership_with_points",
-					subreddit: Object(s.lb)(t, e)
+					subreddit: Object(s.mb)(t, e)
 				}),
 				a = e => t => ({
 					...Object(s.o)(t),
@@ -8955,7 +8955,7 @@
 						})()
 					}, []);
 					const D = Object(r.e)(I.h),
-						B = D === w.ed.TopTwo || D === w.ed.All,
+						B = D === w.fd.TopTwo || D === w.fd.All,
 						R = Object(o.useMemo)(() => Object(se.c)(T), [T]);
 					return l ? a.a.createElement(X, {
 						email: j.email
@@ -11909,9 +11909,9 @@
 					},
 					isDspEnabled: e => {
 						return Object(ae.c)(e, {
-							experimentName: w.nd,
+							experimentName: w.od,
 							experimentEligibilitySelector: ae.a
-						}) === w.Pd
+						}) === w.Qd
 					}
 				}),
 				fr = Object(ve.v)(),
@@ -12464,7 +12464,7 @@
 			const r = e => Object(o.c)(e, {
 				experimentName: s.u,
 				experimentEligibilitySelector: () => Object(a.R)(e)
-			}) === s.Pd
+			}) === s.Qd
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -12628,4 +12628,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.307005924a9e6ebd2b3f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.5d7f985a69c5d8712907.js.map

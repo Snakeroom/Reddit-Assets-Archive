@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.13b7a6dde1e6ab6a36cf.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.a9fcf85fe6c0aa1d0015.js
+// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-PredictionsContent"], {
 		"./src/reddit/components/Econ/Prediction/hooks/useTournamentsQuery.ts": function(e, t, n) {
@@ -520,7 +520,7 @@
 						value: e ? "1" : "0",
 						oldValue: e ? "0" : "1"
 					},
-					subreddit: Object(r.kb)(t)
+					subreddit: Object(r.lb)(t)
 				}),
 				x = () => e => ({
 					...Object(r.o)(e),
@@ -551,16 +551,16 @@
 					source: "predictions_tab",
 					action: "view",
 					noun: "predictions_how_it_works",
-					subreddit: Object(r.kb)(e)
+					subreddit: Object(r.lb)(e)
 				}),
 				g = () => e => ({
 					...Object(r.o)(e),
 					source: "predictions_how_it_works",
 					action: "click",
 					noun: "learn_more",
-					subreddit: Object(r.kb)(e)
+					subreddit: Object(r.lb)(e)
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.13b7a6dde1e6ab6a36cf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.a9fcf85fe6c0aa1d0015.js.map

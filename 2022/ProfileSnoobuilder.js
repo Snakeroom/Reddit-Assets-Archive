@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.73f5878a2e1058d5922c.js
-// Retrieved at 12/12/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.703e89e73f9b6e7d198b.js
+// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -710,8 +710,8 @@
 			const k = e => {
 				return Object(v.c)(e, {
 					experimentEligibilitySelector: v.a,
-					experimentName: y.vf
-				}) === y.Pd
+					experimentName: y.wf
+				}) === y.Qd
 			};
 			var E = n("./src/reddit/selectors/experiments/shredditParity.ts"),
 				w = n("./src/reddit/selectors/recapGame.ts"),
@@ -2077,7 +2077,7 @@
 				const t = Object(i.f)().getState(),
 					n = Object(b.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.fd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.fd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.fd.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.gd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.gd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.gd.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(j, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -3308,7 +3308,7 @@
 					action: i.c.CLICK,
 					noun: s.REREDDIT_PROMO,
 					post: o.K(n, e),
-					subreddit: o.kb(n),
+					subreddit: o.lb(n),
 					...t && {
 						banner: {
 							buttonText: t,
@@ -3631,4 +3631,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.73f5878a2e1058d5922c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.703e89e73f9b6e7d198b.js.map

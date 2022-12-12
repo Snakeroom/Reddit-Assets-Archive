@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.47d9dbf6aed5cbe98e8f.js
-// Retrieved at 12/12/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.65853819888b230ffda9.js
+// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -4498,7 +4498,7 @@
 					}, a.a.createElement(b.b, {
 						textColor: d
 					})), a.a.createElement(M, {
-						qrCodeAsset: (() => s === _.cd.Enabled || r === _.fb.BlurredPreview || r === _.fb.NoPreview ? F.d2x_nsfw_signup_blocking_de_v1 : F.d2x_nsfw_signup_blocking_non_us_v1)()
+						qrCodeAsset: (() => s === _.dd.Enabled || r === _.fb.BlurredPreview || r === _.fb.NoPreview ? F.d2x_nsfw_signup_blocking_de_v1 : F.d2x_nsfw_signup_blocking_non_us_v1)()
 					}))
 				},
 				B = e => {
@@ -5215,7 +5215,7 @@
 					action: r.c.VIEW,
 					noun: "aggregate_stats",
 					source: "creator_stats",
-					subreddit: Object(o.kb)(n),
+					subreddit: Object(o.lb)(n),
 					post: Object(o.K)(n, e),
 					userSubreddit: Object(o.ub)(n),
 					actionInfo: Object(o.d)(n, {
@@ -5228,7 +5228,7 @@
 					noun: e,
 					source: "creator_stats",
 					post: Object(o.K)(n, t),
-					subreddit: Object(o.kb)(n),
+					subreddit: Object(o.lb)(n),
 					userSubreddit: Object(o.ub)(n)
 				}),
 				d = e => {
@@ -5277,7 +5277,7 @@
 						reason: "stats"
 					}),
 					post: Object(o.K)(c, e, void 0, a),
-					subreddit: Object(o.kb)(c),
+					subreddit: Object(o.lb)(c),
 					outbound: {
 						postId: n,
 						url: t,
@@ -5295,7 +5295,7 @@
 						reason: d(t)
 					}),
 					post: Object(o.K)(s, e, void 0, n),
-					subreddit: Object(o.kb)(s)
+					subreddit: Object(o.lb)(s)
 				})
 		},
 		"./src/reddit/helpers/trackers/talkCreation.ts": function(e, t, n) {
@@ -5340,7 +5340,7 @@
 					source: "liveaudio",
 					action: r.c.CLICK,
 					noun: "go_live",
-					subreddit: i.kb(e),
+					subreddit: i.lb(e),
 					liveAudioRoom: {
 						title: Object(o.vb)(e),
 						topicIds: Object(o.ub)(e).topics.map(e => e.id)
@@ -5351,7 +5351,7 @@
 					source: "liveaudio",
 					action: r.c.CLICK,
 					noun: "schedule",
-					subreddit: i.kb(e),
+					subreddit: i.lb(e),
 					liveAudioRoom: {
 						title: Object(o.vb)(e),
 						topicIds: Object(o.ub)(e).topics.map(e => e.id)
@@ -5362,7 +5362,7 @@
 					source: "post_composer",
 					action: r.c.CLICK,
 					noun: "overflow",
-					subreddit: i.kb(e),
+					subreddit: i.lb(e),
 					liveAudioRoom: {
 						title: Object(o.vb)(e)
 					}
@@ -5372,7 +5372,7 @@
 					source: "global",
 					action: r.c.VIEW,
 					noun: r.b.SCREEN,
-					subreddit: i.kb(t),
+					subreddit: i.lb(t),
 					post: i.K(t, e),
 					postEvent: {
 						eventState: s.a.Future
@@ -6048,4 +6048,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.47d9dbf6aed5cbe98e8f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.65853819888b230ffda9.js.map

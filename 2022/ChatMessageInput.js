@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.cafe79dfe067a548531a.js
-// Retrieved at 12/12/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.9c7efc19ddbe5dc4ba7f.js
+// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -393,12 +393,12 @@
 				...v.o(e),
 				screen: v.cb(e),
 				profile: v.T(e),
-				subreddit: v.kb(e)
+				subreddit: v.lb(e)
 			});
 			var j = s("./src/reddit/helpers/trackers/postComposer.ts"),
-				k = s("./src/reddit/models/PostCreationForm/index.ts"),
-				E = s("./src/reddit/models/Toast/index.ts"),
-				w = s("./src/reddit/selectors/postCreations.ts"),
+				E = s("./src/reddit/models/PostCreationForm/index.ts"),
+				w = s("./src/reddit/models/Toast/index.ts"),
+				k = s("./src/reddit/selectors/postCreations.ts"),
 				O = s("./src/reddit/helpers/graphql/normalizeUploadLeaseFromGql/index.ts"),
 				D = s("./src/reddit/actions/postCreation/constants.ts"),
 				A = s("./src/reddit/actions/postCreation/general.ts");
@@ -437,12 +437,12 @@
 				});
 			const T = "RTE",
 				z = "GALLERY",
-				N = (e, t, s, n, a, o, u) => async (k, D, A) => {
+				N = (e, t, s, n, a, o, u) => async (E, D, A) => {
 					let {
 						apiContext: F,
 						gqlContext: I
 					} = A;
-					const S = Object(w.h)(D()),
+					const S = Object(k.h)(D()),
 						L = Date.now();
 					let T = null,
 						z = !1,
@@ -522,14 +522,14 @@
 							}) : j.D(s, t)
 						}
 					};
-					return await k(Object(d.l)(e, t, async _ => {
+					return await E(Object(d.l)(e, t, async _ => {
 						var y, v, C, x;
 						z = !0, Object(d.k)(_.id, () => {
 							U(!0)
 						});
 						const {
 							error: j,
-							metadata: w
+							metadata: k
 						} = await async function(e, t, s, n) {
 							const a = s && s.allowedPostTypes,
 								o = s && s.name,
@@ -626,17 +626,17 @@
 								metadata: u
 							}
 						}(e, s, S, u);
-						if (j || !w) return {
+						if (j || !k) return {
 							error: j
 						};
-						if (k(Object(d.m)({
+						if (E(Object(d.m)({
 								key: t,
 								metadata: {
 									fileSource: n,
-									...w
+									...k
 								}
 							})), N = !0, a && a(), o) {
-							const e = w.mimetype,
+							const e = k.mimetype,
 								t = e && i.T[e];
 							if (e && t) {
 								const e = await (async (e, t) => {
@@ -673,8 +673,8 @@
 									}
 								}
 							}
-							return k(Object(c.f)({
-								kind: E.b.Error,
+							return E(Object(c.f)({
+								kind: w.b.Error,
 								text: r.fbt._("Only .jpeg and .png image types are are allowed", null, {
 									hk: "30Ms4V"
 								}),
@@ -691,7 +691,7 @@
 									filepath: t,
 									mimetype: s
 								}
-							}))(F(), D, w.mimetype);
+							}))(F(), D, k.mimetype);
 						return A.ok ? (T = A.body.asset.asset_id, {
 							uploadLease: A.body.args
 						}) : {
@@ -722,11 +722,11 @@
 							} = n(), o = e.map(e => i[e]).filter(e => e.status === y.a.FAILED && !e.metadata.mimetype).map(e => e.error), d = o.length > t ? t - 1 : o.length, u = o.length - d;
 							o.slice(0, d).forEach(e => s(Object(c.f)({
 								duration: c.a,
-								kind: E.b.Error,
+								kind: w.b.Error,
 								text: Object(a.a)(e)
 							}))), u > 0 && s(Object(c.f)({
 								duration: c.a,
-								kind: E.b.Error,
+								kind: w.b.Error,
 								text: r.fbt._({
 									"*": "Couldn't add {number} more files",
 									_1: "Couldn't add 1 more file"
@@ -738,31 +738,31 @@
 					}(h)), p.filter(e => e.isValid).map(e => e.uploadKey)
 				}, M = (e, t) => async (s, n) => {
 					const i = n(),
-						a = Object(w.X)(i),
+						a = Object(k.X)(i),
 						{
 							items: o
 						} = a,
 						l = !o.length && 1 === e.length,
-						m = Object(w.O)(i) && !l;
+						m = Object(k.O)(i) && !l;
 					let p = !1,
 						h = e;
 					if (m) {
-						if (Object(k.x)(a)) return void s(Object(c.f)({
-							kind: E.b.Error,
+						if (Object(E.x)(a)) return void s(Object(c.f)({
+							kind: w.b.Error,
 							text: r.fbt._("Please remove the existing video first. Videos aren't supported within galleries yet.", null, {
 								hk: "3lGxp4"
 							})
 						}));
 						h.some(e => Object(g.n)(e.type)) && s(Object(c.f)({
 							duration: c.a,
-							kind: E.b.Error,
+							kind: w.b.Error,
 							text: r.fbt._("Videos aren’t supported within galleries...yet", null, {
 								hk: "9Cl20"
 							})
 						})), h = h.filter(e => Object(g.m)(e.type));
 						const e = Math.max(0, u.b - o.length);
 						h.length > e && (s(Object(c.f)({
-							kind: E.b.Error,
+							kind: w.b.Error,
 							text: r.fbt._("You have hit the limit of {images_limit} images", [r.fbt._param("images_limit", `${u.b}`)], {
 								hk: "6M4kX"
 							})
@@ -842,7 +842,7 @@
 			})), s.d(t, "m", (function() {
 				return y
 			})), s.d(t, "k", (function() {
-				return w
+				return k
 			})), s.d(t, "l", (function() {
 				return D
 			})), s.d(t, "i", (function() {
@@ -872,15 +872,15 @@
 				C = Object(a.a)(p),
 				x = Object(a.a)(h),
 				j = Object(a.a)(b),
-				k = Object(a.a)(_),
-				E = new Map,
-				w = (e, t) => {
-					const s = E.get(e) || [];
-					s.push(t), E.set(e, s)
+				E = Object(a.a)(_),
+				w = new Map,
+				k = (e, t) => {
+					const s = w.get(e) || [];
+					s.push(t), w.set(e, s)
 				},
 				O = (e, t) => {
-					const s = E.get(e);
-					s && s.forEach(s => s(e, t)), E.delete(e)
+					const s = w.get(e);
+					s && s.forEach(s => s(e, t)), w.delete(e)
 				},
 				D = function(e, t, s) {
 					let r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
@@ -907,7 +907,7 @@
 							error: h
 						}));
 						let b;
-						w(l, () => {
+						k(l, () => {
 							b && b.abort()
 						}), a(g({
 							key: u
@@ -954,7 +954,7 @@
 					let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
 					return (s, r) => {
 						const n = r().uploads[e];
-						n && (O(n.id, t), s(t ? k({
+						n && (O(n.id, t), s(t ? E({
 							key: e
 						}) : j({
 							key: e
@@ -1075,7 +1075,7 @@
 					prevIsFullyLoaded: e.isFullyLoaded,
 					prevPostId: e.postId
 				});
-			class k extends n.Component {
+			class E extends n.Component {
 				constructor(e) {
 					super(e), this.state = j(e)
 				}
@@ -1109,9 +1109,9 @@
 					})
 				}
 			}
-			var E = x(k),
-				w = s("./src/reddit/components/CommentsChat/MessageInput/index.m.less"),
-				O = s.n(w);
+			var w = x(E),
+				k = s("./src/reddit/components/CommentsChat/MessageInput/index.m.less"),
+				O = s.n(k);
 			t.a = e => {
 				let {
 					postId: t,
@@ -1138,7 +1138,7 @@
 						} = await Promise.resolve().then(s.bind(null, "./src/reddit/helpers/trackers/gild.ts"));
 						l((d ? i : n)(t))
 					}
-				}, i.a.createElement(E, {
+				}, i.a.createElement(w, {
 					postId: t
 				}))
 			}
@@ -1220,9 +1220,9 @@
 					a = r - 60 * i;
 				return d.a.createElement("span", null, i, ":", a > 9 ? a : `0${a}`)
 			};
-			var k = s("./src/reddit/components/RichTextEditor/index.tsx"),
-				E = s("./src/reddit/components/RichTextEditor/RTEState/index.tsx"),
-				w = s("./src/reddit/constants/chat.ts"),
+			var E = s("./src/reddit/components/RichTextEditor/index.tsx"),
+				w = s("./src/reddit/components/RichTextEditor/RTEState/index.tsx"),
+				k = s("./src/reddit/constants/chat.ts"),
 				O = s("./src/reddit/controls/Button/index.tsx"),
 				D = s("./src/reddit/controls/ErrorText/index.tsx"),
 				A = s("./src/reddit/helpers/richTextEditor/index.ts"),
@@ -1344,7 +1344,7 @@
 			class ie extends d.a.Component {
 				constructor(e) {
 					super(e), this.showLiveChatTooltipIfCreatedAssociation = () => {
-						this.props.currentUserId && this.state.hasCreatedLiveChatAssociation && this.props.setLiveChatTooltipShowState(w.b.IS_SHOWING, this.props.currentUserId)
+						this.props.currentUserId && this.state.hasCreatedLiveChatAssociation && this.props.setLiveChatTooltipShowState(k.b.IS_SHOWING, this.props.currentUserId)
 					}, this.focusOnForm = () => this.editor && this.editor.focus(), this.setRTEComponentRef = e => this.editor = e, this.handleCancel = e => {
 						e.preventDefault(), this.props.onCancelEdit && this.props.onCancelEdit()
 					}, this.handleChange = (e, t) => {
@@ -1394,7 +1394,7 @@
 					}, this.canSubmit = () => Boolean(!this.props.pending && this.state.hasChanged && !this.state.showError && !this.state.spamTimeoutDraftKey), this.state = {
 						hasChanged: !1,
 						showError: e.hasError,
-						rteState: e.isEditing && e.comment ? E.a.createInitial(e.comment.media.richtextContent) : E.a.createInitial(),
+						rteState: e.isEditing && e.comment ? w.a.createInitial(e.comment.media.richtextContent) : w.a.createInitial(),
 						spamTimeoutDraftKey: null,
 						messageSent: !1,
 						hasCreatedLiveChatAssociation: !1
@@ -1440,7 +1440,7 @@
 				}
 				cleanInputForm() {
 					this.setState({
-						rteState: E.a.createInitial()
+						rteState: w.a.createInitial()
 					})
 				}
 				render() {
@@ -1465,7 +1465,7 @@
 						hk: "RIcb6"
 					}) : r.fbt._("Send a message (use the Enter key)", null, {
 						hk: "3yojgj"
-					}), C = b.isGildable && c && !o, E = c, w = a === G.L.RATELIMIT && parseInt(null === (e = null == n ? void 0 : n[0]) || void 0 === e ? void 0 : e.replace(/\D/g, "")) || te;
+					}), C = b.isGildable && c && !o, w = c, k = a === G.L.RATELIMIT && parseInt(null === (e = null == n ? void 0 : n[0]) || void 0 === e ? void 0 : e.replace(/\D/g, "")) || te;
 					return y && (null == f ? void 0 : f.isDeleted) ? null : d.a.createElement("div", {
 						className: Object(m.a)(W.a.FormWrapper, {
 							[W.a.LivestreamingWrapper]: c,
@@ -1477,7 +1477,7 @@
 					}, r.fbt._("Time until you can message", null, {
 						hk: "3mkJ7J"
 					}), " ", d.a.createElement(j, {
-						durationSec: w,
+						durationSec: k,
 						onTimeout: () => {
 							this.props.clearSubmitError(this.state.spamTimeoutDraftKey), this.setState({
 								spamTimeoutDraftKey: null
@@ -1499,7 +1499,7 @@
 					}, !t && d.a.createElement(ae, {
 						isEditing: !!o,
 						isLivestreaming: !!c
-					}), d.a.createElement(k.a, {
+					}), d.a.createElement(E.a, {
 						className: Object(m.a)(W.a.RichTextEditor, {
 							[W.a.Livestreaming]: c && !o,
 							[W.a.Editing]: !c && o,
@@ -1521,7 +1521,7 @@
 						onSubmit: this.onSubmit,
 						placeholderText: v,
 						readOnly: h,
-						showSubmitButton: E && !this.state.showError,
+						showSubmitButton: w && !this.state.showError,
 						submitButtonClassName: Object(m.a)(W.a.insetSubmitButton, W.a.submitButton),
 						submitOnEnter: !0,
 						trackToolbarClick: i.a,
@@ -1533,7 +1533,7 @@
 							[W.a.LivestreamingResetButton]: c
 						}),
 						type: "reset"
-					}, d.a.createElement(S.a, null)), !E && d.a.createElement(O.e, {
+					}, d.a.createElement(S.a, null)), !w && d.a.createElement(O.e, {
 						className: Object(m.a)(W.a.ChatButton, {
 							[W.a.LivestreamingChatButton]: c && !o,
 							[W.a.LivestreamingResetButton]: c && o,
@@ -1545,7 +1545,7 @@
 							hk: "4bL65Y"
 						})
 					}, t ? d.a.createElement(P.a, null) : d.a.createElement(L.a, null))), C && d.a.createElement(K.a, {
-						showSubmitInsideTextArea: E,
+						showSubmitInsideTextArea: w,
 						isLivestreaming: c,
 						sendEvent: u,
 						postId: _,
@@ -1868,11 +1868,11 @@
 			})), s.d(t, "q", (function() {
 				return j
 			})), s.d(t, "o", (function() {
-				return k
-			})), s.d(t, "z", (function() {
 				return E
-			})), s.d(t, "s", (function() {
+			})), s.d(t, "z", (function() {
 				return w
+			})), s.d(t, "s", (function() {
+				return k
 			})), s.d(t, "y", (function() {
 				return O
 			})), s.d(t, "G", (function() {
@@ -1916,7 +1916,7 @@
 					if (t) {
 						const s = a.C(e, t.post.id),
 							r = a.K(e, t.post.id),
-							n = a.kb(e);
+							n = a.lb(e);
 						if (t.post.authorInfo && r && (r.authorId = t.post.authorInfo.id), s) {
 							s.streamPublicId = t.stream.stream_id, s.id = t.stream.stream_id;
 							const r = Object(i.j)(e, {
@@ -1931,7 +1931,7 @@
 						}
 					}
 					return {
-						subreddit: a.kb(e)
+						subreddit: a.lb(e)
 					}
 				},
 				c = (e, t, s) => {
@@ -2072,14 +2072,14 @@
 					...d(s),
 					...o(s, e)
 				}),
-				k = (e, t) => s => ({
+				E = (e, t) => s => ({
 					source: "stream_player",
 					action: "click",
 					noun: "chat",
 					playback: c(s, e, t),
 					...o(s, e)
 				}),
-				E = e => t => {
+				w = e => t => {
 					const s = Object(i.l)(t, e);
 					return {
 						source: "stream_chat",
@@ -2088,7 +2088,7 @@
 						...o(t, s)
 					}
 				},
-				w = (e, t, s) => r => ({
+				k = (e, t, s) => r => ({
 					source: "stream_player",
 					action: "click",
 					noun: "confirm_subreddit",
@@ -2141,7 +2141,7 @@
 					action: "click",
 					noun: "subscribe",
 					...o(t, e),
-					targetSubreddit: a.kb(t)
+					targetSubreddit: a.lb(t)
 				}),
 				L = (e, t) => s => ({
 					source: "stream_player",
@@ -2276,7 +2276,7 @@
 			s.d(t, "l", (function() {
 				return x
 			})), s.d(t, "m", (function() {
-				return E
+				return w
 			})), s.d(t, "i", (function() {
 				return D
 			})), s.d(t, "d", (function() {
@@ -2379,7 +2379,7 @@
 						return !u.has(e) && !t.post.isHidden && t.stream.state !== a.a.KILLED && t.stream.state !== a.a.PURGED
 					})
 				}),
-				k = Object(r.a)((e, t) => {
+				E = Object(r.a)((e, t) => {
 					let {
 						count: s
 					} = t;
@@ -2397,17 +2397,17 @@
 					const r = s.map(e => t[e]).sort((e, t) => t.rank - e.rank).map(e => e.post.id);
 					return e ? r.slice(0, e) : r
 				}),
-				E = Object(r.a)(C, k, (e, t) => {
+				w = Object(r.a)(C, E, (e, t) => {
 					const s = t[0];
 					if (s) return e[s]
 				}),
-				w = Object(r.a)(f, (e, t) => {
+				k = Object(r.a)(f, (e, t) => {
 					let {
 						related: s,
 						streamIdFromPath: r,
 						subreddit: n
 					} = t;
-					return k(e, {
+					return E(e, {
 						listingName: s || n,
 						streamIdFromPath: r
 					})
@@ -2427,7 +2427,7 @@
 						streamIdFromPath: r,
 						subreddit: n
 					} = t;
-					return k(e, {
+					return E(e, {
 						listingName: s || n,
 						streamIdFromPath: r
 					})
@@ -2454,12 +2454,12 @@
 						streamIdFromPath: r,
 						subreddit: n
 					} = t;
-					return k(e, {
+					return E(e, {
 						listingName: s || n,
 						streamIdFromPath: r
 					})
 				}, (e, t, s, r, n) => !e || s.includes(e) || r.includes(e) ? t || n[0] : e),
-				F = Object(r.a)(_, f, w, (e, t, s) => e < t.length - 1 ? t[e + 1] : s),
+				F = Object(r.a)(_, f, k, (e, t, s) => e < t.length - 1 ? t[e + 1] : s),
 				I = Object(r.a)(_, f, (e, t) => {
 					if (e > 0) return t[e - 1]
 				}),
@@ -2553,11 +2553,11 @@
 			})), s.d(t, "f", (function() {
 				return j
 			})), s.d(t, "i", (function() {
-				return k
-			})), s.d(t, "q", (function() {
 				return E
-			})), s.d(t, "h", (function() {
+			})), s.d(t, "q", (function() {
 				return w
+			})), s.d(t, "h", (function() {
+				return k
 			})), s.d(t, "z", (function() {
 				return O
 			})), s.d(t, "l", (function() {
@@ -2659,15 +2659,15 @@
 					}
 				};
 
-			function k(e, t) {
+			function E(e, t) {
 				return (null == e ? void 0 : e.length) ? Object(n.a)(e.map(e => t[e]).filter(Boolean)) : g
 			}
-			const E = (e, t, s) => {
+			const w = (e, t, s) => {
 					var n;
 					if (!r.d.spBadges(e)) return g;
-					return k(null === (n = e.users.appliedBadges[s]) || void 0 === n ? void 0 : n[t], e.badges.models)
+					return E(null === (n = e.users.appliedBadges[s]) || void 0 === n ? void 0 : n[t], e.badges.models)
 				},
-				w = (e, t) => {
+				k = (e, t) => {
 					const s = e.economics.subredditPremium[t.subredditId];
 					if (s && s.status === l.a.Fetched) {
 						const e = s.raw.collections[t.collectionId];
@@ -2855,4 +2855,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.cafe79dfe067a548531a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.9c7efc19ddbe5dc4ba7f.js.map

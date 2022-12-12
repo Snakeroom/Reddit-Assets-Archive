@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.7287b1af24ac7266b2f9.js
-// Retrieved at 12/12/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.3ae253b6df4a191bdc06.js
+// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -573,8 +573,8 @@
 				M = n("./src/reddit/components/Governance/Token/index.tsx"),
 				A = n("./src/reddit/constants/colors.ts"),
 				S = n("./src/reddit/controls/Button/index.tsx"),
-				F = n("./src/reddit/controls/LoadingIcon/index.tsx"),
-				B = n("./src/reddit/selectors/gov.ts"),
+				B = n("./src/reddit/controls/LoadingIcon/index.tsx"),
+				F = n("./src/reddit/selectors/gov.ts"),
 				G = n("./src/reddit/components/Governance/TransferPointsModal/Controls/index.m.less"),
 				R = n.n(G),
 				D = n("./node_modules/fbt/lib/FbtPublic.js");
@@ -587,7 +587,7 @@
 					return Object(k.b)(e, n)
 				},
 				transferIsPending: e => e.transfers.communityPoints.api.pending,
-				wallet: B.d
+				wallet: F.d
 			});
 			var W = Object(l.b)(V)((function(e) {
 					const {
@@ -622,7 +622,7 @@
 						className: a ? R.a.fullButton : R.a.button,
 						tabIndex: l,
 						onClick: r
-					}, d ? c.a.createElement(F.a, {
+					}, d ? c.a.createElement(B.a, {
 						className: R.a.loadingIcon,
 						sizePx: 20
 					}) : a ? D.fbt._("Continue", null, {
@@ -950,8 +950,8 @@
 				Me = n("./src/reddit/icons/svgs/Nsfw/index.tsx"),
 				Ae = n("./src/reddit/components/Governance/TransferPointsModal/Recipient/index.m.less"),
 				Se = n.n(Ae);
-			const Fe = 42,
-				Be = /^0x[0-9a-fA-F]+$/;
+			const Be = 42,
+				Fe = /^0x[0-9a-fA-F]+$/;
 			var Ge;
 			! function(e) {
 				e[e.Empty = 0] = "Empty", e[e.Searching = 1] = "Searching", e[e.Valid = 2] = "Valid", e[e.UserDoesNotHaveAWallet = 3] = "UserDoesNotHaveAWallet", e[e.InputtedWalletAddress = 4] = "InputtedWalletAddress", e[e.InvalidUsername = 5] = "InvalidUsername", e[e.Error = 6] = "Error"
@@ -959,7 +959,7 @@
 			const Re = async (e, t, n, s, a) => {
 				const r = t.current;
 				if (!r || r.length <= _e.b) return void a(Ge.Empty);
-				const i = Be.test(r);
+				const i = Fe.test(r);
 				if (i) try {
 					if (!!Object(ke.a)(r)) return void a(e ? Ge.InputtedWalletAddress : Ge.Valid)
 				} catch {}
@@ -1022,7 +1022,7 @@
 					}) : D.fbt._("username or vault address", null, {
 						hk: "1IIniU"
 					}),
-					max: Fe,
+					max: Be,
 					style: {
 						borderColor: Ve(p)
 					},
@@ -1052,7 +1052,7 @@
 								}
 							});
 						case Ge.Searching:
-							return c.a.createElement(F.a, {
+							return c.a.createElement(B.a, {
 								className: Se.a.loadingIcon,
 								sizePx: 8
 							});
@@ -2050,14 +2050,14 @@
 			const r = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.Ae
-					}) === s.Pd
+						experimentName: s.Be
+					}) === s.Qd
 				},
 				i = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.ye
-					}) === s.Pd
+						experimentName: s.ze
+					}) === s.Qd
 				}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
@@ -2114,4 +2114,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.7287b1af24ac7266b2f9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.3ae253b6df4a191bdc06.js.map

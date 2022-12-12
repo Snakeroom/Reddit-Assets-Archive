@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.ba0823be4759e15fe70f.js
-// Retrieved at 12/12/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.1bd4d47a3a2f9033d521.js
+// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -284,16 +284,16 @@
 			const p = Object(a.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.Fe
+					experimentName: m.Ge
 				});
-				return Object(m.Ag)(t) ? void 0 : t
+				return Object(m.Bg)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.Ge
+					experimentName: m.He
 				});
-				return Object(m.Ag)(t) ? void 0 : t
-			}, (e, t) => e === m.He.Enabled && t === m.He.Enabled);
+				return Object(m.Bg)(t) ? void 0 : t
+			}, (e, t) => e === m.Ie.Enabled && t === m.Ie.Enabled);
 			var b = s("./src/config.ts");
 			var h = s("./src/reddit/selectors/user.ts");
 			const v = e => {
@@ -669,7 +669,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(m.zg)(e.category_name)
+									displayText: Object(m.Ag)(e.category_name)
 								};
 								s.push(n.id), t[n.id] = n
 							}), {
@@ -1512,9 +1512,9 @@
 							n = Object(ie.Q)(s(), {
 								identifier: A.belongsTo
 							});
-						if (n && (e => Y.Ef.Redirect === Object(Z.b)(e, {
+						if (n && (e => Y.Ff.Redirect === Object(Z.b)(e, {
 								experimentEligibilitySelector: oe,
-								experimentName: Y.wf
+								experimentName: Y.xf
 							}))(s())) return void t(Object(r.c)(n.url));
 						if ((A.media && A.media.type) === G.o.LIVEVIDEO) {
 							const e = `/rpan${A.belongsTo.type===B.a.SUBREDDIT?n.url:"/"}${Object(_.D)(A.id)}`;
@@ -3913,7 +3913,7 @@
 							}) || null,
 							post: s && Object(C.K)(o, s) || null,
 							screen: Object(C.cb)(o),
-							subreddit: Object(C.lb)(o, this.props.subredditId),
+							subreddit: Object(C.mb)(o, this.props.subredditId),
 							...t || {}
 						}))
 					}, this.onSelectRemovalType = e => {
@@ -4523,7 +4523,7 @@
 					if (t) {
 						const s = a.C(e, t.post.id),
 							o = a.K(e, t.post.id),
-							n = a.kb(e);
+							n = a.lb(e);
 						if (t.post.authorInfo && o && (o.authorId = t.post.authorInfo.id), s) {
 							s.streamPublicId = t.stream.stream_id, s.id = t.stream.stream_id;
 							const o = Object(r.j)(e, {
@@ -4538,7 +4538,7 @@
 						}
 					}
 					return {
-						subreddit: a.kb(e)
+						subreddit: a.lb(e)
 					}
 				},
 				d = (e, t, s) => {
@@ -4748,7 +4748,7 @@
 					action: "click",
 					noun: "subscribe",
 					...i(t, e),
-					targetSubreddit: a.kb(t)
+					targetSubreddit: a.lb(t)
 				}),
 				T = (e, t) => s => ({
 					source: "stream_player",
@@ -4835,7 +4835,7 @@
 				source: "post",
 				action: o.c.CLICK,
 				noun: "share_chat",
-				subreddit: Object(n.kb)(e)
+				subreddit: Object(n.lb)(e)
 			})
 		},
 		"./src/reddit/icons/fonts/Gift/index.tsx": function(e, t, s) {
@@ -8084,7 +8084,7 @@
 				a = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(n.Ag)(t)
+					return Boolean(t) && !Object(n.Bg)(t)
 				},
 				d = Object(o.a)(i, r.d, (e, t) => e && !t)
 		},
@@ -8105,4 +8105,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.ba0823be4759e15fe70f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.1bd4d47a3a2f9033d521.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.7d1e8244f06c3cba591f.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.bc06c2e8585368c55013.js
+// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-ContentControls"], {
 		"./node_modules/lodash/negate.js": function(e, t) {
@@ -160,7 +160,7 @@
 					noun: "settings",
 					...R.o(t),
 					postRequirement: q(e),
-					subreddit: R.kb(t),
+					subreddit: R.lb(t),
 					userSubreddit: R.ub(t)
 				});
 			var w = n("./src/reddit/selectors/activeModalId.ts"),
@@ -1580,7 +1580,7 @@
 						value: `${e}`,
 						oldValue: `${t}`
 					},
-					subreddit: Object(R.kb)(n),
+					subreddit: Object(R.lb)(n),
 					...Object(R.o)(n)
 				}),
 				Vt = "PostReq-discard-confirmation",
@@ -1801,4 +1801,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.7d1e8244f06c3cba591f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.bc06c2e8585368c55013.js.map

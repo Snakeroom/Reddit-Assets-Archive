@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-c~93a1f1ba.0830a5245aa5757da2b3.js
-// Retrieved at 12/12/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-c~93a1f1ba.f81fa271195fb4b5ef01.js
+// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation~Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-c~93a1f1ba"], {
 		"./src/lib/scroll/index.ts": function(e, t, o) {
@@ -231,7 +231,7 @@
 			const ae = Object(ie.a)(e => Object(ce.c)(e, {
 				experimentEligibilitySelector: ce.a,
 				experimentName: se.Bb
-			}), e => e === se.Pd);
+			}), e => e === se.Qd);
 			var de = o("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				le = o("./src/reddit/selectors/platform.ts"),
 				me = o("./src/reddit/selectors/posts.ts"),
@@ -1168,7 +1168,7 @@
 					noun: e
 				}),
 				D = e => ({
-					subreddit: Object(M.kb)(e),
+					subreddit: Object(M.lb)(e),
 					userSubreddit: Object(M.ub)(e)
 				}),
 				L = e => t => ({
@@ -1956,7 +1956,7 @@
 						action: r.c.CLICK,
 						...Object(d.o)(e),
 						screen: Object(d.cb)(e),
-						subreddit: Object(d.kb)(e),
+						subreddit: Object(d.lb)(e),
 						post: t ? Object(d.K)(e, t) : null,
 						profile: Object(d.T)(e),
 						correlationId: Object(s.c)(s.a.CommentComposer)
@@ -2040,7 +2040,7 @@
 					action: "click",
 					...Object(d.o)(t),
 					screen: Object(d.cb)(t),
-					subreddit: Object(d.kb)(t),
+					subreddit: Object(d.lb)(t),
 					post: Object(d.K)(t, e)
 				}), g = e => Object(l.a)({
 					noun: "edit",
@@ -2181,4 +2181,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-c~93a1f1ba.0830a5245aa5757da2b3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-c~93a1f1ba.f81fa271195fb4b5ef01.js.map

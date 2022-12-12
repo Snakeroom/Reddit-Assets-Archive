@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.51b4c9e2856bb3b51b79.js
-// Retrieved at 12/12/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.ae4bd318d8e240795b93.js
+// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, r) {
@@ -73,7 +73,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(u.zg)(e.category_name)
+									displayText: Object(u.Ag)(e.category_name)
 								};
 								r.push(s.id), t[s.id] = s
 							}), {
@@ -287,8 +287,8 @@
 			const C = e => {
 				return Object(E.c)(e, {
 					experimentEligibilitySelector: E.a,
-					experimentName: x.vf
-				}) === x.Pd
+					experimentName: x.wf
+				}) === x.Qd
 			};
 			var S = r("./src/reddit/selectors/experiments/shredditParity.ts"),
 				_ = r("./src/reddit/selectors/recapGame.ts"),
@@ -526,7 +526,7 @@
 				const t = Object(a.f)().getState(),
 					r = Object(g.a)(t, Object(o.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.fd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.fd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.fd.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.gd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.gd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.gd.LargeImagePreview ? e.reredditButtons : [];
 					return s.a.createElement(N, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -1738,7 +1738,7 @@
 					action: a.c.CLICK,
 					noun: n.REREDDIT_PROMO,
 					post: i.K(r, e),
-					subreddit: i.kb(r),
+					subreddit: i.lb(r),
 					...t && {
 						banner: {
 							buttonText: t,
@@ -2643,7 +2643,7 @@
 					} = t;
 					return Object(g.b)(r.params.categoryName || "")
 				},
-				at = Object(m.yg)(p.i),
+				at = Object(m.zg)(p.i),
 				it = Object(d.c)({
 					categories: e => Object(tt.b)(e, {
 						categoriesOrder: at
@@ -2796,4 +2796,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.51b4c9e2856bb3b51b79.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.ae4bd318d8e240795b93.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.0c7c0ccaf8e98a65a1d2.js
-// Retrieved at 12/12/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.6492b48d5cef6756aefb.js
+// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1402,7 +1402,7 @@
 							post: D.K(u, n),
 							profile: D.V(u, n),
 							screen: D.cb(u),
-							subreddit: D.nb(u, n),
+							subreddit: D.ob(u, n),
 							correlationId: v
 						})
 					}
@@ -6263,7 +6263,7 @@
 									...n.actionInfo,
 									reason: this.props.node.id
 								},
-								subreddit: p.kb(t)
+								subreddit: p.lb(t)
 							}
 						})
 					}
@@ -6672,12 +6672,12 @@
 						rtJsonElementProps: i
 					});
 					switch (r) {
-						case h.Zf.SmIcon:
+						case h.ag.SmIcon:
 							return o.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case h.Zf.SmIconHc:
+						case h.ag.SmIconHc:
 							return o.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -7204,7 +7204,7 @@
 					}),
 					correlationId: Object(s.d)(s.a.GoldPayment, !1),
 					profile: i.T(e),
-					subreddit: i.kb(e)
+					subreddit: i.lb(e)
 				}),
 				d = () => e => ({
 					source: "free_award_offer",
@@ -7327,7 +7327,7 @@
 					const s = Object(a.b)(n) ? n.belongsTo.id : n.subredditId;
 					return {
 						post: m.K(e, n.id),
-						subreddit: m.lb(e, s),
+						subreddit: m.mb(e, s),
 						...b(e, t)
 					}
 				},
@@ -7340,7 +7340,7 @@
 					source: "global",
 					action: r.c.VIEW,
 					noun: s.SUBREDDIT_HOVERCARD,
-					subreddit: m.mb(t, e),
+					subreddit: m.nb(t, e),
 					screen: m.cb(t)
 				}),
 				v = (e, t) => n => ({
@@ -7349,7 +7349,7 @@
 					action: r.c.VIEW,
 					noun: s.ITEM_POST,
 					post: m.K(n, t),
-					subreddit: m.mb(n, e),
+					subreddit: m.nb(n, e),
 					screen: m.cb(n)
 				}),
 				g = (e, t) => n => ({
@@ -7358,26 +7358,26 @@
 					action: r.c.CLICK,
 					noun: s.ITEM_POST,
 					post: m.K(n, t),
-					subreddit: m.mb(n, e),
+					subreddit: m.nb(n, e),
 					screen: m.cb(n)
 				}),
 				O = e => t => ({
 					...p(t),
-					subreddit: m.lb(t, e) || null,
+					subreddit: m.mb(t, e) || null,
 					source: o.DISCOVERY_UNIT,
 					action: r.c.CLICK,
 					noun: s.HEADER_SUBREDDIT
 				}),
 				_ = e => t => ({
 					...p(t),
-					subreddit: m.lb(t, e) || null,
+					subreddit: m.mb(t, e) || null,
 					source: o.DISCOVERY_UNIT,
 					action: r.c.CLICK,
 					noun: s.HEADER_SUBREDDIT_SUBSCRIBE
 				}),
 				E = e => t => ({
 					...p(t),
-					subreddit: m.lb(t, e) || null,
+					subreddit: m.mb(t, e) || null,
 					source: o.DISCOVERY_UNIT,
 					action: r.c.CLICK,
 					noun: s.HEADER_SUBREDDIT_UNSUBSCRIBE
@@ -7511,7 +7511,7 @@
 					action: r.c.CLICK,
 					noun: s.REREDDIT_PROMO,
 					post: i.K(n, e),
-					subreddit: i.kb(n),
+					subreddit: i.lb(n),
 					...t && {
 						banner: {
 							buttonText: t,
@@ -8415,7 +8415,7 @@
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
 					experimentName: s.E
-				}) === s.Pd
+				}) === s.Qd
 			}
 		},
 		"./src/reddit/selectors/experiments/realtimeMQUpdates.ts": function(e, t, n) {
@@ -8430,7 +8430,7 @@
 			const a = e => Object(i.a)(e) && Object(o.c)(e, {
 				experimentEligibilitySelector: r.S,
 				experimentName: s.Ac
-			}) === s.Pd
+			}) === s.Qd
 		},
 		"./src/reddit/selectors/subredditMention.ts": function(e, t, n) {
 			"use strict";
@@ -8455,12 +8455,12 @@
 				d = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Tf
+						experimentName: s.Uf
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.Zf.SmIcon || t === s.Zf.SmIconHc
+					return t === s.ag.SmIcon || t === s.ag.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -8498,4 +8498,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.0c7c0ccaf8e98a65a1d2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.6492b48d5cef6756aefb.js.map

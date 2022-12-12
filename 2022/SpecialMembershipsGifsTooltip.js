@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.a54e76cfe65a9a790d6b.js
-// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.c86f183c1362b57fd13f.js
+// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SpecialMembershipsGifsTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/BaseTooltip.m.less": function(e, t, s) {
@@ -519,7 +519,7 @@
 						source: "meta",
 						action: e,
 						noun: "transaction",
-						subreddit: Object(i.lb)(a, s),
+						subreddit: Object(i.mb)(a, s),
 						actionInfo: {
 							settingValue: t,
 							reason: n
@@ -535,7 +535,7 @@
 					source: "meta",
 					action: "open",
 					noun: "gif_tooltip",
-					subreddit: t ? Object(i.lb)(s, t) : void 0,
+					subreddit: t ? Object(i.mb)(s, t) : void 0,
 					correlationId: e,
 					...Object(i.o)(s)
 				}),
@@ -543,7 +543,7 @@
 					source: "meta",
 					action: "open",
 					noun: "gif_upsell",
-					subreddit: t ? Object(i.lb)(s, t) : void 0,
+					subreddit: t ? Object(i.mb)(s, t) : void 0,
 					correlationId: e,
 					...Object(i.o)(s)
 				})
@@ -561,7 +561,7 @@
 					action: "change",
 					noun: "gif_tooltip_search",
 					correlationId: s,
-					subreddit: t ? i.lb(o, t) : void 0,
+					subreddit: t ? i.mb(o, t) : void 0,
 					post: i.k(o),
 					search: {
 						query: e
@@ -576,7 +576,7 @@
 						action: "select",
 						noun: "gif_tooltip_result",
 						correlationId: s,
-						subreddit: t ? i.lb(o, t) : void 0,
+						subreddit: t ? i.mb(o, t) : void 0,
 						post: i.k(o),
 						actionInfo: {
 							...n.actionInfo,
@@ -602,4 +602,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.a54e76cfe65a9a790d6b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.c86f183c1362b57fd13f.js.map

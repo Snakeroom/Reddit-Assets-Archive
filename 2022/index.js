@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.12a1037561112db03a1a.js
-// Retrieved at 12/5/2022, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.6c67bb1c2b0a617e41fd.js
+// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -617,7 +617,7 @@
 				poll: Object(i.P)(e, t),
 				post: Object(i.K)(e, t),
 				predictions: Object(i.Q)(e, t),
-				subreddit: Object(i.kb)(e)
+				subreddit: Object(i.lb)(e)
 			});
 			var d = n("./src/reddit/hooks/useTracking.ts"),
 				l = n("./src/reddit/models/Prediction/index.ts"),
@@ -1255,7 +1255,7 @@
 					source: "liveaudio",
 					action: r.c.CLICK,
 					noun: "go_live",
-					subreddit: s.kb(e),
+					subreddit: s.lb(e),
 					liveAudioRoom: {
 						title: Object(a.vb)(e),
 						topicIds: Object(a.ub)(e).topics.map(e => e.id)
@@ -1266,7 +1266,7 @@
 					source: "liveaudio",
 					action: r.c.CLICK,
 					noun: "schedule",
-					subreddit: s.kb(e),
+					subreddit: s.lb(e),
 					liveAudioRoom: {
 						title: Object(a.vb)(e),
 						topicIds: Object(a.ub)(e).topics.map(e => e.id)
@@ -1277,7 +1277,7 @@
 					source: "post_composer",
 					action: r.c.CLICK,
 					noun: "overflow",
-					subreddit: s.kb(e),
+					subreddit: s.lb(e),
 					liveAudioRoom: {
 						title: Object(a.vb)(e)
 					}
@@ -1287,7 +1287,7 @@
 					source: "global",
 					action: r.c.VIEW,
 					noun: r.b.SCREEN,
-					subreddit: s.kb(t),
+					subreddit: s.lb(t),
 					post: s.K(t, e),
 					postEvent: {
 						eventState: o.a.Future
@@ -1323,4 +1323,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.12a1037561112db03a1a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.6c67bb1c2b0a617e41fd.js.map

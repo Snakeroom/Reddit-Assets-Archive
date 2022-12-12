@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.826e3392bd46075bec6d.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.3cacf641b7b30b47e17e.js
+// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SpecialMembershipsEmotesTooltip"], {
 		"./src/reddit/components/RichTextEditor/emotes/BaseTooltip.tsx": function(e, t, o) {
@@ -123,16 +123,16 @@
 						mouseEnterBufferTime: g = d
 					} = e;
 					const T = Object(i.useRef)(s.Outside),
-						[x, k] = Object(i.useState)(!1);
+						[x, v] = Object(i.useState)(!1);
 					return n.a.createElement("div", {
 						className: Object(a.a)(l.a.container, o),
 						onMouseEnter: f ? () => {
 							T.current = s.Inside, setTimeout(() => {
-								T.current === s.Inside && k(!0)
+								T.current === s.Inside && v(!0)
 							}, g)
 						} : void 0,
 						onMouseLeave: f ? () => {
-							T.current = s.Outside, k(!1)
+							T.current = s.Outside, v(!1)
 						} : void 0
 					}, x && n.a.createElement("button", {
 						className: l.a.deleteButton,
@@ -194,9 +194,9 @@
 				g = o("./src/reddit/icons/svgs/AddSquare/index.tsx"),
 				T = o("./src/reddit/selectors/economics.ts"),
 				x = o("./src/reddit/selectors/telemetry.ts"),
-				k = o("./src/reddit/components/RichTextEditor/constants/editorChangeTypes.ts"),
-				v = o("./src/reddit/components/RichTextEditor/emotes/BaseTooltip.tsx"),
-				y = o("./src/reddit/components/RichTextEditor/emotes/EmoteButton.tsx"),
+				v = o("./src/reddit/components/RichTextEditor/constants/editorChangeTypes.ts"),
+				y = o("./src/reddit/components/RichTextEditor/emotes/BaseTooltip.tsx"),
+				k = o("./src/reddit/components/RichTextEditor/emotes/EmoteButton.tsx"),
 				w = o("./src/reddit/components/RichTextEditor/emotes/helpers.ts"),
 				C = o("./src/reddit/components/RichTextEditor/emotes/SpecialMemberships/tooltip.m.less"),
 				S = o.n(C);
@@ -234,7 +234,7 @@
 									...t.actionInfo,
 									reason: this.state.emoteBeingTyped ? "type" : "click"
 								},
-								subreddit: x.kb(e)
+								subreddit: x.lb(e)
 							}
 						})
 					}, this.onEmoteClick = e => {
@@ -299,7 +299,7 @@
 					const {
 						editorState: e
 					} = this.props, t = e.getLastChangeType();
-					if (t !== k.d && t !== k.a) return;
+					if (t !== v.d && t !== v.a) return;
 					const o = Object(w.f)(e);
 					if (!o) return void(this.state.emoteBeingTyped && this.setState({
 						isTooltipVisible: !1,
@@ -349,7 +349,7 @@
 						emoteBeingTyped: o,
 						isTooltipVisible: s
 					} = this.state, n = this.getMatchingEmotes(o), r = Object(l.a)(), c = t.name, m = Object(p.a)(`/web/special-membership/${c}?corr=${r}`);
-					return a.a.createElement(v.a, {
+					return a.a.createElement(y.a, {
 						focusOnTooltip: this.focusOnTooltip,
 						isVisible: s,
 						setIsVisible: this.setIsVisisble,
@@ -371,7 +371,7 @@
 						className: S.a.emotePackTitle
 					}, e.title), a.a.createElement("div", {
 						className: S.a.emotes
-					}, e.emotes.map(e => a.a.createElement(y.a, {
+					}, e.emotes.map(e => a.a.createElement(k.a, {
 						key: e.id,
 						className: S.a.emoteButton,
 						id: _(e.id),
@@ -397,7 +397,7 @@
 								action: "click",
 								noun: "emoji_tooltip_open_learn_more",
 								...x.o(e),
-								subreddit: x.kb(e)
+								subreddit: x.lb(e)
 							}))
 						}
 					}, i.fbt._("Get More Emotes", null, {
@@ -535,4 +535,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.826e3392bd46075bec6d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.3cacf641b7b30b47e17e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChangeUsernameTooltip.d979bb71ca06946d74b4.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChangeUsernameTooltip.930fbc6b22bf0ff6e2d0.js
+// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChangeUsernameTooltip"], {
 		"./src/reddit/components/ChangeUsernameTooltip/index.m.less": function(e, n, t) {
@@ -203,4 +203,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameTooltip.d979bb71ca06946d74b4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameTooltip.930fbc6b22bf0ff6e2d0.js.map

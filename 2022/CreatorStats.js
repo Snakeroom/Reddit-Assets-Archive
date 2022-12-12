@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CreatorStats.fdd8a5c1386e7bb859a6.js
-// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CreatorStats.25c9ca5c38556b3d14dc.js
+// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CreatorStats"], {
 		"./src/reddit/components/CreatorStats/Stats.tsx": function(t, e, s) {
@@ -571,7 +571,7 @@
 					action: a.c.VIEW,
 					noun: "aggregate_stats",
 					source: "creator_stats",
-					subreddit: Object(r.kb)(s),
+					subreddit: Object(r.lb)(s),
 					post: Object(r.K)(s, t),
 					userSubreddit: Object(r.ub)(s),
 					actionInfo: Object(r.d)(s, {
@@ -584,7 +584,7 @@
 					noun: t,
 					source: "creator_stats",
 					post: Object(r.K)(s, e),
-					subreddit: Object(r.kb)(s),
+					subreddit: Object(r.lb)(s),
 					userSubreddit: Object(r.ub)(s)
 				}),
 				c = t => {
@@ -633,7 +633,7 @@
 						reason: "stats"
 					}),
 					post: Object(r.K)(l, t, void 0, i),
-					subreddit: Object(r.kb)(l),
+					subreddit: Object(r.lb)(l),
 					outbound: {
 						postId: s,
 						url: e,
@@ -651,7 +651,7 @@
 						reason: c(e)
 					}),
 					post: Object(r.K)(o, t, void 0, s),
-					subreddit: Object(r.kb)(o)
+					subreddit: Object(r.lb)(o)
 				})
 		},
 		"./src/redditGQL/operations/CreatorStats.json": function(t) {
@@ -659,4 +659,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CreatorStats.fdd8a5c1386e7bb859a6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CreatorStats.25c9ca5c38556b3d14dc.js.map

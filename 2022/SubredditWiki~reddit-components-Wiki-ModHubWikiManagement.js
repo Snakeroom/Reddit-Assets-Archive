@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.3847d12109c86c0215f5.js
-// Retrieved at 12/8/2022, 11:50:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.dc7ca032e3d592f644e3.js
+// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki~reddit-components-Wiki-ModHubWikiManagement"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, i) {
@@ -2216,7 +2216,7 @@
 				s = i("./src/reddit/selectors/telemetry.ts");
 			const o = e => ({
 					...s.o(e),
-					subreddit: s.kb(e),
+					subreddit: s.lb(e),
 					userSubreddit: s.ub(e)
 				}),
 				a = () => e => ({
@@ -2292,4 +2292,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.3847d12109c86c0215f5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.dc7ca032e3d592f644e3.js.map

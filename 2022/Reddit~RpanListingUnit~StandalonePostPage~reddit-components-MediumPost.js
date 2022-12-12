@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost.8657c56803ce08e299dc.js
-// Retrieved at 12/6/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost.0fa8a86d119f7e70bb66.js
+// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./src/lib/memoizeByReference/index.ts": function(e, t, n) {
@@ -1087,7 +1087,7 @@
 				i = n("./src/telemetry/models/Event.ts");
 			const d = (e, t) => ({
 					...Object(a.o)(e),
-					subreddit: Object(a.kb)(e),
+					subreddit: Object(a.lb)(e),
 					profile: Object(a.T)(e),
 					post: Object(a.K)(e, t),
 					comment: Object(a.h)({
@@ -1119,7 +1119,7 @@
 					noun: e,
 					post: Object(a.K)(n, t),
 					source: i.b.ChatView,
-					subreddit: Object(a.kb)(n)
+					subreddit: Object(a.lb)(n)
 				}),
 				p = (e, t) => n => ({
 					...d(n, t),
@@ -1227,7 +1227,7 @@
 					var t;
 					return {
 						...Object(a.o)(e),
-						subreddit: Object(a.kb)(e),
+						subreddit: Object(a.lb)(e),
 						profile: Object(a.T)(e),
 						actionInfo: {
 							...Object(a.d)(e),
@@ -1289,7 +1289,7 @@
 			const a = e => ({
 					...o.o(e),
 					screen: o.cb(e),
-					subreddit: o.kb(e),
+					subreddit: o.lb(e),
 					userSubreddit: o.ub(e)
 				}),
 				i = e => ({
@@ -1385,7 +1385,7 @@
 					noun: n,
 					goldPurchase: i(e),
 					profile: o.U(r, t),
-					subreddit: o.lb(r, t)
+					subreddit: o.mb(r, t)
 				}),
 				h = (e, t) => b(e, t, "disable_in_community"),
 				g = (e, t) => b(e, t, "enable_in_community")
@@ -1489,7 +1489,7 @@
 						correlationId: Object(l.b)(e) || Object(i.d)(i.a.GildingFlow, !1),
 						post: t ? c.K(e, t) : void 0,
 						screen: c.cb(e),
-						subreddit: c.kb(e),
+						subreddit: c.lb(e),
 						userSubreddit: c.ub(e),
 						listing: t ? Object(r.k)(e, t) : void 0
 					}
@@ -1729,7 +1729,7 @@
 						correlationId: a.s(e) || Object(m.d)(m.a.GoldPayment, !1),
 						post: n ? i.K(e, n) : null,
 						screen: i.cb(e),
-						subreddit: n ? i.kb(e) : null,
+						subreddit: n ? i.lb(e) : null,
 						goldPurchase: {
 							...h ? Object(f.a)(h) : null,
 							type: v,
@@ -1866,7 +1866,7 @@
 			const i = e => ({
 					profile: a.T(e),
 					screen: a.cb(e),
-					subreddit: a.kb(e)
+					subreddit: a.lb(e)
 				}),
 				d = (e, t, n) => r => ({
 					source: Object(c.j)(r) || n ? "post_lightbox" : "post_detail",
@@ -1951,7 +1951,7 @@
 			const s = e => ({
 					screen: Object(o.cb)(e),
 					profile: Object(o.T)(e),
-					subreddit: Object(o.kb)(e),
+					subreddit: Object(o.lb)(e),
 					userSubreddit: Object(o.ub)(e)
 				}),
 				c = e => t => ({
@@ -2062,7 +2062,7 @@
 					action: "click",
 					noun: e,
 					post: Object(o.K)(n, t),
-					subreddit: Object(o.nb)(n, t)
+					subreddit: Object(o.ob)(n, t)
 				}),
 				g = (e, t) => n => ({
 					source: "comment",
@@ -2073,14 +2073,14 @@
 						commentId: t
 					}),
 					post: Object(o.K)(n, t),
-					subreddit: Object(o.nb)(n, t)
+					subreddit: Object(o.ob)(n, t)
 				}),
 				v = (e, t, n, r) => s => ({
 					source: e ? "comment" : "post",
 					action: "click",
 					noun: t ? "unsnooze_reporter" : "snooze_reporter",
 					post: Object(o.K)(s, n),
-					subreddit: Object(o.nb)(s, n),
+					subreddit: Object(o.ob)(s, n),
 					actionInfo: {
 						reason: r
 					},
@@ -2137,7 +2137,7 @@
 					...o.o(e)
 				}),
 				c = e => t => {
-					const n = o.kb(t),
+					const n = o.lb(t),
 						{
 							userFlair: s,
 							achievementFlair: c
@@ -2172,7 +2172,7 @@
 						value: e ? "0" : "1",
 						oldValue: e ? "1" : "0"
 					},
-					subreddit: o.kb(t),
+					subreddit: o.lb(t),
 					...o.o(t)
 				})
 		},
@@ -2648,4 +2648,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost.8657c56803ce08e299dc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost.0fa8a86d119f7e70bb66.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.3a3635cdcd047a0fcd9e.js
-// Retrieved at 12/12/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.d5ea2f3585a81e50ea1b.js
+// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/actions/modQueue/realtime.ts": function(e, t, s) {
@@ -307,7 +307,7 @@
 							action: "click",
 							noun: e,
 							screen: Object(O.cb)(t),
-							subreddit: Object(O.kb)(t)
+							subreddit: Object(O.lb)(t)
 						})))
 					}, this.renderItem = (e, t) => {
 						const {
@@ -1544,7 +1544,7 @@
 			const A = e => Object(D.c)(e, {
 				experimentEligibilitySelector: F.S,
 				experimentName: L.bc
-			}) === L.Pd;
+			}) === L.Qd;
 			var M = s("./src/reddit/components/ModQueueList/SortByNumReportsTooltip.m.less"),
 				B = s.n(M);
 			const U = e => {
@@ -2827,7 +2827,7 @@
 					},
 					subreddit: {
 						name: t.toLowerCase(),
-						...Object(n.mb)(s, t)
+						...Object(n.nb)(s, t)
 					}
 				}),
 				d = (e, t, s) => o => ({
@@ -2842,7 +2842,7 @@
 					},
 					subreddit: {
 						name: t.toLowerCase(),
-						...Object(n.mb)(o, t)
+						...Object(n.nb)(o, t)
 					}
 				})
 		},
@@ -2997,4 +2997,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.3a3635cdcd047a0fcd9e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.d5ea2f3585a81e50ea1b.js.map

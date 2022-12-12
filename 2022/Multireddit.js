@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.5965c4f5c2c1d1795496.js
-// Retrieved at 12/12/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.c1c4674ac7d88afe7845.js
+// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, n) {
@@ -313,7 +313,7 @@
 			})), n.d(t, "c", (function() {
 				return U
 			})), n.d(t, "a", (function() {
-				return P
+				return w
 			})), n.d(t, "b", (function() {
 				return F
 			}));
@@ -520,7 +520,7 @@
 						text: I(),
 						kind: T.b.Error
 					}))))
-				}, M = Object(i.a)(d.d), P = e => async (t, n, r) => {
+				}, M = Object(i.a)(d.d), w = e => async (t, n, r) => {
 					let {
 						apiContext: o
 					} = r;
@@ -551,7 +551,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: i
 					})), c())
-				}, w = Object(i.a)(d.e), F = e => async (t, n, o) => {
+				}, P = Object(i.a)(d.e), F = e => async (t, n, o) => {
 					let {
 						apiContext: i
 					} = o;
@@ -574,7 +574,7 @@
 						u = a[e];
 					if (!u) return void d();
 					const f = !u.isFollowed;
-					t(w({
+					t(P({
 						follow: f,
 						multiredditPath: e,
 						multiredditsModelsState: a
@@ -587,7 +587,7 @@
 							api_type: "json"
 						},
 						type: "json"
-					}))(i(), e, f)).ok || (t(w({
+					}))(i(), e, f)).ok || (t(P({
 						follow: !f,
 						multiredditPath: e,
 						multiredditsModelsState: a
@@ -790,7 +790,7 @@
 					onClick: () => e.onClick(e.searchableTerm),
 					to: U(e.searchableTerm, e.subredditName)
 				}, e.flair) : e.flair;
-			class P extends a.a.Component {
+			class w extends a.a.Component {
 				constructor() {
 					super(...arguments), this.tooltipTargetElement = null, this.state = {
 						isTooltipOpen: !1
@@ -842,7 +842,7 @@
 					})
 				}
 			}
-			const w = Object(m.a)(P),
+			const P = Object(m.a)(w),
 				F = Object(m.a)(e => {
 					let t = "",
 						n = !1;
@@ -897,7 +897,7 @@
 					})
 				}),
 				B = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(I.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(D.a)(Object(I.a)(e).post, O.a.black, O.a.white) : e.textColor === j.e.Dark ? O.a.black : O.a.white,
-				G = b.a.wrapped(w, "TextFlair", y.a),
+				G = b.a.wrapped(P, "TextFlair", y.a),
 				H = b.a.wrapped(F, "RichTextFlair", y.a),
 				W = e => {
 					switch (e.type) {
@@ -1941,8 +1941,8 @@
 			const a = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: r.tf
-					}) === r.Pd
+						experimentName: r.uf
+					}) === r.Qd
 				},
 				d = Object(c.a)(i.S, (e, t) => {
 					let {
@@ -1953,8 +1953,8 @@
 				l = (e, t) => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: e => d(e, t),
-						experimentName: r.uf
-					}) === r.Pd
+						experimentName: r.vf
+					}) === r.Qd
 				}
 		},
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, n) {
@@ -1972,14 +1972,14 @@
 			const a = Object(i.a)(c.S, e => !e),
 				d = Object(i.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: a,
-					experimentName: r.Lf
-				}), e => e === r.Pd),
+					experimentName: r.Mf
+				}), e => e === r.Qd),
 				l = Object(i.a)(d, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? t : o.a.Off),
 				u = Object(i.a)(l, e => e === o.a.Treatment),
 				m = (e, t) => {
 					const n = l(t());
 					a(t()) && n !== o.a.Off && e.block(e => {
-						if ((e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname) && (Object(s.d)(t(), "shreddit_pdp_desktop", 6120, n === o.a.Treatment ? r.Pd : r.O.Control1), n === o.a.Treatment)) return window.location.href = e.pathname, !1
+						if ((e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname) && (Object(s.d)(t(), "shreddit_pdp_desktop", 6120, n === o.a.Treatment ? r.Qd : r.O.Control1), n === o.a.Treatment)) return window.location.href = e.pathname, !1
 					})
 				}
 		},
@@ -2008,4 +2008,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.5965c4f5c2c1d1795496.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.c1c4674ac7d88afe7845.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.72b718388bd188bee0b6.js
-// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.0fa0094308f8052eee73.js
+// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -1301,7 +1301,7 @@
 					if (t) {
 						const s = i.C(e, t.post.id),
 							n = i.K(e, t.post.id),
-							r = i.kb(e);
+							r = i.lb(e);
 						if (t.post.authorInfo && n && (n.authorId = t.post.authorInfo.id), s) {
 							s.streamPublicId = t.stream.stream_id, s.id = t.stream.stream_id;
 							const n = Object(o.j)(e, {
@@ -1316,7 +1316,7 @@
 						}
 					}
 					return {
-						subreddit: i.kb(e)
+						subreddit: i.lb(e)
 					}
 				},
 				c = (e, t, s) => {
@@ -1526,7 +1526,7 @@
 					action: "click",
 					noun: "subscribe",
 					...a(t, e),
-					targetSubreddit: i.kb(t)
+					targetSubreddit: i.lb(t)
 				}),
 				M = (e, t) => s => ({
 					source: "stream_player",
@@ -1978,4 +1978,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.72b718388bd188bee0b6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.0fa0094308f8052eee73.js.map

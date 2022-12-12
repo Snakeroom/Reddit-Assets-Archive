@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.f96ed4c7ac981775daea.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.979853a3856a8b1a19be.js
+// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UsernameConfirmationModals"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -978,4 +978,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.f96ed4c7ac981775daea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.979853a3856a8b1a19be.js.map

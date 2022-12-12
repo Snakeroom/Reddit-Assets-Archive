@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.0f337d8d5371398c8065.js
-// Retrieved at 12/12/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.71ac5e3820844a140e2b.js
+// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, s) {
@@ -603,8 +603,8 @@
 				D = s("./src/reddit/models/Toast/index.ts"),
 				F = s("./src/reddit/selectors/modQueue.ts"),
 				T = s("./src/reddit/selectors/subreddit.ts"),
-				q = s("./src/reddit/selectors/telemetry.ts"),
-				Q = s("./src/telemetry/index.ts"),
+				Q = s("./src/reddit/selectors/telemetry.ts"),
+				q = s("./src/telemetry/index.ts"),
 				U = s("./src/lib/initializeClient/installReducer.ts"),
 				B = s("./src/reddit/reducers/features/modActivitySummaries/index.ts"),
 				V = s("./src/reddit/reducers/features/realtimeModqueue/index.ts"),
@@ -728,38 +728,38 @@
 						O = m.user.account && m.user.account.displayText;
 					Object(b.d)(b.a.ModQueue);
 					const j = Object(b.c)(b.a.ModQueue);
-					Object(Q.a)({
+					Object(q.a)({
 						source: "bulk_mod_action_menu",
 						action: "click",
 						noun: e,
-						...q.o(m),
-						actionInfo: q.d(m, {
+						...Q.o(m),
+						actionInfo: Q.d(m, {
 							count: f.length,
 							paneName: m.platform.currentPage ? m.platform.currentPage.urlParams.pageName : void 0
 						}),
-						screen: q.cb(m),
+						screen: Q.cb(m),
 						correlationId: j
 					});
 					for (let t = 0; t < f.length; t++) {
 						const s = f[t];
 						let o = e;
-						[L.a.Approve, L.a.Remove, L.a.Spam].includes(e) && (Object(v.a)(s) ? o += "_link" : o += "_comment"), Object(Q.a)({
+						[L.a.Approve, L.a.Remove, L.a.Spam].includes(e) && (Object(v.a)(s) ? o += "_link" : o += "_comment"), Object(q.a)({
 							source: "bulk_mod_action",
 							action: "click",
 							noun: o,
-							...q.o(m),
-							actionInfo: q.d(m, {
+							...Q.o(m),
+							actionInfo: Q.d(m, {
 								count: f.length,
 								paneName: m.platform.currentPage ? m.platform.currentPage.urlParams.pageName : void 0
 							}),
-							comment: q.h({
+							comment: Q.h({
 								state: m,
 								commentId: s
 							}),
-							post: q.K(m, s),
-							profile: q.V(m, s),
-							screen: q.cb(m),
-							subreddit: q.nb(m, s),
+							post: Q.K(m, s),
+							profile: Q.V(m, s),
+							screen: Q.cb(m),
+							subreddit: Q.ob(m, s),
 							correlationId: j
 						})
 					}
@@ -1209,11 +1209,11 @@
 				D = s("./src/reddit/constants/modals.ts"),
 				F = s("./src/lib/makeApiRequest/index.ts"),
 				T = s("./src/lib/omitHeaders/index.ts"),
-				q = s("./src/reddit/constants/headers.ts"),
-				Q = s("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
+				Q = s("./src/reddit/constants/headers.ts"),
+				q = s("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
 				U = s("./src/reddit/models/RichTextJson/addRTJParam.ts");
-			const B = (e, t) => Object(F.a)(Object(T.a)(e, [q.a]), {
-					endpoint: Object(Q.a)(`${e.apiUrl}/api/v1/modactions/removal_reasons/`),
+			const B = (e, t) => Object(F.a)(Object(T.a)(e, [Q.a]), {
+					endpoint: Object(q.a)(`${e.apiUrl}/api/v1/modactions/removal_reasons/`),
 					method: E.ob.POST,
 					type: "json",
 					data: {
@@ -1222,8 +1222,8 @@
 						mod_note: t.modNote
 					}
 				}),
-				V = (e, t, s) => Object(F.a)(Object(T.a)(e, [q.a]), {
-					endpoint: Object(Q.a)(Object(U.a)(`${e.apiUrl}/api/v1/modactions/removal_${s}_message/`)),
+				V = (e, t, s) => Object(F.a)(Object(T.a)(e, [Q.a]), {
+					endpoint: Object(q.a)(Object(U.a)(`${e.apiUrl}/api/v1/modactions/removal_${s}_message/`)),
 					method: E.ob.POST,
 					type: "json",
 					data: t
@@ -1251,7 +1251,7 @@
 					} = o;
 					const n = s().subreddits.models[e].name;
 					t(Z());
-					const d = await ((e, t) => Object(F.a)(Object(T.a)(e, [q.a]), {
+					const d = await ((e, t) => Object(F.a)(Object(T.a)(e, [Q.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons.json`,
 						method: E.ob.GET
 					}))(r(), n);
@@ -1265,8 +1265,8 @@
 					} = n;
 					const a = r().subreddits.models[e].name;
 					s(oe());
-					const i = await ((e, t, s) => Object(F.a)(Object(T.a)(e, [q.a]), {
-						endpoint: Object(Q.a)(`${e.apiUrl}/api/v1/${t}/removal_reasons`),
+					const i = await ((e, t, s) => Object(F.a)(Object(T.a)(e, [Q.a]), {
+						endpoint: Object(q.a)(`${e.apiUrl}/api/v1/${t}/removal_reasons`),
 						method: E.ob.POST,
 						data: s
 					}))(d(), a, t);
@@ -1293,8 +1293,8 @@
 					} = n;
 					const a = r().subreddits.models[e].name;
 					s(ae());
-					const i = await ((e, t, s) => Object(F.a)(Object(T.a)(e, [q.a]), {
-						endpoint: Object(Q.a)(`${e.apiUrl}/api/v1/${t}/removal_reasons/${s.id}`),
+					const i = await ((e, t, s) => Object(F.a)(Object(T.a)(e, [Q.a]), {
+						endpoint: Object(q.a)(`${e.apiUrl}/api/v1/${t}/removal_reasons/${s.id}`),
 						method: E.ob.PUT,
 						data: {
 							message: s.message,
@@ -1316,8 +1316,8 @@
 					} = n;
 					const a = r().subreddits.models[e].name;
 					s(le());
-					const i = await ((e, t, s) => Object(F.a)(Object(T.a)(e, [q.a]), {
-						endpoint: Object(Q.a)(`${e.apiUrl}/api/v1/${t}/removal_reasons/${s}`),
+					const i = await ((e, t, s) => Object(F.a)(Object(T.a)(e, [Q.a]), {
+						endpoint: Object(q.a)(`${e.apiUrl}/api/v1/${t}/removal_reasons/${s}`),
 						method: E.ob.DELETE
 					}))(d(), a, t);
 					i.ok ? (s(me({
@@ -1751,7 +1751,7 @@
 			const d = e => Object(r.c)(e, {
 				experimentEligibilitySelector: n.S,
 				experimentName: o.ac
-			}) === o.Pd
+			}) === o.Qd
 		},
 		"./src/reddit/selectors/experiments/realtimeMQUpdates.ts": function(e, t, s) {
 			"use strict";
@@ -1765,7 +1765,7 @@
 			const a = e => Object(d.a)(e) && Object(r.c)(e, {
 				experimentEligibilitySelector: n.S,
 				experimentName: o.Ac
-			}) === o.Pd
+			}) === o.Qd
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, s) {
 			"use strict";
@@ -1849,4 +1849,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.0f337d8d5371398c8065.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.71ac5e3820844a140e2b.js.map

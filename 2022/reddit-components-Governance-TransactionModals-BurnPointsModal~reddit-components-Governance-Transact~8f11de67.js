@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.75aa010e1acfc5fbd375.js
-// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.d4f4df389e6cc430d1d9.js
+// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67"], {
 		"./src/reddit/components/Governance/TransactionModals/ApprovalModal/ApprovalBar.m.less": function(A, e, t) {
@@ -1266,7 +1266,7 @@
 					source: "meta",
 					action: "click",
 					noun: "cancel_membership_with_points",
-					subreddit: Object(i.lb)(e, A)
+					subreddit: Object(i.mb)(e, A)
 				}),
 				r = A => e => ({
 					...Object(i.o)(e),
@@ -1305,7 +1305,7 @@
 						source: "meta",
 						action: A,
 						noun: "transaction",
-						subreddit: Object(i.lb)(s, t),
+						subreddit: Object(i.mb)(s, t),
 						actionInfo: {
 							settingValue: e,
 							reason: r
@@ -1321,7 +1321,7 @@
 					source: "meta",
 					action: "open",
 					noun: "gif_tooltip",
-					subreddit: e ? Object(i.lb)(t, e) : void 0,
+					subreddit: e ? Object(i.mb)(t, e) : void 0,
 					correlationId: A,
 					...Object(i.o)(t)
 				}),
@@ -1329,7 +1329,7 @@
 					source: "meta",
 					action: "open",
 					noun: "gif_upsell",
-					subreddit: e ? Object(i.lb)(t, e) : void 0,
+					subreddit: e ? Object(i.mb)(t, e) : void 0,
 					correlationId: A,
 					...Object(i.o)(t)
 				})
@@ -1351,4 +1351,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.75aa010e1acfc5fbd375.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.d4f4df389e6cc430d1d9.js.map

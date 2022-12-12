@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.fd1a1e8cbad623977662.js
-// Retrieved at 12/12/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.a6352e7a406af887e054.js
+// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3497,7 +3497,7 @@
 				c = n("./src/telemetry/models/Event.ts");
 			const d = (e, t) => ({
 					...Object(a.o)(e),
-					subreddit: Object(a.kb)(e),
+					subreddit: Object(a.lb)(e),
 					profile: Object(a.T)(e),
 					post: Object(a.K)(e, t),
 					comment: Object(a.h)({
@@ -3529,7 +3529,7 @@
 					noun: e,
 					post: Object(a.K)(n, t),
 					source: c.b.ChatView,
-					subreddit: Object(a.kb)(n)
+					subreddit: Object(a.lb)(n)
 				}),
 				p = (e, t) => n => ({
 					...d(n, t),
@@ -3637,7 +3637,7 @@
 					var t;
 					return {
 						...Object(a.o)(e),
-						subreddit: Object(a.kb)(e),
+						subreddit: Object(a.lb)(e),
 						profile: Object(a.T)(e),
 						actionInfo: {
 							...Object(a.d)(e),
@@ -3699,7 +3699,7 @@
 			const a = e => ({
 					...s.o(e),
 					screen: s.cb(e),
-					subreddit: s.kb(e),
+					subreddit: s.lb(e),
 					userSubreddit: s.ub(e)
 				}),
 				c = e => ({
@@ -3795,7 +3795,7 @@
 					noun: n,
 					goldPurchase: c(e),
 					profile: s.U(r, t),
-					subreddit: s.lb(r, t)
+					subreddit: s.mb(r, t)
 				}),
 				h = (e, t) => f(e, t, "disable_in_community"),
 				v = (e, t) => f(e, t, "enable_in_community")
@@ -3899,7 +3899,7 @@
 						correlationId: Object(l.b)(e) || Object(c.d)(c.a.GildingFlow, !1),
 						post: t ? i.K(e, t) : void 0,
 						screen: i.cb(e),
-						subreddit: i.kb(e),
+						subreddit: i.lb(e),
 						userSubreddit: i.ub(e),
 						listing: t ? Object(r.k)(e, t) : void 0
 					}
@@ -4139,7 +4139,7 @@
 						correlationId: a.s(e) || Object(m.d)(m.a.GoldPayment, !1),
 						post: n ? c.K(e, n) : null,
 						screen: c.cb(e),
-						subreddit: n ? c.kb(e) : null,
+						subreddit: n ? c.lb(e) : null,
 						goldPurchase: {
 							...h ? Object(b.a)(h) : null,
 							type: _,
@@ -4276,7 +4276,7 @@
 			const c = e => ({
 					profile: a.T(e),
 					screen: a.cb(e),
-					subreddit: a.kb(e)
+					subreddit: a.lb(e)
 				}),
 				d = (e, t, n) => r => ({
 					source: Object(i.j)(r) || n ? "post_lightbox" : "post_detail",
@@ -4361,7 +4361,7 @@
 			const o = e => ({
 					screen: Object(s.cb)(e),
 					profile: Object(s.T)(e),
-					subreddit: Object(s.kb)(e),
+					subreddit: Object(s.lb)(e),
 					userSubreddit: Object(s.ub)(e)
 				}),
 				i = e => t => ({
@@ -4472,7 +4472,7 @@
 					action: "click",
 					noun: e,
 					post: Object(s.K)(n, t),
-					subreddit: Object(s.nb)(n, t)
+					subreddit: Object(s.ob)(n, t)
 				}),
 				v = (e, t) => n => ({
 					source: "comment",
@@ -4483,14 +4483,14 @@
 						commentId: t
 					}),
 					post: Object(s.K)(n, t),
-					subreddit: Object(s.nb)(n, t)
+					subreddit: Object(s.ob)(n, t)
 				}),
 				_ = (e, t, n, r) => o => ({
 					source: e ? "comment" : "post",
 					action: "click",
 					noun: t ? "unsnooze_reporter" : "snooze_reporter",
 					post: Object(s.K)(o, n),
-					subreddit: Object(s.nb)(o, n),
+					subreddit: Object(s.ob)(o, n),
 					actionInfo: {
 						reason: r
 					},
@@ -4585,7 +4585,7 @@
 			const o = e => ({
 					...s.o(e),
 					screen: s.cb(e),
-					subreddit: s.kb(e),
+					subreddit: s.lb(e),
 					userSubreddit: s.ub(e)
 				}),
 				i = e => ({
@@ -4849,7 +4849,7 @@
 					source: "avatar",
 					action: "click",
 					noun: "try_this_look_post",
-					snoovatar: o.ib(e)
+					snoovatar: o.jb(e)
 				}),
 				u = e => ({
 					...o.o(e),
@@ -4859,14 +4859,14 @@
 					actionInfo: {
 						pageType: "snoovatar_builder"
 					},
-					snoovatar: o.ib(e)
+					snoovatar: o.jb(e)
 				}),
 				m = e => ({
 					...o.o(e),
 					source: "avatar_builder",
 					action: "click",
 					noun: "close",
-					snoovatar: o.ib(e)
+					snoovatar: o.jb(e)
 				}),
 				p = e => ({
 					source: "nav",
@@ -4896,7 +4896,7 @@
 					action: e,
 					noun: "community_spaces",
 					...o.o(n),
-					snoovatar: o.ib(n),
+					snoovatar: o.jb(n),
 					actionInfo: {
 						paneName: "avatar_community_spaces" + (t ? "_control" : "")
 					}
@@ -4909,7 +4909,7 @@
 					action: t,
 					noun: n,
 					...o.o(r),
-					snoovatar: o.ib(r)
+					snoovatar: o.jb(r)
 				}),
 				x = O("anniversary_achievement", "view", "anniversary_achievement"),
 				C = O("anniversary_achievement", "click", "close"),
@@ -4930,7 +4930,7 @@
 					actionInfo: {
 						pageType: "onboarding"
 					},
-					snoovatar: o.ib(r)
+					snoovatar: o.jb(r)
 				}),
 				k = e => w("onboarding", "click", e),
 				T = () => w("avatar", "view", "onboarding")
@@ -4955,7 +4955,7 @@
 					...s.o(e)
 				}),
 				i = e => t => {
-					const n = s.kb(t),
+					const n = s.lb(t),
 						{
 							userFlair: o,
 							achievementFlair: i
@@ -4990,7 +4990,7 @@
 						value: e ? "0" : "1",
 						oldValue: e ? "1" : "0"
 					},
-					subreddit: s.kb(t),
+					subreddit: s.lb(t),
 					...s.o(t)
 				})
 		},
@@ -6051,7 +6051,7 @@
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
 						experimentName: r.zc
-					}) === r.gd.Enabled
+					}) === r.hd.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
@@ -6064,8 +6064,8 @@
 			const o = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.ff
-				}) === r.Pd
+					experimentName: r.gf
+				}) === r.Qd
 			}
 		},
 		"./src/reddit/selectors/experiments/web2x_cta.ts": function(e, t, n) {
@@ -6077,10 +6077,10 @@
 				s = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(r.a)(e => Object(o.c)(e, {
-					experimentName: s.ng,
+					experimentName: s.og,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				a = Object(r.a)(i, e => e === s.fg)
+				a = Object(r.a)(i, e => e === s.gg)
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
 			"use strict";
@@ -6463,4 +6463,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.fd1a1e8cbad623977662.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.a6352e7a406af887e054.js.map

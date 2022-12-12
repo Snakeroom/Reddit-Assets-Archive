@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.34fa73996d89f0b551f8.js
-// Retrieved at 12/12/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.d4ba1244b720eeb8c266.js
+// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -545,7 +545,7 @@
 				referrer: i.Z(e),
 				request: i.ab(e),
 				screen: i.cb(e),
-				session: i.gb(e),
+				session: i.hb(e),
 				user: i.sb(e),
 				media: n ? i.C(e, n) : null,
 				post: n ? i.K(e, n) : null
@@ -1768,7 +1768,7 @@
 			const b = Object(p.a)(e => Object(m.c)(e, {
 				experimentEligibilitySelector: m.a,
 				experimentName: u.xc
-			}), e => e === u.Pd);
+			}), e => e === u.Qd);
 			var f = n("./node_modules/fbt/lib/FbtPublic.js"),
 				h = n("./src/lib/classNames/index.ts"),
 				v = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
@@ -3180,7 +3180,7 @@
 				c = n("./src/telemetry/models/Event.ts");
 			const d = (e, t) => ({
 					...Object(a.o)(e),
-					subreddit: Object(a.kb)(e),
+					subreddit: Object(a.lb)(e),
 					profile: Object(a.T)(e),
 					post: Object(a.K)(e, t),
 					comment: Object(a.h)({
@@ -3212,7 +3212,7 @@
 					noun: e,
 					post: Object(a.K)(n, t),
 					source: c.b.ChatView,
-					subreddit: Object(a.kb)(n)
+					subreddit: Object(a.lb)(n)
 				}),
 				p = (e, t) => n => ({
 					...d(n, t),
@@ -3320,7 +3320,7 @@
 					var t;
 					return {
 						...Object(a.o)(e),
-						subreddit: Object(a.kb)(e),
+						subreddit: Object(a.lb)(e),
 						profile: Object(a.T)(e),
 						actionInfo: {
 							...Object(a.d)(e),
@@ -3382,7 +3382,7 @@
 			const a = e => ({
 					...s.o(e),
 					screen: s.cb(e),
-					subreddit: s.kb(e),
+					subreddit: s.lb(e),
 					userSubreddit: s.ub(e)
 				}),
 				c = e => ({
@@ -3478,7 +3478,7 @@
 					noun: n,
 					goldPurchase: c(e),
 					profile: s.U(r, t),
-					subreddit: s.lb(r, t)
+					subreddit: s.mb(r, t)
 				}),
 				h = (e, t) => f(e, t, "disable_in_community"),
 				v = (e, t) => f(e, t, "enable_in_community")
@@ -3582,7 +3582,7 @@
 						correlationId: Object(l.b)(e) || Object(c.d)(c.a.GildingFlow, !1),
 						post: t ? i.K(e, t) : void 0,
 						screen: i.cb(e),
-						subreddit: i.kb(e),
+						subreddit: i.lb(e),
 						userSubreddit: i.ub(e),
 						listing: t ? Object(r.k)(e, t) : void 0
 					}
@@ -3822,7 +3822,7 @@
 						correlationId: a.s(e) || Object(m.d)(m.a.GoldPayment, !1),
 						post: n ? c.K(e, n) : null,
 						screen: c.cb(e),
-						subreddit: n ? c.kb(e) : null,
+						subreddit: n ? c.lb(e) : null,
 						goldPurchase: {
 							...h ? Object(b.a)(h) : null,
 							type: _,
@@ -4016,7 +4016,7 @@
 					source: "avatar",
 					action: "click",
 					noun: "try_this_look_post",
-					snoovatar: o.ib(e)
+					snoovatar: o.jb(e)
 				}),
 				u = e => ({
 					...o.o(e),
@@ -4026,14 +4026,14 @@
 					actionInfo: {
 						pageType: "snoovatar_builder"
 					},
-					snoovatar: o.ib(e)
+					snoovatar: o.jb(e)
 				}),
 				m = e => ({
 					...o.o(e),
 					source: "avatar_builder",
 					action: "click",
 					noun: "close",
-					snoovatar: o.ib(e)
+					snoovatar: o.jb(e)
 				}),
 				p = e => ({
 					source: "nav",
@@ -4063,7 +4063,7 @@
 					action: e,
 					noun: "community_spaces",
 					...o.o(n),
-					snoovatar: o.ib(n),
+					snoovatar: o.jb(n),
 					actionInfo: {
 						paneName: "avatar_community_spaces" + (t ? "_control" : "")
 					}
@@ -4076,7 +4076,7 @@
 					action: t,
 					noun: n,
 					...o.o(r),
-					snoovatar: o.ib(r)
+					snoovatar: o.jb(r)
 				}),
 				y = x("anniversary_achievement", "view", "anniversary_achievement"),
 				O = x("anniversary_achievement", "click", "close"),
@@ -4097,7 +4097,7 @@
 					actionInfo: {
 						pageType: "onboarding"
 					},
-					snoovatar: o.ib(r)
+					snoovatar: o.jb(r)
 				}),
 				P = e => I("onboarding", "click", e),
 				w = () => I("avatar", "view", "onboarding")
@@ -5232,4 +5232,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.34fa73996d89f0b551f8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.d4ba1244b720eeb8c266.js.map

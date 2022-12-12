@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.1765ada4c26e20d4200d.js
-// Retrieved at 11/21/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.fc4eb7bb32153e56e2f4.js
+// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Leaderboard"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, r) {
@@ -662,7 +662,7 @@
 						...s.actionInfo,
 						reason: r
 					},
-					subreddit: M.kb(n)
+					subreddit: M.lb(n)
 				}
 			};
 			const w = Object(c.c)({
@@ -1915,4 +1915,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.1765ada4c26e20d4200d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.fc4eb7bb32153e56e2f4.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.e425beb5104d9d37e2f4.js
-// Retrieved at 12/12/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.63344447faee9f2338a5.js
+// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -96,8 +96,8 @@
 			const y = e => {
 				return Object(_.c)(e, {
 					experimentEligibilitySelector: _.a,
-					experimentName: S.vf
-				}) === S.Pd
+					experimentName: S.wf
+				}) === S.Qd
 			};
 			var v = s("./src/reddit/selectors/experiments/shredditParity.ts"),
 				O = s("./src/reddit/selectors/recapGame.ts"),
@@ -546,7 +546,7 @@
 				const t = Object(a.f)().getState(),
 					s = Object(h.a)(t, Object(o.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.fd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.fd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.fd.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.gd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.gd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.gd.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(k, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -1401,7 +1401,7 @@
 					action: a.c.CLICK,
 					noun: n.REREDDIT_PROMO,
 					post: i.K(s, e),
-					subreddit: i.kb(s),
+					subreddit: i.lb(s),
 					...t && {
 						banner: {
 							buttonText: t,
@@ -1903,4 +1903,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.e425beb5104d9d37e2f4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.63344447faee9f2338a5.js.map
