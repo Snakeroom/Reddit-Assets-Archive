@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.036774968c7bac779a29.js
-// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.919e527ff14e275e10c5.js
+// Retrieved at 12/12/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -1972,7 +1972,7 @@
 					}, [c]);
 					const T = Object(o.d)(),
 						L = Object(a.useCallback)(e => {
-							y(e), Object(_.Kb)("modnote-draft", {
+							y(e), Object(_.Jb)("modnote-draft", {
 								[c]: e
 							})
 						}, [y, c]),
@@ -3776,9 +3776,9 @@
 					T = Object(m.a)(),
 					[L, D, H] = function(e, t, n) {
 						const [r, o] = Object(a.useState)(Object(u.r)(e, t) || 0), s = Object(a.useCallback)(() => {
-							o(r + 1), Object(u.Db)(e, t, r + 1)
+							o(r + 1), Object(u.Cb)(e, t, r + 1)
 						}, []), i = Object(a.useCallback)(() => {
-							n > 0 && (o(n), Object(u.Db)(e, t, n))
+							n > 0 && (o(n), Object(u.Cb)(e, t, n))
 						}, []);
 						return [r, s, i]
 					}(h, n.notificationName, (null === (v = n.persistence) || void 0 === v ? void 0 : v.maxViews) || 0),
@@ -4313,7 +4313,7 @@
 						[C, I] = function(e) {
 							const [t, n] = Object(r.useState)(() => Object(Q.u)(e));
 							return [t, Object(r.useCallback)(() => {
-								n(!0), Object(Q.Eb)(e)
+								n(!0), Object(Q.Db)(e)
 							}, [e])]
 						}(x),
 						[O, N] = function(e) {
@@ -5965,7 +5965,7 @@
 			function o(e) {
 				const [t, n] = Object(a.useState)(Object(r.t)(e));
 				return [t, Object(a.useCallback)(() => {
-					n(!0), Object(r.ub)(e)
+					n(!0), Object(r.tb)(e)
 				}, [])]
 			}
 		},
@@ -6652,4 +6652,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.036774968c7bac779a29.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.919e527ff14e275e10c5.js.map

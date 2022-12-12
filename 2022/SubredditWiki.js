@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.487a00aa71d659b93336.js
-// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.01015f4ca17d41c19a08.js
+// Retrieved at 12/12/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2691,12 +2691,12 @@
 						h && O(setTimeout(() => {
 							b.current && (b.current.classList.add(E.a.transform), b.current.style.width = `${I}px`)
 						}, 4750)), h && x(setTimeout(() => {
-							f(!1), Object(u.Ub)(L, !1)
+							f(!1), Object(u.Sb)(L, !1)
 						}, 5e3))
 					};
 				return Object(s.useEffect)(() => {
 					B || setTimeout(() => {
-						const e = Object(u.O)(L);
+						const e = Object(u.N)(L);
 						e ? Object(o.e)(e.lastSeenTime) >= 24 && e.dropSkip === u.a.NONE ? f(!0) : Date.now() >= new Date(2022, 10, 16).getTime() && e.dropSkip !== u.a.THIRD && f(!0) : f(!0)
 					})
 				}, [L, B]), r.a.createElement("div", {
@@ -2705,7 +2705,7 @@
 				}, h && D && !n && !B ? r.a.createElement(_, {
 					ref: b,
 					onBananaPillClick: () => {
-						v && clearTimeout(v), y && clearTimeout(y), f(!1), Object(u.Ub)(L, !0), p((() => e => ({
+						v && clearTimeout(v), y && clearTimeout(y), f(!1), Object(u.Sb)(L, !0), p((() => e => ({
 							source: "recap",
 							action: "click",
 							noun: "feed_banana",
@@ -3060,7 +3060,7 @@
 						a = Object(h.b)(k),
 						o = Object(h.b)(C),
 						[d, c] = function(e, t) {
-							const [n, r] = Object(s.useState)(Object(M.V)(e, t));
+							const [n, r] = Object(s.useState)(Object(M.U)(e, t));
 							return [n, Object(s.useCallback)(() => {
 								const n = Object(M.b)(e, t);
 								r(n)
@@ -3090,7 +3090,7 @@
 							e.stopPropagation(), a.visible ? g() : v()
 						}, [g, v, a.visible]),
 						S = Object(s.useCallback)(t => {
-							t === x.c.FREQUENT && Object(M.hb)(e.userId, e.subredditId)
+							t === x.c.FREQUENT && Object(M.gb)(e.userId, e.subredditId)
 						}, [e.subredditId, e.userId]),
 						I = Object(s.useCallback)(s => {
 							const {
@@ -3403,7 +3403,7 @@
 					small: !0,
 					isFullWidth: !0,
 					afterUnsubscribeAction: () => {
-						t && (Object(M.hb)(e.userId, t), e.updateSubredditInfo())
+						t && (Object(M.gb)(e.userId, t), e.updateSubredditInfo())
 					}
 				})), I && r.a.createElement(ke, {
 					onClickUnmute: e.unmuteSubreddit
@@ -9817,4 +9817,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.487a00aa71d659b93336.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.01015f4ca17d41c19a08.js.map

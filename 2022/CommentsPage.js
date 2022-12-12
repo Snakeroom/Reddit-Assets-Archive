@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.c0d00dd3472d420717a2.js
-// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.09e06233973380a2e166.js
+// Retrieved at 12/12/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "PostCreation~Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-c~93a1f1ba", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3412,7 +3412,7 @@
 					t(_({
 						categoryId: e,
 						rank: s + 1
-					})), Object(m.rb)(Object(p.d)(n()))
+					})), Object(m.qb)(Object(p.d)(n()))
 				}
 		},
 		"./src/reddit/actions/comment/authoring.ts": function(e, t, n) {
@@ -4239,7 +4239,7 @@
 								commentId: e,
 								followState: t
 							})).ok) {
-							Object(z.Ab)(null !== (u = null === (l = null === (d = r().pages) || void 0 === d ? void 0 : d.comments) || void 0 === l ? void 0 : l.followed) && void 0 !== u ? u : [], null === (m = r().user.account) || void 0 === m ? void 0 : m.id);
+							Object(z.zb)(null !== (u = null === (l = null === (d = r().pages) || void 0 === d ? void 0 : d.comments) || void 0 === l ? void 0 : l.followed) && void 0 !== u ? u : [], null === (m = r().user.account) || void 0 === m ? void 0 : m.id);
 							const e = o ? s.fbt._("Followed! You’ll get updates when there’s new activity.", null, {
 								hk: "2O1Ou3"
 							}) : s.fbt._("Unfollowed. You won’t get updates on this comment anymore.", null, {
@@ -5669,14 +5669,14 @@
 				d = e => {
 					switch (e) {
 						case r.a.Denied:
-							a.tb(!1), Object(s.c)();
+							a.sb(!1), Object(s.c)();
 							break;
 						case r.a.Default:
 						case r.a.Granted:
-							a.tb(!0), Object(s.c)();
+							a.sb(!0), Object(s.c)();
 							break;
 						case r.a.Closed:
-							a.tb(!0)
+							a.sb(!0)
 					}
 				}
 		},
@@ -7815,7 +7815,7 @@
 						}),
 						kind: u.b.SuccessCommunity,
 						text: c
-					})), Object(a.yb)(r + 1)
+					})), Object(a.xb)(r + 1)
 				}
 		},
 		"./src/reddit/actions/postCreation/subredditChange.ts": function(e, t, n) {
@@ -10326,7 +10326,7 @@
 						action: "view",
 						noun: l,
 						...Object(d.o)(e)
-					}))(p)), Object(c.Jb)(), Object(c.Ib)(E), o(C()), n && n()
+					}))(p)), Object(c.Ib)(), Object(c.Hb)(E), o(C()), n && n()
 				}, f = e => async (t, n) => {
 					Object(m.a)((e => ({
 						source: l,
@@ -11291,12 +11291,12 @@
 						f && j(setTimeout(() => {
 							b.current && (b.current.classList.add(S.a.transform), b.current.style.width = `${T}px`)
 						}, 4750)), f && v(setTimeout(() => {
-							C(!1), Object(u.Ub)(A, !1)
+							C(!1), Object(u.Sb)(A, !1)
 						}, 5e3))
 					};
 				return Object(s.useEffect)(() => {
 					D || setTimeout(() => {
-						const e = Object(u.O)(A);
+						const e = Object(u.N)(A);
 						e ? Object(a.e)(e.lastSeenTime) >= 24 && e.dropSkip === u.a.NONE ? C(!0) : Date.now() >= new Date(2022, 10, 16).getTime() && e.dropSkip !== u.a.THIRD && C(!0) : C(!0)
 					})
 				}, [A, D]), r.a.createElement("div", {
@@ -11305,7 +11305,7 @@
 				}, f && N && !n && !D ? r.a.createElement(_, {
 					ref: b,
 					onBananaPillClick: () => {
-						g && clearTimeout(g), x && clearTimeout(x), C(!1), Object(u.Ub)(A, !0), p((() => e => ({
+						g && clearTimeout(g), x && clearTimeout(x), C(!1), Object(u.Sb)(A, !0), p((() => e => ({
 							source: "recap",
 							action: "click",
 							noun: "feed_banana",
@@ -27794,7 +27794,7 @@
 				return Object(i.useEffect)(() => {
 					var e;
 					const n = null !== (e = Object(p.C)("should-show-comment-tab-tooltip")) && void 0 !== e ? e : 2;
-					t(Boolean(n)), 2 === n ? Object(p.Kb)("should-show-comment-tab-tooltip", 1) : 1 === n && Object(p.Kb)("should-show-comment-tab-tooltip", !1)
+					t(Boolean(n)), 2 === n ? Object(p.Jb)("should-show-comment-tab-tooltip", 1) : 1 === n && Object(p.Jb)("should-show-comment-tab-tooltip", !1)
 				}, []), {
 					get shouldShowCommentTabTooltip() {
 						return e
@@ -37221,7 +37221,7 @@
 					}
 				}),
 				a = (e, t) => {
-					t && (Object(r.Gb)(e.postId), Object(r.Pb)(t)), e.impressionIdStr ? Object(r.Hb)(e.impressionIdStr) : e.impressionId && Object(r.Hb)(e.impressionId)
+					t && (Object(r.Fb)(e.postId), Object(r.Ob)(t)), e.impressionIdStr ? Object(r.Gb)(e.impressionIdStr) : e.impressionId && Object(r.Gb)(e.impressionId)
 				}
 		},
 		"./src/reddit/helpers/trackers/authControls.ts": function(e, t, n) {
@@ -49541,7 +49541,7 @@
 				l = n("./node_modules/reselect/es/index.js");
 			const u = 30 * s.pb,
 				m = () => {
-					Object(a.Kb)(i.b.XpromoConsolidation, (new Date).toString())
+					Object(a.Jb)(i.b.XpromoConsolidation, (new Date).toString())
 				},
 				p = () => {
 					if (!Object(r.a)()) return !1;
@@ -50845,4 +50845,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.c0d00dd3472d420717a2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.09e06233973380a2e166.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.13e9675af20b061d4816.js
-// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.cf807cd4dcef217d5d78.js
+// Retrieved at 12/12/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit", "ModListing~Reddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -1999,14 +1999,14 @@
 				d = e => {
 					switch (e) {
 						case s.a.Denied:
-							i.tb(!1), Object(r.c)();
+							i.sb(!1), Object(r.c)();
 							break;
 						case s.a.Default:
 						case s.a.Granted:
-							i.tb(!0), Object(r.c)();
+							i.sb(!0), Object(r.c)();
 							break;
 						case s.a.Closed:
-							i.tb(!0)
+							i.sb(!0)
 					}
 				}
 		},
@@ -2760,7 +2760,7 @@
 				} = e, n = Object(c.g)(a.a.AWARDED_LISTING_BANNER, i.g), [u, m] = Object(r.useState)(n ? N.Hidden : N.Visible);
 				if (u === N.Hidden) return null;
 				const p = () => {
-					m(N.Visible), Object(c.qb)(a.a.AWARDED_LISTING_BANNER, !1, i.g)
+					m(N.Visible), Object(c.pb)(a.a.AWARDED_LISTING_BANNER, !1, i.g)
 				};
 				return u === N.Dismissed ? s.a.createElement("div", {
 					className: Object(o.a)(g.a.dismissedContainer, t)
@@ -2781,7 +2781,7 @@
 				})), s.a.createElement(j, null), s.a.createElement(l.a, {
 					className: g.a.close,
 					onClick: () => {
-						m(N.Dismissed), Object(c.qb)(a.a.AWARDED_LISTING_BANNER, !0, i.g)
+						m(N.Dismissed), Object(c.pb)(a.a.AWARDED_LISTING_BANNER, !0, i.g)
 					}
 				}))
 			}
@@ -3263,7 +3263,7 @@
 						a = Object(h.b)(E),
 						i = Object(h.b)(O),
 						[c, d] = function(e, t) {
-							const [n, s] = Object(r.useState)(Object(U.V)(e, t));
+							const [n, s] = Object(r.useState)(Object(U.U)(e, t));
 							return [n, Object(r.useCallback)(() => {
 								const n = Object(U.b)(e, t);
 								s(n)
@@ -3293,7 +3293,7 @@
 							e.stopPropagation(), a.visible ? f() : v()
 						}, [f, v, a.visible]),
 						k = Object(r.useCallback)(t => {
-							t === y.c.FREQUENT && Object(U.hb)(e.userId, e.subredditId)
+							t === y.c.FREQUENT && Object(U.gb)(e.userId, e.subredditId)
 						}, [e.subredditId, e.userId]),
 						w = Object(r.useCallback)(r => {
 							const {
@@ -3606,7 +3606,7 @@
 					small: !0,
 					isFullWidth: !0,
 					afterUnsubscribeAction: () => {
-						t && (Object(U.hb)(e.userId, t), e.updateSubredditInfo())
+						t && (Object(U.gb)(e.userId, t), e.updateSubredditInfo())
 					}
 				})), w && s.a.createElement(Ee, {
 					onClickUnmute: e.unmuteSubreddit
@@ -4573,7 +4573,7 @@
 			class _ extends o.a.Component {
 				constructor(e) {
 					super(e), this.closeBanner = () => {
-						Object(u.qb)(d.a.CREATE_POST_BANNER, !0, this.props.subreddit.id), this.setState({
+						Object(u.pb)(d.a.CREATE_POST_BANNER, !0, this.props.subreddit.id), this.setState({
 							visible: !1
 						}), this.props.showToast(), this.props.sendEvent(p())
 					}, this.createPost = () => {
@@ -15027,7 +15027,7 @@
 					}
 				}),
 				i = (e, t) => {
-					t && (Object(s.Gb)(e.postId), Object(s.Pb)(t)), e.impressionIdStr ? Object(s.Hb)(e.impressionIdStr) : e.impressionId && Object(s.Hb)(e.impressionId)
+					t && (Object(s.Fb)(e.postId), Object(s.Ob)(t)), e.impressionIdStr ? Object(s.Gb)(e.impressionIdStr) : e.impressionId && Object(s.Gb)(e.impressionId)
 				}
 		},
 		"./src/reddit/helpers/trackers/communityHubs.ts": function(e, t, n) {
@@ -23129,7 +23129,7 @@
 				l = n("./node_modules/reselect/es/index.js");
 			const u = 30 * r.pb,
 				m = () => {
-					Object(i.Kb)(a.b.XpromoConsolidation, (new Date).toString())
+					Object(i.Jb)(a.b.XpromoConsolidation, (new Date).toString())
 				},
 				p = () => {
 					if (!Object(s.a)()) return !1;
@@ -23654,4 +23654,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.13e9675af20b061d4816.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.cf807cd4dcef217d5d78.js.map

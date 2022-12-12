@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.e51dab8f6b4756b9e0be.js
-// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.ebb0c429e75a5a45eb83.js
+// Retrieved at 12/12/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit", "ContributorRequestButton"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, n) {},
@@ -30218,7 +30218,7 @@
 						const {
 							doNotShowOriginalContentDisclaimerClicked: e
 						} = this.props;
-						e(), Object(Gt.vb)(Kt.ORIGINAL_CONTENT_DISCLAIMER, !0), this.setState({
+						e(), Object(Gt.ub)(Kt.ORIGINAL_CONTENT_DISCLAIMER, !0), this.setState({
 							showOCDisclaimer: !1
 						})
 					}, this.handleOriginalContentClick = () => {
@@ -30491,13 +30491,13 @@
 			const wn = [{
 					id: Ht.d,
 					getShowTimesLeft: Gt.L,
-					setShowTimesLeft: Gt.Rb,
+					setShowTimesLeft: Gt.Qb,
 					tooltipShown: Tn.n,
 					tooltipDismissed: Tn.m
 				}, {
 					id: Ht.c,
 					getShowTimesLeft: Gt.K,
-					setShowTimesLeft: Gt.Qb,
+					setShowTimesLeft: Gt.Pb,
 					tooltipShown: Tn.f,
 					tooltipDismissed: Tn.e
 				}],
@@ -38427,4 +38427,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.e51dab8f6b4756b9e0be.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.ebb0c429e75a5a45eb83.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.c5ca9f5a4ef066dab70b.js
-// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.3ec429256b2adc1aa582.js
+// Retrieved at 12/12/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -953,12 +953,12 @@
 						h && O(setTimeout(() => {
 							b.current && (b.current.classList.add(C.a.transform), b.current.style.width = `${w}px`)
 						}, 4750)), h && y(setTimeout(() => {
-							f(!1), Object(u.Ub)(M, !1)
+							f(!1), Object(u.Sb)(M, !1)
 						}, 5e3))
 					};
 				return Object(r.useEffect)(() => {
 					B || setTimeout(() => {
-						const e = Object(u.O)(M);
+						const e = Object(u.N)(M);
 						e ? Object(a.e)(e.lastSeenTime) >= 24 && e.dropSkip === u.a.NONE ? f(!0) : Date.now() >= new Date(2022, 10, 16).getTime() && e.dropSkip !== u.a.THIRD && f(!0) : f(!0)
 					})
 				}, [M, B]), n.a.createElement("div", {
@@ -967,7 +967,7 @@
 				}, h && P && !s && !B ? n.a.createElement(v, {
 					ref: b,
 					onBananaPillClick: () => {
-						x && clearTimeout(x), _ && clearTimeout(_), f(!1), Object(u.Ub)(M, !0), p((() => e => ({
+						x && clearTimeout(x), _ && clearTimeout(_), f(!1), Object(u.Sb)(M, !0), p((() => e => ({
 							source: "recap",
 							action: "click",
 							noun: "feed_banana",
@@ -3258,4 +3258,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.c5ca9f5a4ef066dab70b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.3ec429256b2adc1aa582.js.map

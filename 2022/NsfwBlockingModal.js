@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NsfwBlockingModal.c822526e011e4964c682.js
-// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NsfwBlockingModal.df2e3bbf7be245f596f9.js
+// Retrieved at 12/12/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NsfwBlockingModal"], {
 		"./src/reddit/components/Footer/index.m.less": function(e, t, n) {
@@ -460,7 +460,7 @@
 				d = n("./node_modules/reselect/es/index.js");
 			const m = 30 * a.pb,
 				b = () => {
-					Object(i.Kb)(r.b.XpromoConsolidation, (new Date).toString())
+					Object(i.Jb)(r.b.XpromoConsolidation, (new Date).toString())
 				},
 				u = () => {
 					if (!Object(s.a)()) return !1;
@@ -483,4 +483,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwBlockingModal.c822526e011e4964c682.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwBlockingModal.df2e3bbf7be245f596f9.js.map

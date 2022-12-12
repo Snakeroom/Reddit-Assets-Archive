@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.0506bdb366ce1c0abbc6.js
-// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.46d36de6c148aff16e52.js
+// Retrieved at 12/12/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -2104,7 +2104,7 @@
 						N === R.Visible && t === v.a.Achievements && E(Object(h.m)())
 					}, [t, N, E]), N === R.Hidden) return null;
 				const C = () => {
-						A(R.Visible), Object(b.qb)(u.a.AVATAR_LISTING_BANNER, !1, m.c)
+						A(R.Visible), Object(b.pb)(u.a.AVATAR_LISTING_BANNER, !1, m.c)
 					},
 					S = () => {
 						E(Object(h.e)(l)), _(Object(o.b)({
@@ -2112,7 +2112,7 @@
 						}))
 					},
 					I = () => {
-						Object(b.qb)(u.a.AVATAR_LISTING_BANNER, !0, m.c), t === v.a.Achievements ? O() : S()
+						Object(b.pb)(u.a.AVATAR_LISTING_BANNER, !0, m.c), t === v.a.Achievements ? O() : S()
 					};
 				if (N === R.Dismissed) return c.a.createElement("div", {
 					className: Object(s.a)(x.a.dismissedContainer, n)
@@ -2201,7 +2201,7 @@
 						[x.a.closeLight]: l
 					}),
 					onClick: () => {
-						A(R.Dismissed), Object(b.qb)(u.a.AVATAR_LISTING_BANNER, !0, m.c), t !== v.a.Achievements && E(Object(h.k)(l)), t === v.a.Achievements && E(Object(h.j)())
+						A(R.Dismissed), Object(b.pb)(u.a.AVATAR_LISTING_BANNER, !0, m.c), t !== v.a.Achievements && E(Object(h.k)(l)), t === v.a.Achievements && E(Object(h.j)())
 					}
 				}), c.a.createElement("div", {
 					className: x.a.contentWrapper
@@ -3143,7 +3143,7 @@
 						t.ok && (e = {
 							subreddits: t.body.data.subreddits.map(e => e.name),
 							fetchedAt: Date.now()
-						}, Object(z.Kb)(H.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
+						}, Object(z.Jb)(H.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
 					}
 					return ce.cachedData = e, e ? e.subreddits : []
 				}
@@ -7889,4 +7889,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.0506bdb366ce1c0abbc6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.46d36de6c148aff16e52.js.map
