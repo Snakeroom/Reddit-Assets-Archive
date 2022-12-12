@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.c1c4674ac7d88afe7845.js
-// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.546f826ff4b22715085d.js
+// Retrieved at 12/12/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, n) {
@@ -1941,8 +1941,8 @@
 			const a = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: r.uf
-					}) === r.Qd
+						experimentName: r.vf
+					}) === r.Rd
 				},
 				d = Object(c.a)(i.S, (e, t) => {
 					let {
@@ -1953,8 +1953,8 @@
 				l = (e, t) => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: e => d(e, t),
-						experimentName: r.vf
-					}) === r.Qd
+						experimentName: r.wf
+					}) === r.Rd
 				}
 		},
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, n) {
@@ -1972,14 +1972,14 @@
 			const a = Object(i.a)(c.S, e => !e),
 				d = Object(i.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: a,
-					experimentName: r.Mf
-				}), e => e === r.Qd),
+					experimentName: r.Nf
+				}), e => e === r.Rd),
 				l = Object(i.a)(d, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? t : o.a.Off),
 				u = Object(i.a)(l, e => e === o.a.Treatment),
 				m = (e, t) => {
 					const n = l(t());
 					a(t()) && n !== o.a.Off && e.block(e => {
-						if ((e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname) && (Object(s.d)(t(), "shreddit_pdp_desktop", 6120, n === o.a.Treatment ? r.Qd : r.O.Control1), n === o.a.Treatment)) return window.location.href = e.pathname, !1
+						if ((e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname) && (Object(s.d)(t(), "shreddit_pdp_desktop", 6120, n === o.a.Treatment ? r.Rd : r.O.Control1), n === o.a.Treatment)) return window.location.href = e.pathname, !1
 					})
 				}
 		},
@@ -2008,4 +2008,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.c1c4674ac7d88afe7845.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.546f826ff4b22715085d.js.map

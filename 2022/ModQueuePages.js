@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.6492b48d5cef6756aefb.js
-// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.84c7ff2471cf9cfcd0d5.js
+// Retrieved at 12/12/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -903,17 +903,17 @@
 		"./src/reddit/actions/modQueue/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "e", (function() {
-				return de
-			})), n.d(t, "d", (function() {
-				return me
-			})), n.d(t, "f", (function() {
 				return he
-			})), n.d(t, "a", (function() {
-				return fe
-			})), n.d(t, "b", (function() {
-				return xe
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "d", (function() {
 				return ve
+			})), n.d(t, "f", (function() {
+				return Ee
+			})), n.d(t, "a", (function() {
+				return je
+			})), n.d(t, "b", (function() {
+				return Ce
+			})), n.d(t, "c", (function() {
+				return ke
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -1250,12 +1250,104 @@
 				U = n("./src/telemetry/index.ts"),
 				H = n("./src/lib/initializeClient/installReducer.ts"),
 				W = n("./src/reddit/reducers/features/modActivitySummaries/index.ts"),
-				V = n("./src/reddit/reducers/features/realtimeModqueue/index.ts"),
-				q = n("./src/reddit/reducers/pages/modHub/index.ts"),
+				V = n("./node_modules/redux/es/redux.js"),
+				q = n("./node_modules/icepick/icepick.js"),
 				G = n("./src/reddit/actions/modQueue/constants.ts");
+			const J = {};
+			var Q = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : J,
+					t = arguments.length > 1 ? arguments[1] : void 0;
+				switch (t.type) {
+					case G.i:
+					case G.f:
+					case G.r:
+					case G.u:
+					case G.A: {
+						const {
+							response: n
+						} = t.payload, {
+							comments: s,
+							posts: o
+						} = n, r = {};
+						return [...Object.values(s), ...Object.values(o)].forEach(e => {
+							var t;
+							const n = null === (t = e.previousActions) || void 0 === t ? void 0 : t.actions;
+							n && n.length && n.forEach(e => e.modAction ? r[e.modAction.id] = e.modAction : !!e.reportAction && (r[e.reportAction.id] = e.reportAction))
+						}), Object(q.merge)(e, r)
+					}
+					case G.l: {
+						const {
+							summary: n
+						} = t.payload, {
+							mods: s
+						} = n, o = {};
+						return Object.values(s).forEach(e => {
+							const {
+								lastModAction: t,
+								info: n
+							} = e;
+							t && t.id && (o[t.id] = {
+								...t,
+								__typename: "ModAction",
+								moderatorInfo: n
+							})
+						}), Object(q.merge)(e, o)
+					}
+					default:
+						return e
+				}
+			};
+			const K = {};
+			var z = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : K,
+						t = arguments.length > 1 ? arguments[1] : void 0;
+					switch (t.type) {
+						case G.i:
+						case G.f:
+						case G.r:
+						case G.u:
+						case G.A: {
+							const {
+								response: n
+							} = t.payload, {
+								comments: s,
+								posts: o
+							} = n, r = [...Object.values(s), ...Object.values(o)].reduce((e, t) => {
+								var n;
+								const s = null === (n = t.previousActions) || void 0 === n ? void 0 : n.actions;
+								return s && s.length && (e[t.id] = s.map(e => {
+									var t, n;
+									return (null === (t = e.modAction) || void 0 === t ? void 0 : t.id) || (null === (n = e.reportAction) || void 0 === n ? void 0 : n.id)
+								}).filter(e => !!e).splice(0, 5)), e
+							}, {});
+							return Object(q.merge)(e, r)
+						}
+						case G.l: {
+							const {
+								summary: n
+							} = t.payload, {
+								mods: s
+							} = n, o = {};
+							return Object.values(s).forEach(t => {
+								const {
+									lastModAction: n
+								} = t;
+								n && n.id && n.target && (o[n.target.id] = [n.id, ...e[n.target.id] || []].splice(0, 5))
+							}), Object(q.merge)(e, o)
+						}
+						default:
+							return e
+					}
+				},
+				X = Object(V.c)({
+					models: Q,
+					order: z
+				}),
+				Y = n("./src/reddit/reducers/features/realtimeModqueue/index.ts"),
+				Z = n("./src/reddit/reducers/pages/modHub/index.ts");
 			Object(H.a)({
 				pages: {
-					modHub: q.a
+					modHub: Z.a
 				}
 			}), Object(H.a)({
 				features: {
@@ -1263,26 +1355,30 @@
 				}
 			}), Object(H.a)({
 				features: {
-					realtimeModqueue: V.a
+					modPreviousActions: X
+				}
+			}), Object(H.a)({
+				features: {
+					realtimeModqueue: Y.a
 				}
 			});
-			const J = Object(r.a)(G.k),
-				Q = Object(r.a)(G.j),
-				K = Object(r.a)(G.i),
-				z = Object(r.a)(G.h),
-				X = Object(r.a)(G.g),
-				Y = Object(r.a)(G.f),
-				Z = Object(r.a)(G.e),
-				$ = Object(r.a)(G.s),
-				ee = Object(r.a)(G.r),
-				te = Object(r.a)(G.q),
-				ne = Object(r.a)(G.v),
-				se = Object(r.a)(G.u),
-				oe = Object(r.a)(G.t),
-				re = Object(r.a)(G.B),
-				ie = Object(r.a)(G.A),
-				ae = Object(r.a)(G.z),
-				de = (e, t, n) => async (r, i, a) => {
+			const $ = Object(r.a)(G.k),
+				ee = Object(r.a)(G.j),
+				te = Object(r.a)(G.i),
+				ne = Object(r.a)(G.h),
+				se = Object(r.a)(G.g),
+				oe = Object(r.a)(G.f),
+				re = Object(r.a)(G.e),
+				ie = Object(r.a)(G.s),
+				ae = Object(r.a)(G.r),
+				de = Object(r.a)(G.q),
+				ce = Object(r.a)(G.v),
+				le = Object(r.a)(G.u),
+				me = Object(r.a)(G.t),
+				ue = Object(r.a)(G.B),
+				pe = Object(r.a)(G.A),
+				be = Object(r.a)(G.z),
+				he = (e, t, n) => async (r, i, a) => {
 					let {
 						apiContext: p,
 						gqlContext: b
@@ -1291,19 +1387,19 @@
 					let f, x, v;
 					switch (t) {
 						case o.wb.Edited:
-							f = X, x = Z, v = Y;
+							f = se, x = re, v = oe;
 							break;
 						case o.wb.Modqueue:
-							f = Q, x = z, v = K;
+							f = ee, x = ne, v = te;
 							break;
 						case o.wb.Reports:
-							f = $, x = te, v = ee;
+							f = ie, x = de, v = ae;
 							break;
 						case o.wb.Spam:
-							f = ne, x = oe, v = se;
+							f = ce, x = me, v = le;
 							break;
 						case o.wb.Unmoderated:
-							f = re, x = ae, v = ie;
+							f = ue, x = be, v = pe;
 							break;
 						default:
 							throw new Error("Invalid modqueue requested")
@@ -1328,12 +1424,12 @@
 						users: _,
 						...E
 					} = A(O.body.data), j = i(), C = c.e[Object(l.V)(j, {})] === c.d.Card;
-					Object(F.b)(j, C) && r(J(_)), r(v({
+					Object(F.b)(j, C) && r($(_)), r(v({
 						listingKey: e,
 						page: `${n.page||P.b}`,
 						response: E
 					}))
-				}, ce = Object(r.a)(G.n), le = Object(r.a)(G.b), me = e => async (t, n, o) => {
+				}, fe = Object(r.a)(G.n), xe = Object(r.a)(G.b), ve = e => async (t, n, o) => {
 					let {
 						gqlContext: r
 					} = o;
@@ -1360,8 +1456,8 @@
 						})
 					}));
 					const h = A(b.body.data);
-					t(ce(h)), h.moderatedAfter ? t(me()) : t(le())
-				}, ue = Object(r.a)(G.y), pe = Object(r.a)(G.x), be = Object(r.a)(G.w), he = (e, t, n) => async (o, r, c) => {
+					t(fe(h)), h.moderatedAfter ? t(ve()) : t(xe())
+				}, ge = Object(r.a)(G.y), Oe = Object(r.a)(G.x), _e = Object(r.a)(G.w), Ee = (e, t, n) => async (o, r, c) => {
 					let {
 						apiContext: l
 					} = c;
@@ -1531,7 +1627,7 @@
 								let {
 									apiContext: o
 								} = n;
-								e(ue());
+								e(ge());
 								const r = t(),
 									a = Object.keys(r.pages.modHub.modQueue.bulkAction.undoLastAction)[0],
 									c = r.pages.modHub.modQueue.bulkAction.undoLastAction[a],
@@ -1540,12 +1636,12 @@
 								const u = await Object(m.a)(o(), a, {
 									ids: c
 								});
-								u.ok ? e(pe({
+								u.ok ? e(Oe({
 									...u.body,
 									operation: a,
 									ids: c,
 									username: l
-								})) : (e(be(u.error)), e(Object(d.f)({
+								})) : (e(_e(u.error)), e(Object(d.f)({
 									kind: L.b.Error,
 									text: s.fbt._("Oh no! Something went wrong!", null, {
 										hk: "16O2Sk"
@@ -1564,7 +1660,7 @@
 						}), L.b.Error);
 						o(Object(d.f)(e))
 					}
-				}, fe = Object(r.a)(G.a), xe = Object(r.a)(G.c), ve = Object(r.a)(G.d)
+				}, je = Object(r.a)(G.a), Ce = Object(r.a)(G.c), ke = Object(r.a)(G.d)
 		},
 		"./src/reddit/actions/removalReasons/index.ts": function(e, t, n) {
 			"use strict";
@@ -6672,12 +6768,12 @@
 						rtJsonElementProps: i
 					});
 					switch (r) {
-						case h.ag.SmIcon:
+						case h.bg.SmIcon:
 							return o.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case h.ag.SmIconHc:
+						case h.bg.SmIconHc:
 							return o.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -8415,7 +8511,7 @@
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
 					experimentName: s.E
-				}) === s.Qd
+				}) === s.Rd
 			}
 		},
 		"./src/reddit/selectors/experiments/realtimeMQUpdates.ts": function(e, t, n) {
@@ -8429,8 +8525,8 @@
 				i = n("./src/reddit/selectors/experiments/modqueueActionBarUXImprovements.ts");
 			const a = e => Object(i.a)(e) && Object(o.c)(e, {
 				experimentEligibilitySelector: r.S,
-				experimentName: s.Ac
-			}) === s.Qd
+				experimentName: s.Bc
+			}) === s.Rd
 		},
 		"./src/reddit/selectors/subredditMention.ts": function(e, t, n) {
 			"use strict";
@@ -8455,12 +8551,12 @@
 				d = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Uf
+						experimentName: s.Vf
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.ag.SmIcon || t === s.ag.SmIconHc
+					return t === s.bg.SmIcon || t === s.bg.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -8498,4 +8594,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.6492b48d5cef6756aefb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.84c7ff2471cf9cfcd0d5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.2f3b1d01b8bb6500e3bb.js
-// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.5b9afcfd2f3010ace919.js
+// Retrieved at 12/12/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MarketplaceInFeedUnit"], {
 		"./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx": function(e, t, s) {
@@ -109,11 +109,11 @@
 					[g, M] = Object(a.useState)(!1),
 					[A, I] = Object(a.useState)(!1);
 				Object(j.a)(l.a);
-				const [L, h] = Object(b.a)("marketplaceClaimInFeedUnitDismissed", !1), [v, N] = Object(b.a)("marketplaceClaimInFeedUnitLoadCount", 0), U = Object(a.useRef)(v), D = U.current % 2 == 0;
+				const [L, h] = Object(b.a)("marketplaceClaimInFeedUnitDismissed", !1), [v, N] = Object(b.a)("marketplaceClaimInFeedUnitLoadCount", 0), U = Object(a.useRef)(v), y = U.current % 2 == 0;
 				if (Object(a.useEffect)(() => {
 						L || N(U.current + 1)
-					}, [N, U, E, D, L]), !(null == C ? void 0 : C.id) || L || !D) return null;
-				const S = t !== p.g.Large;
+					}, [N, U, E, y, L]), !(null == C ? void 0 : C.id) || L || !y) return null;
+				const D = t !== p.g.Large;
 				return o.a.createElement(o.a.Fragment, null, o.a.createElement(r.a, {
 					onChange: e => {
 						A || e.intersectionRatio < .75 || (E(Object(O.j)()), I(!0))
@@ -122,11 +122,11 @@
 				}, o.a.createElement("div", {
 					"data-testid": "marketplace-claim-infeed-unit",
 					className: Object(c.a)(x.a.container, {
-						[x.a.isNotLarge]: S
+						[x.a.isNotLarge]: D
 					})
 				}, o.a.createElement(u.a, null, o.a.createElement(n.e, {
 					className: Object(c.a)(x.a.feedUnit, {
-						[x.a.isNotLarge]: S
+						[x.a.isNotLarge]: D
 					}),
 					onClickCta: () => {
 						E(Object(O.d)()), s(Object(d.h)(m.a.ECON_MARKETPLACE_CLAIM, {
@@ -137,7 +137,7 @@
 					title: C.title,
 					description: C.description,
 					ctaText: C.buttonCtaText,
-					isNotCardLayout: S
+					isNotCardLayout: D
 				})))), g && o.a.createElement(k.a, {
 					onGoBack: () => M(!1),
 					onDismiss: () => {
@@ -196,9 +196,9 @@
 			}));
 			var n = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const c = Object(r.a)(n.xd)
+			const c = Object(r.a)(n.yd)
 		},
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.2f3b1d01b8bb6500e3bb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.5b9afcfd2f3010ace919.js.map

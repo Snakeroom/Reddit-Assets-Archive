@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.f0589eac8d37cd0e74c9.js
-// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.f673b77b17b8589b247a.js
+// Retrieved at 12/12/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, r) {
@@ -514,9 +514,9 @@
 			})), r.d(t, "unhideSubredditSuccess", (function() {
 				return U
 			})), r.d(t, "unhideSubredditPending", (function() {
-				return Q
-			})), r.d(t, "unhideSubredditFailed", (function() {
 				return J
+			})), r.d(t, "unhideSubredditFailed", (function() {
+				return Q
 			})), r.d(t, "toggleHiddenSubreddit", (function() {
 				return X
 			})), r.d(t, "hideSubreddit", (function() {
@@ -671,15 +671,15 @@
 				q = Object(d.a)(L.b),
 				K = Object(d.a)(L.a),
 				U = Object(d.a)(L.l),
-				Q = Object(d.a)(L.k),
-				J = Object(d.a)(L.j),
+				J = Object(d.a)(L.k),
+				Q = Object(d.a)(L.j),
 				X = (e, t) => async (r, n, s) => {
 					let {
 						apiContext: i
 					} = s;
 					const o = n(),
 						d = Object(k.m)(o),
-						[a, c, u, l] = t ? [q, V, K, O] : [Q, U, J, E];
+						[a, c, u, l] = t ? [q, V, K, O] : [J, U, Q, E];
 					if (!d || !d.displayText) return;
 					const {
 						currentPage: m
@@ -1785,11 +1785,11 @@
 				q = r("./src/reddit/layout/row/Inline/index.tsx"),
 				K = r("./src/reddit/components/ModListingSidebar/HideCommunities/HideInput/index.m.less"),
 				U = r.n(K);
-			const Q = Object(a.c)({
+			const J = Object(a.c)({
 				apiError: e => e.modListingPage.filteredSubreddits.api.error,
 				isApiPending: B
 			});
-			class J extends o.a.Component {
+			class Q extends o.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						subredditInput: ""
@@ -1833,9 +1833,9 @@
 					}, e.apiError.explanation))
 				}
 			}
-			var X = Object(d.b)(Q, e => ({
+			var X = Object(d.b)(J, e => ({
 					hide: t => e(Object(m.hideSubreddit)(t))
-				}))(Object(F.c)(J)),
+				}))(Object(F.c)(Q)),
 				Y = r("./src/lib/lessComponent.tsx"),
 				z = r("./src/reddit/components/SubredditIcon/index.tsx"),
 				W = r("./src/reddit/icons/fonts/Clear/index.tsx"),
@@ -2085,7 +2085,7 @@
 				const b = Object(o.e)(e => e.subreddits.survey[r]),
 					p = Object(o.e)(e => e.subreddits.progressModule[r]),
 					h = Object(o.e)(l.a),
-					f = h !== c.Se.NewModule;
+					f = h !== c.Te.NewModule;
 				return (null === (s = null == p ? void 0 : p.cards) || void 0 === s ? void 0 : s.length) > 0 && f ? i.a.createElement(m, {
 					closeModuleOnMount: !!t && t !== u.g.Large,
 					subredditId: r,
@@ -2171,15 +2171,15 @@
 			const o = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: i.S,
-						experimentName: n.wd
+						experimentName: n.xd
 					});
-					return !(!t || Object(n.Bg)(t))
+					return !(!t || Object(n.Cg)(t))
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: i.S,
-						experimentName: n.wd
-					}) === n.Ud.ListingEnabled
+						experimentName: n.xd
+					}) === n.Vd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/experiments/recapLeadUpGame.ts": function(e, t, r) {
@@ -2197,8 +2197,8 @@
 			const a = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: i.a,
-						experimentName: n.uf
-					}) === n.Qd
+						experimentName: n.vf
+					}) === n.Rd
 				},
 				c = Object(d.a)(o.S, (e, t) => {
 					let {
@@ -2209,8 +2209,8 @@
 				u = (e, t) => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: e => c(e, t),
-						experimentName: n.vf
-					}) === n.Qd
+						experimentName: n.wf
+					}) === n.Rd
 				}
 		},
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, r) {
@@ -2228,14 +2228,14 @@
 			const a = Object(o.a)(d.S, e => !e),
 				c = Object(o.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: a,
-					experimentName: n.Mf
-				}), e => e === n.Qd),
+					experimentName: n.Nf
+				}), e => e === n.Rd),
 				u = Object(o.a)(c, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? t : i.a.Off),
 				l = Object(o.a)(u, e => e === i.a.Treatment),
 				m = (e, t) => {
 					const r = u(t());
 					a(t()) && r !== i.a.Off && e.block(e => {
-						if ((e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname) && (Object(s.d)(t(), "shreddit_pdp_desktop", 6120, r === i.a.Treatment ? n.Qd : n.O.Control1), r === i.a.Treatment)) return window.location.href = e.pathname, !1
+						if ((e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname) && (Object(s.d)(t(), "shreddit_pdp_desktop", 6120, r === i.a.Treatment ? n.Rd : n.O.Control1), r === i.a.Treatment)) return window.location.href = e.pathname, !1
 					})
 				}
 		},
@@ -2257,8 +2257,8 @@
 			}
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"74c23217d06b"}')
+			e.exports = JSON.parse('{"id":"fb976518d33d"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.f0589eac8d37cd0e74c9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.f673b77b17b8589b247a.js.map

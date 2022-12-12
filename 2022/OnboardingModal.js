@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.0e2fa0343bf350fc8e6f.js
-// Retrieved at 12/12/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.7597a4dede8ff4ceafc5.js
+// Retrieved at 12/12/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -433,7 +433,7 @@
 				q = n("./src/lib/initializeClient/installReducer.ts"),
 				W = n("./src/reddit/reducers/features/marketplace/index.ts"),
 				U = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const H = Object(U.a)(b.Vd);
+			const H = Object(U.a)(b.Wd);
 			var Q = n("./src/redditGQL/types.ts");
 			Object(q.a)({
 				features: {
@@ -470,7 +470,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.Bg)(p),
+						includeInterestTopics: !!p && !Object(b.Cg)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: h && !(null === (s = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === s ? void 0 : s.total),
@@ -1805,7 +1805,7 @@
 						showAllLanguage: d,
 						toggleLanguageSelection: u
 					} = e;
-					const [m, p] = Object(a.useState)(!1), b = Object(i.e)(Z.fb), g = Object(i.e)(je.h) === Ce.fd.TopTwo, f = Object(i.e)(ke.b), h = Object(_.a)();
+					const [m, p] = Object(a.useState)(!1), b = Object(i.e)(Z.fb), g = Object(i.e)(je.h) === Ce.gd.TopTwo, f = Object(i.e)(ke.b), h = Object(_.a)();
 					Object(a.useEffect)(() => {
 						h(s ? Object(L.H)(f) : Object(L.z)(f))
 					}, [f, s, h]);
@@ -3032,7 +3032,7 @@
 					const xe = Object(i.e)(ke.b),
 						ve = Object(i.e)(ke.j),
 						_e = Object(i.e)(je.h),
-						Ee = _e === Ce.fd.TopTwo || _e === Ce.fd.All,
+						Ee = _e === Ce.gd.TopTwo || _e === Ce.gd.All,
 						Se = Object(a.useCallback)(async e => {
 							ie(!0);
 							const n = await fn(e, t, ve);
@@ -3051,9 +3051,9 @@
 						Ie = Object(i.e)(Z.U),
 						Te = Object(i.e)(ke.g),
 						we = Object(i.e)(jn.a),
-						Re = we === Ce.hg.CloseOnboarding,
-						Fe = we === Ce.hg.SkipTopicSelection,
-						Le = we === Ce.hg.SmartSignal,
+						Re = we === Ce.ig.CloseOnboarding,
+						Fe = we === Ce.ig.SkipTopicSelection,
+						Le = we === Ce.ig.SmartSignal,
 						Ge = Object(a.useCallback)(() => {
 							s(Object(b.g)(Qt.a.ONBOARDING_MODAL_D2X)), Ne && s(Object(g.h)()), h && (r(Object(L.t)()), Object(xn.a)()), Te && Ie && s(Object(m.startChangeUsernameFlow)())
 						}, [s, Ie, Te, h, Ne, r]),
@@ -3194,11 +3194,11 @@
 						className: ee.a.subtitle
 					}, function(e) {
 						switch (e) {
-							case Ce.Ye.Ads:
+							case Ce.Ze.Ads:
 								return In._("Tell us about yourself to improve your recommendations and ads.", null, {
 									hk: "tlFdQ"
 								});
-							case Ce.Ye.AdsUpdateSettings:
+							case Ce.Ze.AdsUpdateSettings:
 								return In._("Tell us about yourself to improve your recommendations and ads. You can update this any time in settings.", null, {
 									hk: "CbUFt"
 								});
@@ -5175,8 +5175,8 @@
 			const a = e => {
 				return !(Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.Ae
-				}) === s.Qd)
+					experimentName: s.Be
+				}) === s.Rd)
 			}
 		},
 		"./src/reddit/selectors/experiments/inAppNotification.ts": function(e, t, n) {
@@ -5215,7 +5215,7 @@
 				}
 		},
 		"./src/redditGQL/operations/Frontpage.json": function(e) {
-			e.exports = JSON.parse('{"id":"02a8cbb11fca"}')
+			e.exports = JSON.parse('{"id":"80b4bdf8eb10"}')
 		},
 		"./src/redditGQL/operations/GetAccountGender.json": function(e) {
 			e.exports = JSON.parse('{"id":"1508e05ea2ee"}')
@@ -5233,7 +5233,7 @@
 			e.exports = JSON.parse('{"id":"40df26b7117b"}')
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"74c23217d06b"}')
+			e.exports = JSON.parse('{"id":"fb976518d33d"}')
 		},
 		"./src/redditGQL/operations/UpdateAccountGender.json": function(e) {
 			e.exports = JSON.parse('{"id":"670e8e8d3018"}')
@@ -5246,4 +5246,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.0e2fa0343bf350fc8e6f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.7597a4dede8ff4ceafc5.js.map
