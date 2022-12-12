@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxTooltip.56a1d67eb20be73ab8e4.js
-// Retrieved at 12/8/2022, 7:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxTooltip.7a58269eb604a90de2fa.js
+// Retrieved at 12/12/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxTooltip", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -94,22 +94,22 @@
 				v = i("./src/reddit/selectors/activeModal.ts"),
 				S = i("./src/reddit/selectors/activeModalId.ts"),
 				k = i("./src/reddit/constants/experiments.ts"),
-				N = i("./src/reddit/helpers/chooseVariant/index.ts"),
-				w = i("./src/reddit/selectors/user.ts");
-			const y = e => Object(N.c)(e, {
-				experimentEligibilitySelector: w.S,
-				experimentName: k.xb
-			}) === k.Qd;
+				w = i("./src/reddit/helpers/chooseVariant/index.ts"),
+				N = i("./src/reddit/selectors/user.ts");
+			const y = e => Object(w.c)(e, {
+				experimentEligibilitySelector: N.S,
+				experimentName: k.wb
+			}) === k.Pd;
 			var _ = i("./src/reddit/selectors/experiments/delayDnPermission.ts"),
-				I = i("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts");
-			const P = e => Object(N.c)(e, {
-				experimentName: k.ec,
-				experimentEligibilitySelector: N.a
-			}) === k.Qd;
+				P = i("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts");
+			const I = e => Object(w.c)(e, {
+				experimentName: k.dc,
+				experimentEligibilitySelector: w.a
+			}) === k.Pd;
 			var E = i("./src/reddit/selectors/meta.ts");
 			let F = !1;
 			const C = async (e, t) => {
-				const i = Object(w.R)(e);
+				const i = Object(N.R)(e);
 				if (F) return;
 				if (F = !0, Object(f.a)(e) !== d.d.NotificationsSupported) return;
 				await Object(u.a)();
@@ -135,10 +135,10 @@
 				return async (n, o, s) => {
 					const c = o(),
 						u = Object(E.f)(c),
-						l = P(c),
+						l = I(c),
 						b = !!Object(S.a)(c),
 						f = Object(_.a)(c),
-						p = Object(I.e)(c),
+						p = Object(P.e)(c),
 						g = Object(v.c)(m.a.NSFW_BLOCKING_MODAL_V2)(c),
 						O = y(c);
 					if (p || g) return;
@@ -393,19 +393,19 @@
 					isLoggedIn: v,
 					isOpen: S,
 					isPending: k,
-					isPushNotificationsSupported: N,
-					markAllAsRead: w,
+					isPushNotificationsSupported: w,
+					markAllAsRead: N,
 					markNotificationAsRead: y,
 					messagesBadgeCount: _,
-					notifications: I,
-					showBrowserNotificationsPermissionSettings: P,
+					notifications: P,
+					showBrowserNotificationsPermissionSettings: I,
 					updateInboxActivitySeenState: E,
 					userId: F
 				} = e;
 				const C = Object(f.a)(),
 					[B, A] = Object(n.useState)("");
 				return Object(n.useEffect)(() => {
-					if (S && !I.length && v) {
+					if (S && !P.length && v) {
 						c({
 							first: 5
 						})
@@ -426,19 +426,19 @@
 					hideTooltip: p,
 					blockAwarder: m,
 					inboxBadgeCount: O,
-					isPushNotificationsSupported: N,
+					isPushNotificationsSupported: w,
 					isHotPotatoEnabled: g,
 					isInboxPolicyBannerEnabled: h,
 					isInboxInfiniteScrollEnabled: j,
 					isInboxPostEmbedEnabled: x,
 					isLoggedIn: v,
 					isPending: k,
-					markAllAsRead: w,
+					markAllAsRead: N,
 					markNotificationAsRead: y,
 					messagesBadgeCount: _,
-					notifications: I,
+					notifications: P,
 					setActiveOverflowMenuId: A,
-					showBrowserNotificationsPermissionSettings: P,
+					showBrowserNotificationsPermissionSettings: I,
 					userId: F
 				})
 			})
@@ -472,9 +472,9 @@
 			})), i.d(t, "o", (function() {
 				return k
 			})), i.d(t, "h", (function() {
-				return N
-			})), i.d(t, "g", (function() {
 				return w
+			})), i.d(t, "g", (function() {
+				return N
 			}));
 			var n = i("./src/reddit/selectors/telemetry.ts"),
 				o = i("./src/telemetry/index.ts"),
@@ -602,13 +602,13 @@
 						pageType: "community_alerts"
 					}
 				}),
-				N = () => e => ({
+				w = () => e => ({
 					...n.o(e),
 					action: "click",
 					noun: "desktop_notification_permissions",
 					source: "overlay"
 				}),
-				w = () => e => ({
+				N = () => e => ({
 					...n.o(e),
 					action: "auto_dismiss",
 					noun: "desktop_notification_permissions",
@@ -620,4 +620,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.56a1d67eb20be73ab8e4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.7a58269eb604a90de2fa.js.map

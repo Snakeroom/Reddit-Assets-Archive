@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.573189d835038b7613a1.js
-// Retrieved at 12/8/2022, 7:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.6b7315bbd1769446e698.js
+// Retrieved at 12/12/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -906,8 +906,8 @@
 			const S = e => {
 				return Object(_.c)(e, {
 					experimentEligibilitySelector: _.a,
-					experimentName: y.xf
-				}) === y.Qd
+					experimentName: y.vf
+				}) === y.Pd
 			};
 			var T = s("./src/reddit/selectors/experiments/shredditParity.ts"),
 				E = s("./src/reddit/selectors/recapGame.ts"),
@@ -1326,7 +1326,7 @@
 				const t = Object(i.f)().getState(),
 					s = Object(h.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.gd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.gd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.gd.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.fd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.fd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.fd.LargeImagePreview ? e.reredditButtons : [];
 					return n.a.createElement(k, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -2797,8 +2797,8 @@
 				V = s.n(z);
 			const {
 				fbt: J
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), Q = 5;
-			class q extends n.a.Component {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), q = 5;
+			class Q extends n.a.Component {
 				constructor() {
 					super(...arguments), this.onClick = () => {
 						const {
@@ -2814,7 +2814,7 @@
 						relatedTopics: t
 					} = this.props.relationship;
 					return n.a.createElement(_, {
-						limit: Q,
+						limit: q,
 						title: e,
 						topics: t
 					}, this.renderSeeMoreButton())
@@ -2824,7 +2824,7 @@
 						namePlural: e,
 						relatedTopics: t
 					} = this.props.relationship;
-					return t.length < Q ? null : n.a.createElement(L.a, {
+					return t.length < q ? null : n.a.createElement(L.a, {
 						onClick: this.onClick,
 						to: "#"
 					}, n.a.createElement(I.r, {
@@ -2838,7 +2838,7 @@
 					})))
 				}
 			}
-			var Y = q,
+			var Y = Q,
 				K = s("./src/lib/prettyPrintNumber/index.ts"),
 				Z = s("./src/reddit/components/Flair/index.tsx"),
 				X = s("./src/reddit/components/SubredditIcon/index.tsx"),
@@ -3201,8 +3201,8 @@
 			const i = e => {
 				return Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: r.F
-				}) === r.Qd
+					experimentName: r.E
+				}) === r.Pd
 			}
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, s) {
@@ -3220,11 +3220,11 @@
 				d = s("./node_modules/reselect/es/index.js");
 			const c = Object(d.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: e => Object(a.h)(e) && Object(i.f)(e),
-					experimentName: r.qc
+					experimentName: r.pc
 				}), o.a),
 				l = Object(d.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.h)(e) && Object(i.f)(e),
-					experimentName: r.pc
+					experimentName: r.oc
 				}), o.a),
 				u = Object(d.a)(c, l, (e, t) => e || t),
 				m = Object(d.a)(c, l, (e, t) => !(!e && !t))
@@ -3258,4 +3258,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.573189d835038b7613a1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.6b7315bbd1769446e698.js.map

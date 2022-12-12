@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.1a889fb0ea1f3fc33bbf.js
-// Retrieved at 12/8/2022, 7:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.47d9dbf6aed5cbe98e8f.js
+// Retrieved at 12/12/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -4498,7 +4498,7 @@
 					}, a.a.createElement(b.b, {
 						textColor: d
 					})), a.a.createElement(M, {
-						qrCodeAsset: (() => s === _.dd.Enabled || r === _.gb.BlurredPreview || r === _.gb.NoPreview ? F.d2x_nsfw_signup_blocking_de_v1 : F.d2x_nsfw_signup_blocking_non_us_v1)()
+						qrCodeAsset: (() => s === _.cd.Enabled || r === _.fb.BlurredPreview || r === _.fb.NoPreview ? F.d2x_nsfw_signup_blocking_de_v1 : F.d2x_nsfw_signup_blocking_non_us_v1)()
 					}))
 				},
 				B = e => {
@@ -4517,8 +4517,8 @@
 						})(r)
 					}, [r]), a.a.createElement("div", {
 						className: Object(m.a)(L.a.mainCta, {
-							[L.a.skippable_buttons]: r === _.hb.SkippableButtons,
-							[L.a.skippable_text]: r === _.hb.SkippableText
+							[L.a.skippable_buttons]: r === _.gb.SkippableButtons,
+							[L.a.skippable_text]: r === _.gb.SkippableText
 						})
 					}, a.a.createElement("div", {
 						className: L.a.contentDescription
@@ -4550,7 +4550,7 @@
 								}
 							}))()), E(s.Login), t(Object(p.openLoginModal)())
 						}
-					}, T()), r === _.hb.SkippableButtons && a.a.createElement("div", {
+					}, T()), r === _.gb.SkippableButtons && a.a.createElement("div", {
 						className: L.a.divider
 					}, a.a.createElement("div", {
 						className: L.a.dividerLine
@@ -4578,7 +4578,7 @@
 						hk: "4nUG6S"
 					}))()), a.a.createElement(g.j, {
 						className: Object(m.a)(L.a.continue, L.a.dismiss, {
-							[L.a.no_border]: r === _.hb.SkippableText
+							[L.a.no_border]: r === _.gb.SkippableText
 						}),
 						onClick: () => {
 							n((() => e => ({
@@ -4592,7 +4592,7 @@
 								}
 							}))()), E(s.Dismiss), t(Object(d.b)("/"))
 						}
-					}, r === _.hb.SkippableText ? (() => o.fbt._("Go back to home", null, {
+					}, r === _.gb.SkippableText ? (() => o.fbt._("Go back to home", null, {
 						hk: "4yEgxF"
 					}))() : A())))
 				}
@@ -6007,8 +6007,8 @@
 					const t = Date.parse(e);
 					return Number.isNaN(t) ? (localStorage.removeItem(i.b.XpromoConsolidation), !0) : Date.now() > t + m
 				},
-				h = (e, t) => t === c.a.NoPreview && (e === o.hb.SkippableButtons || e === o.hb.SkippableText),
-				b = (e, t) => t === c.a.NoPreview && e === o.hb.NoUpsell,
+				h = (e, t) => t === c.a.NoPreview && (e === o.gb.SkippableButtons || e === o.gb.SkippableText),
+				b = (e, t) => t === c.a.NoPreview && e === o.gb.NoUpsell,
 				f = Object(l.a)(c.h, c.g, (e, t) => {
 					return {
 						isControlVariant: !(!e || !t) && ((e, t) => t === c.a.NoPreview && !h(e, t) && !b(e, t))(e, t),
@@ -6048,4 +6048,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.1a889fb0ea1f3fc33bbf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.47d9dbf6aed5cbe98e8f.js.map
