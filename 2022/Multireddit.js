@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.4cc384253a71b00d8262.js
-// Retrieved at 12/13/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.7e8608b1883654e4ce2b.js
+// Retrieved at 12/13/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, n) {
@@ -723,7 +723,7 @@
 						r = `${t?"flair_name":"flair"}:"${e}"`;
 					return Object(l.a)(n, {
 						[O.y]: r,
-						[O.B]: t ? "1" : ""
+						[O.z]: t ? "1" : ""
 					})
 				},
 				M = e => e.isFlairFilter ? a.a.createElement(S.default, {
@@ -1817,4 +1817,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.4cc384253a71b00d8262.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.7e8608b1883654e4ce2b.js.map

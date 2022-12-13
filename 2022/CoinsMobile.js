@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinsMobile.b579dd2dcb278b401ed0.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinsMobile.f843efd26cf299097bc8.js
+// Retrieved at 12/13/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinsMobile"], {
 		"./src/reddit/components/CollapsibleFAQ/index.m.less": function(e, t, a) {
@@ -187,7 +187,7 @@
 					}), {
 						":coin_price:": r.a.createElement("span", {
 							className: b.a.nowrap
-						}, r.a.createElement(E.a, null), g.s.coinPrice)
+						}, r.a.createElement(E.a, null), g.r.coinPrice)
 					})), r.a.createElement(C.a, {
 						className: b.a.gridItem,
 						icon: r.a.createElement("img", {
@@ -205,7 +205,7 @@
 						}, r.a.createElement(E.a, null), "100"),
 						":coin_price:": r.a.createElement("span", {
 							className: b.a.nowrap
-						}, r.a.createElement(E.a, null), g.p.coinPrice)
+						}, r.a.createElement(E.a, null), g.o.coinPrice)
 					})), r.a.createElement(C.a, {
 						className: b.a.gridItem,
 						icon: r.a.createElement("img", {
@@ -223,7 +223,7 @@
 						}, r.a.createElement(E.a, null), "700"),
 						":coin_price:": r.a.createElement("span", {
 							className: b.a.nowrap
-						}, r.a.createElement(E.a, null), g.r.coinPrice)
+						}, r.a.createElement(E.a, null), g.q.coinPrice)
 					}))))
 				}
 				renderFAQSection() {
@@ -249,4 +249,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinsMobile.b579dd2dcb278b401ed0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinsMobile.f843efd26cf299097bc8.js.map

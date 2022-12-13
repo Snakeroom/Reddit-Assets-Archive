@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.b07ed72457d40285465e.js
-// Retrieved at 12/13/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.8ebe582d326a5794167d.js
+// Retrieved at 12/13/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -574,9 +574,9 @@
 						}))
 					}
 					return c
-				}, J = Object(i.a)(c.l), Z = Object(i.a)(c.m), Y = Object(i.a)(c.k), Q = e => async (t, n) => {
+				}, Z = Object(i.a)(c.l), J = Object(i.a)(c.m), Y = Object(i.a)(c.k), Q = e => async (t, n) => {
 					const o = n();
-					if (Object(P.b)(o) || Object(P.c)(o)) return void t(Object(a.ab)(Object(j.b)(e.permalink), e.id));
+					if (Object(P.b)(o) || Object(P.c)(o)) return void t(Object(a.Z)(Object(j.b)(e.permalink), e.id));
 					const r = o.platform.currentPage.locationState;
 					t(!(!r || !r[l.b.IsOverlay]) ? Object(w.a)(e.permalink) : Object(s.b)(Object(j.b)(e.permalink)))
 				}, $ = Object(i.a)(c.i), ee = Object(i.a)(c.j), te = Object(i.a)(c.h), ne = Object(i.a)(c.p), oe = Object(i.a)(c.o), se = Object(i.a)(c.q), re = e => async t => {
@@ -615,10 +615,10 @@
 						let {
 							apiContext: i
 						} = r;
-						n(J());
+						n(Z());
 						const a = await C(i(), e, t);
 						let c = !1;
-						if (a.ok) n(Z({
+						if (a.ok) n(J({
 							collectionId: e,
 							newDescription: t
 						})), n(Object(d.f)({
@@ -2789,4 +2789,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.b07ed72457d40285465e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.8ebe582d326a5794167d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.92973fc107df516c1faf.js
-// Retrieved at 12/13/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.bb89be7b16a07b560892.js
+// Retrieved at 12/13/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, r) {
@@ -1803,7 +1803,7 @@
 					hideNSFWPref: o.H
 				}),
 				d = Object(n.b)(i, e => ({
-					imageUpdateRequested: (t, r) => e(Object(a.C)(t, r))
+					imageUpdateRequested: (t, r) => e(Object(a.B)(t, r))
 				}));
 			t.a = d
 		},
@@ -1843,7 +1843,7 @@
 				const j = Object(s.useCallback)(() => h(Object(m.h)(t ? "user_hovercard" : "profile_overview", r)), [t, h, r]);
 				return a.a.createElement(u.t, {
 					onClick: () => {
-						i ? (h(m.i), _ && C === f.a.notVoted && I(Object(d.jb)(_))) : j();
+						i ? (h(m.i), _ && C === f.a.notVoted && I(Object(d.ib)(_))) : j();
 						const e = i ? "postify" : "copy";
 						I(Object(c.b)({
 							clickSource: O,
@@ -2736,7 +2736,7 @@
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
 					experimentName: n.F
-				}) === n.Sd
+				}) === n.Rd
 			}
 		},
 		"./src/redditGQL/operations/DeleteSubredditMuteSettings.json": function(e) {
@@ -2753,4 +2753,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.92973fc107df516c1faf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.bb89be7b16a07b560892.js.map

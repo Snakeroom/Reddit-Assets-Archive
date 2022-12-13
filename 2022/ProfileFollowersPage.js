@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.24dedb4e177dd15222ce.js
-// Retrieved at 12/13/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.89308546a0eaca8c1655.js
+// Retrieved at 12/13/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -2649,7 +2649,7 @@
 					hideNSFWPref: o.H
 				}),
 				d = Object(r.b)(a, e => ({
-					imageUpdateRequested: (t, s) => e(Object(i.C)(t, s))
+					imageUpdateRequested: (t, s) => e(Object(i.B)(t, s))
 				}));
 			t.a = d
 		},
@@ -2689,7 +2689,7 @@
 				const w = Object(n.useCallback)(() => g(Object(m.h)(t ? "user_hovercard" : "profile_overview", s)), [t, g, s]);
 				return i.a.createElement(u.t, {
 					onClick: () => {
-						a ? (g(m.i), C && I === h.a.notVoted && y(Object(d.jb)(C))) : w();
+						a ? (g(m.i), C && I === h.a.notVoted && y(Object(d.ib)(C))) : w();
 						const e = a ? "postify" : "copy";
 						y(Object(l.b)({
 							clickSource: O,
@@ -6135,8 +6135,8 @@
 				}
 		},
 		"./src/redditGQL/operations/ProfileFollowers.json": function(e) {
-			e.exports = JSON.parse('{"id":"b58198edd441"}')
+			e.exports = JSON.parse('{"id":"5fc67bec507f"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.24dedb4e177dd15222ce.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.89308546a0eaca8c1655.js.map

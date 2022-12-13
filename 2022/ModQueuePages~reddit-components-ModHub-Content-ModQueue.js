@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.37574a84cd71be7cd645.js
-// Retrieved at 12/13/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.a60b3d4dc6b60c0e838f.js
+// Retrieved at 12/13/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/actions/modQueue/realtime.ts": function(e, t, s) {
@@ -125,7 +125,7 @@
 					if (y.ok) {
 						if (g) {
 							const s = null === (b = null === (m = null == y ? void 0 : y.body) || void 0 === m ? void 0 : m.data) || void 0 === b ? void 0 : b.postInfoById;
-							t(Object(i.R)({
+							t(Object(i.Q)({
 								[e]: Object(u.f)(s)
 							}))
 						} else {
@@ -303,7 +303,7 @@
 					redditStyle: h.E
 				}),
 				T = Object(a.b)(R, e => ({
-					onListingLayoutChange: (t, s) => e(Object(m.y)(t, s)),
+					onListingLayoutChange: (t, s) => e(Object(m.x)(t, s)),
 					openDropdown: () => e(Object(u.h)({
 						tooltipId: j
 					}))
@@ -791,7 +791,7 @@
 						Y = Object(r.useCallback)(() => {
 							var e;
 							const s = t.isStickied ? "unsticky" : "sticky";
-							g ? (p(Object(y.hb)(t.id)), u(Object(h.n)(s, t.id))) : (p(Object(v.b)(t.id, (null === (e = t.distinguishType) || void 0 === e ? void 0 : e.toLowerCase()) || "", !t.isStickied)), u(Object(h.j)(t.id, s, "mod_menu")))
+							g ? (p(Object(y.gb)(t.id)), u(Object(h.n)(s, t.id))) : (p(Object(v.b)(t.id, (null === (e = t.distinguishType) || void 0 === e ? void 0 : e.toLowerCase()) || "", !t.isStickied)), u(Object(h.j)(t.id, s, "mod_menu")))
 						}, [u, p, t, g]),
 						J = Object(r.useCallback)(() => {
 							g && (p(Object(y.I)(t.id)), u(Object(h.n)(t.isOriginalContent ? "unmark_original_content" : "mark_original_content", t.id)))
@@ -823,10 +823,10 @@
 						}, [K, p, t, g, u]),
 						re = Object(r.useCallback)(() => {
 							var e;
-							g && (p(Object(y.eb)(t.id, !t.hidden, !1, !0)), K((null === (e = t) || void 0 === e ? void 0 : e.hidden) ? "unhide" : "hide"))
+							g && (p(Object(y.db)(t.id, !t.hidden, !1, !0)), K((null === (e = t) || void 0 === e ? void 0 : e.hidden) ? "unhide" : "hide"))
 						}, [K, p, t, g]),
 						ae = Object(r.useCallback)(() => {
-							const e = g ? y.T : v.e;
+							const e = g ? y.S : v.e;
 							p(e(t.id, !0)), u(g ? Object(h.n)("spam", t.id) : Object(h.j)(t.id, "remove_as_spam", "mod_menu"))
 						}, [u, p, t, g]),
 						ie = Object(r.useCallback)(e => {
@@ -1272,8 +1272,10 @@
 				Oe = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				ye = s("./src/reddit/icons/fonts/helpers.tsx");
 			s("./src/reddit/icons/fonts/Admin/index.tsx"), s("./src/reddit/icons/fonts/Approve/index.tsx"), s("./src/reddit/icons/fonts/Archived/index.tsx"), s("./src/reddit/icons/fonts/Calendar/index.tsx"), s("./src/reddit/icons/fonts/Clock/index.tsx"), s("./src/reddit/icons/fonts/Clear/index.tsx"), s("./src/reddit/icons/fonts/Coin/index.tsx"), s("./src/reddit/icons/fonts/Comment/index.tsx"), s("./src/reddit/icons/fonts/DistinguishShield/index.tsx"), s("./src/reddit/icons/fonts/Downvote/index.tsx"), s("./src/reddit/icons/fonts/DropdownTriangle/index.tsx"), s("./src/reddit/icons/fonts/Envelope/index.tsx"), s("./src/reddit/icons/fonts/Expand/index.tsx"), s("./src/reddit/icons/fonts/Expandos/Arrows/Collapse/index.tsx"), s("./src/reddit/icons/fonts/Expandos/Arrows/Expand/index.tsx"), s("./src/reddit/icons/fonts/Gift/index.tsx");
-			var _e = s("./src/reddit/icons/fonts/IgnoreReport/index.tsx"),
-				Ce = (s("./src/reddit/icons/fonts/Info/index.tsx"), s("./src/reddit/icons/fonts/Live/index.tsx"), s("./src/reddit/icons/fonts/Lock/index.tsx"), s("./src/reddit/icons/fonts/Menu/index.tsx"), s("./src/reddit/icons/fonts/ModActions/index.tsx"), s("./src/reddit/icons/fonts/ModSettings/index.tsx"), s("./src/reddit/icons/fonts/Op/index.m.less")),
+			var _e = s("./src/reddit/icons/fonts/IgnoreReport/index.tsx");
+			s("./src/reddit/icons/fonts/Info/index.tsx"), s("./src/reddit/icons/fonts/Live/index.tsx"), s("./src/reddit/icons/fonts/Lock/index.tsx");
+			s("./src/reddit/icons/fonts/ModActions/index.tsx"), s("./src/reddit/icons/fonts/ModSettings/index.tsx");
+			var Ce = s("./src/reddit/icons/fonts/Op/index.m.less"),
 				Ee = s.n(Ce),
 				je = s("./src/lib/lessComponent.tsx");
 			je.a.wrapped(e => a.a.createElement("i", {
@@ -1301,7 +1303,7 @@
 						n = Object(i.d)(),
 						d = Object(r.useCallback)(() => {
 							const e = Object(b.a)(t.id),
-								o = e ? y.fb : v.g,
+								o = e ? y.eb : v.g,
 								r = t.ignoreReports ? "restore_reports" : "ignore_reports",
 								a = e ? Object(h.l)(r, t.id) : Object(h.k)(r, t.id);
 							n(o(t.id)), s(a)
@@ -1481,7 +1483,7 @@
 							I(e(t.id)), w(K(t.id, "approve"))
 						}, [w, I, t, P, K]),
 						J = Object(r.useCallback)(() => {
-							const e = P ? y.T : v.e;
+							const e = P ? y.S : v.e;
 							I(e(t.id, !1)), t.isRemoved && t.bannedBy === d.m ? w(K(t.id, "confirm_remove")) : w(K(t.id, "remove"))
 						}, [w, I, t, P, K]),
 						$ = Object(r.useCallback)(() => {
@@ -1940,7 +1942,7 @@
 			const F = e => Object(A.c)(e, {
 				experimentEligibilitySelector: D.S,
 				experimentName: L.dc
-			}) === L.Sd;
+			}) === L.Rd;
 			var M = s("./src/reddit/components/ModQueueList/SortByNumReportsTooltip.m.less"),
 				B = s.n(M);
 			const U = e => {
@@ -3045,7 +3047,7 @@
 					tooltipId: j(t.reason, t.reportedThingId)
 				})),
 				toggleSnooze: s => {
-					Object(f.a)(t.reportedThingId) ? e(Object(l.h)(t.reportedThingId, t.reason, s)) : e(Object(c.gb)(t.reportedThingId, t.reason, s))
+					Object(f.a)(t.reportedThingId) ? e(Object(l.h)(t.reportedThingId, t.reason, s)) : e(Object(c.fb)(t.reportedThingId, t.reason, s))
 				}
 			})), S = Object(u.a)(b.a);
 			class I extends o.a.Component {
@@ -3305,15 +3307,6 @@
 				className: Object(r.a)(Object(a.b)("expand", e.isFilled), e.className)
 			})
 		},
-		"./src/reddit/icons/fonts/Menu/index.tsx": function(e, t, s) {
-			"use strict";
-			var n = s("./node_modules/react/index.js"),
-				o = s.n(n),
-				r = s("./src/reddit/icons/fonts/helpers.tsx");
-			t.a = e => o.a.createElement("i", {
-				className: `${Object(r.b)("menu",e.isFilled)} ${e.className}`
-			})
-		},
 		"./src/reddit/icons/fonts/ModSettings/index.m.less": function(e, t, s) {
 			e.exports = {
 				ModSettings: "_3-SW6hQX6gXK9G4FM74obr",
@@ -3400,11 +3393,11 @@
 			e.exports = JSON.parse('{"id":"eebd99e32f7b"}')
 		},
 		"./src/redditGQL/operations/SingleCommentById.json": function(e) {
-			e.exports = JSON.parse('{"id":"d4b9ff961ffe"}')
+			e.exports = JSON.parse('{"id":"f151b4667f32"}')
 		},
 		"./src/redditGQL/operations/SinglePostInfoById.json": function(e) {
-			e.exports = JSON.parse('{"id":"42ad8a0af021"}')
+			e.exports = JSON.parse('{"id":"b8368f5028bb"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.37574a84cd71be7cd645.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.a60b3d4dc6b60c0e838f.js.map

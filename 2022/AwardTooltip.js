@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardTooltip.54517be5b0e2c625a8f1.js
-// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardTooltip.52add714d88d02635771.js
+// Retrieved at 12/13/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardTooltip"], {
 		"./src/reddit/components/AwardTooltip/index.m.less": function(e, t, o) {
@@ -40,8 +40,8 @@
 				w = o("./src/reddit/selectors/moderatorPermissions.ts"),
 				b = o("./src/reddit/selectors/subreddit.ts"),
 				x = o("./src/reddit/selectors/user.ts"),
-				f = o("./src/reddit/components/ContentTooltip/index.tsx"),
-				C = o("./src/reddit/components/SubredditIcon/index.tsx"),
+				C = o("./src/reddit/components/ContentTooltip/index.tsx"),
+				f = o("./src/reddit/components/SubredditIcon/index.tsx"),
 				O = o("./src/reddit/controls/Button/index.tsx"),
 				g = o("./src/reddit/icons/svgs/Hide/index.tsx"),
 				P = o("./src/reddit/icons/svgs/Moderate/index.tsx"),
@@ -166,7 +166,7 @@
 						subreddit: a,
 						tooltipId: d
 					} = this.props, p = e.awardSubType === u.d.Premium, h = o && i.authorId === o.id || Object(l.a)(s);
-					return n.a.createElement(f.a, {
+					return n.a.createElement(C.a, {
 						caretColor: {
 							top: p ? m.a.orangered : m.a.alienblue
 						},
@@ -197,12 +197,12 @@
 						className: I.a.awardDescription
 					}, n.a.createElement(v, {
 						award: e
-					})), e.awardType === u.f.Community && a && n.a.createElement("div", {
+					})), e.awardType === u.e.Community && a && n.a.createElement("div", {
 						className: I.a.subreddit
-					}, n.a.createElement(C.b, {
+					}, n.a.createElement(f.b, {
 						className: I.a.subredditIcon,
 						subredditOrProfile: a
-					}), `r/${a.name}`), e.awardType === u.f.Moderator && n.a.createElement("div", {
+					}), `r/${a.name}`), e.awardType === u.e.Moderator && n.a.createElement("div", {
 						className: I.a.subreddit
 					}, n.a.createElement(P.a, {
 						className: Object(c.a)(I.a.subredditIcon, I.a.modShield)
@@ -254,7 +254,7 @@
 					height: 200,
 					width: 200
 				},
-				f = e => {
+				C = e => {
 					switch (e) {
 						case "top":
 							return "bottom";
@@ -267,7 +267,7 @@
 							return "top"
 					}
 				},
-				C = Object(c.a)(e => {
+				f = Object(c.a)(e => {
 					const {
 						children: t,
 						className: o,
@@ -300,7 +300,7 @@
 						return Object(u.b)(o)(e)
 					}
 				}),
-				g = Object(m.a)(C, [r.a.Click, r.a.Keydown]),
+				g = Object(m.a)(f, [r.a.Click, r.a.Keydown]),
 				P = Object(i.b)(O);
 			class _ extends n.a.Component {
 				constructor(e) {
@@ -332,7 +332,7 @@
 									s = r.top > t.height
 							}
 							this.setState({
-								position: s ? this.props.defaultTooltipPosition : f(this.props.defaultTooltipPosition)
+								position: s ? this.props.defaultTooltipPosition : C(this.props.defaultTooltipPosition)
 							})
 						})
 					}, this.state = {
@@ -511,4 +511,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.54517be5b0e2c625a8f1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.52add714d88d02635771.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.020236c5d3735bf34cf3.js
-// Retrieved at 12/13/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.dcb23b13e4e57fd81aee.js
+// Retrieved at 12/13/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -1597,7 +1597,7 @@
 				F = n("./src/reddit/selectors/externalAccount.ts");
 			const U = e => async (t, n) => {
 				await t(Object(M.s)());
-				const f = [t(Object(P.s)()), t(Object(P.A)(!0)), t(Object(p.a)())];
+				const f = [t(Object(P.r)()), t(Object(P.z)(!0)), t(Object(p.a)())];
 				n().economics.paymentSystems.status === B.a.NotFetched && f.push(t((() => async (e, t, n) => {
 					let {
 						apiContext: s
@@ -1634,7 +1634,7 @@
 					}
 				}
 				t(Object(S.m)({
-					title: Object(c.p)()
+					title: Object(c.o)()
 				}))
 			}
 		},
@@ -11296,12 +11296,12 @@
 				}
 			}
 			const Xo = Object(r.b)(Ro, e => ({
-					imageDeleteRequested: t => e(Object(_o.B)(t)),
-					imagesUpdateRequested: (t, n) => e(Object(_o.C)(t, n)),
+					imageDeleteRequested: t => e(Object(_o.A)(t)),
+					imagesUpdateRequested: (t, n) => e(Object(_o.B)(t, n)),
 					onClickSnoovatar: () => e(Object(yo.b)({
 						clickSource: "profile_overview"
 					})),
-					save: (t, n) => e(Object(_o.H)(t, n)),
+					save: (t, n) => e(Object(_o.F)(t, n)),
 					toggleNSFWModal: () => e(Object(_.i)("ProfileForm_NSFWConfirmDialogID"))
 				}))(Object(O.c)(Zo)),
 				$o = Object(c.c)({
@@ -11898,7 +11898,7 @@
 					userIsWhitelistedCreator: kn.y,
 					allowNavigationCallback: cr.a,
 					isResponsiveSettingsEnabled: lr.a,
-					isTalkLiveBarOptOutEnabled: ir.s,
+					isTalkLiveBarOptOutEnabled: ir.r,
 					prefs: e => e.user.prefs,
 					userHasSpecialMembership: e => {
 						if (e.economics.me.fetched) {
@@ -11911,13 +11911,13 @@
 						return Object(ae.c)(e, {
 							experimentName: w.qd,
 							experimentEligibilitySelector: ae.a
-						}) === w.Sd
+						}) === w.Rd
 					}
 				}),
 				fr = Object(ve.v)(),
 				gr = Object(r.b)(hr, (e, t) => ({
 					changeTab: t => e(Object(i.b)(`/settings/${t}`)),
-					updatePrefs: t => e(Object(_o.I)(t)),
+					updatePrefs: t => e(Object(_o.G)(t)),
 					onPageViewed: () => e(Object(b.a)())
 				})),
 				vr = {
@@ -11950,13 +11950,11 @@
 					privateFeeds: "private_feeds",
 					reduceAnimationsFromAwards: "reduce_animations_from_awards",
 					rememberCommunitySort: "remember_community_sort",
-					rpanDuDismissalTime: "rpan_du_dismissal_time",
 					sendWelcomeMessages: "welcome_message",
 					showActiveCommunities: "top_karma_subreddits",
 					showMessagesInInbox: "threaded_messages",
 					showNotifications: "live_orangereds",
 					showPresence: "show_presence",
-					showRpanDu: "show_rpan_du",
 					showTwitter: "show_twitter",
 					showUsernameMentionNotifications: "monitor_mentions",
 					sort: "community_sort",
@@ -12464,7 +12462,7 @@
 			const r = e => Object(o.c)(e, {
 				experimentName: s.u,
 				experimentEligibilitySelector: () => Object(a.R)(e)
-			}) === s.Sd
+			}) === s.Rd
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -12628,4 +12626,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.020236c5d3735bf34cf3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.dcb23b13e4e57fd81aee.js.map

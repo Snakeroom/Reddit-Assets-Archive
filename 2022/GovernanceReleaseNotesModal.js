@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.48a5269b294d800042a7.js
-// Retrieved at 12/13/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.10fd047b32d64857a624.js
+// Retrieved at 12/13/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -202,8 +202,8 @@
 								return
 						}
 					}(n(/Windows ((NT|XP)( \d\d?.\d)?)/i)) : r.windowsphone ? k = n(/windows phone (?:os)?\s?(\d+(\.\d+)*)/i) : r.mac ? k = (k = n(/Mac OS X (\d+([_\.\s]\d+)*)/i)).replace(/[_\s]/g, ".") : o ? k = (k = n(/os (\d+([_\s]\d+)*) like mac os x/i)).replace(/[_\s]/g, ".") : s ? k = n(/android[ \/-](\d+(\.\d+)*)/i) : r.webos ? k = n(/(?:web|hpw)os\/(\d+(\.\d+)*)/i) : r.blackberry ? k = n(/rim\stablet\sos\s(\d+(\.\d+)*)/i) : r.bada ? k = n(/bada\/(\d+(\.\d+)*)/i) : r.tizen && (k = n(/tizen[\/\s](\d+(\.\d+)*)/i)), k && (r.osversion = k);
-					var S = !r.windows && k.split(".")[0];
-					return w || a || "ipad" == o || s && (3 == S || S >= 4 && !y) || r.silk ? r.tablet = e : (y || "iphone" == o || "ipod" == o || s || d || r.blackberry || r.webos || r.bada) && (r.mobile = e), r.msedge || r.msie && r.version >= 10 || r.yandexbrowser && r.version >= 15 || r.vivaldi && r.version >= 1 || r.chrome && r.version >= 20 || r.samsungBrowser && r.version >= 4 || r.firefox && r.version >= 20 || r.safari && r.version >= 6 || r.opera && r.version >= 10 || r.ios && r.osversion && r.osversion.split(".")[0] >= 6 || r.blackberry && r.version >= 10.1 || r.chromium && r.version >= 20 ? r.a = e : r.msie && r.version < 10 || r.chrome && r.version < 20 || r.firefox && r.version < 20 || r.safari && r.version < 6 || r.opera && r.version < 10 || r.ios && r.osversion && r.osversion.split(".")[0] < 6 || r.chromium && r.version < 20 ? r.c = e : r.x = e, r
+					var O = !r.windows && k.split(".")[0];
+					return w || a || "ipad" == o || s && (3 == O || O >= 4 && !y) || r.silk ? r.tablet = e : (y || "iphone" == o || "ipod" == o || s || d || r.blackberry || r.webos || r.bada) && (r.mobile = e), r.msedge || r.msie && r.version >= 10 || r.yandexbrowser && r.version >= 15 || r.vivaldi && r.version >= 1 || r.chrome && r.version >= 20 || r.samsungBrowser && r.version >= 4 || r.firefox && r.version >= 20 || r.safari && r.version >= 6 || r.opera && r.version >= 10 || r.ios && r.osversion && r.osversion.split(".")[0] >= 6 || r.blackberry && r.version >= 10.1 || r.chromium && r.version >= 20 ? r.a = e : r.msie && r.version < 10 || r.chrome && r.version < 20 || r.firefox && r.version < 20 || r.safari && r.version < 6 || r.opera && r.version < 10 || r.ios && r.osversion && r.osversion.split(".")[0] < 6 || r.chromium && r.version < 20 ? r.c = e : r.x = e, r
 				}
 				var n = t("undefined" != typeof navigator && navigator.userAgent || "");
 
@@ -620,8 +620,8 @@
 			const y = Object(r.a)(h.i),
 				_ = Object(r.a)(h.h),
 				k = Object(r.a)(h.G),
-				S = (Object(r.a)(h.j), Object(r.a)(h.F), Object(r.a)(h.g)),
-				O = Object(r.a)(h.f),
+				O = (Object(r.a)(h.j), Object(r.a)(h.F), Object(r.a)(h.g)),
+				S = Object(r.a)(h.f),
 				j = e => {
 					let {
 						subredditId: t,
@@ -782,7 +782,7 @@
 						} = r;
 						var s, d;
 						const a = await m(o(), t);
-						if (a.ok && a.body && (null === (d = null === (s = a.body) || void 0 === s ? void 0 : s.data.deleteSubredditMuteSettings) || void 0 === d ? void 0 : d.ok)) e(S(t)), e(x(n));
+						if (a.ok && a.body && (null === (d = null === (s = a.body) || void 0 === s ? void 0 : s.data.deleteSubredditMuteSettings) || void 0 === d ? void 0 : d.ok)) e(O(t)), e(x(n));
 						else {
 							e(p(`error-unmuting-${t}`))
 						}
@@ -827,7 +827,7 @@
 						}
 						const x = f.id,
 							y = await u(s(), x);
-						if (y.ok && y.body && (null === (a = null === (d = y.body) || void 0 === d ? void 0 : d.data.updateSubredditMuteSettings) || void 0 === a ? void 0 : a.ok)) e(O([f])), e(g(f.name));
+						if (y.ok && y.body && (null === (a = null === (d = y.body) || void 0 === d ? void 0 : d.data.updateSubredditMuteSettings) || void 0 === a ? void 0 : a.ok)) e(S([f])), e(g(f.name));
 						else {
 							e(p(`error-muting-${x}`))
 						}
@@ -1065,22 +1065,22 @@
 			var y = n("./src/reddit/components/Media/index.tsx"),
 				_ = n("./src/reddit/components/RichTextJson/index.tsx"),
 				k = n("./src/reddit/components/Governance/ReleaseNotesModal/Slide/index.m.less"),
-				S = n.n(k);
-			const O = {};
+				O = n.n(k);
+			const S = {};
 
 			function j(e) {
 				return o.a.createElement("div", {
 					className: e.className
 				}, o.a.createElement("div", {
-					className: S.a.title
+					className: O.a.title
 				}, e.releaseNote.title), e.releaseNote.media && "rtjson" === e.releaseNote.media.type ? o.a.createElement("div", {
-					className: S.a.text
+					className: O.a.text
 				}, o.a.createElement(_.b, {
 					content: e.releaseNote.media.richtextContent,
 					mediaMetadata: e.releaseNote.media.mediaMetadata,
-					rtJsonElementProps: O
+					rtJsonElementProps: S
 				})) : o.a.createElement("div", {
-					className: S.a.media
+					className: O.a.media
 				}, o.a.createElement(y.a, {
 					isListing: !0,
 					isNotCardView: !1,
@@ -1385,7 +1385,7 @@
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: i.F
-				}) === i.Sd
+				}) === i.Rd
 			}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
@@ -1454,4 +1454,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.48a5269b294d800042a7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.10fd047b32d64857a624.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.a54ec72524f3fd031e8e.js
-// Retrieved at 12/13/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.b266b34e2af3fae511e4.js
+// Retrieved at 12/13/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ConvertToCoinsModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, n) {
@@ -300,14 +300,14 @@
 									N = O(l),
 									_ = O(u),
 									I = O(C),
-									S = O(h),
-									A = O(E);
+									A = O(h),
+									S = O(E);
 								t.useLayoutEffect((function() {
 									if (null == M.current && w && null != P.current) {
 										var t = w.create(e, o);
 										M.current = t, t.mount(P.current), t.on("ready", (function() {
 											return k(t)
-										})), t.on("change", S), t.on("blur", N), t.on("focus", _), t.on("escape", A), t.on("click", I)
+										})), t.on("change", A), t.on("blur", N), t.on("focus", _), t.on("escape", S), t.on("click", I)
 									}
 								}));
 								var T = p(o);
@@ -345,15 +345,15 @@
 					N = x("cardCvc", C),
 					_ = x("fpxBank", C),
 					I = x("iban", C),
-					S = x("idealBank", C),
-					A = x("p24Bank", C),
+					A = x("idealBank", C),
+					S = x("p24Bank", C),
 					T = x("epsBank", C),
 					z = x("payment", C),
 					L = x("paymentRequestButton", C),
 					D = x("linkAuthentication", C),
 					B = x("shippingAddress", C),
 					G = x("afterpayClearpayMessage", C);
-				e.AfterpayClearpayMessageElement = G, e.AuBankAccountElement = w, e.CardCvcElement = N, e.CardElement = M, e.CardExpiryElement = k, e.CardNumberElement = P, e.Elements = y, e.ElementsConsumer = E, e.EpsBankElement = T, e.FpxBankElement = _, e.IbanElement = I, e.IdealBankElement = S, e.LinkAuthenticationElement = D, e.P24BankElement = A, e.PaymentElement = z, e.PaymentRequestButtonElement = L, e.ShippingAddressElement = B, e.useElements = function() {
+				e.AfterpayClearpayMessageElement = G, e.AuBankAccountElement = w, e.CardCvcElement = N, e.CardElement = M, e.CardExpiryElement = k, e.CardNumberElement = P, e.Elements = y, e.ElementsConsumer = E, e.EpsBankElement = T, e.FpxBankElement = _, e.IbanElement = I, e.IdealBankElement = A, e.LinkAuthenticationElement = D, e.P24BankElement = S, e.PaymentElement = z, e.PaymentRequestButtonElement = L, e.ShippingAddressElement = B, e.useElements = function() {
 					return g("calls useElements()").elements
 				}, e.useStripe = function() {
 					return g("calls useStripe()").stripe
@@ -427,9 +427,9 @@
 			})), n.d(t, "b", (function() {
 				return _
 			})), n.d(t, "e", (function() {
-				return S
-			})), n.d(t, "h", (function() {
 				return A
+			})), n.d(t, "h", (function() {
+				return S
 			}));
 			var r, a = n("./node_modules/fbt/lib/FbtPublic.js"),
 				c = n("./node_modules/lodash/omit.js"),
@@ -662,7 +662,7 @@
 					} catch (c) {
 						u.c.captureException(c)
 					}
-				}, I = (Object(d.a)(p.M), Object(d.a)(p.N), Object(d.a)(p.O), Object(d.a)(p.P)), S = e => {
+				}, I = (Object(d.a)(p.M), Object(d.a)(p.N), Object(d.a)(p.O), Object(d.a)(p.P)), A = e => {
 					let {
 						user: t
 					} = e;
@@ -671,16 +671,16 @@
 							user: t
 						}))
 					}
-				}, A = Object(d.a)(p.T)
+				}, S = Object(d.a)(p.T)
 		},
 		"./src/reddit/actions/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "d", (function() {
 				return N
 			})), n.d(t, "c", (function() {
-				return S
-			})), n.d(t, "b", (function() {
 				return A
+			})), n.d(t, "b", (function() {
+				return S
 			})), n.d(t, "a", (function() {
 				return T
 			}));
@@ -779,7 +779,7 @@
 						});
 						c.c.captureMessage(t), e(O(t)), e(k(t))
 					}
-				}, S = () => async (e, t, n) => {
+				}, A = () => async (e, t, n) => {
 					let {
 						gqlContext: a
 					} = n;
@@ -802,7 +802,7 @@
 						});
 						e(x(t)), e(k(t))
 					}
-				}, A = e => async (t, n, a) => {
+				}, S = e => async (t, n, a) => {
 					let {
 						gqlContext: c
 					} = a;
@@ -829,14 +829,14 @@
 						return t(M(e)), t(k(e)), !1
 					}
 				}, T = e => async t => {
-					const n = await t(A(e));
+					const n = await t(S(e));
 					return n ? (t(Object(s.f)({
 						duration: s.a,
 						kind: i.b.SuccessCommunity,
 						text: r.fbt._("Changes saved", null, {
 							hk: "2GeuMT"
 						})
-					})), t(S())) : t(Object(s.f)({
+					})), t(A())) : t(Object(s.f)({
 						duration: s.a,
 						kind: i.b.Error,
 						text: r.fbt._("Something went wrong!", null, {
@@ -1527,8 +1527,8 @@
 				N = n("./src/reddit/actions/util/pollActionForSuccess.ts"),
 				_ = n("./src/reddit/endpoints/governance/crypto.ts"),
 				I = n("./src/reddit/helpers/crypto/transactions.ts"),
-				S = n("./src/reddit/helpers/crypto/vaultTransactions.ts"),
-				A = n("./src/reddit/helpers/trackers/crypto.ts"),
+				A = n("./src/reddit/helpers/crypto/vaultTransactions.ts"),
+				S = n("./src/reddit/helpers/trackers/crypto.ts"),
 				T = n("./src/reddit/hooks/useTracking.ts"),
 				z = n("./src/reddit/models/Toast/index.ts"),
 				L = n("./src/reddit/selectors/gold/econPurchase.ts"),
@@ -1680,7 +1680,7 @@
 				}, [h]);
 				const W = s.displayConversion,
 					q = e => {
-						g(Object(A.c)("coins", u, new O.a(E).dividedBy(W).toFixed(), e))
+						g(Object(S.c)("coins", u, new O.a(E).dividedBy(W).toFixed(), e))
 					},
 					Q = () => y(Object(P.f)());
 				return a.a.createElement(G.a, {
@@ -1707,7 +1707,7 @@
 							}), z.b.SuccessCommunity);
 							return e.duration = 15e3, Object(k.f)(e)
 						}()), async function(e, t, n, r, a) {
-							await Object(S.a)(t, n);
+							await Object(A.a)(t, n);
 							const c = Object(C.a)(r.id, r.name, {
 								force: !0
 							});
@@ -1720,7 +1720,7 @@
 								subredditId: r.id
 							}))
 						}(y, s, e.hash, c, v).then(() => {
-							g(Object(A.d)("coins", u, new O.a(E).dividedBy(W).toFixed())), y(function() {
+							g(Object(S.d)("coins", u, new O.a(E).dividedBy(W).toFixed())), y(function() {
 								const e = Object(k.e)(d.fbt._("Your Coins are ready!", null, {
 									hk: "7ewJ6"
 								}), z.b.SuccessCommunityGreen);
@@ -2578,14 +2578,14 @@
 			const c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: r.De
-					}) === r.Sd
+						experimentName: r.Ce
+					}) === r.Rd
 				},
 				s = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: r.Be
-					}) === r.Sd
+						experimentName: r.Ae
+					}) === r.Rd
 				}
 		},
 		"./src/reddit/selectors/gold/econPurchase.ts": function(e, t, n) {
@@ -2771,4 +2771,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.a54ec72524f3fd031e8e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.b266b34e2af3fae511e4.js.map

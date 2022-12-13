@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeedAnnouncementClassic.ec55c092a9a1b48e9b46.js
-// Retrieved at 11/29/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeedAnnouncementClassic.3d6bd42330964e5b989c.js
+// Retrieved at 12/13/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeedAnnouncementClassic"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, a) {
@@ -17,8 +17,8 @@
 				s = a.n(n),
 				c = a("./src/lib/classNames/index.ts"),
 				o = a("./src/lib/lessComponent.tsx"),
-				i = a("./src/chat/controls/Svg/index.m.less"),
-				l = a.n(i);
+				r = a("./src/chat/controls/Svg/index.m.less"),
+				i = a.n(r);
 			t.a = o.a.wrapped(e => {
 				const t = {
 						height: e.height || void 0,
@@ -31,15 +31,15 @@
 					} = e;
 				return s.a.createElement("svg", {
 					className: Object(c.a)(e.className, {
-						[l.a.disable]: a,
-						[l.a.active]: n,
-						[l.a.hover]: !!o
+						[i.a.disable]: a,
+						[i.a.active]: n,
+						[i.a.hover]: !!o
 					}),
 					viewBox: e.viewBox,
 					style: t,
 					onClick: e.onClick
 				}, e.children)
-			}, "Component", l.a)
+			}, "Component", i.a)
 		},
 		"./src/chat/icons/svgs/CaretRight/index.tsx": function(e, t, a) {
 			"use strict";
@@ -95,11 +95,11 @@
 				s = a("./node_modules/fbt/lib/FbtPublic.js"),
 				c = a("./src/lib/classNames/index.ts"),
 				o = a("./node_modules/react/index.js"),
-				i = a.n(o),
-				l = a("./src/reddit/components/VerticalVotes/DisabledVerticalVotes.tsx"),
-				r = a("./src/reddit/components/CompactPost/HorizontalVotes/index.m.less"),
-				d = a.n(r);
-			var m = () => i.a.createElement(l.a, {
+				r = a.n(o),
+				i = a("./src/reddit/components/VerticalVotes/DisabledVerticalVotes.tsx"),
+				l = a("./src/reddit/components/CompactPost/HorizontalVotes/index.m.less"),
+				d = a.n(l);
+			var m = () => r.a.createElement(i.a, {
 					className: d.a.horizontalVotes,
 					scoreClassName: d.a.customScoreStyles
 				}),
@@ -110,27 +110,27 @@
 				_ = a("./src/reddit/icons/fonts/index.tsx"),
 				x = a("./src/reddit/components/FeedAnnouncement/utils.ts"),
 				C = a("./src/reddit/components/FeedAnnouncement/FeedAnnouncementClassic/index.m.less"),
-				A = a.n(C);
+				g = a.n(C);
 			const v = e => {
 				let {
 					imgUrl: t,
 					isCompact: a
 				} = e;
-				return a ? i.a.createElement("div", {
-					className: Object(c.a)(A.a.compactThumbnail)
-				}, null == t ? i.a.createElement(_.a, {
+				return a ? r.a.createElement("div", {
+					className: Object(c.a)(g.a.compactThumbnail)
+				}, null == t ? r.a.createElement(_.a, {
 					name: "text_post"
-				}) : i.a.createElement(_.a, {
+				}) : r.a.createElement(_.a, {
 					name: "image_post"
-				})) : null == t ? i.a.createElement("div", {
-					className: Object(c.a)(A.a.classicThumbnail)
-				}, i.a.createElement("div", {
-					className: Object(c.a)(A.a.imgPlaceholder)
-				}, i.a.createElement(_.a, {
+				})) : null == t ? r.a.createElement("div", {
+					className: Object(c.a)(g.a.classicThumbnail)
+				}, r.a.createElement("div", {
+					className: Object(c.a)(g.a.imgPlaceholder)
+				}, r.a.createElement(_.a, {
 					name: "text_post"
-				}))) : i.a.createElement("div", {
-					className: Object(c.a)(A.a.classicThumbnail)
-				}, i.a.createElement("img", {
+				}))) : r.a.createElement("div", {
+					className: Object(c.a)(g.a.classicThumbnail)
+				}, r.a.createElement("img", {
 					src: t
 				}))
 			};
@@ -139,75 +139,75 @@
 					announcement: t,
 					layout: a,
 					onClose: o,
-					onClick: r
+					onClick: l
 				} = e, {
 					body: d,
 					title: _,
 					cta: C
-				} = t, E = Object(h.a)(), f = Object(x.a)(t), g = a === b.g.Compact;
-				return i.a.createElement("div", {
+				} = t, A = Object(h.a)(), f = Object(x.a)(t), E = a === b.g.Compact;
+				return r.a.createElement("div", {
 					className: Object(c.a)({
-						[A.a.container]: !0,
-						[A.a.isCompact]: g
+						[g.a.container]: !0,
+						[g.a.isCompact]: E
 					}),
 					role: "button",
 					tabIndex: 0,
 					"aria-label": _,
-					onClick: r
-				}, i.a.createElement("div", {
+					onClick: l
+				}, r.a.createElement("div", {
 					className: Object(c.a)({
-						[A.a.leftRail]: !0,
-						[A.a.isCompact]: g
+						[g.a.leftRail]: !0,
+						[g.a.isCompact]: E
 					})
-				}, i.a.createElement("div", {
-					className: Object(c.a)(A.a.horizontalVotes)
-				}, i.a.createElement(m, null)), i.a.createElement("div", {
-					className: Object(c.a)(A.a.verticalVotes)
-				}, i.a.createElement(l.a, null))), i.a.createElement("div", {
-					className: Object(c.a)(A.a.innerContainer),
+				}, r.a.createElement("div", {
+					className: Object(c.a)(g.a.horizontalVotes)
+				}, r.a.createElement(m, null)), r.a.createElement("div", {
+					className: Object(c.a)(g.a.verticalVotes)
+				}, r.a.createElement(i.a, null))), r.a.createElement("div", {
+					className: Object(c.a)(g.a.innerContainer),
 					style: Object(p.c)(void 0, {
-						theme: E
+						theme: A
 					})
-				}, i.a.createElement(v, {
+				}, r.a.createElement(v, {
 					imgUrl: f,
-					isCompact: g
-				}), i.a.createElement("div", {
-					className: Object(c.a)(A.a.contentContainer)
-				}, i.a.createElement("div", {
-					className: Object(c.a)(A.a.headerContainer)
-				}, i.a.createElement("h3", {
+					isCompact: E
+				}), r.a.createElement("div", {
+					className: Object(c.a)(g.a.contentContainer)
+				}, r.a.createElement("div", {
+					className: Object(c.a)(g.a.headerContainer)
+				}, r.a.createElement("h3", {
 					className: Object(c.a)({
-						[A.a.title]: !0,
-						[A.a.ellipsis]: !0,
-						[A.a.isCompact]: g
+						[g.a.title]: !0,
+						[g.a.ellipsis]: !0,
+						[g.a.isCompact]: E
 					})
-				}, _), i.a.createElement("button", {
-					className: A.a.headerCloseButton,
+				}, _), r.a.createElement("button", {
+					className: g.a.headerCloseButton,
 					onClick: e => {
 						e.stopPropagation(), o()
 					},
 					title: s.fbt._("Close", null, {
 						hk: "4CfMwa"
 					})
-				}, i.a.createElement(u.b, null))), i.a.createElement("p", {
+				}, r.a.createElement(u.b, null))), r.a.createElement("p", {
 					className: Object(c.a)({
-						[A.a.body]: !0,
-						[A.a.ellipsis]: !0,
-						[A.a.isCompact]: g
+						[g.a.body]: !0,
+						[g.a.ellipsis]: !0,
+						[g.a.isCompact]: E
 					})
-				}, d), i.a.createElement("div", {
-					className: Object(c.a)(A.a.fromReddit)
+				}, d), r.a.createElement("div", {
+					className: Object(c.a)(g.a.fromReddit)
 				}, s.fbt._("From Reddit", null, {
 					hk: "1Sazf8"
-				})), C ? i.a.createElement("div", {
-					className: Object(c.a)(A.a.ctaContainer)
-				}, i.a.createElement("a", {
-					onClick: r,
-					className: Object(c.a)(A.a.ctaText),
+				})), C ? r.a.createElement("div", {
+					className: Object(c.a)(g.a.ctaContainer)
+				}, r.a.createElement("a", {
+					onClick: l,
+					className: Object(c.a)(g.a.ctaText),
 					tabIndex: 0,
 					"aria-label": C
-				}, C, i.a.createElement(n.a, {
-					className: Object(c.a)(A.a.ctaCaret),
+				}, C, r.a.createElement(n.a, {
+					className: Object(c.a)(g.a.ctaCaret),
 					height: "20px"
 				}))) : null)))
 			}
@@ -215,14 +215,14 @@
 		"./src/reddit/components/FeedAnnouncement/utils.ts": function(e, t, a) {
 			"use strict";
 			a.d(t, "a", (function() {
-				return l
+				return i
 			}));
 			a("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = a("./src/config.ts"),
 				s = a("./src/lib/sentry/index.ts"),
 				c = a("./node_modules/react/index.js");
 			const o = new Map,
-				i = async e => {
+				r = async e => {
 					if (o.has(e)) return await o.get(e);
 					const t = (async e => {
 						return (await fetch(e, {
@@ -230,7 +230,7 @@
 						})).ok
 					})(e);
 					return o.set(e, t), await t
-				}, l = e => {
+				}, i = e => {
 					const {
 						id: t
 					} = e, a = (e => {
@@ -252,13 +252,13 @@
 									e.setExtra("announcementId", t), s.c.captureException(`MediaAsset type [${n.__typename}] in images field is not supported.`)
 								}), null
 						}
-					})(e), [o, l] = Object(c.useState)(a || "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII");
+					})(e), [o, i] = Object(c.useState)(a || "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII");
 					return Object(c.useEffect)(() => {
 						if (a) return;
 						const e = (e => e.match(/^images_in_comments/) ? `${n.a.assetPath}/img/announcements/images_in_comments_announcement.jpg` : `${n.a.assetPath}/img/announcements/${e}.png`)(t);
 						let s = !1;
-						return i(e).then(t => {
-							!1 === s && l(t ? e : null)
+						return r(e).then(t => {
+							!1 === s && i(t ? e : null)
 						}), () => {
 							s = !0
 						}
@@ -271,9 +271,9 @@
 				s = a("./node_modules/react/index.js"),
 				c = a.n(s),
 				o = a("./src/lib/classNames/index.ts"),
-				i = a("./src/reddit/components/VerticalVotes/votes.tsx"),
-				l = a("./src/reddit/controls/Score/index.tsx"),
-				r = a("./src/reddit/models/Vote/index.ts"),
+				r = a("./src/reddit/components/VerticalVotes/votes.tsx"),
+				i = a("./src/reddit/controls/Score/index.tsx"),
+				l = a("./src/reddit/models/Vote/index.ts"),
 				d = a("./src/reddit/components/VerticalVotes/index.m.less"),
 				m = a.n(d);
 			class u extends c.a.PureComponent {
@@ -291,14 +291,14 @@
 						}),
 						"aria-pressed": !1,
 						disabled: !0
-					}, c.a.createElement(i.d, {
+					}, c.a.createElement(r.d, {
 						compact: !1,
-						voteState: r.a.notVoted,
+						voteState: l.a.notVoted,
 						interactive: !1
-					})), c.a.createElement(l.a, {
+					})), c.a.createElement(i.a, {
 						className: Object(o.a)(m.a.disabledScore, t),
 						score: 0,
-						voteState: r.a.notVoted,
+						voteState: l.a.notVoted,
 						isScoreHidden: !0
 					}), c.a.createElement("button", {
 						className: m.a.disabledVoteIcon,
@@ -307,15 +307,65 @@
 						}),
 						"aria-pressed": !1,
 						disabled: !0
-					}, c.a.createElement(i.c, {
+					}, c.a.createElement(r.c, {
 						compact: !1,
-						voteState: r.a.notVoted,
+						voteState: l.a.notVoted,
 						interactive: !1
 					})))
 				}
 			}
 			t.a = u
+		},
+		"./src/reddit/helpers/styles/mixins/index.tsx": function(e, t, a) {
+			"use strict";
+			a.d(t, "e", (function() {
+				return u
+			})), a.d(t, "c", (function() {
+				return b
+			})), a.d(t, "b", (function() {
+				return h
+			})), a.d(t, "a", (function() {
+				return _
+			})), a.d(t, "d", (function() {
+				return x
+			}));
+			var n = a("./node_modules/polished/dist/polished.es.js"),
+				s = a("./src/reddit/helpers/styles/postBackgroundColor.ts"),
+				c = a("./src/reddit/helpers/styles/smartTextColor.ts"),
+				o = a("./src/reddit/models/NewStructuredStyles/index.ts"),
+				r = a("./src/reddit/models/Theme/index.ts"),
+				i = a("./src/reddit/models/Theme/NewColorSystem/index.ts"),
+				l = a("./src/reddit/helpers/styles/mixins/index.m.less"),
+				d = a.n(l);
+			const m = {},
+				u = e => Object(r.g)(Object(i.a)(e).post, Object(i.a)(e).backgroundImage, Object(i.a)(e).backgroundImagePosition),
+				b = (e, t) => {
+					if (e) {
+						if (e.postBackgroundImage) return {
+							background: Object(r.g)(e.postBackgroundColor || Object(i.a)(t).post, e.postBackgroundImage, Object(i.a)(t).backgroundImagePosition)
+						};
+						if (e.postBackgroundColor) return {
+							background: Object(r.g)(e.postBackgroundColor, null, null)
+						}
+					}
+					return {
+						background: u(t)
+					}
+				},
+				p = e => Object(n.k)(.2, e),
+				h = e => e && e.postBackgroundColor ? {
+					backgroundColor: p(e.postBackgroundColor)
+				} : m,
+				_ = e => e.isActive ? d.a.mIsActive : void 0,
+				x = e => {
+					const t = Object(c.a)(Object(s.a)(e), o.a.actionIcon, o.b.actionIcon);
+					return {
+						color: t,
+						cursor: "pointer",
+						fill: t
+					}
+				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeedAnnouncementClassic.ec55c092a9a1b48e9b46.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeedAnnouncementClassic.3d6bd42330964e5b989c.js.map

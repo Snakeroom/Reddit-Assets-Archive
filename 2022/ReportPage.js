@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportPage.8fa8c94a150fe14ae675.js
-// Retrieved at 12/13/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportPage.20e346dc35ad9e169cf0.js
+// Retrieved at 12/13/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportPage"], {
 		"./src/lib/formatPythonString/index.ts": function(e, t, n) {
@@ -128,7 +128,7 @@
 					const {
 						props: e
 					} = this;
-					return a.a.createElement(c, null, e.subredditOrProfile && !e.isLiveStreaming ? d._("Read the {=Reddit Content Policy}{=and [communityName] 's rules}", [d._param("=Reddit Content Policy", a.a.createElement(u, {
+					return a.a.createElement(c, null, e.subredditOrProfile ? d._("Read the {=Reddit Content Policy}{=and [communityName] 's rules}", [d._param("=Reddit Content Policy", a.a.createElement(u, {
 						target: "_blank",
 						href: `${r.a.redditUrl}/help/contentpolicy`
 					}, d._("Reddit Content Policy", null, {
@@ -1100,8 +1100,8 @@
 			}
 			var T = n("./src/reddit/components/AccordionSection/index.tsx"),
 				U = n("./src/reddit/components/ContentPolicy/index.tsx"),
-				L = n("./src/lib/classNames/index.ts"),
-				j = n("./src/reddit/components/StructuredStyles/RadioInput/RadioOptionElement/index.tsx"),
+				j = n("./src/lib/classNames/index.ts"),
+				L = n("./src/reddit/components/StructuredStyles/RadioInput/RadioOptionElement/index.tsx"),
 				D = n("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
 				M = n("./src/reddit/components/ReportPage/AdditionalInfoInput/index.m.less"),
 				A = n.n(M);
@@ -1158,7 +1158,7 @@
 				e[e.GreyFields = 1] = "GreyFields", e[e.WhiteFields = 2] = "WhiteFields"
 			}(J || (J = {}));
 			const $ = e => s.a.createElement("div", {
-					className: Object(L.a)(e.isRequired && z.a.required, e.className, {
+					className: Object(j.a)(e.isRequired && z.a.required, e.className, {
 						[z.a.container]: !e.isTextarea,
 						[z.a.textareaContainer]: !!e.isTextarea,
 						...!!e.isTextarea && {
@@ -1168,14 +1168,14 @@
 						}
 					})
 				}, s.a.createElement("label", {
-					className: Object(L.a)({
+					className: Object(j.a)({
 						[z.a.field]: !e.isTextarea,
 						[z.a.textareaField]: !!e.isTextarea
 					})
 				}, e.children, e.label && s.a.createElement("span", {
 					className: z.a.label
 				}, e.label), !!e.state && s.a.createElement(Z, {
-					className: Object(L.a)({
+					className: Object(j.a)({
 						[z.a.mValid]: e.state === Y.Valid,
 						[z.a.mInvalid]: e.state === Y.Invalid
 					})
@@ -1198,7 +1198,7 @@
 						label: o,
 						state: l
 					}, s.a.createElement("input", X({}, d, {
-						className: Object(L.a)(z.a.input, z.a.control, {
+						className: Object(j.a)(z.a.input, z.a.control, {
 							[z.a.hasState]: !!e.state,
 							[z.a.mWhiteField]: e.backgroundColorState === J.WhiteFields
 						}),
@@ -1466,7 +1466,7 @@
 					const l = i ? _e.a.open : _e.a.closed,
 						d = o ? _e.a.topLevelSubSection : _e.a.subSection;
 					return s.a.createElement("div", {
-						className: Object(L.a)(l, d, e.className)
+						className: Object(j.a)(l, d, e.className)
 					}, e.depthOfParentRule > 0 ? s.a.createElement("div", {
 						className: _e.a.radioOptionsSectionHeader
 					}, e.parentRule.nextStepHeader || Re._("Select a rule", null, {
@@ -1475,7 +1475,7 @@
 						const r = a === n;
 						return s.a.createElement(s.a.Fragment, {
 							key: t.reasonText || t.reasonTextToShow
-						}, s.a.createElement(j.a, {
+						}, s.a.createElement(L.a, {
 							altColor: !0,
 							value: t.reasonText ? t.reasonText : "",
 							label: t.reasonTextToShow,
@@ -1573,10 +1573,10 @@
 			const Ie = c.a.header("Header", m.a),
 				Te = c.a.wrapped(ke.a, "Footer", Ne.a),
 				Ue = c.a.wrapped(Pe.l, "SubmitButton", Ne.a),
-				Le = Object(o.c)({
+				je = Object(o.c)({
 					initialReason: e => e.reportPage.initialReason
 				});
-			class je extends s.a.Component {
+			class Le extends s.a.Component {
 				constructor(e) {
 					super(e), this.onSubmit = () => {
 						this.setState({
@@ -1662,7 +1662,7 @@
 					}))
 				}
 			}
-			var De = Object(a.b)(Le)(je),
+			var De = Object(a.b)(je)(Le),
 				Me = n("./src/reddit/contexts/ApiContext.tsx"),
 				Ae = n("./src/reddit/endpoints/accounts/index.ts"),
 				Ve = n("./src/reddit/endpoints/post/report.ts"),
@@ -1902,4 +1902,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportPage.8fa8c94a150fe14ae675.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportPage.20e346dc35ad9e169cf0.js.map

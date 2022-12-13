@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Trending.bfeffbca9933b0035e5c.js
-// Retrieved at 12/13/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Trending.2abd035e1bdb3a9aa49f.js
+// Retrieved at 12/13/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Trending"], {
 		"./src/reddit/actions/search/trending.ts": function(e, t, r) {
@@ -41,7 +41,7 @@
 							return Object(_.c)(e, {
 								experimentEligibilitySelector: _.a,
 								experimentName: x.Oc
-							}) === x.Sd
+							}) === x.Rd
 						}(O) && e === u.d.dropdown) {
 						const r = (e => {
 							var t, r;
@@ -506,10 +506,10 @@
 						}))
 					},
 					handleVote: t => {
-						const s = t === o.a.upvoted ? Object(i.jb)(r) : Object(i.v)(r);
+						const s = t === o.a.upvoted ? Object(i.ib)(r) : Object(i.v)(r);
 						e(s)
 					},
-					onIgnoreReports: () => e(Object(i.fb)(r)),
+					onIgnoreReports: () => e(Object(i.eb)(r)),
 					onOpenReportsDropdown: t => e(Object(a.h)({
 						tooltipId: t
 					}))
@@ -535,8 +535,8 @@
 			t.a = h
 		},
 		"./src/redditGQL/operations/TrendingSearches.json": function(e) {
-			e.exports = JSON.parse('{"id":"54b90c7636ea"}')
+			e.exports = JSON.parse('{"id":"1db34ea43211"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Trending.bfeffbca9933b0035e5c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Trending.2abd035e1bdb3a9aa49f.js.map

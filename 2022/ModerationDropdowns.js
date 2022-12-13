@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.f18e3a8f9c834325a473.js
-// Retrieved at 12/12/2022, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.184fb4c12b2ba9a3e2c4.js
+// Retrieved at 12/13/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, n) {
@@ -798,13 +798,13 @@
 						onCcPost: () => {
 							e(Object(d.i)(f.a.CROWD_CONTROL)), e(Object(l.t)(n.id))
 						},
-						onRemovePost: () => e(Object(l.T)(n.id, !1)),
+						onRemovePost: () => e(Object(l.S)(n.id, !1)),
 						onModToMemberShareOpened: () => {
 							e(Object(d.i)(f.a.MOD_TO_MEMBER_SHARE)), e(Object(l.E)(n.id))
 						},
-						onSpamPost: () => e(Object(l.T)(n.id, !0)),
-						onSpoilerPost: () => e(Object(l.db)(n.id)),
-						onStickyPost: () => e(Object(l.hb)(n.id))
+						onSpamPost: () => e(Object(l.S)(n.id, !0)),
+						onSpoilerPost: () => e(Object(l.cb)(n.id)),
+						onStickyPost: () => e(Object(l.gb)(n.id))
 					}
 				}),
 				U = Object(p.a)(h.a);
@@ -1242,4 +1242,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.f18e3a8f9c834325a473.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.184fb4c12b2ba9a3e2c4.js.map

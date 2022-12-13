@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.03e45794a51ab710cb2d.js
-// Retrieved at 12/13/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.6dbbfc0a5540807ad5ac.js
+// Retrieved at 12/13/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -14056,12 +14056,30 @@
 				h = n("./src/chat/icons/Nsfw/index.tsx"),
 				m = ["FF4500", "0DD3BB", "24A0ED", "FFB000", "FF8717", "46D160", "25B79F", "0079D3", "4856A3", "C18D42", "A06A42", "46A508", "008985", "7193FF", "7E53C1", "FFD635", "DDBD37", "D4E815", "94E044", "FF66AC", "DB0064", "FF585B", "EA0027", "A5A4A4", "545452"],
 				b = n("./src/chat/selectors/experiments.ts"),
-				p = n("./src/reddit/components/Econ/DefaultAvatar/index.tsx"),
-				f = n("./src/chat/icons/Userpic/index.m.less"),
-				g = n.n(f);
-			const O = d.a.i("FallbackAvatar", g.a),
-				v = d.a.wrapped(O, "FallbackAvatarWrapper", g.a),
-				E = d.a.wrapped(e => {
+				p = n("./src/reddit/components/Econ/DefaultAvatar/index.m.less"),
+				f = n.n(p);
+			var g = e => {
+					let {
+						className: t,
+						style: n = {},
+						userId: s
+					} = e;
+					const {
+						processingAvatarImageUrl: c
+					} = a.a, o = `url(${c}/defaults/v2/avatar_default_${(e=>{let t=0;for(const n of e)t+=n.charCodeAt();return t%8})(s)}.png)`;
+					return r.a.createElement("div", {
+						className: Object(i.a)(f.a.avatar, t),
+						style: {
+							...n,
+							backgroundImage: o
+						}
+					})
+				},
+				O = n("./src/chat/icons/Userpic/index.m.less"),
+				v = n.n(O);
+			const E = d.a.i("FallbackAvatar", v.a),
+				j = d.a.wrapped(E, "FallbackAvatarWrapper", v.a),
+				_ = d.a.wrapped(e => {
 					const t = Object(o.e)(b.r),
 						{
 							className: n,
@@ -14076,15 +14094,15 @@
 						height: s,
 						width: c
 					};
-					if (t) return r.a.createElement(p.a, {
+					if (t) return r.a.createElement(g, {
 						userId: i,
 						className: n,
 						style: u
 					});
 					const h = (e => e.replace(l.Nb.Account + "_", ""))(i),
 						{
-							avatar: f,
-							color: g
+							avatar: p,
+							color: f
 						} = (e => {
 							const t = m.length,
 								n = parseInt(e, 36),
@@ -14095,17 +14113,17 @@
 								color: m[s]
 							}
 						})(h),
-						O = `${d}/avatar_default_${f}_${g}.png`;
+						O = `${d}/avatar_default_${p}_${f}.png`;
 					return u = {
 						...u,
-						backgroundColor: g,
+						backgroundColor: f,
 						backgroundImage: `url(${O})`
 					}, r.a.createElement("i", {
 						className: n,
 						style: u
 					})
-				}, "SnooIcon", g.a);
-			class j extends r.a.Component {
+				}, "SnooIcon", v.a);
+			class C extends r.a.Component {
 				constructor(e) {
 					super(e), this.state = {
 						profileImgFailed: !1
@@ -14130,7 +14148,7 @@
 						height: t,
 						width: n
 					};
-					return l ? r.a.createElement(v, {
+					return l ? r.a.createElement(j, {
 						style: d,
 						className: e,
 						title: `${c} ${s.fbt._("Snoovatar",null,{hk:"1jT1ZL"})}`
@@ -14138,20 +14156,20 @@
 						style: d,
 						onError: this.onError,
 						className: Object(i.a)(e, {
-							[g.a.isFlipped]: o
+							[v.a.isFlipped]: o
 						}),
 						src: a,
 						alt: `${c} ${s.fbt._("Snoovatar",null,{hk:"1jT1ZL"})}`
 					})
 				}
 			}
-			const _ = d.a.wrapped(j, "VoicesAvatar", g.a),
-				C = Object(u.a)({
+			const I = d.a.wrapped(C, "VoicesAvatar", v.a),
+				y = Object(u.a)({
 					contact: (e, t) => e.contacts.models[t.userId],
 					currentUser: e => e.user.account
 				}),
-				I = Object(o.b)(C);
-			t.a = I(e => {
+				x = Object(o.b)(y);
+			t.a = x(e => {
 				const {
 					className: t,
 					contact: n,
@@ -14170,7 +14188,7 @@
 				});
 				if (l) {
 					const n = e.isFlipping && (e => e.indexOf("profileIcon_snoo") > -1 || (null == e ? void 0 : e.indexOf("snoovatar/avatars")) > -1 || (null == e ? void 0 : e.indexOf("avatar_default")) > -1 || e.endsWith("snoovatar_anonymous.svg"))(l) && i;
-					return r.a.createElement(_, {
+					return r.a.createElement(I, {
 						className: t,
 						height: s,
 						width: c,
@@ -14179,7 +14197,7 @@
 						isFlipped: n
 					})
 				}
-				return r.a.createElement(E, {
+				return r.a.createElement(_, {
 					className: t,
 					height: s,
 					width: c,
@@ -19877,32 +19895,6 @@
 				defaultAvatar: "_8gjnVWVhueS_hMv9By4wh"
 			}
 		},
-		"./src/reddit/components/Econ/DefaultAvatar/index.tsx": function(e, t, n) {
-			"use strict";
-			var a = n("./src/config.ts"),
-				s = n("./node_modules/react/index.js"),
-				c = n.n(s),
-				r = n("./src/lib/classNames/index.ts"),
-				o = n("./src/reddit/components/Econ/DefaultAvatar/index.m.less"),
-				i = n.n(o);
-			t.a = e => {
-				let {
-					className: t,
-					style: n = {},
-					userId: s
-				} = e;
-				const {
-					processingAvatarImageUrl: o
-				} = a.a, l = `url(${o}/defaults/v2/avatar_default_${(e=>{let t=0;for(const n of e)t+=n.charCodeAt();return t%8})(s)}.png)`;
-				return c.a.createElement("div", {
-					className: Object(r.a)(i.a.avatar, t),
-					style: {
-						...n,
-						backgroundImage: l
-					}
-				})
-			}
-		},
 		"./src/redditGQL/operations/ChatUnitDetails.json": function(e) {
 			e.exports = JSON.parse('{"id":"0e3adbb8d3c9"}')
 		},
@@ -19947,4 +19939,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.03e45794a51ab710cb2d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.6dbbfc0a5540807ad5ac.js.map

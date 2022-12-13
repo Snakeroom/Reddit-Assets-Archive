@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Recap.b4fa37f389cb9bd31a70.js
-// Retrieved at 12/13/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Recap.2bfba53db2dabee5a09d.js
+// Retrieved at 12/13/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Recap", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, a, t) {
@@ -99,13 +99,13 @@
 			const S = e => Object(C.c)(e, {
 				experimentEligibilitySelector: N.S,
 				experimentName: k.xb
-			}) === k.Sd;
+			}) === k.Rd;
 			var y = t("./src/reddit/selectors/experiments/delayDnPermission.ts"),
 				I = t("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts");
 			const x = e => Object(C.c)(e, {
 				experimentName: k.fc,
 				experimentEligibilitySelector: C.a
-			}) === k.Sd;
+			}) === k.Rd;
 			var w = t("./src/reddit/selectors/meta.ts");
 			let R = !1;
 			const T = async (e, a) => {
@@ -2432,7 +2432,7 @@
 					Object(s.useEffect)(() => {
 						U()
 					}, [U]), Object(s.useEffect)(() => {
-						Object(g.d)(!0), P && Object(_.Nb)(null == P ? void 0 : P.id)
+						Object(g.d)(!0), P && Object(_.Ib)(null == P ? void 0 : P.id)
 					}, [A, P]), Object(s.useEffect)(() => {
 						a(Object(O.r)()), H()
 					}, [H, a]), Object(s.useEffect)(() => {
@@ -2557,4 +2557,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Recap.b4fa37f389cb9bd31a70.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Recap.2bfba53db2dabee5a09d.js.map

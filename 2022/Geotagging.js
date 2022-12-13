@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.af7981e0e15c7af1e00c.js
-// Retrieved at 12/13/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.b32a2eb1f14432f92ece.js
+// Retrieved at 12/13/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -964,12 +964,12 @@
 				I = s.n(L);
 			const {
 				fbt: G
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), F = 8, B = Array.from({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), F = 8, R = Array.from({
 				length: F
 			}).map((e, t) => r.a.createElement(P, {
 				className: I.a.Subreddit,
 				key: t
-			})), R = {
+			})), B = {
 				enabled: !0,
 				id: "xd_103",
 				layout: m.c.Large,
@@ -981,7 +981,7 @@
 			class M extends r.a.Component {
 				constructor() {
 					super(...arguments), this.onSeeMoreCommunities = () => {
-						this.props.onSeeMoreCommunities && (this.props.sendEvent(Object(u.q)(R)), this.props.onSeeMoreCommunities())
+						this.props.onSeeMoreCommunities && (this.props.sendEvent(Object(u.q)(B)), this.props.onSeeMoreCommunities())
 					}
 				}
 				render() {
@@ -1002,10 +1002,10 @@
 						className: I.a.SubredditList
 					}, n.length > 0 ? n.map(e => r.a.createElement(T, {
 						className: I.a.Subreddit,
-						discoveryUnit: R,
+						discoveryUnit: B,
 						key: e,
 						subredditId: e
-					})) : B), t.length > F && r.a.createElement(a.a, {
+					})) : R), t.length > F && r.a.createElement(a.a, {
 						to: s
 					}, r.a.createElement(l.r, {
 						className: I.a.SeeMore,
@@ -1490,10 +1490,10 @@
 				F = {
 					pageType: "crowdsource_feed_geo"
 				},
-				B = {
+				R = {
 					pageType: "geo_entry"
 				},
-				R = e => () => ({
+				B = e => () => ({
 					source: G,
 					noun: "skip",
 					action: "click",
@@ -1507,7 +1507,7 @@
 					action: "click",
 					subreddit: Object(I.a)(e),
 					userSubreddit: Object(I.g)(e.modPermissions, e.isSubscribed),
-					actionInfo: B
+					actionInfo: R
 				}),
 				D = Q("select_location"),
 				W = Q("confirm_location"),
@@ -1523,7 +1523,7 @@
 					subreddit: Object(I.a)(t),
 					userSubreddit: Object(I.g)(t.modPermissions, t.isSubscribed),
 					actionInfo: {
-						...B,
+						...R,
 						reason: s
 					}
 				})
@@ -1549,8 +1549,8 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 
 			function U(e) {
-				const t = Object(b.B)(Z) || [];
-				t.push(e), Object(b.Eb)(Z, t)
+				const t = Object(b.A)(Z) || [];
+				t.push(e), Object(b.zb)(Z, t)
 			}
 
 			function Y(e) {
@@ -1593,7 +1593,7 @@
 				}, t.prefixedName)), r.a.createElement("button", {
 					className: S.a.dismiss,
 					onClick: function() {
-						U(t.id), _(R(t)), x(), s(t.id)
+						U(t.id), _(B(t)), x(), s(t.id)
 					}
 				}, r.a.createElement(q.a, null))), r.a.createElement("p", null, t.publicDescriptionText || t.title), t.geoPlace && !m ? r.a.createElement("div", {
 					className: S.a.questionContainer
@@ -1661,7 +1661,7 @@
 									id: "ChIJIQBpAG2ahYAR_6128GcTUEo"
 								})
 							});
-							const s = Object(b.B)(Z) || [];
+							const s = Object(b.A)(Z) || [];
 							i((t.data.geoContributableSubreddits || []).filter(e => !s.includes(e.id)))
 						}).catch(e => {
 							console.error(e), t(!0)
@@ -1765,4 +1765,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.af7981e0e15c7af1e00c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.b32a2eb1f14432f92ece.js.map

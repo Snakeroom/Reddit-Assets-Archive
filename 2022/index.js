@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.e1464a3e90f2c87c0567.js
-// Retrieved at 12/13/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.79141ed6b9dbd7771b11.js
+// Retrieved at 12/13/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -443,7 +443,7 @@
 					author: l
 				} = t, {
 					recordingStatus: m
-				} = n, p = Object(a.e)(d.o);
+				} = n, p = Object(a.e)(d.n);
 				return (() => {
 					const e = [c.a.NotAvailable, c.a.Removed].includes(null != m ? m : c.a.NotAvailable);
 					return p && n.roomStatus === c.b.NotStarted ? r.a.createElement(x.a, {
@@ -877,7 +877,7 @@
 									pollId: p,
 									tournamentId: e,
 									tournamentPostId: n.id
-								})), i && x < Y.a.upvoted && (o(Object(J.jb)(v)), o(Object(J.jb)(p)), m()), O(!1), k(null), P(!0)
+								})), i && x < Y.a.upvoted && (o(Object(J.ib)(v)), o(Object(J.ib)(p)), m()), O(!1), k(null), P(!0)
 							} catch (r) {
 								O(!1), k(null), u(z._("Error: Failed to make prediction, please try again later", null, {
 									hk: "1tECsx"
@@ -1323,4 +1323,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.e1464a3e90f2c87c0567.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.79141ed6b9dbd7771b11.js.map

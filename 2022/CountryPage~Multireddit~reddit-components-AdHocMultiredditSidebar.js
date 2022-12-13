@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.79dfa8a0083762ba7dd2.js
-// Retrieved at 12/13/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.0614258dbe5aca63ee51.js
+// Retrieved at 12/13/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./node_modules/lodash/take.js": function(e, t, i) {
@@ -344,7 +344,7 @@
 							queryParams: y
 						} = c,
 						O = Object(l.a)(x, b, y),
-						g = p.N in y && y[p.N].toUpperCase() || "",
+						g = p.K in y && y[p.K].toUpperCase() || "",
 						S = o.oc[g] || !1,
 						E = Object(T.m)(s);
 					(f || E && E.displayText) && await e(Object(m.multiredditFeedRequested)(O, (f || E.displayText).toLowerCase(), h.toLowerCase(), {
@@ -748,7 +748,7 @@
 						g = h.listings.postOrder.ids[y],
 						j = h.listings.postOrder.api.error[y],
 						C = h.listings.postOrder.api.pending[y],
-						k = p.N in e.queryParams && e.queryParams[p.N].toUpperCase() || "",
+						k = p.K in e.queryParams && e.queryParams[p.K].toUpperCase() || "",
 						P = k in l.oc && l.oc[k];
 					if (C || g && !j && !t) return void(g && (i(u.m({
 						title: Object(E.f)(r(), m)
@@ -2565,11 +2565,11 @@
 			e.exports = JSON.parse('{"id":"b65f99b680f5"}')
 		},
 		"./src/redditGQL/operations/MultiredditListing.json": function(e) {
-			e.exports = JSON.parse('{"id":"f4dd68a9b029"}')
+			e.exports = JSON.parse('{"id":"4b2ecbd64fd5"}')
 		},
 		"./src/redditGQL/operations/SubredditTypeaheadSearch.json": function(e) {
 			e.exports = JSON.parse('{"id":"20edc5ee12df"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.79dfa8a0083762ba7dd2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.0614258dbe5aca63ee51.js.map

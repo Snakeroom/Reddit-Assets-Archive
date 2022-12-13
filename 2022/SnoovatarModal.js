@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SnoovatarModal.2b80e1b0c081993ab034.js
-// Retrieved at 12/13/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SnoovatarModal.5ccf5e955d23f6611d44.js
+// Retrieved at 12/13/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SnoovatarModal"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, r) {
@@ -70,7 +70,7 @@
 					activeMeSubpage: k || void 0,
 					activeDetails: A || void 0,
 					shopTabState: C || void 0
-				}), [A, h, k, C]), y = Object(o.e)(e => !Object(m.S)(e) && Object(p.w)(e));
+				}), [A, h, k, C]), y = Object(o.e)(e => !Object(m.S)(e) && Object(p.v)(e));
 				if (!j || !_) return null;
 				if (y) return a.a.createElement("div", {
 					className: Object(c.a)(b.a.container, {
@@ -227,4 +227,4 @@
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.2b80e1b0c081993ab034.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.5ccf5e955d23f6611d44.js.map

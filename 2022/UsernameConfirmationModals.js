@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.b49bcb36ce7f994d2010.js
-// Retrieved at 12/13/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.bb8ca369ca5aed6580de.js
+// Retrieved at 12/13/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UsernameConfirmationModals"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -382,7 +382,7 @@
 					},
 					logOutAndOpenLoginModal: () => {
 						const e = Object(l.a)(window.location.href, {
-							[L.D]: !0
+							[L.B]: !0
 						});
 						Object(d.a)(e, []), t.logoutUser()
 					},
@@ -978,4 +978,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.b49bcb36ce7f994d2010.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.bb8ca369ca5aed6580de.js.map

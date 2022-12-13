@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FlairEdit.88eda7e107d2be08d529.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FlairEdit.9af32876fdfdedab093f.js
+// Retrieved at 12/13/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FlairEdit"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, o) {},
@@ -78,7 +78,7 @@
 			o.d(t, "h", (function() {
 				return I
 			})), o.d(t, "c", (function() {
-				return _
+				return T
 			})), o.d(t, "b", (function() {
 				return S
 			})), o.d(t, "g", (function() {
@@ -148,17 +148,17 @@
 				O = o("./src/reddit/selectors/emojis.ts"),
 				y = o("./src/reddit/selectors/subreddit.ts");
 			const I = "STRUCTURED_STYLES__NEW_EMOJI_ADDED",
-				T = Object(m.a)(I),
-				_ = "STRUCTURED_STYLES__EMOJI_DELETE_LOADED",
+				_ = Object(m.a)(I),
+				T = "STRUCTURED_STYLES__EMOJI_DELETE_LOADED",
 				S = "STRUCTURED_STYLES__EMOJI_DELETE_FAILED",
-				C = Object(m.a)(_),
+				C = Object(m.a)(T),
 				v = Object(m.a)(S),
 				w = "GET_ALL_EMOJIS_PENDING",
 				D = "GET_ALL_EMOJIS_LOADED",
 				k = "GET_ALL_EMOJIS_FAILED",
 				P = Object(m.a)(w),
-				N = Object(m.a)(D),
-				R = Object(m.a)(k),
+				R = Object(m.a)(D),
+				N = Object(m.a)(k),
 				F = "STRUCTURED_STYLES__EMOJIS_ENABLED_SETTING_LOADED",
 				A = Object(m.a)(F),
 				M = e => ({
@@ -259,7 +259,7 @@
 								o = Object(b.o)(i, e);
 							t(Object(u.l)(o));
 							const n = Object(E.e)(a, o.url, r, c);
-							t(T(n)), t(K(r))
+							t(_(n)), t(K(r))
 						} else {
 							const o = Object(f.a)(a),
 								s = Object(b.k)(i, o);
@@ -285,11 +285,11 @@
 					const a = await p(n(), r);
 					if (a.ok) {
 						const o = a.body;
-						t(N({
+						t(R({
 							subredditId: e,
 							data: o
 						}))
-					} else t(R({
+					} else t(N({
 						subredditId: e,
 						error: a.error
 					}))
@@ -430,7 +430,7 @@
 				O = o("./src/reddit/selectors/emojis.ts"),
 				y = o("./src/reddit/controls/EmojiPicker/EmojiGrid/EmojiItem/index.m.less"),
 				I = o.n(y);
-			class T extends r.Component {
+			class _ extends r.Component {
 				constructor() {
 					super(...arguments), this.onClick = () => {
 						this.props.onClick(this.props.itemIndex)
@@ -456,8 +456,8 @@
 					})
 				}
 			}
-			var _ = o("./src/reddit/controls/EmojiPicker/EmojiGrid/index.m.less"),
-				S = o.n(_);
+			var T = o("./src/reddit/controls/EmojiPicker/EmojiGrid/index.m.less"),
+				S = o.n(T);
 
 			function C(e) {
 				const {
@@ -468,7 +468,7 @@
 					className: S.a.container
 				}, a.a.createElement("div", {
 					className: S.a.gridWrapper
-				}, t.map((t, s) => a.a.createElement(T, {
+				}, t.map((t, s) => a.a.createElement(_, {
 					emoji: t,
 					itemIndex: s,
 					isFocused: s === o,
@@ -503,9 +503,9 @@
 					hk: "2TSLl5"
 				})))
 			}
-			var N = o("./src/reddit/icons/svgs/Search/index.tsx"),
-				R = o("./src/reddit/controls/EmojiPicker/SearchBar/index.m.less"),
-				F = o.n(R);
+			var R = o("./src/reddit/icons/svgs/Search/index.tsx"),
+				N = o("./src/reddit/controls/EmojiPicker/SearchBar/index.m.less"),
+				F = o.n(N);
 
 			function A() {
 				return (A = Object.assign || function(e) {
@@ -525,7 +525,7 @@
 				} = e;
 				return a.a.createElement("div", {
 					className: Object(p.a)(F.a.searchBar, t)
-				}, a.a.createElement(N.a, {
+				}, a.a.createElement(R.a, {
 					className: F.a.searchIcon
 				}), a.a.createElement("div", {
 					className: F.a.inputWrapper
@@ -630,8 +630,8 @@
 				H = o("./src/reddit/controls/IconTooltip/index.tsx");
 			o("./node_modules/draft-js/dist/Draft.css");
 			const Y = /\r?\n|\r/g;
-			var z, V = e => e.replace(Y, ""),
-				q = o("./src/reddit/components/RichTextEditor/Tooltip/index.tsx");
+			var z, q = e => e.replace(Y, ""),
+				V = o("./src/reddit/components/RichTextEditor/Tooltip/index.tsx");
 			! function(e) {
 				e.AddImage = "add_image", e.Add = "add", e.Delete = "delete", e.Edit = "edit", e.EnableOff = "enable_off", e.EnableOn = "enable_on"
 			}(z || (z = {}));
@@ -789,7 +789,7 @@
 						e.getCharacterList().forEach((e, s) => {
 							const n = e && e.getEntity();
 							if (n) {
-								o.getEntity(n).getType() === Te.InlineImage && t(s, s + 1)
+								o.getEntity(n).getType() === _e.InlineImage && t(s, s + 1)
 							}
 						})
 					},
@@ -807,16 +807,16 @@
 					}
 				},
 				ye = o("./node_modules/immutable/dist/immutable.js");
-			var Ie, Te;
+			var Ie, _e;
 			! function(e) {
 				e.Image = "image", e.Text = "text"
 			}(Ie || (Ie = {})),
 			function(e) {
 				e.InlineImage = "InlineImage"
-			}(Te || (Te = {}));
-			const _e = () => new s.CompositeDecorator([Ee, Oe]),
+			}(_e || (_e = {}));
+			const Te = () => new s.CompositeDecorator([Ee, Oe]),
 				Se = (e, t) => {
-					return e.createEntity(Te.InlineImage, "MUTABLE", {
+					return e.createEntity(_e.InlineImage, "MUTABLE", {
 						url: t.url,
 						id: t.id
 					})
@@ -872,14 +872,14 @@
 						a = r.getBlockForKey(i),
 						c = n > 0 ? a.getEntityAt(n - 1) : null,
 						l = c && r.getEntity(c);
-					if (l && l.getType() === Te.InlineImage) {
+					if (l && l.getType() === _e.InlineImage) {
 						const n = s.Modifier.replaceText(r, o, t, e.getCurrentInlineStyle());
 						return s.EditorState.push(e, n, "insert-characters")
 					}
 				},
 				Pe = "handled",
-				Ne = "not-handled";
-			class Re extends a.a.Component {
+				Re = "not-handled";
+			class Ne extends a.a.Component {
 				constructor(e) {
 					super(e), this.setEditorRef = e => this.editorRef = e, this.containerRef = null, this.setContainerRef = e => this.containerRef = e, this.setEmojiDropdownApi = e => this.emojiDropdownApi = e, this.focus = () => this.editorRef && this.editorRef.focus(), this.handleBeforeInput = e => {
 						const {
@@ -893,7 +893,7 @@
 							if (e && e.name.toLowerCase() === t) return this.handleSelectEmoji(e), Pe
 						}
 						const n = ke(t, e);
-						return n ? (this.onChange(n), Pe) : Ne
+						return n ? (this.onChange(n), Pe) : Re
 					}, this.checkEditorStateForEmojis = e => {
 						const t = we(e);
 						this.setState({
@@ -921,8 +921,8 @@
 							maxLength: n
 						} = this.props, i = this.editorRef.getClipboard(), r = o.getSelection(), a = e.length - (r.getEndOffset() - r.getStartOffset()), c = o.getCurrentContent().getPlainText().length + a;
 						if (n && c > n) return Pe;
-						if (i && i.first().getText() === e) return Ne;
-						const l = V(e);
+						if (i && i.first().getText() === e) return Re;
+						const l = q(e);
 						let d = o.getCurrentContent();
 						d = s.Modifier.replaceText(d, r, l);
 						const p = s.EditorState.push(o, d, "insert-characters");
@@ -977,7 +977,7 @@
 						handleReturn: this.handleReturn,
 						handlePastedText: this.handlePastedText,
 						onBlur: this.props.onBlur
-					}), l && a.a.createElement(q.b, {
+					}), l && a.a.createElement(V.b, {
 						onSetPositionUpdater: this.setEmojiDropdownPositionUpdater,
 						usePortal: !0
 					}, a.a.createElement(ce, {
@@ -991,7 +991,7 @@
 					})))
 				}
 			}
-			var Fe = Re,
+			var Fe = Ne,
 				Ae = o("./src/reddit/helpers/flair.ts"),
 				Me = o("./src/reddit/icons/svgs/Help/index.tsx"),
 				Le = o("./src/reddit/icons/svgs/Smile/index.tsx"),
@@ -1034,11 +1034,11 @@
 						text: e.text
 					}), t
 				},
-				Ve = e => {
+				qe = e => {
 					return function(e) {
 						let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-						if (!e) return s.EditorState.createEmpty(_e());
-						let o = s.EditorState.createEmpty(_e()),
+						if (!e) return s.EditorState.createEmpty(Te());
+						let o = s.EditorState.createEmpty(Te()),
 							n = o.getCurrentContent();
 						const i = [],
 							r = [];
@@ -1077,7 +1077,7 @@
 						}), t && (o = s.EditorState.forceSelection(o, l)), o
 					}(ze(e))
 				},
-				qe = (e, t, o, s, n) => {
+				Ve = (e, t, o, s, n) => {
 					const i = (e => {
 						const t = e.getCurrentContent(),
 							o = t.getPlainText(),
@@ -1088,7 +1088,7 @@
 						}, (e, n, i, r) => {
 							const a = e.getEntity(),
 								c = a && t.getEntity(a);
-							if (c && c.getType() === Te.InlineImage) {
+							if (c && c.getType() === _e.InlineImage) {
 								const {
 									id: e,
 									url: t
@@ -1168,7 +1168,7 @@
 							editorState: e
 						}, () => {
 							if (t) {
-								const t = qe(e, this.props.flair.backgroundColor, this.props.flair.templateId, this.props.flair.textColor, this.props.flair.cssClass);
+								const t = Ve(e, this.props.flair.backgroundColor, this.props.flair.templateId, this.props.flair.textColor, this.props.flair.cssClass);
 								this.props.onChange(t)
 							}
 						})
@@ -1189,7 +1189,7 @@
 					}, this.onBlur = () => {
 						this.props.onBlur && this.props.onBlur()
 					}, this.state = {
-						editorState: Ve(e.flair)
+						editorState: qe(e.flair)
 					}
 				}
 				focus() {
@@ -1204,8 +1204,8 @@
 				UNSAFE_componentWillReceiveProps(e) {
 					e.subredditId !== this.props.subredditId && this.props.onGetSubredditEmojis(this.props.subredditId);
 					const t = e.flair,
-						o = qe(this.state.editorState, t.backgroundColor, t.templateId, t.textColor, t.cssClass);
-					Qe(o, t) || this.setEditorState(Ve(t))
+						o = Ve(this.state.editorState, t.backgroundColor, t.templateId, t.textColor, t.cssClass);
+					Qe(o, t) || this.setEditorState(qe(t))
 				}
 				renderCompactHelperText(e) {
 					const t = this.props.flairTemplate || E.a;
@@ -1699,53 +1699,43 @@
 		},
 		"./src/reddit/helpers/dom/index.ts": function(e, t, o) {
 			"use strict";
-			o.d(t, "g", (function() {
-				return a
-			})), o.d(t, "f", (function() {
-				return c
+			o.d(t, "f", (function() {
+				return r
 			})), o.d(t, "d", (function() {
-				return l
-			})), o.d(t, "h", (function() {
-				return d
+				return a
+			})), o.d(t, "g", (function() {
+				return c
 			})), o.d(t, "c", (function() {
-				return p
+				return l
 			})), o.d(t, "b", (function() {
-				return m
+				return d
 			})), o.d(t, "e", (function() {
-				return u
+				return p
 			})), o.d(t, "a", (function() {
-				return h
+				return m
 			}));
 			var s = o("./node_modules/lodash/map.js"),
 				n = o.n(s),
 				i = o("./src/lib/FocusTrap/index.ts");
-			const r = e => "INPUT" === e.tagName.toUpperCase() || "TEXTAREA" === e.tagName.toUpperCase() || "DIV" === e.tagName.toUpperCase() && e.isContentEditable,
-				a = e => {
-					let t = e;
-					do {
-						if (r(t)) return !0
-					} while (t = t.parentElement);
-					return !1
-				},
-				c = () => {
+			const r = () => {
 					const e = document.getSelection();
 					return !!e && (e.rangeCount > 0 && e.getRangeAt(0).toString().length > 0)
 				},
-				l = () => c() ? (() => {
+				a = () => r() ? (() => {
 					const e = document.getSelection();
 					if (!e) return [];
 					const t = e.getRangeAt(0).cloneContents().childNodes;
 					return n()(t, e => e.textContent || "")
 				})() : null,
-				d = (e, t) => {
+				c = (e, t) => {
 					const o = document.createRange();
 					return o.selectNode(t), e.compareBoundaryPoints(Range.END_TO_START, o) < 0 && e.compareBoundaryPoints(Range.START_TO_END, o) > 0
 				},
-				p = e => {
+				l = e => {
 					const t = window.getSelection();
 					if (1 !== t.rangeCount) return;
 					const o = t.getRangeAt(0);
-					if (!d(o, e)) return;
+					if (!c(o, e)) return;
 					const {
 						startContainer: s,
 						startOffset: n,
@@ -1753,20 +1743,20 @@
 						endOffset: r
 					} = o, a = document.createRange();
 					a.selectNode(e);
-					let c = !0;
-					if (-1 === a.compareBoundaryPoints(Range.START_TO_START, o) && (a.setStart(s, n), c = !1), 1 === a.compareBoundaryPoints(Range.END_TO_END, o) && (a.setEnd(i, r), c = !1), c) return [e];
-					const l = document.createElement("div");
-					return l.appendChild(a.cloneContents()), [...l.childNodes]
+					let l = !0;
+					if (-1 === a.compareBoundaryPoints(Range.START_TO_START, o) && (a.setStart(s, n), l = !1), 1 === a.compareBoundaryPoints(Range.END_TO_END, o) && (a.setEnd(i, r), l = !1), l) return [e];
+					const d = document.createElement("div");
+					return d.appendChild(a.cloneContents()), [...d.childNodes]
 				},
-				m = (e, t, o) => {
+				d = (e, t, o) => {
 					let s = e;
 					for (; s && (!o || !o(s));) {
 						if (s && t(s)) return s;
 						s = s.parentElement
 					}
 				},
-				u = e => e && e.parentElement && m(e.parentElement, e => "static" !== window.getComputedStyle(e).getPropertyValue("position")),
-				h = e => {
+				p = e => e && e.parentElement && d(e.parentElement, e => "static" !== window.getComputedStyle(e).getPropertyValue("position")),
+				m = e => {
 					e.querySelectorAll(i.a).forEach(e => {
 						e.tabIndex = -1
 					})
@@ -1870,4 +1860,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FlairEdit.88eda7e107d2be08d529.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FlairEdit.9af32876fdfdedab093f.js.map

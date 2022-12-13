@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.8472718881723297e573.js
-// Retrieved at 12/13/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.137828dac29248b3a560.js
+// Retrieved at 12/13/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -967,7 +967,7 @@
 					redditStyle: h.E
 				}),
 				I = Object(o.b)(L, e => ({
-					onListingLayoutChange: (t, s) => e(Object(u.y)(t, s)),
+					onListingLayoutChange: (t, s) => e(Object(u.x)(t, s)),
 					openDropdown: () => e(Object(m.h)({
 						tooltipId: k
 					}))
@@ -2050,12 +2050,12 @@
 						e(c.y(t, s))
 					},
 					trackOnPostEnteredViewport: (t, s, r, n) => {
-						e(c.N(t, r, n))
+						e(c.M(t, r, n))
 					},
 					trackOnPostExitedViewport: (t, s, r, n) => {
-						e(c.O(t, r, n))
+						e(c.N(t, r, n))
 					},
-					showModalOnScroll: () => e(c.bb()),
+					showModalOnScroll: () => e(c.ab()),
 					surveyTriggerScrollCounted: () => e(Object(u.m)())
 				}),
 				N = e => Object(b.b)({
@@ -3064,7 +3064,7 @@
 				return Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
 					experimentName: r.F
-				}) === r.Sd
+				}) === r.Rd
 			}
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, s) {
@@ -3110,7 +3110,7 @@
 			e.exports = JSON.parse('{"id":"c09ff0d041c1"}')
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"67df0bf9ba51"}')
+			e.exports = JSON.parse('{"id":"c1fc98c26cf2"}')
 		},
 		"./src/redditGQL/operations/UpdateSubredditMuteAndNotificationLevelSettings.json": function(e) {
 			e.exports = JSON.parse('{"id":"2620d72fd633"}')
@@ -3120,4 +3120,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.8472718881723297e573.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.137828dac29248b3a560.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardCreationModal.a0715ca0b84900c9d880.js
-// Retrieved at 11/16/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardCreationModal.e416c82a13842a07414b.js
+// Retrieved at 12/13/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardCreationModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -612,7 +612,7 @@
 					}, this.onCostInputOpen = () => {
 						this.props.sendEvent(Object(u.d)("click", "coin_cost_input"))
 					}, this.getCostDropdownMenuItems = () => {
-						return Object(I.m)(this.props.awards).map(e => ({
+						return Object(I.l)(this.props.awards).map(e => ({
 							displayText: Object(E.b)(e, {
 								type: P.b.Reddit,
 								currency: P.a
@@ -788,7 +788,7 @@
 						isModOnly: c,
 						isTemporary: d,
 						nameValue: m
-					} = this.state, u = e.filter(e => e.awardType === I.f.Moderator);
+					} = this.state, u = e.filter(e => e.awardType === I.e.Moderator);
 					return s.a.createElement("section", {
 						className: Object(f.a)(t, b.a.communityAwardCreationModal)
 					}, s.a.createElement(x.i, null, s.a.createElement(_.a, null, s.a.createElement(x.q, null, p.fbt._("Create Award", null, {
@@ -2178,4 +2178,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardCreationModal.a0715ca0b84900c9d880.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardCreationModal.e416c82a13842a07414b.js.map

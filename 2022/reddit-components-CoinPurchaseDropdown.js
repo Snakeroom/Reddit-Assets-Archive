@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.07d786d8e9c5483ef2ed.js
-// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.0755e424ece88635f49c.js
+// Retrieved at 12/13/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CoinPurchaseDropdown"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -712,7 +712,7 @@
 								awardKarmaReceived: n || 0,
 								awardId: j,
 								awardings: o && o.length ? Object(f.a)(o).map(e => ({
-									award: Object(h.j)(e),
+									award: Object(h.i)(e),
 									total: e.count
 								})) : [],
 								coins: s,
@@ -851,7 +851,7 @@
 								awardId: C,
 								awardKarmaReceived: t || 0,
 								awardings: Object(f.a)(e).map(e => ({
-									award: Object(h.j)(e),
+									award: Object(h.i)(e),
 									total: e.count
 								})),
 								coins: n,
@@ -1907,4 +1907,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.07d786d8e9c5483ef2ed.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.0755e424ece88635f49c.js.map

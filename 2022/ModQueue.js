@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.abd5a5780abf3cb0eb2b.js
-// Retrieved at 12/13/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.0f5a54dcdc3c22745ba9.js
+// Retrieved at 12/13/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, o) {
@@ -28,9 +28,9 @@
 			})), o.d(t, "a", (function() {
 				return y
 			})), o.d(t, "e", (function() {
-				return A
-			})), o.d(t, "g", (function() {
 				return R
+			})), o.d(t, "g", (function() {
+				return A
 			})), o.d(t, "h", (function() {
 				return E
 			})), o.d(t, "b", (function() {
@@ -126,7 +126,7 @@
 							numReports: u.numReports || null
 						}
 					})), Object(a.d)())
-				}, A = (e, t) => async (o, r, n) => {
+				}, R = (e, t) => async (o, r, n) => {
 					let {
 						apiContext: d,
 						gqlContext: i
@@ -161,7 +161,7 @@
 							numReports: m.numReports
 						}
 					})), Object(a.d)())
-				}, R = e => async (t, o, r) => {
+				}, A = e => async (t, o, r) => {
 					let {
 						apiContext: n
 					} = r;
@@ -268,9 +268,9 @@
 			})), o.d(t, "a", (function() {
 				return ye
 			})), o.d(t, "b", (function() {
-				return Ae
-			})), o.d(t, "c", (function() {
 				return Re
+			})), o.d(t, "c", (function() {
+				return Ae
 			}));
 			o("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = o("./node_modules/fbt/lib/FbtPublic.js"),
@@ -294,8 +294,8 @@
 				S = o("./src/reddit/selectors/experiments/realtimeMQUpdates.ts"),
 				_ = o("./src/redditGQL/types.ts"),
 				y = o("./src/reddit/helpers/graphql/normalizeCommentFromGql/index.ts"),
-				A = o("./src/reddit/helpers/graphql/normalizeFlairFromGql/index.ts"),
-				R = o("./src/reddit/helpers/graphql/normalizeModActivityFromGql/index.ts"),
+				R = o("./src/reddit/helpers/graphql/normalizeFlairFromGql/index.ts"),
+				A = o("./src/reddit/helpers/graphql/normalizeModActivityFromGql/index.ts"),
 				E = o("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts"),
 				k = o("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts");
 			const x = {
@@ -425,7 +425,7 @@
 						const {
 							subreddit: s,
 							summary: r
-						} = Object(R.a)(t.node);
+						} = Object(A.a)(t.node);
 						return e.summaries[t.node.id] = r, e.subreddits[t.node.id] = s, e
 					}, {
 						subreddits: {},
@@ -437,7 +437,7 @@
 						const {
 							subreddit: o,
 							summary: s
-						} = Object(R.a)(t);
+						} = Object(A.a)(t);
 						return e.summaries[t.id] = s, e.subreddits[t.id] = o, e
 					}, {
 						subreddits: {},
@@ -538,7 +538,7 @@
 						const {
 							authorInfo: n,
 							authorFlair: d
-						} = e, i = d ? null === (r = Object(A.a)(d)) || void 0 === r ? void 0 : r[0] : null;
+						} = e, i = d ? null === (r = Object(R.a)(d)) || void 0 === r ? void 0 : r[0] : null;
 						c.authorFlair[m] = {
 							...c.authorFlair[m],
 							...(null == n ? void 0 : n.name) ? {
@@ -576,7 +576,7 @@
 						const {
 							authorInfo: o,
 							authorFlair: s
-						} = e, r = s ? null === (i = Object(A.a)(s)) || void 0 === i ? void 0 : i[0] : null;
+						} = e, r = s ? null === (i = Object(R.a)(s)) || void 0 === i ? void 0 : i[0] : null;
 						c.authorFlair[m] = {
 							...c.authorFlair[m],
 							...(null == o ? void 0 : o.name) ? {
@@ -780,8 +780,8 @@
 					const {
 						users: S,
 						..._
-					} = w(g.body.data), y = d(), A = c.e[Object(u.V)(y, {})] === c.d.Card;
-					Object(T.b)(y, A) && n(Z(S)), n(j({
+					} = w(g.body.data), y = d(), R = c.e[Object(u.V)(y, {})] === c.d.Card;
+					Object(T.b)(y, R) && n(Z(S)), n(j({
 						listingKey: e,
 						page: `${o.page||L.b}`,
 						response: _
@@ -1017,7 +1017,7 @@
 						}), D.b.Error);
 						r(Object(a.f)(e))
 					}
-				}, ye = Object(n.a)(H.a), Ae = Object(n.a)(H.c), Re = Object(n.a)(H.d)
+				}, ye = Object(n.a)(H.a), Re = Object(n.a)(H.c), Ae = Object(n.a)(H.d)
 		},
 		"./src/reddit/actions/pages/modQueue/index.ts": function(e, t, o) {
 			"use strict";
@@ -1062,9 +1062,9 @@
 					y = h.pages.modHub.modQueue[p].api.error;
 				if (h.pages.modHub.modQueue[p].api.pending || _ && !y) return;
 				Object(m.q)(h) || await Object(u.e)(g, p, f)(t, o, s);
-				const A = o();
-				if (r()(A.pages.modHub.modQueue[p].api.error, "type") === n.L.AUTHENTICATION_ERROR) return Object(a.a)(t, A);
-				Object(c.j)(A, j, v), t(l.m({
+				const R = o();
+				if (r()(R.pages.modHub.modQueue[p].api.error, "type") === n.L.AUTHENTICATION_ERROR) return Object(a.a)(t, R);
+				Object(c.j)(R, j, v), t(l.m({
 					title: Object(d.i)()
 				}))
 			}
@@ -1122,9 +1122,9 @@
 			})), o.d(t, "removalReasonMessageFailed", (function() {
 				return ye
 			})), o.d(t, "submitRemovalReason", (function() {
-				return Ae
-			})), o.d(t, "submitBulkRemovalReason", (function() {
 				return Re
+			})), o.d(t, "submitBulkRemovalReason", (function() {
+				return Ae
 			}));
 			var s = o("./node_modules/fbt/lib/FbtPublic.js"),
 				r = o("./src/lib/initializeClient/installReducer.ts"),
@@ -1285,13 +1285,13 @@
 							return e
 					}
 				},
-				A = Object(n.c)({
+				R = Object(n.c)({
 					api: j,
 					models: g,
 					reasonOrder: _,
 					removedItemIds: y
 				}),
-				R = o("./src/lib/constants/index.ts"),
+				A = o("./src/lib/constants/index.ts"),
 				E = o("./src/lib/makeActionCreator/index.ts"),
 				k = o("./src/lib/makeCommentsPageKey/index.ts"),
 				x = o("./src/lib/makeDraftKey/index.ts"),
@@ -1310,7 +1310,7 @@
 				U = o("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const B = (e, t) => Object(T.a)(Object(F.a)(e, [q.a]), {
 					endpoint: Object(Q.a)(`${e.apiUrl}/api/v1/modactions/removal_reasons/`),
-					method: R.ob.POST,
+					method: A.ob.POST,
 					type: "json",
 					data: {
 						item_ids: t.itemIds,
@@ -1320,7 +1320,7 @@
 				}),
 				G = (e, t, o) => Object(T.a)(Object(F.a)(e, [q.a]), {
 					endpoint: Object(Q.a)(Object(U.a)(`${e.apiUrl}/api/v1/modactions/removal_${o}_message/`)),
-					method: R.ob.POST,
+					method: A.ob.POST,
 					type: "json",
 					data: t
 				});
@@ -1335,7 +1335,7 @@
 				Y = o("./src/reddit/selectors/platform.ts");
 			Object(r.a)({
 				features: {
-					removalReasons: A
+					removalReasons: R
 				}
 			});
 			const Z = Object(E.a)("REMOVALREASONS__LOAD_PENDING"),
@@ -1349,7 +1349,7 @@
 					t(Z());
 					const d = await ((e, t) => Object(T.a)(Object(F.a)(e, [q.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons.json`,
-						method: R.ob.GET
+						method: A.ob.GET
 					}))(r(), n);
 					d.ok ? t(ee({
 						subredditId: e,
@@ -1363,7 +1363,7 @@
 					o(se());
 					const a = await ((e, t, o) => Object(T.a)(Object(F.a)(e, [q.a]), {
 						endpoint: Object(Q.a)(`${e.apiUrl}/api/v1/${t}/removal_reasons`),
-						method: R.ob.POST,
+						method: A.ob.POST,
 						data: o
 					}))(d(), i, t);
 					if (a.ok) {
@@ -1391,7 +1391,7 @@
 					o(ie());
 					const a = await ((e, t, o) => Object(T.a)(Object(F.a)(e, [q.a]), {
 						endpoint: Object(Q.a)(`${e.apiUrl}/api/v1/${t}/removal_reasons/${o.id}`),
-						method: R.ob.PUT,
+						method: A.ob.PUT,
 						data: {
 							message: o.message,
 							title: o.title
@@ -1414,7 +1414,7 @@
 					o(le());
 					const a = await ((e, t, o) => Object(T.a)(Object(F.a)(e, [q.a]), {
 						endpoint: Object(Q.a)(`${e.apiUrl}/api/v1/${t}/removal_reasons/${o}`),
-						method: R.ob.DELETE
+						method: A.ob.DELETE
 					}))(d(), i, t);
 					a.ok ? (o(me({
 						subredditId: e,
@@ -1434,7 +1434,7 @@
 						subredditId: e,
 						itemIds: t
 					})), o(Object(N.i)(D.a.ADD_REMOVAL_REASON))
-				}, ve = Object(E.a)("REMOVALREASONS__SUBMIT_PENDING"), je = Object(E.a)("REMOVALREASONS__SUBMIT_SUCCESS"), he = Object(E.a)("REMOVALREASONS__SUBMIT_FAILED"), ge = Object(E.a)("REMOVALREASONS__MESSAGE_PENDING"), Se = Object(E.a)("REMOVALREASONS__MESSAGE_PRIVATE_SUCCESS"), _e = Object(E.a)("REMOVALREASONS__MESSAGE_PUBLIC_SUCCESS"), ye = Object(E.a)("REMOVALREASONS__MESSAGE_FAILED"), Ae = (e, t, o, s, r, n) => async (d, i, a) => {
+				}, ve = Object(E.a)("REMOVALREASONS__SUBMIT_PENDING"), je = Object(E.a)("REMOVALREASONS__SUBMIT_SUCCESS"), he = Object(E.a)("REMOVALREASONS__SUBMIT_FAILED"), ge = Object(E.a)("REMOVALREASONS__MESSAGE_PENDING"), Se = Object(E.a)("REMOVALREASONS__MESSAGE_PRIVATE_SUCCESS"), _e = Object(E.a)("REMOVALREASONS__MESSAGE_PUBLIC_SUCCESS"), ye = Object(E.a)("REMOVALREASONS__MESSAGE_FAILED"), Re = (e, t, o, s, r, n) => async (d, i, a) => {
 					let {
 						apiContext: c
 					} = a;
@@ -1443,7 +1443,7 @@
 						m = e[0],
 						b = Object(V.a)(m) ? W.e.Post : W.e.Comment,
 						p = b === W.e.Post ? u.posts.models[m] : u.features.comments.models[m],
-						f = b === W.e.Post ? w.R : M.j;
+						f = b === W.e.Post ? w.Q : M.j;
 					if (!p || !l) return !1;
 					d(ve()), d(f({
 						[m]: {
@@ -1481,7 +1481,7 @@
 											s = u.platform.currentPage && u.platform.currentPage.routeMatch;
 										let r = o && s && Object($.a)(s, u, u.posts.models[e.postId]);
 										if (r || (r = Object(k.a)(e.postId, null, {
-												sort: R.x,
+												sort: A.x,
 												hasSortParam: !0
 											})), b === W.e.Post) {
 											const o = Object(x.a)(z.c.replyToPost, m);
@@ -1531,7 +1531,7 @@
 						}
 					}));
 					return !1
-				}, Re = (e, t, o, r, n) => async (d, i, a) => {
+				}, Ae = (e, t, o, r, n) => async (d, i, a) => {
 					let {
 						apiContext: c
 					} = a;
@@ -1847,7 +1847,7 @@
 			const d = e => Object(r.c)(e, {
 				experimentEligibilitySelector: n.S,
 				experimentName: s.cc
-			}) === s.Sd
+			}) === s.Rd
 		},
 		"./src/reddit/selectors/experiments/realtimeMQUpdates.ts": function(e, t, o) {
 			"use strict";
@@ -1861,7 +1861,7 @@
 			const i = e => Object(d.a)(e) && Object(r.c)(e, {
 				experimentEligibilitySelector: n.S,
 				experimentName: s.Cc
-			}) === s.Sd
+			}) === s.Rd
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, o) {
 			"use strict";
@@ -1945,4 +1945,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.abd5a5780abf3cb0eb2b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.0f5a54dcdc3c22745ba9.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.0d77e4cca08bda4dc49e.js
-// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.2b037d15eb7ec1bb8ce6.js
+// Retrieved at 12/13/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, n) {
@@ -759,7 +759,7 @@
 								awardKarmaReceived: r || 0,
 								awardId: v,
 								awardings: a && a.length ? Object(b.a)(a).map(e => ({
-									award: Object(g.j)(e),
+									award: Object(g.i)(e),
 									total: e.count
 								})) : [],
 								coins: s,
@@ -898,7 +898,7 @@
 								awardId: j,
 								awardKarmaReceived: t || 0,
 								awardings: Object(b.a)(e).map(e => ({
-									award: Object(g.j)(e),
+									award: Object(g.i)(e),
 									total: e.count
 								})),
 								coins: r,
@@ -2167,7 +2167,7 @@
 					}), {
 						":coin_price:": o.a.createElement("span", {
 							className: x.a.nowrap
-						}, o.a.createElement(re.a, null), P.s.coinPrice)
+						}, o.a.createElement(re.a, null), P.r.coinPrice)
 					})), o.a.createElement(J.a, {
 						className: x.a.gridItem,
 						icon: o.a.createElement("img", {
@@ -2184,7 +2184,7 @@
 						}, o.a.createElement(re.a, null), "100"),
 						":coin_price:": o.a.createElement("span", {
 							className: x.a.nowrap
-						}, o.a.createElement(re.a, null), P.p.coinPrice)
+						}, o.a.createElement(re.a, null), P.o.coinPrice)
 					})), o.a.createElement(J.a, {
 						className: x.a.gridItem,
 						icon: o.a.createElement("img", {
@@ -2201,7 +2201,7 @@
 						}, o.a.createElement(re.a, null), "700"),
 						":coin_price:": o.a.createElement("span", {
 							className: x.a.nowrap
-						}, o.a.createElement(re.a, null), P.r.coinPrice)
+						}, o.a.createElement(re.a, null), P.q.coinPrice)
 					}))))
 				}
 				renderPurchase() {
@@ -2333,4 +2333,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.0d77e4cca08bda4dc49e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.2b037d15eb7ec1bb8ce6.js.map

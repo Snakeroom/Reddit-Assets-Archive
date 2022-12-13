@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.444564fea6ff3115ce12.js
-// Retrieved at 12/13/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.701cb807160845aa854e.js
+// Retrieved at 12/13/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["devPlatform-components-ContextActions"], {
 		"./src/devPlatform/components/ContextActions/index.m.less": function(e, t, o) {},
@@ -120,8 +120,8 @@
 						topAwardedType: e.topAwardedType,
 						numComments: e.numComments,
 						over18: e.isNSFW,
-						selftext: e.media && Object(w.N)(e.media) ? e.media.markdownContent : void 0,
-						selftextHtml: e.media && Object(w.N)(e.media) ? e.media.content : void 0,
+						selftext: e.media && Object(w.M)(e.media) ? e.media.markdownContent : void 0,
+						selftextHtml: e.media && Object(w.M)(e.media) ? e.media.content : void 0,
 						spoiler: String(e.isSpoiler),
 						thumbnail: e.thumbnail.url,
 						thumbnailWidth: null !== (A = e.thumbnail.width) && void 0 !== A ? A : void 0,
@@ -614,4 +614,4 @@
 		"ignored /drone/src/node_modules/cron-parser/lib fs": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.444564fea6ff3115ce12.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.701cb807160845aa854e.js.map
