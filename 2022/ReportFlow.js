@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.450149bd4b776397a977.js
-// Retrieved at 12/13/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.a5813af24fcfbd7a210b.js
+// Retrieved at 12/13/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -2707,37 +2707,38 @@
 							postId: n,
 							commentId: s,
 							messageId: a,
-							isReportAnAdEnabled: i
+							isReportAnAdEnabled: i,
+							isSponsored: d
 						},
 						state: {
-							formComponent: d,
-							formState: c,
-							ctlFlowOpened: u,
-							hasLoaded: p
+							formComponent: c,
+							formState: u,
+							ctlFlowOpened: p,
+							hasLoaded: h
 						}
-					} = this, h = i && (null === (e = this.props.post) || void 0 === e ? void 0 : e.isSponsored) ? r.fbt._("Report Ad", null, {
+					} = this, b = i && ((null === (e = this.props.post) || void 0 === e ? void 0 : e.isSponsored) || d) ? r.fbt._("Report Ad", null, {
 						hk: "4ncCdo"
 					}) : r.fbt._("Submit a Report", null, {
 						hk: "1v59vx"
 					}), {
-						itemAuthor: b,
-						itemAuthorId: f
-					} = this.getItemMetadata(), x = s || n || a;
-					return u && b ? l.a.createElement(m.b, {
+						itemAuthor: f,
+						itemAuthorId: x
+					} = this.getItemMetadata(), g = s || n || a;
+					return p && f ? l.a.createElement(m.b, {
 						withOverlay: !0,
 						overlayCustomStyles: m.a,
-						username: b,
-						fromUserProfile: !x,
+						username: f,
+						fromUserProfile: !g,
 						onCloseCrisisModal: this.handleReportFlowClose,
-						thingId: x
-					}) : d && c && p ? l.a.createElement(R.a, {
-						formComponent: d,
-						formState: c,
+						thingId: g
+					}) : c && u && h ? l.a.createElement(R.a, {
+						formComponent: c,
+						formState: u,
 						onCloseClick: this.handleReportFlowClose,
 						onSubmit: this.onReportSubmit,
-						headerTitle: h,
+						headerTitle: b,
 						onOpenCtlFlow: this.onOpenCtlFlow,
-						onBlockAuthor: () => this.onBlockAuthor(b, f),
+						onBlockAuthor: () => this.onBlockAuthor(f, x),
 						onResize: this.props.onResize
 					}) : l.a.createElement(H, null, l.a.createElement(K, {
 						src: t ? `${o.a.assetPath}/img/loader_2orbit_loop_nightmode.gif` : `${o.a.assetPath}/img/loader_2orbit_loop.gif`,
@@ -4338,4 +4339,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.450149bd4b776397a977.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.a5813af24fcfbd7a210b.js.map
