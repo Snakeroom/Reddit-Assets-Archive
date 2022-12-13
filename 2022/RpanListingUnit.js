@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.53e3c32cf180480b4fa6.js
-// Retrieved at 12/12/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.103b7e52b62931db1ae8.js
+// Retrieved at 12/13/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -54,13 +54,13 @@
 					experimentEligibilitySelector: m.a,
 					experimentName: u.He
 				});
-				return Object(u.Cg)(t) ? void 0 : t
+				return Object(u.zg)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
 					experimentName: u.Ie
 				});
-				return Object(u.Cg)(t) ? void 0 : t
+				return Object(u.zg)(t) ? void 0 : t
 			}, (e, t) => e === u.Je.Enabled && t === u.Je.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
@@ -697,24 +697,24 @@
 				L = s("./src/reddit/selectors/user.ts"),
 				x = s("./src/reddit/components/ClassicPost/Placeholder.tsx"),
 				R = s("./src/reddit/components/Flatlist/index.tsx"),
-				j = s("./src/reddit/components/Flatlist/constants.ts"),
-				P = s("./src/reddit/components/Flatlist/ResponsiveRow.tsx"),
+				P = s("./src/reddit/components/Flatlist/constants.ts"),
+				j = s("./src/reddit/components/Flatlist/ResponsiveRow.tsx"),
 				U = s("./src/reddit/components/HlsVideo/index.tsx"),
 				w = s("./src/reddit/components/OverflowMenu/index.tsx"),
 				k = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				M = s("./src/reddit/components/PostLeftRail/index.tsx"),
 				V = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				H = s("./src/reddit/controls/Dropdown/Row.tsx"),
-				F = s("./src/reddit/controls/InternalLink/index.tsx"),
-				Y = s("./src/reddit/controls/Score/index.tsx"),
+				Y = s("./src/reddit/controls/InternalLink/index.tsx"),
+				F = s("./src/reddit/controls/Score/index.tsx"),
 				B = s("./src/reddit/icons/fonts/index.tsx"),
 				W = s("./src/reddit/helpers/styles/mixins/index.m.less"),
 				G = s.n(W),
 				K = s("./src/reddit/components/PublicAccessNetwork/ListingUnit/index.m.less"),
 				q = s.n(K);
 			const {
-				fbt: Z
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), z = 20, J = l.xc, $ = l.xc, X = Object(c.a)(U.a, {
+				fbt: z
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), Z = 20, J = l.xc, $ = l.xc, X = Object(c.a)(U.a, {
 				playerName: "RPAN DU Video Player"
 			}), Q = Object(i.b)(() => Object(o.c)({
 				autoplay: L.d,
@@ -749,7 +749,7 @@
 				inRpanDUPreloadExperiment: N.b,
 				inRpanDuTargetingExperiment: N.c
 			}), (e, t) => ({
-				onHideRpanUnit: (s, n) => e(Object(h.F)(t.listingName, s, {
+				onHideRpanUnit: (s, n) => e(Object(h.E)(t.listingName, s, {
 					showToast: n.showToast
 				})),
 				openOverlay: t => e(Object(C.a)(t)),
@@ -760,29 +760,29 @@
 				}))
 			})), ee = () => r.a.createElement("h3", {
 				className: q.a.title
-			}, Z._("Top livestream", null, {
+			}, z._("Top livestream", null, {
 				hk: "4od1tZ"
 			})), te = () => r.a.createElement("p", {
 				className: q.a.description
-			}, Z._("Live from the internet, this is RPAN", null, {
+			}, z._("Live from the internet, this is RPAN", null, {
 				hk: "Bnxtg"
 			}));
 			class se extends n.Component {
 				constructor(e) {
 					super(e), this.observableElement = r.a.createRef(), this.videoRef = r.a.createRef(), this.videoSessionManager = null, this.timerId = "rpan-du-active-watch-timer-id", this.handleSuccessfulPlayback = () => {
-						Object(O.cb)()
+						Object(O.Y)()
 					}, this.handleUnsuccessfulPlayback = () => {
-						const e = Number(Object(O.T)());
+						const e = Number(Object(O.P)());
 						if (e) {
 							if (Date.now() - e >= J) {
-								Object(O.cb)();
+								Object(O.Y)();
 								const e = 30 * l.E,
 									t = Date.now() - e + $;
 								this.props.onHideRpanUnit(t, {
 									showToast: !1
 								})
 							}
-						} else Object(O.Zb)(Date.now())
+						} else Object(O.Rb)(Date.now())
 					}, this.onResourceRemoved = () => {
 						this.subscribeStats()
 					}, this.onError = () => {
@@ -877,7 +877,7 @@
 				}
 				endTimeTracker() {
 					if (this.timerId && a.c.has(this.timerId)) {
-						Math.round(a.c.end(this.timerId)) / 1e3 >= z ? this.handleSuccessfulPlayback() : this.handleUnsuccessfulPlayback()
+						Math.round(a.c.end(this.timerId)) / 1e3 >= Z ? this.handleSuccessfulPlayback() : this.handleUnsuccessfulPlayback()
 					}
 				}
 				componentDidMount() {
@@ -956,7 +956,7 @@
 				renderTitleAndDescription(e) {
 					return r.a.createElement("div", {
 						className: q.a.titleAndDescriptionContainer
-					}, r.a.createElement(F.default, {
+					}, r.a.createElement(Y.default, {
 						to: this.props.location
 					}, r.a.createElement(ee, null), e && r.a.createElement(te, null)))
 				}
@@ -970,7 +970,7 @@
 					}))), r.a.createElement("div", {
 						className: q.a.body,
 						ref: this.observableElement
-					}, r.a.createElement(F.default, {
+					}, r.a.createElement(Y.default, {
 						to: this.props.location,
 						onClick: this.onStreamClicked,
 						className: q.a.previewLink,
@@ -983,7 +983,7 @@
 					return r.a.createElement("div", {
 						className: q.a.body,
 						ref: this.observableElement
-					}, r.a.createElement(F.default, {
+					}, r.a.createElement(Y.default, {
 						to: this.props.location,
 						onClick: this.onStreamClicked
 					}, r.a.createElement("div", {
@@ -1040,10 +1040,10 @@
 					const t = Math.max(1, (null === (e = this.props.stream) || void 0 === e ? void 0 : e.continuous_watchers) || 0);
 					return r.a.createElement("span", {
 						className: q.a.watchingCount
-					}, Z._({
+					}, z._({
 						"*": "{number} watchers",
 						_1: "1 watcher"
-					}, [Z._plural(t, "number")], {
+					}, [z._plural(t, "number")], {
 						hk: "33zJ5F"
 					}))
 				}
@@ -1168,7 +1168,7 @@
 						[q.a.verticalVotes]: e.isVertical,
 						[q.a.horizontalVotes]: !e.isVertical
 					})
-				}, r.a.createElement(Y.a, {
+				}, r.a.createElement(F.a, {
 					className: q.a.score,
 					isScoreHidden: !0,
 					score: 0,
@@ -1191,11 +1191,11 @@
 						onClick: t,
 						isLoggedIn: s
 					} = e;
-					return r.a.createElement(P.a, {
-						displayText: Z._("Show me less of this", null, {
+					return r.a.createElement(j.a, {
+						displayText: z._("Show me less of this", null, {
 							hk: "4t8AKC"
 						}),
-						flatlistItem: j.a.Hide,
+						flatlistItem: P.a.Hide,
 						isLoggedIn: !!s,
 						isUserOp: !1,
 						onClick: t,
@@ -1214,7 +1214,7 @@
 						dropdownId: "rpan-du-overflow"
 					}, r.a.createElement(H.b, {
 						className: q.a.overflowItem,
-						displayText: Z._("Show me less of this", null, {
+						displayText: z._("Show me less of this", null, {
 							hk: "2c4uFK"
 						}),
 						iconWrapperClassName: q.a.overflowItemIconWrapper,
@@ -1881,4 +1881,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.53e3c32cf180480b4fa6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.103b7e52b62931db1ae8.js.map

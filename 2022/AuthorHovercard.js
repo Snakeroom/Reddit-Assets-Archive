@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.919e527ff14e275e10c5.js
-// Retrieved at 12/12/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.cbddb1a8ce7faf310e9a.js
+// Retrieved at 12/13/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -1966,13 +1966,13 @@
 						}
 					}, []), Object(a.useEffect)(() => {
 						if (Object(x.a)()) {
-							const e = Object(_.C)("modnote-draft");
+							const e = Object(_.B)("modnote-draft");
 							y(e && e[c] ? e[c] : "")
 						}
 					}, [c]);
 					const T = Object(o.d)(),
 						L = Object(a.useCallback)(e => {
-							y(e), Object(_.Jb)("modnote-draft", {
+							y(e), Object(_.Eb)("modnote-draft", {
 								[c]: e
 							})
 						}, [y, c]),
@@ -3775,10 +3775,10 @@
 				const A = Object(o.d)(),
 					T = Object(m.a)(),
 					[L, D, H] = function(e, t, n) {
-						const [r, o] = Object(a.useState)(Object(u.r)(e, t) || 0), s = Object(a.useCallback)(() => {
-							o(r + 1), Object(u.Cb)(e, t, r + 1)
+						const [r, o] = Object(a.useState)(Object(u.q)(e, t) || 0), s = Object(a.useCallback)(() => {
+							o(r + 1), Object(u.xb)(e, t, r + 1)
 						}, []), i = Object(a.useCallback)(() => {
-							n > 0 && (o(n), Object(u.Cb)(e, t, n))
+							n > 0 && (o(n), Object(u.xb)(e, t, n))
 						}, []);
 						return [r, s, i]
 					}(h, n.notificationName, (null === (v = n.persistence) || void 0 === v ? void 0 : v.maxViews) || 0),
@@ -4311,9 +4311,9 @@
 						} = e,
 						[_, g] = Object(J.a)(x),
 						[C, I] = function(e) {
-							const [t, n] = Object(r.useState)(() => Object(Q.u)(e));
+							const [t, n] = Object(r.useState)(() => Object(Q.t)(e));
 							return [t, Object(r.useCallback)(() => {
-								n(!0), Object(Q.Db)(e)
+								n(!0), Object(Q.yb)(e)
 							}, [e])]
 						}(x),
 						[O, N] = function(e) {
@@ -4890,7 +4890,7 @@
 					hideNSFWPref: s.H
 				}),
 				c = Object(a.b)(i, e => ({
-					imageUpdateRequested: (t, n) => e(Object(o.D)(t, n))
+					imageUpdateRequested: (t, n) => e(Object(o.C)(t, n))
 				}));
 			t.a = c
 		},
@@ -5963,9 +5963,9 @@
 				r = n("./src/reddit/helpers/localStorage/index.ts");
 
 			function o(e) {
-				const [t, n] = Object(a.useState)(Object(r.t)(e));
+				const [t, n] = Object(a.useState)(Object(r.s)(e));
 				return [t, Object(a.useCallback)(() => {
-					n(!0), Object(r.tb)(e)
+					n(!0), Object(r.ob)(e)
 				}, [])]
 			}
 		},
@@ -6396,7 +6396,7 @@
 					const {
 						id: n,
 						eventViews: a
-					} = Object(o.y)();
+					} = Object(o.x)();
 					return n === e.id && a > e.maxViews ? null : e
 				}),
 				l = Object(a.a)(d, e => {
@@ -6404,7 +6404,7 @@
 					const {
 						id: t,
 						lastInteractionTimestamp: n
-					} = Object(o.y)();
+					} = Object(o.x)();
 					return t === e.id && n > 0 ? null : e.banner
 				})
 		},
@@ -6652,4 +6652,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.919e527ff14e275e10c5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.cbddb1a8ce7faf310e9a.js.map

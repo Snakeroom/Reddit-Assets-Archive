@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.61beb29baf79d9409c29.js
-// Retrieved at 12/12/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.cd1601950f8c8fcdafae.js
+// Retrieved at 12/13/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -752,7 +752,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.Cg)(p),
+						includeInterestTopics: !!p && !Object(b.zg)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: f && !(null === (a = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === a ? void 0 : a.total),
@@ -1053,7 +1053,7 @@
 						m = c.listings.postOrder.api.error[d],
 						p = c.listings.postOrder.api.pending[d],
 						b = Object(de.b)(c),
-						h = ae.O in e.queryParams && e.queryParams[ae.O].toUpperCase() || "",
+						h = ae.N in e.queryParams && e.queryParams[ae.N].toUpperCase() || "",
 						g = h in l.oc && l.oc[h],
 						f = Q.f();
 					if (p || u && !m && !t) return void(u && (n($.m({
@@ -1067,8 +1067,8 @@
 						_ = Object(ce.b)(v),
 						x = [Object(ce.c)(v)];
 					await n(Me(d, {
-						...r()(e.queryParams, ae.q),
 						...r()(e.queryParams, ae.p),
+						...r()(e.queryParams, ae.o),
 						limit: _,
 						sort: o,
 						statsdPathsForExperiments: x,
@@ -1110,7 +1110,7 @@
 						u = i.platform.currentPage ? i.platform.currentPage.queryParams : {},
 						m = Object(he.a)(ne.b, d, u),
 						p = i.listings.postOrder.loadMore[m],
-						b = u[ae.O] ? u[ae.O].toUpperCase() : "",
+						b = u[ae.N] ? u[ae.N].toUpperCase() : "",
 						h = b in l.oc && l.oc[b];
 					if (p) {
 						const e = i.listings.postOrder.api.pending[m],
@@ -1128,7 +1128,7 @@
 								b = {
 									after: p.token,
 									dist: p.dist,
-									...r()(u, ae.q),
+									...r()(u, ae.p),
 									isMobile: Object(c.e)(i.meta.userAgent),
 									limit: o,
 									sort: d,
@@ -1173,7 +1173,7 @@
 						} = e,
 						c = a.platform.currentPage ? a.platform.currentPage.queryParams : {},
 						i = Object(he.a)(ne.b, r, c),
-						o = c[ae.O] ? c[ae.O].toUpperCase() : "",
+						o = c[ae.N] ? c[ae.N].toUpperCase() : "",
 						d = o in l.oc && l.oc[o],
 						u = Object(ce.a)(a),
 						m = Object(ce.b)(u);
@@ -2097,14 +2097,14 @@
 				const {
 					bannerType: t,
 					className: n
-				} = e, l = t === v.a.CommunitySpacesControl, _ = Object(i.d)(), E = Object(g.a)(), [O, k] = L(t), j = Object(b.g)(u.a.AVATAR_LISTING_BANNER, m.c), [N, A] = Object(r.useState)(j ? R.Hidden : R.Visible);
+				} = e, l = t === v.a.CommunitySpacesControl, _ = Object(i.d)(), E = Object(g.a)(), [O, k] = L(t), j = Object(b.f)(u.a.AVATAR_LISTING_BANNER, m.c), [N, A] = Object(r.useState)(j ? R.Hidden : R.Visible);
 				if (Object(r.useEffect)(() => {
 						N === R.Visible && t !== v.a.Achievements && E(Object(h.q)(l))
 					}, [t, N, E, l]), Object(r.useEffect)(() => {
 						N === R.Visible && t === v.a.Achievements && E(Object(h.m)())
 					}, [t, N, E]), N === R.Hidden) return null;
 				const C = () => {
-						A(R.Visible), Object(b.pb)(u.a.AVATAR_LISTING_BANNER, !1, m.c)
+						A(R.Visible), Object(b.kb)(u.a.AVATAR_LISTING_BANNER, !1, m.c)
 					},
 					S = () => {
 						E(Object(h.e)(l)), _(Object(o.b)({
@@ -2112,7 +2112,7 @@
 						}))
 					},
 					I = () => {
-						Object(b.pb)(u.a.AVATAR_LISTING_BANNER, !0, m.c), t === v.a.Achievements ? O() : S()
+						Object(b.kb)(u.a.AVATAR_LISTING_BANNER, !0, m.c), t === v.a.Achievements ? O() : S()
 					};
 				if (N === R.Dismissed) return c.a.createElement("div", {
 					className: Object(s.a)(x.a.dismissedContainer, n)
@@ -2201,7 +2201,7 @@
 						[x.a.closeLight]: l
 					}),
 					onClick: () => {
-						A(R.Dismissed), Object(b.pb)(u.a.AVATAR_LISTING_BANNER, !0, m.c), t !== v.a.Achievements && E(Object(h.k)(l)), t === v.a.Achievements && E(Object(h.j)())
+						A(R.Dismissed), Object(b.kb)(u.a.AVATAR_LISTING_BANNER, !0, m.c), t !== v.a.Achievements && E(Object(h.k)(l)), t === v.a.Achievements && E(Object(h.j)())
 					}
 				}), c.a.createElement("div", {
 					className: x.a.contentWrapper
@@ -3137,13 +3137,13 @@
 					}
 				}
 				async getSubredditForAdoption() {
-					let e = ce.cachedData || Object(z.C)(H.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
+					let e = ce.cachedData || Object(z.B)(H.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
 					if (!e || Date.now() - e.fetchedAt > se) {
 						const t = await $(this.props.apiContext());
 						t.ok && (e = {
 							subreddits: t.body.data.subreddits.map(e => e.name),
 							fetchedAt: Date.now()
-						}, Object(z.Jb)(H.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
+						}, Object(z.Eb)(H.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
 					}
 					return ce.cachedData = e, e ? e.subreddits : []
 				}
@@ -6883,7 +6883,7 @@
 					queryParams: i,
 					sort: o
 				} = t;
-				const l = B.O in i && i[B.O].toUpperCase(),
+				const l = B.N in i && i[B.N].toUpperCase(),
 					d = "string" == typeof l && l in oe.oc ? oe.oc[l] : oe.pc,
 					u = Object(h.a)(ue.b, o, i),
 					m = e;
@@ -7680,7 +7680,7 @@
 						experimentEligibilitySelector: r.S,
 						experimentName: a.xd
 					});
-					return !(!t || Object(a.Cg)(t))
+					return !(!t || Object(a.zg)(t))
 				},
 				i = e => {
 					return Object(s.c)(e, {
@@ -7889,4 +7889,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.61beb29baf79d9409c29.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.cd1601950f8c8fcdafae.js.map

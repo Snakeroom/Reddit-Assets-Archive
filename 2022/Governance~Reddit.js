@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.bddbabedfaec718accad.js
-// Retrieved at 12/12/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.78a6fa368dfd2b696bb4.js
+// Retrieved at 12/13/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -1849,7 +1849,7 @@
 			const l = "PAGE__PROFILE_MOD_SETTINGS_LOADED",
 				u = Object(r.a)(l),
 				p = e => async (t, n) => {
-					const r = [t(s.B()), t(Object(a.d)(e.params.profileName))];
+					const r = [t(s.A()), t(Object(a.d)(e.params.profileName))];
 					await Promise.all(r);
 					const l = Object(d.m)(n());
 					l ? (await t(Object(a.b)(Object(i.e)(l))), t(u()), Object(c.p)(n(), !0)) : Object(o.a)(t, n())
@@ -2928,7 +2928,7 @@
 					if (l.topContent.pending[i] || b[i]) return;
 					t(u({
 						subredditName: i
-					})), t(Object(s.B)());
+					})), t(Object(s.A)());
 					const h = await ((e, t) => Object(a.a)(e, {
 						...o,
 						variables: t
@@ -3012,7 +3012,7 @@
 			const f = "INCREMENT_SEEN_COUNT_PER_SESS",
 				b = (e, t, n) => async (a, o) => {
 					const f = o(),
-						b = Object(i.B)(),
+						b = Object(i.A)(),
 						g = Date.now(),
 						v = b && g - b < 18e4,
 						E = Object(u.c)(f, {
@@ -3020,7 +3020,7 @@
 						}),
 						_ = f.upvotePromptCountPerSess,
 						O = (() => {
-							const e = Object(i.A)();
+							const e = Object(i.z)();
 							if (!e) return [];
 							const t = Date.now();
 							return e.filter(e => t - e < 864e5)
@@ -3049,7 +3049,7 @@
 						action: "view",
 						noun: l,
 						...Object(d.o)(e)
-					}))(f)), Object(i.Ib)(), Object(i.Hb)(I), a(m()), n && n()
+					}))(f)), Object(i.Db)(), Object(i.Cb)(I), a(m()), n && n()
 				}, h = e => async (t, n) => {
 					Object(p.a)((e => ({
 						source: l,
@@ -4410,7 +4410,7 @@
 					relativePosition: S
 				} = e;
 				var T, w, j, C, A, P;
-				const R = Object(a.e)(e => Object(H.a)(e, q.Lf)),
+				const R = Object(a.e)(e => Object(H.a)(e, q.If)),
 					N = Object(g.a)(),
 					L = (null === (T = o.displayInfo) || void 0 === T ? void 0 : T.karma) || 0,
 					x = (null === (w = o.displayInfo) || void 0 === w ? void 0 : w.subscribers) || 0,
@@ -4551,7 +4551,7 @@
 					searchOriginPage: f
 				} = e;
 				const b = Object(g.a)(),
-					h = Object(a.e)(e => Object(H.a)(e, q.Lf)),
+					h = Object(a.e)(e => Object(H.a)(e, q.If)),
 					y = Object(a.e)(O.mb),
 					{
 						nsfwTypeaheadExpanded: v,
@@ -4706,7 +4706,7 @@
 					N = Object(a.e)(fe.d),
 					L = Object(ue.c)(C),
 					x = Object(u.e)({
-						...se()(w || {}, de.D),
+						...se()(w || {}, de.C),
 						q: n.searchQuery,
 						restrict_sr: C.enabled ? "1" : ""
 					});
@@ -4792,7 +4792,7 @@
 					onUpdateSearchQuery: A
 				} = e, P = Object(a.d)(), [R, N] = Object(r.useState)(null), [L, x] = Object(r.useState)(n), [M, B] = Object(r.useState)(new Array(Ee).fill(!1)), {
 					enabled: F
-				} = Object(a.e)(ne.j), G = Object(a.e)(e => Object(H.a)(e, q.Lf)), V = !!(null === (t = g.searchQuery) || void 0 === t ? void 0 : t.trim()), Q = l || i, Y = F, K = [...b.communities, ...b.people, ...b.nsfw], $ = !l && (!V || h >= 0) && (G ? 0 === K.length : 0 === f.length) && !Y, z = {
+				} = Object(a.e)(ne.j), G = Object(a.e)(e => Object(H.a)(e, q.If)), V = !!(null === (t = g.searchQuery) || void 0 === t ? void 0 : t.trim()), Q = l || i, Y = F, K = [...b.communities, ...b.people, ...b.nsfw], $ = !l && (!V || h >= 0) && (G ? 0 === K.length : 0 === f.length) && !Y, z = {
 					width: L ? `${L}px` : "inherit",
 					overflow: "auto"
 				};
@@ -5188,10 +5188,10 @@
 				b = n("./node_modules/reselect/es/index.js");
 			const h = Object(b.a)(e => Object(f.c)(e, {
 				experimentEligibilitySelector: f.a,
-				experimentName: p.yg
+				experimentName: p.vg
 			}), e => ({
-				promptBeforeClick: e === p.zg.PromptBeforeClick,
-				promptAfterClick: e === p.zg.PromptAfterClick
+				promptBeforeClick: e === p.wg.PromptBeforeClick,
+				promptAfterClick: e === p.wg.PromptAfterClick
 			}));
 			var y = n("./src/reddit/controls/Search/SearchScopePill/index.tsx"),
 				m = n("./src/reddit/controls/Search/SearchBar/index.m.less"),
@@ -5780,19 +5780,19 @@
 				const b = [];
 				if (t.isTypeaheadSuggestion) f = i(t);
 				else {
-					if (b.push(`${a.z}=${Object(s.b)(t.rawQuery||t.searchQuery)}`), f = `/${d}`, t.section !== o.c.trending && t.section !== o.c.recent || n && n.source && b.push(`source=${n.source}`), null == l ? void 0 : l.enabled) switch (l.type) {
+					if (b.push(`${a.y}=${Object(s.b)(t.rawQuery||t.searchQuery)}`), f = `/${d}`, t.section !== o.c.trending && t.section !== o.c.recent || n && n.source && b.push(`source=${n.source}`), null == l ? void 0 : l.enabled) switch (l.type) {
 						case r.dc.Subreddit:
 							const e = l.payload;
-							f = `${e.url}${d}`, b.push(`${a.C}=1`), b.push(`${a.L}=${e.isNSFW?"1":""}`);
+							f = `${e.url}${d}`, b.push(`${a.B}=1`), b.push(`${a.K}=${e.isNSFW?"1":""}`);
 							break;
 						case r.dc.Multireddit:
 							const t = l.payload;
-							f = `${t.url}${d}`, b.push(`${a.C}=1`), b.push(`${a.L}=${t.isNSFW?"1":""}`), b.push(`${a.n}=1`);
+							f = `${t.url}${d}`, b.push(`${a.B}=1`), b.push(`${a.K}=${t.isNSFW?"1":""}`), b.push(`${a.m}=1`);
 							break;
 						case r.dc.SyntaxScoped:
-							f = `/${Object(c.a)(null===(p=l.payload)||void 0===p?void 0:p.title)}${d}`, b.push(`${a.C}=1`)
-					} else t.subredditOrProfileRestrictedName && (f = `${t.subredditOrProfileRestrictedName}${d}`, b.push(`${a.C}=1`));
-					u && b.push(`${a.m}=1`), (null == n ? void 0 : n.t) && n.t !== r.oc.ALL && b.push(`${a.O}=${n.t}`), (null == n ? void 0 : n.sort) && b.push(`${a.I}=${n.sort}`), (null == n ? void 0 : n.type) && (n.type.includes(r.ic.Posts) || b.push(`${a.P}=${n.type[0]}`))
+							f = `/${Object(c.a)(null===(p=l.payload)||void 0===p?void 0:p.title)}${d}`, b.push(`${a.B}=1`)
+					} else t.subredditOrProfileRestrictedName && (f = `${t.subredditOrProfileRestrictedName}${d}`, b.push(`${a.B}=1`));
+					u && b.push(`${a.l}=1`), (null == n ? void 0 : n.t) && n.t !== r.oc.ALL && b.push(`${a.N}=${n.t}`), (null == n ? void 0 : n.sort) && b.push(`${a.H}=${n.sort}`), (null == n ? void 0 : n.type) && (n.type.includes(r.ic.Posts) || b.push(`${a.O}=${n.type[0]}`))
 				}
 				return {
 					url: f,
@@ -26221,4 +26221,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.bddbabedfaec718accad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.78a6fa368dfd2b696bb4.js.map

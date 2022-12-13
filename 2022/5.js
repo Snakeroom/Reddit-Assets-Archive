@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/5.100b510330598332cb83.js
-// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/5.154191f76f47d34c8eef.js
+// Retrieved at 12/13/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[5], {
 		"./src/reddit/actions/pages/emailVerification.ts": function(e, t, i) {
@@ -16,7 +16,7 @@
 				o = i("./src/telemetry/index.ts"),
 				u = i("./src/reddit/actions/emailVerification.ts");
 			const _ = e => async (t, i) => {
-				await t(s.B());
+				await t(s.A());
 				const _ = i(),
 					l = e.params.verificationToken,
 					m = e.queryParams && e.queryParams.source;
@@ -27,4 +27,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/5.100b510330598332cb83.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/5.154191f76f47d34c8eef.js.map

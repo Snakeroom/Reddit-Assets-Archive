@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.2cea86f3153937a5dd6c.js
-// Retrieved at 12/6/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.0010e4ddf91b286c5f73.js
+// Retrieved at 12/13/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -212,7 +212,7 @@
 				} = t;
 				return {
 					continueToQuarantinedSubreddit: async () => {
-						await e(h.E(n)), window.location.reload()
+						await e(h.D(n)), window.location.reload()
 					},
 					continueToGatedSubreddit: async () => {
 						await e(h.v(n)), window.location.reload()
@@ -248,7 +248,7 @@
 				} = e, q = async () => {
 					if (s ? await R() : await Object(m.q)(), u) {
 						const e = new URL(window.location.href);
-						e.searchParams.set(C.k, "1"), window.location.href = e.href
+						e.searchParams.set(C.j, "1"), window.location.href = e.href
 					} else window.location.reload()
 				};
 				switch (n) {
@@ -583,4 +583,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.2cea86f3153937a5dd6c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.0010e4ddf91b286c5f73.js.map

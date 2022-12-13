@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.4393c5d6d1674b3817a3.js
-// Retrieved at 12/12/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.6f56169a3f75d5c40b75.js
+// Retrieved at 12/13/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -156,9 +156,9 @@
 				v = n("./src/reddit/components/Hovercards/SubredditHovercard/index.tsx"),
 				w = n("./src/reddit/controls/InternalLink/index.tsx"),
 				T = n("./src/reddit/endpoints/goodContent/index.ts"),
-				C = n("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
-				F = n("./src/reddit/components/SEOSidebarLinks/index.m.less"),
-				P = n.n(F);
+				F = n("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
+				C = n("./src/reddit/components/SEOSidebarLinks/index.m.less"),
+				P = n.n(C);
 			const A = e => {
 					let {
 						to: t,
@@ -192,7 +192,7 @@
 						onClick: r
 					}, d.a.createElement("div", {
 						className: P.a.SectionTitle
-					}, t), d.a.createElement(C.a, {
+					}, t), d.a.createElement(F.a, {
 						className: P.a.SectionChevron
 					})), d.a.createElement("div", {
 						className: P.a.SectionBody
@@ -306,13 +306,13 @@
 					}
 				}
 				async getSubredditForAdoption() {
-					let e = ie.cachedData || Object(X.C)(M.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
+					let e = ie.cachedData || Object(X.B)(M.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
 					if (!e || Date.now() - e.fetchedAt > ae) {
 						const t = await $(this.props.apiContext());
 						t.ok && (e = {
 							subreddits: t.body.data.subreddits.map(e => e.name),
 							fetchedAt: Date.now()
-						}, Object(X.Jb)(M.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
+						}, Object(X.Eb)(M.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
 					}
 					return ie.cachedData = e, e ? e.subreddits : []
 				}
@@ -624,8 +624,8 @@
 				}),
 				url: "cryptocurrency"
 			}];
-			var Ce = n("./src/reddit/components/Widgets/Aggregate/TopicsList/index.m.less"),
-				Fe = n.n(Ce);
+			var Fe = n("./src/reddit/components/Widgets/Aggregate/TopicsList/index.m.less"),
+				Ce = n.n(Fe);
 			const Pe = () => {
 					const e = `${ye.a.assetPath}/img/banner/banner-medium@2x.png`,
 						t = O.fbt._("Find Your Next Community!", null, {
@@ -635,17 +635,17 @@
 							backgroundImage: `url(${e})`
 						};
 					return d.a.createElement("div", {
-						className: Fe.a.banner,
+						className: Ce.a.banner,
 						style: n
 					}, d.a.createElement("h2", {
-						className: Fe.a.bannerText
+						className: Ce.a.bannerText
 					}, t))
 				},
 				Ae = e => `/t/${e}?activeTab=communities`,
 				Le = e => {
 					const t = e.topic.getName();
 					return d.a.createElement("div", {
-						className: Fe.a.itemContainer
+						className: Ce.a.itemContainer
 					}, d.a.createElement(je.a, {
 						to: Ae(e.topic.url),
 						onClick: () => e.sendEvent(Object(ve.c)(t))
@@ -664,7 +664,7 @@
 						styles: e.widget && e.widget.styles,
 						widgetKind: e.widget && e.widget.kind
 					}, d.a.createElement(Pe, null), d.a.createElement("div", {
-						className: Fe.a.container
+						className: Ce.a.container
 					}, n.map(e => d.a.createElement(Le, {
 						key: e.url,
 						topic: e,
@@ -1514,4 +1514,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.4393c5d6d1674b3817a3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.6f56169a3f75d5c40b75.js.map

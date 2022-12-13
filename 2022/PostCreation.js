@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.22a12a5cf3369a95e941.js
-// Retrieved at 12/12/2022, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.3739b3fb0b8571dc8cbf.js
+// Retrieved at 12/13/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit", "ContributorRequestButton"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, n) {},
@@ -7023,8 +7023,8 @@
 					const n = t ? `/r/${t}/search` : "/search",
 						o = `${t?"flair_name":"flair"}:"${e}"`;
 					return Object(d.a)(n, {
-						[C.z]: o,
-						[C.C]: t ? "1" : ""
+						[C.y]: o,
+						[C.B]: t ? "1" : ""
 					})
 				},
 				L = e => e.isFlairFilter ? c.a.createElement(x.default, {
@@ -30441,7 +30441,7 @@
 						const {
 							doNotShowOriginalContentDisclaimerClicked: e
 						} = this.props;
-						e(), Object(Gt.ub)(Kt.ORIGINAL_CONTENT_DISCLAIMER, !0), this.setState({
+						e(), Object(Gt.pb)(Kt.ORIGINAL_CONTENT_DISCLAIMER, !0), this.setState({
 							showOCDisclaimer: !1
 						})
 					}, this.handleOriginalContentClick = () => {
@@ -30462,7 +30462,7 @@
 				}
 				componentDidMount() {
 					this.setState({
-						showOCDisclaimer: !Object(Gt.i)(Kt.ORIGINAL_CONTENT_DISCLAIMER)
+						showOCDisclaimer: !Object(Gt.h)(Kt.ORIGINAL_CONTENT_DISCLAIMER)
 					})
 				}
 				render() {
@@ -30713,14 +30713,14 @@
 				Tn = n("./src/reddit/helpers/trackers/postCollection.ts");
 			const wn = [{
 					id: Ht.d,
-					getShowTimesLeft: Gt.L,
-					setShowTimesLeft: Gt.Qb,
+					getShowTimesLeft: Gt.K,
+					setShowTimesLeft: Gt.Lb,
 					tooltipShown: Tn.n,
 					tooltipDismissed: Tn.m
 				}, {
 					id: Ht.c,
-					getShowTimesLeft: Gt.K,
-					setShowTimesLeft: Gt.Pb,
+					getShowTimesLeft: Gt.J,
+					setShowTimesLeft: Gt.Kb,
 					tooltipShown: Tn.f,
 					tooltipDismissed: Tn.e
 				}],
@@ -37954,29 +37954,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.ug
+						experimentName: o.rg
 					}) === o.Rd
 				},
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.vg
+						experimentName: o.sg
 					}) === o.Rd
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.tg
+						experimentName: o.qg
 					});
-					return t === o.kg.TypingIndicators || t === o.kg.IndicatorsPlusCTA
+					return t === o.hg.TypingIndicators || t === o.hg.IndicatorsPlusCTA
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.d)(e, {
-						experimentName: o.tg
+						experimentName: o.qg
 					});
-					return (null == t ? void 0 : t.variant) === o.kg.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.hg.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -38650,4 +38650,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.22a12a5cf3369a95e941.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.3739b3fb0b8571dc8cbf.js.map

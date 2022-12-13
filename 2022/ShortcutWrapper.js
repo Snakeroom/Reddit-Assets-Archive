@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ShortcutWrapper.d5d6f4d8f0508df37ea9.js
-// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ShortcutWrapper.3669df75da202405f910.js
+// Retrieved at 12/13/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ShortcutWrapper"], {
 		"./node_modules/combokeys/Combokeys/index.js": function(e, t, o) {
@@ -40,16 +40,16 @@
 					}
 				}
 
-				function c(t) {
+				function a(t) {
 					var i;
 					r.fireCallback(s, t, e), "keyup" !== n && (i = o("./node_modules/combokeys/helpers/characterFromEvent.js"), r.ignoreNextKeyup = i(t)), setTimeout((function() {
 						r.resetSequences()
 					}), 10)
 				}
 				r.sequenceLevels[e] = 0;
-				for (var a = 0; a < t.length; ++a) {
-					var l = a + 1 === t.length ? c : i(n || r.getKeyInfo(t[a + 1]).action);
-					r.bindSingle(t[a], l, n, e, a)
+				for (var c = 0; c < t.length; ++c) {
+					var l = c + 1 === t.length ? a : i(n || r.getKeyInfo(t[c + 1]).action);
+					r.bindSingle(t[c], l, n, e, c)
 				}
 			}
 		},
@@ -94,8 +94,8 @@
 		"./node_modules/combokeys/Combokeys/prototype/getKeyInfo.js": function(e, t, o) {
 			"use strict";
 			e.exports = function(e, t) {
-				var s, n, r, i, c, a, l = [];
-				for (s = o("./node_modules/combokeys/helpers/keysFromString.js")(e), i = o("./node_modules/combokeys/helpers/special-aliases.js"), c = o("./node_modules/combokeys/helpers/shift-map.js"), a = o("./node_modules/combokeys/helpers/isModifier.js"), r = 0; r < s.length; ++r) i[n = s[r]] && (n = i[n]), t && "keypress" !== t && c[n] && (n = c[n], l.push("shift")), a(n) && l.push(n);
+				var s, n, r, i, a, c, l = [];
+				for (s = o("./node_modules/combokeys/helpers/keysFromString.js")(e), i = o("./node_modules/combokeys/helpers/special-aliases.js"), a = o("./node_modules/combokeys/helpers/shift-map.js"), c = o("./node_modules/combokeys/helpers/isModifier.js"), r = 0; r < s.length; ++r) i[n = s[r]] && (n = i[n]), t && "keypress" !== t && a[n] && (n = a[n], l.push("shift")), c(n) && l.push(n);
 				return {
 					key: n,
 					modifiers: l,
@@ -106,17 +106,17 @@
 		"./node_modules/combokeys/Combokeys/prototype/getMatches.js": function(e, t, o) {
 			"use strict";
 			e.exports = function(e, t, s, n, r, i) {
-				var c, a, l, u, d = [],
+				var a, c, l, u, d = [],
 					p = s.type;
 				"keypress" !== p || s.code && "Arrow" === s.code.slice(0, 5) || (this.callbacks["any-character"] || []).forEach((function(e) {
 					d.push(e)
 				}));
 				if (!this.callbacks[e]) return d;
-				for (l = o("./node_modules/combokeys/helpers/isModifier.js"), "keyup" === p && l(e) && (t = [e]), c = 0; c < this.callbacks[e].length; ++c)
-					if (a = this.callbacks[e][c], (n || !a.seq || this.sequenceLevels[a.seq] === a.level) && p === a.action && (u = o("./node_modules/combokeys/Combokeys/prototype/modifiersMatch.js"), "keypress" === p && !s.metaKey && !s.ctrlKey || u(t, a.modifiers))) {
-						var m = !n && a.combo === r,
-							b = n && a.seq === n && a.level === i;
-						(m || b) && this.callbacks[e].splice(c, 1), d.push(a)
+				for (l = o("./node_modules/combokeys/helpers/isModifier.js"), "keyup" === p && l(e) && (t = [e]), a = 0; a < this.callbacks[e].length; ++a)
+					if (c = this.callbacks[e][a], (n || !c.seq || this.sequenceLevels[c.seq] === c.level) && p === c.action && (u = o("./node_modules/combokeys/Combokeys/prototype/modifiersMatch.js"), "keypress" === p && !s.metaKey && !s.ctrlKey || u(t, c.modifiers))) {
+						var m = !n && c.combo === r,
+							b = n && c.seq === n && c.level === i;
+						(m || b) && this.callbacks[e].splice(a, 1), d.push(c)
 					} return d
 			}
 		},
@@ -132,16 +132,16 @@
 		"./node_modules/combokeys/Combokeys/prototype/handleKey.js": function(e, t, o) {
 			"use strict";
 			e.exports = function(e, t, s) {
-				var n, r, i, c, a = {},
+				var n, r, i, a, c = {},
 					l = 0,
 					u = !1;
 				for (n = this.getMatches(e, t, s), r = 0; r < n.length; ++r) n[r].seq && (l = Math.max(l, n[r].level));
 				for (r = 0; r < n.length; ++r)
 					if (n[r].seq) {
 						if (n[r].level !== l) continue;
-						u = !0, a[n[r].seq] = 1, this.fireCallback(n[r].callback, s, n[r].combo, n[r].seq)
+						u = !0, c[n[r].seq] = 1, this.fireCallback(n[r].callback, s, n[r].combo, n[r].seq)
 					} else u || this.fireCallback(n[r].callback, s, n[r].combo);
-				c = "keypress" === s.type && this.ignoreNextKeypress, i = o("./node_modules/combokeys/helpers/isModifier.js"), s.type !== this.nextExpectedAction || i(e) || c || this.resetSequences(a), this.ignoreNextKeypress = u && "keydown" === s.type
+				a = "keypress" === s.type && this.ignoreNextKeypress, i = o("./node_modules/combokeys/helpers/isModifier.js"), s.type !== this.nextExpectedAction || i(e) || a || this.resetSequences(c), this.ignoreNextKeypress = u && "keydown" === s.type
 			}
 		},
 		"./node_modules/combokeys/Combokeys/prototype/handleKeyEvent.js": function(e, t, o) {
@@ -366,9 +366,9 @@
 							object: !0
 						},
 						i = r[typeof window] && window || this,
-						c = r[typeof t] && t,
-						a = r[typeof e] && e && !e.nodeType && e,
-						l = c && a && "object" == typeof s && s;
+						a = r[typeof t] && t,
+						c = r[typeof e] && e && !e.nodeType && e,
+						l = a && c && "object" == typeof s && s;
 					!l || l.global !== l && l.window !== l && l.self !== l || (i = l);
 					var u = Math.pow(2, 53) - 1,
 						d = /\bOpera/,
@@ -419,7 +419,7 @@
 						var n = o.navigator || {},
 							r = n.userAgent || "";
 						t || (t = r);
-						var c, a, l, u, p, m = s ? !!n.likeChrome : /\bChrome\b/.test(t) && !/internal|\n/i.test(b.toString()),
+						var a, c, l, u, p, m = s ? !!n.likeChrome : /\bChrome\b/.test(t) && !/internal|\n/i.test(b.toString()),
 							f = s ? "Object" : "ScriptBridgingProxyObject",
 							_ = s ? "Object" : "Environment",
 							S = s && o.java ? "JavaPackage" : x(o.java),
@@ -483,7 +483,7 @@
 								label: "IE",
 								pattern: "MSIE"
 							}, "Safari"]),
-							W = q([{
+							W = G([{
 								label: "BlackBerry",
 								pattern: "BB10"
 							}, "BlackBerry", {
@@ -581,7 +581,7 @@
 									"PlayStation Vita": 1
 								}
 							}),
-							G = function(e) {
+							q = function(e) {
 								return v(e, (function(e, o) {
 									var s = o.pattern || k(o);
 									return !e && (e = RegExp("\\b" + s + "(?:/[\\d.]+|[ \\w.]*)", "i").exec(t)) && (e = function(e, t, o) {
@@ -607,47 +607,47 @@
 								pattern: "CrOS"
 							}, "Debian", "Fedora", "FreeBSD", "Gentoo", "Haiku", "Kubuntu", "Linux Mint", "OpenBSD", "Red Hat", "SuSE", "Ubuntu", "Xubuntu", "Cygwin", "Symbian OS", "hpwOS", "webOS ", "webOS", "Tablet OS", "Tizen", "Linux", "Mac OS X", "Macintosh", "Mac", "Windows 98;", "Windows "]);
 
-						function q(e) {
+						function G(e) {
 							return v(e, (function(e, o) {
 								var s = o.pattern || k(o);
 								return !e && (e = RegExp("\\b" + s + " *\\d+[.\\w_]*", "i").exec(t) || RegExp("\\b" + s + " *\\w+-[\\w]*", "i").exec(t) || RegExp("\\b" + s + "(?:; *(?:[a-z]+[_-])?[a-z]+\\d+|[^ ();-]*)", "i").exec(t)) && ((e = String(o.label && !RegExp(s, "i").test(o.label) ? o.label : e).split("/"))[1] && !/[\d.]+/.test(e[0]) && (e[0] += " " + e[1]), o = o.label || o, e = y(e[0].replace(RegExp(s, "i"), o).replace(RegExp("; *(?:" + o + "[_-])?", "i"), " ").replace(RegExp("(" + o + ")[-_.]?(\\w)", "i"), "$1 $2"))), e
 							}))
 						}
-						if (B && (B = [B]), F && !W && (W = q([F])), (c = /\bGoogle TV\b/.exec(W)) && (W = c[0]), /\bSimulator\b/i.test(t) && (W = (W ? W + " " : "") + "Simulator"), "Opera Mini" == L && /\bOPiOS\b/.test(t) && I.push("running in Turbo/Uncompressed mode"), "IE" == L && /\blike iPhone OS\b/.test(t) ? (F = (c = e(t.replace(/like iPhone OS/, ""))).manufacturer, W = c.product) : /^iP/.test(W) ? (L || (L = "Safari"), G = "iOS" + ((c = / OS ([\d_]+)/i.exec(t)) ? " " + c[1].replace(/_/g, ".") : "")) : "Konqueror" != L || /buntu/i.test(G) ? F && "Google" != F && (/Chrome/.test(L) && !/\bMobile Safari\b/i.test(t) || /\bVita\b/.test(W)) || /\bAndroid\b/.test(G) && /^Chrome/.test(L) && /\bVersion\//i.test(t) ? (L = "Android Browser", G = /\bAndroid\b/.test(G) ? G : "Android") : "Silk" == L ? (/\bMobi/i.test(t) || (G = "Android", I.unshift("desktop mode")), /Accelerated *= *true/i.test(t) && I.unshift("accelerated")) : "PaleMoon" == L && (c = /\bFirefox\/([\d.]+)\b/.exec(t)) ? I.push("identifying as Firefox " + c[1]) : "Firefox" == L && (c = /\b(Mobile|Tablet|TV)\b/i.exec(t)) ? (G || (G = "Firefox OS"), W || (W = c[1])) : !L || (c = !/\bMinefield\b/i.test(t) && /\b(?:Firefox|Safari)\b/.exec(L)) ? (L && !W && /[\/,]|^[^(]+?\)/.test(t.slice(t.indexOf(c + "/") + 8)) && (L = null), (c = W || F || G) && (W || F || /\b(?:Android|Symbian OS|Tablet OS|webOS)\b/.test(G)) && (L = /[a-z]+(?: Hat)?/i.exec(/\bAndroid\b/.test(G) ? G : c) + " Browser")) : "Electron" == L && (c = (/\bChrome\/([\d.]+)\b/.exec(t) || 0)[1]) && I.push("Chromium " + c) : G = "Kubuntu", K || (K = v(["(?:Cloud9|CriOS|CrMo|Edge|FxiOS|IEMobile|Iron|Opera ?Mini|OPiOS|OPR|Raven|SamsungBrowser|Silk(?!/[\\d.]+$))", "Version", k(L), "(?:Firefox|Minefield|NetFront)"], (function(e, o) {
+						if (B && (B = [B]), F && !W && (W = G([F])), (a = /\bGoogle TV\b/.exec(W)) && (W = a[0]), /\bSimulator\b/i.test(t) && (W = (W ? W + " " : "") + "Simulator"), "Opera Mini" == L && /\bOPiOS\b/.test(t) && I.push("running in Turbo/Uncompressed mode"), "IE" == L && /\blike iPhone OS\b/.test(t) ? (F = (a = e(t.replace(/like iPhone OS/, ""))).manufacturer, W = a.product) : /^iP/.test(W) ? (L || (L = "Safari"), q = "iOS" + ((a = / OS ([\d_]+)/i.exec(t)) ? " " + a[1].replace(/_/g, ".") : "")) : "Konqueror" != L || /buntu/i.test(q) ? F && "Google" != F && (/Chrome/.test(L) && !/\bMobile Safari\b/i.test(t) || /\bVita\b/.test(W)) || /\bAndroid\b/.test(q) && /^Chrome/.test(L) && /\bVersion\//i.test(t) ? (L = "Android Browser", q = /\bAndroid\b/.test(q) ? q : "Android") : "Silk" == L ? (/\bMobi/i.test(t) || (q = "Android", I.unshift("desktop mode")), /Accelerated *= *true/i.test(t) && I.unshift("accelerated")) : "PaleMoon" == L && (a = /\bFirefox\/([\d.]+)\b/.exec(t)) ? I.push("identifying as Firefox " + a[1]) : "Firefox" == L && (a = /\b(Mobile|Tablet|TV)\b/i.exec(t)) ? (q || (q = "Firefox OS"), W || (W = a[1])) : !L || (a = !/\bMinefield\b/i.test(t) && /\b(?:Firefox|Safari)\b/.exec(L)) ? (L && !W && /[\/,]|^[^(]+?\)/.test(t.slice(t.indexOf(a + "/") + 8)) && (L = null), (a = W || F || q) && (W || F || /\b(?:Android|Symbian OS|Tablet OS|webOS)\b/.test(q)) && (L = /[a-z]+(?: Hat)?/i.exec(/\bAndroid\b/.test(q) ? q : a) + " Browser")) : "Electron" == L && (a = (/\bChrome\/([\d.]+)\b/.exec(t) || 0)[1]) && I.push("Chromium " + a) : q = "Kubuntu", K || (K = v(["(?:Cloud9|CriOS|CrMo|Edge|FxiOS|IEMobile|Iron|Opera ?Mini|OPiOS|OPR|Raven|SamsungBrowser|Silk(?!/[\\d.]+$))", "Version", k(L), "(?:Firefox|Minefield|NetFront)"], (function(e, o) {
 								return e || (RegExp(o + "(?:-[\\d.]+/|(?: for [\\w-]+)?[ /-])([\\d.]+[^ ();/_-]*)", "i").exec(t) || 0)[1] || null
-							}))), (c = ("iCab" == B && parseFloat(K) > 3 ? "WebKit" : /\bOpera\b/.test(L) && (/\bOPR\b/.test(t) ? "Blink" : "Presto")) || /\b(?:Midori|Nook|Safari)\b/i.test(t) && !/^(?:Trident|EdgeHTML)$/.test(B) && "WebKit" || !B && /\bMSIE\b/i.test(t) && ("Mac OS" == G ? "Tasman" : "Trident") || "WebKit" == B && /\bPlayStation\b(?! Vita\b)/i.test(L) && "NetFront") && (B = [c]), "IE" == L && (c = (/; *(?:XBLWP|ZuneWP)(\d+)/i.exec(t) || 0)[1]) ? (L += " Mobile", G = "Windows Phone " + (/\+$/.test(c) ? c : c + ".x"), I.unshift("desktop mode")) : /\bWPDesktop\b/i.test(t) ? (L = "IE Mobile", G = "Windows Phone 8.x", I.unshift("desktop mode"), K || (K = (/\brv:([\d.]+)/.exec(t) || 0)[1])) : "IE" != L && "Trident" == B && (c = /\brv:([\d.]+)/.exec(t)) && (L && I.push("identifying as " + L + (K ? " " + K : "")), L = "IE", K = c[1]), R) {
-							if (u = "global", p = null != (l = o) ? typeof l[u] : "number", /^(?:boolean|number|string|undefined)$/.test(p) || "object" == p && !l[u]) x(c = o.runtime) == f ? (L = "Adobe AIR", G = c.flash.system.Capabilities.os) : x(c = o.phantom) == j ? (L = "PhantomJS", K = (c = c.version || null) && c.major + "." + c.minor + "." + c.patch) : "number" == typeof P.documentMode && (c = /\bTrident\/(\d+)/i.exec(t)) ? (K = [K, P.documentMode], (c = +c[1] + 4) != K[1] && (I.push("IE " + K[1] + " mode"), B && (B[1] = ""), K[1] = c), K = "IE" == L ? String(K[1].toFixed(1)) : K[0]) : "number" == typeof P.documentMode && /^(?:Chrome|Firefox)\b/.test(L) && (I.push("masking as " + L + " " + K), L = "IE", K = "11.0", B = ["Trident"], G = "Windows");
-							else if (O && (N = (c = O.lang.System).getProperty("os.arch"), G = G || c.getProperty("os.name") + " " + c.getProperty("os.version")), C) {
+							}))), (a = ("iCab" == B && parseFloat(K) > 3 ? "WebKit" : /\bOpera\b/.test(L) && (/\bOPR\b/.test(t) ? "Blink" : "Presto")) || /\b(?:Midori|Nook|Safari)\b/i.test(t) && !/^(?:Trident|EdgeHTML)$/.test(B) && "WebKit" || !B && /\bMSIE\b/i.test(t) && ("Mac OS" == q ? "Tasman" : "Trident") || "WebKit" == B && /\bPlayStation\b(?! Vita\b)/i.test(L) && "NetFront") && (B = [a]), "IE" == L && (a = (/; *(?:XBLWP|ZuneWP)(\d+)/i.exec(t) || 0)[1]) ? (L += " Mobile", q = "Windows Phone " + (/\+$/.test(a) ? a : a + ".x"), I.unshift("desktop mode")) : /\bWPDesktop\b/i.test(t) ? (L = "IE Mobile", q = "Windows Phone 8.x", I.unshift("desktop mode"), K || (K = (/\brv:([\d.]+)/.exec(t) || 0)[1])) : "IE" != L && "Trident" == B && (a = /\brv:([\d.]+)/.exec(t)) && (L && I.push("identifying as " + L + (K ? " " + K : "")), L = "IE", K = a[1]), R) {
+							if (u = "global", p = null != (l = o) ? typeof l[u] : "number", /^(?:boolean|number|string|undefined)$/.test(p) || "object" == p && !l[u]) x(a = o.runtime) == f ? (L = "Adobe AIR", q = a.flash.system.Capabilities.os) : x(a = o.phantom) == j ? (L = "PhantomJS", K = (a = a.version || null) && a.major + "." + a.minor + "." + a.patch) : "number" == typeof P.documentMode && (a = /\bTrident\/(\d+)/i.exec(t)) ? (K = [K, P.documentMode], (a = +a[1] + 4) != K[1] && (I.push("IE " + K[1] + " mode"), B && (B[1] = ""), K[1] = a), K = "IE" == L ? String(K[1].toFixed(1)) : K[0]) : "number" == typeof P.documentMode && /^(?:Chrome|Firefox)\b/.test(L) && (I.push("masking as " + L + " " + K), L = "IE", K = "11.0", B = ["Trident"], q = "Windows");
+							else if (O && (N = (a = O.lang.System).getProperty("os.arch"), q = q || a.getProperty("os.name") + " " + a.getProperty("os.version")), C) {
 								try {
 									K = o.require("ringo/engine").version.join("."), L = "RingoJS"
 								} catch ($) {
-									(c = o.system) && c.global.system == o.system && (L = "Narwhal", G || (G = c[0].os || null))
+									(a = o.system) && a.global.system == o.system && (L = "Narwhal", q || (q = a[0].os || null))
 								}
 								L || (L = "Rhino")
-							} else "object" == typeof o.process && !o.process.browser && (c = o.process) && ("object" == typeof c.versions && ("string" == typeof c.versions.electron ? (I.push("Node " + c.versions.node), L = "Electron", K = c.versions.electron) : "string" == typeof c.versions.nw && (I.push("Chromium " + K, "Node " + c.versions.node), L = "NW.js", K = c.versions.nw)), L || (L = "Node.js", N = c.arch, G = c.platform, K = (K = /[\d.]+/.exec(c.version)) ? K[0] : null));
-							G = G && y(G)
+							} else "object" == typeof o.process && !o.process.browser && (a = o.process) && ("object" == typeof a.versions && ("string" == typeof a.versions.electron ? (I.push("Node " + a.versions.node), L = "Electron", K = a.versions.electron) : "string" == typeof a.versions.nw && (I.push("Chromium " + K, "Node " + a.versions.node), L = "NW.js", K = a.versions.nw)), L || (L = "Node.js", N = a.arch, q = a.platform, K = (K = /[\d.]+/.exec(a.version)) ? K[0] : null));
+							q = q && y(q)
 						}
-						if (K && (c = /(?:[ab]|dp|pre|[ab]\d+pre)(?:\d+\+?)?$/i.exec(K) || /(?:alpha|beta)(?: ?\d)?/i.exec(t + ";" + (R && n.appMinorVersion)) || /\bMinefield\b/i.test(t) && "a") && (A = /b/i.test(c) ? "beta" : "alpha", K = K.replace(RegExp(c + "\\+?$"), "") + ("beta" == A ? w : E) + (/\d+\+?/.exec(c) || "")), "Fennec" == L || "Firefox" == L && /\b(?:Android|Firefox OS)\b/.test(G)) L = "Firefox Mobile";
+						if (K && (a = /(?:[ab]|dp|pre|[ab]\d+pre)(?:\d+\+?)?$/i.exec(K) || /(?:alpha|beta)(?: ?\d)?/i.exec(t + ";" + (R && n.appMinorVersion)) || /\bMinefield\b/i.test(t) && "a") && (A = /b/i.test(a) ? "beta" : "alpha", K = K.replace(RegExp(a + "\\+?$"), "") + ("beta" == A ? w : E) + (/\d+\+?/.exec(a) || "")), "Fennec" == L || "Firefox" == L && /\b(?:Android|Firefox OS)\b/.test(q)) L = "Firefox Mobile";
 						else if ("Maxthon" == L && K) K = K.replace(/\.[\d.]+/, ".x");
-						else if (/\bXbox\b/i.test(W)) "Xbox 360" == W && (G = null), "Xbox 360" == W && /\bIEMobile\b/.test(t) && I.unshift("mobile mode");
-						else if (!/^(?:Chrome|IE|Opera)$/.test(L) && (!L || W || /Browser|Mobi/.test(L)) || "Windows CE" != G && !/Mobi/i.test(t))
+						else if (/\bXbox\b/i.test(W)) "Xbox 360" == W && (q = null), "Xbox 360" == W && /\bIEMobile\b/.test(t) && I.unshift("mobile mode");
+						else if (!/^(?:Chrome|IE|Opera)$/.test(L) && (!L || W || /Browser|Mobi/.test(L)) || "Windows CE" != q && !/Mobi/i.test(t))
 							if ("IE" == L && R) try {
 								null === o.external && I.unshift("platform preview")
 							} catch ($) {
 								I.unshift("embedded")
-							} else(/\bBlackBerry\b/.test(W) || /\bBB10\b/.test(t)) && (c = (RegExp(W.replace(/ +/g, " *") + "/([.\\d]+)", "i").exec(t) || 0)[1] || K) ? (G = ((c = [c, /BB10/.test(t)])[1] ? (W = null, F = "BlackBerry") : "Device Software") + " " + c[0], K = null) : this != h && "Wii" != W && (R && M || /Opera/.test(L) && /\b(?:MSIE|Firefox)\b/i.test(t) || "Firefox" == L && /\bOS X (?:\d+\.){2,}/.test(G) || "IE" == L && (G && !/^Win/.test(G) && K > 5.5 || /\bWindows XP\b/.test(G) && K > 8 || 8 == K && !/\bTrident\b/.test(t))) && !d.test(c = e.call(h, t.replace(d, "") + ";")) && c.name && (c = "ing as " + c.name + ((c = c.version) ? " " + c : ""), d.test(L) ? (/\bIE\b/.test(c) && "Mac OS" == G && (G = null), c = "identify" + c) : (c = "mask" + c, L = T ? y(T.replace(/([a-z])([A-Z])/g, "$1 $2")) : "Opera", /\bIE\b/.test(c) && (G = null), R || (K = null)), B = ["Presto"], I.push(c));
+							} else(/\bBlackBerry\b/.test(W) || /\bBB10\b/.test(t)) && (a = (RegExp(W.replace(/ +/g, " *") + "/([.\\d]+)", "i").exec(t) || 0)[1] || K) ? (q = ((a = [a, /BB10/.test(t)])[1] ? (W = null, F = "BlackBerry") : "Device Software") + " " + a[0], K = null) : this != h && "Wii" != W && (R && M || /Opera/.test(L) && /\b(?:MSIE|Firefox)\b/i.test(t) || "Firefox" == L && /\bOS X (?:\d+\.){2,}/.test(q) || "IE" == L && (q && !/^Win/.test(q) && K > 5.5 || /\bWindows XP\b/.test(q) && K > 8 || 8 == K && !/\bTrident\b/.test(t))) && !d.test(a = e.call(h, t.replace(d, "") + ";")) && a.name && (a = "ing as " + a.name + ((a = a.version) ? " " + a : ""), d.test(L) ? (/\bIE\b/.test(a) && "Mac OS" == q && (q = null), a = "identify" + a) : (a = "mask" + a, L = T ? y(T.replace(/([a-z])([A-Z])/g, "$1 $2")) : "Opera", /\bIE\b/.test(a) && (q = null), R || (K = null)), B = ["Presto"], I.push(a));
 							else L += " Mobile";
-						(c = (/\bAppleWebKit\/([\d.]+\+?)/i.exec(t) || 0)[1]) && (c = [parseFloat(c.replace(/\.(\d)$/, ".0$1")), c], "Safari" == L && "+" == c[1].slice(-1) ? (L = "WebKit Nightly", A = "alpha", K = c[1].slice(0, -1)) : K != c[1] && K != (c[2] = (/\bSafari\/([\d.]+\+?)/i.exec(t) || 0)[1]) || (K = null), c[1] = (/\bChrome\/([\d.]+)/i.exec(t) || 0)[1], 537.36 == c[0] && 537.36 == c[2] && parseFloat(c[1]) >= 28 && "WebKit" == B && (B = ["Blink"]), R && (m || c[1]) ? (B && (B[1] = "like Chrome"), c = c[1] || ((c = c[0]) < 530 ? 1 : c < 532 ? 2 : c < 532.05 ? 3 : c < 533 ? 4 : c < 534.03 ? 5 : c < 534.07 ? 6 : c < 534.1 ? 7 : c < 534.13 ? 8 : c < 534.16 ? 9 : c < 534.24 ? 10 : c < 534.3 ? 11 : c < 535.01 ? 12 : c < 535.02 ? "13+" : c < 535.07 ? 15 : c < 535.11 ? 16 : c < 535.19 ? 17 : c < 536.05 ? 18 : c < 536.1 ? 19 : c < 537.01 ? 20 : c < 537.11 ? "21+" : c < 537.13 ? 23 : c < 537.18 ? 24 : c < 537.24 ? 25 : c < 537.36 ? 26 : "Blink" != B ? "27" : "28")) : (B && (B[1] = "like Safari"), c = (c = c[0]) < 400 ? 1 : c < 500 ? 2 : c < 526 ? 3 : c < 533 ? 4 : c < 534 ? "4+" : c < 535 ? 5 : c < 537 ? 6 : c < 538 ? 7 : c < 601 ? 8 : "8"), B && (B[1] += " " + (c += "number" == typeof c ? ".x" : /[.+]/.test(c) ? "" : "+")), "Safari" == L && (!K || parseInt(K) > 45) && (K = c)), "Opera" == L && (c = /\bzbov|zvav$/.exec(G)) ? (L += " ", I.unshift("desktop mode"), "zvav" == c ? (L += "Mini", K = null) : L += "Mobile", G = G.replace(RegExp(" *" + c + "$"), "")) : "Safari" == L && /\bChrome\b/.exec(B && B[1]) && (I.unshift("desktop mode"), L = "Chrome Mobile", K = null, /\bOS X\b/.test(G) ? (F = "Apple", G = "iOS 4.3+") : G = null), K && 0 == K.indexOf(c = /[\d.]+$/.exec(G)) && t.indexOf("/" + c + "-") > -1 && (G = g(G.replace(c, ""))), B && !/\b(?:Avant|Nook)\b/.test(L) && (/Browser|Lunascape|Maxthon/.test(L) || "Safari" != L && /^iOS/.test(G) && /\bSafari\b/.test(B[1]) || /^(?:Adobe|Arora|Breach|Midori|Opera|Phantom|Rekonq|Rock|Samsung Internet|Sleipnir|Web)/.test(L) && B[1]) && (c = B[B.length - 1]) && I.push(c), I.length && (I = ["(" + I.join("; ") + ")"]), F && W && W.indexOf(F) < 0 && I.push("on " + F), W && I.push((/^on /.test(I[I.length - 1]) ? "" : "on ") + W), G && (c = / ([\d.+]+)$/.exec(G), a = c && "/" == G.charAt(G.length - c[0].length - 1), G = {
+						(a = (/\bAppleWebKit\/([\d.]+\+?)/i.exec(t) || 0)[1]) && (a = [parseFloat(a.replace(/\.(\d)$/, ".0$1")), a], "Safari" == L && "+" == a[1].slice(-1) ? (L = "WebKit Nightly", A = "alpha", K = a[1].slice(0, -1)) : K != a[1] && K != (a[2] = (/\bSafari\/([\d.]+\+?)/i.exec(t) || 0)[1]) || (K = null), a[1] = (/\bChrome\/([\d.]+)/i.exec(t) || 0)[1], 537.36 == a[0] && 537.36 == a[2] && parseFloat(a[1]) >= 28 && "WebKit" == B && (B = ["Blink"]), R && (m || a[1]) ? (B && (B[1] = "like Chrome"), a = a[1] || ((a = a[0]) < 530 ? 1 : a < 532 ? 2 : a < 532.05 ? 3 : a < 533 ? 4 : a < 534.03 ? 5 : a < 534.07 ? 6 : a < 534.1 ? 7 : a < 534.13 ? 8 : a < 534.16 ? 9 : a < 534.24 ? 10 : a < 534.3 ? 11 : a < 535.01 ? 12 : a < 535.02 ? "13+" : a < 535.07 ? 15 : a < 535.11 ? 16 : a < 535.19 ? 17 : a < 536.05 ? 18 : a < 536.1 ? 19 : a < 537.01 ? 20 : a < 537.11 ? "21+" : a < 537.13 ? 23 : a < 537.18 ? 24 : a < 537.24 ? 25 : a < 537.36 ? 26 : "Blink" != B ? "27" : "28")) : (B && (B[1] = "like Safari"), a = (a = a[0]) < 400 ? 1 : a < 500 ? 2 : a < 526 ? 3 : a < 533 ? 4 : a < 534 ? "4+" : a < 535 ? 5 : a < 537 ? 6 : a < 538 ? 7 : a < 601 ? 8 : "8"), B && (B[1] += " " + (a += "number" == typeof a ? ".x" : /[.+]/.test(a) ? "" : "+")), "Safari" == L && (!K || parseInt(K) > 45) && (K = a)), "Opera" == L && (a = /\bzbov|zvav$/.exec(q)) ? (L += " ", I.unshift("desktop mode"), "zvav" == a ? (L += "Mini", K = null) : L += "Mobile", q = q.replace(RegExp(" *" + a + "$"), "")) : "Safari" == L && /\bChrome\b/.exec(B && B[1]) && (I.unshift("desktop mode"), L = "Chrome Mobile", K = null, /\bOS X\b/.test(q) ? (F = "Apple", q = "iOS 4.3+") : q = null), K && 0 == K.indexOf(a = /[\d.]+$/.exec(q)) && t.indexOf("/" + a + "-") > -1 && (q = g(q.replace(a, ""))), B && !/\b(?:Avant|Nook)\b/.test(L) && (/Browser|Lunascape|Maxthon/.test(L) || "Safari" != L && /^iOS/.test(q) && /\bSafari\b/.test(B[1]) || /^(?:Adobe|Arora|Breach|Midori|Opera|Phantom|Rekonq|Rock|Samsung Internet|Sleipnir|Web)/.test(L) && B[1]) && (a = B[B.length - 1]) && I.push(a), I.length && (I = ["(" + I.join("; ") + ")"]), F && W && W.indexOf(F) < 0 && I.push("on " + F), W && I.push((/^on /.test(I[I.length - 1]) ? "" : "on ") + W), q && (a = / ([\d.+]+)$/.exec(q), c = a && "/" == q.charAt(q.length - a[0].length - 1), q = {
 							architecture: 32,
-							family: c && !a ? G.replace(c[0], "") : G,
-							version: c ? c[1] : null,
+							family: a && !c ? q.replace(a[0], "") : q,
+							version: a ? a[1] : null,
 							toString: function() {
 								var e = this.version;
-								return this.family + (e && !a ? " " + e : "") + (64 == this.architecture ? " 64-bit" : "")
+								return this.family + (e && !c ? " " + e : "") + (64 == this.architecture ? " 64-bit" : "")
 							}
-						}), (c = /\b(?:AMD|IA|Win|WOW|x86_|x)64\b/i.exec(N)) && !/\bi686\b/i.test(N) ? (G && (G.architecture = 64, G.family = G.family.replace(RegExp(" *" + c), "")), L && (/\bWOW64\b/i.test(t) || R && /\w(?:86|32)$/.test(n.cpuClass || n.platform) && !/\bWin64; x64\b/i.test(t)) && I.unshift("32-bit")) : G && /^OS X/.test(G.family) && "Chrome" == L && parseFloat(K) >= 39 && (G.architecture = 64), t || (t = null);
+						}), (a = /\b(?:AMD|IA|Win|WOW|x86_|x)64\b/i.exec(N)) && !/\bi686\b/i.test(N) ? (q && (q.architecture = 64, q.family = q.family.replace(RegExp(" *" + a), "")), L && (/\bWOW64\b/i.test(t) || R && /\w(?:86|32)$/.test(n.cpuClass || n.platform) && !/\bWin64; x64\b/i.test(t)) && I.unshift("32-bit")) : q && /^OS X/.test(q.family) && "Chrome" == L && parseFloat(K) >= 39 && (q.architecture = 64), t || (t = null);
 						var H = {};
-						return H.description = t, H.layout = B && B[0], H.manufacturer = F, H.name = L, H.prerelease = A, H.product = W, H.ua = t, H.version = L && K, H.os = G || {
+						return H.description = t, H.layout = B && B[0], H.manufacturer = F, H.name = L, H.prerelease = A, H.product = W, H.ua = t, H.version = L && K, H.os = q || {
 							architecture: null,
 							family: null,
 							version: null,
@@ -656,7 +656,7 @@
 							}
 						}, H.parse = e, H.toString = function() {
 							return this.description || ""
-						}, H.version && I.unshift(K), H.name && I.unshift(L), G && L && (G != String(G).split(" ")[0] || G != L.split(" ")[0] && !W) && I.push(W ? "(" + G + ")" : "on " + G), I.length && (H.description = I.join(" ")), H
+						}, H.version && I.unshift(K), H.name && I.unshift(L), q && L && (q != String(q).split(" ")[0] || q != L.split(" ")[0] && !W) && I.push(W ? "(" + q + ")" : "on " + q), I.length && (H.description = I.join(" ")), H
 					}();
 					i.platform = _, void 0 === (n = function() {
 						return _
@@ -672,8 +672,8 @@
 			e.exports = function() {
 				function e(e, t, o, n, r, i) {
 					if (i !== s) {
-						var c = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
-						throw c.name = "Invariant Violation", c
+						var a = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
+						throw a.name = "Invariant Violation", a
 					}
 				}
 
@@ -733,8 +733,8 @@
 				n = l(o("./node_modules/react/index.js")),
 				r = l(o("./node_modules/invariant/browser.js")),
 				i = l(o("./node_modules/combokeys/Combokeys/index.js")),
-				c = l(o("./node_modules/react-shortcuts/node_modules/prop-types/index.js")),
-				a = l(o("./node_modules/react-shortcuts/lib/helpers.js"));
+				a = l(o("./node_modules/react-shortcuts/node_modules/prop-types/index.js")),
+				c = l(o("./node_modules/react-shortcuts/lib/helpers.js"));
 
 			function l(e) {
 				return e && e.__esModule ? e : {
@@ -752,8 +752,8 @@
 					! function(e, t) {
 						if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
 					}(this, t);
-					for (var n = arguments.length, c = Array(n), l = 0; l < n; l++) c[l] = arguments[l];
-					return o = s = u(this, (e = t.__proto__ || Object.getPrototypeOf(t)).call.apply(e, [this].concat(c))), s._combokeys = null, s._lastEvent = null, s._bindShortcuts = function(e) {
+					for (var n = arguments.length, a = Array(n), l = 0; l < n; l++) a[l] = arguments[l];
+					return o = s = u(this, (e = t.__proto__ || Object.getPrototypeOf(t)).call.apply(e, [this].concat(a))), s._combokeys = null, s._lastEvent = null, s._bindShortcuts = function(e) {
 						var t = s._getElementToBind();
 						t.setAttribute("tabindex", s.props.tabIndex), s._combokeys = new i.default(t), s._decorateCombokeys(), s._combokeys.bind(e, s._handleShortcuts, s.props.eventType), s.props.global && t.addEventListener("shortcuts:global", s._customGlobalHandler)
 					}, s._customGlobalHandler = function(e) {
@@ -769,12 +769,12 @@
 						s._combokeys.stopCallback = function(e, t, o) {
 							var n = "INPUT" === t.tagName || "SELECT" === t.tagName || "TEXTAREA" === t.tagName || t.contentEditable && "true" === t.contentEditable,
 								r = void 0;
-							return r = e.key ? 1 === e.key.length : Boolean(a.default.getCharacter(e)), !(!n || !r || s.props.alwaysFireHandler)
+							return r = e.key ? 1 === e.key.length : Boolean(c.default.getCharacter(e)), !(!n || !r || s.props.alwaysFireHandler)
 						}, s._combokeys.handleKey = function(o, n, r, i) {
 							if (!s._lastEvent || r.timeStamp !== s._lastEvent.timeStamp || r.type !== s._lastEvent.type) {
 								s._lastEvent = r;
-								var c = !1;
-								if (s.props.isolate && !r.__isolateShortcuts && (r.__isolateShortcuts = !0, c = !0), i || e.dispatchEvent(new CustomEvent("shortcuts:global", {
+								var a = !1;
+								if (s.props.isolate && !r.__isolateShortcuts && (r.__isolateShortcuts = !0, a = !0), i || e.dispatchEvent(new CustomEvent("shortcuts:global", {
 										detail: {
 											character: o,
 											modifiers: n,
@@ -783,7 +783,7 @@
 										bubbles: !0,
 										cancelable: !0
 									})), !r.__isolateShortcuts) return s.props.preventDefault && r.preventDefault(), s.props.stopPropagation && !i && r.stopPropagation(), void t(o, n, r);
-								(s.props.global || c) && t(o, n, r)
+								(s.props.global || a) && t(o, n, r)
 							}
 						}
 					}, s._getElementToBind = function() {
@@ -836,20 +836,20 @@
 				}]), t
 			}(n.default.Component);
 			d.displayName = "Shortcuts", d.contextTypes = {
-				shortcuts: c.default.object.isRequired
+				shortcuts: a.default.object.isRequired
 			}, d.propTypes = {
-				children: c.default.node,
-				handler: c.default.func,
-				name: c.default.string,
-				tabIndex: c.default.number,
-				className: c.default.string,
-				eventType: c.default.string,
-				stopPropagation: c.default.bool,
-				preventDefault: c.default.bool,
-				targetNodeSelector: c.default.string,
-				global: c.default.bool,
-				isolate: c.default.bool,
-				alwaysFireHandler: c.default.bool
+				children: a.default.node,
+				handler: a.default.func,
+				name: a.default.string,
+				tabIndex: a.default.number,
+				className: a.default.string,
+				eventType: a.default.string,
+				stopPropagation: a.default.bool,
+				preventDefault: a.default.bool,
+				targetNodeSelector: a.default.string,
+				global: a.default.bool,
+				isolate: a.default.bool,
+				alwaysFireHandler: a.default.bool
 			}, d.defaultProps = {
 				tabIndex: -1,
 				className: null,
@@ -907,8 +907,8 @@
 					}(),
 					r = u(o("./node_modules/just-reduce-object/index.js")),
 					i = u(o("./node_modules/invariant/browser.js")),
-					c = o("./node_modules/node-libs-browser/node_modules/events/events.js"),
-					a = u(o("./node_modules/react-shortcuts/lib/helpers.js")),
+					a = o("./node_modules/node-libs-browser/node_modules/events/events.js"),
+					c = u(o("./node_modules/react-shortcuts/lib/helpers.js")),
 					l = o("./node_modules/react-shortcuts/lib/utils.js");
 
 				function u(e) {
@@ -926,7 +926,7 @@
 							if (!e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
 							return !t || "object" != typeof t && "function" != typeof t ? e : t
 						}(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this));
-						return o._platformName = a.default.getPlatformName(), o._parseShortcutDescriptor = function(e) {
+						return o._platformName = c.default.getPlatformName(), o._parseShortcutDescriptor = function(e) {
 							return (0, l.isPlainObject)(e) ? e[o._platformName] : e
 						}, o._keymap = e, o
 					}
@@ -1010,7 +1010,7 @@
 							return this._parseShortcutKeyName(o, e)
 						}
 					}]), t
-				}(c.EventEmitter);
+				}(a.EventEmitter);
 				d.CHANGE_EVENT = "shortcuts:update", t.default = d, e.exports = t.default
 			}).call(this, o("./node_modules/process/browser.js"))
 		},
@@ -1051,8 +1051,8 @@
 			}, t.map = function(e, t) {
 				if (n(e)) return e.map(t);
 				for (var o = [], s = Object.keys(e), r = s.length, i = 0; i < r; i += 1) {
-					var c = s[i];
-					o.push(t(e[c], c))
+					var a = s[i];
+					o.push(t(e[a], a))
 				}
 				return o
 			}
@@ -1067,8 +1067,8 @@
 			r.resetWarningCache = n, e.exports = function() {
 				function e(e, t, o, n, r, i) {
 					if (i !== s) {
-						var c = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
-						throw c.name = "Invariant Violation", c
+						var a = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
+						throw a.name = "Invariant Violation", a
 					}
 				}
 
@@ -1150,8 +1150,8 @@
 				n = o.n(s),
 				r = o("./node_modules/prop-types/index.js"),
 				i = o.n(r),
-				c = o("./node_modules/react/index.js"),
-				a = o.n(c),
+				a = o("./node_modules/react/index.js"),
+				c = o.n(a),
 				l = o("./node_modules/react-redux/es/index.js"),
 				u = o("./node_modules/react-shortcuts/lib/index.js"),
 				d = o("./node_modules/reselect/es/index.js"),
@@ -1231,272 +1231,268 @@
 				E = o("./src/reddit/constants/modals.ts"),
 				w = o("./src/reddit/constants/postLayout.ts"),
 				P = o("./src/reddit/helpers/overlay/index.ts"),
-				M = o("./src/reddit/helpers/trackers/features/recapGame.ts"),
-				T = o("./src/reddit/helpers/trackers/lightbox.ts"),
-				N = o("./src/reddit/helpers/trackers/shortcuts.ts"),
-				I = o("./src/reddit/selectors/listings.ts"),
-				A = o("./src/reddit/selectors/platform.ts"),
-				R = o("./src/reddit/actions/shortcuts/active.ts"),
-				K = o("./src/reddit/actions/shortcuts/utils.ts"),
-				B = o("./src/reddit/actions/recapGame.ts"),
-				L = o("./src/reddit/actions/shortcuts/close.ts"),
-				W = o("./src/lib/initializeClient/installReducer.ts"),
-				F = o("./src/reddit/actions/preferences.ts"),
-				G = o("./src/reddit/reducers/features/comments/index.ts"),
-				q = o("./src/reddit/selectors/recapGame.ts");
-			Object(W.a)({
+				M = o("./src/reddit/helpers/trackers/lightbox.ts"),
+				T = o("./src/reddit/helpers/trackers/shortcuts.ts"),
+				N = o("./src/reddit/selectors/listings.ts"),
+				I = o("./src/reddit/selectors/platform.ts"),
+				A = o("./src/reddit/actions/shortcuts/active.ts"),
+				R = o("./src/reddit/actions/shortcuts/utils.ts"),
+				K = o("./src/lib/initializeClient/installReducer.ts"),
+				B = o("./src/reddit/reducers/features/comments/index.ts");
+			Object(K.a)({
 				features: {
-					comments: G.a
+					comments: B.a
 				}
 			});
-			const H = (e, t) => async (o, s, n) => {
+			const L = (e, t) => async (o, s, n) => {
 				let {
 					apiContext: r
 				} = n;
 				const i = s(),
-					c = i.shortcuts.activePostId,
-					a = i.listings.activeKey,
-					l = i.listings.postOrder.ids[a];
-				if (!c || l && l.indexOf(c) < 0) {
+					a = i.shortcuts.activePostId,
+					c = i.listings.activeKey,
+					l = i.listings.postOrder.ids[c];
+				if (!a || l && l.indexOf(a) < 0) {
 					const e = l[0];
-					return o(Object(R.b)(e)), void Object(K.a)(e)
+					return o(Object(A.b)(e)), void Object(R.a)(e)
 				}
-				let u, d = c;
+				let u, d = a;
 				do {
-					if (!(u = Object(I.b)(i, {
+					if (!(u = Object(N.b)(i, {
 							postId: d
 						})) || !u.nextPost) return;
 					d = u.nextPost.id
 				} while (i.posts.models[d].hidden);
-				i.shortcuts.namespace === m.d.Lightbox ? (D(o, u.nextPost), e(t ? T.b(c, "next_post", !0) : N.l(d))) : (o(Object(R.b)(d)), Object(K.a)(d), e(N.k(d)))
-			}, $ = e => async (t, o, s) => {
+				i.shortcuts.namespace === m.d.Lightbox ? (F(o, u.nextPost), e(t ? M.b(a, "next_post", !0) : T.l(d))) : (o(Object(A.b)(d)), Object(R.a)(d), e(T.k(d)))
+			}, W = e => async (t, o, s) => {
 				let {
 					apiContext: n
 				} = s;
 				const r = o(),
-					i = Object(K.c)(r);
+					i = Object(R.c)(r);
 				if (!i) return;
-				let c;
-				const a = r.shortcuts.activeCommentId;
-				if (a && a !== r.pages.comments.keyToHeadCommentId[i]) {
+				let a;
+				const c = r.shortcuts.activeCommentId;
+				if (c && c !== r.pages.comments.keyToHeadCommentId[i]) {
 					const e = r.pages.comments.keyToCommentThreadLinkSets[i];
-					for (c = e[a].prev.id; O.b(c);) c = e[c].prev.id
+					for (a = e[c].prev.id; O.b(a);) a = e[a].prev.id
 				} else {
 					const e = r.pages.comments.keyToHeadCommentId[i];
-					if (!e || a === e) return;
-					c = e
+					if (!e || c === e) return;
+					a = e
 				}
-				t(Object(R.a)(c)), Object(K.a)(c), e(N.n(c))
-			}, D = (e, t) => {
-				Object(K.b)(m.b), e(Object(R.b)(t.id)), document.body.style.overflow = "", Object(K.a)(t.id), document.body.style.overflow = "hidden", e(Object(P.a)(t.permalink));
+				t(Object(A.a)(a)), Object(R.a)(a), e(T.n(a))
+			}, F = (e, t) => {
+				Object(R.b)(m.b), e(Object(A.b)(t.id)), document.body.style.overflow = "", Object(R.a)(t.id), document.body.style.overflow = "hidden", e(Object(P.a)(t.permalink));
 				const o = document.getElementById(C.e);
 				o && o.scrollTo(0, 0)
-			}, U = {
-				[m.c.Close]: e => async (t, o) => {
-					const s = Object(q.a)(o());
-					"on" === s.recapGameState && (t(Object(B.recapGameCloseAction)()), e(Object(M.c)()), t(Object(L.a)(() => {})), t(Object(F.A)({
-						nightmode: s.isNightModeOriginal
-					})))
-				},
-				[m.c.CollapseOrLoad]: e => async (t, o, s) => {
-					let {
-						apiContext: n
-					} = s;
-					const r = o(),
-						i = r.shortcuts.activeCommentId,
-						c = Object(K.c)(r);
-					if (c && i) {
-						if (r.features.comments.models[i]) t(g.q({
-							commentId: i,
-							commentsPageKey: c,
-							scrollToAndRemeasure: () => null
-						}));
-						else if (r.continueThreads.models[i]) {
-							const e = r.continueThreads.models[i].parentId,
-								o = r.features.comments.models[e].permalink;
-							t(Object(v.b)(o))
-						} else t($(e)), t(g.n(c, i));
-						e(N.b(i))
-					}
-				},
-				[m.c.Downvote]: e => async (t, o, s) => {
-					let {
-						apiContext: n
-					} = s;
-					const r = o(),
-						{
-							activeCommentId: i,
-							activePostId: c
-						} = r.shortcuts,
-						a = Object(K.c)(r);
-					a && (i && !r.features.comments.collapsed[a][i] ? (t(g.k(i)), e(N.e(i))) : c && (t(j.v(c)), e(N.f(c))))
-				},
-				[m.c.Expando]: e => async (t, o, s) => {
-					let {
-						apiContext: n
-					} = s;
-					const r = o(),
-						i = r.shortcuts.activePostId,
-						c = w.b[r.user.prefs.layout];
-					if (i && (c === w.g.Compact || c === w.g.Classic)) {
-						const o = r.posts.models[i].crosspostRootId;
-						(r.posts.models[i].media || o && r.posts.models[o] && r.posts.models[o].media) && (t(j.w({
-							postId: i
-						})), e(N.g(i)))
-					}
-				},
-				[m.c.Hide]: e => async (t, o, s) => {
-					let {
-						apiContext: n
-					} = s;
-					const r = o(),
-						i = r.shortcuts.activePostId;
-					i && !r.posts.models[i].isSponsored && (t(j.eb(i, !r.posts.models[i].hidden, r.shortcuts.namespace === m.d.Lightbox, !0)), t(H(e)), e(N.i(i)))
-				},
-				[m.c.NextComment]: e => async (t, o, s) => {
-					let {
-						apiContext: n
-					} = s;
-					const r = o(),
-						i = Object(K.c)(r);
-					if (!i) return;
-					let c;
-					const a = r.shortcuts.activeCommentId;
-					if (a) {
-						const e = r.features.comments.collapsed[i],
-							t = r.pages.comments.keyToCommentThreadLinkSets[i];
-						if (e[c = a])
-							do {
-								if (!t[c].next) return;
-								c = t[c].next.id
-							} while (O.b(c));
-						else c = t[c].next.id
-					} else {
-						const e = r.pages.comments.keyToHeadCommentId[i];
-						if (!e) return;
-						c = e
-					}
-					t(Object(R.a)(c)), Object(K.a)(c), e(N.j(c))
-				},
-				[m.c.NextPost]: H,
-				[m.c.NewPost]: e => async (t, o, s) => {
-					let {
-						apiContext: n
-					} = s;
-					const r = o();
-					if (!r.user.account) return;
-					const i = Object(A.e)(r),
-						c = i ? i.url : "/";
-					t(Object(v.b)(`${c}submit`)), e(N.d)
-				},
-				[m.c.OpenIndex]: e => async (t, o, s) => {
-					let {
-						apiContext: n
-					} = s;
-					t(Object(S.i)(E.a.KEYBOARD_SHORTCUTS)), e(N.s)
-				},
-				[m.c.OpenLightbox]: e => async (t, o, s) => {
-					let {
-						apiContext: n
-					} = s;
-					const r = o(),
-						i = r.listings.activeKey,
-						c = r.listings.postOrder.ids[i],
-						a = r.shortcuts.activePostId;
-					!c || !a || c.indexOf(a) < 0 || (t(Object(P.a)(r.posts.models[a].permalink)), e(N.m(a)))
-				},
-				[m.c.OpenLink]: e => async (t, o, s) => {
-					let {
-						apiContext: n
-					} = s;
-					const r = o(),
-						{
-							activePostId: i
-						} = r.shortcuts;
-					if (i) {
-						const t = r.posts.models[i];
-						if (t.source) {
-							const o = t.source.url,
-								s = window.open(o, "_blank");
-							s && s.focus(), e(N.h(i))
+			};
+			var q = o("./src/reddit/actions/shortcuts/close.ts");
+			const G = {
+					[m.c.Close]: q.a,
+					[m.c.CollapseOrLoad]: e => async (t, o, s) => {
+						let {
+							apiContext: n
+						} = s;
+						const r = o(),
+							i = r.shortcuts.activeCommentId,
+							a = Object(R.c)(r);
+						if (a && i) {
+							if (r.features.comments.models[i]) t(g.q({
+								commentId: i,
+								commentsPageKey: a,
+								scrollToAndRemeasure: () => null
+							}));
+							else if (r.continueThreads.models[i]) {
+								const e = r.continueThreads.models[i].parentId,
+									o = r.features.comments.models[e].permalink;
+								t(Object(v.b)(o))
+							} else t(W(e)), t(g.n(a, i));
+							e(T.b(i))
 						}
-					}
+					},
+					[m.c.Downvote]: e => async (t, o, s) => {
+						let {
+							apiContext: n
+						} = s;
+						const r = o(),
+							{
+								activeCommentId: i,
+								activePostId: a
+							} = r.shortcuts,
+							c = Object(R.c)(r);
+						c && (i && !r.features.comments.collapsed[c][i] ? (t(g.k(i)), e(T.e(i))) : a && (t(j.v(a)), e(T.f(a))))
+					},
+					[m.c.Expando]: e => async (t, o, s) => {
+						let {
+							apiContext: n
+						} = s;
+						const r = o(),
+							i = r.shortcuts.activePostId,
+							a = w.b[r.user.prefs.layout];
+						if (i && (a === w.g.Compact || a === w.g.Classic)) {
+							const o = r.posts.models[i].crosspostRootId;
+							(r.posts.models[i].media || o && r.posts.models[o] && r.posts.models[o].media) && (t(j.w({
+								postId: i
+							})), e(T.g(i)))
+						}
+					},
+					[m.c.Hide]: e => async (t, o, s) => {
+						let {
+							apiContext: n
+						} = s;
+						const r = o(),
+							i = r.shortcuts.activePostId;
+						i && !r.posts.models[i].isSponsored && (t(j.eb(i, !r.posts.models[i].hidden, r.shortcuts.namespace === m.d.Lightbox, !0)), t(L(e)), e(T.i(i)))
+					},
+					[m.c.NextComment]: e => async (t, o, s) => {
+						let {
+							apiContext: n
+						} = s;
+						const r = o(),
+							i = Object(R.c)(r);
+						if (!i) return;
+						let a;
+						const c = r.shortcuts.activeCommentId;
+						if (c) {
+							const e = r.features.comments.collapsed[i],
+								t = r.pages.comments.keyToCommentThreadLinkSets[i];
+							if (e[a = c])
+								do {
+									if (!t[a].next) return;
+									a = t[a].next.id
+								} while (O.b(a));
+							else a = t[a].next.id
+						} else {
+							const e = r.pages.comments.keyToHeadCommentId[i];
+							if (!e) return;
+							a = e
+						}
+						t(Object(A.a)(a)), Object(R.a)(a), e(T.j(a))
+					},
+					[m.c.NextPost]: L,
+					[m.c.NewPost]: e => async (t, o, s) => {
+						let {
+							apiContext: n
+						} = s;
+						const r = o();
+						if (!r.user.account) return;
+						const i = Object(I.e)(r),
+							a = i ? i.url : "/";
+						t(Object(v.b)(`${a}submit`)), e(T.d)
+					},
+					[m.c.OpenIndex]: e => async (t, o, s) => {
+						let {
+							apiContext: n
+						} = s;
+						t(Object(S.i)(E.a.KEYBOARD_SHORTCUTS)), e(T.s)
+					},
+					[m.c.OpenLightbox]: e => async (t, o, s) => {
+						let {
+							apiContext: n
+						} = s;
+						const r = o(),
+							i = r.listings.activeKey,
+							a = r.listings.postOrder.ids[i],
+							c = r.shortcuts.activePostId;
+						!a || !c || a.indexOf(c) < 0 || (t(Object(P.a)(r.posts.models[c].permalink)), e(T.m(c)))
+					},
+					[m.c.OpenLink]: e => async (t, o, s) => {
+						let {
+							apiContext: n
+						} = s;
+						const r = o(),
+							{
+								activePostId: i
+							} = r.shortcuts;
+						if (i) {
+							const t = r.posts.models[i];
+							if (t.source) {
+								const o = t.source.url,
+									s = window.open(o, "_blank");
+								s && s.focus(), e(T.h(i))
+							}
+						}
+					},
+					[m.c.PrevComment]: W,
+					[m.c.PrevPost]: e => async (t, o, s) => {
+						let {
+							apiContext: n
+						} = s;
+						const r = o(),
+							i = r.shortcuts.activePostId,
+							a = r.listings.activeKey,
+							c = r.listings.postOrder.ids[a];
+						if (!i || c && c.indexOf(i) < 0) return t(Object(A.b)(c[0])), void Object(R.a)(c[0]);
+						if (0 === c.indexOf(i)) return;
+						let l, u = i;
+						do {
+							if (!(l = Object(N.b)(r, {
+									postId: u
+								})) || !l.prevPost) return;
+							u = l.prevPost.id
+						} while (r.posts.models[u].hidden);
+						r.shortcuts.namespace === m.d.Lightbox ? (F(t, l.prevPost), e(T.p(u))) : (t(Object(A.b)(u)), Object(R.a)(u), e(T.o(u)))
+					},
+					[m.c.Reply]: e => async (t, o, s) => {
+						let {
+							apiContext: n
+						} = s;
+						const r = o(),
+							i = Object(R.c)(r),
+							{
+								activeCommentId: a
+							} = r.shortcuts;
+						a && i && i !== r.listings.activeKey && (t(_.s({
+							commentsPageKey: i,
+							parentCommentId: a
+						})), e(T.c(a)))
+					},
+					[m.c.Save]: e => async (t, o, s) => {
+						let {
+							apiContext: n
+						} = s;
+						const r = o(),
+							{
+								activeCommentId: i,
+								activePostId: a
+							} = r.shortcuts,
+							c = Object(R.c)(r);
+						c && (i && !r.features.comments.collapsed[c][i] ? (t(g.o(i)), e(T.q(i))) : a && (t(j.U(a)), e(T.r(a))))
+					},
+					[m.c.Upvote]: e => async (t, o, s) => {
+						let {
+							apiContext: n
+						} = s;
+						const r = o(),
+							{
+								activeCommentId: i,
+								activePostId: a
+							} = r.shortcuts,
+							c = Object(R.c)(r);
+						c && (i && !r.features.comments.collapsed[c][i] ? (t(g.s(i)), e(T.t(i))) : a && (t(j.jb(a)), e(T.u(a))))
+					},
+					[m.c.Konami]: null
 				},
-				[m.c.PrevComment]: $,
-				[m.c.PrevPost]: e => async (t, o, s) => {
-					let {
-						apiContext: n
-					} = s;
-					const r = o(),
-						i = r.shortcuts.activePostId,
-						c = r.listings.activeKey,
-						a = r.listings.postOrder.ids[c];
-					if (!i || a && a.indexOf(i) < 0) return t(Object(R.b)(a[0])), void Object(K.a)(a[0]);
-					if (0 === a.indexOf(i)) return;
-					let l, u = i;
-					do {
-						if (!(l = Object(I.b)(r, {
-								postId: u
-							})) || !l.prevPost) return;
-						u = l.prevPost.id
-					} while (r.posts.models[u].hidden);
-					r.shortcuts.namespace === m.d.Lightbox ? (D(t, l.prevPost), e(N.p(u))) : (t(Object(R.b)(u)), Object(K.a)(u), e(N.o(u)))
+				H = (e, t) => (o, s) => {
+					if (!document.activeElement) return;
+					const n = document.activeElement.nodeName;
+					if ("INPUT" === n || "TEXTAREA" === n || "BUTTON" === n && m.a.includes(s.which)) return;
+					const r = G[o];
+					r && e(r(t))
 				},
-				[m.c.Reply]: e => async (t, o, s) => {
-					let {
-						apiContext: n
-					} = s;
-					const r = o(),
-						i = Object(K.c)(r),
-						{
-							activeCommentId: c
-						} = r.shortcuts;
-					c && i && i !== r.listings.activeKey && (t(_.s({
-						commentsPageKey: i,
-						parentCommentId: c
-					})), e(N.c(c)))
-				},
-				[m.c.Save]: e => async (t, o, s) => {
-					let {
-						apiContext: n
-					} = s;
-					const r = o(),
-						{
-							activeCommentId: i,
-							activePostId: c
-						} = r.shortcuts,
-						a = Object(K.c)(r);
-					a && (i && !r.features.comments.collapsed[a][i] ? (t(g.o(i)), e(N.q(i))) : c && (t(j.U(c)), e(N.r(c))))
-				},
-				[m.c.Upvote]: e => async (t, o, s) => {
-					let {
-						apiContext: n
-					} = s;
-					const r = o(),
-						{
-							activeCommentId: i,
-							activePostId: c
-						} = r.shortcuts,
-						a = Object(K.c)(r);
-					a && (i && !r.features.comments.collapsed[a][i] ? (t(g.s(i)), e(N.t(i))) : c && (t(j.jb(c)), e(N.u(c))))
-				},
-				[m.c.Konami]: null
-			}, V = (e, t) => (o, s) => {
-				if (!document.activeElement) return;
-				const n = document.activeElement.nodeName;
-				if ("INPUT" === n || "TEXTAREA" === n || "BUTTON" === n && m.a.includes(s.which)) return;
-				const r = U[o];
-				r && e(r(t))
-			}, X = new u.ShortcutManager(k), z = Object(d.c)({
-				isBladeOpen: f.i,
-				namespace: e => Object(b.b)(e) ? m.d.Global : e.shortcuts.namespace
-			}), J = Object(l.b)(z, e => ({
-				dispatchAction: t => e(t)
-			}));
-			class Y extends c.Component {
+				$ = new u.ShortcutManager(k),
+				D = Object(d.c)({
+					isBladeOpen: f.i,
+					namespace: e => Object(b.b)(e) ? m.d.Global : e.shortcuts.namespace
+				}),
+				U = Object(l.b)(D, e => ({
+					dispatchAction: t => e(t)
+				}));
+			class V extends a.Component {
 				getChildContext() {
 					return {
-						shortcuts: X
+						shortcuts: $
 					}
 				}
 				componentDidMount() {
@@ -1514,19 +1510,19 @@
 						namespace: o,
 						sendEvent: s
 					} = this.props;
-					return a.a.createElement(u.Shortcuts, {
-						handler: t ? n.a : V(e, s),
+					return c.a.createElement(u.Shortcuts, {
+						handler: t ? n.a : H(e, s),
 						isolate: !0,
 						name: o,
 						targetNodeSelector: `#${m.b}`
 					})
 				}
 			}
-			Y.childContextTypes = {
+			V.childContextTypes = {
 				shortcuts: i.a.object.isRequired
 			};
-			t.default = J(Object(p.c)(Y))
+			t.default = U(Object(p.c)(V))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ShortcutWrapper.d5d6f4d8f0508df37ea9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ShortcutWrapper.3669df75da202405f910.js.map

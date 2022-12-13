@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.7597a4dede8ff4ceafc5.js
-// Retrieved at 12/12/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.f001ef1acffa7d5a50e0.js
+// Retrieved at 12/13/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -470,7 +470,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.Cg)(p),
+						includeInterestTopics: !!p && !Object(b.zg)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: h && !(null === (s = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === s ? void 0 : s.total),
@@ -771,7 +771,7 @@
 						m = o.listings.postOrder.api.error[d],
 						p = o.listings.postOrder.api.pending[d],
 						b = Object(de.b)(o),
-						g = se.O in e.queryParams && e.queryParams[se.O].toUpperCase() || "",
+						g = se.N in e.queryParams && e.queryParams[se.N].toUpperCase() || "",
 						f = g in l.oc && l.oc[g],
 						h = Y.f();
 					if (p || u && !m && !t) return void(u && (n($.m({
@@ -785,8 +785,8 @@
 						x = Object(oe.b)(O),
 						v = [Object(oe.c)(O)];
 					await n(Le(d, {
-						...a()(e.queryParams, se.q),
 						...a()(e.queryParams, se.p),
+						...a()(e.queryParams, se.o),
 						limit: x,
 						sort: c,
 						statsdPathsForExperiments: v,
@@ -828,7 +828,7 @@
 						u = i.platform.currentPage ? i.platform.currentPage.queryParams : {},
 						m = Object(ge.a)(ne.b, d, u),
 						p = i.listings.postOrder.loadMore[m],
-						b = u[se.O] ? u[se.O].toUpperCase() : "",
+						b = u[se.N] ? u[se.N].toUpperCase() : "",
 						g = b in l.oc && l.oc[b];
 					if (p) {
 						const e = i.listings.postOrder.api.pending[m],
@@ -846,7 +846,7 @@
 								b = {
 									after: p.token,
 									dist: p.dist,
-									...a()(u, se.q),
+									...a()(u, se.p),
 									isMobile: Object(o.e)(i.meta.userAgent),
 									limit: c,
 									sort: d,
@@ -891,7 +891,7 @@
 						} = e,
 						o = s.platform.currentPage ? s.platform.currentPage.queryParams : {},
 						i = Object(ge.a)(ne.b, a, o),
-						c = o[se.O] ? o[se.O].toUpperCase() : "",
+						c = o[se.N] ? o[se.N].toUpperCase() : "",
 						d = c in l.oc && l.oc[c],
 						u = Object(oe.a)(s),
 						m = Object(oe.b)(u);
@@ -3051,9 +3051,9 @@
 						Ie = Object(i.e)(Z.U),
 						Te = Object(i.e)(ke.g),
 						we = Object(i.e)(jn.a),
-						Re = we === Ce.ig.CloseOnboarding,
-						Fe = we === Ce.ig.SkipTopicSelection,
-						Le = we === Ce.ig.SmartSignal,
+						Re = we === Ce.fg.CloseOnboarding,
+						Fe = we === Ce.fg.SkipTopicSelection,
+						Le = we === Ce.fg.SmartSignal,
 						Ge = Object(a.useCallback)(() => {
 							s(Object(b.g)(Qt.a.ONBOARDING_MODAL_D2X)), Ne && s(Object(g.h)()), h && (r(Object(L.t)()), Object(xn.a)()), Te && Ie && s(Object(m.startChangeUsernameFlow)())
 						}, [s, Ie, Te, h, Ne, r]),
@@ -5246,4 +5246,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.7597a4dede8ff4ceafc5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.f001ef1acffa7d5a50e0.js.map

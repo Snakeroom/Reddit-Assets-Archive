@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.f17133f744171b2ff212.js
-// Retrieved at 12/12/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.85cfdb26e0da7665fc27.js
+// Retrieved at 12/13/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -1597,7 +1597,7 @@
 				F = n("./src/reddit/selectors/externalAccount.ts");
 			const U = e => async (t, n) => {
 				await t(Object(M.s)());
-				const f = [t(Object(P.s)()), t(Object(P.B)(!0)), t(Object(p.a)())];
+				const f = [t(Object(P.s)()), t(Object(P.A)(!0)), t(Object(p.a)())];
 				n().economics.paymentSystems.status === R.a.NotFetched && f.push(t((() => async (e, t, n) => {
 					let {
 						apiContext: s
@@ -1623,8 +1623,8 @@
 						{
 							url: c
 						} = a,
-						l = Object(r.a)(c).get(A.e);
-					if (l && (t(Object(o.c)(Object(i.a)(c, [A.e]))), Object(F.a)(e))) {
+						l = Object(r.a)(c).get(A.d);
+					if (l && (t(Object(o.c)(Object(i.a)(c, [A.d]))), Object(F.a)(e))) {
 						const e = s.fbt._("Connected accounts", null, {
 							hk: "bdpfW"
 						});
@@ -11296,12 +11296,12 @@
 				}
 			}
 			const Xo = Object(r.b)(Bo, e => ({
-					imageDeleteRequested: t => e(Object(_o.C)(t)),
-					imagesUpdateRequested: (t, n) => e(Object(_o.D)(t, n)),
+					imageDeleteRequested: t => e(Object(_o.B)(t)),
+					imagesUpdateRequested: (t, n) => e(Object(_o.C)(t, n)),
 					onClickSnoovatar: () => e(Object(yo.b)({
 						clickSource: "profile_overview"
 					})),
-					save: (t, n) => e(Object(_o.I)(t, n)),
+					save: (t, n) => e(Object(_o.H)(t, n)),
 					toggleNSFWModal: () => e(Object(_.i)("ProfileForm_NSFWConfirmDialogID"))
 				}))(Object(O.c)(Zo)),
 				$o = Object(c.c)({
@@ -11917,7 +11917,7 @@
 				fr = Object(ve.v)(),
 				gr = Object(r.b)(hr, (e, t) => ({
 					changeTab: t => e(Object(i.b)(`/settings/${t}`)),
-					updatePrefs: t => e(Object(_o.J)(t)),
+					updatePrefs: t => e(Object(_o.I)(t)),
 					onPageViewed: () => e(Object(b.a)())
 				})),
 				vr = {
@@ -12628,4 +12628,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.f17133f744171b2ff212.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.85cfdb26e0da7665fc27.js.map

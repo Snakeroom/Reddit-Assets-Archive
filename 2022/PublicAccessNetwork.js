@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.3c915654997a43ff701f.js
-// Retrieved at 12/12/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.a1fdac50fbcdae9b73b2.js
+// Retrieved at 12/13/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -286,13 +286,13 @@
 					experimentEligibilitySelector: u.a,
 					experimentName: m.He
 				});
-				return Object(m.Cg)(t) ? void 0 : t
+				return Object(m.zg)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
 					experimentName: m.Ie
 				});
-				return Object(m.Cg)(t) ? void 0 : t
+				return Object(m.zg)(t) ? void 0 : t
 			}, (e, t) => e === m.Je.Enabled && t === m.Je.Enabled);
 			var b = s("./src/config.ts");
 			var h = s("./src/reddit/selectors/user.ts");
@@ -669,7 +669,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(m.Bg)(e.category_name)
+									displayText: Object(m.yg)(e.category_name)
 								};
 								s.push(n.id), t[n.id] = n
 							}), {
@@ -689,7 +689,7 @@
 					t(O({
 						categoryId: e,
 						rank: o + 1
-					})), Object(u.qb)(Object(p.d)(s()))
+					})), Object(u.lb)(Object(p.d)(s()))
 				}
 		},
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, s) {
@@ -1451,7 +1451,7 @@
 					} = f, {
 						hasSortParam: w,
 						sortToUse: E
-					} = Object(U.a)(s(), h), k = null === (d = null === (o = Object(te.b)(s())) || void 0 === o ? void 0 : o.routeMatch) || void 0 === d ? void 0 : d.route.chunk, T = ["context", "depth", "limit", F.h].reduce((e, t) => {
+					} = Object(U.a)(s(), h), k = null === (d = null === (o = Object(te.b)(s())) || void 0 === o ? void 0 : o.routeMatch) || void 0 === d ? void 0 : d.route.chunk, T = ["context", "depth", "limit", F.g].reduce((e, t) => {
 						const s = parseInt(f[t]);
 						return isNaN(s) || (e[t] = s), e
 					}, {
@@ -1467,7 +1467,7 @@
 						}),
 						V = Object(it.a)(M).bucketed && Object(p.b)(e) && Object(p.c)(A);
 					if (V) {
-						const s = Object(a.e)(n()(e.queryParams, F.D)),
+						const s = Object(a.e)(n()(e.queryParams, F.C)),
 							o = Object(a.b)(h, void 0, s);
 						await t(Object(vt.d)({
 							key: o,
@@ -1512,9 +1512,9 @@
 							n = Object(ie.Q)(s(), {
 								identifier: A.belongsTo
 							});
-						if (n && (e => Y.Gf.Redirect === Object(Z.b)(e, {
+						if (n && (e => Y.Df.Redirect === Object(Z.b)(e, {
 								experimentEligibilitySelector: oe,
-								experimentName: Y.yf
+								experimentName: Y.vf
 							}))(s())) return void t(Object(r.c)(n.url));
 						if ((A.media && A.media.type) === G.o.LIVEVIDEO) {
 							const e = `/rpan${A.belongsTo.type===B.a.SUBREDDIT?n.url:"/"}${Object(_.D)(A.id)}`;
@@ -5135,7 +5135,7 @@
 						toggleModal: t
 					} = e;
 					const s = () => {
-						J.ac(), t()
+						J.Sb(), t()
 					};
 					return n.a.createElement(q.e, null, n.a.createElement($, null, n.a.createElement(Q.a, null, n.a.createElement("div", null, n.a.createElement("div", {
 						className: X.a.Title
@@ -6103,7 +6103,7 @@
 						const o = Object(Ve.a)(t.post.id),
 							n = Object(rt.a)(),
 							r = {
-								[Fe.A]: n,
+								[Fe.z]: n,
 								utm_source: "share",
 								utm_medium: "web2x",
 								utm_content: "rpan_stream"
@@ -6218,7 +6218,7 @@
 						},
 						onClickShareToChat: () => {
 							const e = Object(S.a)(Object(Ve.a)(w), {
-								[Fe.A]: this.referralId,
+								[Fe.z]: this.referralId,
 								utm_source: "share",
 								utm_medium: "web2x",
 								utm_content: "rpan_stream"
@@ -6243,7 +6243,7 @@
 						onClose: this.onCloseShareModal,
 						withOverlay: !0,
 						url: Object(S.a)(Object(Ve.a)(w), {
-							[Fe.A]: this.referralId,
+							[Fe.z]: this.referralId,
 							utm_source: "share",
 							utm_medium: "web2x",
 							utm_content: "rpan_stream"
@@ -7343,7 +7343,7 @@
 				componentDidMount() {
 					const e = this.focusRef.current;
 					e.classList.add(Zo.a.focusVisible), Object(_.a)(e), this.props.isOverlay && (this.previouslyActiveElement = document.activeElement, w(e)), this.props.subscribeStreams().then(e => this.unsubscribeStreams = e), this.props.subscribeConfig().then(e => this.unsubscribeConfig = e), this.props.onRecommendedViewerSubredditsSubscribe().then(e => this.unsubscribeRecommendedViewerSubreddits = e), this.props.setNewCorrelationId(), this.props.sendEvent(Object(He.t)()), document.addEventListener("keydown", this.onNextStreamKeyHandler), this.props.isIntroInProgress || this.handleNewStream(), window.localStorage && this.setState({
-						shouldShowOBSBanner: !J.k()
+						shouldShowOBSBanner: !J.j()
 					})
 				}
 				componentDidUpdate(e, t) {
@@ -7440,12 +7440,12 @@
 					this.props.sendEvent(Object(Ue.h)("guidebook", this.props.currentStream))
 				}
 				onOBSBannerDismissClick() {
-					J.wb(), this.setState({
+					J.rb(), this.setState({
 						shouldShowOBSBanner: !1
 					}), this.props.sendEvent(Object(Ue.g)("not_now", this.props.currentStream))
 				}
 				onOBSBannerLearnMoreClick() {
-					J.wb(), this.setState({
+					J.rb(), this.setState({
 						shouldShowOBSBanner: !1
 					}), this.props.sendEvent(Object(Ue.g)("learn_more", this.props.currentStream)), this.props.toggleOBSDownloadModal()
 				}
@@ -7453,7 +7453,7 @@
 					this.props.currentStream && this.props.sendEvent(Object(Ue.o)(this.props.currentStream, this.playbackStats))
 				}
 				handleFocusMessageInput() {
-					J.ab() || this.props.toggleIntroChatModal()
+					J.W() || this.props.toggleIntroChatModal()
 				}
 				onUpvote() {
 					this.props.currentStream && this.props.sendEvent(Object(Ue.r)(this.props.currentStream, this.playbackStats))
@@ -7549,8 +7549,8 @@
 				getStreamLocation(e) {
 					const t = Object(Ve.d)(e);
 					return Object(S.a)(t, {
-						[Fe.B]: this.props.related,
-						[Fe.N]: this.props.timestamp
+						[Fe.A]: this.props.related,
+						[Fe.M]: this.props.timestamp
 					})
 				}
 				goToStream(e) {
@@ -7680,13 +7680,13 @@
 				} = t;
 				return Object(c.a)(s)
 			}), bn = Object(i.a)(un, pn, (e, t) => {
-				const s = t.get(Fe.B),
+				const s = t.get(Fe.A),
 					{
 						subredditName: o
 					} = e;
 				return "home" === s || "r/popular" === s ? s : "popular" === o ? "r/popular" : o ? void 0 : "home"
 			}), hn = Object(i.a)(pn, e => {
-				const t = e.get(Fe.N);
+				const t = e.get(Fe.M);
 				if (!t) return;
 				const s = parseInt(t, 10);
 				return isNaN(s) ? void 0 : s
@@ -8084,7 +8084,7 @@
 				a = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(n.Cg)(t)
+					return Boolean(t) && !Object(n.zg)(t)
 				},
 				d = Object(o.a)(i, r.d, (e, t) => e && !t)
 		},
@@ -8105,4 +8105,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.3c915654997a43ff701f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.a1fdac50fbcdae9b73b2.js.map

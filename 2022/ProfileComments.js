@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.1df0584cbf3651087169.js
-// Retrieved at 12/12/2022, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.cde02507759582690f9e.js
+// Retrieved at 12/13/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -456,7 +456,7 @@
 						return
 					}
 					const w = {
-						...i()(e.queryParams, [..._.q, _.l]),
+						...i()(e.queryParams, [..._.p, _.k]),
 						sort: a,
 						t: Object(I.a)(a, g)
 					};
@@ -517,7 +517,7 @@
 						dist: f.dist,
 						sort: m,
 						t: p,
-						...i()(d, _.q),
+						...i()(d, _.p),
 						layout: Object(g.U)(o, {}).toLowerCase()
 					}, Object(S.a)(o));
 					if (C.ok) {
@@ -1640,7 +1640,7 @@
 				} = t;
 				return {
 					continueToQuarantinedSubreddit: async () => {
-						await e(p.E(n)), window.location.reload()
+						await e(p.D(n)), window.location.reload()
 					},
 					continueToGatedSubreddit: async () => {
 						await e(p.v(n)), window.location.reload()
@@ -1676,7 +1676,7 @@
 				} = e, F = async () => {
 					if (a ? await P() : await Object(u.q)(), l) {
 						const e = new URL(window.location.href);
-						e.searchParams.set(I.k, "1"), window.location.href = e.href
+						e.searchParams.set(I.j, "1"), window.location.href = e.href
 					} else window.location.reload()
 				};
 				switch (n) {
@@ -5997,7 +5997,7 @@
 				l = n("./node_modules/reselect/es/index.js");
 			const m = 30 * s.pb,
 				u = () => {
-					Object(a.Jb)(i.b.XpromoConsolidation, (new Date).toString())
+					Object(a.Eb)(i.b.XpromoConsolidation, (new Date).toString())
 				},
 				p = () => {
 					if (!Object(r.a)()) return !1;
@@ -6047,4 +6047,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.1df0584cbf3651087169.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.cde02507759582690f9e.js.map

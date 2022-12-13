@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommentPill.6c28dc26cd7b5b67372d.js
-// Retrieved at 11/14/2022, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommentPill.efad7eec570c91f193de.js
+// Retrieved at 12/13/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommentPill"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, s) {
@@ -126,7 +126,7 @@
 						if (!S) return;
 						k(!1), K.current && (clearTimeout(K.current), K.current = null), L.current && (L.current = null), B.current = 2, (() => {
 							const e = new URLSearchParams(location.search);
-							e.get(j.I) !== C.w.NEW && (e.set(j.I, C.w.NEW), z(Object(i.b)(Object(r.c)({
+							e.get(j.H) !== C.w.NEW && (e.set(j.H, C.w.NEW), z(Object(i.b)(Object(r.c)({
 								pathname: location.pathname,
 								search: e.toString()
 							}, {
@@ -516,4 +516,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommentPill.6c28dc26cd7b5b67372d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommentPill.efad7eec570c91f193de.js.map

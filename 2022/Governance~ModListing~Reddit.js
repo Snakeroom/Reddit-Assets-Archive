@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.552f98582b1d44c73282.js
-// Retrieved at 12/12/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.13a585b2b1ccf9983f47.js
+// Retrieved at 12/13/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -350,14 +350,14 @@
 				d = e => {
 					switch (e) {
 						case o.a.Denied:
-							c.sb(!1), Object(r.c)();
+							c.nb(!1), Object(r.c)();
 							break;
 						case o.a.Default:
 						case o.a.Granted:
-							c.sb(!0), Object(r.c)();
+							c.nb(!0), Object(r.c)();
 							break;
 						case o.a.Closed:
-							c.sb(!0)
+							c.nb(!0)
 					}
 				}
 		},
@@ -394,7 +394,7 @@
 			n.d(t, "d", (function() {
 				return L
 			})), n.d(t, "e", (function() {
-				return D
+				return A
 			})), n.d(t, "b", (function() {
 				return G
 			})), n.d(t, "i", (function() {
@@ -466,13 +466,13 @@
 						error: b.error
 					})), void t(Object(d.d)());
 					const f = b && b.body,
-						m = A(f);
+						m = D(f);
 					if (null === l) {
 						const e = Object(y.f)(a);
 						t(R(m.notifications, e.length))
 					}
 					t(P(m)), t(Object(s.b)(m.banners))
-				}, D = () => async (e, t, n) => {
+				}, A = () => async (e, t, n) => {
 					let {
 						gqlContext: r
 					} = n;
@@ -492,7 +492,7 @@
 							type: null === (n = e.context) || void 0 === n ? void 0 : n.messageType
 						})(t())
 					})
-				}, A = e => {
+				}, D = e => {
 					const t = [],
 						n = [],
 						r = e && e.data,
@@ -1402,15 +1402,15 @@
 					userName: P,
 					wrapperClassName: w,
 					style: L,
-					...D
-				} = e, A = !!s && Object(l.e)(s) === P, U = A ? s : k, R = U && U.accountIcon || c, M = k ? k.isNSFW : p, B = Object(d.a)(R) && !b, G = B ? i.a.createElement(_.a, {
+					...A
+				} = e, D = !!s && Object(l.e)(s) === P, U = D ? s : k, R = U && U.accountIcon || c, M = k ? k.isNSFW : p, B = Object(d.a)(R) && !b, G = B ? i.a.createElement(_.a, {
 					headshot: R,
 					className: e.className,
 					hasNftBorder: m && Object(d.d)(c),
 					style: L
-				}) : i.a.createElement(x.b, S({}, D, {
+				}) : i.a.createElement(x.b, S({}, A, {
 					iconUrl: b && n ? "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png" : R,
-					isCurrentUser: A,
+					isCurrentUser: D,
 					isNSFW: M,
 					style: L
 				})), [F, H] = Object(o.useState)(!1), V = Object(o.useMemo)(() => ({
@@ -1777,7 +1777,7 @@
 					}
 				}),
 				c = (e, t) => {
-					t && (Object(o.Fb)(e.postId), Object(o.Ob)(t)), e.impressionIdStr ? Object(o.Gb)(e.impressionIdStr) : e.impressionId && Object(o.Gb)(e.impressionId)
+					t && (Object(o.Ab)(e.postId), Object(o.Jb)(t)), e.impressionIdStr ? Object(o.Bb)(e.impressionIdStr) : e.impressionId && Object(o.Bb)(e.impressionId)
 				}
 		},
 		"./src/reddit/helpers/trackers/inbox.ts": function(e, t, n) {
@@ -1835,9 +1835,9 @@
 			})), n.d(t, "o", (function() {
 				return L
 			})), n.d(t, "A", (function() {
-				return D
-			})), n.d(t, "p", (function() {
 				return A
+			})), n.d(t, "p", (function() {
+				return D
 			})), n.d(t, "B", (function() {
 				return U
 			})), n.d(t, "C", (function() {
@@ -1855,7 +1855,7 @@
 				e.HideNotifications = "hide_notification", e.HideSubreddit = "hide_subreddit", e.BlockAwarder = "block_awarder", e.DecreaseSubredditUpdates = "disable_frequent"
 			}(o || (o = {})),
 			function(e) {
-				e.MiniInbox = "mini-inbox", e.Inbox = "inbox"
+				e.MiniInbox = "mini_inbox", e.Inbox = "inbox"
 			}(i || (i = {})),
 			function(e) {
 				e.Inbox = "inbox", e.Nav = "nav", e.Settings = "notification_app_settings"
@@ -2263,11 +2263,11 @@
 						id: e
 					}
 				}),
-				D = (e, t) => n => ({
+				A = (e, t) => n => ({
 					...u.o(n),
 					action: d.c.CLICK,
 					noun: "inbox_banner",
-					source: "mini-inbox",
+					source: "mini_inbox",
 					actionInfo: {
 						...u.d(n),
 						type: t
@@ -2276,7 +2276,7 @@
 						id: e
 					}
 				}),
-				A = e => t => ({
+				D = e => t => ({
 					...u.o(t),
 					action: d.c.RECEIVE,
 					noun: "inbox_banner",
@@ -2292,7 +2292,7 @@
 					...u.o(t),
 					action: d.c.RECEIVE,
 					noun: "inbox_banner",
-					source: "mini-inbox",
+					source: "mini_inbox",
 					actionInfo: {
 						...u.d(t)
 					},
@@ -2304,7 +2304,7 @@
 					...u.o(t),
 					action: d.c.VIEW,
 					noun: "inbox_banner",
-					source: "mini-inbox",
+					source: "mini_inbox",
 					actionInfo: {
 						...u.d(t)
 					},
@@ -2338,9 +2338,9 @@
 			})), n.d(t, "o", (function() {
 				return L
 			})), n.d(t, "s", (function() {
-				return D
-			})), n.d(t, "c", (function() {
 				return A
+			})), n.d(t, "c", (function() {
+				return D
 			})), n.d(t, "l", (function() {
 				return U
 			})), n.d(t, "p", (function() {
@@ -2420,7 +2420,7 @@
 								{
 									sortToUse: l
 								} = Object(d.a)(t, s);
-							Object(C.a)(A(c, s, a, n, r, l)(t));
+							Object(C.a)(D(c, s, a, n, r, l)(t));
 							break
 						}
 						case i.Sb.COMMUNITY_HUBS:
@@ -2504,7 +2504,7 @@
 						case i.Sb.PROFILE_PRIVATE: {
 							const o = Object(u.d)(e, t);
 							if (!o) return;
-							Object(C.a)(D(o)(r, n)(t));
+							Object(C.a)(A(o)(r, n)(t));
 							break
 						}
 						case i.Sb.FOLLOWERS:
@@ -2563,7 +2563,7 @@
 							if (l) {
 								const i = Object(u.e)(e);
 								if (!i) return;
-								Object(C.a)(re(i, Object(_.e)(o()(x && x.queryParams || {}, c.D)), n, r, x)(t))
+								Object(C.a)(re(i, Object(_.e)(o()(x && x.queryParams || {}, c.C)), n, r, x)(t))
 							}
 							break;
 						case i.Sb.PUBLIC_ACCESS_NETWORK:
@@ -2695,7 +2695,7 @@
 						adblock: N.e(i)
 					}
 				},
-				D = e => (t, n) => r => {
+				A = e => (t, n) => r => {
 					const o = !r.profilePrivatePage.api.error[e] && !r.profilePrivatePage.api.pending[e];
 					return {
 						source: "global",
@@ -2712,7 +2712,7 @@
 						adblock: N.e(r)
 					}
 				},
-				A = (e, t, n, r, o, i) => s => {
+				D = (e, t, n, r, o, i) => s => {
 					const {
 						api: c
 					} = s.pages.comments, a = !c.error[e] && !c.pending[e], d = new URLSearchParams(window.location.search).has(x.a), u = Object(E.b)(s), l = {
@@ -3601,4 +3601,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.552f98582b1d44c73282.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.13a585b2b1ccf9983f47.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.8332bf28f72defe83120.js
-// Retrieved at 12/8/2022, 11:50:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.417f1c8fde25612073a9.js
+// Retrieved at 12/13/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -289,7 +289,7 @@
 				},
 				H = r("./node_modules/icepick/icepick.js");
 			const R = {};
-			var D = function() {
+			var W = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : R,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -314,7 +314,7 @@
 						return e
 				}
 			};
-			var W = function() {
+			var D = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -341,7 +341,7 @@
 					}
 				},
 				G = Object(y.c)({
-					error: W,
+					error: D,
 					pending: z
 				});
 			var K = function() {
@@ -408,7 +408,7 @@
 					fetchedTokens: M,
 					inContext: T,
 					loadMore: L,
-					models: D,
+					models: W,
 					search: q,
 					userOrder: Q
 				});
@@ -804,7 +804,7 @@
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), R = (e, t) => t ? H._("{userName} (you)", [H._param("userName", e)], {
 				hk: "vsIHp"
 			}) : e;
-			var D = function(e) {
+			var W = function(e) {
 					const {
 						awarder: t,
 						className: r,
@@ -848,8 +848,8 @@
 						hk: "4BW9Zq"
 					})))
 				},
-				W = r("./src/reddit/components/Econ/TopAwardersModal/TopAwardersList/index.m.less"),
-				z = r.n(W);
+				D = r("./src/reddit/components/Econ/TopAwardersModal/TopAwardersList/index.m.less"),
+				z = r.n(D);
 			const G = 8;
 			var K = function(e) {
 					const {
@@ -862,14 +862,14 @@
 					} = e;
 					return t.length ? n.a.createElement("div", {
 						className: Object(i.a)(r, z.a.container)
-					}, a && (!a.rank || a.rank > G) && n.a.createElement(D, {
+					}, a && (!a.rank || a.rank > G) && n.a.createElement(W, {
 						className: z.a.awarder,
 						currentUserId: s,
 						awarder: a,
 						key: a.redditor.id,
 						showCta: !o,
 						onCtaClick: c
-					}), t.map(e => n.a.createElement(D, {
+					}), t.map(e => n.a.createElement(W, {
 						className: z.a.awarder,
 						currentUserId: s,
 						awarder: e,
@@ -1224,8 +1224,8 @@
 				L = r("./src/reddit/icons/fonts/Info/index.tsx"),
 				H = r("./src/reddit/icons/svgs/Admin/index.tsx"),
 				R = r("./src/reddit/icons/svgs/Premium/index.tsx"),
-				D = r("./src/reddit/models/Gold/Award.ts"),
-				W = r("./src/reddit/models/User/index.ts"),
+				W = r("./src/reddit/models/Gold/Award.ts"),
+				D = r("./src/reddit/models/User/index.ts"),
 				z = r("./src/reddit/components/HumanDate/index.tsx"),
 				G = r("./src/reddit/components/ProfileIdCard/AwardedLastMonth.tsx"),
 				K = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/index.tsx"),
@@ -1413,7 +1413,7 @@
 					}, [O.fbt._plural(r.fromAwardsReceived)], {
 						hk: "3nzm9q"
 					}), n.a.createElement(we, {
-						href: D.a,
+						href: W.a,
 						target: "_blank",
 						rel: "noopener noreferrer"
 					}, n.a.createElement(L.a, {
@@ -1424,7 +1424,7 @@
 					}, [O.fbt._plural(r.fromAwardsGiven)], {
 						hk: "4zXN3B"
 					}), n.a.createElement(we, {
-						href: D.a,
+						href: W.a,
 						target: "_blank",
 						rel: "noopener noreferrer"
 					}, n.a.createElement(L.a, {
@@ -1459,7 +1459,7 @@
 					if (!I) return n.a.createElement(Pe, {
 						style: f
 					});
-					const j = !!o && Object(W.e)(o) === x,
+					const j = !!o && Object(D.e)(o) === x,
 						y = !!(null == o ? void 0 : o.snoovatarFullBodyAsset),
 						P = I.accountIcon || `${C.a.assetPath}/img/snoo_user_placeholder.png`,
 						U = null == m ? void 0 : m.flair,
@@ -1880,7 +1880,7 @@
 					hideNSFWPref: o.H
 				}),
 				i = Object(a.b)(c, e => ({
-					imageUpdateRequested: (t, r) => e(Object(s.D)(t, r))
+					imageUpdateRequested: (t, r) => e(Object(s.C)(t, r))
 				}));
 			t.a = i
 		},
@@ -2709,4 +2709,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.8332bf28f72defe83120.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.417f1c8fde25612073a9.js.map

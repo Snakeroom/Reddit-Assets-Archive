@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.4a41a82c641f2e1b4de1.js
-// Retrieved at 12/12/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.7a9a960c457dbf25f1e4.js
+// Retrieved at 12/13/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -1694,7 +1694,7 @@
 					hideNSFWPref: a.H
 				}),
 				c = Object(n.b)(i, e => ({
-					imageUpdateRequested: (t, r) => e(Object(o.D)(t, r))
+					imageUpdateRequested: (t, r) => e(Object(o.C)(t, r))
 				}));
 			t.a = c
 		},
@@ -3614,7 +3614,7 @@
 					const {
 						id: r,
 						eventViews: n
-					} = Object(o.y)();
+					} = Object(o.x)();
 					return r === e.id && n > e.maxViews ? null : e
 				}),
 				l = Object(n.a)(d, e => {
@@ -3622,7 +3622,7 @@
 					const {
 						id: t,
 						lastInteractionTimestamp: r
-					} = Object(o.y)();
+					} = Object(o.x)();
 					return t === e.id && r > 0 ? null : e.banner
 				})
 		},
@@ -3705,4 +3705,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.4a41a82c641f2e1b4de1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.7a9a960c457dbf25f1e4.js.map
