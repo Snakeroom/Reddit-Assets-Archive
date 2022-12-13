@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxTooltip.60c8d977a0caab976505.js
-// Retrieved at 12/13/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxTooltip.3378a5163a92370cd989.js
+// Retrieved at 12/13/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxTooltip", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -94,22 +94,22 @@
 				v = i("./src/reddit/selectors/activeModal.ts"),
 				S = i("./src/reddit/selectors/activeModalId.ts"),
 				k = i("./src/reddit/constants/experiments.ts"),
-				w = i("./src/reddit/helpers/chooseVariant/index.ts"),
-				N = i("./src/reddit/selectors/user.ts");
-			const y = e => Object(w.c)(e, {
-				experimentEligibilitySelector: N.S,
-				experimentName: k.wb
-			}) === k.Rd;
+				N = i("./src/reddit/helpers/chooseVariant/index.ts"),
+				w = i("./src/reddit/selectors/user.ts");
+			const y = e => Object(N.c)(e, {
+				experimentEligibilitySelector: w.S,
+				experimentName: k.xb
+			}) === k.Sd;
 			var _ = i("./src/reddit/selectors/experiments/delayDnPermission.ts"),
 				I = i("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts");
-			const P = e => Object(w.c)(e, {
-				experimentName: k.ec,
-				experimentEligibilitySelector: w.a
-			}) === k.Rd;
+			const P = e => Object(N.c)(e, {
+				experimentName: k.fc,
+				experimentEligibilitySelector: N.a
+			}) === k.Sd;
 			var E = i("./src/reddit/selectors/meta.ts");
 			let F = !1;
 			const C = async (e, t) => {
-				const i = Object(N.R)(e);
+				const i = Object(w.R)(e);
 				if (F) return;
 				if (F = !0, Object(f.a)(e) !== d.d.NotificationsSupported) return;
 				await Object(u.a)();
@@ -343,12 +343,12 @@
 					cursor: h.c,
 					hasNextPage: h.d,
 					isHotPotatoEnabled: m.a,
-					inboxBadgeCount: g.g,
+					inboxBadgeCount: g.h,
 					isInboxInfiniteScrollEnabled: O.b,
 					isInboxPolicyBannerEnabled: O.d,
 					isInboxPostEmbedEnabled: O.a,
 					isPending: h.e,
-					messagesBadgeCount: g.h,
+					messagesBadgeCount: g.i,
 					notifications: e => Object(O.b)(e) ? Object(h.f)(e) : Object(h.g)(e)
 				}),
 				x = Object(s.b)(j, (e, t) => {
@@ -393,8 +393,8 @@
 					isLoggedIn: v,
 					isOpen: S,
 					isPending: k,
-					isPushNotificationsSupported: w,
-					markAllAsRead: N,
+					isPushNotificationsSupported: N,
+					markAllAsRead: w,
 					markNotificationAsRead: y,
 					messagesBadgeCount: _,
 					notifications: I,
@@ -426,14 +426,14 @@
 					hideTooltip: p,
 					blockAwarder: m,
 					inboxBadgeCount: O,
-					isPushNotificationsSupported: w,
+					isPushNotificationsSupported: N,
 					isHotPotatoEnabled: g,
 					isInboxPolicyBannerEnabled: h,
 					isInboxInfiniteScrollEnabled: j,
 					isInboxPostEmbedEnabled: x,
 					isLoggedIn: v,
 					isPending: k,
-					markAllAsRead: N,
+					markAllAsRead: w,
 					markNotificationAsRead: y,
 					messagesBadgeCount: _,
 					notifications: I,
@@ -472,9 +472,9 @@
 			})), i.d(t, "o", (function() {
 				return k
 			})), i.d(t, "h", (function() {
-				return w
-			})), i.d(t, "g", (function() {
 				return N
+			})), i.d(t, "g", (function() {
+				return w
 			}));
 			var n = i("./src/reddit/selectors/telemetry.ts"),
 				o = i("./src/telemetry/index.ts"),
@@ -602,13 +602,13 @@
 						pageType: "community_alerts"
 					}
 				}),
-				w = () => e => ({
+				N = () => e => ({
 					...n.o(e),
 					action: "click",
 					noun: "desktop_notification_permissions",
 					source: "overlay"
 				}),
-				N = () => e => ({
+				w = () => e => ({
 					...n.o(e),
 					action: "auto_dismiss",
 					noun: "desktop_notification_permissions",
@@ -620,4 +620,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.60c8d977a0caab976505.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.3378a5163a92370cd989.js.map

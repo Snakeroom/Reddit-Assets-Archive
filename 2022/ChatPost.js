@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.fbae1a58fc978d2ca932.js
-// Retrieved at 12/13/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.bbb137d4ef7735af02b6.js
+// Retrieved at 12/13/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/backo2/index.js": function(e, t) {
@@ -1272,7 +1272,7 @@
 							tooltipId: e,
 							args: {
 								isModNotesView: !0,
-								modNotesFilter: f.y.Note
+								modNotesFilter: f.z.Note
 							}
 						})), E(Object(c.a)(n.id, n.authorId))
 					}, [n, _, g, E]);
@@ -3276,7 +3276,7 @@
 							const {
 								awardId: n,
 								commentId: o
-							} = e, s = Object(oe.a)(), i = Object(be.a)(a, n), c = Object(Ce.g)(a);
+							} = e, s = Object(oe.a)(), i = Object(be.a)(a, n), c = Object(Ce.f)(a);
 							if ((e => _e(e) || (e => "chat_reaction_downvote" === e.id)(e))(i)) {
 								const e = _e(i) ? "chat_reaction_downvote" : "chat_reaction_upvote",
 									n = ((e, t, n) => {
@@ -3333,7 +3333,7 @@
 								awardId: o,
 								awardingId: s,
 								commentId: r
-							} = e, c = Object(Ce.g)(i);
+							} = e, c = Object(Ce.f)(i);
 							await Object(de.c)(a(), {
 								awardingId: s
 							}), c || await Pe(i, {
@@ -3848,7 +3848,7 @@
 							postId: n.postId
 						})
 					},
-					isLiveChatThreadingEnabled: Ce.e
+					isLiveChatThreadingEnabled: Ce.d
 				});
 			var Cn = Object(h.b)(bn, (e, t) => {
 					let {
@@ -4085,9 +4085,9 @@
 				Rn = n("./src/reddit/constants/experiments.ts"),
 				Pn = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const Bn = e => Object(Pn.c)(e, {
-					experimentName: Rn.qb,
+					experimentName: Rn.rb,
 					experimentEligibilitySelector: Pn.a
-				}) === Rn.lb.Enabled,
+				}) === Rn.mb.Enabled,
 				Dn = (e, t) => {
 					let {
 						commentId: n
@@ -4381,7 +4381,7 @@
 							renderingObjectInfo: a || void 0
 						}), [a]),
 						q = Object(h.e)(e => a ? xe(e, a) : []),
-						Q = Object(h.e)(Ce.e),
+						Q = Object(h.e)(Ce.d),
 						z = () => {
 							U(!F)
 						};
@@ -4845,15 +4845,15 @@
 					isPending: K.d,
 					liveCommentsWebsocket: _o.E,
 					moreCommentsLink: K.H,
-					isCommentReactionStreamingKillSwitchEnabled: Ce.g,
+					isCommentReactionStreamingKillSwitchEnabled: Ce.f,
 					currentUserId: ye.k,
 					comments: q.a,
-					isLiveChatThreadingEnabled: Ce.e,
+					isLiveChatThreadingEnabled: Ce.d,
 					showReactionsHint: e => {
-						const t = Object(Ce.d)(e),
+						const t = Object(Ce.c)(e),
 							n = Object(ye.b)(3 * r.E)(e),
 							o = Object(go.a)(e, {
-								experience: Eo.Z.LiveChatReactionEdu
+								experience: Eo.ab.LiveChatReactionEdu
 							});
 						return t && n && !!(null == o ? void 0 : o.value)
 					}
@@ -4886,9 +4886,9 @@
 								text: qe
 							})
 						})), e(Object(te.b)({
-							experience: Eo.Z.LiveChatReactionEdu,
+							experience: Eo.ab.LiveChatReactionEdu,
 							value: !1
-						})), e(Object(te.c)(Eo.Z.LiveChatReactionEdu))
+						})), e(Object(te.c)(Eo.ab.LiveChatReactionEdu))
 					}
 				})),
 				So = e => {
@@ -6389,8 +6389,8 @@
 				r = n("./src/reddit/selectors/user.ts");
 			const a = e => Object(s.c)(e, {
 				experimentEligibilitySelector: r.S,
-				experimentName: o.bc
-			}) === o.Rd
+				experimentName: o.cc
+			}) === o.Sd
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, n) {
 			"use strict";
@@ -6489,4 +6489,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.fbae1a58fc978d2ca932.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.bbb137d4ef7735af02b6.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.7fde7068d3b389a8bcaf.js
-// Retrieved at 12/13/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.2eeabb4d444de881b7bc.js
+// Retrieved at 12/13/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -573,10 +573,10 @@
 				M = n("./src/reddit/components/Governance/Token/index.tsx"),
 				A = n("./src/reddit/constants/colors.ts"),
 				S = n("./src/reddit/controls/Button/index.tsx"),
-				F = n("./src/reddit/controls/LoadingIcon/index.tsx"),
-				B = n("./src/reddit/selectors/gov.ts"),
-				R = n("./src/reddit/components/Governance/TransferPointsModal/Controls/index.m.less"),
-				G = n.n(R),
+				B = n("./src/reddit/controls/LoadingIcon/index.tsx"),
+				F = n("./src/reddit/selectors/gov.ts"),
+				G = n("./src/reddit/components/Governance/TransferPointsModal/Controls/index.m.less"),
+				R = n.n(G),
 				D = n("./node_modules/fbt/lib/FbtPublic.js");
 			const V = Object(T.c)({
 				isMainnetEnabled: j.b,
@@ -587,7 +587,7 @@
 					return Object(k.b)(e, n)
 				},
 				transferIsPending: e => e.transfers.communityPoints.api.pending,
-				wallet: B.d
+				wallet: F.d
 			});
 			var W = Object(l.b)(V)((function(e) {
 					const {
@@ -602,16 +602,16 @@
 						wallet: u
 					} = e, m = (null == u ? void 0 : u.unlockedAmount) || "0", p = new s.BigNumber(t || "0"), h = new s.BigNumber(m), b = h.isGreaterThanOrEqualTo(p), f = e.submissionEnabled && !h.isZero() && b;
 					return c.a.createElement("div", {
-						className: Object(O.a)(G.a.container, n, {
-							[G.a.centered]: a
+						className: Object(O.a)(R.a.container, n, {
+							[R.a.centered]: a
 						})
 					}, !a && c.a.createElement("div", {
-						className: G.a.available
+						className: R.a.available
 					}, c.a.createElement("div", null, D.fbt._("Available", null, {
 						hk: "4haScm"
 					})), c.a.createElement(M.a, {
 						grey: !0,
-						className: G.a.token,
+						className: R.a.token,
 						subredditId: o
 					}), c.a.createElement("div", {
 						style: {
@@ -619,11 +619,11 @@
 						}
 					}, Object(P.a)(Object(_.c)(m, null == i ? void 0 : i.displayConversion)))), c.a.createElement(S.l, {
 						disabled: !f,
-						className: a ? G.a.fullButton : G.a.button,
+						className: a ? R.a.fullButton : R.a.button,
 						tabIndex: l,
 						onClick: r
-					}, d ? c.a.createElement(F.a, {
-						className: G.a.loadingIcon,
+					}, d ? c.a.createElement(B.a, {
+						className: R.a.loadingIcon,
 						sizePx: 20
 					}) : a ? D.fbt._("Continue", null, {
 						hk: "3wb99N"
@@ -950,20 +950,20 @@
 				Me = n("./src/reddit/icons/svgs/Nsfw/index.tsx"),
 				Ae = n("./src/reddit/components/Governance/TransferPointsModal/Recipient/index.m.less"),
 				Se = n.n(Ae);
-			const Fe = 42,
-				Be = /^0x[0-9a-fA-F]+$/;
-			var Re;
+			const Be = 42,
+				Fe = /^0x[0-9a-fA-F]+$/;
+			var Ge;
 			! function(e) {
 				e[e.Empty = 0] = "Empty", e[e.Searching = 1] = "Searching", e[e.Valid = 2] = "Valid", e[e.UserDoesNotHaveAWallet = 3] = "UserDoesNotHaveAWallet", e[e.InputtedWalletAddress = 4] = "InputtedWalletAddress", e[e.InvalidUsername = 5] = "InvalidUsername", e[e.Error = 6] = "Error"
-			}(Re || (Re = {}));
-			const Ge = async (e, t, n, s, a) => {
+			}(Ge || (Ge = {}));
+			const Re = async (e, t, n, s, a) => {
 				const r = t.current;
-				if (!r || r.length <= _e.b) return void a(Re.Empty);
-				const i = Be.test(r);
+				if (!r || r.length <= _e.b) return void a(Ge.Empty);
+				const i = Fe.test(r);
 				if (i) try {
-					if (!!Object(ke.a)(r)) return void a(e ? Re.InputtedWalletAddress : Re.Valid)
+					if (!!Object(ke.a)(r)) return void a(e ? Ge.InputtedWalletAddress : Ge.Valid)
 				} catch {}
-				r.length <= _e.a ? (a(Re.Searching), s(((e, t) => async (n, s, a) => {
+				r.length <= _e.a ? (a(Ge.Searching), s(((e, t) => async (n, s, a) => {
 					let {
 						apiContext: r
 					} = a, i = s(), o = Object(Te.Cb)(i, {
@@ -994,10 +994,10 @@
 						userId: n,
 						wallet: s
 					} = e;
-					t.current === r && a(n ? s ? Re.Valid : Re.UserDoesNotHaveAWallet : i ? Re.InputtedWalletAddress : Re.InvalidUsername)
+					t.current === r && a(n ? s ? Ge.Valid : Ge.UserDoesNotHaveAWallet : i ? Ge.InputtedWalletAddress : Ge.InvalidUsername)
 				}).catch(() => {
-					a(Re.Error)
-				})) : a(i ? Re.InputtedWalletAddress : Re.InvalidUsername)
+					a(Ge.Error)
+				})) : a(i ? Ge.InputtedWalletAddress : Ge.InvalidUsername)
 			};
 
 			function De(e) {
@@ -1007,8 +1007,8 @@
 					subredditId: s,
 					tabIndex: a,
 					onChange: r
-				} = e, [d, u] = Object(o.useState)(n || ""), m = Object(o.useRef)(d), [p, h] = Object(o.useState)(Re.Empty), b = Object(Oe.a)(), f = Object(l.e)(j.b), v = () => Ge(f, m, s, b, e => {
-					h(e), e === Re.Valid && r(m.current, !0)
+				} = e, [d, u] = Object(o.useState)(n || ""), m = Object(o.useRef)(d), [p, h] = Object(o.useState)(Ge.Empty), b = Object(Oe.a)(), f = Object(l.e)(j.b), v = () => Re(f, m, s, b, e => {
+					h(e), e === Ge.Valid && r(m.current, !0)
 				}), x = Object(o.useMemo)(() => i()(v, 300), [m, s, b, h, r, v]);
 				return Object(o.useEffect)(() => {
 					n && v()
@@ -1022,7 +1022,7 @@
 					}) : D.fbt._("username or vault address", null, {
 						hk: "1IIniU"
 					}),
-					max: Fe,
+					max: Be,
 					style: {
 						borderColor: Ve(p)
 					},
@@ -1035,28 +1035,28 @@
 					}
 				}), function(e) {
 					switch (e) {
-						case Re.UserDoesNotHaveAWallet:
+						case Ge.UserDoesNotHaveAWallet:
 							return c.a.createElement(ce.a, {
 								className: Se.a.icon,
 								style: {
 									fill: A.a.notice
 								}
 							});
-						case Re.InputtedWalletAddress:
-						case Re.InvalidUsername:
-						case Re.Error:
+						case Ge.InputtedWalletAddress:
+						case Ge.InvalidUsername:
+						case Ge.Error:
 							return c.a.createElement(Me.a, {
 								className: Se.a.icon,
 								style: {
 									fill: A.a.warning
 								}
 							});
-						case Re.Searching:
-							return c.a.createElement(F.a, {
+						case Ge.Searching:
+							return c.a.createElement(B.a, {
 								className: Se.a.loadingIcon,
 								sizePx: 8
 							});
-						case Re.Valid:
+						case Ge.Valid:
 							return c.a.createElement(Pe.a, {
 								className: Se.a.icon
 							});
@@ -1070,21 +1070,21 @@
 					}
 				}, function(e, t) {
 					switch (e) {
-						case Re.UserDoesNotHaveAWallet:
+						case Ge.UserDoesNotHaveAWallet:
 							return D.fbt._("That user does not yet have a Vault.", null, {
 								hk: "ucZYj"
 							});
-						case Re.InputtedWalletAddress:
+						case Ge.InputtedWalletAddress:
 							return t ? D.fbt._("Cannot tip to vault addresses.", null, {
 								hk: "2PW4iA"
 							}) : D.fbt._("Invalid Vault address.", null, {
 								hk: "1puAgb"
 							});
-						case Re.InvalidUsername:
+						case Ge.InvalidUsername:
 							return D.fbt._("That user does not exist.", null, {
 								hk: "4f8vh9"
 							});
-						case Re.Error:
+						case Ge.Error:
 							return D.fbt._("There was an error retrieving that user.", null, {
 								hk: "2F521p"
 							});
@@ -1096,11 +1096,11 @@
 
 			function Ve(e) {
 				switch (e) {
-					case Re.UserDoesNotHaveAWallet:
+					case Ge.UserDoesNotHaveAWallet:
 						return A.a.notice;
-					case Re.InputtedWalletAddress:
-					case Re.InvalidUsername:
-					case Re.Error:
+					case Ge.InputtedWalletAddress:
+					case Ge.InvalidUsername:
+					case Ge.Error:
 						return A.a.warning
 				}
 			}
@@ -2050,14 +2050,14 @@
 			const r = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.Ce
-					}) === s.Rd
+						experimentName: s.De
+					}) === s.Sd
 				},
 				i = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.Ae
-					}) === s.Rd
+						experimentName: s.Be
+					}) === s.Sd
 				}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
@@ -2114,4 +2114,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.7fde7068d3b389a8bcaf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.2eeabb4d444de881b7bc.js.map

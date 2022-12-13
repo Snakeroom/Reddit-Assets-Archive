@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.6f56169a3f75d5c40b75.js
-// Retrieved at 12/13/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.355482233a511cc0ce21.js
+// Retrieved at 12/13/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -284,8 +284,8 @@
 				M = n("./src/reddit/constants/localStorage.ts"),
 				H = n("./src/reddit/contexts/ApiContext.tsx"),
 				J = n("./src/reddit/featureFlags/component.tsx"),
-				X = n("./src/reddit/helpers/localStorage/index.ts"),
-				z = n("./src/reddit/helpers/name/index.ts"),
+				z = n("./src/reddit/helpers/localStorage/index.ts"),
+				X = n("./src/reddit/helpers/name/index.ts"),
 				Z = n("./src/lib/makeApiRequest/index.ts"),
 				V = n("./src/lib/omitHeaders/index.ts"),
 				Y = n("./src/reddit/constants/headers.ts");
@@ -306,13 +306,13 @@
 					}
 				}
 				async getSubredditForAdoption() {
-					let e = ie.cachedData || Object(X.B)(M.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
+					let e = ie.cachedData || Object(z.B)(M.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
 					if (!e || Date.now() - e.fetchedAt > ae) {
 						const t = await $(this.props.apiContext());
 						t.ok && (e = {
 							subreddits: t.body.data.subreddits.map(e => e.name),
 							fetchedAt: Date.now()
-						}, Object(X.Eb)(M.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
+						}, Object(z.Eb)(M.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
 					}
 					return ie.cachedData = e, e ? e.subreddits : []
 				}
@@ -340,7 +340,7 @@
 						hk: "487Ffc"
 					})), d.a.createElement("div", {
 						className: te.a.description
-					}, ne._("{subreddits list} and more are looking for moderators!", [ne._param("subreddits list", d.a.createElement("strong", null, e.map(z.d).join(", ") + (e.length > 1 ? "," : "")))], {
+					}, ne._("{subreddits list} and more are looking for moderators!", [ne._param("subreddits list", d.a.createElement("strong", null, e.map(X.d).join(", ") + (e.length > 1 ? "," : "")))], {
 						hk: "2Tb946"
 					}))), d.a.createElement(f.n, {
 						className: te.a.button,
@@ -684,16 +684,16 @@
 			}
 			var We = n("./src/reddit/selectors/experiments/utils.ts");
 			const qe = Object(u.a)(e => Object(De.c)(e, {
-					experimentName: Ie.ue,
+					experimentName: Ie.ve,
 					experimentEligibilitySelector: De.a
 				}), We.a),
-				Qe = Object(u.a)(qe, e => e === Ie.ye.Enabled);
+				Qe = Object(u.a)(qe, e => e === Ie.ze.Enabled);
 			var Ke = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Me = n("./src/reddit/selectors/user.ts");
 			var He = n("./src/reddit/selectors/seo/linksModule.ts"),
 				Je = n("./src/reddit/selectors/subreddit.ts"),
-				Xe = n("./src/reddit/selectors/subredditLeaderboard.ts"),
-				ze = n("./src/reddit/helpers/createBannerProperties/index.ts"),
+				ze = n("./src/reddit/selectors/subredditLeaderboard.ts"),
+				Xe = n("./src/reddit/helpers/createBannerProperties/index.ts"),
 				Ze = n("./src/reddit/selectors/meta.ts");
 			const Ve = "c1020",
 				Ye = "videos",
@@ -716,8 +716,8 @@
 						return (!t || !n) && function(e) {
 							return Object(De.c)(e, {
 								experimentEligibilitySelector: Me.S,
-								experimentName: Ie.Tc
-							}) === Ie.Rd
+								experimentName: Ie.Uc
+							}) === Ie.Sd
 						}(e)
 					},
 					isNavbarLikeMwebEnabled: c.a,
@@ -784,7 +784,7 @@
 						placement: Q.e.ABOVE_THE_FOLD,
 						listingName: a,
 						removeSidebarSpacer: !1,
-						position: ze.a.FIRST,
+						position: Xe.a.FIRST,
 						sizes: Q.j,
 						placementIndex: e++
 					}), tt(this.props) && d.a.createElement(y, null), r && d.a.createElement(g.a, null, d.a.createElement(Re, null)), s && d.a.createElement(g.a, null, d.a.createElement(p.a, {
@@ -795,7 +795,7 @@
 						adComponent: d.a.createElement(B.a, {
 							placement: Q.e.BELOW_THE_FOLD,
 							listingName: a,
-							position: ze.a.BOTTOM,
+							position: Xe.a.BOTTOM,
 							sizes: Q.q,
 							placementIndex: e++
 						})
@@ -815,7 +815,7 @@
 							},
 							isOnlyModIncluded: !1
 						},
-						n = Object(Xe.d)(Ve, Ye);
+						n = Object(ze.d)(Ve, Ye);
 					e(Object(b.b)(t, n))
 				},
 				subredditAboutRequested: t => e(Object(m.u)(t))
@@ -1514,4 +1514,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.6f56169a3f75d5c40b75.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.355482233a511cc0ce21.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.a376291e8043c6c62c92.js
-// Retrieved at 12/12/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.6f8656dff0e43b335b39.js
+// Retrieved at 12/13/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-EventPostContent"], {
 		"./src/reddit/components/ClassicPost/index.tsx": function(e, t, s) {
@@ -70,7 +70,7 @@
 			const {
 				fbt: _
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
-			var w = e => {
+			var N = e => {
 					let {
 						post: t
 					} = e;
@@ -98,7 +98,7 @@
 						className: g.a.muteIcon
 					}))
 				},
-				N = s("./src/reddit/components/EventPost/EventMetaHeader/index.tsx"),
+				w = s("./src/reddit/components/EventPost/EventMetaHeader/index.tsx"),
 				I = s("./src/reddit/components/ExpandoButton/index.tsx"),
 				A = s("./src/reddit/components/Flatlist/index.tsx"),
 				T = s("./src/reddit/components/JSAPIContainers/index.tsx"),
@@ -181,8 +181,8 @@
 					toggleCheckbox: Pe,
 					userIsOp: ye,
 					shouldShowGalleryTileOption: _e,
-					showPromotedCTA: we,
-					showCTAExperimentDesign: Ne
+					showPromotedCTA: Ne,
+					showCTAExperimentDesign: we
 				} = e, Ie = Object(l.a)(), Ae = Object(c.a)(v);
 				Object(o.useEffect)(() => {
 					xe && Ae !== v && xe(ve.id)
@@ -226,7 +226,7 @@
 					templatePlaceholderImage: Te && Te.postPlaceholderImage,
 					removeLink: Je
 				});
-				Object(h.c)(ve) && (ze = r.a.createElement(w, {
+				Object(h.c)(ve) && (ze = r.a.createElement(N, {
 					post: ve
 				}));
 				const Ze = Object(ae.s)(ve),
@@ -255,7 +255,7 @@
 						className: ke ? le.a.shouldUseRoundedBorder : void 0,
 						"data-click-id": "background",
 						flairStyleTemplate: Te
-					}, r.a.createElement(N.a, {
+					}, r.a.createElement(w.a, {
 						className: le.a.eventMeta,
 						post: ve
 					}), r.a.createElement("div", {
@@ -298,16 +298,16 @@
 					}), ce && Le && Be && r.a.createElement(M.a, {
 						onIgnoreReports: pe,
 						reportable: ve
-					}), we && Xe && Xe.url && !ve.isSurveyAd && r.a.createElement(u.a, {
-						ctaExperimentDesign: Ne && "classic",
+					}), Ne && Xe && Xe.url && !ve.isSurveyAd && r.a.createElement(u.a, {
+						ctaExperimentDesign: we && "classic",
 						className: Object(a.a)(le.a.adLinkWrapper, {
-							[le.a.ctaExperiment]: Ne
+							[le.a.ctaExperiment]: we
 						})
 					}, r.a.createElement(m.a, {
 						post: ve,
 						adLinkContent: Ke,
-						ctaExperimentDesign: Ne && "classic"
-					})), ve.discussionType === ie.n.Chat && r.a.createElement(de.a, {
+						ctaExperimentDesign: we && "classic"
+					})), ve.discussionType === ie.o.Chat && r.a.createElement(de.a, {
 						postId: ve.id
 					}), r.a.createElement("div", {
 						className: le.a.flatlistContainer
@@ -659,12 +659,12 @@
 						});
 						if (!e.ok) return l(Object(E.f)({
 							kind: C.b.Error,
-							text: j.a[k.k.ServiceError]
+							text: j.a[k.l.ServiceError]
 						})), void d(!1);
 						const s = Object(j.h)(e.body);
 						if (null == s ? void 0 : s.errorState) return l(Object(E.f)({
 							kind: C.b.Error,
-							text: j.a[s.errorState.code] || j.a[k.k.ServiceError]
+							text: j.a[s.errorState.code] || j.a[k.l.ServiceError]
 						})), void d(!1);
 						(null == s ? void 0 : s.okState) && (window.location.href = `${x.a.redditUrl}/talk/${t}`)
 					}
@@ -930,7 +930,7 @@
 			})), s.d(t, "b", (function() {
 				return _
 			})), s.d(t, "l", (function() {
-				return w
+				return N
 			}));
 			var o = s("./node_modules/fbt/lib/FbtPublic.js"),
 				r = s("./node_modules/uuid/dist/esm-browser/v4.js"),
@@ -956,14 +956,14 @@
 						...u,
 						variables: t
 					});
-					return !!Object(a.c)(s) && (s.body.data.subredditInfoById.allowedPostTypes || []).includes(v.M.Talk)
+					return !!Object(a.c)(s) && (s.body.data.subredditInfoById.allowedPostTypes || []).includes(v.N.Talk)
 				}, O = async (e, t) => {
 					var s, o;
 					const r = await Object(n.a)(e, {
 						...m,
 						variables: t
 					});
-					return !!Object(a.c)(r) && (null !== (o = null === (s = r.body.data.profileByName) || void 0 === s ? void 0 : s.allowedPostTypes) && void 0 !== o ? o : []).includes(v.M.Talk)
+					return !!Object(a.c)(r) && (null !== (o = null === (s = r.body.data.profileByName) || void 0 === s ? void 0 : s.allowedPostTypes) && void 0 !== o ? o : []).includes(v.N.Talk)
 				}, j = async e => {
 					var t;
 					const s = await Object(n.a)(e, l);
@@ -991,29 +991,29 @@
 						}
 					}
 				}), k = () => Object(r.a)(), S = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile || e.data.startAudioRoom, P = {
-					[v.k.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+					[v.l.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[v.k.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
+					[v.l.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					}),
-					[v.k.RoomLimitExceeded]: o.fbt._("You can only create three talks at one time. To continue, close a talk you're not using.", null, {
+					[v.l.RoomLimitExceeded]: o.fbt._("You can only create three talks at one time. To continue, close a talk you're not using.", null, {
 						hk: "3zPx9X"
 					}),
-					[v.k.ConcurrentRoomLimitExceeded]: o.fbt._("Too many talks are happening right now. Try again later.", null, {
+					[v.l.ConcurrentRoomLimitExceeded]: o.fbt._("Too many talks are happening right now. Try again later.", null, {
 						hk: "2LYXJx"
 					}),
-					[v.k.SubredditRoomLimitExceeded]: o.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
+					[v.l.SubredditRoomLimitExceeded]: o.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
 						hk: "2mGf21"
 					})
 				}, y = e => e.data.prepareAudioRoom || e.data.prepareAudioRoomOnProfile, _ = {
-					[v.O.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+					[v.P.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[v.O.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
+					[v.P.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					})
-				}, w = (e, t) => Object(n.a)(e, {
+				}, N = (e, t) => Object(n.a)(e, {
 					...h,
 					variables: t
 				})
@@ -1273,4 +1273,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.a376291e8043c6c62c92.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.6f8656dff0e43b335b39.js.map

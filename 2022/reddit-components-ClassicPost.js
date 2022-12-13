@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.ab6ab728f03a0398cd68.js
-// Retrieved at 12/13/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.7dca0ac0681f94de9dbb.js
+// Retrieved at 12/13/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1350,7 +1350,7 @@
 						post: ve,
 						adLinkContent: Ke,
 						ctaExperimentDesign: Te && "classic"
-					})), ve.discussionType === ae.n.Chat && s.a.createElement(ce.a, {
+					})), ve.discussionType === ae.o.Chat && s.a.createElement(ce.a, {
 						postId: ve.id
 					}), s.a.createElement("div", {
 						className: le.a.flatlistContainer
@@ -1974,12 +1974,12 @@
 						});
 						if (!e.ok) return l(Object(C.f)({
 							kind: E.b.Error,
-							text: x.a[j.k.ServiceError]
+							text: x.a[j.l.ServiceError]
 						})), void c(!1);
 						const n = Object(x.h)(e.body);
 						if (null == n ? void 0 : n.errorState) return l(Object(C.f)({
 							kind: E.b.Error,
-							text: x.a[n.errorState.code] || x.a[j.k.ServiceError]
+							text: x.a[n.errorState.code] || x.a[j.l.ServiceError]
 						})), void c(!1);
 						(null == n ? void 0 : n.okState) && (window.location.href = `${f.a.redditUrl}/talk/${t}`)
 					}
@@ -2415,7 +2415,7 @@
 					className: n
 				} = e;
 				const r = Object(h.e)(e => Object(v.a)(e, t));
-				return Object(h.e)(_.f) ? i.a.createElement(f, {
+				return Object(h.e)(_.e) ? i.a.createElement(f, {
 					userCount: r,
 					className: n
 				}) : null
@@ -3694,14 +3694,14 @@
 						...u,
 						variables: t
 					});
-					return !!Object(i.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(v.M.Talk)
+					return !!Object(i.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(v.N.Talk)
 				}, O = async (e, t) => {
 					var n, r;
 					const s = await Object(o.a)(e, {
 						...m,
 						variables: t
 					});
-					return !!Object(i.c)(s) && (null !== (r = null === (n = s.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== r ? r : []).includes(v.M.Talk)
+					return !!Object(i.c)(s) && (null !== (r = null === (n = s.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== r ? r : []).includes(v.N.Talk)
 				}, x = async e => {
 					var t;
 					const n = await Object(o.a)(e, l);
@@ -3729,26 +3729,26 @@
 						}
 					}
 				}), j = () => Object(s.a)(), y = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile || e.data.startAudioRoom, S = {
-					[v.k.ServiceError]: r.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+					[v.l.ServiceError]: r.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[v.k.UserNotAuthorized]: r.fbt._("You don't have permission to start talks in this community.", null, {
+					[v.l.UserNotAuthorized]: r.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					}),
-					[v.k.RoomLimitExceeded]: r.fbt._("You can only create three talks at one time. To continue, close a talk you're not using.", null, {
+					[v.l.RoomLimitExceeded]: r.fbt._("You can only create three talks at one time. To continue, close a talk you're not using.", null, {
 						hk: "3zPx9X"
 					}),
-					[v.k.ConcurrentRoomLimitExceeded]: r.fbt._("Too many talks are happening right now. Try again later.", null, {
+					[v.l.ConcurrentRoomLimitExceeded]: r.fbt._("Too many talks are happening right now. Try again later.", null, {
 						hk: "2LYXJx"
 					}),
-					[v.k.SubredditRoomLimitExceeded]: r.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
+					[v.l.SubredditRoomLimitExceeded]: r.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
 						hk: "2mGf21"
 					})
 				}, k = e => e.data.prepareAudioRoom || e.data.prepareAudioRoomOnProfile, w = {
-					[v.O.ServiceError]: r.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+					[v.P.ServiceError]: r.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[v.O.UserNotAuthorized]: r.fbt._("You don't have permission to start talks in this community.", null, {
+					[v.P.UserNotAuthorized]: r.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					})
 				}, I = (e, t) => Object(o.a)(e, {
@@ -6594,7 +6594,6 @@
 				return i
 			}));
 			var r = n("./node_modules/reselect/es/index.js");
-			Object(r.a)(e => e.chat.unread.count, e => e.unreadMessages);
 			const s = e => !(e.chat.isInited || e.chat.unread.api.pending),
 				o = e => e.chat.liveChatTooltipShowState,
 				i = Object(r.a)((e, t) => t, e => e.chat.activeUserCountByLiveChatId, (e, t) => t[e])
@@ -6743,8 +6742,8 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.Ac
-					}) === r.id.Enabled
+						experimentName: r.Bc
+					}) === r.jd.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
@@ -6757,8 +6756,8 @@
 			const o = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.hf
-				}) === r.Rd
+					experimentName: r.if
+				}) === r.Sd
 			}
 		},
 		"./src/reddit/selectors/experiments/web2x_cta.ts": function(e, t, n) {
@@ -6770,10 +6769,10 @@
 				s = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(r.a)(e => Object(o.c)(e, {
-					experimentName: s.mg,
+					experimentName: s.ng,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				a = Object(r.a)(i, e => e === s.eg)
+				a = Object(r.a)(i, e => e === s.fg)
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
 			"use strict";
@@ -7183,4 +7182,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.ab6ab728f03a0398cd68.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.7dca0ac0681f94de9dbb.js.map

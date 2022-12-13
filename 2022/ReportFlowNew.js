@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlowNew.ffc5968c5e85f2e817ca.js
-// Retrieved at 12/13/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlowNew.cd62a486928bc5869188.js
+// Retrieved at 12/13/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlowNew"], {
 		"./src/reddit/actions/blockedRedditors.ts": function(e, t, o) {
@@ -264,7 +264,7 @@
 		"./src/reddit/components/ReportFlow/_ReportFlowNew.tsx": function(e, t, o) {
 			"use strict";
 			o.r(t), o.d(t, "ValidThingReportTypes", (function() {
-				return K
+				return M
 			}));
 			var r = o("./src/config.ts"),
 				s = o("./node_modules/fbt/lib/FbtPublic.js"),
@@ -310,9 +310,9 @@
 				...x,
 				variables: t
 			});
-			var k = o("./src/redditGQL/operations/ReportLiveStream.json");
-			const g = (e, t) => Object(v.a)(e, {
-				...k,
+			var g = o("./src/redditGQL/operations/ReportLiveStream.json");
+			const k = (e, t) => Object(v.a)(e, {
+				...g,
 				variables: t
 			});
 			var S = o("./src/reddit/endpoints/messages/index.ts"),
@@ -333,11 +333,11 @@
 				D = o.n(q);
 			const $ = U.a.div("ReportLoaderWrapper", D.a),
 				Q = U.a.img("LoadingIcon", D.a),
-				M = "2.1";
-			var K;
+				K = "2.1";
+			var M;
 			! function(e) {
 				e.Post = "post", e.Comment = "comment", e.Message = "message"
-			}(K || (K = {}));
+			}(M || (M = {}));
 			const J = Object(l.c)({
 					post: (e, t) => {
 						let {
@@ -438,11 +438,11 @@
 							post: s
 						} = this.props;
 						let n, i, d, a;
-						if (this.props.author && (d = this.props.author), t) n = t, i = K.Comment, this.props.comment && !d && (d = this.props.comment.author, a = this.props.comment.authorId);
-						else if (e) n = e, s && s.isSponsored && r && (n = `ad_${s.impressionId}_${s.postId}`), i = K.Post, this.props.post && !d && (d = this.props.post.author, a = this.props.post.authorId);
+						if (this.props.author && (d = this.props.author), t) n = t, i = M.Comment, this.props.comment && !d && (d = this.props.comment.author, a = this.props.comment.authorId);
+						else if (e) n = e, s && s.isSponsored && r && (n = `ad_${s.impressionId}_${s.postId}`), i = M.Post, this.props.post && !d && (d = this.props.post.author, a = this.props.post.authorId);
 						else {
 							if (!o) throw new Error("Invalid object type passed to reporting flow");
-							n = o, i = K.Message
+							n = o, i = M.Message
 						}
 						return {
 							itemId: n,
@@ -501,7 +501,7 @@
 						}
 						let h;
 						switch (l) {
-							case K.Post:
+							case M.Post:
 								if (null === (o = this.props.post) || void 0 === o ? void 0 : o.audioRoom) {
 									const e = new URLSearchParams(window.location.href),
 										t = parseInt(e.get("reportedTimeInSeconds") || "0", 10),
@@ -521,7 +521,7 @@
 										relativeReportTimeSec: a,
 										...b
 									};
-									h = () => g(r(), {
+									h = () => k(r(), {
 										input: e
 									});
 									break
@@ -534,7 +534,7 @@
 									input: e
 								});
 								break;
-							case K.Comment:
+							case M.Comment:
 								const t = {
 									commentId: c,
 									...b
@@ -543,7 +543,7 @@
 									input: t
 								}));
 								break;
-							case K.Message:
+							case M.Message:
 								const s = {
 									messageId: c,
 									...b
@@ -571,7 +571,7 @@
 						gqlContext: o,
 						hostAppName: r
 					} = this.props;
-					H(o(), e, M, r, t).then(e => {
+					H(o(), e, K, r, t).then(e => {
 						e && this.setState({
 							formComponent: e.component,
 							formState: e.state,
@@ -778,9 +778,9 @@
 			})), o.d(t, "j", (function() {
 				return j
 			})), o.d(t, "d", (function() {
-				return k
-			})), o.d(t, "h", (function() {
 				return g
+			})), o.d(t, "h", (function() {
+				return k
 			})), o.d(t, "a", (function() {
 				return S
 			})), o.d(t, "i", (function() {
@@ -814,14 +814,14 @@
 						...u,
 						variables: t
 					});
-					return !!Object(i.c)(o) && (o.body.data.subredditInfoById.allowedPostTypes || []).includes(O.M.Talk)
+					return !!Object(i.c)(o) && (o.body.data.subredditInfoById.allowedPostTypes || []).includes(O.N.Talk)
 				}, w = async (e, t) => {
 					var o, r;
 					const s = await Object(n.a)(e, {
 						...p,
 						variables: t
 					});
-					return !!Object(i.c)(s) && (null !== (r = null === (o = s.body.data.profileByName) || void 0 === o ? void 0 : o.allowedPostTypes) && void 0 !== r ? r : []).includes(O.M.Talk)
+					return !!Object(i.c)(s) && (null !== (r = null === (o = s.body.data.profileByName) || void 0 === o ? void 0 : o.allowedPostTypes) && void 0 !== r ? r : []).includes(O.N.Talk)
 				}, v = async e => {
 					var t;
 					const o = await Object(n.a)(e, l);
@@ -848,27 +848,27 @@
 							subredditId: t.id
 						}
 					}
-				}), k = () => Object(s.a)(), g = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile || e.data.startAudioRoom, S = {
-					[O.k.ServiceError]: r.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+				}), g = () => Object(s.a)(), k = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile || e.data.startAudioRoom, S = {
+					[O.l.ServiceError]: r.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[O.k.UserNotAuthorized]: r.fbt._("You don't have permission to start talks in this community.", null, {
+					[O.l.UserNotAuthorized]: r.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					}),
-					[O.k.RoomLimitExceeded]: r.fbt._("You can only create three talks at one time. To continue, close a talk you're not using.", null, {
+					[O.l.RoomLimitExceeded]: r.fbt._("You can only create three talks at one time. To continue, close a talk you're not using.", null, {
 						hk: "3zPx9X"
 					}),
-					[O.k.ConcurrentRoomLimitExceeded]: r.fbt._("Too many talks are happening right now. Try again later.", null, {
+					[O.l.ConcurrentRoomLimitExceeded]: r.fbt._("Too many talks are happening right now. Try again later.", null, {
 						hk: "2LYXJx"
 					}),
-					[O.k.SubredditRoomLimitExceeded]: r.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
+					[O.l.SubredditRoomLimitExceeded]: r.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
 						hk: "2mGf21"
 					})
 				}, L = e => e.data.prepareAudioRoom || e.data.prepareAudioRoomOnProfile, y = {
-					[O.O.ServiceError]: r.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+					[O.P.ServiceError]: r.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[O.O.UserNotAuthorized]: r.fbt._("You don't have permission to start talks in this community.", null, {
+					[O.P.UserNotAuthorized]: r.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					})
 				}, C = (e, t) => Object(n.a)(e, {
@@ -1038,10 +1038,10 @@
 				s = o("./src/reddit/constants/experiments.ts"),
 				n = o("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(r.a)(e => Object(n.c)(e, {
-					experimentName: s.Kc,
+					experimentName: s.Lc,
 					experimentEligibilitySelector: n.a
 				}), e => e),
-				d = Object(r.a)(i, e => e === s.Rd)
+				d = Object(r.a)(i, e => e === s.Sd)
 		},
 		"./src/redditGQL/operations/CreateLiveAudioRoomOnProfile.json": function(e) {
 			e.exports = JSON.parse('{"id":"e35a47c6aa21"}')
@@ -1087,4 +1087,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.ffc5968c5e85f2e817ca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.cd62a486928bc5869188.js.map

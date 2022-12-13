@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.547de8f66bd8e1cb12f0.js
-// Retrieved at 12/13/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.7c9b3cf232c958c990e1.js
+// Retrieved at 12/13/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-SubscriptionModal"], {
 		"./src/reddit/components/Governance/TokenAmount/index.m.less": function(e, t, n) {
@@ -132,7 +132,7 @@
 				h = n("./src/reddit/components/Governance/TransactionModals/SubscriptionModal/Approval.m.less"),
 				N = n.n(h);
 
-			function E(e) {
+			function S(e) {
 				const t = Object(i.e)(t => Object(I.Y)(t, e)),
 					n = Object(i.e)(t => Object(M.r)(t, e.subredditId)),
 					a = n.membershipAlt,
@@ -159,7 +159,7 @@
 					})
 				})
 			}
-			const S = e => r.a.createElement(g.b, {
+			const E = e => r.a.createElement(g.b, {
 				values: [
 					[Object(g.c)(), e.transaction.arguments[0]],
 					[Object(g.a)(), e.transaction.contractAddress]
@@ -181,10 +181,10 @@
 				const M = Object(m.d)(_.contracts.subscriptions.address, A, !0),
 					I = Object(p.c)(t, _.displayConversion);
 				return r.a.createElement(j.a, {
-					approvalOverview: r.a.createElement(E, {
+					approvalOverview: r.a.createElement(S, {
 						subredditId: n
 					}),
-					approvalDetails: r.a.createElement(S, {
+					approvalDetails: r.a.createElement(E, {
 						transaction: M
 					}),
 					onClose: e.onClose,
@@ -334,16 +334,16 @@
 			const r = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.Ce
-					}) === s.Rd
+						experimentName: s.De
+					}) === s.Sd
 				},
 				i = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.Ae
-					}) === s.Rd
+						experimentName: s.Be
+					}) === s.Sd
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.547de8f66bd8e1cb12f0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.7c9b3cf232c958c990e1.js.map

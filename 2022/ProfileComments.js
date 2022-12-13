@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.cde02507759582690f9e.js
-// Retrieved at 12/13/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.830cc376083e8737e649.js
+// Retrieved at 12/13/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -847,7 +847,7 @@
 						post: _e,
 						adLinkContent: Ze,
 						ctaExperimentDesign: Se && "classic"
-					})), _e.discussionType === ae.n.Chat && r.a.createElement(ce.a, {
+					})), _e.discussionType === ae.o.Chat && r.a.createElement(ce.a, {
 						postId: _e.id
 					}), r.a.createElement("div", {
 						className: le.a.flatlistContainer
@@ -2356,12 +2356,12 @@
 						});
 						if (!e.ok) return l(Object(C.f)({
 							kind: E.b.Error,
-							text: y.a[k.k.ServiceError]
+							text: y.a[k.l.ServiceError]
 						})), void c(!1);
 						const n = Object(y.h)(e.body);
 						if (null == n ? void 0 : n.errorState) return l(Object(C.f)({
 							kind: E.b.Error,
-							text: y.a[n.errorState.code] || y.a[k.k.ServiceError]
+							text: y.a[n.errorState.code] || y.a[k.l.ServiceError]
 						})), void c(!1);
 						(null == n ? void 0 : n.okState) && (window.location.href = `${b.a.redditUrl}/talk/${t}`)
 					}
@@ -2739,7 +2739,7 @@
 					className: n
 				} = e;
 				const s = Object(f.e)(e => Object(_.a)(e, t));
-				return Object(f.e)(g.f) ? i.a.createElement(b, {
+				return Object(f.e)(g.e) ? i.a.createElement(b, {
 					userCount: s,
 					className: n
 				}) : null
@@ -4497,7 +4497,7 @@
 					}, a.a.createElement(b.b, {
 						textColor: d
 					})), a.a.createElement(M, {
-						qrCodeAsset: (() => s === _.ed.Enabled || r === _.fb.BlurredPreview || r === _.fb.NoPreview ? F.d2x_nsfw_signup_blocking_de_v1 : F.d2x_nsfw_signup_blocking_non_us_v1)()
+						qrCodeAsset: (() => s === _.fd.Enabled || r === _.gb.BlurredPreview || r === _.gb.NoPreview ? F.d2x_nsfw_signup_blocking_de_v1 : F.d2x_nsfw_signup_blocking_non_us_v1)()
 					}))
 				},
 				B = e => {
@@ -4516,8 +4516,8 @@
 						})(r)
 					}, [r]), a.a.createElement("div", {
 						className: Object(m.a)(L.a.mainCta, {
-							[L.a.skippable_buttons]: r === _.gb.SkippableButtons,
-							[L.a.skippable_text]: r === _.gb.SkippableText
+							[L.a.skippable_buttons]: r === _.hb.SkippableButtons,
+							[L.a.skippable_text]: r === _.hb.SkippableText
 						})
 					}, a.a.createElement("div", {
 						className: L.a.contentDescription
@@ -4549,7 +4549,7 @@
 								}
 							}))()), E(s.Login), t(Object(p.openLoginModal)())
 						}
-					}, T()), r === _.gb.SkippableButtons && a.a.createElement("div", {
+					}, T()), r === _.hb.SkippableButtons && a.a.createElement("div", {
 						className: L.a.divider
 					}, a.a.createElement("div", {
 						className: L.a.dividerLine
@@ -4577,7 +4577,7 @@
 						hk: "4nUG6S"
 					}))()), a.a.createElement(g.j, {
 						className: Object(m.a)(L.a.continue, L.a.dismiss, {
-							[L.a.no_border]: r === _.gb.SkippableText
+							[L.a.no_border]: r === _.hb.SkippableText
 						}),
 						onClick: () => {
 							n((() => e => ({
@@ -4591,7 +4591,7 @@
 								}
 							}))()), E(s.Dismiss), t(Object(d.b)("/"))
 						}
-					}, r === _.gb.SkippableText ? (() => o.fbt._("Go back to home", null, {
+					}, r === _.hb.SkippableText ? (() => o.fbt._("Go back to home", null, {
 						hk: "4yEgxF"
 					}))() : A())))
 				}
@@ -5090,14 +5090,14 @@
 						...m,
 						variables: t
 					});
-					return !!Object(i.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(_.M.Talk)
+					return !!Object(i.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(_.N.Talk)
 				}, v = async (e, t) => {
 					var n, s;
 					const r = await Object(o.a)(e, {
 						...u,
 						variables: t
 					});
-					return !!Object(i.c)(r) && (null !== (s = null === (n = r.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== s ? s : []).includes(_.M.Talk)
+					return !!Object(i.c)(r) && (null !== (s = null === (n = r.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== s ? s : []).includes(_.N.Talk)
 				}, y = async e => {
 					var t;
 					const n = await Object(o.a)(e, l);
@@ -5125,26 +5125,26 @@
 						}
 					}
 				}), k = () => Object(r.a)(), w = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile || e.data.startAudioRoom, j = {
-					[_.k.ServiceError]: s.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+					[_.l.ServiceError]: s.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[_.k.UserNotAuthorized]: s.fbt._("You don't have permission to start talks in this community.", null, {
+					[_.l.UserNotAuthorized]: s.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					}),
-					[_.k.RoomLimitExceeded]: s.fbt._("You can only create three talks at one time. To continue, close a talk you're not using.", null, {
+					[_.l.RoomLimitExceeded]: s.fbt._("You can only create three talks at one time. To continue, close a talk you're not using.", null, {
 						hk: "3zPx9X"
 					}),
-					[_.k.ConcurrentRoomLimitExceeded]: s.fbt._("Too many talks are happening right now. Try again later.", null, {
+					[_.l.ConcurrentRoomLimitExceeded]: s.fbt._("Too many talks are happening right now. Try again later.", null, {
 						hk: "2LYXJx"
 					}),
-					[_.k.SubredditRoomLimitExceeded]: s.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
+					[_.l.SubredditRoomLimitExceeded]: s.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
 						hk: "2mGf21"
 					})
 				}, O = e => e.data.prepareAudioRoom || e.data.prepareAudioRoomOnProfile, I = {
-					[_.O.ServiceError]: s.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+					[_.P.ServiceError]: s.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[_.O.UserNotAuthorized]: s.fbt._("You don't have permission to start talks in this community.", null, {
+					[_.P.UserNotAuthorized]: s.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					})
 				}, P = (e, t) => Object(o.a)(e, {
@@ -6006,8 +6006,8 @@
 					const t = Date.parse(e);
 					return Number.isNaN(t) ? (localStorage.removeItem(i.b.XpromoConsolidation), !0) : Date.now() > t + m
 				},
-				h = (e, t) => t === c.a.NoPreview && (e === o.gb.SkippableButtons || e === o.gb.SkippableText),
-				b = (e, t) => t === c.a.NoPreview && e === o.gb.NoUpsell,
+				h = (e, t) => t === c.a.NoPreview && (e === o.hb.SkippableButtons || e === o.hb.SkippableText),
+				b = (e, t) => t === c.a.NoPreview && e === o.hb.NoUpsell,
 				f = Object(l.a)(c.h, c.g, (e, t) => {
 					return {
 						isControlVariant: !(!e || !t) && ((e, t) => t === c.a.NoPreview && !h(e, t) && !b(e, t))(e, t),
@@ -6047,4 +6047,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.cde02507759582690f9e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.830cc376083e8737e649.js.map

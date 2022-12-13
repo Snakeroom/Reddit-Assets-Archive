@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsInbox.25707be3606a719680b1.js
-// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsInbox.9c70f816e518fa6fb385.js
+// Retrieved at 12/13/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsInbox"], {
 		"./src/reddit/actions/pages/notificationsInbox.ts": function(e, t, n) {
@@ -616,7 +616,7 @@
 				cursor: A.c,
 				earlierNotifications: A.b,
 				hasNextPage: A.d,
-				inboxBadgeCount: F.g,
+				inboxBadgeCount: F.h,
 				isInboxPostEmbedEnabled: P.a,
 				isPending: A.e,
 				todayNotifications: A.i,
@@ -711,7 +711,7 @@
 				}))))))
 			};
 			const K = Object(l.c)({
-				messagesTabBadgeCount: F.h,
+				messagesTabBadgeCount: F.i,
 				notificationsTabBadgeCount: F.a
 			});
 			var Z = Object(d.b)(K, e => ({
@@ -733,4 +733,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.25707be3606a719680b1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.9c70f816e518fa6fb385.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.ae7086e0f8a19f256389.js
-// Retrieved at 12/13/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.3652cde89423425ed5b3.js
+// Retrieved at 12/13/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, n) {
@@ -522,7 +522,7 @@
 			})), n.d(t, "hideSubreddit", (function() {
 				return X
 			})), n.d(t, "unhideSubreddit", (function() {
-				return z
+				return W
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/lodash/pick.js"),
@@ -688,7 +688,7 @@
 					n(a(e));
 					const b = await l(i(), d.displayText, e);
 					b.ok ? (await n(R(m.routeMatch.match, !0)), n(c(e))) : n(u(b.body))
-				}, X = e => Y(e, !0), z = e => Y(e, !1)
+				}, X = e => Y(e, !0), W = e => Y(e, !1)
 		},
 		"./src/reddit/actions/postList.ts": function(e, t, n) {
 			"use strict";
@@ -1780,13 +1780,13 @@
 					hide: t => e(Object(m.hideSubreddit)(t))
 				}))(Object(R.c)(Q)),
 				X = n("./src/lib/lessComponent.tsx"),
-				z = n("./src/reddit/components/SubredditIcon/index.tsx"),
-				W = n("./src/reddit/icons/fonts/Clear/index.tsx"),
-				Z = n("./src/reddit/selectors/profile.ts"),
+				W = n("./src/reddit/components/SubredditIcon/index.tsx"),
+				Z = n("./src/reddit/icons/fonts/Clear/index.tsx"),
+				z = n("./src/reddit/selectors/profile.ts"),
 				$ = n("./src/reddit/selectors/subreddit.ts"),
 				ee = n("./src/reddit/components/ModListingSidebar/HideCommunities/SubredditsList/SubredditsListRow/index.m.less"),
 				te = n.n(ee);
-			const ne = X.a.wrapped(z.b, "SubredditIcon", te.a),
+			const ne = X.a.wrapped(W.b, "SubredditIcon", te.a),
 				re = Object(a.c)({
 					isApiPending: V,
 					subredditOrProfile: (e, t) => {
@@ -1795,7 +1795,7 @@
 						});
 						if (!n) {
 							const n = (e => e.startsWith(c.qc) ? e.slice(2) : e)(t.subredditName);
-							return n && Object(Z.k)(e, {
+							return n && Object(z.k)(e, {
 								profileName: n
 							}) || null
 						}
@@ -1825,7 +1825,7 @@
 						}),
 						className: te.a.unhideButton,
 						onClick: this.onClickUnhideSubreddit
-					}, o.a.createElement(W.a, null))) : null
+					}, o.a.createElement(Z.a, null))) : null
 				}
 			}
 			var ie = Object(d.b)(re, e => ({
@@ -2028,7 +2028,7 @@
 				const b = Object(o.e)(e => e.subreddits.survey[n]),
 					p = Object(o.e)(e => e.subreddits.progressModule[n]),
 					h = Object(o.e)(l.a),
-					f = h !== c.Te.NewModule;
+					f = h !== c.Ue.NewModule;
 				return (null === (s = null == p ? void 0 : p.cards) || void 0 === s ? void 0 : s.length) > 0 && f ? i.a.createElement(m, {
 					closeModuleOnMount: !!t && t !== u.g.Large,
 					subredditId: n,
@@ -2054,15 +2054,15 @@
 			const o = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: i.S,
-						experimentName: r.xd
+						experimentName: r.yd
 					});
-					return !(!t || Object(r.zg)(t))
+					return !(!t || Object(r.Ag)(t))
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: i.S,
-						experimentName: r.xd
-					}) === r.Vd.ListingEnabled
+						experimentName: r.yd
+					}) === r.Wd.ListingEnabled
 				}
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
@@ -2070,4 +2070,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.ae7086e0f8a19f256389.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.3652cde89423425ed5b3.js.map

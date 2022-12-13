@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SettingsPanel.356eed9bc0d7599b44b3.js
-// Retrieved at 12/8/2022, 10:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SettingsPanel.b19a24f085e1e7e464f9.js
+// Retrieved at 12/13/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SettingsPanel"], {
 		"./src/chat/components/Sidebar/SettingsPanel/SettingsGroup/index.m.less": function(e, t, a) {
@@ -365,7 +365,7 @@
 					l = Object(r.d)(),
 					[m, b] = Object(c.useState)(null),
 					A = Object(r.e)(e => Object(p.N)(e, t.channelId)),
-					x = Object(r.e)(pe.p),
+					x = Object(r.e)(pe.s),
 					E = Object(r.e)(pe.g),
 					k = Object(r.e)(pe.d),
 					S = Object(r.e)(pe.e),
@@ -566,4 +566,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SettingsPanel.356eed9bc0d7599b44b3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SettingsPanel.b19a24f085e1e7e464f9.js.map

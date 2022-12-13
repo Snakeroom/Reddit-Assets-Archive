@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SocialLinks.e4cff23368752e3f7c37.js
-// Retrieved at 12/5/2022, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SocialLinks.903e3253954be0f238df.js
+// Retrieved at 12/13/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SocialLinks"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -346,7 +346,7 @@
 						const e = null == c ? void 0 : c.trim();
 						if (!(e && Object(_.g)(e) === _.d.Valid)) throw new Error(n.f);
 						t = e, s = null == a ? void 0 : a.trim()
-					} else if (r.socialLinkType === p.S.Reddit) {
+					} else if (r.socialLinkType === p.T.Reddit) {
 						const e = null == o ? void 0 : o.trim();
 						if (!(e && Object(d.f)(e) && e && e.length >= n.h && !/\s/.test(e))) throw new Error(n.e);
 						i = e
@@ -608,81 +608,81 @@
 					}),
 					a = n.i;
 				switch (t) {
-					case i.S.BuyMeACoffee:
+					case i.T.BuyMeACoffee:
 						o = r._("Buy Me a Coffee", null, {
 							hk: "ZTbP7"
 						});
 						break;
-					case i.S.CashApp:
+					case i.T.CashApp:
 						o = r._("Cash App", null, {
 							hk: "1aorWN"
 						});
 						break;
-					case i.S.Custom:
+					case i.T.Custom:
 						o = r._("Custom URL", null, {
 							hk: "2gveOb"
 						}), a = n.c, s = r._("https://website.com", null, {
 							hk: "1Kp5fF"
 						});
 						break;
-					case i.S.Reddit:
+					case i.T.Reddit:
 						a = r._("r/community, u/user", null, {
 							hk: "45oRo"
 						});
 						break;
-					case i.S.Discord:
+					case i.T.Discord:
 						a = n.c, s = r._("https://discord.com", null, {
 							hk: "6gcLP"
 						});
 						break;
-					case i.S.Facebook:
+					case i.T.Facebook:
 						a = n.c, s = r._("https://facebook.com", null, {
 							hk: "2v99jB"
 						});
 						break;
-					case i.S.Kickstarter:
+					case i.T.Kickstarter:
 						a = n.c, s = r._("https://kickstarter.com", null, {
 							hk: "132LC7"
 						});
 						break;
-					case i.S.Shopify:
+					case i.T.Shopify:
 						a = n.c, s = r._("https://shopify.com", null, {
 							hk: "2X1G4f"
 						});
 						break;
-					case i.S.Spotify:
+					case i.T.Spotify:
 						a = n.c, s = r._("https://spotify.com", null, {
 							hk: "3dZORp"
 						});
 						break;
-					case i.S.Substack:
+					case i.T.Substack:
 						a = n.c, s = r._("https://substack.com", null, {
 							hk: "1zQgL1"
 						});
 						break;
-					case i.S.Youtube:
+					case i.T.Youtube:
 						o = r._("YouTube", null, {
 							hk: "12AQG6"
 						}), a = n.c, s = r._("https://youtube.com", null, {
 							hk: "4FZQ2O"
 						});
 						break;
-					case i.S.Onlyfans:
+					case i.T.Onlyfans:
 						o = r._("OnlyFans", null, {
 							hk: "1JRN4C"
 						});
 						break;
-					case i.S.Paypal:
+					case i.T.Paypal:
 						o = r._("PayPal", null, {
 							hk: "3n7Il"
 						});
 						break;
-					case i.S.Soundcloud:
+					case i.T.Soundcloud:
 						o = r._("SoundCloud", null, {
 							hk: "34Xo4u"
 						});
 						break;
-					case i.S.Tiktok:
+					case i.T.Tiktok:
 						o = r._("TikTok", null, {
 							hk: "tajib"
 						})
@@ -694,16 +694,16 @@
 					socialLinkType: t
 				}
 			}, a = () => {
-				return Object.keys(i.S).map(e => {
-					const t = i.S[e];
+				return Object.keys(i.T).map(e => {
+					const t = i.T[e];
 					return o(e, t)
-				}).filter(e => e.socialLinkType !== i.S.Indiegogo)
+				}).filter(e => e.socialLinkType !== i.T.Indiegogo)
 			}, c = e => {
 				const t = e.toLowerCase();
 				return `${n.d}${t}.png`
 			}, l = e => {
-				for (const t in i.S)
-					if (i.S[t] === e) return t;
+				for (const t in i.T)
+					if (i.T[t] === e) return t;
 				return ""
 			}, u = e => {
 				let t = n.b;
@@ -796,16 +796,16 @@
 					}))
 				}, [w, y]);
 				const A = Object(o.e)(e => Object(f.b)(e, y)),
-					S = Object(n.useCallback)(() => {
+					O = Object(n.useCallback)(() => {
 						C(void 0), w(Object(l.h)(g.a));
 						const e = ((null == A ? void 0 : A.length) || 0) + 1;
 						E(e);
 						const t = s ? "profile_settings" : "profile";
 						z(Object(d.a)(t))
 					}, [w, s, z, A]),
-					O = Object(o.e)(e => Object(p.c)(g.a)(e)),
-					B = Object(_.a)(),
-					T = Object(n.useCallback)((e, i) => {
+					S = Object(o.e)(e => Object(p.c)(g.a)(e)),
+					T = Object(_.a)(),
+					B = Object(n.useCallback)((e, i) => {
 						const n = i + 1,
 							r = {
 								socialLinkType: e.type,
@@ -819,9 +819,9 @@
 							const {
 								outboundUrl: t
 							} = e;
-							window.open(t, "_blank"), z(Object(d.f)(r)), B(t, b.SourceElement.SocialLink, void 0, void 0, e.type)
+							window.open(t, "_blank"), z(Object(d.f)(r)), T(t, b.SourceElement.SocialLink, void 0, void 0, e.type)
 						}
-					}, [w, t, s, z, B]),
+					}, [w, t, s, z, T]),
 					I = Object(n.useCallback)((e, t, s) => {
 						const {
 							handle: i,
@@ -845,14 +845,14 @@
 				}, A && A.map((e, t) => r.a.createElement(k.a, {
 					key: e.id,
 					socialLinkType: e.type,
-					onClick: () => T(e, t)
+					onClick: () => B(e, t)
 				}, e.handle || e.title, s && r.a.createElement(m.a, {
 					name: c.a.clear,
 					className: x.a.removeIcon,
 					onClick: s => I(s, e, t)
 				}))), Z && r.a.createElement(k.a, {
 					disabled: !A || A.length >= g.g,
-					onClick: S
+					onClick: O
 				}, r.a.createElement(m.a, {
 					name: c.a.add,
 					className: x.a.addIcon
@@ -862,7 +862,7 @@
 					to: "/settings/profile"
 				}, r.a.createElement(k.a, null, v._("Edit", null, {
 					hk: "3MTv8r"
-				}))), t && O && r.a.createElement(D, {
+				}))), t && S && r.a.createElement(D, {
 					socialLink: j,
 					socialLinkPosition: L,
 					username: y,
@@ -925,4 +925,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SocialLinks.e4cff23368752e3f7c37.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SocialLinks.903e3253954be0f238df.js.map

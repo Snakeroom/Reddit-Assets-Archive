@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.c69fea16a906a4f61d0f.js
-// Retrieved at 12/13/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.9e98ca3861a795ab363b.js
+// Retrieved at 12/13/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./node_modules/lodash/map.js": function(e, t, n) {
@@ -203,9 +203,9 @@
 					H = null === (t = null == g ? void 0 : g.post) || void 0 === t ? void 0 : t.permalink;
 				let J = null === (n = null == g ? void 0 : g.comment) || void 0 === n ? void 0 : n.id,
 					K = (null === (o = null == g ? void 0 : g.post) || void 0 === o ? void 0 : o.id) || (null === (I = null === (b = null == g ? void 0 : g.comment) || void 0 === b ? void 0 : b.postInfo) || void 0 === I ? void 0 : I.id);
-				const Q = null === (C = null == g ? void 0 : g.subreddit) || void 0 === C ? void 0 : C.id,
-					z = null === (E = null === (j = null == g ? void 0 : g.awarding) || void 0 === j ? void 0 : j.award) || void 0 === E ? void 0 : E.id,
-					X = null === (S = null === (R = null == g ? void 0 : g.awarding) || void 0 === R ? void 0 : R.awarder) || void 0 === S ? void 0 : S.id;
+				const Z = null === (C = null == g ? void 0 : g.subreddit) || void 0 === C ? void 0 : C.id,
+					Q = null === (E = null === (j = null == g ? void 0 : g.awarding) || void 0 === j ? void 0 : j.award) || void 0 === E ? void 0 : E.id,
+					z = null === (S = null === (R = null == g ? void 0 : g.awarding) || void 0 === R ? void 0 : R.awarder) || void 0 === S ? void 0 : S.id;
 				if (B === x.a.CommentFollow || B === x.a.PostFollow) {
 					const e = (e => {
 						const t = {},
@@ -220,7 +220,7 @@
 					})(A);
 					K = e.postId, J = e.commentId
 				} else B !== x.a.PostReply && B !== x.a.LifecyclePostSuggestions || (J = U);
-				const Z = e => {
+				const X = e => {
 					if (K && J) {
 						const e = Object(a.a)(K, J, Object(h.c)(A)),
 							t = {
@@ -243,7 +243,7 @@
 									H ? F({
 										position: f.d.SECOND,
 										postId: K,
-										subredditId: Q
+										subredditId: Z
 									}) : (e.preventDefault(), T(Object(d.f)(N)))
 								},
 								n = y._("Check It Out", null, {
@@ -273,7 +273,7 @@
 						case x.a.CommentFollow: {
 							const e = M;
 							return M || e || k && P ? s.a.createElement(p.t, {
-								onClick: Z,
+								onClick: X,
 								kind: p.b.InternalLink,
 								to: A,
 								isFullWidth: w,
@@ -293,16 +293,16 @@
 							})) : null
 						}
 						case x.a.AwardReceived: {
-							if (!X) return null;
+							if (!z) return null;
 							const e = e => {
-								e.preventDefault(), X ? F({
+								e.preventDefault(), z ? F({
 									position: f.d.SECOND,
-									awardId: z
+									awardId: Q
 								}) : T(Object(d.f)(N))
 							};
 							return s.a.createElement(l.b, {
-								userId: X,
-								contextId: X,
+								userId: z,
+								contextId: z,
 								onClick: e,
 								isFullWidth: w,
 								priority: p.c.Tertiary,
@@ -508,13 +508,13 @@
 				i = n("./node_modules/reselect/es/index.js");
 			const r = Object(i.a)(e => Object(s.c)(e, {
 				experimentEligibilitySelector: s.a,
-				experimentName: o.rb
+				experimentName: o.sb
 			}), e => ({
-				bucketed: e === o.Yc.ExpandedSearch || e === o.Yc.CollapsedSearch,
-				collapsed: e === o.Yc.CollapsedSearch,
-				expanded: e === o.Yc.ExpandedSearch
+				bucketed: e === o.Zc.ExpandedSearch || e === o.Zc.CollapsedSearch,
+				collapsed: e === o.Zc.CollapsedSearch,
+				expanded: e === o.Zc.ExpandedSearch
 			}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.c69fea16a906a4f61d0f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.9e98ca3861a795ab363b.js.map

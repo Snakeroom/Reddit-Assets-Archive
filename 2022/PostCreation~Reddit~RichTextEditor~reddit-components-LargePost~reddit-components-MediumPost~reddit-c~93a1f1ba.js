@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-c~93a1f1ba.ee94f684f1baf387fbcb.js
-// Retrieved at 12/13/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-c~93a1f1ba.34235d9a69de0cc12dcc.js
+// Retrieved at 12/13/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation~Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-c~93a1f1ba"], {
 		"./src/lib/scroll/index.ts": function(e, t, o) {
@@ -64,7 +64,7 @@
 			})), o.d(t, "h", (function() {
 				return Fe
 			})), o.d(t, "k", (function() {
-				return Be
+				return Ue
 			})), o.d(t, "e", (function() {
 				return He
 			})), o.d(t, "d", (function() {
@@ -206,8 +206,8 @@
 				};
 			var A = o("./src/redditGQL/operations/UpdateComment.json");
 			var F = o("./src/redditGQL/operations/UpdateCommentFollowState.json");
-			var B = o("./src/reddit/endpoints/post/index.tsx"),
-				U = o("./src/reddit/endpoints/post/convert.ts"),
+			var U = o("./src/reddit/endpoints/post/index.tsx"),
+				B = o("./src/reddit/endpoints/post/convert.ts"),
 				H = o("./src/reddit/endpoints/publicAccessNetwork/index.ts"),
 				G = o("./src/reddit/featureFlags/index.ts"),
 				W = o("./src/reddit/helpers/comment/index.ts"),
@@ -230,8 +230,8 @@
 				ie = o("./node_modules/reselect/es/index.js");
 			const ae = Object(ie.a)(e => Object(ce.c)(e, {
 				experimentEligibilitySelector: ce.a,
-				experimentName: se.Bb
-			}), e => e === se.Rd);
+				experimentName: se.Cb
+			}), e => e === se.Sd);
 			var de = o("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				le = o("./src/reddit/selectors/platform.ts"),
 				me = o("./src/reddit/selectors/posts.ts"),
@@ -461,7 +461,7 @@
 						commentId: m
 					}), x = j && Object(te.d)(g, {
 						postId: j.postId
-					}) && Object(re.e)(g), y = j && Object(te.d)(g, {
+					}) && Object(re.d)(g), y = j && Object(te.d)(g, {
 						postId: j.postId
 					}), C = y ? Object(W.b)() : O, S = Object(ne.f)(g, {
 						commentId: C
@@ -555,7 +555,7 @@
 					})), r(Object(u.c)(e));
 					else {
 						r(Object(u.b)(o));
-						const s = await Object(U.a)(i(), e, a ? t : JSON.stringify(t));
+						const s = await Object(B.a)(i(), e, a ? t : JSON.stringify(t));
 						if (s.ok) {
 							const t = s.body.output;
 							r(Object(u.a)(o)), r(De({
@@ -654,10 +654,10 @@
 							commentsPageKey: o
 						}))
 					}
-				}, Be = (e, t) => o => o(Re({
+				}, Ue = (e, t) => o => o(Re({
 					draftKey: e,
 					formData: t
-				})), Ue = Object(r.a)(be.u), He = e => {
+				})), Be = Object(r.a)(be.u), He = e => {
 					let {
 						commentId: t,
 						commentMode: o,
@@ -667,7 +667,7 @@
 					} = e;
 					return async (e, c) => {
 						const i = c();
-						i.user.account && (V.c(i), e(Ue({
+						i.user.account && (V.c(i), e(Be({
 							commentId: t,
 							commentsPageKey: n,
 							draftKey: r,
@@ -827,7 +827,7 @@
 						[e]: {
 							sendReplies: s
 						}
-					})), (await Object(B.q)(r(), e, s)).ok || t(Object(pe.j)({
+					})), (await Object(U.q)(r(), e, s)).ok || t(Object(pe.j)({
 						[e]: {
 							sendReplies: !s
 						}
@@ -1180,8 +1180,8 @@
 			var K = o("./src/reddit/icons/svgs/Dropdown/index.tsx"),
 				A = o("./src/reddit/icons/svgs/Info/index.tsx"),
 				F = o("./src/reddit/selectors/activeModalId.ts"),
-				B = o("./src/reddit/selectors/comments.ts"),
-				U = o("./src/reddit/selectors/experiments/commentSearchPdp.ts"),
+				U = o("./src/reddit/selectors/comments.ts"),
+				B = o("./src/reddit/selectors/experiments/commentSearchPdp.ts"),
 				H = o("./src/reddit/selectors/moderatorPermissions.ts"),
 				G = o("./src/reddit/selectors/posts.ts"),
 				W = o("./src/reddit/selectors/tooltip.ts"),
@@ -1272,11 +1272,11 @@
 						let {
 							commentId: o
 						} = t;
-						return o && Object(B.m)(e, {
+						return o && Object(U.m)(e, {
 							commentId: o
 						})
 					},
-					commentSearchPdp: e => Object(U.a)(e),
+					commentSearchPdp: e => Object(B.a)(e),
 					contestModeModalIsOpen: Object(F.b)("CommentSort--ContestMode--Modal"),
 					dropdownIsOpen: Object(W.b)($),
 					highlightIsOpen: Object(W.b)(ee),
@@ -1304,7 +1304,7 @@
 							});
 						return (r || n) && !!s && !!s.previousVisits && s.previousVisits.length > 0
 					},
-					selectedHighlightSort: B.p
+					selectedHighlightSort: U.p
 				}),
 				se = Object(c.b)(re, (e, t) => {
 					let {
@@ -1375,7 +1375,7 @@
 						suggestedSort: w,
 						showTooltip: M,
 						toggleContestModeModal: P
-					} = this.props, D = g.contestMode, L = null == o, F = c.bucketed && Object(k.b)(f) && Object(k.c)(g), B = c.bucketed && Object(k.c)(g) && L, U = !h.search.includes(d.w.CONFIDENCE), H = _ === d.w.CONFIDENCE && U, G = b && !H, W = d.y[_], q = W ? W() : "", J = w && _ === w && !H ? this.addSuggestedLabel(q) : q, Q = D ? n.fbt._("End contest mode?", null, {
+					} = this.props, D = g.contestMode, L = null == o, F = c.bucketed && Object(k.b)(f) && Object(k.c)(g), U = c.bucketed && Object(k.c)(g) && L, B = !h.search.includes(d.w.CONFIDENCE), H = _ === d.w.CONFIDENCE && B, G = b && !H, W = d.y[_], q = W ? W() : "", J = w && _ === w && !H ? this.addSuggestedLabel(q) : q, Q = D ? n.fbt._("End contest mode?", null, {
 						hk: "2AkJRZ"
 					}) : n.fbt._("Start contest?", null, {
 						hk: "2PQPOu"
@@ -1428,7 +1428,7 @@
 							[z.a.paddingBottom]: F
 						}),
 						ref: m
-					}, F || B ? s.a.createElement("div", {
+					}, F || U ? s.a.createElement("div", {
 						className: z.a.containerRow
 					}, !F && s.a.createElement(s.a.Fragment, null, ne, s.a.createElement("span", {
 						className: z.a.verticalDivider
@@ -1631,16 +1631,16 @@
 					collapsed: l
 				} = e.experiment, b = Object(j.a)(), k = Object(x.a)(), M = (null == b ? void 0 : b.queryParams.q) || "", [P, R] = Object(r.useState)(M), [D, L] = Object(r.useState)(t), K = Object(c.d)(), A = Object(r.useRef)(null), F = Object(c.e)(e => Object(O.h)(e, {
 					pageLayer: b
-				})), B = Object(c.e)(e => Object(O.s)(e, {
+				})), U = Object(c.e)(e => Object(O.s)(e, {
 					pageLayer: b
-				})), U = Object(c.e)(e => Object(C.j)(e));
+				})), B = Object(c.e)(e => Object(C.j)(e));
 				var H, G, W;
 
 				function q() {
 					k(Object(g.p)(S.a.SearchBar, N({
 						searchValue: P,
 						post: F,
-						subreddit: B
+						subreddit: U
 					}), f.a.SERP, b || void 0))
 				}
 
@@ -1651,20 +1651,20 @@
 						n = N({
 							searchValue: P,
 							post: F,
-							subreddit: B
+							subreddit: U
 						});
 					k(Object(g.p)(S.a.FullSearchButton, n, f.a.SERP, b || void 0));
 					const r = Object(m.b)(F.id, void 0, n);
 					K(Object(u.d)({
 						key: r,
 						options: n,
-						subredditName: null == B ? void 0 : B.name,
+						subredditName: null == U ? void 0 : U.name,
 						postId: F.id
 					}));
 					const s = Object(a.a)(o, n);
 					K(Object(i.b)(Object(h.b)(s), {
 						...null === (t = e.prevLocation) || void 0 === t ? void 0 : t.state,
-						isOverlay: U,
+						isOverlay: B,
 						scrollOnLoad: !0
 					}))
 				}
@@ -2160,11 +2160,11 @@
 				l = Object(n.a)(d, e => !!e),
 				m = e => {
 					const t = d(e);
-					return !!t && a(e, t) === r.R.SkipOnboarding
+					return !!t && a(e, t) === r.S.SkipOnboarding
 				},
 				u = e => {
 					const t = d(e);
-					return !!t && a(e, t) === r.R.RegOnboarding
+					return !!t && a(e, t) === r.S.RegOnboarding
 				}
 		},
 		"./src/redditGQL/operations/CommentToxicity.json": function(e) {
@@ -2181,4 +2181,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-c~93a1f1ba.ee94f684f1baf387fbcb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-c~93a1f1ba.34235d9a69de0cc12dcc.js.map
