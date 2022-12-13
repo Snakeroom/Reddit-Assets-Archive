@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.639f143d3b948e79a7bf.js
-// Retrieved at 12/13/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.fbf735d881681aea0fbc.js
+// Retrieved at 12/13/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "PostCreation~Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-c~93a1f1ba", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -9583,7 +9583,7 @@
 						} = t;
 						var m, p;
 						const b = Object(Ce.j)(e),
-							f = !!b && !Object(ge.Ag)(b) && (o || b === ge.kb.Community),
+							f = !!b && !Object(ge.Bg)(b) && (o || b === ge.kb.Community),
 							{
 								adsSeenCount: h,
 								totalPostsSeenCount: _,
@@ -27439,7 +27439,7 @@
 					} = t, w = Object(a.e)(Ge.b), N = Object(a.e)(qe.c), P = Object(a.e)(qe.a), R = Object(a.e)(e => ((e, t) => {
 						const n = t && e.subreddits.about[t];
 						return Boolean(n && n.isMediaInCommentsSettingShown)
-					})(e, d)), A = Object(Be.a)(Ue.Mf) === Ue.Sd, M = w && R, L = (null == _ ? void 0 : _.allowedMediaTypes) || [], D = null === S ? "nullValue" : S, F = Object(o.useCallback)(() => s(!l, "archivePostsEnabled"), [l, s]), U = e => e.toUpperCase() === q.U.All, B = e => {
+					})(e, d)), A = Object(Be.a)(Ue.Nf) === Ue.Sd, M = w && R, L = (null == _ ? void 0 : _.allowedMediaTypes) || [], D = null === S ? "nullValue" : S, F = Object(o.useCallback)(() => s(!l, "archivePostsEnabled"), [l, s]), U = e => e.toUpperCase() === q.U.All, B = e => {
 						const n = U(t[e]) ? q.U.Low : q.U.All;
 						s(n, e)
 					};
@@ -58254,7 +58254,7 @@
 								experimentName: o.A,
 								expEventOverride: t
 							});
-							return !!(Object(o.Ag)(n) ? void 0 : n)
+							return !!(Object(o.Bg)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -75572,7 +75572,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: s.Rd
 				});
-				return !(!t || Object(s.Ag)(t))
+				return !(!t || Object(s.Bg)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/gqlSubredditPage.ts": function(e, t, n) {
@@ -76182,9 +76182,9 @@
 				}),
 				a = (e, t, n) => {
 					const o = n(e, t);
-					return !(!o || !o.meter) && (o.meter.enabled && s.mg.Enabled === Object(r.c)(e, {
+					return !(!o || !o.meter) && (o.meter.enabled && s.ng.Enabled === Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.lg
+						experimentName: s.mg
 					}))
 				},
 				d = e => Object(r.c)(e, {
@@ -76315,9 +76315,9 @@
 					experimentName: r.pd,
 					experimentEligibilitySelector: e => d(e, t)
 				}), e => e),
-				l = e => e === r.hg.NoCommunityWidgets,
-				u = e => e === r.hg.NoRulesModerators,
-				m = e => e === r.hg.RelatedPostsDu
+				l = e => e === r.ig.NoCommunityWidgets,
+				u = e => e === r.ig.NoRulesModerators,
+				m = e => e === r.ig.RelatedPostsDu
 		},
 		"./src/reddit/selectors/experiments/web2x_cta.ts": function(e, t, n) {
 			"use strict";
@@ -76328,10 +76328,10 @@
 				r = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(s.a)(e => Object(o.c)(e, {
-					experimentName: r.ng,
+					experimentName: r.og,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				a = Object(s.a)(i, e => e === r.fg)
+				a = Object(s.a)(i, e => e === r.gg)
 		},
 		"./src/reddit/selectors/externalAccount.ts": function(e, t, n) {
 			"use strict";
@@ -77148,7 +77148,7 @@
 					var t;
 					const n = null === (t = e.platform.currentPage) || void 0 === t ? void 0 : t.urlParams,
 						s = n.subredditName;
-					return Object(p.a)(e) !== i.gg.TargetedOnboarding || s && Object(o.a)(s, {
+					return Object(p.a)(e) !== i.hg.TargetedOnboarding || s && Object(o.a)(s, {
 						countryCode: n.countryCode,
 						languageCode: n.languageCode
 					}) || !Object.keys(n).length
@@ -77159,7 +77159,7 @@
 					} = e.onboarding;
 					if (t.success || t.failure) return t
 				},
-				x = Object(r.a)(m.j, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(i.Ag)(e) ? t : null),
+				x = Object(r.a)(m.j, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(i.Bg)(e) ? t : null),
 				O = Object(r.a)(m.j, (e, t) => {
 					let {
 						pageLayer: n
@@ -78738,4 +78738,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.639f143d3b948e79a7bf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.fbf735d881681aea0fbc.js.map

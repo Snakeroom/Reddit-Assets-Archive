@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.bae5c86113ce850579f9.js
-// Retrieved at 12/13/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.8c1f29122d6e805521d3.js
+// Retrieved at 12/13/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(t, e, i) {
@@ -815,8 +815,8 @@
 				b = i("./src/reddit/selectors/postFlair.ts"),
 				S = i("./src/reddit/selectors/subreddit.ts"),
 				E = i("./src/reddit/actions/postFlairStyleTemplates/constants.ts");
-			const h = Object(d.a)(E.c),
-				y = Object(d.a)(E.b),
+			const y = Object(d.a)(E.c),
+				h = Object(d.a)(E.b),
 				g = Object(d.a)(E.a);
 			var D = i("./src/reddit/actions/toaster.ts"),
 				I = i("./src/reddit/actions/widgets/index.ts"),
@@ -860,21 +860,21 @@
 					r(Object(u.h)(n));
 					const b = Object(N.i)(i)(c);
 					let E = null,
-						h = null;
+						y = null;
 					try {
-						(E = await Object(_.f)(o(), k.a.StructuredStyles)) && (h = Object(_.m)(E)(r, o, l))
+						(E = await Object(_.f)(o(), k.a.StructuredStyles)) && (y = Object(_.m)(E)(r, o, l))
 					} catch (O) {
 						const t = Object(T.a)("webSocket");
 						return void r(Object(u.f)(n, t))
 					}
-					const y = Object(S.Y)(c, {
+					const h = Object(S.Y)(c, {
 							subredditId: t
 						}).name,
-						g = await p.e(s(), y, d),
+						g = await p.e(s(), h, d),
 						I = {};
 					if (g.ok) {
-						if (h) try {
-							await h
+						if (y) try {
+							await y
 						} catch (O) {}
 						const i = Object(U.f)(o(), {
 							apiRequestId: n
@@ -949,7 +949,7 @@
 							}),
 							c = s && s.templateIds;
 						if (!c || !c.length) return;
-						e(h({
+						e(y({
 							subredditId: t
 						}));
 						const a = await Object(p.a)(r(), l.name, c);
@@ -962,7 +962,7 @@
 								if (t && t.subreddit)
 									for (const e of t.subreddit.postFlairStyleTemplates) i[e.id] = Object(m.a)(e)
 							}
-							e(y({
+							e(h({
 								subredditId: t,
 								templates: i
 							}))
@@ -1134,9 +1134,9 @@
 			})), i.d(e, "k", (function() {
 				return E
 			})), i.d(e, "B", (function() {
-				return h
-			})), i.d(e, "A", (function() {
 				return y
+			})), i.d(e, "A", (function() {
+				return h
 			})), i.d(e, "C", (function() {
 				return g
 			})), i.d(e, "D", (function() {
@@ -1184,8 +1184,8 @@
 				b = "SUBREDDIT__ONBOARDING_SUBREDDITS_PENDING",
 				S = "SUBREDDIT__ONBOARDING_SUBREDDITS_LOADED",
 				E = "SUBREDDIT__ONBOARDING_SUBREDDITS_FAILED",
-				h = "SUBREDDIT__EDIT_REQUESTED",
-				y = "SUBREDDIT__EDIT_FAILED",
+				y = "SUBREDDIT__EDIT_REQUESTED",
+				h = "SUBREDDIT__EDIT_FAILED",
 				g = "SUBREDDIT__EDIT_SUCCESS",
 				D = "SUBREDDIT_QUESTIONS_LOADED",
 				I = "SUBREDDIT_SURVEY_ANSWERED",
@@ -1275,8 +1275,8 @@
 				b = i("./src/reddit/models/Widgets/index.ts"),
 				S = i("./src/reddit/selectors/subreddit.ts"),
 				E = i("./src/reddit/helpers/widgets/index.tsx"),
-				h = i("./src/reddit/models/Image/index.tsx"),
-				y = i("./src/reddit/models/Toast/index.ts"),
+				y = i("./src/reddit/models/Image/index.tsx"),
+				h = i("./src/reddit/models/Toast/index.ts"),
 				g = i("./src/reddit/selectors/experiments/cnc/index.ts"),
 				D = i("./src/reddit/actions/widgets/constants.ts");
 			const I = Object(r.a)(D.g),
@@ -1294,7 +1294,7 @@
 					let w = null,
 						v = null;
 					try {
-						(w = await Object(l.f)(b, h.a.Widgets)) && (v = Object(l.m)(w)(r, _, p))
+						(w = await Object(l.f)(b, y.a.Widgets)) && (v = Object(l.m)(w)(r, _, p))
 					} catch (j) {
 						const t = Object(f.a)("webSocket");
 						return void r(Object(o.f)(i, t))
@@ -1312,7 +1312,7 @@
 						let l = k.body;
 						const c = l.id;
 						if ("calendar" === e.kind && r(Object(s.f)({
-								kind: y.b.SuccessMod,
+								kind: h.b.SuccessMod,
 								text: n.fbt._("New calendar added! It may take a few minutes to see your events appear", null, {
 									hk: "4iETrT"
 								})
@@ -1343,7 +1343,7 @@
 					let j = null,
 						x = null;
 					try {
-						(j = await Object(l.f)(O, h.a.Widgets)) && (x = Object(l.m)(j)(r, _, p))
+						(j = await Object(l.f)(O, y.a.Widgets)) && (x = Object(l.m)(j)(r, _, p))
 					} catch (L) {
 						const t = Object(f.a)("webSocket");
 						return void r(Object(o.f)(i, t))
@@ -1413,7 +1413,7 @@
 							widgetId: I,
 							widget: l
 						})), "calendar" === e.kind && r(Object(s.f)({
-							kind: y.b.SuccessMod,
+							kind: h.b.SuccessMod,
 							text: n.fbt._("Calendar is updated! It may take a few minutes to see your events change", null, {
 								hk: "10XWV"
 							})
@@ -1474,7 +1474,7 @@
 						}))(n.apiContext(), s, e.file.name, await Object(p.h)(e.file));
 						let f = !1;
 						try {
-							const n = await Object(l.g)(i(), _, e, h.a.Widgets);
+							const n = await Object(l.g)(i(), _, e, y.a.Widgets);
 							n && (t(Object(l.j)(n)), f = !0)
 						} catch (m) {
 							if (m instanceof Error) throw m;
@@ -1710,9 +1710,9 @@
 			})), i.d(e, "a", (function() {
 				return m
 			})), i.d(e, "m", (function() {
-				return h
-			})), i.d(e, "n", (function() {
 				return y
+			})), i.d(e, "n", (function() {
+				return h
 			})), i.d(e, "l", (function() {
 				return g
 			})), i.d(e, "p", (function() {
@@ -1779,8 +1779,8 @@
 						iconPosition: l = f.C,
 						isFullWidth: s = !1,
 						isSquare: m = !1,
-						children: h,
-						className: y,
+						children: y,
+						className: h,
 						kind: g = p.Button,
 						priority: D = _.Primary,
 						redditStyle: I,
@@ -1810,8 +1810,8 @@
 							[c.a.rplStyle]: n
 						})
 					})({
-						baseClassName: y,
-						children: h,
+						baseClassName: h,
+						children: y,
 						dataRedditStyle: e,
 						Icon: i,
 						isFullWidth: s,
@@ -1845,7 +1845,7 @@
 							isFilled: a === _.Primary
 						}))
 					})({
-						children: h,
+						children: y,
 						text: w,
 						Icon: i,
 						iconClassName: n,
@@ -1864,11 +1864,11 @@
 				b = t => r.a.createElement(l.default, t),
 				S = t => r.a.createElement("a", t),
 				E = t => r.a.createElement("button", t),
-				h = t => r.a.createElement(m, a({
+				y = t => r.a.createElement(m, a({
 					kind: p.ExternalLink,
 					priority: _.Primary
 				}, t)),
-				y = t => r.a.createElement(m, a({
+				h = t => r.a.createElement(m, a({
 					kind: p.InternalLink,
 					priority: _.Primary
 				}, t)),
@@ -2287,9 +2287,9 @@
 		"./src/reddit/helpers/trackers/postComposer.ts": function(t, e, i) {
 			"use strict";
 			i.d(e, "a", (function() {
-				return h
-			})), i.d(e, "e", (function() {
 				return y
+			})), i.d(e, "e", (function() {
+				return h
 			})), i.d(e, "K", (function() {
 				return g
 			})), i.d(e, "I", (function() {
@@ -2398,13 +2398,13 @@
 				E = (t, e) => "self" !== e ? {} : {
 					editorMode: t.user.prefs.editorMode === l.i.MARKDOWN ? "markdown" : "rte"
 				},
-				h = t => {
+				y = t => {
 					Object(f.a)({
 						noun: "cancel",
 						...S(t)
 					})
 				},
-				y = t => {
+				h = t => {
 					Object(f.a)({
 						noun: "discard",
 						...S(t)
@@ -2923,9 +2923,9 @@
 			})), i.d(e, "f", (function() {
 				return E
 			})), i.d(e, "d", (function() {
-				return h
-			})), i.d(e, "c", (function() {
 				return y
+			})), i.d(e, "c", (function() {
+				return h
 			})), i.d(e, "e", (function() {
 				return g
 			})), i.d(e, "l", (function() {
@@ -2979,10 +2979,10 @@
 				},
 				S = t => t.creations.subredditRec.api.pending,
 				E = t => t.creations.subredditRec.api.error,
-				h = t => {
+				y = t => {
 					return t.creations.subredditRec.order.length > 0
 				},
-				y = t => {
+				h = t => {
 					const e = t.creations.subredditRec.order,
 						i = [];
 					return e.forEach(e => {
@@ -3056,9 +3056,9 @@
 					experimentName: r.pd,
 					experimentEligibilitySelector: t => c(t, e)
 				}), t => t),
-				d = t => t === r.hg.NoCommunityWidgets,
-				u = t => t === r.hg.NoRulesModerators,
-				_ = t => t === r.hg.RelatedPostsDu
+				d = t => t === r.ig.NoCommunityWidgets,
+				u = t => t === r.ig.NoRulesModerators,
+				_ = t => t === r.ig.RelatedPostsDu
 		},
 		"./src/reddit/selectors/tooltip.ts": function(t, e, i) {
 			"use strict";
@@ -3084,4 +3084,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.bae5c86113ce850579f9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.8c1f29122d6e805521d3.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.b8dd634b5b1ae5c41d42.js
-// Retrieved at 12/13/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.f1b70d20623c426f860b.js
+// Retrieved at 12/13/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -212,7 +212,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(m.zg)(e.category_name)
+									displayText: Object(m.Ag)(e.category_name)
 								};
 								s.push(r.id), t[r.id] = r
 							}), {
@@ -10994,8 +10994,8 @@
 				experimentEligibilitySelector: r.a,
 				experimentName: n.If
 			}), e => ({
-				isSubEnlarged: e === n.Xf.Variant1 || e === n.Xf.Variant3,
-				withCommunityDescription: e === n.Xf.Variant2 || e === n.Xf.Variant3
+				isSubEnlarged: e === n.Yf.Variant1 || e === n.Yf.Variant3,
+				withCommunityDescription: e === n.Yf.Variant2 || e === n.Yf.Variant3
 			}))
 		},
 		"./src/reddit/selectors/i18n/index.ts": function(e, t, s) {
@@ -11011,7 +11011,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(r.Ag)(t)
+					return Boolean(t) && !Object(r.Bg)(t)
 				},
 				c = Object(n.a)(a, o.d, (e, t) => e && !t)
 		},
@@ -11084,4 +11084,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.b8dd634b5b1ae5c41d42.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.f1b70d20623c426f860b.js.map
