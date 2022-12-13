@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~shreddit-player.0a8fba083a5e2981469d.js
-// Retrieved at 12/13/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~shreddit-player.64c7ce0358a17a1c8254.js
+// Retrieved at 12/13/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~shreddit-player"], {
 		"./node_modules/@reddit/faceplate/lib/custom-event.js": function(e, t, r) {
@@ -1734,7 +1734,7 @@
 			const nt = Oe(() => he(void 0));
 			class it {
 				constructor(e, t) {
-					this._host = e, this._mediaStore = t, this._idle = !1, this._mediaPaused = !1, this._idlingPaused = !1, this._isMouseOver = !1, this._disposal = new Q.a, this.delay = 1500, e.addController(this)
+					this._host = e, this._mediaStore = t, this._idle = !1, this._mediaPaused = !1, this._idlingPaused = !1, this._isMouseOverMedia = !0, this._isMouseOverUIControls = !1, this._disposal = new Q.a, this.delay = 1500, e.addController(this)
 				}
 				get paused() {
 					return this._idlingPaused || this._mediaPaused
@@ -1743,6 +1743,7 @@
 					this._idlingPaused = e, this._handleIdleChange()
 				}
 				hostConnected() {
+					var e;
 					this._disposal.add(this._mediaStore.paused.subscribe(e => {
 						this._mediaPaused = e, this._handleIdleChange()
 					}));
@@ -1750,20 +1751,29 @@
 						const t = Object(Q.e)(this._host, e, oe(this._handleIdleChange.bind(this), 250, !0));
 						this._disposal.add(t)
 					});
-					const e = Object(Q.e)(this._host, "mouseenter", () => {
-						this._isMouseOver = !0
-					});
-					this._disposal.add(e);
-					const t = Object(Q.e)(this._host, "mouseleave", () => {
-						this._isMouseOver = !1
-					});
-					this._disposal.add(t)
+					const t = Object(Q.e)(this._host, "mouseenter", () => {
+							this._isMouseOverMedia = !0
+						}),
+						r = Object(Q.e)(this._host, "mouseleave", () => {
+							this._isMouseOverMedia = !1, this._handleIdleChange()
+						});
+					this._disposal.add(t), this._disposal.add(r);
+					const n = null === (e = this._host) || void 0 === e ? void 0 : e.querySelector(".disappearing-controls");
+					if (n) {
+						const e = Object(Q.e)(n, "mouseenter", () => {
+								this._isMouseOverUIControls = !0
+							}),
+							t = Object(Q.e)(n, "mouseleave", () => {
+								this._isMouseOverUIControls = !1, this._handleIdleChange()
+							});
+						this._disposal.add(e), this._disposal.add(t)
+					}
 				}
 				hostDisconnected() {
 					this._disposal.empty(), this._stopIdleTimer()
 				}
 				_handleIdleChange() {
-					this.paused ? this._stopIdleTimer() : this._startIdleTimer(this._isMouseOver ? this.delay : 0)
+					this.paused || this._isMouseOverUIControls ? this._stopIdleTimer() : this._startIdleTimer(this._isMouseOverMedia ? this.delay : 0)
 				}
 				_startIdleTimer(e) {
 					this._stopIdleTimer(), this._idleTimeout = window.setTimeout(() => {
@@ -1781,7 +1791,7 @@
 			}
 			class st {
 				constructor(e) {
-					this._host = e, this._disconnectDisposal = new Q.a, this.providerQueue = new le, this.providerDisposal = new Q.a, this._providerContext = nt.provide(this._host), this._mediaStoreProvider = Ne.provide(this._host), this.state = me(this._store), this._userIdleController = new it(this._host, this._store), this._handleIdleChange = Object(Ze.a)(this._host, "vds-user-idle-change", e => {
+					this._host = e, this._disconnectDisposal = new Q.a, this.providerQueue = new le, this.providerDisposal = new Q.a, this._providerContext = nt.provide(this._host), this._mediaStoreProvider = Ne.provide(this._host), this.state = me(this._store), this._handleIdleChange = Object(Ze.a)(this._host, "vds-user-idle-change", e => {
 						this._store.userIdle.set(e.detail), this._satisfyMediaRequest("userIdle", e)
 					}), this._pendingMediaRequests = {
 						play: [],
@@ -1819,9 +1829,9 @@
 						var r, n;
 						"media" === (null !== (t = e.detail) && void 0 !== t ? t : "media") && this._host.canFullscreen ? (this._pendingMediaRequests.fullscreen.push(e), await (null === (r = (n = this._host).exitFullscreen) || void 0 === r ? void 0 : r.call(n))) : this.provider && (this._pendingMediaRequests.fullscreen.push(e), await this.provider.exitFullscreen())
 					})), this._handleResumeIdlingRequest = Object(Ze.a)(this._host, "vds-resume-user-idle-request", e => {
-						this._mediaRequestEventGateway(e) && (this._pendingMediaRequests.userIdle.push(e), this._userIdleController.paused = !1)
+						this._mediaRequestEventGateway(e) && (this._pendingMediaRequests.userIdle.push(e), this._userIdleController && (this._userIdleController.paused = !1))
 					}), this._handlePauseIdlingRequest = Object(Ze.a)(this._host, "vds-pause-user-idle-request", e => {
-						this._mediaRequestEventGateway(e) && (this._pendingMediaRequests.userIdle.push(e), this._userIdleController.paused = !0)
+						this._mediaRequestEventGateway(e) && (this._pendingMediaRequests.userIdle.push(e), this._userIdleController && (this._userIdleController.paused = !0))
 					}), this._handleShowPosterRequest = Object(Ze.a)(this._host, "vds-show-poster-request", this._createMediaRequestHandler("poster", () => {
 						this._provider.canLoadPoster = !0
 					})), this._handleHidePosterRequest = Object(Ze.a)(this._host, "vds-hide-poster-request", this._createMediaRequestHandler("poster", () => {
@@ -1911,10 +1921,11 @@
 					return this._mediaStoreProvider.value
 				}
 				get idleDelay() {
-					return this._userIdleController.delay
+					var e, t;
+					return null !== (e = null === (t = this._userIdleController) || void 0 === t ? void 0 : t.delay) && void 0 !== e ? e : 0
 				}
 				set idleDelay(e) {
-					this._userIdleController.delay = e
+					this._userIdleController && (this._userIdleController.delay = e)
 				}
 				_clearPendingMediaRequests() {
 					ce(this._pendingMediaRequests).forEach(e => {
@@ -1991,7 +2002,7 @@
 					this._updateMetadata(e.detail), this._mediaEvents.push(e), te(e, this._findLastMediaEvent("vds-src-change"))
 				}
 				_handleLoadedData(e) {
-					this._mediaEvents.push(e), te(e, this._findLastMediaEvent("vds-load-start"))
+					this._mediaEvents.push(e), te(e, this._findLastMediaEvent("vds-load-start")), this._userIdleController = new it(this._host, this._store)
 				}
 				_handleLoadedMetadata(e) {
 					this._updateMetadata(e.detail), this._mediaEvents.push(e), te(e, this._findLastMediaEvent("vds-load-start"))
@@ -3087,6 +3098,9 @@
 						event: e,
 						duration: this.mediaElement.duration
 					})
+				}
+				_handleError(e) {
+					(!this.isHlsStream || null != this && this.isHlsEngineAttached) && super._handleError(e)
 				}
 				_listenToHlsEngine() {
 					j(this.hlsEngine) || j(this.Hls) || (this.hlsEngine.on(this.Hls.Events.LEVEL_LOADED, this._handleHlsLevelLoaded.bind(this)), this._hlsEventListeners.forEach(e => {
@@ -16021,4 +16035,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~shreddit-player.0a8fba083a5e2981469d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~shreddit-player.64c7ce0358a17a1c8254.js.map
