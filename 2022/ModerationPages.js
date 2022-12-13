@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.c5662acbab9892eb687a.js
-// Retrieved at 12/12/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.faefae2f1815f9bd3076.js
+// Retrieved at 12/12/2022, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "PostCreation~Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-c~93a1f1ba", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -21923,43 +21923,46 @@
 				r = n("./node_modules/react/index.js"),
 				o = n.n(r),
 				i = n("./node_modules/react-redux/es/index.js"),
-				a = n("./src/lib/constants/index.ts"),
-				d = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				c = n("./src/reddit/actions/tooltip.ts"),
-				l = n("./src/reddit/components/Hovercards/AuthorHovercard/ModIdCard/async.tsx"),
-				u = n("./src/reddit/components/Hovercards/helpers.ts"),
-				m = n("./src/reddit/components/PostTopMeta/index.tsx"),
-				p = n("./src/reddit/hooks/useIsOverlay.ts"),
-				b = n("./src/reddit/models/Post/index.ts"),
-				f = n("./src/redditGQL/types.ts");
-			const h = Object(d.v)();
-			t.a = h(e => {
+				a = n("./src/reddit/hooks/useTracking.ts"),
+				d = n("./src/reddit/helpers/trackers/modTools.ts"),
+				c = n("./src/lib/constants/index.ts"),
+				l = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				u = n("./src/reddit/actions/tooltip.ts"),
+				m = n("./src/reddit/components/Hovercards/AuthorHovercard/ModIdCard/async.tsx"),
+				p = n("./src/reddit/components/Hovercards/helpers.ts"),
+				b = n("./src/reddit/components/PostTopMeta/index.tsx"),
+				f = n("./src/reddit/hooks/useIsOverlay.ts"),
+				h = n("./src/reddit/models/Post/index.ts"),
+				_ = n("./src/redditGQL/types.ts");
+			const g = Object(l.v)();
+			t.a = g(e => {
 				let {
 					pageLayer: t,
 					postOrComment: n,
-					className: d
+					className: l
 				} = e;
-				var h;
-				const _ = Object(p.a)(),
-					g = Object(i.d)(),
-					v = (null === (h = null == t ? void 0 : t.urlParams) || void 0 === h ? void 0 : h.pageName) === a.wb.Modqueue,
-					x = Object(r.useCallback)(() => {
-						const e = Object(u.b)({
+				var g;
+				const v = Object(f.a)(),
+					x = Object(i.d)(),
+					O = Object(a.a)(),
+					E = (null === (g = null == t ? void 0 : t.urlParams) || void 0 === g ? void 0 : g.pageName) === c.wb.Modqueue,
+					y = Object(r.useCallback)(() => {
+						const e = Object(p.b)({
 							itemId: n.id,
-							tooltipIdPrefix: l.a,
-							tooltipType: _ ? m.f.Lightbox : void 0
+							tooltipIdPrefix: m.a,
+							tooltipType: v ? b.f.Lightbox : void 0
 						});
-						g(Object(c.h)({
+						x(Object(u.h)({
 							tooltipId: e,
 							args: {
 								isModNotesView: !0,
-								modNotesFilter: f.y.Note
+								modNotesFilter: _.y.Note
 							}
-						}))
-					}, [n, g, _]);
-				return !v || Object(b.p)(n.author) ? null : o.a.createElement("button", {
-					className: d,
-					onClick: x
+						})), O(Object(d.a)(n.id, n.authorId))
+					}, [n, x, v, O]);
+				return !E || Object(h.p)(n.author) ? null : o.a.createElement("button", {
+					className: l,
+					onClick: y
 				}, s.fbt._("Add a note", null, {
 					hk: "1dmmma"
 				}))
@@ -23687,7 +23690,7 @@
 					P = n.isApproved && N,
 					R = !n.isRemoved || n.bannedBy === c.m,
 					A = a,
-					M = e => I(Object(h.b)(e, n.id)),
+					M = e => I(Object(h.c)(e, n.id)),
 					L = "chat_comments" === (null == w ? void 0 : w.queryParams.only);
 				return o.a.createElement("div", {
 					className: t
@@ -23698,7 +23701,7 @@
 						hk: "2219Nh"
 					}),
 					onClick: () => {
-						m(), L && I(Object(h.a)("approve", n.id)), M("approve")
+						m(), L && I(Object(h.b)("approve", n.id)), M("approve")
 					}
 				}, o.a.createElement(O.a, {
 					className: S.a.icon
@@ -23709,7 +23712,7 @@
 						hk: "3tYl0U"
 					}),
 					onClick: () => {
-						_(), L && I(Object(h.a)("remove", n.id)), n.bannedBy === c.m ? M("confirm_remove") : M("remove")
+						_(), L && I(Object(h.b)("remove", n.id)), n.bannedBy === c.m ? M("confirm_remove") : M("remove")
 					}
 				}, o.a.createElement(y.a, {
 					className: S.a.icon
@@ -32453,7 +32456,7 @@
 					}, o.a.createElement(R.a, {
 						model: ce,
 						onIgnoreReports: () => {
-							re(), ue(Object(G.n)(ce.ignoreReports ? "restore_reports" : "ignore_reports", ce.id))
+							re(), ue(Object(G.o)(ce.ignoreReports ? "restore_reports" : "ignore_reports", ce.id))
 						},
 						tooltipId: Qe
 					}), o.a.createElement(W.a, {
@@ -63337,36 +63340,38 @@
 		},
 		"./src/reddit/helpers/trackers/modTools.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "l", (function() {
+			n.d(t, "m", (function() {
 				return i
-			})), n.d(t, "m", (function() {
-				return a
-			})), n.d(t, "b", (function() {
-				return d
-			})), n.d(t, "a", (function() {
-				return c
-			})), n.d(t, "g", (function() {
-				return l
-			})), n.d(t, "e", (function() {
-				return u
-			})), n.d(t, "c", (function() {
-				return m
-			})), n.d(t, "d", (function() {
-				return p
-			})), n.d(t, "f", (function() {
-				return b
 			})), n.d(t, "n", (function() {
-				return f
-			})), n.d(t, "k", (function() {
-				return h
-			})), n.d(t, "j", (function() {
-				return _
-			})), n.d(t, "o", (function() {
-				return g
+				return a
+			})), n.d(t, "c", (function() {
+				return d
+			})), n.d(t, "b", (function() {
+				return c
 			})), n.d(t, "h", (function() {
-				return v
+				return l
+			})), n.d(t, "f", (function() {
+				return u
+			})), n.d(t, "d", (function() {
+				return m
+			})), n.d(t, "e", (function() {
+				return p
+			})), n.d(t, "g", (function() {
+				return b
+			})), n.d(t, "o", (function() {
+				return f
+			})), n.d(t, "l", (function() {
+				return h
+			})), n.d(t, "k", (function() {
+				return _
+			})), n.d(t, "p", (function() {
+				return g
 			})), n.d(t, "i", (function() {
+				return v
+			})), n.d(t, "j", (function() {
 				return x
+			})), n.d(t, "a", (function() {
+				return O
 			}));
 			var s = n("./src/reddit/constants/tracking.ts"),
 				r = n("./src/reddit/selectors/telemetry.ts");
@@ -63537,6 +63542,20 @@
 						commentId: e
 					}) || void 0,
 					post: Object(r.K)(s, e)
+				}),
+				O = (e, t) => n => ({
+					...o(n),
+					source: "moderator",
+					noun: "add_note_mod_queue",
+					action: "click",
+					comment: Object(r.h)({
+						state: n,
+						commentId: e
+					}) || void 0,
+					post: Object(r.K)(n, e),
+					modAction: {
+						targetUserId: t
+					}
 				})
 		},
 		"./src/reddit/helpers/trackers/moderationPages.ts": function(e, t, n) {
@@ -78711,4 +78730,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.c5662acbab9892eb687a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.faefae2f1815f9bd3076.js.map

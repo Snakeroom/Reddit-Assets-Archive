@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.67f025440301b6803d01.js
-// Retrieved at 12/12/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.f0e87ffd241aa17d8e91.js
+// Retrieved at 12/12/2022, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -2651,7 +2651,7 @@
 			class Ne extends o.a.PureComponent {
 				constructor() {
 					super(...arguments), this.handleDistinguishToggle = () => {
-						this.props.sendEvent(Object(ie.b)("mod_distinguish_menu", this.props.comment.id)), this.props.onToggleDistinguishDropdown()
+						this.props.sendEvent(Object(ie.c)("mod_distinguish_menu", this.props.comment.id)), this.props.onToggleDistinguishDropdown()
 					}, this.handleEdit = () => this.props.handleEdit(this.props.commentPermalink), this.handleIgnoreReports = () => {
 						this.props.onIgnoreReports(), this.sendCommentReportEvent(this.props.comment.ignoreReports ? "restore_reports" : "ignore_reports")
 					}, this.handleGild = async () => {
@@ -2661,11 +2661,11 @@
 							clickGildEvent: t
 						} = await Promise.resolve().then(s.bind(null, "./src/reddit/helpers/trackers/gild.ts"));
 						this.props.sendEvent(t(this.props.comment.id))
-					}, this.handleModActionsMenu = () => this.props.sendEvent(Object(ie.b)("comment_mod_action_menu", this.props.comment.id)), this.handleOverflowMenuClick = () => this.props.sendEvent(Object(ie.b)("comment_overflow_menu", this.props.comment.id)), this.handleDelete = () => this.props.handleDelete(), this.handleReply = () => this.props.handleReply(this.props.commentPermalink), this.handleRestrictedButtonClick = () => {
+					}, this.handleModActionsMenu = () => this.props.sendEvent(Object(ie.c)("comment_mod_action_menu", this.props.comment.id)), this.handleOverflowMenuClick = () => this.props.sendEvent(Object(ie.c)("comment_overflow_menu", this.props.comment.id)), this.handleDelete = () => this.props.handleDelete(), this.handleReply = () => this.props.handleReply(this.props.commentPermalink), this.handleRestrictedButtonClick = () => {
 						this.props.onToggleReportsDropdown(), this.sendCommentModEventWithName("comment_report_menu")
 					}, this.handleSave = () => {
-						this.props.comment.isSaved ? this.props.sendEvent(Object(ie.b)("unsave", this.props.comment.id)) : this.props.sendEvent(Object(ie.b)("save", this.props.comment.id)), this.props.onToggleSave()
-					}, this.sendCommentDistinguishEvent = e => this.props.sendEvent(Object(ie.c)(e, this.props.comment.id)), this.sendCommentEventWithName = e => this.props.sendEvent(Object(G.b)(this.props.comment.postId, `comment_${e}`)), this.sendCommentEventWithNameShare = () => this.sendCommentEventWithName("share"), this.sendCommentModEventWithName = e => this.props.sendEvent(Object(ie.b)(e, this.props.comment.id)), this.sendCommentReportEvent = e => this.props.sendEvent(Object(ie.f)(e, this.props.comment.id)), this.renderReportFlow = () => this.props.reportingRevampEnabled ? o.a.createElement(ne.a, {
+						this.props.comment.isSaved ? this.props.sendEvent(Object(ie.c)("unsave", this.props.comment.id)) : this.props.sendEvent(Object(ie.c)("save", this.props.comment.id)), this.props.onToggleSave()
+					}, this.sendCommentDistinguishEvent = e => this.props.sendEvent(Object(ie.d)(e, this.props.comment.id)), this.sendCommentEventWithName = e => this.props.sendEvent(Object(G.b)(this.props.comment.postId, `comment_${e}`)), this.sendCommentEventWithNameShare = () => this.sendCommentEventWithName("share"), this.sendCommentModEventWithName = e => this.props.sendEvent(Object(ie.c)(e, this.props.comment.id)), this.sendCommentReportEvent = e => this.props.sendEvent(Object(ie.g)(e, this.props.comment.id)), this.renderReportFlow = () => this.props.reportingRevampEnabled ? o.a.createElement(ne.a, {
 						withOverlay: !0,
 						commentId: this.props.comment.id,
 						overlayCustomStyles: se.b,
@@ -5437,7 +5437,7 @@
 				W = s("./src/reddit/selectors/comments.ts"),
 				V = s("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				q = s("./src/reddit/selectors/user.ts");
-			const G = (e, t) => Object(h.b)(t, e),
+			const G = (e, t) => Object(h.c)(t, e),
 				H = (e, t) => e ? t ? o.fbt._("Unlock Comments", null, {
 					hk: "zGuti"
 				}) : o.fbt._("Lock Comments", null, {
@@ -5471,7 +5471,7 @@
 							const e = x ? E.D : _.c;
 							p(e(t.id));
 							const s = t.isLocked ? "unlock" : "lock";
-							u(x ? w(t.id, s) : Object(h.i)(t.id, s, "mod_menu"))
+							u(x ? w(t.id, s) : Object(h.j)(t.id, s, "mod_menu"))
 						}, [w, u, p, t, x]),
 						J = Object(r.useCallback)(e => {
 							u(Object(f.k)(t.id, e, "post", n, s, void 0))
@@ -5479,13 +5479,13 @@
 						Y = Object(r.useCallback)(() => {
 							var e;
 							const s = t.isStickied ? "unsticky" : "sticky";
-							x ? (p(Object(E.hb)(t.id)), u(Object(h.m)(s, t.id))) : (p(Object(_.b)(t.id, (null === (e = t.distinguishType) || void 0 === e ? void 0 : e.toLowerCase()) || "", !t.isStickied)), u(Object(h.i)(t.id, s, "mod_menu")))
+							x ? (p(Object(E.hb)(t.id)), u(Object(h.n)(s, t.id))) : (p(Object(_.b)(t.id, (null === (e = t.distinguishType) || void 0 === e ? void 0 : e.toLowerCase()) || "", !t.isStickied)), u(Object(h.j)(t.id, s, "mod_menu")))
 						}, [u, p, t, x]),
 						X = Object(r.useCallback)(() => {
-							x && (p(Object(E.I)(t.id)), u(Object(h.m)(t.isOriginalContent ? "unmark_original_content" : "mark_original_content", t.id)))
+							x && (p(Object(E.I)(t.id)), u(Object(h.n)(t.isOriginalContent ? "unmark_original_content" : "mark_original_content", t.id)))
 						}, [u, p, t, x]),
 						$ = Object(r.useCallback)(() => {
-							x && (p(Object(E.F)(t.id)), Object(h.m)(t.isNSFW ? "unmark_nsfw" : "mark_nsfw", t.id))
+							x && (p(Object(E.F)(t.id)), Object(h.n)(t.isNSFW ? "unmark_nsfw" : "mark_nsfw", t.id))
 						}, [p, t, x]),
 						ee = Object(r.useCallback)(() => {
 							x && (p(Object(y.i)(F.a.CROWD_CONTROL)), p(Object(E.t)(t.id)))
@@ -5495,7 +5495,7 @@
 						})),
 						se = Object(r.useCallback)(() => {
 							const e = x ? t.permalink : te;
-							e && (p(Object(E.C)(e)), x ? J("copy") : u(Object(h.i)(t.id, "share", "mod_menu")))
+							e && (p(Object(E.C)(e)), x ? J("copy") : u(Object(h.j)(t.id, "share", "mod_menu")))
 						}, [J, p, t, x, te, u]),
 						ne = Object(r.useCallback)(async () => {
 							if (!x) return;
@@ -5507,7 +5507,7 @@
 							})), u(Object(z.clickGildEvent)(t.id))
 						}, [u, p, t, C, x]),
 						oe = Object(r.useCallback)(() => {
-							p(Object(R.c)(t.id)), x ? J("report") : u(Object(h.i)(t.id, "report", "mod_menu"))
+							p(Object(R.c)(t.id)), x ? J("report") : u(Object(h.j)(t.id, "report", "mod_menu"))
 						}, [J, p, t, x, u]),
 						re = Object(r.useCallback)(() => {
 							var e;
@@ -5515,13 +5515,13 @@
 						}, [J, p, t, x]),
 						ae = Object(r.useCallback)(() => {
 							const e = x ? E.T : _.e;
-							p(e(t.id, !0)), u(x ? Object(h.m)("spam", t.id) : Object(h.i)(t.id, "remove_as_spam", "mod_menu"))
+							p(e(t.id, !0)), u(x ? Object(h.n)("spam", t.id) : Object(h.j)(t.id, "remove_as_spam", "mod_menu"))
 						}, [u, p, t, x]),
 						ie = Object(r.useCallback)(e => {
 							const s = x ? E.u : _.b;
 							p(s(t.id, e));
 							const n = e === c.J.ADMIN ? "distinguish_as_admin" : e === c.J.MODERATOR ? "distinguish_as_mod" : "undistinguish";
-							u(Object(h.i)(t.id, n, "mod_menu"))
+							u(Object(h.j)(t.id, n, "mod_menu"))
 						}, [p, t, x, u]);
 					return a.a.createElement(M.b, {
 						dropdownId: `modqueue-item-overflow-${t.id}`,
@@ -5973,7 +5973,7 @@
 							const e = Object(b.a)(t.id),
 								o = e ? E.fb : _.g,
 								r = t.ignoreReports ? "restore_reports" : "ignore_reports",
-								a = e ? Object(h.k)(r, t.id) : Object(h.j)(r, t.id);
+								a = e ? Object(h.l)(r, t.id) : Object(h.k)(r, t.id);
 							n(o(t.id)), s(a)
 						}, [t.id, t.ignoreReports, s, n]),
 						d = (t.modReportsDismissed && t.modReportsDismissed.length || 0) + (t.userReportsDismissed && t.userReportsDismissed.length || 0);
@@ -6092,7 +6092,7 @@
 						postOrCommentId: t.id
 					}))
 				},
-				Te = (e, t) => Object(h.b)(t, e),
+				Te = (e, t) => Object(h.c)(t, e),
 				Le = e => {
 					let {
 						content: t,
@@ -7491,7 +7491,7 @@
 					super(...arguments), this.tooltipTarget = null, this.setTooltipTargetRef = e => this.tooltipTarget = e, this.onSnoozeButtonClick = () => {
 						const e = this.props.isSnoozed ? c.kc.None : c.kc.Snoozed;
 						this.props.toggleSnooze(e);
-						const t = Object(x.o)(Object(f.a)(this.props.reportedThingId), this.props.isSnoozed, this.props.reportedThingId, this.props.reason);
+						const t = Object(x.p)(Object(f.a)(this.props.reportedThingId), this.props.isSnoozed, this.props.reportedThingId, this.props.reason);
 						this.props.sendEvent(t)
 					}
 				}
@@ -10915,4 +10915,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.67f025440301b6803d01.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.f0e87ffd241aa17d8e91.js.map

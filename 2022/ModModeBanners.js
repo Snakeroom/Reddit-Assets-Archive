@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModModeBanners.11c40e4a192e49c95c70.js
-// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModModeBanners.505960f609134c4e2d4f.js
+// Retrieved at 12/12/2022, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModModeBanners"], {
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, s) {
@@ -425,7 +425,7 @@
 					let e;
 					s();
 					const o = t.ignoreReports ? "restore_reports" : "ignore_reports";
-					e = Object(p.a)(t.id) ? Object(u.k)(o, t.id) : Object(u.j)(o, t.id), d(e)
+					e = Object(p.a)(t.id) ? Object(u.l)(o, t.id) : Object(u.k)(o, t.id), d(e)
 				}, c = (t.modReportsDismissed && t.modReportsDismissed.length || 0) + (t.userReportsDismissed && t.userReportsDismissed.length || 0);
 				return c ? r.a.createElement(_, {
 					collapseReports: o,
@@ -501,7 +501,7 @@
 					super(...arguments), this.tooltipTarget = null, this.setTooltipTargetRef = e => this.tooltipTarget = e, this.onSnoozeButtonClick = () => {
 						const e = this.props.isSnoozed ? i.kc.None : i.kc.Snoozed;
 						this.props.toggleSnooze(e);
-						const t = Object(g.o)(Object(R.a)(this.props.reportedThingId), this.props.isSnoozed, this.props.reportedThingId, this.props.reason);
+						const t = Object(g.p)(Object(R.a)(this.props.reportedThingId), this.props.isSnoozed, this.props.reportedThingId, this.props.reason);
 						this.props.sendEvent(t)
 					}
 				}
@@ -689,4 +689,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.11c40e4a192e49c95c70.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.505960f609134c4e2d4f.js.map

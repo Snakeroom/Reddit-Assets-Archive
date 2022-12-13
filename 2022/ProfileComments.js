@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.7f4ac1489db1b1e5c387.js
-// Retrieved at 12/12/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.1df0584cbf3651087169.js
+// Retrieved at 12/12/2022, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -1192,7 +1192,7 @@
 			class Se extends r.a.PureComponent {
 				constructor() {
 					super(...arguments), this.handleDistinguishToggle = () => {
-						this.props.sendEvent(Object(ae.b)("mod_distinguish_menu", this.props.comment.id)), this.props.onToggleDistinguishDropdown()
+						this.props.sendEvent(Object(ae.c)("mod_distinguish_menu", this.props.comment.id)), this.props.onToggleDistinguishDropdown()
 					}, this.handleEdit = () => this.props.handleEdit(this.props.commentPermalink), this.handleIgnoreReports = () => {
 						this.props.onIgnoreReports(), this.sendCommentReportEvent(this.props.comment.ignoreReports ? "restore_reports" : "ignore_reports")
 					}, this.handleGild = async () => {
@@ -1202,11 +1202,11 @@
 							clickGildEvent: t
 						} = await Promise.resolve().then(n.bind(null, "./src/reddit/helpers/trackers/gild.ts"));
 						this.props.sendEvent(t(this.props.comment.id))
-					}, this.handleModActionsMenu = () => this.props.sendEvent(Object(ae.b)("comment_mod_action_menu", this.props.comment.id)), this.handleOverflowMenuClick = () => this.props.sendEvent(Object(ae.b)("comment_overflow_menu", this.props.comment.id)), this.handleDelete = () => this.props.handleDelete(), this.handleReply = () => this.props.handleReply(this.props.commentPermalink), this.handleRestrictedButtonClick = () => {
+					}, this.handleModActionsMenu = () => this.props.sendEvent(Object(ae.c)("comment_mod_action_menu", this.props.comment.id)), this.handleOverflowMenuClick = () => this.props.sendEvent(Object(ae.c)("comment_overflow_menu", this.props.comment.id)), this.handleDelete = () => this.props.handleDelete(), this.handleReply = () => this.props.handleReply(this.props.commentPermalink), this.handleRestrictedButtonClick = () => {
 						this.props.onToggleReportsDropdown(), this.sendCommentModEventWithName("comment_report_menu")
 					}, this.handleSave = () => {
-						this.props.comment.isSaved ? this.props.sendEvent(Object(ae.b)("unsave", this.props.comment.id)) : this.props.sendEvent(Object(ae.b)("save", this.props.comment.id)), this.props.onToggleSave()
-					}, this.sendCommentDistinguishEvent = e => this.props.sendEvent(Object(ae.c)(e, this.props.comment.id)), this.sendCommentEventWithName = e => this.props.sendEvent(Object(G.b)(this.props.comment.postId, `comment_${e}`)), this.sendCommentEventWithNameShare = () => this.sendCommentEventWithName("share"), this.sendCommentModEventWithName = e => this.props.sendEvent(Object(ae.b)(e, this.props.comment.id)), this.sendCommentReportEvent = e => this.props.sendEvent(Object(ae.f)(e, this.props.comment.id)), this.renderReportFlow = () => this.props.reportingRevampEnabled ? r.a.createElement(se.a, {
+						this.props.comment.isSaved ? this.props.sendEvent(Object(ae.c)("unsave", this.props.comment.id)) : this.props.sendEvent(Object(ae.c)("save", this.props.comment.id)), this.props.onToggleSave()
+					}, this.sendCommentDistinguishEvent = e => this.props.sendEvent(Object(ae.d)(e, this.props.comment.id)), this.sendCommentEventWithName = e => this.props.sendEvent(Object(G.b)(this.props.comment.postId, `comment_${e}`)), this.sendCommentEventWithNameShare = () => this.sendCommentEventWithName("share"), this.sendCommentModEventWithName = e => this.props.sendEvent(Object(ae.c)(e, this.props.comment.id)), this.sendCommentReportEvent = e => this.props.sendEvent(Object(ae.g)(e, this.props.comment.id)), this.renderReportFlow = () => this.props.reportingRevampEnabled ? r.a.createElement(se.a, {
 						withOverlay: !0,
 						commentId: this.props.comment.id,
 						overlayCustomStyles: ne.b,
@@ -6047,4 +6047,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.7f4ac1489db1b1e5c387.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.1df0584cbf3651087169.js.map

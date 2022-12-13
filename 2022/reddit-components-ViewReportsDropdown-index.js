@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.81c91a7b2106d0e74134.js
-// Retrieved at 12/5/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.15e7bfb2caa6c890f2f2.js
+// Retrieved at 12/12/2022, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, o) {
@@ -298,7 +298,7 @@
 					super(...arguments), this.tooltipTarget = null, this.setTooltipTargetRef = e => this.tooltipTarget = e, this.onSnoozeButtonClick = () => {
 						const e = this.props.isSnoozed ? c.kc.None : c.kc.Snoozed;
 						this.props.toggleSnooze(e);
-						const t = Object(g.o)(Object(R.a)(this.props.reportedThingId), this.props.isSnoozed, this.props.reportedThingId, this.props.reason);
+						const t = Object(g.p)(Object(R.a)(this.props.reportedThingId), this.props.isSnoozed, this.props.reportedThingId, this.props.reason);
 						this.props.sendEvent(t)
 					}
 				}
@@ -554,4 +554,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.81c91a7b2106d0e74134.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.15e7bfb2caa6c890f2f2.js.map

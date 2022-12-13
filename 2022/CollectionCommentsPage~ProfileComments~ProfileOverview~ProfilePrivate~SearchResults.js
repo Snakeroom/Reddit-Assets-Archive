@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.dffa104b233d1bd981a8.js
-// Retrieved at 12/12/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.2076a6d4332aefce1b52.js
+// Retrieved at 12/12/2022, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -894,19 +894,19 @@
 						tooltipId: m
 					}, s.a.createElement(k, {
 						onApproveComment: () => {
-							o(), c(Object(l.d)("approve", t.id))
+							o(), c(Object(l.e)("approve", t.id))
 						},
 						onRemoveComment: () => {
-							i(), c(Object(l.d)("remove", t.id))
+							i(), c(Object(l.e)("remove", t.id))
 						},
 						onSpamComment: () => {
-							a(), c(Object(l.d)("spam", t.id))
+							a(), c(Object(l.e)("spam", t.id))
 						},
 						onLockComment: () => {
-							r(), c(Object(l.d)(t.isLocked ? "unlock" : "lock", t.id))
+							r(), c(Object(l.e)(t.isLocked ? "unlock" : "lock", t.id))
 						},
 						onShowComment: () => {
-							d(), c(Object(l.d)("showComment", t.id))
+							d(), c(Object(l.e)("showComment", t.id))
 						},
 						comment: t
 					}), s.a.createElement(_.a, {
@@ -1013,7 +1013,7 @@
 					A = n.isApproved && N,
 					R = !n.isRemoved || n.bannedBy === c.m,
 					L = a,
-					D = e => I(Object(f.b)(e, n.id)),
+					D = e => I(Object(f.c)(e, n.id)),
 					S = "chat_comments" === (null == T ? void 0 : T.queryParams.only);
 				return r.a.createElement("div", {
 					className: t
@@ -1024,7 +1024,7 @@
 						hk: "2219Nh"
 					}),
 					onClick: () => {
-						u(), S && I(Object(f.a)("approve", n.id)), D("approve")
+						u(), S && I(Object(f.b)("approve", n.id)), D("approve")
 					}
 				}, r.a.createElement(k.a, {
 					className: w.a.icon
@@ -1035,7 +1035,7 @@
 						hk: "3tYl0U"
 					}),
 					onClick: () => {
-						v(), S && I(Object(f.a)("remove", n.id)), n.bannedBy === c.m ? D("confirm_remove") : D("remove")
+						v(), S && I(Object(f.b)("remove", n.id)), n.bannedBy === c.m ? D("confirm_remove") : D("remove")
 					}
 				}, r.a.createElement(O.a, {
 					className: w.a.icon
@@ -2625,4 +2625,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.dffa104b233d1bd981a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.2076a6d4332aefce1b52.js.map

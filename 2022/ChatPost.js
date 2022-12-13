@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.8df2115880aea7a9c13c.js
-// Retrieved at 12/12/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.baa5026c3503c9fadbb3.js
+// Retrieved at 12/12/2022, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/backo2/index.js": function(e, t) {
@@ -1239,43 +1239,46 @@
 				s = n("./node_modules/react/index.js"),
 				r = n.n(s),
 				a = n("./node_modules/react-redux/es/index.js"),
-				i = n("./src/lib/constants/index.ts"),
-				c = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				d = n("./src/reddit/actions/tooltip.ts"),
-				l = n("./src/reddit/components/Hovercards/AuthorHovercard/ModIdCard/async.tsx"),
-				m = n("./src/reddit/components/Hovercards/helpers.ts"),
-				u = n("./src/reddit/components/PostTopMeta/index.tsx"),
-				p = n("./src/reddit/hooks/useIsOverlay.ts"),
-				h = n("./src/reddit/models/Post/index.ts"),
-				b = n("./src/redditGQL/types.ts");
-			const C = Object(c.v)();
-			t.a = C(e => {
+				i = n("./src/reddit/hooks/useTracking.ts"),
+				c = n("./src/reddit/helpers/trackers/modTools.ts"),
+				d = n("./src/lib/constants/index.ts"),
+				l = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				m = n("./src/reddit/actions/tooltip.ts"),
+				u = n("./src/reddit/components/Hovercards/AuthorHovercard/ModIdCard/async.tsx"),
+				p = n("./src/reddit/components/Hovercards/helpers.ts"),
+				h = n("./src/reddit/components/PostTopMeta/index.tsx"),
+				b = n("./src/reddit/hooks/useIsOverlay.ts"),
+				C = n("./src/reddit/models/Post/index.ts"),
+				f = n("./src/redditGQL/types.ts");
+			const v = Object(l.v)();
+			t.a = v(e => {
 				let {
 					pageLayer: t,
 					postOrComment: n,
-					className: c
+					className: l
 				} = e;
-				var C;
-				const f = Object(p.a)(),
-					v = Object(a.d)(),
-					g = (null === (C = null == t ? void 0 : t.urlParams) || void 0 === C ? void 0 : C.pageName) === i.wb.Modqueue,
-					_ = Object(s.useCallback)(() => {
-						const e = Object(m.b)({
+				var v;
+				const g = Object(b.a)(),
+					_ = Object(a.d)(),
+					E = Object(i.a)(),
+					x = (null === (v = null == t ? void 0 : t.urlParams) || void 0 === v ? void 0 : v.pageName) === d.wb.Modqueue,
+					O = Object(s.useCallback)(() => {
+						const e = Object(p.b)({
 							itemId: n.id,
-							tooltipIdPrefix: l.a,
-							tooltipType: f ? u.f.Lightbox : void 0
+							tooltipIdPrefix: u.a,
+							tooltipType: g ? h.f.Lightbox : void 0
 						});
-						v(Object(d.h)({
+						_(Object(m.h)({
 							tooltipId: e,
 							args: {
 								isModNotesView: !0,
-								modNotesFilter: b.y.Note
+								modNotesFilter: f.y.Note
 							}
-						}))
-					}, [n, v, f]);
-				return !g || Object(h.p)(n.author) ? null : r.a.createElement("button", {
-					className: c,
-					onClick: _
+						})), E(Object(c.a)(n.id, n.authorId))
+					}, [n, _, g, E]);
+				return !x || Object(C.p)(n.author) ? null : r.a.createElement("button", {
+					className: l,
+					onClick: O
 				}, o.fbt._("Add a note", null, {
 					hk: "1dmmma"
 				}))
@@ -6486,4 +6489,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.8df2115880aea7a9c13c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.baa5026c3503c9fadbb3.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a.51e4e84c8fc7dde3671d.js
-// Retrieved at 12/12/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a.9bf514ac7262d92523a1.js
+// Retrieved at 12/12/2022, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a"], {
 		"./src/higherOrderComponents/withAdClickLocation/index.tsx": function(e, t, s) {
@@ -199,43 +199,46 @@
 				o = s("./node_modules/react/index.js"),
 				r = s.n(o),
 				a = s("./node_modules/react-redux/es/index.js"),
-				i = s("./src/lib/constants/index.ts"),
-				c = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				d = s("./src/reddit/actions/tooltip.ts"),
-				l = s("./src/reddit/components/Hovercards/AuthorHovercard/ModIdCard/async.tsx"),
-				m = s("./src/reddit/components/Hovercards/helpers.ts"),
-				u = s("./src/reddit/components/PostTopMeta/index.tsx"),
-				p = s("./src/reddit/hooks/useIsOverlay.ts"),
-				b = s("./src/reddit/models/Post/index.ts"),
-				x = s("./src/redditGQL/types.ts");
-			const v = Object(c.v)();
-			t.a = v(e => {
+				i = s("./src/reddit/hooks/useTracking.ts"),
+				c = s("./src/reddit/helpers/trackers/modTools.ts"),
+				d = s("./src/lib/constants/index.ts"),
+				l = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				m = s("./src/reddit/actions/tooltip.ts"),
+				u = s("./src/reddit/components/Hovercards/AuthorHovercard/ModIdCard/async.tsx"),
+				p = s("./src/reddit/components/Hovercards/helpers.ts"),
+				b = s("./src/reddit/components/PostTopMeta/index.tsx"),
+				x = s("./src/reddit/hooks/useIsOverlay.ts"),
+				v = s("./src/reddit/models/Post/index.ts"),
+				h = s("./src/redditGQL/types.ts");
+			const E = Object(l.v)();
+			t.a = E(e => {
 				let {
 					pageLayer: t,
 					postOrComment: s,
-					className: c
+					className: l
 				} = e;
-				var v;
-				const h = Object(p.a)(),
-					E = Object(a.d)(),
-					f = (null === (v = null == t ? void 0 : t.urlParams) || void 0 === v ? void 0 : v.pageName) === i.wb.Modqueue,
-					O = Object(o.useCallback)(() => {
-						const e = Object(m.b)({
+				var E;
+				const f = Object(x.a)(),
+					O = Object(a.d)(),
+					_ = Object(i.a)(),
+					j = (null === (E = null == t ? void 0 : t.urlParams) || void 0 === E ? void 0 : E.pageName) === d.wb.Modqueue,
+					P = Object(o.useCallback)(() => {
+						const e = Object(p.b)({
 							itemId: s.id,
-							tooltipIdPrefix: l.a,
-							tooltipType: h ? u.f.Lightbox : void 0
+							tooltipIdPrefix: u.a,
+							tooltipType: f ? b.f.Lightbox : void 0
 						});
-						E(Object(d.h)({
+						O(Object(m.h)({
 							tooltipId: e,
 							args: {
 								isModNotesView: !0,
-								modNotesFilter: x.y.Note
+								modNotesFilter: h.y.Note
 							}
-						}))
-					}, [s, E, h]);
-				return !f || Object(b.p)(s.author) ? null : r.a.createElement("button", {
-					className: c,
-					onClick: O
+						})), _(Object(c.a)(s.id, s.authorId))
+					}, [s, O, f, _]);
+				return !j || Object(v.p)(s.author) ? null : r.a.createElement("button", {
+					className: l,
+					onClick: P
 				}, n.fbt._("Add a note", null, {
 					hk: "1dmmma"
 				}))
@@ -2204,4 +2207,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a.51e4e84c8fc7dde3671d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a.9bf514ac7262d92523a1.js.map

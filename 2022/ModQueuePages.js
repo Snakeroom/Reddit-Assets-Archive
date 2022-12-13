@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.84c7ff2471cf9cfcd0d5.js
-// Retrieved at 12/12/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.a64e19759e9da12012c1.js
+// Retrieved at 12/12/2022, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2581,43 +2581,46 @@
 				o = n("./node_modules/react/index.js"),
 				r = n.n(o),
 				i = n("./node_modules/react-redux/es/index.js"),
-				a = n("./src/lib/constants/index.ts"),
-				d = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				c = n("./src/reddit/actions/tooltip.ts"),
-				l = n("./src/reddit/components/Hovercards/AuthorHovercard/ModIdCard/async.tsx"),
-				m = n("./src/reddit/components/Hovercards/helpers.ts"),
-				u = n("./src/reddit/components/PostTopMeta/index.tsx"),
-				p = n("./src/reddit/hooks/useIsOverlay.ts"),
-				b = n("./src/reddit/models/Post/index.ts"),
-				h = n("./src/redditGQL/types.ts");
-			const f = Object(d.v)();
-			t.a = f(e => {
+				a = n("./src/reddit/hooks/useTracking.ts"),
+				d = n("./src/reddit/helpers/trackers/modTools.ts"),
+				c = n("./src/lib/constants/index.ts"),
+				l = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				m = n("./src/reddit/actions/tooltip.ts"),
+				u = n("./src/reddit/components/Hovercards/AuthorHovercard/ModIdCard/async.tsx"),
+				p = n("./src/reddit/components/Hovercards/helpers.ts"),
+				b = n("./src/reddit/components/PostTopMeta/index.tsx"),
+				h = n("./src/reddit/hooks/useIsOverlay.ts"),
+				f = n("./src/reddit/models/Post/index.ts"),
+				x = n("./src/redditGQL/types.ts");
+			const v = Object(l.v)();
+			t.a = v(e => {
 				let {
 					pageLayer: t,
 					postOrComment: n,
-					className: d
+					className: l
 				} = e;
-				var f;
-				const x = Object(p.a)(),
-					v = Object(i.d)(),
-					g = (null === (f = null == t ? void 0 : t.urlParams) || void 0 === f ? void 0 : f.pageName) === a.wb.Modqueue,
-					O = Object(o.useCallback)(() => {
-						const e = Object(m.b)({
+				var v;
+				const g = Object(h.a)(),
+					O = Object(i.d)(),
+					_ = Object(a.a)(),
+					E = (null === (v = null == t ? void 0 : t.urlParams) || void 0 === v ? void 0 : v.pageName) === c.wb.Modqueue,
+					j = Object(o.useCallback)(() => {
+						const e = Object(p.b)({
 							itemId: n.id,
-							tooltipIdPrefix: l.a,
-							tooltipType: x ? u.f.Lightbox : void 0
+							tooltipIdPrefix: u.a,
+							tooltipType: g ? b.f.Lightbox : void 0
 						});
-						v(Object(c.h)({
+						O(Object(m.h)({
 							tooltipId: e,
 							args: {
 								isModNotesView: !0,
-								modNotesFilter: h.y.Note
+								modNotesFilter: x.y.Note
 							}
-						}))
-					}, [n, v, x]);
-				return !g || Object(b.p)(n.author) ? null : r.a.createElement("button", {
-					className: d,
-					onClick: O
+						})), _(Object(d.a)(n.id, n.authorId))
+					}, [n, O, g, _]);
+				return !E || Object(f.p)(n.author) ? null : r.a.createElement("button", {
+					className: l,
+					onClick: j
 				}, s.fbt._("Add a note", null, {
 					hk: "1dmmma"
 				}))
@@ -2738,7 +2741,7 @@
 					T = n.isApproved && N,
 					R = !n.isRemoved || n.bannedBy === c.m,
 					A = a,
-					P = e => S(Object(f.b)(e, n.id)),
+					P = e => S(Object(f.c)(e, n.id)),
 					L = "chat_comments" === (null == I ? void 0 : I.queryParams.only);
 				return r.a.createElement("div", {
 					className: t
@@ -2749,7 +2752,7 @@
 						hk: "2219Nh"
 					}),
 					onClick: () => {
-						u(), L && S(Object(f.a)("approve", n.id)), P("approve")
+						u(), L && S(Object(f.b)("approve", n.id)), P("approve")
 					}
 				}, r.a.createElement(_.a, {
 					className: w.a.icon
@@ -2760,7 +2763,7 @@
 						hk: "3tYl0U"
 					}),
 					onClick: () => {
-						x(), L && S(Object(f.a)("remove", n.id)), n.bannedBy === c.m ? P("confirm_remove") : P("remove")
+						x(), L && S(Object(f.b)("remove", n.id)), n.bannedBy === c.m ? P("confirm_remove") : P("remove")
 					}
 				}, r.a.createElement(j.a, {
 					className: w.a.icon
@@ -8594,4 +8597,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.84c7ff2471cf9cfcd0d5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.a64e19759e9da12012c1.js.map

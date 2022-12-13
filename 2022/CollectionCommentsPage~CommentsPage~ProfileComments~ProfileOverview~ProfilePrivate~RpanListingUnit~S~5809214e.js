@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e.bfaa040e0a4c89cbcdee.js
-// Retrieved at 12/12/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e.0a180058e44e042ae83e.js
+// Retrieved at 12/12/2022, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, s) {
@@ -1899,7 +1899,7 @@
 					}, r.a.createElement(N.a, {
 						model: de,
 						onIgnoreReports: () => {
-							ne(), pe(Object(G.n)(de.ignoreReports ? "restore_reports" : "ignore_reports", de.id))
+							ne(), pe(Object(G.o)(de.ignoreReports ? "restore_reports" : "ignore_reports", de.id))
 						},
 						tooltipId: ze
 					}), r.a.createElement(H.a, {
@@ -5152,4 +5152,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e.bfaa040e0a4c89cbcdee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~S~5809214e.0a180058e44e042ae83e.js.map

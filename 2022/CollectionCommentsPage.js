@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.6a0d2859aca808d43f51.js
-// Retrieved at 12/12/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.3cf7c30f0b79cf23f896.js
+// Retrieved at 12/12/2022, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -3412,10 +3412,10 @@
 				});
 			class Re extends o.a.Component {
 				constructor() {
-					super(...arguments), this.sendCommentEventWithName = e => this.props.sendEvent(Object(T.b)(this.props.comment.postId, `comment_${e}`)), this.sendCommentModEventWithName = e => this.props.sendEvent(Object(oe.b)(e, this.props.comment.id)), this.sendCommentReportEvent = e => this.props.sendEvent(Object(oe.f)(e, this.props.comment.id)), this.handleSave = () => {
+					super(...arguments), this.sendCommentEventWithName = e => this.props.sendEvent(Object(T.b)(this.props.comment.postId, `comment_${e}`)), this.sendCommentModEventWithName = e => this.props.sendEvent(Object(oe.c)(e, this.props.comment.id)), this.sendCommentReportEvent = e => this.props.sendEvent(Object(oe.g)(e, this.props.comment.id)), this.handleSave = () => {
 						this.props.comment.isSaved ? this.sendCommentModEventWithName("unsave") : this.sendCommentModEventWithName("save"), this.props.onToggleSave()
 					}, this.handleEdit = () => {
-						this.props.sendEvent(Object(oe.e)("edit", this.props.comment.id)), this.props.handleEdit()
+						this.props.sendEvent(Object(oe.f)("edit", this.props.comment.id)), this.props.handleEdit()
 					}, this.handleGild = async () => {
 						var e;
 						const t = Object(I.d)(I.a.GildingFlow, !0);
@@ -3425,11 +3425,11 @@
 						} = await Promise.resolve().then(s.bind(null, "./src/reddit/helpers/trackers/gild.ts"));
 						this.props.sendEvent(n(this.props.comment.id))
 					}, this.handleDelete = () => {
-						this.props.sendEvent(Object(oe.e)("delete", this.props.comment.id)), this.props.toggleDeleteCommentModal()
+						this.props.sendEvent(Object(oe.f)("delete", this.props.comment.id)), this.props.toggleDeleteCommentModal()
 					}, this.handleReportClick = () => {
-						this.props.sendEvent(Object(oe.b)("report", this.props.comment.id)), this.props.onReportClick()
+						this.props.sendEvent(Object(oe.c)("report", this.props.comment.id)), this.props.onReportClick()
 					}, this.handleDistinguishToggle = () => {
-						this.props.sendEvent(Object(oe.b)("mod_distinguish_menu", this.props.comment.id)), this.props.onToggleDistinguishDropdown()
+						this.props.sendEvent(Object(oe.c)("mod_distinguish_menu", this.props.comment.id)), this.props.onToggleDistinguishDropdown()
 					}, this.handleFollow = () => {
 						const {
 							onCommentFollow: e,
@@ -3437,8 +3437,8 @@
 							comment: s,
 							isFollowed: n
 						} = this.props;
-						e(n ? L.a.UNFOLLOWED : L.a.FOLLOWED), t(n ? Object(oe.g)("follow", s.id) : Object(oe.b)("follow", s.id))
-					}, this.sendCommentDistinguishEvent = e => this.props.sendEvent(Object(oe.c)(e, this.props.comment.id)), this.renderReportFlow = () => this.props.reportingRevampEnabled ? o.a.createElement(ee.a, {
+						e(n ? L.a.UNFOLLOWED : L.a.FOLLOWED), t(n ? Object(oe.h)("follow", s.id) : Object(oe.c)("follow", s.id))
+					}, this.sendCommentDistinguishEvent = e => this.props.sendEvent(Object(oe.d)(e, this.props.comment.id)), this.renderReportFlow = () => this.props.reportingRevampEnabled ? o.a.createElement(ee.a, {
 						withOverlay: !0,
 						commentId: this.props.comment.id,
 						overlayCustomStyles: $.b,
@@ -3587,7 +3587,7 @@
 						className: xe.a.overflowMenu,
 						disabled: b,
 						dropdownId: Ne(e.id),
-						onClick: () => S(Object(oe.b)("comment_overflow_menu", e.id))
+						onClick: () => S(Object(oe.c)("comment_overflow_menu", e.id))
 					}, de, A && o.a.createElement(o.a.Fragment, null, o.a.createElement(je, {
 						displayText: n.fbt._("Delete comment", null, {
 							hk: "4lMUDO"
@@ -3630,7 +3630,7 @@
 						className: v ? z(y.Moderator, O.HideIfVWLarger) : void 0,
 						dropdownId: `${e.id}-mod-actions-menu`,
 						inCommentFlatlist: !0,
-						onClick: () => S(Object(oe.b)("comment_mod_action_menu", e.id))
+						onClick: () => S(Object(oe.c)("comment_mod_action_menu", e.id))
 					}, o.a.createElement(ue.a, null), o.a.createElement(U.a, {
 						comment: e,
 						tooltipId: `${e.id}-mod-actions-menu`
@@ -19524,4 +19524,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.6a0d2859aca808d43f51.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.3cf7c30f0b79cf23f896.js.map

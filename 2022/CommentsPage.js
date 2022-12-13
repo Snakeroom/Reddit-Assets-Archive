@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.b0e2ddc3e7bd9a83cba2.js
-// Retrieved at 12/12/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.73b67c2246596aefcd81.js
+// Retrieved at 12/12/2022, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~2f7e159a", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "PostCreation~Reddit~RichTextEditor~reddit-components-LargePost~reddit-components-MediumPost~reddit-c~93a1f1ba", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-MediumPost", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -11368,43 +11368,46 @@
 				r = n("./node_modules/react/index.js"),
 				o = n.n(r),
 				i = n("./node_modules/react-redux/es/index.js"),
-				a = n("./src/lib/constants/index.ts"),
-				c = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				d = n("./src/reddit/actions/tooltip.ts"),
-				l = n("./src/reddit/components/Hovercards/AuthorHovercard/ModIdCard/async.tsx"),
-				u = n("./src/reddit/components/Hovercards/helpers.ts"),
-				m = n("./src/reddit/components/PostTopMeta/index.tsx"),
-				p = n("./src/reddit/hooks/useIsOverlay.ts"),
-				b = n("./src/reddit/models/Post/index.ts"),
-				f = n("./src/redditGQL/types.ts");
-			const h = Object(c.v)();
-			t.a = h(e => {
+				a = n("./src/reddit/hooks/useTracking.ts"),
+				c = n("./src/reddit/helpers/trackers/modTools.ts"),
+				d = n("./src/lib/constants/index.ts"),
+				l = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				u = n("./src/reddit/actions/tooltip.ts"),
+				m = n("./src/reddit/components/Hovercards/AuthorHovercard/ModIdCard/async.tsx"),
+				p = n("./src/reddit/components/Hovercards/helpers.ts"),
+				b = n("./src/reddit/components/PostTopMeta/index.tsx"),
+				f = n("./src/reddit/hooks/useIsOverlay.ts"),
+				h = n("./src/reddit/models/Post/index.ts"),
+				C = n("./src/redditGQL/types.ts");
+			const g = Object(l.v)();
+			t.a = g(e => {
 				let {
 					pageLayer: t,
 					postOrComment: n,
-					className: c
+					className: l
 				} = e;
-				var h;
-				const C = Object(p.a)(),
-					g = Object(i.d)(),
-					_ = (null === (h = null == t ? void 0 : t.urlParams) || void 0 === h ? void 0 : h.pageName) === a.wb.Modqueue,
-					v = Object(r.useCallback)(() => {
-						const e = Object(u.b)({
+				var g;
+				const _ = Object(f.a)(),
+					v = Object(i.d)(),
+					x = Object(a.a)(),
+					O = (null === (g = null == t ? void 0 : t.urlParams) || void 0 === g ? void 0 : g.pageName) === d.wb.Modqueue,
+					y = Object(r.useCallback)(() => {
+						const e = Object(p.b)({
 							itemId: n.id,
-							tooltipIdPrefix: l.a,
-							tooltipType: C ? m.f.Lightbox : void 0
+							tooltipIdPrefix: m.a,
+							tooltipType: _ ? b.f.Lightbox : void 0
 						});
-						g(Object(d.h)({
+						v(Object(u.h)({
 							tooltipId: e,
 							args: {
 								isModNotesView: !0,
-								modNotesFilter: f.y.Note
+								modNotesFilter: C.y.Note
 							}
-						}))
-					}, [n, g, C]);
-				return !_ || Object(b.p)(n.author) ? null : o.a.createElement("button", {
-					className: c,
-					onClick: v
+						})), x(Object(c.a)(n.id, n.authorId))
+					}, [n, v, _, x]);
+				return !O || Object(h.p)(n.author) ? null : o.a.createElement("button", {
+					className: l,
+					onClick: y
 				}, s.fbt._("Add a note", null, {
 					hk: "1dmmma"
 				}))
@@ -11815,19 +11818,19 @@
 						tooltipId: l
 					}, r.a.createElement(x, {
 						onApproveComment: () => {
-							s(), d(Object(u.d)("approve", t.id))
+							s(), d(Object(u.e)("approve", t.id))
 						},
 						onRemoveComment: () => {
-							i(), d(Object(u.d)("remove", t.id))
+							i(), d(Object(u.e)("remove", t.id))
 						},
 						onSpamComment: () => {
-							a(), d(Object(u.d)("spam", t.id))
+							a(), d(Object(u.e)("spam", t.id))
 						},
 						onLockComment: () => {
-							o(), d(Object(u.d)(t.isLocked ? "unlock" : "lock", t.id))
+							o(), d(Object(u.e)(t.isLocked ? "unlock" : "lock", t.id))
 						},
 						onShowComment: () => {
-							c(), d(Object(u.d)("showComment", t.id))
+							c(), d(Object(u.e)("showComment", t.id))
 						},
 						comment: t
 					}), r.a.createElement(O.a, {
@@ -12513,7 +12516,7 @@
 					P = n.isApproved && L,
 					N = !n.isRemoved || n.bannedBy === d.m,
 					M = a,
-					R = e => k(Object(h.b)(e, n.id)),
+					R = e => k(Object(h.c)(e, n.id)),
 					A = "chat_comments" === (null == w ? void 0 : w.queryParams.only);
 				return o.a.createElement("div", {
 					className: t
@@ -12524,7 +12527,7 @@
 						hk: "2219Nh"
 					}),
 					onClick: () => {
-						m(), A && k(Object(h.a)("approve", n.id)), R("approve")
+						m(), A && k(Object(h.b)("approve", n.id)), R("approve")
 					}
 				}, o.a.createElement(x.a, {
 					className: I.a.icon
@@ -12535,7 +12538,7 @@
 						hk: "3tYl0U"
 					}),
 					onClick: () => {
-						C(), A && k(Object(h.a)("remove", n.id)), n.bannedBy === d.m ? R("confirm_remove") : R("remove")
+						C(), A && k(Object(h.b)("remove", n.id)), n.bannedBy === d.m ? R("confirm_remove") : R("remove")
 					}
 				}, o.a.createElement(y.a, {
 					className: I.a.icon
@@ -13897,10 +13900,10 @@
 				});
 			class Me extends o.a.Component {
 				constructor() {
-					super(...arguments), this.sendCommentEventWithName = e => this.props.sendEvent(Object(P.b)(this.props.comment.postId, `comment_${e}`)), this.sendCommentModEventWithName = e => this.props.sendEvent(Object(oe.b)(e, this.props.comment.id)), this.sendCommentReportEvent = e => this.props.sendEvent(Object(oe.f)(e, this.props.comment.id)), this.handleSave = () => {
+					super(...arguments), this.sendCommentEventWithName = e => this.props.sendEvent(Object(P.b)(this.props.comment.postId, `comment_${e}`)), this.sendCommentModEventWithName = e => this.props.sendEvent(Object(oe.c)(e, this.props.comment.id)), this.sendCommentReportEvent = e => this.props.sendEvent(Object(oe.g)(e, this.props.comment.id)), this.handleSave = () => {
 						this.props.comment.isSaved ? this.sendCommentModEventWithName("unsave") : this.sendCommentModEventWithName("save"), this.props.onToggleSave()
 					}, this.handleEdit = () => {
-						this.props.sendEvent(Object(oe.e)("edit", this.props.comment.id)), this.props.handleEdit()
+						this.props.sendEvent(Object(oe.f)("edit", this.props.comment.id)), this.props.handleEdit()
 					}, this.handleGild = async () => {
 						var e;
 						const t = Object(T.d)(T.a.GildingFlow, !0);
@@ -13910,11 +13913,11 @@
 						} = await Promise.resolve().then(n.bind(null, "./src/reddit/helpers/trackers/gild.ts"));
 						this.props.sendEvent(s(this.props.comment.id))
 					}, this.handleDelete = () => {
-						this.props.sendEvent(Object(oe.e)("delete", this.props.comment.id)), this.props.toggleDeleteCommentModal()
+						this.props.sendEvent(Object(oe.f)("delete", this.props.comment.id)), this.props.toggleDeleteCommentModal()
 					}, this.handleReportClick = () => {
-						this.props.sendEvent(Object(oe.b)("report", this.props.comment.id)), this.props.onReportClick()
+						this.props.sendEvent(Object(oe.c)("report", this.props.comment.id)), this.props.onReportClick()
 					}, this.handleDistinguishToggle = () => {
-						this.props.sendEvent(Object(oe.b)("mod_distinguish_menu", this.props.comment.id)), this.props.onToggleDistinguishDropdown()
+						this.props.sendEvent(Object(oe.c)("mod_distinguish_menu", this.props.comment.id)), this.props.onToggleDistinguishDropdown()
 					}, this.handleFollow = () => {
 						const {
 							onCommentFollow: e,
@@ -13922,8 +13925,8 @@
 							comment: n,
 							isFollowed: s
 						} = this.props;
-						e(s ? N.a.UNFOLLOWED : N.a.FOLLOWED), t(s ? Object(oe.g)("follow", n.id) : Object(oe.b)("follow", n.id))
-					}, this.sendCommentDistinguishEvent = e => this.props.sendEvent(Object(oe.c)(e, this.props.comment.id)), this.renderReportFlow = () => this.props.reportingRevampEnabled ? o.a.createElement(ee.a, {
+						e(s ? N.a.UNFOLLOWED : N.a.FOLLOWED), t(s ? Object(oe.h)("follow", n.id) : Object(oe.c)("follow", n.id))
+					}, this.sendCommentDistinguishEvent = e => this.props.sendEvent(Object(oe.d)(e, this.props.comment.id)), this.renderReportFlow = () => this.props.reportingRevampEnabled ? o.a.createElement(ee.a, {
 						withOverlay: !0,
 						commentId: this.props.comment.id,
 						overlayCustomStyles: $.b,
@@ -14072,7 +14075,7 @@
 						className: ge.a.overflowMenu,
 						disabled: b,
 						dropdownId: Le(e.id),
-						onClick: () => k(Object(oe.b)("comment_overflow_menu", e.id))
+						onClick: () => k(Object(oe.c)("comment_overflow_menu", e.id))
 					}, de, F && o.a.createElement(o.a.Fragment, null, o.a.createElement(Ee, {
 						displayText: s.fbt._("Delete comment", null, {
 							hk: "4lMUDO"
@@ -14115,7 +14118,7 @@
 						className: _ ? G(x.Moderator, v.HideIfVWLarger) : void 0,
 						dropdownId: `${e.id}-mod-actions-menu`,
 						inCommentFlatlist: !0,
-						onClick: () => k(Object(oe.b)("comment_mod_action_menu", e.id))
+						onClick: () => k(Object(oe.c)("comment_mod_action_menu", e.id))
 					}, o.a.createElement(me.a, null), o.a.createElement(V.a, {
 						comment: e,
 						tooltipId: `${e.id}-mod-actions-menu`
@@ -39476,36 +39479,38 @@
 		},
 		"./src/reddit/helpers/trackers/modTools.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "l", (function() {
+			n.d(t, "m", (function() {
 				return i
-			})), n.d(t, "m", (function() {
-				return a
-			})), n.d(t, "b", (function() {
-				return c
-			})), n.d(t, "a", (function() {
-				return d
-			})), n.d(t, "g", (function() {
-				return l
-			})), n.d(t, "e", (function() {
-				return u
-			})), n.d(t, "c", (function() {
-				return m
-			})), n.d(t, "d", (function() {
-				return p
-			})), n.d(t, "f", (function() {
-				return b
 			})), n.d(t, "n", (function() {
-				return f
-			})), n.d(t, "k", (function() {
-				return h
-			})), n.d(t, "j", (function() {
-				return C
-			})), n.d(t, "o", (function() {
-				return g
+				return a
+			})), n.d(t, "c", (function() {
+				return c
+			})), n.d(t, "b", (function() {
+				return d
 			})), n.d(t, "h", (function() {
-				return _
+				return l
+			})), n.d(t, "f", (function() {
+				return u
+			})), n.d(t, "d", (function() {
+				return m
+			})), n.d(t, "e", (function() {
+				return p
+			})), n.d(t, "g", (function() {
+				return b
+			})), n.d(t, "o", (function() {
+				return f
+			})), n.d(t, "l", (function() {
+				return h
+			})), n.d(t, "k", (function() {
+				return C
+			})), n.d(t, "p", (function() {
+				return g
 			})), n.d(t, "i", (function() {
+				return _
+			})), n.d(t, "j", (function() {
 				return v
+			})), n.d(t, "a", (function() {
+				return x
 			}));
 			var s = n("./src/reddit/constants/tracking.ts"),
 				r = n("./src/reddit/selectors/telemetry.ts");
@@ -39676,6 +39681,20 @@
 						commentId: e
 					}) || void 0,
 					post: Object(r.K)(s, e)
+				}),
+				x = (e, t) => n => ({
+					...o(n),
+					source: "moderator",
+					noun: "add_note_mod_queue",
+					action: "click",
+					comment: Object(r.h)({
+						state: n,
+						commentId: e
+					}) || void 0,
+					post: Object(r.K)(n, e),
+					modAction: {
+						targetUserId: t
+					}
 				})
 		},
 		"./src/reddit/helpers/trackers/navigation.ts": function(e, t, n) {
@@ -50845,4 +50864,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.b0e2ddc3e7bd9a83cba2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.73b67c2246596aefcd81.js.map

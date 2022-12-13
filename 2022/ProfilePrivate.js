@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.5ae3c948e592ebbef917.js
-// Retrieved at 12/12/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.ad13ab70d880c33e1d7b.js
+// Retrieved at 12/12/2022, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -1527,7 +1527,7 @@
 			class Pe extends o.a.PureComponent {
 				constructor() {
 					super(...arguments), this.handleDistinguishToggle = () => {
-						this.props.sendEvent(Object(de.b)("mod_distinguish_menu", this.props.comment.id)), this.props.onToggleDistinguishDropdown()
+						this.props.sendEvent(Object(de.c)("mod_distinguish_menu", this.props.comment.id)), this.props.onToggleDistinguishDropdown()
 					}, this.handleEdit = () => this.props.handleEdit(this.props.commentPermalink), this.handleIgnoreReports = () => {
 						this.props.onIgnoreReports(), this.sendCommentReportEvent(this.props.comment.ignoreReports ? "restore_reports" : "ignore_reports")
 					}, this.handleGild = async () => {
@@ -1537,11 +1537,11 @@
 							clickGildEvent: t
 						} = await Promise.resolve().then(s.bind(null, "./src/reddit/helpers/trackers/gild.ts"));
 						this.props.sendEvent(t(this.props.comment.id))
-					}, this.handleModActionsMenu = () => this.props.sendEvent(Object(de.b)("comment_mod_action_menu", this.props.comment.id)), this.handleOverflowMenuClick = () => this.props.sendEvent(Object(de.b)("comment_overflow_menu", this.props.comment.id)), this.handleDelete = () => this.props.handleDelete(), this.handleReply = () => this.props.handleReply(this.props.commentPermalink), this.handleRestrictedButtonClick = () => {
+					}, this.handleModActionsMenu = () => this.props.sendEvent(Object(de.c)("comment_mod_action_menu", this.props.comment.id)), this.handleOverflowMenuClick = () => this.props.sendEvent(Object(de.c)("comment_overflow_menu", this.props.comment.id)), this.handleDelete = () => this.props.handleDelete(), this.handleReply = () => this.props.handleReply(this.props.commentPermalink), this.handleRestrictedButtonClick = () => {
 						this.props.onToggleReportsDropdown(), this.sendCommentModEventWithName("comment_report_menu")
 					}, this.handleSave = () => {
-						this.props.comment.isSaved ? this.props.sendEvent(Object(de.b)("unsave", this.props.comment.id)) : this.props.sendEvent(Object(de.b)("save", this.props.comment.id)), this.props.onToggleSave()
-					}, this.sendCommentDistinguishEvent = e => this.props.sendEvent(Object(de.c)(e, this.props.comment.id)), this.sendCommentEventWithName = e => this.props.sendEvent(Object(z.b)(this.props.comment.postId, `comment_${e}`)), this.sendCommentEventWithNameShare = () => this.sendCommentEventWithName("share"), this.sendCommentModEventWithName = e => this.props.sendEvent(Object(de.b)(e, this.props.comment.id)), this.sendCommentReportEvent = e => this.props.sendEvent(Object(de.f)(e, this.props.comment.id)), this.renderReportFlow = () => this.props.reportingRevampEnabled ? o.a.createElement(ne.a, {
+						this.props.comment.isSaved ? this.props.sendEvent(Object(de.c)("unsave", this.props.comment.id)) : this.props.sendEvent(Object(de.c)("save", this.props.comment.id)), this.props.onToggleSave()
+					}, this.sendCommentDistinguishEvent = e => this.props.sendEvent(Object(de.d)(e, this.props.comment.id)), this.sendCommentEventWithName = e => this.props.sendEvent(Object(z.b)(this.props.comment.postId, `comment_${e}`)), this.sendCommentEventWithNameShare = () => this.sendCommentEventWithName("share"), this.sendCommentModEventWithName = e => this.props.sendEvent(Object(de.c)(e, this.props.comment.id)), this.sendCommentReportEvent = e => this.props.sendEvent(Object(de.g)(e, this.props.comment.id)), this.renderReportFlow = () => this.props.reportingRevampEnabled ? o.a.createElement(ne.a, {
 						withOverlay: !0,
 						commentId: this.props.comment.id,
 						overlayCustomStyles: se.b,
@@ -6764,4 +6764,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.5ae3c948e592ebbef917.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.ad13ab70d880c33e1d7b.js.map

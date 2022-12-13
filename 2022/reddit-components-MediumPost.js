@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.2d75042c9858917d646a.js
-// Retrieved at 12/12/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.f909f95dae4c64b294db.js
+// Retrieved at 12/12/2022, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1995,43 +1995,46 @@
 				o = s("./node_modules/react/index.js"),
 				r = s.n(o),
 				i = s("./node_modules/react-redux/es/index.js"),
-				a = s("./src/lib/constants/index.ts"),
-				c = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				d = s("./src/reddit/actions/tooltip.ts"),
-				l = s("./src/reddit/components/Hovercards/AuthorHovercard/ModIdCard/async.tsx"),
-				u = s("./src/reddit/components/Hovercards/helpers.ts"),
-				m = s("./src/reddit/components/PostTopMeta/index.tsx"),
-				p = s("./src/reddit/hooks/useIsOverlay.ts"),
-				b = s("./src/reddit/models/Post/index.ts"),
-				h = s("./src/redditGQL/types.ts");
-			const f = Object(c.v)();
-			t.a = f(e => {
+				a = s("./src/reddit/hooks/useTracking.ts"),
+				c = s("./src/reddit/helpers/trackers/modTools.ts"),
+				d = s("./src/lib/constants/index.ts"),
+				l = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				u = s("./src/reddit/actions/tooltip.ts"),
+				m = s("./src/reddit/components/Hovercards/AuthorHovercard/ModIdCard/async.tsx"),
+				p = s("./src/reddit/components/Hovercards/helpers.ts"),
+				b = s("./src/reddit/components/PostTopMeta/index.tsx"),
+				h = s("./src/reddit/hooks/useIsOverlay.ts"),
+				f = s("./src/reddit/models/Post/index.ts"),
+				x = s("./src/redditGQL/types.ts");
+			const v = Object(l.v)();
+			t.a = v(e => {
 				let {
 					pageLayer: t,
 					postOrComment: s,
-					className: c
+					className: l
 				} = e;
-				var f;
-				const x = Object(p.a)(),
-					v = Object(i.d)(),
-					E = (null === (f = null == t ? void 0 : t.urlParams) || void 0 === f ? void 0 : f.pageName) === a.wb.Modqueue,
-					O = Object(o.useCallback)(() => {
-						const e = Object(u.b)({
+				var v;
+				const E = Object(h.a)(),
+					O = Object(i.d)(),
+					_ = Object(a.a)(),
+					g = (null === (v = null == t ? void 0 : t.urlParams) || void 0 === v ? void 0 : v.pageName) === d.wb.Modqueue,
+					j = Object(o.useCallback)(() => {
+						const e = Object(p.b)({
 							itemId: s.id,
-							tooltipIdPrefix: l.a,
-							tooltipType: x ? m.f.Lightbox : void 0
+							tooltipIdPrefix: m.a,
+							tooltipType: E ? b.f.Lightbox : void 0
 						});
-						v(Object(d.h)({
+						O(Object(u.h)({
 							tooltipId: e,
 							args: {
 								isModNotesView: !0,
-								modNotesFilter: h.y.Note
+								modNotesFilter: x.y.Note
 							}
-						}))
-					}, [s, v, x]);
-				return !E || Object(b.p)(s.author) ? null : r.a.createElement("button", {
-					className: c,
-					onClick: O
+						})), _(Object(c.a)(s.id, s.authorId))
+					}, [s, O, E, _]);
+				return !g || Object(f.p)(s.author) ? null : r.a.createElement("button", {
+					className: l,
+					onClick: j
 				}, n.fbt._("Add a note", null, {
 					hk: "1dmmma"
 				}))
@@ -3924,7 +3927,7 @@
 				H = s("./src/reddit/selectors/comments.ts"),
 				W = s("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				G = s("./src/reddit/selectors/user.ts");
-			const q = (e, t) => Object(h.b)(t, e),
+			const q = (e, t) => Object(h.c)(t, e),
 				z = (e, t) => e ? t ? o.fbt._("Unlock Comments", null, {
 					hk: "zGuti"
 				}) : o.fbt._("Lock Comments", null, {
@@ -3958,7 +3961,7 @@
 							const e = x ? g.D : O.c;
 							p(e(t.id));
 							const s = t.isLocked ? "unlock" : "lock";
-							m(x ? S(t.id, s) : Object(h.i)(t.id, s, "mod_menu"))
+							m(x ? S(t.id, s) : Object(h.j)(t.id, s, "mod_menu"))
 						}, [S, m, p, t, x]),
 						Q = Object(r.useCallback)(e => {
 							m(Object(f.k)(t.id, e, "post", n, s, void 0))
@@ -3966,13 +3969,13 @@
 						Z = Object(r.useCallback)(() => {
 							var e;
 							const s = t.isStickied ? "unsticky" : "sticky";
-							x ? (p(Object(g.hb)(t.id)), m(Object(h.m)(s, t.id))) : (p(Object(O.b)(t.id, (null === (e = t.distinguishType) || void 0 === e ? void 0 : e.toLowerCase()) || "", !t.isStickied)), m(Object(h.i)(t.id, s, "mod_menu")))
+							x ? (p(Object(g.hb)(t.id)), m(Object(h.n)(s, t.id))) : (p(Object(O.b)(t.id, (null === (e = t.distinguishType) || void 0 === e ? void 0 : e.toLowerCase()) || "", !t.isStickied)), m(Object(h.j)(t.id, s, "mod_menu")))
 						}, [m, p, t, x]),
 						X = Object(r.useCallback)(() => {
-							x && (p(Object(g.I)(t.id)), m(Object(h.m)(t.isOriginalContent ? "unmark_original_content" : "mark_original_content", t.id)))
+							x && (p(Object(g.I)(t.id)), m(Object(h.n)(t.isOriginalContent ? "unmark_original_content" : "mark_original_content", t.id)))
 						}, [m, p, t, x]),
 						$ = Object(r.useCallback)(() => {
-							x && (p(Object(g.F)(t.id)), Object(h.m)(t.isNSFW ? "unmark_nsfw" : "mark_nsfw", t.id))
+							x && (p(Object(g.F)(t.id)), Object(h.n)(t.isNSFW ? "unmark_nsfw" : "mark_nsfw", t.id))
 						}, [p, t, x]),
 						ee = Object(r.useCallback)(() => {
 							x && (p(Object(_.i)(D.a.CROWD_CONTROL)), p(Object(g.t)(t.id)))
@@ -3982,7 +3985,7 @@
 						})),
 						se = Object(r.useCallback)(() => {
 							const e = x ? t.permalink : te;
-							e && (p(Object(g.C)(e)), x ? Q("copy") : m(Object(h.i)(t.id, "share", "mod_menu")))
+							e && (p(Object(g.C)(e)), x ? Q("copy") : m(Object(h.j)(t.id, "share", "mod_menu")))
 						}, [Q, p, t, x, te, m]),
 						ne = Object(r.useCallback)(async () => {
 							if (!x) return;
@@ -3994,7 +3997,7 @@
 							})), m(Object(V.clickGildEvent)(t.id))
 						}, [m, p, t, C, x]),
 						oe = Object(r.useCallback)(() => {
-							p(Object(P.c)(t.id)), x ? Q("report") : m(Object(h.i)(t.id, "report", "mod_menu"))
+							p(Object(P.c)(t.id)), x ? Q("report") : m(Object(h.j)(t.id, "report", "mod_menu"))
 						}, [Q, p, t, x, m]),
 						re = Object(r.useCallback)(() => {
 							var e;
@@ -4002,13 +4005,13 @@
 						}, [Q, p, t, x]),
 						ie = Object(r.useCallback)(() => {
 							const e = x ? g.T : O.e;
-							p(e(t.id, !0)), m(x ? Object(h.m)("spam", t.id) : Object(h.i)(t.id, "remove_as_spam", "mod_menu"))
+							p(e(t.id, !0)), m(x ? Object(h.n)("spam", t.id) : Object(h.j)(t.id, "remove_as_spam", "mod_menu"))
 						}, [m, p, t, x]),
 						ae = Object(r.useCallback)(e => {
 							const s = x ? g.u : O.b;
 							p(s(t.id, e));
 							const n = e === c.J.ADMIN ? "distinguish_as_admin" : e === c.J.MODERATOR ? "distinguish_as_mod" : "undistinguish";
-							m(Object(h.i)(t.id, n, "mod_menu"))
+							m(Object(h.j)(t.id, n, "mod_menu"))
 						}, [p, t, x, m]);
 					return i.a.createElement(L.b, {
 						dropdownId: `modqueue-item-overflow-${t.id}`,
@@ -4460,7 +4463,7 @@
 							const e = Object(b.a)(t.id),
 								o = e ? g.fb : O.g,
 								r = t.ignoreReports ? "restore_reports" : "ignore_reports",
-								i = e ? Object(h.k)(r, t.id) : Object(h.j)(r, t.id);
+								i = e ? Object(h.l)(r, t.id) : Object(h.k)(r, t.id);
 							n(o(t.id)), s(i)
 						}, [t.id, t.ignoreReports, s, n]),
 						d = (t.modReportsDismissed && t.modReportsDismissed.length || 0) + (t.userReportsDismissed && t.userReportsDismissed.length || 0);
@@ -4579,7 +4582,7 @@
 						postOrCommentId: t.id
 					}))
 				},
-				Re = (e, t) => Object(h.b)(t, e),
+				Re = (e, t) => Object(h.c)(t, e),
 				Ae = e => {
 					let {
 						content: t,
@@ -6280,7 +6283,7 @@
 					super(...arguments), this.tooltipTarget = null, this.setTooltipTargetRef = e => this.tooltipTarget = e, this.onSnoozeButtonClick = () => {
 						const e = this.props.isSnoozed ? c.kc.None : c.kc.Snoozed;
 						this.props.toggleSnooze(e);
-						const t = Object(x.o)(Object(f.a)(this.props.reportedThingId), this.props.isSnoozed, this.props.reportedThingId, this.props.reason);
+						const t = Object(x.p)(Object(f.a)(this.props.reportedThingId), this.props.isSnoozed, this.props.reportedThingId, this.props.reason);
 						this.props.sendEvent(t)
 					}
 				}
@@ -10886,4 +10889,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.2d75042c9858917d646a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.f909f95dae4c64b294db.js.map
