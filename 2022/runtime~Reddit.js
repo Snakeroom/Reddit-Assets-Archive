@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.2e902d1139016618ead1.js
-// Retrieved at 12/13/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.a0e57af776e9cf38d204.js
+// Retrieved at 12/13/2022, 2:00:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
@@ -1475,7 +1475,7 @@
 						EditCommunityDescriptionModal: "c873ce81f916ef552236",
 						EmailCollectionBanner: "205b80ceb6279c3da1c6",
 						EmailVerificationModals: "64850ac3548ad9d8d06d",
-						FramedModal: "5343b14dc32d769db8a6",
+						FramedModal: "666e40ffbea53515aec2",
 						FrontpageLinks: "31a3a1a1579ecc5a7d0c",
 						Geotagging: "a288d685a480df539b01",
 						GlobalModalContainer: "0bb99c903187db666e4d",
@@ -1599,10 +1599,10 @@
 						GovernanceUserPublicPointsDisplay: "8f258273b58add9f7d7f",
 						NftProfileUnit: "62c911d5612b38f8b289",
 						gildActions: "0eaffbf90ade80de705a",
-						ReportFlow: "a5813af24fcfbd7a210b",
+						ReportFlow: "450149bd4b776397a977",
 						CryptoVault: "b4134ff3d3e3f32a0e31",
 						ModModeBanners: "505960f609134c4e2d4f",
-						ReportFlowNew: "0771af74c40d9cd1dc92",
+						ReportFlowNew: "cd62a486928bc5869188",
 						RichTextJsonEmoteTooltip: "ffc5e636bba1ecfb9009",
 						SubredditMentionWithIcon: "dad4585c3e48900ac113",
 						UserAchievementFlair: "70e319ac301af08cfe75",
@@ -1821,4 +1821,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.2e902d1139016618ead1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.a0e57af776e9cf38d204.js.map

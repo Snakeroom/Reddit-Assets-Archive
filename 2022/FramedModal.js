@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedModal.5343b14dc32d769db8a6.js
-// Retrieved at 12/13/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedModal.666e40ffbea53515aec2.js
+// Retrieved at 12/13/2022, 2:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedModal"], {
 		"./src/reddit/components/CrisisFlow/_CrisisFlow.m.less": function(e, s, t) {
@@ -125,14 +125,14 @@
 				n = t("./node_modules/react/index.js"),
 				i = t.n(n),
 				a = t("./src/lib/extractQueryParams/index.ts"),
-				d = t("./src/lib/lessComponent.tsx"),
-				l = t("./src/lib/postParentMessage/index.ts"),
+				l = t("./src/lib/lessComponent.tsx"),
+				d = t("./src/lib/postParentMessage/index.ts"),
 				c = t("./src/reddit/components/CrisisFlow/_CrisisFlow.m.less"),
 				p = t.n(c),
 				m = t("./src/reddit/icons/svgs/Close/index.tsx"),
 				_ = t("./src/reddit/pages/FramedModalPage/index.m.less"),
-				h = t.n(_),
-				E = t("./src/reddit/components/CrisisFlow/async.tsx"),
+				E = t.n(_),
+				h = t("./src/reddit/components/CrisisFlow/async.tsx"),
 				A = t("./src/reddit/components/ReportFlow/new.tsx"),
 				O = t("./src/reddit/models/ReportFlow/index.ts"),
 				u = t("./src/reddit/pages/PaypalFinishPage/async.tsx");
@@ -146,9 +146,9 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const N = d.a.div("Wrapper", h.a),
-				I = d.a.div("CloseWrapper", p.a),
-				T = d.a.wrapped(m.a, "Close", p.a),
+			const N = l.a.div("Wrapper", E.a),
+				I = l.a.div("CloseWrapper", p.a),
+				T = l.a.wrapped(m.a, "Close", p.a),
 				M = /(.*\.reddit\.com|.*(staging|dev)\.snooguts\.net|.*reddit\.local|.*\.snoo\.dev)$/,
 				S = "framedmodal",
 				P = {
@@ -159,7 +159,7 @@
 					PAYPAL_FINISH: "paypal-finish",
 					REPORT: "report"
 				};
-			class y extends i.a.Component {
+			class w extends i.a.Component {
 				constructor(e) {
 					if (super(e), this.element = null, this.iframeWidth = null, this.iframeHeight = null, this.onContentResize = () => {
 							this.maybeResize()
@@ -170,7 +170,7 @@
 					this.parentOrigin = s
 				}
 				postMessage(e) {
-					Object(l.a)(e, S, this.parentOrigin, window.opener || window.parent)
+					Object(d.a)(e, S, this.parentOrigin, window.opener || window.parent)
 				}
 				componentForIframe() {
 					switch (this.modalType) {
@@ -179,7 +179,7 @@
 								onClick: () => this.postMessage({
 									type: "close"
 								})
-							}, i.a.createElement(T, null)), i.a.createElement(E.a, R({
+							}, i.a.createElement(T, null)), i.a.createElement(h.a, R({
 								iframed: !0,
 								username: this.queryParams.author,
 								onCloseReportFlow: () => this.postMessage({
@@ -196,7 +196,6 @@
 							const e = this.queryParams.host_app_name;
 							return i.a.createElement(A.b, {
 								hostAppName: O.c.has(e) ? e : void 0,
-								isSponsored: this.queryParams._p,
 								postId: this.queryParams.post_id,
 								commentId: this.queryParams.comment_id,
 								messageId: this.queryParams.message_id,
@@ -214,7 +213,7 @@
 				}
 				render() {
 					return i.a.createElement("div", {
-						className: h.a.fullScreen,
+						className: E.a.fullScreen,
 						ref: e => this.setElement(e)
 					}, this.componentForIframe())
 				}
@@ -251,7 +250,7 @@
 					}))
 				}
 			}
-			s.default = y
+			s.default = w
 		},
 		"./src/reddit/pages/PaypalFinishPage/async.tsx": function(e, s, t) {
 			"use strict";
@@ -279,4 +278,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedModal.5343b14dc32d769db8a6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedModal.666e40ffbea53515aec2.js.map
