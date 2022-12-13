@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/devPlatform-components-AdminPanel-Utilities-DevPlatformConfig.2a1bbec40486eaf907fc.js
-// Retrieved at 11/29/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/devPlatform-components-AdminPanel-Utilities-DevPlatformConfig.a3ef29d5c08a3d3eaa77.js
+// Retrieved at 12/13/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["devPlatform-components-AdminPanel-Utilities-DevPlatformConfig"], {
 		"./src/devPlatform/components/AdminPanel/Utilities/DevPlatformConfig/index.tsx": function(t, e, a) {
@@ -177,11 +177,19 @@
 					this.unloadSubreddit(), this.loadedSubId = t.id, this.subActors = [];
 					const e = this.loadedMetadata.installedRemoteApps.reduce((t, e) => (t.add(e.hostname.split(".")[0]), t), new Set);
 					return this.debugLog(() => `Connecting to ${this.loadedMetadata.installedRemoteApps.length} remote actors from ${e.size} apps`), this.loadedMetadata.installedRemoteApps.forEach(t => {
-						const e = {
-							hostname: t.hostname,
-							provides: s.h.fromSerializable(t.provides[0])
-						};
-						this.loadActor(e), this.subActors.push(e)
+						const e = t.provides.flatMap(t => {
+								try {
+									return [s.h.fromSerializable(t)]
+								} catch {
+									this.debugLog(() => `Unknown app type, skipping: ${t.fullName}`)
+								}
+								return []
+							}),
+							a = {
+								hostname: t.hostname,
+								provides: e
+							};
+						this.loadActor(a), this.subActors.push(a)
 					}), this.debugLog(() => `Found ${this.loadedMetadata.contextActions.reduce((t,e)=>{var a,o;return t+(null!==(o=null===(a=e.actions)||void 0===a?void 0:a.actions.length)&&void 0!==o?o:0)},0)} actions across ${this.loadedMetadata.contextActions.length} actors`), this.sortedContextActions = this.loadedMetadata.contextActions.sort((t, e) => t.actorHostname.localeCompare(e.actorHostname)).map(t => {
 						var e, a, o;
 						return {
@@ -203,10 +211,10 @@
 				loadActor(t) {
 					const e = t.hostname.split("."),
 						a = {
-							"devvit-installation": s.L.fromPartial({
+							"devvit-installation": s.N.fromPartial({
 								values: [e[0]]
 							}),
-							"devvit-actor": s.L.fromPartial({
+							"devvit-actor": s.N.fromPartial({
 								values: [e[2]]
 							})
 						};
@@ -227,4 +235,4 @@
 		"ignored /drone/src/node_modules/cron-parser/lib fs": function(t, e) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/devPlatform-components-AdminPanel-Utilities-DevPlatformConfig.2a1bbec40486eaf907fc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/devPlatform-components-AdminPanel-Utilities-DevPlatformConfig.a3ef29d5c08a3d3eaa77.js.map

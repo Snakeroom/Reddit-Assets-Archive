@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.d710abce1982044aeb07.js
-// Retrieved at 11/29/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.444564fea6ff3115ce12.js
+// Retrieved at 12/13/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["devPlatform-components-ContextActions"], {
 		"./src/devPlatform/components/ContextActions/index.m.less": function(e, t, o) {},
@@ -9,8 +9,8 @@
 			var n = o("./node_modules/react/index.js"),
 				i = o.n(n),
 				d = o("./node_modules/react-redux/es/index.js"),
-				s = o("./node_modules/reselect/es/index.js"),
-				a = o("./src/reddit/actions/toaster.ts"),
+				a = o("./node_modules/reselect/es/index.js"),
+				s = o("./src/reddit/actions/toaster.ts"),
 				r = o("./src/reddit/components/OverflowMenu/index.tsx"),
 				l = o("./src/reddit/contexts/PageLayer/index.tsx"),
 				c = o("./src/reddit/icons/fonts/index.tsx"),
@@ -21,8 +21,8 @@
 				h = o("./node_modules/@devvit/protos/index.js"),
 				b = o("./src/reddit/models/Vote/index.ts"),
 				g = e => {
-					var t, o, n, i, d, s, a, r, l, c, u, m, p, v, g, f, w, x;
-					return h.E.fromPartial({
+					var t, o, n, i, d, a, s, r, l, c, u, m, p, v, g, f, w, x;
+					return h.F.fromPartial({
 						approved: e.isApproved,
 						approvedAtUtc: null !== (t = e.approvedAtUTC) && void 0 !== t ? t : void 0,
 						approvedBy: null !== (o = e.approvedBy) && void 0 !== o ? o : void 0,
@@ -33,10 +33,10 @@
 						bannedAtUtc: null !== (i = e.bannedAtUTC) && void 0 !== i ? i : void 0,
 						bannedBy: e.bannedBy ? String(e.bannedBy) : void 0,
 						body: null !== (d = e.bodyMD) && void 0 !== d ? d : "",
-						bodyHtml: null !== (s = e.body) && void 0 !== s ? s : "",
+						bodyHtml: null !== (a = e.body) && void 0 !== a ? a : "",
 						canGild: e.isGildable,
 						collapsed: e.collapsed,
-						collapsedBecauseCrowdControl: null !== (a = e.collapsedBecauseCrowdControl) && void 0 !== a && a,
+						collapsedBecauseCrowdControl: null !== (s = e.collapsedBecauseCrowdControl) && void 0 !== s && s,
 						collapsedReason: null !== (r = e.collapsedReason) && void 0 !== r ? r : void 0,
 						collapsedReasonCode: null !== (l = e.collapsedReasonCode) && void 0 !== l ? l : void 0,
 						commentType: null !== (c = e.commentType) && void 0 !== c ? c : void 0,
@@ -73,8 +73,8 @@
 				f = o("./src/reddit/models/Flair/index.ts"),
 				w = o("./src/reddit/models/Media/index.ts"),
 				x = e => {
-					var t, o, n, i, d, s, a, r, l, c, u, m, p, v, g, x, A, O, y;
-					return h.E.fromPartial({
+					var t, o, n, i, d, a, s, r, l, c, u, m, p, v, g, x, A, O, y;
+					return h.F.fromPartial({
 						approved: e.isApproved,
 						approvedAtUtc: null !== (t = e.approvedAtUTC) && void 0 !== t ? t : void 0,
 						approvedBy: null !== (o = e.approvedBy) && void 0 !== o ? o : void 0,
@@ -83,8 +83,8 @@
 						authorFlairBackgroundColor: null === (n = e.flair[0]) || void 0 === n ? void 0 : n.backgroundColor,
 						authorFlairCssClass: null === (i = e.flair[0]) || void 0 === i ? void 0 : i.cssClass,
 						authorFlairRichtext: (null === (d = e.flair[0]) || void 0 === d ? void 0 : d.type) === f.f.Richtext ? e.flair[0].richtext : void 0,
-						authorFlairTemplateId: null === (s = e.flair[0]) || void 0 === s ? void 0 : s.templateId,
-						authorFlairText: (null === (a = e.flair[0]) || void 0 === a ? void 0 : a.type) === f.f.Text ? e.flair[0].text : void 0,
+						authorFlairTemplateId: null === (a = e.flair[0]) || void 0 === a ? void 0 : a.templateId,
+						authorFlairText: (null === (s = e.flair[0]) || void 0 === s ? void 0 : s.type) === f.f.Text ? e.flair[0].text : void 0,
 						authorFlairTextColor: null === (r = e.flair[0]) || void 0 === r ? void 0 : r.textColor,
 						authorFlairType: null === (l = e.flair[0]) || void 0 === l ? void 0 : l.type,
 						authorFullname: e.authorId,
@@ -130,7 +130,7 @@
 						url: null === (y = e.source) || void 0 === y ? void 0 : y.url
 					})
 				},
-				A = e => h.M.fromPartial({
+				A = e => h.O.fromPartial({
 					freeFormReports: e.freeFormReports,
 					communityIcon: e.communityIcon,
 					displayName: e.name,
@@ -168,9 +168,9 @@
 				onOverlayClick: T(e),
 				withOverlay: !0
 			}));
-			const M = Object(d.b)(() => Object(s.c)({}), e => ({
+			const M = Object(d.b)(() => Object(a.c)({}), e => ({
 					showToast: (t, o) => {
-						e(Object(a.f)(Object(a.e)(t, o)))
+						e(Object(s.f)(Object(s.e)(t, o)))
 					},
 					onShowUserInput: (t, o) => {
 						e(Object(O.b)({
@@ -189,38 +189,38 @@
 					moderator: t,
 					contextType: o,
 					contextData: n,
-					showToast: s,
-					onShowUserInput: a
+					showToast: a,
+					onShowUserInput: s
 				} = e, p = Object(d.e)(m.a), b = Object(l.gb)(), g = Object(d.e)(e => Object(l.s)(e, {
 					pageLayer: b
 				}));
 				let f = [];
 				p && g && (y.a.init(), f = y.a.loadSubreddit(g));
 				const w = (e, t) => {
-						a(e, t)
+						s(e, t)
 					},
 					x = [];
 				return f.forEach(e => {
 					var d;
 					return null === (d = e.actions) || void 0 === d ? void 0 : d.actions.filter(((e, t) => o => {
-						var n, i, d, s, a;
+						var n, i, d, a, s;
 						if (t && !(null === (n = o.users) || void 0 === n ? void 0 : n.moderator) || !t && (null === (i = o.users) || void 0 === i ? void 0 : i.moderator)) return !1;
 						switch (e) {
 							case h.g.POST:
 								return !!(null === (d = o.contexts) || void 0 === d ? void 0 : d.post);
 							case h.g.COMMENT:
-								return !!(null === (s = o.contexts) || void 0 === s ? void 0 : s.comment);
+								return !!(null === (a = o.contexts) || void 0 === a ? void 0 : a.comment);
 							case h.g.SUBREDDIT:
-								return !!(null === (a = o.contexts) || void 0 === a ? void 0 : a.subreddit);
+								return !!(null === (s = o.contexts) || void 0 === s ? void 0 : s.subreddit);
 							default:
 								return !1
 						}
 					})(o, t)).forEach(t => {
 						const d = function(e, t, o, n, i, d) {
 							return () => {
-								const s = d => {
-									var s, a;
-									return null === (a = null === (s = y.a.getActor(e)) || void 0 === s ? void 0 : s.As(h.e)) || void 0 === a ? void 0 : a.OnAction(h.f.fromPartial({
+								const a = d => {
+									var a, s;
+									return null === (s = null === (a = y.a.getActor(e)) || void 0 === a ? void 0 : a.As(h.e)) || void 0 === s ? void 0 : s.OnAction(h.f.fromPartial({
 										actionId: t.actionId,
 										context: o,
 										...P(o, n),
@@ -230,9 +230,9 @@
 										i(e.message, t)
 									})
 								};
-								t.userInput ? d(t, s) : s()
+								t.userInput ? d(t, a) : a()
 							}
-						}(e.actorHostname, t, o, n, s, w);
+						}(e.actorHostname, t, o, n, a, w);
 						x.push(i.a.createElement(r.a, {
 							displayText: t.name,
 							key: `${e.actorHostname}.${t.actionId}`,
@@ -255,12 +255,12 @@
 			var n = o("./src/lib/initializeClient/installReducer.ts"),
 				i = o("./src/lib/makeActionCreator/index.ts"),
 				d = o("./src/reddit/actions/modal.ts"),
-				s = o("./src/reddit/constants/modals.ts"),
-				a = o("./src/reddit/reducers/features/devPlatform/index.ts"),
+				a = o("./src/reddit/constants/modals.ts"),
+				s = o("./src/reddit/reducers/features/devPlatform/index.ts"),
 				r = o("./src/devPlatform/constants.ts");
 			Object(n.a)({
 				features: {
-					devPlatform: a.a
+					devPlatform: s.a
 				}
 			});
 			const l = Object(i.a)(r.e),
@@ -273,11 +273,11 @@
 						e(l({
 							action: t,
 							onAction: o
-						})), e(Object(d.h)(s.a.DEV_PLATFORM_USER_INPUT_MODAL))
+						})), e(Object(d.h)(a.a.DEV_PLATFORM_USER_INPUT_MODAL))
 					}
 				},
 				u = () => async e => {
-					e(Object(d.g)(s.a.DEV_PLATFORM_USER_INPUT_MODAL))
+					e(Object(d.g)(a.a.DEV_PLATFORM_USER_INPUT_MODAL))
 				}
 		},
 		"./src/devPlatform/singleton/runtime.ts": function(e, t, o) {
@@ -286,14 +286,14 @@
 			var n = o("./src/config.ts"),
 				i = o("./node_modules/@devvit/protos/index.js"),
 				d = o("./node_modules/@devvit/runtimes/platform/browser/BrowserRuntime.js"),
-				s = o("./src/devPlatform/constants.ts"),
-				a = o("./node_modules/@devvit/runtimes/worker.bootstrap.cjs"),
+				a = o("./src/devPlatform/constants.ts"),
+				s = o("./node_modules/@devvit/runtimes/worker.bootstrap.cjs"),
 				r = o("./node_modules/@devvit/runtimes/worker.echo.cjs"),
 				l = o("./node_modules/@devvit/runtimes/worker.redditapi.cjs"),
 				c = o("./node_modules/@devvit/runtimes/worker.supervisor.cjs"),
 				u = o("./src/lib/localStorageAvailable/index.ts");
 			const m = new Map([
-				["bootstrap", a.a],
+				["bootstrap", s.a],
 				["supervisor", c.a],
 				["redditapi", l.a],
 				["echo", r.a]
@@ -311,9 +311,9 @@
 				constructor() {
 					var e;
 					if (this.runtime = new d.a(m), this.gatewayUrl = "", this.loadedSubId = "", this.subActors = [], this.loadedMetadata = null, this.mockMetadata = null, this.sortedContextActions = [], this.localStorageAvailable = Object(u.a)(), this.runtimeInitialized = !1, this.debugLogging = !1, this.localStorageAvailable) {
-						this.gatewayUrl = null !== (e = localStorage.getItem(s.b)) && void 0 !== e ? e : n.a.devPlatformGatewayUrl;
-						const t = localStorage.getItem(s.c);
-						t && (this.mockMetadata = JSON.parse(t)), this.debugLogging = "true" === localStorage.getItem(s.d)
+						this.gatewayUrl = null !== (e = localStorage.getItem(a.b)) && void 0 !== e ? e : n.a.devPlatformGatewayUrl;
+						const t = localStorage.getItem(a.c);
+						t && (this.mockMetadata = JSON.parse(t)), this.debugLogging = "true" === localStorage.getItem(a.d)
 					}
 				}
 				init() {
@@ -323,16 +323,16 @@
 					return this.gatewayUrl
 				}
 				setGatewayUrl(e) {
-					return this.gatewayUrl = e, this.localStorageAvailable && (e === n.a.devPlatformGatewayUrl ? localStorage.removeItem(s.b) : localStorage.setItem(s.b, e)), this.reloadSubreddit(), this.subActors.length
+					return this.gatewayUrl = e, this.localStorageAvailable && (e === n.a.devPlatformGatewayUrl ? localStorage.removeItem(a.b) : localStorage.setItem(a.b, e)), this.reloadSubreddit(), this.subActors.length
 				}
 				getDebugLogging() {
 					return this.debugLogging
 				}
 				setDebugLogging(e) {
-					this.debugLogging = e, localStorage.setItem(s.d, e ? "true" : "false")
+					this.debugLogging = e, localStorage.setItem(a.d, e ? "true" : "false")
 				}
 				loadMockData(e) {
-					this.mockMetadata = e, this.localStorageAvailable && (e ? localStorage.setItem(s.c, JSON.stringify(e)) : localStorage.removeItem(s.c))
+					this.mockMetadata = e, this.localStorageAvailable && (e ? localStorage.setItem(a.c, JSON.stringify(e)) : localStorage.removeItem(a.c))
 				}
 				loadSubreddit(e) {
 					if (e.id === this.loadedSubId) return this.sortedContextActions;
@@ -349,11 +349,19 @@
 					this.unloadSubreddit(), this.loadedSubId = e.id, this.subActors = [];
 					const t = this.loadedMetadata.installedRemoteApps.reduce((e, t) => (e.add(t.hostname.split(".")[0]), e), new Set);
 					return this.debugLog(() => `Connecting to ${this.loadedMetadata.installedRemoteApps.length} remote actors from ${t.size} apps`), this.loadedMetadata.installedRemoteApps.forEach(e => {
-						const t = {
-							hostname: e.hostname,
-							provides: i.h.fromSerializable(e.provides[0])
-						};
-						this.loadActor(t), this.subActors.push(t)
+						const t = e.provides.flatMap(e => {
+								try {
+									return [i.h.fromSerializable(e)]
+								} catch {
+									this.debugLog(() => `Unknown app type, skipping: ${e.fullName}`)
+								}
+								return []
+							}),
+							o = {
+								hostname: e.hostname,
+								provides: t
+							};
+						this.loadActor(o), this.subActors.push(o)
 					}), this.debugLog(() => `Found ${this.loadedMetadata.contextActions.reduce((e,t)=>{var o,n;return e+(null!==(n=null===(o=t.actions)||void 0===o?void 0:o.actions.length)&&void 0!==n?n:0)},0)} actions across ${this.loadedMetadata.contextActions.length} actors`), this.sortedContextActions = this.loadedMetadata.contextActions.sort((e, t) => e.actorHostname.localeCompare(t.actorHostname)).map(e => {
 						var t, o, n;
 						return {
@@ -375,10 +383,10 @@
 				loadActor(e) {
 					const t = e.hostname.split("."),
 						o = {
-							"devvit-installation": i.L.fromPartial({
+							"devvit-installation": i.N.fromPartial({
 								values: [t[0]]
 							}),
-							"devvit-actor": i.L.fromPartial({
+							"devvit-actor": i.N.fromPartial({
 								values: [t[2]]
 							})
 						};
@@ -416,7 +424,7 @@
 			o.d(t, "b", (function() {
 				return d
 			})), o.d(t, "a", (function() {
-				return s
+				return a
 			}));
 			const n = {},
 				i = () => null;
@@ -426,7 +434,7 @@
 				n[e] = t
 			}
 
-			function s(e) {
+			function a(e) {
 				return e && e in n ? n[e] : i
 			}
 		},
@@ -451,8 +459,8 @@
 			var n = o("./node_modules/fbt/lib/FbtPublic.js"),
 				i = o("./node_modules/react/index.js"),
 				d = o.n(i),
-				s = o("./node_modules/react-redux/es/index.js"),
-				a = o("./node_modules/reselect/es/index.js"),
+				a = o("./node_modules/react-redux/es/index.js"),
+				s = o("./node_modules/reselect/es/index.js"),
 				r = o("./src/lib/classNames/index.ts"),
 				l = o("./src/lib/lessComponent.tsx"),
 				c = o("./src/reddit/actions/tooltip.ts"),
@@ -468,7 +476,7 @@
 				x = Object(u.a)(w),
 				A = l.a.button("MenuButton", f.a),
 				O = l.a.wrapped(p.b, "DropdownRow", f.a),
-				y = Object(a.c)({
+				y = Object(s.c)({
 					dropdownIsOpen: (e, t) => {
 						let {
 							dropdownId: o
@@ -476,7 +484,7 @@
 						return Object(h.b)(o)(e)
 					}
 				}),
-				S = Object(s.b)(y, (e, t) => {
+				S = Object(a.b)(y, (e, t) => {
 					let {
 						dropdownId: o
 					} = t;
@@ -524,8 +532,8 @@
 			var n = o("./node_modules/react/index.js"),
 				i = o.n(n),
 				d = o("./src/higherOrderComponents/asTooltip.tsx"),
-				s = o("./src/reddit/constants/elementIds.ts"),
-				a = o("./src/reddit/contexts/InsideOverlay.tsx");
+				a = o("./src/reddit/constants/elementIds.ts"),
+				s = o("./src/reddit/contexts/InsideOverlay.tsx");
 
 			function r() {
 				return (r = Object.assign || function(e) {
@@ -547,7 +555,7 @@
 					}
 					componentDidMount() {
 						if (this.props.isOverlay) {
-							const e = document.getElementById(s.e);
+							const e = document.getElementById(a.e);
 							this.setState({
 								container: e
 							})
@@ -560,7 +568,7 @@
 						}))
 					}
 				}
-				return Object(a.b)(n)
+				return Object(s.b)(n)
 			}
 		},
 		"./src/reddit/reducers/features/devPlatform/index.ts": function(e, t, o) {
@@ -573,7 +581,7 @@
 					devPlatform: l
 				}
 			});
-			var s = function() {
+			var a = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				const o = t.payload;
@@ -584,7 +592,7 @@
 						return e
 				}
 			};
-			var a = function() {
+			var s = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					const o = t.payload;
@@ -596,8 +604,8 @@
 					}
 				},
 				r = Object(n.c)({
-					action: s,
-					onAction: a
+					action: a,
+					onAction: s
 				}),
 				l = t.a = Object(n.c)({
 					userInputModal: r
@@ -606,4 +614,4 @@
 		"ignored /drone/src/node_modules/cron-parser/lib fs": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.d710abce1982044aeb07.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.444564fea6ff3115ce12.js.map

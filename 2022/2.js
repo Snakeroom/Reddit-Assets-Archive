@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/2.2b54351c052632212d69.js
-// Retrieved at 11/15/2022, 7:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/2.b11a12069ccc144577f5.js
+// Retrieved at 12/13/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[2], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -79,7 +79,7 @@
 				O = u.a.div("ConfigFormStringRow", k.a),
 				R = u.a.div("NumberInputWrapper", k.a),
 				j = u.a.div("ConfigFormFooterWrapper", k.a);
-			class M extends a.a.Component {
+			class T extends a.a.Component {
 				constructor(e) {
 					super(e), this.state = {
 						values: new Map
@@ -108,7 +108,7 @@
 						configForm: l,
 						onCloseClick: i
 					} = this.props, u = [];
-					for (const c of l.fields) switch (Object(d.R)(c.fieldType)) {
+					for (const c of l.fields) switch (Object(d.T)(c.fieldType)) {
 						case d.c.STRING:
 							u.push(a.a.createElement(O, {
 								key: c.key
@@ -167,7 +167,7 @@
 					})))))
 				}
 			}
-			var T = M;
+			var M = T;
 			const F = Object(o.c)({});
 			class D extends a.a.Component {
 				constructor() {
@@ -199,7 +199,7 @@
 						},
 						closeUserInputModal: s
 					} = this.props;
-					return a.a.createElement(T, {
+					return a.a.createElement(M, {
 						title: e,
 						description: t,
 						configForm: n,
@@ -817,4 +817,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/2.2b54351c052632212d69.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/2.b11a12069ccc144577f5.js.map
