@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.2512fa807251b1025db7.js
-// Retrieved at 12/13/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.db7c2efd1e4f3456eb01.js
+// Retrieved at 12/13/2022, 7:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -73,7 +73,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(u.pg)(e.category_name)
+									displayText: Object(u.qg)(e.category_name)
 								};
 								n.push(s.id), t[s.id] = s
 							}), {
@@ -1808,8 +1808,8 @@
 				G = n("./src/reddit/components/Hovercards/SubredditHovercard/index.tsx"),
 				H = n("./src/reddit/components/SubredditIcon/index.tsx"),
 				z = n("./src/reddit/components/SubscribeButton/Inline.tsx"),
-				Q = n("./src/reddit/constants/posts.ts"),
-				q = n("./src/reddit/controls/Button/index.tsx"),
+				q = n("./src/reddit/constants/posts.ts"),
+				Q = n("./src/reddit/controls/Button/index.tsx"),
 				J = n("./src/reddit/icons/fonts/index.tsx"),
 				K = n("./src/reddit/selectors/experiments/shredditParity.ts"),
 				V = n("./src/reddit/components/TopSubredditsWidget/index.m.less"),
@@ -1902,10 +1902,10 @@
 						}))(e.subreddit.name, t),
 						identifier: {
 							name: e.subreddit.name,
-							type: Q.a.SUBREDDIT
+							type: q.a.SUBREDDIT
 						},
-						size: q.d.XSP,
-						priority: t ? q.c.Secondary : void 0,
+						size: Q.d.XSP,
+						priority: t ? Q.c.Secondary : void 0,
 						rplStyle: t
 					})))
 				};
@@ -2130,7 +2130,7 @@
 						className: Object(c.a)(ue.a.header, s)
 					}, i.a.createElement("h2", null, r || he._("Categories", null, {
 						hk: "46zLMb"
-					}))), this.renderCategoryList(), o && i.a.createElement(q.r, {
+					}))), this.renderCategoryList(), o && i.a.createElement(Q.r, {
 						className: Object(c.a)(ue.a.button, e),
 						onClick: this.toggleExpanded
 					}, o && !this.state.isExpanded ? he._("Show More", null, {
@@ -2246,7 +2246,7 @@
 				}))),
 				Ae = e => {
 					const t = Object(o.e)(K.a),
-						n = e.isSecondaryButton || t ? q.q : q.n,
+						n = e.isSecondaryButton || t ? Q.q : Q.n,
 						r = e.linkColor ? {
 							backgroundColor: e.linkColor,
 							color: "white"
@@ -2357,8 +2357,8 @@
 					}))
 				},
 				ze = n("./src/reddit/contexts/ApiContext.tsx"),
-				Qe = n("./src/reddit/endpoints/subreddit/local.ts"),
-				qe = n("./src/reddit/endpoints/subreddit/topSubreddits.ts"),
+				qe = n("./src/reddit/endpoints/subreddit/local.ts"),
+				Qe = n("./src/reddit/endpoints/subreddit/topSubreddits.ts"),
 				Je = n("./src/reddit/helpers/graphql/normalizeTopSubredditsFromGql/index.ts");
 
 			function Ke() {
@@ -2380,7 +2380,7 @@
 					}))
 				})),
 				Ze = async (e, t) => {
-					const n = await Object(qe.a)(e, t);
+					const n = await Object(Qe.a)(e, t);
 					if (n && n.ok) {
 						const e = n.body,
 							t = e && e.data && e.data.subredditLeaderboard;
@@ -2408,7 +2408,7 @@
 						first: t
 					} = this.props, n = e && e.id;
 					if (n === p.l) {
-						const e = await Object(Qe.b)(this.props.gqlContext(), {
+						const e = await Object(qe.b)(this.props.gqlContext(), {
 							first: t
 						});
 						if (!e) return;
@@ -2495,7 +2495,7 @@
 					} = t;
 					return Object(b.b)(n.params.categoryName || "")
 				},
-				at = Object(m.og)(p.i),
+				at = Object(m.pg)(p.i),
 				it = Object(d.c)({
 					categories: e => Object(tt.b)(e, {
 						categoriesOrder: at
@@ -2648,4 +2648,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.2512fa807251b1025db7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.db7c2efd1e4f3456eb01.js.map

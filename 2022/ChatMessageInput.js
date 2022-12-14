@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.c66fa8b6cf1afd499602.js
-// Retrieved at 12/13/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.f3db0d4fdb9f036d459a.js
+// Retrieved at 12/13/2022, 7:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -1082,7 +1082,9 @@
 				}, [n, s]);
 				const r = Math.floor(n / 60),
 					c = n - 60 * r;
-				return i.a.createElement("span", null, r, ":", c > 9 ? c : `0${c}`)
+				return i.a.createElement("span", {
+					"data-testid": "inline-timer-text"
+				}, r, ":", c > 9 ? c : `0${c}`)
 			};
 			var v = s("./src/reddit/components/RichTextEditor/index.tsx"),
 				E = s("./src/reddit/components/RichTextEditor/RTEState/index.tsx"),
@@ -1721,4 +1723,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.c66fa8b6cf1afd499602.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.f3db0d4fdb9f036d459a.js.map
