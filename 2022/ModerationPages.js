@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.cf66852c2d2bbc647b49.js
-// Retrieved at 12/15/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.536fab0e1a8dd3bdf731.js
+// Retrieved at 12/15/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~PostCreation~ProfileComments~ProfileOverview~ProfilePrivate~Stan~7e460386", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~627063c1", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -8304,7 +8304,7 @@
 					} else te && ue ? await Object(d.i)({
 						subredditId: ue
 					})(t, n, i) : ne && C ? await Object(_.eventPostsRequested)(C)(t, n, i) : Q && await Q(Oe, k)(t, n, i);
-					C && ue && !V.subreddits.rules[ue] && await L.o(C)(t, n, i), t(R.n({
+					C && ue && !V.subreddits.rules[ue] && await L.o(C)(t, n, i), t(R.m({
 						title: ae
 					}))
 				}
@@ -8496,7 +8496,7 @@
 						});
 						c && o && o.subredditId === c.id || t(Object(s.c)(Object(r.a)(e.url, ["collection"])))
 					}
-					t(p.n({
+					t(p.m({
 						title: R(n())
 					}))
 				}
@@ -8853,7 +8853,7 @@
 							const e = Object(ne.s)(n(), {
 								profileName: S
 							});
-							t(p.n({
+							t(p.m({
 								title: e
 							}))
 						}
@@ -8894,7 +8894,7 @@
 						profileName: S
 					})) : L && !F && t(Object(d.p)({
 						profileName: S
-					})), void t(p.o(D.status));
+					})), void t(p.n(D.status));
 					if (L) {
 						const {
 							data: e
@@ -9683,7 +9683,7 @@
 					isPopular: Xe,
 					state: Le,
 					isInDevPlatformExperiment: At
-				}), i(L.o(yt.status));
+				}), i(L.n(yt.status));
 				const Mt = `error-${e}`,
 					Lt = Ye || Rt;
 				if (yt.ok && Lt || Xe && Pt) {
@@ -9937,9 +9937,9 @@
 				if (T || N && !w && !t) {
 					if (D(g, A) && n(V.i(A)), N) {
 						const t = Pt(s(), b, a, m);
-						n(L.n({
+						n(L.m({
 							title: t
-						})), (null === (r = g.listings.postOrder.correlationIds) || void 0 === r ? void 0 : r[k]) && n(L.p({
+						})), (null === (r = g.listings.postOrder.correlationIds) || void 0 === r ? void 0 : r[k]) && n(L.o({
 							correlationId: g.listings.postOrder.correlationIds[k]
 						})), Object(ke.g)(s(), n, e), window.addEventListener("load", () => {
 							n(Object(I.p)())
@@ -9998,7 +9998,7 @@
 				}
 				D(s(), A) && n(V.i(A)), Object(ke.g)(s(), n, e);
 				const z = Pt(s(), b);
-				n(L.n({
+				n(L.m({
 					title: z
 				})), n(ne())
 			}, Mt = "PAGE__SUBREDDIT_INVALIDATE_LISTING", Lt = Object(b.a)(Mt)
@@ -10953,7 +10953,7 @@
 						params: s,
 						queryParams: r
 					} = e, o = s.subredditName || N.e;
-					t(u.n({
+					t(u.m({
 						title: s.wikiPageName ? `${s.wikiPageName} - ${o}` : `wiki - ${o}`
 					})), await t(Ze(s, r));
 					const i = Object(F.C)(n(), {
@@ -69869,7 +69869,7 @@
 						} = t.payload;
 						return e.includes(n) ? e : [...e, n]
 					}
-					case a.g:
+					case a.f:
 						return [];
 					default:
 						return e
@@ -77275,4 +77275,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.cf66852c2d2bbc647b49.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.536fab0e1a8dd3bdf731.js.map

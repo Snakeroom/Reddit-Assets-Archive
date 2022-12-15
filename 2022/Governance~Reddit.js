@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.cb6d42f9a25c8a927732.js
-// Retrieved at 12/15/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.df53eb58be8c9368e174.js
+// Retrieved at 12/15/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -1786,14 +1786,14 @@
 				}
 			}, S = () => async (e, t) => {
 				const n = t();
-				e(d.n({
+				e(d.m({
 					title: o.b()
 				})), Object(g.S)(n) || await e(m.s())
-			}, T = () => async e => e(d.n({
+			}, T = () => async e => e(d.m({
 				title: o.b()
 			})), D = e => async (t, r) => {
 				const s = r();
-				t(d.n({
+				t(d.m({
 					title: o.m()
 				})), Object(g.S)(s) || await t(m.s());
 				const a = Object(g.S)(s);
@@ -12297,7 +12297,7 @@
 				}
 			};
 			var Ic = function() {
-				let e = !(arguments.length > 0 && void 0 !== arguments[0]) || arguments[0],
+				let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case D.b:
@@ -15471,47 +15471,46 @@
 			var lp = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : cp,
 					t = arguments.length > 1 ? arguments[1] : void 0;
-				var n;
 				switch (t.type) {
 					case l.b: {
-						const r = (null === (n = e.currentPage) || void 0 === n ? void 0 : n.isInitialPage) ? null : e.currentPage,
-							s = t.payload,
+						const n = e.currentPage,
+							r = t.payload,
 							{
-								routeMatch: a,
-								location: o
-							} = s,
+								routeMatch: s,
+								location: a
+							} = r,
 							{
-								key: c
-							} = o;
-						if (void 0 === c) return e;
-						const i = Object(ap.e)(o),
-							d = a ? dp(c, i, a, o) : ip(c, i);
+								key: o
+							} = a;
+						if (void 0 === o) return e;
+						const c = Object(ap.e)(a),
+							i = s ? dp(o, c, s, a) : ip(o, c);
 						let {
-							referrers: l
+							referrers: d
 						} = e;
-						if ("PUSH" === s.action) {
-							const e = r && r.url || "";
-							l = {
-								...l,
-								[c]: e
+						if ("PUSH" === r.action) {
+							const e = n && n.url || "";
+							d = {
+								...d,
+								[o]: e
 							}
-						} else if ("REPLACE" === s.action && r && l[r.key]) {
+						} else if ("REPLACE" === r.action && n && d[n.key]) {
 							const {
-								[r.key]: e, ...t
-							} = l;
-							l = {
+								[n.key]: e, ...t
+							} = d;
+							d = {
 								...t,
-								[c]: e
+								[o]: e
 							}
 						}
 						return {
 							...e,
-							referrers: l,
-							currentPage: d,
-							lastPage: r
+							referrers: d,
+							currentPage: i,
+							lastPage: n
 						}
 					}
-					case l.g: {
+					case l.f: {
 						const n = t.payload,
 							{
 								key: r,
@@ -15525,26 +15524,7 @@
 							}
 						}
 					}
-					case l.c: {
-						const {
-							routeMatch: n,
-							location: r
-						} = t.payload, {
-							key: s
-						} = r;
-						if (void 0 === s) return e;
-						const a = Object(ap.e)(r),
-							o = n ? dp(s, a, n, r) : ip(s, a);
-						return {
-							...e,
-							currentPage: {
-								...e.currentPage,
-								...o,
-								isInitialPage: !0
-							}
-						}
-					}
-					case l.h: {
+					case l.g: {
 						if (!e.currentPage) return e;
 						const n = t.payload,
 							r = {
@@ -15559,9 +15539,9 @@
 					case he.b:
 					case he.f:
 						return !e.currentPage || t.payload.postMeta, e;
-					case l.d:
+					case l.c:
 						return e;
-					case l.f: {
+					case l.e: {
 						const {
 							allowNavigationCallback: n
 						} = t.payload;
@@ -15570,7 +15550,7 @@
 							allowNavigationCallback: n
 						}
 					}
-					case l.e:
+					case l.d:
 						return {
 							...e, allowNavigationCallback: null
 						};
@@ -25641,4 +25621,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.cb6d42f9a25c8a927732.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.df53eb58be8c9368e174.js.map
