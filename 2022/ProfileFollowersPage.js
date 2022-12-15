@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.85f05ae334c23168bab4.js
-// Retrieved at 12/15/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.dea4fb015dcdcbf9e577.js
+// Retrieved at 12/15/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -784,7 +784,7 @@
 						key: e
 					})), v.body.reason === P.a.DeletedProfile && r(Object(w.v)({
 						profileName: t
-					})), r(Object(j.o)(v.status))
+					})), r(Object(j.n)(v.status))
 				}, Te = e => async (t, s, r) => {
 					const {
 						queryParams: l,
@@ -814,7 +814,7 @@
 						F = Object(C.Cb)(P, {
 							userName: p
 						}).id;
-					t(j.n({
+					t(j.m({
 						title: Re(s(), p)
 					})), Object(C.U)(P) && Object(C.Y)(P, p) && t(Object(O.startChangeUsernameFlow)());
 					const M = [t(Object(d.q)()), t(k.b(g, R)), t(N.b(g)), t(E.o(p)), t(N.i(p)), t(_.d(p, F))];
@@ -6139,4 +6139,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.85f05ae334c23168bab4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.dea4fb015dcdcbf9e577.js.map

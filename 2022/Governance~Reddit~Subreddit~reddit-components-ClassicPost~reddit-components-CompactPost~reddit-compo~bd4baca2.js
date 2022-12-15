@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.1c87583924e8f1a5ae62.js
-// Retrieved at 12/15/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.fa9d6c51446a78a40ccc.js
+// Retrieved at 12/15/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, s) {
@@ -446,7 +446,7 @@
 							const e = Object(se.s)(s(), {
 								profileName: P
 							});
-							t(p.n({
+							t(p.m({
 								title: e
 							}))
 						}
@@ -487,7 +487,7 @@
 						profileName: P
 					})) : N && !M && t(Object(d.p)({
 						profileName: P
-					})), void t(p.o(R.status));
+					})), void t(p.n(R.status));
 					if (N) {
 						const {
 							data: e
@@ -4142,4 +4142,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.1c87583924e8f1a5ae62.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.fa9d6c51446a78a40ccc.js.map
