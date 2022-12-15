@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~shreddit-player.64c7ce0358a17a1c8254.js
-// Retrieved at 12/13/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~shreddit-player.1eb9b975495bf8377868.js
+// Retrieved at 12/15/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~shreddit-player"], {
 		"./node_modules/@reddit/faceplate/lib/custom-event.js": function(e, t, r) {
@@ -1748,7 +1748,7 @@
 						this._mediaPaused = e, this._handleIdleChange()
 					}));
 					["pointerdown", "pointermove", "focus", "keydown"].forEach(e => {
-						const t = Object(Q.e)(this._host, e, oe(this._handleIdleChange.bind(this), 250, !0));
+						const t = Object(Q.e)(this._host, e, oe(this._handleIdleChange.bind(this), 1, !0));
 						this._disposal.add(t)
 					});
 					const t = Object(Q.e)(this._host, "mouseenter", () => {
@@ -4493,7 +4493,7 @@
    */
 
   .scrim {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), transparent, rgba(0, 0, 0, 0.25));
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4) 40px, transparent 80px);
   }
 
   vds-media[paused] .scrim,
@@ -4526,6 +4526,17 @@
   .slider-thumb-container {
     left: var(--vds-fill-percent);
     will-change: left;
+  }
+
+  /*
+   * -------------------------------------------------------------------------------------------
+   * Time
+   * -------------------------------------------------------------------------------------------
+   */
+
+  .vds-time-spacer {
+    /* This works around a bug where the element becomes LESS opaque when opacity equals 1. */
+    opacity: 0.99;
   }
 
   /*
@@ -4813,7 +4824,11 @@
                 </div>
               </vds-time-slider>
 
-              <vds-time type="current" class="flex font-semibold ml-2xs"></vds-time>
+              <span class="flex ml-2xs font-semibold">
+                <vds-time type="current"></vds-time>
+                <span class="vds-time-spacer px-2xs">/</span>
+                <vds-time type="duration"></vds-time>
+              </span>
 
               ${i?n.c`
                     <vds-quality-switcher
@@ -16035,4 +16050,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~shreddit-player.64c7ce0358a17a1c8254.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~shreddit-player.1eb9b975495bf8377868.js.map
