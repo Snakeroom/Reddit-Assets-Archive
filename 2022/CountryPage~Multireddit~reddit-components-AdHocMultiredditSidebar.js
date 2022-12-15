@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.0614258dbe5aca63ee51.js
-// Retrieved at 12/13/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.e3cddae9353ef4a3f4e3.js
+// Retrieved at 12/15/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./node_modules/lodash/take.js": function(e, t, i) {
@@ -750,7 +750,7 @@
 						C = h.listings.postOrder.api.pending[y],
 						k = p.K in e.queryParams && e.queryParams[p.K].toUpperCase() || "",
 						P = k in l.oc && l.oc[k];
-					if (C || g && !j && !t) return void(g && (i(u.m({
+					if (C || g && !j && !t) return void(g && (i(u.n({
 						title: Object(E.f)(r(), m)
 					})), h.sidebarPromotedPosts.firstFetch || i(Object(v.b)(I.a.MULTIREDDIT))));
 					await i(T(y, a, s, {
@@ -760,7 +760,7 @@
 						t: Object(x.a)(c, P)
 					}, !0));
 					const M = r();
-					Object(E.d)(M, m) && i(u.m({
+					Object(E.d)(M, m) && i(u.n({
 						title: Object(E.f)(r(), m)
 					})), Object(_.e)(M, i, e)
 				}
@@ -2572,4 +2572,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.0614258dbe5aca63ee51.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.e3cddae9353ef4a3f4e3.js.map

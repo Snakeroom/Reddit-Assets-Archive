@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage.7bec0221a247a350f727.js
-// Retrieved at 12/13/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage.982bc891dd5c06de3271.js
+// Retrieved at 12/15/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage"], {
 		"./src/reddit/actions/pages/countrySite/index.ts": function(e, t, s) {
@@ -151,7 +151,7 @@
 							countryCode: o,
 							languageCode: u
 						});
-					t(Object(l.m)({
+					t(Object(l.n)({
 						title: Object(a.a)(n, Object(d.f)())
 					})), await t(F(p, u, o))
 				}, T = Object(o.a)(c.g), q = Object(o.a)(c.f), H = Object(o.a)(c.e), I = e => async (t, s, n) => {
@@ -302,4 +302,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage.7bec0221a247a350f727.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage.982bc891dd5c06de3271.js.map

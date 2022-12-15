@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.d35a30e79a08e3e0d485.js
-// Retrieved at 12/13/2022, 7:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.d1a1c89438c9f37bd6c8.js
+// Retrieved at 12/15/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -449,7 +449,7 @@
 							const e = Object(S.s)(s(), {
 								profileName: g
 							});
-							t(p.m({
+							t(p.n({
 								title: e
 							}))
 						}
@@ -472,7 +472,7 @@
 						key: v
 					})), O.body.reason === f.a.DeletedProfile && t(Object(d.v)({
 						profileName: g
-					})), void t(p.n(O.status));
+					})), void t(p.o(O.status));
 					const L = O.body;
 					t(A({
 						key: v,
@@ -6685,4 +6685,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.d35a30e79a08e3e0d485.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.d1a1c89438c9f37bd6c8.js.map

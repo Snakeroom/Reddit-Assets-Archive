@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.d6cc6dc89d43d4a7659c.js
-// Retrieved at 12/13/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.31111c3f32ac3f2998bf.js
+// Retrieved at 12/15/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-PaypalFinishPage"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -970,7 +970,7 @@
 					}, 1500)) : k(w.Error)
 				};
 				Object(n.useEffect)(() => {
-					S(Object(i.m)({
+					S(Object(i.n)({
 						title: d.e[C]()
 					})), l ? x() : ((() => e.postMessage({
 						type: "paypal-finish.cancel"
@@ -1037,4 +1037,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.d6cc6dc89d43d4a7659c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.31111c3f32ac3f2998bf.js.map
