@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.4a0b852a2712830da6b6.js
-// Retrieved at 12/15/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.2420454f752a56b7a2d2.js
+// Retrieved at 12/15/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -6735,12 +6735,12 @@
 						rtJsonElementProps: i
 					});
 					switch (r) {
-						case h.Rf.SmIcon:
+						case h.Qf.SmIcon:
 							return o.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case h.Rf.SmIconHc:
+						case h.Qf.SmIconHc:
 							return o.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -7049,7 +7049,7 @@
 					moderation: t,
 					...n
 				} = e, {
-					lastModActionAt: o,
+					lastModAction: o,
 					activeModerators: r
 				} = (null == t ? void 0 : t.modActivitySummary) || {}, i = [], a = {};
 				null == r || r.edges.map(e => {
@@ -7068,7 +7068,7 @@
 					})
 				});
 				const d = {
-					lastModActionAt: o,
+					lastModAction: o,
 					activeMods: i
 				};
 				return {
@@ -8381,7 +8381,7 @@
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
 					experimentName: s.F
-				}) === s.Rd
+				}) === s.Qd
 			}
 		},
 		"./src/reddit/selectors/experiments/realtimeMQUpdates.ts": function(e, t, n) {
@@ -8395,8 +8395,8 @@
 				i = n("./src/reddit/selectors/experiments/modqueueActionBarUXImprovements.ts");
 			const a = e => Object(i.a)(e) && Object(o.c)(e, {
 				experimentEligibilitySelector: r.S,
-				experimentName: s.Cc
-			}) === s.Rd
+				experimentName: s.Bc
+			}) === s.Qd
 		},
 		"./src/reddit/selectors/subredditMention.ts": function(e, t, n) {
 			"use strict";
@@ -8421,12 +8421,12 @@
 				d = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Lf
+						experimentName: s.Kf
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.Rf.SmIcon || t === s.Rf.SmIconHc
+					return t === s.Qf.SmIcon || t === s.Qf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -8464,4 +8464,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.4a0b852a2712830da6b6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.2420454f752a56b7a2d2.js.map

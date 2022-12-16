@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.db7c2efd1e4f3456eb01.js
-// Retrieved at 12/15/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.c04da7300a271831f4cf.js
+// Retrieved at 12/15/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -73,7 +73,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(u.qg)(e.category_name)
+									displayText: Object(u.pg)(e.category_name)
 								};
 								n.push(s.id), t[s.id] = s
 							}), {
@@ -398,7 +398,7 @@
 				const t = Object(a.f)().getState(),
 					n = Object(b.a)(t, Object(o.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.id.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.id.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.id.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.hd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.hd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.hd.LargeImagePreview ? e.reredditButtons : [];
 					return s.a.createElement(N, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -1808,8 +1808,8 @@
 				G = n("./src/reddit/components/Hovercards/SubredditHovercard/index.tsx"),
 				H = n("./src/reddit/components/SubredditIcon/index.tsx"),
 				z = n("./src/reddit/components/SubscribeButton/Inline.tsx"),
-				q = n("./src/reddit/constants/posts.ts"),
-				Q = n("./src/reddit/controls/Button/index.tsx"),
+				Q = n("./src/reddit/constants/posts.ts"),
+				q = n("./src/reddit/controls/Button/index.tsx"),
 				J = n("./src/reddit/icons/fonts/index.tsx"),
 				K = n("./src/reddit/selectors/experiments/shredditParity.ts"),
 				V = n("./src/reddit/components/TopSubredditsWidget/index.m.less"),
@@ -1902,10 +1902,10 @@
 						}))(e.subreddit.name, t),
 						identifier: {
 							name: e.subreddit.name,
-							type: q.a.SUBREDDIT
+							type: Q.a.SUBREDDIT
 						},
-						size: Q.d.XSP,
-						priority: t ? Q.c.Secondary : void 0,
+						size: q.d.XSP,
+						priority: t ? q.c.Secondary : void 0,
 						rplStyle: t
 					})))
 				};
@@ -2130,7 +2130,7 @@
 						className: Object(c.a)(ue.a.header, s)
 					}, i.a.createElement("h2", null, r || he._("Categories", null, {
 						hk: "46zLMb"
-					}))), this.renderCategoryList(), o && i.a.createElement(Q.r, {
+					}))), this.renderCategoryList(), o && i.a.createElement(q.r, {
 						className: Object(c.a)(ue.a.button, e),
 						onClick: this.toggleExpanded
 					}, o && !this.state.isExpanded ? he._("Show More", null, {
@@ -2246,7 +2246,7 @@
 				}))),
 				Ae = e => {
 					const t = Object(o.e)(K.a),
-						n = e.isSecondaryButton || t ? Q.q : Q.n,
+						n = e.isSecondaryButton || t ? q.q : q.n,
 						r = e.linkColor ? {
 							backgroundColor: e.linkColor,
 							color: "white"
@@ -2357,8 +2357,8 @@
 					}))
 				},
 				ze = n("./src/reddit/contexts/ApiContext.tsx"),
-				qe = n("./src/reddit/endpoints/subreddit/local.ts"),
-				Qe = n("./src/reddit/endpoints/subreddit/topSubreddits.ts"),
+				Qe = n("./src/reddit/endpoints/subreddit/local.ts"),
+				qe = n("./src/reddit/endpoints/subreddit/topSubreddits.ts"),
 				Je = n("./src/reddit/helpers/graphql/normalizeTopSubredditsFromGql/index.ts");
 
 			function Ke() {
@@ -2380,7 +2380,7 @@
 					}))
 				})),
 				Ze = async (e, t) => {
-					const n = await Object(Qe.a)(e, t);
+					const n = await Object(qe.a)(e, t);
 					if (n && n.ok) {
 						const e = n.body,
 							t = e && e.data && e.data.subredditLeaderboard;
@@ -2408,7 +2408,7 @@
 						first: t
 					} = this.props, n = e && e.id;
 					if (n === p.l) {
-						const e = await Object(qe.b)(this.props.gqlContext(), {
+						const e = await Object(Qe.b)(this.props.gqlContext(), {
 							first: t
 						});
 						if (!e) return;
@@ -2495,7 +2495,7 @@
 					} = t;
 					return Object(b.b)(n.params.categoryName || "")
 				},
-				at = Object(m.pg)(p.i),
+				at = Object(m.og)(p.i),
 				it = Object(d.c)({
 					categories: e => Object(tt.b)(e, {
 						categoriesOrder: at
@@ -2606,11 +2606,11 @@
 				d = n("./node_modules/reselect/es/index.js");
 			const c = Object(d.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => Object(o.h)(e) && Object(a.f)(e),
-					experimentName: r.rc
+					experimentName: r.qc
 				}), i.a),
 				l = Object(d.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => !Object(o.h)(e) && Object(a.f)(e),
-					experimentName: r.qc
+					experimentName: r.pc
 				}), i.a),
 				u = Object(d.a)(c, l, (e, t) => e || t),
 				m = Object(d.a)(c, l, (e, t) => !(!e && !t))
@@ -2648,4 +2648,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.db7c2efd1e4f3456eb01.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.c04da7300a271831f4cf.js.map

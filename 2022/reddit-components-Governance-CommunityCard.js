@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.adae02a41f21a8e61b04.js
-// Retrieved at 12/13/2022, 7:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.c11ee3c30b076ed1df4e.js
+// Retrieved at 12/15/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -229,8 +229,8 @@
 				k = Object(s.a)(C.k),
 				j = Object(s.a)(C.q),
 				w = Object(s.a)(C.r),
-				A = Object(s.a)(C.s),
-				I = Object(s.a)(C.t),
+				I = Object(s.a)(C.s),
+				A = Object(s.a)(C.t),
 				T = Object(s.a)(C.u),
 				P = Object(s.a)(C.v),
 				S = Object(s.a)(C.w),
@@ -284,7 +284,7 @@
 						apiContext: l
 					} = a;
 					var u;
-					n(A());
+					n(I());
 					const m = s().transfers.communityPoints.contentId || void 0,
 						p = await
 					function(e, t) {
@@ -302,7 +302,7 @@
 						...e,
 						contentId: m
 					});
-					p.ok ? (n(I({
+					p.ok ? (n(A({
 						...p.body,
 						subredditId: e.subredditId
 					})), n(Object(c.f)({
@@ -451,8 +451,8 @@
 			var k = n("./src/reddit/selectors/crypto/claims.ts"),
 				j = n("./src/reddit/selectors/user.ts"),
 				w = n("./src/higherOrderComponents/asTooltip.tsx"),
-				A = n("./src/lib/copyToClipboard/index.ts"),
-				I = n("./src/reddit/actions/governance/errorToast.ts"),
+				I = n("./src/lib/copyToClipboard/index.ts"),
+				A = n("./src/reddit/actions/governance/errorToast.ts"),
 				T = n("./src/reddit/actions/toaster.ts"),
 				P = n("./src/reddit/actions/tooltip.ts"),
 				S = n("./src/reddit/contexts/ApiContext.tsx"),
@@ -470,7 +470,7 @@
 			class Z extends i.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onCopyToClipboard = () => {
-						Object(A.a)(this.props.publicAddress || "")
+						Object(I.a)(this.props.publicAddress || "")
 					}, this.onRemoveMyWallet = async () => {
 						const e = await Object(G.g)(this.props.apiContext(), this.props.points.blockchainProvider, this.props.publicAddress);
 						e.ok ? this.props.onWalletRemoved() : this.props.onGovernanceError(e.error)
@@ -550,7 +550,7 @@
 				}),
 				$ = Object(a.b)(q, (e, t) => ({
 					onGovernanceError: t => {
-						Object(I.a)(e, t)
+						Object(A.a)(e, t)
 					},
 					onOpenDropdown: () => e(Object(P.h)({
 						tooltipId: H
@@ -823,9 +823,9 @@
 				ke = n("./src/reddit/constants/modals.ts"),
 				je = n("./src/reddit/hooks/useLocalStorage.ts"),
 				we = n("./src/reddit/icons/svgs/Coin/index.tsx"),
-				Ae = n("./src/reddit/icons/svgs/Send/index.tsx"),
-				Ie = n("./src/reddit/components/Governance/CommunityCard/UsePoints/index.m.less"),
-				Te = n.n(Ie);
+				Ie = n("./src/reddit/icons/svgs/Send/index.tsx"),
+				Ae = n("./src/reddit/components/Governance/CommunityCard/UsePoints/index.m.less"),
+				Te = n.n(Ae);
 			const {
 				fbt: Pe
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
@@ -858,7 +858,7 @@
 					hk: "2Mco3v"
 				})), _ && i.a.createElement(xe.a, {
 					onClick: () => r(Object(E.f)())
-				}, i.a.createElement(Ae.a, {
+				}, i.a.createElement(Ie.a, {
 					className: Te.a.icon
 				}), c && (null == s ? void 0 : s.name) ? Pe._("Tip {Subreddit community point name}", [Pe._param("Subreddit community point name", s.name)], {
 					hk: "3CjOpO"
@@ -1813,14 +1813,14 @@
 			const o = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.Ce
-					}) === r.Rd
+						experimentName: r.Be
+					}) === r.Qd
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.Ae
-					}) === r.Rd
+						experimentName: r.ze
+					}) === r.Qd
 				}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
@@ -1880,4 +1880,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.adae02a41f21a8e61b04.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.c11ee3c30b076ed1df4e.js.map

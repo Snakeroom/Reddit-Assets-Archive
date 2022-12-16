@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.a1d6f14b795ec3a7c675.js
-// Retrieved at 12/13/2022, 7:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.12fbb7f7c73677eb0b45.js
+// Retrieved at 12/15/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./src/lib/combineRefs/index.tsx": function(e, t, n) {
@@ -3482,8 +3482,8 @@
 					if (Object(a.a)(e)) return !1;
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: r.Bc
-					}) === r.jd.Enabled
+						experimentName: r.Ac
+					}) === r.id.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
@@ -3496,8 +3496,8 @@
 			const s = e => {
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: r.hf
-				}) === r.Rd
+					experimentName: r.gf
+				}) === r.Qd
 			}
 		},
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, n) {
@@ -3515,15 +3515,15 @@
 			const i = Object(a.a)(c.S, e => !e),
 				d = Object(a.a)(e => Object(o.c)(e, {
 					experimentEligibilitySelector: i,
-					experimentName: r.Cf
-				}), e => e === r.Rd),
+					experimentName: r.Bf
+				}), e => e === r.Qd),
 				l = Object(a.a)(d, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? t : s.a.Off),
 				u = Object(a.a)(l, e => e === s.a.Treatment),
 				m = (e, t) => {
 					const n = l(t());
 					i(t()) && n !== s.a.Off && e.block(e => {
 						if ((e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname))
-							if (n === s.a.Control) Object(o.d)(t(), r.Df, r.P.Control1);
+							if (n === s.a.Control) Object(o.d)(t(), r.Cf, r.P.Control1);
 							else if (n === s.a.Treatment) return window.location.href = e.pathname, !1
 					})
 				}
@@ -3846,4 +3846,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.a1d6f14b795ec3a7c675.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.12fbb7f7c73677eb0b45.js.map

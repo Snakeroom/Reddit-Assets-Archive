@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.aab268ace7b3ef058e92.js
-// Retrieved at 12/13/2022, 7:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.e126027365356598681a.js
+// Retrieved at 12/15/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -210,13 +210,13 @@
 			var B = L,
 				R = n("./src/reddit/components/SidebarAd/ListingPageSidebarAd.tsx"),
 				I = n("./src/reddit/components/SidebarContainer/index.tsx"),
-				U = n("./src/reddit/components/SidebarStickyBottom/index.tsx"),
-				D = n("./node_modules/lodash/sampleSize.js"),
-				W = n.n(D),
+				D = n("./src/reddit/components/SidebarStickyBottom/index.tsx"),
+				U = n("./node_modules/lodash/sampleSize.js"),
+				W = n.n(U),
 				G = n("./node_modules/request-idle-callback/index.js"),
 				M = n("./src/lib/constants/index.ts"),
-				K = n("./src/reddit/components/SubredditIcon/index.tsx"),
-				Q = n("./src/reddit/constants/localStorage.ts"),
+				Q = n("./src/reddit/components/SubredditIcon/index.tsx"),
+				K = n("./src/reddit/constants/localStorage.ts"),
 				J = n("./src/reddit/contexts/ApiContext.tsx"),
 				H = n("./src/reddit/featureFlags/component.tsx"),
 				q = n("./src/reddit/helpers/localStorage/index.ts"),
@@ -241,13 +241,13 @@
 					}
 				}
 				async getSubredditForAdoption() {
-					let e = ie.cachedData || Object(q.A)(Q.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
+					let e = ie.cachedData || Object(q.A)(K.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
 					if (!e || Date.now() - e.fetchedAt > se) {
 						const t = await Y(this.props.apiContext());
 						t.ok && (e = {
 							subreddits: t.body.data.subreddits.map(e => e.name),
 							fetchedAt: Date.now()
-						}, Object(q.zb)(Q.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
+						}, Object(q.zb)(K.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
 					}
 					return ie.cachedData = e, e ? e.subreddits : []
 				}
@@ -269,7 +269,7 @@
 						className: ee.a.main
 					}, l.a.createElement("div", {
 						className: ee.a.title
-					}, l.a.createElement(K.b, {
+					}, l.a.createElement(Q.b, {
 						className: ee.a.icon
 					}), te._("International Subreddit Adoption Week", null, {
 						hk: "487Ffc"
@@ -610,21 +610,21 @@
 				Re = n("./src/reddit/constants/subredditLeaderboard.ts"),
 				Ie = n("./src/reddit/helpers/chooseVariant/index.ts");
 
-			function Ue(e) {
+			function De(e) {
 				return Object(Ie.c)(e, {
 					experimentEligibilitySelector: Ie.a,
 					experimentName: Be.q
 				})
 			}
-			var De = n("./src/reddit/selectors/experiments/utils.ts");
+			var Ue = n("./src/reddit/selectors/experiments/utils.ts");
 			const We = Object(u.a)(e => Object(Ie.c)(e, {
-					experimentName: Be.ue,
+					experimentName: Be.te,
 					experimentEligibilitySelector: Ie.a
-				}), De.a),
-				Ge = Object(u.a)(We, e => e === Be.ye.Enabled);
+				}), Ue.a),
+				Ge = Object(u.a)(We, e => e === Be.xe.Enabled);
 			var Me = n("./src/reddit/selectors/user.ts");
-			var Ke = n("./src/reddit/selectors/seo/linksModule.ts"),
-				Qe = n("./src/reddit/selectors/subreddit.ts"),
+			var Qe = n("./src/reddit/selectors/seo/linksModule.ts"),
+				Ke = n("./src/reddit/selectors/subreddit.ts"),
 				Je = n("./src/reddit/helpers/createBannerProperties/index.ts"),
 				He = n("./src/reddit/selectors/meta.ts");
 			const qe = Object(u.c)({
@@ -632,18 +632,18 @@
 					isLoggedIn: Me.R,
 					shouldShowLocalRecommendations: e => !1 !== e.user.prefs.showLocationBasedRecommendations,
 					currentUser: Me.m,
-					frontpageLinks: Ke.b,
+					frontpageLinks: Qe.b,
 					isOver18: Me.mb,
 					isInBFFSLeaderboardExperiment: function(e) {
-						return Ue(e) === Be.p.RotateEven
+						return De(e) === Be.p.RotateEven
 					},
-					bffsLeaderboardVariant: Ue,
-					rankings: e => Object(Qe.T)(e, "c1020"),
+					bffsLeaderboardVariant: De,
+					rankings: e => Object(Ke.T)(e, "c1020"),
 					shouldShowTopicsWidget: e => (function(e) {
 						return Object(Ie.c)(e, {
 							experimentEligibilitySelector: Me.S,
-							experimentName: Be.Uc
-						}) === Be.Rd
+							experimentName: Be.Tc
+						}) === Be.Qd
 					})(e),
 					isNavbarLikeMwebEnabled: c.a,
 					locale: He.j,
@@ -716,7 +716,7 @@
 						listingName: a
 					})), Xe(this.props) && l.a.createElement(Ee, null), n && r && l.a.createElement(h.a, null, l.a.createElement(B, {
 						links: n
-					})), l.a.createElement(U.a, {
+					})), l.a.createElement(D.a, {
 						adComponent: l.a.createElement(R.a, {
 							placement: M.e.BELOW_THE_FOLD,
 							listingName: a,
@@ -1261,4 +1261,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.aab268ace7b3ef058e92.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.e126027365356598681a.js.map

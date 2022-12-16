@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SignupUpsell.d2af088364d1f4620362.js
-// Retrieved at 12/13/2022, 7:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SignupUpsell.89d2548dbbb400195565.js
+// Retrieved at 12/15/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SignupUpsell"], {
 		"./src/reddit/components/Upsell/SSOButton/index.m.less": function(e, t, s) {
@@ -141,12 +141,12 @@
 						const e = Object(i.e)(w.b),
 							t = Object(i.e)(w.d),
 							s = Object(i.e)(w.f),
-							l = Object(E.a)(b.cd.Bottom_sheet),
-							o = Object(E.a)(b.cd.Bottom_cell),
-							c = Object(E.a)(b.cd.Bottom_cell_dismissible),
-							r = Object(E.a)(b.cd.Bottom_cell_dismissible_immediate_trigger),
-							a = Object(E.a)(b.cd.Bottom_cell_signup_upsell_copy),
-							d = Object(E.a)(b.cd.Bottom_cell_surprise_install_copy);
+							l = Object(E.a)(b.bd.Bottom_sheet),
+							o = Object(E.a)(b.bd.Bottom_cell),
+							c = Object(E.a)(b.bd.Bottom_cell_dismissible),
+							r = Object(E.a)(b.bd.Bottom_cell_dismissible_immediate_trigger),
+							a = Object(E.a)(b.bd.Bottom_cell_signup_upsell_copy),
+							d = Object(E.a)(b.bd.Bottom_cell_surprise_install_copy);
 						let p;
 						if (e) p = I;
 						else if (t) p = y;
@@ -163,8 +163,8 @@
 						if (e && d) return `${u}bottom_cell_surprise_install_copy.png`;
 						throw new Error("Invalid variant for signup upsell")
 					}(),
-					U = Object(E.a)(b.cd.Bottom_cell_signup_upsell_copy),
-					R = Object(E.a)(b.cd.Bottom_cell_surprise_install_copy),
+					U = Object(E.a)(b.bd.Bottom_cell_signup_upsell_copy),
+					R = Object(E.a)(b.bd.Bottom_cell_surprise_install_copy),
 					D = U ? l.fbt._("Come join us, we have snacks", null, {
 						hk: "1LUl2W"
 					}) : l.fbt._("Log in or sign up for the best experience", null, {
@@ -335,9 +335,9 @@
 					experimentName: e,
 					experimentEligibilitySelector: r,
 					throttledVariants: {
-						[l.cd.Bottom_cell_dismissible]: e,
-						[l.cd.Bottom_cell_dismissible_immediate_trigger]: e,
-						[l.cd.Bottom_sheet]: e
+						[l.bd.Bottom_cell_dismissible]: e,
+						[l.bd.Bottom_cell_dismissible_immediate_trigger]: e,
+						[l.bd.Bottom_sheet]: e
 					},
 					expEventOverride: t
 				})
@@ -351,4 +351,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SignupUpsell.d2af088364d1f4620362.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SignupUpsell.89d2548dbbb400195565.js.map

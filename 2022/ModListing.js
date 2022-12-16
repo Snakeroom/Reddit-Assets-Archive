@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.827745a0ca7fa3bcfb6d.js
-// Retrieved at 12/15/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.bf26b31531e8dc674417.js
+// Retrieved at 12/15/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, n) {
@@ -506,7 +506,7 @@
 			})), n.d(t, "moreModListingRequested", (function() {
 				return D
 			})), n.d(t, "hideSubredditSuccess", (function() {
-				return K
+				return V
 			})), n.d(t, "hideSubredditPending", (function() {
 				return q
 			})), n.d(t, "hideSubredditFailed", (function() {
@@ -604,7 +604,7 @@
 							hk: "3RYtBz"
 						})
 					})));
-					const _ = V(e.queryParams);
+					const _ = K(e.queryParams);
 					await n(F(p, {
 						...i()(e.queryParams, m.p),
 						...i()(e.queryParams, m.o),
@@ -632,7 +632,7 @@
 						y = d.listings.postOrder.fetchedTokens,
 						x = !(!y[f] || !y[f][g.token]);
 					if (_ || x) return;
-					const O = V(b);
+					const O = K(b);
 					t(H({
 						key: f,
 						fetchedToken: g.token
@@ -663,11 +663,11 @@
 					}))
 				};
 
-			function V(e) {
+			function K(e) {
 				const t = m.K in e && e[m.K].toUpperCase() || "";
 				return t in o.oc && o.oc[t]
 			}
-			const K = Object(d.a)(M.c),
+			const V = Object(d.a)(M.c),
 				q = Object(d.a)(M.b),
 				G = Object(d.a)(M.a),
 				U = Object(d.a)(M.l),
@@ -679,7 +679,7 @@
 					} = s;
 					const o = r(),
 						d = Object(P.m)(o),
-						[a, c, u, l] = t ? [q, K, G, O] : [J, U, Q, E];
+						[a, c, u, l] = t ? [q, V, G, O] : [J, U, Q, E];
 					if (!d || !d.displayText) return;
 					const {
 						currentPage: m
@@ -1737,14 +1737,14 @@
 				A = n("./src/reddit/controls/Button/index.tsx"),
 				B = n("./src/reddit/helpers/trackers/modListing.ts"),
 				D = n("./src/reddit/routes/modListing/index.ts");
-			const V = e => e.modListingPage.filteredSubreddits.api.pending;
-			var K = n("./src/reddit/constants/keycodes.ts"),
+			const K = e => e.modListingPage.filteredSubreddits.api.pending;
+			var V = n("./src/reddit/constants/keycodes.ts"),
 				q = n("./src/reddit/layout/row/Inline/index.tsx"),
 				G = n("./src/reddit/components/ModListingSidebar/HideCommunities/HideInput/index.m.less"),
 				U = n.n(G);
 			const J = Object(a.c)({
 				apiError: e => e.modListingPage.filteredSubreddits.api.error,
-				isApiPending: V
+				isApiPending: K
 			});
 			class Q extends o.a.Component {
 				constructor() {
@@ -1761,7 +1761,7 @@
 					}, this.onChange = e => {
 						this.setSubredditInput(e.target.value)
 					}, this.onKeyPress = e => {
-						e.key === K.b.Enter && this.submitInput()
+						e.key === V.b.Enter && this.submitInput()
 					}, this.canSubmitInput = () => this.state.subredditInput && !this.props.isApiPending
 				}
 				render() {
@@ -1802,7 +1802,7 @@
 				te = n.n(ee);
 			const ne = X.a.wrapped(W.b, "SubredditIcon", te.a),
 				re = Object(a.c)({
-					isApiPending: V,
+					isApiPending: K,
 					subredditOrProfile: (e, t) => {
 						const n = Object($.C)(e, {
 							subredditName: t.subredditName
@@ -2042,7 +2042,7 @@
 				const b = Object(o.e)(e => e.subreddits.survey[n]),
 					p = Object(o.e)(e => e.subreddits.progressModule[n]),
 					h = Object(o.e)(l.a),
-					f = h !== c.Te.NewModule;
+					f = h !== c.Se.NewModule;
 				return (null === (s = null == p ? void 0 : p.cards) || void 0 === s ? void 0 : s.length) > 0 && f ? i.a.createElement(m, {
 					closeModuleOnMount: !!t && t !== u.g.Large,
 					subredditId: n,
@@ -2068,15 +2068,15 @@
 			const o = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: i.S,
-						experimentName: r.yd
+						experimentName: r.xd
 					});
-					return !(!t || Object(r.rg)(t))
+					return !(!t || Object(r.qg)(t))
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: i.S,
-						experimentName: r.yd
-					}) === r.Vd.ListingEnabled
+						experimentName: r.xd
+					}) === r.Ud.ListingEnabled
 				}
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
@@ -2084,4 +2084,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.827745a0ca7fa3bcfb6d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.bf26b31531e8dc674417.js.map

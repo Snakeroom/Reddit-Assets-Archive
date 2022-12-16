@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.d35a30e79a08e3e0d485.js
-// Retrieved at 12/15/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.1146a89043ee5304be3d.js
+// Retrieved at 12/15/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -3531,8 +3531,8 @@
 				p = s("./node_modules/reselect/es/index.js");
 			const b = Object(p.a)(e => Object(u.c)(e, {
 				experimentEligibilitySelector: u.a,
-				experimentName: m.zc
-			}), e => e === m.Rd);
+				experimentName: m.yc
+			}), e => e === m.Qd);
 			var h = s("./node_modules/fbt/lib/FbtPublic.js"),
 				f = s("./src/lib/classNames/index.ts"),
 				x = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
@@ -5135,7 +5135,7 @@
 					}, i.a.createElement(h.b, {
 						textColor: d
 					})), i.a.createElement(M, {
-						qrCodeAsset: (() => n === x.fd.Enabled || r === x.gb.BlurredPreview || r === x.gb.NoPreview ? T.d2x_nsfw_signup_blocking_de_v1 : T.d2x_nsfw_signup_blocking_non_us_v1)()
+						qrCodeAsset: (() => n === x.ed.Enabled || r === x.gb.BlurredPreview || r === x.gb.NoPreview ? T.d2x_nsfw_signup_blocking_de_v1 : T.d2x_nsfw_signup_blocking_non_us_v1)()
 					}))
 				},
 				R = e => {
@@ -6685,4 +6685,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.d35a30e79a08e3e0d485.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.1146a89043ee5304be3d.js.map

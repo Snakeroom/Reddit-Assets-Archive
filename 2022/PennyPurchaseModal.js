@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.ca5f7dc46fefee1156fd.js
-// Retrieved at 12/13/2022, 7:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.4b94a2edb4aea5b2bcab.js
+// Retrieved at 12/15/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./node_modules/@stripe/stripe-js/dist/stripe.esm.js": function(e, t, a) {
@@ -722,8 +722,8 @@
 					})))
 				},
 				J = a("./src/reddit/components/PaymentMethodSelector/index.tsx"),
-				z = a("./src/reddit/components/StripePaymentForm/index.tsx"),
-				Y = a("./src/reddit/helpers/createEmojiText/index.tsx");
+				Y = a("./src/reddit/components/StripePaymentForm/index.tsx"),
+				z = a("./src/reddit/helpers/createEmojiText/index.tsx");
 			const U = e => {
 				const t = Object(Q.a)(),
 					a = Object(c.a)(),
@@ -754,7 +754,7 @@
 					let {
 						stripe: a
 					} = t;
-					return o.a.createElement(z.a, {
+					return o.a.createElement(Y.a, {
 						nightmode: e.nightmode,
 						stripe: a
 					})
@@ -784,7 +784,7 @@
 				})({
 					...e,
 					locale: t
-				}), Object(Y.a)(n.fbt._("By purchasing Coins and Awards, you agree to the :agreement:.", null, {
+				}), Object(z.a)(n.fbt._("By purchasing Coins and Awards, you agree to the :agreement:.", null, {
 					hk: "1eCqza"
 				}), {
 					":agreement:": o.a.createElement("a", {
@@ -2014,8 +2014,8 @@
 				n = a("./src/lib/constants/index.ts"),
 				s = a("./src/reddit/constants/experiments.ts"),
 				o = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const c = Object(o.a)(s.bf),
-				i = Object(o.a)(s.cf),
+			const c = Object(o.a)(s.af),
+				i = Object(o.a)(s.bf),
 				d = Object(r.a)([c, i], (e, t) => new Set([e && n.Mb, t && n.Lb].filter(e => !!e)))
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, a) {
@@ -2025,7 +2025,7 @@
 			}));
 			var r = a("./src/reddit/constants/experiments.ts"),
 				n = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const s = Object(n.a)(r.zd)
+			const s = Object(n.a)(r.yd)
 		},
 		"./src/redditGQL/operations/CancelEconRecurringPayment.json": function(e) {
 			e.exports = JSON.parse('{"id":"ac36f7489268"}')
@@ -2062,4 +2062,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.ca5f7dc46fefee1156fd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.4b94a2edb4aea5b2bcab.js.map
