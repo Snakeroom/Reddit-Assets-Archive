@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.6f9182a7302e1f5917e8.js
-// Retrieved at 12/15/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.40deb98cac30c6b3800c.js
+// Retrieved at 12/15/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2084,15 +2084,16 @@
 					isNightmodeOn: m.fb
 				}));
 			t.a = f(e => {
-				const t = {
-						responsive: "true",
-						is_nightmode: e.isNightmodeOn
-					},
-					s = e.isResponsive ? Object(a.a)(Object(c.a)(e.source), t) : Object(c.a)(e.source),
-					n = {
-						overflow: "hidden"
-					};
-				return n.width = e.width && !e.fullWidth ? `${e.width}px` : "100%", e.showCentered && (n.margin = "0 auto"), e.isListing || (n.maxHeight = `${u.d}px`), void 0 !== e.maxHeight && (n.maxHeight = e.maxHeight || void 0), e.isTweet || (n.height = "100%"), r.a.createElement("iframe", {
+				const {
+					isResponsive: t,
+					source: s
+				} = e, n = {
+					responsive: "true",
+					is_nightmode: e.isNightmodeOn
+				}, o = new URL(s), i = t && !o.searchParams.has("s") ? Object(a.a)(Object(c.a)(s), n) : Object(c.a)(s), m = {
+					overflow: "hidden"
+				};
+				return m.width = e.width && !e.fullWidth ? `${e.width}px` : "100%", e.showCentered && (m.margin = "0 auto"), e.isListing || (m.maxHeight = `${u.d}px`), void 0 !== e.maxHeight && (m.maxHeight = e.maxHeight || void 0), e.isTweet || (m.height = "100%"), r.a.createElement("iframe", {
 					className: Object(d.a)(l.a, b.a.embedBox, e.className),
 					height: e.height,
 					width: e.width && !e.fullWidth ? e.width : "100%",
@@ -2101,8 +2102,8 @@
 					title: e.title,
 					sandbox: h,
 					scrolling: "no",
-					src: s,
-					style: n,
+					src: i,
+					style: m,
 					allowFullScreen: !0
 				})
 			})
@@ -8208,4 +8209,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.6f9182a7302e1f5917e8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.40deb98cac30c6b3800c.js.map

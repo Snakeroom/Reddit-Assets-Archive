@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.2420454f752a56b7a2d2.js
-// Retrieved at 12/15/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.f3d335bc74b94f6d9e10.js
+// Retrieved at 12/15/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -4457,15 +4457,16 @@
 					isNightmodeOn: u.fb
 				}));
 			t.a = f(e => {
-				const t = {
-						responsive: "true",
-						is_nightmode: e.isNightmodeOn
-					},
-					n = e.isResponsive ? Object(a.a)(Object(c.a)(e.source), t) : Object(c.a)(e.source),
-					s = {
-						overflow: "hidden"
-					};
-				return s.width = e.width && !e.fullWidth ? `${e.width}px` : "100%", e.showCentered && (s.margin = "0 auto"), e.isListing || (s.maxHeight = `${m.d}px`), void 0 !== e.maxHeight && (s.maxHeight = e.maxHeight || void 0), e.isTweet || (s.height = "100%"), o.a.createElement("iframe", {
+				const {
+					isResponsive: t,
+					source: n
+				} = e, s = {
+					responsive: "true",
+					is_nightmode: e.isNightmodeOn
+				}, r = new URL(n), i = t && !r.searchParams.has("s") ? Object(a.a)(Object(c.a)(n), s) : Object(c.a)(n), u = {
+					overflow: "hidden"
+				};
+				return u.width = e.width && !e.fullWidth ? `${e.width}px` : "100%", e.showCentered && (u.margin = "0 auto"), e.isListing || (u.maxHeight = `${m.d}px`), void 0 !== e.maxHeight && (u.maxHeight = e.maxHeight || void 0), e.isTweet || (u.height = "100%"), o.a.createElement("iframe", {
 					className: Object(d.a)(l.a, b.a.embedBox, e.className),
 					height: e.height,
 					width: e.width && !e.fullWidth ? e.width : "100%",
@@ -4474,8 +4475,8 @@
 					title: e.title,
 					sandbox: h,
 					scrolling: "no",
-					src: n,
-					style: s,
+					src: i,
+					style: u,
 					allowFullScreen: !0
 				})
 			})
@@ -8464,4 +8465,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.2420454f752a56b7a2d2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.f3d335bc74b94f6d9e10.js.map

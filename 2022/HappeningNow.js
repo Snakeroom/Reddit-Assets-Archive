@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HappeningNow.701799249c57effbfad7.js
-// Retrieved at 12/15/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HappeningNow.d8ebe21a720a472622d5.js
+// Retrieved at 12/15/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HappeningNow"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -644,15 +644,16 @@
 					isNightmodeOn: m.fb
 				}));
 			t.a = f(e => {
-				const t = {
-						responsive: "true",
-						is_nightmode: e.isNightmodeOn
-					},
-					n = e.isResponsive ? Object(i.a)(Object(c.a)(e.source), t) : Object(c.a)(e.source),
-					r = {
-						overflow: "hidden"
-					};
-				return r.width = e.width && !e.fullWidth ? `${e.width}px` : "100%", e.showCentered && (r.margin = "0 auto"), e.isListing || (r.maxHeight = `${u.d}px`), void 0 !== e.maxHeight && (r.maxHeight = e.maxHeight || void 0), e.isTweet || (r.height = "100%"), s.a.createElement("iframe", {
+				const {
+					isResponsive: t,
+					source: n
+				} = e, r = {
+					responsive: "true",
+					is_nightmode: e.isNightmodeOn
+				}, a = new URL(n), o = t && !a.searchParams.has("s") ? Object(i.a)(Object(c.a)(n), r) : Object(c.a)(n), m = {
+					overflow: "hidden"
+				};
+				return m.width = e.width && !e.fullWidth ? `${e.width}px` : "100%", e.showCentered && (m.margin = "0 auto"), e.isListing || (m.maxHeight = `${u.d}px`), void 0 !== e.maxHeight && (m.maxHeight = e.maxHeight || void 0), e.isTweet || (m.height = "100%"), s.a.createElement("iframe", {
 					className: Object(l.a)(d.a, h.a.embedBox, e.className),
 					height: e.height,
 					width: e.width && !e.fullWidth ? e.width : "100%",
@@ -661,8 +662,8 @@
 					title: e.title,
 					sandbox: b,
 					scrolling: "no",
-					src: n,
-					style: r,
+					src: o,
+					style: m,
 					allowFullScreen: !0
 				})
 			})
@@ -3970,4 +3971,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.701799249c57effbfad7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.d8ebe21a720a472622d5.js.map
