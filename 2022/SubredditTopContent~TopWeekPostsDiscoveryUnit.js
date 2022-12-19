@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.fae5299c2902740a8327.js
-// Retrieved at 12/13/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.db860da1b245c6432e79.js
+// Retrieved at 12/19/2022, 4:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent~TopWeekPostsDiscoveryUnit"], {
 		"./node_modules/react-motion/lib/Motion.js": function(e, t, s) {
@@ -844,8 +844,8 @@
 						const e = 36 - (null !== (t = null == i ? void 0 : i.length) && void 0 !== t ? t : 0);
 						return s.displayText.length > e ? s.displayText.substring(0, e - 3) + "..." : s.displayText
 					}
-					l = o || Object(n.D)(e)
-				} else l = Object(n.D)(e);
+					l = o || Object(n.E)(e)
+				} else l = Object(n.E)(e);
 				const c = a.a.parse(l),
 					d = c.path || "",
 					u = d.length > 7 ? d.substring(0, 7) + "..." : d;
@@ -1982,7 +1982,7 @@
 						tabIndex: -1,
 						"data-adclicklocation": _.a.BACKGROUND
 					}, s), j = !!d.media && d.media.type === f.o.VIDEO;
-					return (e => d.media && Object(f.F)(d.media) && x ? r.a.createElement(u, {
+					return (e => d.media && Object(f.G)(d.media) && x ? r.a.createElement(u, {
 						postId: d.id
 					}, e) : e)((e => d.isSponsored || j ? r.a.createElement(i.a, {
 						post: d,
@@ -2274,7 +2274,7 @@
 					if (t || !e.isCommentsPage || e.isCommentPermalink || e.shouldLinkWrap) {
 						if (i) return o.a.createElement(b.a, {
 							className: e.outboundLinkClassName,
-							href: Object(P.D)(n),
+							href: Object(P.E)(n),
 							isSponsored: r,
 							postId: n.id,
 							source: n.source,
@@ -2807,4 +2807,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.fae5299c2902740a8327.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.db860da1b245c6432e79.js.map

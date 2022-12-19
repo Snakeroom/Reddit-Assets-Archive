@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.df25837581dc333ff5e3.js
-// Retrieved at 12/15/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.20ade11d84422d5b35f5.js
+// Retrieved at 12/19/2022, 4:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -75,8 +75,8 @@
 						const e = 36 - (null !== (t = null == c ? void 0 : c.length) && void 0 !== t ? t : 0);
 						return n.displayText.length > e ? n.displayText.substring(0, e - 3) + "..." : n.displayText
 					}
-					i = o || Object(r.D)(e)
-				} else i = Object(r.D)(e);
+					i = o || Object(r.E)(e)
+				} else i = Object(r.E)(e);
 				const d = a.a.parse(i),
 					l = d.path || "",
 					u = l.length > 7 ? l.substring(0, 7) + "..." : l;
@@ -3712,7 +3712,7 @@
 					if (t || !e.isCommentsPage || e.isCommentPermalink || e.shouldLinkWrap) {
 						if (c) return o.a.createElement(b.a, {
 							className: e.outboundLinkClassName,
-							href: Object(D.D)(r),
+							href: Object(D.E)(r),
 							isSponsored: s,
 							postId: r.id,
 							source: r.source,
@@ -5548,7 +5548,7 @@
 				s = n("./src/reddit/models/Media/index.ts");
 
 			function a(e, t) {
-				return !(e.removedByCategory || !e.thumbnail || !e.thumbnail.url || e.thumbnail.url === r.a.SELF || e.thumbnail.url === r.a.NSFW || e.media && Object(s.F)(e.media) || t)
+				return !(e.removedByCategory || !e.thumbnail || !e.thumbnail.url || e.thumbnail.url === r.a.SELF || e.thumbnail.url === r.a.NSFW || e.media && Object(s.G)(e.media) || t)
 			}
 		},
 		"./src/reddit/helpers/economics/sortBadges.ts": function(e, t, n) {
@@ -17109,7 +17109,7 @@
 							postId: n,
 							richtextContent: r
 						} = t.payload, s = e[n];
-						return s && s.media && Object(Nf.K)(s.media) ? {
+						return s && s.media && Object(Nf.L)(s.media) ? {
 							...e,
 							[n]: {
 								...s,
@@ -25621,4 +25621,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.df25837581dc333ff5e3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.20ade11d84422d5b35f5.js.map

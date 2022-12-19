@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.af4b2f97f1bbbf865039.js
-// Retrieved at 12/15/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.2682b5cd17283216d6e0.js
+// Retrieved at 12/19/2022, 4:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit", "ModListing~Reddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -9404,7 +9404,7 @@
 				}),
 				O = Object(c.b)(E),
 				C = y.a.wrapped(b.a, "ThemedWidget", x.a),
-				j = e => !(!e || e.isBlank) && (!e.isMediaOnly || !!(e.media && Object(g.G)(e.media) && e.media.content)),
+				j = e => !(!e || e.isBlank) && (!e.isMediaOnly || !!(e.media && Object(g.H)(e.media) && e.media.content)),
 				I = [{
 					img: "/img/house-ads/eatcheapandhealthy.png",
 					href: "/r/eatcheapandhealthy"
@@ -22570,4 +22570,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.af4b2f97f1bbbf865039.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.2682b5cd17283216d6e0.js.map

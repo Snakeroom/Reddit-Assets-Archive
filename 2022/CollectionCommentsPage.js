@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.336f56d6d37522c8bee4.js
-// Retrieved at 12/15/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.f1f6464538125d0603fc.js
+// Retrieved at 12/19/2022, 4:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -1531,7 +1531,7 @@
 						listingKey: y
 					}), j = d && (a || !C || 0 === C.length), E = a, k = i, S = Object(oe.G)(f, {
 						postId: u
-					}), P = !!S && !!S.media && (Object(Me.K)(S.media) || Object(Me.G)(S.media)) && !S.media.altText;
+					}), P = !!S && !!S.media && (Object(Me.L)(S.media) || Object(Me.H)(S.media)) && !S.media.altText;
 					if (!(O || j || E || k || P || l)) return;
 					O && t(Object(je.d)({
 						key: g
@@ -6859,7 +6859,7 @@
 			const i = /(?:reddit\.com\/r\/)(?<subreddit>[\w]+)(?:\/comments\/)?(?<postId>[\w]+)?/,
 				a = e => {
 					var t, s, a;
-					if ((null == e ? void 0 : e.media) && Object(o.K)(e.media) && (null === (s = null === (t = e.media.richtextContent) || void 0 === t ? void 0 : t.document) || void 0 === s ? void 0 : s.length) > 0) {
+					if ((null == e ? void 0 : e.media) && Object(o.L)(e.media) && (null === (s = null === (t = e.media.richtextContent) || void 0 === t ? void 0 : t.document) || void 0 === s ? void 0 : s.length) > 0) {
 						const t = Object(r.f)(e.media.richtextContent.document, !0);
 						return 0 === t.length ? [] : null === (a = t.reduce) || void 0 === a ? void 0 : a.call(t, (e, t) => {
 							var s;
@@ -8508,7 +8508,7 @@
 					subredditOrProfile: Ve,
 					userIsOp: He,
 					pageLayer: ze
-				} = e, Ke = Object(Se.b)(), qe = Object(o.useRef)(null), [Ge, Ye] = Object(o.useState)(Te.authorIsBlocked), Qe = Object(M.J)(Te), Je = Object(a.e)(e => Object(U.a)(e, {
+				} = e, Ke = Object(Se.b)(), qe = Object(o.useRef)(null), [Ge, Ye] = Object(o.useState)(Te.authorIsBlocked), Qe = Object(M.K)(Te), Je = Object(a.e)(e => Object(U.a)(e, {
 					post: Te,
 					pageLayer: ze
 				})), Ze = Object(d.a)(Te), Xe = W || z, et = Xe || V || H || K, tt = !!(_ && (null == Ve ? void 0 : Ve.isNSFW));
@@ -8552,7 +8552,7 @@
 					Tt = Te.removedByCategory === A.g.AuthorDeleted,
 					Mt = n && (n.displayText === Te.author || n.username === Te.author),
 					Dt = !!Te.unrepliableReason,
-					Ut = !Ge && !Tt && !Pt(Te) && (Mt || x || !(Te.removedByCategory && Te.media && (Object(M.M)(Te.media) || Object(M.K)(Te.media) || Object(M.F)(Te.media)))),
+					Ut = !Ge && !Tt && !Pt(Te) && (Mt || x || !(Te.removedByCategory && Te.media && (Object(M.N)(Te.media) || Object(M.L)(Te.media) || Object(M.G)(Te.media)))),
 					Wt = Je && Te.source;
 				let Vt;
 				Te.media && Te.media.type !== M.o.TEXT && (Vt = Te.media.richtextContent);
@@ -8594,7 +8594,7 @@
 					$t = Object(oe.b)(Te),
 					es = () => {
 						const t = !(Dt && Ge),
-							n = Object(M.I)(Te);
+							n = Object(M.J)(Te);
 						return Dt && n ? i.a.createElement(gt, null) : Ge ? i.a.createElement($e, {
 							onBannerClick: () => Ye(!1),
 							isExpandable: Qe
@@ -8721,7 +8721,7 @@
 						shouldShowFollowButton: Gt && !t,
 						isFollowed: R,
 						onFollowPostClick: Yt
-					}), Qt, es(), Object(M.O)(Te) && i.a.createElement(Et, {
+					}), Qt, es(), Object(M.P)(Te) && i.a.createElement(Et, {
 						post: Te,
 						isAuthorCurrentUser: !!Mt
 					}), i.a.createElement(se.a, {
@@ -9409,7 +9409,7 @@
 				}), W && o.a.createElement(v.b, {
 					isSponsored: D.isSponsored,
 					postId: D.id,
-					href: Object(C.D)(D),
+					href: Object(C.E)(D),
 					source: D.source
 				}, o.a.createElement(y.a, {
 					className: S.a.outboundLinkIcon
@@ -13426,7 +13426,7 @@
 				}),
 				_ = Object(c.b)(C),
 				j = O.a.wrapped(b.a, "ThemedWidget", v.a),
-				E = e => !(!e || e.isBlank) && (!e.isMediaOnly || !!(e.media && Object(x.G)(e.media) && e.media.content)),
+				E = e => !(!e || e.isBlank) && (!e.isMediaOnly || !!(e.media && Object(x.H)(e.media) && e.media.content)),
 				k = [{
 					img: "/img/house-ads/eatcheapandhealthy.png",
 					href: "/r/eatcheapandhealthy"
@@ -20003,4 +20003,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.336f56d6d37522c8bee4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.f1f6464538125d0603fc.js.map

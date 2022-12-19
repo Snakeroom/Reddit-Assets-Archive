@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.c0698c12e003e0c0901e.js
-// Retrieved at 12/15/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.62820d5f7d16208546ca.js
+// Retrieved at 12/19/2022, 4:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -608,8 +608,8 @@
 						const e = 36 - (null !== (t = null == a ? void 0 : a.length) && void 0 !== t ? t : 0);
 						return n.displayText.length > e ? n.displayText.substring(0, e - 3) + "..." : n.displayText
 					}
-					c = i || Object(r.D)(e)
-				} else c = Object(r.D)(e);
+					c = i || Object(r.E)(e)
+				} else c = Object(r.E)(e);
 				const d = s.a.parse(c),
 					l = d.path || "",
 					u = l.length > 7 ? l.substring(0, 7) + "..." : l;
@@ -1742,7 +1742,7 @@
 						tabIndex: -1,
 						"data-adclicklocation": x.a.BACKGROUND
 					}, n), y = !!l.media && l.media.type === b.o.VIDEO;
-					return (e => l.media && Object(b.F)(l.media) && g ? o.a.createElement(u, {
+					return (e => l.media && Object(b.G)(l.media) && g ? o.a.createElement(u, {
 						postId: l.id
 					}, e) : e)((e => l.isSponsored || y ? o.a.createElement(a.a, {
 						post: l,
@@ -2325,7 +2325,7 @@
 					if (t || !e.isCommentsPage || e.isCommentPermalink || e.shouldLinkWrap) {
 						if (a) return i.a.createElement(f.a, {
 							className: e.outboundLinkClassName,
-							href: Object(C.D)(r),
+							href: Object(C.E)(r),
 							isSponsored: o,
 							postId: r.id,
 							source: r.source,
@@ -2658,7 +2658,7 @@
 						post: e
 					} = this.props;
 					if (!e.media) return null;
-					const t = !e.media || Object(S.N)(e.media) || Object(S.H)(e.media) ? "" : e.media.content,
+					const t = !e.media || Object(S.O)(e.media) || Object(S.I)(e.media) ? "" : e.media.content,
 						{
 							type: n
 						} = e.media;
@@ -5402,4 +5402,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.c0698c12e003e0c0901e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.62820d5f7d16208546ca.js.map

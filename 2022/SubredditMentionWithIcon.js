@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.68b268a9ea47ba88c8e7.js
-// Retrieved at 12/13/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.d5a1ff1500ea5a815ed4.js
+// Retrieved at 12/19/2022, 4:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, s) {
@@ -1520,11 +1520,11 @@
 						placeholderImage: x,
 						redditStyle: _,
 						theme: C
-					}), N = w(e), k = c ? f.SourceElement.PostImage : f.SourceElement.ListingPostImage, L = P(O, t, T, v, j, C, N, l, I, E, _, b, p, h, i), D = Object(m.D)(O);
+					}), N = w(e), k = c ? f.SourceElement.PostImage : f.SourceElement.ListingPostImage, L = P(O, t, T, v, j, C, N, l, I, E, _, b, p, h, i), D = Object(m.E)(O);
 					return Object(n.a)(D) && !E && D.indexOf("redditmedia") < 0 ? r.a.createElement("div", {
 						className: Object(o.a)(S.a.container, g ? S.a.usePreview : "", s)
 					}, r.a.createElement(u.b, {
-						href: Object(m.D)(O),
+						href: Object(m.E)(O),
 						isSponsored: O.isSponsored,
 						postId: O.id,
 						source: O.source,
@@ -2258,4 +2258,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.68b268a9ea47ba88c8e7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.d5a1ff1500ea5a815ed4.js.map

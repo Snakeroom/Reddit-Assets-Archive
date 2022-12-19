@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.c7fba95b009ed4956ea4.js
-// Retrieved at 12/15/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.226efd5607b15e0d473e.js
+// Retrieved at 12/19/2022, 4:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit", "ContributorRequestButton", "schedulePickerModal"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, n) {},
@@ -1373,8 +1373,8 @@
 						const e = 36 - (null !== (t = null == a ? void 0 : a.length) && void 0 !== t ? t : 0);
 						return n.displayText.length > e ? n.displayText.substring(0, e - 3) + "..." : n.displayText
 					}
-					c = i || Object(o.D)(e)
-				} else c = Object(o.D)(e);
+					c = i || Object(o.E)(e)
+				} else c = Object(o.E)(e);
 				const d = s.a.parse(c),
 					l = d.path || "",
 					u = l.length > 7 ? l.substring(0, 7) + "..." : l;
@@ -11750,7 +11750,7 @@
 					if (t || !e.isCommentsPage || e.isCommentPermalink || e.shouldLinkWrap) {
 						if (a) return i.a.createElement(b.a, {
 							className: e.outboundLinkClassName,
-							href: Object(S.D)(o),
+							href: Object(S.E)(o),
 							isSponsored: r,
 							postId: o.id,
 							source: o.source,
@@ -19840,11 +19840,11 @@
 						placeholderImage: O,
 						redditStyle: y,
 						theme: k
-					}), w = P(e), I = d ? f.SourceElement.PostImage : f.SourceElement.ListingPostImage, R = N(g, t, T, j, _, k, w, l, x, E, y, m, h, b, r), M = Object(p.D)(g);
+					}), w = P(e), I = d ? f.SourceElement.PostImage : f.SourceElement.ListingPostImage, R = N(g, t, T, j, _, k, w, l, x, E, y, m, h, b, r), M = Object(p.E)(g);
 					return Object(o.a)(M) && !E && M.indexOf("redditmedia") < 0 ? s.a.createElement("div", {
 						className: Object(i.a)(v.a.container, S ? v.a.usePreview : "", n)
 					}, s.a.createElement(u.b, {
-						href: Object(p.D)(g),
+						href: Object(p.E)(g),
 						isSponsored: g.isSponsored,
 						postId: g.id,
 						source: g.source,
@@ -31255,7 +31255,7 @@
 				ts = n.n(es);
 			const {
 				fbt: ns
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), os = new RegExp(`\\b(${[...Je.x].join("|")})\\.com$`, "i"), rs = new RegExp(`\\.(${Je.w.join("|")})$`), ss = Ge.a.div("TextContainer", ts.a);
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), os = new RegExp(`\\b(${[...Je.y].join("|")})\\.com$`, "i"), rs = new RegExp(`\\.(${Je.x.join("|")})$`), ss = Ge.a.div("TextContainer", ts.a);
 			class is extends r.a.Component {
 				constructor() {
 					super(...arguments), this.isUrlScraped = e => {
@@ -38188,4 +38188,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.c7fba95b009ed4956ea4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.226efd5607b15e0d473e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.0c8138b19dd1df9cc515.js
-// Retrieved at 12/15/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.1cab174b1d7e7ed65fa1.js
+// Retrieved at 12/19/2022, 4:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -796,7 +796,7 @@
 						listingKey: v
 					}), E = d && (a || !C || 0 === C.length), S = a, _ = i, k = Object(oe.G)(O, {
 						postId: u
-					}), w = !!k && !!k.media && (Object(Le.K)(k.media) || Object(Le.G)(k.media)) && !k.media.altText;
+					}), w = !!k && !!k.media && (Object(Le.L)(k.media) || Object(Le.H)(k.media)) && !k.media.altText;
 					if (!(j || E || S || _ || w || l)) return;
 					j && t(Object(Ee.d)({
 						key: f
@@ -4298,7 +4298,7 @@
 						tabIndex: -1,
 						"data-adclicklocation": v.a.BACKGROUND
 					}, s), C = !!l.media && l.media.type === b.o.VIDEO;
-					return (e => l.media && Object(b.F)(l.media) && g ? r.a.createElement(m, {
+					return (e => l.media && Object(b.G)(l.media) && g ? r.a.createElement(m, {
 						postId: l.id
 					}, e) : e)((e => l.isSponsored || C ? r.a.createElement(a.a, {
 						post: l,
@@ -10808,4 +10808,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.0c8138b19dd1df9cc515.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.1cab174b1d7e7ed65fa1.js.map

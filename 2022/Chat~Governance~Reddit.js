@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.58baf8bfe5c12418d6ea.js
-// Retrieved at 12/15/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1acfd065b338377eba23.js
+// Retrieved at 12/19/2022, 4:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3614,11 +3614,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("180875"),
+				buildNumber: Object(r.c)("180929"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1671150028"),
+				buildTimestamp: Object(r.b)("1671481568"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6350,14 +6350,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cc7fb7e03c9790d7dc234ee7cef2456aa2f679901-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cb0ce56f9f53b23f288eea7c89536049e68214cf0-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "c7fb7e03c9790d7dc234ee7cef2456aa2f679901-production",
+						release: "b0ce56f9f53b23f288eea7c89536049e68214cf0-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6893,7 +6893,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "c7fb7e03c9790d7dc234ee7cef2456aa2f679901-production",
+							releaseClient: "b0ce56f9f53b23f288eea7c89536049e68214cf0-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -11980,7 +11980,7 @@
 					const r = e.events;
 					let s = [];
 					const o = e.media;
-					if (o && Object(C.F)(o) && o.gallery && A.includes(t)) {
+					if (o && Object(C.G)(o) && o.gallery && A.includes(t)) {
 						const e = o.gallery.items[n];
 						s = (null == e ? void 0 : e.adEvents) || []
 					}
@@ -12188,7 +12188,7 @@
 				}, Qe = (e, t, i) => async (n, r) => {
 					const s = Object(x.b)(r(), e.id),
 						o = Object(T.a)(e.id, s, t),
-						d = e.media && Object(C.F)(e.media) ? Object(ye.d)(r(), e.id) : void 0;
+						d = e.media && Object(C.G)(e.media) ? Object(ye.d)(r(), e.id) : void 0;
 					ze[t] && e.isSponsored && n(Ye(String(t), {
 						postId: e.id,
 						vendorMetadata: o,
@@ -12708,7 +12708,7 @@
 						o = Object(x.G)(s, {
 							postId: e
 						});
-					if (!(o && o.media && Object(C.K)(o.media) && o.media.isRichtextPreview)) return;
+					if (!(o && o.media && Object(C.L)(o.media) && o.media.isRichtextPreview)) return;
 					const d = await ((e, t) => Object($.a)(e, {
 						...J,
 						variables: t
@@ -24263,7 +24263,7 @@
 					} = e;
 					var r, s, o, d, a;
 					const l = n && m.g[n];
-					return (null === (r = null == t ? void 0 : t.video) || void 0 === r ? void 0 : r.embedUrl) && !i.isSurveyAd ? t.video.embedUrl : l === m.v.Twitter ? Object(m.E)(i.id) : (null === (o = null === (s = null == t ? void 0 : t.still) || void 0 === s ? void 0 : s.source) || void 0 === o ? void 0 : o.url) ? null === (a = null === (d = null == t ? void 0 : t.still) || void 0 === d ? void 0 : d.source) || void 0 === a ? void 0 : a.url : null
+					return (null === (r = null == t ? void 0 : t.video) || void 0 === r ? void 0 : r.embedUrl) && !i.isSurveyAd ? t.video.embedUrl : l === m.v.Twitter ? Object(m.F)(i.id) : (null === (o = null === (s = null == t ? void 0 : t.still) || void 0 === s ? void 0 : s.source) || void 0 === o ? void 0 : o.url) ? null === (a = null === (d = null == t ? void 0 : t.still) || void 0 === d ? void 0 : d.source) || void 0 === a ? void 0 : a.url : null
 				},
 				q = (e, t, i) => {
 					var n, r, s, o, d, a, l, u, c, _, p, h, f;
@@ -30720,19 +30720,19 @@
 			"use strict";
 			i.d(t, "v", (function() {
 				return n
-			})), i.d(t, "M", (function() {
-				return o
 			})), i.d(t, "N", (function() {
+				return o
+			})), i.d(t, "O", (function() {
 				return d
-			})), i.d(t, "H", (function() {
+			})), i.d(t, "I", (function() {
 				return a
-			})), i.d(t, "E", (function() {
-				return l
-			})), i.d(t, "G", (function() {
-				return u
 			})), i.d(t, "F", (function() {
+				return l
+			})), i.d(t, "H", (function() {
+				return u
+			})), i.d(t, "G", (function() {
 				return c
-			})), i.d(t, "K", (function() {
+			})), i.d(t, "L", (function() {
 				return _
 			})), i.d(t, "o", (function() {
 				return m
@@ -30744,13 +30744,13 @@
 				return f
 			})), i.d(t, "m", (function() {
 				return b
-			})), i.d(t, "z", (function() {
+			})), i.d(t, "A", (function() {
 				return g
 			})), i.d(t, "i", (function() {
 				return v
 			})), i.d(t, "p", (function() {
 				return w
-			})), i.d(t, "y", (function() {
+			})), i.d(t, "z", (function() {
 				return y
 			})), i.d(t, "b", (function() {
 				return E
@@ -30764,42 +30764,44 @@
 				return I
 			})), i.d(t, "e", (function() {
 				return R
-			})), i.d(t, "t", (function() {
-				return F
-			})), i.d(t, "u", (function() {
-				return C
-			})), i.d(t, "g", (function() {
-				return N
-			})), i.d(t, "h", (function() {
-				return A
-			})), i.d(t, "a", (function() {
-				return j
-			})), i.d(t, "s", (function() {
-				return P
-			})), i.d(t, "x", (function() {
-				return x
 			})), i.d(t, "w", (function() {
+				return F
+			})), i.d(t, "t", (function() {
+				return C
+			})), i.d(t, "u", (function() {
+				return N
+			})), i.d(t, "g", (function() {
+				return A
+			})), i.d(t, "h", (function() {
+				return j
+			})), i.d(t, "a", (function() {
+				return P
+			})), i.d(t, "s", (function() {
+				return x
+			})), i.d(t, "y", (function() {
 				return D
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "x", (function() {
 				return L
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "c", (function() {
 				return k
-			})), i.d(t, "A", (function() {
+			})), i.d(t, "f", (function() {
 				return B
-			})), i.d(t, "D", (function() {
-				return M
-			})), i.d(t, "C", (function() {
-				return U
-			})), i.d(t, "L", (function() {
-				return G
 			})), i.d(t, "B", (function() {
+				return M
+			})), i.d(t, "E", (function() {
+				return U
+			})), i.d(t, "D", (function() {
+				return G
+			})), i.d(t, "M", (function() {
 				return q
-			})), i.d(t, "O", (function() {
+			})), i.d(t, "C", (function() {
 				return V
-			})), i.d(t, "J", (function() {
+			})), i.d(t, "P", (function() {
 				return H
-			})), i.d(t, "I", (function() {
+			})), i.d(t, "K", (function() {
 				return W
+			})), i.d(t, "J", (function() {
+				return K
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n, r = i("./node_modules/node-libs-browser/node_modules/url/url.js"),
@@ -30838,9 +30840,10 @@
 				O = 486,
 				I = 700,
 				R = 822,
-				F = 363,
-				C = 645,
-				N = {
+				F = 2 * I,
+				C = 363,
+				N = 645,
+				A = {
 					"clyp.it": n.Clyp,
 					"gfycat.com": n.Gfycat,
 					"giphy.com": n.Giphy,
@@ -30852,21 +30855,21 @@
 					"youtube.com": n.YouTube,
 					"youtu.be": n.YouTube
 				},
-				A = new Set([n.Clyp, n.Gfycat, n.GfycatOld, n.Giphy, n.RedGIFS, n.SoundCloud, n.Spotify, n.Twitter, n.Vimeo, n.YouTube]),
-				j = new Set([n.BandCamp, n.Gfycat, n.GfycatOld, n.Giphy, n.Imgur, n.RedGIFS, n.SoundCloud, n.Spotify, n.Streamable, n.Twitch, n.Twitter, n.YouTube, n.Vimeo]),
-				P = new Set([n.SoundCloud, n.Spotify, n.Streamable, n.Twitter, n.Vimeo, n.YouTube]),
-				x = new Set([n.Gfycat, n.GfycatOld, n.Imgur, n.RedGIFS]),
-				D = ["gif", "jpeg", "jpg", "png", "tiff"],
-				L = new Set([m.VIDEO, m.GIFVIDEO, m.EMBED]);
-			var k, B;
+				j = new Set([n.Clyp, n.Gfycat, n.GfycatOld, n.Giphy, n.RedGIFS, n.SoundCloud, n.Spotify, n.Twitter, n.Vimeo, n.YouTube]),
+				P = new Set([n.BandCamp, n.Gfycat, n.GfycatOld, n.Giphy, n.Imgur, n.RedGIFS, n.SoundCloud, n.Spotify, n.Streamable, n.Twitch, n.Twitter, n.YouTube, n.Vimeo]),
+				x = new Set([n.SoundCloud, n.Spotify, n.Streamable, n.Twitter, n.Vimeo, n.YouTube]),
+				D = new Set([n.Gfycat, n.GfycatOld, n.Imgur, n.RedGIFS]),
+				L = ["gif", "jpeg", "jpg", "png", "tiff"],
+				k = new Set([m.VIDEO, m.GIFVIDEO, m.EMBED]);
+			var B, M;
 			! function(e) {
 				e.Mute = "mute", e.Pause = "pause", e.Play = "play"
-			}(k || (k = {})),
+			}(B || (B = {})),
 			function(e) {
 				e.Pause = "pauseVideo", e.Play = "playVideo", e.Mute = "mute"
-			}(B || (B = {}));
-			const M = e => e.source ? e.source.url : e.media && e.media.type !== m.VIDEO && e.media.type !== m.LIVEAUDIO && e.media.content ? e.media.content : "",
-				U = e => {
+			}(M || (M = {}));
+			const U = e => e.source ? e.source.url : e.media && e.media.type !== m.VIDEO && e.media.type !== m.LIVEAUDIO && e.media.content ? e.media.content : "",
+				G = e => {
 					if (!d(e)) return;
 					const t = e;
 					let i;
@@ -30880,19 +30883,19 @@
 						if (t && t.pathname) return t.pathname.split("/")[1]
 					})(i)
 				},
-				G = (e, t) => {
+				q = (e, t) => {
 					return e / t > 16 / 9
 				},
-				q = (e, t, i) => i ? 100 * i : e && t ? e / t * 100 : 100 * E,
-				V = e => {
-					const t = M(e);
+				V = (e, t, i) => i ? 100 * i : e && t ? e / t * 100 : 100 * E,
+				H = e => {
+					const t = U(e);
 					return "v.redd.it" === s.a.parse(t).hostname
 				},
-				H = e => {
+				W = e => {
 					var t, i, n, r, s, o, d;
 					return (null === (t = e.media) || void 0 === t ? void 0 : t.hasOwnProperty("content")) || (null === (i = e.media) || void 0 === i ? void 0 : i.hasOwnProperty("dashUrl")) || (null === (n = e.media) || void 0 === n ? void 0 : n.hasOwnProperty("hlsUrl")) || (null === (r = e.media) || void 0 === r ? void 0 : r.hasOwnProperty("gallery")) || !!((null === (d = null === (o = null === (s = null == e ? void 0 : e.media) || void 0 === s ? void 0 : s.richtextContent) || void 0 === o ? void 0 : o.document) || void 0 === d ? void 0 : d.length) > 0) || !!(null == e ? void 0 : e.thumbnail)
 				},
-				W = e => {
+				K = e => {
 					var t, i, n, r, s;
 					const o = null == e ? void 0 : e.media;
 					return o && _(o) ? "[unavailable]" === (null === (s = null === (r = null === (n = null === (i = null === (t = null == o ? void 0 : o.richtextContent) || void 0 === t ? void 0 : t.document) || void 0 === i ? void 0 : i[0]) || void 0 === n ? void 0 : n.c) || void 0 === r ? void 0 : r[0]) || void 0 === s ? void 0 : s.t) : o && c(o) ? null === o.gallery : void 0
@@ -31861,7 +31864,7 @@
 					return (!i || !i.type) && !!e.source && Object(o.a)(e.source.url)
 				},
 				x = e => !!e.subcaption,
-				D = (e, t) => x(e) || ((e, t) => !!e.media && Object(u.F)(e.media) && !Object(_.b)(t))(e, t),
+				D = (e, t) => x(e) || ((e, t) => !!e.media && Object(u.G)(e.media) && !Object(_.b)(t))(e, t),
 				L = e => e.isStickied && !e.isSponsored,
 				k = e => R(e) && e.promotedUserPosts ? e.promotedUserPosts : [];
 			var B;
@@ -35924,7 +35927,7 @@
 						predictionTournament: o(t)
 					} : i
 				},
-				v = e => e.media && Object(l.F)(e.media) ? {
+				v = e => e.media && Object(l.G)(e.media) ? {
 					...Object(n.unsetIn)(e, ["source"])
 				} : e,
 				w = e => t => {
@@ -35933,7 +35936,7 @@
 				},
 				y = e => t => {
 					const i = e[t.id];
-					return t && t.media && i && i.media && Object(l.K)(t.media) && t.media.isRichtextPreview && Object(l.K)(i.media) && !i.media.isRichtextPreview && (t.media.richtextContent = i.media.richtextContent, t.media.isRichtextPreview = !1), t
+					return t && t.media && i && i.media && Object(l.L)(t.media) && t.media.isRichtextPreview && Object(l.L)(i.media) && !i.media.isRichtextPreview && (t.media.richtextContent = i.media.richtextContent, t.media.isRichtextPreview = !1), t
 				},
 				E = e => t => {
 					const i = e[t.id];
@@ -37431,14 +37434,14 @@
 					const n = Object(u.V)(e, i);
 					return n && n.displayText || i && i.author && Object(o.e)(i.author)
 				},
-				h = (e, t, i) => Object(_.f)(e) && !Object(_.j)(e) && !!t && !!t.title && !t.isNSFW && !!t.media && (Object(d.G)(t.media) || Object(d.K)(t.media)) && (e => !!e && !!e.media && (Object(d.G)(e.media) && (e => /https?:\/\/i\.redd\.it/.test(e))(e.media.content) || Object(d.K)(e.media) && e.media.richtextContent && e.media.richtextContent.document && e.media.richtextContent.document.some(e => {
+				h = (e, t, i) => Object(_.f)(e) && !Object(_.j)(e) && !!t && !!t.title && !t.isNSFW && !!t.media && (Object(d.H)(t.media) || Object(d.L)(t.media)) && (e => !!e && !!e.media && (Object(d.H)(e.media) && (e => /https?:\/\/i\.redd\.it/.test(e))(e.media.content) || Object(d.L)(e.media) && e.media.richtextContent && e.media.richtextContent.document && e.media.richtextContent.document.some(e => {
 					let {
 						e: t
 					} = e;
 					return t === a.m
 				})))(t) && (i && !t.media.altText || !i),
 				f = (e, t) => {
-					const i = !!t && !!t.media && (Object(d.G)(t.media) || Object(d.K)(t.media)) && t.media.altText;
+					const i = !!t && !!t.media && (Object(d.H)(t.media) || Object(d.L)(t.media)) && t.media.altText;
 					return h(e, t, !1) && !!i && i.length <= 250 && t.title.toLowerCase() !== i.toLowerCase()
 				},
 				b = Object(n.a)(c.S, m, (e, t) => !e && t),
@@ -37462,7 +37465,7 @@
 					const i = Object(u.G)(e, {
 						postId: t
 					});
-					return i && i.media && (Object(d.G)(i.media) || Object(d.K)(i.media)) ? i.media.altText : null
+					return i && i.media && (Object(d.H)(i.media) || Object(d.L)(i.media)) ? i.media.altText : null
 				},
 				S = e => !!Object(s.b)(e, {
 					experimentEligibilitySelector: s.a,
@@ -40081,7 +40084,7 @@
 						const e = Object.keys(i).length;
 						c.eventGlobalCount = e
 					}
-					if (t && t.media && Object(l.N)(t.media)) {
+					if (t && t.media && Object(l.O)(t.media)) {
 						const n = Object(g.h)(e, {
 								postId: t.id
 							}),
@@ -42867,7 +42870,7 @@
 					if (void 0 === n) return null;
 					const r = {};
 					if (r.id = n.postId, n.media && "v.redd.it" === n.domain) {
-						const e = Object(Y.C)(n.media);
+						const e = Object(Y.D)(n.media);
 						e && (r.id = e)
 					}
 					if (i) r.loadTime = i;
@@ -42882,7 +42885,7 @@
 				},
 				ft = (e, t, i) => {
 					const n = e.posts.models[t];
-					if (void 0 === n || !n.media || !Object(Y.F)(n.media)) return null;
+					if (void 0 === n || !n.media || !Object(Y.G)(n.media)) return null;
 					let r, s, o, d;
 					if (n.media.mediaMetadata && n.media.gallery) {
 						d = n.media.gallery.items.map(e => e.mediaId);
@@ -50217,4 +50220,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.58baf8bfe5c12418d6ea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1acfd065b338377eba23.js.map

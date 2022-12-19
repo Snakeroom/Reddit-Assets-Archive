@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.1721f879a8feb1a1271a.js
-// Retrieved at 12/15/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.358fb9e0474305550e83.js
+// Retrieved at 12/19/2022, 4:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -4929,7 +4929,7 @@
 				}),
 				O = Object(o.b)(y),
 				j = x.a.wrapped(h.a, "ThemedWidget", _.a),
-				k = e => !(!e || e.isBlank) && (!e.isMediaOnly || !!(e.media && Object(f.G)(e.media) && e.media.content)),
+				k = e => !(!e || e.isBlank) && (!e.isMediaOnly || !!(e.media && Object(f.H)(e.media) && e.media.content)),
 				A = [{
 					img: "/img/house-ads/eatcheapandhealthy.png",
 					href: "/r/eatcheapandhealthy"
@@ -6581,4 +6581,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.1721f879a8feb1a1271a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.358fb9e0474305550e83.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.293c20eee02aee9668ea.js
-// Retrieved at 12/15/2022, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.ad93d8e0c8fddffc986f.js
+// Retrieved at 12/19/2022, 4:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~PostCreation~ProfileComments~ProfileOverview~ProfilePrivate~Stan~7e460386", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~627063c1", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -1144,8 +1144,8 @@
 						const e = 36 - (null !== (t = null == a ? void 0 : a.length) && void 0 !== t ? t : 0);
 						return n.displayText.length > e ? n.displayText.substring(0, e - 3) + "..." : n.displayText
 					}
-					d = i || Object(s.D)(e)
-				} else d = Object(s.D)(e);
+					d = i || Object(s.E)(e)
+				} else d = Object(s.E)(e);
 				const c = o.a.parse(d),
 					l = c.path || "",
 					u = l.length > 7 ? l.substring(0, 7) + "..." : l;
@@ -20762,7 +20762,7 @@
 						if (r()(this.state.event, e) || this.setState({
 								event: e
 							}), this.props.trackDisplay) {
-							const t = this.props.post.media && Object(b.F)(this.props.post.media);
+							const t = this.props.post.media && Object(b.G)(this.props.post.media);
 							this.viewabilityStats.forEach(n => {
 								(n.event !== p.a.GalleryItemImpression || t) && this.checkViewability(e, n)
 							})
@@ -41686,7 +41686,7 @@
 						tabIndex: -1,
 						"data-adclicklocation": O.a.BACKGROUND
 					}, n), E = !!l.media && l.media.type === b.o.VIDEO;
-					return (e => l.media && Object(b.F)(l.media) && v ? r.a.createElement(u, {
+					return (e => l.media && Object(b.G)(l.media) && v ? r.a.createElement(u, {
 						postId: l.id
 					}, e) : e)((e => l.isSponsored || E ? r.a.createElement(a.a, {
 						post: l,
@@ -43789,7 +43789,7 @@
 					if (t || !e.isCommentsPage || e.isCommentPermalink || e.shouldLinkWrap) {
 						if (a) return i.a.createElement(f.a, {
 							className: e.outboundLinkClassName,
-							href: Object(k.D)(s),
+							href: Object(k.E)(s),
 							isSponsored: r,
 							postId: s.id,
 							source: s.source,
@@ -50579,11 +50579,11 @@
 						placeholderImage: y,
 						redditStyle: g,
 						theme: j
-					}), w = N(e), T = c ? h.SourceElement.PostImage : h.SourceElement.ListingPostImage, R = P(_, t, S, I, C, j, w, l, E, x, g, m, b, f, r), A = Object(p.D)(_);
+					}), w = N(e), T = c ? h.SourceElement.PostImage : h.SourceElement.ListingPostImage, R = P(_, t, S, I, C, j, w, l, E, x, g, m, b, f, r), A = Object(p.E)(_);
 					return Object(s.a)(A) && !x && A.indexOf("redditmedia") < 0 ? o.a.createElement("div", {
 						className: Object(i.a)(v.a.container, k ? v.a.usePreview : "", n)
 					}, o.a.createElement(u.b, {
-						href: Object(p.D)(_),
+						href: Object(p.E)(_),
 						isSponsored: _.isSponsored,
 						postId: _.id,
 						source: _.source,
@@ -77269,4 +77269,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.293c20eee02aee9668ea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.ad93d8e0c8fddffc986f.js.map
