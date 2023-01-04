@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.2891b329f7faed22e733.js
-// Retrieved at 1/4/2023, 10:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.72b4a494b4d381dd2bc8.js
+// Retrieved at 1/4/2023, 10:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, n) {
@@ -508,7 +508,7 @@
 			})), n.d(t, "hideSubredditSuccess", (function() {
 				return V
 			})), n.d(t, "hideSubredditPending", (function() {
-				return q
+				return K
 			})), n.d(t, "hideSubredditFailed", (function() {
 				return G
 			})), n.d(t, "unhideSubredditSuccess", (function() {
@@ -604,10 +604,10 @@
 							hk: "3RYtBz"
 						})
 					})));
-					const _ = K(e.queryParams);
+					const _ = q(e.queryParams);
 					await n(F(p, {
+						...i()(e.queryParams, m.q),
 						...i()(e.queryParams, m.p),
-						...i()(e.queryParams, m.o),
 						filtered: !!u || void 0,
 						moderated_srs: !0,
 						sort: d,
@@ -632,7 +632,7 @@
 						y = d.listings.postOrder.fetchedTokens,
 						x = !(!y[f] || !y[f][g.token]);
 					if (_ || x) return;
-					const O = K(b);
+					const O = q(b);
 					t(H({
 						key: f,
 						fetchedToken: g.token
@@ -643,7 +643,7 @@
 							filtered: !!p || void 0,
 							sort: u,
 							t: Object(S.a)(u, O),
-							...i()(b, m.p)
+							...i()(b, m.q)
 						}),
 						j = d.listings.postOrder.ids[f],
 						I = {
@@ -663,12 +663,12 @@
 					}))
 				};
 
-			function K(e) {
-				const t = m.K in e && e[m.K].toUpperCase() || "";
+			function q(e) {
+				const t = m.L in e && e[m.L].toUpperCase() || "";
 				return t in o.oc && o.oc[t]
 			}
 			const V = Object(d.a)(M.c),
-				q = Object(d.a)(M.b),
+				K = Object(d.a)(M.b),
 				G = Object(d.a)(M.a),
 				U = Object(d.a)(M.l),
 				J = Object(d.a)(M.k),
@@ -679,7 +679,7 @@
 					} = s;
 					const o = r(),
 						d = Object(P.m)(o),
-						[a, c, u, l] = t ? [q, V, G, O] : [J, U, Q, E];
+						[a, c, u, l] = t ? [K, V, G, O] : [J, U, Q, E];
 					if (!d || !d.displayText) return;
 					const {
 						currentPage: m
@@ -1737,14 +1737,14 @@
 				A = n("./src/reddit/controls/Button/index.tsx"),
 				B = n("./src/reddit/helpers/trackers/modListing.ts"),
 				D = n("./src/reddit/routes/modListing/index.ts");
-			const K = e => e.modListingPage.filteredSubreddits.api.pending;
+			const q = e => e.modListingPage.filteredSubreddits.api.pending;
 			var V = n("./src/reddit/constants/keycodes.ts"),
-				q = n("./src/reddit/layout/row/Inline/index.tsx"),
+				K = n("./src/reddit/layout/row/Inline/index.tsx"),
 				G = n("./src/reddit/components/ModListingSidebar/HideCommunities/HideInput/index.m.less"),
 				U = n.n(G);
 			const J = Object(a.c)({
 				apiError: e => e.modListingPage.filteredSubreddits.api.error,
-				isApiPending: K
+				isApiPending: q
 			});
 			class Q extends o.a.Component {
 				constructor() {
@@ -1768,7 +1768,7 @@
 					const {
 						props: e
 					} = this;
-					return o.a.createElement(o.a.Fragment, null, o.a.createElement(q.a, null, o.a.createElement("input", {
+					return o.a.createElement(o.a.Fragment, null, o.a.createElement(K.a, null, o.a.createElement("input", {
 						className: U.a.input,
 						onChange: this.onChange,
 						onKeyPress: this.onKeyPress,
@@ -1802,7 +1802,7 @@
 				te = n.n(ee);
 			const ne = X.a.wrapped(W.b, "SubredditIcon", te.a),
 				re = Object(a.c)({
-					isApiPending: K,
+					isApiPending: q,
 					subredditOrProfile: (e, t) => {
 						const n = Object($.C)(e, {
 							subredditName: t.subredditName
@@ -1943,7 +1943,7 @@
 					return Object(D.d)(n.path)
 				}, je.k, je.d, (e, t, n, r, i) => {
 					const o = s()([...Object(u.a)(e)]),
-						d = Oe.K in o && o[Oe.K].toUpperCase(),
+						d = Oe.L in o && o[Oe.L].toUpperCase(),
 						a = "string" == typeof d && d in c.oc ? c.oc[d] : c.pc,
 						m = n ? xe.f : xe.e;
 					return {
@@ -2084,4 +2084,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.2891b329f7faed22e733.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.72b4a494b4d381dd2bc8.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.1a2d4ad9f927a5869cf3.js
-// Retrieved at 1/4/2023, 10:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.6e42519d9c475ed8d6d7.js
+// Retrieved at 1/4/2023, 10:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -456,7 +456,7 @@
 						return
 					}
 					const j = {
-						...a()(e.queryParams, [...x.p, x.k]),
+						...a()(e.queryParams, [...x.q, x.l]),
 						sort: i,
 						t: Object(P.a)(i, _)
 					};
@@ -517,7 +517,7 @@
 						dist: f.dist,
 						sort: m,
 						t: p,
-						...a()(d, x.p),
+						...a()(d, x.q),
 						layout: Object(_.U)(o, {}).toLowerCase()
 					}, Object(N.a)(o));
 					if (E.ok) {
@@ -1672,7 +1672,7 @@
 				} = e, T = async () => {
 					if (i ? await I() : await Object(u.q)(), l) {
 						const e = new URL(window.location.href);
-						e.searchParams.set(P.j, "1"), window.location.href = e.href
+						e.searchParams.set(P.k, "1"), window.location.href = e.href
 					} else window.location.reload()
 				};
 				switch (s) {
@@ -6685,4 +6685,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.1a2d4ad9f927a5869cf3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.6e42519d9c475ed8d6d7.js.map

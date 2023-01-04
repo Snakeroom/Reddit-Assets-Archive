@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.2e8c3a539bead48794ba.js
-// Retrieved at 1/4/2023, 10:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.a26b5d7dd0d6210f1b52.js
+// Retrieved at 1/4/2023, 10:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -651,14 +651,14 @@
 				V = a("./src/lib/initializeClient/installReducer.ts"),
 				D = a("./src/reddit/reducers/features/marketplace/index.ts"),
 				H = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const K = Object(H.a)(h.Td);
-			var G = a("./src/redditGQL/types.ts");
+			const G = Object(H.a)(h.Td);
+			var W = a("./src/redditGQL/types.ts");
 			Object(V.a)({
 				features: {
 					marketplace: D.a
 				}
 			});
-			const W = (e, t) => {
+			const K = (e, t) => {
 					var a, n;
 					const {
 						after: s,
@@ -700,9 +700,9 @@
 						notificationContext: {
 							variant: null == _ ? void 0 : _.toLowerCase()
 						},
-						enableMerchandisingUnitAnnouncements: K(e)
+						enableMerchandisingUnitAnnouncements: G(e)
 					};
-					return f ? (j.sort = G.M.Best, j.feedRankingContext.variant = "lo_d2x_def_pop") : d && (j.sort = d.toUpperCase()), j.feedRankingContext.loggedOutAllowNsfw = Object(U.a)(e), m && (j.range = m.toUpperCase()), c ? j.pageSize = Object(g.a)(i) : l && (j.pageSize = l), x && x.ad && (j.forceAds = {
+					return f ? (j.sort = W.M.Best, j.feedRankingContext.variant = "lo_d2x_def_pop") : d && (j.sort = d.toUpperCase()), j.feedRankingContext.loggedOutAllowNsfw = Object(U.a)(e), m && (j.range = m.toUpperCase()), c ? j.pageSize = Object(g.a)(i) : l && (j.pageSize = l), x && x.ad && (j.forceAds = {
 						ad: x.ad
 					}), s && (j.after = Object(o.a)(s)), j
 				},
@@ -934,7 +934,7 @@
 					t.correlationId = f;
 					const _ = null === (o = null === (i = Object(B.b)(g)) || void 0 === i ? void 0 : i.routeMatch) || void 0 === o ? void 0 : o.route.chunk,
 						x = Object(Z.S)(g),
-						E = await Object(u.i)(() => z(r.gqlContext(), W(s(), t), Object(Z.bb)(g), t.statsdPathsForExperiments), {
+						E = await Object(u.i)(() => z(r.gqlContext(), K(s(), t), Object(Z.bb)(g), t.statsdPathsForExperiments), {
 							name: "fetchFrontpageData",
 							isLoggedIn: x,
 							page: _
@@ -987,7 +987,7 @@
 						u = c.listings.postOrder.api.error[d],
 						p = c.listings.postOrder.api.pending[d],
 						h = Object(de.b)(c),
-						b = ne.K in e.queryParams && e.queryParams[ne.K].toUpperCase() || "",
+						b = ne.L in e.queryParams && e.queryParams[ne.L].toUpperCase() || "",
 						g = b in l.oc && l.oc[b],
 						v = Q.f();
 					if (p || m && !u && !t) return void(m && (a($.m({
@@ -1001,8 +1001,8 @@
 						_ = Object(ce.b)(f),
 						x = [Object(ce.c)(f)];
 					await a(Pe(d, {
+						...r()(e.queryParams, ne.q),
 						...r()(e.queryParams, ne.p),
-						...r()(e.queryParams, ne.o),
 						limit: _,
 						sort: o,
 						statsdPathsForExperiments: x,
@@ -1044,7 +1044,7 @@
 						m = i.platform.currentPage ? i.platform.currentPage.queryParams : {},
 						u = Object(be.a)(ae.b, d, m),
 						p = i.listings.postOrder.loadMore[u],
-						h = m[ne.K] ? m[ne.K].toUpperCase() : "",
+						h = m[ne.L] ? m[ne.L].toUpperCase() : "",
 						b = h in l.oc && l.oc[h];
 					if (p) {
 						const e = i.listings.postOrder.api.pending[u],
@@ -1062,7 +1062,7 @@
 								h = {
 									after: p.token,
 									dist: p.dist,
-									...r()(m, ne.p),
+									...r()(m, ne.q),
 									isMobile: Object(c.e)(i.meta.userAgent),
 									limit: o,
 									sort: d,
@@ -1075,7 +1075,7 @@
 								t && (h.clickUrl = t)
 							}
 							h.correlationId = i.listings.postOrder.correlationIds[u];
-							const g = () => z(s(), W(i, h), Object(Z.bb)(i), l),
+							const g = () => z(s(), K(i, h), Object(Z.bb)(i), l),
 								v = await g(),
 								f = {
 									...v.body,
@@ -1107,7 +1107,7 @@
 						} = e,
 						c = n.platform.currentPage ? n.platform.currentPage.queryParams : {},
 						i = Object(be.a)(ae.b, r, c),
-						o = c[ne.K] ? c[ne.K].toUpperCase() : "",
+						o = c[ne.L] ? c[ne.L].toUpperCase() : "",
 						d = o in l.oc && l.oc[o],
 						m = Object(ce.a)(n),
 						u = Object(ce.b)(m);
@@ -2982,10 +2982,10 @@
 				V = a("./src/reddit/featureFlags/component.tsx"),
 				D = a("./src/reddit/helpers/localStorage/index.ts"),
 				H = a("./src/reddit/helpers/name/index.ts"),
-				K = a("./src/lib/makeApiRequest/index.ts"),
-				G = a("./src/lib/omitHeaders/index.ts"),
-				W = a("./src/reddit/constants/headers.ts");
-			const z = e => Object(K.a)(Object(G.a)(e, [W.a]), {
+				G = a("./src/lib/makeApiRequest/index.ts"),
+				W = a("./src/lib/omitHeaders/index.ts"),
+				K = a("./src/reddit/constants/headers.ts");
+			const z = e => Object(G.a)(Object(W.a)(e, [K.a]), {
 				endpoint: `${e.apiUrl}/api/multi/user/CommunityAdoptionBot/m/adoption_week/`,
 				method: B.ob.GET,
 				type: "json"
@@ -5558,9 +5558,9 @@
 				V = a("./src/reddit/helpers/trackers/screenview.ts"),
 				D = a("./src/reddit/hooks/useSessionBlockingModal.tsx"),
 				H = a("./src/reddit/layout/page/Listing/index.tsx"),
-				K = a("./src/reddit/selectors/experiments/econ/index.ts"),
-				G = a("./src/reddit/selectors/experiments/econ/avatarBanner.ts"),
-				W = a("./src/reddit/selectors/experiments/econ/marketplace.ts"),
+				G = a("./src/reddit/selectors/experiments/econ/index.ts"),
+				W = a("./src/reddit/selectors/experiments/econ/avatarBanner.ts"),
+				K = a("./src/reddit/selectors/experiments/econ/marketplace.ts"),
 				z = a("./src/reddit/selectors/experiments/inAppNotification.ts"),
 				Q = a("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
 				X = a("./src/reddit/selectors/experiments/onboarding.ts"),
@@ -5616,10 +5616,10 @@
 				layout: Z.U,
 				isBlockingInterstitialEnabled: Q.b,
 				isBlockingInterstitialV2Enabled: Q.c,
-				isTalkLiveBarEnabled: K.q,
+				isTalkLiveBarEnabled: G.q,
 				interestTopicRecommendations: se.b,
 				reonboardingFlow: X.j,
-				marketplaceFeedUnit: e => Object(W.a)(e) ? Object(ee.a)(e) : null,
+				marketplaceFeedUnit: e => Object(K.a)(e) ? Object(ee.a)(e) : null,
 				merchandasingUnitAnnouncements: ae.a,
 				inAppNotifications: te.b,
 				inAppNotificationsPosition: te.a,
@@ -5630,12 +5630,12 @@
 					queryParams: r,
 					sort: c
 				} = t;
-				const i = F.K in r && r[F.K].toUpperCase(),
+				const i = F.L in r && r[F.L].toUpperCase(),
 					o = "string" == typeof i && i in ce.oc ? ce.oc[i] : ce.pc,
 					l = Object(b.a)(oe.b, c, r),
 					d = e;
 				return {
-					avatarBanner: a.layout === B.g.Large ? Object(G.b)(n) : null,
+					avatarBanner: a.layout === B.g.Large ? Object(W.b)(n) : null,
 					cardViewExperimentVariant: s,
 					countrySort: d,
 					listingKey: l,
@@ -6265,4 +6265,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.2e8c3a539bead48794ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.a26b5d7dd0d6210f1b52.js.map

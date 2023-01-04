@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.4a923803b1cdde0cfcb0.js
-// Retrieved at 1/4/2023, 10:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.bdac1d80e499cc096d47.js
+// Retrieved at 1/4/2023, 10:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -1406,7 +1406,7 @@
 					const h = f.e[Object(v.U)(s(), {})],
 						g = p.toLowerCase(),
 						E = {
-							...o()(e.queryParams, x.p),
+							...o()(e.queryParams, x.q),
 							sort: m,
 							layout: h,
 							t: u
@@ -3209,7 +3209,7 @@
 				} = e, L = async () => {
 					if (i ? await N() : await Object(u.q)(), l) {
 						const e = new URL(window.location.href);
-						e.searchParams.set(P.j, "1"), window.location.href = e.href
+						e.searchParams.set(P.k, "1"), window.location.href = e.href
 					} else window.location.reload()
 				};
 				switch (s) {
@@ -11626,4 +11626,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.4a923803b1cdde0cfcb0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.bdac1d80e499cc096d47.js.map

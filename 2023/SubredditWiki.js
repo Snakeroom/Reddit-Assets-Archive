@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.063842c69eb9bba888e9.js
-// Retrieved at 1/4/2023, 10:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.027d147afdeb6ee6c301.js
+// Retrieved at 1/4/2023, 10:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1469,7 +1469,7 @@
 							subredditName: d = T.e,
 							wikiPageName: c,
 							wikiSubRoute: l
-						} = e, u = t[I.P], m = t[I.Q], p = u ? Object(x.a)(u) : void 0, b = m ? Object(x.a)(m) : void 0, h = c === T.j, _ = l === T.m.Revisions;
+						} = e, u = t[I.Q], m = t[I.R], p = u ? Object(x.a)(u) : void 0, b = m ? Object(x.a)(m) : void 0, h = c === T.j, _ = l === T.m.Revisions;
 						let y = !1,
 							k = !1;
 						if (n) {
@@ -3638,7 +3638,7 @@
 				} = e, D = async () => {
 					if (o ? await N() : await Object(m.q)(), l) {
 						const e = new URL(window.location.href);
-						e.searchParams.set(S.j, "1"), window.location.href = e.href
+						e.searchParams.set(S.k, "1"), window.location.href = e.href
 					} else window.location.reload()
 				};
 				switch (n) {
@@ -7768,7 +7768,7 @@
 			}
 			const E = 129,
 				O = Object(h.v)({
-					filterName: e => Object(h.Z)(e)[b.i],
+					filterName: e => Object(h.Z)(e)[b.j],
 					url: e => Object(h.fb)(e)
 				}),
 				j = Object(o.c)({
@@ -9312,7 +9312,7 @@
 					} = e, {
 						wikiSubRoute: i,
 						wikiPageName: a
-					} = n, o = s[v.P], d = s[v.Q], c = v.R in s;
+					} = n, o = s[v.Q], d = s[v.R], c = v.S in s;
 					switch (i) {
 						case _.m.Create:
 						case _.m.Edit:
@@ -9677,4 +9677,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.063842c69eb9bba888e9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.027d147afdeb6ee6c301.js.map
