@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.6d04a57a0462b7e44ab5.js
-// Retrieved at 1/4/2023, 10:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.381444f1bc1acb0d4d2b.js
+// Retrieved at 1/4/2023, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit", "ContributorRequestButton", "schedulePickerModal"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, n) {},
@@ -4187,7 +4187,7 @@
 						}));
 						const o = Object(j.b)(d);
 						l.kind !== k.p.LINK && l.kind !== k.p.RICH_TEXT && l.kind !== k.p.MARKDOWN || m || !o || t(Object(i.c)());
-						const r = (n.path || `/user/${Object(S.e)(e)}/posts`).replace(/^\/r\/u_/, "/user/");
+						const r = (n.path || `/user/${Object(S.e)(e)}/submitted`).replace(/^\/r\/u_/, "/user/");
 						t(Object(c.subredditInvalidateListing)(l.destSubreddit.name)), t(Object(u.a)(r, !1))
 					} else {
 						if (m) {
@@ -38184,4 +38184,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.6d04a57a0462b7e44ab5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.381444f1bc1acb0d4d2b.js.map

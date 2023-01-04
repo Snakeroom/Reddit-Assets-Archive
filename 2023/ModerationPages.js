@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.2506a08246678b87228c.js
-// Retrieved at 1/4/2023, 10:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.2eab79d68d88a0ae94bb.js
+// Retrieved at 1/4/2023, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~PostCreation~ProfileComments~ProfileOverview~ProfilePrivate~Stan~7e460386", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~627063c1", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -12863,7 +12863,7 @@
 						}));
 						const s = Object(I.b)(c);
 						l.kind !== j.p.LINK && l.kind !== j.p.RICH_TEXT && l.kind !== j.p.MARKDOWN || m || !s || t(Object(i.c)());
-						const r = (n.path || `/user/${Object(k.e)(e)}/posts`).replace(/^\/r\/u_/, "/user/");
+						const r = (n.path || `/user/${Object(k.e)(e)}/submitted`).replace(/^\/r\/u_/, "/user/");
 						t(Object(d.subredditInvalidateListing)(l.destSubreddit.name)), t(Object(u.a)(r, !1))
 					} else {
 						if (m) {
@@ -77257,4 +77257,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.2506a08246678b87228c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.2eab79d68d88a0ae94bb.js.map
