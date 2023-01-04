@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.52dae180ce80269d8da8.js
-// Retrieved at 1/4/2023, 10:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.06530da0387f7161f783.js
+// Retrieved at 1/4/2023, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -927,7 +927,7 @@
 									draftKey: j,
 									upload: T
 								})), t) {
-								const e = Object(ce.j)(_);
+								const e = Object(ce.i)(_);
 								Object(a.a)(!!e)
 							}
 							const s = Object(de.G)(h(), {
@@ -1058,7 +1058,7 @@
 								depth: b + 1,
 								upload: S
 							})), t) {
-							const e = Object(ce.j)(O);
+							const e = Object(ce.i)(O);
 							Object(a.a)(!!e)
 						}
 					} else {
@@ -5914,7 +5914,7 @@
 						userName: null == t ? void 0 : t.bannedBy
 					}) : null),
 					r = Object(b.b)(t),
-					c = Object(i.e)(e => Object(Oe.Y)(e, {
+					c = Object(i.e)(e => Object(Oe.X)(e, {
 						subredditId: r ? t.belongsTo.id : t.subredditId
 					})),
 					d = r && t.removedByCategory ? t.removedByCategory : null,
@@ -6773,7 +6773,7 @@
 				const s = Object(c.e)(e => Object(x.G)(e, {
 						postId: t
 					})),
-					r = Object(c.e)(e => "subreddit" === (null == s ? void 0 : s.belongsTo.type) ? Object(g.Y)(e, {
+					r = Object(c.e)(e => "subreddit" === (null == s ? void 0 : s.belongsTo.type) ? Object(g.X)(e, {
 						subredditId: s.belongsTo.id
 					}) : null);
 				return r ? o.a.createElement(v.a, {
@@ -7992,7 +7992,7 @@
 				r = n("./src/reddit/actions/subscription/index.ts"),
 				a = n("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(s.b)(() => Object(o.c)({
-				userIsSubscriber: a.kb
+				userIsSubscriber: a.jb
 			}), (e, t) => {
 				let {
 					identifier: n
@@ -8353,7 +8353,7 @@
 					pageLayer: b
 				})), V = Object(a.e)(e => Object(f.s)(e, {
 					pageLayer: b
-				})), G = Object(a.e)(e => Object(C.j)(e));
+				})), G = Object(a.e)(e => Object(C.i)(e));
 				var W, K, q;
 
 				function H() {
@@ -9149,7 +9149,7 @@
 				l = n("./src/telemetry/index.ts"),
 				u = n("./src/reddit/constants/richTextJson.ts");
 			const m = e => {
-					const t = Object(c.p)(e);
+					const t = Object(c.o)(e);
 					return {
 						source: "comment_composer",
 						action: o.c.CLICK,
@@ -9999,7 +9999,7 @@
 					subreddit: i.lb(e)
 				}),
 				d = (e, t, n) => s => ({
-					source: Object(a.j)(s) || n ? "post_lightbox" : "post_detail",
+					source: Object(a.i)(s) || n ? "post_lightbox" : "post_detail",
 					action: "click",
 					noun: t,
 					...c(s),
@@ -10024,7 +10024,7 @@
 				u = (e, t) => n => {
 					const s = i.k(n);
 					return s ? d(s.id, e, t)(n) : {
-						source: Object(a.j)(n) || t ? "post_lightbox" : "post_detail",
+						source: Object(a.i)(n) || t ? "post_lightbox" : "post_detail",
 						action: "click",
 						noun: e,
 						...c(n)
@@ -12715,7 +12715,7 @@
 				a = n("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(o.mg)(t)
+					return Boolean(t) && !Object(o.lg)(t)
 				},
 				c = Object(s.a)(i, r.d, (e, t) => e && !t)
 		},
@@ -12889,4 +12889,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.52dae180ce80269d8da8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.06530da0387f7161f783.js.map

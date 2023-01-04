@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.72b4a494b4d381dd2bc8.js
-// Retrieved at 1/4/2023, 10:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.8c66b36c941e56296a6e.js
+// Retrieved at 1/4/2023, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, n) {
@@ -329,13 +329,13 @@
 				_ = (Object(m.a)((e, t) => {
 					const n = _(e, t);
 					if (!n) return g;
-					const r = Object(h.cb)(e, {
+					const r = Object(h.bb)(e, {
 						subredditName: n.name
 					});
 					return r && r.postIds && r.postIds.length ? r.postIds : g
 				}), (e, t) => {
 					const n = e.focusedVerticals.recommendedSubredditIds && e.focusedVerticals.recommendedSubredditIds[t];
-					return n ? Object(h.Y)(e, {
+					return n ? Object(h.X)(e, {
 						subredditId: n
 					}) : null
 				}),
@@ -518,9 +518,9 @@
 			})), n.d(t, "unhideSubredditFailed", (function() {
 				return Q
 			})), n.d(t, "toggleHiddenSubreddit", (function() {
-				return Y
-			})), n.d(t, "hideSubreddit", (function() {
 				return X
+			})), n.d(t, "hideSubreddit", (function() {
+				return Y
 			})), n.d(t, "unhideSubreddit", (function() {
 				return W
 			}));
@@ -616,7 +616,7 @@
 						title: r.fbt._("Subreddits you moderate", null, {
 							hk: "3RYtBz"
 						})
-					})), Object(C.h)(s(), !0)
+					})), Object(C.g)(s(), !0)
 				}, H = Object(d.a)(M.i), A = Object(d.a)(M.h), B = Object(d.a)(M.g), D = e => async (t, n, r) => {
 					let {
 						apiContext: s
@@ -673,7 +673,7 @@
 				U = Object(d.a)(M.l),
 				J = Object(d.a)(M.k),
 				Q = Object(d.a)(M.j),
-				Y = (e, t) => async (n, r, s) => {
+				X = (e, t) => async (n, r, s) => {
 					let {
 						apiContext: i
 					} = s;
@@ -688,7 +688,7 @@
 					n(a(e));
 					const b = await l(i(), d.displayText, e);
 					b.ok ? (await n(R(m.routeMatch.match, !0)), n(c(e))) : n(u(b.body))
-				}, X = e => Y(e, !0), W = e => Y(e, !1)
+				}, Y = e => X(e, !0), W = e => X(e, !1)
 		},
 		"./src/reddit/actions/postList.ts": function(e, t, n) {
 			"use strict";
@@ -1262,7 +1262,7 @@
 						} = t;
 						return Object(v.D)(e, n, r, s)
 					}),
-					subredditsById: x.fb,
+					subredditsById: x.eb,
 					viewportDataLoaded: O.a,
 					pageReferrer: b.X,
 					postListPlaceholderComponent: () => f.a,
@@ -1790,17 +1790,17 @@
 					}, e.apiError.explanation))
 				}
 			}
-			var Y = Object(d.b)(J, e => ({
+			var X = Object(d.b)(J, e => ({
 					hide: t => e(Object(m.hideSubreddit)(t))
 				}))(Object(R.c)(Q)),
-				X = n("./src/lib/lessComponent.tsx"),
+				Y = n("./src/lib/lessComponent.tsx"),
 				W = n("./src/reddit/components/SubredditIcon/index.tsx"),
 				Z = n("./src/reddit/icons/fonts/Clear/index.tsx"),
 				z = n("./src/reddit/selectors/profile.ts"),
 				$ = n("./src/reddit/selectors/subreddit.ts"),
 				ee = n("./src/reddit/components/ModListingSidebar/HideCommunities/SubredditsList/SubredditsListRow/index.m.less"),
 				te = n.n(ee);
-			const ne = X.a.wrapped(W.b, "SubredditIcon", te.a),
+			const ne = Y.a.wrapped(W.b, "SubredditIcon", te.a),
 				re = Object(a.c)({
 					isApiPending: q,
 					subredditOrProfile: (e, t) => {
@@ -1900,7 +1900,7 @@
 						hk: "YdVw7"
 					})), e.filtered && o.a.createElement("div", {
 						className: le.a.inputContainer
-					}, o.a.createElement(Y, null), o.a.createElement(ce, {
+					}, o.a.createElement(X, null), o.a.createElement(ce, {
 						hiddenSubredditsNames: e.hiddenSubredditsNames
 					})))
 				}
@@ -1963,7 +1963,7 @@
 				}));
 			class ke extends o.a.PureComponent {
 				constructor() {
-					super(...arguments), this.onViewed = (e, t) => Object(Ee.f)({
+					super(...arguments), this.onViewed = (e, t) => Object(Ee.e)({
 						key: this.props.listingKey,
 						sort: this.props.sort,
 						timerType: t,
@@ -2070,7 +2070,7 @@
 						experimentEligibilitySelector: i.S,
 						experimentName: r.vd
 					});
-					return !(!t || Object(r.mg)(t))
+					return !(!t || Object(r.lg)(t))
 				},
 				d = e => {
 					return Object(s.c)(e, {
@@ -2084,4 +2084,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.72b4a494b4d381dd2bc8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.8c66b36c941e56296a6e.js.map

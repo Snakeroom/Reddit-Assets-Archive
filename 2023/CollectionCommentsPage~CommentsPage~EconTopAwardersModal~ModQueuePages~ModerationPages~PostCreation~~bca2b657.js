@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657.c67f4d35e0a7a1690089.js
-// Retrieved at 1/4/2023, 10:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657.131252609e5cfde76d7e.js
+// Retrieved at 1/4/2023, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -1931,7 +1931,7 @@
 				}
 			}));
 			var O = Object(n.b)(() => Object(a.c)({
-					subreddit: f.Y
+					subreddit: f.X
 				}))(e => o.a.createElement(p, {
 					className: e.className,
 					type: "communityTools",
@@ -2031,7 +2031,7 @@
 				}) : null
 			};
 			var y = Object(n.b)(() => Object(a.c)({
-				subreddit: f.Y
+				subreddit: f.X
 			}))(e => o.a.createElement(p, {
 				className: e.className,
 				type: "sidebar",
@@ -2063,7 +2063,7 @@
 					let {
 						subredditId: r
 					} = t;
-					return r ? Object(f.Y)(e, {
+					return r ? Object(f.X)(e, {
 						subredditId: r
 					}) : null
 				}
@@ -3760,7 +3760,7 @@
 						experimentEligibilitySelector: n.S,
 						experimentName: s.vd
 					});
-					return !(!t || Object(s.mg)(t))
+					return !(!t || Object(s.lg)(t))
 				},
 				i = e => {
 					return Object(o.c)(e, {
@@ -3826,4 +3826,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657.c67f4d35e0a7a1690089.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657.131252609e5cfde76d7e.js.map

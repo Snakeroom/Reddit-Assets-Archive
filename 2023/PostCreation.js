@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.381444f1bc1acb0d4d2b.js
-// Retrieved at 1/4/2023, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.700419b8d253754e8164.js
+// Retrieved at 1/4/2023, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit", "ContributorRequestButton", "schedulePickerModal"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, n) {},
@@ -2055,7 +2055,7 @@
 									draftKey: O,
 									upload: I
 								})), t) {
-								const e = Object(ce.j)(C);
+								const e = Object(ce.i)(C);
 								Object(i.a)(!!e)
 							}
 							const o = Object(de.G)(f(), {
@@ -2186,7 +2186,7 @@
 								depth: h + 1,
 								upload: j
 							})), t) {
-							const e = Object(ce.j)(y);
+							const e = Object(ce.i)(y);
 							Object(i.a)(!!e)
 						}
 					} else {
@@ -5385,7 +5385,7 @@
 							type: e.type,
 							name: i.name
 						},
-						v = () => Object(O.kb)(n(), {
+						v = () => Object(O.jb)(n(), {
 							identifier: y
 						});
 					(v() || (await t(R([y], !0)), v())) && (t(M({
@@ -7625,7 +7625,7 @@
 
 			function d(e) {
 				const t = Object(s.d)(),
-					n = Object(s.e)(t => Object(c.Y)(t, {
+					n = Object(s.e)(t => Object(c.X)(t, {
 						subredditId: e
 					})),
 					o = Object(s.e)(t => Object(a.i)(t, {
@@ -8496,7 +8496,7 @@
 						let {
 							post: n
 						} = t;
-						return Object(g.Y)(e, {
+						return Object(g.X)(e, {
 							subredditId: n.belongsTo.id
 						}).name
 					}
@@ -12070,7 +12070,7 @@
 					const o = Object(f.s)(e, {
 						pageLayer: n
 					});
-					return o && Object(C.X)(e, {
+					return o && Object(C.W)(e, {
 						subredditId: o.id
 					})
 				}, e => (e || []).filter(e => R.has(e.kind))),
@@ -20925,7 +20925,7 @@
 				s = n("./src/reddit/actions/subscription/index.ts"),
 				i = n("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(o.b)(() => Object(r.c)({
-				userIsSubscriber: i.kb
+				userIsSubscriber: i.jb
 			}), (e, t) => {
 				let {
 					identifier: n
@@ -21791,7 +21791,7 @@
 					pageLayer: h
 				})), K = Object(i.e)(e => Object(b.s)(e, {
 					pageLayer: h
-				})), W = Object(i.e)(e => Object(_.j)(e));
+				})), W = Object(i.e)(e => Object(_.i)(e));
 				var H, G, V;
 
 				function z() {
@@ -23059,7 +23059,7 @@
 						includeUserProfile: o,
 						substring: r.rawString
 					})
-				}, e => Object(Q.rb)(e) && Object(q.k)(e), (e, t, n) => {
+				}, e => Object(Q.rb)(e) && Object(q.j)(e), (e, t, n) => {
 					const {
 						suggestedItems: o,
 						fallbackItems: r,
@@ -25321,7 +25321,7 @@
 				l = n("./src/telemetry/index.ts"),
 				u = n("./src/reddit/constants/richTextJson.ts");
 			const m = e => {
-					const t = Object(c.p)(e);
+					const t = Object(c.o)(e);
 					return {
 						source: "comment_composer",
 						action: r.c.CLICK,
@@ -30411,7 +30411,7 @@
 					C = Object(s.e)(e => Object(gt.q)(e, {
 						pageLayer: E
 					})),
-					x = Object(s.e)(e => Object($.Y)(e, {
+					x = Object(s.e)(e => Object($.X)(e, {
 						subredditId: C
 					})),
 					_ = Object(s.e)(e => Object(qn.b)(e, {
@@ -31049,7 +31049,7 @@
 								subredditId: n
 							}
 						} = t;
-						return n ? Object($.Y)(e, {
+						return n ? Object($.X)(e, {
 							subredditId: n
 						}) : void 0
 					},
@@ -34572,7 +34572,7 @@
 					const e = this.props.pageLayer;
 					if (e) {
 						const t = Object(Pu.a)(e.urlParams);
-						He.c.has(t) && this.props.sendEvent(Object(Nu.l)(t, Ru.TimerType.InApp, He.c.end(t)))
+						He.c.has(t) && this.props.sendEvent(Object(Nu.k)(t, Ru.TimerType.InApp, He.c.end(t)))
 					}
 				}
 				UNSAFE_componentWillReceiveProps(e) {
@@ -38184,4 +38184,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.381444f1bc1acb0d4d2b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.700419b8d253754e8164.js.map

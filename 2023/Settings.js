@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.56a8d75851951527a1cd.js
-// Retrieved at 1/4/2023, 10:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.afcab7ee8c3672224552.js
+// Retrieved at 1/4/2023, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -2712,7 +2712,7 @@
 				}
 			}));
 			var j = Object(a.b)(() => Object(r.c)({
-					subreddit: f.Y
+					subreddit: f.X
 				}))(e => o.a.createElement(p, {
 					className: e.className,
 					type: "communityTools",
@@ -2812,7 +2812,7 @@
 				}) : null
 			};
 			var O = Object(a.b)(() => Object(r.c)({
-				subreddit: f.Y
+				subreddit: f.X
 			}))(e => o.a.createElement(p, {
 				className: e.className,
 				type: "sidebar",
@@ -2844,7 +2844,7 @@
 					let {
 						subredditId: n
 					} = t;
-					return n ? Object(f.Y)(e, {
+					return n ? Object(f.X)(e, {
 						subredditId: n
 					}) : null
 				}
@@ -12626,4 +12626,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.56a8d75851951527a1cd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.afcab7ee8c3672224552.js.map

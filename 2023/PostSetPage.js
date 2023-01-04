@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostSetPage.e86d696807dd2645e296.js
-// Retrieved at 1/4/2023, 10:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostSetPage.dd466bea102779a0a356.js
+// Retrieved at 1/4/2023, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostSetPage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -289,13 +289,13 @@
 				x = (Object(m.a)((e, t) => {
 					const n = x(e, t);
 					if (!n) return g;
-					const r = Object(h.cb)(e, {
+					const r = Object(h.bb)(e, {
 						subredditName: n.name
 					});
 					return r && r.postIds && r.postIds.length ? r.postIds : g
 				}), (e, t) => {
 					const n = e.focusedVerticals.recommendedSubredditIds && e.focusedVerticals.recommendedSubredditIds[t];
-					return n ? Object(h.Y)(e, {
+					return n ? Object(h.X)(e, {
 						subredditId: n
 					}) : null
 				}),
@@ -2281,7 +2281,7 @@
 						} = t;
 						return Object(v.D)(e, n, r, s)
 					}),
-					subredditsById: _.fb,
+					subredditsById: _.eb,
 					viewportDataLoaded: E.a,
 					pageReferrer: b.X,
 					postListPlaceholderComponent: () => f.a,
@@ -2884,4 +2884,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.e86d696807dd2645e296.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.dd466bea102779a0a356.js.map

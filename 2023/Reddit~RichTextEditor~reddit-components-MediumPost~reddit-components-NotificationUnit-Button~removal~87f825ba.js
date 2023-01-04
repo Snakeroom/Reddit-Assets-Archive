@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.23b8290d6978615ad67c.js
-// Retrieved at 1/4/2023, 10:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.0dd050d798f48b8e8d92.js
+// Retrieved at 1/4/2023, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba"], {
 		"./src/lib/scroll/index.ts": function(e, t, o) {
@@ -361,7 +361,7 @@
 									draftKey: S,
 									upload: I
 								})), t) {
-								const e = Object(ae.j)(C);
+								const e = Object(ae.i)(C);
 								Object(c.a)(!!e)
 							}
 							const n = Object(de.G)(O(), {
@@ -492,7 +492,7 @@
 								depth: b + 1,
 								upload: w
 							})), t) {
-							const e = Object(ae.j)(g);
+							const e = Object(ae.i)(g);
 							Object(c.a)(!!e)
 						}
 					} else {
@@ -1599,7 +1599,7 @@
 					pageLayer: b
 				})), H = Object(c.e)(e => Object(h.s)(e, {
 					pageLayer: b
-				})), U = Object(c.e)(e => Object(_.j)(e));
+				})), U = Object(c.e)(e => Object(_.i)(e));
 				var G, W, q;
 
 				function J() {
@@ -1904,7 +1904,7 @@
 				l = o("./src/telemetry/index.ts"),
 				m = o("./src/reddit/constants/richTextJson.ts");
 			const u = e => {
-					const t = Object(a.p)(e);
+					const t = Object(a.o)(e);
 					return {
 						source: "comment_composer",
 						action: r.c.CLICK,
@@ -2135,4 +2135,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.23b8290d6978615ad67c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.0dd050d798f48b8e8d92.js.map
