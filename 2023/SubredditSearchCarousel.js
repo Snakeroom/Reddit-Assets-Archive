@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditSearchCarousel.a377f92a7892d1192266.js
-// Retrieved at 1/4/2023, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditSearchCarousel.55659ca064a67489c722.js
+// Retrieved at 1/4/2023, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditSearchCarousel"], {
 		"./src/reddit/actions/subreddit/subredditCarousel.ts": function(e, t, s) {
@@ -136,7 +136,7 @@
 						source: "similar_communities",
 						action: "view",
 						noun: "module",
-						subreddit: e ? Object(E.X)(t, {
+						subreddit: e ? Object(E.Y)(t, {
 							subredditId: e
 						}) : void 0
 					}))(a))
@@ -211,7 +211,7 @@
 					actionInfo: {
 						reason: `${s}`
 					},
-					subreddit: Object(E.X)(r, {
+					subreddit: Object(E.Y)(r, {
 						subredditId: t
 					})
 				}))(e ? "unsubsribe" : "subscribe", t, s), [t]);
@@ -478,4 +478,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditSearchCarousel.a377f92a7892d1192266.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditSearchCarousel.55659ca064a67489c722.js.map

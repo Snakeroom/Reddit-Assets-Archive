@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657.815f70a86c9f4e002c65.js
-// Retrieved at 1/4/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657.c67f4d35e0a7a1690089.js
+// Retrieved at 1/4/2023, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -1931,7 +1931,7 @@
 				}
 			}));
 			var O = Object(n.b)(() => Object(a.c)({
-					subreddit: f.X
+					subreddit: f.Y
 				}))(e => o.a.createElement(p, {
 					className: e.className,
 					type: "communityTools",
@@ -2031,7 +2031,7 @@
 				}) : null
 			};
 			var y = Object(n.b)(() => Object(a.c)({
-				subreddit: f.X
+				subreddit: f.Y
 			}))(e => o.a.createElement(p, {
 				className: e.className,
 				type: "sidebar",
@@ -2063,7 +2063,7 @@
 					let {
 						subredditId: r
 					} = t;
-					return r ? Object(f.X)(e, {
+					return r ? Object(f.Y)(e, {
 						subredditId: r
 					}) : null
 				}
@@ -3700,7 +3700,7 @@
 					return !!r && r.hasGifProduct
 				},
 				q = (e, t, r) => {
-					if (Object(h.f)(e)) return !!t && !!Object(f.a)(e, {
+					if (Object(h.e)(e)) return !!t && !!Object(f.a)(e, {
 						subredditId: t
 					});
 					if (Object(f.g)(e, {
@@ -3826,4 +3826,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657.815f70a86c9f4e002c65.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657.c67f4d35e0a7a1690089.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.f2f9b1e8247ded0f743c.js
-// Retrieved at 1/4/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.b31b8d6fd835353b842b.js
+// Retrieved at 1/4/2023, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium~reddit-components-Econ-Prediction-PremiumModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -2167,7 +2167,7 @@
 					s = Object(v.a)(),
 					c = Object(i.e)(E.m),
 					l = !!c,
-					u = Object(i.e)(e => !r && l && Object(P.m)(e)),
+					u = Object(i.e)(e => !r && l && Object(P.l)(e)),
 					m = Object(i.e)(E.j),
 					p = Object(i.e)(E.l);
 				if (!(null == p ? void 0 : p.length)) return o.a.createElement("div", null, o.a.createElement(g.a, {
@@ -2409,7 +2409,7 @@
 					} = this.props;
 					e.length || t || r(this.correlationId), n(), document.documentElement.scrollTop = document.body.scrollTop = 0;
 					const o = l.Sb.PREMIUM;
-					y.c.has(o) && (a(Object(g.m)(v.TimerType.InApp, y.c.end(o))), a(Object(g.l)())), Object(m.a)()
+					y.c.has(o) && (a(Object(g.n)(v.TimerType.InApp, y.c.end(o))), a(Object(g.m)())), Object(m.a)()
 				}
 				render() {
 					const {
@@ -2617,4 +2617,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.f2f9b1e8247ded0f743c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.b31b8d6fd835353b842b.js.map

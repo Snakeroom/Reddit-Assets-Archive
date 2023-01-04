@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.1a6f2549a49149d3f9be.js
-// Retrieved at 1/4/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.1a2d4ad9f927a5869cf3.js
+// Retrieved at 1/4/2023, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -456,7 +456,7 @@
 						return
 					}
 					const j = {
-						...a()(e.queryParams, [...x.q, x.l]),
+						...a()(e.queryParams, [...x.p, x.k]),
 						sort: i,
 						t: Object(P.a)(i, _)
 					};
@@ -517,7 +517,7 @@
 						dist: f.dist,
 						sort: m,
 						t: p,
-						...a()(d, x.q),
+						...a()(d, x.p),
 						layout: Object(_.U)(o, {}).toLowerCase()
 					}, Object(N.a)(o));
 					if (E.ok) {
@@ -619,7 +619,7 @@
 						postId: n,
 						author: o
 					} = t;
-					return Object(h.e)(x.o) && s.roomStatus === f.b.NotStarted ? r.a.createElement(w.a, {
+					return Object(h.e)(x.n) && s.roomStatus === f.b.NotStarted ? r.a.createElement(w.a, {
 						postId: n,
 						author: o,
 						roomId: s.roomId,
@@ -1672,7 +1672,7 @@
 				} = e, T = async () => {
 					if (i ? await I() : await Object(u.q)(), l) {
 						const e = new URL(window.location.href);
-						e.searchParams.set(P.k, "1"), window.location.href = e.href
+						e.searchParams.set(P.j, "1"), window.location.href = e.href
 					} else window.location.reload()
 				};
 				switch (s) {
@@ -3549,7 +3549,7 @@
 				const n = Object(c.e)(e => Object(g.G)(e, {
 						postId: t
 					})),
-					o = Object(c.e)(e => "subreddit" === (null == n ? void 0 : n.belongsTo.type) ? Object(v.X)(e, {
+					o = Object(c.e)(e => "subreddit" === (null == n ? void 0 : n.belongsTo.type) ? Object(v.Y)(e, {
 						subredditId: n.belongsTo.id
 					}) : null);
 				return o ? r.a.createElement(x.a, {
@@ -6381,7 +6381,7 @@
 					measureScrollFPS: Q.d.measureScrollFPS,
 					layout: I.U,
 					loadMore: $.d,
-					subredditsById: ee.eb,
+					subredditsById: ee.fb,
 					viewportDataLoaded: te.a,
 					commentsById: Y.q,
 					itemIds: $.f,
@@ -6599,7 +6599,7 @@
 					content: a.a.createElement(a.a.Fragment, null, a.a.createElement(_.a, P), a.a.createElement(g.a, null), a.a.createElement(le, {
 						listingKey: c,
 						listingName: j,
-						listingViewed: (e, t) => Object(he.n)(c, y, t, e, E),
+						listingViewed: (e, t) => Object(he.o)(c, y, t, e, E),
 						noPostsComponent: () => a.a.createElement(x.b, {
 							profileName: v,
 							timeSort: E
@@ -6685,4 +6685,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.1a6f2549a49149d3f9be.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.1a2d4ad9f927a5869cf3.js.map

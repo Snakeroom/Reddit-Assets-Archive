@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.7f84ef593de870a1e0b2.js
-// Retrieved at 1/4/2023, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.0614258dbe5aca63ee51.js
+// Retrieved at 1/4/2023, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./node_modules/lodash/take.js": function(e, t, i) {
@@ -329,7 +329,7 @@
 					} = i;
 					const s = t(),
 						d = Object(T.m)(s),
-						a = Object(N.i)(s) ? Object(N.m)(s) : Object(N.b)(s),
+						a = Object(N.j)(s) ? Object(N.n)(s) : Object(N.b)(s),
 						c = a && a.routeMatch && a.routeMatch.match;
 					if (!c) return;
 					const u = c.params,
@@ -344,12 +344,12 @@
 							queryParams: y
 						} = c,
 						O = Object(l.a)(x, b, y),
-						g = p.L in y && y[p.L].toUpperCase() || "",
+						g = p.K in y && y[p.K].toUpperCase() || "",
 						S = o.oc[g] || !1,
 						E = Object(T.m)(s);
 					(f || E && E.displayText) && await e(Object(m.multiredditFeedRequested)(O, (f || E.displayText).toLowerCase(), h.toLowerCase(), {
-						...n()(y, p.q),
 						...n()(y, p.p),
+						...n()(y, p.o),
 						sort: b,
 						t: Object(F.a)(b, S)
 					}))
@@ -748,14 +748,14 @@
 						g = h.listings.postOrder.ids[y],
 						j = h.listings.postOrder.api.error[y],
 						C = h.listings.postOrder.api.pending[y],
-						k = p.L in e.queryParams && e.queryParams[p.L].toUpperCase() || "",
+						k = p.K in e.queryParams && e.queryParams[p.K].toUpperCase() || "",
 						P = k in l.oc && l.oc[k];
 					if (C || g && !j && !t) return void(g && (i(u.m({
 						title: Object(E.f)(r(), m)
 					})), h.sidebarPromotedPosts.firstFetch || i(Object(v.b)(I.a.MULTIREDDIT))));
 					await i(T(y, a, s, {
-						...n()(e.queryParams, p.q),
 						...n()(e.queryParams, p.p),
+						...n()(e.queryParams, p.o),
 						sort: c,
 						t: Object(x.a)(c, P)
 					}, !0));
@@ -2572,4 +2572,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.7f84ef593de870a1e0b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.0614258dbe5aca63ee51.js.map

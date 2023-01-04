@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/1.80aa87920b2400c68c27.js
-// Retrieved at 1/4/2023, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/1.81c2bf182ee31c44ce11.js
+// Retrieved at 1/4/2023, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[1], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -100,7 +100,7 @@
 					ratingResponse: n,
 					subredditId: o,
 					children: p
-				} = e, x = null !== (t = Object(r.e)(e => Object(v.X)(e, {
+				} = e, x = null !== (t = Object(r.e)(e => Object(v.Y)(e, {
 					subredditId: o
 				}))) && void 0 !== t ? t : {}, f = Object(d.a)();
 				return s.a.createElement("div", {
@@ -1064,4 +1064,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.80aa87920b2400c68c27.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.81c2bf182ee31c44ce11.js.map

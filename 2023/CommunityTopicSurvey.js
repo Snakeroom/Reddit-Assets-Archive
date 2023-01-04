@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.00e3a20de7ceab9166b1.js
-// Retrieved at 1/4/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.3cfd8b7acb68e414a1c5.js
+// Retrieved at 1/4/2023, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityTopicSurvey"], {
 		"./node_modules/react-uid/dist/es2015/hooks.js": function(e, t, n) {
@@ -94,7 +94,7 @@
 					source: "community_tagging",
 					action: "view",
 					noun: "verify_topics_module",
-					subreddit: Object(m.X)(n, {
+					subreddit: Object(m.Y)(n, {
 						subredditId: t
 					}),
 					raterTag: b(e)
@@ -103,7 +103,7 @@
 					source: "community_tagging",
 					action: "click",
 					noun: "select_answer",
-					subreddit: Object(m.X)(r, {
+					subreddit: Object(m.Y)(r, {
 						subredditId: n
 					}),
 					raterTag: b(e, t)
@@ -112,7 +112,7 @@
 					source: "community_tagging",
 					action: "click",
 					noun: "submit",
-					subreddit: Object(m.X)(r, {
+					subreddit: Object(m.Y)(r, {
 						subredditId: n
 					}),
 					raterTag: b(e, t)
@@ -121,7 +121,7 @@
 					source: "community_tagging",
 					action: "click",
 					noun: "close",
-					subreddit: Object(m.X)(n, {
+					subreddit: Object(m.Y)(n, {
 						subredditId: t
 					}),
 					raterTag: b(e)
@@ -1074,7 +1074,7 @@
 					let {
 						subredditName: n
 					} = t;
-					const r = Object(i.bb)(e, {
+					const r = Object(i.cb)(e, {
 						subredditName: n
 					});
 					return (r && r.postIds || []).slice(0, 2)
@@ -1085,4 +1085,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.00e3a20de7ceab9166b1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.3cfd8b7acb68e414a1c5.js.map

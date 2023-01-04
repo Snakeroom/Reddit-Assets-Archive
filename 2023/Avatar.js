@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Avatar.6caff6aad5f18482d469.js
-// Retrieved at 1/4/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Avatar.85aa7d8e2e605706954e.js
+// Retrieved at 1/4/2023, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Avatar"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, r) {
@@ -32,10 +32,10 @@
 				m = r("./src/reddit/selectors/user.ts"),
 				O = r("./src/reddit/components/AvatarBuilder/index.m.less"),
 				b = r.n(O),
-				_ = r("./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx");
+				v = r("./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx");
 
-			function v() {
-				return (v = Object.assign || function(e) {
+			function _() {
+				return (_ = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var s in r) Object.prototype.hasOwnProperty.call(r, s) && (e[s] = r[s])
@@ -54,30 +54,25 @@
 					E = Object(n.useContext)(d.a),
 					A = Object(c.d)(),
 					g = () => A(Object(i.openLoginModal)()),
-					h = Object(_.a)(),
-					S = Object(c.e)(p.a);
+					S = Object(v.a)();
 				Object(n.useEffect)(() => {
-					{
-						const e = {},
-							t = new URLSearchParams(window.location.search);
-						Object(s.k)(t) && S && (e.domain = "marketplace_sharelink", e.url = window.location.href), O(Object(l.r)(e))
-					}
-				}, [O, S]), Object(n.useEffect)(() => {
+					O(l.r)
+				}, [O]), Object(n.useEffect)(() => {
 					j(!0)
 				}, []);
 				const {
 					activeDetails: M,
-					activeTab: k,
-					activeMeSubpage: R,
-					shopTabState: T
-				} = r, L = Object(n.useMemo)(() => ({
-					activeTab: k || void 0,
-					activeMeSubpage: R || void 0,
+					activeTab: h,
+					activeMeSubpage: T,
+					shopTabState: k
+				} = r, N = Object(n.useMemo)(() => ({
+					activeTab: h || void 0,
+					activeMeSubpage: T || void 0,
 					activeDetails: M || void 0,
-					shopTabState: T || void 0
-				}), [M, k, R, T]), N = Object(c.e)(e => !Object(m.S)(e) && Object(p.w)(e));
+					shopTabState: k || void 0
+				}), [M, h, T, k]), R = Object(c.e)(e => !Object(m.S)(e) && Object(p.v)(e));
 				if (!f || !x) return null;
-				if (N) return a.a.createElement("div", {
+				if (R) return a.a.createElement("div", {
 					className: Object(o.a)(b.a.container, {
 						[b.a.containerExp]: E
 					})
@@ -85,10 +80,10 @@
 					openLogin: g,
 					fancyBackground: !0
 				}));
-				const w = {
-					...h,
+				const C = {
+					...S,
 					config: {
-						...h.config,
+						...S.config,
 						...r.share ? {
 							COPY_SHARE_PARAMS: r.share
 						} : {}
@@ -100,8 +95,8 @@
 						[b.a.snoovatarModalBuilderV2]: t,
 						[b.a.containerExp]: E
 					})
-				}, a.a.createElement(s.a, v({}, w, {
-					navState: L,
+				}, a.a.createElement(s.a, _({}, C, {
+					navState: N,
 					isModal: t
 				}), a.a.createElement(s.b, null)))
 			}
@@ -136,8 +131,8 @@
 						n = t ? new Date(t.expires).getTime() : 1,
 						O = Object(c.e)(u.fb),
 						b = Object(i.a)(),
-						_ = p ? o.a.Rinkeby : o.a.Ethereum,
-						v = Object(a.useMemo)(() => ({
+						v = p ? o.a.Rinkeby : o.a.Ethereum,
+						_ = Object(a.useMemo)(() => ({
 							headers: {
 								Authorization: `Bearer ${r}`
 							},
@@ -147,7 +142,7 @@
 							...m,
 							STRIPE_API_KEY: s.a.stripe.apiKey(e),
 							ACCESS_TOKEN: r,
-							BLOCKCHAIN_PROVIDER: _
+							BLOCKCHAIN_PROVIDER: v
 						},
 						x = Object(a.useCallback)(e => {
 							b(t => {
@@ -165,11 +160,11 @@
 							})
 						}, [b]);
 					return Object(a.useMemo)(() => ({
-						authHeaders: v,
+						authHeaders: _,
 						config: f,
 						isNightMode: O,
 						sendEvent: x
-					}), [v, f, O, x])
+					}), [_, f, O, x])
 				}
 		},
 		"./src/reddit/pages/Avatar/index.tsx": function(e, t, r) {
@@ -196,4 +191,4 @@
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.6caff6aad5f18482d469.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.85aa7d8e2e605706954e.js.map

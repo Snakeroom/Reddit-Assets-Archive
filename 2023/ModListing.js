@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.2fa54cf58fb71c78d6e6.js
-// Retrieved at 1/4/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.2891b329f7faed22e733.js
+// Retrieved at 1/4/2023, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, n) {
@@ -329,13 +329,13 @@
 				_ = (Object(m.a)((e, t) => {
 					const n = _(e, t);
 					if (!n) return g;
-					const r = Object(h.bb)(e, {
+					const r = Object(h.cb)(e, {
 						subredditName: n.name
 					});
 					return r && r.postIds && r.postIds.length ? r.postIds : g
 				}), (e, t) => {
 					const n = e.focusedVerticals.recommendedSubredditIds && e.focusedVerticals.recommendedSubredditIds[t];
-					return n ? Object(h.X)(e, {
+					return n ? Object(h.Y)(e, {
 						subredditId: n
 					}) : null
 				}),
@@ -508,7 +508,7 @@
 			})), n.d(t, "hideSubredditSuccess", (function() {
 				return V
 			})), n.d(t, "hideSubredditPending", (function() {
-				return K
+				return q
 			})), n.d(t, "hideSubredditFailed", (function() {
 				return G
 			})), n.d(t, "unhideSubredditSuccess", (function() {
@@ -518,9 +518,9 @@
 			})), n.d(t, "unhideSubredditFailed", (function() {
 				return Q
 			})), n.d(t, "toggleHiddenSubreddit", (function() {
-				return X
-			})), n.d(t, "hideSubreddit", (function() {
 				return Y
+			})), n.d(t, "hideSubreddit", (function() {
+				return X
 			})), n.d(t, "unhideSubreddit", (function() {
 				return W
 			}));
@@ -604,10 +604,10 @@
 							hk: "3RYtBz"
 						})
 					})));
-					const _ = q(e.queryParams);
+					const _ = K(e.queryParams);
 					await n(F(p, {
-						...i()(e.queryParams, m.q),
 						...i()(e.queryParams, m.p),
+						...i()(e.queryParams, m.o),
 						filtered: !!u || void 0,
 						moderated_srs: !0,
 						sort: d,
@@ -616,7 +616,7 @@
 						title: r.fbt._("Subreddits you moderate", null, {
 							hk: "3RYtBz"
 						})
-					})), Object(C.g)(s(), !0)
+					})), Object(C.h)(s(), !0)
 				}, H = Object(d.a)(M.i), A = Object(d.a)(M.h), B = Object(d.a)(M.g), D = e => async (t, n, r) => {
 					let {
 						apiContext: s
@@ -632,7 +632,7 @@
 						y = d.listings.postOrder.fetchedTokens,
 						x = !(!y[f] || !y[f][g.token]);
 					if (_ || x) return;
-					const O = q(b);
+					const O = K(b);
 					t(H({
 						key: f,
 						fetchedToken: g.token
@@ -643,7 +643,7 @@
 							filtered: !!p || void 0,
 							sort: u,
 							t: Object(S.a)(u, O),
-							...i()(b, m.q)
+							...i()(b, m.p)
 						}),
 						j = d.listings.postOrder.ids[f],
 						I = {
@@ -663,23 +663,23 @@
 					}))
 				};
 
-			function q(e) {
-				const t = m.L in e && e[m.L].toUpperCase() || "";
+			function K(e) {
+				const t = m.K in e && e[m.K].toUpperCase() || "";
 				return t in o.oc && o.oc[t]
 			}
 			const V = Object(d.a)(M.c),
-				K = Object(d.a)(M.b),
+				q = Object(d.a)(M.b),
 				G = Object(d.a)(M.a),
 				U = Object(d.a)(M.l),
 				J = Object(d.a)(M.k),
 				Q = Object(d.a)(M.j),
-				X = (e, t) => async (n, r, s) => {
+				Y = (e, t) => async (n, r, s) => {
 					let {
 						apiContext: i
 					} = s;
 					const o = r(),
 						d = Object(P.m)(o),
-						[a, c, u, l] = t ? [K, V, G, O] : [J, U, Q, E];
+						[a, c, u, l] = t ? [q, V, G, O] : [J, U, Q, E];
 					if (!d || !d.displayText) return;
 					const {
 						currentPage: m
@@ -688,7 +688,7 @@
 					n(a(e));
 					const b = await l(i(), d.displayText, e);
 					b.ok ? (await n(R(m.routeMatch.match, !0)), n(c(e))) : n(u(b.body))
-				}, Y = e => X(e, !0), W = e => X(e, !1)
+				}, X = e => Y(e, !0), W = e => Y(e, !1)
 		},
 		"./src/reddit/actions/postList.ts": function(e, t, n) {
 			"use strict";
@@ -1262,7 +1262,7 @@
 						} = t;
 						return Object(v.D)(e, n, r, s)
 					}),
-					subredditsById: x.eb,
+					subredditsById: x.fb,
 					viewportDataLoaded: O.a,
 					pageReferrer: b.X,
 					postListPlaceholderComponent: () => f.a,
@@ -1737,14 +1737,14 @@
 				A = n("./src/reddit/controls/Button/index.tsx"),
 				B = n("./src/reddit/helpers/trackers/modListing.ts"),
 				D = n("./src/reddit/routes/modListing/index.ts");
-			const q = e => e.modListingPage.filteredSubreddits.api.pending;
+			const K = e => e.modListingPage.filteredSubreddits.api.pending;
 			var V = n("./src/reddit/constants/keycodes.ts"),
-				K = n("./src/reddit/layout/row/Inline/index.tsx"),
+				q = n("./src/reddit/layout/row/Inline/index.tsx"),
 				G = n("./src/reddit/components/ModListingSidebar/HideCommunities/HideInput/index.m.less"),
 				U = n.n(G);
 			const J = Object(a.c)({
 				apiError: e => e.modListingPage.filteredSubreddits.api.error,
-				isApiPending: q
+				isApiPending: K
 			});
 			class Q extends o.a.Component {
 				constructor() {
@@ -1768,7 +1768,7 @@
 					const {
 						props: e
 					} = this;
-					return o.a.createElement(o.a.Fragment, null, o.a.createElement(K.a, null, o.a.createElement("input", {
+					return o.a.createElement(o.a.Fragment, null, o.a.createElement(q.a, null, o.a.createElement("input", {
 						className: U.a.input,
 						onChange: this.onChange,
 						onKeyPress: this.onKeyPress,
@@ -1790,19 +1790,19 @@
 					}, e.apiError.explanation))
 				}
 			}
-			var X = Object(d.b)(J, e => ({
+			var Y = Object(d.b)(J, e => ({
 					hide: t => e(Object(m.hideSubreddit)(t))
 				}))(Object(R.c)(Q)),
-				Y = n("./src/lib/lessComponent.tsx"),
+				X = n("./src/lib/lessComponent.tsx"),
 				W = n("./src/reddit/components/SubredditIcon/index.tsx"),
 				Z = n("./src/reddit/icons/fonts/Clear/index.tsx"),
 				z = n("./src/reddit/selectors/profile.ts"),
 				$ = n("./src/reddit/selectors/subreddit.ts"),
 				ee = n("./src/reddit/components/ModListingSidebar/HideCommunities/SubredditsList/SubredditsListRow/index.m.less"),
 				te = n.n(ee);
-			const ne = Y.a.wrapped(W.b, "SubredditIcon", te.a),
+			const ne = X.a.wrapped(W.b, "SubredditIcon", te.a),
 				re = Object(a.c)({
-					isApiPending: q,
+					isApiPending: K,
 					subredditOrProfile: (e, t) => {
 						const n = Object($.C)(e, {
 							subredditName: t.subredditName
@@ -1900,7 +1900,7 @@
 						hk: "YdVw7"
 					})), e.filtered && o.a.createElement("div", {
 						className: le.a.inputContainer
-					}, o.a.createElement(X, null), o.a.createElement(ce, {
+					}, o.a.createElement(Y, null), o.a.createElement(ce, {
 						hiddenSubredditsNames: e.hiddenSubredditsNames
 					})))
 				}
@@ -1943,7 +1943,7 @@
 					return Object(D.d)(n.path)
 				}, je.k, je.d, (e, t, n, r, i) => {
 					const o = s()([...Object(u.a)(e)]),
-						d = Oe.L in o && o[Oe.L].toUpperCase(),
+						d = Oe.K in o && o[Oe.K].toUpperCase(),
 						a = "string" == typeof d && d in c.oc ? c.oc[d] : c.pc,
 						m = n ? xe.f : xe.e;
 					return {
@@ -1963,7 +1963,7 @@
 				}));
 			class ke extends o.a.PureComponent {
 				constructor() {
-					super(...arguments), this.onViewed = (e, t) => Object(Ee.e)({
+					super(...arguments), this.onViewed = (e, t) => Object(Ee.f)({
 						key: this.props.listingKey,
 						sort: this.props.sort,
 						timerType: t,
@@ -2084,4 +2084,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.2fa54cf58fb71c78d6e6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.2891b329f7faed22e733.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.65752628df34ae18ac47.js
-// Retrieved at 1/4/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.44275c41ca550008c257.js
+// Retrieved at 1/4/2023, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3655,7 +3655,7 @@
 						userName: null == t ? void 0 : t.bannedBy
 					}) : null),
 					o = Object(b.b)(t),
-					d = Object(a.e)(e => Object(_e.X)(e, {
+					d = Object(a.e)(e => Object(_e.Y)(e, {
 						subredditId: o ? t.belongsTo.id : t.subredditId
 					})),
 					c = o && t.removedByCategory ? t.removedByCategory : null,
@@ -8191,7 +8191,7 @@
 					let {
 						subredditName: s
 					} = t;
-					const n = Object(i.bb)(e, {
+					const n = Object(i.cb)(e, {
 						subredditName: s
 					});
 					return (n && n.postIds || []).slice(0, 2)
@@ -8211,4 +8211,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.65752628df34ae18ac47.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.44275c41ca550008c257.js.map

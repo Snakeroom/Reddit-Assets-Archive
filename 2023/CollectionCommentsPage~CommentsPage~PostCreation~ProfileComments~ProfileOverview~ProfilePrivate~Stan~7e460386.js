@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~PostCreation~ProfileComments~ProfileOverview~ProfilePrivate~Stan~7e460386.206ce6b29a1e85c761fa.js
-// Retrieved at 1/4/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~PostCreation~ProfileComments~ProfileOverview~ProfilePrivate~Stan~7e460386.f7722bda0c4abf1663f8.js
+// Retrieved at 1/4/2023, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~PostCreation~ProfileComments~ProfileOverview~ProfilePrivate~Stan~7e460386"], {
 		"./src/reddit/actions/postCollection/index.ts": function(e, t, o) {
@@ -13,7 +13,7 @@
 			})), o.d(t, "a", (function() {
 				return H
 			})), o.d(t, "c", (function() {
-				return X
+				return q
 			})), o.d(t, "h", (function() {
 				return z
 			})), o.d(t, "f", (function() {
@@ -236,7 +236,7 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, K = Object(i.a)(a.e), X = (e, t) => async (o, i, c) => {
+				}, K = Object(i.a)(a.e), q = (e, t) => async (o, i, c) => {
 					let {
 						apiContext: a
 					} = c;
@@ -262,11 +262,11 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, q = Object(i.a)(a.r), V = Object(i.a)(a.n), J = Object(i.a)(a.s), z = (e, t) => async (o, s, r) => {
+				}, X = Object(i.a)(a.r), V = Object(i.a)(a.n), J = Object(i.a)(a.s), z = (e, t) => async (o, s, r) => {
 					let {
 						apiContext: i
 					} = r;
-					o(q());
+					o(X());
 					const c = await O(i(), e, t);
 					let a = !1;
 					if (c.ok) o(J({
@@ -824,10 +824,10 @@
 					tooltipType: H,
 					isModQueueDisplayEnabled: K
 				} = e;
-				const X = {
+				const q = {
 						caretOnTop: !1
 					},
-					q = W.isRemoved && !W.modRemovalReason && !W.modNote && W.belongsTo.type === b.a.SUBREDDIT,
+					X = W.isRemoved && !W.modRemovalReason && !W.modNote && W.belongsTo.type === b.a.SUBREDDIT,
 					V = D("Approve", W.id, H),
 					J = D("Archived", W.id, H),
 					z = D("Lock", W.id, H),
@@ -846,7 +846,7 @@
 				}), r.a.createElement(u.c, M({
 					tooltipId: G,
 					text: B(o)
-				}, X))), W.isArchived && r.a.createElement(s.Fragment, null, r.a.createElement(O.a, {
+				}, q))), W.isArchived && r.a.createElement(s.Fragment, null, r.a.createElement(O.a, {
 					isFilled: !0,
 					className: Object(a.a)(T.a.icon, T.a.archivedIcon),
 					desc: N(),
@@ -856,7 +856,7 @@
 				}), r.a.createElement(u.c, M({
 					tooltipId: J,
 					text: N()
-				}, X))), W.isLocked && !W.isSponsored && r.a.createElement(s.Fragment, null, r.a.createElement(E.a, {
+				}, q))), W.isLocked && !W.isSponsored && r.a.createElement(s.Fragment, null, r.a.createElement(E.a, {
 					isFilled: !0,
 					className: Object(a.a)(T.a.icon, T.a.lockIcon),
 					desc: F(),
@@ -866,7 +866,7 @@
 				}), r.a.createElement(u.c, M({
 					tooltipId: z,
 					text: F()
-				}, X))), i && Object(y.v)(W) && !d && r.a.createElement(s.Fragment, null, r.a.createElement(I.a, {
+				}, q))), i && Object(y.v)(W) && !d && r.a.createElement(s.Fragment, null, r.a.createElement(I.a, {
 					isFilled: !0,
 					className: Object(a.a)(T.a.icon, T.a.stickyIcon),
 					desc: R(),
@@ -876,7 +876,7 @@
 				}), r.a.createElement(u.c, M({
 					tooltipId: $,
 					text: R()
-				}, X))), h && m && r.a.createElement(s.Fragment, null, r.a.createElement(I.a, {
+				}, q))), h && m && r.a.createElement(s.Fragment, null, r.a.createElement(I.a, {
 					isFilled: !0,
 					className: Object(a.a)(T.a.icon, T.a.stickyIcon),
 					desc: A(),
@@ -886,7 +886,7 @@
 				}), r.a.createElement(u.c, M({
 					tooltipId: ee,
 					text: A()
-				}, X))), !K && r.a.createElement(r.a.Fragment, null, (W.isApproved || W.approvedBy) && r.a.createElement(s.Fragment, null, r.a.createElement(C.a, {
+				}, q))), !K && r.a.createElement(r.a.Fragment, null, (W.isApproved || W.approvedBy) && r.a.createElement(s.Fragment, null, r.a.createElement(C.a, {
 					isFilled: !0,
 					className: Object(a.a)(T.a.icon, T.a.approveIcon),
 					desc: Object(x.a)(W),
@@ -896,14 +896,14 @@
 				}), r.a.createElement(u.c, M({
 					tooltipId: V,
 					text: Object(x.a)(W)
-				}, X))), Object(f.a)(W) && r.a.createElement(s.Fragment, null, r.a.createElement(j.a, {
+				}, q))), Object(f.a)(W) && r.a.createElement(s.Fragment, null, r.a.createElement(j.a, {
 					isFilled: !0,
 					className: Object(a.a)(T.a.icon, T.a.removeIcon),
 					desc: Object(x.b)(W),
 					id: Q,
 					onMouseEnter: U(Q),
 					onMouseLeave: P
-				}), q && r.a.createElement(p.a, {
+				}), X && r.a.createElement(p.a, {
 					className: T.a.addRemovalReason,
 					onClick: S,
 					text: n.fbt._("Add a removal reason", null, {
@@ -917,7 +917,7 @@
 				})), r.a.createElement(u.c, M({
 					tooltipId: Q,
 					text: Object(x.b)(W)
-				}, X))), W.bannedBy && W.isSpam && r.a.createElement(s.Fragment, null, r.a.createElement(k.a, {
+				}, q))), W.bannedBy && W.isSpam && r.a.createElement(s.Fragment, null, r.a.createElement(k.a, {
 					isFilled: !0,
 					className: Object(a.a)(T.a.icon, T.a.spamIcon),
 					desc: Object(x.d)(W),
@@ -927,7 +927,7 @@
 				}), r.a.createElement(u.c, M({
 					tooltipId: Y,
 					text: Object(x.d)(W)
-				}, X)))), Object(v.a)(W) && !w && !K && r.a.createElement(s.Fragment, null, r.a.createElement(g.a, {
+				}, q)))), Object(v.a)(W) && !w && !K && r.a.createElement(s.Fragment, null, r.a.createElement(g.a, {
 					isFilled: !0,
 					className: Object(a.a)(T.a.icon, T.a.reportIcon),
 					desc: Object(x.c)(W.numReports),
@@ -937,7 +937,7 @@
 				}), r.a.createElement(u.c, M({
 					tooltipId: Z,
 					text: Object(x.c)(W.numReports)
-				}, X))))
+				}, q))))
 			}))
 		},
 		"./src/reddit/components/PostCreationForm/CollectionListModal/CollectionListItem/index.m.less": function(e, t, o) {
@@ -1029,7 +1029,7 @@
 							subredditId: o
 						}
 					} = t;
-					return o ? Object(y.X)(e, {
+					return o ? Object(y.Y)(e, {
 						subredditId: o
 					}) : void 0
 				},
@@ -1075,8 +1075,8 @@
 				W = o("./src/reddit/helpers/trackers/postCollection.ts"),
 				H = o("./src/reddit/components/PostCreationForm/CollectionListModal/index.m.less"),
 				K = o.n(H);
-			const X = `${n.a.assetPath}/img/snoo-drafts.png`,
-				q = T.a.div("TopRow", K.a),
+			const q = `${n.a.assetPath}/img/snoo-drafts.png`,
+				X = T.a.div("TopRow", K.a),
 				V = T.a.div("TitleRow", K.a),
 				J = T.a.div("DetailsContainer", K.a),
 				z = T.a.wrapped(_.a, "ButtonRow", K.a),
@@ -1140,7 +1140,7 @@
 				}
 				renderNoCollections() {
 					return i.a.createElement(Z, null, i.a.createElement(Y, {
-						src: X
+						src: q
 					}), i.a.createElement($, null, s.fbt._("Your collections will live here", null, {
 						hk: "FCxWg"
 					})))
@@ -1164,7 +1164,7 @@
 					return i.a.createElement("div", {
 						className: K.a.wrapper,
 						"data-redditstyle": !0
-					}, i.a.createElement(q, null, i.a.createElement(V, {
+					}, i.a.createElement(X, null, i.a.createElement(V, {
 						"data-redditstyle": !0
 					}, t || s.fbt._("My collections", null, {
 						hk: "3yKovS"
@@ -1377,7 +1377,7 @@
 				},
 				k = Object(a.c)({
 					flairData: _.d,
-					subreddit: C.X
+					subreddit: C.Y
 				});
 			class I extends i.a.Component {
 				constructor(e) {
@@ -2241,7 +2241,7 @@
 					noun: s.collectionCancel
 				}),
 				O = () => e => {
-					const t = Object(c.o)(e) || void 0;
+					const t = Object(c.p)(e) || void 0;
 					return {
 						...p(e, t),
 						source: n.collectionComposer,
@@ -2277,7 +2277,7 @@
 					noun: s.startEvent
 				}),
 				I = () => e => {
-					const t = Object(c.o)(e) || void 0;
+					const t = Object(c.p)(e) || void 0;
 					return {
 						...p(e, t),
 						source: n.collectionComposer,
@@ -2346,18 +2346,18 @@
 					postEvent: C(e)
 				}),
 				x = e => t => ({
-					...g(t, Object(l.o)(t)),
+					...g(t, Object(l.p)(t)),
 					source: n.postComposer,
 					noun: "apply",
 					postComposer: E(e)
 				}),
 				v = () => e => ({
-					...g(e, Object(l.o)(e)),
+					...g(e, Object(l.p)(e)),
 					noun: "cancel",
 					actionInfo: m(e)
 				}),
 				_ = e => t => ({
-					...g(t, Object(l.o)(t)),
+					...g(t, Object(l.p)(t)),
 					noun: "delete",
 					actionInfo: m(t),
 					postComposer: O(t),
@@ -2426,7 +2426,7 @@
 					adminId: e.authorId,
 					subredditId: e.belongsTo.id,
 					avatarShareUrl: e.source ? e.source.url : ""
-				}) && Object(c.b)(t)
+				}) && Object(c.a)(t)
 			})
 		},
 		"./src/reddit/icons/fonts/Approve/index.tsx": function(e, t, o) {
@@ -2610,4 +2610,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~PostCreation~ProfileComments~ProfileOverview~ProfilePrivate~Stan~7e460386.206ce6b29a1e85c761fa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~PostCreation~ProfileComments~ProfileOverview~ProfilePrivate~Stan~7e460386.f7722bda0c4abf1663f8.js.map

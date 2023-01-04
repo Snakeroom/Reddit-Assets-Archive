@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.dd855cb4eb0c1f4d2e4a.js
-// Retrieved at 1/4/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.5b972f84c582613ac581.js
+// Retrieved at 1/4/2023, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, o) {
@@ -603,8 +603,8 @@
 				D = o("./src/reddit/models/Toast/index.ts"),
 				T = o("./src/reddit/selectors/modQueue.ts"),
 				F = o("./src/reddit/selectors/subreddit.ts"),
-				Q = o("./src/reddit/selectors/telemetry.ts"),
-				q = o("./src/telemetry/index.ts"),
+				q = o("./src/reddit/selectors/telemetry.ts"),
+				Q = o("./src/telemetry/index.ts"),
 				U = o("./src/lib/initializeClient/installReducer.ts"),
 				B = o("./src/reddit/reducers/features/modActivitySummaries/index.ts"),
 				G = o("./node_modules/redux/es/redux.js"),
@@ -824,38 +824,38 @@
 						O = m.user.account && m.user.account.displayText;
 					Object(b.d)(b.a.ModQueue);
 					const j = Object(b.c)(b.a.ModQueue);
-					Object(q.a)({
+					Object(Q.a)({
 						source: "bulk_mod_action_menu",
 						action: "click",
 						noun: e,
-						...Q.o(m),
-						actionInfo: Q.d(m, {
+						...q.o(m),
+						actionInfo: q.d(m, {
 							count: f.length,
 							paneName: m.platform.currentPage ? m.platform.currentPage.urlParams.pageName : void 0
 						}),
-						screen: Q.cb(m),
+						screen: q.cb(m),
 						correlationId: j
 					});
 					for (let t = 0; t < f.length; t++) {
 						const o = f[t];
 						let s = e;
-						[L.a.Approve, L.a.Remove, L.a.Spam].includes(e) && (Object(v.a)(o) ? s += "_link" : s += "_comment"), Object(q.a)({
+						[L.a.Approve, L.a.Remove, L.a.Spam].includes(e) && (Object(v.a)(o) ? s += "_link" : s += "_comment"), Object(Q.a)({
 							source: "bulk_mod_action",
 							action: "click",
 							noun: s,
-							...Q.o(m),
-							actionInfo: Q.d(m, {
+							...q.o(m),
+							actionInfo: q.d(m, {
 								count: f.length,
 								paneName: m.platform.currentPage ? m.platform.currentPage.urlParams.pageName : void 0
 							}),
-							comment: Q.h({
+							comment: q.h({
 								state: m,
 								commentId: o
 							}),
-							post: Q.K(m, o),
-							profile: Q.V(m, o),
-							screen: Q.cb(m),
-							subreddit: Q.ob(m, o),
+							post: q.K(m, o),
+							profile: q.V(m, o),
+							screen: q.cb(m),
+							subreddit: q.ob(m, o),
 							correlationId: j
 						})
 					}
@@ -1061,10 +1061,10 @@
 					_ = !!(null === (b = null == S ? void 0 : S[O]) || void 0 === b ? void 0 : b.length),
 					y = h.pages.modHub.modQueue[p].api.error;
 				if (h.pages.modHub.modQueue[p].api.pending || _ && !y) return;
-				Object(m.p)(h) || await Object(u.e)(g, p, f)(t, o, s);
+				Object(m.q)(h) || await Object(u.e)(g, p, f)(t, o, s);
 				const R = o();
 				if (r()(R.pages.modHub.modQueue[p].api.error, "type") === n.L.AUTHENTICATION_ERROR) return Object(a.a)(t, R);
-				Object(c.i)(R, j, v), t(l.m({
+				Object(c.j)(R, j, v), t(l.m({
 					title: Object(d.i)()
 				}))
 			}
@@ -1305,11 +1305,11 @@
 				D = o("./src/reddit/constants/modals.ts"),
 				T = o("./src/lib/makeApiRequest/index.ts"),
 				F = o("./src/lib/omitHeaders/index.ts"),
-				Q = o("./src/reddit/constants/headers.ts"),
-				q = o("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
+				q = o("./src/reddit/constants/headers.ts"),
+				Q = o("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
 				U = o("./src/reddit/models/RichTextJson/addRTJParam.ts");
-			const B = (e, t) => Object(T.a)(Object(F.a)(e, [Q.a]), {
-					endpoint: Object(q.a)(`${e.apiUrl}/api/v1/modactions/removal_reasons/`),
+			const B = (e, t) => Object(T.a)(Object(F.a)(e, [q.a]), {
+					endpoint: Object(Q.a)(`${e.apiUrl}/api/v1/modactions/removal_reasons/`),
 					method: A.ob.POST,
 					type: "json",
 					data: {
@@ -1318,8 +1318,8 @@
 						mod_note: t.modNote
 					}
 				}),
-				G = (e, t, o) => Object(T.a)(Object(F.a)(e, [Q.a]), {
-					endpoint: Object(q.a)(Object(U.a)(`${e.apiUrl}/api/v1/modactions/removal_${o}_message/`)),
+				G = (e, t, o) => Object(T.a)(Object(F.a)(e, [q.a]), {
+					endpoint: Object(Q.a)(Object(U.a)(`${e.apiUrl}/api/v1/modactions/removal_${o}_message/`)),
 					method: A.ob.POST,
 					type: "json",
 					data: t
@@ -1347,7 +1347,7 @@
 					} = s;
 					const n = o().subreddits.models[e].name;
 					t(Y());
-					const d = await ((e, t) => Object(T.a)(Object(F.a)(e, [Q.a]), {
+					const d = await ((e, t) => Object(T.a)(Object(F.a)(e, [q.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons.json`,
 						method: A.ob.GET
 					}))(r(), n);
@@ -1361,8 +1361,8 @@
 					} = n;
 					const i = r().subreddits.models[e].name;
 					o(se());
-					const a = await ((e, t, o) => Object(T.a)(Object(F.a)(e, [Q.a]), {
-						endpoint: Object(q.a)(`${e.apiUrl}/api/v1/${t}/removal_reasons`),
+					const a = await ((e, t, o) => Object(T.a)(Object(F.a)(e, [q.a]), {
+						endpoint: Object(Q.a)(`${e.apiUrl}/api/v1/${t}/removal_reasons`),
 						method: A.ob.POST,
 						data: o
 					}))(d(), i, t);
@@ -1389,8 +1389,8 @@
 					} = n;
 					const i = r().subreddits.models[e].name;
 					o(ie());
-					const a = await ((e, t, o) => Object(T.a)(Object(F.a)(e, [Q.a]), {
-						endpoint: Object(q.a)(`${e.apiUrl}/api/v1/${t}/removal_reasons/${o.id}`),
+					const a = await ((e, t, o) => Object(T.a)(Object(F.a)(e, [q.a]), {
+						endpoint: Object(Q.a)(`${e.apiUrl}/api/v1/${t}/removal_reasons/${o.id}`),
 						method: A.ob.PUT,
 						data: {
 							message: o.message,
@@ -1412,8 +1412,8 @@
 					} = n;
 					const i = r().subreddits.models[e].name;
 					o(le());
-					const a = await ((e, t, o) => Object(T.a)(Object(F.a)(e, [Q.a]), {
-						endpoint: Object(q.a)(`${e.apiUrl}/api/v1/${t}/removal_reasons/${o}`),
+					const a = await ((e, t, o) => Object(T.a)(Object(F.a)(e, [q.a]), {
+						endpoint: Object(Q.a)(`${e.apiUrl}/api/v1/${t}/removal_reasons/${o}`),
 						method: A.ob.DELETE
 					}))(d(), i, t);
 					a.ok ? (o(me({
@@ -1945,4 +1945,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.dd855cb4eb0c1f4d2e4a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.5b972f84c582613ac581.js.map

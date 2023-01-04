@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.7b1befa868ab1cd740a1.js
-// Retrieved at 1/4/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.213af101149dfaed57e8.js
+// Retrieved at 1/4/2023, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Economics-SubredditPremium-LFGBanner"], {
 		"./node_modules/lodash/_arraySample.js": function(e, t, n) {
@@ -3080,7 +3080,7 @@
 					return !!n && n.hasGifProduct
 				},
 				W = (e, t, n) => {
-					if (Object(f.f)(e)) return !!t && !!Object(y.a)(e, {
+					if (Object(f.e)(e)) return !!t && !!Object(y.a)(e, {
 						subredditId: t
 					});
 					if (Object(y.g)(e, {
@@ -3159,4 +3159,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.7b1befa868ab1cd740a1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.213af101149dfaed57e8.js.map

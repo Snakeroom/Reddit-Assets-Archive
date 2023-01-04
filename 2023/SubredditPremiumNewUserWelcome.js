@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.5c5ccaacf05975659c1b.js
-// Retrieved at 1/4/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.301bcf422a53f548892d.js
+// Retrieved at 1/4/2023, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumNewUserWelcome"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, n) {
@@ -944,7 +944,7 @@
 					subreddit: b.s,
 					userIsSubscribed: (e, t) => {
 						const n = Object(b.s)(e, t);
-						return !!n && Object(h.jb)(e, {
+						return !!n && Object(h.kb)(e, {
 							identifier: {
 								name: n.name,
 								type: "subreddit"
@@ -2335,7 +2335,7 @@
 					return !!n && n.hasGifProduct
 				},
 				V = (e, t, n) => {
-					if (Object(p.f)(e)) return !!t && !!Object(_.a)(e, {
+					if (Object(p.e)(e)) return !!t && !!Object(_.a)(e, {
 						subredditId: t
 					});
 					if (Object(_.g)(e, {
@@ -2414,4 +2414,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.5c5ccaacf05975659c1b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.301bcf422a53f548892d.js.map

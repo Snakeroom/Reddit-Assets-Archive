@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.e4e9970c842231d6f480.js
-// Retrieved at 1/4/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.4d2c5a34e04b6a7650c5.js
+// Retrieved at 1/4/2023, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~SubredditForkingCTA"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, r) {
@@ -1052,7 +1052,7 @@
 						}));
 						const s = Object(C.b)(c);
 						u.kind !== I.p.LINK && u.kind !== I.p.RICH_TEXT && u.kind !== I.p.MARKDOWN || b || !s || t(Object(i.c)());
-						const n = (r.path || `/user/${Object(v.e)(e)}/submitted`).replace(/^\/r\/u_/, "/user/");
+						const n = (r.path || `/user/${Object(v.e)(e)}/posts`).replace(/^\/r\/u_/, "/user/");
 						t(Object(a.subredditInvalidateListing)(u.destSubreddit.name)), t(Object(l.a)(n, !1))
 					} else {
 						if (b) {
@@ -2955,4 +2955,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.e4e9970c842231d6f480.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.4d2c5a34e04b6a7650c5.js.map

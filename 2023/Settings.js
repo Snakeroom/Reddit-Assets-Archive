@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.4e23618f26eb83247be5.js
-// Retrieved at 1/4/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.50851378b712fbe66c2d.js
+// Retrieved at 1/4/2023, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -1623,8 +1623,8 @@
 						{
 							url: c
 						} = a,
-						l = Object(r.a)(c).get(A.e);
-					if (l && (t(Object(o.c)(Object(i.a)(c, [A.e]))), Object(F.a)(e))) {
+						l = Object(r.a)(c).get(A.d);
+					if (l && (t(Object(o.c)(Object(i.a)(c, [A.d]))), Object(F.a)(e))) {
 						const e = s.fbt._("Connected accounts", null, {
 							hk: "bdpfW"
 						});
@@ -2712,7 +2712,7 @@
 				}
 			}));
 			var j = Object(a.b)(() => Object(r.c)({
-					subreddit: f.X
+					subreddit: f.Y
 				}))(e => o.a.createElement(p, {
 					className: e.className,
 					type: "communityTools",
@@ -2812,7 +2812,7 @@
 				}) : null
 			};
 			var O = Object(a.b)(() => Object(r.c)({
-				subreddit: f.X
+				subreddit: f.Y
 			}))(e => o.a.createElement(p, {
 				className: e.className,
 				type: "sidebar",
@@ -2844,7 +2844,7 @@
 					let {
 						subredditId: n
 					} = t;
-					return n ? Object(f.X)(e, {
+					return n ? Object(f.Y)(e, {
 						subredditId: n
 					}) : null
 				}
@@ -11898,7 +11898,7 @@
 					userIsWhitelistedCreator: kn.y,
 					allowNavigationCallback: cr.a,
 					isResponsiveSettingsEnabled: lr.a,
-					isTalkLiveBarOptOutEnabled: ir.s,
+					isTalkLiveBarOptOutEnabled: ir.r,
 					prefs: e => e.user.prefs,
 					userHasSpecialMembership: e => {
 						if (e.economics.me.fetched) {
@@ -12406,7 +12406,7 @@
 					return !!n && n.hasGifProduct
 				},
 				z = (e, t, n) => {
-					if (Object(b.f)(e)) return !!t && !!Object(f.a)(e, {
+					if (Object(b.e)(e)) return !!t && !!Object(f.a)(e, {
 						subredditId: t
 					});
 					if (Object(f.g)(e, {
@@ -12626,4 +12626,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.4e23618f26eb83247be5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.50851378b712fbe66c2d.js.map

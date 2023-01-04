@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditEditModal.3dcb8a391a3344af3808.js
-// Retrieved at 1/4/2023, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditEditModal.7f5e76c59f085e7ebb58.js
+// Retrieved at 1/4/2023, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditEditModal"], {
 		"./src/reddit/actions/multireddit/index.ts": function(e, t, i) {
@@ -21,11 +21,11 @@
 			})), i.d(t, "createFailure", (function() {
 				return z
 			})), i.d(t, "createPending", (function() {
-				return Q
-			})), i.d(t, "createSuccess", (function() {
-				return J
-			})), i.d(t, "createRequested", (function() {
 				return K
+			})), i.d(t, "createSuccess", (function() {
+				return Q
+			})), i.d(t, "createRequested", (function() {
+				return J
 			})), i.d(t, "reloadCurrentMultiredditFeedRequested", (function() {
 				return B
 			})), i.d(t, "duplicateFailure", (function() {
@@ -240,7 +240,7 @@
 							}))
 						}
 					}
-				}, z = Object(l.a)(R.e), Q = Object(l.a)(R.f), J = Object(l.a)(R.g), K = e => {
+				}, z = Object(l.a)(R.e), K = Object(l.a)(R.f), Q = Object(l.a)(R.g), J = e => {
 					let {
 						description: t,
 						displayName: i,
@@ -253,7 +253,7 @@
 						const c = d(),
 							m = Object(L.m)(c);
 						if (!m) return;
-						e(Q());
+						e(K());
 						const p = await ((e, t, i) => Object(f.a)(Object(h.a)(e, [x.a]), {
 							endpoint: Object(y.a)(`${e.apiUrl}/api/multi`),
 							data: {
@@ -270,7 +270,7 @@
 							const {
 								id: t
 							} = m;
-							if (await e(J({
+							if (await e(Q({
 									multireddit: F(p.body.data),
 									multiredditsModelsState: c.multireddits.models,
 									userId: t
@@ -292,7 +292,7 @@
 					} = i;
 					const s = t(),
 						n = Object(L.m)(s),
-						o = Object(P.i)(s) ? Object(P.m)(s) : Object(P.b)(s),
+						o = Object(P.j)(s) ? Object(P.n)(s) : Object(P.b)(s),
 						l = o && o.routeMatch && o.routeMatch.match;
 					if (!l) return;
 					const u = l.params,
@@ -307,12 +307,12 @@
 							queryParams: y
 						} = l,
 						O = Object(c.a)(x, b, y),
-						g = p.L in y && y[p.L].toUpperCase() || "",
+						g = p.K in y && y[p.K].toUpperCase() || "",
 						j = a.oc[g] || !1,
 						_ = Object(L.m)(s);
 					(h || _ && _.displayText) && await e(Object(m.multiredditFeedRequested)(O, (h || _.displayText).toLowerCase(), f.toLowerCase(), {
-						...d()(y, p.q),
 						...d()(y, p.p),
+						...d()(y, p.o),
 						sort: b,
 						t: Object(I.a)(b, j)
 					}))
@@ -711,14 +711,14 @@
 						g = f.listings.postOrder.ids[y],
 						v = f.listings.postOrder.api.error[y],
 						C = f.listings.postOrder.api.pending[y],
-						F = p.L in e.queryParams && e.queryParams[p.L].toUpperCase() || "",
+						F = p.K in e.queryParams && e.queryParams[p.K].toUpperCase() || "",
 						k = F in c.oc && c.oc[F];
 					if (C || g && !v && !t) return void(g && (i(u.m({
 						title: Object(_.f)(r(), m)
 					})), f.sidebarPromotedPosts.firstFetch || i(Object(S.b)(N.a.MULTIREDDIT))));
 					await i(L(y, o, s, {
-						...d()(e.queryParams, p.q),
 						...d()(e.queryParams, p.p),
+						...d()(e.queryParams, p.o),
 						sort: l,
 						t: Object(x.a)(l, k)
 					}, !0));
@@ -1436,4 +1436,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditEditModal.3dcb8a391a3344af3808.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditEditModal.7f5e76c59f085e7ebb58.js.map

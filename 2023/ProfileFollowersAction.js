@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersAction.fa390a17d5bb434e97da.js
-// Retrieved at 1/4/2023, 10:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersAction.3737860d1413b03fa49d.js
+// Retrieved at 1/4/2023, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersAction"], {
 		"./src/lib/makeOverviewConversationsItemKey/index.ts": function(e, t, r) {
@@ -792,7 +792,7 @@
 					const b = y.e[Object(O.U)(r(), {})],
 						w = p.toLowerCase(),
 						j = {
-							...s()(e.queryParams, m.q),
+							...s()(e.queryParams, m.p),
 							sort: u,
 							layout: b,
 							t: f
@@ -979,4 +979,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersAction.fa390a17d5bb434e97da.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersAction.3737860d1413b03fa49d.js.map

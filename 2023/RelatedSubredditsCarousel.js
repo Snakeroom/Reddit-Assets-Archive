@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RelatedSubredditsCarousel.04ec04449ccebe3601f1.js
-// Retrieved at 1/4/2023, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RelatedSubredditsCarousel.fc738b765ccb7e5a654e.js
+// Retrieved at 1/4/2023, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RelatedSubredditsCarousel"], {
 		"./src/reddit/actions/subreddit/relatedSubreddits.ts": function(e, t, s) {
@@ -97,10 +97,10 @@
 					u = Object(d.e)(e => ((e, t) => {
 						const {
 							name: s
-						} = Object(c.X)(e, {
+						} = Object(c.Y)(e, {
 							subredditId: t
 						}) || {};
-						return Object(c.jb)(e, {
+						return Object(c.kb)(e, {
 							identifier: {
 								name: s,
 								type: "subreddit"
@@ -200,7 +200,7 @@
 					[_, j] = Object(c.useState)(null),
 					[E, C] = Object(c.useState)(null),
 					[y, h] = Object(c.useState)(0),
-					[g, k] = Object(c.useState)(void 0),
+					[k, g] = Object(c.useState)(void 0),
 					D = Object(l.e)(e => Object(O.D)(e, u));
 				Object(c.useEffect)(() => {
 					(null == u ? void 0 : u.length) && f(Object(b.e)(u))
@@ -219,7 +219,7 @@
 					if (!_) return;
 					const e = i()(() => {
 						const e = Math.floor(_.clientWidth / 249);
-						h(e), k((e > 1 ? 249 * e : 237) - 8)
+						h(e), g((e > 1 ? 249 * e : 237) - 8)
 					}, 30);
 					return window.addEventListener("resize", e), e(), () => {
 						window.removeEventListener("resize", e)
@@ -229,7 +229,7 @@
 						source: "similar_communities",
 						action: "view",
 						noun: "module",
-						subreddit: e ? Object(O.X)(t, {
+						subreddit: e ? Object(O.Y)(t, {
 							subredditId: e
 						}) : void 0
 					}))(d))
@@ -239,7 +239,7 @@
 				}, o.a.createElement("div", {
 					className: N.a.carouselHeader,
 					style: {
-						width: g
+						width: k
 					}
 				}, o.a.createElement("h3", {
 					className: N.a.carouselTitle
@@ -263,7 +263,7 @@
 					ref: C,
 					className: N.a.carouselWrapper,
 					style: {
-						width: g
+						width: k
 					}
 				}, null == L ? void 0 : L.map((e, t) => {
 					let {
@@ -304,7 +304,7 @@
 					actionInfo: {
 						reason: `${s}`
 					},
-					subreddit: Object(O.X)(r, {
+					subreddit: Object(O.Y)(r, {
 						subredditId: t
 					})
 				}))(e ? "unsubsribe" : "subscribe", t, s), [t]);
@@ -385,4 +385,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RelatedSubredditsCarousel.04ec04449ccebe3601f1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RelatedSubredditsCarousel.fc738b765ccb7e5a654e.js.map

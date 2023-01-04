@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.0e16bd41ccca86d08b41.js
-// Retrieved at 1/4/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.b1689a84d18e2b64b036.js
+// Retrieved at 1/4/2023, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./src/lib/combineRefs/index.tsx": function(e, t, n) {
@@ -1248,7 +1248,7 @@
 				s = n("./src/reddit/actions/subscription/index.ts"),
 				a = n("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(r.b)(() => Object(o.c)({
-				userIsSubscriber: a.jb
+				userIsSubscriber: a.kb
 			}), (e, t) => {
 				let {
 					identifier: n
@@ -2364,7 +2364,7 @@
 					subreddit: c.lb(e)
 				}),
 				d = (e, t, n) => r => ({
-					source: Object(a.i)(r) || n ? "post_lightbox" : "post_detail",
+					source: Object(a.j)(r) || n ? "post_lightbox" : "post_detail",
 					action: "click",
 					noun: t,
 					...i(r),
@@ -2389,7 +2389,7 @@
 				u = (e, t) => n => {
 					const r = c.k(n);
 					return r ? d(r.id, e, t)(n) : {
-						source: Object(a.i)(n) || t ? "post_lightbox" : "post_detail",
+						source: Object(a.j)(n) || t ? "post_lightbox" : "post_detail",
 						action: "click",
 						noun: e,
 						...i(n)
@@ -2708,16 +2708,15 @@
 					noun: "try_this_look_post",
 					snoovatar: s.jb(e)
 				}),
-				u = e => t => ({
-					...s.o(t),
+				u = e => ({
+					...s.o(e),
 					source: "global",
 					action: "view",
 					noun: "screen",
 					actionInfo: {
 						pageType: "snoovatar_builder"
 					},
-					referrer: e,
-					snoovatar: s.jb(t)
+					snoovatar: s.jb(e)
 				}),
 				m = e => ({
 					...s.o(e),
@@ -3847,4 +3846,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.0e16bd41ccca86d08b41.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.b1689a84d18e2b64b036.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.ed624685e75ef92debbf.js
-// Retrieved at 1/4/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.e64aeeeb3df15549318b.js
+// Retrieved at 1/4/2023, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -282,13 +282,13 @@
 				v = (Object(m.a)((e, t) => {
 					const s = v(e, t);
 					if (!s) return f;
-					const n = Object(h.bb)(e, {
+					const n = Object(h.cb)(e, {
 						subredditName: s.name
 					});
 					return n && n.postIds && n.postIds.length ? n.postIds : f
 				}), (e, t) => {
 					const s = e.focusedVerticals.recommendedSubredditIds && e.focusedVerticals.recommendedSubredditIds[t];
-					return s ? Object(h.X)(e, {
+					return s ? Object(h.Y)(e, {
 						subredditId: s
 					}) : null
 				}),
@@ -1660,7 +1660,7 @@
 				k = s.n(C);
 			const O = Object(h.c)({
 				isLoggedIn: T.S,
-				subreddit: E.X,
+				subreddit: E.Y,
 				subredditAboutInfo: E.y
 			});
 			class j extends r.a.Component {
@@ -2025,7 +2025,7 @@
 						} = t;
 						return Object(y.D)(e, s, n, r)
 					}),
-					subredditsById: _.eb,
+					subredditsById: _.fb,
 					viewportDataLoaded: S.a,
 					pageReferrer: p.X,
 					postListPlaceholderComponent: () => g.a,
@@ -2700,8 +2700,8 @@
 					})))
 				}
 			}
-			var K = Q,
-				Y = s("./src/lib/prettyPrintNumber/index.ts"),
+			var Y = Q,
+				K = s("./src/lib/prettyPrintNumber/index.ts"),
 				Z = s("./src/reddit/components/Flair/index.tsx"),
 				X = s("./src/reddit/components/SubredditIcon/index.tsx"),
 				$ = s("./src/reddit/components/SubscribeButton/index.tsx"),
@@ -2716,7 +2716,7 @@
 				fbt: ae
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), de = Object(i.c)({
 				isLoggedIn: re.S,
-				subreddit: ne.X,
+				subreddit: ne.Y,
 				subredditAboutInfo: (e, t) => {
 					let {
 						subredditId: s
@@ -2753,7 +2753,7 @@
 					}, ae._({
 						"*": "{subscribers count} members",
 						_1: "member"
-					}, [ae._plural(n.subscribers, "subscribers count", Object(Y.b)(n.subscribers))], {
+					}, [ae._plural(n.subscribers, "subscribers count", Object(K.b)(n.subscribers))], {
 						hk: "48BXj1"
 					})), n.isNSFW && r.a.createElement(Z.b, {
 						flair: le
@@ -2918,7 +2918,7 @@
 						this.openTab(G.Communities)
 					}, this.onViewed = (e, t) => {
 						var s;
-						return Object(j.e)({
+						return Object(j.f)({
 							key: Object(d.a)(C.b.Topic, null, {
 								topicSlug: null === (s = this.props.topic) || void 0 === s ? void 0 : s.slug
 							}),
@@ -2927,7 +2927,7 @@
 							timerMillis: e,
 							timeSort: this.props.timeSort
 						})
-					}, this.renderNoPosts = () => null, this.renderRelationship = (e, t) => r.a.createElement(K, {
+					}, this.renderNoPosts = () => null, this.renderRelationship = (e, t) => r.a.createElement(Y, {
 						key: e.slug,
 						openTab: this.openTab,
 						relationship: e,
@@ -3120,4 +3120,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.ed624685e75ef92debbf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.e64aeeeb3df15549318b.js.map
