@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.0858480d2607d7e43509.js
-// Retrieved at 1/4/2023, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.e26ffc22d20e6d34ad31.js
+// Retrieved at 1/4/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~PostCreation~ProfileComments~ProfileOverview~ProfilePrivate~Stan~7e460386", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~627063c1", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -5449,7 +5449,7 @@
 							gqlContext: a
 						} = i;
 						const d = r();
-						if (!(!Object(m.e)(d) || null != Object(p.a)(d, {
+						if (!(!Object(m.f)(d) || null != Object(p.a)(d, {
 								subredditId: e
 							})) || t.forceLoad) {
 							n(_());
@@ -5689,7 +5689,7 @@
 					n(T());
 					const u = t.fullData ? l.f : l.e;
 					try {
-						const s = await u(a(), e, !!t.includeIdentity, Object(m.e)(c));
+						const s = await u(a(), e, !!t.includeIdentity, Object(m.f)(c));
 						if (s.ok) {
 							const r = s.body;
 							if (null === (d = r.errors) || void 0 === d ? void 0 : d.length) return void(await n(A(r.errors[0].message)));
@@ -8243,7 +8243,7 @@
 					ue = C && Object(j.I)(re, C),
 					xe = y && Object(ge.o)(re, y),
 					Oe = ue || xe,
-					Ee = Object(pe.p)(V),
+					Ee = Object(pe.q)(V),
 					ye = Object(be.n)(re, {
 						subredditId: Oe
 					}),
@@ -9561,13 +9561,13 @@
 						} = t;
 						var m, p;
 						const b = Object(ye.j)(e),
-							f = !!b && !Object(_e.lg)(b) && (o || b === _e.ib.Community),
+							f = !!b && !Object(_e.mg)(b) && (o || b === _e.ib.Community),
 							{
 								adsSeenCount: h,
 								totalPostsSeenCount: _,
 								sessionStartTime: g
 							} = Object(xe.a)(e),
-							v = Object(Ee.e)(e),
+							v = Object(Ee.f)(e),
 							x = Object(Oe.c)(e),
 							O = {
 								subredditName: r,
@@ -9689,7 +9689,7 @@
 				if (yt.ok && Lt || Xe && Pt) {
 					if ((Xe || !Je && Rt) && Pt.geoFilter && i(Object(N.k)(Pt.geoFilter)), !Je && Rt) {
 						let e, t;
-						if (e = tt ? Pt : Object(S.b)(null == Nt ? void 0 : Nt.subredditInfoByName), Object(S.a)(i, Rt, e), Object(Ee.e)(Le)) {
+						if (e = tt ? Pt : Object(S.b)(null == Nt ? void 0 : Nt.subredditInfoByName), Object(S.a)(i, Rt, e), Object(Ee.f)(Le)) {
 							let e;
 							e = tt ? Pt : Object(w.b)(null == Nt ? void 0 : Nt.subredditInfoByName), Object(w.a)(i, Rt, e)
 						}
@@ -44078,7 +44078,7 @@
 					})),
 					f = (null == b ? void 0 : b[S.a.CommentsWithGifs]) || !1,
 					h = Object(o.e)(T.b),
-					_ = Object(o.e)(w.e);
+					_ = Object(o.e)(w.f);
 				return r.a.createElement(u.a, {
 					className: C.a.contentContainer
 				}, r.a.createElement(u.b, null, a.fbt._("Powerups settings", null, {
@@ -44667,7 +44667,7 @@
 					url: N,
 					isHovercard: P
 				} = e;
-				const R = Object(o.e)(e => !y && !!I && Object(c.d)(e));
+				const R = Object(o.e)(e => !y && !!I && Object(c.e)(e));
 				return r.a.createElement(r.a.Fragment, null, r.a.createElement(m.a, {
 					bannerBackgroundImage: t,
 					editMode: !!b,
@@ -56021,7 +56021,7 @@
 						adsSeenCount: A,
 						totalPostsSeenCount: M,
 						sessionStartTime: L
-					} = Object(_.a)(e), D = Object(O.e)(e), F = Object(x.a)(e), U = Object(v.c)(e), B = Object(g.a)(e), q = {
+					} = Object(_.a)(e), D = Object(O.f)(e), F = Object(x.a)(e), U = Object(v.c)(e), B = Object(g.a)(e), q = {
 						name: t,
 						includeIdentity: I && !e.user.account,
 						adContext: {
@@ -57144,7 +57144,7 @@
 								experimentName: o.y,
 								expEventOverride: t
 							});
-							return !!(Object(o.lg)(n) ? void 0 : n)
+							return !!(Object(o.mg)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -64433,15 +64433,16 @@
 					noun: "try_this_look_post",
 					snoovatar: o.jb(e)
 				}),
-				u = e => ({
-					...o.o(e),
+				u = e => t => ({
+					...o.o(t),
 					source: "global",
 					action: "view",
 					noun: "screen",
 					actionInfo: {
 						pageType: "snoovatar_builder"
 					},
-					snoovatar: o.jb(e)
+					referrer: e,
+					snoovatar: o.jb(t)
 				}),
 				m = e => ({
 					...o.o(e),
@@ -65108,7 +65109,7 @@
 					adminId: e.authorId,
 					subredditId: e.belongsTo.id,
 					avatarShareUrl: e.source ? e.source.url : ""
-				}) && Object(a.a)(t)
+				}) && Object(a.b)(t)
 			})
 		},
 		"./src/reddit/hooks/useIsRemovedOrDeletedPost.ts": function(e, t, n) {
@@ -67997,9 +67998,9 @@
 					} = t;
 					return Object(te.b)(e, {
 						subredditId: n.id
-					}) && (!Object(ee.b)(e) || !Object(C.e)(e))
+					}) && (!Object(ee.b)(e) || !Object(C.f)(e))
 				},
-				isTalkHostsExperimentEnabled: C.p,
+				isTalkHostsExperimentEnabled: C.q,
 				isEventPostUiHidden: $.a
 			});
 			class Ge extends i.a.Component {
@@ -68497,7 +68498,7 @@
 					} = h;
 					return {
 						contentGateInfo: m,
-						isTalkHostsEnabled: Object(C.p)(u),
+						isTalkHostsEnabled: Object(C.q)(u),
 						isContributor: f,
 						isEmployee: t,
 						layout: n,
@@ -73314,7 +73315,7 @@
 					var t, n, s;
 					return null === (s = null === (n = null === (t = e.features) || void 0 === t ? void 0 : t.avatar) || void 0 === n ? void 0 : n.marketing) || void 0 === s ? void 0 : s.pushcard
 				},
-				c = Object(s.a)(d, a.b, (e, t) => {
+				c = Object(s.a)(d, a.c, (e, t) => {
 					if (!e || !t) return null;
 					const {
 						id: n,
@@ -74259,7 +74260,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: s.Nd
 				});
-				return !(!t || Object(s.lg)(t))
+				return !(!t || Object(s.mg)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/gqlSubredditPage.ts": function(e, t, n) {
@@ -75781,7 +75782,7 @@
 					} = e.onboarding;
 					if (t.success || t.failure) return t
 				},
-				x = Object(r.a)(m.j, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(i.lg)(e) ? t : null),
+				x = Object(r.a)(m.j, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(i.mg)(e) ? t : null),
 				O = Object(r.a)(m.j, (e, t) => {
 					let {
 						pageLayer: n
@@ -77255,4 +77256,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.0858480d2607d7e43509.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.e26ffc22d20e6d34ad31.js.map

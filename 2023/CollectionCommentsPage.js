@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.e4d2e623972f8dc43a6a.js
-// Retrieved at 1/4/2023, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.5a750768d2c901fdef1c.js
+// Retrieved at 1/4/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -9550,7 +9550,7 @@
 							canonicalUrl: n.canonical_url,
 							baseUrl: n.base_url,
 							hostPostId: t,
-							shouldShowLinkedPosts: !Object(f.lg)(s) && !Object(w.a)(s),
+							shouldShowLinkedPosts: !Object(f.mg)(s) && !Object(w.a)(s),
 							subreddit: r
 						}
 					}
@@ -9613,7 +9613,7 @@
 						hostPostData: c,
 						listingBelowVariant: d
 					} = e;
-					if (d && !Object(f.lg)(d) && !Object(w.a)(d) && !i) return a.a.createElement("div", {
+					if (d && !Object(f.mg)(d) && !Object(w.a)(d) && !i) return a.a.createElement("div", {
 						className: K.a.smallBanner
 					});
 					const {
@@ -19848,7 +19848,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(r.lg)(t)
+					return Boolean(t) && !Object(r.mg)(t)
 				},
 				c = Object(n.a)(a, o.d, (e, t) => e && !t)
 		},
@@ -19962,4 +19962,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.e4d2e623972f8dc43a6a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.5a750768d2c901fdef1c.js.map

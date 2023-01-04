@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.afcab7ee8c3672224552.js
-// Retrieved at 1/4/2023, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.4e23618f26eb83247be5.js
+// Retrieved at 1/4/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -11898,7 +11898,7 @@
 					userIsWhitelistedCreator: kn.y,
 					allowNavigationCallback: cr.a,
 					isResponsiveSettingsEnabled: lr.a,
-					isTalkLiveBarOptOutEnabled: ir.r,
+					isTalkLiveBarOptOutEnabled: ir.s,
 					prefs: e => e.user.prefs,
 					userHasSpecialMembership: e => {
 						if (e.economics.me.fetched) {
@@ -12406,7 +12406,7 @@
 					return !!n && n.hasGifProduct
 				},
 				z = (e, t, n) => {
-					if (Object(b.e)(e)) return !!t && !!Object(f.a)(e, {
+					if (Object(b.f)(e)) return !!t && !!Object(f.a)(e, {
 						subredditId: t
 					});
 					if (Object(f.g)(e, {
@@ -12626,4 +12626,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.afcab7ee8c3672224552.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.4e23618f26eb83247be5.js.map

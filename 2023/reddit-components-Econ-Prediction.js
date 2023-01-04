@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.d95de7aeb9d3d501c72f.js
-// Retrieved at 1/4/2023, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.e1077748a938331656c1.js
+// Retrieved at 1/4/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, n) {
@@ -575,7 +575,7 @@
 						upvote: E
 					} = function(e) {
 						const t = Object(r.d)(),
-							n = Object(r.e)(v.g),
+							n = Object(r.e)(v.h),
 							{
 								startDelayedUpvoteAnimation: s
 							} = Object(g.a)(e.id);
@@ -1696,7 +1696,7 @@
 					return !!n && n.hasGifProduct
 				},
 				V = (e, t, n) => {
-					if (Object(p.e)(e)) return !!t && !!Object(E.a)(e, {
+					if (Object(p.f)(e)) return !!t && !!Object(E.a)(e, {
 						subredditId: t
 					});
 					if (Object(E.g)(e, {
@@ -1743,4 +1743,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.d95de7aeb9d3d501c72f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.e1077748a938331656c1.js.map

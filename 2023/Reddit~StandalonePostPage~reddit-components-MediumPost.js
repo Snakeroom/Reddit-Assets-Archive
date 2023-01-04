@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.1df1eb24e0a9e6a900f0.js
-// Retrieved at 1/4/2023, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.0e16bd41ccca86d08b41.js
+// Retrieved at 1/4/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./src/lib/combineRefs/index.tsx": function(e, t, n) {
@@ -2708,15 +2708,16 @@
 					noun: "try_this_look_post",
 					snoovatar: s.jb(e)
 				}),
-				u = e => ({
-					...s.o(e),
+				u = e => t => ({
+					...s.o(t),
 					source: "global",
 					action: "view",
 					noun: "screen",
 					actionInfo: {
 						pageType: "snoovatar_builder"
 					},
-					snoovatar: s.jb(e)
+					referrer: e,
+					snoovatar: s.jb(t)
 				}),
 				m = e => ({
 					...s.o(e),
@@ -3846,4 +3847,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.1df1eb24e0a9e6a900f0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.0e16bd41ccca86d08b41.js.map

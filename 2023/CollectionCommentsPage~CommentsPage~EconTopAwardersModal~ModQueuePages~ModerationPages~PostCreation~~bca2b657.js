@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657.131252609e5cfde76d7e.js
-// Retrieved at 1/4/2023, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657.815f70a86c9f4e002c65.js
+// Retrieved at 1/4/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -3700,7 +3700,7 @@
 					return !!r && r.hasGifProduct
 				},
 				q = (e, t, r) => {
-					if (Object(h.e)(e)) return !!t && !!Object(f.a)(e, {
+					if (Object(h.f)(e)) return !!t && !!Object(f.a)(e, {
 						subredditId: t
 					});
 					if (Object(f.g)(e, {
@@ -3760,7 +3760,7 @@
 						experimentEligibilitySelector: n.S,
 						experimentName: s.vd
 					});
-					return !(!t || Object(s.lg)(t))
+					return !(!t || Object(s.mg)(t))
 				},
 				i = e => {
 					return Object(o.c)(e, {
@@ -3826,4 +3826,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657.131252609e5cfde76d7e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657.815f70a86c9f4e002c65.js.map

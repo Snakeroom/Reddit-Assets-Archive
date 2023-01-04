@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.0091b1e2b7df40d57ccb.js
-// Retrieved at 1/4/2023, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.49211fc7008942646823.js
+// Retrieved at 1/4/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -5498,15 +5498,16 @@
 					noun: "try_this_look_post",
 					snoovatar: o.jb(e)
 				}),
-				u = e => ({
-					...o.o(e),
+				u = e => t => ({
+					...o.o(t),
 					source: "global",
 					action: "view",
 					noun: "screen",
 					actionInfo: {
 						pageType: "snoovatar_builder"
 					},
-					snoovatar: o.jb(e)
+					referrer: e,
+					snoovatar: o.jb(t)
 				}),
 				m = e => ({
 					...o.o(e),
@@ -7109,4 +7110,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.0091b1e2b7df40d57ccb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.49211fc7008942646823.js.map

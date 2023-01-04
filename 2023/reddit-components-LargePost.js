@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.06530da0387f7161f783.js
-// Retrieved at 1/4/2023, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.95c5cad643d34bb60ff5.js
+// Retrieved at 1/4/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -10660,15 +10660,16 @@
 					noun: "try_this_look_post",
 					snoovatar: r.jb(e)
 				}),
-				u = e => ({
-					...r.o(e),
+				u = e => t => ({
+					...r.o(t),
 					source: "global",
 					action: "view",
 					noun: "screen",
 					actionInfo: {
 						pageType: "snoovatar_builder"
 					},
-					snoovatar: r.jb(e)
+					referrer: e,
+					snoovatar: r.jb(t)
 				}),
 				m = e => ({
 					...r.o(e),
@@ -12715,7 +12716,7 @@
 				a = n("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(o.lg)(t)
+					return Boolean(t) && !Object(o.mg)(t)
 				},
 				c = Object(s.a)(i, r.d, (e, t) => e && !t)
 		},
@@ -12889,4 +12890,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.06530da0387f7161f783.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.95c5cad643d34bb60ff5.js.map

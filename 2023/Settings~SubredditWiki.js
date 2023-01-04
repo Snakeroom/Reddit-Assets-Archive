@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.4c463b6045b3789580be.js
-// Retrieved at 1/4/2023, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.202878565e46b54802e9.js
+// Retrieved at 1/4/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, r) {
@@ -2237,7 +2237,7 @@
 					url: U,
 					isHovercard: w
 				} = e;
-				const F = Object(a.e)(e => !O && !!E && Object(c.d)(e));
+				const F = Object(a.e)(e => !O && !!E && Object(c.e)(e));
 				return s.a.createElement(s.a.Fragment, null, s.a.createElement(m.a, {
 					bannerBackgroundImage: t,
 					editMode: !!f,
@@ -2753,4 +2753,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.4c463b6045b3789580be.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.202878565e46b54802e9.js.map

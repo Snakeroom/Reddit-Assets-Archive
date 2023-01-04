@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~PostCreation~ProfileComments~ProfileOverview~ProfilePrivate~Stan~7e460386.662520ba4f5c4a0ce6de.js
-// Retrieved at 1/4/2023, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~PostCreation~ProfileComments~ProfileOverview~ProfilePrivate~Stan~7e460386.206ce6b29a1e85c761fa.js
+// Retrieved at 1/4/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~PostCreation~ProfileComments~ProfileOverview~ProfilePrivate~Stan~7e460386"], {
 		"./src/reddit/actions/postCollection/index.ts": function(e, t, o) {
@@ -2426,7 +2426,7 @@
 					adminId: e.authorId,
 					subredditId: e.belongsTo.id,
 					avatarShareUrl: e.source ? e.source.url : ""
-				}) && Object(c.a)(t)
+				}) && Object(c.b)(t)
 			})
 		},
 		"./src/reddit/icons/fonts/Approve/index.tsx": function(e, t, o) {
@@ -2610,4 +2610,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~PostCreation~ProfileComments~ProfileOverview~ProfilePrivate~Stan~7e460386.662520ba4f5c4a0ce6de.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~PostCreation~ProfileComments~ProfileOverview~ProfilePrivate~Stan~7e460386.206ce6b29a1e85c761fa.js.map

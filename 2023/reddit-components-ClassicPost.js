@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.91fc011d33899d8304a7.js
-// Retrieved at 1/4/2023, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.297713e4f20224af726b.js
+// Retrieved at 1/4/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1122,7 +1122,7 @@
 						postId: r,
 						author: o
 					} = t;
-					return Object(f.e)(v.n) && n.roomStatus === h.b.NotStarted ? s.a.createElement(S.a, {
+					return Object(f.e)(v.o) && n.roomStatus === h.b.NotStarted ? s.a.createElement(S.a, {
 						postId: r,
 						author: o,
 						roomId: n.roomId,
@@ -6100,15 +6100,16 @@
 					noun: "try_this_look_post",
 					snoovatar: o.jb(e)
 				}),
-				u = e => ({
-					...o.o(e),
+				u = e => t => ({
+					...o.o(t),
 					source: "global",
 					action: "view",
 					noun: "screen",
 					actionInfo: {
 						pageType: "snoovatar_builder"
 					},
-					snoovatar: o.jb(e)
+					referrer: e,
+					snoovatar: o.jb(t)
 				}),
 				m = e => ({
 					...o.o(e),
@@ -7810,4 +7811,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.91fc011d33899d8304a7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.297713e4f20224af726b.js.map

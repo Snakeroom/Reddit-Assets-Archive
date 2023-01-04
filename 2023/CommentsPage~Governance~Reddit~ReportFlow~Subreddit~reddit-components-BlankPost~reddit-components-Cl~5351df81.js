@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.c1b4fa7b1866c5436d87.js
-// Retrieved at 1/4/2023, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.fd5224ab665a163dbe5d.js
+// Retrieved at 1/4/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"], {
 		"./src/lib/name/index.ts": function(e, t, r) {
@@ -1600,7 +1600,7 @@
 							gqlContext: d
 						} = i;
 						const c = n();
-						if (!(!Object(b.e)(c) || null != Object(p.a)(c, {
+						if (!(!Object(b.f)(c) || null != Object(p.a)(c, {
 								subredditId: e
 							})) || t.forceLoad) {
 							r(g());
@@ -1756,7 +1756,7 @@
 					r(w());
 					const l = t.fullData ? u.f : u.e;
 					try {
-						const s = await l(d(), e, !!t.includeIdentity, Object(b.e)(a));
+						const s = await l(d(), e, !!t.includeIdentity, Object(b.f)(a));
 						if (s.ok) {
 							const n = s.body;
 							if (null === (c = n.errors) || void 0 === c ? void 0 : c.length) return void(await r(R(n.errors[0].message)));
@@ -2730,13 +2730,13 @@
 						} = t;
 						var b, p;
 						const m = Object(ye.j)(e),
-							f = !!m && !Object(ge.lg)(m) && (o || m === ge.ib.Community),
+							f = !!m && !Object(ge.mg)(m) && (o || m === ge.ib.Community),
 							{
 								adsSeenCount: O,
 								totalPostsSeenCount: g,
 								sessionStartTime: j
 							} = Object(Ie.a)(e),
-							_ = Object(he.e)(e),
+							_ = Object(he.f)(e),
 							I = Object(ve.c)(e),
 							v = {
 								subredditName: n,
@@ -2858,7 +2858,7 @@
 				if (yt.ok && Dt || Ye && Lt) {
 					if ((Ye || !$e && Pt) && Lt.geoFilter && i(Object(N.k)(Lt.geoFilter)), !$e && Pt) {
 						let e, t;
-						if (e = tt ? Lt : Object(C.b)(null == Nt ? void 0 : Nt.subredditInfoByName), Object(C.a)(i, Pt, e), Object(he.e)(De)) {
+						if (e = tt ? Lt : Object(C.b)(null == Nt ? void 0 : Nt.subredditInfoByName), Object(C.a)(i, Pt, e), Object(he.f)(De)) {
 							let e;
 							e = tt ? Lt : Object(A.b)(null == Nt ? void 0 : Nt.subredditInfoByName), Object(A.a)(i, Pt, e)
 						}
@@ -6562,7 +6562,7 @@
 						adsSeenCount: R,
 						totalPostsSeenCount: k,
 						sessionStartTime: D
-					} = Object(g.a)(e), G = Object(v.e)(e), U = Object(I.a)(e), F = Object(_.c)(e), M = Object(j.a)(e), q = {
+					} = Object(g.a)(e), G = Object(v.f)(e), U = Object(I.a)(e), F = Object(_.c)(e), M = Object(j.a)(e), q = {
 						name: t,
 						includeIdentity: x && !e.user.account,
 						adContext: {
@@ -7034,7 +7034,7 @@
 								experimentName: o.y,
 								expEventOverride: t
 							});
-							return !!(Object(o.lg)(r) ? void 0 : r)
+							return !!(Object(o.mg)(r) ? void 0 : r)
 						})(r)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -11004,7 +11004,7 @@
 					} = e.onboarding;
 					if (t.success || t.failure) return t
 				},
-				I = Object(n.a)(b.j, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(i.lg)(e) ? t : null),
+				I = Object(n.a)(b.j, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(i.mg)(e) ? t : null),
 				v = Object(n.a)(b.j, (e, t) => {
 					let {
 						pageLayer: r
@@ -11691,4 +11691,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.c1b4fa7b1866c5436d87.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.fd5224ab665a163dbe5d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.700419b8d253754e8164.js
-// Retrieved at 1/4/2023, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.d8cc2a90f8c1fcaea30e.js
+// Retrieved at 1/4/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit", "ContributorRequestButton", "schedulePickerModal"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, n) {},
@@ -7487,7 +7487,7 @@
 					let {
 						className: t
 					} = e;
-					return Object(s.e)(i.i) ? r.a.createElement(d, {
+					return Object(s.e)(i.j) ? r.a.createElement(d, {
 						className: t
 					}) : r.a.createElement(a, {
 						className: t
@@ -26978,15 +26978,16 @@
 					noun: "try_this_look_post",
 					snoovatar: s.jb(e)
 				}),
-				u = e => ({
-					...s.o(e),
+				u = e => t => ({
+					...s.o(t),
 					source: "global",
 					action: "view",
 					noun: "screen",
 					actionInfo: {
 						pageType: "snoovatar_builder"
 					},
-					snoovatar: s.jb(e)
+					referrer: e,
+					snoovatar: s.jb(t)
 				}),
 				m = e => ({
 					...s.o(e),
@@ -29210,7 +29211,7 @@
 						theme: l,
 						topics: u,
 						isUpcoming: m
-					} = Object(s.e)(L.ub), h = Object(s.e)(L.kb), b = Object(s.e)(A.n), f = Object(s.e)(F.m), [g, y] = Object(o.useState)(!1), v = Object(s.d)(), E = Object(P.a)(), C = Object(o.useMemo)(() => Object(w.d)(), [i.id]), S = Object(o.useMemo)(() => Object.keys(W).reduce((e, t) => (e[W[t]] = l === t, e), {}), [l]);
+					} = Object(s.e)(L.ub), h = Object(s.e)(L.kb), b = Object(s.e)(A.o), f = Object(s.e)(F.m), [g, y] = Object(o.useState)(!1), v = Object(s.d)(), E = Object(P.a)(), C = Object(o.useMemo)(() => Object(w.d)(), [i.id]), S = Object(o.useMemo)(() => Object.keys(W).reduce((e, t) => (e[W[t]] = l === t, e), {}), [l]);
 					Object(o.useEffect)(() => {
 						E(Object(I.d)())
 					}, [E]);
@@ -29437,7 +29438,7 @@
 			var Ee = () => {
 				const [e, t] = Object(o.useState)(!1), {
 					topics: n
-				} = Object(s.e)(L.ub), i = Object(s.e)(A.n), c = Object(s.d)(), l = () => {
+				} = Object(s.e)(L.ub), i = Object(s.e)(A.o), c = Object(s.d)(), l = () => {
 					t(!1)
 				};
 				return r.a.createElement(r.a.Fragment, null, r.a.createElement(j.t, {
@@ -33524,7 +33525,7 @@
 						subredditId: n
 					} = e;
 					const i = Object(s.d)(),
-						c = Object(s.e)(A.h),
+						c = Object(s.e)(A.i),
 						l = Object(s.e)(e => Object(qn.b)(e, {
 							subredditId: n
 						})),
@@ -33944,7 +33945,7 @@
 				}, e.children),
 				mu = Object(i.a)(L.d, L.e, L.h, L.T, L.cb, Y.s, (e, t) => {
 					const n = Object(L.h)(e);
-					return Object(A.t)(e) && t.isTalkCreationAllowedForUser && n.isProfile
+					return Object(A.u)(e) && t.isTalkCreationAllowedForUser && n.isProfile
 				}, (e, t, n, o, r, s, i) => {
 					const {
 						images: a = !0,
@@ -34178,8 +34179,8 @@
 							subredditId: n.id
 						})
 					},
-					isTalkTopicSelectionEnabled: A.s,
-					isScheduledTalksEnabled: A.n
+					isTalkTopicSelectionEnabled: A.t,
+					isScheduledTalksEnabled: A.o
 				});
 			class Su extends r.a.Component {
 				constructor(e) {
@@ -34521,7 +34522,7 @@
 					const t = Object(G.a)(),
 						[n, i] = Object(o.useState)(!1),
 						a = Object(s.e)(e => Object(L.h)(e)),
-						c = Object(s.e)(A.t),
+						c = Object(s.e)(A.u),
 						d = Object(o.useMemo)(() => {
 							var e;
 							return !!(null === (e = a.allowedPostTypes) || void 0 === e ? void 0 : e.talks)
@@ -38184,4 +38185,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.700419b8d253754e8164.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.d8cc2a90f8c1fcaea30e.js.map

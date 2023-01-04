@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.0ffcad2571c829f8e7e8.js
-// Retrieved at 1/4/2023, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.81212155aedd0e463188.js
+// Retrieved at 1/4/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -2091,7 +2091,7 @@
 						postId: n,
 						author: r
 					} = t;
-					return Object(h.e)(x.n) && s.roomStatus === f.b.NotStarted ? o.a.createElement(w.a, {
+					return Object(h.e)(x.o) && s.roomStatus === f.b.NotStarted ? o.a.createElement(w.a, {
 						postId: n,
 						author: r,
 						roomId: s.roomId,
@@ -11578,7 +11578,7 @@
 				a = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(o.lg)(t)
+					return Boolean(t) && !Object(o.mg)(t)
 				},
 				c = Object(n.a)(i, r.d, (e, t) => e && !t)
 		},
@@ -11626,4 +11626,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.0ffcad2571c829f8e7e8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.81212155aedd0e463188.js.map

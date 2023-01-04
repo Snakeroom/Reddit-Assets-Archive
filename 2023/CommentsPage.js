@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.64d75ca6030ed1038d3a.js
-// Retrieved at 1/4/2023, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.f5f230bf7879fa2c4e34.js
+// Retrieved at 1/4/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPage~reddit-comp~627063c1", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "Reddit~StandalonePostPage~reddit-components-MediumPost", "ModListing~Reddit", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -26695,7 +26695,7 @@
 							canonicalUrl: s.canonical_url,
 							baseUrl: s.base_url,
 							hostPostId: t,
-							shouldShowLinkedPosts: !Object(g.lg)(n) && !Object(w.a)(n),
+							shouldShowLinkedPosts: !Object(g.mg)(n) && !Object(w.a)(n),
 							subreddit: r
 						}
 					}
@@ -26758,7 +26758,7 @@
 						hostPostData: c,
 						listingBelowVariant: d
 					} = e;
-					if (d && !Object(g.lg)(d) && !Object(w.a)(d) && !i) return a.a.createElement("div", {
+					if (d && !Object(g.mg)(d) && !Object(w.a)(d) && !i) return a.a.createElement("div", {
 						className: q.a.smallBanner
 					});
 					const {
@@ -37595,10 +37595,10 @@
 				b = n("./node_modules/reselect/es/index.js");
 			const h = Object(b.a)(e => Object(p.c)(e, {
 				experimentEligibilitySelector: p.a,
-				experimentName: m.ig
+				experimentName: m.jg
 			}), e => ({
-				promptBeforeClick: e === m.jg.PromptBeforeClick,
-				promptAfterClick: e === m.jg.PromptAfterClick
+				promptBeforeClick: e === m.kg.PromptBeforeClick,
+				promptAfterClick: e === m.kg.PromptAfterClick
 			}));
 			var f = n("./src/reddit/controls/Search/SearchScopePill/index.tsx"),
 				C = n("./src/reddit/controls/Search/SearchBar/index.m.less"),
@@ -43469,15 +43469,16 @@
 					noun: "try_this_look_post",
 					snoovatar: o.jb(e)
 				}),
-				u = e => ({
-					...o.o(e),
+				u = e => t => ({
+					...o.o(t),
 					source: "global",
 					action: "view",
 					noun: "screen",
 					actionInfo: {
 						pageType: "snoovatar_builder"
 					},
-					snoovatar: o.jb(e)
+					referrer: e,
+					snoovatar: o.jb(t)
 				}),
 				m = e => ({
 					...o.o(e),
@@ -52211,7 +52212,7 @@
 				i = n("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(r.lg)(t)
+					return Boolean(t) && !Object(r.mg)(t)
 				},
 				c = Object(s.a)(a, o.d, (e, t) => e && !t)
 		},
@@ -52726,4 +52727,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.64d75ca6030ed1038d3a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.f5f230bf7879fa2c4e34.js.map
