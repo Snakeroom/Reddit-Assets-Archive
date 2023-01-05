@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.b8eebf14825d9bc784d4.js
-// Retrieved at 1/5/2023, 4:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.2e3f695d1a05f7fe5f0b.js
+// Retrieved at 1/5/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, n) {
@@ -2458,7 +2458,7 @@
 				const p = Object(o.e)(e => e.subreddits.survey[n]),
 					b = Object(o.e)(e => e.subreddits.progressModule[n]),
 					h = Object(o.e)(u.a),
-					g = h !== c.Ne.NewModule;
+					g = h !== c.Me.NewModule;
 				return (null === (s = null == b ? void 0 : b.cards) || void 0 === s ? void 0 : s.length) > 0 && g ? i.a.createElement(m, {
 					closeModuleOnMount: !!t && t !== l.g.Large,
 					subredditId: n,
@@ -2484,15 +2484,15 @@
 			const o = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: i.S,
-						experimentName: r.ud
+						experimentName: r.td
 					});
-					return !(!t || Object(r.lg)(t))
+					return !(!t || Object(r.kg)(t))
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: i.S,
-						experimentName: r.ud
-					}) === r.Rd.ListingEnabled
+						experimentName: r.td
+					}) === r.Qd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/experiments/navbarLikeMweb.ts": function(e, t, n) {
@@ -2503,13 +2503,13 @@
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = e => Object(s.c)(e, {
-				experimentName: r.Ee,
+				experimentName: r.De,
 				experimentEligibilitySelector: s.a
-			}) === r.Me.Enabled
+			}) === r.Le.Enabled
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
 			e.exports = JSON.parse('{"id":"c1fc98c26cf2"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.b8eebf14825d9bc784d4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.2e3f695d1a05f7fe5f0b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.06f2a7b4f961f947cb03.js
-// Retrieved at 1/5/2023, 4:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.ae8c52667a9d249909eb.js
+// Retrieved at 1/5/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba"], {
 		"./src/lib/scroll/index.ts": function(e, t, o) {
@@ -54,7 +54,7 @@
 			})), o.d(t, "m", (function() {
 				return Te
 			})), o.d(t, "b", (function() {
-				return Ne
+				return Me
 			})), o.d(t, "c", (function() {
 				return Re
 			})), o.d(t, "s", (function() {
@@ -111,8 +111,8 @@
 				E = o("./src/reddit/models/PostCreationForm/index.ts"),
 				T = o("./src/reddit/models/RichTextJson/addEmotesAsImagesParam.ts"),
 				I = o("./src/reddit/models/RichTextJson/addRTJParam.ts"),
-				N = o("./src/reddit/helpers/graphql/helpers.ts"),
-				M = o("./src/reddit/helpers/graphql/normalizeCommentFromGql/index.ts"),
+				M = o("./src/reddit/helpers/graphql/helpers.ts"),
+				N = o("./src/reddit/helpers/graphql/normalizeCommentFromGql/index.ts"),
 				P = o("./src/redditGQL/operations/CreateComment.json");
 			const R = (e, t, o, n) => {
 					let r, s;
@@ -182,17 +182,17 @@
 							if ((null == t ? void 0 : t.fieldErrors) && t.fieldErrors.length > 0) return {
 								...e,
 								ok: !1,
-								error: Object(N.e)(t.fieldErrors)
+								error: Object(M.e)(t.fieldErrors)
 							};
 							if ((null == t ? void 0 : t.errors) && t.errors.length > 0) return {
 								...e,
 								ok: !1,
-								error: Object(N.f)(t.errors)
+								error: Object(M.f)(t.errors)
 							};
 							if (t.ok) return {
 								...e,
 								body: {
-									comment: Object(M.a)(t.commentInfo)
+									comment: Object(N.a)(t.commentInfo)
 								}
 							}
 						}
@@ -229,7 +229,7 @@
 			const ce = Object(se.a)(e => Object(re.c)(e, {
 				experimentEligibilitySelector: re.a,
 				experimentName: ne.Ab
-			}), e => e === ne.Nd);
+			}), e => e === ne.Md);
 			var ie = o("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				ae = o("./src/reddit/selectors/platform.ts"),
 				de = o("./src/reddit/selectors/posts.ts"),
@@ -475,7 +475,7 @@
 							subredditId: (null === (l = Object(ae.e)(g)) || void 0 === l ? void 0 : l.id) || "",
 							parentId: j.id
 						}) : void 0
-					})), x || r(Ne({
+					})), x || r(Me({
 						parentCommentId: m,
 						commentsPageKey: u
 					}));
@@ -536,7 +536,7 @@
 							parentCommentDepth: o
 						}, !0, s, c))
 					}
-				}, Ie = Object(r.a)(ue.s), Ne = Object(r.a)(ue.r), Me = Object(r.a)(ue.n), Pe = (Object(r.a)(ue.i), Object(r.a)(ue.o)), Re = (Object(r.a)(ue.v), (e, t, o) => async (r, s, c) => {
+				}, Ie = Object(r.a)(ue.s), Me = Object(r.a)(ue.r), Ne = Object(r.a)(ue.n), Pe = (Object(r.a)(ue.i), Object(r.a)(ue.o)), Re = (Object(r.a)(ue.v), (e, t, o) => async (r, s, c) => {
 					let {
 						apiContext: i
 					} = c;
@@ -581,7 +581,7 @@
 						}));
 						const m = c.features.comments.replyFormOpen[t],
 							u = m && m[o];
-						if ((u || m && n) && (Object.keys(m).forEach(o => m[o] && e(Ne({
+						if ((u || m && n) && (Object.keys(m).forEach(o => m[o] && e(Me({
 								parentCommentId: o,
 								commentsPageKey: t
 							}))), u)) return;
@@ -636,7 +636,7 @@
 						commentsPageKey: o
 					} = e;
 					return async e => {
-						e(Ne({
+						e(Me({
 							parentCommentId: t,
 							commentsPageKey: o
 						})), e(De({
@@ -647,7 +647,7 @@
 							commentsPageKey: o
 						}))
 					}
-				}, Ae = (e, t) => o => o(Me({
+				}, Ae = (e, t) => o => o(Ne({
 					draftKey: e,
 					formData: t
 				})), Fe = Object(r.a)(ue.u), Be = e => {
@@ -713,18 +713,18 @@
 										if ((null == t ? void 0 : t.fieldErrors) && t.fieldErrors.length > 0) return {
 											...e,
 											ok: !1,
-											error: Object(N.e)(t.fieldErrors)
+											error: Object(M.e)(t.fieldErrors)
 										};
 										if ((null == t ? void 0 : t.errors) && t.errors.length > 0) return {
 											...e,
 											ok: !1,
-											error: Object(N.f)(t.errors)
+											error: Object(M.f)(t.errors)
 										};
 										if (t.ok) return {
 											...e,
 											body: {
 												comment: {
-													...Object(M.c)(t.content)
+													...Object(N.c)(t.content)
 												}
 											}
 										}
@@ -1113,8 +1113,8 @@
 				E = o("./src/reddit/controls/Dropdown/Row.tsx"),
 				T = o("./src/reddit/controls/Search/CommentSearch/index.tsx"),
 				I = o("./src/reddit/controls/ToggleSwitch/index.tsx"),
-				N = o("./src/reddit/helpers/path/index.ts"),
-				M = o("./src/reddit/selectors/telemetry.ts");
+				M = o("./src/reddit/helpers/path/index.ts"),
+				N = o("./src/reddit/selectors/telemetry.ts");
 			o("./src/telemetry/models/Event.ts");
 			const P = (e, t, o, n, r) => s => ({
 					source: "comment_sort",
@@ -1123,12 +1123,12 @@
 					actionInfo: {
 						pageType: t ? "post_detail" : "home"
 					},
-					listing: Object(M.z)(s, void 0, {
+					listing: Object(N.z)(s, void 0, {
 						oldSort: o,
 						sort: n,
 						source: r
 					}),
-					userSubreddit: Object(M.ub)(s)
+					userSubreddit: Object(N.ub)(s)
 				}),
 				R = (e, t) => o => ({
 					source: "comment_highlighting",
@@ -1136,8 +1136,8 @@
 					noun: e
 				}),
 				D = e => ({
-					subreddit: Object(M.lb)(e),
-					userSubreddit: Object(M.ub)(e)
+					subreddit: Object(N.lb)(e),
+					userSubreddit: Object(N.ub)(e)
 				}),
 				L = e => t => ({
 					source: "contest_mode",
@@ -1341,7 +1341,7 @@
 						showCommentHighlighter: k,
 						sort: v,
 						suggestedSort: w,
-						showTooltip: M,
+						showTooltip: N,
 						toggleContestModeModal: P
 					} = this.props, D = g.contestMode, L = null == o, F = c.bucketed && Object(_.b)(f) && Object(_.c)(g), B = c.bucketed && Object(_.c)(g) && L, H = !O.search.includes(d.w.CONFIDENCE), U = v === d.w.CONFIDENCE && H, G = b && !U, W = d.y[v], q = W ? W() : "", J = w && v === w && !U ? this.addSuggestedLabel(q) : q, z = D ? n.fbt._("End contest mode?", null, {
 						hk: "2AkJRZ"
@@ -1373,7 +1373,7 @@
 						tooltipId: $
 					}, [d.w.CONFIDENCE, d.w.TOP, d.w.NEW, d.w.CONTROVERSIAL, d.w.OLD, d.w.QA].map(e => {
 						const t = r || j,
-							o = Object(N.b)(t),
+							o = Object(M.b)(t),
 							n = d.y[e],
 							c = n ? n() : "";
 						return s.a.createElement(C.a, {
@@ -1423,7 +1423,7 @@
 						hk: "3qLzxp"
 					})), s.a.createElement("span", {
 						id: te,
-						onMouseEnter: M,
+						onMouseEnter: N,
 						onMouseLeave: u
 					}, s.a.createElement(y.c, {
 						className: Q.a.Tooltip,
@@ -1540,9 +1540,9 @@
 			})), o.d(t, "d", (function() {
 				return I
 			})), o.d(t, "e", (function() {
-				return N
-			})), o.d(t, "c", (function() {
 				return M
+			})), o.d(t, "c", (function() {
+				return N
 			}));
 			var n = o("./node_modules/fbt/lib/FbtPublic.js"),
 				r = o("./node_modules/react/index.js"),
@@ -1573,7 +1573,7 @@
 				T = "search-bar-dismiss-button",
 				I = "search/";
 
-			function N(e) {
+			function M(e) {
 				let {
 					searchValue: t,
 					post: o,
@@ -1592,12 +1592,12 @@
 				}
 			}
 
-			function M(e) {
+			function N(e) {
 				const {
 					expanded: t,
 					bucketed: o,
 					collapsed: l
-				} = e.experiment, b = Object(j.a)(), _ = Object(x.a)(), M = (null == b ? void 0 : b.queryParams.q) || "", [P, R] = Object(r.useState)(M), [D, L] = Object(r.useState)(t), K = Object(c.d)(), A = Object(r.useRef)(null), F = Object(c.e)(e => Object(h.h)(e, {
+				} = e.experiment, b = Object(j.a)(), _ = Object(x.a)(), N = (null == b ? void 0 : b.queryParams.q) || "", [P, R] = Object(r.useState)(N), [D, L] = Object(r.useState)(t), K = Object(c.d)(), A = Object(r.useRef)(null), F = Object(c.e)(e => Object(h.h)(e, {
 					pageLayer: b
 				})), B = Object(c.e)(e => Object(h.s)(e, {
 					pageLayer: b
@@ -1605,7 +1605,7 @@
 				var U, G, W;
 
 				function q() {
-					_(Object(g.p)(S.a.SearchBar, N({
+					_(Object(g.p)(S.a.SearchBar, M({
 						searchValue: P,
 						post: F,
 						subreddit: B
@@ -1616,7 +1616,7 @@
 					var t;
 					if (!P.trim() || !F) return;
 					const o = `${new URL(F.permalink).pathname}${I}`,
-						n = N({
+						n = M({
 							searchValue: P,
 							post: F,
 							subreddit: B
@@ -2139,4 +2139,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.06f2a7b4f961f947cb03.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.ae8c52667a9d249909eb.js.map

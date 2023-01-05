@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.84a678bfc24ef627d684.js
-// Retrieved at 1/5/2023, 4:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.03bc392261947c6c8afc.js
+// Retrieved at 1/5/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityTopicSurvey"], {
 		"./node_modules/react-uid/dist/es2015/hooks.js": function(e, t, n) {
@@ -61,7 +61,7 @@
 		"./src/reddit/components/CommunityTopicSurvey/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "default", (function() {
-				return F
+				return L
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/react/index.js"),
@@ -128,8 +128,8 @@
 				});
 			var h = n("./src/reddit/hooks/useGqlContext.ts"),
 				g = n("./src/reddit/hooks/useTracking.ts"),
-				S = n("./src/reddit/models/Subreddit/index.ts"),
-				E = n("./src/reddit/models/Toast/index.ts"),
+				E = n("./src/reddit/models/Subreddit/index.ts"),
+				S = n("./src/reddit/models/Toast/index.ts"),
 				v = n("./src/reddit/actions/subreddit/constants.ts"),
 				I = n("./src/lib/classNames/index.ts"),
 				C = n("./src/reddit/components/StructuredStyles/StyledComponents/index.tsx"),
@@ -196,7 +196,7 @@
 				return 0 === n.length ? o.a.createElement(o.a.Fragment, null, t) : o.a.createElement(o.a.Fragment, null, n[0], o.a.createElement(N.a, {
 					isFeatureFlagEnabled: !0,
 					isUserInTreatment: !0,
-					userVariant: B.Lf.SmIconHc,
+					userVariant: B.Kf.SmIconHc,
 					subredditName: n[1].split("/")[1],
 					rtJsonElementProps: {}
 				}), n[2])
@@ -244,7 +244,7 @@
 				})))
 			}
 
-			function L(e) {
+			function F(e) {
 				const {
 					questionId: t,
 					questionText: n,
@@ -290,7 +290,7 @@
 				})))
 			}
 
-			function F(e) {
+			function L(e) {
 				var t;
 				const {
 					subredditId: n,
@@ -335,7 +335,7 @@
 						text: r.fbt._("Thank you for your help!", null, {
 							hk: "1asBUQ"
 						}),
-						kind: E.b.SuccessCommunityGreen
+						kind: S.b.SuccessCommunityGreen
 					}))
 				}
 
@@ -343,7 +343,7 @@
 					u(_(O, t, n))
 				}
 				switch (O.type) {
-					case S.e.Multi:
+					case E.e.Multi:
 						return o.a.createElement(R, {
 							key: O.id,
 							questionId: O.id,
@@ -354,8 +354,8 @@
 							onClose: T,
 							inFeed: a
 						});
-					case S.e.SingleWithSubmit:
-						return o.a.createElement(L, {
+					case E.e.SingleWithSubmit:
+						return o.a.createElement(F, {
 							key: O.id,
 							questionId: O.id,
 							questionText: O.questionText,
@@ -365,8 +365,8 @@
 							onClose: T,
 							inFeed: a
 						});
-					case S.e.SingleNoSubmit:
-						return o.a.createElement(L, {
+					case E.e.SingleNoSubmit:
+						return o.a.createElement(F, {
 							key: O.id,
 							questionId: O.id,
 							questionText: O.questionText,
@@ -518,9 +518,9 @@
 			})), n.d(t, "b", (function() {
 				return g
 			})), n.d(t, "f", (function() {
-				return S
-			})), n.d(t, "u", (function() {
 				return E
+			})), n.d(t, "u", (function() {
+				return S
 			})), n.d(t, "d", (function() {
 				return v
 			})), n.d(t, "l", (function() {
@@ -563,8 +563,8 @@
 				x = c.a.ul("Ul", d.a),
 				h = c.a.ol("Ol", d.a),
 				g = c.a.strong("B", d.a),
-				S = c.a.em("I", d.a),
-				E = c.a.span("U", d.a),
+				E = c.a.em("I", d.a),
+				S = c.a.span("U", d.a),
 				v = e => s.a.createElement("del", e),
 				I = c.a.sub("Sub", d.a),
 				C = c.a.sup("Sup", d.a),
@@ -624,9 +624,9 @@
 			})), n.d(t, "f", (function() {
 				return g
 			})), n.d(t, "e", (function() {
-				return S
-			})), n.d(t, "d", (function() {
 				return E
+			})), n.d(t, "d", (function() {
+				return S
 			})), n.d(t, "c", (function() {
 				return v
 			})), n.d(t, "h", (function() {
@@ -666,8 +666,8 @@
 				x = i.a.wrapped(l.a, "ThemedChevron", p.a),
 				h = i.a.wrapped(d.l, "Button", p.a),
 				g = i.a.wrapped(d.r, "TertiaryButton", p.a),
-				S = i.a.div("SubFormTitle", p.a),
-				E = i.a.wrapped(d.o, "SecondaryButton", p.a),
+				E = i.a.div("SubFormTitle", p.a),
+				S = i.a.wrapped(d.o, "SecondaryButton", p.a),
 				v = i.a.wrapped(g, "DeleteButton", p.a),
 				I = (i.a.section("ModalBody", p.a), i.a.header("ModalHeader", p.a), i.a.h2("ModalTitle", p.a), i.a.div("ModalMain", p.a), i.a.p("ModalText", p.a), i.a.footer("ModalFooter", p.a), e => s.a.createElement(u, _({}, e, {
 					className: Object(o.a)(p.a.ToggleInput, {
@@ -770,12 +770,12 @@
 				}
 			}
 			const g = Object(p.c)(h),
-				S = Object(i.c)({
+				E = Object(i.c)({
 					isFeatureFlagEnabled: x.b,
 					isUserInTreatment: x.e,
 					userVariant: x.a
 				}),
-				E = Object(o.b)(S),
+				S = Object(o.b)(E),
 				v = e => {
 					let {
 						isFeatureFlagEnabled: t,
@@ -789,12 +789,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case _.Lf.SmIcon:
+						case _.Kf.SmIcon:
 							return s.a.createElement(b, {
 								subredditName: r,
 								rtJsonElementProps: i
 							});
-						case _.Lf.SmIconHc:
+						case _.Kf.SmIconHc:
 							return s.a.createElement(b, {
 								subredditName: r,
 								isHoverable: !0,
@@ -807,7 +807,7 @@
 							})
 					}
 				};
-			t.b = E(v)
+			t.b = S(v)
 		},
 		"./src/reddit/controls/ButtonGroup/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -872,9 +872,9 @@
 			})), n.d(t, "b", (function() {
 				return g
 			})), n.d(t, "c", (function() {
-				return S
-			})), n.d(t, "d", (function() {
 				return E
+			})), n.d(t, "d", (function() {
+				return S
 			})), n.d(t, "e", (function() {
 				return v
 			}));
@@ -980,14 +980,14 @@
 					subreddit: l.nb(n, e),
 					screen: l.cb(n)
 				}),
-				S = e => t => ({
+				E = e => t => ({
 					...b(t),
 					subreddit: l.mb(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: r.HEADER_SUBREDDIT
 				}),
-				E = e => t => ({
+				S = e => t => ({
 					...b(t),
 					subreddit: l.mb(t, e) || null,
 					source: s.DISCOVERY_UNIT,
@@ -1051,12 +1051,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: d,
-						experimentName: r.Ff
+						experimentName: r.Ef
 					}) || ""
 				},
 				a = e => {
 					const t = c(e);
-					return t === r.Lf.SmIcon || t === r.Lf.SmIconHc
+					return t === r.Kf.SmIcon || t === r.Kf.SmIconHc
 				},
 				u = (e, t) => {
 					let {
@@ -1085,4 +1085,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.84a678bfc24ef627d684.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.03bc392261947c6c8afc.js.map

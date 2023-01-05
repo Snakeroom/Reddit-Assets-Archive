@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.4ed23b00d7e7bfadcbdd.js
-// Retrieved at 1/5/2023, 4:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.088fe2f2a921af63f5f5.js
+// Retrieved at 1/5/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/actions/modQueue/realtime.ts": function(e, t, s) {
@@ -1907,7 +1907,7 @@
 			const I = m.a.wrapped(C.b, "Row", S.a),
 				N = Object(d.c)({
 					currentPage: e => e.platform.currentPage,
-					origin: j.k
+					origin: j.l
 				});
 			var R = Object(i.b)(N)(e => a.a.createElement("div", null, a.a.createElement(E.default, {
 					onClick: e.sendEventWithName("content_type_both"),
@@ -1956,7 +1956,7 @@
 			const F = e => Object(D.c)(e, {
 				experimentEligibilitySelector: A.S,
 				experimentName: L.Zb
-			}) === L.Nd;
+			}) === L.Md;
 			var M = s("./src/reddit/components/ModQueueList/SortByNumReportsTooltip.m.less"),
 				B = s.n(M);
 			const U = e => {
@@ -1990,7 +1990,7 @@
 				}),
 				X = Object(d.c)({
 					moderatingSubreddits: H.o,
-					origin: j.k,
+					origin: j.l,
 					isRealtimeMQUpdatesExperimentEnabled: q.a
 				}),
 				K = Object(i.b)(X),
@@ -2839,7 +2839,7 @@
 					isModQueueListingPending: ye.e,
 					loadMore: ye.g,
 					modQueueListingItems: ye.f,
-					origin: Oe.k,
+					origin: Oe.l,
 					selectedItems: ye.i,
 					subredditId: (e, t) => t.subredditName ? Object(_e.I)(e, t.subredditName) : null
 				}),
@@ -3381,4 +3381,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.4ed23b00d7e7bfadcbdd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.088fe2f2a921af63f5f5.js.map

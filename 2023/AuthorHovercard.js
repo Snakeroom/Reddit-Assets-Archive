@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.3bb1e01cfba1a546728b.js
-// Retrieved at 1/5/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.c0212b533659dba4db10.js
+// Retrieved at 1/5/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -5979,7 +5979,7 @@
 				s = n("./node_modules/react-redux/es/index.js"),
 				o = n("./src/reddit/selectors/meta.ts");
 			const i = "undefined" == typeof document ? function() {
-				const e = Object(s.e)(o.j) || r.DEFAULT_LOCALE;
+				const e = Object(s.e)(o.k) || r.DEFAULT_LOCALE;
 				return Object(a.isPseudoLocale)(e) ? r.DEFAULT_LOCALE : e
 			} : function() {
 				const e = document.documentElement.lang || r.DEFAULT_LOCALE;
@@ -6652,4 +6652,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.3bb1e01cfba1a546728b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.c0212b533659dba4db10.js.map

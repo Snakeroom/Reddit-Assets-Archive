@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.9b47234221d0836371eb.js
-// Retrieved at 1/5/2023, 4:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.fc7992c9c6373aec9b63.js
+// Retrieved at 1/5/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1532,8 +1532,8 @@
 				V = n("./src/reddit/helpers/isRemoved.ts"),
 				H = n("./src/reddit/helpers/modTooltipTemplates/index.ts"),
 				J = n("./src/reddit/helpers/showReportIndicator/index.ts"),
-				X = n("./src/reddit/hooks/usePageLayer.ts"),
-				W = n("./src/reddit/icons/fonts/Approve/index.tsx"),
+				W = n("./src/reddit/hooks/usePageLayer.ts"),
+				X = n("./src/reddit/icons/fonts/Approve/index.tsx"),
 				z = n("./src/reddit/icons/fonts/Lock/index.tsx"),
 				q = n("./src/reddit/icons/fonts/Remove/index.tsx"),
 				Q = n("./src/reddit/icons/fonts/Report/index.tsx"),
@@ -1549,7 +1549,7 @@
 					isAdmin: d
 				} = e;
 				const c = Object(i.d)(),
-					m = Object(X.a)(),
+					m = Object(W.a)(),
 					l = Object(i.e)(e => F.e[Object(U.V)(e, {
 						pageLayer: m
 					})] === F.d.Card),
@@ -1564,7 +1564,7 @@
 					x = b("CommentTopMeta--Report--"),
 					C = b("CommentTopMeta--Spam--"),
 					g = p(v);
-				return r.a.createElement(r.a.Fragment, null, (t.approvedBy || t.isApproved) && !u && r.a.createElement(r.a.Fragment, null, r.a.createElement(W.a, {
+				return r.a.createElement(r.a.Fragment, null, (t.approvedBy || t.isApproved) && !u && r.a.createElement(r.a.Fragment, null, r.a.createElement(X.a, {
 					className: Z.a.approveIcon,
 					desc: Object(H.a)(t),
 					id: f,
@@ -2607,11 +2607,11 @@
 				s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(o.a)(e => Object(r.c)(e, {
-					experimentName: s.Xf,
+					experimentName: s.Wf,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				a = Object(o.a)(i, e => e === s.Rf)
+				a = Object(o.a)(i, e => e === s.Qf)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.9b47234221d0836371eb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.fc7992c9c6373aec9b63.js.map
