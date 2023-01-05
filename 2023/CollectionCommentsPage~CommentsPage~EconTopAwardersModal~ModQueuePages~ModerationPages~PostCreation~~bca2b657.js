@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657.815f70a86c9f4e002c65.js
-// Retrieved at 1/5/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657.f96dbf71297ef04ba983.js
+// Retrieved at 1/5/2023, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -318,8 +318,8 @@
 				_ = r("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				N = r("./src/reddit/contexts/Post/index.tsx"),
 				P = r("./src/reddit/contexts/User/index.tsx"),
-				S = r("./node_modules/lodash/debounce.js"),
-				k = r.n(S),
+				k = r("./node_modules/lodash/debounce.js"),
+				S = r.n(k),
 				M = r("./src/lib/classNames/index.ts"),
 				H = r("./src/lib/fastdom/index.ts"),
 				L = r("./src/reddit/models/Gold/TopAwarded/index.ts"),
@@ -528,7 +528,7 @@
 				he = 100;
 			class be extends n.a.Component {
 				constructor(e) {
-					super(e), this.plaqueRef = n.a.createRef(), this.handleResize = k()(() => {
+					super(e), this.plaqueRef = n.a.createRef(), this.handleResize = S()(() => {
 						this.handlePlaquePositionChange()
 					}, 300), this.handlePlaquePositionChange = () => {
 						const {
@@ -850,11 +850,11 @@
 			const Te = Object(l.a)(m.db);
 			var _e, Ne = r("./src/reddit/controls/Button/index.tsx"),
 				Pe = r("./src/reddit/components/AwardBadges/FlagAwardModal/index.m.less"),
-				Se = r.n(Pe);
+				ke = r.n(Pe);
 			! function(e) {
 				e[e.BEGIN = 0] = "BEGIN", e[e.REPORT_COMMUNITY_AWARD = 1] = "REPORT_COMMUNITY_AWARD", e[e.FLAG_USAGE = 2] = "FLAG_USAGE"
 			}(_e || (_e = {}));
-			var ke = e => {
+			var Se = e => {
 				const t = Object(oe.a)(),
 					[r, i] = Object(o.useState)(e.award.awardType === G.e.Global ? _e.FLAG_USAGE : _e.BEGIN),
 					d = Object(a.d)(),
@@ -896,14 +896,14 @@
 						onClick: () => {
 							t(Object(A.clickReportAward)(e.award, e.thing.id)), i(_e.REPORT_COMMUNITY_AWARD)
 						},
-						className: Se.a.reportStepButton
+						className: ke.a.reportStepButton
 					}, s.fbt._("This community award violates Reddit's rules.", null, {
 						hk: "2ObuGq"
 					})), n.a.createElement(Ne.o, {
 						onClick: () => {
 							t(Object(A.clickFlagAwardUsage)(e.award, e.thing.id)), i(_e.FLAG_USAGE)
 						},
-						className: Se.a.reportStepButton
+						className: ke.a.reportStepButton
 					}, s.fbt._("This award is being used inappropriately.", null, {
 						hk: "Y8giW"
 					})));
@@ -1147,7 +1147,7 @@
 						onCancel: this.handleHideAwardCanceled,
 						toggleModal: b,
 						withOverlay: !0
-					}), this.state.reportingAward && n.a.createElement(ke, {
+					}), this.state.reportingAward && n.a.createElement(Se, {
 						award: this.state.reportingAward,
 						thing: v,
 						onClose: () => this.setState({
@@ -1172,9 +1172,9 @@
 			r.d(t, "b", (function() {
 				return y
 			})), r.d(t, "c", (function() {
-				return S
-			})), r.d(t, "a", (function() {
 				return k
+			})), r.d(t, "a", (function() {
+				return S
 			}));
 			var s = r("./node_modules/react/index.js"),
 				o = r.n(s),
@@ -1336,8 +1336,8 @@
 					badges: n
 				}, s))
 			}
-			const S = Object(n.b)(T, N)(P),
-				k = Object(n.b)(_, N)(P)
+			const k = Object(n.b)(T, N)(P),
+				S = Object(n.b)(_, N)(P)
 		},
 		"./src/reddit/components/CCM/ModUserNoteWithIcon/LinkIcon/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -1407,12 +1407,12 @@
 					user: y,
 					id: I,
 					itemType: T
-				} = x, _ = `ModUserNote--Modal--DeleteConfirmation--${I}`, N = Object(a.a)(), P = Object(s.useCallback)(() => E(Object(u.i)(_)), [E, _]), S = Object(s.useCallback)(() => {
+				} = x, _ = `ModUserNote--Modal--DeleteConfirmation--${I}`, N = Object(a.a)(), P = Object(s.useCallback)(() => E(Object(u.i)(_)), [E, _]), k = Object(s.useCallback)(() => {
 					N(Object(l.b)({
 						subredditId: C,
 						modNote: x
 					}))
-				}, [C, N, x]), k = Object(s.useCallback)(() => {
+				}, [C, N, x]), S = Object(s.useCallback)(() => {
 					T && E(Object(m.b)(C, y.id, I, T)), N(Object(l.c)({
 						subredditId: C,
 						modNote: x
@@ -1458,8 +1458,8 @@
 					modalText: i.fbt._("This mod note will be permanently deleted.", null, {
 						hk: "DFQi2"
 					}),
-					onConfirm: k,
-					onCancel: S,
+					onConfirm: S,
+					onCancel: k,
 					toggleModal: P,
 					withOverlay: !0
 				})))
@@ -2177,7 +2177,7 @@
 				_ = r("./src/reddit/selectors/tooltip.ts"),
 				N = r("./src/reddit/selectors/user.ts"),
 				P = r("./src/reddit/components/LastAuthorModNoteIcon/index.m.less"),
-				S = r.n(P);
+				k = r.n(P);
 			t.a = e => {
 				let {
 					postOrComment: t,
@@ -2210,15 +2210,15 @@
 					P = Object(y.b)(I.e[O], {
 						isFilled: !0
 					}),
-					k = `${p}-hover-id`;
+					S = `${p}-hover-id`;
 				return o.a.createElement(l.a, {
-					className: Object(a.a)(r, S.a.hoverContainer, {
-						[S.a.isNightMode]: b,
-						[S.a.showBackground]: v
+					className: Object(a.a)(r, k.a.hoverContainer, {
+						[k.a.isNightMode]: b,
+						[k.a.showBackground]: v
 					}),
 					tooltipId: p,
 					authorOrSubredditName: (null === (u = f.operator) || void 0 === u ? void 0 : u.displayName) || "",
-					hoverId: k,
+					hoverId: S,
 					sendHoverEvent: () => {}
 				}, o.a.createElement(P, {
 					style: {
@@ -2231,7 +2231,7 @@
 					onMouseLeave: g
 				}, o.a.createElement(A, {
 					dropdownIsOpen: v,
-					hoverId: k,
+					hoverId: S,
 					modNoteData: f,
 					isOverlay: m,
 					isPost: Object(C.a)(t.id),
@@ -2439,8 +2439,8 @@
 				_ = r("./src/reddit/components/JSAPIContainers/index.tsx"),
 				N = r("./src/reddit/components/LastAuthorModNoteIcon/index.tsx"),
 				P = r("./src/reddit/components/QuarantinedLabel/index.tsx"),
-				S = r("./src/reddit/components/SponsoredLabel/index.tsx"),
-				k = r("./src/reddit/components/SubredditNameLink/index.tsx"),
+				k = r("./src/reddit/components/SponsoredLabel/index.tsx"),
+				S = r("./src/reddit/components/SubredditNameLink/index.tsx"),
 				M = r("./src/reddit/constants/posts.ts"),
 				H = r("./src/reddit/contexts/InsideOverlay.tsx"),
 				L = r("./src/reddit/controls/MetaSeparator/index.tsx"),
@@ -2640,7 +2640,7 @@
 						}))), te._param("author", Ne)], {
 							hk: "1abNaj"
 						}),
-						Se = o.a.createElement(o.a.Fragment, null, o.a.createElement(h.a, {
+						ke = o.a.createElement(o.a.Fragment, null, o.a.createElement(h.a, {
 							className: ee.a.crosspostIcon
 						}), te._("{=Crossposted by}{author}", [te._param("=Crossposted by", o.a.createElement(ae, {
 							style: {
@@ -2651,7 +2651,7 @@
 						}))), te._param("author", Ne)], {
 							hk: "3BfJwk"
 						})),
-						ke = () => Oe || ie ? Oe ? Se : Ne : Pe;
+						Se = () => Oe || ie ? Oe ? ke : Ne : Pe;
 					return o.a.createElement("div", {
 						className: Object(i.a)(ee.a.container, t),
 						"data-adclicklocation": X.a.TOP_BAR,
@@ -2660,7 +2660,7 @@
 						postId: g.id,
 						subredditName: F.name,
 						tooltipType: D
-					}, o.a.createElement(k.a, {
+					}, o.a.createElement(S.a, {
 						"data-click-id": "subreddit",
 						to: {
 							pathname: F.url,
@@ -2681,10 +2681,10 @@
 						userName: F.name,
 						className: ee.a.userIcon,
 						omitResponsivePresenceWrapper: !0
-					})), ke(), o.a.createElement(Ee, null), o.a.createElement(S.a, {
+					})), Se(), o.a.createElement(Ee, null), o.a.createElement(k.a, {
 						greyTextColor: oe(e),
 						isSurveyAd: g.isSurveyAd
-					})) : ke(), o.a.createElement(_.e, null), L && !ie && o.a.createElement(o.a.Fragment, null, o.a.createElement("span", {
+					})) : Se(), o.a.createElement(_.e, null), L && !ie && o.a.createElement(o.a.Fragment, null, o.a.createElement("span", {
 						className: ee.a.timestamp,
 						"data-testid": le,
 						"data-click-id": "timestamp",
@@ -2886,9 +2886,9 @@
 			})), r.d(t, "m", (function() {
 				return P
 			})), r.d(t, "h", (function() {
-				return S
-			})), r.d(t, "i", (function() {
 				return k
+			})), r.d(t, "i", (function() {
+				return S
 			})), r.d(t, "e", (function() {
 				return M
 			}));
@@ -3022,13 +3022,13 @@
 					variables: {
 						awardId: t
 					}
-				}), S = (e, t, r) => Object(n.a)(e, {
+				}), k = (e, t, r) => Object(n.a)(e, {
 					...p,
 					variables: {
 						awardId: t,
 						subredditId: r
 					}
-				}), k = (e, t, r) => Object(n.a)(e, {
+				}), S = (e, t, r) => Object(n.a)(e, {
 					...h,
 					variables: {
 						awardId: t,
@@ -3461,9 +3461,9 @@
 			})), r.d(t, "d", (function() {
 				return P
 			})), r.d(t, "j", (function() {
-				return S
-			})), r.d(t, "p", (function() {
 				return k
+			})), r.d(t, "p", (function() {
+				return S
 			})), r.d(t, "k", (function() {
 				return L
 			})), r.d(t, "r", (function() {
@@ -3610,10 +3610,10 @@
 				return w
 			}
 
-			function S(e, t) {
+			function k(e, t) {
 				return _(e, t, i.a.Cosmetic, i.c.Gallery).some(e => e.locked.some(e => Object(a.f)(e) || !!e.price))
 			}
-			const k = e => {
+			const S = e => {
 				const t = [],
 					r = e.economics.paymentSystems;
 				if (r.status === l.a.Fetched && r.data.stripe && r.data.stripe.sources) {
@@ -3758,15 +3758,15 @@
 			const a = e => {
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: n.S,
-						experimentName: s.vd
+						experimentName: s.ud
 					});
-					return !(!t || Object(s.mg)(t))
+					return !(!t || Object(s.lg)(t))
 				},
 				i = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: n.S,
-						experimentName: s.vd
-					}) === s.Sd.ListingEnabled
+						experimentName: s.ud
+					}) === s.Rd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/gold/topAwarded.ts": function(e, t, r) {
@@ -3826,4 +3826,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657.815f70a86c9f4e002c65.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657.f96dbf71297ef04ba983.js.map

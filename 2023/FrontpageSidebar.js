@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.58d8edb44829fd5aa885.js
-// Retrieved at 1/5/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.137d38584c7a0e5c6893.js
+// Retrieved at 1/5/2023, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./src/reddit/components/FrontpageSidebar/index.tsx": function(e, t, n) {
@@ -618,8 +618,8 @@
 					shouldShowTopicsWidget: e => (function(e) {
 						return Object(Re.c)(e, {
 							experimentEligibilitySelector: Be.S,
-							experimentName: Le.Rc
-						}) === Le.Od
+							experimentName: Le.Qc
+						}) === Le.Nd
 					})(e),
 					isNavbarLikeMwebEnabled: i.a
 				}),
@@ -915,4 +915,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.58d8edb44829fd5aa885.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.137d38584c7a0e5c6893.js.map

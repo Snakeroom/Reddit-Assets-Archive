@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.db9f8d2908b34905f708.js
-// Retrieved at 1/5/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.15b890e19e83fdb78015.js
+// Retrieved at 1/5/2023, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -28,53 +28,51 @@
 		"./src/reddit/actions/pages/profilePrivate/index.ts": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "privateListingPending", (function() {
-				return B
+				return M
 			})), s.d(t, "privateMixedListingLoaded", (function() {
-				return U
+				return A
 			})), s.d(t, "privatePostListingLoaded", (function() {
-				return D
+				return F
 			})), s.d(t, "privateListingFailed", (function() {
-				return G
+				return B
 			})), s.d(t, "profilePrivateRequested", (function() {
-				return W
+				return U
 			})), s.d(t, "morePending", (function() {
-				return V
+				return D
 			})), s.d(t, "moreMixedLoaded", (function() {
-				return H
+				return G
 			})), s.d(t, "morePostLoaded", (function() {
-				return z
+				return W
 			})), s.d(t, "moreFailed", (function() {
-				return J
+				return V
 			})), s.d(t, "moreProfilePrivateRequested", (function() {
-				return K
+				return H
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
-			var n = s("./node_modules/react-router-redux/es/index.js"),
-				o = s("./src/lib/constants/index.ts"),
-				r = s("./src/lib/makeActionCreator/index.ts"),
-				i = s("./src/reddit/actions/externalAccount.ts"),
-				a = s("./src/reddit/actions/pages/profileShared.ts"),
-				d = s("./src/reddit/actions/profile/index.ts"),
-				c = s("./src/lib/makeGqlRequest/index.ts"),
-				l = s("./src/redditGQL/operations/ProfileDownvoted.json"),
-				m = s("./src/redditGQL/operations/ProfileGivenGildings.json"),
-				u = s("./src/redditGQL/operations/ProfileHidden.json"),
-				p = s("./src/redditGQL/operations/ProfileHistoryPosts.json"),
-				b = s("./src/redditGQL/operations/ProfileReceivedGildings.json"),
-				h = s("./src/redditGQL/operations/ProfileSaved.json"),
-				f = s("./src/redditGQL/operations/ProfileUpvoted.json");
-			var x = s("./src/reddit/models/Comment/index.ts"),
-				g = s("./src/reddit/models/Post/index.ts"),
-				v = s("./src/reddit/models/Profile/index.ts"),
-				y = s("./src/reddit/helpers/graphql/normalizeCommentFromGql/index.ts"),
-				C = s("./src/reddit/helpers/graphql/normalizeFlairFromGql/index.ts"),
-				E = s("./src/reddit/helpers/graphql/normalizePostFlairFromGql/index.ts"),
-				O = s("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts"),
-				_ = s("./src/reddit/helpers/graphql/normalizePreferencesFromGql/index.ts"),
-				k = s("./src/reddit/helpers/graphql/normalizeProfileFromGql/index.ts"),
-				I = s("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts"),
-				j = s("./src/reddit/helpers/graphql/normalizeUserFromGql/index.ts");
-			var w = e => {
+			var n = s("./src/lib/makeActionCreator/index.ts"),
+				o = s("./src/reddit/actions/externalAccount.ts"),
+				r = s("./src/reddit/actions/pages/profileShared.ts"),
+				i = s("./src/reddit/actions/profile/index.ts"),
+				a = s("./src/lib/makeGqlRequest/index.ts"),
+				d = s("./src/redditGQL/operations/ProfileDownvoted.json"),
+				c = s("./src/redditGQL/operations/ProfileGivenGildings.json"),
+				l = s("./src/redditGQL/operations/ProfileHidden.json"),
+				m = s("./src/redditGQL/operations/ProfileHistoryPosts.json"),
+				u = s("./src/redditGQL/operations/ProfileReceivedGildings.json"),
+				p = s("./src/redditGQL/operations/ProfileSaved.json"),
+				b = s("./src/redditGQL/operations/ProfileUpvoted.json");
+			var h = s("./src/reddit/models/Comment/index.ts"),
+				f = s("./src/reddit/models/Post/index.ts"),
+				x = s("./src/reddit/models/Profile/index.ts"),
+				g = s("./src/reddit/helpers/graphql/normalizeCommentFromGql/index.ts"),
+				v = s("./src/reddit/helpers/graphql/normalizeFlairFromGql/index.ts"),
+				y = s("./src/reddit/helpers/graphql/normalizePostFlairFromGql/index.ts"),
+				C = s("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts"),
+				E = s("./src/reddit/helpers/graphql/normalizePreferencesFromGql/index.ts"),
+				O = s("./src/reddit/helpers/graphql/normalizeProfileFromGql/index.ts"),
+				_ = s("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts"),
+				k = s("./src/reddit/helpers/graphql/normalizeUserFromGql/index.ts");
+			var I = e => {
 					const {
 						listingType: t,
 						rawData: s,
@@ -96,35 +94,35 @@
 							subreddits: {},
 							itemIds: []
 						};
-						return e !== v.b.Saved && e !== v.b.ReceivedGildings && e !== v.b.GivenGildings || (t.comments = {}), t
+						return e !== x.b.Saved && e !== x.b.ReceivedGildings && e !== x.b.GivenGildings || (t.comments = {}), t
 					})(t);
 					if (!r) return i;
-					if (n && (i.account = Object(j.a)(r) || null, i.preferences = Object(_.a)(r.preferences, r.interactions) || null, r.redditor.profile && (i.profiles[r.redditor.profile.id] = Object(k.a)(r.redditor.profile))), o && r.redditor && r.redditor.moderatedSubreddits) {
+					if (n && (i.account = Object(k.a)(r) || null, i.preferences = Object(E.a)(r.preferences, r.interactions) || null, r.redditor.profile && (i.profiles[r.redditor.profile.id] = Object(O.a)(r.redditor.profile))), o && r.redditor && r.redditor.moderatedSubreddits) {
 						const {
 							moderatedSubredditIds: e,
 							pageInfo: t,
 							subreddits: s
-						} = Object(k.b)(r.redditor.moderatedSubreddits);
+						} = Object(O.b)(r.redditor.moderatedSubreddits);
 						i.moderatedPageInfo = t, i.moderatedSubredditIds = e, i.subreddits = s
 					}
 					let a;
-					if (t === v.b.History) a = s.postsInfoByIds;
+					if (t === x.b.History) a = s.postsInfoByIds;
 					else {
 						const e = ((e, t) => {
 							switch (t) {
-								case v.b.Downvoted:
+								case x.b.Downvoted:
 									return e.identity.downvotedPosts;
-								case v.b.Hidden:
+								case x.b.Hidden:
 									return e.identity.hiddenPosts;
-								case v.b.History:
+								case x.b.History:
 									return null;
-								case v.b.Saved:
+								case x.b.Saved:
 									return e.identity.saved;
-								case v.b.Upvoted:
+								case x.b.Upvoted:
 									return e.identity.upvotedPosts;
-								case v.b.ReceivedGildings:
+								case x.b.ReceivedGildings:
 									return e.identity.receivedGildings;
-								case v.b.GivenGildings:
+								case x.b.GivenGildings:
 									return e.identity.givenGildings
 							}
 						})(s, t);
@@ -134,14 +132,14 @@
 					if (!a) return i;
 					for (const d of a) {
 						let e;
-						const s = t === v.b.History ? d : d.node;
-						if (s.__typename === x.d.Comment) {
-							const t = Object(y.a)(s);
-							if (i.comments || (i.comments = {}), i.comments[t.id] = t, i.itemIds || (i.itemIds = []), i.itemIds.push(t.id), s.authorFlair && (i.authorFlair[t.subredditId] || (i.authorFlair[t.subredditId] = {}), i.authorFlair[t.subredditId][t.author] = Object(C.a)(s.authorFlair)[0]), e = s.postInfo, s.postInfo) {
+						const s = t === x.b.History ? d : d.node;
+						if (s.__typename === h.d.Comment) {
+							const t = Object(g.a)(s);
+							if (i.comments || (i.comments = {}), i.comments[t.id] = t, i.itemIds || (i.itemIds = []), i.itemIds.push(t.id), s.authorFlair && (i.authorFlair[t.subredditId] || (i.authorFlair[t.subredditId] = {}), i.authorFlair[t.subredditId][t.author] = Object(v.a)(s.authorFlair)[0]), e = s.postInfo, s.postInfo) {
 								const {
 									post: e,
 									crosspost: t
-								} = Object(O.a)(s.postInfo);
+								} = Object(C.a)(s.postInfo);
 								i.posts[e.id] = e, t && (i.posts[t.id] = t)
 							}
 						} else e = s, i.itemIds || (i.itemIds = []), i.itemIds.push(e.id);
@@ -149,171 +147,159 @@
 						const {
 							post: n,
 							crosspost: o
-						} = e && Object(O.a)(e);
-						i.posts[n.id] = n, o && (i.posts[o.id] = o), Object(g.i)(e) || Object(g.j)(e) || (e.authorFlair && (i.authorFlair[n.belongsTo.id] || (i.authorFlair[n.belongsTo.id] = {}), i.authorFlair[n.belongsTo.id][n.author] = Object(C.a)(e.authorFlair)[0]), Object(g.l)(e) ? i.profiles[e.profile.id] || (i.profiles[e.profile.id] = Object(k.a)(e.profile)) : Object(g.n)(e) && (i.subreddits[e.subreddit.id] || (i.subreddits[e.subreddit.id] = Object(I.a)(e.subreddit)), i.postFlair[e.subreddit.id] || (i.postFlair[e.subreddit.id] = Object(E.a)(e.subreddit))))
+						} = e && Object(C.a)(e);
+						i.posts[n.id] = n, o && (i.posts[o.id] = o), Object(f.i)(e) || Object(f.j)(e) || (e.authorFlair && (i.authorFlair[n.belongsTo.id] || (i.authorFlair[n.belongsTo.id] = {}), i.authorFlair[n.belongsTo.id][n.author] = Object(v.a)(e.authorFlair)[0]), Object(f.l)(e) ? i.profiles[e.profile.id] || (i.profiles[e.profile.id] = Object(O.a)(e.profile)) : Object(f.n)(e) && (i.subreddits[e.subreddit.id] || (i.subreddits[e.subreddit.id] = Object(_.a)(e.subreddit)), i.postFlair[e.subreddit.id] || (i.postFlair[e.subreddit.id] = Object(y.a)(e.subreddit))))
 					}
 					return i
 				},
-				S = s("./src/reddit/helpers/localStorage/index.ts"),
-				P = s("./src/reddit/helpers/makeProfileListingKey/index.ts"),
-				N = s("./src/reddit/selectors/experiments/d2xHistoryTab.ts"),
-				T = s("./src/reddit/actions/pages/profilePrivate/constants.ts"),
-				L = s("./src/lib/initializeClient/installReducer.ts"),
-				R = s("./src/reddit/reducers/features/comments/index.ts");
-			Object(L.a)({
+				j = s("./src/reddit/helpers/localStorage/index.ts"),
+				w = s("./src/reddit/helpers/makeProfileListingKey/index.ts"),
+				S = s("./src/reddit/actions/pages/profilePrivate/constants.ts"),
+				P = s("./src/lib/initializeClient/installReducer.ts"),
+				N = s("./src/reddit/reducers/features/comments/index.ts");
+			Object(P.a)({
 				features: {
-					comments: R.a
+					comments: N.a
 				}
 			});
-			const M = {
-					[v.b.Downvoted]: (e, t) => Object(c.a)(e, {
+			const T = {
+					[x.b.Downvoted]: (e, t) => Object(a.a)(e, {
+						...d,
+						variables: t
+					}),
+					[x.b.Hidden]: (e, t) => Object(a.a)(e, {
 						...l,
 						variables: t
 					}),
-					[v.b.Hidden]: (e, t) => Object(c.a)(e, {
-						...u,
+					[x.b.Saved]: (e, t) => Object(a.a)(e, {
+						...p,
 						variables: t
 					}),
-					[v.b.Saved]: (e, t) => Object(c.a)(e, {
-						...h,
-						variables: t
-					}),
-					[v.b.Upvoted]: (e, t) => Object(c.a)(e, {
-						...f,
-						variables: t
-					}),
-					[v.b.ReceivedGildings]: (e, t) => Object(c.a)(e, {
+					[x.b.Upvoted]: (e, t) => Object(a.a)(e, {
 						...b,
 						variables: t
 					}),
-					[v.b.GivenGildings]: (e, t) => Object(c.a)(e, {
-						...m,
+					[x.b.ReceivedGildings]: (e, t) => Object(a.a)(e, {
+						...u,
+						variables: t
+					}),
+					[x.b.GivenGildings]: (e, t) => Object(a.a)(e, {
+						...c,
 						variables: t
 					})
 				},
-				A = (e, t) => {
+				L = (e, t) => {
 					switch (e) {
-						case v.b.Downvoted:
-						case v.b.Hidden:
-						case v.b.History:
-						case v.b.Saved:
-						case v.b.Upvoted:
-						case v.b.ReceivedGildings:
-						case v.b.GivenGildings:
+						case x.b.Downvoted:
+						case x.b.Hidden:
+						case x.b.History:
+						case x.b.Saved:
+						case x.b.Upvoted:
+						case x.b.ReceivedGildings:
+						case x.b.GivenGildings:
 							return t.body.data
 					}
 				},
-				F = e => {
+				R = e => {
 					switch (e.listingType) {
-						case v.b.Downvoted:
-						case v.b.Hidden:
-						case v.b.History:
-						case v.b.Saved:
-						case v.b.Upvoted:
-						case v.b.ReceivedGildings:
-						case v.b.GivenGildings:
-							return w(e)
+						case x.b.Downvoted:
+						case x.b.Hidden:
+						case x.b.History:
+						case x.b.Saved:
+						case x.b.Upvoted:
+						case x.b.ReceivedGildings:
+						case x.b.GivenGildings:
+							return I(e)
 					}
 				},
-				B = Object(r.a)(T.b),
-				U = Object(r.a)(T.c),
-				D = Object(r.a)(T.i),
-				G = Object(r.a)(T.a),
-				W = e => async (t, s, r) => {
+				M = Object(n.a)(S.b),
+				A = Object(n.a)(S.c),
+				F = Object(n.a)(S.i),
+				B = Object(n.a)(S.a),
+				U = e => async (t, s, n) => {
 					const {
-						profileName: l,
-						listingType: m
-					} = e.params, u = s(), b = Object(P.c)(l.toLowerCase(), m), h = u.profilePrivatePage.ids[b] && u.profilePrivatePage.ids[b].length > 0, f = !!u.profilePrivatePage.api.error[b];
-					if (u.profilePrivatePage.api.pending[b] || h && !f) return;
+						profileName: d,
+						listingType: c
+					} = e.params, l = s(), u = Object(w.c)(d.toLowerCase(), c), p = l.profilePrivatePage.ids[u] && l.profilePrivatePage.ids[u].length > 0, b = !!l.profilePrivatePage.api.error[u];
+					if (l.profilePrivatePage.api.pending[u] || p && !b) return;
 					const {
-						account: x
-					} = u.user, g = !x, y = !(x && x.displayText && u.profiles.moderated.models[x.displayText.toLowerCase()] && u.profiles.moderated.models[x.displayText.toLowerCase()].length);
-					let C;
-					if (t(B({
-							listingKey: b
-						})), m === v.b.History) {
-						if (!Object(N.a)(u)) {
-							const {
-								profileName: s
-							} = e.params, r = `/user/${s}/`;
-							return t(Object(n.c)(r)), void t(G({
-								listingKey: b,
-								error: {
-									type: o.L.AUTHORIZATION_ERROR
-								}
-							}))
-						}
-						const s = {
-							includeIdentity: g,
-							includeModerated: y,
-							recentPostIds: Object(S.N)(null == x ? void 0 : x.id).reverse()
+						account: h
+					} = l.user, f = !h, g = !(h && h.displayText && l.profiles.moderated.models[h.displayText.toLowerCase()] && l.profiles.moderated.models[h.displayText.toLowerCase()].length);
+					let v;
+					if (t(M({
+							listingKey: u
+						})), c === x.b.History) {
+						const e = {
+							includeIdentity: f,
+							includeModerated: g,
+							recentPostIds: Object(j.N)(null == h ? void 0 : h.id).reverse()
 						};
-						C = await ((e, t) => Object(c.a)(e, {
-							...p,
+						v = await ((e, t) => Object(a.a)(e, {
+							...m,
 							variables: t
-						}))(r.gqlContext(), s)
+						}))(n.gqlContext(), e)
 					} else {
 						const e = {
-							includeIdentity: g,
-							includeModerated: y,
-							first: T.h,
+							includeIdentity: f,
+							includeModerated: g,
+							first: S.h,
 							after: null
 						};
-						C = await M[m](r.gqlContext(), e)
+						v = await T[c](n.gqlContext(), e)
 					}
-					if (C.ok && C.body) {
-						const e = F({
-							rawData: A(m, C),
-							listingType: m,
-							includeIdentity: g,
-							includeModerated: y
+					if (v.ok && v.body) {
+						const e = R({
+							rawData: L(c, v),
+							listingType: c,
+							includeIdentity: f,
+							includeModerated: g
 						});
-						m === v.b.Saved || m === v.b.ReceivedGildings || m === v.b.GivenGildings ? await t(U({
-							listingKey: b,
-							profileName: l,
+						c === x.b.Saved || c === x.b.ReceivedGildings || c === x.b.GivenGildings ? await t(A({
+							listingKey: u,
+							profileName: d,
 							...e
-						})) : await t(D({
-							listingKey: b,
-							profileName: l,
+						})) : await t(F({
+							listingKey: u,
+							profileName: d,
 							...e
-						})), await Promise.all([t(Object(a.d)(l)), t(Object(i.o)(l)), t(Object(d.d)(l))])
-					} else t(G({
-						listingKey: b,
-						error: C.error
+						})), await Promise.all([t(Object(r.d)(d)), t(Object(o.o)(d)), t(Object(i.d)(d))])
+					} else t(B({
+						listingKey: u,
+						error: v.error
 					}))
-				}, V = Object(r.a)(T.f), H = Object(r.a)(T.e), z = Object(r.a)(T.g), J = Object(r.a)(T.d), K = e => async (t, s, n) => {
+				}, D = Object(n.a)(S.f), G = Object(n.a)(S.e), W = Object(n.a)(S.g), V = Object(n.a)(S.d), H = e => async (t, s, n) => {
 					const o = s(),
 						r = o.user.account && o.user.account.displayText && o.user.account.displayText.toLowerCase();
 					if (!r) return;
-					const i = Object(P.c)(r, e);
+					const i = Object(w.c)(r, e);
 					if (!o.profilePrivatePage.ids[i] || !o.profilePrivatePage.ids[i].length || !o.profilePrivatePage.pageInfo || !o.profilePrivatePage.pageInfo[i].hasNextPage || o.profilePrivatePage.api.error[i] || o.profilePrivatePage.api.pending[i]) return;
 					const a = {
 						includeIdentity: !1,
 						includeModerated: !1,
 						after: o.profilePrivatePage.pageInfo[i].endCursor,
-						first: T.h
+						first: S.h
 					};
-					t(V({
+					t(D({
 						listingKey: i
 					}));
-					const d = await M[e](n.gqlContext(), a);
+					const d = await T[e](n.gqlContext(), a);
 					if (d.ok && d.body) {
-						const s = F({
+						const s = R({
 							includeIdentity: !1,
 							includeModerated: !1,
 							listingType: e,
 							rawData: d.body.data
 						});
-						e === v.b.Saved || e === v.b.ReceivedGildings || e === v.b.GivenGildings ? await t(H({
+						e === x.b.Saved || e === x.b.ReceivedGildings || e === x.b.GivenGildings ? await t(G({
 							listingKey: i,
 							profileName: r,
 							...s
-						})) : await t(z({
+						})) : await t(W({
 							listingKey: i,
 							profileName: r,
 							...s
 						}))
-					} else t(J({
+					} else t(V({
 						listingKey: i,
 						error: d.error
 					}))
@@ -2964,8 +2950,8 @@
 				p = s("./node_modules/reselect/es/index.js");
 			const b = Object(p.a)(e => Object(u.c)(e, {
 				experimentEligibilitySelector: u.a,
-				experimentName: m.wc
-			}), e => e === m.Od);
+				experimentName: m.vc
+			}), e => e === m.Nd);
 			var h = s("./node_modules/fbt/lib/FbtPublic.js"),
 				f = s("./src/lib/classNames/index.ts"),
 				x = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
@@ -3590,16 +3576,15 @@
 				_ = s("./src/reddit/icons/fonts/index.tsx"),
 				k = s("./src/reddit/models/Profile/index.ts"),
 				I = s("./src/reddit/featureFlags/index.ts"),
-				j = s("./src/reddit/selectors/experiments/d2xHistoryTab.ts"),
-				w = s("./src/reddit/selectors/tooltip.ts"),
-				S = s("./src/reddit/selectors/user.ts"),
-				P = s("./src/reddit/selectors/userPrefs.ts"),
-				N = s("./src/server/helpers/profileRedirect.ts"),
-				T = s("./src/reddit/components/ProfileNavMenu/index.m.less"),
-				L = s.n(T);
+				j = s("./src/reddit/selectors/tooltip.ts"),
+				w = s("./src/reddit/selectors/user.ts"),
+				S = s("./src/reddit/selectors/userPrefs.ts"),
+				P = s("./src/server/helpers/profileRedirect.ts"),
+				N = s("./src/reddit/components/ProfileNavMenu/index.m.less"),
+				T = s.n(N);
 
-			function R() {
-				return (R = Object.assign || function(e) {
+			function L() {
+				return (L = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -3607,67 +3592,64 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const M = Object(C.v)({
+			const R = Object(C.v)({
 					routeName: C.bb,
 					privateListingType: C.k
 				}),
-				A = Object(p.c)({
-					isDropdownMenuOpen: e => Object(w.a)(e) === B,
-					isOwnProfile: (e, t) => Object(S.Y)(e, t.profileName),
-					isHistoryTabEnabled: j.a,
+				M = Object(p.c)({
+					isDropdownMenuOpen: e => Object(j.a)(e) === F,
+					isOwnProfile: (e, t) => Object(w.Y)(e, t.profileName),
 					isSnoovatar30Enabled: I.d.snoovatar30,
-					isSubscriptionsPinned: P.c
+					isSubscriptionsPinned: S.c
 				}),
-				F = Object(h.a)(E.a),
-				B = "profile-nav-menu-tooltip",
-				U = y.g + y.q + y.p;
-			var D;
-			t.a = M(Object(m.b)(A, e => ({
+				A = Object(h.a)(E.a),
+				F = "profile-nav-menu-tooltip",
+				B = y.g + y.q + y.p;
+			var U;
+			t.a = R(Object(m.b)(M, e => ({
 					toggleTooltip: t => e(Object(g.h)({
 						tooltipId: t
 					}))
 				}))(e => {
 					let {
 						isDropdownMenuOpen: t,
-						isHistoryTabEnabled: s,
-						isOwnProfile: n,
-						privateListingType: r,
-						profileName: a,
-						routeName: m,
-						toggleTooltip: u,
-						isSnoovatar30Enabled: p,
-						isSubscriptionsPinned: b,
-						viewBlockedConsent: h
+						isOwnProfile: s,
+						privateListingType: n,
+						profileName: r,
+						routeName: a,
+						toggleTooltip: m,
+						isSnoovatar30Enabled: u,
+						isSubscriptionsPinned: p,
+						viewBlockedConsent: b
 					} = e;
-					const [x, g] = Object(c.useState)(!1), C = Object(c.useRef)(null), [E, O] = Object(c.useState)([]), [k, I] = Object(c.useState)([]);
+					const [h, x] = Object(c.useState)(!1), g = Object(c.useRef)(null), [C, E] = Object(c.useState)([]), [O, k] = Object(c.useState)([]);
 					return Object(c.useEffect)(() => {
-						const e = V({
-							isHistoryTabEnabled: s,
-							profileName: a,
-							isOwnProfile: n,
-							routeName: m,
-							privateListingType: r,
-							isSnoovatar30Enabled: p,
-							viewBlockedConsent: h
+						const e = W({
+							profileName: r,
+							isOwnProfile: s,
+							routeName: a,
+							privateListingType: n,
+							isSnoovatar30Enabled: u,
+							viewBlockedConsent: b
 						});
-						O(e.filter(e => e.position === D.MENU));
+						E(e.filter(e => e.position === U.MENU));
 						const t = [],
 							c = d()(() => {
 								const s = document.documentElement.clientWidth - 2 * y.p,
-									n = s > U ? U : s;
+									n = s > B ? B : s;
 								let o = 42;
 								t.forEach(t => {
 									o += t.offsetWidth;
 									const s = e.find(e => e.text.toString().toLowerCase() === t.text);
-									s.position = o > n ? D.DROPDOWN : D.MENU
+									s.position = o > n ? U.DROPDOWN : U.MENU
 								});
-								const r = e.filter(e => e.position === D.MENU);
-								O(e => i()(r, e) ? e : r);
-								const a = e.filter(e => e.position === D.DROPDOWN);
-								I(e => i()(a, e) ? e : a), g(a.length > 0)
+								const r = e.filter(e => e.position === U.MENU);
+								E(e => i()(r, e) ? e : r);
+								const a = e.filter(e => e.position === U.DROPDOWN);
+								k(e => i()(a, e) ? e : a), x(a.length > 0)
 							}, 50);
 						return o.a.read(() => {
-							const e = C.current;
+							const e = g.current;
 							e && (e.childNodes.forEach((e, s) => {
 								t.push({
 									text: e.textContent.toLowerCase(),
@@ -3677,35 +3659,35 @@
 						}), window.addEventListener("resize", c), () => {
 							window.removeEventListener("resize", c)
 						}
-					}, [s, a, n, m, r, p, h]), l.a.createElement("div", {
-						className: L.a.container
+					}, [r, s, a, n, u, b]), l.a.createElement("div", {
+						className: T.a.container
 					}, l.a.createElement(v.a, {
 						bladeOpen: !1,
-						offsetLeft: b ? y.t : 0,
+						offsetLeft: p ? y.t : 0,
 						render: () => l.a.createElement(l.a.Fragment, null, l.a.createElement("div", {
-							className: L.a.menuContainer,
-							ref: C
-						}, E.map(e => l.a.createElement(G, R({}, e, {
+							className: T.a.menuContainer,
+							ref: g
+						}, C.map(e => l.a.createElement(D, L({}, e, {
 							key: e.key
-						})))), x && l.a.createElement("button", {
-							className: Object(f.a)(L.a.mainLink),
-							id: B,
-							onClick: () => u(B)
+						})))), h && l.a.createElement("button", {
+							className: Object(f.a)(T.a.mainLink),
+							id: F,
+							onClick: () => m(F)
 						}, l.a.createElement(_.a, {
 							name: "overflow_horizontal"
-						})), x && l.a.createElement(F, {
-							className: L.a.dropdown,
+						})), h && l.a.createElement(A, {
+							className: T.a.dropdown,
 							isOpen: t,
-							tooltipId: B
-						}, k.map(e => l.a.createElement(W, R({}, e, {
+							tooltipId: F
+						}, O.map(e => l.a.createElement(G, L({}, e, {
 							key: e.key
 						})))))
 					}))
 				})),
 				function(e) {
 					e.MENU = "menu", e.DROPDOWN = "dropdown"
-				}(D || (D = {}));
-			const G = e => {
+				}(U || (U = {}));
+			const D = e => {
 					let {
 						isActive: t,
 						text: s,
@@ -3713,18 +3695,20 @@
 						internal: o
 					} = e;
 					return o ? l.a.createElement(O.default, {
-						className: Object(f.a)(L.a.mainLink, {
-							[L.a.isActive]: t
+						className: Object(f.a)(T.a.mainLink, {
+							[T.a.isActive]: t
 						}),
-						to: n
+						to: n,
+						"data-testid": n
 					}, s) : l.a.createElement("a", {
-						className: Object(f.a)(L.a.mainLink, {
-							[L.a.isActive]: t
+						className: Object(f.a)(T.a.mainLink, {
+							[T.a.isActive]: t
 						}),
-						href: n
+						href: n,
+						"data-testid": n
 					}, s)
 				},
-				W = e => {
+				G = e => {
 					let {
 						isActive: t,
 						internal: s,
@@ -3732,31 +3716,30 @@
 						text: o
 					} = e;
 					return s ? l.a.createElement(u.a, {
-						className: Object(f.a)(L.a.dropdownLink, {
-							[L.a.isActive]: t
+						className: Object(f.a)(T.a.dropdownLink, {
+							[T.a.isActive]: t
 						}),
 						to: n,
 						rel: "nofollow noopener noreferrer",
 						role: "listitem"
 					}, o) : l.a.createElement("a", {
-						className: Object(f.a)(L.a.dropdownLink),
+						className: Object(f.a)(T.a.dropdownLink),
 						href: n,
 						rel: "nofollow noopener noreferrer",
 						role: "listitem",
 						target: "_blank"
 					}, o)
 				},
-				V = e => {
+				W = e => {
 					let {
 						profileName: t,
 						isOwnProfile: s,
 						routeName: o,
 						privateListingType: r,
-						isHistoryTabEnabled: i,
-						isSnoovatar30Enabled: a,
-						viewBlockedConsent: d
+						isSnoovatar30Enabled: i,
+						viewBlockedConsent: a
 					} = e;
-					const c = s ? [{
+					const d = s ? [{
 						internal: !0,
 						isActive: o === x.Sb.PROFILE_PRIVATE && r === k.b.Saved,
 						key: "profile.mainmenu.saved",
@@ -3764,7 +3747,7 @@
 							hk: "2w1YRh"
 						}),
 						url: `/user/${t}/saved/`,
-						position: D.MENU
+						position: U.MENU
 					}, {
 						internal: !0,
 						isActive: o === x.Sb.PROFILE_PRIVATE && r === k.b.Hidden,
@@ -3773,7 +3756,7 @@
 							hk: "225tka"
 						}),
 						url: `/user/${t}/hidden/`,
-						position: D.MENU
+						position: U.MENU
 					}, {
 						internal: !0,
 						isActive: o === x.Sb.PROFILE_PRIVATE && r === k.b.Upvoted,
@@ -3782,7 +3765,7 @@
 							hk: "RKwFZ"
 						}),
 						url: `/user/${t}/upvoted/`,
-						position: D.MENU
+						position: U.MENU
 					}, {
 						internal: !0,
 						isActive: o === x.Sb.PROFILE_PRIVATE && r === k.b.Downvoted,
@@ -3791,9 +3774,9 @@
 							hk: "2F9IL4"
 						}),
 						url: `/user/${t}/downvoted/`,
-						position: D.MENU
+						position: U.MENU
 					}] : [];
-					s ? (c.push({
+					s ? (d.push({
 						internal: !0,
 						isActive: o === x.Sb.PROFILE_PRIVATE && r === k.b.ReceivedGildings,
 						key: "profile.mainmenu.receiverGildings",
@@ -3801,8 +3784,8 @@
 							hk: "iwLBV"
 						}),
 						url: `/user/${t}/gilded/`,
-						position: D.MENU
-					}), c.push({
+						position: U.MENU
+					}), d.push({
 						internal: !0,
 						isActive: o === x.Sb.PROFILE_PRIVATE && r === k.b.GivenGildings,
 						key: "profile.mainmenu.givenGildings",
@@ -3810,8 +3793,8 @@
 							hk: "2UPYZc"
 						}),
 						url: `/user/${t}/gilded/given/`,
-						position: D.MENU
-					})) : c.push({
+						position: U.MENU
+					})) : d.push({
 						internal: !1,
 						isActive: !1,
 						key: "profile.mainmenu.gildedLegacy",
@@ -3819,9 +3802,9 @@
 							hk: "1YgfYU"
 						}),
 						url: `${b.a.oldRedditUrl}/user/${t}/gilded/`,
-						position: D.MENU
+						position: U.MENU
 					});
-					const l = i && s ? [{
+					const c = s ? [{
 							internal: !0,
 							isActive: o === x.Sb.PROFILE_PRIVATE && r === k.b.History,
 							key: "profile.mainmenu.history",
@@ -3829,9 +3812,9 @@
 								hk: "1fv1wp"
 							}),
 							url: `/user/${t}/history/`,
-							position: D.MENU
+							position: U.MENU
 						}] : [],
-						m = a ? [{
+						l = i ? [{
 							internal: !0,
 							isActive: o === x.Sb.PROFILE_SNOOBUILDER,
 							key: "profile.mainmenu.snoobuilder",
@@ -3839,9 +3822,9 @@
 								hk: "3SSKff"
 							}),
 							url: `/user/${t}/snoo/`,
-							position: D.MENU
+							position: U.MENU
 						}] : [],
-						u = d ? "?consent=true" : "";
+						m = a ? "?consent=true" : "";
 					return [{
 						internal: !0,
 						isActive: o === x.Sb.PROFILE_OVERVIEW,
@@ -3849,8 +3832,8 @@
 						text: n.fbt._("Overview", null, {
 							hk: "2IBbqy"
 						}),
-						url: `/user/${t}/${u}`,
-						position: D.MENU
+						url: `/user/${t}/${m}`,
+						position: U.MENU
 					}, {
 						internal: !0,
 						isActive: o === x.Sb.PROFILE_POSTS,
@@ -3858,8 +3841,8 @@
 						text: n.fbt._("Posts", null, {
 							hk: "a1BoF"
 						}),
-						url: `${Object(N.a)(t)}/${u}`,
-						position: D.MENU
+						url: `${Object(P.a)(t)}/${m}`,
+						position: U.MENU
 					}, {
 						internal: !0,
 						isActive: o === x.Sb.PROFILE_COMMENTS,
@@ -3867,9 +3850,9 @@
 						text: n.fbt._("Comments", null, {
 							hk: "2VwjOc"
 						}),
-						url: `/user/${t}/comments/${u}`,
-						position: D.MENU
-					}, ...m, ...l, ...c]
+						url: `/user/${t}/comments/${m}`,
+						position: U.MENU
+					}, ...l, ...c, ...d]
 				}
 		},
 		"./src/reddit/components/ProfileSidebar/index.tsx": function(e, t, s) {
@@ -4144,7 +4127,7 @@
 				const t = Object(r.f)().getState(),
 					s = Object(h.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === m.fd.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.fd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.fd.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === m.ed.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.ed.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.ed.LargeImagePreview ? e.reredditButtons : [];
 					return o.a.createElement(j, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -7163,7 +7146,7 @@
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
 					experimentName: n.D
-				}) === n.Od
+				}) === n.Nd
 			}
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, s) {
@@ -7181,11 +7164,11 @@
 				d = s("./node_modules/reselect/es/index.js");
 			const c = Object(d.a)(e => Object(o.c)(e, {
 					experimentEligibilitySelector: e => Object(a.h)(e) && Object(r.f)(e),
-					experimentName: n.oc
+					experimentName: n.nc
 				}), i.a),
 				l = Object(d.a)(e => Object(o.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.h)(e) && Object(r.f)(e),
-					experimentName: n.nc
+					experimentName: n.mc
 				}), i.a),
 				m = Object(d.a)(c, l, (e, t) => e || t),
 				u = Object(d.a)(c, l, (e, t) => !(!e && !t))
@@ -7264,4 +7247,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.db9f8d2908b34905f708.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.15b890e19e83fdb78015.js.map

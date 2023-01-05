@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.ca2fd0500e3d04071841.js
-// Retrieved at 1/5/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.dfb38104d7931e73b0fb.js
+// Retrieved at 1/5/2023, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -729,53 +729,51 @@
 		"./src/reddit/actions/pages/profilePrivate/index.ts": function(e, t, r) {
 			"use strict";
 			r.r(t), r.d(t, "privateListingPending", (function() {
-				return q
+				return C
 			})), r.d(t, "privateMixedListingLoaded", (function() {
-				return M
+				return F
 			})), r.d(t, "privatePostListingLoaded", (function() {
-				return V
+				return B
 			})), r.d(t, "privateListingFailed", (function() {
-				return A
+				return q
 			})), r.d(t, "profilePrivateRequested", (function() {
-				return D
+				return M
 			})), r.d(t, "morePending", (function() {
-				return z
+				return V
 			})), r.d(t, "moreMixedLoaded", (function() {
-				return H
+				return A
 			})), r.d(t, "morePostLoaded", (function() {
-				return K
+				return D
 			})), r.d(t, "moreFailed", (function() {
-				return U
+				return z
 			})), r.d(t, "moreProfilePrivateRequested", (function() {
-				return W
+				return H
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
-			var i = r("./node_modules/react-router-redux/es/index.js"),
-				s = r("./src/lib/constants/index.ts"),
-				o = r("./src/lib/makeActionCreator/index.ts"),
-				n = r("./src/reddit/actions/externalAccount.ts"),
-				d = r("./src/reddit/actions/pages/profileShared.ts"),
-				a = r("./src/reddit/actions/profile/index.ts"),
-				c = r("./src/lib/makeGqlRequest/index.ts"),
-				l = r("./src/redditGQL/operations/ProfileDownvoted.json"),
-				u = r("./src/redditGQL/operations/ProfileGivenGildings.json"),
-				p = r("./src/redditGQL/operations/ProfileHidden.json"),
-				m = r("./src/redditGQL/operations/ProfileHistoryPosts.json"),
-				f = r("./src/redditGQL/operations/ProfileReceivedGildings.json"),
-				h = r("./src/redditGQL/operations/ProfileSaved.json"),
-				b = r("./src/redditGQL/operations/ProfileUpvoted.json");
-			var g = r("./src/reddit/models/Comment/index.ts"),
-				v = r("./src/reddit/models/Post/index.ts"),
-				x = r("./src/reddit/models/Profile/index.ts"),
-				y = r("./src/reddit/helpers/graphql/normalizeCommentFromGql/index.ts"),
-				O = r("./src/reddit/helpers/graphql/normalizeFlairFromGql/index.ts"),
-				w = r("./src/reddit/helpers/graphql/normalizePostFlairFromGql/index.ts"),
-				j = r("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts"),
-				P = r("./src/reddit/helpers/graphql/normalizePreferencesFromGql/index.ts"),
-				_ = r("./src/reddit/helpers/graphql/normalizeProfileFromGql/index.ts"),
-				I = r("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts"),
-				S = r("./src/reddit/helpers/graphql/normalizeUserFromGql/index.ts");
-			var L = e => {
+			var i = r("./src/lib/makeActionCreator/index.ts"),
+				s = r("./src/reddit/actions/externalAccount.ts"),
+				o = r("./src/reddit/actions/pages/profileShared.ts"),
+				n = r("./src/reddit/actions/profile/index.ts"),
+				d = r("./src/lib/makeGqlRequest/index.ts"),
+				a = r("./src/redditGQL/operations/ProfileDownvoted.json"),
+				c = r("./src/redditGQL/operations/ProfileGivenGildings.json"),
+				l = r("./src/redditGQL/operations/ProfileHidden.json"),
+				u = r("./src/redditGQL/operations/ProfileHistoryPosts.json"),
+				p = r("./src/redditGQL/operations/ProfileReceivedGildings.json"),
+				m = r("./src/redditGQL/operations/ProfileSaved.json"),
+				f = r("./src/redditGQL/operations/ProfileUpvoted.json");
+			var h = r("./src/reddit/models/Comment/index.ts"),
+				b = r("./src/reddit/models/Post/index.ts"),
+				g = r("./src/reddit/models/Profile/index.ts"),
+				v = r("./src/reddit/helpers/graphql/normalizeCommentFromGql/index.ts"),
+				x = r("./src/reddit/helpers/graphql/normalizeFlairFromGql/index.ts"),
+				y = r("./src/reddit/helpers/graphql/normalizePostFlairFromGql/index.ts"),
+				O = r("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts"),
+				w = r("./src/reddit/helpers/graphql/normalizePreferencesFromGql/index.ts"),
+				j = r("./src/reddit/helpers/graphql/normalizeProfileFromGql/index.ts"),
+				P = r("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts"),
+				_ = r("./src/reddit/helpers/graphql/normalizeUserFromGql/index.ts");
+			var I = e => {
 					const {
 						listingType: t,
 						rawData: r,
@@ -797,35 +795,35 @@
 							subreddits: {},
 							itemIds: []
 						};
-						return e !== x.b.Saved && e !== x.b.ReceivedGildings && e !== x.b.GivenGildings || (t.comments = {}), t
+						return e !== g.b.Saved && e !== g.b.ReceivedGildings && e !== g.b.GivenGildings || (t.comments = {}), t
 					})(t);
 					if (!o) return n;
-					if (i && (n.account = Object(S.a)(o) || null, n.preferences = Object(P.a)(o.preferences, o.interactions) || null, o.redditor.profile && (n.profiles[o.redditor.profile.id] = Object(_.a)(o.redditor.profile))), s && o.redditor && o.redditor.moderatedSubreddits) {
+					if (i && (n.account = Object(_.a)(o) || null, n.preferences = Object(w.a)(o.preferences, o.interactions) || null, o.redditor.profile && (n.profiles[o.redditor.profile.id] = Object(j.a)(o.redditor.profile))), s && o.redditor && o.redditor.moderatedSubreddits) {
 						const {
 							moderatedSubredditIds: e,
 							pageInfo: t,
 							subreddits: r
-						} = Object(_.b)(o.redditor.moderatedSubreddits);
+						} = Object(j.b)(o.redditor.moderatedSubreddits);
 						n.moderatedPageInfo = t, n.moderatedSubredditIds = e, n.subreddits = r
 					}
 					let d;
-					if (t === x.b.History) d = r.postsInfoByIds;
+					if (t === g.b.History) d = r.postsInfoByIds;
 					else {
 						const e = ((e, t) => {
 							switch (t) {
-								case x.b.Downvoted:
+								case g.b.Downvoted:
 									return e.identity.downvotedPosts;
-								case x.b.Hidden:
+								case g.b.Hidden:
 									return e.identity.hiddenPosts;
-								case x.b.History:
+								case g.b.History:
 									return null;
-								case x.b.Saved:
+								case g.b.Saved:
 									return e.identity.saved;
-								case x.b.Upvoted:
+								case g.b.Upvoted:
 									return e.identity.upvotedPosts;
-								case x.b.ReceivedGildings:
+								case g.b.ReceivedGildings:
 									return e.identity.receivedGildings;
-								case x.b.GivenGildings:
+								case g.b.GivenGildings:
 									return e.identity.givenGildings
 							}
 						})(r, t);
@@ -835,14 +833,14 @@
 					if (!d) return n;
 					for (const a of d) {
 						let e;
-						const r = t === x.b.History ? a : a.node;
-						if (r.__typename === g.d.Comment) {
-							const t = Object(y.a)(r);
-							if (n.comments || (n.comments = {}), n.comments[t.id] = t, n.itemIds || (n.itemIds = []), n.itemIds.push(t.id), r.authorFlair && (n.authorFlair[t.subredditId] || (n.authorFlair[t.subredditId] = {}), n.authorFlair[t.subredditId][t.author] = Object(O.a)(r.authorFlair)[0]), e = r.postInfo, r.postInfo) {
+						const r = t === g.b.History ? a : a.node;
+						if (r.__typename === h.d.Comment) {
+							const t = Object(v.a)(r);
+							if (n.comments || (n.comments = {}), n.comments[t.id] = t, n.itemIds || (n.itemIds = []), n.itemIds.push(t.id), r.authorFlair && (n.authorFlair[t.subredditId] || (n.authorFlair[t.subredditId] = {}), n.authorFlair[t.subredditId][t.author] = Object(x.a)(r.authorFlair)[0]), e = r.postInfo, r.postInfo) {
 								const {
 									post: e,
 									crosspost: t
-								} = Object(j.a)(r.postInfo);
+								} = Object(O.a)(r.postInfo);
 								n.posts[e.id] = e, t && (n.posts[t.id] = t)
 							}
 						} else e = r, n.itemIds || (n.itemIds = []), n.itemIds.push(e.id);
@@ -850,171 +848,159 @@
 						const {
 							post: i,
 							crosspost: s
-						} = e && Object(j.a)(e);
-						n.posts[i.id] = i, s && (n.posts[s.id] = s), Object(v.i)(e) || Object(v.j)(e) || (e.authorFlair && (n.authorFlair[i.belongsTo.id] || (n.authorFlair[i.belongsTo.id] = {}), n.authorFlair[i.belongsTo.id][i.author] = Object(O.a)(e.authorFlair)[0]), Object(v.l)(e) ? n.profiles[e.profile.id] || (n.profiles[e.profile.id] = Object(_.a)(e.profile)) : Object(v.n)(e) && (n.subreddits[e.subreddit.id] || (n.subreddits[e.subreddit.id] = Object(I.a)(e.subreddit)), n.postFlair[e.subreddit.id] || (n.postFlair[e.subreddit.id] = Object(w.a)(e.subreddit))))
+						} = e && Object(O.a)(e);
+						n.posts[i.id] = i, s && (n.posts[s.id] = s), Object(b.i)(e) || Object(b.j)(e) || (e.authorFlair && (n.authorFlair[i.belongsTo.id] || (n.authorFlair[i.belongsTo.id] = {}), n.authorFlair[i.belongsTo.id][i.author] = Object(x.a)(e.authorFlair)[0]), Object(b.l)(e) ? n.profiles[e.profile.id] || (n.profiles[e.profile.id] = Object(j.a)(e.profile)) : Object(b.n)(e) && (n.subreddits[e.subreddit.id] || (n.subreddits[e.subreddit.id] = Object(P.a)(e.subreddit)), n.postFlair[e.subreddit.id] || (n.postFlair[e.subreddit.id] = Object(y.a)(e.subreddit))))
 					}
 					return n
 				},
-				E = r("./src/reddit/helpers/localStorage/index.ts"),
-				k = r("./src/reddit/helpers/makeProfileListingKey/index.ts"),
-				N = r("./src/reddit/selectors/experiments/d2xHistoryTab.ts"),
-				G = r("./src/reddit/actions/pages/profilePrivate/constants.ts"),
-				R = r("./src/lib/initializeClient/installReducer.ts"),
-				T = r("./src/reddit/reducers/features/comments/index.ts");
-			Object(R.a)({
+				S = r("./src/reddit/helpers/localStorage/index.ts"),
+				L = r("./src/reddit/helpers/makeProfileListingKey/index.ts"),
+				E = r("./src/reddit/actions/pages/profilePrivate/constants.ts"),
+				k = r("./src/lib/initializeClient/installReducer.ts"),
+				N = r("./src/reddit/reducers/features/comments/index.ts");
+			Object(k.a)({
 				features: {
-					comments: T.a
+					comments: N.a
 				}
 			});
-			const C = {
-					[x.b.Downvoted]: (e, t) => Object(c.a)(e, {
+			const G = {
+					[g.b.Downvoted]: (e, t) => Object(d.a)(e, {
+						...a,
+						variables: t
+					}),
+					[g.b.Hidden]: (e, t) => Object(d.a)(e, {
 						...l,
 						variables: t
 					}),
-					[x.b.Hidden]: (e, t) => Object(c.a)(e, {
-						...p,
+					[g.b.Saved]: (e, t) => Object(d.a)(e, {
+						...m,
 						variables: t
 					}),
-					[x.b.Saved]: (e, t) => Object(c.a)(e, {
-						...h,
-						variables: t
-					}),
-					[x.b.Upvoted]: (e, t) => Object(c.a)(e, {
-						...b,
-						variables: t
-					}),
-					[x.b.ReceivedGildings]: (e, t) => Object(c.a)(e, {
+					[g.b.Upvoted]: (e, t) => Object(d.a)(e, {
 						...f,
 						variables: t
 					}),
-					[x.b.GivenGildings]: (e, t) => Object(c.a)(e, {
-						...u,
+					[g.b.ReceivedGildings]: (e, t) => Object(d.a)(e, {
+						...p,
+						variables: t
+					}),
+					[g.b.GivenGildings]: (e, t) => Object(d.a)(e, {
+						...c,
 						variables: t
 					})
 				},
-				F = (e, t) => {
+				R = (e, t) => {
 					switch (e) {
-						case x.b.Downvoted:
-						case x.b.Hidden:
-						case x.b.History:
-						case x.b.Saved:
-						case x.b.Upvoted:
-						case x.b.ReceivedGildings:
-						case x.b.GivenGildings:
+						case g.b.Downvoted:
+						case g.b.Hidden:
+						case g.b.History:
+						case g.b.Saved:
+						case g.b.Upvoted:
+						case g.b.ReceivedGildings:
+						case g.b.GivenGildings:
 							return t.body.data
 					}
 				},
-				B = e => {
+				T = e => {
 					switch (e.listingType) {
-						case x.b.Downvoted:
-						case x.b.Hidden:
-						case x.b.History:
-						case x.b.Saved:
-						case x.b.Upvoted:
-						case x.b.ReceivedGildings:
-						case x.b.GivenGildings:
-							return L(e)
+						case g.b.Downvoted:
+						case g.b.Hidden:
+						case g.b.History:
+						case g.b.Saved:
+						case g.b.Upvoted:
+						case g.b.ReceivedGildings:
+						case g.b.GivenGildings:
+							return I(e)
 					}
 				},
-				q = Object(o.a)(G.b),
-				M = Object(o.a)(G.c),
-				V = Object(o.a)(G.i),
-				A = Object(o.a)(G.a),
-				D = e => async (t, r, o) => {
+				C = Object(i.a)(E.b),
+				F = Object(i.a)(E.c),
+				B = Object(i.a)(E.i),
+				q = Object(i.a)(E.a),
+				M = e => async (t, r, i) => {
 					const {
-						profileName: l,
-						listingType: u
-					} = e.params, p = r(), f = Object(k.c)(l.toLowerCase(), u), h = p.profilePrivatePage.ids[f] && p.profilePrivatePage.ids[f].length > 0, b = !!p.profilePrivatePage.api.error[f];
-					if (p.profilePrivatePage.api.pending[f] || h && !b) return;
+						profileName: a,
+						listingType: c
+					} = e.params, l = r(), p = Object(L.c)(a.toLowerCase(), c), m = l.profilePrivatePage.ids[p] && l.profilePrivatePage.ids[p].length > 0, f = !!l.profilePrivatePage.api.error[p];
+					if (l.profilePrivatePage.api.pending[p] || m && !f) return;
 					const {
-						account: g
-					} = p.user, v = !g, y = !(g && g.displayText && p.profiles.moderated.models[g.displayText.toLowerCase()] && p.profiles.moderated.models[g.displayText.toLowerCase()].length);
-					let O;
-					if (t(q({
-							listingKey: f
-						})), u === x.b.History) {
-						if (!Object(N.a)(p)) {
-							const {
-								profileName: r
-							} = e.params, o = `/user/${r}/`;
-							return t(Object(i.c)(o)), void t(A({
-								listingKey: f,
-								error: {
-									type: s.L.AUTHORIZATION_ERROR
-								}
-							}))
-						}
-						const r = {
-							includeIdentity: v,
-							includeModerated: y,
-							recentPostIds: Object(E.N)(null == g ? void 0 : g.id).reverse()
+						account: h
+					} = l.user, b = !h, v = !(h && h.displayText && l.profiles.moderated.models[h.displayText.toLowerCase()] && l.profiles.moderated.models[h.displayText.toLowerCase()].length);
+					let x;
+					if (t(C({
+							listingKey: p
+						})), c === g.b.History) {
+						const e = {
+							includeIdentity: b,
+							includeModerated: v,
+							recentPostIds: Object(S.N)(null == h ? void 0 : h.id).reverse()
 						};
-						O = await ((e, t) => Object(c.a)(e, {
-							...m,
+						x = await ((e, t) => Object(d.a)(e, {
+							...u,
 							variables: t
-						}))(o.gqlContext(), r)
+						}))(i.gqlContext(), e)
 					} else {
 						const e = {
-							includeIdentity: v,
-							includeModerated: y,
-							first: G.h,
+							includeIdentity: b,
+							includeModerated: v,
+							first: E.h,
 							after: null
 						};
-						O = await C[u](o.gqlContext(), e)
+						x = await G[c](i.gqlContext(), e)
 					}
-					if (O.ok && O.body) {
-						const e = B({
-							rawData: F(u, O),
-							listingType: u,
-							includeIdentity: v,
-							includeModerated: y
+					if (x.ok && x.body) {
+						const e = T({
+							rawData: R(c, x),
+							listingType: c,
+							includeIdentity: b,
+							includeModerated: v
 						});
-						u === x.b.Saved || u === x.b.ReceivedGildings || u === x.b.GivenGildings ? await t(M({
-							listingKey: f,
-							profileName: l,
+						c === g.b.Saved || c === g.b.ReceivedGildings || c === g.b.GivenGildings ? await t(F({
+							listingKey: p,
+							profileName: a,
 							...e
-						})) : await t(V({
-							listingKey: f,
-							profileName: l,
+						})) : await t(B({
+							listingKey: p,
+							profileName: a,
 							...e
-						})), await Promise.all([t(Object(d.d)(l)), t(Object(n.o)(l)), t(Object(a.d)(l))])
-					} else t(A({
-						listingKey: f,
-						error: O.error
+						})), await Promise.all([t(Object(o.d)(a)), t(Object(s.o)(a)), t(Object(n.d)(a))])
+					} else t(q({
+						listingKey: p,
+						error: x.error
 					}))
-				}, z = Object(o.a)(G.f), H = Object(o.a)(G.e), K = Object(o.a)(G.g), U = Object(o.a)(G.d), W = e => async (t, r, i) => {
+				}, V = Object(i.a)(E.f), A = Object(i.a)(E.e), D = Object(i.a)(E.g), z = Object(i.a)(E.d), H = e => async (t, r, i) => {
 					const s = r(),
 						o = s.user.account && s.user.account.displayText && s.user.account.displayText.toLowerCase();
 					if (!o) return;
-					const n = Object(k.c)(o, e);
+					const n = Object(L.c)(o, e);
 					if (!s.profilePrivatePage.ids[n] || !s.profilePrivatePage.ids[n].length || !s.profilePrivatePage.pageInfo || !s.profilePrivatePage.pageInfo[n].hasNextPage || s.profilePrivatePage.api.error[n] || s.profilePrivatePage.api.pending[n]) return;
 					const d = {
 						includeIdentity: !1,
 						includeModerated: !1,
 						after: s.profilePrivatePage.pageInfo[n].endCursor,
-						first: G.h
+						first: E.h
 					};
-					t(z({
+					t(V({
 						listingKey: n
 					}));
-					const a = await C[e](i.gqlContext(), d);
+					const a = await G[e](i.gqlContext(), d);
 					if (a.ok && a.body) {
-						const r = B({
+						const r = T({
 							includeIdentity: !1,
 							includeModerated: !1,
 							listingType: e,
 							rawData: a.body.data
 						});
-						e === x.b.Saved || e === x.b.ReceivedGildings || e === x.b.GivenGildings ? await t(H({
+						e === g.b.Saved || e === g.b.ReceivedGildings || e === g.b.GivenGildings ? await t(A({
 							listingKey: n,
 							profileName: o,
 							...r
-						})) : await t(K({
+						})) : await t(D({
 							listingKey: n,
 							profileName: o,
 							...r
 						}))
-					} else t(U({
+					} else t(z({
 						listingKey: n,
 						error: a.error
 					}))
@@ -1476,15 +1462,15 @@
 			const n = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: o.S,
-						experimentName: i.vd
+						experimentName: i.ud
 					});
-					return !(!t || Object(i.mg)(t))
+					return !(!t || Object(i.lg)(t))
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: o.S,
-						experimentName: i.vd
-					}) === i.Sd.ListingEnabled
+						experimentName: i.ud
+					}) === i.Rd.ListingEnabled
 				}
 		},
 		"./src/redditGQL/operations/ProfileDownvoted.json": function(e) {
@@ -1513,4 +1499,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.ca2fd0500e3d04071841.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.dfb38104d7931e73b0fb.js.map

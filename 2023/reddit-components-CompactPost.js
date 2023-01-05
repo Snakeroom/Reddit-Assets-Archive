@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.2d94a17b6689bd1d4e25.js
-// Retrieved at 1/5/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.599816c0421219cac614.js
+// Retrieved at 1/5/2023, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1658,8 +1658,8 @@
 				p = s("./node_modules/reselect/es/index.js");
 			const b = Object(p.a)(e => Object(m.c)(e, {
 				experimentEligibilitySelector: m.a,
-				experimentName: u.wc
-			}), e => e === u.Od);
+				experimentName: u.vc
+			}), e => e === u.Nd);
 			var _ = s("./node_modules/fbt/lib/FbtPublic.js"),
 				f = s("./src/lib/classNames/index.ts"),
 				h = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
@@ -3225,10 +3225,10 @@
 				n = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(o.a)(e => Object(r.c)(e, {
-					experimentName: n.Yf,
+					experimentName: n.Xf,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				a = Object(o.a)(i, e => e === n.Sf)
+				a = Object(o.a)(i, e => e === n.Rf)
 		},
 		"./src/reddit/selectors/removedPosts.ts": function(e, t, s) {
 			"use strict";
@@ -3295,4 +3295,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.2d94a17b6689bd1d4e25.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.599816c0421219cac614.js.map

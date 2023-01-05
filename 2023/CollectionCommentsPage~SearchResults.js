@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.34a8b2d8878e8e25bf84.js
-// Retrieved at 1/5/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.ff3a41a1ae43ed27d625.js
+// Retrieved at 1/5/2023, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -807,9 +807,9 @@
 							r = Object(me.Q)(s(), {
 								identifier: w.belongsTo
 							});
-						if (r && (e => m.rf.Redirect === Object(se.b)(e, {
+						if (r && (e => m.qf.Redirect === Object(se.b)(e, {
 								experimentEligibilitySelector: ae,
-								experimentName: m.of
+								experimentName: m.nf
 							}))(s())) return void t(Object(o.c)(r.url));
 						if (w.belongsTo.type !== q.a.SUBREDDIT || w.isSponsored) {
 							if (w.belongsTo.type === q.a.PROFILE) {
@@ -6982,7 +6982,7 @@
 				const t = Object(o.f)().getState(),
 					s = Object(h.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === m.fd.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.fd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.fd.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === m.ed.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.ed.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.ed.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(_, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -8362,7 +8362,7 @@
 						searchQueryId: re
 					} = Object(c.e)(e => Object(W.a)(e)),
 					oe = Object(c.e)(U.a),
-					ie = (Object(c.e)(e => Object(z.a)(e, q.Jc)), Object(_.Z)(r)),
+					ie = (Object(c.e)(e => Object(z.a)(e, q.Ic)), Object(_.Z)(r)),
 					ae = Object(_.db)(r),
 					[ce, de] = Object(i.useState)(!1),
 					le = Object(l.a)(ie) || null,
@@ -8481,7 +8481,7 @@
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: n.D
-				}) === n.Od
+				}) === n.Nd
 			}
 		},
 		"./src/reddit/selectors/experiments/commentBox.ts": function(e, t, s) {
@@ -8510,7 +8510,7 @@
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: n.A
-				}) === n.Od
+				}) === n.Nd
 			}
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, s) {
@@ -8528,11 +8528,11 @@
 				c = s("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(a.h)(e) && Object(o.f)(e),
-					experimentName: n.oc
+					experimentName: n.nc
 				}), i.a),
 				l = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.h)(e) && Object(o.f)(e),
-					experimentName: n.nc
+					experimentName: n.mc
 				}), i.a),
 				m = Object(c.a)(d, l, (e, t) => e || t),
 				u = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -8547,10 +8547,10 @@
 				o = s("./node_modules/reselect/es/index.js");
 			const i = Object(o.a)(e => Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: n.uf
+				experimentName: n.tf
 			}), e => ({
-				isSubEnlarged: e === n.Kf.Variant1 || e === n.Kf.Variant3,
-				withCommunityDescription: e === n.Kf.Variant2 || e === n.Kf.Variant3
+				isSubEnlarged: e === n.Jf.Variant1 || e === n.Jf.Variant3,
+				withCommunityDescription: e === n.Jf.Variant2 || e === n.Jf.Variant3
 			}))
 		},
 		"./src/reddit/selectors/i18n/index.ts": function(e, t, s) {
@@ -8566,7 +8566,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(r.mg)(t)
+					return Boolean(t) && !Object(r.lg)(t)
 				},
 				c = Object(n.a)(a, o.d, (e, t) => e && !t)
 		},
@@ -8621,4 +8621,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.34a8b2d8878e8e25bf84.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.ff3a41a1ae43ed27d625.js.map

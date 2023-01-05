@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.202878565e46b54802e9.js
-// Retrieved at 1/5/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.a7a28a687f709403c678.js
+// Retrieved at 1/5/2023, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, r) {
@@ -2736,7 +2736,7 @@
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
 					experimentName: n.D
-				}) === n.Od
+				}) === n.Nd
 			}
 		},
 		"./src/redditGQL/operations/DeleteSubredditMuteSettings.json": function(e) {
@@ -2753,4 +2753,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.202878565e46b54802e9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.a7a28a687f709403c678.js.map

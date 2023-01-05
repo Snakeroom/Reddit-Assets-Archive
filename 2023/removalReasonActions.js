@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.1d709c9031a09a8eded6.js
-// Retrieved at 1/5/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.ed851c5f6d538be8269f.js
+// Retrieved at 1/5/2023, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./node_modules/lodash/map.js": function(e, t, s) {
@@ -527,9 +527,9 @@
 				H = s("./src/reddit/models/ModQueue/index.ts"),
 				q = s("./src/reddit/models/PostDraft/index.ts"),
 				Q = s("./src/reddit/models/RemovalReason/index.ts"),
-				W = s("./src/reddit/models/Toast/index.ts"),
-				X = s("./src/reddit/selectors/comments.ts"),
-				Z = s("./src/reddit/selectors/platform.ts");
+				X = s("./src/reddit/models/Toast/index.ts"),
+				Z = s("./src/reddit/selectors/comments.ts"),
+				W = s("./src/reddit/selectors/platform.ts");
 			Object(n.a)({
 				features: {
 					removalReasons: h
@@ -574,7 +574,7 @@
 							subredditId: e,
 							reason: r
 						})), s(Object(P.f)({
-							kind: W.b.SuccessMod,
+							kind: X.b.SuccessMod,
 							text: o.fbt._("Removal reason added!", null, {
 								hk: "2WSh8N"
 							})
@@ -598,7 +598,7 @@
 						subredditId: e,
 						reason: t
 					})), s(Object(P.f)({
-						kind: W.b.SuccessMod,
+						kind: X.b.SuccessMod,
 						text: o.fbt._("Removal reason saved", null, {
 							hk: "28ScuL"
 						})
@@ -617,7 +617,7 @@
 						subredditId: e,
 						reasonId: t
 					})), s(Object(P.f)({
-						kind: W.b.SuccessMod,
+						kind: X.b.SuccessMod,
 						text: o.fbt._("Removal reason deleted", null, {
 							hk: "4xzgsa"
 						})
@@ -674,7 +674,7 @@
 												comment: e,
 												parentId: u
 											},
-											s = Object(Z.f)(l),
+											s = Object(W.f)(l),
 											o = l.platform.currentPage && l.platform.currentPage.routeMatch;
 										let n = s && o && Object(z.a)(o, l, l.posts.models[e.postId]);
 										if (n || (n = Object(x.a)(e.postId, null, {
@@ -684,7 +684,7 @@
 											const s = Object(k.a)(q.c.replyToPost, u);
 											d(Object(C.r)({
 												...t,
-												headCommentId: Object(X.w)(l, {
+												headCommentId: Object(Z.w)(l, {
 													commentsPageKey: n
 												}),
 												commentsPageKey: n,
@@ -702,7 +702,7 @@
 											}))
 										} else if (p === Q.e.Comment) {
 											const e = Object(k.a)(q.c.replyToComment, b.id),
-												s = Object(X.j)(l, {
+												s = Object(Z.j)(l, {
 													commentId: u,
 													commentsPageKey: n
 												});
@@ -737,7 +737,7 @@
 					if (!m) return;
 					d(Re());
 					const u = Object(P.f)({
-							kind: W.b.SuccessMod,
+							kind: X.b.SuccessMod,
 							text: o.fbt._({
 								"*": "Added removal reason for {number} posts/comments",
 								_1: "Added removal reason for 1 post/comment"
@@ -1073,11 +1073,11 @@
 				experimentEligibilitySelector: n.a,
 				experimentName: o.qb
 			}), e => ({
-				bucketed: e === o.Wc.ExpandedSearch || e === o.Wc.CollapsedSearch,
-				collapsed: e === o.Wc.CollapsedSearch,
-				expanded: e === o.Wc.ExpandedSearch
+				bucketed: e === o.Vc.ExpandedSearch || e === o.Vc.CollapsedSearch,
+				collapsed: e === o.Vc.CollapsedSearch,
+				expanded: e === o.Vc.ExpandedSearch
 			}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.1d709c9031a09a8eded6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.ed851c5f6d538be8269f.js.map

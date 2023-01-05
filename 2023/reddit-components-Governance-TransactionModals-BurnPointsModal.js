@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.cfec166748616fc65b33.js
-// Retrieved at 1/5/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.419b470df5efeda0b169.js
+// Retrieved at 1/5/2023, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-BurnPointsModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
@@ -1293,14 +1293,14 @@
 			const c = e => {
 					return Object(l.c)(e, {
 						experimentEligibilitySelector: l.a,
-						experimentName: n.xe
-					}) === n.Od
+						experimentName: n.we
+					}) === n.Nd
 				},
 				s = e => {
 					return Object(l.c)(e, {
 						experimentEligibilitySelector: l.a,
-						experimentName: n.ve
-					}) === n.Od
+						experimentName: n.ue
+					}) === n.Nd
 				}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, a) {
@@ -1357,4 +1357,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.cfec166748616fc65b33.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.419b470df5efeda0b169.js.map
