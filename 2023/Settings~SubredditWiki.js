@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.d8c123f10e10347ee89b.js
-// Retrieved at 1/4/2023, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.202878565e46b54802e9.js
+// Retrieved at 1/5/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, r) {
@@ -104,7 +104,7 @@
 				const c = d.routeMatch,
 					l = Object(n.a)(r),
 					u = Object(s.b)(c, r, l);
-				u && o.c.has(u) && Object(a.k)(c, r, i.TimerType.InApp, o.c.end(u))
+				u && o.c.has(u) && Object(a.j)(c, r, i.TimerType.InApp, o.c.end(u))
 			}
 		},
 		"./src/reddit/actions/subreddit/muting.ts": function(e, t, r) {
@@ -892,10 +892,10 @@
 				}, de = (e, t) => async (r, n) => {
 					const s = n();
 					await Promise.all([(async () => {
-						if (!Object(C.b)(u.a.BAN_USER)(s) && !Object(j.V)(s, {
+						if (!Object(C.b)(u.a.BAN_USER)(s) && !Object(j.U)(s, {
 								subredditId: e
 							})) {
-							const t = Object(j.Y)(s, {
+							const t = Object(j.X)(s, {
 								subredditId: e
 							});
 							await r(Object(c.o)(t.name))
@@ -1514,7 +1514,7 @@
 							subredditId: r
 						}) : void 0
 					},
-					isCurrentUserBanned: (e, t) => !!Object(g.p)(t) && Object(g.jb)(e, t),
+					isCurrentUserBanned: (e, t) => !!Object(g.p)(t) && Object(g.ib)(e, t),
 					userProfileStyles: (e, t) => Object(x.m)(e, Object(v.o)(e, t.userName)),
 					acceptChats: (e, t) => {
 						const r = Object(v.i)(e, {
@@ -1545,7 +1545,7 @@
 						let {
 							userName: r
 						} = t;
-						return Object(g.kb)(e, {
+						return Object(g.jb)(e, {
 							identifier: {
 								name: r,
 								type: "profile"
@@ -2237,7 +2237,7 @@
 					url: U,
 					isHovercard: w
 				} = e;
-				const F = Object(a.e)(e => !O && !!E && Object(c.d)(e));
+				const F = Object(a.e)(e => !O && !!E && Object(c.e)(e));
 				return s.a.createElement(s.a.Fragment, null, s.a.createElement(m.a, {
 					bannerBackgroundImage: t,
 					editMode: !!f,
@@ -2753,4 +2753,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.d8c123f10e10347ee89b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.202878565e46b54802e9.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.799086728b8db8fc811e.js
-// Retrieved at 1/4/2023, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.3bb1e01cfba1a546728b.js
+// Retrieved at 1/5/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -482,10 +482,10 @@
 				}, ce = (e, t) => async (n, a) => {
 					const r = a();
 					await Promise.all([(async () => {
-						if (!Object(C.b)(u.a.BAN_USER)(r) && !Object(N.V)(r, {
+						if (!Object(C.b)(u.a.BAN_USER)(r) && !Object(N.U)(r, {
 								subredditId: e
 							})) {
-							const t = Object(N.Y)(r, {
+							const t = Object(N.X)(r, {
 								subredditId: e
 							});
 							await n(Object(d.o)(t.name))
@@ -1740,7 +1740,7 @@
 							subredditId: n
 						}) : void 0
 					},
-					isCurrentUserBanned: (e, t) => !!Object(x.p)(t) && Object(x.jb)(e, t),
+					isCurrentUserBanned: (e, t) => !!Object(x.p)(t) && Object(x.ib)(e, t),
 					userProfileStyles: (e, t) => Object(v.m)(e, Object(h.o)(e, t.userName)),
 					acceptChats: (e, t) => {
 						const n = Object(h.i)(e, {
@@ -1771,7 +1771,7 @@
 						let {
 							userName: n
 						} = t;
-						return Object(x.kb)(e, {
+						return Object(x.jb)(e, {
 							identifier: {
 								name: n,
 								type: "profile"
@@ -2647,7 +2647,7 @@
 						l = Object(s.e)(e => Object(E.Bb)(e, {
 							userId: i
 						})),
-						u = Object(s.e)(e => Object(T.Y)(e, {
+						u = Object(s.e)(e => Object(T.X)(e, {
 							subredditId: o
 						})),
 						m = t[c],
@@ -5324,7 +5324,7 @@
 					url: P,
 					isHovercard: U
 				} = e;
-				const M = Object(s.e)(e => !O && !!E && Object(d.d)(e));
+				const M = Object(s.e)(e => !O && !!E && Object(d.e)(e));
 				return r.a.createElement(r.a.Fragment, null, r.a.createElement(m.a, {
 					bannerBackgroundImage: t,
 					editMode: !!p,
@@ -6391,7 +6391,7 @@
 					var t, n, a;
 					return null === (a = null === (n = null === (t = e.features) || void 0 === t ? void 0 : t.avatar) || void 0 === n ? void 0 : n.marketing) || void 0 === a ? void 0 : a.pushcard
 				},
-				d = Object(a.a)(c, i.b, (e, t) => {
+				d = Object(a.a)(c, i.c, (e, t) => {
 					if (!e || !t) return null;
 					const {
 						id: n,
@@ -6652,4 +6652,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.799086728b8db8fc811e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.3bb1e01cfba1a546728b.js.map

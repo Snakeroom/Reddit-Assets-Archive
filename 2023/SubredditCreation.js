@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.2e5a80f0ac0a7fd3d58a.js
-// Retrieved at 1/4/2023, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.a2a8a79c0f81336f4b28.js
+// Retrieved at 1/5/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -1121,7 +1121,7 @@
 					const {
 						sendEvent: e
 					} = this.props;
-					e(Object(T.w)())
+					e(Object(T.v)())
 				}
 				componentWillUnmount() {
 					clearTimeout(this.timeout), this.props.clearErrors()
@@ -1843,4 +1843,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.2e5a80f0ac0a7fd3d58a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.a2a8a79c0f81336f4b28.js.map

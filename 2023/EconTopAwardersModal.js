@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.f8cb98c45a65515d975e.js
-// Retrieved at 1/4/2023, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.d53022e8932991a2851f.js
+// Retrieved at 1/5/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -542,10 +542,10 @@
 				}, de = (e, t) => async (r, a) => {
 					const n = a();
 					await Promise.all([(async () => {
-						if (!Object(E.b)(m.a.BAN_USER)(n) && !Object(w.V)(n, {
+						if (!Object(E.b)(m.a.BAN_USER)(n) && !Object(w.U)(n, {
 								subredditId: e
 							})) {
-							const t = Object(w.Y)(n, {
+							const t = Object(w.X)(n, {
 								subredditId: e
 							});
 							await r(Object(i.o)(t.name))
@@ -1591,7 +1591,7 @@
 							subredditId: r
 						}) : void 0
 					},
-					isCurrentUserBanned: (e, t) => !!Object(x.p)(t) && Object(x.jb)(e, t),
+					isCurrentUserBanned: (e, t) => !!Object(x.p)(t) && Object(x.ib)(e, t),
 					userProfileStyles: (e, t) => Object(h.m)(e, Object(v.o)(e, t.userName)),
 					acceptChats: (e, t) => {
 						const r = Object(v.i)(e, {
@@ -1622,7 +1622,7 @@
 						let {
 							userName: r
 						} = t;
-						return Object(x.kb)(e, {
+						return Object(x.jb)(e, {
 							identifier: {
 								name: r,
 								type: "profile"
@@ -2314,7 +2314,7 @@
 					url: k,
 					isHovercard: A
 				} = e;
-				const S = Object(s.e)(e => !N && !!j && Object(i.d)(e));
+				const S = Object(s.e)(e => !N && !!j && Object(i.e)(e));
 				return n.a.createElement(n.a.Fragment, null, n.a.createElement(u.a, {
 					bannerBackgroundImage: t,
 					editMode: !!b,
@@ -2666,4 +2666,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.f8cb98c45a65515d975e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.d53022e8932991a2851f.js.map

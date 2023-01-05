@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.4b5e486e21d589e83ea7.js
-// Retrieved at 1/4/2023, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.6dbf4c53a1c220c6a0fc.js
+// Retrieved at 1/5/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, o) {
@@ -2823,7 +2823,7 @@
 					return !!o && o.hasGifProduct
 				},
 				z = (e, t, o) => {
-					if (Object(p.e)(e)) return !!t && !!Object(b.a)(e, {
+					if (Object(p.f)(e)) return !!t && !!Object(b.a)(e, {
 						subredditId: t
 					});
 					if (Object(b.g)(e, {
@@ -2870,4 +2870,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.4b5e486e21d589e83ea7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.6dbf4c53a1c220c6a0fc.js.map

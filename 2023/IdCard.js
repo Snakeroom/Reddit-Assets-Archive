@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.ab380cbd925023761151.js
-// Retrieved at 1/4/2023, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.6b7f77b39c3f59d96b5d.js
+// Retrieved at 1/5/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1462,7 +1462,7 @@
 							type: e.type,
 							name: o.name
 						},
-						C = () => Object(E.kb)(n(), {
+						C = () => Object(E.jb)(n(), {
 							identifier: x
 						});
 					(C() || (await t(F([x], !0)), C())) && (t(D({
@@ -2853,7 +2853,7 @@
 			const k = 6,
 				j = `${f.a}_description`,
 				T = Object(c.c)({
-					apiPending: _.Z,
+					apiPending: _.Y,
 					unsavedChangesModalIsOpen: Object(y.b)(j)
 				}),
 				S = Object(d.b)(T, (e, t) => {
@@ -3661,7 +3661,7 @@
 			var yt = n("./src/reddit/selectors/telemetry.ts");
 			var _t = n("./src/reddit/selectors/platform.ts");
 			var Et = Object(o.b)(() => Object(m.c)({
-					postId: _t.p,
+					postId: _t.o,
 					subredditId: (e, t) => {
 						let {
 							subredditName: n
@@ -3928,7 +3928,7 @@
 			const Gt = "IDCARD_OVERFLOW_DROPDOWN_ID",
 				Kt = Object(o.b)(() => Object(m.c)({
 					activeTooltipId: Ge.a,
-					postCategories: (e, t) => Object(Me.n)(e, t.postId),
+					postCategories: (e, t) => Object(Me.l)(e, t.postId),
 					favoriteSubredditsIds: We.a,
 					idCardWidget: (e, t) => Object(Ke.d)(e, {
 						subredditName: t.listingName
@@ -5470,7 +5470,7 @@
 					subreddit: a.lb(e)
 				}),
 				c = (e, t, n) => r => ({
-					source: Object(o.j)(r) || n ? "post_lightbox" : "post_detail",
+					source: Object(o.i)(r) || n ? "post_lightbox" : "post_detail",
 					action: "click",
 					noun: t,
 					...d(r),
@@ -5495,7 +5495,7 @@
 				u = (e, t) => n => {
 					const r = a.k(n);
 					return r ? c(r.id, e, t)(n) : {
-						source: Object(o.j)(n) || t ? "post_lightbox" : "post_detail",
+						source: Object(o.i)(n) || t ? "post_lightbox" : "post_detail",
 						action: "click",
 						noun: e,
 						...d(n)
@@ -6067,4 +6067,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.ab380cbd925023761151.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.6b7f77b39c3f59d96b5d.js.map

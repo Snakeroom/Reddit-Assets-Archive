@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.7452e9109e1f13b4bdb5.js
-// Retrieved at 1/4/2023, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.5dc22826d66309cd6292.js
+// Retrieved at 1/5/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CustomBadgeHovercardTooltip"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, r) {
@@ -861,7 +861,7 @@
 					return !!r && r.hasGifProduct
 				},
 				J = (e, t, r) => {
-					if (Object(b.e)(e)) return !!t && !!Object(h.a)(e, {
+					if (Object(b.f)(e)) return !!t && !!Object(h.a)(e, {
 						subredditId: t
 					});
 					if (Object(h.g)(e, {
@@ -908,4 +908,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.7452e9109e1f13b4bdb5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.5dc22826d66309cd6292.js.map

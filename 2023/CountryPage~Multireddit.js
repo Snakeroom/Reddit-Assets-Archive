@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.98b1074cd64ca8c93ebb.js
-// Retrieved at 1/4/2023, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.7c0c07de8ce1ac65b840.js
+// Retrieved at 1/5/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -914,13 +914,13 @@
 				g = (Object(m.a)((e, t) => {
 					const n = g(e, t);
 					if (!n) return f;
-					const r = Object(b.cb)(e, {
+					const r = Object(b.bb)(e, {
 						subredditName: n.name
 					});
 					return r && r.postIds && r.postIds.length ? r.postIds : f
 				}), (e, t) => {
 					const n = e.focusedVerticals.recommendedSubredditIds && e.focusedVerticals.recommendedSubredditIds[t];
-					return n ? Object(b.Y)(e, {
+					return n ? Object(b.X)(e, {
 						subredditId: n
 					}) : null
 				}),
@@ -2383,7 +2383,7 @@
 						} = t;
 						return Object(y.D)(e, n, r, i)
 					}),
-					subredditsById: x.fb,
+					subredditsById: x.eb,
 					viewportDataLoaded: k.a,
 					pageReferrer: p.X,
 					postListPlaceholderComponent: () => _.a,
@@ -3056,7 +3056,7 @@
 						}), a.a.createElement(g.a, null), a.a.createElement(v.a, {
 							listingKey: n,
 							listingName: r,
-							listingViewed: (e, t) => Object(b.f)({
+							listingViewed: (e, t) => Object(b.e)({
 								key: n,
 								sort: c,
 								timerType: t,
@@ -3161,4 +3161,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.98b1074cd64ca8c93ebb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.7c0c07de8ce1ac65b840.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.152360766f4577677248.js
-// Retrieved at 1/4/2023, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.b67dca07ff8b6b1c7f28.js
+// Retrieved at 1/5/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDetailStickyHeader"], {
 		"./src/reddit/actions/shortcuts/close.ts": function(t, e, s) {
@@ -33,14 +33,14 @@
 						E = Object(h.c)(f),
 						O = Object(b.b)(f),
 						C = Object(u.a)(f),
-						k = [i.a.NsfwBlockingModal].includes(C),
+						j = [i.a.NsfwBlockingModal].includes(C),
 						S = [a.a.NSFW_BLOCKING_MODAL_V2].includes(O),
-						j = k || S;
+						k = j || S;
 					if (_ && "true" === _.contentEditable && v && E) s(o.b({
 						parentCommentId: v,
 						commentsPageKey: E
 					})), Object(h.a)(v);
-					else if (O && !j) Object(h.b)(c.b), s(Object(i.i)(O));
+					else if (O && !k) Object(h.b)(c.b), s(Object(i.i)(O));
 					else if (f.toaster[0]) Object(h.b)(c.b), s(Object(r.g)(f.toaster[0].id));
 					else if (f.shortcuts.namespace === c.d.Lightbox && f.platform.currentPage) {
 						const t = f.platform.currentPage.locationState.closeLocation;
@@ -172,9 +172,9 @@
 				E = s("./src/reddit/controls/Button/index.tsx"),
 				O = s("./src/reddit/helpers/postCollection.ts"),
 				C = s("./src/reddit/icons/fonts/index.tsx"),
-				k = s("./src/reddit/icons/svgs/Subreddit/index.tsx"),
+				j = s("./src/reddit/icons/svgs/Subreddit/index.tsx"),
 				S = s("./src/reddit/models/Media/index.ts"),
-				j = s("./src/reddit/models/Vote/index.ts"),
+				k = s("./src/reddit/models/Vote/index.ts"),
 				L = s("./src/reddit/selectors/experiments/joinOptimizations.ts"),
 				B = s("./src/reddit/selectors/experiments/postActionBarAnimation.ts"),
 				M = s("./src/reddit/selectors/platform.ts"),
@@ -190,14 +190,14 @@
 							post: n
 						} = e;
 						if (!s && !n) return null;
-						const o = n || Object(M.o)(t, {
+						const o = n || Object(M.n)(t, {
 							page: s
 						});
 						return (null == o ? void 0 : o.belongsTo) ? Object(N.Q)(t, {
 							identifier: o.belongsTo
 						}) : null
 					},
-					post: M.o,
+					post: M.n,
 					joinOptimizationsLightboxHeaderEnabled: t => Object(L.a)(t) || Object(L.d)(t) || Object(L.c)(t),
 					isVoteCountAnimation: (t, e) => {
 						let {
@@ -205,7 +205,7 @@
 							post: n
 						} = e;
 						if (!s && !n) return !1;
-						const o = s && Object(M.o)(t, {
+						const o = s && Object(M.n)(t, {
 							page: s
 						}) || n;
 						return !!o && Object(B.g)(t, {
@@ -221,7 +221,7 @@
 						close: () => {
 							t(Object(b.a)(s, !0))
 						},
-						toggleVote: (e, s) => t(s === j.a.upvoted ? Object(u.ib)(e) : Object(u.v)(e))
+						toggleVote: (e, s) => t(s === k.a.upvoted ? Object(u.ib)(e) : Object(u.v)(e))
 					}
 				}, (t, e, s) => ({
 					...t,
@@ -266,7 +266,7 @@
 							return {
 								source: "sticky_banner",
 								action: "click",
-								noun: (null == e ? void 0 : e.name) && Object(N.kb)(t, {
+								noun: (null == e ? void 0 : e.name) && Object(N.jb)(t, {
 									identifier: {
 										name: e.name,
 										type: "subreddit"
@@ -334,7 +334,7 @@
 						post: l,
 						nowrap: !0,
 						sendEvent: this.props.sendEvent
-					}), this.props.showSubreddit && this.props.subreddit && i.a.createElement(i.a.Fragment, null, i.a.createElement(k.a, {
+					}), this.props.showSubreddit && this.props.subreddit && i.a.createElement(i.a.Fragment, null, i.a.createElement(j.a, {
 						className: A.a.srIcon
 					}), i.a.createElement(x.a, {
 						to: this.props.subreddit.url,
@@ -453,11 +453,11 @@
 			})), s.d(e, "f", (function() {
 				return C
 			})), s.d(e, "e", (function() {
-				return k
+				return j
 			})), s.d(e, "d", (function() {
 				return S
 			})), s.d(e, "h", (function() {
-				return j
+				return k
 			})), s.d(e, "c", (function() {
 				return L
 			}));
@@ -499,9 +499,9 @@
 				E = t => i("a_upvote", t),
 				O = t => r("a_upvote", t),
 				C = t => i("z_downvote", t),
-				k = t => r("z_downvote", t),
+				j = t => r("z_downvote", t),
 				S = o("c_create_post"),
-				j = t => i("l_go_to_link", t),
+				k = t => i("l_go_to_link", t),
 				L = t => r("r_comment", t);
 			o("q_navigation")
 		},
@@ -540,4 +540,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.152360766f4577677248.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.b67dca07ff8b6b1c7f28.js.map

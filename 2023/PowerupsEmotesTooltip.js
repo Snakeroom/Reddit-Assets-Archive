@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.b8b7ca47e203a5a11460.js
-// Retrieved at 1/4/2023, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.2efc4a7303b3838c8e01.js
+// Retrieved at 1/5/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsEmotesTooltip"], {
 		"./src/reddit/actions/economics/powerups/helpers.ts": function(e, t, o) {
@@ -551,7 +551,7 @@
 				} = e;
 				const h = Object(a.a)(),
 					[E, j] = Object(s.useState)(!1),
-					f = Object(i.e)(c.e);
+					f = Object(i.e)(c.f);
 				Object(s.useEffect)(() => {
 					E && h(Object(r.c)())
 				}, [E, h]);
@@ -836,4 +836,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.b8b7ca47e203a5a11460.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.2efc4a7303b3838c8e01.js.map

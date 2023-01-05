@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.19669189e37972659433.js
-// Retrieved at 1/4/2023, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.2665cfb74b36fe24400f.js
+// Retrieved at 1/5/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1788,7 +1788,7 @@
 				const r = Object(c.e)(e => Object(g.G)(e, {
 						postId: t
 					})),
-					s = Object(c.e)(e => "subreddit" === (null == r ? void 0 : r.belongsTo.type) ? Object(O.Y)(e, {
+					s = Object(c.e)(e => "subreddit" === (null == r ? void 0 : r.belongsTo.type) ? Object(O.X)(e, {
 						subredditId: r.belongsTo.id
 					}) : null);
 				return s ? o.a.createElement(v.a, {
@@ -4231,15 +4231,16 @@
 					noun: "try_this_look_post",
 					snoovatar: s.jb(e)
 				}),
-				u = e => ({
-					...s.o(e),
+				u = e => t => ({
+					...s.o(t),
 					source: "global",
 					action: "view",
 					noun: "screen",
 					actionInfo: {
 						pageType: "snoovatar_builder"
 					},
-					snoovatar: s.jb(e)
+					referrer: e,
+					snoovatar: s.jb(t)
 				}),
 				m = e => ({
 					...s.o(e),
@@ -4367,7 +4368,7 @@
 					adminId: e.authorId,
 					subredditId: e.belongsTo.id,
 					avatarShareUrl: e.source ? e.source.url : ""
-				}) && Object(a.a)(t)
+				}) && Object(a.b)(t)
 			})
 		},
 		"./src/reddit/hooks/useIsRemovedOrDeletedPost.ts": function(e, t, n) {
@@ -5402,4 +5403,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.19669189e37972659433.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.2665cfb74b36fe24400f.js.map

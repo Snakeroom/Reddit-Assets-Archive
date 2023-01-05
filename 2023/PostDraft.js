@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.c80891669203c9dcc716.js
-// Retrieved at 1/4/2023, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.5af28691c5879476b0ae.js
+// Retrieved at 1/5/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -299,7 +299,7 @@
 			})), n.d(t, "a", (function() {
 				return G
 			})), n.d(t, "c", (function() {
-				return X
+				return V
 			})), n.d(t, "h", (function() {
 				return U
 			})), n.d(t, "f", (function() {
@@ -522,7 +522,7 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, H = Object(i.a)(c.e), X = (e, t) => async (n, i, a) => {
+				}, H = Object(i.a)(c.e), V = (e, t) => async (n, i, a) => {
 					let {
 						apiContext: c
 					} = a;
@@ -548,11 +548,11 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, V = Object(i.a)(c.r), q = Object(i.a)(c.n), K = Object(i.a)(c.s), U = (e, t) => async (n, s, r) => {
+				}, X = Object(i.a)(c.r), q = Object(i.a)(c.n), K = Object(i.a)(c.s), U = (e, t) => async (n, s, r) => {
 					let {
 						apiContext: i
 					} = r;
-					n(V());
+					n(X());
 					const a = await k(i(), e, t);
 					let c = !1;
 					if (a.ok) n(K({
@@ -1034,7 +1034,7 @@
 					const o = Object(h.s)(e, {
 						pageLayer: n
 					});
-					return o && Object(k.X)(e, {
+					return o && Object(k.W)(e, {
 						subredditId: o.id
 					})
 				}, e => (e || []).filter(e => N.has(e.kind))),
@@ -2130,7 +2130,7 @@
 					noun: s.collectionCancel
 				}),
 				k = () => e => {
-					const t = Object(a.p)(e) || void 0;
+					const t = Object(a.o)(e) || void 0;
 					return {
 						...m(e, t),
 						source: o.collectionComposer,
@@ -2166,7 +2166,7 @@
 					noun: s.startEvent
 				}),
 				j = () => e => {
-					const t = Object(a.p)(e) || void 0;
+					const t = Object(a.o)(e) || void 0;
 					return {
 						...m(e, t),
 						source: o.collectionComposer,
@@ -2235,18 +2235,18 @@
 					postEvent: v(e)
 				}),
 				x = e => t => ({
-					...y(t, Object(d.p)(t)),
+					...y(t, Object(d.o)(t)),
 					source: o.postComposer,
 					noun: "apply",
 					postComposer: E(e)
 				}),
 				_ = () => e => ({
-					...y(e, Object(d.p)(e)),
+					...y(e, Object(d.o)(e)),
 					noun: "cancel",
 					actionInfo: p(e)
 				}),
 				g = e => t => ({
-					...y(t, Object(d.p)(t)),
+					...y(t, Object(d.o)(t)),
 					noun: "delete",
 					actionInfo: p(t),
 					postComposer: k(t),
@@ -2729,7 +2729,7 @@
 				z = n("./src/reddit/pages/ErrorPages/index.tsx"),
 				G = n("./src/reddit/selectors/postDraft.ts");
 			const H = Object(d.v)(),
-				X = Object(i.c)({
+				V = Object(i.c)({
 					draft: (e, t) => {
 						let {
 							match: n
@@ -2739,7 +2739,7 @@
 						})
 					}
 				}),
-				V = Object(r.b)(X);
+				X = Object(r.b)(V);
 			class q extends o.Component {
 				render() {
 					const {
@@ -2761,7 +2761,7 @@
 					})
 				}
 			}
-			t.default = H(V(q))
+			t.default = H(X(q))
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, n) {
 			"use strict";
@@ -2789,4 +2789,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.c80891669203c9dcc716.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.5af28691c5879476b0ae.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.87cea285d89e646a9873.js
-// Retrieved at 1/4/2023, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.458983c2aadde9bc2cce.js
+// Retrieved at 1/5/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, n) {
@@ -2691,7 +2691,7 @@
 				} = e;
 				const o = Object(Be.a)(),
 					i = Object(V.b)(),
-					c = Object(a.e)(e => !r && Boolean(Object(M.h)(e)) && Object(Re.j)(e)),
+					c = Object(a.e)(e => !r && Boolean(Object(M.h)(e)) && Object(Re.k)(e)),
 					d = c ? Ge._("Get free Coins with Premium", null, {
 						hk: "3fzsqq"
 					}) : Object(Se.a)(r || 0, {
@@ -5878,7 +5878,7 @@
 					let {
 						subredditName: n
 					} = t;
-					const r = Object(o.cb)(e, {
+					const r = Object(o.bb)(e, {
 						subredditName: n
 					});
 					return (r && r.postIds || []).slice(0, 2)
@@ -5910,4 +5910,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.87cea285d89e646a9873.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.458983c2aadde9bc2cce.js.map
