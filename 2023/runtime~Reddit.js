@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.67a69c5c6049d0cc6e26.js
-// Retrieved at 1/9/2023, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.d190b31fba47a3ced90e.js
+// Retrieved at 1/9/2023, 6:30:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1378,7 +1378,7 @@
 						0: "dcfad0c90a716a314e89",
 						1: "80aa87920b2400c68c27",
 						2: "b11a12069ccc144577f5",
-						3: "8eda915c33374709108b",
+						3: "743ea6051843eeeba680",
 						4: "e7d8d9b8e9a374d654d4",
 						5: "047337457a3f7845aa3d",
 						OnboardingModal: "6a47dbfbc364bd010b3c",
@@ -1615,7 +1615,7 @@
 						RichTextEditor: "e9d56e1b5baa1786d0f1",
 						"vendors~devPlatform-components-AdminPanel-Utilities-DevPlatformConfig~devPlatform-components-ContextActions": "7ef5aced8364ad42333e",
 						"devPlatform-components-ContextActions": "79e41e08cbfbd4751547",
-						"vendors~shreddit-player": "1eb9b975495bf8377868",
+						"vendors~shreddit-player": "eb09d6db62bca538ebcb",
 						ContributorRequestButton: "e2cd43543c7809ff2361",
 						SubredditSearchCarousel: "a377f92a7892d1192266",
 						CommunityTopicSurvey: "03bc392261947c6c8afc",
@@ -1787,4 +1787,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.67a69c5c6049d0cc6e26.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.d190b31fba47a3ced90e.js.map
