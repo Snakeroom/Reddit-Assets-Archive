@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.960130b04d1752670fd8.js
-// Retrieved at 1/5/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.c0a9d1c499a1e9e8fa21.js
+// Retrieved at 1/9/2023, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./node_modules/lodash/take.js": function(e, t, i) {
@@ -1122,7 +1122,7 @@
 				K = H.a.div("ModalTopSpacer", G.a),
 				V = H.a.div("SidebarTitleContainer", G.a),
 				Z = H.a.div("SidebarTitle", G.a),
-				X = H.a.wrapped(N.a, "SidebarFlair", G.a),
+				X = H.a.wrapped(N.b, "SidebarFlair", G.a),
 				Y = H.a.div("Attributon", G.a),
 				J = e => {
 					let {
@@ -2572,4 +2572,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.960130b04d1752670fd8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.c0a9d1c499a1e9e8fa21.js.map

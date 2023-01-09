@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.fc7992c9c6373aec9b63.js
-// Retrieved at 1/5/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.61d60f28ac1bbf9e8308.js
+// Retrieved at 1/9/2023, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1758,7 +1758,7 @@
 					tooltipType: M ? x.f.Lightbox : void 0
 				})), c && !Object(g.o)(c) && r.a.createElement("span", {
 					className: ie.a.userFlairLine
-				}, r.a.createElement(b.b, {
+				}, r.a.createElement(b.c, {
 					className: ie.a.flair,
 					flair: c,
 					forceSmallEmojis: !0
@@ -1784,7 +1784,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const Ce = c.a.wrapped(b.b, "RightPositionedAuthorFlair", ve.a),
+			const Ce = c.a.wrapped(b.c, "RightPositionedAuthorFlair", ve.a),
 				ge = c.a.span("DeletedText", ve.a),
 				ke = c.a.wrapped(C.a, "MetaSeparator", ve.a),
 				_e = Object(i.b)(() => Object(a.c)({
@@ -1889,7 +1889,7 @@
 						[ve.a.hasBadges]: g
 					}),
 					"data-testid": "comment-top-meta"
-				}, p && H && r.a.createElement(b.b, {
+				}, p && H && r.a.createElement(b.c, {
 					flair: p,
 					forceSmallEmojis: u
 				}), !Object(O.f)(i) && r.a.createElement(h.b, {
@@ -2614,4 +2614,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.fc7992c9c6373aec9b63.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.61d60f28ac1bbf9e8308.js.map

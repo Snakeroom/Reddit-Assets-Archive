@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.225317db5a012f8b0bc2.js
-// Retrieved at 1/5/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.04d2524aaf8ac7021c2b.js
+// Retrieved at 1/9/2023, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -4186,7 +4186,7 @@
 					onClick: s
 				}, `u/${t.author}`)), t.authorFlair && i.a.createElement("div", {
 					className: X.a.flairContainer
-				}, i.a.createElement(T.b, {
+				}, i.a.createElement(T.c, {
 					flair: t.authorFlair,
 					forceSmallEmojis: !0
 				})), !t.isSponsored && i.a.createElement(i.a.Fragment, null, i.a.createElement("span", {
@@ -7289,7 +7289,7 @@
 						}),
 						onClick: () => null == r ? void 0 : r(Object(g.g)(i.flair)),
 						onMouseDown: n
-					}, o.a.createElement(m.b, E({}, i, {
+					}, o.a.createElement(m.c, E({}, i, {
 						className: v.a.Flair,
 						isFlairFilter: s,
 						forceSmallEmojis: !0
@@ -8621,4 +8621,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.225317db5a012f8b0bc2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.04d2524aaf8ac7021c2b.js.map

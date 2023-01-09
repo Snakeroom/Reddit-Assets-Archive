@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.607592e2503109bb28d3.js
-// Retrieved at 1/5/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.d4897fcabb86f8e9c9ba.js
+// Retrieved at 1/9/2023, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -14187,7 +14187,7 @@
 					_1: "1 member"
 				}, [r.fbt._plural(e.subscribers, "number")], {
 					hk: "6i1wh"
-				})), e.isNSFW && o.a.createElement(l.b, {
+				})), e.isNSFW && o.a.createElement(l.c, {
 					className: C.a.nsfwFlair,
 					flair: {
 						type: x.f.Nsfw,
@@ -14384,7 +14384,7 @@
 						}),
 						onClick: () => null == s ? void 0 : s(Object(_.g)(i.flair)),
 						onMouseDown: r
-					}, o.a.createElement(u.b, C({}, i, {
+					}, o.a.createElement(u.c, C({}, i, {
 						className: O.a.Flair,
 						isFlairFilter: n,
 						forceSmallEmojis: !0
@@ -14896,7 +14896,7 @@
 			const _e = m.a.a("ExternalLink", ge.a),
 				ve = m.a.div("ModeratorListItem", ge.a),
 				xe = m.a.div("Username", ge.a),
-				ye = m.a.wrapped(ue.b, "FlairComponent", ge.a),
+				ye = m.a.wrapped(ue.c, "FlairComponent", ge.a),
 				Ee = e => e.authorFlairType === be.f.Richtext ? {
 					backgroundColor: e.authorFlairBackgroundColor,
 					richtext: e.authorFlairRichText,
@@ -25704,4 +25704,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.607592e2503109bb28d3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.d4897fcabb86f8e9c9ba.js.map

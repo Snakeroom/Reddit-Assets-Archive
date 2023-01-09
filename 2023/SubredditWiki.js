@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.a2e0951b3a695f819906.js
-// Retrieved at 1/5/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.f0e2c5b6d7ef1505e84e.js
+// Retrieved at 1/9/2023, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -7277,7 +7277,7 @@
 					_1: "1 member"
 				}, [s.fbt._plural(e.subscribers, "number")], {
 					hk: "6i1wh"
-				})), e.isNSFW && r.a.createElement(l.b, {
+				})), e.isNSFW && r.a.createElement(l.c, {
 					className: _.a.nsfwFlair,
 					flair: {
 						type: x.f.Nsfw,
@@ -7474,7 +7474,7 @@
 						}),
 						onClick: () => null == i ? void 0 : i(Object(k.g)(a.flair)),
 						onMouseDown: s
-					}, r.a.createElement(u.b, _({}, a, {
+					}, r.a.createElement(u.c, _({}, a, {
 						className: E.a.Flair,
 						isFlairFilter: n,
 						forceSmallEmojis: !0
@@ -8130,7 +8130,7 @@
 			const ke = m.a.a("ExternalLink", fe.a),
 				ve = m.a.div("ModeratorListItem", fe.a),
 				xe = m.a.div("Username", fe.a),
-				Ce = m.a.wrapped(ue.b, "FlairComponent", fe.a),
+				Ce = m.a.wrapped(ue.c, "FlairComponent", fe.a),
 				ye = e => e.authorFlairType === pe.f.Richtext ? {
 					backgroundColor: e.authorFlairBackgroundColor,
 					richtext: e.authorFlairRichText,
@@ -11189,4 +11189,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.a2e0951b3a695f819906.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.f0e2c5b6d7ef1505e84e.js.map

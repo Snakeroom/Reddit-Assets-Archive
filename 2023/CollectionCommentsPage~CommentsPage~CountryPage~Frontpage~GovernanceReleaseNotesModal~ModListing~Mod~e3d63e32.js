@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.e2a7d34e8242cb12ef93.js
-// Retrieved at 1/5/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.4b158809d4b8e982f86c.js
+// Retrieved at 1/9/2023, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -230,48 +230,49 @@
 				a = s("./node_modules/react-redux/es/index.js"),
 				l = s("./node_modules/reselect/es/index.js"),
 				d = s("./src/lib/addQueryParams/index.ts"),
-				c = s("./src/lib/filterQueryParams/index.ts"),
-				h = s("./src/lib/lessComponent.tsx"),
-				m = s("./src/reddit/controls/Dropdown/Row.tsx"),
-				u = s("./src/reddit/controls/InternalLink/index.tsx"),
-				p = s("./src/reddit/selectors/meta.ts"),
-				b = s("./src/reddit/components/ModQueueList/PostSortDropdown.m.less"),
-				g = s.n(b);
+				c = s("./src/lib/constants/index.ts"),
+				h = s("./src/lib/filterQueryParams/index.ts"),
+				m = s("./src/lib/lessComponent.tsx"),
+				u = s("./src/reddit/controls/Dropdown/Row.tsx"),
+				p = s("./src/reddit/controls/InternalLink/index.tsx"),
+				b = s("./src/reddit/selectors/meta.ts"),
+				g = s("./src/reddit/components/ModQueueList/PostSortDropdown.m.less"),
+				f = s.n(g);
 			! function(e) {
 				e.NewestFirst = "newest", e.OldestFirst = "oldest", e.MostReportedFirst = "most_reported"
 			}(i || (i = {}));
-			const f = h.a.wrapped(m.b, "Row", g.a),
-				C = Object(l.c)({
+			const C = m.a.wrapped(u.b, "Row", f.a),
+				v = Object(l.c)({
 					currentPage: e => e.platform.currentPage,
-					origin: p.l
+					origin: b.l
 				}),
-				v = Object(a.b)(C);
-			t.b = v(e => r.a.createElement("div", {
+				y = Object(a.b)(v);
+			t.b = y(e => r.a.createElement("div", {
 				className: e.className
-			}, r.a.createElement(u.default, {
+			}, r.a.createElement(p.default, {
 				onClick: e.sendEventWithName("modqueue_sort_newest"),
-				to: Object(c.a)(`${e.origin}${e.currentPage.url}`, ["after", "before", "page", "sort"])
-			}, r.a.createElement(f, {
+				to: Object(h.a)(`${e.origin}${e.currentPage.url}`, ["after", "before", "page", "sort"])
+			}, r.a.createElement(C, {
 				displayText: n.fbt._("Newest first", null, {
 					hk: "4buqk8"
 				}),
 				isSelected: !e.postSort
-			})), r.a.createElement(u.default, {
+			})), r.a.createElement(p.default, {
 				onClick: e.sendEventWithName("modqueue_sort_oldest"),
-				to: Object(d.a)(Object(c.a)(`${e.origin}${e.currentPage.url}`, ["after", "before", "page"]), {
+				to: Object(d.a)(Object(h.a)(`${e.origin}${e.currentPage.url}`, ["after", "before", "page"]), {
 					sort: i.OldestFirst
 				})
-			}, r.a.createElement(f, {
+			}, r.a.createElement(C, {
 				displayText: n.fbt._("Oldest first", null, {
 					hk: "1x9Jdr"
 				}),
 				isSelected: e.postSort === i.OldestFirst
-			})), r.a.createElement(u.default, {
+			})), [c.wb.Modqueue, c.wb.Reports].includes(e.currentPage.urlParams.pageName) && r.a.createElement(p.default, {
 				onClick: e.sendEventWithName("modqueue_sort_most_reports"),
-				to: Object(d.a)(Object(c.a)(`${e.origin}${e.currentPage.url}`, ["after", "before", "page"]), {
+				to: Object(d.a)(Object(h.a)(`${e.origin}${e.currentPage.url}`, ["after", "before", "page"]), {
 					sort: i.MostReportedFirst
 				})
-			}, r.a.createElement(f, {
+			}, r.a.createElement(C, {
 				displayText: n.fbt._("Most reported first", null, {
 					hk: "2ac4Mt"
 				}),
@@ -2517,4 +2518,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.e2a7d34e8242cb12ef93.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.4b158809d4b8e982f86c.js.map

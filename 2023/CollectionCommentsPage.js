@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.0e29cf0e4cfc23e82ead.js
-// Retrieved at 1/5/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.402fb2dad845d5a0ea50.js
+// Retrieved at 1/9/2023, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -3660,7 +3660,7 @@
 					className: E.a.postDescription
 				}, d.a.createElement("div", null, d.a.createElement("div", {
 					className: E.a.title
-				}, u), k && d.a.createElement(v.b, {
+				}, u), k && d.a.createElement(v.c, {
 					isFlairFilter: !0,
 					flair: {
 						type: y.f.Nsfw,
@@ -3737,7 +3737,7 @@
 					hk: "3QAYMS"
 				}))), d.a.createElement("div", {
 					className: Object(n.a)(E.a.title, E.a.crosspostTitle)
-				}, u && d.a.createElement(v.b, {
+				}, u && d.a.createElement(v.c, {
 					isFlairFilter: !0,
 					flair: {
 						type: y.f.Nsfw,
@@ -3875,7 +3875,7 @@
 					className: E.a.lockupText
 				}, d.a.createElement("span", {
 					className: E.a.subredditName
-				}, "r/", r), " ", j && d.a.createElement(v.b, {
+				}, "r/", r), " ", j && d.a.createElement(v.c, {
 					isFlairFilter: !0,
 					flair: {
 						type: y.f.Nsfw,
@@ -7597,7 +7597,7 @@
 					_1: "1 member"
 				}, [n.fbt._plural(e.subscribers, "number")], {
 					hk: "6i1wh"
-				})), e.isNSFW && o.a.createElement(l.b, {
+				})), e.isNSFW && o.a.createElement(l.c, {
 					className: E.a.nsfwFlair,
 					flair: {
 						type: _.f.Nsfw,
@@ -7954,7 +7954,7 @@
 					subredditOrProfile: i
 				}), c.a.createElement("span", {
 					className: U.a.subredditName
-				}, i && `r/${i.name}`), z >= 0 && c.a.createElement(I.b, {
+				}, i && `r/${i.name}`), z >= 0 && c.a.createElement(I.c, {
 					flair: s.flair[z]
 				}))), v && Object(k.a)(v.url) && c.a.createElement("div", {
 					className: U.a.verticalPostPreviewThumbnail
@@ -7975,7 +7975,7 @@
 					subredditOrProfile: i
 				}), c.a.createElement("span", {
 					className: U.a.subredditName
-				}, i && `r/${i.name}`), z >= 0 && c.a.createElement(I.b, {
+				}, i && `r/${i.name}`), z >= 0 && c.a.createElement(I.c, {
 					flair: s.flair[z]
 				})), c.a.createElement("div", {
 					className: Object(E.a)(U.a.postTitle, {
@@ -8689,7 +8689,7 @@
 			const fe = u.a.a("ExternalLink", xe.a),
 				ve = u.a.div("ModeratorListItem", xe.a),
 				_e = u.a.div("Username", xe.a),
-				ye = u.a.wrapped(me.b, "FlairComponent", xe.a),
+				ye = u.a.wrapped(me.c, "FlairComponent", xe.a),
 				Ce = e => e.authorFlairType === be.f.Richtext ? {
 					backgroundColor: e.authorFlairBackgroundColor,
 					richtext: e.authorFlairRichText,
@@ -11326,4 +11326,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.0e29cf0e4cfc23e82ead.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.402fb2dad845d5a0ea50.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.656eec686b4721801a80.js
-// Retrieved at 1/5/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.a953e127152fe2f007b0.js
+// Retrieved at 1/9/2023, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3461,7 +3461,7 @@
 					tooltipType: M ? v.f.Lightbox : void 0
 				})), c && !Object(O.o)(c) && r.a.createElement("span", {
 					className: ie.a.userFlairLine
-				}, r.a.createElement(h.b, {
+				}, r.a.createElement(h.c, {
 					className: ie.a.flair,
 					flair: c,
 					forceSmallEmojis: !0
@@ -3487,7 +3487,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const ge = c.a.wrapped(h.b, "RightPositionedAuthorFlair", xe.a),
+			const ge = c.a.wrapped(h.c, "RightPositionedAuthorFlair", xe.a),
 				Oe = c.a.span("DeletedText", xe.a),
 				_e = c.a.wrapped(g.a, "MetaSeparator", xe.a),
 				Ee = Object(i.b)(() => Object(a.c)({
@@ -3592,7 +3592,7 @@
 						[xe.a.hasBadges]: O
 					}),
 					"data-testid": "comment-top-meta"
-				}, p && W && r.a.createElement(h.b, {
+				}, p && W && r.a.createElement(h.c, {
 					flair: p,
 					forceSmallEmojis: u
 				}), !Object(j.f)(i) && r.a.createElement(b.b, {
@@ -7995,7 +7995,7 @@
 		"./src/reddit/pages/ModQueuePages/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "select", (function() {
-				return Y
+				return $
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./node_modules/lodash/fromPairs.js"),
@@ -8025,116 +8025,122 @@
 				S = n("./node_modules/lodash/omit.js"),
 				w = n.n(S),
 				I = n("./src/lib/addQueryParams/index.ts"),
-				M = n("./src/reddit/controls/InternalLink/index.tsx"),
-				N = n("./src/reddit/pages/ModQueuePages/index.m.less"),
-				T = n.n(N);
-			const R = Object(l.c)({
+				M = n("./src/lib/constants/index.ts"),
+				N = n("./src/reddit/controls/InternalLink/index.tsx"),
+				T = n("./src/reddit/components/ModQueueList/PostSortDropdown.tsx"),
+				R = n("./src/reddit/pages/ModQueuePages/index.m.less"),
+				A = n.n(R);
+			const P = Object(l.c)({
 				currentPage: e => e.platform.currentPage
 			});
-			var A = Object(c.b)(R)(e => d.a.createElement(M.default, {
-				className: Object(y.a)(T.a.navChild, {
-					[T.a.mIsActive]: e.isActive
-				}),
-				to: Object(I.a)(`/r/mod/about/${e.pathName}`, w()(e.currentPage.queryParams, ["after", "before", "page"]))
-			}, e.title));
-			var P = e => d.a.createElement("div", {
-					className: T.a.navContainer
+			var L = Object(c.b)(P)(e => {
+				const t = e.currentPage.queryParams.sort === T.a.MostReportedFirst && ![M.wb.Modqueue, M.wb.Reports].includes(e.pathName),
+					n = w()(e.currentPage.queryParams, t ? ["after", "before", "page", "sort"] : ["after", "before", "page"]);
+				return d.a.createElement(N.default, {
+					className: Object(y.a)(A.a.navChild, {
+						[A.a.mIsActive]: e.isActive
+					}),
+					to: Object(I.a)(`/r/mod/about/${e.pathName}`, n)
+				}, e.title)
+			});
+			var F = e => d.a.createElement("div", {
+					className: A.a.navContainer
 				}, d.a.createElement("div", {
-					className: Object(y.a)(T.a.innerContainer, {
-						[T.a.mDisableFullScreen]: e.disableFullscreen
+					className: Object(y.a)(A.a.innerContainer, {
+						[A.a.mDisableFullScreen]: e.disableFullscreen
 					})
 				}, d.a.createElement("h1", {
-					className: T.a.title
+					className: A.a.title
 				}, k.fbt._("Moderation", null, {
 					hk: "ldaHk"
-				})), d.a.createElement(A, {
+				})), d.a.createElement(L, {
 					title: k.fbt._("Queue", null, {
 						hk: "2oFkyk"
 					}),
 					isActive: "modqueue" === e.pageName,
 					pathName: "modqueue"
-				}), d.a.createElement(A, {
+				}), d.a.createElement(L, {
 					title: k.fbt._("Reports", null, {
 						hk: "4ea70R"
 					}),
 					isActive: "reports" === e.pageName,
 					pathName: "reports"
-				}), d.a.createElement(A, {
+				}), d.a.createElement(L, {
 					title: k.fbt._("Spam", null, {
 						hk: "Ho2UJ"
 					}),
 					isActive: "spam" === e.pageName,
 					pathName: "spam"
-				}), d.a.createElement(A, {
+				}), d.a.createElement(L, {
 					title: k.fbt._("Edited", null, {
 						hk: "40RqNB"
 					}),
 					isActive: "edited" === e.pageName,
 					pathName: "edited"
-				}), d.a.createElement(A, {
+				}), d.a.createElement(L, {
 					title: k.fbt._("Unmoderated", null, {
 						hk: "2YBI6E"
 					}),
 					isActive: "unmoderated" === e.pageName,
 					pathName: "unmoderated"
 				}))),
-				L = n("./src/reddit/components/ModQueueActivitySummaryCards/async.ts"),
-				F = n("./src/reddit/components/SidebarSpacer/index.tsx"),
-				B = n("./src/config.ts"),
-				D = n("./src/lib/lessComponent.tsx"),
-				U = n("./src/lib/opener/index.ts"),
-				H = n("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
-				W = n("./src/reddit/components/Widgets/ModSupportLinks/index.m.less"),
-				V = n.n(W);
-			const q = D.a.a("ExternalLink", V.a),
-				G = D.a.wrapped(M.default, "InternalLink", V.a);
-			var J = () => d.a.createElement(H.a, {
+				B = n("./src/reddit/components/ModQueueActivitySummaryCards/async.ts"),
+				D = n("./src/reddit/components/SidebarSpacer/index.tsx"),
+				U = n("./src/config.ts"),
+				H = n("./src/lib/lessComponent.tsx"),
+				W = n("./src/lib/opener/index.ts"),
+				V = n("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
+				q = n("./src/reddit/components/Widgets/ModSupportLinks/index.m.less"),
+				G = n.n(q);
+			const J = H.a.a("ExternalLink", G.a),
+				Q = H.a.wrapped(N.default, "InternalLink", G.a);
+			var K = () => d.a.createElement(V.a, {
 				title: k.fbt._("Moderator resources", null, {
 					hk: "1i4sLY"
 				}),
 				redditStyle: !0
-			}, d.a.createElement(q, {
-				href: B.a.redditModHelpUrl,
-				rel: U.c,
-				target: U.d.BLANK
+			}, d.a.createElement(J, {
+				href: U.a.redditModHelpUrl,
+				rel: W.c,
+				target: W.d.BLANK
 			}, k.fbt._("Mod help center", null, {
 				hk: "1LSJPB"
-			})), d.a.createElement(q, {
-				href: `${B.a.redditUrl}/help/healthycommunities/`,
-				rel: U.c,
-				target: U.d.BLANK
+			})), d.a.createElement(J, {
+				href: `${U.a.redditUrl}/help/healthycommunities/`,
+				rel: W.c,
+				target: W.d.BLANK
 			}, k.fbt._("Moderator code of conduct", null, {
 				hk: "259o41"
-			})), d.a.createElement(G, {
+			})), d.a.createElement(Q, {
 				to: "/r/modsupport",
-				rel: U.c,
-				target: U.d.BLANK
-			}, "r/modsupport"), d.a.createElement(q, {
-				href: `${B.a.redditHelpUrl}/hc/en-us/requests/new`,
-				rel: U.c,
-				target: U.d.BLANK
+				rel: W.c,
+				target: W.d.BLANK
+			}, "r/modsupport"), d.a.createElement(J, {
+				href: `${U.a.redditHelpUrl}/hc/en-us/requests/new`,
+				rel: W.c,
+				target: W.d.BLANK
 			}, k.fbt._("Contact Reddit", null, {
 				hk: "43QJTq"
 			})));
-			var Q = e => d.a.createElement("div", {
-				className: e.isRealtimeMQUpdatesExperimentEnabled ? void 0 : T.a.sidebar
-			}, e.isRealtimeMQUpdatesExperimentEnabled && d.a.createElement(L.b, null), e.subredditOrProfileUrl && d.a.createElement(F.a, null, d.a.createElement(H.a, {
+			var z = e => d.a.createElement("div", {
+				className: e.isRealtimeMQUpdatesExperimentEnabled ? void 0 : A.a.sidebar
+			}, e.isRealtimeMQUpdatesExperimentEnabled && d.a.createElement(B.b, null), e.subredditOrProfileUrl && d.a.createElement(D.a, null, d.a.createElement(V.a, {
 				title: k.fbt._("Moderation", null, {
 					hk: "K4118"
 				})
-			}, d.a.createElement(q, {
+			}, d.a.createElement(J, {
 				href: `https://www.reddit.com/${e.subredditOrProfileUrl}/about/log/`,
 				target: "_blank"
 			}, k.fbt._("Moderation Log", null, {
 				hk: "4CyDRz"
-			})), d.a.createElement(q, {
+			})), d.a.createElement(J, {
 				href: `https://www.reddit.com/${e.subredditOrProfileUrl}/wiki/config/automoderator`,
 				target: "_blank"
 			}, k.fbt._("Automoderator Config", null, {
 				hk: "2GBjtX"
-			})))), d.a.createElement(F.a, null, d.a.createElement(J, null)));
-			const K = Object(g.v)(),
-				z = Object(l.c)({
+			})))), d.a.createElement(D.a, null, d.a.createElement(K, null)));
+			const X = Object(g.v)(),
+				Y = Object(l.c)({
 					queryParams: (e, t) => {
 						let {
 							location: n
@@ -8142,7 +8148,7 @@
 						return o()([...Object(m.a)(n.search)])
 					}
 				}),
-				X = Object(l.c)({
+				Z = Object(l.c)({
 					queryParams: (e, t) => {
 						let {
 							location: n
@@ -8165,7 +8171,7 @@
 						}))
 					})
 				}),
-				Y = Object(l.a)(z, g.U, j.o, (e, t) => {
+				$ = Object(l.a)(Y, g.U, j.o, (e, t) => {
 					let {
 						match: n
 					} = t;
@@ -8209,12 +8215,12 @@
 						isRealtimeMQUpdatesExperimentEnabled: o
 					}
 				}),
-				Z = Object(c.b)(X, e => ({
+				ee = Object(c.b)(Z, e => ({
 					handleRealtimeUpdates: i()(t => {
 						e(Object(b.a)(t.subscribe.data.subredditID)), e(Object(b.c)(t))
 					}, 1e3)
 				}));
-			class $ extends d.a.Component {
+			class te extends d.a.Component {
 				constructor() {
 					super(...arguments), this.sendEventWithName = e => () => this.props.sendEvent(t => ({
 						source: e.includes("modqueue_sort") ? "moderator" : "bulk_mod_action",
@@ -8236,7 +8242,7 @@
 						className: e,
 						fitPageToContent: !0,
 						disableFullscreen: n === v.g.Large,
-						navBar: d.a.createElement(P, {
+						navBar: d.a.createElement(F, {
 							disableFullscreen: n === v.g.Large,
 							pageName: b
 						}),
@@ -8260,7 +8266,7 @@
 							sendEventWithName: this.sendEventWithName,
 							subredditName: i
 						})]),
-						sidebar: d.a.createElement(Q, {
+						sidebar: d.a.createElement(z, {
 							subredditOrProfileUrl: x,
 							isRealtimeMQUpdatesExperimentEnabled: s
 						})
@@ -8273,7 +8279,7 @@
 					})))
 				}
 			}
-			t.default = K(Z(Object(x.c)($)))
+			t.default = X(ee(Object(x.c)(te)))
 		},
 		"./src/reddit/reducers/features/modActivitySummaries/index.ts": function(e, t, n) {
 			"use strict";
@@ -8467,4 +8473,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.656eec686b4721801a80.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.a953e127152fe2f007b0.js.map

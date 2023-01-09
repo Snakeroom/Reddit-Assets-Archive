@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.098a507d833fb115ad62.js
-// Retrieved at 1/5/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.f21c15befb1467c10d2b.js
+// Retrieved at 1/9/2023, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1962,7 +1962,7 @@
 				C = Object(d.c)({
 					restrictions: h.q
 				}),
-				v = e => i.a.createElement(i.a.Fragment, null, i.a.createElement(a.b, {
+				v = e => i.a.createElement(i.a.Fragment, null, i.a.createElement(a.c, {
 					flair: {
 						type: m.f.Nsfw,
 						text: "nsfw"
@@ -2293,7 +2293,7 @@
 					userId: s
 				})), (null == p ? void 0 : p.applied) && p.displaySettings.isUserEnabled && i.a.createElement("div", {
 					className: b.a.flairPreviewSecondLine
-				}, i.a.createElement(c.b, {
+				}, i.a.createElement(c.c, {
 					className: b.a.userFlair,
 					flair: p.applied,
 					forceSmallEmojis: !0
@@ -2330,11 +2330,13 @@
 		},
 		"./src/reddit/components/Flair/index.tsx": function(e, t, n) {
 			"use strict";
-			n.d(t, "c", (function() {
+			n.d(t, "d", (function() {
 				return U
-			})), n.d(t, "a", (function() {
-				return H
 			})), n.d(t, "b", (function() {
+				return H
+			})), n.d(t, "a", (function() {
+				return V
+			})), n.d(t, "c", (function() {
 				return W
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -6067,4 +6069,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.098a507d833fb115ad62.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.f21c15befb1467c10d2b.js.map

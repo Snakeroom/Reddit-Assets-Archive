@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.89ebe543629f4e1e3732.js
-// Retrieved at 1/5/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.f7220ed20a9925be5a99.js
+// Retrieved at 1/9/2023, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, s) {
@@ -2154,11 +2154,13 @@
 		},
 		"./src/reddit/components/Flair/index.tsx": function(e, t, s) {
 			"use strict";
-			s.d(t, "c", (function() {
+			s.d(t, "d", (function() {
 				return V
-			})), s.d(t, "a", (function() {
-				return G
 			})), s.d(t, "b", (function() {
+				return G
+			})), s.d(t, "a", (function() {
+				return W
+			})), s.d(t, "c", (function() {
 				return H
 			}));
 			var r = s("./node_modules/fbt/lib/FbtPublic.js"),
@@ -2534,7 +2536,7 @@
 							d = `/r/${p}/`,
 							h = o ? () => o(e) : i.a,
 							g = s && (e.type === u.f.Richtext || e.type === u.f.Text);
-						return n.a.createElement(c.b, {
+						return n.a.createElement(c.c, {
 							className: g ? b.a.flairVariantInList : void 0,
 							isFlairFilter: s,
 							key: O(e),
@@ -4142,4 +4144,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.89ebe543629f4e1e3732.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.f7220ed20a9925be5a99.js.map

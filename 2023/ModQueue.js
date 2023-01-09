@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.acb372cd3d1c6338fc07.js
-// Retrieved at 1/5/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.88061633523662da4954.js
+// Retrieved at 1/9/2023, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, o) {
@@ -603,8 +603,8 @@
 				D = o("./src/reddit/models/Toast/index.ts"),
 				T = o("./src/reddit/selectors/modQueue.ts"),
 				F = o("./src/reddit/selectors/subreddit.ts"),
-				Q = o("./src/reddit/selectors/telemetry.ts"),
-				q = o("./src/telemetry/index.ts"),
+				q = o("./src/reddit/selectors/telemetry.ts"),
+				Q = o("./src/telemetry/index.ts"),
 				U = o("./src/lib/initializeClient/installReducer.ts"),
 				B = o("./src/reddit/reducers/features/modActivitySummaries/index.ts"),
 				G = o("./node_modules/redux/es/redux.js"),
@@ -824,38 +824,38 @@
 						O = m.user.account && m.user.account.displayText;
 					Object(b.d)(b.a.ModQueue);
 					const j = Object(b.c)(b.a.ModQueue);
-					Object(q.a)({
+					Object(Q.a)({
 						source: "bulk_mod_action_menu",
 						action: "click",
 						noun: e,
-						...Q.o(m),
-						actionInfo: Q.d(m, {
+						...q.o(m),
+						actionInfo: q.d(m, {
 							count: f.length,
 							paneName: m.platform.currentPage ? m.platform.currentPage.urlParams.pageName : void 0
 						}),
-						screen: Q.cb(m),
+						screen: q.cb(m),
 						correlationId: j
 					});
 					for (let t = 0; t < f.length; t++) {
 						const o = f[t];
 						let s = e;
-						[L.a.Approve, L.a.Remove, L.a.Spam].includes(e) && (Object(v.a)(o) ? s += "_link" : s += "_comment"), Object(q.a)({
+						[L.a.Approve, L.a.Remove, L.a.Spam].includes(e) && (Object(v.a)(o) ? s += "_link" : s += "_comment"), Object(Q.a)({
 							source: "bulk_mod_action",
 							action: "click",
 							noun: s,
-							...Q.o(m),
-							actionInfo: Q.d(m, {
+							...q.o(m),
+							actionInfo: q.d(m, {
 								count: f.length,
 								paneName: m.platform.currentPage ? m.platform.currentPage.urlParams.pageName : void 0
 							}),
-							comment: Q.h({
+							comment: q.h({
 								state: m,
 								commentId: o
 							}),
-							post: Q.K(m, o),
-							profile: Q.V(m, o),
-							screen: Q.cb(m),
-							subreddit: Q.ob(m, o),
+							post: q.K(m, o),
+							profile: q.V(m, o),
+							screen: q.cb(m),
+							subreddit: q.ob(m, o),
 							correlationId: j
 						})
 					}
@@ -1305,11 +1305,11 @@
 				D = o("./src/reddit/constants/modals.ts"),
 				T = o("./src/lib/makeApiRequest/index.ts"),
 				F = o("./src/lib/omitHeaders/index.ts"),
-				Q = o("./src/reddit/constants/headers.ts"),
-				q = o("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
+				q = o("./src/reddit/constants/headers.ts"),
+				Q = o("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
 				U = o("./src/reddit/models/RichTextJson/addRTJParam.ts");
-			const B = (e, t) => Object(T.a)(Object(F.a)(e, [Q.a]), {
-					endpoint: Object(q.a)(`${e.apiUrl}/api/v1/modactions/removal_reasons/`),
+			const B = (e, t) => Object(T.a)(Object(F.a)(e, [q.a]), {
+					endpoint: Object(Q.a)(`${e.apiUrl}/api/v1/modactions/removal_reasons/`),
 					method: A.ob.POST,
 					type: "json",
 					data: {
@@ -1318,8 +1318,8 @@
 						mod_note: t.modNote
 					}
 				}),
-				G = (e, t, o) => Object(T.a)(Object(F.a)(e, [Q.a]), {
-					endpoint: Object(q.a)(Object(U.a)(`${e.apiUrl}/api/v1/modactions/removal_${o}_message/`)),
+				G = (e, t, o) => Object(T.a)(Object(F.a)(e, [q.a]), {
+					endpoint: Object(Q.a)(Object(U.a)(`${e.apiUrl}/api/v1/modactions/removal_${o}_message/`)),
 					method: A.ob.POST,
 					type: "json",
 					data: t
@@ -1347,7 +1347,7 @@
 					} = s;
 					const n = o().subreddits.models[e].name;
 					t(Z());
-					const d = await ((e, t) => Object(T.a)(Object(F.a)(e, [Q.a]), {
+					const d = await ((e, t) => Object(T.a)(Object(F.a)(e, [q.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons.json`,
 						method: A.ob.GET
 					}))(r(), n);
@@ -1361,8 +1361,8 @@
 					} = n;
 					const i = r().subreddits.models[e].name;
 					o(se());
-					const a = await ((e, t, o) => Object(T.a)(Object(F.a)(e, [Q.a]), {
-						endpoint: Object(q.a)(`${e.apiUrl}/api/v1/${t}/removal_reasons`),
+					const a = await ((e, t, o) => Object(T.a)(Object(F.a)(e, [q.a]), {
+						endpoint: Object(Q.a)(`${e.apiUrl}/api/v1/${t}/removal_reasons`),
 						method: A.ob.POST,
 						data: o
 					}))(d(), i, t);
@@ -1389,8 +1389,8 @@
 					} = n;
 					const i = r().subreddits.models[e].name;
 					o(ie());
-					const a = await ((e, t, o) => Object(T.a)(Object(F.a)(e, [Q.a]), {
-						endpoint: Object(q.a)(`${e.apiUrl}/api/v1/${t}/removal_reasons/${o.id}`),
+					const a = await ((e, t, o) => Object(T.a)(Object(F.a)(e, [q.a]), {
+						endpoint: Object(Q.a)(`${e.apiUrl}/api/v1/${t}/removal_reasons/${o.id}`),
 						method: A.ob.PUT,
 						data: {
 							message: o.message,
@@ -1412,8 +1412,8 @@
 					} = n;
 					const i = r().subreddits.models[e].name;
 					o(le());
-					const a = await ((e, t, o) => Object(T.a)(Object(F.a)(e, [Q.a]), {
-						endpoint: Object(q.a)(`${e.apiUrl}/api/v1/${t}/removal_reasons/${o}`),
+					const a = await ((e, t, o) => Object(T.a)(Object(F.a)(e, [q.a]), {
+						endpoint: Object(Q.a)(`${e.apiUrl}/api/v1/${t}/removal_reasons/${o}`),
 						method: A.ob.DELETE
 					}))(d(), i, t);
 					a.ok ? (o(me({
@@ -1594,48 +1594,49 @@
 				i = o("./node_modules/react-redux/es/index.js"),
 				a = o("./node_modules/reselect/es/index.js"),
 				c = o("./src/lib/addQueryParams/index.ts"),
-				u = o("./src/lib/filterQueryParams/index.ts"),
-				l = o("./src/lib/lessComponent.tsx"),
-				m = o("./src/reddit/controls/Dropdown/Row.tsx"),
-				b = o("./src/reddit/controls/InternalLink/index.tsx"),
-				p = o("./src/reddit/selectors/meta.ts"),
-				f = o("./src/reddit/components/ModQueueList/PostSortDropdown.m.less"),
-				O = o.n(f);
+				u = o("./src/lib/constants/index.ts"),
+				l = o("./src/lib/filterQueryParams/index.ts"),
+				m = o("./src/lib/lessComponent.tsx"),
+				b = o("./src/reddit/controls/Dropdown/Row.tsx"),
+				p = o("./src/reddit/controls/InternalLink/index.tsx"),
+				f = o("./src/reddit/selectors/meta.ts"),
+				O = o("./src/reddit/components/ModQueueList/PostSortDropdown.m.less"),
+				v = o.n(O);
 			! function(e) {
 				e.NewestFirst = "newest", e.OldestFirst = "oldest", e.MostReportedFirst = "most_reported"
 			}(s || (s = {}));
-			const v = l.a.wrapped(m.b, "Row", O.a),
-				j = Object(a.c)({
+			const j = m.a.wrapped(b.b, "Row", v.a),
+				h = Object(a.c)({
 					currentPage: e => e.platform.currentPage,
-					origin: p.l
+					origin: f.l
 				}),
-				h = Object(i.b)(j);
-			t.b = h(e => d.a.createElement("div", {
+				g = Object(i.b)(h);
+			t.b = g(e => d.a.createElement("div", {
 				className: e.className
-			}, d.a.createElement(b.default, {
+			}, d.a.createElement(p.default, {
 				onClick: e.sendEventWithName("modqueue_sort_newest"),
-				to: Object(u.a)(`${e.origin}${e.currentPage.url}`, ["after", "before", "page", "sort"])
-			}, d.a.createElement(v, {
+				to: Object(l.a)(`${e.origin}${e.currentPage.url}`, ["after", "before", "page", "sort"])
+			}, d.a.createElement(j, {
 				displayText: r.fbt._("Newest first", null, {
 					hk: "4buqk8"
 				}),
 				isSelected: !e.postSort
-			})), d.a.createElement(b.default, {
+			})), d.a.createElement(p.default, {
 				onClick: e.sendEventWithName("modqueue_sort_oldest"),
-				to: Object(c.a)(Object(u.a)(`${e.origin}${e.currentPage.url}`, ["after", "before", "page"]), {
+				to: Object(c.a)(Object(l.a)(`${e.origin}${e.currentPage.url}`, ["after", "before", "page"]), {
 					sort: s.OldestFirst
 				})
-			}, d.a.createElement(v, {
+			}, d.a.createElement(j, {
 				displayText: r.fbt._("Oldest first", null, {
 					hk: "1x9Jdr"
 				}),
 				isSelected: e.postSort === s.OldestFirst
-			})), d.a.createElement(b.default, {
+			})), [u.wb.Modqueue, u.wb.Reports].includes(e.currentPage.urlParams.pageName) && d.a.createElement(p.default, {
 				onClick: e.sendEventWithName("modqueue_sort_most_reports"),
-				to: Object(c.a)(Object(u.a)(`${e.origin}${e.currentPage.url}`, ["after", "before", "page"]), {
+				to: Object(c.a)(Object(l.a)(`${e.origin}${e.currentPage.url}`, ["after", "before", "page"]), {
 					sort: s.MostReportedFirst
 				})
-			}, d.a.createElement(v, {
+			}, d.a.createElement(j, {
 				displayText: r.fbt._("Most reported first", null, {
 					hk: "2ac4Mt"
 				}),
@@ -1945,4 +1946,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.acb372cd3d1c6338fc07.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.88061633523662da4954.js.map

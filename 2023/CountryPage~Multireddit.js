@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.a14f5c65bdcecf81fc1c.js
-// Retrieved at 1/5/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.e78f9f4bccc88bff0157.js
+// Retrieved at 1/9/2023, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2240,7 +2240,7 @@
 					_1: "1 member"
 				}, [r.fbt._plural(e.subscribers, "number")], {
 					hk: "6i1wh"
-				})), e.isNSFW && s.a.createElement(d.b, {
+				})), e.isNSFW && s.a.createElement(d.c, {
 					className: w.a.nsfwFlair,
 					flair: {
 						type: y.f.Nsfw,
@@ -2905,7 +2905,7 @@
 					className: Ce.a.header
 				}, a.a.createElement("h1", {
 					className: Ce.a.multiredditName
-				}, e.multireddit.displayText), e.multireddit.isNSFW && a.a.createElement(k.b, {
+				}, e.multireddit.displayText), e.multireddit.isNSFW && a.a.createElement(k.c, {
 					className: Ce.a.flair,
 					flair: {
 						type: M.f.Nsfw,
@@ -3161,4 +3161,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.a14f5c65bdcecf81fc1c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.e78f9f4bccc88bff0157.js.map

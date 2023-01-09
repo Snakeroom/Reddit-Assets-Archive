@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.0a0d775786dc94681ab0.js
-// Retrieved at 1/5/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.4eef7edc37285611090e.js
+// Retrieved at 1/9/2023, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -24002,7 +24002,7 @@
 					tooltipType: T ? g.f.Lightbox : void 0
 				})), c && !Object(x.o)(c) && o.a.createElement("span", {
 					className: ie.a.userFlairLine
-				}, o.a.createElement(f.b, {
+				}, o.a.createElement(f.c, {
 					className: ie.a.flair,
 					flair: c,
 					forceSmallEmojis: !0
@@ -24028,7 +24028,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const ve = c.a.wrapped(f.b, "RightPositionedAuthorFlair", _e.a),
+			const ve = c.a.wrapped(f.c, "RightPositionedAuthorFlair", _e.a),
 				xe = c.a.span("DeletedText", _e.a),
 				Oe = c.a.wrapped(v.a, "MetaSeparator", _e.a),
 				Ee = Object(i.b)(() => Object(a.c)({
@@ -24133,7 +24133,7 @@
 						[_e.a.hasBadges]: x
 					}),
 					"data-testid": "comment-top-meta"
-				}, p && G && o.a.createElement(f.b, {
+				}, p && G && o.a.createElement(f.c, {
 					flair: p,
 					forceSmallEmojis: m
 				}), !Object(y.f)(i) && o.a.createElement(b.b, {
@@ -30706,11 +30706,13 @@
 		},
 		"./src/reddit/components/Flair/index.tsx": function(e, t, n) {
 			"use strict";
-			n.d(t, "c", (function() {
+			n.d(t, "d", (function() {
 				return B
-			})), n.d(t, "a", (function() {
-				return q
 			})), n.d(t, "b", (function() {
+				return q
+			})), n.d(t, "a", (function() {
+				return W
+			})), n.d(t, "c", (function() {
 				return z
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -31086,7 +31088,7 @@
 							d = `/r/${p}/`,
 							h = o ? () => o(e) : r.a,
 							g = n && (e.type === u.f.Richtext || e.type === u.f.Text);
-						return i.a.createElement(c.b, {
+						return i.a.createElement(c.c, {
 							className: g ? b.a.flairVariantInList : void 0,
 							isFlairFilter: n,
 							key: _(e),
@@ -31160,7 +31162,7 @@
 				c = n.n(d);
 			const l = i.a.span("Placeholder", c.a),
 				u = i.a.div("SelectedFlair", c.a),
-				m = i.a.wrapped(a.b, "FlairComponent", c.a);
+				m = i.a.wrapped(a.c, "FlairComponent", c.a);
 			t.a = e => e.flair ? o.a.createElement(u, null, o.a.createElement(l, null, s.fbt._("{placeholder}", [s.fbt._param("placeholder", e.placeholderText)], {
 				hk: "4G6VRy"
 			})), o.a.createElement(m, {
@@ -31299,7 +31301,7 @@
 							showButton: !0,
 							tabIndex: r ? 0 : -1,
 							value: e.id
-						}, o.a.createElement(h.b, {
+						}, o.a.createElement(h.c, {
 							className: C.a.flairComponent,
 							flair: s,
 							forceSmallEmojis: !0
@@ -32574,7 +32576,7 @@
 					let {
 						flair: t
 					} = e;
-					return d.a.createElement(d.a.Fragment, null, d.a.createElement(Oe.b, {
+					return d.a.createElement(d.a.Fragment, null, d.a.createElement(Oe.c, {
 						flair: Object(M.c)(t),
 						forceSmallEmojis: !0
 					}), t.textEditable && d.a.createElement(J.a, {
@@ -32721,7 +32723,7 @@
 						sendHoverCardEvent: xe.a
 					}, t.username, d.a.createElement("div", {
 						className: ne.a.flairContainer
-					}, d.a.createElement(Oe.b, {
+					}, d.a.createElement(Oe.c, {
 						flair: s
 					})))), d.a.createElement("div", {
 						className: ne.a.flairDetails
@@ -44856,7 +44858,8 @@
 				contentRowMeta: "t6hD4d7F06TL2yv9vfp7h",
 				title: "_3Evplg8YGmH6GDFsdQ0_nE",
 				ownerName: "_215cUXwEuCE5hl0eYEIt_o",
-				ownerNameContainer: "_2yAEv_Vw_ItUYbNbAjpSsL"
+				ownerNameContainer: "_2yAEv_Vw_ItUYbNbAjpSsL",
+				flair: "hjSMaHLSFnG_4sOWtKODi"
 			}
 		},
 		"./src/reddit/components/RecurringPostList/RecurringPost/index.m.less": function(e, t, n) {
@@ -44874,7 +44877,7 @@
 		"./src/reddit/components/RecurringPostList/RecurringPost/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return A
+				return L
 			}));
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
@@ -44902,11 +44905,13 @@
 				h = n("./src/reddit/components/ScheduledPost/index.tsx"),
 				_ = n("./src/reddit/models/ScheduledPost/index.ts"),
 				g = n("./node_modules/reselect/es/index.js"),
-				v = n("./src/reddit/components/RecurringPostList/RecurringPost/ContentMeta/index.m.less"),
-				x = n.n(v);
+				v = n("./src/reddit/components/Flair/index.tsx"),
+				x = n("./src/reddit/models/Flair/index.ts"),
+				O = n("./src/reddit/components/RecurringPostList/RecurringPost/ContentMeta/index.m.less"),
+				E = n.n(O);
 			const {
-				fbt: O
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), E = Object(g.c)({
+				fbt: y
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), C = Object(g.c)({
 				media: (e, t) => {
 					let {
 						scheduledPost: n
@@ -44926,101 +44931,109 @@
 					}
 				}
 			});
-			var y = Object(o.b)(E)(e => {
+			var j = Object(o.b)(C)(e => {
 					const {
 						scheduledPost: t
 					} = e, {
 						isPostAsMetaMod: n,
 						owner: s
-					} = t, o = n ? l.m : Object(_.o)(s) ? s.name : void 0;
+					} = t, o = n ? l.m : Object(_.o)(s) ? s.name : void 0, i = e.scheduledPost.isNsfw ? x.f.Nsfw : e.scheduledPost.isSpoiler ? x.f.Spoiler : null, d = e.scheduledPost.isNsfw ? y._("nsfw", null, {
+						hk: "22s23h"
+					}) : e.scheduledPost.isSpoiler ? y._("spoiler", null, {
+						hk: "3hUbmo"
+					}) : null;
 					return r.a.createElement("div", {
-						className: Object(a.a)(x.a.contentRow, e.className)
+						className: Object(a.a)(E.a.contentRow, e.className)
 					}, r.a.createElement(f, {
 						post: e.media
 					}), r.a.createElement("div", {
-						className: x.a.contentRowMeta
+						className: E.a.contentRowMeta
 					}, r.a.createElement("div", {
-						className: x.a.title
-					}, e.scheduledPost.title), r.a.createElement("div", {
-						className: x.a.ownerNameContainer
+						className: E.a.title
+					}, e.scheduledPost.title, i && r.a.createElement(v.a, {
+						type: i,
+						text: d.toString(),
+						className: E.a.flair
+					})), r.a.createElement("div", {
+						className: E.a.ownerNameContainer
 					}, o && r.a.createElement("span", {
-						className: x.a.ownerName
-					}, O._("by {username}", [O._param("username", r.a.createElement(u.a, {
+						className: E.a.ownerName
+					}, y._("by {username}", [y._param("username", r.a.createElement(u.a, {
 						author: o,
 						isUnstyled: !0
 					}, `u/${o}`))], {
 						hk: "FAgpK"
 					})), e.children)))
 				}),
-				C = n("./src/reddit/components/ScheduledPost/OverflowMenu/withOverflowMenu.tsx");
-			var j = Object(C.a)(e => r.a.createElement(r.a.Fragment, null, e.renderOverflowMenu())),
-				k = n("./src/reddit/components/Settings/shared/Widgets.tsx"),
-				I = n("./src/reddit/helpers/scheduledPosts/index.ts"),
-				S = n("./src/reddit/helpers/trackers/scheduledPosts.ts"),
-				w = n("./src/reddit/icons/svgs/Pencil/index.tsx"),
-				T = n("./src/reddit/icons/svgs/Replay/index.tsx"),
-				N = n("./src/reddit/components/RecurringPostList/RecurringPost/index.m.less"),
-				P = n.n(N);
+				k = n("./src/reddit/components/ScheduledPost/OverflowMenu/withOverflowMenu.tsx");
+			var I = Object(k.a)(e => r.a.createElement(r.a.Fragment, null, e.renderOverflowMenu())),
+				S = n("./src/reddit/components/Settings/shared/Widgets.tsx"),
+				w = n("./src/reddit/helpers/scheduledPosts/index.ts"),
+				T = n("./src/reddit/helpers/trackers/scheduledPosts.ts"),
+				N = n("./src/reddit/icons/svgs/Pencil/index.tsx"),
+				P = n("./src/reddit/icons/svgs/Replay/index.tsx"),
+				R = n("./src/reddit/components/RecurringPostList/RecurringPost/index.m.less"),
+				A = n.n(R);
 			const {
-				fbt: R
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), A = "RECURRING_POSTS__EDIT", M = Object(o.b)(null, (e, t) => ({
+				fbt: M
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), L = "RECURRING_POSTS__EDIT", D = Object(o.b)(null, (e, t) => ({
 				editRecurringPostRequested: () => {
 					e(Object(c.c)({
 						id: t.item.id,
 						subredditId: t.item.subreddit.id
-					})), e((e, t) => Object(i.a)(Object(S.e)()(t()))), e(Object(d.i)(A))
+					})), e((e, t) => Object(i.a)(Object(T.e)()(t()))), e(Object(d.i)(L))
 				},
 				onOpenOverflow: () => {
-					e((e, t) => Object(i.a)(Object(S.h)(!0)(t())))
+					e((e, t) => Object(i.a)(Object(T.h)(!0)(t())))
 				},
 				onUpdateMetadata: n => e(Object(c.b)(n, t.item))
 			}));
-			class L extends r.a.PureComponent {
+			class F extends r.a.PureComponent {
 				render() {
 					const {
 						className: e,
 						item: t,
 						editRecurringPostRequested: n
-					} = this.props, s = Object(I.e)(t), o = t.state === _.f.FAILED, {
+					} = this.props, s = Object(w.e)(t), o = t.state === _.f.FAILED, {
 						owner: i
 					} = t, d = Object(_.o)(i) && i.prefixedName;
 					return r.a.createElement("div", {
-						className: Object(a.a)(e, P.a.container)
+						className: Object(a.a)(e, A.a.container)
 					}, o && r.a.createElement("div", {
-						className: P.a.failedStateIndicator
-					}, R._("Recurring post failed to submit. {Link: update recurring scheduled post} to reset", [R._param("Link: update recurring scheduled post", r.a.createElement(k.o, {
+						className: A.a.failedStateIndicator
+					}, M._("Recurring post failed to submit. {Link: update recurring scheduled post} to reset", [M._param("Link: update recurring scheduled post", r.a.createElement(S.o, {
 						onClick: n
 					}, "Update schedule"))], {
 						hk: "3Uitas"
 					})), r.a.createElement("div", {
-						className: P.a.metaRow
-					}, r.a.createElement(T.a, {
-						className: P.a.replayIcon
+						className: A.a.metaRow
+					}, r.a.createElement(P.a, {
+						className: A.a.replayIcon
 					}), r.a.createElement("div", {
-						className: P.a.metaRowText
+						className: A.a.metaRowText
 					}, r.a.createElement("div", {
-						className: P.a.recurrenceRules,
+						className: A.a.recurrenceRules,
 						title: s
-					}, s), r.a.createElement("div", null, R._("Scheduled by {=[post owner]}", [R._param("=[post owner]", r.a.createElement("span", {
-						className: P.a.parametricMetaData
-					}, R._("{post owner}", [R._param("post owner", d)], {
+					}, s), r.a.createElement("div", null, M._("Scheduled by {=[post owner]}", [M._param("=[post owner]", r.a.createElement("span", {
+						className: A.a.parametricMetaData
+					}, M._("{post owner}", [M._param("post owner", d)], {
 						hk: "25fi1G"
 					})))], {
 						hk: "36vTyl"
 					}))), r.a.createElement("button", {
 						onClick: n
-					}, r.a.createElement(w.a, {
-						className: P.a.pencilIcon
-					}))), r.a.createElement(y, {
+					}, r.a.createElement(N.a, {
+						className: A.a.pencilIcon
+					}))), r.a.createElement(j, {
 						scheduledPost: t
-					}, r.a.createElement(j, {
+					}, r.a.createElement(I, {
 						scheduledPost: t,
 						onUpdateMetadata: this.props.onUpdateMetadata,
 						onOpenOverflow: this.props.onOpenOverflow
 					})))
 				}
 			}
-			t.b = M(L)
+			t.b = D(F)
 		},
 		"./src/reddit/components/RecurringPostList/Thumbnail/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -77296,4 +77309,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.0a0d775786dc94681ab0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.4eef7edc37285611090e.js.map

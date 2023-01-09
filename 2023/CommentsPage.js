@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.20df3bb7dd6c14bcd4a4.js
-// Retrieved at 1/5/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.b20a5703297517a55b67.js
+// Retrieved at 1/9/2023, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "CollectionCommentsPage~SearchResults", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -12675,7 +12675,7 @@
 					tooltipType: T ? g.f.Lightbox : void 0
 				})), d && !Object(v.o)(d) && o.a.createElement("span", {
 					className: ie.a.userFlairLine
-				}, o.a.createElement(f.b, {
+				}, o.a.createElement(f.c, {
 					className: ie.a.flair,
 					flair: d,
 					forceSmallEmojis: !0
@@ -12701,7 +12701,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const _e = d.a.wrapped(f.b, "RightPositionedAuthorFlair", Ce.a),
+			const _e = d.a.wrapped(f.c, "RightPositionedAuthorFlair", Ce.a),
 				ve = d.a.span("DeletedText", Ce.a),
 				xe = d.a.wrapped(_.a, "MetaSeparator", Ce.a),
 				Oe = Object(i.b)(() => Object(a.c)({
@@ -12806,7 +12806,7 @@
 						[Ce.a.hasBadges]: v
 					}),
 					"data-testid": "comment-top-meta"
-				}, p && W && o.a.createElement(f.b, {
+				}, p && W && o.a.createElement(f.c, {
 					flair: p,
 					forceSmallEmojis: m
 				}), !Object(y.f)(i) && o.a.createElement(b.b, {
@@ -16529,11 +16529,13 @@
 		},
 		"./src/reddit/components/Flair/index.tsx": function(e, t, n) {
 			"use strict";
-			n.d(t, "c", (function() {
+			n.d(t, "d", (function() {
 				return U
-			})), n.d(t, "a", (function() {
-				return V
 			})), n.d(t, "b", (function() {
+				return V
+			})), n.d(t, "a", (function() {
+				return G
+			})), n.d(t, "c", (function() {
 				return q
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -16909,7 +16911,7 @@
 							c = `/r/${p}/`,
 							h = o ? () => o(e) : r.a,
 							g = n && (e.type === u.f.Richtext || e.type === u.f.Text);
-						return i.a.createElement(d.b, {
+						return i.a.createElement(d.c, {
 							className: g ? b.a.flairVariantInList : void 0,
 							isFlairFilter: n,
 							key: C(e),
@@ -16983,7 +16985,7 @@
 				d = n.n(c);
 			const l = i.a.span("Placeholder", d.a),
 				u = i.a.div("SelectedFlair", d.a),
-				m = i.a.wrapped(a.b, "FlairComponent", d.a);
+				m = i.a.wrapped(a.c, "FlairComponent", d.a);
 			t.a = e => e.flair ? o.a.createElement(u, null, o.a.createElement(l, null, s.fbt._("{placeholder}", [s.fbt._param("placeholder", e.placeholderText)], {
 				hk: "4G6VRy"
 			})), o.a.createElement(m, {
@@ -17122,7 +17124,7 @@
 							showButton: !0,
 							tabIndex: r ? 0 : -1,
 							value: e.id
-						}, o.a.createElement(h.b, {
+						}, o.a.createElement(h.c, {
 							className: E.a.flairComponent,
 							flair: s,
 							forceSmallEmojis: !0
@@ -18579,7 +18581,7 @@
 					className: E.a.postDescription
 				}, c.a.createElement("div", null, c.a.createElement("div", {
 					className: E.a.title
-				}, m), j && c.a.createElement(_.b, {
+				}, m), j && c.a.createElement(_.c, {
 					isFlairFilter: !0,
 					flair: {
 						type: x.f.Nsfw,
@@ -18656,7 +18658,7 @@
 					hk: "3QAYMS"
 				}))), c.a.createElement("div", {
 					className: Object(s.a)(E.a.title, E.a.crosspostTitle)
-				}, m && c.a.createElement(_.b, {
+				}, m && c.a.createElement(_.c, {
 					isFlairFilter: !0,
 					flair: {
 						type: x.f.Nsfw,
@@ -18794,7 +18796,7 @@
 					className: E.a.lockupText
 				}, c.a.createElement("span", {
 					className: E.a.subredditName
-				}, "r/", r), " ", k && c.a.createElement(_.b, {
+				}, "r/", r), " ", k && c.a.createElement(_.c, {
 					isFlairFilter: !0,
 					flair: {
 						type: x.f.Nsfw,
@@ -24752,7 +24754,7 @@
 					onClick: n
 				}, `u/${t.author}`)), t.authorFlair && i.a.createElement("div", {
 					className: J.a.flairContainer
-				}, i.a.createElement(L.b, {
+				}, i.a.createElement(L.c, {
 					flair: t.authorFlair,
 					forceSmallEmojis: !0
 				})), !t.isSponsored && i.a.createElement(i.a.Fragment, null, i.a.createElement("span", {
@@ -30407,7 +30409,7 @@
 					_1: "1 member"
 				}, [s.fbt._plural(e.subscribers, "number")], {
 					hk: "6i1wh"
-				})), e.isNSFW && o.a.createElement(l.b, {
+				})), e.isNSFW && o.a.createElement(l.c, {
 					className: E.a.nsfwFlair,
 					flair: {
 						type: v.f.Nsfw,
@@ -30604,7 +30606,7 @@
 						}),
 						onClick: () => null == r ? void 0 : r(Object(g.g)(i.flair)),
 						onMouseDown: s
-					}, o.a.createElement(u.b, E({}, i, {
+					}, o.a.createElement(u.c, E({}, i, {
 						className: y.a.Flair,
 						isFlairFilter: n,
 						forceSmallEmojis: !0
@@ -30949,7 +30951,7 @@
 					subredditOrProfile: i
 				}), d.a.createElement("span", {
 					className: V.a.subredditName
-				}, i && `r/${i.name}`), G >= 0 && d.a.createElement(w.b, {
+				}, i && `r/${i.name}`), G >= 0 && d.a.createElement(w.c, {
 					flair: n.flair[G]
 				}))), _ && Object(j.a)(_.url) && d.a.createElement("div", {
 					className: V.a.verticalPostPreviewThumbnail
@@ -30970,7 +30972,7 @@
 					subredditOrProfile: i
 				}), d.a.createElement("span", {
 					className: V.a.subredditName
-				}, i && `r/${i.name}`), G >= 0 && d.a.createElement(w.b, {
+				}, i && `r/${i.name}`), G >= 0 && d.a.createElement(w.c, {
 					flair: n.flair[G]
 				})), d.a.createElement("div", {
 					className: Object(E.a)(V.a.postTitle, {
@@ -31828,7 +31830,7 @@
 			const ge = m.a.a("ExternalLink", Ce.a),
 				_e = m.a.div("ModeratorListItem", Ce.a),
 				ve = m.a.div("Username", Ce.a),
-				xe = m.a.wrapped(ue.b, "FlairComponent", Ce.a),
+				xe = m.a.wrapped(ue.c, "FlairComponent", Ce.a),
 				Oe = e => e.authorFlairType === be.f.Richtext ? {
 					backgroundColor: e.authorFlairBackgroundColor,
 					richtext: e.authorFlairRichText,
@@ -48924,4 +48926,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.20df3bb7dd6c14bcd4a4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.b20a5703297517a55b67.js.map

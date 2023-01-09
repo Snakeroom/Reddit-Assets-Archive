@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.f02af6a71df256e87489.js
-// Retrieved at 1/5/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.8ea9b112f23a4c268d25.js
+// Retrieved at 1/9/2023, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -4623,7 +4623,7 @@
 				Es = n("./src/reddit/helpers/flair.ts"),
 				vs = n("./src/reddit/components/StructuredStyles/Forms/PostFlairWidgetEditor/FlairTemplateItem.m.less"),
 				xs = n.n(vs);
-			const _s = s.a.wrapped(fs.b, "FlairComponent", xs.a);
+			const _s = s.a.wrapped(fs.c, "FlairComponent", xs.a);
 			var Cs = e => {
 					const t = Object(Es.c)(e.flairTemplate);
 					return r.a.createElement(Fa.a, null, r.a.createElement(_s, {
@@ -9279,4 +9279,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.f02af6a71df256e87489.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.8ea9b112f23a4c268d25.js.map

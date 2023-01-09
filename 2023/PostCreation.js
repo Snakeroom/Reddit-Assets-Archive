@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.d05aaeced37b437cee2d.js
-// Retrieved at 1/5/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.e78a62947bfd51cff6c1.js
+// Retrieved at 1/9/2023, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit~StandalonePostPage", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -7379,11 +7379,13 @@
 		},
 		"./src/reddit/components/Flair/index.tsx": function(e, t, n) {
 			"use strict";
-			n.d(t, "c", (function() {
+			n.d(t, "d", (function() {
 				return U
-			})), n.d(t, "a", (function() {
-				return K
 			})), n.d(t, "b", (function() {
+				return K
+			})), n.d(t, "a", (function() {
+				return G
+			})), n.d(t, "c", (function() {
 				return z
 			}));
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -7759,7 +7761,7 @@
 							c = `/r/${p}/`,
 							f = s ? () => s(e) : r.a,
 							v = n && (e.type === u.f.Richtext || e.type === u.f.Text);
-						return i.a.createElement(d.b, {
+						return i.a.createElement(d.c, {
 							className: v ? h.a.flairVariantInList : void 0,
 							isFlairFilter: n,
 							key: g(e),
@@ -7833,7 +7835,7 @@
 				d = n.n(c);
 			const l = i.a.span("Placeholder", d.a),
 				u = i.a.div("SelectedFlair", d.a),
-				m = i.a.wrapped(a.b, "FlairComponent", d.a);
+				m = i.a.wrapped(a.c, "FlairComponent", d.a);
 			t.a = e => e.flair ? s.a.createElement(u, null, s.a.createElement(l, null, o.fbt._("{placeholder}", [o.fbt._param("placeholder", e.placeholderText)], {
 				hk: "4G6VRy"
 			})), s.a.createElement(m, {
@@ -7972,7 +7974,7 @@
 							showButton: !0,
 							tabIndex: r ? 0 : -1,
 							value: e.id
-						}, s.a.createElement(f.b, {
+						}, s.a.createElement(f.c, {
 							className: _.a.flairComponent,
 							flair: o,
 							forceSmallEmojis: !0
@@ -31454,7 +31456,7 @@
 					});
 					return t = t.replace(" ", "").replace(",", " ")
 				},
-				nn = Ge.a.wrapped(jt.b, "FlairComponent", $t.a),
+				nn = Ge.a.wrapped(jt.c, "FlairComponent", $t.a),
 				on = Ge.a.div("FlairTextWrapper", $t.a),
 				rn = Ge.a.wrapped(Qt.a, "ModifierRow", $t.a),
 				sn = Ut(Mt.ORIGINAL_CONTENT),
@@ -31700,7 +31702,7 @@
 							className: Object(p.a)(e.className, $t.a.FlairIcon)
 						}),
 						style: {
-							"--flairColor": k ? Object(jt.c)({
+							"--flairColor": k ? Object(jt.d)({
 								...this.props,
 								backgroundColor: j,
 								textColor: S
@@ -39781,4 +39783,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.d05aaeced37b437cee2d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.e78a62947bfd51cff6c1.js.map

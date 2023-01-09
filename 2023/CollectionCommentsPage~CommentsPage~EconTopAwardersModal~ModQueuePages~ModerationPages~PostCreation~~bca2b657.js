@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657.412bb7b0cc045e02f5f1.js
-// Retrieved at 1/5/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657.1f08167ab0efdeaf9c08.js
+// Retrieved at 1/9/2023, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -2578,7 +2578,7 @@
 						_e = ie && (se || !!xe),
 						Ne = o.a.createElement(o.a.Fragment, null, pe && Ae && o.a.createElement("div", {
 							className: ee.a.flairContainer
-						}, o.a.createElement(j.b, {
+						}, o.a.createElement(j.c, {
 							disabled: !fe,
 							flair: pe,
 							forceSmallEmojis: !0,
@@ -2618,7 +2618,7 @@
 							tooltipType: D
 						})), pe && !Ae && o.a.createElement("div", {
 							className: ee.a.flairContainer
-						}, o.a.createElement(j.b, {
+						}, o.a.createElement(j.c, {
 							disabled: !fe,
 							flair: pe,
 							forceSmallEmojis: !0,
@@ -3826,4 +3826,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657.412bb7b0cc045e02f5f1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657.1f08167ab0efdeaf9c08.js.map
