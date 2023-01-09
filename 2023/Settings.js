@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.b49769cca763394c112f.js
-// Retrieved at 1/5/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.994eaa3fa7fed1761579.js
+// Retrieved at 1/9/2023, 5:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -10821,12 +10821,18 @@
 							hk: "2WQFFp"
 						}),
 						add: e => {
-							n(e), T(Object(lo.d)())
+							const t = I.find(t => t.name === e),
+								s = t ? t.id : "";
+							n(e), T(Object(lo.a)({
+								subredditId: s
+							}))
 						},
 						remove: e => {
 							const t = I.find(t => t.name === e),
 								n = t ? t.id : "";
-							x(n, e), T(Object(lo.h)())
+							x(n, e), T(Object(lo.b)({
+								subredditId: n
+							}))
 						},
 						list: I,
 						widgetDataType: mo.b.subredditMuting,
@@ -12626,4 +12632,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.b49769cca763394c112f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.994eaa3fa7fed1761579.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.40a20c637e4494c69e9f.js
-// Retrieved at 1/9/2023, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.338369933461a944f240.js
+// Retrieved at 1/9/2023, 5:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -43401,29 +43401,27 @@
 					}))
 				}
 				render() {
-					var e;
 					const {
-						props: t
+						props: e
 					} = this, {
-						subredditName: n,
-						post: r,
-						pageLayer: o
-					} = t, a = r.belongsTo.id, d = "popular" === (null == o ? void 0 : o.urlParams.subredditName), c = "Frontpage" === (null === (e = null == o ? void 0 : o.routeMatch) || void 0 === e ? void 0 : e.route.chunk);
+						subredditName: t,
+						post: n
+					} = e, r = n.belongsTo.id;
 					return i.a.createElement("div", null, i.a.createElement(w.b, {
-						className: Object(m.a)(ve.a.overflowMenu, this.getOverflowMenuBreakpointClass(), t.className),
-						dropdownId: t.dropdownId,
-						isFixed: t.isFixed,
-						layout: t.layout,
+						className: Object(m.a)(ve.a.overflowMenu, this.getOverflowMenuBreakpointClass(), e.className),
+						dropdownId: e.dropdownId,
+						isFixed: e.isFixed,
+						layout: e.layout,
 						onClick: this.handleClickMenuButton
-					}, this.renderDropdownIcons()), t.reportFlowIsOpen && t.subredditOrProfile && t.hasSubredditRules && this.renderReportFlow(), this.state.isConfirmDeleteOpen && i.a.createElement(me, {
+					}, this.renderDropdownIcons()), e.reportFlowIsOpen && e.subredditOrProfile && e.hasSubredditRules && this.renderReportFlow(), this.state.isConfirmDeleteOpen && i.a.createElement(me, {
 						post: this.props.post,
 						toggleConfirmDelete: this.toggleDeleteConfirmation,
 						handleDeletePost: this.handleDeletePost
 					}), this.state.showMuteSubredditModal && i.a.createElement($.a, {
-						headerText: s.fbt._("Mute {name of subreddit to mute}", [s.fbt._param("name of subreddit to mute", `r/${n}`)], {
+						headerText: s.fbt._("Mute {name of subreddit to mute}", [s.fbt._param("name of subreddit to mute", `r/${t}`)], {
 							hk: "4eAU3R"
 						}),
-						modalBody: s.fbt._("You won't see posts from {name of subreddit to mute} in your feeds or recommmendations anymore.", [s.fbt._param("name of subreddit to mute", `r/${n}`)], {
+						modalBody: s.fbt._("You won't see posts from {name of subreddit to mute} in your feeds or recommmendations anymore.", [s.fbt._param("name of subreddit to mute", `r/${t}`)], {
 							hk: "1JNA6G"
 						}),
 						toggleModal: this.handleMuteModal,
@@ -43434,7 +43432,10 @@
 							hk: "If1yt"
 						}),
 						onConfirm: () => {
-							this.handleMuteModal(), t.onMuteClick(a, n), this.toggleHide(), c && this.props.sendEvent(Object(be.b)()), d && this.props.sendEvent(Object(be.c)())
+							this.handleMuteModal(), e.onMuteClick(r, t), this.toggleHide(), this.props.sendEvent(Object(be.a)({
+								subredditId: r,
+								postId: n.id
+							}))
 						},
 						withOverlay: !0
 					}))
@@ -64788,97 +64789,53 @@
 		},
 		"./src/reddit/helpers/trackers/subredditMuting.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "b", (function() {
+			n.d(t, "a", (function() {
 				return o
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "b", (function() {
 				return i
-			})), n.d(t, "d", (function() {
-				return a
-			})), n.d(t, "f", (function() {
-				return d
-			})), n.d(t, "c", (function() {
-				return c
-			})), n.d(t, "g", (function() {
-				return l
-			})), n.d(t, "a", (function() {
-				return u
-			})), n.d(t, "e", (function() {
-				return m
 			}));
 			var s = n("./src/reddit/selectors/telemetry.ts"),
 				r = n("./src/telemetry/models/Event.ts");
-			const o = () => e => ({
-					source: r.f.HomeFeed,
-					action: r.d.Click,
-					noun: r.e.MuteSubreddit,
-					targetUser: {
-						id: s.sb(e).id
-					},
-					...s.o(e)
-				}),
-				i = () => e => ({
-					source: r.f.UserPreferences,
-					action: r.d.Click,
-					noun: r.e.UnmuteSubreddit,
-					targetUser: {
-						id: s.sb(e).id
-					},
-					...s.o(e)
-				}),
-				a = () => e => ({
-					source: r.f.UserPreferences,
-					action: r.d.Click,
-					noun: r.e.MuteSubreddit,
-					targetUser: {
-						id: s.sb(e).id
-					},
-					...s.o(e)
-				}),
-				d = () => e => ({
-					source: r.f.CommunityNotificationsSettings,
-					action: r.d.Click,
-					noun: r.e.UnmuteSubreddit,
-					targetUser: {
-						id: s.sb(e).id
-					},
-					...s.o(e)
-				}),
-				c = () => e => ({
-					source: r.f.PopularFeed,
-					action: r.d.Click,
-					noun: r.e.MuteSubreddit,
-					targetUser: {
-						id: s.sb(e).id
-					},
-					...s.o(e)
-				}),
-				l = () => e => ({
-					source: r.f.SubredditIdBanner,
-					action: r.d.Click,
-					noun: r.e.UnmuteSubreddit,
-					targetUser: {
-						id: s.sb(e).id
-					},
-					...s.o(e)
-				}),
-				u = () => e => ({
-					source: r.f.AboutCommunityOverflow,
-					action: r.d.Click,
-					noun: r.e.MuteSubreddit,
-					targetUser: {
-						id: s.sb(e).id
-					},
-					...s.o(e)
-				}),
-				m = () => e => ({
-					source: r.f.AboutCommunityOverflow,
-					action: r.d.Click,
-					noun: r.e.UnmuteSubreddit,
-					targetUser: {
-						id: s.sb(e).id
-					},
-					...s.o(e)
-				})
+			const o = e => {
+					let {
+						subredditId: t,
+						postId: n
+					} = e;
+					return e => ({
+						source: r.f.SubredditMuting,
+						action: r.d.Mute,
+						noun: r.e.Subreddit,
+						subreddit: {
+							id: t
+						},
+						...s.o(e),
+						...n && {
+							post: {
+								id: n
+							}
+						}
+					})
+				},
+				i = e => {
+					let {
+						subredditId: t,
+						postId: n
+					} = e;
+					return e => ({
+						source: r.f.SubredditMuting,
+						action: r.d.Unmute,
+						noun: r.e.Subreddit,
+						subreddit: {
+							id: t
+						},
+						...s.o(e),
+						...n && {
+							post: {
+								id: n
+							}
+						}
+					})
+				}
 		},
 		"./src/reddit/helpers/trackers/userFlair.ts": function(e, t, n) {
 			"use strict";
@@ -77309,4 +77266,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.40a20c637e4494c69e9f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.338369933461a944f240.js.map

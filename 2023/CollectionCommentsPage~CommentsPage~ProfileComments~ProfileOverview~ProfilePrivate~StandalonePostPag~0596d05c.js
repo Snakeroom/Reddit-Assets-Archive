@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.3947cde4d58b474c357c.js
-// Retrieved at 1/5/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.f4d7a71e4e34f93f1afe.js
+// Retrieved at 1/9/2023, 5:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, s) {
@@ -4587,29 +4587,27 @@
 					}))
 				}
 				render() {
-					var e;
 					const {
-						props: t
+						props: e
 					} = this, {
-						subredditName: s,
-						post: n,
-						pageLayer: r
-					} = t, a = n.belongsTo.id, c = "popular" === (null == r ? void 0 : r.urlParams.subredditName), d = "Frontpage" === (null === (e = null == r ? void 0 : r.routeMatch) || void 0 === e ? void 0 : e.route.chunk);
+						subredditName: t,
+						post: s
+					} = e, n = s.belongsTo.id;
 					return i.a.createElement("div", null, i.a.createElement(P.b, {
-						className: Object(p.a)(Oe.a.overflowMenu, this.getOverflowMenuBreakpointClass(), t.className),
-						dropdownId: t.dropdownId,
-						isFixed: t.isFixed,
-						layout: t.layout,
+						className: Object(p.a)(Oe.a.overflowMenu, this.getOverflowMenuBreakpointClass(), e.className),
+						dropdownId: e.dropdownId,
+						isFixed: e.isFixed,
+						layout: e.layout,
 						onClick: this.handleClickMenuButton
-					}, this.renderDropdownIcons()), t.reportFlowIsOpen && t.subredditOrProfile && t.hasSubredditRules && this.renderReportFlow(), this.state.isConfirmDeleteOpen && i.a.createElement(pe, {
+					}, this.renderDropdownIcons()), e.reportFlowIsOpen && e.subredditOrProfile && e.hasSubredditRules && this.renderReportFlow(), this.state.isConfirmDeleteOpen && i.a.createElement(pe, {
 						post: this.props.post,
 						toggleConfirmDelete: this.toggleDeleteConfirmation,
 						handleDeletePost: this.handleDeletePost
 					}), this.state.showMuteSubredditModal && i.a.createElement($.a, {
-						headerText: o.fbt._("Mute {name of subreddit to mute}", [o.fbt._param("name of subreddit to mute", `r/${s}`)], {
+						headerText: o.fbt._("Mute {name of subreddit to mute}", [o.fbt._param("name of subreddit to mute", `r/${t}`)], {
 							hk: "4eAU3R"
 						}),
-						modalBody: o.fbt._("You won't see posts from {name of subreddit to mute} in your feeds or recommmendations anymore.", [o.fbt._param("name of subreddit to mute", `r/${s}`)], {
+						modalBody: o.fbt._("You won't see posts from {name of subreddit to mute} in your feeds or recommmendations anymore.", [o.fbt._param("name of subreddit to mute", `r/${t}`)], {
 							hk: "1JNA6G"
 						}),
 						toggleModal: this.handleMuteModal,
@@ -4620,7 +4618,10 @@
 							hk: "If1yt"
 						}),
 						onConfirm: () => {
-							this.handleMuteModal(), t.onMuteClick(a, s), this.toggleHide(), d && this.props.sendEvent(Object(be.b)()), c && this.props.sendEvent(Object(be.c)())
+							this.handleMuteModal(), e.onMuteClick(n, t), this.toggleHide(), this.props.sendEvent(Object(be.a)({
+								subredditId: n,
+								postId: s.id
+							}))
 						},
 						withOverlay: !0
 					}))
@@ -6406,4 +6407,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.3947cde4d58b474c357c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.f4d7a71e4e34f93f1afe.js.map

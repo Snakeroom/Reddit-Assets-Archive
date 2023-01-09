@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.04d2524aaf8ac7021c2b.js
-// Retrieved at 1/9/2023, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.8d5cebec939fff7e2d17.js
+// Retrieved at 1/9/2023, 5:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -7946,97 +7946,53 @@
 		},
 		"./src/reddit/helpers/trackers/subredditMuting.ts": function(e, t, s) {
 			"use strict";
-			s.d(t, "b", (function() {
+			s.d(t, "a", (function() {
 				return o
-			})), s.d(t, "h", (function() {
+			})), s.d(t, "b", (function() {
 				return i
-			})), s.d(t, "d", (function() {
-				return a
-			})), s.d(t, "f", (function() {
-				return c
-			})), s.d(t, "c", (function() {
-				return d
-			})), s.d(t, "g", (function() {
-				return l
-			})), s.d(t, "a", (function() {
-				return m
-			})), s.d(t, "e", (function() {
-				return u
 			}));
 			var n = s("./src/reddit/selectors/telemetry.ts"),
 				r = s("./src/telemetry/models/Event.ts");
-			const o = () => e => ({
-					source: r.f.HomeFeed,
-					action: r.d.Click,
-					noun: r.e.MuteSubreddit,
-					targetUser: {
-						id: n.sb(e).id
-					},
-					...n.o(e)
-				}),
-				i = () => e => ({
-					source: r.f.UserPreferences,
-					action: r.d.Click,
-					noun: r.e.UnmuteSubreddit,
-					targetUser: {
-						id: n.sb(e).id
-					},
-					...n.o(e)
-				}),
-				a = () => e => ({
-					source: r.f.UserPreferences,
-					action: r.d.Click,
-					noun: r.e.MuteSubreddit,
-					targetUser: {
-						id: n.sb(e).id
-					},
-					...n.o(e)
-				}),
-				c = () => e => ({
-					source: r.f.CommunityNotificationsSettings,
-					action: r.d.Click,
-					noun: r.e.UnmuteSubreddit,
-					targetUser: {
-						id: n.sb(e).id
-					},
-					...n.o(e)
-				}),
-				d = () => e => ({
-					source: r.f.PopularFeed,
-					action: r.d.Click,
-					noun: r.e.MuteSubreddit,
-					targetUser: {
-						id: n.sb(e).id
-					},
-					...n.o(e)
-				}),
-				l = () => e => ({
-					source: r.f.SubredditIdBanner,
-					action: r.d.Click,
-					noun: r.e.UnmuteSubreddit,
-					targetUser: {
-						id: n.sb(e).id
-					},
-					...n.o(e)
-				}),
-				m = () => e => ({
-					source: r.f.AboutCommunityOverflow,
-					action: r.d.Click,
-					noun: r.e.MuteSubreddit,
-					targetUser: {
-						id: n.sb(e).id
-					},
-					...n.o(e)
-				}),
-				u = () => e => ({
-					source: r.f.AboutCommunityOverflow,
-					action: r.d.Click,
-					noun: r.e.UnmuteSubreddit,
-					targetUser: {
-						id: n.sb(e).id
-					},
-					...n.o(e)
-				})
+			const o = e => {
+					let {
+						subredditId: t,
+						postId: s
+					} = e;
+					return e => ({
+						source: r.f.SubredditMuting,
+						action: r.d.Mute,
+						noun: r.e.Subreddit,
+						subreddit: {
+							id: t
+						},
+						...n.o(e),
+						...s && {
+							post: {
+								id: s
+							}
+						}
+					})
+				},
+				i = e => {
+					let {
+						subredditId: t,
+						postId: s
+					} = e;
+					return e => ({
+						source: r.f.SubredditMuting,
+						action: r.d.Unmute,
+						noun: r.e.Subreddit,
+						subreddit: {
+							id: t
+						},
+						...n.o(e),
+						...s && {
+							post: {
+								id: s
+							}
+						}
+					})
+				}
 		},
 		"./src/reddit/helpers/trackers/widgets.ts": function(e, t, s) {
 			"use strict";
@@ -8621,4 +8577,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.04d2524aaf8ac7021c2b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.8d5cebec939fff7e2d17.js.map

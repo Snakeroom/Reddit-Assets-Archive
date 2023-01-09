@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.b20a5703297517a55b67.js
-// Retrieved at 1/9/2023, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.d817d054e91557a8ec83.js
+// Retrieved at 1/9/2023, 5:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "CollectionCommentsPage~SearchResults", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -40201,97 +40201,53 @@
 		},
 		"./src/reddit/helpers/trackers/subredditMuting.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "b", (function() {
+			n.d(t, "a", (function() {
 				return o
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "b", (function() {
 				return i
-			})), n.d(t, "d", (function() {
-				return a
-			})), n.d(t, "f", (function() {
-				return c
-			})), n.d(t, "c", (function() {
-				return d
-			})), n.d(t, "g", (function() {
-				return l
-			})), n.d(t, "a", (function() {
-				return u
-			})), n.d(t, "e", (function() {
-				return m
 			}));
 			var s = n("./src/reddit/selectors/telemetry.ts"),
 				r = n("./src/telemetry/models/Event.ts");
-			const o = () => e => ({
-					source: r.f.HomeFeed,
-					action: r.d.Click,
-					noun: r.e.MuteSubreddit,
-					targetUser: {
-						id: s.sb(e).id
-					},
-					...s.o(e)
-				}),
-				i = () => e => ({
-					source: r.f.UserPreferences,
-					action: r.d.Click,
-					noun: r.e.UnmuteSubreddit,
-					targetUser: {
-						id: s.sb(e).id
-					},
-					...s.o(e)
-				}),
-				a = () => e => ({
-					source: r.f.UserPreferences,
-					action: r.d.Click,
-					noun: r.e.MuteSubreddit,
-					targetUser: {
-						id: s.sb(e).id
-					},
-					...s.o(e)
-				}),
-				c = () => e => ({
-					source: r.f.CommunityNotificationsSettings,
-					action: r.d.Click,
-					noun: r.e.UnmuteSubreddit,
-					targetUser: {
-						id: s.sb(e).id
-					},
-					...s.o(e)
-				}),
-				d = () => e => ({
-					source: r.f.PopularFeed,
-					action: r.d.Click,
-					noun: r.e.MuteSubreddit,
-					targetUser: {
-						id: s.sb(e).id
-					},
-					...s.o(e)
-				}),
-				l = () => e => ({
-					source: r.f.SubredditIdBanner,
-					action: r.d.Click,
-					noun: r.e.UnmuteSubreddit,
-					targetUser: {
-						id: s.sb(e).id
-					},
-					...s.o(e)
-				}),
-				u = () => e => ({
-					source: r.f.AboutCommunityOverflow,
-					action: r.d.Click,
-					noun: r.e.MuteSubreddit,
-					targetUser: {
-						id: s.sb(e).id
-					},
-					...s.o(e)
-				}),
-				m = () => e => ({
-					source: r.f.AboutCommunityOverflow,
-					action: r.d.Click,
-					noun: r.e.UnmuteSubreddit,
-					targetUser: {
-						id: s.sb(e).id
-					},
-					...s.o(e)
-				})
+			const o = e => {
+					let {
+						subredditId: t,
+						postId: n
+					} = e;
+					return e => ({
+						source: r.f.SubredditMuting,
+						action: r.d.Mute,
+						noun: r.e.Subreddit,
+						subreddit: {
+							id: t
+						},
+						...s.o(e),
+						...n && {
+							post: {
+								id: n
+							}
+						}
+					})
+				},
+				i = e => {
+					let {
+						subredditId: t,
+						postId: n
+					} = e;
+					return e => ({
+						source: r.f.SubredditMuting,
+						action: r.d.Unmute,
+						noun: r.e.Subreddit,
+						subreddit: {
+							id: t
+						},
+						...s.o(e),
+						...n && {
+							post: {
+								id: n
+							}
+						}
+					})
+				}
 		},
 		"./src/reddit/helpers/trackers/subredditWiki.ts": function(e, t, n) {
 			"use strict";
@@ -48926,4 +48882,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.b20a5703297517a55b67.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.d817d054e91557a8ec83.js.map

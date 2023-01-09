@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.68e65512189c9e150faf.js
-// Retrieved at 1/9/2023, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.59d99bbfc5db06ab37ac.js
+// Retrieved at 1/9/2023, 5:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -4975,19 +4975,19 @@
 				re = n("./src/reddit/featureFlags/index.ts"),
 				se = n("./src/reddit/helpers/getSubredditIcon/index.ts"),
 				oe = n("./src/reddit/constants/tracking.ts");
-			var ie = n("./src/reddit/hooks/useIntersectionObserver.ts"),
-				ae = n("./src/reddit/hooks/useWindowEvent.ts"),
-				ce = n("./src/reddit/selectors/experiments/antievil/index.tsx"),
-				de = n("./src/reddit/selectors/experiments/communityChat.ts"),
-				le = n("./src/reddit/selectors/experiments/joinOptimizations.ts"),
-				ue = n("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
-				me = n("./src/reddit/selectors/inlineSubredditEditing.ts"),
-				pe = n("./src/reddit/selectors/subreddit.ts"),
-				be = n("./src/reddit/selectors/user.ts"),
-				fe = n("./src/reddit/components/CommunityIdTopBar/index.m.less"),
-				he = n.n(fe),
-				ge = n("./src/reddit/icons/svgs/VideoMute/index.tsx"),
-				_e = n("./src/reddit/helpers/trackers/subredditMuting.ts"),
+			var ie = n("./src/reddit/helpers/trackers/subredditMuting.ts"),
+				ae = n("./src/reddit/hooks/useIntersectionObserver.ts"),
+				ce = n("./src/reddit/hooks/useWindowEvent.ts"),
+				de = n("./src/reddit/selectors/experiments/antievil/index.tsx"),
+				le = n("./src/reddit/selectors/experiments/communityChat.ts"),
+				ue = n("./src/reddit/selectors/experiments/joinOptimizations.ts"),
+				me = n("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
+				pe = n("./src/reddit/selectors/inlineSubredditEditing.ts"),
+				be = n("./src/reddit/selectors/subreddit.ts"),
+				fe = n("./src/reddit/selectors/user.ts"),
+				he = n("./src/reddit/components/CommunityIdTopBar/index.m.less"),
+				ge = n.n(he),
+				_e = n("./src/reddit/icons/svgs/VideoMute/index.tsx"),
 				ve = n("./src/reddit/components/CommunityIdTopBar/MuteButton/index.m.less"),
 				xe = n.n(ve);
 			const {
@@ -4996,14 +4996,11 @@
 				let {
 					onClickUnmute: t
 				} = e;
-				const n = Object(A.a)();
 				return s.a.createElement(P.t, {
 					priority: P.c.Plain,
 					className: xe.a.muteButton,
-					onClick: () => {
-						n(Object(_e.g)()), t()
-					}
-				}, s.a.createElement(ge.a, {
+					onClick: t
+				}, s.a.createElement(_e.a, {
 					className: xe.a.muteIcon
 				}), s.a.createElement("span", {
 					className: xe.a.muteDefault
@@ -5014,16 +5011,16 @@
 				}, ye._("Unmute", null, {
 					hk: "4qbgbm"
 				})))
-			}, Oe = d.a.img("SubredditIcon", he.a), Ce = Object(i.c)({
-				isNsfwBlurSubreddit: ue.e,
-				notificationLevel: pe.L,
-				isMuted: pe.K,
+			}, Oe = d.a.img("SubredditIcon", ge.a), Ce = Object(i.c)({
+				isNsfwBlurSubreddit: me.e,
+				notificationLevel: be.L,
+				isMuted: be.K,
 				spPollsEnabled: re.d.spPolls,
 				subredditInlineEditingEnabled: (e, t) => {
 					let {
 						subredditId: n
 					} = t;
-					return Object(me.a)(e, {
+					return Object(pe.a)(e, {
 						subredditId: n
 					})
 				},
@@ -5031,24 +5028,24 @@
 					let {
 						subredditId: n
 					} = t;
-					return !!n && Object(pe.S)(e, {
+					return !!n && Object(be.S)(e, {
 						subredditId: n
 					})
 				},
-				userId: be.k,
+				userId: fe.k,
 				userIsSubscriber: (e, t) => {
 					let {
 						subredditName: n
 					} = t;
 					const r = n;
-					return Object(pe.jb)(e, {
+					return Object(be.jb)(e, {
 						identifier: {
 							name: r,
 							type: "subreddit"
 						}
 					})
 				},
-				isCommunityMutingEnabled: ce.a,
+				isCommunityMutingEnabled: de.a,
 				widget: (e, t) => {
 					let {
 						subredditId: n
@@ -5057,7 +5054,7 @@
 						subredditId: n
 					}) : void 0
 				},
-				showCommunityChat: de.b
+				showCommunityChat: le.b
 			}), je = {
 				threshold: [.5, .001],
 				rootMargin: `${1-ee.f}px 0px 0px 0px`
@@ -5093,14 +5090,15 @@
 					n = e.subreddit ? e.subreddit.name : e.subredditName,
 					i = e.subreddit ? e.subreddit.url : e.subredditUrl,
 					c = e.subreddit ? e.subreddit.title : "",
-					d = Object(o.e)(le.b),
-					u = Object(o.e)(le.a),
+					d = Object(o.e)(ue.b),
+					u = Object(o.e)(ue.a),
 					m = d || u,
 					[p, b] = Object(r.useState)(!1),
 					f = Object(r.useRef)(null),
 					[h, g] = Object(r.useState)(),
 					[_, v] = Object(r.useState)(null),
-					x = Object(r.useCallback)((e => t => {
+					x = Object(A.a)(),
+					y = Object(r.useCallback)((e => t => {
 						t.forEach(t => {
 							const {
 								intersectionRatio: n
@@ -5108,74 +5106,74 @@
 							n >= .5 ? e(!1) : n <= .001 && e(!0)
 						})
 					})(b), []);
-				Object(ae.a)("resize", ((e, t, n) => () => {
+				Object(ce.a)("resize", ((e, t, n) => () => {
 					var r;
 					e(t && n ? null === (r = t.getBoundingClientRect()) || void 0 === r ? void 0 : r.height : void 0)
-				})(g, _, m)), Object(ie.a)(f, x, je);
-				const y = e.subreddit && Object(se.a)(e),
-					E = !!(e.theme && Object(l.a)(e).banner.showCommunityIcon && y),
-					O = n.charAt(0).toUpperCase() + n.slice(1),
-					C = !!e.subreddit && e.subredditInlineEditingEnabled,
-					j = Object(a.a)(he.a.SubredditIcon, he.a.editableIcon, {
-						[he.a.emptyEditableIcon]: !y
+				})(g, _, m)), Object(ae.a)(f, y, je);
+				const E = e.subreddit && Object(se.a)(e),
+					O = !!(e.theme && Object(l.a)(e).banner.showCommunityIcon && E),
+					C = n.charAt(0).toUpperCase() + n.slice(1),
+					j = !!e.subreddit && e.subredditInlineEditingEnabled,
+					I = Object(a.a)(ge.a.SubredditIcon, ge.a.editableIcon, {
+						[ge.a.emptyEditableIcon]: !E
 					}),
-					I = E ? s.a.createElement(J.a, {
-						className: j,
+					S = O ? s.a.createElement(J.a, {
+						className: I,
 						subreddit: e.subreddit,
-						iconUrl: y || void 0,
+						iconUrl: E || void 0,
 						inTopBar: !0
 					}) : s.a.createElement(R.a, {
-						className: he.a.DefaultIcon
+						className: ge.a.DefaultIcon
 					}),
-					S = E ? s.a.createElement(Oe, {
-						className: Object(a.a)(he.a.SubredditIconImg, {
-							[he.a.blur]: e.isNsfwBlurSubreddit
+					N = O ? s.a.createElement(Oe, {
+						className: Object(a.a)(ge.a.SubredditIconImg, {
+							[ge.a.blur]: e.isNsfwBlurSubreddit
 						}),
-						src: y || void 0
+						src: E || void 0
 					}) : s.a.createElement(R.a, {
-						className: Object(a.a)(he.a.DefaultIcon, {
-							[he.a.blur]: e.isNsfwBlurSubreddit
+						className: Object(a.a)(ge.a.DefaultIcon, {
+							[ge.a.blur]: e.isNsfwBlurSubreddit
 						})
 					}),
-					N = e.spPollsEnabled || e.tournamentsEnabled || e.widget && (e.widget.showWiki || e.widget.data.length > 0),
-					k = e.layout ? e.layout === te.g.Large ? "984px" : "100%" : "1086px",
-					w = e.isCommunityMutingEnabled && e.isMuted;
+					k = e.spPollsEnabled || e.tournamentsEnabled || e.widget && (e.widget.showWiki || e.widget.data.length > 0),
+					w = e.layout ? e.layout === te.g.Large ? "984px" : "100%" : "1086px",
+					T = e.isCommunityMutingEnabled && e.isMuted;
 				return s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
 					style: {
 						height: p ? void 0 : h
 					},
-					className: Object(a.a)(he.a.wrapper, {
-						[he.a.stickyWrapper]: m,
-						[he.a.isSticking]: p
+					className: Object(a.a)(ge.a.wrapper, {
+						[ge.a.stickyWrapper]: m,
+						[ge.a.isSticking]: p
 					})
 				}, s.a.createElement("div", {
-					className: he.a.container,
+					className: ge.a.container,
 					style: {
-						maxWidth: k
+						maxWidth: w
 					},
 					ref: m ? v : void 0
 				}, s.a.createElement("div", {
-					className: he.a.subredditMetaContainer
-				}, C ? I : S, s.a.createElement("div", {
-					className: Object(a.a)(he.a.textContainer, {
-						[he.a.textContainerNoIcon]: !E
+					className: ge.a.subredditMetaContainer
+				}, j ? S : N, s.a.createElement("div", {
+					className: Object(a.a)(ge.a.textContainer, {
+						[ge.a.textContainerNoIcon]: !O
 					})
 				}, s.a.createElement("div", {
-					className: Object(a.a)(he.a.text, {
-						[he.a.blur]: e.isNsfwBlurSubreddit
+					className: Object(a.a)(ge.a.text, {
+						[ge.a.blur]: e.isNsfwBlurSubreddit
 					})
 				}, s.a.createElement("h1", {
-					className: he.a.title
-				}, c || O), !!c && s.a.createElement("h2", {
-					className: he.a.description
+					className: ge.a.title
+				}, c || C), !!c && s.a.createElement("h2", {
+					className: ge.a.description
 				}, "r/", n), e.showCommunityChat && !!t && s.a.createElement(Z, {
 					subredditId: t
 				})), s.a.createElement("div", {
-					className: he.a.buttonWrapper
+					className: ge.a.buttonWrapper
 				}, s.a.createElement("div", {
-					className: he.a.subscribeButtonContainer
+					className: ge.a.subscribeButtonContainer
 				}, s.a.createElement($.a, {
-					className: he.a.subscribeButton,
+					className: ge.a.subscribeButton,
 					getEventFactory: e => {
 						const t = e ? "unsubscribe" : "subscribe";
 						return p ? (e => t => ({
@@ -5201,25 +5199,29 @@
 					afterUnsubscribeAction: () => {
 						t && (Object(F.X)(e.userId, t), e.updateSubredditInfo())
 					}
-				})), w && s.a.createElement(Ee, {
-					onClickUnmute: e.unmuteSubreddit
-				}), e.userIsSubscriber && !w && t && e.notificationLevel && s.a.createElement("div", {
-					className: he.a.notificationButtonContainer
+				})), T && s.a.createElement(Ee, {
+					onClickUnmute: () => {
+						x(Object(ie.b)({
+							subredditId: t
+						})), e.unmuteSubreddit()
+					}
+				}), e.userIsSubscriber && !T && t && e.notificationLevel && s.a.createElement("div", {
+					className: ge.a.notificationButtonContainer
 				}, s.a.createElement(H, {
 					notificationLevel: e.notificationLevel,
 					subredditName: n,
 					subredditId: t,
-					subredditIcon: y,
-					shouldShowSubredditIcon: E,
+					subredditIcon: E,
+					shouldShowSubredditIcon: O,
 					userId: e.userId
-				}))))), N && s.a.createElement(X.a, {
+				}))))), k && s.a.createElement(X.a, {
 					disableFullscreen: !0,
 					isTopBannerVariant: !0,
 					homeUrl: i,
 					subredditId: t,
-					subredditNavContainerClassName: he.a.subredditNavContainer
+					subredditNavContainerClassName: ge.a.subredditNavContainer
 				}))), s.a.createElement("div", {
-					className: he.a.intersectionWrapper
+					className: ge.a.intersectionWrapper
 				}, s.a.createElement("div", {
 					style: {
 						height: m ? h : void 0
@@ -25704,4 +25706,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.68e65512189c9e150faf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.59d99bbfc5db06ab37ac.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.4b158809d4b8e982f86c.js
-// Retrieved at 1/9/2023, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.4aa9672a72a0e4f281f4.js
+// Retrieved at 1/9/2023, 5:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -637,33 +637,37 @@
 				let {
 					subredditId: t,
 					subredditName: s,
-					closeThankYouView: i
+					postId: i,
+					closeThankYouView: n
 				} = e;
-				const n = Object(P.d)(),
-					[o, r] = Object(h.useState)(!1),
-					a = () => {
-						r(e => !e)
+				const o = Object(P.d)(),
+					[r, a] = Object(h.useState)(!1),
+					l = () => {
+						a(e => !e)
 					},
-					l = Object(V.a)();
+					d = Object(V.a)();
 				return m.a.createElement(m.a.Fragment, null, m.a.createElement(z, null), m.a.createElement("div", {
 					className: U.a.MuteThankYouView
 				}, m.a.createElement("button", {
 					className: U.a.CommunityMutingTitle,
-					onClick: a
+					onClick: l
 				}, q._("Mute r/{subreddit name}", [q._param("subreddit name", s)], {
 					hk: "2CdBMy"
 				})), m.a.createElement("div", {
 					className: U.a.Subtitle
 				}, q._("Hide community from feeds and notifications", null, {
 					hk: "2lFpIL"
-				})), o && m.a.createElement(W.a, {
+				})), r && m.a.createElement(W.a, {
 					subredditName: s,
-					toggleModal: a,
+					toggleModal: l,
 					onConfirm: () => {
-						a(), l(Object(L.b)()), s && n(Object(x.c)({
+						l(), d(Object(L.a)({
+							subredditId: t,
+							postId: i
+						})), s && o(Object(x.c)({
 							subredditId: t,
 							subredditName: s
-						})), i()
+						})), n()
 					}
 				})))
 			};
@@ -736,6 +740,7 @@
 						seeLessOfThisPostClick: O
 					}), u === I.a.MuteThankYouView && m.a.createElement(K, {
 						subredditId: b,
+						postId: f,
 						subredditName: y,
 						closeThankYouView: x
 					}), u === I.a.ThankYouView && m.a.createElement(z, null)) : null
@@ -2518,4 +2523,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.4b158809d4b8e982f86c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.4aa9672a72a0e4f281f4.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f08e5067d78b7d295914.js
-// Retrieved at 1/9/2023, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.4d506585c9a1f5993435.js
+// Retrieved at 1/9/2023, 5:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3617,11 +3617,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("181480"),
+				buildNumber: Object(r.c)("181483"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1673294267"),
+				buildTimestamp: Object(r.b)("1673299070"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6353,14 +6353,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c448c438ef70cf453c579d0c16c9086c9cf96f75d-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c9582487b0b583e5354aac71c482458a74f76b6cb-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "448c438ef70cf453c579d0c16c9086c9cf96f75d-production",
+						release: "9582487b0b583e5354aac71c482458a74f76b6cb-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6896,7 +6896,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "448c438ef70cf453c579d0c16c9086c9cf96f75d-production",
+							releaseClient: "9582487b0b583e5354aac71c482458a74f76b6cb-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -49830,13 +49830,13 @@
 				e.Approve = "approve", e.Ban = "ban", e.Block = "block", e.Click = "click", e.Complete = "complete", e.Confirm = "confirm", e.Delete = "delete", e.Disable = "disable", e.Dismiss = "dismiss", e.Enable = "enable", e.Heartbeat = "heartbeat", e.Kick = "kick", e.Leave = "leave", e.Limit = "limit", e.Load = "load", e.ModDelete = "mod_delete", e.Mute = "mute", e.Report = "report", e.Save = "save", e.Slash = "slash", e.Submit = "submit", e.View = "view", e.Search = "search", e.Unmute = "unmute"
 			}(Ji || (Ji = {})),
 			function(e) {
-				e.BlockedProfileInterstitial = "blocked_profile_interstitial", e.Experiment = "experiment", e.Page = "page", e.UserPreferences = "user_preferences", e.UserReport = "user_report", e.CommunitySettings = "community_settings", e.CommunityNotificationsSettings = "community_notifications", e.HomeFeed = "home_feed", e.PopularFeed = "popular_feed", e.SubredditIdBanner = "id_banner", e.AboutCommunityOverflow = "about_community_overflow"
+				e.BlockedProfileInterstitial = "blocked_profile_interstitial", e.Experiment = "experiment", e.Page = "page", e.UserPreferences = "user_preferences", e.UserReport = "user_report", e.CommunitySettings = "community_settings", e.CommunityNotificationsSettings = "community_notifications", e.HomeFeed = "home_feed", e.PopularFeed = "popular_feed", e.SubredditIdBanner = "id_banner", e.AboutCommunityOverflow = "about_community_overflow", e.SubredditMuting = "subreddit_muting"
 			}(Xi || (Xi = {})),
 			function(e) {
-				e.Expose = "expose", e.Load = "load", e.Click = "click", e.Accept = "accept", e.Deny = "deny", e.View = "view", e.Save = "save"
+				e.Expose = "expose", e.Load = "load", e.Click = "click", e.Accept = "accept", e.Deny = "deny", e.View = "view", e.Save = "save", e.Mute = "mute", e.Unmute = "unmute"
 			}(Zi || (Zi = {})),
 			function(e) {
-				e.UserId = "user_id", e.CanonicalUrl = "canonical_url", e.BlockUser = "block_user", e.UnblockUser = "unblock_user", e.BlockedProfileInterstitial = "blocked_profile_interstitial", e.MuteSubreddit = "mute_subreddit", e.UnmuteSubreddit = "unmute_subreddit", e.HarassmentControlLevel = "harassment_control_level"
+				e.UserId = "user_id", e.CanonicalUrl = "canonical_url", e.BlockUser = "block_user", e.UnblockUser = "unblock_user", e.BlockedProfileInterstitial = "blocked_profile_interstitial", e.HarassmentControlLevel = "harassment_control_level", e.Subreddit = "subreddit"
 			}(en || (en = {})),
 			function(e) {
 				e.Chat = "chat", e.ChatKeyboard = "chat_keyboard", e.ChatPerformance = "chat_performance", e.ChatPreview = "chat_preview", e.ChatSettings = "chat_settings", e.ChatSetup = "chat_setup", e.ChatSidebarModal = "chat_sidebar_modal", e.ChatSidebarWidget = "chat_sidebar_widget", e.ChatTab = "chat_tab", e.ChatView = "chat_view", e.ChatVideo = "chat_video", e.ContactsList = "contacts_list", e.Global = "global", e.InvitationInbox = "invitation_inbox", e.MessageInbox = "messages_inbox", e.Notification = "notification", e.Popup = "popup", e.Nav = "nav", e.UserHovercard = "user_hovercard", e.User = "user", e.LiveChat = "live_chat"
@@ -50197,4 +50197,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f08e5067d78b7d295914.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.4d506585c9a1f5993435.js.map
