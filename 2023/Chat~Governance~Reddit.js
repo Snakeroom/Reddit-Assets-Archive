@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.df6e9af2f69ad3235cd9.js
-// Retrieved at 1/9/2023, 2:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.59f3c60082ba5d90f7db.js
+// Retrieved at 1/9/2023, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3617,11 +3617,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("181468"),
+				buildNumber: Object(r.c)("181474"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1673288100"),
+				buildTimestamp: Object(r.b)("1673291335"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6353,14 +6353,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cffc9aa2ffa8a8ac4284a14b6988d9e213b29e801-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c1b1da9769d1e62b68f89ccfb82958f2c634ee2dd-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "ffc9aa2ffa8a8ac4284a14b6988d9e213b29e801-production",
+						release: "1b1da9769d1e62b68f89ccfb82958f2c634ee2dd-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6896,7 +6896,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "ffc9aa2ffa8a8ac4284a14b6988d9e213b29e801-production",
+							releaseClient: "1b1da9769d1e62b68f89ccfb82958f2c634ee2dd-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -14936,58 +14936,83 @@
 		"./src/reddit/actions/trophyCase.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
-				return o
+				return d
 			})), i.d(t, "b", (function() {
-				return l
+				return u
 			}));
 			var n = i("./src/lib/makeActionCreator/index.ts"),
 				r = i("./src/lib/makeGqlRequest/index.ts"),
 				s = i("./src/redditGQL/operations/ProfileTrophies.json");
-			const o = "TROPHYCASE__FETCH_SUCCESS",
-				d = Object(n.a)(o),
-				a = Object(n.a)("TROPHYCASE__FETCH_FAILED"),
-				l = (e, t) => async (i, n, o) => {
+			const o = e => {
+				let {
+					trophyId: t,
+					name: i
+				} = e;
+				if ((e => {
+						let {
+							trophyId: t,
+							name: i
+						} = e;
+						return !t && i.endsWith("-Year Club")
+					})({
+						trophyId: t,
+						name: i
+					})) {
+					const e = i.length - "-Year Club".length;
+					return `nyear_${i.substring(0,e)}`
+				}
+				return t
+			};
+			const d = "TROPHYCASE__FETCH_SUCCESS",
+				a = Object(n.a)(d),
+				l = Object(n.a)("TROPHYCASE__FETCH_FAILED"),
+				u = (e, t) => async (i, n, d) => {
 					let {
-						gqlContext: l
-					} = o;
-					const u = await ((e, t) => Object(r.a)(e, {
+						gqlContext: u
+					} = d;
+					const c = await ((e, t) => Object(r.a)(e, {
 							...s,
 							variables: t
 						}, {
 							traceRequestName: "get_profile_trophies"
-						}))(l(), {
+						}))(u(), {
 							profileName: e
 						}),
-						c = u.body.data;
-					if (u.ok && c) {
+						_ = c.body.data;
+					if (c.ok && _) {
 						const n = {},
 							r = [];
-						c.redditor && c.redditor.trophies && c.redditor.trophies.map(e => {
+						_.redditor && _.redditor.trophies && _.redditor.trophies.map(e => {
 							const t = (e => {
 									let {
 										icon40Url: t,
 										trophyId: i,
-										...n
+										name: n,
+										...r
 									} = e;
 									return {
 										icon: t,
-										id: i,
-										...n
+										id: o({
+											trophyId: i,
+											name: n
+										}),
+										name: n,
+										...r
 									}
 								})(e),
 								{
 									id: i
 								} = t;
 							n[i] = t, r.push(i)
-						}), i(d({
+						}), i(a({
 							profileId: t,
 							profileName: e,
 							trophies: n,
 							trophyIds: r
 						}))
-					} else i(a({
+					} else i(l({
 						profileId: t,
-						error: u.error
+						error: c.error
 					}))
 				}
 		},
@@ -50172,4 +50197,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.df6e9af2f69ad3235cd9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.59f3c60082ba5d90f7db.js.map
