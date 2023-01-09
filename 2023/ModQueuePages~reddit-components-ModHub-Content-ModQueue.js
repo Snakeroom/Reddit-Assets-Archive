@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.088fe2f2a921af63f5f5.js
-// Retrieved at 1/5/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.cd5aa1c098f4264546fd.js
+// Retrieved at 1/9/2023, 3:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/actions/modQueue/realtime.ts": function(e, t, s) {
@@ -742,10 +742,7 @@
 			! function(e) {
 				e.UNMODERATED = "UNMODERATED", e.APPROVED = "APPROVED", e.REMOVED = "REMOVED", e.SPAM = "SPAM", e.REPORTED = "REPORTED", e.FILTERED = "FILTERED"
 			}(n || (n = {}));
-			const I = e => {
-				var t;
-				return e.isRemoved && e.bannedBy !== d.m && (!Object(S.a)(e) || Object(b.b)(e) && [v.g.AntiEvilOps, v.g.CommunityOps, v.g.ContentTakedown, v.g.CopyrightTakedown, v.g.Reddit].indexOf(e.removedByCategory) > -1) ? n.REMOVED : e.isSpam ? n.SPAM : (e.numReports || 0) > 0 ? n.REPORTED : e.isApproved ? n.APPROVED : (null === (t = e.modQueueTriggers) || void 0 === t ? void 0 : t.length) || e.bannedBy === d.m ? n.FILTERED : n.UNMODERATED
-			};
+			const I = e => e.isRemoved && (!e.bannedBy || e.bannedBy === d.m) || !e.isRemoved && Object(S.a)(e) ? n.FILTERED : e.isRemoved || Object(b.b)(e) && [v.g.AntiEvilOps, v.g.CommunityOps, v.g.ContentTakedown, v.g.CopyrightTakedown, v.g.Reddit].indexOf(e.removedByCategory) > -1 ? n.REMOVED : e.isSpam ? n.SPAM : (e.numReports || 0) > 0 ? n.REPORTED : e.isApproved ? n.APPROVED : n.UNMODERATED;
 			var N = s("./src/reddit/components/ModQueueActionBar/index.m.less"),
 				R = s.n(N),
 				T = s("./src/lib/classNames/index.ts"),
@@ -757,8 +754,8 @@
 				M = s("./src/reddit/constants/modals.ts"),
 				B = s("./src/reddit/controls/Dropdown/Row.tsx"),
 				U = s("./src/reddit/helpers/correlationIdTracker.ts"),
-				Q = s("./src/reddit/helpers/hasModPostPermissions/index.ts"),
-				W = s("./src/reddit/helpers/trackers/gild.ts"),
+				W = s("./src/reddit/helpers/hasModPostPermissions/index.ts"),
+				Q = s("./src/reddit/helpers/trackers/gild.ts"),
 				z = s("./src/reddit/selectors/comments.ts"),
 				q = s("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				H = s("./src/reddit/selectors/user.ts");
@@ -786,7 +783,7 @@
 						v = Object(i.e)(H.k),
 						C = Object(i.e)(H.P),
 						E = Object(i.e)(q.b),
-						j = Object(Q.a)(l),
+						j = Object(W.a)(l),
 						w = g ? f.k : V,
 						S = t.authorId === v,
 						I = C && S,
@@ -829,7 +826,7 @@
 								awardId: null == E ? void 0 : E.id,
 								correlationId: e,
 								thingId: t.id
-							})), u(Object(W.clickGildEvent)(t.id))
+							})), u(Object(Q.clickGildEvent)(t.id))
 						}, [u, p, t, E, g]),
 						oe = Object(r.useCallback)(() => {
 							p(Object(D.c)(t.id)), g ? K("report") : u(Object(h.j)(t.id, "report", "mod_menu"))
@@ -1469,8 +1466,8 @@
 							var s, n;
 							return null === (n = null === (s = null == e ? void 0 : e.features) || void 0 === s ? void 0 : s.realtimeModqueue) || void 0 === n ? void 0 : n.toUpdate.includes(t.id)
 						}),
-						Q = Object(r.useRef)(null),
-						W = Object(r.useCallback)(e => {
+						W = Object(r.useRef)(null),
+						Q = Object(r.useCallback)(e => {
 							e.forEach(e => {
 								const {
 									isIntersecting: t,
@@ -1483,7 +1480,7 @@
 					const z = Object(r.useMemo)(() => ({
 						threshold: [.5]
 					}), []);
-					Object(g.a)(Q, W, z);
+					Object(g.a)(W, Q, z);
 					const q = [n.REPORTED, n.FILTERED, n.UNMODERATED].includes(T),
 						H = [n.APPROVED, n.UNMODERATED, n.REPORTED].includes(T),
 						V = L && F,
@@ -1520,7 +1517,7 @@
 					return a.a.createElement("div", {
 						className: R.a.wrapper,
 						"data-testid": "modqueue-action-bar",
-						ref: Q
+						ref: W
 					}, a.a.createElement(Le, {
 						content: t
 					}), a.a.createElement("div", {
@@ -1978,15 +1975,15 @@
 					hk: "5y9ye"
 				})), t)
 			};
-			var Q = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				W = s("./src/reddit/controls/SearchBar/index.tsx"),
+			var W = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				Q = s("./src/reddit/controls/SearchBar/index.tsx"),
 				z = s("./src/reddit/helpers/trackers/modListing.ts"),
 				q = s("./src/reddit/selectors/experiments/realtimeMQUpdates.ts"),
 				H = s("./src/reddit/selectors/moderatorPermissions.ts"),
 				V = s("./src/reddit/components/ModQueueList/SubredditSelectorDropdown.m.less"),
 				Z = s.n(V);
-			const G = Object(Q.v)({
-					currentPageUrl: Q.f
+			const G = Object(W.v)({
+					currentPageUrl: W.f
 				}),
 				X = Object(d.c)({
 					moderatingSubreddits: H.o,
@@ -2032,7 +2029,7 @@
 					} = this;
 					return a.a.createElement(J, {
 						onClickCapture: this.stopPropagation
-					}, a.a.createElement(Y, null, a.a.createElement(W.a, {
+					}, a.a.createElement(Y, null, a.a.createElement(Q.a, {
 						autoFocus: !0,
 						onTextChange: e => this.setState({
 							search: e.currentTarget.value
@@ -2322,18 +2319,18 @@
 				M = s("./src/reddit/components/ModModeFilteredReason/helpers.ts"),
 				B = s("./src/reddit/components/ModModeReports/index.tsx"),
 				U = s("./src/reddit/components/RichTextJson/index.tsx"),
-				Q = s("./src/reddit/components/VerticalVotes/index.tsx"),
-				W = s("./src/reddit/controls/Checkbox/index.tsx"),
+				W = s("./src/reddit/components/VerticalVotes/index.tsx"),
+				Q = s("./src/reddit/controls/Checkbox/index.tsx"),
 				z = s("./src/reddit/helpers/getRichTextContent/index.ts"),
 				q = s("./src/reddit/helpers/showReportIndicator/index.ts"),
 				H = s("./src/reddit/components/Comments/CompactUnthreadedComment/index.m.less"),
 				V = s.n(H);
 			const Z = u.a.div("LeftRail", V.a),
-				G = u.a.wrapped(W.a, "BulkActionCheckbox", V.a),
+				G = u.a.wrapped(Q.a, "BulkActionCheckbox", V.a),
 				X = u.a.div("CommentColumn", V.a),
 				K = u.a.div("VoteColumn", V.a),
 				J = u.a.wrapped(R.a, "ModToolsFlatlist", V.a),
-				Y = u.a.wrapped(Q.a, "Votes", V.a),
+				Y = u.a.wrapped(W.a, "Votes", V.a),
 				$ = u.a.div("CommentContentWrapper", V.a),
 				ee = u.a.div("ParentPostTitle", V.a),
 				te = u.a.div("CommentParentWrapper", V.a),
@@ -2515,8 +2512,8 @@
 				Me = s("./node_modules/lodash/flatten.js"),
 				Be = s.n(Me),
 				Ue = s("./src/reddit/actions/tooltip.ts"),
-				Qe = s("./src/reddit/icons/fonts/index.tsx"),
-				We = s("./src/reddit/icons/fonts/Approve/index.tsx"),
+				We = s("./src/reddit/icons/fonts/index.tsx"),
+				Qe = s("./src/reddit/icons/fonts/Approve/index.tsx"),
 				ze = s("./src/reddit/icons/fonts/Remove/index.tsx"),
 				qe = s("./src/reddit/icons/fonts/Spam/index.tsx"),
 				He = s("./src/reddit/icons/fonts/Tag/index.tsx"),
@@ -2742,12 +2739,12 @@
 					}, d.a.createElement("div", {
 						className: ht.a.CheckboxContainer,
 						id: ft
-					}, d.a.createElement(W.a, {
+					}, d.a.createElement(Q.a, {
 						className: ht.a.Checkbox,
 						isHalfCheckboxSelected: e.isAnyItemSelected && !e.isSelectAll,
 						isCheckboxSelected: e.isSelectAll,
 						toggleCheckbox: _
-					}), d.a.createElement(Qe.a, {
+					}), d.a.createElement(We.a, {
 						name: "caret_down",
 						onClick: t => {
 							t.stopPropagation(), e.onOpenDropdown()
@@ -2767,7 +2764,7 @@
 							hk: "4ib5o9"
 						}),
 						onClick: u
-					}, d.a.createElement(We.a, null)), d.a.createElement(Xe.c, {
+					}, d.a.createElement(Qe.a, null)), d.a.createElement(Xe.c, {
 						className: ht.a.Button,
 						disabled: a,
 						text: f.fbt._("remove", null, {
@@ -2787,7 +2784,7 @@
 						onClick: e.onOpenModToolsDropdown
 					}, d.a.createElement(pt, {
 						tooltipId: "BulkActions--ModTools"
-					}), d.a.createElement(Qe.a, {
+					}), d.a.createElement(We.a, {
 						name: "list_bulleted"
 					})), d.a.createElement("div", null, w && d.a.createElement(Xe.c, {
 						disabled: a,
@@ -3381,4 +3378,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.088fe2f2a921af63f5f5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.cd5aa1c098f4264546fd.js.map

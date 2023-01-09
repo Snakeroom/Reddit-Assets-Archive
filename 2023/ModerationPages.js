@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.4eef7edc37285611090e.js
-// Retrieved at 1/9/2023, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.40a20c637e4494c69e9f.js
+// Retrieved at 1/9/2023, 3:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -25600,7 +25600,7 @@
 					})
 				},
 				v = {
-					nullValue: s.fbt._("none (recommended)", null, {
+					blank: s.fbt._("none (recommended)", null, {
 						hk: "2FMwQH"
 					}),
 					confidence: s.fbt._("best", null, {
@@ -26991,7 +26991,7 @@
 					} = t, w = Object(a.e)(qe.b), N = Object(a.e)(Be.c), P = Object(a.e)(Be.a), R = Object(a.e)(e => ((e, t) => {
 						const n = t && e.subreddits.about[t];
 						return Boolean(n && n.isMediaInCommentsSettingShown)
-					})(e, d)), A = Object(Ue.a)(Fe.xf) === Fe.Md, M = w && R, L = (null == _ ? void 0 : _.allowedMediaTypes) || [], D = null === S ? "nullValue" : S, F = Object(o.useCallback)(() => s(!l, "archivePostsEnabled"), [l, s]), U = e => e.toUpperCase() === B.U.All, H = e => {
+					})(e, d)), A = Object(Ue.a)(Fe.xf) === Fe.Md, M = w && R, L = (null == _ ? void 0 : _.allowedMediaTypes) || [], D = S, F = Object(o.useCallback)(() => s(!l, "archivePostsEnabled"), [l, s]), U = e => e.toUpperCase() === B.U.All, H = e => {
 						const n = U(t[e]) ? B.U.Low : B.U.All;
 						s(n, e)
 					};
@@ -27158,7 +27158,7 @@
 						displayItems: Object.values(te.j),
 						displayTitle: te.j[D],
 						selected: D,
-						onClick: e => s("nullValue" === e ? null : e, "suggestedCommentSort"),
+						onClick: e => s(e, "suggestedCommentSort"),
 						id: "suggestedCommentSort"
 					}), i.a.createElement(J.p, {
 						on: g,
@@ -77309,4 +77309,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.4eef7edc37285611090e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.40a20c637e4494c69e9f.js.map
