@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HappeningNow.6dfda5f23b5e5f14542f.js
-// Retrieved at 1/5/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HappeningNow.e2c8a672d543b798d23f.js
+// Retrieved at 1/9/2023, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HappeningNow"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3051,7 +3051,7 @@
 					l = Object(o.e)(R.e),
 					c = Object(s.useMemo)(() => l === t.name, [l, t]),
 					d = Object(s.useCallback)(() => {
-						n(Object(y.c)(t.name)), r(Object(L.d)(t.name))
+						n(Object(y.c)(t.name)), r(Object(L.c)(t.name))
 					}, [n, r, t]);
 				return a.a.createElement("button", {
 					"aria-pressed": c,
@@ -3973,4 +3973,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.6dfda5f23b5e5f14542f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.e2c8a672d543b798d23f.js.map

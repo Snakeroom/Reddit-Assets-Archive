@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.89aea8c0a286900adf8d.js
-// Retrieved at 1/9/2023, 5:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.67a69c5c6049d0cc6e26.js
+// Retrieved at 1/9/2023, 5:30:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1427,7 +1427,7 @@
 						"FramedGild~GildModal": "8038e072c3e291b520f2",
 						FramedGild: "5cda3622d5f2cc6d9e75",
 						GildModal: "086195bd13b2a2b62691",
-						HappeningNow: "6dfda5f23b5e5f14542f",
+						HappeningNow: "e2c8a672d543b798d23f",
 						Frontpage: "6bbe83ca6ee28867f1fd",
 						PostSetPage: "47b5ddfd85b4436ccdf6",
 						Topic: "a1fbd273b26a5e3afc24",
@@ -1787,4 +1787,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.89aea8c0a286900adf8d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.67a69c5c6049d0cc6e26.js.map

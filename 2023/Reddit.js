@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.5dcd1b70bf30fadf861e.js
-// Retrieved at 1/9/2023, 5:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.6d4144c80ebfecfbd462.js
+// Retrieved at 1/9/2023, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -895,13 +895,15 @@
 		},
 		"./src/reddit/actions/happeningNow/index.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "d", (function() {
+			n.d(t, "c", (function() {
 				return g
-			})), n.d(t, "b", (function() {
-				return C
+			})), n.d(t, "d", (function() {
+				return O
 			})), n.d(t, "a", (function() {
+				return C
+			})), n.d(t, "e", (function() {
 				return x
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "b", (function() {
 				return _
 			}));
 			var s = n("./src/lib/cache/index.ts"),
@@ -944,11 +946,10 @@
 				}, x = () => async (e, t) => {
 					const n = t(),
 						r = Object(h.k)(n);
-					if (r) {
+					if (r && !E(r)) {
 						const e = y(r);
 						Object(s.d)(e, !0, s.a)
 					}
-					e(O(!1))
 				}, _ = () => async (e, t) => {
 					e(d.m({
 						title: c.h()
@@ -12394,7 +12395,7 @@
 						t = Object(_i.a)(),
 						n = Object(xe.e)(Wi.f),
 						r = Object(xe.e)(e => e.recap.bannerSeen && Object(Wi.g)(e)),
-						o = Object(u.useCallback)(() => e(Object(Hi.a)()), [e]),
+						o = Object(u.useCallback)(() => e(Object(Hi.d)(!1)), [e]),
 						a = Object(xi.a)(),
 						i = Object(u.useMemo)(() => r ? ((e, t) => {
 							let {
@@ -12428,8 +12429,10 @@
 							t(Object(aa.b)(aa.a.TopNav)), o()
 						}, [t, o]);
 					return Object(u.useEffect)(() => {
-						e(Object(Hi.b)())
-					}, [e]), m.a.createElement(m.a.Fragment, null, m.a.createElement(ar.a, {
+						e(Object(Hi.a)())
+					}, [e]), Object(u.useEffect)(() => {
+						r && e(Object(Hi.e)())
+					}, [e, r]), m.a.createElement(m.a.Fragment, null, m.a.createElement(ar.a, {
 						className: Object(ke.a)(Di.a.icon, Di.a.happeningNowLink),
 						innerRef: i.target.ref,
 						to: qi.c[qi.b.HappeningNow],
@@ -19042,7 +19045,7 @@
 					}
 				}),
 				c = {
-					action: o.c,
+					action: o.b,
 					chunk: r.u.HAPPENING_NOW,
 					component: i,
 					exact: !0,
@@ -21076,4 +21079,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.5dcd1b70bf30fadf861e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.6d4144c80ebfecfbd462.js.map
