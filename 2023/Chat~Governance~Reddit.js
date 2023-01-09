@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ba0ed94eefd5bd940a6d.js
-// Retrieved at 1/9/2023, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.df6e9af2f69ad3235cd9.js
+// Retrieved at 1/9/2023, 2:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -412,14 +412,14 @@
 						}
 					} = e;
 					return {
-						unreadMessages: Number(t.count) || 0,
-						unacceptedInvites: Number(n.count) || 0,
-						unreadMentions: Number(r.count) || 0,
-						hasNewMessages: Boolean(i.isShowing),
-						chatDirectUnacceptedInvites: Number(s.count) || 0,
-						chatGroupUnacceptedInvites: Number(o.count) || 0,
-						chatV2HasNewMessages: Boolean(d.isShowing),
-						chatV2UnreadMessages: Number(a.count) || 0
+						unreadMessages: Number(null == t ? void 0 : t.count) || 0,
+						unacceptedInvites: Number(null == n ? void 0 : n.count) || 0,
+						unreadMentions: Number(null == r ? void 0 : r.count) || 0,
+						hasNewMessages: Boolean(null == i ? void 0 : i.isShowing),
+						chatDirectUnacceptedInvites: Number(null == s ? void 0 : s.count) || 0,
+						chatGroupUnacceptedInvites: Number(null == o ? void 0 : o.count) || 0,
+						chatV2HasNewMessages: Boolean(null == d ? void 0 : d.isShowing),
+						chatV2UnreadMessages: Number(null == a ? void 0 : a.count) || 0
 					}
 				},
 				f = r()((e, t, i, n, r, s, d, a) => async (m, f, b) => {
@@ -1384,7 +1384,10 @@
 					Accept: "application/json",
 					"Content-Type": "application/json"
 				},
-				_ = e => Boolean(e && e.data && e.data.badgeIndicators && e.data.badgeIndicators.chatUnreadMessages && e.data.badgeIndicators.chatUnreadMentions && e.data.badgeIndicators.chatUnacceptedInvites && e.data.badgeIndicators.chatHasNewMessages && e.data.badgeIndicators.chatV2UnreadMessages && e.data.badgeIndicators.chatV2NewMessagesIndicator),
+				_ = e => {
+					var t;
+					return Boolean((null === (t = null == e ? void 0 : e.data) || void 0 === t ? void 0 : t.badgeIndicators) && (e.data.badgeIndicators.chatUnreadMessages || e.data.badgeIndicators.chatUnreadMentions || e.data.badgeIndicators.chatUnacceptedInvites || e.data.badgeIndicators.chatHasNewMessages || e.data.badgeIndicators.chatV2UnreadMessages || e.data.badgeIndicators.chatV2NewMessagesIndicator))
+				},
 				m = async e => Object(s.a)(Object(d.a)(e, [a.a]), {
 					endpoint: `${n.a.sendbirdServiceUrl}/api/v1/sendbird/config`,
 					method: r.ob.GET
@@ -3614,11 +3617,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("181457"),
+				buildNumber: Object(r.c)("181468"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1673284283"),
+				buildTimestamp: Object(r.b)("1673288100"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6350,14 +6353,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cf3598fa7ac09f87f4ca5f64a58d536eda7ac098b-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cffc9aa2ffa8a8ac4284a14b6988d9e213b29e801-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "f3598fa7ac09f87f4ca5f64a58d536eda7ac098b-production",
+						release: "ffc9aa2ffa8a8ac4284a14b6988d9e213b29e801-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6893,7 +6896,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "f3598fa7ac09f87f4ca5f64a58d536eda7ac098b-production",
+							releaseClient: "ffc9aa2ffa8a8ac4284a14b6988d9e213b29e801-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -50169,4 +50172,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ba0ed94eefd5bd940a6d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.df6e9af2f69ad3235cd9.js.map
