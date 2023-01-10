@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.f7e0a45735dae0346bc8.js
-// Retrieved at 1/10/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.3ad16d615d45d9e3b7a2.js
+// Retrieved at 1/10/2023, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -951,7 +951,7 @@
 						Object(s.d)(e, !0, s.a)
 					}
 				}, _ = () => async (e, t) => {
-					e(d.m({
+					e(d.n({
 						title: c.h()
 					})), e(f(Date.now()))
 				}
@@ -964,7 +964,7 @@
 				a = n("./src/reddit/selectors/user.ts"),
 				i = n("./src/reddit/actions/login.ts");
 			t.a = () => async (e, t) => {
-				e(Object(r.m)({
+				e(Object(r.n)({
 					title: Object(s.a)()
 				})), await e(Object(o.s)()), Object(a.S)(t()) || e(Object(i.openLoginModal)())
 			}
@@ -974,7 +974,7 @@
 			var s = n("./src/lib/pageTitle/index.ts"),
 				r = n("./src/reddit/actions/platform.ts");
 			t.a = () => async e => {
-				e(Object(r.m)({
+				e(Object(r.n)({
 					title: Object(s.d)()
 				}))
 			}
@@ -992,7 +992,7 @@
 				const n = t(),
 					l = Object(c.S)(n),
 					d = Object(c.P)(n);
-				l && d || await e(Object(s.c)("/")), e(Object(o.m)({
+				l && d || await e(Object(s.c)("/")), e(Object(o.n)({
 					title: "Econ control panel"
 				})), await e(Object(r.c)());
 				n.platform.currentPage.queryParams[i.b]
@@ -1012,7 +1012,7 @@
 				const n = t(),
 					l = Object(c.S)(n),
 					d = Object(c.P)(n);
-				l && d || await e(Object(r.c)("/")), e(Object(o.m)({
+				l && d || await e(Object(r.c)("/")), e(Object(o.n)({
 					title: s.fbt._("Econ control panel", null, {
 						hk: "3DJjYu"
 					})
@@ -1028,7 +1028,7 @@
 				a = n("./src/reddit/actions/users.ts"),
 				i = n("./src/reddit/selectors/user.ts");
 			t.a = () => async (e, t) => {
-				e(Object(o.m)({
+				e(Object(o.n)({
 					title: Object(s.e)()
 				})), Object(i.S)(t()) || await e(Object(a.s)()), await e(Object(r.b)()).then(() => {
 					if (t().economics.me.data) return e(Object(r.a)())
@@ -1040,7 +1040,7 @@
 			var s = n("./src/lib/pageTitle/index.ts"),
 				r = n("./src/reddit/actions/platform.ts");
 			t.a = () => async e => {
-				e(Object(r.m)({
+				e(Object(r.n)({
 					title: Object(s.j)()
 				}))
 			}
@@ -1081,7 +1081,7 @@
 				a = n("./src/reddit/actions/users.ts"),
 				i = n("./src/reddit/selectors/user.ts");
 			t.a = () => async (e, t) => {
-				e(Object(r.m)({
+				e(Object(r.n)({
 					title: Object(s.l)()
 				})), await e(Object(a.s)()), Object(i.S)(t()) && await e(Object(o.q)())
 			}
@@ -1091,7 +1091,7 @@
 			var s = n("./src/lib/pageTitle/index.ts"),
 				r = n("./src/reddit/actions/platform.ts");
 			t.a = () => async e => {
-				e(Object(r.m)({
+				e(Object(r.n)({
 					title: Object(s.q)()
 				}))
 			}
@@ -9231,11 +9231,10 @@
 					let {
 						pageLayer: n
 					} = t;
-					const s = Object(In.m)(e),
-						r = Object(O.S)(e),
-						o = Object(wr.b)(e),
-						a = Object(Hn.bb)(n);
-					switch (a) {
+					const s = Object(O.S)(e),
+						r = Object(wr.b)(e),
+						o = Object(Hn.bb)(n);
+					switch (o) {
 						case "avatar":
 							return {
 								type: xr.Avatar
@@ -9246,7 +9245,7 @@
 							};
 						case "index":
 						case "listing":
-							return r || o || s ? {
+							return s || r ? {
 								type: xr.Home
 							} : {
 								type: xr.Popular
@@ -9336,59 +9335,59 @@
 							}
 						}
 					}
-					const i = e.user.account;
-					if (i) switch (a) {
+					const a = e.user.account;
+					if (a) switch (o) {
 						case "inboxPages":
 							return {
-								type: xr.Inbox, model: i
+								type: xr.Inbox, model: a
 							};
 						case "settings":
 							return {
-								type: xr.Settings, model: i
+								type: xr.Settings, model: a
 							}
 					}
-					const c = Object(Hn.V)(e, {
+					const i = Object(Hn.V)(e, {
 						pageLayer: n
 					});
-					if ("all" === c) return {
+					if ("all" === i) return {
 						type: xr.All
 					};
-					if ("popular" === c) return {
+					if ("popular" === i) return {
 						type: xr.Popular
 					};
-					const l = Object(Hn.s)(e, {
+					const c = Object(Hn.s)(e, {
 						pageLayer: n
 					});
-					if (l) return "searchResults" === a ? {
+					if (c) return "searchResults" === o ? {
 						type: xr.CommunitySearch,
-						model: l
+						model: c
 					} : {
 						type: xr.Community,
+						model: c
+					};
+					const l = Object(Hn.e)(e, {
+						pageLayer: n
+					});
+					if (l) return {
+						type: xr.Multi,
 						model: l
 					};
-					const d = Object(Hn.e)(e, {
+					const d = Object(Hn.l)(e, {
 						pageLayer: n
 					});
 					if (d) return {
-						type: xr.Multi,
+						type: xr.UserProfile,
 						model: d
 					};
-					const u = Object(Hn.l)(e, {
-						pageLayer: n
-					});
+					const u = Object(Hn.j)(n);
 					if (u) return {
-						type: xr.UserProfile,
-						model: u
-					};
-					const m = Object(Hn.j)(n);
-					if (m) return {
 						type: xr.UserProfileName,
-						name: `u/${m}`
+						name: `u/${u}`
 					};
-					if (a && "searchResults" === a) return {
+					if (o && "searchResults" === o) return {
 						type: xr.GlobalSearch
 					};
-					if ("subredditWiki" === a) {
+					if ("subredditWiki" === o) {
 						const t = Object(Hn.p)(e, {
 								pageLayer: n
 							}) || Mr.e,
@@ -9633,7 +9632,7 @@
 					id: xr.Home,
 					type: so.GenericLink,
 					model: {
-						url: "/",
+						url: "/?feed=home",
 						badge: io,
 						displayText: s.fbt._("Home", null, {
 							hk: "2u56yo"
@@ -15199,7 +15198,9 @@
 					pageLayer: e => e
 				}),
 				pp = e => {
-					const t = Object(u.useContext)(Re.a);
+					const t = Object(u.useContext)(Re.a),
+						n = Object(xe.e)(Zr.f),
+						r = e.isLoggedIn || n ? "/" : "/?feed=home";
 					return m.a.createElement("div", {
 						className: cp.a.left
 					}, m.a.createElement(ja.a, null, s.fbt._("Press J to jump to the feed. Press question mark to learn the rest of the keyboard shortcuts", null, {
@@ -15209,7 +15210,7 @@
 							hk: "3PmGmU"
 						}),
 						className: cp.a.centeredRow,
-						to: "/",
+						to: r,
 						onClick: e.onReloadFrontpage
 					}, m.a.createElement(mi.a, {
 						className: Object(ke.a)(cp.a.snoo, {
@@ -15272,7 +15273,8 @@
 						})
 					}, m.a.createElement(t, {
 						categoryName: e.categoryName,
-						onReloadFrontpage: e.onReloadFrontpage
+						onReloadFrontpage: e.onReloadFrontpage,
+						isLoggedIn: e.isLoggedIn
 					}), (e.isResponsiveSettingsEnabled || e.isPageResponsive) && m.a.createElement(Ti, {
 						className: cp.a.MwebResponsiveHeader
 					}))
@@ -16910,7 +16912,7 @@
 			}
 			var Hf = "undefined" != typeof document ? e => t => n => {
 				const s = t(n);
-				if (n.type === he.f) {
+				if (n.type === he.g) {
 					const t = e.getState(),
 						s = Object(O.R)(t),
 						{
@@ -17333,10 +17335,10 @@
 					getUserConfirmation(e, t) {
 						const n = oO;
 						if (!n) return;
-						n.dispatch(Object(he.l)({
+						n.dispatch(Object(he.m)({
 							allowNavigationCallback: function() {
 								let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-								t(e), n.dispatch(Object(he.k)())
+								t(e), n.dispatch(Object(he.l)())
 							}
 						}))
 					}
@@ -17483,7 +17485,7 @@
 							const n = String(e.split("/")[1]).toLowerCase(),
 								s = "r" === n && Object(Xh.a)(t);
 							return "framedgild" === n || "framedmodal" === n || s
-						}(t.location.pathname, t.location.search) || s.dispatch(Object(he.h)());
+						}(t.location.pathname, t.location.search) || s.dispatch(Object(he.i)());
 					const a = Object(O.fb)(s.getState());
 					s.dispatch(Object(Ce.c)({
 						nightmode: a
@@ -17497,10 +17499,10 @@
 						const e = Zf.b.createTraceFromId(l);
 						Zf.b.setParent(e)
 					}
-					s.dispatch(Object(he.i)(n));
+					s.dispatch(Object(he.j)(n));
 					t.listen((e, t) => {
 						const r = Object(T.a)(Object(c.e)(e), n, s.getState());
-						s.dispatch(Object(he.j)(e, t, r))
+						s.dispatch(Object(he.k)(e, t, r))
 					});
 					const {
 						currentPage: d
@@ -18885,11 +18887,12 @@
 				o = n("./node_modules/@loadable/component/dist/loadable.esm.js"),
 				a = n("./src/lib/constants/index.ts"),
 				i = n("./src/lib/loadableAction/index.ts"),
-				c = n("./src/reddit/selectors/user.ts");
-			const l = Object.keys(a.bb).map(e => a.bb[e]).join("|"),
-				d = "/",
-				u = `/:sort(${l})?`,
-				m = Object(o.a)({
+				c = n("./src/reddit/selectors/frontpage.ts"),
+				l = n("./src/reddit/selectors/user.ts");
+			const d = Object.keys(a.bb).map(e => a.bb[e]).join("|"),
+				u = "/",
+				m = `/:sort(${d})?`,
+				p = Object(o.a)({
 					resolved: {},
 					chunkName: () => "Frontpage",
 					isReady(e) {
@@ -18909,49 +18912,65 @@
 						return "./src/reddit/pages/Frontpage/index.tsx"
 					}
 				}),
-				p = {
+				b = {
 					action: Object(i.a)(() => Promise.all([n.e("CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32"), n.e("CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit"), n.e("Frontpage")]).then(n.bind(null, "./src/reddit/actions/frontpage/index.ts")).then(e => e.frontpageRequested)),
 					chunk: a.u.FRONTPAGE,
-					component: m,
+					component: p,
 					exact: !0,
 					prefetches: [a.u.COMMENTS_PAGE, a.u.SUBREDDIT]
 				},
-				b = {
-					...p,
-					path: d,
-					meta: {
-						name: a.Sb.INDEX
-					},
-					routePredicate: c.S
-				},
 				h = {
-					...p,
-					path: d,
+					...b,
+					path: u,
 					meta: {
 						name: a.Sb.INDEX,
-						telemetryPageType: "popular"
+						pageType: "home",
+						canonicalPageType: "home"
 					},
-					routePredicate: e => !Object(c.S)(e)
+					routePredicate: e => Object(l.S)(e)
 				},
 				g = {
-					...p,
+					...b,
 					path: u,
 					meta: {
-						name: a.Sb.LISTING
+						name: a.Sb.INDEX,
+						pageType: "home",
+						canonicalPageType: "home"
 					},
-					routePredicate: c.S
+					routePredicate: e => !Object(l.S)(e) && Object(c.b)(e)
 				},
 				f = {
-					...p,
+					...b,
 					path: u,
 					meta: {
-						name: a.Sb.LISTING,
-						telemetryPageType: "popular"
+						name: a.Sb.INDEX,
+						pageType: "popular",
+						canonicalPageType: "home"
 					},
-					routePredicate: e => !Object(c.S)(e)
+					routePredicate: e => !Object(l.S)(e) && !Object(c.b)(e)
 				},
-				v = [b, h, g, f];
-			t.a = v
+				v = {
+					...b,
+					path: m,
+					meta: {
+						name: a.Sb.LISTING,
+						pageType: "home",
+						canonicalPageType: "home"
+					},
+					routePredicate: e => Object(l.S)(e)
+				},
+				O = {
+					...b,
+					path: m,
+					meta: {
+						name: a.Sb.LISTING,
+						pageType: "popular",
+						canonicalPageType: "home"
+					},
+					routePredicate: e => !Object(l.S)(e)
+				},
+				C = [h, g, f, v, O];
+			t.a = C
 		},
 		"./src/reddit/routes/geotagging/index.ts": function(e, t, n) {
 			"use strict";
@@ -21079,4 +21098,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.f7e0a45735dae0346bc8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.3ad16d615d45d9e3b7a2.js.map

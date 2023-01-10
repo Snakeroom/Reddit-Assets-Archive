@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.8342b53d2ef060144ee8.js
-// Retrieved at 1/10/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.2d5f5e97e2c908001e3a.js
+// Retrieved at 1/10/2023, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, o) {
@@ -1064,7 +1064,7 @@
 				Object(m.p)(h) || await Object(u.e)(g, p, f)(t, o, s);
 				const R = o();
 				if (r()(R.pages.modHub.modQueue[p].api.error, "type") === n.L.AUTHENTICATION_ERROR) return Object(a.a)(t, R);
-				Object(c.i)(R, j, v), t(l.m({
+				Object(c.i)(R, j, v), t(l.n({
 					title: Object(d.i)()
 				}))
 			}
@@ -1826,7 +1826,7 @@
 						} = t.payload;
 						return e.includes(o) ? e : [...e, o]
 					}
-					case i.f:
+					case i.g:
 						return [];
 					default:
 						return e
@@ -1946,4 +1946,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.8342b53d2ef060144ee8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.2d5f5e97e2c908001e3a.js.map

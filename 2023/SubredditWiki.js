@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.3a628175412b94c188c4.js
-// Retrieved at 1/10/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.31cbae103d4da5ec2f3b.js
+// Retrieved at 1/10/2023, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -1010,7 +1010,7 @@
 						params: s,
 						queryParams: i
 					} = e, r = s.subredditName || P.e;
-					t(u.m({
+					t(u.n({
 						title: s.wikiPageName ? `${s.wikiPageName} - ${r}` : `wiki - ${r}`
 					})), await t(Qe(s, i));
 					const a = Object(M.C)(n(), {
@@ -11191,4 +11191,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.3a628175412b94c188c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.31cbae103d4da5ec2f3b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.99e353e9a91a79ce6f54.js
-// Retrieved at 1/10/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.d750b8737627d997275f.js
+// Retrieved at 1/10/2023, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, n) {
@@ -599,7 +599,7 @@
 					const {
 						sort: a = o.cb
 					} = e.params, l = Object(L.d)(e.path), p = l ? u.f : u.e, b = Object(d.a)(p, a, e.queryParams), h = s(), g = h.listings.postOrder.ids[b], f = h.listings.postOrder.api.error[b];
-					if (h.listings.postOrder.api.pending[b] || g && !f && !t) return void(g && n(c.m({
+					if (h.listings.postOrder.api.pending[b] || g && !f && !t) return void(g && n(c.n({
 						title: r.fbt._("Subreddits you moderate", null, {
 							hk: "3RYtBz"
 						})
@@ -612,7 +612,7 @@
 						moderated_srs: !0,
 						sort: a,
 						t: Object(S.a)(a, y)
-					})), n(c.m({
+					})), n(c.n({
 						title: r.fbt._("Subreddits you moderate", null, {
 							hk: "3RYtBz"
 						})
@@ -2512,4 +2512,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.99e353e9a91a79ce6f54.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.d750b8737627d997275f.js.map

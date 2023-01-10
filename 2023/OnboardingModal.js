@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.abd71ad9ba628207631d.js
-// Retrieved at 1/10/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.6118364df752cf293805.js
+// Retrieved at 1/10/2023, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -721,7 +721,7 @@
 							isLoggedIn: v,
 							page: x
 						});
-					n(Object($.n)(_.status));
+					n(Object($.o)(_.status));
 					const E = `error-${e}`;
 					if (_.ok && _.body) {
 						const s = _.body;
@@ -772,9 +772,9 @@
 						g = se.K in e.queryParams && e.queryParams[se.K].toUpperCase() || "",
 						f = g in l.oc && l.oc[g],
 						h = Y.f();
-					if (p || u && !m && !t) return void(u && (n($.m({
+					if (p || u && !m && !t) return void(u && (n($.n({
 						title: b ? Object(X.a)(o, h) : h
-					})), (null === (r = o.listings.postOrder.correlationIds) || void 0 === r ? void 0 : r[d]) && n($.o({
+					})), (null === (r = o.listings.postOrder.correlationIds) || void 0 === r ? void 0 : r[d]) && n($.p({
 						correlationId: o.listings.postOrder.correlationIds[d]
 					})), o.sidebarPromotedPosts.firstFetch || window.addEventListener("load", () => {
 						n(Object(fe.b)(_e.a.FRONTPAGE))
@@ -789,7 +789,7 @@
 						sort: c,
 						statsdPathsForExperiments: v,
 						t: Object(ie.a)(c, f)
-					})), n($.m({
+					})), n($.n({
 						title: b ? Object(X.a)(o, h) : h
 					})), Object(he.c)(o, {
 						experimentEligibilitySelector: he.a,
@@ -5171,4 +5171,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.abd71ad9ba628207631d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.6118364df752cf293805.js.map

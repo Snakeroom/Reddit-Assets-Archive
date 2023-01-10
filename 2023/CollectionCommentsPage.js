@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.47f7ee98cc7f9abc6496.js
-// Retrieved at 1/10/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.a2a7bab33fdf3fe56d59.js
+// Retrieved at 1/10/2023, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -732,7 +732,7 @@
 							o = Object(i.c)(s.title, r.name).toString();
 						return Object(a.a)(o, v.c, n.nb)
 					})(s(), E) || Object(i.f)();
-					t(m.m({
+					t(m.n({
 						title: N
 					}));
 					const A = s().posts.models[g];
@@ -757,7 +757,7 @@
 						collectionId: e
 					});
 					const l = await j(a.apiContext(), e, t, s, n);
-					if (r(Object(m.n)(l.status)), l.ok) {
+					if (r(Object(m.o)(l.status)), l.ok) {
 						if (!(t = t || l.body.collections[e].primaryPostId)) return;
 						const s = Object(I.a)(l.body, t, c);
 						r(K({
@@ -813,7 +813,7 @@
 						e && e.numComments && e.numComments > W.MIN_NUM_COMMENTS_TO_TRUNCATE && (E.truncate = W.NUM_COMMENTS_TRUNCATE)
 					}
 					let k, w = await Object(N.a)("comments", () => j(p.apiContext(), e, t, s, E));
-					if (i(Object(m.n)(w.status)), w.ok && (t = t || w.body.collections[e].primaryPostId)) {
+					if (i(Object(m.o)(w.status)), w.ok && (t = t || w.body.collections[e].primaryPostId)) {
 						const e = Object.keys(w.body.posts).filter(e => !!w.body.posts[e].isMeta),
 							s = Object(M.G)(a(), {
 								postId: t
@@ -857,7 +857,7 @@
 						}))
 					} else f && (i(Object(l.subredditPending)({
 						key: b
-					})), w = await Object(N.a)("subreddit", () => Object(P.a)(p.apiContext(), f, {})), i(Object(m.n)(w.status))), i(Object(l.handleSubredditPageApiError)(w, f)), i(q({
+					})), w = await Object(N.a)("subreddit", () => Object(P.a)(p.apiContext(), f, {})), i(Object(m.o)(w.status))), i(Object(l.handleSubredditPageApiError)(w, f)), i(q({
 						error: w.error,
 						key: b,
 						...w.body
@@ -11326,4 +11326,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.47f7ee98cc7f9abc6496.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.a2a7bab33fdf3fe56d59.js.map
