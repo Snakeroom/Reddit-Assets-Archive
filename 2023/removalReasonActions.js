@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.ffd1bcdf52df4ce78692.js
-// Retrieved at 1/5/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.f13c3756bb0a9123f3b8.js
+// Retrieved at 1/10/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./node_modules/lodash/map.js": function(e, t, s) {
@@ -29,7 +29,7 @@
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "d", (function() {
-				return S
+				return j
 			})), s.d(t, "c", (function() {
 				return E
 			})), s.d(t, "f", (function() {
@@ -62,13 +62,13 @@
 				_ = s("./src/reddit/selectors/user.ts"),
 				R = s("./src/reddit/actions/comment/index.ts"),
 				f = s("./src/reddit/actions/comment/constants.ts");
-			const j = Object(r.a)(f.p),
-				S = e => async (t, s, o) => {
+			const S = Object(r.a)(f.p),
+				j = e => async (t, s, o) => {
 					let {
 						apiContext: n
 					} = o;
 					s().features.comments.models[e] && (await Object(m.j)(n(), e)).ok && t((e => async t => {
-						t(j({
+						t(S({
 							commentId: e
 						}))
 					})(e))
@@ -309,9 +309,9 @@
 			})), s.d(t, "removalReasonSubmittedSuccess", (function() {
 				return fe
 			})), s.d(t, "removalReasonSubmittedFailed", (function() {
-				return je
-			})), s.d(t, "removalReasonMessagePending", (function() {
 				return Se
+			})), s.d(t, "removalReasonMessagePending", (function() {
+				return je
 			})), s.d(t, "removalReasonPrivateMessageSuccess", (function() {
 				return Ee
 			})), s.d(t, "removalReasonPublicMessageSuccess", (function() {
@@ -384,9 +384,9 @@
 					error: _,
 					pending: R
 				});
-			const j = {};
-			var S = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : j,
+			const S = {};
+			var j = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : S,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case d: {
@@ -484,7 +484,7 @@
 				},
 				h = Object(r.c)({
 					api: f,
-					models: S,
+					models: j,
 					reasonOrder: v,
 					removedItemIds: A
 				}),
@@ -631,7 +631,7 @@
 						subredditId: e,
 						itemIds: t
 					})), s(Object(D.i)(M.a.ADD_REMOVAL_REASON))
-				}, Re = Object(I.a)("REMOVALREASONS__SUBMIT_PENDING"), fe = Object(I.a)("REMOVALREASONS__SUBMIT_SUCCESS"), je = Object(I.a)("REMOVALREASONS__SUBMIT_FAILED"), Se = Object(I.a)("REMOVALREASONS__MESSAGE_PENDING"), Ee = Object(I.a)("REMOVALREASONS__MESSAGE_PRIVATE_SUCCESS"), ve = Object(I.a)("REMOVALREASONS__MESSAGE_PUBLIC_SUCCESS"), Ae = Object(I.a)("REMOVALREASONS__MESSAGE_FAILED"), he = (e, t, s, o, n, r) => async (d, a, i) => {
+				}, Re = Object(I.a)("REMOVALREASONS__SUBMIT_PENDING"), fe = Object(I.a)("REMOVALREASONS__SUBMIT_SUCCESS"), Se = Object(I.a)("REMOVALREASONS__SUBMIT_FAILED"), je = Object(I.a)("REMOVALREASONS__MESSAGE_PENDING"), Ee = Object(I.a)("REMOVALREASONS__MESSAGE_PRIVATE_SUCCESS"), ve = Object(I.a)("REMOVALREASONS__MESSAGE_PUBLIC_SUCCESS"), Ae = Object(I.a)("REMOVALREASONS__MESSAGE_FAILED"), he = (e, t, s, o, n, r) => async (d, a, i) => {
 					let {
 						apiContext: c
 					} = i;
@@ -657,7 +657,7 @@
 						R = await K(c(), _);
 					if (R.ok) {
 						if (d(fe()), t) {
-							d(Se());
+							d(je());
 							const n = {
 									itemId: e,
 									message: s,
@@ -720,7 +720,7 @@
 							}
 							return d(Ae(a.error)), !1
 						}
-					} else d(je(R.error)), d(O({
+					} else d(Se(R.error)), d(O({
 						[u]: {
 							modNote: b.modNote,
 							modRemovalReason: b.modRemovalReason,
@@ -771,7 +771,7 @@
 								r = await G(c(), Object(Q.h)(o, Q.e.Bulk), Q.e.Bulk);
 							r.ok ? (d(Ee()), d(u)) : d(Ae(r.error))
 						} else d(u)
-					} else d(je(b.error))
+					} else d(Se(b.error))
 				}
 		},
 		"./src/reddit/components/InfoTextTooltip/index.m.less": function(e, t, s) {
@@ -835,17 +835,17 @@
 						return Object(c.b)(s)(e)
 					}
 				}),
-				j = Object(i.a)(R, [a.a.Click, a.a.Keydown]),
-				S = Object(i.a)(_, [a.a.Click, a.a.Keydown]),
+				S = Object(i.a)(R, [a.a.Click, a.a.Keydown]),
+				j = Object(i.a)(_, [a.a.Click, a.a.Keydown]),
 				E = Object(r.b)(f);
 			t.c = E(e => {
 				const {
 					caretOnTop: t
 				} = e;
-				return t ? n.a.createElement(j, p({}, e, {
+				return t ? n.a.createElement(S, p({}, e, {
 					targetPosition: ["center", "bottom"],
 					tooltipPosition: ["center", "top"]
-				})) : n.a.createElement(S, p({}, e, {
+				})) : n.a.createElement(j, p({}, e, {
 					targetPosition: ["center", "top"],
 					tooltipPosition: ["center", "bottom"]
 				}))
@@ -1073,11 +1073,11 @@
 				experimentEligibilitySelector: n.a,
 				experimentName: o.qb
 			}), e => ({
-				bucketed: e === o.Uc.ExpandedSearch || e === o.Uc.CollapsedSearch,
-				collapsed: e === o.Uc.CollapsedSearch,
-				expanded: e === o.Uc.ExpandedSearch
+				bucketed: e === o.Sc.ExpandedSearch || e === o.Sc.CollapsedSearch,
+				collapsed: e === o.Sc.CollapsedSearch,
+				expanded: e === o.Sc.ExpandedSearch
 			}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.ffd1bcdf52df4ce78692.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.f13c3756bb0a9123f3b8.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationUnit.729a1be4326c371ea1f6.js
-// Retrieved at 1/5/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationUnit.c7a7c79943b6b9afe35b.js
+// Retrieved at 1/10/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationUnit"], {
 		"./src/reddit/components/NotificationUnit/Avatar.tsx": function(e, t, i) {
@@ -451,12 +451,12 @@
 							isInboxPostEmbedEnabled: V,
 							isInAppNotification: z,
 							isInTooltip: Z,
-							notification: W,
-							shouldHideActionButton: q,
-							setActiveOverflowMenuId: K,
+							notification: K,
+							shouldHideActionButton: W,
+							setActiveOverflowMenuId: q,
 							onItemClick: $
 						} = e;
-					if (!W) return null;
+					if (!K) return null;
 					const {
 						avatar: X,
 						body: J,
@@ -471,7 +471,7 @@
 						readAt: oe,
 						sentAt: se,
 						title: re
-					} = W, ce = null == Q ? void 0 : Q.messageType, le = null === (i = null === (t = null == Q ? void 0 : Q.comment) || void 0 === t ? void 0 : t.parent) || void 0 === i ? void 0 : i.id, de = null === (n = null == Q ? void 0 : Q.post) || void 0 === n ? void 0 : n.id, pe = null == Q ? void 0 : Q.post, me = null === (s = null == Q ? void 0 : Q.subreddit) || void 0 === s ? void 0 : s.id, ue = null == Q ? void 0 : Q.isBodyHidden, be = null == Q ? void 0 : Q.isPostHidden, fe = !oe, ve = `notif-${Z?"tooltip":""}-menu-${ae}`, Ne = ve === R, ge = Q.messageType === v.a.CommentReply, xe = ge ? le : de, he = Object(l.a)(e.className, O.a.notificationItem, {
+					} = K, ce = null == Q ? void 0 : Q.messageType, le = null === (i = null === (t = null == Q ? void 0 : Q.comment) || void 0 === t ? void 0 : t.parent) || void 0 === i ? void 0 : i.id, de = null === (n = null == Q ? void 0 : Q.post) || void 0 === n ? void 0 : n.id, pe = null == Q ? void 0 : Q.post, me = null === (s = null == Q ? void 0 : Q.subreddit) || void 0 === s ? void 0 : s.id, ue = null == Q ? void 0 : Q.isBodyHidden, be = null == Q ? void 0 : Q.isPostHidden, fe = !oe, ve = `notif-${Z?"tooltip":""}-menu-${ae}`, Ne = ve === R, ge = Q.messageType === v.a.CommentReply, xe = ge ? le : de, he = Object(l.a)(e.className, O.a.notificationItem, {
 						[O.a.unread]: fe && !z,
 						[O.a.isNightMode]: B,
 						[O.a.inAppNotification]: z
@@ -529,7 +529,7 @@
 								awardId: Te
 							})),
 							sentAt: se,
-							setActiveOverflowMenuId: K,
+							setActiveOverflowMenuId: q,
 							title: re,
 							isInAppNotification: z
 						}), V && pe && !be && !z && c.a.createElement(m.a, {
@@ -539,7 +539,7 @@
 							className: Object(l.a)(O.a.body, {
 								[O.a.inAppNotification]: z
 							})
-						}, J), !q && (je || we || ge || F && z) && c.a.createElement(I, {
+						}, J), !W && (je || we || ge || F && z) && c.a.createElement(I, {
 							context: Q,
 							notificationId: ae,
 							isUnread: fe,
@@ -769,20 +769,20 @@
 				o = i("./src/reddit/selectors/experiments/index.ts"),
 				s = i("./src/reddit/selectors/experiments/utils.ts");
 			const r = e => Object(a.c)(e, {
-					experimentName: n.Lb,
+					experimentName: n.Kb,
 					experimentEligibilitySelector: o.e
 				}) === n.R.topOfFeedWithCTAs,
 				c = e => (e => Object(a.c)(e, {
-					experimentName: n.Lb,
+					experimentName: n.Kb,
 					experimentEligibilitySelector: o.e
 				}) === n.R.topOfFeedNoCTAs)(e) || r(e),
 				l = e => Object(a.c)(e, {
-					experimentName: n.Lb,
+					experimentName: n.Kb,
 					experimentEligibilitySelector: o.e
 				}) === n.R.floatInFeed,
 				d = e => {
 					const t = Object(a.c)(e, {
-						experimentName: n.Lb,
+						experimentName: n.Kb,
 						experimentEligibilitySelector: o.e
 					});
 					return Object(s.a)(t)
@@ -790,4 +790,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.729a1be4326c371ea1f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.c7a7c79943b6b9afe35b.js.map

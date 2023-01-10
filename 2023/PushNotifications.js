@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PushNotifications.ac75c2b1631e3656eb0b.js
-// Retrieved at 1/5/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PushNotifications.66bb25651453a93eb22a.js
+// Retrieved at 1/10/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -99,13 +99,13 @@
 			const F = e => Object(w.c)(e, {
 				experimentEligibilitySelector: S.S,
 				experimentName: y.vb
-			}) === y.Md;
+			}) === y.Kd;
 			var N = i("./src/reddit/selectors/experiments/delayDnPermission.ts"),
 				x = i("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts");
 			const q = e => Object(w.c)(e, {
-				experimentName: y.bc,
+				experimentName: y.ac,
 				experimentEligibilitySelector: w.a
-			}) === y.Md;
+			}) === y.Kd;
 			var C = i("./src/reddit/selectors/meta.ts");
 			let W = !1;
 			const D = async (e, t) => {
@@ -400,4 +400,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.ac75c2b1631e3656eb0b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.66bb25651453a93eb22a.js.map

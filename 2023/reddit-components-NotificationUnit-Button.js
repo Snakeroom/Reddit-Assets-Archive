@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.45aa34f71fc06632dea0.js
-// Retrieved at 1/5/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.cd00f218830f135dd9cc.js
+// Retrieved at 1/10/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./node_modules/lodash/map.js": function(e, t, s) {
@@ -191,9 +191,9 @@
 						deeplinkUrl: E,
 						isFullWidth: A,
 						isUnread: L,
-						isInAppNotification: U,
-						isNightMode: D,
-						notificationId: P,
+						isInAppNotification: D,
+						isNightMode: P,
+						notificationId: U,
 						onEvent: F
 					} = e,
 					B = null == g ? void 0 : g.messageType,
@@ -219,7 +219,7 @@
 						return r && "r" === n && (t.subredditName = r), i && (t.postId = `${u.b}${i}`), a && (t.commentId = `${u.a}${a}`), t
 					})(E);
 					K = e.postId, J = e.commentId
-				} else B !== f.a.PostReply && B !== f.a.LifecyclePostSuggestions || (J = P);
+				} else B !== f.a.PostReply && B !== f.a.LifecyclePostSuggestions || (J = U);
 				const G = e => {
 					if (K && J) {
 						const e = Object(a.a)(K, J, Object(h.c)(E)),
@@ -238,7 +238,7 @@
 						case f.a.LifecyclePostSuggestions:
 						case f.a.SubredditRecommendation: {
 							const e = W;
-							if (!(V || e || w && U)) return null;
+							if (!(V || e || w && D)) return null;
 							const t = e => {
 									H ? F({
 										position: _.d.SECOND,
@@ -255,12 +255,12 @@
 								priority: m.c.Tertiary,
 								redditStyle: !0,
 								className: Object(i.a)(O.a.notificationButton, {
-									[O.a.isUnread]: L && !U,
-									[O.a.isNightMode]: D,
-									[O.a.inAppNotification]: U,
-									[O.a.isFullWidth]: A && !U
+									[O.a.isUnread]: L && !D,
+									[O.a.isNightMode]: P,
+									[O.a.inAppNotification]: D,
+									[O.a.isFullWidth]: A && !D
 								})
-							}, !U && n.a.createElement(b.a, {
+							}, !D && n.a.createElement(b.a, {
 								name: "text_post",
 								className: O.a.postIcon
 							}), I._("{check out button}", [I._param("check out button", s)], {
@@ -272,7 +272,7 @@
 						case f.a.PostFollow:
 						case f.a.CommentFollow: {
 							const e = M;
-							return M || e || w && U ? n.a.createElement(m.t, {
+							return M || e || w && D ? n.a.createElement(m.t, {
 								onClick: G,
 								kind: m.b.InternalLink,
 								to: E,
@@ -280,12 +280,12 @@
 								priority: m.c.Tertiary,
 								redditStyle: !0,
 								className: Object(i.a)(O.a.notificationButton, {
-									[O.a.isUnread]: L && !U,
-									[O.a.isNightMode]: D,
-									[O.a.inAppNotification]: U,
-									[O.a.isFullWidth]: A && !U
+									[O.a.isUnread]: L && !D,
+									[O.a.isNightMode]: P,
+									[O.a.inAppNotification]: D,
+									[O.a.isFullWidth]: A && !D
 								})
-							}, !U && n.a.createElement(b.a, {
+							}, !D && n.a.createElement(b.a, {
 								name: "reply",
 								className: O.a.replyIcon
 							}), I._("Reply Back", null, {
@@ -309,12 +309,12 @@
 								redditStyle: !0,
 								eventSource: l.a.awardNotification,
 								className: Object(i.a)(O.a.notificationButton, {
-									[O.a.isUnread]: L && !U,
-									[O.a.isNightMode]: D,
-									[O.a.inAppNotification]: U,
-									[O.a.isFullWidth]: A && !U
+									[O.a.isUnread]: L && !D,
+									[O.a.isNightMode]: P,
+									[O.a.inAppNotification]: D,
+									[O.a.isFullWidth]: A && !D
 								})
-							}, !U && n.a.createElement(b.a, {
+							}, !D && n.a.createElement(b.a, {
 								name: "chat_new",
 								className: O.a.replyIcon
 							}), I._("Say thanks", null, {
@@ -334,7 +334,7 @@
 						case f.a.OneOff:
 						case f.a.ModeratedSrViralCommentPost:
 						case f.a.TalkLive: {
-							if (!U) return null;
+							if (!D) return null;
 							const e = e => {
 								switch (e) {
 									case f.a.HFNSubredditInterestingPost:
@@ -380,13 +380,13 @@
 								priority: m.c.Tertiary,
 								redditStyle: !0,
 								className: Object(i.a)(O.a.notificationButton, {
-									[O.a.isNightMode]: D,
+									[O.a.isNightMode]: P,
 									[O.a.inAppNotification]: !0
 								})
 							}, e(B))
 						}
 						default:
-							return w && U ? n.a.createElement(m.t, {
+							return w && D ? n.a.createElement(m.t, {
 								onClick: () => F({
 									position: _.d.SECOND
 								}),
@@ -394,7 +394,7 @@
 								priority: m.c.Tertiary,
 								redditStyle: !0,
 								className: Object(i.a)(O.a.notificationButton, {
-									[O.a.isNightMode]: D,
+									[O.a.isNightMode]: P,
 									[O.a.inAppNotification]: !0
 								})
 							}, I._("See more", null, {
@@ -584,11 +584,11 @@
 				experimentEligibilitySelector: n.a,
 				experimentName: o.qb
 			}), e => ({
-				bucketed: e === o.Uc.ExpandedSearch || e === o.Uc.CollapsedSearch,
-				collapsed: e === o.Uc.CollapsedSearch,
-				expanded: e === o.Uc.ExpandedSearch
+				bucketed: e === o.Sc.ExpandedSearch || e === o.Sc.CollapsedSearch,
+				collapsed: e === o.Sc.CollapsedSearch,
+				expanded: e === o.Sc.ExpandedSearch
 			}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.45aa34f71fc06632dea0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.cd00f218830f135dd9cc.js.map
