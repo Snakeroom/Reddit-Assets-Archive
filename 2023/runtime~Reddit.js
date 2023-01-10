@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.773db6ab9c2e9b77a922.js
-// Retrieved at 1/10/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.82cc5e33038f8a6b150e.js
+// Retrieved at 1/10/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1404,7 +1404,7 @@
 						"ModQueuePages~reddit-components-ModHub-Content-ModQueue": "a3e9a33bb9d9a000c915",
 						ModQueuePages: "56884f767f6dbb17a0cc",
 						"CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5": "5c6c4a3723af3ff9da44",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab": "86517c71f9905e86eac9",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab": "80c25c469ad4891c3fcf",
 						"CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c": "4ce695465078ca8f9684",
 						"CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults": "4481159f985c45169779",
 						"CollectionCommentsPage~ModProgressModule~NewCommunityProgress": "eb148b2027be31d29dc5",
@@ -1787,4 +1787,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.773db6ab9c2e9b77a922.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.82cc5e33038f8a6b150e.js.map

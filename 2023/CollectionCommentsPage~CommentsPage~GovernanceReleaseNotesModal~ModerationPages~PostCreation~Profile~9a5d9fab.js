@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.86517c71f9905e86eac9.js
-// Retrieved at 1/10/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.80c25c469ad4891c3fcf.js
+// Retrieved at 1/10/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -998,25 +998,25 @@
 				} = e, [u, p] = Object(r.useState)(!1), m = Object(z.a)(t), h = Object(r.useRef)(), {
 					height: g,
 					isDeleted: b
-				} = Object(d.e)(e => e.mediaEmbed[c] || {}), f = u ? b ? Qe : g : Xe;
+				} = Object(d.e)(e => e.mediaEmbed[c] || {}), f = u ? b ? Qe : g : Xe, E = s.isListing ? Math.min(f, le.j) : f;
 
-				function E(e) {
+				function v(e) {
 					var t;
 					u || (null === (t = null == h ? void 0 : h.current) || void 0 === t ? void 0 : t.contentWindow) !== e.source || "tweet-measured" !== e.data.action || p(!0)
 				}
-				return Object(r.useEffect)(() => (window.addEventListener("message", E), () => {
-					h.current && Object(Je.b)(h.current), window.removeEventListener("message", E)
+				return Object(r.useEffect)(() => (window.addEventListener("message", v), () => {
+					h.current && Object(Je.b)(h.current), window.removeEventListener("message", v)
 				}), []), Object(r.useEffect)(() => {
 					!t && m && p(!1)
 				}, [m, t]), l.a.createElement(Le.a, ze({}, s, {
 					alwaysWrapMedia: !0,
-					height: f + 8,
+					height: E + 8,
 					showFull: !s.isListing,
 					width: qe
 				}), t && l.a.createElement("div", {
 					className: $e.a.tweetContainer,
 					style: {
-						height: f
+						height: E
 					}
 				}, !u && l.a.createElement("div", {
 					className: Object(k.a)(Object(Be.a)({
@@ -1036,7 +1036,7 @@
 						[$e.a.isInvisible]: !u || b
 					}),
 					fullWidth: !0,
-					height: f,
+					height: E,
 					isListing: s.isListing,
 					isResponsive: !0,
 					isTweet: !0,
@@ -2260,4 +2260,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.86517c71f9905e86eac9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.80c25c469ad4891c3fcf.js.map
