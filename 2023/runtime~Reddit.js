@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.c233388464862ab9c0b1.js
-// Retrieved at 1/10/2023, 8:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.ab205f5435ee6a2165a4.js
+// Retrieved at 1/11/2023, 9:50:05 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1445,7 +1445,7 @@
 						EconPowerupsFlairModal: "652454ee2ef92fc9ec1f",
 						EditCommunityDescriptionModal: "405163c4e2e23a5773ed",
 						EmailCollectionBanner: "205b80ceb6279c3da1c6",
-						EmailVerificationModals: "903bef3ea35727e0b33f",
+						EmailVerificationModals: "f79ac0cb2295249b426c",
 						FramedModal: "435a12d613b2f4634987",
 						FrontpageLinks: "31a3a1a1579ecc5a7d0c",
 						Geotagging: "1728508aa18cf77840e6",
@@ -1787,4 +1787,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.c233388464862ab9c0b1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.ab205f5435ee6a2165a4.js.map
