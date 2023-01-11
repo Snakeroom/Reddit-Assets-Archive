@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.ec33102e687c57a4edf8.js
-// Retrieved at 1/11/2023, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.c43996e43cc96074702f.js
+// Retrieved at 1/11/2023, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -2224,7 +2224,7 @@
 			const D = e => O.d.reCaptchaEnterprise(e) && !Object(T.d)(e),
 				w = e => !!Object(S.c)(e, {
 					experimentEligibilitySelector: Object(I.d)(Object(I.b)(...a.c)),
-					experimentName: f.hf
+					experimentName: f.gf
 				}),
 				j = Object(r.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				C = () => l(e => p()([D, w, e => e.tracking.reCaptchaEnterprise.load === r.a.New], t => t(e)))(async e => {
@@ -2452,7 +2452,7 @@
 							return Object(g.c)(e, {
 								experimentEligibilitySelector: g.a,
 								experimentName: m.Fc
-							}) === m.Id
+							}) === m.Hd
 						}(O) && e === p.d.dropdown) {
 						const n = (e => {
 							var t, n;
@@ -4232,7 +4232,7 @@
 					relativePosition: I
 				} = e;
 				var T, w, j, C, A, P;
-				const R = Object(a.e)(e => Object(H.a)(e, q.pf)),
+				const R = Object(a.e)(e => Object(H.a)(e, q.of)),
 					N = Object(g.a)(),
 					L = (null === (T = o.displayInfo) || void 0 === T ? void 0 : T.karma) || 0,
 					x = (null === (w = o.displayInfo) || void 0 === w ? void 0 : w.subscribers) || 0,
@@ -4373,7 +4373,7 @@
 					searchOriginPage: f
 				} = e;
 				const b = Object(g.a)(),
-					h = Object(a.e)(e => Object(H.a)(e, q.pf)),
+					h = Object(a.e)(e => Object(H.a)(e, q.of)),
 					y = Object(a.e)(O.mb),
 					{
 						nsfwTypeaheadExpanded: v,
@@ -4614,7 +4614,7 @@
 					onUpdateSearchQuery: A
 				} = e, P = Object(a.d)(), [R, N] = Object(r.useState)(null), [L, x] = Object(r.useState)(n), [M, B] = Object(r.useState)(new Array(Ee).fill(!1)), {
 					enabled: F
-				} = Object(a.e)(ne.j), G = Object(a.e)(e => Object(H.a)(e, q.pf)), V = !!(null === (t = g.searchQuery) || void 0 === t ? void 0 : t.trim()), Q = l || i, K = F, Y = [...b.communities, ...b.people, ...b.nsfw], $ = !l && (!V || h >= 0) && (G ? 0 === Y.length : 0 === f.length) && !K, z = {
+				} = Object(a.e)(ne.j), G = Object(a.e)(e => Object(H.a)(e, q.of)), V = !!(null === (t = g.searchQuery) || void 0 === t ? void 0 : t.trim()), Q = l || i, K = F, Y = [...b.communities, ...b.people, ...b.nsfw], $ = !l && (!V || h >= 0) && (G ? 0 === Y.length : 0 === f.length) && !K, z = {
 					width: L ? `${L}px` : "inherit",
 					overflow: "auto"
 				};
@@ -5008,10 +5008,10 @@
 				b = n("./node_modules/reselect/es/index.js");
 			const h = Object(b.a)(e => Object(f.c)(e, {
 				experimentEligibilitySelector: f.a,
-				experimentName: p.dg
+				experimentName: p.cg
 			}), e => ({
-				promptBeforeClick: e === p.eg.PromptBeforeClick,
-				promptAfterClick: e === p.eg.PromptAfterClick
+				promptBeforeClick: e === p.dg.PromptBeforeClick,
+				promptAfterClick: e === p.dg.PromptAfterClick
 			}));
 			var y = n("./src/reddit/controls/Search/SearchScopePill/index.tsx"),
 				m = n("./src/reddit/controls/Search/SearchBar/index.m.less"),
@@ -25414,7 +25414,7 @@
 					if (!u(e)) return;
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: l,
-						experimentName: a.be,
+						experimentName: a.ae,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -25437,9 +25437,9 @@
 				},
 				b = e => !!p(e) && Object(o.c)(e, {
 					experimentEligibilitySelector: u,
-					experimentName: a.ce,
+					experimentName: a.be,
 					expEventOverride: !1
-				}) !== a.de.Readonly
+				}) !== a.ce.Readonly
 		},
 		"./src/reddit/selectors/removedPosts.ts": function(e, t, n) {
 			"use strict";
@@ -25583,4 +25583,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.ec33102e687c57a4edf8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.c43996e43cc96074702f.js.map

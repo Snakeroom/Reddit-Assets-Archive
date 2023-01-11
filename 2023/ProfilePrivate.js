@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.2e13ea24190f36452a95.js
-// Retrieved at 1/11/2023, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.831a9f0f36888a035008.js
+// Retrieved at 1/11/2023, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -812,7 +812,7 @@
 						postId: n,
 						author: r
 					} = t;
-					return Object(h.e)(x.o) && s.roomStatus === f.b.NotStarted ? o.a.createElement(j.a, {
+					return Object(h.e)(x.n) && s.roomStatus === f.b.NotStarted ? o.a.createElement(j.a, {
 						postId: n,
 						author: r,
 						roomId: s.roomId,
@@ -2951,7 +2951,7 @@
 			const b = Object(p.a)(e => Object(u.c)(e, {
 				experimentEligibilitySelector: u.a,
 				experimentName: m.rc
-			}), e => e === m.Id);
+			}), e => e === m.Hd);
 			var h = s("./node_modules/fbt/lib/FbtPublic.js"),
 				f = s("./src/lib/classNames/index.ts"),
 				x = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
@@ -7102,7 +7102,7 @@
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
 					experimentName: n.D
-				}) === n.Id
+				}) === n.Hd
 			}
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, s) {
@@ -7203,4 +7203,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.2e13ea24190f36452a95.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.831a9f0f36888a035008.js.map

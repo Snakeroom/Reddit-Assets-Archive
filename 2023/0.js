@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/0.dcfad0c90a716a314e89.js
-// Retrieved at 1/5/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/0.e4d87492d75a3d424565.js
+// Retrieved at 1/11/2023, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[0], {
 		"./src/reddit/icons/svgs/AddCollection/index.tsx": function(e, s, t) {
@@ -2288,37 +2288,6 @@
 				d: "M5,15a1,1,0,0,1-1-1V11.17a1,1,0,0,1,.29-.7l8.09-8.09a1,1,0,0,1,1.41,0l2.83,2.83a1,1,0,0,1,0,1.41L8.54,14.71a1,1,0,0,1-.71.29Zm12,1a1,1,0,0,1,0,2H3a1,1,0,0,1,0-2Z"
 			}))
 		},
-		"./src/reddit/icons/svgs/PowerupTier2/index.tsx": function(e, s, t) {
-			"use strict";
-			var a = t("./node_modules/react/index.js"),
-				n = t.n(a);
-			s.a = e => n.a.createElement("svg", {
-				className: e.className,
-				viewBox: "0 0 74 74",
-				fill: "none",
-				xmlns: "http://www.w3.org/2000/svg",
-				onClick: e.onClick,
-				onMouseEnter: e.onMouseEnter,
-				onMouseLeave: e.onMouseLeave,
-				id: e.id,
-				"data-testid": "bolt-tier2"
-			}, e.title && n.a.createElement("title", null, e.title), n.a.createElement("path", {
-				d: "M28.03 73.65h-.08a3.47 3.47 0 01-2.48-1.15l-6.93-7.59a3.47 3.47 0 01-.69-3.63l4.5-10.73H19.6a3.47 3.47 0 01-2.56-1.15L10.1 41.8a3.47 3.47 0 01-.67-3.65L24.86 2.62A3.47 3.47 0 0128.02.54l29.8-.2a3.47 3.47 0 012.55 1.16L67.3 9.1a3.47 3.47 0 01.16 4.5l-7.5 9.54c.27.16.51.36.72.6l6.94 7.58a3.47 3.47 0 01-.12 4.82L30.47 72.66c-.65.64-1.53 1-2.44 1zM25.1 61.9l3.06 3.31L60.3 33.53l-3.64-4.03h-3.47a3.47 3.47 0 01-2.72-5.62l9.75-12.32-3.93-4.28-25.96.17L16.7 38.8l4.4 4.8h6.45a3.47 3.47 0 013.2 4.81L25.1 61.9z",
-				fill: "#000"
-			}), n.a.createElement("path", {
-				d: "M34.1 11.6l22.76-7.78 6.99 7.58-17.58 22.21 10.94-7.58 6.98 7.58L27.1 70.18l-6.98-7.58L28.77 47l-10.1.06-7-7.58 22.43-27.9z",
-				fill: "#FF7A00"
-			}), n.a.createElement("path", {
-				d: "M27.11 4.01l29.75-.2L39.3 26.04H57.2L20.11 62.6l9.69-23.1-18.12-.01L27.1 4z",
-				fill: "#FFD15C"
-			}), n.a.createElement("path", {
-				d: "M35.79 35.25H17.77l11.74-27 18.8-.13-17.53 22.16h16.28l-17 17.75 5.73-12.78z",
-				fill: "#FFF5C7"
-			}), n.a.createElement("path", {
-				d: "M54.32 26.03H36.77l20-3.03-2.45 3.03zM26.1 48.32l4.34-10.37-7.97 10.14 3.64.23z",
-				fill: "#000"
-			}))
-		},
 		"./src/reddit/icons/svgs/Premium/index.tsx": function(e, s, t) {
 			"use strict";
 			var a = t("./node_modules/react/index.js"),
@@ -4191,7 +4160,6 @@
 			t("./src/reddit/icons/svgs/Pencil/index.tsx"), t("./src/reddit/icons/svgs/Person/index.tsx");
 			t("./src/reddit/icons/svgs/Planet/index.tsx"), t("./src/reddit/icons/svgs/Plus/index.tsx"), t("./src/reddit/icons/svgs/PlusCircle/index.tsx"), t("./src/reddit/icons/svgs/Poll/index.tsx");
 			t("./src/reddit/icons/svgs/PositionCenter/index.tsx"), t("./src/reddit/icons/svgs/PositionLeft/index.tsx"), t("./src/reddit/icons/svgs/PositionRight/index.tsx"), t("./src/reddit/icons/svgs/Positive/index.tsx"), t("./src/reddit/icons/svgs/Post/index.tsx");
-			t("./src/reddit/icons/svgs/PowerupTier2/index.tsx");
 			t("./src/reddit/icons/svgs/Premium/index.tsx"), t("./src/reddit/icons/svgs/PremiumCircle/index.tsx"), t("./src/reddit/icons/svgs/PremiumLogo/index.tsx"), t("./src/reddit/icons/svgs/PresenceCircle/index.tsx"), t("./src/reddit/icons/svgs/ProfileSlashed/index.tsx"), t("./src/reddit/icons/svgs/QuarantineWarning/index.tsx");
 			var h = e => n.a.createElement("svg", {
 				className: e.className,
@@ -4223,4 +4191,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/0.dcfad0c90a716a314e89.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/0.e4d87492d75a3d424565.js.map

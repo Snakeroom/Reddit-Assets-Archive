@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.6de2019a635d08db2f7e.js
-// Retrieved at 1/11/2023, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.6b731079b761406e4d19.js
+// Retrieved at 1/11/2023, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~SubredditForkingCTA"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, r) {
@@ -53,7 +53,7 @@
 			const h = Object(b.a)(e => Object(p.c)(e, {
 				experimentEligibilitySelector: m.S,
 				experimentName: f.Pb
-			}), e => e === f.Id);
+			}), e => e === f.Hd);
 			var O = r("./src/reddit/actions/toaster.ts");
 			const y = "SUBREDDIT_COUNTRY_SITE__LOADED",
 				_ = "SUBREDDIT_COUNTRY_SITE__CHANGED",
@@ -1470,7 +1470,7 @@
 								postFieldValidationPending: Promise.resolve()
 							})), Object(l.b)(D)
 						}
-						await t(Object(s.b)(`${r.path}`)), p ? p === b.Ie.NewModule && t(Object(c.h)({
+						await t(Object(s.b)(`${r.path}`)), p ? p === b.He.NewModule && t(Object(c.h)({
 							tooltipId: u.MOD_WELCOME_TOOLTIP_ID
 						})) : (t(Object(o.h)(f.a.POST_FLOW_UPSELL_MODAL_ID)), Object(k.a)(Object(E.g)()(T))), Object(j.b)(j.a.SubredditCreation), t(Object(x.f)(d, null !== (g = Object(C.db)(T)) && void 0 !== g ? g : Object(P.k)(T)))
 					} else w.error && Object(k.a)(Object(E.h)(w.error.type, N)(T)), t(U({
@@ -2209,7 +2209,7 @@
 					let t = [];
 					if (e.document) {
 						const r = e.document || [];
-						t = Object(d.e)(r)
+						t = Object(d.d)(r)
 					}
 					return t
 				},
@@ -2955,4 +2955,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.6de2019a635d08db2f7e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.6b731079b761406e4d19.js.map

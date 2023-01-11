@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.8fb4385dd0d2e2c902fc.js
-// Retrieved at 1/11/2023, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.adc7a25bb1515f8dee54.js
+// Retrieved at 1/11/2023, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -5978,7 +5978,7 @@
 						externalLink: i,
 						onClick: a
 					} = e;
-					const d = i || Object(b.h)(t),
+					const d = i || Object(b.g)(t),
 						c = Object(o.useRef)(null),
 						[l, m] = Object(o.useState)(!1),
 						[u, p] = Object(o.useState)(null),
@@ -5989,7 +5989,7 @@
 									isIntersecting: n
 								} = e;
 								!l && n && (m(!0), async function(e, t) {
-									const n = Object(b.g)(e);
+									const n = Object(b.f)(e);
 									t((await Object(g.a)(n)).data.user)
 								}(t, e => {
 									h.current && p(e)
@@ -6186,7 +6186,7 @@
 							ext: d,
 							s: c
 						} = e;
-						return Object(b.i)(a) ? r.a.createElement(y, {
+						return Object(b.h)(a) ? r.a.createElement(y, {
 							key: t,
 							id: a,
 							mp4Url: c.mp4,
@@ -6484,7 +6484,7 @@
 						key: e
 					}, a.a.createElement("br", null)))(s);
 					const i = e.c[0];
-					return i.e !== u.m && i.e !== u.a || !Object(w.i)(i.id) ? a.a.createElement(d.j, {
+					return i.e !== u.m && i.e !== u.a || !Object(w.h)(i.id) ? a.a.createElement(d.j, {
 						key: s
 					}, D(e.c, t, n, o)) : Object(j.b)({
 						node: i,
@@ -6738,12 +6738,12 @@
 						rtJsonElementProps: i
 					});
 					switch (r) {
-						case h.Gf.SmIcon:
+						case h.Ff.SmIcon:
 							return o.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case h.Gf.SmIconHc:
+						case h.Ff.SmIconHc:
 							return o.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -8346,7 +8346,7 @@
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
 					experimentName: s.D
-				}) === s.Id
+				}) === s.Hd
 			}
 		},
 		"./src/reddit/selectors/experiments/realtimeMQUpdates.ts": function(e, t, n) {
@@ -8361,7 +8361,7 @@
 			const a = e => Object(i.a)(e) && Object(o.c)(e, {
 				experimentEligibilitySelector: r.S,
 				experimentName: s.uc
-			}) === s.Id
+			}) === s.Hd
 		},
 		"./src/reddit/selectors/subredditMention.ts": function(e, t, n) {
 			"use strict";
@@ -8386,12 +8386,12 @@
 				d = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Af
+						experimentName: s.zf
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.Gf.SmIcon || t === s.Gf.SmIconHc
+					return t === s.Ff.SmIcon || t === s.Ff.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -8429,4 +8429,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.8fb4385dd0d2e2c902fc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.adc7a25bb1515f8dee54.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.d199a54b678beac8f65e.js
-// Retrieved at 1/11/2023, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.9dffb38c4242ba3214c6.js
+// Retrieved at 1/11/2023, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -5574,7 +5574,7 @@
 						externalLink: i,
 						onClick: a
 					} = e;
-					const d = i || Object(b.h)(t),
+					const d = i || Object(b.g)(t),
 						c = Object(r.useRef)(null),
 						[l, u] = Object(r.useState)(!1),
 						[m, p] = Object(r.useState)(null),
@@ -5585,7 +5585,7 @@
 									isIntersecting: s
 								} = e;
 								!l && s && (u(!0), async function(e, t) {
-									const s = Object(b.g)(e);
+									const s = Object(b.f)(e);
 									t((await Object(E.a)(s)).data.user)
 								}(t, e => {
 									h.current && p(e)
@@ -5782,7 +5782,7 @@
 							ext: d,
 							s: c
 						} = e;
-						return Object(b.i)(a) ? o.a.createElement(S, {
+						return Object(b.h)(a) ? o.a.createElement(S, {
 							key: t,
 							id: a,
 							mp4Url: c.mp4,
@@ -6080,7 +6080,7 @@
 						key: e
 					}, a.a.createElement("br", null)))(n);
 					const i = e.c[0];
-					return i.e !== m.m && i.e !== m.a || !Object(N.i)(i.id) ? a.a.createElement(d.j, {
+					return i.e !== m.m && i.e !== m.a || !Object(N.h)(i.id) ? a.a.createElement(d.j, {
 						key: n
 					}, F(e.c, t, s, r)) : Object(y.b)({
 						node: i,
@@ -6321,12 +6321,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case h.Gf.SmIcon:
+						case h.Ff.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: i
 							});
-						case h.Gf.SmIconHc:
+						case h.Ff.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -8058,7 +8058,7 @@
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
 						experimentName: n.Ib
-					}) === n.Id
+					}) === n.Hd
 				})(e)
 			}
 		},
@@ -8077,15 +8077,15 @@
 			const d = Object(i.a)(a.S, e => !e),
 				c = Object(i.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: d,
-					experimentName: n.rf
-				}), e => e === n.Id),
+					experimentName: n.qf
+				}), e => e === n.Hd),
 				l = Object(i.a)(c, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? t : o.a.Off),
 				u = Object(i.a)(l, e => e === o.a.Treatment),
 				m = (e, t) => {
 					const s = l(t());
 					d(t()) && s !== o.a.Off && e.block(e => {
 						if ((e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname))
-							if (s === o.a.Control) Object(r.d)(t(), n.sf, n.N.Control1);
+							if (s === o.a.Control) Object(r.d)(t(), n.rf, n.N.Control1);
 							else if (s === o.a.Treatment) return window.location.href = e.pathname, !1
 					})
 				}
@@ -8103,7 +8103,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(r.gg)(t)
+					return Boolean(t) && !Object(r.fg)(t)
 				},
 				d = Object(n.a)(a, o.d, (e, t) => e && !t)
 		},
@@ -8193,12 +8193,12 @@
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.Af
+						experimentName: n.zf
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.Gf.SmIcon || t === n.Gf.SmIconHc
+					return t === n.Ff.SmIcon || t === n.Ff.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -8236,4 +8236,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.d199a54b678beac8f65e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.9dffb38c4242ba3214c6.js.map

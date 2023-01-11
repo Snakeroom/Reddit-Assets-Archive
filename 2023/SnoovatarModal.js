@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SnoovatarModal.d5aa26cf0ef637408a9a.js
-// Retrieved at 1/11/2023, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SnoovatarModal.22a9c107dbc167b8a2c4.js
+// Retrieved at 1/11/2023, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SnoovatarModal"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, r) {
@@ -70,14 +70,14 @@
 					activeTab: k,
 					activeMeSubpage: C,
 					shopTabState: N
-				} = r, w = Object(s.useMemo)(() => ({
+				} = r, y = Object(s.useMemo)(() => ({
 					activeTab: k || void 0,
 					activeMeSubpage: C || void 0,
 					activeDetails: A || void 0,
 					shopTabState: N || void 0
-				}), [A, k, C, N]), y = Object(o.e)(e => !Object(m.S)(e) && Object(p.w)(e));
+				}), [A, k, C, N]), R = Object(o.e)(e => !Object(m.S)(e) && Object(p.v)(e));
 				if (!j || !_) return null;
-				if (y) return a.a.createElement("div", {
+				if (R) return a.a.createElement("div", {
 					className: Object(c.a)(b.a.container, {
 						[b.a.containerExp]: E
 					})
@@ -85,7 +85,7 @@
 					openLogin: M,
 					fancyBackground: !0
 				}));
-				const R = {
+				const T = {
 					...h,
 					config: {
 						...h.config,
@@ -100,8 +100,8 @@
 						[b.a.snoovatarModalBuilderV2]: t,
 						[b.a.containerExp]: E
 					})
-				}, a.a.createElement(n.a, x({}, R, {
-					navState: w,
+				}, a.a.createElement(n.a, x({}, T, {
+					navState: y,
 					isModal: t
 				}), a.a.createElement(n.b, null)))
 			}
@@ -227,9 +227,9 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(s.a)(n.qd)
+			const a = Object(s.a)(n.pd)
 		},
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.d5aa26cf0ef637408a9a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.22a9c107dbc167b8a2c4.js.map

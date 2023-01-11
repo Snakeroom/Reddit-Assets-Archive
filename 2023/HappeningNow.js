@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HappeningNow.c63c16b798feee32359a.js
-// Retrieved at 1/11/2023, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HappeningNow.671dadfcd437a6bfcfda.js
+// Retrieved at 1/11/2023, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HappeningNow"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1765,7 +1765,7 @@
 						externalLink: o,
 						onClick: i
 					} = e;
-					const l = o || Object(h.h)(t),
+					const l = o || Object(h.g)(t),
 						c = Object(s.useRef)(null),
 						[d, u] = Object(s.useState)(!1),
 						[m, p] = Object(s.useState)(null),
@@ -1776,7 +1776,7 @@
 									isIntersecting: n
 								} = e;
 								!d && n && (u(!0), async function(e, t) {
-									const n = Object(h.g)(e);
+									const n = Object(h.f)(e);
 									t((await Object(C.a)(n)).data.user)
 								}(t, e => {
 									b.current && p(e)
@@ -1973,7 +1973,7 @@
 							ext: l,
 							s: c
 						} = e;
-						return Object(h.i)(i) ? a.a.createElement(j, {
+						return Object(h.h)(i) ? a.a.createElement(j, {
 							key: t,
 							id: i,
 							mp4Url: c.mp4,
@@ -2271,7 +2271,7 @@
 						key: e
 					}, i.a.createElement("br", null)))(r);
 					const o = e.c[0];
-					return o.e !== m.m && o.e !== m.a || !Object(S.i)(o.id) ? i.a.createElement(l.j, {
+					return o.e !== m.m && o.e !== m.a || !Object(S.h)(o.id) ? i.a.createElement(l.j, {
 						key: r
 					}, A(e.c, t, n, s)) : Object(_.b)({
 						node: o,
@@ -2512,12 +2512,12 @@
 						rtJsonElementProps: o
 					});
 					switch (a) {
-						case b.Gf.SmIcon:
+						case b.Ff.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: r,
 								rtJsonElementProps: o
 							});
-						case b.Gf.SmIconHc:
+						case b.Ff.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: r,
 								isHoverable: !0,
@@ -3939,12 +3939,12 @@
 				l = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: r.Af
+						experimentName: r.zf
 					}) || ""
 				},
 				c = e => {
 					const t = l(e);
-					return t === r.Gf.SmIcon || t === r.Gf.SmIconHc
+					return t === r.Ff.SmIcon || t === r.Ff.SmIconHc
 				},
 				d = (e, t) => {
 					let {
@@ -3973,4 +3973,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.c63c16b798feee32359a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.671dadfcd437a6bfcfda.js.map

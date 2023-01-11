@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.2e5451bff82917487d69.js
-// Retrieved at 1/5/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.97fddaf2baa00342f0ac.js
+// Retrieved at 1/11/2023, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -5767,7 +5767,7 @@
 							default:
 								throw new Error("Invalid media type")
 						}
-						return Object(mi.i)(t) ? Object(gi.l)([n]) : n
+						return Object(mi.h)(t) ? Object(gi.l)([n]) : n
 					}
 				};
 			var Bi, Ii = n("./src/reddit/constants/componentSizes.ts"),
@@ -5966,7 +5966,7 @@
 					const a = t.content;
 					if (1 === e.length && (e[0].e === Wn.m || e[0].e === Wn.a)) {
 						const n = e[0];
-						if (Object(mi.i)(n.id)) return void t.blocks.push(...Fi(n, r.mediaMetadataMap, Object(N.q)(r.editorType)))
+						if (Object(mi.h)(n.id)) return void t.blocks.push(...Fi(n, r.mediaMetadataMap, Object(N.q)(r.editorType)))
 					}
 					const {
 						charList: l,
@@ -7088,7 +7088,7 @@
 							data: Object(s.Map)({
 								mediaAsset: {
 									type: o.AnimatedImage,
-									assetId: Object(p.d)(e, i),
+									assetId: Object(p.c)(e, i),
 									imageUrl: n,
 									width: c,
 									height: a
@@ -8042,4 +8042,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.2e5451bff82917487d69.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.97fddaf2baa00342f0ac.js.map

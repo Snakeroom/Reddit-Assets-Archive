@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.e8f6a8fefcfade9922a5.js
-// Retrieved at 1/11/2023, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.5d2521bbe2f582cef9d2.js
+// Retrieved at 1/11/2023, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -746,7 +746,7 @@
 						postId: o,
 						author: r
 					} = t;
-					return Object(f.e)(_.o) && s.roomStatus === h.b.NotStarted ? n.a.createElement(P.a, {
+					return Object(f.e)(_.n) && s.roomStatus === h.b.NotStarted ? n.a.createElement(P.a, {
 						postId: o,
 						author: r,
 						roomId: s.roomId,
@@ -1939,7 +1939,7 @@
 			const b = Object(p.a)(e => Object(m.c)(e, {
 				experimentEligibilitySelector: m.a,
 				experimentName: u.rc
-			}), e => e === u.Id);
+			}), e => e === u.Hd);
 			var f = s("./node_modules/fbt/lib/FbtPublic.js"),
 				h = s("./src/lib/classNames/index.ts"),
 				_ = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
@@ -3899,10 +3899,10 @@
 				n = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const a = Object(o.a)(e => Object(r.c)(e, {
-					experimentName: n.Sf,
+					experimentName: n.Rf,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				i = Object(o.a)(a, e => e === n.Mf)
+				i = Object(o.a)(a, e => e === n.Lf)
 		},
 		"./src/reddit/selectors/removedPosts.ts": function(e, t, s) {
 			"use strict";
@@ -3996,4 +3996,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.e8f6a8fefcfade9922a5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.5d2521bbe2f582cef9d2.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.68d0fc6bf38de3aaf1ba.js
-// Retrieved at 1/11/2023, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.86536c00c83dbc10fb58.js
+// Retrieved at 1/11/2023, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -432,7 +432,7 @@
 				V = n("./src/lib/initializeClient/installReducer.ts"),
 				q = n("./src/reddit/reducers/features/marketplace/index.ts"),
 				U = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const W = Object(U.a)(b.Nd);
+			const W = Object(U.a)(b.Md);
 			var H = n("./src/redditGQL/types.ts");
 			Object(V.a)({
 				features: {
@@ -469,7 +469,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.gg)(p),
+						includeInterestTopics: !!p && !Object(b.fg)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: h && !(null === (s = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === s ? void 0 : s.total),
@@ -3092,9 +3092,9 @@
 						Ie = Object(i.e)(ee.U),
 						Te = Object(i.e)(ye.g),
 						we = Object(i.e)(In.a),
-						Pe = we === ke.Nf.CloseOnboarding,
-						Re = we === ke.Nf.SkipTopicSelection,
-						Le = we === ke.Nf.SmartSignal,
+						Pe = we === ke.Mf.CloseOnboarding,
+						Re = we === ke.Mf.SkipTopicSelection,
+						Le = we === ke.Mf.SmartSignal,
 						Ge = Object(r.useCallback)(() => {
 							s(Object(b.g)(Kt.a.ONBOARDING_MODAL_D2X)), Ne && s(Object(g.h)()), h && (a(Object(L.t)()), Object(jn.a)()), Te && Ie && s(Object(m.startChangeUsernameFlow)())
 						}, [s, Ie, Te, h, Ne, a]),
@@ -3235,11 +3235,11 @@
 						className: ne.a.subtitle
 					}, function(e) {
 						switch (e) {
-							case ke.Oe.Ads:
+							case ke.Ne.Ads:
 								return Fn._("Tell us about yourself to improve your recommendations and ads.", null, {
 									hk: "tlFdQ"
 								});
-							case ke.Oe.AdsUpdateSettings:
+							case ke.Ne.AdsUpdateSettings:
 								return Fn._("Tell us about yourself to improve your recommendations and ads. You can update this any time in settings.", null, {
 									hk: "CbUFt"
 								});
@@ -5096,8 +5096,8 @@
 			const r = e => {
 				return !(Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: s.qe
-				}) === s.Id)
+					experimentName: s.pe
+				}) === s.Hd)
 			}
 		},
 		"./src/redditGQL/operations/Frontpage.json": function(e) {
@@ -5132,4 +5132,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.68d0fc6bf38de3aaf1ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.86536c00c83dbc10fb58.js.map

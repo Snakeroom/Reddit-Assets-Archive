@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.2ed6523250f9a0aed20c.js
-// Retrieved at 1/11/2023, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.72a3a792914431182834.js
+// Retrieved at 1/11/2023, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -395,9 +395,9 @@
 		"./src/reddit/actions/notificationsInbox/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "d", (function() {
-				return A
-			})), n.d(t, "e", (function() {
 				return L
+			})), n.d(t, "e", (function() {
+				return A
 			})), n.d(t, "b", (function() {
 				return G
 			})), n.d(t, "i", (function() {
@@ -453,7 +453,7 @@
 			const k = Object(o.a)(c.e),
 				P = Object(o.a)(c.b),
 				w = Object(o.a)(c.a),
-				A = e => async (t, n, r) => {
+				L = e => async (t, n, r) => {
 					let {
 						gqlContext: o
 					} = r;
@@ -475,7 +475,7 @@
 						t(R(m.notifications, e.length))
 					}
 					t(P(m)), t(Object(i.b)(m.banners))
-				}, L = () => async (e, t, n) => {
+				}, A = () => async (e, t, n) => {
 					let {
 						gqlContext: r
 					} = n;
@@ -1404,18 +1404,18 @@
 					user: k,
 					userName: P,
 					wrapperClassName: w,
-					style: A,
-					...L
+					style: L,
+					...A
 				} = e, D = !!i && Object(l.e)(i) === P, U = D ? i : k, R = U && U.accountIcon || c, M = k ? k.isNSFW : p, B = Object(d.a)(R) && !b, G = B ? s.a.createElement(_.a, {
 					headshot: R,
 					className: e.className,
 					hasNftBorder: m && Object(d.d)(c),
-					style: A
-				}) : s.a.createElement(x.b, S({}, L, {
+					style: L
+				}) : s.a.createElement(x.b, S({}, A, {
 					iconUrl: b && n ? "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png" : R,
 					isCurrentUser: D,
 					isNSFW: M,
-					style: A
+					style: L
 				})), [F, H] = Object(o.useState)(!1), V = Object(o.useMemo)(() => ({
 					input: {
 						channel: {
@@ -1836,9 +1836,9 @@
 			})), n.d(t, "o", (function() {
 				return w
 			})), n.d(t, "y", (function() {
-				return A
-			})), n.d(t, "z", (function() {
 				return L
+			})), n.d(t, "z", (function() {
+				return A
 			})), n.d(t, "p", (function() {
 				return D
 			}));
@@ -2219,7 +2219,7 @@
 						id: e
 					}
 				}),
-				A = e => t => ({
+				L = e => t => ({
 					...u.o(t),
 					action: d.c.RECEIVE,
 					noun: "inbox_banner",
@@ -2231,7 +2231,7 @@
 						id: e
 					}
 				}),
-				L = e => t => ({
+				A = e => t => ({
 					...u.o(t),
 					action: d.c.VIEW,
 					noun: "inbox_banner",
@@ -2267,9 +2267,9 @@
 			})), n.d(t, "q", (function() {
 				return w
 			})), n.d(t, "n", (function() {
-				return A
-			})), n.d(t, "r", (function() {
 				return L
+			})), n.d(t, "r", (function() {
+				return A
 			})), n.d(t, "c", (function() {
 				return D
 			})), n.d(t, "k", (function() {
@@ -2425,13 +2425,13 @@
 								sort: c = s.Jb,
 								t: a = s.Kb
 							} = i;
-							Object(T.a)(A(o, c, n, r, a)(t));
+							Object(T.a)(L(o, c, n, r, a)(t));
 							break
 						}
 						case s.Sb.PROFILE_PRIVATE: {
 							const o = Object(u.d)(e, t);
 							if (!o) return;
-							Object(T.a)(L(o)(r, n)(t));
+							Object(T.a)(A(o)(r, n)(t));
 							break
 						}
 						case s.Sb.FOLLOWERS:
@@ -2597,7 +2597,7 @@
 						adblock: N.e(s)
 					}
 				},
-				A = (e, t, n, r, o) => s => {
+				L = (e, t, n, r, o) => s => {
 					const i = N.W(s, e);
 					i && (i.sort = t, o && (i.sortTime = o));
 					const {
@@ -2619,7 +2619,7 @@
 						adblock: N.e(s)
 					}
 				},
-				L = e => (t, n) => r => {
+				A = e => (t, n) => r => {
 					const o = !r.profilePrivatePage.api.error[e] && !r.profilePrivatePage.api.pending[e];
 					return {
 						source: "global",
@@ -3414,7 +3414,7 @@
 					return r ? r * o.Xb < 1639443600180 ? void 0 : O(e) : void 0
 				},
 				O = Object(r.a)(e => Object(c.c)(e, {
-					experimentName: s.Ae,
+					experimentName: s.ze,
 					experimentEligibilitySelector: a.e
 				}), d.a)
 		},
@@ -3524,4 +3524,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.2ed6523250f9a0aed20c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.72a3a792914431182834.js.map

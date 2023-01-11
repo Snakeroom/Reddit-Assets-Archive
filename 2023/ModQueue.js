@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.34fe8e03dcd4a6fa8752.js
-// Retrieved at 1/11/2023, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.846a16da0eaf8a188e8f.js
+// Retrieved at 1/11/2023, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, o) {
@@ -1848,7 +1848,7 @@
 			const d = e => Object(r.c)(e, {
 				experimentEligibilitySelector: n.S,
 				experimentName: s.Vb
-			}) === s.Id
+			}) === s.Hd
 		},
 		"./src/reddit/selectors/experiments/realtimeMQUpdates.ts": function(e, t, o) {
 			"use strict";
@@ -1862,7 +1862,7 @@
 			const i = e => Object(d.a)(e) && Object(r.c)(e, {
 				experimentEligibilitySelector: n.S,
 				experimentName: s.uc
-			}) === s.Id
+			}) === s.Hd
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, o) {
 			"use strict";
@@ -1946,4 +1946,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.34fe8e03dcd4a6fa8752.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.846a16da0eaf8a188e8f.js.map
