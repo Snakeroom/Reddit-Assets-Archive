@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlowNew.f025f7696999c9a6e281.js
-// Retrieved at 1/10/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlowNew.a4c026d2eedd89c697ff.js
+// Retrieved at 1/11/2023, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlowNew"], {
 		"./src/reddit/actions/blockedRedditors.ts": function(e, t, o) {
@@ -317,8 +317,8 @@
 				S = o("./src/reddit/contexts/ApiContext.tsx"),
 				C = o("./src/reddit/models/Toast/index.ts"),
 				A = o("./src/reddit/models/WhitelistAndBlocked.ts"),
-				E = o("./src/reddit/selectors/commentSelector.ts"),
-				I = o("./src/reddit/selectors/experiments/reportAd.ts"),
+				I = o("./src/reddit/selectors/commentSelector.ts"),
+				E = o("./src/reddit/selectors/experiments/reportAd.ts"),
 				F = o("./src/reddit/selectors/meta.ts"),
 				P = o("./src/reddit/selectors/posts.ts"),
 				T = o("./src/reddit/selectors/user.ts"),
@@ -345,7 +345,7 @@
 						let {
 							commentId: o
 						} = t;
-						return o ? Object(E.c)(e, {
+						return o ? Object(I.c)(e, {
 							commentId: o
 						}) : null
 					},
@@ -354,7 +354,7 @@
 						const {
 							commentId: r,
 							postId: s
-						} = t, n = r ? Object(E.c)(e, {
+						} = t, n = r ? Object(I.c)(e, {
 							commentId: r
 						}) : null, i = s ? Object(P.G)(e, {
 							postId: s
@@ -364,7 +364,7 @@
 					}),
 					isNightmodeOn: T.fb,
 					locale: F.k,
-					isReportAnAdEnabled: I.a
+					isReportAnAdEnabled: E.a
 				}),
 				K = Object(c.b)(Q, (e, t) => {
 					let {
@@ -1012,10 +1012,10 @@
 				s = o("./src/reddit/constants/experiments.ts"),
 				n = o("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(r.a)(e => Object(n.c)(e, {
-					experimentName: s.Ec,
+					experimentName: s.Cc,
 					experimentEligibilitySelector: n.a
 				}), e => e),
-				d = Object(r.a)(i, e => e === s.Kd)
+				d = Object(r.a)(i, e => e === s.Id)
 		},
 		"./src/redditGQL/operations/CreateLiveAudioRoomOnProfile.json": function(e) {
 			e.exports = JSON.parse('{"id":"e35a47c6aa21"}')
@@ -1058,4 +1058,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.f025f7696999c9a6e281.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.a4c026d2eedd89c697ff.js.map

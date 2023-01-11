@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NsfwBlockingModal.299f88d1bb82d1f70dad.js
-// Retrieved at 1/10/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NsfwBlockingModal.cbdcb028ade2f42eed33.js
+// Retrieved at 1/11/2023, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NsfwBlockingModal"], {
 		"./src/reddit/components/Footer/index.m.less": function(e, t, n) {
@@ -68,10 +68,10 @@
 				u = n.n(b),
 				p = n("./src/reddit/contexts/PageLayer/selectors.ts"),
 				_ = n("./src/reddit/helpers/name/index.ts"),
-				f = n("./src/reddit/selectors/platform.ts");
+				g = n("./src/reddit/selectors/platform.ts");
 
-			function g() {
-				return (g = Object.assign || function(e) {
+			function f() {
+				return (f = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -82,7 +82,7 @@
 			const {
 				fbt: C
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), v = Object(a.a)(e => {
-				const t = Object(d.e)(f.b),
+				const t = Object(d.e)(g.b),
 					n = Object(d.e)(() => t ? Object(p.f)(t) : null),
 					a = Object(d.e)(e => t ? Object(p.ib)(e, {
 						pageLayer: t
@@ -99,7 +99,7 @@
 					})()
 				})
 			});
-			t.default = e => l.a.createElement(v, g({}, e, {
+			t.default = e => l.a.createElement(v, f({}, e, {
 				className: Object(s.a)(e.className, u.a.modal),
 				shouldBlurBackground: !0,
 				onOverlayClick: i.a,
@@ -157,8 +157,8 @@
 				u = n("./src/reddit/actions/login.ts"),
 				p = n("./src/reddit/actions/modal.ts"),
 				_ = n("./src/reddit/components/Footer/index.tsx"),
-				f = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				g = n("./src/reddit/constants/experiments.ts"),
+				g = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				f = n("./src/reddit/constants/experiments.ts"),
 				C = n("./src/reddit/controls/Button/index.tsx"),
 				v = n("./src/reddit/helpers/counters/nsfwblocking.ts"),
 				k = n("./src/lib/constants/index.ts"),
@@ -215,7 +215,7 @@
 				}),
 				A = e => {
 					const t = Object(c.d)(),
-						n = Object(f.b)(),
+						n = Object(g.b)(),
 						a = Object(c.e)(N.g),
 						s = Object(r.useCallback)(() => {
 							a === N.a.Blurred && t(Object(p.k)({
@@ -299,7 +299,7 @@
 					})))
 				}),
 				S = e => {
-					const t = Object(f.b)(),
+					const t = Object(g.b)(),
 						{
 							contentTitle: n
 						} = e,
@@ -340,12 +340,12 @@
 					}, i.a.createElement(_.b, {
 						textColor: l
 					})), i.a.createElement(F, {
-						qrCodeAsset: (() => a === g.Yc.Enabled || s === g.eb.BlurredPreview || s === g.eb.NoPreview ? I.d2x_nsfw_signup_blocking_de_v1 : I.d2x_nsfw_signup_blocking_non_us_v1)()
+						qrCodeAsset: (() => a === f.Wc.Enabled || s === f.db.BlurredPreview || s === f.db.NoPreview ? I.d2x_nsfw_signup_blocking_de_v1 : I.d2x_nsfw_signup_blocking_non_us_v1)()
 					}))
 				},
 				M = e => {
 					const t = Object(c.d)(),
-						n = Object(f.b)(),
+						n = Object(g.b)(),
 						s = Object(c.e)(N.h);
 					return Object(r.useEffect)(() => {
 						(e => {
@@ -359,8 +359,8 @@
 						})(s)
 					}, [s]), i.a.createElement("div", {
 						className: Object(m.a)(D.a.mainCta, {
-							[D.a.skippable_buttons]: s === g.fb.SkippableButtons,
-							[D.a.skippable_text]: s === g.fb.SkippableText
+							[D.a.skippable_buttons]: s === f.eb.SkippableButtons,
+							[D.a.skippable_text]: s === f.eb.SkippableText
 						})
 					}, i.a.createElement("div", {
 						className: D.a.contentDescription
@@ -392,7 +392,7 @@
 								}
 							}))()), O(a.Login), t(Object(u.openLoginModal)())
 						}
-					}, U()), s === g.fb.SkippableButtons && i.a.createElement("div", {
+					}, U()), s === f.eb.SkippableButtons && i.a.createElement("div", {
 						className: D.a.divider
 					}, i.a.createElement("div", {
 						className: D.a.dividerLine
@@ -420,7 +420,7 @@
 						hk: "4nUG6S"
 					}))()), i.a.createElement(C.j, {
 						className: Object(m.a)(D.a.continue, D.a.dismiss, {
-							[D.a.no_border]: s === g.fb.SkippableText
+							[D.a.no_border]: s === f.eb.SkippableText
 						}),
 						onClick: () => {
 							n((() => e => ({
@@ -434,7 +434,7 @@
 								}
 							}))()), O(a.Dismiss), t(Object(l.b)("/"))
 						}
-					}, s === g.fb.SkippableText ? (() => o.fbt._("Go back to home", null, {
+					}, s === f.eb.SkippableText ? (() => o.fbt._("Go back to home", null, {
 						hk: "4yEgxF"
 					}))() : P())))
 				}
@@ -446,9 +446,9 @@
 			})), n.d(t, "b", (function() {
 				return u
 			})), n.d(t, "c", (function() {
-				return f
-			})), n.d(t, "a", (function() {
 				return g
+			})), n.d(t, "a", (function() {
+				return f
 			}));
 			var a = n("./src/lib/constants/index.ts"),
 				s = n("./src/lib/localStorageAvailable/index.ts"),
@@ -469,9 +469,9 @@
 					const t = Date.parse(e);
 					return Number.isNaN(t) ? (localStorage.removeItem(r.b.XpromoConsolidation), !0) : Date.now() > t + m
 				},
-				p = (e, t) => t === c.a.NoPreview && (e === o.fb.SkippableButtons || e === o.fb.SkippableText),
-				_ = (e, t) => t === c.a.NoPreview && e === o.fb.NoUpsell,
-				f = Object(d.a)(c.h, c.g, (e, t) => {
+				p = (e, t) => t === c.a.NoPreview && (e === o.eb.SkippableButtons || e === o.eb.SkippableText),
+				_ = (e, t) => t === c.a.NoPreview && e === o.eb.NoUpsell,
+				g = Object(d.a)(c.h, c.g, (e, t) => {
 					return {
 						isControlVariant: !(!e || !t) && ((e, t) => t === c.a.NoPreview && !p(e, t) && !_(e, t))(e, t),
 						isNewDesignVariant: !(!e || !t) && p(e, t),
@@ -479,8 +479,8 @@
 						variant: e
 					}
 				}),
-				g = Object(d.a)(f, l.a, (e, t) => !e.isOldDesignVariant && (!e.isNewDesignVariant || !t))
+				f = Object(d.a)(g, l.a, (e, t) => !e.isOldDesignVariant && (!e.isNewDesignVariant || !t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwBlockingModal.299f88d1bb82d1f70dad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwBlockingModal.cbdcb028ade2f42eed33.js.map

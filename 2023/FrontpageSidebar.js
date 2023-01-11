@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.2fd41f298ce729341788.js
-// Retrieved at 1/10/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.22d47e6a8db0a5749858.js
+// Retrieved at 1/11/2023, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./src/reddit/components/FrontpageSidebar/index.tsx": function(e, t, n) {
@@ -190,8 +190,8 @@
 				W = n("./node_modules/request-idle-callback/index.js"),
 				U = n("./src/lib/constants/index.ts"),
 				I = n("./src/reddit/components/SubredditIcon/index.tsx"),
-				K = n("./src/reddit/constants/localStorage.ts"),
-				D = n("./src/reddit/contexts/ApiContext.tsx"),
+				D = n("./src/reddit/constants/localStorage.ts"),
+				K = n("./src/reddit/contexts/ApiContext.tsx"),
 				Q = n("./src/reddit/featureFlags/component.tsx"),
 				G = n("./src/reddit/helpers/localStorage/index.ts"),
 				H = n("./src/reddit/helpers/name/index.ts"),
@@ -215,13 +215,13 @@
 					}
 				}
 				async getSubredditForAdoption() {
-					let e = te.cachedData || Object(G.A)(K.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
+					let e = te.cachedData || Object(G.A)(D.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
 					if (!e || Date.now() - e.fetchedAt > $) {
 						const t = await X(this.props.apiContext());
 						t.ok && (e = {
 							subreddits: t.body.data.subreddits.map(e => e.name),
 							fetchedAt: Date.now()
-						}, Object(G.zb)(K.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
+						}, Object(G.zb)(D.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
 					}
 					return te.cachedData = e, e ? e.subreddits : []
 				}
@@ -260,7 +260,7 @@
 				}
 			}
 			te.cachedData = null;
-			var ne = Object(Q.a)("srAdoptionWeek", Object(D.b)(te)),
+			var ne = Object(Q.a)("srAdoptionWeek", Object(K.b)(te)),
 				se = n("./src/reddit/actions/post.ts"),
 				ae = n("./src/reddit/components/MiniPost/index.tsx"),
 				re = n("./src/reddit/components/Widgets/Base/index.tsx");
@@ -618,13 +618,13 @@
 					shouldShowTopicsWidget: e => (function(e) {
 						return Object(Re.c)(e, {
 							experimentEligibilitySelector: Be.S,
-							experimentName: Le.Nc
-						}) === Le.Kd
+							experimentName: Le.Lc
+						}) === Le.Id
 					})(e),
 					isNavbarLikeMwebEnabled: i.a
 				}),
-				Ke = e => !(!e.currentUser || !e.currentUser.showRecentPosts),
-				De = e => !(!e.currentUser || e.currentUser.isGold);
+				De = e => !(!e.currentUser || !e.currentUser.showRecentPosts),
+				Ke = e => !(!e.currentUser || e.currentUser.isGold);
 			class Qe extends a.a.Component {
 				constructor(e) {
 					super(e), this.componentDidMount = async () => {
@@ -655,9 +655,9 @@
 						position: Ue.a.FIRST,
 						sizes: U.j,
 						placementIndex: e++
-					}), De(this.props) && a.a.createElement(k, null), i && a.a.createElement(m.a, null, a.a.createElement(Ae, null)), s && a.a.createElement(m.a, null, a.a.createElement(d.a, {
+					}), Ke(this.props) && a.a.createElement(k, null), i && a.a.createElement(m.a, null, a.a.createElement(Ae, null)), s && a.a.createElement(m.a, null, a.a.createElement(d.a, {
 						listingName: r
-					})), Ke(this.props) && a.a.createElement(xe, null), n && l && a.a.createElement(m.a, null, a.a.createElement(P, {
+					})), De(this.props) && a.a.createElement(xe, null), n && l && a.a.createElement(m.a, null, a.a.createElement(P, {
 						links: n
 					})), a.a.createElement(L.a, {
 						adComponent: a.a.createElement(T.a, {
@@ -915,4 +915,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.2fd41f298ce729341788.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.22d47e6a8db0a5749858.js.map

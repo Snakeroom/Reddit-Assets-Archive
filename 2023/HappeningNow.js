@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HappeningNow.222459b6eaf7f560a360.js
-// Retrieved at 1/10/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HappeningNow.c63c16b798feee32359a.js
+// Retrieved at 1/11/2023, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HappeningNow"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2512,12 +2512,12 @@
 						rtJsonElementProps: o
 					});
 					switch (a) {
-						case b.If.SmIcon:
+						case b.Gf.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: r,
 								rtJsonElementProps: o
 							});
-						case b.If.SmIconHc:
+						case b.Gf.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: r,
 								isHoverable: !0,
@@ -3939,12 +3939,12 @@
 				l = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: r.Cf
+						experimentName: r.Af
 					}) || ""
 				},
 				c = e => {
 					const t = l(e);
-					return t === r.If.SmIcon || t === r.If.SmIconHc
+					return t === r.Gf.SmIcon || t === r.Gf.SmIconHc
 				},
 				d = (e, t) => {
 					let {
@@ -3973,4 +3973,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.222459b6eaf7f560a360.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.c63c16b798feee32359a.js.map

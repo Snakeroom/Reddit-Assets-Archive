@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.aaf50e0250eed57da888.js
-// Retrieved at 1/10/2023, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.8fb4385dd0d2e2c902fc.js
+// Retrieved at 1/11/2023, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -6738,12 +6738,12 @@
 						rtJsonElementProps: i
 					});
 					switch (r) {
-						case h.If.SmIcon:
+						case h.Gf.SmIcon:
 							return o.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case h.If.SmIconHc:
+						case h.Gf.SmIconHc:
 							return o.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -8346,7 +8346,7 @@
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
 					experimentName: s.D
-				}) === s.Kd
+				}) === s.Id
 			}
 		},
 		"./src/reddit/selectors/experiments/realtimeMQUpdates.ts": function(e, t, n) {
@@ -8360,8 +8360,8 @@
 				i = n("./src/reddit/selectors/experiments/modqueueActionBarUXImprovements.ts");
 			const a = e => Object(i.a)(e) && Object(o.c)(e, {
 				experimentEligibilitySelector: r.S,
-				experimentName: s.wc
-			}) === s.Kd
+				experimentName: s.uc
+			}) === s.Id
 		},
 		"./src/reddit/selectors/subredditMention.ts": function(e, t, n) {
 			"use strict";
@@ -8386,12 +8386,12 @@
 				d = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Cf
+						experimentName: s.Af
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.If.SmIcon || t === s.If.SmIconHc
+					return t === s.Gf.SmIcon || t === s.Gf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -8429,4 +8429,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.aaf50e0250eed57da888.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.8fb4385dd0d2e2c902fc.js.map

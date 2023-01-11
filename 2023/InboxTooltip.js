@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxTooltip.7550d5210f0bf4e1764b.js
-// Retrieved at 1/10/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxTooltip.1f25bc2a9a450cfb116d.js
+// Retrieved at 1/11/2023, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxTooltip", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -98,14 +98,14 @@
 				w = i("./src/reddit/selectors/user.ts");
 			const y = e => Object(N.c)(e, {
 				experimentEligibilitySelector: w.S,
-				experimentName: k.vb
-			}) === k.Kd;
+				experimentName: k.ub
+			}) === k.Id;
 			var _ = i("./src/reddit/selectors/experiments/delayDnPermission.ts"),
 				I = i("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts");
 			const P = e => Object(N.c)(e, {
-				experimentName: k.ac,
+				experimentName: k.Yb,
 				experimentEligibilitySelector: N.a
-			}) === k.Kd;
+			}) === k.Id;
 			var E = i("./src/reddit/selectors/meta.ts");
 			let F = !1;
 			const C = async (e, t) => {
@@ -410,7 +410,7 @@
 							first: 5
 						})
 					}
-					S && x && (E(), C(Object(b.x)({
+					S && x && (E(), C(Object(b.u)({
 						badgeCount: O
 					})))
 				}, [S]), o.a.createElement(l.b, {
@@ -620,4 +620,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.7550d5210f0bf4e1764b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.1f25bc2a9a450cfb116d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.f13c3756bb0a9123f3b8.js
-// Retrieved at 1/10/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.d81f38dd2d736f5e6da4.js
+// Retrieved at 1/11/2023, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./node_modules/lodash/map.js": function(e, t, s) {
@@ -29,7 +29,7 @@
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "d", (function() {
-				return j
+				return S
 			})), s.d(t, "c", (function() {
 				return E
 			})), s.d(t, "f", (function() {
@@ -62,13 +62,13 @@
 				_ = s("./src/reddit/selectors/user.ts"),
 				R = s("./src/reddit/actions/comment/index.ts"),
 				f = s("./src/reddit/actions/comment/constants.ts");
-			const S = Object(r.a)(f.p),
-				j = e => async (t, s, o) => {
+			const j = Object(r.a)(f.p),
+				S = e => async (t, s, o) => {
 					let {
 						apiContext: n
 					} = o;
 					s().features.comments.models[e] && (await Object(m.j)(n(), e)).ok && t((e => async t => {
-						t(S({
+						t(j({
 							commentId: e
 						}))
 					})(e))
@@ -309,9 +309,9 @@
 			})), s.d(t, "removalReasonSubmittedSuccess", (function() {
 				return fe
 			})), s.d(t, "removalReasonSubmittedFailed", (function() {
-				return Se
-			})), s.d(t, "removalReasonMessagePending", (function() {
 				return je
+			})), s.d(t, "removalReasonMessagePending", (function() {
+				return Se
 			})), s.d(t, "removalReasonPrivateMessageSuccess", (function() {
 				return Ee
 			})), s.d(t, "removalReasonPublicMessageSuccess", (function() {
@@ -384,9 +384,9 @@
 					error: _,
 					pending: R
 				});
-			const S = {};
-			var j = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : S,
+			const j = {};
+			var S = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : j,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case d: {
@@ -484,7 +484,7 @@
 				},
 				h = Object(r.c)({
 					api: f,
-					models: j,
+					models: S,
 					reasonOrder: v,
 					removedItemIds: A
 				}),
@@ -523,10 +523,10 @@
 				});
 			var $ = s("./src/reddit/helpers/isPost.ts"),
 				J = s("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
-				z = s("./src/reddit/helpers/routeKey/index.ts"),
-				H = s("./src/reddit/models/ModQueue/index.ts"),
-				q = s("./src/reddit/models/PostDraft/index.ts"),
-				Q = s("./src/reddit/models/RemovalReason/index.ts"),
+				Q = s("./src/reddit/helpers/routeKey/index.ts"),
+				z = s("./src/reddit/models/ModQueue/index.ts"),
+				H = s("./src/reddit/models/PostDraft/index.ts"),
+				q = s("./src/reddit/models/RemovalReason/index.ts"),
 				X = s("./src/reddit/models/Toast/index.ts"),
 				Z = s("./src/reddit/selectors/comments.ts"),
 				W = s("./src/reddit/selectors/platform.ts");
@@ -631,16 +631,16 @@
 						subredditId: e,
 						itemIds: t
 					})), s(Object(D.i)(M.a.ADD_REMOVAL_REASON))
-				}, Re = Object(I.a)("REMOVALREASONS__SUBMIT_PENDING"), fe = Object(I.a)("REMOVALREASONS__SUBMIT_SUCCESS"), Se = Object(I.a)("REMOVALREASONS__SUBMIT_FAILED"), je = Object(I.a)("REMOVALREASONS__MESSAGE_PENDING"), Ee = Object(I.a)("REMOVALREASONS__MESSAGE_PRIVATE_SUCCESS"), ve = Object(I.a)("REMOVALREASONS__MESSAGE_PUBLIC_SUCCESS"), Ae = Object(I.a)("REMOVALREASONS__MESSAGE_FAILED"), he = (e, t, s, o, n, r) => async (d, a, i) => {
+				}, Re = Object(I.a)("REMOVALREASONS__SUBMIT_PENDING"), fe = Object(I.a)("REMOVALREASONS__SUBMIT_SUCCESS"), je = Object(I.a)("REMOVALREASONS__SUBMIT_FAILED"), Se = Object(I.a)("REMOVALREASONS__MESSAGE_PENDING"), Ee = Object(I.a)("REMOVALREASONS__MESSAGE_PRIVATE_SUCCESS"), ve = Object(I.a)("REMOVALREASONS__MESSAGE_PUBLIC_SUCCESS"), Ae = Object(I.a)("REMOVALREASONS__MESSAGE_FAILED"), he = (e, t, s, o, n, r) => async (d, a, i) => {
 					let {
 						apiContext: c
 					} = i;
 					const l = a(),
 						m = l.user.account && l.user.account.displayText,
 						u = e[0],
-						p = Object($.a)(u) ? Q.e.Post : Q.e.Comment,
-						b = p === Q.e.Post ? l.posts.models[u] : l.features.comments.models[u],
-						O = p === Q.e.Post ? N.Q : g.j;
+						p = Object($.a)(u) ? q.e.Post : q.e.Comment,
+						b = p === q.e.Post ? l.posts.models[u] : l.features.comments.models[u],
+						O = p === q.e.Post ? N.Q : g.j;
 					if (!b || !m) return !1;
 					d(Re()), d(O({
 						[u]: {
@@ -657,7 +657,7 @@
 						R = await K(c(), _);
 					if (R.ok) {
 						if (d(fe()), t) {
-							d(je());
+							d(Se());
 							const n = {
 									itemId: e,
 									message: s,
@@ -665,9 +665,9 @@
 									isLocked: r,
 									type: o
 								},
-								a = await G(c(), Object(Q.h)(n, p), p);
+								a = await G(c(), Object(q.h)(n, p), p);
 							if (a.ok) {
-								if ([Q.f.Public, Q.f.PublicAsSubreddit].includes(o)) {
+								if ([q.f.Public, q.f.PublicAsSubreddit].includes(o)) {
 									if (d(ve()), a.body) {
 										const e = Object(J.a)(a.body),
 											t = {
@@ -676,12 +676,12 @@
 											},
 											s = Object(W.f)(l),
 											o = l.platform.currentPage && l.platform.currentPage.routeMatch;
-										let n = s && o && Object(z.a)(o, l, l.posts.models[e.postId]);
+										let n = s && o && Object(Q.a)(o, l, l.posts.models[e.postId]);
 										if (n || (n = Object(x.a)(e.postId, null, {
 												sort: y.x,
 												hasSortParam: !0
-											})), p === Q.e.Post) {
-											const s = Object(k.a)(q.c.replyToPost, u);
+											})), p === q.e.Post) {
+											const s = Object(k.a)(H.c.replyToPost, u);
 											d(Object(C.r)({
 												...t,
 												headCommentId: Object(Z.w)(l, {
@@ -700,8 +700,8 @@
 													isStickied: !1
 												}
 											}))
-										} else if (p === Q.e.Comment) {
-											const e = Object(k.a)(q.c.replyToComment, b.id),
+										} else if (p === q.e.Comment) {
+											const e = Object(k.a)(H.c.replyToComment, b.id),
 												s = Object(Z.j)(l, {
 													commentId: u,
 													commentsPageKey: n
@@ -720,7 +720,7 @@
 							}
 							return d(Ae(a.error)), !1
 						}
-					} else d(Se(R.error)), d(O({
+					} else d(je(R.error)), d(O({
 						[u]: {
 							modNote: b.modNote,
 							modRemovalReason: b.modRemovalReason,
@@ -754,7 +754,7 @@
 					if (b.ok) {
 						const o = {
 							ids: e,
-							operation: H.a.RemovalReason,
+							operation: z.a.RemovalReason,
 							username: m,
 							options: {
 								modNote: r,
@@ -768,10 +768,10 @@
 									title: t.title,
 									type: n
 								},
-								r = await G(c(), Object(Q.h)(o, Q.e.Bulk), Q.e.Bulk);
+								r = await G(c(), Object(q.h)(o, q.e.Bulk), q.e.Bulk);
 							r.ok ? (d(Ee()), d(u)) : d(Ae(r.error))
 						} else d(u)
-					} else d(Se(b.error))
+					} else d(je(b.error))
 				}
 		},
 		"./src/reddit/components/InfoTextTooltip/index.m.less": function(e, t, s) {
@@ -835,17 +835,17 @@
 						return Object(c.b)(s)(e)
 					}
 				}),
-				S = Object(i.a)(R, [a.a.Click, a.a.Keydown]),
-				j = Object(i.a)(_, [a.a.Click, a.a.Keydown]),
+				j = Object(i.a)(R, [a.a.Click, a.a.Keydown]),
+				S = Object(i.a)(_, [a.a.Click, a.a.Keydown]),
 				E = Object(r.b)(f);
 			t.c = E(e => {
 				const {
 					caretOnTop: t
 				} = e;
-				return t ? n.a.createElement(S, p({}, e, {
+				return t ? n.a.createElement(j, p({}, e, {
 					targetPosition: ["center", "bottom"],
 					tooltipPosition: ["center", "top"]
-				})) : n.a.createElement(j, p({}, e, {
+				})) : n.a.createElement(S, p({}, e, {
 					targetPosition: ["center", "top"],
 					tooltipPosition: ["center", "bottom"]
 				}))
@@ -1071,13 +1071,13 @@
 				r = s("./node_modules/reselect/es/index.js");
 			const d = Object(r.a)(e => Object(n.c)(e, {
 				experimentEligibilitySelector: n.a,
-				experimentName: o.qb
+				experimentName: o.pb
 			}), e => ({
-				bucketed: e === o.Sc.ExpandedSearch || e === o.Sc.CollapsedSearch,
-				collapsed: e === o.Sc.CollapsedSearch,
-				expanded: e === o.Sc.ExpandedSearch
+				bucketed: e === o.Qc.ExpandedSearch || e === o.Qc.CollapsedSearch,
+				collapsed: e === o.Qc.CollapsedSearch,
+				expanded: e === o.Qc.ExpandedSearch
 			}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.f13c3756bb0a9123f3b8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.d81f38dd2d736f5e6da4.js.map

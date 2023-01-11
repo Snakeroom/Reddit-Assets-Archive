@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8.975c92949a17a11489f4.js
-// Retrieved at 1/10/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8.c4e0a3a14faaed034c93.js
+// Retrieved at 1/11/2023, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -299,7 +299,7 @@
 		"./src/reddit/components/HTML5StreamPlayer/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return Zt
+				return Kt
 			}));
 			var i = s("./node_modules/bowser/src/bowser.js"),
 				o = s.n(i),
@@ -360,8 +360,8 @@
 				I = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const H = e => Object(I.c)(e, {
 				experimentEligibilitySelector: I.a,
-				experimentName: R.Pc
-			}) === R.Kd;
+				experimentName: R.Nc
+			}) === R.Id;
 			var A = s("./src/reddit/selectors/experiments/videoReactions.ts"),
 				O = s("./src/reddit/selectors/media.ts"),
 				j = s("./src/reddit/selectors/platform.ts"),
@@ -371,8 +371,8 @@
 				z = s("./src/reddit/components/HTML5StreamPlayer/BlurImage/index.m.less"),
 				G = s.n(z),
 				Y = s("./src/lib/lessComponent.tsx"),
-				K = Y.a.img("Component", G.a),
-				Z = s("./src/reddit/icons/svgs/VideoCollapse/index.tsx"),
+				Z = Y.a.img("Component", G.a),
+				K = s("./src/reddit/icons/svgs/VideoCollapse/index.tsx"),
 				J = s("./src/reddit/icons/svgs/VideoExpand/index.tsx"),
 				Q = s("./src/reddit/icons/svgs/VideoMute/index.tsx"),
 				q = s("./src/reddit/icons/svgs/VideoPause/index.tsx"),
@@ -760,8 +760,8 @@
 				ze = Y.a.wrapped(We, "LeftTime", He.a),
 				Ge = Y.a.wrapped(We, "RightTime", He.a),
 				Ye = Y.a.div("LiveLabel", He.a),
-				Ke = Y.a.wrapped(je, "ControlScrubber", He.a),
-				Ze = Y.a.wrapped(je, "ControlVolume", He.a),
+				Ze = Y.a.wrapped(je, "ControlScrubber", He.a),
+				Ke = Y.a.wrapped(je, "ControlVolume", He.a),
 				Je = Y.a.wrapped(Oe, "ControlExpand", He.a),
 				Qe = Y.a.wrapped(Oe, "ControlCollapse", He.a),
 				qe = e => {
@@ -840,8 +840,8 @@
 						"aria-label": f,
 						className: He.a.button,
 						onClick: this.props.playPauseVideo
-					}, this.props.isPaused ? c.a.createElement(X.a, null) : c.a.createElement(q.a, null))), c.a.createElement(ze, null, ce(v, g)), c.a.createElement(Ke, null, c.a.createElement(ye, {
-						active: n === Zt.SeekBar,
+					}, this.props.isPaused ? c.a.createElement(X.a, null) : c.a.createElement(q.a, null))), c.a.createElement(ze, null, ce(v, g)), c.a.createElement(Ze, null, c.a.createElement(ye, {
+						active: n === Kt.SeekBar,
 						bufferedRanges: this.state.bufferedRanges,
 						controlBarIsHidden: this.props.hideControlBar,
 						currentTime: v,
@@ -865,7 +865,7 @@
 						"aria-label": p,
 						className: He.a.button,
 						onClick: this.props.exitFullScreen
-					}, c.a.createElement(Z.a, null))) : c.a.createElement(Je, {
+					}, c.a.createElement(K.a, null))) : c.a.createElement(Je, {
 						tooltip: m
 					}, c.a.createElement("button", {
 						"aria-label": m,
@@ -883,12 +883,12 @@
 						innerRef: t => e && e(t),
 						isFullScreen: this.props.isFullScreen,
 						zeroOpacity: this.props.hideControlBar
-					}, this.renderContent(), this.props.hasAudio && c.a.createElement(Ze, {
+					}, this.renderContent(), this.props.hasAudio && c.a.createElement(Ke, {
 						className: this.props.showVolumeIcon ? "disableHide" : ""
 					}, c.a.createElement(Re, {
 						className: He.a.VolumeControl,
 						ref: e => this.props.volumeRef(e),
-						active: this.props.settingChange === Zt.Volume,
+						active: this.props.settingChange === Kt.Volume,
 						isMuted: this.props.isMuted,
 						isLive: t,
 						setVolume: this.props.setVolume,
@@ -1032,19 +1032,19 @@
 						tooltip: C.fbt._("Settings", null, {
 							hk: "1AhVBJ"
 						}),
-						disable: n === Zt.Settings
-					}, n === Zt.Settings && c.a.createElement(dt, {
+						disable: n === Kt.Settings
+					}, n === Kt.Settings && c.a.createElement(dt, {
 						className: He.a.VideoSettingContainer,
 						isLoggedIn: s,
 						autoplayPref: e,
-						active: n === Zt.Settings,
+						active: n === Kt.Settings,
 						ref: e => r(e),
 						resolution: i,
 						setResolution: a,
 						setAutoplay: o,
 						bitrateInfo: t
 					}), c.a.createElement("button", {
-						"aria-expanded": n === Zt.Settings,
+						"aria-expanded": n === Kt.Settings,
 						"aria-haspopup": !0,
 						"aria-label": C.fbt._("Settings", null, {
 							hk: "4jfIa6"
@@ -1165,8 +1165,8 @@
 				Gt = s("./src/reddit/components/HTML5StreamPlayer/VideoContainer/index.m.less"),
 				Yt = s.n(Gt);
 
-			function Kt() {
-				return (Kt = Object.assign || function(e) {
+			function Zt() {
+				return (Zt = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var i in s) Object.prototype.hasOwnProperty.call(s, i) && (e[i] = s[i])
@@ -1174,14 +1174,14 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var Zt, Jt = e => {
+			var Kt, Jt = e => {
 					let {
 						className: t,
 						isVisible: s,
 						setRef: i,
 						...o
 					} = e;
-					return c.a.createElement("div", Kt({
+					return c.a.createElement("div", Zt({
 						className: Object(u.a)(Yt.a.Component, t, {
 							[Yt.a.mIsNotVisible]: !s
 						}),
@@ -1197,7 +1197,7 @@
 				ss = s.n(ts);
 			! function(e) {
 				e[e.SeekBar = 0] = "SeekBar", e[e.Settings = 1] = "Settings", e[e.Volume = 2] = "Volume"
-			}(Zt || (Zt = {}));
+			}(Kt || (Kt = {}));
 			const is = 3e3,
 				os = 6e3,
 				as = 100,
@@ -1398,9 +1398,9 @@
 							volumeControl: s
 						} = this;
 						s && s.container && s.container.contains(e.target) ? (this.setState({
-							settingChange: Zt.Volume
+							settingChange: Kt.Volume
 						}), s.handleMouseDown(e)) : t && t.parentRect && t.parentRect.contains(e.target) && (this.setState({
-							settingChange: Zt.SeekBar
+							settingChange: Kt.SeekBar
 						}), t.handleMouseDown(e)), this.state.usingKeys && this.setState({
 							usingKeys: !1
 						})
@@ -1415,13 +1415,13 @@
 						}), t && t.contains(e.target) ? (this.clearControlBarFadeTimer(), this.state.hideControlBar && this.setState({
 							hideControlBar: !1
 						})) : this.resetControlBarFadeTimer(), this.state.settingChange) {
-							case Zt.SeekBar:
+							case Kt.SeekBar:
 								s && s.handleMouseMove(e);
 								break;
-							case Zt.Volume:
+							case Kt.Volume:
 								i && i.handleMouseMove(e);
 								break;
-							case Zt.Settings:
+							case Kt.Settings:
 						}
 					}, this.handleMouseUp = e => {
 						e.stopPropagation();
@@ -1431,7 +1431,7 @@
 							volumeControl: i
 						} = this;
 						switch (this.state.settingChange) {
-							case Zt.SeekBar:
+							case Kt.SeekBar:
 								if (s) {
 									this.setState({
 										ignoreUnderrunsUntil: Date.now() + as
@@ -1440,10 +1440,10 @@
 									this.state.videoEnded && t && t.currentTime < t.duration && this.playVideo()
 								}
 								break;
-							case Zt.Volume:
+							case Kt.Volume:
 								i && (i.handleMouseUp(e), this.props.isVideoCorrelationIdFix ? this.props.onClickVolume() : this.sendEvent("click", "volume"));
 								break;
-							case Zt.Settings:
+							case Kt.Settings:
 								if (t && t.contains(e.target)) return;
 								break;
 							default:
@@ -1467,9 +1467,9 @@
 						}), this.hoverTimeout || this.setState({
 							isHovered: !1
 						}), this.state.settingChange) {
-							case Zt.SeekBar:
-							case Zt.Volume:
-							case Zt.Settings:
+							case Kt.SeekBar:
+							case Kt.Volume:
+							case Kt.Settings:
 							default:
 								this.setState({
 									settingChange: void 0
@@ -1612,10 +1612,10 @@
 							})
 						}
 					}, this.toggleSetting = e => {
-						this.state.settingChange === Zt.Settings ? this.setState({
+						this.state.settingChange === Kt.Settings ? this.setState({
 							settingChange: void 0
 						}) : this.setState({
-							settingChange: Zt.Settings
+							settingChange: Kt.Settings
 						})
 					}, this.setVideoPos = e => {
 						const t = this.HTML5StreamPlayerVideo;
@@ -1857,7 +1857,7 @@
 						usingKeys: !0
 					});
 					let t = os;
-					this.state.settingChange === Zt.Settings && (t = 5 * os), this.resetControlBarFadeTimer(t)
+					this.state.settingChange === Kt.Settings && (t = 5 * os), this.resetControlBarFadeTimer(t)
 				}
 				setBuffered() {
 					const e = this.HTML5StreamPlayerVideo;
@@ -1913,7 +1913,7 @@
 						videoHasError: f,
 						videoLoaded: x,
 						videoStarted: y
-					} = this.state, S = this.HTML5StreamPlayerVideo, b = v === Zt.SeekBar, C = x || !t, P = !x, V = !l && h, E = g && !b, F = {
+					} = this.state, S = this.HTML5StreamPlayerVideo, b = v === Kt.SeekBar, C = x || !t, P = !x, V = !l && h, E = g && !b, F = {
 						...this.props,
 						bitrateInfo: this.state.bitrateInfo,
 						resolution: this.state.resolution,
@@ -1937,7 +1937,7 @@
 						onMouseUp: this.handleMouseUp,
 						"data-adclicklocation": $t.a.MEDIA,
 						"data-isvideoplayer": 1
-					}, this.props.blurImageSrc && c.a.createElement(K, {
+					}, this.props.blurImageSrc && c.a.createElement(Z, {
 						src: this.props.blurImageSrc
 					}), !y && !f && c.a.createElement("div", {
 						style: {
@@ -2752,14 +2752,14 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = s("./src/reddit/selectors/experiments/index.ts");
 			const n = e => Object(o.c)(e, {
-					experimentName: i.mb,
+					experimentName: i.lb,
 					experimentEligibilitySelector: a.e
-				}) === i.Kd,
+				}) === i.Id,
 				r = e => Object(o.c)(e, {
-					experimentName: i.uc,
+					experimentName: i.sc,
 					experimentEligibilitySelector: o.a
-				}) === i.Kd
+				}) === i.Id
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8.975c92949a17a11489f4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8.c4e0a3a14faaed034c93.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.c0212b533659dba4db10.js
-// Retrieved at 1/5/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.2bc86f52e894622493c8.js
+// Retrieved at 1/11/2023, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -3789,7 +3789,7 @@
 						return !!(null === (n = f(e).dismissedBanners) || void 0 === n ? void 0 : n.find(e => e === t))
 					})(e, n.notificationName));
 				Object(a.useEffect)(() => {
-					H(), t ? (T(Object(l.B)(n.notificationName)), T(Object(l.C)(n.notificationName))) : (T(Object(l.p)(n.notificationName)), T(Object(l.q)(n.notificationName)))
+					H(), t ? (T(Object(l.y)(n.notificationName)), T(Object(l.z)(n.notificationName))) : (T(Object(l.o)(n.notificationName)), T(Object(l.p)(n.notificationName)))
 				}, []);
 				const K = null === (x = null == n ? void 0 : n.persistence) || void 0 === x ? void 0 : x.maxViews;
 				if (!n || K && L > K) return null;
@@ -3817,7 +3817,7 @@
 						backgroundImage: `url(${n.bodyBackgroundImage})`
 					},
 					onClick: e => {
-						e.stopPropagation(), Object(i.e)(n.linkUrl, "_blank"), V(), T(t ? Object(l.A)(n.notificationName, l.b.BANNER) : Object(l.o)(n.notificationName, l.b.BANNER))
+						e.stopPropagation(), Object(i.e)(n.linkUrl, "_blank"), V(), T(t ? Object(l.x)(n.notificationName, l.b.BANNER) : Object(l.n)(n.notificationName, l.b.BANNER))
 					}
 				}, r.a.createElement("div", {
 					className: _.a.Content
@@ -3851,7 +3851,7 @@
 					size: d.d.XS,
 					onClick: e => {
 						var a;
-						e.stopPropagation(), (null === (a = n.primaryCta) || void 0 === a ? void 0 : a.actionType) === p.a.GOTO && n.primaryCta.url && Object(i.e)(n.primaryCta.url, "_blank"), V(), T(t ? Object(l.A)(n.notificationName, l.b.CTA_1) : Object(l.o)(n.notificationName, l.b.CTA_1))
+						e.stopPropagation(), (null === (a = n.primaryCta) || void 0 === a ? void 0 : a.actionType) === p.a.GOTO && n.primaryCta.url && Object(i.e)(n.primaryCta.url, "_blank"), V(), T(t ? Object(l.x)(n.notificationName, l.b.CTA_1) : Object(l.n)(n.notificationName, l.b.CTA_1))
 					},
 					style: {
 						...X
@@ -3864,7 +3864,7 @@
 					size: d.d.XS,
 					className: _.a.SecondaryButton,
 					onClick: e => {
-						e.stopPropagation(), (null == n ? void 0 : n.secondaryCta) && (n.secondaryCta.actionType === p.a.GOTO && n.secondaryCta.url && Object(i.e)(n.secondaryCta.url, "_blank"), V(), T(t ? Object(l.A)(n.notificationName, l.b.CTA_2) : Object(l.o)(n.notificationName, l.b.CTA_2)))
+						e.stopPropagation(), (null == n ? void 0 : n.secondaryCta) && (n.secondaryCta.actionType === p.a.GOTO && n.secondaryCta.url && Object(i.e)(n.secondaryCta.url, "_blank"), V(), T(t ? Object(l.x)(n.notificationName, l.b.CTA_2) : Object(l.n)(n.notificationName, l.b.CTA_2)))
 					},
 					style: {
 						...Y
@@ -3878,7 +3878,7 @@
 					iconClassName: _.a.CloseButtonIcon,
 					priority: d.c.Plain,
 					onClick: e => {
-						e.stopPropagation(), V(), T(t ? Object(l.A)(n.notificationName, l.b.DISMISS) : Object(l.o)(n.notificationName, l.b.DISMISS))
+						e.stopPropagation(), V(), T(t ? Object(l.x)(n.notificationName, l.b.DISMISS) : Object(l.n)(n.notificationName, l.b.DISMISS))
 					}
 				}))
 			};
@@ -3966,7 +3966,7 @@
 					className: g.a.bannerTitle
 				}, i), a && s.a.createElement(f.t, {
 					onClick: e => {
-						d && d(e), u(Object(h.r)({
+						d && d(e), u(Object(h.q)({
 							dnPromptAction: "dismiss"
 						}))
 					},
@@ -3984,14 +3984,14 @@
 					className: Object(c.a)(g.a.button, g.a.primaryButton),
 					size: f.d.XS,
 					onClick: e => {
-						l && l(e), u(Object(h.r)({
+						l && l(e), u(Object(h.q)({
 							dnPromptAction: "cta"
 						}))
 					}
 				}), n && s.a.createElement(f.t, {
 					text: n,
 					onClick: e => {
-						d && d(e), u(Object(h.r)({
+						d && d(e), u(Object(h.q)({
 							dnPromptAction: "refuse"
 						}))
 					},
@@ -4337,18 +4337,18 @@
 						className: j.a.tooltipContainer
 					}, s.a.createElement(Y, {
 						markAllAsRead: () => {
-							e.markAllAsRead(), t(Object(h.h)({
+							e.markAllAsRead(), t(Object(h.g)({
 								isMiniInbox: !0
 							}))
 						},
 						messagesBadgeCount: d,
 						onMessagesClick: () => {
-							t(Object(h.w)({
+							t(Object(h.t)({
 								badgeCount: a,
 								tab: h.f.Messages
-							})), t(Object(h.i)()), n()
+							})), t(Object(h.h)()), n()
 						},
-						sendInboxClickSettings: () => t(Object(h.n)(h.c.MiniInbox)),
+						sendInboxClickSettings: () => t(Object(h.m)(h.c.MiniInbox)),
 						onBarClick: u,
 						isLoggedIn: p
 					}), s.a.createElement(z, q({}, e, {
@@ -4361,7 +4361,7 @@
 						isHotPotatoEnabled: m && !O,
 						setHotPotatoBannerSeen: N
 					})), (k || c) && s.a.createElement($, {
-						sendInboxClickSeeAll: () => t(Object(h.m)()),
+						sendInboxClickSeeAll: () => t(Object(h.l)()),
 						onBarClick: u
 					})))
 				}
@@ -6331,7 +6331,7 @@
 				const n = Object(o.a)();
 				return r.a.createElement(h, {
 					inTooltip: t,
-					onBtnClick: (e => () => n(Object(s.s)({
+					onBtnClick: (e => () => n(Object(s.r)({
 						actionInfoType: e
 					})))(s.a.Karma)
 				})
@@ -6652,4 +6652,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.c0212b533659dba4db10.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.2bc86f52e894622493c8.js.map

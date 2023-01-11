@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.f4924006ee8c38427a3d.js
-// Retrieved at 1/10/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.b852c075e032630c2756.js
+// Retrieved at 1/11/2023, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba"], {
 		"./src/lib/scroll/index.ts": function(e, t, o) {
@@ -52,7 +52,7 @@
 			})), o.d(t, "o", (function() {
 				return we
 			})), o.d(t, "m", (function() {
-				return Te
+				return Ie
 			})), o.d(t, "b", (function() {
 				return Ne
 			})), o.d(t, "c", (function() {
@@ -109,8 +109,8 @@
 				v = o("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
 				w = o("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts"),
 				E = o("./src/reddit/models/PostCreationForm/index.ts"),
-				T = o("./src/reddit/models/RichTextJson/addEmotesAsImagesParam.ts"),
-				I = o("./src/reddit/models/RichTextJson/addRTJParam.ts"),
+				I = o("./src/reddit/models/RichTextJson/addEmotesAsImagesParam.ts"),
+				T = o("./src/reddit/models/RichTextJson/addRTJParam.ts"),
 				N = o("./src/reddit/helpers/graphql/helpers.ts"),
 				M = o("./src/reddit/helpers/graphql/normalizeCommentFromGql/index.ts"),
 				P = o("./src/redditGQL/operations/CreateComment.json");
@@ -141,7 +141,7 @@
 					};
 					return o.commentMode === E.i.MARKDOWN ? r.text = o.text : (r.text = null, r.richtext_json = n), Object(j.a)(Object(y.a)(e, [S.a]), {
 						method: g.ob.POST,
-						endpoint: Object(_.a)(Object(T.a)(Object(I.a)(`${e.apiUrl}/api/comment.json`))),
+						endpoint: Object(_.a)(Object(I.a)(Object(T.a)(`${e.apiUrl}/api/comment.json`))),
 						data: r
 					}).then(e => e.ok ? e.body.json ? e.body.json.errors.length ? {
 						...e,
@@ -228,8 +228,8 @@
 				se = o("./node_modules/reselect/es/index.js");
 			const ce = Object(se.a)(e => Object(re.c)(e, {
 				experimentEligibilitySelector: re.a,
-				experimentName: ne.Ab
-			}), e => e === ne.Kd);
+				experimentName: ne.zb
+			}), e => e === ne.Id);
 			var ie = o("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				ae = o("./src/reddit/selectors/platform.ts"),
 				de = o("./src/reddit/selectors/posts.ts"),
@@ -348,9 +348,9 @@
 						}));
 						const v = d.commentMode;
 						let w;
-						const T = t && o ? o : Object(U.e)(d, y.uploads),
-							I = Object(U.f)(T, y.uploads);
-						if ((w = _e(v, y) ? await L(j(), s, null, d, T) : await D(g(), s, d, T)).ok) {
+						const I = t && o ? o : Object(U.e)(d, y.uploads),
+							T = Object(U.f)(I, y.uploads);
+						if ((w = _e(v, y) ? await L(j(), s, null, d, I) : await D(g(), s, d, I)).ok) {
 							const o = w.body;
 							if (e(fe({
 									...o,
@@ -359,7 +359,7 @@
 									}),
 									commentsPageKey: i,
 									draftKey: S,
-									upload: I
+									upload: T
 								})), t) {
 								const e = Object(ae.i)(y);
 								Object(c.a)(!!e)
@@ -376,7 +376,7 @@
 									bodyText: e,
 									postId: s,
 									error: w.error,
-									uploadMetadata: null == I ? void 0 : I.metadata
+									uploadMetadata: null == T ? void 0 : T.metadata
 								})
 							}
 							const o = w.error && w.error.fields && w.error.fields[0] ? w.error.fields[0].msg : n.fbt._("Something went wrong", null, {
@@ -391,7 +391,7 @@
 								text: o
 							}))
 						}
-						xe(O(), i, l, w, null == I ? void 0 : I.metadata).then(() => w.ok && l === E.i.RICH_TEXT ? Object(G.b)(G.a.CommentComposer) : void 0), u || Object(p.d)(), t && Object(J.a)()
+						xe(O(), i, l, w, null == T ? void 0 : T.metadata).then(() => w.ok && l === E.i.RICH_TEXT ? Object(G.b)(G.a.CommentComposer) : void 0), u || Object(p.d)(), t && Object(J.a)()
 					}
 				},
 				ve = e => async (t, o, n) => {
@@ -514,7 +514,7 @@
 						}))
 					}
 					xe(s(), u, f, E, null == w ? void 0 : w.metadata), x || Object(p.d)(), t && Object(J.a)()
-				}, Te = () => async e => {
+				}, Ie = () => async e => {
 					const t = Object(J.b)();
 					if (t) {
 						const {
@@ -536,7 +536,7 @@
 							parentCommentDepth: o
 						}, !0, s, c))
 					}
-				}, Ie = Object(r.a)(ue.s), Ne = Object(r.a)(ue.r), Me = Object(r.a)(ue.n), Pe = (Object(r.a)(ue.i), Object(r.a)(ue.o)), Re = (Object(r.a)(ue.v), (e, t, o) => async (r, s, c) => {
+				}, Te = Object(r.a)(ue.s), Ne = Object(r.a)(ue.r), Me = Object(r.a)(ue.n), Pe = (Object(r.a)(ue.i), Object(r.a)(ue.o)), Re = (Object(r.a)(ue.v), (e, t, o) => async (r, s, c) => {
 					let {
 						apiContext: i
 					} = c;
@@ -614,14 +614,14 @@
 								rtJson: b,
 								text: ""
 							}, Object(le.U)(c)) {
-							const n = Ie({
+							const n = Te({
 								parentCommentId: o,
 								commentsPageKey: t,
 								draftKey: l,
 								formData: g
 							});
 							e(Object(i.startChangeUsernameFlow)(n))
-						} else e(Ie({
+						} else e(Te({
 							parentCommentId: o,
 							commentsPageKey: t,
 							draftKey: l,
@@ -742,7 +742,7 @@
 									thing_id: t
 								};
 								return r === E.i.MARKDOWN ? s.text = o.text : (s.text = null, s.richtext_json = n), Object(j.a)(Object(y.a)(e, [S.a]), {
-									endpoint: Object(_.a)(Object(I.a)(Object(T.a)(`${e.apiUrl}/api/editusertext`))),
+									endpoint: Object(_.a)(Object(T.a)(Object(I.a)(`${e.apiUrl}/api/editusertext`))),
 									method: g.ob.POST,
 									data: s
 								}).then(e => e.ok ? e.body.json ? e.body.json.errors.length ? {
@@ -1111,8 +1111,8 @@
 				v = o("./src/reddit/contexts/PageLayer/index.tsx"),
 				w = o("./src/reddit/controls/Dropdown/index.tsx"),
 				E = o("./src/reddit/controls/Dropdown/Row.tsx"),
-				T = o("./src/reddit/controls/Search/CommentSearch/index.tsx"),
-				I = o("./src/reddit/controls/ToggleSwitch/index.tsx"),
+				I = o("./src/reddit/controls/Search/CommentSearch/index.tsx"),
+				T = o("./src/reddit/controls/ToggleSwitch/index.tsx"),
 				N = o("./src/reddit/helpers/path/index.ts"),
 				M = o("./src/reddit/selectors/telemetry.ts");
 			o("./src/telemetry/models/Event.ts");
@@ -1400,7 +1400,7 @@
 						className: Q.a.containerRow
 					}, !F && s.a.createElement(s.a.Fragment, null, ne, s.a.createElement("span", {
 						className: Q.a.verticalDivider
-					}, "|")), s.a.createElement("div", null, s.a.createElement(T.c, {
+					}, "|")), s.a.createElement("div", null, s.a.createElement(I.c, {
 						experiment: c,
 						commentId: o,
 						prevLocation: O,
@@ -1438,7 +1438,7 @@
 						onClick: this.props.toggleContestModeModal
 					}, n.fbt._("Contest", null, {
 						hk: "1KrhdJ"
-					}), s.a.createElement(I.a, {
+					}), s.a.createElement(T.a, {
 						className: Q.a.ToggleSwitch,
 						on: D
 					}))), k && s.a.createElement("div", {
@@ -1538,7 +1538,7 @@
 			})), o.d(t, "b", (function() {
 				return E
 			})), o.d(t, "d", (function() {
-				return I
+				return T
 			})), o.d(t, "e", (function() {
 				return N
 			})), o.d(t, "c", (function() {
@@ -1570,8 +1570,8 @@
 			const v = "SEARCH_BAR_TEST_ID",
 				w = "comment_search-bar",
 				E = "comment-search-button",
-				T = "search-bar-dismiss-button",
-				I = "search/";
+				I = "search-bar-dismiss-button",
+				T = "search/";
 
 			function N(e) {
 				let {
@@ -1615,7 +1615,7 @@
 				function J() {
 					var t;
 					if (!P.trim() || !F) return;
-					const o = `${new URL(F.permalink).pathname}${I}`,
+					const o = `${new URL(F.permalink).pathname}${T}`,
 						n = N({
 							searchValue: P,
 							post: F,
@@ -1678,9 +1678,9 @@
 					"aria-label": n.fbt._("Remove search bar text", null, {
 						hk: "4twCsS"
 					}),
-					id: T,
+					id: I,
 					className: k.a.dismissButton,
-					"data-testid": T,
+					"data-testid": I,
 					onClick: () => {
 						R("")
 					}
@@ -2139,4 +2139,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.f4924006ee8c38427a3d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.b852c075e032630c2756.js.map
