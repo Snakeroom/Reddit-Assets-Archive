@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.5970f4c2a0ed3569d259.js
-// Retrieved at 1/5/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.5e0bee3f9c28c7e5d136.js
+// Retrieved at 1/10/2023, 8:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -5543,7 +5543,9 @@
 						i = e.tokenPrice && Object(bt.b)(e.tokenPrice, {
 							locale: t,
 							type: ht.b.Crypto,
-							displayConversion: e.tokenDisplayConversion
+							displayConversion: e.tokenDisplayConversion,
+							currency: e.tokenName,
+							pretty: !0
 						}),
 						r = s && i ? _.fbt._("{dollarPrice} or {tokenPrice}", [_.fbt._param("dollarPrice", s), _.fbt._param("tokenPrice", i)], {
 							hk: "1uXVRd"
@@ -7017,4 +7019,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.5970f4c2a0ed3569d259.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.5e0bee3f9c28c7e5d136.js.map
