@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.e186b9f960658aa6b696.js
-// Retrieved at 1/11/2023, 11:10:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.5386082034203d80b159.js
+// Retrieved at 1/11/2023, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, n) {
@@ -2458,7 +2458,7 @@
 				const p = Object(o.e)(e => e.subreddits.survey[n]),
 					b = Object(o.e)(e => e.subreddits.progressModule[n]),
 					h = Object(o.e)(u.a),
-					g = h !== c.He.NewModule;
+					g = h !== c.Ge.NewModule;
 				return (null === (s = null == b ? void 0 : b.cards) || void 0 === s ? void 0 : s.length) > 0 && g ? i.a.createElement(m, {
 					closeModuleOnMount: !!t && t !== l.g.Large,
 					subredditId: n,
@@ -2486,7 +2486,7 @@
 						experimentEligibilitySelector: i.S,
 						experimentName: r.od
 					});
-					return !(!t || Object(r.fg)(t))
+					return !(!t || Object(r.eg)(t))
 				},
 				a = e => {
 					return Object(s.c)(e, {
@@ -2503,13 +2503,13 @@
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = e => Object(s.c)(e, {
-				experimentName: r.ye,
+				experimentName: r.xe,
 				experimentEligibilitySelector: s.a
-			}) === r.Ge.Enabled
+			}) === r.Fe.Enabled
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
 			e.exports = JSON.parse('{"id":"c1fc98c26cf2"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.e186b9f960658aa6b696.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.5386082034203d80b159.js.map
