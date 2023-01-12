@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.c9b99ea3dfe1945d724c.js
-// Retrieved at 1/11/2023, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.67571524acc53dab0073.js
+// Retrieved at 1/12/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -301,7 +301,7 @@
 			})), n.d(t, "c", (function() {
 				return V
 			})), n.d(t, "h", (function() {
-				return K
+				return U
 			})), n.d(t, "f", (function() {
 				return Q
 			})), n.d(t, "d", (function() {
@@ -548,14 +548,14 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, X = Object(i.a)(c.r), Z = Object(i.a)(c.n), q = Object(i.a)(c.s), K = (e, t) => async (n, s, r) => {
+				}, X = Object(i.a)(c.r), q = Object(i.a)(c.n), K = Object(i.a)(c.s), U = (e, t) => async (n, s, r) => {
 					let {
 						apiContext: i
 					} = r;
 					n(X());
 					const a = await k(i(), e, t);
 					let c = !1;
-					if (a.ok) n(q({
+					if (a.ok) n(K({
 						collectionId: e,
 						newTitle: t
 					})), n(Object(d.f)({
@@ -566,7 +566,7 @@
 					})), c = !0;
 					else {
 						const e = a.error;
-						n(Z(e)), n(Object(d.f)({
+						n(q(e)), n(Object(d.f)({
 							kind: O.b.Error,
 							text: o.fbt._("Something went wrong. Just don't panic.", null, {
 								hk: "4Ck6Cm"
@@ -574,7 +574,7 @@
 						}))
 					}
 					return c
-				}, U = Object(i.a)(c.l), J = Object(i.a)(c.m), Y = Object(i.a)(c.k), Q = e => async (t, n) => {
+				}, Z = Object(i.a)(c.l), J = Object(i.a)(c.m), Y = Object(i.a)(c.k), Q = e => async (t, n) => {
 					const o = n();
 					if (Object(P.b)(o) || Object(P.c)(o)) return void t(Object(a.Z)(Object(j.b)(e.permalink), e.id));
 					const r = o.platform.currentPage.locationState;
@@ -611,11 +611,11 @@
 								hk: "4Ck6Cm"
 							})
 						}))), c
-					})(s, a))), c && n.push(t(K(s, c))), void 0 !== r && n.push(t(((e, t) => async (n, s, r) => {
+					})(s, a))), c && n.push(t(U(s, c))), void 0 !== r && n.push(t(((e, t) => async (n, s, r) => {
 						let {
 							apiContext: i
 						} = r;
-						n(U());
+						n(Z());
 						const a = await C(i(), e, t);
 						let c = !1;
 						if (a.ok) n(J({
@@ -1218,7 +1218,7 @@
 				const t = Object(r.f)().getState(),
 					n = Object(f.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Zc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Zc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Zc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Yc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Yc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Yc.LargeImagePreview ? e.reredditButtons : [];
 					return s.a.createElement(O, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -2740,7 +2740,7 @@
 					}
 				}),
 				X = Object(r.b)(V);
-			class Z extends o.Component {
+			class q extends o.Component {
 				render() {
 					const {
 						draft: e,
@@ -2761,7 +2761,7 @@
 					})
 				}
 			}
-			t.default = H(X(Z))
+			t.default = H(X(q))
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, n) {
 			"use strict";
@@ -2778,15 +2778,15 @@
 				c = n("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => Object(a.h)(e) && Object(r.f)(e),
-					experimentName: o.jc
+					experimentName: o.ic
 				}), i.a),
 				l = Object(c.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.h)(e) && Object(r.f)(e),
-					experimentName: o.ic
+					experimentName: o.hc
 				}), i.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.c9b99ea3dfe1945d724c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.67571524acc53dab0073.js.map

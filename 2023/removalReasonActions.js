@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.8a3898f139e966d99d1e.js
-// Retrieved at 1/11/2023, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.414476ba4a311f9a5432.js
+// Retrieved at 1/12/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./node_modules/lodash/map.js": function(e, t, s) {
@@ -523,10 +523,10 @@
 				});
 			var $ = s("./src/reddit/helpers/isPost.ts"),
 				J = s("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
-				Q = s("./src/reddit/helpers/routeKey/index.ts"),
-				z = s("./src/reddit/models/ModQueue/index.ts"),
-				H = s("./src/reddit/models/PostDraft/index.ts"),
-				q = s("./src/reddit/models/RemovalReason/index.ts"),
+				z = s("./src/reddit/helpers/routeKey/index.ts"),
+				H = s("./src/reddit/models/ModQueue/index.ts"),
+				q = s("./src/reddit/models/PostDraft/index.ts"),
+				Q = s("./src/reddit/models/RemovalReason/index.ts"),
 				X = s("./src/reddit/models/Toast/index.ts"),
 				Z = s("./src/reddit/selectors/comments.ts"),
 				W = s("./src/reddit/selectors/platform.ts");
@@ -638,9 +638,9 @@
 					const l = a(),
 						m = l.user.account && l.user.account.displayText,
 						u = e[0],
-						p = Object($.a)(u) ? q.e.Post : q.e.Comment,
-						b = p === q.e.Post ? l.posts.models[u] : l.features.comments.models[u],
-						O = p === q.e.Post ? N.Q : g.j;
+						p = Object($.a)(u) ? Q.e.Post : Q.e.Comment,
+						b = p === Q.e.Post ? l.posts.models[u] : l.features.comments.models[u],
+						O = p === Q.e.Post ? N.Q : g.j;
 					if (!b || !m) return !1;
 					d(Re()), d(O({
 						[u]: {
@@ -665,9 +665,9 @@
 									isLocked: r,
 									type: o
 								},
-								a = await G(c(), Object(q.h)(n, p), p);
+								a = await G(c(), Object(Q.h)(n, p), p);
 							if (a.ok) {
-								if ([q.f.Public, q.f.PublicAsSubreddit].includes(o)) {
+								if ([Q.f.Public, Q.f.PublicAsSubreddit].includes(o)) {
 									if (d(ve()), a.body) {
 										const e = Object(J.a)(a.body),
 											t = {
@@ -676,12 +676,12 @@
 											},
 											s = Object(W.f)(l),
 											o = l.platform.currentPage && l.platform.currentPage.routeMatch;
-										let n = s && o && Object(Q.a)(o, l, l.posts.models[e.postId]);
+										let n = s && o && Object(z.a)(o, l, l.posts.models[e.postId]);
 										if (n || (n = Object(x.a)(e.postId, null, {
 												sort: y.x,
 												hasSortParam: !0
-											})), p === q.e.Post) {
-											const s = Object(k.a)(H.c.replyToPost, u);
+											})), p === Q.e.Post) {
+											const s = Object(k.a)(q.c.replyToPost, u);
 											d(Object(C.r)({
 												...t,
 												headCommentId: Object(Z.w)(l, {
@@ -700,8 +700,8 @@
 													isStickied: !1
 												}
 											}))
-										} else if (p === q.e.Comment) {
-											const e = Object(k.a)(H.c.replyToComment, b.id),
+										} else if (p === Q.e.Comment) {
+											const e = Object(k.a)(q.c.replyToComment, b.id),
 												s = Object(Z.j)(l, {
 													commentId: u,
 													commentsPageKey: n
@@ -754,7 +754,7 @@
 					if (b.ok) {
 						const o = {
 							ids: e,
-							operation: z.a.RemovalReason,
+							operation: H.a.RemovalReason,
 							username: m,
 							options: {
 								modNote: r,
@@ -768,7 +768,7 @@
 									title: t.title,
 									type: n
 								},
-								r = await G(c(), Object(q.h)(o, q.e.Bulk), q.e.Bulk);
+								r = await G(c(), Object(Q.h)(o, Q.e.Bulk), Q.e.Bulk);
 							r.ok ? (d(Ee()), d(u)) : d(Ae(r.error))
 						} else d(u)
 					} else d(je(b.error))
@@ -1073,11 +1073,11 @@
 				experimentEligibilitySelector: n.a,
 				experimentName: o.pb
 			}), e => ({
-				bucketed: e === o.Qc.ExpandedSearch || e === o.Qc.CollapsedSearch,
-				collapsed: e === o.Qc.CollapsedSearch,
-				expanded: e === o.Qc.ExpandedSearch
+				bucketed: e === o.Pc.ExpandedSearch || e === o.Pc.CollapsedSearch,
+				collapsed: e === o.Pc.CollapsedSearch,
+				expanded: e === o.Pc.ExpandedSearch
 			}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.8a3898f139e966d99d1e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.414476ba4a311f9a5432.js.map

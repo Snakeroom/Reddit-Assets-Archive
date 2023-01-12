@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.c7047ec6753672a38a83.js
-// Retrieved at 1/11/2023, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.0b80d6261555e9ae8e69.js
+// Retrieved at 1/12/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./src/reddit/components/FrontpageSidebar/index.tsx": function(e, t, n) {
@@ -190,11 +190,11 @@
 				W = n("./node_modules/request-idle-callback/index.js"),
 				U = n("./src/lib/constants/index.ts"),
 				I = n("./src/reddit/components/SubredditIcon/index.tsx"),
-				D = n("./src/reddit/constants/localStorage.ts"),
-				K = n("./src/reddit/contexts/ApiContext.tsx"),
-				H = n("./src/reddit/featureFlags/component.tsx"),
+				K = n("./src/reddit/constants/localStorage.ts"),
+				D = n("./src/reddit/contexts/ApiContext.tsx"),
+				G = n("./src/reddit/featureFlags/component.tsx"),
 				Q = n("./src/reddit/helpers/localStorage/index.ts"),
-				G = n("./src/reddit/helpers/name/index.ts"),
+				H = n("./src/reddit/helpers/name/index.ts"),
 				J = n("./src/lib/makeApiRequest/index.ts"),
 				M = n("./src/lib/omitHeaders/index.ts"),
 				q = n("./src/reddit/constants/headers.ts");
@@ -215,13 +215,13 @@
 					}
 				}
 				async getSubredditForAdoption() {
-					let e = te.cachedData || Object(Q.A)(D.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
+					let e = te.cachedData || Object(Q.A)(K.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
 					if (!e || Date.now() - e.fetchedAt > $) {
 						const t = await X(this.props.apiContext());
 						t.ok && (e = {
 							subreddits: t.body.data.subreddits.map(e => e.name),
 							fetchedAt: Date.now()
-						}, Object(Q.zb)(D.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
+						}, Object(Q.zb)(K.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
 					}
 					return te.cachedData = e, e ? e.subreddits : []
 				}
@@ -249,7 +249,7 @@
 						hk: "487Ffc"
 					})), a.a.createElement("div", {
 						className: z.a.description
-					}, V._("{subreddits list} and more are looking for moderators!", [V._param("subreddits list", a.a.createElement("strong", null, e.map(G.d).join(", ") + (e.length > 1 ? "," : "")))], {
+					}, V._("{subreddits list} and more are looking for moderators!", [V._param("subreddits list", a.a.createElement("strong", null, e.map(H.d).join(", ") + (e.length > 1 ? "," : "")))], {
 						hk: "2Tb946"
 					}))), a.a.createElement(b.n, {
 						className: z.a.button,
@@ -260,7 +260,7 @@
 				}
 			}
 			te.cachedData = null;
-			var ne = Object(H.a)("srAdoptionWeek", Object(K.b)(te)),
+			var ne = Object(G.a)("srAdoptionWeek", Object(D.b)(te)),
 				se = n("./src/reddit/actions/post.ts"),
 				ae = n("./src/reddit/components/MiniPost/index.tsx"),
 				re = n("./src/reddit/components/Widgets/Base/index.tsx");
@@ -618,14 +618,14 @@
 					shouldShowTopicsWidget: e => (function(e) {
 						return Object(Re.c)(e, {
 							experimentEligibilitySelector: Be.S,
-							experimentName: Le.Lc
-						}) === Le.Hd
+							experimentName: Le.Kc
+						}) === Le.Gd
 					})(e),
 					isNavbarLikeMwebEnabled: i.a
 				}),
-				De = e => !(!e.currentUser || !e.currentUser.showRecentPosts),
-				Ke = e => !(!e.currentUser || e.currentUser.isGold);
-			class He extends a.a.Component {
+				Ke = e => !(!e.currentUser || !e.currentUser.showRecentPosts),
+				De = e => !(!e.currentUser || e.currentUser.isGold);
+			class Ge extends a.a.Component {
 				constructor(e) {
 					super(e), this.componentDidMount = async () => {
 						this.setState({
@@ -655,9 +655,9 @@
 						position: Ue.a.FIRST,
 						sizes: U.j,
 						placementIndex: e++
-					}), Ke(this.props) && a.a.createElement(k, null), i && a.a.createElement(m.a, null, a.a.createElement(Ae, null)), s && a.a.createElement(m.a, null, a.a.createElement(d.a, {
+					}), De(this.props) && a.a.createElement(k, null), i && a.a.createElement(m.a, null, a.a.createElement(Ae, null)), s && a.a.createElement(m.a, null, a.a.createElement(d.a, {
 						listingName: r
-					})), De(this.props) && a.a.createElement(xe, null), n && l && a.a.createElement(m.a, null, a.a.createElement(P, {
+					})), Ke(this.props) && a.a.createElement(xe, null), n && l && a.a.createElement(m.a, null, a.a.createElement(P, {
 						links: n
 					})), a.a.createElement(L.a, {
 						adComponent: a.a.createElement(T.a, {
@@ -673,7 +673,7 @@
 			const Qe = Object(r.b)(Ie, e => ({
 				subredditAboutRequested: t => e(Object(l.u)(t))
 			}));
-			t.default = Qe(He)
+			t.default = Qe(Ge)
 		},
 		"./src/reddit/components/MiniPost/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -915,4 +915,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.c7047ec6753672a38a83.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.0b80d6261555e9ae8e69.js.map

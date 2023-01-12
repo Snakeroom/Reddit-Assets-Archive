@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.84c803a82015eb9183e8.js
-// Retrieved at 1/10/2023, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.54632500042489238fad.js
+// Retrieved at 1/12/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditAddSubredditModal"], {
 		"./node_modules/lodash/without.js": function(e, t, r) {
@@ -24,11 +24,11 @@
 			})), r.d(t, "myMultiredditsPending", (function() {
 				return D
 			})), r.d(t, "myMultiredditsReceived", (function() {
-				return K
-			})), r.d(t, "myMultiredditsRequested", (function() {
 				return z
-			})), r.d(t, "createFailure", (function() {
+			})), r.d(t, "myMultiredditsRequested", (function() {
 				return W
+			})), r.d(t, "createFailure", (function() {
+				return K
 			})), r.d(t, "createPending", (function() {
 				return H
 			})), r.d(t, "createSuccess", (function() {
@@ -168,8 +168,8 @@
 				w = r("./src/reddit/models/Toast/index.ts"),
 				T = r("./src/reddit/selectors/multireddit.ts"),
 				P = r("./src/reddit/selectors/platform.ts"),
-				R = r("./src/reddit/selectors/subreddit.ts"),
-				I = r("./src/reddit/selectors/user.ts"),
+				I = r("./src/reddit/selectors/subreddit.ts"),
+				R = r("./src/reddit/selectors/user.ts"),
 				q = r("./src/reddit/helpers/getTimeSortForListing/index.ts"),
 				M = r("./src/reddit/actions/multireddit/constants.ts");
 			const L = Object(c.a)(M.q),
@@ -226,7 +226,7 @@
 						..._.body,
 						...Object(S.a)(c, p, N)
 					}))
-				}, D = Object(c.a)(M.t), K = Object(c.a)(M.u), z = function(e) {
+				}, D = Object(c.a)(M.t), z = Object(c.a)(M.u), W = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
 					return async (r, i, s) => {
 						let {
@@ -234,7 +234,7 @@
 							gqlContext: n
 						} = s;
 						const a = i();
-						if (!Object(I.m)(a)) return;
+						if (!Object(R.m)(a)) return;
 						if (!e && Object(T.h)(a) || Object(T.i)(a)) return;
 						r(D());
 						const o = await j(n(), {
@@ -243,13 +243,13 @@
 						if (o.ok) {
 							const e = o.body.data.identity.allMultireddits.edges.map(e => e.node),
 								t = Object(k.b)(e);
-							r(K({
+							r(z({
 								...t,
 								multiredditsModelsState: a.multireddits.models
 							}))
 						}
 					}
-				}, W = Object(c.a)(M.e), H = Object(c.a)(M.f), J = Object(c.a)(M.g), Q = e => {
+				}, K = Object(c.a)(M.e), H = Object(c.a)(M.f), J = Object(c.a)(M.g), Q = e => {
 					let {
 						description: t,
 						displayName: r,
@@ -260,7 +260,7 @@
 							apiContext: c
 						} = o;
 						const l = d(),
-							m = Object(I.m)(l);
+							m = Object(R.m)(l);
 						if (!m) return;
 						e(H());
 						const p = await ((e, t, r) => Object(f.a)(Object(h.a)(e, [x.a]), {
@@ -293,14 +293,14 @@
 									hk: "258cY9"
 								})
 							}))
-						} else e(W(p.error))
+						} else e(K(p.error))
 					}
 				}, B = () => async (e, t, r) => {
 					let {
 						apiContext: i
 					} = r;
 					const s = t(),
-						n = Object(I.m)(s),
+						n = Object(R.m)(s),
 						o = Object(P.i)(s) ? Object(P.m)(s) : Object(P.b)(s),
 						c = o && o.routeMatch && o.routeMatch.match;
 					if (!c) return;
@@ -316,9 +316,9 @@
 							queryParams: g
 						} = c,
 						O = Object(l.a)(x, b, g),
-						y = p.K in g && g[p.K].toUpperCase() || "",
+						y = p.I in g && g[p.I].toUpperCase() || "",
 						j = a.oc[y] || !1,
-						C = Object(I.m)(s);
+						C = Object(R.m)(s);
 					(h || C && C.displayText) && await e(Object(m.multiredditFeedRequested)(O, (h || C.displayText).toLowerCase(), f.toLowerCase(), {
 						...d()(g, p.p),
 						...d()(g, p.o),
@@ -337,7 +337,7 @@
 							apiContext: l
 						} = c;
 						const m = o(),
-							p = Object(I.m)(m);
+							p = Object(R.m)(m);
 						if (!p || !p.displayText) return;
 						const O = Object(E.h)((d || p.displayText).toLowerCase(), s.toLowerCase());
 						e(V());
@@ -387,7 +387,7 @@
 							apiContext: c
 						} = n;
 						const l = d(),
-							m = Object(I.m)(l);
+							m = Object(R.m)(l);
 						if (!m || l.multireddits.api.addSubreddit.pending) return;
 						e(Z({
 							name: r.name
@@ -406,7 +406,7 @@
 								method: a.ob.PUT
 							}))(c(), y, O);
 						if (j.ok) {
-							const d = Object(R.P)(l, {
+							const d = Object(I.P)(l, {
 									identifier: r
 								}) || t && t.id || "",
 								n = s.map(e => Object(E.h)(p, e));
@@ -450,7 +450,7 @@
 							apiContext: c
 						} = o;
 						const l = n(),
-							m = Object(I.m)(l);
+							m = Object(R.m)(l);
 						if (!m || !m.displayText || l.multireddits.api.removeSubreddit.pending) return;
 						e(ie({
 							id: t
@@ -490,7 +490,7 @@
 						apiContext: d
 					} = s;
 					const o = r();
-					if (!Object(I.m)(o)) return;
+					if (!Object(R.m)(o)) return;
 					t(oe());
 					const c = await ((e, t) => Object(f.a)(Object(h.a)(e, [x.a]), {
 						endpoint: Object(g.a)(`${e.apiUrl}/api/multi${t}`),
@@ -513,7 +513,7 @@
 							apiContext: c
 						} = o;
 						const l = n();
-						if (!Object(I.S)(l)) return;
+						if (!Object(R.S)(l)) return;
 						e(me());
 						const m = await (e => {
 							let {
@@ -564,14 +564,14 @@
 							gqlContext: n
 						} = d;
 						const a = s(),
-							o = Object(I.m)(a);
+							o = Object(R.m)(a);
 						if (!(r || o && o.displayText)) return;
 						const c = Object(E.h)(r || o.displayText, t),
 							l = a.multireddits.models[c];
 						if (!l || !l.subredditIds) return;
 						e(he());
 						const u = i && i.reduce((e, t) => {
-								const r = Object(R.I)(a, t) || Object(R.J)(a, t);
+								const r = Object(I.I)(a, t) || Object(I.J)(a, t);
 								return r ? [...e, r] : e
 							}, []),
 							m = await Object(_.a)(n(), {
@@ -598,9 +598,9 @@
 			})), r.d(t, "multiredditFeedLoaded", (function() {
 				return P
 			})), r.d(t, "multiredditFeedFailed", (function() {
-				return R
-			})), r.d(t, "multiredditFeedRequested", (function() {
 				return I
+			})), r.d(t, "multiredditFeedRequested", (function() {
+				return R
 			})), r.d(t, "multiredditRequested", (function() {
 				return q
 			}));
@@ -634,8 +634,8 @@
 				w = r("./src/reddit/actions/pages/multireddit/constants.ts");
 			const T = Object(S.a)(w.c),
 				P = Object(S.a)(w.b),
-				R = Object(S.a)(w.a),
-				I = (e, t, r, s, d) => async (n, a, u) => {
+				I = Object(S.a)(w.a),
+				R = (e, t, r, s, d) => async (n, a, u) => {
 					const {
 						gqlContext: b
 					} = u, p = a();
@@ -657,7 +657,7 @@
 						S = `error-${e}`;
 					if (j.ok && C) {
 						const i = Object(g.a)(C);
-						if (!C.multireddit) return d && n(m.g(S)), void n(R({
+						if (!C.multireddit) return d && n(m.g(S)), void n(I({
 							...i,
 							error: {
 								type: l.L.NOT_FOUND_ERROR
@@ -685,7 +685,7 @@
 						buttonText: i.fbt._("Retry", null, {
 							hk: "1XMjgA"
 						}),
-						buttonAction: I(e, t, r, s, d)
+						buttonAction: R(e, t, r, s, d)
 					}))
 				}, q = (e, t) => async (r, i) => {
 					const {
@@ -720,12 +720,12 @@
 						y = f.listings.postOrder.ids[g],
 						_ = f.listings.postOrder.api.error[g],
 						S = f.listings.postOrder.api.pending[g],
-						F = p.K in e.queryParams && e.queryParams[p.K].toUpperCase() || "",
+						F = p.I in e.queryParams && e.queryParams[p.I].toUpperCase() || "",
 						w = F in l.oc && l.oc[F];
 					if (S || y && !_ && !t) return void(y && (r(u.n({
 						title: Object(C.f)(i(), m)
 					})), f.sidebarPromotedPosts.firstFetch || r(Object(v.b)(E.a.MULTIREDDIT))));
-					await r(I(g, o, s, {
+					await r(R(g, o, s, {
 						...d()(e.queryParams, p.p),
 						...d()(e.queryParams, p.o),
 						sort: c,
@@ -815,9 +815,9 @@
 				w = r("./src/reddit/selectors/multireddit.ts"),
 				T = r("./src/reddit/controls/CheckboxInput/index.tsx"),
 				P = r("./src/reddit/components/MultiredditAddSubredditModal/index.m.less"),
-				R = r.n(P);
+				I = r.n(P);
 			const {
-				fbt: I
+				fbt: R
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 			var q = e => {
 				let {
@@ -829,30 +829,30 @@
 				} = e;
 				const a = t;
 				return c.a.createElement("div", {
-					className: R.a.listItem,
+					className: I.a.listItem,
 					onClick: a ? d.a : s,
 					ref: n
 				}, c.a.createElement(T.a, {
 					name: "addSubreddit",
-					className: R.a.checkbox,
+					className: I.a.checkbox,
 					disabled: a,
 					value: r || t,
 					onChange: a ? d.a : s
 				}), c.a.createElement("img", {
 					src: i.icon,
-					className: R.a.icon
+					className: I.a.icon
 				}), c.a.createElement("div", {
-					className: R.a.label
+					className: I.a.label
 				}, c.a.createElement("div", {
-					className: R.a.name
+					className: I.a.name
 				}, i.displayText), c.a.createElement("div", {
-					className: R.a.details
-				}, t ? I._("Community already added to this feed", null, {
+					className: I.a.details
+				}, t ? R._("Community already added to this feed", null, {
 					hk: "3dMmTS"
-				}) : i.subredditCount && I._({
+				}) : i.subredditCount && R._({
 					"*": "{communities} communities",
 					_1: "1 community"
-				}, [I._plural(i.subredditCount, "communities")], {
+				}, [R._plural(i.subredditCount, "communities")], {
 					hk: "2tlE2Y"
 				}))))
 			};
@@ -993,14 +993,14 @@
 					})), c.a.createElement("button", {
 						onClick: s
 					}, c.a.createElement(x.b, null)))), c.a.createElement(x.l, {
-						className: R.a.main
+						className: I.a.main
 					}, c.a.createElement("div", {
-						className: R.a.listContainer,
+						className: I.a.listContainer,
 						ref: this.setScrollRef
 					}, t ? c.a.createElement("div", {
-						className: R.a.loadingContainer
+						className: I.a.loadingContainer
 					}, c.a.createElement(k.a, {
-						className: Object(b.a)(R.a.loadingIcon, R.a.forUser),
+						className: Object(b.a)(I.a.loadingIcon, I.a.forUser),
 						sizePx: M
 					})) : r.map(e => c.a.createElement(q, {
 						containsSubreddit: this.containsCurrentSubredditOrProfile(e),
@@ -1010,7 +1010,7 @@
 						onCheck: this.getOnCheckFn(e.name),
 						recentRef: e.name === u ? this.setRecentRef : d.a
 					}))), c.a.createElement("div", null, l ? c.a.createElement("div", {
-						className: Object(b.a)(R.a.listItem, R.a.inputListItem)
+						className: Object(b.a)(I.a.listItem, I.a.inputListItem)
 					}, c.a.createElement(g.b, {
 						inputRef: this.setInputRef,
 						label: i.fbt._("new custom feed", null, {
@@ -1022,7 +1022,7 @@
 						state: this.getCreateState(),
 						value: a
 					}), p ? c.a.createElement(O.c, {
-						className: R.a.createErrorMsg
+						className: I.a.createErrorMsg
 					}, o === F.a.SameName ? i.fbt._("A custom feed with that name already exists", null, {
 						hk: "1WJHG3"
 					}) : o === F.a.TooShort ? i.fbt._("Name must contain at least two alphanumeric characters", null, {
@@ -1033,15 +1033,15 @@
 						text: a,
 						maxChars: F.c
 					}), !f && !p && (e ? c.a.createElement(k.a, {
-						className: Object(b.a)(R.a.createSubmitBtn, R.a.loading),
+						className: Object(b.a)(I.a.createSubmitBtn, I.a.loading),
 						sizePx: L
 					}) : c.a.createElement(S.r, {
-						className: R.a.createSubmitBtn,
+						className: I.a.createSubmitBtn,
 						onClick: this.onCreateSubmit
 					}, i.fbt._("create", null, {
 						hk: "1RZAAQ"
 					})))) : c.a.createElement(S.r, {
-						className: R.a.listItem,
+						className: I.a.listItem,
 						onClick: this.onCreateClick
 					}, i.fbt._("+ Create a custom feed", null, {
 						hk: "6VkVz"
@@ -1049,7 +1049,7 @@
 						disabled: !!n || !m.length || e,
 						onClick: this.onSubmit
 					}, n ? c.a.createElement(k.a, {
-						className: R.a.loadingIcon,
+						className: I.a.loadingIcon,
 						sizePx: L
 					}) : i.fbt._("Update", null, {
 						hk: "3LoAmq"
@@ -1489,4 +1489,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.84c803a82015eb9183e8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.54632500042489238fad.js.map

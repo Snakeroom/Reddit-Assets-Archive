@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.c7f7e60a9e95a7ae7306.js
-// Retrieved at 1/11/2023, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.62bc1a2d09eb9e51cf2e.js
+// Retrieved at 1/12/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -965,7 +965,7 @@
 							subredditName: d = P.e,
 							wikiPageName: c,
 							wikiSubRoute: l
-						} = e, u = t[I.P], m = t[I.Q], b = u ? Object(x.a)(u) : void 0, p = m ? Object(x.a)(m) : void 0, h = c === P.j, v = l === P.m.Revisions;
+						} = e, u = t[I.N], m = t[I.O], b = u ? Object(x.a)(u) : void 0, p = m ? Object(x.a)(m) : void 0, h = c === P.j, v = l === P.m.Revisions;
 						let C = !1,
 							y = !1;
 						if (n) {
@@ -5318,7 +5318,7 @@
 				const t = Object(r.f)().getState(),
 					n = Object(h.a)(t, Object(o.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Zc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Zc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Zc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Yc.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.Yc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.Yc.LargeImagePreview ? e.reredditButtons : [];
 					return i.a.createElement(N, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -6882,7 +6882,7 @@
 						} = t;
 						return Object(yt.c)(e, n)
 					},
-					isInNewModuleNCPV3Experiment: e => Object(Et.a)(e) === kt.Ge.NewModule,
+					isInNewModuleNCPV3Experiment: e => Object(Et.a)(e) === kt.Fe.NewModule,
 					showCommunityChat: Ot.b,
 					showGovernance: vt.d.spPoints,
 					showLeaderboard: vt.d.spLeaderboard,
@@ -8336,7 +8336,7 @@
 				} = t;
 				if (!n && !s) return e;
 				const i = {};
-				n && (i[k.P] = Object(v.b)(n)), s && (i[k.Q] = Object(v.b)(s));
+				n && (i[k.N] = Object(v.b)(n)), s && (i[k.O] = Object(v.b)(s));
 				const r = e.endsWith("/") ? e : `${e}/`;
 				return Object(f.a)(r, i)
 			}
@@ -9707,7 +9707,7 @@
 						displayText: s.fbt._("View page source", null, {
 							hk: "1d5vg5"
 						}),
-						href: `${d}/${o}/?${E.R}`,
+						href: `${d}/${o}/?${E.P}`,
 						onClick: this.onViewPageSourceClick
 					}), n && a.a.createElement(_.b, {
 						className: N.a.row,
@@ -10826,7 +10826,7 @@
 					} = e, {
 						wikiSubRoute: r,
 						wikiPageName: a
-					} = n, o = s[k.P], d = s[k.Q], c = k.R in s;
+					} = n, o = s[k.N], d = s[k.O], c = k.P in s;
 					switch (r) {
 						case v.m.Create:
 						case v.m.Edit:
@@ -10954,7 +10954,7 @@
 				d = e => Object(a.c)(e, {
 					experimentEligibilitySelector: o,
 					experimentName: s.kb
-				}) === s.Pc.Treatment
+				}) === s.Oc.Treatment
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, n) {
 			"use strict";
@@ -10971,11 +10971,11 @@
 				d = n("./node_modules/reselect/es/index.js");
 			const c = Object(d.a)(e => Object(i.c)(e, {
 					experimentEligibilitySelector: e => Object(o.h)(e) && Object(r.f)(e),
-					experimentName: s.jc
+					experimentName: s.ic
 				}), a.a),
 				l = Object(d.a)(e => Object(i.c)(e, {
 					experimentEligibilitySelector: e => !Object(o.h)(e) && Object(r.f)(e),
-					experimentName: s.ic
+					experimentName: s.hc
 				}), a.a),
 				u = Object(d.a)(c, l, (e, t) => e || t),
 				m = Object(d.a)(c, l, (e, t) => !(!e && !t))
@@ -11191,4 +11191,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.c7f7e60a9e95a7ae7306.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.62bc1a2d09eb9e51cf2e.js.map

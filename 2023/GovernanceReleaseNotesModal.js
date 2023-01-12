@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.b1a22c882d2b78d51d4c.js
-// Retrieved at 1/11/2023, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.29d60767f1947ed7ab39.js
+// Retrieved at 1/12/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1181,15 +1181,15 @@
 					})))
 				}
 			}
-			const P = Object(b.c)({
+			const G = Object(b.c)({
 					releaseNotes: m.f,
 					subreddit: u.s
 				}),
-				G = Object(s.b)(P, e => ({
+				P = Object(s.b)(G, e => ({
 					onClose: () => e(Object(a.f)())
 				})),
 				U = Object(u.v)();
-			t.default = Object(d.a)(U(G(B)))
+			t.default = Object(d.a)(U(P(B)))
 		},
 		"./src/reddit/featureFlags/component.tsx": function(e, t, n) {
 			"use strict";
@@ -1341,7 +1341,7 @@
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: i.D
-				}) === i.Hd
+				}) === i.Gd
 			}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
@@ -1410,4 +1410,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.b1a22c882d2b78d51d4c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.29d60767f1947ed7ab39.js.map

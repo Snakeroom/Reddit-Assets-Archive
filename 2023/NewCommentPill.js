@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommentPill.4b4027beedca78594136.js
-// Retrieved at 1/4/2023, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommentPill.6cdfe565500248dca52f.js
+// Retrieved at 1/12/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommentPill"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, s) {
@@ -126,7 +126,7 @@
 						if (!S) return;
 						k(!1), K.current && (clearTimeout(K.current), K.current = null), L.current && (L.current = null), B.current = 2, (() => {
 							const e = new URLSearchParams(location.search);
-							e.get(j.F) !== C.w.NEW && (e.set(j.F, C.w.NEW), z(Object(i.b)(Object(r.c)({
+							e.get(j.D) !== C.w.NEW && (e.set(j.D, C.w.NEW), z(Object(i.b)(Object(r.c)({
 								pathname: location.pathname,
 								search: e.toString()
 							}, {
@@ -156,7 +156,7 @@
 				}, 5e3)), () => {
 					K.current && clearTimeout(K.current)
 				}), [A]);
-				const F = Object(o.useCallback)(e => {
+				const J = Object(o.useCallback)(e => {
 					const {
 						topLevelCommentCountChange: t
 					} = e.subscribe.data;
@@ -167,7 +167,7 @@
 				}, []);
 				return T ? a.a.createElement(a.a.Fragment, null, a.a.createElement(d.a, {
 					variables: W,
-					onData: F,
+					onData: J,
 					queryKey: "topLevelCommentCountChange"
 				}), a.a.createElement("div", {
 					className: Object(I.a)(y.a.wrapper, {
@@ -516,4 +516,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommentPill.4b4027beedca78594136.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommentPill.6cdfe565500248dca52f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.9a0064e12780d3fbd3b7.js
-// Retrieved at 1/11/2023, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.483af8bfea86498fee35.js
+// Retrieved at 1/12/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -2422,8 +2422,8 @@
 					const n = t ? `/r/${t}/search` : "/search",
 						r = `${t?"flair_name":"flair"}:"${e}"`;
 					return Object(l.a)(n, {
-						[_.y]: r,
-						[_.z]: t ? "1" : ""
+						[_.w]: r,
+						[_.x]: t ? "1" : ""
 					})
 				},
 				R = e => e.isFlairFilter ? d.a.createElement(y.default, {
@@ -4221,7 +4221,7 @@
 						onClick: g ? v : void 0,
 						headerButton: i.a.createElement("div", {
 							className: Je.a.headerButtonsContainer
-						}, !K && y && C && l !== ge.Ge.NewModule && i.a.createElement(a.a, {
+						}, !K && y && C && l !== ge.Fe.NewModule && i.a.createElement(a.a, {
 							className: Je.a.ModToolsLink,
 							to: C.posts ? `${y.url}about/modqueue` : `${y.url}about/`,
 							onClick: this.onClickModTools
@@ -5959,7 +5959,7 @@
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
 					experimentName: r.D
-				}) === r.Hd
+				}) === r.Gd
 			}
 		},
 		"./src/reddit/selectors/experiments/joinOptimizations.ts": function(e, t, n) {
@@ -6029,4 +6029,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.9a0064e12780d3fbd3b7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.483af8bfea86498fee35.js.map

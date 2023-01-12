@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.efdd28140d6865f28e8f.js
-// Retrieved at 1/11/2023, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.2fa7dc368bde5b4bc5c2.js
+// Retrieved at 1/12/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditForkingCTA"], {
 		"./node_modules/lodash/xorWith.js": function(t, _, e) {
@@ -34,15 +34,15 @@
 				u = e("./src/reddit/constants/modals.ts"),
 				m = e("./src/reddit/controls/Button/index.tsx"),
 				p = e("./src/reddit/helpers/trackers/subredditCreation.ts"),
-				x = e("./src/reddit/selectors/user.ts"),
-				b = e("./src/reddit/components/CreateCommunityButton/index.m.less"),
-				f = e.n(b),
+				b = e("./src/reddit/selectors/user.ts"),
+				x = e("./src/reddit/components/CreateCommunityButton/index.m.less"),
+				f = e.n(x),
 				h = e("./src/lib/lessComponent.tsx");
 			const y = "create-community-button",
 				g = h.a.wrapped(c.c, "StyledTooltip", f.a),
 				j = Object(a.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: t => !Object(x.rb)(t),
-					userIsSuspended: x.Z
+					userDoesNotHaveEnoughExpToCreateCommunity: t => !Object(b.rb)(t),
+					userIsSuspended: b.Z
 				});
 			_.a = Object(r.b)(j, (t, _) => {
 				let {
@@ -150,9 +150,9 @@
 			})), e.d(_, "e", (function() {
 				return p
 			})), e.d(_, "n", (function() {
-				return x
-			})), e.d(_, "p", (function() {
 				return b
+			})), e.d(_, "p", (function() {
+				return x
 			})), e.d(_, "o", (function() {
 				return f
 			})), e.d(_, "f", (function() {
@@ -209,8 +209,8 @@
 			}
 			const m = n.a.wrapped(d.a, "CloseIcon", l.a),
 				p = n.a.section("ModalBody", l.a),
-				x = n.a.section("ModalPostPreview", l.a),
-				b = n.a.p("ModalText", l.a),
+				b = n.a.section("ModalPostPreview", l.a),
+				x = n.a.p("ModalText", l.a),
 				f = n.a.div("ModalSmallText", l.a),
 				h = n.a.div("ModalDescriptionText", l.a),
 				y = n.a.div("ModalMetaText", l.a),
@@ -256,11 +256,11 @@
 				u = e("./src/reddit/constants/experiments.ts"),
 				m = e("./src/reddit/helpers/chooseVariant/index.ts"),
 				p = e("./src/reddit/selectors/experiments/utils.ts");
-			const x = Object(l.a)(t => Object(m.c)(t, {
-					experimentName: u.xf,
+			const b = Object(l.a)(t => Object(m.c)(t, {
+					experimentName: u.wf,
 					experimentEligibilitySelector: m.a
 				}), p.a),
-				b = Object(l.a)(x, t => t === u.Df.Enabled);
+				x = Object(l.a)(b, t => t === u.Cf.Enabled);
 			var f = e("./src/reddit/selectors/posts.ts"),
 				h = e("./src/reddit/components/CreateCommunityButton/index.tsx"),
 				y = e("./src/reddit/components/TrackingHelper/index.tsx");
@@ -1167,7 +1167,7 @@
 						..._,
 						disallowProfile: !0
 					});
-					return !(!e || (null == g ? void 0 : g[e.id])) && !!b(t)
+					return !(!e || (null == g ? void 0 : g[e.id])) && !!x(t)
 				},
 				k = Object(r.b)(() => Object(l.c)({
 					shouldDisplayCTA: w
@@ -1341,4 +1341,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.efdd28140d6865f28e8f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.2fa7dc368bde5b4bc5c2.js.map

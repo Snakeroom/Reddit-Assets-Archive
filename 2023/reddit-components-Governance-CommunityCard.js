@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.f090893dc25d9c8c8f74.js
-// Retrieved at 1/11/2023, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.b6e0bc3ecf33e5103de5.js
+// Retrieved at 1/12/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -467,7 +467,7 @@
 				F = n.n(V);
 			const W = Object(w.a)(M.a),
 				H = "BlockchainWalletInfo--SettingsMenu";
-			class q extends i.a.PureComponent {
+			class Z extends i.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onCopyToClipboard = () => {
 						Object(I.a)(this.props.publicAddress || "")
@@ -533,7 +533,7 @@
 					})))) : null
 				}
 			}
-			const Z = Object(b.c)({
+			const q = Object(b.c)({
 					dropdownIsOpen: Object(B.b)(H),
 					isEthereumProvider: (e, t) => {
 						let {
@@ -548,7 +548,7 @@
 						return Object(l.b)(e, n)
 					}
 				}),
-				$ = Object(a.b)(Z, (e, t) => ({
+				$ = Object(a.b)(q, (e, t) => ({
 					onGovernanceError: t => {
 						Object(A.a)(e, t)
 					},
@@ -566,7 +566,7 @@
 						}))
 					}
 				}));
-			var Y = Object(S.b)($(q)),
+			var Y = Object(S.b)($(Z)),
 				Q = n("./src/reddit/icons/svgs/QuarantineWarning/index.tsx"),
 				X = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/Risk/index.m.less"),
 				J = n.n(X);
@@ -1813,14 +1813,14 @@
 			const o = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.qe
-					}) === r.Hd
+						experimentName: r.pe
+					}) === r.Gd
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.oe
-					}) === r.Hd
+						experimentName: r.ne
+					}) === r.Gd
 				}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
@@ -1880,4 +1880,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.f090893dc25d9c8c8f74.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.b6e0bc3ecf33e5103de5.js.map
