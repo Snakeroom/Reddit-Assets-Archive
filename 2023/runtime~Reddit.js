@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.7474553cfe64876b46fb.js
-// Retrieved at 1/11/2023, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.acaf0ca3ca11532ae2d0.js
+// Retrieved at 1/11/2023, 8:00:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -836,7 +836,7 @@
 					"vendors~ModStatsChart~Settings~ViewsTooltip": "31d6cfe0d16ae931b73c",
 					"vendors~Settings": "31d6cfe0d16ae931b73c",
 					"Settings~SubredditWiki": "61ce14226ff5073139a9",
-					Settings: "f9cbecf84b2020584377",
+					Settings: "32fe9f3286b40ff206cf",
 					"vendors~ExportTheme~ImportTheme": "31d6cfe0d16ae931b73c",
 					ExportTheme: "31d6cfe0d16ae931b73c",
 					ImportTheme: "31d6cfe0d16ae931b73c",
@@ -995,7 +995,7 @@
 					"reddit-components-Governance-TransactionModals-ClaimPointsModal": "1ee67b58020f5a405272",
 					GivePremiumModal: "b5f612d4c10942de6d58",
 					ProfileIdCardUnblockConfirmationModal: "31d6cfe0d16ae931b73c",
-					SocialLinks: "c15e0b6717a45d395ac5",
+					SocialLinks: "2397bf2ea645e2b8a9a2",
 					ColorPickerDropdown: "31d6cfe0d16ae931b73c",
 					NftProductDetailsModal: "581bcdf8d656fe301ca3",
 					GeneralGifsTooltip: "c4b2d08e97b0ee368fae",
@@ -1554,7 +1554,7 @@
 						"vendors~ModStatsChart~Settings~ViewsTooltip": "ca7c845d62fd39d960b6",
 						"vendors~Settings": "86b1cfc53320ea8eef91",
 						"Settings~SubredditWiki": "44e84bcaf720d473318d",
-						Settings: "aee23835b2b4276175ec",
+						Settings: "337292bca190ef8f7e02",
 						"vendors~ExportTheme~ImportTheme": "4e4dc70c7eeb3e02be12",
 						ExportTheme: "fba93d918b220f151980",
 						ImportTheme: "ffa092f19a1ee16c7439",
@@ -1713,7 +1713,7 @@
 						"reddit-components-Governance-TransactionModals-ClaimPointsModal": "fe621cf481b9e5bd58bd",
 						GivePremiumModal: "8ec3ca8e73d320c94272",
 						ProfileIdCardUnblockConfirmationModal: "88345eaec863def589c8",
-						SocialLinks: "903e3253954be0f238df",
+						SocialLinks: "611c33ec219c2cfe7603",
 						ColorPickerDropdown: "a3deef95bace61d04faf",
 						NftProductDetailsModal: "1b076c3bc8016c468eca",
 						GeneralGifsTooltip: "35870537e3ef190c8c6f",
@@ -1787,4 +1787,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.7474553cfe64876b46fb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.acaf0ca3ca11532ae2d0.js.map
