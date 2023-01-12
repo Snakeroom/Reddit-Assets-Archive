@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxTooltip.2f5a33bef8cdf3fc1e2d.js
-// Retrieved at 1/12/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxTooltip.bc46bd8e2b3807c3386f.js
+// Retrieved at 1/12/2023, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxTooltip", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -99,19 +99,19 @@
 			const y = e => Object(N.c)(e, {
 				experimentEligibilitySelector: w.S,
 				experimentName: k.ub
-			}) === k.Gd;
+			}) === k.Fd;
 			var _ = i("./src/reddit/selectors/experiments/delayDnPermission.ts"),
 				I = i("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts");
 			const P = e => Object(N.c)(e, {
-				experimentName: k.Xb,
+				experimentName: k.Wb,
 				experimentEligibilitySelector: N.a
-			}) === k.Gd;
-			var E = i("./src/reddit/selectors/meta.ts");
-			let F = !1;
+			}) === k.Fd;
+			var F = i("./src/reddit/selectors/meta.ts");
+			let E = !1;
 			const C = async (e, t) => {
 				const i = Object(w.R)(e);
-				if (F) return;
-				if (F = !0, Object(f.a)(e) !== d.d.NotificationsSupported) return;
+				if (E) return;
+				if (E = !0, Object(f.a)(e) !== d.d.NotificationsSupported) return;
 				await Object(u.a)();
 				navigator.serviceWorker.addEventListener("message", n => {
 					const o = n.data,
@@ -134,7 +134,7 @@
 				let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : () => {};
 				return async (n, o, s) => {
 					const c = o(),
-						u = Object(E.f)(c),
+						u = Object(F.f)(c),
 						l = P(c),
 						b = !!Object(S.a)(c),
 						f = Object(_.a)(c),
@@ -399,8 +399,8 @@
 					messagesBadgeCount: _,
 					notifications: I,
 					showBrowserNotificationsPermissionSettings: P,
-					updateInboxActivitySeenState: E,
-					userId: F
+					updateInboxActivitySeenState: F,
+					userId: E
 				} = e;
 				const C = Object(f.a)(),
 					[B, A] = Object(n.useState)("");
@@ -410,7 +410,7 @@
 							first: 5
 						})
 					}
-					S && x && (E(), C(Object(b.u)({
+					S && x && (F(), C(Object(b.u)({
 						badgeCount: O
 					})))
 				}, [S]), o.a.createElement(l.b, {
@@ -439,7 +439,7 @@
 					notifications: I,
 					setActiveOverflowMenuId: A,
 					showBrowserNotificationsPermissionSettings: P,
-					userId: F
+					userId: E
 				})
 			})
 		},
@@ -620,4 +620,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.2f5a33bef8cdf3fc1e2d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.bc46bd8e2b3807c3386f.js.map

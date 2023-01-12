@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.b522602f547efac022dc.js
-// Retrieved at 1/12/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.be107bc500b8c6aeb491.js
+// Retrieved at 1/12/2023, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/combineRefs/index.tsx": function(e, t, n) {
@@ -467,7 +467,7 @@
 					queryVariables: g,
 					shouldDisjointAnimation: O,
 					subsequentRecurringDelay: _
-				} = e, [j, y] = Object(r.useState)(!1), [C, w] = Object(r.useState)(!0), [x, k] = Object(r.useState)([]), [E, A] = Object(r.useState)(i(p).reverse()), I = Object(r.useRef)(!1), S = Object(r.useRef)(null), T = Object(r.useRef)(e => {}), P = Object(r.useRef)();
+				} = e, [j, y] = Object(r.useState)(!1), [C, w] = Object(r.useState)(!0), [x, k] = Object(r.useState)([]), [E, A] = Object(r.useState)(i(p).reverse()), S = Object(r.useRef)(!1), I = Object(r.useRef)(null), T = Object(r.useRef)(e => {}), P = Object(r.useRef)();
 				T.current = Object(r.useCallback)(e => {
 					let n = e || d();
 					const r = [...E].reverse().join("");
@@ -496,12 +496,12 @@
 								isIntersecting: t,
 								intersectionRatio: n
 							} = e, r = 1 !== n;
-							t ? (D.current = !0, I.current || (I.current = !0, R.current = setTimeout(() => {
+							t ? (D.current = !0, S.current || (S.current = !0, R.current = setTimeout(() => {
 								T.current(), N.current()
 							}, u())), F.current > 0 && (T.current(F.current), F.current = 0)) : r && (D.current = !1)
 						})
 					}, []);
-				Object(a.a)(S, L);
+				Object(a.a)(I, L);
 				const [V, G] = Object(r.useState)(!1), U = Object(r.useCallback)(e => {
 					e.forEach(e => {
 						const {
@@ -513,7 +513,7 @@
 				}, []), K = Object(r.useRef)({
 					rootMargin: "2000px 0px 2000px 0px"
 				});
-				Object(a.a)(S, U, K.current);
+				Object(a.a)(I, U, K.current);
 				const B = Object(s.a)(t);
 				Object(r.useEffect)(() => {
 					if (void 0 !== B && B !== t) {
@@ -564,7 +564,7 @@
 					className: l.a.srOnly,
 					role: "screen-reader"
 				}, [...E].reverse().join(""))), o.a.createElement("span", {
-					ref: S
+					ref: I
 				}), V && o.a.createElement(c.a, {
 					variables: g,
 					onData: f ? m : b,
@@ -819,12 +819,12 @@
 			var k = Object(h.c)(x),
 				E = n("./src/reddit/components/FlairSearch/index.m.less"),
 				A = n.n(E);
-			const I = Object(d.a)(e => e && Object(u.c)(e)),
-				S = Object(a.c)({
+			const S = Object(d.a)(e => e && Object(u.c)(e)),
+				I = Object(a.c)({
 					areFlairRestrictionsEnabled: l.d.flairRestrictions,
 					isModerator: f.g
 				}),
-				T = Object(c.b)(S);
+				T = Object(c.b)(I);
 			t.a = T(e => {
 				const {
 					flairTemplateType: t,
@@ -836,7 +836,7 @@
 					templateIds: l,
 					areFlairRestrictionsEnabled: f,
 					isModerator: v
-				} = e, h = Object(p.a)(), g = d && n && n.templateId && d[n.templateId] || void 0, O = Object(b.a)(), _ = n || I(g);
+				} = e, h = Object(p.a)(), g = d && n && n.templateId && d[n.templateId] || void 0, O = Object(b.a)(), _ = n || S(g);
 				return s.a.createElement("div", {
 					className: Object(i.a)(o, A.a.container)
 				}, d && l && s.a.createElement(k, {
@@ -1454,8 +1454,8 @@
 						})
 					}
 				}),
-				I = () => 0,
-				S = Object(d.b)(A),
+				S = () => 0,
+				I = Object(d.b)(A),
 				T = Object(s.a)(e => {
 					const t = {
 							color: e.light ? f.a.lightboxHeaderText : E(e)
@@ -1485,7 +1485,7 @@
 								delta: t
 							}))
 						}, [y, s]),
-						S = Object(a.useRef)({
+						I = Object(a.useRef)({
 							input: {
 								channel: {
 									teamOwner: "CONTENT_AND_COMMUNITIES",
@@ -1506,14 +1506,14 @@
 					}, (T || g) && i.a.createElement(i.a.Fragment, null, i.a.createElement(u.b, {
 						initialDisplayCount: N,
 						countToUpperBound: N,
-						initialDelay: I,
-						subsequentRecurringDelay: I,
-						incrementDelta: I,
+						initialDelay: S,
+						subsequentRecurringDelay: S,
+						incrementDelta: S,
 						shouldDisjointAnimation: !0,
 						postId: s,
 						featureName: u.a.Vote,
 						queryKey: "postVoteCount",
-						queryVariables: S.current,
+						queryVariables: I.current,
 						onDataCB: A,
 						isLoadTestOnly: g && !T
 					})), !T && w, O && j && i.a.createElement(m.a, P, i.a.createElement(p.a, {
@@ -1522,7 +1522,7 @@
 						showViewCount: !1
 					})))
 				});
-			t.a = S(T)
+			t.a = I(T)
 		},
 		"./src/reddit/helpers/crypto/vaultActionLink.ts": function(e, t, n) {
 			"use strict";
@@ -1926,9 +1926,9 @@
 			})), n.d(t, "viewGildModalEvent", (function() {
 				return A
 			})), n.d(t, "clickSelectAwardEvent", (function() {
-				return I
-			})), n.d(t, "triggerAnonymousEvent", (function() {
 				return S
+			})), n.d(t, "triggerAnonymousEvent", (function() {
+				return I
 			})), n.d(t, "clickMessageInputEvent", (function() {
 				return T
 			})), n.d(t, "typeMessageInputEvent", (function() {
@@ -2055,14 +2055,14 @@
 						defaultAnonymous: t
 					}
 				}),
-				I = (e, t, n) => r => ({
+				S = (e, t, n) => r => ({
 					...p(r, t),
 					source: "give_gold",
 					action: "click",
 					noun: "award",
 					goldPurchase: m(e, n)
 				}),
-				S = (e, t) => n => ({
+				I = (e, t) => n => ({
 					...p(n, t),
 					source: "give_gold",
 					action: e,
@@ -2665,7 +2665,7 @@
 			})), n.d(t, "a", (function() {
 				return A
 			})), n.d(t, "o", (function() {
-				return I
+				return S
 			}));
 			var r = n("./src/reddit/models/Gold/ProductOffer.ts"),
 				o = n("./src/reddit/selectors/avatarMarketing.ts"),
@@ -2791,7 +2791,7 @@
 					snoovatar: s.jb(r)
 				}),
 				A = e => E("onboarding", "click", e),
-				I = () => E("avatar", "view", "onboarding")
+				S = () => E("avatar", "view", "onboarding")
 		},
 		"./src/reddit/helpers/trackers/userFlair.ts": function(e, t, n) {
 			"use strict";
@@ -3483,8 +3483,8 @@
 					if (Object(c.a)(e)) return !1;
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: r.sc
-					}) === r.Zc.Enabled
+						experimentName: r.rc
+					}) === r.Yc.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
@@ -3497,8 +3497,8 @@
 			const s = e => {
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: r.Te
-				}) === r.Gd
+					experimentName: r.Se
+				}) === r.Fd
 			}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -3691,9 +3691,9 @@
 			})), n.d(t, "j", (function() {
 				return A
 			})), n.d(t, "n", (function() {
-				return I
-			})), n.d(t, "e", (function() {
 				return S
+			})), n.d(t, "e", (function() {
+				return I
 			})), n.d(t, "d", (function() {
 				return T
 			}));
@@ -3732,8 +3732,8 @@
 				k = e => e.features.goldPurchase.payment.cardValidation.nameOnCard,
 				E = e => e.features.goldPurchase.payment.cardValidation.postalCode,
 				A = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
-				I = e => e.features.goldPurchase.payment.stripeToken.pending,
-				S = e => e.features.goldPurchase.payment.paypal.passthrough,
+				S = e => e.features.goldPurchase.payment.stripeToken.pending,
+				I = e => e.features.goldPurchase.payment.paypal.passthrough,
 				T = e => e.features.goldPurchase.payment.paypal.errorMessage
 		},
 		"./src/reddit/selectors/userPrefs.ts": function(e, t, n) {
@@ -3819,4 +3819,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.b522602f547efac022dc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.be107bc500b8c6aeb491.js.map

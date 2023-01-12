@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.4277308a353279205300.js
-// Retrieved at 1/12/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.269f848d38436a3c57ce.js
+// Retrieved at 1/12/2023, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -322,12 +322,12 @@
 				d = a("./src/reddit/constants/promo.ts"),
 				m = a("./src/reddit/hooks/promo/useIsSignupUpsellVariantEligible.ts");
 			var u = function() {
-					const e = Object(m.a)(o.Sc.Bottom_cell),
-						t = Object(m.a)(o.Sc.Bottom_cell_dismissible),
-						a = Object(m.a)(o.Sc.Bottom_cell_dismissible_immediate_trigger),
-						n = Object(m.a)(o.Sc.Bottom_cell_signup_upsell_copy),
-						s = Object(m.a)(o.Sc.Bottom_cell_surprise_install_copy),
-						r = Object(m.a)(o.Sc.Bottom_sheet);
+					const e = Object(m.a)(o.Rc.Bottom_cell),
+						t = Object(m.a)(o.Rc.Bottom_cell_dismissible),
+						a = Object(m.a)(o.Rc.Bottom_cell_dismissible_immediate_trigger),
+						n = Object(m.a)(o.Rc.Bottom_cell_signup_upsell_copy),
+						s = Object(m.a)(o.Rc.Bottom_cell_surprise_install_copy),
+						r = Object(m.a)(o.Rc.Bottom_sheet);
 					return e || n || s ? d.b.SignupUpsellCell : t || a ? d.b.SignupUpsellCellDismissible : r ? d.b.SignupUpsellBottomSheet : null
 				},
 				p = a("./src/reddit/hooks/promo/useIsPromoShown.ts");
@@ -352,7 +352,7 @@
 						let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : h;
 						const {
 							showPromo: t
-						} = Object(l.a)(), a = u(), r = Object(p.a)(a), d = Object(m.a)(o.Sc.Bottom_cell_dismissible_immediate_trigger);
+						} = Object(l.a)(), a = u(), r = Object(p.a)(a), d = Object(m.a)(o.Rc.Bottom_cell_dismissible_immediate_trigger);
 						return n.useMemo(() => c()(() => {
 							if (!r && a) {
 								const e = document.getElementById(i.e),
@@ -650,7 +650,7 @@
 				Z = a("./src/lib/initializeClient/installReducer.ts"),
 				D = a("./src/reddit/reducers/features/marketplace/index.ts"),
 				V = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const H = Object(V.a)(h.Ld);
+			const H = Object(V.a)(h.Kd);
 			var G = a("./src/redditGQL/types.ts");
 			Object(Z.a)({
 				features: {
@@ -687,7 +687,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(h.dg)(p),
+						includeInterestTopics: !!p && !Object(h.cg)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: v && !(null === (n = null === (a = e.user.account) || void 0 === a ? void 0 : a.karma) || void 0 === n ? void 0 : n.total),
@@ -3388,8 +3388,8 @@
 					shouldShowTopicsWidget: e => (function(e) {
 						return Object(Le.c)(e, {
 							experimentEligibilitySelector: Fe.S,
-							experimentName: Te.Kc
-						}) === Te.Gd
+							experimentName: Te.Jc
+						}) === Te.Fd
 					})(e),
 					isNavbarLikeMwebEnabled: c.a
 				}),
@@ -5685,7 +5685,7 @@
 				const p = Object(c.e)(e => e.subreddits.survey[a]),
 					h = Object(c.e)(e => e.subreddits.progressModule[a]),
 					b = Object(c.e)(m.a),
-					g = b !== l.Fe.NewModule;
+					g = b !== l.Ee.NewModule;
 				return (null === (s = null == h ? void 0 : h.cards) || void 0 === s ? void 0 : s.length) > 0 && g ? r.a.createElement(u, {
 					closeModuleOnMount: !!t && t !== d.g.Large,
 					subredditId: a,
@@ -5792,7 +5792,7 @@
 				o = e => Object(c.c)(e, {
 					experimentEligibilitySelector: i,
 					experimentName: n.kb
-				}) === n.Oc.Treatment
+				}) === n.Nc.Treatment
 		},
 		"./src/reddit/selectors/experiments/econ/avatarBanner.ts": function(e, t, a) {
 			"use strict";
@@ -5808,7 +5808,7 @@
 			function c(e) {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: r.S,
-					experimentName: n.id
+					experimentName: n.hd
 				})
 			}
 			const i = 31536e3;
@@ -5827,9 +5827,9 @@
 				return function(e) {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: o,
-						experimentName: n.hd
-					}) === n.Id.Enabled
-				}(e) ? l.Achievements : t === n.Jd.ControlBanner ? l.CommunitySpacesControl : t === n.Jd.EnabledBanner ? l.CommunitySpaces : null
+						experimentName: n.gd
+					}) === n.Hd.Enabled
+				}(e) ? l.Achievements : t === n.Id.ControlBanner ? l.CommunitySpacesControl : t === n.Id.EnabledBanner ? l.CommunitySpaces : null
 			}! function(e) {
 				e.Achievements = "achievements", e.CommunitySpaces = "communitySpaces", e.CommunitySpacesControl = "communitySpaces--control"
 			}(l || (l = {}))
@@ -5844,8 +5844,8 @@
 			const r = e => {
 				return !(Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.oe
-				}) === n.Gd)
+					experimentName: n.ne
+				}) === n.Fd)
 			}
 		},
 		"./src/reddit/selectors/experiments/econLeaderboards.ts": function(e, t, a) {
@@ -5861,15 +5861,15 @@
 			const c = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: r.S,
-						experimentName: n.nd
+						experimentName: n.md
 					});
-					return !(!t || Object(n.dg)(t))
+					return !(!t || Object(n.cg)(t))
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.S,
-						experimentName: n.nd
-					}) === n.Kd.ListingEnabled
+						experimentName: n.md
+					}) === n.Jd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, a) {
@@ -5899,9 +5899,9 @@
 					experimentName: e,
 					experimentEligibilitySelector: o,
 					throttledVariants: {
-						[s.Sc.Bottom_cell_dismissible]: e,
-						[s.Sc.Bottom_cell_dismissible_immediate_trigger]: e,
-						[s.Sc.Bottom_sheet]: e
+						[s.Rc.Bottom_cell_dismissible]: e,
+						[s.Rc.Bottom_cell_dismissible_immediate_trigger]: e,
+						[s.Rc.Bottom_sheet]: e
 					},
 					expEventOverride: t
 				})
@@ -5981,4 +5981,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.4277308a353279205300.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.269f848d38436a3c57ce.js.map

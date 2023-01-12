@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.a7e131a8faba75fbac71.js
-// Retrieved at 1/12/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.173c4d34b0f940063280.js
+// Retrieved at 1/12/2023, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, n) {
@@ -130,9 +130,9 @@
 			})), n.d(t, "A", (function() {
 				return D
 			})), n.d(t, "B", (function() {
-				return j
-			})), n.d(t, "z", (function() {
 				return I
+			})), n.d(t, "z", (function() {
+				return j
 			})), n.d(t, "y", (function() {
 				return C
 			})), n.d(t, "v", (function() {
@@ -165,8 +165,8 @@
 				O = "MULTIREDDIT__ADD_SUBREDDIT_PENDING",
 				S = "MULTIREDDIT__ADD_SUBREDDIT_SUCCESS",
 				D = "MULTIREDDIT__SUBREDDIT_RECOMMENDATIONS_PENDING",
-				j = "MULTIREDDIT__SUBREDDIT_RECOMMENDATIONS_SUCCESS",
-				I = "MULTIREDDIT__SUBREDDIT_RECOMMENDATIONS_FAILURE",
+				I = "MULTIREDDIT__SUBREDDIT_RECOMMENDATIONS_SUCCESS",
+				j = "MULTIREDDIT__SUBREDDIT_RECOMMENDATIONS_FAILURE",
 				C = 10,
 				g = "MULTIREDDIT__REMOVE_SUBREDDIT_FAILURE",
 				y = "MULTIREDDIT__REMOVE_SUBREDDIT_PENDING",
@@ -317,8 +317,8 @@
 			var O = n("./src/reddit/models/Toast/index.ts"),
 				S = n("./src/reddit/selectors/profile.ts"),
 				D = n("./src/reddit/selectors/subreddit.ts"),
-				j = n("./src/reddit/selectors/subscriptions.ts"),
-				I = n("./src/reddit/selectors/user.ts");
+				I = n("./src/reddit/selectors/subscriptions.ts"),
+				j = n("./src/reddit/selectors/user.ts");
 			const C = () => r.fbt._("Sorry, failed to update favorites.", null, {
 					hk: "40XHkp"
 				}),
@@ -354,10 +354,10 @@
 						name: `${o.qc}${e.name}`,
 						type: e.type
 					});
-					if (!Object(I.S)(d())) return i(Object(a.k)({
+					if (!Object(j.S)(d())) return i(Object(a.k)({
 						actionSource: a.a.Subscribe
 					})), void i(Object(c.openRegisterModal)());
-					const _ = Object(I.m)(d());
+					const _ = Object(j.m)(d());
 					if (_) {
 						const t = p.length,
 							n = e.length;
@@ -374,7 +374,7 @@
 						nameIdentifiers: e,
 						profileModels: d().profiles.models,
 						subredditModels: d().subreddits.models,
-						subscriptionsCount: Object(j.b)(d()),
+						subscriptionsCount: Object(I.b)(d()),
 						userIsSubscriber: t,
 						widgetId: n
 					}));
@@ -415,7 +415,7 @@
 							nameIdentifiers: e,
 							profileModels: d().profiles.models,
 							subredditModels: d().subreddits.models,
-							subscriptionsCount: Object(j.b)(d()),
+							subscriptionsCount: Object(I.b)(d()),
 							userIsSubscriber: !t,
 							widgetId: n
 						}));
@@ -500,7 +500,7 @@
 					} = s;
 					const c = n(),
 						a = c.multireddits.models;
-					if (!Object(I.S)(c)) return;
+					if (!Object(j.S)(c)) return;
 					const d = function() {
 							let e = !(arguments.length > 0 && void 0 !== arguments[0]) || arguments[0];
 							t(Object(l.f)({
@@ -683,8 +683,8 @@
 				O = n("./src/reddit/constants/parameters.ts"),
 				S = n("./src/reddit/controls/InternalLink/index.tsx"),
 				D = n("./src/reddit/helpers/styles/smartTextColor.ts"),
-				j = n("./src/reddit/icons/svgs/Close/index.tsx"),
-				I = n("./src/reddit/models/Flair/index.ts"),
+				I = n("./src/reddit/icons/svgs/Close/index.tsx"),
+				j = n("./src/reddit/models/Flair/index.ts"),
 				C = n("./src/reddit/models/Theme/NewColorSystem/index.ts"),
 				g = n("./src/reddit/components/Flair/index.m.less"),
 				y = n.n(g);
@@ -764,7 +764,7 @@
 					}, this.props.text, this.props.isSelected && a.a.createElement(N, {
 						to: "./",
 						onClick: this.props.onCloseClick
-					}, a.a.createElement(j.a, {
+					}, a.a.createElement(I.a, {
 						className: y.a.CloseIcon,
 						style: {
 							fill: this.props.backgroundColor || Object(C.a)(this.props).flair
@@ -792,7 +792,7 @@
 					let t = "",
 						n = !1;
 					const r = e.richtext.map((r, o) => {
-						if (r.e === I.c.Emoji) {
+						if (r.e === j.c.Emoji) {
 							const s = r;
 							return t += s.a, n = !0, a.a.createElement(U, {
 								forceSmallEmojis: e.forceSmallEmojis,
@@ -823,7 +823,7 @@
 					}, r, e.isSelected && a.a.createElement(N, {
 						to: "./",
 						onClick: e.onCloseClick
-					}, a.a.createElement(j.a, {
+					}, a.a.createElement(I.a, {
 						className: y.a.CloseIcon,
 						style: {
 							fill: e.backgroundColor || Object(C.a)(e).flair
@@ -841,7 +841,7 @@
 						to: e.to
 					})
 				}),
-				B = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(C.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(D.a)(Object(C.a)(e).post, T.a.black, T.a.white) : e.textColor === I.e.Dark ? T.a.black : T.a.white,
+				B = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(C.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(D.a)(Object(C.a)(e).post, T.a.black, T.a.white) : e.textColor === j.e.Dark ? T.a.black : T.a.white,
 				H = b.a.wrapped(F, "TextFlair", y.a),
 				G = b.a.wrapped(P, "RichTextFlair", y.a),
 				W = e => {
@@ -889,7 +889,7 @@
 					[y.a.large]: s && e.large
 				}, t);
 				switch (o.type) {
-					case I.f.Richtext:
+					case j.f.Richtext:
 						return n || !o.richtext ? null : a.a.createElement(G, {
 							backgroundColor: o.backgroundColor,
 							className: _,
@@ -905,7 +905,7 @@
 							textColor: o.textColor,
 							to: f
 						});
-					case I.f.Text:
+					case j.f.Text:
 						return n || !o.text ? null : a.a.createElement(H, {
 							backgroundColor: o.backgroundColor,
 							className: _,
@@ -920,7 +920,7 @@
 							redditStyle: !b,
 							to: f
 						});
-					case I.f.Meta:
+					case j.f.Meta:
 						return a.a.createElement(H, {
 							backgroundColor: o.backgroundColor,
 							className: t,
@@ -931,20 +931,20 @@
 							redditStyle: !b,
 							to: f
 						});
-					case I.f.Nsfw:
-					case I.f.Spoiler:
+					case j.f.Nsfw:
+					case j.f.Spoiler:
 						return a.a.createElement(V, {
 							className: t,
 							text: o.text,
 							type: o.type
 						});
-					case I.f.Quarantined:
+					case j.f.Quarantined:
 						return null;
-					case I.f.Oc:
+					case j.f.Oc:
 						return a.a.createElement(H, {
 							backgroundColor: T.a.alienblue,
 							text: o.text,
-							textColor: I.e.Light,
+							textColor: j.e.Light,
 							tooltip: r.fbt._("This post is marked as Original Content [OC]", null, {
 								hk: "h7je6"
 							})
@@ -1787,27 +1787,27 @@
 				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/experiments/index.ts");
 			const c = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Jb,
+					experimentName: o.Ib,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.R.Enabled),
 				a = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Kb,
+					experimentName: o.Jb,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.S.Enabled),
 				d = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Lb,
+					experimentName: o.Kb,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.T.Enabled),
 				l = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Mb,
+					experimentName: o.Lb,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.U.Enabled),
 				u = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Ob,
+					experimentName: o.Nb,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.W.Enabled),
 				m = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Nb,
+					experimentName: o.Mb,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.V.Enabled)
 		},
@@ -1819,4 +1819,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.a7e131a8faba75fbac71.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.173c4d34b0f940063280.js.map
