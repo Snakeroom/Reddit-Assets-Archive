@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SocialLinks.611c33ec219c2cfe7603.js
-// Retrieved at 1/11/2023, 8:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SocialLinks.903e3253954be0f238df.js
+// Retrieved at 1/12/2023, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SocialLinks"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -498,8 +498,7 @@
 			e.exports = {
 				button: "_3hew1NnzwygOKDNQDKp6R4",
 				disabled: "_14cQ6UaNZthfUjDzaM1xHq",
-				socialLinkIcon: "_2GEwqmoavetftIcfZO6bBP",
-				socialLink: "_1lOZXPReVOD51n7jOVp3q4"
+				socialLinkIcon: "_2GEwqmoavetftIcfZO6bBP"
 			}
 		},
 		"./src/reddit/components/SocialLinks/SocialLinkButton.tsx": function(e, t, s) {
@@ -520,32 +519,24 @@
 					className: a,
 					disabled: l,
 					onClick: u,
-					socialLinkType: d,
-					outboundUrl: _
+					socialLinkType: d
 				} = e;
-				const [h, m] = Object(i.useState)();
-				Object(i.useEffect)(() => {
+				const [_, h] = Object(i.useState)();
+				return Object(i.useEffect)(() => {
 					if (d) {
 						const e = Object(o.b)(d);
-						m(e)
+						h(e)
 					}
-				}, [d]);
-				const p = n.a.createElement(n.a.Fragment, null, d && h && n.a.createElement("img", {
-					className: c.a.socialLinkIcon,
-					src: h
-				}), s);
-				return n.a.createElement("li", {
+				}, [d]), n.a.createElement("div", {
 					key: t,
 					className: Object(r.a)(c.a.button, {
 						[c.a.disabled]: l
 					}, a),
 					onClick: l ? void 0 : u
-				}, _ ? n.a.createElement("a", {
-					className: c.a.socialLink,
-					href: _,
-					target: "_blank",
-					rel: "noopener noreferrer"
-				}, p) : p)
+				}, d && _ && n.a.createElement("img", {
+					className: c.a.socialLinkIcon,
+					src: _
+				}), s)
 			}
 		},
 		"./src/reddit/components/SocialLinks/constants.ts": function(e, t, s) {
@@ -814,25 +805,24 @@
 					}, [w, s, z, A]),
 					S = Object(o.e)(e => Object(p.c)(g.a)(e)),
 					T = Object(_.a)(),
-					B = Object(n.useCallback)((e, i, n) => {
-						null == n || n.preventDefault();
-						const r = i + 1,
-							o = {
+					B = Object(n.useCallback)((e, i) => {
+						const n = i + 1,
+							r = {
 								socialLinkType: e.type,
 								outboundUrl: e.outboundUrl,
 								name: e.handle || e.title,
-								position: r,
+								position: n,
 								isNew: !1
 							};
-						if (t && s) C(e), E(r), w(Object(l.h)(g.a)), z(Object(d.c)(o));
+						if (t && s) C(e), E(n), w(Object(l.h)(g.a)), z(Object(d.c)(r));
 						else {
 							const {
 								outboundUrl: t
 							} = e;
-							window.open(t, "_blank"), z(Object(d.f)(o)), T(t, b.SourceElement.SocialLink, void 0, void 0, e.type)
+							window.open(t, "_blank"), z(Object(d.f)(r)), T(t, b.SourceElement.SocialLink, void 0, void 0, e.type)
 						}
 					}, [w, t, s, z, T]),
-					Z = Object(n.useCallback)((e, t, s) => {
+					I = Object(n.useCallback)((e, t, s) => {
 						const {
 							handle: i,
 							id: n,
@@ -848,20 +838,19 @@
 							isNew: !1
 						}))
 					}, [w, z, y]),
-					I = t && (s || A && A.length < g.g),
+					Z = t && (s || A && A.length < g.g),
 					P = t && !s && A && A.length >= g.g;
-				return r.a.createElement(r.a.Fragment, null, r.a.createElement("nav", {
+				return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 					className: Object(a.a)(x.a.socialLinks, i)
-				}, r.a.createElement("ul", null, A && A.map((e, t) => r.a.createElement(k.a, {
+				}, A && A.map((e, t) => r.a.createElement(k.a, {
 					key: e.id,
 					socialLinkType: e.type,
-					onClick: s => B(e, t, s),
-					outboundUrl: e.outboundUrl
+					onClick: () => B(e, t)
 				}, e.handle || e.title, s && r.a.createElement(m.a, {
 					name: c.a.clear,
 					className: x.a.removeIcon,
-					onClick: s => Z(s, e, t)
-				}))), I && r.a.createElement(k.a, {
+					onClick: s => I(s, e, t)
+				}))), Z && r.a.createElement(k.a, {
 					disabled: !A || A.length >= g.g,
 					onClick: O
 				}, r.a.createElement(m.a, {
@@ -878,7 +867,7 @@
 					socialLinkPosition: L,
 					username: y,
 					withOverlay: !0
-				}))))
+				})))
 			};
 			t.default = w
 		},
@@ -936,4 +925,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SocialLinks.611c33ec219c2cfe7603.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SocialLinks.903e3253954be0f238df.js.map
