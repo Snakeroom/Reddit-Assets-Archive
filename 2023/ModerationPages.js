@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.7eb023116a31d9658d5e.js
-// Retrieved at 1/11/2023, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.5ef56c7f557f395b9072.js
+// Retrieved at 1/12/2023, 10:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -63189,15 +63189,15 @@
 			})), n.d(t, "v", (function() {
 				return Y
 			})), n.d(t, "d", (function() {
-				return $
+				return Z
 			})), n.d(t, "t", (function() {
-				return ne
+				return te
 			})), n.d(t, "s", (function() {
-				return se
+				return ne
 			})), n.d(t, "u", (function() {
-				return re
+				return se
 			})), n.d(t, "g", (function() {
-				return oe
+				return re
 			}));
 			var s = n("./node_modules/lodash/pick.js"),
 				r = n.n(s),
@@ -63356,7 +63356,7 @@
 							break
 						}
 						case o.Sb.SUBREDDIT_WIKI:
-							Object(I.a)(Z(n, s)(t));
+							Object(I.a)(X(n, s)(t));
 							break;
 						case o.Sb.COINS:
 							Object(I.a)(H(n, s)(t)), Object(I.a)(W()(t));
@@ -63374,29 +63374,26 @@
 							u && F(t, !0, d ? d.subredditName : null, d ? d.profileName : null);
 							break;
 						case o.Sb.COLLECTION_COMMENTS:
-							u && re(t, !0);
+							u && se(t, !0);
 							break;
 						case o.Sb.MODQUEUE_PAGES:
 							u && U(t, d ? d.subredditName : null, d ? d.profileName : null);
-							break;
-						case o.Sb.SUBREDDIT_LEADERBOARD:
-							u && Object(I.a)(X()(t));
 							break;
 						case o.Sb.SEARCH_RESULTS:
 							if (u) {
 								const o = Object(l.e)(e);
 								if (!o) return;
-								Object(I.a)(ne(o, Object(v.e)(r()(x && x.queryParams || {}, a.A)), n, s, x)(t))
+								Object(I.a)(te(o, Object(v.e)(r()(x && x.queryParams || {}, a.A)), n, s, x)(t))
 							}
 							break;
 						case o.Sb.GEOTAGGING:
-							u && Object(I.a)($()(t));
+							u && Object(I.a)(Z()(t));
 							break;
 						case o.Sb.SUBREDDIT_CREATION:
 							u && Object(I.a)(Y()(t));
 							break;
 						case o.Sb.MOD_LISTING:
-							u && oe(t, !0)
+							u && re(t, !0)
 					}
 				},
 				w = e => ({
@@ -63716,13 +63713,7 @@
 					noun: "screen",
 					...w(e)
 				}),
-				X = () => e => ({
-					action: "view",
-					source: "global",
-					noun: "screen",
-					...w(e)
-				}),
-				Z = (e, t) => n => ({
+				X = (e, t) => n => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -63733,21 +63724,21 @@
 					userSubreddit: k.ub(n),
 					adblock: k.e(n)
 				}),
-				$ = () => e => ({
+				Z = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
 					...w(e)
 				}),
-				ee = {
+				$ = {
 					source: "global",
 					action: d.c.VIEW,
 					noun: "screen"
 				},
-				te = e => !!e && {
+				ee = e => !!e && {
 					correlationId: Object(O.c)(O.a.SearchResults)
 				},
-				ne = (e, t, n, s, r, i) => a => {
+				te = (e, t, n, s, r, i) => a => {
 					var d, c;
 					let l = !0;
 					if (t.type.indexOf(o.ic.Posts) > -1) {
@@ -63765,7 +63756,7 @@
 					const u = k.H(a, r);
 					return {
 						...y.g(a, t),
-						...ee,
+						...$,
 						...k.o(a),
 						actionInfo: k.d(a, {
 							success: l,
@@ -63777,22 +63768,22 @@
 							sort: null !== (d = t.sort) && void 0 !== d ? d : o.Vb,
 							range: null !== (c = t.t) && void 0 !== c ? c : o.Wb
 						},
-						...te(i),
+						...ee(i),
 						userPreferences: k.gb(a)
 					}
 				},
-				se = (e, t, n) => s => ({
+				ne = (e, t, n) => s => ({
 					...k.o(s),
-					...ee,
+					...$,
 					actionInfo: {
 						...k.d(s),
 						pageType: "search_dropdown"
 					},
 					search: k.db(s, e, E.a.Typeahead, t || void 0),
-					...te(n),
+					...ee(n),
 					userPreferences: k.gb(s)
 				}),
-				re = (e, t) => {
+				se = (e, t) => {
 					Object(I.a)({
 						source: "global",
 						action: "view",
@@ -63803,7 +63794,7 @@
 						})
 					})
 				},
-				oe = (e, t) => {
+				re = (e, t) => {
 					Object(I.a)({
 						source: "global",
 						action: "view",
@@ -76675,4 +76666,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.7eb023116a31d9658d5e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.5ef56c7f557f395b9072.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.76ac09a21eafaf6b350b.js
-// Retrieved at 1/11/2023, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.01b8a48d557e8e71edbf.js
+// Retrieved at 1/12/2023, 10:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -2293,15 +2293,15 @@
 			})), n.d(t, "v", (function() {
 				return X
 			})), n.d(t, "d", (function() {
-				return Z
+				return $
 			})), n.d(t, "t", (function() {
-				return ne
+				return te
 			})), n.d(t, "s", (function() {
-				return re
+				return ne
 			})), n.d(t, "u", (function() {
-				return oe
+				return re
 			})), n.d(t, "g", (function() {
-				return se
+				return oe
 			}));
 			var r = n("./node_modules/lodash/pick.js"),
 				o = n.n(r),
@@ -2460,7 +2460,7 @@
 							break
 						}
 						case s.Sb.SUBREDDIT_WIKI:
-							Object(T.a)($(n, r)(t));
+							Object(T.a)(J(n, r)(t));
 							break;
 						case s.Sb.COINS:
 							Object(T.a)(V(n, r)(t)), Object(T.a)(W()(t));
@@ -2478,29 +2478,26 @@
 							l && M(t, !0, a ? a.subredditName : null, a ? a.profileName : null);
 							break;
 						case s.Sb.COLLECTION_COMMENTS:
-							l && oe(t, !0);
+							l && re(t, !0);
 							break;
 						case s.Sb.MODQUEUE_PAGES:
 							l && B(t, a ? a.subredditName : null, a ? a.profileName : null);
-							break;
-						case s.Sb.SUBREDDIT_LEADERBOARD:
-							l && Object(T.a)(J()(t));
 							break;
 						case s.Sb.SEARCH_RESULTS:
 							if (l) {
 								const s = Object(u.e)(e);
 								if (!s) return;
-								Object(T.a)(ne(s, Object(_.e)(o()(x && x.queryParams || {}, c.A)), n, r, x)(t))
+								Object(T.a)(te(s, Object(_.e)(o()(x && x.queryParams || {}, c.A)), n, r, x)(t))
 							}
 							break;
 						case s.Sb.GEOTAGGING:
-							l && Object(T.a)(Z()(t));
+							l && Object(T.a)($()(t));
 							break;
 						case s.Sb.SUBREDDIT_CREATION:
 							l && Object(T.a)(X()(t));
 							break;
 						case s.Sb.MOD_LISTING:
-							l && se(t, !0)
+							l && oe(t, !0)
 					}
 				},
 				y = e => ({
@@ -2820,13 +2817,7 @@
 					noun: "screen",
 					...y(e)
 				}),
-				J = () => e => ({
-					action: "view",
-					source: "global",
-					noun: "screen",
-					...y(e)
-				}),
-				$ = (e, t) => n => ({
+				J = (e, t) => n => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -2837,21 +2828,21 @@
 					userSubreddit: N.ub(n),
 					adblock: N.e(n)
 				}),
-				Z = () => e => ({
+				$ = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
 					...y(e)
 				}),
-				ee = {
+				Z = {
 					source: "global",
 					action: a.c.VIEW,
 					noun: "screen"
 				},
-				te = e => !!e && {
+				ee = e => !!e && {
 					correlationId: Object(h.c)(h.a.SearchResults)
 				},
-				ne = (e, t, n, r, o, i) => c => {
+				te = (e, t, n, r, o, i) => c => {
 					var a, d;
 					let u = !0;
 					if (t.type.indexOf(s.ic.Posts) > -1) {
@@ -2869,7 +2860,7 @@
 					const l = N.H(c, o);
 					return {
 						...j.g(c, t),
-						...ee,
+						...Z,
 						...N.o(c),
 						actionInfo: N.d(c, {
 							success: u,
@@ -2881,22 +2872,22 @@
 							sort: null !== (a = t.sort) && void 0 !== a ? a : s.Vb,
 							range: null !== (d = t.t) && void 0 !== d ? d : s.Wb
 						},
-						...te(i),
+						...ee(i),
 						userPreferences: N.gb(c)
 					}
 				},
-				re = (e, t, n) => r => ({
+				ne = (e, t, n) => r => ({
 					...N.o(r),
-					...ee,
+					...Z,
 					actionInfo: {
 						...N.d(r),
 						pageType: "search_dropdown"
 					},
 					search: N.db(r, e, S.a.Typeahead, t || void 0),
-					...te(n),
+					...ee(n),
 					userPreferences: N.gb(r)
 				}),
-				oe = (e, t) => {
+				re = (e, t) => {
 					Object(T.a)({
 						source: "global",
 						action: "view",
@@ -2907,7 +2898,7 @@
 						})
 					})
 				},
-				se = (e, t) => {
+				oe = (e, t) => {
 					Object(T.a)({
 						source: "global",
 						action: "view",
@@ -3524,4 +3515,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.76ac09a21eafaf6b350b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.01b8a48d557e8e71edbf.js.map

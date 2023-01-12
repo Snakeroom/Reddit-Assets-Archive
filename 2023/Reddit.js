@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.cf6b38bd935d73140f2b.js
-// Retrieved at 1/11/2023, 8:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.d884f4cbb723b3c44cdc.js
+// Retrieved at 1/12/2023, 10:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -9209,7 +9209,7 @@
 				jr = n("./src/reddit/components/HeaderSubredditSelector/index.m.less"),
 				Pr = n.n(jr);
 			! function(e) {
-				e.Acknowledgements = "Acknowledgements", e.All = "All", e.Appeal = "Appeal", e.Avatar = "Avatar", e.Category = "Category", e.Coins = "Coins", e.Community = "Community", e.CommunityHubs = "CommunityHubs", e.CommunitySearch = "CommunitySearch", e.CreateCommunity = "CreateCommunity", e.CreatePost = "CreatePost", e.DailyCharts = "DailyCharts", e.Employee = "Employee", e.GlobalSearch = "GlobalSearch", e.Geotagging = "Geotagging", e.HappeningNow = "HappeningNow", e.Home = "Home", e.Inbox = "Inbox", e.InternationalSite = "InternationalSite", e.ModListing = "ModListing", e.ModMail = "ModMail", e.ModQueue = "ModQueue", e.Multi = "Multi", e.NotificationsInbox = "NotificationsInbox", e.Popular = "Popular", e.Predictions = "Predictions", e.Premium = "Premium", e.Recap = "Recap", e.Report = "Report", e.Settings = "Settings", e.SubredditCreation = "SubredditCreation", e.Talk = "Talk", e.Topic = "Topic", e.Unknown = "Unknown", e.UserDataRequest = "UserDataRequest", e.UserProfile = "UserProfile", e.UserProfileName = "UserProfileName", e.ViewDraft = "ViewDraft"
+				e.Acknowledgements = "Acknowledgements", e.All = "All", e.Appeal = "Appeal", e.Avatar = "Avatar", e.Category = "Category", e.Coins = "Coins", e.Community = "Community", e.CommunityHubs = "CommunityHubs", e.CommunitySearch = "CommunitySearch", e.CreateCommunity = "CreateCommunity", e.CreatePost = "CreatePost", e.Employee = "Employee", e.GlobalSearch = "GlobalSearch", e.Geotagging = "Geotagging", e.HappeningNow = "HappeningNow", e.Home = "Home", e.Inbox = "Inbox", e.InternationalSite = "InternationalSite", e.ModListing = "ModListing", e.ModMail = "ModMail", e.ModQueue = "ModQueue", e.Multi = "Multi", e.NotificationsInbox = "NotificationsInbox", e.Popular = "Popular", e.Predictions = "Predictions", e.Premium = "Premium", e.Recap = "Recap", e.Report = "Report", e.Settings = "Settings", e.SubredditCreation = "SubredditCreation", e.Talk = "Talk", e.Topic = "Topic", e.Unknown = "Unknown", e.UserDataRequest = "UserDataRequest", e.UserProfile = "UserProfile", e.UserProfileName = "UserProfileName", e.ViewDraft = "ViewDraft"
 			}(xr || (xr = {}));
 			const Sr = () => m.a.createElement(_r, {
 				className: Pr.a.wrappedRedditDropdown,
@@ -9309,10 +9309,6 @@
 						case "userDataRequest":
 							return {
 								type: xr.UserDataRequest
-							};
-						case "subredditLeaderboard":
-							return {
-								type: xr.DailyCharts
 							};
 						case "geotagging":
 							return {
@@ -11443,10 +11439,6 @@
 									return kr(s.fbt._("Create Post", null, {
 										hk: "30V40V"
 									}).toString());
-								case xr.DailyCharts:
-									return kr(s.fbt._("Top Communities", null, {
-										hk: "1sWIEu"
-									}).toString());
 								case xr.GlobalSearch:
 									return kr(s.fbt._("Search Results", null, {
 										hk: "scJwR"
@@ -11568,8 +11560,6 @@
 								case xr.CreateCommunity:
 								case xr.CreatePost:
 									return n("add");
-								case xr.DailyCharts:
-									return n("list_numbered");
 								case xr.Geotagging:
 									return n("custom_feed");
 								case xr.GlobalSearch:
@@ -16880,7 +16870,7 @@
 						currentPage: n
 					} = e.platform, s = Object(In.r)(e), r = null === (t = e.platform.currentPage) || void 0 === t ? void 0 : t.status, o = Rf.has(r), a = Object(Hn.m)(e, {
 						pageLayer: n
-					}), i = !(!a || !a.hideFromRobots), c = Df(e), l = s === k.Sb.COMMENTS || s === k.Sb.COLLECTION_COMMENTS, d = !(!n || !n.urlParams.partialCommentId), u = s === k.Sb.SEARCH_RESULTS || s === k.Sb.SUBREDDIT_LEADERBOARD || l && d, m = Object(If.d)(e) && !(e => {
+					}), i = !(!a || !a.hideFromRobots), c = Df(e), l = s === k.Sb.COMMENTS || s === k.Sb.COLLECTION_COMMENTS, d = !(!n || !n.urlParams.partialCommentId), u = s === k.Sb.SEARCH_RESULTS || l && d, m = Object(If.d)(e) && !(e => {
 						var t, n, s;
 						const {
 							currentPage: r
@@ -21098,4 +21088,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.cf6b38bd935d73140f2b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.d884f4cbb723b3c44cdc.js.map

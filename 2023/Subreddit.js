@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.b8bfd7a9bc02a1b98761.js
-// Retrieved at 1/11/2023, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.9449422b92791ed91cc7.js
+// Retrieved at 1/12/2023, 10:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -19475,15 +19475,15 @@
 			})), n.d(t, "v", (function() {
 				return Z
 			})), n.d(t, "d", (function() {
-				return $
+				return X
 			})), n.d(t, "t", (function() {
-				return ne
+				return te
 			})), n.d(t, "s", (function() {
-				return re
+				return ne
 			})), n.d(t, "u", (function() {
-				return se
+				return re
 			})), n.d(t, "g", (function() {
-				return oe
+				return se
 			}));
 			var r = n("./node_modules/lodash/pick.js"),
 				s = n.n(r),
@@ -19642,7 +19642,7 @@
 							break
 						}
 						case o.Sb.SUBREDDIT_WIKI:
-							Object(S.a)(X(n, r)(t));
+							Object(S.a)(J(n, r)(t));
 							break;
 						case o.Sb.COINS:
 							Object(S.a)(V(n, r)(t)), Object(S.a)(G()(t));
@@ -19660,29 +19660,26 @@
 							u && M(t, !0, c ? c.subredditName : null, c ? c.profileName : null);
 							break;
 						case o.Sb.COLLECTION_COMMENTS:
-							u && se(t, !0);
+							u && re(t, !0);
 							break;
 						case o.Sb.MODQUEUE_PAGES:
 							u && U(t, c ? c.subredditName : null, c ? c.profileName : null);
-							break;
-						case o.Sb.SUBREDDIT_LEADERBOARD:
-							u && Object(S.a)(J()(t));
 							break;
 						case o.Sb.SEARCH_RESULTS:
 							if (u) {
 								const o = Object(l.e)(e);
 								if (!o) return;
-								Object(S.a)(ne(o, Object(v.e)(s()(x && x.queryParams || {}, a.A)), n, r, x)(t))
+								Object(S.a)(te(o, Object(v.e)(s()(x && x.queryParams || {}, a.A)), n, r, x)(t))
 							}
 							break;
 						case o.Sb.GEOTAGGING:
-							u && Object(S.a)($()(t));
+							u && Object(S.a)(X()(t));
 							break;
 						case o.Sb.SUBREDDIT_CREATION:
 							u && Object(S.a)(Z()(t));
 							break;
 						case o.Sb.MOD_LISTING:
-							u && oe(t, !0)
+							u && se(t, !0)
 					}
 				},
 				k = e => ({
@@ -20002,13 +19999,7 @@
 					noun: "screen",
 					...k(e)
 				}),
-				J = () => e => ({
-					action: "view",
-					source: "global",
-					noun: "screen",
-					...k(e)
-				}),
-				X = (e, t) => n => ({
+				J = (e, t) => n => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -20019,21 +20010,21 @@
 					userSubreddit: I.ub(n),
 					adblock: I.e(n)
 				}),
-				$ = () => e => ({
+				X = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
 					...k(e)
 				}),
-				ee = {
+				$ = {
 					source: "global",
 					action: c.c.VIEW,
 					noun: "screen"
 				},
-				te = e => !!e && {
+				ee = e => !!e && {
 					correlationId: Object(y.c)(y.a.SearchResults)
 				},
-				ne = (e, t, n, r, s, i) => a => {
+				te = (e, t, n, r, s, i) => a => {
 					var c, d;
 					let l = !0;
 					if (t.type.indexOf(o.ic.Posts) > -1) {
@@ -20051,7 +20042,7 @@
 					const u = I.H(a, s);
 					return {
 						...O.g(a, t),
-						...ee,
+						...$,
 						...I.o(a),
 						actionInfo: I.d(a, {
 							success: l,
@@ -20063,22 +20054,22 @@
 							sort: null !== (c = t.sort) && void 0 !== c ? c : o.Vb,
 							range: null !== (d = t.t) && void 0 !== d ? d : o.Wb
 						},
-						...te(i),
+						...ee(i),
 						userPreferences: I.gb(a)
 					}
 				},
-				re = (e, t, n) => r => ({
+				ne = (e, t, n) => r => ({
 					...I.o(r),
-					...ee,
+					...$,
 					actionInfo: {
 						...I.d(r),
 						pageType: "search_dropdown"
 					},
 					search: I.db(r, e, E.a.Typeahead, t || void 0),
-					...te(n),
+					...ee(n),
 					userPreferences: I.gb(r)
 				}),
-				se = (e, t) => {
+				re = (e, t) => {
 					Object(S.a)({
 						source: "global",
 						action: "view",
@@ -20089,7 +20080,7 @@
 						})
 					})
 				},
-				oe = (e, t) => {
+				se = (e, t) => {
 					Object(S.a)({
 						source: "global",
 						action: "view",
@@ -25619,4 +25610,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.b8bfd7a9bc02a1b98761.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.9449422b92791ed91cc7.js.map
