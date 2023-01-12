@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.6e0386274ba9a2600438.js
-// Retrieved at 1/12/2023, 10:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.91c15464e54bc0d71882.js
+// Retrieved at 1/12/2023, 11:00:05 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1523,7 +1523,7 @@
 						GovernanceTransferPointsModal: "0e57bb84cde9a2cead36",
 						"reddit-pages-meta-ArbitrumPointsMigrationPage": "4a10c027da751c7cc289",
 						"reddit-pages-meta-MainnetPointsMigrationPage": "f0bdf5841da606c52146",
-						"vendors~Avatar~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~SnoovatarModal": "a18fe818f632b69a19e1",
+						"vendors~Avatar~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~SnoovatarModal": "06bf9db1760b2a90d674",
 						Avatar: "869652f2c3bd4649b375",
 						MarketplaceClaimModal: "3cf8e63f30c962bcf6a1",
 						SnoovatarModal: "6d988c2c1ee64bf78bde",
@@ -1787,4 +1787,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.6e0386274ba9a2600438.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.91c15464e54bc0d71882.js.map
