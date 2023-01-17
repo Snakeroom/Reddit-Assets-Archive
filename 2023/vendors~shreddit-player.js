@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~shreddit-player.eb09d6db62bca538ebcb.js
-// Retrieved at 1/9/2023, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~shreddit-player.69c1fdac058b7dc64473.js
+// Retrieved at 1/17/2023, 5:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~shreddit-player"], {
 		"./node_modules/@reddit/faceplate/lib/custom-event.js": function(e, t, n) {
@@ -1558,7 +1558,7 @@
 						if (this._provider) {
 							V(Be) && this._provider.autoplay && (this._provider.muted = !0), V(Be) || (this._provider.muted = Be);
 							const e = this._getSavedMediaVolume();
-							I(null == e ? void 0 : e.volume) && (this._provider.volume = e.volume)
+							I(null == e ? void 0 : e.volume) && (this._provider.volume = e.volume), void 0 === (null == e ? void 0 : e.muted) || this._provider.autoplay || (this._provider.muted = e.muted)
 						}
 					}), t(() => {
 						We.delete(e), this._provider = void 0, this._providerDisposal.empty()
@@ -7509,4 +7509,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~shreddit-player.eb09d6db62bca538ebcb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~shreddit-player.69c1fdac058b7dc64473.js.map
