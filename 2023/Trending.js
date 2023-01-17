@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Trending.b9bdf93e2f8cff21cb24.js
-// Retrieved at 1/12/2023, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Trending.70d992393e344b43ba8f.js
+// Retrieved at 1/17/2023, 4:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Trending"], {
 		"./src/reddit/actions/search/trending.ts": function(e, t, r) {
@@ -40,8 +40,8 @@
 					if (function(e) {
 							return Object(_.c)(e, {
 								experimentEligibilitySelector: _.a,
-								experimentName: x.Dc
-							}) === x.Fd
+								experimentName: x.Ec
+							}) === x.Gd
 						}(O) && e === u.d.dropdown) {
 						const r = (e => {
 							var t, r;
@@ -223,7 +223,7 @@
 				} = e, N = h && h.preview && h.preview.url || void 0, k = h && h.isSponsored ? "promoted_trend" : "trending", I = h && Object(l.a)(h.permalink) || "", E = f && I || g && Object(a.a)("/search", {
 					q: g.rawQuery,
 					source: k
-				}) || I, D = g ? g.subredditInfo && g.subredditInfo.icon : T && T.icon.url, V = g ? g.subredditInfo && g.subredditInfo.displayText : T && (T.displayText || T.name), U = h ? h.flair.filter(w) : [], A = h ? h.score : 0, F = h ? h.numComments : 0, R = h && h.isSponsored, L = Object(O.a)(e).body, W = `linear-gradient(\n      ${Object(n.f)(L,.2)},\n      ${Object(n.f)(L,.3)},\n      ${Object(n.f)(L,.4)},\n      ${Object(n.f)(L,.6)},\n      ${Object(n.f)(L,.8)},\n      ${L}\n    )`, M = d.a.createElement("div", {
+				}) || I, D = g ? g.subredditInfo && g.subredditInfo.icon : T && T.icon.url, V = g ? g.subredditInfo && g.subredditInfo.displayText : T && (T.displayText || T.name), U = h ? h.flair.filter(w) : [], A = h ? h.score : 0, R = h ? h.numComments : 0, F = h && h.isSponsored, L = Object(O.a)(e).body, W = `linear-gradient(\n      ${Object(n.f)(L,.2)},\n      ${Object(n.f)(L,.3)},\n      ${Object(n.f)(L,.4)},\n      ${Object(n.f)(L,.6)},\n      ${Object(n.f)(L,.8)},\n      ${L}\n    )`, M = d.a.createElement("div", {
 					id: i,
 					className: Object(o.a)(S.a.trendingPost, {
 						[S.a["m-background"]]: !!N
@@ -236,7 +236,7 @@
 						background: Object(v.g)(Object(O.a)(e).body, N || Object(O.a)(e).banner.backgroundImage, "cover"),
 						"--SearchDiscoveryUnits-TrendingPosts-Post-background": W
 					}
-				}, R && d.a.createElement("div", {
+				}, F && d.a.createElement("div", {
 					className: S.a.promoted
 				}, s.fbt._("promoted", null, {
 					hk: "1mLJfa"
@@ -278,10 +278,10 @@
 				}, s.fbt._({
 					"*": "{number} comments",
 					_1: "1 comment"
-				}, [s.fbt._plural(F, "number", Object(m.b)(F))], {
+				}, [s.fbt._plural(R, "number", Object(m.b)(R))], {
 					hk: "311aXY"
 				})))))));
-				return R ? d.a.createElement(p.a, {
+				return F ? d.a.createElement(p.a, {
 					post: h
 				}, M) : M
 			}))))
@@ -539,4 +539,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Trending.b9bdf93e2f8cff21cb24.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Trending.70d992393e344b43ba8f.js.map

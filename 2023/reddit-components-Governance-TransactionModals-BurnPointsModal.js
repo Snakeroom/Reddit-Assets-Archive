@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.f616e8163be38e7082c1.js
-// Retrieved at 1/12/2023, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.edb53ada6b6f22ce80a1.js
+// Retrieved at 1/17/2023, 4:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-BurnPointsModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
@@ -577,7 +577,7 @@
 				})))
 			}
 
-			function P(e) {
+			function G(e) {
 				return l.a.createElement(I.b, {
 					values: [
 						[Object(I.a)(), e.contractAddress],
@@ -590,7 +590,7 @@
 					]
 				})
 			}
-			const G = 15e3;
+			const P = 15e3;
 
 			function S(e) {
 				const {
@@ -611,7 +611,7 @@
 						subreddit: n,
 						pointsName: E
 					}),
-					approvalDetails: l.a.createElement(P, {
+					approvalDetails: l.a.createElement(G, {
 						contractAddress: v,
 						memo: a
 					}),
@@ -621,7 +621,7 @@
 							const t = Object(N.e)(i.fbt._("Burning your {pointsName}...", [i.fbt._param("pointsName", e)], {
 								hk: "2LoC1g"
 							}), F.b.SuccessCommunity);
-							return t.duration = G, Object(N.f)(t)
+							return t.duration = P, Object(N.f)(t)
 						}(E));
 						try {
 							await async function(e, t, a, n, l) {
@@ -639,7 +639,7 @@
 								const t = Object(N.e)(i.fbt._("Your {pointsName} were burnt!", [i.fbt._param("pointsName", e)], {
 									hk: "1BHX95"
 								}), F.b.SuccessCommunityGreen);
-								return t.duration = G, Object(N.f)(t)
+								return t.duration = P, Object(N.f)(t)
 							}(E))
 						} catch (t) {
 							b(t.toString()), r(function(e) {
@@ -1293,14 +1293,14 @@
 			const c = e => {
 					return Object(l.c)(e, {
 						experimentEligibilitySelector: l.a,
-						experimentName: n.oe
-					}) === n.Fd
+						experimentName: n.qe
+					}) === n.Gd
 				},
 				s = e => {
 					return Object(l.c)(e, {
 						experimentEligibilitySelector: l.a,
-						experimentName: n.me
-					}) === n.Fd
+						experimentName: n.oe
+					}) === n.Gd
 				}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, a) {
@@ -1357,4 +1357,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.f616e8163be38e7082c1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.edb53ada6b6f22ce80a1.js.map

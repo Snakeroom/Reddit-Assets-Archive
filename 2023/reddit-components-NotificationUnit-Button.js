@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.6d55030b1de32f81b4a8.js
-// Retrieved at 1/12/2023, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.1e9e9acc2a5bac1224bf.js
+// Retrieved at 1/17/2023, 4:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./node_modules/lodash/map.js": function(e, t, s) {
@@ -137,8 +137,8 @@
 				}),
 				f = Object(d.a)(v, [a.a.Click, a.a.Keydown]),
 				y = Object(d.a)(b, [a.a.Click, a.a.Keydown]),
-				O = Object(r.b)(x);
-			t.c = O(e => {
+				I = Object(r.b)(x);
+			t.c = I(e => {
 				const {
 					caretOnTop: t
 				} = e;
@@ -173,10 +173,10 @@
 				f = s("./src/reddit/components/NotificationUnit/index.m.less"),
 				y = s.n(f);
 			const {
-				fbt: O
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), I = {
+				fbt: I
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), O = {
 				kind: x.b.Error,
-				text: O._("Sorry, this content is no longer available.", null, {
+				text: I._("Sorry, this content is no longer available.", null, {
 					hk: "3q5siu"
 				}),
 				duration: c.a
@@ -193,17 +193,17 @@
 						notificationId: L,
 						onEvent: D
 					} = e,
-					U = null == E ? void 0 : E.messageType,
-					P = U === v.a.CommentReply,
-					F = U === v.a.SubredditRecommendation,
-					B = U === v.a.LifecyclePostSuggestions,
+					P = null == E ? void 0 : E.messageType,
+					U = P === v.a.CommentReply,
+					F = P === v.a.SubredditRecommendation,
+					B = P === v.a.LifecyclePostSuggestions,
 					M = null === (t = null == E ? void 0 : E.post) || void 0 === t ? void 0 : t.permalink;
 				let V = null === (s = null == E ? void 0 : E.comment) || void 0 === s ? void 0 : s.id,
 					H = (null === (o = null == E ? void 0 : E.post) || void 0 === o ? void 0 : o.id) || (null === (f = null === (x = null == E ? void 0 : E.comment) || void 0 === x ? void 0 : x.postInfo) || void 0 === f ? void 0 : f.id);
 				const W = null === (R = null == E ? void 0 : E.subreddit) || void 0 === R ? void 0 : R.id,
 					K = null === (j = null === (C = null == E ? void 0 : E.awarding) || void 0 === C ? void 0 : C.award) || void 0 === j ? void 0 : j.id,
 					J = null === (w = null === (T = null == E ? void 0 : E.awarding) || void 0 === T ? void 0 : T.awarder) || void 0 === w ? void 0 : w.id;
-				if (U === v.a.CommentFollow || U === v.a.PostFollow) {
+				if (P === v.a.CommentFollow || P === v.a.PostFollow) {
 					const e = (e => {
 						const t = {},
 							{
@@ -216,7 +216,7 @@
 						return r && "r" === n && (t.subredditName = r), i && (t.postId = `${u.b}${i}`), a && (t.commentId = `${u.a}${a}`), t
 					})(N);
 					H = e.postId, V = e.commentId
-				} else U !== v.a.PostReply && U !== v.a.LifecyclePostSuggestions || (V = L);
+				} else P !== v.a.PostReply && P !== v.a.LifecyclePostSuggestions || (V = L);
 				const z = e => {
 					if (H && V) {
 						const e = Object(a.a)(H, V, Object(_.c)(N)),
@@ -227,10 +227,10 @@
 						g(Object(d.h)(t)), D({
 							position: h.d.SECOND
 						})
-					} else e.preventDefault(), g(Object(c.f)(I))
+					} else e.preventDefault(), g(Object(c.f)(O))
 				};
 				return (() => {
-					switch (U) {
+					switch (P) {
 						case v.a.HFNSubredditInterestingPost:
 						case v.a.LifecyclePostSuggestions:
 						case v.a.SubredditRecommendation: {
@@ -241,9 +241,9 @@
 										position: h.d.SECOND,
 										postId: H,
 										subredditId: W
-									}) : (e.preventDefault(), g(Object(c.f)(I)))
+									}) : (e.preventDefault(), g(Object(c.f)(O)))
 								},
-								s = O._("Check It Out", null, {
+								s = I._("Check It Out", null, {
 									hk: "3mzMCI"
 								});
 							return n.a.createElement(p.t, {
@@ -259,7 +259,7 @@
 							}, n.a.createElement(b.a, {
 								name: "text_post",
 								className: y.a.postIcon
-							}), O._("{check out button}", [O._param("check out button", s)], {
+							}), I._("{check out button}", [I._param("check out button", s)], {
 								hk: "4DDMme"
 							}))
 						}
@@ -267,8 +267,8 @@
 						case v.a.CommentReply:
 						case v.a.PostFollow:
 						case v.a.CommentFollow: {
-							const e = P;
-							return P || e ? n.a.createElement(p.t, {
+							const e = U;
+							return U || e ? n.a.createElement(p.t, {
 								onClick: z,
 								kind: p.b.InternalLink,
 								to: N,
@@ -283,7 +283,7 @@
 							}, n.a.createElement(b.a, {
 								name: "reply",
 								className: y.a.replyIcon
-							}), O._("Reply Back", null, {
+							}), I._("Reply Back", null, {
 								hk: "3JWTvx"
 							})) : null
 						}
@@ -293,7 +293,7 @@
 								e.preventDefault(), J ? D({
 									position: h.d.SECOND,
 									awardId: K
-								}) : g(Object(c.f)(I))
+								}) : g(Object(c.f)(O))
 							};
 							return n.a.createElement(l.b, {
 								userId: J,
@@ -311,7 +311,7 @@
 							}, n.a.createElement(b.a, {
 								name: "chat_new",
 								className: y.a.replyIcon
-							}), O._("Say thanks", null, {
+							}), I._("Say thanks", null, {
 								hk: "2FzJoo"
 							}))
 						}
@@ -513,11 +513,11 @@
 				experimentEligibilitySelector: n.a,
 				experimentName: o.pb
 			}), e => ({
-				bucketed: e === o.Oc.ExpandedSearch || e === o.Oc.CollapsedSearch,
-				collapsed: e === o.Oc.CollapsedSearch,
-				expanded: e === o.Oc.ExpandedSearch
+				bucketed: e === o.Pc.ExpandedSearch || e === o.Pc.CollapsedSearch,
+				collapsed: e === o.Pc.CollapsedSearch,
+				expanded: e === o.Pc.ExpandedSearch
 			}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.6d55030b1de32f81b4a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.1e9e9acc2a5bac1224bf.js.map

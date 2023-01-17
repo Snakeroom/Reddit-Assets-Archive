@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.7f1efd1653d14f6ff340.js
-// Retrieved at 1/12/2023, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.a0ecedc7c86ca80e71b1.js
+// Retrieved at 1/17/2023, 4:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less": function(e, t, s) {
@@ -32,12 +32,12 @@
 				h = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				_ = s("./src/reddit/components/Widgets/Base/index.tsx"),
 				b = s("./src/reddit/helpers/trackers/discoveryUnit.ts"),
-				x = s("./src/reddit/constants/experiments.ts"),
-				y = s("./src/reddit/helpers/chooseVariant/index.ts"),
+				y = s("./src/reddit/constants/experiments.ts"),
+				x = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				D = s("./src/reddit/selectors/user.ts");
-			const C = e => Object(D.P)(e) || x.Df.ShowTopContent === Object(y.c)(e, {
-				experimentEligibilitySelector: y.a,
-				experimentName: x.xf
+			const C = e => Object(D.P)(e) || y.Ff.ShowTopContent === Object(x.c)(e, {
+				experimentEligibilitySelector: x.a,
+				experimentName: y.zf
 			});
 			var v = s("./src/reddit/selectors/subreddit.ts"),
 				U = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
@@ -121,4 +121,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.7f1efd1653d14f6ff340.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.a0ecedc7c86ca80e71b1.js.map

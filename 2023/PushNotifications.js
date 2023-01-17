@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PushNotifications.b5675b31bc5dbd45b76c.js
-// Retrieved at 1/12/2023, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PushNotifications.a55fe7b67f18feab173a.js
+// Retrieved at 1/17/2023, 4:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -61,7 +61,7 @@
 		"./src/reddit/actions/notifications/index.ts": function(e, t, i) {
 			"use strict";
 			i.r(t), i.d(t, "initializeServiceWorkerChannel", (function() {
-				return D
+				return W
 			})), i.d(t, "requestNotificationsPermissions", (function() {
 				return R
 			})), i.d(t, "subscribeForPNs", (function() {
@@ -99,16 +99,16 @@
 			const F = e => Object(w.c)(e, {
 				experimentEligibilitySelector: S.S,
 				experimentName: y.ub
-			}) === y.Fd;
+			}) === y.Gd;
 			var N = i("./src/reddit/selectors/experiments/delayDnPermission.ts"),
 				x = i("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts");
-			const W = e => Object(w.c)(e, {
-				experimentName: y.Wb,
+			const G = e => Object(w.c)(e, {
+				experimentName: y.Xb,
 				experimentEligibilitySelector: w.a
-			}) === y.Fd;
+			}) === y.Gd;
 			var q = i("./src/reddit/selectors/meta.ts");
 			let C = !1;
-			const D = async (e, t) => {
+			const W = async (e, t) => {
 				const i = Object(S.R)(e);
 				if (C) return;
 				if (C = !0, Object(f.a)(e) !== d.d.NotificationsSupported) return;
@@ -116,7 +116,7 @@
 				navigator.serviceWorker.addEventListener("message", n => {
 					const s = n.data,
 						r = s.command || s.type;
-					if ("registerWithServiceWorker" === r) G(e);
+					if ("registerWithServiceWorker" === r) D(e);
 					else if (r === v.a && i) {
 						const e = o()(s, ["command"]);
 						t(Object(p.f)(e))
@@ -124,8 +124,8 @@
 						const e = Object(O.a)(s.data.href);
 						e && e.pathname && t(Object(l.c)(e.pathname))
 					}
-				}), G(e)
-			}, G = e => {
+				}), D(e)
+			}, D = e => {
 				navigator.serviceWorker.controller && navigator.serviceWorker.controller.postMessage({
 					command: "registerClient",
 					v2EventBoilerPlate: j.c(e)
@@ -135,7 +135,7 @@
 				return async (n, s, o) => {
 					const c = s(),
 						u = Object(q.f)(c),
-						l = W(c),
+						l = G(c),
 						b = !!Object(k.a)(c),
 						f = Object(N.a)(c),
 						p = Object(x.e)(c),
@@ -143,7 +143,7 @@
 						O = F(c);
 					if (p || m) return;
 					if (await Object(r.a)() || u) return;
-					await D(c, n);
+					await W(c, n);
 					j.l(c), await Object(a.b)(e, t, () => {
 						l || f || b || n(Object(d.s)()), n(Object(d.q)()), j.j(c)
 					}, (e, t) => {
@@ -400,4 +400,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.b5675b31bc5dbd45b76c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.a55fe7b67f18feab173a.js.map

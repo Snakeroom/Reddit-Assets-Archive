@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.6cb144e8f9ea55748c42.js
-// Retrieved at 1/12/2023, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.eef1beb32d42d6c44d92.js
+// Retrieved at 1/17/2023, 4:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -2224,7 +2224,7 @@
 			const D = e => O.d.reCaptchaEnterprise(e) && !Object(T.d)(e),
 				w = e => !!Object(S.c)(e, {
 					experimentEligibilitySelector: Object(I.d)(Object(I.b)(...a.c)),
-					experimentName: f.df
+					experimentName: f.ff
 				}),
 				j = Object(r.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				C = () => l(e => p()([D, w, e => e.tracking.reCaptchaEnterprise.load === r.a.New], t => t(e)))(async e => {
@@ -2451,8 +2451,8 @@
 					if (function(e) {
 							return Object(g.c)(e, {
 								experimentEligibilitySelector: g.a,
-								experimentName: m.Dc
-							}) === m.Fd
+								experimentName: m.Ec
+							}) === m.Gd
 						}(O) && e === p.d.dropdown) {
 						const n = (e => {
 							var t, n;
@@ -4232,7 +4232,7 @@
 					relativePosition: I
 				} = e;
 				var T, w, j, C, A, P;
-				const R = Object(a.e)(e => Object(H.a)(e, q.lf)),
+				const R = Object(a.e)(e => Object(H.a)(e, q.nf)),
 					N = Object(g.a)(),
 					L = (null === (T = o.displayInfo) || void 0 === T ? void 0 : T.karma) || 0,
 					x = (null === (w = o.displayInfo) || void 0 === w ? void 0 : w.subscribers) || 0,
@@ -4373,7 +4373,7 @@
 					searchOriginPage: f
 				} = e;
 				const b = Object(g.a)(),
-					h = Object(a.e)(e => Object(H.a)(e, q.lf)),
+					h = Object(a.e)(e => Object(H.a)(e, q.nf)),
 					y = Object(a.e)(O.mb),
 					{
 						nsfwTypeaheadExpanded: v,
@@ -4592,47 +4592,48 @@
 				const {
 					containerWidth: n,
 					trendingItems: o,
-					isTrendingPending: i,
-					isOpen: d,
-					isTypeaheadPending: l,
-					itemList: u,
-					recentSearches: p,
-					typeaheadSuggestions: f,
-					typeaheadByTypeSuggestions: b,
-					focusedItemIndex: h,
-					nightmode: m,
-					searchItem: g,
-					searchOriginPage: v,
-					isFixed: E = !0,
-					isOverlay: _ = !0,
-					fireAdPixelsOfType: O,
-					onClearSearchQuery: I,
-					onClose: S,
-					onRemoveRecentSearch: T,
-					onSendSearchClickRecentEvent: w,
-					onSetRecentSearch: C,
-					onUpdateSearchQuery: A
-				} = e, P = Object(a.d)(), [R, N] = Object(r.useState)(null), [L, x] = Object(r.useState)(n), [M, B] = Object(r.useState)(new Array(Ee).fill(!1)), {
-					enabled: F
-				} = Object(a.e)(ne.j), G = Object(a.e)(e => Object(H.a)(e, q.lf)), V = !!(null === (t = g.searchQuery) || void 0 === t ? void 0 : t.trim()), Q = l || i, K = F, Y = [...b.communities, ...b.people, ...b.nsfw], $ = !l && (!V || h >= 0) && (G ? 0 === Y.length : 0 === f.length) && !K, X = {
-					width: L ? `${L}px` : "inherit",
+					isDropdownHidden: i,
+					isTrendingPending: d,
+					isOpen: l,
+					isTypeaheadPending: u,
+					itemList: p,
+					recentSearches: f,
+					typeaheadSuggestions: b,
+					typeaheadByTypeSuggestions: h,
+					focusedItemIndex: m,
+					nightmode: g,
+					searchItem: v,
+					searchOriginPage: E,
+					isFixed: _ = !0,
+					isOverlay: O = !0,
+					fireAdPixelsOfType: I,
+					onClearSearchQuery: S,
+					onClose: T,
+					onRemoveRecentSearch: w,
+					onSendSearchClickRecentEvent: C,
+					onSetRecentSearch: A,
+					onUpdateSearchQuery: P
+				} = e, R = Object(a.d)(), [N, L] = Object(r.useState)(null), [x, M] = Object(r.useState)(n), [B, F] = Object(r.useState)(new Array(Ee).fill(!1)), {
+					enabled: G
+				} = Object(a.e)(ne.j), V = Object(a.e)(e => Object(H.a)(e, q.nf)), Q = !!(null === (t = v.searchQuery) || void 0 === t ? void 0 : t.trim()), K = u || d, Y = G, $ = [...h.communities, ...h.people, ...h.nsfw], X = !u && (!Q || m >= 0) && (V ? 0 === $.length : 0 === b.length) && !Y, z = {
+					width: x ? `${x}px` : "inherit",
 					overflow: "auto"
 				};
-				E && (X.zIndex = ee.g), Object(r.useEffect)(() => {
-					x(n)
-				}, [n]), Object(r.useLayoutEffect)(() => {
-					if (!i && d && document.getElementById(ve)) {
-						const e = z();
-						B(e), o.forEach((t, n) => {
-							e[n] && P((e, n) => Object(k.p)({
-								state: n(),
-								trendingSearch: t,
-								telemetrySource: y.a.Typeahead
-							}))
-						})
-					}
-				}, [i, d, P]);
-				const z = () => {
+				if (_ && (z.zIndex = ee.g), Object(r.useEffect)(() => {
+						M(n)
+					}, [n]), Object(r.useLayoutEffect)(() => {
+						if (!d && l && document.getElementById(ve)) {
+							const e = J();
+							F(e), o.forEach((t, n) => {
+								e[n] && R((e, n) => Object(k.p)({
+									state: n(),
+									trendingSearch: t,
+									telemetrySource: y.a.Typeahead
+								}))
+							})
+						}
+					}, [d, l, R]), i) return null;
+				const J = () => {
 					const e = new Array(o.length).fill(!1);
 					return o.forEach((t, n) => {
 						if (t.id) {
@@ -4646,70 +4647,70 @@
 						}
 					}), e
 				};
-				const J = !l && !K;
+				const te = !u && !Y;
 				return s.a.createElement(_e, {
 					className: Object(c.a)(D.a.bodyBackgroundColor, D.a.bodyTextColor, D.a.borderTop1Line, D.a.sdListContainer),
 					id: ve,
-					isFixed: E,
-					isOpen: d,
-					isOverlay: _,
+					isFixed: _,
+					isOpen: l,
+					isOverlay: O,
 					tooltipId: ge,
 					noFocus: !0,
-					style: X,
+					style: z,
 					onDropdownMounted: () => {
-						if (!i && o.length > 0) {
-							const e = z();
-							B(e), o.forEach((t, n) => {
-								e[n] && P((e, n) => Object(k.p)({
+						if (!d && o.length > 0) {
+							const e = J();
+							F(e), o.forEach((t, n) => {
+								e[n] && R((e, n) => Object(k.p)({
 									state: n(),
 									trendingSearch: t,
 									telemetrySource: y.a.Typeahead,
-									offset: p.length
+									offset: f.length
 								}))
 							})
 						}
 					},
 					onScroll: () => {
-						const e = z();
+						const e = J();
 						o.forEach((t, n) => {
-							M[n] || !e[n] || t.post && t.post.isSponsored || P((e, n) => Object(k.p)({
+							B[n] || !e[n] || t.post && t.post.isSponsored || R((e, n) => Object(k.p)({
 								state: n(),
 								trendingSearch: t,
 								telemetrySource: y.a.Typeahead,
-								offset: p.length
+								offset: f.length
 							}))
-						}), B(e)
+						}), F(e)
 					}
-				}, $ && s.a.createElement(s.a.Fragment, null, p.map((e, t) => s.a.createElement(j, {
-					searchOriginPage: v,
-					activeTooltipId: R,
-					focusedItem: u[h],
+				}, X && s.a.createElement(s.a.Fragment, null, f.map((e, t) => s.a.createElement(j, {
+					searchOriginPage: E,
+					activeTooltipId: N,
+					focusedItem: p[m],
 					indexOfItem: t,
 					key: e.id,
-					onClearSearchQuery: I,
-					onRemoveRecentSearch: T,
-					onSendSearchClickRecentEvent: w,
-					onSetRecentSearch: C,
-					onUpdateSearchQuery: A,
+					onClearSearchQuery: S,
+					onRemoveRecentSearch: w,
+					onSendSearchClickRecentEvent: C,
+					onSetRecentSearch: A,
+					onUpdateSearchQuery: P,
 					recentSearch: e,
-					toggleTooltip: N,
-					nightmode: m,
-					onCloseDropdown: S
-				})), !i && o.length ? s.a.createElement("div", {
-					className: Object(c.a)(D.a.labelsFont, D.a.dropdownPadding, D.a.metaTextColor, D.a.titlePadding, !!p.length && D.a.borderTop2Line)
+					toggleTooltip: L,
+					nightmode: g,
+					onCloseDropdown: T
+				})), !d && o.length ? s.a.createElement("div", {
+					className: Object(c.a)(D.a.labelsFont, D.a.dropdownPadding, D.a.metaTextColor, D.a.titlePadding, !!f.length && D.a.borderTop2Line)
 				}, me._("Trending today", null, {
 					hk: "3nAMpY"
 				})) : null, o.map(e => s.a.createElement(U, {
 					id: `${ge}-${e.id}`,
 					key: e.id,
-					focusedItem: u[h],
-					searchOriginPage: v,
-					fireAdPixelsOfType: O,
-					onCloseDropdown: S,
-					onSetRecentSearch: C,
-					onUpdateSearchQuery: A,
+					focusedItem: p[m],
+					searchOriginPage: E,
+					fireAdPixelsOfType: I,
+					onCloseDropdown: T,
+					onSetRecentSearch: A,
+					onUpdateSearchQuery: P,
 					trendingItem: e
-				}))), Q && !K && s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
+				}))), K && !Y && s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
 					className: Object(c.a)(D.a.loadingItem)
 				}), s.a.createElement("div", {
 					className: Object(c.a)(D.a.loadingItem)
@@ -4719,16 +4720,16 @@
 					className: Object(c.a)(D.a.loadingItem)
 				}), s.a.createElement("div", {
 					className: Object(c.a)(D.a.loadingItem)
-				})), !$ && V && s.a.createElement(s.a.Fragment, null, J && G ? s.a.createElement(Z, ye({}, e, {
-					typeaheadByTypeList: Y
+				})), !X && Q && s.a.createElement(s.a.Fragment, null, te && V ? s.a.createElement(Z, ye({}, e, {
+					typeaheadByTypeList: $
 				})) : s.a.createElement(W, e), s.a.createElement(he, {
 					className: Object(c.a)(D.a.borderTop2Line, D.a.triggerItem),
-					key: g.searchQuery,
-					searchItem: g,
-					position: f.length,
-					searchOriginPage: v,
-					onTriggerSearch: S,
-					isFocused: h === u.length - 1
+					key: v.searchQuery,
+					searchItem: v,
+					position: b.length,
+					searchOriginPage: E,
+					onTriggerSearch: T,
+					isFocused: m === p.length - 1
 				})))
 			}
 		},
@@ -5008,10 +5009,10 @@
 				b = n("./node_modules/reselect/es/index.js");
 			const h = Object(b.a)(e => Object(f.c)(e, {
 				experimentEligibilitySelector: f.a,
-				experimentName: p.Zf
+				experimentName: p.bg
 			}), e => ({
-				promptBeforeClick: e === p.ag.PromptBeforeClick,
-				promptAfterClick: e === p.ag.PromptAfterClick
+				promptBeforeClick: e === p.cg.PromptBeforeClick,
+				promptAfterClick: e === p.cg.PromptAfterClick
 			}));
 			var y = n("./src/reddit/controls/Search/SearchScopePill/index.tsx"),
 				m = n("./src/reddit/controls/Search/SearchBar/index.m.less"),
@@ -5037,42 +5038,43 @@
 				S = e => {
 					let {
 						inputRef: t,
-						isOpen: n,
-						onChange: a,
-						onClearSearchQuery: p,
-						onClickDismissSearchScopePill: f,
-						onFocusSearchBar: b,
-						onFormSubmit: m,
-						onKeyDown: E,
-						searchQuery: S,
-						showSearchScopePill: T,
-						searchScopePill: D,
-						searchOriginPage: w
+						isDropdownHidden: n,
+						isOpen: a,
+						onChange: p,
+						onClearSearchQuery: f,
+						onClickDismissSearchScopePill: b,
+						onFocusSearchBar: m,
+						onFormSubmit: E,
+						onKeyDown: S,
+						searchQuery: T,
+						showSearchScopePill: D,
+						searchScopePill: w,
+						searchOriginPage: j
 					} = e;
-					var j;
+					var C;
 					const {
-						promptBeforeClick: C,
-						promptAfterClick: A
-					} = Object(d.e)(h), [P, R] = Object(c.useState)();
+						promptBeforeClick: A,
+						promptAfterClick: P
+					} = Object(d.e)(h), [R, N] = Object(c.useState)();
 					Object(c.useEffect)(() => {
-						A && "home" === w && R(void 0)
-					}, [A, w]);
-					const N = Object(c.useMemo)(() => C && "home" === w && _.get(), [C, w]),
-						L = "home" === w && (A && P || N),
-						x = T && D ? r.fbt._("Search within {subredditName}", [r.fbt._param("subredditName", D.title)], {
+						P && "home" === j && N(void 0)
+					}, [P, j]);
+					const L = Object(c.useMemo)(() => A && "home" === j && _.get(), [A, j]),
+						x = "home" === j && (P && R || L),
+						k = D && w ? r.fbt._("Search within {subredditName}", [r.fbt._param("subredditName", w.title)], {
 							hk: "2B6J3t"
 						}) : r.fbt._("Search all of Reddit", null, {
 							hk: "1Fi1f5"
 						});
 					return i.a.createElement("div", {
-						className: Object(s.a)(g.a.searchBar, n && g.a.isOpen)
+						className: Object(s.a)(g.a.searchBar, a && !n && g.a.isOpen)
 					}, i.a.createElement("form", {
 						action: "/search/",
 						autoComplete: "off",
 						className: g.a.form,
 						method: "get",
-						onSubmit: m,
-						onFocus: b,
+						onSubmit: E,
+						onFocus: m,
 						role: "search"
 					}, i.a.createElement("label", {
 						className: g.a.inputLabel,
@@ -5085,33 +5087,33 @@
 						className: g.a.icon
 					})), i.a.createElement(l.a, {
 						"aria-live": "assertive"
-					}, x)), T && D && i.a.createElement(y.b, {
+					}, k)), D && w && i.a.createElement(y.b, {
 						onClickDismiss: function() {
 							var e;
-							null === (e = t.current) || void 0 === e || e.focus(), f()
+							null === (e = t.current) || void 0 === e || e.focus(), b()
 						},
-						content: D
+						content: w
 					}), i.a.createElement("input", {
 						className: g.a.input,
-						defaultValue: S,
+						defaultValue: T,
 						id: I,
 						name: "q",
 						onChange: o()((function() {
 							var e;
-							a((null === (e = null == t ? void 0 : t.current) || void 0 === e ? void 0 : e.value) || "")
+							p((null === (e = null == t ? void 0 : t.current) || void 0 === e ? void 0 : e.value) || "")
 						}), 200),
-						onKeyDown: E,
-						onClick: A ? () => {
-							"home" === w && R(_.get())
+						onKeyDown: S,
+						onClick: P ? () => {
+							"home" === j && N(_.get())
 						} : void 0,
-						placeholder: L ? r.fbt._("{query}", [r.fbt._param("query", L)], {
+						placeholder: x ? r.fbt._("{query}", [r.fbt._param("query", x)], {
 							hk: "occSN"
 						}) : r.fbt._("{Text}", [r.fbt._param("Text", v)], {
 							hk: "DG9dX"
 						}),
 						ref: t,
 						type: "search"
-					})), (null === (j = null == t ? void 0 : t.current) || void 0 === j ? void 0 : j.value) ? i.a.createElement("button", {
+					})), (null === (C = null == t ? void 0 : t.current) || void 0 === C ? void 0 : C.value) ? i.a.createElement("button", {
 						"aria-label": r.fbt._("Remove search bar text", null, {
 							hk: "4twCsS"
 						}),
@@ -5120,7 +5122,7 @@
 						"data-testid": O,
 						onClick: function() {
 							var e;
-							null === (e = t.current) || void 0 === e || e.focus(), p()
+							null === (e = t.current) || void 0 === e || e.focus(), f()
 						}
 					}, i.a.createElement(u.a, {
 						name: "clear"
@@ -25387,9 +25389,9 @@
 				experimentEligibilitySelector: s.a,
 				experimentName: r.pb
 			}), e => ({
-				bucketed: e === r.Oc.ExpandedSearch || e === r.Oc.CollapsedSearch,
-				collapsed: e === r.Oc.CollapsedSearch,
-				expanded: e === r.Oc.ExpandedSearch
+				bucketed: e === r.Pc.ExpandedSearch || e === r.Pc.CollapsedSearch,
+				collapsed: e === r.Pc.CollapsedSearch,
+				expanded: e === r.Pc.ExpandedSearch
 			}))
 		},
 		"./src/reddit/selectors/experiments/hotPotato.ts": function(e, t, n) {
@@ -25414,7 +25416,7 @@
 					if (!u(e)) return;
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: l,
-						experimentName: a.Yd,
+						experimentName: a.Zd,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -25437,9 +25439,9 @@
 				},
 				b = e => !!p(e) && Object(o.c)(e, {
 					experimentEligibilitySelector: u,
-					experimentName: a.Zd,
+					experimentName: a.ae,
 					expEventOverride: !1
-				}) !== a.ae.Readonly
+				}) !== a.ce.Readonly
 		},
 		"./src/reddit/selectors/removedPosts.ts": function(e, t, n) {
 			"use strict";
@@ -25583,4 +25585,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.6cb144e8f9ea55748c42.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.eef1beb32d42d6c44d92.js.map

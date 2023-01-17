@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.261007219d53e941300b.js
-// Retrieved at 1/12/2023, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.0d2c3853d217926134b8.js
+// Retrieved at 1/17/2023, 4:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -6321,12 +6321,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case h.Cf.SmIcon:
+						case h.Ef.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: i
 							});
-						case h.Cf.SmIconHc:
+						case h.Ef.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -8032,16 +8032,16 @@
 			const o = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: n.ec
+						experimentName: n.fc
 					});
-					return !(!t || Object(n.cg)(t))
+					return !(!t || Object(n.eg)(t))
 				},
 				i = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: n.Sb
+						experimentName: n.Tb
 					});
-					return !(!t || Object(n.cg)(t))
+					return !(!t || Object(n.eg)(t))
 				}
 		},
 		"./src/reddit/selectors/experiments/commentSearchPdp.ts": function(e, t, s) {
@@ -8056,9 +8056,9 @@
 				experimentEligibilitySelector: r.a,
 				experimentName: n.pb
 			}), e => ({
-				bucketed: e === n.Oc.ExpandedSearch || e === n.Oc.CollapsedSearch,
-				collapsed: e === n.Oc.CollapsedSearch,
-				expanded: e === n.Oc.ExpandedSearch
+				bucketed: e === n.Pc.ExpandedSearch || e === n.Pc.CollapsedSearch,
+				collapsed: e === n.Pc.CollapsedSearch,
+				expanded: e === n.Pc.ExpandedSearch
 			}))
 		},
 		"./src/reddit/selectors/experiments/intuitivePostTypes.ts": function(e, t, s) {
@@ -8081,8 +8081,8 @@
 				return !(!d || c) && (e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: n.Hb
-					}) === n.Fd
+						experimentName: n.Ib
+					}) === n.Gd
 				})(e)
 			}
 		},
@@ -8101,15 +8101,15 @@
 			const d = Object(i.a)(a.S, e => !e),
 				c = Object(i.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: d,
-					experimentName: n.nf
-				}), e => e === n.Fd),
+					experimentName: n.pf
+				}), e => e === n.Gd),
 				l = Object(i.a)(c, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? t : o.a.Off),
 				u = Object(i.a)(l, e => e === o.a.Treatment),
 				m = (e, t) => {
 					const s = l(t());
 					d(t()) && s !== o.a.Off && e.block(e => {
 						if ((e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname))
-							if (s === o.a.Control) Object(r.d)(t(), n.of, n.N.Control1);
+							if (s === o.a.Control) Object(r.d)(t(), n.qf, n.N.Control1);
 							else if (s === o.a.Treatment) return window.location.href = e.pathname, !1
 					})
 				}
@@ -8127,7 +8127,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(r.cg)(t)
+					return Boolean(t) && !Object(r.eg)(t)
 				},
 				d = Object(n.a)(a, o.d, (e, t) => e && !t)
 		},
@@ -8217,12 +8217,12 @@
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.wf
+						experimentName: n.yf
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.Cf.SmIcon || t === n.Cf.SmIconHc
+					return t === n.Ef.SmIcon || t === n.Ef.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -8260,4 +8260,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.261007219d53e941300b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.0d2c3853d217926134b8.js.map
