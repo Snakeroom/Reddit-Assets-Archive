@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.f72e7fe7ebd80e897079.js
-// Retrieved at 1/12/2023, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.334138338c7b1c06b8e8.js
+// Retrieved at 1/17/2023, 1:30:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1508,13 +1508,13 @@
 						"translations/bn_BD-json": "eb565a989bd7115955b9",
 						"translations/de_DE-json": "703320bd2885d908c8bb",
 						"translations/es_ES-json": "5fee16c53254480efe41",
-						"translations/es_MX-json": "b4f03240e6466153f058",
+						"translations/es_MX-json": "4e29b200a85b485e8bfc",
 						"translations/fr_FR-json": "3b738ddc68aa43dc10f4",
 						"translations/hi_IN-json": "58343f8d513cb95003a5",
-						"translations/it_IT-json": "2efaa360963d663d3272",
+						"translations/it_IT-json": "06bf4db6de9609743fa9",
 						"translations/pseudo-json": "041ffc59d1ebed7c4ed6",
-						"translations/pt_BR-json": "e5c2a115bde39cbd9854",
-						"translations/pt_PT-json": "cf503b0a73bbe0cdf642",
+						"translations/pt_BR-json": "b265019767cb4a647f0c",
+						"translations/pt_PT-json": "e9a72135e0bd983da3c0",
 						"vendors~AdminPanel": "eae9f345b12b82989d37",
 						AdminPanel: "d93f3298439805d8d7ec",
 						"vendors~Avatar~ChatPost~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~RealtimeGQLSubscr~bfab320d": "a668d51b1ce27b994b5f",
@@ -1523,7 +1523,7 @@
 						GovernanceTransferPointsModal: "39131fb977b502c15017",
 						"reddit-pages-meta-ArbitrumPointsMigrationPage": "4a10c027da751c7cc289",
 						"reddit-pages-meta-MainnetPointsMigrationPage": "9787cfbb4623b27a955a",
-						"vendors~Avatar~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~SnoovatarModal": "8d6fc2bbc0c97511f41c",
+						"vendors~Avatar~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~SnoovatarModal": "809382d65a92cdef1ff8",
 						Avatar: "622a0fd843d5f031b027",
 						MarketplaceClaimModal: "6b3b34868adbb41f6612",
 						SnoovatarModal: "cd748fb1f8f4463aeff0",
@@ -1787,4 +1787,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.f72e7fe7ebd80e897079.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.334138338c7b1c06b8e8.js.map
