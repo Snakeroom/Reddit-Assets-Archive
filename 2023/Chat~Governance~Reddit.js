@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d579bc3a36431be0e80f.js
-// Retrieved at 1/17/2023, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c68933773546d68468e7.js
+// Retrieved at 1/17/2023, 3:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3617,11 +3617,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("181873"),
+				buildNumber: Object(r.c)("181883"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1673979986"),
+				buildTimestamp: Object(r.b)("1673983963"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6351,14 +6351,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c42825c15094863628573edf8a3333d69ed8cd1a9-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c50091994d2031c247a49a2df4c78bec1b7c45a03-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "42825c15094863628573edf8a3333d69ed8cd1a9-production",
+						release: "50091994d2031c247a49a2df4c78bec1b7c45a03-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6894,7 +6894,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "42825c15094863628573edf8a3333d69ed8cd1a9-production",
+							releaseClient: "50091994d2031c247a49a2df4c78bec1b7c45a03-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -45084,7 +45084,7 @@
 					e.Gif = "GIF", e.Jpeg = "JPEG", e.Png = "PNG", e.Webp = "WEBP", e.Mp4 = "MP4", e.Quicktime = "QUICKTIME"
 				}(Ft || (Ft = {})),
 				function(e) {
-					e.Awards = "AWARDS", e.Comments = "COMMENTS", e.CrowdControl = "CROWD_CONTROL", e.Members = "MEMBERS", e.ModTeam = "MOD_TEAM", e.Posts = "POSTS", e.PostsAndComments = "POSTS_AND_COMMENTS", e.Rules = "RULES", e.Settings = "SETTINGS", e.Wiki = "WIKI"
+					e.Apps = "APPS", e.Awards = "AWARDS", e.Comments = "COMMENTS", e.CrowdControl = "CROWD_CONTROL", e.Members = "MEMBERS", e.ModTeam = "MOD_TEAM", e.Posts = "POSTS", e.PostsAndComments = "POSTS_AND_COMMENTS", e.Rules = "RULES", e.Settings = "SETTINGS", e.Wiki = "WIKI"
 				}(Ct || (Ct = {})),
 				function(e) {
 					e.AcceptModeratorInvite = "ACCEPT_MODERATOR_INVITE", e.AddCommunityTopics = "ADD_COMMUNITY_TOPICS", e.AddContributor = "ADD_CONTRIBUTOR", e.AddModerator = "ADD_MODERATOR", e.AddNote = "ADD_NOTE", e.AddRemovalReason = "ADD_REMOVAL_REASON", e.AdjustPostCrowdControlLevel = "ADJUST_POST_CROWD_CONTROL_LEVEL", e.EnablePostCrowdControlFilter = "ENABLE_POST_CROWD_CONTROL_FILTER", e.DisablePostCrowdControlFilter = "DISABLE_POST_CROWD_CONTROL_FILTER", e.ApproveComment = "APPROVE_COMMENT", e.ApproveLink = "APPROVE_LINK", e.BanUser = "BAN_USER", e.CreateAward = "CREATE_AWARD", e.CreateScheduledPost = "CREATE_SCHEDULED_POST", e.CreateRemovalReason = "CREATE_REMOVAL_REASON", e.Collections = "COLLECTIONS", e.CommunityStyling = "COMMUNITY_STYLING", e.CommunityWidgets = "COMMUNITY_WIDGETS", e.CreateRule = "CREATE_RULE", e.DeleteAward = "DELETE_AWARD", e.DeleteRule = "DELETE_RULE", e.DeleteScheduledPost = "DELETE_SCHEDULED_POST", e.DeleteOverriddenClassification = "DELETE_OVERRIDDEN_CLASSIFICATION", e.DeleteNote = "DELETE_NOTE", e.DeleteRemovalReason = "DELETE_REMOVAL_REASON", e.DisableAward = "DISABLE_AWARD", e.Distinguish = "DISTINGUISH", e.EditFlair = "EDIT_FLAIR", e.EditPostRequirements = "EDIT_POST_REQUIREMENTS", e.EditRule = "EDIT_RULE", e.EditScheduledPost = "EDIT_SCHEDULED_POST", e.EditSettings = "EDIT_SETTINGS", e.EnableAward = "ENABLE_AWARD", e.Events = "EVENTS", e.HiddenAward = "HIDDEN_AWARD", e.IgnoreReports = "IGNORE_REPORTS", e.InviteModerator = "INVITE_MODERATOR", e.InviteSubscriber = "INVITE_SUBSCRIBER", e.Lock = "LOCK", e.MarkNsfw = "MARK_NSFW", e.MarkOriginalContent = "MARK_ORIGINAL_CONTENT", e.ModAwardGiven = "MOD_AWARD_GIVEN", e.ModmailEnrollment = "MODMAIL_ENROLLMENT", e.MuteUser = "MUTE_USER", e.OverrideClassification = "OVERRIDE_CLASSIFICATION", e.RemoveComment = "REMOVE_COMMENT", e.RemoveCommunityTopics = "REMOVE_COMMUNITY_TOPICS", e.RemoveContributor = "REMOVE_CONTRIBUTOR", e.RemoveLink = "REMOVE_LINK", e.RemoveModerator = "REMOVE_MODERATOR", e.RemoveWikiContributor = "REMOVE_WIKI_CONTRIBUTOR", e.ReorderModerators = "REORDER_MODERATORS", e.ReorderRules = "REORDER_RULES", e.SetContestMode = "SET_CONTEST_MODE", e.SetPermissions = "SET_PERMISSIONS", e.SetSuggestedsort = "SET_SUGGESTEDSORT", e.ShowComment = "SHOW_COMMENT", e.SnoozeReports = "SNOOZE_REPORTS", e.SpamComment = "SPAM_COMMENT", e.SpamLink = "SPAM_LINK", e.Spoiler = "SPOILER", e.Sticky = "STICKY", e.SubmitContentRatingSurvey = "SUBMIT_CONTENT_RATING_SURVEY", e.SubmitScheduledPost = "SUBMIT_SCHEDULED_POST", e.UnbanUser = "UNBAN_USER", e.UnignoreReports = "UNIGNORE_REPORTS", e.UninviteModerator = "UNINVITE_MODERATOR", e.Unlock = "UNLOCK", e.UnmuteUser = "UNMUTE_USER", e.UnsetContestMode = "UNSET_CONTEST_MODE", e.UnsnoozeReports = "UNSNOOZE_REPORTS", e.Unspoiler = "UNSPOILER", e.Unsticky = "UNSTICKY", e.UpdateRemovalReason = "UPDATE_REMOVAL_REASON", e.WikiBanned = "WIKI_BANNED", e.WikiContributor = "WIKI_CONTRIBUTOR", e.WikiPageListed = "WIKI_PAGE_LISTED", e.WikiPermLevel = "WIKI_PERM_LEVEL", e.WikiRevise = "WIKI_REVISE", e.WikiUnbanned = "WIKI_UNBANNED"
@@ -50074,4 +50074,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d579bc3a36431be0e80f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c68933773546d68468e7.js.map

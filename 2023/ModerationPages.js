@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.d31b2d039451784a1c5d.js
-// Retrieved at 1/12/2023, 7:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.4ed1daf3ab5124ed53a4.js
+// Retrieved at 1/17/2023, 3:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -49847,6 +49847,9 @@
 				e.DATE = "date", e.ACTION = "action", e.MODERATOR = "moderator"
 			}(a || (a = {}));
 			const d = {
+					[o.x.Apps]: () => s.fbt._("Apps", null, {
+						hk: "Pj7M4"
+					}),
 					[o.x.Awards]: () => s.fbt._("Awards", null, {
 						hk: "MZQfH"
 					}),
@@ -49879,6 +49882,7 @@
 					})
 				},
 				c = {
+					[o.x.Apps]: r.a.bot,
 					[o.x.Awards]: r.a.award,
 					[o.x.Comments]: r.a.comment,
 					[o.x.CrowdControl]: r.a.crowd_control,
@@ -49891,6 +49895,7 @@
 					[o.x.Wiki]: r.a.wiki
 				},
 				l = {
+					[o.x.Apps]: "#C5C5C5",
 					[o.x.Awards]: "#FFD5C6",
 					[o.x.Comments]: "#FFCCD2",
 					[o.x.CrowdControl]: "#FFC5EC",
@@ -49903,6 +49908,7 @@
 					[o.x.Wiki]: "#FFE88F"
 				},
 				u = {
+					[o.x.Apps]: "#A8A8A8",
 					[o.x.Awards]: "#FFBEA6",
 					[o.x.Comments]: "#FFADB8",
 					[o.x.CrowdControl]: "#FFA5E3",
@@ -49992,6 +49998,21 @@
 					}),
 					DELETE_NOTE: () => s.fbt._("Delete note", null, {
 						hk: "1P0prb"
+					}),
+					DEV_PLATFORM_APP_CHANGED: () => s.fbt._("App changed", null, {
+						hk: "4vxPNi"
+					}),
+					DEV_PLATFORM_APP_DISABLED: () => s.fbt._("App disabled", null, {
+						hk: "EUIP4"
+					}),
+					DEV_PLATFORM_APP_ENABLED: () => s.fbt._("App enabled", null, {
+						hk: "3ZN1Is"
+					}),
+					DEV_PLATFORM_APP_INSTALLED: () => s.fbt._("App installed", null, {
+						hk: "FcJY5"
+					}),
+					DEV_PLATFORM_APP_UNINSTALLED: () => s.fbt._("App uninstalled", null, {
+						hk: "4lcMq"
 					}),
 					DISABLE_AWARD: () => s.fbt._("Disable award", null, {
 						hk: "2yFBt7"
@@ -50382,7 +50403,7 @@
 				};
 			var b, f;
 			! function(e) {
-				e.AWARD = "Award", e.COMMENT = "Comment", e.FLAIR = "Flair", e.MULTIPLE = "Multiple", e.POST = "Post", e.REDDITOR = "Redditor", e.SETTINGS = "Settings", e.WIKI = "Wiki", e.COLLECTION = "Collection", e.EVENT = "Event", e.NOTE = "Note"
+				e.APPS = "Apps", e.AWARD = "Award", e.COMMENT = "Comment", e.FLAIR = "Flair", e.MULTIPLE = "Multiple", e.POST = "Post", e.REDDITOR = "Redditor", e.SETTINGS = "Settings", e.WIKI = "Wiki", e.COLLECTION = "Collection", e.EVENT = "Event", e.NOTE = "Note"
 			}(b || (b = {})),
 			function(e) {
 				e.NONE = "none", e.POSITIVE = "positive", e.NEGATIVE = "negative"
@@ -75128,4 +75149,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.d31b2d039451784a1c5d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.4ed1daf3ab5124ed53a4.js.map
