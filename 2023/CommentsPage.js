@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.543231c3439fefd0c2da.js
-// Retrieved at 1/18/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.07b96c5e8cd4c6fdac46.js
+// Retrieved at 1/18/2023, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "CollectionCommentsPage~SearchResults", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -39141,7 +39141,7 @@
 								path: c
 							} = e.match, {
 								sort: d = (r.sort ? r.sort : o.bb.HOT)
-							} = i, u = a.t, m = c === f.b;
+							} = i, u = a.t, m = c === f.a;
 							Object(S.a)(T({
 								key: r.listingKey,
 								sort: d,
@@ -48750,4 +48750,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.543231c3439fefd0c2da.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.07b96c5e8cd4c6fdac46.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.2d8ed74f67e5828021ec.js
-// Retrieved at 1/18/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.d9a7cac307e69f5dbc0e.js
+// Retrieved at 1/18/2023, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"], {
 		"./src/lib/name/index.ts": function(e, t, r) {
@@ -2054,35 +2054,35 @@
 		"./src/reddit/actions/pages/subreddit.ts": function(e, t, r) {
 			"use strict";
 			r.r(t), r.d(t, "isGQLSubredditPageExtra", (function() {
-				return _t
-			})), r.d(t, "handleSubredditPageApiError", (function() {
-				return It
-			})), r.d(t, "SUBREDDIT_PENDING", (function() {
 				return vt
-			})), r.d(t, "SUBREDDIT_LOADED", (function() {
+			})), r.d(t, "handleSubredditPageApiError", (function() {
 				return ht
-			})), r.d(t, "SUBREDDIT_FAILED", (function() {
+			})), r.d(t, "SUBREDDIT_PENDING", (function() {
 				return yt
-			})), r.d(t, "subredditPending", (function() {
+			})), r.d(t, "SUBREDDIT_LOADED", (function() {
 				return Tt
-			})), r.d(t, "subredditLoaded", (function() {
+			})), r.d(t, "SUBREDDIT_FAILED", (function() {
 				return St
-			})), r.d(t, "subredditFailed", (function() {
+			})), r.d(t, "subredditPending", (function() {
 				return Et
-			})), r.d(t, "addAdditionalInformationForAGatewayResponse", (function() {
+			})), r.d(t, "subredditLoaded", (function() {
 				return Ct
-			})), r.d(t, "subredditDataRequested", (function() {
+			})), r.d(t, "subredditFailed", (function() {
+				return xt
+			})), r.d(t, "addAdditionalInformationForAGatewayResponse", (function() {
 				return At
+			})), r.d(t, "subredditDataRequested", (function() {
+				return Lt
 			})), r.d(t, "subredditDataFirstChunkRequested", (function() {
-				return Nt
-			})), r.d(t, "makeSubredditPageKey", (function() {
 				return Rt
-			})), r.d(t, "subredditRequested", (function() {
-				return Pt
-			})), r.d(t, "SUBREDDIT_INVALIDATE_LISTING", (function() {
+			})), r.d(t, "makeSubredditPageKey", (function() {
 				return wt
-			})), r.d(t, "subredditInvalidateListing", (function() {
+			})), r.d(t, "subredditRequested", (function() {
 				return kt
+			})), r.d(t, "SUBREDDIT_INVALIDATE_LISTING", (function() {
+				return Dt
+			})), r.d(t, "subredditInvalidateListing", (function() {
+				return Ut
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
@@ -2247,21 +2247,22 @@
 				We = r("./src/reddit/reducers/features/modUserNotes/index.ts"),
 				Ye = r("./node_modules/uuid/dist/esm-browser/v4.js"),
 				Xe = r("./src/reddit/actions/communityChat/index.ts"),
-				Ze = r("./src/reddit/endpoints/devPlatform/index.ts"),
-				et = r("./src/reddit/helpers/addSupplementaryTextInfoToAdPosts.ts"),
-				tt = r("./node_modules/@sentry/minimal/esm/index.js"),
-				rt = r("./src/lib/env/index.ts"),
-				nt = r("./node_modules/lodash/cloneDeep.js"),
-				st = r.n(nt);
-			const ot = new Set(["authorFlair.cssClass", "posts.adSupplementaryText", "posts.allAwardings", "posts.approvedAtUTC", "posts.approvedBy", "posts.attributionInfo", "posts.audioRoom", "posts.bannedAtUTC", "posts.bannedBy", "posts.collapsedBecauseCrowdControl", "posts.ignoreReports", "posts.isApproved", "posts.isAuthorPremium", "posts.isEligibleForLinkedPosts", "posts.isEligibleForQASchema", "posts.isFollowed", "posts.isPinned", "posts.isReactAllowed", "posts.isRemoved", "posts.isSpam", "posts.lastAuthorModNote", "posts.modQueueTriggers", "posts.modReportsDismissed", "posts.pollData", "posts.predictionTournament", "posts.previewComments", "posts.modReports", "posts.numReports", "posts.reactedFrom", "posts.removedBy", "posts.removedByCategory", "posts.topAwardedType", "posts.userReports", "posts.userReportsDismissed", "posts.modReasonBy", "subreddits.answerableQuestions", "subreddits.freeFormReports", "subreddits.isSubscribed", "authorFlair.richtext", "authorFlair.text", "posts.collectionIds", "posts.liveCommentsWebsocket", "posts.thumbnail.url", "posts.discussionType", "posts.eventsOnRender", "posts.flair", "posts.gildings", "posts.media", "posts.goldCount", "posts.sendReplies", "posts.score", "posts.sendReplies", "posts.source.url", "posts.source.outboundUrl", "posts.source.outboundUrlCreated", "posts.source.outboundUrlExpiration", "profiles.acceptFollowers", "profiles.communityIcon", "profiles.icon.url", "posts.upvoteRatio", "subreddits.acceptFollowers", "subreddits.allowChatPostCreation", "subreddits.communityIcon", "subreddits.icon.url", "subreddits.isChatPostFeatureEnabled", "subreddits.primaryColor", "subreddits.subscribers"]),
-				it = new Set(["posts.upvoteRatio", "posts.score", "posts.sendReplies", "posts.media", "posts.eventsOnRender", "posts.liveCommentsWebsocket", "posts.flair", "posts.source.outboundUrl", "posts.source.outboundUrlCreated", "posts.source.outboundUrlExpiration", "posts.numComments", "posts.thumbnail.url", "posts.contentCategories", "subreddits.acceptFollowers", "subreddits.communityIcon", "subreddits.primaryColor", "subreddits.isChatPostFeatureEnabled", "subreddits.allowChatPostCreation", "subreddits.icon.url", "subreddits.subscribers", "token", "recentPostIds", "trendingSubredditIds", "posts.gildings", "posts.goldCount", "listingSort", "posts.discussionType", "posts.topAwardedType", "posts.allAwardings", "posts.audioRoom", "posts.approvedAtUTC", "posts.approvedBy", "posts.bannedAtUTC", "posts.bannedBy", "posts.ignoreReports", "posts.isApproved", "posts.isAuthorPremium", "posts.isEligibleForQASchema", "posts.isFollowed", "posts.isPinned", "posts.isRemoved", "posts.isSpam", "posts.isReactAllowed", "posts.reactedFrom", "posts.attributionInfo", "posts.modReports", "posts.numReports", "posts.pollData", "posts.predictionTournament", "posts.previewComments", "posts.removedBy", "posts.removedByCategory", "posts.userReports", "subreddits.answerableQuestions", "subreddits.freeFormReports", "subreddits.isSubscribed", "subreddits.devPlatformMetadata"]);
-			var dt = r("./node_modules/deep-diff/index.js");
-			const ct = (e, t) => {
+				Ze = r("./src/reddit/components/CommunityChat/utils.ts"),
+				et = r("./src/reddit/endpoints/devPlatform/index.ts"),
+				tt = r("./src/reddit/helpers/addSupplementaryTextInfoToAdPosts.ts"),
+				rt = r("./node_modules/@sentry/minimal/esm/index.js"),
+				nt = r("./src/lib/env/index.ts"),
+				st = r("./node_modules/lodash/cloneDeep.js"),
+				ot = r.n(st);
+			const it = new Set(["authorFlair.cssClass", "posts.adSupplementaryText", "posts.allAwardings", "posts.approvedAtUTC", "posts.approvedBy", "posts.attributionInfo", "posts.audioRoom", "posts.bannedAtUTC", "posts.bannedBy", "posts.collapsedBecauseCrowdControl", "posts.ignoreReports", "posts.isApproved", "posts.isAuthorPremium", "posts.isEligibleForLinkedPosts", "posts.isEligibleForQASchema", "posts.isFollowed", "posts.isPinned", "posts.isReactAllowed", "posts.isRemoved", "posts.isSpam", "posts.lastAuthorModNote", "posts.modQueueTriggers", "posts.modReportsDismissed", "posts.pollData", "posts.predictionTournament", "posts.previewComments", "posts.modReports", "posts.numReports", "posts.reactedFrom", "posts.removedBy", "posts.removedByCategory", "posts.topAwardedType", "posts.userReports", "posts.userReportsDismissed", "posts.modReasonBy", "subreddits.answerableQuestions", "subreddits.freeFormReports", "subreddits.isSubscribed", "authorFlair.richtext", "authorFlair.text", "posts.collectionIds", "posts.liveCommentsWebsocket", "posts.thumbnail.url", "posts.discussionType", "posts.eventsOnRender", "posts.flair", "posts.gildings", "posts.media", "posts.goldCount", "posts.sendReplies", "posts.score", "posts.sendReplies", "posts.source.url", "posts.source.outboundUrl", "posts.source.outboundUrlCreated", "posts.source.outboundUrlExpiration", "profiles.acceptFollowers", "profiles.communityIcon", "profiles.icon.url", "posts.upvoteRatio", "subreddits.acceptFollowers", "subreddits.allowChatPostCreation", "subreddits.communityIcon", "subreddits.icon.url", "subreddits.isChatPostFeatureEnabled", "subreddits.primaryColor", "subreddits.subscribers"]),
+				dt = new Set(["posts.upvoteRatio", "posts.score", "posts.sendReplies", "posts.media", "posts.eventsOnRender", "posts.liveCommentsWebsocket", "posts.flair", "posts.source.outboundUrl", "posts.source.outboundUrlCreated", "posts.source.outboundUrlExpiration", "posts.numComments", "posts.thumbnail.url", "posts.contentCategories", "subreddits.acceptFollowers", "subreddits.communityIcon", "subreddits.primaryColor", "subreddits.isChatPostFeatureEnabled", "subreddits.allowChatPostCreation", "subreddits.icon.url", "subreddits.subscribers", "token", "recentPostIds", "trendingSubredditIds", "posts.gildings", "posts.goldCount", "listingSort", "posts.discussionType", "posts.topAwardedType", "posts.allAwardings", "posts.audioRoom", "posts.approvedAtUTC", "posts.approvedBy", "posts.bannedAtUTC", "posts.bannedBy", "posts.ignoreReports", "posts.isApproved", "posts.isAuthorPremium", "posts.isEligibleForQASchema", "posts.isFollowed", "posts.isPinned", "posts.isRemoved", "posts.isSpam", "posts.isReactAllowed", "posts.reactedFrom", "posts.attributionInfo", "posts.modReports", "posts.numReports", "posts.pollData", "posts.predictionTournament", "posts.previewComments", "posts.removedBy", "posts.removedByCategory", "posts.userReports", "subreddits.answerableQuestions", "subreddits.freeFormReports", "subreddits.isSubscribed", "subreddits.devPlatformMetadata"]);
+			var ct = r("./node_modules/deep-diff/index.js");
+			const at = (e, t) => {
 					e.postIds = t, e.posts = t.reduce((t, r) => (e.posts[r] && (t[r] = e.posts[r]), t), {}), e.postInstances = t.reduce((t, r) => (e.postInstances[r] && (t[r] = e.postInstances[r]), t), {});
 					const r = Object.keys(e.posts).map(t => e.posts[t].belongsTo.id);
 					e.subreddits = r.reduce((t, r) => (e.subreddits[r] && (t[r] = e.subreddits[r]), t), {}), e.postFlair = r.reduce((t, r) => (e.postFlair[r] && (t[r] = e.postFlair[r]), t), {})
 				},
-				at = (e, t, r) => {
+				ut = (e, t, r) => {
 					const n = {},
 						s = {};
 					Object.keys(e).forEach(o => {
@@ -2271,7 +2272,7 @@
 							n[o] = {}, s[o] = 0, Object.keys(i).forEach(e => {
 								const t = i[e],
 									c = d[e],
-									a = Object(dt.diff)(t, c, {
+									a = Object(ct.diff)(t, c, {
 										prefilter: (e, t) => (e => {
 											let {
 												ignorePaths: t,
@@ -2303,7 +2304,7 @@
 						totalIssues: o
 					}
 				},
-				ut = (e, t) => {
+				lt = (e, t) => {
 					const r = ((e, t) => {
 							const r = e.postIds;
 							return t.postIds.reduce((e, t, n) => {
@@ -2318,13 +2319,13 @@
 							})
 						})(e, t),
 						n = Object.keys(r.found).sort();
-					return ct(e, n), ct(t, n), {
+					return at(e, n), at(t, n), {
 						gatewayResponse: e,
 						normalizedGqlResponse: t,
 						positionDiffs: r
 					}
 				},
-				lt = e => {
+				bt = e => {
 					let {
 						gatewayResponse: t,
 						normalizedGqlResponse: r,
@@ -2334,24 +2335,25 @@
 					if (s) {
 						const e = s(t, r);
 						return {
-							...at(e.gatewayResponse, e.normalizedGqlResponse, n),
+							...ut(e.gatewayResponse, e.normalizedGqlResponse, n),
 							positionDiffs: e.positionDiffs
 						}
 					}
-					return at(t, r, n)
+					return ut(t, r, n)
 				};
-			var bt = r("./src/reddit/helpers/locales.ts"),
-				mt = r("./src/reddit/selectors/experiments/devPlatform.ts"),
-				pt = r("./src/reddit/selectors/experiments/popularGqlMigration.ts"),
-				ft = r("./node_modules/reselect/es/index.js"),
-				Ot = r("./src/reddit/helpers/chooseVariant/index.ts");
-			const gt = Object(ft.a)(e => Object(Ot.c)(e, {
-				experimentEligibilitySelector: Ot.a,
+			var mt = r("./src/reddit/helpers/locales.ts"),
+				pt = r("./src/reddit/selectors/experiments/devPlatform.ts"),
+				ft = r("./src/reddit/selectors/experiments/popularGqlMigration.ts"),
+				Ot = r("./node_modules/reselect/es/index.js"),
+				gt = r("./src/reddit/helpers/chooseVariant/index.ts");
+			const jt = Object(Ot.a)(e => Object(gt.c)(e, {
+				experimentEligibilitySelector: gt.a,
 				experimentName: Oe.kc
 			}), e => e === Oe.Bd);
-			var jt = r("./src/reddit/selectors/meta.ts");
+			var _t = r("./src/reddit/selectors/features/communityChat/index.ts"),
+				It = r("./src/reddit/selectors/meta.ts");
 
-			function _t(e) {
+			function vt(e) {
 				return Boolean(e && e.subredditInfoByName)
 			}
 			Object($e.a)({
@@ -2359,7 +2361,7 @@
 					modUserNotes: We.a
 				}
 			});
-			const It = (e, t) => async r => {
+			const ht = (e, t) => async r => {
 				if (!e.ok && e.body && (e => !!e.reason)(e.body)) {
 					const {
 						body: {
@@ -2428,7 +2430,7 @@
 						}))
 					}
 				}
-			}, vt = "PAGE__SUBREDDIT_PENDING", ht = "PAGE__SUBREDDIT_LOADED", yt = "PAGE__SUBREDDIT_FAILED", Tt = Object(p.a)(vt), St = Object(p.a)(ht), Et = Object(p.a)(yt), Ct = async e => {
+			}, yt = "PAGE__SUBREDDIT_PENDING", Tt = "PAGE__SUBREDDIT_LOADED", St = "PAGE__SUBREDDIT_FAILED", Et = Object(p.a)(yt), Ct = Object(p.a)(Tt), xt = Object(p.a)(St), At = async e => {
 				let {
 					subredditName: t,
 					subredditsResponse: r,
@@ -2443,20 +2445,20 @@
 						...r
 					},
 					a = o ? null : Object(Pe.a)(n.gqlContext, c.posts),
-					u = Object(et.a)(n.apiContext(), c.posts, s),
-					l = d ? Object(Ze.a)(n.gqlContext(), {
+					u = Object(tt.a)(n.apiContext(), c.posts, s),
+					l = d ? Object(et.a)(n.gqlContext(), {
 						subredditName: t
 					}) : null;
 				let b, m, p;
 				if ([b, m, p] = await Promise.all([a, u, l]), b && (c.posts = b), m && (c.posts = m), p) {
-					const e = xt(c.subreddits, t);
+					const e = Nt(c.subreddits, t);
 					e && c.subreddits[e] && (c.subreddits[e].devPlatformMetadata = p)
 				}
 				return c
-			}, xt = (e, t) => {
+			}, Nt = (e, t) => {
 				var r;
 				return null === (r = i()(e, e => (null == e ? void 0 : e.name.toLowerCase()) === t.toLowerCase())) || void 0 === r ? void 0 : r.id
-			}, At = (e, t, r, o) => async (i, d, c) => {
+			}, Lt = (e, t, r, o) => async (i, d, c) => {
 				var a, l, b, p, f, O, g, j, y, T, R, w, D, U, B, H, V, $, Y, X, te, ce, ae, Se, Ee, Ce, xe, Pe;
 				const De = d(),
 					Ue = Object(ee.R)(De) || Object(ee.S)(De);
@@ -2484,18 +2486,18 @@
 						...r,
 						recentPostIds: De.posts.recent
 					} : r;
-				We.layout = ue.e[Object(le.U)(De, {})], $e && (We.forceGeopopular = !0), i(Tt({
+				We.layout = ue.e[Object(le.U)(De, {})], $e && (We.forceGeopopular = !0), i(Et({
 					key: e
 				}));
 				const Ze = !Je && Object(Z.l)(De) && Object(qe.b)(De),
-					et = $e && (Object(pt.a)(De) || Object(pt.b)(De)),
-					nt = $e && gt(De);
-				let dt, ct;
-				if ((et || nt) && (dt = Object(_.i)(() => Object(Ve.a)(c.gqlContext(), Object(pe.c)(De, t, We, !0)), {
+					et = $e && (Object(ft.a)(De) || Object(ft.b)(De)),
+					tt = $e && jt(De);
+				let st, ct;
+				if ((et || tt) && (st = Object(_.i)(() => Object(Ve.a)(c.gqlContext(), Object(pe.c)(De, t, We, !0)), {
 						name: Ze ? "fetchSubredditPageFromGql" : "fetchSubredditPage",
 						page: Fe,
 						isLoggedIn: Ue
-					})), et) ct = dt;
+					})), et) ct = st;
 				else if (r.sort === u.bb.AWARDED && $e) ct = Object(be.a)(c.gqlContext(), {
 					top: 0,
 					includeListingMetadata: !0
@@ -2517,7 +2519,7 @@
 				const at = Object(q.W)(d(), {
 						subredditId: Object(q.I)(d(), t)
 					}).length > 0,
-					ft = Object(_.i)(() => (async function(e, t) {
+					ut = Object(_.i)(() => (async function(e, t) {
 						return Object(G.a)(e, {
 							...ye,
 							variables: t
@@ -2587,24 +2589,24 @@
 						isLoggedIn: Ue
 					}),
 					Ot = Object(Ye.a)();
-				let vt, ht;
-				Ze ? vt = await ct : [vt, ht] = await Promise.all([ct, ft]);
-				const yt = ht && Object(s.c)(ht) ? ht.body.data : null;
-				if (nt) {
-					const e = await dt;
+				let gt, _t;
+				Ze ? gt = await ct : [gt, _t] = await Promise.all([ct, ut]);
+				const yt = _t && Object(s.c)(_t) ? _t.body.data : null;
+				if (tt) {
+					const e = await st;
 					! function(e) {
 						let {
 							gatewayResponse: t,
 							normalizedGqlResponse: r,
 							rawGqlResponse: n,
-							ignorePaths: s = ot,
+							ignorePaths: s = it,
 							normalizeFunction: o
 						} = e;
-						const i = st()(t),
-							d = st()(r);
-						if (Object(rt.a)()) {
+						const i = ot()(t),
+							d = ot()(r);
+						if (Object(nt.a)()) {
 							console.group("GQL Popular Shadowtest"), console.groupCollapsed("raw gql response"), console.log(n), console.groupEnd(), console.groupCollapsed("normalized gql response"), console.log(r), console.groupEnd(), console.groupCollapsed("gateway response"), console.log(t), console.groupEnd();
-							const e = lt({
+							const e = bt({
 									gatewayResponse: i,
 									normalizedGqlResponse: d,
 									ignorePaths: s,
@@ -2629,50 +2631,50 @@
 							}
 							console.groupEnd(), console.groupEnd()
 						}
-						if (Object(rt.b)() || Object(rt.c)()) {
-							const e = lt({
+						if (Object(nt.b)() || Object(nt.c)()) {
+							const e = bt({
 								gatewayResponse: i,
 								normalizedGqlResponse: d,
 								ignorePaths: s,
 								normalizeFunction: o
 							});
-							tt.l(t => {
-								t.setExtra("info", e), t.setExtra("bypassSampling", !0), tt.d("GQL Popular Shadowtest Diff")
+							rt.l(t => {
+								t.setExtra("info", e), t.setExtra("bypassSampling", !0), rt.d("GQL Popular Shadowtest Diff")
 							})
 						}
 					}({
-						gatewayResponse: vt.body,
+						gatewayResponse: gt.body,
 						normalizedGqlResponse: e.body,
 						rawGqlResponse: e,
-						ignorePaths: it,
-						normalizeFunction: ut
+						ignorePaths: dt,
+						normalizeFunction: lt
 					})
 				}
-				let Nt = vt.body;
-				const Lt = (null == Nt ? void 0 : Nt.subreddits) ? xt(Nt.subreddits, t) : null,
-					Rt = Object(mt.a)(De);
-				Nt = await Ct({
+				let Tt = gt.body;
+				const St = (null == Tt ? void 0 : Tt.subreddits) ? Nt(Tt.subreddits, t) : null,
+					Rt = Object(pt.a)(De);
+				Tt = await At({
 					subredditName: t,
-					subredditsResponse: Nt,
+					subredditsResponse: Tt,
 					isInGqlSubredditExperiment: Ze,
 					extraArgs: c,
 					isPopular: $e,
 					state: De,
 					isInDevPlatformExperiment: Rt
-				}), i(k.o(vt.status));
+				}), i(k.o(gt.status));
 				const Pt = `error-${e}`,
-					wt = Je || Lt;
-				if (vt.ok && wt || $e && Nt) {
-					if (($e || !Je && Lt) && Nt.geoFilter && i(Object(N.k)(Nt.geoFilter)), !Je && Lt) {
+					wt = Je || St;
+				if (gt.ok && wt || $e && Tt) {
+					if (($e || !Je && St) && Tt.geoFilter && i(Object(N.k)(Tt.geoFilter)), !Je && St) {
 						let e, t;
-						e = Ze ? Nt : Object(x.b)(null == yt ? void 0 : yt.subredditInfoByName), Object(x.a)(i, Lt, e), t = Ze ? Nt : Object(A.b)(null == yt ? void 0 : yt.subredditInfoByName), Object(A.a)(i, Lt, t);
-						const r = (null === (p = null === (b = null == Nt ? void 0 : Nt.subredditAboutInfo) || void 0 === b ? void 0 : b[Lt]) || void 0 === p ? void 0 : p.detectedLanguage) || (null === (f = null == yt ? void 0 : yt.subredditInfoByName) || void 0 === f ? void 0 : f.detectedLanguage);
-						Object(jt.d)(De) && r && Object(Me.f)(De) && await Object(bt.a)(r, i), Nt.subredditAboutInfo[Lt].detectedLanguage = r, Ze ? i(Object(E.n)(Lt, Nt.predictionTournaments || [])) : (null == yt ? void 0 : yt.subredditInfoByName) && i(Object(E.n)(Lt, yt.subredditInfoByName.predictionTournaments || []))
+						e = Ze ? Tt : Object(x.b)(null == yt ? void 0 : yt.subredditInfoByName), Object(x.a)(i, St, e), t = Ze ? Tt : Object(A.b)(null == yt ? void 0 : yt.subredditInfoByName), Object(A.a)(i, St, t);
+						const r = (null === (p = null === (b = null == Tt ? void 0 : Tt.subredditAboutInfo) || void 0 === b ? void 0 : b[St]) || void 0 === p ? void 0 : p.detectedLanguage) || (null === (f = null == yt ? void 0 : yt.subredditInfoByName) || void 0 === f ? void 0 : f.detectedLanguage);
+						Object(It.d)(De) && r && Object(Me.f)(De) && await Object(mt.a)(r, i), Tt.subredditAboutInfo[St].detectedLanguage = r, Ze ? i(Object(E.n)(St, Tt.predictionTournaments || [])) : (null == yt ? void 0 : yt.subredditInfoByName) && i(Object(E.n)(St, yt.subredditInfoByName.predictionTournaments || []))
 					}
 					let n;
-					const s = null === (O = Nt.postIds) || void 0 === O ? void 0 : O.filter(e => !!Nt.posts[e].isMeta);
-					if (s && s.length && Lt) {
-						const e = Object(_.i)(() => Object(me.a)(c.apiContext(), Lt, s), {
+					const s = null === (O = Tt.postIds) || void 0 === O ? void 0 : O.filter(e => !!Tt.posts[e].isMeta);
+					if (s && s.length && St) {
+						const e = Object(_.i)(() => Object(me.a)(c.apiContext(), St, s), {
 								name: "getGovernanceData",
 								page: Fe,
 								isLoggedIn: Ue
@@ -2680,15 +2682,15 @@
 							t = await e;
 						t.ok && (n = t.body)
 					}
-					if (Lt) {
-						const e = (null === (j = null === (g = null == Nt ? void 0 : Nt.subredditAboutInfo) || void 0 === g ? void 0 : g[Lt]) || void 0 === j ? void 0 : j.isEligibleForContentBlocking) || (null === (y = null == yt ? void 0 : yt.subredditInfoByName) || void 0 === y ? void 0 : y.isEligibleForContentBlocking);
-						Nt.subredditAboutInfo[Lt].isEligibleForContentBlocking = e;
-						const t = (null === (R = null === (T = null == Nt ? void 0 : Nt.subredditAboutInfo) || void 0 === T ? void 0 : T[Lt]) || void 0 === R ? void 0 : R.isMediaInCommentsSettingShown) || (null === (w = null == yt ? void 0 : yt.subredditInfoByName) || void 0 === w ? void 0 : w.isMediaInCommentsSettingShown);
-						Nt.subredditAboutInfo[Lt].isMediaInCommentsSettingShown = t;
+					if (St) {
+						const e = (null === (j = null === (g = null == Tt ? void 0 : Tt.subredditAboutInfo) || void 0 === g ? void 0 : g[St]) || void 0 === j ? void 0 : j.isEligibleForContentBlocking) || (null === (y = null == yt ? void 0 : yt.subredditInfoByName) || void 0 === y ? void 0 : y.isEligibleForContentBlocking);
+						Tt.subredditAboutInfo[St].isEligibleForContentBlocking = e;
+						const t = (null === (R = null === (T = null == Tt ? void 0 : Tt.subredditAboutInfo) || void 0 === T ? void 0 : T[St]) || void 0 === R ? void 0 : R.isMediaInCommentsSettingShown) || (null === (w = null == yt ? void 0 : yt.subredditInfoByName) || void 0 === w ? void 0 : w.isMediaInCommentsSettingShown);
+						Tt.subredditAboutInfo[St].isMediaInCommentsSettingShown = t;
 						const r = Ze ? null : null === (D = null == yt ? void 0 : yt.subredditInfoByName) || void 0 === D ? void 0 : D.directoryRankings;
-						r && (Nt.subredditAboutInfo[Lt].directoryRankings = r)
+						r && (Tt.subredditAboutInfo[St].directoryRankings = r)
 					}
-					if (Lt) {
+					if (St) {
 						const e = () => {
 								var e;
 								const t = null === (e = null == yt ? void 0 : yt.subredditInfoByName) || void 0 === e ? void 0 : e.channels;
@@ -2700,9 +2702,9 @@
 							{
 								channels: t,
 								channelIds: r
-							} = Ze ? Nt : e();
+							} = Ze ? Tt : e();
 						t && r && i(Object(Xe.c)({
-							subredditId: Lt,
+							subredditId: St,
 							channels: t,
 							channelIds: r
 						}))
@@ -2715,28 +2717,28 @@
 									...e
 								}
 							};
-						Nt.account && Object.assign(Nt.account, t)
+						Tt.account && Object.assign(Tt.account, t)
 					}
-					if (Lt) {
+					if (St) {
 						let e, t;
 						if (Ze) {
-							const r = Nt.subredditAboutInfo[Lt];
+							const r = Tt.subredditAboutInfo[St];
 							e = null == r ? void 0 : r.notificationLevel, t = null == r ? void 0 : r.myRedditSettings
-						} else if (_t(yt)) {
+						} else if (vt(yt)) {
 							const r = yt.subredditInfoByName;
 							e = null == r ? void 0 : r.notificationLevel, t = null == r ? void 0 : r.myRedditSettings
 						}
-						Nt.subredditAboutInfo[Lt].notificationLevel = e, Nt.subredditAboutInfo[Lt].myRedditSettings = t
+						Tt.subredditAboutInfo[St].notificationLevel = e, Tt.subredditAboutInfo[St].myRedditSettings = t
 					}
-					if (Lt) {
+					if (St) {
 						let e;
-						_t(yt) && (e = null === (V = yt.subredditInfoByName) || void 0 === V ? void 0 : V.isMuted), Ze && (e = null === ($ = Nt.subredditAboutInfo[Lt]) || void 0 === $ ? void 0 : $.isMuted), Nt.subredditAboutInfo[Lt].isMuted = e
+						vt(yt) && (e = null === (V = yt.subredditInfoByName) || void 0 === V ? void 0 : V.isMuted), Ze && (e = null === ($ = Tt.subredditAboutInfo[St]) || void 0 === $ ? void 0 : $.isMuted), Tt.subredditAboutInfo[St].isMuted = e
 					}
-					const a = null === (Y = Nt.subredditPermissions) || void 0 === Y ? void 0 : Y.posts;
+					const a = null === (Y = Tt.subredditPermissions) || void 0 === Y ? void 0 : Y.posts;
 					!Ze && a && i(Object(L.a)({
-						postIds: Nt.postIds
+						postIds: Tt.postIds
 					}));
-					let u = null == Nt ? void 0 : Nt.interestTopicRecommendations;
+					let u = null == Tt ? void 0 : Tt.interestTopicRecommendations;
 					if (!u && (null == yt ? void 0 : yt.interestTopics)) {
 						const e = Object(Le.a)(yt.interestTopics);
 						e.topics.length && (u = {
@@ -2746,20 +2748,20 @@
 					}
 					u && i(Object(P.subredditInterestTopicsLoaded)({
 						interestTopicRecommendations: u
-					})), i(St({
+					})), i(Ct({
 						key: e,
 						meta: De.meta,
 						governance: n,
 						correlationId: Ot,
-						...Nt,
-						postIds: Nt.postIds
+						...Tt,
+						postIds: Tt.postIds
 					}));
 					const l = null === (te = null === (X = Object(Z.b)(De)) || void 0 === X ? void 0 : X.locationState) || void 0 === te ? void 0 : te[de.b.FeedLoadReason];
 					if (Object(ke.b)(r.isRefresh ? de.a.UserRefresh : null != l ? l : de.a.InitialLoad)(d()), !Je) {
 						const e = Object(q.I)(d(), t);
-						Ze && Nt.subredditRules ? i(K.t({
+						Ze && Tt.subredditRules ? i(K.t({
 							rules: {
-								rules: Nt.subredditRules
+								rules: Tt.subredditRules
 							},
 							subredditId: e
 						})) : (null === (ce = null == yt ? void 0 : yt.subreddit) || void 0 === ce ? void 0 : ce.rules) && i(K.t({
@@ -2769,16 +2771,16 @@
 						const r = Object(He.g)(d(), {
 								subredditId: e
 							}),
-							n = null === (ae = null == Nt ? void 0 : Nt.userFlair) || void 0 === ae ? void 0 : ae[e];
+							n = null === (ae = null == Tt ? void 0 : Tt.userFlair) || void 0 === ae ? void 0 : ae[e];
 						Ze && e && (r || (null == n ? void 0 : n.applied) || (null === (Se = null == n ? void 0 : n.permissions) || void 0 === Se ? void 0 : Se.canUserChange)) && i(Object(ie.fetchUserFlairFromGql)(e, t));
-						const s = Object(h.c)(Nt.posts, e),
-							o = Object(h.b)(Nt.structuredStyles),
+						const s = Object(h.c)(Tt.posts, e),
+							o = Object(h.b)(Tt.structuredStyles),
 							c = (o ? Object(h.d)(o) : []).concat(s);
 						i(Object(h.a)(c, e))
 					}
-					if (o && i(J.g(Pt)), i(Object(v.b)(Ge.a.SUBREDDIT)), i(Object(C.p)()), Lt) {
+					if (o && i(J.g(Pt)), i(Object(v.b)(Ge.a.SUBREDDIT)), i(Object(C.p)()), St) {
 						let e, r, n;
-						if (Ze ? (e = Nt.questions, r = Nt.subredditLinks, n = Nt.subredditTopicLinks) : (e = null == yt ? void 0 : yt.subredditInfoByName, r = Object(F.a)({
+						if (Ze ? (e = Tt.questions, r = Tt.subredditLinks, n = Tt.subredditTopicLinks) : (e = null == yt ? void 0 : yt.subredditInfoByName, r = Object(F.a)({
 								data: {
 									subredditInfoById: null == yt ? void 0 : yt.subredditInfoByName
 								}
@@ -2786,25 +2788,25 @@
 								data: {
 									subredditInfoById: null == yt ? void 0 : yt.subredditInfoByName
 								}
-							})), Object(re.a)(i, Lt, e), i(Q(Lt, r)), i(z(Lt, n)), !Ze && (null === (Ce = null === (Ee = null == yt ? void 0 : yt.subredditInfoByName) || void 0 === Ee ? void 0 : Ee.elements) || void 0 === Ce ? void 0 : Ce.edges)) {
+							})), Object(re.a)(i, St, e), i(Q(St, r)), i(z(St, n)), !Ze && (null === (Ce = null === (Ee = null == yt ? void 0 : yt.subredditInfoByName) || void 0 === Ee ? void 0 : Ee.elements) || void 0 === Ce ? void 0 : Ce.edges)) {
 							const e = (null === (Pe = null === (xe = null == yt ? void 0 : yt.subredditInfoByName) || void 0 === xe ? void 0 : xe.elements) || void 0 === Pe ? void 0 : Pe.edges).map(e => {
 								var t, r;
 								return null === (r = null === (t = e.node) || void 0 === t ? void 0 : t.moderationInfo) || void 0 === r ? void 0 : r.lastAuthorModNote
 							});
 							i(Object(ne.e)({
-								subredditId: Lt,
+								subredditId: St,
 								nodes: e
 							}))
-						} else if (Ze && (null == Nt ? void 0 : Nt.postIds)) {
-							const e = Nt.postIds.map(e => null == Nt ? void 0 : Nt.posts[e].lastAuthorModNote);
+						} else if (Ze && (null == Tt ? void 0 : Tt.postIds)) {
+							const e = Tt.postIds.map(e => null == Tt ? void 0 : Tt.posts[e].lastAuthorModNote);
 							e && i(Object(ne.e)({
-								subredditId: Lt,
+								subredditId: St,
 								nodes: e
 							}))
 						}
 						const s = [Object(_.i)(() => i(Object(S.a)({
-							subredditId: Lt,
-							postIds: Nt.postIds,
+							subredditId: St,
+							postIds: Tt.postIds,
 							skip: ["subscription"]
 						})), {
 							name: "fetchAllEconomicsData",
@@ -2812,14 +2814,14 @@
 							isLoggedIn: Ue
 						})];
 						if (Object(ze.a)(d(), {
-								subredditId: Lt
+								subredditId: St
 							})) {
-							const e = Object(_.i)(() => i(Object(se.h)(t, Lt)), {
+							const e = Object(_.i)(() => i(Object(se.h)(t, St)), {
 									name: "subredditSettingsRequested",
 									isLoggedIn: Ue,
 									page: Fe
 								}),
-								r = Object(_.i)(() => i(Object(oe.g)(Lt, we.a.idCard)), {
+								r = Object(_.i)(() => i(Object(oe.g)(St, we.a.idCard)), {
 									name: "subredditTagsRequested",
 									isLoggedIn: Ue,
 									page: Fe
@@ -2829,14 +2831,14 @@
 						await Promise.all(s)
 					}
 				} else {
-					const s = vt.ok ? void 0 : vt.error;
-					if (Object(ke.a)(s ? `${vt.status||"000"}: ${s.type}` : "000: UNKNOWN_ERROR")(d()), 403 === vt.status || 404 === vt.status || 451 === vt.status) return void i(It(vt, t));
-					i(Et({
-						error: !vt.ok && vt.error || {
+					const s = gt.ok ? void 0 : gt.error;
+					if (Object(ke.a)(s ? `${gt.status||"000"}: ${s.type}` : "000: UNKNOWN_ERROR")(d()), 403 === gt.status || 404 === gt.status || 451 === gt.status) return void i(ht(gt, t));
+					i(xt({
+						error: !gt.ok && gt.error || {
 							type: u.L.NOT_FOUND_ERROR
 						},
 						key: e,
-						...Nt
+						...Tt
 					})), o && i(J.f({
 						id: Pt,
 						kind: W.b.Error,
@@ -2846,16 +2848,16 @@
 						buttonText: n.fbt._("Retry", null, {
 							hk: "3gV6S0"
 						}),
-						buttonAction: At(e, t, r, o)
+						buttonAction: Lt(e, t, r, o)
 					}))
 				}
-			}, Nt = (e, t, r) => async (n, s) => {
+			}, Rt = (e, t, r) => async (n, s) => {
 				const o = s(),
 					i = Object(f.a)(e, t.sort, t);
 				Object(Je.z)(o, {
 					listingKey: i
-				}).length > 0 || await n(At(i, e, t, r))
-			}, Lt = (e, t, r, n) => {
+				}).length > 0 || await n(Lt(i, e, t, r))
+			}, Pt = (e, t, r, n) => {
 				const s = Object(Me.b)(e);
 				if (Object(m.a)(t, {
 						countryCode: r,
@@ -2885,105 +2887,114 @@
 					return Object(j.a)(e, o, n)
 				}
 				return o
-			}, Rt = (e, t, r, n) => n ? Object(O.b)(e.subredditName, void 0, n) : Object(f.a)(e.subredditName, t, r), Pt = (e, t) => async (r, n) => {
+			}, wt = (e, t, r, n) => n ? Object(O.b)(e.subredditName, void 0, n) : Object(f.a)(e.subredditName, t, r), kt = (e, t) => async (r, n) => {
 				var s, o, i;
 				const {
 					countryCode: d,
-					languageCode: b
-				} = e.params, p = Object(l.e)(e.params), {
-					styling: g
-				} = e.queryParams, j = n(), y = Object(Ee.a)(e.params, j);
-				if ("Popular" === p) return void r(Object(a.c)(e.url.replace("r/Popular", "r/popular")));
-				if ("All" === p) return void r(Object(a.c)(e.url.replace("r/All", "r/all")));
-				e.params.channelId && r(Object(Xe.d)(e.params.channelId));
-				const S = Object(O.d)(e.queryParams, Object(ee.mb)(j)),
-					E = Rt({
-						subredditName: p,
+					languageCode: b,
+					channelId: p
+				} = e.params, g = Object(l.e)(e.params), {
+					styling: j
+				} = e.queryParams, y = n(), S = Object(Ee.a)(e.params, y), E = () => {
+					if (p) r(Object(Xe.d)(p));
+					else {
+						const e = Object(_t.b)(n(), G);
+						if (e) {
+							const t = Object(Ze.a)(e.id, e.name);
+							r(Object(a.c)(t)), r(Object(Xe.d)(e.id))
+						}
+					}
+				};
+				if ("Popular" === g) return void r(Object(a.c)(e.url.replace("r/Popular", "r/popular")));
+				if ("All" === g) return void r(Object(a.c)(e.url.replace("r/All", "r/all")));
+				const x = Object(O.d)(e.queryParams, Object(ee.mb)(y)),
+					A = wt({
+						subredditName: g,
 						countryCode: d,
 						languageCode: b
-					}, y, e.queryParams, S),
-					x = y,
-					A = Object(I.a)(j.listings.postOrder.api.error, E),
-					N = Object(I.a)(j.listings.postOrder.api.pending, E);
-				let L = !!Object(I.a)(j.listings.postOrder.ids, E);
-				const P = Object(I.a)(j.listings.postOrder.listingSort, E);
-				P && P.hasChanged && (L = !1);
-				let D = Object(q.I)(j, p);
-				const U = (e, t) => "true" === g && ((e, t) => Object(He.b)(De.c.config)(e, {
+					}, S, e.queryParams, x),
+					N = S,
+					L = Object(I.a)(y.listings.postOrder.api.error, A),
+					P = Object(I.a)(y.listings.postOrder.api.pending, A);
+				let D = !!Object(I.a)(y.listings.postOrder.ids, A);
+				const U = Object(I.a)(y.listings.postOrder.listingSort, A);
+				U && U.hasChanged && (D = !1);
+				let G = Object(q.I)(y, g);
+				const F = (e, t) => "true" === j && ((e, t) => Object(He.b)(De.c.config)(e, {
 						subredditId: t
 					}) || Object(He.b)(De.c.flair)(e, {
 						subredditId: t
 					}))(e, t),
-					G = ae.I in e.queryParams && e.queryParams[ae.I].toUpperCase() || "",
-					F = G in u.oc && u.oc[G];
-				if (N || L && !A && !t) {
-					if (U(j, D) && r(H.i(D)), L) {
-						const t = Lt(n(), p, d, b);
+					M = ae.I in e.queryParams && e.queryParams[ae.I].toUpperCase() || "",
+					B = M in u.oc && u.oc[M];
+				if (P || D && !L && !t) {
+					if (F(y, G) && r(H.i(G)), D) {
+						const t = Pt(n(), g, d, b);
 						r(k.n({
 							title: t
-						})), (null === (s = j.listings.postOrder.correlationIds) || void 0 === s ? void 0 : s[E]) && r(k.p({
-							correlationId: j.listings.postOrder.correlationIds[E]
+						})), (null === (s = y.listings.postOrder.correlationIds) || void 0 === s ? void 0 : s[A]) && r(k.p({
+							correlationId: y.listings.postOrder.correlationIds[A]
 						})), Object(Se.g)(n(), r, e), window.addEventListener("load", () => {
 							r(Object(C.p)())
-						}), j.sidebarPromotedPosts.firstFetch || window.addEventListener("load", () => {
+						}), y.sidebarPromotedPosts.firstFetch || window.addEventListener("load", () => {
 							r(Object(v.b)(Ge.a.SUBREDDIT))
 						}), r(te())
 					}
-					return void(Object(Be.e)(n()) && r(Object(R.a)()))
+					return Object(Be.e)(n()) && r(Object(R.a)()), void(Object(Ie.b)(y) && E())
 				}
 				r(T.g());
-				const M = null === (i = null === (o = Object(Z.b)(j)) || void 0 === o ? void 0 : o.routeMatch) || void 0 === i ? void 0 : i.route.chunk,
-					B = Object(ee.S)(n());
-				if (S) {
+				const Q = null === (i = null === (o = Object(Z.b)(y)) || void 0 === o ? void 0 : o.routeMatch) || void 0 === i ? void 0 : i.route.chunk,
+					z = Object(ee.S)(n());
+				if (x) {
 					const e = Object(_.i)(() => r(Object(w.d)({
-						key: E,
-						options: S,
-						subredditName: p
+						key: A,
+						options: x,
+						subredditName: g
 					})), {
 						name: "searchDataRequested",
-						isLoggedIn: B,
-						page: M
+						isLoggedIn: z,
+						page: Q
 					});
 					await e
 				} else {
 					const t = {
 						...c()(e.queryParams, [...ae.p, ...ae.o, ae.k]),
-						sort: x,
-						t: Object(Ce.a)(x, F)
+						sort: N,
+						t: Object(Ce.a)(N, B)
 					};
-					await r(At(E, p, t, !0))
+					await r(Lt(A, g, t, !0))
 				}
-				const Q = j.platform.currentPage,
-					z = Object(Qe.d)(j, {
-						pageLayer: Q
+				const K = y.platform.currentPage,
+					J = Object(Qe.d)(y, {
+						pageLayer: K
 					});
-				if (Object(Qe.a)(z) || Object(Qe.b)(z) || Object(Qe.c)(z)) {
-					const e = Object(f.a)(p, u.bb.TOP, {
+				if (Object(Qe.a)(J) || Object(Qe.b)(J) || Object(Qe.c)(J)) {
+					const e = Object(f.a)(g, u.bb.TOP, {
 							t: u.oc.WEEK
 						}),
 						t = {
 							sort: u.bb.TOP,
 							t: u.oc.WEEK
 						};
-					await r(At(e, p, t, !1))
+					await r(Lt(e, g, t, !1))
 				}
-				if (Object(Be.e)(n()) && r(Object(R.a)()), D = D || Object(q.I)(n(), p), !Object(Fe.a)(j, D) && !Object(m.a)(p, {
+				if (Object(Be.e)(n()) && r(Object(R.a)()), G = G || Object(q.I)(n(), g), !Object(Fe.a)(y, G) && !Object(m.a)(g, {
 						countryCode: d,
 						languageCode: b
 					})) {
-					const e = Object(_.i)(() => r(Object(h.e)(p)), {
+					const e = Object(_.i)(() => r(Object(h.e)(g)), {
 						name: "getTopCommunityFlair",
-						page: M,
-						isLoggedIn: B
+						page: Q,
+						isLoggedIn: z
 					});
 					await e
 				}
-				U(n(), D) && r(H.i(D)), Object(Se.g)(n(), r, e);
-				const K = Lt(n(), p);
+				F(n(), G) && r(H.i(G)), Object(Se.g)(n(), r, e);
+				const V = Pt(n(), g);
 				r(k.n({
-					title: K
-				})), r(te())
-			}, wt = "PAGE__SUBREDDIT_INVALIDATE_LISTING", kt = Object(p.a)(wt)
+					title: V
+				})), r(te()), Object(Ie.b)(y) && E()
+			}, Dt = "PAGE__SUBREDDIT_INVALIDATE_LISTING", Ut = Object(p.a)(Dt)
 		},
 		"./src/reddit/actions/postCreation/constants.ts": function(e, t, r) {
 			"use strict";
@@ -5512,6 +5523,13 @@
 						}
 					}
 				}
+		},
+		"./src/reddit/components/CommunityChat/utils.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "a", (function() {
+				return n
+			}));
+			const n = (e, t) => `/r/ChatCommunityM0/channel/${e}/${(e=>e.toLowerCase().split(" ").join("_"))(t)}/`
 		},
 		"./src/reddit/components/CrosspostRecommendationsModal/constants.tsx": function(e, t, r) {
 			"use strict";
@@ -8223,6 +8241,16 @@
 					...o(0, e)
 				})
 		},
+		"./src/reddit/models/CommunityChat/index.ts": function(e, t, r) {
+			"use strict";
+			var n;
+			r.d(t, "a", (function() {
+					return n
+				})),
+				function(e) {
+					e.SubredditPostChannel = "SubredditPostChannel", e.SubredditChatChannel = "SubredditChatChannel"
+				}(n || (n = {}))
+		},
 		"./src/reddit/models/Duplicates/index.ts": function(e, t, r) {
 			"use strict";
 
@@ -10384,6 +10412,54 @@
 					return u ? u.prefShowTwitter ? c : null : c
 				}
 		},
+		"./src/reddit/selectors/features/communityChat/index.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "d", (function() {
+				return u
+			})), r.d(t, "c", (function() {
+				return l
+			})), r.d(t, "a", (function() {
+				return b
+			})), r.d(t, "b", (function() {
+				return m
+			}));
+			var n = r("./node_modules/reselect/es/index.js"),
+				s = r("./src/lib/initializeClient/installReducer.ts"),
+				o = r("./src/reddit/models/CommunityChat/index.ts"),
+				i = r("./src/reddit/reducers/features/communityChat/index.ts");
+			Object(s.a)({
+				features: {
+					communityChat: i.a
+				}
+			});
+			const d = {
+					[o.a.SubredditPostChannel]: 0,
+					[o.a.SubredditChatChannel]: 1
+				},
+				c = (e, t) => {
+					var r, n;
+					return null === (n = null === (r = e.features) || void 0 === r ? void 0 : r.communityChat) || void 0 === n ? void 0 : n.models[t]
+				},
+				a = Object(n.a)(e => e, (e, t) => {
+					var r, n;
+					return (null === (n = null === (r = e.features) || void 0 === r ? void 0 : r.communityChat) || void 0 === n ? void 0 : n.channelIds[t]) || []
+				}, (e, t) => t.map(t => c(e, t))),
+				u = Object(n.a)(a, e => (e => e.sort((e, t) => {
+					var r, n;
+					const s = null !== (r = d[e.__typename]) && void 0 !== r ? r : 0,
+						o = null !== (n = d[t.__typename]) && void 0 !== n ? n : 0;
+					return s !== o ? s - o : e.name - t.name
+				}))(e)),
+				l = e => {
+					var t, r, n;
+					return null !== (n = null === (r = null === (t = e.features) || void 0 === t ? void 0 : t.communityChat) || void 0 === r ? void 0 : r.selectedChannelId) && void 0 !== n ? n : ""
+				},
+				b = Object(n.a)(c, e => {
+					var t;
+					return (null == e ? void 0 : e.__typename) !== o.a.SubredditChatChannel ? "" : decodeURIComponent(null !== (t = null == e ? void 0 : e.roomId) && void 0 !== t ? t : "")
+				}),
+				m = Object(n.a)(a, e => e.find(e => e && "SubredditPostChannel" === e.__typename))
+		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
@@ -11323,4 +11399,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.2d8ed74f67e5828021ec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.d9a7cac307e69f5dbc0e.js.map

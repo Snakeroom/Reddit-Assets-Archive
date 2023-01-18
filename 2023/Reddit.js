@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.6583e5a3c5cee423c0c4.js
-// Retrieved at 1/18/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.c195e4e67574ec3c6b07.js
+// Retrieved at 1/18/2023, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -14097,7 +14097,7 @@
 				nm = n("./src/reddit/routes/subreddit/index.ts"),
 				sm = n("./src/reddit/routes/subredditWiki/index.ts"),
 				rm = n("./src/reddit/routes/topic/index.ts");
-			var om = [au.a, iu.a, Yr.b, cu, lu.a, du.a, mu.a, Wu, Zu, Ju, ...ou.a, ...uu.b, gu, ...Eu.a, xu.a, Bu.a, Vr.b, zr.b, bu.c, hu.a, Du, Fu, Ou.a, Cu.a, yu.a, Tu.a, Ru.a, Lu.a, ...Au, vu, ...Pu.a, Nu.a, ku.a, Wr.c, qr.b, Mu.a, ju.a, Uu.a, Vu.a, zu.a, Qu.a, Xu.a, Ku.a, ...em.a, ...tm, $u.a, ...sm.a, rm.a, nm.c, Su.a, Yu.a, ...pu, _u.a],
+			var om = [au.a, iu.a, Yr.b, cu, lu.a, du.a, mu.a, Wu, Zu, Ju, ...ou.a, ...uu.b, gu, ...Eu.a, xu.a, Bu.a, Vr.b, zr.b, bu.c, hu.a, Du, Fu, Ou.a, Cu.a, yu.a, Tu.a, Ru.a, Lu.a, ...Au, vu, ...Pu.a, Nu.a, ku.a, Wr.c, qr.b, Mu.a, ju.a, Uu.a, Vu.a, zu.a, Qu.a, Xu.a, Ku.a, ...em.a, ...tm, $u.a, ...sm.a, rm.a, nm.b, Su.a, Yu.a, ...pu, _u.a],
 				am = n("./src/reddit/selectors/appBadges.ts"),
 				im = n("./src/reddit/selectors/emailVerification.ts"),
 				cm = n("./src/reddit/selectors/sso.ts");
@@ -20600,4 +20600,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.6583e5a3c5cee423c0c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.c195e4e67574ec3c6b07.js.map
