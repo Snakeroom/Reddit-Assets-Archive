@@ -1,7 +1,21 @@
-// https://www.redditstatic.com/desktop2x/UserAchievementFlair.f3efa9b5165a73853a66.js
-// Retrieved at 1/18/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UserAchievementFlair.a23a9b28b05ee88aae74.js
+// Retrieved at 1/18/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UserAchievementFlair"], {
+		"./src/reddit/actions/gold/powerups.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "a", (function() {
+				return i
+			}));
+			var s = r("./src/reddit/actions/login.ts"),
+				a = r("./src/reddit/actions/modal.ts"),
+				c = r("./src/reddit/constants/modals.ts"),
+				n = r("./src/reddit/selectors/user.ts");
+			const i = () => async (e, t) => {
+				const r = t();
+				return Object(n.m)(r) ? e(Object(a.h)(c.a.ACHIEVEMENT_FLAIR)) : e(Object(s.openLoginModal)())
+			}
+		},
 		"./src/reddit/components/Econ/PowerupsFlair/HoverPopup.m.less": function(e, t, r) {
 			e.exports = {
 				container: "ciVctEeLKylCRejTc9u2e",
@@ -63,11 +77,11 @@
 					{
 						container: N,
 						isScrollGradientVisible: x,
-						calculateGradientVisibility: k
+						calculateGradientVisibility: g
 					} = Object(u.b)(!1);
 				Object(a.useEffect)(() => {
-					k()
-				}, [k]);
+					g()
+				}, [g]);
 				return c.a.createElement("div", {
 					className: Object(s.a)(v.a.container, t)
 				}, c.a.createElement("div", {
@@ -82,7 +96,7 @@
 					className: v.a.headerDelimiter
 				}), c.a.createElement("div", {
 					className: v.a.flairs,
-					onScroll: k,
+					onScroll: g,
 					ref: N
 				}, _.map(e => c.a.createElement(E, {
 					flair: e,
@@ -96,7 +110,7 @@
 					priority: o.c.Secondary,
 					className: v.a.ctaButton,
 					onClick: () => {
-						I(Object(d.a)()), j(Object(i.c)())
+						I(Object(d.a)()), j(Object(i.a)())
 					},
 					isFullWidth: !0
 				}, h._("View your achievements", null, {
@@ -281,4 +295,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.f3efa9b5165a73853a66.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.a23a9b28b05ee88aae74.js.map

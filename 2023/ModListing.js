@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.d79525434d6d3c3160fa.js
-// Retrieved at 1/18/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.9c9b0d635455e8898da9.js
+// Retrieved at 1/18/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, n) {
@@ -2458,7 +2458,7 @@
 				const p = Object(o.e)(e => e.subreddits.survey[n]),
 					b = Object(o.e)(e => e.subreddits.progressModule[n]),
 					h = Object(o.e)(u.a),
-					g = h !== c.Ce.NewModule;
+					g = h !== c.Be.NewModule;
 				return (null === (s = null == b ? void 0 : b.cards) || void 0 === s ? void 0 : s.length) > 0 && g ? i.a.createElement(m, {
 					closeModuleOnMount: !!t && t !== l.g.Large,
 					subredditId: n,
@@ -2486,13 +2486,13 @@
 						experimentEligibilitySelector: i.S,
 						experimentName: r.jd
 					});
-					return !(!t || Object(r.ag)(t))
+					return !(!t || Object(r.Zf)(t))
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: i.S,
 						experimentName: r.jd
-					}) === r.Gd.ListingEnabled
+					}) === r.Fd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/experiments/navbarLikeMweb.ts": function(e, t, n) {
@@ -2503,13 +2503,13 @@
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = e => Object(s.c)(e, {
-				experimentName: r.te,
+				experimentName: r.se,
 				experimentEligibilitySelector: s.a
-			}) === r.Be.Enabled
+			}) === r.Ae.Enabled
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
 			e.exports = JSON.parse('{"id":"c1fc98c26cf2"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.d79525434d6d3c3160fa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.9c9b0d635455e8898da9.js.map

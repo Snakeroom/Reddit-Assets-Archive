@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.70b6a1e35ccab2e88ba9.js
-// Retrieved at 1/18/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.ca23a23cf3cb98c98be6.js
+// Retrieved at 1/18/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit~StandalonePostPage", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -909,7 +909,7 @@
 			const ie = Object(se.a)(e => Object(re.c)(e, {
 				experimentEligibilitySelector: re.a,
 				experimentName: oe.yb
-			}), e => e === oe.Cd);
+			}), e => e === oe.Bd);
 			var ae = n("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				ce = n("./src/reddit/selectors/platform.ts"),
 				de = n("./src/reddit/selectors/posts.ts"),
@@ -16915,7 +16915,7 @@
 				} = e, n = t.id, o = Object(p.e)(e => Object(To.b)(e, {
 					subredditId: n
 				}));
-				return Object(p.e)(e => Object(wo.b)(e, {
+				return Object(p.e)(e => Object(wo.a)(e, {
 					subredditId: n
 				})) ? m.a.createElement(Io.a, e) : m.a.createElement(m.a.Fragment, null, o && m.a.createElement(No, e))
 			};
@@ -38913,7 +38913,7 @@
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: o.D
-				}) === o.Cd
+				}) === o.Bd
 			}
 		},
 		"./src/reddit/selectors/experiments/commentSearchPdp.ts": function(e, t, n) {
@@ -38994,9 +38994,9 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const s = e => Object(r.c)(e, {
-				experimentName: o.te,
+				experimentName: o.se,
 				experimentEligibilitySelector: r.a
-			}) === o.Be.Enabled
+			}) === o.Ae.Enabled
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
 			"use strict";
@@ -39008,8 +39008,8 @@
 			const s = e => {
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: o.Qe
-				}) === o.Cd
+					experimentName: o.Pe
+				}) === o.Bd
 			}
 		},
 		"./src/reddit/selectors/experiments/typingIndicators.ts": function(e, t, n) {
@@ -39031,29 +39031,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.Rf
-					}) === o.Cd
+						experimentName: o.Qf
+					}) === o.Bd
 				},
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.Sf
-					}) === o.Cd
+						experimentName: o.Rf
+					}) === o.Bd
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.Qf
+						experimentName: o.Pf
 					});
-					return t === o.Jf.TypingIndicators || t === o.Jf.IndicatorsPlusCTA
+					return t === o.If.TypingIndicators || t === o.If.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.d)(e, {
-						experimentName: o.Qf
+						experimentName: o.Pf
 					});
-					return (null == t ? void 0 : t.variant) === o.Jf.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.If.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -39202,19 +39202,19 @@
 				s = n("./src/reddit/selectors/economics.ts"),
 				i = n("./src/reddit/selectors/gold/powerups/index.ts"),
 				a = n("./src/reddit/selectors/gold/powerups/benefitSettings.ts");
-			const c = Object(o.a)(r.d.spEmotes, s.b, i.b, (e, t, n) => {
+			const c = Object(o.a)(r.d.spEmotes, s.b, i.a, (e, t, n) => {
 					if (n) return !0;
 					const o = !(!t || !Object.keys(t).length);
 					return e && o
 				}),
-				d = Object(o.a)(s.b, i.c, i.d, i.b, (e, t, n, o) => {
+				d = Object(o.a)(s.b, i.b, i.c, i.a, (e, t, n, o) => {
 					if (o) return [...t, ...n].slice(0, 3);
 					let r = [];
 					for (const s of e || [])
 						if ((r = [...r, ...Object.values(s.emotes)]).length > 3) break;
 					return r.slice(0, 3)
 				}),
-				l = Object(o.a)(r.d.spGiphy, i.b, a.b, (e, t, n) => e || t && n)
+				l = Object(o.a)(r.d.spGiphy, i.a, a.a, (e, t, n) => !!(e || t && n))
 		},
 		"./src/reddit/selectors/gold/giveAwards.ts": function(e, t, n) {
 			"use strict";
@@ -39739,4 +39739,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.70b6a1e35ccab2e88ba9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.ca23a23cf3cb98c98be6.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.121c1de09a194da2fe6c.js
-// Retrieved at 1/18/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.ef97ea68745ddf41b9a4.js
+// Retrieved at 1/18/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -2224,7 +2224,7 @@
 			const D = e => O.d.reCaptchaEnterprise(e) && !Object(T.d)(e),
 				w = e => !!Object(S.c)(e, {
 					experimentEligibilitySelector: Object(I.d)(Object(I.b)(...a.c)),
-					experimentName: f.bf
+					experimentName: f.af
 				}),
 				j = Object(r.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				C = () => l(e => p()([D, w, e => e.tracking.reCaptchaEnterprise.load === r.a.New], t => t(e)))(async e => {
@@ -2412,7 +2412,7 @@
 							return Object(g.c)(e, {
 								experimentEligibilitySelector: g.a,
 								experimentName: m.Ac
-							}) === m.Cd
+							}) === m.Bd
 						}(O) && e === p.d.dropdown) {
 						const n = (e => {
 							var t, n;
@@ -4192,7 +4192,7 @@
 					relativePosition: I
 				} = e;
 				var T, w, j, C, A, P;
-				const R = Object(a.e)(e => Object(H.a)(e, q.jf)),
+				const R = Object(a.e)(e => Object(H.a)(e, q.if)),
 					N = Object(g.a)(),
 					x = (null === (T = o.displayInfo) || void 0 === T ? void 0 : T.karma) || 0,
 					L = (null === (w = o.displayInfo) || void 0 === w ? void 0 : w.subscribers) || 0,
@@ -4333,7 +4333,7 @@
 					searchOriginPage: f
 				} = e;
 				const b = Object(g.a)(),
-					h = Object(a.e)(e => Object(H.a)(e, q.jf)),
+					h = Object(a.e)(e => Object(H.a)(e, q.if)),
 					y = Object(a.e)(O.mb),
 					{
 						nsfwTypeaheadExpanded: v,
@@ -4575,7 +4575,7 @@
 					onUpdateSearchQuery: P
 				} = e, R = Object(a.d)(), [N, x] = Object(r.useState)(null), [L, M] = Object(r.useState)(n), [B, F] = Object(r.useState)(new Array(Ee).fill(!1)), {
 					enabled: G
-				} = Object(a.e)(ne.j), V = Object(a.e)(e => Object(H.a)(e, q.jf)), Q = !!(null === (t = v.searchQuery) || void 0 === t ? void 0 : t.trim()), K = u || d, Y = G, $ = [...h.communities, ...h.people, ...h.nsfw], X = !u && (!Q || m >= 0) && (V ? 0 === $.length : 0 === b.length) && !Y, z = {
+				} = Object(a.e)(ne.j), V = Object(a.e)(e => Object(H.a)(e, q.if)), Q = !!(null === (t = v.searchQuery) || void 0 === t ? void 0 : t.trim()), K = u || d, Y = G, $ = [...h.communities, ...h.people, ...h.nsfw], X = !u && (!Q || m >= 0) && (V ? 0 === $.length : 0 === b.length) && !Y, z = {
 					width: L ? `${L}px` : "inherit",
 					overflow: "auto"
 				};
@@ -4969,10 +4969,10 @@
 				b = n("./node_modules/reselect/es/index.js");
 			const h = Object(b.a)(e => Object(f.c)(e, {
 				experimentEligibilitySelector: f.a,
-				experimentName: p.Xf
+				experimentName: p.Wf
 			}), e => ({
-				promptBeforeClick: e === p.Yf.PromptBeforeClick,
-				promptAfterClick: e === p.Yf.PromptAfterClick
+				promptBeforeClick: e === p.Xf.PromptBeforeClick,
+				promptAfterClick: e === p.Xf.PromptAfterClick
 			}));
 			var y = n("./src/reddit/controls/Search/SearchScopePill/index.tsx"),
 				m = n("./src/reddit/controls/Search/SearchBar/index.m.less"),
@@ -8319,7 +8319,7 @@
 							...e
 						}, n)
 					}
-					case Ie.rb: {
+					case Ie.pb: {
 						const n = {},
 							{
 								topAwardedPosts: r
@@ -11368,47 +11368,6 @@
 							return {
 								...e,
 								[s]: e[s] ? O()([...e[s], ...t], e => {
-									let {
-										title: t
-									} = e;
-									return t
-								}) : t
-							}
-						}
-						return e
-					}
-					case Ie.nb: {
-						const {
-							powerups: n,
-							subredditId: r
-						} = t.payload;
-						if (n && n.mediaPacks) {
-							const t = n.mediaPacks.map(e => ({
-								title: e.name,
-								emotes: e.emotes.reduce((t, n) => ({
-									...t,
-									[n.name]: {
-										id: n.name,
-										fullId: `emote|${e.id}|${n.name}`,
-										imageType: n.emojiIcon.mimeType,
-										emoji: {
-											x: n.emojiIcon.x,
-											y: n.emojiIcon.y,
-											path: n.emojiIcon.url,
-											type: n.emojiIcon.mimeType
-										},
-										sticker: {
-											x: n.stickerIcon.x,
-											y: n.stickerIcon.y,
-											path: n.stickerIcon.url,
-											type: n.stickerIcon.mimeType
-										}
-									}
-								}), {})
-							}));
-							return {
-								...e,
-								[r]: e[r] ? O()([...e[r], ...t], e => {
 									let {
 										title: t
 									} = e;
@@ -16850,7 +16809,7 @@
 							}
 						} : e
 					}
-					case Ie.rb: {
+					case Ie.pb: {
 						const {
 							topAwardedPosts: n
 						} = t.payload;
@@ -17478,10 +17437,10 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case Ie.qb:
+					case Ie.ob:
 						return t.payload;
-					case Ie.sb:
-					case Ie.rb:
+					case Ie.qb:
+					case Ie.pb:
 						return null;
 					default:
 						return e
@@ -17491,10 +17450,10 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case Ie.rb:
-						case Ie.qb:
+						case Ie.pb:
+						case Ie.ob:
 							return !1;
-						case Ie.sb:
+						case Ie.qb:
 							return !0;
 						default:
 							return e
@@ -17509,7 +17468,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : db,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case Ie.rb: {
+						case Ie.pb: {
 							const {
 								topAwardedPosts: e
 							} = t.payload;
@@ -17519,8 +17478,8 @@
 								score: e.score
 							}))
 						}
+						case Ie.ob:
 						case Ie.qb:
-						case Ie.sb:
 							return db;
 						default:
 							return e
@@ -21127,7 +21086,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : SE,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case Ie.nb: {
+					case Ie.mb: {
 						const {
 							recentSupporters: n,
 							subredditId: r
@@ -21146,8 +21105,8 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : DE,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case Ie.ob:
-					case Ie.nb: {
+					case Ie.nb:
+					case Ie.mb: {
 						const {
 							powerups: n,
 							subredditId: r
@@ -21220,19 +21179,6 @@
 								}
 							}
 						}
-						case Ie.nb: {
-							const {
-								powerups: n,
-								subredditId: r
-							} = t.payload;
-							return {
-								...e,
-								[r]: {
-									...e[r],
-									...Qa(null == n ? void 0 : n.mediaPacks)
-								}
-							}
-						}
 						case Va.b: {
 							const {
 								subredditId: n,
@@ -21263,8 +21209,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : NE,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case Ie.V:
-					case Ie.nb: {
+					case Ie.V: {
 						const {
 							subredditId: n,
 							productOffers: r
@@ -23967,14 +23912,14 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case Ie.yb: {
+					case Ie.wb: {
 						const n = t.payload.powerups;
 						return n ? Fr()({
 							...e,
 							...n
 						}, "allocation") : e
 					}
-					case Ie.nb: {
+					case Ie.mb: {
 						const {
 							userPowerups: n
 						} = t.payload;
@@ -23991,10 +23936,10 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
+						case Ie.vb:
 						case Ie.xb:
-						case Ie.zb:
 							return !1;
-						case Ie.yb:
+						case Ie.wb:
 							return !0;
 						default:
 							return e
@@ -24016,11 +23961,11 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : MS,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case Ie.Cb:
+					case Ie.Ab:
 						return {
 							...e, status: xS.PENDING
 						};
-					case Ie.Bb: {
+					case Ie.zb: {
 						const {
 							subscriptions: n
 						} = t.payload;
@@ -24030,7 +23975,7 @@
 							status: xS.LOADED
 						} : e
 					}
-					case Ie.Ab:
+					case Ie.yb:
 						return {
 							...e, status: xS.FAILED
 						};
@@ -24564,10 +24509,10 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case Ie.tb:
+					case Ie.rb:
 						return t.payload;
-					case Ie.vb:
-					case Ie.ub:
+					case Ie.tb:
+					case Ie.sb:
 						return null;
 					default:
 						return e
@@ -24577,10 +24522,10 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case Ie.ub:
-						case Ie.tb:
+						case Ie.sb:
+						case Ie.rb:
 							return !1;
-						case Ie.vb:
+						case Ie.tb:
 							return !0;
 						default:
 							return e
@@ -24594,7 +24539,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case Ie.wb:
+					case Ie.ub:
 						return t.payload.postId;
 					default:
 						return e
@@ -24605,7 +24550,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : ST,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case Ie.ub: {
+					case Ie.sb: {
 						const {
 							postId: n,
 							currentRank: r
@@ -24624,7 +24569,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : DT,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case Ie.ub: {
+						case Ie.sb: {
 							const {
 								postId: n,
 								topAwardersRank: r
@@ -25288,7 +25233,7 @@
 					if (!u(e)) return;
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: l,
-						experimentName: a.Vd,
+						experimentName: a.Ud,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -25311,9 +25256,9 @@
 				},
 				b = e => !!p(e) && Object(o.c)(e, {
 					experimentEligibilitySelector: u,
-					experimentName: a.Wd,
+					experimentName: a.Vd,
 					expEventOverride: !1
-				}) !== a.Yd.Readonly
+				}) !== a.Xd.Readonly
 		},
 		"./src/reddit/selectors/removedPosts.ts": function(e, t, n) {
 			"use strict";
@@ -25457,4 +25402,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.121c1de09a194da2fe6c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.ef97ea68745ddf41b9a4.js.map

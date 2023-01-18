@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow.1dcb91cee34ca4cf1693.js
-// Retrieved at 1/18/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow.f04e05be08cdd40b6a61.js
+// Retrieved at 1/18/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow"], {
 		"./src/lib/assertNever.ts": function(t, e, i) {
@@ -774,7 +774,7 @@
 			})), i.d(e, "j", (function() {
 				return z
 			})), i.d(e, "e", (function() {
-				return X
+				return H
 			})), i.d(e, "d", (function() {
 				return Q
 			})), i.d(e, "g", (function() {
@@ -881,7 +881,7 @@
 									name: t
 								});
 								e && Object(j.j)(e) && (I[t] = i[t])
-							} Object.keys(I).length && r(H(I)), r(Object(u.e)(n)), r(P({
+							} Object.keys(I).length && r(X(I)), r(Object(u.e)(n)), r(P({
 							subredditId: t,
 							styles: {
 								...d,
@@ -923,7 +923,7 @@
 						subredditId: t,
 						...l.error
 					}))
-				}, Y = Object(d.a)(A.d), X = t => async (e, i, n) => {
+				}, Y = Object(d.a)(A.d), H = t => async (e, i, n) => {
 					const r = i(),
 						o = r.structuredStyles.models[t] || {},
 						l = Object(C.fb)(r);
@@ -967,7 +967,7 @@
 							error: a.error
 						}))
 					})(t)(e, i, n), Object(I.g)(t, !1)(e, i, n)
-				}, H = Object(d.a)(A.c), Q = t => async (e, i, n) => {
+				}, X = Object(d.a)(A.c), Q = t => async (e, i, n) => {
 					const r = M(t),
 						o = i();
 					for (const t in r)
@@ -983,7 +983,7 @@
 									name: t
 								});
 								i && e(Object(_.h)(i))
-							} e(H(r))
+							} e(X(r))
 				}, V = Object(d.a)(A.f), $ = (t, e, i) => async (n, r, o) => {
 					const l = r(),
 						s = i || l.structuredStyles.isEditing,
@@ -999,7 +999,7 @@
 						const i = await Object(_.g)(r(), a, e, j.a.StructuredStyles);
 						if (i) {
 							const e = i.url;
-							n(Object(_.j)(i)), n(H({
+							n(Object(_.j)(i)), n(X({
 								[t]: e
 							}))
 						}
@@ -1048,7 +1048,7 @@
 					}) ? e(Object(f.i)(O.a.BLADE_UNSAVED_CHANGES)) : e(rt()))
 				}, lt = t => async (e, i) => {
 					const n = i();
-					Object(U.i)(n) || e(Object(C.fb)(n) ? Object(f.i)(O.a.BLADE_NIGHTMODE) : X(t))
+					Object(U.i)(n) || e(Object(C.fb)(n) ? Object(f.i)(O.a.BLADE_NIGHTMODE) : H(t))
 				}, st = Object(d.a)(A.i), ct = Object(d.a)(A.h), at = Object(d.a)(A.g), dt = (t, e) => async (i, n, r) => {
 					let {
 						gqlContext: o,
@@ -2318,9 +2318,9 @@
 			})), i.d(e, "H", (function() {
 				return Y
 			})), i.d(e, "i", (function() {
-				return X
-			})), i.d(e, "c", (function() {
 				return H
+			})), i.d(e, "c", (function() {
+				return X
 			})), i.d(e, "v", (function() {
 				return V
 			})), i.d(e, "u", (function() {
@@ -2631,7 +2631,7 @@
 						action: Object(p.getToggleAction)(e)
 					})
 				},
-				X = (t, e, i) => {
+				H = (t, e, i) => {
 					Object(f.a)({
 						...S(t),
 						...M(t, e),
@@ -2639,7 +2639,7 @@
 						action: i ? n.c.ENABLE : n.c.DISABLE
 					})
 				},
-				H = t => {
+				X = t => {
 					Object(f.a)({
 						...S(t),
 						noun: "create_community",
@@ -2928,35 +2928,35 @@
 				_ = t => {
 					return Object(l.c)(t, {
 						experimentEligibilitySelector: l.a,
-						experimentName: o.Ge
-					}) === o.Je.ContentMatch
+						experimentName: o.Fe
+					}) === o.Ie.ContentMatch
 				},
 				f = t => {
 					return Object(l.c)(t, {
 						experimentEligibilitySelector: l.a,
-						experimentName: o.Ge
-					}) === o.Je.ConfidenceAndSuccess
+						experimentName: o.Fe
+					}) === o.Ie.ConfidenceAndSuccess
 				},
 				p = t => {
 					const e = Object(l.c)(t, {
 						experimentEligibilitySelector: l.a,
-						experimentName: o.Ge
+						experimentName: o.Fe
 					});
-					return e === o.Je.ContentMatch || e === o.Je.ConfidenceAndSuccess || e === o.N.Control1 || e === o.N.Control2
+					return e === o.Ie.ContentMatch || e === o.Ie.ConfidenceAndSuccess || e === o.N.Control1 || e === o.N.Control2
 				},
 				m = t => {
 					const e = Object(l.c)(t, {
 						experimentEligibilitySelector: l.a,
-						experimentName: o.Ge
+						experimentName: o.Fe
 					});
 					return e === o.N.Control1 || e === o.N.Control2
 				},
 				b = t => {
 					const e = Object(l.c)(t, {
 						experimentEligibilitySelector: l.a,
-						experimentName: o.Ge
+						experimentName: o.Fe
 					});
-					return e === o.Je.ContentMatch || e === o.Je.ConfidenceAndSuccess
+					return e === o.Ie.ContentMatch || e === o.Ie.ConfidenceAndSuccess
 				},
 				S = t => t.creations.subredditRec.api.pending,
 				E = t => t.creations.subredditRec.api.error,
@@ -3037,9 +3037,9 @@
 					experimentName: r.bd,
 					experimentEligibilitySelector: t => c(t, e)
 				}), t => t),
-				d = t => t === r.If.NoCommunityWidgets,
-				u = t => t === r.If.NoRulesModerators,
-				_ = t => t === r.If.RelatedPostsDu
+				d = t => t === r.Hf.NoCommunityWidgets,
+				u = t => t === r.Hf.NoRulesModerators,
+				_ = t => t === r.Hf.RelatedPostsDu
 		},
 		"./src/reddit/selectors/tooltip.ts": function(t, e, i) {
 			"use strict";
@@ -3065,4 +3065,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow.1dcb91cee34ca4cf1693.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow.f04e05be08cdd40b6a61.js.map

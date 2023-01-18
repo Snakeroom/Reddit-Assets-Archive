@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AchievementsActions.cf2f5ac26e2ae57b0b85.js
-// Retrieved at 1/11/2023, 11:10:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AchievementsActions.9f4a903df410f40f4c64.js
+// Retrieved at 1/18/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AchievementsActions"], {
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, r) {
@@ -95,7 +95,7 @@
 					if (!e) return;
 					const s = i(),
 						d = Object(h.m)(s);
-					if (!d || !Object(m.f)(s, {
+					if (!d || !Object(m.e)(s, {
 							subredditId: e
 						})) return;
 					const n = !!Object(w.e)(s, {
@@ -211,4 +211,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AchievementsActions.cf2f5ac26e2ae57b0b85.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AchievementsActions.9f4a903df410f40f4c64.js.map

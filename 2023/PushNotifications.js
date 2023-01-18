@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PushNotifications.bd276a9a4839c752f204.js
-// Retrieved at 1/18/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PushNotifications.e4e4ade0b5c951b4824d.js
+// Retrieved at 1/18/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -65,13 +65,13 @@
 			})), i.d(t, "requestNotificationsPermissions", (function() {
 				return R
 			})), i.d(t, "subscribeForPNs", (function() {
-				return L
+				return B
 			})), i.d(t, "unsubscribeFromPNs", (function() {
-				return P
+				return L
 			})), i.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
-				return E
+				return P
 			})), i.d(t, "subscribeToPermissionsChange", (function() {
-				return A
+				return E
 			}));
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
 				s = i("./node_modules/lodash/omit.js"),
@@ -99,19 +99,19 @@
 			const F = e => Object(w.c)(e, {
 				experimentEligibilitySelector: S.S,
 				experimentName: y.tb
-			}) === y.Cd;
+			}) === y.Bd;
 			var N = i("./src/reddit/selectors/experiments/delayDnPermission.ts"),
 				x = i("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts");
-			const C = e => Object(w.c)(e, {
+			const W = e => Object(w.c)(e, {
 				experimentName: y.Wb,
 				experimentEligibilitySelector: w.a
-			}) === y.Cd;
-			var W = i("./src/reddit/selectors/meta.ts");
-			let q = !1;
+			}) === y.Bd;
+			var q = i("./src/reddit/selectors/meta.ts");
+			let C = !1;
 			const D = async (e, t) => {
 				const i = Object(S.R)(e);
-				if (q) return;
-				if (q = !0, Object(f.a)(e) !== d.d.NotificationsSupported) return;
+				if (C) return;
+				if (C = !0, Object(f.a)(e) !== d.d.NotificationsSupported) return;
 				await Object(u.a)();
 				navigator.serviceWorker.addEventListener("message", n => {
 					const s = n.data,
@@ -134,8 +134,8 @@
 				let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : () => {};
 				return async (n, s, o) => {
 					const c = s(),
-						u = Object(W.f)(c),
-						l = C(c),
+						u = Object(q.f)(c),
+						l = W(c),
 						b = !!Object(k.a)(c),
 						f = Object(N.a)(c),
 						p = Object(x.e)(c),
@@ -147,16 +147,16 @@
 					j.l(c), await Object(a.b)(e, t, () => {
 						l || f || b || n(Object(d.s)()), n(Object(d.q)()), j.j(c)
 					}, (e, t) => {
-						n(Object(d.o)()), n(P(t ? d.a.Denied : d.a.Closed)), e && (t ? j.e(c) : j.f(c)), i()
+						n(Object(d.o)()), n(L(t ? d.a.Denied : d.a.Closed)), e && (t ? j.e(c) : j.f(c)), i()
 					}, e => {
-						n(Object(d.p)()), n(L()), e && j.d(c), i()
+						n(Object(d.p)()), n(B()), e && j.d(c), i()
 					}, () => {
 						n(Object(d.n)()), i()
 					}, () => {
 						n(Object(d.r)())
 					}, O)
 				}
-			}, L = e => async (t, i, s) => {
+			}, B = e => async (t, i, s) => {
 				const o = i();
 				try {
 					switch (await Object(c.b)(s.gqlContext)) {
@@ -177,7 +177,7 @@
 				} catch (r) {
 					j.k(o, "registration_failed_uncaught_exception"), console.error(r)
 				}
-			}, P = (e, t) => async i => {
+			}, L = (e, t) => async i => {
 				try {
 					Object(f.b)(e);
 					const s = await Object(u.a)();
@@ -191,7 +191,7 @@
 						})))
 					}
 				} catch (s) {}
-			}, E = e => async (t, i) => {
+			}, P = e => async (t, i) => {
 				const n = i();
 				if (Object(f.a)(n) === d.d.NotificationsSupported) switch (Object(a.a)()) {
 					case d.a.Default:
@@ -201,7 +201,7 @@
 					case d.a.Denied:
 						t(Object(b.h)(e))
 				}
-			}, A = () => async (e, t) => {
+			}, E = () => async (e, t) => {
 				var i;
 				if (!(null === (i = null === navigator || void 0 === navigator ? void 0 : navigator.permissions) || void 0 === i ? void 0 : i.query)) return;
 				const n = t();
@@ -212,13 +212,13 @@
 				s.onchange = () => (t => {
 					switch (t) {
 						case d.a.Denied:
-							e(P(d.a.Denied)), j.e(n);
+							e(L(d.a.Denied)), j.e(n);
 							break;
 						case d.a.Granted:
-							e(L()), j.d(n);
+							e(B()), j.d(n);
 							break;
 						default:
-							e(P(d.a.Default))
+							e(L(d.a.Default))
 					}
 				})(s.state)
 			}
@@ -400,4 +400,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.bd276a9a4839c752f204.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.e4e4ade0b5c951b4824d.js.map

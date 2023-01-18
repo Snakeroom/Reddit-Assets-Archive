@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.bc5e588fd5a82507ac46.js
-// Retrieved at 1/18/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.bebcb45b5bbff79024a3.js
+// Retrieved at 1/18/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Economics-SubredditPremium-LFGBanner"], {
 		"./node_modules/lodash/_arraySample.js": function(e, t, n) {
@@ -115,14 +115,14 @@
 										var y = t[b];
 										if ("number" == typeof y) m[b] = y, p[b] = 0, i[b] = y, l[b] = 0;
 										else {
-											for (var h = s.state.lastIdealStyle[b], _ = s.state.lastIdealVelocity[b], g = 0; g < a; g++) {
-												var v = c.default(f / 1e3, h, _, y.val, y.stiffness, y.damping, y.precision);
-												h = v[0], _ = v[1]
+											for (var h = s.state.lastIdealStyle[b], g = s.state.lastIdealVelocity[b], _ = 0; _ < a; _++) {
+												var v = c.default(f / 1e3, h, g, y.val, y.stiffness, y.damping, y.precision);
+												h = v[0], g = v[1]
 											}
-											var S = c.default(f / 1e3, h, _, y.val, y.stiffness, y.damping, y.precision),
+											var S = c.default(f / 1e3, h, g, y.val, y.stiffness, y.damping, y.precision),
 												O = S[0],
 												j = S[1];
-											m[b] = h + (O - h) * o, p[b] = _ + (j - _) * o, i[b] = h, l[b] = _
+											m[b] = h + (O - h) * o, p[b] = g + (j - g) * o, i[b] = h, l[b] = g
 										}
 									} s.animationID = null, s.accumulatedTime -= a * f, s.setState({
 									currentStyle: m,
@@ -248,13 +248,13 @@
 							for (var o = (s.accumulatedTime - Math.floor(s.accumulatedTime / f) * f) / f, a = Math.floor(s.accumulatedTime / f), i = [], l = [], m = [], p = [], b = 0; b < t.length; b++) {
 								var y = t[b],
 									h = {},
-									_ = {},
 									g = {},
+									_ = {},
 									v = {};
 								for (var S in y)
 									if (Object.prototype.hasOwnProperty.call(y, S)) {
 										var O = y[S];
-										if ("number" == typeof O) h[S] = O, _[S] = 0, g[S] = O, v[S] = 0;
+										if ("number" == typeof O) h[S] = O, g[S] = 0, _[S] = O, v[S] = 0;
 										else {
 											for (var j = s.state.lastIdealStyles[b][S], E = s.state.lastIdealVelocities[b][S], I = 0; I < a; I++) {
 												var w = c.default(f / 1e3, j, E, O.val, O.stiffness, O.damping, O.precision);
@@ -263,9 +263,9 @@
 											var P = c.default(f / 1e3, j, E, O.val, O.stiffness, O.damping, O.precision),
 												C = P[0],
 												x = P[1];
-											h[S] = j + (C - j) * o, _[S] = E + (x - E) * o, g[S] = j, v[S] = E
+											h[S] = j + (C - j) * o, g[S] = E + (x - E) * o, _[S] = j, v[S] = E
 										}
-									} m[b] = h, p[b] = _, i[b] = g, l[b] = v
+									} m[b] = h, p[b] = g, i[b] = _, l[b] = v
 							}
 							s.animationID = null, s.accumulatedTime -= a * f, s.setState({
 								currentStyles: m,
@@ -397,20 +397,20 @@
 							style: s
 						}
 					})), p = [], f = [], b = [], y = [], h = 0; h < u.length; h++) {
-					for (var _ = u[h], g = null, v = 0; v < r.length; v++)
-						if (r[v].key === _.key) {
-							g = v;
+					for (var g = u[h], _ = null, v = 0; v < r.length; v++)
+						if (r[v].key === g.key) {
+							_ = v;
 							break
-						} if (null == g) {
-						var S = e(_);
+						} if (null == _) {
+						var S = e(g);
 						p[h] = S, b[h] = S;
-						var O = a.default(_.style);
+						var O = a.default(g.style);
 						f[h] = O, y[h] = O
-					} else p[h] = o[g], b[h] = c[g], f[h] = i[g], y[h] = l[g]
+					} else p[h] = o[_], b[h] = c[_], f[h] = i[_], y[h] = l[_]
 				}
 				return [u, p, f, b, y]
 			}
-			var _ = function(e) {
+			var g = function(e) {
 				function t(n) {
 					var s = this;
 					! function(e, t) {
@@ -452,7 +452,7 @@
 								var r = e || l.default(),
 									o = r - s.prevTime;
 								if (s.prevTime = r, s.accumulatedTime = s.accumulatedTime + o, s.accumulatedTime > 10 * b && (s.accumulatedTime = 0), 0 === s.accumulatedTime) return s.animationID = null, void s.startAnimationIfNecessary();
-								for (var a = (s.accumulatedTime - Math.floor(s.accumulatedTime / b) * b) / b, i = Math.floor(s.accumulatedTime / b), d = h(s.props.willEnter, s.props.willLeave, s.props.didLeave, s.state.mergedPropsStyles, n, s.state.currentStyles, s.state.currentVelocities, s.state.lastIdealStyles, s.state.lastIdealVelocities), u = d[0], p = d[1], f = d[2], _ = d[3], g = d[4], v = 0; v < u.length; v++) {
+								for (var a = (s.accumulatedTime - Math.floor(s.accumulatedTime / b) * b) / b, i = Math.floor(s.accumulatedTime / b), d = h(s.props.willEnter, s.props.willLeave, s.props.didLeave, s.state.mergedPropsStyles, n, s.state.currentStyles, s.state.currentVelocities, s.state.lastIdealStyles, s.state.lastIdealVelocities), u = d[0], p = d[1], f = d[2], g = d[3], _ = d[4], v = 0; v < u.length; v++) {
 									var S = u[v].style,
 										O = {},
 										j = {},
@@ -463,7 +463,7 @@
 											var P = S[w];
 											if ("number" == typeof P) O[w] = P, j[w] = 0, E[w] = P, I[w] = 0;
 											else {
-												for (var C = _[v][w], x = g[v][w], k = 0; k < i; k++) {
+												for (var C = g[v][w], x = _[v][w], k = 0; k < i; k++) {
 													var N = c.default(b / 1e3, C, x, P.val, P.stiffness, P.damping, P.precision);
 													C = N[0], x = N[1]
 												}
@@ -472,13 +472,13 @@
 													M = T[1];
 												O[w] = C + (D - C) * a, j[w] = x + (M - x) * a, E[w] = C, I[w] = x
 											}
-										} _[v] = E, g[v] = I, p[v] = O, f[v] = j
+										} g[v] = E, _[v] = I, p[v] = O, f[v] = j
 								}
 								s.animationID = null, s.accumulatedTime -= i * b, s.setState({
 									currentStyles: p,
 									currentVelocities: f,
-									lastIdealStyles: _,
-									lastIdealVelocities: g,
+									lastIdealStyles: g,
+									lastIdealVelocities: _,
 									mergedPropsStyles: u
 								}), s.unreadPropStyles = null, s.startAnimationIfNecessary()
 							}
@@ -573,7 +573,7 @@
 					return t && p.default.Children.only(t)
 				}, t
 			}(p.default.Component);
-			t.default = _, e.exports = t.default
+			t.default = g, e.exports = t.default
 		},
 		"./node_modules/react-motion/lib/mapToZero.js": function(e, t, n) {
 			"use strict";
@@ -1060,8 +1060,8 @@
 				b = n("./src/reddit/models/Product/index.ts"),
 				y = n("./src/reddit/reducers/economics/subredditPremium/index.ts"),
 				h = n("./src/reddit/selectors/economics.ts"),
-				_ = n("./src/reddit/selectors/products.ts"),
-				g = n("./src/reddit/actions/economics/me/thunkedActions.ts"),
+				g = n("./src/reddit/selectors/products.ts"),
+				_ = n("./src/reddit/actions/economics/me/thunkedActions.ts"),
 				v = n("./src/reddit/actions/economics/subredditPremium/actionCreators.ts");
 
 			function S(e) {
@@ -1076,7 +1076,7 @@
 					apiContext: r
 				} = n;
 				if (!t().user.account) return;
-				await e(Object(g.b)({
+				await e(Object(_.b)({
 					includeMemberships: !0
 				}));
 				const s = t().economics.me.data.specialMemberships || {},
@@ -1161,7 +1161,7 @@
 				if (await r(E(e, !0)), n && t) {
 					const n = s(),
 						o = Object(h.f)(n, e),
-						a = Object(_.a)(n, t);
+						a = Object(g.a)(n, t);
 					if (!o[Object(f.d)(a.placement)] && a) {
 						const t = Object(h.l)(n, {
 							subredditId: e,
@@ -1313,13 +1313,13 @@
 					}),
 					src: `${p.a.assetPath}/img/memberships/banners/how_to_use_emoji.gif`
 				},
-				_ = {
+				g = {
 					description: () => r.fbt._("Open 'My Badges' in the Sidebar to apply your badge.", null, {
 						hk: "rQPFZ"
 					}),
 					src: `${p.a.assetPath}/img/memberships/banners/how_to_apply_badge.gif`
 				},
-				g = {
+				_ = {
 					description: () => r.fbt._("Want to change your badge? Visit the Gallery in the Sidebar to view the latest styles.", null, {
 						hk: "71rqs"
 					}),
@@ -1327,7 +1327,7 @@
 				};
 
 			function v(e) {
-				const t = (e.hideEmoji ? [] : [h]).concat(e.boughtBadge ? _ : g);
+				const t = (e.hideEmoji ? [] : [h]).concat(e.boughtBadge ? g : _);
 				return o.a.createElement("article", {
 					className: Object(d.a)(e.className, y.a.container)
 				}, o.a.createElement("header", {
@@ -1394,7 +1394,7 @@
 				F = n("./src/reddit/components/Economics/SubredditPremium/LFGBanner/Claim/index.m.less"),
 				R = n.n(F);
 
-			function U(e) {
+			function L(e) {
 				const {
 					className: t,
 					platform: n,
@@ -1459,8 +1459,8 @@
 				}))
 			}
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
-			var L = n("./node_modules/lodash/sample.js"),
-				G = n.n(L),
+			var U = n("./node_modules/lodash/sample.js"),
+				G = n.n(U),
 				$ = n("./node_modules/react-motion/lib/react-motion.js"),
 				V = n("./src/reddit/icons/svgs/Replay/index.tsx"),
 				W = n("./src/reddit/components/Economics/SubredditPremium/LFGBanner/Example/index.m.less"),
@@ -1738,8 +1738,8 @@
 						})))
 					}
 				}),
-				_e = n("./src/reddit/components/Economics/SubredditPremium/LFGBanner/index.m.less"),
-				ge = n.n(_e);
+				ge = n("./src/reddit/components/Economics/SubredditPremium/LFGBanner/index.m.less"),
+				_e = n.n(ge);
 			! function(e) {
 				e.CanClaim = "canclaim", e.Claimed = "claimed", e.Dismissed = "dismissed", e.Generating = "generating", e.Hidden = "hidden", e.Select = "select"
 			}(pe || (pe = {}));
@@ -1858,9 +1858,9 @@
 						selectedPlayerType: l
 					} = this.state;
 					return s && n !== k.a.DontKnow && a !== pe.Hidden ? this.state.show === pe.Dismissed ? o.a.createElement("div", {
-						className: Object(d.a)(ge.a.dismissedContainer, e)
+						className: Object(d.a)(_e.a.dismissedContainer, e)
 					}, o.a.createElement("div", {
-						className: ge.a.dismissedText
+						className: _e.a.dismissedText
 					}, r.fbt._("Ok, we won't show you this again.", null, {
 						hk: "4z33KK"
 					})), o.a.createElement(j.l, {
@@ -1868,20 +1868,20 @@
 					}, r.fbt._("undo", null, {
 						hk: "1A9z3Y"
 					}))) : this.state.show === pe.Claimed ? o.a.createElement("div", {
-						className: Object(d.a)(ge.a.successContainer, e)
+						className: Object(d.a)(_e.a.successContainer, e)
 					}, o.a.createElement(C.a, {
-						className: ge.a.close,
+						className: _e.a.close,
 						onClick: this.handleDismiss
 					}), o.a.createElement(v, {
 						boughtBadge: !0,
 						hideEmoji: !0
 					})) : o.a.createElement("article", {
-						className: Object(d.a)(ge.a.container, e)
+						className: Object(d.a)(_e.a.container, e)
 					}, o.a.createElement(X, {
-						className: ge.a.header,
+						className: _e.a.header,
 						subredditId: t
 					}), o.a.createElement("div", {
-						className: ge.a.content
+						className: _e.a.content
 					}, o.a.createElement(he, {
 						correlationId: this.correlationId,
 						onGenerate: e => this.setState(() => ({
@@ -1891,16 +1891,16 @@
 							selectedPlayerType: e.playerType
 						}))
 					}), a === pe.Select && o.a.createElement(K, {
-						className: ge.a.example
-					}), a === pe.CanClaim && i && c && l && o.a.createElement(U, {
-						className: ge.a.claim,
+						className: _e.a.example
+					}), a === pe.CanClaim && i && c && l && o.a.createElement(L, {
+						className: _e.a.claim,
 						platform: c,
 						playerType: l,
 						region: i,
 						userIsSubscriber: n === k.a.Subscribed,
 						onClaim: e => this.handleClaim(e)
 					})), o.a.createElement(C.a, {
-						className: ge.a.close,
+						className: _e.a.close,
 						onClick: this.handleDismiss
 					})) : null
 				}
@@ -2815,9 +2815,9 @@
 		"./src/reddit/selectors/economics.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
-				return _
-			})), n.d(t, "o", (function() {
 				return g
+			})), n.d(t, "o", (function() {
+				return _
 			})), n.d(t, "a", (function() {
 				return v
 			})), n.d(t, "x", (function() {
@@ -2851,9 +2851,9 @@
 			})), n.d(t, "y", (function() {
 				return R
 			})), n.d(t, "u", (function() {
-				return U
-			})), n.d(t, "v", (function() {
 				return L
+			})), n.d(t, "v", (function() {
+				return U
 			})), n.d(t, "b", (function() {
 				return G
 			})), n.d(t, "w", (function() {
@@ -2883,7 +2883,7 @@
 				b = n("./src/reddit/selectors/gold/powerups/index.ts"),
 				y = n("./src/reddit/selectors/gold/powerups/benefitSettings.ts");
 			const h = [],
-				_ = (e, t) => {
+				g = (e, t) => {
 					const n = e.economics.subredditPremium[t];
 					if (n && n.status === u.a.Fetched) {
 						const e = n.data.subscription,
@@ -2895,8 +2895,8 @@
 					}
 					return null
 				},
-				g = (e, t) => {
-					const n = _(e, t);
+				_ = (e, t) => {
+					const n = g(e, t);
 					return n && n.endsAt || null
 				};
 			var v;
@@ -2906,7 +2906,7 @@
 			const S = (e, t) => {
 					const n = e.economics.subredditPremium[t];
 					if (n && n.status === u.a.Fetched) {
-						const n = g(e, t),
+						const n = _(e, t),
 							r = Date.now();
 						return n && r < n ? v.Subscribed : v.NotSubscribed
 					}
@@ -3039,7 +3039,7 @@
 					B(e, t).forEach(e => {
 						e.price && e.currency && (n[e.currency] = e.price)
 					});
-					const r = _(e, t);
+					const r = g(e, t);
 					return r && r.price && r.currency && (n[r.currency] = r.price), n
 				},
 				F = (e, t) => {
@@ -3059,11 +3059,11 @@
 					const t = e.economics.paymentSystems;
 					return !!(t.status === l.a.Fetched && t.data && t.data.tips && t.data.tips.usdr && t.data.tips.usdr.allowed)
 				},
-				U = (e, t) => {
+				L = (e, t) => {
 					const n = e.user.ownedBadges[t] || {};
 					return !!Object.keys(n).length
 				},
-				L = e => {
+				U = e => {
 					const t = e.economics.paymentSystems;
 					return t.status === l.a.Fetched && !!t.data && !!t.data.stripe && !!t.data.stripe.stripeAccountId
 				},
@@ -3085,10 +3085,10 @@
 					if (Object(f.a)(e)) return !(!t || !Object(m.C)(e, {
 						subredditId: t
 					})) || (!!Y(e, t) || !(!r.d.spGiphy(e) || !q(e, n)));
-					if (!Object(y.b)(e, {
+					if (!Object(y.a)(e, {
 							subredditId: t
 						})) return !1;
-					if (Object(b.g)(e, {
+					if (Object(b.f)(e, {
 							subredditId: t
 						})) return !0;
 					if (q(e, n)) return !0;
@@ -3114,6 +3114,80 @@
 					}
 				},
 				K = e => e.economics.pointsCopy.data
+		},
+		"./src/reddit/selectors/gold/powerups/benefitSettings.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return l
+			}));
+			var r = n("./src/reddit/models/Gold/Powerups/index.ts"),
+				s = n("./src/lib/initializeClient/installReducer.ts"),
+				o = n("./src/reddit/actions/gold/constants.ts");
+			const a = {};
+			var i = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : a,
+						t = arguments.length > 1 ? arguments[1] : void 0;
+					var n, r;
+					switch (t.type) {
+						case o.mb:
+						case o.nb: {
+							const {
+								benefitStatuses: r,
+								subredditId: s
+							} = t.payload;
+							if (!r) return e;
+							const o = null !== (n = e[s]) && void 0 !== n ? n : {},
+								a = {};
+							return r.forEach(e => {
+								let {
+									benefit: t,
+									isEnabled: n
+								} = e;
+								a[t] = n
+							}), {
+								...e,
+								[s]: {
+									...o,
+									...a
+								}
+							}
+						}
+						case o.L: {
+							const {
+								benefitStatuses: n,
+								subredditId: s
+							} = t.payload, o = null !== (r = e[s]) && void 0 !== r ? r : {}, a = {};
+							return n.forEach(e => {
+								let {
+									benefit: t,
+									isEnabled: n
+								} = e;
+								a[t] = n
+							}), {
+								...e,
+								[s]: {
+									...o,
+									...a
+								}
+							}
+						}
+						default:
+							return e
+					}
+				},
+				c = n("./node_modules/reselect/es/index.js");
+			Object(s.a)({
+				features: {
+					powerupsBenefitSettings: i
+				}
+			});
+			const d = (e, t) => {
+					let {
+						subredditId: n
+					} = t;
+					return n ? e.features.powerupsBenefitSettings[n] : null
+				},
+				l = (e => Object(c.a)(d, t => !!(null == t ? void 0 : t[e])))(r.a.CommentsWithGifs)
 		},
 		"./src/reddit/selectors/products.ts": function(e, t, n) {
 			"use strict";
@@ -3149,4 +3223,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.bc5e588fd5a82507ac46.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.bebcb45b5bbff79024a3.js.map

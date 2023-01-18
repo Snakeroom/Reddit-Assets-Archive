@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.15b5b2bde971fccc8d2c.js
-// Retrieved at 1/18/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.ffc4f37c7e2be7d21168.js
+// Retrieved at 1/18/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1537,8 +1537,8 @@
 				z = n("./src/reddit/icons/fonts/Lock/index.tsx"),
 				q = n("./src/reddit/icons/fonts/Remove/index.tsx"),
 				Q = n("./src/reddit/icons/fonts/Report/index.tsx"),
-				G = n("./src/reddit/icons/fonts/Spam/index.tsx"),
-				K = n("./src/reddit/selectors/modQueue.ts"),
+				K = n("./src/reddit/icons/fonts/Spam/index.tsx"),
+				G = n("./src/reddit/selectors/modQueue.ts"),
 				Y = n("./src/reddit/components/Comments/Comment/TopMeta/modBadgeTooltip.m.less"),
 				Z = n.n(Y);
 			const $ = e => {
@@ -1553,7 +1553,7 @@
 					l = Object(i.e)(e => F.e[Object(U.V)(e, {
 						pageLayer: m
 					})] === F.d.Card),
-					u = Object(i.e)(e => Object(K.b)(e, l)),
+					u = Object(i.e)(e => Object(G.b)(e, l)),
 					p = e => () => c(Object(I.f)({
 						tooltipId: e
 					})),
@@ -1603,7 +1603,7 @@
 						hk: "40Ju3g"
 					}),
 					isFilled: !0
-				}), t.bannedBy && t.isSpam && !u && r.a.createElement(r.a.Fragment, null, r.a.createElement(G.a, {
+				}), t.bannedBy && t.isSpam && !u && r.a.createElement(r.a.Fragment, null, r.a.createElement(K.a, {
 					className: Z.a.spamIcon,
 					desc: Object(H.d)(t),
 					id: C,
@@ -1660,7 +1660,7 @@
 					renderedInOverlay: M,
 					subredditDisplayText: N,
 					isAdmin: D
-				} = e, L = Object(_.a)(), B = a.subredditId, F = Object(i.e)(e => Object(E.f)(e, {
+				} = e, L = Object(_.a)(), B = a.subredditId, F = Object(i.e)(e => Object(E.e)(e, {
 					subredditId: B
 				}));
 				if (a.isDeleted && !D) return r.a.createElement("div", {
@@ -2607,11 +2607,11 @@
 				s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(o.a)(e => Object(r.c)(e, {
-					experimentName: s.Mf,
+					experimentName: s.Lf,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				a = Object(o.a)(i, e => e === s.Gf)
+				a = Object(o.a)(i, e => e === s.Ff)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.15b5b2bde971fccc8d2c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.ffc4f37c7e2be7d21168.js.map

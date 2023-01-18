@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.a782cde6dda23ccc5aaf.js
-// Retrieved at 1/18/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.9ceabcbe6a9086ca2e0a.js
+// Retrieved at 1/18/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsGifsTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/BaseTooltip.m.less": function(e, t, s) {
@@ -104,8 +104,8 @@
 				d = s.n(a),
 				c = s("./node_modules/react/index.js"),
 				l = s.n(c),
-				u = s("./node_modules/react-redux/es/index.js"),
-				h = s("./node_modules/reselect/es/index.js"),
+				h = s("./node_modules/react-redux/es/index.js"),
+				u = s("./node_modules/reselect/es/index.js"),
 				p = s("./src/reddit/actions/toaster.ts"),
 				m = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				f = s("./src/reddit/controls/LoadingIcon/index.tsx"),
@@ -114,11 +114,11 @@
 				x = s("./src/reddit/models/Toast/index.ts"),
 				T = s("./src/reddit/selectors/economics.ts"),
 				E = s("./src/reddit/components/RichTextEditor/helpers/common.ts"),
-				_ = s("./src/reddit/components/RichTextEditor/media/helpers.ts");
-			let y;
+				y = s("./src/reddit/components/RichTextEditor/media/helpers.ts");
+			let _;
 
 			function C() {
-				y || (y = fetch("https://meta.redditmedia.com/public/fortnitebr/giphy_blacklist.json").then(e => e.json()))
+				_ || (_ = fetch("https://meta.redditmedia.com/public/fortnitebr/giphy_blacklist.json").then(e => e.json()))
 			}
 			var w = s("./node_modules/lodash/debounce.js"),
 				v = s.n(w),
@@ -176,10 +176,10 @@
 					}))
 				}
 			}
-			const O = Object(h.c)({
+			const O = Object(u.c)({
 				isNightMode: I.fb
 			});
-			var N = Object(u.b)(O)(B),
+			var N = Object(h.b)(O)(B),
 				P = s("./src/lib/constants/icons.ts"),
 				M = s("./src/reddit/controls/Button/index.tsx"),
 				U = s("./src/reddit/icons/fonts/index.tsx");
@@ -221,7 +221,7 @@
 					}, 300), this.onResultClick = e => {
 						this.props.onResultClick(this.props.hasGifProduct);
 						const t = this.props.editorState,
-							s = Object(_.k)(t, e.id, e.url, e.hasDownsizedImage, e.width, e.height, t.getSelection().getEndKey(), E.a.before);
+							s = Object(y.k)(t, e.id, e.url, e.hasDownsizedImage, e.width, e.height, t.getSelection().getEndKey(), E.a.before);
 						this.props.onChange(s), this.props.onClose()
 					}
 				}
@@ -249,7 +249,7 @@
 					} = this.state;
 					!e && s && null !== t && (await
 						function(e) {
-							return C(), y.then(t => {
+							return C(), _.then(t => {
 								return !!e.split(" ").concat(e).find(e => -1 !== t.indexOf(e.toLowerCase()))
 							}).catch(() => !1)
 						}(s) || (this.setState({
@@ -370,7 +370,7 @@
 					})))
 				}
 			}
-			const H = Object(h.c)({
+			const H = Object(u.c)({
 				hasGifProduct: (e, t) => {
 					let {
 						subreddit: s
@@ -378,7 +378,7 @@
 					return Object(T.w)(e, s.id)
 				}
 			});
-			t.a = Object(m.c)(Object(u.b)(H, e => ({
+			t.a = Object(m.c)(Object(h.b)(H, e => ({
 				showErrorToast: t => e(Object(p.f)({
 					text: t,
 					kind: x.b.Error,
@@ -484,8 +484,6 @@
 				return c
 			})), s.d(t, "d", (function() {
 				return l
-			})), s.d(t, "f", (function() {
-				return u
 			}));
 			var o = s("./src/reddit/helpers/correlationIdTracker.ts"),
 				i = s("./src/reddit/selectors/telemetry.ts");
@@ -547,19 +545,8 @@
 					subreddit: t ? i.lb(s, t) : void 0,
 					...n(s),
 					correlationId: e
-				}),
-				u = (e, t, s) => o => ({
-					source: "powerups_settings",
-					action: "click",
-					noun: e,
-					setting: {
-						value: String(t),
-						oldValue: String(s)
-					},
-					subreddit: i.kb(o),
-					...i.o(o)
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.a782cde6dda23ccc5aaf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.9ceabcbe6a9086ca2e0a.js.map

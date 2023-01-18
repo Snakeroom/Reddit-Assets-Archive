@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.fe9f84404c5cf3ec0827.js
-// Retrieved at 1/11/2023, 11:10:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.01d9c9f5fdb92a24b46d.js
+// Retrieved at 1/18/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, o) {
@@ -95,7 +95,7 @@
 						forceDecimals: p,
 						currency: y = t.currency || (t.type ? h(t.type) : i.c),
 						type: b = t.type || (t.currency ? d(t.currency) : i.b.Real)
-					} = t, g = Number(e), f = String(e);
+					} = t, f = Number(e), g = String(e);
 					switch (b) {
 						case i.b.Reddit: {
 							const e = i.e[y],
@@ -103,13 +103,13 @@
 							return Object(l.c)() ? new Intl.NumberFormat(o, {
 								currencyDisplay: "symbol",
 								...u
-							}).format(g) + " " + t : m(g, r, o, t)
+							}).format(f) + " " + t : m(f, r, o, t)
 						}
 						case i.b.Crypto: {
 							if (r) {
-								return Object(s.d)(f, c) + " " + y
+								return Object(s.d)(g, c) + " " + y
 							}
-							const e = Number(Object(s.c)(f, c));
+							const e = Number(Object(s.c)(g, c));
 							return Object(l.c)() ? new Intl.NumberFormat(o, {
 								style: "currency",
 								currency: y,
@@ -121,7 +121,7 @@
 						}
 						case i.b.Real:
 						default: {
-							const e = Number(Object(a.a)(f, p));
+							const e = Number(Object(a.a)(g, p));
 							return Object(l.c)() ? new Intl.NumberFormat(o, {
 								style: "currency",
 								currency: y,
@@ -508,9 +508,9 @@
 				y = o("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Documentation/index.m.less"),
 				b = o.n(y);
 			const {
-				fbt: g
-			} = o("./node_modules/fbt/lib/FbtPublic.js"), {
 				fbt: f
+			} = o("./node_modules/fbt/lib/FbtPublic.js"), {
+				fbt: g
 			} = o("./node_modules/fbt/lib/FbtPublic.js"), {
 				fbt: w
 			} = o("./node_modules/fbt/lib/FbtPublic.js");
@@ -716,9 +716,9 @@
 			const {
 				fbt: L
 			} = o("./node_modules/fbt/lib/FbtPublic.js"), {
-				fbt: Y
+				fbt: G
 			} = o("./node_modules/fbt/lib/FbtPublic.js");
-			var G = o("./node_modules/react-router-redux/es/index.js");
+			var Y = o("./node_modules/react-router-redux/es/index.js");
 			const z = e => {
 					let {
 						className: t
@@ -746,7 +746,7 @@
 						className: b.a.floatingMenuButton,
 						onClick: () => l(!n),
 						isMenuOpen: n
-					})) : (o(Object(G.b)(m("introduction"))), null)
+					})) : (o(Object(Y.b)(m("introduction"))), null)
 				},
 				q = {
 					introduction: i.a.createElement(() => i.a.createElement("main", null, i.a.createElement("h1", null, C._("Introduction", null, {
@@ -782,21 +782,21 @@
 					})))], {
 						hk: "2jUDyJ"
 					}))), null),
-					"distribution-process": i.a.createElement(() => i.a.createElement("main", null, i.a.createElement("h1", null, g._("Distribution Process", null, {
+					"distribution-process": i.a.createElement(() => i.a.createElement("main", null, i.a.createElement("h1", null, f._("Distribution Process", null, {
 						hk: "20vYmV"
-					})), i.a.createElement("h2", null, g._("Community Points are distributed every 4 weeks based on contributions people make to the community.", null, {
+					})), i.a.createElement("h2", null, f._("Community Points are distributed every 4 weeks based on contributions people make to the community.", null, {
 						hk: "126Ahj"
-					})), i.a.createElement("section", null, i.a.createElement("h3", null, g._("Who gets Community Points?", null, {
+					})), i.a.createElement("section", null, i.a.createElement("h3", null, f._("Who gets Community Points?", null, {
 						hk: "1Ed45W"
 					})), i.a.createElement("div", {
 						className: b.a.sideImageContainer
-					}, i.a.createElement("div", null, g._("{=Community Points are distributed across multiple groups.}{=Contributors receive 50% of Community Points.Moderators receive 10% of Community Points.The remaining 40% of Community Points are set aside in a Community Tank, which supports the project in other ways (for example, by allowing users without Points to purchase perks like Special Memberships on-chain).}", [g._param("=Community Points are distributed across multiple groups.", i.a.createElement("p", null, g._("Community Points are distributed across multiple groups.", null, {
+					}, i.a.createElement("div", null, f._("{=Community Points are distributed across multiple groups.}{=Contributors receive 50% of Community Points.Moderators receive 10% of Community Points.The remaining 40% of Community Points are set aside in a Community Tank, which supports the project in other ways (for example, by allowing users without Points to purchase perks like Special Memberships on-chain).}", [f._param("=Community Points are distributed across multiple groups.", i.a.createElement("p", null, f._("Community Points are distributed across multiple groups.", null, {
 						hk: "11MZXG"
-					}))), g._param("=Contributors receive 50% of Community Points.Moderators receive 10% of Community Points.The remaining 40% of Community Points are set aside in a Community Tank, which supports the project in other ways (for example, by allowing users without Points to purchase perks like Special Memberships on-chain).", i.a.createElement("ul", null, g._("{=Contributors receive 50% of Community Points.}{=Moderators receive 10% of Community Points.}{=The remaining 40% of Community Points are set aside in a Community Tank, which supports the project in other ways (for example, by allowing users without Points to purchase perks like Special Memberships on-chain).}", [g._param("=Contributors receive 50% of Community Points.", i.a.createElement("li", null, g._("Contributors receive 50% of Community Points.", null, {
+					}))), f._param("=Contributors receive 50% of Community Points.Moderators receive 10% of Community Points.The remaining 40% of Community Points are set aside in a Community Tank, which supports the project in other ways (for example, by allowing users without Points to purchase perks like Special Memberships on-chain).", i.a.createElement("ul", null, f._("{=Contributors receive 50% of Community Points.}{=Moderators receive 10% of Community Points.}{=The remaining 40% of Community Points are set aside in a Community Tank, which supports the project in other ways (for example, by allowing users without Points to purchase perks like Special Memberships on-chain).}", [f._param("=Contributors receive 50% of Community Points.", i.a.createElement("li", null, f._("Contributors receive 50% of Community Points.", null, {
 						hk: "4F2Wkl"
-					}))), g._param("=Moderators receive 10% of Community Points.", i.a.createElement("li", null, g._("Moderators receive 10% of Community Points.", null, {
+					}))), f._param("=Moderators receive 10% of Community Points.", i.a.createElement("li", null, f._("Moderators receive 10% of Community Points.", null, {
 						hk: "3HcuPW"
-					}))), g._param("=The remaining 40% of Community Points are set aside in a Community Tank, which supports the project in other ways (for example, by allowing users without Points to purchase perks like Special Memberships on-chain).", i.a.createElement("li", null, g._("The remaining 40% of Community Points are set aside in a Community Tank, which supports the project in other ways (for example, by allowing users without Points to purchase perks like Special Memberships on-chain).", null, {
+					}))), f._param("=The remaining 40% of Community Points are set aside in a Community Tank, which supports the project in other ways (for example, by allowing users without Points to purchase perks like Special Memberships on-chain).", i.a.createElement("li", null, f._("The remaining 40% of Community Points are set aside in a Community Tank, which supports the project in other ways (for example, by allowing users without Points to purchase perks like Special Memberships on-chain).", null, {
 						hk: "2RRHD"
 					})))], {
 						hk: "2avYXi"
@@ -804,171 +804,171 @@
 						hk: "1y9aEC"
 					})), i.a.createElement("img", {
 						src: `${n.a.assetPath}/img/communityPoints/landingPage/docs/chart.png`,
-						alt: g._("Pie chart", null, {
+						alt: f._("Pie chart", null, {
 							hk: "3KLyoS"
 						})
-					}))), i.a.createElement("section", null, i.a.createElement("h3", null, g._("How do contributors earn Community Points?", null, {
+					}))), i.a.createElement("section", null, i.a.createElement("h3", null, f._("How do contributors earn Community Points?", null, {
 						hk: "1R03CI"
-					})), g._("{=Contributors earn Community Points based on a measure of their contribution to the subreddit called their Contribution Score.}{=The baseline for this Contribution Score is the amount of karma each user has earned in the subreddit.}{=Subreddits can apply additional rules on top of this baseline karma data to compute the final Contribution Scores. For example, they can choose to double the weight of comments, ignore karma for certain post flairs, or limit Contribution Scores to some maximum amount. SeeDistribution Rules for more details.}{=In order for contributors to claim the Points they have earned, they need to create a Vault within the Reddit mobile app. When a user creates their Vault, they will receive the Points that they have earned up to 24 weeks (~6 months) before. Points earned but not claimed within 24 weeks will expire.}", [g._param("=Contributors earn Community Points based on a measure of their contribution to the subreddit called their Contribution Score.", i.a.createElement("p", null, g._("Contributors earn Community Points based on a measure of their contribution to the subreddit called their Contribution Score.", null, {
+					})), f._("{=Contributors earn Community Points based on a measure of their contribution to the subreddit called their Contribution Score.}{=The baseline for this Contribution Score is the amount of karma each user has earned in the subreddit.}{=Subreddits can apply additional rules on top of this baseline karma data to compute the final Contribution Scores. For example, they can choose to double the weight of comments, ignore karma for certain post flairs, or limit Contribution Scores to some maximum amount. SeeDistribution Rules for more details.}{=In order for contributors to claim the Points they have earned, they need to create a Vault within the Reddit mobile app. When a user creates their Vault, they will receive the Points that they have earned up to 24 weeks (~6 months) before. Points earned but not claimed within 24 weeks will expire.}", [f._param("=Contributors earn Community Points based on a measure of their contribution to the subreddit called their Contribution Score.", i.a.createElement("p", null, f._("Contributors earn Community Points based on a measure of their contribution to the subreddit called their Contribution Score.", null, {
 						hk: "1CSAZ7"
-					}))), g._param("=The baseline for this Contribution Score is the amount of karma each user has earned in the subreddit.", i.a.createElement("p", null, g._("The baseline for this Contribution Score is the amount of karma each user has earned in the subreddit.", null, {
+					}))), f._param("=The baseline for this Contribution Score is the amount of karma each user has earned in the subreddit.", i.a.createElement("p", null, f._("The baseline for this Contribution Score is the amount of karma each user has earned in the subreddit.", null, {
 						hk: "47PKWZ"
-					}))), g._param("=Subreddits can apply additional rules on top of this baseline karma data to compute the final Contribution Scores. For example, they can choose to double the weight of comments, ignore karma for certain post flairs, or limit Contribution Scores to some maximum amount. SeeDistribution Rules for more details.", i.a.createElement("p", null, g._("Subreddits can apply additional rules on top of this baseline karma data to compute the final Contribution Scores. For example, they can choose to double the weight of comments, ignore karma for certain post flairs, or limit Contribution Scores to some maximum amount. See {=Distribution Rules} for more details.", [g._param("=Distribution Rules", i.a.createElement(p.a, {
+					}))), f._param("=Subreddits can apply additional rules on top of this baseline karma data to compute the final Contribution Scores. For example, they can choose to double the weight of comments, ignore karma for certain post flairs, or limit Contribution Scores to some maximum amount. SeeDistribution Rules for more details.", i.a.createElement("p", null, f._("Subreddits can apply additional rules on top of this baseline karma data to compute the final Contribution Scores. For example, they can choose to double the weight of comments, ignore karma for certain post flairs, or limit Contribution Scores to some maximum amount. See {=Distribution Rules} for more details.", [f._param("=Distribution Rules", i.a.createElement(p.a, {
 						to: m("distribution-rules")
-					}, g._("Distribution Rules", null, {
+					}, f._("Distribution Rules", null, {
 						hk: "1ePGZ3"
 					})))], {
 						hk: "3kihZq"
-					}))), g._param("=In order for contributors to claim the Points they have earned, they need to create a Vault within the Reddit mobile app. When a user creates their Vault, they will receive the Points that they have earned up to 24 weeks (~6 months) before. Points earned but not claimed within 24 weeks will expire.", i.a.createElement("p", null, g._("In order for contributors to claim the Points they have earned, they need to create a {=Vault} within the Reddit mobile app. When a user creates their Vault, they will receive the Points that they have earned up to 24 weeks (~6 months) before. Points earned but not claimed within 24 weeks will expire.", [g._param("=Vault", i.a.createElement(p.a, {
+					}))), f._param("=In order for contributors to claim the Points they have earned, they need to create a Vault within the Reddit mobile app. When a user creates their Vault, they will receive the Points that they have earned up to 24 weeks (~6 months) before. Points earned but not claimed within 24 weeks will expire.", i.a.createElement("p", null, f._("In order for contributors to claim the Points they have earned, they need to create a {=Vault} within the Reddit mobile app. When a user creates their Vault, they will receive the Points that they have earned up to 24 weeks (~6 months) before. Points earned but not claimed within 24 weeks will expire.", [f._param("=Vault", i.a.createElement(p.a, {
 						to: m("vault")
-					}, g._("Vault", null, {
+					}, f._("Vault", null, {
 						hk: "vu8DH"
 					})))], {
 						hk: "2bBYCS"
 					})))], {
 						hk: "3UYdSC"
-					})), i.a.createElement("section", null, i.a.createElement("h3", null, g._("How many Community Points are distributed?", null, {
+					})), i.a.createElement("section", null, i.a.createElement("h3", null, f._("How many Community Points are distributed?", null, {
 						hk: "2Ov00C"
-					})), g._("{=When existing subreddits opt into Community Points, they start with an initial distribution based on historical contributions. The amount of Points in the initial distribution varies by the age and size of the subreddit. For long-standing active communities, the initial distribution is 50 million Points.}{=This initial distribution is allocated according to the percentages above. The share for contributors is distributed based on historical karma earned in the subreddit to date. In order to be eligible for the initial distribution, users need to have been active in the community, i.e., make at least one post or comment in the previous 3 months.}{=After the initial distribution, additional Points are distributed every 4 weeks. Five million Points are made available in the first distribution cycle and this reduces by 2.5% each further cycle. Eventually, Points reach a steady state where the total supply continues to grow at 1% a year.}{=In addition to the creation of new Points described above, 50% ofburned Points are redistributed each cycle. This way, active contributors earn more Points in periods where the community spends more Points on rewards.}", [g._param("=When existing subreddits opt into Community Points, they start with an initial distribution based on historical contributions. The amount of Points in the initial distribution varies by the age and size of the subreddit. For long-standing active communities, the initial distribution is 50 million Points.", i.a.createElement("p", null, g._("When existing subreddits opt into Community Points, they start with an initial distribution based on historical contributions. The amount of Points in the initial distribution varies by the age and size of the subreddit. For long-standing active communities, the initial distribution is 50 million Points.", null, {
+					})), f._("{=When existing subreddits opt into Community Points, they start with an initial distribution based on historical contributions. The amount of Points in the initial distribution varies by the age and size of the subreddit. For long-standing active communities, the initial distribution is 50 million Points.}{=This initial distribution is allocated according to the percentages above. The share for contributors is distributed based on historical karma earned in the subreddit to date. In order to be eligible for the initial distribution, users need to have been active in the community, i.e., make at least one post or comment in the previous 3 months.}{=After the initial distribution, additional Points are distributed every 4 weeks. Five million Points are made available in the first distribution cycle and this reduces by 2.5% each further cycle. Eventually, Points reach a steady state where the total supply continues to grow at 1% a year.}{=In addition to the creation of new Points described above, 50% ofburned Points are redistributed each cycle. This way, active contributors earn more Points in periods where the community spends more Points on rewards.}", [f._param("=When existing subreddits opt into Community Points, they start with an initial distribution based on historical contributions. The amount of Points in the initial distribution varies by the age and size of the subreddit. For long-standing active communities, the initial distribution is 50 million Points.", i.a.createElement("p", null, f._("When existing subreddits opt into Community Points, they start with an initial distribution based on historical contributions. The amount of Points in the initial distribution varies by the age and size of the subreddit. For long-standing active communities, the initial distribution is 50 million Points.", null, {
 						hk: "2yK1zs"
-					}))), g._param("=This initial distribution is allocated according to the percentages above. The share for contributors is distributed based on historical karma earned in the subreddit to date. In order to be eligible for the initial distribution, users need to have been active in the community, i.e., make at least one post or comment in the previous 3 months.", i.a.createElement("p", null, g._("This initial distribution is allocated according to the percentages above. The share for contributors is distributed based on historical karma earned in the subreddit to date. In order to be eligible for the initial distribution, users need to have been active in the community, i.e., make at least one post or comment in the previous 3 months.", null, {
+					}))), f._param("=This initial distribution is allocated according to the percentages above. The share for contributors is distributed based on historical karma earned in the subreddit to date. In order to be eligible for the initial distribution, users need to have been active in the community, i.e., make at least one post or comment in the previous 3 months.", i.a.createElement("p", null, f._("This initial distribution is allocated according to the percentages above. The share for contributors is distributed based on historical karma earned in the subreddit to date. In order to be eligible for the initial distribution, users need to have been active in the community, i.e., make at least one post or comment in the previous 3 months.", null, {
 						hk: "3Ys2uE"
-					}))), g._param("=After the initial distribution, additional Points are distributed every 4 weeks. Five million Points are made available in the first distribution cycle and this reduces by 2.5% each further cycle. Eventually, Points reach a steady state where the total supply continues to grow at 1% a year.", i.a.createElement("p", null, g._("After the initial distribution, additional Points are distributed every 4 weeks. Five million Points are made available in the first distribution cycle and this reduces by 2.5% each further cycle. Eventually, Points reach a steady state where the total supply continues to grow at 1% a year.", null, {
+					}))), f._param("=After the initial distribution, additional Points are distributed every 4 weeks. Five million Points are made available in the first distribution cycle and this reduces by 2.5% each further cycle. Eventually, Points reach a steady state where the total supply continues to grow at 1% a year.", i.a.createElement("p", null, f._("After the initial distribution, additional Points are distributed every 4 weeks. Five million Points are made available in the first distribution cycle and this reduces by 2.5% each further cycle. Eventually, Points reach a steady state where the total supply continues to grow at 1% a year.", null, {
 						hk: "4mGiw4"
-					}))), g._param("=In addition to the creation of new Points described above, 50% ofburned Points are redistributed each cycle. This way, active contributors earn more Points in periods where the community spends more Points on rewards.", i.a.createElement("p", null, g._("In addition to the creation of new Points described above, 50% of {=burned Points} are redistributed each cycle. This way, active contributors earn more Points in periods where the community spends more Points on rewards.", [g._param("=burned Points", i.a.createElement(p.a, {
+					}))), f._param("=In addition to the creation of new Points described above, 50% ofburned Points are redistributed each cycle. This way, active contributors earn more Points in periods where the community spends more Points on rewards.", i.a.createElement("p", null, f._("In addition to the creation of new Points described above, 50% of {=burned Points} are redistributed each cycle. This way, active contributors earn more Points in periods where the community spends more Points on rewards.", [f._param("=burned Points", i.a.createElement(p.a, {
 						to: m("special-memberships")
-					}, g._("burned Points", null, {
+					}, f._("burned Points", null, {
 						hk: "lu4Xg"
 					})))], {
 						hk: "38G9NN"
 					})))], {
 						hk: "vb8rK"
-					})), i.a.createElement("section", null, i.a.createElement("h3", null, g._("What is the process for distribution?", null, {
+					})), i.a.createElement("section", null, i.a.createElement("h3", null, f._("What is the process for distribution?", null, {
 						hk: "EdIh3"
-					})), g._("{=Every 4 weeks, Reddit makes a post in the subreddit with a list of each user's Contribution Score, based on karma earned during that period and the distribution rules the community has set. This list is published as a CSV file.}{=After this post has been made, the community has one week to review the list and propose any changes. They can make changes through the weighted polls and governance features built into Community Points.}{=After one week, the Contribution Scores are finalized. Reddit signs and publishes the final data as a second post, and Community Points are distributed to community members based on those scores.}", [g._param("=Every 4 weeks, Reddit makes a post in the subreddit with a list of each user's Contribution Score, based on karma earned during that period and the distribution rules the community has set. This list is published as a CSV file.", i.a.createElement("p", null, g._("Every 4 weeks, Reddit makes a post in the subreddit with a list of each user's Contribution Score, based on karma earned during that period and the distribution rules the community has set. This list is published as a CSV file.", null, {
+					})), f._("{=Every 4 weeks, Reddit makes a post in the subreddit with a list of each user's Contribution Score, based on karma earned during that period and the distribution rules the community has set. This list is published as a CSV file.}{=After this post has been made, the community has one week to review the list and propose any changes. They can make changes through the weighted polls and governance features built into Community Points.}{=After one week, the Contribution Scores are finalized. Reddit signs and publishes the final data as a second post, and Community Points are distributed to community members based on those scores.}", [f._param("=Every 4 weeks, Reddit makes a post in the subreddit with a list of each user's Contribution Score, based on karma earned during that period and the distribution rules the community has set. This list is published as a CSV file.", i.a.createElement("p", null, f._("Every 4 weeks, Reddit makes a post in the subreddit with a list of each user's Contribution Score, based on karma earned during that period and the distribution rules the community has set. This list is published as a CSV file.", null, {
 						hk: "2IVeQr"
-					}))), g._param("=After this post has been made, the community has one week to review the list and propose any changes. They can make changes through the weighted polls and governance features built into Community Points.", i.a.createElement("p", null, g._("After this post has been made, the community has one week to review the list and propose any changes. They can make changes through the weighted polls and governance features built into Community Points.", null, {
+					}))), f._param("=After this post has been made, the community has one week to review the list and propose any changes. They can make changes through the weighted polls and governance features built into Community Points.", i.a.createElement("p", null, f._("After this post has been made, the community has one week to review the list and propose any changes. They can make changes through the weighted polls and governance features built into Community Points.", null, {
 						hk: "12ZLeS"
-					}))), g._param("=After one week, the Contribution Scores are finalized. Reddit signs and publishes the final data as a second post, and Community Points are distributed to community members based on those scores.", i.a.createElement("p", null, g._("After one week, the Contribution Scores are finalized. Reddit signs and publishes the final data as a second post, and Community Points are distributed to community members based on those scores.", null, {
+					}))), f._param("=After one week, the Contribution Scores are finalized. Reddit signs and publishes the final data as a second post, and Community Points are distributed to community members based on those scores.", i.a.createElement("p", null, f._("After one week, the Contribution Scores are finalized. Reddit signs and publishes the final data as a second post, and Community Points are distributed to community members based on those scores.", null, {
 						hk: "2YGZKP"
 					})))], {
 						hk: "2Hcl3u"
-					}), i.a.createElement("h3", null, g._("How do moderators receive Community Points?", null, {
+					}), i.a.createElement("h3", null, f._("How do moderators receive Community Points?", null, {
 						hk: "IIhgW"
-					})), g._("{=Moderators receive their portion of Community Points into a moderator wallet where they can be distributed to the rest of the moderator team. Moderator teams choose who controls the moderator wallet and how the moderator stipend is distributed to the team.}{=The simplest way to set up a moderator wallet is with a RedditVault in a new account. In this case, the moderator(s) who have access to that account and Vault would administer the moderator distribution to the rest of the team.}{=Moderators can only vote in polls using Points they've earned. Only Points transferred from the moderator account's Vault carrygovernance weight with them. Points transferred from other addresses will not carry this weight.}{=Moderators receive their Community Points at the beginning of the following distribution cycle. The actual amount of Points they receive depends on how many Points were distributed to users' Vaults in the previous cycle. For example, let's say 1 million Points were made available to the community, but only 600,000 Points were actually distributed to users' Vaults (the remaining users didn't create Vaults and so haven't received their Points). In that case, moderators would receive 60% of their Points at the beginning of the next distribution cycle. If some of those users then create Vaults in a later cycle and get their previous Points before they expire, then moderators will receive an additional part of their stipend at that time. The same applies to the reserved Points in the Community Tank.}", [g._param("=Moderators receive their portion of Community Points into a moderator wallet where they can be distributed to the rest of the moderator team. Moderator teams choose who controls the moderator wallet and how the moderator stipend is distributed to the team.", i.a.createElement("p", null, g._("Moderators receive their portion of Community Points into a moderator wallet where they can be distributed to the rest of the moderator team. Moderator teams choose who controls the moderator wallet and how the moderator stipend is distributed to the team.", null, {
+					})), f._("{=Moderators receive their portion of Community Points into a moderator wallet where they can be distributed to the rest of the moderator team. Moderator teams choose who controls the moderator wallet and how the moderator stipend is distributed to the team.}{=The simplest way to set up a moderator wallet is with a RedditVault in a new account. In this case, the moderator(s) who have access to that account and Vault would administer the moderator distribution to the rest of the team.}{=Moderators can only vote in polls using Points they've earned. Only Points transferred from the moderator account's Vault carrygovernance weight with them. Points transferred from other addresses will not carry this weight.}{=Moderators receive their Community Points at the beginning of the following distribution cycle. The actual amount of Points they receive depends on how many Points were distributed to users' Vaults in the previous cycle. For example, let's say 1 million Points were made available to the community, but only 600,000 Points were actually distributed to users' Vaults (the remaining users didn't create Vaults and so haven't received their Points). In that case, moderators would receive 60% of their Points at the beginning of the next distribution cycle. If some of those users then create Vaults in a later cycle and get their previous Points before they expire, then moderators will receive an additional part of their stipend at that time. The same applies to the reserved Points in the Community Tank.}", [f._param("=Moderators receive their portion of Community Points into a moderator wallet where they can be distributed to the rest of the moderator team. Moderator teams choose who controls the moderator wallet and how the moderator stipend is distributed to the team.", i.a.createElement("p", null, f._("Moderators receive their portion of Community Points into a moderator wallet where they can be distributed to the rest of the moderator team. Moderator teams choose who controls the moderator wallet and how the moderator stipend is distributed to the team.", null, {
 						hk: "39OdCQ"
-					}))), g._param("=The simplest way to set up a moderator wallet is with a RedditVault in a new account. In this case, the moderator(s) who have access to that account and Vault would administer the moderator distribution to the rest of the team.", i.a.createElement("p", null, g._("The simplest way to set up a moderator wallet is with a Reddit {=Vault} in a new account. In this case, the moderator(s) who have access to that account and Vault would administer the moderator distribution to the rest of the team.", [g._param("=Vault", i.a.createElement(p.a, {
+					}))), f._param("=The simplest way to set up a moderator wallet is with a RedditVault in a new account. In this case, the moderator(s) who have access to that account and Vault would administer the moderator distribution to the rest of the team.", i.a.createElement("p", null, f._("The simplest way to set up a moderator wallet is with a Reddit {=Vault} in a new account. In this case, the moderator(s) who have access to that account and Vault would administer the moderator distribution to the rest of the team.", [f._param("=Vault", i.a.createElement(p.a, {
 						to: m("vault")
-					}, g._("Vault", null, {
+					}, f._("Vault", null, {
 						hk: "RP5yN"
 					})))], {
 						hk: "nccuX"
-					}))), g._param("=Moderators can only vote in polls using Points they've earned. Only Points transferred from the moderator account's Vault carrygovernance weight with them. Points transferred from other addresses will not carry this weight.", i.a.createElement("p", null, g._("Moderators can only vote in polls using Points they've earned. Only Points transferred from the moderator account's Vault carry {=governance weight} with them. Points transferred from other addresses will not carry this weight.", [g._param("=governance weight", i.a.createElement(p.a, {
+					}))), f._param("=Moderators can only vote in polls using Points they've earned. Only Points transferred from the moderator account's Vault carrygovernance weight with them. Points transferred from other addresses will not carry this weight.", i.a.createElement("p", null, f._("Moderators can only vote in polls using Points they've earned. Only Points transferred from the moderator account's Vault carry {=governance weight} with them. Points transferred from other addresses will not carry this weight.", [f._param("=governance weight", i.a.createElement(p.a, {
 						to: m("reputation-and-governance")
-					}, g._("governance weight", null, {
+					}, f._("governance weight", null, {
 						hk: "2kpak2"
 					})))], {
 						hk: "rUi1c"
-					}))), g._param("=Moderators receive their Community Points at the beginning of the following distribution cycle. The actual amount of Points they receive depends on how many Points were distributed to users' Vaults in the previous cycle. For example, let's say 1 million Points were made available to the community, but only 600,000 Points were actually distributed to users' Vaults (the remaining users didn't create Vaults and so haven't received their Points). In that case, moderators would receive 60% of their Points at the beginning of the next distribution cycle. If some of those users then create Vaults in a later cycle and get their previous Points before they expire, then moderators will receive an additional part of their stipend at that time. The same applies to the reserved Points in the Community Tank.", i.a.createElement("p", null, g._("Moderators receive their Community Points at the beginning of the following distribution cycle. The actual amount of Points they receive depends on how many Points were distributed to users' Vaults in the previous cycle. For example, let's say 1 million Points were made available to the community, but only 600,000 Points were actually distributed to users' Vaults (the remaining users didn't create Vaults and so haven't received their Points). In that case, moderators would receive 60% of their Points at the beginning of the next distribution cycle. If some of those users then create Vaults in a later cycle and get their previous Points before they expire, then moderators will receive an additional part of their stipend at that time. The same applies to the reserved Points in the Community Tank.", null, {
+					}))), f._param("=Moderators receive their Community Points at the beginning of the following distribution cycle. The actual amount of Points they receive depends on how many Points were distributed to users' Vaults in the previous cycle. For example, let's say 1 million Points were made available to the community, but only 600,000 Points were actually distributed to users' Vaults (the remaining users didn't create Vaults and so haven't received their Points). In that case, moderators would receive 60% of their Points at the beginning of the next distribution cycle. If some of those users then create Vaults in a later cycle and get their previous Points before they expire, then moderators will receive an additional part of their stipend at that time. The same applies to the reserved Points in the Community Tank.", i.a.createElement("p", null, f._("Moderators receive their Community Points at the beginning of the following distribution cycle. The actual amount of Points they receive depends on how many Points were distributed to users' Vaults in the previous cycle. For example, let's say 1 million Points were made available to the community, but only 600,000 Points were actually distributed to users' Vaults (the remaining users didn't create Vaults and so haven't received their Points). In that case, moderators would receive 60% of their Points at the beginning of the next distribution cycle. If some of those users then create Vaults in a later cycle and get their previous Points before they expire, then moderators will receive an additional part of their stipend at that time. The same applies to the reserved Points in the Community Tank.", null, {
 						hk: "3uYrxZ"
 					})))], {
 						hk: "mFEBl"
 					}))), null),
-					"distribution-rules": i.a.createElement(() => i.a.createElement("main", null, i.a.createElement("h1", null, f._("Distribution Rules", null, {
+					"distribution-rules": i.a.createElement(() => i.a.createElement("main", null, i.a.createElement("h1", null, g._("Distribution Rules", null, {
 						hk: "3kkkm5"
-					})), i.a.createElement("h2", null, f._("Community Points are a powerful tool that subreddits can use to shape content and behavior.", null, {
+					})), i.a.createElement("h2", null, g._("Community Points are a powerful tool that subreddits can use to shape content and behavior.", null, {
 						hk: "2FFsru"
-					})), i.a.createElement("section", null, i.a.createElement("h3", null, f._("Community Rules", null, {
+					})), i.a.createElement("section", null, i.a.createElement("h3", null, g._("Community Rules", null, {
 						hk: "2q9cMn"
-					})), f._('{=Communities have the flexibility to set their own distribution rules for their Community Points. These rules can be designed to address the specific needs of the community.}{=Here is a non-exhaustive list of factors that can be used to shape distribution rules:}{=Post type, such as link vs text vs image vs video (e.g., "link posts should get 50% of karma of other posts")Post flair (e.g., "reduce karma from COMEDY flairs to 10%")Posts vs comments (e.g., "double comment karma")Per post or per comment (e.g., "limit max karma from a single post to 1k karma")Posts or comments per day (e.g., "only count the first 20 comments a users makes per day")Post or comment body length (e.g., "comments over 240 characters should get 2x karma")A specific post (e.g., "don\'t count karma from the daily discussion")Making a post or comment (e.g., "making a post reduces karma by 25")Membership (e.g., "users with a membership get 25% bonus to karma they earned")}{=For example, here are some rules adopted by r/CryptoCurrency for their distribution of Moons:}{=Double comment karma to encourage more comments than postsLimit karma earned from any individual post or comment to 1000Only count 10% of karma earned on "media" or "comedy" postsBonus Points for users who vote in polls15000 cap on Points earned by any single user per month}{=In addition to the community rules, Reddit sets some default rules to exclude the following from Community Point calculations and distribution:}{=Karma earned on removed posts and comments does not count (including karma earned before removal)Karma earned on deleted posts and comments does not count (including karma earned before deletion)Karma earned on stickied or distinguished content does not countPermabanned users are not eligible for Points distribution and do not appear on the distribution list. This includes users permanently banned by moderators from the community or banned from Reddit.Only votes within 3 days of a post\'s creation time are counted (including on comments of that post)}', [f._param("=Communities have the flexibility to set their own distribution rules for their Community Points. These rules can be designed to address the specific needs of the community.", i.a.createElement("p", null, f._("Communities have the flexibility to set their own distribution rules for their Community Points. These rules can be designed to address the specific needs of the community.", null, {
+					})), g._('{=Communities have the flexibility to set their own distribution rules for their Community Points. These rules can be designed to address the specific needs of the community.}{=Here is a non-exhaustive list of factors that can be used to shape distribution rules:}{=Post type, such as link vs text vs image vs video (e.g., "link posts should get 50% of karma of other posts")Post flair (e.g., "reduce karma from COMEDY flairs to 10%")Posts vs comments (e.g., "double comment karma")Per post or per comment (e.g., "limit max karma from a single post to 1k karma")Posts or comments per day (e.g., "only count the first 20 comments a users makes per day")Post or comment body length (e.g., "comments over 240 characters should get 2x karma")A specific post (e.g., "don\'t count karma from the daily discussion")Making a post or comment (e.g., "making a post reduces karma by 25")Membership (e.g., "users with a membership get 25% bonus to karma they earned")}{=For example, here are some rules adopted by r/CryptoCurrency for their distribution of Moons:}{=Double comment karma to encourage more comments than postsLimit karma earned from any individual post or comment to 1000Only count 10% of karma earned on "media" or "comedy" postsBonus Points for users who vote in polls15000 cap on Points earned by any single user per month}{=In addition to the community rules, Reddit sets some default rules to exclude the following from Community Point calculations and distribution:}{=Karma earned on removed posts and comments does not count (including karma earned before removal)Karma earned on deleted posts and comments does not count (including karma earned before deletion)Karma earned on stickied or distinguished content does not countPermabanned users are not eligible for Points distribution and do not appear on the distribution list. This includes users permanently banned by moderators from the community or banned from Reddit.Only votes within 3 days of a post\'s creation time are counted (including on comments of that post)}', [g._param("=Communities have the flexibility to set their own distribution rules for their Community Points. These rules can be designed to address the specific needs of the community.", i.a.createElement("p", null, g._("Communities have the flexibility to set their own distribution rules for their Community Points. These rules can be designed to address the specific needs of the community.", null, {
 						hk: "4s7ftB"
-					}))), f._param("=Here is a non-exhaustive list of factors that can be used to shape distribution rules:", i.a.createElement("p", null, f._("Here is a non-exhaustive list of factors that can be used to shape distribution rules:", null, {
+					}))), g._param("=Here is a non-exhaustive list of factors that can be used to shape distribution rules:", i.a.createElement("p", null, g._("Here is a non-exhaustive list of factors that can be used to shape distribution rules:", null, {
 						hk: "4Gnp82"
-					}))), f._param('=Post type, such as link vs text vs image vs video (e.g., "link posts should get 50% of karma of other posts")Post flair (e.g., "reduce karma from COMEDY flairs to 10%")Posts vs comments (e.g., "double comment karma")Per post or per comment (e.g., "limit max karma from a single post to 1k karma")Posts or comments per day (e.g., "only count the first 20 comments a users makes per day")Post or comment body length (e.g., "comments over 240 characters should get 2x karma")A specific post (e.g., "don\'t count karma from the daily discussion")Making a post or comment (e.g., "making a post reduces karma by 25")Membership (e.g., "users with a membership get 25% bonus to karma they earned")', i.a.createElement("ul", null, f._('{=Post type, such as link vs text vs image vs video (e.g., "link posts should get 50% of karma of other posts")}{=Post flair (e.g., "reduce karma from COMEDY flairs to 10%")}{=Posts vs comments (e.g., "double comment karma")}{=Per post or per comment (e.g., "limit max karma from a single post to 1k karma")}{=Posts or comments per day (e.g., "only count the first 20 comments a users makes per day")}{=Post or comment body length (e.g., "comments over 240 characters should get 2x karma")}{=A specific post (e.g., "don\'t count karma from the daily discussion")}{=Making a post or comment (e.g., "making a post reduces karma by 25")}{=Membership (e.g., "users with a membership get 25% bonus to karma they earned")}', [f._param('=Post type, such as link vs text vs image vs video (e.g., "link posts should get 50% of karma of other posts")', i.a.createElement("li", null, f._('Post type, such as link vs text vs image vs video (e.g., "link posts should get 50% of karma of other posts")', null, {
+					}))), g._param('=Post type, such as link vs text vs image vs video (e.g., "link posts should get 50% of karma of other posts")Post flair (e.g., "reduce karma from COMEDY flairs to 10%")Posts vs comments (e.g., "double comment karma")Per post or per comment (e.g., "limit max karma from a single post to 1k karma")Posts or comments per day (e.g., "only count the first 20 comments a users makes per day")Post or comment body length (e.g., "comments over 240 characters should get 2x karma")A specific post (e.g., "don\'t count karma from the daily discussion")Making a post or comment (e.g., "making a post reduces karma by 25")Membership (e.g., "users with a membership get 25% bonus to karma they earned")', i.a.createElement("ul", null, g._('{=Post type, such as link vs text vs image vs video (e.g., "link posts should get 50% of karma of other posts")}{=Post flair (e.g., "reduce karma from COMEDY flairs to 10%")}{=Posts vs comments (e.g., "double comment karma")}{=Per post or per comment (e.g., "limit max karma from a single post to 1k karma")}{=Posts or comments per day (e.g., "only count the first 20 comments a users makes per day")}{=Post or comment body length (e.g., "comments over 240 characters should get 2x karma")}{=A specific post (e.g., "don\'t count karma from the daily discussion")}{=Making a post or comment (e.g., "making a post reduces karma by 25")}{=Membership (e.g., "users with a membership get 25% bonus to karma they earned")}', [g._param('=Post type, such as link vs text vs image vs video (e.g., "link posts should get 50% of karma of other posts")', i.a.createElement("li", null, g._('Post type, such as link vs text vs image vs video (e.g., "link posts should get 50% of karma of other posts")', null, {
 						hk: "t3gJV"
-					}))), f._param('=Post flair (e.g., "reduce karma from COMEDY flairs to 10%")', i.a.createElement("li", null, f._('Post flair (e.g., "reduce karma from COMEDY flairs to 10%")', null, {
+					}))), g._param('=Post flair (e.g., "reduce karma from COMEDY flairs to 10%")', i.a.createElement("li", null, g._('Post flair (e.g., "reduce karma from COMEDY flairs to 10%")', null, {
 						hk: "4shcb3"
-					}))), f._param('=Posts vs comments (e.g., "double comment karma")', i.a.createElement("li", null, f._('Posts vs comments (e.g., "double comment karma")', null, {
+					}))), g._param('=Posts vs comments (e.g., "double comment karma")', i.a.createElement("li", null, g._('Posts vs comments (e.g., "double comment karma")', null, {
 						hk: "2pZwq5"
-					}))), f._param('=Per post or per comment (e.g., "limit max karma from a single post to 1k karma")', i.a.createElement("li", null, f._('Per post or per comment (e.g., "limit max karma from a single post to 1k karma")', null, {
+					}))), g._param('=Per post or per comment (e.g., "limit max karma from a single post to 1k karma")', i.a.createElement("li", null, g._('Per post or per comment (e.g., "limit max karma from a single post to 1k karma")', null, {
 						hk: "45H3Zf"
-					}))), f._param('=Posts or comments per day (e.g., "only count the first 20 comments a users makes per day")', i.a.createElement("li", null, f._('Posts or comments per day (e.g., "only count the first 20 comments a users makes per day")', null, {
+					}))), g._param('=Posts or comments per day (e.g., "only count the first 20 comments a users makes per day")', i.a.createElement("li", null, g._('Posts or comments per day (e.g., "only count the first 20 comments a users makes per day")', null, {
 						hk: "ApH9c"
-					}))), f._param('=Post or comment body length (e.g., "comments over 240 characters should get 2x karma")', i.a.createElement("li", null, f._('Post or comment body length (e.g., "comments over 240 characters should get 2x karma")', null, {
+					}))), g._param('=Post or comment body length (e.g., "comments over 240 characters should get 2x karma")', i.a.createElement("li", null, g._('Post or comment body length (e.g., "comments over 240 characters should get 2x karma")', null, {
 						hk: "3LgLBX"
-					}))), f._param('=A specific post (e.g., "don\'t count karma from the daily discussion")', i.a.createElement("li", null, f._('A specific post (e.g., "don\'t count karma from the daily discussion")', null, {
+					}))), g._param('=A specific post (e.g., "don\'t count karma from the daily discussion")', i.a.createElement("li", null, g._('A specific post (e.g., "don\'t count karma from the daily discussion")', null, {
 						hk: "1AVsli"
-					}))), f._param('=Making a post or comment (e.g., "making a post reduces karma by 25")', i.a.createElement("li", null, f._('Making a post or comment (e.g., "making a post reduces karma by 25")', null, {
+					}))), g._param('=Making a post or comment (e.g., "making a post reduces karma by 25")', i.a.createElement("li", null, g._('Making a post or comment (e.g., "making a post reduces karma by 25")', null, {
 						hk: "4bciV9"
-					}))), f._param('=Membership (e.g., "users with a membership get 25% bonus to karma they earned")', i.a.createElement("li", null, f._('Membership (e.g., "users with a membership get 25% bonus to karma they earned")', null, {
+					}))), g._param('=Membership (e.g., "users with a membership get 25% bonus to karma they earned")', i.a.createElement("li", null, g._('Membership (e.g., "users with a membership get 25% bonus to karma they earned")', null, {
 						hk: "TVkOq"
 					})))], {
 						hk: "1StpTy"
-					}))), f._param("=For example, here are some rules adopted by r/CryptoCurrency for their distribution of Moons:", i.a.createElement("p", null, f._("For example, here are some rules adopted by r/CryptoCurrency for their distribution of Moons:", null, {
+					}))), g._param("=For example, here are some rules adopted by r/CryptoCurrency for their distribution of Moons:", i.a.createElement("p", null, g._("For example, here are some rules adopted by r/CryptoCurrency for their distribution of Moons:", null, {
 						hk: "4yB4lN"
-					}))), f._param('=Double comment karma to encourage more comments than postsLimit karma earned from any individual post or comment to 1000Only count 10% of karma earned on "media" or "comedy" postsBonus Points for users who vote in polls15000 cap on Points earned by any single user per month', i.a.createElement("ul", null, f._('{=Double comment karma to encourage more comments than posts}{=Limit karma earned from any individual post or comment to 1000}{=Only count 10% of karma earned on "media" or "comedy" posts}{=Bonus Points for users who vote in polls}{=15000 cap on Points earned by any single user per month}', [f._param("=Double comment karma to encourage more comments than posts", i.a.createElement("li", null, f._("{=Double comment karma to encourage more comments than posts}", [f._param("=Double comment karma to encourage more comments than posts", i.a.createElement("a", {
+					}))), g._param('=Double comment karma to encourage more comments than postsLimit karma earned from any individual post or comment to 1000Only count 10% of karma earned on "media" or "comedy" postsBonus Points for users who vote in polls15000 cap on Points earned by any single user per month', i.a.createElement("ul", null, g._('{=Double comment karma to encourage more comments than posts}{=Limit karma earned from any individual post or comment to 1000}{=Only count 10% of karma earned on "media" or "comedy" posts}{=Bonus Points for users who vote in polls}{=15000 cap on Points earned by any single user per month}', [g._param("=Double comment karma to encourage more comments than posts", i.a.createElement("li", null, g._("{=Double comment karma to encourage more comments than posts}", [g._param("=Double comment karma to encourage more comments than posts", i.a.createElement("a", {
 						href: "/r/CryptoCurrency/comments/k12wnd/moon_proposal_double_comment_karma/",
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}, f._("Double comment karma to encourage more comments than posts", null, {
+					}, g._("Double comment karma to encourage more comments than posts", null, {
 						hk: "1paAA7"
 					})))], {
 						hk: "WOLmU"
-					}))), f._param("=Limit karma earned from any individual post or comment to 1000", i.a.createElement("li", null, f._("{=Limit karma earned from any individual post or comment to 1000}", [f._param("=Limit karma earned from any individual post or comment to 1000", i.a.createElement("a", {
+					}))), g._param("=Limit karma earned from any individual post or comment to 1000", i.a.createElement("li", null, g._("{=Limit karma earned from any individual post or comment to 1000}", [g._param("=Limit karma earned from any individual post or comment to 1000", i.a.createElement("a", {
 						href: "/r/CryptoCurrency/comments/lm8she/limit_post_karma_to_1k_and_limit_comment_karma_to/",
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}, f._("Limit karma earned from any individual post or comment to 1000", null, {
+					}, g._("Limit karma earned from any individual post or comment to 1000", null, {
 						hk: "nwOAz"
 					})))], {
 						hk: "4DmNLs"
-					}))), f._param('=Only count 10% of karma earned on "media" or "comedy" posts', i.a.createElement("li", null, f._('{=Only count 10% of karma earned on "media" or "comedy" posts}', [f._param('=Only count 10% of karma earned on "media" or "comedy" posts', i.a.createElement("a", {
+					}))), g._param('=Only count 10% of karma earned on "media" or "comedy" posts', i.a.createElement("li", null, g._('{=Only count 10% of karma earned on "media" or "comedy" posts}', [g._param('=Only count 10% of karma earned on "media" or "comedy" posts', i.a.createElement("a", {
 						href: "/r/CryptoCurrency/comments/lm99v3/change_moon_distribution_for_comedy_posts_and/",
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}, f._('Only count 10% of karma earned on "media" or "comedy" posts', null, {
+					}, g._('Only count 10% of karma earned on "media" or "comedy" posts', null, {
 						hk: "1nCJC"
 					})))], {
 						hk: "1EKmev"
-					}))), f._param("=Bonus Points for users who vote in polls", i.a.createElement("li", null, f._("{=Bonus Points for users who vote in polls}", [f._param("=Bonus Points for users who vote in polls", i.a.createElement("a", {
+					}))), g._param("=Bonus Points for users who vote in polls", i.a.createElement("li", null, g._("{=Bonus Points for users who vote in polls}", [g._param("=Bonus Points for users who vote in polls", i.a.createElement("a", {
 						href: "/r/CryptoCurrency/comments/m7ehzz/proposal_5_bonus_moons_for_anyone_who_votes_on/",
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}, f._("Bonus Points for users who vote in polls", null, {
+					}, g._("Bonus Points for users who vote in polls", null, {
 						hk: "1FkqAB"
 					})))], {
 						hk: "4cT7Wr"
-					}))), f._param("=15000 cap on Points earned by any single user per month", i.a.createElement("li", null, f._("{=15000 cap on Points earned by any single user per month}", [f._param("=15000 cap on Points earned by any single user per month", i.a.createElement("a", {
+					}))), g._param("=15000 cap on Points earned by any single user per month", i.a.createElement("li", null, g._("{=15000 cap on Points earned by any single user per month}", [g._param("=15000 cap on Points earned by any single user per month", i.a.createElement("a", {
 						href: "/r/CryptoCurrency/comments/mrn758/15000_karma_cap_on_moon_distribution/",
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}, f._("15000 cap on Points earned by any single user per month", null, {
+					}, g._("15000 cap on Points earned by any single user per month", null, {
 						hk: "4thwN8"
 					})))], {
 						hk: "3cC4wz"
 					})))], {
 						hk: "1SfbK0"
-					}))), f._param("=In addition to the community rules, Reddit sets some default rules to exclude the following from Community Point calculations and distribution:", i.a.createElement("p", null, f._("In addition to the community rules, Reddit sets some default rules to exclude the following from Community Point calculations and distribution:", null, {
+					}))), g._param("=In addition to the community rules, Reddit sets some default rules to exclude the following from Community Point calculations and distribution:", i.a.createElement("p", null, g._("In addition to the community rules, Reddit sets some default rules to exclude the following from Community Point calculations and distribution:", null, {
 						hk: "D09uq"
-					}))), f._param("=Karma earned on removed posts and comments does not count (including karma earned before removal)Karma earned on deleted posts and comments does not count (including karma earned before deletion)Karma earned on stickied or distinguished content does not countPermabanned users are not eligible for Points distribution and do not appear on the distribution list. This includes users permanently banned by moderators from the community or banned from Reddit.Only votes within 3 days of a post's creation time are counted (including on comments of that post)", i.a.createElement("ul", null, f._("{=Karma earned on removed posts and comments does not count (including karma earned before removal)}{=Karma earned on deleted posts and comments does not count (including karma earned before deletion)}{=Karma earned on stickied or distinguished content does not count}{=Permabanned users are not eligible for Points distribution and do not appear on the distribution list. This includes users permanently banned by moderators from the community or banned from Reddit.}{=Only votes within 3 days of a post's creation time are counted (including on comments of that post)}", [f._param("=Karma earned on removed posts and comments does not count (including karma earned before removal)", i.a.createElement("li", null, f._("Karma earned on removed posts and comments does not count (including karma earned before removal)", null, {
+					}))), g._param("=Karma earned on removed posts and comments does not count (including karma earned before removal)Karma earned on deleted posts and comments does not count (including karma earned before deletion)Karma earned on stickied or distinguished content does not countPermabanned users are not eligible for Points distribution and do not appear on the distribution list. This includes users permanently banned by moderators from the community or banned from Reddit.Only votes within 3 days of a post's creation time are counted (including on comments of that post)", i.a.createElement("ul", null, g._("{=Karma earned on removed posts and comments does not count (including karma earned before removal)}{=Karma earned on deleted posts and comments does not count (including karma earned before deletion)}{=Karma earned on stickied or distinguished content does not count}{=Permabanned users are not eligible for Points distribution and do not appear on the distribution list. This includes users permanently banned by moderators from the community or banned from Reddit.}{=Only votes within 3 days of a post's creation time are counted (including on comments of that post)}", [g._param("=Karma earned on removed posts and comments does not count (including karma earned before removal)", i.a.createElement("li", null, g._("Karma earned on removed posts and comments does not count (including karma earned before removal)", null, {
 						hk: "ZlIOC"
-					}))), f._param("=Karma earned on deleted posts and comments does not count (including karma earned before deletion)", i.a.createElement("li", null, f._("Karma earned on deleted posts and comments does not count (including karma earned before deletion)", null, {
+					}))), g._param("=Karma earned on deleted posts and comments does not count (including karma earned before deletion)", i.a.createElement("li", null, g._("Karma earned on deleted posts and comments does not count (including karma earned before deletion)", null, {
 						hk: "2oO04d"
-					}))), f._param("=Karma earned on stickied or distinguished content does not count", i.a.createElement("li", null, f._("Karma earned on stickied or distinguished content does not count", null, {
+					}))), g._param("=Karma earned on stickied or distinguished content does not count", i.a.createElement("li", null, g._("Karma earned on stickied or distinguished content does not count", null, {
 						hk: "3TdSZ1"
-					}))), f._param("=Permabanned users are not eligible for Points distribution and do not appear on the distribution list. This includes users permanently banned by moderators from the community or banned from Reddit.", i.a.createElement("li", null, f._("Permabanned users are not eligible for Points distribution and do not appear on the distribution list. This includes users permanently banned by moderators from the community or banned from Reddit.", null, {
+					}))), g._param("=Permabanned users are not eligible for Points distribution and do not appear on the distribution list. This includes users permanently banned by moderators from the community or banned from Reddit.", i.a.createElement("li", null, g._("Permabanned users are not eligible for Points distribution and do not appear on the distribution list. This includes users permanently banned by moderators from the community or banned from Reddit.", null, {
 						hk: "4l6zkq"
-					}))), f._param("=Only votes within 3 days of a post's creation time are counted (including on comments of that post)", i.a.createElement("li", null, f._("Only votes within 3 days of a post's creation time are counted (including on comments of that post)", null, {
+					}))), g._param("=Only votes within 3 days of a post's creation time are counted (including on comments of that post)", i.a.createElement("li", null, g._("Only votes within 3 days of a post's creation time are counted (including on comments of that post)", null, {
 						hk: "3TvDvq"
 					})))], {
 						hk: "HvF8L"
 					})))], {
 						hk: "Vg54o"
-					})), i.a.createElement("section", null, i.a.createElement("h3", null, f._("Deciding Community Rules", null, {
+					})), i.a.createElement("section", null, i.a.createElement("h3", null, g._("Deciding Community Rules", null, {
 						hk: "2BDpM6"
-					})), f._("{=Moderator teams collaborate with Reddit to design an initial set of distribution rules for their subreddit when they launch Community Points. After Points have been launched, the community can continue to make changes to the distribution rules throughGovernance Polls}", [f._param("=Moderator teams collaborate with Reddit to design an initial set of distribution rules for their subreddit when they launch Community Points. After Points have been launched, the community can continue to make changes to the distribution rules throughGovernance Polls", i.a.createElement("p", null, f._("Moderator teams collaborate with Reddit to design an initial set of distribution rules for their subreddit when they launch Community Points. After Points have been launched, the community can continue to make changes to the distribution rules through {=Governance Polls}.", [f._param("=Governance Polls", i.a.createElement(p.a, {
+					})), g._("{=Moderator teams collaborate with Reddit to design an initial set of distribution rules for their subreddit when they launch Community Points. After Points have been launched, the community can continue to make changes to the distribution rules throughGovernance Polls}", [g._param("=Moderator teams collaborate with Reddit to design an initial set of distribution rules for their subreddit when they launch Community Points. After Points have been launched, the community can continue to make changes to the distribution rules throughGovernance Polls", i.a.createElement("p", null, g._("Moderator teams collaborate with Reddit to design an initial set of distribution rules for their subreddit when they launch Community Points. After Points have been launched, the community can continue to make changes to the distribution rules through {=Governance Polls}.", [g._param("=Governance Polls", i.a.createElement(p.a, {
 						to: m("reputation-and-governance")
-					}, f._("Governance Polls", null, {
+					}, g._("Governance Polls", null, {
 						hk: "3A24Me"
 					})))], {
 						hk: "10UMvS"
@@ -1355,57 +1355,57 @@
 					})))], {
 						hk: "3MqSUP"
 					}))), null),
-					vault: i.a.createElement(() => i.a.createElement("main", null, i.a.createElement("h1", null, Y._("Vault", null, {
+					vault: i.a.createElement(() => i.a.createElement("main", null, i.a.createElement("h1", null, G._("Vault", null, {
 						hk: "JRmsq"
-					})), i.a.createElement("h2", null, Y._("The Vault is an embedded digital wallet in the Reddit app and the home for Community Points.", null, {
+					})), i.a.createElement("h2", null, G._("The Vault is an embedded digital wallet in the Reddit app and the home for Community Points.", null, {
 						hk: "3mlz88"
-					})), Y._("{=Reddit Vault is a digital wallet developed by Reddit to help users manage their Community Points from inside of the Reddit app. In your Vault, you can view Community Points from multiple subreddits, gift or tip them to other users, and spend them on things like Special Memberships.}{=The Vault corresponds to a public blockchain address. This is the address on the blockchain where your Community Points are stored and that you control. You can see the address by going into your Vault settings (3 dots at the top of the Vault screen).}", [Y._param("=Reddit Vault is a digital wallet developed by Reddit to help users manage their Community Points from inside of the Reddit app. In your Vault, you can view Community Points from multiple subreddits, gift or tip them to other users, and spend them on things like Special Memberships.", i.a.createElement("p", null, Y._("Reddit Vault is a digital wallet developed by Reddit to help users manage their Community Points from inside of the Reddit app. In your Vault, you can view Community Points from multiple subreddits, gift or tip them to other users, and spend them on things like Special Memberships.", null, {
+					})), G._("{=Reddit Vault is a digital wallet developed by Reddit to help users manage their Community Points from inside of the Reddit app. In your Vault, you can view Community Points from multiple subreddits, gift or tip them to other users, and spend them on things like Special Memberships.}{=The Vault corresponds to a public blockchain address. This is the address on the blockchain where your Community Points are stored and that you control. You can see the address by going into your Vault settings (3 dots at the top of the Vault screen).}", [G._param("=Reddit Vault is a digital wallet developed by Reddit to help users manage their Community Points from inside of the Reddit app. In your Vault, you can view Community Points from multiple subreddits, gift or tip them to other users, and spend them on things like Special Memberships.", i.a.createElement("p", null, G._("Reddit Vault is a digital wallet developed by Reddit to help users manage their Community Points from inside of the Reddit app. In your Vault, you can view Community Points from multiple subreddits, gift or tip them to other users, and spend them on things like Special Memberships.", null, {
 						hk: "Nsitn"
-					}))), Y._param("=The Vault corresponds to a public blockchain address. This is the address on the blockchain where your Community Points are stored and that you control. You can see the address by going into your Vault settings (3 dots at the top of the Vault screen).", i.a.createElement("p", null, Y._("The Vault corresponds to a public blockchain address. This is the address on the blockchain where your Community Points are stored and that you control. You can see the address by going into your Vault settings (3 dots at the top of the Vault screen).", null, {
+					}))), G._param("=The Vault corresponds to a public blockchain address. This is the address on the blockchain where your Community Points are stored and that you control. You can see the address by going into your Vault settings (3 dots at the top of the Vault screen).", i.a.createElement("p", null, G._("The Vault corresponds to a public blockchain address. This is the address on the blockchain where your Community Points are stored and that you control. You can see the address by going into your Vault settings (3 dots at the top of the Vault screen).", null, {
 						hk: "2KYdTI"
 					})))], {
 						hk: "BHoaY"
-					}), i.a.createElement("section", null, i.a.createElement("h3", null, Y._("Create a Vault", null, {
+					}), i.a.createElement("section", null, i.a.createElement("h3", null, G._("Create a Vault", null, {
 						hk: "1h3rBm"
-					})), Y._("{=Users who are subscribed to subreddits with Community Points should see Vault in the app menu on the official Reddit Android & iOS apps. When you open Vault for the first time, you will be prompted to create a Vault or restore one that you created earlier.}{=When you create your Vault, you will receive a public address and a private key. The public address is your address on the Arbitrum Nova network and Ethereum-compatible blockchains where the record of your Community Points is stored.}{=This private key is very important. Whoever has the private key will be able to have full control over your Community Points, and if you lose the private key you could lose access to your Community Points. For that reason, it's very important to make sure it is stored securely and properly backed up.}", [Y._param("=Users who are subscribed to subreddits with Community Points should see Vault in the app menu on the official Reddit Android & iOS apps. When you open Vault for the first time, you will be prompted to create a Vault or restore one that you created earlier.", i.a.createElement("p", null, Y._("Users who are subscribed to subreddits with Community Points should see Vault in the app menu on the official Reddit Android & iOS apps. When you open Vault for the first time, you will be prompted to create a Vault or restore one that you created earlier.", null, {
+					})), G._("{=Users who are subscribed to subreddits with Community Points should see Vault in the app menu on the official Reddit Android & iOS apps. When you open Vault for the first time, you will be prompted to create a Vault or restore one that you created earlier.}{=When you create your Vault, you will receive a public address and a private key. The public address is your address on the Arbitrum Nova network and Ethereum-compatible blockchains where the record of your Community Points is stored.}{=This private key is very important. Whoever has the private key will be able to have full control over your Community Points, and if you lose the private key you could lose access to your Community Points. For that reason, it's very important to make sure it is stored securely and properly backed up.}", [G._param("=Users who are subscribed to subreddits with Community Points should see Vault in the app menu on the official Reddit Android & iOS apps. When you open Vault for the first time, you will be prompted to create a Vault or restore one that you created earlier.", i.a.createElement("p", null, G._("Users who are subscribed to subreddits with Community Points should see Vault in the app menu on the official Reddit Android & iOS apps. When you open Vault for the first time, you will be prompted to create a Vault or restore one that you created earlier.", null, {
 						hk: "2XiJTS"
-					}))), Y._param("=When you create your Vault, you will receive a public address and a private key. The public address is your address on the Arbitrum Nova network and Ethereum-compatible blockchains where the record of your Community Points is stored.", i.a.createElement("p", null, Y._("When you create your Vault, you will receive a public address and a private key. The public address is your address on the Arbitrum Nova network and Ethereum-compatible blockchains where the record of your Community Points is stored.", null, {
+					}))), G._param("=When you create your Vault, you will receive a public address and a private key. The public address is your address on the Arbitrum Nova network and Ethereum-compatible blockchains where the record of your Community Points is stored.", i.a.createElement("p", null, G._("When you create your Vault, you will receive a public address and a private key. The public address is your address on the Arbitrum Nova network and Ethereum-compatible blockchains where the record of your Community Points is stored.", null, {
 						hk: "3eVL51"
-					}))), Y._param("=This private key is very important. Whoever has the private key will be able to have full control over your Community Points, and if you lose the private key you could lose access to your Community Points. For that reason, it's very important to make sure it is stored securely and properly backed up.", i.a.createElement("p", null, Y._("This private key is very important. Whoever has the private key will be able to have full control over your Community Points, and if you lose the private key you could lose access to your Community Points. For that reason, it's very important to make sure it is stored securely and properly backed up.", null, {
+					}))), G._param("=This private key is very important. Whoever has the private key will be able to have full control over your Community Points, and if you lose the private key you could lose access to your Community Points. For that reason, it's very important to make sure it is stored securely and properly backed up.", i.a.createElement("p", null, G._("This private key is very important. Whoever has the private key will be able to have full control over your Community Points, and if you lose the private key you could lose access to your Community Points. For that reason, it's very important to make sure it is stored securely and properly backed up.", null, {
 						hk: "1sAkQe"
 					})))], {
 						hk: "3SJqgH"
-					})), i.a.createElement("section", null, i.a.createElement("h3", null, Y._("Backup & Recovery", null, {
+					})), i.a.createElement("section", null, i.a.createElement("h3", null, G._("Backup & Recovery", null, {
 						hk: "4f33gk"
-					})), Y._("{=You have two options to back up your private key.}{=The first option is to back it up in a secure way with Reddit. In this option, you encrypt your private key with a unique Vault Password that only you know (separate from your Reddit password) and store the encrypted version on Reddit. Since it is encrypted, Reddit is not able to see your private key and cannot use it.}{=The second option is to save a Recovery Phrase somewhere secure. The recovery phrase is 12 words in a particular order that can be used to recreate your private key within Vault. Keep this safe — we recommend using a password manager like LastPass.}{=It is very important that you never give your Vault Password or Recovery Phrase to anyone else, ever. No Reddit employee will ever ask you for either of them.}{=There are two corresponding ways to recover your Vault.}{=You can recover Vaults that you backed up with Reddit through the Vault signup flow. When you go to create a new Vault, you will be presented with older Vaults that you made that are backed up with Reddit. If you choose to recover one of those, you will be prompted for the password you set when you created it. If you want to switch to another Vault, you can sign out of your current Vault through the settings.}{=You can also recover a Vault using the Recovery Phrase. When you start to create a Vault, you will see an option to use your Recovery Phrase. Enter in the 12 words in the same order that they were provided when you first created the Vault.}{=Note that you can only have one active Vault at any time. In each distribution, your Community Points will be sent to the Vault that is actively associated with your account at the time that distribution is finalized Every time you create or recover a Vault, it is immediately set as your active Vault.}", [Y._param("=You have two options to back up your private key.", i.a.createElement("p", null, Y._("You have two options to back up your private key.", null, {
+					})), G._("{=You have two options to back up your private key.}{=The first option is to back it up in a secure way with Reddit. In this option, you encrypt your private key with a unique Vault Password that only you know (separate from your Reddit password) and store the encrypted version on Reddit. Since it is encrypted, Reddit is not able to see your private key and cannot use it.}{=The second option is to save a Recovery Phrase somewhere secure. The recovery phrase is 12 words in a particular order that can be used to recreate your private key within Vault. Keep this safe — we recommend using a password manager like LastPass.}{=It is very important that you never give your Vault Password or Recovery Phrase to anyone else, ever. No Reddit employee will ever ask you for either of them.}{=There are two corresponding ways to recover your Vault.}{=You can recover Vaults that you backed up with Reddit through the Vault signup flow. When you go to create a new Vault, you will be presented with older Vaults that you made that are backed up with Reddit. If you choose to recover one of those, you will be prompted for the password you set when you created it. If you want to switch to another Vault, you can sign out of your current Vault through the settings.}{=You can also recover a Vault using the Recovery Phrase. When you start to create a Vault, you will see an option to use your Recovery Phrase. Enter in the 12 words in the same order that they were provided when you first created the Vault.}{=Note that you can only have one active Vault at any time. In each distribution, your Community Points will be sent to the Vault that is actively associated with your account at the time that distribution is finalized Every time you create or recover a Vault, it is immediately set as your active Vault.}", [G._param("=You have two options to back up your private key.", i.a.createElement("p", null, G._("You have two options to back up your private key.", null, {
 						hk: "3enCSx"
-					}))), Y._param("=The first option is to back it up in a secure way with Reddit. In this option, you encrypt your private key with a unique Vault Password that only you know (separate from your Reddit password) and store the encrypted version on Reddit. Since it is encrypted, Reddit is not able to see your private key and cannot use it.", i.a.createElement("p", null, Y._("The first option is to back it up in a secure way with Reddit. In this option, you encrypt your private key with a unique Vault Password that only you know (separate from your Reddit password) and store the encrypted version on Reddit. Since it is encrypted, Reddit is not able to see your private key and cannot use it.", null, {
+					}))), G._param("=The first option is to back it up in a secure way with Reddit. In this option, you encrypt your private key with a unique Vault Password that only you know (separate from your Reddit password) and store the encrypted version on Reddit. Since it is encrypted, Reddit is not able to see your private key and cannot use it.", i.a.createElement("p", null, G._("The first option is to back it up in a secure way with Reddit. In this option, you encrypt your private key with a unique Vault Password that only you know (separate from your Reddit password) and store the encrypted version on Reddit. Since it is encrypted, Reddit is not able to see your private key and cannot use it.", null, {
 						hk: "1v55Px"
-					}))), Y._param("=The second option is to save a Recovery Phrase somewhere secure. The recovery phrase is 12 words in a particular order that can be used to recreate your private key within Vault. Keep this safe — we recommend using a password manager like LastPass.", i.a.createElement("p", null, Y._("The second option is to save a Recovery Phrase somewhere secure. The recovery phrase is 12 words in a particular order that can be used to recreate your private key within Vault. Keep this safe — we recommend using a password manager like LastPass.", null, {
+					}))), G._param("=The second option is to save a Recovery Phrase somewhere secure. The recovery phrase is 12 words in a particular order that can be used to recreate your private key within Vault. Keep this safe — we recommend using a password manager like LastPass.", i.a.createElement("p", null, G._("The second option is to save a Recovery Phrase somewhere secure. The recovery phrase is 12 words in a particular order that can be used to recreate your private key within Vault. Keep this safe — we recommend using a password manager like LastPass.", null, {
 						hk: "3jivE0"
-					}))), Y._param("=It is very important that you never give your Vault Password or Recovery Phrase to anyone else, ever. No Reddit employee will ever ask you for either of them.", i.a.createElement("p", null, Y._("It is very important that you never give your Vault Password or Recovery Phrase to anyone else, ever. No Reddit employee will ever ask you for either of them.", null, {
+					}))), G._param("=It is very important that you never give your Vault Password or Recovery Phrase to anyone else, ever. No Reddit employee will ever ask you for either of them.", i.a.createElement("p", null, G._("It is very important that you never give your Vault Password or Recovery Phrase to anyone else, ever. No Reddit employee will ever ask you for either of them.", null, {
 						hk: "43SfJy"
-					}))), Y._param("=There are two corresponding ways to recover your Vault.", i.a.createElement("p", null, Y._("There are two corresponding ways to recover your Vault.", null, {
+					}))), G._param("=There are two corresponding ways to recover your Vault.", i.a.createElement("p", null, G._("There are two corresponding ways to recover your Vault.", null, {
 						hk: "2738oW"
-					}))), Y._param("=You can recover Vaults that you backed up with Reddit through the Vault signup flow. When you go to create a new Vault, you will be presented with older Vaults that you made that are backed up with Reddit. If you choose to recover one of those, you will be prompted for the password you set when you created it. If you want to switch to another Vault, you can sign out of your current Vault through the settings.", i.a.createElement("p", null, Y._("You can recover Vaults that you backed up with Reddit through the Vault signup flow. When you go to create a new Vault, you will be presented with older Vaults that you made that are backed up with Reddit. If you choose to recover one of those, you will be prompted for the password you set when you created it. If you want to switch to another Vault, you can sign out of your current Vault through the settings.", null, {
+					}))), G._param("=You can recover Vaults that you backed up with Reddit through the Vault signup flow. When you go to create a new Vault, you will be presented with older Vaults that you made that are backed up with Reddit. If you choose to recover one of those, you will be prompted for the password you set when you created it. If you want to switch to another Vault, you can sign out of your current Vault through the settings.", i.a.createElement("p", null, G._("You can recover Vaults that you backed up with Reddit through the Vault signup flow. When you go to create a new Vault, you will be presented with older Vaults that you made that are backed up with Reddit. If you choose to recover one of those, you will be prompted for the password you set when you created it. If you want to switch to another Vault, you can sign out of your current Vault through the settings.", null, {
 						hk: "1EJFvM"
-					}))), Y._param("=You can also recover a Vault using the Recovery Phrase. When you start to create a Vault, you will see an option to use your Recovery Phrase. Enter in the 12 words in the same order that they were provided when you first created the Vault.", i.a.createElement("p", null, Y._("You can also recover a Vault using the Recovery Phrase. When you start to create a Vault, you will see an option to use your Recovery Phrase. Enter in the 12 words in the same order that they were provided when you first created the Vault.", null, {
+					}))), G._param("=You can also recover a Vault using the Recovery Phrase. When you start to create a Vault, you will see an option to use your Recovery Phrase. Enter in the 12 words in the same order that they were provided when you first created the Vault.", i.a.createElement("p", null, G._("You can also recover a Vault using the Recovery Phrase. When you start to create a Vault, you will see an option to use your Recovery Phrase. Enter in the 12 words in the same order that they were provided when you first created the Vault.", null, {
 						hk: "2itpCz"
-					}))), Y._param("=Note that you can only have one active Vault at any time. In each distribution, your Community Points will be sent to the Vault that is actively associated with your account at the time that distribution is finalized Every time you create or recover a Vault, it is immediately set as your active Vault.", i.a.createElement("p", null, Y._("Note that you can only have one active Vault at any time. In each distribution, your Community Points will be sent to the Vault that is actively associated with your account at the time that distribution is {=finalized}. Every time you create or recover a Vault, it is immediately set as your active Vault.", [Y._param("=finalized", i.a.createElement(p.a, {
+					}))), G._param("=Note that you can only have one active Vault at any time. In each distribution, your Community Points will be sent to the Vault that is actively associated with your account at the time that distribution is finalized Every time you create or recover a Vault, it is immediately set as your active Vault.", i.a.createElement("p", null, G._("Note that you can only have one active Vault at any time. In each distribution, your Community Points will be sent to the Vault that is actively associated with your account at the time that distribution is {=finalized}. Every time you create or recover a Vault, it is immediately set as your active Vault.", [G._param("=finalized", i.a.createElement(p.a, {
 						to: m("distribution-process")
-					}, Y._("finalized", null, {
+					}, G._("finalized", null, {
 						hk: "1dzDzu"
 					})))], {
 						hk: "XS1ov"
 					})))], {
 						hk: "31FNqU"
-					})), i.a.createElement("section", null, i.a.createElement("h3", null, Y._("Using Vault on web", null, {
+					})), i.a.createElement("section", null, i.a.createElement("h3", null, G._("Using Vault on web", null, {
 						hk: "4lZpy1"
-					})), Y._("{=Users who have backed up their Vault to Reddit servers with a password can also use their Vault on desktop web (new Reddit). For example, you can sign up for Special Memberships and send Points to other users.}{=When you use your Points on web, your encrypted key is downloaded to your browser and you will be prompted for the password you used to create it.}{=If you would like to use your Vault on web, but have not backed up your Vault to Reddit servers, you can create a backup by going to Vault Settings on your mobile device.}", [Y._param("=Users who have backed up their Vault to Reddit servers with a password can also use their Vault on desktop web (new Reddit). For example, you can sign up for Special Memberships and send Points to other users.", i.a.createElement("p", null, Y._("Users who have backed up their Vault to Reddit servers with a password can also use their Vault on desktop web (new Reddit). For example, you can sign up for Special Memberships and send Points to other users.", null, {
+					})), G._("{=Users who have backed up their Vault to Reddit servers with a password can also use their Vault on desktop web (new Reddit). For example, you can sign up for Special Memberships and send Points to other users.}{=When you use your Points on web, your encrypted key is downloaded to your browser and you will be prompted for the password you used to create it.}{=If you would like to use your Vault on web, but have not backed up your Vault to Reddit servers, you can create a backup by going to Vault Settings on your mobile device.}", [G._param("=Users who have backed up their Vault to Reddit servers with a password can also use their Vault on desktop web (new Reddit). For example, you can sign up for Special Memberships and send Points to other users.", i.a.createElement("p", null, G._("Users who have backed up their Vault to Reddit servers with a password can also use their Vault on desktop web (new Reddit). For example, you can sign up for Special Memberships and send Points to other users.", null, {
 						hk: "3Q0UIE"
-					}))), Y._param("=When you use your Points on web, your encrypted key is downloaded to your browser and you will be prompted for the password you used to create it.", i.a.createElement("p", null, Y._("When you use your Points on web, your encrypted key is downloaded to your browser and you will be prompted for the password you used to create it.", null, {
+					}))), G._param("=When you use your Points on web, your encrypted key is downloaded to your browser and you will be prompted for the password you used to create it.", i.a.createElement("p", null, G._("When you use your Points on web, your encrypted key is downloaded to your browser and you will be prompted for the password you used to create it.", null, {
 						hk: "1dq5v2"
-					}))), Y._param("=If you would like to use your Vault on web, but have not backed up your Vault to Reddit servers, you can create a backup by going to Vault Settings on your mobile device.", i.a.createElement("p", null, Y._("If you would like to use your Vault on web, but have not backed up your Vault to Reddit servers, you can create a backup by going to Vault Settings on your mobile device.", null, {
+					}))), G._param("=If you would like to use your Vault on web, but have not backed up your Vault to Reddit servers, you can create a backup by going to Vault Settings on your mobile device.", i.a.createElement("p", null, G._("If you would like to use your Vault on web, but have not backed up your Vault to Reddit servers, you can create a backup by going to Vault Settings on your mobile device.", null, {
 						hk: "1tITN"
 					})))], {
 						hk: "1xjedp"
@@ -2033,7 +2033,7 @@
 				ye = o.n(pe);
 			const {
 				fbt: be
-			} = o("./node_modules/fbt/lib/FbtPublic.js"), ge = e => {
+			} = o("./node_modules/fbt/lib/FbtPublic.js"), fe = e => {
 				let {
 					className: t
 				} = e;
@@ -2093,7 +2093,7 @@
 					hk: "4rpEy2"
 				})))
 			};
-			var fe = o("./src/higherOrderComponents/asModal/index.tsx"),
+			var ge = o("./src/higherOrderComponents/asModal/index.tsx"),
 				we = o("./src/reddit/components/Econ/Common/ModalCloseButton/index.tsx"),
 				ke = o("./src/reddit/icons/svgs/ArrowRightThin/index.tsx"),
 				ve = o("./src/reddit/selectors/economics.ts"),
@@ -2161,7 +2161,7 @@
 				},
 				Se = o("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/CryptoFuture/carouselModal.m.less"),
 				Ve = o.n(Se);
-			const Ie = Object(fe.a)(e => {
+			const Ie = Object(ge.a)(e => {
 				let {
 					onClose: t
 				} = e;
@@ -2291,9 +2291,9 @@
 				})))
 			};
 			var Le = o("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/Features/index.m.less"),
-				Ye = o.n(Le);
+				Ge = o.n(Le);
 			const {
-				fbt: Ge
+				fbt: Ye
 			} = o("./node_modules/fbt/lib/FbtPublic.js"), ze = e => {
 				let {
 					className: t
@@ -2303,29 +2303,29 @@
 				}, i.a.createElement(nt, {
 					anchorId: "features"
 				}), i.a.createElement("h3", {
-					className: Ye.a.title
-				}, Ge._("Features", null, {
+					className: Ge.a.title
+				}, Ye._("Features", null, {
 					hk: "Bhlfk"
 				})), i.a.createElement("h2", {
-					className: Ye.a.subtitle
-				}, Ge._("Oh, the possibilities!", null, {
+					className: Ge.a.subtitle
+				}, Ye._("Oh, the possibilities!", null, {
 					hk: "1Up4RN"
 				})), qe.map(e => i.a.createElement(We, {
-					className: Ye.a.featureContainer,
+					className: Ge.a.featureContainer,
 					key: e.title,
 					data: e
 				})))
 			}, qe = [{
-				title: Ge._("Own your reputation", null, {
+				title: Ye._("Own your reputation", null, {
 					hk: "2Z40M2"
 				}),
-				body: Ge._("{=Community Points are a measure of reputation in your community. In the subreddit, they are displayed next to usernames, so the biggest contributors stand out from the crowd.}{=But it's not limited to Reddit either. Because your Points are on the blockchain, you can take your reputation anywhere you want on the Internet. Embed them in your own site or app!}", [Ge._param("=Community Points are a measure of reputation in your community. In the subreddit, they are displayed next to usernames, so the biggest contributors stand out from the crowd.", i.a.createElement("p", {
-					className: Ye.a.bodyText
-				}, Ge._("Community Points are a measure of reputation in your community. In the subreddit, they are displayed next to usernames, so the biggest contributors stand out from the crowd.", null, {
+				body: Ye._("{=Community Points are a measure of reputation in your community. In the subreddit, they are displayed next to usernames, so the biggest contributors stand out from the crowd.}{=But it's not limited to Reddit either. Because your Points are on the blockchain, you can take your reputation anywhere you want on the Internet. Embed them in your own site or app!}", [Ye._param("=Community Points are a measure of reputation in your community. In the subreddit, they are displayed next to usernames, so the biggest contributors stand out from the crowd.", i.a.createElement("p", {
+					className: Ge.a.bodyText
+				}, Ye._("Community Points are a measure of reputation in your community. In the subreddit, they are displayed next to usernames, so the biggest contributors stand out from the crowd.", null, {
 					hk: "22eCEg"
-				}))), Ge._param("=But it's not limited to Reddit either. Because your Points are on the blockchain, you can take your reputation anywhere you want on the Internet. Embed them in your own site or app!", i.a.createElement("p", {
-					className: Ye.a.bodyText
-				}, Ge._("But it's not limited to Reddit either. Because your Points are on the blockchain, you can take your reputation anywhere you want on the Internet. Embed them in your own site or app!", null, {
+				}))), Ye._param("=But it's not limited to Reddit either. Because your Points are on the blockchain, you can take your reputation anywhere you want on the Internet. Embed them in your own site or app!", i.a.createElement("p", {
+					className: Ge.a.bodyText
+				}, Ye._("But it's not limited to Reddit either. Because your Points are on the blockchain, you can take your reputation anywhere you want on the Internet. Embed them in your own site or app!", null, {
 					hk: "4a3vgy"
 				})))], {
 					hk: "3wqGEI"
@@ -2333,36 +2333,36 @@
 				imageSrc: `${n.a.assetPath}/img/communityPoints/landingPage/reputation_v3.png`,
 				backgroundColor: "#FF5C0033"
 			}, {
-				title: Ge._("Purchase Special Memberships", null, {
+				title: Ye._("Purchase Special Memberships", null, {
 					hk: "4c0PPs"
 				}),
-				body: Ge._("{=Create Special Memberships in your community that users can purchase with Points. Special Memberships unlock multiple features:}{=Badges}{=Personalize your presence on the subreddit with loyalty, achievement, and style badges, and add a highlighted color to your username.}{=GIFs (optional)}{=Embed GIFs directly inside your comments.}{=Animated Emojis}{=Let creators in your community upload custom emojis that you can add to your comments.}", [Ge._param("=Create Special Memberships in your community that users can purchase with Points. Special Memberships unlock multiple features:", i.a.createElement("p", {
-					className: Object(s.a)(Ye.a.bodyText, Ye.a.blackText)
-				}, Ge._("Create Special Memberships in your community that users can purchase with Points. Special Memberships unlock multiple features:", null, {
+				body: Ye._("{=Create Special Memberships in your community that users can purchase with Points. Special Memberships unlock multiple features:}{=Badges}{=Personalize your presence on the subreddit with loyalty, achievement, and style badges, and add a highlighted color to your username.}{=GIFs (optional)}{=Embed GIFs directly inside your comments.}{=Animated Emojis}{=Let creators in your community upload custom emojis that you can add to your comments.}", [Ye._param("=Create Special Memberships in your community that users can purchase with Points. Special Memberships unlock multiple features:", i.a.createElement("p", {
+					className: Object(s.a)(Ge.a.bodyText, Ge.a.blackText)
+				}, Ye._("Create Special Memberships in your community that users can purchase with Points. Special Memberships unlock multiple features:", null, {
 					hk: "3KdhAP"
-				}))), Ge._param("=Badges", i.a.createElement("h6", {
-					className: Ye.a.bodyTitle
-				}, Ge._("Badges", null, {
+				}))), Ye._param("=Badges", i.a.createElement("h6", {
+					className: Ge.a.bodyTitle
+				}, Ye._("Badges", null, {
 					hk: "1Xw4PQ"
-				}))), Ge._param("=Personalize your presence on the subreddit with loyalty, achievement, and style badges, and add a highlighted color to your username.", i.a.createElement("p", {
-					className: Ye.a.bodyDetail
-				}, Ge._("Personalize your presence on the subreddit with loyalty, achievement, and style badges, and add a highlighted color to your username.", null, {
+				}))), Ye._param("=Personalize your presence on the subreddit with loyalty, achievement, and style badges, and add a highlighted color to your username.", i.a.createElement("p", {
+					className: Ge.a.bodyDetail
+				}, Ye._("Personalize your presence on the subreddit with loyalty, achievement, and style badges, and add a highlighted color to your username.", null, {
 					hk: "3mrVe"
-				}))), Ge._param("=GIFs (optional)", i.a.createElement("h6", {
-					className: Ye.a.bodyTitle
-				}, Ge._("GIFs (optional)", null, {
+				}))), Ye._param("=GIFs (optional)", i.a.createElement("h6", {
+					className: Ge.a.bodyTitle
+				}, Ye._("GIFs (optional)", null, {
 					hk: "1OkOrY"
-				}))), Ge._param("=Embed GIFs directly inside your comments.", i.a.createElement("p", {
-					className: Ye.a.bodyDetail
-				}, Ge._("Embed GIFs directly inside your comments.", null, {
+				}))), Ye._param("=Embed GIFs directly inside your comments.", i.a.createElement("p", {
+					className: Ge.a.bodyDetail
+				}, Ye._("Embed GIFs directly inside your comments.", null, {
 					hk: "TmLOL"
-				}))), Ge._param("=Animated Emojis", i.a.createElement("h6", {
-					className: Ye.a.bodyTitle
-				}, Ge._("Animated Emojis", null, {
+				}))), Ye._param("=Animated Emojis", i.a.createElement("h6", {
+					className: Ge.a.bodyTitle
+				}, Ye._("Animated Emojis", null, {
 					hk: "18gq4g"
-				}))), Ge._param("=Let creators in your community upload custom emojis that you can add to your comments.", i.a.createElement("p", {
-					className: Ye.a.bodyDetail
-				}, Ge._("Let creators in your community upload custom emojis that you can add to your comments.", null, {
+				}))), Ye._param("=Let creators in your community upload custom emojis that you can add to your comments.", i.a.createElement("p", {
+					className: Ge.a.bodyDetail
+				}, Ye._("Let creators in your community upload custom emojis that you can add to your comments.", null, {
 					hk: "Ot9Cs"
 				})))], {
 					hk: "11CKRv"
@@ -2370,27 +2370,27 @@
 				imageSrc: `${n.a.assetPath}/img/communityPoints/landingPage/special_memberships_v3.png`,
 				backgroundColor: "#D4F6FF"
 			}, {
-				title: Ge._("Buy Coins in your community", null, {
+				title: Ye._("Buy Coins in your community", null, {
 					hk: "3LFg3T"
 				}),
 				body: i.a.createElement("p", {
-					className: Ye.a.bodyText
-				}, Ge._("Make it rain awards! You can use your Community Points to buy Reddit Coins that only work in the subreddit.", null, {
+					className: Ge.a.bodyText
+				}, Ye._("Make it rain awards! You can use your Community Points to buy Reddit Coins that only work in the subreddit.", null, {
 					hk: "4BNxrU"
 				})),
 				imageSrc: `${n.a.assetPath}/img/communityPoints/landingPage/awards_v3.png`,
 				backgroundColor: "#00CC7833"
 			}, {
-				title: Ge._("Put anything to a vote", null, {
+				title: Ye._("Put anything to a vote", null, {
 					hk: "3PT2yA"
 				}),
-				body: Ge._("{=Run weighted polls to make big decisions in your community, like getting input on rules changes or deciding how to distribute Points.}{=Unlike regular polls, these polls give a larger voice to people who have contributed more to the community. The more Community Points someone has earned, the more weight their vote carries.}", [Ge._param("=Run weighted polls to make big decisions in your community, like getting input on rules changes or deciding how to distribute Points.", i.a.createElement("p", {
-					className: Ye.a.bodyText
-				}, Ge._("Run weighted polls to make big decisions in your community, like getting input on rules changes or deciding how to distribute Points.", null, {
+				body: Ye._("{=Run weighted polls to make big decisions in your community, like getting input on rules changes or deciding how to distribute Points.}{=Unlike regular polls, these polls give a larger voice to people who have contributed more to the community. The more Community Points someone has earned, the more weight their vote carries.}", [Ye._param("=Run weighted polls to make big decisions in your community, like getting input on rules changes or deciding how to distribute Points.", i.a.createElement("p", {
+					className: Ge.a.bodyText
+				}, Ye._("Run weighted polls to make big decisions in your community, like getting input on rules changes or deciding how to distribute Points.", null, {
 					hk: "Occ8f"
-				}))), Ge._param("=Unlike regular polls, these polls give a larger voice to people who have contributed more to the community. The more Community Points someone has earned, the more weight their vote carries.", i.a.createElement("p", {
-					className: Ye.a.bodyText
-				}, Ge._("Unlike regular polls, these polls give a larger voice to people who have contributed more to the community. The more Community Points someone has earned, the more weight their vote carries.", null, {
+				}))), Ye._param("=Unlike regular polls, these polls give a larger voice to people who have contributed more to the community. The more Community Points someone has earned, the more weight their vote carries.", i.a.createElement("p", {
+					className: Ge.a.bodyText
+				}, Ye._("Unlike regular polls, these polls give a larger voice to people who have contributed more to the community. The more Community Points someone has earned, the more weight their vote carries.", null, {
 					hk: "20PHmT"
 				})))], {
 					hk: "KZiXt"
@@ -2398,12 +2398,12 @@
 				imageSrc: `${n.a.assetPath}/img/communityPoints/landingPage/polls_v3.png`,
 				backgroundColor: "#FFD63533"
 			}, {
-				title: Ge._("Show your appreciation", null, {
+				title: Ye._("Show your appreciation", null, {
 					hk: "16HCcH"
 				}),
-				body: Ge._("{=Tip someone for making a great post or comment! Community Points can also be sent to any Redditor with a crypto Vault.}", [Ge._param("=Tip someone for making a great post or comment! Community Points can also be sent to any Redditor with a crypto Vault.", i.a.createElement("p", {
-					className: Ye.a.bodyText
-				}, Ge._("Tip someone for making a great post or comment! Community Points can also be sent to any Redditor with a crypto Vault.", null, {
+				body: Ye._("{=Tip someone for making a great post or comment! Community Points can also be sent to any Redditor with a crypto Vault.}", [Ye._param("=Tip someone for making a great post or comment! Community Points can also be sent to any Redditor with a crypto Vault.", i.a.createElement("p", {
+					className: Ge.a.bodyText
+				}, Ye._("Tip someone for making a great post or comment! Community Points can also be sent to any Redditor with a crypto Vault.", null, {
 					hk: "3PzATh"
 				})))], {
 					hk: "3Lb9Rr"
@@ -2411,12 +2411,12 @@
 				imageSrc: `${n.a.assetPath}/img/communityPoints/landingPage/tipping_v3.png`,
 				backgroundColor: "#F86AEA33"
 			}, {
-				title: Ge._("Reward creators and developers", null, {
+				title: Ye._("Reward creators and developers", null, {
 					hk: "3gxoDp"
 				}),
 				body: i.a.createElement("p", {
-					className: Object(s.a)(Ye.a.bodyText, Ye.a.blackText)
-				}, Ge._("Creators can be rewarded for making things for the subreddit, such as designing badges or community merchandise. Developers who make community bots or tools for the subreddit can be paid in Points for their work.", null, {
+					className: Object(s.a)(Ge.a.bodyText, Ge.a.blackText)
+				}, Ye._("Creators can be rewarded for making things for the subreddit, such as designing badges or community merchandise. Developers who make community bots or tools for the subreddit can be paid in Points for their work.", null, {
 					hk: "2aZ9Y6"
 				})),
 				imageSrc: `${n.a.assetPath}/img/communityPoints/landingPage/creator_rewards_v3.png`,
@@ -2521,7 +2521,7 @@
 				})(Object(r.a)());
 				return i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
 					className: tt.a.container
-				}, i.a.createElement(oe, null), e ? i.a.createElement(z, null) : i.a.createElement(i.a.Fragment, null, i.a.createElement(ge, {
+				}, i.a.createElement(oe, null), e ? i.a.createElement(z, null) : i.a.createElement(i.a.Fragment, null, i.a.createElement(fe, {
 					className: tt.a.communityPointsSection
 				}), i.a.createElement(me, {
 					className: tt.a.benefitsSection
@@ -2558,7 +2558,7 @@
 		"./src/reddit/selectors/economics.ts": function(e, t, o) {
 			"use strict";
 			o.d(t, "c", (function() {
-				return f
+				return g
 			})), o.d(t, "o", (function() {
 				return w
 			})), o.d(t, "a", (function() {
@@ -2600,9 +2600,9 @@
 			})), o.d(t, "b", (function() {
 				return L
 			})), o.d(t, "w", (function() {
-				return Y
-			})), o.d(t, "s", (function() {
 				return G
+			})), o.d(t, "s", (function() {
+				return Y
 			})), o.d(t, "t", (function() {
 				return z
 			})), o.d(t, "g", (function() {
@@ -2625,8 +2625,8 @@
 				p = o("./src/reddit/selectors/experiments/mediaInComments.ts"),
 				y = o("./src/reddit/selectors/gold/powerups/index.ts"),
 				b = o("./src/reddit/selectors/gold/powerups/benefitSettings.ts");
-			const g = [],
-				f = (e, t) => {
+			const f = [],
+				g = (e, t) => {
 					const o = e.economics.subredditPremium[t];
 					if (o && o.status === m.a.Fetched) {
 						const e = o.data.subscription,
@@ -2639,7 +2639,7 @@
 					return null
 				},
 				w = (e, t) => {
-					const o = f(e, t);
+					const o = g(e, t);
 					return o && o.endsAt || null
 				};
 			var k;
@@ -2659,7 +2659,7 @@
 					const o = e.user.account,
 						n = e.economics.subredditPremium[t];
 					if (o && n && n.status === m.a.Fetched) {
-						const n = ((e.users.appliedBadges[o.id] || {})[t] || g).map(t => e.badges.models[t]).filter(Boolean);
+						const n = ((e.users.appliedBadges[o.id] || {})[t] || f).map(t => e.badges.models[t]).filter(Boolean);
 						if (n) return {
 							[s.a.Loyalty]: n.find(e => e.placement === r.a.First),
 							[s.a.Achievement]: n.find(e => e.placement === r.a.Second),
@@ -2674,11 +2674,11 @@
 				};
 
 			function _(e, t) {
-				return (null == e ? void 0 : e.length) ? Object(a.a)(e.map(e => t[e]).filter(Boolean)) : g
+				return (null == e ? void 0 : e.length) ? Object(a.a)(e.map(e => t[e]).filter(Boolean)) : f
 			}
 			const E = (e, t, o) => {
 					var a;
-					if (!n.d.spBadges(e)) return g;
+					if (!n.d.spBadges(e)) return f;
 					return _(null === (a = e.users.appliedBadges[o]) || void 0 === a ? void 0 : a[t], e.badges.models)
 				},
 				C = (e, t) => {
@@ -2715,12 +2715,12 @@
 					if (o === s.a.Loyalty || o === s.a.Achievement) return a.data.collections[o];
 					if (o === s.a.Cosmetic && n) return a.data.collections[o][n]
 				}
-				return g
+				return f
 			}
 
 			function x(e, t) {
 				const o = I(e, t, s.a.Loyalty).find(e => "membership" === e.id);
-				return o ? [].concat(o.locked, o.unlocked).filter(e => e.position).sort((e, t) => e.position - t.position) : g
+				return o ? [].concat(o.locked, o.unlocked).filter(e => e.position).sort((e, t) => e.position - t.position) : f
 			}
 
 			function T(e, t) {
@@ -2729,7 +2729,7 @@
 					const e = o.data.collections[s.a.Cosmetic];
 					return Object.values(e).reduce((e, t) => e.concat(t), []).reduce((e, t) => e.concat(t.locked, t.unlocked), []).filter(r.f)
 				}
-				return g
+				return f
 			}
 
 			function R(e, t) {
@@ -2782,7 +2782,7 @@
 					F(e, t).forEach(e => {
 						e.price && e.currency && (o[e.currency] = e.price)
 					});
-					const n = f(e, t);
+					const n = g(e, t);
 					return n && n.price && n.currency && (o[n.currency] = n.price), o
 				},
 				O = (e, t) => {
@@ -2817,26 +2817,26 @@
 					if (!o) return;
 					return e.economics.emotes[o]
 				},
-				Y = (e, t) => {
+				G = (e, t) => {
 					const o = t && e.economics.gifs[t];
 					return !!o && o.hasGifProduct
 				},
-				G = (e, t) => !!t && !!Object(y.a)(e, {
+				Y = (e, t) => !!t && !!Object(y.a)(e, {
 					subredditId: t
 				}),
 				z = (e, t, o) => {
 					if (Object(p.a)(e)) return !(!t || !Object(d.C)(e, {
 						subredditId: t
 					})) || (!!H(e, t) || !(!n.d.spGiphy(e) || !q(e, o)));
-					if (!Object(b.b)(e, {
+					if (!Object(b.a)(e, {
 							subredditId: t
 						})) return !1;
-					if (Object(y.g)(e, {
+					if (Object(y.f)(e, {
 							subredditId: t
 						})) return !0;
 					if (q(e, o)) return !0;
 					const a = n.d.spGiphy(e),
-						i = Y(e, t);
+						i = G(e, t);
 					return !!H(e, t) || a && i
 				},
 				q = (e, t) => {
@@ -2847,7 +2847,7 @@
 				},
 				H = (e, t) => {
 					const o = n.d.spGiphy(e),
-						a = Y(e, t);
+						a = G(e, t);
 					return o && a
 				},
 				U = (e, t, o) => {
@@ -2857,7 +2857,81 @@
 					}
 				},
 				K = e => e.economics.pointsCopy.data
+		},
+		"./src/reddit/selectors/gold/powerups/benefitSettings.ts": function(e, t, o) {
+			"use strict";
+			o.d(t, "a", (function() {
+				return c
+			}));
+			var n = o("./src/reddit/models/Gold/Powerups/index.ts"),
+				a = o("./src/lib/initializeClient/installReducer.ts"),
+				i = o("./src/reddit/actions/gold/constants.ts");
+			const r = {};
+			var s = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : r,
+						t = arguments.length > 1 ? arguments[1] : void 0;
+					var o, n;
+					switch (t.type) {
+						case i.mb:
+						case i.nb: {
+							const {
+								benefitStatuses: n,
+								subredditId: a
+							} = t.payload;
+							if (!n) return e;
+							const i = null !== (o = e[a]) && void 0 !== o ? o : {},
+								r = {};
+							return n.forEach(e => {
+								let {
+									benefit: t,
+									isEnabled: o
+								} = e;
+								r[t] = o
+							}), {
+								...e,
+								[a]: {
+									...i,
+									...r
+								}
+							}
+						}
+						case i.L: {
+							const {
+								benefitStatuses: o,
+								subredditId: a
+							} = t.payload, i = null !== (n = e[a]) && void 0 !== n ? n : {}, r = {};
+							return o.forEach(e => {
+								let {
+									benefit: t,
+									isEnabled: o
+								} = e;
+								r[t] = o
+							}), {
+								...e,
+								[a]: {
+									...i,
+									...r
+								}
+							}
+						}
+						default:
+							return e
+					}
+				},
+				l = o("./node_modules/reselect/es/index.js");
+			Object(a.a)({
+				features: {
+					powerupsBenefitSettings: s
+				}
+			});
+			const u = (e, t) => {
+					let {
+						subredditId: o
+					} = t;
+					return o ? e.features.powerupsBenefitSettings[o] : null
+				},
+				c = (e => Object(l.a)(u, t => !!(null == t ? void 0 : t[e])))(n.a.CommentsWithGifs)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.fe9f84404c5cf3ec0827.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.01d9c9f5fdb92a24b46d.js.map

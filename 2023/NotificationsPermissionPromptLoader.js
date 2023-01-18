@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsPermissionPromptLoader.26c05124aa52c757ed4a.js
-// Retrieved at 1/18/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsPermissionPromptLoader.004dc788bd33929bdac9.js
+// Retrieved at 1/18/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsPermissionPromptLoader", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -99,19 +99,19 @@
 			const N = e => Object(x.c)(e, {
 				experimentEligibilitySelector: w.S,
 				experimentName: k.tb
-			}) === k.Cd;
+			}) === k.Bd;
 			var S = i("./src/reddit/selectors/experiments/delayDnPermission.ts"),
 				P = i("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts");
 			const F = e => Object(x.c)(e, {
 				experimentName: k.Wb,
 				experimentEligibilitySelector: x.a
-			}) === k.Cd;
-			var C = i("./src/reddit/selectors/meta.ts");
-			let q = !1;
+			}) === k.Bd;
+			var q = i("./src/reddit/selectors/meta.ts");
+			let C = !1;
 			const E = async (e, t) => {
 				const i = Object(w.R)(e);
-				if (q) return;
-				if (q = !0, Object(b.a)(e) !== d.d.NotificationsSupported) return;
+				if (C) return;
+				if (C = !0, Object(b.a)(e) !== d.d.NotificationsSupported) return;
 				await Object(u.a)();
 				navigator.serviceWorker.addEventListener("message", n => {
 					const o = n.data,
@@ -134,7 +134,7 @@
 				let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : () => {};
 				return async (n, o, s) => {
 					const c = o(),
-						u = Object(C.f)(c),
+						u = Object(q.f)(c),
 						l = F(c),
 						f = !!Object(y.a)(c),
 						b = Object(S.a)(c),
@@ -465,4 +465,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPermissionPromptLoader.26c05124aa52c757ed4a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPermissionPromptLoader.004dc788bd33929bdac9.js.map
