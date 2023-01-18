@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.0b6ba9cb868e3aa3d037.js
-// Retrieved at 1/17/2023, 4:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.10675cfd7783c608c070.js
+// Retrieved at 1/18/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -1658,7 +1658,7 @@
 					action: "click",
 					noun: "invite_via_email",
 					...r.o(t),
-					subreddit: r.lb(t),
+					subreddit: r.kb(t),
 					actionInfo: r.d(t),
 					correlationId: Object(a.d)(a.a.SubredditCreation, !1)
 				}),
@@ -1667,7 +1667,7 @@
 					action: "view",
 					noun: "modal",
 					...r.o(e),
-					subreddit: r.lb(e),
+					subreddit: r.kb(e),
 					actionInfo: r.d(e),
 					correlationId: Object(a.c)(a.a.SubredditCreation)
 				}),
@@ -1676,7 +1676,7 @@
 					action: "click",
 					noun: e,
 					...r.o(t),
-					subreddit: r.lb(t),
+					subreddit: r.kb(t),
 					actionInfo: r.d(t),
 					correlationId: Object(a.c)(a.a.SubredditCreation)
 				})
@@ -1836,11 +1836,11 @@
 			const s = e => {
 				const t = Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: a.Fd
+					experimentName: a.Bd
 				});
-				return !(!t || Object(a.eg)(t))
+				return !(!t || Object(a.ag)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.0b6ba9cb868e3aa3d037.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.10675cfd7783c608c070.js.map

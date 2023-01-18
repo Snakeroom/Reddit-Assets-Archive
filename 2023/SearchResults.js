@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.4bc3ba4dd63f053e68f0.js
-// Retrieved at 1/17/2023, 4:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.3a56c243f08589933b86.js
+// Retrieved at 1/18/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, o) {
@@ -89,11 +89,11 @@
 				feed: c.r(e),
 				geo: c.t(e),
 				platform: c.I(e),
-				referrer: c.Z(e),
-				request: c.ab(e),
-				screen: c.cb(e),
-				session: c.hb(e),
-				user: c.sb(e),
+				referrer: c.Y(e),
+				request: c.Z(e),
+				screen: c.bb(e),
+				session: c.gb(e),
+				user: c.rb(e),
 				media: o ? c.C(e, o) : null,
 				post: o ? c.K(e, o) : null
 			});
@@ -1229,7 +1229,7 @@
 								source: "post",
 								action: x.c.CLICK,
 								noun: "share_chat",
-								subreddit: Object(f.lb)(e)
+								subreddit: Object(f.kb)(e)
 							}))())
 						}, [t, o]);
 					return r.a.createElement("div", {
@@ -1660,7 +1660,7 @@
 					const o = {
 						...d.o(e),
 						action: r.c.CLICK,
-						subreddit: d.lb(e)
+						subreddit: d.kb(e)
 					};
 					return void 0 === t ? o : {
 						...o,
@@ -1695,7 +1695,7 @@
 				}),
 				v = e => ({
 					...d.o(e),
-					subreddit: d.lb(e),
+					subreddit: d.kb(e),
 					source: s.postComposer
 				}),
 				h = (e, t) => o => ({
@@ -1728,7 +1728,7 @@
 				}),
 				C = e => t => ({
 					...d.o(t),
-					subreddit: d.lb(t),
+					subreddit: d.kb(t),
 					source: s.collectionComposer,
 					action: r.c.CLICK,
 					noun: n.collectionDelete,
@@ -1797,7 +1797,7 @@
 						source: s.postComposer,
 						action: i.c.CLICK,
 						noun: "event_create",
-						subreddit: u.lb(e)
+						subreddit: u.kb(e)
 					})
 				},
 				x = e => {
@@ -1806,7 +1806,7 @@
 						source: s.postComposer,
 						action: i.c.CLICK,
 						noun: "event_edit",
-						subreddit: u.lb(e),
+						subreddit: u.kb(e),
 						postEvent: _(e),
 						postComposer: E(e)
 					})
@@ -1860,7 +1860,7 @@
 					const o = {
 						source: s.eventComposer,
 						action: i.c.CLICK,
-						subreddit: u.lb(e)
+						subreddit: u.kb(e)
 					};
 					return t ? {
 						...o,
@@ -2122,13 +2122,13 @@
 				c = o("./src/reddit/models/Post/index.ts"),
 				i = o("./src/reddit/selectors/posts.ts");
 			const d = e => Object(r.c)(e, {
-					experimentName: n.Xe,
+					experimentName: n.Te,
 					experimentEligibilitySelector: r.a
 				}),
-				a = (e, t) => (t === n.ef.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(c.A)(e),
+				a = (e, t) => (t === n.af.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(c.A)(e),
 				l = Object(s.a)(i.G, d, (e, t) => a(e, t));
 			Object(s.a)((e, t) => t, d, (e, t) => a(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.4bc3ba4dd63f053e68f0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.3a56c243f08589933b86.js.map

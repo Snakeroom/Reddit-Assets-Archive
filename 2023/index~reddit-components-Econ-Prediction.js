@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.9cd7aaf637beafaf4fc7.js
-// Retrieved at 1/11/2023, 11:10:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.9c2dcdd0f1dabc2af5cb.js
+// Retrieved at 1/18/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, n) {
@@ -1138,7 +1138,7 @@
 				B = (e, t) => ({
 					...T.o(e),
 					post: T.K(e, t),
-					subreddit: T.lb(e),
+					subreddit: T.kb(e),
 					predictions: T.Q(e, t)
 				});
 			var U = n("./src/reddit/hooks/useTracking.ts"),
@@ -2999,7 +2999,7 @@
 						value: e ? "1" : "0",
 						oldValue: e ? "0" : "1"
 					},
-					subreddit: Object(o.lb)(t)
+					subreddit: Object(o.kb)(t)
 				}),
 				E = () => e => ({
 					...Object(o.o)(e),
@@ -3030,14 +3030,14 @@
 					source: "predictions_tab",
 					action: "view",
 					noun: "predictions_how_it_works",
-					subreddit: Object(o.lb)(e)
+					subreddit: Object(o.kb)(e)
 				}),
 				x = () => e => ({
 					...Object(o.o)(e),
 					source: "predictions_how_it_works",
 					action: "click",
 					noun: "learn_more",
-					subreddit: Object(o.lb)(e)
+					subreddit: Object(o.kb)(e)
 				})
 		},
 		"./src/reddit/hooks/useToast.tsx": function(e, t, n) {
@@ -3197,4 +3197,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.9cd7aaf637beafaf4fc7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.9c2dcdd0f1dabc2af5cb.js.map

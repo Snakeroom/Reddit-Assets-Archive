@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.838bb9226bcc9c429dad.js
-// Retrieved at 1/17/2023, 4:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.6c48165053486b174c9a.js
+// Retrieved at 1/18/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1451,7 +1451,7 @@
 							count: h.length,
 							paneName: u.platform.currentPage ? u.platform.currentPage.urlParams.pageName : void 0
 						}),
-						screen: D.cb(u),
+						screen: D.bb(u),
 						correlationId: v
 					});
 					for (let t = 0; t < h.length; t++) {
@@ -1472,8 +1472,8 @@
 							}),
 							post: D.K(u, n),
 							profile: D.V(u, n),
-							screen: D.cb(u),
-							subreddit: D.ob(u, n),
+							screen: D.bb(u),
+							subreddit: D.nb(u, n),
 							correlationId: v
 						})
 					}
@@ -6329,7 +6329,7 @@
 									...n.actionInfo,
 									reason: this.props.node.id
 								},
-								subreddit: p.lb(t)
+								subreddit: p.kb(t)
 							}
 						})
 					}
@@ -6738,12 +6738,12 @@
 						rtJsonElementProps: i
 					});
 					switch (r) {
-						case h.Ef.SmIcon:
+						case h.Af.SmIcon:
 							return o.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case h.Ef.SmIconHc:
+						case h.Af.SmIconHc:
 							return o.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -7232,7 +7232,7 @@
 					}),
 					correlationId: Object(s.d)(s.a.GoldPayment, !1),
 					profile: i.T(e),
-					subreddit: i.lb(e)
+					subreddit: i.kb(e)
 				}),
 				d = () => e => ({
 					source: "free_award_offer",
@@ -7309,7 +7309,7 @@
 				p = e => ({
 					...m.o(e),
 					source: o,
-					screen: m.cb(e),
+					screen: m.bb(e),
 					discoveryUnit: {
 						id: "xd_100",
 						name: s.SUBREDDIT_HOVERCARD,
@@ -7355,7 +7355,7 @@
 					const s = Object(a.b)(n) ? n.belongsTo.id : n.subredditId;
 					return {
 						post: m.K(e, n.id),
-						subreddit: m.mb(e, s),
+						subreddit: m.lb(e, s),
 						...b(e, t)
 					}
 				},
@@ -7368,8 +7368,8 @@
 					source: "global",
 					action: r.c.VIEW,
 					noun: s.SUBREDDIT_HOVERCARD,
-					subreddit: m.nb(t, e),
-					screen: m.cb(t)
+					subreddit: m.mb(t, e),
+					screen: m.bb(t)
 				}),
 				v = (e, t) => n => ({
 					...p(n),
@@ -7377,8 +7377,8 @@
 					action: r.c.VIEW,
 					noun: s.ITEM_POST,
 					post: m.K(n, t),
-					subreddit: m.nb(n, e),
-					screen: m.cb(n)
+					subreddit: m.mb(n, e),
+					screen: m.bb(n)
 				}),
 				g = (e, t) => n => ({
 					...p(n),
@@ -7386,26 +7386,26 @@
 					action: r.c.CLICK,
 					noun: s.ITEM_POST,
 					post: m.K(n, t),
-					subreddit: m.nb(n, e),
-					screen: m.cb(n)
+					subreddit: m.mb(n, e),
+					screen: m.bb(n)
 				}),
 				O = e => t => ({
 					...p(t),
-					subreddit: m.mb(t, e) || null,
+					subreddit: m.lb(t, e) || null,
 					source: o.DISCOVERY_UNIT,
 					action: r.c.CLICK,
 					noun: s.HEADER_SUBREDDIT
 				}),
 				_ = e => t => ({
 					...p(t),
-					subreddit: m.mb(t, e) || null,
+					subreddit: m.lb(t, e) || null,
 					source: o.DISCOVERY_UNIT,
 					action: r.c.CLICK,
 					noun: s.HEADER_SUBREDDIT_SUBSCRIBE
 				}),
 				E = e => t => ({
 					...p(t),
-					subreddit: m.mb(t, e) || null,
+					subreddit: m.lb(t, e) || null,
 					source: o.DISCOVERY_UNIT,
 					action: r.c.CLICK,
 					noun: s.HEADER_SUBREDDIT_UNSUBSCRIBE
@@ -7484,7 +7484,7 @@
 					source: o.COMMUNITY_WIDGETS,
 					action: r.c.CLICK,
 					noun: s.SEE_MORE,
-					widget: Object(i.yb)(n, {
+					widget: Object(i.xb)(n, {
 						subredditId: e,
 						widgetKind: t
 					}),
@@ -7495,7 +7495,7 @@
 					action: r.c.CLICK,
 					noun: s.REREDDIT_PROMO,
 					post: i.K(n, e),
-					subreddit: i.lb(n),
+					subreddit: i.kb(n),
 					...t && {
 						banner: {
 							buttonText: t,
@@ -8182,7 +8182,7 @@
 						source: e.includes("modqueue_sort") ? "moderator" : "bulk_mod_action",
 						action: "click",
 						noun: e,
-						screen: Object(C.cb)(t)
+						screen: Object(C.bb)(t)
 					}))
 				}
 				render() {
@@ -8346,7 +8346,7 @@
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
 					experimentName: s.D
-				}) === s.Gd
+				}) === s.Cd
 			}
 		},
 		"./src/reddit/selectors/experiments/cnc/index.ts": function(e, t, n) {
@@ -8361,16 +8361,16 @@
 			const r = e => {
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: s.fc
+						experimentName: s.ec
 					});
-					return !(!t || Object(s.eg)(t))
+					return !(!t || Object(s.ag)(t))
 				},
 				i = e => {
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: s.Tb
+						experimentName: s.Sb
 					});
-					return !(!t || Object(s.eg)(t))
+					return !(!t || Object(s.ag)(t))
 				}
 		},
 		"./src/reddit/selectors/experiments/realtimeMQUpdates.ts": function(e, t, n) {
@@ -8384,8 +8384,8 @@
 				i = n("./src/reddit/selectors/experiments/modqueueActionBarUXImprovements.ts");
 			const a = e => Object(i.a)(e) && Object(o.c)(e, {
 				experimentEligibilitySelector: r.S,
-				experimentName: s.tc
-			}) === s.Gd
+				experimentName: s.sc
+			}) === s.Cd
 		},
 		"./src/reddit/selectors/subredditMention.ts": function(e, t, n) {
 			"use strict";
@@ -8410,12 +8410,12 @@
 				d = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.yf
+						experimentName: s.uf
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.Ef.SmIcon || t === s.Ef.SmIconHc
+					return t === s.Af.SmIcon || t === s.Af.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -8453,4 +8453,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.838bb9226bcc9c429dad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.6c48165053486b174c9a.js.map

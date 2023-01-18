@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/0.019d0cd6b8eede9d98c4.js
-// Retrieved at 1/12/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/0.a356e6ed1e22c882cf34.js
+// Retrieved at 1/18/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[0], {
 		"./src/reddit/icons/svgs/AddCollection/index.tsx": function(e, s, t) {
@@ -872,22 +872,6 @@
 			e.exports = {
 				edit: "_3TGaJCWUjkbNuBqTHvrC05"
 			}
-		},
-		"./src/reddit/icons/svgs/EditPencil/index.tsx": function(e, s, t) {
-			"use strict";
-			var a = t("./node_modules/react/index.js"),
-				n = t.n(a);
-			s.a = e => n.a.createElement("svg", {
-				className: e.className,
-				viewBox: "0 0 14 14",
-				xmlns: "http://www.w3.org/2000/svg",
-				version: "1.1"
-			}, n.a.createElement("title", {
-				id: `${e.title}-title`
-			}, e.title), n.a.createElement("g", null, n.a.createElement("path", {
-				fill: "inherit",
-				d: "M8.1168,3.0832 L10.9168,5.8832 C11.0728,6.0392 11.0728,6.2928 10.9168,6.4488 L4.0824,13.2832 C4.0072,13.3584 3.9056,13.4 3.8,13.4 L1,13.4 C0.7784,13.4 0.6,13.2216 0.6,13 L0.6,10.2 C0.6,10.0944 0.6416,9.9928 0.7168,9.9176 L7.5512,3.0832 C7.7072,2.9272 7.9608,2.9272 8.1168,3.0832 Z M13.5168,2.152 C13.9848,2.62 13.9848,3.3808 13.5168,3.8488 L12.048,5.3176 C11.9696,5.396 11.8672,5.4352 11.7656,5.4352 C11.6632,5.4352 11.5608,5.396 11.4824,5.3176 L8.6824,2.5176 C8.5264,2.3616 8.5264,2.108 8.6824,1.952 L10.1512,0.4832 C10.6192,0.0152 11.38,0.0152 11.848,0.4832 L13.5168,2.152 Z"
-			})))
 		},
 		"./src/reddit/icons/svgs/Envelope/index.tsx": function(e, s, t) {
 			"use strict";
@@ -3872,7 +3856,7 @@
 			t("./src/reddit/icons/svgs/Crosspost/index.tsx"), t("./src/reddit/icons/svgs/Crown/index.tsx");
 			t("./src/reddit/icons/svgs/DiscoveryUnitArrow/Left/index.tsx"), t("./src/reddit/icons/svgs/DiscoveryUnitArrow/Right/index.tsx"), t("./src/reddit/icons/svgs/Distinguish/index.tsx"), t("./src/reddit/icons/svgs/DizzySnoo/index.tsx");
 			t("./src/reddit/icons/svgs/DownvoteCircle/index.tsx"), t("./src/reddit/icons/svgs/Dropdown/index.tsx"), t("./src/reddit/icons/svgs/DynamicThreshold/index.tsx"), t("./src/lib/classNames/index.ts"), t("./src/reddit/icons/svgs/Edit/index.m.less");
-			t("./src/reddit/icons/svgs/EditPencil/index.tsx"), t("./src/reddit/icons/svgs/Envelope/index.tsx"), t("./src/reddit/icons/svgs/Error/index.tsx"), t("./src/reddit/icons/svgs/EthCircle/index.tsx");
+			t("./src/reddit/icons/svgs/Envelope/index.tsx"), t("./src/reddit/icons/svgs/Error/index.tsx"), t("./src/reddit/icons/svgs/EthCircle/index.tsx");
 			t("./src/reddit/icons/svgs/Eye/index.tsx"), t("./src/reddit/icons/svgs/EyeCancel/index.tsx"), t("./src/reddit/icons/svgs/EyeDouble/index.tsx");
 			t("./src/reddit/icons/svgs/Fill/index.tsx"), t("./src/reddit/icons/svgs/Flag/index.tsx"), t("./src/reddit/icons/svgs/FormattingAlignCenter/index.tsx"), t("./src/reddit/icons/svgs/FormattingAlignLeft/index.tsx"), t("./src/reddit/icons/svgs/FormattingAlignRight/index.tsx"), t("./src/reddit/icons/svgs/FormattingBlockQuotes/index.m.less");
 			t("./src/reddit/icons/svgs/FormattingBold/index.tsx"), t("./src/reddit/icons/svgs/FormattingCodeBlock/index.m.less");
@@ -4074,4 +4058,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/0.019d0cd6b8eede9d98c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/0.a356e6ed1e22c882cf34.js.map

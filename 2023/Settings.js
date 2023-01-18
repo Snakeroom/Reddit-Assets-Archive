@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.e97a4e6f7847b1ccb1b2.js
-// Retrieved at 1/17/2023, 4:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.0faab8c0b3b38f6ad48f.js
+// Retrieved at 1/18/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -1634,7 +1634,7 @@
 					}
 				}
 				t(Object(S.n)({
-					title: Object(c.o)()
+					title: Object(c.n)()
 				}))
 			}
 		},
@@ -7606,7 +7606,7 @@
 					source: "meta",
 					action: "click",
 					noun: "cancel_membership_with_points",
-					subreddit: Object(s.mb)(t, e)
+					subreddit: Object(s.lb)(t, e)
 				}),
 				a = e => t => ({
 					...Object(s.o)(t),
@@ -7914,7 +7914,7 @@
 			const i = e => ({
 					...s.o(e),
 					correlationId: Object(r.c)(r.a.PremiumSettings),
-					screen: s.cb(e)
+					screen: s.bb(e)
 				}),
 				c = () => e => ({
 					...i(e),
@@ -8884,7 +8884,7 @@
 					openContentLanguageModal: () => e(Object(v.openD2xOnboardingModal)({
 						type: N.d.LANGUAGE_COLLECTION
 					})),
-					openSSOCreatePasswordForEmailModal: () => e(Object(_.h)(ee.m)),
+					openSSOCreatePasswordForEmailModal: () => e(Object(_.h)(ee.l)),
 					resendEmail: () => e(Object(y.v)())
 				})),
 				ue = e => {
@@ -8955,7 +8955,7 @@
 						})()
 					}, []);
 					const D = Object(r.e)(I.h),
-						B = D === w.Xc.TopTwo || D === w.Xc.All,
+						B = D === w.Tc.TopTwo || D === w.Tc.All,
 						R = Object(o.useMemo)(() => Object(se.c)(T), [T]);
 					return l ? a.a.createElement(X, {
 						email: k.email
@@ -9096,8 +9096,8 @@
 				shouldShowCreatePasswordModal: T.d
 			});
 			var Re = Object(r.b)(Be, e => ({
-					openSSOCreatePasswordForLinkAppleModal: () => e(Object(_.h)(ee.j)),
-					openSSOCreatePasswordForUnlinkAppleModal: () => e(Object(_.h)(ee.k)),
+					openSSOCreatePasswordForLinkAppleModal: () => e(Object(_.h)(ee.i)),
+					openSSOCreatePasswordForUnlinkAppleModal: () => e(Object(_.h)(ee.j)),
 					openLinkAppleSSOModal: () => e(Object(v.openLinkAppleSSOModal)()),
 					openUnlinkAppleSSOModal: () => e(Object(v.openUnlinkAppleSSOModal)())
 				}))(e => {
@@ -9160,8 +9160,8 @@
 				shouldShowCreatePasswordModal: T.d
 			});
 			var Ye = Object(r.b)(Ve, e => ({
-					openSSOCreatePasswordForLinkGoogleModal: () => e(Object(_.h)(ee.n)),
-					openSSOCreatePasswordForUnlinkGoogleModal: () => e(Object(_.h)(ee.o)),
+					openSSOCreatePasswordForLinkGoogleModal: () => e(Object(_.h)(ee.m)),
+					openSSOCreatePasswordForUnlinkGoogleModal: () => e(Object(_.h)(ee.n)),
 					openLinkGoogleSSOModal: () => e(Object(v.openLinkGoogleSSOModal)()),
 					openUnlinkGoogleSSOModal: () => e(Object(v.openUnlinkGoogleSSOModal)())
 				}))(e => {
@@ -9337,7 +9337,7 @@
 					deactivate: t => {
 						e(Object(y.u)(t))
 					},
-					openSSOCreatePasswordForLinkGoogleModal: () => e(Object(_.h)(ee.l)),
+					openSSOCreatePasswordForLinkGoogleModal: () => e(Object(_.h)(ee.k)),
 					optOut: async () => {
 						if ("new.reddit.com" === window.location.host) return window.location.assign("https://old.reddit.com/prefs");
 						f.a.get("rseor3") && f.a.remove("rseor3", {
@@ -10707,7 +10707,7 @@
 				go = Object(r.b)(fo, (e, t) => ({
 					addBlocked: t => e(Object(Zs.h)(t)),
 					addWhitelisted: t => e(Object(Mt.g)(t)),
-					openSSOCreatePasswordFor2FAModal: () => e(Object(_.h)(ee.i)),
+					openSSOCreatePasswordFor2FAModal: () => e(Object(_.h)(ee.h)),
 					removeWhitelisted: t => e(Object(Mt.h)(t)),
 					removeBlocked: t => e(Object(Zs.g)(t)),
 					saveChatSettings: t => e(Object(Tt.d)(t)),
@@ -11915,9 +11915,9 @@
 					},
 					isDspEnabled: e => {
 						return Object(ae.c)(e, {
-							experimentName: w.gd,
+							experimentName: w.cd,
 							experimentEligibilitySelector: ae.a
-						}) === w.Gd
+						}) === w.Cd
 					}
 				}),
 				fr = Object(ve.v)(),
@@ -12458,7 +12458,7 @@
 			const r = e => Object(o.c)(e, {
 				experimentName: s.s,
 				experimentEligibilitySelector: () => Object(a.R)(e)
-			}) === s.Gd
+			}) === s.Cd
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -12622,4 +12622,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.e97a4e6f7847b1ccb1b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.0faab8c0b3b38f6ad48f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditHovercard.999b2343f8302747dbec.js
-// Retrieved at 1/9/2023, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditHovercard.bc960c85ddf21f8f2d95.js
+// Retrieved at 1/18/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditHovercard"], {
 		"./src/reddit/components/CommunityType/index.m.less": function(e, t, s) {
@@ -254,16 +254,16 @@
 					action: "click",
 					noun: t,
 					post: s ? a.K(o, s) : void 0,
-					subreddit: a.mb(o, e),
-					screen: a.cb(o)
+					subreddit: a.lb(o, e),
+					screen: a.bb(o)
 				}),
 				c = (e, t) => s => ({
 					source: "subreddit_hovercard",
 					action: "view",
 					noun: "hover_subreddit_hovercard",
 					post: t ? a.K(s, t) : void 0,
-					subreddit: a.mb(s, e),
-					screen: a.cb(s)
+					subreddit: a.lb(s, e),
+					screen: a.bb(s)
 				});
 			var u = s("./node_modules/react-redux/es/index.js"),
 				p = s("./node_modules/reselect/es/index.js"),
@@ -873,4 +873,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.999b2343f8302747dbec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.bc960c85ddf21f8f2d95.js.map

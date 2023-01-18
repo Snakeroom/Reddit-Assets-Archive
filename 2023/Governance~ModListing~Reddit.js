@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.ca2091df69c602299927.js
-// Retrieved at 1/17/2023, 4:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.7e658c81fe4e7555fecc.js
+// Retrieved at 1/18/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -353,14 +353,14 @@
 				d = e => {
 					switch (e) {
 						case o.a.Denied:
-							c.jb(!1), Object(r.c)();
+							c.ib(!1), Object(r.c)();
 							break;
 						case o.a.Default:
 						case o.a.Granted:
-							c.jb(!0), Object(r.c)();
+							c.ib(!0), Object(r.c)();
 							break;
 						case o.a.Closed:
-							c.jb(!0)
+							c.ib(!0)
 					}
 				}
 		},
@@ -407,9 +407,9 @@
 			})), n.d(t, "c", (function() {
 				return V
 			})), n.d(t, "a", (function() {
-				return W
-			})), n.d(t, "h", (function() {
 				return q
+			})), n.d(t, "h", (function() {
+				return K
 			})), n.d(t, "j", (function() {
 				return Y
 			})), n.d(t, "g", (function() {
@@ -609,7 +609,7 @@
 					}), T.b.SuccessCommunityGreen))) : t(Object(d.f)(Object(d.e)(r.fbt._("Failed to turn off updates on this, please try again", null, {
 						hk: "1zhpEy"
 					}), T.b.Error)))
-				}, W = e => async (t, n, o) => {
+				}, q = e => async (t, n, o) => {
 					let {
 						gqlContext: s
 					} = o;
@@ -621,7 +621,7 @@
 					}), T.b.SuccessCommunityGreen))) : t(Object(d.f)(Object(d.e)(r.fbt._("Failed to block awarder, please try again", null, {
 						hk: "2dxeA8"
 					}), T.b.Error)))
-				}, K = Object(o.a)(c.d), q = (e, t) => async (n, r, o) => {
+				}, W = Object(o.a)(c.d), K = (e, t) => async (n, r, o) => {
 					let i, {
 						apiContext: c
 					} = o;
@@ -652,7 +652,7 @@
 					}))(c(), e);
 					if (i.ok) {
 						const t = (new Date).toISOString();
-						n(K({
+						n(W({
 							id: e,
 							now: t
 						}))
@@ -833,42 +833,14 @@
 		},
 		"./src/reddit/components/ImageWithFallback/index.tsx": function(e, t, n) {
 			"use strict";
-			n.d(t, "b", (function() {
-				return i
+			n.d(t, "a", (function() {
+				return r
 			}));
-			var r = n("./node_modules/react/index.js"),
-				o = n.n(r);
-
-			function s() {
-				return (s = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var n = arguments[t];
-						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
-					}
-					return e
-				}).apply(this, arguments)
-			}
-			const i = e => new Promise((t, n) => {
+			n("./node_modules/react/index.js");
+			const r = e => new Promise((t, n) => {
 				const r = new Image;
 				r.onload = () => t(r), r.onerror = n, r.src = e
-			});
-			t.a = e => {
-				let {
-					src: t,
-					lowSrc: n = t,
-					errorSrc: c = n,
-					...a
-				} = e;
-				const d = Object(r.createRef)();
-				return i(t).then(() => {
-					d.current && (d.current.src = t)
-				}).catch(() => {
-					d.current && (d.current.src = c)
-				}), o.a.createElement("img", s({
-					ref: d,
-					src: n
-				}, a))
-			}
+			})
 		},
 		"./src/reddit/components/LottieAnimation/index.tsx": function(e, t, n) {
 			"use strict";
@@ -1424,12 +1396,12 @@
 							userID: t
 						}
 					}
-				}), [t]), W = Object(o.useCallback)(e => {
+				}), [t]), q = Object(o.useCallback)(e => {
 					const {
 						isOnline: t
 					} = e.subscribe.data;
 					H(t)
-				}, []), K = Object(o.useRef)(null), [q, Y] = Object(o.useState)(!1), z = Object(o.useCallback)(e => {
+				}, []), W = Object(o.useRef)(null), [K, Y] = Object(o.useState)(!1), z = Object(o.useCallback)(e => {
 					e.forEach(e => {
 						const {
 							isIntersecting: t,
@@ -1440,21 +1412,21 @@
 				}, []), Q = Object(o.useRef)({
 					rootMargin: "750px 0px 1000px 0px"
 				});
-				return Object(u.a)(K, z, Q.current), T ? G : s.a.createElement("div", {
+				return Object(u.a)(W, z, Q.current), T ? G : s.a.createElement("div", {
 					className: Object(r.a)(O.a.userIconWrapper, {
 						[O.a.hasHeadShotWrapper]: B,
 						[O.a.isProfileIcon]: N
 					}, w),
-					ref: K
+					ref: W
 				}, m && s.a.createElement(I, {
 					iconUrl: c
 				}), G, y && (F || h && E) && s.a.createElement(g.default, {
 					showPresence: !0,
 					isHighlighted: f,
 					onceInViewport: C
-				}), (y || v) && !h && q && s.a.createElement(a.a, {
+				}), (y || v) && !h && K && s.a.createElement(a.a, {
 					variables: V,
-					onData: y ? W : j,
+					onData: y ? q : j,
 					queryKey: "isUserOnline"
 				}))
 			})
@@ -1772,7 +1744,7 @@
 					action: "view",
 					noun: "programmatic_ad",
 					...s.o(o),
-					subreddit: s.lb(o),
+					subreddit: s.kb(o),
 					programmatic: {
 						adUnit: null !== e && null !== t ? `DESKTOP ${e}x${t} ${n}` : `DESKTOP ${n}`,
 						count: 1,
@@ -1780,7 +1752,7 @@
 					}
 				}),
 				c = (e, t) => {
-					t && (Object(o.vb)(e.postId), Object(o.Eb)(t)), e.impressionIdStr ? Object(o.wb)(e.impressionIdStr) : e.impressionId && Object(o.wb)(e.impressionId)
+					t && (Object(o.ub)(e.postId), Object(o.Db)(t)), e.impressionIdStr ? Object(o.vb)(e.impressionIdStr) : e.impressionId && Object(o.vb)(e.impressionId)
 				}
 		},
 		"./src/reddit/helpers/trackers/inbox.ts": function(e, t, n) {
@@ -2285,11 +2257,11 @@
 			})), n.d(t, "b", (function() {
 				return V
 			})), n.d(t, "a", (function() {
-				return W
-			})), n.d(t, "m", (function() {
-				return K
-			})), n.d(t, "l", (function() {
 				return q
+			})), n.d(t, "m", (function() {
+				return W
+			})), n.d(t, "l", (function() {
+				return K
 			})), n.d(t, "v", (function() {
 				return X
 			})), n.d(t, "d", (function() {
@@ -2463,10 +2435,10 @@
 							Object(T.a)(J(n, r)(t));
 							break;
 						case s.Sb.COINS:
-							Object(T.a)(V(n, r)(t)), Object(T.a)(W()(t));
+							Object(T.a)(V(n, r)(t)), Object(T.a)(q()(t));
 							break;
 						case s.Sb.PREMIUM:
-							Object(T.a)(K(n, r)(t)), Object(T.a)(q()(t));
+							Object(T.a)(W(n, r)(t)), Object(T.a)(K()(t));
 							break;
 						case s.Sb.APPEAL:
 							Object(T.a)(Y(n, r)(t));
@@ -2502,7 +2474,7 @@
 				},
 				y = e => ({
 					...N.o(e),
-					userPreferences: N.tb(e)
+					userPreferences: N.sb(e)
 				}),
 				k = e => {
 					let {
@@ -2535,9 +2507,9 @@
 								sort: n,
 								sortTime: s
 							}),
-							subreddit: N.lb(e),
-							timer: N.rb(r, o),
-							userSubreddit: N.ub(e),
+							subreddit: N.kb(e),
+							timer: N.qb(r, o),
+							userSubreddit: N.tb(e),
 							adblock: N.e(e),
 							postFlair: {
 								title: i
@@ -2565,10 +2537,10 @@
 							success: a
 						}),
 						profile: N.T(s),
-						snoovatar: N.ib(s),
-						subreddit: N.lb(s),
-						timer: N.rb(n, r),
-						userSubreddit: N.ub(s),
+						snoovatar: N.hb(s),
+						subreddit: N.kb(s),
+						timer: N.qb(n, r),
+						userSubreddit: N.tb(s),
 						adblock: N.e(s)
 					}
 				},
@@ -2588,9 +2560,9 @@
 							success: a
 						}),
 						profile: N.T(s),
-						subreddit: N.lb(s),
-						timer: N.rb(n, r),
-						userSubreddit: N.ub(s),
+						subreddit: N.kb(s),
+						timer: N.qb(n, r),
+						userSubreddit: N.tb(s),
 						adblock: N.e(s)
 					}
 				},
@@ -2610,9 +2582,9 @@
 							success: a
 						}),
 						profile: N.T(s),
-						subreddit: N.lb(s),
-						timer: N.rb(n, r),
-						userSubreddit: N.ub(s),
+						subreddit: N.kb(s),
+						timer: N.qb(n, r),
+						userSubreddit: N.tb(s),
 						adblock: N.e(s)
 					}
 				},
@@ -2627,9 +2599,9 @@
 							success: o
 						}),
 						profile: N.T(r),
-						subreddit: N.lb(r),
-						timer: N.rb(n, t),
-						userSubreddit: N.ub(r),
+						subreddit: N.kb(r),
+						timer: N.qb(n, t),
+						userSubreddit: N.tb(r),
 						adblock: N.e(r)
 					}
 				},
@@ -2649,9 +2621,9 @@
 						}),
 						post: N.K(i, t),
 						profile: N.T(i),
-						subreddit: N.lb(i),
-						timer: N.rb(r, o),
-						userSubreddit: N.ub(i),
+						subreddit: N.kb(i),
+						timer: N.qb(r, o),
+						userSubreddit: N.tb(i),
 						adblock: N.e(i),
 						postEvent: N.N(i, {
 							postId: t
@@ -2680,9 +2652,9 @@
 							success: o
 						}),
 						post: s ? N.K(r, s) : void 0,
-						subreddit: N.lb(r),
-						timer: N.rb(t, n),
-						userSubreddit: N.ub(r),
+						subreddit: N.kb(r),
+						timer: N.qb(t, n),
+						userSubreddit: N.tb(r),
 						adblock: N.e(r)
 					}
 				},
@@ -2707,8 +2679,8 @@
 							success: t
 						}),
 						profile: N.U(e, Object(O.o)(e, r)),
-						subreddit: N.mb(e, Object(I.I)(e, n)),
-						userSubreddit: N.ub(e),
+						subreddit: N.lb(e, Object(I.I)(e, n)),
+						userSubreddit: N.tb(e),
 						adblock: N.e(e)
 					})
 				},
@@ -2719,8 +2691,8 @@
 						noun: "screen",
 						...y(e),
 						profile: N.U(e, Object(O.o)(e, n)),
-						subreddit: N.mb(e, Object(I.I)(e, t)),
-						userSubreddit: N.ub(e),
+						subreddit: N.lb(e, Object(I.I)(e, t)),
+						userSubreddit: N.tb(e),
 						adblock: N.e(e)
 					})
 				},
@@ -2754,9 +2726,9 @@
 						actionInfo: N.d(e, {
 							success: i
 						}),
-						subreddit: N.lb(e),
-						timer: N.rb(r, o),
-						userSubreddit: N.ub(e),
+						subreddit: N.kb(e),
+						timer: N.qb(r, o),
+						userSubreddit: N.tb(e),
 						adblock: N.e(e),
 						...c ? Object(l.r)(e, c) : {}
 					})
@@ -2767,25 +2739,25 @@
 					noun: "page",
 					correlationId: Object(h.c)(h.a.GoldPayment),
 					...y(n),
-					timer: N.rb(e, t),
+					timer: N.qb(e, t),
 					adblock: N.e(n)
 				}),
-				W = () => e => ({
+				q = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
 					...y(e)
 				}),
-				K = (e, t) => n => ({
+				W = (e, t) => n => ({
 					source: "premium_marketing",
 					action: "view",
 					noun: "page",
 					correlationId: Object(h.c)(h.a.GoldPayment),
 					...y(n),
-					timer: N.rb(e, t),
+					timer: N.qb(e, t),
 					adblock: N.e(n)
 				}),
-				q = () => e => ({
+				K = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -2796,7 +2768,7 @@
 					action: "view",
 					noun: "page",
 					...y(n),
-					timer: N.rb(e, t)
+					timer: N.qb(e, t)
 				}),
 				z = () => e => ({
 					action: "view",
@@ -2809,7 +2781,7 @@
 					action: "view",
 					noun: "screen",
 					...y(n),
-					timer: N.rb(e, t)
+					timer: N.qb(e, t)
 				}),
 				X = () => e => ({
 					source: "global",
@@ -2823,9 +2795,9 @@
 					noun: "screen",
 					...y(n),
 					customFeed: N.m(n),
-					subreddit: N.lb(n),
-					timer: N.rb(e, t),
-					userSubreddit: N.ub(n),
+					subreddit: N.kb(n),
+					timer: N.qb(e, t),
+					userSubreddit: N.tb(n),
 					adblock: N.e(n)
 				}),
 				$ = () => e => ({
@@ -2866,14 +2838,14 @@
 							success: u,
 							paneName: l
 						}),
-						timer: N.rb(n, r),
+						timer: N.qb(n, r),
 						search: {
-							...N.db(c, t, S.a.SERP, o || void 0),
+							...N.cb(c, t, S.a.SERP, o || void 0),
 							sort: null !== (a = t.sort) && void 0 !== a ? a : s.Vb,
 							range: null !== (d = t.t) && void 0 !== d ? d : s.Wb
 						},
 						...ee(i),
-						userPreferences: N.gb(c)
+						userPreferences: N.fb(c)
 					}
 				},
 				ne = (e, t, n) => r => ({
@@ -2883,9 +2855,9 @@
 						...N.d(r),
 						pageType: "search_dropdown"
 					},
-					search: N.db(r, e, S.a.Typeahead, t || void 0),
+					search: N.cb(r, e, S.a.Typeahead, t || void 0),
 					...ee(n),
-					userPreferences: N.gb(r)
+					userPreferences: N.fb(r)
 				}),
 				re = (e, t) => {
 					Object(T.a)({
@@ -3025,8 +2997,8 @@
 					...Object(i.o)(c),
 					actionInfo: Object(i.d)(c),
 					geo: Object(i.t)(c),
-					screen: Object(i.cb)(c),
-					subreddit: Object(i.lb)(c),
+					screen: Object(i.bb)(c),
+					subreddit: Object(i.kb)(c),
 					outbound: Object(i.G)(c, e, t, r, n)
 				};
 				return n && (a.comment = Object(i.h)({
@@ -3405,7 +3377,7 @@
 					return r ? r * o.Xb < 1639443600180 ? void 0 : O(e) : void 0
 				},
 				O = Object(r.a)(e => Object(c.c)(e, {
-					experimentName: s.ye,
+					experimentName: s.ue,
 					experimentEligibilitySelector: a.e
 				}), d.a)
 		},
@@ -3515,4 +3487,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.ca2091df69c602299927.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.7e658c81fe4e7555fecc.js.map

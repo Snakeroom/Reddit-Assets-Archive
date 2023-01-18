@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.083bfcb643b973acfe34.js
-// Retrieved at 1/17/2023, 4:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.ea1778e70b4fb034e17e.js
+// Retrieved at 1/18/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -215,16 +215,16 @@
 			const v = Object(c.a)(e => {
 				const t = Object(E.c)(e, {
 					experimentEligibilitySelector: E.a,
-					experimentName: f.ue
+					experimentName: f.qe
 				});
-				return Object(f.eg)(t) ? void 0 : t
+				return Object(f.ag)(t) ? void 0 : t
 			}, e => {
 				const t = Object(E.c)(e, {
 					experimentEligibilitySelector: E.a,
-					experimentName: f.ve
+					experimentName: f.re
 				});
-				return Object(f.eg)(t) ? void 0 : t
-			}, (e, t) => e === f.we.Enabled && t === f.we.Enabled);
+				return Object(f.ag)(t) ? void 0 : t
+			}, (e, t) => e === f.se.Enabled && t === f.se.Enabled);
 			var x = s("./src/config.ts");
 			var y = s("./src/reddit/selectors/user.ts");
 			const O = e => {
@@ -1413,8 +1413,8 @@
 							var i;
 							return Object(E.c)(e, {
 								experimentEligibilitySelector: E.a,
-								experimentName: f.Hc
-							}) === f.Gd && !s.isSponsored && Et.includes(null === (i = null == t ? void 0 : t.meta) || void 0 === i ? void 0 : i.name)
+								experimentName: f.Dc
+							}) === f.Cd && !s.isSponsored && Et.includes(null === (i = null == t ? void 0 : t.meta) || void 0 === i ? void 0 : i.name)
 						})(e, s, i)
 					},
 					isNSFW: (e, t) => {
@@ -1746,7 +1746,7 @@
 						te = this.shouldBlur(),
 						se = !((null === (e = C.pollData) || void 0 === e ? void 0 : e.isPrediction) && !p),
 						ie = !(!C.isSponsored || !C.source),
-						ne = Object(Tt.vb)() || "",
+						ne = Object(Tt.ub)() || "",
 						ae = C.isSponsored ? Object(st.b)(C.id, {
 							fireAdPixelsOfType: r,
 							openPost: I
@@ -2253,11 +2253,11 @@
 				return !(!l || d) && (e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: i.Ib
-					}) === i.Gd
+						experimentName: i.Hb
+					}) === i.Cd
 				})(e)
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.083bfcb643b973acfe34.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.ea1778e70b4fb034e17e.js.map

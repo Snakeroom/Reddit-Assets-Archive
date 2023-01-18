@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NftProfileUnit.0bdff0936af27453929e.js
-// Retrieved at 1/17/2023, 4:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NftProfileUnit.7d61d54e47b48b24eba8.js
+// Retrieved at 1/18/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NftProfileUnit"], {
 		"./node_modules/classnames/index.js": function(e, t, r) {
@@ -69,13 +69,13 @@
 							},
 							expiration: s
 						}), [r, s]),
-						y = {
+						k = {
 							...p,
 							STRIPE_API_KEY: n.a.stripe.apiKey(e),
 							ACCESS_TOKEN: r,
 							BLOCKCHAIN_PROVIDER: h
 						},
-						O = Object(a.useCallback)(e => {
+						y = Object(a.useCallback)(e => {
 							b(t => {
 								const r = u.o(t);
 								return {
@@ -92,10 +92,10 @@
 						}, [b]);
 					return Object(a.useMemo)(() => ({
 						authHeaders: E,
-						config: y,
+						config: k,
 						isNightMode: f,
-						sendEvent: O
-					}), [E, y, f, O])
+						sendEvent: y
+					}), [E, k, f, y])
 				}
 		},
 		"./src/reddit/components/Econ/Marketplace/NftProfileUnit/index.m.less": function(e, t, r) {
@@ -127,7 +127,7 @@
 				b = r("./src/reddit/hooks/usePreloadModal.ts"),
 				h = r("./src/reddit/hooks/useTracking.ts"),
 				E = r("./src/reddit/components/Econ/Marketplace/NftProfileUnit/index.m.less"),
-				y = r.n(E);
+				k = r.n(E);
 			t.default = e => {
 				let {
 					className: t,
@@ -143,7 +143,7 @@
 				}, s.a.createElement(p.a, null, s.a.createElement(s.a.Fragment, null, s.a.createElement(i.h, {
 					imageUrl: r
 				}), s.a.createElement(i.g, {
-					className: y.a.detailsButton,
+					className: k.a.detailsButton,
 					onClick: () => {
 						d(Object(f.k)(n)), c(Object(o.h)(u.a.ECON_NFT_PRODUCT_DETAILS, {
 							itemId: m
@@ -229,7 +229,7 @@
 			})), r.d(t, "f", (function() {
 				return E
 			})), r.d(t, "n", (function() {
-				return y
+				return k
 			}));
 			var n, s = r("./src/config.ts"),
 				a = r("./src/reddit/endpoints/governance/requester.ts");
@@ -339,7 +339,7 @@
 					recipientAddress: r,
 					amount: n
 				});
-			async function y(e, t) {
+			async function k(e, t) {
 				return await Object(a.a)(e, {
 					method: "put",
 					endpoint: `${s.a.metaUrl}/crypto/ethereum/transaction-intent`,
@@ -367,9 +367,9 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(s.a)(n.od)
+			const a = Object(s.a)(n.kd)
 		},
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProfileUnit.0bdff0936af27453929e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProfileUnit.7d61d54e47b48b24eba8.js.map

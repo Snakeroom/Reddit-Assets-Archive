@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EditCommunityDescriptionModal.405163c4e2e23a5773ed.js
-// Retrieved at 1/5/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EditCommunityDescriptionModal.d86a221ecdec00dc527c.js
+// Retrieved at 1/18/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EditCommunityDescriptionModal"], {
 		"./src/lib/hooks/useMutation.ts": function(e, t, o) {
@@ -85,10 +85,10 @@
 					t = Object(a.e)(t => e && Object(O.c)(t)[e]),
 					[o, c] = Object(n.useState)(""),
 					g = Object(a.d)(),
-					M = Object(j.a)(),
-					[E] = Object(i.a)(_.a);
+					k = Object(j.a)(),
+					[M] = Object(i.a)(_.a);
 				if (!e || !t) return null;
-				const k = () => g(Object(d.i)(p.a.EDIT_DESCRIPTION_MODAL));
+				const E = () => g(Object(d.i)(p.a.EDIT_DESCRIPTION_MODAL));
 				return r.a.createElement(m.e, {
 					className: x.a.ModalBody
 				}, r.a.createElement(m.i, {
@@ -99,7 +99,7 @@
 					hk: "1aXT9M"
 				})), r.a.createElement(b.t, {
 					className: x.a.CloseButton,
-					onClick: k,
+					onClick: E,
 					priority: b.c.Plain
 				}, r.a.createElement(m.b, null)))), r.a.createElement(m.l, {
 					className: x.a.ModalMain
@@ -117,7 +117,7 @@
 				}))), r.a.createElement(m.g, {
 					className: x.a.modalFooter
 				}, r.a.createElement(m.a, {
-					onClick: k
+					onClick: E
 				}, s.fbt._("Cancel", null, {
 					hk: "2TSLl5"
 				})), r.a.createElement(b.t, {
@@ -125,12 +125,12 @@
 					onClick: async () => {
 						g(Object(l.j)(e, {
 							publicDescription: o
-						}, {}, !0)), await E({
+						}, {}, !0)), await M({
 							input: {
 								subredditId: e,
 								cardId: "add_descr"
 							}
-						}), M(Object(y.d)(t, "add_descr")), g(Object(u.b)(e)), k()
+						}), k(Object(y.d)(t, "add_descr")), g(Object(u.b)(e)), E()
 					}
 				}, s.fbt._("Save", null, {
 					hk: "4yMsMq"
@@ -220,7 +220,7 @@
 						pageType: "community",
 						reason: t
 					},
-					subreddit: Object(s.lb)(o)
+					subreddit: Object(s.kb)(o)
 				}),
 				a = (e, t, o) => r => ({
 					...Object(s.o)(r),
@@ -234,7 +234,7 @@
 							reason: o
 						}
 					},
-					subreddit: Object(s.lb)(r)
+					subreddit: Object(s.kb)(r)
 				}),
 				c = e => t => ({
 					...Object(s.o)(t),
@@ -246,7 +246,7 @@
 						pageType: "community",
 						reason: "expanded_module"
 					},
-					subreddit: Object(s.lb)(t)
+					subreddit: Object(s.kb)(t)
 				}),
 				i = e => t => ({
 					...Object(s.o)(t),
@@ -258,7 +258,7 @@
 						pageType: "community",
 						reason: "collapses_module"
 					},
-					subreddit: Object(s.lb)(t)
+					subreddit: Object(s.kb)(t)
 				}),
 				d = (e, t) => o => ({
 					...Object(s.o)(o),
@@ -269,7 +269,7 @@
 					actionInfo: {
 						pageType: "community"
 					},
-					subreddit: Object(s.lb)(o)
+					subreddit: Object(s.kb)(o)
 				}),
 				u = (e, t) => o => ({
 					...Object(s.o)(o),
@@ -280,7 +280,7 @@
 					actionInfo: {
 						pageType: "community"
 					},
-					subreddit: Object(s.lb)(o)
+					subreddit: Object(s.kb)(o)
 				}),
 				l = (e, t) => o => ({
 					...Object(s.o)(o),
@@ -291,7 +291,7 @@
 					actionInfo: {
 						pageType: "community"
 					},
-					subreddit: Object(s.lb)(o)
+					subreddit: Object(s.kb)(o)
 				})
 		},
 		"./src/redditGQL/operations/CompleteCommunityProgressCard.json": function(e) {
@@ -308,4 +308,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EditCommunityDescriptionModal.405163c4e2e23a5773ed.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EditCommunityDescriptionModal.d86a221ecdec00dc527c.js.map

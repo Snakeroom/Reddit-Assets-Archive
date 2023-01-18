@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PushNotifications.a55fe7b67f18feab173a.js
-// Retrieved at 1/17/2023, 4:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PushNotifications.bd276a9a4839c752f204.js
+// Retrieved at 1/18/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -61,7 +61,7 @@
 		"./src/reddit/actions/notifications/index.ts": function(e, t, i) {
 			"use strict";
 			i.r(t), i.d(t, "initializeServiceWorkerChannel", (function() {
-				return W
+				return D
 			})), i.d(t, "requestNotificationsPermissions", (function() {
 				return R
 			})), i.d(t, "subscribeForPNs", (function() {
@@ -98,25 +98,25 @@
 				S = i("./src/reddit/selectors/user.ts");
 			const F = e => Object(w.c)(e, {
 				experimentEligibilitySelector: S.S,
-				experimentName: y.ub
-			}) === y.Gd;
+				experimentName: y.tb
+			}) === y.Cd;
 			var N = i("./src/reddit/selectors/experiments/delayDnPermission.ts"),
 				x = i("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts");
-			const G = e => Object(w.c)(e, {
-				experimentName: y.Xb,
+			const C = e => Object(w.c)(e, {
+				experimentName: y.Wb,
 				experimentEligibilitySelector: w.a
-			}) === y.Gd;
-			var q = i("./src/reddit/selectors/meta.ts");
-			let C = !1;
-			const W = async (e, t) => {
+			}) === y.Cd;
+			var W = i("./src/reddit/selectors/meta.ts");
+			let q = !1;
+			const D = async (e, t) => {
 				const i = Object(S.R)(e);
-				if (C) return;
-				if (C = !0, Object(f.a)(e) !== d.d.NotificationsSupported) return;
+				if (q) return;
+				if (q = !0, Object(f.a)(e) !== d.d.NotificationsSupported) return;
 				await Object(u.a)();
 				navigator.serviceWorker.addEventListener("message", n => {
 					const s = n.data,
 						r = s.command || s.type;
-					if ("registerWithServiceWorker" === r) D(e);
+					if ("registerWithServiceWorker" === r) G(e);
 					else if (r === v.a && i) {
 						const e = o()(s, ["command"]);
 						t(Object(p.f)(e))
@@ -124,8 +124,8 @@
 						const e = Object(O.a)(s.data.href);
 						e && e.pathname && t(Object(l.c)(e.pathname))
 					}
-				}), D(e)
-			}, D = e => {
+				}), G(e)
+			}, G = e => {
 				navigator.serviceWorker.controller && navigator.serviceWorker.controller.postMessage({
 					command: "registerClient",
 					v2EventBoilerPlate: j.c(e)
@@ -134,8 +134,8 @@
 				let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : () => {};
 				return async (n, s, o) => {
 					const c = s(),
-						u = Object(q.f)(c),
-						l = G(c),
+						u = Object(W.f)(c),
+						l = C(c),
 						b = !!Object(k.a)(c),
 						f = Object(N.a)(c),
 						p = Object(x.e)(c),
@@ -143,7 +143,7 @@
 						O = F(c);
 					if (p || m) return;
 					if (await Object(r.a)() || u) return;
-					await W(c, n);
+					await D(c, n);
 					j.l(c), await Object(a.b)(e, t, () => {
 						l || f || b || n(Object(d.s)()), n(Object(d.q)()), j.j(c)
 					}, (e, t) => {
@@ -400,4 +400,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.a55fe7b67f18feab173a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.bd276a9a4839c752f204.js.map

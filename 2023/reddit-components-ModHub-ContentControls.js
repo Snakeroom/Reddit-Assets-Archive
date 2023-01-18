@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.c8161af5d0a871177c0f.js
-// Retrieved at 1/5/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.e6ef19a5ad403b020efd.js
+// Retrieved at 1/18/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-ContentControls"], {
 		"./node_modules/lodash/negate.js": function(e, t) {
@@ -204,8 +204,8 @@
 					noun: "settings",
 					...E.o(t),
 					postRequirement: q(e),
-					subreddit: E.lb(t),
-					userSubreddit: E.ub(t)
+					subreddit: E.kb(t),
+					userSubreddit: E.tb(t)
 				});
 			var w = n("./src/reddit/selectors/activeModalId.ts"),
 				B = n("./src/reddit/selectors/contentControls.ts"),
@@ -1624,7 +1624,7 @@
 						value: `${e}`,
 						oldValue: `${t}`
 					},
-					subreddit: Object(E.lb)(n),
+					subreddit: Object(E.kb)(n),
 					...Object(E.o)(n)
 				}),
 				Vt = "PostReq-discard-confirmation",
@@ -1845,4 +1845,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.c8161af5d0a871177c0f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.e6ef19a5ad403b020efd.js.map

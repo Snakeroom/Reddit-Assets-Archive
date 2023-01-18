@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModQueueActivitySummaryCards.feb2945eebd67f32768c.js
-// Retrieved at 1/5/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModQueueActivitySummaryCards.eb06a66b28544447f934.js
+// Retrieved at 1/18/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModQueueActivitySummaryCards", "reddit-components-ModQueueActivitySummaryCards-ModActivityPreview"], {
 		"./src/reddit/components/ModQueueActivitySummaryCards/ModActivityPreview.tsx": function(e, t, s) {
@@ -28,8 +28,8 @@
 				f = s("./src/config.ts"),
 				j = s("./node_modules/fbt/lib/FbtPublic.js"),
 				E = s("./src/lib/timeAgo/index.ts"),
-				C = s("./src/reddit/components/ModQueueActivitySummaryCards/helpers.ts");
-			const k = `${f.a.assetPath}/img/snoo-sunglasses.png`,
+				k = s("./src/reddit/components/ModQueueActivitySummaryCards/helpers.ts");
+			const C = `${f.a.assetPath}/img/snoo-sunglasses.png`,
 				S = e => {
 					let {
 						modAction: t,
@@ -57,7 +57,7 @@
 						className: Object(o.a)(x.a.username, "text-neutral-content-strong")
 					}, d), i.a.createElement("div", {
 						className: Object(o.a)(x.a.detailText, "text-neutral-content-weak")
-					}, t && i.a.createElement(i.a.Fragment, null, Object(C.a)(t.action, null === (r = t.target) || void 0 === r ? void 0 : r.__typename), " ", Object(E.d)(Object(m.g)(t.createdAt) / 1e3)))))
+					}, t && i.a.createElement(i.a.Fragment, null, Object(k.a)(t.action, null === (r = t.target) || void 0 === r ? void 0 : r.__typename), " ", Object(E.d)(Object(m.g)(t.createdAt) / 1e3)))))
 				},
 				N = e => {
 					let {
@@ -69,7 +69,7 @@
 						alt: j.fbt._("Snoo face image", null, {
 							hk: "35RYyE"
 						}),
-						src: k,
+						src: C,
 						className: x.a.snooImage
 					}), i.a.createElement("div", {
 						className: Object(o.a)(x.a.emptyText, "text-neutral-content-strong")
@@ -150,8 +150,8 @@
 					{
 						mods: E
 					} = j,
-					C = Object(r.useCallback)(e => A(e), [])(E),
-					k = 0 === C.length && f ? null === (u = null == j ? void 0 : j.sub) || void 0 === u ? void 0 : u.lastModAction : void 0,
+					k = Object(r.useCallback)(e => A(e), [])(E),
+					C = 0 === k.length && f ? null === (u = null == j ? void 0 : j.sub) || void 0 === u ? void 0 : u.lastModAction : void 0,
 					S = (e => `mod_activity_tooltip_id-${e}`)(f || ""),
 					N = Object(d.d)(),
 					I = Object(v.a)(),
@@ -169,11 +169,11 @@
 					id: S,
 					onClick: M,
 					"data-testid": "mod-activity-preview"
-				}, E && C.length > 0 ? C.slice(0, L).map((e, t) => {
+				}, E && k.length > 0 ? k.slice(0, L).map((e, t) => {
 					var s, n, a, r, d, c, u, m, b, v;
 					return i.a.createElement(l.a, {
 						className: Object(o.a)(x.a.userIcon, {
-							[x.a.noMargin]: t === C.length - 1 && !(t === L - 1 && C.length > L)
+							[x.a.noMargin]: t === k.length - 1 && !(t === L - 1 && k.length > L)
 						}),
 						style: {
 							height: "24px",
@@ -193,19 +193,19 @@
 						height: "24px",
 						width: "24px"
 					}
-				}), C.length > L && i.a.createElement("div", {
+				}), k.length > L && i.a.createElement("div", {
 					className: Object(o.a)(x.a.moreMods, "text-neutral-content-weak")
-				}, "+", C.length - L), i.a.createElement(T, {
+				}, "+", k.length - L), i.a.createElement(T, {
 					tooltipId: S,
 					isOpen: D,
 					className: x.a.tooltip,
 					targetPosition: ["right", "bottom"],
 					tooltipPosition: ["right", "top"]
 				}, i.a.createElement(w, {
-					orderedModsList: C,
+					orderedModsList: k,
 					subredditName: f || "",
 					mods: E,
-					mostRecentAction: k
+					mostRecentAction: C
 				})))
 			}
 		},
@@ -275,9 +275,9 @@
 				f = s("./src/reddit/hooks/useTracking.ts"),
 				j = s("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
 				E = s("./src/reddit/selectors/meta.ts"),
-				C = s("./src/reddit/selectors/subreddit.ts"),
-				k = s("./src/reddit/components/ModQueueActivitySummaryCards/index.m.less"),
-				S = s.n(k),
+				k = s("./src/reddit/selectors/subreddit.ts"),
+				C = s("./src/reddit/components/ModQueueActivitySummaryCards/index.m.less"),
+				S = s.n(C),
 				N = s("./src/reddit/components/ModQueueActivitySummaryCards/ModActivityPreview.tsx");
 
 			function w() {
@@ -299,7 +299,7 @@
 						currentPageUrl: l
 					} = e;
 					var b, p, g;
-					const y = Object(i.e)(e => Object(C.X)(e, {
+					const y = Object(i.e)(e => Object(k.X)(e, {
 							subredditId: t
 						})),
 						x = Object(f.a)(),
@@ -510,9 +510,9 @@
 					return Object(O.f)(t)
 				};
 			var E = s("./src/reddit/components/Widgets/ThemedWidget/index.m.less"),
-				C = s.n(E);
+				k = s.n(E);
 			const {
-				fbt: k
+				fbt: C
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), S = Object(u.v)(), N = Object(a.b)(() => Object(r.c)({
 				forceRedditStyle: (e, t) => {
 					const s = Object(u.o)(e, t) || void 0,
@@ -568,19 +568,19 @@
 						title: u,
 						titleClassName: b,
 						truncateThreshold: v
-					} = this.props, p = s ? C.a.widgetContentOnly : C.a.widgetContent, g = !n && this.props.styles, h = g ? this.getWidgetBackgroundStyles() : {}, O = g ? this.getWidgetHeaderStyles() : {};
+					} = this.props, p = s ? k.a.widgetContentOnly : k.a.widgetContent, g = !n && this.props.styles, h = g ? this.getWidgetBackgroundStyles() : {}, O = g ? this.getWidgetHeaderStyles() : {};
 					return o.a.createElement("div", {
-						className: Object(i.a)(t, C.a.widgetBackground, {
-							[C.a.redditStyle]: n,
-							[C.a.clickable]: !!d,
-							[C.a.truncatedGradient]: this.state.isTruncated && !this.props.noGradient
+						className: Object(i.a)(t, k.a.widgetBackground, {
+							[k.a.redditStyle]: n,
+							[k.a.clickable]: !!d,
+							[k.a.truncatedGradient]: this.state.isTruncated && !this.props.noGradient
 						}),
 						"data-redditstyle": n,
 						onClick: d,
 						style: h
 					}, u && o.a.createElement("div", {
-						className: Object(i.a)(C.a.widgetHeader, {
-							[C.a.clickable]: !!l
+						className: Object(i.a)(k.a.widgetHeader, {
+							[k.a.clickable]: !!l
 						}),
 						id: r,
 						style: {
@@ -589,21 +589,21 @@
 						},
 						onClick: l
 					}, o.a.createElement("div", {
-						className: Object(i.a)(C.a.widgetTitle, b)
+						className: Object(i.a)(k.a.widgetTitle, b)
 					}, o.a.createElement(c.b, {
 						type: c.a.Widget
 					}, u)), a), o.a.createElement("div", {
 						className: Object(i.a)(p, {
-							[C.a.truncated]: this.state.isTruncated
+							[k.a.truncated]: this.state.isTruncated
 						}),
 						ref: this.contentRef,
 						style: {
 							maxHeight: this.state.isTruncated ? v : "none"
 						}
 					}, e), this.state.isTruncated && o.a.createElement(m.r, {
-						className: C.a.seeMore,
+						className: k.a.seeMore,
 						onClick: this.handleSeeMoreClick
-					}, k._("See More", null, {
+					}, C._("See More", null, {
 						hk: "4w47Qu"
 					})))
 				}
@@ -633,7 +633,7 @@
 					source: o.COMMUNITY_WIDGETS,
 					action: a.c.CLICK,
 					noun: n.SEE_MORE,
-					widget: Object(r.yb)(s, {
+					widget: Object(r.xb)(s, {
 						subredditId: e,
 						widgetKind: t
 					}),
@@ -644,7 +644,7 @@
 					action: a.c.CLICK,
 					noun: n.REREDDIT_PROMO,
 					post: r.K(s, e),
-					subreddit: r.lb(s),
+					subreddit: r.kb(s),
 					...t && {
 						banner: {
 							buttonText: t,
@@ -671,4 +671,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModQueueActivitySummaryCards.feb2945eebd67f32768c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModQueueActivitySummaryCards.eb06a66b28544447f934.js.map

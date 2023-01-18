@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.96bd36bf647625d64b0b.js
-// Retrieved at 1/11/2023, 11:10:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.439157737a7c98b1a8c8.js
+// Retrieved at 1/18/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsEmotesTooltip"], {
 		"./src/reddit/actions/economics/powerups/helpers.ts": function(e, t, o) {
@@ -668,9 +668,9 @@
 					...n.o(e),
 					correlationId: Object(s.d)(s.a.PowerupsFlow, !1),
 					profile: n.T(e),
-					subreddit: n.lb(e),
+					subreddit: n.kb(e),
 					powerups: {
-						...n.qb(e),
+						...n.pb(e),
 						freeCount: t,
 						paidCount: o
 					}
@@ -687,7 +687,7 @@
 					noun: "add_custom_emojis",
 					...i(o),
 					powerups: {
-						...n.qb(o),
+						...n.pb(o),
 						emojiCount: e
 					}
 				}),
@@ -697,7 +697,7 @@
 					noun: "custom_emojis",
 					...i(o),
 					powerups: {
-						...n.qb(o),
+						...n.pb(o),
 						emojiCount: e
 					}
 				}),
@@ -710,7 +710,7 @@
 						noun: "custom_emojis",
 						...i(o),
 						powerups: {
-							...n.qb(o),
+							...n.pb(o),
 							emojiCount: e
 						}
 					})
@@ -719,7 +719,7 @@
 					source: "meta",
 					action: "open",
 					noun: "gif_tooltip",
-					subreddit: t ? n.mb(o, t) : void 0,
+					subreddit: t ? n.lb(o, t) : void 0,
 					...i(o),
 					correlationId: e
 				}),
@@ -731,7 +731,7 @@
 						value: String(t),
 						oldValue: String(o)
 					},
-					subreddit: n.lb(s),
+					subreddit: n.kb(s),
 					...n.o(s)
 				})
 		},
@@ -767,4 +767,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.96bd36bf647625d64b0b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.439157737a7c98b1a8c8.js.map
