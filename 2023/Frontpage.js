@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.522549ef298eaa48d7cd.js
-// Retrieved at 1/19/2023, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.e7308554dfca6988b18c.js
+// Retrieved at 1/19/2023, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -5720,68 +5720,6 @@
 				}
 			}
 		},
-		"./src/reddit/reducers/features/marketplace/index.ts": function(e, t, a) {
-			"use strict";
-			var n = a("./src/reddit/actions/economics/marketplace/constants.ts");
-			const s = {};
-			var r = a("./node_modules/redux/es/redux.js"),
-				c = a("./src/reddit/actions/frontpage/constants.ts");
-			const i = {
-				id: null,
-				title: "",
-				description: "",
-				buttonCtaText: "",
-				feedIndex: 0
-			};
-			t.a = Object(r.c)({
-				feedUnit: function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : i,
-						t = arguments.length > 1 ? arguments[1] : void 0;
-					switch (t.type) {
-						case c.c: {
-							const {
-								marketplaceFeedElement: a
-							} = t.payload;
-							return a ? {
-								id: a.element.id,
-								title: a.element.unitTitle,
-								description: a.element.unitDescription,
-								buttonCtaText: a.element.buttonCtaText,
-								feedIndex: a.index
-							} : e
-						}
-						default:
-							return e
-					}
-				},
-				claimStatus: function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : s,
-						t = arguments.length > 1 ? arguments[1] : void 0;
-					switch (t.type) {
-						case n.d: {
-							const {
-								claimId: a
-							} = t.payload;
-							return {
-								...e,
-								[a]: "claim_success"
-							}
-						}
-						case n.c: {
-							const {
-								claimId: a
-							} = t.payload;
-							return {
-								...e,
-								[a]: "no_nfts_left"
-							}
-						}
-						default:
-							return e
-					}
-				}
-			})
-		},
 		"./src/reddit/selectors/experiments/adsCardViewHoldout.ts": function(e, t, a) {
 			"use strict";
 			a.d(t, "a", (function() {
@@ -5984,4 +5922,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.522549ef298eaa48d7cd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.e7308554dfca6988b18c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.ce254156534dd9225904.js
-// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.0e74e8c6e8df17c81821.js
+// Retrieved at 1/19/2023, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MarketplaceClaimModal"], {
 		"./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx": function(e, t, r) {
@@ -133,7 +133,7 @@
 						onEvent: e => {
 							var t;
 							if ("CLAIM_ERROR" === e.type) {
-								if ("NO_NFT_LEFT" === (null === (t = e.data) || void 0 === t ? void 0 : t.status)) return void o(Object(d.d)({
+								if ("NO_NFT_LEFT" === (null === (t = e.data) || void 0 === t ? void 0 : t.status)) return void o(Object(d.e)({
 									claimId: a
 								}));
 								o(Object(u.f)({
@@ -144,7 +144,7 @@
 									duration: 3e3
 								}))
 							}
-							"CLAIM_SUCCESS" === e.type && o(Object(d.c)({
+							"CLAIM_SUCCESS" === e.type && o(Object(d.d)({
 								claimId: a
 							}))
 						}
@@ -215,4 +215,4 @@
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.ce254156534dd9225904.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.0e74e8c6e8df17c81821.js.map

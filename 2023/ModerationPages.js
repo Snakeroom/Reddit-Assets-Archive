@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.c2c654c8db4063e7696c.js
-// Retrieved at 1/19/2023, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.3dca6b27ba5c7a88c37c.js
+// Retrieved at 1/19/2023, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -535,6 +535,20 @@
 			n.d(t, "a", (function() {
 				return s
 			}))
+		},
+		"./src/lib/avatarShareImages.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return a
+			}));
+			const s = 16765092,
+				r = "https://i.redd.it/snoovatar",
+				o = "snoovatars",
+				i = "avatars";
+
+			function a(e) {
+				return `${r}/${+e>=s?i:o}/shared/${e}.png`
+			}
 		},
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
 			"use strict";
@@ -3853,25 +3867,6 @@
 				const s = await (() => n.e("EconHelperActions").then(n.bind(null, "./src/reddit/actions/economics/helpers/index.ts")).then(e => e.fetchAll))();
 				await t(s(e))
 			}
-		},
-		"./src/reddit/actions/economics/marketplace/constants.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "d", (function() {
-				return s
-			})), n.d(t, "c", (function() {
-				return r
-			})), n.d(t, "a", (function() {
-				return o
-			})), n.d(t, "b", (function() {
-				return i
-			})), n.d(t, "e", (function() {
-				return a
-			}));
-			const s = "ECON__MARKETPLACE_ITEM_CLAIMED",
-				r = "ECON__MARKETPLACE_ITEMS_OUT_OF_STOCK",
-				o = "X__MARKETPLACE_DISMISS_AVATAR_PUSHCARD",
-				i = "X__MARKETPLACE_DISMISS_AVATAR_PUSHCARD_BANNER",
-				a = "X__MARKETPLACE_VIEW_AVATAR_PUSHCARD"
 		},
 		"./src/reddit/actions/economics/me/constants.ts": function(e, t, n) {
 			"use strict";
@@ -45403,39 +45398,34 @@
 		"./src/reddit/components/SourceLink/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return I
+				return C
 			}));
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
 				o = n("./src/lib/ads/index.ts"),
 				i = n("./src/lib/classNames/index.ts"),
 				a = n("./src/lib/getShortenedLink.ts"),
-				d = n("./node_modules/fbt/lib/FbtPublic.js");
-			const c = 16765092,
-				l = "https://i.redd.it/snoovatar",
-				u = "snoovatars",
-				m = "avatars";
-			var p = n("./src/reddit/components/ProfileIdCard/SnoovatarButton/TryItOn.tsx"),
-				b = n("./src/reddit/components/AvatarPost/index.m.less"),
-				f = n.n(b);
-			var h = e => {
+				d = n("./node_modules/fbt/lib/FbtPublic.js"),
+				c = n("./src/lib/avatarShareImages.ts"),
+				l = n("./src/reddit/components/ProfileIdCard/SnoovatarButton/TryItOn.tsx"),
+				u = n("./src/reddit/components/AvatarPost/index.m.less"),
+				m = n.n(u);
+			var p = e => {
 					let {
 						sourceUrl: t,
 						username: n,
 						post: s
 					} = e;
-					const [o, i] = new URL(t).pathname.split("/").slice(2), a = function(e) {
-						return `${l}/${+e>=c?m:u}/shared/${e}.png`
-					}(i);
+					const [o, i] = new URL(t).pathname.split("/").slice(2), a = Object(c.a)(i);
 					return r.a.createElement("div", {
-						className: f.a.avatarPostContainer
+						className: m.a.avatarPostContainer
 					}, r.a.createElement("img", {
-						className: f.a.avatarPostImage,
+						className: m.a.avatarPostImage,
 						src: a,
 						alt: d.fbt._("User Shared Avatar", null, {
 							hk: "FDRaA"
 						})
-					}), r.a.createElement(p.a, {
+					}), r.a.createElement(l.a, {
 						isHovercard: !1,
 						username: n,
 						isAvatarPost: !0,
@@ -45446,35 +45436,35 @@
 						}
 					}))
 				},
-				_ = n("./src/reddit/controls/OutboundLink/styled.tsx"),
-				g = n("./src/reddit/hooks/useIsAvatarPost.ts"),
-				v = n("./src/reddit/icons/fonts/OutboundLink/index.tsx"),
-				x = n("./src/reddit/components/SourceLink/index.m.less"),
-				O = n.n(x),
-				E = n("./src/lib/lessComponent.tsx"),
-				y = n("./src/telemetry/models/Outbound.ts"),
-				C = n("./src/reddit/hooks/useIsRemovedOrDeletedPost.ts");
-			const j = E.a.wrapped(v.a, "OutboundLinkIcon", O.a),
-				k = E.a.div("SourceLinkWrapper", O.a);
+				b = n("./src/reddit/controls/OutboundLink/styled.tsx"),
+				f = n("./src/reddit/hooks/useIsAvatarPost.ts"),
+				h = n("./src/reddit/icons/fonts/OutboundLink/index.tsx"),
+				_ = n("./src/reddit/components/SourceLink/index.m.less"),
+				g = n.n(_),
+				v = n("./src/lib/lessComponent.tsx"),
+				x = n("./src/telemetry/models/Outbound.ts"),
+				O = n("./src/reddit/hooks/useIsRemovedOrDeletedPost.ts");
+			const E = v.a.wrapped(h.a, "OutboundLinkIcon", g.a),
+				y = v.a.div("SourceLinkWrapper", g.a);
 
-			function I(e) {
+			function C(e) {
 				const {
 					className: t,
 					post: n,
 					isCommentsPage: s,
 					pageLayer: d
-				} = e, c = s ? y.SourceElement.PostLink : y.SourceElement.ListingPostLink, {
+				} = e, c = s ? x.SourceElement.PostLink : x.SourceElement.ListingPostLink, {
 					source: l
-				} = n, u = n.isSponsored || Object(o.u)(d), m = Object(g.a)(n), p = Object(C.a)();
-				return !l || p ? null : m ? r.a.createElement(h, {
+				} = n, u = n.isSponsored || Object(o.u)(d), m = Object(f.a)(n), h = Object(O.a)();
+				return !l || h ? null : m ? r.a.createElement(p, {
 					sourceUrl: l.url,
 					username: n.author,
 					post: n
-				}) : r.a.createElement(k, {
+				}) : r.a.createElement(y, {
 					className: Object(i.a)({
-						[O.a["m-comment"]]: s
+						[g.a["m-comment"]]: s
 					}, t)
-				}, r.a.createElement(_.a, {
+				}, r.a.createElement(b.a, {
 					href: l.url,
 					isSponsored: u,
 					postId: n.id,
@@ -45483,7 +45473,7 @@
 				}, Object(a.a)({
 					...n,
 					isSponsored: u
-				}), r.a.createElement(j, {
+				}), r.a.createElement(E, {
 					isFilled: !0
 				})))
 			}
@@ -66544,9 +66534,9 @@
 							...c,
 							...g(r)
 						} : c;
-					case v.a:
 					case v.b:
-					case v.e:
+					case v.c:
+					case v.f:
 						return (null == e ? void 0 : e.pushcard) ? {
 							...e,
 							pushcard: {
@@ -74670,4 +74660,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.c2c654c8db4063e7696c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.3dca6b27ba5c7a88c37c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.d789211447044ee47b25.js
-// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.663ac5741b7921bbf259.js
+// Retrieved at 1/19/2023, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, s) {
@@ -4998,39 +4998,34 @@
 		"./src/reddit/components/SourceLink/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return w
+				return k
 			}));
 			var o = s("./node_modules/react/index.js"),
 				n = s.n(o),
 				r = s("./src/lib/ads/index.ts"),
 				i = s("./src/lib/classNames/index.ts"),
 				a = s("./src/lib/getShortenedLink.ts"),
-				c = s("./node_modules/fbt/lib/FbtPublic.js");
-			const d = 16765092,
-				l = "https://i.redd.it/snoovatar",
-				m = "snoovatars",
-				p = "avatars";
-			var u = s("./src/reddit/components/ProfileIdCard/SnoovatarButton/TryItOn.tsx"),
-				b = s("./src/reddit/components/AvatarPost/index.m.less"),
-				h = s.n(b);
-			var x = e => {
+				c = s("./node_modules/fbt/lib/FbtPublic.js"),
+				d = s("./src/lib/avatarShareImages.ts"),
+				l = s("./src/reddit/components/ProfileIdCard/SnoovatarButton/TryItOn.tsx"),
+				m = s("./src/reddit/components/AvatarPost/index.m.less"),
+				p = s.n(m);
+			var u = e => {
 					let {
 						sourceUrl: t,
 						username: s,
 						post: o
 					} = e;
-					const [r, i] = new URL(t).pathname.split("/").slice(2), a = function(e) {
-						return `${l}/${+e>=d?p:m}/shared/${e}.png`
-					}(i);
+					const [r, i] = new URL(t).pathname.split("/").slice(2), a = Object(d.a)(i);
 					return n.a.createElement("div", {
-						className: h.a.avatarPostContainer
+						className: p.a.avatarPostContainer
 					}, n.a.createElement("img", {
-						className: h.a.avatarPostImage,
+						className: p.a.avatarPostImage,
 						src: a,
 						alt: c.fbt._("User Shared Avatar", null, {
 							hk: "FDRaA"
 						})
-					}), n.a.createElement(u.a, {
+					}), n.a.createElement(l.a, {
 						isHovercard: !1,
 						username: s,
 						isAvatarPost: !0,
@@ -5041,35 +5036,35 @@
 						}
 					}))
 				},
-				f = s("./src/reddit/controls/OutboundLink/styled.tsx"),
-				v = s("./src/reddit/hooks/useIsAvatarPost.ts"),
-				O = s("./src/reddit/icons/fonts/OutboundLink/index.tsx"),
-				C = s("./src/reddit/components/SourceLink/index.m.less"),
-				E = s.n(C),
-				_ = s("./src/lib/lessComponent.tsx"),
-				g = s("./src/telemetry/models/Outbound.ts"),
-				k = s("./src/reddit/hooks/useIsRemovedOrDeletedPost.ts");
-			const j = _.a.wrapped(O.a, "OutboundLinkIcon", E.a),
-				I = _.a.div("SourceLinkWrapper", E.a);
+				b = s("./src/reddit/controls/OutboundLink/styled.tsx"),
+				h = s("./src/reddit/hooks/useIsAvatarPost.ts"),
+				x = s("./src/reddit/icons/fonts/OutboundLink/index.tsx"),
+				f = s("./src/reddit/components/SourceLink/index.m.less"),
+				v = s.n(f),
+				O = s("./src/lib/lessComponent.tsx"),
+				C = s("./src/telemetry/models/Outbound.ts"),
+				E = s("./src/reddit/hooks/useIsRemovedOrDeletedPost.ts");
+			const _ = O.a.wrapped(x.a, "OutboundLinkIcon", v.a),
+				g = O.a.div("SourceLinkWrapper", v.a);
 
-			function w(e) {
+			function k(e) {
 				const {
 					className: t,
 					post: s,
 					isCommentsPage: o,
 					pageLayer: c
-				} = e, d = o ? g.SourceElement.PostLink : g.SourceElement.ListingPostLink, {
+				} = e, d = o ? C.SourceElement.PostLink : C.SourceElement.ListingPostLink, {
 					source: l
-				} = s, m = s.isSponsored || Object(r.u)(c), p = Object(v.a)(s), u = Object(k.a)();
-				return !l || u ? null : p ? n.a.createElement(x, {
+				} = s, m = s.isSponsored || Object(r.u)(c), p = Object(h.a)(s), x = Object(E.a)();
+				return !l || x ? null : p ? n.a.createElement(u, {
 					sourceUrl: l.url,
 					username: s.author,
 					post: s
-				}) : n.a.createElement(I, {
+				}) : n.a.createElement(g, {
 					className: Object(i.a)({
-						[E.a["m-comment"]]: o
+						[v.a["m-comment"]]: o
 					}, t)
-				}, n.a.createElement(f.a, {
+				}, n.a.createElement(b.a, {
 					href: l.url,
 					isSponsored: m,
 					postId: s.id,
@@ -5078,7 +5073,7 @@
 				}, Object(a.a)({
 					...s,
 					isSponsored: m
-				}), n.a.createElement(j, {
+				}), n.a.createElement(_, {
 					isFilled: !0
 				})))
 			}
@@ -6407,4 +6402,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.d789211447044ee47b25.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.663ac5741b7921bbf259.js.map

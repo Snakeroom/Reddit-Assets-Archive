@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.50cc858be2f53692da40.js
-// Retrieved at 1/19/2023, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.0e69ebcd3517a4d23459.js
+// Retrieved at 1/19/2023, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3617,11 +3617,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("182018"),
+				buildNumber: Object(r.c)("182035"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1674144392"),
+				buildTimestamp: Object(r.b)("1674149067"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6352,14 +6352,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c437bac2df6fa1104418e7f789161a0668f4f7f1d-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cad7a377cbc30dd172d1156f2de3f42689bc6daae-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "437bac2df6fa1104418e7f789161a0668f4f7f1d-production",
+						release: "ad7a377cbc30dd172d1156f2de3f42689bc6daae-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(D.d)(), new d.Integrations.Breadcrumbs({
@@ -6895,7 +6895,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "437bac2df6fa1104418e7f789161a0668f4f7f1d-production",
+							releaseClient: "ad7a377cbc30dd172d1156f2de3f42689bc6daae-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -9608,6 +9608,28 @@
 				r = "DASHBOARD__COMPONENT_SELECTED",
 				s = "DASHBOARD__SUBREDDIT_SELECTED",
 				o = "DASHBOARD__SUBREDDIT_LOADED"
+		},
+		"./src/reddit/actions/economics/marketplace/constants.ts": function(e, t, i) {
+			"use strict";
+			i.d(t, "e", (function() {
+				return n
+			})), i.d(t, "d", (function() {
+				return r
+			})), i.d(t, "b", (function() {
+				return s
+			})), i.d(t, "c", (function() {
+				return o
+			})), i.d(t, "f", (function() {
+				return d
+			})), i.d(t, "a", (function() {
+				return a
+			}));
+			const n = "ECON__MARKETPLACE_ITEM_CLAIMED",
+				r = "ECON__MARKETPLACE_ITEMS_OUT_OF_STOCK",
+				s = "X__MARKETPLACE_DISMISS_AVATAR_PUSHCARD",
+				o = "X__MARKETPLACE_DISMISS_AVATAR_PUSHCARD_BANNER",
+				d = "X__MARKETPLACE_VIEW_AVATAR_PUSHCARD",
+				a = "X__MARKETPLACE_CREATE_LINK_PREVIEW"
 		},
 		"./src/reddit/actions/economics/powerups/constants.ts": function(e, t, i) {
 			"use strict";
@@ -35182,6 +35204,81 @@
 				purchaseModal: _e
 			})
 		},
+		"./src/reddit/reducers/features/marketplace/index.ts": function(e, t, i) {
+			"use strict";
+			var n = i("./src/reddit/actions/economics/marketplace/constants.ts");
+			const r = {};
+			var s = i("./node_modules/redux/es/redux.js");
+			const o = {};
+			var d = i("./src/reddit/actions/frontpage/constants.ts");
+			const a = {
+				id: null,
+				title: "",
+				description: "",
+				buttonCtaText: "",
+				feedIndex: 0
+			};
+			t.a = Object(s.c)({
+				feedUnit: function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : a,
+						t = arguments.length > 1 ? arguments[1] : void 0;
+					switch (t.type) {
+						case d.c: {
+							const {
+								marketplaceFeedElement: i
+							} = t.payload;
+							return i ? {
+								id: i.element.id,
+								title: i.element.unitTitle,
+								description: i.element.unitDescription,
+								buttonCtaText: i.element.buttonCtaText,
+								feedIndex: i.index
+							} : e
+						}
+						default:
+							return e
+					}
+				},
+				claimStatus: function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : r,
+						t = arguments.length > 1 ? arguments[1] : void 0;
+					switch (t.type) {
+						case n.e: {
+							const {
+								claimId: i
+							} = t.payload;
+							return {
+								...e,
+								[i]: "claim_success"
+							}
+						}
+						case n.d: {
+							const {
+								claimId: i
+							} = t.payload;
+							return {
+								...e,
+								[i]: "no_nfts_left"
+							}
+						}
+						default:
+							return e
+					}
+				},
+				linkPreview: function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : o,
+						t = arguments.length > 1 ? arguments[1] : void 0;
+					switch (t.type) {
+						case n.a:
+							return {
+								...e, ...t.payload
+							};
+						default:
+							return e
+					}
+				}
+			})
+		},
 		"./src/reddit/reducers/features/matrixChat/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "b", (function() {
@@ -45775,11 +45872,11 @@
 		"./src/server/helpers/canonicalUrl.tsx": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
-				return g
-			})), i.d(t, "c", (function() {
-				return v
-			})), i.d(t, "b", (function() {
 				return w
+			})), i.d(t, "c", (function() {
+				return y
+			})), i.d(t, "b", (function() {
+				return E
 			}));
 			var n = i("./src/config.ts"),
 				r = i("./src/lib/constants/index.ts"),
@@ -45790,27 +45887,34 @@
 				l = i("./src/reddit/helpers/canonicalUrls.ts"),
 				u = i("./src/reddit/models/Post/index.ts"),
 				c = i("./src/reddit/routes/subredditWiki/normalizeWikiUrl.ts"),
-				_ = i("./src/reddit/selectors/postCollection.ts"),
-				m = i("./src/reddit/selectors/posts.ts"),
-				p = i("./src/reddit/selectors/profile.ts"),
-				h = i("./src/reddit/selectors/subreddit.ts"),
-				f = i("./node_modules/node-libs-browser/node_modules/url/url.js"),
-				b = i.n(f);
-			const g = e => e.endsWith("/") ? e : `${e}/`,
-				v = e => `${n.a.redditUrl}${e}`,
-				w = e => {
+				_ = i("./src/lib/initializeClient/installReducer.ts"),
+				m = i("./src/reddit/reducers/features/marketplace/index.ts");
+			Object(_.a)({
+				features: {
+					marketplace: m.a
+				}
+			});
+			var p = i("./src/reddit/selectors/postCollection.ts"),
+				h = i("./src/reddit/selectors/posts.ts"),
+				f = i("./src/reddit/selectors/profile.ts"),
+				b = i("./src/reddit/selectors/subreddit.ts"),
+				g = i("./node_modules/node-libs-browser/node_modules/url/url.js"),
+				v = i.n(g);
+			const w = e => e.endsWith("/") ? e : `${e}/`,
+				y = e => `${n.a.redditUrl}${e}`,
+				E = e => {
 					var t, i;
-					const f = e.platform.currentPage;
-					if (!f) return null;
-					const v = null === (i = null === (t = e.platform.currentPage) || void 0 === t ? void 0 : t.routeMatch) || void 0 === i ? void 0 : i.route.meta.name;
-					switch (v) {
+					const _ = e.platform.currentPage;
+					if (!_) return null;
+					const m = null === (i = null === (t = e.platform.currentPage) || void 0 === t ? void 0 : t.routeMatch) || void 0 === i ? void 0 : i.route.meta.name;
+					switch (m) {
 						case r.Sb.INDEX:
 						case r.Sb.LISTING:
-							return f.routeMatch && f.routeMatch.route.chunk === r.u.FRONTPAGE ? g(n.a.redditUrl) : null;
+							return _.routeMatch && _.routeMatch.route.chunk === r.u.FRONTPAGE ? w(n.a.redditUrl) : null;
 						case r.Sb.SUBREDDIT:
 							const {
 								subredditName: t
-							} = f.urlParams, i = t && Object(h.d)(e, {
+							} = _.urlParams, i = t && Object(b.d)(e, {
 								subredditName: t
 							});
 							if (Object(d.a)(t) && Object(o.a)(t)) {
@@ -45821,42 +45925,50 @@
 						case r.Sb.COMMENTS:
 						case r.Sb.DUPLICATES:
 							const {
-								partialPostId: w
-							} = f.urlParams, y = w && Object(u.y)(w), E = y && Object(m.F)(e, {
+								partialPostId: g
+							} = _.urlParams, y = g && Object(u.y)(g), E = y && Object(h.F)(e, {
 								postId: y
 							});
-							return E ? `${n.a.redditUrl}${b.a.parse(E).path}` : null;
+							return E ? `${n.a.redditUrl}${v.a.parse(E).path}` : null;
 						case r.Sb.PROFILE_OVERVIEW:
 						case r.Sb.PROFILE_POSTS:
 						case r.Sb.PROFILE_COMMENTS:
 							const {
 								profileName: S
-							} = f.urlParams, T = Object(p.k)(e, {
+							} = _.urlParams, T = Object(f.k)(e, {
 								profileName: S
 							});
 							let O = "";
-							return v === r.Sb.PROFILE_POSTS ? O = "submitted/" : v === r.Sb.PROFILE_COMMENTS && (O = "comments/"), T && T.url ? `${n.a.redditUrl}${b.a.parse(T.url).path}${O}` : null;
+							return m === r.Sb.PROFILE_POSTS ? O = "submitted/" : m === r.Sb.PROFILE_COMMENTS && (O = "comments/"), T && T.url ? `${n.a.redditUrl}${v.a.parse(T.url).path}${O}` : null;
 						case r.Sb.COLLECTION_COMMENTS:
 							const {
 								collectionId: I
-							} = f.urlParams, R = I && Object(_.q)(e, {
+							} = _.urlParams, R = I && Object(p.q)(e, {
 								collectionId: I
 							}), F = R && R.permalink;
-							return F ? `${n.a.redditUrl}${b.a.parse(g(F)).path}` : null;
+							return F ? `${n.a.redditUrl}${v.a.parse(w(F)).path}` : null;
 						case r.Sb.TOPIC:
 							const {
 								topicSlug: C
-							} = f.urlParams;
+							} = _.urlParams;
 							return C ? `${n.a.redditUrl}${Object(a.a)(C)}` : null;
-						case r.Sb.AVATAR:
+						case r.Sb.AVATAR: {
+							const {
+								url: t
+							} = (e => {
+								var t, i;
+								return (null === (i = null === (t = null == e ? void 0 : e.features) || void 0 === t ? void 0 : t.marketplace) || void 0 === i ? void 0 : i.linkPreview) || {}
+							})(e);
+							return t || `${n.a.redditUrl}/${m}`
+						}
 						case r.Sb.COINS:
 						case r.Sb.PREMIUM:
 						case r.Sb.TALK:
-							return `${n.a.redditUrl}/${v}`;
+							return `${n.a.redditUrl}/${m}`;
 						case r.Sb.INTERNATIONAL_SITE_PAGE:
-							return Object(s.d)("/", f.urlParams.countryCode, f.urlParams.languageCode);
+							return Object(s.d)("/", _.urlParams.countryCode, _.urlParams.languageCode);
 						case r.Sb.SUBREDDIT_WIKI:
-							const N = Object(c.a)(f.url, f.urlParams);
+							const N = Object(c.a)(_.url, _.urlParams);
 							return `${n.a.redditUrl}${N}`;
 						default:
 							return null
@@ -50087,4 +50199,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.50cc858be2f53692da40.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.0e69ebcd3517a4d23459.js.map
