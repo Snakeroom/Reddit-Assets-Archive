@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.1a876df271fa6811143c.js
-// Retrieved at 1/19/2023, 4:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.bcdcda39143502ce1f90.js
+// Retrieved at 1/19/2023, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -1064,7 +1064,7 @@
 					S = (() => c.fbt._("Build your own custom Reddit avatar with a signature look, gear, and accessories that show off your personality.", null, {
 						hk: "1x3tTT"
 					}))(),
-					k = "https://www.redditstatic.com/marketplace-assets/v1/web/opengraph-link-preview-default.png";
+					k = "https://www.redditstatic.com/marketplace-assets/v1/web/opengraph-link-preview-default-v2.png";
 				const N = `${l.a.redditUrl}${n.url}`;
 				switch (n.path) {
 					case "/avatar/shop/category/:categoryId": {
@@ -21324,4 +21324,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.1a876df271fa6811143c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.bcdcda39143502ce1f90.js.map
