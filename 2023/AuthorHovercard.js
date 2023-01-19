@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.589e8f1804af741069b2.js
-// Retrieved at 1/18/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.6a00ac55d080da63605b.js
+// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -1972,7 +1972,7 @@
 					}, [c]);
 					const T = Object(s.d)(),
 						L = Object(a.useCallback)(e => {
-							y(e), Object(_.yb)("modnote-draft", {
+							y(e), Object(_.zb)("modnote-draft", {
 								[c]: e
 							})
 						}, [y, c]),
@@ -3776,9 +3776,9 @@
 					T = Object(m.a)(),
 					[L, H, D] = function(e, t, n) {
 						const [r, s] = Object(a.useState)(Object(u.p)(e, t) || 0), o = Object(a.useCallback)(() => {
-							s(r + 1), Object(u.rb)(e, t, r + 1)
+							s(r + 1), Object(u.sb)(e, t, r + 1)
 						}, []), i = Object(a.useCallback)(() => {
-							n > 0 && (s(n), Object(u.rb)(e, t, n))
+							n > 0 && (s(n), Object(u.sb)(e, t, n))
 						}, []);
 						return [r, o, i]
 					}(h, n.notificationName, (null === (v = n.persistence) || void 0 === v ? void 0 : v.maxViews) || 0),
@@ -4313,7 +4313,7 @@
 						[I, C] = function(e) {
 							const [t, n] = Object(r.useState)(() => Object(Q.s)(e));
 							return [t, Object(r.useCallback)(() => {
-								n(!0), Object(Q.sb)(e)
+								n(!0), Object(Q.tb)(e)
 							}, [e])]
 						}(x),
 						[O, N] = function(e) {
@@ -5965,7 +5965,7 @@
 			function s(e) {
 				const [t, n] = Object(a.useState)(Object(r.r)(e));
 				return [t, Object(a.useCallback)(() => {
-					n(!0), Object(r.jb)(e)
+					n(!0), Object(r.kb)(e)
 				}, [])]
 			}
 		},
@@ -6652,4 +6652,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.589e8f1804af741069b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.6a00ac55d080da63605b.js.map

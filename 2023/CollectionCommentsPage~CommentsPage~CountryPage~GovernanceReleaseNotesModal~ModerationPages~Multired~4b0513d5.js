@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5.710a8508fd0b81b75ee3.js
-// Retrieved at 1/18/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5.37dcd3456581150b588d.js
+// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5"], {
 		"./src/reddit/components/Governance/VaultActionLink/async.ts": function(e, t, n) {
@@ -1548,7 +1548,7 @@
 									...n.actionInfo,
 									reason: this.props.node.id
 								},
-								subreddit: h.kb(t)
+								subreddit: h.lb(t)
 							}
 						})
 					}
@@ -1944,12 +1944,12 @@
 						rtJsonElementProps: o
 					});
 					switch (i) {
-						case b.zf.SmIcon:
+						case b.Df.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.zf.SmIconHc:
+						case b.Df.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2020,7 +2020,7 @@
 				h = e => ({
 					...u.o(e),
 					source: r,
-					screen: u.bb(e),
+					screen: u.cb(e),
 					discoveryUnit: {
 						id: "xd_100",
 						name: s.SUBREDDIT_HOVERCARD,
@@ -2066,7 +2066,7 @@
 					const s = Object(a.b)(n) ? n.belongsTo.id : n.subredditId;
 					return {
 						post: u.K(e, n.id),
-						subreddit: u.lb(e, s),
+						subreddit: u.mb(e, s),
 						...p(e, t)
 					}
 				},
@@ -2079,8 +2079,8 @@
 					source: "global",
 					action: i.c.VIEW,
 					noun: s.SUBREDDIT_HOVERCARD,
-					subreddit: u.mb(t, e),
-					screen: u.bb(t)
+					subreddit: u.nb(t, e),
+					screen: u.cb(t)
 				}),
 				g = (e, t) => n => ({
 					...h(n),
@@ -2088,8 +2088,8 @@
 					action: i.c.VIEW,
 					noun: s.ITEM_POST,
 					post: u.K(n, t),
-					subreddit: u.mb(n, e),
-					screen: u.bb(n)
+					subreddit: u.nb(n, e),
+					screen: u.cb(n)
 				}),
 				E = (e, t) => n => ({
 					...h(n),
@@ -2097,26 +2097,26 @@
 					action: i.c.CLICK,
 					noun: s.ITEM_POST,
 					post: u.K(n, t),
-					subreddit: u.mb(n, e),
-					screen: u.bb(n)
+					subreddit: u.nb(n, e),
+					screen: u.cb(n)
 				}),
 				j = e => t => ({
 					...h(t),
-					subreddit: u.lb(t, e) || null,
+					subreddit: u.mb(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: i.c.CLICK,
 					noun: s.HEADER_SUBREDDIT
 				}),
 				_ = e => t => ({
 					...h(t),
-					subreddit: u.lb(t, e) || null,
+					subreddit: u.mb(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: i.c.CLICK,
 					noun: s.HEADER_SUBREDDIT_SUBSCRIBE
 				}),
 				O = e => t => ({
 					...h(t),
-					subreddit: u.lb(t, e) || null,
+					subreddit: u.mb(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: i.c.CLICK,
 					noun: s.HEADER_SUBREDDIT_UNSUBSCRIBE
@@ -2166,12 +2166,12 @@
 				c = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.tf
+						experimentName: s.xf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.zf.SmIcon || t === s.zf.SmIconHc
+					return t === s.Df.SmIcon || t === s.Df.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -2197,4 +2197,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5.710a8508fd0b81b75ee3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5.37dcd3456581150b588d.js.map

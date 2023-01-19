@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChangeUsernameModals.7489859de6bbb9e1ae24.js
-// Retrieved at 1/18/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChangeUsernameModals.5e0b98b48577270e3684.js
+// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChangeUsernameModals"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -152,7 +152,7 @@
 					changeUsernameModalOpen: Object(w.b)(U.b),
 					confirmSaveUsernameModalOpen: Object(w.b)(U.d),
 					interceptActionModalOpen: Object(w.b)(U.e),
-					secondConfirmKeepUsernameModalOpen: Object(w.b)(U.f)
+					secondConfirmKeepUsernameModalOpen: Object(w.b)(U.g)
 				}),
 				L = Object(r.b)(Q, e => ({
 					closeModal: () => {
@@ -162,7 +162,7 @@
 						e(Object(m.h)(U.b))
 					},
 					confirmKeepUsername: () => {
-						e(Object(m.h)(U.f))
+						e(Object(m.h)(U.g))
 					},
 					continueChangeUsername: () => {
 						e(Object(m.h)(U.d))
@@ -888,4 +888,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameModals.7489859de6bbb9e1ae24.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameModals.5e0b98b48577270e3684.js.map

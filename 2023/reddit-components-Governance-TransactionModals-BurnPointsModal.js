@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.180a303a63d556c52658.js
-// Retrieved at 1/18/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.c3bb19774898336f180e.js
+// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-BurnPointsModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
@@ -536,8 +536,8 @@
 				y = a("./src/reddit/actions/util/pollActionForSuccess.ts"),
 				_ = a("./src/reddit/endpoints/governance/crypto.ts"),
 				C = a("./src/reddit/helpers/crypto/transactions.ts"),
-				j = a("./src/reddit/helpers/crypto/vaultTransactions.ts"),
-				w = a("./src/reddit/helpers/governance/tokens.ts"),
+				w = a("./src/reddit/helpers/crypto/vaultTransactions.ts"),
+				j = a("./src/reddit/helpers/governance/tokens.ts"),
 				z = a("./src/reddit/helpers/trackers/crypto.ts"),
 				O = a("./src/reddit/hooks/useTracking.ts"),
 				F = a("./src/reddit/models/Toast/index.ts"),
@@ -600,7 +600,7 @@
 					pointsDetails: s
 				} = e, r = Object(c.d)(), o = Object(O.a)(), d = () => r(Object(g.f)()), m = n.id, u = Object(c.e)(e => Object(T.e)(e, {
 					subredditId: m
-				})), p = new x.BigNumber(u).isGreaterThanOrEqualTo(t), h = Object(w.c)(t, null == s ? void 0 : s.displayConversion), v = s.contractAddress, f = Object(C.a)(v, t, a), b = e => {
+				})), p = new x.BigNumber(u).isGreaterThanOrEqualTo(t), h = Object(j.c)(t, null == s ? void 0 : s.displayConversion), v = s.contractAddress, f = Object(C.a)(v, t, a), b = e => {
 					o(Object(z.c)("burn_link", m, h, e))
 				}, E = s.name;
 				return l.a.createElement(L.a, {
@@ -625,7 +625,7 @@
 						}(E));
 						try {
 							await async function(e, t, a, n, l) {
-								await Object(j.a)(t, a), await e(Object(y.a)(Object(M.h)({
+								await Object(w.a)(t, a), await e(Object(y.a)(Object(M.h)({
 									subredditId: n
 								}), async e => {
 									const t = Object(T.e)(e(), {
@@ -1293,14 +1293,14 @@
 			const c = e => {
 					return Object(l.c)(e, {
 						experimentEligibilitySelector: l.a,
-						experimentName: n.le
-					}) === n.Bd
+						experimentName: n.pe
+					}) === n.Fd
 				},
 				s = e => {
 					return Object(l.c)(e, {
 						experimentEligibilitySelector: l.a,
-						experimentName: n.je
-					}) === n.Bd
+						experimentName: n.ne
+					}) === n.Fd
 				}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, a) {
@@ -1357,4 +1357,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.180a303a63d556c52658.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.c3bb19774898336f180e.js.map

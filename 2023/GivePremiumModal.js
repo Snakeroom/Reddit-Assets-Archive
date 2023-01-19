@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.1a58ff8482c6f0858cdf.js
-// Retrieved at 1/18/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.f11e2eaf40d01da48e56.js
+// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -254,7 +254,7 @@
 					}), e(Object(h.viewGivePremiumModalEvent)())
 				}
 				componentWillUnmount() {
-					Object(p.qb)(this.state.isAnonymous), document.removeEventListener("keydown", this.handleEscapeKey)
+					Object(p.rb)(this.state.isAnonymous), document.removeEventListener("keydown", this.handleEscapeKey)
 				}
 				getDropdownMenuItems() {
 					const {
@@ -644,8 +644,8 @@
 			const c = e => ({
 					...s.o(e),
 					correlationId: Object(i.b)(e) || Object(o.d)(o.a.GiftPremiumFlow, !1),
-					screen: s.bb(e),
-					subreddit: s.kb(e)
+					screen: s.cb(e),
+					subreddit: s.lb(e)
 				}),
 				a = () => e => ({
 					...c(e),
@@ -784,4 +784,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.1a58ff8482c6f0858cdf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.f11e2eaf40d01da48e56.js.map

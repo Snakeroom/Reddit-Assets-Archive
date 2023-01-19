@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/2.62845572c87e2a1d1a3d.js
-// Retrieved at 1/18/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/2.b11a12069ccc144577f5.js
+// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[2], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -41,9 +41,7 @@
 		},
 		"./src/devPlatform/components/UserInputModal/index.tsx": function(e, t, n) {
 			"use strict";
-			n.r(t), n.d(t, "_UserInputModal", (function() {
-				return L
-			}));
+			n.r(t);
 			var s = n("./node_modules/react/index.js"),
 				a = n.n(s),
 				r = n("./node_modules/react-redux/es/index.js"),
@@ -74,14 +72,14 @@
 			}
 			var w = n("./src/devPlatform/components/ConfigFormRenderer/index.m.less"),
 				k = n.n(w);
-			const _ = u.a.div("Wrapper", k.a),
-				y = u.a.div("ConfigFormRendererWrapper", k.a),
-				N = u.a.p("TextWrapper", k.a),
+			const y = u.a.div("Wrapper", k.a),
+				N = u.a.div("ConfigFormRendererWrapper", k.a),
+				_ = u.a.p("TextWrapper", k.a),
 				I = u.a.div("ConfigFormRow", k.a),
 				O = u.a.div("ConfigFormStringRow", k.a),
 				R = u.a.div("NumberInputWrapper", k.a),
 				j = u.a.div("ConfigFormFooterWrapper", k.a);
-			class M extends a.a.Component {
+			class T extends a.a.Component {
 				constructor(e) {
 					super(e), this.state = {
 						values: new Map
@@ -159,17 +157,17 @@
 							break;
 						case d.c.UNRECOGNIZED:
 					}
-					return a.a.createElement(_, null, a.a.createElement(y, null, a.a.createElement(E, {
+					return a.a.createElement(y, null, a.a.createElement(N, null, a.a.createElement(E, {
 						title: r,
 						onCloseClick: i
-					}), a.a.createElement(N, null, o), u, a.a.createElement(j, null, a.a.createElement(p.t, {
+					}), a.a.createElement(_, null, o), u, a.a.createElement(j, null, a.a.createElement(p.t, {
 						onClick: () => this.onSubmit()
 					}, c.fbt._("Ok", null, {
 						hk: "2Giu9U"
 					})))))
 				}
 			}
-			var T = M;
+			var M = T;
 			const F = Object(o.c)({});
 			class D extends a.a.Component {
 				constructor() {
@@ -201,7 +199,7 @@
 						},
 						closeUserInputModal: s
 					} = this.props;
-					return a.a.createElement(T, {
+					return a.a.createElement(M, {
 						title: e,
 						description: t,
 						configForm: n,
@@ -237,12 +235,11 @@
 				V = Object(r.b)(B, e => ({
 					closeUserInputModal: () => e(Object(i.a)())
 				})),
-				L = e => e.action && e.onAction ? a.a.createElement(S, {
+				L = Object(l.a)(e => e.action && e.onAction ? a.a.createElement(S, {
 					action: e.action,
 					onAction: e.onAction
-				}) : null,
-				U = Object(l.a)(L);
-			t.default = V(e => a.a.createElement(U, P({}, e, {
+				}) : null);
+			t.default = V(e => a.a.createElement(L, P({}, e, {
 				withOverlay: !0,
 				onOverlayClick: e.closeUserInputModal
 			})))
@@ -820,4 +817,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/2.62845572c87e2a1d1a3d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/2.b11a12069ccc144577f5.js.map

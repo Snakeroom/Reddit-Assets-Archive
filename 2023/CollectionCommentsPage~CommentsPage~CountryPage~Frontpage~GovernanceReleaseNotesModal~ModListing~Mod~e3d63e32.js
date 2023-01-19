@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.ae19499ade492920d6a4.js
-// Retrieved at 1/18/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.bf6c5d5da6ad43175a1c.js
+// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -566,9 +566,9 @@
 				F = s("./src/reddit/icons/fonts/index.tsx"),
 				A = s("./src/reddit/selectors/experiments/antievil/index.tsx"),
 				H = s("./src/reddit/selectors/subreddit.ts"),
-				B = s("./src/reddit/components/CommunityMuting/index.tsx"),
-				W = s("./src/reddit/components/OneFeed/Footer.m.less"),
-				U = s.n(W);
+				W = s("./src/reddit/components/CommunityMuting/index.tsx"),
+				B = s("./src/reddit/components/OneFeed/Footer.m.less"),
+				U = s.n(B);
 			const {
 				fbt: q
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), D = async e => {
@@ -657,7 +657,7 @@
 					className: U.a.Subtitle
 				}, q._("Hide community from feeds and notifications", null, {
 					hk: "2lFpIL"
-				})), r && m.a.createElement(B.a, {
+				})), r && m.a.createElement(W.a, {
 					subredditName: s,
 					toggleModal: l,
 					onConfirm: () => {
@@ -1021,8 +1021,8 @@
 						});
 						let H = `post-list-item-[layout: ${i}]-[postId: ${e}]`;
 						this.props.listingBelowVariant && C && (H += `--${C}`);
-						const B = Pe(e, i, s, C, v, w, this.props, t, this.props.hostPostData),
-							W = we(e, i, this.props, t),
+						const W = Pe(e, i, s, C, v, w, this.props, t, this.props.hostPostData),
+							B = we(e, i, this.props, t),
 							U = xe(e, this.props, l),
 							q = V.media && V.media.type === oe.o.EMBED ? V.media.provider : null,
 							D = h && !N.isSponsored,
@@ -1032,8 +1032,8 @@
 							estHeight: Object(ne.c)(N, i),
 							id: e,
 							isFocusable: !(!V.media || i !== R.g.Large) && (oe.c.has(V.media.type) && (!q || !oe.s.has(q)) && !V.isSpoiler),
-							trackOnEnteredViewport: B,
-							trackOnExitedViewport: W,
+							trackOnEnteredViewport: W,
+							trackOnExitedViewport: B,
 							render: h => {
 								let {
 									className: u,
@@ -1385,8 +1385,8 @@
 				F = s("./src/reddit/selectors/platform.ts"),
 				A = s("./src/telemetry/helpers/sendEvent.ts"),
 				H = s("./src/telemetry/helpers/sendTiming.ts"),
-				B = s("./src/reddit/components/Scroller/Simple.m.less"),
-				W = s.n(B);
+				W = s("./src/reddit/components/Scroller/Simple.m.less"),
+				B = s.n(W);
 			const U = L.g,
 				q = 5 * u.N,
 				D = 3,
@@ -1661,14 +1661,14 @@
 						const s = this.childMap.get(e);
 						if (!s || !s.el) return;
 						const i = s.el.firstChild;
-						i && (t !== s.el.style.height && (s.el.style.height = t), i.classList.add(W.a.Hidden), this.hiddenChildren[e] = t, s.loaded && p.a.write(() => {
+						i && (t !== s.el.style.height && (s.el.style.height = t), i.classList.add(B.a.Hidden), this.hiddenChildren[e] = t, s.loaded && p.a.write(() => {
 							s.itemRef && (s.loaded = !1, s.focused = !1, s.itemRef.unmountContent())
 						}))
 					}, this.showChild = e => {
 						const t = this.childMap.get(e);
 						if (!t || !t.el) return;
 						const s = t.el.firstChild;
-						s && (this.remeasureWhenShown[t.id] && (this.measurementsInvalid = !0, this.remeasureWhenShown[t.id] = void 0), t.el.style.height = "", s.classList.remove(W.a.Hidden), void 0 !== this.hiddenChildren[e] && (this.hiddenChildren[e] = void 0))
+						s && (this.remeasureWhenShown[t.id] && (this.measurementsInvalid = !0, this.remeasureWhenShown[t.id] = void 0), t.el.style.height = "", s.classList.remove(B.a.Hidden), void 0 !== this.hiddenChildren[e] && (this.hiddenChildren[e] = void 0))
 					}, this.getStylesForOuterWrapper = e => {
 						if (void 0 !== this.hiddenChildren[e]) return {
 							height: this.hiddenChildren[e]
@@ -1897,7 +1897,7 @@
 						ref: this.getWrapperRefFN(e.id),
 						style: this.getStylesForOuterWrapper(e.id)
 					}, l.a.createElement("div", {
-						className: this.hiddenChildren[e.id] ? W.a.Hidden : void 0
+						className: this.hiddenChildren[e.id] ? B.a.Hidden : void 0
 					}, e.render({
 						className: N.k,
 						height: e.estHeight,
@@ -2435,8 +2435,8 @@
 				o = s("./src/reddit/selectors/user.ts");
 			const r = e => Object(n.c)(e, {
 				experimentEligibilitySelector: o.S,
-				experimentName: i.Tb
-			}) === i.Bd
+				experimentName: i.Ub
+			}) === i.Fd
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, s) {
 			"use strict";
@@ -2523,4 +2523,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.ae19499ade492920d6a4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.bf6c5d5da6ad43175a1c.js.map

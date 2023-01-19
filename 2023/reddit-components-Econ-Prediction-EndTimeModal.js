@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.45de69a47ccea61bb9e8.js
-// Retrieved at 1/18/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.f7977881e652a053ff06.js
+// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-EndTimeModal"], {
 		"./node_modules/lodash/_baseClamp.js": function(e, t) {
@@ -660,7 +660,7 @@
 					...Object(o.o)(e),
 					post: Object(o.K)(e, t),
 					predictions: Object(o.Q)(e, t),
-					subreddit: Object(o.kb)(e)
+					subreddit: Object(o.lb)(e)
 				}),
 				r = e => t => ({
 					...s(t, e),
@@ -701,4 +701,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.45de69a47ccea61bb9e8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.f7977881e652a053ff06.js.map

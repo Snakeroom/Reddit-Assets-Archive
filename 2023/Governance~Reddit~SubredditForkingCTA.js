@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.deab2076d076184d40c1.js
-// Retrieved at 1/18/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.22063aa2b5ea42041d72.js
+// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~SubredditForkingCTA"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, r) {
@@ -52,8 +52,8 @@
 			}), u = r("./node_modules/fbt/lib/FbtPublic.js"), l = r("./src/reddit/models/Toast/index.ts"), b = r("./node_modules/reselect/es/index.js"), f = r("./src/reddit/constants/experiments.ts"), p = r("./src/reddit/helpers/chooseVariant/index.ts"), m = r("./src/reddit/selectors/user.ts");
 			const h = Object(b.a)(e => Object(p.c)(e, {
 				experimentEligibilitySelector: m.S,
-				experimentName: f.Ob
-			}), e => e === f.Bd);
+				experimentName: f.Pb
+			}), e => e === f.Fd);
 			var O = r("./src/reddit/actions/toaster.ts");
 			const y = "SUBREDDIT_COUNTRY_SITE__LOADED",
 				_ = "SUBREDDIT_COUNTRY_SITE__CHANGED",
@@ -415,9 +415,9 @@
 				j = r("./src/telemetry/index.ts");
 			const E = e => ({
 				...g.o(e),
-				screen: g.bb(e),
+				screen: g.cb(e),
 				profile: g.T(e),
-				subreddit: g.kb(e)
+				subreddit: g.lb(e)
 			});
 			var S = r("./src/reddit/helpers/trackers/postComposer.ts"),
 				P = r("./src/reddit/models/PostCreationForm/index.ts"),
@@ -890,7 +890,7 @@
 					const t = e.uploads,
 						r = Object(k.X)(e),
 						n = Object(k.a)(e),
-						d = Object(k.ib)(e);
+						d = Object(k.jb)(e);
 					if (n === s.bc.POST) return b.a.getPendingThumbnailUploads(d, t);
 					if (n === s.bc.MEDIA && r && r.items.length) {
 						const {
@@ -1470,7 +1470,7 @@
 								postFieldValidationPending: Promise.resolve()
 							})), Object(l.b)(D)
 						}
-						await t(Object(s.b)(`${r.path}`)), p ? p === b.Be.NewModule && t(Object(c.h)({
+						await t(Object(s.b)(`${r.path}`)), p ? p === b.Fe.NewModule && t(Object(c.h)({
 							tooltipId: u.MOD_WELCOME_TOOLTIP_ID
 						})) : (t(Object(o.h)(f.a.POST_FLOW_UPSELL_MODAL_ID)), Object(k.a)(Object(E.g)()(T))), Object(j.b)(j.a.SubredditCreation), t(Object(x.f)(d, null !== (g = Object(C.db)(T)) && void 0 !== g ? g : Object(P.k)(T)))
 					} else w.error && Object(k.a)(Object(E.h)(w.error.type, N)(T)), t(U({
@@ -2955,4 +2955,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.deab2076d076184d40c1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.22063aa2b5ea42041d72.js.map

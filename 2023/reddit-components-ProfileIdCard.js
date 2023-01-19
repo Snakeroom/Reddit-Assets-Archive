@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.ab6fd4b1db3d922398cf.js
-// Retrieved at 1/18/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.ed972671383fc672a7e7.js
+// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -2647,7 +2647,7 @@
 							e(Object(l.h)(n)), s(Object(x.a)(n))
 						},
 						onClickUnblockUser: () => {
-							e(Object(l.g)(n)), s(Object(x.h)(n))
+							e(Object(l.g)(n)), s(Object(x.i)(n))
 						},
 						onClickChatInviteLink: () => e((() => async (e, t, r) => {
 							let {
@@ -2917,7 +2917,7 @@
 				}), t && o.a.createElement(fe.a, {
 					onClose: X,
 					onConfirm: e => {
-						X(), w(e), _(Object(x.h)(D))
+						X(), w(e), _(Object(x.i)(D))
 					},
 					username: D,
 					withOverlay: !0
@@ -3362,9 +3362,9 @@
 		},
 		"./src/reddit/helpers/trackers/user.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "f", (function() {
+			r.d(t, "g", (function() {
 				return i
-			})), r.d(t, "g", (function() {
+			})), r.d(t, "h", (function() {
 				return c
 			})), r.d(t, "e", (function() {
 				return d
@@ -3376,16 +3376,18 @@
 				return m
 			})), r.d(t, "a", (function() {
 				return p
-			})), r.d(t, "h", (function() {
+			})), r.d(t, "i", (function() {
 				return f
+			})), r.d(t, "f", (function() {
+				return b
 			}));
 			var n = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				s = r("./src/reddit/selectors/telemetry.ts"),
 				o = r("./src/reddit/selectors/user.ts");
 			const a = e => ({
-					screen: s.bb(e),
+					screen: s.cb(e),
 					profile: s.T(e),
-					subreddit: s.kb(e)
+					subreddit: s.lb(e)
 				}),
 				i = e => t => ({
 					source: "user_dropdown",
@@ -3450,6 +3452,12 @@
 						}).id
 					},
 					...s.o(t)
+				}),
+				b = () => e => ({
+					...a(e),
+					source: "nav",
+					action: "click",
+					noun: "recap"
 				})
 		},
 		"./src/reddit/hooks/useLocale.ts": function(e, t, r) {
@@ -3649,7 +3657,7 @@
 			const a = e => Object(s.c)(e, {
 				experimentName: n.s,
 				experimentEligibilitySelector: () => Object(o.R)(e)
-			}) === n.Bd
+			}) === n.Fd
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, r) {
 			"use strict";
@@ -3697,4 +3705,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.ab6fd4b1db3d922398cf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.ed972671383fc672a7e7.js.map

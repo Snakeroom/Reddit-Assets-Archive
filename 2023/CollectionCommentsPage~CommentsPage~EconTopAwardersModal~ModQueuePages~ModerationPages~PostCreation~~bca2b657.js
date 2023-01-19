@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657.5f4b8903286183720eb3.js
-// Retrieved at 1/18/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657.70c7cca17f200b632a89.js
+// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -3078,7 +3078,7 @@
 						...Object(o.h)(e, t),
 						correlationId: Object(s.d)(s.a.GildingFlow, !1),
 						profile: a.T(e),
-						subreddit: a.kb(e)
+						subreddit: a.lb(e)
 					}
 				},
 				d = e => t => ({
@@ -3748,15 +3748,15 @@
 			const a = e => {
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: n.S,
-						experimentName: s.jd
+						experimentName: s.nd
 					});
-					return !(!t || Object(s.Zf)(t))
+					return !(!t || Object(s.dg)(t))
 				},
 				i = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: n.S,
-						experimentName: s.jd
-					}) === s.Fd.ListingEnabled
+						experimentName: s.nd
+					}) === s.Jd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/gold/powerups/benefitSettings.ts": function(e, t, r) {
@@ -3890,4 +3890,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657.5f4b8903286183720eb3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657.70c7cca17f200b632a89.js.map

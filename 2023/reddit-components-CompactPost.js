@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.2a71a68fbccc85e1120a.js
-// Retrieved at 1/18/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.f9e33409b1851573a08c.js
+// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1658,8 +1658,8 @@
 				p = s("./node_modules/reselect/es/index.js");
 			const b = Object(p.a)(e => Object(m.c)(e, {
 				experimentEligibilitySelector: m.a,
-				experimentName: u.pc
-			}), e => e === u.Bd);
+				experimentName: u.qc
+			}), e => e === u.Fd);
 			var _ = s("./node_modules/fbt/lib/FbtPublic.js"),
 				f = s("./src/lib/classNames/index.ts"),
 				h = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
@@ -2605,9 +2605,9 @@
 				n = s("./src/reddit/selectors/telemetry.ts");
 			const r = e => ({
 					...n.o(e),
-					screen: n.bb(e),
-					subreddit: n.kb(e),
-					userSubreddit: n.tb(e)
+					screen: n.cb(e),
+					subreddit: n.lb(e),
+					userSubreddit: n.ub(e)
 				}),
 				i = e => ({
 					id: e.id,
@@ -3225,10 +3225,10 @@
 				n = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(o.a)(e => Object(r.c)(e, {
-					experimentName: n.Lf,
+					experimentName: n.Pf,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				a = Object(o.a)(i, e => e === n.Ff)
+				a = Object(o.a)(i, e => e === n.Jf)
 		},
 		"./src/reddit/selectors/removedPosts.ts": function(e, t, s) {
 			"use strict";
@@ -3295,4 +3295,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.2a71a68fbccc85e1120a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.f9e33409b1851573a08c.js.map

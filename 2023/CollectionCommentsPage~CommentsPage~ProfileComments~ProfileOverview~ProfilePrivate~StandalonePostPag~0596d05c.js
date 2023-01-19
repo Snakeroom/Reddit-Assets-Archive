@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.53b54c6c965103337e20.js
-// Retrieved at 1/18/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.d789211447044ee47b25.js
+// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, s) {
@@ -89,11 +89,11 @@
 				feed: i.r(e),
 				geo: i.t(e),
 				platform: i.I(e),
-				referrer: i.Y(e),
-				request: i.Z(e),
-				screen: i.bb(e),
-				session: i.gb(e),
-				user: i.rb(e),
+				referrer: i.Z(e),
+				request: i.ab(e),
+				screen: i.cb(e),
+				session: i.hb(e),
+				user: i.sb(e),
 				media: s ? i.C(e, s) : null,
 				post: s ? i.K(e, s) : null
 			});
@@ -4942,7 +4942,7 @@
 								source: "post",
 								action: h.c.CLICK,
 								noun: "share_chat",
-								subreddit: Object(x.kb)(e)
+								subreddit: Object(x.lb)(e)
 							}))())
 						}, [t, s]);
 					return r.a.createElement("div", {
@@ -5647,7 +5647,7 @@
 					}),
 					correlationId: Object(o.d)(o.a.GoldPayment, !1),
 					profile: i.T(e),
-					subreddit: i.kb(e)
+					subreddit: i.lb(e)
 				}),
 				c = () => e => ({
 					source: "free_award_offer",
@@ -5746,7 +5746,7 @@
 					const s = {
 						...c.o(e),
 						action: r.c.CLICK,
-						subreddit: c.kb(e)
+						subreddit: c.lb(e)
 					};
 					return void 0 === t ? s : {
 						...s,
@@ -5781,7 +5781,7 @@
 				}),
 				f = e => ({
 					...c.o(e),
-					subreddit: c.kb(e),
+					subreddit: c.lb(e),
 					source: o.postComposer
 				}),
 				v = (e, t) => s => ({
@@ -5814,7 +5814,7 @@
 				}),
 				g = e => t => ({
 					...c.o(t),
-					subreddit: c.kb(t),
+					subreddit: c.lb(t),
 					source: o.collectionComposer,
 					action: r.c.CLICK,
 					noun: n.collectionDelete,
@@ -5883,7 +5883,7 @@
 						source: o.postComposer,
 						action: a.c.CLICK,
 						noun: "event_create",
-						subreddit: m.kb(e)
+						subreddit: m.lb(e)
 					})
 				},
 				h = e => {
@@ -5892,7 +5892,7 @@
 						source: o.postComposer,
 						action: a.c.CLICK,
 						noun: "event_edit",
-						subreddit: m.kb(e),
+						subreddit: m.lb(e),
 						postEvent: C(e),
 						postComposer: E(e)
 					})
@@ -5946,7 +5946,7 @@
 					const s = {
 						source: o.eventComposer,
 						action: a.c.CLICK,
-						subreddit: m.kb(e)
+						subreddit: m.lb(e)
 					};
 					return t ? {
 						...s,
@@ -6365,10 +6365,10 @@
 				n = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(o.a)(e => Object(r.c)(e, {
-					experimentName: n.xc,
+					experimentName: n.Bc,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				a = Object(o.a)(i, e => e === n.Bd)
+				a = Object(o.a)(i, e => e === n.Fd)
 		},
 		"./src/reddit/selectors/experiments/reportingRevampDesktop.ts": function(e, t, s) {
 			"use strict";
@@ -6395,10 +6395,10 @@
 				i = s("./src/reddit/models/Post/index.ts"),
 				a = s("./src/reddit/selectors/posts.ts");
 			const c = e => Object(r.c)(e, {
-					experimentName: n.Se,
+					experimentName: n.We,
 					experimentEligibilitySelector: r.a
 				}),
-				d = (e, t) => (t === n.Ze.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(i.A)(e),
+				d = (e, t) => (t === n.df.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(i.A)(e),
 				l = Object(o.a)(a.G, c, (e, t) => d(e, t));
 			Object(o.a)((e, t) => t, c, (e, t) => d(e, t))
 		},
@@ -6407,4 +6407,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.53b54c6c965103337e20.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.d789211447044ee47b25.js.map

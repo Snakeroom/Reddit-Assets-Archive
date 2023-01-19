@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmailVerificationModals.9e62bbb2f8f4eab0f816.js
-// Retrieved at 1/18/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailVerificationModals.f79ac0cb2295249b426c.js
+// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailVerificationModals"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -368,11 +368,11 @@
 				V = s("./src/reddit/components/Settings/DeactivateModal.tsx"),
 				X = s("./src/reddit/components/Settings/VerifyEmailModal.m.less"),
 				Y = s.n(X);
-			const z = Object(r.c)({
+			const q = Object(r.c)({
 					emailDigests: _.o,
 					isEmailPermissionRequired: Q.e
 				}),
-				q = Object(o.b)(z, e => ({
+				z = Object(o.b)(q, e => ({
 					resendEmail: () => e(Object(p.v)()),
 					toggleEmailDigests: t => e(Object(L.G)({
 						emailDigests: t
@@ -446,7 +446,7 @@
 					}))))
 				}
 			}
-			var Z = Object(u.a)(q(Object(E.c)(Object(H.a)(K)))),
+			var Z = Object(u.a)(z(Object(E.c)(Object(H.a)(K)))),
 				G = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				$ = s("./src/reddit/helpers/trackers/emailVerification.ts"),
 				ee = s("./src/reddit/selectors/activeModalId.ts"),
@@ -458,8 +458,8 @@
 					checkEmailModalOpen: Object(ee.b)(R.c),
 					isEmailPermissionRequired: Q.e,
 					isResponsiveSettingsEnabled: te.a,
-					setEmailModalOpen: Object(ee.b)(R.g),
-					verifyEmailModalOpen: Object(ee.b)(R.p)
+					setEmailModalOpen: Object(ee.b)(R.h),
+					verifyEmailModalOpen: Object(ee.b)(R.q)
 				}),
 				ie = Object(o.b)(ne, (e, t) => {
 					let {
@@ -470,7 +470,7 @@
 							s && e(Object(d.b)()), e(Object(m.g)(R.a))
 						},
 						closeSetEmailModal: () => e(Object(c.b)()),
-						closeVerifyEmailModal: () => e(Object(m.g)(R.p)),
+						closeVerifyEmailModal: () => e(Object(m.g)(R.q)),
 						toggleCheckEmailModal: () => e(Object(m.i)(R.c))
 					}
 				}),
@@ -1054,4 +1054,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.9e62bbb2f8f4eab0f816.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.f79ac0cb2295249b426c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.63133dceadf96a7f906d.js
-// Retrieved at 1/18/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.52cc7443d370b9b41eba.js
+// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-EventPostContent"], {
 		"./src/reddit/components/ClassicPost/index.tsx": function(e, t, s) {
@@ -19,9 +19,9 @@
 				b = s("./src/reddit/components/CreatorStats/loader.tsx"),
 				x = s("./node_modules/react-redux/es/index.js"),
 				h = s("./src/reddit/models/Audio/index.ts"),
-				f = s("./src/reddit/selectors/experiments/econ/index.ts"),
-				v = s("./src/reddit/components/Econ/Audio/index.m.less"),
-				g = s.n(v),
+				v = s("./src/reddit/selectors/experiments/econ/index.ts"),
+				f = s("./src/reddit/components/Econ/Audio/index.m.less"),
+				g = s.n(f),
 				O = s("./src/config.ts"),
 				j = s("./src/reddit/selectors/user.ts"),
 				E = s("./src/reddit/components/Econ/Audio/MuteIcon.tsx"),
@@ -79,7 +79,7 @@
 						postId: o,
 						author: n
 					} = t;
-					return Object(x.e)(f.n) && s.roomStatus === h.b.NotStarted ? r.a.createElement(_.a, {
+					return Object(x.e)(v.n) && s.roomStatus === h.b.NotStarted ? r.a.createElement(_.a, {
 						postId: o,
 						author: n,
 						roomId: s.roomId,
@@ -148,8 +148,8 @@
 					crosspost: s,
 					currentUser: i,
 					handleVote: x,
-					isExpanded: f,
-					inSubredditOrProfile: v,
+					isExpanded: v,
+					inSubredditOrProfile: f,
 					eventFactory: g,
 					flairStyleTemplate: O,
 					formatTitle: j,
@@ -169,8 +169,8 @@
 					onSizeChanged: be,
 					poll: xe,
 					post: he,
-					postId: fe,
-					redditStyle: ve,
+					postId: ve,
+					redditStyle: fe,
 					scrollerItemRef: ge,
 					showBulkActionCheckbox: Oe,
 					showEditFlair: je,
@@ -182,11 +182,11 @@
 					shouldShowGalleryTileOption: _e,
 					showPromotedCTA: ye,
 					showCTAExperimentDesign: Ne
-				} = e, we = Object(l.a)(), Ie = Object(c.a)(f);
+				} = e, we = Object(l.a)(), Ie = Object(c.a)(v);
 				Object(o.useEffect)(() => {
-					be && Ie !== f && be(he.id)
-				}, [f, be, he.id, Ie]);
-				const Ae = ve ? void 0 : O,
+					be && Ie !== v && be(he.id)
+				}, [v, be, he.id, Ie]);
+				const Ae = fe ? void 0 : O,
 					Te = s || void 0,
 					Re = Object(Z.a)(oe),
 					Le = Object(q.a)(oe),
@@ -196,12 +196,12 @@
 					Ve = Object(F.c)(he),
 					Be = !!he.media && he.media.type === K.o.RTJSON,
 					Ue = Pe && Be,
-					Qe = v && !Ee,
+					Qe = f && !Ee,
 					De = !!he.recommendationContext,
 					Je = {
 						flairStyleTemplate: Ae,
 						post: he,
-						inSubredditOrProfile: v,
+						inSubredditOrProfile: f,
 						isCurrentUserProfilePost: k,
 						isOverlay: y,
 						shouldShowSubscribeButton: !(S && _) || De && _,
@@ -213,14 +213,14 @@
 					} = He,
 					[Ke, Xe] = Object(o.useState)(!1),
 					Ye = Object(o.useCallback)(() => {
-						Xe(!Ke), we(Object(se.d)(fe))
-					}, [Ke, fe, we]);
+						Xe(!Ke), we(Object(se.d)(ve))
+					}, [Ke, ve, we]);
 				let $e = r.a.createElement(X.a, {
 					className: ce.a.classicThumbnail,
 					crosspost: Te && he,
 					isMeta: he.isMeta,
 					post: Te || he,
-					redditStyle: ve,
+					redditStyle: fe,
 					templatePlaceholderImage: Ae && Ae.postPlaceholderImage
 				});
 				Object(h.c)(he) && ($e = r.a.createElement(N, {
@@ -246,8 +246,8 @@
 					isCheckboxSelected: C,
 					toggleCheckbox: Se,
 					flairStyleTemplate: Ae,
-					redditStyle: ve,
-					postId: fe
+					redditStyle: fe,
+					postId: ve
 				}), r.a.createElement(V.a, {
 					className: Ce ? ce.a.shouldUseRoundedBorder : void 0,
 					"data-click-id": "background",
@@ -262,7 +262,7 @@
 				}, !Qe && $e, r.a.createElement(I.a, {
 					crosspost: Te,
 					className: ce.a.rightExpando,
-					isExpanded: !!f,
+					isExpanded: !!v,
 					post: he,
 					useMediaIcons: !1
 				})), r.a.createElement("div", {
@@ -279,7 +279,7 @@
 					format: j,
 					poll: xe,
 					post: he,
-					redditStyle: ve,
+					redditStyle: fe,
 					size: J.b.Medium,
 					titleColor: Ae && Ae.postTitleColor,
 					isOverlay: y
@@ -311,7 +311,7 @@
 				}, r.a.createElement(I.a, {
 					className: ce.a.leftExpando,
 					crosspost: Te,
-					isExpanded: !!f,
+					isExpanded: !!v,
 					post: he,
 					useMediaIcons: !1
 				}), r.a.createElement(p.a, {
@@ -346,7 +346,7 @@
 						mute: !Fe,
 						save: !Fe
 					})
-				})), r.a.createElement(T.d, null))), Object(ee.a)(he, ce.a, ge, f, _e, P), ke && Ke && r.a.createElement(b.a, {
+				})), r.a.createElement(T.d, null))), Object(ee.a)(he, ce.a, ge, v, _e, P), ke && Ke && r.a.createElement(b.a, {
 					className: ce.a.creatorStatsContainer,
 					post: he,
 					subreddit: ke,
@@ -601,8 +601,8 @@
 				b = s.n(p),
 				x = s("./src/config.ts"),
 				h = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				f = s("./src/reddit/controls/Button/index.tsx"),
-				v = s("./src/reddit/controls/LoadingIcon/index.tsx"),
+				v = s("./src/reddit/controls/Button/index.tsx"),
+				f = s("./src/reddit/controls/LoadingIcon/index.tsx"),
 				g = s("./src/reddit/hooks/useGqlContext.ts");
 			var O = e => r.a.createElement("svg", {
 					width: "15",
@@ -630,16 +630,16 @@
 					l = Object(n.d)(),
 					m = Object(h.b)(),
 					p = Object(g.a)();
-				return r.a.createElement(f.t, {
+				return r.a.createElement(v.t, {
 					"data-testid": "audioroom-upcoming-start-talk",
-					Icon: i ? v.a : P,
+					Icon: i ? f.a : P,
 					iconClassName: i ? b.a.loadingIcon : "",
 					className: Object(a.a)(b.a.StartTalkButton, {
 						[b.a.isNightMode]: s
 					}),
-					priority: f.c.Secondary,
-					size: f.d.M,
-					iconPosition: f.h.L,
+					priority: v.c.Secondary,
+					size: v.d.M,
+					iconPosition: v.h.L,
 					disabled: i,
 					text: r.a.createElement("span", {
 						className: b.a.StartTalkButtonText
@@ -677,8 +677,8 @@
 					isClassicView: x = !1
 				} = e;
 				const h = Object(n.d)(),
-					f = Object(l.a)(),
-					v = Object(n.e)(u.H),
+					v = Object(l.a)(),
+					f = Object(n.e)(u.H),
 					g = Object(n.e)(u.fb),
 					O = Object(n.e)(e => Object(u.Fb)(e, {
 						postId: s
@@ -687,8 +687,8 @@
 						userName: t
 					}));
 				Object(o.useEffect)(() => {
-					s && f && f(Object(c.f)(s))
-				}, [f, s]), Object(o.useEffect)(() => {
+					s && v && v(Object(c.f)(s))
+				}, [v, s]), Object(o.useEffect)(() => {
 					j || h(Object(i.d)(t))
 				}, [h, t, s, j]);
 				const E = () => r.a.createElement("div", {
@@ -701,7 +701,7 @@
 					className: b.a.snoovatar
 				}, r.a.createElement(d.a, {
 					userName: t,
-					isNSFW: !v,
+					isNSFW: !f,
 					className: b.a.isImage
 				})), r.a.createElement(m.a, {
 					ringId: `${s}`,
@@ -745,8 +745,8 @@
 				b = s("./src/reddit/components/SubredditContent/index.tsx"),
 				x = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				h = s("./src/reddit/constants/postLayout.ts"),
-				f = s("./src/reddit/controls/Button/index.tsx"),
-				v = s("./src/reddit/helpers/overlay/index.ts"),
+				v = s("./src/reddit/controls/Button/index.tsx"),
+				f = s("./src/reddit/helpers/overlay/index.ts"),
 				g = s("./src/reddit/helpers/postComponentForLayout/index.tsx"),
 				O = s("./src/reddit/icons/fonts/index.tsx"),
 				j = s("./src/reddit/routes/postCreation/index.ts"),
@@ -765,7 +765,7 @@
 					} = t;
 					return {
 						onClickPost: t => {
-							e(Object(v.a)(t.permalink))
+							e(Object(f.a)(t.permalink))
 						},
 						fetchMorePosts: () => {
 							e(Object(c.eventPostsRequested)(s))
@@ -829,7 +829,7 @@
 					} = this.props;
 					return n.a.createElement(n.a.Fragment, null, n.a.createElement(m.c, null, n.a.createElement(i.a, {
 						to: Object(j.c)(this.props.subredditName)
-					}, n.a.createElement(f.l, null, o.fbt._("Schedule an event post", null, {
+					}, n.a.createElement(v.l, null, o.fbt._("Schedule an event post", null, {
 						hk: "nk1bA"
 					})))), n.a.createElement(m.a, null, n.a.createElement(m.b, {
 						className: k.a.pageTitle
@@ -856,18 +856,18 @@
 				b = s("./src/reddit/selectors/moderatorPermissions.ts"),
 				x = s("./src/reddit/selectors/postFlair.ts"),
 				h = s("./src/reddit/selectors/posts.ts"),
-				f = s("./src/reddit/selectors/showPromotedCTA.ts"),
-				v = s("./src/reddit/selectors/user.ts");
+				v = s("./src/reddit/selectors/showPromotedCTA.ts"),
+				f = s("./src/reddit/selectors/user.ts");
 			const g = {
-					autoplayPref: v.d,
+					autoplayPref: f.d,
 					activeModalId: u.a,
 					crosspost: h.d,
 					isActive: h.j,
 					isChatPost: m.d,
 					isCurrentUserProfilePost: h.l,
 					isExpanded: h.m,
-					isLoggedIn: v.S,
-					showPromotedCTA: f.a,
+					isLoggedIn: f.S,
+					showPromotedCTA: v.a,
 					moderatorPermissions: b.m,
 					modModeEnabled: c.W,
 					poll: (e, t) => {
@@ -904,7 +904,7 @@
 		"./src/reddit/endpoints/talk/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "k", (function() {
-				return v
+				return f
 			})), s.d(t, "g", (function() {
 				return g
 			})), s.d(t, "f", (function() {
@@ -942,8 +942,8 @@
 				b = s("./src/redditGQL/operations/PrepareLiveAudioRoomOnProfile.json"),
 				x = s("./src/redditGQL/operations/ReportTalk.json"),
 				h = s("./src/redditGQL/operations/StartLiveAudioRoom.json"),
-				f = s("./src/redditGQL/types.ts");
-			const v = (e, t) => Object(n.a)(e, {
+				v = s("./src/redditGQL/types.ts");
+			const f = (e, t) => Object(n.a)(e, {
 					...x,
 					variables: t
 				}),
@@ -952,14 +952,14 @@
 						...u,
 						variables: t
 					});
-					return !!Object(a.c)(s) && (s.body.data.subredditInfoById.allowedPostTypes || []).includes(f.N.Talk)
+					return !!Object(a.c)(s) && (s.body.data.subredditInfoById.allowedPostTypes || []).includes(v.N.Talk)
 				}, O = async (e, t) => {
 					var s, o;
 					const r = await Object(n.a)(e, {
 						...m,
 						variables: t
 					});
-					return !!Object(a.c)(r) && (null !== (o = null === (s = r.body.data.profileByName) || void 0 === s ? void 0 : s.allowedPostTypes) && void 0 !== o ? o : []).includes(f.N.Talk)
+					return !!Object(a.c)(r) && (null !== (o = null === (s = r.body.data.profileByName) || void 0 === s ? void 0 : s.allowedPostTypes) && void 0 !== o ? o : []).includes(v.N.Talk)
 				}, j = async e => {
 					var t;
 					const s = await Object(n.a)(e, l);
@@ -987,26 +987,26 @@
 						}
 					}
 				}), k = () => Object(r.a)(), S = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile || e.data.startAudioRoom, P = {
-					[f.l.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+					[v.l.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[f.l.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
+					[v.l.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					}),
-					[f.l.RoomLimitExceeded]: o.fbt._("You can only create three talks at one time. To continue, close a talk you're not using.", null, {
+					[v.l.RoomLimitExceeded]: o.fbt._("You can only create three talks at one time. To continue, close a talk you're not using.", null, {
 						hk: "3zPx9X"
 					}),
-					[f.l.ConcurrentRoomLimitExceeded]: o.fbt._("Too many talks are happening right now. Try again later.", null, {
+					[v.l.ConcurrentRoomLimitExceeded]: o.fbt._("Too many talks are happening right now. Try again later.", null, {
 						hk: "2LYXJx"
 					}),
-					[f.l.SubredditRoomLimitExceeded]: o.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
+					[v.l.SubredditRoomLimitExceeded]: o.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
 						hk: "2mGf21"
 					})
 				}, _ = e => e.data.prepareAudioRoom || e.data.prepareAudioRoomOnProfile, y = {
-					[f.P.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+					[v.P.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[f.P.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
+					[v.P.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					})
 				}, N = (e, t) => Object(n.a)(e, {
@@ -1076,9 +1076,9 @@
 					action: r.c.VIEW,
 					noun: "aggregate_stats",
 					source: "creator_stats",
-					subreddit: Object(n.kb)(s),
+					subreddit: Object(n.lb)(s),
 					post: Object(n.K)(s, e),
-					userSubreddit: Object(n.tb)(s),
+					userSubreddit: Object(n.ub)(s),
 					actionInfo: Object(n.d)(s, {
 						reason: a(t)
 					})
@@ -1089,8 +1089,8 @@
 					noun: e,
 					source: "creator_stats",
 					post: Object(n.K)(s, t),
-					subreddit: Object(n.kb)(s),
-					userSubreddit: Object(n.tb)(s)
+					subreddit: Object(n.lb)(s),
+					userSubreddit: Object(n.ub)(s)
 				}),
 				c = e => {
 					switch (e) {
@@ -1138,7 +1138,7 @@
 						reason: "stats"
 					}),
 					post: Object(n.K)(d, e, void 0, i),
-					subreddit: Object(n.kb)(d),
+					subreddit: Object(n.lb)(d),
 					outbound: {
 						postId: s,
 						url: t,
@@ -1156,7 +1156,7 @@
 						reason: c(t)
 					}),
 					post: Object(n.K)(o, e, void 0, s),
-					subreddit: Object(n.kb)(o)
+					subreddit: Object(n.lb)(o)
 				})
 		},
 		"./src/reddit/helpers/trackers/talkCreation.ts": function(e, t, s) {
@@ -1201,10 +1201,10 @@
 					source: "liveaudio",
 					action: r.c.CLICK,
 					noun: "go_live",
-					subreddit: a.kb(e),
+					subreddit: a.lb(e),
 					liveAudioRoom: {
-						title: Object(n.ub)(e),
-						topicIds: Object(n.tb)(e).topics.map(e => e.id)
+						title: Object(n.vb)(e),
+						topicIds: Object(n.ub)(e).topics.map(e => e.id)
 					}
 				}),
 				l = () => e => ({
@@ -1212,10 +1212,10 @@
 					source: "liveaudio",
 					action: r.c.CLICK,
 					noun: "schedule",
-					subreddit: a.kb(e),
+					subreddit: a.lb(e),
 					liveAudioRoom: {
-						title: Object(n.ub)(e),
-						topicIds: Object(n.tb)(e).topics.map(e => e.id)
+						title: Object(n.vb)(e),
+						topicIds: Object(n.ub)(e).topics.map(e => e.id)
 					}
 				}),
 				u = () => e => ({
@@ -1223,9 +1223,9 @@
 					source: "post_composer",
 					action: r.c.CLICK,
 					noun: "overflow",
-					subreddit: a.kb(e),
+					subreddit: a.lb(e),
 					liveAudioRoom: {
-						title: Object(n.ub)(e)
+						title: Object(n.vb)(e)
 					}
 				}),
 				m = e => t => ({
@@ -1233,7 +1233,7 @@
 					source: "global",
 					action: r.c.VIEW,
 					noun: r.b.SCREEN,
-					subreddit: a.kb(t),
+					subreddit: a.lb(t),
 					post: a.K(t, e),
 					postEvent: {
 						eventState: o.a.Future
@@ -1269,4 +1269,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.63133dceadf96a7f906d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.52cc7443d370b9b41eba.js.map

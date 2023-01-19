@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HappeningNow.be1e6f8cd9ac3f3adba5.js
-// Retrieved at 1/18/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HappeningNow.e22e53556545b93dcf94.js
+// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HappeningNow"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2116,7 +2116,7 @@
 									...n.actionInfo,
 									reason: this.props.node.id
 								},
-								subreddit: p.kb(t)
+								subreddit: p.lb(t)
 							}
 						})
 					}
@@ -2512,12 +2512,12 @@
 						rtJsonElementProps: o
 					});
 					switch (a) {
-						case b.zf.SmIcon:
+						case b.Df.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: r,
 								rtJsonElementProps: o
 							});
-						case b.zf.SmIconHc:
+						case b.Df.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: r,
 								isHoverable: !0,
@@ -2642,7 +2642,7 @@
 				p = e => ({
 					...u.o(e),
 					source: s,
-					screen: u.bb(e),
+					screen: u.cb(e),
 					discoveryUnit: {
 						id: "xd_100",
 						name: r.SUBREDDIT_HOVERCARD,
@@ -2688,7 +2688,7 @@
 					const r = Object(i.b)(n) ? n.belongsTo.id : n.subredditId;
 					return {
 						post: u.K(e, n.id),
-						subreddit: u.lb(e, r),
+						subreddit: u.mb(e, r),
 						...h(e, t)
 					}
 				},
@@ -2701,8 +2701,8 @@
 					source: "global",
 					action: a.c.VIEW,
 					noun: r.SUBREDDIT_HOVERCARD,
-					subreddit: u.mb(t, e),
-					screen: u.bb(t)
+					subreddit: u.nb(t, e),
+					screen: u.cb(t)
 				}),
 				v = (e, t) => n => ({
 					...p(n),
@@ -2710,8 +2710,8 @@
 					action: a.c.VIEW,
 					noun: r.ITEM_POST,
 					post: u.K(n, t),
-					subreddit: u.mb(n, e),
-					screen: u.bb(n)
+					subreddit: u.nb(n, e),
+					screen: u.cb(n)
 				}),
 				C = (e, t) => n => ({
 					...p(n),
@@ -2719,26 +2719,26 @@
 					action: a.c.CLICK,
 					noun: r.ITEM_POST,
 					post: u.K(n, t),
-					subreddit: u.mb(n, e),
-					screen: u.bb(n)
+					subreddit: u.nb(n, e),
+					screen: u.cb(n)
 				}),
 				g = e => t => ({
 					...p(t),
-					subreddit: u.lb(t, e) || null,
+					subreddit: u.mb(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: a.c.CLICK,
 					noun: r.HEADER_SUBREDDIT
 				}),
 				E = e => t => ({
 					...p(t),
-					subreddit: u.lb(t, e) || null,
+					subreddit: u.mb(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: a.c.CLICK,
 					noun: r.HEADER_SUBREDDIT_SUBSCRIBE
 				}),
 				w = e => t => ({
 					...p(t),
-					subreddit: u.lb(t, e) || null,
+					subreddit: u.mb(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: a.c.CLICK,
 					noun: r.HEADER_SUBREDDIT_UNSUBSCRIBE
@@ -3939,12 +3939,12 @@
 				l = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: r.tf
+						experimentName: r.xf
 					}) || ""
 				},
 				c = e => {
 					const t = l(e);
-					return t === r.zf.SmIcon || t === r.zf.SmIconHc
+					return t === r.Df.SmIcon || t === r.Df.SmIconHc
 				},
 				d = (e, t) => {
 					let {
@@ -3973,4 +3973,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.be1e6f8cd9ac3f3adba5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.e22e53556545b93dcf94.js.map

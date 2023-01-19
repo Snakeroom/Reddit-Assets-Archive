@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.caffb74da206172ca1d7.js
-// Retrieved at 1/18/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.db860da1b245c6432e79.js
+// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent~TopWeekPostsDiscoveryUnit"], {
 		"./node_modules/react-motion/lib/Motion.js": function(e, t, s) {
@@ -785,11 +785,11 @@
 				feed: o.r(e),
 				geo: o.t(e),
 				platform: o.I(e),
-				referrer: o.Y(e),
-				request: o.Z(e),
-				screen: o.bb(e),
-				session: o.gb(e),
-				user: o.rb(e),
+				referrer: o.Z(e),
+				request: o.ab(e),
+				screen: o.cb(e),
+				session: o.hb(e),
+				user: o.sb(e),
 				media: s ? o.C(e, s) : null,
 				post: s ? o.K(e, s) : null
 			});
@@ -2807,4 +2807,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.caffb74da206172ca1d7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.db860da1b245c6432e79.js.map

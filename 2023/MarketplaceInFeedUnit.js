@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.f6b0c01cb9f6b4cedb41.js
-// Retrieved at 1/18/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.9802437804856b6d6a7f.js
+// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MarketplaceInFeedUnit"], {
 		"./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx": function(e, t, s) {
@@ -39,13 +39,13 @@
 							},
 							expiration: r
 						}), [s, r]),
-						k = {
+						f = {
 							...p,
 							STRIPE_API_KEY: n.a.stripe.apiKey(e),
 							ACCESS_TOKEN: s,
 							BLOCKCHAIN_PROVIDER: j
 						},
-						f = Object(c.useCallback)(e => {
+						k = Object(c.useCallback)(e => {
 							b(t => {
 								const s = l.o(t);
 								return {
@@ -62,10 +62,10 @@
 						}, [b]);
 					return Object(c.useMemo)(() => ({
 						authHeaders: _,
-						config: k,
+						config: f,
 						isNightMode: O,
-						sendEvent: f
-					}), [_, k, O, f])
+						sendEvent: k
+					}), [_, f, O, k])
 				}
 		},
 		"./src/reddit/components/Econ/Marketplace/InFeedUnit/index.m.less": function(e, t, s) {
@@ -95,8 +95,8 @@
 				b = s("./src/reddit/hooks/useLocalStorage.ts"),
 				j = s("./src/reddit/hooks/usePreloadModal.ts"),
 				_ = s("./src/reddit/hooks/useTracking.ts"),
-				k = s("./src/reddit/selectors/gold/marketplace/claimFlow.ts"),
-				f = s("./src/reddit/components/Econ/Marketplace/InFeedUnit/ConfirmDismissModal.tsx"),
+				f = s("./src/reddit/selectors/gold/marketplace/claimFlow.ts"),
+				k = s("./src/reddit/components/Econ/Marketplace/InFeedUnit/ConfirmDismissModal.tsx"),
 				E = s("./src/reddit/components/Econ/Marketplace/InFeedUnit/index.m.less"),
 				x = s.n(E);
 			const C = e => {
@@ -105,7 +105,7 @@
 				} = e;
 				const s = Object(i.d)(),
 					E = Object(_.a)(),
-					C = Object(i.e)(k.a),
+					C = Object(i.e)(f.a),
 					[g, M] = Object(a.useState)(!1),
 					[A, I] = Object(a.useState)(!1);
 				Object(j.a)(l.a);
@@ -138,7 +138,7 @@
 					description: C.description,
 					ctaText: C.buttonCtaText,
 					isNotCardLayout: S
-				})))), g && o.a.createElement(f.a, {
+				})))), g && o.a.createElement(k.a, {
 					onGoBack: () => M(!1),
 					onDismiss: () => {
 						E(Object(O.e)()), h(!0)
@@ -196,9 +196,9 @@
 			}));
 			var n = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const c = Object(r.a)(n.kd)
+			const c = Object(r.a)(n.od)
 		},
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.f6b0c01cb9f6b4cedb41.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.9802437804856b6d6a7f.js.map

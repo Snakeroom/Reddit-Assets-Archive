@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.9ceabcbe6a9086ca2e0a.js
-// Retrieved at 1/18/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.2e6eab976315d27dd0be.js
+// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsGifsTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/BaseTooltip.m.less": function(e, t, s) {
@@ -181,11 +181,11 @@
 			});
 			var N = Object(h.b)(O)(B),
 				P = s("./src/lib/constants/icons.ts"),
-				M = s("./src/reddit/controls/Button/index.tsx"),
-				U = s("./src/reddit/icons/fonts/index.tsx");
-			var A = s("./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less"),
-				L = s.n(A);
-			const q = 4,
+				q = s("./src/reddit/controls/Button/index.tsx"),
+				M = s("./src/reddit/icons/fonts/index.tsx");
+			var U = s("./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less"),
+				A = s.n(U);
+			const L = 4,
 				V = r()(g.b);
 			class F extends l.a.Component {
 				constructor() {
@@ -290,7 +290,7 @@
 						}(e);
 						if (o) {
 							const e = s.reduce((e, t, o) => t < s[e] ? o : e, 0);
-							t[e].push(o), s[e] += o.fixedWidthHeight + q
+							t[e].push(o), s[e] += o.fixedWidthHeight + L
 						}
 					});
 					const o = e.pagination.offset + e.pagination.count;
@@ -310,10 +310,10 @@
 					} = this.state;
 					let r = null;
 					return r = n ? l.a.createElement("div", {
-						className: L.a.textContentContainer
-					}, l.a.createElement(M.t, {
-						priority: M.c.Plain,
-						size: M.d.XS,
+						className: A.a.textContentContainer
+					}, l.a.createElement(q.t, {
+						priority: q.c.Plain,
+						size: q.d.XS,
 						text: o.fbt._("Reload", null, {
 							hk: "4jkmsI"
 						}),
@@ -321,25 +321,25 @@
 							hk: "4jkmsI"
 						}),
 						onClick: this.reloadGifs,
-						Icon: Object(U.b)(P.a.refresh)
+						Icon: Object(M.b)(P.a.refresh)
 					})) : s ? l.a.createElement("div", {
-						className: L.a.loadingSpinner
+						className: A.a.loadingSpinner
 					}, l.a.createElement(f.a, {
 						sizePx: 20,
 						center: !0
 					})) : 0 === (null === (e = t[0]) || void 0 === e ? void 0 : e.length) ? l.a.createElement("div", {
-						className: Object(i.a)(L.a.textContentContainer, L.a.noResultsText)
+						className: Object(i.a)(A.a.textContentContainer, A.a.noResultsText)
 					}, o.fbt._("No results", null, {
 						hk: "2vJ2bd"
 					})) : l.a.createElement(l.a.Fragment, null, l.a.createElement("div", {
-						className: Object(i.a)(L.a.results, {
-							[L.a.disabled]: this.props.disabled
+						className: Object(i.a)(A.a.results, {
+							[A.a.disabled]: this.props.disabled
 						})
 					}, t.map((e, t) => l.a.createElement("div", {
-						className: L.a.column,
+						className: A.a.column,
 						key: t
 					}, e.map(e => l.a.createElement("button", {
-						className: L.a.gifResult,
+						className: A.a.gifResult,
 						key: e.url,
 						onClick: () => this.onResultClick(e),
 						style: {
@@ -347,26 +347,26 @@
 						},
 						disabled: this.props.disabled
 					}, l.a.createElement("img", {
-						className: L.a.gifResultImage,
+						className: A.a.gifResultImage,
 						src: e.url
 					})))))), this.props.children), l.a.createElement("div", {
-						className: L.a.tooltip
+						className: A.a.tooltip
 					}, l.a.createElement("div", {
-						className: L.a.header
+						className: A.a.header
 					}, l.a.createElement("div", {
-						className: L.a.searchLine
+						className: A.a.searchLine
 					}, l.a.createElement(N, {
 						autofocus: this.props.autofocus,
 						onChange: this.onQueryChange,
-						className: L.a.searchBox
+						className: A.a.searchBox
 					}), l.a.createElement(b.a, {
-						className: L.a.closeIcon,
+						className: A.a.closeIcon,
 						onClick: () => this.props.onClose(!0)
 					}))), l.a.createElement("div", {
-						className: L.a.body,
+						className: A.a.body,
 						onScroll: this.onScroll
 					}, r, l.a.createElement("div", {
-						className: L.a.whiteScrim
+						className: A.a.whiteScrim
 					})))
 				}
 			}
@@ -448,7 +448,7 @@
 					action: "change",
 					noun: "gif_tooltip_search",
 					correlationId: s,
-					subreddit: t ? o.lb(i, t) : void 0,
+					subreddit: t ? o.mb(i, t) : void 0,
 					post: o.k(i),
 					search: {
 						query: e
@@ -463,7 +463,7 @@
 						action: "select",
 						noun: "gif_tooltip_result",
 						correlationId: s,
-						subreddit: t ? o.lb(i, t) : void 0,
+						subreddit: t ? o.mb(i, t) : void 0,
 						post: o.k(i),
 						actionInfo: {
 							...n.actionInfo,
@@ -491,9 +491,9 @@
 					...i.o(e),
 					correlationId: Object(o.d)(o.a.PowerupsFlow, !1),
 					profile: i.T(e),
-					subreddit: i.kb(e),
+					subreddit: i.lb(e),
 					powerups: {
-						...i.pb(e),
+						...i.qb(e),
 						freeCount: t,
 						paidCount: s
 					}
@@ -510,7 +510,7 @@
 					noun: "add_custom_emojis",
 					...n(s),
 					powerups: {
-						...i.pb(s),
+						...i.qb(s),
 						emojiCount: e
 					}
 				}),
@@ -520,7 +520,7 @@
 					noun: "custom_emojis",
 					...n(s),
 					powerups: {
-						...i.pb(s),
+						...i.qb(s),
 						emojiCount: e
 					}
 				}),
@@ -533,7 +533,7 @@
 						noun: "custom_emojis",
 						...n(s),
 						powerups: {
-							...i.pb(s),
+							...i.qb(s),
 							emojiCount: e
 						}
 					})
@@ -542,11 +542,11 @@
 					source: "meta",
 					action: "open",
 					noun: "gif_tooltip",
-					subreddit: t ? i.lb(s, t) : void 0,
+					subreddit: t ? i.mb(s, t) : void 0,
 					...n(s),
 					correlationId: e
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.9ceabcbe6a9086ca2e0a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.2e6eab976315d27dd0be.js.map

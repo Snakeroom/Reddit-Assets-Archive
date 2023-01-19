@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NsfwBlockingModal.836bd201e59ec33ed7e3.js
-// Retrieved at 1/18/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NsfwBlockingModal.cfe8c2e4b6009d2ad2fe.js
+// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NsfwBlockingModal"], {
 		"./src/reddit/components/Footer/index.m.less": function(e, t, n) {
@@ -340,7 +340,7 @@
 					}, i.a.createElement(_.b, {
 						textColor: l
 					})), i.a.createElement(F, {
-						qrCodeAsset: (() => a === f.Rc.Enabled || s === f.db.BlurredPreview || s === f.db.NoPreview ? I.d2x_nsfw_signup_blocking_de_v1 : I.d2x_nsfw_signup_blocking_non_us_v1)()
+						qrCodeAsset: (() => a === f.Vc.Enabled || s === f.db.BlurredPreview || s === f.db.NoPreview ? I.d2x_nsfw_signup_blocking_de_v1 : I.d2x_nsfw_signup_blocking_non_us_v1)()
 					}))
 				},
 				M = e => {
@@ -460,7 +460,7 @@
 				d = n("./node_modules/reselect/es/index.js");
 			const m = 30 * a.pb,
 				b = () => {
-					Object(i.yb)(r.b.XpromoConsolidation, (new Date).toString())
+					Object(i.zb)(r.b.XpromoConsolidation, (new Date).toString())
 				},
 				u = () => {
 					if (!Object(s.a)()) return !1;
@@ -483,4 +483,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwBlockingModal.836bd201e59ec33ed7e3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwBlockingModal.cfe8c2e4b6009d2ad2fe.js.map

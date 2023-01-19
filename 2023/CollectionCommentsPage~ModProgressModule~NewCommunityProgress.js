@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ModProgressModule~NewCommunityProgress.bcd76d188cbc4bf6dec1.js
-// Retrieved at 1/18/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ModProgressModule~NewCommunityProgress.eb148b2027be31d29dc5.js
+// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~ModProgressModule~NewCommunityProgress"], {
 		"./src/reddit/components/NewCommunityProgress/icons/index.tsx": function(C, e, a) {
@@ -1233,7 +1233,7 @@
 						pageType: "community",
 						reason: e
 					},
-					subreddit: Object(l.kb)(a)
+					subreddit: Object(l.lb)(a)
 				}),
 				c = (C, e, a) => L => ({
 					...Object(l.o)(L),
@@ -1247,7 +1247,7 @@
 							reason: a
 						}
 					},
-					subreddit: Object(l.kb)(L)
+					subreddit: Object(l.lb)(L)
 				}),
 				n = C => e => ({
 					...Object(l.o)(e),
@@ -1259,7 +1259,7 @@
 						pageType: "community",
 						reason: "expanded_module"
 					},
-					subreddit: Object(l.kb)(e)
+					subreddit: Object(l.lb)(e)
 				}),
 				i = C => e => ({
 					...Object(l.o)(e),
@@ -1271,7 +1271,7 @@
 						pageType: "community",
 						reason: "collapses_module"
 					},
-					subreddit: Object(l.kb)(e)
+					subreddit: Object(l.lb)(e)
 				}),
 				r = (C, e) => a => ({
 					...Object(l.o)(a),
@@ -1282,7 +1282,7 @@
 					actionInfo: {
 						pageType: "community"
 					},
-					subreddit: Object(l.kb)(a)
+					subreddit: Object(l.lb)(a)
 				}),
 				d = (C, e) => a => ({
 					...Object(l.o)(a),
@@ -1293,7 +1293,7 @@
 					actionInfo: {
 						pageType: "community"
 					},
-					subreddit: Object(l.kb)(a)
+					subreddit: Object(l.lb)(a)
 				}),
 				m = (C, e) => a => ({
 					...Object(l.o)(a),
@@ -1304,7 +1304,7 @@
 					actionInfo: {
 						pageType: "community"
 					},
-					subreddit: Object(l.kb)(a)
+					subreddit: Object(l.lb)(a)
 				})
 		},
 		"./src/redditGQL/operations/CompleteCommunityProgressCard.json": function(C) {
@@ -1321,4 +1321,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ModProgressModule~NewCommunityProgress.bcd76d188cbc4bf6dec1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ModProgressModule~NewCommunityProgress.eb148b2027be31d29dc5.js.map

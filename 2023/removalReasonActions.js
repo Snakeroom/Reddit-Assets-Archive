@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.35578a34f23366038aae.js
-// Retrieved at 1/18/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.ed2d217f147bd3f59535.js
+// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./node_modules/lodash/map.js": function(e, t, s) {
@@ -491,8 +491,8 @@
 				y = s("./src/lib/constants/index.ts"),
 				I = s("./src/lib/makeActionCreator/index.ts"),
 				x = s("./src/lib/makeCommentsPageKey/index.ts"),
-				L = s("./src/lib/makeDraftKey/index.ts"),
-				k = s("./src/reddit/actions/bulkActions/index.ts"),
+				k = s("./src/lib/makeDraftKey/index.ts"),
+				L = s("./src/reddit/actions/bulkActions/index.ts"),
 				g = s("./src/reddit/actions/comment/index.ts"),
 				C = s("./src/reddit/actions/comment/authoring.ts"),
 				T = s("./src/reddit/actions/comment/moderation.ts"),
@@ -681,7 +681,7 @@
 												sort: y.x,
 												hasSortParam: !0
 											})), p === Q.e.Post) {
-											const s = Object(L.a)(q.c.replyToPost, u);
+											const s = Object(k.a)(q.c.replyToPost, u);
 											d(Object(C.r)({
 												...t,
 												headCommentId: Object(Z.w)(l, {
@@ -701,7 +701,7 @@
 												}
 											}))
 										} else if (p === Q.e.Comment) {
-											const e = Object(L.a)(q.c.replyToComment, b.id),
+											const e = Object(k.a)(q.c.replyToComment, b.id),
 												s = Object(Z.j)(l, {
 													commentId: u,
 													commentsPageKey: n
@@ -761,7 +761,7 @@
 								removalReason: t && t.title
 							}
 						};
-						if (d(Object(k.b)(o)), t) {
+						if (d(Object(L.b)(o)), t) {
 							const o = {
 									itemId: e,
 									message: s,
@@ -1071,13 +1071,13 @@
 				r = s("./node_modules/reselect/es/index.js");
 			const d = Object(r.a)(e => Object(n.c)(e, {
 				experimentEligibilitySelector: n.a,
-				experimentName: o.ob
+				experimentName: o.pb
 			}), e => ({
-				bucketed: e === o.Lc.ExpandedSearch || e === o.Lc.CollapsedSearch,
-				collapsed: e === o.Lc.CollapsedSearch,
-				expanded: e === o.Lc.ExpandedSearch
+				bucketed: e === o.Pc.ExpandedSearch || e === o.Pc.CollapsedSearch,
+				collapsed: e === o.Pc.CollapsedSearch,
+				expanded: e === o.Pc.ExpandedSearch
 			}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.35578a34f23366038aae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.ed2d217f147bd3f59535.js.map

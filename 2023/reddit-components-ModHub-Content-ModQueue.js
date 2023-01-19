@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.26bc568da36c31e8d3e3.js
-// Retrieved at 1/18/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.ccdd0beb3e1c1066315c.js
+// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/components/CrowdControlAdoptionCampaign/CrowdControlModQueueCTA.m.less": function(e, t, n) {
@@ -37,7 +37,7 @@
 			var E = n("./src/reddit/icons/fonts/index.tsx"),
 				h = n("./src/reddit/components/CrowdControlAdoptionCampaign/CrowdControlModQueueCTA.m.less"),
 				g = n.n(h);
-			var k = e => {
+			var w = e => {
 					let {
 						subredditName: t,
 						onDismiss: n
@@ -48,7 +48,7 @@
 							source: "modqueue",
 							action: "view",
 							noun: "cc_banner",
-							subreddit: N.kb(e),
+							subreddit: N.lb(e),
 							...N.o(e)
 						}))())
 					}, [o]);
@@ -75,7 +75,7 @@
 								source: "modqueue",
 								action: "click",
 								noun: "cc_banner",
-								subreddit: N.kb(e),
+								subreddit: N.lb(e),
 								...N.o(e)
 							}))())
 						}
@@ -89,7 +89,7 @@
 								source: "modqueue",
 								action: "dismiss",
 								noun: "cc_banner",
-								subreddit: N.kb(e),
+								subreddit: N.lb(e),
 								...N.o(e)
 							}))()), n()
 						},
@@ -102,7 +102,7 @@
 						})
 					}))
 				},
-				w = n("./src/reddit/components/CrowdControlAdoptionCampaign/useCrowdControlCampaign.tsx"),
+				k = n("./src/reddit/components/CrowdControlAdoptionCampaign/useCrowdControlCampaign.tsx"),
 				v = n("./src/reddit/components/ModHub/InfoLink/index.tsx"),
 				L = n("./src/reddit/components/ModHub/StyledComponents/index.tsx"),
 				M = n("./src/reddit/components/ModQueueActivitySummaryCards/async.ts"),
@@ -114,7 +114,7 @@
 				const {
 					showCrowdControlCampaign: t,
 					dismissCrowdControlCampaign: n
-				} = Object(w.a)(), r = Object(c.d)(), C = Object(i.useCallback)(a()(t => {
+				} = Object(k.a)(), r = Object(c.d)(), C = Object(i.useCallback)(a()(t => {
 					r(Object(b.a)(e.subredditId)), r(Object(b.c)(t))
 				}, 1e3), []), x = Object(i.useMemo)(() => ({
 					input: {
@@ -127,7 +127,7 @@
 				}), [e.subredditId]);
 				return d.a.createElement(L.a, {
 					className: Object(l.a)(S.a.container, e.layout === p.g.Large ? S.a.isLargePostLayout : void 0)
-				}, t && d.a.createElement(k, {
+				}, t && d.a.createElement(w, {
 					subredditName: e.subredditName,
 					onDismiss: n
 				}), d.a.createElement("div", {
@@ -216,4 +216,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.26bc568da36c31e8d3e3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.ccdd0beb3e1c1066315c.js.map

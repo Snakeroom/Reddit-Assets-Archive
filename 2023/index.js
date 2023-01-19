@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.8eb248df152b0fa450f5.js
-// Retrieved at 1/18/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.5450db00e31b51875b23.js
+// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -617,7 +617,7 @@
 				poll: Object(i.P)(e, t),
 				post: Object(i.K)(e, t),
 				predictions: Object(i.Q)(e, t),
-				subreddit: Object(i.kb)(e)
+				subreddit: Object(i.lb)(e)
 			});
 			var d = n("./src/reddit/hooks/useTracking.ts"),
 				l = n("./src/reddit/models/Prediction/index.ts"),
@@ -1255,10 +1255,10 @@
 					source: "liveaudio",
 					action: r.c.CLICK,
 					noun: "go_live",
-					subreddit: s.kb(e),
+					subreddit: s.lb(e),
 					liveAudioRoom: {
-						title: Object(a.ub)(e),
-						topicIds: Object(a.tb)(e).topics.map(e => e.id)
+						title: Object(a.vb)(e),
+						topicIds: Object(a.ub)(e).topics.map(e => e.id)
 					}
 				}),
 				l = () => e => ({
@@ -1266,10 +1266,10 @@
 					source: "liveaudio",
 					action: r.c.CLICK,
 					noun: "schedule",
-					subreddit: s.kb(e),
+					subreddit: s.lb(e),
 					liveAudioRoom: {
-						title: Object(a.ub)(e),
-						topicIds: Object(a.tb)(e).topics.map(e => e.id)
+						title: Object(a.vb)(e),
+						topicIds: Object(a.ub)(e).topics.map(e => e.id)
 					}
 				}),
 				u = () => e => ({
@@ -1277,9 +1277,9 @@
 					source: "post_composer",
 					action: r.c.CLICK,
 					noun: "overflow",
-					subreddit: s.kb(e),
+					subreddit: s.lb(e),
 					liveAudioRoom: {
-						title: Object(a.ub)(e)
+						title: Object(a.vb)(e)
 					}
 				}),
 				m = e => t => ({
@@ -1287,7 +1287,7 @@
 					source: "global",
 					action: r.c.VIEW,
 					noun: r.b.SCREEN,
-					subreddit: s.kb(t),
+					subreddit: s.lb(t),
 					post: s.K(t, e),
 					postEvent: {
 						eventState: o.a.Future
@@ -1323,4 +1323,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.8eb248df152b0fa450f5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.5450db00e31b51875b23.js.map

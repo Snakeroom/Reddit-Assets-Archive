@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.bc0f5fdd5774649249b7.js
-// Retrieved at 1/18/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.9b47a1a315408a5fee47.js
+// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -799,9 +799,9 @@
 							r = Object(me.Q)(s(), {
 								identifier: w.belongsTo
 							});
-						if (r && (e => m.ef.Redirect === Object(se.b)(e, {
+						if (r && (e => m.if.Redirect === Object(se.b)(e, {
 								experimentEligibilitySelector: ae,
-								experimentName: m.bf
+								experimentName: m.ff
 							}))(s())) return void t(Object(o.c)(r.url));
 						if (w.belongsTo.type !== q.a.SUBREDDIT || w.isSponsored) {
 							if (w.belongsTo.type === q.a.PROFILE) {
@@ -892,7 +892,7 @@
 								t(h({
 									categoryId: e,
 									rank: n + 1
-								})), Object(u.gb)(Object(p.c)(s()))
+								})), Object(u.hb)(Object(p.c)(s()))
 							})(e))))
 						}
 					} else t(M.n({
@@ -4490,8 +4490,8 @@
 										actionInfo: Object(ue.l)(n, void 0, r, void 0),
 										correlationId: Object(tt.c)(tt.a.SearchResults),
 										profile: "profile" === e.type ? nt.X(n, e.id) : void 0,
-										search: nt.cb(n, t, st.a.SERP),
-										subreddit: "subreddit" === e.type ? nt.ob(n, e.id) : void 0
+										search: nt.db(n, t, st.a.SERP),
+										subreddit: "subreddit" === e.type ? nt.pb(n, e.id) : void 0
 									}
 								})(n, c, e ? "unsubscribe" : "subscribe")
 							},
@@ -5844,7 +5844,7 @@
 				return Object(i.useEffect)(() => {
 					var e;
 					const s = null !== (e = Object(p.A)("should-show-comment-tab-tooltip")) && void 0 !== e ? e : 2;
-					t(Boolean(s)), 2 === s ? Object(p.yb)("should-show-comment-tab-tooltip", 1) : 1 === s && Object(p.yb)("should-show-comment-tab-tooltip", !1)
+					t(Boolean(s)), 2 === s ? Object(p.zb)("should-show-comment-tab-tooltip", 1) : 1 === s && Object(p.zb)("should-show-comment-tab-tooltip", !1)
 				}, []), {
 					get shouldShowCommentTabTooltip() {
 						return e
@@ -6431,7 +6431,7 @@
 						noun: t,
 						correlationId: Object(B.c)(B.a.SearchResults),
 						actionInfo: Object(D.l)(e, null, r),
-						search: U.cb(e, V(s, n), A.a.SERP)
+						search: U.db(e, V(s, n), A.a.SERP)
 					}
 				}),
 				G = e => {
@@ -6974,7 +6974,7 @@
 				const t = Object(o.f)().getState(),
 					s = Object(h.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === m.Uc.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.Uc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.Uc.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === m.Yc.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.Yc.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.Yc.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(_, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -8009,7 +8009,7 @@
 					source: r.COMMUNITY_WIDGETS,
 					action: o.c.CLICK,
 					noun: n.SEE_MORE,
-					widget: Object(i.xb)(s, {
+					widget: Object(i.yb)(s, {
 						subredditId: e,
 						widgetKind: t
 					}),
@@ -8020,7 +8020,7 @@
 					action: o.c.CLICK,
 					noun: n.REREDDIT_PROMO,
 					post: i.K(s, e),
-					subreddit: i.kb(s),
+					subreddit: i.lb(s),
 					...t && {
 						banner: {
 							buttonText: t,
@@ -8310,7 +8310,7 @@
 						searchQueryId: re
 					} = Object(c.e)(e => Object(W.a)(e)),
 					oe = Object(c.e)(U.a),
-					ie = (Object(c.e)(e => Object(z.a)(e, q.yc)), Object(_.Z)(r)),
+					ie = (Object(c.e)(e => Object(z.a)(e, q.Cc)), Object(_.Z)(r)),
 					ae = Object(_.db)(r),
 					[ce, de] = Object(i.useState)(!1),
 					le = Object(l.a)(ie) || null,
@@ -8429,7 +8429,7 @@
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: n.D
-				}) === n.Bd
+				}) === n.Fd
 			}
 		},
 		"./src/reddit/selectors/experiments/commentBox.ts": function(e, t, s) {
@@ -8458,7 +8458,7 @@
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: n.A
-				}) === n.Bd
+				}) === n.Fd
 			}
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, s) {
@@ -8476,11 +8476,11 @@
 				c = s("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(a.h)(e) && Object(o.f)(e),
-					experimentName: n.hc
+					experimentName: n.ic
 				}), i.a),
 				l = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.h)(e) && Object(o.f)(e),
-					experimentName: n.gc
+					experimentName: n.hc
 				}), i.a),
 				m = Object(c.a)(d, l, (e, t) => e || t),
 				u = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -8495,10 +8495,10 @@
 				o = s("./node_modules/reselect/es/index.js");
 			const i = Object(o.a)(e => Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: n.hf
+				experimentName: n.lf
 			}), e => ({
-				isSubEnlarged: e === n.xf.Variant1 || e === n.xf.Variant3,
-				withCommunityDescription: e === n.xf.Variant2 || e === n.xf.Variant3
+				isSubEnlarged: e === n.Bf.Variant1 || e === n.Bf.Variant3,
+				withCommunityDescription: e === n.Bf.Variant2 || e === n.Bf.Variant3
 			}))
 		},
 		"./src/reddit/selectors/i18n/index.ts": function(e, t, s) {
@@ -8514,7 +8514,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(r.Zf)(t)
+					return Boolean(t) && !Object(r.dg)(t)
 				},
 				c = Object(n.a)(a, o.d, (e, t) => e && !t)
 		},
@@ -8569,4 +8569,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.bc0f5fdd5774649249b7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.9b47a1a315408a5fee47.js.map

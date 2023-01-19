@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.4607b2be4fd0469160ae.js
-// Retrieved at 1/18/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.c77eeb79fa3fb58858de.js
+// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ContributorRequestRequestModal"], {
 		"./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less": function(e, t, a) {
@@ -24,9 +24,9 @@
 		"./src/reddit/components/ContributorRequestFlow/RequestModal/index.tsx": function(e, t, a) {
 			"use strict";
 			a.r(t), a.d(t, "ModalHeader", (function() {
-				return S
-			})), a.d(t, "ModalTitle", (function() {
 				return j
+			})), a.d(t, "ModalTitle", (function() {
+				return k
 			})), a.d(t, "CloseIcon", (function() {
 				return N
 			}));
@@ -55,9 +55,9 @@
 				g = a("./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less"),
 				F = a.n(g),
 				I = a("./src/lib/lessComponent.tsx");
-			const k = I.a.wrapped(m.e, "ModalBody", F.a),
-				S = I.a.wrapped(m.i, "ModalHeader", F.a),
-				j = I.a.div("ModalTitle", F.a),
+			const S = I.a.wrapped(m.e, "ModalBody", F.a),
+				j = I.a.wrapped(m.i, "ModalHeader", F.a),
+				k = I.a.div("ModalTitle", F.a),
 				M = I.a.div("Title", F.a),
 				O = I.a.div("Description", F.a),
 				N = I.a.wrapped(m.b, "CloseIcon", F.a);
@@ -80,9 +80,9 @@
 					const e = this.props.subreddit.displayText,
 						t = this.props.subredditAboutInfo.disableContributorRequests,
 						a = this.props.theme ? Object(E.f)(this.props.theme.newCommunityTheme.widgetColors.sidebarWidgetHeaderColor) : "";
-					return o.a.createElement(k, {
+					return o.a.createElement(S, {
 						className: F.a.requestModal
-					}, o.a.createElement(S, null, o.a.createElement(C.a, null, o.a.createElement("div", null, o.a.createElement(j, {
+					}, o.a.createElement(j, null, o.a.createElement(C.a, null, o.a.createElement("div", null, o.a.createElement(k, {
 						style: {
 							color: a
 						}
@@ -294,16 +294,16 @@
 					source: e,
 					action: "click",
 					noun: "request_restricted_approval_button",
-					subreddit: r.kb(t)
+					subreddit: r.lb(t)
 				}),
 				n = e => t => ({
 					...r.o(t),
 					source: "request_restricted_approval_form",
 					action: "click",
 					noun: e,
-					subreddit: r.kb(t)
+					subreddit: r.lb(t)
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.4607b2be4fd0469160ae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.c77eeb79fa3fb58858de.js.map

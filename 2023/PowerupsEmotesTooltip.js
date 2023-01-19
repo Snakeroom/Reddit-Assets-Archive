@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.a1750296668d5f000e69.js
-// Retrieved at 1/18/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.cc4d9b850aed7feeeb61.js
+// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsEmotesTooltip"], {
 		"./src/reddit/actions/economics/powerups/helpers.ts": function(e, t, o) {
@@ -332,7 +332,7 @@
 				V = o.n(D);
 			const {
 				fbt: F
-			} = o("./node_modules/fbt/lib/FbtPublic.js"), M = e => {
+			} = o("./node_modules/fbt/lib/FbtPublic.js"), q = e => {
 				let {
 					emojiUrl: t,
 					onConfirm: o,
@@ -364,7 +364,7 @@
 				})
 			};
 			o("./node_modules/core-js/modules/web.dom.iterable.js");
-			const H = e => {
+			const M = e => {
 				let {
 					onEmoteClicked: t,
 					subredditId: o,
@@ -541,7 +541,7 @@
 					title: e.id,
 					onClick: () => t(e),
 					disabled: !d
-				}))))), b && i.a.createElement(M, {
+				}))))), b && i.a.createElement(q, {
 					emojiUrl: b.emoji.path,
 					onCancel: E,
 					onClose: E,
@@ -571,8 +571,8 @@
 					}
 				}))
 			};
-			var q = o("./src/reddit/components/RichTextEditor/emotes/Powerups/tooltip.m.less"),
-				K = o.n(q);
+			var H = o("./src/reddit/components/RichTextEditor/emotes/Powerups/tooltip.m.less"),
+				K = o.n(H);
 			const {
 				fbt: Q
 			} = o("./node_modules/fbt/lib/FbtPublic.js");
@@ -600,7 +600,7 @@
 					}), null)
 				}, i.a.createElement("div", {
 					className: K.a.body
-				}, i.a.createElement(H, {
+				}, i.a.createElement(M, {
 					subredditId: l.id,
 					subredditName: l.name,
 					onEmoteClicked: e => {
@@ -678,9 +678,9 @@
 					...i.o(e),
 					correlationId: Object(s.d)(s.a.PowerupsFlow, !1),
 					profile: i.T(e),
-					subreddit: i.kb(e),
+					subreddit: i.lb(e),
 					powerups: {
-						...i.pb(e),
+						...i.qb(e),
 						freeCount: t,
 						paidCount: o
 					}
@@ -697,7 +697,7 @@
 					noun: "add_custom_emojis",
 					...n(o),
 					powerups: {
-						...i.pb(o),
+						...i.qb(o),
 						emojiCount: e
 					}
 				}),
@@ -707,7 +707,7 @@
 					noun: "custom_emojis",
 					...n(o),
 					powerups: {
-						...i.pb(o),
+						...i.qb(o),
 						emojiCount: e
 					}
 				}),
@@ -720,7 +720,7 @@
 						noun: "custom_emojis",
 						...n(o),
 						powerups: {
-							...i.pb(o),
+							...i.qb(o),
 							emojiCount: e
 						}
 					})
@@ -729,7 +729,7 @@
 					source: "meta",
 					action: "open",
 					noun: "gif_tooltip",
-					subreddit: t ? i.lb(o, t) : void 0,
+					subreddit: t ? i.mb(o, t) : void 0,
 					...n(o),
 					correlationId: e
 				})
@@ -775,4 +775,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.a1750296668d5f000e69.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.cc4d9b850aed7feeeb61.js.map
