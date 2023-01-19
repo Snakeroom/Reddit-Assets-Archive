@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.37d7eb6a6d3316751392.js
-// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.522549ef298eaa48d7cd.js
+// Retrieved at 1/19/2023, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -876,9 +876,9 @@
 						body: i
 					}
 				};
-			var z = a("./src/lib/pageTitle/index.ts"),
-				Q = a("./src/lib/pageTitle/helpers.ts"),
-				J = a("./src/reddit/actions/login.ts"),
+			var J = a("./src/lib/pageTitle/index.ts"),
+				z = a("./src/lib/pageTitle/helpers.ts"),
+				Q = a("./src/reddit/actions/login.ts"),
 				X = a("./src/reddit/actions/meta.ts"),
 				Y = a("./src/reddit/actions/platform.ts"),
 				$ = a("./src/reddit/actions/toaster.ts"),
@@ -983,11 +983,11 @@
 						u = c.listings.postOrder.api.error[d],
 						p = c.listings.postOrder.api.pending[d],
 						h = Object(le.b)(c),
-						b = ae.I in e.queryParams && e.queryParams[ae.I].toUpperCase() || "",
+						b = ae.J in e.queryParams && e.queryParams[ae.J].toUpperCase() || "",
 						g = b in l.oc && l.oc[b],
-						v = z.f();
+						v = J.f();
 					if (p || m && !u && !t) return void(m && (a(Y.n({
-						title: h ? Object(Q.a)(c, v) : v
+						title: h ? Object(z.a)(c, v) : v
 					})), (null === (s = c.listings.postOrder.correlationIds) || void 0 === s ? void 0 : s[d]) && a(Y.p({
 						correlationId: c.listings.postOrder.correlationIds[d]
 					})), c.sidebarPromotedPosts.firstFetch || window.addEventListener("load", () => {
@@ -997,20 +997,20 @@
 						_ = Object(re.b)(f),
 						x = [Object(re.c)(f)];
 					await a(Pe(d, {
+						...r()(e.queryParams, ae.q),
 						...r()(e.queryParams, ae.p),
-						...r()(e.queryParams, ae.o),
 						limit: _,
 						sort: o,
 						statsdPathsForExperiments: x,
 						t: Object(ce.a)(o, g)
 					})), a(Y.n({
-						title: h ? Object(Q.a)(c, v) : v
+						title: h ? Object(z.a)(c, v) : v
 					})), Object(ge.c)(c, {
 						experimentEligibilitySelector: ge.a,
 						experimentName: "redesign_aa"
 					});
 					const E = Object(de.a)(c, {});
-					Object(de.e)(E) && a(Object(J.openRegisterModal)())
+					Object(de.e)(E) && a(Object(Q.openRegisterModal)())
 				}, Te = () => async (e, t) => {
 					var a, n;
 					const s = t();
@@ -1040,7 +1040,7 @@
 						m = i.platform.currentPage ? i.platform.currentPage.queryParams : {},
 						u = Object(he.a)(te.b, d, m),
 						p = i.listings.postOrder.loadMore[u],
-						h = m[ae.I] ? m[ae.I].toUpperCase() : "",
+						h = m[ae.J] ? m[ae.J].toUpperCase() : "",
 						b = h in l.oc && l.oc[h];
 					if (p) {
 						const e = i.listings.postOrder.api.pending[u],
@@ -1058,7 +1058,7 @@
 								h = {
 									after: p.token,
 									dist: p.dist,
-									...r()(m, ae.p),
+									...r()(m, ae.q),
 									isMobile: Object(c.e)(i.meta.userAgent),
 									limit: o,
 									sort: d,
@@ -1103,7 +1103,7 @@
 						} = e,
 						c = n.platform.currentPage ? n.platform.currentPage.queryParams : {},
 						i = Object(he.a)(te.b, r, c),
-						o = c[ae.I] ? c[ae.I].toUpperCase() : "",
+						o = c[ae.J] ? c[ae.J].toUpperCase() : "",
 						d = o in l.oc && l.oc[o],
 						m = Object(re.a)(n),
 						u = Object(re.b)(m);
@@ -2968,13 +2968,13 @@
 				G = a("./src/lib/makeApiRequest/index.ts"),
 				K = a("./src/lib/omitHeaders/index.ts"),
 				W = a("./src/reddit/constants/headers.ts");
-			const z = e => Object(G.a)(Object(K.a)(e, [W.a]), {
+			const J = e => Object(G.a)(Object(K.a)(e, [W.a]), {
 				endpoint: `${e.apiUrl}/api/multi/user/CommunityAdoptionBot/m/adoption_week/`,
 				method: B.ob.GET,
 				type: "json"
 			});
-			var Q = a("./src/reddit/components/SubredditAdoptionWidget/index.m.less"),
-				J = a.n(Q);
+			var z = a("./src/reddit/components/SubredditAdoptionWidget/index.m.less"),
+				Q = a.n(z);
 			const {
 				fbt: X
 			} = a("./node_modules/fbt/lib/FbtPublic.js"), Y = 3, $ = 30 * B.pb, ee = "SubredditAdoption";
@@ -2987,7 +2987,7 @@
 				async getSubredditForAdoption() {
 					let e = te.cachedData || Object(H.A)(q.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
 					if (!e || Date.now() - e.fetchedAt > $) {
-						const t = await z(this.props.apiContext());
+						const t = await J(this.props.apiContext());
 						t.ok && (e = {
 							subreddits: t.body.data.subreddits.map(e => e.name),
 							fetchedAt: Date.now()
@@ -3008,21 +3008,21 @@
 						subredditNames: e
 					} = this.state;
 					return e.length ? s.a.createElement("div", {
-						className: J.a.container
+						className: Q.a.container
 					}, s.a.createElement("div", {
-						className: J.a.main
+						className: Q.a.main
 					}, s.a.createElement("div", {
-						className: J.a.title
+						className: Q.a.title
 					}, s.a.createElement(U.b, {
-						className: J.a.icon
+						className: Q.a.icon
 					}), X._("International Subreddit Adoption Week", null, {
 						hk: "487Ffc"
 					})), s.a.createElement("div", {
-						className: J.a.description
+						className: Q.a.description
 					}, X._("{subreddits list} and more are looking for moderators!", [X._param("subreddits list", s.a.createElement("strong", null, e.map(V.d).join(", ") + (e.length > 1 ? "," : "")))], {
 						hk: "2Tb946"
 					}))), s.a.createElement(p.n, {
-						className: J.a.button,
+						className: Q.a.button,
 						to: `/r/${ee}?utm_source=reddit&utm_medium=fp_banner&utm_campaign=subreddit_adoption_week`
 					}, X._("Go Now", null, {
 						hk: "LCCmX"
@@ -5352,9 +5352,9 @@
 				G = a("./src/reddit/selectors/experiments/econ/avatarBanner.ts"),
 				K = a("./src/reddit/selectors/experiments/econ/marketplace.ts"),
 				W = a("./src/reddit/selectors/experiments/i18n/hideTrending.ts"),
-				z = a("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
-				Q = a("./src/reddit/selectors/experiments/onboarding.ts"),
-				J = a("./src/reddit/selectors/experiments/postActionBarAnimation.ts"),
+				J = a("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
+				z = a("./src/reddit/selectors/experiments/onboarding.ts"),
+				Q = a("./src/reddit/selectors/experiments/postActionBarAnimation.ts"),
 				X = a("./src/reddit/selectors/features/liveBar/index.ts"),
 				Y = a("./src/reddit/selectors/frontpage.ts"),
 				$ = a("./src/reddit/selectors/gold/marketplace/claimFlow.ts"),
@@ -5396,19 +5396,19 @@
 					return a.params.sort || n
 				}
 			}), be = Object(m.c)({
-				isCommentCountAnimationEnabled: J.d,
+				isCommentCountAnimationEnabled: Q.d,
 				shouldRenderLoggedOutHomeFeed: Y.b,
-				isVoteCountAnimationEnabled: J.h,
-				isCountAnimShadowTestEnabled: J.e,
+				isVoteCountAnimationEnabled: Q.h,
+				isCountAnimShadowTestEnabled: Q.e,
 				isLoggedIn: ne.S,
 				isPopular: B.H,
 				layout: B.U,
-				isBlockingInterstitialEnabled: z.b,
-				isBlockingInterstitialV2Enabled: z.c,
+				isBlockingInterstitialEnabled: J.b,
+				isBlockingInterstitialV2Enabled: J.c,
 				isTalkLiveBarEnabled: V.q,
 				isTrendingHiddenEnabled: W.a,
 				interestTopicRecommendations: ae.b,
-				reonboardingFlow: Q.j,
+				reonboardingFlow: z.j,
 				marketplaceFeedUnit: e => Object(K.a)(e) ? Object($.a)(e) : null,
 				merchandasingUnitAnnouncements: ee.a,
 				liveBarItems: X.a
@@ -5417,7 +5417,7 @@
 					queryParams: r,
 					sort: c
 				} = t;
-				const i = F.I in r && r[F.I].toUpperCase(),
+				const i = F.J in r && r[F.J].toUpperCase(),
 					o = "string" == typeof i && i in se.oc ? se.oc[i] : se.pc,
 					l = Object(b.a)(ce.b, c, r),
 					d = e;
@@ -5984,4 +5984,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.37d7eb6a6d3316751392.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.522549ef298eaa48d7cd.js.map

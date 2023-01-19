@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.d188d8944db0414ee783.js
-// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.f910edd42cd9f9e338af.js
+// Retrieved at 1/19/2023, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -965,7 +965,7 @@
 							subredditName: d = P.e,
 							wikiPageName: c,
 							wikiSubRoute: l
-						} = e, u = t[I.N], m = t[I.O], b = u ? Object(v.a)(u) : void 0, p = m ? Object(v.a)(m) : void 0, h = c === P.j, k = l === P.m.Revisions;
+						} = e, u = t[I.O], m = t[I.P], b = u ? Object(v.a)(u) : void 0, p = m ? Object(v.a)(m) : void 0, h = c === P.j, k = l === P.m.Revisions;
 						let C = !1,
 							y = !1;
 						if (n) {
@@ -3195,7 +3195,7 @@
 				} = e, R = async () => {
 					if (o ? await S() : await Object(m.q)(), l) {
 						const e = new URL(window.location.href);
-						e.searchParams.set(j.j, "1"), window.location.href = e.href
+						e.searchParams.set(j.k, "1"), window.location.href = e.href
 					} else window.location.reload()
 				};
 				switch (n) {
@@ -7482,7 +7482,7 @@
 			}
 			const O = 129,
 				w = Object(h.v)({
-					filterName: e => Object(h.Z)(e)[p.i],
+					filterName: e => Object(h.Z)(e)[p.j],
 					url: e => Object(h.fb)(e)
 				}),
 				N = Object(o.c)({
@@ -8365,7 +8365,7 @@
 				} = t;
 				if (!n && !s) return e;
 				const i = {};
-				n && (i[x.N] = Object(k.b)(n)), s && (i[x.O] = Object(k.b)(s));
+				n && (i[x.O] = Object(k.b)(n)), s && (i[x.P] = Object(k.b)(s));
 				const r = e.endsWith("/") ? e : `${e}/`;
 				return Object(f.a)(r, i)
 			}
@@ -9736,7 +9736,7 @@
 						displayText: s.fbt._("View page source", null, {
 							hk: "1d5vg5"
 						}),
-						href: `${d}/${o}/?${E.P}`,
+						href: `${d}/${o}/?${E.Q}`,
 						onClick: this.onViewPageSourceClick
 					}), n && a.a.createElement(_.b, {
 						className: N.a.row,
@@ -10845,7 +10845,7 @@
 					} = e, {
 						wikiSubRoute: r,
 						wikiPageName: a
-					} = n, o = s[x.N], d = s[x.O], c = x.P in s;
+					} = n, o = s[x.O], d = s[x.P], c = x.Q in s;
 					switch (r) {
 						case k.m.Create:
 						case k.m.Edit:
@@ -11165,4 +11165,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.d188d8944db0414ee783.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.f910edd42cd9f9e338af.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.78fd39e1de6480693a13.js
-// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.bcc0258354b666298b69.js
+// Retrieved at 1/19/2023, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UsernameConfirmationModals"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -317,7 +317,7 @@
 						kind: C.b.Button,
 						onClick: c,
 						priority: C.c.Plain
-					}, I())))
+					}, A())))
 				},
 				M = () => a.fbt._("Change username", null, {
 					hk: "3l2BGo"
@@ -337,10 +337,10 @@
 				T = () => a.fbt._("Yes, Keep this Name", null, {
 					hk: "4iElQQ"
 				}),
-				I = () => a.fbt._("Log in to a different account", null, {
+				A = () => a.fbt._("Log in to a different account", null, {
 					hk: "2BmtHB"
 				});
-			var A = n("./src/reddit/components/Settings/ChangeUsernameModal.tsx"),
+			var I = n("./src/reddit/components/Settings/ChangeUsernameModal.tsx"),
 				R = n("./src/reddit/components/Settings/modalIds.ts"),
 				L = n("./src/reddit/constants/parameters.ts"),
 				P = n("./src/reddit/contexts/ApiContext.tsx"),
@@ -382,7 +382,7 @@
 					},
 					logOutAndOpenLoginModal: () => {
 						const e = Object(l.a)(window.location.href, {
-							[L.z]: !0
+							[L.A]: !0
 						});
 						Object(d.a)(e, []), t.logoutUser()
 					},
@@ -463,7 +463,7 @@
 						},
 						onView: () => S(Object(K.L)()),
 						username: N
-					}), n && o.a.createElement(A.a, {
+					}), n && o.a.createElement(I.a, {
 						initialUsername: E || "",
 						isResponsive: h,
 						onClose: r,
@@ -576,10 +576,10 @@
 				T = () => a.fbt._("Great name! It's not taken, so it's all yours.", null, {
 					hk: "42rpS"
 				}),
-				I = () => a.fbt._("Sorry, this username is taken. Try another.", null, {
+				A = () => a.fbt._("Sorry, this username is taken. Try another.", null, {
 					hk: "2HkykK"
 				}),
-				A = () => a.fbt._("Username must be between 3 and 20 characters.", null, {
+				I = () => a.fbt._("Username must be between 3 and 20 characters.", null, {
 					hk: "1V72yV"
 				}),
 				R = () => a.fbt._("Sorry, something went wrong. Try again later.", null, {
@@ -596,7 +596,7 @@
 			class H extends c.a.Component {
 				constructor() {
 					super(...arguments), this.state = L, this.checkUsername = async e => e.length < B || e.length > w ? {
-						error: A(),
+						error: I(),
 						state: l.a.Invalid
 					} : e === this.props.initialUsername ? P : await this.validateUsername(e), this.validateUsername = async e => {
 						const {
@@ -605,7 +605,7 @@
 							username: e
 						});
 						return a.ok ? !0 === a.body ? P : {
-							error: I(),
+							error: A(),
 							state: l.a.Invalid
 						} : a.error && a.error.fields && a.error.fields[0] ? {
 							error: a.error.fields[0].msg,
@@ -978,4 +978,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.78fd39e1de6480693a13.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.bcc0258354b666298b69.js.map

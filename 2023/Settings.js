@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.832f0517b84622f8706c.js
-// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.bb95aaa9117bc0bf64a1.js
+// Retrieved at 1/19/2023, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -1621,8 +1621,8 @@
 						{
 							url: l
 						} = a,
-						c = Object(r.a)(l).get(M.d);
-					if (c && (t(Object(o.c)(Object(i.a)(l, [M.d]))), Object(R.a)(e))) {
+						c = Object(r.a)(l).get(M.e);
+					if (c && (t(Object(o.c)(Object(i.a)(l, [M.e]))), Object(R.a)(e))) {
 						const e = s.fbt._("Connected accounts", null, {
 							hk: "bdpfW"
 						});
@@ -12694,4 +12694,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.832f0517b84622f8706c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.bb95aaa9117bc0bf64a1.js.map

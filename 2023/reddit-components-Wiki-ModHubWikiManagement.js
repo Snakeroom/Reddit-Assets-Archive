@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.3fd9f20348fd6e710ab3.js
-// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.936cdfcd2c909660f7bc.js
+// Retrieved at 1/19/2023, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Wiki-ModHubWikiManagement"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1562,7 +1562,7 @@
 						wikiSubRoute: u,
 						wikiPageName: p,
 						pageName: b
-					} = n, g = i[l.N], k = i[l.O], f = l.P in i;
+					} = n, g = i[l.O], k = i[l.P], f = l.Q in i;
 					switch (u) {
 						case c.m.Create:
 						case c.m.Edit:
@@ -1680,7 +1680,7 @@
 				} = t;
 				if (!n && !i) return e;
 				const s = {};
-				n && (s[f.N] = Object(v.b)(n)), i && (s[f.O] = Object(v.b)(i));
+				n && (s[f.O] = Object(v.b)(n)), i && (s[f.P] = Object(v.b)(i));
 				const o = e.endsWith("/") ? e : `${e}/`;
 				return Object(k.a)(o, s)
 			}
@@ -3051,7 +3051,7 @@
 						displayText: i.fbt._("View page source", null, {
 							hk: "1d5vg5"
 						}),
-						href: `${d}/${r}/?${C.P}`,
+						href: `${d}/${r}/?${C.Q}`,
 						onClick: this.onViewPageSourceClick
 					}), n && a.a.createElement(_.b, {
 						className: y.a.row,
@@ -3450,4 +3450,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.3fd9f20348fd6e710ab3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.936cdfcd2c909660f7bc.js.map
