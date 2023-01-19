@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.f910edd42cd9f9e338af.js
-// Retrieved at 1/19/2023, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.82f05f5259b08d8519e4.js
+// Retrieved at 1/19/2023, 4:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -2947,24 +2947,24 @@
 					})
 				},
 				f = {
-					[i.U.Low]: s.fbt._("Low", null, {
+					[i.V.Low]: s.fbt._("Low", null, {
 						hk: "4k3iTe"
 					}),
-					[i.U.High]: s.fbt._("High (default)", null, {
+					[i.V.High]: s.fbt._("High (default)", null, {
 						hk: "2GOHsH"
 					}),
-					[i.U.All]: s.fbt._("All", null, {
+					[i.V.All]: s.fbt._("All", null, {
 						hk: "gl6gc"
 					})
 				},
 				x = {
-					[i.U.Low]: s.fbt._("Low (default)", null, {
+					[i.V.Low]: s.fbt._("Low (default)", null, {
 						hk: "2tqJd7"
 					}),
-					[i.U.High]: s.fbt._("High", null, {
+					[i.V.High]: s.fbt._("High", null, {
 						hk: "ABfkc"
 					}),
-					[i.U.All]: s.fbt._("All", null, {
+					[i.V.All]: s.fbt._("All", null, {
 						hk: "3bPDOM"
 					})
 				},
@@ -5329,7 +5329,7 @@
 					href: "https://www.redditinc.com/policies/impressum"
 				}, y._("Impressum", null, {
 					hk: "4cKXSI"
-				})), t === k.k.De && i.a.createElement(E, {
+				})), t === k.l.De && i.a.createElement(E, {
 					href: "https://reddit.zendesk.com/hc/de/requests/new?ticket_form_id=360000152352",
 					className: C.a.NoneCapitalizeLink
 				}, y._("Report NetzDG Content", null, {
@@ -5340,7 +5340,7 @@
 					href: "https://www.reddithelp.com"
 				}, y._("help", null, {
 					hk: "4lyYaD"
-				})), t === k.k.De && i.a.createElement(E, {
+				})), t === k.l.De && i.a.createElement(E, {
 					href: "https://reddit.zendesk.com/hc/de/articles/360045289772-Deutschland-Meldungen-nach-dem-Netzwerkdurchsetzungsgesetz-NetzDG-"
 				}, y._("Transparency report", null, {
 					hk: "3CgBdG"
@@ -5409,7 +5409,7 @@
 					href: "https://www.redditinc.com/policies/impressum"
 				}, y._("Impressum", null, {
 					hk: "4cKXSI"
-				})), e.countryCode === k.k.De && i.a.createElement(E, {
+				})), e.countryCode === k.l.De && i.a.createElement(E, {
 					href: "https://reddit.zendesk.com/hc/de/requests/new?ticket_form_id=360000152352",
 					className: C.a.NoneCapitalizeLink
 				}, y._("Report NetzDG Content", null, {
@@ -5420,7 +5420,7 @@
 					href: "https://www.reddithelp.com"
 				}, y._("help", null, {
 					hk: "4lyYaD"
-				})), e.countryCode === k.k.De && i.a.createElement(E, {
+				})), e.countryCode === k.l.De && i.a.createElement(E, {
 					href: "https://reddit.zendesk.com/hc/de/articles/360045289772-Deutschland-Meldungen-nach-dem-Netzwerkdurchsetzungsgesetz-NetzDG-"
 				}, y._("Transparency report", null, {
 					hk: "3CgBdG"
@@ -11165,4 +11165,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.f910edd42cd9f9e338af.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.82f05f5259b08d8519e4.js.map

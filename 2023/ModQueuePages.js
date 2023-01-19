@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.f1d4eccba7fb1aa97dd2.js
-// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.5080a1cd82cd5696e9a6.js
+// Retrieved at 1/19/2023, 4:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -917,16 +917,16 @@
 				y = n("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts"),
 				S = n("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts");
 			const I = {
-					[o.wb.Edited]: E.G.Edited,
-					[o.wb.Modqueue]: E.G.Mod,
-					[o.wb.Reports]: E.G.Reported,
-					[o.wb.Spam]: E.G.Removed,
-					[o.wb.Unmoderated]: E.G.Unmoderated
+					[o.wb.Edited]: E.H.Edited,
+					[o.wb.Modqueue]: E.H.Mod,
+					[o.wb.Reports]: E.H.Reported,
+					[o.wb.Spam]: E.H.Removed,
+					[o.wb.Unmoderated]: E.H.Unmoderated
 				},
 				w = {
-					comments: E.E.Comment,
-					links: E.E.Post,
-					chat_comments: E.E.ChatComment
+					comments: E.F.Comment,
+					links: E.F.Post,
+					chat_comments: E.F.ChatComment
 				};
 
 			function M(e) {
@@ -965,7 +965,7 @@
 					...!!s.profile && {
 						subredditIds: [s.profile]
 					},
-					sort: s.sort === f.a.MostReportedFirst ? E.F.SortReports : E.F.SortDate,
+					sort: s.sort === f.a.MostReportedFirst ? E.G.SortReports : E.G.SortDate,
 					...c,
 					includeAllModActivitySummaries: m && b,
 					includeModActivitySummariesByNames: m && !b,
@@ -2589,7 +2589,7 @@
 							tooltipId: e,
 							args: {
 								isModNotesView: !0,
-								modNotesFilter: x.z.Note
+								modNotesFilter: x.A.Note
 							}
 						})), _(Object(d.a)(n.id, n.authorId))
 					}, [n, O, g, _]);
@@ -8453,4 +8453,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.f1d4eccba7fb1aa97dd2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.5080a1cd82cd5696e9a6.js.map

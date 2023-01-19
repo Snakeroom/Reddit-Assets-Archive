@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.5450db00e31b51875b23.js
-// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.307501cc974e09c76f14.js
+// Retrieved at 1/19/2023, 4:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -278,12 +278,12 @@
 						});
 						if (!e.ok) return l(Object(j.f)({
 							kind: k.b.Error,
-							text: O.a[_.l.ServiceError]
+							text: O.a[_.m.ServiceError]
 						})), void c(!1);
 						const n = Object(O.h)(e.body);
 						if (null == n ? void 0 : n.errorState) return l(Object(j.f)({
 							kind: k.b.Error,
-							text: O.a[n.errorState.code] || O.a[_.l.ServiceError]
+							text: O.a[n.errorState.code] || O.a[_.m.ServiceError]
 						})), void c(!1);
 						(null == n ? void 0 : n.okState) && (window.location.href = `${f.a.redditUrl}/talk/${t}`)
 					}
@@ -790,8 +790,8 @@
 				$ = n("./src/reddit/actions/economics/helpers/index.ts"),
 				H = n("./src/reddit/actions/economics/predictions/index.ts"),
 				J = n("./src/reddit/actions/post.ts"),
-				X = n("./src/reddit/components/Econ/Prediction/hooks/useDelayedUpvoteAnimation.tsx"),
-				Q = n("./src/reddit/helpers/trackers/predictions.ts"),
+				Q = n("./src/reddit/components/Econ/Prediction/hooks/useDelayedUpvoteAnimation.tsx"),
+				X = n("./src/reddit/helpers/trackers/predictions.ts"),
 				D = n("./src/reddit/hooks/useToast.tsx"),
 				Y = n("./src/reddit/models/Vote/index.ts"),
 				W = n("./src/reddit/selectors/experiments/econ/index.ts");
@@ -832,7 +832,7 @@
 						u = Object(D.a)(),
 						{
 							startDelayedUpvoteAnimation: m
-						} = Object(X.a)(n.id),
+						} = Object(Q.a)(n.id),
 						{
 							id: p,
 							endsAt: b,
@@ -860,12 +860,12 @@
 							I || E || k(e.id)
 						},
 						predict: async t => {
-							if (t.currency === l.a.Coins && t.amount > s) return Object($.promptUserToBuyMoreCoins)(), void c(Q.b);
+							if (t.currency === l.a.Coins && t.amount > s) return Object($.promptUserToBuyMoreCoins)(), void c(X.b);
 							if (I) return u(z._("Error: Failed to make prediction. This prediction has already ended", null, {
 								hk: "22UWEr"
 							})), void k(null);
 							if (!p || !j) throw new Error("Invalid arguments, optionId and pollId must be strings");
-							O(!0), c(Object(Q.o)({
+							O(!0), c(Object(X.o)({
 								pollId: p,
 								selectedNumberTokens: t.amount
 							}));
@@ -1097,14 +1097,14 @@
 						...u,
 						variables: t
 					});
-					return !!Object(s.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(v.N.Talk)
+					return !!Object(s.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(v.O.Talk)
 				}, h = async (e, t) => {
 					var n, o;
 					const r = await Object(a.a)(e, {
 						...m,
 						variables: t
 					});
-					return !!Object(s.c)(r) && (null !== (o = null === (n = r.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(v.N.Talk)
+					return !!Object(s.c)(r) && (null !== (o = null === (n = r.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(v.O.Talk)
 				}, O = async e => {
 					var t;
 					const n = await Object(a.a)(e, l);
@@ -1132,26 +1132,26 @@
 						}
 					}
 				}), _ = () => Object(r.a)(), P = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile || e.data.startAudioRoom, I = {
-					[v.l.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+					[v.m.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[v.l.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
+					[v.m.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					}),
-					[v.l.RoomLimitExceeded]: o.fbt._("You can only create three talks at one time. To continue, close a talk you're not using.", null, {
+					[v.m.RoomLimitExceeded]: o.fbt._("You can only create three talks at one time. To continue, close a talk you're not using.", null, {
 						hk: "3zPx9X"
 					}),
-					[v.l.ConcurrentRoomLimitExceeded]: o.fbt._("Too many talks are happening right now. Try again later.", null, {
+					[v.m.ConcurrentRoomLimitExceeded]: o.fbt._("Too many talks are happening right now. Try again later.", null, {
 						hk: "2LYXJx"
 					}),
-					[v.l.SubredditRoomLimitExceeded]: o.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
+					[v.m.SubredditRoomLimitExceeded]: o.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
 						hk: "2mGf21"
 					})
 				}, C = e => e.data.prepareAudioRoom || e.data.prepareAudioRoomOnProfile, S = {
-					[v.P.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+					[v.Q.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[v.P.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
+					[v.Q.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					})
 				}, N = (e, t) => Object(a.a)(e, {
@@ -1323,4 +1323,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.5450db00e31b51875b23.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.307501cc974e09c76f14.js.map

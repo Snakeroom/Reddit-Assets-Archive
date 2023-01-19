@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.f9e33409b1851573a08c.js
-// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.5a0023b4411a4dcaf762.js
+// Retrieved at 1/19/2023, 4:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -969,7 +969,7 @@
 					}), r.a.createElement(j.a, {
 						thing: _e,
 						tooltipType: g ? te.f.Lightbox : void 0
-					}), _e.discussionType === ge.o.Chat && r.a.createElement(ye.a, {
+					}), _e.discussionType === ge.p.Chat && r.a.createElement(ye.a, {
 						postId: _e.id
 					})), Ke && !Me && r.a.createElement("div", null, r.a.createElement(I.a, {
 						className: Te.a.liveDiscussionIcon,
@@ -3295,4 +3295,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.f9e33409b1851573a08c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.5a0023b4411a4dcaf762.js.map

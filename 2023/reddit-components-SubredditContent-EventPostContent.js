@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.52cc7443d370b9b41eba.js
-// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.2618d3494d93d5ad2f12.js
+// Retrieved at 1/19/2023, 4:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-EventPostContent"], {
 		"./src/reddit/components/ClassicPost/index.tsx": function(e, t, s) {
@@ -29,7 +29,7 @@
 			const {
 				fbt: k
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), S = () => Math.floor(10 * Math.random()) + 1;
-			var P = e => {
+			var _ = e => {
 					let {
 						postId: t
 					} = e;
@@ -66,11 +66,11 @@
 						className: g.a.muteIcon
 					})))
 				},
-				_ = s("./src/reddit/components/Econ/Audio/UpcomingTalk/index.tsx");
+				y = s("./src/reddit/components/Econ/Audio/UpcomingTalk/index.tsx");
 			const {
-				fbt: y
+				fbt: P
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
-			var N = e => {
+			var w = e => {
 					let {
 						post: t
 					} = e;
@@ -79,7 +79,7 @@
 						postId: o,
 						author: n
 					} = t;
-					return Object(x.e)(v.n) && s.roomStatus === h.b.NotStarted ? r.a.createElement(_.a, {
+					return Object(x.e)(v.n) && s.roomStatus === h.b.NotStarted ? r.a.createElement(y.a, {
 						postId: o,
 						author: n,
 						roomId: s.roomId,
@@ -90,7 +90,7 @@
 						rel: "noopener noreferrer",
 						className: g.a.liveClassicContainer,
 						"data-testid": "audioroom-classic-live"
-					}, r.a.createElement(P, {
+					}, r.a.createElement(_, {
 						postId: o
 					})) : r.a.createElement("div", {
 						className: g.a.endedClassicContainer
@@ -98,7 +98,7 @@
 						className: g.a.muteIcon
 					}))
 				},
-				w = s("./src/reddit/components/EventPost/EventMetaHeader/index.tsx"),
+				N = s("./src/reddit/components/EventPost/EventMetaHeader/index.tsx"),
 				I = s("./src/reddit/components/ExpandoButton/index.tsx"),
 				A = s("./src/reddit/components/Flatlist/index.tsx"),
 				T = s("./src/reddit/components/JSAPIContainers/index.tsx"),
@@ -157,9 +157,9 @@
 					isCheckboxSelected: C,
 					isCurrentUserProfilePost: k,
 					isFrontpage: S,
-					isGalleryTileLayoutDefault: P,
-					isLoggedIn: _,
-					isOverlay: y,
+					isGalleryTileLayoutDefault: _,
+					isLoggedIn: y,
+					isOverlay: P,
 					imageGalleryCurrentItem: Y,
 					moderatorPermissions: oe,
 					modModeEnabled: de,
@@ -178,11 +178,11 @@
 					shouldShowInsightsButton: Ce,
 					subredditOrProfile: ke,
 					toggleCheckbox: Se,
-					userIsOp: Pe,
-					shouldShowGalleryTileOption: _e,
-					showPromotedCTA: ye,
-					showCTAExperimentDesign: Ne
-				} = e, we = Object(l.a)(), Ie = Object(c.a)(v);
+					userIsOp: _e,
+					shouldShowGalleryTileOption: ye,
+					showPromotedCTA: Pe,
+					showCTAExperimentDesign: we
+				} = e, Ne = Object(l.a)(), Ie = Object(c.a)(v);
 				Object(o.useEffect)(() => {
 					be && Ie !== v && be(he.id)
 				}, [v, be, he.id, Ie]);
@@ -195,7 +195,7 @@
 					Ge = Object(L.a)(he),
 					Ve = Object(F.c)(he),
 					Be = !!he.media && he.media.type === K.o.RTJSON,
-					Ue = Pe && Be,
+					Ue = _e && Be,
 					Qe = f && !Ee,
 					De = !!he.recommendationContext,
 					Je = {
@@ -203,8 +203,8 @@
 						post: he,
 						inSubredditOrProfile: f,
 						isCurrentUserProfilePost: k,
-						isOverlay: y,
-						shouldShowSubscribeButton: !(S && _) || De && _,
+						isOverlay: P,
+						shouldShowSubscribeButton: !(S && y) || De && y,
 						subredditOrProfile: ke
 					},
 					He = Object(n.t)(he, Y),
@@ -213,8 +213,8 @@
 					} = He,
 					[Ke, Xe] = Object(o.useState)(!1),
 					Ye = Object(o.useCallback)(() => {
-						Xe(!Ke), we(Object(se.d)(ve))
-					}, [Ke, ve, we]);
+						Xe(!Ke), Ne(Object(se.d)(ve))
+					}, [Ke, ve, Ne]);
 				let $e = r.a.createElement(X.a, {
 					className: ce.a.classicThumbnail,
 					crosspost: Te && he,
@@ -223,7 +223,7 @@
 					redditStyle: fe,
 					templatePlaceholderImage: Ae && Ae.postPlaceholderImage
 				});
-				Object(h.c)(he) && ($e = r.a.createElement(N, {
+				Object(h.c)(he) && ($e = r.a.createElement(w, {
 					post: he
 				}));
 				const qe = Object(ne.r)(he);
@@ -231,7 +231,7 @@
 					className: Object(a.a)(re.a.classicPostStyles, ce.a.postContainer, Object(te.a)(e), {
 						[ce.a.shouldShowOverflow]: Ce
 					}, t),
-					isOverlay: y,
+					isOverlay: P,
 					style: {
 						...Object(te.d)(e),
 						...Object(te.b)(Ae)
@@ -252,7 +252,7 @@
 					className: Ce ? ce.a.shouldUseRoundedBorder : void 0,
 					"data-click-id": "background",
 					flairStyleTemplate: Ae
-				}, r.a.createElement(w.a, {
+				}, r.a.createElement(N.a, {
 					className: ce.a.eventMeta,
 					post: he
 				}), r.a.createElement("div", {
@@ -282,7 +282,7 @@
 					redditStyle: fe,
 					size: J.b.Medium,
 					titleColor: Ae && Ae.postTitleColor,
-					isOverlay: y
+					isOverlay: P
 				}, he.source && !Te && !he.isSurveyAd && r.a.createElement(W.a, {
 					href: he.source.url,
 					isSponsored: he.isSponsored,
@@ -295,16 +295,16 @@
 				}), de && Re && Ve && r.a.createElement(M.a, {
 					onIgnoreReports: me,
 					reportable: he
-				}), ye && We && We.url && !he.isSurveyAd && r.a.createElement(u.a, {
-					ctaExperimentDesign: Ne && "classic",
+				}), Pe && We && We.url && !he.isSurveyAd && r.a.createElement(u.a, {
+					ctaExperimentDesign: we && "classic",
 					className: Object(a.a)(ce.a.adLinkWrapper, {
-						[ce.a.ctaExperiment]: Ne
+						[ce.a.ctaExperiment]: we
 					})
 				}, r.a.createElement(m.a, {
 					post: he,
 					adLinkContent: He,
-					ctaExperimentDesign: Ne && "classic"
-				})), he.discussionType === ae.o.Chat && r.a.createElement(ie.a, {
+					ctaExperimentDesign: we && "classic"
+				})), he.discussionType === ae.p.Chat && r.a.createElement(ie.a, {
 					postId: he.id
 				}), r.a.createElement("div", {
 					className: ce.a.flatlistContainer
@@ -329,7 +329,7 @@
 					hasModPostPerms: Re,
 					hasModFullPerms: Me,
 					hostPostData: E,
-					isOverlay: !!y,
+					isOverlay: !!P,
 					modModeEnabled: de,
 					onClickInsightsButton: Ye,
 					onIgnoreReports: me,
@@ -338,7 +338,7 @@
 					shouldShowInsightsButton: Ce,
 					showEditPost: Ue,
 					showEditFlair: je,
-					tooltipType: y ? H.f.Lightbox : void 0,
+					tooltipType: P ? H.f.Lightbox : void 0,
 					useFlatlistBreakpoints: Object(Q.b)({
 						editPost: !Fe,
 						hide: !Fe,
@@ -346,7 +346,7 @@
 						mute: !Fe,
 						save: !Fe
 					})
-				})), r.a.createElement(T.d, null))), Object(ee.a)(he, ce.a, ge, v, _e, P), ke && Ke && r.a.createElement(b.a, {
+				})), r.a.createElement(T.d, null))), Object(ee.a)(he, ce.a, ge, v, ye, _), ke && Ke && r.a.createElement(b.a, {
 					className: ce.a.creatorStatsContainer,
 					post: he,
 					subreddit: ke,
@@ -618,10 +618,10 @@
 				k = s("./src/redditGQL/types.ts");
 			const {
 				fbt: S
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), P = () => r.a.createElement("span", {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), _ = () => r.a.createElement("span", {
 				className: b.a.MicrophoneIcon
 			}, r.a.createElement(O, null));
-			var _ = e => {
+			var y = e => {
 				let {
 					roomId: t
 				} = e;
@@ -632,7 +632,7 @@
 					p = Object(g.a)();
 				return r.a.createElement(v.t, {
 					"data-testid": "audioroom-upcoming-start-talk",
-					Icon: i ? f.a : P,
+					Icon: i ? f.a : _,
 					iconClassName: i ? b.a.loadingIcon : "",
 					className: Object(a.a)(b.a.StartTalkButton, {
 						[b.a.isNightMode]: s
@@ -655,19 +655,19 @@
 						});
 						if (!e.ok) return l(Object(E.f)({
 							kind: C.b.Error,
-							text: j.a[k.l.ServiceError]
+							text: j.a[k.m.ServiceError]
 						})), void d(!1);
 						const s = Object(j.h)(e.body);
 						if (null == s ? void 0 : s.errorState) return l(Object(E.f)({
 							kind: C.b.Error,
-							text: j.a[s.errorState.code] || j.a[k.l.ServiceError]
+							text: j.a[s.errorState.code] || j.a[k.m.ServiceError]
 						})), void d(!1);
 						(null == s ? void 0 : s.okState) && (window.location.href = `${x.a.redditUrl}/talk/${t}`)
 					}
 				})
 			};
 			const {
-				fbt: y
+				fbt: P
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 			t.a = e => {
 				let {
@@ -719,11 +719,11 @@
 					className: b.a.upcomingTalkInfo
 				}, r.a.createElement("div", {
 					className: b.a.upcomingTalkLabel
-				}, y._("Upcoming Talk", null, {
+				}, P._("Upcoming Talk", null, {
 					hk: "464Rq3"
 				})), r.a.createElement("div", {
 					className: b.a.upcomingTalkHost
-				}, "u/", t), O && p && r.a.createElement(_, {
+				}, "u/", t), O && p && r.a.createElement(y, {
 					roomId: p
 				}))))
 			}
@@ -759,7 +759,7 @@
 					hasData: E.b,
 					endCursor: E.a
 				}),
-				P = Object(a.b)(S, (e, t) => {
+				_ = Object(a.b)(S, (e, t) => {
 					let {
 						subredditName: s
 					} = t;
@@ -772,7 +772,7 @@
 						}
 					}
 				});
-			class _ extends n.a.PureComponent {
+			class y extends n.a.PureComponent {
 				renderEmptyState() {
 					const {
 						subredditName: e
@@ -838,7 +838,7 @@
 					})), !t && e ? Object(b.a)() : this.renderBody(), t && e && Object(b.a)(1)))
 				}
 			}
-			t.default = P(Object(x.c)(_))
+			t.default = _(Object(x.c)(y))
 		},
 		"./src/reddit/connectors/ClassicPost/index.tsx": function(e, t, s) {
 			"use strict";
@@ -920,13 +920,13 @@
 			})), s.d(t, "h", (function() {
 				return S
 			})), s.d(t, "a", (function() {
-				return P
-			})), s.d(t, "i", (function() {
 				return _
-			})), s.d(t, "b", (function() {
+			})), s.d(t, "i", (function() {
 				return y
+			})), s.d(t, "b", (function() {
+				return P
 			})), s.d(t, "l", (function() {
-				return N
+				return w
 			}));
 			var o = s("./node_modules/fbt/lib/FbtPublic.js"),
 				r = s("./node_modules/uuid/dist/esm-browser/v4.js"),
@@ -952,14 +952,14 @@
 						...u,
 						variables: t
 					});
-					return !!Object(a.c)(s) && (s.body.data.subredditInfoById.allowedPostTypes || []).includes(v.N.Talk)
+					return !!Object(a.c)(s) && (s.body.data.subredditInfoById.allowedPostTypes || []).includes(v.O.Talk)
 				}, O = async (e, t) => {
 					var s, o;
 					const r = await Object(n.a)(e, {
 						...m,
 						variables: t
 					});
-					return !!Object(a.c)(r) && (null !== (o = null === (s = r.body.data.profileByName) || void 0 === s ? void 0 : s.allowedPostTypes) && void 0 !== o ? o : []).includes(v.N.Talk)
+					return !!Object(a.c)(r) && (null !== (o = null === (s = r.body.data.profileByName) || void 0 === s ? void 0 : s.allowedPostTypes) && void 0 !== o ? o : []).includes(v.O.Talk)
 				}, j = async e => {
 					var t;
 					const s = await Object(n.a)(e, l);
@@ -986,30 +986,30 @@
 							subredditId: t.id
 						}
 					}
-				}), k = () => Object(r.a)(), S = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile || e.data.startAudioRoom, P = {
-					[v.l.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+				}), k = () => Object(r.a)(), S = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile || e.data.startAudioRoom, _ = {
+					[v.m.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[v.l.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
+					[v.m.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					}),
-					[v.l.RoomLimitExceeded]: o.fbt._("You can only create three talks at one time. To continue, close a talk you're not using.", null, {
+					[v.m.RoomLimitExceeded]: o.fbt._("You can only create three talks at one time. To continue, close a talk you're not using.", null, {
 						hk: "3zPx9X"
 					}),
-					[v.l.ConcurrentRoomLimitExceeded]: o.fbt._("Too many talks are happening right now. Try again later.", null, {
+					[v.m.ConcurrentRoomLimitExceeded]: o.fbt._("Too many talks are happening right now. Try again later.", null, {
 						hk: "2LYXJx"
 					}),
-					[v.l.SubredditRoomLimitExceeded]: o.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
+					[v.m.SubredditRoomLimitExceeded]: o.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
 						hk: "2mGf21"
 					})
-				}, _ = e => e.data.prepareAudioRoom || e.data.prepareAudioRoomOnProfile, y = {
-					[v.P.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+				}, y = e => e.data.prepareAudioRoom || e.data.prepareAudioRoomOnProfile, P = {
+					[v.Q.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[v.P.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
+					[v.Q.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					})
-				}, N = (e, t) => Object(n.a)(e, {
+				}, w = (e, t) => Object(n.a)(e, {
 					...h,
 					variables: t
 				})
@@ -1269,4 +1269,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.52cc7443d370b9b41eba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.2618d3494d93d5ad2f12.js.map

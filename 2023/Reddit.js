@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.850f19f5731003f864bc.js
-// Retrieved at 1/19/2023, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.1a876df271fa6811143c.js
+// Retrieved at 1/19/2023, 4:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -6637,7 +6637,7 @@
 				},
 				m = (e, t) => {
 					const n = Object(r.d)(e, t),
-						s = (null == n ? void 0 : n.contentType) === c.u.Chat,
+						s = (null == n ? void 0 : n.contentType) === c.v.Chat,
 						a = Object(r.b)(e).indexOf(t),
 						o = Object(r.c)(e),
 						i = o.indexOf(t),
@@ -14786,7 +14786,7 @@
 					l = Object(xe.e)(Mm.b),
 					d = Object(ji.a)(),
 					p = null === (a = Object(xe.e)(e => Object(wm.a)(e, {
-						experience: Im.ab.LiveChatVideoEdu
+						experience: Im.bb.LiveChatVideoEdu
 					}))) || void 0 === a ? void 0 : a.value,
 					b = Object(u.useMemo)(() => l === Nm.b.IS_SHOWING, [l]),
 					h = Object(u.useMemo)(() => b ? (e => ({
@@ -21028,12 +21028,12 @@
 						case a.a.Chat:
 							return t.filter(t => {
 								var n;
-								return (null === (n = p(e, t)) || void 0 === n ? void 0 : n.contentType) === c.u.Chat
+								return (null === (n = p(e, t)) || void 0 === n ? void 0 : n.contentType) === c.v.Chat
 							});
 						case a.a.Talk:
 							return t.filter(t => {
 								var n;
-								return (null === (n = p(e, t)) || void 0 === n ? void 0 : n.contentType) === c.u.Talk
+								return (null === (n = p(e, t)) || void 0 === n ? void 0 : n.contentType) === c.v.Talk
 							});
 						case a.a.All:
 						default:
@@ -21324,4 +21324,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.850f19f5731003f864bc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.1a876df271fa6811143c.js.map

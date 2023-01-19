@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.d7488eb8c2b713488120.js
-// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.3fda235b41aca664bc19.js
+// Retrieved at 1/19/2023, 4:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, s) {},
@@ -1302,9 +1302,9 @@
 				K = s("./src/reddit/helpers/trackers/commentsChat.ts"),
 				W = s("./src/reddit/selectors/experiments/chat.ts"),
 				V = s("./src/redditGQL/types.ts");
-			const q = "chat_submission_from_rte",
-				G = 15,
-				Y = 15e3,
+			const G = "chat_submission_from_rte",
+				Y = 15,
+				q = 15e3,
 				z = Object(H.v)(),
 				$ = Object(d.b)(() => Object(c.c)({
 					draft: A.i,
@@ -1414,7 +1414,7 @@
 							};
 							this.cleanInputForm(), s(n, w.i.RICH_TEXT, e, t), setTimeout(() => this.focusOnForm(), 50), this.isAllowedToCreateLiveChatAssociation() && this.associationTimerId && !this.state.messageSent && (this.props.createChatTabAssociation({
 								postId: this.props.postId,
-								engagementType: V.q.Participated
+								engagementType: V.r.Participated
 							}), clearTimeout(this.associationTimerId), this.setState({
 								messageSent: !0,
 								hasCreatedLiveChatAssociation: !0
@@ -1443,11 +1443,11 @@
 					this.isAllowedToCreateLiveChatAssociation() && (this.associationTimerId = setTimeout(() => {
 						this.props.createChatTabAssociation({
 							postId: this.props.postId,
-							engagementType: V.q.Previewed
+							engagementType: V.r.Previewed
 						}), this.setState({
 							hasCreatedLiveChatAssociation: !0
 						}), !this.isEmbeddedLiveChat() && this.props.fetchLiveChatPosts()
-					}, Y), window.addEventListener("beforeunload", this.showLiveChatTooltipIfCreatedAssociation))
+					}, q), window.addEventListener("beforeunload", this.showLiveChatTooltipIfCreatedAssociation))
 				}
 				UNSAFE_componentWillReceiveProps(e) {
 					!this.props.isEditing && this.props.draft && this.props.draft.rteState && e.draft && null === e.draft.rteState && this.cleanInputForm(), this.isReplyCommentChanged(e) && e.replyComment && this.focusOnForm(), e.hasError !== this.props.hasError && this.setState({
@@ -1487,7 +1487,7 @@
 						isLiveChatThreadingEnabled: h
 					} = this.props, p = n.fbt._("Send a message (use the Enter key)", null, {
 						hk: "3yojgj"
-					}), b = r === P.L.RATELIMIT && parseInt(null === (e = null == o ? void 0 : o[0]) || void 0 === e ? void 0 : e.replace(/\D/g, "")) || G;
+					}), b = r === P.L.RATELIMIT && parseInt(null === (e = null == o ? void 0 : o[0]) || void 0 === e ? void 0 : e.replace(/\D/g, "")) || Y;
 					return h && (null == u ? void 0 : u.isDeleted) ? null : i.a.createElement("div", {
 						className: Object(l.a)(F.a.FormWrapper, {
 							[F.a.v2]: t,
@@ -1527,7 +1527,7 @@
 						focusableContentRTEClassName: Object(l.a)({
 							[F.a.V2ChatPostFocusableContent]: t
 						}),
-						dataTestId: q,
+						dataTestId: G,
 						editorType: O.a.Comment,
 						initialMinHeight: 20,
 						initialHeight: void 0,
@@ -1914,4 +1914,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.d7488eb8c2b713488120.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.3fda235b41aca664bc19.js.map

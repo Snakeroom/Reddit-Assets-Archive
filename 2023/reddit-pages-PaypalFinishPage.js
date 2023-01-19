@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.6f3e6283db444683dbca.js
-// Retrieved at 1/18/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.152ca6d13fe7158b8957.js
+// Retrieved at 1/19/2023, 4:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-PaypalFinishPage"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -452,7 +452,7 @@
 						const y = i();
 						let v, j, E = "";
 						try {
-							E = await e(O(n, o, a, c, g.J.Stripe))
+							E = await e(O(n, o, a, c, g.K.Stripe))
 						} catch (S) {
 							return l.c.captureException(S), void(S.message && e(Object(f.stripeApiError)(S.message)))
 						}
@@ -508,7 +508,7 @@
 						var m;
 						let j = "";
 						try {
-							j = await e(O(t, r, n, o, g.J.Paypal))
+							j = await e(O(t, r, n, o, g.K.Paypal))
 						} catch (C) {
 							return l.c.captureException(C), C.message && e(Object(f.paypalApiError)(C.message)), null
 						}
@@ -1036,4 +1036,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.6f3e6283db444683dbca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.152ca6d13fe7158b8957.js.map

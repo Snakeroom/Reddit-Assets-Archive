@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.278772262938ce5fc06b.js
-// Retrieved at 1/19/2023, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.1cdbf3f02719c00473b2.js
+// Retrieved at 1/19/2023, 4:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -4046,7 +4046,7 @@
 					href: "https://www.redditinc.com/policies/impressum"
 				}, I._("Impressum", null, {
 					hk: "4cKXSI"
-				})), t === g.k.De && n.a.createElement(O, {
+				})), t === g.l.De && n.a.createElement(O, {
 					href: "https://reddit.zendesk.com/hc/de/requests/new?ticket_form_id=360000152352",
 					className: C.a.NoneCapitalizeLink
 				}, I._("Report NetzDG Content", null, {
@@ -4057,7 +4057,7 @@
 					href: "https://www.reddithelp.com"
 				}, I._("help", null, {
 					hk: "4lyYaD"
-				})), t === g.k.De && n.a.createElement(O, {
+				})), t === g.l.De && n.a.createElement(O, {
 					href: "https://reddit.zendesk.com/hc/de/articles/360045289772-Deutschland-Meldungen-nach-dem-Netzwerkdurchsetzungsgesetz-NetzDG-"
 				}, I._("Transparency report", null, {
 					hk: "3CgBdG"
@@ -4126,7 +4126,7 @@
 					href: "https://www.redditinc.com/policies/impressum"
 				}, I._("Impressum", null, {
 					hk: "4cKXSI"
-				})), e.countryCode === g.k.De && n.a.createElement(O, {
+				})), e.countryCode === g.l.De && n.a.createElement(O, {
 					href: "https://reddit.zendesk.com/hc/de/requests/new?ticket_form_id=360000152352",
 					className: C.a.NoneCapitalizeLink
 				}, I._("Report NetzDG Content", null, {
@@ -4137,7 +4137,7 @@
 					href: "https://www.reddithelp.com"
 				}, I._("help", null, {
 					hk: "4lyYaD"
-				})), e.countryCode === g.k.De && n.a.createElement(O, {
+				})), e.countryCode === g.l.De && n.a.createElement(O, {
 					href: "https://reddit.zendesk.com/hc/de/articles/360045289772-Deutschland-Meldungen-nach-dem-Netzwerkdurchsetzungsgesetz-NetzDG-"
 				}, I._("Transparency report", null, {
 					hk: "3CgBdG"
@@ -6135,4 +6135,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.278772262938ce5fc06b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.1cdbf3f02719c00473b2.js.map

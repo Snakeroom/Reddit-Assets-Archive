@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.9adc9b1b6818b9768eec.js
-// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.414834f7bedd88a99e3d.js
+// Retrieved at 1/19/2023, 4:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1151,7 +1151,7 @@
 					href: "https://www.redditinc.com/policies/impressum"
 				}, S._("Impressum", null, {
 					hk: "4cKXSI"
-				})), t === x.k.De && n.a.createElement(E, {
+				})), t === x.l.De && n.a.createElement(E, {
 					href: "https://reddit.zendesk.com/hc/de/requests/new?ticket_form_id=360000152352",
 					className: _.a.NoneCapitalizeLink
 				}, S._("Report NetzDG Content", null, {
@@ -1162,7 +1162,7 @@
 					href: "https://www.reddithelp.com"
 				}, S._("help", null, {
 					hk: "4lyYaD"
-				})), t === x.k.De && n.a.createElement(E, {
+				})), t === x.l.De && n.a.createElement(E, {
 					href: "https://reddit.zendesk.com/hc/de/articles/360045289772-Deutschland-Meldungen-nach-dem-Netzwerkdurchsetzungsgesetz-NetzDG-"
 				}, S._("Transparency report", null, {
 					hk: "3CgBdG"
@@ -1231,7 +1231,7 @@
 					href: "https://www.redditinc.com/policies/impressum"
 				}, S._("Impressum", null, {
 					hk: "4cKXSI"
-				})), e.countryCode === x.k.De && n.a.createElement(E, {
+				})), e.countryCode === x.l.De && n.a.createElement(E, {
 					href: "https://reddit.zendesk.com/hc/de/requests/new?ticket_form_id=360000152352",
 					className: _.a.NoneCapitalizeLink
 				}, S._("Report NetzDG Content", null, {
@@ -1242,7 +1242,7 @@
 					href: "https://www.reddithelp.com"
 				}, S._("help", null, {
 					hk: "4lyYaD"
-				})), e.countryCode === x.k.De && n.a.createElement(E, {
+				})), e.countryCode === x.l.De && n.a.createElement(E, {
 					href: "https://reddit.zendesk.com/hc/de/articles/360045289772-Deutschland-Meldungen-nach-dem-Netzwerkdurchsetzungsgesetz-NetzDG-"
 				}, S._("Transparency report", null, {
 					hk: "3CgBdG"
@@ -3076,4 +3076,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.9adc9b1b6818b9768eec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.414834f7bedd88a99e3d.js.map

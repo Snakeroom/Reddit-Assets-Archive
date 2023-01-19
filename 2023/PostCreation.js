@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.7bce9a8ef6db5d0e19f6.js
-// Retrieved at 1/19/2023, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.f437e17047761b7a383d.js
+// Retrieved at 1/19/2023, 4:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit~StandalonePostPage", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -5064,7 +5064,7 @@
 							tooltipId: e,
 							args: {
 								isModNotesView: !0,
-								modNotesFilter: g.z.Note
+								modNotesFilter: g.A.Note
 							}
 						})), y(Object(c.a)(n.id, n.authorId))
 					}, [n, C, E, y]);
@@ -19963,7 +19963,7 @@
 					href: "https://www.redditinc.com/policies/impressum"
 				}, x._("Impressum", null, {
 					hk: "4cKXSI"
-				})), t === E.k.De && r.a.createElement(O, {
+				})), t === E.l.De && r.a.createElement(O, {
 					href: "https://reddit.zendesk.com/hc/de/requests/new?ticket_form_id=360000152352",
 					className: y.a.NoneCapitalizeLink
 				}, x._("Report NetzDG Content", null, {
@@ -19974,7 +19974,7 @@
 					href: "https://www.reddithelp.com"
 				}, x._("help", null, {
 					hk: "4lyYaD"
-				})), t === E.k.De && r.a.createElement(O, {
+				})), t === E.l.De && r.a.createElement(O, {
 					href: "https://reddit.zendesk.com/hc/de/articles/360045289772-Deutschland-Meldungen-nach-dem-Netzwerkdurchsetzungsgesetz-NetzDG-"
 				}, x._("Transparency report", null, {
 					hk: "3CgBdG"
@@ -20043,7 +20043,7 @@
 					href: "https://www.redditinc.com/policies/impressum"
 				}, x._("Impressum", null, {
 					hk: "4cKXSI"
-				})), e.countryCode === E.k.De && r.a.createElement(O, {
+				})), e.countryCode === E.l.De && r.a.createElement(O, {
 					href: "https://reddit.zendesk.com/hc/de/requests/new?ticket_form_id=360000152352",
 					className: y.a.NoneCapitalizeLink
 				}, x._("Report NetzDG Content", null, {
@@ -20054,7 +20054,7 @@
 					href: "https://www.reddithelp.com"
 				}, x._("help", null, {
 					hk: "4lyYaD"
-				})), e.countryCode === E.k.De && r.a.createElement(O, {
+				})), e.countryCode === E.l.De && r.a.createElement(O, {
 					href: "https://reddit.zendesk.com/hc/de/articles/360045289772-Deutschland-Meldungen-nach-dem-Netzwerkdurchsetzungsgesetz-NetzDG-"
 				}, x._("Transparency report", null, {
 					hk: "3CgBdG"
@@ -25251,14 +25251,14 @@
 						...u,
 						variables: t
 					});
-					return !!Object(i.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(g.N.Talk)
+					return !!Object(i.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(g.O.Talk)
 				}, C = async (e, t) => {
 					var n, o;
 					const r = await Object(s.a)(e, {
 						...m,
 						variables: t
 					});
-					return !!Object(i.c)(r) && (null !== (o = null === (n = r.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(g.N.Talk)
+					return !!Object(i.c)(r) && (null !== (o = null === (n = r.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(g.O.Talk)
 				}, y = async e => {
 					var t;
 					const n = await Object(s.a)(e, l);
@@ -25286,26 +25286,26 @@
 						}
 					}
 				}), _ = () => Object(r.a)(), k = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile || e.data.startAudioRoom, j = {
-					[g.l.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+					[g.m.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[g.l.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
+					[g.m.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					}),
-					[g.l.RoomLimitExceeded]: o.fbt._("You can only create three talks at one time. To continue, close a talk you're not using.", null, {
+					[g.m.RoomLimitExceeded]: o.fbt._("You can only create three talks at one time. To continue, close a talk you're not using.", null, {
 						hk: "3zPx9X"
 					}),
-					[g.l.ConcurrentRoomLimitExceeded]: o.fbt._("Too many talks are happening right now. Try again later.", null, {
+					[g.m.ConcurrentRoomLimitExceeded]: o.fbt._("Too many talks are happening right now. Try again later.", null, {
 						hk: "2LYXJx"
 					}),
-					[g.l.SubredditRoomLimitExceeded]: o.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
+					[g.m.SubredditRoomLimitExceeded]: o.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
 						hk: "2mGf21"
 					})
 				}, S = e => e.data.prepareAudioRoom || e.data.prepareAudioRoomOnProfile, T = {
-					[g.P.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+					[g.Q.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[g.P.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
+					[g.Q.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					})
 				}, w = (e, t) => Object(s.a)(e, {
@@ -30764,18 +30764,18 @@
 								background: null,
 								theme: l
 							}),
-							platform: B.b.Twilio,
+							platform: B.c.Twilio,
 							topicIds: u.map(e => e.id),
 							sendReplyNotifications: h
 						});
 						if (!e.ok) return E(Object(O.f)({
 							kind: R.b.Error,
-							text: w.b[B.P.ServiceError]
+							text: w.b[B.Q.ServiceError]
 						})), void v(!1);
 						const t = Object(w.i)(e.body);
 						if (null == t ? void 0 : t.errorState) return E(Object(O.f)({
 							kind: R.b.Error,
-							text: w.b[t.errorState.code] || w.b[B.P.ServiceError]
+							text: w.b[t.errorState.code] || w.b[B.Q.ServiceError]
 						})), void v(!1);
 						if ((null == t ? void 0 : t.okState) && t.okState.postId && i)
 							if (i.type === N.g.User) {
@@ -30794,18 +30794,18 @@
 								background: null,
 								theme: l
 							}),
-							platform: B.b.Twilio,
+							platform: B.c.Twilio,
 							topicIds: u.map(e => e.id),
 							sendReplyNotifications: h
 						});
 						if (!e.ok) return E(Object(O.f)({
 							kind: R.b.Error,
-							text: w.a[B.l.ServiceError]
+							text: w.a[B.m.ServiceError]
 						})), void v(!1);
 						const t = Object(w.h)(e.body);
 						if (null == t ? void 0 : t.errorState) return E(Object(O.f)({
 							kind: R.b.Error,
-							text: w.a[t.errorState.code] || w.a[B.l.ServiceError]
+							text: w.a[t.errorState.code] || w.a[B.m.ServiceError]
 						})), void v(!1);
 						(null == t ? void 0 : t.okState) && (window.location.href = `${x.a.redditUrl}/talk/${t.okState.roomId}`)
 					}, H = Object(o.useMemo)(() => c.length > 0, [c]);
@@ -39725,4 +39725,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.7bce9a8ef6db5d0e19f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.f437e17047761b7a383d.js.map

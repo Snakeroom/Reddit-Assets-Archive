@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.bb95aaa9117bc0bf64a1.js
-// Retrieved at 1/19/2023, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.3761a54d48bce6af647c.js
+// Retrieved at 1/19/2023, 4:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -863,7 +863,7 @@
 						const h = l();
 						let v, _, j = "";
 						try {
-							j = await e(k(s, o, a, r, g.J.Stripe))
+							j = await e(k(s, o, a, r, g.K.Stripe))
 						} catch (E) {
 							return u.c.captureException(E), void(E.message && e(Object(p.stripeApiError)(E.message)))
 						}
@@ -919,7 +919,7 @@
 						var b;
 						let _ = "";
 						try {
-							_ = await e(k(t, n, s, o, g.J.Paypal))
+							_ = await e(k(t, n, s, o, g.K.Paypal))
 						} catch (x) {
 							return u.c.captureException(x), x.message && e(Object(p.paypalApiError)(x.message)), null
 						}
@@ -1721,7 +1721,7 @@
 						const e = null == l ? void 0 : l.trim();
 						if (!(e && Object(m.g)(e) === m.d.Valid)) throw new Error(o.f);
 						t = e, n = null == i ? void 0 : i.trim()
-					} else if (a.socialLinkType === h.T.Reddit) {
+					} else if (a.socialLinkType === h.U.Reddit) {
 						const e = null == r ? void 0 : r.trim();
 						if (!(e && Object(u.f)(e) && e && e.length >= o.h && !/\s/.test(e))) throw new Error(o.e);
 						s = e
@@ -5929,81 +5929,81 @@
 					}),
 					i = o.i;
 				switch (t) {
-					case s.T.BuyMeACoffee:
+					case s.U.BuyMeACoffee:
 						r = a._("Buy Me a Coffee", null, {
 							hk: "ZTbP7"
 						});
 						break;
-					case s.T.CashApp:
+					case s.U.CashApp:
 						r = a._("Cash App", null, {
 							hk: "1aorWN"
 						});
 						break;
-					case s.T.Custom:
+					case s.U.Custom:
 						r = a._("Custom URL", null, {
 							hk: "2gveOb"
 						}), i = o.c, n = a._("https://website.com", null, {
 							hk: "1Kp5fF"
 						});
 						break;
-					case s.T.Reddit:
+					case s.U.Reddit:
 						i = a._("r/community, u/user", null, {
 							hk: "45oRo"
 						});
 						break;
-					case s.T.Discord:
+					case s.U.Discord:
 						i = o.c, n = a._("https://discord.com", null, {
 							hk: "6gcLP"
 						});
 						break;
-					case s.T.Facebook:
+					case s.U.Facebook:
 						i = o.c, n = a._("https://facebook.com", null, {
 							hk: "2v99jB"
 						});
 						break;
-					case s.T.Kickstarter:
+					case s.U.Kickstarter:
 						i = o.c, n = a._("https://kickstarter.com", null, {
 							hk: "132LC7"
 						});
 						break;
-					case s.T.Shopify:
+					case s.U.Shopify:
 						i = o.c, n = a._("https://shopify.com", null, {
 							hk: "2X1G4f"
 						});
 						break;
-					case s.T.Spotify:
+					case s.U.Spotify:
 						i = o.c, n = a._("https://spotify.com", null, {
 							hk: "3dZORp"
 						});
 						break;
-					case s.T.Substack:
+					case s.U.Substack:
 						i = o.c, n = a._("https://substack.com", null, {
 							hk: "1zQgL1"
 						});
 						break;
-					case s.T.Youtube:
+					case s.U.Youtube:
 						r = a._("YouTube", null, {
 							hk: "12AQG6"
 						}), i = o.c, n = a._("https://youtube.com", null, {
 							hk: "4FZQ2O"
 						});
 						break;
-					case s.T.Onlyfans:
+					case s.U.Onlyfans:
 						r = a._("OnlyFans", null, {
 							hk: "1JRN4C"
 						});
 						break;
-					case s.T.Paypal:
+					case s.U.Paypal:
 						r = a._("PayPal", null, {
 							hk: "3n7Il"
 						});
 						break;
-					case s.T.Soundcloud:
+					case s.U.Soundcloud:
 						r = a._("SoundCloud", null, {
 							hk: "34Xo4u"
 						});
 						break;
-					case s.T.Tiktok:
+					case s.U.Tiktok:
 						r = a._("TikTok", null, {
 							hk: "tajib"
 						})
@@ -6015,16 +6015,16 @@
 					socialLinkType: t
 				}
 			}, i = () => {
-				return Object.keys(s.T).map(e => {
-					const t = s.T[e];
+				return Object.keys(s.U).map(e => {
+					const t = s.U[e];
 					return r(e, t)
-				}).filter(e => e.socialLinkType !== s.T.Indiegogo)
+				}).filter(e => e.socialLinkType !== s.U.Indiegogo)
 			}, l = e => {
 				const t = e.toLowerCase();
 				return `${o.d}${t}.png`
 			}, c = e => {
-				for (const t in s.T)
-					if (s.T[t] === e) return t;
+				for (const t in s.U)
+					if (s.U[t] === e) return t;
 				return ""
 			}, d = e => {
 				let t = o.b;
@@ -12694,4 +12694,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.bb95aaa9117bc0bf64a1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.3761a54d48bce6af647c.js.map

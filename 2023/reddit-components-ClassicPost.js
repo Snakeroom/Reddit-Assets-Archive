@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.7f8fa6000de8e66be36e.js
-// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.3d856399c3bbc62e6ef6.js
+// Retrieved at 1/19/2023, 4:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -971,7 +971,7 @@
 					post: he,
 					adLinkContent: He,
 					ctaExperimentDesign: Ne && "classic"
-				})), he.discussionType === ae.o.Chat && n.a.createElement(ie.a, {
+				})), he.discussionType === ae.p.Chat && n.a.createElement(ie.a, {
 					postId: he.id
 				}), n.a.createElement("div", {
 					className: de.a.flatlistContainer
@@ -1522,12 +1522,12 @@
 						});
 						if (!e.ok) return l(Object(C.f)({
 							kind: g.b.Error,
-							text: v.a[S.l.ServiceError]
+							text: v.a[S.m.ServiceError]
 						})), void c(!1);
 						const s = Object(v.h)(e.body);
 						if (null == s ? void 0 : s.errorState) return l(Object(C.f)({
 							kind: g.b.Error,
-							text: v.a[s.errorState.code] || v.a[S.l.ServiceError]
+							text: v.a[s.errorState.code] || v.a[S.m.ServiceError]
 						})), void c(!1);
 						(null == s ? void 0 : s.okState) && (window.location.href = `${f.a.redditUrl}/talk/${t}`)
 					}
@@ -2808,14 +2808,14 @@
 						...u,
 						variables: t
 					});
-					return !!Object(a.c)(s) && (s.body.data.subredditInfoById.allowedPostTypes || []).includes(_.N.Talk)
+					return !!Object(a.c)(s) && (s.body.data.subredditInfoById.allowedPostTypes || []).includes(_.O.Talk)
 				}, O = async (e, t) => {
 					var s, o;
 					const n = await Object(r.a)(e, {
 						...m,
 						variables: t
 					});
-					return !!Object(a.c)(n) && (null !== (o = null === (s = n.body.data.profileByName) || void 0 === s ? void 0 : s.allowedPostTypes) && void 0 !== o ? o : []).includes(_.N.Talk)
+					return !!Object(a.c)(n) && (null !== (o = null === (s = n.body.data.profileByName) || void 0 === s ? void 0 : s.allowedPostTypes) && void 0 !== o ? o : []).includes(_.O.Talk)
 				}, v = async e => {
 					var t;
 					const s = await Object(r.a)(e, l);
@@ -2843,26 +2843,26 @@
 						}
 					}
 				}), S = () => Object(n.a)(), j = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile || e.data.startAudioRoom, k = {
-					[_.l.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+					[_.m.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[_.l.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
+					[_.m.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					}),
-					[_.l.RoomLimitExceeded]: o.fbt._("You can only create three talks at one time. To continue, close a talk you're not using.", null, {
+					[_.m.RoomLimitExceeded]: o.fbt._("You can only create three talks at one time. To continue, close a talk you're not using.", null, {
 						hk: "3zPx9X"
 					}),
-					[_.l.ConcurrentRoomLimitExceeded]: o.fbt._("Too many talks are happening right now. Try again later.", null, {
+					[_.m.ConcurrentRoomLimitExceeded]: o.fbt._("Too many talks are happening right now. Try again later.", null, {
 						hk: "2LYXJx"
 					}),
-					[_.l.SubredditRoomLimitExceeded]: o.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
+					[_.m.SubredditRoomLimitExceeded]: o.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
 						hk: "2mGf21"
 					})
 				}, P = e => e.data.prepareAudioRoom || e.data.prepareAudioRoomOnProfile, y = {
-					[_.P.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+					[_.Q.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[_.P.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
+					[_.Q.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					})
 				}, N = (e, t) => Object(r.a)(e, {
@@ -3996,4 +3996,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.7f8fa6000de8e66be36e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.3d856399c3bbc62e6ef6.js.map
