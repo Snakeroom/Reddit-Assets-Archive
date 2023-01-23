@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.33b1112dd1c929d04e69.js
-// Retrieved at 1/23/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.9ac506aae8676adb73d1.js
+// Retrieved at 1/23/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, n) {
@@ -500,9 +500,9 @@
 			})), n.d(t, "morePostsPending", (function() {
 				return B
 			})), n.d(t, "morePostsLoaded", (function() {
-				return H
-			})), n.d(t, "morePostsFailed", (function() {
 				return A
+			})), n.d(t, "morePostsFailed", (function() {
+				return H
 			})), n.d(t, "moreModListingRequested", (function() {
 				return V
 			})), n.d(t, "hideSubredditSuccess", (function() {
@@ -617,7 +617,7 @@
 							hk: "3RYtBz"
 						})
 					})), Object(I.g)(s(), !0)
-				}, B = Object(d.a)(N.i), H = Object(d.a)(N.h), A = Object(d.a)(N.g), V = e => async (t, n, r) => {
+				}, B = Object(d.a)(N.i), A = Object(d.a)(N.h), H = Object(d.a)(N.g), V = e => async (t, n, r) => {
 					let {
 						apiContext: s
 					} = r;
@@ -650,12 +650,12 @@
 							...E.body,
 							postIds: (E.body.postIds || []).filter(e => !C || !C.includes(e))
 						};
-					E.ok ? t(H({
+					E.ok ? t(A({
 						key: g,
 						fetchedToken: f.token,
 						meta: d.meta,
 						...j
-					})) : t(A({
+					})) : t(H({
 						key: g,
 						error: E.error,
 						fetchedToken: f.token,
@@ -2036,9 +2036,9 @@
 				}, h, n && s.a.createElement(v, {
 					subredditName: n
 				}), b);
-				let H;
-				H = N ? s.a.createElement(s.a.Fragment, null, N[0], B, N[1]) : j ? s.a.createElement(s.a.Fragment, null, R, B) : s.a.createElement(s.a.Fragment, null, B, R);
-				const A = y ? `${I||l.a+2*a.l}px` : "100%",
+				let A;
+				A = N ? s.a.createElement(s.a.Fragment, null, N[0], B, N[1]) : j ? s.a.createElement(s.a.Fragment, null, R, B) : s.a.createElement(s.a.Fragment, null, B, R);
+				const H = y ? `${I||l.a+2*a.l}px` : "100%",
 					V = Object(r.useContext)(u.a);
 				return s.a.createElement(x.a, {
 					subredditId: T
@@ -2055,14 +2055,14 @@
 					className: E.a.innerContainer
 				}, k, f, (e => e.hero ? s.a.createElement(s.a.Fragment, null, e.hero) : null)(e), s.a.createElement("div", {
 					style: {
-						maxWidth: A
+						maxWidth: H
 					}
 				}, M), s.a.createElement("div", {
 					className: E.a.body,
 					style: {
-						maxWidth: A
+						maxWidth: H
 					}
-				}, H))))
+				}, A))))
 			}
 		},
 		"./src/reddit/layout/row/Inline/index.m.less": function(e, t, n) {
@@ -2172,8 +2172,8 @@
 				F = n("./node_modules/react-router-redux/es/index.js"),
 				R = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				B = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				H = n("./src/reddit/controls/Button/index.tsx"),
-				A = n("./src/reddit/helpers/trackers/modListing.ts"),
+				A = n("./src/reddit/controls/Button/index.tsx"),
+				H = n("./src/reddit/helpers/trackers/modListing.ts"),
 				V = n("./src/reddit/routes/modListing/index.ts");
 			const D = e => e.modListingPage.filteredSubreddits.api.pending;
 			var q = n("./src/reddit/constants/keycodes.ts"),
@@ -2195,7 +2195,7 @@
 							subredditInput: e
 						})
 					}, this.submitInput = () => {
-						this.canSubmitInput() && (this.props.sendEvent(Object(A.d)()), this.props.hide(this.state.subredditInput), this.clearSubredditInput())
+						this.canSubmitInput() && (this.props.sendEvent(Object(H.d)()), this.props.hide(this.state.subredditInput), this.clearSubredditInput())
 					}, this.onChange = e => {
 						this.setSubredditInput(e.target.value)
 					}, this.onKeyPress = e => {
@@ -2214,7 +2214,7 @@
 							hk: "4ceDB9"
 						}),
 						value: this.state.subredditInput
-					}), o.a.createElement(H.l, {
+					}), o.a.createElement(A.l, {
 						"aria-label": y.fbt._("Hide", null, {
 							hk: "1BnFmX"
 						}),
@@ -2257,7 +2257,7 @@
 			class se extends o.a.Component {
 				constructor() {
 					super(...arguments), this.onClickUnhideSubreddit = e => {
-						e.stopPropagation(), e.preventDefault(), this.props.subredditOrProfile && (this.props.sendEvent(Object(A.f)()), this.props.unhide(this.props.subredditName))
+						e.stopPropagation(), e.preventDefault(), this.props.subredditOrProfile && (this.props.sendEvent(Object(H.f)()), this.props.unhide(this.props.subredditName))
 					}
 				}
 				render() {
@@ -2316,7 +2316,7 @@
 			class he extends o.a.Component {
 				constructor() {
 					super(...arguments), this.onToggleFiltered = () => {
-						this.props.sendEvent(Object(A.c)(this.props.filtered)), this.props.toggleFiltered()
+						this.props.sendEvent(Object(H.c)(this.props.filtered)), this.props.toggleFiltered()
 					}
 				}
 				render() {
@@ -2329,7 +2329,7 @@
 						className: ue.a.hideCommunitiesHeader
 					}, me._("Hide communities", null, {
 						hk: "15OtHo"
-					})), o.a.createElement(H.r, {
+					})), o.a.createElement(A.r, {
 						className: ue.a.tertiaryButton,
 						onClick: this.onToggleFiltered
 					}, e.filtered ? me._("Go to unfiltered r/Mods", null, {
@@ -2480,7 +2480,7 @@
 				const p = Object(o.e)(e => e.subreddits.survey[n]),
 					b = Object(o.e)(e => e.subreddits.progressModule[n]),
 					h = Object(o.e)(u.a),
-					g = h !== c.He.NewModule;
+					g = h !== c.Je.NewModule;
 				return (null === (s = null == b ? void 0 : b.cards) || void 0 === s ? void 0 : s.length) > 0 && g ? i.a.createElement(m, {
 					closeModuleOnMount: !!t && t !== l.g.Large,
 					subredditId: n,
@@ -2506,15 +2506,15 @@
 			const o = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: i.S,
-						experimentName: r.pd
+						experimentName: r.rd
 					});
-					return !(!t || Object(r.fg)(t))
+					return !(!t || Object(r.hg)(t))
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: i.S,
-						experimentName: r.pd
-					}) === r.Ld.ListingEnabled
+						experimentName: r.rd
+					}) === r.Nd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/experiments/navbarLikeMweb.ts": function(e, t, n) {
@@ -2525,9 +2525,9 @@
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = e => Object(s.c)(e, {
-				experimentName: r.ye,
+				experimentName: r.Ae,
 				experimentEligibilitySelector: s.a
-			}) === r.Ge.Enabled
+			}) === r.Ie.Enabled
 		},
 		"./src/reddit/selectors/experiments/uxtsIntegration.ts": function(e, t, n) {
 			"use strict";
@@ -2542,16 +2542,16 @@
 				o = n("./src/reddit/selectors/user.ts");
 			const d = e => {
 					var t;
-					return (null === (t = null == e ? void 0 : e.user.experiments.byName[s.Nc]) || void 0 === t ? void 0 : t.variant) === s.Hd
+					return (null === (t = null == e ? void 0 : e.user.experiments.byName[s.Oc]) || void 0 === t ? void 0 : t.variant) === s.Jd
 				},
 				a = Object(r.a)(e => Object(i.c)(e, {
 					experimentEligibilitySelector: o.S,
-					experimentName: s.Pb
-				}), e => e === s.Hd)
+					experimentName: s.Qb
+				}), e => e === s.Jd)
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
 			e.exports = JSON.parse('{"id":"c1fc98c26cf2"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.33b1112dd1c929d04e69.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.9ac506aae8676adb73d1.js.map

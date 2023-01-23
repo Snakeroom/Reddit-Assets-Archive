@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.46447320ff380bf57b76.js
-// Retrieved at 1/23/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.f6bcb84689af81d14f9d.js
+// Retrieved at 1/23/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditForkingCTA"], {
 		"./node_modules/lodash/xorWith.js": function(t, _, e) {
@@ -180,9 +180,9 @@
 			})), e.d(_, "u", (function() {
 				return F
 			})), e.d(_, "r", (function() {
-				return M
-			})), e.d(_, "a", (function() {
 				return A
+			})), e.d(_, "a", (function() {
+				return M
 			})), e.d(_, "s", (function() {
 				return S
 			})), e.d(_, "c", (function() {
@@ -224,8 +224,8 @@
 				T = n.a.div("ModalMain", l.a),
 				C = n.a.textarea("TextArea", l.a),
 				F = n.a.wrapped(a.l, "WarningButton", l.a),
-				M = n.a.wrapped(a.l, "PrimaryButton", l.a),
-				A = n.a.wrapped(a.o, "CancelButton", l.a),
+				A = n.a.wrapped(a.l, "PrimaryButton", l.a),
+				M = n.a.wrapped(a.o, "CancelButton", l.a),
 				S = n.a.wrapped(a.r, "RemoveButton", l.a),
 				B = t => {
 					let {
@@ -257,10 +257,10 @@
 				m = e("./src/reddit/helpers/chooseVariant/index.ts"),
 				p = e("./src/reddit/selectors/experiments/utils.ts");
 			const b = Object(l.a)(t => Object(m.c)(t, {
-					experimentName: u.yf,
+					experimentName: u.Af,
 					experimentEligibilitySelector: m.a
 				}), p.a),
-				x = Object(l.a)(b, t => t === u.Ef.Enabled);
+				x = Object(l.a)(b, t => t === u.Gf.Enabled);
 			var f = e("./src/reddit/selectors/posts.ts"),
 				h = e("./src/reddit/components/CreateCommunityButton/index.tsx"),
 				y = e("./src/reddit/components/TrackingHelper/index.tsx");
@@ -1341,4 +1341,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.46447320ff380bf57b76.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.f6bcb84689af81d14f9d.js.map

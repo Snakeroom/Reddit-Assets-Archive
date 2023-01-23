@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.b8a80aab8894f072d17e.js
-// Retrieved at 1/23/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.665c9f5eafb259942613.js
+// Retrieved at 1/23/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./node_modules/lodash/map.js": function(e, t, s) {
@@ -182,27 +182,27 @@
 				duration: c.a
 			};
 			t.default = e => {
-				var t, s, o, x, f, R, C, j, T, w;
-				const g = Object(r.d)(),
+				var t, s, o, x, f, R, C, j, T, S;
+				const w = Object(r.d)(),
 					{
-						context: E,
-						deeplinkUrl: N,
-						isFullWidth: S,
+						context: g,
+						deeplinkUrl: E,
+						isFullWidth: N,
 						isUnread: k,
 						isNightMode: A,
 						notificationId: L,
 						onEvent: D
 					} = e,
-					U = null == E ? void 0 : E.messageType,
+					U = null == g ? void 0 : g.messageType,
 					P = U === v.a.CommentReply,
 					F = U === v.a.SubredditRecommendation,
 					B = U === v.a.LifecyclePostSuggestions,
-					M = null === (t = null == E ? void 0 : E.post) || void 0 === t ? void 0 : t.permalink;
-				let V = null === (s = null == E ? void 0 : E.comment) || void 0 === s ? void 0 : s.id,
-					H = (null === (o = null == E ? void 0 : E.post) || void 0 === o ? void 0 : o.id) || (null === (f = null === (x = null == E ? void 0 : E.comment) || void 0 === x ? void 0 : x.postInfo) || void 0 === f ? void 0 : f.id);
-				const W = null === (R = null == E ? void 0 : E.subreddit) || void 0 === R ? void 0 : R.id,
-					K = null === (j = null === (C = null == E ? void 0 : E.awarding) || void 0 === C ? void 0 : C.award) || void 0 === j ? void 0 : j.id,
-					J = null === (w = null === (T = null == E ? void 0 : E.awarding) || void 0 === T ? void 0 : T.awarder) || void 0 === w ? void 0 : w.id;
+					M = null === (t = null == g ? void 0 : g.post) || void 0 === t ? void 0 : t.permalink;
+				let V = null === (s = null == g ? void 0 : g.comment) || void 0 === s ? void 0 : s.id,
+					H = (null === (o = null == g ? void 0 : g.post) || void 0 === o ? void 0 : o.id) || (null === (f = null === (x = null == g ? void 0 : g.comment) || void 0 === x ? void 0 : x.postInfo) || void 0 === f ? void 0 : f.id);
+				const W = null === (R = null == g ? void 0 : g.subreddit) || void 0 === R ? void 0 : R.id,
+					K = null === (j = null === (C = null == g ? void 0 : g.awarding) || void 0 === C ? void 0 : C.award) || void 0 === j ? void 0 : j.id,
+					J = null === (S = null === (T = null == g ? void 0 : g.awarding) || void 0 === T ? void 0 : T.awarder) || void 0 === S ? void 0 : S.id;
 				if (U === v.a.CommentFollow || U === v.a.PostFollow) {
 					const e = (e => {
 						const t = {},
@@ -214,20 +214,20 @@
 						if (!o) return t;
 						const [n, r, i, a] = o.slice(1);
 						return r && "r" === n && (t.subredditName = r), i && (t.postId = `${u.b}${i}`), a && (t.commentId = `${u.a}${a}`), t
-					})(N);
+					})(E);
 					H = e.postId, V = e.commentId
 				} else U !== v.a.PostReply && U !== v.a.LifecyclePostSuggestions || (V = L);
 				const z = e => {
 					if (H && V) {
-						const e = Object(a.a)(H, V, Object(_.c)(N)),
+						const e = Object(a.a)(H, V, Object(_.c)(E)),
 							t = {
 								parentCommentId: V,
 								commentsPageKey: e
 							};
-						g(Object(d.h)(t)), D({
+						w(Object(d.h)(t)), D({
 							position: h.d.SECOND
 						})
-					} else e.preventDefault(), g(Object(c.f)(O))
+					} else e.preventDefault(), w(Object(c.f)(O))
 				};
 				return (() => {
 					switch (U) {
@@ -241,20 +241,20 @@
 										position: h.d.SECOND,
 										postId: H,
 										subredditId: W
-									}) : (e.preventDefault(), g(Object(c.f)(O)))
+									}) : (e.preventDefault(), w(Object(c.f)(O)))
 								},
 								s = I._("Check It Out", null, {
 									hk: "3mzMCI"
 								});
 							return n.a.createElement(p.t, {
 								onClick: t,
-								isFullWidth: S,
+								isFullWidth: N,
 								priority: p.c.Tertiary,
 								redditStyle: !0,
 								className: Object(i.a)(y.a.notificationButton, {
 									[y.a.isUnread]: k,
 									[y.a.isNightMode]: A,
-									[y.a.isFullWidth]: S
+									[y.a.isFullWidth]: N
 								})
 							}, n.a.createElement(b.a, {
 								name: "text_post",
@@ -271,14 +271,14 @@
 							return P || e ? n.a.createElement(p.t, {
 								onClick: z,
 								kind: p.b.InternalLink,
-								to: N,
-								isFullWidth: S,
+								to: E,
+								isFullWidth: N,
 								priority: p.c.Tertiary,
 								redditStyle: !0,
 								className: Object(i.a)(y.a.notificationButton, {
 									[y.a.isUnread]: k,
 									[y.a.isNightMode]: A,
-									[y.a.isFullWidth]: S
+									[y.a.isFullWidth]: N
 								})
 							}, n.a.createElement(b.a, {
 								name: "reply",
@@ -293,20 +293,20 @@
 								e.preventDefault(), J ? D({
 									position: h.d.SECOND,
 									awardId: K
-								}) : g(Object(c.f)(O))
+								}) : w(Object(c.f)(O))
 							};
 							return n.a.createElement(l.b, {
 								userId: J,
 								contextId: J,
 								onClick: e,
-								isFullWidth: S,
+								isFullWidth: N,
 								priority: p.c.Tertiary,
 								redditStyle: !0,
 								eventSource: l.a.awardNotification,
 								className: Object(i.a)(y.a.notificationButton, {
 									[y.a.isUnread]: k,
 									[y.a.isNightMode]: A,
-									[y.a.isFullWidth]: S
+									[y.a.isFullWidth]: N
 								})
 							}, n.a.createElement(b.a, {
 								name: "chat_new",
@@ -513,11 +513,11 @@
 				experimentEligibilitySelector: n.a,
 				experimentName: o.pb
 			}), e => ({
-				bucketed: e === o.Rc.ExpandedSearch || e === o.Rc.CollapsedSearch,
-				collapsed: e === o.Rc.CollapsedSearch,
-				expanded: e === o.Rc.ExpandedSearch
+				bucketed: e === o.Sc.ExpandedSearch || e === o.Sc.CollapsedSearch,
+				collapsed: e === o.Sc.CollapsedSearch,
+				expanded: e === o.Sc.ExpandedSearch
 			}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.b8a80aab8894f072d17e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.665c9f5eafb259942613.js.map

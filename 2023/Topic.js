@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.f011d292ca0fb20b3293.js
-// Retrieved at 1/23/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.51e280b8dbe72539bd8a.js
+// Retrieved at 1/23/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1382,10 +1382,10 @@
 				M = s("./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts"),
 				G = s("./src/reddit/selectors/experiments/navbarLikeMweb.ts"),
 				A = s("./src/reddit/components/SidebarFooter/index.m.less"),
-				H = s.n(A);
+				W = s.n(A);
 			const {
-				fbt: W
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), U = c.a.a("Link", H.a), z = Object(o.c)({
+				fbt: H
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), U = c.a.a("Link", W.a), z = Object(o.c)({
 				countryCode: O.b,
 				d2xPdpSideRailRecsVariant: M.a,
 				isCountrySitesEnabled: B.b,
@@ -1400,55 +1400,55 @@
 					reredditContent: s
 				} = e;
 				return r.a.createElement("div", {
-					className: H.a.GreyRereddit
+					className: W.a.GreyRereddit
 				}, s, !!R.c[t] && r.a.createElement("div", {
-					className: H.a.LinkContainer
+					className: W.a.LinkContainer
 				}, r.a.createElement("div", {
-					className: H.a.Column
+					className: W.a.Column
 				}, r.a.createElement(U, {
 					href: "https://www.redditinc.com/policies/impressum"
-				}, W._("Impressum", null, {
+				}, H._("Impressum", null, {
 					hk: "4cKXSI"
 				})), t === k.l.De && r.a.createElement(U, {
 					href: "https://reddit.zendesk.com/hc/de/requests/new?ticket_form_id=360000152352",
-					className: H.a.NoneCapitalizeLink
-				}, W._("Report NetzDG Content", null, {
+					className: W.a.NoneCapitalizeLink
+				}, H._("Report NetzDG Content", null, {
 					hk: "1nszCF"
 				}))), r.a.createElement("div", {
-					className: H.a.Column
+					className: W.a.Column
 				}, r.a.createElement(U, {
 					href: "https://www.reddithelp.com"
-				}, W._("help", null, {
+				}, H._("help", null, {
 					hk: "4lyYaD"
 				})), t === k.l.De && r.a.createElement(U, {
 					href: "https://reddit.zendesk.com/hc/de/articles/360045289772-Deutschland-Meldungen-nach-dem-Netzwerkdurchsetzungsgesetz-NetzDG-"
-				}, W._("Transparency report", null, {
+				}, H._("Transparency report", null, {
 					hk: "3CgBdG"
 				})))), r.a.createElement("div", {
-					className: H.a.LinkContainer
+					className: W.a.LinkContainer
 				}, r.a.createElement("div", {
-					className: H.a.Column
+					className: W.a.Column
 				}, r.a.createElement(U, {
 					href: "https://www.redditinc.com/policies/user-agreement"
-				}, W._("User Agreement", null, {
+				}, H._("User Agreement", null, {
 					hk: "2RA6JL"
 				})), r.a.createElement(U, {
 					href: "https://www.redditinc.com/policies/privacy-policy"
-				}, W._("Privacy policy", null, {
+				}, H._("Privacy policy", null, {
 					hk: "10K04G"
 				}))), r.a.createElement("div", {
-					className: H.a.Column
+					className: W.a.Column
 				}, r.a.createElement(U, {
 					href: "https://www.redditinc.com/policies/content-policy"
-				}, W._("Content policy", null, {
+				}, H._("Content policy", null, {
 					hk: "1DyxZS"
 				})), r.a.createElement(U, {
 					href: "https://www.redditinc.com/policies/moderator-guidelines"
-				}, W._("Moderator Code of Conduct", null, {
+				}, H._("Moderator Code of Conduct", null, {
 					hk: "tWEG"
 				})))), r.a.createElement("div", {
-					className: H.a.Copyright
-				}, W._("Reddit Inc © {year}. All rights reserved", [W._param("year", (new Date).getFullYear().toString())], {
+					className: W.a.Copyright
+				}, H._("Reddit Inc © {year}. All rights reserved", [H._param("year", (new Date).getFullYear().toString())], {
 					hk: "4BrCkA"
 				})))
 			};
@@ -1456,7 +1456,7 @@
 				const t = Object(i.f)().getState(),
 					s = Object(B.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === P.ad.GreyRereddit || e.d2xPdpSideRailRecsVariant === P.ad.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === P.ad.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === P.cd.GreyRereddit || e.d2xPdpSideRailRecsVariant === P.cd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === P.cd.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(q, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -1478,63 +1478,63 @@
 					}, n[t]) : null
 				};
 				return r.a.createElement(I.a, {
-					className: H.a.Widget,
+					className: W.a.Widget,
 					redditStyle: e.redditStyle,
 					contentOnly: !0
 				}, !!R.c[e.countryCode] && r.a.createElement("div", {
-					className: H.a.LinkContainer
+					className: W.a.LinkContainer
 				}, r.a.createElement("div", {
-					className: H.a.Column
+					className: W.a.Column
 				}, r.a.createElement(U, {
 					href: "https://www.redditinc.com/policies/impressum"
-				}, W._("Impressum", null, {
+				}, H._("Impressum", null, {
 					hk: "4cKXSI"
 				})), e.countryCode === k.l.De && r.a.createElement(U, {
 					href: "https://reddit.zendesk.com/hc/de/requests/new?ticket_form_id=360000152352",
-					className: H.a.NoneCapitalizeLink
-				}, W._("Report NetzDG Content", null, {
+					className: W.a.NoneCapitalizeLink
+				}, H._("Report NetzDG Content", null, {
 					hk: "1nszCF"
 				}))), r.a.createElement("div", {
-					className: H.a.Column
+					className: W.a.Column
 				}, r.a.createElement(U, {
 					href: "https://www.reddithelp.com"
-				}, W._("help", null, {
+				}, H._("help", null, {
 					hk: "4lyYaD"
 				})), e.countryCode === k.l.De && r.a.createElement(U, {
 					href: "https://reddit.zendesk.com/hc/de/articles/360045289772-Deutschland-Meldungen-nach-dem-Netzwerkdurchsetzungsgesetz-NetzDG-"
-				}, W._("Transparency report", null, {
+				}, H._("Transparency report", null, {
 					hk: "3CgBdG"
 				})))), r.a.createElement("div", {
-					className: H.a.LinkContainer
+					className: W.a.LinkContainer
 				}, r.a.createElement("div", {
-					className: H.a.Column
+					className: W.a.Column
 				}, r.a.createElement(U, {
 					href: "https://www.redditinc.com/policies/user-agreement"
-				}, W._("User Agreement", null, {
+				}, H._("User Agreement", null, {
 					hk: "2RA6JL"
 				})), r.a.createElement(U, {
 					href: "https://www.redditinc.com/policies/privacy-policy"
-				}, W._("Privacy policy", null, {
+				}, H._("Privacy policy", null, {
 					hk: "10K04G"
 				}))), r.a.createElement("div", {
-					className: H.a.Column
+					className: W.a.Column
 				}, r.a.createElement(U, {
 					href: "https://www.redditinc.com/policies/content-policy"
-				}, W._("Content policy", null, {
+				}, H._("Content policy", null, {
 					hk: "1DyxZS"
 				})), r.a.createElement(U, {
 					href: "https://www.redditinc.com/policies/moderator-guidelines"
-				}, W._("Moderator Code of Conduct", null, {
+				}, H._("Moderator Code of Conduct", null, {
 					hk: "tWEG"
 				})))), (e.isCountrySitePage || e.isCountrySitesEnabled) && r.a.createElement("div", {
-					className: H.a.LinkContainer
+					className: W.a.LinkContainer
 				}, r.a.createElement("div", {
-					className: H.a.Column
+					className: W.a.Column
 				}, n("en"), n("fr"), n("it")), r.a.createElement("div", {
-					className: H.a.Column
+					className: W.a.Column
 				}, n("de"), n("es"), n("pt"))), r.a.createElement("div", {
-					className: H.a.Copyright
-				}, W._("Reddit Inc © {year}. All rights reserved", [W._param("year", (new Date).getFullYear().toString())], {
+					className: W.a.Copyright
+				}, H._("Reddit Inc © {year}. All rights reserved", [H._param("year", (new Date).getFullYear().toString())], {
 					hk: "4BrCkA"
 				})), r.a.createElement(N, null))
 			})))
@@ -2940,11 +2940,11 @@
 			const {
 				fbt: A
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
-			var H;
+			var W;
 			! function(e) {
 				e.Communities = "communities", e.Posts = "posts", e.RelatedTopics = "relatedTopics"
-			}(H || (H = {}));
-			class W extends r.a.Component {
+			}(W || (W = {}));
+			class H extends r.a.Component {
 				renderSubtitleContent() {
 					const {
 						parentRelatedTopics: e
@@ -2994,21 +2994,21 @@
 					}, this.renderSubtitleContent())), r.a.createElement("div", {
 						className: M.a.Tabs
 					}, r.a.createElement(D, G({
-						tab: H.Posts
+						tab: W.Posts
 					}, c), A._("Posts", null, {
 						hk: "3RLrle"
 					})), r.a.createElement(D, G({
-						tab: H.Communities
+						tab: W.Communities
 					}, c), A._("Communities", null, {
 						hk: "KIwd1"
 					})), r.a.createElement(D, G({
-						tab: H.RelatedTopics
+						tab: W.RelatedTopics
 					}, c), A._("Related Topics", null, {
 						hk: "4go2cr"
 					})))))
 				}
 			}
-			var U = W,
+			var U = H,
 				z = s("./src/reddit/pages/Topic/Relationship/index.m.less"),
 				V = s.n(z);
 			const {
@@ -3021,7 +3021,7 @@
 							openTab: e,
 							relationshipIndex: t
 						} = this.props;
-						e(H.RelatedTopics, t)
+						e(W.RelatedTopics, t)
 					}
 				}
 				render() {
@@ -3156,7 +3156,7 @@
 							index: e,
 							onTabClick: t
 						} = this.props;
-						t(H.RelatedTopics, e)
+						t(W.RelatedTopics, e)
 					}
 				}
 				render() {
@@ -3200,9 +3200,9 @@
 							activeTab: e,
 							topicNamePlural: t
 						} = this.props;
-						return e === H.Posts ? Se._("Posts about {topic name}", [Se._param("topic name", t)], {
+						return e === W.Posts ? Se._("Posts about {topic name}", [Se._param("topic name", t)], {
 							hk: "3AGfU"
-						}) : e === H.Communities ? Se._("Communities related to {topic name}", [Se._param("topic name", t)], {
+						}) : e === W.Communities ? Se._("Communities related to {topic name}", [Se._param("topic name", t)], {
 							hk: "jKM0V"
 						}) : null
 					}
@@ -3211,8 +3211,8 @@
 					const {
 						activeLayout: e,
 						activeTab: t
-					} = this.props, s = t === H.Posts;
-					return t === H.RelatedTopics ? this.renderRelatedTopicsHeader() : r.a.createElement("div", {
+					} = this.props, s = t === W.Posts;
+					return t === W.RelatedTopics ? this.renderRelatedTopicsHeader() : r.a.createElement("div", {
 						className: ye.a.TabHeader
 					}, r.a.createElement("div", {
 						className: ye.a.TabTitle
@@ -3232,7 +3232,7 @@
 				fbt: je
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), Le = Object(k.v)(), Ne = (e, t) => t.match.params.sort || a.cb, we = e => {
 				const t = [];
-				return e ? (e.hasPosts && t.push(H.Posts), e.hasSubreddits && t.push(H.Communities), e.childRelationships.length && t.push(H.RelatedTopics), t) : t
+				return e ? (e.hasPosts && t.push(W.Posts), e.hasSubreddits && t.push(W.Communities), e.childRelationships.length && t.push(W.RelatedTopics), t) : t
 			}, Ie = Object(d.b)(() => Object(i.a)((e, t) => Object(Ce.d)(e, t.match.params.topicSlug), (e, t) => Object(Ce.e)(e, {
 				topicSlug: t.match.params.topicSlug
 			}), (e, t) => Object(Ce.c)(e, {
@@ -3257,7 +3257,7 @@
 				topicNamePlural: t
 			})), (e, t) => ({
 				onLoadMorePosts: () => e(Object(l.morePostsRequested)(t.match.params))
-			})), Pe = (e, t) => e === H.Communities ? O.g.Large : t;
+			})), Pe = (e, t) => e === W.Communities ? O.g.Large : t;
 			class Re extends r.a.Component {
 				constructor(e) {
 					var t;
@@ -3269,7 +3269,7 @@
 							activeTab: e
 						}), window.scrollTo(0, 0)
 					}, this.openCommunitiesTab = () => {
-						this.openTab(H.Communities)
+						this.openTab(W.Communities)
 					}, this.onViewed = (e, t) => {
 						var s;
 						return Object(j.e)({
@@ -3347,15 +3347,15 @@
 							topicNamePlural: m
 						}), r.a.createElement("div", {
 							className: Object(o.a)(ke.a.TopicTab, {
-								[ke.a.active]: f === H.Communities
+								[ke.a.active]: f === W.Communities
 							})
 						}, r.a.createElement(be, {
 							subredditIds: d.subredditIds
 						})), r.a.createElement("div", {
 							className: Object(o.a)(ke.a.TopicTab, {
-								[ke.a.active]: f === H.Posts
+								[ke.a.active]: f === W.Posts
 							})
-						}, f === H.Posts && r.a.createElement(u.a, {
+						}, f === W.Posts && r.a.createElement(u.a, {
 							forcedLayout: h,
 							listingKey: b,
 							listingName: x,
@@ -3364,13 +3364,13 @@
 							onLoadMore: this.props.onLoadMorePosts
 						})), r.a.createElement("div", {
 							className: Object(o.a)(ke.a.TopicTab, {
-								[ke.a.active]: f === H.RelatedTopics
+								[ke.a.active]: f === W.RelatedTopics
 							})
 						}, r.a.createElement(y, {
 							topics: _
 						}))),
-						k = f !== H.RelatedTopics,
-						j = f !== H.Communities && a.includes(H.Communities),
+						k = f !== W.RelatedTopics,
+						j = f !== W.Communities && a.includes(W.Communities),
 						w = r.a.createElement("div", {
 							className: ke.a.WidgetsContainer
 						}, j && r.a.createElement(T.a, {
@@ -3418,7 +3418,7 @@
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: n.D
-				}) === n.Hd
+				}) === n.Jd
 			}
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, s) {
@@ -3436,11 +3436,11 @@
 				c = s("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(a.h)(e) && Object(i.f)(e),
-					experimentName: n.kc
+					experimentName: n.lc
 				}), o.a),
 				l = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.h)(e) && Object(i.f)(e),
-					experimentName: n.jc
+					experimentName: n.kc
 				}), o.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -3480,4 +3480,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.f011d292ca0fb20b3293.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.51e280b8dbe72539bd8a.js.map
