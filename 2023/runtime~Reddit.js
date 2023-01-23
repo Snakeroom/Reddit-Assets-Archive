@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.4017a37151e2e3ef825f.js
-// Retrieved at 1/23/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.0f2f5890237ea7470cc2.js
+// Retrieved at 1/23/2023, 3:10:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -964,7 +964,7 @@
 					"reddit-components-ScheduledPost-PostSchedulePickerModal": "341165e6ed799881e6fa",
 					AwardCreationModal: "c1333474ae4db2e9da48",
 					"reddit-components-ModHub-Content-ModQueue": "9d414d3b1603151cca15",
-					ModerationLogFilters: "83119ed1e9c344df5971",
+					ModerationLogFilters: "618474bc82034d5e9cfb",
 					"reddit-components-CommunitySettings-ModPnSettings": "fb5542da3793c30f5061",
 					"reddit-components-ModHub-ContentControls": "f10dd1e79f0fee124b21",
 					"reddit-components-ModHub-TrafficStats": "0cba4579eae12e57eae6",
@@ -1505,16 +1505,16 @@
 						"reddit-components-Econ-Prediction-EndTimeModal": "f7977881e652a053ff06",
 						"reddit-components-PostCreationForm-PredictionEditor-InactivityModal": "c69b240b5733aa348258",
 						"reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal": "5416dc67e1ff136cabb0",
-						"translations/bn_BD-json": "8398a1ae8df168090146",
-						"translations/de_DE-json": "8d5c5ef9060a0603bd05",
-						"translations/es_ES-json": "59c0430e6955c0b0ae22",
-						"translations/es_MX-json": "adf2c9de6d89abe3de4e",
-						"translations/fr_FR-json": "a7f940c959cf5f283517",
-						"translations/hi_IN-json": "a2d6b6559ad0f128aa32",
-						"translations/it_IT-json": "2c630ef8885ffd8f4dbf",
-						"translations/pseudo-json": "8bd5b9df8d5aa6e3eb88",
-						"translations/pt_BR-json": "89ad784398bbd224bec3",
-						"translations/pt_PT-json": "148cd4494fd2e8650b26",
+						"translations/bn_BD-json": "97a1b6f2fef5b25e3db3",
+						"translations/de_DE-json": "3a26467492aad5779521",
+						"translations/es_ES-json": "8910ed62b93f6951594a",
+						"translations/es_MX-json": "32f6edd2116abf6510c3",
+						"translations/fr_FR-json": "36c9671495b23097a74f",
+						"translations/hi_IN-json": "de868f5bbad02117ff2f",
+						"translations/it_IT-json": "1da8ef6fcebc3cca531b",
+						"translations/pseudo-json": "8c248e725d9bfdde942f",
+						"translations/pt_BR-json": "a6185c80a90ad061e62a",
+						"translations/pt_PT-json": "3b46fedca27f24e99f50",
 						"vendors~AdminPanel": "9abedef941b07fd50b75",
 						AdminPanel: "1ab349d2c94149c99cf7",
 						"vendors~Avatar~ChatPost~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~RealtimeGQLSubscr~bfab320d": "a668d51b1ce27b994b5f",
@@ -1550,7 +1550,7 @@
 						"vendors~PostCreation": "d59cf5362088f66f3ecc",
 						PostCreation: "2646f0951546298940a5",
 						"vendors~ModerationPages": "94c34813eaf24a1890ea",
-						ModerationPages: "fde0793202db9f28c47d",
+						ModerationPages: "aa935ff65435097e1301",
 						"vendors~ModStatsChart~Settings~ViewsTooltip": "ca7c845d62fd39d960b6",
 						"vendors~Settings": "86b1cfc53320ea8eef91",
 						"Settings~SubredditWiki": "eb75049f95c6c8640efc",
@@ -1682,7 +1682,7 @@
 						"reddit-components-ScheduledPost-PostSchedulePickerModal": "6b3fed20f6eb09650a6a",
 						AwardCreationModal: "e416c82a13842a07414b",
 						"reddit-components-ModHub-Content-ModQueue": "ccdd0beb3e1c1066315c",
-						ModerationLogFilters: "d772d3cc101ebbb5e560",
+						ModerationLogFilters: "c33c045c9c6ac00bb001",
 						"reddit-components-CommunitySettings-ModPnSettings": "ebde7c3efb2560351c45",
 						"reddit-components-ModHub-ContentControls": "c8161af5d0a871177c0f",
 						"reddit-components-ModHub-TrafficStats": "7f284cfc8586dcf0a287",
@@ -1787,4 +1787,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.4017a37151e2e3ef825f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.0f2f5890237ea7470cc2.js.map
