@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Avatar.f9e569142cd443fcdf8d.js
-// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Avatar.5efc30b7a6508bbfd0da.js
+// Retrieved at 1/23/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Avatar"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, r) {
@@ -17,7 +17,7 @@
 		"./src/reddit/components/AvatarBuilder/index.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return f
+				return x
 			}));
 			var s = r("./node_modules/@reddit/marketplace/marketplace.es.js"),
 				n = r("./node_modules/react/index.js"),
@@ -25,17 +25,18 @@
 				c = r("./node_modules/react-redux/es/index.js"),
 				o = r("./src/lib/classNames/index.ts"),
 				i = r("./src/reddit/actions/login.ts"),
-				d = r("./src/reddit/contexts/NavbarExp.ts"),
-				l = r("./src/reddit/helpers/trackers/snoovatar.ts"),
-				u = r("./src/reddit/hooks/useTracking.ts"),
-				p = r("./src/reddit/selectors/experiments/econ/index.ts"),
-				m = r("./src/reddit/selectors/user.ts"),
-				O = r("./src/reddit/components/AvatarBuilder/index.m.less"),
-				b = r.n(O),
+				d = r("./src/reddit/actions/snoovatarModal.ts"),
+				l = r("./src/reddit/contexts/NavbarExp.ts"),
+				u = r("./src/reddit/helpers/trackers/snoovatar.ts"),
+				p = r("./src/reddit/hooks/useTracking.ts"),
+				m = r("./src/reddit/selectors/experiments/econ/index.ts"),
+				O = r("./src/reddit/selectors/user.ts"),
+				b = r("./src/reddit/components/AvatarBuilder/index.m.less"),
+				v = r.n(b),
 				_ = r("./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx");
 
-			function v() {
-				return (v = Object.assign || function(e) {
+			function f() {
+				return (f = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var s in r) Object.prototype.hasOwnProperty.call(r, s) && (e[s] = r[s])
@@ -43,52 +44,52 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const f = e => {
+			const x = e => {
 				let {
 					isModal: t,
 					...r
 				} = e;
-				const O = Object(u.a)(),
-					f = Object(c.e)(e => e.user.session),
-					[x, j] = Object(n.useState)(!1),
-					E = Object(n.useContext)(d.a),
-					A = Object(c.d)(),
-					g = () => A(Object(i.openLoginModal)()),
-					h = Object(_.a)(),
-					S = Object(c.e)(p.a);
+				const b = Object(p.a)(),
+					x = Object(c.e)(e => e.user.session),
+					[j, E] = Object(n.useState)(!1),
+					A = Object(n.useContext)(l.a),
+					g = Object(c.d)(),
+					h = () => g(Object(i.openLoginModal)()),
+					M = Object(_.a)(),
+					S = Object(c.e)(m.a);
 				Object(n.useEffect)(() => {
 					{
 						const e = {},
 							t = new URLSearchParams(window.location.search);
-						Object(s.k)(t) && S && (e.domain = "marketplace_sharelink", e.url = window.location.href), O(Object(l.r)(e))
+						Object(s.k)(t) && S && (e.domain = "marketplace_sharelink", e.url = window.location.href), b(Object(u.r)(e))
 					}
-				}, [O, S]), Object(n.useEffect)(() => {
-					j(!0)
+				}, [b, S]), Object(n.useEffect)(() => {
+					E(!0)
 				}, []);
 				const {
-					activeDetails: M,
-					activeTab: k,
+					activeDetails: k,
+					activeTab: C,
 					activeMeSubpage: R,
 					shopTabState: T
 				} = r, L = Object(n.useMemo)(() => ({
-					activeTab: k || void 0,
+					activeTab: C || void 0,
 					activeMeSubpage: R || void 0,
-					activeDetails: M || void 0,
+					activeDetails: k || void 0,
 					shopTabState: T || void 0
-				}), [M, k, R, T]), N = Object(c.e)(e => !Object(m.S)(e) && Object(p.v)(e));
-				if (!f || !x) return null;
+				}), [k, C, R, T]), N = Object(c.e)(e => !Object(O.S)(e) && Object(m.v)(e));
+				if (!x || !j) return null;
 				if (N) return a.a.createElement("div", {
-					className: Object(o.a)(b.a.container, {
-						[b.a.containerExp]: E
+					className: Object(o.a)(v.a.container, {
+						[v.a.containerExp]: A
 					})
 				}, a.a.createElement(s.f, {
-					openLogin: g,
+					openLogin: h,
 					fancyBackground: !0
 				}));
-				const C = {
-					...h,
+				const B = {
+					...M,
 					config: {
-						...h.config,
+						...M.config,
 						...r.share ? {
 							COPY_SHARE_PARAMS: r.share
 						} : {}
@@ -96,14 +97,17 @@
 				};
 				return a.a.createElement("div", {
 					className: Object(o.a)({
-						[b.a.container]: !t,
-						[b.a.snoovatarModalBuilderV2]: t,
-						[b.a.containerExp]: E
+						[v.a.container]: !t,
+						[v.a.snoovatarModalBuilderV2]: t,
+						[v.a.containerExp]: A
 					})
-				}, a.a.createElement(s.a, v({}, C, {
+				}, a.a.createElement(s.a, f({}, B, {
 					navState: L,
 					isModal: t
-				}), a.a.createElement(s.b, null)))
+				}), a.a.createElement(s.b, {
+					isModal: t,
+					onCloseClick: () => g(Object(d.a)())
+				})))
 			}
 		},
 		"./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx": function(e, t, r) {
@@ -136,8 +140,8 @@
 						n = t ? new Date(t.expires).getTime() : 1,
 						O = Object(c.e)(u.fb),
 						b = Object(i.a)(),
-						_ = p ? o.a.Rinkeby : o.a.Ethereum,
-						v = Object(a.useMemo)(() => ({
+						v = p ? o.a.Rinkeby : o.a.Ethereum,
+						_ = Object(a.useMemo)(() => ({
 							headers: {
 								Authorization: `Bearer ${r}`
 							},
@@ -147,7 +151,7 @@
 							...m,
 							STRIPE_API_KEY: s.a.stripe.apiKey(e),
 							ACCESS_TOKEN: r,
-							BLOCKCHAIN_PROVIDER: _
+							BLOCKCHAIN_PROVIDER: v
 						},
 						x = Object(a.useCallback)(e => {
 							b(t => {
@@ -165,11 +169,11 @@
 							})
 						}, [b]);
 					return Object(a.useMemo)(() => ({
-						authHeaders: v,
+						authHeaders: _,
 						config: f,
 						isNightMode: O,
 						sendEvent: x
-					}), [v, f, O, x])
+					}), [_, f, O, x])
 				}
 		},
 		"./src/reddit/pages/Avatar/index.tsx": function(e, t, r) {
@@ -196,4 +200,4 @@
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.f9e569142cd443fcdf8d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.5efc30b7a6508bbfd0da.js.map

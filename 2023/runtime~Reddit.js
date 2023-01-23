@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.61dcbf3b65a6fd86a9b5.js
-// Retrieved at 1/23/2023, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.7fc2beee500ae8328a3d.js
+// Retrieved at 1/23/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1524,9 +1524,9 @@
 						"reddit-pages-meta-ArbitrumPointsMigrationPage": "4a10c027da751c7cc289",
 						"reddit-pages-meta-MainnetPointsMigrationPage": "3adb9cd7acd1bc54833d",
 						"vendors~Avatar~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~SnoovatarModal": "809382d65a92cdef1ff8",
-						Avatar: "f9e569142cd443fcdf8d",
+						Avatar: "5efc30b7a6508bbfd0da",
 						MarketplaceClaimModal: "0e74e8c6e8df17c81821",
-						SnoovatarModal: "bcf062e4711fd5e351bf",
+						SnoovatarModal: "09880acd339f00976431",
 						"vendors~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-~339111b0": "003c5a051b1aaec502e5",
 						"reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67": "d4f4df389e6cc430d1d9",
 						"reddit-components-Governance-TransactionModals-BurnPointsModal": "c3bb19774898336f180e",
@@ -1787,4 +1787,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.61dcbf3b65a6fd86a9b5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.7fc2beee500ae8328a3d.js.map
