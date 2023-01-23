@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.c25af8c573bf1a46e7c0.js
-// Retrieved at 1/19/2023, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.586f2ac09a43de8589bb.js
+// Retrieved at 1/23/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/avatarShareImages.ts": function(e, t, n) {
@@ -497,13 +497,13 @@
 						})
 					}, []);
 				Object(c.a)(A, G);
-				const [L, V] = Object(r.useState)(!1), U = Object(r.useCallback)(e => {
+				const [V, L] = Object(r.useState)(!1), U = Object(r.useCallback)(e => {
 					e.forEach(e => {
 						const {
 							isIntersecting: t,
 							intersectionRatio: n
 						} = e, r = 1 !== n;
-						t ? V(!0) : r && V(!1)
+						t ? L(!0) : r && L(!1)
 					})
 				}, []), B = Object(r.useRef)({
 					rootMargin: "2000px 0px 2000px 0px"
@@ -560,7 +560,7 @@
 					role: "screen-reader"
 				}, [...E].reverse().join(""))), o.a.createElement("span", {
 					ref: A
-				}), L && o.a.createElement(a.a, {
+				}), V && o.a.createElement(a.a, {
 					variables: g,
 					onData: f ? m : b,
 					queryKey: h,
@@ -1941,9 +1941,9 @@
 			})), n.d(t, "clickNextButtonEvent", (function() {
 				return G
 			})), n.d(t, "clickCloseGildModalEvent", (function() {
-				return L
-			})), n.d(t, "viewKarmaSuccessEvent", (function() {
 				return V
+			})), n.d(t, "viewKarmaSuccessEvent", (function() {
+				return L
 			})), n.d(t, "clickFilterEvent", (function() {
 				return U
 			})), n.d(t, "clickNextFiltersEvent", (function() {
@@ -2119,13 +2119,13 @@
 					action: "click",
 					noun: "next"
 				}),
-				L = e => t => ({
+				V = e => t => ({
 					...p(t, e),
 					source: "give_gold",
 					action: "click",
 					noun: "close"
 				}),
-				V = e => {
+				L = e => {
 					let {
 						award: t,
 						awardeeKarmaEarned: n,
@@ -3478,8 +3478,8 @@
 					if (Object(a.a)(e)) return !1;
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: r.sc
-					}) === r.Zc.Enabled
+						experimentName: r.uc
+					}) === r.bd.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
@@ -3492,8 +3492,8 @@
 			const s = e => {
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: r.Te
-				}) === r.Fd
+					experimentName: r.Ve
+				}) === r.Hd
 			}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -3814,4 +3814,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.c25af8c573bf1a46e7c0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.586f2ac09a43de8589bb.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.759885d503804c42b1c1.js
-// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.fac4ee5730471c63ad1e.js
+// Retrieved at 1/23/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -346,8 +346,8 @@
 				P = n("./src/reddit/components/Settings/shared/Widgets.m.less"),
 				A = n.n(P);
 
-			function W() {
-				return (W = Object.assign || function(e) {
+			function G() {
+				return (G = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -355,7 +355,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const G = Object(d.a)(h.a),
+			const W = Object(d.a)(h.a),
 				H = C.a.wrapped(T.a, "Circle", A.a),
 				V = C.a.h3("Label", A.a),
 				Y = C.a.wrapped(S.c, "Subtext", A.a),
@@ -375,7 +375,7 @@
 						last: d,
 						...m
 					} = e;
-					return r.a.createElement("div", W({}, m, {
+					return r.a.createElement("div", G({}, m, {
 						className: Object(l.a)(A.a.Wrapper, t, {
 							[A.a.mColumn]: "column" === n,
 							[A.a.mDisabled]: !!o,
@@ -549,7 +549,7 @@
 					id: `SettingDropdown--${e.id}`
 				}, e.displayTitle || e.selected), r.a.createElement(v.b, {
 					className: A.a.DropdownTriangle
-				}), r.a.createElement(G, {
+				}), r.a.createElement(W, {
 					container: void 0,
 					isOpen: e.isOpen,
 					renderContentsHidden: !0,
@@ -926,8 +926,8 @@
 				L = n("./src/reddit/models/Subreddit/index.ts"),
 				P = n("./src/reddit/models/SubredditRestrictions/index.ts"),
 				A = n("./src/reddit/selectors/experiments/emailInvite.ts"),
-				W = n("./src/reddit/selectors/subreddit.ts"),
-				G = n("./src/reddit/selectors/tags.ts"),
+				G = n("./src/reddit/selectors/subreddit.ts"),
+				W = n("./src/reddit/selectors/tags.ts"),
 				H = n("./src/reddit/selectors/user.ts"),
 				V = n("./src/lib/formatApiError/index.ts");
 			const Y = (e, t) => {
@@ -975,17 +975,17 @@
 				ae = K.a.wrapped(B.a, "CloseButton", Q.a),
 				re = K.a.wrapped(N.b, "ErrorText", Q.a),
 				se = Object(o.c)({
-					error: W.f,
-					isCreatePending: W.l,
+					error: G.f,
+					isCreatePending: G.l,
 					isEmailInviteExperimentEnabled: A.a,
 					isEmployee: H.P,
-					crosspostId: W.k,
+					crosspostId: G.k,
 					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(H.rb)(e),
 					userIsSuspended: H.Z,
-					allTags: G.e,
-					existingTags: G.f,
-					newTags: G.g,
-					selectedPrimaryTagId: G.h
+					allTags: W.e,
+					existingTags: W.f,
+					newTags: W.g,
+					selectedPrimaryTagId: W.h
 				}),
 				ie = Object(i.b)(se, e => ({
 					createCommunity: t => e(Object(m.h)(t)),
@@ -1836,11 +1836,11 @@
 			const s = e => {
 				const t = Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: a.Ed
+					experimentName: a.Gd
 				});
-				return !(!t || Object(a.dg)(t))
+				return !(!t || Object(a.fg)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.759885d503804c42b1c1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.fac4ee5730471c63ad1e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.5080a1cd82cd5696e9a6.js
-// Retrieved at 1/19/2023, 4:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.1261b70b77647b558268.js
+// Retrieved at 1/23/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -6738,12 +6738,12 @@
 						rtJsonElementProps: i
 					});
 					switch (r) {
-						case h.Df.SmIcon:
+						case h.Ff.SmIcon:
 							return o.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case h.Df.SmIconHc:
+						case h.Ff.SmIconHc:
 							return o.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -8346,7 +8346,7 @@
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
 					experimentName: s.D
-				}) === s.Fd
+				}) === s.Hd
 			}
 		},
 		"./src/reddit/selectors/experiments/cnc/index.ts": function(e, t, n) {
@@ -8361,16 +8361,16 @@
 			const r = e => {
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: s.fc
+						experimentName: s.hc
 					});
-					return !(!t || Object(s.dg)(t))
+					return !(!t || Object(s.fg)(t))
 				},
 				i = e => {
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: s.Tb
+						experimentName: s.Ub
 					});
-					return !(!t || Object(s.dg)(t))
+					return !(!t || Object(s.fg)(t))
 				}
 		},
 		"./src/reddit/selectors/experiments/realtimeMQUpdates.ts": function(e, t, n) {
@@ -8384,8 +8384,8 @@
 				i = n("./src/reddit/selectors/experiments/modqueueActionBarUXImprovements.ts");
 			const a = e => Object(i.a)(e) && Object(o.c)(e, {
 				experimentEligibilitySelector: r.S,
-				experimentName: s.tc
-			}) === s.Fd
+				experimentName: s.vc
+			}) === s.Hd
 		},
 		"./src/reddit/selectors/subredditMention.ts": function(e, t, n) {
 			"use strict";
@@ -8410,12 +8410,12 @@
 				d = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.xf
+						experimentName: s.zf
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.Df.SmIcon || t === s.Df.SmIconHc
+					return t === s.Ff.SmIcon || t === s.Ff.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -8453,4 +8453,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.5080a1cd82cd5696e9a6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.1261b70b77647b558268.js.map

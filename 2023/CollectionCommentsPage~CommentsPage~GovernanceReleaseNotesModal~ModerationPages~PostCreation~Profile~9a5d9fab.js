@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.7ff971b95525b104994d.js
-// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.c96a683a6bae84f4ac68.js
+// Retrieved at 1/23/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -212,20 +212,20 @@
 				b = () => Object(g.a)(() => s.e("MuxEmbed").then(s.t.bind(null, "./node_modules/mux-embed/dist/mux.js", 7))),
 				f = s("./src/reddit/constants/experiments.ts"),
 				E = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const v = Object(c.a)(e => {
+			const x = Object(c.a)(e => {
 				const t = Object(E.c)(e, {
 					experimentEligibilitySelector: E.a,
-					experimentName: f.te
+					experimentName: f.ve
 				});
-				return Object(f.dg)(t) ? void 0 : t
+				return Object(f.fg)(t) ? void 0 : t
 			}, e => {
 				const t = Object(E.c)(e, {
 					experimentEligibilitySelector: E.a,
-					experimentName: f.ue
+					experimentName: f.we
 				});
-				return Object(f.dg)(t) ? void 0 : t
-			}, (e, t) => e === f.ve.Enabled && t === f.ve.Enabled);
-			var x = s("./src/config.ts");
+				return Object(f.fg)(t) ? void 0 : t
+			}, (e, t) => e === f.xe.Enabled && t === f.xe.Enabled);
+			var v = s("./src/config.ts");
 			var y = s("./src/reddit/selectors/user.ts");
 			const O = e => {
 					const t = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
@@ -265,10 +265,10 @@
 					anonymousUserId: "t2_anonymous",
 					debug: !1,
 					disableCookies: !0,
-					envKey: x.a.muxApiKey,
+					envKey: v.a.muxApiKey,
 					localStorageSaltKey: "muxSalt",
 					localStorageViewerUserIdKey: "muxViewerUserId",
-					playerVersion: `Reddit/Version Build ${x.a.buildNumber} ${x.a.appName}`,
+					playerVersion: `Reddit/Version Build ${v.a.buildNumber} ${v.a.appName}`,
 					respectDoNotTrack: !0,
 					saltLength: 20,
 					saltTimeToLive: 2592e3,
@@ -435,7 +435,7 @@
 								video_stream_type: s ? L.STREAM_TYPE_LIVE : L.STREAM_TYPE_ON_DEMAND,
 								video_title: i,
 								view_session_id: this.props.sessionId,
-								player_software_version: this.getDashInstanceData() ? x.a.dashVersion : this.getHlsInstanceData() ? x.a.hlsVersion : null
+								player_software_version: this.getDashInstanceData() ? v.a.dashVersion : this.getHlsInstanceData() ? v.a.hlsVersion : null
 							}
 						}
 					}
@@ -445,7 +445,7 @@
 						}))),
 						k = Object(c.c)({
 							redditUserId: y.k,
-							isMuxEnabled: v
+							isMuxEnabled: x
 						});
 					return Object(d.b)(k, null, null, {
 						forwardRef: !0
@@ -523,9 +523,9 @@
 				be = (e, t) => e.some(e => e.y > t && Object(de.M)(e.y, e.x));
 			var fe = s("./src/reddit/selectors/media.ts"),
 				Ee = s("./src/reddit/components/Media/GalleryBox/index.m.less"),
-				ve = s.n(Ee);
+				xe = s.n(Ee);
 			const {
-				fbt: xe
+				fbt: ve
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), ye = e => {
 				const {
 					displayImage: t,
@@ -536,16 +536,16 @@
 				} = e, o = "u" in t ? t.u : t.gif;
 				return l.a.createElement("div", {
 					className: Object(M.a)({
-						[ve.a.slideImageMainDiv]: !i
+						[xe.a.slideImageMainDiv]: !i
 					})
 				}, n && l.a.createElement("img", {
 					src: o,
 					alt: a,
-					className: ve.a.slideImage,
+					className: xe.a.slideImage,
 					style: s
 				}), i && l.a.createElement("div", {
-					className: ve.a.seeMore
-				}, xe._("see full image", null, {
+					className: xe.a.seeMore
+				}, ve._("see full image", null, {
 					hk: "1Qygw5"
 				})))
 			}, Oe = (e, t, s) => {
@@ -591,17 +591,17 @@
 				}, b = ue(r), f = a.y > b && Object(de.M)(a.y, a.x), E = f ? {} : {
 					maxHeight: "100%"
 				};
-				let v;
-				return v = i || (f ? a : "gif" in a ? a : n), l.a.createElement("li", {
+				let x;
+				return x = i || (f ? a : "gif" in a ? a : n), l.a.createElement("li", {
 					style: g,
-					className: ve.a.slide
+					className: xe.a.slide
 				}, l.a.createElement("figure", {
 					className: Object(M.a)({
-						[ve.a.tallImage]: f,
-						[ve.a.commonImage]: !f
-					}, ve.a.figure)
+						[xe.a.tallImage]: f,
+						[xe.a.commonImage]: !f
+					}, xe.a.figure)
 				}, r || p ? l.a.createElement(ye, {
-					displayImage: v,
+					displayImage: x,
 					style: E,
 					showSeeMore: f,
 					isReadyToShow: m,
@@ -611,11 +611,11 @@
 					rel: "noopener noreferrer",
 					target: "_blank",
 					className: Object(M.a)({
-						[ve.a.tallImage]: f,
-						[ve.a.commonImage]: !f
-					}, ve.a.imageLink)
+						[xe.a.tallImage]: f,
+						[xe.a.commonImage]: !f
+					}, xe.a.imageLink)
 				}, l.a.createElement(ye, {
-					displayImage: v,
+					displayImage: x,
 					style: E,
 					showSeeMore: f,
 					isReadyToShow: m,
@@ -625,8 +625,8 @@
 					isSpoiler: !!u
 				}))))
 			}, Ie = e => l.a.createElement("a", {
-				className: Object(M.a)(e.className, ve.a.navigationUnderlay, {
-					[ve.a.hasMoreSlides]: e.hasMoreSlides
+				className: Object(M.a)(e.className, xe.a.navigationUnderlay, {
+					[xe.a.hasMoreSlides]: e.hasMoreSlides
 				}),
 				onClick: t => {
 					e.onClick(), t.stopPropagation()
@@ -638,42 +638,42 @@
 				},
 				title: e.hasMoreSlides ? e.title : void 0
 			}, e.hasMoreSlides && l.a.createElement("i", {
-				className: Object(M.a)(e.iconClassName, ve.a.icon)
+				className: Object(M.a)(e.iconClassName, xe.a.icon)
 			}, l.a.createElement(ee.a, {
-				className: ve.a.iconImage
+				className: xe.a.iconImage
 			}))), Ce = e => l.a.createElement("div", {
-				className: ve.a.imageMetaData,
+				className: xe.a.imageMetaData,
 				style: {
 					height: e.captionHeight,
 					justifyContent: e.caption ? "space-between" : "flex-end"
 				}
 			}, e.caption && l.a.createElement("span", {
-				className: ve.a.imageCaption,
+				className: xe.a.imageCaption,
 				title: e.caption
 			}, e.caption), e.outboundUrl && l.a.createElement("span", {
-				className: ve.a.imageUrl
+				className: xe.a.imageUrl
 			}, l.a.createElement("a", {
-				className: ve.a.outboundUrlWrapper,
+				className: xe.a.outboundUrlWrapper,
 				href: e.outboundUrl,
 				onClick: e.onClickEvent,
 				rel: "noopener noreferrer",
 				target: "'_blank'"
 			}, l.a.createElement("span", {
-				className: ve.a.urlText
+				className: xe.a.urlText
 			}, (e => {
 				const t = le.a.parse(e),
 					s = t.path || "",
 					i = s.length > 7 ? s.substring(0, 7) + "..." : s;
 				return (t.hostname ? t.hostname.replace("www.", "") : "") + i.substring(i.lastIndexOf("/") + 1)
 			})(e.outboundUrl)), l.a.createElement(te.a, {
-				className: ve.a.linkIcon
+				className: xe.a.linkIcon
 			})))), Se = e => l.a.createElement("div", {
-				className: ve.a.slideIndicator,
+				className: xe.a.slideIndicator,
 				onClick: e.toggleTileLayout ? t => {
 					t.preventDefault(), t.stopPropagation(), e.toggleTileLayout()
 				} : void 0
 			}, e.toggleTileLayout && l.a.createElement(se.a, {
-				className: ve.a.tileIcon
+				className: xe.a.tileIcon
 			}), e.currentSlide, "/", e.totalSlides), Te = function(e) {
 				let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 4,
 					s = e - t;
@@ -699,21 +699,21 @@
 							shouldShowTileLayoutOption: b,
 							showPromotedCTA: f,
 							subredditName: E,
-							isVisible: v
+							isVisible: x
 						} = e,
-						x = Object(d.e)(e => Object(fe.d)(e, h)),
-						y = x > 0,
-						O = x < i.length - 1,
+						v = Object(d.e)(e => Object(fe.d)(e, h)),
+						y = v > 0,
+						O = v < i.length - 1,
 						w = Object(Z.a)(),
 						I = Object(r.useRef)(null),
 						C = Object(r.useRef)(null),
-						[S, T] = Object(r.useState)(v ? x : -1),
-						[j, N] = Object(r.useState)(v ? x : -1),
-						L = Object(q.a)(v),
-						P = Object(q.a)(x);
+						[S, T] = Object(r.useState)(x ? v : -1),
+						[j, N] = Object(r.useState)(x ? v : -1),
+						L = Object(q.a)(x),
+						P = Object(q.a)(v);
 					Object(r.useEffect)(() => {
-						(void 0 !== L && L !== v && v && S < 0 && j < 0 || void 0 !== P && P !== x && v && (S > x || j < x)) && (T(Te(x, 1)), N(je(x, i.length, 1)))
-					}, [L, x, v, S, j, P, i.length, h]);
+						(void 0 !== L && L !== x && x && S < 0 && j < 0 || void 0 !== P && P !== v && x && (S > v || j < v)) && (T(Te(v, 1)), N(je(v, i.length, 1)))
+					}, [L, v, x, S, j, P, i.length, h]);
 					const k = Object(r.useRef)(),
 						D = Object(r.useCallback)(e => {
 							e.forEach(e => {
@@ -744,39 +744,39 @@
 						}, [t, h, c]),
 						V = Object(r.useCallback)(() => {
 							if (!O) return;
-							const e = x + 1;
+							const e = v + 1;
 							if (e + 1 >= j) {
 								const e = je(j, i.length);
 								e !== j && N(e)
 							}
 							A(e), w(Q.b(h, e)), w(Q.d(h, e + 1)), R(e)
-						}, [O, x, R, A, w, h, j, i.length]),
+						}, [O, v, R, A, w, h, j, i.length]),
 						W = Object(r.useCallback)(() => {
 							if (!y) return;
-							const e = x - 1;
+							const e = v - 1;
 							if (e - 1 <= S) {
 								const e = Te(S);
 								e !== S && T(e)
 							}
-							const t = x + 1;
+							const t = v + 1;
 							A(e), w(Q.a(h, t)), w(Q.d(h, t - 1)), R(e)
-						}, [y, x, R, A, w, h, S]),
+						}, [y, v, R, A, w, h, S]),
 						F = Object(r.useCallback)(() => {
-							const e = i[x] && i[x].outboundUrl;
+							const e = i[v] && i[v].outboundUrl;
 							e && w(Q.c(h, e))
-						}, [w, h, x, i]);
+						}, [w, h, v, i]);
 					X(oe.a.ArrowLeft, I.current, W), X(oe.a.ArrowRight, I.current, V);
-					const G = i[x] && i[x].caption,
-						K = i[x] && i[x].outboundUrl,
+					const G = i[v] && i[v].caption,
+						K = i[v] && i[v].outboundUrl,
 						J = Oe(p, n, a);
 					return l.a.createElement("div", {
 						"data-adclicklocation": u.a.MEDIA,
-						className: Object(M.a)(ve.a.outerContainer),
+						className: Object(M.a)(xe.a.outerContainer),
 						ref: I,
 						tabIndex: 0
 					}, c ? l.a.createElement(l.a.Fragment, null, l.a.createElement("div", {
-						className: Object(M.a)(ve.a.tilesWrapper, {
-							[ve.a.blurredContent]: e.shouldBlur
+						className: Object(M.a)(xe.a.tilesWrapper, {
+							[xe.a.blurredContent]: e.shouldBlur
 						}),
 						onClick: e.onClickRevealBlurred
 					}, i.map((t, s) => {
@@ -791,7 +791,7 @@
 							style: {
 								backgroundImage: `url(${"gif"in r?r.gif:"u"in o&&o.u})`
 							},
-							className: ve.a.tileImage,
+							className: xe.a.tileImage,
 							onClick: e.shouldBlur ? void 0 : e => {
 								e.preventDefault(), e.stopPropagation(), B(), A(s)
 							},
@@ -799,20 +799,20 @@
 						})
 					}), [1, 2, 3].map(e => l.a.createElement("div", {
 						key: e,
-						className: ve.a.tilePlaceholder
+						className: xe.a.tilePlaceholder
 					}))), e.shouldBlur && !e.isNsfwBlockingModalEligible && l.a.createElement(ne.a, {
 						isNSFW: !!e.isNSFW,
 						isSpoiler: !!e.isSpoiler
 					})) : l.a.createElement("div", {
-						className: ve.a.slideshowContainer,
+						className: xe.a.slideshowContainer,
 						tabIndex: -1,
 						ref: C,
 						onClick: e.onClickRevealBlurred,
 						style: J
 					}, l.a.createElement("div", {
-						className: ve.a.imagesWrapper
+						className: xe.a.imagesWrapper
 					}, l.a.createElement("ul", {
-						className: ve.a.slideWrapper
+						className: xe.a.slideWrapper
 					}, i.map((t, s) => {
 						const i = t.mediaId,
 							a = p && p[i];
@@ -826,7 +826,7 @@
 							h = s >= S && s <= j;
 						return l.a.createElement(we, {
 							slideIndex: s,
-							currentIndex: x,
+							currentIndex: v,
 							obfuscatedImage: m,
 							optimalImage: u,
 							originalImage: a.s,
@@ -844,26 +844,26 @@
 						onClick: W,
 						setFocusTo: C,
 						hasMoreSlides: y,
-						title: xe._("Previous", null, {
+						title: ve._("Previous", null, {
 							hk: "3dZcTi"
 						}),
-						iconClassName: ve.a.prevIcon,
-						className: ve.a.prevButton
+						iconClassName: xe.a.prevIcon,
+						className: xe.a.prevButton
 					}), l.a.createElement(Ie, {
 						onClick: V,
 						setFocusTo: C,
 						hasMoreSlides: O,
-						title: xe._("Next", null, {
+						title: ve._("Next", null, {
 							hk: "3Ajk1H"
 						}),
-						iconClassName: ve.a.nextIcon,
-						className: ve.a.nextButton
+						iconClassName: xe.a.nextIcon,
+						className: xe.a.nextButton
 					}))), i.length > 1 ? l.a.createElement(Se, {
-						currentSlide: x + 1,
+						currentSlide: v + 1,
 						totalSlides: i.length,
 						toggleTileLayout: b && B || void 0
 					}) : ""), !G && !K || c || f ? !!s && !c && !f && l.a.createElement("div", {
-						className: ve.a.emptyCaptionBlock,
+						className: xe.a.emptyCaptionBlock,
 						style: {
 							height: s
 						}
@@ -1001,12 +1001,12 @@
 					isDeleted: b
 				} = Object(d.e)(e => e.mediaEmbed[c] || {}), f = u ? b ? Xe : g : Ze, E = s.isListing ? Math.min(f, de.j) : f;
 
-				function v(e) {
+				function x(e) {
 					var t;
 					u || (null === (t = null == h ? void 0 : h.current) || void 0 === t ? void 0 : t.contentWindow) !== e.source || "tweet-measured" !== e.data.action || p(!0)
 				}
-				return Object(r.useEffect)(() => (window.addEventListener("message", v), () => {
-					h.current && Object(Ye.b)(h.current), window.removeEventListener("message", v)
+				return Object(r.useEffect)(() => (window.addEventListener("message", x), () => {
+					h.current && Object(Ye.b)(h.current), window.removeEventListener("message", x)
 				}), []), Object(r.useEffect)(() => {
 					!t && m && p(!1)
 				}, [m, t]), l.a.createElement(Pe.a, qe({}, s, {
@@ -1122,8 +1122,8 @@
 					document: s.updated
 				} : e
 			}
-			const vt = [_.Sb.INDEX, _.Sb.COMMENTS, _.Sb.SUBREDDIT];
-			var xt = s("./src/reddit/selectors/experiments/intuitivePostTypes.ts"),
+			const xt = [_.Sb.INDEX, _.Sb.COMMENTS, _.Sb.SUBREDDIT];
+			var vt = s("./src/reddit/selectors/experiments/intuitivePostTypes.ts"),
 				yt = s("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
 				Ot = s("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
 				wt = s("./src/reddit/selectors/experiments/postSeo.ts"),
@@ -1198,9 +1198,9 @@
 						setAutoplayPref: f,
 						scrubberThumbSource: E
 					} = e || {},
-					v = p || void 0,
-					x = Object(d.e)(Rt.i),
-					y = !m && x;
+					x = p || void 0,
+					v = Object(d.e)(Rt.i),
+					y = !m && v;
 				Object(r.useEffect)(() => {
 					"ready" === a && async function() {
 						try {
@@ -1308,10 +1308,10 @@
 					poster: b,
 					preview: E || void 0,
 					"show-autoplay-toggle": !0,
-					src: v,
+					src: x,
 					ui: "desktop"
 				}, l.a.createElement("source", {
-					src: v,
+					src: x,
 					type: "application/vnd.apple.mpegURL"
 				}))))
 			})), (function(e, t) {
@@ -1414,8 +1414,8 @@
 							var i;
 							return Object(E.c)(e, {
 								experimentEligibilitySelector: E.a,
-								experimentName: f.Hc
-							}) === f.Fd && !s.isSponsored && vt.includes(null === (i = null == t ? void 0 : t.meta) || void 0 === i ? void 0 : i.name)
+								experimentName: f.Jc
+							}) === f.Hd && !s.isSponsored && xt.includes(null === (i = null == t ? void 0 : t.meta) || void 0 === i ? void 0 : i.name)
 						})(e, s, i)
 					},
 					isNSFW: (e, t) => {
@@ -1434,7 +1434,7 @@
 					},
 					isBot: It.d,
 					isNsfwBlurSubreddit: Ot.e,
-					isOptionalTextExpEnabled: xt.a
+					isOptionalTextExpEnabled: vt.a
 				}),
 				as = Object(d.b)(ns, e => ({
 					fireAdPixelsOfType: (t, s) => e(Object(U.y)(t, s)),
@@ -1699,8 +1699,8 @@
 						isMediumHeight: b,
 						isNotCardView: f,
 						isNsfwBlurSubreddit: E,
-						isNSFW: v,
-						isOptionalTextExpEnabled: x,
+						isNSFW: x,
+						isOptionalTextExpEnabled: v,
 						isSpoiler: y,
 						isTitleOnly: O,
 						nightmode: w,
@@ -1718,12 +1718,12 @@
 						shouldPause: D,
 						shouldStop: B,
 						viewportWidth: V
-					} = this.state, H = E && v;
+					} = this.state, H = E && x;
 					if (!S.media) return null;
 					const U = S.isSponsored || Object(P.u)(C);
 					let K;
 					S.media.type !== de.o.TEXT && (K = S.media.richtextContent);
-					const Y = x && K && !U,
+					const Y = v && K && !U,
 						z = _ || D,
 						q = B,
 						{
@@ -1767,7 +1767,7 @@
 						contentImageClassName: this.props.imageBoxContentImageClassName,
 						imageClassName: this.props.imageBoxClassName,
 						isListing: g,
-						isNSFW: v,
+						isNSFW: x,
 						isNsfwBlockingModalEligible: H,
 						isSpoiler: y,
 						isVideoThumbnail: !!S.media && S.media.type === de.o.VIDEO,
@@ -1804,7 +1804,7 @@
 								content: a,
 								flairStyleTemplate: d,
 								isListing: g,
-								isNSFW: v,
+								isNSFW: x,
 								isNsfwBlockingModalEligible: H,
 								isSpoiler: y,
 								mediaMetadata: S.media.mediaMetadata,
@@ -1858,7 +1858,7 @@
 								imageClassName: this.props.imageBoxClassName,
 								isExpando: m,
 								isListing: g,
-								isNSFW: v,
+								isNSFW: x,
 								isCrosspost: !!n,
 								isSpoiler: y,
 								postId: S.id,
@@ -1942,7 +1942,7 @@
 								imageClassName: this.props.imageBoxClassName,
 								isExpando: m,
 								isListing: g,
-								isNSFW: v,
+								isNSFW: x,
 								isCrosspost: !!n,
 								isSpoiler: y,
 								postId: S.id,
@@ -2026,7 +2026,7 @@
 								imageClassName: this.props.imageBoxClassName,
 								isExpando: m,
 								isListing: g,
-								isNSFW: v,
+								isNSFW: x,
 								isCrosspost: !!n,
 								isSpoiler: y,
 								maxHeight: m ? o : void 0,
@@ -2045,11 +2045,11 @@
 							}));
 						case de.o.GALLERY:
 							const E = pe(S.media.mediaMetadata || {}, ue(g), de.p, ee),
-								x = (me = S.media.gallery, he = S.isSponsored, me && me.items && !he && me.items.some(e => void 0 !== e.caption || void 0 !== e.outboundUrl) ? de.i : 0);
+								v = (me = S.media.gallery, he = S.isSponsored, me && me.items && !he && me.items.some(e => void 0 !== e.caption || void 0 !== e.outboundUrl) ? de.i : 0);
 							return l.a.createElement(Pe.a, Gt({}, ie, {
 								blurSrc: te ? Q : void 0,
 								isExpando: !!m,
-								maxGalleryHeight: E + x,
+								maxGalleryHeight: E + v,
 								className: Ft.a.galleryMediaContainer,
 								isGalleryTileLayout: h
 							}), l.a.createElement(Xt, {
@@ -2062,12 +2062,12 @@
 								galleryItems: S.media.gallery ? S.media.gallery.items : [],
 								mediaMetadata: S.media.mediaMetadata || {},
 								imageHeight: E,
-								captionHeight: x,
+								captionHeight: v,
 								isSponsored: S.isSponsored,
 								showPromotedCTA: !!N,
 								className: this.props.imageBoxClassName,
 								isListing: g,
-								isNSFW: v,
+								isNSFW: x,
 								isNsfwBlockingModalEligible: H,
 								isSpoiler: y,
 								shouldBlur: ne,
@@ -2257,10 +2257,10 @@
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
 						experimentName: i.Ib
-					}) === i.Fd
+					}) === i.Hd
 				})(e)
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.7ff971b95525b104994d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.c96a683a6bae84f4ac68.js.map

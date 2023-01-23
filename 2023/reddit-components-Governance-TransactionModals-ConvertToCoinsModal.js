@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.d6aeceb14904fae427ae.js
-// Retrieved at 1/19/2023, 4:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.7e350f651f394b0b604e.js
+// Retrieved at 1/23/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ConvertToCoinsModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, n) {
@@ -352,8 +352,8 @@
 					L = x("paymentRequestButton", C),
 					D = x("linkAuthentication", C),
 					B = x("shippingAddress", C),
-					F = x("afterpayClearpayMessage", C);
-				e.AfterpayClearpayMessageElement = F, e.AuBankAccountElement = w, e.CardCvcElement = N, e.CardElement = M, e.CardExpiryElement = k, e.CardNumberElement = P, e.Elements = y, e.ElementsConsumer = E, e.EpsBankElement = T, e.FpxBankElement = _, e.IbanElement = I, e.IdealBankElement = A, e.LinkAuthenticationElement = D, e.P24BankElement = S, e.PaymentElement = z, e.PaymentRequestButtonElement = L, e.ShippingAddressElement = B, e.useElements = function() {
+					G = x("afterpayClearpayMessage", C);
+				e.AfterpayClearpayMessageElement = G, e.AuBankAccountElement = w, e.CardCvcElement = N, e.CardElement = M, e.CardExpiryElement = k, e.CardNumberElement = P, e.Elements = y, e.ElementsConsumer = E, e.EpsBankElement = T, e.FpxBankElement = _, e.IbanElement = I, e.IdealBankElement = A, e.LinkAuthenticationElement = D, e.P24BankElement = S, e.PaymentElement = z, e.PaymentRequestButtonElement = L, e.ShippingAddressElement = B, e.useElements = function() {
 					return g("calls useElements()").elements
 				}, e.useStripe = function() {
 					return g("calls useStripe()").stripe
@@ -1533,13 +1533,13 @@
 				L = n("./src/reddit/selectors/gold/econPurchase.ts"),
 				D = n("./src/reddit/selectors/gold/productOffers.ts"),
 				B = n("./src/reddit/selectors/gov.ts"),
-				F = n("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx"),
-				G = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx");
+				G = n("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx"),
+				F = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx");
 
 			function R(e) {
-				return a.a.createElement(G.b, {
+				return a.a.createElement(F.b, {
 					values: [
-						[Object(G.a)(), e.contractAddress],
+						[Object(F.a)(), e.contractAddress],
 						[d.fbt._("Function", null, {
 							hk: "1Q0dwF"
 						}), "burn"]
@@ -1669,12 +1669,12 @@
 					h = null === (n = null === (t = null == f ? void 0 : f.pricePackages) || void 0 === t ? void 0 : t[0]) || void 0 === n ? void 0 : n.price,
 					y = Object(o.a)(),
 					g = Object(T.a)(),
-					[E, G] = Object(r.useState)(""),
+					[E, F] = Object(r.useState)(""),
 					[V, U] = Object(r.useState)(0);
 				Object(r.useEffect)(() => {
 					if (h && !E) {
 						const e = O.a.minimum(new O.a(h).multipliedBy(K), m).toFixed(0);
-						G(e), U(new O.a(e).dividedBy(h).toNumber())
+						F(e), U(new O.a(e).dividedBy(h).toNumber())
 					}
 				}, [h]);
 				const W = s.displayConversion,
@@ -1682,11 +1682,11 @@
 						g(Object(S.c)("coins", u, new O.a(E).dividedBy(W).toFixed(), e))
 					},
 					Q = () => y(Object(P.f)());
-				return a.a.createElement(F.a, {
+				return a.a.createElement(G.a, {
 					approvalOverview: a.a.createElement(Z, {
 						pointsAmount: E,
 						onChange: (e, t) => {
-							G(e), U(t)
+							F(e), U(t)
 						},
 						pointsBalance: m,
 						pointsName: s.name,
@@ -2577,14 +2577,14 @@
 			const c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: r.pe
-					}) === r.Fd
+						experimentName: r.re
+					}) === r.Hd
 				},
 				s = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: r.ne
-					}) === r.Fd
+						experimentName: r.pe
+					}) === r.Hd
 				}
 		},
 		"./src/reddit/selectors/gold/econPurchase.ts": function(e, t, n) {
@@ -2770,4 +2770,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.d6aeceb14904fae427ae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.7e350f651f394b0b604e.js.map

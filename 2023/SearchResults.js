@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.4b7a16640ee6e584b1ce.js
-// Retrieved at 1/19/2023, 4:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.5a441b5139a2d05fbd6a.js
+// Retrieved at 1/23/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, o) {
@@ -1308,12 +1308,15 @@
 				return c
 			})), o.d(t, "e", (function() {
 				return i
+			})), o.d(t, "f", (function() {
+				return d
 			}));
 			const s = "comment",
 				n = "comment-submission-form-markdown",
 				r = "comment-submission-form-richtext",
 				c = "comments-page-link-num-comments",
-				i = "post-content"
+				i = "language-prompt-close",
+				d = "post-content"
 		},
 		"./src/reddit/controls/CheckboxMenuItem/index.m.less": function(e, t, o) {
 			e.exports = {
@@ -2122,13 +2125,13 @@
 				c = o("./src/reddit/models/Post/index.ts"),
 				i = o("./src/reddit/selectors/posts.ts");
 			const d = e => Object(r.c)(e, {
-					experimentName: n.We,
+					experimentName: n.Ye,
 					experimentEligibilitySelector: r.a
 				}),
-				a = (e, t) => (t === n.df.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(c.A)(e),
+				a = (e, t) => (t === n.ff.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(c.A)(e),
 				l = Object(s.a)(i.G, d, (e, t) => a(e, t));
 			Object(s.a)((e, t) => t, d, (e, t) => a(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.4b7a16640ee6e584b1ce.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.5a441b5139a2d05fbd6a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.c353a79117d3f7934121.js
-// Retrieved at 1/19/2023, 4:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.45e7662738534a1da394.js
+// Retrieved at 1/23/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, s) {
@@ -5246,12 +5246,15 @@
 				return i
 			})), s.d(t, "e", (function() {
 				return a
+			})), s.d(t, "f", (function() {
+				return c
 			}));
 			const o = "comment",
 				n = "comment-submission-form-markdown",
 				r = "comment-submission-form-richtext",
 				i = "comments-page-link-num-comments",
-				a = "post-content"
+				a = "language-prompt-close",
+				c = "post-content"
 		},
 		"./src/reddit/constants/postCreation.ts": function(e, t, s) {
 			"use strict";
@@ -6360,10 +6363,10 @@
 				n = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(o.a)(e => Object(r.c)(e, {
-					experimentName: n.Bc,
+					experimentName: n.Dc,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				a = Object(o.a)(i, e => e === n.Fd)
+				a = Object(o.a)(i, e => e === n.Hd)
 		},
 		"./src/reddit/selectors/experiments/reportingRevampDesktop.ts": function(e, t, s) {
 			"use strict";
@@ -6390,10 +6393,10 @@
 				i = s("./src/reddit/models/Post/index.ts"),
 				a = s("./src/reddit/selectors/posts.ts");
 			const c = e => Object(r.c)(e, {
-					experimentName: n.We,
+					experimentName: n.Ye,
 					experimentEligibilitySelector: r.a
 				}),
-				d = (e, t) => (t === n.df.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(i.A)(e),
+				d = (e, t) => (t === n.ff.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(i.A)(e),
 				l = Object(o.a)(a.G, c, (e, t) => d(e, t));
 			Object(o.a)((e, t) => t, c, (e, t) => d(e, t))
 		},
@@ -6402,4 +6405,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.c353a79117d3f7934121.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.45e7662738534a1da394.js.map

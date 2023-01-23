@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.ed2d217f147bd3f59535.js
-// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.65ed6e4ccafc8a614da2.js
+// Retrieved at 1/23/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./node_modules/lodash/map.js": function(e, t, s) {
@@ -59,8 +59,8 @@
 				p = s("./src/reddit/models/Reportable/index.ts"),
 				b = s("./src/reddit/models/Toast/index.ts"),
 				O = s("./src/reddit/selectors/commentSelector.ts"),
-				_ = s("./src/reddit/selectors/user.ts"),
-				R = s("./src/reddit/actions/comment/index.ts"),
+				R = s("./src/reddit/selectors/user.ts"),
+				_ = s("./src/reddit/actions/comment/index.ts"),
 				f = s("./src/reddit/actions/comment/constants.ts");
 			const j = Object(r.a)(f.p),
 				S = e => async (t, s, o) => {
@@ -76,11 +76,11 @@
 					let {
 						apiContext: r
 					} = n;
-					if (!Object(_.S)(s())) return void t(Object(a.i)(l.a.LOGIN_MODAL_ID));
+					if (!Object(R.S)(s())) return void t(Object(a.i)(l.a.LOGIN_MODAL_ID));
 					const d = s().features.comments.models[e];
 					if (!d) return;
 					const i = d.isLocked ? m.l : m.f;
-					t(Object(R.j)({
+					t(Object(_.j)({
 						[e]: {
 							isLocked: !d.isLocked
 						}
@@ -91,7 +91,7 @@
 						}) : o.fbt._("comment has been locked", null, {
 							hk: "1pBDQl"
 						})
-					})) : t(Object(R.j)({
+					})) : t(Object(_.j)({
 						[e]: {
 							isLocked: d.isLocked
 						}
@@ -104,7 +104,7 @@
 					const a = s(),
 						l = a.features.comments.models[e],
 						u = a.user.account ? a.user.account.displayText : null;
-					l && u && (t(Object(R.j)({
+					l && u && (t(Object(_.j)({
 						[e]: {
 							isApproved: !0,
 							approvedBy: u,
@@ -122,7 +122,7 @@
 						text: o.fbt._("comment has been approved", null, {
 							hk: "4GfKQi"
 						})
-					})) : t(Object(R.j)({
+					})) : t(Object(_.j)({
 						[e]: {
 							isApproved: l.isApproved,
 							approvedBy: null,
@@ -143,7 +143,7 @@
 					const l = n(),
 						u = l.features.comments.models[e],
 						p = l.user.account ? l.user.account.displayText : null;
-					u && p && (s(Object(R.j)({
+					u && p && (s(Object(_.j)({
 						[e]: {
 							approvedBy: null,
 							bannedBy: p,
@@ -160,7 +160,7 @@
 						}) : o.fbt._("comment has been removed", null, {
 							hk: "1qNTrD"
 						})
-					})) : s(Object(R.j)({
+					})) : s(Object(_.j)({
 						[e]: {
 							approvedBy: u.approvedBy,
 							bannedBy: u.bannedBy,
@@ -177,7 +177,7 @@
 					const d = s().features.comments.models[e];
 					if (!d) return;
 					const a = d.ignoreReports ? m.k : m.e;
-					d.ignoreReports || t(A(e)), t(Object(R.j)({
+					d.ignoreReports || t(A(e)), t(Object(_.j)({
 						[e]: {
 							ignoreReports: !d.ignoreReports
 						}
@@ -188,7 +188,7 @@
 						}) : o.fbt._("comment has had its reports ignored", null, {
 							hk: "2q4sCp"
 						})
-					})) : t(Object(R.j)({
+					})) : t(Object(_.j)({
 						[e]: {
 							ignoreReports: d.ignoreReports
 						}
@@ -202,14 +202,14 @@
 					});
 					if (!l) return;
 					const m = s === n.kc.Snoozed,
-						_ = {
+						R = {
 							itemId: e,
 							reportText: t,
 							isSnoozed: m
 						};
 					if ((await Object(u.a)(i(), {
-							input: _
-						})).ok) r(Object(R.j)({
+							input: R
+						})).ok) r(Object(_.j)({
 						[e]: {
 							userReports: Object(p.a)(l.userReports, t, m)
 						}
@@ -230,36 +230,36 @@
 					if (!u) return;
 					const p = u.postId,
 						b = l.postStickiedComments.data[p];
-					o(Object(R.j)({
+					o(Object(_.j)({
 						[e]: {
 							distinguishType: t,
 							isAdmin: t === n.J.ADMIN,
 							isMod: t === n.J.MODERATOR,
 							isStickied: !!s
 						}
-					})), s && b && b !== e && o(Object(R.j)({
+					})), s && b && b !== e && o(Object(_.j)({
 						[b]: {
 							isStickied: !1
 						}
 					}));
 					const O = Object(m.c)(c(), e, t),
-						_ = Object(m.d)(c(), e, !!s),
+						R = Object(m.d)(c(), e, !!s),
 						f = [O];
-					(s || !s && e === b) && f.push(_), (await Promise.all(f)).every(e => e.ok) ? s && o(v({
+					(s || !s && e === b) && f.push(R), (await Promise.all(f)).every(e => e.ok) ? s && o(v({
 						id: e,
 						postId: p,
 						commentsPageKey: Object(d.a)(p, null, {
 							sort: n.w.CONFIDENCE,
 							...l.platform.currentPage.queryParams
 						})
-					})) : (o(Object(R.j)({
+					})) : (o(Object(_.j)({
 						[e]: {
 							distinguishType: u.distinguishType,
 							isAdmin: u.isAdmin,
 							isMod: u.isMod,
 							isStickied: u.isStickied
 						}
-					})), o(Object(R.j)({
+					})), o(Object(_.j)({
 						[b]: {
 							isStickied: l.features.comments.models[b].isStickied
 						}
@@ -303,9 +303,9 @@
 			})), s.d(t, "removedItemsSelected", (function() {
 				return Oe
 			})), s.d(t, "fetchReasonsAndOpenModal", (function() {
-				return _e
-			})), s.d(t, "removalReasonSubmittedPending", (function() {
 				return Re
+			})), s.d(t, "removalReasonSubmittedPending", (function() {
+				return _e
 			})), s.d(t, "removalReasonSubmittedSuccess", (function() {
 				return fe
 			})), s.d(t, "removalReasonSubmittedFailed", (function() {
@@ -336,7 +336,7 @@
 				p = "REMOVALREASONS__DELETE_PENDING",
 				b = "REMOVALREASONS__DELETE_SUCCESS",
 				O = "REMOVALREASONS__DELETE_FAILED";
-			var _ = function() {
+			var R = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -358,7 +358,7 @@
 						return e
 				}
 			};
-			var R = function() {
+			var _ = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -381,8 +381,8 @@
 					}
 				},
 				f = Object(r.c)({
-					error: _,
-					pending: R
+					error: R,
+					pending: _
 				});
 			const j = {};
 			var S = function() {
@@ -622,7 +622,7 @@
 							hk: "4xzgsa"
 						})
 					}))) : s(pe(i.error))
-				}, Oe = Object(I.a)("REMOVALREASONS__REMOVEDITEMS_SELECTED"), _e = (e, t) => async (s, o, n) => {
+				}, Oe = Object(I.a)("REMOVALREASONS__REMOVEDITEMS_SELECTED"), Re = (e, t) => async (s, o, n) => {
 					let {
 						apiContext: r
 					} = n;
@@ -631,7 +631,7 @@
 						subredditId: e,
 						itemIds: t
 					})), s(Object(D.i)(M.a.ADD_REMOVAL_REASON))
-				}, Re = Object(I.a)("REMOVALREASONS__SUBMIT_PENDING"), fe = Object(I.a)("REMOVALREASONS__SUBMIT_SUCCESS"), je = Object(I.a)("REMOVALREASONS__SUBMIT_FAILED"), Se = Object(I.a)("REMOVALREASONS__MESSAGE_PENDING"), Ee = Object(I.a)("REMOVALREASONS__MESSAGE_PRIVATE_SUCCESS"), ve = Object(I.a)("REMOVALREASONS__MESSAGE_PUBLIC_SUCCESS"), Ae = Object(I.a)("REMOVALREASONS__MESSAGE_FAILED"), he = (e, t, s, o, n, r) => async (d, a, i) => {
+				}, _e = Object(I.a)("REMOVALREASONS__SUBMIT_PENDING"), fe = Object(I.a)("REMOVALREASONS__SUBMIT_SUCCESS"), je = Object(I.a)("REMOVALREASONS__SUBMIT_FAILED"), Se = Object(I.a)("REMOVALREASONS__MESSAGE_PENDING"), Ee = Object(I.a)("REMOVALREASONS__MESSAGE_PRIVATE_SUCCESS"), ve = Object(I.a)("REMOVALREASONS__MESSAGE_PUBLIC_SUCCESS"), Ae = Object(I.a)("REMOVALREASONS__MESSAGE_FAILED"), he = (e, t, s, o, n, r) => async (d, a, i) => {
 					let {
 						apiContext: c
 					} = i;
@@ -642,20 +642,20 @@
 						b = p === Q.e.Post ? l.posts.models[u] : l.features.comments.models[u],
 						O = p === Q.e.Post ? N.Q : g.j;
 					if (!b || !m) return !1;
-					d(Re()), d(O({
+					d(_e()), d(O({
 						[u]: {
 							modNote: n,
 							modRemovalReason: t && t.title,
 							modReasonBy: m
 						}
 					}));
-					const _ = {
+					const R = {
 							itemIds: e,
 							modNote: n,
 							reasonId: t ? t.id : null
 						},
-						R = await K(c(), _);
-					if (R.ok) {
+						_ = await K(c(), R);
+					if (_.ok) {
 						if (d(fe()), t) {
 							d(Se());
 							const n = {
@@ -720,7 +720,7 @@
 							}
 							return d(Ae(a.error)), !1
 						}
-					} else d(je(R.error)), d(O({
+					} else d(je(_.error)), d(O({
 						[u]: {
 							modNote: b.modNote,
 							modRemovalReason: b.modRemovalReason,
@@ -735,7 +735,7 @@
 					const l = a(),
 						m = l.user.account && l.user.account.displayText;
 					if (!m) return;
-					d(Re());
+					d(_e());
 					const u = Object(P.f)({
 							kind: X.b.SuccessMod,
 							text: o.fbt._({
@@ -787,9 +787,9 @@
 		"./src/reddit/components/InfoTextTooltip/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return _
-			})), s.d(t, "a", (function() {
 				return R
+			})), s.d(t, "a", (function() {
+				return _
 			}));
 			var o = s("./node_modules/react/index.js"),
 				n = s.n(o),
@@ -813,11 +813,11 @@
 			}
 			const b = u.a.div("Text", m.a),
 				O = u.a.div("BottomText", m.a),
-				_ = e => n.a.createElement(b, {
+				R = e => n.a.createElement(b, {
 					className: e.className,
 					style: e.style
 				}, e.text, e.children),
-				R = e => {
+				_ = e => {
 					const t = e.overflow ? e.overflow.left : 0;
 					return n.a.createElement(O, {
 						className: e.className,
@@ -835,8 +835,8 @@
 						return Object(c.b)(s)(e)
 					}
 				}),
-				j = Object(i.a)(R, [a.a.Click, a.a.Keydown]),
-				S = Object(i.a)(_, [a.a.Click, a.a.Keydown]),
+				j = Object(i.a)(_, [a.a.Click, a.a.Keydown]),
+				S = Object(i.a)(R, [a.a.Click, a.a.Keydown]),
 				E = Object(r.b)(f);
 			t.c = E(e => {
 				const {
@@ -1073,11 +1073,11 @@
 				experimentEligibilitySelector: n.a,
 				experimentName: o.pb
 			}), e => ({
-				bucketed: e === o.Pc.ExpandedSearch || e === o.Pc.CollapsedSearch,
-				collapsed: e === o.Pc.CollapsedSearch,
-				expanded: e === o.Pc.ExpandedSearch
+				bucketed: e === o.Rc.ExpandedSearch || e === o.Rc.CollapsedSearch,
+				collapsed: e === o.Rc.CollapsedSearch,
+				expanded: e === o.Rc.ExpandedSearch
 			}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.ed2d217f147bd3f59535.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.65ed6e4ccafc8a614da2.js.map

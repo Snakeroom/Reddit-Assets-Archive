@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsPermissionPromptLoader.155af9500c7c503c1f4e.js
-// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsPermissionPromptLoader.9d137a1840d27763903d.js
+// Retrieved at 1/23/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsPermissionPromptLoader", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -99,13 +99,13 @@
 			const N = e => Object(x.c)(e, {
 				experimentEligibilitySelector: w.S,
 				experimentName: k.ub
-			}) === k.Fd;
+			}) === k.Hd;
 			var S = i("./src/reddit/selectors/experiments/delayDnPermission.ts"),
-				F = i("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts");
-			const P = e => Object(x.c)(e, {
-				experimentName: k.Xb,
+				P = i("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts");
+			const F = e => Object(x.c)(e, {
+				experimentName: k.Yb,
 				experimentEligibilitySelector: x.a
-			}) === k.Fd;
+			}) === k.Hd;
 			var q = i("./src/reddit/selectors/meta.ts");
 			let C = !1;
 			const E = async (e, t) => {
@@ -135,10 +135,10 @@
 				return async (n, o, s) => {
 					const c = o(),
 						u = Object(q.f)(c),
-						l = P(c),
+						l = F(c),
 						f = !!Object(y.a)(c),
 						b = Object(S.a)(c),
-						p = Object(F.e)(c),
+						p = Object(P.e)(c),
 						m = Object(j.c)(g.a.NSFW_BLOCKING_MODAL_V2)(c),
 						O = N(c);
 					if (p || m) return;
@@ -465,4 +465,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPermissionPromptLoader.155af9500c7c503c1f4e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPermissionPromptLoader.9d137a1840d27763903d.js.map

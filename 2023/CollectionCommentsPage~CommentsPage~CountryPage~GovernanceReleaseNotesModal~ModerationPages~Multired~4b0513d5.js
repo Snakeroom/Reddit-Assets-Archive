@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5.37dcd3456581150b588d.js
-// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5.97ea97fe645cce8be186.js
+// Retrieved at 1/23/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5"], {
 		"./src/reddit/components/Governance/VaultActionLink/async.ts": function(e, t, n) {
@@ -1944,12 +1944,12 @@
 						rtJsonElementProps: o
 					});
 					switch (i) {
-						case b.Df.SmIcon:
+						case b.Ff.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.Df.SmIconHc:
+						case b.Ff.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2166,12 +2166,12 @@
 				c = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.xf
+						experimentName: s.zf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Df.SmIcon || t === s.Df.SmIconHc
+					return t === s.Ff.SmIcon || t === s.Ff.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -2197,4 +2197,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5.37dcd3456581150b588d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5.97ea97fe645cce8be186.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.e24ca0c625558bfc26c7.js
-// Retrieved at 1/19/2023, 4:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.8d8ffa2a2c0dd535e12a.js
+// Retrieved at 1/23/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -4235,7 +4235,7 @@
 						onClick: g ? v : void 0,
 						headerButton: i.a.createElement("div", {
 							className: Je.a.headerButtonsContainer
-						}, !K && y && C && l !== ge.Fe.NewModule && i.a.createElement(a.a, {
+						}, !K && y && C && l !== ge.He.NewModule && i.a.createElement(a.a, {
 							className: Je.a.ModToolsLink,
 							to: C.posts ? `${y.url}about/modqueue` : `${y.url}about/`,
 							onClick: this.onClickModTools
@@ -5973,7 +5973,7 @@
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
 					experimentName: r.D
-				}) === r.Fd
+				}) === r.Hd
 			}
 		},
 		"./src/reddit/selectors/experiments/joinOptimizations.ts": function(e, t, n) {
@@ -6043,4 +6043,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.e24ca0c625558bfc26c7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.8d8ffa2a2c0dd535e12a.js.map
