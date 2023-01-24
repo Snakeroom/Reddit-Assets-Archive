@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5.c9dcd750f3c6d7c0c3b1.js
-// Retrieved at 1/23/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5.686a2e87636676be9dcf.js
+// Retrieved at 1/24/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5"], {
 		"./src/reddit/components/Governance/VaultActionLink/async.ts": function(e, t, n) {
@@ -283,11 +283,11 @@
 					onClick: () => {
 						e.isSponsored && e.post.postId && (e.fireAdPixelsOfType && e.fireAdPixelsOfType(e.post, b.a.Click), Object(g.a)(e.post, e.pageType))
 					}
-				}, H(e)) : e.isListing && e.postPermalink ? i.a.createElement(a.a, {
+				}, B(e)) : e.isListing && e.postPermalink ? i.a.createElement(a.a, {
 					target: e.shouldOpenPostInNewTab ? "_blank" : void 0,
 					to: Object(m.a)(e.postPermalink, void 0, t),
 					onClick: e.onPostMediaClick
-				}, H(e)) : H(e)
+				}, B(e)) : B(e)
 			});
 			const P = (e, t) => i.a.createElement(I, {
 					altText: t.altText,
@@ -307,7 +307,7 @@
 					width: t.width,
 					renderSmallMedia: t.renderSmallMedia
 				}),
-				H = e => {
+				B = e => {
 					let {
 						onClick: t,
 						...n
@@ -554,7 +554,7 @@
 						postId: p
 					}))
 				}
-				const H = r()(e => {
+				const B = r()(e => {
 					if (n) return;
 					const {
 						target: t
@@ -562,8 +562,8 @@
 					t && t.played && 1 === t.played.length && 0 === t.played.start(0) && t.played.end(0) === t.duration && N(Object(u.D)(p))
 				}, 200);
 
-				function B(e) {
-					e.persist(), H(e)
+				function H(e) {
+					e.persist(), B(e)
 				}
 
 				function D(e) {
@@ -612,7 +612,7 @@
 						onLoadedMetadata: U,
 						onPause: P,
 						onPlaying: A,
-						onTimeUpdate: B,
+						onTimeUpdate: H,
 						shouldLoad: b,
 						shouldPause: j,
 						showCentered: w,
@@ -1267,8 +1267,8 @@
 				N = T.a.wrapped(g.a, "A", S.a),
 				R = T.a.wrapped(l.a, "ImageBox", S.a),
 				P = T.a.wrapped(e => i.a.createElement("p", e), "Caption", S.a),
-				H = T.a.div("Placeholder", S.a),
-				B = T.a.wrapped(e => {
+				B = T.a.div("Placeholder", S.a),
+				H = T.a.wrapped(e => {
 					let {
 						className: t,
 						e: n,
@@ -1286,7 +1286,7 @@
 						c && setTimeout(() => {
 							m(!0)
 						}, 1500)
-					}), i.a.createElement(H, L({
+					}), i.a.createElement(B, L({
 						className: Object(o.a)(t, {
 							[S.a.renderSmallMedia]: a,
 							[S.a.reload]: !!c
@@ -1354,7 +1354,7 @@
 					const b = f.F(r, t.id);
 					if (a) return [F(t, n, b)];
 					const g = [];
-					return !b || b.e === f.s && null === b.s.x && null === b.s.y ? g.push(((e, t, n, s) => i.a.createElement(B, {
+					return !b || b.e === f.s && null === b.s.x && null === b.s.y ? g.push(((e, t, n, s) => i.a.createElement(H, {
 						e,
 						key: t,
 						renderSmallMedia: n,
@@ -1487,7 +1487,7 @@
 			})), n.d(t, "f", (function() {
 				return P
 			})), n.d(t, "h", (function() {
-				return B
+				return H
 			})), n.d(t, "g", (function() {
 				return D
 			})), n.d(t, "i", (function() {
@@ -1612,7 +1612,7 @@
 					if (!i) return;
 					const o = i.length,
 						d = [];
-					for (let a = 0; a < o; a++) d.push(H(i[a], t, n, a, r));
+					for (let a = 0; a < o; a++) d.push(B(i[a], t, n, a, r));
 					return a.a.createElement(c.c, {
 						key: s
 					}, d)
@@ -1631,14 +1631,14 @@
 						const e = i[u].c;
 						e && e.length && o.push(a.a.createElement(c.g, {
 							key: u
-						}, e.map((e, s) => H(e, t, n, s, r))))
+						}, e.map((e, s) => B(e, t, n, s, r))))
 					}
 					const l = e.o ? c.i : c.v;
 					return a.a.createElement(l, {
 						key: s
 					}, o)
 				},
-				H = (e, t, n, s, r) => {
+				B = (e, t, n, s, r) => {
 					switch (e.e) {
 						case m.b:
 							return N(e, t, n, s, r);
@@ -1653,10 +1653,10 @@
 						case m.v:
 							return D(e, t, n, s, r);
 						case m.A:
-							return B(e, t, n, s, r)
+							return H(e, t, n, s, r)
 					}
 				},
-				B = (e, t, n, s, r) => {
+				H = (e, t, n, s, r) => {
 					const i = e.c,
 						o = e.h,
 						d = i.length,
@@ -1944,12 +1944,12 @@
 						rtJsonElementProps: o
 					});
 					switch (i) {
-						case b.Hf.SmIcon:
+						case b.Jf.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.Hf.SmIconHc:
+						case b.Jf.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2166,12 +2166,12 @@
 				c = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Bf
+						experimentName: s.Df
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Hf.SmIcon || t === s.Hf.SmIconHc
+					return t === s.Jf.SmIcon || t === s.Jf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -2197,4 +2197,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5.c9dcd750f3c6d7c0c3b1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5.686a2e87636676be9dcf.js.map

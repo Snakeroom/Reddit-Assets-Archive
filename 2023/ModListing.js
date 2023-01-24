@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.9ac506aae8676adb73d1.js
-// Retrieved at 1/23/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.f88db21150a8a00230ba.js
+// Retrieved at 1/24/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, n) {
@@ -2480,7 +2480,7 @@
 				const p = Object(o.e)(e => e.subreddits.survey[n]),
 					b = Object(o.e)(e => e.subreddits.progressModule[n]),
 					h = Object(o.e)(u.a),
-					g = h !== c.Je.NewModule;
+					g = h !== c.Ke.NewModule;
 				return (null === (s = null == b ? void 0 : b.cards) || void 0 === s ? void 0 : s.length) > 0 && g ? i.a.createElement(m, {
 					closeModuleOnMount: !!t && t !== l.g.Large,
 					subredditId: n,
@@ -2506,15 +2506,15 @@
 			const o = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: i.S,
-						experimentName: r.rd
+						experimentName: r.sd
 					});
-					return !(!t || Object(r.hg)(t))
+					return !(!t || Object(r.jg)(t))
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: i.S,
-						experimentName: r.rd
-					}) === r.Nd.ListingEnabled
+						experimentName: r.sd
+					}) === r.Od.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/experiments/navbarLikeMweb.ts": function(e, t, n) {
@@ -2525,9 +2525,9 @@
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = e => Object(s.c)(e, {
-				experimentName: r.Ae,
+				experimentName: r.Be,
 				experimentEligibilitySelector: s.a
-			}) === r.Ie.Enabled
+			}) === r.Je.Enabled
 		},
 		"./src/reddit/selectors/experiments/uxtsIntegration.ts": function(e, t, n) {
 			"use strict";
@@ -2542,16 +2542,16 @@
 				o = n("./src/reddit/selectors/user.ts");
 			const d = e => {
 					var t;
-					return (null === (t = null == e ? void 0 : e.user.experiments.byName[s.Oc]) || void 0 === t ? void 0 : t.variant) === s.Jd
+					return (null === (t = null == e ? void 0 : e.user.experiments.byName[s.Pc]) || void 0 === t ? void 0 : t.variant) === s.Kd
 				},
 				a = Object(r.a)(e => Object(i.c)(e, {
 					experimentEligibilitySelector: o.S,
 					experimentName: s.Qb
-				}), e => e === s.Jd)
+				}), e => e === s.Kd)
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
 			e.exports = JSON.parse('{"id":"c1fc98c26cf2"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.9ac506aae8676adb73d1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.f88db21150a8a00230ba.js.map

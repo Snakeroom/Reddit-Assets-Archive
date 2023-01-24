@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.ac6c3fadfce708ec26c5.js
-// Retrieved at 1/23/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.af8ad6c991c194b4610e.js
+// Retrieved at 1/24/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-meta-MainnetPointsMigrationPage"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -1140,9 +1140,9 @@
 				Z = n("./src/reddit/icons/svgs/LoadingOrbit/index.tsx"),
 				Y = n("./src/higherOrderComponents/asModal/index.tsx"),
 				q = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				G = n("./node_modules/@ethersproject/address/lib.esm/index.js"),
-				K = n("./node_modules/lodash/debounce.js"),
-				X = n.n(K),
+				K = n("./node_modules/@ethersproject/address/lib.esm/index.js"),
+				G = n("./node_modules/lodash/debounce.js"),
+				X = n.n(G),
 				J = n("./src/lib/classNames/index.ts"),
 				Q = n("./src/reddit/constants/colors.ts"),
 				$ = n("./src/reddit/controls/FormFields/index.tsx"),
@@ -1162,7 +1162,7 @@
 				} = e;
 				const [a, s] = Object(r.useState)(""), o = Object(r.useRef)(a), [l, c] = Object(r.useState)(re.Empty), d = l === re.Invalid, u = () => {
 					if (se.test(o.current)) {
-						if (!!Object(G.a)(o.current)) return c(re.Valid), void n(o.current, !0)
+						if (!!Object(K.a)(o.current)) return c(re.Valid), void n(o.current, !0)
 					}
 					c(re.Invalid)
 				}, m = Object(r.useMemo)(() => X()(u, 300), [o, n, u]);
@@ -1869,16 +1869,16 @@
 			const r = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: a.te
-					}) === a.Jd
+						experimentName: a.ue
+					}) === a.Kd
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: a.re
-					}) === a.Jd
+						experimentName: a.se
+					}) === a.Kd
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.ac6c3fadfce708ec26c5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.af8ad6c991c194b4610e.js.map

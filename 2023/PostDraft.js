@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.7ff61962532a2183d61e.js
-// Retrieved at 1/23/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.23eabc9ebe8c00251a91.js
+// Retrieved at 1/24/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1476,7 +1476,7 @@
 				const t = Object(r.f)().getState(),
 					n = Object(A.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === R.cd.GreyRereddit || e.d2xPdpSideRailRecsVariant === R.cd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === R.cd.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === R.dd.GreyRereddit || e.d2xPdpSideRailRecsVariant === R.dd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === R.dd.LargeImagePreview ? e.reredditButtons : [];
 					return s.a.createElement(Y, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -3193,4 +3193,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.7ff61962532a2183d61e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.23eabc9ebe8c00251a91.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.809f88460f7e4614acff.js
-// Retrieved at 1/23/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.f49230e290a20541925a.js
+// Retrieved at 1/24/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -2224,7 +2224,7 @@
 			const D = e => O.d.reCaptchaEnterprise(e) && !Object(T.d)(e),
 				w = e => !!Object(I.c)(e, {
 					experimentEligibilitySelector: Object(S.d)(Object(S.b)(...a.c)),
-					experimentName: f.if
+					experimentName: f.jf
 				}),
 				j = Object(r.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				C = () => l(e => p()([D, w, e => e.tracking.reCaptchaEnterprise.load === r.a.New], t => t(e)))(async e => {
@@ -2451,8 +2451,8 @@
 					if (function(e) {
 							return Object(g.c)(e, {
 								experimentEligibilitySelector: g.a,
-								experimentName: m.Hc
-							}) === m.Jd
+								experimentName: m.Ic
+							}) === m.Kd
 						}(O) && e === p.d.dropdown) {
 						const n = (e => {
 							var t, n;
@@ -4233,7 +4233,7 @@
 					relativePosition: S
 				} = e;
 				var T, w, j, C, A, P;
-				const R = Object(a.e)(e => Object(V.a)(e, H.qf)),
+				const R = Object(a.e)(e => Object(V.a)(e, H.sf)),
 					N = Object(g.a)(),
 					L = (null === (T = o.displayInfo) || void 0 === T ? void 0 : T.karma) || 0,
 					x = (null === (w = o.displayInfo) || void 0 === w ? void 0 : w.subscribers) || 0,
@@ -4374,7 +4374,7 @@
 					searchOriginPage: f
 				} = e;
 				const h = Object(g.a)(),
-					b = Object(a.e)(e => Object(V.a)(e, H.qf)),
+					b = Object(a.e)(e => Object(V.a)(e, H.sf)),
 					y = Object(a.e)(O.mb),
 					{
 						nsfwTypeaheadExpanded: v,
@@ -4615,7 +4615,7 @@
 					onUpdateSearchQuery: A
 				} = e, P = Object(a.d)(), [R, N] = Object(r.useState)(null), [L, x] = Object(r.useState)(n), [k, B] = Object(r.useState)(new Array(_e).fill(!1)), {
 					enabled: F
-				} = Object(a.e)(re.j), G = Object(a.e)(e => Object(V.a)(e, H.qf)), q = !!(null === (t = g.searchQuery) || void 0 === t ? void 0 : t.trim()), W = l || i, K = F, Y = [...h.communities, ...h.people, ...h.nsfw], $ = !l && (!q || b >= 0) && (G ? 0 === Y.length : 0 === f.length) && !K, X = {
+				} = Object(a.e)(re.j), G = Object(a.e)(e => Object(V.a)(e, H.sf)), q = !!(null === (t = g.searchQuery) || void 0 === t ? void 0 : t.trim()), W = l || i, K = F, Y = [...h.communities, ...h.people, ...h.nsfw], $ = !l && (!q || b >= 0) && (G ? 0 === Y.length : 0 === f.length) && !K, X = {
 					width: L ? `${L}px` : "inherit",
 					overflow: "auto"
 				};
@@ -5009,10 +5009,10 @@
 				h = n("./node_modules/reselect/es/index.js");
 			const b = Object(h.a)(e => Object(f.c)(e, {
 				experimentEligibilitySelector: f.a,
-				experimentName: p.eg
+				experimentName: p.gg
 			}), e => ({
-				promptBeforeClick: e === p.fg.PromptBeforeClick,
-				promptAfterClick: e === p.fg.PromptAfterClick
+				promptBeforeClick: e === p.hg.PromptBeforeClick,
+				promptAfterClick: e === p.hg.PromptAfterClick
 			}));
 			var y = n("./src/reddit/controls/Search/SearchScopePill/index.tsx"),
 				m = n("./src/reddit/controls/Search/SearchBar/index.m.less"),
@@ -25332,9 +25332,9 @@
 				experimentEligibilitySelector: s.a,
 				experimentName: r.pb
 			}), e => ({
-				bucketed: e === r.Sc.ExpandedSearch || e === r.Sc.CollapsedSearch,
-				collapsed: e === r.Sc.CollapsedSearch,
-				expanded: e === r.Sc.ExpandedSearch
+				bucketed: e === r.Tc.ExpandedSearch || e === r.Tc.CollapsedSearch,
+				collapsed: e === r.Tc.CollapsedSearch,
+				expanded: e === r.Tc.ExpandedSearch
 			}))
 		},
 		"./src/reddit/selectors/experiments/hotPotato.ts": function(e, t, n) {
@@ -25359,7 +25359,7 @@
 					if (!u(e)) return;
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: l,
-						experimentName: a.ce,
+						experimentName: a.de,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -25382,9 +25382,9 @@
 				},
 				h = e => !!p(e) && Object(o.c)(e, {
 					experimentEligibilitySelector: u,
-					experimentName: a.de,
+					experimentName: a.ee,
 					expEventOverride: !1
-				}) !== a.fe.Readonly
+				}) !== a.ge.Readonly
 		},
 		"./src/reddit/selectors/removedPosts.ts": function(e, t, n) {
 			"use strict";
@@ -25528,4 +25528,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.809f88460f7e4614acff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.f49230e290a20541925a.js.map

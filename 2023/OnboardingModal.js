@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.27965c5368716c0c06e9.js
-// Retrieved at 1/23/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.92bb161135b3b9ef5dbb.js
+// Retrieved at 1/24/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -432,7 +432,7 @@
 				V = n("./src/lib/initializeClient/installReducer.ts"),
 				q = n("./src/reddit/reducers/features/marketplace/index.ts"),
 				U = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const H = Object(U.a)(b.Od);
+			const H = Object(U.a)(b.Pd);
 			var W = n("./src/redditGQL/types.ts");
 			Object(V.a)({
 				features: {
@@ -469,7 +469,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.hg)(p),
+						includeInterestTopics: !!p && !Object(b.jg)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: h && !(null === (s = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === s ? void 0 : s.total),
@@ -1822,8 +1822,8 @@
 						toggleLanguageSelection: u
 					} = e;
 					const [m, p] = Object(a.useState)(!1), b = Object(i.e)(ee.fb);
-					let g = Object(i.e)(Se.i) === ke.bd.TopTwo;
-					const f = Object(i.e)(Se.h) === ke.bd.TopTwo;
+					let g = Object(i.e)(Se.i) === ke.cd.TopTwo;
+					const f = Object(i.e)(Se.h) === ke.cd.TopTwo;
 					g = g || f;
 					const h = Object(i.e)(ye.b),
 						O = Object(_.a)();
@@ -3006,7 +3006,7 @@
 						xe = Object(i.e)(ye.k),
 						_e = Object(i.e)(Se.i),
 						Ee = Object(i.e)(Se.h),
-						Ce = _e === ke.bd.TopTwo || _e === ke.bd.All || Ee === ke.bd.TopTwo || Ee === ke.bd.All,
+						Ce = _e === ke.cd.TopTwo || _e === ke.cd.All || Ee === ke.cd.TopTwo || Ee === ke.cd.All,
 						je = Object(a.useCallback)(async e => {
 							ie(!0);
 							const n = await Object(On.c)(e, t, xe);
@@ -3025,9 +3025,9 @@
 						Ie = Object(i.e)(ee.U),
 						we = Object(i.e)(ye.g),
 						Pe = Object(i.e)(kn.a),
-						Re = Pe === ke.Of.CloseOnboarding,
-						Fe = Pe === ke.Of.SkipTopicSelection,
-						Ge = Pe === ke.Of.SmartSignal,
+						Re = Pe === ke.Qf.CloseOnboarding,
+						Fe = Pe === ke.Qf.SkipTopicSelection,
+						Ge = Pe === ke.Qf.SmartSignal,
 						Ae = Object(a.useCallback)(() => {
 							s(Object(b.g)(Kt.a.ONBOARDING_MODAL_D2X)), Te && s(Object(g.h)()), h && (r(Object(F.t)()), Object(xn.a)()), we && Ie && s(Object(m.startChangeUsernameFlow)())
 						}, [s, Ie, we, h, Te, r]),
@@ -3168,11 +3168,11 @@
 						className: ne.a.subtitle
 					}, function(e) {
 						switch (e) {
-							case ke.Pe.Ads:
+							case ke.Qe.Ads:
 								return In._("Tell us about yourself to improve your recommendations and ads.", null, {
 									hk: "tlFdQ"
 								});
-							case ke.Pe.AdsUpdateSettings:
+							case ke.Qe.AdsUpdateSettings:
 								return In._("Tell us about yourself to improve your recommendations and ads. You can update this any time in settings.", null, {
 									hk: "CbUFt"
 								});
@@ -5059,8 +5059,8 @@
 			const a = e => {
 				return !(Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.se
-				}) === s.Jd)
+					experimentName: s.te
+				}) === s.Kd)
 			}
 		},
 		"./src/redditGQL/operations/Frontpage.json": function(e) {
@@ -5095,4 +5095,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.27965c5368716c0c06e9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.92bb161135b3b9ef5dbb.js.map
