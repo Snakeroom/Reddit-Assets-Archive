@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.29f6986180a085b3b9f0.js
-// Retrieved at 1/25/2023, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.3b317058fdb1e9f909ba.js
+// Retrieved at 1/25/2023, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./src/lib/LiveChatActiveUsers/index.m.less": function(e, t, s) {
@@ -1059,14 +1059,14 @@
 						},
 						k = [t(w.d(O))],
 						y = Object(N.a)(O, r.zb, m, e.queryParams);
-					if (s().listings.postOrder.ids[y] && !s().listings.postOrder.api.error[y] ? b = !0 : k.push(t(Se(y, O, C, !0))), k.push(t(Object(a.b)())), await Promise.all(k), b) return;
+					if (t(P.n({
+							title: Te(s(), p)
+						})), s().listings.postOrder.ids[y] && !s().listings.postOrder.api.error[y] ? b = !0 : k.push(t(Se(y, O, C, !0))), k.push(t(Object(a.b)())), await Promise.all(k), b) return;
 					const S = s();
 					if (!S.platform.currentPage) return;
 					if (200 !== S.platform.currentPage.status) return;
 					const T = Object(g.o)(s(), O);
-					t(P.n({
-						title: Te(s(), p)
-					})), Object(E.U)(S) && Object(E.Y)(S, p) && t(Object(j.startChangeUsernameFlow)());
+					Object(E.U)(S) && Object(E.Y)(S, p) && t(Object(j.startChangeUsernameFlow)());
 					const R = [t(Object(d.q)()), t(I.b(O, T)), t(w.b(O)), t(_.o(p)), t(w.i(p))];
 					await Promise.all(R)
 				}, Te = (e, t) => Object(g.s)(e, {
@@ -8921,4 +8921,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.29f6986180a085b3b9f0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.3b317058fdb1e9f909ba.js.map

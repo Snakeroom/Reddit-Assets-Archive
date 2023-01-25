@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.7c62217d12874c17f9fa.js
-// Retrieved at 1/25/2023, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.9a432d4b65708380ad93.js
+// Retrieved at 1/25/2023, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "CollectionCommentsPage~SearchResults", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -8702,44 +8702,48 @@
 		"./src/reddit/actions/snoovatarModal.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return l
+				return m
 			})), n.d(t, "b", (function() {
-				return u
+				return p
 			}));
-			var s = n("./src/reddit/actions/login.ts"),
-				r = n("./src/reddit/actions/modal.ts"),
-				o = n("./src/reddit/actions/users.ts"),
-				i = n("./src/reddit/constants/modals.ts"),
-				a = n("./src/reddit/helpers/trackers/snoovatar.ts"),
-				c = n("./src/reddit/selectors/user.ts"),
-				d = n("./src/telemetry/index.ts");
-			const l = () => async (e, t) => {
+			var s = n("./src/lib/pageTitle/index.ts"),
+				r = n("./src/reddit/actions/login.ts"),
+				o = n("./src/reddit/actions/modal.ts"),
+				i = n("./src/reddit/actions/platform.ts"),
+				a = n("./src/reddit/actions/users.ts"),
+				c = n("./src/reddit/constants/modals.ts"),
+				d = n("./src/reddit/helpers/trackers/snoovatar.ts"),
+				l = n("./src/reddit/selectors/user.ts"),
+				u = n("./src/telemetry/index.ts");
+			const m = () => async (e, t) => {
 				const n = t();
-				Object(d.a)(Object(a.l)(n)), e(Object(o.s)({
+				Object(u.a)(Object(d.l)(n)), e(Object(a.s)({
 					forceFetch: !0
-				})), await e(Object(r.g)(i.a.SNOOVATAR_MODAL))
+				})), await e(Object(o.g)(c.a.SNOOVATAR_MODAL))
 			};
 
-			function u() {
+			function p() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
 				return async (t, n) => {
 					const {
-						clickSource: o,
-						share: l,
-						source: u,
-						activeTab: m,
-						activeMeSubpage: p,
-						activeDetails: b,
-						shopTabState: f
-					} = e, h = n();
-					o && Object(d.a)(Object(a.g)(o)(h)), Object(c.S)(h) ? await t(Object(r.h)(i.a.SNOOVATAR_MODAL, {
-						share: l,
-						source: u,
-						activeTab: m,
-						activeMeSubpage: p,
-						activeDetails: b,
-						shopTabState: f
-					})) : await t(Object(s.openLoginModal)())
+						clickSource: a,
+						share: m,
+						source: p,
+						activeTab: b,
+						activeMeSubpage: f,
+						activeDetails: h,
+						shopTabState: C
+					} = e, g = n();
+					a && Object(u.a)(Object(d.g)(a)(g)), Object(l.S)(g) ? (await t(Object(o.h)(c.a.SNOOVATAR_MODAL, {
+						share: m,
+						source: p,
+						activeTab: b,
+						activeMeSubpage: f,
+						activeDetails: h,
+						shopTabState: C
+					})), t(Object(i.n)({
+						title: Object(s.p)()
+					}))) : await t(Object(r.openLoginModal)())
 				}
 			}
 		},
@@ -49209,4 +49213,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.7c62217d12874c17f9fa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.9a432d4b65708380ad93.js.map

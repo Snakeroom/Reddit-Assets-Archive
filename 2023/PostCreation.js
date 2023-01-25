@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.72366728679067a64d7b.js
-// Retrieved at 1/25/2023, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.0dbb1046c2238060e2c6.js
+// Retrieved at 1/25/2023, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit~StandalonePostPage", "ContributorRequestButton"], {
 		"./src/chat/actions/uxExperiences.ts": function(e, t, n) {
@@ -4020,44 +4020,48 @@
 		"./src/reddit/actions/snoovatarModal.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return l
+				return m
 			})), n.d(t, "b", (function() {
-				return u
+				return p
 			}));
-			var o = n("./src/reddit/actions/login.ts"),
-				r = n("./src/reddit/actions/modal.ts"),
-				s = n("./src/reddit/actions/users.ts"),
-				i = n("./src/reddit/constants/modals.ts"),
-				a = n("./src/reddit/helpers/trackers/snoovatar.ts"),
-				c = n("./src/reddit/selectors/user.ts"),
-				d = n("./src/telemetry/index.ts");
-			const l = () => async (e, t) => {
+			var o = n("./src/lib/pageTitle/index.ts"),
+				r = n("./src/reddit/actions/login.ts"),
+				s = n("./src/reddit/actions/modal.ts"),
+				i = n("./src/reddit/actions/platform.ts"),
+				a = n("./src/reddit/actions/users.ts"),
+				c = n("./src/reddit/constants/modals.ts"),
+				d = n("./src/reddit/helpers/trackers/snoovatar.ts"),
+				l = n("./src/reddit/selectors/user.ts"),
+				u = n("./src/telemetry/index.ts");
+			const m = () => async (e, t) => {
 				const n = t();
-				Object(d.a)(Object(a.l)(n)), e(Object(s.s)({
+				Object(u.a)(Object(d.l)(n)), e(Object(a.s)({
 					forceFetch: !0
-				})), await e(Object(r.g)(i.a.SNOOVATAR_MODAL))
+				})), await e(Object(s.g)(c.a.SNOOVATAR_MODAL))
 			};
 
-			function u() {
+			function p() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
 				return async (t, n) => {
 					const {
-						clickSource: s,
-						share: l,
-						source: u,
-						activeTab: m,
-						activeMeSubpage: p,
-						activeDetails: h,
-						shopTabState: b
-					} = e, f = n();
-					s && Object(d.a)(Object(a.g)(s)(f)), Object(c.S)(f) ? await t(Object(r.h)(i.a.SNOOVATAR_MODAL, {
-						share: l,
-						source: u,
-						activeTab: m,
-						activeMeSubpage: p,
-						activeDetails: h,
-						shopTabState: b
-					})) : await t(Object(o.openLoginModal)())
+						clickSource: a,
+						share: m,
+						source: p,
+						activeTab: h,
+						activeMeSubpage: b,
+						activeDetails: f,
+						shopTabState: g
+					} = e, v = n();
+					a && Object(u.a)(Object(d.g)(a)(v)), Object(l.S)(v) ? (await t(Object(s.h)(c.a.SNOOVATAR_MODAL, {
+						share: m,
+						source: p,
+						activeTab: h,
+						activeMeSubpage: b,
+						activeDetails: f,
+						shopTabState: g
+					})), t(Object(i.n)({
+						title: Object(o.p)()
+					}))) : await t(Object(r.openLoginModal)())
 				}
 			}
 		},
@@ -40130,4 +40134,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.72366728679067a64d7b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.0dbb1046c2238060e2c6.js.map

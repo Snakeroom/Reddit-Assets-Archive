@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersAction.4781381390efea2f3885.js
-// Retrieved at 1/19/2023, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersAction.1c55af68231c985390a5.js
+// Retrieved at 1/25/2023, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersAction"], {
 		"./src/lib/makeOverviewConversationsItemKey/index.ts": function(e, t, o) {
@@ -798,14 +798,14 @@
 						},
 						I = [t(k.d(h))],
 						C = Object(E.a)(h, n.zb, u, e.queryParams);
-					if (o().listings.postOrder.ids[C] && !o().listings.postOrder.api.error[C] ? v = !0 : I.push(t(Re(C, h, j, !0))), I.push(t(Object(i.b)())), await Promise.all(I), v) return;
+					if (t(L.n({
+							title: Fe(o(), p)
+						})), o().listings.postOrder.ids[C] && !o().listings.postOrder.api.error[C] ? v = !0 : I.push(t(Re(C, h, j, !0))), I.push(t(Object(i.b)())), await Promise.all(I), v) return;
 					const R = o();
 					if (!R.platform.currentPage) return;
 					if (200 !== R.platform.currentPage.status) return;
 					const F = Object(w.o)(o(), h);
-					t(L.n({
-						title: Fe(o(), p)
-					})), Object(g.U)(R) && Object(g.Y)(R, p) && t(Object(x.startChangeUsernameFlow)());
+					Object(g.U)(R) && Object(g.Y)(R, p) && t(Object(x.startChangeUsernameFlow)());
 					const S = [t(Object(a.q)()), t(P.b(h, F)), t(k.b(h)), t(_.o(p)), t(k.i(p))];
 					await Promise.all(S)
 				}, Fe = (e, t) => Object(w.s)(e, {
@@ -975,4 +975,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersAction.4781381390efea2f3885.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersAction.1c55af68231c985390a5.js.map

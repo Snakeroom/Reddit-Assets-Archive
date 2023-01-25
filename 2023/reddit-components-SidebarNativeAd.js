@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.743c35872a106089c449.js
-// Retrieved at 1/25/2023, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.9abfa3edb341d1ec693e.js
+// Retrieved at 1/25/2023, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -988,44 +988,48 @@
 		"./src/reddit/actions/snoovatarModal.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return l
+				return m
 			})), n.d(t, "b", (function() {
-				return u
+				return p
 			}));
-			var r = n("./src/reddit/actions/login.ts"),
-				o = n("./src/reddit/actions/modal.ts"),
-				s = n("./src/reddit/actions/users.ts"),
-				i = n("./src/reddit/constants/modals.ts"),
-				a = n("./src/reddit/helpers/trackers/snoovatar.ts"),
-				c = n("./src/reddit/selectors/user.ts"),
-				d = n("./src/telemetry/index.ts");
-			const l = () => async (e, t) => {
+			var r = n("./src/lib/pageTitle/index.ts"),
+				o = n("./src/reddit/actions/login.ts"),
+				s = n("./src/reddit/actions/modal.ts"),
+				i = n("./src/reddit/actions/platform.ts"),
+				a = n("./src/reddit/actions/users.ts"),
+				c = n("./src/reddit/constants/modals.ts"),
+				d = n("./src/reddit/helpers/trackers/snoovatar.ts"),
+				l = n("./src/reddit/selectors/user.ts"),
+				u = n("./src/telemetry/index.ts");
+			const m = () => async (e, t) => {
 				const n = t();
-				Object(d.a)(Object(a.l)(n)), e(Object(s.s)({
+				Object(u.a)(Object(d.l)(n)), e(Object(a.s)({
 					forceFetch: !0
-				})), await e(Object(o.g)(i.a.SNOOVATAR_MODAL))
+				})), await e(Object(s.g)(c.a.SNOOVATAR_MODAL))
 			};
 
-			function u() {
+			function p() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
 				return async (t, n) => {
 					const {
-						clickSource: s,
-						share: l,
-						source: u,
-						activeTab: m,
-						activeMeSubpage: p,
-						activeDetails: b,
-						shopTabState: f
-					} = e, h = n();
-					s && Object(d.a)(Object(a.g)(s)(h)), Object(c.S)(h) ? await t(Object(o.h)(i.a.SNOOVATAR_MODAL, {
-						share: l,
-						source: u,
-						activeTab: m,
-						activeMeSubpage: p,
-						activeDetails: b,
-						shopTabState: f
-					})) : await t(Object(r.openLoginModal)())
+						clickSource: a,
+						share: m,
+						source: p,
+						activeTab: b,
+						activeMeSubpage: f,
+						activeDetails: h,
+						shopTabState: v
+					} = e, _ = n();
+					a && Object(u.a)(Object(d.g)(a)(_)), Object(l.S)(_) ? (await t(Object(s.h)(c.a.SNOOVATAR_MODAL, {
+						share: m,
+						source: p,
+						activeTab: b,
+						activeMeSubpage: f,
+						activeDetails: h,
+						shopTabState: v
+					})), t(Object(i.n)({
+						title: Object(r.p)()
+					}))) : await t(Object(o.openLoginModal)())
 				}
 			}
 		},
@@ -5393,4 +5397,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.743c35872a106089c449.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.9abfa3edb341d1ec693e.js.map

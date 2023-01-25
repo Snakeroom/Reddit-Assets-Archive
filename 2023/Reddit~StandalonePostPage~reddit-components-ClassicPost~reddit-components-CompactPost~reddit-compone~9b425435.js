@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.b049864850283176f304.js
-// Retrieved at 1/25/2023, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.4240866e8d2bd8664ebf.js
+// Retrieved at 1/25/2023, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/avatarShareImages.ts": function(e, t, n) {
@@ -332,44 +332,48 @@
 		"./src/reddit/actions/snoovatarModal.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return l
+				return m
 			})), n.d(t, "b", (function() {
-				return u
+				return p
 			}));
-			var r = n("./src/reddit/actions/login.ts"),
-				o = n("./src/reddit/actions/modal.ts"),
-				s = n("./src/reddit/actions/users.ts"),
-				a = n("./src/reddit/constants/modals.ts"),
-				c = n("./src/reddit/helpers/trackers/snoovatar.ts"),
-				i = n("./src/reddit/selectors/user.ts"),
-				d = n("./src/telemetry/index.ts");
-			const l = () => async (e, t) => {
+			var r = n("./src/lib/pageTitle/index.ts"),
+				o = n("./src/reddit/actions/login.ts"),
+				s = n("./src/reddit/actions/modal.ts"),
+				a = n("./src/reddit/actions/platform.ts"),
+				c = n("./src/reddit/actions/users.ts"),
+				i = n("./src/reddit/constants/modals.ts"),
+				d = n("./src/reddit/helpers/trackers/snoovatar.ts"),
+				l = n("./src/reddit/selectors/user.ts"),
+				u = n("./src/telemetry/index.ts");
+			const m = () => async (e, t) => {
 				const n = t();
-				Object(d.a)(Object(c.l)(n)), e(Object(s.s)({
+				Object(u.a)(Object(d.l)(n)), e(Object(c.s)({
 					forceFetch: !0
-				})), await e(Object(o.g)(a.a.SNOOVATAR_MODAL))
+				})), await e(Object(s.g)(i.a.SNOOVATAR_MODAL))
 			};
 
-			function u() {
+			function p() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
 				return async (t, n) => {
 					const {
-						clickSource: s,
-						share: l,
-						source: u,
-						activeTab: m,
-						activeMeSubpage: p,
-						activeDetails: f,
-						shopTabState: b
-					} = e, v = n();
-					s && Object(d.a)(Object(c.g)(s)(v)), Object(i.S)(v) ? await t(Object(o.h)(a.a.SNOOVATAR_MODAL, {
-						share: l,
-						source: u,
-						activeTab: m,
-						activeMeSubpage: p,
-						activeDetails: f,
-						shopTabState: b
-					})) : await t(Object(r.openLoginModal)())
+						clickSource: c,
+						share: m,
+						source: p,
+						activeTab: f,
+						activeMeSubpage: b,
+						activeDetails: v,
+						shopTabState: h
+					} = e, g = n();
+					c && Object(u.a)(Object(d.g)(c)(g)), Object(l.S)(g) ? (await t(Object(s.h)(i.a.SNOOVATAR_MODAL, {
+						share: m,
+						source: p,
+						activeTab: f,
+						activeMeSubpage: b,
+						activeDetails: v,
+						shopTabState: h
+					})), t(Object(a.n)({
+						title: Object(r.p)()
+					}))) : await t(Object(o.openLoginModal)())
 				}
 			}
 		},
@@ -3814,4 +3818,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.b049864850283176f304.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.4240866e8d2bd8664ebf.js.map

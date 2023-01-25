@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.8b256e95c24a4e360e0f.js
-// Retrieved at 1/25/2023, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.51e8d5999bed269a3b6f.js
+// Retrieved at 1/25/2023, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -7975,7 +7975,7 @@
 						});
 						r && (n = r.name)
 					}
-					return Object(d.p)(n)
+					return Object(d.q)(n)
 				},
 				R = "POST_CREATION__PAGE_PENDING",
 				A = "POST_CREATION__PAGE_LOADED",
@@ -14280,44 +14280,48 @@
 		"./src/reddit/actions/snoovatarModal.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return l
+				return m
 			})), n.d(t, "b", (function() {
-				return u
+				return p
 			}));
-			var s = n("./src/reddit/actions/login.ts"),
-				r = n("./src/reddit/actions/modal.ts"),
-				o = n("./src/reddit/actions/users.ts"),
-				i = n("./src/reddit/constants/modals.ts"),
-				a = n("./src/reddit/helpers/trackers/snoovatar.ts"),
-				d = n("./src/reddit/selectors/user.ts"),
-				c = n("./src/telemetry/index.ts");
-			const l = () => async (e, t) => {
+			var s = n("./src/lib/pageTitle/index.ts"),
+				r = n("./src/reddit/actions/login.ts"),
+				o = n("./src/reddit/actions/modal.ts"),
+				i = n("./src/reddit/actions/platform.ts"),
+				a = n("./src/reddit/actions/users.ts"),
+				d = n("./src/reddit/constants/modals.ts"),
+				c = n("./src/reddit/helpers/trackers/snoovatar.ts"),
+				l = n("./src/reddit/selectors/user.ts"),
+				u = n("./src/telemetry/index.ts");
+			const m = () => async (e, t) => {
 				const n = t();
-				Object(c.a)(Object(a.l)(n)), e(Object(o.s)({
+				Object(u.a)(Object(c.l)(n)), e(Object(a.s)({
 					forceFetch: !0
-				})), await e(Object(r.g)(i.a.SNOOVATAR_MODAL))
+				})), await e(Object(o.g)(d.a.SNOOVATAR_MODAL))
 			};
 
-			function u() {
+			function p() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
 				return async (t, n) => {
 					const {
-						clickSource: o,
-						share: l,
-						source: u,
-						activeTab: m,
-						activeMeSubpage: p,
-						activeDetails: b,
-						shopTabState: f
-					} = e, h = n();
-					o && Object(c.a)(Object(a.g)(o)(h)), Object(d.S)(h) ? await t(Object(r.h)(i.a.SNOOVATAR_MODAL, {
-						share: l,
-						source: u,
-						activeTab: m,
-						activeMeSubpage: p,
-						activeDetails: b,
-						shopTabState: f
-					})) : await t(Object(s.openLoginModal)())
+						clickSource: a,
+						share: m,
+						source: p,
+						activeTab: b,
+						activeMeSubpage: f,
+						activeDetails: h,
+						shopTabState: _
+					} = e, g = n();
+					a && Object(u.a)(Object(c.g)(a)(g)), Object(l.S)(g) ? (await t(Object(o.h)(d.a.SNOOVATAR_MODAL, {
+						share: m,
+						source: p,
+						activeTab: b,
+						activeMeSubpage: f,
+						activeDetails: h,
+						shopTabState: _
+					})), t(Object(i.n)({
+						title: Object(s.p)()
+					}))) : await t(Object(r.openLoginModal)())
 				}
 			}
 		},
@@ -74733,4 +74737,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.8b256e95c24a4e360e0f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.51e8d5999bed269a3b6f.js.map

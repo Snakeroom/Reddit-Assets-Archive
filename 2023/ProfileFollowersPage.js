@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.7ec7de74214dd67accab.js
-// Retrieved at 1/25/2023, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.6395efde7369c996f1f4.js
+// Retrieved at 1/25/2023, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -877,14 +877,14 @@
 						},
 						E = [t(j.d(x))],
 						w = Object(P.a)(x, i.zb, u, e.queryParams);
-					if (s().listings.postOrder.ids[w] && !s().listings.postOrder.api.error[w] ? h = !0 : E.push(t(Ne(w, x, I, !0))), E.push(t(Object(o.b)())), await Promise.all(E), h) return;
+					if (t(S.n({
+							title: Te(s(), p)
+						})), s().listings.postOrder.ids[w] && !s().listings.postOrder.api.error[w] ? h = !0 : E.push(t(Ne(w, x, I, !0))), E.push(t(Object(o.b)())), await Promise.all(E), h) return;
 					const N = s();
 					if (!N.platform.currentPage) return;
 					if (200 !== N.platform.currentPage.status) return;
 					const T = Object(C.o)(s(), x);
-					t(S.n({
-						title: Te(s(), p)
-					})), Object(y.U)(N) && Object(y.Y)(N, p) && t(Object(O.startChangeUsernameFlow)());
+					Object(y.U)(N) && Object(y.Y)(N, p) && t(Object(O.startChangeUsernameFlow)());
 					const R = [t(Object(d.q)()), t(k.b(x, T)), t(j.b(x)), t(_.o(p)), t(j.i(p))];
 					await Promise.all(R)
 				}, Te = (e, t) => Object(C.s)(e, {
@@ -6555,4 +6555,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.7ec7de74214dd67accab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.6395efde7369c996f1f4.js.map
