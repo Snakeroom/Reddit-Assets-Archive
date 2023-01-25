@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Trending.5b02d21fd559680ac886.js
-// Retrieved at 1/24/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Trending.a3f76ea2afbde140d55d.js
+// Retrieved at 1/25/2023, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Trending"], {
 		"./src/reddit/actions/search/trending.ts": function(e, t, r) {
@@ -40,8 +40,8 @@
 					if (function(e) {
 							return Object(_.c)(e, {
 								experimentEligibilitySelector: _.a,
-								experimentName: x.Ic
-							}) === x.Kd
+								experimentName: x.Hc
+							}) === x.Id
 						}(O) && e === u.d.dropdown) {
 						const r = (e => {
 							var t, r;
@@ -539,4 +539,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Trending.5b02d21fd559680ac886.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Trending.a3f76ea2afbde140d55d.js.map

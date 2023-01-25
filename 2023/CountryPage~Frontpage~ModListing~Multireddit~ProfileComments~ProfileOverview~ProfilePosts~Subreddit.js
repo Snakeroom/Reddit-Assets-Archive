@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.484a4a9250b41e1875e1.js
-// Retrieved at 1/24/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.1fac1c7392c08ba62328.js
+// Retrieved at 1/25/2023, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit"], {
 		"./src/chat/actions/uxExperiences.ts": function(e, t, n) {
@@ -474,16 +474,28 @@
 			"use strict";
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
-				o = n("./src/lib/classNames/index.ts"),
-				a = n("./src/reddit/constants/elementIds.ts"),
-				i = n("./src/reddit/controls/Button/index.tsx"),
-				d = n("./src/reddit/components/BackToTop/index.m.less"),
-				c = n.n(d);
+				o = n("./node_modules/react-redux/es/index.js"),
+				a = n("./src/lib/classNames/index.ts"),
+				i = n("./src/reddit/constants/elementIds.ts"),
+				d = n("./src/reddit/controls/Button/index.tsx"),
+				c = n("./src/reddit/selectors/experiments/shredditParity.ts"),
+				l = n("./src/reddit/components/BackToTop/index.m.less"),
+				u = n.n(l);
+
+			function b() {
+				return (b = Object.assign || function(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var n = arguments[t];
+						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
+					}
+					return e
+				}).apply(this, arguments)
+			}
 			const {
-				fbt: l
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), u = e => {
+				fbt: p
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), m = e => {
 				if (e) {
-					const e = document.getElementById(a.e);
+					const e = document.getElementById(i.e);
 					e && e.scroll(0, 0)
 				} else window.scroll(0, 0)
 			};
@@ -493,13 +505,17 @@
 					isOverlay: n,
 					style: s
 				} = e;
+				const i = Object(o.e)(c.a);
 				return r.a.createElement("div", {
-					className: Object(o.a)(t, c.a.container),
+					className: Object(a.a)(t, u.a.container),
 					style: s
-				}, r.a.createElement(i.a, {
-					className: c.a.button,
-					onClick: () => u(n)
-				}, l._("Back to Top", null, {
+				}, r.a.createElement(d.a, b({
+					className: u.a.button,
+					onClick: () => m(n)
+				}, i && {
+					priority: d.c.Secondary,
+					rplStyle: !0
+				}), p._("Back to Top", null, {
 					hk: "YjBtV"
 				})))
 			}
@@ -1947,7 +1963,7 @@
 				const t = Object(o.f)().getState(),
 					n = Object(A.a)(t, Object(i.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === T.dd.GreyRereddit || e.d2xPdpSideRailRecsVariant === T.dd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === T.dd.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === T.bd.GreyRereddit || e.d2xPdpSideRailRecsVariant === T.bd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === T.bd.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(K, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -2676,7 +2692,7 @@
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: s.D
-				}) === s.Kd
+				}) === s.Id
 			}
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, n) {
@@ -2694,11 +2710,11 @@
 				d = n("./node_modules/reselect/es/index.js");
 			const c = Object(d.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(i.h)(e) && Object(o.f)(e),
-					experimentName: s.lc
+					experimentName: s.kc
 				}), a.a),
 				l = Object(d.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(i.h)(e) && Object(o.f)(e),
-					experimentName: s.kc
+					experimentName: s.jc
 				}), a.a),
 				u = Object(d.a)(c, l, (e, t) => e || t),
 				b = Object(d.a)(c, l, (e, t) => !(!e && !t))
@@ -2735,4 +2751,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.484a4a9250b41e1875e1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.1fac1c7392c08ba62328.js.map

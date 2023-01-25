@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.fa313befe5aef619110a.js
-// Retrieved at 1/24/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.bc814810ada7ba749836.js
+// Retrieved at 1/25/2023, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, o) {
@@ -607,8 +607,8 @@
 				Q = o("./src/telemetry/index.ts"),
 				U = o("./src/lib/initializeClient/installReducer.ts"),
 				B = o("./src/reddit/reducers/features/modActivitySummaries/index.ts"),
-				H = o("./node_modules/redux/es/redux.js"),
-				V = o("./node_modules/icepick/icepick.js"),
+				V = o("./node_modules/redux/es/redux.js"),
+				H = o("./node_modules/icepick/icepick.js"),
 				G = o("./src/reddit/actions/modQueue/constants.ts");
 			const $ = {};
 			var K = function() {
@@ -630,7 +630,7 @@
 							var t;
 							const o = null === (t = e.previousActions) || void 0 === t ? void 0 : t.actions;
 							o && o.length && o.forEach(e => e.modAction ? n[e.modAction.id] = e.modAction : !!e.reportAction && (n[e.reportAction.id] = e.reportAction))
-						}), Object(V.merge)(e, n)
+						}), Object(H.merge)(e, n)
 					}
 					case G.l: {
 						const {
@@ -648,7 +648,7 @@
 								__typename: "ModAction",
 								moderatorInfo: o
 							})
-						}), Object(V.merge)(e, r)
+						}), Object(H.merge)(e, r)
 					}
 					default:
 						return e
@@ -677,7 +677,7 @@
 									return (null === (t = e.modAction) || void 0 === t ? void 0 : t.id) || (null === (o = e.reportAction) || void 0 === o ? void 0 : o.id)
 								}).filter(e => !!e).splice(0, 5)), e
 							}, {});
-							return Object(V.merge)(e, n)
+							return Object(H.merge)(e, n)
 						}
 						case G.l: {
 							const {
@@ -690,13 +690,13 @@
 									lastModAction: o
 								} = t;
 								o && o.id && o.target && (r[o.target.id] = [o.id, ...e[o.target.id] || []].splice(0, 5))
-							}), Object(V.merge)(e, r)
+							}), Object(H.merge)(e, r)
 						}
 						default:
 							return e
 					}
 				},
-				J = Object(H.c)({
+				J = Object(V.c)({
 					models: K,
 					order: W
 				}),
@@ -1318,13 +1318,13 @@
 						mod_note: t.modNote
 					}
 				}),
-				H = (e, t, o) => Object(F.a)(Object(T.a)(e, [q.a]), {
+				V = (e, t, o) => Object(F.a)(Object(T.a)(e, [q.a]), {
 					endpoint: Object(Q.a)(Object(U.a)(`${e.apiUrl}/api/v1/modactions/removal_${o}_message/`)),
 					method: A.ob.POST,
 					type: "json",
 					data: t
 				});
-			var V = o("./src/reddit/helpers/isPost.ts"),
+			var H = o("./src/reddit/helpers/isPost.ts"),
 				G = o("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
 				$ = o("./src/reddit/helpers/routeKey/index.ts"),
 				K = o("./src/reddit/models/ModQueue/index.ts"),
@@ -1441,7 +1441,7 @@
 					const u = i(),
 						l = u.user.account && u.user.account.displayText,
 						m = e[0],
-						b = Object(V.a)(m) ? W.e.Post : W.e.Comment,
+						b = Object(H.a)(m) ? W.e.Post : W.e.Comment,
 						p = b === W.e.Post ? u.posts.models[m] : u.features.comments.models[m],
 						f = b === W.e.Post ? w.Q : M.j;
 					if (!p || !l) return !1;
@@ -1468,7 +1468,7 @@
 									isLocked: n,
 									type: s
 								},
-								i = await H(c(), Object(W.h)(r, b), b);
+								i = await V(c(), Object(W.h)(r, b), b);
 							if (i.ok) {
 								if ([W.f.Public, W.f.PublicAsSubreddit].includes(s)) {
 									if (d(_e()), i.body) {
@@ -1571,7 +1571,7 @@
 									title: t.title,
 									type: r
 								},
-								n = await H(c(), Object(W.h)(s, W.e.Bulk), W.e.Bulk);
+								n = await V(c(), Object(W.h)(s, W.e.Bulk), W.e.Bulk);
 							n.ok ? (d(Se()), d(m)) : d(ye(n.error))
 						} else d(m)
 					} else d(he(p.error))
@@ -1847,8 +1847,8 @@
 				n = o("./src/reddit/selectors/user.ts");
 			const d = e => Object(r.c)(e, {
 				experimentEligibilitySelector: n.S,
-				experimentName: s.Wb
-			}) === s.Kd
+				experimentName: s.Vb
+			}) === s.Id
 		},
 		"./src/reddit/selectors/experiments/realtimeMQUpdates.ts": function(e, t, o) {
 			"use strict";
@@ -1861,8 +1861,8 @@
 				d = o("./src/reddit/selectors/experiments/modqueueActionBarUXImprovements.ts");
 			const i = e => Object(d.a)(e) && Object(r.c)(e, {
 				experimentEligibilitySelector: n.S,
-				experimentName: s.wc
-			}) === s.Kd
+				experimentName: s.vc
+			}) === s.Id
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, o) {
 			"use strict";
@@ -1946,4 +1946,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.fa313befe5aef619110a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.bc814810ada7ba749836.js.map

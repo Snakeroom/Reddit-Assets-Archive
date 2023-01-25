@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.af8ad6c991c194b4610e.js
-// Retrieved at 1/24/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.04073629412638a9d4f4.js
+// Retrieved at 1/25/2023, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-meta-MainnetPointsMigrationPage"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -1138,11 +1138,11 @@
 				U = n("./src/reddit/components/Governance/Token/index.tsx"),
 				z = n("./src/reddit/hooks/useLocale.ts"),
 				Z = n("./src/reddit/icons/svgs/LoadingOrbit/index.tsx"),
-				Y = n("./src/higherOrderComponents/asModal/index.tsx"),
-				q = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				K = n("./node_modules/@ethersproject/address/lib.esm/index.js"),
-				G = n("./node_modules/lodash/debounce.js"),
-				X = n.n(G),
+				q = n("./src/higherOrderComponents/asModal/index.tsx"),
+				Y = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				G = n("./node_modules/@ethersproject/address/lib.esm/index.js"),
+				K = n("./node_modules/lodash/debounce.js"),
+				X = n.n(K),
 				J = n("./src/lib/classNames/index.ts"),
 				Q = n("./src/reddit/constants/colors.ts"),
 				$ = n("./src/reddit/controls/FormFields/index.tsx"),
@@ -1162,7 +1162,7 @@
 				} = e;
 				const [a, s] = Object(r.useState)(""), o = Object(r.useRef)(a), [l, c] = Object(r.useState)(re.Empty), d = l === re.Invalid, u = () => {
 					if (se.test(o.current)) {
-						if (!!Object(K.a)(o.current)) return c(re.Valid), void n(o.current, !0)
+						if (!!Object(G.a)(o.current)) return c(re.Valid), void n(o.current, !0)
 					}
 					c(re.Invalid)
 				}, m = Object(r.useMemo)(() => X()(u, 300), [o, n, u]);
@@ -1229,7 +1229,7 @@
 				hk: "39wkrJ"
 			}), le._("Transfer the points into your wallet.", null, {
 				hk: "vZ3gk"
-			})], de = Object(Y.a)(e => {
+			})], de = Object(q.a)(e => {
 				let {
 					amount: t,
 					subredditId: n,
@@ -1247,7 +1247,7 @@
 					"aria-label": le._("Close", null, {
 						hk: "3fyGPG"
 					})
-				}, i.a.createElement(q.b, {
+				}, i.a.createElement(Y.b, {
 					className: ae.a.closeIcon
 				})), i.a.createElement("h2", null, u ? le._("Transfer to Mainnet", null, {
 					hk: "4riDgo"
@@ -1869,16 +1869,16 @@
 			const r = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: a.ue
-					}) === a.Kd
+						experimentName: a.se
+					}) === a.Id
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: a.se
-					}) === a.Kd
+						experimentName: a.qe
+					}) === a.Id
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.af8ad6c991c194b4610e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-MainnetPointsMigrationPage.04073629412638a9d4f4.js.map

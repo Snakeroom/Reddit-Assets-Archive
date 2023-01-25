@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.2866b524b7629eb018dc.js
-// Retrieved at 1/24/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.7ec7de74214dd67accab.js
+// Retrieved at 1/25/2023, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -1316,16 +1316,28 @@
 			"use strict";
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
-				i = s("./src/lib/classNames/index.ts"),
-				o = s("./src/reddit/constants/elementIds.ts"),
-				a = s("./src/reddit/controls/Button/index.tsx"),
-				d = s("./src/reddit/components/BackToTop/index.m.less"),
-				l = s.n(d);
+				i = s("./node_modules/react-redux/es/index.js"),
+				o = s("./src/lib/classNames/index.ts"),
+				a = s("./src/reddit/constants/elementIds.ts"),
+				d = s("./src/reddit/controls/Button/index.tsx"),
+				l = s("./src/reddit/selectors/experiments/shredditParity.ts"),
+				c = s("./src/reddit/components/BackToTop/index.m.less"),
+				u = s.n(c);
+
+			function m() {
+				return (m = Object.assign || function(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var s = arguments[t];
+						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
+					}
+					return e
+				}).apply(this, arguments)
+			}
 			const {
-				fbt: c
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), u = e => {
+				fbt: p
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), h = e => {
 				if (e) {
-					const e = document.getElementById(o.e);
+					const e = document.getElementById(a.e);
 					e && e.scroll(0, 0)
 				} else window.scroll(0, 0)
 			};
@@ -1335,13 +1347,17 @@
 					isOverlay: s,
 					style: n
 				} = e;
+				const a = Object(i.e)(l.a);
 				return r.a.createElement("div", {
-					className: Object(i.a)(t, l.a.container),
+					className: Object(o.a)(t, u.a.container),
 					style: n
-				}, r.a.createElement(a.a, {
-					className: l.a.button,
-					onClick: () => u(s)
-				}, c._("Back to Top", null, {
+				}, r.a.createElement(d.a, m({
+					className: u.a.button,
+					onClick: () => h(s)
+				}, a && {
+					priority: d.c.Secondary,
+					rplStyle: !0
+				}), p._("Back to Top", null, {
 					hk: "YjBtV"
 				})))
 			}
@@ -4351,7 +4367,7 @@
 				const t = Object(i.f)().getState(),
 					s = Object(U.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === R.dd.GreyRereddit || e.d2xPdpSideRailRecsVariant === R.dd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === R.dd.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === R.bd.GreyRereddit || e.d2xPdpSideRailRecsVariant === R.bd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === R.bd.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(q, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -6475,11 +6491,11 @@
 				d = s("./node_modules/reselect/es/index.js");
 			const l = Object(d.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(a.h)(e) && Object(i.f)(e),
-					experimentName: n.lc
+					experimentName: n.kc
 				}), o.a),
 				c = Object(d.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.h)(e) && Object(i.f)(e),
-					experimentName: n.kc
+					experimentName: n.jc
 				}), o.a),
 				u = Object(d.a)(l, c, (e, t) => e || t),
 				m = Object(d.a)(l, c, (e, t) => !(!e && !t))
@@ -6539,4 +6555,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.2866b524b7629eb018dc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.7ec7de74214dd67accab.js.map

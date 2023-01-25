@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.cbcb2674784c8757e05a.js
-// Retrieved at 1/24/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.fcb391fa3175929f5152.js
+// Retrieved at 1/25/2023, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba"], {
 		"./src/lib/scroll/index.ts": function(e, t, o) {
@@ -228,8 +228,8 @@
 				se = o("./node_modules/reselect/es/index.js");
 			const ce = Object(se.a)(e => Object(re.c)(e, {
 				experimentEligibilitySelector: re.a,
-				experimentName: ne.Ab
-			}), e => e === ne.Kd);
+				experimentName: ne.zb
+			}), e => e === ne.Id);
 			var ie = o("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				ae = o("./src/reddit/selectors/platform.ts"),
 				de = o("./src/reddit/selectors/posts.ts"),
@@ -2135,4 +2135,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.cbcb2674784c8757e05a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.fcb391fa3175929f5152.js.map

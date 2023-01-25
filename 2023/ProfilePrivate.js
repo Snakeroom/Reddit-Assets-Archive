@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.e888b3b47c77e2772408.js
-// Retrieved at 1/24/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.d0e96b0c6f6a0d5bb6b5.js
+// Retrieved at 1/25/2023, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -777,16 +777,28 @@
 			"use strict";
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n),
-				r = s("./src/lib/classNames/index.ts"),
-				i = s("./src/reddit/constants/elementIds.ts"),
-				a = s("./src/reddit/controls/Button/index.tsx"),
-				d = s("./src/reddit/components/BackToTop/index.m.less"),
-				c = s.n(d);
+				r = s("./node_modules/react-redux/es/index.js"),
+				i = s("./src/lib/classNames/index.ts"),
+				a = s("./src/reddit/constants/elementIds.ts"),
+				d = s("./src/reddit/controls/Button/index.tsx"),
+				c = s("./src/reddit/selectors/experiments/shredditParity.ts"),
+				l = s("./src/reddit/components/BackToTop/index.m.less"),
+				m = s.n(l);
+
+			function u() {
+				return (u = Object.assign || function(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var s = arguments[t];
+						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
+					}
+					return e
+				}).apply(this, arguments)
+			}
 			const {
-				fbt: l
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), m = e => {
+				fbt: p
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), b = e => {
 				if (e) {
-					const e = document.getElementById(i.e);
+					const e = document.getElementById(a.e);
 					e && e.scroll(0, 0)
 				} else window.scroll(0, 0)
 			};
@@ -796,13 +808,17 @@
 					isOverlay: s,
 					style: n
 				} = e;
+				const a = Object(r.e)(c.a);
 				return o.a.createElement("div", {
-					className: Object(r.a)(t, c.a.container),
+					className: Object(i.a)(t, m.a.container),
 					style: n
-				}, o.a.createElement(a.a, {
-					className: c.a.button,
-					onClick: () => m(s)
-				}, l._("Back to Top", null, {
+				}, o.a.createElement(d.a, u({
+					className: m.a.button,
+					onClick: () => b(s)
+				}, a && {
+					priority: d.c.Secondary,
+					rplStyle: !0
+				}), p._("Back to Top", null, {
 					hk: "YjBtV"
 				})))
 			}
@@ -3066,8 +3082,8 @@
 				p = s("./node_modules/reselect/es/index.js");
 			const b = Object(p.a)(e => Object(u.c)(e, {
 				experimentEligibilitySelector: u.a,
-				experimentName: m.tc
-			}), e => e === m.Kd);
+				experimentName: m.sc
+			}), e => e === m.Id);
 			var h = s("./node_modules/fbt/lib/FbtPublic.js"),
 				g = s("./src/lib/classNames/index.ts"),
 				f = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
@@ -4385,7 +4401,7 @@
 				const t = Object(r.f)().getState(),
 					s = Object(F.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === L.dd.GreyRereddit || e.d2xPdpSideRailRecsVariant === L.dd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === L.dd.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === L.bd.GreyRereddit || e.d2xPdpSideRailRecsVariant === L.bd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === L.bd.LargeImagePreview ? e.reredditButtons : [];
 					return o.a.createElement(J, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -7478,7 +7494,7 @@
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
 					experimentName: n.D
-				}) === n.Kd
+				}) === n.Id
 			}
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, s) {
@@ -7496,11 +7512,11 @@
 				d = s("./node_modules/reselect/es/index.js");
 			const c = Object(d.a)(e => Object(o.c)(e, {
 					experimentEligibilitySelector: e => Object(a.h)(e) && Object(r.f)(e),
-					experimentName: n.lc
+					experimentName: n.kc
 				}), i.a),
 				l = Object(d.a)(e => Object(o.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.h)(e) && Object(r.f)(e),
-					experimentName: n.kc
+					experimentName: n.jc
 				}), i.a),
 				m = Object(d.a)(c, l, (e, t) => e || t),
 				u = Object(d.a)(c, l, (e, t) => !(!e && !t))
@@ -7585,4 +7601,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.e888b3b47c77e2772408.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.d0e96b0c6f6a0d5bb6b5.js.map

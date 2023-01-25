@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.9c6ea184eb7f4de303fa.js
-// Retrieved at 1/24/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.8caa2f2cea52c15fcc84.js
+// Retrieved at 1/25/2023, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, n) {
@@ -102,16 +102,28 @@
 			"use strict";
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
-				a = n("./src/lib/classNames/index.ts"),
-				i = n("./src/reddit/constants/elementIds.ts"),
-				o = n("./src/reddit/controls/Button/index.tsx"),
-				c = n("./src/reddit/components/BackToTop/index.m.less"),
-				d = n.n(c);
+				a = n("./node_modules/react-redux/es/index.js"),
+				i = n("./src/lib/classNames/index.ts"),
+				o = n("./src/reddit/constants/elementIds.ts"),
+				c = n("./src/reddit/controls/Button/index.tsx"),
+				d = n("./src/reddit/selectors/experiments/shredditParity.ts"),
+				l = n("./src/reddit/components/BackToTop/index.m.less"),
+				u = n.n(l);
+
+			function m() {
+				return (m = Object.assign || function(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var n = arguments[t];
+						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
+					}
+					return e
+				}).apply(this, arguments)
+			}
 			const {
-				fbt: l
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), u = e => {
+				fbt: b
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), p = e => {
 				if (e) {
-					const e = document.getElementById(i.e);
+					const e = document.getElementById(o.e);
 					e && e.scroll(0, 0)
 				} else window.scroll(0, 0)
 			};
@@ -121,13 +133,17 @@
 					isOverlay: n,
 					style: s
 				} = e;
+				const o = Object(a.e)(d.a);
 				return r.a.createElement("div", {
-					className: Object(a.a)(t, d.a.container),
+					className: Object(i.a)(t, u.a.container),
 					style: s
-				}, r.a.createElement(o.a, {
-					className: d.a.button,
-					onClick: () => u(n)
-				}, l._("Back to Top", null, {
+				}, r.a.createElement(c.a, m({
+					className: u.a.button,
+					onClick: () => p(n)
+				}, o && {
+					priority: c.c.Secondary,
+					rplStyle: !0
+				}), b._("Back to Top", null, {
 					hk: "YjBtV"
 				})))
 			}
@@ -676,7 +692,7 @@
 				const t = Object(a.f)().getState(),
 					n = Object(F.a)(t, Object(o.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === I.dd.GreyRereddit || e.d2xPdpSideRailRecsVariant === I.dd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === I.dd.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === I.bd.GreyRereddit || e.d2xPdpSideRailRecsVariant === I.bd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === I.bd.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(K, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -2140,11 +2156,11 @@
 				c = n("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(o.h)(e) && Object(a.f)(e),
-					experimentName: s.lc
+					experimentName: s.kc
 				}), i.a),
 				l = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(o.h)(e) && Object(a.f)(e),
-					experimentName: s.kc
+					experimentName: s.jc
 				}), i.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -2169,4 +2185,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.9c6ea184eb7f4de303fa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.8caa2f2cea52c15fcc84.js.map
