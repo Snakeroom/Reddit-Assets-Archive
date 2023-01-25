@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.544c88c625550af2b944.js
-// Retrieved at 1/25/2023, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.7c62217d12874c17f9fa.js
+// Retrieved at 1/25/2023, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "CollectionCommentsPage~SearchResults", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -47926,44 +47926,43 @@
 		"./src/reddit/selectors/experiments/nsfwBypassableBlockingExperiment.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "d", (function() {
-				return m
+				return u
 			})), n.d(t, "b", (function() {
-				return p
+				return m
 			})), n.d(t, "c", (function() {
-				return h
+				return f
 			})), n.d(t, "a", (function() {
-				return C
+				return h
 			}));
 			var s = n("./src/lib/constants/index.ts"),
 				r = n("./src/lib/localStorageAvailable/index.ts"),
 				o = n("./src/reddit/constants/experiments.ts"),
 				i = n("./src/reddit/constants/localStorage.ts"),
-				a = n("./src/reddit/helpers/localStorage/index.ts"),
-				c = n("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
-				d = n("./src/reddit/selectors/userPrefs.ts"),
-				l = n("./node_modules/reselect/es/index.js");
-			const u = 30 * s.pb,
-				m = () => {
-					Object(a.zb)(i.b.XpromoConsolidation, (new Date).toString())
+				a = n("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
+				c = n("./src/reddit/selectors/userPrefs.ts"),
+				d = n("./node_modules/reselect/es/index.js");
+			const l = 30 * s.pb,
+				u = () => {
+					localStorage.setItem(i.b.XpromoConsolidation, (new Date).toString())
 				},
-				p = () => {
+				m = () => {
 					if (!Object(r.a)()) return !1;
 					const e = localStorage.getItem(i.b.XpromoConsolidation);
 					if (!e) return !0;
 					const t = Date.parse(e);
-					return Number.isNaN(t) ? (localStorage.removeItem(i.b.XpromoConsolidation), !0) : Date.now() > t + u
+					return Number.isNaN(t) ? (localStorage.removeItem(i.b.XpromoConsolidation), !0) : Date.now() > t + l
 				},
-				b = (e, t) => t === c.a.NoPreview && (e === o.eb.SkippableButtons || e === o.eb.SkippableText),
-				f = (e, t) => t === c.a.NoPreview && e === o.eb.NoUpsell,
-				h = Object(l.a)(c.h, c.g, (e, t) => {
+				p = (e, t) => t === a.a.NoPreview && (e === o.eb.SkippableButtons || e === o.eb.SkippableText),
+				b = (e, t) => t === a.a.NoPreview && e === o.eb.NoUpsell,
+				f = Object(d.a)(a.h, a.g, (e, t) => {
 					return {
-						isControlVariant: !(!e || !t) && ((e, t) => t === c.a.NoPreview && !b(e, t) && !f(e, t))(e, t),
-						isNewDesignVariant: !(!e || !t) && b(e, t),
-						isOldDesignVariant: !(!e || !t) && f(e, t),
+						isControlVariant: !(!e || !t) && ((e, t) => t === a.a.NoPreview && !p(e, t) && !b(e, t))(e, t),
+						isNewDesignVariant: !(!e || !t) && p(e, t),
+						isOldDesignVariant: !(!e || !t) && b(e, t),
 						variant: e
 					}
 				}),
-				C = Object(l.a)(h, d.a, (e, t) => !e.isOldDesignVariant && (!e.isNewDesignVariant || !t))
+				h = Object(d.a)(f, c.a, (e, t) => !e.isOldDesignVariant && (!e.isNewDesignVariant || !t))
 		},
 		"./src/reddit/selectors/experiments/onlineIndicator.ts": function(e, t, n) {
 			"use strict";
@@ -49210,4 +49209,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.544c88c625550af2b944.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.7c62217d12874c17f9fa.js.map

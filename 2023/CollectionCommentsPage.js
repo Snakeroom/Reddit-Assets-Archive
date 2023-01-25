@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.200471622b56501a8050.js
-// Retrieved at 1/25/2023, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.b4d003cd90e7a032a5b6.js
+// Retrieved at 1/25/2023, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -11105,44 +11105,43 @@
 		"./src/reddit/selectors/experiments/nsfwBypassableBlockingExperiment.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "d", (function() {
-				return u
+				return m
 			})), s.d(t, "b", (function() {
-				return p
+				return u
 			})), s.d(t, "c", (function() {
-				return g
+				return h
 			})), s.d(t, "a", (function() {
-				return x
+				return g
 			}));
 			var n = s("./src/lib/constants/index.ts"),
 				r = s("./src/lib/localStorageAvailable/index.ts"),
 				o = s("./src/reddit/constants/experiments.ts"),
 				i = s("./src/reddit/constants/localStorage.ts"),
-				a = s("./src/reddit/helpers/localStorage/index.ts"),
-				d = s("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
-				c = s("./src/reddit/selectors/userPrefs.ts"),
-				l = s("./node_modules/reselect/es/index.js");
-			const m = 30 * n.pb,
-				u = () => {
-					Object(a.zb)(i.b.XpromoConsolidation, (new Date).toString())
+				a = s("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
+				d = s("./src/reddit/selectors/userPrefs.ts"),
+				c = s("./node_modules/reselect/es/index.js");
+			const l = 30 * n.pb,
+				m = () => {
+					localStorage.setItem(i.b.XpromoConsolidation, (new Date).toString())
 				},
-				p = () => {
+				u = () => {
 					if (!Object(r.a)()) return !1;
 					const e = localStorage.getItem(i.b.XpromoConsolidation);
 					if (!e) return !0;
 					const t = Date.parse(e);
-					return Number.isNaN(t) ? (localStorage.removeItem(i.b.XpromoConsolidation), !0) : Date.now() > t + m
+					return Number.isNaN(t) ? (localStorage.removeItem(i.b.XpromoConsolidation), !0) : Date.now() > t + l
 				},
-				b = (e, t) => t === d.a.NoPreview && (e === o.eb.SkippableButtons || e === o.eb.SkippableText),
-				h = (e, t) => t === d.a.NoPreview && e === o.eb.NoUpsell,
-				g = Object(l.a)(d.h, d.g, (e, t) => {
+				p = (e, t) => t === a.a.NoPreview && (e === o.eb.SkippableButtons || e === o.eb.SkippableText),
+				b = (e, t) => t === a.a.NoPreview && e === o.eb.NoUpsell,
+				h = Object(c.a)(a.h, a.g, (e, t) => {
 					return {
-						isControlVariant: !(!e || !t) && ((e, t) => t === d.a.NoPreview && !b(e, t) && !h(e, t))(e, t),
-						isNewDesignVariant: !(!e || !t) && b(e, t),
-						isOldDesignVariant: !(!e || !t) && h(e, t),
+						isControlVariant: !(!e || !t) && ((e, t) => t === a.a.NoPreview && !p(e, t) && !b(e, t))(e, t),
+						isNewDesignVariant: !(!e || !t) && p(e, t),
+						isOldDesignVariant: !(!e || !t) && b(e, t),
 						variant: e
 					}
 				}),
-				x = Object(l.a)(g, c.a, (e, t) => !e.isOldDesignVariant && (!e.isNewDesignVariant || !t))
+				g = Object(c.a)(h, d.a, (e, t) => !e.isOldDesignVariant && (!e.isNewDesignVariant || !t))
 		},
 		"./src/reddit/selectors/experiments/resonatePilot.ts": function(e, t, s) {
 			"use strict";
@@ -11326,4 +11325,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.200471622b56501a8050.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.b4d003cd90e7a032a5b6.js.map
