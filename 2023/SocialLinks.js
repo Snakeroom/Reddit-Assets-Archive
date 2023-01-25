@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SocialLinks.e9e9891299de5b4c4bfd.js
-// Retrieved at 1/19/2023, 4:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SocialLinks.e1a363f2973a5ff81f38.js
+// Retrieved at 1/25/2023, 6:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SocialLinks"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -498,7 +498,8 @@
 			e.exports = {
 				button: "_3hew1NnzwygOKDNQDKp6R4",
 				disabled: "_14cQ6UaNZthfUjDzaM1xHq",
-				socialLinkIcon: "_2GEwqmoavetftIcfZO6bBP"
+				socialLinkIcon: "_2GEwqmoavetftIcfZO6bBP",
+				socialLink: "_1lOZXPReVOD51n7jOVp3q4"
 			}
 		},
 		"./src/reddit/components/SocialLinks/SocialLinkButton.tsx": function(e, t, s) {
@@ -519,24 +520,32 @@
 					className: a,
 					disabled: l,
 					onClick: u,
-					socialLinkType: d
+					socialLinkType: d,
+					outboundUrl: _
 				} = e;
-				const [_, h] = Object(i.useState)();
-				return Object(i.useEffect)(() => {
+				const [h, m] = Object(i.useState)();
+				Object(i.useEffect)(() => {
 					if (d) {
 						const e = Object(o.b)(d);
-						h(e)
+						m(e)
 					}
-				}, [d]), n.a.createElement("div", {
+				}, [d]);
+				const p = n.a.createElement(n.a.Fragment, null, d && h && n.a.createElement("img", {
+					className: c.a.socialLinkIcon,
+					src: h
+				}), s);
+				return n.a.createElement("li", {
 					key: t,
 					className: Object(r.a)(c.a.button, {
 						[c.a.disabled]: l
 					}, a),
 					onClick: l ? void 0 : u
-				}, d && _ && n.a.createElement("img", {
-					className: c.a.socialLinkIcon,
-					src: _
-				}), s)
+				}, _ ? n.a.createElement("a", {
+					className: c.a.socialLink,
+					href: _,
+					target: "_blank",
+					rel: "noopener noreferrer"
+				}, p) : p)
 			}
 		},
 		"./src/reddit/components/SocialLinks/constants.ts": function(e, t, s) {
@@ -805,21 +814,22 @@
 					}, [w, s, z, A]),
 					S = Object(o.e)(e => Object(p.c)(g.a)(e)),
 					B = Object(_.a)(),
-					U = Object(n.useCallback)((e, i) => {
-						const n = i + 1,
-							r = {
+					U = Object(n.useCallback)((e, i, n) => {
+						null == n || n.preventDefault();
+						const r = i + 1,
+							o = {
 								socialLinkType: e.type,
 								outboundUrl: e.outboundUrl,
 								name: e.handle || e.title,
-								position: n,
+								position: r,
 								isNew: !1
 							};
-						if (t && s) C(e), E(n), w(Object(l.h)(g.a)), z(Object(d.c)(r));
+						if (t && s) C(e), E(r), w(Object(l.h)(g.a)), z(Object(d.c)(o));
 						else {
 							const {
 								outboundUrl: t
 							} = e;
-							window.open(t, "_blank"), z(Object(d.f)(r)), B(t, b.SourceElement.SocialLink, void 0, void 0, e.type)
+							window.open(t, "_blank"), z(Object(d.f)(o)), B(t, b.SourceElement.SocialLink, void 0, void 0, e.type)
 						}
 					}, [w, t, s, z, B]),
 					T = Object(n.useCallback)((e, t, s) => {
@@ -838,19 +848,21 @@
 							isNew: !1
 						}))
 					}, [w, z, y]),
-					I = t && (s || A && A.length < g.g),
-					Z = t && !s && A && A.length >= g.g;
-				return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
-					className: Object(a.a)(x.a.socialLinks, i)
-				}, A && A.map((e, t) => r.a.createElement(k.a, {
+					Z = t && (s || A && A.length < g.g),
+					I = t && !s && A && A.length >= g.g;
+				return r.a.createElement(r.a.Fragment, null, r.a.createElement("nav", {
+					className: Object(a.a)(x.a.socialLinks, i),
+					"aria-label": "Social Links"
+				}, r.a.createElement("ul", null, A && A.map((e, t) => r.a.createElement(k.a, {
 					key: e.id,
 					socialLinkType: e.type,
-					onClick: () => U(e, t)
+					onClick: s => U(e, t, s),
+					outboundUrl: e.outboundUrl
 				}, e.handle || e.title, s && r.a.createElement(m.a, {
 					name: c.a.clear,
 					className: x.a.removeIcon,
 					onClick: s => T(s, e, t)
-				}))), I && r.a.createElement(k.a, {
+				}))), Z && r.a.createElement(k.a, {
 					disabled: !A || A.length >= g.g,
 					onClick: O
 				}, r.a.createElement(m.a, {
@@ -858,7 +870,7 @@
 					className: x.a.addIcon
 				}), v._("Add social link", null, {
 					hk: "4hANO2"
-				})), Z && r.a.createElement(F, {
+				})), I && r.a.createElement(F, {
 					to: "/settings/profile"
 				}, r.a.createElement(k.a, null, v._("Edit", null, {
 					hk: "3MTv8r"
@@ -867,7 +879,7 @@
 					socialLinkPosition: L,
 					username: y,
 					withOverlay: !0
-				})))
+				}))))
 			};
 			t.default = w
 		},
@@ -925,4 +937,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SocialLinks.e9e9891299de5b4c4bfd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SocialLinks.e1a363f2973a5ff81f38.js.map
