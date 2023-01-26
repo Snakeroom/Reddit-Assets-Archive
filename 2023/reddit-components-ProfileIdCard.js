@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.ab55f2e7a60a502a5d44.js
-// Retrieved at 1/25/2023, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.aa55f67fb3a33d0572a4.js
+// Retrieved at 1/25/2023, 7:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -2288,7 +2288,7 @@
 					url: S,
 					isHovercard: U
 				} = e;
-				const L = Object(o.e)(e => !C && !!E && Object(d.e)(e));
+				const L = Object(o.e)(e => !C && !!E && Object(d.d)(e));
 				return s.a.createElement(s.a.Fragment, null, s.a.createElement(m.a, {
 					bannerBackgroundImage: t,
 					editMode: !!f,
@@ -3609,7 +3609,7 @@
 					var t, r, n;
 					return null === (n = null === (r = null === (t = e.features) || void 0 === t ? void 0 : t.avatar) || void 0 === r ? void 0 : r.marketing) || void 0 === n ? void 0 : n.pushcard
 				},
-				d = Object(n.a)(c, i.c, (e, t) => {
+				d = Object(n.a)(c, i.b, (e, t) => {
 					if (!e || !t) return null;
 					const {
 						id: r,
@@ -3705,4 +3705,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.ab55f2e7a60a502a5d44.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.aa55f67fb3a33d0572a4.js.map

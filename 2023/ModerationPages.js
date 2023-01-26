@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.51e8d5999bed269a3b6f.js
-// Retrieved at 1/25/2023, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.b7f5a1b017d7b75fabeb.js
+// Retrieved at 1/25/2023, 7:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -7835,7 +7835,7 @@
 					oe = y && Object(C.I)(te, y),
 					ce = E && Object(fe.o)(te, E),
 					_e = oe || ce,
-					ge = Object(le.p)(W),
+					ge = Object(le.o)(W),
 					ve = Object(ue.n)(te, {
 						subredditId: _e
 					}),
@@ -9145,7 +9145,7 @@
 						} = t;
 						var m, p;
 						const b = Object(Ee.k)(e),
-							f = !!b && !Object(he.hg)(b) && (o || b === he.hb.Community),
+							f = !!b && !Object(he.gg)(b) && (o || b === he.hb.Community),
 							{
 								adsSeenCount: h,
 								totalPostsSeenCount: _,
@@ -42758,7 +42758,7 @@
 					url: N,
 					isHovercard: P
 				} = e;
-				const R = Object(o.e)(e => !y && !!I && Object(c.e)(e));
+				const R = Object(o.e)(e => !y && !!I && Object(c.d)(e));
 				return r.a.createElement(r.a.Fragment, null, r.a.createElement(m.a, {
 					bannerBackgroundImage: t,
 					editMode: !!b,
@@ -54982,7 +54982,7 @@
 								experimentName: o.y,
 								expEventOverride: t
 							});
-							return !!(Object(o.hg)(n) ? void 0 : n)
+							return !!(Object(o.gg)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -62122,16 +62122,15 @@
 					noun: "try_this_look_post",
 					snoovatar: o.jb(e)
 				}),
-				u = e => t => ({
-					...o.o(t),
+				u = e => ({
+					...o.o(e),
 					source: "global",
 					action: "view",
 					noun: "screen",
 					actionInfo: {
 						pageType: "snoovatar_builder"
 					},
-					referrer: e,
-					snoovatar: o.jb(t)
+					snoovatar: o.jb(e)
 				}),
 				m = e => ({
 					...o.o(e),
@@ -62754,7 +62753,7 @@
 					adminId: e.authorId,
 					subredditId: e.belongsTo.id,
 					avatarShareUrl: e.source ? e.source.url : ""
-				}) && Object(a.b)(t)
+				}) && Object(a.a)(t)
 			})
 		},
 		"./src/reddit/hooks/useIsRemovedOrDeletedPost.ts": function(e, t, n) {
@@ -65490,7 +65489,7 @@
 						subredditId: n.id
 					})
 				},
-				isTalkHostsExperimentEnabled: C.p,
+				isTalkHostsExperimentEnabled: C.o,
 				isEventPostUiHidden: ee.a,
 				isDevplatformEnabled: Z.a
 			});
@@ -66003,7 +66002,7 @@
 					} = h;
 					return {
 						contentGateInfo: m,
-						isTalkHostsEnabled: Object(C.p)(u),
+						isTalkHostsEnabled: Object(C.o)(u),
 						isContributor: f,
 						isEmployee: t,
 						layout: n,
@@ -70820,7 +70819,7 @@
 					var t, n, s;
 					return null === (s = null === (n = null === (t = e.features) || void 0 === t ? void 0 : t.avatar) || void 0 === n ? void 0 : n.marketing) || void 0 === s ? void 0 : s.pushcard
 				},
-				c = Object(s.a)(d, a.c, (e, t) => {
+				c = Object(s.a)(d, a.b, (e, t) => {
 					if (!e || !t) return null;
 					const {
 						id: n,
@@ -71582,14 +71581,14 @@
 						experimentEligibilitySelector: r.a,
 						experimentName: s.hc
 					});
-					return !(!t || Object(s.hg)(t))
+					return !(!t || Object(s.gg)(t))
 				},
 				i = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
 						experimentName: s.Ub
 					});
-					return !(!t || Object(s.hg)(t))
+					return !(!t || Object(s.gg)(t))
 				}
 		},
 		"./src/reddit/selectors/experiments/commentSearchPdp.ts": function(e, t, n) {
@@ -71789,7 +71788,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: s.Hd
 				});
-				return !(!t || Object(s.hg)(t))
+				return !(!t || Object(s.gg)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/gqlSubredditPage.ts": function(e, t, n) {
@@ -73290,7 +73289,7 @@
 					} = e.onboarding;
 					if (t.success || t.failure) return t
 				},
-				x = Object(r.a)(m.k, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(i.hg)(e) ? t : null),
+				x = Object(r.a)(m.k, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(i.gg)(e) ? t : null),
 				O = Object(r.a)(m.k, (e, t) => {
 					let {
 						pageLayer: n
@@ -74737,4 +74736,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.51e8d5999bed269a3b6f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.b7f5a1b017d7b75fabeb.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.2117177db6905b8c2906.js
-// Retrieved at 1/19/2023, 4:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.f3df93e23b16ca541f89.js
+// Retrieved at 1/25/2023, 7:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -5324,7 +5324,7 @@
 					url: A,
 					isHovercard: P
 				} = e;
-				const U = Object(s.e)(e => !O && !!E && Object(d.e)(e));
+				const U = Object(s.e)(e => !O && !!E && Object(d.d)(e));
 				return r.a.createElement(r.a.Fragment, null, r.a.createElement(m.a, {
 					bannerBackgroundImage: t,
 					editMode: !!p,
@@ -6391,7 +6391,7 @@
 					var t, n, a;
 					return null === (a = null === (n = null === (t = e.features) || void 0 === t ? void 0 : t.avatar) || void 0 === n ? void 0 : n.marketing) || void 0 === a ? void 0 : a.pushcard
 				},
-				d = Object(a.a)(c, i.c, (e, t) => {
+				d = Object(a.a)(c, i.b, (e, t) => {
 					if (!e || !t) return null;
 					const {
 						id: n,
@@ -6652,4 +6652,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.2117177db6905b8c2906.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.f3df93e23b16ca541f89.js.map

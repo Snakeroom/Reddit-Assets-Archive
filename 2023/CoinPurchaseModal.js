@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.604135188778ec59014c.js
-// Retrieved at 1/18/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.01642de0c3214126ed81.js
+// Retrieved at 1/25/2023, 7:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal", "gildActions"], {
 		"./src/reddit/actions/economics/powerups/helpers.ts": function(e, t, a) {
@@ -81,16 +81,16 @@
 				g = a("./src/reddit/components/Gold/AwardKarmaToastMessage/index.m.less"),
 				h = a.n(g);
 			const {
-				fbt: f
-			} = a("./node_modules/fbt/lib/FbtPublic.js"), j = e => f._("Sent! You earned {=awarder karma}", [f._param("=awarder karma", p.a.createElement("a", {
+				fbt: j
+			} = a("./node_modules/fbt/lib/FbtPublic.js"), f = e => j._("Sent! You earned {=awarder karma}", [j._param("=awarder karma", p.a.createElement("a", {
 				className: h.a.karmaLink,
 				href: b.a,
 				target: "_blank",
 				rel: "noopener noreferrer"
-			}, f._({
+			}, j._({
 				"*": "{awarder karma} awarder karma",
 				_1: "1 awarder karma"
-			}, [f._plural(e.awarderKarmaReceived, "awarder karma")], {
+			}, [j._plural(e.awarderKarmaReceived, "awarder karma")], {
 				hk: "2Llmz0"
 			})))], {
 				hk: "3ItXUT"
@@ -280,7 +280,7 @@
 						} = e,
 						g = Object(k.a)(s, m),
 						h = e.awardKarmaReceived,
-						f = Object(M.m)(s),
+						j = Object(M.m)(s),
 						C = Object(v.b)(s) || Object(K.d)(K.a.GildingFlow, !1);
 					if (Object(v.g)(s)) {
 						const e = "success.gild",
@@ -304,13 +304,13 @@
 							});
 						a && (e.subredditCoins = a - g.coinPrice)
 					}
-					if (t(re(s, e)), f) {
+					if (t(re(s, e)), j) {
 						const a = {
 								...H.a,
-								...f.karma
+								...j.karma
 							},
 							r = a.fromAwardsReceived + e.awardKarmaReceived,
-							s = Object(P.e)(f);
+							s = Object(P.e)(j);
 						t(Object(l.f)({
 							coins: e.coins
 						})), t(Object(l.h)({
@@ -347,7 +347,7 @@
 					t(Object(u.f)({
 						customIconAsset: T,
 						kind: y.b.SuccessAward,
-						text: h > 0 ? j({
+						text: h > 0 ? f({
 							awarderKarmaReceived: h
 						}) : _
 					})), setTimeout(() => {
@@ -432,8 +432,8 @@
 				b = a("./src/reddit/helpers/correlationIdTracker.ts"),
 				g = a("./src/reddit/helpers/r2/normalizeAwardingsFromR2.ts"),
 				h = a("./src/reddit/models/Gold/Award.ts"),
-				f = a("./src/reddit/models/Gold/ProductOffer.ts"),
-				j = a("./src/reddit/models/Toast/index.ts"),
+				j = a("./src/reddit/models/Gold/ProductOffer.ts"),
+				f = a("./src/reddit/models/Toast/index.ts"),
 				O = a("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				w = a("./src/reddit/selectors/goldPurchaseModals.ts"),
 				y = a("./src/reddit/actions/goldPurchaseModals/constants.ts");
@@ -481,7 +481,7 @@
 								hk: "lgfDj"
 							});
 						s(Object(u.f)({
-							kind: j.b.Error,
+							kind: f.b.Error,
 							duration: u.a,
 							text: e || t
 						}))
@@ -496,17 +496,17 @@
 							pennies: m
 						} = a,
 						g = Object(w.s)(l) || Object(b.d)(b.a.GoldPayment, !1);
-					let h, j;
+					let h, f;
 					n(Object(d.stripeTokenPending)());
 					const O = Object(w.z)(l);
-					if (O || (h = await n(Object(d.validateAndCreateStripeToken)(e, t)), j = Object(w.w)(l), h)) try {
+					if (O || (h = await n(Object(d.validateAndCreateStripeToken)(e, t)), f = Object(w.w)(l), h)) try {
 						const e = await Object(p.d)({
 							coins: u,
 							context: i(),
 							correlationId: g,
-							offerContext: Object(f.d)(a, !1),
+							offerContext: Object(j.d)(a, !1),
 							pennies: m,
-							rememberCard: j,
+							rememberCard: f,
 							savedCardId: O || void 0,
 							token: h
 						});
@@ -533,7 +533,7 @@
 					} = l;
 					const m = i(),
 						{
-							coins: j,
+							coins: f,
 							pennies: O
 						} = n,
 						y = Object(w.s)(m) || Object(b.d)(b.a.GoldPayment, !1);
@@ -560,12 +560,12 @@
 								message: i
 							},
 							E = await Object(p.c)({
-								coins: j,
+								coins: f,
 								context: u(),
 								correlationId: y,
 								gildParams: x,
 								isOldReddit: c,
-								offerContext: Object(f.d)(n, !0),
+								offerContext: Object(j.d)(n, !0),
 								pennies: O,
 								rememberCard: C,
 								savedCardId: k || void 0,
@@ -652,7 +652,7 @@
 					try {
 						const r = await Object(m.c)({
 							context: o(),
-							offerContext: Object(f.d)(t, !1),
+							offerContext: Object(j.d)(t, !1),
 							orderId: e,
 							coins: u,
 							pennies: p,
@@ -682,7 +682,7 @@
 					const u = o(),
 						p = Object(w.s)(u) || Object(b.d)(b.a.GoldPayment, !1),
 						{
-							coins: j,
+							coins: f,
 							pennies: O
 						} = t;
 					try {
@@ -698,9 +698,9 @@
 						const y = w.id,
 							P = await Object(m.d)({
 								context: l(),
-								offerContext: Object(f.d)(t, !0),
+								offerContext: Object(j.d)(t, !0),
 								orderId: e,
-								coins: j,
+								coins: f,
 								pennies: O,
 								thingId: c,
 								awardId: y,
@@ -752,7 +752,7 @@
 			a.d(t, "a", (function() {
 				return h
 			})), a.d(t, "b", (function() {
-				return j
+				return f
 			})), a.d(t, "e", (function() {
 				return O
 			})), a.d(t, "d", (function() {
@@ -774,9 +774,9 @@
 				b = a("./src/reddit/actions/goldPurchaseModals/constants.ts");
 			const g = Object(n.a)(b.v),
 				h = Object(n.a)(b.d),
-				f = Object(n.a)(b.w),
-				j = (e, t, a) => async e => {
-					e(f({
+				j = Object(n.a)(b.w),
+				f = (e, t, a) => async e => {
+					e(j({
 						thingId: t
 					})), e(g({
 						correlationId: a
@@ -785,18 +785,18 @@
 					let {
 						apiContext: g
 					} = b;
-					const f = d(),
-						j = Object(l.c)(l.a.GoldPayment);
+					const j = d(),
+						f = Object(l.c)(l.a.GoldPayment);
 					let O, w;
 					c(Object(o.stripeTokenPending)());
-					const y = Object(p.z)(f);
-					if (y || (O = await c(Object(o.validateAndCreateStripeToken)(e, t)), w = Object(p.w)(f), O)) try {
+					const y = Object(p.z)(j);
+					if (y || (O = await c(Object(o.validateAndCreateStripeToken)(e, t)), w = Object(p.w)(j), O)) try {
 						const {
 							gildModalThingId: e,
 							isAnonymous: t,
 							message: d,
 							selectedAward: l
-						} = f.gild;
+						} = j.gild;
 						if (!e || !l.id) return void c(Object(o.stripeApiError)(r.fbt._("Gilding unknown thing", null, {
 							hk: "Qd6mo"
 						})));
@@ -812,7 +812,7 @@
 							},
 							C = await Object(i.e)({
 								context: g(),
-								correlationId: j,
+								correlationId: f,
 								gildParams: P,
 								isOldReddit: n,
 								pennies: b,
@@ -898,9 +898,9 @@
 						if (!n || !l) return void t(Object(o.paypalApiError)(r.fbt._("Gilding unknown post or comment", null, {
 							hk: "4DkIS3"
 						})));
-						const f = l.id,
-							j = await Object(d.e)({
-								awardId: f,
+						const j = l.id,
+							f = await Object(d.e)({
+								awardId: j,
 								context: p(),
 								orderId: e,
 								thingId: n,
@@ -908,8 +908,8 @@
 								isAnonymous: c,
 								correlationId: g
 							});
-						if (j.error) {
-							const e = Object(s.a)(j.error);
+						if (f.error) {
+							const e = Object(s.a)(f.error);
 							t(Object(o.paypalApiError)(e))
 						} else {
 							t(h());
@@ -919,7 +919,7 @@
 								coins: s,
 								subreddit_coins: c,
 								treatment_tags: d
-							} = j.body;
+							} = f.body;
 							t(Object(o.paymentCompleted)({
 								coins: s,
 								confirmed: !0
@@ -929,7 +929,7 @@
 							} = await Promise.resolve().then(a.bind(null, "./src/reddit/actions/gold/gild.ts"));
 							t(i({
 								awardKarmaReceived: r || 0,
-								awardId: f,
+								awardId: j,
 								awardings: Object(u.a)(e).map(e => ({
 									award: Object(m.i)(e),
 									total: e.count
@@ -940,9 +940,9 @@
 								treatmentTags: d
 							}))
 						}
-					} catch (f) {
-						c.c.captureException(f);
-						const e = Object(s.a)(f);
+					} catch (j) {
+						c.c.captureException(j);
+						const e = Object(s.a)(j);
 						t(Object(o.paypalApiError)(e))
 					}
 				}
@@ -971,8 +971,8 @@
 				g = a("./src/reddit/actions/goldPurchaseModals/constants.ts");
 			Object(n.a)(g.m);
 			const h = Object(n.a)(g.o),
-				f = Object(n.a)(g.n),
-				j = Object(n.a)(g.i),
+				j = Object(n.a)(g.n),
+				f = Object(n.a)(g.i),
 				O = Object(n.a)(g.j),
 				w = e => async (t, a, n) => {
 					let {
@@ -995,13 +995,13 @@
 								}
 								return t.body
 							})(o());
-							t(j(e.data.coinpacks.offers[0])), t(O(e.data.premium.offers[0]))
+							t(f(e.data.coinpacks.offers[0])), t(O(e.data.premium.offers[0]))
 						} catch (l) {
 							Object(s.b)() || console.error(l), c.c.captureException(l);
 							const e = r.fbt._("There was an error fetching available products", null, {
 								hk: "1Uvx37"
 							});
-							t(f(e))
+							t(j(e))
 						}
 					}
 				}, y = () => async e => e(w()), P = Object(n.a)(g.h), C = () => async (e, t, a) => {
@@ -1134,8 +1134,8 @@
 				b = a("./src/lib/classNames/index.ts"),
 				g = a("./src/reddit/hooks/useTracking.ts"),
 				h = a("./src/reddit/actions/gold/gild.ts"),
-				f = a("./src/reddit/actions/goldPurchaseModals/payment.ts"),
-				j = a("./src/reddit/components/CoinBalance/index.tsx"),
+				j = a("./src/reddit/actions/goldPurchaseModals/payment.ts"),
+				f = a("./src/reddit/components/CoinBalance/index.tsx"),
 				O = a("./src/reddit/components/Econ/ProductOfferPurchaseButton/Paypal.tsx"),
 				w = a("./src/config.ts"),
 				y = a("./node_modules/react-dom/index.js"),
@@ -1225,7 +1225,7 @@
 				} = e;
 				const C = Object(g.a)(),
 					k = Object(u.d)(),
-					v = Object(u.e)(p.f),
+					v = Object(u.e)(p.e),
 					x = Object(u.e)(S.a),
 					E = !!r;
 				if (E && !v) {
@@ -1234,7 +1234,7 @@
 					};
 					return c.a.createElement("div", {
 						className: B.a.purchaseSelectPaymentFooter
-					}, c.a.createElement(j.a, {
+					}, c.a.createElement(f.a, {
 						className: B.a.balance,
 						coinBalance: a
 					}), o === d.Mb && ((null == t ? void 0 : t.pennyPrice) && r ? c.a.createElement(N, {
@@ -1268,7 +1268,7 @@
 							A && C(Object(G.c)(r)), _ && C(Object(G.d)(r))
 						},
 						onPaymentSuccess: () => {
-							k(Object(f.paymentCompleted)({
+							k(Object(j.paymentCompleted)({
 								coinsDiff: s.coins,
 								confirmed: !1
 							})), E && v && k(Object(h.gildGqlRequested)(r, {
@@ -1278,7 +1278,7 @@
 					};
 				return c.a.createElement("div", {
 					className: B.a.purchaseSelectPaymentFooter
-				}, c.a.createElement(j.a, {
+				}, c.a.createElement(f.a, {
 					className: B.a.balance,
 					coinBalance: a
 				}), _ && c.a.createElement(O.a, M), A && c.a.createElement(m.a, M))
@@ -1513,8 +1513,8 @@
 				b = a("./src/reddit/components/EmergencyMaintenance/index.tsx"),
 				g = a("./src/reddit/components/TrackingHelper/index.tsx"),
 				h = a("./src/reddit/constants/colors.ts"),
-				f = a("./src/reddit/constants/zIndex.ts"),
-				j = a("./src/reddit/helpers/correlationIdTracker.ts"),
+				j = a("./src/reddit/constants/zIndex.ts"),
+				f = a("./src/reddit/helpers/correlationIdTracker.ts"),
 				O = a("./src/reddit/helpers/trackers/goldPayment.ts"),
 				w = a("./src/reddit/models/Toast/index.ts"),
 				y = a("./src/reddit/models/User/index.ts"),
@@ -1579,7 +1579,7 @@
 					},
 					coinBalance: I.g,
 					coinPackages: v.d,
-					correlationId: e => Object(x.s)(e) || Object(j.d)(j.a.GoldPayment, !1),
+					correlationId: e => Object(x.s)(e) || Object(f.d)(f.a.GoldPayment, !1),
 					dealCoinPackages: v.f,
 					gildThingId: x.t,
 					isIframed: C.g,
@@ -1651,7 +1651,7 @@
 						gildThingId: e,
 						sendEvent: t
 					} = this.props;
-					Object(j.d)(j.a.GoldPayment, !1), t(Object(O.i)(e))
+					Object(f.d)(f.a.GoldPayment, !1), t(Object(O.i)(e))
 				}
 				componentDidUpdate(e) {
 					if (this.props.stripeErrorMessage && !e.stripeErrorMessage) {
@@ -1679,8 +1679,8 @@
 						purchaseCatalogPending: p,
 						purchaseMethods: g,
 						purchasePackageId: h,
-						recommendedPackages: f,
-						savedCardsPending: j,
+						recommendedPackages: j,
+						savedCardsPending: f,
 						selectedAward: O,
 						selectedPayment: w,
 						stripeErrorMessage: y,
@@ -1693,7 +1693,7 @@
 						onClose: this.props.onTryCloseModal
 					});
 					const v = !!n,
-						x = [...a, ...r, ...f].filter(e => e.mobileId === h)[0];
+						x = [...a, ...r, ...j].filter(e => e.mobileId === h)[0];
 					return "paymentCompleted" === e ? s.a.createElement("div", null, s.a.createElement(R.a, {
 						isGild: v,
 						onCloseClick: l,
@@ -1711,7 +1711,7 @@
 						paypalErrorMessage: u,
 						purchasePackage: x,
 						purchaseMethods: g,
-						savedCardsPending: j,
+						savedCardsPending: f,
 						selectedAward: O,
 						selectedPayment: w,
 						stripeErrorMessage: y,
@@ -1738,7 +1738,7 @@
 					const e = {
 						backgroundColor: h.a.overlayReportFlow,
 						...this.props.isIframed ? {
-							zIndex: f.a,
+							zIndex: j.a,
 							paddingTop: 12,
 							paddingBottom: 12
 						} : {}
@@ -1929,4 +1929,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.604135188778ec59014c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.01642de0c3214126ed81.js.map

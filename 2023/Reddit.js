@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.ded49ac3eb2fb7817e58.js
-// Retrieved at 1/25/2023, 6:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.be9d825e31606c8dc16e.js
+// Retrieved at 1/25/2023, 7:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -10996,7 +10996,7 @@
 							o = Object(Zr.f)(e),
 							i = Object(O.rb)(e),
 							c = [],
-							l = (e => Object(Xr.m)(e) ? [ma, ua, pa, ba, ha] : [ua, ma, pa, ba, ha])(e),
+							l = (e => Object(Xr.l)(e) ? [ma, ua, pa, ba, ha] : [ua, ma, pa, ba, ha])(e),
 							d = c.length ? l.filter(e => !c.includes(e(null).id)) : l;
 						if (a) {
 							const a = n.account;
@@ -12876,7 +12876,7 @@
 					c = Object(xe.e)(Yi.a),
 					l = Object(xe.e)(Yi.b),
 					d = Object(xe.e)(mc),
-					p = Object(xe.e)(Xr.d),
+					p = Object(xe.e)(Xr.c),
 					b = Object(xe.e)(Yr.a),
 					h = Object(xe.e)(ic.a),
 					g = Object(Pi.a)(),
@@ -15042,7 +15042,7 @@
 					email: O.p,
 					inboxBadgeCount: jm.h,
 					canViewQuickCreate: e => mc(e),
-					isAvatarStorefrontEnabled: e => Object(Xr.d)(e) && !!Object(ic.a)(e),
+					isAvatarStorefrontEnabled: e => Object(Xr.c)(e) && !!Object(ic.a)(e),
 					isChangeUsernameTooltipShowing: e => e.isChangeUsernameTooltipShowing,
 					isCustomizeFlyoutShowing: e => e.user.isCustomizeFlyoutShowing,
 					shouldShowEmailVerificationTooltip: Pm.b,
@@ -20449,7 +20449,7 @@
 					var t, n, s;
 					return null === (s = null === (n = null === (t = e.features) || void 0 === t ? void 0 : t.avatar) || void 0 === n ? void 0 : n.marketing) || void 0 === s ? void 0 : s.pushcard
 				},
-				l = Object(s.a)(c, i.c, (e, t) => {
+				l = Object(s.a)(c, i.b, (e, t) => {
 					if (!e || !t) return null;
 					const {
 						id: n,
@@ -21330,4 +21330,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.ded49ac3eb2fb7817e58.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.be9d825e31606c8dc16e.js.map

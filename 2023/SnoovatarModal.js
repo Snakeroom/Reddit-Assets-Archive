@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SnoovatarModal.7ef85dbc26bd037a54c6.js
-// Retrieved at 1/25/2023, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SnoovatarModal.a9fc6f516fd10a4016dd.js
+// Retrieved at 1/25/2023, 7:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SnoovatarModal"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, r) {
@@ -17,11 +17,11 @@
 		"./src/reddit/components/AvatarBuilder/index.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return _
+				return j
 			}));
-			var a = r("./node_modules/@reddit/marketplace/marketplace.es.js"),
-				s = r("./node_modules/react/index.js"),
-				n = r.n(s),
+			var s = r("./node_modules/@reddit/marketplace/marketplace.es.js"),
+				n = r("./node_modules/react/index.js"),
+				a = r.n(n),
 				o = r("./node_modules/react-redux/es/index.js"),
 				c = r("./src/lib/classNames/index.ts"),
 				i = r("./src/reddit/actions/login.ts"),
@@ -33,78 +33,73 @@
 				m = r("./src/reddit/selectors/user.ts"),
 				b = r("./src/reddit/components/AvatarBuilder/index.m.less"),
 				v = r.n(b),
-				j = r("./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx");
+				x = r("./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx");
 
-			function x() {
-				return (x = Object.assign || function(e) {
+			function _() {
+				return (_ = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
-						for (var a in r) Object.prototype.hasOwnProperty.call(r, a) && (e[a] = r[a])
+						for (var s in r) Object.prototype.hasOwnProperty.call(r, s) && (e[s] = r[s])
 					}
 					return e
 				}).apply(this, arguments)
 			}
-			const _ = e => {
+			const j = e => {
 				let {
 					isModal: t,
 					...r
 				} = e;
 				const b = Object(p.a)(),
-					_ = Object(o.e)(e => e.user.session),
-					[f, E] = Object(s.useState)(!1),
-					M = Object(s.useContext)(l.a),
+					j = Object(o.e)(e => e.user.session),
+					[f, E] = Object(n.useState)(!1),
+					M = Object(n.useContext)(l.a),
 					g = Object(o.d)(),
-					h = () => g(Object(i.openLoginModal)()),
-					S = Object(j.a)(),
-					A = Object(o.e)(O.a);
-				Object(s.useEffect)(() => {
-					{
-						const e = {},
-							t = new URLSearchParams(window.location.search);
-						Object(a.k)(t) && A && (e.domain = "marketplace_sharelink", e.url = window.location.href), b(Object(u.r)(e))
-					}
-				}, [b, A]), Object(s.useEffect)(() => {
+					S = () => g(Object(i.openLoginModal)()),
+					A = Object(x.a)();
+				Object(n.useEffect)(() => {
+					b(u.r)
+				}, [b]), Object(n.useEffect)(() => {
 					E(!0)
 				}, []);
 				const {
-					activeDetails: k,
-					activeTab: C,
-					activeMeSubpage: N,
-					shopTabState: y
-				} = r, R = Object(s.useMemo)(() => ({
-					activeTab: C || void 0,
-					activeMeSubpage: N || void 0,
-					activeDetails: k || void 0,
-					shopTabState: y || void 0
-				}), [k, C, N, y]), T = Object(o.e)(e => !Object(m.S)(e) && Object(O.v)(e));
-				if (!_ || !f) return null;
-				if (T) return n.a.createElement("div", {
+					activeDetails: h,
+					activeTab: k,
+					activeMeSubpage: C,
+					shopTabState: N
+				} = r, y = Object(n.useMemo)(() => ({
+					activeTab: k || void 0,
+					activeMeSubpage: C || void 0,
+					activeDetails: h || void 0,
+					shopTabState: N || void 0
+				}), [h, k, C, N]), T = Object(o.e)(e => !Object(m.S)(e) && Object(O.u)(e));
+				if (!j || !f) return null;
+				if (T) return a.a.createElement("div", {
 					className: Object(c.a)(v.a.container, {
 						[v.a.containerExp]: M
 					})
-				}, n.a.createElement(a.f, {
-					openLogin: h,
+				}, a.a.createElement(s.f, {
+					openLogin: S,
 					fancyBackground: !0
 				}));
-				const w = {
-					...S,
+				const R = {
+					...A,
 					config: {
-						...S.config,
+						...A.config,
 						...r.share ? {
 							COPY_SHARE_PARAMS: r.share
 						} : {}
 					}
 				};
-				return n.a.createElement("div", {
+				return a.a.createElement("div", {
 					className: Object(c.a)({
 						[v.a.container]: !t,
 						[v.a.snoovatarModalBuilderV2]: t,
 						[v.a.containerExp]: M
 					})
-				}, n.a.createElement(a.a, x({}, w, {
-					navState: R,
+				}, a.a.createElement(s.a, _({}, R, {
+					navState: y,
 					isModal: t
-				}), n.a.createElement(a.b, {
+				}), a.a.createElement(s.b, {
 					isModal: t,
 					onCloseClick: () => g(Object(d.a)())
 				})))
@@ -115,45 +110,45 @@
 			r.d(t, "a", (function() {
 				return m
 			}));
-			var a = r("./src/config.ts"),
-				s = r("./src/lib/env/index.ts"),
-				n = r("./node_modules/react/index.js"),
+			var s = r("./src/config.ts"),
+				n = r("./src/lib/env/index.ts"),
+				a = r("./node_modules/react/index.js"),
 				o = r("./node_modules/react-redux/es/index.js"),
 				c = r("./src/reddit/endpoints/governance/crypto.ts"),
 				i = r("./src/reddit/hooks/useTracking.ts"),
 				d = r("./src/reddit/selectors/experiments/econ/paymentsSandbox.ts"),
 				l = r("./src/reddit/selectors/telemetry.ts"),
 				u = r("./src/reddit/selectors/user.ts");
-			const p = !(Object(s.c)() || Object(s.b)()),
+			const p = !(Object(n.c)() || Object(n.b)()),
 				O = {
-					GRAPHQL_URL: a.a.gqlUrl,
+					GRAPHQL_URL: s.a.gqlUrl,
 					IS_DEVELOPMENT: p,
 					IS_PRODUCTION: !p,
 					MOCKING_ENABLED: !1,
-					SNOOVATAR_BASE_URL: a.a.snoovatarUrl,
-					SNOOVATAR_API_URL: `${a.a.snoovatarUrl}/api`
+					SNOOVATAR_BASE_URL: s.a.snoovatarUrl,
+					SNOOVATAR_API_URL: `${s.a.snoovatarUrl}/api`
 				},
 				m = () => {
 					const e = Object(o.e)(d.a),
 						t = Object(o.e)(e => e.user.session),
 						r = t ? t.accessToken : "",
-						s = t ? new Date(t.expires).getTime() : 1,
+						n = t ? new Date(t.expires).getTime() : 1,
 						m = Object(o.e)(u.fb),
 						b = Object(i.a)(),
 						v = p ? c.a.Rinkeby : c.a.Ethereum,
-						j = Object(n.useMemo)(() => ({
+						x = Object(a.useMemo)(() => ({
 							headers: {
 								Authorization: `Bearer ${r}`
 							},
-							expiration: s
-						}), [r, s]),
-						x = {
+							expiration: n
+						}), [r, n]),
+						_ = {
 							...O,
-							STRIPE_API_KEY: a.a.stripe.apiKey(e),
+							STRIPE_API_KEY: s.a.stripe.apiKey(e),
 							ACCESS_TOKEN: r,
 							BLOCKCHAIN_PROVIDER: v
 						},
-						_ = Object(n.useCallback)(e => {
+						j = Object(a.useCallback)(e => {
 							b(t => {
 								const r = l.o(t);
 								return {
@@ -168,12 +163,12 @@
 								}
 							})
 						}, [b]);
-					return Object(n.useMemo)(() => ({
-						authHeaders: j,
-						config: x,
+					return Object(a.useMemo)(() => ({
+						authHeaders: x,
+						config: _,
 						isNightMode: m,
-						sendEvent: _
-					}), [j, x, m, _])
+						sendEvent: j
+					}), [x, _, m, j])
 				}
 		},
 		"./src/reddit/components/SnoovatarModal/index.m.less": function(e, t, r) {
@@ -185,9 +180,9 @@
 		"./src/reddit/components/SnoovatarModal/index.tsx": function(e, t, r) {
 			"use strict";
 			r.r(t);
-			var a = r("./src/higherOrderComponents/asModal/index.tsx"),
-				s = r("./node_modules/react/index.js"),
-				n = r.n(s),
+			var s = r("./src/higherOrderComponents/asModal/index.tsx"),
+				n = r("./node_modules/react/index.js"),
+				a = r.n(n),
 				o = r("./node_modules/react-redux/es/index.js"),
 				c = r("./src/reddit/actions/snoovatarModal.ts"),
 				i = r("./src/reddit/components/AvatarBuilder/index.tsx"),
@@ -199,18 +194,18 @@
 				return (p = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
-						for (var a in r) Object.prototype.hasOwnProperty.call(r, a) && (e[a] = r[a])
+						for (var s in r) Object.prototype.hasOwnProperty.call(r, s) && (e[s] = r[s])
 					}
 					return e
 				}).apply(this, arguments)
 			}
-			const O = Object(a.a)(e => n.a.createElement(n.a.Fragment, null, n.a.createElement(i.a, p({
+			const O = Object(s.a)(e => a.a.createElement(a.a.Fragment, null, a.a.createElement(i.a, p({
 				isModal: !0
 			}, e))));
 			t.default = () => {
 				const e = Object(o.d)(),
 					t = Object(o.e)(e => Object(d.a)(e));
-				return n.a.createElement(O, p({}, t, {
+				return a.a.createElement(O, p({}, t, {
 					className: u.a.snoovatarModal,
 					withOverlay: !0,
 					onOverlayClick: () => e(Object(c.a)())
@@ -220,13 +215,13 @@
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return n
+				return a
 			}));
-			var a = r("./src/reddit/constants/experiments.ts"),
-				s = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const n = Object(s.a)(a.rd)
+			var s = r("./src/reddit/constants/experiments.ts"),
+				n = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
+			const a = Object(n.a)(s.rd)
 		},
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.7ef85dbc26bd037a54c6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.a9fc6f516fd10a4016dd.js.map

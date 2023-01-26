@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.f39ee8cfafb686a8088a.js
-// Retrieved at 1/25/2023, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.6dea58107394535bb39e.js
+// Retrieved at 1/25/2023, 7:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -6715,7 +6715,7 @@
 					let {
 						className: t
 					} = e;
-					return Object(o.e)(i.i) ? s.a.createElement(d, {
+					return Object(o.e)(i.h) ? s.a.createElement(d, {
 						className: t
 					}) : s.a.createElement(a, {
 						className: t
@@ -24962,7 +24962,7 @@
 						experimentEligibilitySelector: o.S,
 						experimentName: r.qd
 					});
-					return !(!t || Object(r.hg)(t))
+					return !(!t || Object(r.gg)(t))
 				},
 				a = e => {
 					return Object(s.c)(e, {
@@ -25782,4 +25782,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.f39ee8cfafb686a8088a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.6dea58107394535bb39e.js.map

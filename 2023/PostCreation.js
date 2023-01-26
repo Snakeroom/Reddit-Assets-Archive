@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.0dbb1046c2238060e2c6.js
-// Retrieved at 1/25/2023, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.bd276f2bee340732e397.js
+// Retrieved at 1/25/2023, 7:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit~StandalonePostPage", "ContributorRequestButton"], {
 		"./src/chat/actions/uxExperiences.ts": function(e, t, n) {
@@ -7154,7 +7154,7 @@
 					let {
 						className: t
 					} = e;
-					return Object(s.e)(i.i) ? r.a.createElement(d, {
+					return Object(s.e)(i.h) ? r.a.createElement(d, {
 						className: t
 					}) : r.a.createElement(a, {
 						className: t
@@ -28738,16 +28738,15 @@
 					noun: "try_this_look_post",
 					snoovatar: s.jb(e)
 				}),
-				u = e => t => ({
-					...s.o(t),
+				u = e => ({
+					...s.o(e),
 					source: "global",
 					action: "view",
 					noun: "screen",
 					actionInfo: {
 						pageType: "snoovatar_builder"
 					},
-					referrer: e,
-					snoovatar: s.jb(t)
+					snoovatar: s.jb(e)
 				}),
 				m = e => ({
 					...s.o(e),
@@ -29137,7 +29136,7 @@
 					adminId: e.authorId,
 					subredditId: e.belongsTo.id,
 					avatarShareUrl: e.source ? e.source.url : ""
-				}) && Object(a.b)(t)
+				}) && Object(a.a)(t)
 			})
 		},
 		"./src/reddit/hooks/useIsRemovedOrDeletedPost.ts": function(e, t, n) {
@@ -31134,7 +31133,7 @@
 						theme: l,
 						topics: u,
 						isUpcoming: m
-					} = Object(s.e)(A.ub), h = Object(s.e)(A.kb), b = Object(s.e)(L.n), f = Object(s.e)(F.m), [g, v] = Object(o.useState)(!1), E = Object(s.d)(), C = Object(P.a)(), x = Object(o.useMemo)(() => Object(w.d)(), [i.id]), j = Object(o.useMemo)(() => Object.keys(W).reduce((e, t) => (e[W[t]] = l === t, e), {}), [l]);
+					} = Object(s.e)(A.ub), h = Object(s.e)(A.kb), b = Object(s.e)(L.m), f = Object(s.e)(F.m), [g, v] = Object(o.useState)(!1), E = Object(s.d)(), C = Object(P.a)(), x = Object(o.useMemo)(() => Object(w.d)(), [i.id]), j = Object(o.useMemo)(() => Object.keys(W).reduce((e, t) => (e[W[t]] = l === t, e), {}), [l]);
 					Object(o.useEffect)(() => {
 						C(Object(I.d)())
 					}, [C]);
@@ -31361,7 +31360,7 @@
 			var Ce = () => {
 				const [e, t] = Object(o.useState)(!1), {
 					topics: n
-				} = Object(s.e)(A.ub), i = Object(s.e)(L.n), c = Object(s.d)(), l = () => {
+				} = Object(s.e)(A.ub), i = Object(s.e)(L.m), c = Object(s.d)(), l = () => {
 					t(!1)
 				};
 				return r.a.createElement(r.a.Fragment, null, r.a.createElement(S.t, {
@@ -35448,7 +35447,7 @@
 						subredditId: n
 					} = e;
 					const i = Object(s.d)(),
-						c = Object(s.e)(L.h),
+						c = Object(s.e)(L.g),
 						l = Object(s.e)(e => Object(Vn.b)(e, {
 							subredditId: n
 						})),
@@ -35868,7 +35867,7 @@
 				}, e.children),
 				mu = Object(i.a)(A.d, A.e, A.h, A.T, A.cb, Q.s, (e, t) => {
 					const n = Object(A.h)(e);
-					return Object(L.t)(e) && t.isTalkCreationAllowedForUser && n.isProfile
+					return Object(L.s)(e) && t.isTalkCreationAllowedForUser && n.isProfile
 				}, (e, t, n, o, r, s, i) => {
 					const {
 						images: a = !0,
@@ -36102,8 +36101,8 @@
 							subredditId: n.id
 						})
 					},
-					isTalkTopicSelectionEnabled: L.s,
-					isScheduledTalksEnabled: L.n
+					isTalkTopicSelectionEnabled: L.r,
+					isScheduledTalksEnabled: L.m
 				});
 			class ju extends r.a.Component {
 				constructor(e) {
@@ -36445,7 +36444,7 @@
 					const t = Object(G.a)(),
 						[n, i] = Object(o.useState)(!1),
 						a = Object(s.e)(e => Object(A.h)(e)),
-						c = Object(s.e)(L.t),
+						c = Object(s.e)(L.s),
 						d = Object(o.useMemo)(() => {
 							var e;
 							return !!(null === (e = a.allowedPostTypes) || void 0 === e ? void 0 : e.talks)
@@ -40134,4 +40133,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.0dbb1046c2238060e2c6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.bd276f2bee340732e397.js.map

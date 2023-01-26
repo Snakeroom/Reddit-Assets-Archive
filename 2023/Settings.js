@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.13f210c66539dc941a28.js
-// Retrieved at 1/25/2023, 6:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.45c75c7fb728279b3a5c.js
+// Retrieved at 1/25/2023, 7:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -11911,7 +11911,7 @@
 					userIsWhitelistedCreator: kn.y,
 					allowNavigationCallback: ir.a,
 					isResponsiveSettingsEnabled: lr.a,
-					isTalkLiveBarOptOutEnabled: rr.r,
+					isTalkLiveBarOptOutEnabled: rr.q,
 					prefs: e => e.user.prefs,
 					userHasSpecialMembership: e => {
 						if (e.economics.me.fetched) {
@@ -12703,4 +12703,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.13f210c66539dc941a28.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.45c75c7fb728279b3a5c.js.map
