@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.6dea58107394535bb39e.js
-// Retrieved at 1/25/2023, 7:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.bbc1ecc1bca964854811.js
+// Retrieved at 1/26/2023, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -1579,6 +1579,7 @@
 				privacy_fill: "privacy_fill",
 				profile: "profile",
 				profile_fill: "profile_fill",
+				qr_code: "qr_code",
 				quarantined: "quarantined",
 				quarantined_fill: "quarantined_fill",
 				quote: "quote",
@@ -25782,4 +25783,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.6dea58107394535bb39e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.bbc1ecc1bca964854811.js.map

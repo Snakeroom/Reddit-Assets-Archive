@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.7bc6d6aa9db6ffac8334.js
-// Retrieved at 1/26/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.d31845a49ebfe80a24a2.js
+// Retrieved at 1/26/2023, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -2918,6 +2918,7 @@
 				row: "_19oWd7e3z7-ztUGzdIoCR7",
 				separator: "Z_HUY3BUsGOBOtdmH94ZS",
 				visitOldReddit: "_3Z5rfDuvQDBNfBgpXdnt_b",
+				buttonIcon: "_1vXK1WOmrEh97U366xznqT",
 				iconWrapper: "_2QpF1Fkq_rr2nvPL1no0nN"
 			}
 		},
@@ -15302,6 +15303,8 @@
 				}), m.a.createElement("div", {
 					className: Object(ke.a)(np.a.loggedOutRow)
 				}, r ? m.a.createElement(un.t, {
+					Icon: Object(dr.b)("qr_code"),
+					iconClassName: np.a.buttonIcon,
 					kind: un.b.Button,
 					priority: un.c.Secondary,
 					onClick: e => {
@@ -21330,4 +21333,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.7bc6d6aa9db6ffac8334.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.d31845a49ebfe80a24a2.js.map
