@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.f70ae454ac23060e5aad.js
-// Retrieved at 1/30/2023, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.e73814e3b53cbc2e4ef3.js
+// Retrieved at 1/31/2023, 5:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -3902,48 +3902,54 @@
 				me = Object(i.c)({
 					isNightModeOn: A.fb
 				}),
-				pe = Object(a.b)(me)(e => r.a.createElement(Y, {
-					last: e.last,
-					indent: e.indent,
-					disabled: e.disabled,
-					inModal: e.inModal,
-					isNightModeOn: e.isNightModeOn,
-					direction: e.direction,
-					className: e.className
-				}, r.a.createElement(Q, {
-					style: {
-						flex: 5
-					}
-				}, !e.inModal && r.a.createElement(L.a, null, r.a.createElement(U, {
-					className: e.labelClassname
-				}, e.label)), !e.hideSubtext && r.a.createElement(H, null, " ", r.a.createElement(ue, {
-					style: {
-						color: e.ticks[e.value].color
-					}
-				}, " ", e.ticks[e.value].text + ": ", " "), " ", e.subtext)), r.a.createElement(K, {
-					style: {
-						flex: 3,
-						margin: "20px 20px 0 0"
-					}
-				}, r.a.createElement(ce, null, r.a.createElement(ie, {
-					style: {
-						background: "linear-gradient(to right, " + P()(1, e.max + 1).map((t, n) => t <= e.value ? `${e.ticks[e.value].color} ${(t-1)/e.max*100}%,\n                    ${e.ticks[e.value].color} ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100}%` : t !== e.max ? `#c5c5c5 ${(t-1)/e.max*100}%, #c5c5c5 ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100}%` : `#c5c5c5 ${(t-1)/e.max*100}%`) + ", #C5C5C5 100%)"
-					},
-					className: "range-slider-input",
-					type: "range",
-					min: e.min,
-					max: e.max,
-					step: e.step,
-					value: e.value,
-					onChange: e.onChange,
-					onInput: e.onChange,
-					disabled: e.disabled
-				}), r.a.createElement(le, null, Object.keys(e.ticks).map((t, n) => r.a.createElement(de, {
-					key: t,
-					style: {
-						color: t === e.value.toString() ? e.ticks[t].color : "#878A8C"
-					}
-				}, e.ticks[t].text))))))),
+				pe = Object(a.b)(me)(e => {
+					const t = Object(o.a)();
+					return r.a.createElement(Y, {
+						last: e.last,
+						indent: e.indent,
+						disabled: e.disabled,
+						inModal: e.inModal,
+						isNightModeOn: e.isNightModeOn,
+						direction: e.direction,
+						className: e.className
+					}, r.a.createElement(Q, {
+						style: {
+							flex: 5
+						}
+					}, !e.inModal && r.a.createElement(L.a, null, r.a.createElement("label", {
+						htmlFor: t
+					}, r.a.createElement(U, {
+						className: e.labelClassname
+					}, e.label))), !e.hideSubtext && r.a.createElement(H, null, " ", r.a.createElement(ue, {
+						style: {
+							color: e.ticks[e.value].color
+						}
+					}, " ", e.ticks[e.value].text + ": ", " "), " ", e.subtext)), r.a.createElement(K, {
+						style: {
+							flex: 3,
+							margin: "20px 20px 0 0"
+						}
+					}, r.a.createElement(ce, null, r.a.createElement(ie, {
+						id: t,
+						style: {
+							background: "linear-gradient(to right, " + P()(1, e.max + 1).map((t, n) => t <= e.value ? `${e.ticks[e.value].color} ${(t-1)/e.max*100}%,\n                    ${e.ticks[e.value].color} ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100}%` : t !== e.max ? `#c5c5c5 ${(t-1)/e.max*100}%, #c5c5c5 ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100}%` : `#c5c5c5 ${(t-1)/e.max*100}%`) + ", #C5C5C5 100%)"
+						},
+						className: "range-slider-input",
+						type: "range",
+						min: e.min,
+						max: e.max,
+						step: e.step,
+						value: e.value,
+						onChange: e.onChange,
+						onInput: e.onChange,
+						disabled: e.disabled
+					}), r.a.createElement(le, null, Object.keys(e.ticks).map((t, n) => r.a.createElement(de, {
+						key: t,
+						style: {
+							color: t === e.value.toString() ? e.ticks[t].color : "#878A8C"
+						}
+					}, e.ticks[t].text))))))
+				}),
 				be = e => r.a.createElement(Y, {
 					last: e.last,
 					indent: e.indent,
@@ -5095,4 +5101,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.f70ae454ac23060e5aad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.e73814e3b53cbc2e4ef3.js.map

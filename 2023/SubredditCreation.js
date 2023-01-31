@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.0563445655df31d0adbc.js
-// Retrieved at 1/30/2023, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.c865365584c78fea5d79.js
+// Retrieved at 1/31/2023, 5:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -332,8 +332,8 @@
 				}, s)))
 			}
 			var k = n("./src/reddit/controls/ToggleSwitch/index.tsx"),
-				S = n("./src/reddit/controls/Typography/index.tsx"),
-				O = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
+				O = n("./src/reddit/controls/Typography/index.tsx"),
+				S = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
 				T = n("./src/reddit/icons/svgs/Circle/index.tsx"),
 				I = n("./src/reddit/icons/svgs/OutboundLink/index.tsx"),
 				j = n("./node_modules/lodash/range.js"),
@@ -358,7 +358,7 @@
 			const W = Object(d.a)(h.a),
 				G = C.a.wrapped(T.a, "Circle", A.a),
 				V = C.a.h3("Label", A.a),
-				Y = C.a.wrapped(S.c, "Subtext", A.a),
+				Y = C.a.wrapped(O.c, "Subtext", A.a),
 				J = C.a.wrapped(u.a, "HoverTooltip", A.a),
 				Q = C.a.div("ControlContainer", A.a),
 				K = C.a.div("TextContainer", A.a),
@@ -391,7 +391,7 @@
 				Z = C.a.wrapped(X, "SubtextLink", A.a),
 				U = C.a.wrapped(I.a, "LinkIcon", A.a),
 				$ = C.a.button("LinkButton", A.a),
-				ee = C.a.wrapped(O.a, "ArrowRight", A.a),
+				ee = C.a.wrapped(S.a, "ArrowRight", A.a),
 				te = e => r.a.createElement(q, {
 					direction: e.direction,
 					disabled: e.disabled,
@@ -443,48 +443,54 @@
 				ue = Object(o.c)({
 					isNightModeOn: L.fb
 				}),
-				pe = Object(s.b)(ue)(e => r.a.createElement(q, {
-					last: e.last,
-					indent: e.indent,
-					disabled: e.disabled,
-					inModal: e.inModal,
-					isNightModeOn: e.isNightModeOn,
-					direction: e.direction,
-					className: e.className
-				}, r.a.createElement(K, {
-					style: {
-						flex: 5
-					}
-				}, !e.inModal && r.a.createElement(D.a, null, r.a.createElement(V, {
-					className: e.labelClassname
-				}, e.label)), !e.hideSubtext && r.a.createElement(Y, null, " ", r.a.createElement(me, {
-					style: {
-						color: e.ticks[e.value].color
-					}
-				}, " ", e.ticks[e.value].text + ": ", " "), " ", e.subtext)), r.a.createElement(z, {
-					style: {
-						flex: 3,
-						margin: "20px 20px 0 0"
-					}
-				}, r.a.createElement(le, null, r.a.createElement(oe, {
-					style: {
-						background: "linear-gradient(to right, " + B()(1, e.max + 1).map((t, n) => t <= e.value ? `${e.ticks[e.value].color} ${(t-1)/e.max*100}%,\n                    ${e.ticks[e.value].color} ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100}%` : t !== e.max ? `#c5c5c5 ${(t-1)/e.max*100}%, #c5c5c5 ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100}%` : `#c5c5c5 ${(t-1)/e.max*100}%`) + ", #C5C5C5 100%)"
-					},
-					className: "range-slider-input",
-					type: "range",
-					min: e.min,
-					max: e.max,
-					step: e.step,
-					value: e.value,
-					onChange: e.onChange,
-					onInput: e.onChange,
-					disabled: e.disabled
-				}), r.a.createElement(ce, null, Object.keys(e.ticks).map((t, n) => r.a.createElement(de, {
-					key: t,
-					style: {
-						color: t === e.value.toString() ? e.ticks[t].color : "#878A8C"
-					}
-				}, e.ticks[t].text))))))),
+				pe = Object(s.b)(ue)(e => {
+					const t = Object(i.a)();
+					return r.a.createElement(q, {
+						last: e.last,
+						indent: e.indent,
+						disabled: e.disabled,
+						inModal: e.inModal,
+						isNightModeOn: e.isNightModeOn,
+						direction: e.direction,
+						className: e.className
+					}, r.a.createElement(K, {
+						style: {
+							flex: 5
+						}
+					}, !e.inModal && r.a.createElement(D.a, null, r.a.createElement("label", {
+						htmlFor: t
+					}, r.a.createElement(V, {
+						className: e.labelClassname
+					}, e.label))), !e.hideSubtext && r.a.createElement(Y, null, " ", r.a.createElement(me, {
+						style: {
+							color: e.ticks[e.value].color
+						}
+					}, " ", e.ticks[e.value].text + ": ", " "), " ", e.subtext)), r.a.createElement(z, {
+						style: {
+							flex: 3,
+							margin: "20px 20px 0 0"
+						}
+					}, r.a.createElement(le, null, r.a.createElement(oe, {
+						id: t,
+						style: {
+							background: "linear-gradient(to right, " + B()(1, e.max + 1).map((t, n) => t <= e.value ? `${e.ticks[e.value].color} ${(t-1)/e.max*100}%,\n                    ${e.ticks[e.value].color} ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100}%` : t !== e.max ? `#c5c5c5 ${(t-1)/e.max*100}%, #c5c5c5 ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100}%` : `#c5c5c5 ${(t-1)/e.max*100}%`) + ", #C5C5C5 100%)"
+						},
+						className: "range-slider-input",
+						type: "range",
+						min: e.min,
+						max: e.max,
+						step: e.step,
+						value: e.value,
+						onChange: e.onChange,
+						onInput: e.onChange,
+						disabled: e.disabled
+					}), r.a.createElement(ce, null, Object.keys(e.ticks).map((t, n) => r.a.createElement(de, {
+						key: t,
+						style: {
+							color: t === e.value.toString() ? e.ticks[t].color : "#878A8C"
+						}
+					}, e.ticks[t].text))))))
+				}),
 				he = e => r.a.createElement(q, {
 					last: e.last,
 					indent: e.indent,
@@ -913,8 +919,8 @@
 				N = n("./src/reddit/controls/ErrorText/index.tsx"),
 				w = n("./src/reddit/controls/RadioInput/index.tsx"),
 				k = n("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
-				S = n("./src/reddit/controls/TextButton/index.tsx"),
-				O = n("./src/reddit/helpers/trackers/emailInvite.ts"),
+				O = n("./src/reddit/controls/TextButton/index.tsx"),
+				S = n("./src/reddit/helpers/trackers/emailInvite.ts"),
 				T = n("./src/reddit/helpers/trackers/screenview.ts"),
 				I = n("./src/reddit/helpers/trackers/subredditCreation.ts"),
 				j = n("./src/reddit/icons/svgs/Admin/index.tsx"),
@@ -1077,7 +1083,7 @@
 						const {
 							sendEvent: e
 						} = this.props;
-						e(Object(O.a)("community_creation")), this.setState({
+						e(Object(S.a)("community_creation")), this.setState({
 							showEmailInviteModal: !0
 						})
 					}, this.onCloseInviteViaEmailModal = () => {
@@ -1221,7 +1227,7 @@
 						className: Object(c.a)(Q.a.field, {
 							[Q.a.isCreatePending]: t
 						})
-					}, s.a.createElement(S.a, {
+					}, s.a.createElement(O.a, {
 						className: Q.a.textButton,
 						onClick: this.onInviteViaEmailClick
 					}, a.fbt._("Invite members via email", null, {
@@ -1843,4 +1849,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.0563445655df31d0adbc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.c865365584c78fea5d79.js.map

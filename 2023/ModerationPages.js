@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.a690e88ecec51b648a30.js
-// Retrieved at 1/30/2023, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.c61defcb0881a048d37e.js
+// Retrieved at 1/31/2023, 5:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -45047,48 +45047,54 @@
 				me = Object(a.c)({
 					isNightModeOn: D.fb
 				}),
-				pe = Object(o.b)(me)(e => r.a.createElement(J, {
-					last: e.last,
-					indent: e.indent,
-					disabled: e.disabled,
-					inModal: e.inModal,
-					isNightModeOn: e.isNightModeOn,
-					direction: e.direction,
-					className: e.className
-				}, r.a.createElement(z, {
-					style: {
-						flex: 5
-					}
-				}, !e.inModal && r.a.createElement(A.a, null, r.a.createElement(q, {
-					className: e.labelClassname
-				}, e.label)), !e.hideSubtext && r.a.createElement(W, null, " ", r.a.createElement(ue, {
-					style: {
-						color: e.ticks[e.value].color
-					}
-				}, " ", e.ticks[e.value].text + ": ", " "), " ", e.subtext)), r.a.createElement(Q, {
-					style: {
-						flex: 3,
-						margin: "20px 20px 0 0"
-					}
-				}, r.a.createElement(de, null, r.a.createElement(ae, {
-					style: {
-						background: "linear-gradient(to right, " + P()(1, e.max + 1).map((t, n) => t <= e.value ? `${e.ticks[e.value].color} ${(t-1)/e.max*100}%,\n                    ${e.ticks[e.value].color} ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100}%` : t !== e.max ? `#c5c5c5 ${(t-1)/e.max*100}%, #c5c5c5 ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100}%` : `#c5c5c5 ${(t-1)/e.max*100}%`) + ", #C5C5C5 100%)"
-					},
-					className: "range-slider-input",
-					type: "range",
-					min: e.min,
-					max: e.max,
-					step: e.step,
-					value: e.value,
-					onChange: e.onChange,
-					onInput: e.onChange,
-					disabled: e.disabled
-				}), r.a.createElement(ce, null, Object.keys(e.ticks).map((t, n) => r.a.createElement(le, {
-					key: t,
-					style: {
-						color: t === e.value.toString() ? e.ticks[t].color : "#878A8C"
-					}
-				}, e.ticks[t].text))))))),
+				pe = Object(o.b)(me)(e => {
+					const t = Object(i.a)();
+					return r.a.createElement(J, {
+						last: e.last,
+						indent: e.indent,
+						disabled: e.disabled,
+						inModal: e.inModal,
+						isNightModeOn: e.isNightModeOn,
+						direction: e.direction,
+						className: e.className
+					}, r.a.createElement(z, {
+						style: {
+							flex: 5
+						}
+					}, !e.inModal && r.a.createElement(A.a, null, r.a.createElement("label", {
+						htmlFor: t
+					}, r.a.createElement(q, {
+						className: e.labelClassname
+					}, e.label))), !e.hideSubtext && r.a.createElement(W, null, " ", r.a.createElement(ue, {
+						style: {
+							color: e.ticks[e.value].color
+						}
+					}, " ", e.ticks[e.value].text + ": ", " "), " ", e.subtext)), r.a.createElement(Q, {
+						style: {
+							flex: 3,
+							margin: "20px 20px 0 0"
+						}
+					}, r.a.createElement(de, null, r.a.createElement(ae, {
+						id: t,
+						style: {
+							background: "linear-gradient(to right, " + P()(1, e.max + 1).map((t, n) => t <= e.value ? `${e.ticks[e.value].color} ${(t-1)/e.max*100}%,\n                    ${e.ticks[e.value].color} ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100}%` : t !== e.max ? `#c5c5c5 ${(t-1)/e.max*100}%, #c5c5c5 ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100}%` : `#c5c5c5 ${(t-1)/e.max*100}%`) + ", #C5C5C5 100%)"
+						},
+						className: "range-slider-input",
+						type: "range",
+						min: e.min,
+						max: e.max,
+						step: e.step,
+						value: e.value,
+						onChange: e.onChange,
+						onInput: e.onChange,
+						disabled: e.disabled
+					}), r.a.createElement(ce, null, Object.keys(e.ticks).map((t, n) => r.a.createElement(le, {
+						key: t,
+						style: {
+							color: t === e.value.toString() ? e.ticks[t].color : "#878A8C"
+						}
+					}, e.ticks[t].text))))))
+				}),
 				be = e => r.a.createElement(J, {
 					last: e.last,
 					indent: e.indent,
@@ -74724,4 +74730,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.a690e88ecec51b648a30.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.c61defcb0881a048d37e.js.map
