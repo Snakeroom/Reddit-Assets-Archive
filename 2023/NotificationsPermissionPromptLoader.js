@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsPermissionPromptLoader.9d8176dc0cb3b14f48e8.js
-// Retrieved at 1/25/2023, 7:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsPermissionPromptLoader.f488f1251c25126e7a0a.js
+// Retrieved at 1/30/2023, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsPermissionPromptLoader", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -98,7 +98,7 @@
 				w = i("./src/reddit/selectors/user.ts");
 			const N = e => Object(x.c)(e, {
 				experimentEligibilitySelector: w.S,
-				experimentName: k.ub
+				experimentName: k.tb
 			}) === k.Id;
 			var S = i("./src/reddit/selectors/experiments/delayDnPermission.ts"),
 				P = i("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts");
@@ -465,4 +465,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPermissionPromptLoader.9d8176dc0cb3b14f48e8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPermissionPromptLoader.f488f1251c25126e7a0a.js.map

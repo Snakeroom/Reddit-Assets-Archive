@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.45c75c7fb728279b3a5c.js
-// Retrieved at 1/25/2023, 7:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.877d7c00873df5e5665b.js
+// Retrieved at 1/30/2023, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -8868,7 +8868,7 @@
 			const ae = Object(l.a)(e => Object(oe.c)(e, {
 				experimentEligibilitySelector: I.S,
 				experimentName: se.E
-			}), e => e === se.O.Enabled);
+			}), e => e === se.N.Enabled);
 			var re = n("./src/reddit/selectors/meta.ts"),
 				ie = n("./src/reddit/components/Settings/AccountPrefsSection/index.m.less"),
 				le = n.n(ie);
@@ -10688,7 +10688,7 @@
 			const oo = Object(l.a)(e => Object(oe.c)(e, {
 				experimentEligibilitySelector: I.S,
 				experimentName: se.B
-			}), e => e === se.L.Enabled);
+			}), e => e === se.K.Enabled);
 			var ao = n("./src/lib/hooks/usePrevious.ts"),
 				ro = n("./src/reddit/actions/subreddit/muting.ts"),
 				io = n("./src/telemetry/models/Event.ts");
@@ -12703,4 +12703,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.45c75c7fb728279b3a5c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.877d7c00873df5e5665b.js.map

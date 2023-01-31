@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.946232e68b7ee600137c.js
-// Retrieved at 1/25/2023, 7:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.9c6137cb322df3753763.js
+// Retrieved at 1/30/2023, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -461,8 +461,8 @@
 				B = s("./src/lib/objectSelector/index.ts"),
 				V = s("./src/lib/onFocusAndVisibilityChange/index.ts"),
 				W = s("./src/lib/sentry/index.ts"),
-				U = s("./src/lib/truncateText/index.ts"),
-				H = s("./src/reddit/actions/post.ts"),
+				H = s("./src/lib/truncateText/index.ts"),
+				U = s("./src/reddit/actions/post.ts"),
 				F = s("./src/reddit/components/AdViewability/index.tsx"),
 				G = s("./src/reddit/components/Governance/VaultActionLink/async.ts"),
 				K = s("./src/reddit/components/HTML5StreamPlayer/index.tsx"),
@@ -734,7 +734,7 @@
 							}))
 						}, [t, h]),
 						R = Object(r.useCallback)(e => {
-							t(Object(H.y)(m, ae.a.GalleryItemImpression, `Slide${e}`))
+							t(Object(U.y)(m, ae.a.GalleryItemImpression, `Slide${e}`))
 						}, [t, m]),
 						B = Object(r.useCallback)(() => {
 							t(Object(ie.i)({
@@ -818,7 +818,7 @@
 							a = p && p[i];
 						if (!a || !a.s) return null;
 						const r = t.caption ? t.caption : g,
-							d = Object(U.a)(E ? `${E} - ${r}` : r, 300, _.nb),
+							d = Object(H.a)(E ? `${E} - ${r}` : r, 300, _.nb),
 							c = [...a && a.s ? [a.s] : [], ...a && a.p ? a.p : []],
 							u = ce(n, c);
 						if (!u) return null;
@@ -899,8 +899,8 @@
 				Be = s("./src/reddit/constants/componentSizes.ts"),
 				Ve = s("./src/reddit/helpers/styles/mixins/loading.ts"),
 				We = s("./src/reddit/components/Media/RichTextContainer/index.m.less"),
-				Ue = s.n(We);
-			class He extends l.a.Component {
+				He = s.n(We);
+			class Ue extends l.a.Component {
 				componentDidMount() {
 					this.loadRichTextContentIfNeeded()
 				}
@@ -912,10 +912,10 @@
 						isLoading: !0
 					});
 					return l.a.createElement("div", {
-						className: Ue.a.placeholder
+						className: He.a.placeholder
 					}, [1, 2, 3].map(t => l.a.createElement("div", {
 						key: t,
-						className: Ue.a.placeholderParagraph
+						className: He.a.placeholderParagraph
 					}, l.a.createElement("div", {
 						className: e
 					}), l.a.createElement("div", {
@@ -926,8 +926,8 @@
 				}
 			}
 			var Fe = Object(d.b)(null, e => ({
-				onLoadRichTextContentIfNeeded: t => e(Object(H.x)(t))
-			}))(He);
+				onLoadRichTextContentIfNeeded: t => e(Object(U.x)(t))
+			}))(Ue);
 
 			function Ge() {
 				return (Ge = Object.assign || function(e) {
@@ -953,9 +953,9 @@
 						...p
 					} = e;
 					const m = {
-							[Ue.a.richTextContainerFull]: u,
-							[Ue.a.richTextContainerTitleOnly]: d && !u,
-							[Ue.a.richTextContainer]: !u && !d
+							[He.a.richTextContainerFull]: u,
+							[He.a.richTextContainerTitleOnly]: d && !u,
+							[He.a.richTextContainer]: !u && !d
 						},
 						h = {};
 					u || (h.maxHeight = d ? `${de.m}px` : a ? `${de.l}px` : `${de.k}px`), n && (h.maxWidth = `${Be.d}px`);
@@ -1182,7 +1182,7 @@
 					setAutoplayPref: t => e(Mt.s(t))
 				}
 			});
-			var Ut = Object(r.memo)(Wt(Object(_t.b)(e => {
+			var Ht = Object(r.memo)(Wt(Object(_t.b)(e => {
 				const t = Object(r.useRef)(),
 					i = Object(r.useRef)(),
 					n = Object(Z.a)(),
@@ -1322,8 +1322,8 @@
 					if (e[n] !== t[n]) return !1;
 				return !0
 			}));
-			var Ht = s("./src/reddit/components/Media/index.m.less"),
-				Ft = s.n(Ht);
+			var Ut = s("./src/reddit/components/Media/index.m.less"),
+				Ft = s.n(Ut);
 
 			function Gt() {
 				return (Gt = Object.assign || function(e) {
@@ -1437,9 +1437,9 @@
 					isOptionalTextExpEnabled: vt.a
 				}),
 				as = Object(d.b)(ns, e => ({
-					fireAdPixelsOfType: (t, s) => e(Object(H.y)(t, s)),
-					openPost: t => e(Object(H.K)(t)),
-					openPostLink: t => e(Object(H.Z)(Object(ht.b)(t.permalink), t.id))
+					fireAdPixelsOfType: (t, s) => e(Object(U.y)(t, s)),
+					openPost: t => e(Object(U.K)(t)),
+					openPostLink: t => e(Object(U.Z)(Object(ht.b)(t.permalink), t.id))
 				})),
 				os = Object(B.b)(e => ({
 					renderingObjectInfo: e.post,
@@ -1592,7 +1592,7 @@
 					} = this.props;
 					if (!n) return;
 					let a = "";
-					return i && (a += i), t && e ? a += `${Yt}${t}` : s.title && (a += `${Yt}${s.title}`), a.length > Jt ? Object(U.a)(a, Jt, _.nb) : a
+					return i && (a += i), t && e ? a += `${Yt}${t}` : s.title && (a += `${Yt}${s.title}`), a.length > Jt ? Object(H.a)(a, Jt, _.nb) : a
 				}
 				getVideoExpandoMaxDimensions() {
 					let e, t = Math.max(de.j, this.state.viewportHeight),
@@ -1718,12 +1718,12 @@
 						shouldPause: D,
 						shouldStop: B,
 						viewportWidth: V
-					} = this.state, U = E && x;
+					} = this.state, H = E && x;
 					if (!S.media) return null;
-					const H = S.isSponsored || Object(P.u)(C);
+					const U = S.isSponsored || Object(P.u)(C);
 					let K;
 					S.media.type !== de.o.TEXT && (K = S.media.richtextContent);
-					const Y = v && K && !H,
+					const Y = v && K && !U,
 						z = _ || D,
 						q = B,
 						{
@@ -1768,7 +1768,7 @@
 						imageClassName: this.props.imageBoxClassName,
 						isListing: g,
 						isNSFW: x,
-						isNsfwBlockingModalEligible: U,
+						isNsfwBlockingModalEligible: H,
 						isSpoiler: y,
 						isVideoThumbnail: !!S.media && S.media.type === de.o.VIDEO,
 						onClick: this.onClickRevealBlurred,
@@ -1805,7 +1805,7 @@
 								flairStyleTemplate: d,
 								isListing: g,
 								isNSFW: x,
-								isNsfwBlockingModalEligible: U,
+								isNsfwBlockingModalEligible: H,
 								isSpoiler: y,
 								mediaMetadata: S.media.mediaMetadata,
 								onClickRevealBlurred: this.onClickRevealBlurred,
@@ -1964,7 +1964,7 @@
 									},
 									isReactAllowed: S.isReactAllowed
 								} : void 0,
-								i = L ? l.a.createElement(Ut, {
+								i = L ? l.a.createElement(Ht, {
 									autoplay: s,
 									postId: S.id,
 									hlsSource: S.media.hlsUrl,
@@ -2068,7 +2068,7 @@
 								className: this.props.imageBoxClassName,
 								isListing: g,
 								isNSFW: x,
-								isNsfwBlockingModalEligible: U,
+								isNsfwBlockingModalEligible: H,
 								isSpoiler: y,
 								shouldBlur: ne,
 								onClickRevealBlurred: this.onClickRevealBlurred,
@@ -2256,11 +2256,11 @@
 				return !(!l || d) && (e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: i.Ib
+						experimentName: i.Hb
 					}) === i.Id
 				})(e)
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.946232e68b7ee600137c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.9c6137cb322df3753763.js.map

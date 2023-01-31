@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.bbc1ecc1bca964854811.js
-// Retrieved at 1/26/2023, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.699a8f76be4e07bdaa74.js
+// Retrieved at 1/30/2023, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -10367,7 +10367,7 @@
 				const n = Object(o.d)(),
 					c = Object(d.b)(),
 					v = Object(o.e)(g.k),
-					E = v === l.hb.Feed ? t.topics.slice(0, 5) : t.topics,
+					E = v === l.gb.Feed ? t.topics.slice(0, 5) : t.topics,
 					[O, j] = Object(r.useState)(!1),
 					[C, I] = Object(r.useState)(),
 					S = function() {
@@ -13563,7 +13563,7 @@
 					}, a.a.createElement(f.b, {
 						textColor: d
 					})), a.a.createElement(B, {
-						qrCodeAsset: (() => r === g.Yc.Enabled || s === g.db.BlurredPreview || s === g.db.NoPreview ? L.d2x_nsfw_signup_blocking_de_v1 : L.d2x_nsfw_signup_blocking_non_us_v1)()
+						qrCodeAsset: (() => r === g.Yc.Enabled || s === g.cb.BlurredPreview || s === g.cb.NoPreview ? L.d2x_nsfw_signup_blocking_de_v1 : L.d2x_nsfw_signup_blocking_non_us_v1)()
 					}))
 				},
 				U = e => {
@@ -13582,8 +13582,8 @@
 						})(s)
 					}, [s]), a.a.createElement("div", {
 						className: Object(u.a)(P.a.mainCta, {
-							[P.a.skippable_buttons]: s === g.eb.SkippableButtons,
-							[P.a.skippable_text]: s === g.eb.SkippableText
+							[P.a.skippable_buttons]: s === g.db.SkippableButtons,
+							[P.a.skippable_text]: s === g.db.SkippableText
 						})
 					}, a.a.createElement("div", {
 						className: P.a.contentDescription
@@ -13615,7 +13615,7 @@
 								}
 							}))()), O(r.Login), t(Object(p.openLoginModal)())
 						}
-					}, D()), s === g.eb.SkippableButtons && a.a.createElement("div", {
+					}, D()), s === g.db.SkippableButtons && a.a.createElement("div", {
 						className: P.a.divider
 					}, a.a.createElement("div", {
 						className: P.a.dividerLine
@@ -13643,7 +13643,7 @@
 						hk: "4nUG6S"
 					}))()), a.a.createElement(_.j, {
 						className: Object(u.a)(P.a.continue, P.a.dismiss, {
-							[P.a.no_border]: s === g.eb.SkippableText
+							[P.a.no_border]: s === g.db.SkippableText
 						}),
 						onClick: () => {
 							n((() => e => ({
@@ -13657,7 +13657,7 @@
 								}
 							}))()), O(r.Dismiss), t(Object(d.b)("/"))
 						}
-					}, s === g.eb.SkippableText ? (() => o.fbt._("Go back to home", null, {
+					}, s === g.db.SkippableText ? (() => o.fbt._("Go back to home", null, {
 						hk: "4yEgxF"
 					}))() : A())))
 				}
@@ -24857,7 +24857,7 @@
 			const a = e => s.e[Object(o.U)(e, {})] === s.d.Card,
 				c = e => Object(i.c)(e, {
 					experimentEligibilitySelector: a,
-					experimentName: r.jb
+					experimentName: r.ib
 				}) === r.Qc.Treatment
 		},
 		"./src/reddit/selectors/experiments/communityDirectoryBacklinks/index.ts": function(e, t, n) {
@@ -24892,7 +24892,7 @@
 						experimentEligibilitySelector: s.a,
 						experimentName: r.C,
 						expEventOverride: !1
-					}) === r.M.Enabled
+					}) === r.L.Enabled
 				},
 				u = (e, t) => {
 					let {
@@ -25031,7 +25031,7 @@
 				o = n("./node_modules/reselect/es/index.js");
 			const i = Object(o.a)(e => Object(s.c)(e, {
 				experimentEligibilitySelector: s.a,
-				experimentName: r.Cb
+				experimentName: r.Bb
 			}), e => e === r.de.HideTrending)
 		},
 		"./src/reddit/selectors/experiments/joinOptimizations.ts": function(e, t, n) {
@@ -25054,29 +25054,29 @@
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/experiments/index.ts");
 			const a = Object(r.a)(e => Object(o.c)(e, {
+					experimentName: s.Ib,
+					experimentEligibilitySelector: i.e
+				}), e => e === s.Q.Enabled),
+				c = Object(r.a)(e => Object(o.c)(e, {
 					experimentName: s.Jb,
 					experimentEligibilitySelector: i.e
 				}), e => e === s.R.Enabled),
-				c = Object(r.a)(e => Object(o.c)(e, {
+				d = Object(r.a)(e => Object(o.c)(e, {
 					experimentName: s.Kb,
 					experimentEligibilitySelector: i.e
 				}), e => e === s.S.Enabled),
-				d = Object(r.a)(e => Object(o.c)(e, {
+				l = Object(r.a)(e => Object(o.c)(e, {
 					experimentName: s.Lb,
 					experimentEligibilitySelector: i.e
 				}), e => e === s.T.Enabled),
-				l = Object(r.a)(e => Object(o.c)(e, {
-					experimentName: s.Mb,
-					experimentEligibilitySelector: i.e
-				}), e => e === s.U.Enabled),
 				u = Object(r.a)(e => Object(o.c)(e, {
-					experimentName: s.Ob,
-					experimentEligibilitySelector: i.e
-				}), e => e === s.W.Enabled),
-				m = Object(r.a)(e => Object(o.c)(e, {
 					experimentName: s.Nb,
 					experimentEligibilitySelector: i.e
-				}), e => e === s.V.Enabled)
+				}), e => e === s.V.Enabled),
+				m = Object(r.a)(e => Object(o.c)(e, {
+					experimentName: s.Mb,
+					experimentEligibilitySelector: i.e
+				}), e => e === s.U.Enabled)
 		},
 		"./src/reddit/selectors/experiments/navbarLikeMweb.ts": function(e, t, n) {
 			"use strict";
@@ -25162,8 +25162,8 @@
 					const t = Date.parse(e);
 					return Number.isNaN(t) ? (localStorage.removeItem(i.b.XpromoConsolidation), !0) : Date.now() > t + l
 				},
-				p = (e, t) => t === a.a.NoPreview && (e === o.eb.SkippableButtons || e === o.eb.SkippableText),
-				b = (e, t) => t === a.a.NoPreview && e === o.eb.NoUpsell,
+				p = (e, t) => t === a.a.NoPreview && (e === o.db.SkippableButtons || e === o.db.SkippableText),
+				b = (e, t) => t === a.a.NoPreview && e === o.db.NoUpsell,
 				f = Object(d.a)(a.h, a.g, (e, t) => {
 					return {
 						isControlVariant: !(!e || !t) && ((e, t) => t === a.a.NoPreview && !p(e, t) && !b(e, t))(e, t),
@@ -25318,14 +25318,14 @@
 						experimentEligibilitySelector: i.a,
 						experimentName: o.Me
 					});
-					return t === o.Pe.ContentMatch || t === o.Pe.ConfidenceAndSuccess || t === o.N.Control1 || t === o.N.Control2
+					return t === o.Pe.ContentMatch || t === o.Pe.ConfidenceAndSuccess || t === o.M.Control1 || t === o.M.Control2
 				},
 				f = e => {
 					const t = Object(i.c)(e, {
 						experimentEligibilitySelector: i.a,
 						experimentName: o.Me
 					});
-					return t === o.N.Control1 || t === o.N.Control2
+					return t === o.M.Control1 || t === o.M.Control2
 				},
 				h = e => {
 					const t = Object(i.c)(e, {
@@ -25432,7 +25432,7 @@
 					const n = l(t());
 					c(t()) && n !== o.a.Off && e.block(e => {
 						if ((e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname))
-							if (n === o.a.Control) Object(s.d)(t(), r.tf, r.N.Control1);
+							if (n === o.a.Control) Object(s.d)(t(), r.tf, r.M.Control1);
 							else if (n === o.a.Treatment) return window.location.href = e.pathname, !1
 					})
 				}
@@ -25471,12 +25471,12 @@
 					expEventOverride: t
 				})
 			}
-			const l = d(s.vb, !0),
-				u = d(s.wb, !0),
-				m = d(s.xb, !0),
-				p = d(s.vb, !1),
-				b = d(s.wb, !1),
-				f = d(s.xb, !1)
+			const l = d(s.ub, !0),
+				u = d(s.vb, !0),
+				m = d(s.wb, !0),
+				p = d(s.ub, !1),
+				b = d(s.vb, !1),
+				f = d(s.wb, !1)
 		},
 		"./src/reddit/selectors/experiments/topPosts.ts": function(e, t, n) {
 			"use strict";
@@ -25530,7 +25530,7 @@
 				},
 				c = Object(r.a)(e => Object(o.c)(e, {
 					experimentEligibilitySelector: i.S,
-					experimentName: s.Pb
+					experimentName: s.Ob
 				}), e => e === s.Id)
 		},
 		"./src/reddit/selectors/newPostPill.ts": function(e, t, n) {
@@ -25783,4 +25783,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.bbc1ecc1bca964854811.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.699a8f76be4e07bdaa74.js.map

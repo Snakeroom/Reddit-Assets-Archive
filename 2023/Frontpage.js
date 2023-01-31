@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.82b275f2724906a0eaa3.js
-// Retrieved at 1/25/2023, 7:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.c10598e0b47c9a8c7277.js
+// Retrieved at 1/30/2023, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -4332,7 +4332,7 @@
 				const a = Object(r.d)(),
 					o = Object(l.b)(),
 					_ = Object(r.e)(v.k),
-					y = _ === d.hb.Feed ? t.topics.slice(0, 5) : t.topics,
+					y = _ === d.gb.Feed ? t.topics.slice(0, 5) : t.topics,
 					[O, j] = Object(n.useState)(!1),
 					[k, C] = Object(n.useState)(),
 					A = function() {
@@ -5754,7 +5754,7 @@
 			const i = e => s.e[Object(r.U)(e, {})] === s.d.Card,
 				o = e => Object(c.c)(e, {
 					experimentEligibilitySelector: i,
-					experimentName: n.jb
+					experimentName: n.ib
 				}) === n.Qc.Treatment
 		},
 		"./src/reddit/selectors/experiments/econ/avatarBanner.ts": function(e, t, a) {
@@ -5869,12 +5869,12 @@
 					expEventOverride: t
 				})
 			}
-			const d = l(s.vb, !0),
-				m = l(s.wb, !0),
-				u = l(s.xb, !0),
-				p = l(s.vb, !1),
-				h = l(s.wb, !1),
-				b = l(s.xb, !1)
+			const d = l(s.ub, !0),
+				m = l(s.vb, !0),
+				u = l(s.wb, !0),
+				p = l(s.ub, !1),
+				h = l(s.vb, !1),
+				b = l(s.wb, !1)
 		},
 		"./src/reddit/selectors/features/liveBar/index.ts": function(e, t, a) {
 			"use strict";
@@ -5944,4 +5944,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.82b275f2724906a0eaa3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.c10598e0b47c9a8c7277.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.560b7966b7e21ada9a94.js
-// Retrieved at 1/25/2023, 7:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.14b0871567cca4cceb88.js
+// Retrieved at 1/30/2023, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -7255,7 +7255,7 @@
 					}, a.a.createElement(h.b, {
 						textColor: c
 					})), a.a.createElement(B, {
-						qrCodeAsset: (() => n === x.Yc.Enabled || r === x.db.BlurredPreview || r === x.db.NoPreview ? L.d2x_nsfw_signup_blocking_de_v1 : L.d2x_nsfw_signup_blocking_non_us_v1)()
+						qrCodeAsset: (() => n === x.Yc.Enabled || r === x.cb.BlurredPreview || r === x.cb.NoPreview ? L.d2x_nsfw_signup_blocking_de_v1 : L.d2x_nsfw_signup_blocking_non_us_v1)()
 					}))
 				},
 				D = e => {
@@ -7274,8 +7274,8 @@
 						})(r)
 					}, [r]), a.a.createElement("div", {
 						className: Object(m.a)(T.a.mainCta, {
-							[T.a.skippable_buttons]: r === x.eb.SkippableButtons,
-							[T.a.skippable_text]: r === x.eb.SkippableText
+							[T.a.skippable_buttons]: r === x.db.SkippableButtons,
+							[T.a.skippable_text]: r === x.db.SkippableText
 						})
 					}, a.a.createElement("div", {
 						className: T.a.contentDescription
@@ -7307,7 +7307,7 @@
 								}
 							}))()), O(n.Login), t(Object(p.openLoginModal)())
 						}
-					}, F()), r === x.eb.SkippableButtons && a.a.createElement("div", {
+					}, F()), r === x.db.SkippableButtons && a.a.createElement("div", {
 						className: T.a.divider
 					}, a.a.createElement("div", {
 						className: T.a.dividerLine
@@ -7335,7 +7335,7 @@
 						hk: "4nUG6S"
 					}))()), a.a.createElement(f.j, {
 						className: Object(m.a)(T.a.continue, T.a.dismiss, {
-							[T.a.no_border]: r === x.eb.SkippableText
+							[T.a.no_border]: r === x.db.SkippableText
 						}),
 						onClick: () => {
 							s((() => e => ({
@@ -7349,7 +7349,7 @@
 								}
 							}))()), O(n.Dismiss), t(Object(c.b)("/"))
 						}
-					}, r === x.eb.SkippableText ? (() => o.fbt._("Go back to home", null, {
+					}, r === x.db.SkippableText ? (() => o.fbt._("Go back to home", null, {
 						hk: "4yEgxF"
 					}))() : A())))
 				}
@@ -11099,7 +11099,7 @@
 			const a = e => r.e[Object(o.U)(e, {})] === r.d.Card,
 				d = e => Object(i.c)(e, {
 					experimentEligibilitySelector: a,
-					experimentName: n.jb
+					experimentName: n.ib
 				}) === n.Qc.Treatment
 		},
 		"./src/reddit/selectors/experiments/nsfwBypassableBlockingExperiment.ts": function(e, t, s) {
@@ -11131,8 +11131,8 @@
 					const t = Date.parse(e);
 					return Number.isNaN(t) ? (localStorage.removeItem(i.b.XpromoConsolidation), !0) : Date.now() > t + l
 				},
-				p = (e, t) => t === a.a.NoPreview && (e === o.eb.SkippableButtons || e === o.eb.SkippableText),
-				b = (e, t) => t === a.a.NoPreview && e === o.eb.NoUpsell,
+				p = (e, t) => t === a.a.NoPreview && (e === o.db.SkippableButtons || e === o.db.SkippableText),
+				b = (e, t) => t === a.a.NoPreview && e === o.db.NoUpsell,
 				h = Object(c.a)(a.h, a.g, (e, t) => {
 					return {
 						isControlVariant: !(!e || !t) && ((e, t) => t === a.a.NoPreview && !p(e, t) && !b(e, t))(e, t),
@@ -11190,12 +11190,12 @@
 					expEventOverride: t
 				})
 			}
-			const l = c(r.vb, !0),
-				m = c(r.wb, !0),
-				u = c(r.xb, !0),
-				p = c(r.vb, !1),
-				b = c(r.wb, !1),
-				h = c(r.xb, !1)
+			const l = c(r.ub, !0),
+				m = c(r.vb, !0),
+				u = c(r.wb, !0),
+				p = c(r.ub, !1),
+				b = c(r.vb, !1),
+				h = c(r.wb, !1)
 		},
 		"./src/reddit/selectors/experiments/subredditDiscovery.ts": function(e, t, s) {
 			"use strict";
@@ -11325,4 +11325,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.560b7966b7e21ada9a94.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.14b0871567cca4cceb88.js.map

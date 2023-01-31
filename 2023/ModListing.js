@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.767ec1245f2e383c7c3a.js
-// Retrieved at 1/25/2023, 7:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.2054fbd9f7388399c6f8.js
+// Retrieved at 1/30/2023, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, n) {
@@ -2576,7 +2576,7 @@
 					const n = l(t());
 					a(t()) && n !== i.a.Off && e.block(e => {
 						if ((e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname))
-							if (n === i.a.Control) Object(s.d)(t(), r.tf, r.N.Control1);
+							if (n === i.a.Control) Object(s.d)(t(), r.tf, r.M.Control1);
 							else if (n === i.a.Treatment) return window.location.href = e.pathname, !1
 					})
 				}
@@ -2598,7 +2598,7 @@
 				},
 				a = Object(r.a)(e => Object(i.c)(e, {
 					experimentEligibilitySelector: o.S,
-					experimentName: s.Pb
+					experimentName: s.Ob
 				}), e => e === s.Id)
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
@@ -2606,4 +2606,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.767ec1245f2e383c7c3a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.2054fbd9f7388399c6f8.js.map
