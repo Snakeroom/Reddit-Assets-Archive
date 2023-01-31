@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.66b3093456891a86684b.js
-// Retrieved at 1/30/2023, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.7c4ef00fec0d3bc41c53.js
+// Retrieved at 1/31/2023, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2353,7 +2353,8 @@
 						className: c.a.blur,
 						src: Object(i.a)(e.blurSrc)
 					}) : null,
-					d = Object(a.C)(e.height, e.width, e.forceAspectRatio);
+					d = Object(a.C)(e.height, e.width, e.forceAspectRatio),
+					l = e.provider === a.v.Spotify ? d + 3 : d;
 				return r.a.createElement("div", {
 					className: Object(o.a)(c.a.container, e.className, {
 						[c.a.video]: e.isVideo,
@@ -2364,7 +2365,7 @@
 				}, n, !e.isGalleryTileLayout && r.a.createElement("div", {
 					className: c.a.spacer,
 					style: {
-						paddingBottom: `${d}%`
+						paddingBottom: `${l}%`
 					}
 				}), r.a.createElement("div", {
 					className: Object(o.a)(c.a.wrapper, {
@@ -8261,4 +8262,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.66b3093456891a86684b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.7c4ef00fec0d3bc41c53.js.map

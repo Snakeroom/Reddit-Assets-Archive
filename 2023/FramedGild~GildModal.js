@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.6d6e1e95ad3298447c3d.js
-// Retrieved at 1/30/2023, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.f5c28e4dfd7e2364be5c.js
+// Retrieved at 1/31/2023, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, n) {
@@ -3458,7 +3458,8 @@
 						className: d.a.blur,
 						src: Object(o.a)(e.blurSrc)
 					}) : null,
-					c = Object(i.C)(e.height, e.width, e.forceAspectRatio);
+					c = Object(i.C)(e.height, e.width, e.forceAspectRatio),
+					l = e.provider === i.v.Spotify ? c + 3 : c;
 				return s.a.createElement("div", {
 					className: Object(a.a)(d.a.container, e.className, {
 						[d.a.video]: e.isVideo,
@@ -3469,7 +3470,7 @@
 				}, r, !e.isGalleryTileLayout && s.a.createElement("div", {
 					className: d.a.spacer,
 					style: {
-						paddingBottom: `${c}%`
+						paddingBottom: `${l}%`
 					}
 				}), s.a.createElement("div", {
 					className: Object(a.a)(d.a.wrapper, {
@@ -5910,4 +5911,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.6d6e1e95ad3298447c3d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.f5c28e4dfd7e2364be5c.js.map

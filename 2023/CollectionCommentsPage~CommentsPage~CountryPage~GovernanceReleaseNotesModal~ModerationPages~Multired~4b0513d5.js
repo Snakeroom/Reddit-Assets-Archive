@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5.82263a6e9f2df70cc8a2.js
-// Retrieved at 1/30/2023, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5.1f6088e1f9124b570e87.js
+// Retrieved at 1/31/2023, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5"], {
 		"./src/reddit/components/Governance/VaultActionLink/async.ts": function(e, t, n) {
@@ -380,7 +380,8 @@
 						className: d.a.blur,
 						src: Object(o.a)(e.blurSrc)
 					}) : null,
-					c = Object(a.C)(e.height, e.width, e.forceAspectRatio);
+					c = Object(a.C)(e.height, e.width, e.forceAspectRatio),
+					l = e.provider === a.v.Spotify ? c + 3 : c;
 				return r.a.createElement("div", {
 					className: Object(i.a)(d.a.container, e.className, {
 						[d.a.video]: e.isVideo,
@@ -391,7 +392,7 @@
 				}, s, !e.isGalleryTileLayout && r.a.createElement("div", {
 					className: d.a.spacer,
 					style: {
-						paddingBottom: `${c}%`
+						paddingBottom: `${l}%`
 					}
 				}), r.a.createElement("div", {
 					className: Object(i.a)(d.a.wrapper, {
@@ -2197,4 +2198,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5.82263a6e9f2df70cc8a2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5.1f6088e1f9124b570e87.js.map

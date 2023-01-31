@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.a46be2ecdcf9db0dc0f0.js
-// Retrieved at 1/30/2023, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.c0b70432fc0755974684.js
+// Retrieved at 1/31/2023, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -4726,7 +4726,8 @@
 						className: c.a.blur,
 						src: Object(i.a)(e.blurSrc)
 					}) : null,
-					d = Object(a.C)(e.height, e.width, e.forceAspectRatio);
+					d = Object(a.C)(e.height, e.width, e.forceAspectRatio),
+					l = e.provider === a.v.Spotify ? d + 3 : d;
 				return o.a.createElement("div", {
 					className: Object(r.a)(c.a.container, e.className, {
 						[c.a.video]: e.isVideo,
@@ -4737,7 +4738,7 @@
 				}, s, !e.isGalleryTileLayout && o.a.createElement("div", {
 					className: c.a.spacer,
 					style: {
-						paddingBottom: `${d}%`
+						paddingBottom: `${l}%`
 					}
 				}), o.a.createElement("div", {
 					className: Object(r.a)(c.a.wrapper, {
@@ -8453,4 +8454,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.a46be2ecdcf9db0dc0f0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.c0b70432fc0755974684.js.map
