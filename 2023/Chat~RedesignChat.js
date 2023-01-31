@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.6def5a0fd6ca908edd17.js
-// Retrieved at 1/19/2023, 4:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.757563331b12e20ab131.js
+// Retrieved at 1/31/2023, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -448,7 +448,7 @@
 								[t]: e
 							})), a(Object(O.n)(t)), await a(Object(c.b)(s))), n && (await X.a.enterChannel(e), await a(Object(m.r)(t, n, _.c.TEXT)))
 						} else a(ze()), a(Object(O.gb)(e));
-						a(Ke())
+						a(Object(p.h)("old")), a(Ke())
 					}
 				}, Qe = e => async t => {
 					e = e.slice(0, 1), await t(Object(v.t)(e)), t(Ze(e)), location.origin === r.a.oldRedditUrl && t(Object(O.o)(e))
@@ -10679,7 +10679,7 @@
 				F = n("./src/chat/actions/message/unreadCount.ts"),
 				G = n("./src/chat/models/Channel/utils.ts");
 			! function(e) {
-				e.CLOSE = "matrix-chat.close", e.MINIMIZE = "matrix-chat.minimize", e.MAXIMIZE = "matrix-chat.maximize", e.LOADED = "matrix-chat.loaded", e.NOTIFICATIONS = "matrix-chat.notifications", e.ROOMS = "matrix-chat.rooms_count", e.OPEN_SENDBIRD_ROOM = "matrix-chat.open_sb"
+				e.CLOSE = "matrix-chat.close", e.MINIMIZE = "matrix-chat.minimize", e.MAXIMIZE = "matrix-chat.maximize", e.LOADED = "matrix-chat.loaded", e.NOTIFICATIONS = "matrix-chat.notifications", e.ROOMS = "matrix-chat.rooms_count", e.OPEN_SENDBIRD_ROOM = "matrix-chat.open_sb_room", e.OPEN_SENDBIRD_DM = "matrix-chat.open_sb_dm"
 			}(P || (P = {}));
 			const V = e => {
 				let {
@@ -10691,7 +10691,7 @@
 					n && (i && (null === (t = null === (e = h.current) || void 0 === e ? void 0 : e.contentWindow) || void 0 === t || t.postMessage(`openRoom:${i}`, "*")), d && (null === (s = null === (a = h.current) || void 0 === a ? void 0 : a.contentWindow) || void 0 === s || s.postMessage(`openDM:${d}`, "*")))
 				}, [n, i, d]), c.a.useLayoutEffect(() => {
 					const e = e => {
-						var t, n, a, c, r, i;
+						var t, n, a, c, r, i, d, u;
 						if (e.data === P.LOADED && s(!0), 0 === (null === (n = null === (t = e.data) || void 0 === t ? void 0 : t.indexOf) || void 0 === n ? void 0 : n.call(t, P.NOTIFICATIONS))) {
 							const [, t] = e.data.split(":");
 							o(Object(l.i)(parseInt(t, 10))), o(Object(F.c)())
@@ -10704,12 +10704,17 @@
 							const [, t] = e.data.split(":"), n = Object(D.getRedirectURL)(Object(D.channelUrl)(Object(G.f)(t)));
 							o(Object(H.b)(n)), o(Object(l.h)("old"))
 						}
+						if (0 === (null === (u = null === (d = e.data) || void 0 === d ? void 0 : d.indexOf) || void 0 === u ? void 0 : u.call(d, P.OPEN_SENDBIRD_DM))) {
+							const [, t] = e.data.split(":"), n = Object(D.getRedirectURL)(Object(D.channelUserIdUrl)(t));
+							o(Object(H.b)(n)), o(Object(l.h)("old"))
+						}
 					};
 					return window.addEventListener("message", e), () => window.removeEventListener("message", e)
 				}, []), c.a.createElement("iframe", {
 					ref: h,
 					className: Object(a.a)(t),
-					src: u
+					src: u,
+					"data-testid": "reddit-chat-window"
 				})
 			};
 			var W = n("./src/chat/components/ThemeProvider/index.tsx"),
@@ -19946,4 +19951,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.6def5a0fd6ca908edd17.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.757563331b12e20ab131.js.map
