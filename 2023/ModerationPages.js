@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.c61defcb0881a048d37e.js
-// Retrieved at 1/31/2023, 5:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.bf68a73156bb3276dd1a.js
+// Retrieved at 1/31/2023, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -65527,8 +65527,8 @@
 					}, i.a.createElement(Y.a, {
 						name: "view_grid_fill",
 						className: se.a.iconStyles
-					}), p.fbt._("Community apps", null, {
-						hk: "2zNYTD"
+					}), p.fbt._("Community apps (Beta)", null, {
+						hk: "1NkOYl"
 					})), i.a.createElement(i.a.Fragment, null, i.a.createElement(ie.b, {
 						isExternal: !0,
 						label: p.fbt._("Installed Apps", null, {
@@ -74730,4 +74730,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.c61defcb0881a048d37e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.bf68a73156bb3276dd1a.js.map
