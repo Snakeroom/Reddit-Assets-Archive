@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.1e414875a15fb7fd8f0f.js
-// Retrieved at 2/1/2023, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.2435d55d80a85ffd1588.js
+// Retrieved at 2/1/2023, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -25128,6 +25128,8 @@
 				return g
 			})), n.d(t, "b", (function() {
 				return _
+			})), n.d(t, "c", (function() {
+				return v
 			}));
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
@@ -25184,13 +25186,17 @@
 				})
 			}
 
-			function _(e) {
+			function _() {
+				return {
+					showCampaign: h()
+				}
+			}
+
+			function v(e) {
 				function t(t) {
 					const {
 						showCampaign: n
-					} = {
-						showCampaign: h()
-					};
+					} = _();
 					return r.a.createElement(e, b({}, t, {
 						showModmailHarassmentCampaign: n
 					}))
@@ -26976,9 +26982,10 @@
 						last: !0
 					})))
 				},
-				We = n("./src/reddit/selectors/experiments/cnc/index.ts");
-			const Ve = "discoverySettings",
-				Ke = {
+				We = n("./src/reddit/components/CommunitySafetyFeatureAdoptionCampaign/ModmailHarassment/useModmailHarassmentAdoptionCampaign.tsx"),
+				Ve = n("./src/reddit/selectors/experiments/cnc/index.ts");
+			const Ke = "discoverySettings",
+				ze = {
 					0: {
 						text: H.fbt._("Off", null, {
 							hk: "30Jfc7"
@@ -27004,7 +27011,7 @@
 						color: "#EA0027"
 					}
 				},
-				ze = {
+				Qe = {
 					0: H.fbt._("Use Crowd Control to automatically collapse comments from users you’re not sure about.", null, {
 						hk: "n75Tc"
 					}),
@@ -27018,7 +27025,7 @@
 						hk: "4NqwJ"
 					})
 				},
-				Qe = {
+				Je = {
 					0: H.fbt._("Use Crowd Control to automatically filter posts from users you’re not sure about.", null, {
 						hk: "RFsOk"
 					}),
@@ -27032,7 +27039,7 @@
 						hk: "Syn69"
 					})
 				},
-				Je = {
+				Ye = {
 					0: H.fbt._("No content posted from accounts suspected of ban evasion will automatically be held for review.", null, {
 						hk: "ziWwq"
 					}),
@@ -27046,14 +27053,14 @@
 						hk: "3CLgTG"
 					})
 				},
-				Ye = e => {
+				Xe = e => {
 					const t = [...e];
 					for (let n = 0; n < t.length; n++)
 						if (t[n] === B.o.Onboarding) return t.splice(n, 1), t;
 					return t.push(B.o.Onboarding), t
 				};
 
-			function Xe(e) {
+			function Ze(e) {
 				var t;
 				const {
 					banEvasionProtectionEnabled: n,
@@ -27072,8 +27079,11 @@
 					crowdControlPostLevel: g,
 					discoverySettings: _,
 					excludeBannedModqueue: v,
-					toxicityThresholdChatLevel: O
-				} = r, x = Math.max(m - 1, 0), E = s, y = !(null === (t = null == _ ? void 0 : _.disabledDiscoveryTypes) || void 0 === t ? void 0 : t.find(e => e === B.o.Onboarding)), j = Object(a.e)(We.b);
+					modmailHarassmentFilterEnabled: O,
+					toxicityThresholdChatLevel: x
+				} = r, {
+					showCampaign: E
+				} = Object(We.b)(), y = Math.max(m - 1, 0), j = s, I = !(null === (t = null == _ ? void 0 : _.disabledDiscoveryTypes) || void 0 === t ? void 0 : t.find(e => e === B.o.Onboarding)), S = Object(a.e)(Ve.b);
 				return i.a.createElement(k.a, null, i.a.createElement(C, null, i.a.createElement(k.b, {
 					className: je.a.pageTitle
 				}, H.fbt._("Safety & privacy settings", null, {
@@ -27087,10 +27097,29 @@
 					subtext: H.fbt._("Posts are excluded from modqueue/unmoderated", null, {
 						hk: "2P2pfc"
 					})
-				}), E && i.a.createElement(J.p, {
-					on: !!Number(O),
+				}), i.a.createElement(J.p, {
+					on: O,
+					onClick: () => l(!O, "modmailHarassmentFilterEnabled"),
+					labelClassname: E ? je.a.labelWithNewTag : void 0,
+					label: i.a.createElement(i.a.Fragment, null, H.fbt._("Modmail filtered folder", null, {
+						hk: "1oqjU0"
+					}), E && i.a.createElement(re.a, {
+						className: je.a.labelNewTag
+					})),
+					subtext: H.fbt._("Automatically filters inbound modmail messages that are likely to contain harassment. {=Learn More.}", [H.fbt._param("=Learn More.", i.a.createElement("a", {
+						className: je.a.subtextLink,
+						target: "_blank",
+						rel: "noopener noreferrer",
+						href: "https://mods.reddithelp.com/hc/en-us/articles/360002085732-Modmail-folders#h_01G8YBFB9VYVREXYWH1SCDP141"
+					}, H.fbt._("Learn More.", null, {
+						hk: "4BFEyn"
+					})))], {
+						hk: "FA0bG"
+					})
+				}), j && i.a.createElement(J.p, {
+					on: !!Number(x),
 					onClick: () => {
-						l(Number(O) ? "0" : "1", "toxicityThresholdChatLevel")
+						l(Number(x) ? "0" : "1", "toxicityThresholdChatLevel")
 					},
 					label: H.fbt._("Collapse Toxic Messages in Chat Post", null, {
 						hk: "1Pk3G5"
@@ -27100,16 +27129,16 @@
 					})
 				}), n && i.a.createElement(J.j, {
 					className: je.a.rangeSetting,
-					ticks: Ke,
+					ticks: ze,
 					min: 0,
-					max: Object.keys(Ke).length - 1,
+					max: Object.keys(ze).length - 1,
 					step: 1,
-					value: x,
+					value: y,
 					onChange: e => l((e => `${Math.min(parseInt(e,10)+1,4)}`)(e.target.value), "banEvasionThreshold"),
 					label: H.fbt._("Ban Evasion Protection", null, {
 						hk: "1TrdWv"
 					}),
-					subtext: Je[x]
+					subtext: Ye[y]
 				}), i.a.createElement(Q.a, {
 					className: je.a.sectionHeadingFollowedBySubtext
 				}, H.fbt._("Crowd Control", null, {
@@ -27120,16 +27149,16 @@
 					hk: "3U7kZS"
 				})), i.a.createElement(J.j, {
 					className: je.a.rangeSetting,
-					ticks: Ke,
+					ticks: ze,
 					min: 0,
-					max: Object.keys(Ke).length - 1,
+					max: Object.keys(ze).length - 1,
 					step: 1,
 					value: f,
 					onChange: e => l(e.target.value, "crowdControlLevel"),
 					label: H.fbt._("Comments", null, {
 						hk: "1vRuWQ"
 					}),
-					subtext: ze[f]
+					subtext: Qe[f]
 				}), i.a.createElement(J.p, {
 					indent: !0,
 					on: b,
@@ -27142,27 +27171,27 @@
 					})
 				}), i.a.createElement(J.j, {
 					className: je.a.rangeSetting,
-					ticks: Ke,
+					ticks: ze,
 					min: 0,
-					max: Object.keys(Ke).length - 1,
+					max: Object.keys(ze).length - 1,
 					step: 1,
 					value: g,
 					onChange: e => l(e.target.value, "crowdControlPostLevel"),
 					label: i.a.createElement(i.a.Fragment, null, H.fbt._("Posts", null, {
 						hk: "nW9yu"
 					})),
-					subtext: Qe[g]
-				}), E && i.a.createElement(J.j, {
-					ticks: Ke,
+					subtext: Je[g]
+				}), j && i.a.createElement(J.j, {
+					ticks: ze,
 					min: 0,
-					max: Object.keys(Ke).length - 1,
+					max: Object.keys(ze).length - 1,
 					step: 1,
 					value: h,
 					onChange: e => l(e.target.value, "crowdControlChatLevel"),
 					label: H.fbt._("Chat Posts", null, {
 						hk: "eTeih"
 					}),
-					subtext: ze[h]
+					subtext: Qe[h]
 				}), i.a.createElement(Q.a, {
 					className: je.a.sectionHeadingFollowedBySubtext
 				}, H.fbt._("Discover", null, {
@@ -27187,11 +27216,11 @@
 					subtext: H.fbt._("Allow your community to be in r/all, r/popular, and trending lists where it can be seen by the general Reddit population.", null, {
 						hk: "iH0lY"
 					})
-				}), j && !p && i.a.createElement(J.p, {
-					on: y,
+				}), S && !p && i.a.createElement(J.p, {
+					on: I,
 					onClick: () => l({
-						disabledDiscoveryTypes: Ye((null == _ ? void 0 : _.disabledDiscoveryTypes) || [])
-					}, Ve),
+						disabledDiscoveryTypes: Xe((null == _ ? void 0 : _.disabledDiscoveryTypes) || [])
+					}, Ke),
 					label: H.fbt._("Get recommended to newer redditors", null, {
 						hk: "1HfMHx"
 					}),
@@ -27223,7 +27252,7 @@
 				})))
 			}
 
-			function Ze(e) {
+			function $e(e) {
 				const {
 					settings: t,
 					subredditName: n,
@@ -27288,8 +27317,8 @@
 				})))
 			}
 			const {
-				fbt: $e
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), et = Object(d.c)({
+				fbt: et
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), tt = Object(d.c)({
 				allowChatPostCreation: (e, t) => Object(R.b)(e, t.subredditId),
 				banEvasionProtectionEnabled: T.d.banEvasionProtectionEnabled,
 				isChatPostsCreationEnabled: (e, t) => Object(R.c)(e, t.subredditId),
@@ -27304,7 +27333,7 @@
 				subredditCountrySite: (e, t) => ((e, t) => e.subreddits.countrySiteSettings[t])(e, t.subredditId),
 				subredditCountryEditEnabled: (e, t) => Object(U.g)(e),
 				subredditLanguageEditEnabled: (e, t) => Object(U.h)(e)
-			}), tt = Object(a.b)(et, (e, t) => {
+			}), nt = Object(a.b)(tt, (e, t) => {
 				let {
 					subredditId: n
 				} = t;
@@ -27329,7 +27358,7 @@
 					}
 				}
 			});
-			class nt extends i.a.Component {
+			class st extends i.a.Component {
 				constructor(e) {
 					var t;
 					super(e), t = this, this.saveSettings = () => {
@@ -27349,7 +27378,7 @@
 						let s = !(arguments.length > 2 && void 0 !== arguments[2]) || arguments[2];
 						var r;
 						if (s)
-							if (n === Ve) {
+							if (n === Ke) {
 								const n = null === (r = e) || void 0 === r ? void 0 : r.disabledDiscoveryTypes;
 								if (Array.isArray(n)) {
 									const e = !n.find(e => e === B.o.Onboarding);
@@ -27376,7 +27405,7 @@
 						if (!this.state.settings) return null;
 						switch (this.props.subpageName) {
 							case c.nc.Safety:
-								return i.a.createElement(Xe, e);
+								return i.a.createElement(Ze, e);
 							case c.nc.Notifications:
 								return i.a.createElement(k.a, null, i.a.createElement(C, null, i.a.createElement(j.a, {
 									subredditId: e.subredditId,
@@ -27385,7 +27414,7 @@
 							case c.nc.Posts:
 								return i.a.createElement(qe, e);
 							case c.nc.Wikis:
-								return i.a.createElement(Ze, e);
+								return i.a.createElement($e, e);
 							case c.nc.ContentTag:
 								return i.a.createElement(De, {
 									subreddit: e.subreddit
@@ -27413,12 +27442,12 @@
 					return i.a.createElement(i.a.Fragment, null, this.props.subpageName !== c.nc.ContentTag && i.a.createElement(k.c, null, i.a.createElement(S.l, {
 						onClick: this.saveSettings,
 						"data-redditstyle": !0
-					}, $e._("Save changes", null, {
+					}, et._("Save changes", null, {
 						hk: "8mSp0"
 					}))), this.renderSubpage())
 				}
 			}
-			t.a = tt(Object(I.c)(nt))
+			t.a = nt(Object(I.c)(st))
 		},
 		"./src/reddit/components/CommunityTopics/NumTopicsSelected.tsx": function(e, t, n) {
 			"use strict";
@@ -65921,7 +65950,7 @@
 			}
 			var He = Object(a.b)(Be, e => ({
 					pushUrl: t => e(Object(B.b)(t))
-				}))(Object(g.c)(Object(G.b)(Object(q.b)(Ge)))),
+				}))(Object(g.c)(Object(G.c)(Object(q.b)(Ge)))),
 				qe = n("./src/reddit/pages/ModHub/Header.tsx"),
 				We = n("./src/reddit/pages/ModHub/index.m.less"),
 				Ve = n.n(We);
@@ -74730,4 +74759,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.1e414875a15fb7fd8f0f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.2435d55d80a85ffd1588.js.map
