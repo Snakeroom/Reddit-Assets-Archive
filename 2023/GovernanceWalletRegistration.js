@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.817d55aac90b69842d9f.js
-// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.00eb8bdf6dd997b2008a.js
+// Retrieved at 2/1/2023, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistration"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -640,7 +640,7 @@
 			class y extends a.a.Component {
 				componentDidMount() {
 					this.intervalId = window.setInterval(() => {
-						Object(l.d)() && (this.props.onNextStep(), window.clearInterval(this.intervalId))
+						Object(l.c)() && (this.props.onNextStep(), window.clearInterval(this.intervalId))
 					}, 500)
 				}
 				componentWillUnmount() {
@@ -688,7 +688,7 @@
 				constructor() {
 					super(...arguments), this.state = {
 						clickedInstallButton: !1,
-						isMetaMaskInstalled: Object(l.f)()
+						isMetaMaskInstalled: Object(l.e)()
 					}
 				}
 				render() {
@@ -817,7 +817,7 @@
 								decimals: r.decimals,
 								image: null === (t = null === (e = r.contracts) || void 0 === e ? void 0 : e.unlocked) || void 0 === t ? void 0 : t.image
 							};
-							Object(l.j)(a).then(n)
+							Object(l.i)(a).then(n)
 						} else n()
 					}
 				}, r ? S._("Track Donuts", null, {
@@ -846,13 +846,13 @@
 						})
 					}, this.runVerification = async () => {
 						var e;
-						const t = Object(l.d)();
+						const t = Object(l.c)();
 						if (!t) return void this.props.onError(V.fbt._("Please select an Ethereum wallet in your provider", null, {
 							hk: "25u6on"
 						}));
 						const n = null === (e = this.props.points) || void 0 === e ? void 0 : e.blockchainProvider;
 						if (!n || !n.startsWith("ethereum")) throw new Error("expected Ethereum provider");
-						if (n.split(":")[1] !== Object(l.e)()) {
+						if (n.split(":")[1] !== Object(l.d)()) {
 							const e = Object(D.j)(n);
 							return void this.props.onError(V.fbt._("Please select the {providerName} in MetaMask", [V.fbt._param("providerName", e)], {
 								hk: "2uEOyT"
@@ -863,7 +863,7 @@
 						const a = r.body.payload;
 						let s;
 						try {
-							s = await Object(l.i)(a)
+							s = await Object(l.h)(a)
 						} catch (i) {
 							return console.error(i), void(i.code !== l.a && this.props.onError(i.message || V.fbt._("An error occured while trying to sign the registration message.", null, {
 								hk: "30ALRP"
@@ -1067,7 +1067,7 @@
 					}, this.correlationId = Object(b.a)();
 					const t = Object(w.b)(e.pageLayer);
 					this.state = {
-						activeTab: t && Object(l.f)() ? q.Wallet : q.About
+						activeTab: t && Object(l.e)() ? q.Wallet : q.About
 					}
 				}
 				async componentDidMount() {
@@ -1460,25 +1460,23 @@
 		},
 		"./src/reddit/helpers/governance/ethereum.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "c", (function() {
-				return a
-			})), n.d(t, "f", (function() {
+			n.d(t, "e", (function() {
 				return s
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "c", (function() {
 				return o
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "d", (function() {
 				return i
 			})), n.d(t, "b", (function() {
 				return c
 			})), n.d(t, "a", (function() {
 				return d
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "f", (function() {
 				return b
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "g", (function() {
 				return h
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "h", (function() {
 				return v
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "i", (function() {
 				return f
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
@@ -1510,7 +1508,7 @@
 			}
 			const d = 4001;
 			async function l(e, t, r, s) {
-				const [o, i] = await Promise.all([n.e("vendors~Avatar~CryptoLibEthers~GovernanceTransferPointsModal~MarketplaceClaimModal~MarketplaceInFeed~1befd72a").then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers), t.then(e => e.abi)]);
+				const [o, i] = await Promise.all([n.e("vendors~Avatar~CryptoLibEthers~GovernanceTransferPointsModal~MarketplaceClaimModal~MarketplaceInFeed~1ea7787c").then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers), t.then(e => e.abi)]);
 				await c();
 				const d = new o.providers.Web3Provider(a()).getSigner(),
 					l = new o.Contract(e, i, d),
@@ -1539,7 +1537,7 @@
 			};
 			const m = 1;
 			async function b(e, t, r, a, s) {
-				const o = await n.e("vendors~Avatar~CryptoLibEthers~GovernanceTransferPointsModal~MarketplaceClaimModal~MarketplaceInFeed~1befd72a").then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers),
+				const o = await n.e("vendors~Avatar~CryptoLibEthers~GovernanceTransferPointsModal~MarketplaceClaimModal~MarketplaceInFeed~1ea7787c").then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers),
 					{
 						BigNumber: i
 					} = o,
@@ -1941,4 +1939,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.817d55aac90b69842d9f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.00eb8bdf6dd997b2008a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.922d835e88f491a23bf7.js
-// Retrieved at 2/1/2023, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.38a89e7323d8a26bc56c.js
+// Retrieved at 2/1/2023, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -579,7 +579,7 @@
 				R = n.n(G),
 				D = n("./node_modules/fbt/lib/FbtPublic.js");
 			const V = Object(T.c)({
-				isMainnetEnabled: j.b,
+				isMainnetEnabled: j.a,
 				points: (e, t) => {
 					let {
 						subredditId: n
@@ -1007,7 +1007,7 @@
 					subredditId: s,
 					tabIndex: a,
 					onChange: r
-				} = e, [d, u] = Object(o.useState)(n || ""), m = Object(o.useRef)(d), [p, h] = Object(o.useState)(Ge.Empty), b = Object(Oe.a)(), f = Object(l.e)(j.b), v = () => Re(f, m, s, b, e => {
+				} = e, [d, u] = Object(o.useState)(n || ""), m = Object(o.useRef)(d), [p, h] = Object(o.useState)(Ge.Empty), b = Object(Oe.a)(), f = Object(l.e)(j.a), v = () => Re(f, m, s, b, e => {
 					h(e), e === Ge.Valid && r(m.current, !0)
 				}), x = Object(o.useMemo)(() => i()(v, 300), [m, s, b, h, r, v]);
 				return Object(o.useEffect)(() => {
@@ -1336,7 +1336,7 @@
 				}
 			}
 			const et = Object(T.c)({
-					isMainnetEnabled: j.b,
+					isMainnetEnabled: j.a,
 					currentWallet: (e, t) => {
 						const n = Object(b.s)(e, t);
 						if (n) return Object(C.a)(e, {
@@ -2040,25 +2040,17 @@
 		},
 		"./src/reddit/selectors/experiments/mainnet.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "b", (function() {
+			n.d(t, "a", (function() {
 				return r
-			})), n.d(t, "a", (function() {
-				return i
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				a = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const r = e => {
-					return Object(a.c)(e, {
-						experimentEligibilitySelector: a.a,
-						experimentName: s.te
-					}) === s.Id
-				},
-				i = e => {
-					return Object(a.c)(e, {
-						experimentEligibilitySelector: a.a,
-						experimentName: s.qe
-					}) === s.Id
-				}
+				return Object(a.c)(e, {
+					experimentEligibilitySelector: a.a,
+					experimentName: s.te
+				}) === s.Id
+			}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
 			"use strict";
@@ -2114,4 +2106,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.922d835e88f491a23bf7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.38a89e7323d8a26bc56c.js.map

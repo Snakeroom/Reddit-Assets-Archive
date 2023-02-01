@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.996ddb5f9c818f4ec667.js
-// Retrieved at 1/5/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.ee315b9481c20e915827.js
+// Retrieved at 2/1/2023, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBlockchainCheckoutModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -205,7 +205,7 @@
 						if (!n) throw new Error("could not find subscription contract address");
 						this.setState({
 							purchasePending: !0
-						}), Object(y.h)(n, this.props.wallet.publicAddress, this.state.numMonths).then(() => {
+						}), Object(y.g)(n, this.props.wallet.publicAddress, this.state.numMonths).then(() => {
 							this.pollForMembership()
 						}).catch(e => {
 							this.props.onError(e.message), this.setState({
@@ -788,25 +788,23 @@
 		},
 		"./src/reddit/helpers/governance/ethereum.ts": function(e, t, s) {
 			"use strict";
-			s.d(t, "c", (function() {
-				return r
-			})), s.d(t, "f", (function() {
+			s.d(t, "e", (function() {
 				return a
-			})), s.d(t, "d", (function() {
+			})), s.d(t, "c", (function() {
 				return o
-			})), s.d(t, "e", (function() {
+			})), s.d(t, "d", (function() {
 				return i
 			})), s.d(t, "b", (function() {
 				return c
 			})), s.d(t, "a", (function() {
 				return d
-			})), s.d(t, "g", (function() {
+			})), s.d(t, "f", (function() {
 				return p
-			})), s.d(t, "h", (function() {
+			})), s.d(t, "g", (function() {
 				return b
-			})), s.d(t, "i", (function() {
+			})), s.d(t, "h", (function() {
 				return f
-			})), s.d(t, "j", (function() {
+			})), s.d(t, "i", (function() {
 				return v
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
@@ -838,7 +836,7 @@
 			}
 			const d = 4001;
 			async function l(e, t, n, a) {
-				const [o, i] = await Promise.all([s.e("vendors~Avatar~CryptoLibEthers~GovernanceTransferPointsModal~MarketplaceClaimModal~MarketplaceInFeed~1befd72a").then(s.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers), t.then(e => e.abi)]);
+				const [o, i] = await Promise.all([s.e("vendors~Avatar~CryptoLibEthers~GovernanceTransferPointsModal~MarketplaceClaimModal~MarketplaceInFeed~1ea7787c").then(s.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers), t.then(e => e.abi)]);
 				await c();
 				const d = new o.providers.Web3Provider(r()).getSigner(),
 					l = new o.Contract(e, i, d),
@@ -867,7 +865,7 @@
 			};
 			const m = 1;
 			async function p(e, t, n, r, a) {
-				const o = await s.e("vendors~Avatar~CryptoLibEthers~GovernanceTransferPointsModal~MarketplaceClaimModal~MarketplaceInFeed~1befd72a").then(s.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers),
+				const o = await s.e("vendors~Avatar~CryptoLibEthers~GovernanceTransferPointsModal~MarketplaceClaimModal~MarketplaceInFeed~1ea7787c").then(s.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers),
 					{
 						BigNumber: i
 					} = o,
@@ -1092,4 +1090,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.996ddb5f9c818f4ec667.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.ee315b9481c20e915827.js.map
