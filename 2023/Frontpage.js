@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.c10598e0b47c9a8c7277.js
-// Retrieved at 1/30/2023, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.1a97eb2275211d70387a.js
+// Retrieved at 2/1/2023, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -687,7 +687,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(h.gg)(p),
+						includeInterestTopics: !!p && !Object(h.hg)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: v && !(null === (n = null === (a = e.user.account) || void 0 === a ? void 0 : a.karma) || void 0 === n ? void 0 : n.total),
@@ -5710,7 +5710,7 @@
 				const p = Object(c.e)(e => e.subreddits.survey[a]),
 					h = Object(c.e)(e => e.subreddits.progressModule[a]),
 					b = Object(c.e)(m.a),
-					g = b !== l.Ie.NewModule;
+					g = b !== l.Je.NewModule;
 				return (null === (s = null == h ? void 0 : h.cards) || void 0 === s ? void 0 : s.length) > 0 && g ? r.a.createElement(u, {
 					closeModuleOnMount: !!t && t !== d.g.Large,
 					subredditId: a,
@@ -5800,16 +5800,20 @@
 		"./src/reddit/selectors/experiments/econ/marketplace.ts": function(e, t, a) {
 			"use strict";
 			a.d(t, "a", (function() {
-				return r
+				return c
+			})), a.d(t, "b", (function() {
+				return i
 			}));
 			var n = a("./src/reddit/constants/experiments.ts"),
-				s = a("./src/reddit/helpers/chooseVariant/index.ts");
-			const r = e => {
-				return !(Object(s.c)(e, {
-					experimentEligibilitySelector: s.a,
-					experimentName: n.re
-				}) === n.Id)
-			}
+				s = a("./src/reddit/helpers/chooseVariant/index.ts"),
+				r = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
+			const c = e => {
+					return !(Object(s.c)(e, {
+						experimentEligibilitySelector: s.a,
+						experimentName: n.re
+					}) === n.Id)
+				},
+				i = Object(r.a)(n.se)
 		},
 		"./src/reddit/selectors/experiments/econLeaderboards.ts": function(e, t, a) {
 			"use strict";
@@ -5826,7 +5830,7 @@
 						experimentEligibilitySelector: r.S,
 						experimentName: n.qd
 					});
-					return !(!t || Object(n.gg)(t))
+					return !(!t || Object(n.hg)(t))
 				},
 				i = e => {
 					return Object(s.c)(e, {
@@ -5944,4 +5948,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.c10598e0b47c9a8c7277.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.1a97eb2275211d70387a.js.map

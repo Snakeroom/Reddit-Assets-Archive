@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.5b012d67ec3d5a2e436c.js
-// Retrieved at 1/30/2023, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.9cce0a61bd5ad8f3f8b0.js
+// Retrieved at 2/1/2023, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, o) {
@@ -1195,7 +1195,7 @@
 						className: j.a.embedIcon
 					}))
 				},
-				g = e => {
+				y = e => {
 					let {
 						onCrosspost: t
 					} = e;
@@ -1210,7 +1210,7 @@
 						className: j.a.crosspostIcon
 					}))
 				},
-				y = r.a.memo(e => {
+				g = r.a.memo(e => {
 					const t = Object(c.d)(),
 						o = Object(v.a)(),
 						i = Object(c.e)(t => Object(w.b)(e.dropdownId)(t)),
@@ -1221,7 +1221,7 @@
 							}))
 						}, [t, e.dropdownId]),
 						C = !e.subredditType || e.subredditType === O.g.Public,
-						y = !!e.post && e.post.isCrosspostable && !e.post.isSponsored,
+						g = !!e.post && e.post.isCrosspostable && !e.post.isSponsored,
 						R = !m,
 						I = Object(n.useCallback)(e => {
 							t(Object(a.e)(e)), o((() => e => ({
@@ -1258,7 +1258,7 @@
 					}, r.a.createElement(h.a, {
 						name: "link_post",
 						className: j.a.linkIcon
-					})), y && r.a.createElement(g, {
+					})), g && r.a.createElement(y, {
 						onCrosspost: () => {
 							e.sendEventWithName("share_crosspost"), e.post && window.open(`${_.b}?source_id=${e.post.id}`, "_blank")
 						}
@@ -1270,7 +1270,7 @@
 						onShare: I
 					})))
 				});
-			t.a = y
+			t.a = g
 		},
 		"./src/reddit/components/ViewReportsDropdown/Loader.ts": function(e, t, o) {
 			"use strict";
@@ -2125,13 +2125,13 @@
 				c = o("./src/reddit/models/Post/index.ts"),
 				i = o("./src/reddit/selectors/posts.ts");
 			const d = e => Object(r.c)(e, {
-					experimentName: n.Ze,
+					experimentName: n.af,
 					experimentEligibilitySelector: r.a
 				}),
-				a = (e, t) => (t === n.gf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(c.A)(e),
+				a = (e, t) => (t === n.hf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(c.A)(e),
 				l = Object(s.a)(i.G, d, (e, t) => a(e, t));
 			Object(s.a)((e, t) => t, d, (e, t) => a(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.5b012d67ec3d5a2e436c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.9cce0a61bd5ad8f3f8b0.js.map

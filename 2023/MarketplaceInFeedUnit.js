@@ -1,11 +1,11 @@
-// https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.dc08411dd75925bab339.js
-// Retrieved at 1/30/2023, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.85131d1e3969b506dbb7.js
+// Retrieved at 2/1/2023, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MarketplaceInFeedUnit"], {
 		"./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return O
+				return b
 			}));
 			var n = s("./src/config.ts"),
 				r = s("./src/lib/env/index.ts"),
@@ -13,41 +13,46 @@
 				a = s("./node_modules/react-redux/es/index.js"),
 				o = s("./src/reddit/endpoints/governance/crypto.ts"),
 				i = s("./src/reddit/hooks/useTracking.ts"),
-				d = s("./src/reddit/selectors/experiments/econ/paymentsSandbox.ts"),
-				l = s("./src/reddit/selectors/telemetry.ts"),
-				u = s("./src/reddit/selectors/user.ts");
-			const m = !(Object(r.c)() || Object(r.b)()),
-				p = {
+				d = s("./src/reddit/selectors/experiments/econ/marketplace.ts"),
+				l = s("./src/reddit/selectors/experiments/econ/paymentsSandbox.ts"),
+				u = s("./src/reddit/selectors/telemetry.ts"),
+				m = s("./src/reddit/selectors/user.ts");
+			const p = !(Object(r.c)() || Object(r.b)()),
+				O = {
 					GRAPHQL_URL: n.a.gqlUrl,
-					IS_DEVELOPMENT: m,
-					IS_PRODUCTION: !m,
+					IS_DEVELOPMENT: p,
+					IS_PRODUCTION: !p,
 					MOCKING_ENABLED: !1,
 					SNOOVATAR_BASE_URL: n.a.snoovatarUrl,
 					SNOOVATAR_API_URL: `${n.a.snoovatarUrl}/api`
 				},
-				O = () => {
-					const e = Object(a.e)(d.a),
-						t = Object(a.e)(e => e.user.session),
-						s = t ? t.accessToken : "",
-						r = t ? new Date(t.expires).getTime() : 1,
-						O = Object(a.e)(u.fb),
-						b = Object(i.a)(),
-						j = m ? o.a.Rinkeby : o.a.Ethereum,
-						_ = Object(c.useMemo)(() => ({
+				b = () => {
+					const e = Object(a.e)(l.a),
+						t = Object(a.e)(d.b),
+						s = Object(a.e)(e => e.user.session),
+						r = s ? s.accessToken : "",
+						b = s ? new Date(s.expires).getTime() : 1,
+						j = Object(a.e)(m.fb),
+						_ = Object(i.a)(),
+						k = p ? o.a.Rinkeby : o.a.Ethereum,
+						E = Object(c.useMemo)(() => ({
 							headers: {
-								Authorization: `Bearer ${s}`
+								Authorization: `Bearer ${r}`
 							},
-							expiration: r
-						}), [s, r]),
+							expiration: b
+						}), [r, b]),
 						f = {
-							...p,
+							...O,
 							STRIPE_API_KEY: n.a.stripe.apiKey(e),
-							ACCESS_TOKEN: s,
-							BLOCKCHAIN_PROVIDER: j
+							ACCESS_TOKEN: r,
+							BLOCKCHAIN_PROVIDER: k,
+							OVERRIDES: t ? {
+								NO_VAULT: !0
+							} : {}
 						},
-						k = Object(c.useCallback)(e => {
-							b(t => {
-								const s = l.o(t);
+						x = Object(c.useCallback)(e => {
+							_(t => {
+								const s = u.o(t);
 								return {
 									...s,
 									...e,
@@ -59,13 +64,13 @@
 									}
 								}
 							})
-						}, [b]);
+						}, [_]);
 					return Object(c.useMemo)(() => ({
-						authHeaders: _,
+						authHeaders: E,
 						config: f,
-						isNightMode: O,
-						sendEvent: k
-					}), [_, f, O, k])
+						isNightMode: j,
+						sendEvent: x
+					}), [E, f, j, x])
 				}
 		},
 		"./src/reddit/components/Econ/Marketplace/InFeedUnit/index.m.less": function(e, t, s) {
@@ -95,53 +100,53 @@
 				b = s("./src/reddit/hooks/useLocalStorage.ts"),
 				j = s("./src/reddit/hooks/usePreloadModal.ts"),
 				_ = s("./src/reddit/hooks/useTracking.ts"),
-				f = s("./src/reddit/selectors/gold/marketplace/claimFlow.ts"),
-				k = s("./src/reddit/components/Econ/Marketplace/InFeedUnit/ConfirmDismissModal.tsx"),
-				E = s("./src/reddit/components/Econ/Marketplace/InFeedUnit/index.m.less"),
-				x = s.n(E);
+				k = s("./src/reddit/selectors/gold/marketplace/claimFlow.ts"),
+				E = s("./src/reddit/components/Econ/Marketplace/InFeedUnit/ConfirmDismissModal.tsx"),
+				f = s("./src/reddit/components/Econ/Marketplace/InFeedUnit/index.m.less"),
+				x = s.n(f);
 			const C = e => {
 				let {
 					layout: t
 				} = e;
 				const s = Object(i.d)(),
-					E = Object(_.a)(),
-					C = Object(i.e)(f.a),
-					[g, M] = Object(a.useState)(!1),
-					[A, I] = Object(a.useState)(!1);
+					f = Object(_.a)(),
+					C = Object(i.e)(k.a),
+					[g, A] = Object(a.useState)(!1),
+					[M, I] = Object(a.useState)(!1);
 				Object(j.a)(l.a);
 				const [L, h] = Object(b.a)("marketplaceClaimInFeedUnitDismissed", !1), [v, N] = Object(b.a)("marketplaceClaimInFeedUnitLoadCount", 0), U = Object(a.useRef)(v), D = U.current % 2 == 0;
 				if (Object(a.useEffect)(() => {
 						L || N(U.current + 1)
-					}, [N, U, E, D, L]), !(null == C ? void 0 : C.id) || L || !D) return null;
-				const S = t !== p.g.Large;
+					}, [N, U, f, D, L]), !(null == C ? void 0 : C.id) || L || !D) return null;
+				const R = t !== p.g.Large;
 				return o.a.createElement(o.a.Fragment, null, o.a.createElement(r.a, {
 					onChange: e => {
-						A || e.intersectionRatio < .75 || (E(Object(O.j)()), I(!0))
+						M || e.intersectionRatio < .75 || (f(Object(O.j)()), I(!0))
 					},
 					threshold: .75
 				}, o.a.createElement("div", {
 					"data-testid": "marketplace-claim-infeed-unit",
 					className: Object(c.a)(x.a.container, {
-						[x.a.isNotLarge]: S
+						[x.a.isNotLarge]: R
 					})
 				}, o.a.createElement(u.a, null, o.a.createElement(n.e, {
 					className: Object(c.a)(x.a.feedUnit, {
-						[x.a.isNotLarge]: S
+						[x.a.isNotLarge]: R
 					}),
 					onClickCta: () => {
-						E(Object(O.d)()), s(Object(d.h)(m.a.ECON_MARKETPLACE_CLAIM, {
+						f(Object(O.d)()), s(Object(d.h)(m.a.ECON_MARKETPLACE_CLAIM, {
 							claimId: C.id
 						}))
 					},
-					onClose: () => M(!0),
+					onClose: () => A(!0),
 					title: C.title,
 					description: C.description,
 					ctaText: C.buttonCtaText,
-					isNotCardLayout: S
-				})))), g && o.a.createElement(k.a, {
-					onGoBack: () => M(!1),
+					isNotCardLayout: R
+				})))), g && o.a.createElement(E.a, {
+					onGoBack: () => A(!1),
 					onDismiss: () => {
-						E(Object(O.e)()), h(!0)
+						f(Object(O.e)()), h(!0)
 					}
 				}))
 			};
@@ -201,4 +206,4 @@
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.dc08411dd75925bab339.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.85131d1e3969b506dbb7.js.map

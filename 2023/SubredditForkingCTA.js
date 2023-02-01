@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.e50d0e79d91bb6440da5.js
-// Retrieved at 1/30/2023, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.74225f2bb4f5c4d54fd6.js
+// Retrieved at 2/1/2023, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditForkingCTA"], {
 		"./node_modules/lodash/xorWith.js": function(t, _, e) {
@@ -180,9 +180,9 @@
 			})), e.d(_, "u", (function() {
 				return F
 			})), e.d(_, "r", (function() {
-				return A
-			})), e.d(_, "a", (function() {
 				return M
+			})), e.d(_, "a", (function() {
+				return A
 			})), e.d(_, "s", (function() {
 				return S
 			})), e.d(_, "c", (function() {
@@ -224,8 +224,8 @@
 				T = n.a.div("ModalMain", l.a),
 				C = n.a.textarea("TextArea", l.a),
 				F = n.a.wrapped(a.l, "WarningButton", l.a),
-				A = n.a.wrapped(a.l, "PrimaryButton", l.a),
-				M = n.a.wrapped(a.o, "CancelButton", l.a),
+				M = n.a.wrapped(a.l, "PrimaryButton", l.a),
+				A = n.a.wrapped(a.o, "CancelButton", l.a),
 				S = n.a.wrapped(a.r, "RemoveButton", l.a),
 				B = t => {
 					let {
@@ -257,10 +257,10 @@
 				m = e("./src/reddit/helpers/chooseVariant/index.ts"),
 				p = e("./src/reddit/selectors/experiments/utils.ts");
 			const b = Object(l.a)(t => Object(m.c)(t, {
-					experimentName: u.Af,
+					experimentName: u.Bf,
 					experimentEligibilitySelector: m.a
 				}), p.a),
-				x = Object(l.a)(b, t => t === u.Gf.Enabled);
+				x = Object(l.a)(b, t => t === u.Hf.Enabled);
 			var f = e("./src/reddit/selectors/posts.ts"),
 				h = e("./src/reddit/components/CreateCommunityButton/index.tsx"),
 				y = e("./src/reddit/components/TrackingHelper/index.tsx");
@@ -1341,4 +1341,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.e50d0e79d91bb6440da5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.74225f2bb4f5c4d54fd6.js.map

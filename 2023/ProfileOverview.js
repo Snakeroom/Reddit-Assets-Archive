@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.39cac34ac4d073788d70.js
-// Retrieved at 1/30/2023, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.3b7cb9e18e0a9e04a02f.js
+// Retrieved at 2/1/2023, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./src/lib/LiveChatActiveUsers/index.m.less": function(e, t, s) {
@@ -3868,7 +3868,7 @@
 					let {
 						recommendedCommunities: t,
 						numberOfVisibleItems: s,
-						variant: o = be.lf.Minimalist
+						variant: o = be.mf.Minimalist
 					} = e;
 					return n.a.createElement("ul", null, t.map((e, t) => {
 						let {
@@ -3900,7 +3900,7 @@
 							className: "text-[14px] leading-[16px] font-semibold text-neutral-content-strong truncate"
 						}, `r/${i}`), n.a.createElement("div", {
 							className: "mt-[4px] text-[12px] leading-[14px] font-normal text-neutral-content-weak truncate"
-						}, o === be.lf.Minimalist && l, (o === be.lf.HotnessSignals || o === be.lf.Description) && n.a.createElement("div", {
+						}, o === be.mf.Minimalist && l, (o === be.mf.HotnessSignals || o === be.mf.Description) && n.a.createElement("div", {
 							className: "flex gap-x-xs justify-start items-center"
 						}, n.a.createElement(fe, {
 							seed: t
@@ -4088,7 +4088,7 @@
 			var Ke = s("./src/reddit/selectors/experiments/index.ts");
 
 			function qe(e) {
-				return e === be.lf.Minimalist || e === be.lf.Description || e === be.lf.HotnessSignals
+				return e === be.mf.Minimalist || e === be.mf.Description || e === be.mf.HotnessSignals
 			}
 			const He = e => {
 				const t = Object(Ue.c)(e, {
@@ -4261,7 +4261,7 @@
 						showRealtimeUpdateAnimation: $e,
 						isUpdatedContent: tt,
 						isNightMode: st
-					} = e, ot = Object(O.a)(), nt = !!e.redditStyle || !!e["data-redditstyle"], at = nt ? void 0 : C, it = Object(l.a)(Oe), dt = ge && it, ct = Object(d.a)(Oe), lt = Object(c.a)(Oe), mt = Object(G.c)(Pe), ut = Object(W.a)(Pe), pt = !!Pe.media && Pe.media.type === g.o.RTJSON, bt = Ge && pt, ht = s ? s - Z.a : void 0, xt = !!Pe.recommendationContext, ft = !(ie && le || ue) || xt && le, vt = (e => e === be.bf.OnlyTitles)(we) && !Object(Ie.a)(Pe), Ot = (e => e === be.bf.MediumHeight)(we) && !Object(Ie.a)(Pe), gt = (e => {
+					} = e, ot = Object(O.a)(), nt = !!e.redditStyle || !!e["data-redditstyle"], at = nt ? void 0 : C, it = Object(l.a)(Oe), dt = ge && it, ct = Object(d.a)(Oe), lt = Object(c.a)(Oe), mt = Object(G.c)(Pe), ut = Object(W.a)(Pe), pt = !!Pe.media && Pe.media.type === g.o.RTJSON, bt = Ge && pt, ht = s ? s - Z.a : void 0, xt = !!Pe.recommendationContext, ft = !(ie && le || ue) || xt && le, vt = (e => e === be.cf.OnlyTitles)(we) && !Object(Ie.a)(Pe), Ot = (e => e === be.cf.MediumHeight)(we) && !Object(Ie.a)(Pe), gt = (e => {
 						var t;
 						const {
 							post: s,
@@ -8905,14 +8905,14 @@
 						experimentEligibilitySelector: n.a,
 						experimentName: o.hc
 					});
-					return !(!t || Object(o.gg)(t))
+					return !(!t || Object(o.hg)(t))
 				},
 				a = e => {
 					const t = Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
 						experimentName: o.Ub
 					});
-					return !(!t || Object(o.gg)(t))
+					return !(!t || Object(o.hg)(t))
 				}
 		},
 		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, s) {
@@ -8969,7 +8969,7 @@
 				a = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(n.gg)(t)
+					return Boolean(t) && !Object(n.hg)(t)
 				},
 				d = Object(o.a)(i, r.d, (e, t) => e && !t)
 		},
@@ -9017,4 +9017,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.39cac34ac4d073788d70.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.3b7cb9e18e0a9e04a02f.js.map
