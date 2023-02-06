@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.36bf63b8ad6a23837a56.js
-// Retrieved at 1/31/2023, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.3bcd791980c0b593bdc1.js
+// Retrieved at 2/6/2023, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -10699,7 +10699,7 @@
 					n && (u && (null === (t = null === (e = b.current) || void 0 === e ? void 0 : e.contentWindow) || void 0 === t || t.postMessage(`openRoom:${u}`, "*")), h && (null === (s = null === (a = b.current) || void 0 === a ? void 0 : a.contentWindow) || void 0 === s || s.postMessage(`openDM:${h}`, "*")))
 				}, [n, u, h]), c.a.useLayoutEffect(() => {
 					const e = e => {
-						var t, n, a, c, r, o, u, h, m;
+						var t, n, a, c, r, o, u, h, m, b;
 						if (e.data === P.LOADED && s(!0), 0 === (null === (n = null === (t = e.data) || void 0 === t ? void 0 : t.indexOf) || void 0 === n ? void 0 : n.call(t, P.NOTIFICATIONS))) {
 							const [, t] = e.data.split(":");
 							d(Object(l.i)(parseInt(t, 10))), d(Object(G.c)())
@@ -10716,7 +10716,7 @@
 							const [, t] = e.data.split(":"), n = Object(D.getRedirectURL)(Object(D.channelUserIdUrl)(t));
 							d(Object(F.b)(n)), d(Object(l.h)("old"))
 						}
-						if (null === (m = e.data) || void 0 === m ? void 0 : m.startsWith(P.OPEN_IMAGE)) {
+						if (null === (b = null === (m = e.data) || void 0 === m ? void 0 : m.startsWith) || void 0 === b ? void 0 : b.call(m, P.OPEN_IMAGE)) {
 							const t = e.data.substring(P.OPEN_IMAGE.length + 1, e.data.length);
 							i(t)
 						}
@@ -19966,4 +19966,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.36bf63b8ad6a23837a56.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.3bcd791980c0b593bdc1.js.map

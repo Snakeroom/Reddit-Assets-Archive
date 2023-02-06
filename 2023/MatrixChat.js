@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MatrixChat.a01046e4e26d887741c5.js
-// Retrieved at 1/31/2023, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MatrixChat.de337965747361c83a7e.js
+// Retrieved at 2/6/2023, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MatrixChat"], {
 		"./src/reddit/components/IFrame/index.m.less": function(e, t, a) {
@@ -169,10 +169,10 @@
 					}
 				}, c.a.createElement(h.a, null)))
 			};
-			var I = a("./src/reddit/hooks/useToast.tsx"),
-				N = a("./src/reddit/selectors/user.ts"),
-				v = a("./src/reddit/components/MatrixChat/Modal/Modal.m.less"),
-				L = a.n(v);
+			var v = a("./src/reddit/hooks/useToast.tsx"),
+				I = a("./src/reddit/selectors/user.ts"),
+				N = a("./src/reddit/components/MatrixChat/Modal/Modal.m.less"),
+				L = a.n(N);
 			const g = e => c.a.createElement("div", {
 				onClick: t => {
 					t.stopPropagation(), e.onClose()
@@ -187,14 +187,14 @@
 				e.CLOSE = "matrix-chat.close", e.MINIMIZE = "matrix-chat.minimize", e.MAXIMIZE = "matrix-chat.maximize", e.LOADED = "matrix-chat.loaded", e.NOTIFICATIONS = "matrix-chat.notifications", e.OPEN_IMAGE = "matrix-chat.open_img_modal"
 			}(A || (A = {}));
 			const y = () => {
-				const [e, t] = c.a.useState(!1), [a, s] = c.a.useState(null), m = c.a.useRef(null), u = Object(r.d)(), b = Object(r.e)(N.k), x = Object(r.e)(p.c), E = Object(r.e)(p.b), h = Object(r.e)(p.d), M = Object(I.a)(), j = E === f.b.CHAT_WITH_USER ? `${x}/user/${h}` : x, C = e => {
+				const [e, t] = c.a.useState(!1), [a, s] = c.a.useState(null), m = c.a.useRef(null), u = Object(r.d)(), b = Object(r.e)(I.k), x = Object(r.e)(p.c), E = Object(r.e)(p.b), h = Object(r.e)(p.d), M = Object(v.a)(), j = E === f.b.CHAT_WITH_USER ? `${x}/user/${h}` : x, C = e => {
 					null == e || e.stopPropagation(), s(null), u(Object(l.c)({
 						state: f.b.CLOSED
 					}))
 				};
 				return c.a.useLayoutEffect(() => {
 					const e = e => {
-						var a, n, c;
+						var a, n, c, r;
 						if (e.data === A.CLOSE && C(), e.data === A.MINIMIZE && u(Object(l.c)({
 								state: f.b.MINIMIZED
 							})), e.data === A.MAXIMIZE && u(Object(l.c)({
@@ -205,7 +205,7 @@
 								count: parseInt(t, 10)
 							}))
 						}
-						if (null === (c = e.data) || void 0 === c ? void 0 : c.startsWith(A.OPEN_IMAGE)) {
+						if (null === (r = null === (c = e.data) || void 0 === c ? void 0 : c.startsWith) || void 0 === r ? void 0 : r.call(c, A.OPEN_IMAGE)) {
 							const t = e.data.substring(A.OPEN_IMAGE.length + 1, e.data.length);
 							s(t)
 						}
@@ -263,4 +263,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MatrixChat.a01046e4e26d887741c5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MatrixChat.de337965747361c83a7e.js.map
