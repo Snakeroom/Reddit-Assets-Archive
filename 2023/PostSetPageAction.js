@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostSetPageAction.883d92df5a6cbec1386d.js
-// Retrieved at 2/7/2023, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostSetPageAction.1dba06d4dbbb4b0b7134.js
+// Retrieved at 2/7/2023, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostSetPageAction"], {
 		"./src/reddit/actions/pages/postSetPage/index.ts": function(e, t, s) {
@@ -98,13 +98,13 @@
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: () => t,
 						experimentName: r.pc
-					}) === r.Id
+					}) === r.Jd
 				},
 				i = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
 						experimentName: r.oc
-					}) === r.Id
+					}) === r.Jd
 				}
 		},
 		"./src/redditGQL/operations/PostSetById.json": function(e) {
@@ -112,4 +112,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPageAction.883d92df5a6cbec1386d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPageAction.1dba06d4dbbb4b0b7134.js.map

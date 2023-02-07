@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.efbba73363db45e35c69.js
-// Retrieved at 2/7/2023, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.7414629004cf8d41cd4c.js
+// Retrieved at 2/7/2023, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, n) {
@@ -1850,15 +1850,15 @@
 			const a = Object(i.a)(c.S, e => !e),
 				d = Object(i.a)(e => Object(o.c)(e, {
 					experimentEligibilitySelector: a,
-					experimentName: r.tf
-				}), e => e === r.Id),
+					experimentName: r.uf
+				}), e => e === r.Jd),
 				l = Object(i.a)(d, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? t : s.a.Off),
 				u = Object(i.a)(l, e => e === s.a.Treatment),
 				m = (e, t) => {
 					const n = l(t());
 					a(t()) && n !== s.a.Off && e.block(e => {
 						if ((e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname))
-							if (n === s.a.Control) Object(o.d)(t(), r.uf, r.M.Control1);
+							if (n === s.a.Control) Object(o.d)(t(), r.vf, r.M.Control1);
 							else if (n === s.a.Treatment) return window.location.href = e.pathname, !1
 					})
 				}
@@ -1871,4 +1871,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.efbba73363db45e35c69.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.7414629004cf8d41cd4c.js.map

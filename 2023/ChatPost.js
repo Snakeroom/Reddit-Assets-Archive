@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.6da753542c527fd1a740.js
-// Retrieved at 2/7/2023, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.dd161cfa7810d992b557.js
+// Retrieved at 2/7/2023, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/backo2/index.js": function(e, t) {
@@ -3747,10 +3747,10 @@
 								subredditId: t.subredditId,
 								text: We
 							})
-						})), e(Object(te.b)({
+						})), e(Object(te.c)({
 							experience: ho.bb.LiveChatReactionEdu,
 							value: !1
-						})), e(Object(te.c)(ho.bb.LiveChatReactionEdu))
+						})), e(Object(te.d)(ho.bb.LiveChatReactionEdu))
 					}
 				})),
 				wo = e => {
@@ -4563,4 +4563,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.6da753542c527fd1a740.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.dd161cfa7810d992b557.js.map

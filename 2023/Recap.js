@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Recap.a30306206bea3d55bf77.js
-// Retrieved at 2/7/2023, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Recap.c129a44633f7b37609e1.js
+// Retrieved at 2/7/2023, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Recap", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, a, t) {
@@ -99,13 +99,13 @@
 			const S = e => Object(C.c)(e, {
 				experimentEligibilitySelector: N.S,
 				experimentName: k.tb
-			}) === k.Id;
+			}) === k.Jd;
 			var y = t("./src/reddit/selectors/experiments/delayDnPermission.ts"),
 				I = t("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts");
 			const x = e => Object(C.c)(e, {
 				experimentName: k.Yb,
 				experimentEligibilitySelector: C.a
-			}) === k.Id;
+			}) === k.Jd;
 			var w = t("./src/reddit/selectors/meta.ts");
 			let R = !1;
 			const T = async (e, a) => {
@@ -2557,4 +2557,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Recap.a30306206bea3d55bf77.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Recap.c129a44633f7b37609e1.js.map

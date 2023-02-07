@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SnoovatarModal.06b0264f6cc094795ad5.js
-// Retrieved at 2/7/2023, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SnoovatarModal.6c250a5661ed247c6b70.js
+// Retrieved at 2/7/2023, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SnoovatarModal"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, r) {
@@ -65,15 +65,15 @@
 					activeDetails: h,
 					activeTab: k,
 					activeMeSubpage: N,
-					shopTabState: I
-				} = r, R = Object(n.useMemo)(() => ({
+					shopTabState: R
+				} = r, C = Object(n.useMemo)(() => ({
 					activeTab: k || void 0,
 					activeMeSubpage: N || void 0,
 					activeDetails: h || void 0,
-					shopTabState: I || void 0
-				}), [h, k, N, I]), C = Object(o.e)(e => !Object(O.S)(e) && Object(m.v)(e));
+					shopTabState: R || void 0
+				}), [h, k, N, R]), I = Object(o.e)(e => !Object(O.S)(e) && Object(m.v)(e));
 				if (!_ || !f) return null;
-				if (C) return a.a.createElement("div", {
+				if (I) return a.a.createElement("div", {
 					className: Object(c.a)(x.a.container, {
 						[x.a.containerExp]: M
 					})
@@ -97,7 +97,7 @@
 						[x.a.containerExp]: M
 					})
 				}, a.a.createElement(s.a, j({}, T, {
-					navState: R,
+					navState: C,
 					isModal: t
 				}), a.a.createElement(s.b, {
 					isModal: t,
@@ -233,10 +233,10 @@
 			const o = e => {
 					return !(Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: s.re
-					}) === s.Id)
+						experimentName: s.se
+					}) === s.Jd)
 				},
-				c = Object(a.a)(s.se)
+				c = Object(a.a)(s.te)
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, r) {
 			"use strict";
@@ -245,9 +245,9 @@
 			}));
 			var s = r("./src/reddit/constants/experiments.ts"),
 				n = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(n.a)(s.rd)
+			const a = Object(n.a)(s.sd)
 		},
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.06b0264f6cc094795ad5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.6c250a5661ed247c6b70.js.map

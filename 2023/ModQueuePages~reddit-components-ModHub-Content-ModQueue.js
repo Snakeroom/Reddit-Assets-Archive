@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.3719768b4cc8e7992546.js
-// Retrieved at 2/7/2023, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.b0d38707ac2e8dde833f.js
+// Retrieved at 2/7/2023, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/actions/modQueue/realtime.ts": function(e, t, s) {
@@ -1953,7 +1953,7 @@
 			const F = e => Object(D.c)(e, {
 				experimentEligibilitySelector: A.S,
 				experimentName: L.Wb
-			}) === L.Id;
+			}) === L.Jd;
 			var M = s("./src/reddit/components/ModQueueList/SortByNumReportsTooltip.m.less"),
 				B = s.n(M);
 			const z = e => {
@@ -3378,4 +3378,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.3719768b4cc8e7992546.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.b0d38707ac2e8dde833f.js.map

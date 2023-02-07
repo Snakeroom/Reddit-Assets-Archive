@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HappeningNow.0aa4f9e1f4f8a1101061.js
-// Retrieved at 2/7/2023, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HappeningNow.0d31e7f13eb93b6eabeb.js
+// Retrieved at 2/7/2023, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HappeningNow"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2238,7 +2238,7 @@
 							{
 								H: r,
 								D: a
-							} = W(e.a),
+							} = J(e.a),
 							{
 								c = []
 							} = e;
@@ -2382,7 +2382,7 @@
 						key: n
 					}, t) : t, r)
 				},
-				W = e => {
+				J = e => {
 					switch (e) {
 						case m.f:
 							return {
@@ -2513,12 +2513,12 @@
 						rtJsonElementProps: o
 					});
 					switch (a) {
-						case b.If.SmIcon:
+						case b.Jf.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: r,
 								rtJsonElementProps: o
 							});
-						case b.If.SmIconHc:
+						case b.Jf.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: r,
 								isHoverable: !0,
@@ -3088,8 +3088,8 @@
 				U = n("./src/reddit/components/Econ/Audio/SpeakerRings/SpeakerRingInner.tsx"),
 				V = n("./src/reddit/components/Econ/Audio/SpeakerRings/SpeakerRingMiddle.tsx"),
 				G = n("./src/reddit/components/Econ/Audio/SpeakerRings/SpeakerRingOuter.tsx"),
-				W = n("./src/reddit/components/HappeningNow/Post/LiveRing/index.m.less"),
-				J = n.n(W);
+				J = n("./src/reddit/components/HappeningNow/Post/LiveRing/index.m.less"),
+				W = n.n(J);
 			var Y = e => {
 					let {
 						id: t,
@@ -3097,18 +3097,18 @@
 						isAnimated: r = !1
 					} = e;
 					return a.a.createElement("div", {
-						className: Object(i.a)(J.a.speakerRingContainer, n)
+						className: Object(i.a)(W.a.speakerRingContainer, n)
 					}, a.a.createElement(U.a, {
 						ringId: t,
-						className: Object(i.a)(J.a.speakerRingInner, {
-							[J.a.animatedRing]: r
+						className: Object(i.a)(W.a.speakerRingInner, {
+							[W.a.animatedRing]: r
 						})
 					}), r && a.a.createElement(a.a.Fragment, null, a.a.createElement(V.a, {
 						ringId: t,
-						className: J.a.speakerRingMiddle
+						className: W.a.speakerRingMiddle
 					}), a.a.createElement(G.a, {
 						ringId: t,
-						className: J.a.speakerRingOuter
+						className: W.a.speakerRingOuter
 					})))
 				},
 				Z = n("./src/reddit/components/SubredditIcon/index.tsx");
@@ -3471,8 +3471,8 @@
 				}, n))
 			};
 
-			function We() {
-				return (We = Object.assign || function(e) {
+			function Je() {
+				return (Je = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -3480,7 +3480,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var Je = e => a.a.createElement("svg", We({
+			var We = e => a.a.createElement("svg", Je({
 					viewBox: "0 0 274 112",
 					fill: "none",
 					xmlns: "http://www.w3.org/2000/svg"
@@ -3698,7 +3698,7 @@
 						alt: r.fbt._("Snoo sitting on a sofa with popcorn", null, {
 							hk: "1Rm16Z"
 						})
-					}), a.a.createElement(Je, {
+					}), a.a.createElement(We, {
 						className: Ze.a.background
 					}), a.a.createElement("h2", {
 						className: Ze.a.header
@@ -3940,12 +3940,12 @@
 				l = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: r.Cf
+						experimentName: r.Df
 					}) || ""
 				},
 				c = e => {
 					const t = l(e);
-					return t === r.If.SmIcon || t === r.If.SmIconHc
+					return t === r.Jf.SmIcon || t === r.Jf.SmIconHc
 				},
 				d = (e, t) => {
 					let {
@@ -3974,4 +3974,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.0aa4f9e1f4f8a1101061.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.0d31e7f13eb93b6eabeb.js.map

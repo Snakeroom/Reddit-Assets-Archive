@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.7ef239df907854e7f551.js
-// Retrieved at 2/7/2023, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.c2c3938271b5e8b119df.js
+// Retrieved at 2/7/2023, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1852,10 +1852,10 @@
 				K = n("./src/reddit/components/CommentCreation/getCancelModalId.ts"),
 				V = n("./src/realtime/GQLSubscription/async.tsx"),
 				X = n("./src/reddit/components/UsersCountIndicator/constants.ts"),
-				G = n("./src/reddit/constants/componentSizes.ts"),
-				Z = n("./src/reddit/constants/componentTestIds.ts"),
-				Q = n("./src/reddit/selectors/activeModalId.ts"),
-				J = n("./src/reddit/selectors/comments.ts"),
+				Z = n("./src/reddit/constants/componentSizes.ts"),
+				G = n("./src/reddit/constants/componentTestIds.ts"),
+				J = n("./src/reddit/selectors/activeModalId.ts"),
+				Q = n("./src/reddit/selectors/comments.ts"),
 				Y = n("./src/reddit/selectors/editorContent.ts"),
 				$ = n("./src/reddit/selectors/experiments/typingIndicators.ts"),
 				ee = n("./src/reddit/actions/modal.ts"),
@@ -1880,10 +1880,10 @@
 				be = 8,
 				_e = 16,
 				ge = Object(u.b)(() => Object(m.c)({
-					activeModalId: Q.a,
+					activeModalId: J.a,
 					userName: e => e.user.account ? Object(se.e)(e.user.account) : "",
 					pending: (e, t) => e.features.comments.submit.pending[t.draftKey],
-					draft: J.i,
+					draft: Q.i,
 					isConverting: (e, t) => Object(Y.a)(e, t.draftKey),
 					isTypingIndicatorsWriteTestEnabled: (e, t) => !!t.isTopLevelComment && Object($.d)(e)
 				}), (e, t) => ({
@@ -1898,7 +1898,7 @@
 						isUserTyping: !1
 					}), X.c), this.detectBreakout = () => {
 						if (!this.wrapperEl || !this.wrapperEl.parentElement || this.props.isTopLevelComment) return;
-						const e = this.wrapperEl.parentElement.getBoundingClientRect().width < G.c,
+						const e = this.wrapperEl.parentElement.getBoundingClientRect().width < Z.c,
 							t = this.getWrapperHeight();
 						e === this.state.breakOut && t === this.state.wrapperHeight || w.a.write(() => {
 							this.setState({
@@ -2019,7 +2019,7 @@
 				getWrapperHeight() {
 					if (!this.textAreaRef) return;
 					const e = Object(l.findDOMNode)(this.textAreaRef);
-					return e instanceof Element ? e.getBoundingClientRect().height + be + _e + G.n : void 0
+					return e instanceof Element ? e.getBoundingClientRect().height + be + _e + Z.n : void 0
 				}
 				render() {
 					const {
@@ -2051,7 +2051,7 @@
 						isUserTyping: B
 					} = this.state, P = Object(K.a)(l), L = d.draftType === oe.c.edit;
 					return c.a.createElement("div", {
-						"data-test-id": Z.b,
+						"data-test-id": G.b,
 						className: Object(H.a)(ie.a.Wrapper, s, {
 							[ie.a.isTopLevelComment]: O,
 							[ie.a.mExpanded]: j,
@@ -2442,17 +2442,17 @@
 			}
 			var V = n("./src/reddit/selectors/comments.ts"),
 				X = n("./src/reddit/selectors/experiments/mediaInComments.ts"),
-				G = n("./src/lib/constants/index.ts");
+				Z = n("./src/lib/constants/index.ts");
 
-			function Z(e) {
+			function G(e) {
 				let {
 					isImageUploadEnabled: t,
 					isGifUploadEnabled: n
 				} = e, o = [];
-				return t && (o = Array.from(G.c)), n && (o = [...o, ...Array.from(G.a)]), o
+				return t && (o = Array.from(Z.c)), n && (o = [...o, ...Array.from(Z.a)]), o
 			}
-			var Q = n("./src/reddit/hooks/useTracking.ts"),
-				J = n("./src/reddit/selectors/experiments/imageComment.ts"),
+			var J = n("./src/reddit/hooks/useTracking.ts"),
+				Q = n("./src/reddit/selectors/experiments/imageComment.ts"),
 				Y = n("./src/reddit/components/RichTextEditor/Toolbar/CommentToolbar.m.less"),
 				$ = n.n(Y),
 				ee = n("./src/reddit/components/RichTextEditor/Toolbar/MediaInputButton/index.tsx");
@@ -2484,17 +2484,17 @@
 					C = Object(a.e)(e => void 0 !== E && ne(e, {
 						subredditId: E
 					})) && g,
-					k = Object(a.e)(e => Object(J.d)(e, {
+					k = Object(a.e)(e => Object(Q.d)(e, {
 						subredditId: E
 					})),
-					w = Object(a.e)(e => Object(J.b)(e, {
+					w = Object(a.e)(e => Object(Q.b)(e, {
 						subredditId: E
 					})),
 					j = k || w,
-					O = Object(Q.a)(),
+					O = Object(J.a)(),
 					T = Object(r.useCallback)(() => O(Object(u.l)()), [O]),
 					F = x.giphy.isEnabled,
-					R = Object(r.useMemo)(() => Z({
+					R = Object(r.useMemo)(() => G({
 						isGifUploadEnabled: w,
 						isImageUploadEnabled: k
 					}).join(), [k, w]);
@@ -2630,13 +2630,13 @@
 					isTypingIndicatorsWriteTestEnabled: (e, t) => !!t.isTopLevelComment && Object(Te.d)(e),
 					isImageUploadEnabled: (e, t) => {
 						const n = Object(Ee.s)(e, t);
-						return Object(J.d)(e, {
+						return Object(Q.d)(e, {
 							subredditId: n ? n.id : void 0
 						})
 					},
 					isGifUploadEnabled: (e, t) => {
 						const n = Object(Ee.s)(e, t);
-						return Object(J.b)(e, {
+						return Object(Q.b)(e, {
 							subredditId: n ? n.id : void 0
 						})
 					},
@@ -2727,7 +2727,7 @@
 						if ((e.length > 1 || s && e.length >= 1) && (r(v.fbt._("Limit one media per comment", null, {
 								hk: "iejOT"
 							})), s)) return [];
-						const i = Z({
+						const i = G({
 								isImageUploadEnabled: o,
 								isGifUploadEnabled: n
 							}),
@@ -2896,7 +2896,7 @@
 				Ke = n("./src/reddit/selectors/experiments/commentBox.ts"),
 				Ve = n("./src/reddit/selectors/posts.ts");
 			const Xe = Object(xe.v)(),
-				Ge = Object(d.c)({
+				Ze = Object(d.c)({
 					activeModalId: Ce.a,
 					contributorRequestPending: (e, t) => {
 						let {
@@ -2919,7 +2919,7 @@
 					},
 					postAuthorIsBlocked: Ve.w
 				}),
-				Ze = Object(a.b)(Ge, (e, t) => ({
+				Ge = Object(a.b)(Ze, (e, t) => ({
 					onMount: () => e(c.a(t.draftKey)),
 					onCancel: () => {
 						t.draftType === he.c.edit ? e(l.d({
@@ -2948,7 +2948,7 @@
 						t.dispatchSubmit(n, e.draft.commentMode)
 					}
 				}));
-			class Qe extends i.a.Component {
+			class Je extends i.a.Component {
 				constructor(e) {
 					super(e), this.getInstanceRef = e => this.formInstanceRef = e, this.onCancel = () => {
 						this.props.onCancel()
@@ -3030,7 +3030,7 @@
 					return e.contributorRequestPending ? i.a.createElement(He.a, null) : e.showContributorRequestFlow ? i.a.createElement(y, null) : e.draft.commentMode === pe.i.RICH_TEXT ? i.a.createElement(Ue, n) : i.a.createElement(m.b, n)
 				}
 			}
-			t.default = Xe(Ze(Qe))
+			t.default = Xe(Ge(Je))
 		},
 		"./src/reddit/components/ContributorRequestFlow/ContributorRequestButton/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -4426,20 +4426,20 @@
 			const i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.ge
-					}) === o.Id
+						experimentName: o.he
+					}) === o.Jd
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.he
-					}) === o.Id
+						experimentName: o.ie
+					}) === o.Jd
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.Rd
-					}) === o.Id
+						experimentName: o.Sd
+					}) === o.Jd
 				},
 				c = (e, t) => {
 					let {
@@ -4477,31 +4477,31 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.Zf
-					}) === o.Id
+						experimentName: o.ag
+					}) === o.Jd
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.ag
-					}) === o.Id
+						experimentName: o.bg
+					}) === o.Jd
 				},
 				c = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.Yf
+						experimentName: o.Zf
 					});
-					return t === o.Rf.TypingIndicators || t === o.Rf.IndicatorsPlusCTA
+					return t === o.Sf.TypingIndicators || t === o.Sf.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: o.Yf
+						experimentName: o.Zf
 					});
-					return (null == t ? void 0 : t.variant) === o.Rf.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.Sf.IndicatorsPlusCTA
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.7ef239df907854e7f551.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.c2c3938271b5e8b119df.js.map
