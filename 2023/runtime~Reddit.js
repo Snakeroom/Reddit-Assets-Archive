@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.118bad30a78ea0902397.js
-// Retrieved at 2/7/2023, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.4560e3ec985a3f1b45b8.js
+// Retrieved at 2/7/2023, 2:10:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1423,7 +1423,7 @@
 						Frontpage: "0d33e2a485f258d91ff9",
 						PostSetPage: "028014351dd47326393c",
 						Topic: "2911cd60a75721d9e68a",
-						EconTopAwardersModal: "282a78607ccccee310c4",
+						EconTopAwardersModal: "6dabae3287193a4ad437",
 						CommunityAwards: "31ffce5b2d2e1768dc57",
 						CommunityHubs: "99fd4fc7c686074be94a",
 						CommunityPointsLearnMore: "01d9c9f5fdb92a24b46d",
@@ -1471,7 +1471,7 @@
 						Premium: "f3a67be2fb427ba2c631",
 						"reddit-components-Econ-Prediction-PremiumModal": "210ecaf81d47f70d1c7a",
 						ProfileFollowersAction: "1c55af68231c985390a5",
-						ProfileFollowersPage: "7ca2180a1c90736c7175",
+						ProfileFollowersPage: "f3d58be64615df5f66bc",
 						ProfileModeration: "d31a5eb3a18aaa55118e",
 						PushNotifications: "70ee0792920548463afe",
 						QrCodeActions: "f97ee6579415573a225b",
@@ -1497,16 +1497,16 @@
 						"reddit-components-Econ-Prediction-EndTimeModal": "f7977881e652a053ff06",
 						"reddit-components-PostCreationForm-PredictionEditor-InactivityModal": "c69b240b5733aa348258",
 						"reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal": "5416dc67e1ff136cabb0",
-						"translations/bn_BD-json": "b72d0bad83399c4655ee",
-						"translations/de_DE-json": "d4aece15846cff807218",
-						"translations/es_ES-json": "6cb6327329449a9d4b82",
-						"translations/es_MX-json": "b6038d64c754d64b1653",
-						"translations/fr_FR-json": "33e28d14598ee55107db",
-						"translations/hi_IN-json": "64b6445beb59e90cc5b1",
-						"translations/it_IT-json": "fe4714be007e2c8ba000",
-						"translations/pseudo-json": "0d103381809e0ad995d4",
-						"translations/pt_BR-json": "e83af294844502e690c4",
-						"translations/pt_PT-json": "5db0b9d3b009b2551291",
+						"translations/bn_BD-json": "3dcee60582090744aee7",
+						"translations/de_DE-json": "68262b2447a9cb9a81b1",
+						"translations/es_ES-json": "c6c98d0e698f9c409a9e",
+						"translations/es_MX-json": "5dcee20b15b758148c3e",
+						"translations/fr_FR-json": "50ca29d678b679affe5b",
+						"translations/hi_IN-json": "c896d0df051b320b19d0",
+						"translations/it_IT-json": "1df3acce25f45ffaf110",
+						"translations/pseudo-json": "ec4367d00773c726512d",
+						"translations/pt_BR-json": "ac7d1a56d53706203214",
+						"translations/pt_PT-json": "575658e99f4d36e7f11d",
 						"vendors~AdminPanel": "9abedef941b07fd50b75",
 						AdminPanel: "9f6b11f352926a1f4e40",
 						"vendors~Avatar~ChatPost~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~RealtimeGQLSubscr~bfab320d": "a668d51b1ce27b994b5f",
@@ -1540,20 +1540,20 @@
 						"vendors~PostCreation": "d59cf5362088f66f3ecc",
 						PostCreation: "9b49a24a7c601eeb6e7a",
 						"vendors~ModerationPages": "94c34813eaf24a1890ea",
-						ModerationPages: "019e348f6e0354565388",
+						ModerationPages: "595c7fed9e0a8c90c659",
 						"vendors~ModStatsChart~Settings~ViewsTooltip": "ca7c845d62fd39d960b6",
 						"vendors~Settings": "86b1cfc53320ea8eef91",
-						"Settings~SubredditWiki": "3c6f59ce8ccf5bf36eb5",
+						"Settings~SubredditWiki": "50848ea2863e0f11a1d3",
 						Settings: "7a6b41a32e5aed1d616e",
 						"vendors~ExportTheme~ImportTheme": "4e4dc70c7eeb3e02be12",
 						ExportTheme: "fba93d918b220f151980",
 						ImportTheme: "ffa092f19a1ee16c7439",
-						SubredditWiki: "c8d4cecbe06dec69b3fd",
+						SubredditWiki: "a197539a1109eb318837",
 						"vendors~xml2js": "8c40daee6c2bccb14296",
 						webvitals: "f626f135e0d2366368b7",
 						SignupUpsell: "e9ba43e8bbdd6c2e1a91",
 						gildActions: "c5f47463b18802bf5a4e",
-						AuthorHovercard: "3536be3a7b72987eaaec",
+						AuthorHovercard: "831b1cc52f2b18a9b1ae",
 						AwardTooltip: "81d6c4023397a84979bc",
 						ReportFlow: "32faabd5110a0cb7e921",
 						CryptoVault: "c104889700708cea10eb",
@@ -1777,4 +1777,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.118bad30a78ea0902397.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.4560e3ec985a3f1b45b8.js.map
