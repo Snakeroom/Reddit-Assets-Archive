@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.66fa0dcdc232fca5aed6.js
-// Retrieved at 2/1/2023, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.56a457f25b8cfdd6554c.js
+// Retrieved at 2/7/2023, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "CollectionCommentsPage~SearchResults", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -40320,7 +40320,7 @@
 					} = e;
 					return {
 						socialLink: {
-							type: t.toLowerCase(),
+							type: t,
 							url: n,
 							name: s,
 							position: r,
@@ -49213,4 +49213,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.66fa0dcdc232fca5aed6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.56a457f25b8cfdd6554c.js.map

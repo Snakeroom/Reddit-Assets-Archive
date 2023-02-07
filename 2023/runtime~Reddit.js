@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.f1c479db710f196c6025.js
-// Retrieved at 2/6/2023, 4:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.7a6b4ed7e2572e4fa54e.js
+// Retrieved at 2/7/2023, 10:20:05 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1500,7 +1500,7 @@
 						"translations/bn_BD-json": "b72d0bad83399c4655ee",
 						"translations/de_DE-json": "d4aece15846cff807218",
 						"translations/es_ES-json": "6cb6327329449a9d4b82",
-						"translations/es_MX-json": "8820608dcd2979f782b9",
+						"translations/es_MX-json": "b6038d64c754d64b1653",
 						"translations/fr_FR-json": "33e28d14598ee55107db",
 						"translations/hi_IN-json": "64b6445beb59e90cc5b1",
 						"translations/it_IT-json": "fe4714be007e2c8ba000",
@@ -1531,8 +1531,8 @@
 						ModListing: "487289f1cecd4062869b",
 						"vendors~Subreddit~SubredditWiki": "c17b16c26feb8de5d65f",
 						"vendors~PostCreation~Subreddit": "e1c74d9c118cc2abc046",
-						Subreddit: "a4b3f9ec12c2c4a16d75",
-						CommentsPage: "66fa0dcdc232fca5aed6",
+						Subreddit: "09e0cd57fa04f768395f",
+						CommentsPage: "56a457f25b8cfdd6554c",
 						"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "fbf6b3871488094312c2",
 						CryptoHarbergerTaxManageModal: "012b7599ba7aeda39444",
 						HarbergerTaxManageModal: "320c57533a5fde47ba8a",
@@ -1540,7 +1540,7 @@
 						"vendors~PostCreation": "d59cf5362088f66f3ecc",
 						PostCreation: "0eaef0632adbaf6fb61e",
 						"vendors~ModerationPages": "94c34813eaf24a1890ea",
-						ModerationPages: "5fcb72ee34b9b687a424",
+						ModerationPages: "c4b32805cdd994f7bb6b",
 						"vendors~ModStatsChart~Settings~ViewsTooltip": "ca7c845d62fd39d960b6",
 						"vendors~Settings": "86b1cfc53320ea8eef91",
 						"Settings~SubredditWiki": "9cb4c425c7ca9fdbb73e",
@@ -1777,4 +1777,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.f1c479db710f196c6025.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.7a6b4ed7e2572e4fa54e.js.map
