@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SnoovatarModal.df5f62f548932ca9a733.js
-// Retrieved at 2/1/2023, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SnoovatarModal.06b0264f6cc094795ad5.js
+// Retrieved at 2/7/2023, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SnoovatarModal"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, r) {
@@ -32,8 +32,8 @@
 				m = r("./src/reddit/selectors/experiments/econ/index.ts"),
 				O = r("./src/reddit/selectors/user.ts"),
 				b = r("./src/reddit/components/AvatarBuilder/index.m.less"),
-				v = r.n(b),
-				x = r("./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx");
+				x = r.n(b),
+				v = r("./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx");
 
 			function j() {
 				return (j = Object.assign || function(e) {
@@ -53,9 +53,9 @@
 					_ = Object(o.e)(e => e.user.session),
 					[f, E] = Object(n.useState)(!1),
 					M = Object(n.useContext)(l.a),
-					g = Object(o.d)(),
-					S = () => g(Object(i.openLoginModal)()),
-					A = Object(x.a)();
+					S = Object(o.d)(),
+					g = () => S(Object(i.openLoginModal)()),
+					A = Object(v.a)();
 				Object(n.useEffect)(() => {
 					b(u.r)
 				}, [b]), Object(n.useEffect)(() => {
@@ -65,20 +65,20 @@
 					activeDetails: h,
 					activeTab: k,
 					activeMeSubpage: N,
-					shopTabState: C
-				} = r, y = Object(n.useMemo)(() => ({
+					shopTabState: I
+				} = r, R = Object(n.useMemo)(() => ({
 					activeTab: k || void 0,
 					activeMeSubpage: N || void 0,
 					activeDetails: h || void 0,
-					shopTabState: C || void 0
-				}), [h, k, N, C]), R = Object(o.e)(e => !Object(O.S)(e) && Object(m.u)(e));
+					shopTabState: I || void 0
+				}), [h, k, N, I]), C = Object(o.e)(e => !Object(O.S)(e) && Object(m.v)(e));
 				if (!_ || !f) return null;
-				if (R) return a.a.createElement("div", {
-					className: Object(c.a)(v.a.container, {
-						[v.a.containerExp]: M
+				if (C) return a.a.createElement("div", {
+					className: Object(c.a)(x.a.container, {
+						[x.a.containerExp]: M
 					})
 				}, a.a.createElement(s.f, {
-					openLogin: S,
+					openLogin: g,
 					fancyBackground: !0
 				}));
 				const T = {
@@ -92,23 +92,23 @@
 				};
 				return a.a.createElement("div", {
 					className: Object(c.a)({
-						[v.a.container]: !t,
-						[v.a.snoovatarModalBuilderV2]: t,
-						[v.a.containerExp]: M
+						[x.a.container]: !t,
+						[x.a.snoovatarModalBuilderV2]: t,
+						[x.a.containerExp]: M
 					})
 				}, a.a.createElement(s.a, j({}, T, {
-					navState: y,
+					navState: R,
 					isModal: t
 				}), a.a.createElement(s.b, {
 					isModal: t,
-					onCloseClick: () => g(Object(d.a)())
+					onCloseClick: () => S(Object(d.a)())
 				})))
 			}
 		},
 		"./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return b
+				return x
 			}));
 			var s = r("./src/config.ts"),
 				n = r("./src/lib/env/index.ts"),
@@ -116,46 +116,49 @@
 				o = r("./node_modules/react-redux/es/index.js"),
 				c = r("./src/reddit/endpoints/governance/crypto.ts"),
 				i = r("./src/reddit/hooks/useTracking.ts"),
-				d = r("./src/reddit/selectors/experiments/econ/marketplace.ts"),
-				l = r("./src/reddit/selectors/experiments/econ/paymentsSandbox.ts"),
-				u = r("./src/reddit/selectors/telemetry.ts"),
-				p = r("./src/reddit/selectors/user.ts");
-			const m = !(Object(n.c)() || Object(n.b)()),
-				O = {
+				d = r("./src/reddit/selectors/experiments/econ/index.ts"),
+				l = r("./src/reddit/selectors/experiments/econ/marketplace.ts"),
+				u = r("./src/reddit/selectors/experiments/econ/paymentsSandbox.ts"),
+				p = r("./src/reddit/selectors/telemetry.ts"),
+				m = r("./src/reddit/selectors/user.ts");
+			const O = !(Object(n.c)() || Object(n.b)()),
+				b = {
 					GRAPHQL_URL: s.a.gqlUrl,
-					IS_DEVELOPMENT: m,
-					IS_PRODUCTION: !m,
+					IS_DEVELOPMENT: O,
+					IS_PRODUCTION: !O,
 					MOCKING_ENABLED: !1,
 					SNOOVATAR_BASE_URL: s.a.snoovatarUrl,
 					SNOOVATAR_API_URL: `${s.a.snoovatarUrl}/api`
 				},
-				b = () => {
-					const e = Object(o.e)(l.a),
-						t = Object(o.e)(d.b),
-						r = Object(o.e)(e => e.user.session),
-						n = r ? r.accessToken : "",
-						b = r ? new Date(r.expires).getTime() : 1,
-						v = Object(o.e)(p.fb),
-						x = Object(i.a)(),
-						j = m ? c.a.Rinkeby : c.a.Ethereum,
-						_ = Object(a.useMemo)(() => ({
+				x = () => {
+					const e = Object(o.e)(u.a),
+						t = Object(o.e)(d.n),
+						r = Object(o.e)(l.b),
+						n = Object(o.e)(e => e.user.session),
+						x = n ? n.accessToken : "",
+						v = n ? new Date(n.expires).getTime() : 1,
+						j = Object(o.e)(m.fb),
+						_ = Object(i.a)(),
+						f = O ? c.a.Rinkeby : c.a.Ethereum,
+						E = Object(a.useMemo)(() => ({
 							headers: {
-								Authorization: `Bearer ${n}`
+								Authorization: `Bearer ${x}`
 							},
-							expiration: b
-						}), [n, b]),
-						f = {
-							...O,
+							expiration: v
+						}), [x, v]),
+						M = {
+							...b,
 							STRIPE_API_KEY: s.a.stripe.apiKey(e),
-							ACCESS_TOKEN: n,
-							BLOCKCHAIN_PROVIDER: j,
-							OVERRIDES: t ? {
+							STRIPE_API_VERSION: s.a.stripe.apiVersion(t),
+							ACCESS_TOKEN: x,
+							BLOCKCHAIN_PROVIDER: f,
+							OVERRIDES: r ? {
 								NO_VAULT: !0
 							} : {}
 						},
-						E = Object(a.useCallback)(e => {
-							x(t => {
-								const r = u.o(t);
+						S = Object(a.useCallback)(e => {
+							_(t => {
+								const r = p.o(t);
 								return {
 									...r,
 									...e,
@@ -167,13 +170,13 @@
 									}
 								}
 							})
-						}, [x]);
+						}, [_]);
 					return Object(a.useMemo)(() => ({
-						authHeaders: _,
-						config: f,
-						isNightMode: v,
-						sendEvent: E
-					}), [_, f, v, E])
+						authHeaders: E,
+						config: M,
+						isNightMode: j,
+						sendEvent: S
+					}), [E, M, j, S])
 				}
 		},
 		"./src/reddit/components/SnoovatarModal/index.m.less": function(e, t, r) {
@@ -247,4 +250,4 @@
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.df5f62f548932ca9a733.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.06b0264f6cc094795ad5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NftProfileUnit.b4763f91bbdc26c31a4d.js
-// Retrieved at 2/1/2023, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NftProfileUnit.5b7c36cc7d72ac071eee.js
+// Retrieved at 2/7/2023, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NftProfileUnit"], {
 		"./node_modules/classnames/index.js": function(e, t, r) {
@@ -35,7 +35,7 @@
 		"./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return b
+				return h
 			}));
 			var n = r("./src/config.ts"),
 				s = r("./src/lib/env/index.ts"),
@@ -43,46 +43,49 @@
 				c = r("./node_modules/react-redux/es/index.js"),
 				a = r("./src/reddit/endpoints/governance/crypto.ts"),
 				o = r("./src/reddit/hooks/useTracking.ts"),
-				d = r("./src/reddit/selectors/experiments/econ/marketplace.ts"),
-				u = r("./src/reddit/selectors/experiments/econ/paymentsSandbox.ts"),
-				l = r("./src/reddit/selectors/telemetry.ts"),
-				m = r("./src/reddit/selectors/user.ts");
-			const p = !(Object(s.c)() || Object(s.b)()),
-				f = {
+				d = r("./src/reddit/selectors/experiments/econ/index.ts"),
+				u = r("./src/reddit/selectors/experiments/econ/marketplace.ts"),
+				l = r("./src/reddit/selectors/experiments/econ/paymentsSandbox.ts"),
+				m = r("./src/reddit/selectors/telemetry.ts"),
+				p = r("./src/reddit/selectors/user.ts");
+			const f = !(Object(s.c)() || Object(s.b)()),
+				b = {
 					GRAPHQL_URL: n.a.gqlUrl,
-					IS_DEVELOPMENT: p,
-					IS_PRODUCTION: !p,
+					IS_DEVELOPMENT: f,
+					IS_PRODUCTION: !f,
 					MOCKING_ENABLED: !1,
 					SNOOVATAR_BASE_URL: n.a.snoovatarUrl,
 					SNOOVATAR_API_URL: `${n.a.snoovatarUrl}/api`
 				},
-				b = () => {
-					const e = Object(c.e)(u.a),
-						t = Object(c.e)(d.b),
-						r = Object(c.e)(e => e.user.session),
-						s = r ? r.accessToken : "",
-						b = r ? new Date(r.expires).getTime() : 1,
-						h = Object(c.e)(m.fb),
-						E = Object(o.a)(),
-						O = p ? a.a.Rinkeby : a.a.Ethereum,
-						k = Object(i.useMemo)(() => ({
+				h = () => {
+					const e = Object(c.e)(l.a),
+						t = Object(c.e)(d.n),
+						r = Object(c.e)(u.b),
+						s = Object(c.e)(e => e.user.session),
+						h = s ? s.accessToken : "",
+						E = s ? new Date(s.expires).getTime() : 1,
+						O = Object(c.e)(p.fb),
+						k = Object(o.a)(),
+						y = f ? a.a.Rinkeby : a.a.Ethereum,
+						_ = Object(i.useMemo)(() => ({
 							headers: {
-								Authorization: `Bearer ${s}`
+								Authorization: `Bearer ${h}`
 							},
-							expiration: b
-						}), [s, b]),
-						y = {
-							...f,
+							expiration: E
+						}), [h, E]),
+						j = {
+							...b,
 							STRIPE_API_KEY: n.a.stripe.apiKey(e),
-							ACCESS_TOKEN: s,
-							BLOCKCHAIN_PROVIDER: O,
-							OVERRIDES: t ? {
+							STRIPE_API_VERSION: n.a.stripe.apiVersion(t),
+							ACCESS_TOKEN: h,
+							BLOCKCHAIN_PROVIDER: y,
+							OVERRIDES: r ? {
 								NO_VAULT: !0
 							} : {}
 						},
-						j = Object(i.useCallback)(e => {
-							E(t => {
-								const r = l.o(t);
+						x = Object(i.useCallback)(e => {
+							k(t => {
+								const r = m.o(t);
 								return {
 									...r,
 									...e,
@@ -94,13 +97,13 @@
 									}
 								}
 							})
-						}, [E]);
+						}, [k]);
 					return Object(i.useMemo)(() => ({
-						authHeaders: k,
-						config: y,
-						isNightMode: h,
-						sendEvent: j
-					}), [k, y, h, j])
+						authHeaders: _,
+						config: j,
+						isNightMode: O,
+						sendEvent: x
+					}), [_, j, O, x])
 				}
 		},
 		"./src/reddit/components/Econ/Marketplace/NftProfileUnit/index.m.less": function(e, t, r) {
@@ -395,4 +398,4 @@
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProfileUnit.b4763f91bbdc26c31a4d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProfileUnit.5b7c36cc7d72ac071eee.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.0eaef0632adbaf6fb61e.js
-// Retrieved at 2/1/2023, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.9b49a24a7c601eeb6e7a.js
+// Retrieved at 2/7/2023, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit~StandalonePostPage", "ContributorRequestButton"], {
 		"./src/chat/actions/uxExperiences.ts": function(e, t, n) {
@@ -35867,7 +35867,7 @@
 				}, e.children),
 				mu = Object(i.a)(A.d, A.e, A.h, A.T, A.cb, Q.s, (e, t) => {
 					const n = Object(A.h)(e);
-					return Object(L.s)(e) && t.isTalkCreationAllowedForUser && n.isProfile
+					return Object(L.t)(e) && t.isTalkCreationAllowedForUser && n.isProfile
 				}, (e, t, n, o, r, s, i) => {
 					const {
 						images: a = !0,
@@ -36101,7 +36101,7 @@
 							subredditId: n.id
 						})
 					},
-					isTalkTopicSelectionEnabled: L.r,
+					isTalkTopicSelectionEnabled: L.s,
 					isScheduledTalksEnabled: L.m
 				});
 			class ju extends r.a.Component {
@@ -36444,7 +36444,7 @@
 					const t = Object(G.a)(),
 						[n, i] = Object(o.useState)(!1),
 						a = Object(s.e)(e => Object(A.h)(e)),
-						c = Object(s.e)(L.s),
+						c = Object(s.e)(L.t),
 						d = Object(o.useMemo)(() => {
 							var e;
 							return !!(null === (e = a.allowedPostTypes) || void 0 === e ? void 0 : e.talks)
@@ -40133,4 +40133,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.0eaef0632adbaf6fb61e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.9b49a24a7c601eeb6e7a.js.map

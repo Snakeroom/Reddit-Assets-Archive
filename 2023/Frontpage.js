@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.0e4096a5e04cf5a63ecd.js
-// Retrieved at 2/1/2023, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.0d33e2a485f258d91ff9.js
+// Retrieved at 2/7/2023, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -687,7 +687,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(h.hg)(p),
+						includeInterestTopics: !!p && !Object(h.ig)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: v && !(null === (n = null === (a = e.user.account) || void 0 === a ? void 0 : a.karma) || void 0 === n ? void 0 : n.total),
@@ -5427,7 +5427,7 @@
 				layout: B.U,
 				isBlockingInterstitialEnabled: J.b,
 				isBlockingInterstitialV2Enabled: J.c,
-				isTalkLiveBarEnabled: H.p,
+				isTalkLiveBarEnabled: H.q,
 				isTrendingHiddenEnabled: W.a,
 				interestTopicRecommendations: ae.b,
 				reonboardingFlow: Q.k,
@@ -5830,7 +5830,7 @@
 						experimentEligibilitySelector: r.S,
 						experimentName: n.qd
 					});
-					return !(!t || Object(n.hg)(t))
+					return !(!t || Object(n.ig)(t))
 				},
 				i = e => {
 					return Object(s.c)(e, {
@@ -5948,4 +5948,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.0e4096a5e04cf5a63ecd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.0d33e2a485f258d91ff9.js.map

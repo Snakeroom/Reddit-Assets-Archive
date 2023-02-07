@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PremiumPurchaseModal.1aa1b7213c0aec15e4aa.js
-// Retrieved at 2/1/2023, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PremiumPurchaseModal.ae9fb10a5d487834487b.js
+// Retrieved at 2/7/2023, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal~PremiumPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -2150,17 +2150,21 @@
 		"./src/reddit/hooks/useStripePromise.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return i
+				return d
 			}));
 			var n = r("./node_modules/@stripe/stripe-js/dist/stripe.esm.js"),
 				a = r("./src/config.ts"),
 				o = r("./node_modules/react-redux/es/index.js"),
-				s = r("./src/reddit/selectors/experiments/econ/paymentsSandbox.ts");
-			let c = null;
+				s = r("./src/reddit/selectors/experiments/econ/index.ts"),
+				c = r("./src/reddit/selectors/experiments/econ/paymentsSandbox.ts");
+			let i = null;
 
-			function i() {
-				const e = Object(o.e)(s.a);
-				return c || (c = Object(n.a)(a.a.stripe.apiKey(e))), c
+			function d() {
+				const e = Object(o.e)(c.a),
+					t = Object(o.e)(s.n);
+				return i || (i = Object(n.a)(a.a.stripe.apiKey(e), {
+					apiVersion: a.a.stripe.apiVersion(t)
+				})), i
 			}
 		},
 		"./src/reddit/hooks/useThunkDispatch.ts": function(e, t, r) {
@@ -2345,4 +2349,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PremiumPurchaseModal.1aa1b7213c0aec15e4aa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PremiumPurchaseModal.ae9fb10a5d487834487b.js.map

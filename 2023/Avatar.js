@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Avatar.7c38ad2e536a68d9d292.js
-// Retrieved at 2/1/2023, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Avatar.817f9ed76afa31eaeb5d.js
+// Retrieved at 2/7/2023, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Avatar"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, r) {
@@ -30,13 +30,13 @@
 				u = r("./src/reddit/helpers/trackers/snoovatar.ts"),
 				p = r("./src/reddit/hooks/useTracking.ts"),
 				m = r("./src/reddit/selectors/experiments/econ/index.ts"),
-				b = r("./src/reddit/selectors/user.ts"),
-				O = r("./src/reddit/components/AvatarBuilder/index.m.less"),
-				x = r.n(O),
-				v = r("./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx");
+				O = r("./src/reddit/selectors/user.ts"),
+				b = r("./src/reddit/components/AvatarBuilder/index.m.less"),
+				x = r.n(b),
+				_ = r("./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx");
 
-			function _() {
-				return (_ = Object.assign || function(e) {
+			function v() {
+				return (v = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var s in r) Object.prototype.hasOwnProperty.call(r, s) && (e[s] = r[s])
@@ -49,31 +49,31 @@
 					isModal: t,
 					...r
 				} = e;
-				const O = Object(p.a)(),
+				const b = Object(p.a)(),
 					f = Object(c.e)(e => e.user.session),
 					[j, E] = Object(n.useState)(!1),
 					A = Object(n.useContext)(l.a),
 					g = Object(c.d)(),
 					S = () => g(Object(i.openLoginModal)()),
-					M = Object(v.a)();
+					M = Object(_.a)();
 				Object(n.useEffect)(() => {
-					O(u.r)
-				}, [O]), Object(n.useEffect)(() => {
+					b(u.r)
+				}, [b]), Object(n.useEffect)(() => {
 					E(!0)
 				}, []);
 				const {
 					activeDetails: h,
-					activeTab: k,
-					activeMeSubpage: N,
-					shopTabState: R
+					activeTab: R,
+					activeMeSubpage: k,
+					shopTabState: N
 				} = r, T = Object(n.useMemo)(() => ({
-					activeTab: k || void 0,
-					activeMeSubpage: N || void 0,
+					activeTab: R || void 0,
+					activeMeSubpage: k || void 0,
 					activeDetails: h || void 0,
-					shopTabState: R || void 0
-				}), [h, k, N, R]), C = Object(c.e)(e => !Object(b.S)(e) && Object(m.u)(e));
+					shopTabState: N || void 0
+				}), [h, R, k, N]), I = Object(c.e)(e => !Object(O.S)(e) && Object(m.v)(e));
 				if (!f || !j) return null;
-				if (C) return a.a.createElement("div", {
+				if (I) return a.a.createElement("div", {
 					className: Object(o.a)(x.a.container, {
 						[x.a.containerExp]: A
 					})
@@ -81,7 +81,7 @@
 					openLogin: S,
 					fancyBackground: !0
 				}));
-				const L = {
+				const C = {
 					...M,
 					config: {
 						...M.config,
@@ -96,7 +96,7 @@
 						[x.a.snoovatarModalBuilderV2]: t,
 						[x.a.containerExp]: A
 					})
-				}, a.a.createElement(s.a, _({}, L, {
+				}, a.a.createElement(s.a, v({}, C, {
 					navState: T,
 					isModal: t
 				}), a.a.createElement(s.b, {
@@ -108,7 +108,7 @@
 		"./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return O
+				return x
 			}));
 			var s = r("./src/config.ts"),
 				n = r("./src/lib/env/index.ts"),
@@ -116,46 +116,49 @@
 				c = r("./node_modules/react-redux/es/index.js"),
 				o = r("./src/reddit/endpoints/governance/crypto.ts"),
 				i = r("./src/reddit/hooks/useTracking.ts"),
-				d = r("./src/reddit/selectors/experiments/econ/marketplace.ts"),
-				l = r("./src/reddit/selectors/experiments/econ/paymentsSandbox.ts"),
-				u = r("./src/reddit/selectors/telemetry.ts"),
-				p = r("./src/reddit/selectors/user.ts");
-			const m = !(Object(n.c)() || Object(n.b)()),
+				d = r("./src/reddit/selectors/experiments/econ/index.ts"),
+				l = r("./src/reddit/selectors/experiments/econ/marketplace.ts"),
+				u = r("./src/reddit/selectors/experiments/econ/paymentsSandbox.ts"),
+				p = r("./src/reddit/selectors/telemetry.ts"),
+				m = r("./src/reddit/selectors/user.ts");
+			const O = !(Object(n.c)() || Object(n.b)()),
 				b = {
 					GRAPHQL_URL: s.a.gqlUrl,
-					IS_DEVELOPMENT: m,
-					IS_PRODUCTION: !m,
+					IS_DEVELOPMENT: O,
+					IS_PRODUCTION: !O,
 					MOCKING_ENABLED: !1,
 					SNOOVATAR_BASE_URL: s.a.snoovatarUrl,
 					SNOOVATAR_API_URL: `${s.a.snoovatarUrl}/api`
 				},
-				O = () => {
-					const e = Object(c.e)(l.a),
-						t = Object(c.e)(d.b),
-						r = Object(c.e)(e => e.user.session),
-						n = r ? r.accessToken : "",
-						O = r ? new Date(r.expires).getTime() : 1,
-						x = Object(c.e)(p.fb),
-						v = Object(i.a)(),
-						_ = m ? o.a.Rinkeby : o.a.Ethereum,
-						f = Object(a.useMemo)(() => ({
+				x = () => {
+					const e = Object(c.e)(u.a),
+						t = Object(c.e)(d.n),
+						r = Object(c.e)(l.b),
+						n = Object(c.e)(e => e.user.session),
+						x = n ? n.accessToken : "",
+						_ = n ? new Date(n.expires).getTime() : 1,
+						v = Object(c.e)(m.fb),
+						f = Object(i.a)(),
+						j = O ? o.a.Rinkeby : o.a.Ethereum,
+						E = Object(a.useMemo)(() => ({
 							headers: {
-								Authorization: `Bearer ${n}`
+								Authorization: `Bearer ${x}`
 							},
-							expiration: O
-						}), [n, O]),
-						j = {
+							expiration: _
+						}), [x, _]),
+						A = {
 							...b,
 							STRIPE_API_KEY: s.a.stripe.apiKey(e),
-							ACCESS_TOKEN: n,
-							BLOCKCHAIN_PROVIDER: _,
-							OVERRIDES: t ? {
+							STRIPE_API_VERSION: s.a.stripe.apiVersion(t),
+							ACCESS_TOKEN: x,
+							BLOCKCHAIN_PROVIDER: j,
+							OVERRIDES: r ? {
 								NO_VAULT: !0
 							} : {}
 						},
-						E = Object(a.useCallback)(e => {
-							v(t => {
-								const r = u.o(t);
+						g = Object(a.useCallback)(e => {
+							f(t => {
+								const r = p.o(t);
 								return {
 									...r,
 									...e,
@@ -167,13 +170,13 @@
 									}
 								}
 							})
-						}, [v]);
+						}, [f]);
 					return Object(a.useMemo)(() => ({
-						authHeaders: f,
-						config: j,
-						isNightMode: x,
-						sendEvent: E
-					}), [f, j, x, E])
+						authHeaders: E,
+						config: A,
+						isNightMode: v,
+						sendEvent: g
+					}), [E, A, v, g])
 				}
 		},
 		"./src/reddit/pages/Avatar/index.tsx": function(e, t, r) {
@@ -218,4 +221,4 @@
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.7c38ad2e536a68d9d292.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.817f9ed76afa31eaeb5d.js.map
