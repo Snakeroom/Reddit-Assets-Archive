@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~shreddit-player.1c5bbec20e816c5f1302.js
-// Retrieved at 2/2/2023, 9:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~shreddit-player.4311d7d36abe2ba8fa04.js
+// Retrieved at 2/7/2023, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~shreddit-player"], {
 		"./node_modules/@reddit/faceplate/lib/custom-event.js": function(e, t, n) {
@@ -3031,7 +3031,12 @@
 					})
 				}
 				_handleError(e) {
-					(!this.isHlsStream || null != this && this.isHlsEngineAttached) && super._handleError(e)
+					var t;
+					const n = null === (t = this.mediaElement) || void 0 === t ? void 0 : t.error;
+					if (4 === (null == n ? void 0 : n.code) && this.isHlsSupported) {
+						for (const r of this.state.src)
+							if (Tt.test(r)) return void this._handleHlsSrcChange(r)
+					} else super._handleError(e)
 				}
 				_listenToHlsEngine() {
 					D(this.hlsEngine) || D(this.Hls) || (this.hlsEngine.on(this.Hls.Events.LEVEL_LOADED, this._handleHlsLevelLoaded.bind(this)), this._hlsEventListeners.forEach(e => {
@@ -3500,7 +3505,7 @@
       <icon-settings
         @click="${this.toggleOptions}"
         fill
-        class="control flex items-center justify-center text-18 cursor-pointer ease duration-150 scale-100"
+        class="control flex items-center justify-center visible text-18 cursor-pointer ease duration-150 scale-100"
       ></icon-settings>
       <div
         class="popup-element flex flex-col border-r-md z-10 absolute left-1/2 -translate-x-1/2 ${this.showOptions?"opacity-100":"opacity-0 pointer-events-none"}"
@@ -4355,6 +4360,12 @@
     height: 100%;
   }
 
+  vds-media-visibility,
+  vds-media-sync {
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
   video {
     width: 100% !important;
     height: 100% !important;
@@ -4609,7 +4620,8 @@
   }
 `;
 			const Rn = {
-				capLevelToPlayerSize: !0
+				capLevelToPlayerSize: !0,
+				startLevel: -1
 			};
 			var Ln = function(e, t, n, r) {
 				var i, o = arguments.length,
@@ -4623,7 +4635,7 @@
 				constructor() {
 					super(...arguments), this.hlsLibrary = () => n.e(3).then(n.t.bind(null, "./node_modules/@reddit/shreddit.components.shreddit-player/node_modules/hls.js/dist/hls.min.js", 7)), this.autoplay = !1, this.autoplayPref = !1, this.showAutoplayToggle = !1, this.gif = !1, this.playOutOfViewport = !1, this.ui = "mobile", this.objectFit = "contain", this.mediaLoadRequested = !1, this.disableMuteButton = !1, this.handleLoadMediaClick = () => {
 						var e;
-						this.mediaLoadRequested = !0, null === (e = this.hlsElement) || void 0 === e || e.startLoadingMedia()
+						this.mediaLoadRequested || (this.mediaLoadRequested = !0, null === (e = this.hlsElement) || void 0 === e || e.startLoadingMedia())
 					}
 				}
 				static get styles() {
@@ -4814,7 +4826,7 @@
                     ></icon-gif-post>
                   `:r.c`
                     <vds-mute-button
-                      class="control rounded-sm cursor-pointer ${"ease duration-150"}"
+                      class="control relative rounded-sm cursor-pointer ${"ease duration-150"}"
                       .disabled="${this.disableMuteButton}"
                     >
                       <icon-volume fill class="unmute-icon text-18 ${i}"></icon-volume>
@@ -7438,4 +7450,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~shreddit-player.1c5bbec20e816c5f1302.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~shreddit-player.4311d7d36abe2ba8fa04.js.map
