@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.bc9198a4eaf912cd56aa.js
-// Retrieved at 2/7/2023, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.3ba5ec840b6e88c9dda7.js
+// Retrieved at 2/7/2023, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -1320,11 +1320,12 @@
 					onClick: b,
 					onAddUserToQuickReplyList: f,
 					children: v,
-					style: g
+					style: g,
+					pageType: x
 				} = e;
 				return o.a.createElement(l.t, {
 					onClick: e => {
-						if (b && b(e), t(), h === n.awardNotification) return f();
+						if (b && b(e), t(x), h === n.awardNotification) return f();
 						i(Object(c.b)(a))
 					},
 					className: r,
@@ -1343,8 +1344,8 @@
 					userId: n
 				} = t;
 				return {
-					onStartChat: () => {
-						e(Object(a.b)(n, s))
+					onStartChat: t => {
+						e(Object(a.b)(n, s, t))
 					},
 					onAddUserToQuickReplyList: () => {
 						e(Object(a.a)(n))
@@ -6462,4 +6463,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.bc9198a4eaf912cd56aa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.3ba5ec840b6e88c9dda7.js.map

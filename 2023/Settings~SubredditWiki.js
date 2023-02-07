@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.a734be6a2318795a24ec.js
-// Retrieved at 2/7/2023, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.eea7275edd227ec5e64e.js
+// Retrieved at 2/7/2023, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, r) {
@@ -970,11 +970,12 @@
 					onClick: f,
 					onAddUserToQuickReplyList: v,
 					children: x,
-					style: h
+					style: h,
+					pageType: g
 				} = e;
 				return a.a.createElement(c.t, {
 					onClick: e => {
-						if (f && f(e), t(), p === n.awardNotification) return v();
+						if (f && f(e), t(g), p === n.awardNotification) return v();
 						o(Object(l.b)(i))
 					},
 					className: s,
@@ -993,8 +994,8 @@
 					userId: n
 				} = t;
 				return {
-					onStartChat: () => {
-						e(Object(i.b)(n, r))
+					onStartChat: t => {
+						e(Object(i.b)(n, r, t))
 					},
 					onAddUserToQuickReplyList: () => {
 						e(Object(i.a)(n))
@@ -2675,4 +2676,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.a734be6a2318795a24ec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.eea7275edd227ec5e64e.js.map

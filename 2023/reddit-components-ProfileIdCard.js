@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.7c3b79d06a6d877552cd.js
-// Retrieved at 2/7/2023, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.c227df4c842e70980a78.js
+// Retrieved at 2/7/2023, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -597,11 +597,12 @@
 					onClick: b,
 					onAddUserToQuickReplyList: v,
 					children: h,
-					style: g
+					style: g,
+					pageType: x
 				} = e;
 				return o.a.createElement(d.t, {
 					onClick: e => {
-						if (b && b(e), t(), f === n.awardNotification) return v();
+						if (b && b(e), t(x), f === n.awardNotification) return v();
 						a(Object(l.b)(i))
 					},
 					className: s,
@@ -620,8 +621,8 @@
 					userId: n
 				} = t;
 				return {
-					onStartChat: () => {
-						e(Object(i.b)(n, r))
+					onStartChat: t => {
+						e(Object(i.b)(n, r, t))
 					},
 					onAddUserToQuickReplyList: () => {
 						e(Object(i.a)(n))
@@ -2807,7 +2808,8 @@
 					userId: t,
 					text: be._("Chat", null, {
 						hk: "UKkIW"
-					})
+					}),
+					pageType: "user_profile"
 				}))
 			};
 			t.default = Object(a.b)(ve, e => ({
@@ -3705,4 +3707,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.7c3b79d06a6d877552cd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.c227df4c842e70980a78.js.map

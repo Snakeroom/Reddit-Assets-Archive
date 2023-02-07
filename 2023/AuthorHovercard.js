@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.831b1cc52f2b18a9b1ae.js
-// Retrieved at 2/7/2023, 2:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.0136cc2f5cb92d536613.js
+// Retrieved at 2/7/2023, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -1027,11 +1027,12 @@
 					onClick: f,
 					onAddUserToQuickReplyList: h,
 					children: v,
-					style: x
+					style: x,
+					pageType: _
 				} = e;
 				return o.a.createElement(d.t, {
 					onClick: e => {
-						if (f && f(e), t(), p === a.awardNotification) return h();
+						if (f && f(e), t(_), p === a.awardNotification) return h();
 						s(Object(l.b)(i))
 					},
 					className: r,
@@ -1050,8 +1051,8 @@
 					userId: a
 				} = t;
 				return {
-					onStartChat: () => {
-						e(Object(i.b)(a, n))
+					onStartChat: t => {
+						e(Object(i.b)(a, n, t))
 					},
 					onAddUserToQuickReplyList: () => {
 						e(Object(i.a)(a))
@@ -3302,7 +3303,8 @@
 						style: {
 							color: B,
 							backgroundColor: M
-						}
+						},
+						pageType: "user_hovercard"
 					}), P && r.a.createElement(Xe.a, {
 						className: Object(d.a)(jt.a.SubscribeButton, jt.a.profileButtonRight, {
 							[jt.a.onlyButton]: !S
@@ -6618,4 +6620,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.831b1cc52f2b18a9b1ae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.0136cc2f5cb92d536613.js.map

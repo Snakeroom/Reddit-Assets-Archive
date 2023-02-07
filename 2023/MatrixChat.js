@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MatrixChat.de337965747361c83a7e.js
-// Retrieved at 2/6/2023, 11:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MatrixChat.2484fe050fd67efd56ef.js
+// Retrieved at 2/7/2023, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MatrixChat"], {
 		"./src/reddit/components/IFrame/index.m.less": function(e, t, a) {
@@ -78,7 +78,7 @@
 		"./src/reddit/components/MatrixChat/index.tsx": function(e, t, a) {
 			"use strict";
 			a.r(t), a.d(t, "MatrixChat", (function() {
-				return y
+				return S
 			}));
 			var n = a("./node_modules/fbt/lib/FbtPublic.js"),
 				s = a("./node_modules/react/index.js"),
@@ -125,14 +125,15 @@
 				}, c.a.createElement(m.b, null))), c.a.createElement("div", null)))
 			};
 			var E = a("./src/lib/prettyPrintNumber/index.ts"),
-				h = a("./src/reddit/icons/svgs/Close/index.tsx"),
-				f = a("./src/reddit/reducers/features/matrixChat/index.ts"),
-				p = a("./src/reddit/selectors/features/matrixChat/index.ts"),
-				M = a("./src/reddit/components/MatrixChat/MinimizedChat/index.m.less"),
-				j = a.n(M);
+				h = a("./src/chat/actions/tracking.ts"),
+				f = a("./src/reddit/icons/svgs/Close/index.tsx"),
+				p = a("./src/reddit/reducers/features/matrixChat/index.ts"),
+				M = a("./src/reddit/selectors/features/matrixChat/index.ts"),
+				j = a("./src/reddit/components/MatrixChat/MinimizedChat/index.m.less"),
+				C = a.n(j);
 
-			function C() {
-				return (C = Object.assign || function(e) {
+			function _() {
+				return (_ = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var a = arguments[t];
 						for (var n in a) Object.prototype.hasOwnProperty.call(a, n) && (e[n] = a[n])
@@ -140,98 +141,98 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const _ = e => {
+			const v = e => {
 				let {
 					className: t,
 					...a
 				} = e;
 				const s = Object(r.d)(),
-					i = Object(r.e)(p.a);
-				return c.a.createElement("section", C({
-					className: Object(o.a)(j.a.container, t),
+					i = Object(r.e)(M.a);
+				return c.a.createElement("section", _({
+					className: Object(o.a)(C.a.container, t),
 					onClick: () => {
 						s(Object(l.c)({
-							state: f.b.NORMAL
-						}))
+							state: p.b.NORMAL
+						})), s(Object(h.eb)(!0, "minimized"))
 					}
 				}, a), c.a.createElement("div", {
-					className: j.a.titleContainer
+					className: C.a.titleContainer
 				}, n.fbt._("Chat", null, {
 					hk: "2Joznw"
 				}), i && i > 0 && c.a.createElement("span", {
-					className: j.a.notificationsBadge
+					className: C.a.notificationsBadge
 				}, Object(E.b)(i))), c.a.createElement("button", {
 					type: "button",
 					onClick: e => {
 						null == e || e.stopPropagation(), s(Object(l.c)({
-							state: f.b.CLOSED
+							state: p.b.CLOSED
 						}))
 					}
-				}, c.a.createElement(h.a, null)))
+				}, c.a.createElement(f.a, null)))
 			};
-			var v = a("./src/reddit/hooks/useToast.tsx"),
-				I = a("./src/reddit/selectors/user.ts"),
-				N = a("./src/reddit/components/MatrixChat/Modal/Modal.m.less"),
-				L = a.n(N);
-			const g = e => c.a.createElement("div", {
+			var I = a("./src/reddit/hooks/useToast.tsx"),
+				N = a("./src/reddit/selectors/user.ts"),
+				L = a("./src/reddit/components/MatrixChat/Modal/Modal.m.less"),
+				g = a.n(L);
+			const A = e => c.a.createElement("div", {
 				onClick: t => {
 					t.stopPropagation(), e.onClose()
 				},
-				className: L.a.chatModal
-			}, e.children, c.a.createElement(h.a, {
-				className: L.a.close
+				className: g.a.chatModal
+			}, e.children, c.a.createElement(f.a, {
+				className: g.a.close
 			}));
-			var A, w = a("./src/reddit/components/MatrixChat/index.m.less"),
-				D = a.n(w);
+			var w, D = a("./src/reddit/components/MatrixChat/index.m.less"),
+				y = a.n(D);
 			! function(e) {
 				e.CLOSE = "matrix-chat.close", e.MINIMIZE = "matrix-chat.minimize", e.MAXIMIZE = "matrix-chat.maximize", e.LOADED = "matrix-chat.loaded", e.NOTIFICATIONS = "matrix-chat.notifications", e.OPEN_IMAGE = "matrix-chat.open_img_modal"
-			}(A || (A = {}));
-			const y = () => {
-				const [e, t] = c.a.useState(!1), [a, s] = c.a.useState(null), m = c.a.useRef(null), u = Object(r.d)(), b = Object(r.e)(I.k), x = Object(r.e)(p.c), E = Object(r.e)(p.b), h = Object(r.e)(p.d), M = Object(v.a)(), j = E === f.b.CHAT_WITH_USER ? `${x}/user/${h}` : x, C = e => {
+			}(w || (w = {}));
+			const S = () => {
+				const [e, t] = c.a.useState(!1), [a, s] = c.a.useState(null), m = c.a.useRef(null), u = Object(r.d)(), b = Object(r.e)(N.k), x = Object(r.e)(M.c), E = Object(r.e)(M.b), h = Object(r.e)(M.d), f = Object(I.a)(), j = E === p.b.CHAT_WITH_USER ? `${x}/user/${h}` : x, C = e => {
 					null == e || e.stopPropagation(), s(null), u(Object(l.c)({
-						state: f.b.CLOSED
+						state: p.b.CLOSED
 					}))
 				};
 				return c.a.useLayoutEffect(() => {
 					const e = e => {
 						var a, n, c, r;
-						if (e.data === A.CLOSE && C(), e.data === A.MINIMIZE && u(Object(l.c)({
-								state: f.b.MINIMIZED
-							})), e.data === A.MAXIMIZE && u(Object(l.c)({
-								state: f.b.MINIMIZED
-							})), e.data === A.LOADED && (t(!0), clearTimeout(m.current || void 0)), 0 === (null === (n = null === (a = e.data) || void 0 === a ? void 0 : a.indexOf) || void 0 === n ? void 0 : n.call(a, A.NOTIFICATIONS))) {
+						if (e.data === w.CLOSE && C(), e.data === w.MINIMIZE && u(Object(l.c)({
+								state: p.b.MINIMIZED
+							})), e.data === w.MAXIMIZE && u(Object(l.c)({
+								state: p.b.MINIMIZED
+							})), e.data === w.LOADED && (t(!0), clearTimeout(m.current || void 0)), 0 === (null === (n = null === (a = e.data) || void 0 === a ? void 0 : a.indexOf) || void 0 === n ? void 0 : n.call(a, w.NOTIFICATIONS))) {
 							const [, t] = e.data.split(":");
 							u(Object(l.b)({
 								count: parseInt(t, 10)
 							}))
 						}
-						if (null === (r = null === (c = e.data) || void 0 === c ? void 0 : c.startsWith) || void 0 === r ? void 0 : r.call(c, A.OPEN_IMAGE)) {
-							const t = e.data.substring(A.OPEN_IMAGE.length + 1, e.data.length);
+						if (null === (r = null === (c = e.data) || void 0 === c ? void 0 : c.startsWith) || void 0 === r ? void 0 : r.call(c, w.OPEN_IMAGE)) {
+							const t = e.data.substring(w.OPEN_IMAGE.length + 1, e.data.length);
 							s(t)
 						}
 					};
 					return window.addEventListener("message", e), () => window.document.removeEventListener("message", e)
 				}, []), c.a.useEffect(() => {
-					E === f.b.CLOSED && m.current && (t(!1), clearTimeout(m.current))
+					E === p.b.CLOSED && m.current && (t(!1), clearTimeout(m.current))
 				}, [E]), c.a.useEffect(() => {
-					E !== f.b.NORMAL || e || (m.current = window.setTimeout(() => {
-						C(), M(n.fbt._("Oops, something went wrong. Try again.", null, {
+					E !== p.b.NORMAL || e || (m.current = window.setTimeout(() => {
+						C(), f(n.fbt._("Oops, something went wrong. Try again.", null, {
 							hk: "4mYDx0"
 						}))
 					}, 3e4))
 				}, [E, e]), c.a.useEffect(() => {
 					b && u(Object(l.a)(b))
-				}, [b]), E === f.b.CLOSED ? null : c.a.createElement(i.a, null, E === f.b.MINIMIZED && c.a.createElement(_, {
-					className: D.a.container
-				}), !e && E === f.b.NORMAL && c.a.createElement(O, {
-					className: Object(o.a)(D.a.container, D.a.main),
+				}, [b]), E === p.b.CLOSED ? null : c.a.createElement(i.a, null, E === p.b.MINIMIZED && c.a.createElement(v, {
+					className: y.a.container
+				}), !e && E === p.b.NORMAL && c.a.createElement(O, {
+					className: Object(o.a)(y.a.container, y.a.main),
 					onClose: C
 				}), c.a.createElement(d.a, {
-					className: Object(o.a)(D.a.container, D.a.main, {
-						[D.a.hidden]: !(e && E === f.b.NORMAL)
+					className: Object(o.a)(y.a.container, y.a.main, {
+						[y.a.hidden]: !(e && E === p.b.NORMAL)
 					}),
 					src: j
-				}), a && c.a.createElement(g, {
+				}), a && c.a.createElement(A, {
 					onClose: () => s(null)
 				}, c.a.createElement("img", {
 					src: a
@@ -263,4 +264,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MatrixChat.de337965747361c83a7e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MatrixChat.2484fe050fd67efd56ef.js.map

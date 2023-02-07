@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.6dabae3287193a4ad437.js
-// Retrieved at 2/7/2023, 2:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.9d750b7861ae07a19c3a.js
+// Retrieved at 2/7/2023, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -594,11 +594,12 @@
 					onClick: f,
 					onAddUserToQuickReplyList: v,
 					children: h,
-					style: x
+					style: x,
+					pageType: I
 				} = e;
 				return s.a.createElement(d.t, {
 					onClick: e => {
-						if (f && f(e), t(), b === a.awardNotification) return v();
+						if (f && f(e), t(I), b === a.awardNotification) return v();
 						o(Object(l.b)(c))
 					},
 					className: n,
@@ -617,8 +618,8 @@
 					userId: a
 				} = t;
 				return {
-					onStartChat: () => {
-						e(Object(c.b)(a, r))
+					onStartChat: t => {
+						e(Object(c.b)(a, r, t))
 					},
 					onAddUserToQuickReplyList: () => {
 						e(Object(c.a)(a))
@@ -2632,4 +2633,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.6dabae3287193a4ad437.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.9d750b7861ae07a19c3a.js.map

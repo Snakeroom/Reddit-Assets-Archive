@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.01cd18ffb950b4b02e96.js
-// Retrieved at 2/7/2023, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.10e58a91a1cb548b31b6.js
+// Retrieved at 2/7/2023, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -585,8 +585,8 @@
 				s = n("./src/lib/makeActionCreator/index.ts"),
 				a = n("./src/reddit/actions/toaster.ts"),
 				o = n("./src/reddit/endpoints/chat/userSettings.ts"),
-				c = n("./src/reddit/selectors/telemetry.ts");
-			var i = n("./src/reddit/models/Toast/index.ts"),
+				c = n("./src/reddit/helpers/trackers/chat.ts"),
+				i = n("./src/reddit/models/Toast/index.ts"),
 				d = n("./src/telemetry/index.ts"),
 				l = n("./src/reddit/actions/chat/constants.ts");
 			const u = Object(s.a)("USER_SETTINGS__FETCH_PENDING"),
@@ -620,16 +620,7 @@
 						t(y());
 						const e = g(p.user.chatSettings.invitePolicy),
 							n = await Object(o.e)(b, u());
-						if (Object(d.a)(((e, t) => n => ({
-								source: "settings_privacy",
-								action: "save",
-								noun: "receive_chat_invites",
-								setting: {
-									value: e,
-									oldValue: t
-								},
-								...Object(c.o)(n)
-							}))(b, e)(p)), n.ok) {
+						if (Object(d.a)(Object(c.b)(b, e)(p)), n.ok) {
 							const e = l.a[b];
 							t(h({
 								invitePolicy: e
@@ -25527,4 +25518,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.01cd18ffb950b4b02e96.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.10e58a91a1cb548b31b6.js.map

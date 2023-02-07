@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.d7d76fa2ea080c42b849.js
-// Retrieved at 2/7/2023, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.161e9eee1c7e0ad815f7.js
+// Retrieved at 2/7/2023, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./node_modules/lodash/map.js": function(e, t, s) {
@@ -41,11 +41,12 @@
 					onClick: h,
 					onAddUserToQuickReplyList: b,
 					children: v,
-					style: x
+					style: x,
+					pageType: f
 				} = e;
 				return r.a.createElement(c.t, {
 					onClick: e => {
-						if (h && h(e), t(), _ === o.awardNotification) return b();
+						if (h && h(e), t(f), _ === o.awardNotification) return b();
 						i(Object(l.b)(a))
 					},
 					className: n,
@@ -64,8 +65,8 @@
 					userId: o
 				} = t;
 				return {
-					onStartChat: () => {
-						e(Object(a.b)(o, s))
+					onStartChat: t => {
+						e(Object(a.b)(o, s, t))
 					},
 					onAddUserToQuickReplyList: () => {
 						e(Object(a.a)(o))
@@ -182,8 +183,8 @@
 				duration: c.a
 			};
 			t.default = e => {
-				var t, s, o, x, f, R, C, j, T, w;
-				const g = Object(r.d)(),
+				var t, s, o, x, f, R, C, T, j, g;
+				const w = Object(r.d)(),
 					{
 						context: E,
 						deeplinkUrl: N,
@@ -201,8 +202,8 @@
 				let V = null === (s = null == E ? void 0 : E.comment) || void 0 === s ? void 0 : s.id,
 					H = (null === (o = null == E ? void 0 : E.post) || void 0 === o ? void 0 : o.id) || (null === (f = null === (x = null == E ? void 0 : E.comment) || void 0 === x ? void 0 : x.postInfo) || void 0 === f ? void 0 : f.id);
 				const W = null === (R = null == E ? void 0 : E.subreddit) || void 0 === R ? void 0 : R.id,
-					K = null === (j = null === (C = null == E ? void 0 : E.awarding) || void 0 === C ? void 0 : C.award) || void 0 === j ? void 0 : j.id,
-					J = null === (w = null === (T = null == E ? void 0 : E.awarding) || void 0 === T ? void 0 : T.awarder) || void 0 === w ? void 0 : w.id;
+					K = null === (T = null === (C = null == E ? void 0 : E.awarding) || void 0 === C ? void 0 : C.award) || void 0 === T ? void 0 : T.id,
+					J = null === (g = null === (j = null == E ? void 0 : E.awarding) || void 0 === j ? void 0 : j.awarder) || void 0 === g ? void 0 : g.id;
 				if (U === v.a.CommentFollow || U === v.a.PostFollow) {
 					const e = (e => {
 						const t = {},
@@ -224,10 +225,10 @@
 								parentCommentId: V,
 								commentsPageKey: e
 							};
-						g(Object(d.h)(t)), D({
+						w(Object(d.h)(t)), D({
 							position: h.d.SECOND
 						})
-					} else e.preventDefault(), g(Object(c.f)(O))
+					} else e.preventDefault(), w(Object(c.f)(O))
 				};
 				return (() => {
 					switch (U) {
@@ -241,7 +242,7 @@
 										position: h.d.SECOND,
 										postId: H,
 										subredditId: W
-									}) : (e.preventDefault(), g(Object(c.f)(O)))
+									}) : (e.preventDefault(), w(Object(c.f)(O)))
 								},
 								s = I._("Check It Out", null, {
 									hk: "3mzMCI"
@@ -293,7 +294,7 @@
 								e.preventDefault(), J ? D({
 									position: h.d.SECOND,
 									awardId: K
-								}) : g(Object(c.f)(O))
+								}) : w(Object(c.f)(O))
 							};
 							return n.a.createElement(l.b, {
 								userId: J,
@@ -307,7 +308,8 @@
 									[y.a.isUnread]: k,
 									[y.a.isNightMode]: A,
 									[y.a.isFullWidth]: S
-								})
+								}),
+								pageType: "notification"
 							}, n.a.createElement(b.a, {
 								name: "chat_new",
 								className: y.a.replyIcon
@@ -520,4 +522,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.d7d76fa2ea080c42b849.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.161e9eee1c7e0ad815f7.js.map

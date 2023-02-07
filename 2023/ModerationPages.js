@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.d61072d1340a7a3e3eb7.js
-// Retrieved at 2/7/2023, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.f644fc5f9c222c189aa7.js
+// Retrieved at 2/7/2023, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -22249,11 +22249,12 @@
 					onClick: f,
 					onAddUserToQuickReplyList: h,
 					children: g,
-					style: _
+					style: _,
+					pageType: v
 				} = e;
 				return o.a.createElement(c.t, {
 					onClick: e => {
-						if (f && f(e), t(), b === s.awardNotification) return h();
+						if (f && f(e), t(v), b === s.awardNotification) return h();
 						i(Object(l.b)(a))
 					},
 					className: r,
@@ -22272,8 +22273,8 @@
 					userId: s
 				} = t;
 				return {
-					onStartChat: () => {
-						e(Object(a.b)(s, n))
+					onStartChat: t => {
+						e(Object(a.b)(s, n, t))
 					},
 					onAddUserToQuickReplyList: () => {
 						e(Object(a.a)(s))
@@ -74756,4 +74757,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.d61072d1340a7a3e3eb7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.f644fc5f9c222c189aa7.js.map
