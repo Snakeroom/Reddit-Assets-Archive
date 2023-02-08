@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.dd161cfa7810d992b557.js
-// Retrieved at 2/7/2023, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.e34256fe6e4489acbf8b.js
+// Retrieved at 2/8/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/backo2/index.js": function(e, t) {
@@ -3450,7 +3450,7 @@
 					} = e;
 					return h.a.createElement("div", {
 						ref: o,
-						className: Object(s.a)(t, {
+						className: Object(s.a)(t, oo.a.ScrollerWrapper, {
 							[oo.a.loading]: n
 						})
 					}, !n && r.isPrevLoading && h.a.createElement(ro, {
@@ -4563,4 +4563,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.dd161cfa7810d992b557.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.e34256fe6e4489acbf8b.js.map
