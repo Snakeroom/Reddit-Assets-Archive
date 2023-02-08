@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SettingsPanel.9a5fdd6ac165744ee005.js
-// Retrieved at 2/7/2023, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SettingsPanel.d71390814d417b013c8d.js
+// Retrieved at 2/8/2023, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SettingsPanel"], {
 		"./src/chat/components/Sidebar/SettingsPanel/SettingsGroup/index.m.less": function(e, t, a) {
@@ -127,19 +127,19 @@
 						hk: "1iyaXi"
 					})))
 				},
-				j = a("./src/chat/components/Sidebar/SettingsPanel/SettingsGroup/index.m.less"),
-				g = a.n(j);
+				g = a("./src/chat/components/Sidebar/SettingsPanel/SettingsGroup/index.m.less"),
+				j = a.n(g);
 			var O = e => {
 					let {
 						headerText: t,
 						children: a
 					} = e;
 					return s.a.createElement("div", {
-						className: g.a.SettingsGroup
+						className: j.a.SettingsGroup
 					}, s.a.createElement("div", {
-						className: g.a.Header
+						className: j.a.Header
 					}, t), a ? s.a.createElement("div", {
-						className: g.a.Content
+						className: j.a.Content
 					}, a) : null)
 				},
 				w = a("./src/lib/classNames/index.ts"),
@@ -270,8 +270,8 @@
 				BLOCK_USER: ke,
 				LEAVE_CHAT: Se,
 				LEAVE_GROUP: fe,
-				MARK_ALL_AS_READ: je
-			} = ve.a, ge = e => {
+				MARK_ALL_AS_READ: ge
+			} = ve.a, je = e => {
 				switch (e) {
 					case P.About:
 						return {
@@ -365,16 +365,16 @@
 					l = Object(r.d)(),
 					[m, b] = Object(c.useState)(null),
 					A = Object(r.e)(e => Object(p.N)(e, t.channelId)),
-					x = Object(r.e)(pe.r),
-					E = Object(r.e)(pe.f),
-					k = Object(r.e)(pe.c),
-					S = Object(r.e)(pe.d),
-					j = E || k || S,
-					g = Object(r.e)(p.a),
+					x = Object(r.e)(pe.s),
+					E = Object(r.e)(pe.g),
+					k = Object(r.e)(pe.d),
+					S = Object(r.e)(pe.e),
+					g = E || k || S,
+					j = Object(r.e)(p.a),
 					w = Object(r.e)(_e.e),
 					L = Object(r.e)(Ae.d),
 					M = Object(r.e)(p.t),
-					N = g && t.type === be.b.Group,
+					N = j && t.type === be.b.Group,
 					C = Object(c.useMemo)(() => {
 						if (t) switch (t.type) {
 							case be.b.Direct:
@@ -429,17 +429,17 @@
 									b(ke);
 									break;
 								case P.MarkAllAsRead:
-									b(je);
+									b(ge);
 									break;
 								case P.PrivacyAndSupport:
 									return l(Object(i.g)())
 							}
 						})(e),
-						isSelected: !!L && ge(e).channelAction === L,
+						isSelected: !!L && je(e).channelAction === L,
 						key: e,
-						text: ge(e).text,
-						shouldShowArrow: ge(e).shouldShowArrow
-					}, ge(e).icon));
+						text: je(e).text,
+						shouldShowArrow: je(e).shouldShowArrow
+					}, je(e).icon));
 				return s.a.createElement("div", {
 					className: Ee.a.SettingsPanel
 				}, s.a.createElement("div", {
@@ -463,7 +463,7 @@
 					headerText: n.fbt._("Host tools", null, {
 						hk: "2cuDsU"
 					})
-				}, T(W.hostTools)) : null, j && s.a.createElement(O, {
+				}, T(W.hostTools)) : null, g && s.a.createElement(O, {
 					headerText: (() => N ? n.fbt._("Global settings", null, {
 						hk: "1wpYs8"
 					}) : n.fbt._("Global", null, {
@@ -481,7 +481,7 @@
 							}) : null;
 						case fe:
 							return s.a.createElement(_, null);
-						case je:
+						case ge:
 							return s.a.createElement(f, null);
 						case Se:
 							return M ? s.a.createElement(v, {
@@ -522,16 +522,16 @@
 						}
 					})(e),
 					key: e,
-					text: ge(e).text,
-					shouldShowArrow: ge(e).shouldShowArrow
-				}, ge(e).icon)))(W.liveChat))))
+					text: je(e).text,
+					shouldShowArrow: je(e).shouldShowArrow
+				}, je(e).icon)))(W.liveChat))))
 			};
 			t.default = e => {
 				let {
 					channel: t,
 					liveChatPost: a
 				} = e;
-				return Object(r.e)(pe.j) && a ? s.a.createElement(we, {
+				return Object(r.e)(pe.k) && a ? s.a.createElement(we, {
 					liveChatPost: a
 				}) : t ? s.a.createElement(Oe, {
 					channel: t
@@ -566,4 +566,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SettingsPanel.9a5fdd6ac165744ee005.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SettingsPanel.d71390814d417b013c8d.js.map

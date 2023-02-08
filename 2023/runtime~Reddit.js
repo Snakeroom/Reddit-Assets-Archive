@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.a856b212c8fc4aaaa60f.js
-// Retrieved at 2/8/2023, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.c4591aff0008da2de707.js
+// Retrieved at 2/8/2023, 12:40:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -812,7 +812,7 @@
 					MembershipPaywallPage: "424789ecdb51dcae1201",
 					FlairEdit: "c302633b1c486efbe95d",
 					"vendors~Chat~RedesignChat": "31d6cfe0d16ae931b73c",
-					"Chat~RedesignChat": "e1add3b59164f2708260",
+					"Chat~RedesignChat": "cd9eb8271b0fa665560e",
 					RedesignChat: "955904ec3e6ff0fb165e",
 					ModListing: "610c78bce4621df6e502",
 					"vendors~Subreddit~SubredditWiki": "31d6cfe0d16ae931b73c",
@@ -1497,16 +1497,16 @@
 						"reddit-components-Econ-Prediction-EndTimeModal": "f7977881e652a053ff06",
 						"reddit-components-PostCreationForm-PredictionEditor-InactivityModal": "c69b240b5733aa348258",
 						"reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal": "5416dc67e1ff136cabb0",
-						"translations/bn_BD-json": "3dcee60582090744aee7",
-						"translations/de_DE-json": "68262b2447a9cb9a81b1",
-						"translations/es_ES-json": "2c2ed1211dbbc6ec02fe",
-						"translations/es_MX-json": "5dcee20b15b758148c3e",
-						"translations/fr_FR-json": "b6aede7b1838df2deafc",
-						"translations/hi_IN-json": "c896d0df051b320b19d0",
-						"translations/it_IT-json": "b67b6e6a08c3e80fb12f",
-						"translations/pseudo-json": "ec4367d00773c726512d",
-						"translations/pt_BR-json": "8461f6067bc42eb81e9f",
-						"translations/pt_PT-json": "1b9684834292efaa16ff",
+						"translations/bn_BD-json": "b7e79ab5372061a22e71",
+						"translations/de_DE-json": "07c68eca28806f90ab8d",
+						"translations/es_ES-json": "b9e80597ca0bc95c3ae1",
+						"translations/es_MX-json": "88f7222f9d7e2f7c9603",
+						"translations/fr_FR-json": "5ecf6f46dc83b151bd95",
+						"translations/hi_IN-json": "38140d156e6b5254ee30",
+						"translations/it_IT-json": "e036fee1ccfc1e9cc502",
+						"translations/pseudo-json": "72cf6070f7edf5c2cd61",
+						"translations/pt_BR-json": "3d22043b47cb46d7d64a",
+						"translations/pt_PT-json": "15872f69b5f4bae611d6",
 						"vendors~AdminPanel": "9abedef941b07fd50b75",
 						AdminPanel: "ea29cf5691df8fb3108b",
 						"vendors~Avatar~ChatPost~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~RealtimeGQLSubscr~bfab320d": "a668d51b1ce27b994b5f",
@@ -1526,7 +1526,7 @@
 						MembershipPaywallPage: "0580bf8b1a0c58aba8f4",
 						FlairEdit: "68badc4e7e27b29bcfbf",
 						"vendors~Chat~RedesignChat": "1913d26467681b3a7b06",
-						"Chat~RedesignChat": "4a159026346dfcba3faa",
+						"Chat~RedesignChat": "350796c05692a2eff13d",
 						RedesignChat: "f10b1345033dccb96948",
 						ModListing: "71cb414ebe3f54a57f55",
 						"vendors~Subreddit~SubredditWiki": "c17b16c26feb8de5d65f",
@@ -1644,15 +1644,15 @@
 						InvitedChannelsPanel: "f57fcd13a7ec141ab38f",
 						OverlayBlockUser: "59fa63ff70b232b91684",
 						OverlayChannelRemoval: "3e99f981552a43c29d99",
-						OverlayCreateChannel: "2413c4fbd726c2be56fd",
+						OverlayCreateChannel: "b8de9ba54dc79597e0ff",
 						OverlayDeleteMessage: "1ae9c9e0f395114e902c",
-						OverlayDirectsEmptyState: "a7c0340c9a966da4772b",
+						OverlayDirectsEmptyState: "d62fa8b2a726c24178d0",
 						OverlayGroupAbout: "d7021ee4fd4f7167ec66",
 						OverlayLinkSharingSettings: "0f3c7ecbb65b33b621e5",
 						OverlayNSFWWarning: "2b052f9d71f8d4d481ad",
 						OverlayPrivacyAndSupport: "f787e549328ccd70c258",
 						OverlayThemes: "1881a69786a74cfb88ce",
-						SettingsPanel: "9a5fdd6ac165744ee005",
+						SettingsPanel: "d71390814d417b013c8d",
 						CommentRichUnit: "db84e2b5da3c25aad56b",
 						PostRichUnit: "06f02b21a6809a869707",
 						"SubredditTopContent~TopWeekPostsDiscoveryUnit": "db860da1b245c6432e79",
@@ -1777,4 +1777,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.a856b212c8fc4aaaa60f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.c4591aff0008da2de707.js.map

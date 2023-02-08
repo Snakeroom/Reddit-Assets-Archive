@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7f32e7844e7beb789248.js
-// Retrieved at 2/8/2023, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ac5a22d6ee31bafae6b1.js
+// Retrieved at 2/8/2023, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1636,7 +1636,7 @@
 					return l
 				})),
 				function(e) {
-					e.EconRpanAvatar = "web_econ_avatar_in_rpan", e.UiRefreshBubblePreset = "ui_refresh_bubble_preset", e.D2xChatNicknamePainted = "d2x_chat_nickname_painted", e.ChatImagesRenderKillSwitch = "web_chat_mediashare_images_killswitch", e.AEBlockedUserChatWeb = "ae_blocked_user_chat_web", e.D2XChatReactionsKillSwitch = "d2x_chat_reactions_killswitch", e.BlockedUserChatWebKillSwitch = "d2x_blocked_user_chat_web_killswitch", e.ChatSettingsRevampKillSwitch = "d2x_chat_settings_revamp_killswitch", e.LiveChatInChatTab = "d2x_corechat_live_chat_in_chat_tab", e.LiveChatCommentStreamingKillSwitch = "d2x_corechat_live_comment_stream_killswitch", e.LiveChatUserCount = "d2x_live_chat_user_count", e.EnableHappeningNowPage = "d2x_enable_happening_now_page", e.LiveChatNUXVideo = "d2x_enable_happening_now_page", e.ChatSettingsTheme = "d2x_chat_settings_theme", e.ChatSettingsMarkAsRead = "d2x_chat_settings_mark_as_read", e.ChatSettingsPrivacy = "d2x_chat_settings_privacy", e.RedditChatEnabled = "web_chat_new_sync", e.RedditChatNewDirectInMatrix = "web_chat_new_direct", e.RedditChatNewRoomsInMatrix = "web_chat_new_rooms"
+					e.EconRpanAvatar = "web_econ_avatar_in_rpan", e.UiRefreshBubblePreset = "ui_refresh_bubble_preset", e.D2xChatNicknamePainted = "d2x_chat_nickname_painted", e.ChatImagesRenderKillSwitch = "web_chat_mediashare_images_killswitch", e.AEBlockedUserChatWeb = "ae_blocked_user_chat_web", e.D2XChatReactionsKillSwitch = "d2x_chat_reactions_killswitch", e.BlockedUserChatWebKillSwitch = "d2x_blocked_user_chat_web_killswitch", e.ChatSettingsRevampKillSwitch = "d2x_chat_settings_revamp_killswitch", e.LiveChatInChatTab = "d2x_corechat_live_chat_in_chat_tab", e.LiveChatCommentStreamingKillSwitch = "d2x_corechat_live_comment_stream_killswitch", e.LiveChatUserCount = "d2x_live_chat_user_count", e.EnableHappeningNowPage = "d2x_enable_happening_now_page", e.LiveChatNUXVideo = "d2x_enable_happening_now_page", e.ChatSettingsTheme = "d2x_chat_settings_theme", e.ChatSettingsMarkAsRead = "d2x_chat_settings_mark_as_read", e.ChatSettingsPrivacy = "d2x_chat_settings_privacy", e.RedditChatEnabled = "web_chat_new_sync", e.RedditChatNewDirectInMatrix = "web_chat_new_direct", e.RedditChatNewRoomsInMatrix = "web_chat_new_rooms", e.ChatFilterPills = "web_corechat_filter_pills"
 				}(n || (n = {})),
 				function(e) {
 					e.Control1 = "control_1", e.Control2 = "control_2"
@@ -1792,7 +1792,7 @@
 					_ = Object(s.c)(o.r.CHAT, o.A.CHAT_SHOW_THEMES_PROMPT_COUNT_KEY, i || "unknown");
 					const n = Object(s.b)(_);
 					let r = null == n ? 0 : n;
-					Object(l.o)(t) && !Object(c.e)(t) && e.dispatch(Object(d.chatThemeShowPromptCountSetAction)(++r))
+					Object(l.p)(t) && !Object(c.e)(t) && e.dispatch(Object(d.chatThemeShowPromptCountSetAction)(++r))
 				});
 			t.a = e => {
 				if ("undefined" == typeof window) return a.a;
@@ -2115,7 +2115,7 @@
 				u = Object(s.c)(o.r.CHAT, o.A.CHAT_UPLOAD_PROMPT_COUNT_KEY, i || "unknown");
 				const n = Object(s.b)(u);
 				let r = null == n ? 0 : n;
-				!Object(l.h)(t) && !Object(c.e)(t) && e.dispatch(Object(d.d)(++r))
+				!Object(l.i)(t) && !Object(c.e)(t) && e.dispatch(Object(d.d)(++r))
 			});
 			t.a = e => {
 				if ("undefined" == typeof window) return a.a;
@@ -3568,42 +3568,44 @@
 		},
 		"./src/chat/selectors/experiments.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "q", (function() {
+			i.d(t, "r", (function() {
 				return _
-			})), i.d(t, "r", (function() {
+			})), i.d(t, "s", (function() {
 				return m
-			})), i.d(t, "o", (function() {
+			})), i.d(t, "p", (function() {
 				return p
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "i", (function() {
 				return h
 			})), i.d(t, "a", (function() {
 				return f
 			})), i.d(t, "b", (function() {
 				return b
-			})), i.d(t, "e", (function() {
-				return g
-			})), i.d(t, "j", (function() {
-				return v
-			})), i.d(t, "i", (function() {
-				return w
-			})), i.d(t, "l", (function() {
-				return y
-			})), i.d(t, "g", (function() {
-				return E
-			})), i.d(t, "k", (function() {
-				return S
 			})), i.d(t, "f", (function() {
-				return T
-			})), i.d(t, "c", (function() {
-				return O
-			})), i.d(t, "d", (function() {
-				return I
-			})), i.d(t, "p", (function() {
-				return R
+				return g
+			})), i.d(t, "k", (function() {
+				return v
+			})), i.d(t, "j", (function() {
+				return w
 			})), i.d(t, "m", (function() {
-				return C
+				return y
+			})), i.d(t, "h", (function() {
+				return E
+			})), i.d(t, "l", (function() {
+				return S
+			})), i.d(t, "g", (function() {
+				return T
+			})), i.d(t, "d", (function() {
+				return O
+			})), i.d(t, "e", (function() {
+				return I
+			})), i.d(t, "q", (function() {
+				return R
 			})), i.d(t, "n", (function() {
+				return C
+			})), i.d(t, "o", (function() {
 				return F
+			})), i.d(t, "c", (function() {
+				return N
 			}));
 			i("./node_modules/lodash/isEmpty.js");
 			var n = i("./node_modules/lodash/memoize.js"),
@@ -3641,7 +3643,8 @@
 				I = Object(s.a)(e => u(e, o.b.ChatSettingsPrivacy), e => e === o.a),
 				R = Object(s.a)(e => u(e, o.b.RedditChatEnabled), e => e === o.a),
 				C = Object(s.a)(e => u(e, o.b.RedditChatNewDirectInMatrix), e => e === o.a),
-				F = Object(s.a)(e => u(e, o.b.RedditChatNewRoomsInMatrix), e => e === o.a)
+				F = Object(s.a)(e => u(e, o.b.RedditChatNewRoomsInMatrix), e => e === o.a),
+				N = Object(s.a)(e => u(e, o.b.ChatFilterPills), e => e === o.a)
 		},
 		"./src/chat/selectors/gifs.ts": function(e, t, i) {
 			"use strict";
@@ -5377,11 +5380,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("183075"),
+				buildNumber: Object(r.c)("183084"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1675868029"),
+				buildTimestamp: Object(r.b)("1675876167"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -8113,14 +8116,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cd7297d10deabca0d2ffe633cec0b720727f694e8-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c9db0f896cef5e125455362f6458da3322e6a25cf-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "d7297d10deabca0d2ffe633cec0b720727f694e8-production",
+						release: "9db0f896cef5e125455362f6458da3322e6a25cf-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(D.d)(), new d.Integrations.Breadcrumbs({
@@ -8656,7 +8659,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "d7297d10deabca0d2ffe633cec0b720727f694e8-production",
+							releaseClient: "9db0f896cef5e125455362f6458da3322e6a25cf-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -52191,4 +52194,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7f32e7844e7beb789248.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ac5a22d6ee31bafae6b1.js.map
