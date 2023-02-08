@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.06a957eee4c642c1bb76.js
-// Retrieved at 2/7/2023, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.2489f5aeb4539d399298.js
+// Retrieved at 2/8/2023, 5:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -5428,7 +5428,7 @@
 				isBlockingInterstitialEnabled: J.b,
 				isBlockingInterstitialV2Enabled: J.c,
 				isTalkLiveBarEnabled: H.q,
-				isTrendingHiddenEnabled: W.a,
+				isTrendingHiddenEnabled: W.b,
 				interestTopicRecommendations: ae.b,
 				reonboardingFlow: Q.k,
 				marketplaceFeedUnit: e => Object(K.a)(e) ? Object($.a)(e) : null,
@@ -5486,11 +5486,13 @@
 				}
 			}, {
 				ssr: !1
-			}), xe = e => l.a.createElement(_e, me({}, e, {
-				fallback: l.a.createElement(w.a, {
-					showCardView: !!e.showCardView
-				})
-			}));
+			}), xe = e => {
+				return Object(d.e)(e => Object(W.a)(e)) ? null : l.a.createElement(_e, me({}, e, {
+					fallback: l.a.createElement(w.a, {
+						showCardView: !!e.showCardView
+					})
+				}))
+			};
 			class Ee extends l.a.Component {
 				constructor(e) {
 					super(e), this.renderEmptySubreddit = () => l.a.createElement(E.a, {
@@ -5616,7 +5618,7 @@
 						listingKey: h,
 						showSignupUpsell: b,
 						liveBarItems: g
-					} = this.props, v = this.memoizedGetInjectChildren(this.props), f = c && !r && !s && !d, _ = r || !s, x = {
+					} = this.props, v = this.memoizedGetInjectChildren(this.props), f = c && !r && !s, _ = r || !s, x = {
 						baseUrl: "",
 						countrySort: this.props.countrySort,
 						sort: this.props.sort,
@@ -5635,7 +5637,7 @@
 						trendingUnit: f && l.a.createElement(xe, {
 							showCardView: p === R.g.Large
 						}),
-						content: l.a.createElement(o.Fragment, null, f && l.a.createElement(P.a, {
+						content: l.a.createElement(o.Fragment, null, f && !d && l.a.createElement(P.a, {
 							className: de.a.duHeader
 						}, ue._("Popular posts", null, {
 							hk: "36DJb4"
@@ -5948,4 +5950,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.06a957eee4c642c1bb76.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.2489f5aeb4539d399298.js.map

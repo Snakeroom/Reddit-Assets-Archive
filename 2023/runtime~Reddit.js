@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.b886214c18d6e3d31c27.js
-// Retrieved at 2/8/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.10d08438b96a07a84020.js
+// Retrieved at 2/8/2023, 5:00:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1420,7 +1420,7 @@
 						FramedGild: "5cda3622d5f2cc6d9e75",
 						GildModal: "086195bd13b2a2b62691",
 						HappeningNow: "0d31e7f13eb93b6eabeb",
-						Frontpage: "06a957eee4c642c1bb76",
+						Frontpage: "2489f5aeb4539d399298",
 						PostSetPage: "39bf7d3a6bd7c71a1891",
 						Topic: "d54dc956f11d8efbb195",
 						EconTopAwardersModal: "9d750b7861ae07a19c3a",
@@ -1531,7 +1531,7 @@
 						ModListing: "71cb414ebe3f54a57f55",
 						"vendors~Subreddit~SubredditWiki": "c17b16c26feb8de5d65f",
 						"vendors~PostCreation~Subreddit": "e1c74d9c118cc2abc046",
-						Subreddit: "bf56de59e83015ffb0da",
+						Subreddit: "3b0f884e3035fc516b3c",
 						CommentsPage: "b99cc6cf3efd70d640f6",
 						"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "fbf6b3871488094312c2",
 						CryptoHarbergerTaxManageModal: "012b7599ba7aeda39444",
@@ -1777,4 +1777,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.b886214c18d6e3d31c27.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.10d08438b96a07a84020.js.map

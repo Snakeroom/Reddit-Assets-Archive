@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.bf56de59e83015ffb0da.js
-// Retrieved at 2/7/2023, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.3b0f884e3035fc516b3c.js
+// Retrieved at 2/8/2023, 5:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -22151,7 +22151,7 @@
 					});
 					return (null === (r = null == s ? void 0 : s.myRedditSettings) || void 0 === r ? void 0 : r.isEnabled) && Object(je.a)(e)
 				},
-				isTrendingHiddenEnabled: Se.a,
+				isTrendingHiddenEnabled: Se.b,
 				isVoteCountAnimationEnabled: Le.h,
 				isCountAnimShadowTestEnabled: Le.e,
 				isHotPotatoEmbedEnabled: Ie.c,
@@ -22277,12 +22277,14 @@
 				}
 			}, {
 				ssr: !1
-			}), Pt = e => u.a.createElement(Tt, it({}, e, {
-				fallback: u.a.createElement($.a, {
-					className: e.className,
-					showCardView: !!e.showCardView
-				})
-			})), Lt = Object(r.a)({
+			}), Pt = e => {
+				return Object(m.e)(e => Object(Se.a)(e)) ? null : u.a.createElement(Tt, it({}, e, {
+					fallback: u.a.createElement($.a, {
+						className: e.className,
+						showCardView: !!e.showCardView
+					})
+				}))
+			}, Lt = Object(r.a)({
 				resolved: {},
 				chunkName: () => "FrontpageSidebar",
 				isReady(e) {
@@ -22619,7 +22621,7 @@
 					const Te = Object(me.a)(e, P, re);
 					if (Te && !v) return u.a.createElement(D.default, Te);
 					const Pe = I === ie.g.Large,
-						Le = E && !j,
+						Le = E,
 						De = V ? V.id : void 0,
 						Re = !N.params.sort && ce && !ce.isSubscribed && ce.postIds && ce.postIds.length >= lt && !O && !o && !Ce && !Ie,
 						Be = {
@@ -22680,7 +22682,7 @@
 								subreddit: V,
 								listingKey: S,
 								listingName: xe
-							}), Le && u.a.createElement(X.a, {
+							}), Le && !j && u.a.createElement(X.a, {
 								className: st.a.duHeader
 							}, at._("Popular posts", null, {
 								hk: "Gfyj2"
@@ -25025,14 +25027,21 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return i
+			})), n.d(t, "b", (function() {
+				return a
 			}));
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = n("./node_modules/reselect/es/index.js");
 			const i = Object(o.a)(e => Object(s.c)(e, {
-				experimentEligibilitySelector: s.a,
-				experimentName: r.Bb
-			}), e => e === r.ee.HideTrending)
+					experimentEligibilitySelector: s.a,
+					experimentName: r.Bb
+				}), e => e === r.ee.HideTrending),
+				a = Object(o.a)(e => Object(s.c)(e, {
+					experimentEligibilitySelector: s.a,
+					experimentName: r.Bb,
+					expEventOverride: !1
+				}), e => e === r.ee.HideTrending)
 		},
 		"./src/reddit/selectors/experiments/joinOptimizations.ts": function(e, t, n) {
 			"use strict";
@@ -25783,4 +25792,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.bf56de59e83015ffb0da.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.3b0f884e3035fc516b3c.js.map
