@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.9d502882ceda08c8fafc.js
-// Retrieved at 2/8/2023, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.bccdfd350e25e4672bdc.js
+// Retrieved at 2/8/2023, 7:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1555,6 +1555,18 @@
 						} else i(m)
 					} else i(Ee(b.error))
 				}
+		},
+		"./src/reddit/actions/shredditPDPExperiementHeaderAction.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return r
+			})), s.d(t, "b", (function() {
+				return o
+			}));
+			var n = s("./src/lib/makeActionCreator/index.ts");
+			const r = "SHREDDIT_PDP_EXPERIMENT_HEADER_ACTION",
+				o = (Object(n.a)(r), "SHREDDIT_PDP_EXPERIMENT_HEADER_ACTION_V2");
+			Object(n.a)(o)
 		},
 		"./src/reddit/components/CCM/ModPreviousActions/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -8001,24 +8013,22 @@
 		"./src/reddit/reducers/user/experiments/shredditPDPExperimentHeader/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return o
+				return n
 			}));
-			var n = s("./src/lib/sentry/index.ts"),
-				r = s("./src/lib/makeActionCreator/index.ts");
-			Object(r.a)("SHREDDIT_PDP_EXPERIMENT_HEADER_ACTION"), Object(r.a)("SHREDDIT_PDP_EXPERIMENT_HEADER_ACTION_V2");
-			var o;
+			var n, r = s("./src/lib/sentry/index.ts"),
+				o = s("./src/reddit/actions/shredditPDPExperiementHeaderAction.ts");
 			s("./src/reddit/constants/experiments.ts");
 			! function(e) {
 				e[e.Treatment = 0] = "Treatment", e[e.Control = 1] = "Control", e[e.Off = 2] = "Off"
-			}(o || (o = {}));
-			const i = o.Off;
+			}(n || (n = {}));
+			const i = n.Off;
 			t.b = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : i,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case "SHREDDIT_PDP_EXPERIMENT_HEADER_ACTION_V2":
-					case "SHREDDIT_PDP_EXPERIMENT_HEADER_ACTION":
-						return n.c.captureException("PDP Experiment Header should only be set on the server."), e;
+					case o.b:
+					case o.a:
+						return r.c.captureException("PDP Experiment Header should only be set on the server."), e;
 					default:
 						return e
 				}
@@ -8093,28 +8103,48 @@
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return u
+				return b
 			})), s.d(t, "b", (function() {
-				return m
+				return f
 			}));
 			var n = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
-				o = s("./src/reddit/reducers/user/experiments/shredditPDPExperimentHeader/index.ts"),
-				i = s("./node_modules/reselect/es/index.js"),
-				a = s("./src/reddit/selectors/user.ts");
-			const d = Object(i.a)(a.S, e => !e),
-				c = Object(i.a)(e => Object(r.c)(e, {
-					experimentEligibilitySelector: d,
+				o = s("./src/reddit/helpers/trackers/experiments/user.ts"),
+				i = s("./src/reddit/reducers/user/experiments/shredditPDPExperimentHeader/index.ts"),
+				a = s("./src/reddit/selectors/telemetry.ts"),
+				d = s("./node_modules/reselect/es/index.js"),
+				c = s("./src/reddit/selectors/user.ts");
+			const l = Object(d.a)(c.S, e => !e),
+				u = e => e.user.experiments.shredditPDPExperimentInfo,
+				m = Object(d.a)(e => Object(r.c)(e, {
+					experimentEligibilitySelector: l,
 					experimentName: n.uf
-				}), e => e === n.Jd),
-				l = Object(i.a)(c, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? t : o.a.Off),
-				u = Object(i.a)(l, e => e === o.a.Treatment),
-				m = (e, t) => {
-					const s = l(t());
-					d(t()) && s !== o.a.Off && e.block(e => {
+				}), u, (e, t) => null != t || e === n.Jd),
+				p = Object(d.a)(m, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? t : i.a.Off),
+				b = Object(d.a)(p, e => e === i.a.Treatment),
+				h = Object(d.a)(p, u, (e, t) => e !== i.a.Off && null !== t),
+				f = (e, t) => {
+					const s = p(t());
+					l(t()) && s !== i.a.Off && e.block(e => {
 						if ((e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname))
-							if (s === o.a.Control) Object(r.d)(t(), n.vf, n.M.Control1);
-							else if (s === o.a.Treatment) return window.location.href = e.pathname, !1
+							if (s === i.a.Control)((e, t) => {
+								if (h(e)) {
+									const s = u(e);
+									if (null != s) {
+										const n = a.f(e),
+											r = a.sb(e),
+											i = a.ab(e);
+										Object(o.a)(n, r, i, {
+											id: s.id,
+											isOverride: !1,
+											name: s.name,
+											version: s.version,
+											variant: t
+										}, {})
+									}
+								} else Object(r.d)(e, n.vf, t)
+							})(t(), n.M.Control1);
+							else if (s === i.a.Treatment) return window.location.href = e.pathname, !1
 					})
 				}
 		},
@@ -8264,4 +8294,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.9d502882ceda08c8fafc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.bccdfd350e25e4672bdc.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.09680777981a4b0bd437.js
-// Retrieved at 2/8/2023, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ed0455c78c9cdecc888b.js
+// Retrieved at 2/8/2023, 7:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -5380,11 +5380,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("183139"),
+				buildNumber: Object(r.c)("183142"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1675899362"),
+				buildTimestamp: Object(r.b)("1675901254"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -8116,14 +8116,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cbc389cc0e8103151f7e9be167d260632637519ab-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c9ee89c7cc7557d5222e06da738cc35312c54392a-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "bc389cc0e8103151f7e9be167d260632637519ab-production",
+						release: "9ee89c7cc7557d5222e06da738cc35312c54392a-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(D.d)(), new d.Integrations.Breadcrumbs({
@@ -8659,7 +8659,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "bc389cc0e8103151f7e9be167d260632637519ab-production",
+							releaseClient: "9ee89c7cc7557d5222e06da738cc35312c54392a-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -24198,23 +24198,9 @@
 				u = i("./src/reddit/selectors/telemetry.ts"),
 				_ = i("./src/telemetry/index.ts"),
 				m = i("./src/telemetry/models/Event.ts");
-			const p = e => Object(_.a)(e),
-				h = (e, t, i, n, r) => {
-					Object(_.a)({
-						action: m.d.Expose,
-						actionInfo: void 0,
-						app: e,
-						experiment: n,
-						noun: m.e.UserId,
-						referrer: void 0,
-						request: i,
-						session: void 0,
-						source: m.f.Experiment,
-						user: t,
-						...r
-					})
-				};
-			var f = i("./src/server/helpers/canonicalUrl.tsx");
+			const p = e => Object(_.a)(e);
+			var h = i("./src/reddit/helpers/trackers/experiments/user.ts"),
+				f = i("./src/server/helpers/canonicalUrl.tsx");
 			const b = Object(n.a)(l.g, f.b, (e, t) => !!e && e === t),
 				g = (e, t) => {
 					if (!t.experimentEligibilitySelector(e)) return !1;
@@ -24286,7 +24272,7 @@
 						l = arguments.length > 8 ? arguments[8] : void 0;
 					if (!a) return;
 					const c = o();
-					if (!e) return t && !1 !== s && c[l] !== t && !w.includes(l) && (h(i, n, r, {
+					if (!e) return t && !1 !== s && c[l] !== t && !w.includes(l) && (Object(h.a)(i, n, r, {
 						id: -1,
 						isOverride: !0,
 						name: l,
@@ -24302,7 +24288,7 @@
 					if (p) {
 						const t = -1 === _,
 							o = c[u] === p;
-						t || o || !1 === s || w.includes(l) || (h(i, n, r, {
+						t || o || !1 === s || w.includes(l) || (Object(h.a)(i, n, r, {
 							...e,
 							isOverride: m,
 							variant: p
@@ -24317,7 +24303,7 @@
 						o = Object(l.c)(e, {
 							experimentName: t
 						});
-					null != o ? h(n, r, s, {
+					null != o ? Object(h.a)(n, r, s, {
 						...o,
 						variant: i,
 						isOverride: !1
@@ -29683,6 +29669,29 @@
 					noun: "verification_email",
 					source: "email"
 				})
+		},
+		"./src/reddit/helpers/trackers/experiments/user.ts": function(e, t, i) {
+			"use strict";
+			i.d(t, "a", (function() {
+				return s
+			}));
+			var n = i("./src/telemetry/index.ts"),
+				r = i("./src/telemetry/models/Event.ts");
+			const s = (e, t, i, s, o) => {
+				Object(n.a)({
+					action: r.d.Expose,
+					actionInfo: void 0,
+					app: e,
+					experiment: s,
+					noun: r.e.UserId,
+					referrer: void 0,
+					request: i,
+					session: void 0,
+					source: r.f.Experiment,
+					user: t,
+					...o
+				})
+			}
 		},
 		"./src/reddit/helpers/trackers/global.ts": function(e, t, i) {
 			"use strict";
@@ -52194,4 +52203,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.09680777981a4b0bd437.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ed0455c78c9cdecc888b.js.map

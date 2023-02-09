@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.4ed8a7f5746d3fc21fa9.js
-// Retrieved at 2/8/2023, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.e148635abc14f8dad498.js
+// Retrieved at 2/8/2023, 7:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -20873,28 +20873,48 @@
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return u
+				return b
 			})), n.d(t, "b", (function() {
-				return m
+				return g
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
-				o = n("./src/reddit/reducers/user/experiments/shredditPDPExperimentHeader/index.ts"),
-				a = n("./node_modules/reselect/es/index.js"),
-				i = n("./src/reddit/selectors/user.ts");
-			const c = Object(a.a)(i.S, e => !e),
-				l = Object(a.a)(e => Object(r.c)(e, {
-					experimentEligibilitySelector: c,
+				o = n("./src/reddit/helpers/trackers/experiments/user.ts"),
+				a = n("./src/reddit/reducers/user/experiments/shredditPDPExperimentHeader/index.ts"),
+				i = n("./src/reddit/selectors/telemetry.ts"),
+				c = n("./node_modules/reselect/es/index.js"),
+				l = n("./src/reddit/selectors/user.ts");
+			const d = Object(c.a)(l.S, e => !e),
+				u = e => e.user.experiments.shredditPDPExperimentInfo,
+				m = Object(c.a)(e => Object(r.c)(e, {
+					experimentEligibilitySelector: d,
 					experimentName: s.uf
-				}), e => e === s.Jd),
-				d = Object(a.a)(l, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? t : o.a.Off),
-				u = Object(a.a)(d, e => e === o.a.Treatment),
-				m = (e, t) => {
-					const n = d(t());
-					c(t()) && n !== o.a.Off && e.block(e => {
+				}), u, (e, t) => null != t || e === s.Jd),
+				p = Object(c.a)(m, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? t : a.a.Off),
+				b = Object(c.a)(p, e => e === a.a.Treatment),
+				h = Object(c.a)(p, u, (e, t) => e !== a.a.Off && null !== t),
+				g = (e, t) => {
+					const n = p(t());
+					d(t()) && n !== a.a.Off && e.block(e => {
 						if ((e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname))
-							if (n === o.a.Control) Object(r.d)(t(), s.vf, s.M.Control1);
-							else if (n === o.a.Treatment) return window.location.href = e.pathname, !1
+							if (n === a.a.Control)((e, t) => {
+								if (h(e)) {
+									const n = u(e);
+									if (null != n) {
+										const s = i.f(e),
+											r = i.sb(e),
+											a = i.ab(e);
+										Object(o.a)(s, r, a, {
+											id: n.id,
+											isOverride: !1,
+											name: n.name,
+											version: n.version,
+											variant: t
+										}, {})
+									}
+								} else Object(r.d)(e, s.vf, t)
+							})(t(), s.M.Control1);
+							else if (n === a.a.Treatment) return window.location.href = e.pathname, !1
 					})
 				}
 		},
@@ -21258,4 +21278,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.4ed8a7f5746d3fc21fa9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.e148635abc14f8dad498.js.map
