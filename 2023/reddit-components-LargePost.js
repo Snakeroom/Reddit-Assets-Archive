@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.52bcf492b1dd1ab32dd0.js
-// Retrieved at 2/8/2023, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.3a60d4b42003b7419ca9.js
+// Retrieved at 2/9/2023, 10:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -9156,14 +9156,14 @@
 						experimentEligibilitySelector: o.a,
 						experimentName: n.hc
 					});
-					return !(!t || Object(n.jg)(t))
+					return !(!t || Object(n.ig)(t))
 				},
 				a = e => {
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
 						experimentName: n.Ub
 					});
-					return !(!t || Object(n.jg)(t))
+					return !(!t || Object(n.ig)(t))
 				}
 		},
 		"./src/reddit/selectors/experiments/commentSearchPdp.ts": function(e, t, s) {
@@ -9215,9 +9215,9 @@
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return b
+				return u
 			})), s.d(t, "b", (function() {
-				return h
+				return b
 			}));
 			var n = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
@@ -9226,22 +9226,18 @@
 				i = s("./src/reddit/selectors/telemetry.ts"),
 				d = s("./node_modules/reselect/es/index.js"),
 				c = s("./src/reddit/selectors/user.ts");
-			const l = Object(d.a)(c.S, e => !e),
-				m = e => e.user.experiments.shredditPDPExperimentInfo,
-				u = Object(d.a)(e => Object(o.c)(e, {
-					experimentEligibilitySelector: l,
-					experimentName: n.uf
-				}), m, (e, t) => null != t || e === n.Jd),
-				p = Object(d.a)(u, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? t : a.a.Off),
-				b = Object(d.a)(p, e => e === a.a.Treatment),
-				f = Object(d.a)(p, m, (e, t) => e !== a.a.Off && null !== t),
-				h = (e, t) => {
-					const s = p(t());
-					l(t()) && s !== a.a.Off && e.block(e => {
+			const l = e => e.user.experiments.shredditPDPExperimentInfo,
+				m = Object(d.a)(c.S, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? a.a.Off : t),
+				u = Object(d.a)(m, e => e === a.a.Treatment),
+				p = Object(d.a)(m, l, (e, t) => e !== a.a.Off && null !== t),
+				b = (e, t) => {
+					const s = t(),
+						d = m(s);
+					Object(c.S)(s) || d === a.a.Off || e.block(e => {
 						if ((e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname))
-							if (s === a.a.Control)((e, t) => {
-								if (f(e)) {
-									const s = m(e);
+							if (d === a.a.Control)((e, t) => {
+								if (p(e)) {
+									const s = l(e);
 									if (null != s) {
 										const n = i.f(e),
 											o = i.sb(e),
@@ -9254,9 +9250,9 @@
 											variant: t
 										}, {})
 									}
-								} else Object(o.d)(e, n.vf, t)
+								} else Object(o.d)(e, n.uf, t)
 							})(t(), n.M.Control1);
-							else if (s === a.a.Treatment) return window.location.href = e.pathname, !1
+							else if (d === a.a.Treatment) return window.location.href = e.pathname, !1
 					})
 				}
 		},
@@ -9269,10 +9265,10 @@
 				o = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const a = Object(n.a)(e => Object(r.c)(e, {
-					experimentName: o.Vf,
+					experimentName: o.Uf,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				i = Object(n.a)(a, e => e === o.Pf)
+				i = Object(n.a)(a, e => e === o.Of)
 		},
 		"./src/reddit/selectors/i18n/index.ts": function(e, t, s) {
 			"use strict";
@@ -9287,7 +9283,7 @@
 				a = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(o.jg)(t)
+					return Boolean(t) && !Object(o.ig)(t)
 				},
 				d = Object(n.a)(i, r.d, (e, t) => e && !t)
 		},
@@ -9380,4 +9376,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.52bcf492b1dd1ab32dd0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.3a60d4b42003b7419ca9.js.map

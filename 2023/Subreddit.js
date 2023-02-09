@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.629ddea43598f2dfbf1a.js
-// Retrieved at 2/8/2023, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.18cd9d3b89f1d71228a4.js
+// Retrieved at 2/9/2023, 10:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -24977,7 +24977,7 @@
 						experimentEligibilitySelector: o.S,
 						experimentName: r.rd
 					});
-					return !(!t || Object(r.jg)(t))
+					return !(!t || Object(r.ig)(t))
 				},
 				a = e => {
 					return Object(s.c)(e, {
@@ -25433,9 +25433,9 @@
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return b
+				return m
 			})), n.d(t, "b", (function() {
-				return h
+				return b
 			}));
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
@@ -25444,22 +25444,18 @@
 				a = n("./src/reddit/selectors/telemetry.ts"),
 				c = n("./node_modules/reselect/es/index.js"),
 				d = n("./src/reddit/selectors/user.ts");
-			const l = Object(c.a)(d.S, e => !e),
-				u = e => e.user.experiments.shredditPDPExperimentInfo,
-				m = Object(c.a)(e => Object(s.c)(e, {
-					experimentEligibilitySelector: l,
-					experimentName: r.uf
-				}), u, (e, t) => null != t || e === r.Jd),
-				p = Object(c.a)(m, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? t : i.a.Off),
-				b = Object(c.a)(p, e => e === i.a.Treatment),
-				f = Object(c.a)(p, u, (e, t) => e !== i.a.Off && null !== t),
-				h = (e, t) => {
-					const n = p(t());
-					l(t()) && n !== i.a.Off && e.block(e => {
+			const l = e => e.user.experiments.shredditPDPExperimentInfo,
+				u = Object(c.a)(d.S, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? i.a.Off : t),
+				m = Object(c.a)(u, e => e === i.a.Treatment),
+				p = Object(c.a)(u, l, (e, t) => e !== i.a.Off && null !== t),
+				b = (e, t) => {
+					const n = t(),
+						c = u(n);
+					Object(d.S)(n) || c === i.a.Off || e.block(e => {
 						if ((e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname))
-							if (n === i.a.Control)((e, t) => {
-								if (f(e)) {
-									const n = u(e);
+							if (c === i.a.Control)((e, t) => {
+								if (p(e)) {
+									const n = l(e);
 									if (null != n) {
 										const r = a.f(e),
 											s = a.sb(e),
@@ -25472,9 +25468,9 @@
 											variant: t
 										}, {})
 									}
-								} else Object(s.d)(e, r.vf, t)
+								} else Object(s.d)(e, r.uf, t)
 							})(t(), r.M.Control1);
-							else if (n === i.a.Treatment) return window.location.href = e.pathname, !1
+							else if (c === i.a.Treatment) return window.location.href = e.pathname, !1
 					})
 				}
 		},
@@ -25550,9 +25546,9 @@
 					experimentName: s.jd,
 					experimentEligibilitySelector: e => c(e, t)
 				}), e => e),
-				l = e => e === s.Rf.NoCommunityWidgets,
-				u = e => e === s.Rf.NoRulesModerators,
-				m = e => e === s.Rf.RelatedPostsDu
+				l = e => e === s.Qf.NoCommunityWidgets,
+				u = e => e === s.Qf.NoRulesModerators,
+				m = e => e === s.Qf.RelatedPostsDu
 		},
 		"./src/reddit/selectors/experiments/uxtsIntegration.ts": function(e, t, n) {
 			"use strict";
@@ -25824,4 +25820,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.629ddea43598f2dfbf1a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.18cd9d3b89f1d71228a4.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.4a7c6074d620040ef3d3.js
-// Retrieved at 2/7/2023, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.4e69871de2184c3f8882.js
+// Retrieved at 2/9/2023, 10:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit~StandalonePostPage", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -39340,29 +39340,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.ag
+						experimentName: o.Zf
 					}) === o.Jd
 				},
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.bg
+						experimentName: o.ag
 					}) === o.Jd
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.Zf
+						experimentName: o.Yf
 					});
-					return t === o.Sf.TypingIndicators || t === o.Sf.IndicatorsPlusCTA
+					return t === o.Rf.TypingIndicators || t === o.Rf.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.d)(e, {
-						experimentName: o.Zf
+						experimentName: o.Yf
 					});
-					return (null == t ? void 0 : t.variant) === o.Sf.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.Rf.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/experiments/uxtsIntegration.ts": function(e, t, n) {
@@ -40074,4 +40074,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.4a7c6074d620040ef3d3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.4e69871de2184c3f8882.js.map
