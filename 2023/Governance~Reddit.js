@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.e584a85dc8ef83014528.js
-// Retrieved at 2/8/2023, 5:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.20dd0a079d59ff7c1c44.js
+// Retrieved at 2/8/2023, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -25180,8 +25180,9 @@
 			}));
 			var r = n("./src/lib/sentry/index.ts"),
 				s = n("./src/lib/makeActionCreator/index.ts");
+			Object(s.a)("SHREDDIT_PDP_EXPERIMENT_HEADER_ACTION"), Object(s.a)("SHREDDIT_PDP_EXPERIMENT_HEADER_ACTION_V2");
 			var a;
-			Object(s.a)("SHREDDIT_PDP_EXPERIMENT_HEADER_ACTION");
+			n("./src/reddit/constants/experiments.ts");
 			! function(e) {
 				e[e.Treatment = 0] = "Treatment", e[e.Control = 1] = "Control", e[e.Off = 2] = "Off"
 			}(a || (a = {}));
@@ -25190,6 +25191,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : o,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
+					case "SHREDDIT_PDP_EXPERIMENT_HEADER_ACTION_V2":
 					case "SHREDDIT_PDP_EXPERIMENT_HEADER_ACTION":
 						return r.c.captureException("PDP Experiment Header should only be set on the server."), e;
 					default:
@@ -25546,4 +25548,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.e584a85dc8ef83014528.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.20dd0a079d59ff7c1c44.js.map
