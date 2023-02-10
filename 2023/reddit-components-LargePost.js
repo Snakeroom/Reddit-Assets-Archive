@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.3a60d4b42003b7419ca9.js
-// Retrieved at 2/9/2023, 10:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.6a7c40b61b83adff6e01.js
+// Retrieved at 2/10/2023, 2:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -9215,46 +9215,16 @@
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return u
-			})), s.d(t, "b", (function() {
-				return b
+				return d
 			}));
-			var n = s("./src/reddit/constants/experiments.ts"),
-				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
-				r = s("./src/reddit/helpers/trackers/experiments/user.ts"),
-				a = s("./src/reddit/reducers/user/experiments/shredditPDPExperimentHeader/index.ts"),
-				i = s("./src/reddit/selectors/telemetry.ts"),
-				d = s("./node_modules/reselect/es/index.js"),
-				c = s("./src/reddit/selectors/user.ts");
-			const l = e => e.user.experiments.shredditPDPExperimentInfo,
-				m = Object(d.a)(c.S, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? a.a.Off : t),
-				u = Object(d.a)(m, e => e === a.a.Treatment),
-				p = Object(d.a)(m, l, (e, t) => e !== a.a.Off && null !== t),
-				b = (e, t) => {
-					const s = t(),
-						d = m(s);
-					Object(c.S)(s) || d === a.a.Off || e.block(e => {
-						if ((e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname))
-							if (d === a.a.Control)((e, t) => {
-								if (p(e)) {
-									const s = l(e);
-									if (null != s) {
-										const n = i.f(e),
-											o = i.sb(e),
-											a = i.ab(e);
-										Object(r.a)(n, o, a, {
-											id: s.id,
-											isOverride: !1,
-											name: s.name,
-											version: s.version,
-											variant: t
-										}, {})
-									}
-								} else Object(o.d)(e, n.uf, t)
-							})(t(), n.M.Control1);
-							else if (d === a.a.Treatment) return window.location.href = e.pathname, !1
-					})
-				}
+			s("./src/reddit/constants/experiments.ts"), s("./src/reddit/helpers/chooseVariant/index.ts"), s("./src/reddit/helpers/trackers/experiments/user.ts");
+			var n = s("./src/reddit/reducers/user/experiments/shredditPDPExperimentHeader/index.ts"),
+				o = (s("./src/reddit/selectors/telemetry.ts"), s("./node_modules/reselect/es/index.js")),
+				r = s("./src/reddit/selectors/user.ts");
+			const a = e => e.user.experiments.shredditPDPExperimentInfo,
+				i = Object(o.a)(r.S, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? n.a.Off : t),
+				d = Object(o.a)(i, e => e === n.a.Treatment);
+			Object(o.a)(i, a, (e, t) => e !== n.a.Off && null !== t)
 		},
 		"./src/reddit/selectors/experiments/web2x_cta.ts": function(e, t, s) {
 			"use strict";
@@ -9376,4 +9346,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.3a60d4b42003b7419ca9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.6a7c40b61b83adff6e01.js.map

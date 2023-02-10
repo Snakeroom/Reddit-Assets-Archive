@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.1c870c2f82502369490e.js
-// Retrieved at 2/9/2023, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.f3c6b567e4cb35baaca1.js
+// Retrieved at 2/10/2023, 2:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -17917,7 +17917,7 @@
 					})), l.dispatch(Y), Object($m.e)(l.getState()) && l.dispatch(Object(Jv.e)()), Object(P.requestIdleCallback)(() => {
 						const e = Ln.C();
 						(!e || e && Date.now() - e.lastUpdated >= k.E) && l.dispatch(Object(Oe.f)())
-					}), Object(eu.b)(t, () => l.getState())
+					})
 				},
 				raven: {
 					tags: {
@@ -20873,46 +20873,16 @@
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return m
-			})), n.d(t, "b", (function() {
-				return b
+				return c
 			}));
-			var s = n("./src/reddit/constants/experiments.ts"),
-				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
-				o = n("./src/reddit/helpers/trackers/experiments/user.ts"),
-				a = n("./src/reddit/reducers/user/experiments/shredditPDPExperimentHeader/index.ts"),
-				i = n("./src/reddit/selectors/telemetry.ts"),
-				c = n("./node_modules/reselect/es/index.js"),
-				l = n("./src/reddit/selectors/user.ts");
-			const d = e => e.user.experiments.shredditPDPExperimentInfo,
-				u = Object(c.a)(l.S, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? a.a.Off : t),
-				m = Object(c.a)(u, e => e === a.a.Treatment),
-				p = Object(c.a)(u, d, (e, t) => e !== a.a.Off && null !== t),
-				b = (e, t) => {
-					const n = t(),
-						c = u(n);
-					Object(l.S)(n) || c === a.a.Off || e.block(e => {
-						if ((e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname))
-							if (c === a.a.Control)((e, t) => {
-								if (p(e)) {
-									const n = d(e);
-									if (null != n) {
-										const s = i.f(e),
-											r = i.sb(e),
-											a = i.ab(e);
-										Object(o.a)(s, r, a, {
-											id: n.id,
-											isOverride: !1,
-											name: n.name,
-											version: n.version,
-											variant: t
-										}, {})
-									}
-								} else Object(r.d)(e, s.uf, t)
-							})(t(), s.M.Control1);
-							else if (c === a.a.Treatment) return window.location.href = e.pathname, !1
-					})
-				}
+			n("./src/reddit/constants/experiments.ts"), n("./src/reddit/helpers/chooseVariant/index.ts"), n("./src/reddit/helpers/trackers/experiments/user.ts");
+			var s = n("./src/reddit/reducers/user/experiments/shredditPDPExperimentHeader/index.ts"),
+				r = (n("./src/reddit/selectors/telemetry.ts"), n("./node_modules/reselect/es/index.js")),
+				o = n("./src/reddit/selectors/user.ts");
+			const a = e => e.user.experiments.shredditPDPExperimentInfo,
+				i = Object(r.a)(o.S, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? s.a.Off : t),
+				c = Object(r.a)(i, e => e === s.a.Treatment);
+			Object(r.a)(i, a, (e, t) => e !== s.a.Off && null !== t)
 		},
 		"./src/reddit/selectors/experiments/uxtsIntegration.ts": function(e, t, n) {
 			"use strict";
@@ -21274,4 +21244,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.1c870c2f82502369490e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.f3c6b567e4cb35baaca1.js.map
