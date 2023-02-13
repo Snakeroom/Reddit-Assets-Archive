@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6583a90bf6e687145a18.js
-// Retrieved at 2/13/2023, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.b07d89eb053cec28f3cc.js
+// Retrieved at 2/13/2023, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -5380,11 +5380,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("183329"),
+				buildNumber: Object(r.c)("183350"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1676302405"),
+				buildTimestamp: Object(r.b)("1676307432"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -8116,14 +8116,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c2014269d15ccbd3a0e3fe969ca3302900d3da9e4-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c087101aa12ad03308b7e86783edf6b745ba48dc2-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "2014269d15ccbd3a0e3fe969ca3302900d3da9e4-production",
+						release: "087101aa12ad03308b7e86783edf6b745ba48dc2-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(D.d)(), new d.Integrations.Breadcrumbs({
@@ -8659,7 +8659,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "2014269d15ccbd3a0e3fe969ca3302900d3da9e4-production",
+							releaseClient: "087101aa12ad03308b7e86783edf6b745ba48dc2-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -13197,7 +13197,7 @@
 									username: s,
 									multiredditLabel: d
 								}),
-								onDisplay: () => Object(S.a)(Object(f.w)(i, `Sorry, we couldn't load ${p} results.`)(P))
+								onDisplay: () => Object(S.a)(Object(f.v)(i, `Sorry, we couldn't load ${p} results.`)(P))
 							}))
 						}(G)
 					}
@@ -15854,7 +15854,7 @@
 							hk: "1XMjgA"
 						}),
 						buttonAction: D(e),
-						onDisplay: () => Object(E.a)(Object(h.w)(M, "Sorry, we couldn't load more search results.")(S))
+						onDisplay: () => Object(E.a)(Object(h.v)(M, "Sorry, we couldn't load more search results.")(S))
 					})))
 				}, k = "SEARCH__TYPEAHEAD_SUCCESS", B = Object(d.a)(k), M = "SEARCH__DISABLE_SCOPED_SEARCH", U = "SEARCH__ENABLE_SCOPED_SEARCH", G = "SEARCH__SET_SEARCH_SCOPE", q = Object(d.a)(M), V = (Object(d.a)(U), Object(d.a)(G))
 		},
@@ -29826,7 +29826,7 @@
 						source: g.c.GLOBAL,
 						action: a.c.VIEW,
 						noun: a.b.HEARTBEAT,
-						actionInfo: Object(g.l)(d, null, C, {}),
+						actionInfo: Object(g.k)(d, null, C, {}),
 						comment: E ? p.i(d, E) : void 0,
 						post: p.K(d, S),
 						profile: p.X(d, T),
@@ -30538,7 +30538,7 @@
 				return m
 			})), i.d(t, "d", (function() {
 				return p
-			})), i.d(t, "g", (function() {
+			})), i.d(t, "f", (function() {
 				return h
 			})), i.d(t, "y", (function() {
 				return f
@@ -30552,7 +30552,7 @@
 				return w
 			})), i.d(t, "b", (function() {
 				return E
-			})), i.d(t, "n", (function() {
+			})), i.d(t, "m", (function() {
 				return S
 			})), i.d(t, "C", (function() {
 				return T
@@ -30560,39 +30560,39 @@
 				return O
 			})), i.d(t, "E", (function() {
 				return I
-			})), i.d(t, "s", (function() {
-				return R
-			})), i.d(t, "l", (function() {
-				return C
-			})), i.d(t, "m", (function() {
-				return F
 			})), i.d(t, "r", (function() {
-				return A
-			})), i.d(t, "q", (function() {
-				return P
+				return R
 			})), i.d(t, "k", (function() {
-				return x
-			})), i.d(t, "j", (function() {
-				return L
-			})), i.d(t, "x", (function() {
-				return D
-			})), i.d(t, "f", (function() {
-				return k
-			})), i.d(t, "h", (function() {
-				return B
-			})), i.d(t, "o", (function() {
-				return M
+				return C
+			})), i.d(t, "l", (function() {
+				return F
+			})), i.d(t, "q", (function() {
+				return A
 			})), i.d(t, "p", (function() {
-				return U
-			})), i.d(t, "v", (function() {
-				return G
-			})), i.d(t, "u", (function() {
-				return q
+				return P
+			})), i.d(t, "j", (function() {
+				return x
 			})), i.d(t, "i", (function() {
-				return V
+				return L
 			})), i.d(t, "w", (function() {
-				return H
+				return D
+			})), i.d(t, "x", (function() {
+				return k
+			})), i.d(t, "g", (function() {
+				return B
+			})), i.d(t, "n", (function() {
+				return M
+			})), i.d(t, "o", (function() {
+				return U
+			})), i.d(t, "u", (function() {
+				return G
 			})), i.d(t, "t", (function() {
+				return q
+			})), i.d(t, "h", (function() {
+				return V
+			})), i.d(t, "v", (function() {
+				return H
+			})), i.d(t, "s", (function() {
 				return W
 			}));
 			var n = i("./src/lib/constants/index.ts"),
@@ -30938,14 +30938,17 @@
 					}),
 					action: s.c.VIEW
 				}),
-				k = (e, t) => i => ({
-					...h(i, t),
+				k = (e, t, i) => n => ({
+					...h(n, i),
 					source: _.SEARCH,
 					action: e,
-					noun: "covid_banner",
+					noun: "banner",
 					correlationId: Object(o.c)(o.a.SearchResults),
-					actionInfo: u.d(i),
-					search: u.db(i, t, a.a.SERP)
+					actionInfo: {
+						...u.d(n),
+						type: t
+					},
+					search: u.db(n, i, a.a.SERP)
 				}),
 				B = (e, t, i) => ({
 					action: s.c.DISABLE,
@@ -52235,4 +52238,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6583a90bf6e687145a18.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.b07d89eb053cec28f3cc.js.map

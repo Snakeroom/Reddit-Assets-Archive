@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.488e70d7a5b1e657e121.js
-// Retrieved at 2/10/2023, 2:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.ea13a0935cc499ce9979.js
+// Retrieved at 2/13/2023, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -9796,7 +9796,7 @@
 					className: w.a.flex
 				}, r.a.createElement("button", {
 					onClick: () => {
-						P(Object(y.p)(y.a.BACK, Object(h.d)({
+						P(Object(y.o)(y.a.BACK, Object(h.d)({
 							searchValue: null == k ? void 0 : k.queryParams.q,
 							post: j
 						}), x.a.SERP, n || void 0)), N(Object(i.b)(V, {
@@ -11331,4 +11331,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.488e70d7a5b1e657e121.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.ea13a0935cc499ce9979.js.map

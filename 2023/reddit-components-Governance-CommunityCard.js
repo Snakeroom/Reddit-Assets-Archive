@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.119c3ed29bc7a87652e4.js
-// Retrieved at 2/9/2023, 10:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.d97242157d98e0a23f67.js
+// Retrieved at 2/13/2023, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -193,7 +193,7 @@
 			})), n.d(t, "c", (function() {
 				return N
 			})), n.d(t, "f", (function() {
-				return w
+				return I
 			})), n.d(t, "g", (function() {
 				return M
 			})), n.d(t, "d", (function() {
@@ -228,8 +228,8 @@
 				x = Object(s.a)(C.j),
 				k = Object(s.a)(C.k),
 				j = Object(s.a)(C.q),
-				w = Object(s.a)(C.r),
-				I = Object(s.a)(C.s),
+				I = Object(s.a)(C.r),
+				w = Object(s.a)(C.s),
 				A = Object(s.a)(C.t),
 				T = Object(s.a)(C.u),
 				P = Object(s.a)(C.v),
@@ -284,7 +284,7 @@
 						apiContext: l
 					} = a;
 					var u;
-					n(I());
+					n(w());
 					const m = s().transfers.communityPoints.contentId || void 0,
 						p = await
 					function(e, t) {
@@ -450,8 +450,8 @@
 			}(r || (r = {}));
 			var k = n("./src/reddit/selectors/crypto/claims.ts"),
 				j = n("./src/reddit/selectors/user.ts"),
-				w = n("./src/higherOrderComponents/asTooltip.tsx"),
-				I = n("./src/lib/copyToClipboard/index.ts"),
+				I = n("./src/higherOrderComponents/asTooltip.tsx"),
+				w = n("./src/lib/copyToClipboard/index.ts"),
 				A = n("./src/reddit/actions/governance/errorToast.ts"),
 				T = n("./src/reddit/actions/toaster.ts"),
 				P = n("./src/reddit/actions/tooltip.ts"),
@@ -465,12 +465,12 @@
 				B = n("./src/reddit/selectors/tooltip.ts"),
 				V = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/BlockchainWalletInfo/index.m.less"),
 				F = n.n(V);
-			const W = Object(w.a)(M.a),
+			const W = Object(I.a)(M.a),
 				H = "BlockchainWalletInfo--SettingsMenu";
-			class Z extends i.a.PureComponent {
+			class q extends i.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onCopyToClipboard = () => {
-						Object(I.a)(this.props.publicAddress || "")
+						Object(w.a)(this.props.publicAddress || "")
 					}, this.onRemoveMyWallet = async () => {
 						const e = await Object(G.g)(this.props.apiContext(), this.props.points.blockchainProvider, this.props.publicAddress);
 						e.ok ? this.props.onWalletRemoved() : this.props.onGovernanceError(e.error)
@@ -533,7 +533,7 @@
 					})))) : null
 				}
 			}
-			const q = Object(b.c)({
+			const Z = Object(b.c)({
 					dropdownIsOpen: Object(B.b)(H),
 					isEthereumProvider: (e, t) => {
 						let {
@@ -548,7 +548,7 @@
 						return Object(l.b)(e, n)
 					}
 				}),
-				$ = Object(a.b)(q, (e, t) => ({
+				$ = Object(a.b)(Z, (e, t) => ({
 					onGovernanceError: t => {
 						Object(A.a)(e, t)
 					},
@@ -566,7 +566,7 @@
 						}))
 					}
 				}));
-			var Y = Object(S.b)($(Z)),
+			var Y = Object(S.b)($(q)),
 				Q = n("./src/reddit/icons/svgs/QuarantineWarning/index.tsx"),
 				J = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/Risk/index.m.less"),
 				X = n.n(J);
@@ -822,8 +822,8 @@
 				xe = n("./src/reddit/components/Economics/SubredditPremium/SidebarCards/SidebarButton/index.tsx"),
 				ke = n("./src/reddit/constants/modals.ts"),
 				je = n("./src/reddit/hooks/useLocalStorage.ts"),
-				we = n("./src/reddit/icons/svgs/Coin/index.tsx"),
-				Ie = n("./src/reddit/icons/svgs/Send/index.tsx"),
+				Ie = n("./src/reddit/icons/svgs/Coin/index.tsx"),
+				we = n("./src/reddit/icons/svgs/Send/index.tsx"),
 				Ae = n("./src/reddit/components/Governance/CommunityCard/UsePoints/index.m.less"),
 				Te = n.n(Ae);
 			const {
@@ -858,7 +858,7 @@
 					hk: "2Mco3v"
 				})), _ && i.a.createElement(xe.a, {
 					onClick: () => r(Object(E.f)())
-				}, i.a.createElement(Ie.a, {
+				}, i.a.createElement(we.a, {
 					className: Te.a.icon
 				}), c && (null == s ? void 0 : s.name) ? Pe._("Tip {Subreddit community point name}", [Pe._param("Subreddit community point name", s.name)], {
 					hk: "3CjOpO"
@@ -866,7 +866,7 @@
 					hk: "7qTYq"
 				})), d && i.a.createElement(xe.a, {
 					onClick: () => r(Object(ge.h)(ke.a.CONVERT_TO_COINS))
-				}, i.a.createElement(we.a, {
+				}, i.a.createElement(Ie.a, {
 					className: Te.a.icon
 				}), Pe._("Convert to Reddit Coins", null, {
 					hk: "lqkYM"
@@ -1549,25 +1549,6 @@
 				d: "M7.03093403,10 C7.03093403,8.36301971 8.36301971,7.03093403 10,7.03093403 C11.6369803,7.03093403 12.9679409,8.36301971 12.9679409,10 C12.9679409,11.6369803 11.6369803,12.969066 10,12.969066 C8.36301971,12.969066 7.03093403,11.6369803 7.03093403,10 M16.4016617,8.49127796 C16.2362761,7.79148295 15.9606334,7.13669084 15.5916096,6.5437777 L16.5231696,5.06768276 C16.7526843,4.70315931 16.7684353,4.22387849 16.5231696,3.83572852 C16.1833977,3.29794393 15.4712269,3.13593351 14.9323172,3.47683044 L13.4562223,4.40839036 C12.8633092,4.03936662 12.208517,3.76259882 11.508722,3.59833825 L11.1250724,1.89947899 C11.0294412,1.47982699 10.7020452,1.12992949 10.2542664,1.02867298 C9.63322641,0.888038932 9.01556168,1.27843904 8.87492764,1.89947899 L8.49127796,3.59833825 C7.79148295,3.76259882 7.13669084,4.03936662 6.54265263,4.40726528 L5.06768276,3.47683044 C4.70315931,3.24731568 4.22387849,3.23156466 3.83572852,3.47683044 C3.29794393,3.81660229 3.13593351,4.5287731 3.47683044,5.06768276 L4.40726528,6.54265263 C4.03936662,7.13669084 3.76259882,7.79148295 3.59721318,8.49127796 L1.89947899,8.87492764 C1.47982699,8.97055879 1.12992949,9.29795485 1.02867298,9.74573365 C0.888038932,10.3667736 1.27843904,10.9844383 1.89947899,11.1250724 L3.59721318,11.508722 C3.76259882,12.208517 4.03936662,12.8633092 4.40726528,13.4573474 L3.47683044,14.9323172 C3.24731568,15.2968407 3.23156466,15.7761215 3.47683044,16.1642715 C3.81660229,16.7020561 4.5287731,16.8640665 5.06768276,16.5231696 L6.54265263,15.5927347 C7.13669084,15.9606334 7.79148295,16.2374012 8.49127796,16.4016617 L8.87492764,18.100521 C8.97055879,18.520173 9.29795485,18.8700705 9.74573365,18.971327 C10.3667736,19.1119611 10.9844383,18.721561 11.1250724,18.100521 L11.508722,16.4016617 C12.208517,16.2374012 12.8633092,15.9606334 13.4562223,15.5916096 L14.9323172,16.5231696 C15.2968407,16.7526843 15.7749964,16.7684353 16.1631464,16.5231696 C16.7020561,16.1833977 16.8629414,15.4712269 16.5231696,14.9323172 L15.5916096,13.4562223 C15.9606334,12.8633092 16.2362761,12.208517 16.4016617,11.508722 L18.100521,11.1250724 C18.520173,11.0294412 18.8700705,10.7020452 18.971327,10.2542664 C19.1119611,9.63322641 18.721561,9.01556168 18.100521,8.87492764 L16.4016617,8.49127796 Z"
 			})))
 		},
-		"./src/reddit/icons/svgs/Snoo/index.tsx": function(e, t, n) {
-			"use strict";
-			var r = n("./node_modules/react/index.js"),
-				s = n.n(r),
-				o = n("./src/reddit/constants/colors.ts");
-			t.a = e => s.a.createElement("svg", {
-				xmlns: "http://www.w3.org/2000/svg",
-				viewBox: "0 0 20 20",
-				className: e.className
-			}, s.a.createElement("g", null, s.a.createElement("circle", {
-				fill: o.a.snoo,
-				cx: "10",
-				cy: "10",
-				r: "10"
-			}), s.a.createElement("path", {
-				fill: "#FFF",
-				d: "M16.67,10A1.46,1.46,0,0,0,14.2,9a7.12,7.12,0,0,0-3.85-1.23L11,4.65,13.14,5.1a1,1,0,1,0,.13-0.61L10.82,4a0.31,0.31,0,0,0-.37.24L9.71,7.71a7.14,7.14,0,0,0-3.9,1.23A1.46,1.46,0,1,0,4.2,11.33a2.87,2.87,0,0,0,0,.44c0,2.24,2.61,4.06,5.83,4.06s5.83-1.82,5.83-4.06a2.87,2.87,0,0,0,0-.44A1.46,1.46,0,0,0,16.67,10Zm-10,1a1,1,0,1,1,1,1A1,1,0,0,1,6.67,11Zm5.81,2.75a3.84,3.84,0,0,1-2.47.77,3.84,3.84,0,0,1-2.47-.77,0.27,0.27,0,0,1,.38-0.38A3.27,3.27,0,0,0,10,14a3.28,3.28,0,0,0,2.09-.61A0.27,0.27,0,1,1,12.48,13.79Zm-0.18-1.71a1,1,0,1,1,1-1A1,1,0,0,1,12.29,12.08Z"
-			})))
-		},
 		"./src/reddit/reducers/features/crypto/index.ts": function(e, t, n) {
 			"use strict";
 			var r = n("./node_modules/redux/es/redux.js"),
@@ -1870,4 +1851,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.119c3ed29bc7a87652e4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.d97242157d98e0a23f67.js.map

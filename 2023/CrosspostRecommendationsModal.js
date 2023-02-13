@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrosspostRecommendationsModal.6d7ae35da6c5e00c0eeb.js
-// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrosspostRecommendationsModal.c8f5a1cb2a36bfe7e01d.js
+// Retrieved at 2/13/2023, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrosspostRecommendationsModal"], {
 		"./src/reddit/components/CrosspostRecommendationsModal/index.m.less": function(e, t, s) {
@@ -35,9 +35,9 @@
 				E = s("./src/reddit/routes/postCreation/constants.ts"),
 				k = s("./src/reddit/selectors/experiments/postCreationSubRec.ts"),
 				j = s("./src/reddit/components/CrosspostRecommendationsModal/index.m.less"),
-				v = s.n(j);
+				O = s.n(j);
 			const {
-				fbt: g
+				fbt: _
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 			t.default = Object(a.a)(e => {
 				let {
@@ -47,8 +47,8 @@
 				const a = Object(i.d)(),
 					j = Object(C.a)(),
 					{
-						isPending: O,
-						isError: _,
+						isPending: g,
+						isError: v,
 						hasData: P,
 						items: f
 					} = Object(i.e)(Object(d.c)({
@@ -67,11 +67,11 @@
 							subreddit: Object(p.lb)(t)
 						}))(s.id)), t()
 					}, [s.id]),
-					N = Object(n.useCallback)(e => {
+					y = Object(n.useCallback)(e => {
 						const t = Object(S.c)(e.name);
 						a(Object(o.b)(`${t}?source_id=${s.id}`))
 					}, [s.id]),
-					y = Object(n.useCallback)(() => {
+					N = Object(n.useCallback)(() => {
 						j((e => t => ({
 							...Object(p.o)(t),
 							action: b.c.CLICK,
@@ -81,32 +81,32 @@
 							subreddit: Object(p.lb)(t)
 						}))(s.id)), a(Object(o.b)(`${E.b}?source_id=${s.id}`))
 					}, [s.id]);
-				return _ ? (t(), null) : r.a.createElement(c.e, null, r.a.createElement(c.i, {
-					className: v.a.modalHeader
+				return v ? (t(), null) : r.a.createElement(c.e, null, r.a.createElement(c.i, {
+					className: O.a.modalHeader
 				}, r.a.createElement(h.a, null, r.a.createElement(c.q, {
-					className: v.a.modalTitle
-				}, g._("Crosspost to a related community", null, {
+					className: O.a.modalTitle
+				}, _._("Crosspost to a related community", null, {
 					hk: "v80Kq"
 				})), r.a.createElement(u.a, {
 					onClick: w
 				}, r.a.createElement(c.b, null))), r.a.createElement(c.m, {
-					className: v.a.modalMetaText
-				}, g._("Share your post to another community to let other people see your post", null, {
+					className: O.a.modalMetaText
+				}, _._("Share your post to another community to let other people see your post", null, {
 					hk: "2jhFRp"
 				}))), r.a.createElement(c.l, null, r.a.createElement(m.b, {
-					contentWrapperClassName: v.a.contentWrapper,
+					contentWrapperClassName: O.a.contentWrapper,
 					hasData: P,
-					isPending: O,
+					isPending: g,
 					items: f,
-					itemWrapperClassName: v.a.itemWrapper,
-					onSelectRecommendation: N,
+					itemWrapperClassName: O.a.itemWrapper,
+					onSelectRecommendation: y,
 					shouldShowSubredditOnlineUsers: !0
 				})), r.a.createElement(c.g, {
-					className: v.a.modalFooter
+					className: O.a.modalFooter
 				}, r.a.createElement(l.o, {
-					className: v.a.otherCommunitiesButton,
-					onClick: y
-				}, g._("OTHER COMMUNITIES", null, {
+					className: O.a.otherCommunitiesButton,
+					onClick: N
+				}, _._("OTHER COMMUNITIES", null, {
 					hk: "1dWSPt"
 				}))))
 			})
@@ -134,7 +134,7 @@
 			s.d(t, "a", (function() {
 				return j
 			})), s.d(t, "b", (function() {
-				return v
+				return O
 			}));
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
@@ -193,7 +193,7 @@
 				k = s.n(E);
 			const j = o.a.wrapped(d.b, "subredditIcon", k.a);
 
-			function v(e) {
+			function O(e) {
 				const {
 					className: t,
 					explanationText: s,
@@ -415,14 +415,14 @@
 					_1: "1 member"
 				}, [n.fbt._plural(u, "number", C ? Object(a.b)(u) : void 0)], {
 					hk: "2SvJUX"
-				}) : void 0, v = E ? n.fbt._("{number users online in subreddit} online", [n.fbt._param("number users online in subreddit", Object(a.b)(E.accountsActive))], {
+				}) : void 0, O = E ? n.fbt._("{number users online in subreddit} online", [n.fbt._param("number users online in subreddit", Object(a.b)(E.accountsActive))], {
 					hk: "49HfzS"
-				}) : void 0, g = S ? `${j} • ${v}` : j, O = void 0 !== x ? n.fbt._({
+				}) : void 0, _ = S ? `${j} • ${O}` : j, g = void 0 !== x ? n.fbt._({
 					"*": "{number} online",
 					_1: "1 online"
 				}, [n.fbt._plural(x, "number", C ? Object(a.b)(x) : void 0)], {
 					hk: "NgOAJ"
-				}) : void 0, _ = i.a.createElement(m.a, {
+				}) : void 0, v = i.a.createElement(m.a, {
 					className: Object(d.a)(b.a.icon, {
 						[b.a.hasExplanationText]: !!h
 					}),
@@ -431,10 +431,10 @@
 					redditStyle: !0
 				});
 				return i.a.createElement(m.b, p({
-					icon: _,
+					icon: v,
 					title: k,
-					secondaryText: g,
-					subText: O
+					secondaryText: _,
+					subText: g
 				}, e))
 			}
 		},
@@ -471,28 +471,6 @@
 				d: "M18.4773727,1.51993937 C19.4600354,2.50135191 20.0013751,3.80656808 20.0013751,5.19554812 C20.0013751,6.58577837 19.4600354,7.89099453 18.4773727,8.87240707 C17.9885417,9.35998782 17.1984109,9.35998782 16.7095799,8.87240707 C16.2207489,8.38357611 16.2207489,7.59094484 16.7095799,7.10461429 C17.2196644,6.59452982 17.500961,5.91691759 17.500961,5.19554812 C17.500961,4.47542886 17.2196644,3.79781663 16.7095799,3.28773215 C15.6569056,2.23755822 13.9453721,2.23755822 12.8926978,3.28773215 L8.62324066,7.55843946 C7.57181653,8.6111138 7.57181653,10.3226473 8.62324066,11.3753216 C9.11207162,11.8629024 9.11207162,12.6555336 8.62324066,13.1431144 C8.37945029,13.3869048 8.05939728,13.509425 7.73934427,13.509425 C7.41929127,13.509425 7.09923826,13.3869048 6.85544788,13.1431144 C4.82886225,11.1152785 4.82886225,7.81723232 6.85544788,5.79064668 L11.124905,1.51993937 C13.1502404,-0.505396058 16.4495368,-0.507896472 18.4773727,1.51993937 Z M11.3753215,6.8540728 C11.8641524,6.36524184 12.6542833,6.36524184 13.1431142,6.8540728 C15.1696999,8.88065844 15.1696999,12.1799549 13.1431142,14.2065405 L8.87240693,18.4772478 C7.89099439,19.4586603 6.58452801,20 5.19679818,20 C3.80781814,20 2.50135177,19.4586603 1.51993923,18.4772478 C-0.50664641,16.4506622 -0.50664641,13.1513657 1.51993923,11.1247801 C2.00877019,10.6359491 2.80015125,10.6359491 3.28773201,11.1247801 C3.77656297,11.6136111 3.77656297,12.4037419 3.28773201,12.8925729 C2.23505767,13.9452472 2.23505767,15.6567807 3.28773201,16.709455 C4.34040635,17.7621294 6.05193981,17.7621294 7.10461415,16.709455 L11.3753215,12.4387477 C12.4279958,11.3860734 12.4279958,9.67453992 11.3753215,8.62186558 C10.8864905,8.13303462 10.8864905,7.34290376 11.3753215,6.8540728 Z"
 			})))
 		},
-		"./src/reddit/icons/svgs/TextPost/index.m.less": function(e, t, s) {
-			e.exports = {
-				icon: "_13NhOjx-Siom7MKe3Dex5y"
-			}
-		},
-		"./src/reddit/icons/svgs/TextPost/index.tsx": function(e, t, s) {
-			"use strict";
-			var n = s("./node_modules/react/index.js"),
-				r = s.n(n),
-				i = s("./src/lib/classNames/index.ts"),
-				o = s("./src/reddit/icons/svgs/TextPost/index.m.less"),
-				d = s.n(o);
-			t.a = e => r.a.createElement("svg", {
-				className: Object(i.a)(d.a.icon, e.className),
-				viewBox: "0 0 20 20",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, r.a.createElement("path", {
-				fill: "inherit",
-				fillRule: "evenodd",
-				d: "M16.8656 7.205H13.139c-.3428 0-.621-.2782-.621-.621 0-.343.2782-.621.621-.621h3.7266c.343 0 .621.278.621.621 0 .3428-.278.621-.621.621zm0 3.416H13.139c-.3428 0-.621-.2782-.621-.621s.2782-.621.621-.621h3.7266c.343 0 .621.2782.621.621s-.278.621-.621.621zm0 3.416H3.2016c-.343 0-.621-.278-.621-.621 0-.3428.278-.621.621-.621h13.664c.343 0 .621.2782.621.621 0 .343-.278.621-.621.621zm-13.664 3.416c-.343 0-.621-.278-.621-.621 0-.3428.278-.621.621-.621h13.664c.343 0 .621.2782.621.621 0 .343-.278.621-.621.621H3.2016zm-.621-14.285c0-.343.278-.621.621-.621h6.5997c.343 0 .621.278.621.621V10c0 .3428-.278.621-.621.621H3.2016c-.343 0-.621-.2782-.621-.621V3.168zM1.3382.0625C.6513.0625.096.6178.096 1.3047v17.3906c0 .687.5554 1.2422 1.2423 1.2422H18.729c.6868 0 1.242-.5553 1.242-1.2422V1.3047c0-.687-.5552-1.2422-1.242-1.2422H1.3382z"
-			}))
-		},
 		"./src/reddit/icons/svgs/Video/index.tsx": function(e, t, s) {
 			"use strict";
 			var n = s("./node_modules/react/index.js"),
@@ -509,4 +487,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrosspostRecommendationsModal.6d7ae35da6c5e00c0eeb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrosspostRecommendationsModal.c8f5a1cb2a36bfe7e01d.js.map

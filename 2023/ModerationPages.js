@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.7a188b3f2fb192e5350b.js
-// Retrieved at 2/13/2023, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.95ef5b5f54a3da60566f.js
+// Retrieved at 2/13/2023, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -52520,7 +52520,7 @@
 							post: B,
 							subreddit: G
 						});
-					g.a.set(j.a.CommentSearchBar), k(Object(O.p)(O.a.FULL_SEARCH_BUTTON, s, v.a.PdpCommentSearch, b || void 0));
+					g.a.set(j.a.CommentSearchBar), k(Object(O.o)(O.a.FULL_SEARCH_BUTTON, s, v.a.PdpCommentSearch, b || void 0));
 					const r = Object(u.b)(B.id, void 0, s);
 					F(Object(m.d)({
 						key: r,
@@ -52565,7 +52565,7 @@
 						_.a.update(v.a.PdpCommentSearchBar), M(e.target.value)
 					},
 					onFocus: function() {
-						_.a.update(v.a.PdpCommentSearchBar), g.a.set(j.a.CommentSearchBar), k(Object(O.p)(O.a.SEARCH_BAR, P({
+						_.a.update(v.a.PdpCommentSearchBar), g.a.set(j.a.CommentSearchBar), k(Object(O.o)(O.a.SEARCH_BAR, P({
 							searchValue: A,
 							post: B,
 							subreddit: G
@@ -62084,7 +62084,7 @@
 					}
 					const u = I.H(a, r);
 					return {
-						...C.g(a, t),
+						...C.f(a, t),
 						...ee,
 						...I.o(a),
 						actionInfo: I.d(a, {
@@ -74840,4 +74840,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.7a188b3f2fb192e5350b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.95ef5b5f54a3da60566f.js.map

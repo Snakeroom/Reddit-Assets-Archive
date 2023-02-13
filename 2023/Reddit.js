@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.34a8837b433d9182f546.js
-// Retrieved at 2/13/2023, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.2e12c20eaa5c5c958848.js
+// Retrieved at 2/13/2023, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -12250,7 +12250,7 @@
 						oi.a.set(vn.a.SearchDropdown), I(Object(ei.D)(e, t, n, s))
 					},
 					Pe = () => {
-						I(e => Object(ei.h)(e, de, H)), (() => A(Object(Ta.k)()))(), ii.a.update(Ha.a.Typeahead)
+						I(e => Object(ei.g)(e, de, H)), (() => A(Object(Ta.k)()))(), ii.a.update(Ha.a.Typeahead)
 					},
 					Se = e => {
 						const t = h[e] || null,
@@ -12353,7 +12353,7 @@
 									state: t(),
 									trendingSearch: i,
 									telemetrySource: Ha.a.Typeahead
-								}))) : Ee(r, r, vn.c.Search, ei.a.RECENT)) : (i = Ie(r), oi.a.set(vn.a.SearchBar), I(Object(ei.p)(ei.a.FULL_SEARCH_BUTTON, Object(Aa.e)({
+								}))) : Ee(r, r, vn.c.Search, ei.a.RECENT)) : (i = Ie(r), oi.a.set(vn.a.SearchBar), I(Object(ei.o)(ei.a.FULL_SEARCH_BUTTON, Object(Aa.e)({
 									q: ae
 								}), Ha.a.Typeahead, o || void 0))), ve(i), pe(u), !i.searchQuery) return;
 							const m = Object(Za.a)({
@@ -12368,7 +12368,7 @@
 						})(e)
 					},
 					onFocusSearchBar: () => {
-						Object(oa.c)(oa.a.SearchResults) || Object(oa.d)(oa.a.SearchResults), ai.a.update(), M.current = !0, ii.a.update(Ha.a.Typeahead), oi.a.set(vn.a.SearchBar), I(Object(ei.p)(ei.a.SEARCH_BAR, de, Ha.a.Typeahead, o || void 0)), D || ((() => A(Object(Ta.m)()))(), I(Object($a.s)(de, null != o ? o : void 0, Object(ni.b)({
+						Object(oa.c)(oa.a.SearchResults) || Object(oa.d)(oa.a.SearchResults), ai.a.update(), M.current = !0, ii.a.update(Ha.a.Typeahead), oi.a.set(vn.a.SearchBar), I(Object(ei.o)(ei.a.SEARCH_BAR, de, Ha.a.Typeahead, o || void 0)), D || ((() => A(Object(Ta.m)()))(), I(Object($a.s)(de, null != o ? o : void 0, Object(ni.b)({
 							pageLayer: o
 						})))), Me(ae)
 					},
@@ -21244,4 +21244,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.34a8837b433d9182f546.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.2e12c20eaa5c5c958848.js.map

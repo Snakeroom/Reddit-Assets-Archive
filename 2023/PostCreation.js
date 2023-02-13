@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.ed63e79287c664164ee9.js
-// Retrieved at 2/13/2023, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.7279e60988985d79efa9.js
+// Retrieved at 2/13/2023, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit~StandalonePostPage", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -23020,7 +23020,7 @@
 							post: U,
 							subreddit: K
 						});
-					g.a.set(k.a.CommentSearchBar), j(Object(E.p)(E.a.FULL_SEARCH_BUTTON, o, C.a.PdpCommentSearch, h || void 0));
+					g.a.set(k.a.CommentSearchBar), j(Object(E.o)(E.a.FULL_SEARCH_BUTTON, o, C.a.PdpCommentSearch, h || void 0));
 					const r = Object(u.b)(U.id, void 0, o);
 					F(Object(m.d)({
 						key: r,
@@ -23065,7 +23065,7 @@
 						v.a.update(C.a.PdpCommentSearchBar), D(e.target.value)
 					},
 					onFocus: function() {
-						v.a.update(C.a.PdpCommentSearchBar), g.a.set(k.a.CommentSearchBar), j(Object(E.p)(E.a.SEARCH_BAR, N({
+						v.a.update(C.a.PdpCommentSearchBar), g.a.set(k.a.CommentSearchBar), j(Object(E.o)(E.a.SEARCH_BAR, N({
 							searchValue: M,
 							post: U,
 							subreddit: K
@@ -40139,4 +40139,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.ed63e79287c664164ee9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.7279e60988985d79efa9.js.map

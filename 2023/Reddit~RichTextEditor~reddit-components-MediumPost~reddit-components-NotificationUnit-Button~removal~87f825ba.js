@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.b0f4032e79908f60218c.js
-// Retrieved at 2/9/2023, 10:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.34919e1b94578f24e248.js
+// Retrieved at 2/13/2023, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba"], {
 		"./src/lib/scroll/index.ts": function(e, t, o) {
@@ -1611,7 +1611,7 @@
 							post: B,
 							subreddit: H
 						});
-					f.a.set(k.a.CommentSearchBar), v(Object(x.p)(x.a.FULL_SEARCH_BUTTON, n, j.a.PdpCommentSearch, b || void 0));
+					f.a.set(k.a.CommentSearchBar), v(Object(x.o)(x.a.FULL_SEARCH_BUTTON, n, j.a.PdpCommentSearch, b || void 0));
 					const r = Object(m.b)(B.id, void 0, n);
 					A(Object(u.d)({
 						key: r,
@@ -1656,7 +1656,7 @@
 						g.a.update(j.a.PdpCommentSearchBar), D(e.target.value)
 					},
 					onFocus: function() {
-						g.a.update(j.a.PdpCommentSearchBar), f.a.set(k.a.CommentSearchBar), v(Object(x.p)(x.a.SEARCH_BAR, M({
+						g.a.update(j.a.PdpCommentSearchBar), f.a.set(k.a.CommentSearchBar), v(Object(x.o)(x.a.SEARCH_BAR, M({
 							searchValue: R,
 							post: B,
 							subreddit: H
@@ -2135,4 +2135,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.b0f4032e79908f60218c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.34919e1b94578f24e248.js.map

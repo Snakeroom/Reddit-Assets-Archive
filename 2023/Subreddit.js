@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.b9174e203ee8986422e5.js
-// Retrieved at 2/10/2023, 2:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.f1d4e16e36ccc9b31025.js
+// Retrieved at 2/13/2023, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -17676,7 +17676,7 @@
 				w = (e, t, n, r, s, o, a) => {
 					Object(f.a)({
 						...m.o(e),
-						...Object(c.m)({
+						...Object(c.l)({
 							state: e,
 							postId: n,
 							searchOptions: r,
@@ -17714,9 +17714,9 @@
 				},
 				R = function() {
 					for (var e = arguments.length, t = new Array(e), n = 0; n < e; n++) t[n] = arguments[n];
-					return e => Object(c.s)(e, ...t)
+					return e => Object(c.r)(e, ...t)
 				},
-				B = (e, t, n, r) => s => o => Object(c.k)({
+				B = (e, t, n, r) => s => o => Object(c.j)({
 					action: i.c.CLICK,
 					state: o,
 					searchOptions: e,
@@ -20192,7 +20192,7 @@
 					}
 					const u = S.H(a, s);
 					return {
-						...j.g(a, t),
+						...j.f(a, t),
 						...ee,
 						...S.o(a),
 						actionInfo: S.d(a, {
@@ -25790,4 +25790,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.b9174e203ee8986422e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.f1d4e16e36ccc9b31025.js.map
