@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.5f4a25c67df2760bcbfa.js
-// Retrieved at 2/13/2023, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.96b9a0e43e6e466928bf.js
+// Retrieved at 2/13/2023, 3:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, n) {
@@ -2918,8 +2918,8 @@
 							sendEvent: r,
 							thingId: s,
 							message: a
-						} = this.props;
-						return r(Object(b.clickConfirmAwardEvent)(s, n)), r(Object(b.clickConfirmAwardEventMatrixChat)(s)), r(Object(b.clickConfirmAwardEventMatrixChatMessage)(s, a.length)), e(t)
+						} = this.props, o = a.length;
+						return r(Object(b.clickConfirmAwardEvent)(s, n)), r(Object(b.clickConfirmAwardEventMatrixChat)(s)), o && r(Object(b.clickConfirmAwardEventMatrixChatMessage)(s, o)), e(t)
 					}
 				}
 				componentWillUnmount() {
@@ -5914,4 +5914,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.5f4a25c67df2760bcbfa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.96b9a0e43e6e466928bf.js.map

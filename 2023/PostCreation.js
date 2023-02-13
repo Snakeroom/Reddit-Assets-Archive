@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.7279e60988985d79efa9.js
-// Retrieved at 2/13/2023, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.df3daefd19e4f8fed263.js
+// Retrieved at 2/13/2023, 3:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit~StandalonePostPage", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -27253,7 +27253,7 @@
 						...o,
 						source: "give_gold",
 						action: "click",
-						noun: "confirm",
+						noun: "create_chat",
 						chat: {
 							recipient_user_id: b(o, e),
 							message_length: t
@@ -40139,4 +40139,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.7279e60988985d79efa9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.df3daefd19e4f8fed263.js.map
