@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.471518b910fd818452a7.js
-// Retrieved at 2/13/2023, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6583a90bf6e687145a18.js
+// Retrieved at 2/13/2023, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -5380,11 +5380,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("183320"),
+				buildNumber: Object(r.c)("183329"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1676297560"),
+				buildTimestamp: Object(r.b)("1676302405"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -8116,14 +8116,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c62a01a085b8330902e6cfc50d4745ab6b024572e-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c2014269d15ccbd3a0e3fe969ca3302900d3da9e4-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "62a01a085b8330902e6cfc50d4745ab6b024572e-production",
+						release: "2014269d15ccbd3a0e3fe969ca3302900d3da9e4-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(D.d)(), new d.Integrations.Breadcrumbs({
@@ -8659,7 +8659,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "62a01a085b8330902e6cfc50d4745ab6b024572e-production",
+							releaseClient: "2014269d15ccbd3a0e3fe969ca3302900d3da9e4-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -10955,7 +10955,7 @@
 				const [{
 					chatStore: u,
 					firstInit: p
-				}, h] = await Promise.all([Object(a.c)(t, i, r), m()]), f = i(), b = await _(), g = Object(c.i)(f, d);
+				}, h] = await Promise.all([Object(a.c)(t, i, r), m()]), f = i(), b = await _(), g = Object(c.k)(f, d);
 				u.dispatch(b(g)), u.getState().container.size !== o.a.EMBED && u.dispatch(h(o.a.EMBED)), !p && u.dispatch(Object(n.c)(r)), u.dispatch(Object(s.eb)(!0, l))
 			}
 			const h = (e, t) => async (i, n) => {
@@ -29378,86 +29378,109 @@
 		},
 		"./src/reddit/helpers/trackers/authorHovercard.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "i", (function() {
-				return s
-			})), i.d(t, "h", (function() {
+			i.d(t, "k", (function() {
 				return o
-			})), i.d(t, "g", (function() {
+			})), i.d(t, "j", (function() {
 				return d
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "h", (function() {
 				return a
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "i", (function() {
 				return l
-			})), i.d(t, "a", (function() {
-				return c
 			})), i.d(t, "e", (function() {
+				return c
+			})), i.d(t, "g", (function() {
 				return u
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "a", (function() {
 				return _
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "f", (function() {
 				return m
+			})), i.d(t, "d", (function() {
+				return p
+			})), i.d(t, "b", (function() {
+				return h
+			})), i.d(t, "c", (function() {
+				return f
 			}));
 			var n = i("./src/reddit/helpers/isComment.ts"),
-				r = i("./src/reddit/selectors/telemetry.ts");
-			const s = (e, t) => ({
-					comment: t && Object(n.a)(t) ? r.h({
+				r = i("./src/reddit/helpers/trackers/chat.ts"),
+				s = i("./src/reddit/selectors/telemetry.ts");
+			const o = (e, t) => ({
+					comment: t && Object(n.a)(t) ? s.h({
 						state: e,
 						commentId: t
 					}) : null,
-					post: t ? r.K(e, t) : null,
-					profile: r.T(e, t),
-					screen: r.cb(e),
-					snoovatar: t ? r.ib(e, t) : null,
-					user: r.sb(e)
+					post: t ? s.K(e, t) : null,
+					profile: s.T(e, t),
+					screen: s.cb(e),
+					snoovatar: t ? s.ib(e, t) : null,
+					user: s.sb(e)
 				}),
-				o = (e, t) => i => ({
+				d = (e, t) => i => ({
 					source: "user_hovercard",
 					action: "click",
 					noun: e,
-					...s(i, t)
-				}),
-				d = e => t => ({
-					source: "user_hovercard",
-					action: "view",
-					noun: "hover_user_hovercard",
-					...s(t, e)
+					...o(i, t)
 				}),
 				a = e => t => ({
 					source: "user_hovercard",
-					action: "click",
-					noun: "mute_dialog_in_context",
-					...s(t, e)
+					action: "view",
+					noun: "hover_user_hovercard",
+					...o(t, e)
 				}),
-				l = e => t => ({
+				l = (e, t) => i => Object(r.a)({
 					source: "user_hovercard",
-					action: "click",
-					noun: "unmute_dialog_in_context",
-					...s(t, e)
+					action: "view",
+					noun: "hover_user_hovercard",
+					...o(i, e),
+					chat: {
+						recipient_user_id: t
+					}
 				}),
 				c = e => t => ({
 					source: "user_hovercard",
 					action: "click",
-					noun: "ban_dialog_in_context",
-					...s(t, e)
+					noun: "mute_dialog_in_context",
+					...o(t, e)
 				}),
 				u = e => t => ({
 					source: "user_hovercard",
 					action: "click",
-					noun: "unban_user_in_context",
-					...s(t, e)
+					noun: "unmute_dialog_in_context",
+					...o(t, e)
 				}),
 				_ = e => t => ({
 					source: "user_hovercard",
 					action: "click",
-					noun: "change_user_flair_in_context",
-					userSubreddit: r.ub(t),
-					...s(t, e)
+					noun: "ban_dialog_in_context",
+					...o(t, e)
 				}),
 				m = e => t => ({
-					source: r.T(t) ? "user_profile" : "user_hovercard",
+					source: "user_hovercard",
+					action: "click",
+					noun: "unban_user_in_context",
+					...o(t, e)
+				}),
+				p = e => t => ({
+					source: "user_hovercard",
+					action: "click",
+					noun: "change_user_flair_in_context",
+					userSubreddit: s.ub(t),
+					...o(t, e)
+				}),
+				h = e => t => ({
+					source: s.T(t) ? "user_profile" : "user_hovercard",
 					action: "click",
 					noun: "create_chat",
-					...e && s(t, e)
+					...e && o(t, e)
+				}),
+				f = (e, t) => i => Object(r.a)({
+					source: s.T(i) ? "user_profile" : "user_hovercard",
+					action: "click",
+					noun: "create_chat",
+					...t && o(i, t),
+					chat: {
+						recipient_user_id: e
+					}
 				})
 		},
 		"./src/reddit/helpers/trackers/blockingInterstitial.ts": function(e, t, i) {
@@ -51160,6 +51183,7 @@
 				invitation_preview_type: e.invitation_preview_type,
 				message_type: e.message_type,
 				message_body: e.message_body,
+				message_length: e.message_length,
 				number_channels: e.number_channels,
 				number_pending_invites: e.number_pending_invites,
 				number_members: e.number_members,
@@ -51851,7 +51875,7 @@
 				e.UserId = "user_id", e.CanonicalUrl = "canonical_url", e.BlockUser = "block_user", e.UnblockUser = "unblock_user", e.BlockedProfileInterstitial = "blocked_profile_interstitial", e.HarassmentControlLevel = "harassment_control_level", e.Subreddit = "subreddit"
 			}(dn || (dn = {})),
 			function(e) {
-				e.Chat = "chat", e.ChatKeyboard = "chat_keyboard", e.ChatPerformance = "chat_performance", e.ChatPreview = "chat_preview", e.ChatSettings = "chat_settings", e.ChatSetup = "chat_setup", e.ChatSidebarModal = "chat_sidebar_modal", e.ChatSidebarWidget = "chat_sidebar_widget", e.ChatTab = "chat_tab", e.ChatView = "chat_view", e.ChatVideo = "chat_video", e.ContactsList = "contacts_list", e.Global = "global", e.InvitationInbox = "invitation_inbox", e.MessageInbox = "messages_inbox", e.Notification = "notification", e.Popup = "popup", e.Nav = "nav", e.UserHovercard = "user_hovercard", e.User = "user", e.LiveChat = "live_chat"
+				e.Chat = "chat", e.ChatKeyboard = "chat_keyboard", e.ChatPerformance = "chat_performance", e.ChatPreview = "chat_preview", e.ChatSettings = "chat_settings", e.ChatSetup = "chat_setup", e.ChatSidebarModal = "chat_sidebar_modal", e.ChatSidebarWidget = "chat_sidebar_widget", e.ChatTab = "chat_tab", e.ChatView = "chat_view", e.ChatVideo = "chat_video", e.ContactsList = "contacts_list", e.Global = "global", e.InboxNotification = "inbox_notification", e.InvitationInbox = "invitation_inbox", e.MessageInbox = "messages_inbox", e.Notification = "notification", e.Popup = "popup", e.Nav = "nav", e.UserHovercard = "user_hovercard", e.User = "user", e.LiveChat = "live_chat"
 			}(an || (an = {}));
 			const ln = e => new Ee.Event({
 					action: e.action,
@@ -52211,4 +52235,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.471518b910fd818452a7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6583a90bf6e687145a18.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.350796c05692a2eff13d.js
-// Retrieved at 2/8/2023, 12:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.2a6b6164e9892f376617.js
+// Retrieved at 2/13/2023, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -1785,8 +1785,10 @@
 		},
 		"./src/chat/actions/notifications.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "a", (function() {
-				return p
+			n.d(t, "b", (function() {
+				return f
+			})), n.d(t, "a", (function() {
+				return v
 			}));
 			var a = n("./node_modules/lodash/noop.js"),
 				s = n.n(a),
@@ -1795,13 +1797,19 @@
 				o = n("./src/lib/notifications/constants.ts"),
 				i = n("./src/chat/selectors/app.ts"),
 				l = n("./src/chat/tracking/fields/common.ts"),
-				d = n("./src/telemetry/index.ts"),
-				u = n("./src/telemetry/models/Event.ts");
-			const h = e => ({
+				d = n("./src/reddit/helpers/trackers/chat.ts"),
+				u = n("./src/reddit/selectors/telemetry.ts"),
+				h = n("./src/telemetry/index.ts"),
+				m = n("./src/telemetry/models/Event.ts");
+			const p = e => ({
+					...Object(u.o)(e),
+					geo: Object(u.t)(e)
+				}),
+				b = e => ({
 					...Object(l.a)(e),
 					noun: "desktop_notification_permissions"
 				}),
-				m = (e, t, n) => ({
+				g = (e, t, n) => ({
 					...Object(l.a)(e),
 					actionInfo: {
 						success: t,
@@ -1809,45 +1817,55 @@
 					},
 					noun: "push_token"
 				}),
-				p = (e, t) => async (n, a, l) => {
+				f = (e, t) => async (n, a, l) => {
 					if (Object(i.g)(a())) return;
 					(e => {
-						Object(d.a)({
-							...m(e, !0),
-							action: u.c.Request,
-							source: u.b.Notification
+						Object(h.a)({
+							...g(e, !0),
+							action: m.c.Request,
+							source: m.b.Notification
 						})
 					})(a()), Object(r.b)(e, t, () => {
 						n(Object(o.s)()), n(Object(o.q)()), (e => {
-							Object(d.a)({
-								...h(e),
-								action: u.c.View,
-								source: u.b.Popup
+							Object(h.a)({
+								...b(e),
+								action: m.c.View,
+								source: m.b.Popup
 							})
 						})(a())
 					}, (e, t) => {
 						n(Object(o.o)()), e && (t ? (e => {
-							Object(d.a)({
-								...h(e),
-								action: u.c.Block,
-								source: u.b.Popup
+							Object(h.a)({
+								...b(e),
+								action: m.c.Block,
+								source: m.b.Popup
 							})
 						})(a()) : (e => {
-							Object(d.a)({
-								...h(e),
-								action: u.c.Close,
-								source: u.b.Popup
+							Object(h.a)({
+								...b(e),
+								action: m.c.Close,
+								source: m.b.Popup
 							})
 						})(a()))
 					}, () => {
 						n(Object(o.p)()), Object(c.b)(l.gqlContext), (e => {
-							Object(d.a)({
-								...h(e),
-								action: u.c.Allow,
-								source: u.b.Popup
+							Object(h.a)({
+								...b(e),
+								action: m.c.Allow,
+								source: m.b.Popup
 							})
 						})(a())
 					}, s.a, s.a)
+				}, v = e => async (t, n) => {
+					((e, t) => Object(h.a)(Object(d.a)({
+						source: m.b.InboxNotification,
+						action: m.a.Click,
+						noun: "create_chat",
+						...p(e),
+						chat: {
+							recipient_user_id: t
+						}
+					})))(n(), e)
 				}
 		},
 		"./src/chat/actions/page.ts": function(e, t, n) {
@@ -18300,4 +18318,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.350796c05692a2eff13d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.2a6b6164e9892f376617.js.map

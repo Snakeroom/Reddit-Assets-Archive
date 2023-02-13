@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.9d750b7861ae07a19c3a.js
-// Retrieved at 2/7/2023, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.62f5f25a124399a74143.js
+// Retrieved at 2/13/2023, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -595,12 +595,13 @@
 					onAddUserToQuickReplyList: v,
 					children: h,
 					style: x,
-					pageType: I
+					pageType: I,
+					userId: g
 				} = e;
 				return s.a.createElement(d.t, {
 					onClick: e => {
 						if (f && f(e), t(I), b === a.awardNotification) return v();
-						o(Object(l.b)(c))
+						o(Object(l.b)(c)), o(Object(l.c)(g, c))
 					},
 					className: n,
 					text: r,
@@ -1270,7 +1271,7 @@
 					}, a ? n.a.createElement(Y.a, {
 						role: "button",
 						onClick: () => {
-							s(this.props.user.id), o(F.e(t))
+							s(this.props.user.id), o(F.f(t))
 						}
 					}, n.a.createElement(Z.a, {
 						name: "ban",
@@ -1291,7 +1292,7 @@
 					})), r && n.a.createElement(Y.a, {
 						role: "button",
 						onClick: () => {
-							i(), o(F.d(t))
+							i(), o(F.e(t))
 						}
 					}, n.a.createElement(Z.a, {
 						name: "mod_mute",
@@ -1337,7 +1338,7 @@
 				}))(e => n.a.createElement(Y.a, {
 					role: "button",
 					onClick: () => {
-						e.onToggleUserFlairModal(), e.sendEvent(F.c(e.contextId))
+						e.onToggleUserFlairModal(), e.sendEvent(F.d(e.contextId))
 					}
 				}, n.a.createElement(Z.a, {
 					name: "tag",
@@ -1493,13 +1494,14 @@
 						text: O.fbt._("Start Chat", null, {
 							hk: "2mfqRE"
 						}),
-						isFullWidth: !0
+						isFullWidth: !0,
+						pageType: "user_hovercard"
 					}), I.hasUserProfile && !_ && !w && !j && I.enableFollowers && n.a.createElement(me, {
 						identifier: {
 							name: e.user.username,
 							type: "profile"
 						},
-						getEventFactory: e => Object(F.h)(e ? "unfollow" : "follow", s),
+						getEventFactory: e => Object(F.j)(e ? "unfollow" : "follow", s),
 						isFullWidth: !0,
 						small: !0
 					})), A && s && !j && v && n.a.createElement(ae, {
@@ -2633,4 +2635,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.9d750b7861ae07a19c3a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.62f5f25a124399a74143.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.720b66b4c457a128e8d9.js
-// Retrieved at 2/9/2023, 10:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.ac9628926dbdade7713a.js
+// Retrieved at 2/13/2023, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -598,12 +598,13 @@
 					onAddUserToQuickReplyList: v,
 					children: h,
 					style: g,
-					pageType: x
+					pageType: x,
+					userId: _
 				} = e;
 				return o.a.createElement(d.t, {
 					onClick: e => {
 						if (b && b(e), t(x), f === n.awardNotification) return v();
-						a(Object(l.b)(i))
+						a(Object(l.b)(i)), a(Object(l.c)(_, i))
 					},
 					className: s,
 					text: r,
@@ -2803,7 +2804,6 @@
 				return o.a.createElement("div", {
 					className: pe.a.actionItem
 				}, o.a.createElement(u.b, {
-					contextId: t,
 					className: pe.a.button,
 					userId: t,
 					text: be._("Chat", null, {
@@ -3707,4 +3707,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.720b66b4c457a128e8d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.ac9628926dbdade7713a.js.map

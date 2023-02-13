@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.4e69871de2184c3f8882.js
-// Retrieved at 2/9/2023, 10:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.ed63e79287c664164ee9.js
+// Retrieved at 2/13/2023, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit~StandalonePostPage", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -26992,65 +26992,73 @@
 		"./src/reddit/helpers/trackers/gild.ts": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "getAwardTypeFromAward", (function() {
-				return u
+				return m
 			})), n.d(t, "clickGildEvent", (function() {
-				return h
-			})), n.d(t, "clickAddAward", (function() {
-				return b
-			})), n.d(t, "clickHideAward", (function() {
 				return f
-			})), n.d(t, "clickConfirmHideAward", (function() {
+			})), n.d(t, "clickAddAward", (function() {
 				return g
-			})), n.d(t, "clickCancelHideAward", (function() {
+			})), n.d(t, "clickHideAward", (function() {
 				return v
-			})), n.d(t, "clickAwardReportFlow", (function() {
+			})), n.d(t, "clickConfirmHideAward", (function() {
+				return C
+			})), n.d(t, "clickCancelHideAward", (function() {
 				return E
-			})), n.d(t, "clickCancelAwardReportFlow", (function() {
-				return x
-			})), n.d(t, "clickFlagAwardUsage", (function() {
+			})), n.d(t, "clickAwardReportFlow", (function() {
 				return y
-			})), n.d(t, "clickCancelFlagAwardUsage", (function() {
+			})), n.d(t, "clickCancelAwardReportFlow", (function() {
 				return O
-			})), n.d(t, "clickConfirmFlagAwardUsage", (function() {
+			})), n.d(t, "clickFlagAwardUsage", (function() {
 				return _
-			})), n.d(t, "clickReportAward", (function() {
+			})), n.d(t, "clickCancelFlagAwardUsage", (function() {
 				return k
-			})), n.d(t, "clickCancelReportAward", (function() {
+			})), n.d(t, "clickConfirmFlagAwardUsage", (function() {
 				return j
-			})), n.d(t, "clickConfirmReportAward", (function() {
+			})), n.d(t, "clickReportAward", (function() {
 				return S
-			})), n.d(t, "viewGildModalEvent", (function() {
+			})), n.d(t, "clickCancelReportAward", (function() {
 				return T
-			})), n.d(t, "clickSelectAwardEvent", (function() {
+			})), n.d(t, "clickConfirmReportAward", (function() {
 				return w
-			})), n.d(t, "triggerAnonymousEvent", (function() {
+			})), n.d(t, "viewGildModalEvent", (function() {
 				return I
-			})), n.d(t, "clickMessageInputEvent", (function() {
+			})), n.d(t, "clickSelectAwardEvent", (function() {
 				return P
-			})), n.d(t, "typeMessageInputEvent", (function() {
+			})), n.d(t, "triggerAnonymousEvent", (function() {
 				return N
-			})), n.d(t, "clickLearnMoreLinkEvent", (function() {
+			})), n.d(t, "clickMessageInputEvent", (function() {
 				return R
-			})), n.d(t, "clickQuestionMarkEvent", (function() {
+			})), n.d(t, "clickMessageInputEventMatrixChat", (function() {
 				return M
-			})), n.d(t, "clickConfirmAwardEvent", (function() {
+			})), n.d(t, "typeMessageInputEvent", (function() {
 				return D
-			})), n.d(t, "clickGetPremiumEvent", (function() {
+			})), n.d(t, "typeMessageInputEventMatrixChat", (function() {
 				return L
-			})), n.d(t, "clickAddCoinsButtonEvent", (function() {
+			})), n.d(t, "clickLearnMoreLinkEvent", (function() {
 				return A
-			})), n.d(t, "clickNextButtonEvent", (function() {
+			})), n.d(t, "clickQuestionMarkEvent", (function() {
 				return F
-			})), n.d(t, "clickCloseGildModalEvent", (function() {
+			})), n.d(t, "clickConfirmAwardEvent", (function() {
 				return B
-			})), n.d(t, "viewKarmaSuccessEvent", (function() {
+			})), n.d(t, "clickConfirmAwardEventMatrixChat", (function() {
 				return U
-			})), n.d(t, "clickFilterEvent", (function() {
+			})), n.d(t, "clickConfirmAwardEventMatrixChatMessage", (function() {
 				return K
-			})), n.d(t, "clickNextFiltersEvent", (function() {
+			})), n.d(t, "clickGetPremiumEvent", (function() {
 				return W
-			})), n.d(t, "clickPreviousFiltersEvent", (function() {
+			})), n.d(t, "clickAddCoinsButtonEvent", (function() {
 				return H
+			})), n.d(t, "clickNextButtonEvent", (function() {
+				return G
+			})), n.d(t, "clickCloseGildModalEvent", (function() {
+				return z
+			})), n.d(t, "viewKarmaSuccessEvent", (function() {
+				return q
+			})), n.d(t, "clickFilterEvent", (function() {
+				return V
+			})), n.d(t, "clickNextFiltersEvent", (function() {
+				return Q
+			})), n.d(t, "clickPreviousFiltersEvent", (function() {
+				return J
 			}));
 			var o = n("./src/reddit/helpers/trackers/commentsChat.ts"),
 				r = n("./src/reddit/models/Gold/Award.ts"),
@@ -27059,17 +27067,18 @@
 				a = n("./src/telemetry/models/GoldPurchase.ts"),
 				c = n("./src/reddit/helpers/correlationIdTracker.ts"),
 				d = n("./src/reddit/helpers/isComment.ts"),
-				l = n("./src/reddit/selectors/gild.ts");
-			const u = e => e.awardType === r.e.Global && e.awardSubType === r.d.Appreciation ? a.GoldPurchaseType.GidAppreciation : e.awardType === r.e.Global && e.awardSubType === r.d.Premium ? a.GoldPurchaseType.GidPremium : e.awardSubType === r.d.Group ? a.GoldPurchaseType.GidGroup : e.awardType === r.e.Community ? a.GoldPurchaseType.GidCommunity : e.awardType === r.e.Moderator ? a.GoldPurchaseType.GidMod : e.awardType === r.e.Global && e.awardSubType === r.d.Global ? a.GoldPurchaseType.GidGlobal : a.GoldPurchaseType.GidUnknown,
-				m = (e, t) => ({
+				l = n("./src/reddit/helpers/trackers/chat.ts"),
+				u = n("./src/reddit/selectors/gild.ts");
+			const m = e => e.awardType === r.e.Global && e.awardSubType === r.d.Appreciation ? a.GoldPurchaseType.GidAppreciation : e.awardType === r.e.Global && e.awardSubType === r.d.Premium ? a.GoldPurchaseType.GidPremium : e.awardSubType === r.d.Group ? a.GoldPurchaseType.GidGroup : e.awardType === r.e.Community ? a.GoldPurchaseType.GidCommunity : e.awardType === r.e.Moderator ? a.GoldPurchaseType.GidMod : e.awardType === r.e.Global && e.awardSubType === r.d.Global ? a.GoldPurchaseType.GidGlobal : a.GoldPurchaseType.GidUnknown,
+				p = (e, t) => ({
 					awardId: e.id,
 					awardName: e.name,
 					isTemporaryAward: !!e.endsAt,
 					numberCoinsToRecipient: e.coinReward,
-					type: u(e),
+					type: m(e),
 					...t
 				}),
-				p = (e, t, n) => {
+				h = (e, t, n) => {
 					const r = t && Object(s.g)(e, {
 						commentId: t
 					});
@@ -27083,7 +27092,7 @@
 							state: e,
 							commentId: t
 						}) : void 0,
-						correlationId: Object(l.b)(e) || Object(c.d)(c.a.GildingFlow, !1),
+						correlationId: Object(u.b)(e) || Object(c.d)(c.a.GildingFlow, !1),
 						post: t ? i.K(e, t) : void 0,
 						screen: i.cb(e),
 						subreddit: i.lb(e),
@@ -27091,58 +27100,62 @@
 						listing: t ? Object(o.k)(e, t) : void 0
 					}
 				},
-				h = (e, t) => n => ({
-					...p(n, e, t),
+				b = (e, t) => {
+					var n, o;
+					return (Object(d.a)(t) ? null === (n = e.comment) || void 0 === n ? void 0 : n.authorId : null === (o = e.post) || void 0 === o ? void 0 : o.authorId) || ""
+				},
+				f = (e, t) => n => ({
+					...h(n, e, t),
 					source: Object(d.a)(e) ? "comment" : "post",
 					action: "click",
 					noun: "give_gold",
 					feed: i.r(n)
 				}),
-				b = e => t => ({
-					...p(t, e),
+				g = e => t => ({
+					...h(t, e),
 					source: Object(d.a)(e) ? "comment" : "post",
 					action: "click",
 					noun: "add_award",
 					feed: i.r(t)
 				}),
-				f = (e, t) => n => ({
-					...p(n, t),
+				v = (e, t) => n => ({
+					...h(n, t),
 					source: Object(d.a)(t) ? "comment" : "post",
 					action: "click",
 					noun: "hide_award",
-					goldPurchase: m(e)
+					goldPurchase: p(e)
 				}),
-				g = (e, t) => n => ({
-					...p(n, t),
+				C = (e, t) => n => ({
+					...h(n, t),
 					source: Object(d.a)(t) ? "comment" : "post",
 					action: "click",
 					noun: "confirm_hide_award",
-					goldPurchase: m(e)
+					goldPurchase: p(e)
 				}),
-				v = (e, t) => n => ({
-					...p(n, t),
+				E = (e, t) => n => ({
+					...h(n, t),
 					source: Object(d.a)(t) ? "comment" : "post",
 					action: "click",
 					noun: "cancel_hide_award",
-					goldPurchase: m(e)
+					goldPurchase: p(e)
 				}),
-				C = e => (t, n) => o => ({
-					...p(o, n),
+				x = e => (t, n) => o => ({
+					...h(o, n),
 					source: Object(d.a)(n) ? "comment" : "post",
 					action: "click",
 					noun: e,
-					goldPurchase: m(t)
+					goldPurchase: p(t)
 				}),
-				E = C("award_hovercard_report"),
-				x = C("cancel_award_hovercard_report"),
-				y = C("flag_award"),
-				O = C("cancel_flag_award"),
-				_ = C("confirm_flag_award"),
-				k = C("report_community_award"),
-				j = C("cancel_report_community_award"),
-				S = C("confirm_report_community_award"),
-				T = (e, t, n) => o => ({
-					...p(o, n),
+				y = x("award_hovercard_report"),
+				O = x("cancel_award_hovercard_report"),
+				_ = x("flag_award"),
+				k = x("cancel_flag_award"),
+				j = x("confirm_flag_award"),
+				S = x("report_community_award"),
+				T = x("cancel_report_community_award"),
+				w = x("confirm_report_community_award"),
+				I = (e, t, n) => o => ({
+					...h(o, n),
 					source: "give_gold",
 					action: "view",
 					noun: "page",
@@ -27151,82 +27164,134 @@
 						defaultAnonymous: t
 					}
 				}),
-				w = (e, t, n) => o => ({
-					...p(o, t),
+				P = (e, t, n) => o => ({
+					...h(o, t),
 					source: "give_gold",
 					action: "click",
 					noun: "award",
-					goldPurchase: m(e, n)
+					goldPurchase: p(e, n)
 				}),
-				I = (e, t) => n => ({
-					...p(n, t),
+				N = (e, t) => n => ({
+					...h(n, t),
 					source: "give_gold",
 					action: e,
 					noun: "anonymous"
 				}),
-				P = e => t => ({
-					...p(t, e),
+				R = e => t => ({
+					...h(t, e),
 					source: "give_gold",
 					action: "click",
 					noun: "message_input"
 				}),
-				N = e => t => ({
-					...p(t, e),
+				M = e => t => {
+					const n = h(t, e);
+					return Object(l.a)({
+						...n,
+						source: "give_gold",
+						action: "click",
+						noun: "message_input",
+						chat: {
+							recipient_user_id: b(n, e)
+						}
+					})
+				},
+				D = e => t => ({
+					...h(t, e),
 					source: "give_gold",
 					action: "type",
 					noun: "message_input"
 				}),
-				R = e => t => ({
-					...p(t, e),
+				L = e => t => {
+					const n = h(t, e);
+					return Object(l.a)({
+						...n,
+						source: "give_gold",
+						action: "type",
+						noun: "message_input",
+						chat: {
+							recipient_user_id: b(n, e)
+						}
+					})
+				},
+				A = e => t => ({
+					...h(t, e),
 					source: "give_gold",
 					action: "click",
 					noun: "learn_more"
 				}),
-				M = e => t => ({
-					...p(t, e),
+				F = e => t => ({
+					...h(t, e),
 					source: "give_gold",
 					action: "click",
 					noun: "question"
 				}),
-				D = (e, t) => n => ({
-					...p(n, e),
+				B = (e, t) => n => ({
+					...h(n, e),
 					source: "give_gold",
 					action: "click",
 					noun: "confirm",
 					goldPurchase: {
 						contentType: Object(d.a)(e) ? "comment" : "post",
-						...m(t)
+						...p(t)
 					}
 				}),
-				L = (e, t) => n => ({
-					...p(n, e),
+				U = e => t => {
+					const n = h(t, e);
+					return Object(l.a)({
+						...n,
+						source: "give_gold",
+						action: "click",
+						noun: "confirm",
+						chat: {
+							recipient_user_id: b(n, e)
+						}
+					})
+				},
+				K = (e, t) => n => {
+					const o = h(n, e);
+					return Object(l.a)({
+						...o,
+						source: "give_gold",
+						action: "click",
+						noun: "confirm",
+						chat: {
+							recipient_user_id: b(o, e),
+							message_length: t
+						},
+						actionInfo: {
+							pageType: Object(d.a)(e) ? "comment" : "post"
+						}
+					})
+				},
+				W = (e, t) => n => ({
+					...h(n, e),
 					source: "give_gold",
 					action: "click",
 					noun: "get_premium",
 					goldPurchase: {
 						contentType: Object(d.a)(e) ? "comment" : "post",
-						...m(t)
+						...p(t)
 					}
 				}),
-				A = e => t => ({
-					...p(t, e),
+				H = e => t => ({
+					...h(t, e),
 					source: "give_gold",
 					action: "click",
 					noun: "add_coins"
 				}),
-				F = e => t => ({
-					...p(t, e),
+				G = e => t => ({
+					...h(t, e),
 					source: "give_gold",
 					action: "click",
 					noun: "next"
 				}),
-				B = e => t => ({
-					...p(t, e),
+				z = e => t => ({
+					...h(t, e),
 					source: "give_gold",
 					action: "click",
 					noun: "close"
 				}),
-				U = e => {
+				q = e => {
 					let {
 						award: t,
 						awardeeKarmaEarned: n,
@@ -27235,7 +27300,7 @@
 						thingId: s
 					} = e;
 					return e => ({
-						...p(e, s),
+						...h(e, s),
 						source: "give_gold",
 						action: "view",
 						noun: "karma_success",
@@ -27244,12 +27309,12 @@
 							awardeeKarmaEarned: n,
 							awarderKarmaEarned: o,
 							numberCoins: r,
-							...m(t)
+							...p(t)
 						}
 					})
 				},
-				K = e => t => ({
-					...p(t),
+				V = e => t => ({
+					...h(t),
 					source: "give_gold",
 					action: "click",
 					noun: "filter",
@@ -27258,14 +27323,14 @@
 						filterName: e.content.markdown
 					}
 				}),
-				W = () => e => ({
-					...p(e),
+				Q = () => e => ({
+					...h(e),
 					source: "give_gold",
 					action: "click",
 					noun: "next_filters"
 				}),
-				H = () => e => ({
-					...p(e),
+				J = () => e => ({
+					...h(e),
 					source: "give_gold",
 					action: "click",
 					noun: "previous_filters"
@@ -40074,4 +40139,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.4e69871de2184c3f8882.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.ed63e79287c664164ee9.js.map
