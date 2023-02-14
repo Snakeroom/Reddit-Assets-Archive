@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.e5a3422f78811af8678c.js
-// Retrieved at 1/18/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.0c548a86f3eab08e873f.js
+// Retrieved at 2/14/2023, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -2550,7 +2550,7 @@
 							let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0,
 								e = arguments.length > 1 ? arguments[1] : void 0;
 							return t + e.getLength()
-						}), 0))(e) || (t => !!t.find(t => Object(w.o)(t.getType())))(e)) return null; {
+						}), 0))(e) || (t => !!t.find(t => Object(w.o)(t.getType())))(e) || t.isInCompositionMode()) return null; {
 						const n = t.getSelection();
 						if (n.isCollapsed() && n.getFocusKey() === e.first().getKey()) return n.getFocusKey()
 					}
@@ -8042,4 +8042,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.e5a3422f78811af8678c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.0c548a86f3eab08e873f.js.map
