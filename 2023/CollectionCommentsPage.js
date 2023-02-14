@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.ea13a0935cc499ce9979.js
-// Retrieved at 2/13/2023, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.46aedebdc4aa8f095f63.js
+// Retrieved at 2/14/2023, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -7783,7 +7783,7 @@
 			e.exports = {
 				recommendationWidget: "_1WHlo0amI-5XpQrgGac9jY",
 				postPreview: "_3G-DpckPZwPYm-VEwXS5uA",
-				thumbnail: "_2DBbsvO3jP7bcFqAftcbiQ",
+				thumbnailWrapper: "FbUnsa6_9Y7zASOdkXBni",
 				subredditTitle: "WfSCvRO60bnRAHFf76dCJ",
 				subredditName: "_1AF1qgUDsTX_XHGNtb9eTD",
 				subredditIcon: "bl4ZZFlSdSp0651LqnPbO",
@@ -7801,7 +7801,9 @@
 				postTitleLoading: "_1XDqtC7PCill1D0glb6XnR",
 				postMetaSectionLoading: "_2K21kGnTaAQg66D6rlbV2-",
 				verticalPostPreviewContainer: "_1Rbe3T11RIqoP4Q5IhxfnO",
-				verticalPostPreviewThumbnail: "_23aHU6t4uajlAh0CKp4cOP"
+				verticalPostPreviewThumbnail: "_23aHU6t4uajlAh0CKp4cOP",
+				thumbnail: "_2DBbsvO3jP7bcFqAftcbiQ",
+				blur: "_1YTMtnzKujONiVS3cvsRJd"
 			}
 		},
 		"./src/reddit/components/Widgets/Recommendations/index.tsx": function(e, t, s) {
@@ -7938,7 +7940,8 @@
 						title: C
 					} = s,
 					W = _ ? `${Math.round(100*_)}%` : "",
-					z = s.flair.length ? s.flair.findIndex(e => e.type === R.f.Nsfw) : -1;
+					z = s.flair.length ? s.flair.findIndex(e => e.type === R.f.Nsfw) : -1,
+					K = z >= 0;
 				return c.a.createElement("li", {
 					className: U.a.postPreview,
 					ref: r,
@@ -7956,28 +7959,38 @@
 					subredditOrProfile: i
 				}), c.a.createElement("span", {
 					className: U.a.subredditName
-				}, i && `r/${i.name}`), z >= 0 && c.a.createElement(I.c, {
+				}, i && `r/${i.name}`), K && c.a.createElement(I.c, {
 					flair: s.flair[z]
 				}))), v && Object(k.a)(v.url) && c.a.createElement("div", {
 					className: U.a.verticalPostPreviewThumbnail
+				}, c.a.createElement("div", {
+					className: U.a.thumbnailWrapper
 				}, c.a.createElement("img", {
-					className: U.a.thumbnail,
+					"data-testid": "post-large-preview-image",
+					className: Object(E.a)(U.a.thumbnail, {
+						[U.a.blur]: K
+					}),
 					src: v.url
-				})), c.a.createElement("div", {
+				}))), c.a.createElement("div", {
 					className: Object(E.a)(U.a.postTitle, {
 						[U.a.shortTitle]: v.url !== N.a.DEFAULT
 					})
-				}, Object(w.a)(C, 60, "..."))))() : (() => c.a.createElement(c.a.Fragment, null, v && Object(k.a)(v.url) && c.a.createElement("img", {
-					className: U.a.thumbnail,
+				}, Object(w.a)(C, 60, "..."))))() : (() => c.a.createElement(c.a.Fragment, null, v && Object(k.a)(v.url) && c.a.createElement("div", {
+					className: U.a.thumbnailWrapper
+				}, c.a.createElement("img", {
+					"data-testid": "post-compact-preview-image",
+					className: Object(E.a)(U.a.thumbnail, {
+						[U.a.blur]: K
+					}),
 					src: v.url
-				}), c.a.createElement("div", {
+				})), c.a.createElement("div", {
 					className: U.a.subredditTitle
 				}, c.a.createElement(S.b, {
 					className: U.a.subredditIcon,
 					subredditOrProfile: i
 				}), c.a.createElement("span", {
 					className: U.a.subredditName
-				}, i && `r/${i.name}`), z >= 0 && c.a.createElement(I.c, {
+				}, i && `r/${i.name}`), K && c.a.createElement(I.c, {
 					flair: s.flair[z]
 				})), c.a.createElement("div", {
 					className: Object(E.a)(U.a.postTitle, {
@@ -11331,4 +11344,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.ea13a0935cc499ce9979.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.46aedebdc4aa8f095f63.js.map
