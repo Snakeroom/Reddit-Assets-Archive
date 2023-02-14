@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.999860e8a0d97978ffb2.js
-// Retrieved at 2/9/2023, 10:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.a1347358bf7cf999cd37.js
+// Retrieved at 2/13/2023, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -4191,8 +4191,8 @@
 						label: s.fbt._("Gender", null, {
 							hk: "1spCV5"
 						}),
-						subtext: s.fbt._("Reddit will never share this information and only uses it to improve what content you see.", null, {
-							hk: "1PqDkg"
+						subtext: s.fbt._("This information may be used to improve your recommendations and ads.", null, {
+							hk: "3vtjqc"
 						})
 					}, a.a.createElement("div", {
 						className: y.a.wrapper
@@ -12709,4 +12709,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.999860e8a0d97978ffb2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.a1347358bf7cf999cd37.js.map
