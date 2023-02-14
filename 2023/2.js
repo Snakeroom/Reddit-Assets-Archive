@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/2.b11a12069ccc144577f5.js
-// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/2.0d9fdc858539bf6ff481.js
+// Retrieved at 2/14/2023, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[2], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -46,8 +46,8 @@
 				a = n.n(s),
 				r = n("./node_modules/react-redux/es/index.js"),
 				o = n("./node_modules/reselect/es/index.js"),
-				l = n("./src/higherOrderComponents/asModal/index.tsx"),
-				i = n("./src/devPlatform/components/UserInputModal/modals.ts"),
+				i = n("./src/higherOrderComponents/asModal/index.tsx"),
+				l = n("./src/devPlatform/components/UserInputModal/modals.ts"),
 				c = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./node_modules/fbt/lib/FbtPublic.js")),
 				d = n("./node_modules/@devvit/protos/index.js"),
 				u = n("./src/lib/lessComponent.tsx"),
@@ -75,14 +75,14 @@
 			const y = u.a.div("Wrapper", k.a),
 				N = u.a.div("ConfigFormRendererWrapper", k.a),
 				_ = u.a.p("TextWrapper", k.a),
-				I = u.a.div("ConfigFormRow", k.a),
-				O = u.a.div("ConfigFormStringRow", k.a),
+				O = u.a.div("ConfigFormRow", k.a),
+				I = u.a.div("ConfigFormStringRow", k.a),
 				R = u.a.div("NumberInputWrapper", k.a),
 				j = u.a.div("ConfigFormFooterWrapper", k.a);
 			class T extends a.a.Component {
 				constructor(e) {
 					super(e), this.state = {
-						values: new Map
+						values: e.configForm.fields.reduce((e, t) => (e.set(t.key, JSON.parse(t.response || '""')), e), new Map)
 					}
 				}
 				updateValue(e, t) {
@@ -105,12 +105,12 @@
 					const {
 						title: r,
 						description: o,
-						configForm: l,
-						onCloseClick: i
+						configForm: i,
+						onCloseClick: l
 					} = this.props, u = [];
-					for (const c of l.fields) switch (Object(d.T)(c.fieldType)) {
+					for (const c of i.fields) switch (Object(d.T)(c.fieldType)) {
 						case d.c.STRING:
-							u.push(a.a.createElement(O, {
+							u.push(a.a.createElement(I, {
 								key: c.key
 							}, a.a.createElement("label", {
 								htmlFor: c.key
@@ -121,7 +121,7 @@
 							})));
 							break;
 						case d.c.PARAGRAPH:
-							u.push(a.a.createElement(O, {
+							u.push(a.a.createElement(I, {
 								key: c.key
 							}, a.a.createElement("label", {
 								htmlFor: c.key
@@ -132,7 +132,7 @@
 							})));
 							break;
 						case d.c.NUMBER:
-							u.push(a.a.createElement(I, {
+							u.push(a.a.createElement(O, {
 								key: c.key
 							}, a.a.createElement("label", {
 								htmlFor: c.key
@@ -145,7 +145,7 @@
 							break;
 						case d.c.BOOLEAN:
 							const r = null !== (s = this.state.values.get(c.key)) && void 0 !== s && s;
-							u.push(a.a.createElement(I, {
+							u.push(a.a.createElement(O, {
 								key: c.key
 							}, a.a.createElement("label", {
 								htmlFor: c.key
@@ -159,7 +159,7 @@
 					}
 					return a.a.createElement(y, null, a.a.createElement(N, null, a.a.createElement(E, {
 						title: r,
-						onCloseClick: i
+						onCloseClick: l
 					}), a.a.createElement(_, null, o), u, a.a.createElement(j, null, a.a.createElement(p.t, {
 						onClick: () => this.onSubmit()
 					}, c.fbt._("Ok", null, {
@@ -169,7 +169,7 @@
 			}
 			var M = T;
 			const F = Object(o.c)({});
-			class D extends a.a.Component {
+			class S extends a.a.Component {
 				constructor() {
 					super(...arguments), this.handleEscapeKey = e => {
 						const {
@@ -208,9 +208,9 @@
 					})
 				}
 			}
-			var S = Object(r.b)(F, e => ({
-					closeUserInputModal: () => e(Object(i.a)())
-				}))(D),
+			var D = Object(r.b)(F, e => ({
+					closeUserInputModal: () => e(Object(l.a)())
+				}))(S),
 				W = n("./src/lib/initializeClient/installReducer.ts"),
 				A = n("./src/reddit/reducers/features/devPlatform/index.ts");
 			Object(W.a)({
@@ -233,9 +233,9 @@
 					onAction: e => e.features.devPlatform.userInputModal.onAction
 				}),
 				V = Object(r.b)(B, e => ({
-					closeUserInputModal: () => e(Object(i.a)())
+					closeUserInputModal: () => e(Object(l.a)())
 				})),
-				L = Object(l.a)(e => e.action && e.onAction ? a.a.createElement(S, {
+				L = Object(i.a)(e => e.action && e.onAction ? a.a.createElement(D, {
 					action: e.action,
 					onAction: e.onAction
 				}) : null);
@@ -271,9 +271,9 @@
 				a = n("./node_modules/lodash/uniqueId.js"),
 				r = n.n(a),
 				o = n("./node_modules/raf/index.js"),
-				l = n.n(o),
-				i = n("./node_modules/react/index.js"),
-				c = n.n(i),
+				i = n.n(o),
+				l = n("./node_modules/react/index.js"),
+				c = n.n(l),
 				d = n("./src/lib/classNames/index.ts"),
 				u = n("./src/higherOrderComponents/asModal/index.tsx"),
 				p = n("./src/reddit/controls/Button/index.tsx"),
@@ -321,7 +321,7 @@
 					this.calcTextDidOverflow()
 				}
 				calcTextDidOverflow() {
-					l()(() => {
+					i()(() => {
 						const e = this.spanRef.current;
 						if (!e) return;
 						const t = e.scrollWidth > e.clientWidth;
@@ -343,7 +343,7 @@
 						})
 					} = this.props, {
 						textHasOverflowed: o,
-						isModalOpen: l
+						isModalOpen: i
 					} = this.state;
 					return c.a.createElement("div", {
 						className: Object(d.a)(g.a.wrapper, t)
@@ -353,7 +353,7 @@
 					}, e), o && c.a.createElement("span", {
 						className: g.a.moreText,
 						onClick: this.toggleModal
-					}, r), l && c.a.createElement(f, {
+					}, r), i && c.a.createElement(f, {
 						onConfirmed: this.toggleModal,
 						title: a
 					}, n || e))
@@ -416,8 +416,8 @@
 				a = n.n(s),
 				r = n("./src/lib/classNames/index.ts"),
 				o = n("./src/lib/lessComponent.tsx"),
-				l = n("./src/reddit/controls/ErrorText/index.tsx"),
-				i = n("./src/reddit/icons/svgs/Plus/index.tsx"),
+				i = n("./src/reddit/controls/ErrorText/index.tsx"),
+				l = n("./src/reddit/icons/svgs/Plus/index.tsx"),
 				c = n("./src/reddit/icons/svgs/Trash2/index.tsx"),
 				d = n("./src/reddit/controls/FormFields/index.m.less"),
 				u = n.n(d);
@@ -441,19 +441,19 @@
 						children: n,
 						inputRef: s,
 						className: o,
-						isInvalid: l,
-						...i
+						isInvalid: i,
+						...l
 					} = e;
-					const c = void 0 !== i.value && "" !== i.value;
+					const c = void 0 !== l.value && "" !== l.value;
 					return a.a.createElement("div", {
 						className: Object(r.a)(u.a.inputWrapper, o, {
-							[u.a.mIsInvalid]: l
+							[u.a.mIsInvalid]: i
 						}),
 						onClick: h
 					}, a.a.createElement(m, p({
-						"aria-invalid": l,
+						"aria-invalid": i,
 						innerRef: s
-					}, i)), t && a.a.createElement("label", {
+					}, l)), t && a.a.createElement("label", {
 						className: Object(r.a)(u.a.label, {
 							[u.a.mHasValue]: c
 						})
@@ -465,15 +465,15 @@
 						children: n,
 						inputRef: s,
 						isInvalid: o,
-						className: l,
-						redditStyle: i,
+						className: i,
+						redditStyle: l,
 						...c
 					} = e;
 					const d = void 0 !== c.value && "" !== c.value;
 					return a.a.createElement("div", {
-						className: Object(r.a)(u.a.inputMovingLabelWrapper, l, {
+						className: Object(r.a)(u.a.inputMovingLabelWrapper, i, {
 							[u.a.mIsInvalid]: o,
-							[u.a.mIsRedditStyle]: i
+							[u.a.mIsRedditStyle]: l
 						}),
 						onClick: h
 					}, a.a.createElement(m, p({
@@ -487,7 +487,7 @@
 				x = e => a.a.createElement("div", {
 					className: Object(r.a)(u.a.addValueButton, e.className),
 					onClick: e.onClick
-				}, e.text, " ", a.a.createElement(i.a, {
+				}, e.text, " ", a.a.createElement(l.a, {
 					className: u.a.plus
 				}));
 			var g;
@@ -554,7 +554,7 @@
 						onClick: () => this.removeValue(o)
 					}, a.a.createElement(c.b, {
 						className: u.a.trash
-					})), !!r[o] && a.a.createElement(l.b, {
+					})), !!r[o] && a.a.createElement(i.b, {
 						className: u.a.errorText
 					}, r[o])))
 				}
@@ -565,16 +565,16 @@
 						values: n,
 						maxLength: s,
 						addValueText: o,
-						disabled: l
+						disabled: i
 					} = this.props;
 					this.focusedInput = null;
-					const i = !(!!s && n.length >= s) && !l;
+					const l = !(!!s && n.length >= s) && !i;
 					return a.a.createElement("div", {
 						className: Object(r.a)(u.a.multiInputWrapper, e)
-					}, t && i && a.a.createElement(x, {
+					}, t && l && a.a.createElement(x, {
 						onClick: this.addValue,
 						text: o
-					}), this.renderFields(), !t && i && a.a.createElement(x, {
+					}), this.renderFields(), !t && l && a.a.createElement(x, {
 						onClick: this.addValue,
 						text: o
 					}))
@@ -606,8 +606,8 @@
 				a = n.n(s),
 				r = n("./src/lib/classNames/index.ts"),
 				o = n("./src/reddit/controls/FormFields/index.tsx"),
-				l = n("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
-				i = n("./src/reddit/icons/svgs/ChevronUp/index.tsx"),
+				i = n("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
+				l = n("./src/reddit/icons/svgs/ChevronUp/index.tsx"),
 				c = n("./src/reddit/controls/NumberInput/index.m.less"),
 				d = n.n(c);
 
@@ -667,7 +667,7 @@
 						onClick: this.handleIncrement,
 						onMouseDown: this.focusOnInput,
 						tabIndex: -1
-					}, a.a.createElement(i.a, {
+					}, a.a.createElement(l.a, {
 						className: d.a.icon
 					})), a.a.createElement("button", {
 						"aria-controls": s,
@@ -675,7 +675,7 @@
 						onClick: this.handleDecrement,
 						onMouseDown: this.focusOnInput,
 						tabIndex: -1
-					}, a.a.createElement(l.a, {
+					}, a.a.createElement(i.a, {
 						className: d.a.icon
 					}))))
 				}
@@ -701,21 +701,21 @@
 				a = n.n(s),
 				r = n("./src/lib/classNames/index.ts"),
 				o = n("./src/reddit/controls/Button/index.tsx"),
-				l = n("./src/reddit/controls/ToggleSwitch/index.m.less"),
-				i = n.n(l);
+				i = n("./src/reddit/controls/ToggleSwitch/index.m.less"),
+				l = n.n(i);
 			t.a = Object(s.memo)(Object(s.forwardRef)((e, t) => {
 				const n = e.size || o.d.XS;
 				return a.a.createElement("button", {
 					"aria-checked": e.on,
-					className: Object(r.a)(i.a.toggleSwitch, e.className, {
-						[i.a.xs]: n === o.d.XS,
-						[i.a.s]: n === o.d.S,
-						[i.a.m]: n === o.d.M,
-						[i.a.l]: n === o.d.L,
-						[i.a.xl]: n === o.d.XL,
-						[i.a.mActive]: e.on && !e.disabled || e.forceOn && e.on,
-						[i.a.mDisabled]: e.disabled,
-						[i.a.redditStyle]: e.redditStyle
+					className: Object(r.a)(l.a.toggleSwitch, e.className, {
+						[l.a.xs]: n === o.d.XS,
+						[l.a.s]: n === o.d.S,
+						[l.a.m]: n === o.d.M,
+						[l.a.l]: n === o.d.L,
+						[l.a.xl]: n === o.d.XL,
+						[l.a.mActive]: e.on && !e.disabled || e.forceOn && e.on,
+						[l.a.mDisabled]: e.disabled,
+						[l.a.redditStyle]: e.redditStyle
 					}),
 					style: e.on && !e.disabled && e.activeColorOverride ? {
 						backgroundColor: e.activeColorOverride
@@ -727,7 +727,7 @@
 					onClick: () => !e.disabled && e.onToggle && e.onToggle(),
 					ref: t
 				}, a.a.createElement("div", {
-					className: i.a.toggleDisplay
+					className: l.a.toggleDisplay
 				}))
 			}))
 		},
@@ -784,15 +784,15 @@
 		"./src/reddit/icons/svgs/Trash2/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return i
+				return l
 			}));
 			var s = n("./node_modules/react/index.js"),
 				a = n.n(s),
 				r = n("./src/lib/classNames/index.ts"),
 				o = n("./src/reddit/icons/svgs/Trash2/index.m.less"),
-				l = n.n(o);
-			const i = e => a.a.createElement("svg", {
-				className: Object(r.a)(l.a.icon, e.className),
+				i = n.n(o);
+			const l = e => a.a.createElement("svg", {
+				className: Object(r.a)(i.a.icon, e.className),
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg",
 				onClick: e.onClick
@@ -801,7 +801,7 @@
 			}), a.a.createElement("path", {
 				d: "M16.5,5H3.5a.5.5,0,0,0-.5.5v12A1.5,1.5,0,0,0,4.5,19h11A1.5,1.5,0,0,0,17,17.5V5.5A.5.5,0,0,0,16.5,5ZM6.75,15.5a.75.75,0,0,1-1.5,0v-7a.75.75,0,0,1,1.5,0Zm4,0a.75.75,0,0,1-1.5,0v-7a.75.75,0,0,1,1.5,0Zm4,0a.75.75,0,0,1-1.5,0v-7a.75.75,0,0,1,1.5,0Z"
 			}));
-			t.b = i
+			t.b = l
 		},
 		"./src/reddit/layout/row/Inline/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -817,4 +817,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/2.b11a12069ccc144577f5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/2.0d9fdc858539bf6ff481.js.map
