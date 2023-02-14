@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.a8dfff13e8dc82db8480.js
-// Retrieved at 2/10/2023, 2:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.2e4ebabf568a0a4232e9.js
+// Retrieved at 2/14/2023, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, n) {
@@ -2568,16 +2568,46 @@
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return a
+				return m
+			})), n.d(t, "b", (function() {
+				return b
 			}));
-			n("./src/reddit/constants/experiments.ts"), n("./src/reddit/helpers/chooseVariant/index.ts"), n("./src/reddit/helpers/trackers/experiments/user.ts");
-			var r = n("./src/reddit/reducers/user/experiments/shredditPDPExperimentHeader/index.ts"),
-				s = (n("./src/reddit/selectors/telemetry.ts"), n("./node_modules/reselect/es/index.js")),
-				i = n("./src/reddit/selectors/user.ts");
-			const o = e => e.user.experiments.shredditPDPExperimentInfo,
-				d = Object(s.a)(i.S, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? r.a.Off : t),
-				a = Object(s.a)(d, e => e === r.a.Treatment);
-			Object(s.a)(d, o, (e, t) => e !== r.a.Off && null !== t)
+			var r = n("./src/reddit/constants/experiments.ts"),
+				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
+				i = n("./src/reddit/helpers/trackers/experiments/user.ts"),
+				o = n("./src/reddit/reducers/user/experiments/shredditPDPExperimentHeader/index.ts"),
+				d = n("./src/reddit/selectors/telemetry.ts"),
+				a = n("./node_modules/reselect/es/index.js"),
+				c = n("./src/reddit/selectors/user.ts");
+			const l = e => e.user.experiments.shredditPDPExperimentInfo,
+				u = Object(a.a)(c.S, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? o.a.Off : t),
+				m = Object(a.a)(u, e => e === o.a.Treatment),
+				p = Object(a.a)(u, l, (e, t) => e !== o.a.Off && null !== t),
+				b = (e, t) => {
+					const n = t(),
+						a = u(n);
+					Object(c.S)(n) || a === o.a.Off || e.block(e => {
+						if ((e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname))
+							if (a === o.a.Control)((e, t) => {
+								if (p(e)) {
+									const n = l(e);
+									if (null != n) {
+										const r = d.f(e),
+											s = d.sb(e),
+											o = d.ab(e);
+										Object(i.a)(r, s, o, {
+											id: n.id,
+											isOverride: !1,
+											name: n.name,
+											version: n.version,
+											variant: t
+										}, {})
+									}
+								} else Object(s.d)(e, r.uf, t)
+							})(t(), r.M.Control1);
+							else if (a === o.a.Treatment) return window.location.href = e.pathname, !1
+					})
+				}
 		},
 		"./src/reddit/selectors/experiments/uxtsIntegration.ts": function(e, t, n) {
 			"use strict";
@@ -2604,4 +2634,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.a8dfff13e8dc82db8480.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.2e4ebabf568a0a4232e9.js.map
