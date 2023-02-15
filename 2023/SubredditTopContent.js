@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.9369ce3d3d6fb766fada.js
-// Retrieved at 2/9/2023, 10:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.b660be494e46a424ff41.js
+// Retrieved at 2/15/2023, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less": function(e, t, s) {
@@ -33,11 +33,11 @@
 				_ = s("./src/reddit/components/Widgets/Base/index.tsx"),
 				b = s("./src/reddit/helpers/trackers/discoveryUnit.ts"),
 				y = s("./src/reddit/constants/experiments.ts"),
-				D = s("./src/reddit/helpers/chooseVariant/index.ts"),
-				x = s("./src/reddit/selectors/user.ts");
-			const C = e => Object(x.P)(e) || y.Jf.ShowTopContent === Object(D.c)(e, {
-				experimentEligibilitySelector: D.a,
-				experimentName: y.Df
+				x = s("./src/reddit/helpers/chooseVariant/index.ts"),
+				D = s("./src/reddit/selectors/user.ts");
+			const C = e => Object(D.P)(e) || y.Lf.ShowTopContent === Object(x.c)(e, {
+				experimentEligibilitySelector: x.a,
+				experimentName: y.Ff
 			});
 			var v = s("./src/reddit/selectors/subreddit.ts"),
 				U = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
@@ -55,7 +55,7 @@
 					return `${s}-${t}`
 				})
 			}));
-			class S extends d.a.Component {
+			class L extends d.a.Component {
 				constructor() {
 					super(...arguments), this.onCloseClick = () => {
 						const {
@@ -117,8 +117,8 @@
 					})))
 				}
 			}
-			t.default = E(S)
+			t.default = E(L)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.9369ce3d3d6fb766fada.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.b660be494e46a424ff41.js.map

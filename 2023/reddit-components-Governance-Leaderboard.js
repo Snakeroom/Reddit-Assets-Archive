@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.1468760742a7c6e7a6d4.js
-// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.5a7433008ee0afc17018.js
+// Retrieved at 2/15/2023, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Leaderboard"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, r) {
@@ -254,9 +254,9 @@
 			})), r.d(t, "r", (function() {
 				return v
 			})), r.d(t, "s", (function() {
-				return g
-			})), r.d(t, "t", (function() {
 				return y
+			})), r.d(t, "t", (function() {
+				return g
 			})), r.d(t, "u", (function() {
 				return C
 			})), r.d(t, "v", (function() {
@@ -284,8 +284,8 @@
 				h = "GOVERNANCE__RELEASE_NOTES_SUCCESS",
 				O = "GOVERNANCE__TRANSFER_FAILURE",
 				v = "GOVERNANCE__TRANSFER_MODAL_OPENED",
-				g = "GOVERNANCE__TRANSFER_PENDING",
-				y = "GOVERNANCE__TRANSFER_SUCCESS",
+				y = "GOVERNANCE__TRANSFER_PENDING",
+				g = "GOVERNANCE__TRANSFER_SUCCESS",
 				C = "GOVERNANCE__WALLETS_FETCH_FAILURE",
 				I = "GOVERNANCE__WALLETS_FETCH_PENDING",
 				S = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
@@ -366,8 +366,8 @@
 				O = r("./src/reddit/components/Badges/UserDisplay/index.m.less"),
 				v = r.n(O);
 
-			function g() {
-				return (g = Object.assign || function(e) {
+			function y() {
+				return (y = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n])
@@ -375,7 +375,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const y = "add-custom-badge-tooltip",
+			const g = "add-custom-badge-tooltip",
 				C = 100,
 				I = 2 * C,
 				S = 24;
@@ -399,7 +399,7 @@
 						className: Object(c.a)(v.a.image, this.props.className),
 						src: `${d.a.assetPath}/img/badges/placeholder.png`
 					});
-					const t = `${y}-${this.props.uniqueIdentifier}`,
+					const t = `${g}-${this.props.uniqueIdentifier}`,
 						r = this.props.badgeSize || S;
 					return s.a.createElement(n.Fragment, null, this.props.showAddCustom && s.a.createElement("div", {
 						className: v.a.wrapper,
@@ -495,7 +495,7 @@
 					allBadges: r,
 					...n
 				} = e, i = t.map(e => r[e]).filter(Boolean);
-				return s.a.createElement(N, g({
+				return s.a.createElement(N, y({
 					badges: i
 				}, n))
 			}
@@ -616,8 +616,8 @@
 				}))
 			};
 			var v = r("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
-				g = r("./src/reddit/icons/svgs/Info/index.tsx"),
-				y = r("./src/reddit/selectors/crypto/points.ts"),
+				y = r("./src/reddit/icons/svgs/Info/index.tsx"),
+				g = r("./src/reddit/selectors/crypto/points.ts"),
 				C = r("./src/reddit/selectors/economics.ts"),
 				I = r("./src/lib/classNames/index.ts"),
 				S = r("./src/lib/prettyPrintNumber/index.ts"),
@@ -672,7 +672,7 @@
 					let {
 						subredditId: r
 					} = t;
-					return Object(y.b)(e, r)
+					return Object(g.b)(e, r)
 				}
 			});
 			var G = Object(x.c)(Object(d.b)(U)((function(e) {
@@ -735,7 +735,7 @@
 						className: H.a.tokens
 					}, this.props.tokenName)), (() => this.props.leaderboardErrored ? o.a.createElement("div", {
 						className: H.a.error
-					}, o.a.createElement(g.a, {
+					}, o.a.createElement(y.a, {
 						className: H.a.errorIcon
 					})) : this.props.leaderboard ? o.a.createElement(i.Fragment, null, this.props.leaderboard.map(e => {
 						switch (e.type) {
@@ -768,7 +768,7 @@
 						subredditId: r
 					} = t;
 					var n;
-					return (null === (n = Object(y.b)(e, r)) || void 0 === n ? void 0 : n.name) || ""
+					return (null === (n = Object(g.b)(e, r)) || void 0 === n ? void 0 : n.name) || ""
 				},
 				distribution: (e, t) => e.subreddits.gov.distributions[t.subredditId],
 				leaderboard: (e, t) => {
@@ -1584,7 +1584,7 @@
 			};
 
 			function a() {
-				const e = Object(s.gb)(),
+				const e = Object(s.ib)(),
 					t = Object(n.e)(t => Object(s.s)(t, {
 						pageLayer: e
 					})),
@@ -1609,9 +1609,9 @@
 			})), r.d(t, "a", (function() {
 				return v
 			})), r.d(t, "x", (function() {
-				return g
-			})), r.d(t, "f", (function() {
 				return y
+			})), r.d(t, "f", (function() {
+				return g
 			})), r.d(t, "i", (function() {
 				return C
 			})), r.d(t, "q", (function() {
@@ -1691,7 +1691,7 @@
 			! function(e) {
 				e[e.DontKnow = 0] = "DontKnow", e[e.NotSubscribed = 1] = "NotSubscribed", e[e.Subscribed = 2] = "Subscribed"
 			}(v || (v = {}));
-			const g = (e, t) => {
+			const y = (e, t) => {
 					const r = e.economics.subredditPremium[t];
 					if (r && r.status === l.a.Fetched) {
 						const r = O(e, t),
@@ -1700,7 +1700,7 @@
 					}
 					return v.DontKnow
 				},
-				y = (e, t) => {
+				g = (e, t) => {
 					const r = e.user.account,
 						n = e.economics.subredditPremium[t];
 					if (r && n && n.status === l.a.Fetched) {
@@ -1979,4 +1979,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.1468760742a7c6e7a6d4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.5a7433008ee0afc17018.js.map

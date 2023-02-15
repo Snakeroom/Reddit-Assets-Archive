@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.d97242157d98e0a23f67.js
-// Retrieved at 2/13/2023, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.0b1cf9cddc984f803ece.js
+// Retrieved at 2/15/2023, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -568,18 +568,18 @@
 				}));
 			var Y = Object(S.b)($(q)),
 				Q = n("./src/reddit/icons/svgs/QuarantineWarning/index.tsx"),
-				J = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/Risk/index.m.less"),
-				X = n.n(J);
+				X = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/Risk/index.m.less"),
+				J = n.n(X);
 
 			function z(e) {
 				return i.a.createElement("div", {
-					className: X.a.risk
+					className: J.a.risk
 				}, i.a.createElement("div", {
-					className: X.a.riskTitle
+					className: J.a.riskTitle
 				}, i.a.createElement(Q.a, {
-					className: X.a.alertIcon
+					className: J.a.alertIcon
 				}), e.title), i.a.createElement("div", {
-					className: X.a.riskBody
+					className: J.a.riskBody
 				}, e.body))
 			}
 			var K = n("./src/reddit/components/Governance/TokenAmount/index.tsx"),
@@ -1735,7 +1735,7 @@
 			};
 
 			function d() {
-				const e = Object(s.gb)(),
+				const e = Object(s.ib)(),
 					t = Object(r.e)(t => Object(s.s)(t, {
 						pageLayer: e
 					})),
@@ -1790,8 +1790,8 @@
 			const o = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.ue
-				}) === r.Jd
+					experimentName: r.ve
+				}) === r.Kd
 			}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
@@ -1851,4 +1851,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.d97242157d98e0a23f67.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.0b1cf9cddc984f803ece.js.map

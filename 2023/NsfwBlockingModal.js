@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NsfwBlockingModal.6a8a5687084dbfe7bb0b.js
-// Retrieved at 2/9/2023, 10:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NsfwBlockingModal.d8b62f973155168e6007.js
+// Retrieved at 2/15/2023, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NsfwBlockingModal"], {
 		"./src/reddit/components/Footer/index.m.less": function(e, t, n) {
@@ -84,7 +84,7 @@
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), v = Object(a.a)(e => {
 				const t = Object(d.e)(g.b),
 					n = Object(d.e)(() => t ? Object(p.f)(t) : null),
-					a = Object(d.e)(e => t ? Object(p.ib)(e, {
+					a = Object(d.e)(e => t ? Object(p.kb)(e, {
 						pageLayer: t
 					}) : null),
 					s = Object(d.e)(e => t ? Object(p.ab)(e, {
@@ -340,7 +340,7 @@
 					}, i.a.createElement(_.b, {
 						textColor: l
 					})), i.a.createElement(F, {
-						qrCodeAsset: (() => a === f.Zc.Enabled || s === f.cb.BlurredPreview || s === f.cb.NoPreview ? D.d2x_nsfw_signup_blocking_de_v1 : D.d2x_nsfw_signup_blocking_non_us_v1)()
+						qrCodeAsset: (() => a === f.ad.Enabled || s === f.cb.BlurredPreview || s === f.cb.NoPreview ? D.d2x_nsfw_signup_blocking_de_v1 : D.d2x_nsfw_signup_blocking_non_us_v1)()
 					}))
 				},
 				M = e => {
@@ -482,4 +482,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwBlockingModal.6a8a5687084dbfe7bb0b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwBlockingModal.d8b62f973155168e6007.js.map

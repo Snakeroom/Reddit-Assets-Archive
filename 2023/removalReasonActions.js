@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.8ce0a6168f64c897da53.js
-// Retrieved at 2/9/2023, 10:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.4792d3140950209d38f3.js
+// Retrieved at 2/15/2023, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./node_modules/lodash/map.js": function(e, t, s) {
@@ -29,7 +29,7 @@
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "d", (function() {
-				return S
+				return j
 			})), s.d(t, "c", (function() {
 				return E
 			})), s.d(t, "f", (function() {
@@ -59,16 +59,16 @@
 				p = s("./src/reddit/models/Reportable/index.ts"),
 				b = s("./src/reddit/models/Toast/index.ts"),
 				O = s("./src/reddit/selectors/commentSelector.ts"),
-				R = s("./src/reddit/selectors/user.ts"),
-				_ = s("./src/reddit/actions/comment/index.ts"),
+				_ = s("./src/reddit/selectors/user.ts"),
+				R = s("./src/reddit/actions/comment/index.ts"),
 				f = s("./src/reddit/actions/comment/constants.ts");
-			const j = Object(r.a)(f.p),
-				S = e => async (t, s, o) => {
+			const S = Object(r.a)(f.p),
+				j = e => async (t, s, o) => {
 					let {
 						apiContext: n
 					} = o;
 					s().features.comments.models[e] && (await Object(m.j)(n(), e)).ok && t((e => async t => {
-						t(j({
+						t(S({
 							commentId: e
 						}))
 					})(e))
@@ -76,11 +76,11 @@
 					let {
 						apiContext: r
 					} = n;
-					if (!Object(R.S)(s())) return void t(Object(a.i)(l.a.LOGIN_MODAL_ID));
+					if (!Object(_.S)(s())) return void t(Object(a.i)(l.a.LOGIN_MODAL_ID));
 					const d = s().features.comments.models[e];
 					if (!d) return;
 					const i = d.isLocked ? m.l : m.f;
-					t(Object(_.j)({
+					t(Object(R.j)({
 						[e]: {
 							isLocked: !d.isLocked
 						}
@@ -91,7 +91,7 @@
 						}) : o.fbt._("comment has been locked", null, {
 							hk: "1pBDQl"
 						})
-					})) : t(Object(_.j)({
+					})) : t(Object(R.j)({
 						[e]: {
 							isLocked: d.isLocked
 						}
@@ -104,7 +104,7 @@
 					const a = s(),
 						l = a.features.comments.models[e],
 						u = a.user.account ? a.user.account.displayText : null;
-					l && u && (t(Object(_.j)({
+					l && u && (t(Object(R.j)({
 						[e]: {
 							isApproved: !0,
 							approvedBy: u,
@@ -122,7 +122,7 @@
 						text: o.fbt._("comment has been approved", null, {
 							hk: "4GfKQi"
 						})
-					})) : t(Object(_.j)({
+					})) : t(Object(R.j)({
 						[e]: {
 							isApproved: l.isApproved,
 							approvedBy: null,
@@ -143,7 +143,7 @@
 					const l = n(),
 						u = l.features.comments.models[e],
 						p = l.user.account ? l.user.account.displayText : null;
-					u && p && (s(Object(_.j)({
+					u && p && (s(Object(R.j)({
 						[e]: {
 							approvedBy: null,
 							bannedBy: p,
@@ -160,7 +160,7 @@
 						}) : o.fbt._("comment has been removed", null, {
 							hk: "1qNTrD"
 						})
-					})) : s(Object(_.j)({
+					})) : s(Object(R.j)({
 						[e]: {
 							approvedBy: u.approvedBy,
 							bannedBy: u.bannedBy,
@@ -177,7 +177,7 @@
 					const d = s().features.comments.models[e];
 					if (!d) return;
 					const a = d.ignoreReports ? m.k : m.e;
-					d.ignoreReports || t(A(e)), t(Object(_.j)({
+					d.ignoreReports || t(A(e)), t(Object(R.j)({
 						[e]: {
 							ignoreReports: !d.ignoreReports
 						}
@@ -188,7 +188,7 @@
 						}) : o.fbt._("comment has had its reports ignored", null, {
 							hk: "2q4sCp"
 						})
-					})) : t(Object(_.j)({
+					})) : t(Object(R.j)({
 						[e]: {
 							ignoreReports: d.ignoreReports
 						}
@@ -202,14 +202,14 @@
 					});
 					if (!l) return;
 					const m = s === n.kc.Snoozed,
-						R = {
+						_ = {
 							itemId: e,
 							reportText: t,
 							isSnoozed: m
 						};
 					if ((await Object(u.a)(i(), {
-							input: R
-						})).ok) r(Object(_.j)({
+							input: _
+						})).ok) r(Object(R.j)({
 						[e]: {
 							userReports: Object(p.a)(l.userReports, t, m)
 						}
@@ -230,36 +230,36 @@
 					if (!u) return;
 					const p = u.postId,
 						b = l.postStickiedComments.data[p];
-					o(Object(_.j)({
+					o(Object(R.j)({
 						[e]: {
 							distinguishType: t,
 							isAdmin: t === n.J.ADMIN,
 							isMod: t === n.J.MODERATOR,
 							isStickied: !!s
 						}
-					})), s && b && b !== e && o(Object(_.j)({
+					})), s && b && b !== e && o(Object(R.j)({
 						[b]: {
 							isStickied: !1
 						}
 					}));
 					const O = Object(m.c)(c(), e, t),
-						R = Object(m.d)(c(), e, !!s),
+						_ = Object(m.d)(c(), e, !!s),
 						f = [O];
-					(s || !s && e === b) && f.push(R), (await Promise.all(f)).every(e => e.ok) ? s && o(v({
+					(s || !s && e === b) && f.push(_), (await Promise.all(f)).every(e => e.ok) ? s && o(v({
 						id: e,
 						postId: p,
 						commentsPageKey: Object(d.a)(p, null, {
 							sort: n.w.CONFIDENCE,
 							...l.platform.currentPage.queryParams
 						})
-					})) : (o(Object(_.j)({
+					})) : (o(Object(R.j)({
 						[e]: {
 							distinguishType: u.distinguishType,
 							isAdmin: u.isAdmin,
 							isMod: u.isMod,
 							isStickied: u.isStickied
 						}
-					})), o(Object(_.j)({
+					})), o(Object(R.j)({
 						[b]: {
 							isStickied: l.features.comments.models[b].isStickied
 						}
@@ -303,15 +303,15 @@
 			})), s.d(t, "removedItemsSelected", (function() {
 				return Oe
 			})), s.d(t, "fetchReasonsAndOpenModal", (function() {
-				return Re
-			})), s.d(t, "removalReasonSubmittedPending", (function() {
 				return _e
+			})), s.d(t, "removalReasonSubmittedPending", (function() {
+				return Re
 			})), s.d(t, "removalReasonSubmittedSuccess", (function() {
 				return fe
 			})), s.d(t, "removalReasonSubmittedFailed", (function() {
-				return je
-			})), s.d(t, "removalReasonMessagePending", (function() {
 				return Se
+			})), s.d(t, "removalReasonMessagePending", (function() {
+				return je
 			})), s.d(t, "removalReasonPrivateMessageSuccess", (function() {
 				return Ee
 			})), s.d(t, "removalReasonPublicMessageSuccess", (function() {
@@ -336,7 +336,7 @@
 				p = "REMOVALREASONS__DELETE_PENDING",
 				b = "REMOVALREASONS__DELETE_SUCCESS",
 				O = "REMOVALREASONS__DELETE_FAILED";
-			var R = function() {
+			var _ = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -358,7 +358,7 @@
 						return e
 				}
 			};
-			var _ = function() {
+			var R = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -381,12 +381,12 @@
 					}
 				},
 				f = Object(r.c)({
-					error: R,
-					pending: _
+					error: _,
+					pending: R
 				});
-			const j = {};
-			var S = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : j,
+			const S = {};
+			var j = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : S,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case d: {
@@ -484,7 +484,7 @@
 				},
 				h = Object(r.c)({
 					api: f,
-					models: S,
+					models: j,
 					reasonOrder: v,
 					removedItemIds: A
 				}),
@@ -622,7 +622,7 @@
 							hk: "4xzgsa"
 						})
 					}))) : s(pe(i.error))
-				}, Oe = Object(I.a)("REMOVALREASONS__REMOVEDITEMS_SELECTED"), Re = (e, t) => async (s, o, n) => {
+				}, Oe = Object(I.a)("REMOVALREASONS__REMOVEDITEMS_SELECTED"), _e = (e, t) => async (s, o, n) => {
 					let {
 						apiContext: r
 					} = n;
@@ -631,7 +631,7 @@
 						subredditId: e,
 						itemIds: t
 					})), s(Object(D.i)(M.a.ADD_REMOVAL_REASON))
-				}, _e = Object(I.a)("REMOVALREASONS__SUBMIT_PENDING"), fe = Object(I.a)("REMOVALREASONS__SUBMIT_SUCCESS"), je = Object(I.a)("REMOVALREASONS__SUBMIT_FAILED"), Se = Object(I.a)("REMOVALREASONS__MESSAGE_PENDING"), Ee = Object(I.a)("REMOVALREASONS__MESSAGE_PRIVATE_SUCCESS"), ve = Object(I.a)("REMOVALREASONS__MESSAGE_PUBLIC_SUCCESS"), Ae = Object(I.a)("REMOVALREASONS__MESSAGE_FAILED"), he = (e, t, s, o, n, r) => async (d, a, i) => {
+				}, Re = Object(I.a)("REMOVALREASONS__SUBMIT_PENDING"), fe = Object(I.a)("REMOVALREASONS__SUBMIT_SUCCESS"), Se = Object(I.a)("REMOVALREASONS__SUBMIT_FAILED"), je = Object(I.a)("REMOVALREASONS__MESSAGE_PENDING"), Ee = Object(I.a)("REMOVALREASONS__MESSAGE_PRIVATE_SUCCESS"), ve = Object(I.a)("REMOVALREASONS__MESSAGE_PUBLIC_SUCCESS"), Ae = Object(I.a)("REMOVALREASONS__MESSAGE_FAILED"), he = (e, t, s, o, n, r) => async (d, a, i) => {
 					let {
 						apiContext: c
 					} = i;
@@ -642,22 +642,22 @@
 						b = p === Q.e.Post ? l.posts.models[u] : l.features.comments.models[u],
 						O = p === Q.e.Post ? N.Q : g.j;
 					if (!b || !m) return !1;
-					d(_e()), d(O({
+					d(Re()), d(O({
 						[u]: {
 							modNote: n,
 							modRemovalReason: t && t.title,
 							modReasonBy: m
 						}
 					}));
-					const R = {
+					const _ = {
 							itemIds: e,
 							modNote: n,
 							reasonId: t ? t.id : null
 						},
-						_ = await K(c(), R);
-					if (_.ok) {
+						R = await K(c(), _);
+					if (R.ok) {
 						if (d(fe()), t) {
-							d(Se());
+							d(je());
 							const n = {
 									itemId: e,
 									message: s,
@@ -720,7 +720,7 @@
 							}
 							return d(Ae(a.error)), !1
 						}
-					} else d(je(_.error)), d(O({
+					} else d(Se(R.error)), d(O({
 						[u]: {
 							modNote: b.modNote,
 							modRemovalReason: b.modRemovalReason,
@@ -735,7 +735,7 @@
 					const l = a(),
 						m = l.user.account && l.user.account.displayText;
 					if (!m) return;
-					d(_e());
+					d(Re());
 					const u = Object(P.f)({
 							kind: X.b.SuccessMod,
 							text: o.fbt._({
@@ -771,7 +771,7 @@
 								r = await G(c(), Object(Q.h)(o, Q.e.Bulk), Q.e.Bulk);
 							r.ok ? (d(Ee()), d(u)) : d(Ae(r.error))
 						} else d(u)
-					} else d(je(b.error))
+					} else d(Se(b.error))
 				}
 		},
 		"./src/reddit/components/InfoTextTooltip/index.m.less": function(e, t, s) {
@@ -787,9 +787,9 @@
 		"./src/reddit/components/InfoTextTooltip/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return R
-			})), s.d(t, "a", (function() {
 				return _
+			})), s.d(t, "a", (function() {
+				return R
 			}));
 			var o = s("./node_modules/react/index.js"),
 				n = s.n(o),
@@ -813,11 +813,11 @@
 			}
 			const b = u.a.div("Text", m.a),
 				O = u.a.div("BottomText", m.a),
-				R = e => n.a.createElement(b, {
+				_ = e => n.a.createElement(b, {
 					className: e.className,
 					style: e.style
 				}, e.text, e.children),
-				_ = e => {
+				R = e => {
 					const t = e.overflow ? e.overflow.left : 0;
 					return n.a.createElement(O, {
 						className: e.className,
@@ -835,17 +835,17 @@
 						return Object(c.b)(s)(e)
 					}
 				}),
-				j = Object(i.a)(_, [a.a.Click, a.a.Keydown]),
 				S = Object(i.a)(R, [a.a.Click, a.a.Keydown]),
+				j = Object(i.a)(_, [a.a.Click, a.a.Keydown]),
 				E = Object(r.b)(f);
 			t.c = E(e => {
 				const {
 					caretOnTop: t
 				} = e;
-				return t ? n.a.createElement(j, p({}, e, {
+				return t ? n.a.createElement(S, p({}, e, {
 					targetPosition: ["center", "bottom"],
 					tooltipPosition: ["center", "top"]
-				})) : n.a.createElement(S, p({}, e, {
+				})) : n.a.createElement(j, p({}, e, {
 					targetPosition: ["center", "top"],
 					tooltipPosition: ["center", "bottom"]
 				}))
@@ -1073,11 +1073,11 @@
 				experimentEligibilitySelector: n.a,
 				experimentName: o.nb
 			}), e => ({
-				bucketed: e === o.Rc.ExpandedSearch || e === o.Rc.CollapsedSearch,
-				collapsed: e === o.Rc.CollapsedSearch,
-				expanded: e === o.Rc.ExpandedSearch
+				bucketed: e === o.Sc.ExpandedSearch || e === o.Sc.CollapsedSearch,
+				collapsed: e === o.Sc.CollapsedSearch,
+				expanded: e === o.Sc.ExpandedSearch
 			}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.8ce0a6168f64c897da53.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.4792d3140950209d38f3.js.map

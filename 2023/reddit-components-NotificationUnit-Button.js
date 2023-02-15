@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.0c8210895aa3d8c00f63.js
-// Retrieved at 2/13/2023, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.c92fb2a6c98dd5f2f499.js
+// Retrieved at 2/15/2023, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./node_modules/lodash/map.js": function(e, t, s) {
@@ -326,7 +326,7 @@
 				duration: l.a
 			};
 			t.default = e => {
-				var t, s, o, O, x, R, g, S, k, w;
+				var t, s, o, O, x, g, R, S, k, w;
 				const N = Object(r.d)(),
 					{
 						context: C,
@@ -344,8 +344,8 @@
 					W = null === (t = null == C ? void 0 : C.post) || void 0 === t ? void 0 : t.permalink;
 				let V = null === (s = null == C ? void 0 : C.comment) || void 0 === s ? void 0 : s.id,
 					G = (null === (o = null == C ? void 0 : C.post) || void 0 === o ? void 0 : o.id) || (null === (x = null === (O = null == C ? void 0 : C.comment) || void 0 === O ? void 0 : O.postInfo) || void 0 === x ? void 0 : x.id);
-				const H = null === (R = null == C ? void 0 : C.subreddit) || void 0 === R ? void 0 : R.id,
-					K = null === (S = null === (g = null == C ? void 0 : C.awarding) || void 0 === g ? void 0 : g.award) || void 0 === S ? void 0 : S.id,
+				const H = null === (g = null == C ? void 0 : C.subreddit) || void 0 === g ? void 0 : g.id,
+					K = null === (S = null === (R = null == C ? void 0 : C.awarding) || void 0 === R ? void 0 : R.award) || void 0 === S ? void 0 : S.id,
 					q = null === (w = null === (k = null == C ? void 0 : C.awarding) || void 0 === k ? void 0 : k.awarder) || void 0 === w ? void 0 : w.id;
 				if (D === v.a.CommentFollow || D === v.a.PostFollow) {
 					const e = (e => {
@@ -658,9 +658,9 @@
 				experimentEligibilitySelector: n.a,
 				experimentName: o.nb
 			}), e => ({
-				bucketed: e === o.Rc.ExpandedSearch || e === o.Rc.CollapsedSearch,
-				collapsed: e === o.Rc.CollapsedSearch,
-				expanded: e === o.Rc.ExpandedSearch
+				bucketed: e === o.Sc.ExpandedSearch || e === o.Sc.CollapsedSearch,
+				collapsed: e === o.Sc.CollapsedSearch,
+				expanded: e === o.Sc.ExpandedSearch
 			}))
 		},
 		"./src/redditGQL/operations/RegisterWebPushToken.json": function(e) {
@@ -668,4 +668,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.0c8210895aa3d8c00f63.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.c92fb2a6c98dd5f2f499.js.map

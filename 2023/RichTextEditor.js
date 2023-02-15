@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.6fcc5368592a87e0200a.js
-// Retrieved at 2/9/2023, 10:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.a54b69823386e3db0d49.js
+// Retrieved at 2/15/2023, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1854,8 +1854,8 @@
 				X = n("./src/reddit/components/UsersCountIndicator/constants.ts"),
 				G = n("./src/reddit/constants/componentSizes.ts"),
 				Z = n("./src/reddit/constants/componentTestIds.ts"),
-				J = n("./src/reddit/selectors/activeModalId.ts"),
-				Q = n("./src/reddit/selectors/comments.ts"),
+				Q = n("./src/reddit/selectors/activeModalId.ts"),
+				J = n("./src/reddit/selectors/comments.ts"),
 				Y = n("./src/reddit/selectors/editorContent.ts"),
 				$ = n("./src/reddit/selectors/experiments/typingIndicators.ts"),
 				ee = n("./src/reddit/actions/modal.ts"),
@@ -1880,10 +1880,10 @@
 				be = 8,
 				_e = 16,
 				ge = Object(u.b)(() => Object(m.c)({
-					activeModalId: J.a,
+					activeModalId: Q.a,
 					userName: e => e.user.account ? Object(se.e)(e.user.account) : "",
 					pending: (e, t) => e.features.comments.submit.pending[t.draftKey],
-					draft: Q.i,
+					draft: J.i,
 					isConverting: (e, t) => Object(Y.a)(e, t.draftKey),
 					isTypingIndicatorsWriteTestEnabled: (e, t) => !!t.isTopLevelComment && Object($.d)(e)
 				}), (e, t) => ({
@@ -2451,8 +2451,8 @@
 				} = e, o = [];
 				return t && (o = Array.from(G.c)), n && (o = [...o, ...Array.from(G.a)]), o
 			}
-			var J = n("./src/reddit/hooks/useTracking.ts"),
-				Q = n("./src/reddit/selectors/experiments/imageComment.ts"),
+			var Q = n("./src/reddit/hooks/useTracking.ts"),
+				J = n("./src/reddit/selectors/experiments/imageComment.ts"),
 				Y = n("./src/reddit/components/RichTextEditor/Toolbar/CommentToolbar.m.less"),
 				$ = n.n(Y),
 				ee = n("./src/reddit/components/RichTextEditor/Toolbar/MediaInputButton/index.tsx");
@@ -2484,14 +2484,14 @@
 					C = Object(a.e)(e => void 0 !== E && ne(e, {
 						subredditId: E
 					})) && g,
-					k = Object(a.e)(e => Object(Q.d)(e, {
+					k = Object(a.e)(e => Object(J.d)(e, {
 						subredditId: E
 					})),
-					w = Object(a.e)(e => Object(Q.b)(e, {
+					w = Object(a.e)(e => Object(J.b)(e, {
 						subredditId: E
 					})),
 					j = k || w,
-					O = Object(J.a)(),
+					O = Object(Q.a)(),
 					T = Object(r.useCallback)(() => O(Object(u.l)()), [O]),
 					F = x.giphy.isEnabled,
 					R = Object(r.useMemo)(() => Z({
@@ -2630,13 +2630,13 @@
 					isTypingIndicatorsWriteTestEnabled: (e, t) => !!t.isTopLevelComment && Object(Te.d)(e),
 					isImageUploadEnabled: (e, t) => {
 						const n = Object(Ee.s)(e, t);
-						return Object(Q.d)(e, {
+						return Object(J.d)(e, {
 							subredditId: n ? n.id : void 0
 						})
 					},
 					isGifUploadEnabled: (e, t) => {
 						const n = Object(Ee.s)(e, t);
-						return Object(Q.b)(e, {
+						return Object(J.b)(e, {
 							subredditId: n ? n.id : void 0
 						})
 					},
@@ -2915,7 +2915,7 @@
 						let {
 							pageLayer: n
 						} = t;
-						return Object(xe.eb)(e, n, b.e.Comment)
+						return Object(xe.gb)(e, n, b.e.Comment)
 					},
 					postAuthorIsBlocked: Ve.w
 				}),
@@ -2948,7 +2948,7 @@
 						t.dispatchSubmit(n, e.draft.commentMode)
 					}
 				}));
-			class Je extends i.a.Component {
+			class Qe extends i.a.Component {
 				constructor(e) {
 					super(e), this.getInstanceRef = e => this.formInstanceRef = e, this.onCancel = () => {
 						this.props.onCancel()
@@ -3030,7 +3030,7 @@
 					return e.contributorRequestPending ? i.a.createElement(He.a, null) : e.showContributorRequestFlow ? i.a.createElement(y, null) : e.draft.commentMode === pe.i.RICH_TEXT ? i.a.createElement(Ue, n) : i.a.createElement(m.b, n)
 				}
 			}
-			t.default = Xe(Ze(Je))
+			t.default = Xe(Ze(Qe))
 		},
 		"./src/reddit/components/ContributorRequestFlow/ContributorRequestButton/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -4426,20 +4426,20 @@
 			const i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.he
-					}) === o.Jd
+						experimentName: o.ie
+					}) === o.Kd
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.ie
-					}) === o.Jd
+						experimentName: o.je
+					}) === o.Kd
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.Sd
-					}) === o.Jd
+						experimentName: o.Td
+					}) === o.Kd
 				},
 				c = (e, t) => {
 					let {
@@ -4477,31 +4477,31 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.Zf
-					}) === o.Jd
+						experimentName: o.bg
+					}) === o.Kd
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.ag
-					}) === o.Jd
+						experimentName: o.cg
+					}) === o.Kd
 				},
 				c = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.Yf
+						experimentName: o.ag
 					});
-					return t === o.Rf.TypingIndicators || t === o.Rf.IndicatorsPlusCTA
+					return t === o.Tf.TypingIndicators || t === o.Tf.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: o.Yf
+						experimentName: o.ag
 					});
-					return (null == t ? void 0 : t.variant) === o.Rf.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.Tf.IndicatorsPlusCTA
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.6fcc5368592a87e0200a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.a54b69823386e3db0d49.js.map

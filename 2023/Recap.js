@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Recap.6a5e2a63ef989e828496.js
-// Retrieved at 2/9/2023, 10:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Recap.e232ef0f2001d874d11c.js
+// Retrieved at 2/15/2023, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Recap", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, a, t) {
@@ -99,13 +99,13 @@
 			const S = e => Object(C.c)(e, {
 				experimentEligibilitySelector: N.S,
 				experimentName: k.tb
-			}) === k.Jd;
+			}) === k.Kd;
 			var y = t("./src/reddit/selectors/experiments/delayDnPermission.ts"),
 				I = t("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts");
 			const x = e => Object(C.c)(e, {
 				experimentName: k.Yb,
 				experimentEligibilitySelector: C.a
-			}) === k.Jd;
+			}) === k.Kd;
 			var w = t("./src/reddit/selectors/meta.ts");
 			let R = !1;
 			const T = async (e, a) => {
@@ -768,8 +768,8 @@
 					src: `${P.a.assetPath}/img/recap/InfiniteLoad_4.gif`
 				})),
 				q = t("./src/reddit/pages/Recap/Components/Pager/index.m.less"),
-				Q = t.n(q);
-			var K = e => {
+				K = t.n(q);
+			var Q = e => {
 					let {
 						cards: a,
 						cardIndex: t,
@@ -783,10 +783,10 @@
 						d = o + 6,
 						m = 6 * s < a.length;
 					return c.a.createElement("div", {
-						className: Q.a.pager
+						className: K.a.pager
 					}, l && c.a.createElement("button", {
-						className: Object(p.a)(Q.a.nextDot, {
-							[Q.a.black]: !!r
+						className: Object(p.a)(K.a.nextDot, {
+							[K.a.black]: !!r
 						}),
 						onClick: () => {
 							i(o - 1)
@@ -795,9 +795,9 @@
 						title: `Card #${o}`
 					}), a.slice(o, d).map((e, a) => c.a.createElement("button", {
 						key: a,
-						className: Object(p.a)(Q.a.progressDot, {
-							[Q.a.active]: a === n,
-							[Q.a.black]: !!r
+						className: Object(p.a)(K.a.progressDot, {
+							[K.a.active]: a === n,
+							[K.a.black]: !!r
 						}),
 						onClick: () => {
 							i(a + o)
@@ -805,8 +805,8 @@
 						tabIndex: 0,
 						title: `Card #${a+o+1}`
 					})), m && c.a.createElement("button", {
-						className: Object(p.a)(Q.a.nextDot, {
-							[Q.a.black]: !!r
+						className: Object(p.a)(K.a.nextDot, {
+							[K.a.black]: !!r
 						}),
 						onClick: () => {
 							i(d)
@@ -2145,8 +2145,8 @@
 				}))))))
 			};
 			const {
-				fbt: Qe
-			} = t("./node_modules/fbt/lib/FbtPublic.js"), Ke = {
+				fbt: Ke
+			} = t("./node_modules/fbt/lib/FbtPublic.js"), Qe = {
 				[r.RED]: "#ff4500",
 				[r.YELLOW]: "#fff8b8",
 				[r.BLACK]: "#000",
@@ -2463,14 +2463,14 @@
 								}
 							}
 						}, [y, d, i, E, N, W]),
-						Q = c.a.useCallback(async () => {
+						K = c.a.useCallback(async () => {
 							let e = document.getElementById("shareId");
 							if (W && (e = document.getElementById("abilityCardShareId")), e) {
 								x(!0);
 								const a = await (() => t.e(4).then(t.bind(null, "./node_modules/html-to-image/es/index.js")))(),
 									r = await a.getFontEmbedCSS(e),
 									i = await a.toPng(e, {
-										backgroundColor: W ? "transparent" : Ke[y[d].cardTemplateColor],
+										backgroundColor: W ? "transparent" : Qe[y[d].cardTemplateColor],
 										canvasHeight: W ? 486 : 540,
 										canvasWidth: W ? 340 : 960,
 										style: {
@@ -2500,7 +2500,7 @@
 						}),
 						style: {
 							transform: `translateY(${-d*L}px)`,
-							backgroundColor: Ke[y[d].cardTemplateColor]
+							backgroundColor: Qe[y[d].cardTemplateColor]
 						}
 					}, y.map((e, a) => c.a.createElement("div", {
 						className: oa.a.card,
@@ -2523,7 +2523,7 @@
 					}), d > 0 && c.a.createElement(ma, {
 						isWhite: y[d].cardTemplateColor === r.WHITE,
 						onClick: n
-					}), c.a.createElement(K, {
+					}), c.a.createElement(Q, {
 						cards: y,
 						cardIndex: d,
 						isBlack: !!M,
@@ -2536,10 +2536,10 @@
 						onOverlayClick: n,
 						withOverlay: !0,
 						card: y[d],
-						cardTemplateColor: Ke[y[d].cardTemplateColor],
+						cardTemplateColor: Qe[y[d].cardTemplateColor],
 						isAbilityCard: !!W,
 						isDownloading: I,
-						onDownloadCard: Q,
+						onDownloadCard: K,
 						onClose: n,
 						overlayClassName: oa.a.shareModal
 					})) : null)
@@ -2557,4 +2557,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Recap.6a5e2a63ef989e828496.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Recap.e232ef0f2001d874d11c.js.map
