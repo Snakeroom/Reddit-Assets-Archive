@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.32581a1d22809f4c601d.js
-// Retrieved at 2/15/2023, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.30cb2d1b3bfc907eb2f9.js
+// Retrieved at 2/16/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeaturedLiveEntrypointAnnouncementsCarousel"], {
 		"./src/reddit/components/FeaturedLiveEntrypoint/AnnouncementsCarousel/index.m.less": function(e, t, n) {
@@ -105,7 +105,7 @@
 				g = (e, t) => n => {
 					if (n.experimentName) {
 						const t = e[n.experimentName.toLowerCase()];
-						if (t && Object(p.kg)(t.variant)) return !1
+						if (t && Object(p.lg)(t.variant)) return !1
 					}
 					return !((t[n.id] || 0) >= n.maxImpressionsCount)
 				};
@@ -232,7 +232,7 @@
 								id: t,
 								maxImpressionsCount: n
 							} = e;
-							Object(_.db)(t, n)
+							Object(_.eb)(t, n)
 						}), s(O("dismiss_all")), E(A.i.No)
 					}, [n, s, t])
 				})({
@@ -265,7 +265,7 @@
 						if (t < 0 || t >= s.length) return void n(0);
 						const e = s[t],
 							a = Object(_.d)(e.id);
-						o(x("view", e)), Object(_.db)(e.id, a + 1);
+						o(x("view", e)), Object(_.eb)(e.id, a + 1);
 						const i = Object(_.e)();
 						s.filter(g(c, i)).length || E(A.i.No)
 					}, [t, c, o, n, s])
@@ -330,4 +330,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.32581a1d22809f4c601d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.30cb2d1b3bfc907eb2f9.js.map

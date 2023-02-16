@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.5302495845f9fc570e56.js
-// Retrieved at 2/15/2023, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.37a59ed3823616fa9d0b.js
+// Retrieved at 2/16/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, r) {
@@ -529,7 +529,7 @@
 				x = r("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const g = (e, t, r) => Object(b.a)(Object(p.a)(e, [f.a]), {
 				endpoint: Object(v.a)(Object(x.a)(`${e.apiUrl}/api/v1/${t}/banned`)),
-				method: m.ob.GET,
+				method: m.pb.GET,
 				data: r
 			});
 			var h = r("./src/reddit/helpers/normalizeUsername/index.tsx"),
@@ -709,13 +709,13 @@
 							return e
 					}
 				},
-				K = Object(P.c)({
+				J = Object(P.c)({
 					api: D,
 					result: Q
 				});
-			const J = {};
+			const K = {};
 			var q = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : J,
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : K,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
 						case N.r: {
@@ -759,7 +759,7 @@
 					inContext: B,
 					loadMore: T,
 					models: R,
-					search: K,
+					search: J,
 					userOrder: q
 				});
 			Object(E.a)({
@@ -820,7 +820,7 @@
 					t.username = Object(h.a)(t.username), s(Object(i.h)(r));
 					const O = await ((e, t, r) => Object(b.a)(Object(p.a)(e, [f.a]), {
 						endpoint: Object(v.a)(`${e.apiUrl}${t}api/friend`),
-						method: m.ob.POST,
+						method: m.pb.POST,
 						data: {
 							api_type: "json",
 							ban_reason: r.reason,
@@ -863,7 +863,7 @@
 					const d = s().subreddits.models[e].url,
 						c = await ((e, t, r) => Object(b.a)(Object(p.a)(e, [f.a]), {
 							endpoint: Object(v.a)(`${e.apiUrl}${t}api/unfriend`),
-							method: m.ob.POST,
+							method: m.pb.POST,
 							data: {
 								api_type: "json",
 								id: r,
@@ -1154,8 +1154,8 @@
 				z = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/index.tsx"),
 				D = r("./src/reddit/actions/inContextModeration.ts"),
 				Q = r("./src/reddit/actions/modal.ts"),
-				K = r("./src/reddit/actions/subredditModeration/ban.ts"),
-				J = r("./src/reddit/constants/modals.ts"),
+				J = r("./src/reddit/actions/subredditModeration/ban.ts"),
+				K = r("./src/reddit/constants/modals.ts"),
 				q = r("./src/reddit/components/Hovercards/helpers.ts"),
 				X = r("./src/reddit/icons/fonts/index.tsx"),
 				Y = r("./src/reddit/models/ModeratingSubreddits/index.ts"),
@@ -1232,8 +1232,8 @@
 						contextId: s
 					} = t;
 					return {
-						onUnbanUser: t => e(Object(K.e)(n, t)),
-						requestUserBanInfo: () => e(Object(K.c)(n, {
+						onUnbanUser: t => e(Object(J.e)(n, t)),
+						requestUserBanInfo: () => e(Object(J.c)(n, {
 							username: r
 						})),
 						toggleBanModal: () => {
@@ -1241,14 +1241,14 @@
 								username: r,
 								subredditId: n,
 								contextId: s
-							})), e(Object(K.a)(n, r))
+							})), e(Object(J.a)(n, r))
 						},
 						toggleMuteModal: () => {
 							e(Object(D.d)({
 								username: r,
 								subredditId: n,
 								contextId: s
-							})), e(Object(Q.i)(J.a.MUTE_USER))
+							})), e(Object(Q.i)(K.a.MUTE_USER))
 						}
 					}
 				})(re),
@@ -2661,7 +2661,7 @@
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
 					experimentName: n.D
-				}) === n.Kd
+				}) === n.Ld
 			}
 		},
 		"./src/redditGQL/operations/DeleteSubredditMuteSettings.json": function(e) {
@@ -2678,4 +2678,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.5302495845f9fc570e56.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.37a59ed3823616fa9d0b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NsfwBlockingModal.d8b62f973155168e6007.js
-// Retrieved at 2/15/2023, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NsfwBlockingModal.a2f98f58acd9dcd0faec.js
+// Retrieved at 2/16/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NsfwBlockingModal"], {
 		"./src/reddit/components/Footer/index.m.less": function(e, t, n) {
@@ -340,7 +340,7 @@
 					}, i.a.createElement(_.b, {
 						textColor: l
 					})), i.a.createElement(F, {
-						qrCodeAsset: (() => a === f.ad.Enabled || s === f.cb.BlurredPreview || s === f.cb.NoPreview ? D.d2x_nsfw_signup_blocking_de_v1 : D.d2x_nsfw_signup_blocking_non_us_v1)()
+						qrCodeAsset: (() => a === f.bd.Enabled || s === f.cb.BlurredPreview || s === f.cb.NoPreview ? D.d2x_nsfw_signup_blocking_de_v1 : D.d2x_nsfw_signup_blocking_non_us_v1)()
 					}))
 				},
 				M = e => {
@@ -457,7 +457,7 @@
 				i = n("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
 				c = n("./src/reddit/selectors/userPrefs.ts"),
 				l = n("./node_modules/reselect/es/index.js");
-			const d = 30 * a.pb,
+			const d = 30 * a.qb,
 				m = () => {
 					localStorage.setItem(r.b.XpromoConsolidation, (new Date).toString())
 				},
@@ -482,4 +482,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwBlockingModal.d8b62f973155168e6007.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwBlockingModal.a2f98f58acd9dcd0faec.js.map

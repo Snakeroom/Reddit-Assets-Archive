@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.0b1cf9cddc984f803ece.js
-// Retrieved at 2/15/2023, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.a04a0cbeb14d119f5450.js
+// Retrieved at 2/16/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -85,7 +85,7 @@
 						const t = `https://${o.pointsDocsBaseUrl}v1.json?web`,
 							n = await Object(s.b)({
 								endpoint: t,
-								method: r.ob.GET
+								method: r.pb.GET
 							});
 						n.ok && n.body && e(u(n.body))
 					}
@@ -1232,7 +1232,7 @@
 			function i(e, t) {
 				return Object(o.a)(e, {
 					endpoint: `${r.a.metaUrl}/wallets/${t.subredditId}/me`,
-					method: s.ob.GET
+					method: s.pb.GET
 				}).then(e => {
 					if (e.ok) {
 						const n = e.body,
@@ -1254,7 +1254,7 @@
 						"X-HTTP-Method-Override": "GET"
 					},
 					endpoint: `${r.a.metaUrl}/wallets/${t.subredditId}`,
-					method: s.ob.POST,
+					method: s.pb.POST,
 					data: t.userIds
 				}).then(e => e.ok ? {
 					...e,
@@ -1790,8 +1790,8 @@
 			const o = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.ve
-				}) === r.Kd
+					experimentName: r.we
+				}) === r.Ld
 			}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
@@ -1851,4 +1851,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.0b1cf9cddc984f803ece.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.a04a0cbeb14d119f5450.js.map

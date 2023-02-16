@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657.ab4d309abce04bba1a95.js
-// Retrieved at 2/15/2023, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657.3299967b31ba94bc4aa7.js
+// Retrieved at 2/16/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -2562,7 +2562,7 @@
 						}), [ue]),
 						we = Object(n.e)(ve),
 						ge = Object(p.a)(re),
-						xe = w && w.meta && w.meta.name === d.Sb.COMMENTS,
+						xe = w && w.meta && w.meta.name === d.Tb.COMMENTS,
 						Oe = Object(m.a)(g),
 						Ae = we === Q.b.Left,
 						je = g.authorIsContractor && !!F && F.type === J.g.EmployeesOnly,
@@ -2695,13 +2695,13 @@
 							color: oe(e)
 						}
 					}, o.a.createElement(y.d, {
-						seconds: g.created / d.Xb
+						seconds: g.created / d.Yb
 					})), o.a.createElement(H.a, null, o.a.createElement(T.a, {
 						arrowProps: ge.arrowProps,
 						popperProps: ge.popperProps,
 						visible: ge.visible
 					}, o.a.createElement(y.b, {
-						seconds: g.created / d.Xb
+						seconds: g.created / d.Yb
 					})))), Object(v.c)(g) && o.a.createElement(x, {
 						post: g
 					}))
@@ -2917,7 +2917,7 @@
 						mimetype: n
 					};
 					return Object(o.a)(Object(a.a)(e, [g.a]), {
-						method: s.ob.POST,
+						method: s.pb.POST,
 						endpoint: `${e.apiUrl}/api/v1/community_awards/award_asset_upload_s3`,
 						data: i
 					})
@@ -3041,7 +3041,7 @@
 						raw_json: 1
 					};
 					return Object(o.a)(Object(a.a)(e, [g.a]), {
-						method: s.ob.POST,
+						method: s.pb.POST,
 						endpoint: `${e.apiUrl}/api/report_award`,
 						data: n
 					}).then(e => e.ok ? {
@@ -3748,15 +3748,15 @@
 			const a = e => {
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: n.S,
-						experimentName: s.sd
+						experimentName: s.td
 					});
-					return !(!t || Object(s.kg)(t))
+					return !(!t || Object(s.lg)(t))
 				},
 				i = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: n.S,
-						experimentName: s.sd
-					}) === s.Od.ListingEnabled
+						experimentName: s.td
+					}) === s.Pd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/gold/powerups/benefitSettings.ts": function(e, t, r) {
@@ -3890,4 +3890,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657.ab4d309abce04bba1a95.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657.3299967b31ba94bc4aa7.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityAwards.31ffce5b2d2e1768dc57.js
-// Retrieved at 1/18/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityAwards.3d33fc84357aeae872ba.js
+// Retrieved at 2/16/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityAwards"], {
 		"./src/reddit/actions/gold/communityAwards/communityAwards.ts": function(e, t, r) {
@@ -486,7 +486,7 @@
 						mimetype: d
 					};
 					return Object(n.a)(Object(i.a)(e, [y.a]), {
-						method: a.ob.POST,
+						method: a.pb.POST,
 						endpoint: `${e.apiUrl}/api/v1/community_awards/award_asset_upload_s3`,
 						data: s
 					})
@@ -610,7 +610,7 @@
 						raw_json: 1
 					};
 					return Object(n.a)(Object(i.a)(e, [y.a]), {
-						method: a.ob.POST,
+						method: a.pb.POST,
 						endpoint: `${e.apiUrl}/api/report_award`,
 						data: d
 					}).then(e => e.ok ? {
@@ -713,4 +713,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityAwards.31ffce5b2d2e1768dc57.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityAwards.3d33fc84357aeae872ba.js.map

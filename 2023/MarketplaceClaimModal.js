@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.9fd798c9e261c8e6d420.js
-// Retrieved at 2/15/2023, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.c0a4184904e82f280461.js
+// Retrieved at 2/16/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MarketplaceClaimModal"], {
 		"./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx": function(e, t, r) {
@@ -36,8 +36,8 @@
 						_ = n ? new Date(n.expires).getTime() : 1,
 						f = Object(a.e)(m.fb),
 						x = Object(i.a)(),
-						j = O ? o.a.Rinkeby : o.a.Ethereum,
-						v = Object(c.useMemo)(() => ({
+						v = O ? o.a.Rinkeby : o.a.Ethereum,
+						j = Object(c.useMemo)(() => ({
 							headers: {
 								Authorization: `Bearer ${b}`
 							},
@@ -48,7 +48,7 @@
 							STRIPE_API_KEY: s.a.stripe.apiKey(e),
 							STRIPE_API_VERSION: s.a.stripe.apiVersion(t),
 							ACCESS_TOKEN: b,
-							BLOCKCHAIN_PROVIDER: j,
+							BLOCKCHAIN_PROVIDER: v,
 							OVERRIDES: r ? {
 								NO_VAULT: !0
 							} : {}
@@ -69,11 +69,11 @@
 							})
 						}, [x]);
 					return Object(c.useMemo)(() => ({
-						authHeaders: v,
+						authHeaders: j,
 						config: A,
 						isNightMode: f,
 						sendEvent: S
-					}), [v, A, f, S])
+					}), [j, A, f, S])
 				}
 		},
 		"./src/reddit/components/Econ/Marketplace/ClaimModal/index.m.less": function(e, t, r) {
@@ -85,7 +85,7 @@
 		"./src/reddit/components/Econ/Marketplace/ClaimModal/index.tsx": function(e, t, r) {
 			"use strict";
 			r.r(t), r.d(t, "MarketplaceClaim", (function() {
-				return v
+				return j
 			}));
 			var s = r("./node_modules/@reddit/marketplace/marketplace.es.js"),
 				n = r("./node_modules/fbt/lib/FbtPublic.js"),
@@ -105,8 +105,8 @@
 				f = r("./src/reddit/components/Econ/Marketplace/ClaimModal/index.m.less"),
 				x = r.n(f);
 
-			function j() {
-				return (j = Object.assign || function(e) {
+			function v() {
+				return (v = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var s in r) Object.prototype.hasOwnProperty.call(r, s) && (e[s] = r[s])
@@ -114,7 +114,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const v = e => {
+			const j = e => {
 					let {
 						onClose: t
 					} = e;
@@ -158,8 +158,8 @@
 						}
 					})))
 				},
-				A = Object(c.a)(v);
-			t.default = e => o.a.createElement(A, j({
+				A = Object(c.a)(j);
+			t.default = e => o.a.createElement(A, v({
 				withOverlay: !0,
 				className: x.a.modal
 			}, e))
@@ -224,10 +224,10 @@
 			const a = e => {
 					return !(Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: s.te
-					}) === s.Kd)
+						experimentName: s.ue
+					}) === s.Ld)
 				},
-				o = Object(c.a)(s.ue)
+				o = Object(c.a)(s.ve)
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, r) {
 			"use strict";
@@ -236,9 +236,9 @@
 			}));
 			var s = r("./src/reddit/constants/experiments.ts"),
 				n = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const c = Object(n.a)(s.td)
+			const c = Object(n.a)(s.ud)
 		},
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.9fd798c9e261c8e6d420.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.c0a4184904e82f280461.js.map

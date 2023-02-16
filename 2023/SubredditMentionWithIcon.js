@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.013c3a3ab6cfb7afbea8.js
-// Retrieved at 2/15/2023, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.2e578062bba539c978b8.js
+// Retrieved at 2/16/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, s) {
@@ -235,7 +235,7 @@
 						type: e.type
 					} : {
 						id: Object(j.o)(c(), e.name),
-						name: `${i.qc}${e.name}`,
+						name: `${i.rc}${e.name}`,
 						type: e.type
 					});
 					if (!Object(g.S)(c())) return o(Object(a.k)({
@@ -366,7 +366,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: o
 					})), (await ((e, t, s) => Object(b.a)(Object(m.a)(e, [p.a]), {
-						method: i.ob.POST,
+						method: i.pb.POST,
 						endpoint: `${e.apiUrl}/api/multi/favorite`,
 						data: {
 							make_favorite: s ? "true" : "false",
@@ -406,7 +406,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: a
 					})), (await ((e, t, s) => Object(b.a)(Object(m.a)(e, [p.a]), {
-						method: i.ob.POST,
+						method: i.pb.POST,
 						endpoint: `${e.apiUrl}/api/multi/subscribe`,
 						data: {
 							action: s ? "sub" : "unsub",
@@ -1119,7 +1119,7 @@
 					if (!r || !d || Object(S.l)(r)) return this.renderDefault();
 					const {
 						uniqueId: c
-					} = this.state, b = Object(u.a)(this.props.subredditName, l.bb.TOP), m = r.isNSFW && e || r.type === S.g.EmployeesOnly && !t || r.type === S.g.Private && !d.userIsSubscriber, p = m || r.isQuarantined || r.isNSFW;
+					} = this.state, b = Object(u.a)(this.props.subredditName, l.cb.TOP), m = r.isNSFW && e || r.type === S.g.EmployeesOnly && !t || r.type === S.g.Private && !d.userIsSubscriber, p = m || r.isQuarantined || r.isNSFW;
 					return o.a.createElement("span", {
 						className: pe.a.subredditMentionContainer,
 						onMouseEnter: this.onShowTooltip,
@@ -1733,7 +1733,7 @@
 						subscribe: o
 					} = t;
 					return Object(r.a)(Object(d.a)(e, [a.a]), {
-						method: i.ob.POST,
+						method: i.pb.POST,
 						endpoint: Object(c.a)(`${e.apiUrl}/api/subscribe`),
 						data: {
 							action: o ? "sub" : "unsub",
@@ -1744,7 +1744,7 @@
 					})
 				},
 				u = (e, t, s) => Object(r.a)(Object(d.a)(e, [a.a]), {
-					method: i.ob.POST,
+					method: i.pb.POST,
 					endpoint: `${e.apiUrl}/api/favorite`,
 					data: {
 						make_favorite: s ? "true" : "false",
@@ -2258,4 +2258,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.013c3a3ab6cfb7afbea8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.2e578062bba539c978b8.js.map

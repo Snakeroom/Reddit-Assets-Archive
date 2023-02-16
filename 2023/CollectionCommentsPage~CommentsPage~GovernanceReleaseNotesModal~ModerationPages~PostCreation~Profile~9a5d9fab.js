@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.91c557a87673bbeae79e.js
-// Retrieved at 2/15/2023, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.c620934c965317ec549a.js
+// Retrieved at 2/16/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -215,16 +215,16 @@
 			const E = Object(c.a)(e => {
 				const t = Object(v.c)(e, {
 					experimentEligibilitySelector: v.a,
-					experimentName: f.ze
+					experimentName: f.Ae
 				});
-				return Object(f.kg)(t) ? void 0 : t
+				return Object(f.lg)(t) ? void 0 : t
 			}, e => {
 				const t = Object(v.c)(e, {
 					experimentEligibilitySelector: v.a,
-					experimentName: f.Ae
+					experimentName: f.Be
 				});
-				return Object(f.kg)(t) ? void 0 : t
-			}, (e, t) => e === f.Ce.Enabled && t === f.Ce.Enabled);
+				return Object(f.lg)(t) ? void 0 : t
+			}, (e, t) => e === f.De.Enabled && t === f.De.Enabled);
 			var x = s("./src/config.ts");
 			var y = s("./src/reddit/selectors/user.ts");
 			const O = e => {
@@ -443,17 +443,17 @@
 					const P = Object(r.forwardRef)((e, t) => l.a.createElement(L, T({}, e, {
 							forwardedRef: t
 						}))),
-						k = Object(c.c)({
+						M = Object(c.c)({
 							redditUserId: y.k,
 							isMuxEnabled: E
 						});
-					return Object(d.b)(k, null, null, {
+					return Object(d.b)(M, null, null, {
 						forwardRef: !0
 					})(P)
 				},
 				P = s("./src/lib/ads/index.ts"),
-				k = s("./src/lib/ads/utils.ts"),
-				M = s("./src/lib/classNames/index.ts"),
+				M = s("./src/lib/ads/utils.ts"),
+				k = s("./src/lib/classNames/index.ts"),
 				_ = s("./src/lib/constants/index.ts"),
 				D = s("./src/lib/CSSVariableProvider/withTheme.tsx"),
 				A = s("./src/lib/env/index.ts"),
@@ -535,7 +535,7 @@
 					imgAltText: a
 				} = e, o = "u" in t ? t.u : t.gif;
 				return l.a.createElement("div", {
-					className: Object(M.a)({
+					className: Object(k.a)({
 						[Ee.a.slideImageMainDiv]: !i
 					})
 				}, n && l.a.createElement("img", {
@@ -596,7 +596,7 @@
 					style: g,
 					className: Ee.a.slide
 				}, l.a.createElement("figure", {
-					className: Object(M.a)({
+					className: Object(k.a)({
 						[Ee.a.tallImage]: f,
 						[Ee.a.commonImage]: !f
 					}, Ee.a.figure)
@@ -610,7 +610,7 @@
 					href: "u" in a ? a.u : a.gif,
 					rel: "noopener noreferrer",
 					target: "_blank",
-					className: Object(M.a)({
+					className: Object(k.a)({
 						[Ee.a.tallImage]: f,
 						[Ee.a.commonImage]: !f
 					}, Ee.a.imageLink)
@@ -625,7 +625,7 @@
 					isSpoiler: !!u
 				}))))
 			}, Ie = e => l.a.createElement("a", {
-				className: Object(M.a)(e.className, Ee.a.navigationUnderlay, {
+				className: Object(k.a)(e.className, Ee.a.navigationUnderlay, {
 					[Ee.a.hasMoreSlides]: e.hasMoreSlides
 				}),
 				onClick: t => {
@@ -638,7 +638,7 @@
 				},
 				title: e.hasMoreSlides ? e.title : void 0
 			}, e.hasMoreSlides && l.a.createElement("i", {
-				className: Object(M.a)(e.iconClassName, Ee.a.icon)
+				className: Object(k.a)(e.iconClassName, Ee.a.icon)
 			}, l.a.createElement(ee.a, {
 				className: Ee.a.iconImage
 			}))), Ce = e => l.a.createElement("div", {
@@ -714,16 +714,16 @@
 					Object(r.useEffect)(() => {
 						(void 0 !== L && L !== E && E && S < 0 && j < 0 || void 0 !== P && P !== x && E && (S > x || j < x)) && (T(Te(x, 1)), N(je(x, i.length, 1)))
 					}, [L, x, E, S, j, P, i.length, h]);
-					const k = Object(r.useRef)(),
+					const M = Object(r.useRef)(),
 						D = Object(r.useCallback)(e => {
 							e.forEach(e => {
 								const {
 									isIntersecting: t
 								} = e;
-								t ? (S < 0 || j - S == 0) && (k.current = setTimeout(() => {
+								t ? (S < 0 || j - S == 0) && (M.current = setTimeout(() => {
 									const e = je(j, i.length);
 									e !== j && N(e)
-								}, 1e3)) : (S < 0 || j - S == 0) && clearTimeout(k.current)
+								}, 1e3)) : (S < 0 || j - S == 0) && clearTimeout(M.current)
 							})
 						}, [S, j, i.length]);
 					Object(z.a)(C, D);
@@ -771,11 +771,11 @@
 						J = Oe(p, n, a);
 					return l.a.createElement("div", {
 						"data-adclicklocation": u.a.MEDIA,
-						className: Object(M.a)(Ee.a.outerContainer),
+						className: Object(k.a)(Ee.a.outerContainer),
 						ref: I,
 						tabIndex: 0
 					}, c ? l.a.createElement(l.a.Fragment, null, l.a.createElement("div", {
-						className: Object(M.a)(Ee.a.tilesWrapper, {
+						className: Object(k.a)(Ee.a.tilesWrapper, {
 							[Ee.a.blurredContent]: e.shouldBlur
 						}),
 						onClick: e.onClickRevealBlurred
@@ -818,7 +818,7 @@
 							a = p && p[i];
 						if (!a || !a.s) return null;
 						const r = t.caption ? t.caption : g,
-							d = Object(H.a)(v ? `${v} - ${r}` : r, 300, _.nb),
+							d = Object(H.a)(v ? `${v} - ${r}` : r, 300, _.ob),
 							c = [...a && a.s ? [a.s] : [], ...a && a.p ? a.p : []],
 							u = ce(n, c);
 						if (!u) return null;
@@ -876,12 +876,12 @@
 				},
 				Le = s("./src/reddit/components/Media/ImageBox/index.tsx"),
 				Pe = s("./src/reddit/components/Media/MediaContainer/index.tsx"),
-				ke = s("./src/reddit/models/Prediction/index.ts"),
-				Me = s("./src/reddit/selectors/poll/index.ts"),
+				Me = s("./src/reddit/models/Prediction/index.ts"),
+				ke = s("./src/reddit/selectors/poll/index.ts"),
 				_e = s("./src/reddit/components/Econ/Prediction/async.ts"),
 				De = s("./src/reddit/components/Poll/async.ts");
 			const Ae = Object(c.c)({
-				poll: Me.e
+				poll: ke.e
 			});
 			var Re = Object(d.b)(Ae)(e => {
 					let {
@@ -889,7 +889,7 @@
 						poll: s,
 						postId: i
 					} = e;
-					return s ? Object(ke.c)(s) ? l.a.createElement(_e.a, {
+					return s ? Object(Me.c)(s) ? l.a.createElement(_e.a, {
 						postId: i
 					}) : l.a.createElement(De.a, {
 						postId: i,
@@ -961,7 +961,7 @@
 					u || (h.maxHeight = d ? `${de.m}px` : a ? `${de.l}px` : `${de.k}px`), n && (h.maxWidth = `${Be.d}px`);
 					const g = o && u;
 					return l.a.createElement("div", Ge({
-						className: Object(M.a)(m, i),
+						className: Object(k.a)(m, i),
 						style: h
 					}, p), s, g && l.a.createElement(Fe, {
 						canLoadContent: !!t,
@@ -1020,7 +1020,7 @@
 						height: v
 					}
 				}, !u && l.a.createElement("div", {
-					className: Object(M.a)(Object(Ve.a)({
+					className: Object(k.a)(Object(Ve.a)({
 						isLoading: !0
 					}), ze.a.tweetPlaceholder)
 				}), u && b && l.a.createElement("p", {
@@ -1033,7 +1033,7 @@
 							e && e.contentWindow && !g && s && (p(!1), e.contentWindow.postMessage("twitter-measure-requested", Y))
 						}), n(e)
 					},
-					className: Object(M.a)(ze.a.tweetEmbedBox, {
+					className: Object(k.a)(ze.a.tweetEmbedBox, {
 						[ze.a.isInvisible]: !u || b
 					}),
 					fullWidth: !0,
@@ -1122,7 +1122,7 @@
 					document: s.updated
 				} : e
 			}
-			const Et = [_.Sb.INDEX, _.Sb.COMMENTS, _.Sb.SUBREDDIT];
+			const Et = [_.Tb.INDEX, _.Tb.COMMENTS, _.Tb.SUBREDDIT];
 			var xt = s("./src/reddit/selectors/experiments/intuitivePostTypes.ts"),
 				yt = s("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
 				Ot = s("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
@@ -1149,13 +1149,13 @@
 						if (n.width >= de.d / 2 && Nt(e, t, n.height, n.width)) return n
 					}
 				},
-				kt = e => {
+				Mt = e => {
 					for (let t = 0; t < e.length; t++) {
 						const s = e[t];
 						if (s.height >= de.d || s.width >= de.e) return s
 					}
 				};
-			var Mt = s("./src/reddit/actions/preferences.ts"),
+			var kt = s("./src/reddit/actions/preferences.ts"),
 				_t = s("./src/reddit/contexts/InsideOverlay.tsx"),
 				Dt = s("./src/reddit/contexts/PageLayer/selectors.ts"),
 				At = s("./src/reddit/helpers/trackers/media.ts"),
@@ -1179,7 +1179,7 @@
 					postId: s
 				} = t;
 				return {
-					setAutoplayPref: t => e(Mt.s(t))
+					setAutoplayPref: t => e(kt.s(t))
 				}
 			});
 			var Ht = Object(r.memo)(Wt(Object(_t.b)(e => {
@@ -1344,7 +1344,7 @@
 				qt = "player.js",
 				Qt = Be.q + Be.p,
 				Xt = e => l.a.createElement("div", {
-					className: Object(M.a)(Ft.a.visibilityWrapper, {
+					className: Object(k.a)(Ft.a.visibilityWrapper, {
 						[Ft.a.displayNone]: !e.isVisible
 					})
 				}, e.children),
@@ -1414,8 +1414,8 @@
 							var i;
 							return Object(v.c)(e, {
 								experimentEligibilitySelector: v.a,
-								experimentName: f.Lc
-							}) === f.Kd && !s.isSponsored && Et.includes(null === (i = null == t ? void 0 : t.meta) || void 0 === i ? void 0 : i.name)
+								experimentName: f.Mc
+							}) === f.Ld && !s.isSponsored && Et.includes(null === (i = null == t ? void 0 : t.meta) || void 0 === i ? void 0 : i.name)
 						})(e, s, i)
 					},
 					isNSFW: (e, t) => {
@@ -1592,7 +1592,7 @@
 					} = this.props;
 					if (!n) return;
 					let a = "";
-					return i && (a += i), t && e ? a += `${Yt}${t}` : s.title && (a += `${Yt}${s.title}`), a.length > Jt ? Object(H.a)(a, Jt, _.nb) : a
+					return i && (a += i), t && e ? a += `${Yt}${t}` : s.title && (a += `${Yt}${s.title}`), a.length > Jt ? Object(H.a)(a, Jt, _.ob) : a
 				}
 				getVideoExpandoMaxDimensions() {
 					let e, t = Math.max(de.j, this.state.viewportHeight),
@@ -1637,7 +1637,7 @@
 						e && (l = e.url, c = e.width, d = e.height)
 					} else if (o && o.media && (!e.isListing || e.isExpando) && (o.media.type === de.o.IMAGE || o.media.type === de.o.GIFVIDEO)) {
 						let e;
-						(e = Object(de.M)(o.media.height, o.media.width) && Object(Le.b)(o.media.height) ? Pt(o.media.height, o.media.width, o.media.resolutions) : kt(o.media.resolutions)) && (l = e.url, c = e.width, d = e.height)
+						(e = Object(de.M)(o.media.height, o.media.width) && Object(Le.b)(o.media.height) ? Pt(o.media.height, o.media.width, o.media.resolutions) : Mt(o.media.resolutions)) && (l = e.url, c = e.width, d = e.height)
 					}
 					if (e.isExpando)
 						if (c > t.viewportWidth) {
@@ -1654,7 +1654,7 @@
 						const t = d / c;
 						e.isExpando ? (d = u, c = p) : t > de.b ? (d = u, c = Math.min(Math.max(u / t, de.r), p)) : (d = Math.min(Math.max(p * t, de.q), u), c = p)
 					}
-					o.media && o.media.type === de.o.EMBED && (o.isSurveyAd && (l = Object(k.a)(s, o.impressionId, o.postId, i), d = 475, c = 475), e.isExpando && o.media.provider !== de.v.Twitter && (d = u, c = p));
+					o.media && o.media.type === de.o.EMBED && (o.isSurveyAd && (l = Object(M.a)(s, o.impressionId, o.postId, i), d = 475, c = 475), e.isExpando && o.media.provider !== de.v.Twitter && (d = u, c = p));
 					let m = !1;
 					if (e.isMiniCard) {
 						const e = d / c;
@@ -1710,8 +1710,8 @@
 						showCentered: j,
 						showFull: N = !1,
 						showPromotedCTA: L,
-						shouldUseShredditPlayer: k,
-						subredditOrProfileDisplayText: M
+						shouldUseShredditPlayer: M,
+						subredditOrProfileDisplayText: k
 					} = this.props, {
 						canLoadContent: _,
 						isBackgrounded: D,
@@ -1965,7 +1965,7 @@
 									},
 									isReactAllowed: T.isReactAllowed
 								} : void 0,
-								s = k ? l.a.createElement(Ht, {
+								s = M ? l.a.createElement(Ht, {
 									autoplay: i,
 									postId: T.id,
 									hlsSource: T.media.hlsUrl,
@@ -2059,7 +2059,7 @@
 								post: T,
 								postId: T.id,
 								postTitle: T.title,
-								subredditName: M,
+								subredditName: k,
 								galleryItems: T.media.gallery ? T.media.gallery.items : [],
 								mediaMetadata: T.media.mediaMetadata || {},
 								imageHeight: p,
@@ -2258,10 +2258,10 @@
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
 						experimentName: i.Hb
-					}) === i.Kd
+					}) === i.Ld
 				})(e)
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.91c557a87673bbeae79e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.c620934c965317ec549a.js.map

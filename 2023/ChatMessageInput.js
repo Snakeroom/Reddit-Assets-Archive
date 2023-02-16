@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.291f61f5840205176e90.js
-// Retrieved at 2/15/2023, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.8ff3d6aff278c01e1bf0.js
+// Retrieved at 2/16/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, s) {},
@@ -301,7 +301,7 @@
 						const t = `https://${a.pointsDocsBaseUrl}v1.json?web`,
 							s = await Object(o.b)({
 								endpoint: t,
-								method: n.ob.GET
+								method: n.pb.GET
 							});
 						s.ok && s.body && e(u(s.body))
 					}
@@ -513,7 +513,7 @@
 							};
 							if (!d || !Object(C.k)(d)) return {
 								error: {
-									type: a.Y
+									type: a.Z
 								}
 							};
 							if (d.startsWith("image/")) {
@@ -521,74 +521,74 @@
 									const e = n.fbt._("Images are not allowed in r/{subredditName}", [n.fbt._param("subredditName", i)], {
 										hk: "3C2E7Q"
 									});
-									return k(a.Y, e)
+									return k(a.Z, e)
 								}
 								if ("image/gif" === d) {
-									if (e.size > a.eb) return k(a.O)
-								} else if (e.size > a.gb) return k(a.W);
+									if (e.size > a.fb) return k(a.O)
+								} else if (e.size > a.hb) return k(a.X);
 								const s = await Object(_.a)(c);
 								if (o && (s.width < o || s.height < o)) {
 									const e = n.fbt._("Image must be {min_image_width}x{min_image_height} pixels or larger.", [n.fbt._param("min_image_width", o.toString()), n.fbt._param("min_image_height", o.toString())], {
 										hk: "2WFKgs"
 									});
-									return k(a.V, e)
+									return k(a.W, e)
 								}
 								l.width = s.width, l.height = s.height
 							} else if (d.startsWith("video/")) {
-								if (e.size > a.kb) return k(a.vc);
+								if (e.size > a.lb) return k(a.wc);
 								let t;
 								try {
 									t = await Object(C.j)(c, !0)
 								} catch (u) {
-									return k(a.Y)
+									return k(a.Z)
 								}
 								if (r) {
 									const {
 										videos: e,
 										images: s
 									} = r;
-									if (s && !e && t.duration > a.lb) {
+									if (s && !e && t.duration > a.mb) {
 										const e = n.fbt._("Sorry, r/{subredditName} doesn't allow videos. Please upload a video less than 60 seconds to convert to animated GIF.", [n.fbt._param("subredditName", i)], {
 											hk: "46ULiz"
 										});
-										return k(a.Y, e)
+										return k(a.Z, e)
 									}
 									if (!s && !e) {
 										const e = n.fbt._("Videos are not allowed in r/{subredditName}", [n.fbt._param("subredditName", i)], {
 											hk: "4uTUZb"
 										});
-										return k(a.Y, e)
+										return k(a.Z, e)
 									}
 								}
-								if (t.duration > a.jb) {
-									const e = n.fbt._("Video is too long. Maximum video length is {duration} minutes.", [n.fbt._param("duration", (a.jb / 60).toString())], {
+								if (t.duration > a.kb) {
+									const e = n.fbt._("Video is too long. Maximum video length is {duration} minutes.", [n.fbt._param("duration", (a.kb / 60).toString())], {
 										hk: "20nB6Q"
 									});
-									return k(a.Y, e)
+									return k(a.Z, e)
 								}
-								if (t.duration < a.rb) {
-									const e = n.fbt._("Video is too short. Minimum video length is {duration} seconds.", [n.fbt._param("duration", a.rb.toString())], {
+								if (t.duration < a.sb) {
+									const e = n.fbt._("Video is too short. Minimum video length is {duration} seconds.", [n.fbt._param("duration", a.sb.toString())], {
 										hk: "49PSW8"
 									});
-									return k(a.Y, e)
+									return k(a.Z, e)
 								}
 								if (0 === t.height || 0 === t.width) {
 									const e = n.fbt._("Your browser does not support the video codec used for this video. Please try using a different video codec.", null, {
 										hk: "1AC0mg"
 									});
-									return k(a.Y, e)
+									return k(a.Z, e)
 								}
-								if (t.height < a.sb || t.width < a.tb) {
-									const e = n.fbt._("Videos must be {min_video_width}x{min_video_height} pixels or larger.", [n.fbt._param("min_video_width", a.tb.toString()), n.fbt._param("min_video_height", a.sb.toString())], {
+								if (t.height < a.tb || t.width < a.ub) {
+									const e = n.fbt._("Videos must be {min_video_width}x{min_video_height} pixels or larger.", [n.fbt._param("min_video_width", a.ub.toString()), n.fbt._param("min_video_height", a.tb.toString())], {
 										hk: "2HSUGl"
 									});
-									return k(a.Y, e)
+									return k(a.Z, e)
 								}
-								if (e.size / t.duration < a.qb) {
-									const e = n.fbt._("Videos must have a bitrate of {min_bitrate}KB/s or larger.", [n.fbt._param("min_bitrate", (a.qb / a.Z).toString())], {
+								if (e.size / t.duration < a.rb) {
+									const e = n.fbt._("Videos must have a bitrate of {min_bitrate}KB/s or larger.", [n.fbt._param("min_bitrate", (a.rb / a.ab).toString())], {
 										hk: "1ehgDE"
 									});
-									return k(a.Y, e)
+									return k(a.Z, e)
 								}
 								l.height = t.height, l.width = t.width, l.videoDuration = t.duration, l.videoFirstFrameUrl = t.firstFrame.dataUrl
 							}
@@ -607,7 +607,7 @@
 								}
 							})), R = !0, r && r(), i) {
 							const e = I.mimetype,
-								t = e && a.T[e];
+								t = e && a.U[e];
 							if (e && t) {
 								const e = await (async (e, t) => {
 									return await Object(m.a)(e, {
@@ -656,7 +656,7 @@
 						const T = e.name,
 							L = await (async (e, t, s) => Object(u.a)(Object(h.a)(e, [p.a]), {
 								endpoint: `${e.apiUrl}/api/media/asset.json`,
-								method: a.ob.POST,
+								method: a.pb.POST,
 								data: {
 									filepath: t,
 									mimetype: s
@@ -951,7 +951,7 @@
 					} = e;
 					const {
 						processingAvatarImageUrl: n
-					} = d.a, a = (e => e.replace(u.Nb.Account + "_", ""))(s), {
+					} = d.a, a = (e => e.replace(u.Ob.Account + "_", ""))(s), {
 						avatar: r,
 						color: i
 					} = (e => {
@@ -1303,10 +1303,10 @@
 				W = s("./src/reddit/selectors/experiments/chat.ts"),
 				V = s("./src/redditGQL/types.ts");
 			const G = "chat_submission_from_rte",
-				Y = 15,
-				q = 15e3,
+				q = 15,
+				Z = 15e3,
 				z = Object(H.v)(),
-				$ = Object(d.b)(() => Object(c.c)({
+				Y = Object(d.b)(() => Object(c.c)({
 					draft: A.i,
 					errorMsgs: A.M,
 					errorType: A.N,
@@ -1382,7 +1382,7 @@
 						})())
 					}
 				});
-			class Z extends i.a.Component {
+			class $ extends i.a.Component {
 				constructor(e) {
 					super(e), this.showLiveChatTooltipIfCreatedAssociation = () => {
 						this.props.currentUserId && this.state.hasCreatedLiveChatAssociation && this.props.setLiveChatTooltipShowState(x.b.IS_SHOWING, this.props.currentUserId)
@@ -1447,7 +1447,7 @@
 						}), this.setState({
 							hasCreatedLiveChatAssociation: !0
 						}), !this.isEmbeddedLiveChat() && this.props.fetchLiveChatPosts()
-					}, q), window.addEventListener("beforeunload", this.showLiveChatTooltipIfCreatedAssociation))
+					}, Z), window.addEventListener("beforeunload", this.showLiveChatTooltipIfCreatedAssociation))
 				}
 				UNSAFE_componentWillReceiveProps(e) {
 					!this.props.isEditing && this.props.draft && this.props.draft.rteState && e.draft && null === e.draft.rteState && this.cleanInputForm(), this.isReplyCommentChanged(e) && e.replyComment && this.focusOnForm(), e.hasError !== this.props.hasError && this.setState({
@@ -1487,7 +1487,7 @@
 						isLiveChatThreadingEnabled: h
 					} = this.props, p = n.fbt._("Send a message (use the Enter key)", null, {
 						hk: "3yojgj"
-					}), b = r === P.L.RATELIMIT && parseInt(null === (e = null == o ? void 0 : o[0]) || void 0 === e ? void 0 : e.replace(/\D/g, "")) || Y;
+					}), b = r === P.L.RATELIMIT && parseInt(null === (e = null == o ? void 0 : o[0]) || void 0 === e ? void 0 : e.replace(/\D/g, "")) || q;
 					return h && (null == u ? void 0 : u.isDeleted) ? null : i.a.createElement("div", {
 						className: Object(l.a)(F.a.FormWrapper, {
 							[F.a.v2]: t,
@@ -1573,7 +1573,7 @@
 					width: 25
 				})
 			};
-			t.default = z($(Z))
+			t.default = z(Y($))
 		},
 		"./src/reddit/components/PostCreationForm/MediaInput/ImageGalleryDrop/constants.ts": function(e, t, s) {
 			"use strict";
@@ -1914,4 +1914,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.291f61f5840205176e90.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.8ff3d6aff278c01e1bf0.js.map

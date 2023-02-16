@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.5b04d0df56533b811dbe.js
-// Retrieved at 2/15/2023, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.cdd7335cae41f0617667.js
+// Retrieved at 2/16/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/backo2/index.js": function(e, t) {
@@ -1276,7 +1276,7 @@
 					} = e;
 					const {
 						processingAvatarImageUrl: o
-					} = c.a, r = (e => e.replace(m.Nb.Account + "_", ""))(n), {
+					} = c.a, r = (e => e.replace(m.Ob.Account + "_", ""))(n), {
 						avatar: a,
 						color: i
 					} = (e => {
@@ -4111,7 +4111,7 @@
 					name: t
 				},
 				endpoint: `${e.apiUrl}/api/block_user`,
-				method: s.ob.POST
+				method: s.pb.POST
 			}), l = async (e, t, n) => Object(r.a)(Object(a.a)(e, [i.a]), {
 				data: {
 					name: n,
@@ -4119,22 +4119,22 @@
 					type: "enemy"
 				},
 				endpoint: `${e.apiUrl}/api/unfriend`,
-				method: s.ob.POST
+				method: s.pb.POST
 			}), m = async (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
 				data: {
 					name: t
 				},
 				endpoint: `${e.apiUrl}/api/add_whitelisted?include_model`,
-				method: s.ob.POST
+				method: s.pb.POST
 			}), u = async (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
 				data: {
 					name: t
 				},
 				endpoint: `${e.apiUrl}/api/remove_whitelisted`,
-				method: s.ob.POST
+				method: s.pb.POST
 			}), h = async (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
 				endpoint: Object(c.a)(`${o.a.oauthUrl}/user/${t}/about`),
-				method: s.ob.GET,
+				method: s.pb.GET,
 				data: {
 					raw_json: 1
 				}
@@ -4563,4 +4563,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.5b04d0df56533b811dbe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.cdd7335cae41f0617667.js.map

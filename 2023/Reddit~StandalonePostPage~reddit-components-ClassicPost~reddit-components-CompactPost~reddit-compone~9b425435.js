@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.54bec0b6dce714c2cce4.js
-// Retrieved at 2/15/2023, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.9dbcd75ac56cdf92d20e.js
+// Retrieved at 2/16/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/avatarShareImages.ts": function(e, t, n) {
@@ -285,7 +285,7 @@
 					const g = Object(m.b)(o()),
 						O = await (async (e, t, n, r, o) => Object(i.a)(Object(d.a)(e, [l.a]), {
 							endpoint: `${a.a.snoovatarUrl}/api/snoovatar?skip_telemetry=true`,
-							method: c.ob.POST,
+							method: c.pb.POST,
 							headers: {
 								"Content-Type": "application/json ",
 								"X-CSRF-Token": o || ""
@@ -308,7 +308,7 @@
 					try {
 						const t = await (async e => Object(i.a)(Object(d.a)(e, [l.a]), {
 							endpoint: `${a.a.snoovatarUrl}/api/account`,
-							method: c.ob.GET
+							method: c.pb.GET
 						}))(r());
 						t.ok && e(b(t.body))
 					} catch (o) {
@@ -321,7 +321,7 @@
 					try {
 						const t = await (async e => Object(i.a)(Object(d.a)(e, [l.a]), {
 							endpoint: `${a.a.snoovatarUrl}/api/snoovatars/random:byId`,
-							method: c.ob.GET
+							method: c.pb.GET
 						}))(r());
 						t.ok && e(h(t.body))
 					} catch (o) {
@@ -2278,7 +2278,7 @@
 					const {
 						thingId: n,
 						packageId: l
-					} = t, b = !!n, v = s.b(e), h = v ? Object(u.getAwardTypeFromAward)(v) : null, g = b ? h : c.p(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, O = n ? Object(p.a)(n) ? "comment" : "post" : void 0, j = l || c.u(e), _ = [...Object(a.d)(e), ...Object(a.f)(e)].filter(e => e.mobileId === j)[0], y = t.offerContext || (v && 0 === v.coinPrice ? o.a.StorefrontFreeAward : Object(o.d)(_, b)), x = _ ? Math.round(1e4 * (_.baselinePennies - _.pennies) / _.baselinePennies) / 100 : 0, w = _ ? Math.round(1e4 * (_.coins - _.baselineCoins) / _.coins) / 100 : 0, C = _ ? _.baselinePennies !== _.pennies ? `${x}_percent_price` : _.baselineCoins !== _.coins ? `${w}_percent_bonus` : void 0 : void 0, k = g === d.GoldPurchaseType.Premium ? r.Db : _ ? _.pennies : void 0;
+					} = t, b = !!n, v = s.b(e), h = v ? Object(u.getAwardTypeFromAward)(v) : null, g = b ? h : c.p(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, O = n ? Object(p.a)(n) ? "comment" : "post" : void 0, j = l || c.u(e), _ = [...Object(a.d)(e), ...Object(a.f)(e)].filter(e => e.mobileId === j)[0], y = t.offerContext || (v && 0 === v.coinPrice ? o.a.StorefrontFreeAward : Object(o.d)(_, b)), x = _ ? Math.round(1e4 * (_.baselinePennies - _.pennies) / _.baselinePennies) / 100 : 0, w = _ ? Math.round(1e4 * (_.coins - _.baselineCoins) / _.coins) / 100 : 0, C = _ ? _.baselinePennies !== _.pennies ? `${x}_percent_price` : _.baselineCoins !== _.coins ? `${w}_percent_bonus` : void 0 : void 0, k = g === d.GoldPurchaseType.Premium ? r.Eb : _ ? _.pennies : void 0;
 					return {
 						...i.o(e),
 						comment: n ? i.h({
@@ -3547,7 +3547,7 @@
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
 						experimentName: r.uc
-					}) === r.ed.Enabled
+					}) === r.fd.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
@@ -3560,8 +3560,8 @@
 			const s = e => {
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: r.af
-				}) === r.Kd
+					experimentName: r.bf
+				}) === r.Ld
 			}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -3820,7 +3820,7 @@
 					} = e.user.prefs;
 					return void 0 === n && !t || !!n
 				},
-				a = e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== r.Sb.MODERATION_PAGES),
+				a = e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== r.Tb.MODERATION_PAGES),
 				c = e => e.user.prefs.reduceAnimationsFromAwards,
 				i = e => !!e.user.prefs.over18
 		},
@@ -3882,4 +3882,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.54bec0b6dce714c2cce4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.9dbcd75ac56cdf92d20e.js.map

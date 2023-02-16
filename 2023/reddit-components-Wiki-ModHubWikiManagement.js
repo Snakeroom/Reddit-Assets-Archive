@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.eec813116701b58ec698.js
-// Retrieved at 2/15/2023, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.9e2dec468aba1a5852d8.js
+// Retrieved at 2/16/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Wiki-ModHubWikiManagement"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -785,9 +785,9 @@
 				X = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				G = n("./src/reddit/models/SubredditModeration/index.ts"),
 				K = n("./src/reddit/components/BannedUserList/AddBannedUserModal/DaysInput.tsx"),
-				Z = n("./src/reddit/components/BannedUserList/AddBannedUserModal/RulesDropdown.tsx"),
-				Y = n("./src/reddit/components/Wiki/ModHubWikiManagement/WikiBannedContributors/index.m.less"),
-				J = n.n(Y);
+				Y = n("./src/reddit/components/BannedUserList/AddBannedUserModal/RulesDropdown.tsx"),
+				Z = n("./src/reddit/components/Wiki/ModHubWikiManagement/WikiBannedContributors/index.m.less"),
+				J = n.n(Z);
 			const Q = 300,
 				$ = Object(E.b)(null, (e, t) => {
 					let {
@@ -863,7 +863,7 @@
 						value: this.state.username
 					})), s.a.createElement(z.h, null, s.a.createElement(z.k, null, w.fbt._("Reason for ban", null, {
 						hk: "1e9gZn"
-					})), s.a.createElement(Z.a, {
+					})), s.a.createElement(Y.a, {
 						onSelectReason: this.onSelectReason,
 						reason: t.banReason,
 						subredditId: e.subredditId
@@ -1588,10 +1588,10 @@
 							});
 							break;
 						default:
-							return b === o.mc.WikiBanned ? s.a.createElement(se, {
+							return b === o.nc.WikiBanned ? s.a.createElement(se, {
 								subredditId: e.id,
 								subredditName: e.name
-							}) : b === o.mc.WikiContributors ? s.a.createElement(pe, {
+							}) : b === o.nc.WikiContributors ? s.a.createElement(pe, {
 								subredditName: e.name
 							}) : p && g && k ? s.a.createElement(a.a, {
 								comparisonRevisionId: Object(m.a)(k),
@@ -1872,8 +1872,8 @@
 				toggleIsHidden: t => e(Object(c.b)(t))
 			}))(G);
 
-			function Z() {
-				return (Z = Object.assign || function(e) {
+			function Y() {
+				return (Y = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var i in n) Object.prototype.hasOwnProperty.call(n, i) && (e[i] = n[i])
@@ -1881,7 +1881,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const Y = Object(r.c)({
+			const Z = Object(r.c)({
 				hasError: P.o,
 				hasWikiModPerms: (e, t) => {
 					const n = Object(N.C)(e, t);
@@ -2065,7 +2065,7 @@
 					}))
 				}
 			}
-			const Q = Object(a.b)(Y, (e, t) => ({
+			const Q = Object(a.b)(Z, (e, t) => ({
 				toggleRevetConfirmationModal: () => e(Object(l.i)("wiki-revert-confirmation")),
 				onRevertToRevision: t => e(Object(c.a)(t)),
 				onLoadMoreRevisions: () => e(Object(c.c)({
@@ -2082,7 +2082,7 @@
 						...e,
 						isRecent: t
 					});
-				return o.a.createElement(Q, Z({
+				return o.a.createElement(Q, Y({
 					key: n,
 					listingKey: n
 				}, e))
@@ -2523,7 +2523,7 @@
 				v = n("./src/reddit/helpers/addRedesignIdentifier/index.ts");
 			var x = e => Object(g.a)(Object(k.a)(e.context, [f.a]), {
 					endpoint: Object(v.a)(`${e.context.apiUrl}/r/${e.subredditName}/api/wiki/edit`),
-					method: b.ob.POST,
+					method: b.pb.POST,
 					data: {
 						content: e.pageContent,
 						page: e.wikiPageName,
@@ -2626,8 +2626,8 @@
 				}
 			}
 			var K = Object(D.a)(G),
-				Z = n("./src/reddit/components/Wiki/WikiPageEditor/index.m.less"),
-				Y = n.n(Z);
+				Y = n("./src/reddit/components/Wiki/WikiPageEditor/index.m.less"),
+				Z = n.n(Y);
 			const J = "Discard-wiki-page-changes",
 				Q = "Add-wiki-revision-reason",
 				$ = 2,
@@ -2785,10 +2785,10 @@
 							markdown: u
 						} = this.state, m = a && a.content && a.content.markdown || "", h = !u.trim(), p = u !== m, b = t && a ? Object(B.b)(a.name) : void 0, g = !(!a || a.status !== H.b.PageNotCreated || b), k = !(!a || a.status !== H.b.Valid || !a.isRevisable), f = t ? g : k, v = f && p && !h && !c && !b;
 						return o.a.createElement("div", {
-							className: Object(d.a)(Y.a.container, this.props.className)
+							className: Object(d.a)(Z.a.container, this.props.className)
 						}, o.a.createElement("div", {
-							className: Object(d.a)(this.props.topBarClassName, Y.a.topBar, {
-								[Y.a.modHubTopBarExp]: e
+							className: Object(d.a)(this.props.topBarClassName, Z.a.topBar, {
+								[Z.a.modHubTopBarExp]: e
 							})
 						}, o.a.createElement(W.o, {
 							onClick: this.onCancel,
@@ -2801,10 +2801,10 @@
 						}, i.fbt._("Save", null, {
 							hk: "4yMsMq"
 						}))), o.a.createElement("div", {
-							className: Object(d.a)(this.props.contentClassName, Y.a.content)
+							className: Object(d.a)(this.props.contentClassName, Z.a.content)
 						}, a ? f ? o.a.createElement(T.a, {
 							autoFocus: !0,
-							className: Y.a.resizableTextarea,
+							className: Z.a.resizableTextarea,
 							disabled: c,
 							onChange: this.onTextChange,
 							placeholder: i.fbt._("Add page content here", null, {
@@ -3320,7 +3320,7 @@
 						onMouseEnter: this.onShowTooltip,
 						onMouseLeave: this.onHideTooltip
 					}, " - ", a.a.createElement(h.d, {
-						seconds: p.valueOf() / l.Xb
+						seconds: p.valueOf() / l.Yb
 					}), a.a.createElement(E, {
 						text: p.toString(),
 						isOpen: r,
@@ -3450,4 +3450,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.eec813116701b58ec698.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.9e2dec468aba1a5852d8.js.map

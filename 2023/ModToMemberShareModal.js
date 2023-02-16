@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModToMemberShareModal.fa22f8c409f501b7c0d6.js
-// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModToMemberShareModal.75e1446592f78301a3e8.js
+// Retrieved at 2/16/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModToMemberShareModal"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, s) {
@@ -184,7 +184,7 @@
 				k = s("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
 				S = (e, t, s) => Object(g.a)(Object(C.a)(e, [f.a]), {
 					endpoint: Object(k.a)(`${e.apiUrl}/api/mod_link_share`),
-					method: x.ob.POST,
+					method: x.pb.POST,
 					data: {
 						link_id: t,
 						message: s
@@ -448,4 +448,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModToMemberShareModal.fa22f8c409f501b7c0d6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModToMemberShareModal.75e1446592f78301a3e8.js.map

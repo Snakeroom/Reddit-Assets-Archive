@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.bcc0258354b666298b69.js
-// Retrieved at 1/19/2023, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.61b34c70efcf5fb4d8a1.js
+// Retrieved at 2/16/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UsernameConfirmationModals"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -358,13 +358,13 @@
 				}).join(", ") : (() => a.fbt._("Sorry, something went wrong. Try again later.", null, {
 					hk: "3HcWgL"
 				}))(),
-				z = Object(c.c)({
+				Y = Object(c.c)({
 					changeUsernameModalOpen: Object(V.b)(R.b),
 					confirmSaveUsernameModalOpen: Object(V.b)(R.d),
 					interceptActionModalOpen: Object(V.b)(R.e),
 					welcomeBackModalOpen: Object(V.b)(R.r)
 				}),
-				X = Object(r.b)(z, (e, t) => ({
+				z = Object(r.b)(Y, (e, t) => ({
 					closeModal: () => {
 						e(Object(p.f)()), e(Object(u.d)())
 					},
@@ -402,7 +402,7 @@
 						}, b.a)
 					}
 				})),
-				Y = Object(i.a)(Object(P.b)(X(e => {
+				X = Object(i.a)(Object(P.b)(z(e => {
 					let {
 						apiContext: t,
 						changeUsernameModalOpen: n,
@@ -480,7 +480,7 @@
 						username: N
 					}))
 				})));
-			t.default = Y
+			t.default = X
 		},
 		"./src/reddit/components/Settings/ChangeUsernameModal.tsx": function(e, t, n) {
 			"use strict";
@@ -511,10 +511,10 @@
 					} = e, [o, l] = Object(r.useState)([0, 0]), [m, u] = Object(r.useState)([]), [p, g] = Object(r.useState)(!1), N = Object(r.useCallback)(async () => {
 						g(!0), setTimeout(() => {
 							g(!1)
-						}, 10 * d.Xb);
+						}, 10 * d.Yb);
 						const e = await (e => Object(b.a)(Object(h.a)(e, [f.a]), {
 							endpoint: `${e.apiUrl}/api/v1/generate_username.json`,
-							method: d.ob.GET
+							method: d.pb.GET
 						}))(t());
 						if (e.ok && e.body) {
 							const {
@@ -805,7 +805,7 @@
 				o = n("./src/lib/omitHeaders/index.ts"),
 				r = n("./src/reddit/constants/headers.ts");
 			const c = (e, t) => Object(s.a)(Object(o.a)(e, [r.a]), {
-				method: a.ob.POST,
+				method: a.pb.POST,
 				endpoint: `${e.apiUrl}/api/update_name`,
 				data: {
 					api_type: "json",
@@ -978,4 +978,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.bcc0258354b666298b69.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.61b34c70efcf5fb4d8a1.js.map

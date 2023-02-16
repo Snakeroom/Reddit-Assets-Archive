@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.4d27d3ea56eb7b14795d.js
-// Retrieved at 2/15/2023, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.fe5a4067b0ee7bb4c2ec.js
+// Retrieved at 2/16/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -432,7 +432,7 @@
 				V = n("./src/lib/initializeClient/installReducer.ts"),
 				q = n("./src/reddit/reducers/features/marketplace/index.ts"),
 				U = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const H = Object(U.a)(b.Pd);
+			const H = Object(U.a)(b.Qd);
 			var W = n("./src/redditGQL/types.ts");
 			Object(V.a)({
 				features: {
@@ -469,7 +469,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.kg)(p),
+						includeInterestTopics: !!p && !Object(b.lg)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: h && !(null === (s = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === s ? void 0 : s.total),
@@ -766,7 +766,7 @@
 						p = o.listings.postOrder.api.pending[d],
 						b = Object(le.b)(o),
 						g = ne.J in e.queryParams && e.queryParams[ne.J].toUpperCase() || "",
-						f = g in l.oc && l.oc[g],
+						f = g in l.pc && l.pc[g],
 						h = K.f();
 					if (p || u && !m && !t) return void(u && (n(Z.n({
 						title: b ? Object(Y.a)(o, h) : h
@@ -823,7 +823,7 @@
 						m = Object(be.a)(te.b, d, u),
 						p = i.listings.postOrder.loadMore[m],
 						b = u[ne.J] ? u[ne.J].toUpperCase() : "",
-						g = b in l.oc && l.oc[b];
+						g = b in l.pc && l.pc[b];
 					if (p) {
 						const e = i.listings.postOrder.api.pending[m],
 							s = i.listings.postOrder.fetchedTokens,
@@ -886,7 +886,7 @@
 						o = s.platform.currentPage ? s.platform.currentPage.queryParams : {},
 						i = Object(be.a)(te.b, a, o),
 						c = o[ne.J] ? o[ne.J].toUpperCase() : "",
-						d = c in l.oc && l.oc[c],
+						d = c in l.pc && l.pc[c],
 						u = Object(ae.a)(s),
 						m = Object(ae.b)(u);
 					await t(Pe(i, {
@@ -1822,8 +1822,8 @@
 						toggleLanguageSelection: u
 					} = e;
 					const [m, p] = Object(a.useState)(!1), b = Object(i.e)(ee.fb);
-					let g = Object(i.e)(Se.i) === ke.cd.TopTwo;
-					const f = Object(i.e)(Se.h) === ke.cd.TopTwo;
+					let g = Object(i.e)(Se.i) === ke.dd.TopTwo;
+					const f = Object(i.e)(Se.h) === ke.dd.TopTwo;
 					g = g || f;
 					const h = Object(i.e)(ye.b),
 						O = Object(_.a)();
@@ -2977,7 +2977,7 @@
 						(I || N) && async function() {
 							q(!0);
 							const e = await fn(t, he);
-							q(!1), e && (se(Date.now() / u.Xb), D(e))
+							q(!1), e && (se(Date.now() / u.Yb), D(e))
 						}()
 					}, [I, N, t, he]), Object(a.useEffect)(() => {
 						N && Object(vn.a)(null == S ? void 0 : S.genderCategory, N.success)
@@ -3006,7 +3006,7 @@
 						xe = Object(i.e)(ye.k),
 						_e = Object(i.e)(Se.i),
 						Ee = Object(i.e)(Se.h),
-						Ce = _e === ke.cd.TopTwo || _e === ke.cd.All || Ee === ke.cd.TopTwo || Ee === ke.cd.All,
+						Ce = _e === ke.dd.TopTwo || _e === ke.dd.All || Ee === ke.dd.TopTwo || Ee === ke.dd.All,
 						je = Object(a.useCallback)(async e => {
 							ie(!0);
 							const n = await Object(On.c)(e, t, xe);
@@ -3025,9 +3025,9 @@
 						Ie = Object(i.e)(ee.U),
 						we = Object(i.e)(ye.g),
 						Pe = Object(i.e)(kn.a),
-						Re = Pe === ke.Rf.CloseOnboarding,
-						Fe = Pe === ke.Rf.SkipTopicSelection,
-						Ge = Pe === ke.Rf.SmartSignal,
+						Re = Pe === ke.Sf.CloseOnboarding,
+						Fe = Pe === ke.Sf.SkipTopicSelection,
+						Ge = Pe === ke.Sf.SmartSignal,
 						Ae = Object(a.useCallback)(() => {
 							s(Object(b.g)(Kt.a.ONBOARDING_MODAL_D2X)), Te && s(Object(g.h)()), h && (r(Object(F.t)()), Object(xn.a)()), we && Ie && s(Object(m.startChangeUsernameFlow)())
 						}, [s, Ie, we, h, Te, r]),
@@ -3063,7 +3063,7 @@
 						}, [Ue, r]),
 						Ke = Object(a.useCallback)(async () => {
 							r(Object(F.u)());
-							const e = Date.now() / u.Xb - te;
+							const e = Date.now() / u.Yb - te;
 							Ge && e <= 5 ? (L(!0), H({}), Ve()) : (k(zt.COMMUNITIES), De())
 						}, [De, r, Ve, te, Ge]),
 						Ye = Object(a.useCallback)(async () => {
@@ -3168,11 +3168,11 @@
 						className: ne.a.subtitle
 					}, function(e) {
 						switch (e) {
-							case ke.Se.Ads:
+							case ke.Te.Ads:
 								return In._("Tell us about yourself to improve your recommendations and ads.", null, {
 									hk: "tlFdQ"
 								});
-							case ke.Se.AdsUpdateSettings:
+							case ke.Te.AdsUpdateSettings:
 								return In._("Tell us about yourself to improve your recommendations and ads. You can update this any time in settings.", null, {
 									hk: "CbUFt"
 								});
@@ -5068,10 +5068,10 @@
 			const o = e => {
 					return !(Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.te
-					}) === s.Kd)
+						experimentName: s.ue
+					}) === s.Ld)
 				},
-				i = Object(a.a)(s.ue)
+				i = Object(a.a)(s.ve)
 		},
 		"./src/redditGQL/operations/Frontpage.json": function(e) {
 			e.exports = JSON.parse('{"id":"5c932f66f7be"}')
@@ -5105,4 +5105,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.4d27d3ea56eb7b14795d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.fe5a4067b0ee7bb4c2ec.js.map

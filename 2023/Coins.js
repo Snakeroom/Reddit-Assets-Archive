@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.f5591b5661c942b18f32.js
-// Retrieved at 2/15/2023, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.6092b8f69374921bae1a.js
+// Retrieved at 2/16/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, n) {
@@ -1447,7 +1447,7 @@
 					u = `${n.apiUrl}/api/v2/gold/paypal/initiate_premium_payment`,
 					m = Object(i.a)(u);
 				return Object(a.a)(Object(s.a)(n, [c.a]), {
-					method: r.ob.POST,
+					method: r.pb.POST,
 					endpoint: m,
 					data: d
 				}).then(o.a)
@@ -1464,7 +1464,7 @@
 					correlation_id: l
 				};
 				return Object(a.a)(Object(s.a)(t, [c.a]), {
-					method: r.ob.POST,
+					method: r.pb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/create_coin_purchase_order`,
 					data: d
 				}).then(o.a)
@@ -1483,7 +1483,7 @@
 					thing_id: l
 				};
 				return Object(a.a)(Object(s.a)(t, [c.a]), {
-					method: r.ob.POST,
+					method: r.pb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/create_award_purchase_order`,
 					data: u
 				}).then(o.a)
@@ -1504,7 +1504,7 @@
 					correlation_id: u
 				};
 				return Object(a.a)(Object(s.a)(t, [c.a]), {
-					method: r.ob.POST,
+					method: r.pb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_coin_order`,
 					data: m
 				}).then(o.a)
@@ -1533,7 +1533,7 @@
 					thing_id: b
 				};
 				return Object(a.a)(Object(s.a)(n, [c.a]), {
-					method: r.ob.POST,
+					method: r.pb.POST,
 					endpoint: `${n.apiUrl}/api/v2/gold/paypal/execute_coin_with_gild_order`,
 					data: g
 				}).then(o.a)
@@ -1556,7 +1556,7 @@
 					thing_id: m
 				};
 				return Object(a.a)(Object(s.a)(n, [c.a]), {
-					method: r.ob.POST,
+					method: r.pb.POST,
 					endpoint: `${n.apiUrl}/api/v2/gold/paypal/execute_award_purchase_order`,
 					data: p
 				}).then(o.a)
@@ -2110,7 +2110,7 @@
 						requestPurchaseCatalog: n
 					} = this.props;
 					e.length || t || n(this.correlationId), document.documentElement.scrollTop = document.body.scrollTop = 0;
-					const r = m.Sb.COINS;
+					const r = m.Tb.COINS;
 					k.c.has(r) && (this.props.sendEvent(Object(E.b)(C.TimerType.InApp, k.c.end(r))), this.props.sendEvent(Object(E.a)())), Object(p.a)(), this.setTargetedOfferTimeout()
 				}
 				componentDidUpdate() {
@@ -2333,4 +2333,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.f5591b5661c942b18f32.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.6092b8f69374921bae1a.js.map
