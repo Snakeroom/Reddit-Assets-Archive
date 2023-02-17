@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.36c79d8a50452db91686.js
-// Retrieved at 2/16/2023, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.b2ec63cf1a9dfe33e020.js
+// Retrieved at 2/16/2023, 8:50:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1495,14 +1495,14 @@
 						"reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal": "cd11803960dd6c0af1e9",
 						"translations/bn_BD-json": "9f480e25aa7f86bdb368",
 						"translations/de_DE-json": "78739953d17a4dfdf205",
-						"translations/es_ES-json": "c633c4e2271bab34f6ef",
-						"translations/es_MX-json": "8850b750a6d586264d73",
-						"translations/fr_FR-json": "79aea3708e56f4a304c9",
+						"translations/es_ES-json": "d888ca53ed4de68b5682",
+						"translations/es_MX-json": "bc7916b1ad4a5e097f0e",
+						"translations/fr_FR-json": "49da792b8a2d081f68b5",
 						"translations/hi_IN-json": "791e4fab86ee5315979c",
-						"translations/it_IT-json": "41a159e57b2002965d7f",
+						"translations/it_IT-json": "c56d2e05e08c6756d8d5",
 						"translations/pseudo-json": "855843a616cd896c4150",
-						"translations/pt_BR-json": "2c3da47044bc4323e3f3",
-						"translations/pt_PT-json": "305cb8d67b57d1072e5d",
+						"translations/pt_BR-json": "61194c49e4307c101174",
+						"translations/pt_PT-json": "c7a6e945bb5d725d9fb1",
 						"vendors~AdminPanel": "9abedef941b07fd50b75",
 						AdminPanel: "55b00364b736a05129f4",
 						"vendors~Avatar~ChatPost~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~RealtimeGQLSubscr~bfab320d": "a668d51b1ce27b994b5f",
@@ -1772,4 +1772,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.36c79d8a50452db91686.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.b2ec63cf1a9dfe33e020.js.map
