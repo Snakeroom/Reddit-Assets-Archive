@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.d6c417c699bb594381df.js
-// Retrieved at 2/16/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.4f45b8c294885ad5275c.js
+// Retrieved at 2/21/2023, 3:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -4235,7 +4235,7 @@
 						onClick: g ? v : void 0,
 						headerButton: i.a.createElement("div", {
 							className: Je.a.headerButtonsContainer
-						}, !K && y && C && l !== ge.Ne.NewModule && i.a.createElement(a.a, {
+						}, !K && y && C && l !== ge.Me.NewModule && i.a.createElement(a.a, {
 							className: Je.a.ModToolsLink,
 							to: C.posts ? `${y.url}about/modqueue` : `${y.url}about/`,
 							onClick: this.onClickModTools
@@ -5134,6 +5134,21 @@
 			}));
 			const r = "https://www.redditstatic.com/avatars/avatar_default_02_24A0ED.png"
 		},
+		"./src/reddit/constants/imagePaths.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "b", (function() {
+				return s
+			})), n.d(t, "a", (function() {
+				return i
+			}));
+			var r = n("./src/config.ts");
+			const s = Array.from({
+					length: 20
+				}).map((e, t) => `${r.a.assetPath}/img/snoovatars/snoovatar_${t+1}.png`),
+				i = Array.from({
+					length: 8
+				}).map((e, t) => `${r.a.processingAvatarImageUrl}/defaults/v2/avatar_default_${t}.png`)
+		},
 		"./src/reddit/controls/IconTooltip/index.m.less": function(e, t, n) {
 			e.exports = {
 				tooltip: "_3bX7W3J0lU78fp7cayvNxx"
@@ -5396,19 +5411,13 @@
 			var r = n("./node_modules/lodash/memoize.js"),
 				s = n.n(r),
 				i = n("./src/reddit/constants/categories.tsx"),
-				o = n("./src/config.ts");
-			const a = Array.from({
-					length: 20
-				}).map((e, t) => `${o.a.assetPath}/img/snoovatars/snoovatar_${t+1}.png`),
-				d = Array.from({
-					length: 8
-				}).map((e, t) => `${o.a.processingAvatarImageUrl}/defaults/v2/avatar_default_${t}.png`),
-				c = [];
+				o = n("./src/reddit/constants/imagePaths.ts");
+			const a = [];
 			t.a = s()((function(e) {
 				let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 3,
 					n = arguments.length > 2 ? arguments[2] : void 0;
-				if (!e || !t) return c;
-				const r = n ? d : a,
+				if (!e || !t) return a;
+				const r = n ? o.a : o.b,
 					s = Array.from(e).reduce((e, t) => e + t.charCodeAt(0), 0);
 				return Array.from({
 					length: t
@@ -5540,14 +5549,16 @@
 				return s
 			})), n.d(t, "c", (function() {
 				return i
-			})), n.d(t, "f", (function() {
-				return o
-			})), n.d(t, "a", (function() {
-				return a
 			})), n.d(t, "d", (function() {
+				return o
+			})), n.d(t, "g", (function() {
+				return a
+			})), n.d(t, "a", (function() {
 				return d
 			})), n.d(t, "e", (function() {
 				return c
+			})), n.d(t, "f", (function() {
+				return l
 			}));
 			var r = n("./src/reddit/selectors/telemetry.ts");
 			const s = e => ({
@@ -5562,19 +5573,37 @@
 					noun: e,
 					...s(t)
 				}),
-				o = () => e => ({
+				o = e => {
+					let {
+						noun: t,
+						action: n,
+						source: i,
+						paneName: o
+					} = e;
+					return e => ({
+						source: i,
+						action: n,
+						noun: t,
+						...s(e),
+						actionInfo: {
+							...r.d(e),
+							paneName: o
+						}
+					})
+				},
+				a = () => e => ({
 					source: "breadcrumb",
 					action: "click",
 					noun: "subreddit",
 					...s(e)
 				}),
-				a = () => e => ({
+				d = () => e => ({
 					source: "id_card",
 					action: "click",
 					noun: "mod_hub_nav",
 					...s(e)
 				}),
-				d = (e, t) => n => ({
+				c = (e, t) => n => ({
 					...s(n),
 					source: "modmanagement",
 					action: "click",
@@ -5584,7 +5613,7 @@
 						values: t
 					}
 				}),
-				c = (e, t, n) => r => ({
+				l = (e, t, n) => r => ({
 					...s(r),
 					source: "modmanagement",
 					action: "click",
@@ -5973,7 +6002,7 @@
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
 					experimentName: r.D
-				}) === r.Ld
+				}) === r.Kd
 			}
 		},
 		"./src/reddit/selectors/experiments/joinOptimizations.ts": function(e, t, n) {
@@ -6043,4 +6072,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.d6c417c699bb594381df.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.4f45b8c294885ad5275c.js.map

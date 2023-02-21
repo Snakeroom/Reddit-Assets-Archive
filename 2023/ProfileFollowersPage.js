@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.7d4cf8691d036598a5e1.js
-// Retrieved at 2/16/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.7cec3a631bdddab83bb4.js
+// Retrieved at 2/21/2023, 3:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -6246,6 +6246,7 @@
 				landingPageTitleFontH2: "_1Z7_zVV5u4BYuO1gRsLx90",
 				landingPageTitleFontH3: "_2yCXZ7SWFT2-XNs-FGlvBs",
 				header: "_3u9on6H92JkZNRumczPd67",
+				navColor: "_1DRfX_EIQDZ7qPhVmfJlcY",
 				subredditLink: "_3EIUrhztcaaHcqMILEsnBq",
 				subredditIcon: "_3uA1he5X3WeG6mpoUWdcXy"
 			}
@@ -6256,16 +6257,19 @@
 				r = s.n(n),
 				i = s("./src/reddit/pages/ModHub/Header.m.less"),
 				o = s.n(i),
-				a = s("./src/reddit/components/SubredditIcon/index.tsx"),
-				d = s("./src/reddit/controls/InternalLink/index.tsx");
+				a = s("./src/lib/classNames/index.ts"),
+				d = s("./src/reddit/components/SubredditIcon/index.tsx"),
+				l = s("./src/reddit/controls/InternalLink/index.tsx");
 			t.a = e => {
 				var t, s;
 				return r.a.createElement("div", {
-					className: o.a.header
-				}, r.a.createElement(a.b, {
+					className: Object(a.a)(e.isInShredditModNavExperiment && "bg-neutral-background border-b border-solid border-neutral-border-weak", o.a.header, {
+						[o.a.navColor]: !e.isInShredditModNavExperiment
+					})
+				}, r.a.createElement(d.b, {
 					className: o.a.subredditIcon,
 					subredditOrProfile: e.subredditOrProfile
-				}), r.a.createElement(d.default, {
+				}), r.a.createElement(l.default, {
 					className: o.a.subredditLink,
 					to: (null === (t = e.subredditOrProfile) || void 0 === t ? void 0 : t.url) || "",
 					onClick: e.onClick
@@ -6465,4 +6469,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.7d4cf8691d036598a5e1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.7cec3a631bdddab83bb4.js.map

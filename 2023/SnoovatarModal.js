@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SnoovatarModal.a01b73b171234b397d4a.js
-// Retrieved at 2/16/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SnoovatarModal.ae9e6d50d851278db5d7.js
+// Retrieved at 2/21/2023, 3:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SnoovatarModal"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, r) {
@@ -32,8 +32,8 @@
 				m = r("./src/reddit/selectors/experiments/econ/index.ts"),
 				O = r("./src/reddit/selectors/user.ts"),
 				b = r("./src/reddit/components/AvatarBuilder/index.m.less"),
-				v = r.n(b),
-				x = r("./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx");
+				x = r.n(b),
+				v = r("./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx");
 
 			function j() {
 				return (j = Object.assign || function(e) {
@@ -55,7 +55,7 @@
 					M = Object(n.useContext)(l.a),
 					S = Object(o.d)(),
 					g = () => S(Object(i.openLoginModal)()),
-					A = Object(x.a)();
+					A = Object(v.a)();
 				Object(n.useEffect)(() => {
 					b(u.r)
 				}, [b]), Object(n.useEffect)(() => {
@@ -74,8 +74,8 @@
 				}), [h, k, N, R]), I = Object(o.e)(e => !Object(O.S)(e) && Object(m.v)(e));
 				if (!_ || !f) return null;
 				if (I) return a.a.createElement("div", {
-					className: Object(c.a)(v.a.container, {
-						[v.a.containerExp]: M
+					className: Object(c.a)(x.a.container, {
+						[x.a.containerExp]: M
 					})
 				}, a.a.createElement(s.f, {
 					openLogin: g,
@@ -92,9 +92,9 @@
 				};
 				return a.a.createElement("div", {
 					className: Object(c.a)({
-						[v.a.container]: !t,
-						[v.a.snoovatarModalBuilderV2]: t,
-						[v.a.containerExp]: M
+						[x.a.container]: !t,
+						[x.a.snoovatarModalBuilderV2]: t,
+						[x.a.containerExp]: M
 					})
 				}, a.a.createElement(s.a, j({}, T, {
 					navState: C,
@@ -108,7 +108,7 @@
 		"./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return v
+				return x
 			}));
 			var s = r("./src/config.ts"),
 				n = r("./src/lib/env/index.ts"),
@@ -130,27 +130,27 @@
 					SNOOVATAR_BASE_URL: s.a.snoovatarUrl,
 					SNOOVATAR_API_URL: `${s.a.snoovatarUrl}/api`
 				},
-				v = () => {
+				x = () => {
 					const e = Object(o.e)(u.a),
 						t = Object(o.e)(d.n),
 						r = Object(o.e)(l.b),
 						n = Object(o.e)(e => e.user.session),
-						v = n ? n.accessToken : "",
-						x = n ? new Date(n.expires).getTime() : 1,
+						x = n ? n.accessToken : "",
+						v = n ? new Date(n.expires).getTime() : 1,
 						j = Object(o.e)(m.fb),
 						_ = Object(i.a)(),
 						f = O ? c.a.Rinkeby : c.a.Ethereum,
 						E = Object(a.useMemo)(() => ({
 							headers: {
-								Authorization: `Bearer ${v}`
+								Authorization: `Bearer ${x}`
 							},
-							expiration: x
-						}), [v, x]),
+							expiration: v
+						}), [x, v]),
 						M = {
 							...b,
 							STRIPE_API_KEY: s.a.stripe.apiKey(e),
 							STRIPE_API_VERSION: s.a.stripe.apiVersion(t),
-							ACCESS_TOKEN: v,
+							ACCESS_TOKEN: x,
 							BLOCKCHAIN_PROVIDER: f,
 							OVERRIDES: r ? {
 								NO_VAULT: !0
@@ -233,10 +233,10 @@
 			const o = e => {
 					return !(Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: s.ue
-					}) === s.Ld)
+						experimentName: s.te
+					}) === s.Kd)
 				},
-				c = Object(a.a)(s.ve)
+				c = Object(a.a)(s.ue)
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, r) {
 			"use strict";
@@ -250,4 +250,4 @@
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.a01b73b171234b397d4a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.ae9e6d50d851278db5d7.js.map

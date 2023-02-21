@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.066358176cb2579fbf98.js
-// Retrieved at 2/16/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.e7aea6dd0efad104dacc.js
+// Retrieved at 2/21/2023, 3:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -799,9 +799,9 @@
 							r = Object(me.Q)(s(), {
 								identifier: T.belongsTo
 							});
-						if (r && (e => m.rf.Redirect === Object(se.b)(e, {
+						if (r && (e => m.qf.Redirect === Object(se.b)(e, {
 								experimentEligibilitySelector: ie,
-								experimentName: m.nf
+								experimentName: m.mf
 							}))(s())) return void t(Object(o.c)(r.url));
 						if (T.belongsTo.type !== q.a.SUBREDDIT || T.isSponsored) {
 							if (T.belongsTo.type === q.a.PROFILE) {
@@ -892,7 +892,7 @@
 								t(h({
 									categoryId: e,
 									rank: n + 1
-								})), Object(u.ib)(Object(p.c)(s()))
+								})), Object(u.jb)(Object(p.c)(s()))
 							})(e))))
 						}
 					} else t(M.n({
@@ -7601,7 +7601,7 @@
 				return Object(o.useEffect)(() => {
 					var e;
 					const s = null !== (e = Object(Ct.B)("should-show-comment-tab-tooltip")) && void 0 !== e ? e : 2;
-					t(Boolean(s)), 2 === s ? Object(Ct.Bb)("should-show-comment-tab-tooltip", 1) : 1 === s && Object(Ct.Bb)("should-show-comment-tab-tooltip", !1)
+					t(Boolean(s)), 2 === s ? Object(Ct.Cb)("should-show-comment-tab-tooltip", 1) : 1 === s && Object(Ct.Cb)("should-show-comment-tab-tooltip", !1)
 				}, []), {
 					get shouldShowCommentTabTooltip() {
 						return e
@@ -8521,7 +8521,7 @@
 				return Object(Ln.c)(e, {
 					experimentEligibilitySelector: Ln.a,
 					experimentName: Tn.A
-				}) === Tn.Ld
+				}) === Tn.Kd
 			};
 			var Fn = s("./src/reddit/selectors/searchQueryId.ts"),
 				Mn = s("./src/reddit/icons/svgs/Close/index.tsx"),
@@ -8584,10 +8584,10 @@
 					experimentName: Tn.Hc,
 					expEventOverride: !1
 				}), e => !!e),
-				Zn = e => Object(Qn.a)(e, Tn.Ce),
+				Zn = e => Object(Qn.a)(e, Tn.Be),
 				$n = Object(Y.a)(e => Object(Ln.c)(e, {
 					experimentEligibilitySelector: Ln.a,
-					experimentName: Tn.Ce,
+					experimentName: Tn.Be,
 					expEventOverride: !1
 				}), e => !!e);
 			var er, tr = s("./src/reddit/components/SearchBanner/index.m.less"),
@@ -8806,7 +8806,7 @@
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: n.D
-				}) === n.Ld
+				}) === n.Kd
 			}
 		},
 		"./src/reddit/selectors/experiments/commentBox.ts": function(e, t, s) {
@@ -8858,7 +8858,7 @@
 				o = s("./node_modules/reselect/es/index.js");
 			const a = Object(o.a)(e => Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: n.uf
+				experimentName: n.tf
 			}), e => ({
 				isSubEnlarged: e === n.Jf.Variant1 || e === n.Jf.Variant3,
 				withCommunityDescription: e === n.Jf.Variant2 || e === n.Jf.Variant3
@@ -8938,4 +8938,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.066358176cb2579fbf98.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.e7aea6dd0efad104dacc.js.map

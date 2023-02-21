@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.fe5a4067b0ee7bb4c2ec.js
-// Retrieved at 2/16/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.17b59c6f9cb21cd66386.js
+// Retrieved at 2/21/2023, 3:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -432,7 +432,7 @@
 				V = n("./src/lib/initializeClient/installReducer.ts"),
 				q = n("./src/reddit/reducers/features/marketplace/index.ts"),
 				U = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const H = Object(U.a)(b.Qd);
+			const H = Object(U.a)(b.Pd);
 			var W = n("./src/redditGQL/types.ts");
 			Object(V.a)({
 				features: {
@@ -3168,11 +3168,11 @@
 						className: ne.a.subtitle
 					}, function(e) {
 						switch (e) {
-							case ke.Te.Ads:
+							case ke.Se.Ads:
 								return In._("Tell us about yourself to improve your recommendations and ads.", null, {
 									hk: "tlFdQ"
 								});
-							case ke.Te.AdsUpdateSettings:
+							case ke.Se.AdsUpdateSettings:
 								return In._("Tell us about yourself to improve your recommendations and ads. You can update this any time in settings.", null, {
 									hk: "CbUFt"
 								});
@@ -5068,10 +5068,10 @@
 			const o = e => {
 					return !(Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.ue
-					}) === s.Ld)
+						experimentName: s.te
+					}) === s.Kd)
 				},
-				i = Object(a.a)(s.ve)
+				i = Object(a.a)(s.ue)
 		},
 		"./src/redditGQL/operations/Frontpage.json": function(e) {
 			e.exports = JSON.parse('{"id":"5c932f66f7be"}')
@@ -5105,4 +5105,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.fe5a4067b0ee7bb4c2ec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.17b59c6f9cb21cd66386.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.288b1d3461552562a9ae.js
-// Retrieved at 2/16/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.a6654fa674529414dc8e.js
+// Retrieved at 2/21/2023, 3:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./src/reddit/components/FrontpageSidebar/index.tsx": function(e, t, n) {
@@ -185,13 +185,13 @@
 				T = n("./src/reddit/components/SidebarAd/ListingPageSidebarAd.tsx"),
 				A = n("./src/reddit/components/SidebarContainer/index.tsx"),
 				L = n("./src/reddit/components/SidebarStickyBottom/index.tsx"),
-				B = n("./node_modules/lodash/sampleSize.js"),
-				R = n.n(B),
+				R = n("./node_modules/lodash/sampleSize.js"),
+				B = n.n(R),
 				W = n("./node_modules/request-idle-callback/index.js"),
 				U = n("./src/lib/constants/index.ts"),
 				I = n("./src/reddit/components/SubredditIcon/index.tsx"),
-				D = n("./src/reddit/constants/localStorage.ts"),
-				K = n("./src/reddit/contexts/ApiContext.tsx"),
+				K = n("./src/reddit/constants/localStorage.ts"),
+				D = n("./src/reddit/contexts/ApiContext.tsx"),
 				Q = n("./src/reddit/featureFlags/component.tsx"),
 				G = n("./src/reddit/helpers/localStorage/index.ts"),
 				H = n("./src/reddit/helpers/name/index.ts"),
@@ -215,13 +215,13 @@
 					}
 				}
 				async getSubredditForAdoption() {
-					let e = te.cachedData || Object(G.B)(D.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
+					let e = te.cachedData || Object(G.B)(K.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
 					if (!e || Date.now() - e.fetchedAt > $) {
 						const t = await X(this.props.apiContext());
 						t.ok && (e = {
 							subreddits: t.body.data.subreddits.map(e => e.name),
 							fetchedAt: Date.now()
-						}, Object(G.Bb)(D.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
+						}, Object(G.Cb)(K.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
 					}
 					return te.cachedData = e, e ? e.subreddits : []
 				}
@@ -229,7 +229,7 @@
 					Object(W.requestIdleCallback)(async () => {
 						const e = await this.getSubredditForAdoption();
 						this.setState({
-							subredditNames: R()(e, Y)
+							subredditNames: B()(e, Y)
 						})
 					})
 				}
@@ -260,7 +260,7 @@
 				}
 			}
 			te.cachedData = null;
-			var ne = Object(Q.a)("srAdoptionWeek", Object(K.b)(te)),
+			var ne = Object(Q.a)("srAdoptionWeek", Object(D.b)(te)),
 				se = n("./src/reddit/actions/post.ts"),
 				ae = n("./src/reddit/components/MiniPost/index.tsx"),
 				re = n("./src/reddit/components/Widgets/Base/index.tsx");
@@ -607,24 +607,24 @@
 					}))))
 				}),
 				Le = n("./src/reddit/constants/experiments.ts"),
-				Be = n("./src/reddit/helpers/chooseVariant/index.ts"),
-				Re = n("./src/reddit/selectors/user.ts");
+				Re = n("./src/reddit/helpers/chooseVariant/index.ts"),
+				Be = n("./src/reddit/selectors/user.ts");
 			var We = n("./src/reddit/selectors/seo/linksModule.ts"),
 				Ue = n("./src/reddit/helpers/createBannerProperties/index.ts");
 			const Ie = Object(o.c)({
-					isLoggedIn: Re.R,
-					currentUser: Re.m,
+					isLoggedIn: Be.R,
+					currentUser: Be.m,
 					frontpageLinks: We.b,
 					shouldShowTopicsWidget: e => (function(e) {
-						return Object(Be.c)(e, {
-							experimentEligibilitySelector: Re.S,
+						return Object(Re.c)(e, {
+							experimentEligibilitySelector: Be.S,
 							experimentName: Le.Oc
-						}) === Le.Ld
+						}) === Le.Kd
 					})(e),
 					isNavbarLikeMwebEnabled: i.a
 				}),
-				De = e => !(!e.currentUser || !e.currentUser.showRecentPosts),
-				Ke = e => !(!e.currentUser || e.currentUser.isGold);
+				Ke = e => !(!e.currentUser || !e.currentUser.showRecentPosts),
+				De = e => !(!e.currentUser || e.currentUser.isGold);
 			class Qe extends a.a.Component {
 				constructor(e) {
 					super(e), this.componentDidMount = async () => {
@@ -655,9 +655,9 @@
 						position: Ue.a.FIRST,
 						sizes: U.j,
 						placementIndex: e++
-					}), Ke(this.props) && a.a.createElement(k, null), i && a.a.createElement(m.a, null, a.a.createElement(Ae, null)), s && a.a.createElement(m.a, null, a.a.createElement(d.a, {
+					}), De(this.props) && a.a.createElement(k, null), i && a.a.createElement(m.a, null, a.a.createElement(Ae, null)), s && a.a.createElement(m.a, null, a.a.createElement(d.a, {
 						listingName: r
-					})), De(this.props) && a.a.createElement(xe, null), n && l && a.a.createElement(m.a, null, a.a.createElement(P, {
+					})), Ke(this.props) && a.a.createElement(xe, null), n && l && a.a.createElement(m.a, null, a.a.createElement(P, {
 						links: n
 					})), a.a.createElement(L.a, {
 						adComponent: a.a.createElement(T.a, {
@@ -915,4 +915,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.288b1d3461552562a9ae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.a6654fa674529414dc8e.js.map

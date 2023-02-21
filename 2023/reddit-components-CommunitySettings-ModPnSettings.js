@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.ebde7c3efb2560351c45.js
-// Retrieved at 1/19/2023, 4:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.a363f10b22bd3c1c0121.js
+// Retrieved at 2/21/2023, 3:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CommunitySettings-ModPnSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -545,7 +545,8 @@
 				PageTitle: "_3rnK1gNGg1hiVaiRd9Hidl",
 				pageTitle: "_3rnK1gNGg1hiVaiRd9Hidl",
 				TopBar: "_2YY5qLRbI5q6_0JQVKiGt_",
-				topBar: "_2YY5qLRbI5q6_0JQVKiGt_"
+				topBar: "_2YY5qLRbI5q6_0JQVKiGt_",
+				default: "_8_dE1DV6_ih2BqmmjMMZr"
 			}
 		},
 		"./src/reddit/components/ModHub/StyledComponents/index.tsx": function(e, t, n) {
@@ -682,4 +683,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.ebde7c3efb2560351c45.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.a363f10b22bd3c1c0121.js.map

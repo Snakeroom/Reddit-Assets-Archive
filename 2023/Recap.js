@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Recap.cbdc8a7e2b8665de7e69.js
-// Retrieved at 2/16/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Recap.af614377794e1c95e6d4.js
+// Retrieved at 2/21/2023, 3:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Recap", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, a, t) {
@@ -63,7 +63,7 @@
 			t.r(a), t.d(a, "initializeServiceWorkerChannel", (function() {
 				return T
 			})), t.d(a, "requestNotificationsPermissions", (function() {
-				return B
+				return L
 			})), t.d(a, "subscribeForPNs", (function() {
 				return F
 			})), t.d(a, "unsubscribeFromPNs", (function() {
@@ -99,13 +99,13 @@
 			const S = e => Object(C.c)(e, {
 				experimentEligibilitySelector: N.S,
 				experimentName: k.tb
-			}) === k.Ld;
+			}) === k.Kd;
 			var y = t("./src/reddit/selectors/experiments/delayDnPermission.ts"),
 				I = t("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts");
 			const x = e => Object(C.c)(e, {
 				experimentName: k.Yb,
 				experimentEligibilitySelector: C.a
-			}) === k.Ld;
+			}) === k.Kd;
 			var w = t("./src/reddit/selectors/meta.ts");
 			let R = !1;
 			const T = async (e, a) => {
@@ -116,7 +116,7 @@
 				navigator.serviceWorker.addEventListener("message", r => {
 					const i = r.data,
 						c = i.command || i.type;
-					if ("registerWithServiceWorker" === c) L(e);
+					if ("registerWithServiceWorker" === c) B(e);
 					else if (c === v.a && t) {
 						const e = s()(i, ["command"]);
 						a(Object(p.f)(e))
@@ -124,13 +124,13 @@
 						const e = Object(h.a)(i.data.href);
 						e && e.pathname && a(Object(m.c)(e.pathname))
 					}
-				}), L(e)
-			}, L = e => {
+				}), B(e)
+			}, B = e => {
 				navigator.serviceWorker.controller && navigator.serviceWorker.controller.postMessage({
 					command: "registerClient",
 					v2EventBoilerPlate: E.c(e)
 				})
-			}, B = function(e, a) {
+			}, L = function(e, a) {
 				let t = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : () => {};
 				return async (r, i, s) => {
 					const n = i(),
@@ -196,7 +196,7 @@
 				if (Object(u.a)(r) === o.d.NotificationsSupported) switch (Object(l.a)()) {
 					case o.a.Default:
 					case o.a.Closed:
-						await a(B(!0, !0));
+						await a(L(!0, !0));
 						break;
 					case o.a.Denied:
 						a(Object(b.h)(e))
@@ -694,8 +694,8 @@
 				w = "PersonalizedYearInReviewSubredditCard",
 				R = "PersonalizedYearInReviewSubredditListCard",
 				T = "PersonalizedYearInReviewSingleStatSubredditListCard",
-				L = "PersonalizedYearInReviewAvatarCard",
-				B = "PersonalizedYearInReviewTopicListCard",
+				B = "PersonalizedYearInReviewAvatarCard",
+				L = "PersonalizedYearInReviewTopicListCard",
 				F = "PersonalizedYearInReviewRPlaceTileListCard",
 				A = "PersonalizedYearInReviewSingleTopicCard",
 				D = e => e.__typename === x;
@@ -768,8 +768,8 @@
 					src: `${P.a.assetPath}/img/recap/InfiniteLoad_4.gif`
 				})),
 				q = t("./src/reddit/pages/Recap/Components/Pager/index.m.less"),
-				Q = t.n(q);
-			var K = e => {
+				K = t.n(q);
+			var Q = e => {
 					let {
 						cards: a,
 						cardIndex: t,
@@ -783,10 +783,10 @@
 						d = o + 6,
 						m = 6 * s < a.length;
 					return c.a.createElement("div", {
-						className: Q.a.pager
+						className: K.a.pager
 					}, l && c.a.createElement("button", {
-						className: Object(p.a)(Q.a.nextDot, {
-							[Q.a.black]: !!r
+						className: Object(p.a)(K.a.nextDot, {
+							[K.a.black]: !!r
 						}),
 						onClick: () => {
 							i(o - 1)
@@ -795,9 +795,9 @@
 						title: `Card #${o}`
 					}), a.slice(o, d).map((e, a) => c.a.createElement("button", {
 						key: a,
-						className: Object(p.a)(Q.a.progressDot, {
-							[Q.a.active]: a === n,
-							[Q.a.black]: !!r
+						className: Object(p.a)(K.a.progressDot, {
+							[K.a.active]: a === n,
+							[K.a.black]: !!r
 						}),
 						onClick: () => {
 							i(a + o)
@@ -805,8 +805,8 @@
 						tabIndex: 0,
 						title: `Card #${a+o+1}`
 					})), m && c.a.createElement("button", {
-						className: Object(p.a)(Q.a.nextDot, {
-							[Q.a.black]: !!r
+						className: Object(p.a)(K.a.nextDot, {
+							[K.a.black]: !!r
 						}),
 						onClick: () => {
 							i(d)
@@ -1398,7 +1398,7 @@
 					className: me.a.endText
 				}, l))
 			};
-			var Le = e => {
+			var Be = e => {
 				let {
 					card: {
 						title: a,
@@ -1473,7 +1473,7 @@
 					className: me.a.externalLinkButton
 				}))))
 			};
-			var Be = e => {
+			var Le = e => {
 					let {
 						card: {
 							title: a,
@@ -1654,12 +1654,12 @@
 					w = Object(b.e)(e => e.recap.shouldHideAbilityCardUsername),
 					R = Object(b.e)(e => e.recap.shouldHideAbilityCardAvatar),
 					T = Object(b.e)(e => e.recap.shareCardWasOpened),
-					L = l === r.WHITE || l === r.YELLOW,
-					B = () => {
+					B = l === r.WHITE || l === r.YELLOW,
+					L = () => {
 						k || (C(Object(g.b)()), !T && N(Object(O.i)()))
 					};
 				return Object(s.useEffect)(() => {
-					!_ && T && B()
+					!_ && T && L()
 				}, [_]), c.a.createElement(oe, {
 					title: a,
 					subtitle: t,
@@ -1686,7 +1686,7 @@
 						[me.a.unflipped]: !T,
 						[me.a.forSharing]: k
 					}),
-					onClick: B
+					onClick: L
 				}, c.a.createElement("div", {
 					className: Object(p.a)(me.a.frontCard, {
 						[me.a.selected]: _
@@ -1849,7 +1849,7 @@
 					})
 				}, Pe._("{=Hide username}", [Pe._param("=Hide username", c.a.createElement("div", {
 					className: Object(p.a)(me.a.text, {
-						[me.a.black]: L
+						[me.a.black]: B
 					})
 				}, Pe._("Hide username", null, {
 					hk: "2Q5Y03"
@@ -1869,7 +1869,7 @@
 					})
 				}, Pe._("{=Hide avatar}", [Pe._param("=Hide avatar", c.a.createElement("div", {
 					className: Object(p.a)(me.a.text, {
-						[me.a.black]: L
+						[me.a.black]: B
 					})
 				}, Pe._("Hide avatar", null, {
 					hk: "2395yu"
@@ -2145,8 +2145,8 @@
 				}))))))
 			};
 			const {
-				fbt: Qe
-			} = t("./node_modules/fbt/lib/FbtPublic.js"), Ke = {
+				fbt: Ke
+			} = t("./node_modules/fbt/lib/FbtPublic.js"), Qe = {
 				[r.RED]: "#ff4500",
 				[r.YELLOW]: "#fff8b8",
 				[r.BLACK]: "#000",
@@ -2197,7 +2197,7 @@
 						card: a,
 						isSelected: t,
 						isForSharing: r
-					}) : (e => e.__typename === I)(a) ? c.a.createElement(Le, {
+					}) : (e => e.__typename === I)(a) ? c.a.createElement(Be, {
 						card: a,
 						isSelected: t,
 						isForSharing: r
@@ -2209,15 +2209,15 @@
 						card: a,
 						isSelected: t,
 						isForSharing: r
-					}) : (e => e.__typename === L)(a) ? c.a.createElement(ue, {
+					}) : (e => e.__typename === B)(a) ? c.a.createElement(ue, {
 						card: a,
 						isSelected: t,
 						isForSharing: r
-					}) : (e => e.__typename === B)(a) ? c.a.createElement(qe, {
+					}) : (e => e.__typename === L)(a) ? c.a.createElement(qe, {
 						card: a,
 						isSelected: t,
 						isForSharing: r
-					}) : (e => e.__typename === F)(a) ? c.a.createElement(Be, {
+					}) : (e => e.__typename === F)(a) ? c.a.createElement(Le, {
 						card: a,
 						isSelected: t,
 						isForSharing: r
@@ -2412,8 +2412,8 @@
 						y = Object(b.e)(e => e.recap.cards),
 						[I, x] = Object(s.useState)(!1),
 						[w, R] = Object(s.useState)(!0),
-						[T, L] = Object(s.useState)(!1),
-						[B, F] = Object(s.useState)(0),
+						[T, B] = Object(s.useState)(!1),
+						[L, F] = Object(s.useState)(0),
 						A = Object(b.e)(e => Object(ca.b)(h.a.SNOOVATAR_MODAL)(e)),
 						P = Object(b.e)(na.m),
 						W = y.length && D(y[d]),
@@ -2427,12 +2427,12 @@
 							Promise.all(e.map(e => new Promise(a => {
 								const t = new Image;
 								t.onload = () => a(), t.src = e
-							}))).then(() => L(!0))
+							}))).then(() => B(!0))
 						}, [y]);
 					Object(s.useEffect)(() => {
 						U()
 					}, [U]), Object(s.useEffect)(() => {
-						Object(g.d)(!0), P && Object(_.Kb)(null == P ? void 0 : P.id)
+						Object(g.d)(!0), P && Object(_.Mb)(null == P ? void 0 : P.id)
 					}, [A, P]), Object(s.useEffect)(() => {
 						a(Object(O.r)()), H()
 					}, [H, a]), Object(s.useEffect)(() => {
@@ -2463,14 +2463,14 @@
 								}
 							}
 						}, [y, d, i, E, N, W]),
-						Q = c.a.useCallback(async () => {
+						K = c.a.useCallback(async () => {
 							let e = document.getElementById("shareId");
 							if (W && (e = document.getElementById("abilityCardShareId")), e) {
 								x(!0);
 								const a = await (() => t.e(4).then(t.bind(null, "./node_modules/html-to-image/es/index.js")))(),
 									r = await a.getFontEmbedCSS(e),
 									i = await a.toPng(e, {
-										backgroundColor: W ? "transparent" : Ke[y[d].cardTemplateColor],
+										backgroundColor: W ? "transparent" : Qe[y[d].cardTemplateColor],
 										canvasHeight: W ? 486 : 540,
 										canvasWidth: W ? 340 : 960,
 										style: {
@@ -2499,8 +2499,8 @@
 							[oa.a.animated]: w
 						}),
 						style: {
-							transform: `translateY(${-d*B}px)`,
-							backgroundColor: Ke[y[d].cardTemplateColor]
+							transform: `translateY(${-d*L}px)`,
+							backgroundColor: Qe[y[d].cardTemplateColor]
 						}
 					}, y.map((e, a) => c.a.createElement("div", {
 						className: oa.a.card,
@@ -2523,7 +2523,7 @@
 					}), d > 0 && c.a.createElement(ma, {
 						isWhite: y[d].cardTemplateColor === r.WHITE,
 						onClick: n
-					}), c.a.createElement(K, {
+					}), c.a.createElement(Q, {
 						cards: y,
 						cardIndex: d,
 						isBlack: !!M,
@@ -2536,10 +2536,10 @@
 						onOverlayClick: n,
 						withOverlay: !0,
 						card: y[d],
-						cardTemplateColor: Ke[y[d].cardTemplateColor],
+						cardTemplateColor: Qe[y[d].cardTemplateColor],
 						isAbilityCard: !!W,
 						isDownloading: I,
-						onDownloadCard: Q,
+						onDownloadCard: K,
 						onClose: n,
 						overlayClassName: oa.a.shareModal
 					})) : null)
@@ -2557,4 +2557,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Recap.cbdc8a7e2b8665de7e69.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Recap.af614377794e1c95e6d4.js.map
