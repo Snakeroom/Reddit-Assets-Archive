@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UserAchievementFlair.4a24aa385214a2d25f2f.js
-// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UserAchievementFlair.bb12705b9b02326a54c6.js
+// Retrieved at 2/21/2023, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UserAchievementFlair"], {
 		"./src/reddit/actions/gold/powerups.ts": function(e, t, r) {
@@ -78,7 +78,7 @@
 						container: N,
 						isScrollGradientVisible: x,
 						calculateGradientVisibility: g
-					} = Object(u.b)(!1);
+					} = Object(u.a)(!1);
 				Object(a.useEffect)(() => {
 					g()
 				}, [g]);
@@ -263,8 +263,6 @@
 		"./src/reddit/hooks/useScrollGradient.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return s
-			})), r.d(t, "b", (function() {
 				return c
 			}));
 			var s, a = r("./node_modules/react/index.js");
@@ -295,4 +293,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.4a24aa385214a2d25f2f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.bb12705b9b02326a54c6.js.map

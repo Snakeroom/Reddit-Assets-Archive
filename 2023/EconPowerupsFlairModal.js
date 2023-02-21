@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.16e5e362a978730be7bb.js
-// Retrieved at 1/18/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.b8bfde66e0a7738d348a.js
+// Retrieved at 2/21/2023, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsFlairModal", "AchievementsActions"], {
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, s) {
@@ -753,7 +753,7 @@
 						container: t,
 						isScrollGradientVisible: s,
 						calculateGradientVisibility: r
-					} = Object(u.b)(!0);
+					} = Object(u.a)(!0);
 				Object(a.useLayoutEffect)(() => {
 					r()
 				});
@@ -932,8 +932,6 @@
 		"./src/reddit/hooks/useScrollGradient.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return r
-			})), s.d(t, "b", (function() {
 				return a
 			}));
 			var r, i = s("./node_modules/react/index.js");
@@ -1000,4 +998,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.16e5e362a978730be7bb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.b8bfde66e0a7738d348a.js.map

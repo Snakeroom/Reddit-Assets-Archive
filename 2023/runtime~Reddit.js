@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.db519b4ff0d8dd89a9d3.js
-// Retrieved at 2/21/2023, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.7a76d31e0b1e0a7d7274.js
+// Retrieved at 2/21/2023, 11:50:05 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -837,7 +837,7 @@
 					webvitals: "31d6cfe0d16ae931b73c",
 					SignupUpsell: "2607db5f073f257e8d06",
 					gildActions: "443d30a5948f2bb2014b",
-					AuthorHovercard: "b3fcbb9e63e602008b96",
+					AuthorHovercard: "c2abb84bf81d615f88d5",
 					AwardTooltip: "8fe29480dad0c350da5d",
 					ReportFlow: "fa6016d3781ab0850880",
 					CryptoVault: "2b2267bf1cc018c8b776",
@@ -1430,7 +1430,7 @@
 						EconHelperActions: "d0c512dfee12d35b3c8b",
 						EconManagement: "97e857200531c6a49622",
 						EconManagement2: "66c3bd41f3bc09f9c818",
-						EconPowerupsFlairModal: "16e5e362a978730be7bb",
+						EconPowerupsFlairModal: "b8bfde66e0a7738d348a",
 						EditCommunityDescriptionModal: "405163c4e2e23a5773ed",
 						EmailCollectionBanner: "9a86bde1c06397e656c3",
 						EmailVerificationModals: "4e112765327b7b055760",
@@ -1549,7 +1549,7 @@
 						webvitals: "f626f135e0d2366368b7",
 						SignupUpsell: "21ddb8a111abc84d9bfb",
 						gildActions: "c5f47463b18802bf5a4e",
-						AuthorHovercard: "95e4b9764c887d668151",
+						AuthorHovercard: "8857037520e708226979",
 						AwardTooltip: "81d6c4023397a84979bc",
 						ReportFlow: "7969cdae75f4d1f2ebd3",
 						CryptoVault: "17b3d9f364774d6e2f53",
@@ -1561,7 +1561,7 @@
 						ReportFlowNew: "bfc3209f0f27d48124e0",
 						RichTextJsonEmoteTooltip: "dde3e019d5e4f86dc9d2",
 						SubredditMentionWithIcon: "2e578062bba539c978b8",
-						UserAchievementFlair: "4a24aa385214a2d25f2f",
+						UserAchievementFlair: "bb12705b9b02326a54c6",
 						"reddit-components-ModQueueActivitySummaryCards": "647a1d68dd1ef809c29a",
 						"reddit-components-ModQueueActivitySummaryCards-ModActivityPreview": "f9f2c9d6320c537efbd1",
 						"reddit-components-ClassicPost": "45007ed67adba4018956",
@@ -1772,4 +1772,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.db519b4ff0d8dd89a9d3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.7a76d31e0b1e0a7d7274.js.map
