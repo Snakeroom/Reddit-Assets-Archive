@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.09aa176eca762227efd2.js
-// Retrieved at 2/21/2023, 3:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.0703cd927d52333d36b3.js
+// Retrieved at 2/22/2023, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, n) {
@@ -2927,7 +2927,7 @@
 					const {
 						isAnonymous: e
 					} = this.props;
-					Object(p.tb)(e)
+					Object(p.sb)(e)
 				}
 				componentDidMount() {
 					document.addEventListener("keydown", this.handleEscapeKey);
@@ -3070,7 +3070,7 @@
 						})
 					})),
 					setIsAnonymous: t => {
-						e(Object(w.setIsAnonymous)(t)), Object(p.tb)(t)
+						e(Object(w.setIsAnonymous)(t)), Object(p.sb)(t)
 					},
 					subredditAboutRequested: t => e(Object(_.u)(t)),
 					subredditLockedCoinsRequested: (t, n) => e(Object(x.a)(t, n)),
@@ -5914,4 +5914,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.09aa176eca762227efd2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.0703cd927d52333d36b3.js.map

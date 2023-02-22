@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.1f84d781a70e2ae2775e.js
-// Retrieved at 2/21/2023, 3:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.7b47abe8dcba4a97ba29.js
+// Retrieved at 2/22/2023, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement"], {
 		"./src/reddit/actions/flairManagement/constants.ts": function(e, t, s) {
@@ -301,9 +301,9 @@
 		"./src/reddit/components/ModHub/flairs/FlairManagement/connector.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return u
+				return c
 			})), s.d(t, "a", (function() {
-				return h
+				return p
 			}));
 			var a = s("./src/reddit/actions/emoji.ts"),
 				n = s("./src/reddit/actions/flairManagement/index.ts"),
@@ -311,34 +311,14 @@
 				i = s("./src/reddit/featureFlags/index.ts"),
 				r = s("./src/reddit/selectors/activeModalId.ts"),
 				l = s("./src/reddit/selectors/emojis.ts"),
-				d = s("./src/reddit/selectors/experiments/shredditModNav.ts"),
-				c = s("./src/reddit/selectors/moderatorPermissions.ts"),
-				p = s("./src/reddit/selectors/platform.ts"),
-				m = s("./src/reddit/selectors/subreddit.ts");
-			const u = {
+				d = s("./src/reddit/selectors/platform.ts");
+			const c = {
 					activeModalId: r.a,
-					allowNavigationCallback: p.a,
+					allowNavigationCallback: d.a,
 					areFlairRestrictionsEnabled: i.d.flairRestrictions,
-					subredditEmojiData: l.f,
-					isInShredditModNavExperiment: (e, t) => {
-						let {
-							subredditId: s
-						} = t;
-						const a = Object(c.n)(e, {
-							subredditId: s
-						});
-						return Object(d.a)(e, !!a)
-					},
-					subredditName: (e, t) => {
-						let {
-							subredditId: s
-						} = t;
-						return Object(m.h)(e, {
-							subredditId: s
-						})
-					}
+					subredditEmojiData: l.f
 				},
-				h = (e, t) => {
+				p = (e, t) => {
 					let {
 						subredditId: s
 					} = t;
@@ -355,11 +335,7 @@
 			e.exports = {
 				container: "_37KbqgukAyMf3s-j7AnBWR",
 				topBar: "aF7EPRLqx7OlHhB0WLt-D",
-				fixed: "tY4a5ojhWBEwI7jpcOpyL",
-				default: "_3r_owJcn5iQ3if-PQyfAKq",
-				defaultColor: "_3ujrhQFER4XDkr7pMYk-Uh",
 				contentContainer: "_2HFh2ax8D_Jy7s1JHIHvUf",
-				newModNav: "tP6M13BkfW0UJY7_ME-Ao",
 				dragItem: "_3Yi1TDHslArM_O4ZmGiRCs",
 				dragIcon: "slRmsO8r_7d7nV3JEKKi1",
 				disabledBanner: "_2zhcnoXRRItZEJVXtE1Dez",
@@ -377,126 +353,124 @@
 			var a = s("./src/config.ts"),
 				n = s("./node_modules/react/index.js"),
 				o = s.n(n),
-				i = s("./src/lib/classNames/index.ts"),
-				r = s("./src/lib/constants/index.ts"),
-				l = s("./src/reddit/components/BlockNavigation/index.tsx"),
-				d = s("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
-				c = s("./src/reddit/components/ModHub/InfoLink/index.tsx"),
-				p = s("./src/reddit/components/ModHub/InfoTooltip/index.tsx"),
-				m = s("./src/reddit/components/ModHub/NewModNav/PageLinks.tsx"),
-				u = s("./src/reddit/components/ModHub/StyledComponents/index.tsx"),
-				h = s("./src/reddit/components/StructuredStyles/DragItem/index.tsx"),
-				g = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				b = s("./src/reddit/constants/flair.ts"),
-				f = s("./src/reddit/controls/Button/index.tsx"),
-				C = s("./src/reddit/controls/Sortable/index.tsx"),
-				E = s("./src/reddit/helpers/flair.ts"),
-				v = s("./src/reddit/models/Flair/index.ts"),
-				x = s("./src/reddit/selectors/telemetry.ts");
-			const T = e => e === v.d.LinkFlair ? "postflairmanagement" : "userflairmanagement",
-				S = e => ({
-					...x.o(e),
-					subreddit: x.lb(e),
-					userSubreddit: x.ub(e)
+				i = s("./src/reddit/components/BlockNavigation/index.tsx"),
+				r = s("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
+				l = s("./src/reddit/components/ModHub/InfoLink/index.tsx"),
+				d = s("./src/reddit/components/ModHub/InfoTooltip/index.tsx"),
+				c = s("./src/reddit/components/ModHub/StyledComponents/index.tsx"),
+				p = s("./src/reddit/components/StructuredStyles/DragItem/index.tsx"),
+				m = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				u = s("./src/reddit/constants/flair.ts"),
+				h = s("./src/reddit/controls/Button/index.tsx"),
+				g = s("./src/reddit/controls/Sortable/index.tsx"),
+				b = s("./src/reddit/helpers/flair.ts"),
+				f = s("./src/reddit/models/Flair/index.ts"),
+				C = s("./src/reddit/selectors/telemetry.ts");
+			const E = e => e === f.d.LinkFlair ? "postflairmanagement" : "userflairmanagement",
+				v = e => ({
+					...C.o(e),
+					subreddit: C.lb(e),
+					userSubreddit: C.ub(e)
 				}),
-				y = e => t => s => ({
-					...S(s),
-					source: T(t),
+				x = e => t => s => ({
+					...v(s),
+					source: E(t),
 					action: "click",
 					noun: e
 				}),
-				k = e => (t, s) => a => ({
-					...S(a),
-					source: T(t),
+				T = e => (t, s) => a => ({
+					...v(a),
+					source: E(t),
 					action: "toggle",
 					noun: e,
-					actionInfo: x.d(a, {
+					actionInfo: C.d(a, {
 						settingValue: s ? "on" : "off"
 					})
 				}),
-				_ = y("remove"),
-				w = y("edit"),
-				O = y("save_settings"),
-				I = y("add"),
-				j = k("assign_own"),
-				P = k("enable"),
-				N = k("mods_only"),
-				D = k("edit_text"),
-				F = (e, t) => t ? I(e) : w(e),
-				M = e => k("post_flair_template")(v.d.LinkFlair, e),
-				R = (e, t) => s => ({
-					...S(s),
-					source: T(e),
+				S = x("remove"),
+				y = x("edit"),
+				_ = x("save_settings"),
+				k = x("add"),
+				w = T("assign_own"),
+				O = T("enable"),
+				j = T("mods_only"),
+				I = T("edit_text"),
+				P = (e, t) => t ? k(e) : y(e),
+				D = e => T("post_flair_template")(f.d.LinkFlair, e),
+				N = (e, t) => s => ({
+					...v(s),
+					source: E(e),
 					action: "click",
 					noun: "reorder",
-					actionInfo: x.d(s, {
+					actionInfo: C.d(s, {
 						count: t
 					})
 				}),
-				U = {
-					[v.a.All]: "text_and_emoji",
-					[v.a.Emoji]: "emoji_only",
-					[v.a.Text]: "text_only"
+				F = {
+					[f.a.All]: "text_and_emoji",
+					[f.a.Emoji]: "emoji_only",
+					[f.a.Text]: "text_only"
 				},
-				B = (e, t) => {
-					return y(U[t] || "text_and_emoji")(e)
+				M = (e, t) => {
+					return x(F[t] || "text_and_emoji")(e)
 				},
-				L = (e, t) => s => ({
-					...S(s),
-					source: T(e),
+				R = (e, t) => s => ({
+					...v(s),
+					source: E(e),
 					action: "click",
 					noun: "limit_number_emojis",
-					actionInfo: x.d(s, {
+					actionInfo: C.d(s, {
 						settingValue: t
 					})
 				});
-			var A = s("./node_modules/fbt/lib/FbtPublic.js"),
-				H = s("./src/reddit/components/InfoBanners/BannerBase/index.tsx"),
-				W = s("./src/reddit/constants/colors.ts"),
-				V = s("./src/reddit/icons/svgs/QuarantineWarning/index.tsx"),
-				Q = s("./src/reddit/components/ModHub/flairs/FlairManagement/FlairsDisabledBanner/index.m.less"),
-				J = s.n(Q);
-			var q, z = e => o.a.createElement(H.a, {
+			var U = s("./node_modules/fbt/lib/FbtPublic.js"),
+				B = s("./src/reddit/components/InfoBanners/BannerBase/index.tsx"),
+				L = s("./src/reddit/constants/colors.ts"),
+				A = s("./src/reddit/icons/svgs/QuarantineWarning/index.tsx"),
+				H = s("./src/reddit/components/ModHub/flairs/FlairManagement/FlairsDisabledBanner/index.m.less"),
+				W = s.n(H);
+			var V, Q = e => o.a.createElement(B.a, {
 					className: e.className,
-					color: W.a.quarantine,
-					icon: o.a.createElement(V.a, {
-						className: J.a.icon
+					color: L.a.quarantine,
+					icon: o.a.createElement(A.a, {
+						className: W.a.icon
 					}),
-					subtitle: e.flairTemplateType === v.d.UserFlair ? A.fbt._("User flairs will not be visible until feature is enabled", null, {
+					subtitle: e.flairTemplateType === f.d.UserFlair ? U.fbt._("User flairs will not be visible until feature is enabled", null, {
 						hk: "4uxycm"
-					}) : A.fbt._("Post flairs will not be visible until feature is enabled", null, {
+					}) : U.fbt._("Post flairs will not be visible until feature is enabled", null, {
 						hk: "4qMV3v"
 					}),
-					title: e.flairTemplateType === v.d.UserFlair ? A.fbt._("User flair is disabled", null, {
+					title: e.flairTemplateType === f.d.UserFlair ? U.fbt._("User flair is disabled", null, {
 						hk: "7ml7v"
-					}) : A.fbt._("Post flair is disabled", null, {
+					}) : U.fbt._("Post flair is disabled", null, {
 						hk: "METDg"
 					})
 				}),
-				Y = s("./node_modules/lodash/isEqual.js"),
-				G = s.n(Y),
-				K = s("./src/higherOrderComponents/asModal/index.tsx"),
-				X = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				Z = s("./src/reddit/controls/LoadingIcon/index.tsx"),
-				$ = s("./src/reddit/controls/TextButton/index.tsx"),
-				ee = s("./src/reddit/controls/ToggleSwitch/index.tsx"),
-				te = s("./src/reddit/components/ModHub/flairs/FlairManagement/LabeledControl/index.m.less"),
-				se = s.n(te);
+				q = s("./node_modules/lodash/isEqual.js"),
+				J = s.n(q),
+				z = s("./src/higherOrderComponents/asModal/index.tsx"),
+				G = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				Y = s("./src/reddit/controls/LoadingIcon/index.tsx"),
+				K = s("./src/reddit/controls/TextButton/index.tsx"),
+				X = s("./src/reddit/controls/ToggleSwitch/index.tsx"),
+				Z = s("./src/lib/classNames/index.ts"),
+				$ = s("./src/reddit/components/ModHub/flairs/FlairManagement/LabeledControl/index.m.less"),
+				ee = s.n($);
 			! function(e) {
 				e[e.Top = 0] = "Top", e[e.Left = 1] = "Left"
-			}(q || (q = {}));
-			const ae = e => e.preventDefault();
-			var ne = e => o.a.createElement("div", {
-					className: Object(i.a)(e.className, se.a.container)
+			}(V || (V = {}));
+			const te = e => e.preventDefault();
+			var se = e => o.a.createElement("div", {
+					className: Object(Z.a)(e.className, ee.a.container)
 				}, o.a.createElement("label", {
-					className: e.labelPosition === q.Top ? se.a.topLabel : se.a.leftLabel,
-					onClick: e.preventDefaultLabelClick ? ae : void 0
+					className: e.labelPosition === V.Top ? ee.a.topLabel : ee.a.leftLabel,
+					onClick: e.preventDefaultLabelClick ? te : void 0
 				}, o.a.createElement("span", {
-					className: Object(i.a)(se.a.labelText, e.labelClassName)
+					className: Object(Z.a)(ee.a.labelText, e.labelClassName)
 				}, e.label), e.children)),
-				oe = s("./src/reddit/components/ModHub/flairs/FlairManagement/FlairSettingsModal/index.m.less"),
-				ie = s.n(oe);
-			class re extends o.a.PureComponent {
+				ae = s("./src/reddit/components/ModHub/flairs/FlairManagement/FlairSettingsModal/index.m.less"),
+				ne = s.n(ae);
+			class oe extends o.a.PureComponent {
 				constructor() {
 					super(...arguments), this.isUnmounted = !1, this.state = {
 						settings: this.props.settings,
@@ -505,7 +479,7 @@
 						const {
 							settings: e
 						} = this.state;
-						if (G()(this.props.settings, e)) return void this.props.onClose();
+						if (J()(this.props.settings, e)) return void this.props.onClose();
 						this.setState({
 							isPending: !0
 						}), this.sendOnSaveEvents();
@@ -517,7 +491,7 @@
 						const e = this.props.settings,
 							t = this.state.settings,
 							s = t.type;
-						t.displaySettings.isEnabled !== e.displaySettings.isEnabled && this.props.sendEvent(P(s, t.displaySettings.isEnabled)), t.permissions.canAssignOwn !== e.permissions.canAssignOwn && this.props.sendEvent(j(s, t.permissions.canAssignOwn)), this.props.sendEvent(O(s))
+						t.displaySettings.isEnabled !== e.displaySettings.isEnabled && this.props.sendEvent(O(s, t.displaySettings.isEnabled)), t.permissions.canAssignOwn !== e.permissions.canAssignOwn && this.props.sendEvent(w(s, t.permissions.canAssignOwn)), this.props.sendEvent(_(s))
 					}, this.onToggleIsEnabled = () => {
 						const {
 							settings: e
@@ -556,103 +530,103 @@
 					this.isUnmounted = !0
 				}
 				render() {
-					const e = this.props.settings.type === v.d.UserFlair,
+					const e = this.props.settings.type === f.d.UserFlair,
 						{
 							settings: t
 						} = this.state,
 						s = t !== this.props.settings;
 					return o.a.createElement("div", {
-						className: ie.a.container
-					}, o.a.createElement(X.i, {
-						className: ie.a.modalHeader
-					}, o.a.createElement(X.q, null, e ? A.fbt._("User flair settings", null, {
+						className: ne.a.container
+					}, o.a.createElement(G.i, {
+						className: ne.a.modalHeader
+					}, o.a.createElement(G.q, null, e ? U.fbt._("User flair settings", null, {
 						hk: "RXint"
-					}) : A.fbt._("Post flair settings", null, {
+					}) : U.fbt._("Post flair settings", null, {
 						hk: "2mhOeo"
-					})), o.a.createElement($.a, {
-						className: ie.a.modalCloseButton,
+					})), o.a.createElement(K.a, {
+						className: ne.a.modalCloseButton,
 						onClick: this.props.onClose
-					}, o.a.createElement(X.b, null))), o.a.createElement("div", {
-						className: ie.a.contentBlock
-					}, o.a.createElement(ne, {
-						label: e ? A.fbt._("Enable user flair in this community", null, {
+					}, o.a.createElement(G.b, null))), o.a.createElement("div", {
+						className: ne.a.contentBlock
+					}, o.a.createElement(se, {
+						label: e ? U.fbt._("Enable user flair in this community", null, {
 							hk: "28E9I0"
-						}) : A.fbt._("Enable post flair in this community", null, {
+						}) : U.fbt._("Enable post flair in this community", null, {
 							hk: "17AFcD"
 						})
-					}, o.a.createElement(ee.a, {
+					}, o.a.createElement(X.a, {
 						on: t.displaySettings.isEnabled,
 						onToggle: this.onToggleIsEnabled
-					})), o.a.createElement(ne, {
-						className: ie.a.assignOwnControl,
-						label: A.fbt._("Allow users to assign their own", null, {
+					})), o.a.createElement(se, {
+						className: ne.a.assignOwnControl,
+						label: U.fbt._("Allow users to assign their own", null, {
 							hk: "4zgmUb"
 						}),
-						labelClassName: t.displaySettings.isEnabled ? void 0 : ie.a.disabled
-					}, o.a.createElement(ee.a, {
+						labelClassName: t.displaySettings.isEnabled ? void 0 : ne.a.disabled
+					}, o.a.createElement(X.a, {
 						disabled: !t.displaySettings.isEnabled,
 						on: t.permissions.canAssignOwn,
 						onToggle: this.onToggleCanAssignOwn
 					})), o.a.createElement("div", {
-						className: ie.a.details
-					}, e ? A.fbt._("This will let users select, edit, and clear user flair for their usernames in this community. This does not allow users to select or edit mod-only user flair.", null, {
+						className: ne.a.details
+					}, e ? U.fbt._("This will let users select, edit, and clear user flair for their usernames in this community. This does not allow users to select or edit mod-only user flair.", null, {
 						hk: "L2y8H"
-					}) : A.fbt._("This will let users select, edit, and clear post flair for their posts in this community. This does not allow users to select or edit mod-only post flair.", null, {
+					}) : U.fbt._("This will let users select, edit, and clear post flair for their posts in this community. This does not allow users to select or edit mod-only post flair.", null, {
 						hk: "20qd2P"
-					}))), o.a.createElement(X.g, {
-						className: ie.a.modalFooter
-					}, o.a.createElement(X.a, {
+					}))), o.a.createElement(G.g, {
+						className: ne.a.modalFooter
+					}, o.a.createElement(G.a, {
 						onClick: this.props.onClose
-					}, A.fbt._("Cancel", null, {
+					}, U.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), o.a.createElement(f.l, {
+					})), o.a.createElement(h.l, {
 						onClick: this.onSaveButtonClick,
 						disabled: this.state.isPending || !s
-					}, this.state.isPending ? o.a.createElement(Z.a, {
-						className: ie.a.loadingIcon,
+					}, this.state.isPending ? o.a.createElement(Y.a, {
+						className: ne.a.loadingIcon,
 						sizePx: 10
-					}) : A.fbt._("Save", null, {
+					}) : U.fbt._("Save", null, {
 						hk: "4yMsMq"
 					}))))
 				}
 			}
-			var le = Object(K.a)(re),
-				de = s("./src/reddit/helpers/validateFlairCssClass.ts");
-			const ce = e => !e || e === W.c,
-				pe = e => ({
+			var ie = Object(z.a)(oe),
+				re = s("./src/reddit/helpers/validateFlairCssClass.ts");
+			const le = e => !e || e === L.c,
+				de = e => ({
 					...e,
-					backgroundColor: ce(e.backgroundColor) ? W.a.defaultFlair : W.c
+					backgroundColor: le(e.backgroundColor) ? L.a.defaultFlair : L.c
 				}),
-				me = e => !(!e.textEditable || e.modOnly),
-				ue = e => {
+				ce = e => !(!e.textEditable || e.modOnly),
+				pe = e => {
 					const t = {
 						...e
 					};
-					return t.modOnly && (t.textEditable = !1), t.textEditable || (t.allowableContent = v.a.All, t.maxEmojis = void 0), t.allowableContent === v.a.Text && (t.maxEmojis = void 0), t
+					return t.modOnly && (t.textEditable = !1), t.textEditable || (t.allowableContent = f.a.All, t.maxEmojis = void 0), t.allowableContent === f.a.Text && (t.maxEmojis = void 0), t
 				},
-				he = e => e.userFlairAllowed,
-				ge = e => e.postFlairAllowed,
-				be = function(e, t, s) {
+				me = e => e.userFlairAllowed,
+				ue = e => e.postFlairAllowed,
+				he = function(e, t, s) {
 					let a = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
 					const n = {
 						...e
 					};
-					let o = Object(E.c)(n, !1);
-					if (Object(E.a)(n)) {
-						const e = t === v.d.UserFlair ? he : ge;
-						o = Object(E.s)(o, s, e)
+					let o = Object(b.c)(n, !1);
+					if (Object(b.a)(n)) {
+						const e = t === f.d.UserFlair ? me : ue;
+						o = Object(b.s)(o, s, e)
 					}
-					return o = Object(E.d)({
+					return o = Object(b.d)({
 						flair: o,
 						template: n,
 						ignoreTextAllowance: a
-					}), n.type = o.type, o.type === v.f.Richtext ? n.richtext = o.richtext : n.text = o.text, n
+					}), n.type = o.type, o.type === f.f.Richtext ? n.richtext = o.richtext : n.text = o.text, n
 				},
-				fe = e => {
-					const t = Object(E.n)(e) && !Object(E.r)(e),
-						s = e.text.length > b.g,
+				ge = e => {
+					const t = Object(b.n)(e) && !Object(b.r)(e),
+						s = e.text.length > u.g,
 						a = !e.text,
-						n = Object(de.a)(e.cssClass || "");
+						n = Object(re.a)(e.cssClass || "");
 					return {
 						isBlank: a,
 						cssClassErrorMessage: n,
@@ -661,44 +635,44 @@
 						shouldRemoveFlairText: t
 					}
 				};
-			var Ce = s("./src/reddit/components/Flair/index.tsx"),
-				Ee = s("./src/reddit/icons/svgs/Trash2/index.tsx"),
-				ve = s("./node_modules/lodash/range.js"),
-				xe = s.n(ve),
-				Te = s("./src/reddit/components/FlairSearch/FlairEdit/helper.tsx"),
-				Se = s("./src/reddit/components/StructuredStyles/StyledComponents/inputs.ts"),
-				ye = s("./src/reddit/controls/DropdownSelector/index.tsx"),
-				ke = s("./src/reddit/controls/RadioInput/index.tsx"),
-				_e = s("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
-				we = s("./node_modules/react-redux/es/index.js"),
-				Oe = s("./node_modules/reselect/es/index.js"),
-				Ie = s("./src/reddit/actions/tooltip.ts"),
-				je = s("./src/reddit/components/StructuredStyles/ColorPicker/BaseColorPicker.tsx"),
-				Pe = s("./src/reddit/selectors/tooltip.ts");
-			const Ne = ["right", "top"],
-				De = Object(Oe.c)({
+			var be = s("./src/reddit/components/Flair/index.tsx"),
+				fe = s("./src/reddit/icons/svgs/Trash2/index.tsx"),
+				Ce = s("./node_modules/lodash/range.js"),
+				Ee = s.n(Ce),
+				ve = s("./src/reddit/components/FlairSearch/FlairEdit/helper.tsx"),
+				xe = s("./src/reddit/components/StructuredStyles/StyledComponents/inputs.ts"),
+				Te = s("./src/reddit/controls/DropdownSelector/index.tsx"),
+				Se = s("./src/reddit/controls/RadioInput/index.tsx"),
+				ye = s("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
+				_e = s("./node_modules/react-redux/es/index.js"),
+				ke = s("./node_modules/reselect/es/index.js"),
+				we = s("./src/reddit/actions/tooltip.ts"),
+				Oe = s("./src/reddit/components/StructuredStyles/ColorPicker/BaseColorPicker.tsx"),
+				je = s("./src/reddit/selectors/tooltip.ts");
+			const Ie = ["right", "top"],
+				Pe = Object(ke.c)({
 					isDropdownOpen: (e, t) => {
 						let {
 							tooltipId: s
 						} = t;
-						return Object(Pe.b)(s)(e)
+						return Object(je.b)(s)(e)
 					}
 				});
-			var Fe = Object(we.b)(De, (e, t) => ({
-					onToggleDropdown: () => e(Object(Ie.h)(t))
+			var De = Object(_e.b)(Pe, (e, t) => ({
+					onToggleDropdown: () => e(Object(we.h)(t))
 				}))(e => o.a.createElement("div", {
 					id: e.tooltipId
-				}, o.a.createElement(je.a, {
-					dropdownPosition: Ne,
+				}, o.a.createElement(Oe.a, {
+					dropdownPosition: Ie,
 					isDropdownOpen: e.isDropdownOpen,
 					onChange: e.onChange,
 					onToggleDropdown: e.onToggleDropdown,
 					tooltipId: e.tooltipId,
 					value: e.value
 				}))),
-				Me = s("./src/reddit/components/ModHub/flairs/FlairManagement/FlairTemplateEditor/ColorSwitch/index.m.less"),
-				Re = s.n(Me);
-			class Ue extends o.a.PureComponent {
+				Ne = s("./src/reddit/components/ModHub/flairs/FlairManagement/FlairTemplateEditor/ColorSwitch/index.m.less"),
+				Fe = s.n(Ne);
+			class Me extends o.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onChange = () => {
 						this.props.onChange(!this.props.isDark)
@@ -709,24 +683,24 @@
 						isDark: e
 					} = this.props;
 					return o.a.createElement("button", {
-						className: Object(i.a)(Re.a.switch, e ? Re.a.dark : Re.a.light),
+						className: Object(Z.a)(Fe.a.switch, e ? Fe.a.dark : Fe.a.light),
 						onClick: this.onChange
 					}, "Aa")
 				}
 			}
-			var Be = s("./src/reddit/actions/flairManagement/index.ts"),
-				Le = s("./src/reddit/actions/post.ts"),
-				Ae = s("./src/reddit/components/ThemeProvider/index.tsx"),
-				He = s("./src/reddit/constants/postLayout.ts"),
-				We = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				Ve = s("./src/reddit/components/InfoTextTooltip/index.tsx"),
-				Qe = s("./src/reddit/actions/preferences.ts"),
-				Je = s("./src/reddit/icons/fonts/index.tsx"),
-				qe = s("./src/reddit/controls/LayoutSwitch/index.m.less"),
-				ze = s.n(qe);
+			var Re = s("./src/reddit/actions/flairManagement/index.ts"),
+				Ue = s("./src/reddit/actions/post.ts"),
+				Be = s("./src/reddit/components/ThemeProvider/index.tsx"),
+				Le = s("./src/reddit/constants/postLayout.ts"),
+				Ae = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				He = s("./src/reddit/components/InfoTextTooltip/index.tsx"),
+				We = s("./src/reddit/actions/preferences.ts"),
+				Ve = s("./src/reddit/icons/fonts/index.tsx"),
+				Qe = s("./src/reddit/controls/LayoutSwitch/index.m.less"),
+				qe = s.n(Qe);
 
-			function Ye() {
-				return (Ye = Object.assign || function(e) {
+			function Je() {
+				return (Je = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var a in s) Object.prototype.hasOwnProperty.call(s, a) && (e[a] = s[a])
@@ -734,18 +708,46 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const Ge = e => Object(i.a)(ze.a.iconStyles, e.className, {
-					[ze.a.mRedditStyle]: e.redditStyle
+			const ze = e => Object(Z.a)(qe.a.iconStyles, e.className, {
+					[qe.a.mRedditStyle]: e.redditStyle
 				}),
+				Ge = e => {
+					let {
+						className: t,
+						redditStyle: s,
+						...a
+					} = e;
+					return o.a.createElement(Ve.a, Je({
+						name: "view_compact",
+						className: ze({
+							className: t,
+							redditStyle: s
+						})
+					}, a))
+				},
+				Ye = e => {
+					let {
+						className: t,
+						redditStyle: s,
+						...a
+					} = e;
+					return o.a.createElement(Ve.a, Je({
+						name: "view_classic",
+						className: ze({
+							className: t,
+							redditStyle: s
+						})
+					}, a))
+				},
 				Ke = e => {
 					let {
 						className: t,
 						redditStyle: s,
 						...a
 					} = e;
-					return o.a.createElement(Je.a, Ye({
-						name: "view_compact",
-						className: Ge({
+					return o.a.createElement(Ve.a, Je({
+						name: "view_card",
+						className: ze({
 							className: t,
 							redditStyle: s
 						})
@@ -753,51 +755,23 @@
 				},
 				Xe = e => {
 					let {
-						className: t,
-						redditStyle: s,
-						...a
-					} = e;
-					return o.a.createElement(Je.a, Ye({
-						name: "view_classic",
-						className: Ge({
-							className: t,
-							redditStyle: s
-						})
-					}, a))
-				},
-				Ze = e => {
-					let {
-						className: t,
-						redditStyle: s,
-						...a
-					} = e;
-					return o.a.createElement(Je.a, Ye({
-						name: "view_card",
-						className: Ge({
-							className: t,
-							redditStyle: s
-						})
-					}, a))
-				},
-				$e = e => {
-					let {
 						isActive: t,
 						...s
 					} = e;
-					return o.a.createElement("button", Ye({
-						className: Object(i.a)(ze.a.layoutButton, {
-							[ze.a.mIsActive]: t
+					return o.a.createElement("button", Je({
+						className: Object(Z.a)(qe.a.layoutButton, {
+							[qe.a.mIsActive]: t
 						})
 					}, s))
 				},
-				et = Object(We.v)(),
-				tt = Object(Oe.c)({
-					postLayout: We.U,
-					redditStyle: We.E
+				Ze = Object(Ae.v)(),
+				$e = Object(ke.c)({
+					postLayout: Ae.U,
+					redditStyle: Ae.E
 				});
-			var st = et(Object(we.b)(tt, e => ({
-					onListingLayoutChange: (t, s) => e(Object(Qe.x)(t, s)),
-					toggleTooltip: t => e(Object(Ie.h)({
+			var et = Ze(Object(_e.b)($e, e => ({
+					onListingLayoutChange: (t, s) => e(Object(We.x)(t, s)),
+					toggleTooltip: t => e(Object(we.h)({
 						tooltipId: t
 					}))
 				}), (e, t, s) => ({
@@ -805,36 +779,36 @@
 					...t,
 					...s,
 					toggleTooltip: e => t.toggleTooltip(e)
-				}))(Object(g.c)(e => {
+				}))(Object(m.c)(e => {
 					const {
 						sendEvent: t,
 						subredditId: s
-					} = e, a = e.layout || He.e[e.postLayout];
+					} = e, a = e.layout || Le.e[e.postLayout];
 					return o.a.createElement("div", {
-						className: Object(i.a)(ze.a.layoutSwitch, e.className),
+						className: Object(Z.a)(qe.a.layoutSwitch, e.className),
 						id: "view--layout--FUE"
 					}, o.a.createElement("div", {
-						className: ze.a.title
-					}, A.fbt._("View", null, {
+						className: qe.a.title
+					}, U.fbt._("View", null, {
 						hk: "18a931"
 					})), o.a.createElement("div", {
-						className: ze.a.iconContainer
+						className: qe.a.iconContainer
 					}, (() => [{
-						layout: He.d.Card,
-						Icon: Ze,
-						text: A.fbt._("Card", null, {
+						layout: Le.d.Card,
+						Icon: Ke,
+						text: U.fbt._("Card", null, {
 							hk: "22FueJ"
 						})
 					}, {
-						layout: He.d.Classic,
-						Icon: Xe,
-						text: A.fbt._("Classic", null, {
+						layout: Le.d.Classic,
+						Icon: Ye,
+						text: U.fbt._("Classic", null, {
 							hk: "1Djx18"
 						})
 					}, {
-						layout: He.d.Compact,
-						Icon: Ke,
-						text: A.fbt._("Compact", null, {
+						layout: Le.d.Compact,
+						Icon: Ge,
+						text: U.fbt._("Compact", null, {
 							hk: "22iWX9"
 						})
 					}])().map(n => {
@@ -843,14 +817,14 @@
 									source: "layout_switch",
 									action: "click",
 									noun: a,
-									screen: Object(x.cb)(e),
-									subreddit: Object(x.lb)(e)
+									screen: Object(C.cb)(e),
+									subreddit: Object(C.lb)(e)
 								})))
 							})(n.layout),
 							r = () => e.toggleTooltip(l),
 							l = "layoutSwitch--" + n.layout,
 							d = n.layout === a;
-						return o.a.createElement($e, {
+						return o.a.createElement(Xe, {
 							"aria-label": n.text,
 							"aria-pressed": d,
 							id: l,
@@ -864,36 +838,36 @@
 							onClick: d ? void 0 : e.onLayoutClick,
 							redditStyle: e.redditStyle,
 							isFilled: d
-						}), o.a.createElement(Ve.c, {
+						}), o.a.createElement(He.c, {
 							tooltipId: l,
 							text: n.text
 						}))
 					})))
 				}))),
-				at = s("./src/reddit/helpers/dom/index.ts"),
-				nt = s("./src/reddit/helpers/postComponentForLayout/index.tsx"),
-				ot = s("./src/reddit/selectors/posts.ts"),
-				it = s("./src/lib/omitKey/index.ts"),
-				rt = s("./src/reddit/actions/imageUploads.ts"),
-				lt = s("./src/reddit/models/Image/index.tsx"),
-				dt = s("./src/reddit/models/StructuredStyles/index.ts"),
-				ct = s("./src/reddit/selectors/structuredStyles.ts"),
-				pt = s("./src/reddit/components/StructuredStyles/ImageUpload/index.tsx"),
-				mt = s("./src/reddit/components/StructuredStyles/UploadedImage/index.tsx");
-			var ut = e => e.imageData ? o.a.createElement(mt.e, {
+				tt = s("./src/reddit/helpers/dom/index.ts"),
+				st = s("./src/reddit/helpers/postComponentForLayout/index.tsx"),
+				at = s("./src/reddit/selectors/posts.ts"),
+				nt = s("./src/lib/omitKey/index.ts"),
+				ot = s("./src/reddit/actions/imageUploads.ts"),
+				it = s("./src/reddit/models/Image/index.tsx"),
+				rt = s("./src/reddit/models/StructuredStyles/index.ts"),
+				lt = s("./src/reddit/selectors/structuredStyles.ts"),
+				dt = s("./src/reddit/components/StructuredStyles/ImageUpload/index.tsx"),
+				ct = s("./src/reddit/components/StructuredStyles/UploadedImage/index.tsx");
+			var pt = e => e.imageData ? o.a.createElement(ct.e, {
 					imageData: e.imageData,
 					isRequestInProgress: e.isRequestInProgress,
 					onRemove: e.onRemove
-				}) : o.a.createElement(pt.b, {
-					label: A.fbt._("Drag and Drop or Upload Image", null, {
+				}) : o.a.createElement(dt.b, {
+					label: U.fbt._("Drag and Drop or Upload Image", null, {
 						hk: "2zm1fD"
 					}),
 					onChange: e.onChange
 				}),
-				ht = s("./src/reddit/components/ModHub/flairs/FlairManagement/FlairTemplateEditor/PostAppearanceEditor/PostFlairStyleTemplateEditor/index.m.less"),
-				gt = s.n(ht);
-			const bt = e => Array.isArray(e) ? e[0] : e,
-				ft = e => (t, s) => {
+				mt = s("./src/reddit/components/ModHub/flairs/FlairManagement/FlairTemplateEditor/PostAppearanceEditor/PostFlairStyleTemplateEditor/index.m.less"),
+				ut = s.n(mt);
+			const ht = e => Array.isArray(e) ? e[0] : e,
+				gt = e => (t, s) => {
 					const a = ((e, t) => {
 						const {
 							pendingImages: s
@@ -902,15 +876,15 @@
 					})(s.styleTemplate, e);
 					return a ? t.imageUploads[a] : void 0
 				},
-				Ct = Object(Oe.c)({
-					subredditDefaultStyles: ct.o,
-					postBackgroundImage: ft(dt.e),
-					postPlaceholderImage: ft(dt.f)
+				bt = Object(ke.c)({
+					subredditDefaultStyles: lt.o,
+					postBackgroundImage: gt(rt.e),
+					postPlaceholderImage: gt(rt.f)
 				}),
-				Et = {
-					cancelUpload: rt.h
+				ft = {
+					cancelUpload: ot.h
 				};
-			class vt extends o.a.Component {
+			class Ct extends o.a.Component {
 				constructor() {
 					super(...arguments), this.onChangePostTitleColor = e => {
 						const t = {
@@ -925,13 +899,13 @@
 						};
 						this.props.onChange(t)
 					}, this.onPostBackgroundImageInput = e => {
-						this.addImage(bt(e), dt.e)
+						this.addImage(ht(e), rt.e)
 					}, this.onPostPlaceholderImageInput = e => {
-						this.addImage(bt(e), dt.f)
-					}, this.onRemoveBackgroundImage = () => this.removeImage(dt.e), this.onRemovePlaceholderImage = () => this.removeImage(dt.f), this.addImage = async (e, t) => {
+						this.addImage(ht(e), rt.f)
+					}, this.onRemoveBackgroundImage = () => this.removeImage(rt.e), this.onRemovePlaceholderImage = () => this.removeImage(rt.f), this.addImage = async (e, t) => {
 						const {
 							styleTemplate: s
-						} = this.props, a = await Object(lt.f)(e);
+						} = this.props, a = await Object(it.f)(e);
 						this.props.onChange({
 							...s,
 							[t]: a.url,
@@ -948,8 +922,8 @@
 							styleTemplate: t
 						} = this.props, s = t.pendingImages || {};
 						this.cancelUpload(e), this.props.onChange({
-							...Object(it.a)(t, e),
-							pendingImages: Object(it.a)(s, e)
+							...Object(nt.a)(t, e),
+							pendingImages: Object(nt.a)(s, e)
 						})
 					}, this.getImageUpload = e => {
 						const {
@@ -965,12 +939,12 @@
 								width: 0,
 								height: 0
 							};
-							return Object(lt.g)(e)
+							return Object(it.g)(e)
 						}
 					}
 				}
 				componentWillUnmount() {
-					this.cancelUpload(dt.e), this.cancelUpload(dt.f)
+					this.cancelUpload(rt.e), this.cancelUpload(rt.f)
 				}
 				render() {
 					const {
@@ -980,88 +954,88 @@
 						templateId: a
 					} = this.props, {
 						postTitleColor: n = s.postTitleColor,
-						postBackgroundColor: r = s.postBackgroundColor
-					} = t, l = this.getImageUpload(dt.e), d = this.getImageUpload(dt.f);
+						postBackgroundColor: i = s.postBackgroundColor
+					} = t, r = this.getImageUpload(rt.e), l = this.getImageUpload(rt.f);
 					return o.a.createElement("div", {
-						className: Object(i.a)(e, gt.a.container)
+						className: Object(Z.a)(e, ut.a.container)
 					}, o.a.createElement("fieldset", {
-						className: gt.a.leftFieldset
-					}, o.a.createElement(ne, {
-						label: A.fbt._("Post title color", null, {
+						className: ut.a.leftFieldset
+					}, o.a.createElement(se, {
+						label: U.fbt._("Post title color", null, {
 							hk: "ssBOo"
 						})
-					}, o.a.createElement(Fe, {
+					}, o.a.createElement(De, {
 						onChange: this.onChangePostTitleColor,
 						tooltipId: "flair-postTitleColor-" + a,
 						value: n
-					})), o.a.createElement(ne, {
-						label: A.fbt._("Thumbnail placeholder", null, {
+					})), o.a.createElement(se, {
+						label: U.fbt._("Thumbnail placeholder", null, {
 							hk: "Rcs3p"
 						}),
-						labelPosition: q.Top,
-						preventDefaultLabelClick: !!d
-					}, o.a.createElement(ut, {
-						imageData: d,
+						labelPosition: V.Top,
+						preventDefaultLabelClick: !!l
+					}, o.a.createElement(pt, {
+						imageData: l,
 						isRequestInProgress: this.props.isSavePending,
 						onChange: this.onPostPlaceholderImageInput,
 						onRemove: this.onRemovePlaceholderImage
 					}), o.a.createElement("div", {
-						className: gt.a.imageUploadHelpText
-					}, A.fbt._("Required Size: 256 x 256px", null, {
+						className: ut.a.imageUploadHelpText
+					}, U.fbt._("Required Size: 256 x 256px", null, {
 						hk: "10W3lr"
-					}), o.a.createElement("br", null), A.fbt._("Appears in Classic and Card views", null, {
+					}), o.a.createElement("br", null), U.fbt._("Appears in Classic and Card views", null, {
 						hk: "1rQSTI"
 					})))), o.a.createElement("fieldset", {
-						className: gt.a.rightFieldset
-					}, o.a.createElement(ne, {
-						label: A.fbt._("Post background color", null, {
+						className: ut.a.rightFieldset
+					}, o.a.createElement(se, {
+						label: U.fbt._("Post background color", null, {
 							hk: "1shJXd"
 						})
-					}, o.a.createElement(Fe, {
+					}, o.a.createElement(De, {
 						onChange: this.onChangePostBackgroundColor,
 						tooltipId: "flair-postBackgroundColor-" + a,
-						value: r
-					})), o.a.createElement(ne, {
-						labelPosition: q.Top,
-						label: A.fbt._("Post background image", null, {
+						value: i
+					})), o.a.createElement(se, {
+						labelPosition: V.Top,
+						label: U.fbt._("Post background image", null, {
 							hk: "7rg1y"
 						}),
-						preventDefaultLabelClick: !!l
-					}, o.a.createElement(ut, {
-						imageData: l,
+						preventDefaultLabelClick: !!r
+					}, o.a.createElement(pt, {
+						imageData: r,
 						isRequestInProgress: this.props.isSavePending,
 						onChange: this.onPostBackgroundImageInput,
 						onRemove: this.onRemoveBackgroundImage
 					}), o.a.createElement("div", {
-						className: gt.a.imageUploadHelpText
-					}, A.fbt._("Jpeg or png files up to 10 MB", null, {
+						className: ut.a.imageUploadHelpText
+					}, U.fbt._("Jpeg or png files up to 10 MB", null, {
 						hk: "1V1UV4"
-					}), o.a.createElement("br", null), A.fbt._("Recommended image size: 864 x 120px", null, {
+					}), o.a.createElement("br", null), U.fbt._("Recommended image size: 864 x 120px", null, {
 						hk: "1NCSCz"
 					})))))
 				}
 			}
-			var xt = Object(we.b)(Ct, Et)(vt),
-				Tt = s("./src/reddit/components/ModHub/flairs/FlairManagement/FlairTemplateEditor/PostAppearanceEditor/index.m.less"),
-				St = s.n(Tt);
-			const yt = Object(Oe.c)({
-					examplePost: e => Object(ot.G)(e, {
-						postId: b.e
+			var Et = Object(_e.b)(bt, ft)(Ct),
+				vt = s("./src/reddit/components/ModHub/flairs/FlairManagement/FlairTemplateEditor/PostAppearanceEditor/index.m.less"),
+				xt = s.n(vt);
+			const Tt = Object(ke.c)({
+					examplePost: e => Object(at.G)(e, {
+						postId: u.e
 					})
 				}),
-				kt = Object(we.b)(yt, (e, t) => ({
-					deleteExamplePost: () => e(Object(Be.b)(b.e)),
-					makeExamplePost: s => e(Object(Be.c)(t.subredditId, s)),
-					updateExamplePost: t => e(Object(Le.Q)({
-						[b.e]: {
+				St = Object(_e.b)(Tt, (e, t) => ({
+					deleteExamplePost: () => e(Object(Re.b)(u.e)),
+					makeExamplePost: s => e(Object(Re.c)(t.subredditId, s)),
+					updateExamplePost: t => e(Object(Ue.Q)({
+						[u.e]: {
 							flair: [t]
 						}
 					}))
 				}));
-			class _t extends o.a.PureComponent {
+			class yt extends o.a.PureComponent {
 				constructor() {
 					super(...arguments), this.postWrapperRef = o.a.createRef(), this.state = {
-						previewLayout: He.d.Classic
+						previewLayout: Le.d.Classic
 					}, this.onPostStyleTemplateChange = e => {
 						const {
 							templateDraft: t
@@ -1081,19 +1055,19 @@
 				componentDidMount() {
 					const {
 						templateDraft: e
-					} = this.props, t = Object(E.c)(e);
+					} = this.props, t = Object(b.c)(e);
 					this.props.makeExamplePost(t), this.disableTabNavigationForPreviewPost()
 				}
 				componentDidUpdate(e) {
-					const t = Object(E.c)(this.props.templateDraft),
-						s = Object(E.c)(e.templateDraft);
-					G()(t, s) || this.props.updateExamplePost(t), this.disableTabNavigationForPreviewPost()
+					const t = Object(b.c)(this.props.templateDraft),
+						s = Object(b.c)(e.templateDraft);
+					J()(t, s) || this.props.updateExamplePost(t), this.disableTabNavigationForPreviewPost()
 				}
 				componentWillUnmount() {
 					this.props.deleteExamplePost()
 				}
 				disableTabNavigationForPreviewPost() {
-					this.postWrapperRef.current && Object(at.a)(this.postWrapperRef.current)
+					this.postWrapperRef.current && Object(tt.a)(this.postWrapperRef.current)
 				}
 				render() {
 					const {
@@ -1104,32 +1078,32 @@
 					if (!s) return null;
 					const {
 						previewLayout: a
-					} = this.state, n = t.styleTemplate || {}, r = He.b[a], l = Object(nt.b)({
-						layout: r,
+					} = this.state, n = t.styleTemplate || {}, i = Le.b[a], r = Object(st.b)({
+						layout: i,
 						post: s
 					});
 					return o.a.createElement("div", {
-						className: Object(i.a)(this.props.className, St.a.container)
-					}, o.a.createElement("div", null, o.a.createElement(st, {
-						className: St.a.layoutSwitch,
+						className: Object(Z.a)(this.props.className, xt.a.container)
+					}, o.a.createElement("div", null, o.a.createElement(et, {
+						className: xt.a.layoutSwitch,
 						layout: a,
 						onChange: this.onChangePreviewLayout
 					}), o.a.createElement("div", {
-						className: St.a.postPreview
+						className: xt.a.postPreview
 					}, o.a.createElement("div", {
 						ref: this.postWrapperRef,
 						onClickCapture: this.onPostPreviewClickCapture,
-						className: Object(i.a)(St.a.postWrapper, St.a[a])
-					}, o.a.createElement(Ae.a, {
+						className: Object(Z.a)(xt.a.postWrapper, xt.a[a])
+					}, o.a.createElement(Be.a, {
 						forceDayMode: !0
-					}, o.a.createElement(l, {
-						className: St.a.postComponent,
+					}, o.a.createElement(r, {
+						className: xt.a.postComponent,
 						postId: s.postId,
 						flairStyleTemplateDraft: n,
 						inSubredditOrProfile: !0,
 						pageLayer: this.props.pageLayer
-					}))))), o.a.createElement(xt, {
-						className: St.a.postFlairStyleTemplateEditor,
+					}))))), o.a.createElement(Et, {
+						className: xt.a.postFlairStyleTemplateEditor,
 						isSavePending: this.props.isSavePending,
 						onChange: this.onPostStyleTemplateChange,
 						styleTemplate: n,
@@ -1138,17 +1112,17 @@
 					}))
 				}
 			}
-			var wt = Object(We.v)()(kt(_t)),
-				Ot = s("./src/reddit/components/ModHub/flairs/FlairManagement/FlairTemplateEditor/index.m.less"),
-				It = s.n(Ot);
-			const jt = "flair-management-emoji-picker",
-				Pt = {},
-				Nt = 250,
-				Dt = xe()(b.d, 0).map(e => ({
+			var _t = Object(Ae.v)()(St(yt)),
+				kt = s("./src/reddit/components/ModHub/flairs/FlairManagement/FlairTemplateEditor/index.m.less"),
+				wt = s.n(kt);
+			const Ot = "flair-management-emoji-picker",
+				jt = {},
+				It = 250,
+				Pt = Ee()(u.d, 0).map(e => ({
 					value: e,
 					displayText: e.toString()
 				}));
-			class Ft extends o.a.PureComponent {
+			class Dt extends o.a.PureComponent {
 				constructor() {
 					super(...arguments), this.containerRef = o.a.createRef(), this.initialTemplate = this.props.templateDraft, this.state = {
 						flairEditHadFocus: !1
@@ -1157,8 +1131,8 @@
 							flairTemplateType: t,
 							subredditEmojiData: s
 						} = this.props;
-						let a = ue(e);
-						return a = be(a, t, s, !0)
+						let a = pe(e);
+						return a = he(a, t, s, !0)
 					}, this.onSave = () => {
 						this.props.onChange(this.normalizeTemplate(this.props.templateDraft))
 					}, this.onFlairEditBlur = () => {
@@ -1166,14 +1140,14 @@
 							flairEditHadFocus: !0
 						})
 					}, this.onToggleBackgroundTransparency = () => {
-						this.props.onChange(pe(this.props.templateDraft))
+						this.props.onChange(de(this.props.templateDraft))
 					}, this.onToggleFlairTextColor = () => {
 						const {
 							templateDraft: e
 						} = this.props;
 						this.props.onChange({
 							...e,
-							textColor: e.textColor === v.e.Light ? v.e.Dark : v.e.Light
+							textColor: e.textColor === f.e.Light ? f.e.Dark : f.e.Light
 						})
 					}, this.onToggleModOnly = () => {
 						const {
@@ -1194,7 +1168,7 @@
 					}, this.onTogglePostAppearanceSettings = () => {
 						const {
 							templateDraft: e
-						} = this.props, t = e.styleTemplate ? void 0 : Pt;
+						} = this.props, t = e.styleTemplate ? void 0 : jt;
 						this.props.onChange({
 							...e,
 							styleTemplate: t
@@ -1213,7 +1187,7 @@
 						} = this.props;
 						this.props.onChange({
 							...t,
-							textColor: e ? v.e.Dark : v.e.Light
+							textColor: e ? f.e.Dark : f.e.Light
 						})
 					}, this.onCSSClassValueChange = e => {
 						const {
@@ -1226,12 +1200,12 @@
 					}, this.onFlairContentChanged = e => {
 						const {
 							templateDraft: t
-						} = this.props, s = Object(E.d)({
+						} = this.props, s = Object(b.d)({
 							flair: e,
 							template: t,
 							ignoreTextAllowance: !0
 						});
-						this.props.onChange(Object(E.f)(s, this.props.templateDraft))
+						this.props.onChange(Object(b.f)(s, this.props.templateDraft))
 					}, this.onAllowableContentChange = e => {
 						const {
 							templateDraft: t
@@ -1257,7 +1231,7 @@
 					const e = this.containerRef.current;
 					if (!e) return;
 					const t = e.getBoundingClientRect().top,
-						s = window.scrollY + t - Nt;
+						s = window.scrollY + t - It;
 					window.scrollTo(0, s)
 				}
 				render() {
@@ -1266,191 +1240,191 @@
 						subredditId: t,
 						templateDraft: s,
 						flairTemplateType: a
-					} = this.props, n = a === v.d.UserFlair, i = a === v.d.LinkFlair, r = s !== this.initialTemplate, {
+					} = this.props, n = a === f.d.UserFlair, i = a === f.d.LinkFlair, r = s !== this.initialTemplate, {
 						hasFieldError: l,
-						cssClassErrorMessage: d
-					} = fe(s), c = this.state.flairEditHadFocus || r, m = Object(Te.a)(), u = Object(E.c)(s, !1), h = ce(s.backgroundColor), g = i || !h, C = h ? W.a.defaultFlair : s.backgroundColor, x = Object(E.l)(s);
+						cssClassErrorMessage: c
+					} = ge(s), p = this.state.flairEditHadFocus || r, m = Object(ve.a)(), g = Object(b.c)(s, !1), C = le(s.backgroundColor), E = i || !C, v = C ? L.a.defaultFlair : s.backgroundColor, x = Object(b.l)(s);
 					return o.a.createElement("div", {
-						className: It.a.container,
+						className: wt.a.container,
 						ref: this.containerRef
 					}, o.a.createElement("div", {
-						className: It.a.mainContent
+						className: wt.a.mainContent
 					}, o.a.createElement("fieldset", {
-						className: It.a.leftFieldset
-					}, o.a.createElement("legend", null, A.fbt._("Flair appearance", null, {
+						className: wt.a.leftFieldset
+					}, o.a.createElement("legend", null, U.fbt._("Flair appearance", null, {
 						hk: "ZRrgk"
-					})), o.a.createElement(ne, {
-						labelPosition: q.Top,
-						label: A.fbt._("Flair text", null, {
+					})), o.a.createElement(se, {
+						labelPosition: V.Top,
+						label: U.fbt._("Flair text", null, {
 							hk: "2ALbeU"
 						})
 					}, o.a.createElement(m, {
-						allowBlank: !c,
+						allowBlank: !p,
 						autofocus: !0,
-						className: It.a.flairEdit,
-						emojiPickerId: jt,
-						flair: u,
+						className: wt.a.flairEdit,
+						emojiPickerId: Ot,
+						flair: g,
 						flairTemplate: s,
 						flairTemplateType: a,
 						isFlairModOnly: s.modOnly,
 						onChange: this.onFlairContentChanged,
 						subredditId: t,
 						onBlur: this.onFlairEditBlur
-					})), o.a.createElement(ne, {
-						labelPosition: q.Top,
-						label: A.fbt._("CSS class", null, {
+					})), o.a.createElement(se, {
+						labelPosition: V.Top,
+						label: U.fbt._("CSS class", null, {
 							hk: "2khRbr"
 						})
-					}, o.a.createElement(Se.c, {
-						className: It.a.cssClassInput,
-						maxLength: b.b,
+					}, o.a.createElement(xe.c, {
+						className: wt.a.cssClassInput,
+						maxLength: u.b,
 						onChange: this.onCSSClassValueChange,
-						placeholder: A.fbt._("none", null, {
+						placeholder: U.fbt._("none", null, {
 							hk: "3fbedu"
 						}),
 						spellCheck: !1,
 						value: s.cssClass || ""
 					}), o.a.createElement("div", {
-						className: d ? It.a.cssClassErrorText : It.a.cssClassInfoText
-					}, d || A.fbt._("Optional", null, {
+						className: c ? wt.a.cssClassErrorText : wt.a.cssClassInfoText
+					}, c || U.fbt._("Optional", null, {
 						hk: "4Guf65"
-					}))), n && o.a.createElement(ne, {
-						label: A.fbt._("Add flair background", null, {
+					}))), n && o.a.createElement(se, {
+						label: U.fbt._("Add flair background", null, {
 							hk: "2VdziY"
 						})
-					}, o.a.createElement(ee.a, {
-						on: g,
+					}, o.a.createElement(X.a, {
+						on: E,
 						onToggle: this.onToggleBackgroundTransparency
-					})), g && o.a.createElement(o.a.Fragment, null, o.a.createElement(ne, {
-						label: A.fbt._("Flair background color", null, {
+					})), E && o.a.createElement(o.a.Fragment, null, o.a.createElement(se, {
+						label: U.fbt._("Flair background color", null, {
 							hk: "1MY5ea"
 						})
-					}, o.a.createElement(Fe, {
+					}, o.a.createElement(De, {
 						onChange: this.onChangeBackgroundColor,
 						tooltipId: "flair-background-color-" + s.id,
-						value: C
-					})), o.a.createElement(ne, {
-						label: A.fbt._("Flair text color", null, {
+						value: v
+					})), o.a.createElement(se, {
+						label: U.fbt._("Flair text color", null, {
 							hk: "11Me49"
 						})
-					}, o.a.createElement(Ue, {
-						isDark: s.textColor === v.e.Dark,
+					}, o.a.createElement(Me, {
+						isDark: s.textColor === f.e.Dark,
 						onChange: this.onChangeTextColor
-					}))), i && o.a.createElement(ne, {
-						label: A.fbt._("Edit post appearance", null, {
+					}))), i && o.a.createElement(se, {
+						label: U.fbt._("Edit post appearance", null, {
 							hk: "28CdLt"
 						})
-					}, o.a.createElement(ee.a, {
+					}, o.a.createElement(X.a, {
 						on: !!s.styleTemplate,
 						onToggle: this.onTogglePostAppearanceSettings
 					}))), o.a.createElement("fieldset", {
-						className: It.a.rightFieldset
-					}, o.a.createElement("legend", null, A.fbt._("Flair settings", null, {
+						className: wt.a.rightFieldset
+					}, o.a.createElement("legend", null, U.fbt._("Flair settings", null, {
 						hk: "JgL1E"
-					})), o.a.createElement(ne, {
+					})), o.a.createElement(se, {
 						label: o.a.createElement("span", {
-							className: It.a.labelWithTooltip
-						}, A.fbt._("Mod only", null, {
+							className: wt.a.labelWithTooltip
+						}, U.fbt._("Mod only", null, {
 							hk: "1Cg5LH"
-						}), o.a.createElement(p.a, {
-							text: A.fbt._("Flair is only available for mods to select", null, {
+						}), o.a.createElement(d.a, {
+							text: U.fbt._("Flair is only available for mods to select", null, {
 								hk: "HkFmW"
 							})
 						}))
-					}, o.a.createElement(ee.a, {
+					}, o.a.createElement(X.a, {
 						on: !!s.modOnly,
 						onToggle: this.onToggleModOnly
-					})), o.a.createElement(ne, {
-						className: s.modOnly ? It.a.disabledControl : void 0,
+					})), o.a.createElement(se, {
+						className: s.modOnly ? wt.a.disabledControl : void 0,
 						label: o.a.createElement("span", {
-							className: It.a.labelWithTooltip
-						}, A.fbt._("Allow user edits", null, {
+							className: wt.a.labelWithTooltip
+						}, U.fbt._("Allow user edits", null, {
 							hk: "26m6EE"
-						}), o.a.createElement(p.a, {
-							text: A.fbt._("Users will be able to edit flair text", null, {
+						}), o.a.createElement(d.a, {
+							text: U.fbt._("Users will be able to edit flair text", null, {
 								hk: "4mFIwp"
 							})
 						}))
-					}, o.a.createElement(ee.a, {
+					}, o.a.createElement(X.a, {
 						disabled: s.modOnly,
-						on: me(s),
+						on: ce(s),
 						onToggle: this.onToggleAllowUserEdits
-					})), me(s) && e && o.a.createElement(ne, {
-						label: A.fbt._("This flair allows", null, {
+					})), ce(s) && e && o.a.createElement(se, {
+						label: U.fbt._("This flair allows", null, {
 							hk: "3QLVMX"
 						}),
-						labelPosition: q.Top
-					}, o.a.createElement(ke.a, {
-						value: s.allowableContent || v.a.All,
+						labelPosition: V.Top
+					}, o.a.createElement(Se.a, {
+						value: s.allowableContent || f.a.All,
 						name: "allowable_content",
 						onChange: this.onAllowableContentChange
-					}, o.a.createElement(_e.a, {
-						className: It.a.radioOption,
+					}, o.a.createElement(ye.a, {
+						className: wt.a.radioOption,
 						showButton: !0,
-						value: v.a.All
-					}, A.fbt._("Text & Emojis", null, {
+						value: f.a.All
+					}, U.fbt._("Text & Emojis", null, {
 						hk: "QBDtY"
-					})), o.a.createElement(_e.a, {
-						className: It.a.radioOption,
+					})), o.a.createElement(ye.a, {
+						className: wt.a.radioOption,
 						showButton: !0,
-						value: v.a.Emoji
-					}, A.fbt._("Emoji only", null, {
+						value: f.a.Emoji
+					}, U.fbt._("Emoji only", null, {
 						hk: "3Ang3z"
-					})), o.a.createElement(_e.a, {
-						className: It.a.radioOption,
+					})), o.a.createElement(ye.a, {
+						className: wt.a.radioOption,
 						showButton: !0,
-						value: v.a.Text
-					}, A.fbt._("Text only", null, {
+						value: f.a.Text
+					}, U.fbt._("Text only", null, {
 						hk: "3HPYeS"
-					})))), me(s) && s.allowableContent !== v.a.Text && e && o.a.createElement(ne, {
-						label: A.fbt._("Limit number of emojis", null, {
+					})))), ce(s) && s.allowableContent !== f.a.Text && e && o.a.createElement(se, {
+						label: U.fbt._("Limit number of emojis", null, {
 							hk: "LnZU0"
 						}),
-						labelPosition: q.Top
-					}, o.a.createElement(ye.a, {
-						buttonClassName: It.a.dropdownSelectorButton,
-						className: It.a.dropdownSelector,
+						labelPosition: V.Top
+					}, o.a.createElement(Te.a, {
+						buttonClassName: wt.a.dropdownSelectorButton,
+						className: wt.a.dropdownSelector,
 						displayText: String(x),
 						name: "max_emojis",
-						options: Dt,
+						options: Pt,
 						onSelect: this.onEmojiLimitChange
-					})))), i && s.styleTemplate && o.a.createElement(wt, {
-						className: It.a.postAppearanceEditor,
+					})))), i && s.styleTemplate && o.a.createElement(_t, {
+						className: wt.a.postAppearanceEditor,
 						isSavePending: !!this.props.isSavePending,
 						onChange: this.props.onChange,
 						subredditId: t,
 						templateDraft: s
 					}), o.a.createElement("div", {
-						className: It.a.buttonsRow
-					}, o.a.createElement(f.o, {
+						className: wt.a.buttonsRow
+					}, o.a.createElement(h.o, {
 						onClick: this.props.onCancel
-					}, A.fbt._("Cancel", null, {
+					}, U.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), o.a.createElement(f.l, {
+					})), o.a.createElement(h.l, {
 						disabled: this.props.isSavePending || l,
 						onClick: this.props.onSave
-					}, this.props.isSavePending ? o.a.createElement(Z.a, {
-						className: It.a.loadingIcon,
+					}, this.props.isSavePending ? o.a.createElement(Y.a, {
+						className: wt.a.loadingIcon,
 						sizePx: 10
-					}) : A.fbt._("Save", null, {
+					}) : U.fbt._("Save", null, {
 						hk: "4yMsMq"
 					}))))
 				}
 			}
-			const Mt = (e, t) => e.modOnly ? A.fbt._("Mod only", null, {
+			const Nt = (e, t) => e.modOnly ? U.fbt._("Mod only", null, {
 					hk: "1G6N0z"
-				}) : e.textEditable ? t ? A.fbt._("Editable, {restrictions}", [A.fbt._param("restrictions", Object(E.k)(e))], {
+				}) : e.textEditable ? t ? U.fbt._("Editable, {restrictions}", [U.fbt._param("restrictions", Object(b.k)(e))], {
 					hk: "2GbweM"
-				}) : A.fbt._("Editable", null, {
+				}) : U.fbt._("Editable", null, {
 					hk: "33SB9g"
 				}) : "",
-				Rt = e => ({
-					...b.a,
-					backgroundColor: e === v.d.UserFlair ? W.c : W.a.defaultFlair
+				Ft = e => ({
+					...u.a,
+					backgroundColor: e === f.d.UserFlair ? L.c : L.a.defaultFlair
 				});
-			var Ut = s("./src/reddit/components/ModHub/flairs/FlairManagement/FlairTemplateRow/index.m.less"),
-				Bt = s.n(Ut);
-			class Lt extends o.a.PureComponent {
+			var Mt = s("./src/reddit/components/ModHub/flairs/FlairManagement/FlairTemplateRow/index.m.less"),
+				Rt = s.n(Mt);
+			class Ut extends o.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onStartEditButtonClick = () => {
 						this.props.onStartEditing && this.props.onStartEditing(this.props.flairTemplate.id)
@@ -1469,36 +1443,36 @@
 						flairTemplate: s,
 						isEditing: a,
 						isReordering: n
-					} = this.props, r = Object(E.c)(s);
+					} = this.props, i = Object(b.c)(s);
 					return o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
-						className: Object(i.a)(Bt.a.row, n ? Bt.a.reordering : null)
+						className: Object(Z.a)(Rt.a.row, n ? Rt.a.reordering : null)
 					}, o.a.createElement("div", {
-						className: Bt.a.flairPreviewCell
-					}, o.a.createElement(Ce.c, {
-						className: Bt.a.flairComponent,
-						flair: r,
+						className: Rt.a.flairPreviewCell
+					}, o.a.createElement(be.c, {
+						className: Rt.a.flairComponent,
+						flair: i,
 						forceSmallEmojis: !0
 					})), o.a.createElement("div", {
-						className: Bt.a.cssClassCell
+						className: Rt.a.cssClassCell
 					}, s.cssClass), o.a.createElement("div", {
-						className: Bt.a.settingsCell
-					}, Mt(s, e)), o.a.createElement("div", {
-						className: Bt.a.flairIdCell
-					}, o.a.createElement(f.r, {
+						className: Rt.a.settingsCell
+					}, Nt(s, e)), o.a.createElement("div", {
+						className: Rt.a.flairIdCell
+					}, o.a.createElement(h.r, {
 						disabled: !this.props.flairTemplate.id,
 						onClick: this.onCopyIdButtonClick
-					}, A.fbt._("Copy Id", null, {
+					}, U.fbt._("Copy Id", null, {
 						hk: "1F6Ntm"
-					})), o.a.createElement(f.r, {
+					})), o.a.createElement(h.r, {
 						disabled: t || a,
 						onClick: this.onStartEditButtonClick
-					}, A.fbt._("Edit", null, {
+					}, U.fbt._("Edit", null, {
 						hk: "1nftDt"
-					})), o.a.createElement(f.r, {
-						className: Bt.a.removeButton,
+					})), o.a.createElement(h.r, {
+						className: Rt.a.removeButton,
 						disabled: a,
 						onClick: this.onRemoveButtonClick
-					}, o.a.createElement(Ee.b, null)))), a && o.a.createElement(Ft, {
+					}, o.a.createElement(fe.b, null)))), a && o.a.createElement(Dt, {
 						areFlairRestrictionsEnabled: e,
 						flairTemplateType: this.props.flairTemplateType,
 						isSavePending: this.props.isSavePending,
@@ -1511,31 +1485,31 @@
 					}))
 				}
 			}
-			var At = s("./src/reddit/components/ModHub/flairs/FlairManagement/Placeholder/index.m.less"),
-				Ht = s.n(At);
-			var Wt = e => o.a.createElement("div", {
-					className: Ht.a.container
-				}, o.a.createElement(Je.a, {
+			var Bt = s("./src/reddit/components/ModHub/flairs/FlairManagement/Placeholder/index.m.less"),
+				Lt = s.n(Bt);
+			var At = e => o.a.createElement("div", {
+					className: Lt.a.container
+				}, o.a.createElement(Ve.a, {
 					name: "tag",
-					className: Ht.a.icon
+					className: Lt.a.icon
 				}), o.a.createElement("h3", {
-					className: Ht.a.header
-				}, e.flairTemplateType === v.d.UserFlair ? A.fbt._("You do not have any user flair", null, {
+					className: Lt.a.header
+				}, e.flairTemplateType === f.d.UserFlair ? U.fbt._("You do not have any user flair", null, {
 					hk: "VFnhz"
-				}) : A.fbt._("You do not have any post flair", null, {
+				}) : U.fbt._("You do not have any post flair", null, {
 					hk: "26g8jc"
 				})), o.a.createElement("p", {
-					className: Ht.a.details
-				}, e.flairTemplateType === v.d.UserFlair ? A.fbt._("Create user flair in your community today", null, {
+					className: Lt.a.details
+				}, e.flairTemplateType === f.d.UserFlair ? U.fbt._("Create user flair in your community today", null, {
 					hk: "1OHj7g"
-				}) : A.fbt._("Create post flair in your community today", null, {
+				}) : U.fbt._("Create post flair in your community today", null, {
 					hk: "1QVXca"
 				}))),
-				Vt = s("./src/reddit/components/ModHub/flairs/FlairManagement/index.m.less"),
-				Qt = s.n(Vt);
+				Ht = s("./src/reddit/components/ModHub/flairs/FlairManagement/index.m.less"),
+				Wt = s.n(Ht);
 
-			function Jt() {
-				return (Jt = Object.assign || function(e) {
+			function Vt() {
+				return (Vt = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var a in s) Object.prototype.hasOwnProperty.call(s, a) && (e[a] = s[a])
@@ -1543,32 +1517,26 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const qt = "Flair-discard-changes-confirmation",
-				zt = "Flair-remove-confirmation",
-				Yt = "Flair-settings-modal";
-			var Gt;
+			const Qt = "Flair-discard-changes-confirmation",
+				qt = "Flair-remove-confirmation",
+				Jt = "Flair-settings-modal";
+			var zt;
 			! function(e) {
 				e[e.Default = 0] = "Default", e[e.AddingTemplate = 1] = "AddingTemplate", e[e.EditingTemplate = 2] = "EditingTemplate", e[e.Reordering = 3] = "Reordering"
-			}(Gt || (Gt = {}));
-			const Kt = {
+			}(zt || (zt = {}));
+			const Gt = {
 				isTemplateSavePending: !1,
-				mode: Gt.Default,
+				mode: zt.Default,
 				numTemplatesReordered: 0,
 				templateBeforeEditing: void 0,
 				templateDraft: void 0,
 				templateIdsNewOrder: [],
 				templateIdToRemove: void 0
 			};
-			class Xt extends o.a.Component {
+			class Yt extends o.a.Component {
 				constructor() {
 					super(...arguments), this.isUnmounted = !1, this.state = {
-						...Kt,
-						isFixed: !this.props.isInShredditModNavExperiment || this.props.flairTemplateType !== v.d.UserFlair
-					}, this.isSticky = () => {
-						const e = window.scrollY >= 100;
-						this.setState({
-							isFixed: e
-						})
+						...Gt
 					}, this.hasUnsavedChanges = () => {
 						return this.state.templateDraft !== this.state.templateBeforeEditing
 					}, this.saveCurrentTemplateDraft = async () => {
@@ -1582,36 +1550,36 @@
 						const t = await this.props.onSaveTemplate(e);
 						this.isUnmounted || (this.setState({
 							isTemplateSavePending: !1
-						}), t && this.setState(Kt))
+						}), t && this.setState(Gt))
 					}, this.resetPendingNavigation = () => {
 						this.props.allowNavigationCallback && this.props.allowNavigationCallback(!1)
 					}, this.performPendingNavigationIfNeeded = () => {
 						this.props.allowNavigationCallback && this.props.allowNavigationCallback(!0)
 					}, this.onSettingsButtonClick = () => {
-						this.props.toggleModal(Yt)
+						this.props.toggleModal(Jt)
 					}, this.onCloseModal = () => {
 						this.props.closeAllModals(), this.resetPendingNavigation()
 					}, this.onAddNewTemplateButtonClick = () => {
-						const e = Rt(this.props.flairTemplateType);
+						const e = Ft(this.props.flairTemplateType);
 						this.setState({
-							mode: Gt.AddingTemplate,
+							mode: zt.AddingTemplate,
 							templateDraft: e,
 							templateBeforeEditing: e
 						})
 					}, this.onRemoveTemplateButtonClick = e => {
 						this.setState({
 							templateIdToRemove: e
-						}), this.props.toggleModal(zt)
+						}), this.props.toggleModal(qt)
 					}, this.onRemoveTemplateConfirmed = () => {
-						this.props.onRemoveTemplate(this.state.templateIdToRemove), this.props.sendEvent(_(this.props.flairTemplateType))
+						this.props.onRemoveTemplate(this.state.templateIdToRemove), this.props.sendEvent(S(this.props.flairTemplateType))
 					}, this.onStartEditingExistingTemplate = e => {
-						if (this.hasUnsavedChanges()) return void this.props.toggleModal(qt);
-						const t = be({
+						if (this.hasUnsavedChanges()) return void this.props.toggleModal(Qt);
+						const t = he({
 							...this.props.templates[e],
 							styleTemplate: this.props.styleTemplates && this.props.styleTemplates[e]
 						}, this.props.flairTemplateType, this.props.subredditEmojiData);
 						this.setState({
-							mode: Gt.EditingTemplate,
+							mode: zt.EditingTemplate,
 							templateDraft: t,
 							templateBeforeEditing: t
 						})
@@ -1621,7 +1589,7 @@
 						})
 					}, this.onReorderButtonClick = () => {
 						this.setState({
-							mode: Gt.Reordering,
+							mode: zt.Reordering,
 							numTemplatesReordered: 0,
 							templateIdsNewOrder: [...this.props.templateIds]
 						})
@@ -1638,62 +1606,20 @@
 							numTemplatesReordered: e,
 							templateIdsNewOrder: t
 						} = this.state;
-						this.props.onReorderTemplates(t), this.props.sendEvent(R(this.props.flairTemplateType, e)), this.setState(Kt)
+						this.props.onReorderTemplates(t), this.props.sendEvent(N(this.props.flairTemplateType, e)), this.setState(Gt)
 					}, this.onCancelReorderingClick = () => {
-						this.setState(Kt)
+						this.setState(Gt)
 					}, this.onCancelEditingTemplateClick = () => {
-						this.hasUnsavedChanges() ? this.props.toggleModal(qt) : this.setState(Kt)
+						this.hasUnsavedChanges() ? this.props.toggleModal(Qt) : this.setState(Gt)
 					}, this.onDiscardUnsavedChangesConfirmed = () => {
-						this.setState(Kt), this.performPendingNavigationIfNeeded()
-					}, this.renderTopBar = e => {
-						const {
-							templateIds: t
-						} = this.props, {
-							mode: s
-						} = this.state, a = this.props.flairTemplateType === v.d.UserFlair, n = t.length >= b.h;
-						return o.a.createElement(u.c, {
-							className: Object(i.a)(e ? "bg-neutral-background mb-xs pr-0" : "fixed pr-lg", Qt.a.topBar, {
-								[Qt.a.default]: e && !a,
-								[Qt.a.defaultColor]: !e,
-								[Qt.a.fixed]: this.state.isFixed
-							})
-						}, s === Gt.Reordering ? o.a.createElement(o.a.Fragment, null, o.a.createElement(f.o, {
-							onClick: this.onCancelReorderingClick
-						}, A.fbt._("Cancel", null, {
-							hk: "2TSLl5"
-						})), o.a.createElement(f.l, {
-							disabled: !this.state.numTemplatesReordered,
-							onClick: this.onSaveCurrentOrderClick
-						}, A.fbt._("Save", null, {
-							hk: "4yMsMq"
-						}))) : o.a.createElement(o.a.Fragment, null, o.a.createElement(f.o, {
-							className: Qt.a.settingsButton,
-							onClick: this.onSettingsButtonClick
-						}, a ? A.fbt._("User flair settings", null, {
-							hk: "nqCOM"
-						}) : A.fbt._("Post flair settings", null, {
-							hk: "m80j6"
-						})), o.a.createElement(f.o, {
-							disabled: s !== Gt.Default || t.length < 2,
-							onClick: this.onReorderButtonClick
-						}, A.fbt._("Reorder", null, {
-							hk: "1tQe48"
-						})), o.a.createElement(f.l, {
-							disabled: s !== Gt.Default || n,
-							onClick: this.onAddNewTemplateButtonClick,
-							title: n ? A.fbt._("Maximum number of templates reached", null, {
-								hk: "3pJF49"
-							}) : void 0
-						}, A.fbt._("Add flair", null, {
-							hk: "4oqbLK"
-						}))))
+						this.setState(Gt), this.performPendingNavigationIfNeeded()
 					}
 				}
 				componentDidMount() {
-					this.props.onGetSubredditEmojisIfNeeded(), this.props.isInShredditModNavExperiment && this.props.flairTemplateType === v.d.UserFlair && window.addEventListener("scroll", this.isSticky)
+					this.props.onGetSubredditEmojisIfNeeded()
 				}
 				componentWillUnmount() {
-					this.isUnmounted = !0, this.props.isInShredditModNavExperiment && this.props.flairTemplateType === v.d.UserFlair && window.removeEventListener("scroll", this.isSticky)
+					this.isUnmounted = !0
 				}
 				sendOnSaveEvents(e) {
 					const {
@@ -1702,22 +1628,20 @@
 						flairTemplateType: s
 					} = this.props, a = !e.id;
 					if (!t) return;
-					e.modOnly !== t.modOnly && this.props.sendEvent(N(s, !!e.modOnly)), e.textEditable !== t.textEditable && this.props.sendEvent(D(s, !!e.textEditable)), !!e.styleTemplate != !!t.styleTemplate && this.props.sendEvent(M(!!e.styleTemplate));
-					const n = e.allowableContent || v.a.All;
-					n !== (t.allowableContent || v.a.All) && this.props.sendEvent(B(s, n)), Object(E.l)(e) !== Object(E.l)(t) && this.props.sendEvent(L(s, Object(E.l)(e))), this.props.sendEvent(F(s, a))
+					e.modOnly !== t.modOnly && this.props.sendEvent(j(s, !!e.modOnly)), e.textEditable !== t.textEditable && this.props.sendEvent(I(s, !!e.textEditable)), !!e.styleTemplate != !!t.styleTemplate && this.props.sendEvent(D(!!e.styleTemplate));
+					const n = e.allowableContent || f.a.All;
+					n !== (t.allowableContent || f.a.All) && this.props.sendEvent(M(s, n)), Object(b.l)(e) !== Object(b.l)(t) && this.props.sendEvent(R(s, Object(b.l)(e))), this.props.sendEvent(P(s, a))
 				}
 				render() {
 					const {
 						areFlairRestrictionsEnabled: e,
-						templateIds: t,
-						isInShredditModNavExperiment: s,
-						subredditName: n
+						templateIds: t
 					} = this.props, {
-						mode: g,
-						templateDraft: b
-					} = this.state, f = this.props.flairTemplateType === v.d.UserFlair, E = this.hasUnsavedChanges(), x = b && b.id, T = {
+						mode: s,
+						templateDraft: n
+					} = this.state, m = this.props.flairTemplateType === f.d.UserFlair, b = this.hasUnsavedChanges(), C = n && n.id, E = {
 						areFlairRestrictionsEnabled: e,
-						disableEditButton: g !== Gt.Default,
+						disableEditButton: s !== zt.Default,
 						flairTemplateType: this.props.flairTemplateType,
 						onCancel: this.onCancelEditingTemplateClick,
 						onChange: this.onTemplateDraftChange,
@@ -1727,123 +1651,152 @@
 						onStartEditing: this.onStartEditingExistingTemplate,
 						subredditEmojiData: this.props.subredditEmojiData,
 						subredditId: this.props.subredditId
-					};
+					}, v = t.length >= u.h;
 					return o.a.createElement("div", {
-						className: Qt.a.container
-					}, (!s || s && !f) && this.renderTopBar(s), o.a.createElement(u.a, {
-						className: Object(i.a)(Qt.a.contentContainer, {
-							[Qt.a.newModNav]: s && f
-						})
-					}, s && n && f ? o.a.createElement(o.a.Fragment, null, Object(m.d)(n, r.nc.UserFlair), this.renderTopBar(!0)) : o.a.createElement(u.b, null, f ? A.fbt._("User flair management", null, {
+						className: Wt.a.container
+					}, o.a.createElement(c.c, {
+						className: Wt.a.topBar
+					}, s === zt.Reordering ? o.a.createElement(o.a.Fragment, null, o.a.createElement(h.o, {
+						onClick: this.onCancelReorderingClick
+					}, U.fbt._("Cancel", null, {
+						hk: "2TSLl5"
+					})), o.a.createElement(h.l, {
+						disabled: !this.state.numTemplatesReordered,
+						onClick: this.onSaveCurrentOrderClick
+					}, U.fbt._("Save", null, {
+						hk: "4yMsMq"
+					}))) : o.a.createElement(o.a.Fragment, null, o.a.createElement(h.o, {
+						className: Wt.a.settingsButton,
+						onClick: this.onSettingsButtonClick
+					}, m ? U.fbt._("User flair settings", null, {
+						hk: "nqCOM"
+					}) : U.fbt._("Post flair settings", null, {
+						hk: "m80j6"
+					})), o.a.createElement(h.o, {
+						disabled: s !== zt.Default || t.length < 2,
+						onClick: this.onReorderButtonClick
+					}, U.fbt._("Reorder", null, {
+						hk: "1tQe48"
+					})), o.a.createElement(h.l, {
+						disabled: s !== zt.Default || v,
+						onClick: this.onAddNewTemplateButtonClick,
+						title: v ? U.fbt._("Maximum number of templates reached", null, {
+							hk: "3pJF49"
+						}) : void 0
+					}, U.fbt._("Add flair", null, {
+						hk: "4oqbLK"
+					})))), o.a.createElement(c.a, {
+						className: Wt.a.contentContainer
+					}, o.a.createElement(c.b, null, m ? U.fbt._("User flair management", null, {
 						hk: "2a4oeD"
-					}) : A.fbt._("Post flair management", null, {
+					}) : U.fbt._("Post flair management", null, {
 						hk: "3DSrei"
-					}), o.a.createElement(c.a, {
+					}), o.a.createElement(l.a, {
 						linkUrl: `${a.a.redditModHelpUrl}/${this.props.helpCenterLink}`
-					})), !this.props.flairSettings.displaySettings.isEnabled && o.a.createElement(z, {
-						className: Qt.a.disabledBanner,
+					})), !this.props.flairSettings.displaySettings.isEnabled && o.a.createElement(Q, {
+						className: Wt.a.disabledBanner,
 						flairTemplateType: this.props.flairTemplateType
 					}), o.a.createElement("div", {
-						className: Qt.a.table
+						className: Wt.a.table
 					}, o.a.createElement("div", {
-						className: Qt.a.tableHead
+						className: Wt.a.tableHead
 					}, o.a.createElement("div", {
-						className: Qt.a.flairPreviewColHeader
-					}, f ? A.fbt._("User flair preview", null, {
+						className: Wt.a.flairPreviewColHeader
+					}, m ? U.fbt._("User flair preview", null, {
 						hk: "1RayEx"
-					}) : A.fbt._("Post flair preview", null, {
+					}) : U.fbt._("Post flair preview", null, {
 						hk: "ykrSg"
 					})), o.a.createElement("div", {
-						className: Qt.a.cssClassColHeader
-					}, A.fbt._("CSS class", null, {
+						className: Wt.a.cssClassColHeader
+					}, U.fbt._("CSS class", null, {
 						hk: "1iLHCz"
-					}), o.a.createElement(p.a, {
-						text: A.fbt._("CSS classes determine the styling for flair in old Reddit", null, {
+					}), o.a.createElement(d.a, {
+						text: U.fbt._("CSS classes determine the styling for flair in old Reddit", null, {
 							hk: "HW6Jx"
 						})
 					})), o.a.createElement("div", {
-						className: Qt.a.settingsColHeader
-					}, A.fbt._("Settings", null, {
+						className: Wt.a.settingsColHeader
+					}, U.fbt._("Settings", null, {
 						hk: "3Ibtnu"
-					}), o.a.createElement(p.a, {
-						text: e ? A.fbt._("Shows if flair is mod-only, user editable, allows text, or allows emojis", null, {
+					}), o.a.createElement(d.a, {
+						text: e ? U.fbt._("Shows if flair is mod-only, user editable, allows text, or allows emojis", null, {
 							hk: "2dhPaz"
-						}) : A.fbt._("Set flair to be user editable or mod-only", null, {
+						}) : U.fbt._("Set flair to be user editable or mod-only", null, {
 							hk: "4ER9Qm"
 						})
 					})), o.a.createElement("div", {
-						className: Qt.a.flairIdColHeader
-					}, A.fbt._("Flair ID", null, {
+						className: Wt.a.flairIdColHeader
+					}, U.fbt._("Flair ID", null, {
 						hk: "21YCV0"
-					}), o.a.createElement(p.a, {
-						text: A.fbt._("Use this ID when configuring automod to assign flair", null, {
+					}), o.a.createElement(d.a, {
+						text: U.fbt._("Use this ID when configuring automod to assign flair", null, {
 							hk: "3BJT9a"
 						})
 					}))), o.a.createElement("div", {
-						className: Qt.a.tableBody
-					}, g === Gt.Default && !t.length && o.a.createElement(Wt, {
+						className: Wt.a.tableBody
+					}, s === zt.Default && !t.length && o.a.createElement(At, {
 						flairTemplateType: this.props.flairTemplateType
-					}), g === Gt.Reordering ? o.a.createElement(C.a, {
+					}), s === zt.Reordering ? o.a.createElement(g.a, {
 						values: this.state.templateIdsNewOrder,
 						onDrop: this.onTemplatesOrderChange,
-						render: (e, t, s, a, n) => o.a.createElement(h.a, {
+						render: (e, t, s, a, n) => o.a.createElement(p.a, {
 							canDrop: n,
-							className: Qt.a.dragItem,
-							iconClassName: Qt.a.dragIcon,
+							className: Wt.a.dragItem,
+							iconClassName: Wt.a.dragIcon,
 							isDragging: s,
 							isOver: a
-						}, o.a.createElement(Lt, Jt({}, T, {
+						}, o.a.createElement(Ut, Vt({}, E, {
 							flairTemplate: this.props.templates[e],
 							isReordering: !0
 						})))
-					}) : t.map(e => o.a.createElement(Lt, Jt({}, T, {
+					}) : t.map(e => o.a.createElement(Ut, Vt({}, E, {
 						key: e,
-						flairTemplate: e === x ? b : this.props.templates[e],
-						isEditing: e === x,
-						isSavePending: this.state.isTemplateSavePending && e === x
-					}))), g === Gt.AddingTemplate && o.a.createElement(Lt, Jt({}, T, {
-						flairTemplate: b,
+						flairTemplate: e === C ? n : this.props.templates[e],
+						isEditing: e === C,
+						isSavePending: this.state.isTemplateSavePending && e === C
+					}))), s === zt.AddingTemplate && o.a.createElement(Ut, Vt({}, E, {
+						flairTemplate: n,
 						isSavePending: this.state.isTemplateSavePending,
 						isEditing: !0
-					}))))), o.a.createElement(l.a, {
+					}))))), o.a.createElement(i.a, {
 						blockOnBeforeUnload: !0,
-						dialogId: qt,
-						enabled: E
-					}), this.props.activeModalId === qt && o.a.createElement(d.a, {
-						actionText: A.fbt._("Discard", null, {
+						dialogId: Qt,
+						enabled: b
+					}), this.props.activeModalId === Qt && o.a.createElement(r.a, {
+						actionText: U.fbt._("Discard", null, {
 							hk: "wpQ8E"
 						}),
-						headerText: x ? A.fbt._("Discard changes before leaving?", null, {
+						headerText: C ? U.fbt._("Discard changes before leaving?", null, {
 							hk: "1GQ3tN"
-						}) : A.fbt._("Discard new flair?", null, {
+						}) : U.fbt._("Discard new flair?", null, {
 							hk: "2aMQ0O"
 						}),
-						modalText: x ? A.fbt._("You have made some changes to your flair, do you wish to discard the changes to the flair you are editing?", null, {
+						modalText: C ? U.fbt._("You have made some changes to your flair, do you wish to discard the changes to the flair you are editing?", null, {
 							hk: "vZlhx"
-						}) : A.fbt._("You have a new flair that has not been saved, do you wish to discard this new flair?", null, {
+						}) : U.fbt._("You have a new flair that has not been saved, do you wish to discard this new flair?", null, {
 							hk: "4lrde4"
 						}),
 						onConfirm: this.onDiscardUnsavedChangesConfirmed,
 						toggleModal: this.onCloseModal,
 						withOverlay: !0
-					}), this.props.activeModalId === zt && o.a.createElement(d.a, {
-						actionText: A.fbt._("Delete", null, {
+					}), this.props.activeModalId === qt && o.a.createElement(r.a, {
+						actionText: U.fbt._("Delete", null, {
 							hk: "4lt26q"
 						}),
-						headerText: f ? A.fbt._("Delete user flair?", null, {
+						headerText: m ? U.fbt._("Delete user flair?", null, {
 							hk: "oY3En"
-						}) : A.fbt._("Delete post flair?", null, {
+						}) : U.fbt._("Delete post flair?", null, {
 							hk: "3l1CC1"
 						}),
-						modalText: f ? A.fbt._("Do you wish to delete this user flair?", null, {
+						modalText: m ? U.fbt._("Do you wish to delete this user flair?", null, {
 							hk: "2JAD1B"
-						}) : A.fbt._("Do you wish to delete this post flair?", null, {
+						}) : U.fbt._("Do you wish to delete this post flair?", null, {
 							hk: "1a7Q1w"
 						}),
 						onConfirm: this.onRemoveTemplateConfirmed,
 						toggleModal: this.onCloseModal,
 						withOverlay: !0
-					}), this.props.activeModalId === Yt && o.a.createElement(le, {
+					}), this.props.activeModalId === Jt && o.a.createElement(ie, {
 						onClose: this.onCloseModal,
 						onSave: this.props.onSaveSettings,
 						sendEvent: this.props.sendEvent,
@@ -1853,7 +1806,7 @@
 					}))
 				}
 			}
-			t.a = Object(g.c)(Xt)
+			t.a = Object(m.c)(Yt)
 		},
 		"./src/reddit/components/StructuredStyles/ColorPicker/BaseColorPicker.tsx": function(e, t, s) {
 			"use strict";
@@ -2218,4 +2171,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.1f84d781a70e2ae2775e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.7b47abe8dcba4a97ba29.js.map

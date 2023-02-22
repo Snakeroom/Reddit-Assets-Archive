@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostSetPage.3c9eb288b56723ee0af5.js
-// Retrieved at 2/22/2023, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostSetPage.9d8173bd8006698baa87.js
+// Retrieved at 2/22/2023, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostSetPage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -3117,7 +3117,7 @@
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: s.D
-				}) === s.Kd
+				}) === s.Ld
 			}
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, n) {
@@ -3157,13 +3157,13 @@
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: () => t,
 						experimentName: s.pc
-					}) === s.Kd
+					}) === s.Ld
 				},
 				o = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
 						experimentName: s.oc
-					}) === s.Kd
+					}) === s.Ld
 				}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, n) {
@@ -3201,4 +3201,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.3c9eb288b56723ee0af5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.9d8173bd8006698baa87.js.map

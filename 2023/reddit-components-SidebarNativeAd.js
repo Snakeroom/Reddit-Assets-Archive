@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.4bd2ad0a355bb08315ea.js
-// Retrieved at 2/21/2023, 3:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.047a00fad63b1fd90433.js
+// Retrieved at 2/22/2023, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1509,8 +1509,8 @@
 				const z = {
 						caretOnTop: !1
 					},
-					K = G.isRemoved && !G.modRemovalReason && !G.modNote && G.belongsTo.type === b.a.SUBREDDIT,
-					q = U("Approve", G.id, W),
+					q = G.isRemoved && !G.modRemovalReason && !G.modNote && G.belongsTo.type === b.a.SUBREDDIT,
+					K = U("Approve", G.id, W),
 					H = U("Archived", G.id, W),
 					Y = U("Lock", G.id, W),
 					X = U("Mod", G.id, W),
@@ -1572,11 +1572,11 @@
 					isFilled: !0,
 					className: Object(c.a)(T.a.icon, T.a.approveIcon),
 					desc: Object(v.a)(G),
-					id: q,
-					onMouseEnter: D(q),
+					id: K,
+					onMouseEnter: D(K),
 					onMouseLeave: w
 				}), s.a.createElement(u.c, M({
-					tooltipId: q,
+					tooltipId: K,
 					text: Object(v.a)(G)
 				}, z))), Object(h.a)(G) && s.a.createElement(o.Fragment, null, s.a.createElement(E.a, {
 					isFilled: !0,
@@ -1585,7 +1585,7 @@
 					id: J,
 					onMouseEnter: D(J),
 					onMouseLeave: w
-				}), K && s.a.createElement(m.a, {
+				}), q && s.a.createElement(m.a, {
 					className: T.a.addRemovalReason,
 					onClick: S,
 					text: r.fbt._("Add a removal reason", null, {
@@ -1770,7 +1770,7 @@
 			const b = Object(p.a)(e => Object(m.c)(e, {
 				experimentEligibilitySelector: m.a,
 				experimentName: u.sc
-			}), e => e === u.Kd);
+			}), e => e === u.Ld);
 			var f = n("./node_modules/fbt/lib/FbtPublic.js"),
 				h = n("./src/lib/classNames/index.ts"),
 				v = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
@@ -1837,7 +1837,7 @@
 				W = n("./src/reddit/selectors/profile.ts"),
 				V = n("./src/reddit/components/PromotedUserPostsAd/PromotedUserPostMedia/index.m.less"),
 				z = n.n(V);
-			const K = e => {
+			const q = e => {
 				let {
 					post: t
 				} = e;
@@ -1874,8 +1874,8 @@
 					isNSFW: !1
 				})))
 			};
-			var q = n("./src/reddit/components/PromotedUserPostsAd/PromotedUserPost/index.m.less"),
-				H = n.n(q);
+			var K = n("./src/reddit/components/PromotedUserPostsAd/PromotedUserPost/index.m.less"),
+				H = n.n(K);
 			const Y = Object(k.a)(null);
 			var X = Object(C.b)(Y(e => {
 					let {
@@ -1892,7 +1892,7 @@
 						className: H.a.container
 					}, o.a.createElement(L, {
 						post: t
-					}), o.a.createElement(K, {
+					}), o.a.createElement(q, {
 						post: t
 					})))
 				})),
@@ -2137,8 +2137,8 @@
 				W = n("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
 				V = n("./src/reddit/selectors/user.ts"),
 				z = n("./src/telemetry/models/Outbound.ts"),
-				K = n("./src/reddit/components/PostTitle/getLeftAndRightFlair.ts"),
-				q = n("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
+				q = n("./src/reddit/components/PostTitle/getLeftAndRightFlair.ts"),
+				K = n("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
 				H = n("./src/reddit/components/PostTitle/index.m.less"),
 				Y = n.n(H);
 
@@ -2369,7 +2369,7 @@
 					} = this.props, p = n === k.b.Left, b = Object(T.b)(c), {
 						leftFlair: f,
 						rightFlair: h
-					} = Object(K.a)({
+					} = Object(q.a)({
 						flair: b,
 						isFlairPositionedLeft: p,
 						showNSFWSpoilerFlairsOnly: d,
@@ -2378,7 +2378,7 @@
 					return i.a.createElement("div", {
 						className: Object(u.a)(Y.a.Component, e, c.id),
 						ref: this.props.innerRef,
-						"data-adclicklocation": q.a.TITLE,
+						"data-adclicklocation": K.a.TITLE,
 						onClick: m
 					}, !d && _ && i.a.createElement(T.a, {
 						isFlairFilter: !0,
@@ -2686,8 +2686,8 @@
 				W = m.a.wrapped(k.a, "OutboundLinkIcon", B.a),
 				V = m.a.div("SourceLinkWrapper", B.a),
 				z = m.a.div("TopLine", B.a),
-				K = m.a.wrapped(c.c, "PostTitle", B.a),
-				q = m.a.div("PostMediaWrapper", B.a),
+				q = m.a.wrapped(c.c, "PostTitle", B.a),
+				K = m.a.div("PostMediaWrapper", B.a),
 				H = m.a.div("BackgroundWrapper", B.a),
 				Y = m.a.wrapped(h.b, "PostContainer", B.a),
 				X = 640,
@@ -2738,7 +2738,7 @@
 						tooltipType: o ? d.f.Lightbox : void 0,
 						post: e,
 						showTimestamp: !1
-					})), s.a.createElement(K, {
+					})), s.a.createElement(q, {
 						post: e,
 						size: c.b.Large,
 						format: J
@@ -2747,7 +2747,7 @@
 						isSponsored: !0,
 						postId: e.id,
 						source: e.source
-					}, Object(u.a)(e), s.a.createElement(W, null))), s.a.createElement(q, null, e.media && s.a.createElement(a.a, {
+					}, Object(u.a)(e), s.a.createElement(W, null))), s.a.createElement(K, null, e.media && s.a.createElement(a.a, {
 						isListing: !0,
 						isNotCardView: !0,
 						showCentered: !0,
@@ -3539,9 +3539,9 @@
 			})), n.d(t, "clickNextButtonEvent", (function() {
 				return z
 			})), n.d(t, "clickCloseGildModalEvent", (function() {
-				return K
-			})), n.d(t, "viewKarmaSuccessEvent", (function() {
 				return q
+			})), n.d(t, "viewKarmaSuccessEvent", (function() {
+				return K
 			})), n.d(t, "clickFilterEvent", (function() {
 				return H
 			})), n.d(t, "clickNextFiltersEvent", (function() {
@@ -3774,13 +3774,13 @@
 					action: "click",
 					noun: "next"
 				}),
-				K = e => t => ({
+				q = e => t => ({
 					...b(t, e),
 					source: "give_gold",
 					action: "click",
 					noun: "close"
 				}),
-				q = e => {
+				K = e => {
 					let {
 						award: t,
 						awardeeKarmaEarned: n,
@@ -5461,4 +5461,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.4bd2ad0a355bb08315ea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.047a00fad63b1fd90433.js.map

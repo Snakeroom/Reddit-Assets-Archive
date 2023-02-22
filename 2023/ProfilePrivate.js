@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.e4d8bb929026df27affa.js
-// Retrieved at 2/22/2023, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.5c648185149d2d545d00.js
+// Retrieved at 2/22/2023, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -232,7 +232,7 @@
 						const e = {
 							includeIdentity: g,
 							includeModerated: x,
-							recentPostIds: Object(I.P)(null == h ? void 0 : h.id).reverse()
+							recentPostIds: Object(I.O)(null == h ? void 0 : h.id).reverse()
 						};
 						v = await ((e, t) => Object(a.a)(e, {
 							...m,
@@ -3165,7 +3165,7 @@
 			const b = Object(p.a)(e => Object(u.c)(e, {
 				experimentEligibilitySelector: u.a,
 				experimentName: m.sc
-			}), e => e === m.Kd);
+			}), e => e === m.Ld);
 			var h = s("./node_modules/fbt/lib/FbtPublic.js"),
 				g = s("./src/lib/classNames/index.ts"),
 				f = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
@@ -7435,7 +7435,7 @@
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
 					experimentName: n.D
-				}) === n.Kd
+				}) === n.Ld
 			}
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, s) {
@@ -7542,4 +7542,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.e4d8bb929026df27affa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.5c648185149d2d545d00.js.map

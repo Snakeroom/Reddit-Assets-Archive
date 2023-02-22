@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PushNotifications.455736119e93632a2d92.js
-// Retrieved at 2/21/2023, 3:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PushNotifications.0ca7d9c8c8140a147ddc.js
+// Retrieved at 2/22/2023, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -63,9 +63,9 @@
 			i.r(t), i.d(t, "initializeServiceWorkerChannel", (function() {
 				return D
 			})), i.d(t, "requestNotificationsPermissions", (function() {
-				return R
-			})), i.d(t, "subscribeForPNs", (function() {
 				return L
+			})), i.d(t, "subscribeForPNs", (function() {
+				return R
 			})), i.d(t, "unsubscribeFromPNs", (function() {
 				return P
 			})), i.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
@@ -99,13 +99,13 @@
 			const F = e => Object(w.c)(e, {
 				experimentEligibilitySelector: S.S,
 				experimentName: y.tb
-			}) === y.Kd;
+			}) === y.Ld;
 			var N = i("./src/reddit/selectors/experiments/delayDnPermission.ts"),
 				x = i("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts");
 			const q = e => Object(w.c)(e, {
 				experimentName: y.Yb,
 				experimentEligibilitySelector: w.a
-			}) === y.Kd;
+			}) === y.Ld;
 			var C = i("./src/reddit/selectors/meta.ts");
 			let W = !1;
 			const D = async (e, t) => {
@@ -130,7 +130,7 @@
 					command: "registerClient",
 					v2EventBoilerPlate: j.c(e)
 				})
-			}, R = function(e, t) {
+			}, L = function(e, t) {
 				let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : () => {};
 				return async (n, s, o) => {
 					const c = s(),
@@ -149,14 +149,14 @@
 					}, (e, t) => {
 						n(Object(d.o)()), n(P(t ? d.a.Denied : d.a.Closed)), e && (t ? j.e(c) : j.f(c)), i()
 					}, e => {
-						n(Object(d.p)()), n(L()), e && j.d(c), i()
+						n(Object(d.p)()), n(R()), e && j.d(c), i()
 					}, () => {
 						n(Object(d.n)()), i()
 					}, () => {
 						n(Object(d.r)())
 					}, O)
 				}
-			}, L = e => async (t, i, s) => {
+			}, R = e => async (t, i, s) => {
 				const o = i();
 				try {
 					switch (await Object(c.b)(s.gqlContext)) {
@@ -196,7 +196,7 @@
 				if (Object(f.a)(n) === d.d.NotificationsSupported) switch (Object(a.a)()) {
 					case d.a.Default:
 					case d.a.Closed:
-						await t(R(!0, !0));
+						await t(L(!0, !0));
 						break;
 					case d.a.Denied:
 						t(Object(b.h)(e))
@@ -215,7 +215,7 @@
 							e(P(d.a.Denied)), j.e(n);
 							break;
 						case d.a.Granted:
-							e(L()), j.d(n);
+							e(R()), j.d(n);
 							break;
 						default:
 							e(P(d.a.Default))
@@ -400,4 +400,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.455736119e93632a2d92.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.0ca7d9c8c8140a147ddc.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.b9b5c4230242a4fae90a.js
-// Retrieved at 2/21/2023, 3:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.a9f57606719128d4ea63.js
+// Retrieved at 2/22/2023, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba"], {
 		"./src/lib/scroll/index.ts": function(e, t, o) {
@@ -229,7 +229,7 @@
 			const ce = Object(se.a)(e => Object(re.c)(e, {
 				experimentEligibilitySelector: re.a,
 				experimentName: ne.yb
-			}), e => e === ne.Kd);
+			}), e => e === ne.Ld);
 			var ie = o("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				ae = o("./src/reddit/selectors/platform.ts"),
 				de = o("./src/reddit/selectors/posts.ts"),
@@ -850,7 +850,7 @@
 								commentId: e,
 								followState: t
 							})).ok) {
-							Object(q.rb)(null !== (m = null === (l = null === (d = r().pages) || void 0 === d ? void 0 : d.comments) || void 0 === l ? void 0 : l.followed) && void 0 !== m ? m : [], null === (u = r().user.account) || void 0 === u ? void 0 : u.id);
+							Object(q.qb)(null !== (m = null === (l = null === (d = r().pages) || void 0 === d ? void 0 : d.comments) || void 0 === l ? void 0 : l.followed) && void 0 !== m ? m : [], null === (u = r().user.account) || void 0 === u ? void 0 : u.id);
 							const e = s ? n.fbt._("Followed! You’ll get updates when there’s new activity.", null, {
 								hk: "2O1Ou3"
 							}) : n.fbt._("Unfollowed. You won’t get updates on this comment anymore.", null, {
@@ -991,7 +991,7 @@
 						}),
 						kind: m.b.SuccessCommunity,
 						text: a
-					})), Object(i.pb)(r + 1)
+					})), Object(i.ob)(r + 1)
 				}
 		},
 		"./src/reddit/components/CommentSort/CommentSort.m.less": function(e, t, o) {
@@ -2135,4 +2135,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.b9b5c4230242a4fae90a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.a9f57606719128d4ea63.js.map

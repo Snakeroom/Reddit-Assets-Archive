@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxTooltip.a1476efdac181ce6691e.js
-// Retrieved at 2/21/2023, 3:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxTooltip.1edce028f164db271689.js
+// Retrieved at 2/22/2023, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxTooltip", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -65,9 +65,9 @@
 			})), i.d(t, "requestNotificationsPermissions", (function() {
 				return A
 			})), i.d(t, "subscribeForPNs", (function() {
-				return R
-			})), i.d(t, "unsubscribeFromPNs", (function() {
 				return L
+			})), i.d(t, "unsubscribeFromPNs", (function() {
+				return R
 			})), i.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
 				return U
 			})), i.d(t, "subscribeToPermissionsChange", (function() {
@@ -99,13 +99,13 @@
 			const y = e => Object(N.c)(e, {
 				experimentEligibilitySelector: w.S,
 				experimentName: k.tb
-			}) === k.Kd;
+			}) === k.Ld;
 			var _ = i("./src/reddit/selectors/experiments/delayDnPermission.ts"),
 				I = i("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts");
 			const P = e => Object(N.c)(e, {
 				experimentName: k.Yb,
 				experimentEligibilitySelector: N.a
-			}) === k.Kd;
+			}) === k.Ld;
 			var E = i("./src/reddit/selectors/meta.ts");
 			let F = !1;
 			const C = async (e, t) => {
@@ -147,16 +147,16 @@
 					j.l(c), await Object(a.b)(e, t, () => {
 						l || f || b || n(Object(d.s)()), n(Object(d.q)()), j.j(c)
 					}, (e, t) => {
-						n(Object(d.o)()), n(L(t ? d.a.Denied : d.a.Closed)), e && (t ? j.e(c) : j.f(c)), i()
+						n(Object(d.o)()), n(R(t ? d.a.Denied : d.a.Closed)), e && (t ? j.e(c) : j.f(c)), i()
 					}, e => {
-						n(Object(d.p)()), n(R()), e && j.d(c), i()
+						n(Object(d.p)()), n(L()), e && j.d(c), i()
 					}, () => {
 						n(Object(d.n)()), i()
 					}, () => {
 						n(Object(d.r)())
 					}, O)
 				}
-			}, R = e => async (t, i, o) => {
+			}, L = e => async (t, i, o) => {
 				const s = i();
 				try {
 					switch (await Object(c.b)(o.gqlContext)) {
@@ -177,7 +177,7 @@
 				} catch (r) {
 					j.k(s, "registration_failed_uncaught_exception"), console.error(r)
 				}
-			}, L = (e, t) => async i => {
+			}, R = (e, t) => async i => {
 				try {
 					Object(f.b)(e);
 					const o = await Object(u.a)();
@@ -212,13 +212,13 @@
 				o.onchange = () => (t => {
 					switch (t) {
 						case d.a.Denied:
-							e(L(d.a.Denied)), j.e(n);
+							e(R(d.a.Denied)), j.e(n);
 							break;
 						case d.a.Granted:
-							e(R()), j.d(n);
+							e(L()), j.d(n);
 							break;
 						default:
-							e(L(d.a.Default))
+							e(R(d.a.Default))
 					}
 				})(o.state)
 			}
@@ -620,4 +620,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.a1476efdac181ce6691e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.1edce028f164db271689.js.map
