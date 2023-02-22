@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.c428ae2faf9b488dc526.js
-// Retrieved at 2/16/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.e161d065bac3c74a279b.js
+// Retrieved at 2/22/2023, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -5564,8 +5564,8 @@
 					hk: "2MsmjW"
 				})), o.a.createElement("p", {
 					className: ha.a.body
-				}, Oe.fbt._("This conversation is now using the latest version if chat.", null, {
-					hk: "3U9Y6C"
+				}, Oe.fbt._("This conversation is now using the latest version of chat.", null, {
+					hk: "4Efol1"
 				})), o.a.createElement(me.a, {
 					primary: !0,
 					className: ha.a.button,
@@ -9396,13 +9396,14 @@
 				d: "M18.5.875h-5v1.25h3.491L8.558,10.558l.884.884,8.433-8.433V6.5h1.25v-5A.625.625,0,0,0,18.5.875Z"
 			}));
 			ye.displayName = "NavPopout";
-			var Ne = n("./src/chat/components/OverlayNavButtonGroup/index.m.less"),
-				Se = n.n(Ne);
-			var we = Object(c.b)(() => Object(M.a)({
+			var Ne = n("./src/chat/selectors/redditChat.ts"),
+				Se = n("./src/chat/components/OverlayNavButtonGroup/index.m.less"),
+				we = n.n(Se);
+			var ke = Object(c.b)(() => Object(M.a)({
 					containerSize: e => e.container.size,
 					inviterName: le.K,
 					isReady: ie.j,
-					isRedditChatEnabled: de.q
+					isChatSwitcherEnabled: Ne.a
 				}), e => ({
 					close: () => e(Object(o.sizeChanged)(_e.a.HIDDEN)),
 					minimize: () => {
@@ -9420,51 +9421,51 @@
 						minimize: i,
 						popout: l,
 						toggleChannelNameInput: d,
-						isRedditChatEnabled: u
+						isChatSwitcherEnabled: u
 					} = e;
 					const h = o && n === _e.a.EMBED && !u;
 					return s.a.createElement("div", {
-						className: Se.a.Wrapper
+						className: we.a.Wrapper
 					}, c && s.a.createElement(Ee, {
 						channelId: t,
 						dropdownId: a,
 						inviterName: r,
 						toggleChannelNameInput: d
 					}), h && s.a.createElement(s.a.Fragment, null, s.a.createElement(Ce.d, {
-						className: Se.a.IconButton,
+						className: we.a.IconButton,
 						onClick: l,
 						title: m.fbt._("Open chat in new window", null, {
 							hk: "3S8f7W"
 						})
 					}, s.a.createElement(ye, null)), s.a.createElement(Ce.d, {
-						className: Se.a.IconButton,
+						className: we.a.IconButton,
 						onClick: i,
 						title: m.fbt._("Minimize chat", null, {
 							hk: "1gym9X"
 						})
 					}, s.a.createElement(Ie, null)), s.a.createElement(Oe.a, {
-						className: Se.a.CloseButton
+						className: we.a.CloseButton
 					})))
 				}),
-				ke = n("./src/chat/controls/ChannelNameInput/index.tsx"),
-				Te = n("./src/chat/controls/Counter/index.tsx");
-			var Me = n("./src/chat/components/RenameGroupInput/index.m.less"),
-				Le = n.n(Me);
-			const Ae = k.a.wrapped(e => s.a.createElement("span", {
+				Te = n("./src/chat/controls/ChannelNameInput/index.tsx"),
+				Me = n("./src/chat/controls/Counter/index.tsx");
+			var Le = n("./src/chat/components/RenameGroupInput/index.m.less"),
+				Ae = n.n(Le);
+			const De = k.a.wrapped(e => s.a.createElement("span", {
 					className: Object(r.a)({
-						[Le.a.visible]: e.isVisible
+						[Ae.a.visible]: e.isVisible
 					}, e.className)
-				}, e.children), "InputWrapper", Le.a),
-				De = k.a.div("InputContent", Le.a),
-				Re = k.a.span("InputControls", Le.a),
-				Ue = k.a.wrapped(Ce.a, "CancelButton", Le.a),
-				Pe = k.a.wrapped(Ce.a, "SaveButton", Le.a),
-				Be = Object(M.a)({
+				}, e.children), "InputWrapper", Ae.a),
+				Re = k.a.div("InputContent", Ae.a),
+				Ue = k.a.span("InputControls", Ae.a),
+				Pe = k.a.wrapped(Ce.a, "CancelButton", Ae.a),
+				Be = k.a.wrapped(Ce.a, "SaveButton", Ae.a),
+				He = Object(M.a)({
 					isVisible: e => {
 						return (e => e.renameGroupChat)(e).ivVisible
 					}
 				});
-			class He extends a.Component {
+			class Fe extends a.Component {
 				constructor() {
 					super(...arguments), this.displayName = "RenameGroupInput", this.state = {
 						groupName: this.props.name || ""
@@ -9493,10 +9494,10 @@
 						handleChannelNameInput: a,
 						submitGroupName: c
 					} = this, r = this.getAvailableCharacters();
-					return s.a.createElement(Ae, {
+					return s.a.createElement(De, {
 						isVisible: t
-					}, s.a.createElement(De, null, s.a.createElement(ke.a, {
-						className: Le.a.ChannelNameInput,
+					}, s.a.createElement(Re, null, s.a.createElement(Te.a, {
+						className: Ae.a.ChannelNameInput,
 						handleChannelNameInput: a,
 						placeholder: m.fbt._("Rename group", null, {
 							hk: "1mjXbx"
@@ -9504,14 +9505,14 @@
 						withBackground: !0,
 						value: n,
 						maxLength: F.g
-					}, s.a.createElement(Te.a, {
+					}, s.a.createElement(Me.a, {
 						count: r
-					})), s.a.createElement(Re, null, s.a.createElement(Ue, {
+					})), s.a.createElement(Ue, null, s.a.createElement(Pe, {
 						secondaryNoBorder: !0,
 						onClick: e
 					}, m.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), s.a.createElement(Pe, {
+					})), s.a.createElement(Be, {
 						noBorder: !0,
 						disabled: r < 0 || r >= F.g,
 						onClick: c
@@ -9520,20 +9521,20 @@
 					})))))
 				}
 			}
-			var Fe = Object(c.b)(Be, e => ({
+			var Ge = Object(c.b)(He, e => ({
 					onUpdateChannelName: t => e(Object(O.h)(t)),
 					saveRenamedGroup: () => e(Object(u.X)()),
 					hideChannelNameInput: () => e(Object(l.b)({
 						isVisible: !1
 					}))
-				}))(He),
-				Ge = n("./src/chat/helpers/dom.ts"),
-				Ve = n("./src/chat/icons/svgs/ArrowLeft/index.tsx"),
-				We = n("./src/chat/components/OverlayNav/index.m.less"),
-				Ke = n.n(We);
+				}))(Fe),
+				Ve = n("./src/chat/helpers/dom.ts"),
+				We = n("./src/chat/icons/svgs/ArrowLeft/index.tsx"),
+				Ke = n("./src/chat/components/OverlayNav/index.m.less"),
+				ze = n.n(Ke);
 			const {
-				fbt: ze
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), qe = e => {
+				fbt: qe
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Ze = e => {
 				let {
 					userName: t,
 					channelId: n,
@@ -9543,28 +9544,28 @@
 					l = Object(c.e)(ie.h),
 					d = Object(c.d)();
 				return s.a.createElement("span", {
-					onClick: Object(Ge.b)(() => {
+					onClick: Object(Ve.b)(() => {
 						a === re.b.Group && (d(Object(i.e)(n)), d(Object(u.p)(i.b.EASY_ACCESS)))
 					}),
-					className: Object(r.a)(Ke.a.UserProfileTitle, {
-						[Ke.a.easyAccess]: a === re.b.Group,
-						[Ke.a.isFullSize]: l
+					className: Object(r.a)(ze.a.UserProfileTitle, {
+						[ze.a.easyAccess]: a === re.b.Group,
+						[ze.a.isFullSize]: l
 					})
 				}, s.a.createElement("span", {
-					className: Ke.a.UserName,
+					className: ze.a.UserName,
 					title: t
 				}, t), o && a === re.b.Group ? s.a.createElement(s.a.Fragment, null, s.a.createElement("span", null, " • "), s.a.createElement("span", {
-					className: Ke.a.HostLabel
-				}, ze._("Host", null, {
+					className: ze.a.HostLabel
+				}, qe._("Host", null, {
 					hk: "1dh50y"
 				}))) : null, a === re.b.Group && s.a.createElement(ee.a, {
-					className: Ke.a.LinkIcon
+					className: ze.a.LinkIcon
 				}))
-			}, Ze = Object(M.a)({
+			}, Qe = Object(M.a)({
 				isEmbedded: ie.g,
 				iconMembers: (e, t) => Object(le.w)(e, t.channelId),
 				isFullSize: ie.h
-			}), Qe = Object(c.b)(Ze, e => ({
+			}), Ye = Object(c.b)(Qe, e => ({
 				minimize: () => {
 					e(Object(o.sizeChanged)(_e.a.MINIMIZED)), e(Object(u.x)())
 				},
@@ -9574,7 +9575,7 @@
 					isVisible: !0
 				}))
 			}));
-			class Ye extends a.Component {
+			class Xe extends a.Component {
 				constructor(e) {
 					super(e), this.showChannelNameInput = () => {
 						this.props.showRenameGroupChat(), this.props.clickRenameGroupTracking()
@@ -9610,50 +9611,50 @@
 						showChannelNameInput: E
 					} = this;
 					return s.a.createElement("nav", {
-						className: Object(r.a)(Ke.a.Nav, {
-							[Ke.a.isFullSize]: g,
-							[Ke.a.withBorder]: v
+						className: Object(r.a)(ze.a.Nav, {
+							[ze.a.isFullSize]: g,
+							[ze.a.withBorder]: v
 						}, n)
 					}, s.a.createElement(Ce.d, {
 						onClick: p,
-						className: Object(r.a)(Ke.a.IconButton, {
-							[Ke.a.isFullSize]: g
+						className: Object(r.a)(ze.a.IconButton, {
+							[ze.a.isFullSize]: g
 						})
-					}, s.a.createElement(Ve.a, {
-						className: Ke.a.ArrowLeft
+					}, s.a.createElement(We.a, {
+						className: ze.a.ArrowLeft
 					})), s.a.createElement("span", {
-						onClick: c ? Object(Ge.b)(o) : void 0,
-						className: Object(r.a)(Ke.a.TitleWrapper, {
-							[Ke.a.embed]: c
+						onClick: c ? Object(Ve.b)(o) : void 0,
+						className: Object(r.a)(ze.a.TitleWrapper, {
+							[ze.a.embed]: c
 						})
 					}, b && m && m.firstUser && s.a.createElement(h.a, {
-						className: Object(r.a)(Ke.a.ChatIcon, {
-							[Ke.a.isFullSize]: g
+						className: Object(r.a)(ze.a.ChatIcon, {
+							[ze.a.isFullSize]: g
 						}),
 						userId: m.firstUser.id,
 						secondUserId: null === (e = m.secondUser) || void 0 === e ? void 0 : e.id
-					}), t && void 0 !== u ? s.a.createElement(qe, {
+					}), t && void 0 !== u ? s.a.createElement(Ze, {
 						userName: d,
 						channelId: t,
 						channelType: u
 					}) : s.a.createElement("span", {
-						className: Ke.a.Title
+						className: ze.a.Title
 					}, d), s.a.createElement("span", {
-						className: Object(r.a)(Ke.a.SubTitle, {
-							[Ke.a.isWarning]: f
+						className: Object(r.a)(ze.a.SubTitle, {
+							[ze.a.isWarning]: f
 						})
-					}, l)), s.a.createElement(we, {
+					}, l)), s.a.createElement(ke, {
 						channelId: t,
 						toggleChannelNameInput: E,
 						showMenu: !!i,
 						dropdownId: a
-					}), t && d && s.a.createElement(Fe, {
+					}), t && d && s.a.createElement(Ge, {
 						channelId: t,
 						name: d
 					}))
 				}
 			}
-			t.a = Qe(Ye)
+			t.a = Ye(Xe)
 		},
 		"./src/chat/components/OverlayNavButtonGroup/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -9770,7 +9771,7 @@
 		"./src/chat/components/Root/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return Z
+				return W
 			}));
 			var a = n("./src/lib/classNames/index.ts"),
 				s = n("./node_modules/react/index.js"),
@@ -9784,144 +9785,122 @@
 				h = n("./src/chat/controls/Button/index.tsx"),
 				m = n("./src/chat/icons/svgs/InfoIcon/index.tsx"),
 				p = n("./src/chat/selectors/app.ts"),
-				b = n("./src/chat/selectors/experiments.ts");
-
-			function g(e) {
-				return null === e.redditChat.active ? Object(b.o)(e) : e.redditChat.active
-			}
-
-			function f(e) {
-				return e.redditChat.chatId
-			}
-
-			function v(e) {
-				return e.redditChat.userId
-			}
-
-			function E(e) {
-				return e.redditChat.notificationsCount
-			}
-
-			function O(e) {
-				return Boolean(Object(b.q)(e) && (function(e) {
-					return e.redditChat.roomsCount > 0
-				}(e) || Object(b.o)(e) || v(e) || f(e)))
-			}
-			var _ = n("./src/chat/selectors/unreadCounter.ts"),
-				C = n("./src/chat/components/ChatSwitcher/index.m.less"),
-				j = n.n(C);
-			const I = () => {
+				b = n("./src/chat/selectors/redditChat.ts"),
+				g = n("./src/chat/selectors/unreadCounter.ts"),
+				f = n("./src/chat/components/ChatSwitcher/index.m.less"),
+				v = n.n(f);
+			const E = () => {
 				const e = Object(r.e)(p.a),
-					t = Object(r.e)(g),
-					n = Object(r.e)(_.e) > 0,
-					s = Object(r.e)(E) > 0,
+					t = Object(r.e)(b.b),
+					n = Object(r.e)(g.e) > 0,
+					s = Object(r.e)(b.e) > 0,
 					o = e === u.a.EMBED,
-					b = Object(r.d)();
+					f = Object(r.d)();
 				return c.a.createElement("div", {
-					className: j.a.container
+					className: v.a.container
 				}, c.a.createElement("button", {
 					type: "button",
-					className: Object(a.a)(j.a.button, {
-						[j.a.active]: !t
+					className: Object(a.a)(v.a.button, {
+						[v.a.active]: !t
 					}),
 					onClick: () => {
-						b(Object(l.h)("old"))
+						f(Object(l.h)("old"))
 					}
 				}, i.fbt._("Legacy Chat", null, {
 					hk: "2GRdcQ"
 				}), n && c.a.createElement("span", {
-					className: j.a.notificationsBadge
+					className: v.a.notificationsBadge
 				})), c.a.createElement("button", {
 					type: "button",
-					className: Object(a.a)(j.a.button, {
-						[j.a.active]: t
+					className: Object(a.a)(v.a.button, {
+						[v.a.active]: t
 					}),
 					onClick: () => {
-						b(Object(l.h)("new"))
+						f(Object(l.h)("new"))
 					}
 				}, i.fbt._("Chat", null, {
 					hk: "16ZrKS"
 				}), s && c.a.createElement("span", {
-					className: j.a.notificationsBadge
+					className: v.a.notificationsBadge
 				})), c.a.createElement("div", {
-					className: j.a.windowControls
+					className: v.a.windowControls
 				}, c.a.createElement(h.d, {
-					className: j.a.infoButton
+					className: v.a.infoButton
 				}, c.a.createElement(m.a, null), c.a.createElement("div", {
-					className: j.a.infoTooltip
-				}, i.fbt._("This view is temporary while we move your existing chats to a new infrastructure. Thanks for bearing with us!", null, {
-					hk: "1hYqKO"
+					className: v.a.infoTooltip
+				}, i.fbt._("This view is temporary while we move your legacy chats to a new infrastructure. Thanks for bearing with us!", null, {
+					hk: "1NnpUr"
 				}))), o && c.a.createElement(d.a, null)))
 			};
-			var x = n("./src/chat/components/FrameContent/index.tsx"),
-				y = n("./src/config.ts"),
-				N = n("./src/lib/env/index.ts"),
-				S = n("./src/lib/opener/index.ts"),
-				w = n("./src/chat/actions/container.ts"),
-				k = n("./src/chat/actions/inviteLink/localStorage.ts"),
-				T = n("./src/chat/actions/sidebar.ts"),
-				M = n("./src/chat/components/OverlayDirectsEmptySkeletonState/index.tsx"),
-				L = n("./src/chat/components/Sidebar/index.tsx"),
-				A = n("./src/chat/components/SkeletonPlaceholder/SkeletonPlaceholder.tsx"),
-				D = n("./src/chat/helpers/urls/index.ts"),
-				R = n("./src/chat/selectors/inviteLink.ts"),
-				U = n("./src/chat/selectors/platform.ts");
-			var P, B = e => {
+			var O = n("./src/chat/components/FrameContent/index.tsx"),
+				_ = n("./src/config.ts"),
+				C = n("./src/lib/env/index.ts"),
+				j = n("./src/lib/opener/index.ts"),
+				I = n("./src/chat/actions/container.ts"),
+				x = n("./src/chat/actions/inviteLink/localStorage.ts"),
+				y = n("./src/chat/actions/sidebar.ts"),
+				N = n("./src/chat/components/OverlayDirectsEmptySkeletonState/index.tsx"),
+				S = n("./src/chat/components/Sidebar/index.tsx"),
+				w = n("./src/chat/components/SkeletonPlaceholder/SkeletonPlaceholder.tsx"),
+				k = n("./src/chat/helpers/urls/index.ts"),
+				T = n("./src/chat/selectors/inviteLink.ts"),
+				M = n("./src/chat/selectors/platform.ts");
+			var L, A = e => {
 					let {
 						children: t
 					} = e;
 					const n = Object(r.d)(),
 						a = Object(r.e)(p.i),
 						s = Object(r.e)(p.f),
-						o = Object(r.e)(U.h),
-						i = Object(r.e)(U.j),
-						l = Object(r.e)(U.i),
-						d = Object(r.e)(U.e),
-						h = Object(r.e)(R.e),
+						o = Object(r.e)(M.h),
+						i = Object(r.e)(M.j),
+						l = Object(r.e)(M.i),
+						d = Object(r.e)(M.e),
+						h = Object(r.e)(T.e),
 						m = a || h;
-					return h && (l ? n(Object(k.c)()) : o ? n(Object(k.d)()) : i && d && n(Object(T.d)(d)), n(Object(w.sizeChanged)(u.a.EMBED)), Object(N.b)() && Object(S.e)(y.a.redditUrl)), m ? null : s ? t : c.a.createElement(c.a.Fragment, null, c.a.createElement(L.a, null, c.a.createElement("span", {
+					return h && (l ? n(Object(x.c)()) : o ? n(Object(x.d)()) : i && d && n(Object(y.d)(d)), n(Object(I.sizeChanged)(u.a.EMBED)), Object(C.b)() && Object(j.e)(_.a.redditUrl)), m ? null : s ? t : c.a.createElement(c.a.Fragment, null, c.a.createElement(S.a, null, c.a.createElement("span", {
 						style: {
 							paddingTop: "45px",
 							background: "var(--layout-body)"
 						}
-					}, c.a.createElement(A.d, null))), c.a.createElement(M.a, null))
+					}, c.a.createElement(w.d, null))), c.a.createElement(N.a, null))
 				},
-				H = n("./src/chat/components/MediaPreview/index.tsx"),
-				F = n("./node_modules/react-router-redux/es/index.js"),
-				G = n("./src/chat/actions/message/unreadCount.ts"),
-				V = n("./src/chat/models/Channel/utils.ts");
+				D = n("./src/chat/components/MediaPreview/index.tsx"),
+				R = n("./node_modules/react-router-redux/es/index.js"),
+				U = n("./src/chat/actions/message/unreadCount.ts"),
+				P = n("./src/chat/models/Channel/utils.ts");
 			! function(e) {
 				e.CLOSE = "matrix-chat.close", e.MINIMIZE = "matrix-chat.minimize", e.MAXIMIZE = "matrix-chat.maximize", e.LOADED = "matrix-chat.loaded", e.NOTIFICATIONS = "matrix-chat.notifications", e.ROOMS = "matrix-chat.rooms_count", e.OPEN_SENDBIRD_ROOM = "matrix-chat.open_sb_room", e.OPEN_SENDBIRD_DM = "matrix-chat.open_sb_dm", e.OPEN_IMAGE = "matrix-chat.open_img_modal"
-			}(P || (P = {}));
-			const W = e => {
+			}(L || (L = {}));
+			const B = e => {
 				let {
 					className: t
 				} = e;
-				const [n, s] = c.a.useState(!1), [o, i] = c.a.useState(null), d = Object(r.d)(), u = Object(r.e)(f), h = Object(r.e)(v), m = `${y.a.matrixChatUrl}?disableWindowControls=1`, p = c.a.useRef(null);
+				const [n, s] = c.a.useState(!1), [o, i] = c.a.useState(null), d = Object(r.d)(), u = Object(r.e)(b.c), h = Object(r.e)(b.d), m = `${_.a.matrixChatUrl}?disableWindowControls=1`, p = c.a.useRef(null);
 				return c.a.useEffect(() => {
 					var e, t, a, s;
 					n && (u && (null === (t = null === (e = p.current) || void 0 === e ? void 0 : e.contentWindow) || void 0 === t || t.postMessage(`openRoom:${u}`, "*")), h && (null === (s = null === (a = p.current) || void 0 === a ? void 0 : a.contentWindow) || void 0 === s || s.postMessage(`openDM:${h}`, "*")))
 				}, [n, u, h]), c.a.useLayoutEffect(() => {
 					const e = e => {
 						var t, n, a, c, r, o, u, h, m, p;
-						if (e.data === P.LOADED && s(!0), 0 === (null === (n = null === (t = e.data) || void 0 === t ? void 0 : t.indexOf) || void 0 === n ? void 0 : n.call(t, P.NOTIFICATIONS))) {
+						if (e.data === L.LOADED && s(!0), 0 === (null === (n = null === (t = e.data) || void 0 === t ? void 0 : t.indexOf) || void 0 === n ? void 0 : n.call(t, L.NOTIFICATIONS))) {
 							const [, t] = e.data.split(":");
-							d(Object(l.i)(parseInt(t, 10))), d(Object(G.c)())
+							d(Object(l.i)(parseInt(t, 10))), d(Object(U.c)())
 						}
-						if (0 === (null === (c = null === (a = e.data) || void 0 === a ? void 0 : a.indexOf) || void 0 === c ? void 0 : c.call(a, P.ROOMS))) {
+						if (0 === (null === (c = null === (a = e.data) || void 0 === a ? void 0 : a.indexOf) || void 0 === c ? void 0 : c.call(a, L.ROOMS))) {
 							const [, t] = e.data.split(":");
 							d(Object(l.j)(parseInt(t, 10)))
 						}
-						if (0 === (null === (o = null === (r = e.data) || void 0 === r ? void 0 : r.indexOf) || void 0 === o ? void 0 : o.call(r, P.OPEN_SENDBIRD_ROOM))) {
-							const [, t] = e.data.split(":"), n = Object(D.getRedirectURL)(Object(D.channelUrl)(Object(V.f)(t)));
-							d(Object(F.b)(n)), d(Object(l.h)("old"))
+						if (0 === (null === (o = null === (r = e.data) || void 0 === r ? void 0 : r.indexOf) || void 0 === o ? void 0 : o.call(r, L.OPEN_SENDBIRD_ROOM))) {
+							const [, t] = e.data.split(":"), n = Object(k.getRedirectURL)(Object(k.channelUrl)(Object(P.f)(t)));
+							d(Object(R.b)(n)), d(Object(l.h)("old"))
 						}
-						if (0 === (null === (h = null === (u = e.data) || void 0 === u ? void 0 : u.indexOf) || void 0 === h ? void 0 : h.call(u, P.OPEN_SENDBIRD_DM))) {
-							const [, t] = e.data.split(":"), n = Object(D.getRedirectURL)(Object(D.channelUserIdUrl)(t));
-							d(Object(F.b)(n)), d(Object(l.h)("old"))
+						if (0 === (null === (h = null === (u = e.data) || void 0 === u ? void 0 : u.indexOf) || void 0 === h ? void 0 : h.call(u, L.OPEN_SENDBIRD_DM))) {
+							const [, t] = e.data.split(":"), n = Object(k.getRedirectURL)(Object(k.channelUserIdUrl)(t));
+							d(Object(R.b)(n)), d(Object(l.h)("old"))
 						}
-						if (null === (p = null === (m = e.data) || void 0 === m ? void 0 : m.startsWith) || void 0 === p ? void 0 : p.call(m, P.OPEN_IMAGE)) {
-							const t = e.data.substring(P.OPEN_IMAGE.length + 1, e.data.length);
+						if (null === (p = null === (m = e.data) || void 0 === m ? void 0 : m.startsWith) || void 0 === p ? void 0 : p.call(m, L.OPEN_IMAGE)) {
+							const t = e.data.substring(L.OPEN_IMAGE.length + 1, e.data.length);
 							i(t)
 						}
 					};
@@ -9931,41 +9910,42 @@
 					className: Object(a.a)(t),
 					src: m,
 					"data-testid": "reddit-chat-window"
-				}), o && c.a.createElement(H.a, {
+				}), o && c.a.createElement(D.a, {
 					onClose: () => i(null),
 					url: o
 				}))
 			};
-			var K = n("./src/chat/components/ThemeProvider/index.tsx"),
-				z = n("./src/chat/components/Root/index.m.less"),
-				q = n.n(z);
+			var H = n("./src/chat/components/ThemeProvider/index.tsx"),
+				F = n("./src/chat/selectors/experiments.ts"),
+				G = n("./src/chat/components/Root/index.m.less"),
+				V = n.n(G);
 
-			function Z(e) {
+			function W(e) {
 				let {
 					router: t,
 					routes: n
 				} = e;
-				const s = Object(r.e)(b.q),
-					i = Object(r.e)(O),
-					l = Object(r.e)(g),
+				const s = Object(r.e)(F.q),
+					i = Object(r.e)(b.a),
+					l = Object(r.e)(b.b),
 					d = Object(r.e)(p.a) === u.a.MINIMIZED,
 					h = c.a.createElement(t, null, c.a.createElement(o.d, {
-						component: e => c.a.createElement(B, null, c.a.createElement(o.f, {
+						component: e => c.a.createElement(A, null, c.a.createElement(o.f, {
 							location: e.location
 						}, n))
 					}));
-				return s ? c.a.createElement(K.a, {
-					className: x.a
+				return s ? c.a.createElement(H.a, {
+					className: O.a
 				}, c.a.createElement("div", {
-					className: q.a.chatWindowContent
-				}, i && !d && c.a.createElement(I, null), !l && c.a.createElement("div", {
-					className: q.a.chatApp
-				}, h), c.a.createElement(W, {
-					className: Object(a.a)(q.a.chatApp, {
-						[q.a.hidden]: !l
+					className: V.a.chatWindowContent
+				}, i && !d && c.a.createElement(E, null), !l && c.a.createElement("div", {
+					className: V.a.chatApp
+				}, h), c.a.createElement(B, {
+					className: Object(a.a)(V.a.chatApp, {
+						[V.a.hidden]: !l
 					})
-				}))) : c.a.createElement(K.a, {
-					className: x.a
+				}))) : c.a.createElement(H.a, {
+					className: O.a
 				}, h)
 			}
 		},
@@ -17310,6 +17290,43 @@
 					}
 				}
 		},
+		"./src/chat/selectors/redditChat.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "b", (function() {
+				return s
+			})), n.d(t, "c", (function() {
+				return c
+			})), n.d(t, "d", (function() {
+				return r
+			})), n.d(t, "e", (function() {
+				return o
+			})), n.d(t, "a", (function() {
+				return i
+			}));
+			var a = n("./src/chat/selectors/experiments.ts");
+
+			function s(e) {
+				return null === e.redditChat.active ? Object(a.o)(e) : e.redditChat.active
+			}
+
+			function c(e) {
+				return e.redditChat.chatId
+			}
+
+			function r(e) {
+				return e.redditChat.userId
+			}
+
+			function o(e) {
+				return e.redditChat.notificationsCount
+			}
+
+			function i(e) {
+				return Boolean(Object(a.q)(e) && (function(e) {
+					return e.redditChat.roomsCount > 0
+				}(e) || Object(a.o)(e) || r(e) || c(e)))
+			}
+		},
 		"./src/chat/selectors/richUnits.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
@@ -18318,4 +18335,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.c428ae2faf9b488dc526.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.e161d065bac3c74a279b.js.map
