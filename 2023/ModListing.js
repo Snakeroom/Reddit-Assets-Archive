@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.cdd885170ec3e3d5e402.js
-// Retrieved at 2/21/2023, 3:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.b683c8f0a99eec1ce059.js
+// Retrieved at 2/22/2023, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, n) {
@@ -1726,12 +1726,14 @@
 			"use strict";
 			n.d(t, "c", (function() {
 				return i
-			})), n.d(t, "b", (function() {
-				return o
 			})), n.d(t, "d", (function() {
+				return o
+			})), n.d(t, "b", (function() {
 				return d
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "e", (function() {
 				return a
+			})), n.d(t, "a", (function() {
+				return c
 			}));
 			n("./src/reddit/constants/categories.tsx");
 			var r = n("./src/reddit/selectors/telemetry.ts");
@@ -1746,19 +1748,28 @@
 					noun: e,
 					...s(t)
 				}),
-				o = e => t => ({
+				o = (e, t) => n => ({
+					action: "click",
+					source: "nav",
+					noun: e,
+					...s(n),
+					topicMetadata: {
+						displayName: t
+					}
+				}),
+				d = e => t => ({
 					...s(t),
 					source: "sort_switch",
 					action: "click",
 					noun: e
 				}),
-				d = e => t => ({
+				a = e => t => ({
 					...s(t),
 					source: "time_sort_switch",
 					action: "click",
 					noun: e
 				}),
-				a = e => t => ({
+				c = e => t => ({
 					...s(t),
 					source: "nav",
 					action: "click",
@@ -2635,4 +2646,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.cdd885170ec3e3d5e402.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.b683c8f0a99eec1ce059.js.map

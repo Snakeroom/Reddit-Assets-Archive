@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.6d297455964192b40245.js
-// Retrieved at 2/21/2023, 3:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.53d032f8ec0cd0d43ba1.js
+// Retrieved at 2/22/2023, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "CollectionCommentsPage~SearchResults", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -36758,12 +36758,14 @@
 			"use strict";
 			n.d(t, "c", (function() {
 				return o
-			})), n.d(t, "b", (function() {
-				return i
 			})), n.d(t, "d", (function() {
+				return i
+			})), n.d(t, "b", (function() {
 				return a
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "e", (function() {
 				return c
+			})), n.d(t, "a", (function() {
+				return d
 			}));
 			n("./src/reddit/constants/categories.tsx");
 			var s = n("./src/reddit/selectors/telemetry.ts");
@@ -36778,19 +36780,28 @@
 					noun: e,
 					...r(t)
 				}),
-				i = e => t => ({
+				i = (e, t) => n => ({
+					action: "click",
+					source: "nav",
+					noun: e,
+					...r(n),
+					topicMetadata: {
+						displayName: t
+					}
+				}),
+				a = e => t => ({
 					...r(t),
 					source: "sort_switch",
 					action: "click",
 					noun: e
 				}),
-				a = e => t => ({
+				c = e => t => ({
 					...r(t),
 					source: "time_sort_switch",
 					action: "click",
 					noun: e
 				}),
-				c = e => t => ({
+				d = e => t => ({
 					...r(t),
 					source: "nav",
 					action: "click",
@@ -49311,4 +49322,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.6d297455964192b40245.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.53d032f8ec0cd0d43ba1.js.map
