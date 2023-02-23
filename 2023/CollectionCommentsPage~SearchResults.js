@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.b97d5b49ff8ec8dd222e.js
-// Retrieved at 2/23/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.00f0ba946c0e87df97fe.js
+// Retrieved at 2/23/2023, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -3500,10 +3500,10 @@
 				var t;
 				const {
 					gqlContext: s
-				} = e, n = Object(o.f)().getState(), a = Object(C.a)(n), i = null === (t = Object(o.e)(e => Object(y.a)(e, {
+				} = e, n = Object(o.f)().getState();
+				return (null === (t = Object(o.e)(e => Object(y.a)(e, {
 					experience: E.bb.LanguagePreferenceBottomSheet
-				}))) || void 0 === t ? void 0 : t.value;
-				return a && i ? r.a.createElement(k, {
+				}))) || void 0 === t ? void 0 : t.value) && Object(C.a)(n) ? r.a.createElement(k, {
 					gqlContext: s
 				}) : null
 			})
@@ -8938,4 +8938,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.b97d5b49ff8ec8dd222e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.00f0ba946c0e87df97fe.js.map

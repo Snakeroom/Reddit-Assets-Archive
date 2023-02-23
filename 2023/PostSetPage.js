@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostSetPage.70e104694cd340748f7c.js
-// Retrieved at 2/23/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostSetPage.b9d088648608637a2e65.js
+// Retrieved at 2/23/2023, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostSetPage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1200,10 +1200,10 @@
 				var t;
 				const {
 					gqlContext: n
-				} = e, s = Object(i.f)().getState(), o = Object(E.a)(s), a = null === (t = Object(i.e)(e => Object(_.a)(e, {
+				} = e, s = Object(i.f)().getState();
+				return (null === (t = Object(i.e)(e => Object(_.a)(e, {
 					experience: O.bb.LanguagePreferenceBottomSheet
-				}))) || void 0 === t ? void 0 : t.value;
-				return o && a ? r.a.createElement(k, {
+				}))) || void 0 === t ? void 0 : t.value) && Object(E.a)(s) ? r.a.createElement(k, {
 					gqlContext: n
 				}) : null
 			})
@@ -3201,4 +3201,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.70e104694cd340748f7c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.b9d088648608637a2e65.js.map

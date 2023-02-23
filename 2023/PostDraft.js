@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.ba9a5a33df9eca1acbe2.js
-// Retrieved at 2/23/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.5718d418573ab245840e.js
+// Retrieved at 2/23/2023, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -886,10 +886,10 @@
 				var t;
 				const {
 					gqlContext: n
-				} = e, o = Object(r.f)().getState(), i = Object(v.a)(o), a = null === (t = Object(r.e)(e => Object(k.a)(e, {
+				} = e, o = Object(r.f)().getState();
+				return (null === (t = Object(r.e)(e => Object(k.a)(e, {
 					experience: j.bb.LanguagePreferenceBottomSheet
-				}))) || void 0 === t ? void 0 : t.value;
-				return i && a ? s.a.createElement(O, {
+				}))) || void 0 === t ? void 0 : t.value) && Object(v.a)(o) ? s.a.createElement(O, {
 					gqlContext: n
 				}) : null
 			})
@@ -3134,4 +3134,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.ba9a5a33df9eca1acbe2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.5718d418573ab245840e.js.map

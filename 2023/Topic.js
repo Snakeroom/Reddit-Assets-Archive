@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.336ec83d1f15daa1ed7b.js
-// Retrieved at 2/23/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.39d512ed348ea1b475e6.js
+// Retrieved at 2/23/2023, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1260,10 +1260,10 @@
 				var t;
 				const {
 					gqlContext: s
-				} = e, n = Object(i.f)().getState(), o = Object(S.a)(n), a = null === (t = Object(i.e)(e => Object(_.a)(e, {
+				} = e, n = Object(i.f)().getState();
+				return (null === (t = Object(i.e)(e => Object(_.a)(e, {
 					experience: T.bb.LanguagePreferenceBottomSheet
-				}))) || void 0 === t ? void 0 : t.value;
-				return o && a ? r.a.createElement(C, {
+				}))) || void 0 === t ? void 0 : t.value) && Object(S.a)(n) ? r.a.createElement(C, {
 					gqlContext: s
 				}) : null
 			})
@@ -3437,4 +3437,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.336ec83d1f15daa1ed7b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.39d512ed348ea1b475e6.js.map

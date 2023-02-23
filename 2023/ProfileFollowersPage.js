@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.f441ed5412f7a2e1a656.js
-// Retrieved at 2/23/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.0b8e9e47e97e4e487e89.js
+// Retrieved at 2/23/2023, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -2712,10 +2712,10 @@
 				var t;
 				const {
 					gqlContext: s
-				} = e, n = Object(i.f)().getState(), o = Object(I.a)(n), a = null === (t = Object(i.e)(e => Object(C.a)(e, {
+				} = e, n = Object(i.f)().getState();
+				return (null === (t = Object(i.e)(e => Object(C.a)(e, {
 					experience: w.bb.LanguagePreferenceBottomSheet
-				}))) || void 0 === t ? void 0 : t.value;
-				return o && a ? r.a.createElement(_, {
+				}))) || void 0 === t ? void 0 : t.value) && Object(I.a)(n) ? r.a.createElement(_, {
 					gqlContext: s
 				}) : null
 			})
@@ -6469,4 +6469,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.f441ed5412f7a2e1a656.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.0b8e9e47e97e4e487e89.js.map

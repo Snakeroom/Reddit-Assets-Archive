@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.ffbabb164b07a3526a66.js
-// Retrieved at 2/23/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.7fb0f18a4e2031d190bc.js
+// Retrieved at 2/23/2023, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -1607,10 +1607,10 @@
 				var t;
 				const {
 					gqlContext: n
-				} = e, s = Object(i.f)().getState(), o = Object(k.a)(s), a = null === (t = Object(i.e)(e => Object(v.a)(e, {
+				} = e, s = Object(i.f)().getState();
+				return (null === (t = Object(i.e)(e => Object(v.a)(e, {
 					experience: w.bb.LanguagePreferenceBottomSheet
-				}))) || void 0 === t ? void 0 : t.value;
-				return o && a ? r.a.createElement(S, {
+				}))) || void 0 === t ? void 0 : t.value) && Object(k.a)(s) ? r.a.createElement(S, {
 					gqlContext: n
 				}) : null
 			})
@@ -3851,4 +3851,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.ffbabb164b07a3526a66.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.7fb0f18a4e2031d190bc.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.fbd8ec9df49a7a7d2452.js
-// Retrieved at 2/23/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.51193b75c082c3c03506.js
+// Retrieved at 2/23/2023, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit~StandalonePostPage", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -9263,10 +9263,10 @@
 				var t;
 				const {
 					gqlContext: n
-				} = e, o = Object(s.f)().getState(), i = Object(y.a)(o), a = null === (t = Object(s.e)(e => Object(x.a)(e, {
+				} = e, o = Object(s.f)().getState();
+				return (null === (t = Object(s.e)(e => Object(x.a)(e, {
 					experience: _.bb.LanguagePreferenceBottomSheet
-				}))) || void 0 === t ? void 0 : t.value;
-				return i && a ? r.a.createElement(j, {
+				}))) || void 0 === t ? void 0 : t.value) && Object(y.a)(o) ? r.a.createElement(j, {
 					gqlContext: n
 				}) : null
 			})
@@ -39462,10 +39462,12 @@
 		},
 		"./src/reddit/selectors/experiments/uxtsIntegration.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "b", (function() {
+			n.d(t, "c", (function() {
 				return a
 			})), n.d(t, "a", (function() {
 				return c
+			})), n.d(t, "b", (function() {
+				return d
 			}));
 			var o = n("./node_modules/reselect/es/index.js"),
 				r = n("./src/reddit/constants/experiments.ts"),
@@ -39478,6 +39480,11 @@
 				c = Object(o.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: i.S,
 					experimentName: r.Sb
+				}), e => e === r.ed.BottomSheet),
+				d = Object(o.a)(e => Object(s.c)(e, {
+					experimentEligibilitySelector: i.S,
+					experimentName: r.Sb,
+					expEventOverride: !1
 				}), e => e === r.ed.BottomSheet)
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -40169,4 +40176,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.fbd8ec9df49a7a7d2452.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.51193b75c082c3c03506.js.map

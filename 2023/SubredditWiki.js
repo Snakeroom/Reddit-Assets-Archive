@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.f700622ee7d72aae96fc.js
-// Retrieved at 2/23/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.202c94ec5a350deacd1b.js
+// Retrieved at 2/23/2023, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -4952,10 +4952,10 @@
 				var t;
 				const {
 					gqlContext: n
-				} = e, s = Object(r.f)().getState(), a = Object(y.a)(s), o = null === (t = Object(r.e)(e => Object(C.a)(e, {
+				} = e, s = Object(r.f)().getState();
+				return (null === (t = Object(r.e)(e => Object(C.a)(e, {
 					experience: E.bb.LanguagePreferenceBottomSheet
-				}))) || void 0 === t ? void 0 : t.value;
-				return a && o ? i.a.createElement(w, {
+				}))) || void 0 === t ? void 0 : t.value) && Object(y.a)(s) ? i.a.createElement(w, {
 					gqlContext: n
 				}) : null
 			})
@@ -11535,4 +11535,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.f700622ee7d72aae96fc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.202c94ec5a350deacd1b.js.map

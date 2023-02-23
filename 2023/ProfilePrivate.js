@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.d0f4d0fe7cd7854dfe4c.js
-// Retrieved at 2/23/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.153f95a2a57d0df26911.js
+// Retrieved at 2/23/2023, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -2819,10 +2819,10 @@
 				var t;
 				const {
 					gqlContext: s
-				} = e, n = Object(r.f)().getState(), i = Object(O.a)(n), a = null === (t = Object(r.e)(e => Object(C.a)(e, {
+				} = e, n = Object(r.f)().getState();
+				return (null === (t = Object(r.e)(e => Object(C.a)(e, {
 					experience: _.bb.LanguagePreferenceBottomSheet
-				}))) || void 0 === t ? void 0 : t.value;
-				return i && a ? o.a.createElement(k, {
+				}))) || void 0 === t ? void 0 : t.value) && Object(O.a)(n) ? o.a.createElement(k, {
 					gqlContext: s
 				}) : null
 			})
@@ -7542,4 +7542,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.d0f4d0fe7cd7854dfe4c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.153f95a2a57d0df26911.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.5f9357a1f5af16284b46.js
-// Retrieved at 2/23/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.3cd20f3cc3461ee5e213.js
+// Retrieved at 2/23/2023, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "CollectionCommentsPage~SearchResults", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -21303,10 +21303,10 @@
 				var t;
 				const {
 					gqlContext: n
-				} = e, s = Object(o.f)().getState(), i = Object(x.a)(s), a = null === (t = Object(o.e)(e => Object(O.a)(e, {
+				} = e, s = Object(o.f)().getState();
+				return (null === (t = Object(o.e)(e => Object(O.a)(e, {
 					experience: E.bb.LanguagePreferenceBottomSheet
-				}))) || void 0 === t ? void 0 : t.value;
-				return i && a ? r.a.createElement(k, {
+				}))) || void 0 === t ? void 0 : t.value) && Object(x.a)(s) ? r.a.createElement(k, {
 					gqlContext: n
 				}) : null
 			})
@@ -41542,7 +41542,7 @@
 					isEligibleForCommentTruncation: De.a,
 					isChatPost: Ee.d,
 					isCommentsListTruncated: Se.a,
-					isLanguagePromptUxtsEnabled: Pt.a,
+					isLanguagePromptUxtsEnabled: Pt.b,
 					isLiveChatNuxReactionsEnabled: Tt.c,
 					isLoggedIn: Ue.S,
 					isNightmodeOn: Ue.fb,
@@ -48543,10 +48543,12 @@
 		},
 		"./src/reddit/selectors/experiments/uxtsIntegration.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "b", (function() {
+			n.d(t, "c", (function() {
 				return a
 			})), n.d(t, "a", (function() {
 				return c
+			})), n.d(t, "b", (function() {
+				return d
 			}));
 			var s = n("./node_modules/reselect/es/index.js"),
 				r = n("./src/reddit/constants/experiments.ts"),
@@ -48559,6 +48561,11 @@
 				c = Object(s.a)(e => Object(o.c)(e, {
 					experimentEligibilitySelector: i.S,
 					experimentName: r.Sb
+				}), e => e === r.ed.BottomSheet),
+				d = Object(s.a)(e => Object(o.c)(e, {
+					experimentEligibilitySelector: i.S,
+					experimentName: r.Sb,
+					expEventOverride: !1
 				}), e => e === r.ed.BottomSheet)
 		},
 		"./src/reddit/selectors/experiments/web2x_cta.ts": function(e, t, n) {
@@ -49323,4 +49330,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.5f9357a1f5af16284b46.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.3cd20f3cc3461ee5e213.js.map
