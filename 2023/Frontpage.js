@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.c47ae59a33be76c6a726.js
-// Retrieved at 2/22/2023, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.b3af597a561cf092d089.js
+// Retrieved at 2/23/2023, 2:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -650,7 +650,7 @@
 				Z = a("./src/lib/initializeClient/installReducer.ts"),
 				D = a("./src/reddit/reducers/features/marketplace/index.ts"),
 				V = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const H = Object(V.a)(h.Qd);
+			const H = Object(V.a)(h.Pd);
 			var G = a("./src/redditGQL/types.ts");
 			Object(Z.a)({
 				features: {
@@ -1970,7 +1970,7 @@
 						C === F.Visible && t === f.a.Achievements && y(Object(b.m)())
 					}, [t, C, y]), C === F.Hidden) return null;
 				const N = () => {
-						A(F.Visible), Object(h.hb)(m.a.AVATAR_LISTING_BANNER, !1, u.c)
+						A(F.Visible), Object(h.ib)(m.a.AVATAR_LISTING_BANNER, !1, u.c)
 					},
 					S = () => {
 						y(Object(b.e)(l)), _(Object(o.b)({
@@ -1978,7 +1978,7 @@
 						}))
 					},
 					I = () => {
-						Object(h.hb)(m.a.AVATAR_LISTING_BANNER, !0, u.c), t === f.a.Achievements ? O() : S()
+						Object(h.ib)(m.a.AVATAR_LISTING_BANNER, !0, u.c), t === f.a.Achievements ? O() : S()
 					};
 				if (C === F.Dismissed) return c.a.createElement("div", {
 					className: Object(s.a)(x.a.dismissedContainer, a)
@@ -2067,7 +2067,7 @@
 						[x.a.closeLight]: l
 					}),
 					onClick: () => {
-						A(F.Dismissed), Object(h.hb)(m.a.AVATAR_LISTING_BANNER, !0, u.c), t !== f.a.Achievements && y(Object(b.k)(l)), t === f.a.Achievements && y(Object(b.j)())
+						A(F.Dismissed), Object(h.ib)(m.a.AVATAR_LISTING_BANNER, !0, u.c), t !== f.a.Achievements && y(Object(b.k)(l)), t === f.a.Achievements && y(Object(b.j)())
 					}
 				}), c.a.createElement("div", {
 					className: x.a.contentWrapper
@@ -2991,7 +2991,7 @@
 						t.ok && (e = {
 							subreddits: t.body.data.subreddits.map(e => e.name),
 							fetchedAt: Date.now()
-						}, Object(V.Bb)(q.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
+						}, Object(V.Cb)(q.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
 					}
 					return te.cachedData = e, e ? e.subreddits : []
 				}
@@ -3389,7 +3389,7 @@
 						return Object(Le.c)(e, {
 							experimentEligibilitySelector: Fe.S,
 							experimentName: Te.Oc
-						}) === Te.Ld
+						}) === Te.Kd
 					})(e),
 					isNavbarLikeMwebEnabled: c.a
 				}),
@@ -5712,7 +5712,7 @@
 				const p = Object(c.e)(e => e.subreddits.survey[a]),
 					h = Object(c.e)(e => e.subreddits.progressModule[a]),
 					b = Object(c.e)(m.a),
-					g = b !== l.Ne.NewModule;
+					g = b !== l.Me.NewModule;
 				return (null === (s = null == h ? void 0 : h.cards) || void 0 === s ? void 0 : s.length) > 0 && g ? r.a.createElement(u, {
 					closeModuleOnMount: !!t && t !== d.g.Large,
 					subredditId: a,
@@ -5793,8 +5793,8 @@
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: o,
 						experimentName: n.nd
-					}) === n.Nd.Enabled
-				}(e) ? l.Achievements : t === n.Od.ControlBanner ? l.CommunitySpacesControl : t === n.Od.EnabledBanner ? l.CommunitySpaces : null
+					}) === n.Md.Enabled
+				}(e) ? l.Achievements : t === n.Nd.ControlBanner ? l.CommunitySpacesControl : t === n.Nd.EnabledBanner ? l.CommunitySpaces : null
 			}! function(e) {
 				e.Achievements = "achievements", e.CommunitySpaces = "communitySpaces", e.CommunitySpacesControl = "communitySpaces--control"
 			}(l || (l = {}))
@@ -5812,10 +5812,10 @@
 			const c = e => {
 					return !(Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.ue
-					}) === n.Ld)
+						experimentName: n.te
+					}) === n.Kd)
 				},
-				i = Object(r.a)(n.ve)
+				i = Object(r.a)(n.ue)
 		},
 		"./src/reddit/selectors/experiments/econLeaderboards.ts": function(e, t, a) {
 			"use strict";
@@ -5838,7 +5838,7 @@
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.S,
 						experimentName: n.td
-					}) === n.Pd.ListingEnabled
+					}) === n.Od.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, a) {
@@ -5950,4 +5950,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.c47ae59a33be76c6a726.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.b3af597a561cf092d089.js.map

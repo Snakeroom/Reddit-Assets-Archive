@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsPermissionPromptLoader.589d76a1440a8e0d6fbf.js
-// Retrieved at 2/22/2023, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsPermissionPromptLoader.eb7884d1b1d9fad17009.js
+// Retrieved at 2/23/2023, 2:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsPermissionPromptLoader", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -65,13 +65,13 @@
 			})), i.d(t, "requestNotificationsPermissions", (function() {
 				return G
 			})), i.d(t, "subscribeForPNs", (function() {
-				return L
-			})), i.d(t, "unsubscribeFromPNs", (function() {
 				return W
-			})), i.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
+			})), i.d(t, "unsubscribeFromPNs", (function() {
 				return A
-			})), i.d(t, "subscribeToPermissionsChange", (function() {
+			})), i.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
 				return R
+			})), i.d(t, "subscribeToPermissionsChange", (function() {
+				return L
 			}));
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
 				o = i("./node_modules/lodash/omit.js"),
@@ -99,13 +99,13 @@
 			const N = e => Object(x.c)(e, {
 				experimentEligibilitySelector: w.S,
 				experimentName: k.tb
-			}) === k.Ld;
+			}) === k.Kd;
 			var S = i("./src/reddit/selectors/experiments/delayDnPermission.ts"),
 				P = i("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts");
 			const F = e => Object(x.c)(e, {
 				experimentName: k.Yb,
 				experimentEligibilitySelector: x.a
-			}) === k.Ld;
+			}) === k.Kd;
 			var q = i("./src/reddit/selectors/meta.ts");
 			let C = !1;
 			const E = async (e, t) => {
@@ -147,16 +147,16 @@
 					_.l(c), await Object(a.b)(e, t, () => {
 						l || b || f || n(Object(d.s)()), n(Object(d.q)()), _.j(c)
 					}, (e, t) => {
-						n(Object(d.o)()), n(W(t ? d.a.Denied : d.a.Closed)), e && (t ? _.e(c) : _.f(c)), i()
+						n(Object(d.o)()), n(A(t ? d.a.Denied : d.a.Closed)), e && (t ? _.e(c) : _.f(c)), i()
 					}, e => {
-						n(Object(d.p)()), n(L()), e && _.d(c), i()
+						n(Object(d.p)()), n(W()), e && _.d(c), i()
 					}, () => {
 						n(Object(d.n)()), i()
 					}, () => {
 						n(Object(d.r)())
 					}, O)
 				}
-			}, L = e => async (t, i, o) => {
+			}, W = e => async (t, i, o) => {
 				const s = i();
 				try {
 					switch (await Object(c.b)(o.gqlContext)) {
@@ -177,7 +177,7 @@
 				} catch (r) {
 					_.k(s, "registration_failed_uncaught_exception"), console.error(r)
 				}
-			}, W = (e, t) => async i => {
+			}, A = (e, t) => async i => {
 				try {
 					Object(b.b)(e);
 					const o = await Object(u.a)();
@@ -191,7 +191,7 @@
 						})))
 					}
 				} catch (o) {}
-			}, A = e => async (t, i) => {
+			}, R = e => async (t, i) => {
 				const n = i();
 				if (Object(b.a)(n) === d.d.NotificationsSupported) switch (Object(a.a)()) {
 					case d.a.Default:
@@ -201,7 +201,7 @@
 					case d.a.Denied:
 						t(Object(f.h)(e))
 				}
-			}, R = () => async (e, t) => {
+			}, L = () => async (e, t) => {
 				var i;
 				if (!(null === (i = null === navigator || void 0 === navigator ? void 0 : navigator.permissions) || void 0 === i ? void 0 : i.query)) return;
 				const n = t();
@@ -212,13 +212,13 @@
 				o.onchange = () => (t => {
 					switch (t) {
 						case d.a.Denied:
-							e(W(d.a.Denied)), _.e(n);
+							e(A(d.a.Denied)), _.e(n);
 							break;
 						case d.a.Granted:
-							e(L()), _.d(n);
+							e(W()), _.d(n);
 							break;
 						default:
-							e(W(d.a.Default))
+							e(A(d.a.Default))
 					}
 				})(o.state)
 			}
@@ -465,4 +465,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPermissionPromptLoader.589d76a1440a8e0d6fbf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPermissionPromptLoader.eb7884d1b1d9fad17009.js.map

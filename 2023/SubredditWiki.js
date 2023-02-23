@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.8c75ba8ab47622b0bc79.js
-// Retrieved at 2/22/2023, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.07046da1aa9fd5b1372a.js
+// Retrieved at 2/23/2023, 2:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -2501,7 +2501,7 @@
 						a = Object(h.b)(y),
 						o = Object(h.b)(_),
 						[d, c] = function(e, t) {
-							const [n, i] = Object(s.useState)(Object(A.P)(e, t));
+							const [n, i] = Object(s.useState)(Object(A.Q)(e, t));
 							return [n, Object(s.useCallback)(() => {
 								const n = Object(A.a)(e, t);
 								i(n)
@@ -2531,7 +2531,7 @@
 							e.stopPropagation(), a.visible ? g() : x()
 						}, [g, x, a.visible]),
 						N = Object(s.useCallback)(t => {
-							t === v.c.FREQUENT && Object(A.Y)(e.userId, e.subredditId)
+							t === v.c.FREQUENT && Object(A.Z)(e.userId, e.subredditId)
 						}, [e.subredditId, e.userId]),
 						I = Object(s.useCallback)(s => {
 							const {
@@ -2842,7 +2842,7 @@
 					small: !0,
 					isFullWidth: !0,
 					afterUnsubscribeAction: () => {
-						t && (Object(A.Y)(e.userId, t), e.updateSubredditInfo())
+						t && (Object(A.Z)(e.userId, t), e.updateSubredditInfo())
 					}
 				})), P && i.a.createElement(ye, {
 					onClickUnmute: () => {
@@ -7126,7 +7126,7 @@
 						} = t;
 						return Object(vt.c)(e, n)
 					},
-					isInNewModuleNCPV3Experiment: e => Object(Ct.a)(e) === gt.Ne.NewModule,
+					isInNewModuleNCPV3Experiment: e => Object(Ct.a)(e) === gt.Me.NewModule,
 					showCommunityChat: _t.b,
 					showGovernance: ft.d.spPoints,
 					showLeaderboard: ft.d.spLeaderboard,
@@ -11535,4 +11535,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.8c75ba8ab47622b0bc79.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.07046da1aa9fd5b1372a.js.map

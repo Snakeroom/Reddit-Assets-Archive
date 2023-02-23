@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.00f9389e5db10803b87b.js
-// Retrieved at 2/22/2023, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.331a5c537d1916f09111.js
+// Retrieved at 2/23/2023, 2:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-EventPostContent"], {
 		"./src/reddit/components/ClassicPost/index.tsx": function(e, t, s) {
@@ -70,7 +70,7 @@
 			const {
 				fbt: P
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
-			var w = e => {
+			var N = e => {
 					let {
 						post: t
 					} = e;
@@ -98,7 +98,7 @@
 						className: g.a.muteIcon
 					}))
 				},
-				N = s("./src/reddit/components/EventPost/EventMetaHeader/index.tsx"),
+				w = s("./src/reddit/components/EventPost/EventMetaHeader/index.tsx"),
 				I = s("./src/reddit/components/ExpandoButton/index.tsx"),
 				A = s("./src/reddit/components/Flatlist/index.tsx"),
 				T = s("./src/reddit/components/JSAPIContainers/index.tsx"),
@@ -181,8 +181,8 @@
 					userIsOp: _e,
 					shouldShowGalleryTileOption: ye,
 					showPromotedCTA: Pe,
-					showCTAExperimentDesign: we
-				} = e, Ne = Object(l.a)(), Ie = Object(c.a)(v);
+					showCTAExperimentDesign: Ne
+				} = e, we = Object(l.a)(), Ie = Object(c.a)(v);
 				Object(o.useEffect)(() => {
 					be && Ie !== v && be(he.id)
 				}, [v, be, he.id, Ie]);
@@ -213,8 +213,8 @@
 					} = He,
 					[Ke, Xe] = Object(o.useState)(!1),
 					Ye = Object(o.useCallback)(() => {
-						Xe(!Ke), Ne(Object(se.d)(ve))
-					}, [Ke, ve, Ne]);
+						Xe(!Ke), we(Object(se.d)(ve))
+					}, [Ke, ve, we]);
 				let $e = r.a.createElement(X.a, {
 					className: ce.a.classicThumbnail,
 					crosspost: Te && he,
@@ -223,7 +223,7 @@
 					redditStyle: fe,
 					templatePlaceholderImage: Ae && Ae.postPlaceholderImage
 				});
-				Object(h.c)(he) && ($e = r.a.createElement(w, {
+				Object(h.c)(he) && ($e = r.a.createElement(N, {
 					post: he
 				}));
 				const qe = Object(ae.r)(he);
@@ -252,7 +252,7 @@
 					className: Ce ? ce.a.shouldUseRoundedBorder : void 0,
 					"data-click-id": "background",
 					flairStyleTemplate: Ae
-				}, r.a.createElement(N.a, {
+				}, r.a.createElement(w.a, {
 					className: ce.a.eventMeta,
 					post: he
 				}), r.a.createElement("div", {
@@ -296,14 +296,14 @@
 					onIgnoreReports: me,
 					reportable: he
 				}), Pe && We && We.url && !he.isSurveyAd && r.a.createElement(u.a, {
-					ctaExperimentDesign: we && "classic",
+					ctaExperimentDesign: Ne && "classic",
 					className: Object(n.a)(ce.a.adLinkWrapper, {
-						[ce.a.ctaExperiment]: we
+						[ce.a.ctaExperiment]: Ne
 					})
 				}, r.a.createElement(m.a, {
 					post: he,
 					adLinkContent: He,
-					ctaExperimentDesign: we && "classic"
+					ctaExperimentDesign: Ne && "classic"
 				})), he.discussionType === ne.p.Chat && r.a.createElement(ie.a, {
 					postId: he.id
 				}), r.a.createElement("div", {
@@ -737,58 +737,61 @@
 				n = s("./node_modules/react-redux/es/index.js"),
 				i = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				d = s("./node_modules/reselect/es/index.js"),
-				c = s("./src/reddit/actions/eventPosts/index.ts"),
-				l = s("./src/reddit/components/ClassicPost/index.tsx"),
-				u = s("./src/reddit/components/ModerationPagesEmptyList/index.tsx"),
-				m = s("./src/reddit/components/ModHub/StyledComponents/index.tsx"),
-				p = s("./src/reddit/components/Scroller/Simple.tsx"),
-				b = s("./src/reddit/components/SubredditContent/index.tsx"),
-				x = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				h = s("./src/reddit/constants/postLayout.ts"),
-				v = s("./src/reddit/controls/Button/index.tsx"),
-				f = s("./src/reddit/helpers/overlay/index.ts"),
-				g = s("./src/reddit/helpers/postComponentForLayout/index.tsx"),
-				O = s("./src/reddit/icons/fonts/index.tsx"),
-				j = s("./src/reddit/routes/postCreation/index.ts"),
-				E = s("./src/reddit/selectors/eventPosts.ts"),
-				C = s("./src/reddit/components/SubredditContent/index.m.less"),
-				k = s.n(C);
-			const S = Object(d.c)({
-					eventPosts: E.f,
-					isPending: E.d,
-					hasData: E.b,
-					endCursor: E.a
+				c = s("./src/lib/classNames/index.ts"),
+				l = s("./src/reddit/actions/eventPosts/index.ts"),
+				u = s("./src/reddit/components/ClassicPost/index.tsx"),
+				m = s("./src/reddit/components/ModerationPagesEmptyList/index.tsx"),
+				p = s("./src/reddit/components/ModHub/StyledComponents/index.tsx"),
+				b = s("./src/reddit/components/Scroller/Simple.tsx"),
+				x = s("./src/reddit/components/SubredditContent/index.tsx"),
+				h = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				v = s("./src/reddit/constants/postLayout.ts"),
+				f = s("./src/reddit/controls/Button/index.tsx"),
+				g = s("./src/reddit/helpers/overlay/index.ts"),
+				O = s("./src/reddit/helpers/postComponentForLayout/index.tsx"),
+				j = s("./src/reddit/icons/fonts/index.tsx"),
+				E = s("./src/reddit/routes/postCreation/index.ts"),
+				C = s("./src/reddit/selectors/eventPosts.ts"),
+				k = s("./src/reddit/selectors/experiments/shredditModNav.ts"),
+				S = s("./src/reddit/components/SubredditContent/index.m.less"),
+				_ = s.n(S);
+			const y = Object(d.c)({
+					eventPosts: C.f,
+					isPending: C.d,
+					hasData: C.b,
+					endCursor: C.a,
+					isInShredditModNavExperiment: e => Object(k.a)(e, !0)
 				}),
-				_ = Object(n.b)(S, (e, t) => {
+				P = Object(n.b)(y, (e, t) => {
 					let {
 						subredditName: s
 					} = t;
 					return {
 						onClickPost: t => {
-							e(Object(f.a)(t.permalink))
+							e(Object(g.a)(t.permalink))
 						},
 						fetchMorePosts: () => {
-							e(Object(c.eventPostsRequested)(s))
+							e(Object(l.eventPostsRequested)(s))
 						}
 					}
 				});
-			class y extends a.a.PureComponent {
+			class N extends a.a.PureComponent {
 				renderEmptyState() {
 					const {
 						subredditName: e
 					} = this.props;
-					return a.a.createElement(u.c, {
-						className: k.a.emptyStateContainer,
+					return a.a.createElement(m.c, {
+						className: _.a.emptyStateContainer,
 						text: o.fbt._("No upcoming or live events in r/{subredditName}", [o.fbt._param("subredditName", e)], {
 							hk: "3wRma7"
 						}),
 						childrenPosition: "bottom"
-					}, a.a.createElement(O.a, {
+					}, a.a.createElement(j.a, {
 						name: "scheduled",
-						className: k.a.icon
+						className: _.a.icon
 					}), a.a.createElement(i.a, {
-						className: k.a.schedulePostLink,
-						to: Object(j.c)(e)
+						className: _.a.schedulePostLink,
+						to: Object(E.c)(e)
 					}, o.fbt._("Create Event Post", null, {
 						hk: "PXBmQ"
 					})))
@@ -802,20 +805,20 @@
 						onClickPost: r
 					} = this.props;
 					return a.a.createElement("div", {
-						className: k.a.contentContainer
+						className: _.a.contentContainer
 					}, a.a.createElement("div", {
-						className: k.a.standaloneContainer
-					}, o ? a.a.createElement(p.b, {
-						className: k.a.scroller,
+						className: _.a.standaloneContainer
+					}, o ? a.a.createElement(b.b, {
+						className: _.a.scroller,
 						onLoadMore: s,
 						loadMoreToken: e || void 0
 					}, t.map((e, t) => ({
 						id: e.id,
-						estHeight: Object(g.c)(e, h.g.Classic),
-						render: s => a.a.createElement(l.default, {
+						estHeight: Object(O.c)(e, v.g.Classic),
+						render: s => a.a.createElement(u.default, {
 							key: `event-post-id-${e.id}`,
 							postId: e.id,
-							className: k.a.eventPostContainer,
+							className: _.a.eventPostContainer,
 							first: 0 === t,
 							isOverlay: !1,
 							onClickPost: () => r(e)
@@ -825,20 +828,25 @@
 				render() {
 					const {
 						isPending: e,
-						hasData: t
+						hasData: t,
+						isInShredditModNavExperiment: s
 					} = this.props;
-					return a.a.createElement(a.a.Fragment, null, a.a.createElement(m.c, null, a.a.createElement(i.a, {
-						to: Object(j.c)(this.props.subredditName)
-					}, a.a.createElement(v.l, null, o.fbt._("Schedule an event post", null, {
+					return a.a.createElement(a.a.Fragment, null, a.a.createElement(p.c, {
+						className: Object(c.a)(_.a.topBar, s && "fixed bg-neutral-background mb-xs pr-0", {
+							[_.a.default]: !s
+						})
+					}, a.a.createElement(i.a, {
+						to: Object(E.c)(this.props.subredditName)
+					}, a.a.createElement(f.l, null, o.fbt._("Schedule an event post", null, {
 						hk: "nk1bA"
-					})))), a.a.createElement(m.a, null, a.a.createElement(m.b, {
-						className: k.a.pageTitle
+					})))), a.a.createElement(p.a, null, a.a.createElement(p.b, {
+						className: _.a.pageTitle
 					}, o.fbt._("Upcoming and live events", null, {
 						hk: "MAeQO"
-					})), !t && e ? Object(b.a)() : this.renderBody(), t && e && Object(b.a)(1)))
+					})), !t && e ? Object(x.a)() : this.renderBody(), t && e && Object(x.a)(1)))
 				}
 			}
-			t.default = _(Object(x.c)(y))
+			t.default = P(Object(h.c)(N))
 		},
 		"./src/reddit/connectors/ClassicPost/index.tsx": function(e, t, s) {
 			"use strict";
@@ -926,7 +934,7 @@
 			})), s.d(t, "b", (function() {
 				return P
 			})), s.d(t, "l", (function() {
-				return w
+				return N
 			}));
 			var o = s("./node_modules/fbt/lib/FbtPublic.js"),
 				r = s("./node_modules/uuid/dist/esm-browser/v4.js"),
@@ -1009,7 +1017,7 @@
 					[v.Q.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					})
-				}, w = (e, t) => Object(a.a)(e, {
+				}, N = (e, t) => Object(a.a)(e, {
 					...h,
 					variables: t
 				})
@@ -1269,4 +1277,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.00f9389e5db10803b87b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.331a5c537d1916f09111.js.map
