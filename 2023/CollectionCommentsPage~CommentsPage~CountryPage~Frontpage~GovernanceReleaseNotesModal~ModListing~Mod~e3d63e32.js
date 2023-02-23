@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.a9c5c414cd0213aca3f7.js
-// Retrieved at 2/23/2023, 2:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.6b4a118d34c2c818ec8c.js
+// Retrieved at 2/23/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -620,7 +620,7 @@
 				}, q._("Posts from communities similar to {subreddit name}", [q._param("subreddit name", t)], {
 					hk: "3pCPAD"
 				})))))
-			}, K = () => m.a.createElement("div", {
+			}, z = () => m.a.createElement("div", {
 				className: U.a.ThankYouView
 			}, m.a.createElement("div", {
 				className: U.a.Title
@@ -633,7 +633,7 @@
 				className: U.a.Subtitle
 			}, q._("Your feedback improves your feed.", null, {
 				hk: "2WLaqS"
-			}))), z = e => {
+			}))), K = e => {
 				let {
 					subredditId: t,
 					subredditName: s,
@@ -646,7 +646,7 @@
 						a(e => !e)
 					},
 					d = Object(V.a)();
-				return m.a.createElement(m.a.Fragment, null, m.a.createElement(K, null), m.a.createElement("div", {
+				return m.a.createElement(m.a.Fragment, null, m.a.createElement(z, null), m.a.createElement("div", {
 					className: U.a.MuteThankYouView
 				}, m.a.createElement("button", {
 					className: U.a.CommunityMutingTitle,
@@ -705,7 +705,7 @@
 						u !== I.a.ThankYouView || d || w()
 					}, [r, c, f, u, w, d]);
 					const O = Object(h.useCallback)(() => {
-							l.current = !0, p(d ? I.a.MuteThankYouView : I.a.ThankYouView), a(Object(_.m)(f))
+							l.current = !0, p(d ? I.a.MuteThankYouView : I.a.ThankYouView), a(Object(_.o)(f))
 						}, [f, a, p, d]),
 						S = Object(h.useCallback)(() => {
 							D({
@@ -715,7 +715,7 @@
 								similar: !1,
 								subredditId: b,
 								isCommunityMutingEnabled: d
-							}), l.current = !0, a(Object(_.a)(f))
+							}), l.current = !0, a(Object(_.c)(f))
 						}, [r, t, f, a, p, b, d]),
 						E = Object(h.useCallback)(() => {
 							C && (D({
@@ -725,7 +725,7 @@
 								similar: !0,
 								subredditId: C,
 								isCommunityMutingEnabled: d
-							}), l.current = !0, a(Object(_.p)(f)))
+							}), l.current = !0, a(Object(_.r)(f)))
 						}, [r, t, f, C, a, p, d]);
 					return u && u !== I.a.None ? m.a.createElement("div", {
 						className: Object(g.a)(U.a.Footer, {
@@ -738,18 +738,18 @@
 						seeLessFromThisCommunity: S,
 						seeLessLikeThisCommunity: E,
 						seeLessOfThisPostClick: O
-					}), u === I.a.MuteThankYouView && m.a.createElement(z, {
+					}), u === I.a.MuteThankYouView && m.a.createElement(K, {
 						subredditId: b,
 						postId: f,
 						subredditName: P,
 						closeThankYouView: w
-					}), u === I.a.ThankYouView && m.a.createElement(K, null)) : null
+					}), u === I.a.ThankYouView && m.a.createElement(z, null)) : null
 				}),
 				Y = s("./src/reddit/components/PostList/LoadMore.tsx"),
 				X = s("./src/reddit/components/PostList/SomethingWrong.tsx"),
 				$ = s("./src/reddit/components/Scroller/Simple.tsx"),
-				J = s("./src/reddit/constants/adEvents.ts"),
-				Z = s("./src/reddit/constants/componentSizes.ts"),
+				Z = s("./src/reddit/constants/adEvents.ts"),
+				J = s("./src/reddit/constants/componentSizes.ts"),
 				ee = s("./src/reddit/contexts/OneFeed/index.ts");
 			var te = function(e) {
 					let {
@@ -804,7 +804,7 @@
 				let n = ve.get(i);
 				return void 0 === n && (n = (e, i, n, o, r) => {
 					if (i.isSponsored) {
-						t.fireAdPixelsOfType(i, J.a.Click);
+						t.fireAdPixelsOfType(i, Z.a.Click);
 						const {
 							source: a
 						} = Object(b.t)(i, o);
@@ -1027,7 +1027,7 @@
 							q = V.media && V.media.type === oe.o.EMBED ? V.media.provider : null,
 							D = h && !N.isSponsored,
 							Q = u && !N.isSponsored && !N.isScoreHidden,
-							K = !!(null == N ? void 0 : N.recommendationContext);
+							z = !!(null == N ? void 0 : N.recommendationContext);
 						T = {
 							estHeight: Object(ne.c)(N, i),
 							id: e,
@@ -1080,7 +1080,7 @@
 									sendEvent: this.props.sendEvent,
 									shouldHideFlair: O,
 									shouldShowInsightsButton: I
-								}), K && m.a.createElement(G, {
+								}), z && m.a.createElement(G, {
 									post: V,
 									layout: i,
 									parentPost: F
@@ -1190,7 +1190,7 @@
 						onScroll: this.onScrollPause,
 						preventScrollOnMount: this.props.preventScrollOnMount,
 						trackingName: C,
-						viewportTopPadding: Z.f
+						viewportTopPadding: J.f
 					}, f), this.isLoadingMore() && this.renderLoadMore())
 				}
 			}
@@ -1393,8 +1393,8 @@
 				Q = Object(m.c)({
 					isOverlayOpen: F.i
 				}),
-				K = Object(c.b)(Q),
-				z = {};
+				z = Object(c.b)(Q),
+				K = {};
 
 			function G(e) {
 				return e === document
@@ -1409,8 +1409,8 @@
 			}
 			const X = 10,
 				$ = .9,
-				J = .9,
-				Z = 1.8,
+				Z = .9,
+				J = 1.8,
 				ee = 5,
 				te = 1500,
 				se = 2 * u.N,
@@ -1573,8 +1573,8 @@
 							this.updateScrollMetrics();
 							const e = this.getAveragePixelsPerMilliSecond(),
 								t = e < $,
-								s = e < J,
-								i = e < Z;
+								s = e < Z,
+								i = e < J;
 							if (this.scrollContainer && !this.loadMoreFired && this.props.onLoadMore) {
 								let e = !1;
 								if (void 0 !== this.props.loadMoreToken && void 0 !== this.viewport && this.nextVisibleChildrenIndex >= this.props.children.length) {
@@ -1732,8 +1732,8 @@
 					}), this.props.disableScrollCache && !this.props.preventScrollOnMount && Object(R.c)(this.scrollContainer, 0), this.setupScrollHandler(), p.a.write(() => {
 						if (!this.props.disableScrollCache) {
 							const e = this.getCacheKey(),
-								t = z[e];
-							r()(t) || (z[e] = void 0, this.scrollContainer && Object(R.c)(this.scrollContainer, t))
+								t = K[e];
+							r()(t) || (K[e] = void 0, this.scrollContainer && Object(R.c)(this.scrollContainer, t))
 						}
 						this.callOnScrollForItemsChanged(), this.props.onLastVisibleChildRendered && this.props.onLastVisibleChildRendered()
 					}), p.a.read(() => {
@@ -1762,7 +1762,7 @@
 				componentWillUnmount() {
 					if (this.callExitedViewportForUnmount(), this.cleanupScrollHandler(), clearTimeout(this.updateRenderableChildrenHandle), this.cancelPopulateRenderableChildrenWhenIdle(), this.scrollContainer && !this.props.disableScrollCache) {
 						const e = this.getCacheKey();
-						z[e] = this.lastRenderPosition
+						K[e] = this.lastRenderPosition
 					}
 					this.childMap = new S.a("id"), this.itemsInViewport = new S.a("id"), this.wrapperRefFNs = {}, this.childRefFns = {}, this.containerRef = null, this.loadMoreEl = void 0, this.scrollContainer = void 0, this.unmountItemsIdleId && (Object(h.cancelIdleCallback)(this.unmountItemsIdleId), this.unmountItemsIdleId = null)
 				}
@@ -1919,7 +1919,7 @@
 					return void 0 === e.onLoadMore || "loadMoreToken" in e
 				}
 			}
-			t.b = K(Object(V.b)(ce))
+			t.b = z(Object(V.b)(ce))
 		},
 		"./src/reddit/components/Scroller/getDocumentTop.ts": function(e, t, s) {
 			"use strict";
@@ -2435,8 +2435,8 @@
 				o = s("./src/reddit/selectors/user.ts");
 			const r = e => Object(n.c)(e, {
 				experimentEligibilitySelector: o.S,
-				experimentName: i.Vb
-			}) === i.Kd
+				experimentName: i.Zb
+			}) === i.Od
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, s) {
 			"use strict";
@@ -2523,4 +2523,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.a9c5c414cd0213aca3f7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.6b4a118d34c2c818ec8c.js.map

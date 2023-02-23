@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.65cbd65b200f02667210.js
-// Retrieved at 2/23/2023, 2:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.c75d1e61112bcf587aa8.js
+// Retrieved at 2/23/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityNotificationSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -95,7 +95,7 @@
 					onSelect: s
 				} = e;
 				var i, c;
-				const d = Object(_.a)(b.D),
+				const d = Object(_.a)(b.H),
 					[l, u] = Object(a.useState)(!1),
 					E = Object(a.useRef)(),
 					C = Object(S.a)(),
@@ -106,10 +106,10 @@
 						isNsfw: w,
 						isMuted: I
 					} = t,
-					j = I && d === b.Kd,
+					j = I && d === b.Od,
 					L = j ? f.c.OFF : k,
-					D = t.styles.icon || (null === (i = t.styles.legacyIcon) || void 0 === i ? void 0 : i.url),
-					T = null !== (c = t.styles.primaryColor) && void 0 !== c ? c : void 0,
+					T = t.styles.icon || (null === (i = t.styles.legacyIcon) || void 0 === i ? void 0 : i.url),
+					D = null !== (c = t.styles.primaryColor) && void 0 !== c ? c : void 0,
 					M = (e => {
 						switch (e) {
 							case f.c.OFF:
@@ -198,12 +198,12 @@
 				}, r.a.createElement("div", {
 					className: v.a.subreddit
 				}, r.a.createElement(h.b, {
-					iconUrl: D,
+					iconUrl: T,
 					altText: o.fbt._("Subreddit icon", null, {
 						hk: "gEWhf"
 					}),
 					shouldHideNsfwIcon: w,
-					primaryColor: T,
+					primaryColor: D,
 					className: v.a.subredditIcon
 				}), r.a.createElement("div", {
 					className: v.a.subredditInfo
@@ -557,4 +557,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.65cbd65b200f02667210.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.c75d1e61112bcf587aa8.js.map

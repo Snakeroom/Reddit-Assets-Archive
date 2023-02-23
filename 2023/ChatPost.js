@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.20b9408c6eb33664efe1.js
-// Retrieved at 2/23/2023, 2:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.96e21c2b483a240347cc.js
+// Retrieved at 2/23/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/backo2/index.js": function(e, t) {
@@ -2971,9 +2971,9 @@
 				xn = n("./src/reddit/constants/experiments.ts"),
 				kn = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const jn = e => Object(kn.c)(e, {
-					experimentName: xn.mb,
+					experimentName: xn.qb,
 					experimentEligibilitySelector: kn.a
-				}) === xn.hb.Enabled,
+				}) === xn.lb.Enabled,
 				Nn = (e, t) => {
 					let {
 						commentId: n
@@ -4563,4 +4563,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.20b9408c6eb33664efe1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.96e21c2b483a240347cc.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.c4a18cc3fcb7ce48bd0a.js
-// Retrieved at 2/23/2023, 2:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.dc35e017ffcb517d7be0.js
+// Retrieved at 2/23/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./node_modules/lodash/map.js": function(e, t, s) {
@@ -494,8 +494,8 @@
 				k = s("./src/lib/makeDraftKey/index.ts"),
 				L = s("./src/reddit/actions/bulkActions/index.ts"),
 				g = s("./src/reddit/actions/comment/index.ts"),
-				T = s("./src/reddit/actions/comment/authoring.ts"),
-				C = s("./src/reddit/actions/comment/moderation.ts"),
+				C = s("./src/reddit/actions/comment/authoring.ts"),
+				T = s("./src/reddit/actions/comment/moderation.ts"),
 				D = s("./src/reddit/actions/modal.ts"),
 				N = s("./src/reddit/actions/post.ts"),
 				P = s("./src/reddit/actions/toaster.ts"),
@@ -682,7 +682,7 @@
 												hasSortParam: !0
 											})), p === Q.e.Post) {
 											const s = Object(k.a)(q.c.replyToPost, u);
-											d(Object(T.r)({
+											d(Object(C.r)({
 												...t,
 												headCommentId: Object(Z.w)(l, {
 													commentsPageKey: n
@@ -691,7 +691,7 @@
 												draftKey: s
 											}));
 											const o = l.postStickiedComments.data[u];
-											d(Object(C.f)({
+											d(Object(T.f)({
 												id: e.id,
 												postId: e.postId,
 												commentsPageKey: n
@@ -706,7 +706,7 @@
 													commentId: u,
 													commentsPageKey: n
 												});
-											d(Object(T.p)({
+											d(Object(C.p)({
 												...t,
 												parentCommentId: u,
 												commentsPageKey: n,
@@ -1071,13 +1071,13 @@
 				r = s("./node_modules/reselect/es/index.js");
 			const d = Object(r.a)(e => Object(n.c)(e, {
 				experimentEligibilitySelector: n.a,
-				experimentName: o.nb
+				experimentName: o.rb
 			}), e => ({
-				bucketed: e === o.Tc.ExpandedSearch || e === o.Tc.CollapsedSearch,
-				collapsed: e === o.Tc.CollapsedSearch,
-				expanded: e === o.Tc.ExpandedSearch
+				bucketed: e === o.Xc.ExpandedSearch || e === o.Xc.CollapsedSearch,
+				collapsed: e === o.Xc.CollapsedSearch,
+				expanded: e === o.Xc.ExpandedSearch
 			}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.c4a18cc3fcb7ce48bd0a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.dc35e017ffcb517d7be0.js.map

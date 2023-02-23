@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.4f45b8c294885ad5275c.js
-// Retrieved at 2/23/2023, 2:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.ca82d3979722d0e83a2d.js
+// Retrieved at 2/23/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -3966,8 +3966,8 @@
 					showContributorRequestFlow: e => Object(ze.w)(e, De.e.Post),
 					showCreatePollButton: e => (e => Object(Le.c)(e, {
 						experimentEligibilitySelector: Le.a,
-						experimentName: ge.H
-					}) === ge.O.Treatment)(e) && !Object(je.g)(),
+						experimentName: ge.L
+					}) === ge.S.Treatment)(e) && !Object(je.h)(),
 					shouldShowFlairPreview: (e, t) => {
 						let {
 							listingName: n
@@ -4235,7 +4235,7 @@
 						onClick: g ? v : void 0,
 						headerButton: i.a.createElement("div", {
 							className: Je.a.headerButtonsContainer
-						}, !K && y && C && l !== ge.Me.NewModule && i.a.createElement(a.a, {
+						}, !K && y && C && l !== ge.Qe.NewModule && i.a.createElement(a.a, {
 							className: Je.a.ModToolsLink,
 							to: C.posts ? `${y.url}about/modqueue` : `${y.url}about/`,
 							onClick: this.onClickModTools
@@ -6001,8 +6001,8 @@
 			const i = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.D
-				}) === r.Kd
+					experimentName: r.H
+				}) === r.Od
 			}
 		},
 		"./src/reddit/selectors/experiments/joinOptimizations.ts": function(e, t, n) {
@@ -6025,29 +6025,29 @@
 				i = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = n("./src/reddit/selectors/experiments/index.ts");
 			const a = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Ib,
+					experimentName: s.Mb,
 					experimentEligibilitySelector: o.e
-				}), e => e === s.Q.Enabled),
+				}), e => e === s.U.Enabled),
 				d = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Jb,
-					experimentEligibilitySelector: o.e
-				}), e => e === s.R.Enabled),
-				c = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Kb,
-					experimentEligibilitySelector: o.e
-				}), e => e === s.S.Enabled),
-				l = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Lb,
-					experimentEligibilitySelector: o.e
-				}), e => e === s.T.Enabled),
-				u = Object(r.a)(e => Object(i.c)(e, {
 					experimentName: s.Nb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.V.Enabled),
-				m = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Mb,
+				c = Object(r.a)(e => Object(i.c)(e, {
+					experimentName: s.Ob,
 					experimentEligibilitySelector: o.e
-				}), e => e === s.U.Enabled)
+				}), e => e === s.W.Enabled),
+				l = Object(r.a)(e => Object(i.c)(e, {
+					experimentName: s.Pb,
+					experimentEligibilitySelector: o.e
+				}), e => e === s.X.Enabled),
+				u = Object(r.a)(e => Object(i.c)(e, {
+					experimentName: s.Rb,
+					experimentEligibilitySelector: o.e
+				}), e => e === s.Z.Enabled),
+				m = Object(r.a)(e => Object(i.c)(e, {
+					experimentName: s.Qb,
+					experimentEligibilitySelector: o.e
+				}), e => e === s.Y.Enabled)
 		},
 		"./src/redditGQL/operations/DeleteSubredditMuteSettings.json": function(e) {
 			e.exports = JSON.parse('{"id":"c518a45f60a5"}')
@@ -6072,4 +6072,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.4f45b8c294885ad5275c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.ca82d3979722d0e83a2d.js.map

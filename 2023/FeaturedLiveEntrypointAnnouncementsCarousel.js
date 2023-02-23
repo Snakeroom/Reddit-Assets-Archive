@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.cd2e795e0b77de8c9dd6.js
-// Retrieved at 2/23/2023, 2:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.0a2011e3e2867207d06e.js
+// Retrieved at 2/23/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeaturedLiveEntrypointAnnouncementsCarousel"], {
 		"./src/reddit/components/FeaturedLiveEntrypoint/AnnouncementsCarousel/index.m.less": function(e, t, n) {
@@ -61,8 +61,8 @@
 				m = n("./node_modules/lodash/isEqual.js"),
 				b = n.n(m),
 				v = n("./src/lib/constants/index.ts"),
-				A = n("./src/reddit/constants/cookie.ts"),
-				p = n("./src/reddit/constants/experiments.ts"),
+				p = n("./src/reddit/constants/cookie.ts"),
+				A = n("./src/reddit/constants/experiments.ts"),
 				_ = n("./src/reddit/helpers/localStorage/index.ts"),
 				h = n("./src/reddit/selectors/telemetry.ts");
 			const x = (e, t) => {
@@ -95,25 +95,25 @@
 				});
 			var j = n("./src/reddit/hooks/useTracking.ts"),
 				C = n("./src/reddit/selectors/experiments/index.ts");
-			const E = e => {
+			const g = e => {
 					const t = new Date;
-					t.setMonth(t.getMonth() + 1), u.a.set(A.h, e, {
+					t.setMonth(t.getMonth() + 1), u.a.set(p.h, e, {
 						...v.F,
 						expires: t
 					})
 				},
-				g = (e, t) => n => {
+				E = (e, t) => n => {
 					if (n.experimentName) {
 						const t = e[n.experimentName.toLowerCase()];
-						if (t && Object(p.lg)(t.variant)) return !1
+						if (t && Object(A.pg)(t.variant)) return !1
 					}
 					return !((t[n.id] || 0) >= n.maxImpressionsCount)
 				};
 			var N = n("./src/reddit/components/FeaturedLiveEntrypoint/AnnouncementsCarousel/index.m.less"),
-				f = n.n(N);
+				w = n.n(N);
 
-			function w() {
-				return (w = Object.assign || function(e) {
+			function I() {
+				return (I = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -121,7 +121,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const I = o.a.memo(e => {
+			const f = o.a.memo(e => {
 					let {
 						announcement: t,
 						className: n,
@@ -136,13 +136,13 @@
 						onClick: a,
 						className: n
 					}, o.a.createElement("div", {
-						className: f.a.Content
+						className: w.a.Content
 					}, o.a.createElement("h3", {
-						className: f.a.Title
+						className: w.a.Title
 					}, t.title), o.a.createElement("p", {
-						className: f.a.Description
+						className: w.a.Description
 					}, t.description)), t.iconUrl && o.a.createElement("div", {
-						className: f.a.IconDiv,
+						className: w.a.IconDiv,
 						style: {
 							backgroundImage: `url("${t.iconUrl}")`
 						}
@@ -156,9 +156,9 @@
 						...a
 					} = e;
 					const i = t.url.split("reddit.com");
-					return i.length > 1 ? o.a.createElement(r.default, w({
+					return i.length > 1 ? o.a.createElement(r.default, I({
 						to: i[1]
-					}, a), n) : o.a.createElement("a", w({
+					}, a), n) : o.a.createElement("a", I({
 						href: t.url
 					}, a), n)
 				});
@@ -169,7 +169,7 @@
 				const n = Object(i.e)(e => e.live.shouldShowAnnouncements),
 					[r, d] = Object(a.useState)([]),
 					[u, m] = Object(a.useState)(!n),
-					[v, p] = Object(a.useState)(!0),
+					[v, A] = Object(a.useState)(!0),
 					[h, N] = Object(a.useState)(0);
 				(e => {
 					let {
@@ -183,10 +183,10 @@
 					const l = Object(i.e)(C.a);
 					Object(a.useEffect)(() => {
 						const e = Object(_.e)(),
-							a = t.filter(g(l, e)).slice(0, 5),
+							a = t.filter(E(l, e)).slice(0, 5),
 							i = [...a].sort((e => (t, n) => (e[t.id] || 0) - (e[n.id] || 0))(e))[0],
-							d = a.length ? A.i.Yes : A.i.No;
-						E(d), s || b()(a.map(e => e.id), r.map(e => e.id)) || (c(a), n(a.indexOf(i)), o(!1))
+							d = a.length ? p.i.Yes : p.i.No;
+						g(d), s || b()(a.map(e => e.id), r.map(e => e.id)) || (c(a), n(a.indexOf(i)), o(!1))
 					}, [])
 				})({
 					announcements: t,
@@ -194,10 +194,10 @@
 					isHidden: u,
 					setVisibleAnnouncements: d,
 					visibleAnnouncements: r,
-					setIsLoading: p
+					setIsLoading: A
 				});
 				const {
-					onCarouselNavigate: w,
+					onCarouselNavigate: I,
 					isTransitionComplete: D
 				} = (e => {
 					let {
@@ -232,8 +232,8 @@
 								id: t,
 								maxImpressionsCount: n
 							} = e;
-							Object(_.fb)(t, n)
-						}), s(O("dismiss_all")), E(A.i.No)
+							Object(_.gb)(t, n)
+						}), s(O("dismiss_all")), g(p.i.No)
 					}, [n, s, t])
 				})({
 					visibleAnnouncements: r,
@@ -265,69 +265,69 @@
 						if (t < 0 || t >= s.length) return void n(0);
 						const e = s[t],
 							a = Object(_.d)(e.id);
-						o(x("view", e)), Object(_.fb)(e.id, a + 1);
+						o(x("view", e)), Object(_.gb)(e.id, a + 1);
 						const i = Object(_.e)();
-						s.filter(g(c, i)).length || E(A.i.No)
+						s.filter(E(c, i)).length || g(p.i.No)
 					}, [t, c, o, n, s])
 				})({
 					activeIndex: h,
 					setActiveIndex: N,
 					visibleAnnouncements: r
 				}), u ? null : o.a.createElement("div", {
-					className: f.a.Container
+					className: w.a.Container
 				}, o.a.createElement("h2", {
-					className: f.a.Headline
+					className: w.a.Headline
 				}, s.fbt._("Updates from reddit", null, {
 					hk: "1R94KF"
 				})), o.a.createElement("button", {
-					className: f.a.CloseBtn,
+					className: w.a.CloseBtn,
 					onClick: k
 				}, o.a.createElement(l.a, {
 					name: "close"
 				})), o.a.createElement("div", {
-					className: f.a.Carousel
+					className: w.a.Carousel
 				}, r.length > 1 ? o.a.createElement("button", {
-					className: f.a.LeftArrow,
-					onClick: w("prev")
+					className: w.a.LeftArrow,
+					onClick: I("prev")
 				}, o.a.createElement(l.a, {
 					name: "caret_left"
 				})) : o.a.createElement("div", {
-					className: f.a.ArrowPlaceholder
+					className: w.a.ArrowPlaceholder
 				}), o.a.createElement("div", {
-					className: f.a.AnnouncementsWrapper
+					className: w.a.AnnouncementsWrapper
 				}, v ? o.a.createElement("div", {
-					className: f.a.LoadingIndicator
-				}) : r.map((e, t) => o.a.createElement(I, {
+					className: w.a.LoadingIndicator
+				}) : r.map((e, t) => o.a.createElement(f, {
 					announcement: e,
-					className: Object(c.a)(f.a.Announcement, {
-						[f.a.isActive]: t === h,
-						[f.a.prev]: r.length > 1 && 0 === h && t + 1 === r.length || t === h - 1,
-						[f.a.next]: r.length > 1 && h + 1 === r.length && 0 === t || t === h + 1,
-						[f.a.isTransitionComplete]: D
+					className: Object(c.a)(w.a.Announcement, {
+						[w.a.isActive]: t === h,
+						[w.a.prev]: r.length > 1 && 0 === h && t + 1 === r.length || t === h - 1,
+						[w.a.next]: r.length > 1 && h + 1 === r.length && 0 === t || t === h + 1,
+						[w.a.isTransitionComplete]: D
 					}),
 					isActive: t === h,
 					key: e.id,
 					onClick: L
 				}))), r.length > 1 ? o.a.createElement("button", {
-					className: f.a.RightArrow,
-					onClick: w("next")
+					className: w.a.RightArrow,
+					onClick: I("next")
 				}, o.a.createElement(l.a, {
 					name: "caret_right"
 				})) : o.a.createElement("div", {
-					className: f.a.ArrowPlaceholder
+					className: w.a.ArrowPlaceholder
 				})), r.length > 1 ? o.a.createElement("div", {
-					className: f.a.Dots
+					className: w.a.Dots
 				}, r.map((e, t) => o.a.createElement("button", {
 					onClick: () => N(t),
 					key: `announcement-carousel-dot-${t}`,
-					className: Object(c.a)(f.a.Dot, {
-						[f.a.isSelected]: t === h
+					className: Object(c.a)(w.a.Dot, {
+						[w.a.isSelected]: t === h
 					})
 				}))) : o.a.createElement("div", {
-					className: f.a.DotsPlaceholder
+					className: w.a.DotsPlaceholder
 				}))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.cd2e795e0b77de8c9dd6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.0a2011e3e2867207d06e.js.map

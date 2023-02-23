@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.7bec6c41cc8d242138ac.js
-// Retrieved at 2/23/2023, 2:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.0ba9b69e14ebf3b94103.js
+// Retrieved at 2/23/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, o) {
@@ -607,11 +607,11 @@
 				Q = o("./src/telemetry/index.ts"),
 				U = o("./src/lib/initializeClient/installReducer.ts"),
 				B = o("./src/reddit/reducers/features/modActivitySummaries/index.ts"),
-				V = o("./node_modules/redux/es/redux.js"),
-				H = o("./node_modules/icepick/icepick.js"),
+				H = o("./node_modules/redux/es/redux.js"),
+				V = o("./node_modules/icepick/icepick.js"),
 				G = o("./src/reddit/actions/modQueue/constants.ts");
 			const $ = {};
-			var K = function() {
+			var z = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : $,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -630,7 +630,7 @@
 							var t;
 							const o = null === (t = e.previousActions) || void 0 === t ? void 0 : t.actions;
 							o && o.length && o.forEach(e => e.modAction ? n[e.modAction.id] = e.modAction : !!e.reportAction && (n[e.reportAction.id] = e.reportAction))
-						}), Object(H.merge)(e, n)
+						}), Object(V.merge)(e, n)
 					}
 					case G.l: {
 						const {
@@ -648,15 +648,15 @@
 								__typename: "ModAction",
 								moderatorInfo: o
 							})
-						}), Object(H.merge)(e, r)
+						}), Object(V.merge)(e, r)
 					}
 					default:
 						return e
 				}
 			};
-			const z = {};
+			const K = {};
 			var W = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : z,
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : K,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
 						case G.i:
@@ -677,7 +677,7 @@
 									return (null === (t = e.modAction) || void 0 === t ? void 0 : t.id) || (null === (o = e.reportAction) || void 0 === o ? void 0 : o.id)
 								}).filter(e => !!e).splice(0, 5)), e
 							}, {});
-							return Object(H.merge)(e, n)
+							return Object(V.merge)(e, n)
 						}
 						case G.l: {
 							const {
@@ -690,21 +690,21 @@
 									lastModAction: o
 								} = t;
 								o && o.id && o.target && (r[o.target.id] = [o.id, ...e[o.target.id] || []].splice(0, 5))
-							}), Object(H.merge)(e, r)
+							}), Object(V.merge)(e, r)
 						}
 						default:
 							return e
 					}
 				},
-				J = Object(V.c)({
-					models: K,
+				J = Object(H.c)({
+					models: z,
 					order: W
 				}),
 				X = o("./src/reddit/reducers/features/realtimeModqueue/index.ts"),
-				Y = o("./src/reddit/reducers/pages/modHub/index.ts");
+				Z = o("./src/reddit/reducers/pages/modHub/index.ts");
 			Object(U.a)({
 				pages: {
-					modHub: Y.a
+					modHub: Z.a
 				}
 			}), Object(U.a)({
 				features: {
@@ -719,7 +719,7 @@
 					realtimeModqueue: X.a
 				}
 			});
-			const Z = Object(n.a)(G.k),
+			const Y = Object(n.a)(G.k),
 				ee = Object(n.a)(G.j),
 				te = Object(n.a)(G.i),
 				oe = Object(n.a)(G.h),
@@ -781,7 +781,7 @@
 						users: _,
 						...S
 					} = w(g.body.data), y = d(), R = c.e[Object(u.V)(y, {})] === c.d.Card;
-					Object(T.b)(y, R) && n(Z(_)), n(j({
+					Object(T.b)(y, R) && n(Y(_)), n(j({
 						listingKey: e,
 						page: `${o.page||L.b}`,
 						response: S
@@ -1072,7 +1072,7 @@
 		"./src/reddit/actions/removalReasons/index.ts": function(e, t, o) {
 			"use strict";
 			o.r(t), o.d(t, "removalReasonsPending", (function() {
-				return Z
+				return Y
 			})), o.d(t, "removalReasonsLoaded", (function() {
 				return ee
 			})), o.d(t, "removalReasonsFailed", (function() {
@@ -1318,27 +1318,27 @@
 						mod_note: t.modNote
 					}
 				}),
-				V = (e, t, o) => Object(T.a)(Object(F.a)(e, [q.a]), {
+				H = (e, t, o) => Object(T.a)(Object(F.a)(e, [q.a]), {
 					endpoint: Object(Q.a)(Object(U.a)(`${e.apiUrl}/api/v1/modactions/removal_${o}_message/`)),
 					method: A.pb.POST,
 					type: "json",
 					data: t
 				});
-			var H = o("./src/reddit/helpers/isPost.ts"),
+			var V = o("./src/reddit/helpers/isPost.ts"),
 				G = o("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
 				$ = o("./src/reddit/helpers/routeKey/index.ts"),
-				K = o("./src/reddit/models/ModQueue/index.ts"),
-				z = o("./src/reddit/models/PostDraft/index.ts"),
+				z = o("./src/reddit/models/ModQueue/index.ts"),
+				K = o("./src/reddit/models/PostDraft/index.ts"),
 				W = o("./src/reddit/models/RemovalReason/index.ts"),
 				J = o("./src/reddit/models/Toast/index.ts"),
 				X = o("./src/reddit/selectors/comments.ts"),
-				Y = o("./src/reddit/selectors/platform.ts");
+				Z = o("./src/reddit/selectors/platform.ts");
 			Object(r.a)({
 				features: {
 					removalReasons: R
 				}
 			});
-			const Z = Object(E.a)("REMOVALREASONS__LOAD_PENDING"),
+			const Y = Object(E.a)("REMOVALREASONS__LOAD_PENDING"),
 				ee = Object(E.a)(d),
 				te = Object(E.a)("REMOVALREASONS__LOAD_FAILED"),
 				oe = e => async (t, o, s) => {
@@ -1346,7 +1346,7 @@
 						apiContext: r
 					} = s;
 					const n = o().subreddits.models[e].name;
-					t(Z());
+					t(Y());
 					const d = await ((e, t) => Object(T.a)(Object(F.a)(e, [q.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons.json`,
 						method: A.pb.GET
@@ -1441,7 +1441,7 @@
 					const u = i(),
 						l = u.user.account && u.user.account.displayText,
 						m = e[0],
-						b = Object(H.a)(m) ? W.e.Post : W.e.Comment,
+						b = Object(V.a)(m) ? W.e.Post : W.e.Comment,
 						p = b === W.e.Post ? u.posts.models[m] : u.features.comments.models[m],
 						f = b === W.e.Post ? w.Q : M.j;
 					if (!p || !l) return !1;
@@ -1468,7 +1468,7 @@
 									isLocked: n,
 									type: s
 								},
-								i = await V(c(), Object(W.h)(r, b), b);
+								i = await H(c(), Object(W.h)(r, b), b);
 							if (i.ok) {
 								if ([W.f.Public, W.f.PublicAsSubreddit].includes(s)) {
 									if (d(Se()), i.body) {
@@ -1477,14 +1477,14 @@
 												comment: e,
 												parentId: m
 											},
-											o = Object(Y.f)(u),
+											o = Object(Z.f)(u),
 											s = u.platform.currentPage && u.platform.currentPage.routeMatch;
 										let r = o && s && Object($.a)(s, u, u.posts.models[e.postId]);
 										if (r || (r = Object(x.a)(e.postId, null, {
 												sort: A.x,
 												hasSortParam: !0
 											})), b === W.e.Post) {
-											const o = Object(k.a)(z.c.replyToPost, m);
+											const o = Object(k.a)(K.c.replyToPost, m);
 											d(Object(P.r)({
 												...t,
 												headCommentId: Object(X.w)(u, {
@@ -1504,7 +1504,7 @@
 												}
 											}))
 										} else if (b === W.e.Comment) {
-											const e = Object(k.a)(z.c.replyToComment, p.id),
+											const e = Object(k.a)(K.c.replyToComment, p.id),
 												o = Object(X.j)(u, {
 													commentId: m,
 													commentsPageKey: r
@@ -1557,7 +1557,7 @@
 					if (p.ok) {
 						const s = {
 							ids: e,
-							operation: K.a.RemovalReason,
+							operation: z.a.RemovalReason,
 							username: l,
 							options: {
 								modNote: n,
@@ -1571,7 +1571,7 @@
 									title: t.title,
 									type: r
 								},
-								n = await V(c(), Object(W.h)(s, W.e.Bulk), W.e.Bulk);
+								n = await H(c(), Object(W.h)(s, W.e.Bulk), W.e.Bulk);
 							n.ok ? (d(_e()), d(m)) : d(ye(n.error))
 						} else d(m)
 					} else d(he(p.error))
@@ -1847,8 +1847,8 @@
 				n = o("./src/reddit/selectors/user.ts");
 			const d = e => Object(r.c)(e, {
 				experimentEligibilitySelector: n.S,
-				experimentName: s.Vb
-			}) === s.Kd
+				experimentName: s.Zb
+			}) === s.Od
 		},
 		"./src/reddit/selectors/experiments/realtimeMQUpdates.ts": function(e, t, o) {
 			"use strict";
@@ -1861,8 +1861,8 @@
 				d = o("./src/reddit/selectors/experiments/modqueueActionBarUXImprovements.ts");
 			const i = e => Object(d.a)(e) && Object(r.c)(e, {
 				experimentEligibilitySelector: n.S,
-				experimentName: s.vc
-			}) === s.Kd
+				experimentName: s.zc
+			}) === s.Od
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, o) {
 			"use strict";
@@ -1946,4 +1946,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.7bec6c41cc8d242138ac.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.0ba9b69e14ebf3b94103.js.map

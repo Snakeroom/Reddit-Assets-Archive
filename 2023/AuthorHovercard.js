@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.bb39a1f2b384cfc7e1af.js
-// Retrieved at 2/23/2023, 2:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.8d5113d16e3774aa0605.js
+// Retrieved at 2/23/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -304,7 +304,7 @@
 					result: K
 				});
 			const J = {};
-			var q = function() {
+			var Q = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : J,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -343,18 +343,18 @@
 							return e
 					}
 				},
-				Q = Object(y.c)({
+				q = Object(y.c)({
 					api: U,
 					fetchedTokens: M,
 					inContext: T,
 					loadMore: D,
 					models: R,
 					search: G,
-					userOrder: q
+					userOrder: Q
 				});
 			Object(E.a)({
 				features: {
-					banned: Q
+					banned: q
 				}
 			});
 			const V = Object(o.a)(j.s),
@@ -1382,8 +1382,8 @@
 				K = n("./src/reddit/actions/modal.ts"),
 				G = n("./src/reddit/actions/subredditModeration/ban.ts"),
 				J = n("./src/reddit/constants/modals.ts"),
-				q = n("./src/reddit/components/Hovercards/helpers.ts"),
-				Q = n("./src/reddit/icons/fonts/index.tsx"),
+				Q = n("./src/reddit/components/Hovercards/helpers.ts"),
+				q = n("./src/reddit/icons/fonts/index.tsx"),
 				V = n("./src/reddit/models/ModeratingSubreddits/index.ts"),
 				X = n("./src/reddit/selectors/bannedUser.ts"),
 				Y = n("./src/reddit/components/Hovercards/AuthorHovercard/ModActions.m.less"),
@@ -1417,33 +1417,33 @@
 					} = this.props;
 					return r.a.createElement("div", {
 						className: e
-					}, a ? r.a.createElement(q.a, {
+					}, a ? r.a.createElement(Q.a, {
 						role: "button",
 						onClick: () => {
 							s(this.props.user.id), o(L.f(t))
 						}
-					}, r.a.createElement(Q.a, {
+					}, r.a.createElement(q.a, {
 						name: "ban",
 						isFilled: !0,
 						className: $.a.icon
 					}), ee._("Unban User", null, {
 						hk: "1aASyW"
-					})) : r.a.createElement(q.a, {
+					})) : r.a.createElement(Q.a, {
 						role: "button",
 						onClick: () => {
 							i(), o(L.a(t))
 						}
-					}, r.a.createElement(Q.a, {
+					}, r.a.createElement(q.a, {
 						name: "ban",
 						className: $.a.icon
 					}), ee._("Ban User", null, {
 						hk: "3OhuLx"
-					})), n && r.a.createElement(q.a, {
+					})), n && r.a.createElement(Q.a, {
 						role: "button",
 						onClick: () => {
 							c(), o(L.e(t))
 						}
-					}, r.a.createElement(Q.a, {
+					}, r.a.createElement(q.a, {
 						name: "mod_mute",
 						className: $.a.icon
 					}), ee._("Mute User", null, {
@@ -1484,12 +1484,12 @@
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			var oe = Object(s.b)(null, (e, t) => ({
 					onToggleUserFlairModal: () => e(Object(re.g)(t.subredditId, t.username))
-				}))(e => r.a.createElement(q.a, {
+				}))(e => r.a.createElement(Q.a, {
 					role: "button",
 					onClick: () => {
 						e.onToggleUserFlairModal(), e.sendEvent(L.d(e.contextId))
 					}
-				}, r.a.createElement(Q.a, {
+				}, r.a.createElement(q.a, {
 					name: "tag",
 					className: $.a.icon
 				}), se._("Edit user flair", null, {
@@ -1944,13 +1944,13 @@
 						}
 					}, []), Object(a.useEffect)(() => {
 						if (Object(x.a)()) {
-							const e = Object(_.B)("modnote-draft");
+							const e = Object(_.C)("modnote-draft");
 							y(e && e[c] ? e[c] : "")
 						}
 					}, [c]);
 					const T = Object(s.d)(),
 						L = Object(a.useCallback)(e => {
-							y(e), Object(_.Cb)("modnote-draft", {
+							y(e), Object(_.Eb)("modnote-draft", {
 								[c]: e
 							})
 						}, [y, c]),
@@ -2247,8 +2247,8 @@
 				K = n("./src/lib/constants/colors.ts"),
 				G = n("./src/reddit/components/CCM/ModUserNoteWithIcon/index.m.less"),
 				J = n.n(G),
-				q = n("./src/reddit/components/CCM/ModUserNoteWithIcon/Icon/index.m.less"),
-				Q = n.n(q);
+				Q = n("./src/reddit/components/CCM/ModUserNoteWithIcon/Icon/index.m.less"),
+				q = n.n(Q);
 			const V = {
 					[S.z.AddRemovalReason]: "remove",
 					[S.z.AcceptModeratorInvite]: "mod",
@@ -2291,7 +2291,7 @@
 					if (!s) return null;
 					const o = Object(k.b)(s);
 					return r.a.createElement(o, {
-						className: Object(d.a)(t, Q.a.icon)
+						className: Object(d.a)(t, q.a.icon)
 					})
 				},
 				$ = n("./src/reddit/components/CCM/ModUserNoteWithIcon/MetaData/index.tsx"),
@@ -2884,8 +2884,8 @@
 				Ke = n("./src/reddit/components/ChatButton/index.tsx"),
 				Ge = n("./src/reddit/components/HumanDate/index.tsx"),
 				Je = n("./src/reddit/components/JSAPIContainers/index.tsx"),
-				qe = n("./src/reddit/components/ModNoteItem/index.tsx"),
-				Qe = n("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/AvatarImage.tsx"),
+				Qe = n("./src/reddit/components/ModNoteItem/index.tsx"),
+				qe = n("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/AvatarImage.tsx"),
 				Ve = n("./src/reddit/components/SubscribeButton/index.tsx"),
 				Xe = n("./src/reddit/components/UserIcon/index.tsx"),
 				Ye = n("./src/reddit/controls/InternalLink/index.tsx"),
@@ -3286,7 +3286,7 @@
 						} : {}
 					}), r.a.createElement("div", {
 						className: kt.a.snoovatarContainer
-					}, v.snoovatarFullBodyAsset ? r.a.createElement(Qe.a, {
+					}, v.snoovatarFullBodyAsset ? r.a.createElement(qe.a, {
 						className: kt.a.snoovatar,
 						isGold: v.isGold,
 						snoovatarUrl: v.snoovatarFullBodyAsset,
@@ -3344,14 +3344,14 @@
 						user: v,
 						trophyCase: C || [],
 						prefersReducedAnimations: !!j
-					}), U && O && r.a.createElement(qe.b, {
+					}), U && O && r.a.createElement(Qe.b, {
 						className: kt.a.lastModNote,
 						modNote: O,
 						subredditId: k || "",
 						onClick: e => {
 							e.stopPropagation(), E()
 						},
-						context: qe.a.ModIdCard
+						context: Qe.a.ModIdCard
 					}), n && k && h && !Object(He.a)(h) && r.a.createElement(Ot, {
 						contextId: n,
 						subredditId: k,
@@ -3773,10 +3773,10 @@
 				const B = Object(s.d)(),
 					T = Object(m.a)(),
 					[L, D, H] = function(e, t, n) {
-						const [r, s] = Object(a.useState)(Object(u.q)(e, t) || 0), o = Object(a.useCallback)(() => {
-							s(r + 1), Object(u.vb)(e, t, r + 1)
+						const [r, s] = Object(a.useState)(Object(u.r)(e, t) || 0), o = Object(a.useCallback)(() => {
+							s(r + 1), Object(u.xb)(e, t, r + 1)
 						}, []), i = Object(a.useCallback)(() => {
-							n > 0 && (s(n), Object(u.vb)(e, t, n))
+							n > 0 && (s(n), Object(u.xb)(e, t, n))
 						}, []);
 						return [r, o, i]
 					}(h, n.notificationName, (null === (v = n.persistence) || void 0 === v ? void 0 : v.maxViews) || 0),
@@ -3793,8 +3793,8 @@
 				if (!n || K && L > K) return null;
 				const G = !!(null == n ? void 0 : n.primaryCta),
 					J = !!(null == n ? void 0 : n.secondaryCta),
-					q = !!(null == n ? void 0 : n.titleImage),
-					Q = !!(null == n ? void 0 : n.thumbnailImageUrl),
+					Q = !!(null == n ? void 0 : n.titleImage),
+					q = !!(null == n ? void 0 : n.thumbnailImageUrl),
 					V = () => {
 						var e;
 						(null === (e = n.persistence) || void 0 === e ? void 0 : e.isDismissible) && (H(), B(Object(c.a)(n.notificationName)))
@@ -3821,7 +3821,7 @@
 					className: _.a.Content
 				}, r.a.createElement("div", {
 					className: _.a.Heading
-				}, q ? r.a.createElement("img", {
+				}, Q ? r.a.createElement("img", {
 					className: _.a.TitleIcon,
 					src: n.titleImage
 				}) : r.a.createElement("div", {
@@ -3836,12 +3836,12 @@
 					style: {
 						color: null === (S = n.bodyText) || void 0 === S ? void 0 : S.colorText
 					}
-				}, null === (P = n.bodyText) || void 0 === P ? void 0 : P.text), Q && r.a.createElement("img", {
+				}, null === (P = n.bodyText) || void 0 === P ? void 0 : P.text), q && r.a.createElement("img", {
 					src: n.thumbnailImageUrl,
 					className: _.a.Thumbnail
 				})), G || J && r.a.createElement("div", {
 					className: Object(o.a)(_.a.ActionButtons, {
-						[_.a.noMargin]: Q
+						[_.a.noMargin]: q
 					})
 				}, G && r.a.createElement(d.t, {
 					text: null === (U = n.primaryCta) || void 0 === U ? void 0 : U.text.text,
@@ -4215,10 +4215,10 @@
 				K = n("./src/reddit/controls/InternalLink/index.tsx"),
 				G = n("./src/reddit/hooks/useLocalStorage.ts");
 			var J = n("./src/reddit/hooks/useDesktopNotificationsPromptSeen.ts"),
-				q = n("./src/reddit/helpers/localStorage/index.ts");
+				Q = n("./src/reddit/helpers/localStorage/index.ts");
 
-			function Q() {
-				return (Q = Object.assign || function(e) {
+			function q() {
+				return (q = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -4309,9 +4309,9 @@
 						} = e,
 						[_, I] = Object(J.a)(x),
 						[g, C] = function(e) {
-							const [t, n] = Object(r.useState)(() => Object(q.t)(e));
+							const [t, n] = Object(r.useState)(() => Object(Q.u)(e));
 							return [t, Object(r.useCallback)(() => {
-								n(!0), Object(q.wb)(e)
+								n(!0), Object(Q.yb)(e)
 							}, [e])]
 						}(x),
 						[O, N] = function(e) {
@@ -4349,7 +4349,7 @@
 						sendInboxClickSettings: () => t(Object(h.m)(h.c.MiniInbox)),
 						onBarClick: u,
 						isLoggedIn: p
-					}), s.a.createElement(z, Q({}, e, {
+					}), s.a.createElement(z, q({}, e, {
 						isPending: c,
 						onItemClick: u,
 						setDesktopNotificationsPromptSeen: I,
@@ -5961,9 +5961,9 @@
 				r = n("./src/reddit/helpers/localStorage/index.ts");
 
 			function s(e) {
-				const [t, n] = Object(a.useState)(Object(r.s)(e));
+				const [t, n] = Object(a.useState)(Object(r.t)(e));
 				return [t, Object(a.useCallback)(() => {
-					n(!0), Object(r.mb)(e)
+					n(!0), Object(r.ob)(e)
 				}, [])]
 			}
 		},
@@ -6352,7 +6352,7 @@
 					const {
 						id: n,
 						eventViews: a
-					} = Object(s.x)();
+					} = Object(s.y)();
 					return n === e.id && a > e.maxViews ? null : e
 				}),
 				l = Object(a.a)(d, e => {
@@ -6360,7 +6360,7 @@
 					const {
 						id: t,
 						lastInteractionTimestamp: n
-					} = Object(s.x)();
+					} = Object(s.y)();
 					return t === e.id && n > 0 ? null : e.banner
 				})
 		},
@@ -6608,4 +6608,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.bb39a1f2b384cfc7e1af.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.8d5113d16e3774aa0605.js.map

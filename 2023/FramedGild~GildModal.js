@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.09aa176eca762227efd2.js
-// Retrieved at 2/23/2023, 2:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.c272c1ef60a6f5536ea0.js
+// Retrieved at 2/23/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, n) {
@@ -2927,7 +2927,7 @@
 					const {
 						isAnonymous: e
 					} = this.props;
-					Object(p.tb)(e)
+					Object(p.vb)(e)
 				}
 				componentDidMount() {
 					document.addEventListener("keydown", this.handleEscapeKey);
@@ -2952,7 +2952,7 @@
 						thingId: y,
 						displayUnusableAwardError: j
 					} = this.props;
-					n || Object(m.d)(m.a.GildingFlow, !1), l(Object(b.viewGildModalEvent)(d.id, r, y)), u(Object(p.o)());
+					n || Object(m.d)(m.a.GildingFlow, !1), l(Object(b.viewGildModalEvent)(d.id, r, y)), u(Object(p.p)());
 					const E = g ? g.id : x || (a && a.belongsTo ? a.belongsTo.id : void 0);
 					if (E && t(E), De(e, d) && (j(), c(h.o)), g || O) {
 						v(g ? g.name : O)
@@ -3070,7 +3070,7 @@
 						})
 					})),
 					setIsAnonymous: t => {
-						e(Object(w.setIsAnonymous)(t)), Object(p.tb)(t)
+						e(Object(w.setIsAnonymous)(t)), Object(p.vb)(t)
 					},
 					subredditAboutRequested: t => e(Object(_.u)(t)),
 					subredditLockedCoinsRequested: (t, n) => e(Object(x.a)(t, n)),
@@ -4978,12 +4978,12 @@
 						rtJsonElementProps: o
 					});
 					switch (a) {
-						case h.Lf.SmIcon:
+						case h.Pf.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: r,
 								rtJsonElementProps: o
 							});
-						case h.Lf.SmIconHc:
+						case h.Pf.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: r,
 								isHoverable: !0,
@@ -5859,12 +5859,12 @@
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: r.Ff
+						experimentName: r.Jf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === r.Lf.SmIcon || t === r.Lf.SmIconHc
+					return t === r.Pf.SmIcon || t === r.Pf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -5914,4 +5914,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.09aa176eca762227efd2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.c272c1ef60a6f5536ea0.js.map

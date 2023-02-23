@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.ff88da264cc1b8104e23.js
-// Retrieved at 2/23/2023, 2:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.f7388c54fdb8f7c8654f.js
+// Retrieved at 2/23/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditInlineEditing"], {
 		"./src/reddit/components/CommunityTopics/NumTopicsSelected.tsx": function(e, t, s) {
@@ -84,10 +84,10 @@
 			}
 			var f = Object(r.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(c.i)()), Object(u.xb)()
+					e(Object(c.i)()), Object(u.zb)()
 				},
 				onViewTooltip: () => {
-					Object(u.Ub)()
+					Object(u.Wb)()
 				}
 			}))(Object(p.c)(g));
 			const T = "editable-primary-topic-idcard";
@@ -205,7 +205,7 @@
 				componentDidMount() {
 					const e = this.props.onShowTooltip;
 					this.setState({
-						tooltipDismissed: Object(u.r)()
+						tooltipDismissed: Object(u.s)()
 					}, () => {
 						this.isTooltipEnabled() && e && e()
 					})
@@ -818,11 +818,11 @@
 				onShowTooltip: t => e(Object(l.f)({
 					tooltipId: t
 				}))
-			})), G = "inline-editing-topics-tooltip-", V = {
+			})), G = "inline-editing-topics-tooltip-", W = {
 				top: N.a.alienblue,
 				bottom: N.a.alienblue
 			};
-			class W extends o.a.Component {
+			class V extends o.a.Component {
 				constructor(e) {
 					super(e), this.onShowTooltip = () => {
 						this.props.onShowTooltip(this.state.tooltipId)
@@ -853,7 +853,7 @@
 					}), o.a.createElement(M.a, {
 						tooltipId: this.state.tooltipId,
 						defaultTooltipPosition: "bottom",
-						caretColor: V
+						caretColor: W
 					}, o.a.createElement("div", {
 						className: H.a.container
 					}, A._("Adding community topics allow people to find your community. Add a primary topic and sub topics to be discovered more easily.", null, {
@@ -861,12 +861,12 @@
 					}))))
 				}
 			}
-			var J = K(W),
+			var J = K(V),
 				q = s("./src/reddit/components/InlineSubredditEditing/InlineCommunityTopics/index.m.less"),
 				X = s.n(q);
 			const {
 				fbt: Q
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), Z = 4, Y = Object(r.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), Z = 4, z = Object(r.c)({
 				haveData: (e, t) => {
 					let {
 						subredditId: s
@@ -881,7 +881,7 @@
 				isLoading: e => Object(R.B)(e),
 				selectedPrimaryTag: R.x,
 				isPostUpsellModalOpen: Object(P.b)(j.a.POST_FLOW_UPSELL_MODAL_ID)
-			}), z = Object(i.b)(Y, (e, t) => {
+			}), Y = Object(i.b)(z, (e, t) => {
 				let {
 					subredditId: s,
 					context: n
@@ -1061,7 +1061,7 @@
 					})) : this.renderPlaceholder()
 				}
 			}
-			t.default = z(ee)
+			t.default = Y(ee)
 		},
 		"./src/reddit/components/InlineSubredditEditing/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1752,4 +1752,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.ff88da264cc1b8104e23.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.f7388c54fdb8f7c8654f.js.map

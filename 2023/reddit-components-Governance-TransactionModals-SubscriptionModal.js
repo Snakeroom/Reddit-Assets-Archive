@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.b91e0afe8dca3db4ea7e.js
-// Retrieved at 2/23/2023, 2:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.57badd56f3d8efabb666.js
+// Retrieved at 2/23/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-SubscriptionModal"], {
 		"./src/reddit/components/Governance/TokenAmount/index.m.less": function(e, t, n) {
@@ -119,8 +119,8 @@
 				y = n("./src/reddit/hooks/useTracking.ts"),
 				v = n("./src/reddit/models/Badge/managementPage.ts"),
 				x = n("./src/reddit/models/Toast/index.ts"),
-				f = n("./src/reddit/selectors/crypto/points.ts"),
-				O = n("./src/reddit/selectors/gov.ts"),
+				O = n("./src/reddit/selectors/crypto/points.ts"),
+				f = n("./src/reddit/selectors/gov.ts"),
 				T = n("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx"),
 				j = n("./src/config.ts"),
 				_ = n("./src/reddit/components/SubredditIcon/index.tsx"),
@@ -174,8 +174,8 @@
 					pointsDetails: _,
 					walletAddress: A
 				} = Object(i.e)(Object(o.c)({
-					pointsDetails: e => Object(f.b)(e, n),
-					walletAddress: t => Object(O.g)(t, e)
+					pointsDetails: e => Object(O.b)(e, n),
+					walletAddress: t => Object(f.g)(t, e)
 				}));
 				if (!_) return null;
 				const M = Object(m.d)(_.contracts.subscriptions.address, A, !0),
@@ -332,10 +332,10 @@
 			const r = e => {
 				return Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: s.ve
-				}) === s.Kd
+					experimentName: s.ze
+				}) === s.Od
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.b91e0afe8dca3db4ea7e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.57badd56f3d8efabb666.js.map
