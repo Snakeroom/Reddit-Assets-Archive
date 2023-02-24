@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommunityProgress.7a311a47025166465f66.js
-// Retrieved at 1/5/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommunityProgress.b4cf1817f351cf0b7dc6.js
+// Retrieved at 2/23/2023, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommunityProgress"], {
 		"./src/lib/colors/constants.ts": function(e, A, t) {
@@ -102,38 +102,40 @@
 		"./src/reddit/actions/subreddit/questions.ts": function(e, A, t) {
 			"use strict";
 			t.d(A, "b", (function() {
-				return r
-			})), t.d(A, "a", (function() {
 				return o
+			})), t.d(A, "a", (function() {
+				return c
 			}));
 			var n = t("./src/lib/makeGqlRequest/index.ts"),
 				s = t("./src/redditGQL/operations/GetSubredditQuestions.json"),
-				a = t("./src/reddit/actions/subreddit/constants.ts");
-			const r = e => async (A, t, a) => {
+				a = t("./src/reddit/models/Subreddit/index.ts"),
+				r = t("./src/reddit/actions/subreddit/constants.ts");
+			const o = e => async (A, t, a) => {
 				let {
 					gqlContext: r
 				} = a;
-				var c;
+				var o;
 				const l = (await ((e, A) => Object(n.a)(e, {
 					...s,
 					variables: A
 				}))(r(), {
 					id: e
 				})).body;
-				o(A, e, null === (c = l.data) || void 0 === c ? void 0 : c.subredditInfoById)
+				c(A, e, null === (o = l.data) || void 0 === o ? void 0 : o.subredditInfoById)
 			};
 
-			function o(e, A, t) {
+			function c(e, A, t) {
+				if (Object(a.m)(t)) return;
 				const n = null == t ? void 0 : t.answerableQuestions,
 					s = null == t ? void 0 : t.contentRatingSurvey,
-					r = null == t ? void 0 : t.communityProgressModule;
-				(n || s || r) && e({
-					type: a.D,
+					o = null == t ? void 0 : t.communityProgressModule;
+				(n || s || o) && e({
+					type: r.D,
 					payload: {
 						id: A,
 						questions: n,
 						survey: s,
-						progressModule: r
+						progressModule: o
 					}
 				})
 			}
@@ -158,8 +160,8 @@
 				B = t("./src/reddit/icons/svgs/svgIcons.tsx"),
 				v = t("./src/reddit/models/NewCommunityProgress/index.ts"),
 				E = t("./src/reddit/selectors/activeModalId.ts"),
-				w = t("./src/reddit/selectors/subreddit.ts"),
-				m = t("./src/reddit/selectors/user.ts"),
+				m = t("./src/reddit/selectors/subreddit.ts"),
+				w = t("./src/reddit/selectors/user.ts"),
 				u = t("./src/config.ts"),
 				P = t("./node_modules/polished/dist/polished.es.js"),
 				D = t("./node_modules/query-string/index.js"),
@@ -238,8 +240,8 @@
 						colorIdentifier: d,
 						onActionCard: B = (() => {}),
 						onClose: E = (() => {}),
-						isNightMode: w,
-						subredditUrl: m,
+						isNightMode: m,
+						subredditUrl: w,
 						progressModule: P,
 						primaryButton: D,
 						progress: Y,
@@ -250,21 +252,21 @@
 						U = Object(f.a)(),
 						K = h.b[l],
 						J = K ? Object(N.b)(K) : null !== (X = h.a[l]) && void 0 !== X ? X : Object(N.b)("best"),
-						V = w ? Q.g : Q.f,
+						V = m ? Q.g : Q.f,
 						F = null !== (z = V[d]) && void 0 !== z ? z : V.downvote;
 
 					function S(e) {
 						(function(e) {
 							return "CommunityProgressShareButton" === e.__typename
-						})(e) && (Object(I.a)(`https://reddit.com${m}`), R(Object(p.f)(Object(p.e)("Copied community URL to clipboard!", O.b.SuccessCommunityGreen)))), g && E(v.b.CTA_BUTTON_CLICK), U(Object(C.b)(P, t, e.buttonText))
+						})(e) && (Object(I.a)(`https://reddit.com${w}`), R(Object(p.f)(Object(p.e)("Copied community URL to clipboard!", O.b.SuccessCommunityGreen)))), g && E(v.b.CTA_BUTTON_CLICK), U(Object(C.b)(P, t, e.buttonText))
 					}
 					const Z = (null == Y ? void 0 : Y.done) / (null == Y ? void 0 : Y.total) * 100 || 0,
-						W = y(D, m);
+						W = y(D, w);
 					return s.a.createElement("a", H({
 						className: Object(c.a)(o.a.ncpCard, {
 							[o.a.v2]: !g,
 							[o.a.isCompleted]: G === v.a.COMPLETED,
-							[o.a.nightMode]: !g && w
+							[o.a.nightMode]: !g && m
 						})
 					}, W && {
 						href: W
@@ -335,7 +337,7 @@
 					}), s.a.createElement("div", null, L._("Close", null, {
 						hk: "4gbyAA"
 					}))), i.length > 0 && s.a.createElement("div", null, i.map(e => {
-						const A = y(e, m),
+						const A = y(e, w),
 							t = g ? {
 								backgroundColor: F,
 								borderColor: F,
@@ -517,8 +519,8 @@
 				Q = r.cards;
 				const I = Object(n.useRef)(null),
 					[p, b] = Object(n.useState)(!A),
-					x = Object(a.e)(m.fb),
-					M = Object(a.e)(e => Object(w.db)(e, t)),
+					x = Object(a.e)(w.fb),
+					M = Object(a.e)(e => Object(m.db)(e, t)),
 					j = Object(f.a)();
 				Object(n.useEffect)(() => {
 					j(Object(C.g)(r, p ? "expanded_module" : "collapses_module"))
@@ -1207,4 +1209,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.7a311a47025166465f66.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.b4cf1817f351cf0b7dc6.js.map

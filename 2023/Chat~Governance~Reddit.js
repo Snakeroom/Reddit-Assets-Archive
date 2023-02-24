@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a3e1d240fc6b5c4c2c2a.js
-// Retrieved at 2/23/2023, 7:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.0d48fb985e811aa1fb21.js
+// Retrieved at 2/23/2023, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -5381,11 +5381,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("183802"),
+				buildNumber: Object(r.c)("183812"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1677195481"),
+				buildTimestamp: Object(r.b)("1677198371"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -8120,14 +8120,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c61f52e84af6444adafba3e9677b1a6219ef2c04a-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c2e91a5b45346316ee2d947f704db56e49875dbfe-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "61f52e84af6444adafba3e9677b1a6219ef2c04a-production",
+						release: "2e91a5b45346316ee2d947f704db56e49875dbfe-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(D.d)(), new d.Integrations.Breadcrumbs({
@@ -8672,7 +8672,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "61f52e84af6444adafba3e9677b1a6219ef2c04a-production",
+							releaseClient: "2e91a5b45346316ee2d947f704db56e49875dbfe-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -34852,18 +34852,20 @@
 				return a
 			})), i.d(t, "l", (function() {
 				return l
-			})), i.d(t, "i", (function() {
+			})), i.d(t, "m", (function() {
 				return c
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "i", (function() {
 				return u
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "e", (function() {
 				return _
-			})), i.d(t, "j", (function() {
-				return p
-			})), i.d(t, "h", (function() {
-				return h
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "a", (function() {
 				return m
+			})), i.d(t, "j", (function() {
+				return h
+			})), i.d(t, "h", (function() {
+				return f
+			})), i.d(t, "c", (function() {
+				return p
 			}));
 			var n, r, s, o, d = i("./src/reddit/models/GqlTopLevelField.ts");
 			! function(e) {
@@ -34880,25 +34882,26 @@
 			}(o || (o = {}));
 			const a = e => "__typename" in e && e.__typename === d.a.UnavailableSubreddit,
 				l = e => "__typename" in e && e.__typename === d.a.UnavailableSubreddit,
-				c = e => e.type === r.User;
-			var u, _, m;
+				c = e => !!(e && "__typename" in e) && e.__typename === d.a.UnavailableSubreddit,
+				u = e => e.type === r.User;
+			var _, m, p;
 
-			function p(e) {
+			function h(e) {
 				var t;
 				return !!(null === (t = null == e ? void 0 : e.allowedPostTypes) || void 0 === t ? void 0 : t.spoilers)
 			}
 
-			function h(e) {
+			function f(e) {
 				return !!e && (e.originalContentTagEnabled || !!e.contentCategory)
 			}! function(e) {
 				e.Multi = "MULTI_SELECT", e.SingleNoSubmit = "SINGLE_SELECT_NO_SUBMIT_BUTTON", e.SingleWithSubmit = "SINGLE_SELECT_WITH_SUBMIT_BUTTON"
-			}(u || (u = {})),
-			function(e) {
-				e.Image = "IMAGE", e.Link = "LINK", e.Spoiler = "SPOILER", e.Text = "TEXT", e.Video = "VIDEO", e.Poll = "POLL", e.Gallery = "GALLERY", e.Talk = "TALK"
 			}(_ || (_ = {})),
 			function(e) {
+				e.Image = "IMAGE", e.Link = "LINK", e.Spoiler = "SPOILER", e.Text = "TEXT", e.Video = "VIDEO", e.Poll = "POLL", e.Gallery = "GALLERY", e.Talk = "TALK"
+			}(m || (m = {})),
+			function(e) {
 				e.FREQUENT = "FREQUENT", e.LOW = "LOW", e.OFF = "OFF"
-			}(m || (m = {}))
+			}(p || (p = {}))
 		},
 		"./src/reddit/models/Subreddit/mock.ts": function(e, t, i) {
 			"use strict";
@@ -52526,4 +52529,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a3e1d240fc6b5c4c2c2a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.0d48fb985e811aa1fb21.js.map

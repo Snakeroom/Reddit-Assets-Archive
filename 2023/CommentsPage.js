@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.3cd20f3cc3461ee5e213.js
-// Retrieved at 2/23/2023, 6:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.7a81ddd80b9595dc6db8.js
+// Retrieved at 2/23/2023, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "CollectionCommentsPage~SearchResults", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -33626,20 +33626,21 @@
 			"use strict";
 			var s = n("./src/reddit/models/ContentGate.ts");
 			t.a = (e, t, n) => {
-				let r, o, i, a, c, d, l, u, m, p, b;
-				return e ? e.quarantinedSubreddit ? (o = s.a.QuarantinedSubreddit, a = e.quarantineMessage, c = e.quarantineMessageHtml, d = e.quarantineRequiresEmail) : e.privateSubreddit ? (o = s.a.PrivateSubreddit, i = e.subredditDescription, l = e.isContributorRequestsDisabled, u = e.isContributorRequestTimestamp) : e.goldSubreddit ? o = s.a.GoldSubreddit : e.subredditBanned ? (o = s.a.SubredditBanned, r = e.subredditBanMessage) : e.subredditDoesNotExist ? o = s.a.SubredditDoesNotExist : e.subredditBlockedForLegalReason ? o = s.a.SubredditBlockedForLegalReason : e.interstitialWarningMessage && (o = s.a.GatedSubreddit, m = e.interstitialWarningMessage, p = e.interstitialWarningMessageHtml, b = e.interstitialWarningMessageRTJson) : t && (o = s.a.Nsfw), o && n ? {
+				let r, o, i, a, c, d, l, u, m, p, b, f;
+				return e ? e.quarantinedSubreddit ? (i = s.a.QuarantinedSubreddit, c = e.quarantineMessage, d = e.quarantineMessageHtml, l = e.quarantineRequiresEmail) : e.privateSubreddit ? (i = s.a.PrivateSubreddit, a = e.subredditDescription, u = e.isContributorRequestsDisabled, m = e.isContributorRequestTimestamp) : e.goldSubreddit ? i = s.a.GoldSubreddit : e.subredditBanned ? (i = s.a.SubredditBanned, r = e.subredditBanMessage, o = e.subredditBanTitle) : e.subredditDoesNotExist ? i = s.a.SubredditDoesNotExist : e.subredditBlockedForLegalReason ? i = s.a.SubredditBlockedForLegalReason : e.interstitialWarningMessage && (i = s.a.GatedSubreddit, p = e.interstitialWarningMessage, b = e.interstitialWarningMessageHtml, f = e.interstitialWarningMessageRTJson) : t && (i = s.a.Nsfw), i && n ? {
 					banMessage: r,
-					contentGateType: o,
-					isContributorRequestsDisabled: l,
-					isContributorRequestTimestamp: u,
-					subredditDescription: i,
+					banTitle: o,
+					contentGateType: i,
+					isContributorRequestsDisabled: u,
+					isContributorRequestTimestamp: m,
+					subredditDescription: a,
 					subredditName: n,
-					quarantineMessage: a,
-					quarantineMessageHtml: c,
-					quarantineRequiresEmail: d,
-					interstitialWarningMessage: m,
-					interstitialWarningMessageHtml: p,
-					interstitialWarningMessageRTJson: b
+					quarantineMessage: c,
+					quarantineMessageHtml: d,
+					quarantineRequiresEmail: l,
+					interstitialWarningMessage: p,
+					interstitialWarningMessageHtml: b,
+					interstitialWarningMessageRTJson: f
 				} : void 0
 			}
 		},
@@ -49330,4 +49331,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.3cd20f3cc3461ee5e213.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.7a81ddd80b9595dc6db8.js.map

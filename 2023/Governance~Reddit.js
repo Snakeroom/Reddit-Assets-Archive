@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.0cff97ad34c155bd11eb.js
-// Retrieved at 2/23/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.7fab635364831d5f5737.js
+// Retrieved at 2/23/2023, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -9195,14 +9195,16 @@
 					case Rn.l: {
 						const {
 							subredditName: n,
-							banMessage: r
+							banMessage: r,
+							banTitle: s
 						} = t.payload;
 						if (n) {
 							if (Object(jn.a)(e, n)) {
 								const t = {
 									[n]: {
 										subredditBanned: !0,
-										subredditBanMessage: r
+										subredditBanMessage: r,
+										subredditBanTitle: s
 									}
 								};
 								return de()({
@@ -9215,7 +9217,8 @@
 								...e,
 								[n]: {
 									subredditBanned: !0,
-									subredditBanMessage: r
+									subredditBanMessage: r,
+									subredditBanTitle: s
 								}
 							}
 						}
@@ -25560,4 +25563,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.0cff97ad34c155bd11eb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.7fab635364831d5f5737.js.map
