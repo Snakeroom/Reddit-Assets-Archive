@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.7a81ddd80b9595dc6db8.js
-// Retrieved at 2/23/2023, 8:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.b4385f25e2d63e821cd5.js
+// Retrieved at 2/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "CollectionCommentsPage~SearchResults", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -11277,6 +11277,7 @@
 				contestMode: "_3dAMO_XZMVp2K1JSO53ohA",
 				SortOptionDropdownText: "_3LRBCA71BwLLXBNsSlY7HW",
 				sortOptionDropdownText: "_3LRBCA71BwLLXBNsSlY7HW",
+				commentSearchMargin: "_2_QzTCgd5SYB-X8CTqZf9T",
 				ToggleSwitch: "JVPG0c9TNru5TLSq9sdUG",
 				toggleSwitch: "JVPG0c9TNru5TLSq9sdUG",
 				DropdownTriangle: "_2MGxQvIhmM2I5CzPdSJTtM",
@@ -11586,47 +11587,48 @@
 					})
 				}
 				render() {
+					var e;
 					const {
-						changeHighlightSort: e,
-						className: t,
-						commentId: n,
-						commentPermalink: r,
-						commentSearchPdp: i,
-						contestModeModalIsOpen: a,
-						dropdownIsOpen: l,
-						elementRef: u,
-						hideTooltip: m,
-						highlightIsOpen: p,
-						hasModeratorPostPermissions: b,
-						isOverlay: f,
-						location: h,
-						pageLayer: C,
-						post: g,
-						postPermalink: _,
-						selectedHighlightSort: y,
-						showCommentHighlighter: j,
-						sort: k,
-						suggestedSort: S,
-						showTooltip: P,
-						toggleContestModeModal: N
-					} = this.props, D = g.contestMode, R = null == n, B = i.bucketed && Object(E.a)(C) && Object(E.b)(g), U = i.bucketed && Object(E.b)(g) && R, V = !h.search.includes(d.w.CONFIDENCE), W = k === d.w.CONFIDENCE && V, H = b && !W, G = d.y[k], q = G ? G() : "", K = S && k === S && !W ? this.addSuggestedLabel(q) : q, Z = D ? s.fbt._("End contest mode?", null, {
+						changeHighlightSort: t,
+						className: n,
+						commentId: r,
+						commentPermalink: i,
+						commentSearchPdp: a,
+						contestModeModalIsOpen: l,
+						dropdownIsOpen: u,
+						elementRef: m,
+						hideTooltip: p,
+						highlightIsOpen: b,
+						hasModeratorPostPermissions: f,
+						isOverlay: h,
+						location: C,
+						pageLayer: g,
+						post: _,
+						postPermalink: y,
+						selectedHighlightSort: j,
+						showCommentHighlighter: k,
+						sort: S,
+						suggestedSort: P,
+						showTooltip: N,
+						toggleContestModeModal: D
+					} = this.props, R = _.contestMode, B = null == r, U = a.bucketed && Object(E.a)(g) && Object(E.b)(_), V = a.bucketed && Object(E.b)(_) && B, W = !(null === (e = C.search) || void 0 === e ? void 0 : e.includes(d.w.CONFIDENCE)), H = S === d.w.CONFIDENCE && W, G = f && !H, q = d.y[S], K = q ? q() : "", Z = P && S === P && !H ? this.addSuggestedLabel(K) : K, Y = R ? s.fbt._("End contest mode?", null, {
 						hk: "2AkJRZ"
 					}) : s.fbt._("Start contest?", null, {
 						hk: "2PQPOu"
-					}), Y = D ? s.fbt._("End", null, {
+					}), Q = R ? s.fbt._("End", null, {
 						hk: "1Q8KqM"
 					}) : s.fbt._("Start", null, {
 						hk: "Mjvpj"
-					}), Q = D ? s.fbt._("Ending contest mode will make comment vote scores visible and disable random comment ordering.", null, {
+					}), J = R ? s.fbt._("Ending contest mode will make comment vote scores visible and disable random comment ordering.", null, {
 						hk: "3PXrGq"
 					}) : s.fbt._("Starting a contest will hide comment vote scores and randomize the order of the comments for non-mods.", null, {
 						hk: "EDqlf"
-					}), J = D && !b, se = o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
+					}), se = R && !f, re = o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
 						className: z.a.DropdownContainer
 					}, o.a.createElement(I.b, {
 						className: Object(c.a)(z.a.SortPicker, z.a.Row),
 						textClassName: z.a.SortOptionDropdownText,
-						displayText: `${s.fbt._("Sort by",null,{hk:"E6T9r"})}: ${K}`,
+						displayText: `${s.fbt._("Sort by",null,{hk:"E6T9r"})}: ${Z}`,
 						id: $,
 						noHover: !0,
 						skipRoleAttr: !0,
@@ -11635,48 +11637,39 @@
 						className: z.a.DropdownTriangle,
 						onClick: this.onOpenDropdownClick
 					})), o.a.createElement(ne, {
-						isOpen: l,
+						isOpen: u,
 						tooltipId: $
 					}, [d.w.CONFIDENCE, d.w.TOP, d.w.NEW, d.w.CONTROVERSIAL, d.w.OLD, d.w.QA].map(e => {
-						const t = r || _,
+						const t = i || y,
 							n = Object(L.b)(t),
 							s = d.y[e],
-							i = s ? s() : "";
+							r = s ? s() : "";
 						return o.a.createElement(x.a, {
 							className: z.a.ViewFullLinkOrOverlayLink,
-							isOverlay: f,
+							isOverlay: h,
 							key: e,
 							onClick: () => this.onSortOptionClick(e),
 							role: "menuitem",
 							tabIndex: -1,
 							to: `${n}?sort=${e}`
 						}, o.a.createElement(I.b, {
-							displayText: i,
-							isSelected: k === e,
+							displayText: r,
+							isSelected: S === e,
 							skipRoleAttr: !0
 						}))
 					})));
 					return o.a.createElement("div", {
-						className: Object(c.a)(t, z.a.container, {
-							[z.a.hideCommentSort]: !j && J,
-							[z.a.paddingBottom]: B
+						className: Object(c.a)(n, z.a.container, {
+							[z.a.hideCommentSort]: !k && se,
+							[z.a.paddingBottom]: U
 						}),
-						ref: u
-					}, B || U ? o.a.createElement("div", {
+						ref: m
+					}, o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
 						className: z.a.containerRow
-					}, !B && o.a.createElement(o.a.Fragment, null, se, o.a.createElement("span", {
-						className: z.a.verticalDivider
-					}, "|")), o.a.createElement("div", null, o.a.createElement(w.c, {
-						experiment: i,
-						commentId: n,
-						prevLocation: h,
-						postId: this.props.postId
-					}))) : o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
-						className: z.a.containerRow
-					}, !J && se, H && !J && (S ? o.a.createElement("button", {
+					}, !se && !U && re, G && !se && !U && (P ? o.a.createElement("button", {
 						className: z.a.SortLink,
-						onClick: k !== S ? this.setSortOnClick : this.clearSortOnClick
-					}, k !== S ? s.fbt._("Set new suggested sort", null, {
+						onClick: S !== P ? this.setSortOnClick : this.clearSortOnClick
+					}, S !== P ? s.fbt._("Set new suggested sort", null, {
 						hk: "13BpoB"
 					}) : s.fbt._("Clear suggested sort", null, {
 						hk: "3WWQBy"
@@ -11689,8 +11682,8 @@
 						hk: "3qLzxp"
 					})), o.a.createElement("span", {
 						id: te,
-						onMouseEnter: P,
-						onMouseLeave: m
+						onMouseEnter: N,
+						onMouseLeave: p
 					}, o.a.createElement(O.c, {
 						className: z.a.Tooltip,
 						text: s.fbt._("Suggested sort defaults Redditors to a specific way of sorting comments within this post", null, {
@@ -11699,29 +11692,38 @@
 						tooltipId: te
 					}), o.a.createElement(F.a, {
 						className: z.a.Info
-					})))), b && o.a.createElement("button", {
-						className: z.a.ContestMode,
+					})))), f && o.a.createElement("button", {
+						className: Object(c.a)(z.a.ContestMode, U && z.a.commentSearchMargin),
 						onClick: this.props.toggleContestModeModal
 					}, s.fbt._("Contest", null, {
 						hk: "1KrhdJ"
 					}), o.a.createElement(T.a, {
 						className: z.a.ToggleSwitch,
-						on: D
-					}))), j && o.a.createElement("div", {
+						on: R
+					})), U || V ? o.a.createElement("div", {
+						className: z.a.containerRow
+					}, !U && o.a.createElement(o.a.Fragment, null, o.a.createElement("span", {
+						className: z.a.verticalDivider
+					}, "|")), o.a.createElement("div", null, o.a.createElement(w.c, {
+						experiment: a,
+						commentId: r,
+						prevLocation: C,
+						postId: this.props.postId
+					}))) : null), k && o.a.createElement("div", {
 						className: z.a.containerRow
 					}, o.a.createElement(X, {
-						changeHighlightSort: e,
-						highlightIsOpen: p,
+						changeHighlightSort: t,
+						highlightIsOpen: b,
 						id: ee,
 						onOpen: this.onOpenHighlightSelector,
-						selectedSort: y,
+						selectedSort: j,
 						trackHighlight: M
-					})), a && o.a.createElement(v.a, {
-						actionText: Y,
-						headerText: Z,
-						modalText: Q,
+					})), l && o.a.createElement(v.a, {
+						actionText: Q,
+						headerText: Y,
+						modalText: J,
 						onConfirm: this.setContestMode,
-						toggleModal: N,
+						toggleModal: D,
 						withOverlay: !0
 					})))
 				}
@@ -32619,7 +32621,7 @@
 							post: U,
 							subreddit: V
 						});
-					C.a.set(j.a.CommentSearchBar), k(Object(v.o)(v.a.FULL_SEARCH_BUTTON, s, _.a.PdpCommentSearch, b || void 0));
+					C.a.set(j.a.CommentSearchBar), k(Object(v.o)(v.a.FULL_SEARCH_BUTTON, s, _.a.PdpCommentSearchBar, b || void 0));
 					const r = Object(u.b)(U.id, void 0, s);
 					F(Object(m.d)({
 						key: r,
@@ -41062,7 +41064,7 @@
 		"./src/reddit/pages/CommentsPage/CommentsNavigationPane/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return L
+				return P
 			}));
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
@@ -41075,107 +41077,109 @@
 				u = n("./src/reddit/actions/otherDiscussions/constants.ts"),
 				m = n("./src/reddit/components/ExpandedCrossposts/async.tsx"),
 				p = n("./src/reddit/components/LinkOrOverlayLink/index.tsx"),
-				b = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				f = n("./src/reddit/controls/Search/CommentSearch/index.tsx"),
-				h = n("./src/reddit/helpers/path/index.ts"),
-				C = n("./src/reddit/helpers/search/SearchTelemetrySource.ts"),
-				g = n("./src/reddit/helpers/trackers/features/expandedCrossposts.ts"),
-				_ = n("./src/reddit/helpers/trackers/otherDiscussions.ts"),
-				v = n("./src/reddit/helpers/trackers/post.ts"),
-				O = n("./src/reddit/helpers/trackers/searchResults.ts"),
-				x = n("./src/reddit/hooks/usePageLayer.ts"),
-				y = n("./src/reddit/selectors/comments.ts"),
-				E = n("./src/reddit/selectors/experiments/commentSearchPdp.ts"),
-				j = n("./src/reddit/selectors/experiments/subredditDiscovery.ts"),
-				k = n("./src/reddit/selectors/platform.ts"),
-				S = n("./src/reddit/pages/CommentsPage/CommentsNavigationPane/index.m.less"),
-				I = n.n(S);
+				b = n("./src/reddit/components/SearchResultsContent/helpers/isCommentSearchRoute.ts"),
+				f = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				h = n("./src/reddit/controls/Search/CommentSearch/index.tsx"),
+				C = n("./src/reddit/helpers/path/index.ts"),
+				g = n("./src/reddit/helpers/search/SearchTelemetrySource.ts"),
+				_ = n("./src/reddit/helpers/trackers/features/expandedCrossposts.ts"),
+				v = n("./src/reddit/helpers/trackers/otherDiscussions.ts"),
+				O = n("./src/reddit/helpers/trackers/post.ts"),
+				x = n("./src/reddit/helpers/trackers/searchResults.ts"),
+				y = n("./src/reddit/hooks/usePageLayer.ts"),
+				E = n("./src/reddit/selectors/comments.ts"),
+				j = n("./src/reddit/selectors/experiments/commentSearchPdp.ts"),
+				k = n("./src/reddit/selectors/experiments/subredditDiscovery.ts"),
+				S = n("./src/reddit/selectors/platform.ts"),
+				I = n("./src/reddit/pages/CommentsPage/CommentsNavigationPane/index.m.less"),
+				w = n.n(I);
 			const {
-				fbt: w
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), T = Object(a.c)({
-				commentSearchPdp: E.a,
-				isSubredditDiscoveryCrosspostEnabled: j.a,
-				headComment: y.x,
-				lastPage: k.m,
-				post: y.J
-			}), L = e => {
+				fbt: T
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), L = Object(a.c)({
+				commentSearchPdp: j.a,
+				isSubredditDiscoveryCrosspostEnabled: k.a,
+				headComment: E.x,
+				lastPage: S.m,
+				post: E.J
+			}), P = e => {
 				var t, n;
-				const s = Object(x.a)(),
+				const s = Object(y.a)(),
 					{
 						commentSearchPdp: a,
-						isSubredditDiscoveryCrosspostEnabled: y,
-						headComment: E,
-						lastPage: j,
-						post: k
-					} = Object(o.e)(t => T(t, e)),
-					S = Object(b.b)(),
-					L = Object(o.d)(),
+						isSubredditDiscoveryCrosspostEnabled: E,
+						headComment: j,
+						lastPage: k,
+						post: S
+					} = Object(o.e)(t => L(t, e)),
+					I = Object(f.b)(),
+					P = Object(o.d)(),
 					{
-						commentId: P,
-						isOverlay: N,
-						postId: M
+						commentId: N,
+						isOverlay: M,
+						postId: D
 					} = e;
-				if (!k) return null;
-				const D = null !== (t = k.numDuplicates) && void 0 !== t ? t : 0,
-					R = void 0 !== P,
-					A = k.permalink,
-					F = D > 0,
-					B = Object(h.b)(Object(u.e)(A));
-				if (!R && !F) return null;
-				const U = (null == j ? void 0 : j.queryParams.q) && (null === (n = j.meta) || void 0 === n ? void 0 : n.name) === l.Tb.COMMENTS,
-					V = a.bucketed && R && U,
-					W = Object(c.a)(Object(h.b)(A), (null == j ? void 0 : j.queryParams) || {});
+				if (!S) return null;
+				const R = null !== (t = S.numDuplicates) && void 0 !== t ? t : 0,
+					A = void 0 !== N,
+					F = S.permalink,
+					B = R > 0,
+					U = Object(C.b)(Object(u.e)(F));
+				if (!A && !B) return null;
+				const V = (null == k ? void 0 : k.queryParams.q) && (null === (n = k.meta) || void 0 === n ? void 0 : n.name) === l.Tb.COMMENTS,
+					W = a.bucketed && Object(b.a)(s) && Object(b.b)(S),
+					H = Object(c.a)(Object(C.b)(F), (null == k ? void 0 : k.queryParams) || {});
 				return r.a.createElement("div", {
-					className: I.a.CommentsNavigationPane
-				}, V && r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
-					className: I.a.flex
+					className: w.a.CommentsNavigationPane
+				}, V && A && r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
+					className: w.a.flex
 				}, r.a.createElement("button", {
 					onClick: () => {
-						S(Object(O.o)(O.a.BACK, Object(f.d)({
-							searchValue: null == j ? void 0 : j.queryParams.q,
-							post: k
-						}), C.a.SERP, s || void 0)), L(Object(i.b)(W, {
-							...null == j ? void 0 : j.locationState
+						I(Object(x.o)(x.a.BACK, Object(h.d)({
+							searchValue: null == k ? void 0 : k.queryParams.q,
+							post: S
+						}), g.a.SERP, s || void 0)), P(Object(i.b)(H, {
+							...null == k ? void 0 : k.locationState
 						}))
 					},
-					className: Object(d.a)(I.a.linkOrOverlay, I.a.truncate),
+					className: Object(d.a)(w.a.linkOrOverlay, w.a.truncate),
 					"data-testid": "back_to_comment_search_results"
-				}, w._('Back to comments with "{current search query}"', [w._param("current search query", (null == j ? void 0 : j.queryParams.q) || "")], {
+				}, T._('Back to comments with "{current search query}"', [T._param("current search query", (null == k ? void 0 : k.queryParams.q) || "")], {
 					hk: "4dHWeM"
 				})), r.a.createElement("span", {
-					className: I.a.verticalDivider
-				}, "|"))), R && r.a.createElement("div", null, r.a.createElement(p.a, {
-					className: I.a.linkOrOverlay,
+					className: w.a.verticalDivider
+				}, "|"))), A && r.a.createElement("div", null, r.a.createElement(p.a, {
+					className: w.a.linkOrOverlay,
 					"data-testid": "view_all_comments_link",
-					isOverlay: N,
+					isOverlay: M,
 					to: {
-						pathname: Object(h.b)(A),
-						state: null == j ? void 0 : j.locationState
+						pathname: Object(C.b)(F),
+						state: null == k ? void 0 : k.locationState
 					},
-					onClick: () => S(Object(v.n)(M, E, s))
-				}, w._("View all comments", null, {
+					onClick: () => I(Object(O.n)(D, j, s))
+				}, T._("View all comments", null, {
 					hk: "3I5IX9"
-				})), !V && !!(null == E ? void 0 : E.parentId) && r.a.createElement(p.a, {
-					className: I.a.linkOrOverlay,
-					isOverlay: N,
-					to: Object(h.b)(E.permalink + "?context=8&depth=9")
-				}, w._("Show parent comments", null, {
+				})), !W && !!(null == j ? void 0 : j.parentId) && r.a.createElement(p.a, {
+					className: w.a.linkOrOverlay,
+					isOverlay: M,
+					to: Object(C.b)(j.permalink + "?context=8&depth=9")
+				}, T._("Show parent comments", null, {
 					hk: "AVRCa"
-				}))), !V && !F && r.a.createElement(r.a.Fragment, null, y && r.a.createElement(m.a, {
-					postId: M
+				}))), !W && B && r.a.createElement(r.a.Fragment, null, E && r.a.createElement(m.a, {
+					postId: D
 				}), r.a.createElement(p.a, {
-					className: Object(d.a)(I.a.OtherDiscussionsLink, {
-						[I.a.discoveryExperimentLink]: y
+					className: Object(d.a)(w.a.OtherDiscussionsLink, {
+						[w.a.discoveryExperimentLink]: E
 					}),
-					isOverlay: N,
-					onClick: () => S(y ? Object(g.b)() : Object(_.a)(M)),
-					to: B
-				}, y ? r.a.createElement(r.a.Fragment, null, w._("View all", null, {
+					isOverlay: M,
+					onClick: () => I(E ? Object(_.b)() : Object(v.a)(D)),
+					to: U,
+					"data-testid": "view_other_discussions"
+				}, E ? r.a.createElement(r.a.Fragment, null, T._("View all", null, {
 					hk: "30twDK"
-				}), ` (${D})`) : w._({
+				}), ` (${R})`) : T._({
 					"*": "View discussions in {other discussion communities count} other communities",
 					_1: "View discussions in 1 other community"
-				}, [w._plural(D, "other discussion communities count")], {
+				}, [T._plural(R, "other discussion communities count")], {
 					hk: "3oofZ8"
 				}))))
 			}
@@ -49331,4 +49335,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.7a81ddd80b9595dc6db8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.b4385f25e2d63e821cd5.js.map

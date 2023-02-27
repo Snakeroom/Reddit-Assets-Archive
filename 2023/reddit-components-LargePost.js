@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.c1f5a77dfa5872f90ba4.js
-// Retrieved at 2/23/2023, 8:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.036dec893831359b35b9.js
+// Retrieved at 2/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ModQueuePages~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2633,6 +2633,7 @@
 				contestMode: "_3dAMO_XZMVp2K1JSO53ohA",
 				SortOptionDropdownText: "_3LRBCA71BwLLXBNsSlY7HW",
 				sortOptionDropdownText: "_3LRBCA71BwLLXBNsSlY7HW",
+				commentSearchMargin: "_2_QzTCgd5SYB-X8CTqZf9T",
 				ToggleSwitch: "JVPG0c9TNru5TLSq9sdUG",
 				toggleSwitch: "JVPG0c9TNru5TLSq9sdUG",
 				DropdownTriangle: "_2MGxQvIhmM2I5CzPdSJTtM",
@@ -2942,47 +2943,48 @@
 					})
 				}
 				render() {
+					var e;
 					const {
-						changeHighlightSort: e,
-						className: t,
-						commentId: s,
-						commentPermalink: o,
-						commentSearchPdp: i,
-						contestModeModalIsOpen: a,
-						dropdownIsOpen: l,
-						elementRef: m,
-						hideTooltip: u,
-						highlightIsOpen: p,
-						hasModeratorPostPermissions: b,
-						isOverlay: f,
-						location: h,
-						pageLayer: O,
-						post: x,
-						postPermalink: _,
-						selectedHighlightSort: j,
-						showCommentHighlighter: y,
-						sort: k,
-						suggestedSort: S,
-						showTooltip: w,
-						toggleContestModeModal: R
-					} = this.props, M = x.contestMode, L = null == s, F = i.bucketed && Object(C.a)(O) && Object(C.b)(x), U = i.bucketed && Object(C.b)(x) && L, z = !h.search.includes(c.w.CONFIDENCE), W = k === c.w.CONFIDENCE && z, K = b && !W, V = c.y[k], G = V ? V() : "", H = S && k === S && !W ? this.addSuggestedLabel(G) : G, Q = M ? n.fbt._("End contest mode?", null, {
+						changeHighlightSort: t,
+						className: s,
+						commentId: o,
+						commentPermalink: i,
+						commentSearchPdp: a,
+						contestModeModalIsOpen: l,
+						dropdownIsOpen: m,
+						elementRef: u,
+						hideTooltip: p,
+						highlightIsOpen: b,
+						hasModeratorPostPermissions: f,
+						isOverlay: h,
+						location: O,
+						pageLayer: x,
+						post: _,
+						postPermalink: j,
+						selectedHighlightSort: y,
+						showCommentHighlighter: k,
+						sort: S,
+						suggestedSort: w,
+						showTooltip: R,
+						toggleContestModeModal: M
+					} = this.props, L = _.contestMode, F = null == o, U = a.bucketed && Object(C.a)(x) && Object(C.b)(_), z = a.bucketed && Object(C.b)(_) && F, W = !(null === (e = O.search) || void 0 === e ? void 0 : e.includes(c.w.CONFIDENCE)), K = S === c.w.CONFIDENCE && W, V = f && !K, G = c.y[S], H = G ? G() : "", Q = w && S === w && !K ? this.addSuggestedLabel(H) : H, Y = L ? n.fbt._("End contest mode?", null, {
 						hk: "2AkJRZ"
 					}) : n.fbt._("Start contest?", null, {
 						hk: "2PQPOu"
-					}), Y = M ? n.fbt._("End", null, {
+					}), J = L ? n.fbt._("End", null, {
 						hk: "1Q8KqM"
 					}) : n.fbt._("Start", null, {
 						hk: "Mjvpj"
-					}), J = M ? n.fbt._("Ending contest mode will make comment vote scores visible and disable random comment ordering.", null, {
+					}), Z = L ? n.fbt._("Ending contest mode will make comment vote scores visible and disable random comment ordering.", null, {
 						hk: "3PXrGq"
 					}) : n.fbt._("Starting a contest will hide comment vote scores and randomize the order of the comments for non-mods.", null, {
 						hk: "EDqlf"
-					}), Z = M && !b, ne = r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
+					}), ne = L && !f, oe = r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 						className: q.a.DropdownContainer
 					}, r.a.createElement(I.b, {
 						className: Object(d.a)(q.a.SortPicker, q.a.Row),
 						textClassName: q.a.SortOptionDropdownText,
-						displayText: `${n.fbt._("Sort by",null,{hk:"E6T9r"})}: ${H}`,
+						displayText: `${n.fbt._("Sort by",null,{hk:"E6T9r"})}: ${Q}`,
 						id: $,
 						noHover: !0,
 						skipRoleAttr: !0,
@@ -2991,48 +2993,39 @@
 						className: q.a.DropdownTriangle,
 						onClick: this.onOpenDropdownClick
 					})), r.a.createElement(se, {
-						isOpen: l,
+						isOpen: m,
 						tooltipId: $
 					}, [c.w.CONFIDENCE, c.w.TOP, c.w.NEW, c.w.CONTROVERSIAL, c.w.OLD, c.w.QA].map(e => {
-						const t = o || _,
+						const t = i || j,
 							s = Object(T.b)(t),
 							n = c.y[e],
-							i = n ? n() : "";
+							o = n ? n() : "";
 						return r.a.createElement(E.a, {
 							className: q.a.ViewFullLinkOrOverlayLink,
-							isOverlay: f,
+							isOverlay: h,
 							key: e,
 							onClick: () => this.onSortOptionClick(e),
 							role: "menuitem",
 							tabIndex: -1,
 							to: `${s}?sort=${e}`
 						}, r.a.createElement(I.b, {
-							displayText: i,
-							isSelected: k === e,
+							displayText: o,
+							isSelected: S === e,
 							skipRoleAttr: !0
 						}))
 					})));
 					return r.a.createElement("div", {
-						className: Object(d.a)(t, q.a.container, {
-							[q.a.hideCommentSort]: !y && Z,
-							[q.a.paddingBottom]: F
+						className: Object(d.a)(s, q.a.container, {
+							[q.a.hideCommentSort]: !k && ne,
+							[q.a.paddingBottom]: U
 						}),
-						ref: m
-					}, F || U ? r.a.createElement("div", {
+						ref: u
+					}, r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 						className: q.a.containerRow
-					}, !F && r.a.createElement(r.a.Fragment, null, ne, r.a.createElement("span", {
-						className: q.a.verticalDivider
-					}, "|")), r.a.createElement("div", null, r.a.createElement(N.c, {
-						experiment: i,
-						commentId: s,
-						prevLocation: h,
-						postId: this.props.postId
-					}))) : r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
-						className: q.a.containerRow
-					}, !Z && ne, K && !Z && (S ? r.a.createElement("button", {
+					}, !ne && !U && oe, V && !ne && !U && (w ? r.a.createElement("button", {
 						className: q.a.SortLink,
-						onClick: k !== S ? this.setSortOnClick : this.clearSortOnClick
-					}, k !== S ? n.fbt._("Set new suggested sort", null, {
+						onClick: S !== w ? this.setSortOnClick : this.clearSortOnClick
+					}, S !== w ? n.fbt._("Set new suggested sort", null, {
 						hk: "13BpoB"
 					}) : n.fbt._("Clear suggested sort", null, {
 						hk: "3WWQBy"
@@ -3045,8 +3038,8 @@
 						hk: "3qLzxp"
 					})), r.a.createElement("span", {
 						id: te,
-						onMouseEnter: w,
-						onMouseLeave: u
+						onMouseEnter: R,
+						onMouseLeave: p
 					}, r.a.createElement(g.c, {
 						className: q.a.Tooltip,
 						text: n.fbt._("Suggested sort defaults Redditors to a specific way of sorting comments within this post", null, {
@@ -3055,29 +3048,38 @@
 						tooltipId: te
 					}), r.a.createElement(B.a, {
 						className: q.a.Info
-					})))), b && r.a.createElement("button", {
-						className: q.a.ContestMode,
+					})))), f && r.a.createElement("button", {
+						className: Object(d.a)(q.a.ContestMode, U && q.a.commentSearchMargin),
 						onClick: this.props.toggleContestModeModal
 					}, n.fbt._("Contest", null, {
 						hk: "1KrhdJ"
 					}), r.a.createElement(P.a, {
 						className: q.a.ToggleSwitch,
-						on: M
-					}))), y && r.a.createElement("div", {
+						on: L
+					})), U || z ? r.a.createElement("div", {
+						className: q.a.containerRow
+					}, !U && r.a.createElement(r.a.Fragment, null, r.a.createElement("span", {
+						className: q.a.verticalDivider
+					}, "|")), r.a.createElement("div", null, r.a.createElement(N.c, {
+						experiment: a,
+						commentId: o,
+						prevLocation: O,
+						postId: this.props.postId
+					}))) : null), k && r.a.createElement("div", {
 						className: q.a.containerRow
 					}, r.a.createElement(X, {
-						changeHighlightSort: e,
-						highlightIsOpen: p,
+						changeHighlightSort: t,
+						highlightIsOpen: b,
 						id: ee,
 						onOpen: this.onOpenHighlightSelector,
-						selectedSort: j,
+						selectedSort: y,
 						trackHighlight: A
-					})), a && r.a.createElement(v.a, {
-						actionText: Y,
-						headerText: Q,
-						modalText: J,
+					})), l && r.a.createElement(v.a, {
+						actionText: J,
+						headerText: Y,
+						modalText: Z,
 						onConfirm: this.setContestMode,
-						toggleModal: R,
+						toggleModal: M,
 						withOverlay: !0
 					})))
 				}
@@ -7285,7 +7287,7 @@
 							post: U,
 							subreddit: z
 						});
-					O.a.set(y.a.CommentSearchBar), k(Object(v.o)(v.a.FULL_SEARCH_BUTTON, n, _.a.PdpCommentSearch, b || void 0));
+					O.a.set(y.a.CommentSearchBar), k(Object(v.o)(v.a.FULL_SEARCH_BUTTON, n, _.a.PdpCommentSearchBar, b || void 0));
 					const o = Object(m.b)(U.id, void 0, n);
 					B(Object(u.d)({
 						key: o,
@@ -9560,4 +9562,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.c1f5a77dfa5872f90ba4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.036dec893831359b35b9.js.map

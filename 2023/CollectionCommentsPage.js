@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.0a035c4949e1e4d2080a.js
-// Retrieved at 2/23/2023, 8:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.3132b3cc49860454140f.js
+// Retrieved at 2/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -9740,7 +9740,7 @@
 		"./src/reddit/pages/CommentsPage/CommentsNavigationPane/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return S
+				return T
 			}));
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
@@ -9753,107 +9753,109 @@
 				m = s("./src/reddit/actions/otherDiscussions/constants.ts"),
 				u = s("./src/reddit/components/ExpandedCrossposts/async.tsx"),
 				p = s("./src/reddit/components/LinkOrOverlayLink/index.tsx"),
-				b = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				h = s("./src/reddit/controls/Search/CommentSearch/index.tsx"),
-				g = s("./src/reddit/helpers/path/index.ts"),
-				x = s("./src/reddit/helpers/search/SearchTelemetrySource.ts"),
-				f = s("./src/reddit/helpers/trackers/features/expandedCrossposts.ts"),
-				v = s("./src/reddit/helpers/trackers/otherDiscussions.ts"),
-				_ = s("./src/reddit/helpers/trackers/post.ts"),
-				y = s("./src/reddit/helpers/trackers/searchResults.ts"),
-				C = s("./src/reddit/hooks/usePageLayer.ts"),
-				O = s("./src/reddit/selectors/comments.ts"),
-				E = s("./src/reddit/selectors/experiments/commentSearchPdp.ts"),
-				k = s("./src/reddit/selectors/experiments/subredditDiscovery.ts"),
-				j = s("./src/reddit/selectors/platform.ts"),
-				P = s("./src/reddit/pages/CommentsPage/CommentsNavigationPane/index.m.less"),
-				w = s.n(P);
+				b = s("./src/reddit/components/SearchResultsContent/helpers/isCommentSearchRoute.ts"),
+				h = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				g = s("./src/reddit/controls/Search/CommentSearch/index.tsx"),
+				x = s("./src/reddit/helpers/path/index.ts"),
+				f = s("./src/reddit/helpers/search/SearchTelemetrySource.ts"),
+				v = s("./src/reddit/helpers/trackers/features/expandedCrossposts.ts"),
+				_ = s("./src/reddit/helpers/trackers/otherDiscussions.ts"),
+				y = s("./src/reddit/helpers/trackers/post.ts"),
+				C = s("./src/reddit/helpers/trackers/searchResults.ts"),
+				O = s("./src/reddit/hooks/usePageLayer.ts"),
+				E = s("./src/reddit/selectors/comments.ts"),
+				k = s("./src/reddit/selectors/experiments/commentSearchPdp.ts"),
+				j = s("./src/reddit/selectors/experiments/subredditDiscovery.ts"),
+				P = s("./src/reddit/selectors/platform.ts"),
+				w = s("./src/reddit/pages/CommentsPage/CommentsNavigationPane/index.m.less"),
+				I = s.n(w);
 			const {
-				fbt: I
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), N = Object(a.c)({
-				commentSearchPdp: E.a,
-				isSubredditDiscoveryCrosspostEnabled: k.a,
-				headComment: O.x,
-				lastPage: j.m,
-				post: O.J
-			}), S = e => {
+				fbt: N
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), S = Object(a.c)({
+				commentSearchPdp: k.a,
+				isSubredditDiscoveryCrosspostEnabled: j.a,
+				headComment: E.x,
+				lastPage: P.m,
+				post: E.J
+			}), T = e => {
 				var t, s;
-				const n = Object(C.a)(),
+				const n = Object(O.a)(),
 					{
 						commentSearchPdp: a,
-						isSubredditDiscoveryCrosspostEnabled: O,
-						headComment: E,
-						lastPage: k,
-						post: j
-					} = Object(o.e)(t => N(t, e)),
-					P = Object(b.b)(),
-					S = Object(o.d)(),
+						isSubredditDiscoveryCrosspostEnabled: E,
+						headComment: k,
+						lastPage: j,
+						post: P
+					} = Object(o.e)(t => S(t, e)),
+					w = Object(h.b)(),
+					T = Object(o.d)(),
 					{
-						commentId: T,
-						isOverlay: L,
-						postId: F
+						commentId: L,
+						isOverlay: F,
+						postId: A
 					} = e;
-				if (!j) return null;
-				const A = null !== (t = j.numDuplicates) && void 0 !== t ? t : 0,
-					R = void 0 !== T,
-					B = j.permalink,
-					M = A > 0,
-					D = Object(g.b)(Object(m.e)(B));
-				if (!R && !M) return null;
-				const W = (null == k ? void 0 : k.queryParams.q) && (null === (s = k.meta) || void 0 === s ? void 0 : s.name) === l.Tb.COMMENTS,
-					U = a.bucketed && R && W,
-					H = Object(d.a)(Object(g.b)(B), (null == k ? void 0 : k.queryParams) || {});
+				if (!P) return null;
+				const R = null !== (t = P.numDuplicates) && void 0 !== t ? t : 0,
+					B = void 0 !== L,
+					M = P.permalink,
+					D = R > 0,
+					W = Object(x.b)(Object(m.e)(M));
+				if (!B && !D) return null;
+				const U = (null == j ? void 0 : j.queryParams.q) && (null === (s = j.meta) || void 0 === s ? void 0 : s.name) === l.Tb.COMMENTS,
+					H = a.bucketed && Object(b.a)(n) && Object(b.b)(P),
+					V = Object(d.a)(Object(x.b)(M), (null == j ? void 0 : j.queryParams) || {});
 				return r.a.createElement("div", {
-					className: w.a.CommentsNavigationPane
-				}, U && r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
-					className: w.a.flex
+					className: I.a.CommentsNavigationPane
+				}, U && B && r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
+					className: I.a.flex
 				}, r.a.createElement("button", {
 					onClick: () => {
-						P(Object(y.o)(y.a.BACK, Object(h.d)({
-							searchValue: null == k ? void 0 : k.queryParams.q,
-							post: j
-						}), x.a.SERP, n || void 0)), S(Object(i.b)(H, {
-							...null == k ? void 0 : k.locationState
+						w(Object(C.o)(C.a.BACK, Object(g.d)({
+							searchValue: null == j ? void 0 : j.queryParams.q,
+							post: P
+						}), f.a.SERP, n || void 0)), T(Object(i.b)(V, {
+							...null == j ? void 0 : j.locationState
 						}))
 					},
-					className: Object(c.a)(w.a.linkOrOverlay, w.a.truncate),
+					className: Object(c.a)(I.a.linkOrOverlay, I.a.truncate),
 					"data-testid": "back_to_comment_search_results"
-				}, I._('Back to comments with "{current search query}"', [I._param("current search query", (null == k ? void 0 : k.queryParams.q) || "")], {
+				}, N._('Back to comments with "{current search query}"', [N._param("current search query", (null == j ? void 0 : j.queryParams.q) || "")], {
 					hk: "4dHWeM"
 				})), r.a.createElement("span", {
-					className: w.a.verticalDivider
-				}, "|"))), R && r.a.createElement("div", null, r.a.createElement(p.a, {
-					className: w.a.linkOrOverlay,
+					className: I.a.verticalDivider
+				}, "|"))), B && r.a.createElement("div", null, r.a.createElement(p.a, {
+					className: I.a.linkOrOverlay,
 					"data-testid": "view_all_comments_link",
-					isOverlay: L,
+					isOverlay: F,
 					to: {
-						pathname: Object(g.b)(B),
-						state: null == k ? void 0 : k.locationState
+						pathname: Object(x.b)(M),
+						state: null == j ? void 0 : j.locationState
 					},
-					onClick: () => P(Object(_.n)(F, E, n))
-				}, I._("View all comments", null, {
+					onClick: () => w(Object(y.n)(A, k, n))
+				}, N._("View all comments", null, {
 					hk: "3I5IX9"
-				})), !U && !!(null == E ? void 0 : E.parentId) && r.a.createElement(p.a, {
-					className: w.a.linkOrOverlay,
-					isOverlay: L,
-					to: Object(g.b)(E.permalink + "?context=8&depth=9")
-				}, I._("Show parent comments", null, {
+				})), !H && !!(null == k ? void 0 : k.parentId) && r.a.createElement(p.a, {
+					className: I.a.linkOrOverlay,
+					isOverlay: F,
+					to: Object(x.b)(k.permalink + "?context=8&depth=9")
+				}, N._("Show parent comments", null, {
 					hk: "AVRCa"
-				}))), !U && !M && r.a.createElement(r.a.Fragment, null, O && r.a.createElement(u.a, {
-					postId: F
+				}))), !H && D && r.a.createElement(r.a.Fragment, null, E && r.a.createElement(u.a, {
+					postId: A
 				}), r.a.createElement(p.a, {
-					className: Object(c.a)(w.a.OtherDiscussionsLink, {
-						[w.a.discoveryExperimentLink]: O
+					className: Object(c.a)(I.a.OtherDiscussionsLink, {
+						[I.a.discoveryExperimentLink]: E
 					}),
-					isOverlay: L,
-					onClick: () => P(O ? Object(f.b)() : Object(v.a)(F)),
-					to: D
-				}, O ? r.a.createElement(r.a.Fragment, null, I._("View all", null, {
+					isOverlay: F,
+					onClick: () => w(E ? Object(v.b)() : Object(_.a)(A)),
+					to: W,
+					"data-testid": "view_other_discussions"
+				}, E ? r.a.createElement(r.a.Fragment, null, N._("View all", null, {
 					hk: "30twDK"
-				}), ` (${A})`) : I._({
+				}), ` (${R})`) : N._({
 					"*": "View discussions in {other discussion communities count} other communities",
 					_1: "View discussions in 1 other community"
-				}, [I._plural(A, "other discussion communities count")], {
+				}, [N._plural(R, "other discussion communities count")], {
 					hk: "3oofZ8"
 				}))))
 			}
@@ -11344,4 +11346,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.0a035c4949e1e4d2080a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.3132b3cc49860454140f.js.map
