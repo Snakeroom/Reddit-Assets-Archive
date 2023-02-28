@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~shreddit-player.68435c10f0d336afe561.js
-// Retrieved at 2/27/2023, 8:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~shreddit-player.14e3ee4dfce97dc63f3c.js
+// Retrieved at 2/28/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~shreddit-player"], {
 		"./node_modules/@reddit/shreddit.components.shreddit-player/dist/index.js": function(e, t, i) {
@@ -2895,7 +2895,7 @@
 							null == r || r.captureMessage(`shreddit-player network error for src ${n}. [${t.details}]`), this._handleHlsNetworkError();
 							break;
 						case "mediaError":
-							"audioTrackLoadError" === t.details ? (this.hlsEngine.audioTrack = 0, null == r || r.captureMessage(`shreddit-player media error: audioTrackLoadError for src ${n}`)) : null == r || r.captureMessage(`shreddit-player media error for src ${n}. [${t.details}]`), this._handleHlsMediaError();
+							"audioTrackLoadError" === t.details ? (this.hlsEngine.audioTrack = 0, null == r || r.captureMessage(`shreddit-player media error: audioTrackLoadError for src ${n}`)) : (this._handleHlsMediaError(), null == r || r.captureMessage(`shreddit-player media error for src ${n}. [${t.details}]`));
 							break;
 						default:
 							null == r || r.captureMessage(`shreddit-player irrecoverable error for src ${n}. [${t.details}]`), this._handleHlsIrrecoverableError()
@@ -5936,4 +5936,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~shreddit-player.68435c10f0d336afe561.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~shreddit-player.14e3ee4dfce97dc63f3c.js.map
