@@ -1,11 +1,11 @@
-// https://www.redditstatic.com/desktop2x/vendors~shreddit-player.39000befb972f9c6e4d9.js
-// Retrieved at 2/23/2023, 2:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~shreddit-player.68435c10f0d336afe561.js
+// Retrieved at 2/27/2023, 8:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~shreddit-player"], {
 		"./node_modules/@reddit/shreddit.components.shreddit-player/dist/index.js": function(e, t, i) {
 			"use strict";
 			i.r(t), i.d(t, "ShredditPlayer", (function() {
-				return ki
+				return Oi
 			}));
 			var s = i("./node_modules/lit/index.js"),
 				n = i("./node_modules/lit/decorators.js"),
@@ -290,11 +290,11 @@
 				return "string" == typeof e
 			}
 
-			function R(e) {
+			function L(e) {
 				return "function" == typeof e
 			}
 
-			function L(e) {
+			function R(e) {
 				return Array.isArray(e)
 			}
 			const V = "undefined" != typeof window,
@@ -307,20 +307,20 @@
 				const e = null !== (t = null === (i = window) || void 0 === i ? void 0 : i.MediaSource) && void 0 !== t ? t : null === (s = window) || void 0 === s ? void 0 : s.WebKitMediaSource;
 				var t, i, s;
 				if (P(e)) return !1;
-				const n = e && R(e.isTypeSupported) && e.isTypeSupported('video/mp4; codecs="avc1.42E01E,mp4a.40.2"'),
+				const n = e && L(e.isTypeSupported) && e.isTypeSupported('video/mp4; codecs="avc1.42E01E,mp4a.40.2"'),
 					r = null !== (a = null === (o = window) || void 0 === o ? void 0 : o.SourceBuffer) && void 0 !== a ? a : null === (l = window) || void 0 === l ? void 0 : l.WebKitSourceBuffer;
 				var a, o, l;
-				const d = P(r) || !P(r.prototype) && R(r.prototype.appendBuffer) && R(r.prototype.remove);
+				const d = P(r) || !P(r.prototype) && L(r.prototype.appendBuffer) && L(r.prototype.remove);
 				return !!n && !!d
 			}
 
-			function F(e, t) {
+			function $(e, t) {
 				let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : V;
 				const s = i && !P(window.customElements.get(e));
 				i && !s && window.customElements.define(e, t)
 			}
 
-			function $(e, t, i) {
+			function F(e, t, i) {
 				if (M(i) || !1 === i) e.removeAttribute(t);
 				else {
 					const s = A(i) ? i : "";
@@ -580,7 +580,7 @@
 								if (o) return;
 								l();
 								const i = t(s ? a[0] : a, e);
-								r ? e(i) : l = R(i) ? i : S
+								r ? e(i) : l = L(i) ? i : S
 							},
 							h = n.map((e, t) => e.subscribe(e => {
 								a[t] = e, o &= ~(1 << t), i && d()
@@ -670,7 +670,7 @@
 					return this._screenOrientation
 				}
 				get canOrient() {
-					return V && !P(screen.orientation) && R(screen.orientation.lock) && R(screen.orientation.unlock)
+					return V && !P(screen.orientation) && L(screen.orientation.lock) && L(screen.orientation.unlock)
 				}
 				get isLocked() {
 					return this._isScreenOrientationLocked
@@ -979,7 +979,7 @@
 			}
 
 			function Se(e, t) {
-				return L(e) ? Ce(e) : P(e) || P(t) ? Ce() : Ce([
+				return R(e) ? Ce(e) : P(e) || P(t) ? Ce() : Ce([
 					[e, t]
 				])
 			}! function(e) {
@@ -1030,7 +1030,7 @@
 			function Ae(e, t, i) {
 				return le(e, xe, t, i)
 			}
-			var Re = function(e, t, i, s) {
+			var Le = function(e, t, i, s) {
 				var n, r = arguments.length,
 					a = r < 3 ? t : null === s ? s = Object.getOwnPropertyDescriptor(t, i) : s;
 				if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) a = Reflect.decorate(e, t, i, s);
@@ -1038,11 +1038,11 @@
 					for (var o = e.length - 1; o >= 0; o--)(n = e[o]) && (a = (r < 3 ? n(a) : r > 3 ? n(t, i, a) : n(t, i)) || a);
 				return r > 3 && a && Object.defineProperty(t, i, a), a
 			};
-			const Le = Symbol("@vidstack/media-provider-discovery");
+			const Re = Symbol("@vidstack/media-provider-discovery");
 			class Ve extends s.a {
 				constructor() {
-					super(), this._disconnectDisposal = new N.a, this.manualPaused = !1, this.loading = "lazy", this._attemptingAutoplay = !1, this.autoplayControlledByMediaVisibility = !1, this.controllerQueue = new ee, this._store = Pe(), this._state = de(this._store), this.connectedQueue = he(this), this.mediaQueue = new ee, this.screenOrientationController = new ce(this), this.fullscreenController = new pe(this, this.screenOrientationController), J(this, "vds-media-provider-connect", {
-						register: Le
+					super(), this._disconnectDisposal = new N.a, this.manualPaused = !1, this.loading = "lazy", this._attemptingAutoplay = !1, this.autoplayControlledByMediaVisibility = !1, this.userHasInteracted = !1, this.controllerQueue = new ee, this._store = Pe(), this._state = de(this._store), this.connectedQueue = he(this), this.mediaQueue = new ee, this.screenOrientationController = new ce(this), this.fullscreenController = new pe(this, this.screenOrientationController), J(this, "vds-media-provider-connect", {
+						register: Re
 					});
 					const e = function() {
 						for (var e = arguments.length, t = new Array(e), i = 0; i < e; i++) t[i] = arguments[i];
@@ -1056,7 +1056,7 @@
 					})
 				}
 				connectedCallback() {
-					super.connectedCallback(), $(this, "paused", this.paused), window.requestAnimationFrame(() => {
+					super.connectedCallback(), F(this, "paused", this.paused), window.requestAnimationFrame(() => {
 						P(this.canLoadPoster) && (this.canLoadPoster = !0)
 					})
 				}
@@ -1248,36 +1248,36 @@
 					return this.fullscreenController.exitFullscreen()
 				}
 			}
-			Re([Object(n.b)({
+			Le([Object(n.b)({
 				type: Number,
 				reflect: !0
-			})], Ve.prototype, "volume", null), Re([Object(n.b)({
+			})], Ve.prototype, "volume", null), Le([Object(n.b)({
 				type: Boolean,
 				reflect: !0
-			})], Ve.prototype, "paused", null), Re([Object(n.b)({
+			})], Ve.prototype, "paused", null), Le([Object(n.b)({
 				type: Boolean
-			})], Ve.prototype, "manualPaused", void 0), Re([Object(n.b)({
+			})], Ve.prototype, "manualPaused", void 0), Le([Object(n.b)({
 				type: Number
-			})], Ve.prototype, "currentTime", null), Re([Object(n.b)({
+			})], Ve.prototype, "currentTime", null), Le([Object(n.b)({
 				type: Boolean,
 				reflect: !0
-			})], Ve.prototype, "muted", null), Re([Object(n.b)({
+			})], Ve.prototype, "muted", null), Le([Object(n.b)({
 				reflect: !0
-			})], Ve.prototype, "poster", null), Re([Object(n.b)({
+			})], Ve.prototype, "poster", null), Le([Object(n.b)({
 				type: Boolean,
 				reflect: !0
-			})], Ve.prototype, "loop", null), Re([Object(n.b)({
+			})], Ve.prototype, "loop", null), Le([Object(n.b)({
 				type: Boolean,
 				reflect: !0
-			})], Ve.prototype, "controls", null), Re([Object(n.d)()], Ve.prototype, "canLoadPoster", void 0), Re([Object(n.b)({
+			})], Ve.prototype, "controls", null), Le([Object(n.d)()], Ve.prototype, "canLoadPoster", void 0), Le([Object(n.b)({
 				attribute: "loading"
-			})], Ve.prototype, "loading", void 0), Re([Object(n.b)({
+			})], Ve.prototype, "loading", void 0), Le([Object(n.b)({
 				type: Boolean,
 				reflect: !0
-			})], Ve.prototype, "autoplay", null), Re([Object(n.b)({
+			})], Ve.prototype, "autoplay", null), Le([Object(n.b)({
 				attribute: "idle-delay",
 				type: Number
-			})], Ve.prototype, "idleDelay", null), Re([Object(n.b)({
+			})], Ve.prototype, "idleDelay", null), Le([Object(n.b)({
 				attribute: "fullscreen-orientation"
 			})], Ve.prototype, "fullscreenOrientation", null);
 			var Te = function(e, t, i, s) {
@@ -1288,14 +1288,13 @@
 					for (var o = e.length - 1; o >= 0; o--)(n = e[o]) && (a = (r < 3 ? n(a) : r > 3 ? n(t, i, a) : n(t, i)) || a);
 				return r > 3 && a && Object.defineProperty(t, i, a), a
 			};
-			const qe = "@reddit/shreddit-player-media-volume";
-			let De;
-			const Ie = new Set;
-			let Fe = !1,
+			const qe = "@reddit/shreddit-player-media-volume",
+				De = new Set;
+			let Ie = !1,
 				$e = !1;
-			class He extends s.a {
+			class Fe extends s.a {
 				constructor() {
-					super(), this.singlePlayback = !1, this.syncVolume = !1, this._providerDisposal = new N.a, G(this, Le, (e, t) => {
+					super(), this.singlePlayback = !1, this.syncVolume = !1, this._providerDisposal = new N.a, G(this, Re, (e, t) => {
 						this._handleMediaProviderConnect(e, t)
 					})
 				}
@@ -1316,7 +1315,7 @@
 					return this._provider
 				}
 				_handleMediaProviderConnect(e, t) {
-					if (this._provider = e, Ie.add(e), this.singlePlayback) {
+					if (this._provider = e, De.add(e), this.singlePlayback) {
 						const t = Object(N.e)(e, "vds-play", this._handleMediaPlay.bind(this));
 						this._providerDisposal.add(t)
 					}
@@ -1327,18 +1326,17 @@
 					const i = Object(N.e)(e, "vds-volume-change", this._saveMediaVolume.bind(this));
 					this._providerDisposal.add(i), window.requestAnimationFrame(() => {
 						if (this._provider) {
-							P(De) && this._provider.autoplay && (this._provider.muted = !0), P(De) || (this._provider.muted = De);
 							const e = this._getSavedMediaVolume();
-							x(null == e ? void 0 : e.volume) && (this._provider.volume = e.volume), void 0 === (null == e ? void 0 : e.muted) || this._provider.autoplay || (this._provider.muted = e.muted)
+							x(null == e ? void 0 : e.volume) && (this._provider.volume = e.volume), this._provider.autoplay && !this._provider.userHasInteracted ? this._provider.muted = !0 : P(null == e ? void 0 : e.muted) || (this._provider.muted = e.muted)
 						}
 					}), t(() => {
-						Ie.delete(e), this._provider = void 0, this._providerDisposal.empty()
+						De.delete(e), this._provider = void 0, this._providerDisposal.empty()
 					})
 				}
 				_handleMediaPlay() {
-					Fe || (Fe = !0, Ie.forEach(e => {
+					Ie || (Ie = !0, De.forEach(e => {
 						e !== this._provider && (e.paused = !0)
-					}), Fe = !1)
+					}), Ie = !1)
 				}
 				_handleMediaVolumeChange(e) {
 					if ($e) return;
@@ -1347,8 +1345,8 @@
 						volume: t,
 						muted: i
 					} = e.detail;
-					Ie.forEach(e => {
-						e !== this._provider && (e.volume = t, e.muted = i)
+					De.forEach(e => {
+						e !== this._provider && (e.volume = t, e.muted = i, e.userHasInteracted = !0)
 					}), this.dispatchEvent(z("vds-media-volume-sync", {
 						bubbles: !0,
 						composed: !0,
@@ -1369,12 +1367,12 @@
 			Te([Object(n.b)({
 				type: Boolean,
 				attribute: "single-playback"
-			})], He.prototype, "singlePlayback", void 0), Te([Object(n.b)({
+			})], Fe.prototype, "singlePlayback", void 0), Te([Object(n.b)({
 				type: Boolean,
 				attribute: "sync-volume"
-			})], He.prototype, "syncVolume", void 0), F("vds-media-sync", He);
-			var Be = i("./node_modules/@reddit/vidstack.components.foundation/dist/src/observers/PageController.js"),
-				Ne = function(e, t, i, s) {
+			})], Fe.prototype, "syncVolume", void 0), $("vds-media-sync", Fe);
+			var He = i("./node_modules/@reddit/vidstack.components.foundation/dist/src/observers/PageController.js"),
+				Be = function(e, t, i, s) {
 					var n, r = arguments.length,
 						a = r < 3 ? t : null === s ? s = Object.getOwnPropertyDescriptor(t, i) : s;
 					if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) a = Reflect.decorate(e, t, i, s);
@@ -1382,7 +1380,7 @@
 						for (var o = e.length - 1; o >= 0; o--)(n = e[o]) && (a = (r < 3 ? n(a) : r > 3 ? n(t, i, a) : n(t, i)) || a);
 					return r > 3 && a && Object.defineProperty(t, i, a), a
 				};
-			class Ue extends s.a {
+			class Ne extends s.a {
 				constructor() {
 					super(), this.viewportEnterDelay = 0, this.pageChangeType = "state", this.pageEnterDelay = 0, this.intersectionThreshold = 1, this._isIntersecting = !1, this._providerDisposal = new N.a, this._hasIntersected = !1, this.intersectionController = new ve(this, {
 						root: this.intersectionRoot ? document.querySelector(this.intersectionRoot) : null,
@@ -1393,7 +1391,7 @@
 						this._isIntersecting = t.isIntersecting, this._hasIntersected ? t.isIntersecting ? this._intersectionTimeout = window.setTimeout(() => {
 							this._provider && (this._provider.autoplayControlledByMediaVisibility = !1), this._triggerOnEnter(this.enterViewport), this._intersectionTimeout = void 0
 						}, this.viewportEnterDelay) : this.exitViewport && (this._provider && (this._provider.autoplayControlledByMediaVisibility = !0), this._isIntersecting = !1, this._triggerOnExit(this.exitViewport)) : !t.isIntersecting && this._provider && (this._provider.autoplayControlledByMediaVisibility = !0), this._hasIntersected = !0, this._dispatchVisibilityChange()
-					}), this.pageController = new Be.a(this, e => {
+					}), this.pageController = new He.a(this, e => {
 						let {
 							state: t,
 							visibility: i
@@ -1402,7 +1400,7 @@
 						"hidden" === ("state" === this.pageChangeType ? t : i) ? this._triggerOnExit(this.exitPage): this.enterViewport && (this._pageTimeout = window.setTimeout(() => {
 							this._triggerOnEnter(this.enterPage), this._pageTimeout = void 0
 						}, this.pageEnterDelay)), this._dispatchVisibilityChange()
-					}), G(this, Le, (e, t) => {
+					}), G(this, Re, (e, t) => {
 						this._handleMediaProviderConnect(e, t)
 					})
 				}
@@ -1455,30 +1453,30 @@
 					}))
 				}
 			}
-			Ne([Object(n.b)({
+			Be([Object(n.b)({
 				attribute: "enter-viewport"
-			})], Ue.prototype, "enterViewport", void 0), Ne([Object(n.b)({
+			})], Ne.prototype, "enterViewport", void 0), Be([Object(n.b)({
 				attribute: "exit-viewport"
-			})], Ue.prototype, "exitViewport", void 0), Ne([Object(n.b)({
+			})], Ne.prototype, "exitViewport", void 0), Be([Object(n.b)({
 				type: Number,
 				attribute: "viewport-enter-delay"
-			})], Ue.prototype, "viewportEnterDelay", void 0), Ne([Object(n.b)({
+			})], Ne.prototype, "viewportEnterDelay", void 0), Be([Object(n.b)({
 				attribute: "enter-page"
-			})], Ue.prototype, "enterPage", void 0), Ne([Object(n.b)({
+			})], Ne.prototype, "enterPage", void 0), Be([Object(n.b)({
 				attribute: "exit-page"
-			})], Ue.prototype, "exitPage", void 0), Ne([Object(n.b)({
+			})], Ne.prototype, "exitPage", void 0), Be([Object(n.b)({
 				attribute: "page-change-type"
-			})], Ue.prototype, "pageChangeType", void 0), Ne([Object(n.b)({
+			})], Ne.prototype, "pageChangeType", void 0), Be([Object(n.b)({
 				type: Number,
 				attribute: "page-enter-delay"
-			})], Ue.prototype, "pageEnterDelay", void 0), Ne([Object(n.b)({
+			})], Ne.prototype, "pageEnterDelay", void 0), Be([Object(n.b)({
 				attribute: "intersection-root"
-			})], Ue.prototype, "intersectionRoot", void 0), Ne([Object(n.b)({
+			})], Ne.prototype, "intersectionRoot", void 0), Be([Object(n.b)({
 				type: Number,
 				attribute: "intersection-threshold"
-			})], Ue.prototype, "intersectionThreshold", void 0), F("vds-media-visibility", Ue);
-			var ze = i("./node_modules/@reddit/vidstack.components.foundation/dist/src/events/eventListener.js"),
-				We = function(e, t, i) {
+			})], Ne.prototype, "intersectionThreshold", void 0), $("vds-media-visibility", Ne);
+			var Ue = i("./node_modules/@reddit/vidstack.components.foundation/dist/src/events/eventListener.js"),
+				ze = function(e, t, i) {
 					var s = null,
 						n = null,
 						r = i && i.leading,
@@ -1504,8 +1502,8 @@
 						o(), e && e()
 					}, l
 				};
-			const Qe = we(() => ne(void 0));
-			class Ke {
+			const We = we(() => ne(void 0));
+			class Qe {
 				constructor(e, t) {
 					this._host = e, this._mediaStore = t, this._idle = !1, this._mediaPaused = !1, this._idlingPaused = !1, this._isMouseOverMedia = !0, this._isMouseOverUIControls = !1, this._disposal = new N.a, this.delay = 1500, e.addController(this)
 				}
@@ -1562,9 +1560,9 @@
 					})), this._idle = e)
 				}
 			}
-			class Ye {
+			class Ke {
 				constructor(e) {
-					this._host = e, this._disconnectDisposal = new N.a, this.providerQueue = new ee, this.providerDisposal = new N.a, this._providerContext = Qe.provide(this._host), this._mediaStoreProvider = xe.provide(this._host), this.state = de(this._store), this._handleIdleChange = Object(ze.a)(this._host, "vds-user-idle-change", e => {
+					this._host = e, this._disconnectDisposal = new N.a, this.providerQueue = new ee, this.providerDisposal = new N.a, this._providerContext = We.provide(this._host), this._mediaStoreProvider = xe.provide(this._host), this.state = de(this._store), this._handleIdleChange = Object(Ue.a)(this._host, "vds-user-idle-change", e => {
 						this._store.userIdle.set(e.detail), this._satisfyMediaRequest("userIdle", e)
 					}), this._pendingMediaRequests = {
 						play: [],
@@ -1574,42 +1572,42 @@
 						seeked: [],
 						seeking: [],
 						userIdle: []
-					}, this._handleMuteRequest = Object(ze.a)(this._host, "vds-mute-request", this._createMediaRequestHandler("muted", e => {
+					}, this._handleMuteRequest = Object(Ue.a)(this._host, "vds-mute-request", this._createMediaRequestHandler("muted", e => {
 						this.state.muted || (this._pendingMediaRequests.volume.push(e), this.provider.muted = !0)
-					})), this._handleUnmuteRequest = Object(ze.a)(this._host, "vds-unmute-request", this._createMediaRequestHandler("muted", e => {
+					})), this._handleUnmuteRequest = Object(Ue.a)(this._host, "vds-unmute-request", this._createMediaRequestHandler("muted", e => {
 						this.state.muted && (this._pendingMediaRequests.volume.push(e), this.provider.muted = !1, 0 === this.state.volume && (this._pendingMediaRequests.volume.push(e), this.provider.volume = .25))
-					})), this._handlePlayRequest = Object(ze.a)(this._host, "vds-play-request", this._createMediaRequestHandler("paused", e => {
+					})), this._handlePlayRequest = Object(Ue.a)(this._host, "vds-play-request", this._createMediaRequestHandler("paused", e => {
 						this.state.paused && (this._pendingMediaRequests.play.push(e), this.provider.paused = !1, this.provider.manualPaused = !1)
-					})), this._handlePauseRequest = Object(ze.a)(this._host, "vds-pause-request", this._createMediaRequestHandler("paused", e => {
+					})), this._handlePauseRequest = Object(Ue.a)(this._host, "vds-pause-request", this._createMediaRequestHandler("paused", e => {
 						this.state.paused || (this._pendingMediaRequests.pause.push(e), this.provider.paused = !0, this.provider.manualPaused = !0)
-					})), this._isSeekingRequestPending = !1, this._handleSeekingRequest = Object(ze.a)(this._host, "vds-seeking-request", this._createMediaRequestHandler("seeking", e => {
+					})), this._isSeekingRequestPending = !1, this._handleSeekingRequest = Object(Ue.a)(this._host, "vds-seeking-request", this._createMediaRequestHandler("seeking", e => {
 						this._stopWaiting(), this._pendingMediaRequests.seeking.push(e), this._isSeekingRequestPending = !0, this._store.seeking.set(!0)
-					})), this._handleSeekRequest = Object(ze.a)(this._host, "vds-seek-request", this._createMediaRequestHandler("seeking", e => {
+					})), this._handleSeekRequest = Object(Ue.a)(this._host, "vds-seek-request", this._createMediaRequestHandler("seeking", e => {
 						this.store.ended && (this._isReplay = !0), this._pendingMediaRequests.seeked.push(e), this._isSeekingRequestPending = !1;
 						let t = e.detail;
 						this.state.duration - e.detail < .25 && (t = this.state.duration), this.provider.currentTime = t
-					})), this._handleVolumeChangeRequest = Object(ze.a)(this._host, "vds-volume-change-request", this._createMediaRequestHandler("volume", e => {
+					})), this._handleVolumeChangeRequest = Object(Ue.a)(this._host, "vds-volume-change-request", this._createMediaRequestHandler("volume", e => {
 						const t = e.detail;
 						this.state.volume !== t && (this._pendingMediaRequests.volume.push(e), this.provider.volume = t, t > 0 && this.state.muted && (this.provider.muted = !1))
-					})), this._handleEnterFullscreenRequest = Object(ze.a)(this._host, "vds-enter-fullscreen-request", this._createMediaRequestHandler("fullscreen", async e => {
+					})), this._handleEnterFullscreenRequest = Object(Ue.a)(this._host, "vds-enter-fullscreen-request", this._createMediaRequestHandler("fullscreen", async e => {
 						var t;
 						if (this.state.fullscreen) return;
 						var i, s;
 						"media" === (null !== (t = e.detail) && void 0 !== t ? t : "media") && this._host.canFullscreen ? (this._pendingMediaRequests.fullscreen.push(e), await (null === (i = (s = this._host).enterFullscreen) || void 0 === i ? void 0 : i.call(s))) : this.provider && (this._pendingMediaRequests.fullscreen.push(e), await this.provider.enterFullscreen())
-					})), this._handleExitFullscreenRequest = Object(ze.a)(this._host, "vds-exit-fullscreen-request", this._createMediaRequestHandler("fullscreen", async e => {
+					})), this._handleExitFullscreenRequest = Object(Ue.a)(this._host, "vds-exit-fullscreen-request", this._createMediaRequestHandler("fullscreen", async e => {
 						var t;
 						if (!this.state.fullscreen) return;
 						var i, s;
 						"media" === (null !== (t = e.detail) && void 0 !== t ? t : "media") && this._host.canFullscreen ? (this._pendingMediaRequests.fullscreen.push(e), await (null === (i = (s = this._host).exitFullscreen) || void 0 === i ? void 0 : i.call(s))) : this.provider && (this._pendingMediaRequests.fullscreen.push(e), await this.provider.exitFullscreen())
-					})), this._handleResumeIdlingRequest = Object(ze.a)(this._host, "vds-resume-user-idle-request", e => {
+					})), this._handleResumeIdlingRequest = Object(Ue.a)(this._host, "vds-resume-user-idle-request", e => {
 						this._mediaRequestEventGateway(e) && (this._pendingMediaRequests.userIdle.push(e), this._userIdleController && (this._userIdleController.paused = !1))
-					}), this._handlePauseIdlingRequest = Object(ze.a)(this._host, "vds-pause-user-idle-request", e => {
+					}), this._handlePauseIdlingRequest = Object(Ue.a)(this._host, "vds-pause-user-idle-request", e => {
 						this._mediaRequestEventGateway(e) && (this._pendingMediaRequests.userIdle.push(e), this._userIdleController && (this._userIdleController.paused = !0))
-					}), this._handleShowPosterRequest = Object(ze.a)(this._host, "vds-show-poster-request", this._createMediaRequestHandler("poster", () => {
+					}), this._handleShowPosterRequest = Object(Ue.a)(this._host, "vds-show-poster-request", this._createMediaRequestHandler("poster", () => {
 						this._provider.canLoadPoster = !0
-					})), this._handleHidePosterRequest = Object(ze.a)(this._host, "vds-hide-poster-request", this._createMediaRequestHandler("poster", () => {
+					})), this._handleHidePosterRequest = Object(Ue.a)(this._host, "vds-hide-poster-request", this._createMediaRequestHandler("poster", () => {
 						this._provider.canLoadPoster = !1
-					})), this._handleLoopRequest = Object(ze.a)(this._host, "vds-loop-request", this._createMediaRequestHandler("loop", () => {
+					})), this._handleLoopRequest = Object(Ue.a)(this._host, "vds-loop-request", this._createMediaRequestHandler("loop", () => {
 						window.requestAnimationFrame(async () => {
 							try {
 								this._isLooping = !0, this._isReplay = !0, await this._provider.play()
@@ -1617,7 +1615,7 @@
 								this._isReplay = !1, this._isLooping = !1
 							}
 						})
-					})), this._handleManualHlsLevelChange = Object(ze.a)(this._host, "vds-hls-manual-level-change", this._createMediaRequestHandler("hls-level-change", e => {
+					})), this._handleManualHlsLevelChange = Object(Ue.a)(this._host, "vds-hls-manual-level-change", this._createMediaRequestHandler("hls-level-change", e => {
 						const t = this.provider;
 						window.requestAnimationFrame(async () => {
 							try {
@@ -1633,19 +1631,19 @@
 								null != t && t.hlsEngine && (t.loadingUserLevel = !1, this._store.waiting.set(!1), this._store.playing.set(!0))
 							}
 						})
-					})), this._handleFullscreenChange = Object(ze.a)(this._host, "vds-fullscreen-change", e => {
+					})), this._handleFullscreenChange = Object(Ue.a)(this._host, "vds-fullscreen-change", e => {
 						var t;
 						this._store.fullscreen.set(e.detail), e.target === this._host && (this._satisfyMediaRequest("fullscreen", e), null === (t = this._provider) || void 0 === t || t.dispatchEvent(z("vds-fullscreen-change", {
 							detail: e.detail,
 							triggerEvent: e
 						})))
-					}), this._handleFullscreenError = Object(ze.a)(this._host, "vds-fullscreen-error", e => {
+					}), this._handleFullscreenError = Object(Ue.a)(this._host, "vds-fullscreen-error", e => {
 						var t;
 						e.target === this._host && (this._satisfyMediaRequest("fullscreen", e), null === (t = this._provider) || void 0 === t || t.dispatchEvent(z("vds-fullscreen-error", {
 							detail: e.detail,
 							triggerEvent: e
 						})))
-					}), this._isReplay = !1, this._isLooping = !1, this._firingWaiting = !1, this._mediaEvents = [], this._handleSeeking = We(e => {
+					}), this._isReplay = !1, this._isLooping = !1, this._firingWaiting = !1, this._mediaEvents = [], this._handleSeeking = ze(e => {
 						this._mediaEvents.push(e), this._store.seeking.set(!0), this._store.currentTime.set(e.detail), this._satisfyMediaRequest("seeking", e)
 					}, 150, {
 						leading: !0
@@ -1655,7 +1653,7 @@
 						this._firingWaiting = !0;
 						const t = z("vds-waiting", this._originalWaitingEvent);
 						this._mediaEvents.push(t), this._store.waiting.set(!0), this._store.playing.set(!1), null === (e = this._provider) || void 0 === e || e.dispatchEvent(t), this._originalWaitingEvent = void 0, this._firingWaiting = !1
-					}, 300), this._skipInitialSrcChange = !0, G(e, Le, (e, t) => {
+					}, 300), this._skipInitialSrcChange = !0, G(e, Re, (e, t) => {
 						this.attachMediaProvider(e, t)
 					}), e.addController({
 						hostDisconnected: () => {
@@ -1775,7 +1773,7 @@
 					this._updateMetadata(e.detail), this._mediaEvents.push(e), Q(e, this._findLastMediaEvent("vds-src-change"))
 				}
 				_handleLoadedData(e) {
-					this._mediaEvents.push(e), Q(e, this._findLastMediaEvent("vds-load-start")), this._userIdleController = new Ke(this._host, this._store)
+					this._mediaEvents.push(e), Q(e, this._findLastMediaEvent("vds-load-start")), this._userIdleController = new Qe(this._host, this._store)
 				}
 				_handleLoadedMetadata(e) {
 					this._updateMetadata(e.detail), this._mediaEvents.push(e), Q(e, this._findLastMediaEvent("vds-load-start"))
@@ -1890,7 +1888,7 @@
 					this._store.viewType.set(e.detail)
 				}
 			}
-			class Ge {
+			class Ye {
 				constructor(e, t, i) {
 					this._host = e, this._store = t, this._mediaProps = i, this._disposal = new N.a, this._host.addController({
 						hostConnected: this._hostConnected.bind(this),
@@ -1922,17 +1920,17 @@
 					return e.replace(/([a-z])([A-Z])/g, "$1-$2").toLowerCase()
 				}
 			}
-			class Je extends Ge {
+			class Ge extends Ye {
 				_handleValueChange(e, t, i) {
 					window.requestAnimationFrame(() => {
-						$(this._host, t, A(i) || x(i) ? String(i) : !!i)
+						F(this._host, t, A(i) || x(i) ? String(i) : !!i)
 					})
 				}
 				_handleDisconnect(e, t) {
 					this._host.removeAttribute(t)
 				}
 			}
-			class Xe extends Ge {
+			class Je extends Ye {
 				_handleValueChange(e, t, i) {
 					window.requestAnimationFrame(() => {
 						this._host.style.setProperty(this._getCssPropName(t), A(i) || x(i) ? String(i) : null)
@@ -1945,7 +1943,7 @@
 					this._host.style.setProperty(this._getCssPropName(t), null)
 				}
 			}
-			var Ze = function(e, t, i, s) {
+			var Xe = function(e, t, i, s) {
 				var n, r = arguments.length,
 					a = r < 3 ? t : null === s ? s = Object.getOwnPropertyDescriptor(t, i) : s;
 				if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) a = Reflect.decorate(e, t, i, s);
@@ -1953,11 +1951,11 @@
 					for (var o = e.length - 1; o >= 0; o--)(n = e[o]) && (a = (r < 3 ? n(a) : r > 3 ? n(t, i, a) : n(t, i)) || a);
 				return r > 3 && a && Object.defineProperty(t, i, a), a
 			};
-			const et = Symbol("@vidstack/media-discovery");
-			class tt extends s.a {
+			const Ze = Symbol("@vidstack/media-discovery");
+			class et extends s.a {
 				constructor() {
-					super(), this.controller = new Ye(this), this.__mediaFullscreen = !1, this.__mediaIsVideoView = !1, this.__mediaPlaysinline = !1, this.screenOrientationController = new ce(this), this.fullscreenController = new pe(this, this.screenOrientationController), J(this, "vds-media-connect", {
-						register: et
+					super(), this.controller = new Ke(this), this.__mediaFullscreen = !1, this.__mediaIsVideoView = !1, this.__mediaPlaysinline = !1, this.screenOrientationController = new ce(this), this.fullscreenController = new pe(this, this.screenOrientationController), J(this, "vds-media-connect", {
+						register: Ze
 					}), Ae(this, "fullscreen", e => {
 						this.__mediaFullscreen = e
 					}), Ae(this, "viewType", e => {
@@ -1983,7 +1981,7 @@
 					return this.controller.provider
 				}
 				update(e) {
-					$(this, "hide-ui", this._shouldHideMediaUI()), super.update(e)
+					F(this, "hide-ui", this._shouldHideMediaUI()), super.update(e)
 				}
 				render() {
 					return s.c`<slot></slot>`
@@ -2010,23 +2008,23 @@
 				_bindMediaAttributes() {
 					! function() {
 						for (var e = arguments.length, t = new Array(e), i = 0; i < e; i++) t[i] = arguments[i];
-						new Je(...t)
+						new Ge(...t)
 					}(this, this.controller.store, ["autoplay", "autoplayError", "canLoad", "canPlay", "canFullscreen", "ended", "error", "fullscreen", "userIdle", "loop", "mediaType", "muted", "paused", "playing", "playsinline", "seeking", "started", "viewType", "waiting"])
 				}
 				_bindMediaCSSProperties() {
 					! function() {
 						for (var e = arguments.length, t = new Array(e), i = 0; i < e; i++) t[i] = arguments[i];
-						new Xe(...t)
+						new Je(...t)
 					}(this, this.controller.store, ["bufferedAmount", "currentTime", "duration", "seekableAmount"])
 				}
 				_shouldHideMediaUI() {
 					return q && this.__mediaIsVideoView && (!this.__mediaPlaysinline || this.__mediaFullscreen)
 				}
 			}
-			Ze([Object(n.d)()], tt.prototype, "__mediaFullscreen", void 0), Ze([Object(n.d)()], tt.prototype, "__mediaIsVideoView", void 0), Ze([Object(n.d)()], tt.prototype, "__mediaPlaysinline", void 0), Ze([Object(n.b)({
+			Xe([Object(n.d)()], et.prototype, "__mediaFullscreen", void 0), Xe([Object(n.d)()], et.prototype, "__mediaIsVideoView", void 0), Xe([Object(n.d)()], et.prototype, "__mediaPlaysinline", void 0), Xe([Object(n.b)({
 				attribute: "fullscreen-orientation"
-			})], tt.prototype, "fullscreenOrientation", null), F("vds-media", tt);
-			var it = function(e, t, i, s) {
+			})], et.prototype, "fullscreenOrientation", null), $("vds-media", et);
+			var tt = function(e, t, i, s) {
 				var n, r = arguments.length,
 					a = r < 3 ? t : null === s ? s = Object.getOwnPropertyDescriptor(t, i) : s;
 				if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) a = Reflect.decorate(e, t, i, s);
@@ -2034,10 +2032,10 @@
 					for (var o = e.length - 1; o >= 0; o--)(n = e[o]) && (a = (r < 3 ? n(a) : r > 3 ? n(t, i, a) : n(t, i)) || a);
 				return r > 3 && a && Object.defineProperty(t, i, a), a
 			};
-			const st = new Map;
-			class nt extends s.a {
+			const it = new Map;
+			class st extends s.a {
 				constructor() {
-					super(), this._disposal = new N.a, this.repeat = 0, this.priority = 10, this._mediaCurrentTime = 0, this._currentToggleState = !1, this._mediaStoreConsumer = xe.consume(this), oe(this, Qe, e => {
+					super(), this._disposal = new N.a, this.repeat = 0, this.priority = 10, this._mediaCurrentTime = 0, this._currentToggleState = !1, this._mediaStoreConsumer = xe.consume(this), oe(this, We, e => {
 						this._mediaProviderElement = e
 					})
 				}
@@ -2058,7 +2056,7 @@
       `]
 				}
 				get _pendingActions() {
-					return this._mediaProviderElement ? st.get(this._mediaProviderElement) : void 0
+					return this._mediaProviderElement ? it.get(this._mediaProviderElement) : void 0
 				}
 				get _pendingAction() {
 					var e;
@@ -2066,7 +2064,7 @@
 				}
 				connectedCallback() {
 					super.connectedCallback(), window.requestAnimationFrame(() => {
-						this._mediaProviderElement && st.set(this._mediaProviderElement, new Map)
+						this._mediaProviderElement && it.set(this._mediaProviderElement, new Map)
 					})
 				}
 				willUpdate(e) {
@@ -2101,7 +2099,7 @@
 									const n = null === (t = e._pendingAction) || void 0 === t ? void 0 : t[1];
 									var r;
 									s && (null === (r = e._pendingActions) || void 0 === r || r.delete(e));
-									at(e._mediaProviderElement), i = 0, null == n || n.resolve()
+									rt(e._mediaProviderElement), i = 0, null == n || n.resolve()
 								}, 250)
 							}(i < this.repeat)
 						}
@@ -2154,17 +2152,17 @@
 					s && this._disposal.add(s)
 				}
 			}
-			it([Object(n.b)()], nt.prototype, "type", void 0), it([Object(n.b)({
+			tt([Object(n.b)()], st.prototype, "type", void 0), tt([Object(n.b)({
 				type: Number
-			})], nt.prototype, "repeat", void 0), it([Object(n.b)({
+			})], st.prototype, "repeat", void 0), tt([Object(n.b)({
 				type: Number
-			})], nt.prototype, "priority", void 0), it([Object(n.b)()], nt.prototype, "action", void 0);
-			const rt = new WeakSet;
-			async function at(e) {
-				if (rt.has(e)) return;
-				const t = st.get(e);
+			})], st.prototype, "priority", void 0), tt([Object(n.b)()], st.prototype, "action", void 0);
+			const nt = new WeakSet;
+			async function rt(e) {
+				if (nt.has(e)) return;
+				const t = it.get(e);
 				if (!t) return;
-				rt.add(e);
+				nt.add(e);
 				const i = Array.from(t.values()).map(e => e[1].promise);
 				await Promise.all(i);
 				const s = Array.from(t.keys()),
@@ -2172,10 +2170,10 @@
 				s.filter(e => e.priority <= n).map(e => {
 					const i = t.get(e)[0];
 					e.performAction(i)
-				}), t.clear(), rt.delete(e)
+				}), t.clear(), nt.delete(e)
 			}
-			F("vds-gesture", nt);
-			class ot {
+			$("vds-gesture", st);
+			class at {
 				static async load(e) {
 					return new Promise((t, i) => {
 						this.pendingRequests[e] ? this.pendingRequests[e].push({
@@ -2199,14 +2197,14 @@
 					})
 				}
 			}
-			var lt;
-			ot.pendingRequests = {},
+			var ot;
+			at.pendingRequests = {},
 				function(e) {
 					e[e.Aborted = 1] = "Aborted", e[e.Network = 2] = "Network", e[e.Decode = 3] = "Decode", e[e.SrcNotSupported = 4] = "SrcNotSupported"
-				}(lt || (lt = {}));
-			const dt = /\.(m4a|mp4a|mpga|mp2|mp2a|mp3|m2a|m3a|wav|weba|aac|oga|spx)($|\?)/i,
-				ht = /\.(mp4|og[gv]|webm|mov|m4v|avi)($|\?)/i;
-			class ct extends Ve {
+				}(ot || (ot = {}));
+			const lt = /\.(m4a|mp4a|mpga|mp2|mp2a|mp3|m2a|m3a|wav|weba|aac|oga|spx)($|\?)/i,
+				dt = /\.(mp4|og[gv]|webm|mov|m4v|avi)($|\?)/i;
+			class ht extends Ve {
 				constructor() {
 					super(...arguments), this.preload = "metadata", this._timeRAF = void 0, this._hasMediaElementConnected = !1, this._mediaElementDisposal = new N.a, this._isMediaWaiting = !1, this._ignoreNextAbortEvent = !1, this._ignoreNextEmptiedEvent = !1
 				}
@@ -2260,7 +2258,7 @@
 					if (!this._canMediaElementConnect) return;
 					this.dispatchEvent(z("vds-media-element-connected"));
 					const e = this.mediaElement;
-					e.hasAttribute("loop") && (this.loop = !0), e.removeAttribute("loop"), $(e, "controls", this.controls), this._attachMediaEventListeners(), this._observePlaysinline(), this._observeMediaSources(), this._startPreloadingMedia(), this._hasMediaElementConnected = !0, this._disconnectDisposal.add(this._handleMediaElementDisconnect.bind(this))
+					e.hasAttribute("loop") && (this.loop = !0), e.removeAttribute("loop"), F(e, "controls", this.controls), this._attachMediaEventListeners(), this._observePlaysinline(), this._observeMediaSources(), this._startPreloadingMedia(), this._hasMediaElementConnected = !0, this._disconnectDisposal.add(this._handleMediaElementDisconnect.bind(this))
 				}
 				_handleMediaElementDisconnect() {
 					this._cancelTimeUpdates(), this._mediaElementDisposal.empty(), this._mediaElement = void 0, this._hasMediaElementConnected = !1
@@ -2541,7 +2539,7 @@
 					return this._throwIfNotReadyForPlayback(), null === (e = this.mediaElement) || void 0 === e ? void 0 : e.pause()
 				}
 				_getMediaType() {
-					return e = this.state.currentSrc, dt.test(e) ? Oe.a.Audio : ht.test(e) ? Oe.a.Video : Oe.a.Unknown;
+					return e = this.state.currentSrc, lt.test(e) ? Oe.a.Audio : dt.test(e) ? Oe.a.Video : Oe.a.Unknown;
 					var e
 				}
 			}(function(e, t, i, s) {
@@ -2553,8 +2551,8 @@
 				r > 3 && a && Object.defineProperty(t, i, a)
 			})([Object(n.b)({
 				reflect: !0
-			})], ct.prototype, "preload", void 0);
-			class ut extends pe {
+			})], ht.prototype, "preload", void 0);
+			class ct extends pe {
 				constructor(e, t, i) {
 					super(e, t), this._presentationController = i
 				}
@@ -2590,7 +2588,7 @@
 				}
 			}
 
-			function pt(e, t) {
+			function ut(e, t) {
 				var i;
 				if (t.bubbles && t.composed) return;
 				const s = new U(t.type, {
@@ -2602,7 +2600,7 @@
 				});
 				e.dispatchEvent(s)
 			}
-			class vt {
+			class pt {
 				constructor(e) {
 					this._host = e, this._listenerDisposal = new N.a;
 					const t = e.firstUpdated;
@@ -2632,7 +2630,7 @@
 				}
 				get isSupported() {
 					var e;
-					return R(null === (e = this._host.videoElement) || void 0 === e ? void 0 : e.webkitSetPresentationMode)
+					return L(null === (e = this._host.videoElement) || void 0 === e ? void 0 : e.webkitSetPresentationMode)
 				}
 				setPresentationMode(e) {
 					var t, i;
@@ -2642,21 +2640,21 @@
 					return !this.isSupported || M(this._host.videoElement) ? S : Object(N.e)(this._host.videoElement, "webkitpresentationmodechanged", this._handlePresentationModeChange.bind(this))
 				}
 				_handlePresentationModeChange(e) {
-					pt(this._host, e), this._host.dispatchEvent(z("vds-video-presentation-change", {
+					ut(this._host, e), this._host.dispatchEvent(z("vds-video-presentation-change", {
 						detail: this.presentationMode,
 						triggerEvent: e
 					}))
 				}
 			}
-			class _t extends ct {
+			class vt extends ht {
 				constructor() {
-					super(...arguments), this.presentationController = new vt(this), this.fullscreenController = new ut(this, this.screenOrientationController, this.presentationController)
+					super(...arguments), this.presentationController = new pt(this), this.fullscreenController = new ct(this, this.screenOrientationController, this.presentationController)
 				}
 				static get styles() {
 					return [s.b`
         :host {
           display: inline-block;
-          background-color: var(--vds-video-bg-color, #000);
+          background-color: var(--vds-video-bg-color, transparent);
         }
 
         :host([hidden]) {
@@ -2681,18 +2679,18 @@
 					return this.mediaElement
 				}
 			}
-			const gt = new Map;
+			const _t = new Map;
 
-			function mt(e) {
+			function gt(e) {
 				return e.replace("vds-", "").replace(/-./g, e => e[1].toUpperCase())
 			}
-			const bt = "vds-hls-",
-				yt = ["lib-load", "instance", "unsupported"];
+			const mt = "vds-hls-",
+				bt = ["lib-load", "instance", "unsupported"];
 
-			function ft(e) {
-				return e.startsWith(bt) && !yt.some(t => e.startsWith(`${bt}${t}`))
+			function yt(e) {
+				return e.startsWith(mt) && !bt.some(t => e.startsWith(`${mt}${t}`))
 			}
-			var wt = function(e, t, i, s) {
+			var ft = function(e, t, i, s) {
 				var n, r = arguments.length,
 					a = r < 3 ? t : null === s ? s = Object.getOwnPropertyDescriptor(t, i) : s;
 				if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) a = Reflect.decorate(e, t, i, s);
@@ -2700,11 +2698,11 @@
 					for (var o = e.length - 1; o >= 0; o--)(n = e[o]) && (a = (r < 3 ? n(a) : r > 3 ? n(t, i, a) : n(t, i)) || a);
 				return r > 3 && a && Object.defineProperty(t, i, a), a
 			};
-			const Et = /\.(m3u8)($|\?)/i,
-				Ot = (new Set(["application/vnd.apple.mpegurl", "audio/mpegurl", "audio/x-mpegurl", "application/x-mpegurl", "video/x-mpegurl", "video/mpegurl", "application/mpegurl"]), "https://cdn.jsdelivr.net/npm/hls.js@^1.0.0/dist/hls.light.min.js");
-			class kt extends _t {
+			const wt = /\.(m3u8)($|\?)/i,
+				Et = (new Set(["application/vnd.apple.mpegurl", "audio/mpegurl", "audio/x-mpegurl", "application/x-mpegurl", "video/x-mpegurl", "video/mpegurl", "application/mpegurl"]), "https://cdn.jsdelivr.net/npm/hls.js@^1.0.0/dist/hls.light.min.js");
+			class Ot extends vt {
 				constructor() {
-					super(), this._isHlsEngineAttached = !1, this.hlsConfig = {}, this._loadingUserLevel = !1, this.hlsLibrary = Ot, this._currentHlsSrc = "", this._hlsEventListeners = [], Object.defineProperty(this, "hls-config", {
+					super(), this._isHlsEngineAttached = !1, this.hlsConfig = {}, this._loadingUserLevel = !1, this.hlsLibrary = Et, this._currentHlsSrc = "", this._hlsEventListeners = [], Object.defineProperty(this, "hls-config", {
 						set: e => {
 							this.hlsConfig = e
 						}
@@ -2743,11 +2741,11 @@
 					return null !== (e = null === (t = this.Hls) || void 0 === t ? void 0 : t.isSupported()) && void 0 !== e ? e : I()
 				}
 				get isHlsStream() {
-					return this.state.src.some(e => Et.test(e))
+					return this.state.src.some(e => wt.test(e))
 				}
 				_preconnectToHlsLibDownload() {
 					var e;
-					this.canLoad || !A(this.hlsLibrary) || (e = this.hlsLibrary, gt.has(e)) || function(e) {
+					this.canLoad || !A(this.hlsLibrary) || (e = this.hlsLibrary, _t.has(e)) || function(e) {
 						let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "preconnect";
 						if (!(arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : V)) return !1;
 						if (!j(document.querySelector(`link[href="${e}"]`))) return !0;
@@ -2775,7 +2773,7 @@
 							})), this.dispatchEvent(z("vds-error", {
 								detail: {
 									message: e.message,
-									code: lt.SrcNotSupported
+									code: ot.SrcNotSupported
 								}
 							}))
 						}
@@ -2784,13 +2782,13 @@
 							var t;
 							let i = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
 							if (A(e)) {
-								if (gt.has(e)) return gt.get(e);
+								if (_t.has(e)) return _t.get(e);
 								null === (t = i.onLoadStart) || void 0 === t || t.call(i);
 								try {
 									var s;
-									if (await ot.load(e), !R(window.Hls)) throw Error("[vds]: Failed loading `hls.js`. Could not find a valid constructor at `window.Hls`.");
+									if (await at.load(e), !L(window.Hls)) throw Error("[vds]: Failed loading `hls.js`. Could not find a valid constructor at `window.Hls`.");
 									const t = window.Hls;
-									return null === (s = i.onLoaded) || void 0 === s || s.call(i, t), gt.set(e, t), t
+									return null === (s = i.onLoaded) || void 0 === s || s.call(i, t), _t.set(e, t), t
 								} catch (r) {
 									var n;
 									null === (n = i.onLoadError) || void 0 === n || n.call(i, r)
@@ -2801,11 +2799,11 @@
 							let i = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
 							if (P(e)) return;
 							var s;
-							if (null === (t = i.onLoadStart) || void 0 === t || t.call(i), !R(e)) return null === (s = i.onLoaded) || void 0 === s || s.call(i, e), e;
+							if (null === (t = i.onLoadStart) || void 0 === t || t.call(i), !L(e)) return null === (s = i.onLoaded) || void 0 === s || s.call(i, e), e;
 							const n = String(e);
-							if (gt.has(n)) {
+							if (_t.has(n)) {
 								var r;
-								const e = gt.get(n);
+								const e = _t.get(n);
 								return null === (r = i.onLoaded) || void 0 === r || r.call(i, e), e
 							}
 							try {
@@ -2813,7 +2811,7 @@
 								const t = null === (a = await e()) || void 0 === a ? void 0 : a.default;
 								if (!t || !t.isSupported) throw Error("[vds]: Failed importing `hls.js`. Dynamic import returned invalid constructor.");
 								var o;
-								return null === (o = i.onLoaded) || void 0 === o || o.call(i, t), gt.set(n, t), t
+								return null === (o = i.onLoaded) || void 0 === o || o.call(i, t), _t.set(n, t), t
 							} catch (d) {
 								var l;
 								null === (l = i.onLoadError) || void 0 === l || l.call(i, d)
@@ -2824,7 +2822,7 @@
 							return this.dispatchEvent(z("vds-hls-unsupported")), void this.dispatchEvent(z("vds-error", {
 								detail: {
 									message: e,
-									code: lt.SrcNotSupported
+									code: ot.SrcNotSupported
 								}
 							}))
 						}
@@ -2856,7 +2854,7 @@
 				_handleAbort(e) {
 					if (this.isHlsSupported)
 						for (const t of this.state.src)
-							if (Et.test(t)) return void this._handleHlsSrcChange(t);
+							if (wt.test(t)) return void this._handleHlsSrcChange(t);
 					super._handleAbort(e)
 				}
 				async _handleHlsSrcChange(e) {
@@ -2873,7 +2871,7 @@
 					const i = null === (t = this.mediaElement) || void 0 === t ? void 0 : t.error;
 					if (4 === (null == i ? void 0 : i.code) && this.isHlsSupported) {
 						for (const s of this.state.src)
-							if (Et.test(s)) return void this._handleHlsSrcChange(s)
+							if (wt.test(s)) return void this._handleHlsSrcChange(s)
 					} else super._handleError(e)
 				}
 				_listenToHlsEngine() {
@@ -2888,26 +2886,28 @@
 					}), this.hlsEngine.on(this.Hls.Events.ERROR, this._handleHlsError.bind(this)))
 				}
 				_handleHlsError(e, t) {
-					var i;
-					if (!P(this.Hls))
-						if (t.fatal) switch (t.type) {
-							case "networkError":
-								this._handleHlsNetworkError();
-								break;
-							case "mediaError":
-								this._handleHlsMediaError();
-								break;
-							default:
-								this._handleHlsIrrecoverableError()
-						} else if ("bufferStalledError" === t.details) {
-							var s;
-							null === (s = this.hlsEngine) || void 0 === s || s.startLoad()
-						} else 403 === (null === (i = t.networkDetails) || void 0 === i ? void 0 : i.status) && (this._handleHlsIrrecoverableError(), this.dispatchEvent(z("vds-error", {
-							detail: {
-								code: 2,
-								message: "Media unavailable"
-							}
-						})))
+					var i, s;
+					if (P(this.Hls)) return;
+					const n = null === (i = this.currentHlsSrc) || void 0 === i ? void 0 : i.split("?")[0],
+						r = window.Sentry;
+					if (t.fatal) switch (t.type) {
+						case "networkError":
+							null == r || r.captureMessage(`shreddit-player network error for src ${n}. [${t.details}]`), this._handleHlsNetworkError();
+							break;
+						case "mediaError":
+							"audioTrackLoadError" === t.details ? (this.hlsEngine.audioTrack = 0, null == r || r.captureMessage(`shreddit-player media error: audioTrackLoadError for src ${n}`)) : null == r || r.captureMessage(`shreddit-player media error for src ${n}. [${t.details}]`), this._handleHlsMediaError();
+							break;
+						default:
+							null == r || r.captureMessage(`shreddit-player irrecoverable error for src ${n}. [${t.details}]`), this._handleHlsIrrecoverableError()
+					} else if ("bufferStalledError" === t.details) {
+						var a;
+						null == r || r.captureMessage(`shreddit-player buffer stalled error for src ${n}. [${t.details}]`), null === (a = this.hlsEngine) || void 0 === a || a.startLoad()
+					} else 403 === (null === (s = t.networkDetails) || void 0 === s ? void 0 : s.status) && (this._handleHlsIrrecoverableError(), null == r || r.captureMessage(`shreddit-player removed src ${n}. [${t.details}]`), this.dispatchEvent(z("vds-error", {
+						detail: {
+							code: 2,
+							message: "Media unavailable"
+						}
+					})))
 				}
 				_handleHlsNetworkError() {
 					var e;
@@ -2939,8 +2939,8 @@
 					}))
 				}
 				addEventListener(e, t, i) {
-					if (!ft(e)) return super.addEventListener(e, t, i); {
-						const n = mt(e);
+					if (!yt(e)) return super.addEventListener(e, t, i); {
+						const n = gt(e);
 						var s;
 						this._hlsEventListeners.some(e => e.type === n && e.listener === t) || (this._hlsEventListeners.push({
 							type: n,
@@ -2950,22 +2950,22 @@
 					}
 				}
 				removeEventListener(e, t, i) {
-					if (ft(e)) {
+					if (yt(e)) {
 						var s;
-						const n = mt(e);
+						const n = gt(e);
 						return this._hlsEventListeners = this._hlsEventListeners.filter(e => e.type === n && e.listener === t), void(null === (s = this.hlsEngine) || void 0 === s || s.off(n, t, null == i ? void 0 : i.context, null == i ? void 0 : i.once))
 					}
 					return super.removeEventListener(e, t, i)
 				}
 			}
-			wt([Object(n.b)({
+			ft([Object(n.b)({
 				type: Object,
 				attribute: "hls-config"
-			})], kt.prototype, "hlsConfig", void 0), wt([Object(n.b)({
+			})], Ot.prototype, "hlsConfig", void 0), ft([Object(n.b)({
 				type: Boolean,
 				attribute: !1
-			})], kt.prototype, "_loadingUserLevel", void 0), F("vds-hls", kt);
-			class Ct {
+			})], Ot.prototype, "_loadingUserLevel", void 0), $("vds-hls", Ot);
+			class kt {
 				constructor(e) {
 					this._host = e, this._connectedQueue = he(this._host)
 				}
@@ -3050,18 +3050,18 @@
 					})
 				}
 			}
-			class St {
+			class Ct {
 				constructor(e) {
 					this._host = e;
 					const t = new N.a;
 					let i = !1;
 					t.add(Object(N.e)(document, "pointerdown", () => {
 						i = !1
-					})), Object(ze.a)(e, "keydown", e => {
+					})), Object(Ue.a)(e, "keydown", e => {
 						e.metaKey || e.altKey || e.ctrlKey || (i = !0)
-					}), Object(ze.a)(e, "focus", () => {
+					}), Object(Ue.a)(e, "focus", () => {
 						i && e.classList.add("focus-visible")
-					}), Object(ze.a)(e, "blur", () => {
+					}), Object(Ue.a)(e, "blur", () => {
 						e.classList.remove("focus-visible")
 					}), e.addController({
 						hostDisconnected: () => {
@@ -3071,15 +3071,15 @@
 				}
 			}
 
-			function jt(e) {
-				return new St(e)
+			function St(e) {
+				return new Ct(e)
 			}
 
-			function Pt(e) {
+			function jt(e) {
 				var t;
 				return null !== (t = null == e ? void 0 : e.type.startsWith("key")) && void 0 !== t && t
 			}
-			const Mt = s.b`
+			const Pt = s.b`
   :host {
     display: table;
     contain: content;
@@ -3105,7 +3105,7 @@
     outline: 1px auto -webkit-focus-ring-color;
   }
 `;
-			var xt = function(e, t, i, s) {
+			var Mt = function(e, t, i, s) {
 				var n, r = arguments.length,
 					a = r < 3 ? t : null === s ? s = Object.getOwnPropertyDescriptor(t, i) : s;
 				if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) a = Reflect.decorate(e, t, i, s);
@@ -3113,22 +3113,22 @@
 					for (var o = e.length - 1; o >= 0; o--)(n = e[o]) && (a = (r < 3 ? n(a) : r > 3 ? n(t, i, a) : n(t, i)) || a);
 				return r > 3 && a && Object.defineProperty(t, i, a), a
 			};
-			class At extends s.a {
+			class xt extends s.a {
 				constructor() {
-					super(), this.pressed = !1, this.disabled = !1, this._handleButtonClickCapture = Object(ze.a)(this, "click", e => {
+					super(), this.pressed = !1, this.disabled = !1, this._handleButtonClickCapture = Object(Ue.a)(this, "click", e => {
 						this.disabled && (e.preventDefault(), e.stopImmediatePropagation())
 					}, {
 						capture: !0
-					}), jt(this), ["pointerup", "keydown"].forEach(e => {
-						Object(ze.a)(this, e, e => {
-							this.disabled || Pt(e) && ! function(e) {
-								return Pt(e) && ("Enter" === e.key || " " === e.key)
+					}), St(this), ["pointerup", "keydown"].forEach(e => {
+						Object(Ue.a)(this, e, e => {
+							this.disabled || jt(e) && ! function(e) {
+								return jt(e) && ("Enter" === e.key || " " === e.key)
 							}(e) || this._handleButtonClick(e)
 						})
 					})
 				}
 				static get styles() {
-					return [Mt]
+					return [Pt]
 				}
 				static get parts() {
 					return []
@@ -3140,7 +3140,7 @@
 					e.has("pressed") && this._updateAriaPressedAttr()
 				}
 				_updateAriaPressedAttr() {
-					$(this, "aria-pressed", this.pressed ? "true" : "false")
+					F(this, "aria-pressed", this.pressed ? "true" : "false")
 				}
 				render() {
 					return this._renderDefaultSlot()
@@ -3152,18 +3152,18 @@
 					this.pressed = !this.pressed
 				}
 			}
-			xt([Object(n.b)({
+			Mt([Object(n.b)({
 				type: Boolean
-			})], At.prototype, "pressed", void 0), xt([Object(n.b)({
+			})], xt.prototype, "pressed", void 0), Mt([Object(n.b)({
 				type: Boolean,
 				reflect: !0
-			})], At.prototype, "disabled", void 0);
-			class Rt extends At {
+			})], xt.prototype, "disabled", void 0);
+			class At extends xt {
 				constructor() {
-					super(), this._mediaRemote = new Ct(this), Ae(this, "fullscreen", e => {
-						this.pressed = e, $(this, "fullscreen", e)
+					super(), this._mediaRemote = new kt(this), Ae(this, "fullscreen", e => {
+						this.pressed = e, F(this, "fullscreen", e)
 					}), Ae(this, "canFullscreen", e => {
-						$(this, "hidden", !e)
+						F(this, "hidden", !e)
 					})
 				}
 				connectedCallback() {
@@ -3181,10 +3181,10 @@
 				r > 3 && a && Object.defineProperty(t, i, a)
 			})([Object(n.b)({
 				attribute: "fullscreen-target"
-			})], Rt.prototype, "fullscreenTarget", void 0), F("vds-fullscreen-button", Rt);
-			class Lt extends At {
+			})], At.prototype, "fullscreenTarget", void 0), $("vds-fullscreen-button", At);
+			class Lt extends xt {
 				constructor() {
-					super(), this._mediaRemote = new Ct(this), this._volume = 1, this._muted = !1, this.disabled = !1, Ae(this, "volume", e => {
+					super(), this._mediaRemote = new kt(this), this._volume = 1, this._muted = !1, this.disabled = !1, Ae(this, "volume", e => {
 						this._volume = e, this._handleMutedChange()
 					}), Ae(this, "muted", e => {
 						this._muted = e, this._handleMutedChange()
@@ -3195,7 +3195,7 @@
 				}
 				_handleMutedChange() {
 					const e = this._muted || 0 === this._volume;
-					this.pressed = e, $(this, "muted", e)
+					this.pressed = e, F(this, "muted", e)
 				}
 				_handleButtonClick(e) {
 					this.disabled || (this.pressed ? this._mediaRemote.unmute(e) : this._mediaRemote.mute(e))
@@ -3210,11 +3210,11 @@
 			})([Object(n.b)({
 				type: Boolean,
 				reflect: !0
-			})], Lt.prototype, "disabled", void 0), F("vds-mute-button", Lt);
-			F("vds-play-button", class extends At {
+			})], Lt.prototype, "disabled", void 0), $("vds-mute-button", Lt);
+			$("vds-play-button", class extends xt {
 				constructor() {
-					super(), this._mediaRemote = new Ct(this), Ae(this, "paused", e => {
-						this.pressed = !e, $(this, "paused", e)
+					super(), this._mediaRemote = new kt(this), Ae(this, "paused", e => {
+						this.pressed = !e, F(this, "paused", e)
 					})
 				}
 				connectedCallback() {
@@ -3224,8 +3224,8 @@
 					this.disabled || (this.pressed ? this._mediaRemote.pause(e) : this._mediaRemote.play(e))
 				}
 			});
-			var Vt = i("./node_modules/@reddit/shreddit.styles/dist/index.js");
-			const Tt = s.b`
+			var Rt = i("./node_modules/@reddit/shreddit.styles/dist/index.js");
+			const Vt = s.b`
   .control {
     min-width: 48px;
     min-height: 48px;
@@ -3271,7 +3271,7 @@
     background-color: #82959b;
   }
 `;
-			var qt = function(e, t, i, s) {
+			var Tt = function(e, t, i, s) {
 				var n, r = arguments.length,
 					a = r < 3 ? t : null === s ? s = Object.getOwnPropertyDescriptor(t, i) : s;
 				if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) a = Reflect.decorate(e, t, i, s);
@@ -3279,13 +3279,13 @@
 					for (var o = e.length - 1; o >= 0; o--)(n = e[o]) && (a = (r < 3 ? n(a) : r > 3 ? n(t, i, a) : n(t, i)) || a);
 				return r > 3 && a && Object.defineProperty(t, i, a), a
 			};
-			const Dt = [1080, 720, 540, 480, 360, 240];
-			class It extends s.a {
+			const qt = [1080, 720, 540, 480, 360, 240];
+			class Dt extends s.a {
 				constructor() {
 					super(...arguments), this.showAutoplayToggle = !1, this.showOptions = !1, this.selectedLevel = -1
 				}
 				static get styles() {
-					return [Vt.a, Tt]
+					return [Rt.a, Vt]
 				}
 				connectedCallback() {
 					super.connectedCallback(), H(this, "aria-label", "Quality level")
@@ -3297,8 +3297,8 @@
 						...e,
 						levelIndex: t
 					})).sort((e, t) => t.height - e.height);
-					return Dt.map((e, i) => {
-						const s = t.filter(t => t.height >= e && (0 === i || t.height < Dt[i - 1])),
+					return qt.map((e, i) => {
+						const s = t.filter(t => t.height >= e && (0 === i || t.height < qt[i - 1])),
 							n = s[s.length - 1];
 						return n ? {
 							levelIndex: n.levelIndex,
@@ -3380,7 +3380,7 @@
 				}
 			}
 
-			function Ft(e, t) {
+			function It(e, t) {
 				const i = String(e),
 					s = i.length;
 				if (s < t) {
@@ -3390,7 +3390,7 @@
 			}
 			var $t;
 
-			function Ht(e) {
+			function Ft(e) {
 				const t = Math.trunc(e / 3600),
 					i = Math.trunc(e % 3600 / 60),
 					s = Math.trunc(e % 60),
@@ -3403,38 +3403,38 @@
 				}
 			}
 
-			function Bt(e) {
+			function Ht(e) {
 				let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
 					i = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
 				const {
 					hours: s,
 					minutes: n,
 					seconds: r
-				} = Ht(e), a = t ? Ft(s, 2) : s, o = Ft(n, 2), l = Ft(r, 2);
+				} = Ft(e), a = t ? It(s, 2) : s, o = It(n, 2), l = It(r, 2);
 				return s > 0 || i ? `${a}:${o}:${l}` : `${n}:${l}`
 			}
 
-			function Nt(e) {
+			function Bt(e) {
 				const t = [],
 					{
 						hours: i,
 						minutes: s,
 						seconds: n
-					} = Ht(e),
+					} = Ft(e),
 					r = (e, t) => 1 === e ? t : `${t}s`;
 				return i > 0 && t.push(`${i} ${r(i,"hour")}`), s > 0 && t.push(`${s} ${r(s,"minute")}`), (n > 0 || 0 === t.length) && t.push(`${n} ${r(n,"second")}`), t.join(", ")
 			}
-			qt([Object(n.b)({
+			Tt([Object(n.b)({
 					attribute: !1
-				})], It.prototype, "hlsEngine", void 0), qt([Object(n.b)({
+				})], Dt.prototype, "hlsEngine", void 0), Tt([Object(n.b)({
 					attribute: !1
-				})], It.prototype, "showAutoplayToggle", void 0), qt([Object(n.b)({
+				})], Dt.prototype, "showAutoplayToggle", void 0), Tt([Object(n.b)({
 					attribute: !1
-				})], It.prototype, "autoplayPref", void 0), qt([Object(n.d)()], It.prototype, "showOptions", void 0), qt([Object(n.d)()], It.prototype, "selectedLevel", void 0), F("vds-quality-switcher", It),
+				})], Dt.prototype, "autoplayPref", void 0), Tt([Object(n.d)()], Dt.prototype, "showOptions", void 0), Tt([Object(n.d)()], Dt.prototype, "selectedLevel", void 0), $("vds-quality-switcher", Dt),
 				function(e) {
 					e.Hours = "hours", e.Minutes = "minutes", e.Seconds = "seconds", e.Fraction = "fraction"
 				}($t || ($t = {}));
-			var Ut = function(e, t, i, s) {
+			var Nt = function(e, t, i, s) {
 				var n, r = arguments.length,
 					a = r < 3 ? t : null === s ? s = Object.getOwnPropertyDescriptor(t, i) : s;
 				if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) a = Reflect.decorate(e, t, i, s);
@@ -3442,7 +3442,7 @@
 					for (var o = e.length - 1; o >= 0; o--)(n = e[o]) && (a = (r < 3 ? n(a) : r > 3 ? n(t, i, a) : n(t, i)) || a);
 				return r > 3 && a && Object.defineProperty(t, i, a), a
 			};
-			class zt extends s.a {
+			class Ut extends s.a {
 				constructor() {
 					super(...arguments), this._disposal = new N.a, this._mediaStoreConsumer = xe.consume(this), this.__seconds = 0, this.type = "current", this.showHours = !1, this.padHours = !1, this.remainder = !1
 				}
@@ -3500,11 +3500,11 @@
 					})
 				}
 				_getFormattedTime() {
-					return Bt(this.__seconds, this.padHours, this.showHours)
+					return Ht(this.__seconds, this.padHours, this.showHours)
 				}
 			}
 
-			function Wt(e) {
+			function zt(e) {
 				let t;
 				const i = () => !P(t);
 
@@ -3518,16 +3518,16 @@
 					P(t) || (window.cancelAnimationFrame(t), t = void 0)
 				}, s.pending = i, s
 			}
-			Ut([Object(n.d)()], zt.prototype, "__seconds", void 0), Ut([Object(n.b)()], zt.prototype, "type", void 0), Ut([Object(n.b)({
+			Nt([Object(n.d)()], Ut.prototype, "__seconds", void 0), Nt([Object(n.b)()], Ut.prototype, "type", void 0), Nt([Object(n.b)({
 				attribute: "show-hours",
 				type: Boolean
-			})], zt.prototype, "showHours", void 0), Ut([Object(n.b)({
+			})], Ut.prototype, "showHours", void 0), Nt([Object(n.b)({
 				attribute: "pad-hours",
 				type: Boolean
-			})], zt.prototype, "padHours", void 0), Ut([Object(n.b)({
+			})], Ut.prototype, "padHours", void 0), Nt([Object(n.b)({
 				type: Boolean
-			})], zt.prototype, "remainder", void 0), F("vds-time", zt);
-			const Qt = we((function() {
+			})], Ut.prototype, "remainder", void 0), $("vds-time", Ut);
+			const Wt = we((function() {
 					const e = ne(!1),
 						t = ne(!1);
 					return {
@@ -3543,7 +3543,7 @@
 						})
 					}
 				})),
-				Kt = s.b`
+				Qt = s.b`
   * {
     box-sizing: border-box;
     touch-action: none;
@@ -3573,7 +3573,7 @@
     outline: 1px auto -webkit-focus-ring-color;
   }
 `;
-			var Yt, Gt, Jt = function(e, t, i, s) {
+			var Kt, Yt, Gt = function(e, t, i, s) {
 				var n, r = arguments.length,
 					a = r < 3 ? t : null === s ? s = Object.getOwnPropertyDescriptor(t, i) : s;
 				if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) a = Reflect.decorate(e, t, i, s);
@@ -3583,56 +3583,56 @@
 			};
 			! function(e) {
 				e[e.Left = -1] = "Left", e[e.ArrowLeft = -1] = "ArrowLeft", e[e.Up = -1] = "Up", e[e.ArrowUp = -1] = "ArrowUp", e[e.Right = 1] = "Right", e[e.ArrowRight = 1] = "ArrowRight", e[e.Down = 1] = "Down", e[e.ArrowDown = 1] = "ArrowDown"
-			}(Yt || (Yt = {})),
+			}(Kt || (Kt = {})),
 			function(e) {
 				e.Horizontal = "horizontal", e.Vertical = "vertical"
-			}(Gt || (Gt = {}));
-			class Xt extends s.a {
+			}(Yt || (Yt = {}));
+			class Jt extends s.a {
 				constructor() {
-					super(), this._sliderStoreProvider = Qt.provide(this), this.disabled = !1, this.value = 50, this._step = 1, this.direction = Gt.Horizontal, this._keyboardStep = 1, this.shiftKeyMultiplier = 5, this.customValueText = !1, this._mediaRemote = new Ct(this), this._disconnectDisposal = new N.a, this._handlePointerEnter = Object(ze.a)(this, "pointerenter", () => {
+					super(), this._sliderStoreProvider = Wt.provide(this), this.disabled = !1, this.value = 50, this._step = 1, this.direction = Yt.Horizontal, this._keyboardStep = 1, this.shiftKeyMultiplier = 5, this.customValueText = !1, this._mediaRemote = new kt(this), this._disconnectDisposal = new N.a, this._handlePointerEnter = Object(Ue.a)(this, "pointerenter", () => {
 						this.disabled || (this.setAttribute("pointing", ""), this.store.pointing.set(!0))
-					}), this._handlePointerMove = Object(ze.a)(this, "pointermove", e => {
+					}), this._handlePointerMove = Object(Ue.a)(this, "pointermove", e => {
 						if (this.disabled || this.isDragging) return;
 						const t = this._getValueBasedOnThumbPosition(e);
 						this.store.pointerValue.set(t), this._dispatchPointerValueChange(e)
-					}), this._handlePointerLeave = Object(ze.a)(this, "pointerleave", () => {
+					}), this._handlePointerLeave = Object(Ue.a)(this, "pointerleave", () => {
 						this.disabled || (this.removeAttribute("pointing"), this.store.pointing.set(!1))
-					}), this._handlePointerDown = Object(ze.a)(this, "pointerdown", e => {
+					}), this._handlePointerDown = Object(Ue.a)(this, "pointerdown", e => {
 						this.disabled || (this._startDragging(e), this._onDrag(e))
-					}), this._handleKeydown = Object(ze.a)(this, "keydown", e => {
+					}), this._handleKeydown = Object(Ue.a)(this, "keydown", e => {
 						if (this.disabled) return;
 						const {
 							key: t,
 							shiftKey: i
 						} = e;
-						if (!Object.keys(Yt).includes(t)) return;
-						const s = (i ? this.keyboardStep * this.shiftKeyMultiplier : this.keyboardStep) * Number(Yt[t]),
+						if (!Object.keys(Kt).includes(t)) return;
+						const s = (i ? this.keyboardStep * this.shiftKeyMultiplier : this.keyboardStep) * Number(Kt[t]),
 							n = (this.value + s) / this.step,
 							r = this.step * n;
 						this.value = this._getClampedValue(r), this._dispatchValueChange(e)
-					}), this._handleFillValueChange = Object(ze.a)(this, "vds-slider-value-change", this._updateFillCSSProps.bind(this)), this._handlePointerValueChange = Object(ze.a)(this, "vds-slider-pointer-value-change", this._updatePointerCSSProps.bind(this)), this._onDrag = Wt(e => {
+					}), this._handleFillValueChange = Object(Ue.a)(this, "vds-slider-value-change", this._updateFillCSSProps.bind(this)), this._handlePointerValueChange = Object(Ue.a)(this, "vds-slider-pointer-value-change", this._updatePointerCSSProps.bind(this)), this._onDrag = zt(e => {
 						if (this.disabled || !this.isDragging) return;
 						const t = this._getValueBasedOnThumbPosition(e);
 						this.store.pointerValue.set(t), this._dispatchPointerValueChange(e)
-					}), this._handleDocumentPointerUp = Object(ze.a)(this, "pointerup", e => {
+					}), this._handleDocumentPointerUp = Object(Ue.a)(this, "pointerup", e => {
 						!this.disabled && this.isDragging && this._stopDragging(e)
 					}, {
 						target: document
-					}), this._handleDocumentTouchMove = Object(ze.a)(this, "touchmove", e => {
+					}), this._handleDocumentTouchMove = Object(Ue.a)(this, "touchmove", e => {
 						!this.disabled && this.isDragging && e.preventDefault()
 					}, {
 						target: document,
 						passive: !1
-					}), this._handleDocumentPointerMove = Object(ze.a)(this, "pointermove", e => {
+					}), this._handleDocumentPointerMove = Object(Ue.a)(this, "pointermove", e => {
 						!this.disabled && this.isDragging && this._onDrag(e)
 					}, {
 						target: document
-					}), this._lastDispatchedValue = this.value, this._dispatchValueChange = Wt(e => {
+					}), this._lastDispatchedValue = this.value, this._dispatchValueChange = zt(e => {
 						this.value !== this._lastDispatchedValue && (this.dispatchEvent(z("vds-slider-value-change", {
 							detail: this.value,
 							triggerEvent: e
 						})), this._lastDispatchedValue = this.value)
-					}), this._lastDispatchedPointerValue = this.pointerValue, this._dispatchPointerValueChange = Wt(e => {
+					}), this._lastDispatchedPointerValue = this.pointerValue, this._dispatchPointerValueChange = zt(e => {
 						if (this.pointerValue === this._lastDispatchedPointerValue) return;
 						["vds-slider-pointer-value-change", this.isDragging && "vds-slider-drag-value-change"].forEach(t => {
 							t && this.dispatchEvent(z(t, {
@@ -3640,10 +3640,10 @@
 								triggerEvent: e
 							}))
 						}), this._lastDispatchedPointerValue = this.pointerValue
-					}), jt(this)
+					}), St(this)
 				}
 				static get styles() {
-					return [Kt]
+					return [Qt]
 				}
 				static get parts() {
 					return []
@@ -3699,11 +3699,11 @@
 				}
 				connectedCallback() {
 					super.connectedCallback(), this._setupAriaAttrs(), this._updateFillCSSProps(), this._updatePointerCSSProps(), this._disconnectDisposal.add(this.store.interactive.subscribe(e => {
-						$(this, "interactive", e)
+						F(this, "interactive", e)
 					}))
 				}
 				willUpdate(e) {
-					(e.has("value") || e.has("min") || e.has("max")) && (this.value = this._getClampedValue(this.value), this.store.value.set(this.value), this._updateFillCSSProps(), this._dispatchValueChange()), e.has("disabled") && this.disabled && (this.store.dragging.set(!1), this.store.pointing.set(!1), this.removeAttribute("dragging"), this.removeAttribute("pointing"), this.removeAttribute("interactive"), $(this, "aria-disabled", this.disabled)), this.customValueText || this._updateAriaValueAttrs(), super.willUpdate(e)
+					(e.has("value") || e.has("min") || e.has("max")) && (this.value = this._getClampedValue(this.value), this.store.value.set(this.value), this._updateFillCSSProps(), this._dispatchValueChange()), e.has("disabled") && this.disabled && (this.store.dragging.set(!1), this.store.pointing.set(!1), this.removeAttribute("dragging"), this.removeAttribute("pointing"), this.removeAttribute("interactive"), F(this, "aria-disabled", this.disabled)), this.customValueText || this._updateAriaValueAttrs(), super.willUpdate(e)
 				}
 				disconnectedCallback() {
 					this._onDrag.cancel(), this._disconnectDisposal.empty(), super.disconnectedCallback()
@@ -3724,7 +3724,7 @@
 					return s.c`<slot></slot>`
 				}
 				_setupAriaAttrs() {
-					H(this, "role", "slider"), H(this, "tabindex", "0"), H(this, "aria-orientation", this.direction === Gt.Vertical ? "vertical" : "horizontal"), H(this, "autocomplete", "off")
+					H(this, "role", "slider"), H(this, "tabindex", "0"), H(this, "aria-orientation", this.direction === Yt.Vertical ? "vertical" : "horizontal"), H(this, "autocomplete", "off")
 				}
 				_updateAriaValueAttrs() {
 					this.setAttribute("aria-valuemin", this._getValueMin()), this.setAttribute("aria-valuenow", this._getValueNow()), this.setAttribute("aria-valuemax", this._getValueMax()), this.setAttribute("aria-valuetext", this._getValueText())
@@ -3772,7 +3772,7 @@
 					return this.min + n
 				}
 				_getValueBasedOnThumbPosition(e) {
-					if (this.direction === Gt.Vertical) {
+					if (this.direction === Yt.Vertical) {
 						const t = e.clientY,
 							{
 								bottom: i,
@@ -3791,37 +3791,37 @@
 					}
 				}
 			}
-			Jt([Object(n.b)({
+			Gt([Object(n.b)({
 				reflect: !0,
 				type: Number
-			})], Xt.prototype, "min", null), Jt([Object(n.b)({
+			})], Jt.prototype, "min", null), Gt([Object(n.b)({
 				reflect: !0,
 				type: Number
-			})], Xt.prototype, "max", null), Jt([Object(n.b)({
+			})], Jt.prototype, "max", null), Gt([Object(n.b)({
 				reflect: !0,
 				type: Boolean
-			})], Xt.prototype, "disabled", void 0), Jt([Object(n.b)({
+			})], Jt.prototype, "disabled", void 0), Gt([Object(n.b)({
 				reflect: !0,
 				type: Number
-			})], Xt.prototype, "value", void 0), Jt([Object(n.b)({
+			})], Jt.prototype, "value", void 0), Gt([Object(n.b)({
 				type: Number,
 				reflect: !0
-			})], Xt.prototype, "step", null), Jt([Object(n.b)({
+			})], Jt.prototype, "step", null), Gt([Object(n.b)({
 				attribute: "direction",
-				type: Gt
-			})], Xt.prototype, "direction", void 0), Jt([Object(n.b)({
+				type: Yt
+			})], Jt.prototype, "direction", void 0), Gt([Object(n.b)({
 				attribute: "keyboard-step",
 				type: Number,
 				reflect: !0
-			})], Xt.prototype, "keyboardStep", null), Jt([Object(n.b)({
+			})], Jt.prototype, "keyboardStep", null), Gt([Object(n.b)({
 				attribute: "shift-key-multiplier",
 				type: Number
-			})], Xt.prototype, "shiftKeyMultiplier", void 0), Jt([Object(n.b)({
+			})], Jt.prototype, "shiftKeyMultiplier", void 0), Gt([Object(n.b)({
 				type: Boolean,
 				attribute: "custom-value-text"
-			})], Xt.prototype, "customValueText", void 0);
-			const Zt = s.b``;
-			var ei = function(e, t, i, s) {
+			})], Jt.prototype, "customValueText", void 0);
+			const Xt = s.b``;
+			var Zt = function(e, t, i, s) {
 				var n, r = arguments.length,
 					a = r < 3 ? t : null === s ? s = Object.getOwnPropertyDescriptor(t, i) : s;
 				if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) a = Reflect.decorate(e, t, i, s);
@@ -3829,17 +3829,17 @@
 					for (var o = e.length - 1; o >= 0; o--)(n = e[o]) && (a = (r < 3 ? n(a) : r > 3 ? n(t, i, a) : n(t, i)) || a);
 				return r > 3 && a && Object.defineProperty(t, i, a), a
 			};
-			class ti extends Xt {
+			class ei extends Jt {
 				constructor() {
-					super(), this._step = .1, this.value = 0, this.valueText = "{currentTime} out of {duration}", this.pauseWhileDragging = !1, this.seekingRequestThrottle = 100, this.__mediaDuration = 0, this.__mediaPaused = !0, this._handleSliderDragStart = Object(ze.a)(this, "vds-slider-drag-start", e => {
+					super(), this._step = .1, this.value = 0, this.valueText = "{currentTime} out of {duration}", this.pauseWhileDragging = !1, this.seekingRequestThrottle = 100, this.__mediaDuration = 0, this.__mediaPaused = !0, this._handleSliderDragStart = Object(Ue.a)(this, "vds-slider-drag-start", e => {
 						this._togglePlaybackWhileDragging(e)
-					}), this._handleSliderValueChange = Object(ze.a)(this, "vds-slider-value-change", e => {
-						Pt(e.originEvent) && (this._dispatchSeekingRequest.cancel(), this._mediaRemote.seek(this.value, e))
-					}), this._handleSliderDragValueChange = Object(ze.a)(this, "vds-slider-drag-value-change", e => {
+					}), this._handleSliderValueChange = Object(Ue.a)(this, "vds-slider-value-change", e => {
+						jt(e.originEvent) && (this._dispatchSeekingRequest.cancel(), this._mediaRemote.seek(this.value, e))
+					}), this._handleSliderDragValueChange = Object(Ue.a)(this, "vds-slider-drag-value-change", e => {
 						this._dispatchSeekingRequest(e)
-					}), this._handleSliderDragEnd = Object(ze.a)(this, "vds-slider-drag-end", e => {
+					}), this._handleSliderDragEnd = Object(Ue.a)(this, "vds-slider-drag-end", e => {
 						this._dispatchSeekingRequest.cancel(), this._mediaRemote.seek(this.value, e), this._togglePlaybackWhileDragging(e)
-					}), this._dispatchSeekingRequest = We(e => {
+					}), this._dispatchSeekingRequest = ze(e => {
 						this._mediaRemote.seeking(this.value, e)
 					}, this.seekingRequestThrottle), this._wasPlayingBeforeDragStart = !1, Ae(this, "currentTime", e => {
 						this.value = e
@@ -3850,7 +3850,7 @@
 					})
 				}
 				static get styles() {
-					return [super.styles, Zt]
+					return [super.styles, Xt]
 				}
 				connectedCallback() {
 					super.connectedCallback(), H(this, "aria-label", "Media time")
@@ -3876,7 +3876,7 @@
 					return `${Math.round(this.fillPercent)}%`
 				}
 				_getValueText() {
-					return this.valueText.replace("{currentTime}", Nt(this.value)).replace("{duration}", Nt(this.__mediaDuration))
+					return this.valueText.replace("{currentTime}", Bt(this.value)).replace("{duration}", Bt(this.__mediaDuration))
 				}
 				_getValueMax() {
 					return "100%"
@@ -3885,23 +3885,23 @@
 					this.pauseWhileDragging && (this.isDragging && !this.__mediaPaused ? (this._wasPlayingBeforeDragStart = !0, this._mediaRemote.pause(e)) : this._wasPlayingBeforeDragStart && !this.isDragging && this.__mediaPaused && (this._wasPlayingBeforeDragStart = !1, this._mediaRemote.play(e)))
 				}
 			}
-			ei([Object(n.b)({
+			Zt([Object(n.b)({
 				attribute: !1,
 				state: !0
-			})], ti.prototype, "value", void 0), ei([Object(n.b)({
+			})], ei.prototype, "value", void 0), Zt([Object(n.b)({
 				attribute: !1
-			})], ti.prototype, "min", null), ei([Object(n.b)({
+			})], ei.prototype, "min", null), Zt([Object(n.b)({
 				attribute: !1
-			})], ti.prototype, "max", null), ei([Object(n.b)({
+			})], ei.prototype, "max", null), Zt([Object(n.b)({
 				attribute: "value-text"
-			})], ti.prototype, "valueText", void 0), ei([Object(n.b)({
+			})], ei.prototype, "valueText", void 0), Zt([Object(n.b)({
 				attribute: "pause-while-dragging",
 				type: Boolean
-			})], ti.prototype, "pauseWhileDragging", void 0), ei([Object(n.b)({
+			})], ei.prototype, "pauseWhileDragging", void 0), Zt([Object(n.b)({
 				attribute: "seeking-request-throttle",
 				type: Number
-			})], ti.prototype, "seekingRequestThrottle", void 0), ei([Object(n.d)()], ti.prototype, "__mediaDuration", void 0), ei([Object(n.d)()], ti.prototype, "__mediaPaused", void 0), F("vds-time-slider", ti);
-			var ii = function(e, t, i, s) {
+			})], ei.prototype, "seekingRequestThrottle", void 0), Zt([Object(n.d)()], ei.prototype, "__mediaDuration", void 0), Zt([Object(n.d)()], ei.prototype, "__mediaPaused", void 0), $("vds-time-slider", ei);
+			var ti = function(e, t, i, s) {
 				var n, r = arguments.length,
 					a = r < 3 ? t : null === s ? s = Object.getOwnPropertyDescriptor(t, i) : s;
 				if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) a = Reflect.decorate(e, t, i, s);
@@ -3909,9 +3909,9 @@
 					for (var o = e.length - 1; o >= 0; o--)(n = e[o]) && (a = (r < 3 ? n(a) : r > 3 ? n(t, i, a) : n(t, i)) || a);
 				return r > 3 && a && Object.defineProperty(t, i, a), a
 			};
-			class si extends s.a {
+			class ii extends s.a {
 				constructor() {
-					super(...arguments), this._disposal = new N.a, this._sliderStoreConsumer = Qt.consume(this), this.__value = 0, this.type = "current", this.showHours = !1, this.padHours = !1, this.decimalPlaces = 2
+					super(...arguments), this._disposal = new N.a, this._sliderStoreConsumer = Wt.consume(this), this.__value = 0, this.type = "current", this.showHours = !1, this.padHours = !1, this.decimalPlaces = 2
 				}
 				static get styles() {
 					return [s.b`
@@ -3968,73 +3968,73 @@
 					return `${_e(this.__value,this.decimalPlaces)}%`
 				}
 				_getTimeFormat() {
-					return Bt(this.__value, this.padHours, this.showHours)
+					return Ht(this.__value, this.padHours, this.showHours)
 				}
 			}
-			ii([Object(n.d)()], si.prototype, "__value", void 0), ii([Object(n.b)()], si.prototype, "type", void 0), ii([Object(n.b)()], si.prototype, "format", void 0), ii([Object(n.b)({
+			ti([Object(n.d)()], ii.prototype, "__value", void 0), ti([Object(n.b)()], ii.prototype, "type", void 0), ti([Object(n.b)()], ii.prototype, "format", void 0), ti([Object(n.b)({
 				attribute: "show-hours",
 				type: Boolean
-			})], si.prototype, "showHours", void 0), ii([Object(n.b)({
+			})], ii.prototype, "showHours", void 0), ti([Object(n.b)({
 				attribute: "pad-hours",
 				type: Boolean
-			})], si.prototype, "padHours", void 0), ii([Object(n.b)({
+			})], ii.prototype, "padHours", void 0), ti([Object(n.b)({
 				attribute: "decimal-places",
 				type: Number
-			})], si.prototype, "decimalPlaces", void 0), F("vds-slider-value-text", si);
+			})], ii.prototype, "decimalPlaces", void 0), $("vds-slider-value-text", ii);
 			const {
-				H: ni
-			} = r.a, ri = e => void 0 === e.strings, ai = (e, t) => {
+				H: si
+			} = r.a, ni = e => void 0 === e.strings, ri = (e, t) => {
 				var i, s;
 				const n = e._$AN;
 				if (void 0 === n) return !1;
-				for (const r of n) null === (s = (i = r)._$AO) || void 0 === s || s.call(i, t, !1), ai(r, t);
+				for (const r of n) null === (s = (i = r)._$AO) || void 0 === s || s.call(i, t, !1), ri(r, t);
 				return !0
-			}, oi = e => {
+			}, ai = e => {
 				let t, i;
 				do {
 					if (void 0 === (t = e._$AM)) break;
 					(i = t._$AN).delete(e), e = t
 				} while (0 === (null == i ? void 0 : i.size))
-			}, li = e => {
+			}, oi = e => {
 				for (let t; t = e._$AM; e = t) {
 					let i = t._$AN;
 					if (void 0 === i) t._$AN = i = new Set;
 					else if (i.has(e)) break;
-					i.add(e), ci(t)
+					i.add(e), hi(t)
 				}
 			};
 
-			function di(e) {
-				void 0 !== this._$AN ? (oi(this), this._$AM = e, li(this)) : this._$AM = e
+			function li(e) {
+				void 0 !== this._$AN ? (ai(this), this._$AM = e, oi(this)) : this._$AM = e
 			}
 
-			function hi(e, t = !1, i = 0) {
+			function di(e, t = !1, i = 0) {
 				const s = this._$AH,
 					n = this._$AN;
 				if (void 0 !== n && 0 !== n.size)
 					if (t)
 						if (Array.isArray(s))
-							for (let r = i; r < s.length; r++) ai(s[r], !1), oi(s[r]);
-						else null != s && (ai(s, !1), oi(s));
-				else ai(this, e)
+							for (let r = i; r < s.length; r++) ri(s[r], !1), ai(s[r]);
+						else null != s && (ri(s, !1), ai(s));
+				else ri(this, e)
 			}
-			const ci = e => {
+			const hi = e => {
 				var t, i, s, n;
-				e.type == d.b.CHILD && (null !== (t = (s = e)._$AP) && void 0 !== t || (s._$AP = hi), null !== (i = (n = e)._$AQ) && void 0 !== i || (n._$AQ = di))
+				e.type == d.b.CHILD && (null !== (t = (s = e)._$AP) && void 0 !== t || (s._$AP = di), null !== (i = (n = e)._$AQ) && void 0 !== i || (n._$AQ = li))
 			};
-			class ui extends d.a {
+			class ci extends d.a {
 				constructor() {
 					super(...arguments), this._$AN = void 0
 				}
 				_$AT(e, t, i) {
-					super._$AT(e, t, i), li(this), this.isConnected = e._$AU
+					super._$AT(e, t, i), oi(this), this.isConnected = e._$AU
 				}
 				_$AO(e, t = !0) {
 					var i, s;
-					e !== this.isConnected && (this.isConnected = e, e ? null === (i = this.reconnected) || void 0 === i || i.call(this) : null === (s = this.disconnected) || void 0 === s || s.call(this)), t && (ai(this, e), oi(this))
+					e !== this.isConnected && (this.isConnected = e, e ? null === (i = this.reconnected) || void 0 === i || i.call(this) : null === (s = this.disconnected) || void 0 === s || s.call(this)), t && (ri(this, e), ai(this))
 				}
 				setValue(e) {
-					if (ri(this._$Ct)) this._$Ct._$AI(e, this);
+					if (ni(this._$Ct)) this._$Ct._$AI(e, this);
 					else {
 						const t = [...this._$Ct._$AH];
 						t[this._$Ci] = e, this._$Ct._$AI(t, this, 0)
@@ -4043,10 +4043,10 @@
 				disconnected() {}
 				reconnected() {}
 			}
-			const pi = () => new vi;
-			class vi {}
-			const _i = new WeakMap,
-				gi = Object(d.c)(class extends ui {
+			const ui = () => new pi;
+			class pi {}
+			const vi = new WeakMap,
+				_i = Object(d.c)(class extends ci {
 					render(e) {
 						return r.d
 					}
@@ -4059,13 +4059,13 @@
 						var t;
 						if ("function" == typeof this.Y) {
 							const i = null !== (t = this.ct) && void 0 !== t ? t : globalThis;
-							let s = _i.get(i);
-							void 0 === s && (s = new WeakMap, _i.set(i, s)), void 0 !== s.get(this.Y) && this.Y.call(this.ct, void 0), s.set(this.Y, e), void 0 !== e && this.Y.call(this.ct, e)
+							let s = vi.get(i);
+							void 0 === s && (s = new WeakMap, vi.set(i, s)), void 0 !== s.get(this.Y) && this.Y.call(this.ct, void 0), s.set(this.Y, e), void 0 !== e && this.Y.call(this.ct, e)
 						} else this.Y.value = e
 					}
 					get lt() {
 						var e, t, i;
-						return "function" == typeof this.Y ? null === (t = _i.get(null !== (e = this.ct) && void 0 !== e ? e : globalThis)) || void 0 === t ? void 0 : t.get(this.Y) : null === (i = this.Y) || void 0 === i ? void 0 : i.value
+						return "function" == typeof this.Y ? null === (t = vi.get(null !== (e = this.ct) && void 0 !== e ? e : globalThis)) || void 0 === t ? void 0 : t.get(this.Y) : null === (i = this.Y) || void 0 === i ? void 0 : i.value
 					}
 					disconnected() {
 						this.lt === this.dt && this.rt(void 0)
@@ -4074,7 +4074,7 @@
 						this.rt(this.dt)
 					}
 				});
-			var mi = function(e, t, i, s) {
+			var gi = function(e, t, i, s) {
 				var n, r = arguments.length,
 					a = r < 3 ? t : null === s ? s = Object.getOwnPropertyDescriptor(t, i) : s;
 				if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) a = Reflect.decorate(e, t, i, s);
@@ -4082,9 +4082,9 @@
 					for (var o = e.length - 1; o >= 0; o--)(n = e[o]) && (a = (r < 3 ? n(a) : r > 3 ? n(t, i, a) : n(t, i)) || a);
 				return r > 3 && a && Object.defineProperty(t, i, a), a
 			};
-			class bi extends s.a {
+			class mi extends s.a {
 				constructor() {
-					super(), this._videoRef = pi(), this.__canPlay = !1, this.__hasError = !1, le(this, Qt, "pointerValue", e => {
+					super(), this._videoRef = ui(), this.__canPlay = !1, this.__hasError = !1, le(this, Wt, "pointerValue", e => {
 						this._updateCurrentTime(e)
 					})
 				}
@@ -4128,20 +4128,20 @@
         src="${e=this.src,a(""===e||"undefined"===e?void 0:e)}"
         @canplay="${this._handleCanPlay}"
         @error="${this._handleError}"
-        ${gi(this._videoRef)}
+        ${_i(this._videoRef)}
       ></video>
     `;
 					var e
 				}
 				async _handleCanPlay(e) {
-					this.__canPlay = !0, this.setAttribute("video-can-play", ""), pt(this, e)
+					this.__canPlay = !0, this.setAttribute("video-can-play", ""), ut(this, e)
 				}
 				_handleError(e) {
-					this.__hasError = !0, this.setAttribute("video-error", ""), pt(this, e)
+					this.__hasError = !0, this.setAttribute("video-error", ""), ut(this, e)
 				}
 			}
-			mi([Object(n.b)()], bi.prototype, "src", void 0), mi([Object(n.d)()], bi.prototype, "__canPlay", void 0), mi([Object(n.d)()], bi.prototype, "__hasError", void 0), F("vds-slider-video", bi);
-			var yi = function(e, t, i, s) {
+			gi([Object(n.b)()], mi.prototype, "src", void 0), gi([Object(n.d)()], mi.prototype, "__canPlay", void 0), gi([Object(n.d)()], mi.prototype, "__hasError", void 0), $("vds-slider-video", mi);
+			var bi = function(e, t, i, s) {
 				var n, r = arguments.length,
 					a = r < 3 ? t : null === s ? s = Object.getOwnPropertyDescriptor(t, i) : s;
 				if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) a = Reflect.decorate(e, t, i, s);
@@ -4149,9 +4149,9 @@
 					for (var o = e.length - 1; o >= 0; o--)(n = e[o]) && (a = (r < 3 ? n(a) : r > 3 ? n(t, i, a) : n(t, i)) || a);
 				return r > 3 && a && Object.defineProperty(t, i, a), a
 			};
-			class fi extends Xt {
+			class yi extends Jt {
 				constructor() {
-					super(), this.value = 100, this._handleSliderValueChange = Object(ze.a)(this, "vds-slider-value-change", this._changeVolume.bind(this)), this._handleSliderDragValueChange = Object(ze.a)(this, "vds-slider-drag-value-change", this._changeVolume.bind(this)), Ae(this, "volume", e => {
+					super(), this.value = 100, this._handleSliderValueChange = Object(Ue.a)(this, "vds-slider-value-change", this._changeVolume.bind(this)), this._handleSliderDragValueChange = Object(Ue.a)(this, "vds-slider-drag-value-change", this._changeVolume.bind(this)), Ae(this, "volume", e => {
 						this.value = 100 * Math.sqrt(e)
 					})
 				}
@@ -4172,15 +4172,15 @@
 					this._mediaRemote.changeVolume(i, e)
 				}
 			}
-			yi([Object(n.b)({
+			bi([Object(n.b)({
 				attribute: !1
-			})], fi.prototype, "min", null), yi([Object(n.b)({
+			})], yi.prototype, "min", null), bi([Object(n.b)({
 				attribute: !1
-			})], fi.prototype, "max", null), yi([Object(n.b)({
+			})], yi.prototype, "max", null), bi([Object(n.b)({
 				attribute: !1,
 				state: !0
-			})], fi.prototype, "value", void 0), F("vds-volume-slider", fi);
-			var wi = s.b`
+			})], yi.prototype, "value", void 0), $("vds-volume-slider", yi);
+			var fi = s.b`
   :host {
     --control-backdrop: rgba(0, 0, 0, 0.6);
     --slider-fg: #fff;
@@ -4453,11 +4453,11 @@
     stroke-dashoffset: 50;
   }
 `;
-			const Ei = {
+			const wi = {
 				capLevelToPlayerSize: !0,
 				startLevel: -1
 			};
-			var Oi = function(e, t, i, s) {
+			var Ei = function(e, t, i, s) {
 				var n, r = arguments.length,
 					a = r < 3 ? t : null === s ? s = Object.getOwnPropertyDescriptor(t, i) : s;
 				if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) a = Reflect.decorate(e, t, i, s);
@@ -4465,7 +4465,7 @@
 					for (var o = e.length - 1; o >= 0; o--)(n = e[o]) && (a = (r < 3 ? n(a) : r > 3 ? n(t, i, a) : n(t, i)) || a);
 				return r > 3 && a && Object.defineProperty(t, i, a), a
 			};
-			let ki = class extends s.a {
+			let Oi = class extends s.a {
 				constructor() {
 					super(...arguments), this.hlsLibrary = () => i.e(3).then(i.t.bind(null, "./node_modules/@reddit/shreddit.components.shreddit-player/node_modules/hls.js/dist/hls.min.js", 7)), this.autoplay = !1, this.autoplayPref = !1, this.showAutoplayToggle = !1, this.gif = !1, this.playOutOfViewport = !1, this.ui = "mobile", this.objectFit = "contain", this.mediaLoadRequested = !1, this.disableMuteButton = !1, this.handleLoadMediaClick = () => {
 						var e;
@@ -4473,7 +4473,7 @@
 					}
 				}
 				static get styles() {
-					return [Vt.a, wi]
+					return [Rt.a, fi]
 				}
 				connectedCallback() {
 					super.connectedCallback(), requestAnimationFrame(() => {
@@ -4739,7 +4739,7 @@
           <vds-media class="h-full w-full ${`${i}`}">
             <vds-hls
               class="h-full w-full"
-              .hlsConfig="${Ei}"
+              .hlsConfig="${wi}"
               .hlsLibrary="${this.hlsLibrary}"
               preload="${this.autoplay?"auto":"none"}"
               loading="${this.autoplay?"lazy":"custom"}"
@@ -4767,36 +4767,36 @@
     `
 				}
 			};
-			Oi([Object(n.b)({
+			Ei([Object(n.b)({
 				type: String,
 				attribute: "src"
-			})], ki.prototype, "src", void 0), Oi([Object(n.b)({
+			})], Oi.prototype, "src", void 0), Ei([Object(n.b)({
 				type: Boolean,
 				attribute: "autoplay",
 				reflect: !0
-			})], ki.prototype, "autoplay", void 0), Oi([Object(n.b)({
+			})], Oi.prototype, "autoplay", void 0), Ei([Object(n.b)({
 				type: Boolean,
 				attribute: "autoplay-pref"
-			})], ki.prototype, "autoplayPref", void 0), Oi([Object(n.b)({
+			})], Oi.prototype, "autoplayPref", void 0), Ei([Object(n.b)({
 				type: Boolean,
 				attribute: "show-autoplay-toggle"
-			})], ki.prototype, "showAutoplayToggle", void 0), Oi([Object(n.b)({
+			})], Oi.prototype, "showAutoplayToggle", void 0), Ei([Object(n.b)({
 				type: Boolean,
 				attribute: "gif",
 				reflect: !0
-			})], ki.prototype, "gif", void 0), Oi([Object(n.b)({
+			})], Oi.prototype, "gif", void 0), Ei([Object(n.b)({
 				type: String,
 				attribute: "preview"
-			})], ki.prototype, "preview", void 0), Oi([Object(n.b)({
+			})], Oi.prototype, "preview", void 0), Ei([Object(n.b)({
 				type: Boolean,
 				attribute: "play-out-of-viewport"
-			})], ki.prototype, "playOutOfViewport", void 0), Oi([Object(n.b)({
+			})], Oi.prototype, "playOutOfViewport", void 0), Ei([Object(n.b)({
 				type: String,
 				attribute: "ui"
-			})], ki.prototype, "ui", void 0), Oi([Object(n.b)({
+			})], Oi.prototype, "ui", void 0), Ei([Object(n.b)({
 				type: String,
 				attribute: "object-fit"
-			})], ki.prototype, "objectFit", void 0), Oi([Object(n.d)()], ki.prototype, "mediaLoadRequested", void 0), Oi([Object(n.d)()], ki.prototype, "hlsEngine", void 0), Oi([Object(n.d)()], ki.prototype, "disableMuteButton", void 0), Oi([Object(n.d)()], ki.prototype, "mediaError", void 0), Oi([Object(n.c)("vds-hls")], ki.prototype, "hlsElement", void 0), Oi([Object(n.c)("vds-volume-slider")], ki.prototype, "volumeSlider", void 0), ki = Oi([Object(n.a)("shreddit-player")], ki)
+			})], Oi.prototype, "objectFit", void 0), Ei([Object(n.d)()], Oi.prototype, "mediaLoadRequested", void 0), Ei([Object(n.d)()], Oi.prototype, "hlsEngine", void 0), Ei([Object(n.d)()], Oi.prototype, "disableMuteButton", void 0), Ei([Object(n.d)()], Oi.prototype, "mediaError", void 0), Ei([Object(n.c)("vds-hls")], Oi.prototype, "hlsElement", void 0), Ei([Object(n.c)("vds-volume-slider")], Oi.prototype, "volumeSlider", void 0), Oi = Ei([Object(n.a)("shreddit-player")], Oi)
 		},
 		"./node_modules/@reddit/shreddit.components.shreddit-player/dist/media-telemetry-observer/media-telemetry-observer.js": function(e, t, i) {
 			"use strict";
@@ -4858,8 +4858,8 @@
 					"vds-seeked": v("ad-media-seeked")
 				}];
 			var g, m, b, y, f, w, E, O, k, C, S, j, P, M, x, A = i("./node_modules/uuid/dist/esm-browser/v4.js"),
-				R = i("./node_modules/@reddit/vidstack.components.player/dist/src/media/MediaType.js");
-			class L {
+				L = i("./node_modules/@reddit/vidstack.components.player/dist/src/media/MediaType.js");
+			class R {
 				constructor(e) {
 					this._timer = null, this._expectedAt = 1 / 0, this._handleInterval = () => {
 						var e;
@@ -4999,7 +4999,7 @@
 			function D(e, t, i) {
 				return {
 					...e,
-					media: F(t, i),
+					media: $(t, i),
 					playback: I(t, i)
 				}
 			}
@@ -5030,7 +5030,7 @@
 					id: t.id,
 					is_live: t._live,
 					is_looped: t.hasLooped,
-					state: $(e),
+					state: F(e),
 					error: H(e),
 					watch_duration_ms: Math.round(t._stopwatch.time),
 					heartbeat_duration_ms: null,
@@ -5049,7 +5049,7 @@
 				}
 			}
 
-			function F(e, t) {
+			function $(e, t) {
 				var i, s, n, r, a, o;
 				const {
 					levels: l,
@@ -5105,7 +5105,7 @@
 				}
 			}
 
-			function $(e) {
+			function F(e) {
 				var t;
 				const {
 					waiting: i,
@@ -5131,7 +5131,7 @@
 			}
 
 			function B(e) {
-				return $(e) === f.Playing
+				return F(e) === f.Playing
 			}
 
 			function N(e) {
@@ -5186,9 +5186,9 @@
 					var i, s, n, r;
 					this._handleHeartbeat = e => {
 						this._validateHeartbeat(e) && this._watch()
-					}, this._validateHeartbeat = e => e.latency < l, this._mediaOrigin = null == t ? void 0 : null === (i = t.media) || void 0 === i ? void 0 : i.origin, this._playbackPlayerType = null == t ? void 0 : null === (s = t.playback) || void 0 === s ? void 0 : s.playerType, this._player = e, this._pulse = new L({
+					}, this._validateHeartbeat = e => e.latency < l, this._mediaOrigin = null == t ? void 0 : null === (i = t.media) || void 0 === i ? void 0 : i.origin, this._playbackPlayerType = null == t ? void 0 : null === (s = t.playback) || void 0 === s ? void 0 : s.playerType, this._player = e, this._pulse = new R({
 						interval: o
-					}), this._stopwatch = new V, this._firstPlayTrusted = !1, this.id = Object(A.a)(), this._lastContinueReason = x.Auto, this._live = (null === (n = this._player.state) || void 0 === n ? void 0 : n.mediaType) === R.a.LiveVideo, this.hasLooped = !1, this._playedInFullscreen = !1, this._playedWithSound = !1, this.startedAt = 0, this._waiting = !1, this._sequenceNumber = -1, this._pulse.onHeartbeat(this._handleHeartbeat), this._watchPercentThresholdObserver = new T(d), this._watchSecondsThresholdObserver = new T(h);
+					}), this._stopwatch = new V, this._firstPlayTrusted = !1, this.id = Object(A.a)(), this._lastContinueReason = x.Auto, this._live = (null === (n = this._player.state) || void 0 === n ? void 0 : n.mediaType) === L.a.LiveVideo, this.hasLooped = !1, this._playedInFullscreen = !1, this._playedWithSound = !1, this.startedAt = 0, this._waiting = !1, this._sequenceNumber = -1, this._pulse.onHeartbeat(this._handleHeartbeat), this._watchPercentThresholdObserver = new T(d), this._watchSecondsThresholdObserver = new T(h);
 					const a = N(this._player),
 						{
 							fullscreen: p = !1
@@ -5936,4 +5936,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~shreddit-player.39000befb972f9c6e4d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~shreddit-player.68435c10f0d336afe561.js.map

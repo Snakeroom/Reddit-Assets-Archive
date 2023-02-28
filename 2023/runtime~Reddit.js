@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.2a45fc8fc3238ba0ab33.js
-// Retrieved at 2/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.7a62f26bd6b0bf019e26.js
+// Retrieved at 2/27/2023, 8:10:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, i = o[0], s = o[1], c = o[2], l = 0, b = []; l < i.length; l++) n = i[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1492,14 +1492,14 @@
 						"reddit-components-PostCreationForm-PredictionEditor-InactivityModal": "c69b240b5733aa348258",
 						"reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal": "cd11803960dd6c0af1e9",
 						"translations/bn_BD-json": "500c45929efbf5039377",
-						"translations/de_DE-json": "a52c2b5aadc29b21a893",
-						"translations/es_ES-json": "740d2140876953a3222b",
+						"translations/de_DE-json": "30967ce333d21ef3216d",
+						"translations/es_ES-json": "ac52cfb935a90d0b9398",
 						"translations/es_MX-json": "580d2a304689097c42f0",
-						"translations/fr_FR-json": "0dfd1ca3f88f72a3d118",
+						"translations/fr_FR-json": "8ce7322d41b5afb95ea1",
 						"translations/hi_IN-json": "61ad7cbe148b6dcacf82",
 						"translations/it_IT-json": "f4c3066beb79b009b13f",
 						"translations/pseudo-json": "3f0f121fa9945f03a37a",
-						"translations/pt_BR-json": "22d12e1ea2a9fc7c49f9",
+						"translations/pt_BR-json": "72bcfb27c28017bbea8c",
 						"translations/pt_PT-json": "1fd8f066c8dcbb010bcc",
 						"vendors~AdminPanel": "9abedef941b07fd50b75",
 						AdminPanel: "a3ef0f9cafbbc3080e3a",
@@ -1599,7 +1599,7 @@
 						"vendors~devPlatform-components-AdminPanel-Utilities-DevPlatformConfig~devPlatform-components-ContextActions": "7ef5aced8364ad42333e",
 						"devPlatform-components-ContextActions": "cee75b944d0c1e45a5e2",
 						"vendors~mod-nav~shreddit-player": "12b6aca94b429d9425a0",
-						"vendors~shreddit-player": "39000befb972f9c6e4d9",
+						"vendors~shreddit-player": "68435c10f0d336afe561",
 						ContributorRequestButton: "e2cd43543c7809ff2361",
 						SubredditSearchCarousel: "747f216a25b192290e86",
 						CommunityTopicSurvey: "eb051a71fd4f59b03b7f",
@@ -1770,4 +1770,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.2a45fc8fc3238ba0ab33.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.7a62f26bd6b0bf019e26.js.map
