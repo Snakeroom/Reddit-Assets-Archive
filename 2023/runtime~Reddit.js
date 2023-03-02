@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.004ae6702c9b6fdce920.js
-// Retrieved at 2/28/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.79313690d8ef8e6e6cf6.js
+// Retrieved at 3/2/2023, 5:00:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, i = o[0], s = o[1], c = o[2], l = 0, b = []; l < i.length; l++) n = i[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1493,9 +1493,9 @@
 						"reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal": "cd11803960dd6c0af1e9",
 						"translations/bn_BD-json": "500c45929efbf5039377",
 						"translations/de_DE-json": "30967ce333d21ef3216d",
-						"translations/es_ES-json": "ac52cfb935a90d0b9398",
-						"translations/es_MX-json": "580d2a304689097c42f0",
-						"translations/fr_FR-json": "8ce7322d41b5afb95ea1",
+						"translations/es_ES-json": "4e6c283178d79a3aae2b",
+						"translations/es_MX-json": "466e456c27699267856c",
+						"translations/fr_FR-json": "f8e744a094ab00d6149a",
 						"translations/hi_IN-json": "61ad7cbe148b6dcacf82",
 						"translations/it_IT-json": "f4c3066beb79b009b13f",
 						"translations/pseudo-json": "3f0f121fa9945f03a37a",
@@ -1770,4 +1770,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.004ae6702c9b6fdce920.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.79313690d8ef8e6e6cf6.js.map
