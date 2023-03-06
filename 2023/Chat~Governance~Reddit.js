@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6768e1bb6fcc5566905b.js
-// Retrieved at 3/6/2023, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.5a02cfcb552504c4c9e3.js
+// Retrieved at 3/6/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -5381,11 +5381,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("184117"),
+				buildNumber: Object(r.c)("184123"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1678113607"),
+				buildTimestamp: Object(r.b)("1678116909"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -8123,14 +8123,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c3207da413cbe617d99fa8ffcb80a5836d7c1d3cf-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c63ba4670869fe98bc973538b1693bbc8829196ca-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "3207da413cbe617d99fa8ffcb80a5836d7c1d3cf-production",
+						release: "63ba4670869fe98bc973538b1693bbc8829196ca-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(D.d)(), new d.Integrations.Breadcrumbs({
@@ -8675,7 +8675,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "3207da413cbe617d99fa8ffcb80a5836d7c1d3cf-production",
+							releaseClient: "63ba4670869fe98bc973538b1693bbc8829196ca-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -27519,124 +27519,123 @@
 		"./src/reddit/helpers/installGoodVisitFeedSearchTracker/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "e", (function() {
-				return _
+				return u
 			})), i.d(t, "a", (function() {
-				return m
+				return _
 			})), i.d(t, "c", (function() {
-				return p
+				return m
 			})), i.d(t, "d", (function() {
-				return h
+				return p
 			})), i.d(t, "b", (function() {
-				return f
+				return h
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./src/lib/constants/index.ts"),
-				r = i("./src/reddit/helpers/trackers/global.ts"),
-				s = i("./src/reddit/selectors/telemetry.ts"),
-				o = i("./src/telemetry/index.ts"),
-				d = i("./node_modules/uuid/dist/esm-browser/v4.js"),
-				a = i("./src/reddit/helpers/localStorage/index.ts"),
-				l = i("./src/reddit/helpers/search/searchConversationId.ts"),
-				c = i("./src/reddit/helpers/search/searchImpressionId.ts");
-			const u = 15e3,
-				_ = {};
+				r = i("./src/lib/makeSearchKey/index.ts"),
+				s = i("./src/reddit/helpers/trackers/global.ts"),
+				o = i("./src/reddit/selectors/telemetry.ts"),
+				d = i("./src/telemetry/index.ts"),
+				a = i("./node_modules/uuid/dist/esm-browser/v4.js"),
+				l = i("./src/reddit/helpers/localStorage/index.ts");
+			const c = 5e3,
+				u = {};
 			"undefined" != typeof window && window.addEventListener("beforeunload", (function() {
 				var e, t;
-				for (const i of Object.values(_)) i.completed || (null === (e = i.goodVisitTimer) || void 0 === e || e.clear(), null === (t = i.downtimeTimer) || void 0 === t || t.clear())
+				for (const i of Object.values(u)) i.completed || (null === (e = i.goodVisitTimer) || void 0 === e || e.clear(), null === (t = i.downtimeTimer) || void 0 === t || t.clear())
 			}));
-			const m = (e, t, i, s, m, p, h, f) => {
-					if (_[e]) return;
-					_[e] = {
+			const _ = (e, t, i, _, m, p, h, f) => {
+					if (u[e]) return;
+					u[e] = {
 							completed: !1
 						},
-						function(e, t) {
-							let i;
+						function(e, t, i, r) {
+							let d;
 							if (n.Q.has(e)) {
-								const t = Object(r.c)(e);
-								i = {
-									conversationId: l.a.get(t),
-									impressionId: c.a.get(t)
+								const n = Object(s.c)(e);
+								d = {
+									search: o.db(t, i, n)
 								}
 							} else {
 								if (!n.P.has(e)) return;
-								i = {
-									referrerCorrelationId: t
+								d = {
+									timer: {
+										referrerCorrelationId: r
+									}
 								}
 							}
-							Object(a.wb)({
-								key: Object(d.a)(),
+							Object(l.wb)({
+								key: Object(a.a)(),
 								source: e,
-								expires: new Date((new Date).getTime() + u),
-								eventPayload: i
+								expires: new Date((new Date).getTime() + c),
+								eventPayload: d
 							})
-						}(t, m);
-					const b = _[e],
+						}(t, i(), Object(r.e)((null == p ? void 0 : p.queryParams) || {}), m);
+					const g = u[e],
 						v = null != h ? h : 15e3,
 						w = null != f ? f : 3e4;
-					b.goodVisitTimer = new g(v, () => {
+					g.goodVisitTimer = new b(v, () => {
 						var e;
-						null === (e = b.goodVisitTimer) || void 0 === e || e.clear(), Object(o.a)(Object(r.d)(v, t, s, m, p)(i())), b.goodVisitTimer = new g(w - v, () => {
+						null === (e = g.goodVisitTimer) || void 0 === e || e.clear(), Object(d.a)(Object(s.d)(v, t, _, m, p)(i())), g.goodVisitTimer = new b(w - v, () => {
 							var e, n;
-							null === (e = b.goodVisitTimer) || void 0 === e || e.clear(), null === (n = b.downtimeTimer) || void 0 === n || n.clear(), Object(o.a)(Object(r.d)(w, t, s, m, p)(i())), b.completed = !0
+							null === (e = g.goodVisitTimer) || void 0 === e || e.clear(), null === (n = g.downtimeTimer) || void 0 === n || n.clear(), Object(d.a)(Object(s.d)(w, t, _, m, p)(i())), g.completed = !0
 						})
 					})
 				},
-				p = e => {
+				m = e => {
 					var t;
-					const i = _[e];
-					i && (i.completed || (null === (t = i.goodVisitTimer) || void 0 === t || t.pause(), i.downtimeTimer = new g(3e5, () => {
+					const i = u[e];
+					i && (i.completed || (null === (t = i.goodVisitTimer) || void 0 === t || t.pause(), i.downtimeTimer = new b(3e5, () => {
 						var e, t;
 						null === (e = i.goodVisitTimer) || void 0 === e || e.clear(), null === (t = i.downtimeTimer) || void 0 === t || t.clear(), i.completed = !0
 					})))
 				},
-				h = e => {
+				p = e => {
 					var t, i;
-					const n = _[e];
+					const n = u[e];
 					n && (n.completed || (null === (t = n.downtimeTimer) || void 0 === t || t.clear(), null === (i = n.goodVisitTimer) || void 0 === i || i.reset()))
 				},
-				f = function(e, t) {
+				h = function(e, t) {
 					let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 15e3,
 						r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 3e4;
-					var d;
+					var s;
 					if (!e) return;
 					const a = e.source,
 						l = new Date(e.expires) <= new Date,
 						c = t(),
-						u = null === (d = c.platform.currentPage) || void 0 === d ? void 0 : d.routeMatch,
-						m = u && s.w(u),
+						_ = null === (s = c.platform.currentPage) || void 0 === s ? void 0 : s.routeMatch,
+						m = _ && o.w(_),
 						p = n.R.has(a) && m && n.S.has(m) && !l;
 					if (!p) return;
-					if (_[e.key]) return;
-					_[e.key] = {
+					if (u[e.key]) return;
+					u[e.key] = {
 						completed: !1
 					};
-					const h = _[e.key];
-					h.goodVisitTimer = new g(i, () => {
+					const h = u[e.key];
+					h.goodVisitTimer = new b(i, () => {
 						var n;
-						null === (n = h.goodVisitTimer) || void 0 === n || n.clear(), Object(o.a)(b(t(), e, i)), h.goodVisitTimer = new g(r - i, () => {
+						null === (n = h.goodVisitTimer) || void 0 === n || n.clear(), Object(d.a)(f(t(), e, i)), h.goodVisitTimer = new b(r - i, () => {
 							var i, n;
-							null === (i = h.goodVisitTimer) || void 0 === i || i.clear(), null === (n = h.downtimeTimer) || void 0 === n || n.clear(), Object(o.a)(b(t(), e, r)), h.completed = !0
+							null === (i = h.goodVisitTimer) || void 0 === i || i.clear(), null === (n = h.downtimeTimer) || void 0 === n || n.clear(), Object(d.a)(f(t(), e, r)), h.completed = !0
 						})
 					})
 				};
 
-			function b(e, t, i) {
-				var n, s, o;
-				const d = Object(r.d)(i, t.source, (null === (n = e.platform.currentPage) || void 0 === n ? void 0 : n.routeMatch) || void 0, t.eventPayload.referrerCorrelationId)(e);
+			function f(e, t, i) {
+				var n, r, o, d, a;
+				const l = Object(s.d)(i, t.source, (null === (n = e.platform.currentPage) || void 0 === n ? void 0 : n.routeMatch) || void 0, null === (o = null === (r = t.eventPayload) || void 0 === r ? void 0 : r.timer) || void 0 === o ? void 0 : o.referrerCorrelationId)(e);
 				return {
-					...d,
+					...l,
 					search: {
-						...d.search,
-						impressionId: null === (s = t.eventPayload) || void 0 === s ? void 0 : s.impressionId,
-						conversationId: null === (o = t.eventPayload) || void 0 === o ? void 0 : o.conversationId
+						...l.search,
+						...(null === (d = t.eventPayload) || void 0 === d ? void 0 : d.search) || {}
 					},
 					timer: {
-						...d.timer,
-						referrerCorrelationId: t.eventPayload.referrerCorrelationId
+						...l.timer,
+						...(null === (a = t.eventPayload) || void 0 === a ? void 0 : a.timer) || {}
 					}
 				}
 			}
-			class g {
+			class b {
 				constructor(e, t) {
 					this.remaining = e, this.callback = t, this.reset()
 				}
@@ -52545,4 +52544,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6768e1bb6fcc5566905b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.5a02cfcb552504c4c9e3.js.map
