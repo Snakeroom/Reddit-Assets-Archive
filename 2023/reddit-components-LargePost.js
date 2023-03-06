@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.00f4a28b778638889740.js
-// Retrieved at 3/6/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.a95be55710be63de7aaa.js
+// Retrieved at 3/6/2023, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ModQueuePages~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3889,19 +3889,27 @@
 				Oe = s("./src/lib/initializeClient/installReducer.ts"),
 				xe = (s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./src/reddit/actions/relatedCommunitiesRecommendations/constants.ts"));
 			const _e = {
-				subreddits: {},
+				subreddits: [],
 				error: null,
 				loaded: !1,
 				pending: !1
 			};
 			var ve = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : _e,
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case xe.b:
+						case xe.b: {
+							const {
+								postId: s
+							} = t.payload;
 							return {
-								...e, pending: !0
-							};
+								...e,
+								[s]: {
+									...e[s],
+									pending: !0
+								}
+							}
+						}
 						case xe.c: {
 							const {
 								postId: s,
@@ -3909,19 +3917,29 @@
 							} = t.payload;
 							return {
 								...e,
-								subreddits: {
-									...e.subreddits,
-									[s]: Object.keys(n)
-								},
-								error: null,
-								loaded: !0,
-								pending: !1
+								[s]: {
+									...e[s],
+									subreddits: Object.keys(n),
+									error: null,
+									loaded: !0,
+									pending: !1
+								}
 							}
 						}
-						case xe.a:
+						case xe.a: {
+							const {
+								postId: s
+							} = t.payload;
 							return {
-								...e, error: t.payload, loaded: !0, pending: !1
-							};
+								...e,
+								[s]: {
+									...e[s],
+									error: t.payload,
+									loaded: !0,
+									pending: !1
+								}
+							}
+						}
 						default:
 							return e
 					}
@@ -3932,13 +3950,13 @@
 					relatedCommunitiesRecommendations: ve
 				}
 			});
-			const Ee = e => {
-					var t, s;
-					return null !== (s = null === (t = e.features) || void 0 === t ? void 0 : t.relatedCommunitiesRecommendations) && void 0 !== s ? s : _e
-				},
-				je = Object(a.a)([Ee, (e, t) => t], (e, t) => {
-					var s;
-					return t && null !== (s = null == e ? void 0 : e.subreddits[t]) && void 0 !== s ? s : []
+			const Ee = Object(a.a)([(e, t) => {
+					var s, n, o;
+					return null !== (o = null === (n = null === (s = e.features) || void 0 === s ? void 0 : s.relatedCommunitiesRecommendations) || void 0 === n ? void 0 : n[t]) && void 0 !== o ? o : _e
+				}], e => e),
+				je = Object(a.a)([(e, t) => Ee(e, t)], e => {
+					var t;
+					return null !== (t = null == e ? void 0 : e.subreddits) && void 0 !== t ? t : []
 				}),
 				Ce = Object(a.a)([e => e, ge.fb], (e, t) => t.map(t => ({
 					...t,
@@ -3978,7 +3996,8 @@
 						subredditId: n,
 						variant: o,
 						numberItems: r,
-						seenItems: i
+						seenItems: i,
+						seen: a = !0
 					} = e;
 					return {
 						...Pe.o(t),
@@ -3997,7 +4016,7 @@
 							number_items: r,
 							number_seen_items: i.length,
 							seen_items: i,
-							seen: !0
+							seen: a
 						}
 					}
 				},
@@ -4126,19 +4145,22 @@
 					variables: t
 				});
 				if (!Object(Me.c)(s)) throw new Error("Encountered an error while fetching live discovery content");
-				return (e => e.relatedCommunityRecommendations.recommendations.reduce((e, t) => e = {
-					models: {
-						...e.models,
-						[t.id]: Object(De.a)(t)
-					},
-					aboutInfo: {
-						...e.aboutInfo,
-						...Object(Le.a)(t)
-					}
-				}, {
-					aboutInfo: {},
-					models: {}
-				}))(s.body.data)
+				return (e => {
+					var t, s;
+					return null === (s = null === (t = null == e ? void 0 : e.relatedCommunityRecommendations) || void 0 === t ? void 0 : t.recommendations) || void 0 === s ? void 0 : s.reduce((e, t) => e = {
+						models: {
+							...e.models,
+							[t.id]: Object(De.a)(t)
+						},
+						aboutInfo: {
+							...e.aboutInfo,
+							...Object(Le.a)(t)
+						}
+					}, {
+						aboutInfo: {},
+						models: {}
+					})
+				})(s.body.data)
 			};
 			Object(Oe.a)({
 				features: {
@@ -4152,7 +4174,9 @@
 					let {
 						gqlContext: r
 					} = o;
-					s(Ue());
+					s(Ue({
+						postId: t
+					}));
 					try {
 						const n = await Fe(r(), {
 							subredditId: e
@@ -4163,7 +4187,10 @@
 							subredditAboutInfo: n.aboutInfo
 						}))
 					} catch (i) {
-						s(We(i))
+						s(We({
+							postId: t,
+							ApiError: i
+						}))
 					}
 				};
 			const Ve = e => {
@@ -4176,7 +4203,9 @@
 				} = e;
 				const [c, l] = Object(n.useState)(3), m = Object(_.a)(), {
 					recommendations: u,
-					recommendationStatus: p
+					fetchPending: p,
+					recommendationsLoaded: b,
+					fetchError: f
 				} = function(e) {
 					let {
 						postId: t,
@@ -4184,36 +4213,45 @@
 					} = e;
 					const o = Object(r.d)(),
 						i = Object(r.e)(e => je(e, t)),
-						a = Object(r.e)(Ee);
+						{
+							pending: a,
+							loaded: d,
+							error: c
+						} = Object(r.e)(e => Ee(e, t)),
+						l = !d && !a;
 					return Object(n.useEffect)(() => {
-						o(Ke(s, t))
-					}, [o, s, t]), {
+						l && o(Ke(s, t))
+					}, [o, s, t, l]), {
 						recommendations: i,
-						recommendationStatus: a
+						fetchPending: a,
+						recommendationsLoaded: d,
+						fetchError: c
 					}
 				}({
 					subredditId: a,
 					postId: i
-				}), b = c < (u.length || 0), f = Object(n.useMemo)(() => (null == p ? void 0 : p.loaded) ? (null == p ? void 0 : p.error) ? {
+				}), h = c < (u.length || 0), O = Object(n.useMemo)(() => !b || p ? null : f || u.length <= 0 ? {
+					seen: !1,
 					postId: i,
 					subredditId: a,
 					variant: s,
 					numberItems: 0,
 					seenItems: []
 				} : {
+					seen: !0,
 					postId: i,
 					subredditId: a,
 					variant: s,
 					numberItems: u.length,
 					seenItems: u.slice(0, 3)
-				} : null, [i, a, s, p.error, p.loaded, u]);
+				}, [b, p, f, i, a, s, u]);
 				if (Object(n.useEffect)(() => {
-						m && f && m((e => t => ({
+						m && O && m((e => t => ({
 							...Te(e, t),
 							action: Ne.c.VIEW,
 							noun: Se.RECOMMENDATION_MODULE
-						}))(f))
-					}, [m, f]), !(null == p ? void 0 : p.loaded) || u.length <= 0) return null;
+						}))(O))
+					}, [m, O]), !b || u.length <= 0) return null;
 				return o.a.createElement("div", {
 					className: "bg-[color:var(--newCommunityTheme-body)] mb-[10px]"
 				}, o.a.createElement("div", {
@@ -4228,12 +4266,12 @@
 						hk: "1D8cvx"
 					}),
 					onClick: () => {
-						d(), f && m((e => t => ({
+						d(), O && m((e => t => ({
 							...Te(e, t),
 							action: Ne.c.CLICK,
 							noun: Se.CLOSE
 						}))({
-							...f,
+							...O,
 							seenItems: null == u ? void 0 : u.slice(0, c)
 						}))
 					}
@@ -4246,7 +4284,7 @@
 					postId: i,
 					originalSubredditId: a,
 					variant: s
-				}), b && o.a.createElement("div", {
+				}), h && o.a.createElement("div", {
 					className: "flex items-center justify-center pb-[8px]"
 				}, o.a.createElement(ce.a, {
 					kind: ce.b.Button,
@@ -4258,7 +4296,7 @@
 							action: Ne.c.CLICK,
 							noun: Se.SHOW_MORE
 						}))({
-							...f,
+							...O,
 							seenItems: null == u ? void 0 : u.slice(0, e)
 						}))
 					}
@@ -9562,4 +9600,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.00f4a28b778638889740.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.a95be55710be63de7aaa.js.map
