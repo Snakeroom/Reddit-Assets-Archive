@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.0ccca5cbf09c3f73608c.js
-// Retrieved at 2/16/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.957181c6aaffa22ed977.js
+// Retrieved at 3/6/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistration"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -145,9 +145,9 @@
 			})), n.d(t, "u", (function() {
 				return y
 			})), n.d(t, "v", (function() {
-				return k
-			})), n.d(t, "w", (function() {
 				return N
+			})), n.d(t, "w", (function() {
+				return k
 			})), n.d(t, "x", (function() {
 				return O
 			}));
@@ -172,8 +172,8 @@
 				_ = "GOVERNANCE__TRANSFER_PENDING",
 				x = "GOVERNANCE__TRANSFER_SUCCESS",
 				y = "GOVERNANCE__WALLETS_FETCH_FAILURE",
-				k = "GOVERNANCE__WALLETS_FETCH_PENDING",
-				N = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
+				N = "GOVERNANCE__WALLETS_FETCH_PENDING",
+				k = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
 				O = "GOVERNANCE__WALLET_REGISTRATION_MODAL_OPENED"
 		},
 		"./src/reddit/actions/governance/errorToast.ts": function(e, t, n) {
@@ -233,8 +233,8 @@
 				_ = Object(a.a)(C.c),
 				x = Object(a.a)(C.e),
 				y = (Object(a.a)(C.f), Object(a.a)(C.g), Object(a.a)(C.h)),
-				k = Object(a.a)(C.i),
-				N = Object(a.a)(C.j),
+				N = Object(a.a)(C.i),
+				k = Object(a.a)(C.j),
 				O = Object(a.a)(C.k),
 				w = Object(a.a)(C.q),
 				j = Object(a.a)(C.r),
@@ -250,7 +250,7 @@
 							gqlContext: c
 						} = a,
 						p = r().polls.models[e];
-					if (n(N({
+					if (n(k({
 							pollId: e
 						})), (s = p.type === u.a.GA ? await ((e, t, n) => Object(l.a)(e, {
 								...m,
@@ -284,7 +284,7 @@
 							} = p, t = a.posts.models[e];
 							t && t.voteState === v.a.notVoted && n(Object(i.ib)(e))
 						}
-					} else n(k({
+					} else n(N({
 						pollId: e,
 						error: s.error || s.errors[0].message
 					})), Object(g.a)(n, s.error || s.errors[0].messsage)
@@ -677,8 +677,8 @@
 					}))))
 				}
 			}
-			var k = n("./src/chat/icons/svgs/Refresh/index.tsx"),
-				N = n("./src/reddit/icons/svgs/CircleCheck/index.tsx"),
+			var N = n("./src/chat/icons/svgs/Refresh/index.tsx"),
+				k = n("./src/reddit/icons/svgs/CircleCheck/index.tsx"),
 				O = n("./src/reddit/icons/svgs/DownvoteCircle/index.tsx"),
 				w = n("./src/reddit/components/Governance/WalletRegistration/Common/pageReload.ts");
 			const {
@@ -704,7 +704,7 @@
 						className: C.a.header
 					}, j._("Install the MetaMask Browser Extension", null, {
 						hk: "3MOJpi"
-					}), t && a.a.createElement(N.a, {
+					}), t && a.a.createElement(k.a, {
 						className: C.a.installedCheckmark
 					})), a.a.createElement("div", {
 						className: C.a.body
@@ -742,7 +742,7 @@
 						onClick: w.a
 					}, j._("Reload page", null, {
 						hk: "14fa9z"
-					}), a.a.createElement(k.a, {
+					}), a.a.createElement(N.a, {
 						className: C.a.buttonIcon
 					})) : a.a.createElement(h.p, {
 						className: C.a.button,
@@ -1508,7 +1508,7 @@
 			}
 			const d = 4001;
 			async function l(e, t, r, s) {
-				const [o, i] = await Promise.all([n.e("vendors~Avatar~CryptoLibEthers~GovernanceTransferPointsModal~MarketplaceClaimModal~MarketplaceInFeed~1ea7787c").then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers), t.then(e => e.abi)]);
+				const [o, i] = await Promise.all([n.e("vendors~Avatar~CollectiblesShowcaseUnit~CryptoLibEthers~GovernanceTransferPointsModal~MarketplaceCla~cd1771e1").then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers), t.then(e => e.abi)]);
 				await c();
 				const d = new o.providers.Web3Provider(a()).getSigner(),
 					l = new o.Contract(e, i, d),
@@ -1537,7 +1537,7 @@
 			};
 			const m = 1;
 			async function b(e, t, r, a, s) {
-				const o = await n.e("vendors~Avatar~CryptoLibEthers~GovernanceTransferPointsModal~MarketplaceClaimModal~MarketplaceInFeed~1ea7787c").then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers),
+				const o = await n.e("vendors~Avatar~CollectiblesShowcaseUnit~CryptoLibEthers~GovernanceTransferPointsModal~MarketplaceCla~cd1771e1").then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers),
 					{
 						BigNumber: i
 					} = o,
@@ -1939,4 +1939,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.0ccca5cbf09c3f73608c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.957181c6aaffa22ed977.js.map

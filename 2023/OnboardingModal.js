@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.610b4583e93b03508f42.js
-// Retrieved at 2/23/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.c066910ecf64ab9634cb.js
+// Retrieved at 3/6/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -450,7 +450,7 @@
 						sort: d,
 						t: u,
 						correlationId: m
-					} = t, p = Object(F.k)(e), h = Object(B.bb)(e) || Object(B.S)(e), O = Object(G.b)(e), v = Object(A.q)(e), {
+					} = t, p = Object(F.k)(e), h = Object(B.bb)(e) || Object(B.S)(e), O = Object(G.b)(e), v = Object(A.r)(e), {
 						adsSeenCount: x,
 						totalPostsSeenCount: _,
 						sessionStartTime: E
@@ -469,7 +469,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.pg)(p),
+						includeInterestTopics: !!p && !Object(b.qg)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: h && !(null === (s = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === s ? void 0 : s.total),
@@ -1367,7 +1367,7 @@
 					} = e;
 					const s = Object(_.a)();
 					Object(a.useEffect)(() => {
-						s(Object(x.o)())
+						s(Object(x.p)())
 					}, [s]);
 					const r = Object(a.useCallback)(() => {
 						s(Object(x.a)("randomize")), n()
@@ -4981,8 +4981,10 @@
 		},
 		"./src/reddit/hooks/useToast.tsx": function(e, t, n) {
 			"use strict";
-			n.d(t, "a", (function() {
+			n.d(t, "b", (function() {
 				return i
+			})), n.d(t, "a", (function() {
+				return c
 			}));
 			var s = n("./node_modules/react/index.js"),
 				r = n("./node_modules/react-redux/es/index.js"),
@@ -4990,10 +4992,12 @@
 				o = n("./src/reddit/models/Toast/index.ts");
 
 			function i() {
-				const e = function() {
-					const e = Object(r.d)();
-					return Object(s.useCallback)(t => e(Object(a.f)(t)), [e])
-				}();
+				const e = Object(r.d)();
+				return Object(s.useCallback)(t => e(Object(a.f)(t)), [e])
+			}
+
+			function c() {
+				const e = i();
 				return Object(s.useCallback)((t, n) => e({
 					duration: 5e3,
 					kind: o.b.Error,
@@ -5105,4 +5109,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.610b4583e93b03508f42.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.c066910ecf64ab9634cb.js.map

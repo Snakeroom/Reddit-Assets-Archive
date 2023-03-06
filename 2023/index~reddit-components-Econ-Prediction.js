@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.8fbe55b8edd5ea61e65c.js
-// Retrieved at 2/16/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.ab458596ffcddc8c2cc3.js
+// Retrieved at 3/6/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, n) {
@@ -3042,8 +3042,10 @@
 		},
 		"./src/reddit/hooks/useToast.tsx": function(e, t, n) {
 			"use strict";
-			n.d(t, "a", (function() {
+			n.d(t, "b", (function() {
 				return c
+			})), n.d(t, "a", (function() {
+				return d
 			}));
 			var a = n("./node_modules/react/index.js"),
 				o = n("./node_modules/react-redux/es/index.js"),
@@ -3051,10 +3053,12 @@
 				s = n("./src/reddit/models/Toast/index.ts");
 
 			function c() {
-				const e = function() {
-					const e = Object(o.d)();
-					return Object(a.useCallback)(t => e(Object(r.f)(t)), [e])
-				}();
+				const e = Object(o.d)();
+				return Object(a.useCallback)(t => e(Object(r.f)(t)), [e])
+			}
+
+			function d() {
+				const e = c();
 				return Object(a.useCallback)((t, n) => e({
 					duration: 5e3,
 					kind: s.b.Error,
@@ -3197,4 +3201,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.8fbe55b8edd5ea61e65c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.ab458596ffcddc8c2cc3.js.map

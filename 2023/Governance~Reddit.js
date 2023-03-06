@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.7fab635364831d5f5737.js
-// Retrieved at 2/23/2023, 8:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.739338009396e3ab049a.js
+// Retrieved at 3/6/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -3310,7 +3310,7 @@
 			const g = Object(l.a)(p.a),
 				v = "ModProgressModule--ModWelcomeTooltip";
 			t.default = Object(i.a)(e => {
-				const t = Object(o.e)(b.d),
+				const t = Object(o.e)(b.e),
 					n = v,
 					i = Object(o.d)(),
 					l = e => {
@@ -4541,8 +4541,8 @@
 					{
 						nsfwSessionSetting: P
 					} = Object(f.b)(),
-					R = Object(a.e)(he.r),
-					N = Object(a.e)(he.d),
+					R = Object(a.e)(he.s),
+					N = Object(a.e)(he.e),
 					L = Object(pe.c)(C),
 					x = Object(u.e)({
 						...ae()(w || {}, le.z),
@@ -5025,10 +5025,10 @@
 				h = n("./node_modules/reselect/es/index.js");
 			const b = Object(h.a)(e => Object(f.c)(e, {
 				experimentEligibilitySelector: f.a,
-				experimentName: p.mg
+				experimentName: p.ng
 			}), e => ({
-				promptBeforeClick: e === p.ng.PromptBeforeClick,
-				promptAfterClick: e === p.ng.PromptAfterClick
+				promptBeforeClick: e === p.og.PromptBeforeClick,
+				promptAfterClick: e === p.og.PromptAfterClick
 			}));
 			var y = n("./src/reddit/controls/Search/SearchScopePill/index.tsx"),
 				m = n("./src/reddit/controls/Search/SearchBar/index.m.less"),
@@ -25403,8 +25403,8 @@
 					var t;
 					const n = p(e);
 					if (!n) return !1;
-					let r = Object(i.r)(e),
-						a = Object(i.d)(e);
+					let r = Object(i.s)(e),
+						a = Object(i.e)(e);
 					if ("undefined" != typeof window && !a) {
 						const e = Object(c.a)("subreddit", window.location.href);
 						(a = null === (t = null == e ? void 0 : e.components) || void 0 === t ? void 0 : t.subredditName) && (r = s.Tb.SUBREDDIT)
@@ -25563,4 +25563,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.7fab635364831d5f5737.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.739338009396e3ab049a.js.map

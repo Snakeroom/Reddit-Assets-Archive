@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ContributorRequestPendingModal.3f022348c2c99d9471da.js
-// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ContributorRequestPendingModal.95bf2e46a2b296cbfd5a.js
+// Retrieved at 3/6/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ContributorRequestPendingModal", "ContributorRequestRequestModal"], {
 		"./src/reddit/components/ContributorRequestFlow/PendingModal/index.m.less": function(e, t, n) {
@@ -71,7 +71,7 @@
 				g = h.a.wrapped(u.e, "ModalBody", f.a),
 				q = Object(i.c)({
 					restrictions: F.q,
-					subreddit: x.e
+					subreddit: x.f
 				}),
 				k = Object(r.b)(q, e => ({
 					openContributorRequestPendingModal: () => e(Object(d.i)(m.a.CONTRIBUTOR_REQUEST_PENDING))
@@ -230,7 +230,7 @@
 			t.default = M.a.wrapped(Object(a.a)(Object(d.a)(Object(i.b)(() => Object(l.c)({
 				subredditAboutInfo: k.g,
 				restrictions: k.q,
-				subreddit: g.e,
+				subreddit: g.f,
 				subredditIcon: q.b
 			}), e => ({
 				makeContributorRequest: (t, n, o) => e(Object(u.n)(t, n, o)),
@@ -404,4 +404,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestPendingModal.3f022348c2c99d9471da.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestPendingModal.95bf2e46a2b296cbfd5a.js.map

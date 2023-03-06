@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.fd78993cc0adb9dc98d0.js
-// Retrieved at 2/23/2023, 8:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.5b696a03c1acfeb92fe7.js
+// Retrieved at 3/6/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, o) {
@@ -1733,7 +1733,7 @@
 					noun: n.collectionCancel
 				}),
 				E = () => e => {
-					const t = Object(i.o)(e) || void 0;
+					const t = Object(i.p)(e) || void 0;
 					return {
 						...m(e, t),
 						source: s.collectionComposer,
@@ -1769,7 +1769,7 @@
 					noun: n.startEvent
 				}),
 				k = () => e => {
-					const t = Object(i.o)(e) || void 0;
+					const t = Object(i.p)(e) || void 0;
 					return {
 						...m(e, t),
 						source: s.collectionComposer,
@@ -1838,18 +1838,18 @@
 					postEvent: _(e)
 				}),
 				v = e => t => ({
-					...j(t, Object(a.o)(t)),
+					...j(t, Object(a.p)(t)),
 					source: s.postComposer,
 					noun: "apply",
 					postComposer: w(e)
 				}),
 				h = () => e => ({
-					...j(e, Object(a.o)(e)),
+					...j(e, Object(a.p)(e)),
 					noun: "cancel",
 					actionInfo: p(e)
 				}),
 				O = e => t => ({
-					...j(t, Object(a.o)(t)),
+					...j(t, Object(a.p)(t)),
 					noun: "delete",
 					actionInfo: p(t),
 					postComposer: E(t),
@@ -2150,4 +2150,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.fd78993cc0adb9dc98d0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.5b696a03c1acfeb92fe7.js.map

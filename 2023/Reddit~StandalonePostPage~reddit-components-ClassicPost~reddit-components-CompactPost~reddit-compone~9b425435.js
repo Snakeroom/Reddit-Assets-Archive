@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.2cf5fab74977cad9be62.js
-// Retrieved at 2/23/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.260d507c6d119987fb3e.js
+// Retrieved at 3/6/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/avatarShareImages.ts": function(e, t, n) {
@@ -2443,7 +2443,7 @@
 					subreddit: c.lb(e)
 				}),
 				d = (e, t, n) => r => ({
-					source: Object(a.i)(r) || n ? "post_lightbox" : "post_detail",
+					source: Object(a.j)(r) || n ? "post_lightbox" : "post_detail",
 					action: "click",
 					noun: t,
 					...i(r),
@@ -2468,7 +2468,7 @@
 				u = (e, t) => n => {
 					const r = c.k(n);
 					return r ? d(r.id, e, t)(n) : {
-						source: Object(a.i)(n) || t ? "post_lightbox" : "post_detail",
+						source: Object(a.j)(n) || t ? "post_lightbox" : "post_detail",
 						action: "click",
 						noun: e,
 						...i(n)
@@ -2710,61 +2710,64 @@
 		"./src/reddit/helpers/trackers/snoovatar.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "g", (function() {
-				return i
-			})), n.d(t, "h", (function() {
 				return d
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "h", (function() {
 				return l
-			})), n.d(t, "r", (function() {
+			})), n.d(t, "i", (function() {
 				return u
-			})), n.d(t, "l", (function() {
+			})), n.d(t, "s", (function() {
 				return m
-			})), n.d(t, "n", (function() {
+			})), n.d(t, "l", (function() {
 				return p
-			})), n.d(t, "c", (function() {
-				return f
-			})), n.d(t, "f", (function() {
-				return b
-			})), n.d(t, "q", (function() {
-				return h
-			})), n.d(t, "e", (function() {
-				return g
-			})), n.d(t, "k", (function() {
-				return O
-			})), n.d(t, "m", (function() {
-				return _
-			})), n.d(t, "j", (function() {
-				return y
-			})), n.d(t, "b", (function() {
-				return x
-			})), n.d(t, "p", (function() {
-				return C
-			})), n.d(t, "d", (function() {
-				return k
-			})), n.d(t, "a", (function() {
-				return I
 			})), n.d(t, "o", (function() {
+				return f
+			})), n.d(t, "c", (function() {
+				return b
+			})), n.d(t, "f", (function() {
+				return v
+			})), n.d(t, "r", (function() {
+				return g
+			})), n.d(t, "e", (function() {
+				return O
+			})), n.d(t, "k", (function() {
+				return j
+			})), n.d(t, "n", (function() {
+				return y
+			})), n.d(t, "j", (function() {
+				return x
+			})), n.d(t, "b", (function() {
+				return w
+			})), n.d(t, "q", (function() {
+				return k
+			})), n.d(t, "d", (function() {
+				return E
+			})), n.d(t, "a", (function() {
 				return S
+			})), n.d(t, "p", (function() {
+				return A
+			})), n.d(t, "m", (function() {
+				return T
 			}));
 			var r = n("./src/reddit/models/Gold/ProductOffer.ts"),
 				o = n("./src/reddit/selectors/avatarMarketing.ts"),
 				s = n("./src/reddit/selectors/telemetry.ts"),
-				a = n("./src/reddit/selectors/user.ts");
-			const c = {
+				a = n("./src/reddit/selectors/user.ts"),
+				c = n("./src/reddit/helpers/userSnoovatar/index.ts");
+			const i = {
 					goldPurchase: {
 						offerContext: r.a.AvatarNewGear
 					}
 				},
-				i = e => t => {
+				d = e => t => {
 					const n = {
 						source: e,
 						action: "click",
 						noun: "edit_snoovatar",
 						...s.o(t)
 					};
-					return Object(o.a)(t) && Object.assign(n, c), n
+					return Object(o.a)(t) && Object.assign(n, i), n
 				},
-				d = (e, t) => n => {
+				l = (e, t) => n => {
 					const {
 						id: r
 					} = Object(a.Cb)(n, {
@@ -2780,14 +2783,14 @@
 						}
 					}
 				},
-				l = e => ({
+				u = e => ({
 					...s.o(e),
 					source: "avatar",
 					action: "click",
 					noun: "try_this_look_post",
 					snoovatar: s.jb(e)
 				}),
-				u = e => ({
+				m = e => ({
 					...s.o(e),
 					source: "global",
 					action: "view",
@@ -2797,28 +2800,28 @@
 					},
 					snoovatar: s.jb(e)
 				}),
-				m = e => ({
+				p = e => ({
 					...s.o(e),
 					source: "avatar_builder",
 					action: "click",
 					noun: "close",
 					snoovatar: s.jb(e)
 				}),
-				p = e => ({
+				f = e => ({
 					source: "nav",
 					action: "view",
 					noun: "avatar_marketing",
 					...s.o(e),
-					...c
+					...i
 				}),
-				f = e => ({
+				b = e => ({
 					source: "nav",
 					action: "click",
 					noun: "avatar_marketing",
 					...s.o(e),
-					...c
+					...i
 				}),
-				b = e => t => ({
+				v = e => t => ({
 					...s.o(t),
 					source: "snoovatar",
 					action: "set_to_profile",
@@ -2827,7 +2830,7 @@
 						userGeneratedSource: e
 					}
 				}),
-				v = e => t => n => ({
+				h = e => t => n => ({
 					source: "avatar",
 					action: e,
 					noun: "community_spaces",
@@ -2837,28 +2840,28 @@
 						paneName: "avatar_community_spaces" + (t ? "_control" : "")
 					}
 				}),
-				h = v("view"),
-				g = v("click"),
-				O = v("dismiss"),
-				j = (e, t, n) => () => r => ({
+				g = h("view"),
+				O = h("click"),
+				j = h("dismiss"),
+				_ = (e, t, n) => () => r => ({
 					source: e,
 					action: t,
 					noun: n,
 					...s.o(r),
 					snoovatar: s.jb(r)
 				}),
-				_ = j("anniversary_achievement", "view", "anniversary_achievement"),
-				y = j("anniversary_achievement", "click", "close"),
-				x = j("anniversary_achievement", "click", "equip"),
-				w = e => () => t => ({
+				y = _("anniversary_achievement", "view", "anniversary_achievement"),
+				x = _("anniversary_achievement", "click", "close"),
+				w = _("anniversary_achievement", "click", "equip"),
+				C = e => () => t => ({
 					...s.o(t),
 					source: "gold_top_nav",
 					action: e,
 					noun: "quick_create_cta"
 				}),
-				C = w("view"),
-				k = w("click"),
-				E = (e, t, n) => r => ({
+				k = C("view"),
+				E = C("click"),
+				I = (e, t, n) => r => ({
 					source: e,
 					action: t,
 					noun: n,
@@ -2868,8 +2871,38 @@
 					},
 					snoovatar: s.jb(r)
 				}),
-				I = e => E("onboarding", "click", e),
-				S = () => E("avatar", "view", "onboarding")
+				S = e => I("onboarding", "click", e),
+				A = () => I("avatar", "view", "onboarding"),
+				T = e => {
+					let {
+						user: t,
+						pageType: n,
+						userHasNft: r
+					} = e;
+					return e => {
+						const o = Object(c.a)(t.accountIcon);
+						return {
+							source: "profile",
+							action: "screen",
+							noun: "load",
+							...s.o(e),
+							actionInfo: {
+								pageType: n
+							},
+							profile: {
+								id: t.id,
+								name: t.displayName
+							},
+							snoovatar: {
+								snoovatarActive: o,
+								userHasNft: r
+							},
+							marketplace: {
+								hasCollectibleCollection: !1
+							}
+						}
+					}
+				}
 		},
 		"./src/reddit/helpers/trackers/userFlair.ts": function(e, t, n) {
 			"use strict";
@@ -3897,4 +3930,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.2cf5fab74977cad9be62.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.260d507c6d119987fb3e.js.map

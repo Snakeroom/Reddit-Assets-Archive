@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MatrixChat.2484fe050fd67efd56ef.js
-// Retrieved at 2/7/2023, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MatrixChat.714b6b664e044318b6cd.js
+// Retrieved at 3/6/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MatrixChat"], {
 		"./src/reddit/components/IFrame/index.m.less": function(e, t, a) {
@@ -241,8 +241,10 @@
 		},
 		"./src/reddit/hooks/useToast.tsx": function(e, t, a) {
 			"use strict";
-			a.d(t, "a", (function() {
+			a.d(t, "b", (function() {
 				return o
+			})), a.d(t, "a", (function() {
+				return i
 			}));
 			var n = a("./node_modules/react/index.js"),
 				s = a("./node_modules/react-redux/es/index.js"),
@@ -250,10 +252,12 @@
 				r = a("./src/reddit/models/Toast/index.ts");
 
 			function o() {
-				const e = function() {
-					const e = Object(s.d)();
-					return Object(n.useCallback)(t => e(Object(c.f)(t)), [e])
-				}();
+				const e = Object(s.d)();
+				return Object(n.useCallback)(t => e(Object(c.f)(t)), [e])
+			}
+
+			function i() {
+				const e = o();
 				return Object(n.useCallback)((t, a) => e({
 					duration: 5e3,
 					kind: r.b.Error,
@@ -264,4 +268,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MatrixChat.2484fe050fd67efd56ef.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MatrixChat.714b6b664e044318b6cd.js.map

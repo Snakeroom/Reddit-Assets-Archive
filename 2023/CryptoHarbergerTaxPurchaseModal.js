@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.0d4bb9cd9709f6ea2043.js
-// Retrieved at 2/15/2023, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.04f0237834d94d274976.js
+// Retrieved at 3/6/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxPurchaseModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -150,16 +150,16 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const N = "add-custom-badge-tooltip",
-				w = 100,
-				j = 2 * w,
+			const w = "add-custom-badge-tooltip",
+				N = 100,
+				j = 2 * N,
 				O = 24;
 			class C extends a.a.Component {
 				constructor() {
 					super(...arguments), this.mouseOverTooltip = void 0, this.enterTimeout = void 0, this.exitTimeout = void 0, this.handleMouseEnter = e => {
 						this.mouseOverTooltip && this.mouseOverTooltip !== e ? this.props.onShowTooltip(e) : (clearTimeout(this.enterTimeout), this.enterTimeout = window.setTimeout(() => {
 							this.mouseOverTooltip === e && this.props.onShowTooltip(e)
-						}, w)), this.mouseOverTooltip = e
+						}, N)), this.mouseOverTooltip = e
 					}, this.handleMouseLeave = () => {
 						clearTimeout(this.exitTimeout), clearTimeout(this.enterTimeout), this.mouseOverTooltip = void 0, this.exitTimeout = window.setTimeout(() => {
 							this.mouseOverTooltip || (clearTimeout(this.enterTimeout), this.props.onHideTooltip())
@@ -174,7 +174,7 @@
 						className: Object(c.a)(E.a.image, this.props.className),
 						src: `${i.a.assetPath}/img/badges/placeholder.png`
 					});
-					const t = `${N}-${this.props.uniqueIdentifier}`,
+					const t = `${w}-${this.props.uniqueIdentifier}`,
 						n = this.props.badgeSize || O;
 					return a.a.createElement(r.Fragment, null, this.props.showAddCustom && a.a.createElement("div", {
 						className: E.a.wrapper,
@@ -379,7 +379,7 @@
 					return Object(l.b)(e, n)
 				}
 			});
-			var N = Object(d.b)(y)((function(e) {
+			var w = Object(d.b)(y)((function(e) {
 				const {
 					className: t,
 					cost: n,
@@ -417,7 +417,7 @@
 				}))))
 			}));
 
-			function w(e) {
+			function N(e) {
 				return a.a.createElement("svg", {
 					className: e.className,
 					viewBox: "0 0 32 29",
@@ -588,7 +588,7 @@
 						className: C.a.section
 					}, a.a.createElement("div", {
 						className: C.a.image
-					}, a.a.createElement(w, {
+					}, a.a.createElement(N, {
 						className: C.a.bannerImage
 					})), a.a.createElement("div", {
 						className: C.a.textSection
@@ -636,7 +636,7 @@
 					subredditId: e.subreddit.id,
 					subredditName: e.subreddit.name,
 					taxRate: e.taxRate
-				}), a.a.createElement(N, {
+				}), a.a.createElement(w, {
 					className: M.a.controls,
 					subredditId: e.subreddit.id,
 					onPurchase: e.onPurchase
@@ -1452,7 +1452,7 @@
 			}
 			const l = 4001;
 			async function d(e, t, r, s) {
-				const [o, i] = await Promise.all([n.e("vendors~Avatar~CryptoLibEthers~GovernanceTransferPointsModal~MarketplaceClaimModal~MarketplaceInFeed~1ea7787c").then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers), t.then(e => e.abi)]);
+				const [o, i] = await Promise.all([n.e("vendors~Avatar~CollectiblesShowcaseUnit~CryptoLibEthers~GovernanceTransferPointsModal~MarketplaceCla~cd1771e1").then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers), t.then(e => e.abi)]);
 				await c();
 				const l = new o.providers.Web3Provider(a()).getSigner(),
 					d = new o.Contract(e, i, l),
@@ -1481,7 +1481,7 @@
 			};
 			const m = 1;
 			async function p(e, t, r, a, s) {
-				const o = await n.e("vendors~Avatar~CryptoLibEthers~GovernanceTransferPointsModal~MarketplaceClaimModal~MarketplaceInFeed~1ea7787c").then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers),
+				const o = await n.e("vendors~Avatar~CollectiblesShowcaseUnit~CryptoLibEthers~GovernanceTransferPointsModal~MarketplaceCla~cd1771e1").then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers),
 					{
 						BigNumber: i
 					} = o,
@@ -1724,4 +1724,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.0d4bb9cd9709f6ea2043.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.04f0237834d94d274976.js.map

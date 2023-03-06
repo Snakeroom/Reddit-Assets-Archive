@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-PostCreationForm-PredictionEditor-InactivityModal.c69b240b5733aa348258.js
-// Retrieved at 1/5/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-PostCreationForm-PredictionEditor-InactivityModal.07f77276fa43009ae613.js
+// Retrieved at 3/6/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-PostCreationForm-PredictionEditor-InactivityModal"], {
 		"./src/reddit/components/PostCreationForm/PredictionEditor/InactivityModal/index.m.less": function(t, e, n) {
@@ -39,7 +39,7 @@
 			}
 			e.default = () => {
 				const t = Object(d.d)(),
-					e = Object(d.e)(b.c) || "",
+					e = Object(d.e)(b.d) || "",
 					n = Object(d.e)(t => Object(_.b)(t, {
 						subredditId: e
 					}));
@@ -83,4 +83,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-PostCreationForm-PredictionEditor-InactivityModal.c69b240b5733aa348258.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-PostCreationForm-PredictionEditor-InactivityModal.07f77276fa43009ae613.js.map

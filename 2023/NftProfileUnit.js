@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NftProfileUnit.5d9bd89f02f6e553f0b3.js
-// Retrieved at 2/23/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NftProfileUnit.5b8532c5ae4f028c3019.js
+// Retrieved at 3/6/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NftProfileUnit"], {
 		"./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx": function(e, t, r) {
@@ -9,8 +9,8 @@
 			}));
 			var n = r("./src/config.ts"),
 				s = r("./src/lib/env/index.ts"),
-				c = r("./node_modules/react/index.js"),
-				i = r("./node_modules/react-redux/es/index.js"),
+				i = r("./node_modules/react/index.js"),
+				c = r("./node_modules/react-redux/es/index.js"),
 				a = r("./src/reddit/endpoints/governance/crypto.ts"),
 				o = r("./src/reddit/hooks/useTracking.ts"),
 				d = r("./src/reddit/selectors/experiments/econ/index.ts"),
@@ -28,16 +28,16 @@
 					SNOOVATAR_API_URL: `${n.a.snoovatarUrl}/api`
 				},
 				h = () => {
-					const e = Object(i.e)(l.a),
-						t = Object(i.e)(d.n),
-						r = Object(i.e)(u.b),
-						s = Object(i.e)(e => e.user.session),
+					const e = Object(c.e)(l.a),
+						t = Object(c.e)(d.o),
+						r = Object(c.e)(u.b),
+						s = Object(c.e)(e => e.user.session),
 						h = s ? s.accessToken : "",
 						E = s ? new Date(s.expires).getTime() : 1,
-						O = Object(i.e)(p.fb),
+						O = Object(c.e)(p.fb),
 						k = Object(o.a)(),
 						y = b ? a.a.Rinkeby : a.a.Ethereum,
-						_ = Object(c.useMemo)(() => ({
+						_ = Object(i.useMemo)(() => ({
 							headers: {
 								Authorization: `Bearer ${h}`
 							},
@@ -53,7 +53,7 @@
 								NO_VAULT: !0
 							} : {}
 						},
-						x = Object(c.useCallback)(e => {
+						x = Object(i.useCallback)(e => {
 							k(t => {
 								const r = m.o(t);
 								return {
@@ -68,7 +68,7 @@
 								}
 							})
 						}, [k]);
-					return Object(c.useMemo)(() => ({
+					return Object(i.useMemo)(() => ({
 						authHeaders: _,
 						config: j,
 						isNightMode: O,
@@ -86,8 +86,8 @@
 			r.r(t);
 			var n = r("./node_modules/react/index.js"),
 				s = r.n(n),
-				c = r("./node_modules/react-redux/es/index.js"),
-				i = r("./node_modules/@reddit/marketplace/marketplace.es.js"),
+				i = r("./node_modules/react-redux/es/index.js"),
+				c = r("./node_modules/@reddit/marketplace/marketplace.es.js"),
 				a = r("./src/reddit/actions/modal.ts"),
 				o = r("./node_modules/@loadable/component/dist/loadable.esm.js"),
 				d = r("./src/reddit/components/GlobalModalContainer/registry.ts"),
@@ -110,21 +110,23 @@
 				let {
 					className: t,
 					imageUrl: r,
-					origin: n
+					origin: n,
+					showDetailsCta: o
 				} = e;
-				const o = Object(c.d)(),
-					d = Object(h.a)();
+				const d = Object(i.d)(),
+					m = Object(h.a)();
 				Object(f.a)(l);
-				const m = Object(i.j)(r);
-				return m ? s.a.createElement("div", {
+				const E = Object(c.l)(r);
+				return E ? s.a.createElement("div", {
 					className: t
-				}, s.a.createElement(p.a, null, s.a.createElement(s.a.Fragment, null, s.a.createElement(i.h, {
-					imageUrl: r
-				}), s.a.createElement(i.g, {
+				}, s.a.createElement(p.a, null, s.a.createElement(s.a.Fragment, null, s.a.createElement(c.h, {
+					imageUrl: r,
+					hideCardNaming: !0
+				}), o && s.a.createElement(c.g, {
 					className: O.a.detailsButton,
 					onClick: () => {
-						d(Object(b.k)(n)), o(Object(a.h)(u.a.ECON_NFT_PRODUCT_DETAILS, {
-							itemId: m
+						m(Object(b.k)(n)), d(Object(a.h)(u.a.ECON_NFT_PRODUCT_DETAILS, {
+							itemId: E
 						}))
 					}
 				})))) : null
@@ -133,19 +135,19 @@
 		"./src/reddit/components/GlobalModalContainer/registry.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
-				return c
-			})), r.d(t, "a", (function() {
 				return i
+			})), r.d(t, "a", (function() {
+				return c
 			}));
 			const n = {},
 				s = () => null;
 
-			function c(e, t) {
+			function i(e, t) {
 				if (e in n) throw new Error(`Modal with id ${e} already registered!`);
 				n[e] = t
 			}
 
-			function i(e) {
+			function c(e) {
 				return e && e in n ? n[e] : s
 			}
 		},
@@ -156,8 +158,8 @@
 			}));
 			var n = r("./node_modules/@reddit/marketplace/marketplace.es.js"),
 				s = r("./node_modules/react/index.js"),
-				c = r.n(s),
-				i = r("./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx");
+				i = r.n(s),
+				c = r("./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx");
 
 			function a() {
 				return (a = Object.assign || function(e) {
@@ -172,8 +174,8 @@
 				let {
 					children: t
 				} = e;
-				const r = Object(i.a)();
-				return c.a.createElement(n.d, a({}, r, {
+				const r = Object(c.a)();
+				return i.a.createElement(n.d, a({}, r, {
 					shouldContainModal: !1
 				}), t)
 			}
@@ -183,7 +185,7 @@
 			r.d(t, "a", (function() {
 				return n
 			})), r.d(t, "j", (function() {
-				return i
+				return c
 			})), r.d(t, "i", (function() {
 				return a
 			})), r.d(t, "h", (function() {
@@ -210,9 +212,9 @@
 				return O
 			}));
 			var n, s = r("./src/config.ts"),
-				c = r("./src/reddit/endpoints/governance/requester.ts");
+				i = r("./src/reddit/endpoints/governance/requester.ts");
 
-			function i(e) {
+			function c(e) {
 				switch (e) {
 					case n.Ethereum:
 					case n.EthTraderEthereum:
@@ -268,7 +270,7 @@
 				return e === n.ArbitrumRinkeby ? 5e3 : 3e4
 			}
 			async function u(e, t, r) {
-				return Object(c.a)(e, {
+				return Object(i.a)(e, {
 					method: "post",
 					endpoint: `${s.a.metaUrl}/crypto/${t}/challenges`,
 					data: {
@@ -278,14 +280,14 @@
 				})
 			}
 			async function l(e, t, r) {
-				return await Object(c.a)(e, {
+				return await Object(i.a)(e, {
 					method: "post",
 					endpoint: `${s.a.metaUrl}/crypto/${t}/registrations`,
 					data: r
 				})
 			}
 			async function m(e, t, r) {
-				return await Object(c.a)(e, {
+				return await Object(i.a)(e, {
 					method: "delete",
 					endpoint: `${s.a.metaUrl}/crypto/${t}/registrations/${r}`
 				})
@@ -318,7 +320,7 @@
 					amount: n
 				});
 			async function O(e, t) {
-				return await Object(c.a)(e, {
+				return await Object(i.a)(e, {
 					method: "put",
 					endpoint: `${s.a.metaUrl}/crypto/ethereum/transaction-intent`,
 					data: t
@@ -341,31 +343,31 @@
 		"./src/reddit/selectors/experiments/econ/marketplace.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return i
+				return c
 			})), r.d(t, "b", (function() {
 				return a
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/helpers/chooseVariant/index.ts"),
-				c = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const i = e => {
+				i = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
+			const c = e => {
 					return !(Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
 						experimentName: n.xe
 					}) === n.Od)
 				},
-				a = Object(c.a)(n.ye)
+				a = Object(i.a)(n.ye)
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return c
+				return i
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const c = Object(s.a)(n.yd)
+			const i = Object(s.a)(n.yd)
 		},
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProfileUnit.5d9bd89f02f6e553f0b3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProfileUnit.5b8532c5ae4f028c3019.js.map

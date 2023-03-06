@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.0ba9b69e14ebf3b94103.js
-// Retrieved at 2/23/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.0d2511fc60e2687703be.js
+// Retrieved at 3/6/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, o) {
@@ -1061,7 +1061,7 @@
 					S = !!(null === (b = null == _ ? void 0 : _[O]) || void 0 === b ? void 0 : b.length),
 					y = h.pages.modHub.modQueue[p].api.error;
 				if (h.pages.modHub.modQueue[p].api.pending || S && !y) return;
-				Object(m.p)(h) || await Object(u.e)(g, p, f)(t, o, s);
+				Object(m.q)(h) || await Object(u.e)(g, p, f)(t, o, s);
 				const R = o();
 				if (r()(R.pages.modHub.modQueue[p].api.error, "type") === n.L.AUTHENTICATION_ERROR) return Object(a.a)(t, R);
 				Object(c.i)(R, j, v), t(l.n({
@@ -1477,7 +1477,7 @@
 												comment: e,
 												parentId: m
 											},
-											o = Object(Z.f)(u),
+											o = Object(Z.g)(u),
 											s = u.platform.currentPage && u.platform.currentPage.routeMatch;
 										let r = o && s && Object($.a)(s, u, u.posts.models[e.postId]);
 										if (r || (r = Object(x.a)(e.postId, null, {
@@ -1946,4 +1946,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.0ba9b69e14ebf3b94103.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.0d2511fc60e2687703be.js.map

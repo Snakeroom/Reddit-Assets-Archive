@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.036dec893831359b35b9.js
-// Retrieved at 2/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.00f4a28b778638889740.js
+// Retrieved at 3/6/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ModQueuePages~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -739,7 +739,7 @@
 						gqlContext: o
 					} = n;
 					const r = s(),
-						i = Object(de.e)(r);
+						i = Object(de.f)(r);
 					let a = "";
 					i && (a = i.name);
 					const {
@@ -811,7 +811,7 @@
 									postId: r
 								}),
 								author: y,
-								subredditId: (null === (v = Object(de.e)(g)) || void 0 === v ? void 0 : v.id) || ""
+								subredditId: (null === (v = Object(de.f)(g)) || void 0 === v ? void 0 : v.id) || ""
 							}) : void 0
 						}));
 						const k = c.commentMode;
@@ -829,7 +829,7 @@
 									draftKey: j,
 									upload: P
 								})), t) {
-								const e = Object(de.i)(g);
+								const e = Object(de.j)(g);
 								Object(i.a)(!!e)
 							}
 							const n = Object(ce.G)(h(), {
@@ -873,7 +873,7 @@
 						draftKey: d,
 						formData: l,
 						editorMode: m
-					} = e, u = s(), p = Object(de.e)(u);
+					} = e, u = s(), p = Object(de.f)(u);
 					let b = "";
 					if (p && (b = p.name), z.d.enableToxicityWarning(u)) {
 						if (!(await A(o(), b, l, m))) return void t(Object(c.i)(ge))
@@ -940,7 +940,7 @@
 								postId: _.postId
 							}),
 							author: C,
-							subredditId: (null === (l = Object(de.e)(x)) || void 0 === l ? void 0 : l.id) || "",
+							subredditId: (null === (l = Object(de.f)(x)) || void 0 === l ? void 0 : l.id) || "",
 							parentId: _.id
 						}) : void 0
 					})), v || o(Te({
@@ -960,7 +960,7 @@
 								depth: b + 1,
 								upload: S
 							})), t) {
-							const e = Object(de.i)(x);
+							const e = Object(de.j)(x);
 							Object(i.a)(!!e)
 						}
 					} else {
@@ -2409,7 +2409,7 @@
 												comment: e,
 												parentId: u
 											},
-											s = Object(X.f)(l),
+											s = Object(X.g)(l),
 											n = l.platform.currentPage && l.platform.currentPage.routeMatch;
 										let o = s && n && Object(H.a)(n, l, l.posts.models[e.postId]);
 										if (o || (o = Object(S.a)(e.postId, null, {
@@ -7275,7 +7275,7 @@
 					pageLayer: b
 				})), z = Object(i.e)(e => Object(f.s)(e, {
 					pageLayer: b
-				})), W = Object(i.e)(e => Object(C.i)(e));
+				})), W = Object(i.e)(e => Object(C.j)(e));
 				var K, V, G;
 
 				function H() {
@@ -7831,7 +7831,7 @@
 				l = s("./src/telemetry/index.ts"),
 				m = s("./src/reddit/constants/richTextJson.ts");
 			const u = e => {
-					const t = Object(d.o)(e);
+					const t = Object(d.p)(e);
 					return {
 						source: "comment_composer",
 						action: o.c.CLICK,
@@ -9339,14 +9339,14 @@
 						experimentEligibilitySelector: o.a,
 						experimentName: n.lc
 					});
-					return !(!t || Object(n.pg)(t))
+					return !(!t || Object(n.qg)(t))
 				},
 				i = e => {
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
 						experimentName: n.Yb
 					});
-					return !(!t || Object(n.pg)(t))
+					return !(!t || Object(n.qg)(t))
 				}
 		},
 		"./src/reddit/selectors/experiments/commentSearchPdp.ts": function(e, t, s) {
@@ -9466,7 +9466,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(o.pg)(t)
+					return Boolean(t) && !Object(o.qg)(t)
 				},
 				d = Object(n.a)(a, r.d, (e, t) => e && !t)
 		},
@@ -9562,4 +9562,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.036dec893831359b35b9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.00f4a28b778638889740.js.map

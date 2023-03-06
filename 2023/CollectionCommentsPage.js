@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.3132b3cc49860454140f.js
-// Retrieved at 2/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.9f3f23570a9f77b3e6b1.js
+// Retrieved at 3/6/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -790,7 +790,7 @@
 					} = n, v = h.pages.comments.keyToHeadCommentId.hasOwnProperty(b), _ = h.pages.comments.api.fullyLoaded[b], C = h.pages.comments.api.error[b];
 					if (h.pages.comments.api.pending[b] || v && !C) {
 						if (v && !h.sidebarPromotedPosts.firstFetch) {
-							const e = Object(R.i)(h) ? A.a.COMMENTS_OVERLAY : A.a.COMMENTS;
+							const e = Object(R.j)(h) ? A.a.COMMENTS_OVERLAY : A.a.COMMENTS;
 							window.addEventListener("load", () => {
 								i(Object(d.b)(e))
 							})
@@ -832,7 +832,7 @@
 							key: b,
 							postId: t
 						}));
-						const o = Object(R.i)(h) ? A.a.COMMENTS_OVERLAY : A.a.COMMENTS;
+						const o = Object(R.j)(h) ? A.a.COMMENTS_OVERLAY : A.a.COMMENTS;
 						i(Object(d.b)(o))
 					}
 					if (w.ok) {
@@ -1764,7 +1764,7 @@
 					const t = this.resolve(e);
 					return !1 !== this.resolved[t] && !!s.m[t]
 				},
-				importAsync: () => Promise.all([s.e("vendors~Avatar~ChatPost~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~RealtimeGQLSubscr~bfab320d"), s.e("ChatPost")]).then(s.bind(null, "./src/reddit/components/CommentsChat/index.tsx")),
+				importAsync: () => Promise.all([s.e("vendors~Avatar~ChatPost~CollectiblesShowcaseUnit~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProf~7d152600"), s.e("ChatPost")]).then(s.bind(null, "./src/reddit/components/CommentsChat/index.tsx")),
 				requireAsync(e) {
 					const t = this.resolve(e);
 					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -6202,7 +6202,7 @@
 							canonicalUrl: n.canonical_url,
 							baseUrl: n.base_url,
 							hostPostId: t,
-							shouldShowLinkedPosts: !Object(f.pg)(s) && !Object(I.a)(s),
+							shouldShowLinkedPosts: !Object(f.qg)(s) && !Object(I.a)(s),
 							subreddit: r
 						}
 					}
@@ -6265,7 +6265,7 @@
 						hostPostData: d,
 						listingBelowVariant: c
 					} = e;
-					if (c && !Object(f.pg)(c) && !Object(I.a)(c) && !i) return a.a.createElement("div", {
+					if (c && !Object(f.qg)(c) && !Object(I.a)(c) && !i) return a.a.createElement("div", {
 						className: K.a.smallBanner
 					});
 					const {
@@ -9775,7 +9775,7 @@
 				commentSearchPdp: k.a,
 				isSubredditDiscoveryCrosspostEnabled: j.a,
 				headComment: E.x,
-				lastPage: P.m,
+				lastPage: P.n,
 				post: E.J
 			}), T = e => {
 				var t, s;
@@ -11328,7 +11328,7 @@
 				u = c.getUTCDate(),
 				p = Date.UTC(2008, 0, 1),
 				b = Date.UTC(l, m - 7, u),
-				h = Object(n.a)(e => Object(a.f)(e), e => Object(o.a)(e), (e, t) => {
+				h = Object(n.a)(e => Object(a.g)(e), e => Object(o.a)(e), (e, t) => {
 					let {
 						post: s
 					} = t;
@@ -11346,4 +11346,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.3132b3cc49860454140f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.9f3f23570a9f77b3e6b1.js.map

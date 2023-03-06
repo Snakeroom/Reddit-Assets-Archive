@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.52a8bae8ff3b6adebb2e.js
-// Retrieved at 2/23/2023, 8:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.7cbfdf1d74193f8eb060.js
+// Retrieved at 3/6/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -5679,7 +5679,7 @@
 				user: B.m,
 				isPrivateSubredditContributorRequestPending: e => (e => {
 					if (!Object(B.S)(e)) return !1;
-					const t = Object(R.d)(e);
+					const t = Object(R.e)(e);
 					if (!t) return !1;
 					const n = Object(B.h)(e, t);
 					if (!n) return !1;
@@ -8956,7 +8956,7 @@
 				isSearchDropdownOpened: e => e.search.isDropdownOpen,
 				isHeaderDropdownOpened: e => e.header.isSubscriptionsDropdownOpen,
 				isLoggedIn: P.S,
-				queryParams: e => Object(T.q)(e)
+				queryParams: e => Object(T.r)(e)
 			}), B = Object(i.b)(R, e => ({
 				closeSearchDropdown: () => e(Object(m.l)()),
 				closeHeaderDropdown: () => e(Object(l.f)()),
@@ -10718,7 +10718,7 @@
 					let {
 						pageLayer: n
 					} = t;
-					return n && Object(p.n)(e, {
+					return n && Object(p.o)(e, {
 						page: n
 					})
 				}, (e, t) => {
@@ -13234,7 +13234,7 @@
 				l = n("./src/reddit/selectors/posts.ts");
 			const u = Object(i.c)({
 					postCount: l.M,
-					previousPageIsOverlay: d.p,
+					previousPageIsOverlay: d.q,
 					tabBadged: e => e.tabBadged
 				}),
 				m = Object(o.b)(u);
@@ -25017,7 +25017,7 @@
 						experimentEligibilitySelector: o.S,
 						experimentName: r.xd
 					});
-					return !(!t || Object(r.pg)(t))
+					return !(!t || Object(r.qg)(t))
 				},
 				a = e => {
 					return Object(s.c)(e, {
@@ -25057,8 +25057,8 @@
 					var t;
 					const n = m(e);
 					if (!n) return !1;
-					let r = Object(c.r)(e),
-						o = Object(c.d)(e);
+					let r = Object(c.s)(e),
+						o = Object(c.e)(e);
 					if ("undefined" != typeof window && !o) {
 						const e = Object(a.a)("subreddit", window.location.href);
 						(o = null === (t = null == e ? void 0 : e.components) || void 0 === t ? void 0 : t.subredditName) && (r = s.Tb.SUBREDDIT)
@@ -25173,7 +25173,7 @@
 				p = n("./src/reddit/selectors/user.ts");
 			const b = e => e.subreddits.progressModule,
 				f = e => {
-					const t = Object(u.c)(e);
+					const t = Object(u.d)(e);
 					if (!t) return;
 					if (!Object(l.n)(e, {
 							subredditId: t
@@ -25867,4 +25867,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.52a8bae8ff3b6adebb2e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.7cbfdf1d74193f8eb060.js.map

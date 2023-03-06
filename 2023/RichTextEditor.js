@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.e1d28b0db2f86c38acc2.js
-// Retrieved at 2/23/2023, 8:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.44b5149543ef9b421fe8.js
+// Retrieved at 3/6/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -3670,7 +3670,7 @@
 					subreddit: T.s,
 					uploads: e => e.uploads,
 					user: S.m,
-					isCommentsPage: b.f
+					isCommentsPage: b.g
 				}),
 				H = Object(d.b)(W, (e, t) => ({
 					onCancel: t => e(g.b(t)),
@@ -3875,7 +3875,7 @@
 			const f = d.a.wrapped(c.a, "Banner", h.a),
 				b = Object(i.b)(() => Object(a.c)({
 					restrictions: m.q,
-					subreddit: u.e
+					subreddit: u.f
 				}));
 			t.a = b(e => {
 				let {
@@ -4504,4 +4504,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.e1d28b0db2f86c38acc2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.44b5149543ef9b421fe8.js.map

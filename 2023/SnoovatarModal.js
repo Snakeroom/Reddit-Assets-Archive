@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SnoovatarModal.2f7609f3a82af8ea030b.js
-// Retrieved at 2/23/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SnoovatarModal.b50b0f3c8c50c8acbd5f.js
+// Retrieved at 3/6/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SnoovatarModal"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, r) {
@@ -57,7 +57,7 @@
 					g = () => S(Object(i.openLoginModal)()),
 					A = Object(v.a)();
 				Object(n.useEffect)(() => {
-					b(u.r)
+					b(u.s)
 				}, [b]), Object(n.useEffect)(() => {
 					E(!0)
 				}, []);
@@ -71,7 +71,7 @@
 					activeMeSubpage: N || void 0,
 					activeDetails: h || void 0,
 					shopTabState: y || void 0
-				}), [h, k, N, y]), C = Object(o.e)(e => !Object(O.S)(e) && Object(m.v)(e));
+				}), [h, k, N, y]), C = Object(o.e)(e => !Object(O.S)(e) && Object(m.w)(e));
 				if (!_ || !f) return null;
 				if (C) return a.a.createElement("div", {
 					className: Object(c.a)(x.a.container, {
@@ -132,7 +132,7 @@
 				},
 				x = () => {
 					const e = Object(o.e)(u.a),
-						t = Object(o.e)(d.n),
+						t = Object(o.e)(d.o),
 						r = Object(o.e)(l.b),
 						n = Object(o.e)(e => e.user.session),
 						x = n ? n.accessToken : "",
@@ -250,4 +250,4 @@
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.2f7609f3a82af8ea030b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.b50b0f3c8c50c8acbd5f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsPermissionPromptLoader.08f12a412923bdf02d93.js
-// Retrieved at 2/23/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsPermissionPromptLoader.7946eabe7022f1d263a8.js
+// Retrieved at 3/6/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsPermissionPromptLoader", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -465,4 +465,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPermissionPromptLoader.08f12a412923bdf02d93.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPermissionPromptLoader.7946eabe7022f1d263a8.js.map
