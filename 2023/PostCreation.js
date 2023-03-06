@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.d5aae5683a5eada565b9.js
-// Retrieved at 3/6/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.45c90d2106c47e36c34e.js
+// Retrieved at 3/6/2023, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit~StandalonePostPage", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -9268,7 +9268,7 @@
 				} = e, o = Object(s.f)().getState();
 				return (null === (t = Object(s.e)(e => Object(x.a)(e, {
 					experience: _.bb.LanguagePreferenceBottomSheet
-				}))) || void 0 === t ? void 0 : t.value) && Object(y.a)(o) ? r.a.createElement(j, {
+				}))) || void 0 === t ? void 0 : t.value) && Object(y.b)(o) ? r.a.createElement(j, {
 					gqlContext: n
 				}) : null
 			})
@@ -39499,9 +39499,9 @@
 			"use strict";
 			n.d(t, "c", (function() {
 				return a
-			})), n.d(t, "a", (function() {
-				return c
 			})), n.d(t, "b", (function() {
+				return c
+			})), n.d(t, "a", (function() {
 				return d
 			}));
 			var o = n("./node_modules/reselect/es/index.js"),
@@ -39520,7 +39520,7 @@
 					experimentEligibilitySelector: i.S,
 					experimentName: r.Sb,
 					expEventOverride: !1
-				}), e => e === r.ed.BottomSheet)
+				}), e => !!e)
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
 			"use strict";
@@ -40211,4 +40211,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.d5aae5683a5eada565b9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.45c90d2106c47e36c34e.js.map

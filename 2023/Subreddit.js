@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.7cbfdf1d74193f8eb060.js
-// Retrieved at 3/6/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.f4912f2e999e2552cbca.js
+// Retrieved at 3/6/2023, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -25594,9 +25594,9 @@
 			"use strict";
 			n.d(t, "c", (function() {
 				return a
-			})), n.d(t, "a", (function() {
-				return c
 			})), n.d(t, "b", (function() {
+				return c
+			})), n.d(t, "a", (function() {
 				return d
 			}));
 			var r = n("./node_modules/reselect/es/index.js"),
@@ -25615,7 +25615,7 @@
 					experimentEligibilitySelector: i.S,
 					experimentName: s.Sb,
 					expEventOverride: !1
-				}), e => e === s.ed.BottomSheet)
+				}), e => !!e)
 		},
 		"./src/reddit/selectors/newPostPill.ts": function(e, t, n) {
 			"use strict";
@@ -25867,4 +25867,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.7cbfdf1d74193f8eb060.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.f4912f2e999e2552cbca.js.map
