@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.c4ac445ea8585b4b740d.js
-// Retrieved at 3/6/2023, 12:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.0628a57a1586932b539a.js
+// Retrieved at 3/6/2023, 2:20:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1404,7 +1404,7 @@
 						"CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32": "1fd1a939ddc5d853977e",
 						"CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657": "393f58045b98f9cd99ae",
 						"ModQueuePages~reddit-components-MediumPost": "1eae43ec43b32e9e1b9d",
-						ModQueuePages: "bf0ee14e1e8096db8d3d",
+						ModQueuePages: "999d89e4aaa66c844979",
 						"CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5": "c340df3ccacdead6b99e",
 						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab": "a605853c940ccb468e7d",
 						"CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c": "e2f5c0e753c3ff1a30fa",
@@ -1553,7 +1553,7 @@
 						"vendors~PostCreation": "d59cf5362088f66f3ecc",
 						PostCreation: "d5aae5683a5eada565b9",
 						"vendors~ModerationPages": "4afdb9fb9fc356131054",
-						ModerationPages: "280af0d81cb9fb7b2b4b",
+						ModerationPages: "dbd5d9dbaa2f9787e799",
 						"vendors~ModStatsChart~Settings~ViewsTooltip": "ca7c845d62fd39d960b6",
 						"vendors~Settings": "86b1cfc53320ea8eef91",
 						"Settings~SubredditWiki": "ff8232f57e063d66e791",
@@ -1696,7 +1696,7 @@
 						"reddit-components-SubredditContent-EventPostContent": "5f558056737129c14f86",
 						"reddit-components-SubredditContent-PredictionsContent": "db1004fecdd034e9f74e",
 						"reddit-components-Wiki-ModHubWikiManagement": "b04bcc67df741983cc43",
-						"mod-nav": "53441d187823effd698c",
+						"mod-nav": "fae6339e0d0d701b2199",
 						AddSocialLinkModal: "093f9c8e716f9648acb3",
 						CommunityNotificationSettings: "41ba00e732e7741b1e01",
 						EmailNotificationSettings: "08522c7cf217a2030191",
@@ -1791,4 +1791,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.c4ac445ea8585b4b740d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.0628a57a1586932b539a.js.map
