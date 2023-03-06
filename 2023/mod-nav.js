@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/mod-nav.fae6339e0d0d701b2199.js
-// Retrieved at 3/6/2023, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/mod-nav.bb580c07fb9a69a94be0.js
+// Retrieved at 3/6/2023, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["mod-nav"], {
 		"./node_modules/@reddit/shreddit.components.mod-nav/dist/index.js": function(e, t, i) {
@@ -48,7 +48,7 @@
 					return s > 3 && l && Object.defineProperty(t, i, l), l
 				};
 			! function(e) {
-				e.ModQueue = "ModQueue", e.Modmail = "Modmail", e.ScheduledPosts = "ScheduledPosts", e.UserManagement = "UserManagement", e.Insights = "Insights", e.RulesAndRemovalReasons = "RulesAndRemovalReasons", e.UserFlair = "UserFlair", e.ContentControls = "ContentConrols", e.ModLog = "ModLog", e.Automod = "Automod", e.Safety = "Safety", e.Wiki = "Wiki", e.PostFlair = "PostFlair", e.Predictions = "Predictions", e.InstalledApps = "InstalledApps", e.BrowseApps = "BrowseApps", e.GeneralSettings = "GeneralSettings", e.PostsAndComments = "PostsAndComments", e.CommunityAppearance = "CommunityAppearance", e.Notifications = "Notifications", e.ContentRating = "ContentRating", e.AwardsBadgesAndEmoji = "AwardsBadgesAndEmoji", e.ModHelpCenter = "ModHelpCenter", e.ModCodeOfConduct = "ModCodeOfConduct", e.ModSupport = "ModSupport", e.ModHelp = "ModHelp", e.ContactReddit = "ContactReddit"
+				e.ModQueue = "ModQueue", e.Modmail = "Modmail", e.ScheduledPosts = "ScheduledPosts", e.UserManagement = "UserManagement", e.Insights = "Insights", e.RulesAndRemovalReasons = "RulesAndRemovalReasons", e.UserFlair = "UserFlair", e.ContentControls = "ContentConrols", e.ModLog = "ModLog", e.Automod = "Automod", e.Safety = "Safety", e.Wiki = "Wiki", e.PostFlair = "PostFlair", e.Predictions = "Predictions", e.InstalledApps = "InstalledApps", e.BrowseApps = "BrowseApps", e.GeneralSettings = "GeneralSettings", e.PostsAndComments = "PostsAndComments", e.CommunityAppearance = "CommunityAppearance", e.Notifications = "Notifications", e.ContentRating = "ContentRating", e.AwardsAndEmojis = "AwardsAndEmojis", e.ModHelpCenter = "ModHelpCenter", e.ModCodeOfConduct = "ModCodeOfConduct", e.ModSupport = "ModSupport", e.ModHelp = "ModHelp", e.ContactReddit = "ContactReddit"
 			}(d || (d = {}));
 			let v = class extends o.a {
 				constructor() {
@@ -300,12 +300,12 @@
 									desc: "Link: to content rating settings page"
 								})
 							},
-							[d.AwardsBadgesAndEmoji]: {
+							[d.AwardsAndEmojis]: {
 								eventNoun: "awards_badges_and_emojis",
 								href: [`/r/${e}/about/awards`, `/r/${e}/about/badges`, `/r/${e}/about/emojis`, `/r/${e}/about/emotes`],
 								iconOutline: o.c`<icon-emoji size="md"></icon-emoji>`,
 								iconFill: o.c`<icon-emoji fill size="md"></icon-emoji>`,
-								text: Object(n.b)("Awards, Badges, Emoji", {
+								text: Object(n.b)("Awards and Emojis", {
 									desc: "Link: to awards and emoji pages"
 								})
 							},
@@ -415,7 +415,7 @@
         ${null!==(w=this.modPermissions)&&void 0!==w&&w.isConfigEditingAllowed?this.renderLink(d.CommunityAppearance,f):""}
         ${this.renderLink(d.Notifications,f)}
         ${this.renderLink(d.ContentRating,f)}
-        ${null!==(b=this.modPermissions)&&void 0!==b&&b.isConfigEditingAllowed?this.renderLink(d.AwardsBadgesAndEmoji,f):""}
+        ${null!==(b=this.modPermissions)&&void 0!==b&&b.isConfigEditingAllowed?this.renderLink(d.AwardsAndEmojis,f):""}
         ${this.isPredictionsTournamentAllowed?this.renderLink(d.Predictions,f):""}
         <hr />
         <span class="uppercase font-semibold text-12 leading-4 py-[6px] whitespace-nowrap ml-md"
@@ -469,4 +469,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/mod-nav.fae6339e0d0d701b2199.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/mod-nav.bb580c07fb9a69a94be0.js.map
