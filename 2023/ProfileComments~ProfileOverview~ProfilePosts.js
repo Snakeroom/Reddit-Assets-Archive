@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts.84e81b1b827188bed50b.js
-// Retrieved at 3/7/2023, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts.1bd200d1cb76805ae424.js
+// Retrieved at 3/7/2023, 3:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePosts", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -1953,300 +1953,200 @@
 		"./src/reddit/components/Upsell/NsfwBlocking/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return z
+				return B
 			}));
-			var r, s = n("./src/config.ts"),
-				a = n("./node_modules/fbt/lib/FbtPublic.js"),
-				i = n("./node_modules/react/index.js"),
-				o = n.n(i),
-				c = n("./node_modules/react-redux/es/index.js"),
-				l = n("./node_modules/react-router-redux/es/index.js"),
-				d = n("./src/higherOrderComponents/asModal/helpers.ts"),
-				u = n("./src/lib/classNames/index.ts"),
-				m = n("./src/lib/CSSVariableProvider/withTheme.tsx"),
-				p = n("./src/reddit/actions/login.ts"),
-				_ = n("./src/reddit/actions/modal.ts"),
-				h = n("./src/reddit/components/Footer/index.tsx"),
-				b = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				f = n("./src/reddit/constants/experiments.ts"),
-				g = n("./src/reddit/controls/Button/index.tsx"),
-				x = n("./src/reddit/helpers/counters/nsfwblocking.ts"),
-				y = n("./src/lib/constants/index.ts"),
-				v = n("./src/lib/sample/index.ts"),
-				k = n("./src/telemetry/helpers/sendCounter.ts");
-			! function(e) {
-				e.Continue = "continue", e.Dismiss = "dismiss", e.Login = "login", e.View = "view"
-			}(r || (r = {}));
-			const E = e => {
-				Object(x.b)() || Object(k.b)(y.o.Redesign, {
-					type: k.a.NsfwBypassableBlocking,
-					data: {
-						action: e
-					}
-				})
-			};
-			var C = n("./src/reddit/selectors/telemetry.ts");
-			const w = "nsfw_dialog_bypassable";
-			var j;
-			! function(e) {
-				e.BLACK = "#0F1A1C", e.DEFAULT = "#FF585B"
-			}(j || (j = {}));
-			var F = e => o.a.createElement("svg", {
-					className: e.className,
-					fill: "none",
-					height: "60",
-					viewBox: "0 0 60 60",
-					xmlns: "http://www.w3.org/2000/svg",
-					width: "60"
-				}, o.a.createElement("path", {
-					d: "M34.87 27.6302C35.4007 27.9589 36.0158 28.1257 36.64 28.1102C37.2902 28.1403 37.9354 27.9841 38.5 27.6602C38.9989 27.4003 39.4148 27.0052 39.7 26.5202C40.004 26.0401 40.1654 25.4835 40.1654 24.9152C40.1654 24.3469 40.004 23.7903 39.7 23.3102C39.4148 22.8252 38.9989 22.4302 38.5 22.1702C37.9681 21.8768 37.3671 21.7318 36.76 21.7502C36.1864 21.7434 35.6198 21.8773 35.11 22.1402C34.6039 22.3874 34.1776 22.7721 33.88 23.2502C33.5564 23.7276 33.3887 24.2936 33.4 24.8702C33.3891 25.429 33.5346 25.9797 33.82 26.4602C34.0597 26.9366 34.4222 27.3405 34.87 27.6302Z",
-					fill: e.fill || j.DEFAULT
-				}), o.a.createElement("path", {
-					d: "M38.68 33.0002C38.0443 32.6933 37.3457 32.5392 36.64 32.5502C35.9438 32.5394 35.255 32.6936 34.63 33.0002C34.05 33.278 33.5609 33.715 33.22 34.2602C32.8649 34.7654 32.6744 35.3678 32.6744 35.9852C32.6744 36.6026 32.8649 37.205 33.22 37.7102C33.5748 38.2212 34.0623 38.6257 34.63 38.8802C35.2562 39.1836 35.9442 39.3376 36.64 39.3302C37.3454 39.3379 38.0432 39.184 38.68 38.8802C39.2591 38.6169 39.7565 38.2023 40.12 37.6802C40.4537 37.1836 40.6313 36.5985 40.63 36.0002C40.6324 35.383 40.4552 34.7784 40.12 34.2602C39.7602 33.7199 39.2632 33.2851 38.68 33.0002Z",
-					fill: e.fill || j.DEFAULT
-				}), o.a.createElement("path", {
-					d: "M54.52 20.1902L39.31 4.9802C38.0246 3.68674 36.4962 2.66024 34.8126 1.95977C33.129 1.25929 31.3235 0.898682 29.5 0.898682C27.6765 0.898682 25.871 1.25929 24.1874 1.95977C22.5038 2.66024 20.9753 3.68674 19.69 4.9802L4.47996 20.1902C3.1865 21.4756 2.16 23.004 1.45952 24.6876C0.75905 26.3712 0.398438 28.1767 0.398438 30.0002C0.398438 31.8237 0.75905 33.6292 1.45952 35.3128C2.16 36.9964 3.1865 38.5249 4.47996 39.8102L19.69 55.0202C20.9753 56.3137 22.5038 57.3402 24.1874 58.0406C25.871 58.7411 27.6765 59.1017 29.5 59.1017C31.3235 59.1017 33.129 58.7411 34.8126 58.0406C36.4962 57.3402 38.0246 56.3137 39.31 55.0202L54.52 39.8102C55.8134 38.5249 56.8399 36.9964 57.5404 35.3128C58.2409 33.6292 58.6015 31.8237 58.6015 30.0002C58.6015 28.1767 58.2409 26.3712 57.5404 24.6876C56.8399 23.004 55.8134 21.4756 54.52 20.1902ZM23.92 43.5002H18.19V24.8402L13.27 27.0002V21.6602L22.27 17.5802H23.95L23.92 43.5002ZM44.92 40.1102C44.0432 41.3133 42.8485 42.2483 41.47 42.8102C39.9566 43.453 38.3292 43.7843 36.685 43.7843C35.0407 43.7843 33.4133 43.453 31.9 42.8102C30.5371 42.2355 29.3552 41.3025 28.48 40.1102C27.651 38.9798 27.2091 37.612 27.22 36.2102C27.2015 34.9552 27.5565 33.723 28.24 32.6702C28.9308 31.5703 29.8778 30.6542 31 30.0002C30.1811 29.3345 29.5237 28.4921 29.0768 27.5361C28.63 26.5801 28.4054 25.5354 28.42 24.4802C28.3942 23.1593 28.7708 21.8619 29.5 20.7602C30.2375 19.6425 31.2781 18.758 32.5 18.2102C33.8234 17.6075 35.2607 17.2956 36.715 17.2956C38.1692 17.2956 39.6065 17.6075 40.93 18.2102C42.1475 18.765 43.1863 19.648 43.93 20.7602C44.6492 21.8441 45.0255 23.1195 45.01 24.4202C45.0008 25.4585 44.7654 26.4823 44.32 27.4202C43.8573 28.3643 43.2034 29.202 42.4 29.8802C43.5275 30.5247 44.4842 31.43 45.19 32.5202C45.8864 33.5797 46.2519 34.8224 46.24 36.0902C46.2595 37.5496 45.7717 38.9705 44.86 40.1102H44.92Z",
-					fill: e.fill || j.DEFAULT
-				})),
-				N = n("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
-				D = n("./src/reddit/selectors/experiments/nsfwBypassableBlockingExperiment.ts"),
-				O = n("./src/reddit/actions/contentGate.ts"),
-				S = n("./src/reddit/components/Upsell/NsfwBlocking/index.m.less"),
-				L = n.n(S);
-			const B = {
-					d2x_nsfw_signup_blocking_de_v1: `${s.a.assetPath}/img/nsfw-blocking-promo/d2x_nsfw_signup_blocking_de_v1_QR-code.jpeg`,
-					d2x_nsfw_signup_blocking_non_us_v1: `${s.a.assetPath}/img/nsfw-blocking-promo/d2x_nsfw_signup_blocking_de_v1_QR-code.jpeg`
+			var r = n("./src/config.ts"),
+				s = n("./node_modules/fbt/lib/FbtPublic.js"),
+				a = n("./node_modules/react/index.js"),
+				i = n.n(a),
+				o = n("./node_modules/react-redux/es/index.js"),
+				c = n("./node_modules/react-router-redux/es/index.js"),
+				l = n("./src/higherOrderComponents/asModal/helpers.ts"),
+				d = n("./src/lib/classNames/index.ts"),
+				u = n("./src/lib/CSSVariableProvider/withTheme.tsx"),
+				m = n("./src/reddit/actions/login.ts"),
+				p = n("./src/reddit/actions/modal.ts"),
+				_ = n("./src/reddit/components/Footer/index.tsx"),
+				h = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				b = n("./src/reddit/constants/experiments.ts"),
+				f = n("./src/reddit/controls/Button/index.tsx"),
+				g = n("./src/reddit/helpers/counters/nsfwblocking.ts"),
+				x = n("./src/reddit/helpers/counters/nsfwBypassableBlocking.ts"),
+				y = n("./src/reddit/helpers/trackers/nsfwSignupBypassableUpsell.ts"),
+				v = n("./src/reddit/helpers/trackers/nsfwSignupUpsell.ts"),
+				k = n("./src/reddit/icons/svgs/NSFWWarningIcon/index.tsx"),
+				E = n("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
+				C = n("./src/reddit/selectors/experiments/nsfwBypassableBlockingExperiment.ts"),
+				w = n("./src/reddit/actions/contentGate.ts"),
+				j = n("./src/reddit/components/Upsell/NsfwBlocking/index.m.less"),
+				F = n.n(j);
+			const N = {
+					d2x_nsfw_signup_blocking_de_v1: `${r.a.assetPath}/img/nsfw-blocking-promo/d2x_nsfw_signup_blocking_de_v1_QR-code.jpeg`,
+					d2x_nsfw_signup_blocking_non_us_v1: `${r.a.assetPath}/img/nsfw-blocking-promo/d2x_nsfw_signup_blocking_de_v1_QR-code.jpeg`
 				},
-				A = () => a.fbt._("Log In", null, {
+				D = () => s.fbt._("Log In", null, {
 					hk: "4BITk"
 				}),
-				P = () => a.fbt._("I'm not over 18", null, {
+				O = () => s.fbt._("I'm not over 18", null, {
 					hk: "11UX9Q"
 				}),
-				I = e => {
-					const t = Object(c.d)(),
-						n = Object(b.b)(),
-						r = Object(c.e)(N.g),
-						s = Object(i.useCallback)(() => {
-							r === N.a.Blurred && t(Object(_.k)({
-								actionSource: _.a.NsfwBlockingModal
+				S = e => {
+					const t = Object(o.d)(),
+						n = Object(h.b)(),
+						r = Object(o.e)(E.g),
+						d = Object(a.useCallback)(() => {
+							r === E.a.Blurred && t(Object(p.k)({
+								actionSource: p.a.NsfwBlockingModal
 							}))
 						}, [t, r]),
-						u = (e => e ? o.a.createElement("div", {
-							className: L.a.cta
-						}, a.fbt._("To show mature content,", null, {
+						u = (e => e ? i.a.createElement("div", {
+							className: F.a.cta
+						}, s.fbt._("To show mature content,", null, {
 							hk: "5xfDy"
-						}), o.a.createElement("br", null), a.fbt._("log in to confirm you're over 18", null, {
+						}), i.a.createElement("br", null), s.fbt._("log in to confirm you're over 18", null, {
 							hk: "29imoi"
-						})) : o.a.createElement("div", {
-							className: L.a.cta
-						}, a.fbt._("Log in to confirm you're over 18", null, {
+						})) : i.a.createElement("div", {
+							className: F.a.cta
+						}, s.fbt._("Log in to confirm you're over 18", null, {
 							hk: "RUR2Z"
-						})))(r === N.a.Blurred);
-					return Object(i.useEffect)(() => {
-						Object(x.d)(r)
-					}, [r]), o.a.createElement("div", {
-						className: L.a.mainCta
-					}, o.a.createElement(F, null), u, o.a.createElement("div", {
-						className: L.a.contentTitle
-					}, e.contentTitle), o.a.createElement("div", {
-						className: L.a.warning
-					}, (() => a.fbt._("This page may contain sensitive or adult content that's not for everyone. To view it, confirm your age.", null, {
+						})))(r === E.a.Blurred);
+					return Object(a.useEffect)(() => {
+						Object(g.d)(r)
+					}, [r]), i.a.createElement("div", {
+						className: F.a.mainCta
+					}, i.a.createElement(k.b, null), u, i.a.createElement("div", {
+						className: F.a.contentTitle
+					}, e.contentTitle), i.a.createElement("div", {
+						className: F.a.warning
+					}, (() => s.fbt._("This page may contain sensitive or adult content that's not for everyone. To view it, confirm your age.", null, {
 						hk: "3cUxXS"
-					}))()), o.a.createElement("div", {
-						className: L.a.buttonContainer
-					}, o.a.createElement(g.j, {
-						className: L.a.logIn,
+					}))()), i.a.createElement("div", {
+						className: F.a.buttonContainer
+					}, i.a.createElement(f.j, {
+						className: F.a.logIn,
 						onClick: () => {
-							n((() => e => ({
-								...Object(C.o)(e),
-								source: "xpromo",
-								action: "click",
-								noun: "nsfw_dialog",
-								actionInfo: {
-									...Object(C.d)(e)
-								}
-							}))()), s(), Object(x.c)(x.a.Login), t(Object(p.openLoginModal)())
+							n(Object(v.a)()), d(), Object(g.c)(g.a.Login), t(Object(m.openLoginModal)())
 						}
-					}, A()), o.a.createElement(g.j, {
-						className: L.a.cancel,
+					}, D()), i.a.createElement(f.j, {
+						className: F.a.cancel,
 						onClick: () => {
-							Object(d.b)(), n((() => e => ({
-								...Object(C.o)(e),
-								source: "xpromo",
-								action: "dismiss",
-								noun: "nsfw_dialog",
-								actionInfo: {
-									...Object(C.d)(e)
-								}
-							}))()), Object(x.c)(x.a.Dismiss), t(Object(l.b)("/"))
+							Object(l.b)(), n(Object(v.b)()), Object(g.c)(g.a.Dismiss), t(Object(c.b)("/"))
 						}
-					}, P())))
+					}, O())))
 				},
-				T = Object(m.a)(e => {
-					const t = `${s.a.assetPath}/img/nsfw-blocking-promo/snoovatar_anonymous_cropped.png`;
-					return o.a.createElement("div", {
-						className: L.a.qrCodeOuter
-					}, o.a.createElement("div", {
-						className: L.a.qrCodeInner
-					}, o.a.createElement("img", {
-						className: L.a.qrCode,
-						alt: a.fbt._("QR Code to get the Reddit app", null, {
+				L = Object(u.a)(e => {
+					const t = `${r.a.assetPath}/img/nsfw-blocking-promo/snoovatar_anonymous_cropped.png`;
+					return i.a.createElement("div", {
+						className: F.a.qrCodeOuter
+					}, i.a.createElement("div", {
+						className: F.a.qrCodeInner
+					}, i.a.createElement("img", {
+						className: F.a.qrCode,
+						alt: s.fbt._("QR Code to get the Reddit app", null, {
 							hk: "2uYhIL"
 						}),
 						src: e.qrCodeAsset
-					}), o.a.createElement("div", {
-						className: L.a.copyLine1
-					}, (() => a.fbt._("Download the app to use", null, {
+					}), i.a.createElement("div", {
+						className: F.a.copyLine1
+					}, (() => s.fbt._("Download the app to use", null, {
 						hk: "4i9ZxV"
-					}))()), o.a.createElement("div", {
-						className: L.a.copyLine2
-					}, (() => a.fbt._("Anonymous Browsing", null, {
+					}))()), i.a.createElement("div", {
+						className: F.a.copyLine2
+					}, (() => s.fbt._("Anonymous Browsing", null, {
 						hk: "rTJ9j"
-					}))()), o.a.createElement("img", {
-						className: L.a.sneakySnoo,
+					}))()), i.a.createElement("img", {
+						className: F.a.sneakySnoo,
 						src: t
 					})))
 				}),
-				z = e => {
-					const t = Object(b.b)(),
+				B = e => {
+					const t = Object(h.b)(),
 						{
 							contentTitle: n
 						} = e,
-						r = Object(c.e)(N.i),
-						s = Object(c.e)(N.j),
-						a = Object(c.e)(N.g),
-						i = Object(c.e)(D.c);
-					o.a.useEffect(() => {
-						i.isNewDesignVariant ? t((() => e => ({
-							...Object(C.o)(e),
-							source: "xpromo",
-							action: "view",
-							noun: w,
-							actionInfo: {
-								...Object(C.d)(e)
-							}
-						}))()) : t((() => e => ({
-							...Object(C.o)(e),
-							source: "xpromo",
-							action: "view",
-							noun: "nsfw_dialog",
-							actionInfo: {
-								...Object(C.d)(e)
-							}
-						}))())
-					}, [i, t]);
-					const l = a === N.a.Blurred ? h.a.White : a === N.a.NoPreview ? h.a.Grey : void 0;
-					return o.a.createElement("div", {
-						className: L.a.container
-					}, i.isNewDesignVariant ? o.a.createElement(M, {
+						r = Object(o.e)(E.i),
+						s = Object(o.e)(E.j),
+						a = Object(o.e)(E.g),
+						c = Object(o.e)(C.c);
+					i.a.useEffect(() => {
+						c.isNewDesignVariant ? t(Object(y.d)()) : t(Object(v.c)())
+					}, [c, t]);
+					const l = a === E.a.Blurred ? _.a.White : a === E.a.NoPreview ? _.a.Grey : void 0;
+					return i.a.createElement("div", {
+						className: F.a.container
+					}, c.isNewDesignVariant ? i.a.createElement(A, {
 						contentTitle: n
-					}) : o.a.createElement(I, {
+					}) : i.a.createElement(S, {
 						contentTitle: n
-					}), o.a.createElement("div", {
-						className: Object(u.a)(L.a.footerWrapper, {
-							[L.a.mIsModal]: a === N.a.Blurred
+					}), i.a.createElement("div", {
+						className: Object(d.a)(F.a.footerWrapper, {
+							[F.a.mIsModal]: a === E.a.Blurred
 						})
-					}, o.a.createElement(h.b, {
+					}, i.a.createElement(_.b, {
 						textColor: l
-					})), o.a.createElement(T, {
-						qrCodeAsset: (() => r === f.gd.Enabled || s === f.gb.BlurredPreview || s === f.gb.NoPreview ? B.d2x_nsfw_signup_blocking_de_v1 : B.d2x_nsfw_signup_blocking_non_us_v1)()
+					})), i.a.createElement(L, {
+						qrCodeAsset: (() => r === b.gd.Enabled || s === b.gb.BlurredPreview || s === b.gb.NoPreview ? N.d2x_nsfw_signup_blocking_de_v1 : N.d2x_nsfw_signup_blocking_non_us_v1)()
 					}))
 				},
-				M = e => {
-					const t = Object(c.d)(),
-						n = Object(b.b)(),
-						s = Object(c.e)(N.h);
-					return Object(i.useEffect)(() => {
-						(e => {
-							!Object(x.b)() && e && Object(v.b)(10) && Object(k.b)(y.o.Redesign, {
-								type: k.a.NsfwBypassableBlocking,
-								data: {
-									action: r.View,
-									variant: e
-								}
-							})
-						})(s)
-					}, [s]), o.a.createElement("div", {
-						className: Object(u.a)(L.a.mainCta, {
-							[L.a.skippable_buttons]: s === f.hb.SkippableButtons,
-							[L.a.skippable_text]: s === f.hb.SkippableText
+				A = e => {
+					const t = Object(o.d)(),
+						n = Object(h.b)(),
+						r = Object(o.e)(E.h);
+					return Object(a.useEffect)(() => {
+						Object(x.c)(r)
+					}, [r]), i.a.createElement("div", {
+						className: Object(d.a)(F.a.mainCta, {
+							[F.a.skippable_buttons]: r === b.hb.SkippableButtons,
+							[F.a.skippable_text]: r === b.hb.SkippableText
 						})
-					}, o.a.createElement("div", {
-						className: L.a.contentDescription
-					}, o.a.createElement(F, {
-						fill: j.BLACK
-					}), o.a.createElement("span", {
-						className: L.a.cta
-					}, e.contentTitle), o.a.createElement("span", {
-						className: Object(u.a)(L.a.warning, L.a.warning__bypassable)
-					}, (() => a.fbt._("This page may contain sensitive or adult content that's not for everyone. To view it, confirm your age.", null, {
+					}, i.a.createElement("div", {
+						className: F.a.contentDescription
+					}, i.a.createElement(k.b, {
+						fill: k.a.BLACK
+					}), i.a.createElement("span", {
+						className: F.a.cta
+					}, e.contentTitle), i.a.createElement("span", {
+						className: Object(d.a)(F.a.warning, F.a.warning__bypassable)
+					}, (() => s.fbt._("This page may contain sensitive or adult content that's not for everyone. To view it, confirm your age.", null, {
 						hk: "2Wp5X6"
-					}))())), o.a.createElement("div", {
-						className: L.a.cta
-					}, (() => a.fbt._("To continue, log in or confirm your age.", null, {
+					}))())), i.a.createElement("div", {
+						className: F.a.cta
+					}, (() => s.fbt._("To continue, log in or confirm your age.", null, {
 						hk: "4sHPuz"
-					}))()), o.a.createElement("div", {
-						className: L.a.buttonContainer
-					}, o.a.createElement(g.j, {
-						className: L.a.logIn,
+					}))()), i.a.createElement("div", {
+						className: F.a.buttonContainer
+					}, i.a.createElement(f.j, {
+						className: F.a.logIn,
 						onClick: () => {
-							n((() => e => ({
-								...Object(C.o)(e),
-								source: "xpromo",
-								action: "click",
-								noun: w,
-								actionInfo: {
-									...Object(C.d)(e),
-									popupButtonText: "login"
-								}
-							}))()), E(r.Login), t(Object(p.openLoginModal)())
+							n(Object(y.a)()), Object(x.b)(x.a.Login), t(Object(m.openLoginModal)())
 						}
-					}, A()), s === f.hb.SkippableButtons && o.a.createElement("div", {
-						className: L.a.divider
-					}, o.a.createElement("div", {
-						className: L.a.dividerLine
-					}), o.a.createElement("div", {
-						className: L.a.dividerText
-					}, (() => a.fbt._("OR", null, {
+					}, D()), r === b.hb.SkippableButtons && i.a.createElement("div", {
+						className: F.a.divider
+					}, i.a.createElement("div", {
+						className: F.a.dividerLine
+					}), i.a.createElement("div", {
+						className: F.a.dividerText
+					}, (() => s.fbt._("OR", null, {
 						hk: "2sn64l"
-					}))()), o.a.createElement("div", {
-						className: L.a.dividerLine
-					})), o.a.createElement(g.j, {
-						className: L.a.continue,
+					}))()), i.a.createElement("div", {
+						className: F.a.dividerLine
+					})), i.a.createElement(f.j, {
+						className: F.a.continue,
 						onClick: async () => {
-							n((() => e => ({
-								...Object(C.o)(e),
-								source: "xpromo",
-								action: "click",
-								noun: w,
-								actionInfo: {
-									...Object(C.d)(e),
-									popupButtonText: "continue"
-								}
-							}))()), E(r.Continue), Object(O.q)(), Object(D.d)(), window.location.reload()
+							n(Object(y.b)()), Object(x.b)(x.a.Continue), Object(w.q)(), Object(C.d)(), window.location.reload()
 						}
-					}, (() => a.fbt._("I'm over 18", null, {
+					}, (() => s.fbt._("I'm over 18", null, {
 						hk: "4nUG6S"
-					}))()), o.a.createElement(g.j, {
-						className: Object(u.a)(L.a.continue, L.a.dismiss, {
-							[L.a.no_border]: s === f.hb.SkippableText
+					}))()), i.a.createElement(f.j, {
+						className: Object(d.a)(F.a.continue, F.a.dismiss, {
+							[F.a.no_border]: r === b.hb.SkippableText
 						}),
 						onClick: () => {
-							n((() => e => ({
-								...Object(C.o)(e),
-								source: "xpromo",
-								action: "dismiss",
-								noun: w,
-								actionInfo: {
-									...Object(C.d)(e),
-									popupButtonText: "back"
-								}
-							}))()), E(r.Dismiss), t(Object(l.b)("/"))
+							n(Object(y.c)()), Object(x.b)(x.a.Dismiss), t(Object(c.b)("/"))
 						}
-					}, s === f.hb.SkippableText ? (() => a.fbt._("Go back to home", null, {
+					}, r === b.hb.SkippableText ? (() => s.fbt._("Go back to home", null, {
 						hk: "4yEgxF"
-					}))() : P())))
+					}))() : O())))
 				}
 		},
 		"./src/reddit/components/Widgets/Base/index.m.less": function(e, t, n) {
@@ -2600,6 +2500,132 @@
 				})))) : null
 			}))
 		},
+		"./src/reddit/helpers/counters/nsfwBypassableBlocking.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return r
+			})), n.d(t, "b", (function() {
+				return c
+			})), n.d(t, "c", (function() {
+				return l
+			}));
+			var r, s = n("./src/lib/constants/index.ts"),
+				a = n("./src/lib/sample/index.ts"),
+				i = n("./src/reddit/helpers/counters/nsfwblocking.ts"),
+				o = n("./src/telemetry/helpers/sendCounter.ts");
+			! function(e) {
+				e.Continue = "continue", e.Dismiss = "dismiss", e.Login = "login", e.View = "view"
+			}(r || (r = {}));
+			const c = e => {
+					Object(i.b)() || Object(o.b)(s.o.Redesign, {
+						type: o.a.NsfwBypassableBlocking,
+						data: {
+							action: e
+						}
+					})
+				},
+				l = e => {
+					!Object(i.b)() && e && Object(a.b)(10) && Object(o.b)(s.o.Redesign, {
+						type: o.a.NsfwBypassableBlocking,
+						data: {
+							action: r.View,
+							variant: e
+						}
+					})
+				}
+		},
+		"./src/reddit/helpers/trackers/nsfwSignupBypassableUpsell.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "d", (function() {
+				return a
+			})), n.d(t, "a", (function() {
+				return i
+			})), n.d(t, "c", (function() {
+				return o
+			})), n.d(t, "b", (function() {
+				return c
+			}));
+			var r = n("./src/reddit/selectors/telemetry.ts");
+			const s = "nsfw_dialog_bypassable",
+				a = () => e => ({
+					...Object(r.o)(e),
+					source: "xpromo",
+					action: "view",
+					noun: s,
+					actionInfo: {
+						...Object(r.d)(e)
+					}
+				}),
+				i = () => e => ({
+					...Object(r.o)(e),
+					source: "xpromo",
+					action: "click",
+					noun: s,
+					actionInfo: {
+						...Object(r.d)(e),
+						popupButtonText: "login"
+					}
+				}),
+				o = () => e => ({
+					...Object(r.o)(e),
+					source: "xpromo",
+					action: "dismiss",
+					noun: s,
+					actionInfo: {
+						...Object(r.d)(e),
+						popupButtonText: "back"
+					}
+				}),
+				c = () => e => ({
+					...Object(r.o)(e),
+					source: "xpromo",
+					action: "click",
+					noun: s,
+					actionInfo: {
+						...Object(r.d)(e),
+						popupButtonText: "continue"
+					}
+				})
+		},
+		"./src/reddit/helpers/trackers/nsfwSignupUpsell.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "c", (function() {
+				return a
+			})), n.d(t, "a", (function() {
+				return i
+			})), n.d(t, "b", (function() {
+				return o
+			}));
+			var r = n("./src/reddit/selectors/telemetry.ts");
+			const s = "nsfw_dialog",
+				a = () => e => ({
+					...Object(r.o)(e),
+					source: "xpromo",
+					action: "view",
+					noun: s,
+					actionInfo: {
+						...Object(r.d)(e)
+					}
+				}),
+				i = () => e => ({
+					...Object(r.o)(e),
+					source: "xpromo",
+					action: "click",
+					noun: s,
+					actionInfo: {
+						...Object(r.d)(e)
+					}
+				}),
+				o = () => e => ({
+					...Object(r.o)(e),
+					source: "xpromo",
+					action: "dismiss",
+					noun: s,
+					actionInfo: {
+						...Object(r.d)(e)
+					}
+				})
+		},
 		"./src/reddit/icons/svgs/Hide/index.tsx": function(e, t, n) {
 			"use strict";
 			var r = n("./node_modules/react/index.js"),
@@ -2611,6 +2637,34 @@
 			}, s.a.createElement("g", null, s.a.createElement("path", {
 				d: "M10,16.25 C8.728,16.25 7.544,15.867 6.556,15.212 L15.212,6.556 C15.867,7.544 16.25,8.728 16.25,10 C16.25,13.4465 13.446,16.25 10,16.25 M3.75,10 C3.75,6.5535 6.554,3.75 10,3.75 C11.272,3.75 12.456,4.133 13.444,4.788 L4.788,13.444 C4.133,12.456 3.75,11.272 3.75,10 M10,1.25 C5.1675,1.25 1.25,5.1675 1.25,10 C1.25,14.8325 5.1675,18.75 10,18.75 C14.8325,18.75 18.75,14.8325 18.75,10 C18.75,5.1675 14.8325,1.25 10,1.25"
 			})))
+		},
+		"./src/reddit/icons/svgs/NSFWWarningIcon/index.tsx": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return r
+			}));
+			var r, s = n("./node_modules/react/index.js"),
+				a = n.n(s);
+			! function(e) {
+				e.BLACK = "#0F1A1C", e.DEFAULT = "#FF585B"
+			}(r || (r = {}));
+			t.b = e => a.a.createElement("svg", {
+				className: e.className,
+				fill: "none",
+				height: "60",
+				viewBox: "0 0 60 60",
+				xmlns: "http://www.w3.org/2000/svg",
+				width: "60"
+			}, a.a.createElement("path", {
+				d: "M34.87 27.6302C35.4007 27.9589 36.0158 28.1257 36.64 28.1102C37.2902 28.1403 37.9354 27.9841 38.5 27.6602C38.9989 27.4003 39.4148 27.0052 39.7 26.5202C40.004 26.0401 40.1654 25.4835 40.1654 24.9152C40.1654 24.3469 40.004 23.7903 39.7 23.3102C39.4148 22.8252 38.9989 22.4302 38.5 22.1702C37.9681 21.8768 37.3671 21.7318 36.76 21.7502C36.1864 21.7434 35.6198 21.8773 35.11 22.1402C34.6039 22.3874 34.1776 22.7721 33.88 23.2502C33.5564 23.7276 33.3887 24.2936 33.4 24.8702C33.3891 25.429 33.5346 25.9797 33.82 26.4602C34.0597 26.9366 34.4222 27.3405 34.87 27.6302Z",
+				fill: e.fill || r.DEFAULT
+			}), a.a.createElement("path", {
+				d: "M38.68 33.0002C38.0443 32.6933 37.3457 32.5392 36.64 32.5502C35.9438 32.5394 35.255 32.6936 34.63 33.0002C34.05 33.278 33.5609 33.715 33.22 34.2602C32.8649 34.7654 32.6744 35.3678 32.6744 35.9852C32.6744 36.6026 32.8649 37.205 33.22 37.7102C33.5748 38.2212 34.0623 38.6257 34.63 38.8802C35.2562 39.1836 35.9442 39.3376 36.64 39.3302C37.3454 39.3379 38.0432 39.184 38.68 38.8802C39.2591 38.6169 39.7565 38.2023 40.12 37.6802C40.4537 37.1836 40.6313 36.5985 40.63 36.0002C40.6324 35.383 40.4552 34.7784 40.12 34.2602C39.7602 33.7199 39.2632 33.2851 38.68 33.0002Z",
+				fill: e.fill || r.DEFAULT
+			}), a.a.createElement("path", {
+				d: "M54.52 20.1902L39.31 4.9802C38.0246 3.68674 36.4962 2.66024 34.8126 1.95977C33.129 1.25929 31.3235 0.898682 29.5 0.898682C27.6765 0.898682 25.871 1.25929 24.1874 1.95977C22.5038 2.66024 20.9753 3.68674 19.69 4.9802L4.47996 20.1902C3.1865 21.4756 2.16 23.004 1.45952 24.6876C0.75905 26.3712 0.398438 28.1767 0.398438 30.0002C0.398438 31.8237 0.75905 33.6292 1.45952 35.3128C2.16 36.9964 3.1865 38.5249 4.47996 39.8102L19.69 55.0202C20.9753 56.3137 22.5038 57.3402 24.1874 58.0406C25.871 58.7411 27.6765 59.1017 29.5 59.1017C31.3235 59.1017 33.129 58.7411 34.8126 58.0406C36.4962 57.3402 38.0246 56.3137 39.31 55.0202L54.52 39.8102C55.8134 38.5249 56.8399 36.9964 57.5404 35.3128C58.2409 33.6292 58.6015 31.8237 58.6015 30.0002C58.6015 28.1767 58.2409 26.3712 57.5404 24.6876C56.8399 23.004 55.8134 21.4756 54.52 20.1902ZM23.92 43.5002H18.19V24.8402L13.27 27.0002V21.6602L22.27 17.5802H23.95L23.92 43.5002ZM44.92 40.1102C44.0432 41.3133 42.8485 42.2483 41.47 42.8102C39.9566 43.453 38.3292 43.7843 36.685 43.7843C35.0407 43.7843 33.4133 43.453 31.9 42.8102C30.5371 42.2355 29.3552 41.3025 28.48 40.1102C27.651 38.9798 27.2091 37.612 27.22 36.2102C27.2015 34.9552 27.5565 33.723 28.24 32.6702C28.9308 31.5703 29.8778 30.6542 31 30.0002C30.1811 29.3345 29.5237 28.4921 29.0768 27.5361C28.63 26.5801 28.4054 25.5354 28.42 24.4802C28.3942 23.1593 28.7708 21.8619 29.5 20.7602C30.2375 19.6425 31.2781 18.758 32.5 18.2102C33.8234 17.6075 35.2607 17.2956 36.715 17.2956C38.1692 17.2956 39.6065 17.6075 40.93 18.2102C42.1475 18.765 43.1863 19.648 43.93 20.7602C44.6492 21.8441 45.0255 23.1195 45.01 24.4202C45.0008 25.4585 44.7654 26.4823 44.32 27.4202C43.8573 28.3643 43.2034 29.202 42.4 29.8802C43.5275 30.5247 44.4842 31.43 45.19 32.5202C45.8864 33.5797 46.2519 34.8224 46.24 36.0902C46.2595 37.5496 45.7717 38.9705 44.86 40.1102H44.92Z",
+				fill: e.fill || r.DEFAULT
+			}))
 		},
 		"./src/reddit/icons/svgs/Twitter/index.tsx": function(e, t, n) {
 			"use strict";
@@ -2867,4 +2921,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts.84e81b1b827188bed50b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts.1bd200d1cb76805ae424.js.map

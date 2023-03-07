@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.76010ed6ea486eca0a75.js
-// Retrieved at 3/7/2023, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a54a3c584368951f6910.js
+// Retrieved at 3/7/2023, 3:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -5381,11 +5381,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("184254"),
+				buildNumber: Object(r.c)("184255"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1678215446"),
+				buildTimestamp: Object(r.b)("1678217886"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -8123,14 +8123,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c321525a50d93352ce8c2d5289c40268a4511fb4e-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c2a5f6cd6730319ba23698be0e3448ef44d64e8e3-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "321525a50d93352ce8c2d5289c40268a4511fb4e-production",
+						release: "2a5f6cd6730319ba23698be0e3448ef44d64e8e3-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(D.d)(), new d.Integrations.Breadcrumbs({
@@ -8677,7 +8677,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "321525a50d93352ce8c2d5289c40268a4511fb4e-production",
+							releaseClient: "2a5f6cd6730319ba23698be0e3448ef44d64e8e3-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -19204,7 +19204,7 @@
 				ln = "d2x_related_community_recommendations",
 				cn = "d2x_modmail_harassment_adoption_campaign",
 				un = "web_x_mr_stripe_payment_intents_api_migration",
-				_n = "x_feed",
+				_n = "m_feed_m2",
 				mn = "d2x_search_growth_banner",
 				pn = "shreddit_mod_insights_feature",
 				hn = "boost_post_mvp_1",
@@ -20540,7 +20540,7 @@
 			}));
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
 				r = i("./src/reddit/models/Live/index.ts");
-			const s = ["nsfw", "porn"],
+			const s = ["anal", "ass", "blow job", "blowjob", "boobs", "cuckold", "cum", "f4m", "gonewild", "gone wild", "hentai", "m4f", "milf", "nsfw", "nudes", "porn", "porno", "pussy", "sex"],
 				o = {
 					id: "M_FEED_SEARCH",
 					icon: r.a.Snoo,
@@ -20568,7 +20568,7 @@
 					return r
 				})),
 				function(e) {
-					e.ACHIEVEMENT_FLAIR = "achievement_flair", e.ADD_REMOVAL_REASON = "add_removal_reason", e.ALPHA_CONSUMER = "alpha_consumer", e.BADGE_PURCHASE = "badge_purchase", e.BAN_USER = "ban_user", e.BLADE_NIGHTMODE = "blade_nightmode", e.BLADE_UNSAVED_CHANGES = "blade_unsaved_changes", e.CHANGE_PASSWORD_MODAL_ID = "account_manager_change_password", e.CONFETTI_ANIMATION_OVERLAY = "confetti_animation_overlay", e.CONFIRM_CLOSE_COIN_MODAL_ID = "confirm_close_coin_modal_id", e.CONFIRM_CLOSE_PREMIUM_MODAL_ID = "confirm_close_premium_modal_id", e.CONTRIBUTOR_REQUEST = "contributor_request", e.CONTRIBUTOR_REQUEST_PENDING = "contributor_request_pending", e.CONTRIBUTOR_REQUEST_PRIVATE_SUREDDIT = "contributor_request_private_subreddit", e.CONVERT_TO_COINS = "convert_to_coins", e.CRYPTO_BURN_POINTS = "crypto_burn_points", e.CRYPTO_GAS_FEES_EDUCATION = "crypto_gas_fees_education", e.DEV_PLATFORM_USER_INPUT_MODAL = "dev_platform_user_input_modal", e.DISABLE_TWO_FACTOR = "disable_2fa_modal", e.ECON_CLAIM_FREE_AWARD_MODAL = "econ_claim_free_award_modal", e.ECON_COIN_PURCHASE = "econ_coin_purchase", e.ECON_COIN_PACKAGE_OFFER = "econ_coin_package_offer", e.ECON_MARKETPLACE_CLAIM = "econ_marketplace_claim", e.ECON_NFT_PRODUCT_DETAILS = "econ_nft_product_details", e.ECON_POWERUPS_MARKETING = "econ_powerups_marketing", e.ECON_POWERUPS_PURCHASE = "econ_powerups_purchase", e.ECON_POWERUPS_SUCCESS = "econ_powerups_success", e.ECON_PREDICTIONS_CHANGE_END_TIME = "econ_predictions_end_time", e.ECON_PREDICTIONS_CHANGE_OUTCOME = "econ_predictions_change_outcome", e.ECON_PREDICTIONS_CANCEL_PREDICTION = "econ_predictions_cancel_prediction", e.ECON_PREDICTIONS_INACTIVITY_MODAL = "econ_predictions_inactivity_modal", e.ECON_PREDICTIONS_PREMIUM_UPSELL = "econ_predictions_premium_upsell", e.ECON_PREDICTIONS_START_TOURNAMENT_LIMIT = "econ_predictions_start_tournament_limitation", e.ECON_PREMIUM_PURCHASE = "econ_premium_purchase", e.ECON_TOP_AWARDERS = "econ_top_awarders", e.ECON_SUPPORTERS_LIST = "econ_supporters_list", e.EDIT_DESCRIPTION_MODAL = "edit_community_description_modal", e.ENABLE_TWO_FACTOR = "enable_2fa_modal", e.GOLD_GILD_ANIMATION_OVERLAY = "gold_gild_animation_overlay", e.GOLD_GILD_MODAL = "gold_gild_modal", e.GOLD_TARGETED_OFFER_MODAL = "gold_targeted_offer", e.GOOGLE_ONE_TAP_MODAL_ID = "google_one_tap_modal_id", e.GOVERNANCE_OPT_OUT = "governance_opt_out", e.GOVERNANCE_RELEASE_NOTES = "governance_release_notes", e.GOVERNANCE_MAINNET_LAUNCH = "governance_mainnet_launch", e.HARBERGER_TAX_CRYPTO_BANNER_MANAGE = "harberger_tax_crypto_banner_manage", e.HARBERGER_TAX_CRYPTO_BANNER_PURCHASE = "hargerger_tax_crypto_banner_purchase", e.HARBERGER_TAX_BANNER_MANAGE = "harberger_tax_banner_manage", e.HARBERGER_TAX_BANNER_PURCHASE = "harberger_tax_banner_purchase", e.KEYBOARD_SHORTCUTS = "keyboard_shortcuts", e.LINK_APPLE_SSO = "link_apple_sso", e.LINK_GOOGLE_SSO = "link_google_sso", e.LOGIN_MODAL_ID = "account_manager_login", e.MOD_TO_MEMBER_SHARE = "mod_to_member_share", e.CROWD_CONTROL = "crowd_control", e.MULTIREDDIT_ADD_SUBREDDIT = "multireddit_add_subreddit", e.MULTIREDDIT_CREATE = "multireddit_create", e.MULTIREDDIT_DUPLICATE = "multireddit_duplicate", e.MULTIREDDIT_EDIT = "multireddit_edit", e.MUTE_USER = "mute_user", e.NSFW_BLOCKING_MODAL_V2 = "nsfw_blocking_modal_v2", e.ONBOARDING_MODAL_D2X = "d2x_onboarding", e.ONBOARDING_MODAL_ID = "account_manager_onboarding", e.PINNED_POSTS_LIMIT_REACHED = "pinned_posts_limit_reached", e.POST_FLOW_UPSELL_MODAL_ID = "post_flow_upsell_modal", e.QR_CODE_MODAL = "qr_code_modal", e.REDESIGN_MODAL = "redesign_modal", e.REGISTER_MODAL_ID = "account_manager_register", e.SNOOVATAR_MODAL = "snoovatar_modal", e.SPEZ_MODAL = "spez_modal", e.SUBREDDIT_CREATION_MODAL_ID = "subreddit_creation_modal_id", e.SUBREDDIT_PREMIUM_BADGE_MANAGEMENT = "subreddit_premium_badge_management", e.SUBREDDIT_PREMIUM_GIFT_MODAL = "subreddit_premium_gift", e.SUBREDDIT_PREMIUM_UPLOAD_MODAL = "subreddit_premium_upload", e.TRANSFER_POINTS = "community_points_transfer", e.TWO_FACTOR_BACKUP_CODES = "two_factor_backup_codes", e.UNLINK_APPLE_SSO = "unlink_apple_sso", e.UNLINK_GOOGLE_SSO = "unlink_google_sso", e.USER_FLAIR_MODAL_ID = "user_flair_modal", e.WALLET_REGISTRATION_MODAL = "wallet_registration_modal", e.X_SHOWCASE_COLLECTION_VIEW_MODAL = "x_showcase_collection_view_modal"
+					e.ACHIEVEMENT_FLAIR = "achievement_flair", e.ADD_REMOVAL_REASON = "add_removal_reason", e.ALPHA_CONSUMER = "alpha_consumer", e.BADGE_PURCHASE = "badge_purchase", e.BAN_USER = "ban_user", e.BLADE_NIGHTMODE = "blade_nightmode", e.BLADE_UNSAVED_CHANGES = "blade_unsaved_changes", e.CHANGE_PASSWORD_MODAL_ID = "account_manager_change_password", e.CONFETTI_ANIMATION_OVERLAY = "confetti_animation_overlay", e.CONFIRM_CLOSE_COIN_MODAL_ID = "confirm_close_coin_modal_id", e.CONFIRM_CLOSE_PREMIUM_MODAL_ID = "confirm_close_premium_modal_id", e.CONTRIBUTOR_REQUEST = "contributor_request", e.CONTRIBUTOR_REQUEST_PENDING = "contributor_request_pending", e.CONTRIBUTOR_REQUEST_PRIVATE_SUREDDIT = "contributor_request_private_subreddit", e.CONVERT_TO_COINS = "convert_to_coins", e.CRYPTO_BURN_POINTS = "crypto_burn_points", e.CRYPTO_GAS_FEES_EDUCATION = "crypto_gas_fees_education", e.DEV_PLATFORM_USER_INPUT_MODAL = "dev_platform_user_input_modal", e.DISABLE_TWO_FACTOR = "disable_2fa_modal", e.ECON_CLAIM_FREE_AWARD_MODAL = "econ_claim_free_award_modal", e.ECON_COIN_PURCHASE = "econ_coin_purchase", e.ECON_COIN_PACKAGE_OFFER = "econ_coin_package_offer", e.ECON_MARKETPLACE_CLAIM = "econ_marketplace_claim", e.ECON_NFT_PRODUCT_DETAILS = "econ_nft_product_details", e.ECON_POWERUPS_MARKETING = "econ_powerups_marketing", e.ECON_POWERUPS_PURCHASE = "econ_powerups_purchase", e.ECON_POWERUPS_SUCCESS = "econ_powerups_success", e.ECON_PREDICTIONS_CHANGE_END_TIME = "econ_predictions_end_time", e.ECON_PREDICTIONS_CHANGE_OUTCOME = "econ_predictions_change_outcome", e.ECON_PREDICTIONS_CANCEL_PREDICTION = "econ_predictions_cancel_prediction", e.ECON_PREDICTIONS_INACTIVITY_MODAL = "econ_predictions_inactivity_modal", e.ECON_PREDICTIONS_PREMIUM_UPSELL = "econ_predictions_premium_upsell", e.ECON_PREDICTIONS_START_TOURNAMENT_LIMIT = "econ_predictions_start_tournament_limitation", e.ECON_PREMIUM_PURCHASE = "econ_premium_purchase", e.ECON_TOP_AWARDERS = "econ_top_awarders", e.ECON_SUPPORTERS_LIST = "econ_supporters_list", e.EDIT_DESCRIPTION_MODAL = "edit_community_description_modal", e.ENABLE_TWO_FACTOR = "enable_2fa_modal", e.GOLD_GILD_ANIMATION_OVERLAY = "gold_gild_animation_overlay", e.GOLD_GILD_MODAL = "gold_gild_modal", e.GOLD_TARGETED_OFFER_MODAL = "gold_targeted_offer", e.GOOGLE_ONE_TAP_MODAL_ID = "google_one_tap_modal_id", e.GOVERNANCE_OPT_OUT = "governance_opt_out", e.GOVERNANCE_RELEASE_NOTES = "governance_release_notes", e.GOVERNANCE_MAINNET_LAUNCH = "governance_mainnet_launch", e.HARBERGER_TAX_CRYPTO_BANNER_MANAGE = "harberger_tax_crypto_banner_manage", e.HARBERGER_TAX_CRYPTO_BANNER_PURCHASE = "hargerger_tax_crypto_banner_purchase", e.HARBERGER_TAX_BANNER_MANAGE = "harberger_tax_banner_manage", e.HARBERGER_TAX_BANNER_PURCHASE = "harberger_tax_banner_purchase", e.KEYBOARD_SHORTCUTS = "keyboard_shortcuts", e.LINK_APPLE_SSO = "link_apple_sso", e.LINK_GOOGLE_SSO = "link_google_sso", e.LOGIN_MODAL_ID = "account_manager_login", e.MOD_TO_MEMBER_SHARE = "mod_to_member_share", e.CROWD_CONTROL = "crowd_control", e.MULTIREDDIT_ADD_SUBREDDIT = "multireddit_add_subreddit", e.MULTIREDDIT_CREATE = "multireddit_create", e.MULTIREDDIT_DUPLICATE = "multireddit_duplicate", e.MULTIREDDIT_EDIT = "multireddit_edit", e.MUTE_USER = "mute_user", e.NSFW_BLOCKING_MODAL_V2 = "nsfw_blocking_modal_v2", e.NSFW_SEARCH_MODAL = "nsfw_search_modal", e.ONBOARDING_MODAL_D2X = "d2x_onboarding", e.ONBOARDING_MODAL_ID = "account_manager_onboarding", e.PINNED_POSTS_LIMIT_REACHED = "pinned_posts_limit_reached", e.POST_FLOW_UPSELL_MODAL_ID = "post_flow_upsell_modal", e.QR_CODE_MODAL = "qr_code_modal", e.REDESIGN_MODAL = "redesign_modal", e.REGISTER_MODAL_ID = "account_manager_register", e.SNOOVATAR_MODAL = "snoovatar_modal", e.SPEZ_MODAL = "spez_modal", e.SUBREDDIT_CREATION_MODAL_ID = "subreddit_creation_modal_id", e.SUBREDDIT_PREMIUM_BADGE_MANAGEMENT = "subreddit_premium_badge_management", e.SUBREDDIT_PREMIUM_GIFT_MODAL = "subreddit_premium_gift", e.SUBREDDIT_PREMIUM_UPLOAD_MODAL = "subreddit_premium_upload", e.TRANSFER_POINTS = "community_points_transfer", e.TWO_FACTOR_BACKUP_CODES = "two_factor_backup_codes", e.UNLINK_APPLE_SSO = "unlink_apple_sso", e.UNLINK_GOOGLE_SSO = "unlink_google_sso", e.USER_FLAIR_MODAL_ID = "user_flair_modal", e.WALLET_REGISTRATION_MODAL = "wallet_registration_modal", e.X_SHOWCASE_COLLECTION_VIEW_MODAL = "x_showcase_collection_view_modal"
 				}(n || (n = {}));
 			const r = [n.GOOGLE_ONE_TAP_MODAL_ID]
 		},
@@ -20581,7 +20581,7 @@
 			}));
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
 				r = i("./src/reddit/models/Live/index.ts");
-			const s = ["backshots", "belle delphine", "belledelphine", "dobrikov", "f4f", "f4m", "FamosasGostosas", "hot4lexi", "lana rhoades", "lanarhoades", "m4f", "m4m", "megnutt", "nicole dobrikov", "nicoledobrikov", "onlyfansgirls101", "onlyfans", "PacksLatinas", "pawg", "por", "threesome", "tiktoknsfw", "TikTokNude", "tiktokporn", "whopperme", "WorldPacks", "nsfw:yes", "futa", "femdom", "r/nsfw", "orgasm", "pegging", "pornhub", "bimbo", "chastity", "kkvsh", "bella thorne", "violet summers", "mati", "gensis lopez", "jessica nigri", "francety", "mia khalifa", "elisa aline", "arigameplays", "allison parker", "momokun", "mati marroni", "amanda cerny", "amber rose", "malu trevejo", "poonam pandey", "celina powell", "mackzjones", "riley reid", "ana cher", "SamsungGirlr34", "samsung girl", "SamsungGirlRule34", "SamsungGirl34", "r/samsunggirlr34", "samsung sam", "Aline Faria", "alinefariaa", "aline farias", "corinna kopf", "corinnakopf", "anal", "bbw", "bdsm", "blowjob", "blowjobs", "boner", "boners", "boobs", "buttsex", "camgirl", "camgirls", "clit", "clits", "cock", "cocks", "cocksucker", "cocksuckers", "cream pie", "cream pies", "creampie", "creampies", "cuckhold", "cuckold", "cuckolds", "cum", "cums", "cunt", "cunts", "dildo", "dildos", "ejaculate", "ejaculates", "erection", "erections", "fuck", "fuckable", "fucker", "fuckers", "fucking", "fucks", "gang bang", "gang bangs", "gonewild", "hentai", "holdthemoan", "hotwife", "milf", "milfs", "naked", "nsfw", "nude", "nudes", "pawg", "penis", "porn", "pussies", "pussy", "pussys", "queef", "queefs", "rule34", "schlong", "schlongs", "sex", "shit", "shits", "slutty", "splooged", "thot", "thots", "tits", "twat", "twats", "vagina", "vaginas", "whore", "whores", "xxx", "yiff", "hannahowo", "miniloona", "elle brooke", "abella danger", "delilahdewing", "alinefarias", "anittaonlyfans", "breedingmaterial", "ass", "bigasses", "nude_selfie", "cumsluts", "onlyfans101", "elizabethsanchez", "elizabeth sanchez", "mileydisanchez"],
+			const s = ["abella danger", "aline faria", "aline farias", "alinefariaa", "alinefarias", "allison parker", "amanda cerny", "amber rose", "ana cher", "anal", "anittaonlyfans", "arigameplays", "ass", "backshots", "bbw", "bdsm", "bella thorne", "belle delphine", "belledelphine", "bigasses", "bimbo", "blowjob", "blowjobs", "boner", "boners", "boobs", "breedingmaterial", "buttsex", "camgirl", "camgirls", "celina powell", "chastity", "clit", "clits", "cock", "cocks", "cocksucker", "cocksuckers", "corinna kopf", "corinnakopf", "cream pie", "cream pies", "creampie", "creampies", "cuckhold", "cuckold", "cuckolds", "cum", "cums", "cumsluts", "cunt", "cunts", "delilahdewing", "dildo", "dildos", "dobrikov", "ejaculate", "ejaculates", "elisa aline", "elizabeth sanchez", "elizabethsanchez", "elle brooke", "erection", "erections", "f4f", "f4m", "famosasgostosas", "femdom", "francety", "fuck", "fuckable", "fucker", "fuckers", "fucking", "fucks", "futa", "gang bang", "gang bangs", "gensis lopez", "gonewild", "hannahowo", "hentai", "holdthemoan", "hot4lexi", "hotwife", "jessica nigri", "kkvsh", "lana rhoades", "lanarhoades", "m4f", "m4m", "mackzjones", "malu trevejo", "mati", "mati marroni", "megnutt", "mia khalifa", "mileydisanchez", "milf", "milfs", "miniloona", "momokun", "naked", "nicole dobrikov", "nicoledobrikov", "nsfw", "nsfw:yes", "nude", "nude_selfie", "nudes", "onlyfans", "onlyfans101", "onlyfansgirls101", "orgasm", "packslatinas", "pawg", "pawg", "pegging", "penis", "poonam pandey", "por", "porn", "pornhub", "pussies", "pussy", "pussys", "queef", "queefs", "r/nsfw", "r/samsunggirlr34", "riley reid", "rule34", "samsung girl", "samsung sam", "samsunggirl34", "samsunggirlr34", "samsunggirlrule34", "schlong", "schlongs", "sex", "shit", "shits", "slutty", "splooged", "thot", "thots", "threesome", "tiktoknsfw", "tiktoknude", "tiktokporn", "tits", "twat", "twats", "vagina", "vaginas", "violet summers", "whopperme", "whore", "whores", "worldpacks", "xxx", "yiff"],
 				o = {
 					id: "NSFW_SEARCH_BANNER",
 					icon: r.a.Snoo,
@@ -20591,7 +20591,7 @@
 					description: () => n.fbt._("Confirm you are over 18 and update your settings to see potentially explicit content", null, {
 						hk: "2Ehhkj"
 					}),
-					url: "https://www.reddit.com/r/OldLadiesBakingPies/",
+					url: void 0,
 					callToAction: () => n.fbt._("Update settings", null, {
 						hk: "2Ph4JQ"
 					}),
@@ -21908,11 +21908,15 @@
 				},
 				Ve = e => {
 					const t = je(e);
-					return !!t && !!m.a.filter(e => t.toLowerCase().includes(e)).length
+					if (!t) return !1;
+					const i = t.toLowerCase().split(" ");
+					return !!m.a.filter(e => i.includes(e)).length
 				},
 				He = e => {
 					const t = je(e);
-					return !!t && !!_.a.filter(e => t.toLowerCase().includes(e)).length
+					if (!t) return !1;
+					const i = t.toLowerCase();
+					return !!_.a.filter(e => e === i).length
 				},
 				We = (e, t) => {
 					let {
@@ -52554,4 +52558,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.76010ed6ea486eca0a75.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a54a3c584368951f6910.js.map
