@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.9e7db531bfd312acbcc3.js
-// Retrieved at 3/6/2023, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.ece317cb6815ccbc5c00.js
+// Retrieved at 3/7/2023, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, o) {
@@ -611,7 +611,7 @@
 				V = o("./node_modules/icepick/icepick.js"),
 				G = o("./src/reddit/actions/modQueue/constants.ts");
 			const $ = {};
-			var z = function() {
+			var K = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : $,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -654,9 +654,9 @@
 						return e
 				}
 			};
-			const K = {};
+			const z = {};
 			var W = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : K,
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : z,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
 						case G.i:
@@ -697,14 +697,14 @@
 					}
 				},
 				J = Object(H.c)({
-					models: z,
+					models: K,
 					order: W
 				}),
 				X = o("./src/reddit/reducers/features/realtimeModqueue/index.ts"),
-				Z = o("./src/reddit/reducers/pages/modHub/index.ts");
+				Y = o("./src/reddit/reducers/pages/modHub/index.ts");
 			Object(U.a)({
 				pages: {
-					modHub: Z.a
+					modHub: Y.a
 				}
 			}), Object(U.a)({
 				features: {
@@ -719,7 +719,7 @@
 					realtimeModqueue: X.a
 				}
 			});
-			const Y = Object(n.a)(G.k),
+			const Z = Object(n.a)(G.k),
 				ee = Object(n.a)(G.j),
 				te = Object(n.a)(G.i),
 				oe = Object(n.a)(G.h),
@@ -781,7 +781,7 @@
 						users: _,
 						...S
 					} = w(g.body.data), y = d(), R = c.e[Object(u.V)(y, {})] === c.d.Card;
-					Object(T.b)(y, R) && n(Y(_)), n(j({
+					Object(T.b)(y, R) && n(Z(_)), n(j({
 						listingKey: e,
 						page: `${o.page||L.b}`,
 						response: S
@@ -1072,7 +1072,7 @@
 		"./src/reddit/actions/removalReasons/index.ts": function(e, t, o) {
 			"use strict";
 			o.r(t), o.d(t, "removalReasonsPending", (function() {
-				return Y
+				return Z
 			})), o.d(t, "removalReasonsLoaded", (function() {
 				return ee
 			})), o.d(t, "removalReasonsFailed", (function() {
@@ -1327,18 +1327,18 @@
 			var V = o("./src/reddit/helpers/isPost.ts"),
 				G = o("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
 				$ = o("./src/reddit/helpers/routeKey/index.ts"),
-				z = o("./src/reddit/models/ModQueue/index.ts"),
-				K = o("./src/reddit/models/PostDraft/index.ts"),
+				K = o("./src/reddit/models/ModQueue/index.ts"),
+				z = o("./src/reddit/models/PostDraft/index.ts"),
 				W = o("./src/reddit/models/RemovalReason/index.ts"),
 				J = o("./src/reddit/models/Toast/index.ts"),
 				X = o("./src/reddit/selectors/comments.ts"),
-				Z = o("./src/reddit/selectors/platform.ts");
+				Y = o("./src/reddit/selectors/platform.ts");
 			Object(r.a)({
 				features: {
 					removalReasons: R
 				}
 			});
-			const Y = Object(E.a)("REMOVALREASONS__LOAD_PENDING"),
+			const Z = Object(E.a)("REMOVALREASONS__LOAD_PENDING"),
 				ee = Object(E.a)(d),
 				te = Object(E.a)("REMOVALREASONS__LOAD_FAILED"),
 				oe = e => async (t, o, s) => {
@@ -1346,7 +1346,7 @@
 						apiContext: r
 					} = s;
 					const n = o().subreddits.models[e].name;
-					t(Y());
+					t(Z());
 					const d = await ((e, t) => Object(T.a)(Object(F.a)(e, [q.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons.json`,
 						method: A.pb.GET
@@ -1477,14 +1477,14 @@
 												comment: e,
 												parentId: m
 											},
-											o = Object(Z.g)(u),
+											o = Object(Y.g)(u),
 											s = u.platform.currentPage && u.platform.currentPage.routeMatch;
 										let r = o && s && Object($.a)(s, u, u.posts.models[e.postId]);
 										if (r || (r = Object(x.a)(e.postId, null, {
 												sort: A.x,
 												hasSortParam: !0
 											})), b === W.e.Post) {
-											const o = Object(k.a)(K.c.replyToPost, m);
+											const o = Object(k.a)(z.c.replyToPost, m);
 											d(Object(P.r)({
 												...t,
 												headCommentId: Object(X.w)(u, {
@@ -1504,7 +1504,7 @@
 												}
 											}))
 										} else if (b === W.e.Comment) {
-											const e = Object(k.a)(K.c.replyToComment, p.id),
+											const e = Object(k.a)(z.c.replyToComment, p.id),
 												o = Object(X.j)(u, {
 													commentId: m,
 													commentsPageKey: r
@@ -1557,7 +1557,7 @@
 					if (p.ok) {
 						const s = {
 							ids: e,
-							operation: z.a.RemovalReason,
+							operation: K.a.RemovalReason,
 							username: l,
 							options: {
 								modNote: n,
@@ -1847,8 +1847,8 @@
 				n = o("./src/reddit/selectors/user.ts");
 			const d = e => Object(r.c)(e, {
 				experimentEligibilitySelector: n.S,
-				experimentName: s.Zb
-			}) === s.Od
+				experimentName: s.ac
+			}) === s.Pd
 		},
 		"./src/reddit/selectors/experiments/realtimeMQUpdates.ts": function(e, t, o) {
 			"use strict";
@@ -1861,8 +1861,8 @@
 				d = o("./src/reddit/selectors/experiments/modqueueActionBarUXImprovements.ts");
 			const i = e => Object(d.a)(e) && Object(r.c)(e, {
 				experimentEligibilitySelector: n.S,
-				experimentName: s.zc
-			}) === s.Od
+				experimentName: s.Ac
+			}) === s.Pd
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, o) {
 			"use strict";
@@ -1946,4 +1946,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.9e7db531bfd312acbcc3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.ece317cb6815ccbc5c00.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SnoovatarModal.8705ac8c7ea6d79c6116.js
-// Retrieved at 3/6/2023, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SnoovatarModal.41839fc03b83fca58fd0.js
+// Retrieved at 3/7/2023, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SnoovatarModal"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, r) {
@@ -65,13 +65,13 @@
 					activeDetails: h,
 					activeTab: k,
 					activeMeSubpage: N,
-					shopTabState: y
-				} = r, R = Object(n.useMemo)(() => ({
+					shopTabState: R
+				} = r, y = Object(n.useMemo)(() => ({
 					activeTab: k || void 0,
 					activeMeSubpage: N || void 0,
 					activeDetails: h || void 0,
-					shopTabState: y || void 0
-				}), [h, k, N, y]), C = Object(o.e)(e => !Object(O.S)(e) && Object(m.w)(e));
+					shopTabState: R || void 0
+				}), [h, k, N, R]), C = Object(o.e)(e => !Object(O.S)(e) && Object(m.w)(e));
 				if (!_ || !f) return null;
 				if (C) return a.a.createElement("div", {
 					className: Object(c.a)(x.a.container, {
@@ -97,7 +97,7 @@
 						[x.a.containerExp]: M
 					})
 				}, a.a.createElement(s.a, j({}, I, {
-					navState: R,
+					navState: y,
 					isModal: t
 				}), a.a.createElement(s.b, {
 					isModal: t,
@@ -233,10 +233,10 @@
 			const o = e => {
 					return !(Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: s.xe
-					}) === s.Od)
+						experimentName: s.ye
+					}) === s.Pd)
 				},
-				c = Object(a.a)(s.ye)
+				c = Object(a.a)(s.ze)
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, r) {
 			"use strict";
@@ -245,9 +245,9 @@
 			}));
 			var s = r("./src/reddit/constants/experiments.ts"),
 				n = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(n.a)(s.yd)
+			const a = Object(n.a)(s.zd)
 		},
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.8705ac8c7ea6d79c6116.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.41839fc03b83fca58fd0.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.18bf857fef04509de89e.js
-// Retrieved at 3/6/2023, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.0212dcac74acac1402b2.js
+// Retrieved at 3/7/2023, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -748,8 +748,8 @@
 				Y = s("./src/reddit/components/PostList/LoadMore.tsx"),
 				X = s("./src/reddit/components/PostList/SomethingWrong.tsx"),
 				$ = s("./src/reddit/components/Scroller/Simple.tsx"),
-				Z = s("./src/reddit/constants/adEvents.ts"),
-				J = s("./src/reddit/constants/componentSizes.ts"),
+				J = s("./src/reddit/constants/adEvents.ts"),
+				Z = s("./src/reddit/constants/componentSizes.ts"),
 				ee = s("./src/reddit/contexts/OneFeed/index.ts");
 			var te = function(e) {
 					let {
@@ -804,7 +804,7 @@
 				let n = ve.get(i);
 				return void 0 === n && (n = (e, i, n, o, r) => {
 					if (i.isSponsored) {
-						t.fireAdPixelsOfType(i, Z.a.Click);
+						t.fireAdPixelsOfType(i, J.a.Click);
 						const {
 							source: a
 						} = Object(b.t)(i, o);
@@ -1190,7 +1190,7 @@
 						onScroll: this.onScrollPause,
 						preventScrollOnMount: this.props.preventScrollOnMount,
 						trackingName: C,
-						viewportTopPadding: J.f
+						viewportTopPadding: Z.f
 					}, f), this.isLoadingMore() && this.renderLoadMore())
 				}
 			}
@@ -1409,8 +1409,8 @@
 			}
 			const X = 10,
 				$ = .9,
-				Z = .9,
-				J = 1.8,
+				J = .9,
+				Z = 1.8,
 				ee = 5,
 				te = 1500,
 				se = 2 * u.N,
@@ -1573,8 +1573,8 @@
 							this.updateScrollMetrics();
 							const e = this.getAveragePixelsPerMilliSecond(),
 								t = e < $,
-								s = e < Z,
-								i = e < J;
+								s = e < J,
+								i = e < Z;
 							if (this.scrollContainer && !this.loadMoreFired && this.props.onLoadMore) {
 								let e = !1;
 								if (void 0 !== this.props.loadMoreToken && void 0 !== this.viewport && this.nextVisibleChildrenIndex >= this.props.children.length) {
@@ -2435,8 +2435,8 @@
 				o = s("./src/reddit/selectors/user.ts");
 			const r = e => Object(n.c)(e, {
 				experimentEligibilitySelector: o.S,
-				experimentName: i.Zb
-			}) === i.Od
+				experimentName: i.ac
+			}) === i.Pd
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, s) {
 			"use strict";
@@ -2523,4 +2523,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.18bf857fef04509de89e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.0212dcac74acac1402b2.js.map

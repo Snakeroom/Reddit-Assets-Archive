@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NftProfileUnit.8359ece631917b2a476a.js
-// Retrieved at 3/6/2023, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NftProfileUnit.b1a84c9b8aa49fb063e9.js
+// Retrieved at 3/7/2023, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NftProfileUnit"], {
 		"./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx": function(e, t, r) {
@@ -36,8 +36,8 @@
 						E = s ? new Date(s.expires).getTime() : 1,
 						O = Object(c.e)(p.fb),
 						k = Object(o.a)(),
-						y = b ? a.a.Rinkeby : a.a.Ethereum,
-						_ = Object(i.useMemo)(() => ({
+						_ = b ? a.a.Rinkeby : a.a.Ethereum,
+						y = Object(i.useMemo)(() => ({
 							headers: {
 								Authorization: `Bearer ${h}`
 							},
@@ -48,7 +48,7 @@
 							STRIPE_API_KEY: n.a.stripe.apiKey(e),
 							STRIPE_API_VERSION: n.a.stripe.apiVersion(t),
 							ACCESS_TOKEN: h,
-							BLOCKCHAIN_PROVIDER: y,
+							BLOCKCHAIN_PROVIDER: _,
 							OVERRIDES: r ? {
 								NO_VAULT: !0
 							} : {}
@@ -69,11 +69,11 @@
 							})
 						}, [k]);
 					return Object(i.useMemo)(() => ({
-						authHeaders: _,
+						authHeaders: y,
 						config: j,
 						isNightMode: O,
 						sendEvent: x
-					}), [_, j, O, x])
+					}), [y, j, O, x])
 				}
 		},
 		"./src/reddit/components/Econ/Marketplace/NftProfileUnit/index.m.less": function(e, t, r) {
@@ -353,10 +353,10 @@
 			const c = e => {
 					return !(Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.xe
-					}) === n.Od)
+						experimentName: n.ye
+					}) === n.Pd)
 				},
-				a = Object(i.a)(n.ye)
+				a = Object(i.a)(n.ze)
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, r) {
 			"use strict";
@@ -365,9 +365,9 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const i = Object(s.a)(n.yd)
+			const i = Object(s.a)(n.zd)
 		},
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProfileUnit.8359ece631917b2a476a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProfileUnit.b1a84c9b8aa49fb063e9.js.map
