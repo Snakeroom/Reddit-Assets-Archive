@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.7356d1fc3c334fc4ee89.js
-// Retrieved at 3/6/2023, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.c09946e753fb7d6ab3df.js
+// Retrieved at 3/7/2023, 9:40:10 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "ModQueuePages~reddit-components-MediumPost", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -52446,7 +52446,7 @@
 						index: t,
 						onEdit: n,
 						subredditRule: r
-					} = this.props, o = r.descriptionRichText ? JSON.parse(r.descriptionRichText).document : void 0, i = Object(ue.c)(r.createdUtc) >= 1;
+					} = this.props, o = r.descriptionRichText ? JSON.parse(r.descriptionRichText).document : void 0, i = r.createdUtc / b.Yb, a = Object(ue.c)(i) >= 1;
 					return l.a.createElement(l.a.Fragment, null, l.a.createElement(G.a, {
 						className: Y.a.row
 					}, l.a.createElement("span", {
@@ -52510,10 +52510,10 @@
 						hk: "gSE9w"
 					})), l.a.createElement("div", {
 						className: Y.a.ruleMetaText
-					}, i ? l.a.createElement(me.b, {
-						seconds: r.createdUtc
+					}, a ? l.a.createElement(me.b, {
+						seconds: i
 					}) : l.a.createElement(me.d, {
-						seconds: r.createdUtc
+						seconds: i
 					})))), l.a.createElement("span", {
 						className: Y.a.metadata
 					}, l.a.createElement("span", {
@@ -80302,4 +80302,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.7356d1fc3c334fc4ee89.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.c09946e753fb7d6ab3df.js.map
