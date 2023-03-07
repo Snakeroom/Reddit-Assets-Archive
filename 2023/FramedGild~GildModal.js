@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.b09c3e0507d4bcaf56a4.js
-// Retrieved at 3/7/2023, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.646f2e6cb5444aea6619.js
+// Retrieved at 3/7/2023, 4:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, n) {
@@ -3397,7 +3397,7 @@
 						o = S(n.height) && s;
 					return a.a.createElement(A, P({}, n, {
 						className: `${s?`${C.a} `:""}${n.className||""}`
-					}), n.isListing ? a.a.createElement("div", {
+					}), n.isListing || n.isSponsored ? a.a.createElement("div", {
 						className: n.contentImageClassName
 					}, L(s, n)) : a.a.createElement("a", {
 						href: n.originalSource,
@@ -5914,4 +5914,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.b09c3e0507d4bcaf56a4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.646f2e6cb5444aea6619.js.map

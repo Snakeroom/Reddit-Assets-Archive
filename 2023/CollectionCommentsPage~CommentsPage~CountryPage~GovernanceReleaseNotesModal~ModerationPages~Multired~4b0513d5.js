@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5.78bc217fdf42bc49c134.js
-// Retrieved at 3/7/2023, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5.9a8c069677ae8152750c.js
+// Retrieved at 3/7/2023, 4:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5"], {
 		"./src/reddit/components/Governance/VaultActionLink/async.ts": function(e, t, n) {
@@ -316,7 +316,7 @@
 						o = M(n.height) && r;
 					return i.a.createElement(N, T({}, n, {
 						className: `${r?`${C.a} `:""}${n.className||""}`
-					}), n.isListing ? i.a.createElement("div", {
+					}), n.isListing || n.isSponsored ? i.a.createElement("div", {
 						className: n.contentImageClassName
 					}, P(r, n)) : i.a.createElement("a", {
 						href: n.originalSource,
@@ -2198,4 +2198,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5.78bc217fdf42bc49c134.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5.9a8c069677ae8152750c.js.map
