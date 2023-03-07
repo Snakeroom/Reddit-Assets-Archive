@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.b003636fc121d7a14950.js
-// Retrieved at 3/7/2023, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.4f702ca3ffbf5b650b10.js
+// Retrieved at 3/7/2023, 2:00:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -984,7 +984,7 @@
 					"reddit-components-Settings-CreatePasswordSSOModal": "60eb1e8ca02838bd69ca",
 					"reddit-components-Econ-PredictionLeaderboard-Sidebar": "004a42df4af3171bfe90",
 					"vendors~chat-components-OverlayReport-FormBuilder~reddit-components-FormBuilder": "31d6cfe0d16ae931b73c",
-					"reddit-components-FormBuilder": "2d79f60735f5febb0ed4",
+					"reddit-components-FormBuilder": "e584f5c753ece26f5e8e",
 					CrosspostsStat: "ac05a39682ad41640dcf",
 					"vendors~ModStatsChart~ViewsTooltip": "31d6cfe0d16ae931b73c",
 					ViewsTooltip: "31d6cfe0d16ae931b73c",
@@ -1507,19 +1507,19 @@
 						"reddit-components-Econ-Prediction-EndTimeModal": "f7977881e652a053ff06",
 						"reddit-components-PostCreationForm-PredictionEditor-InactivityModal": "07f77276fa43009ae613",
 						"reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal": "cd11803960dd6c0af1e9",
-						"translations/bn_BD-json": "80c1cee6e5f20701443e",
-						"translations/de_DE-json": "6f7b28765159a21ed3f0",
-						"translations/es_ES-json": "950dc831f3a083934aea",
-						"translations/es_MX-json": "2cab205a48f047da556a",
-						"translations/fr_CA-json": "15c8b13fca1f7a4c436b",
-						"translations/fr_FR-json": "7fe97940f788cca457cf",
-						"translations/hi_IN-json": "a997d78cf4ea66ebe1e1",
-						"translations/it_IT-json": "6950ca3347acd5daecc5",
-						"translations/nl_NL-json": "0dd0db48a66bec554aba",
-						"translations/pseudo-json": "bc58555cff73b52d9438",
-						"translations/pt_BR-json": "15c9dde33a846dcb1561",
-						"translations/pt_PT-json": "476a02204ced4aa91910",
-						"translations/sv_SE-json": "e1d9959d7726f8637094",
+						"translations/bn_BD-json": "b05f2d0aafe3047c1402",
+						"translations/de_DE-json": "aa31dfe204df694706f2",
+						"translations/es_ES-json": "b7a36d064a6fe93d1b31",
+						"translations/es_MX-json": "f49b4d6be3b861571190",
+						"translations/fr_CA-json": "ea93125f258c16f38870",
+						"translations/fr_FR-json": "69f23158b70edd5c7f08",
+						"translations/hi_IN-json": "e6307c250bf47fb6fbc9",
+						"translations/it_IT-json": "d9ee12e5ce31767ae18b",
+						"translations/nl_NL-json": "9ba50520c19b2c41cb92",
+						"translations/pseudo-json": "172a5b3667ae21fdb4a4",
+						"translations/pt_BR-json": "bc39af97fe710e1f9c1b",
+						"translations/pt_PT-json": "f62c2bc22fb0b4d1d4a3",
+						"translations/sv_SE-json": "40dc9c52e6a6ebc1010c",
 						"vendors~AdminPanel": "9abedef941b07fd50b75",
 						AdminPanel: "6f55908fd4914840e365",
 						"vendors~Avatar~ChatPost~CollectiblesShowcaseUnit~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProf~7d152600": "6f19d2e4659dbfb6d084",
@@ -1568,14 +1568,14 @@
 						gildActions: "c5f47463b18802bf5a4e",
 						AuthorHovercard: "91d417715a5d5abd0f60",
 						AwardTooltip: "81d6c4023397a84979bc",
-						ReportFlow: "297462cc9ecab09983b7",
+						ReportFlow: "749bcb015ce9a500aaaa",
 						CryptoVault: "17b3d9f364774d6e2f53",
 						CustomBadgeHovercardTooltip: "39c00d63b3034c099980",
 						"EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip": "65618ec2fe7ec37bd0d4",
 						SubredditPremiumBadgeHovercardTooltip: "6e8104cad54a1ee7beba",
 						GovernanceUserPublicPointsDisplay: "0b28d95b80d7f268bb65",
 						ModModeBanners: "651e049e6c8f54cf31c9",
-						ReportFlowNew: "2579be8521d933a0742c",
+						ReportFlowNew: "b283cb1b80670d520929",
 						RichTextJsonEmoteTooltip: "dde3e019d5e4f86dc9d2",
 						SubredditMentionWithIcon: "e213e17309dc93123fe4",
 						UserAchievementFlair: "bb12705b9b02326a54c6",
@@ -1706,7 +1706,7 @@
 						"reddit-components-Settings-CreatePasswordSSOModal": "f702755c2a2bb4ab36a7",
 						"reddit-components-Econ-PredictionLeaderboard-Sidebar": "21a8abd56ba09571fb71",
 						"vendors~chat-components-OverlayReport-FormBuilder~reddit-components-FormBuilder": "cca0b8e181c976b99176",
-						"reddit-components-FormBuilder": "3d766fa47e0dc5f8bdab",
+						"reddit-components-FormBuilder": "c2bddd34f4d287966fbb",
 						CrosspostsStat: "0ee50a752844c62a81c0",
 						"vendors~ModStatsChart~ViewsTooltip": "b642007ba6a9c10cda83",
 						ViewsTooltip: "b8303167244674c669b9",
@@ -1791,4 +1791,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.b003636fc121d7a14950.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.4f702ca3ffbf5b650b10.js.map

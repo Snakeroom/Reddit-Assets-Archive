@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.297462cc9ecab09983b7.js
-// Retrieved at 3/7/2023, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.749bcb015ce9a500aaaa.js
+// Retrieved at 3/7/2023, 2:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -2546,21 +2546,22 @@
 						const {
 							ruleId: d,
 							ruleType: c,
-							customRule: u
-						} = e, p = {
+							customRule: u,
+							freeText: p
+						} = e, m = {
 							fromHelpDesk: !1,
 							hostAppName: s
 						};
-						switch (c) {
+						switch (p && (m.freeText = a()(t, p.ref)), c) {
 							case "site":
-								p.siteRule = a()(t, d.ref).value || a()(t, d.ref);
+								m.siteRule = a()(t, d.ref).value || a()(t, d.ref);
 								break;
 							case "subreddit":
 							default:
 								const e = a()(t, d.ref);
-								"other" === e && u ? p.customRule = a()(t, u.ref) : p.subredditRule = e
+								"other" === e && u ? m.customRule = a()(t, u.ref) : m.subredditRule = e
 						}
-						let m;
+						let h;
 						switch (l) {
 							case H.Post:
 								if (null === (n = this.props.post) || void 0 === n ? void 0 : n.audioRoom) {
@@ -2569,42 +2570,42 @@
 										n = {
 											reportedAt: isNaN(t) ? 0 : t,
 											postId: i,
-											...p
+											...m
 										};
-									m = () => Object(S.k)(o(), {
+									h = () => Object(S.k)(o(), {
 										input: n
 									});
 									break
 								}
 								const e = {
 									postId: i,
-									...p
+									...m
 								};
-								m = () => Object(E.d)(o(), {
+								h = () => Object(E.d)(o(), {
 									input: e
 								});
 								break;
 							case H.Comment:
 								const t = {
 									commentId: i,
-									...p
+									...m
 								};
-								m = () => (this.props.sendEvent(g(i)), w(o(), {
+								h = () => (this.props.sendEvent(g(i)), w(o(), {
 									input: t
 								}));
 								break;
 							case H.Message:
 								const r = {
 									messageId: i,
-									...p
+									...m
 								};
-								m = () => Object(v.a)(o(), {
+								h = () => Object(v.a)(o(), {
 									input: r
 								});
 								break;
 							default:
 								throw new Error("Unsupported item type provided")
-						}(await m()).ok || r()
+						}(await h()).ok || r()
 					}, this.state = {
 						ctlFlowOpened: !1,
 						hasLoaded: !1
@@ -4265,4 +4266,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.297462cc9ecab09983b7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.749bcb015ce9a500aaaa.js.map
