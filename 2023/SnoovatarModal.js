@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SnoovatarModal.41839fc03b83fca58fd0.js
-// Retrieved at 3/7/2023, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SnoovatarModal.6ff56d6f325e9be2b393.js
+// Retrieved at 3/8/2023, 6:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SnoovatarModal"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, r) {
@@ -63,17 +63,17 @@
 				}, []);
 				const {
 					activeDetails: h,
-					activeTab: k,
-					activeMeSubpage: N,
+					activeTab: N,
+					activeMeSubpage: k,
 					shopTabState: R
-				} = r, y = Object(n.useMemo)(() => ({
-					activeTab: k || void 0,
-					activeMeSubpage: N || void 0,
+				} = r, C = Object(n.useMemo)(() => ({
+					activeTab: N || void 0,
+					activeMeSubpage: k || void 0,
 					activeDetails: h || void 0,
 					shopTabState: R || void 0
-				}), [h, k, N, R]), C = Object(o.e)(e => !Object(O.S)(e) && Object(m.w)(e));
+				}), [h, N, k, R]), I = Object(o.e)(e => !Object(O.S)(e) && Object(m.w)(e));
 				if (!_ || !f) return null;
-				if (C) return a.a.createElement("div", {
+				if (I) return a.a.createElement("div", {
 					className: Object(c.a)(x.a.container, {
 						[x.a.containerExp]: M
 					})
@@ -81,7 +81,7 @@
 					openLogin: g,
 					fancyBackground: !0
 				}));
-				const I = {
+				const T = {
 					...A,
 					config: {
 						...A.config,
@@ -96,8 +96,8 @@
 						[x.a.snoovatarModalBuilderV2]: t,
 						[x.a.containerExp]: M
 					})
-				}, a.a.createElement(s.a, j({}, I, {
-					navState: y,
+				}, a.a.createElement(s.a, j({}, T, {
+					navState: C,
 					isModal: t
 				}), a.a.createElement(s.b, {
 					isModal: t,
@@ -233,10 +233,10 @@
 			const o = e => {
 					return !(Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: s.ye
-					}) === s.Pd)
+						experimentName: s.we
+					}) === s.Nd)
 				},
-				c = Object(a.a)(s.ze)
+				c = Object(a.a)(s.xe)
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, r) {
 			"use strict";
@@ -245,9 +245,9 @@
 			}));
 			var s = r("./src/reddit/constants/experiments.ts"),
 				n = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(n.a)(s.zd)
+			const a = Object(n.a)(s.xd)
 		},
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.41839fc03b83fca58fd0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.6ff56d6f325e9be2b393.js.map

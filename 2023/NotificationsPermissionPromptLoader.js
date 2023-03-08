@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsPermissionPromptLoader.e283694ef4a47d5fc5a2.js
-// Retrieved at 3/7/2023, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsPermissionPromptLoader.3c8071a2063bf02a81dc.js
+// Retrieved at 3/8/2023, 6:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsPermissionPromptLoader", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -95,21 +95,21 @@
 				y = i("./src/reddit/selectors/activeModalId.ts"),
 				k = i("./src/reddit/constants/experiments.ts"),
 				x = i("./src/reddit/helpers/chooseVariant/index.ts"),
-				w = i("./src/reddit/selectors/user.ts");
-			const N = e => Object(x.c)(e, {
-				experimentEligibilitySelector: w.S,
+				N = i("./src/reddit/selectors/user.ts");
+			const w = e => Object(x.c)(e, {
+				experimentEligibilitySelector: N.S,
 				experimentName: k.xb
-			}) === k.Pd;
+			}) === k.Nd;
 			var S = i("./src/reddit/selectors/experiments/delayDnPermission.ts"),
 				P = i("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts");
 			const F = e => Object(x.c)(e, {
-				experimentName: k.dc,
+				experimentName: k.cc,
 				experimentEligibilitySelector: x.a
-			}) === k.Pd;
+			}) === k.Nd;
 			var q = i("./src/reddit/selectors/meta.ts");
 			let C = !1;
 			const E = async (e, t) => {
-				const i = Object(w.R)(e);
+				const i = Object(N.R)(e);
 				if (C) return;
 				if (C = !0, Object(b.a)(e) !== d.d.NotificationsSupported) return;
 				await Object(u.a)();
@@ -140,7 +140,7 @@
 						b = Object(S.a)(c),
 						p = Object(P.e)(c),
 						m = Object(j.c)(g.a.NSFW_BLOCKING_MODAL_V2)(c),
-						O = N(c);
+						O = w(c);
 					if (p || m) return;
 					if (await Object(r.a)() || u) return;
 					await E(c, n);
@@ -319,7 +319,7 @@
 			})), i.d(t, "h", (function() {
 				return x
 			})), i.d(t, "g", (function() {
-				return w
+				return N
 			}));
 			var n = i("./src/reddit/selectors/telemetry.ts"),
 				o = i("./src/telemetry/index.ts"),
@@ -453,7 +453,7 @@
 					noun: "desktop_notification_permissions",
 					source: "overlay"
 				}),
-				w = () => e => ({
+				N = () => e => ({
 					...n.o(e),
 					action: "auto_dismiss",
 					noun: "desktop_notification_permissions",
@@ -465,4 +465,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPermissionPromptLoader.e283694ef4a47d5fc5a2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPermissionPromptLoader.3c8071a2063bf02a81dc.js.map

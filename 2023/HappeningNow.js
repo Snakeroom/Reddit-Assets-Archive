@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HappeningNow.3cd6b6f4b5a13f3d9e09.js
-// Retrieved at 3/8/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HappeningNow.cf36552d89bd579ab44c.js
+// Retrieved at 3/8/2023, 6:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HappeningNow"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2513,12 +2513,12 @@
 						rtJsonElementProps: o
 					});
 					switch (a) {
-						case b.Qf.SmIcon:
+						case b.Of.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: r,
 								rtJsonElementProps: o
 							});
-						case b.Qf.SmIconHc:
+						case b.Of.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: r,
 								isHoverable: !0,
@@ -3120,10 +3120,10 @@
 						className: J.a.speakerRingOuter
 					})))
 				},
-				K = n("./src/reddit/components/SubredditIcon/index.tsx");
+				Z = n("./src/reddit/components/SubredditIcon/index.tsx");
 
-			function Z() {
-				return (Z = Object.assign || function(e) {
+			function K() {
+				return (K = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -3131,7 +3131,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var q = e => a.a.createElement("svg", Z({
+			var q = e => a.a.createElement("svg", K({
 				viewBox: "0 0 21 20",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, e), a.a.createElement("path", {
@@ -3202,7 +3202,7 @@
 					}, a.a.createElement(Y, {
 						id: n.id,
 						isAnimated: !0
-					}), a.a.createElement(K.b, {
+					}), a.a.createElement(Z.b, {
 						className: te.a.subredditIcon,
 						iconUrl: d
 					}), t.contentType === v.v.Chat ? a.a.createElement(q, {
@@ -3590,8 +3590,8 @@
 					stopColor: "#FF7A00"
 				})))),
 				Ye = n("./src/reddit/components/HappeningNow/SidebarContent/index.m.less"),
-				Ke = n.n(Ye);
-			const Ze = [{
+				Ze = n.n(Ye);
+			const Ke = [{
 					url: "https://www.reddithelp.com",
 					label: r.fbt._("Help", null, {
 						hk: "1RgRee"
@@ -3681,7 +3681,7 @@
 					})
 				}],
 				Xe = e => a.a.createElement("a", {
-					className: Ke.a.link,
+					className: Ze.a.link,
 					href: e.url,
 					rel: e.rel
 				}, e.label);
@@ -3700,21 +3700,21 @@
 						className: t
 					} = e;
 					return a.a.createElement("div", {
-						className: Object(i.a)(Ke.a.liveDiscoveryContentIntro, t)
+						className: Object(i.a)(Ze.a.liveDiscoveryContentIntro, t)
 					}, a.a.createElement("img", {
-						className: Ke.a.img,
+						className: Ze.a.img,
 						src: `${k.a.assetPath}/img/happeningNow/live-content-intro-snoo.png`,
 						alt: r.fbt._("Snoo sitting on a sofa with popcorn", null, {
 							hk: "1Rm16Z"
 						})
 					}), a.a.createElement(Je, {
-						className: Ke.a.background
+						className: Ze.a.background
 					}), a.a.createElement("h2", {
-						className: Ke.a.header
+						className: Ze.a.header
 					}, r.fbt._("Here's what's happening!", null, {
 						hk: "2LRkyC"
 					})), a.a.createElement("p", {
-						className: Ke.a.description
+						className: Ze.a.description
 					}, r.fbt._("Explore live chats and audio talks happening across Reddit.", null, {
 						hk: "3HDfwU"
 					})))
@@ -3724,19 +3724,19 @@
 						className: t
 					} = e;
 					return a.a.createElement("div", {
-						className: Object(i.a)(Ke.a.links, t)
+						className: Object(i.a)(Ze.a.links, t)
 					}, a.a.createElement("div", {
-						className: Ke.a.linksWrapper
+						className: Ze.a.linksWrapper
 					}, a.a.createElement("div", {
-						className: Ke.a.column
-					}, Ze.map((e, t) => a.a.createElement(Xe, ze({
+						className: Ze.a.column
+					}, Ke.map((e, t) => a.a.createElement(Xe, ze({
 						key: `first_column_link_${t}`
 					}, e)))), a.a.createElement("div", {
-						className: Ke.a.column
+						className: Ze.a.column
 					}, qe.map((e, t) => a.a.createElement(Xe, ze({
 						key: `second_column_link_${t}`
 					}, e))))), a.a.createElement("span", {
-						className: Ke.a.copyright
+						className: Ze.a.copyright
 					}, r.fbt._("Reddit Inc © {year}. All rights reserved", [r.fbt._param("year", (new Date).getFullYear().toString())], {
 						hk: "4BrCkA"
 					})))
@@ -3949,12 +3949,12 @@
 				l = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: r.Kf
+						experimentName: r.If
 					}) || ""
 				},
 				c = e => {
 					const t = l(e);
-					return t === r.Qf.SmIcon || t === r.Qf.SmIconHc
+					return t === r.Of.SmIcon || t === r.Of.SmIconHc
 				},
 				d = (e, t) => {
 					let {
@@ -3983,4 +3983,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.3cd6b6f4b5a13f3d9e09.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.cf36552d89bd579ab44c.js.map
