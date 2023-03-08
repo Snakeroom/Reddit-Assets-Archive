@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.316e82eed721e2561510.js
-// Retrieved at 3/8/2023, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.74d24964e11a88b23714.js
+// Retrieved at 3/8/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1414,7 +1414,7 @@
 						"CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c": "fb3e15e0dad660273caf",
 						"CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults": "7297b906853f2314f51f",
 						"CollectionCommentsPage~ModProgressModule~NewCommunityProgress": "eb148b2027be31d29dc5",
-						"CollectionCommentsPage~SearchResults": "935e812efe2b3a3afd0a",
+						"CollectionCommentsPage~SearchResults": "16b379c551445cd04475",
 						CollectionCommentsPage: "4da61da6e55b2d19f122",
 						ProfilePrivate: "871676fa5b1319989c29",
 						"CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit": "0ec035b75b63d6b31b7b",
@@ -1478,7 +1478,7 @@
 						NotificationsPrePromptLoader: "bf376437394794c9e1fc",
 						NsfwBlockingActions: "2d3d172c912b62d812ef",
 						NsfwBlockingModal: "951c6735fd4788507abd",
-						NsfwSearchModal: "8c5cd9e1a2bbd91e1097",
+						NsfwSearchModal: "34cc47e546fdf7978741",
 						PostFlowUpsellModal: "c006d5d1958d4b927113",
 						PostSetPageAction: "07ee692bb62509dc25ac",
 						Predictions: "edb4dfc30d770b8a1c3e",
@@ -1512,19 +1512,19 @@
 						"reddit-components-Econ-Prediction-EndTimeModal": "f7977881e652a053ff06",
 						"reddit-components-PostCreationForm-PredictionEditor-InactivityModal": "c69b240b5733aa348258",
 						"reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal": "cd11803960dd6c0af1e9",
-						"translations/bn_BD-json": "5e3313b3eae08bd06b78",
-						"translations/de_DE-json": "4319413bf7ae9e66b0d3",
-						"translations/es_ES-json": "25de99f5a2025fa62514",
-						"translations/es_MX-json": "592650f30d4ab3d68fa6",
-						"translations/fr_CA-json": "a9413fb8c7e2c54c44c6",
-						"translations/fr_FR-json": "6ea7b2c16d824984b35a",
-						"translations/hi_IN-json": "d59f5300b3837ed3de23",
-						"translations/it_IT-json": "a48fefe66cdebd17d08b",
-						"translations/nl_NL-json": "05a1b64e04a020237d92",
-						"translations/pseudo-json": "206fd80a982c6d8efd20",
-						"translations/pt_BR-json": "584004c955f552cb6046",
-						"translations/pt_PT-json": "e39f40667ac2a3455d29",
-						"translations/sv_SE-json": "b2bdfa6aebce5372ce19",
+						"translations/bn_BD-json": "f01e1b040907a92483de",
+						"translations/de_DE-json": "424594bab424f0c62669",
+						"translations/es_ES-json": "187687c4a2da292c9ca5",
+						"translations/es_MX-json": "f11b62fe08bd3233016a",
+						"translations/fr_CA-json": "3ef08abe5c6b9452230e",
+						"translations/fr_FR-json": "48a461fa785aa9dc1a14",
+						"translations/hi_IN-json": "aabef9899ab94a96f06d",
+						"translations/it_IT-json": "b913f96d66b8e42d7c5d",
+						"translations/nl_NL-json": "b33e913f5c0852cff19b",
+						"translations/pseudo-json": "811c1a0b30ea38d641c5",
+						"translations/pt_BR-json": "f1da810566d167bc602e",
+						"translations/pt_PT-json": "18b4667077f5138ca443",
+						"translations/sv_SE-json": "1c230389c7f33153771b",
 						"vendors~AdminPanel": "9abedef941b07fd50b75",
 						AdminPanel: "6f55908fd4914840e365",
 						"vendors~Avatar~ChatPost~CollectiblesShowcaseUnit~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProf~7d152600": "6f19d2e4659dbfb6d084",
@@ -1550,7 +1550,7 @@
 						"vendors~Subreddit~SubredditWiki": "c17b16c26feb8de5d65f",
 						"vendors~PostCreation~Subreddit": "e1c74d9c118cc2abc046",
 						Subreddit: "3dc63c88c917bd7b1928",
-						CommentsPage: "6638d201c5392d111e8f",
+						CommentsPage: "f7041dda8f6b15282a8c",
 						"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "fbf6b3871488094312c2",
 						CryptoHarbergerTaxManageModal: "c62d107de978c0d0d919",
 						HarbergerTaxManageModal: "0c5e5e09cea09c83865b",
@@ -1796,4 +1796,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.316e82eed721e2561510.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.74d24964e11a88b23714.js.map

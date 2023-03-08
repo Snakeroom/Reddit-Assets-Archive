@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.6638d201c5392d111e8f.js
-// Retrieved at 3/8/2023, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.f7041dda8f6b15282a8c.js
+// Retrieved at 3/8/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "CollectionCommentsPage~SearchResults", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -44219,24 +44219,23 @@
 					p = Object(M.Z)(t),
 					b = Object(a.e)(tr),
 					f = Object(a.e)($s),
-					h = Object(a.e)(z.S),
-					C = Object(a.e)(sr.a);
+					h = Object(a.e)(sr.a);
 				if (Object(o.useEffect)(() => {
-						Object(M.db)(t) ? u(nr.Covid) : b && Object(M.eb)(t) && !h && s && C && er(n.getState()) ? u(nr.MFeed) : f && Object(M.fb)(t) && !C && Xs(n.getState()) ? u(nr.NSFW) : u(null)
-					}, [t, p, C, s, b, f, h]), !d || m.current[d].dismissed) return null;
+						Object(M.db)(t) ? u(nr.Covid) : b && Object(M.eb)(t) && s && h && er(n.getState()) ? u(nr.MFeed) : f && Object(M.fb)(t) && !h && Xs(n.getState()) ? u(nr.NSFW) : u(null)
+					}, [t, p, h, s, b, f]), !d || m.current[d].dismissed) return null;
 
-				function g(t) {
+				function C(t) {
 					d && e(Object(V.x)(t, d, Object(l.e)(r()(p || {}, Dt.z))))
 				}
-				const _ = m.current[d];
-				return _.seen || (g("view"), _.seen = !0), i.a.createElement(Ks, {
-					announcement: _.announcement,
+				const g = m.current[d];
+				return g.seen || (C("view"), g.seen = !0), i.a.createElement(Ks, {
+					announcement: g.announcement,
 					className: or.a.announcement,
 					onBtnClick: function() {
-						d === nr.NSFW && c(Object(Rs.h)(Ys.a.NSFW_SEARCH_MODAL)), g("click")
+						d === nr.NSFW && c(Object(Rs.h)(Ys.a.NSFW_SEARCH_MODAL)), C("click")
 					},
 					onClose: function() {
-						g("dismiss"), _.dismissed = !0, u(null)
+						C("dismiss"), g.dismissed = !0, u(null)
 					}
 				})
 			}
@@ -49441,4 +49440,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.6638d201c5392d111e8f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.f7041dda8f6b15282a8c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NsfwSearchModal.8c5cd9e1a2bbd91e1097.js
-// Retrieved at 3/7/2023, 3:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NsfwSearchModal.34cc47e546fdf7978741.js
+// Retrieved at 3/8/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NsfwSearchModal"], {
 		"./src/reddit/components/Upsell/NsfwSearch/Modal.tsx": function(e, t, n) {
@@ -21,57 +21,61 @@
 				C = n("./src/reddit/helpers/trackers/nsfwSignupUpsell.ts"),
 				x = n("./src/reddit/icons/svgs/NSFWWarningIcon/index.tsx"),
 				O = n("./src/reddit/selectors/experiments/nsfwBypassableBlockingExperiment.ts"),
-				g = n("./src/reddit/actions/contentGate.ts"),
-				j = n("./src/reddit/components/Upsell/NsfwSearch/index.m.less"),
-				w = n.n(j);
-			const h = () => {
+				j = n("./src/reddit/actions/contentGate.ts"),
+				g = n("./src/reddit/selectors/user.ts"),
+				w = n("./src/reddit/components/Upsell/NsfwSearch/index.m.less"),
+				h = n.n(w);
+			const v = () => {
 					const e = Object(d.d)(),
-						t = Object(b.b)();
+						t = Object(b.b)(),
+						n = Object(d.e)(g.S);
 					return i.a.createElement("div", {
-						className: w.a.modalContent
+						className: h.a.modalContent
 					}, i.a.createElement("div", {
-						className: w.a.textContainer
+						className: h.a.textContainer
 					}, i.a.createElement(x.b, {
 						fill: x.a.DEFAULT
 					}), i.a.createElement("span", {
-						className: w.a.title
+						className: h.a.title
 					}, (() => l.fbt._("Confirm you're over 18", null, {
 						hk: "UUekV"
 					}))()), i.a.createElement("span", {
-						className: w.a.body
+						className: h.a.body
 					}, (() => l.fbt._("This page is NSFW (Not Safe for Work) and may have mature or adult content. To continue, confirm you’re over 18.", null, {
 						hk: "1YTdFy"
 					}))())), i.a.createElement("div", {
-						className: w.a.buttonContainer
+						className: h.a.buttonContainer
 					}, i.a.createElement(m.t, {
 						priority: m.c.Primary,
-						className: w.a.continue,
+						className: h.a.continue,
 						onClick: async () => {
-							t(Object(f.b)()), Object(p.b)(p.a.Continue), Object(g.q)(), Object(O.d)(), window.location.reload()
-						}
+							t(Object(f.b)()), Object(p.b)(p.a.Continue), n ? e(Object(j.r)()) : Object(j.q)(), Object(O.d)(), window.location.reload()
+						},
+						"data-testid": "continue-button"
 					}, (() => l.fbt._("Yes, I'm over 18", null, {
 						hk: "3aYK0v"
 					}))()), i.a.createElement(m.t, {
 						priority: m.c.Secondary,
-						className: Object(o.a)(w.a.continue, w.a.dismiss),
+						className: Object(o.a)(h.a.continue, h.a.dismiss),
 						onClick: () => {
 							t(Object(f.c)()), Object(p.b)(p.a.Dismiss), e(Object(u.b)("/"))
-						}
+						},
+						"data-testid": "dismiss-button"
 					}, (() => l.fbt._("Go to Home", null, {
 						hk: "3zORsB"
 					}))())))
 				},
-				v = () => {
+				N = () => {
 					const e = Object(b.b)();
 					return i.a.useEffect(() => {
 						e(Object(C.c)())
 					}, [e]), i.a.createElement("div", {
-						className: w.a.container
-					}, i.a.createElement(h, null))
+						className: h.a.container
+					}, i.a.createElement(v, null))
 				};
 
-			function N() {
-				return (N = Object.assign || function(e) {
+			function _() {
+				return (_ = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -80,13 +84,13 @@
 				}).apply(this, arguments)
 			}
 			const {
-				fbt: _
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), B = Object(s.a)(() => i.a.createElement(v, null));
-			t.default = e => i.a.createElement(B, N({}, e, {
-				className: Object(o.a)(e.className, w.a.modal),
+				fbt: B
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), y = Object(s.a)(() => i.a.createElement(N, null));
+			t.default = e => i.a.createElement(y, _({}, e, {
+				className: Object(o.a)(e.className, h.a.modal),
 				shouldBlurBackground: !0,
 				onOverlayClick: c.a,
-				overlayClassName: w.a.overlay
+				overlayClassName: h.a.overlay
 			}))
 		},
 		"./src/reddit/components/Upsell/NsfwSearch/index.m.less": function(e, t, n) {
@@ -299,4 +303,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwSearchModal.8c5cd9e1a2bbd91e1097.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwSearchModal.34cc47e546fdf7978741.js.map

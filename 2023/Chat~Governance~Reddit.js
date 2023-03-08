@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.24e0e981fb29109d4f75.js
-// Retrieved at 3/8/2023, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.5ea2fbb2a5df9e8aa29c.js
+// Retrieved at 3/8/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -5412,11 +5412,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("184289"),
+				buildNumber: Object(r.c)("184293"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1678286124"),
+				buildTimestamp: Object(r.b)("1678289522"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -8154,14 +8154,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c57651e7175fdfbf2c42647f5cbe614abf8188477-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c61f029851391e16484e2f0cdf15db9ead97d96c5-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "57651e7175fdfbf2c42647f5cbe614abf8188477-production",
+						release: "61f029851391e16484e2f0cdf15db9ead97d96c5-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(D.d)(), new d.Integrations.Breadcrumbs({
@@ -8708,7 +8708,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "57651e7175fdfbf2c42647f5cbe614abf8188477-production",
+							releaseClient: "61f029851391e16484e2f0cdf15db9ead97d96c5-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -20575,15 +20575,15 @@
 				o = {
 					id: "M_FEED_SEARCH",
 					icon: r.a.Snoo,
-					title: () => n.fbt._("Looking for adult content?", null, {
-						hk: "4ACtWW"
+					title: () => n.fbt._("Looking for mature content?", null, {
+						hk: "3hOJTM"
 					}),
-					description: () => n.fbt._("Browse Reddit's sex and erotica communities. 18+ only.", null, {
-						hk: "LRHz"
+					description: () => n.fbt._("Browse posts from sex and erotica communities.", null, {
+						hk: "1zdhq1"
 					}),
-					url: "https://www.reddit.com/m/feed",
-					callToAction: () => n.fbt._("Visit m feed", null, {
-						hk: "1E67cQ"
+					url: "https://www.reddit.com/mature",
+					callToAction: () => n.fbt._("View Mature Communities", null, {
+						hk: "2xMb4j"
 					}),
 					maxImpressionsCount: Number.MAX_SAFE_INTEGER,
 					iconUrl: null,
@@ -52585,4 +52585,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.24e0e981fb29109d4f75.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.5ea2fbb2a5df9e8aa29c.js.map

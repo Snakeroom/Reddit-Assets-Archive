@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.935e812efe2b3a3afd0a.js
-// Retrieved at 3/8/2023, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.16b379c551445cd04475.js
+// Retrieved at 3/8/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -8632,24 +8632,23 @@
 					p = Object(R.Z)(t),
 					b = Object(i.e)(tr),
 					h = Object(i.e)($n),
-					g = Object(i.e)(z.S),
-					O = Object(i.e)(nr.a);
+					g = Object(i.e)(nr.a);
 				if (Object(o.useEffect)(() => {
-						Object(R.db)(t) ? m(sr.Covid) : b && Object(R.eb)(t) && !g && n && O && er(s.getState()) ? m(sr.MFeed) : h && Object(R.fb)(t) && !O && Zn(s.getState()) ? m(sr.NSFW) : m(null)
-					}, [t, p, O, n, b, h, g]), !d || u.current[d].dismissed) return null;
+						Object(R.db)(t) ? m(sr.Covid) : b && Object(R.eb)(t) && n && g && er(s.getState()) ? m(sr.MFeed) : h && Object(R.fb)(t) && !g && Zn(s.getState()) ? m(sr.NSFW) : m(null)
+					}, [t, p, g, n, b, h]), !d || u.current[d].dismissed) return null;
 
-				function f(t) {
+				function O(t) {
 					d && e(Object(V.x)(t, d, Object(l.e)(r()(p || {}, Ft.z))))
 				}
-				const x = u.current[d];
-				return x.seen || (f("view"), x.seen = !0), a.a.createElement(qn, {
-					announcement: x.announcement,
+				const f = u.current[d];
+				return f.seen || (O("view"), f.seen = !0), a.a.createElement(qn, {
+					announcement: f.announcement,
 					className: or.a.announcement,
 					onBtnClick: function() {
-						d === sr.NSFW && c(Object(Mn.h)(Qn.a.NSFW_SEARCH_MODAL)), f("click")
+						d === sr.NSFW && c(Object(Mn.h)(Qn.a.NSFW_SEARCH_MODAL)), O("click")
 					},
 					onClose: function() {
-						f("dismiss"), x.dismissed = !0, m(null)
+						O("dismiss"), f.dismissed = !0, m(null)
 					}
 				})
 			}
@@ -8949,4 +8948,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.935e812efe2b3a3afd0a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.16b379c551445cd04475.js.map
