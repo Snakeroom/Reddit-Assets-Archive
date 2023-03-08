@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.dc8c70239672be07c16a.js
-// Retrieved at 3/8/2023, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.24998b68f27c8afd23a4.js
+// Retrieved at 3/8/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -353,14 +353,14 @@
 				d = e => {
 					switch (e) {
 						case o.a.Denied:
-							c.nb(!1), Object(r.c)();
+							c.ob(!1), Object(r.c)();
 							break;
 						case o.a.Default:
 						case o.a.Granted:
-							c.nb(!0), Object(r.c)();
+							c.ob(!0), Object(r.c)();
 							break;
 						case o.a.Closed:
-							c.nb(!0)
+							c.ob(!0)
 					}
 				}
 		},
@@ -1788,7 +1788,7 @@
 					}
 				}),
 				c = (e, t) => {
-					t && (Object(o.Ab)(e.postId), Object(o.Kb)(t)), e.impressionIdStr ? Object(o.Bb)(e.impressionIdStr) : e.impressionId && Object(o.Bb)(e.impressionId)
+					t && (Object(o.Bb)(e.postId), Object(o.Lb)(t)), e.impressionIdStr ? Object(o.Cb)(e.impressionIdStr) : e.impressionId && Object(o.Cb)(e.impressionId)
 				}
 		},
 		"./src/reddit/helpers/trackers/inbox.ts": function(e, t, n) {
@@ -3524,4 +3524,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.dc8c70239672be07c16a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.24998b68f27c8afd23a4.js.map

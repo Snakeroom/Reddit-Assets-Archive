@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.7a1bfc5854699c310d59.js
-// Retrieved at 3/8/2023, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.092274da9d19e2018da7.js
+// Retrieved at 3/8/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "ModQueuePages~reddit-components-MediumPost"], {
 		"./src/lib/LiveChatActiveUsers/index.m.less": function(e, t, s) {
@@ -8787,7 +8787,7 @@
 							pauseMedia: !0
 						})
 					}, this.onGotItClick = () => {
-						Object(dt.Nb)(), this.setState({
+						Object(dt.Ob)(), this.setState({
 							showEducation: !1
 						})
 					}, this.onClickPost = (e, t) => {
@@ -8807,7 +8807,7 @@
 				}
 				componentDidMount() {
 					this.setState({
-						showEducation: !Object(dt.N)()
+						showEducation: !Object(dt.O)()
 					}), document.addEventListener("scroll", this.handleScroll), this.handleScroll()
 				}
 				componentWillUnmount() {
@@ -9303,4 +9303,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.7a1bfc5854699c310d59.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.092274da9d19e2018da7.js.map

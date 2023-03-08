@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.16b379c551445cd04475.js
-// Retrieved at 3/8/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.8a41bfcdac2e9a1b06b4.js
+// Retrieved at 3/8/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -892,7 +892,7 @@
 								t(h({
 									categoryId: e,
 									rank: n + 1
-								})), Object(u.lb)(Object(p.c)(s()))
+								})), Object(u.mb)(Object(p.c)(s()))
 							})(e))))
 						}
 					} else t(M.n({
@@ -7600,8 +7600,8 @@
 				const [e, t] = Object(o.useState)(!1);
 				return Object(o.useEffect)(() => {
 					var e;
-					const s = null !== (e = Object(Ct.C)("should-show-comment-tab-tooltip")) && void 0 !== e ? e : 2;
-					t(Boolean(s)), 2 === s ? Object(Ct.Eb)("should-show-comment-tab-tooltip", 1) : 1 === s && Object(Ct.Eb)("should-show-comment-tab-tooltip", !1)
+					const s = null !== (e = Object(Ct.D)("should-show-comment-tab-tooltip")) && void 0 !== e ? e : 2;
+					t(Boolean(s)), 2 === s ? Object(Ct.Fb)("should-show-comment-tab-tooltip", 1) : 1 === s && Object(Ct.Fb)("should-show-comment-tab-tooltip", !1)
 				}, []), {
 					get shouldShowCommentTabTooltip() {
 						return e
@@ -8948,4 +8948,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.16b379c551445cd04475.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.8a41bfcdac2e9a1b06b4.js.map

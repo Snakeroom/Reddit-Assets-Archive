@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.9700522988bda3910959.js
-// Retrieved at 3/8/2023, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.f983b83068a994341c0b.js
+// Retrieved at 3/8/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -1981,13 +1981,13 @@
 						}
 					}, []), Object(r.useEffect)(() => {
 						if (Object(x.a)()) {
-							const e = Object(_.C)("modnote-draft");
+							const e = Object(_.D)("modnote-draft");
 							y(e && e[c] ? e[c] : "")
 						}
 					}, [c]);
 					const T = Object(s.d)(),
 						L = Object(r.useCallback)(e => {
-							y(e), Object(_.Eb)("modnote-draft", {
+							y(e), Object(_.Fb)("modnote-draft", {
 								[c]: e
 							})
 						}, [y, c]),
@@ -3811,10 +3811,10 @@
 				const B = Object(s.d)(),
 					T = Object(m.a)(),
 					[L, D, H] = function(e, t, n) {
-						const [a, s] = Object(r.useState)(Object(u.r)(e, t) || 0), o = Object(r.useCallback)(() => {
-							s(a + 1), Object(u.xb)(e, t, a + 1)
+						const [a, s] = Object(r.useState)(Object(u.s)(e, t) || 0), o = Object(r.useCallback)(() => {
+							s(a + 1), Object(u.yb)(e, t, a + 1)
 						}, []), i = Object(r.useCallback)(() => {
-							n > 0 && (s(n), Object(u.xb)(e, t, n))
+							n > 0 && (s(n), Object(u.yb)(e, t, n))
 						}, []);
 						return [a, o, i]
 					}(h, n.notificationName, (null === (v = n.persistence) || void 0 === v ? void 0 : v.maxViews) || 0),
@@ -4347,9 +4347,9 @@
 						} = e,
 						[_, I] = Object(J.a)(x),
 						[g, C] = function(e) {
-							const [t, n] = Object(a.useState)(() => Object(q.u)(e));
+							const [t, n] = Object(a.useState)(() => Object(q.v)(e));
 							return [t, Object(a.useCallback)(() => {
-								n(!0), Object(q.yb)(e)
+								n(!0), Object(q.zb)(e)
 							}, [e])]
 						}(x),
 						[O, N] = function(e) {
@@ -6037,9 +6037,9 @@
 				a = n("./src/reddit/helpers/localStorage/index.ts");
 
 			function s(e) {
-				const [t, n] = Object(r.useState)(Object(a.t)(e));
+				const [t, n] = Object(r.useState)(Object(a.u)(e));
 				return [t, Object(r.useCallback)(() => {
-					n(!0), Object(a.ob)(e)
+					n(!0), Object(a.pb)(e)
 				}, [])]
 			}
 		},
@@ -6428,7 +6428,7 @@
 					const {
 						id: n,
 						eventViews: r
-					} = Object(s.y)();
+					} = Object(s.z)();
 					return n === e.id && r > e.maxViews ? null : e
 				}),
 				l = Object(r.a)(d, e => {
@@ -6436,7 +6436,7 @@
 					const {
 						id: t,
 						lastInteractionTimestamp: n
-					} = Object(s.y)();
+					} = Object(s.z)();
 					return t === e.id && n > 0 ? null : e.banner
 				})
 		},
@@ -6684,4 +6684,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.9700522988bda3910959.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.f983b83068a994341c0b.js.map

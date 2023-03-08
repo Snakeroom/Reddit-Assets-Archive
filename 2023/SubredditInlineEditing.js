@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.f7388c54fdb8f7c8654f.js
-// Retrieved at 2/23/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.74404697dd91af99027f.js
+// Retrieved at 3/8/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditInlineEditing"], {
 		"./src/reddit/components/CommunityTopics/NumTopicsSelected.tsx": function(e, t, s) {
@@ -84,10 +84,10 @@
 			}
 			var f = Object(r.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(c.i)()), Object(u.zb)()
+					e(Object(c.i)()), Object(u.Ab)()
 				},
 				onViewTooltip: () => {
-					Object(u.Wb)()
+					Object(u.Xb)()
 				}
 			}))(Object(p.c)(g));
 			const T = "editable-primary-topic-idcard";
@@ -205,7 +205,7 @@
 				componentDidMount() {
 					const e = this.props.onShowTooltip;
 					this.setState({
-						tooltipDismissed: Object(u.s)()
+						tooltipDismissed: Object(u.t)()
 					}, () => {
 						this.isTooltipEnabled() && e && e()
 					})
@@ -808,9 +808,9 @@
 				M = s("./src/reddit/components/ContentTooltip/index.tsx"),
 				L = s("./src/reddit/icons/fonts/Info/index.tsx"),
 				F = s("./src/reddit/components/InlineSubredditEditing/InlineCommunityTopics/InfoTooltip/index.m.less"),
-				H = s.n(F);
+				A = s.n(F);
 			const {
-				fbt: A
+				fbt: H
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), U = Object(r.c)({
 				activeTooltipId: B.a
 			}), K = Object(i.b)(U, e => ({
@@ -818,11 +818,11 @@
 				onShowTooltip: t => e(Object(l.f)({
 					tooltipId: t
 				}))
-			})), G = "inline-editing-topics-tooltip-", W = {
+			})), G = "inline-editing-topics-tooltip-", V = {
 				top: N.a.alienblue,
 				bottom: N.a.alienblue
 			};
-			class V extends o.a.Component {
+			class W extends o.a.Component {
 				constructor(e) {
 					super(e), this.onShowTooltip = () => {
 						this.props.onShowTooltip(this.state.tooltipId)
@@ -847,26 +847,26 @@
 						onMouseEnter: this.onShowTooltip,
 						onMouseLeave: this.props.onHideTooltip
 					}, o.a.createElement(L.a, {
-						className: Object(a.a)(H.a.infoIcon, {
-							[H.a.activeInfoIcon]: this.tooltipIsOpen()
+						className: Object(a.a)(A.a.infoIcon, {
+							[A.a.activeInfoIcon]: this.tooltipIsOpen()
 						})
 					}), o.a.createElement(M.a, {
 						tooltipId: this.state.tooltipId,
 						defaultTooltipPosition: "bottom",
-						caretColor: W
+						caretColor: V
 					}, o.a.createElement("div", {
-						className: H.a.container
-					}, A._("Adding community topics allow people to find your community. Add a primary topic and sub topics to be discovered more easily.", null, {
+						className: A.a.container
+					}, H._("Adding community topics allow people to find your community. Add a primary topic and sub topics to be discovered more easily.", null, {
 						hk: "2PLIUO"
 					}))))
 				}
 			}
-			var J = K(V),
+			var J = K(W),
 				q = s("./src/reddit/components/InlineSubredditEditing/InlineCommunityTopics/index.m.less"),
 				X = s.n(q);
 			const {
 				fbt: Q
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), Z = 4, z = Object(r.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), Z = 4, Y = Object(r.c)({
 				haveData: (e, t) => {
 					let {
 						subredditId: s
@@ -881,7 +881,7 @@
 				isLoading: e => Object(R.B)(e),
 				selectedPrimaryTag: R.x,
 				isPostUpsellModalOpen: Object(P.b)(j.a.POST_FLOW_UPSELL_MODAL_ID)
-			}), Y = Object(i.b)(z, (e, t) => {
+			}), z = Object(i.b)(Y, (e, t) => {
 				let {
 					subredditId: s,
 					context: n
@@ -1061,7 +1061,7 @@
 					})) : this.renderPlaceholder()
 				}
 			}
-			t.default = Y(ee)
+			t.default = z(ee)
 		},
 		"./src/reddit/components/InlineSubredditEditing/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1752,4 +1752,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.f7388c54fdb8f7c8654f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.74404697dd91af99027f.js.map
