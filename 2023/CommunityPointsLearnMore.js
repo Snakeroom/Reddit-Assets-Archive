@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.01d9c9f5fdb92a24b46d.js
-// Retrieved at 1/18/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.6c98e663ee141266aedf.js
+// Retrieved at 3/8/2023, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, o) {
@@ -716,9 +716,9 @@
 			const {
 				fbt: L
 			} = o("./node_modules/fbt/lib/FbtPublic.js"), {
-				fbt: G
+				fbt: Y
 			} = o("./node_modules/fbt/lib/FbtPublic.js");
-			var Y = o("./node_modules/react-router-redux/es/index.js");
+			var G = o("./node_modules/react-router-redux/es/index.js");
 			const z = e => {
 					let {
 						className: t
@@ -746,7 +746,7 @@
 						className: b.a.floatingMenuButton,
 						onClick: () => l(!n),
 						isMenuOpen: n
-					})) : (o(Object(Y.b)(m("introduction"))), null)
+					})) : (o(Object(G.b)(m("introduction"))), null)
 				},
 				q = {
 					introduction: i.a.createElement(() => i.a.createElement("main", null, i.a.createElement("h1", null, C._("Introduction", null, {
@@ -1355,57 +1355,57 @@
 					})))], {
 						hk: "3MqSUP"
 					}))), null),
-					vault: i.a.createElement(() => i.a.createElement("main", null, i.a.createElement("h1", null, G._("Vault", null, {
+					vault: i.a.createElement(() => i.a.createElement("main", null, i.a.createElement("h1", null, Y._("Vault", null, {
 						hk: "JRmsq"
-					})), i.a.createElement("h2", null, G._("The Vault is an embedded digital wallet in the Reddit app and the home for Community Points.", null, {
+					})), i.a.createElement("h2", null, Y._("The Vault is an embedded digital wallet in the Reddit app and the home for Community Points.", null, {
 						hk: "3mlz88"
-					})), G._("{=Reddit Vault is a digital wallet developed by Reddit to help users manage their Community Points from inside of the Reddit app. In your Vault, you can view Community Points from multiple subreddits, gift or tip them to other users, and spend them on things like Special Memberships.}{=The Vault corresponds to a public blockchain address. This is the address on the blockchain where your Community Points are stored and that you control. You can see the address by going into your Vault settings (3 dots at the top of the Vault screen).}", [G._param("=Reddit Vault is a digital wallet developed by Reddit to help users manage their Community Points from inside of the Reddit app. In your Vault, you can view Community Points from multiple subreddits, gift or tip them to other users, and spend them on things like Special Memberships.", i.a.createElement("p", null, G._("Reddit Vault is a digital wallet developed by Reddit to help users manage their Community Points from inside of the Reddit app. In your Vault, you can view Community Points from multiple subreddits, gift or tip them to other users, and spend them on things like Special Memberships.", null, {
+					})), Y._("{=Reddit Vault is a digital wallet developed by Reddit to help users manage their Community Points from inside of the Reddit app. In your Vault, you can view Community Points from multiple subreddits, gift or tip them to other users, and spend them on things like Special Memberships.}{=The Vault corresponds to a public blockchain address. This is the address on the blockchain where your Community Points are stored and that you control. You can see the address by going into your Vault settings (3 dots at the top of the Vault screen).}", [Y._param("=Reddit Vault is a digital wallet developed by Reddit to help users manage their Community Points from inside of the Reddit app. In your Vault, you can view Community Points from multiple subreddits, gift or tip them to other users, and spend them on things like Special Memberships.", i.a.createElement("p", null, Y._("Reddit Vault is a digital wallet developed by Reddit to help users manage their Community Points from inside of the Reddit app. In your Vault, you can view Community Points from multiple subreddits, gift or tip them to other users, and spend them on things like Special Memberships.", null, {
 						hk: "Nsitn"
-					}))), G._param("=The Vault corresponds to a public blockchain address. This is the address on the blockchain where your Community Points are stored and that you control. You can see the address by going into your Vault settings (3 dots at the top of the Vault screen).", i.a.createElement("p", null, G._("The Vault corresponds to a public blockchain address. This is the address on the blockchain where your Community Points are stored and that you control. You can see the address by going into your Vault settings (3 dots at the top of the Vault screen).", null, {
+					}))), Y._param("=The Vault corresponds to a public blockchain address. This is the address on the blockchain where your Community Points are stored and that you control. You can see the address by going into your Vault settings (3 dots at the top of the Vault screen).", i.a.createElement("p", null, Y._("The Vault corresponds to a public blockchain address. This is the address on the blockchain where your Community Points are stored and that you control. You can see the address by going into your Vault settings (3 dots at the top of the Vault screen).", null, {
 						hk: "2KYdTI"
 					})))], {
 						hk: "BHoaY"
-					}), i.a.createElement("section", null, i.a.createElement("h3", null, G._("Create a Vault", null, {
+					}), i.a.createElement("section", null, i.a.createElement("h3", null, Y._("Create a Vault", null, {
 						hk: "1h3rBm"
-					})), G._("{=Users who are subscribed to subreddits with Community Points should see Vault in the app menu on the official Reddit Android & iOS apps. When you open Vault for the first time, you will be prompted to create a Vault or restore one that you created earlier.}{=When you create your Vault, you will receive a public address and a private key. The public address is your address on the Arbitrum Nova network and Ethereum-compatible blockchains where the record of your Community Points is stored.}{=This private key is very important. Whoever has the private key will be able to have full control over your Community Points, and if you lose the private key you could lose access to your Community Points. For that reason, it's very important to make sure it is stored securely and properly backed up.}", [G._param("=Users who are subscribed to subreddits with Community Points should see Vault in the app menu on the official Reddit Android & iOS apps. When you open Vault for the first time, you will be prompted to create a Vault or restore one that you created earlier.", i.a.createElement("p", null, G._("Users who are subscribed to subreddits with Community Points should see Vault in the app menu on the official Reddit Android & iOS apps. When you open Vault for the first time, you will be prompted to create a Vault or restore one that you created earlier.", null, {
+					})), Y._("{=Users who are subscribed to subreddits with Community Points should see Vault in the app menu on the official Reddit Android & iOS apps. When you open Vault for the first time, you will be prompted to create a Vault or restore one that you created earlier.}{=When you create your Vault, you will receive a public address and a private key. The public address is your address on the Arbitrum Nova network and Ethereum-compatible blockchains where the record of your Community Points is stored.}{=This private key is very important. Whoever has the private key will be able to have full control over your Community Points, and if you lose the private key you could lose access to your Community Points. For that reason, it's very important to make sure it is stored securely and properly backed up.}", [Y._param("=Users who are subscribed to subreddits with Community Points should see Vault in the app menu on the official Reddit Android & iOS apps. When you open Vault for the first time, you will be prompted to create a Vault or restore one that you created earlier.", i.a.createElement("p", null, Y._("Users who are subscribed to subreddits with Community Points should see Vault in the app menu on the official Reddit Android & iOS apps. When you open Vault for the first time, you will be prompted to create a Vault or restore one that you created earlier.", null, {
 						hk: "2XiJTS"
-					}))), G._param("=When you create your Vault, you will receive a public address and a private key. The public address is your address on the Arbitrum Nova network and Ethereum-compatible blockchains where the record of your Community Points is stored.", i.a.createElement("p", null, G._("When you create your Vault, you will receive a public address and a private key. The public address is your address on the Arbitrum Nova network and Ethereum-compatible blockchains where the record of your Community Points is stored.", null, {
+					}))), Y._param("=When you create your Vault, you will receive a public address and a private key. The public address is your address on the Arbitrum Nova network and Ethereum-compatible blockchains where the record of your Community Points is stored.", i.a.createElement("p", null, Y._("When you create your Vault, you will receive a public address and a private key. The public address is your address on the Arbitrum Nova network and Ethereum-compatible blockchains where the record of your Community Points is stored.", null, {
 						hk: "3eVL51"
-					}))), G._param("=This private key is very important. Whoever has the private key will be able to have full control over your Community Points, and if you lose the private key you could lose access to your Community Points. For that reason, it's very important to make sure it is stored securely and properly backed up.", i.a.createElement("p", null, G._("This private key is very important. Whoever has the private key will be able to have full control over your Community Points, and if you lose the private key you could lose access to your Community Points. For that reason, it's very important to make sure it is stored securely and properly backed up.", null, {
+					}))), Y._param("=This private key is very important. Whoever has the private key will be able to have full control over your Community Points, and if you lose the private key you could lose access to your Community Points. For that reason, it's very important to make sure it is stored securely and properly backed up.", i.a.createElement("p", null, Y._("This private key is very important. Whoever has the private key will be able to have full control over your Community Points, and if you lose the private key you could lose access to your Community Points. For that reason, it's very important to make sure it is stored securely and properly backed up.", null, {
 						hk: "1sAkQe"
 					})))], {
 						hk: "3SJqgH"
-					})), i.a.createElement("section", null, i.a.createElement("h3", null, G._("Backup & Recovery", null, {
+					})), i.a.createElement("section", null, i.a.createElement("h3", null, Y._("Backup & Recovery", null, {
 						hk: "4f33gk"
-					})), G._("{=You have two options to back up your private key.}{=The first option is to back it up in a secure way with Reddit. In this option, you encrypt your private key with a unique Vault Password that only you know (separate from your Reddit password) and store the encrypted version on Reddit. Since it is encrypted, Reddit is not able to see your private key and cannot use it.}{=The second option is to save a Recovery Phrase somewhere secure. The recovery phrase is 12 words in a particular order that can be used to recreate your private key within Vault. Keep this safe — we recommend using a password manager like LastPass.}{=It is very important that you never give your Vault Password or Recovery Phrase to anyone else, ever. No Reddit employee will ever ask you for either of them.}{=There are two corresponding ways to recover your Vault.}{=You can recover Vaults that you backed up with Reddit through the Vault signup flow. When you go to create a new Vault, you will be presented with older Vaults that you made that are backed up with Reddit. If you choose to recover one of those, you will be prompted for the password you set when you created it. If you want to switch to another Vault, you can sign out of your current Vault through the settings.}{=You can also recover a Vault using the Recovery Phrase. When you start to create a Vault, you will see an option to use your Recovery Phrase. Enter in the 12 words in the same order that they were provided when you first created the Vault.}{=Note that you can only have one active Vault at any time. In each distribution, your Community Points will be sent to the Vault that is actively associated with your account at the time that distribution is finalized Every time you create or recover a Vault, it is immediately set as your active Vault.}", [G._param("=You have two options to back up your private key.", i.a.createElement("p", null, G._("You have two options to back up your private key.", null, {
+					})), Y._("{=You have two options to back up your private key.}{=The first option is to back it up in a secure way with Reddit. In this option, you encrypt your private key with a unique Vault Password that only you know (separate from your Reddit password) and store the encrypted version on Reddit. Since it is encrypted, Reddit is not able to see your private key and cannot use it.}{=The second option is to save a Recovery Phrase somewhere secure. The recovery phrase is 12 words in a particular order that can be used to recreate your private key within Vault. Keep this safe — we recommend using a password manager like LastPass.}{=It is very important that you never give your Vault Password or Recovery Phrase to anyone else, ever. No Reddit employee will ever ask you for either of them.}{=There are two corresponding ways to recover your Vault.}{=You can recover Vaults that you backed up with Reddit through the Vault signup flow. When you go to create a new Vault, you will be presented with older Vaults that you made that are backed up with Reddit. If you choose to recover one of those, you will be prompted for the password you set when you created it. If you want to switch to another Vault, you can sign out of your current Vault through the settings.}{=You can also recover a Vault using the Recovery Phrase. When you start to create a Vault, you will see an option to use your Recovery Phrase. Enter in the 12 words in the same order that they were provided when you first created the Vault.}{=Note that you can only have one active Vault at any time. In each distribution, your Community Points will be sent to the Vault that is actively associated with your account at the time that distribution is finalized Every time you create or recover a Vault, it is immediately set as your active Vault.}", [Y._param("=You have two options to back up your private key.", i.a.createElement("p", null, Y._("You have two options to back up your private key.", null, {
 						hk: "3enCSx"
-					}))), G._param("=The first option is to back it up in a secure way with Reddit. In this option, you encrypt your private key with a unique Vault Password that only you know (separate from your Reddit password) and store the encrypted version on Reddit. Since it is encrypted, Reddit is not able to see your private key and cannot use it.", i.a.createElement("p", null, G._("The first option is to back it up in a secure way with Reddit. In this option, you encrypt your private key with a unique Vault Password that only you know (separate from your Reddit password) and store the encrypted version on Reddit. Since it is encrypted, Reddit is not able to see your private key and cannot use it.", null, {
+					}))), Y._param("=The first option is to back it up in a secure way with Reddit. In this option, you encrypt your private key with a unique Vault Password that only you know (separate from your Reddit password) and store the encrypted version on Reddit. Since it is encrypted, Reddit is not able to see your private key and cannot use it.", i.a.createElement("p", null, Y._("The first option is to back it up in a secure way with Reddit. In this option, you encrypt your private key with a unique Vault Password that only you know (separate from your Reddit password) and store the encrypted version on Reddit. Since it is encrypted, Reddit is not able to see your private key and cannot use it.", null, {
 						hk: "1v55Px"
-					}))), G._param("=The second option is to save a Recovery Phrase somewhere secure. The recovery phrase is 12 words in a particular order that can be used to recreate your private key within Vault. Keep this safe — we recommend using a password manager like LastPass.", i.a.createElement("p", null, G._("The second option is to save a Recovery Phrase somewhere secure. The recovery phrase is 12 words in a particular order that can be used to recreate your private key within Vault. Keep this safe — we recommend using a password manager like LastPass.", null, {
+					}))), Y._param("=The second option is to save a Recovery Phrase somewhere secure. The recovery phrase is 12 words in a particular order that can be used to recreate your private key within Vault. Keep this safe — we recommend using a password manager like LastPass.", i.a.createElement("p", null, Y._("The second option is to save a Recovery Phrase somewhere secure. The recovery phrase is 12 words in a particular order that can be used to recreate your private key within Vault. Keep this safe — we recommend using a password manager like LastPass.", null, {
 						hk: "3jivE0"
-					}))), G._param("=It is very important that you never give your Vault Password or Recovery Phrase to anyone else, ever. No Reddit employee will ever ask you for either of them.", i.a.createElement("p", null, G._("It is very important that you never give your Vault Password or Recovery Phrase to anyone else, ever. No Reddit employee will ever ask you for either of them.", null, {
+					}))), Y._param("=It is very important that you never give your Vault Password or Recovery Phrase to anyone else, ever. No Reddit employee will ever ask you for either of them.", i.a.createElement("p", null, Y._("It is very important that you never give your Vault Password or Recovery Phrase to anyone else, ever. No Reddit employee will ever ask you for either of them.", null, {
 						hk: "43SfJy"
-					}))), G._param("=There are two corresponding ways to recover your Vault.", i.a.createElement("p", null, G._("There are two corresponding ways to recover your Vault.", null, {
+					}))), Y._param("=There are two corresponding ways to recover your Vault.", i.a.createElement("p", null, Y._("There are two corresponding ways to recover your Vault.", null, {
 						hk: "2738oW"
-					}))), G._param("=You can recover Vaults that you backed up with Reddit through the Vault signup flow. When you go to create a new Vault, you will be presented with older Vaults that you made that are backed up with Reddit. If you choose to recover one of those, you will be prompted for the password you set when you created it. If you want to switch to another Vault, you can sign out of your current Vault through the settings.", i.a.createElement("p", null, G._("You can recover Vaults that you backed up with Reddit through the Vault signup flow. When you go to create a new Vault, you will be presented with older Vaults that you made that are backed up with Reddit. If you choose to recover one of those, you will be prompted for the password you set when you created it. If you want to switch to another Vault, you can sign out of your current Vault through the settings.", null, {
+					}))), Y._param("=You can recover Vaults that you backed up with Reddit through the Vault signup flow. When you go to create a new Vault, you will be presented with older Vaults that you made that are backed up with Reddit. If you choose to recover one of those, you will be prompted for the password you set when you created it. If you want to switch to another Vault, you can sign out of your current Vault through the settings.", i.a.createElement("p", null, Y._("You can recover Vaults that you backed up with Reddit through the Vault signup flow. When you go to create a new Vault, you will be presented with older Vaults that you made that are backed up with Reddit. If you choose to recover one of those, you will be prompted for the password you set when you created it. If you want to switch to another Vault, you can sign out of your current Vault through the settings.", null, {
 						hk: "1EJFvM"
-					}))), G._param("=You can also recover a Vault using the Recovery Phrase. When you start to create a Vault, you will see an option to use your Recovery Phrase. Enter in the 12 words in the same order that they were provided when you first created the Vault.", i.a.createElement("p", null, G._("You can also recover a Vault using the Recovery Phrase. When you start to create a Vault, you will see an option to use your Recovery Phrase. Enter in the 12 words in the same order that they were provided when you first created the Vault.", null, {
+					}))), Y._param("=You can also recover a Vault using the Recovery Phrase. When you start to create a Vault, you will see an option to use your Recovery Phrase. Enter in the 12 words in the same order that they were provided when you first created the Vault.", i.a.createElement("p", null, Y._("You can also recover a Vault using the Recovery Phrase. When you start to create a Vault, you will see an option to use your Recovery Phrase. Enter in the 12 words in the same order that they were provided when you first created the Vault.", null, {
 						hk: "2itpCz"
-					}))), G._param("=Note that you can only have one active Vault at any time. In each distribution, your Community Points will be sent to the Vault that is actively associated with your account at the time that distribution is finalized Every time you create or recover a Vault, it is immediately set as your active Vault.", i.a.createElement("p", null, G._("Note that you can only have one active Vault at any time. In each distribution, your Community Points will be sent to the Vault that is actively associated with your account at the time that distribution is {=finalized}. Every time you create or recover a Vault, it is immediately set as your active Vault.", [G._param("=finalized", i.a.createElement(p.a, {
+					}))), Y._param("=Note that you can only have one active Vault at any time. In each distribution, your Community Points will be sent to the Vault that is actively associated with your account at the time that distribution is finalized Every time you create or recover a Vault, it is immediately set as your active Vault.", i.a.createElement("p", null, Y._("Note that you can only have one active Vault at any time. In each distribution, your Community Points will be sent to the Vault that is actively associated with your account at the time that distribution is {=finalized}. Every time you create or recover a Vault, it is immediately set as your active Vault.", [Y._param("=finalized", i.a.createElement(p.a, {
 						to: m("distribution-process")
-					}, G._("finalized", null, {
+					}, Y._("finalized", null, {
 						hk: "1dzDzu"
 					})))], {
 						hk: "XS1ov"
 					})))], {
 						hk: "31FNqU"
-					})), i.a.createElement("section", null, i.a.createElement("h3", null, G._("Using Vault on web", null, {
+					})), i.a.createElement("section", null, i.a.createElement("h3", null, Y._("Using Vault on web", null, {
 						hk: "4lZpy1"
-					})), G._("{=Users who have backed up their Vault to Reddit servers with a password can also use their Vault on desktop web (new Reddit). For example, you can sign up for Special Memberships and send Points to other users.}{=When you use your Points on web, your encrypted key is downloaded to your browser and you will be prompted for the password you used to create it.}{=If you would like to use your Vault on web, but have not backed up your Vault to Reddit servers, you can create a backup by going to Vault Settings on your mobile device.}", [G._param("=Users who have backed up their Vault to Reddit servers with a password can also use their Vault on desktop web (new Reddit). For example, you can sign up for Special Memberships and send Points to other users.", i.a.createElement("p", null, G._("Users who have backed up their Vault to Reddit servers with a password can also use their Vault on desktop web (new Reddit). For example, you can sign up for Special Memberships and send Points to other users.", null, {
+					})), Y._("{=Users who have backed up their Vault to Reddit servers with a password can also use their Vault on desktop web (new Reddit). For example, you can sign up for Special Memberships and send Points to other users.}{=When you use your Points on web, your encrypted key is downloaded to your browser and you will be prompted for the password you used to create it.}{=If you would like to use your Vault on web, but have not backed up your Vault to Reddit servers, you can create a backup by going to Vault Settings on your mobile device.}", [Y._param("=Users who have backed up their Vault to Reddit servers with a password can also use their Vault on desktop web (new Reddit). For example, you can sign up for Special Memberships and send Points to other users.", i.a.createElement("p", null, Y._("Users who have backed up their Vault to Reddit servers with a password can also use their Vault on desktop web (new Reddit). For example, you can sign up for Special Memberships and send Points to other users.", null, {
 						hk: "3Q0UIE"
-					}))), G._param("=When you use your Points on web, your encrypted key is downloaded to your browser and you will be prompted for the password you used to create it.", i.a.createElement("p", null, G._("When you use your Points on web, your encrypted key is downloaded to your browser and you will be prompted for the password you used to create it.", null, {
+					}))), Y._param("=When you use your Points on web, your encrypted key is downloaded to your browser and you will be prompted for the password you used to create it.", i.a.createElement("p", null, Y._("When you use your Points on web, your encrypted key is downloaded to your browser and you will be prompted for the password you used to create it.", null, {
 						hk: "1dq5v2"
-					}))), G._param("=If you would like to use your Vault on web, but have not backed up your Vault to Reddit servers, you can create a backup by going to Vault Settings on your mobile device.", i.a.createElement("p", null, G._("If you would like to use your Vault on web, but have not backed up your Vault to Reddit servers, you can create a backup by going to Vault Settings on your mobile device.", null, {
+					}))), Y._param("=If you would like to use your Vault on web, but have not backed up your Vault to Reddit servers, you can create a backup by going to Vault Settings on your mobile device.", i.a.createElement("p", null, Y._("If you would like to use your Vault on web, but have not backed up your Vault to Reddit servers, you can create a backup by going to Vault Settings on your mobile device.", null, {
 						hk: "1tITN"
 					})))], {
 						hk: "1xjedp"
@@ -1571,64 +1571,64 @@
 						hk: "38Ojr9"
 					})), i.a.createElement("section", null, i.a.createElement("h3", null, w._("Why didn't I get Points?", null, {
 						hk: "2AOZSW"
-					})), w._('{=Go to your subreddit and look for the most recent post from u/CommunityPoints. If the post ends in "Proposal" then Points will be distributed one week after that post was made. You\'ll know it\'s distribution day when a new post is made saying "New [Points] Are Ready!" Hang on, they\'ll be out soon!If the post says "New [Points] Are Ready", open the post and download the CSV inside. You can open this in any text editor or spreadsheet software. Do a search for your username and see if it is in there. If your name is not in this list, you either did not earn positive karma in the community because of downvotes or penalties from the rules in the community.Keep in mind that your own votes don\'t give you karma.You may also have been excluded if you were banned from the community or banned from Reddit at the time the distribution was proposed.If your name is in the list, you should receive Points. Open your Vault and look for a card that starts with "Claiming Your Points". If you have not created a Vault yet, you can create one by going to "Vault" in the left drawer of the Reddit mobile app.If you do see the card in your Vault, we are still sending Points out to everyone. Please wait at least 24 hours after the "New [Points] Are Ready" post before contacting support at spsupport@reddit.com in case there are delays.If you do not see the "Claiming Your Points" card, it\'s possible your Points are being sent to an old Vault of yours. Have you created or recovered a Vault recently? Check the address ("0x…") of the Vault in Vault Settings and try to match it with the address in the CSV. If the address number does not match, your Points were sent to an old Vault that was active when the distribution was originally proposed. If you can still recover that old Vault: Copy your new Vault address and make sure it is backed up to Reddit. You can do this from the Vault settings pageSign out of your current VaultRecover the old Vault by signing back in and choosing the old address and providing the password, or by entering in the Recovery Phrase for the old addressSend the Points in the old Vault to the address you copied for the new VaultSign out of the old Vault and recover the new VaultIf a) the address in the CSV matches your active Vault, b) you don\'t see a "Claiming Your Points" card, c) it\'s been more than 24 hours since the post was made, and d) you still do not see your Points, then please reach out to support atspsupport@reddit.com with your username and everything you have checked so far. We\'ll be happy to take a look!}', [w._param('=Go to your subreddit and look for the most recent post from u/CommunityPoints. If the post ends in "Proposal" then Points will be distributed one week after that post was made. You\'ll know it\'s distribution day when a new post is made saying "New [Points] Are Ready!" Hang on, they\'ll be out soon!If the post says "New [Points] Are Ready", open the post and download the CSV inside. You can open this in any text editor or spreadsheet software. Do a search for your username and see if it is in there. If your name is not in this list, you either did not earn positive karma in the community because of downvotes or penalties from the rules in the community.Keep in mind that your own votes don\'t give you karma.You may also have been excluded if you were banned from the community or banned from Reddit at the time the distribution was proposed.If your name is in the list, you should receive Points. Open your Vault and look for a card that starts with "Claiming Your Points". If you have not created a Vault yet, you can create one by going to "Vault" in the left drawer of the Reddit mobile app.If you do see the card in your Vault, we are still sending Points out to everyone. Please wait at least 24 hours after the "New [Points] Are Ready" post before contacting support at spsupport@reddit.com in case there are delays.If you do not see the "Claiming Your Points" card, it\'s possible your Points are being sent to an old Vault of yours. Have you created or recovered a Vault recently? Check the address ("0x…") of the Vault in Vault Settings and try to match it with the address in the CSV. If the address number does not match, your Points were sent to an old Vault that was active when the distribution was originally proposed. If you can still recover that old Vault: Copy your new Vault address and make sure it is backed up to Reddit. You can do this from the Vault settings pageSign out of your current VaultRecover the old Vault by signing back in and choosing the old address and providing the password, or by entering in the Recovery Phrase for the old addressSend the Points in the old Vault to the address you copied for the new VaultSign out of the old Vault and recover the new VaultIf a) the address in the CSV matches your active Vault, b) you don\'t see a "Claiming Your Points" card, c) it\'s been more than 24 hours since the post was made, and d) you still do not see your Points, then please reach out to support atspsupport@reddit.com with your username and everything you have checked so far. We\'ll be happy to take a look!', i.a.createElement("ol", null, w._('{=Go to your subreddit and look for the most recent post from u/CommunityPoints. If the post ends in "Proposal" then Points will be distributed one week after that post was made. You\'ll know it\'s distribution day when a new post is made saying "New [Points] Are Ready!" Hang on, they\'ll be out soon!}{=If the post says "New [Points] Are Ready", open the post and download the CSV inside. You can open this in any text editor or spreadsheet software. Do a search for your username and see if it is in there. If your name is not in this list, you either did not earn positive karma in the community because of downvotes or penalties from the rules in the community.Keep in mind that your own votes don\'t give you karma.You may also have been excluded if you were banned from the community or banned from Reddit at the time the distribution was proposed.}{=If your name is in the list, you should receive Points. Open your Vault and look for a card that starts with "Claiming Your Points". If you have not created a Vault yet, you can create one by going to "Vault" in the left drawer of the Reddit mobile app.If you do see the card in your Vault, we are still sending Points out to everyone. Please wait at least 24 hours after the "New [Points] Are Ready" post before contacting support at spsupport@reddit.com in case there are delays.}{=If you do not see the "Claiming Your Points" card, it\'s possible your Points are being sent to an old Vault of yours. Have you created or recovered a Vault recently? Check the address ("0x…") of the Vault in Vault Settings and try to match it with the address in the CSV. If the address number does not match, your Points were sent to an old Vault that was active when the distribution was originally proposed. If you can still recover that old Vault: Copy your new Vault address and make sure it is backed up to Reddit. You can do this from the Vault settings pageSign out of your current VaultRecover the old Vault by signing back in and choosing the old address and providing the password, or by entering in the Recovery Phrase for the old addressSend the Points in the old Vault to the address you copied for the new VaultSign out of the old Vault and recover the new Vault}{=If a) the address in the CSV matches your active Vault, b) you don\'t see a "Claiming Your Points" card, c) it\'s been more than 24 hours since the post was made, and d) you still do not see your Points, then please reach out to support atspsupport@reddit.com with your username and everything you have checked so far. We\'ll be happy to take a look!}', [w._param('=Go to your subreddit and look for the most recent post from u/CommunityPoints. If the post ends in "Proposal" then Points will be distributed one week after that post was made. You\'ll know it\'s distribution day when a new post is made saying "New [Points] Are Ready!" Hang on, they\'ll be out soon!', i.a.createElement("li", null, w._('Go to your subreddit and look for the most recent post from u/CommunityPoints. {=If the post ends in "Proposal" then Points will be distributed one week after that post was made. You\'ll know it\'s distribution day when a new post is made saying "New [Points] Are Ready!" Hang on, they\'ll be out soon!}', [w._param('=If the post ends in "Proposal" then Points will be distributed one week after that post was made. You\'ll know it\'s distribution day when a new post is made saying "New [Points] Are Ready!" Hang on, they\'ll be out soon!', i.a.createElement("ol", null, w._('{=If the post ends in "Proposal" then Points will be distributed one week after that post was made. You\'ll know it\'s distribution day when a new post is made saying "New [Points] Are Ready!" Hang on, they\'ll be out soon!}', [w._param('=If the post ends in "Proposal" then Points will be distributed one week after that post was made. You\'ll know it\'s distribution day when a new post is made saying "New [Points] Are Ready!" Hang on, they\'ll be out soon!', i.a.createElement("li", null, w._('If the post ends in "Proposal" then Points will be distributed one week after that post was made. You\'ll know it\'s distribution day when a new post is made saying "New [Points] Are Ready!" Hang on, they\'ll be out soon!', null, {
-						hk: "3WB6M9"
+					})), w._('{=Go to your subreddit and look for the most recent post from u/CommunityPoints. If the post ends in "Proposal" then Points will be distributed one week after that post was made. You\'ll know it\'s distribution day when a new post is made saying "New [Points] Are Ready!" Hang on, they\'ll be out soon!If the post says "New [Points] Are Ready", open the post and download the CSV inside. You can open this in any text editor or spreadsheet software. Do a search for your username and see if it is in there. If your name is not in this list, you either did not earn positive karma in the community because of downvotes or penalties from the rules in the community.Keep in mind that your own votes don\'t give you karma.You may also have been excluded if you were banned from the community or banned from Reddit at the time the distribution was proposed.If your name is in the list, you should receive Points. Open your Vault and look for a card that starts with "Claiming Your Points". If you have not created a Vault yet, you can create one by going to "Vault" in the left drawer of the Reddit mobile app.If you do see the card in your Vault, we are still sending Points out to everyone. Please wait at least 24 hours after the "New [Points] Are Ready" post beforefiling a ticket in case there are delays.If you do not see the "Claiming Your Points" card, it\'s possible your Points are being sent to an old Vault of yours. Have you created or recovered a Vault recently? Check the address ("0x…") of the Vault in Vault Settings and try to match it with the address in the CSV. If the address number does not match, your Points were sent to an old Vault that was active when the distribution was originally proposed. If you can still recover that old Vault: Copy your new Vault address and make sure it is backed up to Reddit. You can do this from the Vault settings pageSign out of your current VaultRecover the old Vault by signing back in and choosing the old address and providing the password, or by entering in the Recovery Phrase for the old addressSend the Points in the old Vault to the address you copied for the new VaultSign out of the old Vault and recover the new VaultIf a) the address in the CSV matches your active Vault, b) you don\'t see a "Claiming Your Points" card, c) it\'s been more than 24 hours since the post was made, and d) you still do not see your Points, then pleasefile a ticket with your username and everything you have checked so far. We\'ll be happy to take a look!}', [w._param('=Go to your subreddit and look for the most recent post from u/CommunityPoints. If the post ends in "Proposal" then Points will be distributed one week after that post was made. You\'ll know it\'s distribution day when a new post is made saying "New [Points] Are Ready!" Hang on, they\'ll be out soon!If the post says "New [Points] Are Ready", open the post and download the CSV inside. You can open this in any text editor or spreadsheet software. Do a search for your username and see if it is in there. If your name is not in this list, you either did not earn positive karma in the community because of downvotes or penalties from the rules in the community.Keep in mind that your own votes don\'t give you karma.You may also have been excluded if you were banned from the community or banned from Reddit at the time the distribution was proposed.If your name is in the list, you should receive Points. Open your Vault and look for a card that starts with "Claiming Your Points". If you have not created a Vault yet, you can create one by going to "Vault" in the left drawer of the Reddit mobile app.If you do see the card in your Vault, we are still sending Points out to everyone. Please wait at least 24 hours after the "New [Points] Are Ready" post beforefiling a ticket in case there are delays.If you do not see the "Claiming Your Points" card, it\'s possible your Points are being sent to an old Vault of yours. Have you created or recovered a Vault recently? Check the address ("0x…") of the Vault in Vault Settings and try to match it with the address in the CSV. If the address number does not match, your Points were sent to an old Vault that was active when the distribution was originally proposed. If you can still recover that old Vault: Copy your new Vault address and make sure it is backed up to Reddit. You can do this from the Vault settings pageSign out of your current VaultRecover the old Vault by signing back in and choosing the old address and providing the password, or by entering in the Recovery Phrase for the old addressSend the Points in the old Vault to the address you copied for the new VaultSign out of the old Vault and recover the new VaultIf a) the address in the CSV matches your active Vault, b) you don\'t see a "Claiming Your Points" card, c) it\'s been more than 24 hours since the post was made, and d) you still do not see your Points, then pleasefile a ticket with your username and everything you have checked so far. We\'ll be happy to take a look!', i.a.createElement("ol", null, w._('{=Go to your subreddit and look for the most recent post from u/CommunityPoints. If the post ends in "Proposal" then Points will be distributed one week after that post was made. You\'ll know it\'s distribution day when a new post is made saying "New [Points] Are Ready!" Hang on, they\'ll be out soon!}{=If the post says "New [Points] Are Ready", open the post and download the CSV inside. You can open this in any text editor or spreadsheet software. Do a search for your username and see if it is in there. If your name is not in this list, you either did not earn positive karma in the community because of downvotes or penalties from the rules in the community.Keep in mind that your own votes don\'t give you karma.You may also have been excluded if you were banned from the community or banned from Reddit at the time the distribution was proposed.}{=If your name is in the list, you should receive Points. Open your Vault and look for a card that starts with "Claiming Your Points". If you have not created a Vault yet, you can create one by going to "Vault" in the left drawer of the Reddit mobile app.If you do see the card in your Vault, we are still sending Points out to everyone. Please wait at least 24 hours after the "New [Points] Are Ready" post beforefiling a ticket in case there are delays.}{=If you do not see the "Claiming Your Points" card, it\'s possible your Points are being sent to an old Vault of yours. Have you created or recovered a Vault recently? Check the address ("0x…") of the Vault in Vault Settings and try to match it with the address in the CSV. If the address number does not match, your Points were sent to an old Vault that was active when the distribution was originally proposed. If you can still recover that old Vault: Copy your new Vault address and make sure it is backed up to Reddit. You can do this from the Vault settings pageSign out of your current VaultRecover the old Vault by signing back in and choosing the old address and providing the password, or by entering in the Recovery Phrase for the old addressSend the Points in the old Vault to the address you copied for the new VaultSign out of the old Vault and recover the new Vault}{=If a) the address in the CSV matches your active Vault, b) you don\'t see a "Claiming Your Points" card, c) it\'s been more than 24 hours since the post was made, and d) you still do not see your Points, then pleasefile a ticket with your username and everything you have checked so far. We\'ll be happy to take a look!}', [w._param('=Go to your subreddit and look for the most recent post from u/CommunityPoints. If the post ends in "Proposal" then Points will be distributed one week after that post was made. You\'ll know it\'s distribution day when a new post is made saying "New [Points] Are Ready!" Hang on, they\'ll be out soon!', i.a.createElement("li", null, w._('Go to your subreddit and look for the most recent post from u/CommunityPoints. {=If the post ends in "Proposal" then Points will be distributed one week after that post was made. You\'ll know it\'s distribution day when a new post is made saying "New [Points] Are Ready!" Hang on, they\'ll be out soon!}', [w._param('=If the post ends in "Proposal" then Points will be distributed one week after that post was made. You\'ll know it\'s distribution day when a new post is made saying "New [Points] Are Ready!" Hang on, they\'ll be out soon!', i.a.createElement("ol", null, w._('{=If the post ends in "Proposal" then Points will be distributed one week after that post was made. You\'ll know it\'s distribution day when a new post is made saying "New [Points] Are Ready!" Hang on, they\'ll be out soon!}', [w._param('=If the post ends in "Proposal" then Points will be distributed one week after that post was made. You\'ll know it\'s distribution day when a new post is made saying "New [Points] Are Ready!" Hang on, they\'ll be out soon!', i.a.createElement("li", null, w._('If the post ends in "Proposal" then Points will be distributed one week after that post was made. You\'ll know it\'s distribution day when a new post is made saying "New [Points] Are Ready!" Hang on, they\'ll be out soon!', null, {
+						hk: "2qAA1l"
 					})))], {
-						hk: "p7xJY"
+						hk: "wQALx"
 					})))], {
-						hk: "2d9ZcL"
+						hk: "33uWG7"
 					}))), w._param('=If the post says "New [Points] Are Ready", open the post and download the CSV inside. You can open this in any text editor or spreadsheet software. Do a search for your username and see if it is in there. If your name is not in this list, you either did not earn positive karma in the community because of downvotes or penalties from the rules in the community.Keep in mind that your own votes don\'t give you karma.You may also have been excluded if you were banned from the community or banned from Reddit at the time the distribution was proposed.', i.a.createElement("li", null, w._('If the post says "New [Points] Are Ready", open the post and download the CSV inside. You can open this in any text editor or spreadsheet software. Do a search for your username and see if it is in there. {=If your name is not in this list, you either did not earn positive karma in the community because of downvotes or penalties from the rules in the community.Keep in mind that your own votes don\'t give you karma.You may also have been excluded if you were banned from the community or banned from Reddit at the time the distribution was proposed.}', [w._param("=If your name is not in this list, you either did not earn positive karma in the community because of downvotes or penalties from the rules in the community.Keep in mind that your own votes don't give you karma.You may also have been excluded if you were banned from the community or banned from Reddit at the time the distribution was proposed.", i.a.createElement("ol", null, w._("{=If your name is not in this list, you either did not earn positive karma in the community because of downvotes or penalties from the rules in the community.Keep in mind that your own votes don't give you karma.You may also have been excluded if you were banned from the community or banned from Reddit at the time the distribution was proposed.}", [w._param("=If your name is not in this list, you either did not earn positive karma in the community because of downvotes or penalties from the rules in the community.Keep in mind that your own votes don't give you karma.You may also have been excluded if you were banned from the community or banned from Reddit at the time the distribution was proposed.", i.a.createElement("li", null, w._("{=If your name is not in this list, you either did not earn positive karma in the community because of downvotes or penalties from the rules in the community.}{=Keep in mind that your own votes don't give you karma.}{=You may also have been excluded if you were banned from the community or banned from Reddit at the time the distribution was proposed.}", [w._param("=If your name is not in this list, you either did not earn positive karma in the community because of downvotes or penalties from the rules in the community.", i.a.createElement("p", null, w._("If your name is not in this list, you either did not earn positive karma in the community because of downvotes or penalties from the rules in the community.", null, {
-						hk: "37meTZ"
+						hk: "3q5Pno"
 					}))), w._param("=Keep in mind that your own votes don't give you karma.", i.a.createElement("p", null, w._("Keep in mind that your own votes don't give you karma.", null, {
-						hk: "4FduIk"
+						hk: "2LwMgq"
 					}))), w._param("=You may also have been excluded if you were banned from the community or banned from Reddit at the time the distribution was proposed.", i.a.createElement("p", null, w._("You may also have been excluded if you were banned from the community or banned from Reddit at the time the distribution was proposed.", null, {
-						hk: "40GDKf"
+						hk: "4uUvTI"
 					})))], {
-						hk: "3CDHcp"
+						hk: "3jRN3f"
 					})))], {
-						hk: "3qFGlR"
+						hk: "wLgWx"
 					})))], {
-						hk: "3ucB8a"
-					}))), w._param('=If your name is in the list, you should receive Points. Open your Vault and look for a card that starts with "Claiming Your Points". If you have not created a Vault yet, you can create one by going to "Vault" in the left drawer of the Reddit mobile app.If you do see the card in your Vault, we are still sending Points out to everyone. Please wait at least 24 hours after the "New [Points] Are Ready" post before contacting support at spsupport@reddit.com in case there are delays.', i.a.createElement("li", null, w._('If your name is in the list, you should receive Points. Open your Vault and look for a card that starts with "Claiming Your Points". {=If you have not created a Vault yet, you can create one by going to "Vault" in the left drawer of the Reddit mobile app.If you do see the card in your Vault, we are still sending Points out to everyone. Please wait at least 24 hours after the "New [Points] Are Ready" post before contacting support at spsupport@reddit.com in case there are delays.}', [w._param('=If you have not created a Vault yet, you can create one by going to "Vault" in the left drawer of the Reddit mobile app.If you do see the card in your Vault, we are still sending Points out to everyone. Please wait at least 24 hours after the "New [Points] Are Ready" post before contacting support at spsupport@reddit.com in case there are delays.', i.a.createElement("ol", null, w._('{=If you have not created a Vault yet, you can create one by going to "Vault" in the left drawer of the Reddit mobile app.}{=If you do see the card in your Vault, we are still sending Points out to everyone. Please wait at least 24 hours after the "New [Points] Are Ready" post before contacting support at spsupport@reddit.com in case there are delays.}', [w._param('=If you have not created a Vault yet, you can create one by going to "Vault" in the left drawer of the Reddit mobile app.', i.a.createElement("li", null, w._('If you have not created a Vault yet, you can create one by going to "Vault" in the left drawer of the Reddit mobile app.', null, {
-						hk: "3ihHF3"
-					}))), w._param('=If you do see the card in your Vault, we are still sending Points out to everyone. Please wait at least 24 hours after the "New [Points] Are Ready" post before contacting support at spsupport@reddit.com in case there are delays.', i.a.createElement("li", null, w._('If you do see the card in your Vault, we are still sending Points out to everyone. Please wait at least 24 hours after the "New [Points] Are Ready" post before contacting support at {=spsupport@reddit.com} in case there are delays.', [w._param("=spsupport@reddit.com", i.a.createElement("a", {
-						href: "mailto:spsupport@reddit.com"
-					}, w._("spsupport@reddit.com", null, {
-						hk: "4mXeGC"
+						hk: "3oGl0L"
+					}))), w._param('=If your name is in the list, you should receive Points. Open your Vault and look for a card that starts with "Claiming Your Points". If you have not created a Vault yet, you can create one by going to "Vault" in the left drawer of the Reddit mobile app.If you do see the card in your Vault, we are still sending Points out to everyone. Please wait at least 24 hours after the "New [Points] Are Ready" post beforefiling a ticket in case there are delays.', i.a.createElement("li", null, w._('If your name is in the list, you should receive Points. Open your Vault and look for a card that starts with "Claiming Your Points". {=If you have not created a Vault yet, you can create one by going to "Vault" in the left drawer of the Reddit mobile app.If you do see the card in your Vault, we are still sending Points out to everyone. Please wait at least 24 hours after the "New [Points] Are Ready" post beforefiling a ticket in case there are delays.}', [w._param('=If you have not created a Vault yet, you can create one by going to "Vault" in the left drawer of the Reddit mobile app.If you do see the card in your Vault, we are still sending Points out to everyone. Please wait at least 24 hours after the "New [Points] Are Ready" post beforefiling a ticket in case there are delays.', i.a.createElement("ol", null, w._('{=If you have not created a Vault yet, you can create one by going to "Vault" in the left drawer of the Reddit mobile app.}{=If you do see the card in your Vault, we are still sending Points out to everyone. Please wait at least 24 hours after the "New [Points] Are Ready" post beforefiling a ticket in case there are delays.}', [w._param('=If you have not created a Vault yet, you can create one by going to "Vault" in the left drawer of the Reddit mobile app.', i.a.createElement("li", null, w._('If you have not created a Vault yet, you can create one by going to "Vault" in the left drawer of the Reddit mobile app.', null, {
+						hk: "DZXaz"
+					}))), w._param('=If you do see the card in your Vault, we are still sending Points out to everyone. Please wait at least 24 hours after the "New [Points] Are Ready" post beforefiling a ticket in case there are delays.', i.a.createElement("li", null, w._('If you do see the card in your Vault, we are still sending Points out to everyone. Please wait at least 24 hours after the "New [Points] Are Ready" post before {=filing a ticket} in case there are delays.', [w._param("=filing a ticket", i.a.createElement("a", {
+						href: "https://reddit.zendesk.com/hc/en-us/requests/new?ticket_form_id=125906"
+					}, w._("filing a ticket", null, {
+						hk: "1UIYm9"
 					})))], {
-						hk: "2JcVV5"
+						hk: "24oTci"
 					})))], {
-						hk: "pEY4R"
+						hk: "1NKMg1"
 					})))], {
-						hk: "1lpU59"
+						hk: "2C9Xd3"
 					}))), w._param('=If you do not see the "Claiming Your Points" card, it\'s possible your Points are being sent to an old Vault of yours. Have you created or recovered a Vault recently? Check the address ("0x…") of the Vault in Vault Settings and try to match it with the address in the CSV. If the address number does not match, your Points were sent to an old Vault that was active when the distribution was originally proposed. If you can still recover that old Vault: Copy your new Vault address and make sure it is backed up to Reddit. You can do this from the Vault settings pageSign out of your current VaultRecover the old Vault by signing back in and choosing the old address and providing the password, or by entering in the Recovery Phrase for the old addressSend the Points in the old Vault to the address you copied for the new VaultSign out of the old Vault and recover the new Vault', i.a.createElement("li", null, w._('If you do not see the "Claiming Your Points" card, it\'s possible your Points are being sent to an old Vault of yours. Have you created or recovered a Vault recently? Check the address ("0x…") of the Vault in Vault Settings and try to match it with the address in the CSV. {=If the address number does not match, your Points were sent to an old Vault that was active when the distribution was originally proposed. If you can still recover that old Vault: Copy your new Vault address and make sure it is backed up to Reddit. You can do this from the Vault settings pageSign out of your current VaultRecover the old Vault by signing back in and choosing the old address and providing the password, or by entering in the Recovery Phrase for the old addressSend the Points in the old Vault to the address you copied for the new VaultSign out of the old Vault and recover the new Vault}', [w._param("=If the address number does not match, your Points were sent to an old Vault that was active when the distribution was originally proposed. If you can still recover that old Vault: Copy your new Vault address and make sure it is backed up to Reddit. You can do this from the Vault settings pageSign out of your current VaultRecover the old Vault by signing back in and choosing the old address and providing the password, or by entering in the Recovery Phrase for the old addressSend the Points in the old Vault to the address you copied for the new VaultSign out of the old Vault and recover the new Vault", i.a.createElement("ol", null, w._("{=If the address number does not match, your Points were sent to an old Vault that was active when the distribution was originally proposed. If you can still recover that old Vault: Copy your new Vault address and make sure it is backed up to Reddit. You can do this from the Vault settings pageSign out of your current VaultRecover the old Vault by signing back in and choosing the old address and providing the password, or by entering in the Recovery Phrase for the old addressSend the Points in the old Vault to the address you copied for the new VaultSign out of the old Vault and recover the new Vault}", [w._param("=If the address number does not match, your Points were sent to an old Vault that was active when the distribution was originally proposed. If you can still recover that old Vault: Copy your new Vault address and make sure it is backed up to Reddit. You can do this from the Vault settings pageSign out of your current VaultRecover the old Vault by signing back in and choosing the old address and providing the password, or by entering in the Recovery Phrase for the old addressSend the Points in the old Vault to the address you copied for the new VaultSign out of the old Vault and recover the new Vault", i.a.createElement("li", null, w._("If the address number does not match, your Points were sent to an old Vault that was active when the distribution was originally proposed. If you can still recover that old Vault: {=Copy your new Vault address and make sure it is backed up to Reddit. You can do this from the Vault settings pageSign out of your current VaultRecover the old Vault by signing back in and choosing the old address and providing the password, or by entering in the Recovery Phrase for the old addressSend the Points in the old Vault to the address you copied for the new VaultSign out of the old Vault and recover the new Vault}", [w._param("=Copy your new Vault address and make sure it is backed up to Reddit. You can do this from the Vault settings pageSign out of your current VaultRecover the old Vault by signing back in and choosing the old address and providing the password, or by entering in the Recovery Phrase for the old addressSend the Points in the old Vault to the address you copied for the new VaultSign out of the old Vault and recover the new Vault", i.a.createElement("ol", null, w._("{=Copy your new Vault address and make sure it is backed up to Reddit. You can do this from the Vault settings page}{=Sign out of your current Vault}{=Recover the old Vault by signing back in and choosing the old address and providing the password, or by entering in the Recovery Phrase for the old address}{=Send the Points in the old Vault to the address you copied for the new Vault}{=Sign out of the old Vault and recover the new Vault}", [w._param("=Copy your new Vault address and make sure it is backed up to Reddit. You can do this from the Vault settings page", i.a.createElement("li", null, w._("Copy your new Vault address and make sure it is backed up to Reddit. You can do this from the Vault settings page", null, {
-						hk: "3jzbmB"
+						hk: "147djo"
 					}))), w._param("=Sign out of your current Vault", i.a.createElement("li", null, w._("Sign out of your current Vault", null, {
-						hk: "lNzpP"
+						hk: "2vzhCE"
 					}))), w._param("=Recover the old Vault by signing back in and choosing the old address and providing the password, or by entering in the Recovery Phrase for the old address", i.a.createElement("li", null, w._("Recover the old Vault by signing back in and choosing the old address and providing the password, or by entering in the Recovery Phrase for the old address", null, {
-						hk: "1RgeKw"
+						hk: "QNncC"
 					}))), w._param("=Send the Points in the old Vault to the address you copied for the new Vault", i.a.createElement("li", null, w._("Send the Points in the old Vault to the address you copied for the new Vault", null, {
-						hk: "1coX8U"
+						hk: "1kA49P"
 					}))), w._param("=Sign out of the old Vault and recover the new Vault", i.a.createElement("li", null, w._("Sign out of the old Vault and recover the new Vault", null, {
-						hk: "4Gfh3x"
+						hk: "2yXzaL"
 					})))], {
-						hk: "17jEZy"
+						hk: "jropc"
 					})))], {
-						hk: "4wgWLw"
+						hk: "3EMMFG"
 					})))], {
-						hk: "zgpqU"
+						hk: "1FRsfi"
 					})))], {
-						hk: "4fdF26"
-					}))), w._param("=If a) the address in the CSV matches your active Vault, b) you don't see a \"Claiming Your Points\" card, c) it's been more than 24 hours since the post was made, and d) you still do not see your Points, then please reach out to support atspsupport@reddit.com with your username and everything you have checked so far. We'll be happy to take a look!", i.a.createElement("li", null, w._("If a) the address in the CSV matches your active Vault, b) you don't see a \"Claiming Your Points\" card, c) it's been more than 24 hours since the post was made, and d) you still do not see your Points, then please reach out to support at {=spsupport@reddit.com} with your username and everything you have checked so far. We'll be happy to take a look!", [w._param("=spsupport@reddit.com", i.a.createElement("a", {
-						href: "mailto:spsupport@reddit.com"
-					}, w._("spsupport@reddit.com", null, {
-						hk: "23maVV"
+						hk: "2TQvIc"
+					}))), w._param("=If a) the address in the CSV matches your active Vault, b) you don't see a \"Claiming Your Points\" card, c) it's been more than 24 hours since the post was made, and d) you still do not see your Points, then pleasefile a ticket with your username and everything you have checked so far. We'll be happy to take a look!", i.a.createElement("li", null, w._("If a) the address in the CSV matches your active Vault, b) you don't see a \"Claiming Your Points\" card, c) it's been more than 24 hours since the post was made, and d) you still do not see your Points, then please {=file a ticket} with your username and everything you have checked so far. We'll be happy to take a look!", [w._param("=file a ticket", i.a.createElement("a", {
+						href: "https://reddit.zendesk.com/hc/en-us/requests/new?ticket_form_id=125906"
+					}, w._("file a ticket", null, {
+						hk: "XHp33"
 					})))], {
-						hk: "3EFF67"
+						hk: "4iJAL7"
 					})))], {
-						hk: "49peHE"
+						hk: "2NaulB"
 					})))], {
-						hk: "4tOQ7Z"
+						hk: "3LBpYv"
 					})), i.a.createElement("section", null, i.a.createElement("h3", null, w._("How do I cancel my Special Membership?", null, {
 						hk: "xyJU9"
 					})), w._("{=It depends on how you bought your membership:}{=If you purchased your Special Membership subscription on reddit.com using a credit/debit card, you can cancel it by going to https://www.reddit.com/settings/specialIf you bought your Special Membership subscription with Points, you can cancel it from the Memberships tab in the applicable subreddit page on the mobile app.If you purchased your Special Membership subscription using Google Play, you can manage or cancel it by visiting the Subscriptions section of Google Play.If you purchased your Special Membership subscription with your Apple ID, you can manage or cancel it through your device's Account Settings or in the Manage Subscriptions section of the Apple App Store.}", [w._param("=It depends on how you bought your membership:", i.a.createElement("p", null, w._("It depends on how you bought your membership:", null, {
@@ -1665,58 +1665,58 @@
 						hk: "2d7qy8"
 					}))), i.a.createElement("section", null, i.a.createElement("h3", null, w._("I don't see Vault in the app.", null, {
 						hk: "1Dg0cD"
-					})), w._("{=Vault will appear in the left drawer when you meet one of the following conditions:}{=Have unclaimed PointsHave a non-zero Points amountSubscribed to a subreddit with Community Points}{=Make sure your account satisfies any of the above conditions. In some cases, it can take up to a minute for the Vault to appear in the menu after starting the app.}{=If you are still having trouble, please reach out to us at spsupport@reddit.com}", [w._param("=Vault will appear in the left drawer when you meet one of the following conditions:", i.a.createElement("p", null, w._("Vault will appear in the left drawer when you meet one of the following conditions:", null, {
-						hk: "2MsMEt"
+					})), w._("{=Vault will appear in the left drawer when you meet one of the following conditions:}{=Have unclaimed PointsHave a non-zero Points amountSubscribed to a subreddit with Community Points}{=Make sure your account satisfies any of the above conditions. In some cases, it can take up to a minute for the Vault to appear in the menu after starting the app.}{=If you are still having trouble, please file a ticket}", [w._param("=Vault will appear in the left drawer when you meet one of the following conditions:", i.a.createElement("p", null, w._("Vault will appear in the left drawer when you meet one of the following conditions:", null, {
+						hk: "4Erbhp"
 					}))), w._param("=Have unclaimed PointsHave a non-zero Points amountSubscribed to a subreddit with Community Points", i.a.createElement("ul", null, w._("{=Have unclaimed Points}{=Have a non-zero Points amount}{=Subscribed to a subreddit with Community Points}", [w._param("=Have unclaimed Points", i.a.createElement("li", null, w._("Have unclaimed Points", null, {
-						hk: "hI3Hy"
+						hk: "3JE6Pb"
 					}))), w._param("=Have a non-zero Points amount", i.a.createElement("li", null, w._("Have a non-zero Points amount", null, {
-						hk: "42XttM"
+						hk: "34HYj7"
 					}))), w._param("=Subscribed to a subreddit with Community Points", i.a.createElement("li", null, w._("Subscribed to a subreddit with Community Points", null, {
-						hk: "CMFPv"
+						hk: "24mDVf"
 					})))], {
-						hk: "MHuQT"
+						hk: "4l45PH"
 					}))), w._param("=Make sure your account satisfies any of the above conditions. In some cases, it can take up to a minute for the Vault to appear in the menu after starting the app.", i.a.createElement("p", null, w._("Make sure your account satisfies any of the above conditions. In some cases, it can take up to a minute for the Vault to appear in the menu after starting the app.", null, {
-						hk: "iiwJ6"
-					}))), w._param("=If you are still having trouble, please reach out to us at spsupport@reddit.com", i.a.createElement("p", null, w._("If you are still having trouble, please reach out to us at {=spsupport@reddit.com}.", [w._param("=spsupport@reddit.com", i.a.createElement("a", {
-						href: "mailto:spsupport@reddit.com"
-					}, w._("spsupport@reddit.com", null, {
-						hk: "22LkwP"
+						hk: "2eTmZj"
+					}))), w._param("=If you are still having trouble, please file a ticket", i.a.createElement("p", null, w._("If you are still having trouble, please {=file a ticket}.", [w._param("=file a ticket", i.a.createElement("a", {
+						href: "https://reddit.zendesk.com/hc/en-us/requests/new?ticket_form_id=125906"
+					}, w._("file a ticket", null, {
+						hk: "1ubYN3"
 					})))], {
-						hk: "3Afq8V"
+						hk: "4CjaRD"
 					})))], {
-						hk: "2xC49i"
+						hk: "1FoNlV"
 					})), i.a.createElement("section", null, i.a.createElement("h3", null, w._("I'm not seeing my Points on my account.", null, {
 						hk: "2NxZoE"
-					})), w._("{=If you have just created your Vault, your Points can take up to 24 hours to land to your account. When 24 hours have passed and you still don't see any Points, please reach out tospsupport@reddit.com}{=Points are bound to your Reddit account, so your alt accounts won't have Points from your other accounts. Make sure you're using the correct Reddit account when accessing your Vault.}{=If you created a Vault on a second device, it becomes active and the reflected balance is from that Vault. If you wish to go back to your Vault:}{=Go to Vault → SettingsTap on Log OutSelect your old Vault address from the listRecover using Reddit Backup or a Recovery Phrase}", [w._param("=If you have just created your Vault, your Points can take up to 24 hours to land to your account. When 24 hours have passed and you still don't see any Points, please reach out tospsupport@reddit.com", i.a.createElement("p", null, w._("If you have just created your Vault, your Points can take up to 24 hours to land to your account. When 24 hours have passed and you still don't see any Points, please reach out to {=spsupport@reddit.com}.", [w._param("=spsupport@reddit.com", i.a.createElement("a", {
-						href: "mailto:spsupport@reddit.com"
-					}, w._("spsupport@reddit.com", null, {
-						hk: "1dCdE4"
+					})), w._("{=If you have just created your Vault, your Points can take up to 24 hours to land to your account. When 24 hours have passed and you still don't see any Points, pleasefile a ticket}{=Points are bound to your Reddit account, so your alt accounts won't have Points from your other accounts. Make sure you're using the correct Reddit account when accessing your Vault.}{=If you created a Vault on a second device, it becomes active and the reflected balance is from that Vault. If you wish to go back to your Vault:}{=Go to Vault → SettingsTap on Log OutSelect your old Vault address from the listRecover using Reddit Backup or a Recovery Phrase}", [w._param("=If you have just created your Vault, your Points can take up to 24 hours to land to your account. When 24 hours have passed and you still don't see any Points, pleasefile a ticket", i.a.createElement("p", null, w._("If you have just created your Vault, your Points can take up to 24 hours to land to your account. When 24 hours have passed and you still don't see any Points, please {=file a ticket}.", [w._param("=file a ticket", i.a.createElement("a", {
+						href: "https://reddit.zendesk.com/hc/en-us/requests/new?ticket_form_id=125906"
+					}, w._("file a ticket", null, {
+						hk: "mYTOl"
 					})))], {
-						hk: "2ouRW"
+						hk: "3JnXkn"
 					}))), w._param("=Points are bound to your Reddit account, so your alt accounts won't have Points from your other accounts. Make sure you're using the correct Reddit account when accessing your Vault.", i.a.createElement("p", null, w._("Points are bound to your Reddit account, so your alt accounts won't have Points from your other accounts. Make sure you're using the correct Reddit account when accessing your Vault.", null, {
-						hk: "3WlyDb"
+						hk: "txg5B"
 					}))), w._param("=If you created a Vault on a second device, it becomes active and the reflected balance is from that Vault. If you wish to go back to your Vault:", i.a.createElement("p", null, w._("If you created a Vault on a second device, it becomes active and the reflected balance is from that Vault. If you wish to go back to your Vault:", null, {
-						hk: "NrvIV"
+						hk: "13BslS"
 					}))), w._param("=Go to Vault → SettingsTap on Log OutSelect your old Vault address from the listRecover using Reddit Backup or a Recovery Phrase", i.a.createElement("ul", null, w._("{=Go to Vault → Settings}{=Tap on Log Out}{=Select your old Vault address from the list}{=Recover using Reddit Backup or a Recovery Phrase}", [w._param("=Go to Vault → Settings", i.a.createElement("li", null, w._("Go to Vault → Settings", null, {
-						hk: "1jVHBp"
+						hk: "4cHhIj"
 					}))), w._param("=Tap on Log Out", i.a.createElement("li", null, w._("Tap on Log Out", null, {
-						hk: "2Qpk7d"
+						hk: "10J5GV"
 					}))), w._param("=Select your old Vault address from the list", i.a.createElement("li", null, w._("Select your old Vault address from the list", null, {
-						hk: "1CXNFk"
+						hk: "3YSDBF"
 					}))), w._param("=Recover using Reddit Backup or a Recovery Phrase", i.a.createElement("li", null, w._("Recover using Reddit Backup or a Recovery Phrase", null, {
-						hk: "4h9mKi"
+						hk: "2rUX8C"
 					})))], {
-						hk: "3MbDfS"
+						hk: "38WQmK"
 					})))], {
-						hk: "3hEtul"
+						hk: "3CBhLO"
 					})), i.a.createElement("section", null, i.a.createElement("h3", null, w._("I got charged for a Special Membership but I haven't received it.", null, {
 						hk: "bhcQn"
-					})), i.a.createElement("p", null, w._("Please reach out to us at {=spsupport@reddit.com}.", [w._param("=spsupport@reddit.com", i.a.createElement("a", {
-						href: "mailto:spsupport@reddit.com"
-					}, w._("spsupport@reddit.com", null, {
-						hk: "26QlJV"
+					})), i.a.createElement("p", null, w._("Please {=file a ticket}.", [w._param("=file a ticket", i.a.createElement("a", {
+						href: "https://reddit.zendesk.com/hc/en-us/requests/new?ticket_form_id=125906"
+					}, w._("file a ticket", null, {
+						hk: "2v6f6l"
 					})))], {
-						hk: "CvFCR"
+						hk: "4vBaKC"
 					}))), i.a.createElement("section", null, i.a.createElement("h3", null, w._("I converted my Points into Reddit Coins, but I don't want them anymore. Can you revert the transaction?", null, {
 						hk: "RDin6"
 					})), i.a.createElement("p", null, w._("This is not possible. Conversion into Coins is final and cannot be reversed, since Points are burned in the process.", null, {
@@ -1729,12 +1729,12 @@
 						hk: "26YRqR"
 					})), i.a.createElement("section", null, i.a.createElement("h3", null, w._("I haven't found my answer. How do I get support?", null, {
 						hk: "1iLsnr"
-					})), i.a.createElement("p", null, w._("If you have questions, please reach out to us at {=spsupport@reddit.com}.", [w._param("=spsupport@reddit.com", i.a.createElement("a", {
-						href: "mailto:spsupport@reddit.com"
-					}, w._("spsupport@reddit.com", null, {
-						hk: "DjyKg"
+					})), i.a.createElement("p", null, w._("If you have questions, please {=file a ticket}.", [w._param("=file a ticket", i.a.createElement("a", {
+						href: "https://reddit.zendesk.com/hc/en-us/requests/new?ticket_form_id=125906"
+					}, w._("file a ticket", null, {
+						hk: "3RpIP"
 					})))], {
-						hk: "3CbI5h"
+						hk: "dykXa"
 					})))), null)
 				};
 			var H = o("./src/reddit/icons/svgs/Snoo/index.tsx"),
@@ -1769,8 +1769,8 @@
 			}, J._("Previews Terms of Use", null, {
 				hk: "4lPHBN"
 			}))));
-			var Z = o("./src/lib/loadableAction/index.ts"),
-				X = o("./src/reddit/controls/Button/index.tsx"),
+			var X = o("./src/lib/loadableAction/index.ts"),
+				Z = o("./src/reddit/controls/Button/index.tsx"),
 				$ = o("./src/reddit/icons/svgs/Wordmark/index.tsx"),
 				ee = o("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Header/index.m.less"),
 				te = o.n(ee);
@@ -1787,7 +1787,7 @@
 						}),
 						className: te.a.logo,
 						to: "/",
-						onClick: () => e(Object(Z.a)(() => Promise.all([o.e("CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32"), o.e("CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit"), o.e("Frontpage")]).then(o.bind(null, "./src/reddit/actions/frontpage/index.ts")).then(e => e.frontpageReloaded))(!0))
+						onClick: () => e(Object(X.a)(() => Promise.all([o.e("CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32"), o.e("CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit"), o.e("Frontpage")]).then(o.bind(null, "./src/reddit/actions/frontpage/index.ts")).then(e => e.frontpageReloaded))(!0))
 					}, i.a.createElement(H.a, {
 						className: te.a.snoo
 					}), i.a.createElement($.a, {
@@ -1804,10 +1804,10 @@
 							key: t,
 							className: te.a.sectionText
 						}, t)
-					})), i.a.createElement(X.t, {
+					})), i.a.createElement(Z.t, {
 						className: te.a.joinWaitlist,
-						priority: X.c.Secondary,
-						kind: X.b.ExternalLink,
+						priority: Z.c.Secondary,
+						kind: Z.b.ExternalLink,
 						href: "https://docs.google.com/forms/d/1xSpGcBc0TP3GpfNgo3F0pV86OQYiEwUcsWBu3-RtfiU/viewform",
 						target: "_blank",
 						rel: "noopener noreferrer"
@@ -2082,10 +2082,10 @@
 					className: ye.a.bodyText
 				}, be._("Add a custom token to your subreddit. Earn rewards, encourage quality content, and unlock special features.", null, {
 					hk: "2JXihD"
-				})), i.a.createElement(X.t, {
+				})), i.a.createElement(Z.t, {
 					className: ye.a.waitlistButton,
-					priority: X.c.Primary,
-					kind: X.b.ExternalLink,
+					priority: Z.c.Primary,
+					kind: Z.b.ExternalLink,
 					href: "https://docs.google.com/forms/d/1xSpGcBc0TP3GpfNgo3F0pV86OQYiEwUcsWBu3-RtfiU/viewform",
 					target: "_blank",
 					rel: "noopener noreferrer"
@@ -2207,11 +2207,11 @@
 					hk: "1IBSEK"
 				})))], {
 					hk: "3dfbBB"
-				})), i.a.createElement(X.t, {
+				})), i.a.createElement(Z.t, {
 					Icon: Object(k.b)("topic_reading"),
 					className: Te.a.button,
 					iconClassName: Te.a.buttonIcon,
-					priority: X.c.Secondary,
+					priority: Z.c.Secondary,
 					onClick: () => r(!0)
 				}, Re._("A New Frontier", null, {
 					hk: "4GrPd2"
@@ -2245,12 +2245,12 @@
 					className: Ae.a.subtitle
 				}, Fe._("Want to know more?", null, {
 					hk: "3vbn1B"
-				})), i.a.createElement(X.t, {
+				})), i.a.createElement(Z.t, {
 					Icon: Object(k.b)("topic_reading"),
 					className: Ae.a.docsButton,
 					iconClassName: Ae.a.docsIcon,
-					priority: X.c.Secondary,
-					kind: X.b.InternalLink,
+					priority: Z.c.Secondary,
+					kind: Z.b.InternalLink,
 					to: m("introduction")
 				}, i.a.createElement("span", {
 					className: Ae.a.docTextFull
@@ -2291,9 +2291,9 @@
 				})))
 			};
 			var Le = o("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/Features/index.m.less"),
-				Ge = o.n(Le);
+				Ye = o.n(Le);
 			const {
-				fbt: Ye
+				fbt: Ge
 			} = o("./node_modules/fbt/lib/FbtPublic.js"), ze = e => {
 				let {
 					className: t
@@ -2303,29 +2303,29 @@
 				}, i.a.createElement(nt, {
 					anchorId: "features"
 				}), i.a.createElement("h3", {
-					className: Ge.a.title
-				}, Ye._("Features", null, {
+					className: Ye.a.title
+				}, Ge._("Features", null, {
 					hk: "Bhlfk"
 				})), i.a.createElement("h2", {
-					className: Ge.a.subtitle
-				}, Ye._("Oh, the possibilities!", null, {
+					className: Ye.a.subtitle
+				}, Ge._("Oh, the possibilities!", null, {
 					hk: "1Up4RN"
 				})), qe.map(e => i.a.createElement(We, {
-					className: Ge.a.featureContainer,
+					className: Ye.a.featureContainer,
 					key: e.title,
 					data: e
 				})))
 			}, qe = [{
-				title: Ye._("Own your reputation", null, {
+				title: Ge._("Own your reputation", null, {
 					hk: "2Z40M2"
 				}),
-				body: Ye._("{=Community Points are a measure of reputation in your community. In the subreddit, they are displayed next to usernames, so the biggest contributors stand out from the crowd.}{=But it's not limited to Reddit either. Because your Points are on the blockchain, you can take your reputation anywhere you want on the Internet. Embed them in your own site or app!}", [Ye._param("=Community Points are a measure of reputation in your community. In the subreddit, they are displayed next to usernames, so the biggest contributors stand out from the crowd.", i.a.createElement("p", {
-					className: Ge.a.bodyText
-				}, Ye._("Community Points are a measure of reputation in your community. In the subreddit, they are displayed next to usernames, so the biggest contributors stand out from the crowd.", null, {
+				body: Ge._("{=Community Points are a measure of reputation in your community. In the subreddit, they are displayed next to usernames, so the biggest contributors stand out from the crowd.}{=But it's not limited to Reddit either. Because your Points are on the blockchain, you can take your reputation anywhere you want on the Internet. Embed them in your own site or app!}", [Ge._param("=Community Points are a measure of reputation in your community. In the subreddit, they are displayed next to usernames, so the biggest contributors stand out from the crowd.", i.a.createElement("p", {
+					className: Ye.a.bodyText
+				}, Ge._("Community Points are a measure of reputation in your community. In the subreddit, they are displayed next to usernames, so the biggest contributors stand out from the crowd.", null, {
 					hk: "22eCEg"
-				}))), Ye._param("=But it's not limited to Reddit either. Because your Points are on the blockchain, you can take your reputation anywhere you want on the Internet. Embed them in your own site or app!", i.a.createElement("p", {
-					className: Ge.a.bodyText
-				}, Ye._("But it's not limited to Reddit either. Because your Points are on the blockchain, you can take your reputation anywhere you want on the Internet. Embed them in your own site or app!", null, {
+				}))), Ge._param("=But it's not limited to Reddit either. Because your Points are on the blockchain, you can take your reputation anywhere you want on the Internet. Embed them in your own site or app!", i.a.createElement("p", {
+					className: Ye.a.bodyText
+				}, Ge._("But it's not limited to Reddit either. Because your Points are on the blockchain, you can take your reputation anywhere you want on the Internet. Embed them in your own site or app!", null, {
 					hk: "4a3vgy"
 				})))], {
 					hk: "3wqGEI"
@@ -2333,36 +2333,36 @@
 				imageSrc: `${n.a.assetPath}/img/communityPoints/landingPage/reputation_v3.png`,
 				backgroundColor: "#FF5C0033"
 			}, {
-				title: Ye._("Purchase Special Memberships", null, {
+				title: Ge._("Purchase Special Memberships", null, {
 					hk: "4c0PPs"
 				}),
-				body: Ye._("{=Create Special Memberships in your community that users can purchase with Points. Special Memberships unlock multiple features:}{=Badges}{=Personalize your presence on the subreddit with loyalty, achievement, and style badges, and add a highlighted color to your username.}{=GIFs (optional)}{=Embed GIFs directly inside your comments.}{=Animated Emojis}{=Let creators in your community upload custom emojis that you can add to your comments.}", [Ye._param("=Create Special Memberships in your community that users can purchase with Points. Special Memberships unlock multiple features:", i.a.createElement("p", {
-					className: Object(s.a)(Ge.a.bodyText, Ge.a.blackText)
-				}, Ye._("Create Special Memberships in your community that users can purchase with Points. Special Memberships unlock multiple features:", null, {
+				body: Ge._("{=Create Special Memberships in your community that users can purchase with Points. Special Memberships unlock multiple features:}{=Badges}{=Personalize your presence on the subreddit with loyalty, achievement, and style badges, and add a highlighted color to your username.}{=GIFs (optional)}{=Embed GIFs directly inside your comments.}{=Animated Emojis}{=Let creators in your community upload custom emojis that you can add to your comments.}", [Ge._param("=Create Special Memberships in your community that users can purchase with Points. Special Memberships unlock multiple features:", i.a.createElement("p", {
+					className: Object(s.a)(Ye.a.bodyText, Ye.a.blackText)
+				}, Ge._("Create Special Memberships in your community that users can purchase with Points. Special Memberships unlock multiple features:", null, {
 					hk: "3KdhAP"
-				}))), Ye._param("=Badges", i.a.createElement("h6", {
-					className: Ge.a.bodyTitle
-				}, Ye._("Badges", null, {
+				}))), Ge._param("=Badges", i.a.createElement("h6", {
+					className: Ye.a.bodyTitle
+				}, Ge._("Badges", null, {
 					hk: "1Xw4PQ"
-				}))), Ye._param("=Personalize your presence on the subreddit with loyalty, achievement, and style badges, and add a highlighted color to your username.", i.a.createElement("p", {
-					className: Ge.a.bodyDetail
-				}, Ye._("Personalize your presence on the subreddit with loyalty, achievement, and style badges, and add a highlighted color to your username.", null, {
+				}))), Ge._param("=Personalize your presence on the subreddit with loyalty, achievement, and style badges, and add a highlighted color to your username.", i.a.createElement("p", {
+					className: Ye.a.bodyDetail
+				}, Ge._("Personalize your presence on the subreddit with loyalty, achievement, and style badges, and add a highlighted color to your username.", null, {
 					hk: "3mrVe"
-				}))), Ye._param("=GIFs (optional)", i.a.createElement("h6", {
-					className: Ge.a.bodyTitle
-				}, Ye._("GIFs (optional)", null, {
+				}))), Ge._param("=GIFs (optional)", i.a.createElement("h6", {
+					className: Ye.a.bodyTitle
+				}, Ge._("GIFs (optional)", null, {
 					hk: "1OkOrY"
-				}))), Ye._param("=Embed GIFs directly inside your comments.", i.a.createElement("p", {
-					className: Ge.a.bodyDetail
-				}, Ye._("Embed GIFs directly inside your comments.", null, {
+				}))), Ge._param("=Embed GIFs directly inside your comments.", i.a.createElement("p", {
+					className: Ye.a.bodyDetail
+				}, Ge._("Embed GIFs directly inside your comments.", null, {
 					hk: "TmLOL"
-				}))), Ye._param("=Animated Emojis", i.a.createElement("h6", {
-					className: Ge.a.bodyTitle
-				}, Ye._("Animated Emojis", null, {
+				}))), Ge._param("=Animated Emojis", i.a.createElement("h6", {
+					className: Ye.a.bodyTitle
+				}, Ge._("Animated Emojis", null, {
 					hk: "18gq4g"
-				}))), Ye._param("=Let creators in your community upload custom emojis that you can add to your comments.", i.a.createElement("p", {
-					className: Ge.a.bodyDetail
-				}, Ye._("Let creators in your community upload custom emojis that you can add to your comments.", null, {
+				}))), Ge._param("=Let creators in your community upload custom emojis that you can add to your comments.", i.a.createElement("p", {
+					className: Ye.a.bodyDetail
+				}, Ge._("Let creators in your community upload custom emojis that you can add to your comments.", null, {
 					hk: "Ot9Cs"
 				})))], {
 					hk: "11CKRv"
@@ -2370,27 +2370,27 @@
 				imageSrc: `${n.a.assetPath}/img/communityPoints/landingPage/special_memberships_v3.png`,
 				backgroundColor: "#D4F6FF"
 			}, {
-				title: Ye._("Buy Coins in your community", null, {
+				title: Ge._("Buy Coins in your community", null, {
 					hk: "3LFg3T"
 				}),
 				body: i.a.createElement("p", {
-					className: Ge.a.bodyText
-				}, Ye._("Make it rain awards! You can use your Community Points to buy Reddit Coins that only work in the subreddit.", null, {
+					className: Ye.a.bodyText
+				}, Ge._("Make it rain awards! You can use your Community Points to buy Reddit Coins that only work in the subreddit.", null, {
 					hk: "4BNxrU"
 				})),
 				imageSrc: `${n.a.assetPath}/img/communityPoints/landingPage/awards_v3.png`,
 				backgroundColor: "#00CC7833"
 			}, {
-				title: Ye._("Put anything to a vote", null, {
+				title: Ge._("Put anything to a vote", null, {
 					hk: "3PT2yA"
 				}),
-				body: Ye._("{=Run weighted polls to make big decisions in your community, like getting input on rules changes or deciding how to distribute Points.}{=Unlike regular polls, these polls give a larger voice to people who have contributed more to the community. The more Community Points someone has earned, the more weight their vote carries.}", [Ye._param("=Run weighted polls to make big decisions in your community, like getting input on rules changes or deciding how to distribute Points.", i.a.createElement("p", {
-					className: Ge.a.bodyText
-				}, Ye._("Run weighted polls to make big decisions in your community, like getting input on rules changes or deciding how to distribute Points.", null, {
+				body: Ge._("{=Run weighted polls to make big decisions in your community, like getting input on rules changes or deciding how to distribute Points.}{=Unlike regular polls, these polls give a larger voice to people who have contributed more to the community. The more Community Points someone has earned, the more weight their vote carries.}", [Ge._param("=Run weighted polls to make big decisions in your community, like getting input on rules changes or deciding how to distribute Points.", i.a.createElement("p", {
+					className: Ye.a.bodyText
+				}, Ge._("Run weighted polls to make big decisions in your community, like getting input on rules changes or deciding how to distribute Points.", null, {
 					hk: "Occ8f"
-				}))), Ye._param("=Unlike regular polls, these polls give a larger voice to people who have contributed more to the community. The more Community Points someone has earned, the more weight their vote carries.", i.a.createElement("p", {
-					className: Ge.a.bodyText
-				}, Ye._("Unlike regular polls, these polls give a larger voice to people who have contributed more to the community. The more Community Points someone has earned, the more weight their vote carries.", null, {
+				}))), Ge._param("=Unlike regular polls, these polls give a larger voice to people who have contributed more to the community. The more Community Points someone has earned, the more weight their vote carries.", i.a.createElement("p", {
+					className: Ye.a.bodyText
+				}, Ge._("Unlike regular polls, these polls give a larger voice to people who have contributed more to the community. The more Community Points someone has earned, the more weight their vote carries.", null, {
 					hk: "20PHmT"
 				})))], {
 					hk: "KZiXt"
@@ -2398,12 +2398,12 @@
 				imageSrc: `${n.a.assetPath}/img/communityPoints/landingPage/polls_v3.png`,
 				backgroundColor: "#FFD63533"
 			}, {
-				title: Ye._("Show your appreciation", null, {
+				title: Ge._("Show your appreciation", null, {
 					hk: "16HCcH"
 				}),
-				body: Ye._("{=Tip someone for making a great post or comment! Community Points can also be sent to any Redditor with a crypto Vault.}", [Ye._param("=Tip someone for making a great post or comment! Community Points can also be sent to any Redditor with a crypto Vault.", i.a.createElement("p", {
-					className: Ge.a.bodyText
-				}, Ye._("Tip someone for making a great post or comment! Community Points can also be sent to any Redditor with a crypto Vault.", null, {
+				body: Ge._("{=Tip someone for making a great post or comment! Community Points can also be sent to any Redditor with a crypto Vault.}", [Ge._param("=Tip someone for making a great post or comment! Community Points can also be sent to any Redditor with a crypto Vault.", i.a.createElement("p", {
+					className: Ye.a.bodyText
+				}, Ge._("Tip someone for making a great post or comment! Community Points can also be sent to any Redditor with a crypto Vault.", null, {
 					hk: "3PzATh"
 				})))], {
 					hk: "3Lb9Rr"
@@ -2411,12 +2411,12 @@
 				imageSrc: `${n.a.assetPath}/img/communityPoints/landingPage/tipping_v3.png`,
 				backgroundColor: "#F86AEA33"
 			}, {
-				title: Ye._("Reward creators and developers", null, {
+				title: Ge._("Reward creators and developers", null, {
 					hk: "3gxoDp"
 				}),
 				body: i.a.createElement("p", {
-					className: Object(s.a)(Ge.a.bodyText, Ge.a.blackText)
-				}, Ye._("Creators can be rewarded for making things for the subreddit, such as designing badges or community merchandise. Developers who make community bots or tools for the subreddit can be paid in Points for their work.", null, {
+					className: Object(s.a)(Ye.a.bodyText, Ye.a.blackText)
+				}, Ge._("Creators can be rewarded for making things for the subreddit, such as designing badges or community merchandise. Developers who make community bots or tools for the subreddit can be paid in Points for their work.", null, {
 					hk: "2aZ9Y6"
 				})),
 				imageSrc: `${n.a.assetPath}/img/communityPoints/landingPage/creator_rewards_v3.png`,
@@ -2448,10 +2448,10 @@
 					className: Ue.a.body
 				}, Ke._("Community Points will always be an opt-in feature. We are looking for a select few subreddits to join our crypto experiment. If you are a moderator, add yourself to the list and we'll be in touch!", null, {
 					hk: "4uvkEJ"
-				})), i.a.createElement(X.t, {
+				})), i.a.createElement(Z.t, {
 					className: Ue.a.waitlistButton,
-					priority: X.c.Primary,
-					kind: X.b.ExternalLink,
+					priority: Z.c.Primary,
+					kind: Z.b.ExternalLink,
 					href: "https://docs.google.com/forms/d/1xSpGcBc0TP3GpfNgo3F0pV86OQYiEwUcsWBu3-RtfiU/viewform",
 					target: "_blank",
 					rel: "noopener noreferrer"
@@ -2472,39 +2472,39 @@
 				})))
 			};
 			var Qe = o("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/Vault/index.m.less"),
-				Ze = o.n(Qe);
+				Xe = o.n(Qe);
 			const {
-				fbt: Xe
+				fbt: Ze
 			} = o("./node_modules/fbt/lib/FbtPublic.js"), $e = e => {
 				let {
 					className: t
 				} = e;
 				return i.a.createElement("div", {
-					className: Object(s.a)(t, Ze.a.background)
+					className: Object(s.a)(t, Xe.a.background)
 				}, i.a.createElement(nt, {
 					anchorId: "vault"
 				}), i.a.createElement("div", {
-					className: Ze.a.textSection
+					className: Xe.a.textSection
 				}, i.a.createElement("div", {
-					className: Ze.a.textContainer
+					className: Xe.a.textContainer
 				}, i.a.createElement("h3", {
-					className: Ze.a.title
-				}, Xe._("The Vault", null, {
+					className: Xe.a.title
+				}, Ze._("The Vault", null, {
 					hk: "3UIB9U"
 				})), i.a.createElement("h2", {
-					className: Ze.a.subtitle
-				}, Xe._("Your crypto wallet within Reddit", null, {
+					className: Xe.a.subtitle
+				}, Ze._("Your crypto wallet within Reddit", null, {
 					hk: "40R31x"
 				})), i.a.createElement("p", {
-					className: Ze.a.body
-				}, Xe._("Community Points live on the blockchain, and your Vault is where you can view, send, and use Community Points within the Reddit app.", null, {
+					className: Xe.a.body
+				}, Ze._("Community Points live on the blockchain, and your Vault is where you can view, send, and use Community Points within the Reddit app.", null, {
 					hk: "1g3lSo"
 				})))), i.a.createElement("div", {
-					className: Ze.a.imageSection
+					className: Xe.a.imageSection
 				}, i.a.createElement("img", {
-					className: Ze.a.image,
+					className: Xe.a.image,
 					src: `${n.a.assetPath}/img/communityPoints/landingPage/vault_v4.png`,
-					alt: Xe._("Reddit Vault", null, {
+					alt: Ze._("Reddit Vault", null, {
 						hk: "8VmO1"
 					})
 				})))
@@ -2600,9 +2600,9 @@
 			})), o.d(t, "b", (function() {
 				return L
 			})), o.d(t, "w", (function() {
-				return G
-			})), o.d(t, "s", (function() {
 				return Y
+			})), o.d(t, "s", (function() {
+				return G
 			})), o.d(t, "t", (function() {
 				return z
 			})), o.d(t, "g", (function() {
@@ -2817,11 +2817,11 @@
 					if (!o) return;
 					return e.economics.emotes[o]
 				},
-				G = (e, t) => {
+				Y = (e, t) => {
 					const o = t && e.economics.gifs[t];
 					return !!o && o.hasGifProduct
 				},
-				Y = (e, t) => !!t && !!Object(y.a)(e, {
+				G = (e, t) => !!t && !!Object(y.a)(e, {
 					subredditId: t
 				}),
 				z = (e, t, o) => {
@@ -2836,7 +2836,7 @@
 						})) return !0;
 					if (q(e, o)) return !0;
 					const a = n.d.spGiphy(e),
-						i = G(e, t);
+						i = Y(e, t);
 					return !!H(e, t) || a && i
 				},
 				q = (e, t) => {
@@ -2847,7 +2847,7 @@
 				},
 				H = (e, t) => {
 					const o = n.d.spGiphy(e),
-						a = G(e, t);
+						a = Y(e, t);
 					return o && a
 				},
 				U = (e, t, o) => {
@@ -2934,4 +2934,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.01d9c9f5fdb92a24b46d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.6c98e663ee141266aedf.js.map
