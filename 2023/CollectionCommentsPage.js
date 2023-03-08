@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.eea3d86b94ea3731f57c.js
-// Retrieved at 3/8/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.4da61da6e55b2d19f122.js
+// Retrieved at 3/8/2023, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -790,7 +790,7 @@
 					} = n, v = h.pages.comments.keyToHeadCommentId.hasOwnProperty(b), _ = h.pages.comments.api.fullyLoaded[b], C = h.pages.comments.api.error[b];
 					if (h.pages.comments.api.pending[b] || v && !C) {
 						if (v && !h.sidebarPromotedPosts.firstFetch) {
-							const e = Object(B.j)(h) ? A.a.COMMENTS_OVERLAY : A.a.COMMENTS;
+							const e = Object(B.i)(h) ? A.a.COMMENTS_OVERLAY : A.a.COMMENTS;
 							window.addEventListener("load", () => {
 								i(Object(d.b)(e))
 							})
@@ -832,7 +832,7 @@
 							key: b,
 							postId: t
 						}));
-						const o = Object(B.j)(h) ? A.a.COMMENTS_OVERLAY : A.a.COMMENTS;
+						const o = Object(B.i)(h) ? A.a.COMMENTS_OVERLAY : A.a.COMMENTS;
 						i(Object(d.b)(o))
 					}
 					if (w.ok) {
@@ -9829,7 +9829,7 @@
 				commentSearchPdp: k.a,
 				isSubredditDiscoveryCrosspostEnabled: j.a,
 				headComment: E.x,
-				lastPage: P.n,
+				lastPage: P.m,
 				post: E.J
 			}), T = e => {
 				var t, s;
@@ -11382,7 +11382,7 @@
 				u = c.getUTCDate(),
 				p = Date.UTC(2008, 0, 1),
 				b = Date.UTC(l, m - 7, u),
-				h = Object(n.a)(e => Object(a.g)(e), e => Object(o.a)(e), (e, t) => {
+				h = Object(n.a)(e => Object(a.f)(e), e => Object(o.a)(e), (e, t) => {
 					let {
 						post: s
 					} = t;
@@ -11400,4 +11400,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.eea3d86b94ea3731f57c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.4da61da6e55b2d19f122.js.map

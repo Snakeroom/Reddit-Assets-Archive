@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.9888fd6848f643245c0e.js
-// Retrieved at 3/8/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.3974d0f5d5bbe7c66766.js
+// Retrieved at 3/8/2023, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -668,7 +668,7 @@
 						sort: d,
 						t: m,
 						correlationId: u
-					} = t, p = Object(L.k)(e), v = Object(B.bb)(e) || Object(B.S)(e), f = Object(F.b)(e), _ = Object(R.r)(e), {
+					} = t, p = Object(L.k)(e), v = Object(B.bb)(e) || Object(B.S)(e), f = Object(F.b)(e), _ = Object(R.q)(e), {
 						adsSeenCount: x,
 						totalPostsSeenCount: E,
 						sessionStartTime: y
@@ -4884,7 +4884,7 @@
 				d = a("./src/reddit/selectors/posts.ts");
 			const m = Object(c.c)({
 					postCount: d.M,
-					previousPageIsOverlay: l.q,
+					previousPageIsOverlay: l.p,
 					tabBadged: e => e.tabBadged
 				}),
 				u = Object(r.b)(m);
@@ -5950,4 +5950,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.9888fd6848f643245c0e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.3974d0f5d5bbe7c66766.js.map

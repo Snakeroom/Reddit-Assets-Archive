@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NftProductDetailsModal.020b2fd48280f847919c.js
-// Retrieved at 3/6/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NftProductDetailsModal.5e38773ed51077d5773e.js
+// Retrieved at 3/8/2023, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NftProductDetailsModal"], {
 		"./src/reddit/components/Econ/Marketplace/NftProductDetails/index.m.less": function(e, t, a) {
@@ -11,25 +11,25 @@
 		"./src/reddit/components/Econ/Marketplace/NftProductDetails/index.tsx": function(e, t, a) {
 			"use strict";
 			a.r(t), a.d(t, "NftProductDetails", (function() {
-				return f
+				return A
 			}));
 			var r = a("./node_modules/@reddit/marketplace/marketplace.es.js"),
 				s = a("./src/higherOrderComponents/asModal/index.tsx"),
-				c = a("./node_modules/react/index.js"),
-				n = a.n(c),
-				o = a("./node_modules/react-redux/es/index.js"),
+				o = a("./node_modules/react/index.js"),
+				c = a.n(o),
+				n = a("./node_modules/react-redux/es/index.js"),
 				i = a("./src/reddit/actions/modal.ts"),
 				d = a("./src/reddit/actions/snoovatarModal.ts"),
 				l = a("./src/reddit/components/Marketplace/MarketplaceConfigProvider.tsx"),
 				u = a("./src/reddit/constants/modals.ts"),
 				p = a("./src/reddit/helpers/avatarRouting.ts"),
-				E = a("./src/reddit/selectors/activeModal.ts"),
-				O = a("./src/reddit/selectors/user.ts"),
-				m = a("./src/reddit/components/Econ/Marketplace/NftProductDetails/index.m.less"),
-				A = a.n(m);
+				m = a("./src/reddit/selectors/activeModal.ts"),
+				E = a("./src/reddit/selectors/user.ts"),
+				f = a("./src/reddit/components/Econ/Marketplace/NftProductDetails/index.m.less"),
+				O = a.n(f);
 
-			function _() {
-				return (_ = Object.assign || function(e) {
+			function v() {
+				return (v = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var a = arguments[t];
 						for (var r in a) Object.prototype.hasOwnProperty.call(a, r) && (e[r] = a[r])
@@ -37,40 +37,44 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const f = e => {
+			const A = e => {
 					let {
 						onClose: t
 					} = e;
-					const a = Object(o.e)(O.Eb),
+					const a = Object(n.e)(E.Eb),
 						{
 							itemId: s,
-							showBack: c
-						} = Object(o.e)(e => {
-							const t = Object(E.a)(e);
+							showBack: o,
+							profileUserName: f
+						} = Object(n.e)(e => {
+							const t = Object(m.a)(e);
 							return {
 								itemId: null == t ? void 0 : t.itemId,
-								showBack: null == t ? void 0 : t.showBack
+								showBack: null == t ? void 0 : t.showBack,
+								profileUserName: null == t ? void 0 : t.profileUserName
 							}
 						}),
-						m = Object(o.d)();
+						v = Object(n.d)();
 					if (!a || !s) return null;
-					return n.a.createElement("div", {
-						className: A.a.container
-					}, n.a.createElement(l.a, null, n.a.createElement(r.i, {
-						onBack: c ? () => {
-							t(), m(Object(i.h)(u.a.X_SHOWCASE_COLLECTION_VIEW_MODAL))
+					return c.a.createElement("div", {
+						className: O.a.container
+					}, c.a.createElement(l.a, null, c.a.createElement(r.i, {
+						onBack: o ? () => {
+							t(), v(Object(i.h)(u.a.X_SHOWCASE_COLLECTION_VIEW_MODAL, {
+								profileUserName: f
+							}))
 						} : void 0,
 						itemId: s,
 						onClose: t,
 						currentUserId: a,
 						onViewAvatar: () => {
-							t(), m(Object(d.b)({
+							t(), v(Object(d.b)({
 								activeTab: p.a.ME,
 								activeMeSubpage: "MY_STUFF"
 							}))
 						},
 						onSetAsAvatar: e => {
-							t(), m(Object(d.b)({
+							t(), v(Object(d.b)({
 								activeTab: p.a.ME,
 								activeMeSubpage: "MY_STUFF",
 								activeDetails: {
@@ -81,7 +85,7 @@
 							}))
 						},
 						onArtistClick: e => {
-							t(), m(Object(d.b)({
+							t(), v(Object(d.b)({
 								activeTab: p.a.SHOP,
 								shopTabState: {
 									selectedArtistDisplayName: e,
@@ -91,19 +95,19 @@
 						}
 					})))
 				},
-				v = Object(s.a)(f);
-			t.default = e => n.a.createElement(v, _({
+				_ = Object(s.a)(A);
+			t.default = e => c.a.createElement(_, v({
 				withOverlay: !0,
-				className: A.a.modal
+				className: O.a.modal
 			}, e))
 		},
 		"./src/reddit/helpers/avatarRouting.ts": function(e, t, a) {
 			"use strict";
-			var r, s, c;
+			var r, s, o;
 			a.d(t, "a", (function() {
 					return s
 				})), a.d(t, "b", (function() {
-					return c
+					return o
 				})),
 				function(e) {
 					e.BODY = "body", e.EYES = "eyes", e.HAIR = "hair", e.EXPRESSION = "expression", e.FACIAL_HAIR = "facial hair"
@@ -113,8 +117,8 @@
 				}(s || (s = {})),
 				function(e) {
 					e.FEATURED = "featured", e.POPULAR = "popular", e.GALLERY = "gallery", e.ARTISTS = "artists", e.ARTIST_PAGE = "artist_page"
-				}(c || (c = {}))
+				}(o || (o = {}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProductDetailsModal.020b2fd48280f847919c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProductDetailsModal.5e38773ed51077d5773e.js.map

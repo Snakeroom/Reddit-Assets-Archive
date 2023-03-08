@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.effe64235ae31d73dc00.js
-// Retrieved at 3/8/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.7a1bfc5854699c310d59.js
+// Retrieved at 3/8/2023, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "ModQueuePages~reddit-components-MediumPost"], {
 		"./src/lib/LiveChatActiveUsers/index.m.less": function(e, t, s) {
@@ -1481,7 +1481,7 @@
 												comment: e,
 												parentId: u
 											},
-											s = Object(Y.g)(l),
+											s = Object(Y.f)(l),
 											o = l.platform.currentPage && l.platform.currentPage.routeMatch;
 										let n = s && o && Object(H.a)(o, l, l.posts.models[e.postId]);
 										if (n || (n = Object(P.a)(e.postId, null, {
@@ -8960,8 +8960,9 @@
 						queryParams: n()([...Object(c.a)(t.location.search)])
 					})),
 					openNsfwModal: () => e(Object(f.a)()),
-					openShowcaseModal: () => e(Object(x.h)(Nt.a.X_SHOWCASE_COLLECTION_VIEW_MODAL, {
-						telemetryReason: "deeplink"
+					openShowcaseModal: t => e(Object(x.h)(Nt.a.X_SHOWCASE_COLLECTION_VIEW_MODAL, {
+						telemetryReason: "deeplink",
+						profileUserName: t
 					}))
 				}));
 			class Zt extends a.a.Component {
@@ -8972,7 +8973,7 @@
 					})
 				}
 				componentDidMount() {
-					this.props.isProfileNSFW && !this.props.isOwnProfile && this.props.nsfwBlockingExperiment === zt.a.Blurred ? this.props.openNsfwModal() : this.props.isLoggedIn && this.props.isDisplayCollectiblesUrl && Object(C.a)().then(() => this.props.openShowcaseModal()), Object(Tt.a)({
+					this.props.isProfileNSFW && !this.props.isOwnProfile && this.props.nsfwBlockingExperiment === zt.a.Blurred ? this.props.openNsfwModal() : this.props.isLoggedIn && this.props.isDisplayCollectiblesUrl && Object(C.a)().then(() => this.props.openShowcaseModal(this.props.profileName)), Object(Tt.a)({
 						sendEvent: this.props.sendEvent,
 						user: this.props.user,
 						pageType: "profile",
@@ -9302,4 +9303,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.effe64235ae31d73dc00.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.7a1bfc5854699c310d59.js.map

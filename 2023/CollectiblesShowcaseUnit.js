@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectiblesShowcaseUnit.1272059660176a837a2b.js
-// Retrieved at 3/7/2023, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectiblesShowcaseUnit.d79a4bb4e599e3ccb32e.js
+// Retrieved at 3/8/2023, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectiblesShowcaseUnit"], {
 		"./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx": function(e, t, r) {
@@ -11,8 +11,8 @@
 				s = r("./src/lib/env/index.ts"),
 				c = r("./node_modules/react/index.js"),
 				i = r("./node_modules/react-redux/es/index.js"),
-				o = r("./src/reddit/endpoints/governance/crypto.ts"),
-				a = r("./src/reddit/hooks/useTracking.ts"),
+				a = r("./src/reddit/endpoints/governance/crypto.ts"),
+				o = r("./src/reddit/hooks/useTracking.ts"),
 				d = r("./src/reddit/selectors/experiments/econ/index.ts"),
 				u = r("./src/reddit/selectors/experiments/econ/marketplace.ts"),
 				l = r("./src/reddit/selectors/experiments/econ/paymentsSandbox.ts"),
@@ -35,8 +35,8 @@
 						f = s ? s.accessToken : "",
 						O = s ? new Date(s.expires).getTime() : 1,
 						E = Object(i.e)(p.fb),
-						k = Object(a.a)(),
-						y = b ? o.a.Rinkeby : o.a.Ethereum,
+						k = Object(o.a)(),
+						y = b ? a.a.Rinkeby : a.a.Ethereum,
 						_ = Object(c.useMemo)(() => ({
 							headers: {
 								Authorization: `Bearer ${f}`
@@ -83,8 +83,8 @@
 				s = r.n(n),
 				c = r("./node_modules/react-redux/es/index.js"),
 				i = r("./node_modules/@reddit/marketplace/marketplace.es.js"),
-				o = r("./src/reddit/actions/modal.ts"),
-				a = r("./src/reddit/components/Marketplace/MarketplaceConfigProvider.tsx"),
+				a = r("./src/reddit/actions/modal.ts"),
+				o = r("./src/reddit/components/Marketplace/MarketplaceConfigProvider.tsx"),
 				d = r("./src/reddit/constants/modals.ts"),
 				u = r("./src/reddit/helpers/trackers/marketplace/claims.ts"),
 				l = r("./src/reddit/hooks/usePreloadModal.ts"),
@@ -105,20 +105,21 @@
 					}),
 					k = Object(p.k)(O),
 					y = Object(c.d)();
-				return Object(l.a)(h.a), s.a.createElement(a.a, null, s.a.createElement(i.j, {
+				return Object(l.a)(h.a), s.a.createElement(o.a, null, s.a.createElement(i.j, {
 					origin: t,
 					profileId: E.id || "",
 					profileDisplayName: E.displayName || "",
 					telemetryPageType: Object(m.v)(O.platform.currentPage) || "",
 					loggedInUserProfileId: k || "",
 					onOutfitClick: e => {
-						n(Object(u.k)(f(t))), y(Object(o.h)(d.a.ECON_NFT_PRODUCT_DETAILS, {
+						n(Object(u.k)(f(t))), y(Object(a.h)(d.a.ECON_NFT_PRODUCT_DETAILS, {
 							itemId: e.detail.outfit.id
 						}))
 					},
 					onViewAll: () => {
-						y(Object(o.h)(d.a.X_SHOWCASE_COLLECTION_VIEW_MODAL, {
-							telemetryReason: f(t)
+						y(Object(a.h)(d.a.X_SHOWCASE_COLLECTION_VIEW_MODAL, {
+							telemetryReason: f(t),
+							profileUserName: E.displayName || ""
 						}))
 					}
 				}))
@@ -127,18 +128,18 @@
 		"./src/reddit/components/Econ/Marketplace/ShowcaseCollectionViewModal/async.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return a
+				return o
 			}));
 			var n = r("./node_modules/@loadable/component/dist/loadable.esm.js"),
 				s = r("./node_modules/react/index.js"),
 				c = r.n(s),
 				i = r("./src/reddit/components/GlobalModalContainer/registry.ts"),
-				o = r("./src/reddit/constants/modals.ts");
-			const a = () => Promise.all([r.e("vendors~Avatar~CollectiblesShowcaseUnit~CryptoLibEthers~GovernanceTransferPointsModal~MarketplaceCla~cd1771e1"), r.e("vendors~Avatar~ChatPost~CollectiblesShowcaseUnit~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProf~7d152600"), r.e("vendors~Avatar~CollectiblesShowcaseUnit~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~S~bb3e1fe2"), r.e("ShowcaseCollectionViewModal")]).then(r.bind(null, "./src/reddit/components/Econ/Marketplace/ShowcaseCollectionViewModal/index.tsx")),
-				d = Object(n.a)(a, {
+				a = r("./src/reddit/constants/modals.ts");
+			const o = () => Promise.all([r.e("vendors~Avatar~CollectiblesShowcaseUnit~CryptoLibEthers~GovernanceTransferPointsModal~MarketplaceCla~cd1771e1"), r.e("vendors~Avatar~ChatPost~CollectiblesShowcaseUnit~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProf~7d152600"), r.e("vendors~Avatar~CollectiblesShowcaseUnit~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~S~bb3e1fe2"), r.e("ShowcaseCollectionViewModal")]).then(r.bind(null, "./src/reddit/components/Econ/Marketplace/ShowcaseCollectionViewModal/index.tsx")),
+				d = Object(n.a)(o, {
 					ssr: !1
 				});
-			Object(i.b)(o.a.X_SHOWCASE_COLLECTION_VIEW_MODAL, e => c.a.createElement(d, {
+			Object(i.b)(a.a.X_SHOWCASE_COLLECTION_VIEW_MODAL, e => c.a.createElement(d, {
 				onClose: e,
 				onOverlayClick: e
 			}))
@@ -165,15 +166,15 @@
 		"./src/reddit/components/Marketplace/MarketplaceConfigProvider.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return a
+				return o
 			}));
 			var n = r("./node_modules/@reddit/marketplace/marketplace.es.js"),
 				s = r("./node_modules/react/index.js"),
 				c = r.n(s),
 				i = r("./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx");
 
-			function o() {
-				return (o = Object.assign || function(e) {
+			function a() {
+				return (a = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n])
@@ -181,12 +182,12 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const a = e => {
+			const o = e => {
 				let {
 					children: t
 				} = e;
 				const r = Object(i.a)();
-				return c.a.createElement(n.d, o({}, r, {
+				return c.a.createElement(n.d, a({}, r, {
 					shouldContainModal: !1
 				}), t)
 			}
@@ -198,9 +199,9 @@
 			})), r.d(t, "j", (function() {
 				return i
 			})), r.d(t, "i", (function() {
-				return o
-			})), r.d(t, "h", (function() {
 				return a
+			})), r.d(t, "h", (function() {
+				return o
 			})), r.d(t, "l", (function() {
 				return d
 			})), r.d(t, "k", (function() {
@@ -237,7 +238,7 @@
 				return e + " Network"
 			}
 
-			function o(e) {
+			function a(e) {
 				switch (e) {
 					case n.Ethereum:
 					case n.EthTraderEthereum:
@@ -256,7 +257,7 @@
 				}
 			}
 
-			function a(e) {
+			function o(e) {
 				switch (e) {
 					case n.Ethereum:
 					case n.EthTraderEthereum:
@@ -356,7 +357,7 @@
 			r.d(t, "a", (function() {
 				return i
 			})), r.d(t, "b", (function() {
-				return o
+				return a
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/helpers/chooseVariant/index.ts"),
@@ -367,7 +368,7 @@
 						experimentName: n.ye
 					}) === n.Pd)
 				},
-				o = Object(c.a)(n.ze)
+				a = Object(c.a)(n.ze)
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, r) {
 			"use strict";
@@ -381,4 +382,4 @@
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectiblesShowcaseUnit.1272059660176a837a2b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectiblesShowcaseUnit.d79a4bb4e599e3ccb32e.js.map

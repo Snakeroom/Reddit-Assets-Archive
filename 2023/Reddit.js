@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.942f20c21ea09ea19e6b.js
-// Retrieved at 3/8/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.be17e61efca3511f502d.js
+// Retrieved at 3/8/2023, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -955,7 +955,7 @@
 					const o = t();
 					if (!!!r.body.data.isLiveContentAvailable) return;
 					const a = Date.now();
-					Object(b.i)(o) && e(f(a)), e(v(a));
+					Object(b.h)(o) && e(f(a)), e(v(a));
 					const c = Object(h.k)(o);
 					c && !E(c) && e(O(!0))
 				}, y = e => Object(s.c)(r.s.HAPPENING_NOW, r.A.HAPPENING_NOW_LIVE_CONTENT_AVAILABILITY_TOOLTIP_DISMISSED, e), E = e => {
@@ -4118,14 +4118,14 @@
 							post: s
 						} = t;
 						if (!n && !s) return null;
-						const r = s || Object(N.o)(e, {
+						const r = s || Object(N.n)(e, {
 							page: n
 						});
 						return (null == r ? void 0 : r.belongsTo) ? Object(w.Q)(e, {
 							identifier: r.belongsTo
 						}) : null
 					},
-					post: N.o,
+					post: N.n,
 					joinOptimizationsLightboxHeaderEnabled: e => Object(S.a)(e) || Object(S.d)(e) || Object(S.c)(e),
 					isVoteCountAnimation: (e, t) => {
 						let {
@@ -4133,7 +4133,7 @@
 							post: s
 						} = t;
 						if (!n && !s) return !1;
-						const r = n && Object(N.o)(e, {
+						const r = n && Object(N.n)(e, {
 							page: n
 						}) || s;
 						return !!r && Object(k.g)(e, {
@@ -6376,7 +6376,7 @@
 				r = n("./src/reddit/selectors/platform.ts"),
 				o = n("./src/reddit/selectors/telemetry.ts");
 			const a = e => {
-					const t = Object(r.p)(e);
+					const t = Object(r.o)(e);
 					return {
 						actionInfo: Object(o.d)(e),
 						post: t && Object(o.K)(e, t) || null,
@@ -8665,9 +8665,9 @@
 				bladeNightmodeModalIsOpen: Object(se.b)(Zt.a.BLADE_NIGHTMODE),
 				currentBadgePurchase: e => e.products.currentlyPurchasing,
 				introModalFeatureEnabled: e => Rn.d.introModal(e),
-				isOverlayOpen: In.j,
+				isOverlayOpen: In.i,
 				moderatorPermissions: e => {
-					const t = Object(In.d)(e);
+					const t = Object(In.c)(e);
 					if (t) return e.moderatingSubreddits[t]
 				},
 				muteContext: wn.b,
@@ -8675,7 +8675,7 @@
 				notificationsPrePromptIsOpen: Mn.e,
 				removalReasonContext: Tn.b,
 				removalReasonModalIsOpen: Object(se.b)(Zt.a.ADD_REMOVAL_REASON),
-				subredditId: In.d,
+				subredditId: In.c,
 				userFlairModalIsOpen: Object(se.b)(Zt.a.USER_FLAIR_MODAL_ID),
 				userHasSeenRedesignModal: O.C,
 				userInRedesignBeta: O.J,
@@ -9678,7 +9678,7 @@
 						className: t
 					} = e;
 					const n = Object(Wr.a)(),
-						s = Object(xe.e)(In.h),
+						s = Object(xe.e)(In.g),
 						r = Object(xe.e)(O.S),
 						[o, a] = Object(Vr.a)(qr.b.LOGGED_OUT_HOME_SEEN, {}),
 						i = Date.now(),
@@ -11563,7 +11563,7 @@
 					currentPage: Dr,
 					hideNSFWPref: O.H,
 					isDropdownOpen: pr.a,
-					isOverlayOpen: In.j,
+					isOverlayOpen: In.i,
 					isPinnedSubscriptionsMenuDisabled: br.b,
 					isSubscriptionsPinned: br.c
 				});
@@ -12120,13 +12120,13 @@
 					T = Object(Ke.b)(),
 					A = Object(xe.d)(),
 					R = Object(xe.e)(In.b),
-					L = Object(xe.e)(In.e),
+					L = Object(xe.e)(In.d),
 					D = Object(xe.e)(O.m),
 					F = Object(xe.e)(oi.s),
 					B = Object(xe.e)(oi.r),
 					U = Object(xe.e)(O.S),
 					G = Object(xe.e)(O.fb),
-					H = Object(xe.e)(In.s),
+					H = Object(xe.e)(In.r),
 					q = Object(xe.e)(e => Object(qn.s)(e, {
 						pageLayer: o
 					})),
@@ -12846,7 +12846,7 @@
 					return !1
 				},
 				gc = e => {
-					const t = Object(In.r)(e);
+					const t = Object(In.q)(e);
 					return Boolean((null == t ? void 0 : t[Za.B]) && Object(D.a)(t[Za.B]))
 				},
 				fc = (e, t, n) => {
@@ -14372,7 +14372,7 @@
 					navbarLikeMweb: Yl.a,
 					nightmode: O.fb,
 					showPresence: O.X,
-					url: In.t,
+					url: In.s,
 					isCommunityLinkVisible: Xl
 				}), (e, t) => ({
 					closeUserDropdown: () => e(Object(_c.j)({
@@ -17083,7 +17083,7 @@
 					var t;
 					const {
 						currentPage: n
-					} = e.platform, s = Object(In.s)(e), r = null === (t = e.platform.currentPage) || void 0 === t ? void 0 : t.status, o = Bf.has(r), a = Object(qn.m)(e, {
+					} = e.platform, s = Object(In.r)(e), r = null === (t = e.platform.currentPage) || void 0 === t ? void 0 : t.status, o = Bf.has(r), a = Object(qn.m)(e, {
 						pageLayer: n
 					}), i = !(!a || !a.hideFromRobots), c = Gf(e), l = s === k.Tb.COMMENTS || s === k.Tb.COLLECTION_COMMENTS, d = !(!n || !n.urlParams.partialCommentId), u = s === k.Tb.SEARCH_RESULTS || l && d, m = Object(Lf.d)(e) && !(e => {
 						var t, n, s;
@@ -17237,7 +17237,7 @@
 							const e = Object(mv.b)(c, s, Object(cv.a)(s));
 							if (e && G.c.has(e)) {
 								const t = G.c.end(e);
-								!Object(In.j)(s) && Object(lv.b)(Qh.b.IsOverlay) || Object(ti.j)(c, s, W.TimerType.UserCancelled, t)
+								!Object(In.i)(s) && Object(lv.b)(Qh.b.IsOverlay) || Object(ti.j)(c, s, W.TimerType.UserCancelled, t)
 							}
 						}
 						const l = n.payload.routeMatch;
@@ -17718,7 +17718,7 @@
 					} = o.platform;
 					if (d) {
 						const e = [Za.k];
-						if (Object(In.k)(o) && e.push(Za.f), e.length > 0) {
+						if (Object(In.j)(o) && e.push(Za.f), e.length > 0) {
 							const t = Object(w.a)(d.url, e);
 							t !== d.url && s.dispatch(Object(p.c)(t))
 						}
@@ -17755,7 +17755,7 @@
 								country: n.meta.country
 							}), i) {
 							l.dispatch(C(i, a));
-							const e = Object(In.f)(n);
+							const e = Object(In.e)(n);
 							e && l.dispatch(y(e))
 						}
 						Uv.a.publish(cf.c, o, document)
@@ -17773,7 +17773,7 @@
 						f = Object(Rr.I)(p, g) || "";
 					if (g) {
 						l.dispatch(C(f, g));
-						const e = Object(In.f)(p);
+						const e = Object(In.e)(p);
 						e && l.dispatch(y(e))
 					}
 					const v = Object(Rr.I)(p, g) || "",
@@ -17803,7 +17803,7 @@
 					}));
 					const I = Object(cg.c)(p);
 					I && (l.dispatch(pe()), history.replaceState(history.state, "", Object(w.a)(window.location.href, [Za.C]))), l.dispatch(Zv());
-					const A = Object(In.r)(p),
+					const A = Object(In.q)(p),
 						B = null == A ? void 0 : A[Za.u];
 					B && (history.replaceState(history.state, "", Object(w.a)(window.location.href, [Za.u])), I || l.dispatch(Object(T.a)(() => Promise.resolve().then(n.bind(null, "./src/reddit/actions/changeUsername.ts")).then(e => e.openWelcomeBackModalIfNeeded))())), (null == A ? void 0 : A[Za.A]) && (l.dispatch(Object(T.a)(() => Promise.resolve().then(n.bind(null, "./src/reddit/actions/login.ts")).then(e => e.openLoginModal))()), history.replaceState(history.state, "", Object(w.a)(window.location.href, [Za.A]))), window.addEventListener("load", () => {
 						const e = l.getState(),
@@ -17824,7 +17824,7 @@
 								R.a && R.a.timing && $f.b.isEnabled && ($f.b.recordPerformanceTimings(`${a}_time_to_first_byte`, R.a.timing.fetchStart, R.a.timing.responseStart), $f.b.recordPerformanceTimings(`${a}_time_to_interactive`, R.a.timing.fetchStart, R.a.timing.domInteractive));
 								const n = [Object(bv.a)()],
 									s = !0;
-								if (Object(In.h)(e)) {
+								if (Object(In.g)(e)) {
 									const t = Object(hv.a)(e);
 									n.push(Object(hv.c)(t))
 								}
@@ -21336,4 +21336,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.942f20c21ea09ea19e6b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.be17e61efca3511f502d.js.map

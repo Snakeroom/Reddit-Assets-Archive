@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModProgressModule.8013f3895249db4caacf.js
-// Retrieved at 3/6/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModProgressModule.709a7d6c963206b5e0aa.js
+// Retrieved at 3/8/2023, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModProgressModule"], {
 		"./src/reddit/components/ModProgressModule/index.m.less": function(e, t, s) {
@@ -310,7 +310,7 @@
 			const O = Object(l.a)(p.a),
 				g = "ModProgressModule--ModWelcomeTooltip";
 			t.default = Object(d.a)(e => {
-				const t = Object(i.e)(C.e),
+				const t = Object(i.e)(C.d),
 					s = g,
 					d = Object(i.d)(),
 					l = e => {
@@ -438,4 +438,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModProgressModule.8013f3895249db4caacf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModProgressModule.709a7d6c963206b5e0aa.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminCommunityTopics.1d65bc73ab1064cd7129.js
-// Retrieved at 3/6/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminCommunityTopics.76fac12443f05464ed43.js
+// Retrieved at 3/8/2023, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminCommunityTopics"], {
 		"./src/reddit/components/CommunityTopics/AdminCommunityTopics/ModeratorSelectedOption/index.m.less": function(e, t, s) {
@@ -47,12 +47,12 @@
 				}).apply(this, arguments)
 			}
 			const g = Object(c.c)({
-				subredditId: m.d,
+				subredditId: m.c,
 				optionIsRelevant: (e, t) => {
 					let {
 						option: s
 					} = t;
-					const n = Object(m.d)(e);
+					const n = Object(m.c)(e);
 					if (!n || !s.id) return !0;
 					const o = Object(O.o)(e, {
 						itemId: n
@@ -872,4 +872,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminCommunityTopics.1d65bc73ab1064cd7129.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminCommunityTopics.76fac12443f05464ed43.js.map

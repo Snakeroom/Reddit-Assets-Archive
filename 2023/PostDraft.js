@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.230aa1abcc861614d50d.js
-// Retrieved at 3/8/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.d4b10b30b256ed571b11.js
+// Retrieved at 3/8/2023, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2469,7 +2469,7 @@
 					noun: s.collectionCancel
 				}),
 				k = () => e => {
-					const t = Object(a.p)(e) || void 0;
+					const t = Object(a.o)(e) || void 0;
 					return {
 						...m(e, t),
 						source: o.collectionComposer,
@@ -2505,7 +2505,7 @@
 					noun: s.startEvent
 				}),
 				O = () => e => {
-					const t = Object(a.p)(e) || void 0;
+					const t = Object(a.o)(e) || void 0;
 					return {
 						...m(e, t),
 						source: o.collectionComposer,
@@ -2574,18 +2574,18 @@
 					postEvent: C(e)
 				}),
 				g = e => t => ({
-					...j(t, Object(d.p)(t)),
+					...j(t, Object(d.o)(t)),
 					source: o.postComposer,
 					noun: "apply",
 					postComposer: v(e)
 				}),
 				x = () => e => ({
-					...j(e, Object(d.p)(e)),
+					...j(e, Object(d.o)(e)),
 					noun: "cancel",
 					actionInfo: p(e)
 				}),
 				_ = e => t => ({
-					...j(t, Object(d.p)(t)),
+					...j(t, Object(d.o)(t)),
 					noun: "delete",
 					actionInfo: p(t),
 					postComposer: k(t),
@@ -3134,4 +3134,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.230aa1abcc861614d50d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.d4b10b30b256ed571b11.js.map

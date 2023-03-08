@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.d77d87c175dc50cacd1a.js
-// Retrieved at 3/8/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.766663de146523c38350.js
+// Retrieved at 3/8/2023, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -3310,7 +3310,7 @@
 			const g = Object(l.a)(p.a),
 				v = "ModProgressModule--ModWelcomeTooltip";
 			t.default = Object(i.a)(e => {
-				const t = Object(o.e)(b.e),
+				const t = Object(o.e)(b.d),
 					n = v,
 					i = Object(o.d)(),
 					l = e => {
@@ -4541,8 +4541,8 @@
 					{
 						nsfwSessionSetting: P
 					} = Object(f.b)(),
-					R = Object(a.e)(he.s),
-					N = Object(a.e)(he.e),
+					R = Object(a.e)(he.r),
+					N = Object(a.e)(he.d),
 					L = Object(pe.c)(C),
 					x = Object(u.e)({
 						...ae()(w || {}, le.z),
@@ -25403,8 +25403,8 @@
 					var t;
 					const n = p(e);
 					if (!n) return !1;
-					let r = Object(i.s)(e),
-						a = Object(i.e)(e);
+					let r = Object(i.r)(e),
+						a = Object(i.d)(e);
 					if ("undefined" != typeof window && !a) {
 						const e = Object(c.a)("subreddit", window.location.href);
 						(a = null === (t = null == e ? void 0 : e.components) || void 0 === t ? void 0 : t.subredditName) && (r = s.Tb.SUBREDDIT)
@@ -25563,4 +25563,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.d77d87c175dc50cacd1a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.766663de146523c38350.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.68fa26f0569f7bb14ac3.js
-// Retrieved at 3/7/2023, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.dc8c70239672be07c16a.js
+// Retrieved at 3/8/2023, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -1015,7 +1015,7 @@
 					let {
 						pageLayer: n
 					} = t;
-					return n && Object(f.o)(e, {
+					return n && Object(f.n)(e, {
 						page: n
 					})
 				}, (e, t) => {
@@ -3397,7 +3397,7 @@
 				f = n("./src/reddit/selectors/user.ts");
 			const m = e => e.subreddits.progressModule,
 				p = e => {
-					const t = Object(l.d)(e);
+					const t = Object(l.c)(e);
 					if (!t) return;
 					if (!Object(u.n)(e, {
 							subredditId: t
@@ -3524,4 +3524,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.68fa26f0569f7bb14ac3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.dc8c70239672be07c16a.js.map

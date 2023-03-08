@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ShowcaseCollectionViewModal.0fe8bb4dfcefca436a72.js
-// Retrieved at 3/7/2023, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ShowcaseCollectionViewModal.fe2bf931f8d46115a961.js
+// Retrieved at 3/8/2023, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ShowcaseCollectionViewModal"], {
 		"./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx": function(e, t, r) {
@@ -85,7 +85,7 @@
 		"./src/reddit/components/Econ/Marketplace/ShowcaseCollectionViewModal/index.tsx": function(e, t, r) {
 			"use strict";
 			r.r(t), r.d(t, "_ShowcaseCollectionView", (function() {
-				return x
+				return y
 			}));
 			var n = r("./node_modules/@reddit/marketplace/marketplace.es.js"),
 				s = r("./node_modules/fbt/lib/FbtPublic.js"),
@@ -97,18 +97,17 @@
 				u = r("./src/reddit/components/Marketplace/MarketplaceConfigProvider.tsx"),
 				l = r("./src/reddit/constants/modals.ts"),
 				m = r("./src/reddit/hooks/useToast.tsx"),
-				p = r("./src/reddit/selectors/platform.ts"),
-				b = r("./src/reddit/selectors/profile.ts"),
-				h = r("./src/reddit/selectors/user.ts"),
-				f = r("./src/reddit/components/TrackingHelper/index.tsx"),
-				O = r("./src/reddit/helpers/trackers/marketplace/claims.ts"),
-				k = r("./src/reddit/models/Toast/index.ts"),
-				j = r("./src/reddit/selectors/activeModal.ts"),
-				E = r("./src/reddit/components/Econ/Marketplace/ShowcaseCollectionViewModal/index.m.less"),
-				_ = r.n(E);
+				p = r("./src/reddit/selectors/profile.ts"),
+				b = r("./src/reddit/selectors/user.ts"),
+				h = r("./src/reddit/components/TrackingHelper/index.tsx"),
+				f = r("./src/reddit/helpers/trackers/marketplace/claims.ts"),
+				O = r("./src/reddit/models/Toast/index.ts"),
+				k = r("./src/reddit/selectors/activeModal.ts"),
+				j = r("./src/reddit/components/Econ/Marketplace/ShowcaseCollectionViewModal/index.m.less"),
+				E = r.n(j);
 
-			function y() {
-				return (y = Object.assign || function(e) {
+			function _() {
+				return (_ = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n])
@@ -116,44 +115,46 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const x = e => {
+			const y = e => {
 					let {
 						onClose: t
 					} = e;
 					const r = Object(m.b)(),
 						c = Object(m.a)(),
-						a = Object(f.b)(),
-						E = Object(i.d)(),
-						y = Object(i.f)().getState(),
-						x = Object(p.c)(y),
-						A = Object(h.Cb)(y, {
-							userName: x
-						}),
-						v = Object(b.j)(y, A.profileId),
-						g = Object(n.l)(A.snoovatarFullBodyAsset || ""),
-						w = Object(i.e)(e => {
-							var t;
-							return null === (t = Object(j.a)(e)) || void 0 === t ? void 0 : t.telemetryReason
-						});
+						a = Object(h.b)(),
+						j = Object(i.d)(),
+						_ = Object(i.f)().getState(),
+						y = Object(i.e)(e => Object(k.a)(e)),
+						{
+							telemetryReason: x,
+							profileUserName: A
+						} = y || {},
+						g = Object(b.Cb)(_, {
+							userName: A || ""
+						}) || {},
+						v = Object(p.j)(_, g.profileId),
+						w = Object(n.l)(g.snoovatarFullBodyAsset || "");
 					return o.a.createElement(u.a, null, o.a.createElement(n.k, {
-						telemetryReason: w || "",
-						ownerId: A.id || "",
-						ownerSnoovatarImage: A.snoovatarFullBodyAsset || "",
-						ownerProfileItemId: g || "",
+						telemetryReason: x || "",
+						ownerId: g.id || "",
+						ownerSnoovatarImage: g.snoovatarFullBodyAsset || "",
+						ownerProfileItemId: w || "",
 						ownerProfileTitle: v.title || "",
-						ownerDisplayName: A.displayName || "",
+						ownerDisplayName: g.displayName || "",
 						onClose: t,
 						onOutfitClick: e => {
-							t(), a(Object(O.k)("marketplace_collection_page")), E(Object(d.h)(l.a.ECON_NFT_PRODUCT_DETAILS, {
+							t(), a(Object(f.k)("marketplace_collection_page")), j(Object(d.h)(l.a.ECON_NFT_PRODUCT_DETAILS, {
 								itemId: e.detail.outfit.id,
-								showBack: !0
+								showBack: !0,
+								profileUserName: A
 							}))
 						},
-						className: _.a.container,
+						className: E.a.container,
 						onProfileImageClick: () => {
-							t(), a(Object(O.k)("marketplace_collection_page")), E(Object(d.h)(l.a.ECON_NFT_PRODUCT_DETAILS, {
-								itemId: g,
-								showBack: !0
+							t(), a(Object(f.k)("marketplace_collection_page")), j(Object(d.h)(l.a.ECON_NFT_PRODUCT_DETAILS, {
+								itemId: w,
+								showBack: !0,
+								profileUserName: A
 							}))
 						},
 						onEmptyState: () => {
@@ -167,15 +168,15 @@
 									hk: "2lidsg"
 								}),
 								duration: 5e3,
-								kind: k.b.SuccessAward
+								kind: O.b.SuccessAward
 							})
 						}
 					}))
 				},
-				A = Object(a.a)(x);
-			t.default = e => o.a.createElement(A, y({
+				x = Object(a.a)(y);
+			t.default = e => o.a.createElement(x, _({
 				withOverlay: !0,
-				className: _.a.modal
+				className: E.a.modal
 			}, e))
 		},
 		"./src/reddit/components/Marketplace/MarketplaceConfigProvider.tsx": function(e, t, r) {
@@ -411,4 +412,4 @@
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ShowcaseCollectionViewModal.0fe8bb4dfcefca436a72.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ShowcaseCollectionViewModal.fe2bf931f8d46115a961.js.map

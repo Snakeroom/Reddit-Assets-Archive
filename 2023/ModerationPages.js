@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.ddd44f93df4a8cf33d5b.js
-// Retrieved at 3/8/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.398cb09f4fed068a5c0e.js
+// Retrieved at 3/8/2023, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "ModQueuePages~reddit-components-MediumPost", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -2092,7 +2092,7 @@
 						gqlContext: r
 					} = s;
 					const o = n(),
-						i = Object(de.f)(o);
+						i = Object(de.e)(o);
 					let a = "";
 					i && (a = i.name);
 					const {
@@ -2164,7 +2164,7 @@
 									postId: o
 								}),
 								author: j,
-								subredditId: (null === (E = Object(de.f)(O)) || void 0 === E ? void 0 : E.id) || ""
+								subredditId: (null === (E = Object(de.e)(O)) || void 0 === E ? void 0 : E.id) || ""
 							}) : void 0
 						}));
 						const I = c.commentMode;
@@ -2182,7 +2182,7 @@
 									draftKey: A,
 									upload: w
 								})), t) {
-								const e = Object(de.j)(O);
+								const e = Object(de.i)(O);
 								Object(i.a)(!!e)
 							}
 							const s = Object(ce.G)(h(), {
@@ -2226,7 +2226,7 @@
 						draftKey: d,
 						formData: l,
 						editorMode: u
-					} = e, m = n(), p = Object(de.f)(m);
+					} = e, m = n(), p = Object(de.e)(m);
 					let b = "";
 					if (p && (b = p.name), H.d.enableToxicityWarning(m)) {
 						if (!(await M(r(), b, l, u))) return void t(Object(c.i)(Oe))
@@ -2293,7 +2293,7 @@
 								postId: x.postId
 							}),
 							author: y,
-							subredditId: (null === (l = Object(de.f)(v)) || void 0 === l ? void 0 : l.id) || "",
+							subredditId: (null === (l = Object(de.e)(v)) || void 0 === l ? void 0 : l.id) || "",
 							parentId: x.id
 						}) : void 0
 					})), E || r(Te({
@@ -2313,7 +2313,7 @@
 								depth: b + 1,
 								upload: k
 							})), t) {
-							const e = Object(de.j)(v);
+							const e = Object(de.i)(v);
 							Object(i.a)(!!e)
 						}
 					} else {
@@ -5074,7 +5074,7 @@
 						apiContext: s
 					} = n;
 					const r = t(),
-						o = Object(g.e)(r);
+						o = Object(g.d)(r);
 					if (!o) return;
 					const i = r.externalAccount.api.subreddit.fetched[o],
 						a = r.externalAccount.api.subreddit.pending[o];
@@ -8042,7 +8042,7 @@
 						if (Object(me.e)(W, {
 								pageName: q
 							}) || s && !r) return;
-						if (!Object(pe.q)(W)) {
+						if (!Object(pe.p)(W)) {
 							const s = Object(_.e)(e, q, {
 								...j,
 								subreddit: A
@@ -8932,10 +8932,10 @@
 				ee = n("./src/reddit/selectors/user.ts");
 			const te = () => async (e, t, n) => {
 				const s = t(),
-					r = Object($.f)(s);
+					r = Object($.e)(s);
 				if (!r || r.type !== Y.g.Public) return;
 				const o = r.name,
-					i = Object($.n)(s),
+					i = Object($.m)(s),
 					a = Object(H.z)(s, {
 						subredditName: o
 					});
@@ -9268,7 +9268,7 @@
 				$e.layout = le.e[Object(ue.U)(Le, {})], Je && ($e.forceGeopopular = !0), i(It({
 					key: e
 				}));
-				const et = !Ye && Object($.m)(Le) && Object(He.b)(Le),
+				const et = !Ye && Object($.l)(Le) && Object(He.b)(Le),
 					tt = Je && (Object(ft.a)(Le) || Object(ft.b)(Le)),
 					rt = Je && vt(Le);
 				let dt, ct;
@@ -12700,7 +12700,7 @@
 					const {
 						name: p,
 						isProfile: b
-					} = e, v = Object(h.f)(a), x = v && !b && Object(u.a)(v.name, p), O = a.creations.api.subreddit.change.pending;
+					} = e, v = Object(h.e)(a), x = v && !b && Object(u.a)(v.name, p), O = a.creations.api.subreddit.change.pending;
 					if (x || O) return;
 					const C = Object(l.x)(t);
 					if (!p) return void n(y(e, C));
@@ -13858,7 +13858,7 @@
 												comment: e,
 												parentId: m
 											},
-											n = Object(Z.g)(l),
+											n = Object(Z.f)(l),
 											s = l.platform.currentPage && l.platform.currentPage.routeMatch;
 										let r = n && s && Object(q.a)(s, l, l.posts.models[e.postId]);
 										if (r || (r = Object(k.a)(e.postId, null, {
@@ -25904,7 +25904,7 @@
 						checkIfDismissed: s
 					} = e;
 					const r = h(),
-						i = Object(o.e)(m.d),
+						i = Object(o.e)(m.c),
 						[a, c] = Object(l.a)(d.b.MODMAIL_HARASSMENT_CAMPAIGN_STORE, {}),
 						b = Object(o.e)(e => Object(p.Z)(e, i)),
 						f = Object(u.a)(),
@@ -29533,7 +29533,7 @@
 				user: L.m,
 				isPrivateSubredditContributorRequestPending: e => (e => {
 					if (!Object(L.S)(e)) return !1;
-					const t = Object(R.e)(e);
+					const t = Object(R.d)(e);
 					if (!t) return !1;
 					const n = Object(L.h)(e, t);
 					if (!n) return !1;
@@ -34093,7 +34093,7 @@
 						let {
 							subredditId: n
 						} = t;
-						const s = Object(A.f)(e),
+						const s = Object(A.e)(e),
 							r = n || s && Object(v.I)(e, s.name);
 						return !!r && Object(p.i)(e, r)
 					},
@@ -42073,7 +42073,7 @@
 			const v = Object(l.a)(m.a),
 				x = "ModProgressModule--ModWelcomeTooltip";
 			t.default = Object(d.a)(e => {
-				const t = Object(i.e)(f.e),
+				const t = Object(i.e)(f.d),
 					n = x,
 					d = Object(i.d)(),
 					l = e => {
@@ -48851,7 +48851,7 @@
 					let {
 						pageLayer: n
 					} = t;
-					return n && Object(p.o)(e, {
+					return n && Object(p.n)(e, {
 						page: n
 					})
 				}, (e, t) => {
@@ -57474,7 +57474,7 @@
 					pageLayer: b
 				})), H = Object(i.e)(e => Object(f.s)(e, {
 					pageLayer: b
-				})), G = Object(i.e)(e => Object(y.j)(e));
+				})), G = Object(i.e)(e => Object(y.i)(e));
 				var Q, W, z;
 
 				function q() {
@@ -58900,7 +58900,7 @@
 						recentPostIds: h,
 						sort: y,
 						t: j
-					} = n, I = Object(A.bb)(e), k = Object(O.r)(e), _ = Object(o.a)(t), S = Object(i.a)(t), w = Object(C.W)(e, {
+					} = n, I = Object(A.bb)(e), k = Object(O.q)(e), _ = Object(o.a)(t), S = Object(i.a)(t), w = Object(C.W)(e, {
 						subredditId: Object(C.I)(e, t)
 					}).length > 0, T = Object(A.q)(e), P = Object(A.pb)(e), {
 						adsSeenCount: N,
@@ -62500,7 +62500,7 @@
 				l = n("./src/telemetry/index.ts"),
 				u = n("./src/reddit/constants/richTextJson.ts");
 			const m = e => {
-					const t = Object(d.p)(e);
+					const t = Object(d.o)(e);
 					return {
 						source: "comment_composer",
 						action: r.c.CLICK,
@@ -64405,7 +64405,7 @@
 					subreddit: a.lb(e)
 				}),
 				c = (e, t, n) => s => ({
-					source: Object(i.j)(s) || n ? "post_lightbox" : "post_detail",
+					source: Object(i.i)(s) || n ? "post_lightbox" : "post_detail",
 					action: "click",
 					noun: t,
 					...d(s),
@@ -64430,7 +64430,7 @@
 				u = (e, t) => n => {
 					const s = a.k(n);
 					return s ? c(s.id, e, t)(n) : {
-						source: Object(i.j)(n) || t ? "post_lightbox" : "post_detail",
+						source: Object(i.i)(n) || t ? "post_lightbox" : "post_detail",
 						action: "click",
 						noun: e,
 						...d(n)
@@ -65608,7 +65608,7 @@
 					noun: r.collectionCancel
 				}),
 				O = () => e => {
-					const t = Object(a.p)(e) || void 0;
+					const t = Object(a.o)(e) || void 0;
 					return {
 						...m(e, t),
 						source: s.collectionComposer,
@@ -65644,7 +65644,7 @@
 					noun: r.startEvent
 				}),
 				I = () => e => {
-					const t = Object(a.p)(e) || void 0;
+					const t = Object(a.o)(e) || void 0;
 					return {
 						...m(e, t),
 						source: s.collectionComposer,
@@ -66202,18 +66202,18 @@
 					postEvent: E(e)
 				}),
 				g = e => t => ({
-					...y(t, Object(c.p)(t)),
+					...y(t, Object(c.o)(t)),
 					source: s.postComposer,
 					noun: "apply",
 					postComposer: C(e)
 				}),
 				v = () => e => ({
-					...y(e, Object(c.p)(e)),
+					...y(e, Object(c.o)(e)),
 					noun: "cancel",
 					actionInfo: p(e)
 				}),
 				x = e => t => ({
-					...y(t, Object(c.p)(t)),
+					...y(t, Object(c.o)(t)),
 					noun: "delete",
 					actionInfo: p(t),
 					postComposer: O(t),
@@ -77230,7 +77230,7 @@
 			var r = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts"),
 				i = n("./src/reddit/selectors/platform.ts");
-			const a = Object(s.a)(i.d, e => "t5_7bf0ce" === e),
+			const a = Object(s.a)(i.c, e => "t5_7bf0ce" === e),
 				d = Object(o.a)(r.Vb),
 				c = Object(s.a)(a, d, (e, t) => e && t)
 		},
@@ -77538,7 +77538,7 @@
 				p = n("./src/reddit/selectors/user.ts");
 			const b = e => e.subreddits.progressModule,
 				f = e => {
-					const t = Object(u.d)(e);
+					const t = Object(u.c)(e);
 					if (!t) return;
 					if (!Object(l.n)(e, {
 							subredditId: t
@@ -78885,7 +78885,7 @@
 				b = n("./src/reddit/selectors/platform.ts"),
 				f = n("./src/reddit/selectors/user.ts");
 			const h = e => {
-					const t = Object(b.r)(e);
+					const t = Object(b.q)(e);
 					return Boolean((null == t ? void 0 : t[a.C]) && Object(s.a)(t[a.C]))
 				},
 				g = e => e.onboarding.shouldSkipOnboardingState,
@@ -80369,4 +80369,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.ddd44f93df4a8cf33d5b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.398cb09f4fed068a5c0e.js.map

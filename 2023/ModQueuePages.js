@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.e4b4c644339b084cb20c.js
-// Retrieved at 3/8/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.4d4d972d751f45886541.js
+// Retrieved at 3/8/2023, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3680,7 +3680,7 @@
 						checkIfDismissed: s
 					} = e;
 					const o = f(),
-						a = Object(r.e)(u.d),
+						a = Object(r.e)(u.c),
 						[i, c] = Object(l.a)(d.b.MODMAIL_HARASSMENT_CAMPAIGN_STORE, {}),
 						A = Object(r.e)(e => Object(p.Z)(e, a)),
 						b = Object(m.a)(),
@@ -10182,4 +10182,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.e4b4c644339b084cb20c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.4d4d972d751f45886541.js.map

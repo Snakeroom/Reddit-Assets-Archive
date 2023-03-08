@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.db8bd3d552d5d484165a.js
-// Retrieved at 3/8/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.935e812efe2b3a3afd0a.js
+// Retrieved at 3/8/2023, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -379,7 +379,7 @@
 				re = s("./src/reddit/selectors/isModeratorOfSubreddit.ts"),
 				oe = s("./src/reddit/selectors/platform.ts"),
 				ae = s("./src/reddit/selectors/removedPosts.ts");
-			const ie = Object(te.a)(oe.g, ne.a, ae.a, ae.c, re.a, ae.e, re.b, (e, t, s, n, r, o, a) => {
+			const ie = Object(te.a)(oe.f, ne.a, ae.a, ae.c, re.a, ae.e, re.b, (e, t, s, n, r, o, a) => {
 				if (!e || !t || r) return !1;
 				if (n) return !0;
 				const i = o || a,
@@ -721,7 +721,7 @@
 						};
 					return i ? (l.listingBelow = a || n, l.postFeed = l.listingBelow) : c ? l.nsfwListingBelow = !0 : l.postFeed = (a || n) && (!Object(J.i)(o) && !Object($e.d)(t, {
 						postId: s
-					}) && !!o || !Object(oe.j)(t) && Object(ee.e)(t)), e && (l.postQASchema = Object(ee.d)(t)), d && (l.listingBelow = !0), l
+					}) && !!o || !Object(oe.i)(t) && Object(ee.e)(t)), e && (l.postQASchema = Object(ee.d)(t)), d && (l.listingBelow = !0), l
 				},
 				_t = (e, t) => e || t.postFeed || t.listingBelow || t.nsfwListingBelow || t.postQASchema,
 				It = e => ({
@@ -781,7 +781,7 @@
 								name: "subredditCustomEmojisRequested",
 								page: _,
 								isLoggedIn: U
-							})]), !Object(oe.j)(N)) {
+							})]), !Object(oe.i)(N)) {
 							Object(bt.a)(N) && t(Object(V.b)(e))
 						}
 						Object(de.i)(N, e) && await t(Object(x.c)(g))
@@ -927,7 +927,7 @@
 							V = r || D && (null == A ? void 0 : A.discussionType) === P.b.Chat;
 						if ((y || f && !j) && !F) {
 							if (f && !p.sidebarPromotedPosts.firstFetch) {
-								const e = Object(oe.j)(p) ? fe.a.COMMENTS_OVERLAY : fe.a.COMMENTS;
+								const e = Object(oe.i)(p) ? fe.a.COMMENTS_OVERLAY : fe.a.COMMENTS;
 								window.addEventListener("load", () => {
 									o(Object(be.b)(e))
 								})
@@ -1079,7 +1079,7 @@
 							n && te.body.comments && Object.keys(te.body.comments).length < n.numComments ? o(Lt(e, t, s)) : te.ok && o(Tt({
 								key: b
 							}));
-							const r = Object(oe.j)(p) ? fe.a.COMMENTS_OVERLAY : fe.a.COMMENTS;
+							const r = Object(oe.i)(p) ? fe.a.COMMENTS_OVERLAY : fe.a.COMMENTS;
 							o(Object(be.b)(r))
 						}
 						if (te.ok) {
@@ -5065,7 +5065,7 @@
 							})),
 							p = Object(i.e)(e => Object(W.m)(e)),
 							b = Object(i.e)(W.H),
-							h = Object(i.e)(e => Object(ke.j)(e)),
+							h = Object(i.e)(e => Object(ke.i)(e)),
 							g = Object(i.e)(e => (null == m ? void 0 : m.postId) && Object(He.F)(e, {
 								postId: null == m ? void 0 : m.postId
 							})),
@@ -5209,7 +5209,7 @@
 						apiPending: T,
 						loadMore: L
 					} = Object(i.e)(t => I(t, e)),
-					R = !!Object(i.e)(e => Object(ke.j)(e)),
+					R = !!Object(i.e)(e => Object(ke.i)(e)),
 					F = j ? Pt : g.length,
 					M = j ? Pt : 10,
 					B = Object(l.a)(R),
@@ -7312,7 +7312,7 @@
 					postIds: H.z,
 					posts: H.y,
 					loadMore: Ee.g,
-					isOverlayOpen: Se.j
+					isOverlayOpen: Se.i
 				});
 
 			function Ye(e) {
@@ -7917,7 +7917,7 @@
 							listingKey: s
 						})
 					},
-					currentSubreddit: Se.f,
+					currentSubreddit: Se.e,
 					isLoggedIn: z.S,
 					hasCommunityResults: (e, t) => {
 						let {
@@ -8949,4 +8949,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.db8bd3d552d5d484165a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.935e812efe2b3a3afd0a.js.map

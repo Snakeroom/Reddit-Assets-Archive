@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.0bb58d37d8787fe4ce5b.js
-// Retrieved at 3/8/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.47c5adc24aceabb00da6.js
+// Retrieved at 3/8/2023, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit~StandalonePostPage", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -965,7 +965,7 @@
 						gqlContext: r
 					} = o;
 					const s = n(),
-						i = Object(ce.f)(s);
+						i = Object(ce.e)(s);
 					let a = "";
 					i && (a = i.name);
 					const {
@@ -1037,7 +1037,7 @@
 									postId: s
 								}),
 								author: k,
-								subredditId: (null === (E = Object(ce.f)(x)) || void 0 === E ? void 0 : E.id) || ""
+								subredditId: (null === (E = Object(ce.e)(x)) || void 0 === E ? void 0 : E.id) || ""
 							}) : void 0
 						}));
 						const j = d.commentMode;
@@ -1055,7 +1055,7 @@
 									draftKey: O,
 									upload: I
 								})), t) {
-								const e = Object(ce.j)(x);
+								const e = Object(ce.i)(x);
 								Object(i.a)(!!e)
 							}
 							const o = Object(de.G)(f(), {
@@ -1099,7 +1099,7 @@
 						draftKey: c,
 						formData: l,
 						editorMode: u
-					} = e, m = n(), p = Object(ce.f)(m);
+					} = e, m = n(), p = Object(ce.e)(m);
 					let h = "";
 					if (p && (h = p.name), K.d.enableToxicityWarning(m)) {
 						if (!(await R(r(), h, l, u))) return void t(Object(d.i)(xe))
@@ -1166,7 +1166,7 @@
 								postId: C.postId
 							}),
 							author: _,
-							subredditId: (null === (l = Object(ce.f)(v)) || void 0 === l ? void 0 : l.id) || "",
+							subredditId: (null === (l = Object(ce.e)(v)) || void 0 === l ? void 0 : l.id) || "",
 							parentId: C.id
 						}) : void 0
 					})), E || r(Pe({
@@ -1186,7 +1186,7 @@
 								depth: h + 1,
 								upload: S
 							})), t) {
-							const e = Object(ce.j)(v);
+							const e = Object(ce.i)(v);
 							Object(i.a)(!!e)
 						}
 					} else {
@@ -12918,7 +12918,7 @@
 			const b = c.a.wrapped(d.a, "Banner", h.a),
 				f = Object(i.b)(() => Object(a.c)({
 					restrictions: m.q,
-					subreddit: u.f
+					subreddit: u.e
 				}));
 			t.a = f(e => {
 				let {
@@ -23010,7 +23010,7 @@
 					pageLayer: h
 				})), K = Object(i.e)(e => Object(b.s)(e, {
 					pageLayer: h
-				})), W = Object(i.e)(e => Object(_.j)(e));
+				})), W = Object(i.e)(e => Object(_.i)(e));
 				var H, G, z;
 
 				function q() {
@@ -24278,7 +24278,7 @@
 						includeUserProfile: o,
 						substring: r.rawString
 					})
-				}, e => Object(Y.rb)(e) && Object(V.k)(e), (e, t, n) => {
+				}, e => Object(Y.rb)(e) && Object(V.j)(e), (e, t, n) => {
 					const {
 						suggestedItems: o,
 						fallbackItems: r,
@@ -26732,7 +26732,7 @@
 				l = n("./src/telemetry/index.ts"),
 				u = n("./src/reddit/constants/richTextJson.ts");
 			const m = e => {
-					const t = Object(c.p)(e);
+					const t = Object(c.o)(e);
 					return {
 						source: "comment_composer",
 						action: r.c.CLICK,
@@ -27909,7 +27909,7 @@
 					noun: r.collectionCancel
 				}),
 				x = () => e => {
-					const t = Object(a.p)(e) || void 0;
+					const t = Object(a.o)(e) || void 0;
 					return {
 						...m(e, t),
 						source: o.collectionComposer,
@@ -27945,7 +27945,7 @@
 					noun: r.startEvent
 				}),
 				j = () => e => {
-					const t = Object(a.p)(e) || void 0;
+					const t = Object(a.o)(e) || void 0;
 					return {
 						...m(e, t),
 						source: o.collectionComposer,
@@ -28014,18 +28014,18 @@
 					postEvent: E(e)
 				}),
 				g = e => t => ({
-					..._(t, Object(d.p)(t)),
+					..._(t, Object(d.o)(t)),
 					source: o.postComposer,
 					noun: "apply",
 					postComposer: y(e)
 				}),
 				v = () => e => ({
-					..._(e, Object(d.p)(e)),
+					..._(e, Object(d.o)(e)),
 					noun: "cancel",
 					actionInfo: p(e)
 				}),
 				C = e => t => ({
-					..._(t, Object(d.p)(t)),
+					..._(t, Object(d.o)(t)),
 					noun: "delete",
 					actionInfo: p(t),
 					postComposer: x(t),
@@ -35339,7 +35339,7 @@
 					name: n,
 					onChange: o
 				} = e;
-				const i = Object(s.e)(Z.f),
+				const i = Object(s.e)(Z.e),
 					a = (null == i ? void 0 : i.displayText) ? `${i.displayText} Predictions Tournament` : "Predictions Tournament";
 				return r.a.createElement("div", {
 					className: al.a.wrapper
@@ -40211,4 +40211,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.0bb58d37d8787fe4ce5b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.47c5adc24aceabb00da6.js.map

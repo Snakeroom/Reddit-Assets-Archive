@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModQueueActivitySummaryCards-ModActivityPreview.77b9724f3f595897c5da.js
-// Retrieved at 3/6/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModQueueActivitySummaryCards-ModActivityPreview.f9f2c9d6320c537efbd1.js
+// Retrieved at 3/8/2023, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModQueueActivitySummaryCards-ModActivityPreview"], {
 		"./src/reddit/components/ModQueueActivitySummaryCards/ModActivityPreview.tsx": function(e, t, o) {
@@ -11,8 +11,8 @@
 				i = o("./src/lib/constants/index.ts"),
 				l = o("./node_modules/react/index.js"),
 				r = o.n(l),
-				d = o("./node_modules/react-redux/es/index.js"),
-				s = o("./src/reddit/actions/tooltip.ts"),
+				s = o("./node_modules/react-redux/es/index.js"),
+				d = o("./src/reddit/actions/tooltip.ts"),
 				c = o("./src/reddit/components/UserIcon/index.tsx"),
 				m = o("./src/reddit/controls/Dropdown/index.tsx"),
 				u = o("./src/reddit/helpers/graphql/helpers.ts"),
@@ -36,7 +36,7 @@
 						modInfo: o
 					} = e;
 					var n, i, l;
-					const d = (null == o ? void 0 : o.displayName) || (null == o ? void 0 : o.name);
+					const s = (null == o ? void 0 : o.displayName) || (null == o ? void 0 : o.name);
 					return r.a.createElement("div", {
 						className: Object(a.a)(y.a.modRow, "hover:bg-neutral-background-hover"),
 						onClick: e => {
@@ -44,7 +44,7 @@
 						}
 					}, r.a.createElement(c.a, {
 						className: y.a.modIcon,
-						userName: d || "",
+						userName: s || "",
 						iconUrl: null === (n = null == o ? void 0 : o.icon) || void 0 === n ? void 0 : n.url,
 						isNSFW: !!(null === (i = null == o ? void 0 : o.profile) || void 0 === i ? void 0 : i.isNsfw),
 						style: {
@@ -55,7 +55,7 @@
 						className: y.a.subredditRowText
 					}, r.a.createElement("div", {
 						className: Object(a.a)(y.a.username, "text-neutral-content-strong")
-					}, d), r.a.createElement("div", {
+					}, s), r.a.createElement("div", {
 						className: Object(a.a)(y.a.detailText, "text-neutral-content-weak")
 					}, t && r.a.createElement(r.a.Fragment, null, Object(w.a)(t.action, null === (l = t.target) || void 0 === l ? void 0 : l.__typename), " ", Object(A.d)(Object(u.g)(t.createdAt) / 1e3)))))
 				},
@@ -123,9 +123,9 @@
 				T = e => e ? Object.keys(e).sort((t, o) => ((e, t, o) => {
 					var n, a, i, l;
 					const r = null === (a = null === (n = o[e]) || void 0 === n ? void 0 : n.lastModAction) || void 0 === a ? void 0 : a.createdAt,
-						d = null === (l = null === (i = o[t]) || void 0 === i ? void 0 : i.lastModAction) || void 0 === l ? void 0 : l.createdAt,
-						s = Object(u.g)(r || "");
-					return Object(u.g)(d || "") - s
+						s = null === (l = null === (i = o[t]) || void 0 === i ? void 0 : i.lastModAction) || void 0 === l ? void 0 : l.createdAt,
+						d = Object(u.g)(r || "");
+					return Object(u.g)(s || "") - d
 				})(t, o, e)).filter(t => {
 					var o, n;
 					return (new Date).getTime() - Object(u.g)((null === (n = null === (o = e[t]) || void 0 === o ? void 0 : o.lastModAction) || void 0 === n ? void 0 : n.createdAt) || "") < 15 * i.qb
@@ -138,12 +138,12 @@
 					isModqueue: i
 				} = e;
 				var m;
-				const u = Object(d.e)(g.d),
+				const u = Object(s.e)(g.c),
 					O = o || u,
-					j = Object(d.e)(e => Object(h.h)(e, {
+					j = Object(s.e)(e => Object(h.h)(e, {
 						subredditId: O || ""
 					})) || "",
-					x = Object(d.e)(e => {
+					x = Object(s.e)(e => {
 						var t;
 						return (null === (t = null == e ? void 0 : e.features) || void 0 === t ? void 0 : t.modActivitySummaries[O || ""]) || {}
 					}),
@@ -153,16 +153,16 @@
 					w = Object(l.useCallback)(e => T(e), [])(A),
 					f = 0 === w.length && j ? null === (m = null == x ? void 0 : x.sub) || void 0 === m ? void 0 : m.lastModAction : void 0,
 					E = (e => `mod_activity_tooltip_id-${e}`)(j || ""),
-					k = Object(d.d)(),
+					k = Object(s.d)(),
 					M = Object(b.a)(),
 					R = Object(l.useCallback)(e => {
-						e.stopPropagation(), e.preventDefault(), k(Object(s.h)({
+						e.stopPropagation(), e.preventDefault(), k(Object(d.h)({
 							tooltipId: E
 						})), M(Object(v.a)(!!i, j))
 					}, [k, E, M, j, i]),
-					S = Object(d.e)(e => Object(_.b)(E)(e)),
-					I = Object(d.e)(p.c),
-					L = Object(d.e)(N.m),
+					S = Object(s.e)(e => Object(_.b)(E)(e)),
+					I = Object(s.e)(p.c),
+					L = Object(s.e)(N.m),
 					P = n || 5;
 				return r.a.createElement("div", {
 					className: Object(a.a)(y.a.preview, t),
@@ -170,7 +170,7 @@
 					onClick: R,
 					"data-testid": "mod-activity-preview"
 				}, A && w.length > 0 ? w.slice(0, P).map((e, t) => {
-					var o, n, i, l, d, s, m, u, v, b;
+					var o, n, i, l, s, d, m, u, v, b;
 					return r.a.createElement(c.a, {
 						className: Object(a.a)(y.a.userIcon, {
 							[y.a.noMargin]: t === w.length - 1 && !(t === P - 1 && w.length > P)
@@ -181,7 +181,7 @@
 						},
 						key: null === (n = null === (o = A[e]) || void 0 === o ? void 0 : o.info) || void 0 === n ? void 0 : n.displayName,
 						userName: (null === (l = null === (i = A[e]) || void 0 === i ? void 0 : i.info) || void 0 === l ? void 0 : l.displayName) || "",
-						iconUrl: null === (m = null === (s = null === (d = A[e]) || void 0 === d ? void 0 : d.info) || void 0 === s ? void 0 : s.icon) || void 0 === m ? void 0 : m.url,
+						iconUrl: null === (m = null === (d = null === (s = A[e]) || void 0 === s ? void 0 : s.info) || void 0 === d ? void 0 : d.icon) || void 0 === m ? void 0 : m.url,
 						isNSFW: !!(null === (b = null === (v = null === (u = A[e]) || void 0 === u ? void 0 : u.info) || void 0 === v ? void 0 : v.profile) || void 0 === b ? void 0 : b.isNsfw)
 					})
 				}) : I ? null : r.a.createElement(c.a, {
@@ -243,4 +243,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModQueueActivitySummaryCards-ModActivityPreview.77b9724f3f595897c5da.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModQueueActivitySummaryCards-ModActivityPreview.f9f2c9d6320c537efbd1.js.map

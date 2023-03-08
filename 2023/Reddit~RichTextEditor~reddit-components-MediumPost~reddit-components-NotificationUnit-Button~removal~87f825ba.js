@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.87bdfeef4bc78a649c11.js
-// Retrieved at 3/7/2023, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.b75312d96823dc626327.js
+// Retrieved at 3/8/2023, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba"], {
 		"./src/lib/scroll/index.ts": function(e, t, o) {
@@ -271,7 +271,7 @@
 						gqlContext: r
 					} = n;
 					const s = o(),
-						c = Object(ae.f)(s);
+						c = Object(ae.e)(s);
 					let i = "";
 					c && (i = c.name);
 					const {
@@ -343,7 +343,7 @@
 									postId: s
 								}),
 								author: v,
-								subredditId: (null === (x = Object(ae.f)(C)) || void 0 === x ? void 0 : x.id) || ""
+								subredditId: (null === (x = Object(ae.e)(C)) || void 0 === x ? void 0 : x.id) || ""
 							}) : void 0
 						}));
 						const k = d.commentMode;
@@ -361,7 +361,7 @@
 									draftKey: S,
 									upload: I
 								})), t) {
-								const e = Object(ae.j)(C);
+								const e = Object(ae.i)(C);
 								Object(c.a)(!!e)
 							}
 							const n = Object(de.G)(O(), {
@@ -405,7 +405,7 @@
 						draftKey: a,
 						formData: l,
 						editorMode: m
-					} = e, u = o(), p = Object(ae.f)(u);
+					} = e, u = o(), p = Object(ae.e)(u);
 					let b = "";
 					if (p && (b = p.name), H.d.enableToxicityWarning(u)) {
 						if (!(await R(r(), b, l, m))) return void t(Object(d.i)(Ce))
@@ -472,7 +472,7 @@
 								postId: j.postId
 							}),
 							author: _,
-							subredditId: (null === (l = Object(ae.f)(g)) || void 0 === l ? void 0 : l.id) || "",
+							subredditId: (null === (l = Object(ae.e)(g)) || void 0 === l ? void 0 : l.id) || "",
 							parentId: j.id
 						}) : void 0
 					})), x || r(Me({
@@ -492,7 +492,7 @@
 								depth: b + 1,
 								upload: w
 							})), t) {
-							const e = Object(ae.j)(g);
+							const e = Object(ae.i)(g);
 							Object(c.a)(!!e)
 						}
 					} else {
@@ -1601,7 +1601,7 @@
 					pageLayer: b
 				})), H = Object(c.e)(e => Object(h.s)(e, {
 					pageLayer: b
-				})), U = Object(c.e)(e => Object(_.j)(e));
+				})), U = Object(c.e)(e => Object(_.i)(e));
 				var G, W, q;
 
 				function J() {
@@ -1906,7 +1906,7 @@
 				l = o("./src/telemetry/index.ts"),
 				m = o("./src/reddit/constants/richTextJson.ts");
 			const u = e => {
-					const t = Object(a.p)(e);
+					const t = Object(a.o)(e);
 					return {
 						source: "comment_composer",
 						action: r.c.CLICK,
@@ -2137,4 +2137,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.87bdfeef4bc78a649c11.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.b75312d96823dc626327.js.map
