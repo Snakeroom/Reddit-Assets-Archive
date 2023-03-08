@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.f649533905ae595bf871.js
-// Retrieved at 3/7/2023, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.ddd44f93df4a8cf33d5b.js
+// Retrieved at 3/8/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "ModQueuePages~reddit-components-MediumPost", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -4284,7 +4284,7 @@
 							isStartImmediately: !0,
 							subredditId: e,
 							predictionDrafts: c,
-							currency: b.X.Tokens,
+							currency: b.Y.Tokens,
 							tokenIcon: l
 						}),
 						m = Object(j.a)(u);
@@ -17349,19 +17349,19 @@
 				},
 				A = e => e ? O.indexOf(e) : 0,
 				y = e => {
-					if (e) return Object.values(h.V).find(t => t === (null == e ? void 0 : e.toUpperCase()))
+					if (e) return Object.values(h.W).find(t => t === (null == e ? void 0 : e.toUpperCase()))
 				},
 				j = e => {
 					if (e) return Object.values(h.i).find(t => t === (null == e ? void 0 : e.toUpperCase()))
 				},
 				I = e => {
-					if (e) return Object.values(h.db).find(t => t === (null == e ? void 0 : e.toUpperCase()))
+					if (e) return Object.values(h.eb).find(t => t === (null == e ? void 0 : e.toUpperCase()))
 				},
 				k = e => {
-					if (e) return e > 0 ? h.Y.Enabled : h.Y.Disabled
+					if (e) return e > 0 ? h.Z.Enabled : h.Z.Disabled
 				},
 				_ = e => {
-					if (e) return e === h.Y.Enabled ? 1 : 0
+					if (e) return e === h.Z.Enabled ? 1 : 0
 				},
 				S = e => {
 					let {
@@ -26071,24 +26071,24 @@
 					})
 				},
 				g = {
-					[r.V.Low]: s.fbt._("Low", null, {
+					[r.W.Low]: s.fbt._("Low", null, {
 						hk: "4k3iTe"
 					}),
-					[r.V.High]: s.fbt._("High (default)", null, {
+					[r.W.High]: s.fbt._("High (default)", null, {
 						hk: "2GOHsH"
 					}),
-					[r.V.All]: s.fbt._("All", null, {
+					[r.W.All]: s.fbt._("All", null, {
 						hk: "gl6gc"
 					})
 				},
 				v = {
-					[r.V.Low]: s.fbt._("Low (default)", null, {
+					[r.W.Low]: s.fbt._("Low (default)", null, {
 						hk: "2tqJd7"
 					}),
-					[r.V.High]: s.fbt._("High", null, {
+					[r.W.High]: s.fbt._("High", null, {
 						hk: "ABfkc"
 					}),
-					[r.V.All]: s.fbt._("All", null, {
+					[r.W.All]: s.fbt._("All", null, {
 						hk: "3bPDOM"
 					})
 				},
@@ -27492,8 +27492,8 @@
 					} = t, S = Object(a.e)(Qe.b), w = Object(a.e)(Ge.c), P = Object(a.e)(Ge.a), N = Object(a.e)(e => ((e, t) => {
 						const n = t && e.subreddits.about[t];
 						return Boolean(n && n.isMediaInCommentsSettingShown)
-					})(e, d)), M = Object(He.a)(Ue.Df) === Ue.Pd, D = S && N, R = (null == g ? void 0 : g.allowedMediaTypes) || [], L = _, B = Object(o.useCallback)(() => s(!c, "archivePostsEnabled"), [c, s]), F = e => e.toUpperCase() === Q.V.All, U = e => {
-						const n = F(t[e]) ? Q.V.Low : Q.V.All;
+					})(e, d)), M = Object(He.a)(Ue.Df) === Ue.Pd, D = S && N, R = (null == g ? void 0 : g.allowedMediaTypes) || [], L = _, B = Object(o.useCallback)(() => s(!c, "archivePostsEnabled"), [c, s]), F = e => e.toUpperCase() === Q.W.All, U = e => {
+						const n = F(t[e]) ? Q.W.Low : Q.W.All;
 						s(n, e)
 					};
 					return i.a.createElement(k.a, null, i.a.createElement(j, null, i.a.createElement(k.b, null, z.fbt._("Post and Comment settings", null, {
@@ -80369,4 +80369,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.f649533905ae595bf871.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.ddd44f93df4a8cf33d5b.js.map

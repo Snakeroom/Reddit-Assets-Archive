@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.fc64927253ee0cf2997f.js
-// Retrieved at 3/7/2023, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.9888fd6848f643245c0e.js
+// Retrieved at 3/8/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1168,7 +1168,7 @@
 					const a = Object(c.d)(),
 						n = Object(c.f)(),
 						o = Object(r.useMemo)(() => ({
-							experience: m.bb.AnnouncementInFeed,
+							experience: m.cb.AnnouncementInFeed,
 							uxVariant: {
 								variantId: e
 							}
@@ -1194,7 +1194,7 @@
 				b = (e, t) => {
 					const a = Object(c.f)(),
 						n = Object(r.useMemo)(() => ({
-							experience: m.bb.AnnouncementInFeed,
+							experience: m.cb.AnnouncementInFeed,
 							uxVariant: {
 								variantId: e
 							}
@@ -1221,7 +1221,7 @@
 						Object(l.a)(d(a, e, t, "view"))
 					})(e, t, n());
 					const o = {
-						experience: m.bb.AnnouncementInFeed,
+						experience: m.cb.AnnouncementInFeed,
 						uxVariant: {
 							variantId: e
 						}
@@ -5950,4 +5950,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.fc64927253ee0cf2997f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.9888fd6848f643245c0e.js.map

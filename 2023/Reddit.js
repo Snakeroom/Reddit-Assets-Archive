@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.8901f5e5915dee23c0df.js
-// Retrieved at 3/7/2023, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.942f20c21ea09ea19e6b.js
+// Retrieved at 3/8/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -9,26 +9,27 @@
 		"./src/chat/endpoints/matrixChat/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return i
-			})), n.d(t, "a", (function() {
 				return c
+			})), n.d(t, "a", (function() {
+				return l
 			}));
 			var s = n("./src/lib/makeGqlRequest/index.ts"),
 				r = n("./src/lib/makeRequest/index.ts"),
 				o = n("./src/redditGQL/operations/DirectChatRoom.json"),
-				a = n("./src/redditGQL/operations/MatrixChatNotifications.json");
-			const i = async e => {
+				a = n("./src/redditGQL/operations/MatrixChatNotifications.json"),
+				i = n("./src/redditGQL/types.ts");
+			const c = async e => {
 				var t, n, o, i, c, l, d, u;
 				const m = await Object(s.a)(e, a);
 				if (Object(r.c)(m) && !m.error && void 0 !== (null === (i = null === (o = null === (n = null === (t = null == m ? void 0 : m.body) || void 0 === t ? void 0 : t.data) || void 0 === n ? void 0 : n.identity) || void 0 === o ? void 0 : o.matrixNotifications) || void 0 === i ? void 0 : i.unreadCount)) return null === (u = null === (d = null === (l = null === (c = null == m ? void 0 : m.body) || void 0 === c ? void 0 : c.data) || void 0 === l ? void 0 : l.identity) || void 0 === d ? void 0 : d.matrixNotifications) || void 0 === u ? void 0 : u.unreadCount
-			}, c = async (e, t) => {
+			}, l = async (e, t) => {
 				const n = await Object(s.a)(e, {
 					...o,
 					variables: t
 				});
 				if (!Object(r.c)(n)) return null;
 				const a = n.body.data.directChatRoom;
-				return a ? a.id : null
+				return (null == a ? void 0 : a.replicationInfo) && a.replicationInfo.status !== i.T.Main ? null : a ? a.id : null
 			}
 		},
 		"./src/lib/activeUserCountByLiveChatId/utils.ts": function(e, t, n) {
@@ -14797,7 +14798,7 @@
 					l = Object(xe.e)(Am.b),
 					d = Object(ki.a)(),
 					p = null === (o = Object(xe.e)(e => Object(Rm.a)(e, {
-						experience: Lm.bb.LiveChatVideoEdu
+						experience: Lm.cb.LiveChatVideoEdu
 					}))) || void 0 === o ? void 0 : o.value,
 					b = Object(u.useMemo)(() => l === Tm.b.IS_SHOWING, [l]),
 					h = Object(u.useMemo)(() => b ? (e => ({
@@ -21263,7 +21264,7 @@
 			e.exports = JSON.parse('{"id":"7264b2ee2ded"}')
 		},
 		"./src/redditGQL/operations/DirectChatRoom.json": function(e) {
-			e.exports = JSON.parse('{"id":"0c87a9ea7e53"}')
+			e.exports = JSON.parse('{"id":"ee14c9f5e092"}')
 		},
 		"./src/redditGQL/operations/EconAdminPanelQuery.json": function(e) {
 			e.exports = JSON.parse('{"id":"d47c78bc4284"}')
@@ -21335,4 +21336,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.8901f5e5915dee23c0df.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.942f20c21ea09ea19e6b.js.map

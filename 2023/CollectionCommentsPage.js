@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.1989dfe00709733d4374.js
-// Retrieved at 3/7/2023, 3:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.eea3d86b94ea3731f57c.js
+// Retrieved at 3/8/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -4921,7 +4921,7 @@
 				var t;
 				return i.a.createElement("p", {
 					className: ft.a.VideoProcessingStatus
-				}, (null === (t = e.post.mediaStatus) || void 0 === t ? void 0 : t.transcodingStatus) === ut.Z.Error ? _t._("The video file submitted for this post failed to process successfully.", null, {
+				}, (null === (t = e.post.mediaStatus) || void 0 === t ? void 0 : t.transcodingStatus) === ut.ab.Error ? _t._("The video file submitted for this post failed to process successfully.", null, {
 					hk: "2ybSik"
 				}) : e.isAuthorCurrentUser ? _t._("Your video is processing. We'll send you a notification when it's done.", null, {
 					hk: "1rkfJE"
@@ -11400,4 +11400,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.1989dfe00709733d4374.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.eea3d86b94ea3731f57c.js.map

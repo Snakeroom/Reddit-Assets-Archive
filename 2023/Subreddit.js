@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.8cab34ef8e151e55e187.js
-// Retrieved at 3/7/2023, 3:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.8c0729a3ff531ae4b89c.js
+// Retrieved at 3/8/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -5469,24 +5469,24 @@
 					})
 				},
 				g = {
-					[s.V.Low]: r.fbt._("Low", null, {
+					[s.W.Low]: r.fbt._("Low", null, {
 						hk: "4k3iTe"
 					}),
-					[s.V.High]: r.fbt._("High (default)", null, {
+					[s.W.High]: r.fbt._("High (default)", null, {
 						hk: "2GOHsH"
 					}),
-					[s.V.All]: r.fbt._("All", null, {
+					[s.W.All]: r.fbt._("All", null, {
 						hk: "gl6gc"
 					})
 				},
 				_ = {
-					[s.V.Low]: r.fbt._("Low (default)", null, {
+					[s.W.Low]: r.fbt._("Low (default)", null, {
 						hk: "2tqJd7"
 					}),
-					[s.V.High]: r.fbt._("High", null, {
+					[s.W.High]: r.fbt._("High", null, {
 						hk: "ABfkc"
 					}),
-					[s.V.All]: r.fbt._("All", null, {
+					[s.W.All]: r.fbt._("All", null, {
 						hk: "3bPDOM"
 					})
 				},
@@ -25929,4 +25929,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.8cab34ef8e151e55e187.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.8c0729a3ff531ae4b89c.js.map

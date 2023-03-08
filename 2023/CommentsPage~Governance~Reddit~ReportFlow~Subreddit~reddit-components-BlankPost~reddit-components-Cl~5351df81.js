@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.f0ca76c83937af184ce3.js
-// Retrieved at 3/7/2023, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.357b8ec5c996b0274c20.js
+// Retrieved at 3/8/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"], {
 		"./src/lib/name/index.ts": function(e, t, r) {
@@ -1175,7 +1175,7 @@
 							isStartImmediately: !0,
 							subredditId: e,
 							predictionDrafts: a,
-							currency: p.X.Tokens,
+							currency: p.Y.Tokens,
 							tokenIcon: u
 						}),
 						b = Object(S.a)(l);
@@ -4473,19 +4473,19 @@
 				},
 				y = e => e ? v.indexOf(e) : 0,
 				T = e => {
-					if (e) return Object.values(O.V).find(t => t === (null == e ? void 0 : e.toUpperCase()))
+					if (e) return Object.values(O.W).find(t => t === (null == e ? void 0 : e.toUpperCase()))
 				},
 				S = e => {
 					if (e) return Object.values(O.i).find(t => t === (null == e ? void 0 : e.toUpperCase()))
 				},
 				E = e => {
-					if (e) return Object.values(O.db).find(t => t === (null == e ? void 0 : e.toUpperCase()))
+					if (e) return Object.values(O.eb).find(t => t === (null == e ? void 0 : e.toUpperCase()))
 				},
 				C = e => {
-					if (e) return e > 0 ? O.Y.Enabled : O.Y.Disabled
+					if (e) return e > 0 ? O.Z.Enabled : O.Z.Disabled
 				},
 				x = e => {
-					if (e) return e === O.Y.Enabled ? 1 : 0
+					if (e) return e === O.Z.Enabled ? 1 : 0
 				},
 				A = e => {
 					let {
@@ -11440,4 +11440,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.f0ca76c83937af184ce3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.357b8ec5c996b0274c20.js.map
