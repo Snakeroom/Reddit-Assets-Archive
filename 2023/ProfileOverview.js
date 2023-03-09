@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.ec94ee59c882357ddd17.js
-// Retrieved at 3/8/2023, 7:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.0207dd0cf39a86cc6cfc.js
+// Retrieved at 3/9/2023, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "ModQueuePages~reddit-components-MediumPost"], {
 		"./src/lib/LiveChatActiveUsers/index.m.less": function(e, t, s) {
@@ -8973,15 +8973,15 @@
 					})
 				}
 				componentDidMount() {
-					this.props.isProfileNSFW && !this.props.isOwnProfile && this.props.nsfwBlockingExperiment === zt.a.Blurred ? this.props.openNsfwModal() : this.props.isLoggedIn && this.props.isDisplayCollectiblesUrl && Object(C.a)().then(() => this.props.openShowcaseModal(this.props.profileName)), Object(Tt.a)({
-						sendEvent: this.props.sendEvent,
-						user: this.props.user,
-						pageType: "profile",
-						isDisplayCollectiblesEnabled: this.props.isDisplayCollectiblesEnabled
-					})
+					this.props.isProfileNSFW && !this.props.isOwnProfile && this.props.nsfwBlockingExperiment === zt.a.Blurred ? this.props.openNsfwModal() : this.props.isLoggedIn && this.props.isDisplayCollectiblesUrl && Object(C.a)().then(() => this.props.openShowcaseModal(this.props.profileName))
 				}
 				UNSAFE_componentWillUpdate(e) {
-					this.props.layout !== e.layout && e.onLayoutChange()
+					this.props.layout !== e.layout && e.onLayoutChange(), e.user && e.user !== this.props.user && Object(Tt.a)({
+						sendEvent: e.sendEvent,
+						user: e.user,
+						pageType: "profile",
+						isDisplayCollectiblesEnabled: e.isDisplayCollectiblesEnabled
+					})
 				}
 				render() {
 					const {
@@ -9303,4 +9303,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.ec94ee59c882357ddd17.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.0207dd0cf39a86cc6cfc.js.map
