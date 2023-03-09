@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.f6c64a6bcef23d0504d9.js
-// Retrieved at 3/8/2023, 6:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.9b4ce5410b21ec472934.js
+// Retrieved at 3/8/2023, 7:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, o) {
@@ -1178,7 +1178,7 @@
 						className: N.a.chatIcon
 					}))
 				},
-				g = e => {
+				y = e => {
 					let {
 						permalink: t,
 						sendEventWithName: o
@@ -1196,7 +1196,7 @@
 						className: N.a.embedIcon
 					}))
 				},
-				y = e => {
+				g = e => {
 					let {
 						onCrosspost: t
 					} = e;
@@ -1274,11 +1274,11 @@
 					}, r.a.createElement(O.a, {
 						name: "link_post",
 						className: N.a.linkIcon
-					})), R && r.a.createElement(y, {
+					})), R && r.a.createElement(g, {
 						onCrosspost: () => {
 							e.sendEventWithName("share_crosspost"), e.post && window.open(`${E.b}?source_id=${e.post.id}`, "_blank")
 						}
-					}), j && r.a.createElement(g, {
+					}), j && r.a.createElement(y, {
 						permalink: e.permalink,
 						sendEventWithName: e.sendEventWithName
 					}), I && r.a.createElement(M, {
@@ -2141,13 +2141,13 @@
 				c = o("./src/reddit/models/Post/index.ts"),
 				i = o("./src/reddit/selectors/posts.ts");
 			const d = e => Object(r.c)(e, {
-					experimentName: n.gf,
+					experimentName: n.ff,
 					experimentEligibilitySelector: r.a
 				}),
-				a = (e, t) => (t === n.nf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(c.A)(e),
+				a = (e, t) => (t === n.mf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(c.A)(e),
 				l = Object(s.a)(i.G, d, (e, t) => a(e, t));
 			Object(s.a)((e, t) => t, d, (e, t) => a(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.f6c64a6bcef23d0504d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.9b4ce5410b21ec472934.js.map

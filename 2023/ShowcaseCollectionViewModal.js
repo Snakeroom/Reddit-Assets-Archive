@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ShowcaseCollectionViewModal.cd3ef4757c0e7440783b.js
-// Retrieved at 3/8/2023, 6:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ShowcaseCollectionViewModal.5b3dfd5f36a34c63f876.js
+// Retrieved at 3/8/2023, 7:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ShowcaseCollectionViewModal"], {
 		"./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx": function(e, t, r) {
@@ -43,7 +43,7 @@
 							},
 							expiration: O
 						}), [f, O]),
-						x = {
+						y = {
 							...h,
 							STRIPE_API_KEY: n.a.stripe.apiKey(e),
 							STRIPE_API_VERSION: n.a.stripe.apiVersion(t),
@@ -53,7 +53,7 @@
 								NO_VAULT: !0
 							} : {}
 						},
-						y = Object(c.useCallback)(e => {
+						x = Object(c.useCallback)(e => {
 							j(t => {
 								const r = m.o(t);
 								return {
@@ -70,10 +70,10 @@
 						}, [j]);
 					return Object(c.useMemo)(() => ({
 						authHeaders: _,
-						config: x,
+						config: y,
 						isNightMode: k,
-						sendEvent: y
-					}), [_, x, k, y])
+						sendEvent: x
+					}), [_, y, k, x])
 				}
 		},
 		"./src/reddit/components/Econ/Marketplace/ShowcaseCollectionViewModal/index.m.less": function(e, t, r) {
@@ -85,7 +85,7 @@
 		"./src/reddit/components/Econ/Marketplace/ShowcaseCollectionViewModal/index.tsx": function(e, t, r) {
 			"use strict";
 			r.r(t), r.d(t, "_ShowcaseCollectionView", (function() {
-				return x
+				return y
 			}));
 			var n = r("./node_modules/@reddit/marketplace/marketplace.es.js"),
 				s = r("./node_modules/fbt/lib/FbtPublic.js"),
@@ -115,7 +115,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const x = e => {
+			const y = e => {
 					let {
 						onClose: t
 					} = e;
@@ -124,23 +124,23 @@
 						a = Object(h.b)(),
 						j = Object(i.d)(),
 						_ = Object(i.f)().getState(),
-						x = Object(i.e)(e => Object(k.a)(e)),
+						y = Object(i.e)(e => Object(k.a)(e)),
 						{
-							telemetryReason: y,
+							telemetryReason: x,
 							profileUserName: A
-						} = x || {},
-						w = Object(b.Cb)(_, {
+						} = y || {},
+						v = Object(b.Cb)(_, {
 							userName: A || ""
 						}) || {},
-						g = Object(p.j)(_, w.profileId),
-						v = Object(n.l)(w.snoovatarFullBodyAsset || "");
+						w = Object(p.j)(_, v.profileId),
+						g = Object(n.l)(v.snoovatarFullBodyAsset || "");
 					return o.a.createElement(u.a, null, o.a.createElement(n.k, {
-						telemetryReason: y || "",
-						ownerId: w.id || "",
-						ownerSnoovatarImage: w.snoovatarFullBodyAsset || "",
-						ownerProfileItemId: v || "",
-						ownerProfileTitle: g.title || "",
-						ownerDisplayName: w.displayName || "",
+						telemetryReason: x || "",
+						ownerId: v.id || "",
+						ownerSnoovatarImage: v.snoovatarFullBodyAsset || "",
+						ownerProfileItemId: g || "",
+						ownerProfileTitle: w.title || "",
+						ownerDisplayName: v.displayName || "",
 						onClose: t,
 						onOutfitClick: e => {
 							t(), a(Object(f.k)("marketplace_collection_page")), j(Object(d.h)(l.a.ECON_NFT_PRODUCT_DETAILS, {
@@ -152,7 +152,7 @@
 						className: E.a.container,
 						onProfileImageClick: () => {
 							t(), a(Object(f.k)("marketplace_collection_page")), j(Object(d.h)(l.a.ECON_NFT_PRODUCT_DETAILS, {
-								itemId: v,
+								itemId: g,
 								showBack: !0,
 								profileUserName: A
 							}))
@@ -173,8 +173,8 @@
 						}
 					}))
 				},
-				y = Object(a.a)(x);
-			t.default = e => o.a.createElement(y, _({
+				x = Object(a.a)(y);
+			t.default = e => o.a.createElement(x, _({
 				withOverlay: !0,
 				className: E.a.modal
 			}, e))
@@ -395,10 +395,10 @@
 			const o = e => {
 					return !(Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.we
+						experimentName: n.ve
 					}) === n.Nd)
 				},
-				i = Object(c.a)(n.xe)
+				i = Object(c.a)(n.we)
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, r) {
 			"use strict";
@@ -412,4 +412,4 @@
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ShowcaseCollectionViewModal.cd3ef4757c0e7440783b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ShowcaseCollectionViewModal.5b3dfd5f36a34c63f876.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-MediumPost.5724054642b3a53569c4.js
-// Retrieved at 3/8/2023, 6:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-MediumPost.2b7b6d92956fc91167fe.js
+// Retrieved at 3/8/2023, 7:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~reddit-components-MediumPost"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, s) {
@@ -2756,14 +2756,14 @@
 						experimentEligibilitySelector: o.a,
 						experimentName: n.lc
 					});
-					return !(!t || Object(n.pg)(t))
+					return !(!t || Object(n.og)(t))
 				},
 				r = e => {
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
 						experimentName: n.Zb
 					});
-					return !(!t || Object(n.pg)(t))
+					return !(!t || Object(n.og)(t))
 				}
 		},
 		"./src/redditGQL/operations/LastModActionInSubreddit.json": function(e) {
@@ -2780,4 +2780,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-MediumPost.5724054642b3a53569c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-MediumPost.2b7b6d92956fc91167fe.js.map

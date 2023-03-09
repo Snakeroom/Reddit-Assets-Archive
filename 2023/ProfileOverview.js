@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.87eb352778081c681db8.js
-// Retrieved at 3/8/2023, 6:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.ec94ee59c882357ddd17.js
+// Retrieved at 3/8/2023, 7:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "ModQueuePages~reddit-components-MediumPost"], {
 		"./src/lib/LiveChatActiveUsers/index.m.less": function(e, t, s) {
@@ -4002,7 +4002,7 @@
 					let {
 						recommendedCommunities: t,
 						numberOfVisibleItems: s,
-						variant: o = he.sf.Minimalist,
+						variant: o = he.rf.Minimalist,
 						postId: a,
 						originalSubredditId: i
 					} = e;
@@ -4071,7 +4071,7 @@
 							onClick: v
 						}, b, n.a.createElement("div", {
 							className: "mt-[4px] text-[12px] leading-[14px] font-normal text-neutral-content-weak truncate"
-						}, o === he.sf.Minimalist && x, (o === he.sf.HotnessSignals || o === he.sf.Description) && n.a.createElement("div", {
+						}, o === he.rf.Minimalist && x, (o === he.rf.HotnessSignals || o === he.rf.Description) && n.a.createElement("div", {
 							className: "flex gap-x-xs justify-start items-center"
 						}, n.a.createElement(we, {
 							seed: t
@@ -4103,7 +4103,7 @@
 									position: s
 								}
 							}))(l, r, t)
-						})), o === he.sf.Description && n.a.createElement("div", {
+						})), o === he.rf.Description && n.a.createElement("div", {
 							className: "pt-[4px] ml-[8px] pr-sm text-[12px] leading-[14px] font-normal text-neutral-content-weak truncate"
 						}, n.a.createElement(xe.default, {
 							to: p || `/${b}`,
@@ -4316,7 +4316,7 @@
 			var ut = s("./src/reddit/selectors/experiments/index.ts");
 
 			function pt(e) {
-				return e === he.sf.Minimalist || e === he.sf.Description || e === he.sf.HotnessSignals
+				return e === he.rf.Minimalist || e === he.rf.Description || e === he.rf.HotnessSignals
 			}
 			const bt = e => {
 				const t = Object(it.c)(e, {
@@ -4489,7 +4489,7 @@
 						showRealtimeUpdateAnimation: ze,
 						isUpdatedContent: We,
 						isNightMode: Ve
-					} = e, qe = Object(O.a)(), Qe = !!e.redditStyle || !!e["data-redditstyle"], Je = Qe ? void 0 : j, $e = Object(l.a)(ge), nt = Ee && $e, at = Object(d.a)(ge), it = Object(c.a)(ge), dt = Object(K.c)(ke), ct = Object(V.a)(ke), lt = !!ke.media && ke.media.type === g.o.RTJSON, mt = Me && lt, ut = s ? s - X.a : void 0, pt = !!ke.recommendationContext, ht = !(de && me || pe) || pt && me, xt = (e => e === he.if.OnlyTitles)(ye) && !Object(Ze.a)(ke), ft = (e => e === he.if.MediumHeight)(ye) && !Object(Ze.a)(ke), vt = (e => {
+					} = e, qe = Object(O.a)(), Qe = !!e.redditStyle || !!e["data-redditstyle"], Je = Qe ? void 0 : j, $e = Object(l.a)(ge), nt = Ee && $e, at = Object(d.a)(ge), it = Object(c.a)(ge), dt = Object(K.c)(ke), ct = Object(V.a)(ke), lt = !!ke.media && ke.media.type === g.o.RTJSON, mt = Me && lt, ut = s ? s - X.a : void 0, pt = !!ke.recommendationContext, ht = !(de && me || pe) || pt && me, xt = (e => e === he.hf.OnlyTitles)(ye) && !Object(Ze.a)(ke), ft = (e => e === he.hf.MediumHeight)(ye) && !Object(Ze.a)(ke), vt = (e => {
 						var t;
 						const {
 							post: s,
@@ -9188,14 +9188,14 @@
 						experimentEligibilitySelector: n.a,
 						experimentName: o.lc
 					});
-					return !(!t || Object(o.pg)(t))
+					return !(!t || Object(o.og)(t))
 				},
 				a = e => {
 					const t = Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
 						experimentName: o.Zb
 					});
-					return !(!t || Object(o.pg)(t))
+					return !(!t || Object(o.og)(t))
 				}
 		},
 		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, s) {
@@ -9252,7 +9252,7 @@
 				a = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(n.pg)(t)
+					return Boolean(t) && !Object(n.og)(t)
 				},
 				d = Object(o.a)(i, r.d, (e, t) => e && !t)
 		},
@@ -9303,4 +9303,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.87eb352778081c681db8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.ec94ee59c882357ddd17.js.map
