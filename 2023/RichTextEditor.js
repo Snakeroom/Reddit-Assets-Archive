@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.afe25b20eb9ff6540d5e.js
-// Retrieved at 3/13/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.8376d36bbdbce4a1a35e.js
+// Retrieved at 3/13/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1850,8 +1850,8 @@
 				H = n("./src/lib/classNames/index.ts"),
 				q = n("./src/reddit/constants/keycodes.ts"),
 				K = n("./src/reddit/components/CommentCreation/getCancelModalId.ts"),
-				V = n("./src/realtime/GQLSubscription/async.tsx"),
-				Z = n("./src/reddit/components/UsersCountIndicator/constants.ts"),
+				Z = n("./src/realtime/GQLSubscription/async.tsx"),
+				V = n("./src/reddit/components/UsersCountIndicator/constants.ts"),
 				X = n("./src/reddit/constants/componentSizes.ts"),
 				G = n("./src/reddit/constants/componentTestIds.ts"),
 				Q = n("./src/reddit/selectors/activeModalId.ts"),
@@ -1896,7 +1896,7 @@
 						this.props.onCancel(), this.onBlur()
 					}, this.setUserStoppedTyping = r()(() => this.setState({
 						isUserTyping: !1
-					}), Z.c), this.detectBreakout = () => {
+					}), V.c), this.detectBreakout = () => {
 						if (!this.wrapperEl || !this.wrapperEl.parentElement || this.props.isTopLevelComment) return;
 						const e = this.wrapperEl.parentElement.getBoundingClientRect().width < X.c,
 							t = this.getWrapperHeight();
@@ -2061,7 +2061,7 @@
 						style: {
 							height: z ? A : void 0
 						}
-					}, T && B && c.a.createElement(V.a, {
+					}, T && B && c.a.createElement(Z.a, {
 						variables: this.realtimeGQLVariables,
 						onData: a.a,
 						queryKey: "userIsTypingOnPost"
@@ -2440,8 +2440,8 @@
 					onClick: n
 				})
 			}
-			var V = n("./src/reddit/selectors/comments.ts"),
-				Z = n("./src/reddit/selectors/experiments/mediaInComments.ts"),
+			var Z = n("./src/reddit/selectors/comments.ts"),
+				V = n("./src/reddit/selectors/experiments/mediaInComments.ts"),
 				X = n("./src/lib/constants/index.ts");
 
 			function G(e) {
@@ -2457,7 +2457,7 @@
 				$ = n.n(Y),
 				ee = n("./src/reddit/components/RichTextEditor/Toolbar/MediaInputButton/index.tsx");
 			const te = p.a.div("SectionSpacer", $.a),
-				ne = Object(d.a)(Z.a, V.C, B.c, S.d.spGiphy, (e, t, n, o) => e ? !!t || !!o : n);
+				ne = Object(d.a)(V.a, Z.C, B.c, S.d.spGiphy, (e, t, n, o) => e ? !!t || !!o : n);
 
 			function oe(e) {
 				const {
@@ -2614,7 +2614,7 @@
 							id: n.id
 						} : void 0
 					},
-					draft: V.i,
+					draft: Z.i,
 					isCommentBeforeSignUpEnabled: we.a,
 					isLoggedIn: je.S,
 					isLoginModalOpened: Object(ve.c)(ae.a.LOGIN_MODAL_ID),
@@ -2894,8 +2894,8 @@
 				He = n("./src/reddit/components/RequestPendingBanner/index.tsx"),
 				qe = n("./src/reddit/models/User/index.ts"),
 				Ke = n("./src/reddit/selectors/experiments/commentBox.ts"),
-				Ve = n("./src/reddit/selectors/posts.ts");
-			const Ze = Object(xe.v)(),
+				Ze = n("./src/reddit/selectors/posts.ts");
+			const Ve = Object(xe.v)(),
 				Xe = Object(d.c)({
 					activeModalId: Ce.a,
 					contributorRequestPending: (e, t) => {
@@ -2907,17 +2907,17 @@
 					isCommentBoxDesignEnabled: Ke.a,
 					userName: e => e.user.account ? Object(qe.e)(e.user.account) : "",
 					pending: (e, t) => e.features.comments.submit.pending[t.draftKey],
-					hasError: V.v,
-					errorMsgs: V.M,
-					draft: V.i,
-					disableAutofocus: V.f,
+					hasError: Z.v,
+					errorMsgs: Z.M,
+					draft: Z.i,
+					disableAutofocus: Z.f,
 					showContributorRequestFlow: (e, t) => {
 						let {
 							pageLayer: n
 						} = t;
 						return Object(xe.gb)(e, n, b.e.Comment)
 					},
-					postAuthorIsBlocked: Ve.w
+					postAuthorIsBlocked: Ze.w
 				}),
 				Ge = Object(a.b)(Xe, (e, t) => ({
 					onMount: () => e(c.a(t.draftKey)),
@@ -3030,7 +3030,7 @@
 					return e.contributorRequestPending ? i.a.createElement(He.a, null) : e.showContributorRequestFlow ? i.a.createElement(y, null) : e.draft.commentMode === pe.i.RICH_TEXT ? i.a.createElement(Ue, n) : i.a.createElement(m.b, n)
 				}
 			}
-			t.default = Ze(Ge(Qe))
+			t.default = Ve(Ge(Qe))
 		},
 		"./src/reddit/components/ContributorRequestFlow/ContributorRequestButton/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -4438,7 +4438,7 @@
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.Vd
+						experimentName: o.Xd
 					}) === o.Nd
 				},
 				c = (e, t) => {
@@ -4504,4 +4504,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.afe25b20eb9ff6540d5e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.8376d36bbdbce4a1a35e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3145ce74aede60312a56.js
-// Retrieved at 3/13/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d0b0c8f5c6ad1cc24def.js
+// Retrieved at 3/13/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -5413,11 +5413,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("184442"),
+				buildNumber: Object(r.c)("184444"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1678727576"),
+				buildTimestamp: Object(r.b)("1678730275"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5450,7 +5450,7 @@
 				oldRedditUrl: "https://old.reddit.com",
 				processingImageUrl: "https://www.redditstatic.com/image-processing.png",
 				processingAvatarImageUrl: "https://www.redditstatic.com/avatars",
-				hotPotatoUrl: {}.HOT_POTATO_URL || "https://hot-potato.reddit.com",
+				garlicBreadUrl: {}.GARLIC_BREAD_URL || "https://garlic-bread.reddit.com",
 				sentryClientPublicURL: "https://6b5ce051b2ed4032bd906af3de0630cd@o418887.ingest.sentry.io/5667464",
 				statsdHost: {}.STATSD_HOST,
 				statsdPort: {}.STATSD_PORT,
@@ -8155,14 +8155,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c80d102afd160848965ef5e709a1bf9668a7d7470-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %ceb99534e4e9ce5c5dc1e599e8e40d0171ef64b23-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "80d102afd160848965ef5e709a1bf9668a7d7470-production",
+						release: "eb99534e4e9ce5c5dc1e599e8e40d0171ef64b23-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(D.d)(), new d.Integrations.Breadcrumbs({
@@ -8715,7 +8715,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "80d102afd160848965ef5e709a1bf9668a7d7470-production",
+							releaseClient: "eb99534e4e9ce5c5dc1e599e8e40d0171ef64b23-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -18358,7 +18358,7 @@
 			"use strict";
 			i.d(t, "If", (function() {
 				return r
-			})), i.d(t, "Zd", (function() {
+			})), i.d(t, "be", (function() {
 				return s
 			})), i.d(t, "bf", (function() {
 				return o
@@ -18426,7 +18426,7 @@
 				return k
 			})), i.d(t, "Je", (function() {
 				return B
-			})), i.d(t, "Yd", (function() {
+			})), i.d(t, "ae", (function() {
 				return M
 			})), i.d(t, "He", (function() {
 				return U
@@ -18436,7 +18436,7 @@
 				return q
 			})), i.d(t, "p", (function() {
 				return V
-			})), i.d(t, "Xd", (function() {
+			})), i.d(t, "Zd", (function() {
 				return H
 			})), i.d(t, "of", (function() {
 				return W
@@ -18594,7 +18594,7 @@
 				return mt
 			})), i.d(t, "cf", (function() {
 				return pt
-			})), i.d(t, "Wd", (function() {
+			})), i.d(t, "Yd", (function() {
 				return ht
 			})), i.d(t, "Sf", (function() {
 				return ft
@@ -18630,9 +18630,9 @@
 				return jt
 			})), i.d(t, "od", (function() {
 				return At
-			})), i.d(t, "fe", (function() {
+			})), i.d(t, "Vd", (function() {
 				return Pt
-			})), i.d(t, "ge", (function() {
+			})), i.d(t, "Wd", (function() {
 				return xt
 			})), i.d(t, "Ec", (function() {
 				return Lt
@@ -18678,7 +18678,7 @@
 				return ti
 			})), i.d(t, "sb", (function() {
 				return ii
-			})), i.d(t, "ee", (function() {
+			})), i.d(t, "he", (function() {
 				return ni
 			})), i.d(t, "Pc", (function() {
 				return ri
@@ -18714,7 +18714,7 @@
 				return vi
 			})), i.d(t, "Oc", (function() {
 				return wi
-			})), i.d(t, "Vd", (function() {
+			})), i.d(t, "Xd", (function() {
 				return yi
 			})), i.d(t, "ac", (function() {
 				return Ei
@@ -18834,7 +18834,7 @@
 				return Nn
 			})), i.d(t, "Rd", (function() {
 				return Pn
-			})), i.d(t, "de", (function() {
+			})), i.d(t, "ge", (function() {
 				return Gn
 			})), i.d(t, "Of", (function() {
 				return qn
@@ -18882,7 +18882,7 @@
 				return vr
 			})), i.d(t, "Td", (function() {
 				return Or
-			})), i.d(t, "ce", (function() {
+			})), i.d(t, "fe", (function() {
 				return Rr
 			})), i.d(t, "Le", (function() {
 				return Cr
@@ -18890,7 +18890,7 @@
 				return Nr
 			})), i.d(t, "lb", (function() {
 				return jr
-			})), i.d(t, "be", (function() {
+			})), i.d(t, "ee", (function() {
 				return Lr
 			})), i.d(t, "sf", (function() {
 				return Dr
@@ -18944,7 +18944,7 @@
 				return gs
 			})), i.d(t, "eb", (function() {
 				return Es
-			})), i.d(t, "ae", (function() {
+			})), i.d(t, "de", (function() {
 				return Ss
 			})), i.d(t, "Kf", (function() {
 				return Os
@@ -18968,7 +18968,7 @@
 				return Bs
 			})), i.d(t, "cb", (function() {
 				return Ms
-			})), i.d(t, "ie", (function() {
+			})), i.d(t, "ce", (function() {
 				return Gs
 			})), i.d(t, "gb", (function() {
 				return qs
@@ -18994,7 +18994,7 @@
 				return io
 			})), i.d(t, "Ue", (function() {
 				return no
-			})), i.d(t, "he", (function() {
+			})), i.d(t, "ie", (function() {
 				return ro
 			})), i.d(t, "Xc", (function() {
 				return so
@@ -20252,7 +20252,7 @@
 					return r
 				})),
 				function(e) {
-					e.ANNOUNCEMENT_BANNER_SEEN_STORE = "announcement-banner-seen-store", e.ANNOUNCEMENT_BANNER_SEEN_STORE_V2 = "announcement-banner-seen-store-v2", e.AVATAR_PUSHCARD_EVENT_STORE = "avatar_pushcard_event_store", e.AVATAR_QUICK_CREATE_EVENT_STORE = "avatar_quick_create_event_store", e.BANNER_DISMISSED_STORE = "banner_dismissed_store", e.BREAKING_NEWS_DISABLED_STORE = "breaking_news_disabled_store", e.CATEGORIES_RANKING_STORE = "categories-ranking-store", e.COMMUNITY_SURVEY_DISMISSED = "community-survey-dismissed", e.CREATE_POLLS_PAINTED_DOOR_DISMISSED_STORE = "create_polls_painted_door_dismissed_store", e.DESKTOP_NOTIFICATIONS = "desktop-notifications", e.DESKTOP_NOTIFICATIONS_PROMPT_BANNER_SEEN_STORE = "desktop_notifications_prompt_banner_seen_store", e.DISCLAIMER_DISMISSED_STORE = "disclaimer_store", e.DOWNLOAD_OBS_DISMISSED_STORE = "download-obs-dismissed-store", e.EDITOR_MODE_HINT_SEEN_STORE = "editor-mode-hint", e.EMAIL_COLLECTION_REPROMPT_STORE = "email-collection-reprompt-store", e.FEATURE_THROTTLING_STORE = "feature-throttling-store", e.FOCUS_VERTICAL_VARIANT = "FOCUS_VERTICAL_VARIANT", e.FOLLOW_STORE = "follow_store", e.GILD_DEFAULTS_STORE = "gild_defaults_store", e.GIVE_FREE_AWARD_TOOLTIP_STORE = "give_free_award_tooltip_store", e.GOOD_VISIT_FS = "good-visit-feeds-search", e.INBOX_BANNER_SEEN_COUNT_STORE = "inbox_banner_seen_count_store", e.INBOX_PRIVACY_POLICY_BANNER_SEEN_STORE = "inbox-privacy-policy-banner-seen-store", e.INLINE_ID_CARD_PRIMARY_TOPIC_TOOLTIP_STORE = "inline-id-card-primary-topic-tooltip-store", e.LAST_CLICKED_AD_ID = "last-clicked-ad-id", e.LAST_CLICKED_IMPRESSION_ID = "last-clicked-impression-id", e.LEGACY_INLINE_ID_CARD_EDIT_EDU_TOOLTIP_STORE = "inline-edit-edu-tooltip-store", e.LOCAL_PERSISTED_EXPERIMENTS_STORE = "local_persisted_experiments_store", e.LOW_ACTIVITY_CALL_TO_ACTION_STORE = "low-activity-call-to-action-store", e.MOD_ONBOARDING_DISMISSED_STORE = "mod-onboarding-store", e.MODAL_DISMISSED_STORE = "modal_dismissed_store", e.MODHUB_SETTING_SEEN = "modhub-setting-seen", e.MODMAIL_HARASSMENT_CAMPAIGN_STORE = "modmail_harassment_campaign_store", e.NAV_BAR_ICON_STATUS = "nav-bar-icon-status", e.OLD_COLLECTIONS_DISMISSED_KEY = "post-creation-collection-tooltip-store", e.OLD_EVENT_DISMISSED_KEY = "post-creation-event-tooltip-store", e.PAGE_TYPE_BEFORE_AD_CLICK = "page-type-before-ad-click", e.POST_CREATION_EDU_TOOLTIP_STORE = "post-creation-edu-tooltip-store", e.POST_STATS_CLICKED = "post-stats-clicked", e.POSTS_CONSUMED_WEEKLY = "posts-consumed-weekly", e.POSTS_RECENTLY_CONSUMED = "posts-recently-consumed", e.PROFILE_PINNED_POSTS_STORE = "profile-pinned-posts-store", e.RECAP_BANNER_SEEN_STORE = "recap-banner-seen-store", e.RECENT_SEARCHES_STORE = "recent_searches", e.SUBSCRIBED_SUBREDDIT_VISITS = "subscribed-subreddit-visits", e.SUBREDDITS_FOR_ADOPTION_STORE = "subreddits-for-adoption", e.SURVEY_CONFIG = "survey-config", e.SURVEY_LAST_SEEN = "survey-last-seen", e.SURVEY_TRIGGER_ACTION_COUNTS = "survey-trigger-action-counts", e.TIME_BEFORE_UNFOCUS = "time-before-unfocus", e.UPVOTE_TOAST_CTA_LAST_SHOWN = "upvote-toast-cta-last-shown", e.UPVOTE_TOAST_LAST_THREE = "upvote-toast-last-three", e.REMOVAL_REASONS_TOOLTIP_SEEN = "removal-reasons-tooltip-seen", e.EMPTY_INBOX_STATE_BADGE_SEEN = "empty_inbox_state_badge_seen", e.HOT_POTATO_BANNER_SEEN = "hot-potato-banner-seen", e.LOGGED_OUT_HOME_SEEN = "logged-out-home-seen", e.XpromoConsolidation = "xpromo-consolidation", e.MOD_INSIGHTS_ENTRYPOINT_TOOLTIP_SEEN = "mod-insights-entrypoint-tooltip-seen", e.BOOST_POST_CTA_CLICKED = "boost-post-cta-clicked"
+					e.ANNOUNCEMENT_BANNER_SEEN_STORE = "announcement-banner-seen-store", e.ANNOUNCEMENT_BANNER_SEEN_STORE_V2 = "announcement-banner-seen-store-v2", e.AVATAR_PUSHCARD_EVENT_STORE = "avatar_pushcard_event_store", e.AVATAR_QUICK_CREATE_EVENT_STORE = "avatar_quick_create_event_store", e.BANNER_DISMISSED_STORE = "banner_dismissed_store", e.BREAKING_NEWS_DISABLED_STORE = "breaking_news_disabled_store", e.CATEGORIES_RANKING_STORE = "categories-ranking-store", e.COMMUNITY_SURVEY_DISMISSED = "community-survey-dismissed", e.CREATE_POLLS_PAINTED_DOOR_DISMISSED_STORE = "create_polls_painted_door_dismissed_store", e.DESKTOP_NOTIFICATIONS = "desktop-notifications", e.DESKTOP_NOTIFICATIONS_PROMPT_BANNER_SEEN_STORE = "desktop_notifications_prompt_banner_seen_store", e.DISCLAIMER_DISMISSED_STORE = "disclaimer_store", e.DOWNLOAD_OBS_DISMISSED_STORE = "download-obs-dismissed-store", e.EDITOR_MODE_HINT_SEEN_STORE = "editor-mode-hint", e.EMAIL_COLLECTION_REPROMPT_STORE = "email-collection-reprompt-store", e.FEATURE_THROTTLING_STORE = "feature-throttling-store", e.FOCUS_VERTICAL_VARIANT = "FOCUS_VERTICAL_VARIANT", e.FOLLOW_STORE = "follow_store", e.GILD_DEFAULTS_STORE = "gild_defaults_store", e.GIVE_FREE_AWARD_TOOLTIP_STORE = "give_free_award_tooltip_store", e.GOOD_VISIT_FS = "good-visit-feeds-search", e.INBOX_BANNER_SEEN_COUNT_STORE = "inbox_banner_seen_count_store", e.INBOX_PRIVACY_POLICY_BANNER_SEEN_STORE = "inbox-privacy-policy-banner-seen-store", e.INLINE_ID_CARD_PRIMARY_TOPIC_TOOLTIP_STORE = "inline-id-card-primary-topic-tooltip-store", e.LAST_CLICKED_AD_ID = "last-clicked-ad-id", e.LAST_CLICKED_IMPRESSION_ID = "last-clicked-impression-id", e.LEGACY_INLINE_ID_CARD_EDIT_EDU_TOOLTIP_STORE = "inline-edit-edu-tooltip-store", e.LOCAL_PERSISTED_EXPERIMENTS_STORE = "local_persisted_experiments_store", e.LOW_ACTIVITY_CALL_TO_ACTION_STORE = "low-activity-call-to-action-store", e.MOD_ONBOARDING_DISMISSED_STORE = "mod-onboarding-store", e.MODAL_DISMISSED_STORE = "modal_dismissed_store", e.MODHUB_SETTING_SEEN = "modhub-setting-seen", e.MODMAIL_HARASSMENT_CAMPAIGN_STORE = "modmail_harassment_campaign_store", e.NAV_BAR_ICON_STATUS = "nav-bar-icon-status", e.OLD_COLLECTIONS_DISMISSED_KEY = "post-creation-collection-tooltip-store", e.OLD_EVENT_DISMISSED_KEY = "post-creation-event-tooltip-store", e.PAGE_TYPE_BEFORE_AD_CLICK = "page-type-before-ad-click", e.POST_CREATION_EDU_TOOLTIP_STORE = "post-creation-edu-tooltip-store", e.POST_STATS_CLICKED = "post-stats-clicked", e.POSTS_CONSUMED_WEEKLY = "posts-consumed-weekly", e.POSTS_RECENTLY_CONSUMED = "posts-recently-consumed", e.PROFILE_PINNED_POSTS_STORE = "profile-pinned-posts-store", e.RECAP_BANNER_SEEN_STORE = "recap-banner-seen-store", e.RECENT_SEARCHES_STORE = "recent_searches", e.SUBSCRIBED_SUBREDDIT_VISITS = "subscribed-subreddit-visits", e.SUBREDDITS_FOR_ADOPTION_STORE = "subreddits-for-adoption", e.SURVEY_CONFIG = "survey-config", e.SURVEY_LAST_SEEN = "survey-last-seen", e.SURVEY_TRIGGER_ACTION_COUNTS = "survey-trigger-action-counts", e.TIME_BEFORE_UNFOCUS = "time-before-unfocus", e.UPVOTE_TOAST_CTA_LAST_SHOWN = "upvote-toast-cta-last-shown", e.UPVOTE_TOAST_LAST_THREE = "upvote-toast-last-three", e.REMOVAL_REASONS_TOOLTIP_SEEN = "removal-reasons-tooltip-seen", e.EMPTY_INBOX_STATE_BADGE_SEEN = "empty_inbox_state_badge_seen", e.GARLIC_BREAD_BANNER_SEEN = "garlic-bread-banner-seen", e.LOGGED_OUT_HOME_SEEN = "logged-out-home-seen", e.XpromoConsolidation = "xpromo-consolidation", e.MOD_INSIGHTS_ENTRYPOINT_TOOLTIP_SEEN = "mod-insights-entrypoint-tooltip-seen", e.BOOST_POST_CTA_CLICKED = "boost-post-cta-clicked"
 				}(n || (n = {}));
 			const r = 1e3
 		},
@@ -30236,7 +30236,7 @@
 								position: "number" == typeof t ? t + 1 : void 0
 							}),
 							correlationId: c,
-							experiment: u.q(n, r.Yd),
+							experiment: u.q(n, r.ae),
 							media: u.C(n, e),
 							mlModel: u.A(a, d),
 							noun: "post",
@@ -30366,7 +30366,7 @@
 									referralId: c
 								},
 								correlationId: v,
-								experiment: u.q(_, r.Yd),
+								experiment: u.q(_, r.ae),
 								media: u.C(_, e),
 								mlModel: u.A(g, o),
 								noun: t,
@@ -39456,11 +39456,11 @@
 			const c = Object(n.a)(d.c, l.R, l.S, a.f, a.e, e => Object(o.a)(e), (e, t, i, n, r, s) => !e && !t && !i && n && !!r && !r.isNSFW && !!s && !s.isNSFW),
 				u = e => Object(s.c)(e, {
 					experimentEligibilitySelector: c,
-					experimentName: r.Yd,
+					experimentName: r.ae,
 					expEventOverride: !1
 				}),
-				_ = e => e === r.ce.AdsControl,
-				m = e => e === r.ce.Nlp15Max
+				_ = e => e === r.fe.AdsControl,
+				m = e => e === r.fe.Nlp15Max
 		},
 		"./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts": function(e, t, i) {
 			"use strict";
@@ -39640,7 +39640,7 @@
 				},
 				T = e => !!Object(s.b)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.Xd,
+					experimentName: r.Zd,
 					expEventOverride: !1
 				})
 		},
@@ -47413,7 +47413,7 @@
 					e.ServiceError = "SERVICE_ERROR", e.UserNotLoggedIn = "USER_NOT_LOGGED_IN", e.UserNotAuthorized = "USER_NOT_AUTHORIZED"
 				}(Nt || (Nt = {})),
 				function(e) {
-					e.UsernameMention = "USERNAME_MENTION", e.PrivateMessage = "PRIVATE_MESSAGE", e.CommentReply = "COMMENT_REPLY", e.PostReply = "POST_REPLY", e.LifecyclePostSuggestions = "LIFECYCLE_POST_SUGGESTIONS", e.Subreddit = "SUBREDDIT", e.ChatMessage = "CHAT_MESSAGE", e.ChatRequest = "CHAT_REQUEST", e.SubredditUpdatesInterestingPost = "SUBREDDIT_UPDATES_INTERESTING_POST", e.News = "NEWS", e.ScheduledEvent = "SCHEDULED_EVENT", e.AddToCollection = "ADD_TO_COLLECTION", e.SubredditRecommendation = "SUBREDDIT_RECOMMENDATION", e.OneOff = "ONE_OFF", e.UpvotePost = "UPVOTE_POST", e.UpvoteComment = "UPVOTE_COMMENT", e.PasswordReset = "PASSWORD_RESET", e.EmailDigest = "EMAIL_DIGEST", e.Escalation = "ESCALATION", e.VerifyEmail = "VERIFY_EMAIL", e.Ato = "ATO", e.Security = "SECURITY", e.ForgotUsername = "FORGOT_USERNAME", e.LiveEvent = "LIVE_EVENT", e.CakeDay = "CAKE_DAY", e.NewPostActivity = "NEW_POST_ACTIVITY", e.AdsCampaignApproved = "ADS_CAMPAIGN_APPROVED", e.UserNewFollower = "USER_NEW_FOLLOWER", e.AdsCampaignRejected = "ADS_CAMPAIGN_REJECTED", e.ThreadReplies = "THREAD_REPLIES", e.TopLevelComment = "TOP_LEVEL_COMMENT", e.ChatAcceptInvite = "CHAT_ACCEPT_INVITE", e.EmailExternalVerification = "EMAIL_EXTERNAL_VERIFICATION", e.EconPromotion = "ECON_PROMOTION", e.AdsAutomatedReport = "ADS_AUTOMATED_REPORT", e.AdminAnnouncementEmail = "ADMIN_ANNOUNCEMENT_EMAIL", e.PostFlairAdded = "POST_FLAIR_ADDED", e.BroadcastFollower = "BROADCAST_FOLLOWER", e.BroadcastRecommendation = "BROADCAST_RECOMMENDATION", e.UserFlairAdded = "USER_FLAIR_ADDED", e.ModeratedSrEngagement = "MODERATED_SR_ENGAGEMENT", e.ModeratedSrMilestone = "MODERATED_SR_MILESTONE", e.ModeratedSrContentFoundation = "MODERATED_SR_CONTENT_FOUNDATION", e.CryptoTransactionApproval = "CRYPTO_TRANSACTION_APPROVAL", e.AdsRoleInvitation = "ADS_ROLE_INVITATION", e.NewPinnedPost = "NEW_PINNED_POST", e.EmailUpvotePost = "EMAIL_UPVOTE_POST", e.EmailUpvoteComment = "EMAIL_UPVOTE_COMMENT", e.EmailCommunityDiscovery = "EMAIL_COMMUNITY_DISCOVERY", e.EmailNewUserEducation = "EMAIL_NEW_USER_EDUCATION", e.EmailUserNewFollower = "EMAIL_USER_NEW_FOLLOWER", e.EmailChatRequest = "EMAIL_CHAT_REQUEST", e.PushTokenHealthCheck = "PUSH_TOKEN_HEALTH_CHECK", e.EmailPostReply = "EMAIL_POST_REPLY", e.EmailCommentReply = "EMAIL_COMMENT_REPLY", e.EmailPrivateMessage = "EMAIL_PRIVATE_MESSAGE", e.EmailUsernameMention = "EMAIL_USERNAME_MENTION", e.Oauth2AppAdd = "OAUTH2_APP_ADD", e.Oauth2AppApprove = "OAUTH2_APP_APPROVE", e.AeDmcaNotifySubmitter = "AE_DMCA_NOTIFY_SUBMITTER", e.PostFollow = "POST_FOLLOW", e.CommentFollow = "COMMENT_FOLLOW", e.MorePostActivity = "MORE_POST_ACTIVITY", e.EmailMagicLinkRegister = "EMAIL_MAGIC_LINK_REGISTER", e.EmailMagicLinkLogin = "EMAIL_MAGIC_LINK_LOGIN", e.ExportCompleteNotifyUserEmail = "EXPORT_COMPLETE_NOTIFY_USER_EMAIL", e.UsernameTakeoverCompleted = "USERNAME_TAKEOVER_COMPLETED", e.EmailChangeEmail = "EMAIL_CHANGE_EMAIL", e.AwardReceived = "AWARD_RECEIVED", e.ModeratedSrNewPost = "MODERATED_SR_NEW_POST", e.ModeratedSrViralCommentPost = "MODERATED_SR_VIRAL_COMMENT_POST", e.ModeratedSrViralUpvotePost = "MODERATED_SR_VIRAL_UPVOTE_POST", e.ModeratedSrReportedPost = "MODERATED_SR_REPORTED_POST", e.ModeratedSrReportedComment = "MODERATED_SR_REPORTED_COMMENT", e.ModeratedSrNewModmail = "MODERATED_SR_NEW_MODMAIL", e.IncentivizedPromotion = "INCENTIVIZED_PROMOTION", e.TrendingGeo = "TRENDING_GEO", e.RedditLore = "REDDIT_LORE", e.TalkLive = "TALK_LIVE", e.ChatMessageReaction = "CHAT_MESSAGE_REACTION", e.EmailWeeklyRecap = "EMAIL_WEEKLY_RECAP", e.Rereddit = "REREDDIT", e.HotPotatoOverwritten = "HOT_POTATO_OVERWRITTEN"
+					e.UsernameMention = "USERNAME_MENTION", e.PrivateMessage = "PRIVATE_MESSAGE", e.CommentReply = "COMMENT_REPLY", e.PostReply = "POST_REPLY", e.LifecyclePostSuggestions = "LIFECYCLE_POST_SUGGESTIONS", e.Subreddit = "SUBREDDIT", e.ChatMessage = "CHAT_MESSAGE", e.ChatRequest = "CHAT_REQUEST", e.SubredditUpdatesInterestingPost = "SUBREDDIT_UPDATES_INTERESTING_POST", e.News = "NEWS", e.ScheduledEvent = "SCHEDULED_EVENT", e.AddToCollection = "ADD_TO_COLLECTION", e.SubredditRecommendation = "SUBREDDIT_RECOMMENDATION", e.OneOff = "ONE_OFF", e.UpvotePost = "UPVOTE_POST", e.UpvoteComment = "UPVOTE_COMMENT", e.PasswordReset = "PASSWORD_RESET", e.EmailDigest = "EMAIL_DIGEST", e.Escalation = "ESCALATION", e.VerifyEmail = "VERIFY_EMAIL", e.Ato = "ATO", e.Security = "SECURITY", e.ForgotUsername = "FORGOT_USERNAME", e.LiveEvent = "LIVE_EVENT", e.CakeDay = "CAKE_DAY", e.NewPostActivity = "NEW_POST_ACTIVITY", e.AdsCampaignApproved = "ADS_CAMPAIGN_APPROVED", e.UserNewFollower = "USER_NEW_FOLLOWER", e.AdsCampaignRejected = "ADS_CAMPAIGN_REJECTED", e.ThreadReplies = "THREAD_REPLIES", e.TopLevelComment = "TOP_LEVEL_COMMENT", e.ChatAcceptInvite = "CHAT_ACCEPT_INVITE", e.EmailExternalVerification = "EMAIL_EXTERNAL_VERIFICATION", e.EconPromotion = "ECON_PROMOTION", e.AdsAutomatedReport = "ADS_AUTOMATED_REPORT", e.AdminAnnouncementEmail = "ADMIN_ANNOUNCEMENT_EMAIL", e.PostFlairAdded = "POST_FLAIR_ADDED", e.BroadcastFollower = "BROADCAST_FOLLOWER", e.BroadcastRecommendation = "BROADCAST_RECOMMENDATION", e.UserFlairAdded = "USER_FLAIR_ADDED", e.ModeratedSrEngagement = "MODERATED_SR_ENGAGEMENT", e.ModeratedSrMilestone = "MODERATED_SR_MILESTONE", e.ModeratedSrContentFoundation = "MODERATED_SR_CONTENT_FOUNDATION", e.CryptoTransactionApproval = "CRYPTO_TRANSACTION_APPROVAL", e.AdsRoleInvitation = "ADS_ROLE_INVITATION", e.NewPinnedPost = "NEW_PINNED_POST", e.EmailUpvotePost = "EMAIL_UPVOTE_POST", e.EmailUpvoteComment = "EMAIL_UPVOTE_COMMENT", e.EmailCommunityDiscovery = "EMAIL_COMMUNITY_DISCOVERY", e.EmailNewUserEducation = "EMAIL_NEW_USER_EDUCATION", e.EmailUserNewFollower = "EMAIL_USER_NEW_FOLLOWER", e.EmailChatRequest = "EMAIL_CHAT_REQUEST", e.PushTokenHealthCheck = "PUSH_TOKEN_HEALTH_CHECK", e.EmailPostReply = "EMAIL_POST_REPLY", e.EmailCommentReply = "EMAIL_COMMENT_REPLY", e.EmailPrivateMessage = "EMAIL_PRIVATE_MESSAGE", e.EmailUsernameMention = "EMAIL_USERNAME_MENTION", e.Oauth2AppAdd = "OAUTH2_APP_ADD", e.Oauth2AppApprove = "OAUTH2_APP_APPROVE", e.AeDmcaNotifySubmitter = "AE_DMCA_NOTIFY_SUBMITTER", e.PostFollow = "POST_FOLLOW", e.CommentFollow = "COMMENT_FOLLOW", e.MorePostActivity = "MORE_POST_ACTIVITY", e.EmailMagicLinkRegister = "EMAIL_MAGIC_LINK_REGISTER", e.EmailMagicLinkLogin = "EMAIL_MAGIC_LINK_LOGIN", e.ExportCompleteNotifyUserEmail = "EXPORT_COMPLETE_NOTIFY_USER_EMAIL", e.UsernameTakeoverCompleted = "USERNAME_TAKEOVER_COMPLETED", e.EmailChangeEmail = "EMAIL_CHANGE_EMAIL", e.AwardReceived = "AWARD_RECEIVED", e.ModeratedSrNewPost = "MODERATED_SR_NEW_POST", e.ModeratedSrViralCommentPost = "MODERATED_SR_VIRAL_COMMENT_POST", e.ModeratedSrViralUpvotePost = "MODERATED_SR_VIRAL_UPVOTE_POST", e.ModeratedSrReportedPost = "MODERATED_SR_REPORTED_POST", e.ModeratedSrReportedComment = "MODERATED_SR_REPORTED_COMMENT", e.ModeratedSrNewModmail = "MODERATED_SR_NEW_MODMAIL", e.IncentivizedPromotion = "INCENTIVIZED_PROMOTION", e.TrendingGeo = "TRENDING_GEO", e.RedditLore = "REDDIT_LORE", e.TalkLive = "TALK_LIVE", e.ChatMessageReaction = "CHAT_MESSAGE_REACTION", e.EmailWeeklyRecap = "EMAIL_WEEKLY_RECAP", e.Rereddit = "REREDDIT", e.GarlicBreadOverwritten = "GARLIC_BREAD_OVERWRITTEN"
 				}(jt || (jt = {})),
 				function(e) {
 					e.Valid = "VALID", e.Unprocessed = "UNPROCESSED", e.Failed = "FAILED", e.Invalid = "INVALID"
@@ -52585,4 +52585,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3145ce74aede60312a56.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d0b0c8f5c6ad1cc24def.js.map

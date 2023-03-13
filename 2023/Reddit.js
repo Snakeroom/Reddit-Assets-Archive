@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.4d4d74b86b339b6adf5d.js
-// Retrieved at 3/13/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.97fe73cce4b3e9bfa2c8.js
+// Retrieved at 3/13/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -2861,8 +2861,8 @@
 				isNightMode: "F6FHwO9Q2Pva6rdcMPWrm",
 				customIconWrapper: "_3kwk6KUitnGpZ2JJUx_bOj",
 				customIcon: "d7xjehjoXyiaQBuluGH0R",
-				hotPotatoLink: "_1o0rv7Kcd4-rywKyuwuS4d",
-				hotPotatoIcon: "_3hPJyNn7eKE2V1QllrneKU",
+				garlicBreadLink: "no2pS2p1GomZL7au3GeF",
+				garlicBreadIcon: "_3JYbu1qs_Na8zfP23tSqyA",
 				happeningNowLink: "_39XwvEX05Vwji7kFcISFuV",
 				liveContentAvailabilityBadge: "-X88ACLia0m_vNacl1E1S"
 			}
@@ -3455,7 +3455,7 @@
 				modalCloseIcon: "_2BTQI8_1TIwwfdecOP_j6o",
 				modalListItem: "-sXLpWAGj2HMFvzRvH_bC",
 				modalListIcon: "_3UO2hA0CsOqKl1bYybPZGs",
-				hotPotatoBanner: "_2oy7Xi4NUleUcHtb8YDZh7",
+				garlicBreadBanner: "SVn8TtBVFQ-GZUhog511q",
 				bannerContainer: "V5Q75l1gWtGpBZEehJiGH",
 				bannerDataContainer: "SIz6ozr7aqewYGVSLfSf6",
 				bannerImage: "_2zetWw7f4W-0OWrUYJHPQ-"
@@ -3843,7 +3843,7 @@
 							messagesBadgeCount: l,
 							notifications: d,
 							hideTooltip: u,
-							isHotPotatoEnabled: m,
+							isGarlicBreadEnabled: m,
 							isInboxPolicyBannerEnabled: p,
 							isLoggedIn: b,
 							isPushNotificationsSupported: h,
@@ -3866,7 +3866,7 @@
 								r([...s, n])
 							}]
 						}({
-							key: W.b.HOT_POTATO_BANNER_SEEN,
+							key: W.b.GARLIC_BREAD_BANNER_SEEN,
 							userId: v
 						}),
 						j = !(!d || !d.length),
@@ -3898,8 +3898,8 @@
 						isDNInboxPromptBannerEnabled: N,
 						isInboxPrivacyPolicyBannerEnabled: p && !y,
 						setInboxPrivacyPolicyBannerSeen: E,
-						isHotPotatoEnabled: m && !x,
-						setHotPotatoBannerSeen: _
+						isGarlicBreadEnabled: m && !x,
+						setGarlicBreadBannerSeen: _
 					})), (j || c) && o.a.createElement($, {
 						sendInboxClickSeeAll: () => t(Object(g.l)()),
 						onBarClick: u
@@ -6510,6 +6510,28 @@
 					source: "community_nav"
 				})
 		},
+		"./src/reddit/helpers/trackers/garlicBread.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "b", (function() {
+				return o
+			})), n.d(t, "a", (function() {
+				return a
+			}));
+			var s = n("./src/reddit/constants/tracking.ts"),
+				r = n("./src/reddit/selectors/telemetry.ts");
+			const o = () => e => ({
+					...Object(r.o)(e),
+					action: s.c.CLICK,
+					noun: "preview",
+					source: "garlic_bread"
+				}),
+				a = () => e => ({
+					...Object(r.o)(e),
+					action: s.c.CLICK,
+					noun: "garlic_bread",
+					source: "nav"
+				})
+		},
 		"./src/reddit/helpers/trackers/goldTopNav.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "d", (function() {
@@ -6698,28 +6720,6 @@
 						paneName: Object(r.e)(t)
 					},
 					correlationId: e
-				})
-		},
-		"./src/reddit/helpers/trackers/hotPotato.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "b", (function() {
-				return o
-			})), n.d(t, "a", (function() {
-				return a
-			}));
-			var s = n("./src/reddit/constants/tracking.ts"),
-				r = n("./src/reddit/selectors/telemetry.ts");
-			const o = () => e => ({
-					...Object(r.o)(e),
-					action: s.c.CLICK,
-					noun: "preview",
-					source: "hot_potato"
-				}),
-				a = () => e => ({
-					...Object(r.o)(e),
-					action: s.c.CLICK,
-					noun: "hot_potato",
-					source: "nav"
 				})
 		},
 		"./src/reddit/helpers/trackers/marketplace/claims.ts": function(e, t, n) {
@@ -12694,7 +12694,7 @@
 					return Math.max(0, Math.round((this.expireAt - Date.now()) / this.interval))
 				}
 			}
-			var tc = n("./src/reddit/selectors/experiments/hotPotato.ts"),
+			var tc = n("./src/reddit/selectors/experiments/garlicBread.ts"),
 				nc = n("./src/reddit/components/Header/QuickLinks/Timer.m.less"),
 				sc = n.n(nc);
 			const rc = Object(re.c)({
@@ -12760,7 +12760,7 @@
 			var ac = Object(xe.b)(rc, e => ({
 					fetchCooldownTimer: () => e(Object(Yi.e)())
 				}))(oc),
-				ic = n("./src/reddit/helpers/trackers/hotPotato.ts");
+				ic = n("./src/reddit/helpers/trackers/garlicBread.ts");
 			var cc = e => m.a.createElement("svg", {
 				className: e.className,
 				viewBox: "0 0 32 32",
@@ -12946,20 +12946,20 @@
 				}, s.fbt._("PsBattles Live in partnership with Adobe", null, {
 					hk: "3mGYdM"
 				}))), m.a.createElement(Ai, null), c && m.a.createElement(m.a.Fragment, null, m.a.createElement(lr.a, {
-					className: Object(ke.a)(qi.a.icon, qi.a.hotPotatoLink),
+					className: Object(ke.a)(qi.a.icon, qi.a.garlicBreadLink),
 					innerRef: v.target.ref,
 					to: `/r/${l}`,
 					onMouseEnter: v.show,
 					onMouseLeave: v.hide,
 					onClick: r
 				}, m.a.createElement(cc, {
-					className: qi.a.hotPotatoIcon
+					className: qi.a.garlicBreadIcon
 				}), m.a.createElement(ac, null)), m.a.createElement(Ei.a, {
 					arrowProps: v.arrowProps,
 					popperProps: v.popperProps,
 					visible: v.visible
 				}, s.fbt._("Place your tile", null, {
-					hk: "2ZCdRE"
+					hk: "34X0pD"
 				}))), a && m.a.createElement(zi, {
 					eventNoun: "love_island",
 					imageSource: "https://styles.redditmedia.com/t5_3lwmq/styles/communityIcon_7atioswvjm671.png?width=256&s=6096b8adbfa2d4911d9bc92afff25fd764987498",
@@ -17382,8 +17382,8 @@
 				Dv = {
 					displayDelay: 15,
 					displayOnRoutes: [k.Tb.SUBREDDIT, k.Tb.COMMENTS],
-					experimentName: Hn.Zd,
-					experimentVariant: Hn.de.On,
+					experimentName: Hn.be,
+					experimentVariant: Hn.ge.On,
 					isSEOOnly: !0,
 					samplingRate: 25,
 					seed: Math.random()
@@ -20291,8 +20291,8 @@
 				b = n("./src/reddit/selectors/experiments/index.ts");
 			const h = Object(a.a)(e => Object(p.c)(e, {
 				experimentEligibilitySelector: b.f,
-				experimentName: l.Wd
-			}), e => e === l.ae.Enabled);
+				experimentName: l.Yd
+			}), e => e === l.de.Enabled);
 			var g = n("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
 				f = n("./src/reddit/selectors/experiments/magicLink.ts"),
 				v = n("./src/lib/getParsedUserAgent/index.ts");
@@ -20344,7 +20344,7 @@
 						}), O && (P = Object(i.a)(P, {
 							[`experiment_${l.Bf}`]: O
 						})), _ && (P = Object(i.a)(P, {
-							[`experiment_${l.Wd}`]: "enabled"
+							[`experiment_${l.Yd}`]: "enabled"
 						})), h && (P = Object(i.a)(P, {
 							experiment_d2x_netzdg_compliance: d.Enabled,
 							thing_id: n
@@ -20734,12 +20734,12 @@
 			const a = Object(o.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: s.Fb
-				}), e => e === s.he.HideTrending),
+				}), e => e === s.ie.HideTrending),
 				i = Object(o.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: s.Fb,
 					expEventOverride: !1
-				}), e => e === s.he.HideTrending)
+				}), e => e === s.ie.HideTrending)
 		},
 		"./src/reddit/selectors/experiments/inboxRedesign.ts": function(e, t, n) {
 			"use strict";
@@ -21336,4 +21336,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.4d4d74b86b339b6adf5d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.97fe73cce4b3e9bfa2c8.js.map

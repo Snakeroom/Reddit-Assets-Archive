@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.fbbc8bb6bc5fb270a0f7.js
-// Retrieved at 3/13/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.c7c0a74a322d6b3e3d21.js
+// Retrieved at 3/13/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "ModQueuePages~reddit-components-MediumPost", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -34675,7 +34675,7 @@
 				modalCloseIcon: "_2BTQI8_1TIwwfdecOP_j6o",
 				modalListItem: "-sXLpWAGj2HMFvzRvH_bC",
 				modalListIcon: "_3UO2hA0CsOqKl1bYybPZGs",
-				hotPotatoBanner: "_2oy7Xi4NUleUcHtb8YDZh7",
+				garlicBreadBanner: "SVn8TtBVFQ-GZUhog511q",
 				bannerContainer: "V5Q75l1gWtGpBZEehJiGH",
 				bannerDataContainer: "SIz6ozr7aqewYGVSLfSf6",
 				bannerImage: "_2zetWw7f4W-0OWrUYJHPQ-"
@@ -35063,7 +35063,7 @@
 							messagesBadgeCount: c,
 							notifications: l,
 							hideTooltip: u,
-							isHotPotatoEnabled: m,
+							isGarlicBreadEnabled: m,
 							isInboxPolicyBannerEnabled: p,
 							isLoggedIn: b,
 							isPushNotificationsSupported: f,
@@ -35086,7 +35086,7 @@
 								r([...s, n])
 							}]
 						}({
-							key: W.b.HOT_POTATO_BANNER_SEEN,
+							key: W.b.GARLIC_BREAD_BANNER_SEEN,
 							userId: v
 						}),
 						j = !(!l || !l.length),
@@ -35118,8 +35118,8 @@
 						isDNInboxPromptBannerEnabled: S,
 						isInboxPrivacyPolicyBannerEnabled: p && !O,
 						setInboxPrivacyPolicyBannerSeen: C,
-						isHotPotatoEnabled: m && !A,
-						setHotPotatoBannerSeen: y
+						isGarlicBreadEnabled: m && !A,
+						setGarlicBreadBannerSeen: y
 					})), (j || d) && o.a.createElement($, {
 						sendInboxClickSeeAll: () => t(Object(h.l)()),
 						onBarClick: u
@@ -37086,7 +37086,7 @@
 			}
 
 			function l() {
-				const e = Object(d.a)(i.ee),
+				const e = Object(d.a)(i.he),
 					t = Object(o.e)(a.d.hatefulContentFiltersEnabled);
 				return e === i.Nd && t
 			}
@@ -77424,7 +77424,7 @@
 				d = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.Vd
+						experimentName: s.Xd
 					}) === s.Nd
 				},
 				c = (e, t) => {
@@ -80345,4 +80345,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.fbbc8bb6bc5fb270a0f7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.c7c0a74a322d6b3e3d21.js.map

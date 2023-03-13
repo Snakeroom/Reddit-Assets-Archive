@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.108a1322687eed87aca6.js
-// Retrieved at 3/13/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.7f97b812d1c5f4c64dd9.js
+// Retrieved at 3/13/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -719,7 +719,7 @@
 			var o = e => Object(s.a)(e, {
 					...a
 				}),
-				c = n("./src/reddit/selectors/experiments/hotPotato.ts"),
+				c = n("./src/reddit/selectors/experiments/garlicBread.ts"),
 				i = n("./src/reddit/selectors/user.ts");
 			const d = "FETCH_COOLDOWN_TIMER__PENDING",
 				l = "FETCH_COOLDOWN_TIMER__SUCCESS",
@@ -25372,7 +25372,7 @@
 				expanded: e === r.Vc.ExpandedSearch
 			}))
 		},
-		"./src/reddit/selectors/experiments/hotPotato.ts": function(e, t, n) {
+		"./src/reddit/selectors/experiments/garlicBread.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
 				return p
@@ -25394,7 +25394,7 @@
 					if (!u(e)) return;
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: l,
-						experimentName: a.fe,
+						experimentName: a.Vd,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -25417,9 +25417,9 @@
 				},
 				h = e => !!p(e) && Object(o.c)(e, {
 					experimentEligibilitySelector: u,
-					experimentName: a.ge,
+					experimentName: a.Wd,
 					expEventOverride: !1
-				}) !== a.ie.Readonly
+				}) !== a.ce.Readonly
 		},
 		"./src/reddit/selectors/removedPosts.ts": function(e, t, n) {
 			"use strict";
@@ -25563,4 +25563,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.108a1322687eed87aca6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.7f97b812d1c5f4c64dd9.js.map
