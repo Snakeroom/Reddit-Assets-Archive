@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.3b33e2cf7d38c795eef8.js
-// Retrieved at 3/13/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.daf70374d3f9737fe469.js
+// Retrieved at 3/13/2023, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "CollectionCommentsPage~SearchResults", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -8684,7 +8684,7 @@
 						activeDetails: h,
 						shopTabState: C
 					})), t(Object(i.n)({
-						title: Object(s.p)()
+						title: Object(s.o)()
 					}))) : await t(Object(r.openLoginModal)())
 				}
 			}
@@ -27190,7 +27190,7 @@
 						n(Object(P.p)({
 							subredditId: t,
 							forceState: !1
-						})), a(Object(U.i)())
+						})), a(Object(U.h)())
 					},
 					to: `${u.url}predictions/`
 				}, H._("Predictions", null, {
@@ -37473,40 +37473,38 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return i
-			})), n.d(t, "q", (function() {
+			})), n.d(t, "p", (function() {
 				return a
-			})), n.d(t, "n", (function() {
-				return c
-			})), n.d(t, "o", (function() {
-				return d
 			})), n.d(t, "m", (function() {
+				return c
+			})), n.d(t, "n", (function() {
+				return d
+			})), n.d(t, "l", (function() {
 				return l
 			})), n.d(t, "b", (function() {
 				return u
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "f", (function() {
 				return m
-			})), n.d(t, "l", (function() {
+			})), n.d(t, "k", (function() {
 				return p
-			})), n.d(t, "r", (function() {
+			})), n.d(t, "q", (function() {
 				return b
 			})), n.d(t, "e", (function() {
 				return f
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "i", (function() {
 				return h
 			})), n.d(t, "d", (function() {
 				return C
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "g", (function() {
 				return g
 			})), n.d(t, "c", (function() {
 				return _
-			})), n.d(t, "k", (function() {
+			})), n.d(t, "j", (function() {
 				return v
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "h", (function() {
 				return O
-			})), n.d(t, "p", (function() {
+			})), n.d(t, "o", (function() {
 				return x
-			})), n.d(t, "f", (function() {
-				return y
 			}));
 			var s = n("./src/reddit/models/Prediction/index.ts"),
 				r = n("./src/reddit/selectors/telemetry.ts");
@@ -37664,13 +37662,6 @@
 					source: "predictions_tab",
 					action: "view",
 					noun: "predictions_how_it_works",
-					subreddit: Object(r.lb)(e)
-				}),
-				y = () => e => ({
-					...Object(r.o)(e),
-					source: "predictions_how_it_works",
-					action: "click",
-					noun: "learn_more",
 					subreddit: Object(r.lb)(e)
 				})
 		},
@@ -49432,4 +49423,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.3b33e2cf7d38c795eef8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.daf70374d3f9737fe469.js.map

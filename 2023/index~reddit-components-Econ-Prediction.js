@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.ab458596ffcddc8c2cc3.js
-// Retrieved at 3/6/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.8188beb88b9b06b6fd9d.js
+// Retrieved at 3/13/2023, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, n) {
@@ -1879,10 +1879,10 @@
 					Z = L || G,
 					q = Z || M;
 				Object(a.useEffect)(() => {
-					I || (y(h.q), k(!0))
+					I || (y(h.p), k(!0))
 				}, [I, y]);
 				const $ = Object(a.useCallback)(() => {
-					y(Object(h.m)({
+					y(Object(h.l)({
 						pollId: E,
 						currency: null == P ? void 0 : P.currency,
 						amount: null == P ? void 0 : P.amount
@@ -2839,40 +2839,38 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return s
-			})), n.d(t, "q", (function() {
+			})), n.d(t, "p", (function() {
 				return c
-			})), n.d(t, "n", (function() {
-				return d
-			})), n.d(t, "o", (function() {
-				return i
 			})), n.d(t, "m", (function() {
+				return d
+			})), n.d(t, "n", (function() {
+				return i
+			})), n.d(t, "l", (function() {
 				return l
 			})), n.d(t, "b", (function() {
 				return u
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "f", (function() {
 				return m
-			})), n.d(t, "l", (function() {
+			})), n.d(t, "k", (function() {
 				return p
-			})), n.d(t, "r", (function() {
+			})), n.d(t, "q", (function() {
 				return _
 			})), n.d(t, "e", (function() {
 				return h
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "i", (function() {
 				return f
 			})), n.d(t, "d", (function() {
 				return b
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "g", (function() {
 				return E
 			})), n.d(t, "c", (function() {
 				return g
-			})), n.d(t, "k", (function() {
+			})), n.d(t, "j", (function() {
 				return O
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "h", (function() {
 				return j
-			})), n.d(t, "p", (function() {
+			})), n.d(t, "o", (function() {
 				return v
-			})), n.d(t, "f", (function() {
-				return x
 			}));
 			var a = n("./src/reddit/models/Prediction/index.ts"),
 				o = n("./src/reddit/selectors/telemetry.ts");
@@ -3030,13 +3028,6 @@
 					source: "predictions_tab",
 					action: "view",
 					noun: "predictions_how_it_works",
-					subreddit: Object(o.lb)(e)
-				}),
-				x = () => e => ({
-					...Object(o.o)(e),
-					source: "predictions_how_it_works",
-					action: "click",
-					noun: "learn_more",
 					subreddit: Object(o.lb)(e)
 				})
 		},
@@ -3201,4 +3192,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.ab458596ffcddc8c2cc3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.8188beb88b9b06b6fd9d.js.map

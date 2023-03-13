@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.9c884c6644d6f002dd83.js
-// Retrieved at 3/13/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.dce4d0e92901d8eb0d58.js
+// Retrieved at 3/13/2023, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit~StandalonePostPage", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -3988,7 +3988,7 @@
 						activeDetails: f,
 						shopTabState: g
 					})), t(Object(i.n)({
-						title: Object(o.p)()
+						title: Object(o.o)()
 					}))) : await t(Object(r.openLoginModal)())
 				}
 			}
@@ -28186,40 +28186,38 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return i
-			})), n.d(t, "q", (function() {
+			})), n.d(t, "p", (function() {
 				return a
-			})), n.d(t, "n", (function() {
-				return c
-			})), n.d(t, "o", (function() {
-				return d
 			})), n.d(t, "m", (function() {
+				return c
+			})), n.d(t, "n", (function() {
+				return d
+			})), n.d(t, "l", (function() {
 				return l
 			})), n.d(t, "b", (function() {
 				return u
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "f", (function() {
 				return m
-			})), n.d(t, "l", (function() {
+			})), n.d(t, "k", (function() {
 				return p
-			})), n.d(t, "r", (function() {
+			})), n.d(t, "q", (function() {
 				return h
 			})), n.d(t, "e", (function() {
 				return b
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "i", (function() {
 				return f
 			})), n.d(t, "d", (function() {
 				return g
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "g", (function() {
 				return v
 			})), n.d(t, "c", (function() {
 				return C
-			})), n.d(t, "k", (function() {
+			})), n.d(t, "j", (function() {
 				return E
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "h", (function() {
 				return x
-			})), n.d(t, "p", (function() {
+			})), n.d(t, "o", (function() {
 				return y
-			})), n.d(t, "f", (function() {
-				return O
 			}));
 			var o = n("./src/reddit/models/Prediction/index.ts"),
 				r = n("./src/reddit/selectors/telemetry.ts");
@@ -28377,13 +28375,6 @@
 					source: "predictions_tab",
 					action: "view",
 					noun: "predictions_how_it_works",
-					subreddit: Object(r.lb)(e)
-				}),
-				O = () => e => ({
-					...Object(r.o)(e),
-					source: "predictions_how_it_works",
-					action: "click",
-					noun: "learn_more",
 					subreddit: Object(r.lb)(e)
 				})
 		},
@@ -32326,7 +32317,7 @@
 					}),
 					primaryButtonLoading: c,
 					onPrimaryAction: async () => {
-						i(Object(zn.k)()), d(!0), n(Object(Gn.b)({
+						i(Object(zn.j)()), d(!0), n(Object(Gn.b)({
 							prediction: {
 								formData: l,
 								formState: u
@@ -32422,7 +32413,7 @@
 								}))
 							}
 							f(!1)
-						})() : (c(Object(zn.h)()), h(!0))
+						})() : (c(Object(zn.g)()), h(!0))
 					}
 				}, b ? r.a.createElement(T.a, {
 					sizePx: 16
@@ -40211,4 +40202,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.9c884c6644d6f002dd83.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.dce4d0e92901d8eb0d58.js.map

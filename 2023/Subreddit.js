@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.4f93f5c51eb7af4a1569.js
-// Retrieved at 3/13/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.061f07ba16d6ecf609ed.js
+// Retrieved at 3/13/2023, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -7144,7 +7144,7 @@
 					className: p.a.rank
 				}, r), s.a.createElement(d.default, {
 					className: p.a.userLink,
-					onClick: () => _(Object(l.g)({
+					onClick: () => _(Object(l.f)({
 						targetUserId: f.id
 					})),
 					to: `/user/${E}`,
@@ -8040,7 +8040,7 @@
 					rank: o
 				}), s.a.createElement(m.default, {
 					className: B.a.userLink,
-					onClick: () => r(Object(A.g)({
+					onClick: () => r(Object(A.f)({
 						targetUserId: c.id
 					})),
 					to: `/user/${h}`,
@@ -8169,25 +8169,14 @@
 			}];
 			var Y = () => {
 					const e = Object(E.a)();
-					Object(r.useEffect)(() => {
-						e(Object(A.p)())
-					}, [e]);
-					return s.a.createElement(_.a, {
+					return Object(r.useEffect)(() => {
+						e(Object(A.o)())
+					}, [e]), s.a.createElement(_.a, {
 						className: z.a.widget,
 						contentOnly: !0
 					}, s.a.createElement(q.a, {
 						steps: Q
-					}), s.a.createElement("div", {
-						className: z.a.learnMoreWrapper
-					}, s.a.createElement(m.default, {
-						to: "/predictions",
-						onMouseDown: () => e(Object(A.f)())
-					}, s.a.createElement(v.t, {
-						className: z.a.learnMoreButton,
-						isFullWidth: !0
-					}, o.fbt._("Learn More", null, {
-						hk: "4wy6Ra"
-					})))))
+					}))
 				},
 				Z = (n("./src/reddit/components/Econ/PredictionLeaderboard/List/index.tsx"), n("./src/reddit/components/Econ/PredictionLeaderboard/Sidebar/index.tsx"));
 
@@ -11982,7 +11971,7 @@
 						n(Object(P.p)({
 							subredditId: t,
 							forceState: !1
-						})), a(Object(F.i)())
+						})), a(Object(F.h)())
 					},
 					to: `${u.url}predictions/`
 				}, V._("Predictions", null, {
@@ -19321,40 +19310,38 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return i
-			})), n.d(t, "q", (function() {
+			})), n.d(t, "p", (function() {
 				return a
-			})), n.d(t, "n", (function() {
-				return c
-			})), n.d(t, "o", (function() {
-				return d
 			})), n.d(t, "m", (function() {
+				return c
+			})), n.d(t, "n", (function() {
+				return d
+			})), n.d(t, "l", (function() {
 				return l
 			})), n.d(t, "b", (function() {
 				return u
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "f", (function() {
 				return m
-			})), n.d(t, "l", (function() {
+			})), n.d(t, "k", (function() {
 				return p
-			})), n.d(t, "r", (function() {
+			})), n.d(t, "q", (function() {
 				return b
 			})), n.d(t, "e", (function() {
 				return f
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "i", (function() {
 				return h
 			})), n.d(t, "d", (function() {
 				return g
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "g", (function() {
 				return _
 			})), n.d(t, "c", (function() {
 				return v
-			})), n.d(t, "k", (function() {
+			})), n.d(t, "j", (function() {
 				return x
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "h", (function() {
 				return y
-			})), n.d(t, "p", (function() {
+			})), n.d(t, "o", (function() {
 				return E
-			})), n.d(t, "f", (function() {
-				return O
 			}));
 			var r = n("./src/reddit/models/Prediction/index.ts"),
 				s = n("./src/reddit/selectors/telemetry.ts");
@@ -19512,13 +19499,6 @@
 					source: "predictions_tab",
 					action: "view",
 					noun: "predictions_how_it_works",
-					subreddit: Object(s.lb)(e)
-				}),
-				O = () => e => ({
-					...Object(s.o)(e),
-					source: "predictions_how_it_works",
-					action: "click",
-					noun: "learn_more",
 					subreddit: Object(s.lb)(e)
 				})
 		},
@@ -25921,4 +25901,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.4f93f5c51eb7af4a1569.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.061f07ba16d6ecf609ed.js.map

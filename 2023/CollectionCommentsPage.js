@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.770734ba3e6f0e6959fb.js
-// Retrieved at 3/13/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.7f1a6c22bedc25d5f1d6.js
+// Retrieved at 3/13/2023, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -6883,7 +6883,7 @@
 						s(Object(T.p)({
 							subredditId: t,
 							forceState: !1
-						})), a(Object(W.i)())
+						})), a(Object(W.h)())
 					},
 					to: `${m.url}predictions/`
 				}, V._("Predictions", null, {
@@ -9052,40 +9052,38 @@
 			"use strict";
 			s.d(t, "a", (function() {
 				return i
-			})), s.d(t, "q", (function() {
+			})), s.d(t, "p", (function() {
 				return a
-			})), s.d(t, "n", (function() {
-				return d
-			})), s.d(t, "o", (function() {
-				return c
 			})), s.d(t, "m", (function() {
+				return d
+			})), s.d(t, "n", (function() {
+				return c
+			})), s.d(t, "l", (function() {
 				return l
 			})), s.d(t, "b", (function() {
 				return m
-			})), s.d(t, "g", (function() {
+			})), s.d(t, "f", (function() {
 				return u
-			})), s.d(t, "l", (function() {
+			})), s.d(t, "k", (function() {
 				return p
-			})), s.d(t, "r", (function() {
+			})), s.d(t, "q", (function() {
 				return b
 			})), s.d(t, "e", (function() {
 				return h
-			})), s.d(t, "j", (function() {
+			})), s.d(t, "i", (function() {
 				return g
 			})), s.d(t, "d", (function() {
 				return x
-			})), s.d(t, "h", (function() {
+			})), s.d(t, "g", (function() {
 				return f
 			})), s.d(t, "c", (function() {
 				return v
-			})), s.d(t, "k", (function() {
+			})), s.d(t, "j", (function() {
 				return _
-			})), s.d(t, "i", (function() {
+			})), s.d(t, "h", (function() {
 				return y
-			})), s.d(t, "p", (function() {
+			})), s.d(t, "o", (function() {
 				return C
-			})), s.d(t, "f", (function() {
-				return O
 			}));
 			var n = s("./src/reddit/models/Prediction/index.ts"),
 				r = s("./src/reddit/selectors/telemetry.ts");
@@ -9243,13 +9241,6 @@
 					source: "predictions_tab",
 					action: "view",
 					noun: "predictions_how_it_works",
-					subreddit: Object(r.lb)(e)
-				}),
-				O = () => e => ({
-					...Object(r.o)(e),
-					source: "predictions_how_it_works",
-					action: "click",
-					noun: "learn_more",
 					subreddit: Object(r.lb)(e)
 				})
 		},
@@ -11400,4 +11391,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.770734ba3e6f0e6959fb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.7f1a6c22bedc25d5f1d6.js.map

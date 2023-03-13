@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.c7c0a74a322d6b3e3d21.js
-// Retrieved at 3/13/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.75e083c79c3149ede6ee.js
+// Retrieved at 3/13/2023, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "ModQueuePages~reddit-components-MediumPost", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -8136,7 +8136,7 @@
 						});
 						r && (n = r.name)
 					}
-					return Object(d.q)(n)
+					return Object(d.p)(n)
 				},
 				N = "POST_CREATION__PAGE_PENDING",
 				D = "POST_CREATION__PAGE_LOADED",
@@ -14491,7 +14491,7 @@
 						activeDetails: h,
 						shopTabState: g
 					})), t(Object(i.n)({
-						title: Object(s.p)()
+						title: Object(s.o)()
 					}))) : await t(Object(r.openLoginModal)())
 				}
 			}
@@ -80345,4 +80345,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.c7c0a74a322d6b3e3d21.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.75e083c79c3149ede6ee.js.map

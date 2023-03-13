@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.411bc716d2df989fefa1.js
-// Retrieved at 3/6/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.f046ef00dc946eba3797.js
+// Retrieved at 3/13/2023, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, n) {
@@ -519,10 +519,10 @@
 									hk: "22UWEr"
 								}));
 								else {
-									e.tournamentId ? c(Object(S.o)({
+									e.tournamentId ? c(Object(S.n)({
 										pollId: s,
 										selectedNumberTokens: o
-									})) : c(Object(S.n)({
+									})) : c(Object(S.m)({
 										pollId: s,
 										selectedNumberCoins: o,
 										totalStakeAmount: e.totalStakeAmount
@@ -948,7 +948,7 @@
 					className: xe.a.tournamentLink,
 					to: `${c.url}predictions/`,
 					onClick: () => {
-						s(Object(S.l)({
+						s(Object(S.k)({
 							pageType: l ? "post_detail" : m ? "community" : u ? "profile" : "home"
 						})), window.scrollTo(0, 0)
 					}
@@ -1807,4 +1807,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.411bc716d2df989fefa1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.f046ef00dc946eba3797.js.map
