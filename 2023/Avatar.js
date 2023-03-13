@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Avatar.27577d09aa1bd8ec9ca3.js
-// Retrieved at 3/13/2023, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Avatar.f7e6b3290f5966e01f36.js
+// Retrieved at 3/13/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Avatar"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, s) {
@@ -63,15 +63,15 @@
 				}, []);
 				const {
 					activeDetails: h,
-					activeTab: R,
-					activeMeSubpage: k,
-					shopTabState: N
+					activeTab: N,
+					activeMeSubpage: R,
+					shopTabState: k
 				} = s, T = Object(n.useMemo)(() => ({
-					activeTab: R || void 0,
-					activeMeSubpage: k || void 0,
+					activeTab: N || void 0,
+					activeMeSubpage: R || void 0,
 					activeDetails: h || void 0,
-					shopTabState: N || void 0
-				}), [h, R, k, N]), C = Object(c.e)(e => !Object(O.S)(e) && Object(m.w)(e));
+					shopTabState: k || void 0
+				}), [h, N, R, k]), C = Object(c.e)(e => !Object(O.S)(e) && Object(m.w)(e));
 				if (!f || !j) return null;
 				if (C) return a.a.createElement("div", {
 					className: Object(o.a)(x.a.container, {
@@ -204,10 +204,10 @@
 			const c = e => {
 					return !(Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: r.ue
-					}) === r.Md)
+						experimentName: r.ve
+					}) === r.Nd)
 				},
-				o = Object(a.a)(r.ve)
+				o = Object(a.a)(r.we)
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, s) {
 			"use strict";
@@ -216,9 +216,9 @@
 			}));
 			var r = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(n.a)(r.wd)
+			const a = Object(n.a)(r.xd)
 		},
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.27577d09aa1bd8ec9ca3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.f7e6b3290f5966e01f36.js.map
