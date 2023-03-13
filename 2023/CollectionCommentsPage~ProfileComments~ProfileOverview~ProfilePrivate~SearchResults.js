@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.6b0490ffc0029c25d252.js
-// Retrieved at 3/8/2023, 7:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.40bd6a72812e345b5c7b.js
+// Retrieved at 3/13/2023, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1014,7 +1014,7 @@
 					R = !n.isRemoved || n.bannedBy === c.m,
 					D = a,
 					L = e => I(Object(f.c)(e, n.id)),
-					B = "chat_comments" === (null == T ? void 0 : T.queryParams.only);
+					S = "chat_comments" === (null == T ? void 0 : T.queryParams.only);
 				return r.a.createElement("div", {
 					className: t
 				}, (n.bannedBy || N) && r.a.createElement(j.a, {
@@ -1024,7 +1024,7 @@
 						hk: "2219Nh"
 					}),
 					onClick: () => {
-						u(), B && I(Object(f.b)("approve", n.id)), L("approve")
+						u(), S && I(Object(f.b)("approve", n.id)), L("approve")
 					}
 				}, r.a.createElement(k.a, {
 					className: w.a.icon
@@ -1035,7 +1035,7 @@
 						hk: "3tYl0U"
 					}),
 					onClick: () => {
-						v(), B && I(Object(f.b)("remove", n.id)), n.bannedBy === c.m ? L("confirm_remove") : L("remove")
+						v(), S && I(Object(f.b)("remove", n.id)), n.bannedBy === c.m ? L("confirm_remove") : L("remove")
 					}
 				}, r.a.createElement(O.a, {
 					className: w.a.icon
@@ -1520,10 +1520,10 @@
 				D = n("./src/reddit/components/Comments/Comment/TopMeta/crowdControl.m.less"),
 				L = n.n(D);
 			const {
-				fbt: B
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), S = () => r.a.createElement(C.a, {
+				fbt: S
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), B = () => r.a.createElement(C.a, {
 				className: L.a.crowdControlText
-			}, B._("Crowd Control", null, {
+			}, S._("Crowd Control", null, {
 				hk: "4WgEW"
 			}));
 			var P = n("./src/reddit/components/Comments/Comment/TopMeta/Edited.tsx"),
@@ -1660,8 +1660,8 @@
 					renderedInOverlay: M,
 					subredditDisplayText: N,
 					isAdmin: D
-				} = e, L = Object(_.a)(), B = a.subredditId, F = Object(i.e)(e => Object(E.e)(e, {
-					subredditId: B
+				} = e, L = Object(_.a)(), S = a.subredditId, F = Object(i.e)(e => Object(E.e)(e, {
+					subredditId: S
 				}));
 				if (a.isDeleted && !D) return r.a.createElement("div", {
 					className: Object(d.a)(ie.a.container, t),
@@ -1707,7 +1707,7 @@
 				})), !Object(O.f)(a) && u && r.a.createElement(v.a, {
 					postOrComment: a,
 					className: ie.a.LastAuthorModNoteIcon
-				}), s && r.a.createElement(S, null), r.a.createElement(ee.a, {
+				}), s && r.a.createElement(B, null), r.a.createElement(ee.a, {
 					className: ie.a.role,
 					comment: a,
 					subredditDisplayText: N,
@@ -1845,7 +1845,7 @@
 					onCommentAuthorClick: A,
 					onCommentTimestampClick: D,
 					renderContractorBadge: L,
-					renderedInOverlay: B,
+					renderedInOverlay: S,
 					subredditDisplayText: F,
 					userHasNft: U
 				} = e, V = r.a.createElement(r.a.Fragment, null, r.a.createElement(de.b, {
@@ -1869,7 +1869,7 @@
 					onCommentTimestampClick: D,
 					permalink: a,
 					renderContractorBadge: !!L,
-					renderedInOverlay: B,
+					renderedInOverlay: S,
 					subredditDisplayText: F
 				}), V);
 				if (i.isDeleted) return r.a.createElement(Oe, xe({}, e, {
@@ -1905,8 +1905,8 @@
 					isEmbeddedLiveChat: M,
 					isStrong: !!u,
 					onClick: A,
-					renderedInOverlay: B
-				}), s && r.a.createElement(S, null), s && r.a.createElement(C.c, {
+					renderedInOverlay: S
+				}), s && r.a.createElement(B, null), s && r.a.createElement(C.c, {
 					className: ve.a.metaText,
 					key: "crowdControlSeparator"
 				}), p && !H && r.a.createElement(Ce, {
@@ -1926,7 +1926,7 @@
 					comment: i,
 					subredditDisplayText: F,
 					renderContractorBadge: !!L,
-					renderedInOverlay: B
+					renderedInOverlay: S
 				}), !u && r.a.createElement(r.a.Fragment, null, !i.isDeleted && !N && r.a.createElement(r.a.Fragment, null, r.a.createElement(C.b, {
 					className: ve.a.metaText,
 					isScoreHidden: i.isScoreHidden,
@@ -1939,7 +1939,7 @@
 					className: ve.a.MetaLink,
 					comment: i,
 					permalink: a,
-					renderedInOverlay: B,
+					renderedInOverlay: S,
 					isBlockingInterstitialEnabled: I || w
 				}), i.isStickied && r.a.createElement(r.a.Fragment, null, r.a.createElement(C.c, {
 					className: ve.a.separator
@@ -1950,10 +1950,10 @@
 				}))), r.a.createElement($, {
 					comment: i,
 					ignoreLock: E,
-					renderedInOverlay: B
+					renderedInOverlay: S
 				}), !k && r.a.createElement(m.a, {
 					thing: i,
-					tooltipType: B ? x.f.Lightbox : void 0
+					tooltipType: S ? x.f.Lightbox : void 0
 				}), T && r.a.createElement(l.a, {
 					postOrComment: i,
 					className: ve.a.addModNote
@@ -2607,11 +2607,11 @@
 				s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(o.a)(e => Object(r.c)(e, {
-					experimentName: s.Zf,
+					experimentName: s.Yf,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				a = Object(o.a)(i, e => e === s.Tf)
+				a = Object(o.a)(i, e => e === s.Sf)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.6b0490ffc0029c25d252.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.40bd6a72812e345b5c7b.js.map

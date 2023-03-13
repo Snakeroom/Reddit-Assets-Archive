@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.0097c3c49b117a62e455.js
-// Retrieved at 3/8/2023, 7:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.99184853f923c214c71e.js
+// Retrieved at 3/13/2023, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./node_modules/lodash/map.js": function(e, t, s) {
@@ -341,8 +341,8 @@
 					U = D === v.a.CommentReply,
 					B = D === v.a.SubredditRecommendation,
 					M = D === v.a.LifecyclePostSuggestions,
-					W = null === (t = null == C ? void 0 : C.post) || void 0 === t ? void 0 : t.permalink;
-				let V = null === (s = null == C ? void 0 : C.comment) || void 0 === s ? void 0 : s.id,
+					V = null === (t = null == C ? void 0 : C.post) || void 0 === t ? void 0 : t.permalink;
+				let W = null === (s = null == C ? void 0 : C.comment) || void 0 === s ? void 0 : s.id,
 					G = (null === (o = null == C ? void 0 : C.post) || void 0 === o ? void 0 : o.id) || (null === (x = null === (O = null == C ? void 0 : C.comment) || void 0 === O ? void 0 : O.postInfo) || void 0 === x ? void 0 : x.id);
 				const H = null === (R = null == C ? void 0 : C.subreddit) || void 0 === R ? void 0 : R.id,
 					K = null === (S = null === (g = null == C ? void 0 : C.awarding) || void 0 === g ? void 0 : g.award) || void 0 === S ? void 0 : S.id,
@@ -359,13 +359,13 @@
 						const [n, r, i, a] = o.slice(1);
 						return r && "r" === n && (t.subredditName = r), i && (t.postId = `${p.b}${i}`), a && (t.commentId = `${p.a}${a}`), t
 					})(T);
-					G = e.postId, V = e.commentId
-				} else D !== v.a.PostReply && D !== v.a.LifecyclePostSuggestions || (V = L);
+					G = e.postId, W = e.commentId
+				} else D !== v.a.PostReply && D !== v.a.LifecyclePostSuggestions || (W = L);
 				const J = e => {
-					if (G && V) {
-						const e = Object(a.a)(G, V, Object(h.c)(T)),
+					if (G && W) {
+						const e = Object(a.a)(G, W, Object(h.c)(T)),
 							t = {
-								parentCommentId: V,
+								parentCommentId: W,
 								commentsPageKey: e
 							};
 						N(Object(d.h)(t)), P({
@@ -381,7 +381,7 @@
 							const e = M;
 							if (!B && !e) return null;
 							const t = e => {
-									W ? P({
+									V ? P({
 										position: _.d.SECOND,
 										postId: G,
 										subredditId: H
@@ -658,9 +658,9 @@
 				experimentEligibilitySelector: n.a,
 				experimentName: o.rb
 			}), e => ({
-				bucketed: e === o.Wc.ExpandedSearch || e === o.Wc.CollapsedSearch,
-				collapsed: e === o.Wc.CollapsedSearch,
-				expanded: e === o.Wc.ExpandedSearch
+				bucketed: e === o.Vc.ExpandedSearch || e === o.Vc.CollapsedSearch,
+				collapsed: e === o.Vc.CollapsedSearch,
+				expanded: e === o.Vc.ExpandedSearch
 			}))
 		},
 		"./src/redditGQL/operations/RegisterWebPushToken.json": function(e) {
@@ -668,4 +668,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.0097c3c49b117a62e455.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.99184853f923c214c71e.js.map
