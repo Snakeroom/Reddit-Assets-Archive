@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.718caeee61efae00fc33.js
-// Retrieved at 3/13/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.4e7db5de2c9a81742100.js
+// Retrieved at 3/14/2023, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -3405,7 +3405,7 @@
 					}
 				}, w.displayText)), w && w.isQuarantined && o.a.createElement(p.a, null), !n && !k.isSponsored && w && I && !O && o.a.createElement(h.a, {
 					className: E.a.SubscribeButton,
-					getEventFactory: e => Object(v.m)(k.id, e ? "unsubscribe" : "subscribe"),
+					getEventFactory: e => Object(v.n)(k.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
 						name: w.name,
 						type: Object(C.i)(w) ? g.a.PROFILE : g.a.SUBREDDIT
@@ -7257,7 +7257,7 @@
 				...e,
 				...t,
 				...s,
-				postClickEventFactory: (e, t) => Object(I.m)(e, t)
+				postClickEventFactory: (e, t) => Object(I.n)(e, t)
 			}));
 			var X = s("./src/reddit/featureFlags/index.ts"),
 				$ = s("./src/reddit/actions/pages/profilePrivate/constants.ts"),
@@ -7343,7 +7343,7 @@
 					...e,
 					...t,
 					...s,
-					postClickEventFactory: (e, t) => Object(I.m)(e, t)
+					postClickEventFactory: (e, t) => Object(I.n)(e, t)
 				})),
 				me = Object(a.b)(de, e => ({
 					...ce(e),
@@ -7354,7 +7354,7 @@
 					...e,
 					...t,
 					...s,
-					postClickEventFactory: (e, t) => Object(I.m)(e, t),
+					postClickEventFactory: (e, t) => Object(I.n)(e, t),
 					postComponentForLayout: v.b
 				}));
 			var ue = s("./src/reddit/helpers/makeProfileListingKey/index.ts"),
@@ -7542,4 +7542,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.718caeee61efae00fc33.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.4e7db5de2c9a81742100.js.map

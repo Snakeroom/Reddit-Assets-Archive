@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.53d807bba7056db95769.js
-// Retrieved at 3/8/2023, 6:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.c54aab8d7eef3a1398fd.js
+// Retrieved at 3/14/2023, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -705,7 +705,7 @@
 						u !== I.a.ThankYouView || d || x()
 					}, [r, c, f, u, x, d]);
 					const O = Object(h.useCallback)(() => {
-							l.current = !0, p(d ? I.a.MuteThankYouView : I.a.ThankYouView), a(Object(_.o)(f))
+							l.current = !0, p(d ? I.a.MuteThankYouView : I.a.ThankYouView), a(Object(_.p)(f))
 						}, [f, a, p, d]),
 						S = Object(h.useCallback)(() => {
 							D({
@@ -715,7 +715,7 @@
 								similar: !1,
 								subredditId: b,
 								isCommunityMutingEnabled: d
-							}), l.current = !0, a(Object(_.c)(f))
+							}), l.current = !0, a(Object(_.d)(f))
 						}, [r, t, f, a, p, b, d]),
 						E = Object(h.useCallback)(() => {
 							C && (D({
@@ -725,7 +725,7 @@
 								similar: !0,
 								subredditId: C,
 								isCommunityMutingEnabled: d
-							}), l.current = !0, a(Object(_.r)(f)))
+							}), l.current = !0, a(Object(_.s)(f)))
 						}, [r, t, f, C, a, p, d]);
 					return u && u !== I.a.None ? m.a.createElement("div", {
 						className: Object(g.a)(U.a.Footer, {
@@ -2509,4 +2509,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.53d807bba7056db95769.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.c54aab8d7eef3a1398fd.js.map

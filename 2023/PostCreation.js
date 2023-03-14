@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.dce4d0e92901d8eb0d58.js
-// Retrieved at 3/13/2023, 6:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.17c943d352483227f45f.js
+// Retrieved at 3/14/2023, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit~StandalonePostPage", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -12060,7 +12060,7 @@
 					}
 				}, T.displayText)), T && T.isQuarantined && r.a.createElement(p.a, null), !o && !j.isSponsored && T && S && !y && r.a.createElement(b.a, {
 					className: O.a.SubscribeButton,
-					getEventFactory: e => Object(C.m)(j.id, e ? "unsubscribe" : "subscribe"),
+					getEventFactory: e => Object(C.n)(j.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
 						name: T.name,
 						type: Object(x.i)(T) ? f.a.PROFILE : f.a.SUBREDDIT
@@ -40202,4 +40202,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.dce4d0e92901d8eb0d58.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.17c943d352483227f45f.js.map

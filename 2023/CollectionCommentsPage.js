@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.7f1a6c22bedc25d5f1d6.js
-// Retrieved at 3/13/2023, 6:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.49191c5e7d631990f8dc.js
+// Retrieved at 3/14/2023, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -4187,7 +4187,7 @@
 					})
 				}), v && _ && o.a.createElement(c.a, {
 					className: f.a.subscribeButton,
-					getEventFactory: e => Object(p.m)(s.id, e ? "unsubscribe" : "subscribe"),
+					getEventFactory: e => Object(p.n)(s.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
 						name: _.name,
 						type: Object(h.i)(_) ? m.a.PROFILE : m.a.SUBREDDIT
@@ -5155,7 +5155,7 @@
 					qt = Te.removedByCategory && Te.removedByCategory !== R.g.Reddit || Kt,
 					Gt = !qt && !Te.isArchived,
 					Yt = Object(o.useCallback)(() => {
-						ue(F ? R.f.UNFOLLOWED : R.f.FOLLOWED), Ke(F ? Object(k.s)(Te.id) : Object(k.e)(Te.id))
+						ue(F ? R.f.UNFOLLOWED : R.f.FOLLOWED), Ke(F ? Object(k.t)(Te.id) : Object(k.f)(Te.id))
 					}, [ue, Ke, F, Te.id]),
 					Jt = i.a.createElement(i.a.Fragment, null, i.a.createElement(yt, {
 						post: Te,
@@ -5471,7 +5471,7 @@
 					isTypingIndicatorsReadLoadTest: K,
 					postId: Te.id
 				}), !Xe && Zt)));
-				const ts = Object(o.useCallback)((e, t) => Object(k.m)(e, t), []);
+				const ts = Object(o.useCallback)((e, t) => Object(k.n)(e, t), []);
 				return i.a.createElement(pe.b, {
 					className: Object(u.a)(t, ft.a.postContainer, {
 						[ft.a.hasEventMeta]: Object(Le.a)(Te)
@@ -5780,7 +5780,7 @@
 					}
 				}, w.displayText)), w && w.isQuarantined && r.a.createElement(p.a, null), !n && !j.isSponsored && w && P && !C && r.a.createElement(h.a, {
 					className: O.a.SubscribeButton,
-					getEventFactory: e => Object(v.m)(j.id, e ? "unsubscribe" : "subscribe"),
+					getEventFactory: e => Object(v.n)(j.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
 						name: w.name,
 						type: Object(y.i)(w) ? g.a.PROFILE : g.a.SUBREDDIT
@@ -5989,7 +5989,7 @@
 					className: P.a.addModNote
 				})), z && Q && H && W && !L && o.a.createElement(g.a, {
 					className: P.a.SubscribeButton,
-					getEventFactory: e => (Y && !e && Y(), Object(_.m)(D.id, e ? "unsubscribe" : "subscribe", "post", M, w)),
+					getEventFactory: e => (Y && !e && Y(), Object(_.n)(D.id, e ? "unsubscribe" : "subscribe", "post", M, w)),
 					identifier: {
 						name: z.name,
 						type: Z ? x.a.PROFILE : x.a.SUBREDDIT
@@ -6433,7 +6433,7 @@
 						}
 					},
 					onClick: function() {
-						_(Object(u.n)(x.id, void 0, y))
+						_(Object(u.o)(x.id, void 0, y))
 					}
 				}, n.fbt._("All Comments", null, {
 					hk: "4hJcyz"
@@ -7814,16 +7814,16 @@
 				Object(d.useEffect)(() => {
 					var e;
 					null === (e = o.current) || void 0 === e || e.disconnect(), o.current = new V(() => {
-						n(Object(L.i)(s.id))
+						n(Object(L.j)(s.id))
 					}, () => {
-						n(Object(L.f)(s.id, H, !0))
+						n(Object(L.g)(s.id, H, !0))
 					}), o.current.connect(r.current)
 				}, [s, n]);
 				const m = Object(d.useCallback)(() => {
 						const e = Object(u.a)(s.id);
 						t(Object(M.c)({
 							key: e
-						})), window.scroll(0, 0), n(Object(L.h)(s.id))
+						})), window.scroll(0, 0), n(Object(L.i)(s.id))
 					}, [s, n, t]),
 					p = Object(d.useCallback)(() => {
 						n(x)
@@ -9876,7 +9876,7 @@
 						pathname: Object(x.b)(M),
 						state: null == j ? void 0 : j.locationState
 					},
-					onClick: () => w(Object(y.n)(A, k, n))
+					onClick: () => w(Object(y.o)(A, k, n))
 				}, N._("View all comments", null, {
 					hk: "3I5IX9"
 				})), !H && !!(null == k ? void 0 : k.parentId) && r.a.createElement(p.a, {
@@ -11391,4 +11391,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.7f1a6c22bedc25d5f1d6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.49191c5e7d631990f8dc.js.map

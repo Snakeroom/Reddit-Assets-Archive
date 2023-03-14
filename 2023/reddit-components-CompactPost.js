@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.3c3ab04944d86b0b236f.js
-// Retrieved at 3/13/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.dbda41e550e9e87e4803.js
+// Retrieved at 3/14/2023, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -876,7 +876,7 @@
 						showPromotedCTA: we,
 						showCTAExperimentDesign: De,
 						isLiveChatUserCountEnabled: Me
-					} = this.props, Ue = !!_e.media && _e.media.type === h.o.RTJSON, Fe = he && Ue, Be = Object(J.b)(_e.id, g), We = Object(pe.a)(K), Ye = Object(ue.a)(K), Ve = Object(me.a)(K), Ge = `-mod-actions-menu-${_e.id}`, He = `voting-arrows-${_e.id}`, ze = !!n && Object(E.e)(n) === _e.author, qe = Object(W.a)(_e), Ze = Object(V.c)(_e), Je = Object(R.a)("View--Reports", _e.id, Ne), Xe = Object(V.a)(_e), Ke = !(g || O || C), Qe = e => Ie(Object(f.m)(_e.id, e)), $e = Object(d.t)(_e, u), {
+					} = this.props, Ue = !!_e.media && _e.media.type === h.o.RTJSON, Fe = he && Ue, Be = Object(J.b)(_e.id, g), We = Object(pe.a)(K), Ye = Object(ue.a)(K), Ve = Object(me.a)(K), Ge = `-mod-actions-menu-${_e.id}`, He = `voting-arrows-${_e.id}`, ze = !!n && Object(E.e)(n) === _e.author, qe = Object(W.a)(_e), Ze = Object(V.c)(_e), Je = Object(R.a)("View--Reports", _e.id, Ne), Xe = Object(V.a)(_e), Ke = !(g || O || C), Qe = e => Ie(Object(f.n)(_e.id, e)), $e = Object(d.t)(_e, u), {
 						source: et
 					} = $e, tt = Object(x.r)(_e);
 					return r.a.createElement(Z.b, {
@@ -1899,7 +1899,7 @@
 					}
 				}, k.displayText)), k && k.isQuarantined && n.a.createElement(p.a, null), !o && !y.isSponsored && k && T && !v && n.a.createElement(_.a, {
 					className: S.a.SubscribeButton,
-					getEventFactory: e => Object(E.m)(y.id, e ? "unsubscribe" : "subscribe"),
+					getEventFactory: e => Object(E.n)(y.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
 						name: k.name,
 						type: Object(C.i)(k) ? f.a.PROFILE : f.a.SUBREDDIT
@@ -3295,4 +3295,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.3c3ab04944d86b0b236f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.dbda41e550e9e87e4803.js.map

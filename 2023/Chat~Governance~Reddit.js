@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.b25721bd3f10f73bcda1.js
-// Retrieved at 3/13/2023, 6:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.aca7d89f5be9141f3ea9.js
+// Retrieved at 3/14/2023, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -5413,11 +5413,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("184456"),
+				buildNumber: Object(r.c)("184489"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1678745498"),
+				buildTimestamp: Object(r.b)("1678806532"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -8155,14 +8155,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c7dc34faacfeefa8855a7c3513dae14e152a29d35-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cd34fe8101f47aecba9a2d96ae95dca6178244770-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "7dc34faacfeefa8855a7c3513dae14e152a29d35-production",
+						release: "d34fe8101f47aecba9a2d96ae95dca6178244770-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(D.d)(), new d.Integrations.Breadcrumbs({
@@ -8715,7 +8715,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "7dc34faacfeefa8855a7c3513dae14e152a29d35-production",
+							releaseClient: "d34fe8101f47aecba9a2d96ae95dca6178244770-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -13973,14 +13973,14 @@
 					n && e(Object(b.a)(i[Math.floor(n / 2)]))
 				}, De = (e, t, i) => async (n, r) => {
 					const s = r();
-					Z.x(s, e, t, i), xe[e] = t || 0, h.c.start(Pe(e))
+					Z.y(s, e, t, i), xe[e] = t || 0, h.c.start(Pe(e))
 				}, ke = (e, t, i) => async (r, s) => {
 					delete xe[e];
 					const o = s(),
 						d = Pe(e);
 					if (h.c.has(d)) {
 						const r = h.c.end(`viewing-${e}`);
-						!t && r > n.a.telemetry.postConsumedThreshold && (Z.d(o, e, r, i), Object($.b)(Object(pe.s)(o)))
+						!t && r > n.a.telemetry.postConsumedThreshold && (Z.e(o, e, r, i), Object($.b)(Object(pe.s)(o)))
 					}
 				}, Be = {
 					[T.a.Impression]: f.i,
@@ -14039,7 +14039,7 @@
 							if (t !== T.a.GalleryItemImpression) {
 								if (t === T.a.Impression) return i((e => async (t, i) => {
 									e.isSponsored && (t(Ge(e, T.a.Impression)), F(e, t, i))
-								})(e)), void(e.isBlank || Z.u(n(), e.postId));
+								})(e)), void(e.isBlank || Z.v(n(), e.postId));
 								i((e => async t => {
 									e.isSponsored && t(Ge(e, T.a.ViewableImpression))
 								})(e))
@@ -30151,54 +30151,56 @@
 		},
 		"./src/reddit/helpers/trackers/post.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "i", (function() {
+			i.d(t, "j", (function() {
 				return b
-			})), i.d(t, "x", (function() {
+			})), i.d(t, "y", (function() {
 				return g
-			})), i.d(t, "u", (function() {
-				return v
-			})), i.d(t, "f", (function() {
-				return w
-			})), i.d(t, "d", (function() {
-				return y
-			})), i.d(t, "m", (function() {
-				return S
-			})), i.d(t, "g", (function() {
-				return O
-			})), i.d(t, "h", (function() {
-				return R
-			})), i.d(t, "j", (function() {
-				return F
-			})), i.d(t, "t", (function() {
-				return N
-			})), i.d(t, "l", (function() {
-				return j
-			})), i.d(t, "k", (function() {
-				return A
-			})), i.d(t, "e", (function() {
-				return P
-			})), i.d(t, "s", (function() {
-				return x
-			})), i.d(t, "q", (function() {
-				return k
-			})), i.d(t, "p", (function() {
-				return B
-			})), i.d(t, "c", (function() {
-				return M
-			})), i.d(t, "r", (function() {
-				return U
-			})), i.d(t, "o", (function() {
-				return G
-			})), i.d(t, "n", (function() {
-				return q
 			})), i.d(t, "v", (function() {
-				return V
+				return v
+			})), i.d(t, "g", (function() {
+				return w
+			})), i.d(t, "e", (function() {
+				return y
+			})), i.d(t, "n", (function() {
+				return S
+			})), i.d(t, "h", (function() {
+				return O
+			})), i.d(t, "i", (function() {
+				return R
+			})), i.d(t, "k", (function() {
+				return F
+			})), i.d(t, "u", (function() {
+				return N
+			})), i.d(t, "m", (function() {
+				return j
+			})), i.d(t, "l", (function() {
+				return A
+			})), i.d(t, "f", (function() {
+				return P
+			})), i.d(t, "t", (function() {
+				return x
+			})), i.d(t, "r", (function() {
+				return k
+			})), i.d(t, "q", (function() {
+				return B
+			})), i.d(t, "d", (function() {
+				return M
+			})), i.d(t, "s", (function() {
+				return U
+			})), i.d(t, "p", (function() {
+				return G
+			})), i.d(t, "o", (function() {
+				return q
 			})), i.d(t, "w", (function() {
+				return V
+			})), i.d(t, "x", (function() {
 				return H
 			})), i.d(t, "a", (function() {
 				return W
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "c", (function() {
 				return z
+			})), i.d(t, "b", (function() {
+				return K
 			}));
 			var n = i("./src/lib/constants/index.ts"),
 				r = i("./src/reddit/constants/experiments.ts"),
@@ -30532,6 +30534,14 @@
 					subreddit: u.lb(t)
 				}),
 				z = e => t => ({
+					source: "profile",
+					action: "click",
+					noun: "boost_post_banner_close",
+					...u.o(t),
+					post: u.K(t, e),
+					subreddit: u.lb(t)
+				}),
+				K = e => t => ({
 					source: "profile",
 					action: "click",
 					noun: "boost_post_icon_button",
@@ -52580,4 +52590,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.b25721bd3f10f73bcda1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.aca7d89f5be9141f3ea9.js.map

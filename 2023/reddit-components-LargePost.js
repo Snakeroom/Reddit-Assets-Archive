@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.1e3c207961d9c60d20ea.js
-// Retrieved at 3/13/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.1418787191c5b419421e.js
+// Retrieved at 3/14/2023, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ModQueuePages~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -5010,7 +5010,7 @@
 						C = Object(a.e)(G.P),
 						y = Object(a.e)(V.b),
 						k = Object(z.a)(c),
-						S = O ? h.m : H,
+						S = O ? h.n : H,
 						I = t.authorId === v,
 						N = C && I,
 						P = (null === (l = t.distinguishType) || void 0 === l ? void 0 : l.toLowerCase()) === d.J.ADMIN,
@@ -5022,7 +5022,7 @@
 							u(O ? S(t.id, s) : Object(f.j)(t.id, s, "mod_menu"))
 						}, [S, u, p, t, O]),
 						J = Object(r.useCallback)(e => {
-							u(Object(h.m)(t.id, e, "post", n, s, void 0))
+							u(Object(h.n)(t.id, e, "post", n, s, void 0))
 						}, [u, n, s, t]),
 						Z = Object(r.useCallback)(() => {
 							var e;
@@ -5714,7 +5714,7 @@
 						Y = w === n.FILTERED || q,
 						J = w === n.REMOVED && !t.modRemovalReason && !Y,
 						Z = [n.REMOVED, n.SPAM].indexOf(w) > -1,
-						X = A ? h.m : Me,
+						X = A ? h.n : Me,
 						$ = Object(r.useCallback)(() => {
 							const e = A ? j.r : g.a;
 							P(e(t.id)), I(X(t.id, "approve"))
@@ -5727,7 +5727,7 @@
 							P(Object(y.fetchReasonsAndOpenModal)(A ? t.belongsTo.id : t.subredditId, [t.id]))
 						}, [t, A, P]),
 						se = Object(r.useCallback)(() => {
-							P(Object(E.i)(Object(l.b)(t.id, !1))), I(Object(h.m)(t.id, "post_flair_picker"))
+							P(Object(E.i)(Object(l.b)(t.id, !1))), I(Object(h.n)(t.id, "post_flair_picker"))
 						}, [I, P, t]),
 						ne = Object(r.useCallback)(e => {
 							let {
@@ -6453,7 +6453,7 @@
 					}
 				}, I.displayText)), I && I.isQuarantined && o.a.createElement(p.a, null), !n && !k.isSponsored && I && S && !E && o.a.createElement(f.a, {
 					className: j.a.SubscribeButton,
-					getEventFactory: e => Object(_.m)(k.id, e ? "unsubscribe" : "subscribe"),
+					getEventFactory: e => Object(_.n)(k.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
 						name: I.name,
 						type: Object(g.i)(I) ? h.a.PROFILE : h.a.SUBREDDIT
@@ -7053,7 +7053,7 @@
 					className: S.a.addModNote
 				})), V && Z && W && U && !R && r.a.createElement(h.a, {
 					className: S.a.SubscribeButton,
-					getEventFactory: e => (Q && !e && Q(), Object(v.m)(F.id, e ? "unsubscribe" : "subscribe", "post", B, I)),
+					getEventFactory: e => (Q && !e && Q(), Object(v.n)(F.id, e ? "unsubscribe" : "subscribe", "post", B, I)),
 					identifier: {
 						name: V.name,
 						type: J ? O.a.PROFILE : O.a.SUBREDDIT
@@ -9609,4 +9609,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.1e3c207961d9c60d20ea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.1418787191c5b419421e.js.map

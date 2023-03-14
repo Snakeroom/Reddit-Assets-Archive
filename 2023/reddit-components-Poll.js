@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Poll.8461bd856f1181e2158a.js
-// Retrieved at 2/23/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Poll.6a7b5b2bd3d99a318955.js
+// Retrieved at 3/14/2023, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Poll"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -289,9 +289,9 @@
 			})), n.d(t, "f", (function() {
 				return T
 			})), n.d(t, "g", (function() {
-				return w
-			})), n.d(t, "d", (function() {
 				return R
+			})), n.d(t, "d", (function() {
+				return k
 			})), n.d(t, "e", (function() {
 				return D
 			})), n.d(t, "h", (function() {
@@ -327,9 +327,9 @@
 				L = Object(s.a)(v.t),
 				A = Object(s.a)(v.u),
 				S = Object(s.a)(v.v),
-				k = Object(s.a)(v.w),
-				w = Object(s.a)(v.x),
-				R = (e, t) => async (n, r, s) => {
+				w = Object(s.a)(v.w),
+				R = Object(s.a)(v.x),
+				k = (e, t) => async (n, r, s) => {
 					let o, {
 							apiContext: i,
 							gqlContext: c
@@ -413,7 +413,7 @@
 					} = r;
 					t(S());
 					const o = await Object(b.a)(s(), e);
-					o.ok ? t(k(o.body)) : t(A({
+					o.ok ? t(w(o.body)) : t(A({
 						error: o.error
 					}))
 				}
@@ -810,9 +810,9 @@
 			}
 			var A = n("./src/reddit/actions/governance/index.ts"),
 				S = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				k = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				w = n("./src/reddit/helpers/trackers/post.ts"),
-				R = n("./src/reddit/selectors/crypto/points.ts"),
+				w = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				R = n("./src/reddit/helpers/trackers/post.ts"),
+				k = n("./src/reddit/selectors/crypto/points.ts"),
 				D = n("./src/reddit/components/Poll/PollExpiry/index.tsx"),
 				V = n("./src/reddit/components/Poll/PollBody/ClosedPoll/index.m.less"),
 				B = n.n(V);
@@ -821,7 +821,7 @@
 				let t;
 				const {
 					pointsDetails: n
-				} = Object(R.c)();
+				} = Object(k.c)();
 				return e.poll.options.forEach(n => {
 					t || (t = n);
 					const s = e.result.options[n.id],
@@ -873,7 +873,7 @@
 								for (const t of e)
 									if (t.checked) return parseInt(t.value)
 							}(Array.from(n.elements).filter(Z));
-						U()(r) || (this.props.onVoteSelection(t.options[r]), this.props.sendEvent(Object(w.l)(t.id, t.postId, r)))
+						U()(r) || (this.props.onVoteSelection(t.options[r]), this.props.sendEvent(Object(R.m)(t.id, t.postId, r)))
 					}
 				}
 				render() {
@@ -927,7 +927,7 @@
 							poll: e,
 							sendEvent: t
 						} = this.props;
-						e && t(Object(w.k)(e.id, e.postId))
+						e && t(Object(R.l)(e.id, e.postId))
 					}
 				}
 				componentDidMount() {
@@ -975,8 +975,8 @@
 				result: (e, t) => e.polls.results[t.resultType][t.pollId],
 				voteInProgress: (e, t) => !!e.polls.api.voting.pending[t.pollId]
 			});
-			var ne = Object(k.v)({
-					isCommentsPage: k.y
+			var ne = Object(w.v)({
+					isCommentsPage: w.y
 				})(Object(a.b)(te, (e, t) => ({
 					onVoteSelection: n => e(Object(A.d)(t.pollId, n.id))
 				}))(Object(S.c)(ee))),
@@ -1044,7 +1044,7 @@
 					let {
 						subredditId: n
 					} = t;
-					return Object(R.b)(e, n)
+					return Object(k.b)(e, n)
 				}
 			});
 			var me = Object(a.b)(ue)((function(e) {
@@ -1094,7 +1094,7 @@
 					let {
 						subredditId: n
 					} = t;
-					return Object(R.b)(e, n)
+					return Object(k.b)(e, n)
 				},
 				poll: (e, t) => {
 					let {
@@ -1820,4 +1820,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Poll.8461bd856f1181e2158a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Poll.6a7b5b2bd3d99a318955.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.38a2f5d5b431e054b279.js
-// Retrieved at 3/13/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.35a77d6afddfa0c4dae8.js
+// Retrieved at 3/14/2023, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./src/lib/LiveChatActiveUsers/index.m.less": function(e, t, s) {
@@ -2581,7 +2581,7 @@
 					}
 				}, I.displayText)), I && I.isQuarantined && n.a.createElement(u.a, null), !o && !k.isSponsored && I && w && !j && n.a.createElement(h.a, {
 					className: E.a.SubscribeButton,
-					getEventFactory: e => Object(O.m)(k.id, e ? "unsubscribe" : "subscribe"),
+					getEventFactory: e => Object(O.n)(k.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
 						name: I.name,
 						type: Object(C.i)(I) ? x.a.PROFILE : x.a.SUBREDDIT
@@ -3598,7 +3598,7 @@
 					...e,
 					...t,
 					...s,
-					postClickEventFactory: (e, t) => Object(Z.m)(e, t),
+					postClickEventFactory: (e, t) => Object(Z.n)(e, t),
 					postComponentForLayout: Q.b
 				}));
 
@@ -3817,4 +3817,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.38a2f5d5b431e054b279.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.35a77d6afddfa0c4dae8.js.map

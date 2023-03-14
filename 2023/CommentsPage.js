@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.daf70374d3f9737fe469.js
-// Retrieved at 3/13/2023, 6:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.fc3aa36e1de160d61d1f.js
+// Retrieved at 3/14/2023, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "CollectionCommentsPage~SearchResults", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -19342,7 +19342,7 @@
 					})
 				}), _ && v && o.a.createElement(d.a, {
 					className: g.a.subscribeButton,
-					getEventFactory: e => Object(p.m)(n.id, e ? "unsubscribe" : "subscribe"),
+					getEventFactory: e => Object(p.n)(n.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
 						name: v.name,
 						type: Object(f.i)(v) ? u.a.PROFILE : u.a.SUBREDDIT
@@ -22172,7 +22172,7 @@
 					Kt = Pe.removedByCategory && Pe.removedByCategory !== A.g.Reddit || qt,
 					zt = !Kt && !Pe.isArchived,
 					Zt = Object(o.useCallback)(() => {
-						me(M ? A.f.UNFOLLOWED : A.f.FOLLOWED), qe(M ? Object(j.s)(Pe.id) : Object(j.e)(Pe.id))
+						me(M ? A.f.UNFOLLOWED : A.f.FOLLOWED), qe(M ? Object(j.t)(Pe.id) : Object(j.f)(Pe.id))
 					}, [me, qe, M, Pe.id]),
 					Yt = i.a.createElement(i.a.Fragment, null, i.a.createElement(Ot, {
 						post: Pe,
@@ -22488,7 +22488,7 @@
 					isTypingIndicatorsReadLoadTest: q,
 					postId: Pe.id
 				}), !Xe && Qt)));
-				const tn = Object(o.useCallback)((e, t) => Object(j.m)(e, t), []);
+				const tn = Object(o.useCallback)((e, t) => Object(j.n)(e, t), []);
 				return i.a.createElement(pe.b, {
 					className: Object(m.a)(t, gt.a.postContainer, {
 						[gt.a.hasEventMeta]: Object(Ne.a)(Pe)
@@ -22853,7 +22853,7 @@
 					}
 				}, I.displayText)), I && I.isQuarantined && r.a.createElement(p.a, null), !s && !k.isSponsored && I && S && !x && r.a.createElement(f.a, {
 					className: y.a.SubscribeButton,
-					getEventFactory: e => Object(_.m)(k.id, e ? "unsubscribe" : "subscribe"),
+					getEventFactory: e => Object(_.n)(k.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
 						name: I.name,
 						type: Object(O.i)(I) ? h.a.PROFILE : h.a.SUBREDDIT
@@ -23544,7 +23544,7 @@
 					className: S.a.addModNote
 				})), G && J && W && U && !N && o.a.createElement(h.a, {
 					className: S.a.SubscribeButton,
-					getEventFactory: e => (Z && !e && Z(), Object(v.m)(B.id, e ? "unsubscribe" : "subscribe", "post", F, I)),
+					getEventFactory: e => (Z && !e && Z(), Object(v.n)(B.id, e ? "unsubscribe" : "subscribe", "post", F, I)),
 					identifier: {
 						name: G.name,
 						type: Q ? C.a.PROFILE : C.a.SUBREDDIT
@@ -24832,7 +24832,7 @@
 						}
 					},
 					onClick: function() {
-						v(Object(m.n)(C.id, void 0, O))
+						v(Object(m.o)(C.id, void 0, O))
 					}
 				}, s.fbt._("All Comments", null, {
 					hk: "4hJcyz"
@@ -29480,16 +29480,16 @@
 				Object(c.useEffect)(() => {
 					var e;
 					null === (e = o.current) || void 0 === e || e.disconnect(), o.current = new H(() => {
-						s(Object(N.i)(n.id))
+						s(Object(N.j)(n.id))
 					}, () => {
-						s(Object(N.f)(n.id, W, !0))
+						s(Object(N.g)(n.id, W, !0))
 					}), o.current.connect(r.current)
 				}, [n, s]);
 				const u = Object(c.useCallback)(() => {
 						const e = Object(m.a)(n.id);
 						t(Object(F.c)({
 							key: e
-						})), window.scroll(0, 0), s(Object(N.h)(n.id))
+						})), window.scroll(0, 0), s(Object(N.i)(n.id))
 					}, [n, s, t]),
 					p = Object(c.useCallback)(() => {
 						s(C)
@@ -30640,7 +30640,7 @@
 						hostPostData: o,
 						listingBelowVariant: i
 					} = s;
-					return Object(f.m)(e, t, "post", r, o, i, void 0)
+					return Object(f.n)(e, t, "post", r, o, i, void 0)
 				},
 				L = Object(s.b)(S, I, (e, t, n) => ({
 					...e,
@@ -41233,7 +41233,7 @@
 						pathname: Object(C.b)(F),
 						state: null == k ? void 0 : k.locationState
 					},
-					onClick: () => I(Object(O.n)(D, j, s))
+					onClick: () => I(Object(O.o)(D, j, s))
 				}, T._("View all comments", null, {
 					hk: "3I5IX9"
 				})), !W && !!(null == j ? void 0 : j.parentId) && r.a.createElement(p.a, {
@@ -42844,7 +42844,7 @@
 					}
 				}),
 				He = (e, t, n, s) => {
-					if (n) return Object(Fe.m)(e, t);
+					if (n) return Object(Fe.n)(e, t);
 					const {
 						listingKey: r,
 						searchOptions: o,
@@ -42852,7 +42852,7 @@
 						searchDiscoveryUnit: a,
 						sendEvent: c
 					} = s;
-					return c(Object(V.r)(e, o, i, V.E[t], r, a)), Object(Fe.m)(e, t)
+					return c(Object(V.r)(e, o, i, V.E[t], r, a)), Object(Fe.n)(e, t)
 				},
 				Ge = Object(a.b)(We, (e, t) => ({
 					...Object(Ue.b)(e),
@@ -49423,4 +49423,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.daf70374d3f9737fe469.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.fc3aa36e1de160d61d1f.js.map
