@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PushNotifications.0926c7c5cbe359f8bfab.js
-// Retrieved at 3/16/2023, 10:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PushNotifications.6836d32e52760d9e2d44.js
+// Retrieved at 3/16/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -96,16 +96,16 @@
 				y = i("./src/reddit/constants/experiments.ts"),
 				w = i("./src/reddit/helpers/chooseVariant/index.ts"),
 				S = i("./src/reddit/selectors/user.ts");
-			const F = e => Object(w.c)(e, {
+			const N = e => Object(w.c)(e, {
 				experimentEligibilitySelector: S.S,
-				experimentName: y.xb
-			}) === y.Md;
-			var N = i("./src/reddit/selectors/experiments/delayDnPermission.ts"),
+				experimentName: y.yb
+			}) === y.Nd;
+			var F = i("./src/reddit/selectors/experiments/delayDnPermission.ts"),
 				x = i("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts");
 			const q = e => Object(w.c)(e, {
-				experimentName: y.bc,
+				experimentName: y.cc,
 				experimentEligibilitySelector: w.a
-			}) === y.Md;
+			}) === y.Nd;
 			var C = i("./src/reddit/selectors/meta.ts");
 			let W = !1;
 			const D = async (e, t) => {
@@ -137,10 +137,10 @@
 						u = Object(C.f)(c),
 						l = q(c),
 						b = !!Object(k.a)(c),
-						f = Object(N.a)(c),
+						f = Object(F.a)(c),
 						p = Object(x.e)(c),
 						m = Object(h.c)(g.a.NSFW_BLOCKING_MODAL_V2)(c),
-						O = F(c);
+						O = N(c);
 					if (p || m) return;
 					if (await Object(r.a)() || u) return;
 					await D(c, n);
@@ -400,4 +400,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.0926c7c5cbe359f8bfab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.6836d32e52760d9e2d44.js.map

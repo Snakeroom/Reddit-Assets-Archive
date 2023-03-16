@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.9c3ebab941d29837620a.js
-// Retrieved at 3/16/2023, 10:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.b33e665da495256239cb.js
+// Retrieved at 3/16/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -2699,7 +2699,7 @@
 						subredditId: n
 					}) : void 0
 				},
-				showCommunityChat: le.b
+				showCommunityChat: le.d
 			}), Oe = {
 				threshold: [.5, .001],
 				rootMargin: `${1-ee.f}px 0px 0px 0px`
@@ -5590,7 +5590,7 @@
 				const t = Object(r.f)().getState(),
 					n = Object(g.a)(t, Object(o.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === m.fd.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.fd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.fd.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === m.gd.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.gd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.gd.LargeImagePreview ? e.reredditButtons : [];
 					return i.a.createElement(N, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -6558,7 +6558,7 @@
 					const t = Object(N.b)(),
 						[n, s] = Object(a.useState)(null),
 						[i, r] = Object(a.useState)(!1),
-						o = Object(d.e)(S.c) === e.id,
+						o = Object(d.e)(S.d) === e.id,
 						c = Object(a.useMemo)(() => {
 							var t;
 							return decodeURIComponent(null !== (t = e.roomId) && void 0 !== t ? t : "")
@@ -6607,7 +6607,7 @@
 						renderIcon: s
 					} = e;
 					const i = Object(d.d)(),
-						r = Object(d.e)(S.c) === t.id,
+						r = Object(d.e)(S.d) === t.id,
 						c = Object(a.useMemo)(() => Object(D.a)(t.id, t.name), [t]);
 					return o.a.createElement(y.a, {
 						className: Object(m.a)(W.a.listItem, {
@@ -6692,7 +6692,7 @@
 					let {
 						subredditId: t
 					} = e;
-					const [n, i] = Object(a.useState)(!1), r = Object(d.e)(e => Object(S.d)(e, t)), c = Object(a.useMemo)(() => r.length - 5, [r]), l = Object(a.useMemo)(() => {
+					const [n, i] = Object(a.useState)(!1), r = Object(d.e)(e => Object(S.e)(e, t)), c = Object(a.useMemo)(() => r.length - 5, [r]), l = Object(a.useMemo)(() => {
 						const e = s.fbt._("{number of hidden channels in community chat sidebar} more", [s.fbt._param("number of hidden channels in community chat sidebar", c.toString())], {
 								hk: "4cTN8u"
 							}),
@@ -7125,8 +7125,8 @@
 						} = t;
 						return Object(vt.c)(e, n)
 					},
-					isInNewModuleNCPV3Experiment: e => Object(Ct.a)(e) === gt.Ne.NewModule,
-					showCommunityChat: Et.b,
+					isInNewModuleNCPV3Experiment: e => Object(Ct.a)(e) === gt.Oe.NewModule,
+					showCommunityChat: Et.d,
 					showGovernance: ft.d.spPoints,
 					showLeaderboard: ft.d.spLeaderboard,
 					showPredictionsLeaderboard: (e, t) => {
@@ -11326,8 +11326,8 @@
 			const o = e => i.e[Object(r.U)(e, {})] === i.d.Card,
 				d = e => Object(a.c)(e, {
 					experimentEligibilitySelector: o,
-					experimentName: s.mb
-				}) === s.Tc.Treatment
+					experimentName: s.nb
+				}) === s.Uc.Treatment
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, n) {
 			"use strict";
@@ -11344,11 +11344,11 @@
 				d = n("./node_modules/reselect/es/index.js");
 			const c = Object(d.a)(e => Object(i.c)(e, {
 					experimentEligibilitySelector: e => Object(o.h)(e) && Object(r.f)(e),
-					experimentName: s.nc
+					experimentName: s.oc
 				}), a.a),
 				l = Object(d.a)(e => Object(i.c)(e, {
 					experimentEligibilitySelector: e => !Object(o.h)(e) && Object(r.f)(e),
-					experimentName: s.mc
+					experimentName: s.nc
 				}), a.a),
 				u = Object(d.a)(c, l, (e, t) => e || t),
 				m = Object(d.a)(c, l, (e, t) => !(!e && !t))
@@ -11525,4 +11525,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.9c3ebab941d29837620a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.b33e665da495256239cb.js.map

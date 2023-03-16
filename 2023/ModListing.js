@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.65377ae1f355162700cf.js
-// Retrieved at 3/16/2023, 10:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.5a24269415b2f075f574.js
+// Retrieved at 3/16/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, n) {
@@ -516,9 +516,9 @@
 			})), n.d(t, "unhideSubredditPending", (function() {
 				return J
 			})), n.d(t, "unhideSubredditFailed", (function() {
-				return Q
-			})), n.d(t, "toggleHiddenSubreddit", (function() {
 				return X
+			})), n.d(t, "toggleHiddenSubreddit", (function() {
+				return Q
 			})), n.d(t, "hideSubreddit", (function() {
 				return Y
 			})), n.d(t, "unhideSubreddit", (function() {
@@ -672,14 +672,14 @@
 				G = Object(d.a)(T.a),
 				U = Object(d.a)(T.l),
 				J = Object(d.a)(T.k),
-				Q = Object(d.a)(T.j),
-				X = (e, t) => async (n, r, s) => {
+				X = Object(d.a)(T.j),
+				Q = (e, t) => async (n, r, s) => {
 					let {
 						apiContext: i
 					} = s;
 					const o = r(),
 						d = Object(P.m)(o),
-						[a, c, l, u] = t ? [K, q, G, O] : [J, U, Q, E];
+						[a, c, l, u] = t ? [K, q, G, O] : [J, U, X, E];
 					if (!d || !d.displayText) return;
 					const {
 						currentPage: m
@@ -688,7 +688,7 @@
 					n(a(e));
 					const p = await u(i(), d.displayText, e);
 					p.ok ? (await n(R(m.routeMatch.match, !0)), n(c(e))) : n(l(p.body))
-				}, Y = e => X(e, !0), W = e => X(e, !1)
+				}, Y = e => Q(e, !0), W = e => Q(e, !1)
 		},
 		"./src/reddit/actions/postList.ts": function(e, t, n) {
 			"use strict";
@@ -2208,7 +2208,7 @@
 				apiError: e => e.modListingPage.filteredSubreddits.api.error,
 				isApiPending: V
 			});
-			class Q extends o.a.Component {
+			class X extends o.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						subredditInput: ""
@@ -2252,9 +2252,9 @@
 					}, e.apiError.explanation))
 				}
 			}
-			var X = Object(d.b)(J, e => ({
+			var Q = Object(d.b)(J, e => ({
 					hide: t => e(Object(m.hideSubreddit)(t))
-				}))(Object(R.c)(Q)),
+				}))(Object(R.c)(X)),
 				Y = n("./src/lib/lessComponent.tsx"),
 				W = n("./src/reddit/components/SubredditIcon/index.tsx"),
 				z = n("./src/reddit/icons/fonts/Clear/index.tsx"),
@@ -2362,7 +2362,7 @@
 						hk: "YdVw7"
 					})), e.filtered && o.a.createElement("div", {
 						className: ue.a.inputContainer
-					}, o.a.createElement(X, null), o.a.createElement(ce, {
+					}, o.a.createElement(Q, null), o.a.createElement(ce, {
 						hiddenSubredditsNames: e.hiddenSubredditsNames
 					})))
 				}
@@ -2504,7 +2504,7 @@
 				const p = Object(o.e)(e => e.subreddits.survey[n]),
 					b = Object(o.e)(e => e.subreddits.progressModule[n]),
 					h = Object(o.e)(u.a),
-					f = h !== c.Ne.NewModule;
+					f = h !== c.Oe.NewModule;
 				return (null === (s = null == b ? void 0 : b.cards) || void 0 === s ? void 0 : s.length) > 0 && f ? i.a.createElement(m, {
 					closeModuleOnMount: !!t && t !== l.g.Large,
 					subredditId: n,
@@ -2554,15 +2554,15 @@
 			const o = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: i.S,
-						experimentName: r.vd
+						experimentName: r.wd
 					});
-					return !(!t || Object(r.ng)(t))
+					return !(!t || Object(r.og)(t))
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: i.S,
-						experimentName: r.vd
-					}) === r.Qd.ListingEnabled
+						experimentName: r.wd
+					}) === r.Rd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/experiments/navbarLikeMweb.ts": function(e, t, n) {
@@ -2573,9 +2573,9 @@
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = e => Object(s.c)(e, {
-				experimentName: r.Ee,
+				experimentName: r.Fe,
 				experimentEligibilitySelector: s.a
-			}) === r.Me.Enabled
+			}) === r.Ne.Enabled
 		},
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, n) {
 			"use strict";
@@ -2615,8 +2615,8 @@
 											variant: t
 										}, {})
 									}
-								} else Object(s.d)(e, r.yf, t)
-							})(t(), r.Q.Control1);
+								} else Object(s.d)(e, r.zf, t)
+							})(t(), r.R.Control1);
 							else if (a === o.a.Treatment) return window.location.href = e.pathname, !1
 					})
 				}
@@ -2636,15 +2636,15 @@
 				o = n("./src/reddit/selectors/user.ts");
 			const d = e => {
 					var t;
-					return (null === (t = null == e ? void 0 : e.user.experiments.byName[s.Qc]) || void 0 === t ? void 0 : t.variant) === s.Md
+					return (null === (t = null == e ? void 0 : e.user.experiments.byName[s.Rc]) || void 0 === t ? void 0 : t.variant) === s.Nd
 				},
 				a = Object(r.a)(e => Object(i.c)(e, {
 					experimentEligibilitySelector: o.S,
-					experimentName: s.Sb
-				}), e => e === s.bd.BottomSheet),
+					experimentName: s.Tb
+				}), e => e === s.cd.BottomSheet),
 				c = Object(r.a)(e => Object(i.c)(e, {
 					experimentEligibilitySelector: o.S,
-					experimentName: s.Sb,
+					experimentName: s.Tb,
 					expEventOverride: !1
 				}), e => !!e)
 		},
@@ -2653,4 +2653,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.65377ae1f355162700cf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.5a24269415b2f075f574.js.map

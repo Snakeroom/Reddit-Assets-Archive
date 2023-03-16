@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NsfwSearchModal.9a31a333678abf52d65f.js
-// Retrieved at 3/16/2023, 10:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NsfwSearchModal.8bd558e319ebdf7daee1.js
+// Retrieved at 3/16/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NsfwSearchModal"], {
 		"./src/reddit/components/Upsell/NsfwSearch/Modal.tsx": function(e, t, n) {
@@ -24,30 +24,30 @@
 				j = n("./src/reddit/actions/contentGate.ts"),
 				g = n("./src/reddit/selectors/user.ts"),
 				w = n("./src/reddit/components/Upsell/NsfwSearch/index.m.less"),
-				h = n.n(w);
-			const v = () => {
+				v = n.n(w);
+			const h = () => {
 					const e = Object(d.d)(),
 						t = Object(b.b)(),
 						n = Object(d.e)(g.S);
 					return i.a.createElement("div", {
-						className: h.a.modalContent
+						className: v.a.modalContent
 					}, i.a.createElement("div", {
-						className: h.a.textContainer
+						className: v.a.textContainer
 					}, i.a.createElement(x.b, {
 						fill: x.a.DEFAULT
 					}), i.a.createElement("span", {
-						className: h.a.title
+						className: v.a.title
 					}, (() => l.fbt._("Confirm you're over 18", null, {
 						hk: "UUekV"
 					}))()), i.a.createElement("span", {
-						className: h.a.body
+						className: v.a.body
 					}, (() => l.fbt._("This page is NSFW (Not Safe for Work) and may have mature or adult content. To continue, confirm you’re over 18.", null, {
 						hk: "1YTdFy"
 					}))())), i.a.createElement("div", {
-						className: h.a.buttonContainer
+						className: v.a.buttonContainer
 					}, i.a.createElement(m.t, {
 						priority: m.c.Primary,
-						className: h.a.continue,
+						className: v.a.continue,
 						onClick: async () => {
 							t(Object(f.b)()), Object(p.b)(p.a.Continue), n ? e(Object(j.r)()) : Object(j.q)(), Object(O.d)(), window.location.reload()
 						},
@@ -56,7 +56,7 @@
 						hk: "3aYK0v"
 					}))()), i.a.createElement(m.t, {
 						priority: m.c.Secondary,
-						className: Object(o.a)(h.a.continue, h.a.dismiss),
+						className: Object(o.a)(v.a.continue, v.a.dismiss),
 						onClick: () => {
 							t(Object(f.c)()), Object(p.b)(p.a.Dismiss), e(Object(u.b)("/"))
 						},
@@ -70,8 +70,8 @@
 					return i.a.useEffect(() => {
 						e(Object(C.c)())
 					}, [e]), i.a.createElement("div", {
-						className: h.a.container
-					}, i.a.createElement(v, null))
+						className: v.a.container
+					}, i.a.createElement(h, null))
 				};
 
 			function _() {
@@ -87,10 +87,10 @@
 				fbt: B
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), y = Object(s.a)(() => i.a.createElement(N, null));
 			t.default = e => i.a.createElement(y, _({}, e, {
-				className: Object(o.a)(e.className, h.a.modal),
+				className: Object(o.a)(e.className, v.a.modal),
 				shouldBlurBackground: !0,
 				onOverlayClick: c.a,
-				overlayClassName: h.a.overlay
+				overlayClassName: v.a.overlay
 			}))
 		},
 		"./src/reddit/components/Upsell/NsfwSearch/index.m.less": function(e, t, n) {
@@ -289,8 +289,8 @@
 					const t = Date.parse(e);
 					return Number.isNaN(t) ? (localStorage.removeItem(c.b.XpromoConsolidation), !0) : Date.now() > t + d
 				},
-				m = (e, t) => t === a.a.NoPreview && (e === r.hb.SkippableButtons || e === r.hb.SkippableText),
-				p = (e, t) => t === a.a.NoPreview && e === r.hb.NoUpsell,
+				m = (e, t) => t === a.a.NoPreview && (e === r.ib.SkippableButtons || e === r.ib.SkippableText),
+				p = (e, t) => t === a.a.NoPreview && e === r.ib.NoUpsell,
 				f = Object(l.a)(a.h, a.g, (e, t) => {
 					return {
 						isControlVariant: !(!e || !t) && ((e, t) => t === a.a.NoPreview && !m(e, t) && !p(e, t))(e, t),
@@ -303,4 +303,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwSearchModal.9a31a333678abf52d65f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwSearchModal.8bd558e319ebdf7daee1.js.map
