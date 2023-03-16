@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.172f2ba52a34416362db.js
-// Retrieved at 3/16/2023, 10:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.a0ca1b9ed4d14d762818.js
+// Retrieved at 3/16/2023, 12:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -6923,9 +6923,9 @@
 		"./src/reddit/pages/SearchResults/index.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "pageConfig", (function() {
-				return ur
-			})), s.d(t, "default", (function() {
 				return pr
+			})), s.d(t, "default", (function() {
+				return br
 			}));
 			var n = s("./node_modules/lodash/pick.js"),
 				r = s.n(n),
@@ -8579,39 +8579,40 @@
 				Yn = s("./src/reddit/constants/mFeedBanner.ts"),
 				Qn = s("./src/reddit/constants/modals.ts"),
 				Jn = s("./src/reddit/constants/nsfwBanner.ts"),
-				Xn = s("./src/reddit/selectors/experiments/search/searchSingleVariant.ts");
-			const Zn = e => Object(Xn.a)(e, Tn.Ic),
-				$n = Object(Y.a)(e => Object(Ln.c)(e, {
+				Xn = s("./src/reddit/helpers/installGoodVisitFeedSearchTracker/index.ts"),
+				Zn = s("./src/reddit/selectors/experiments/search/searchSingleVariant.ts");
+			const $n = e => Object(Zn.a)(e, Tn.Ic),
+				er = Object(Y.a)(e => Object(Ln.c)(e, {
 					experimentEligibilitySelector: Ln.a,
 					experimentName: Tn.Ic,
 					expEventOverride: !1
 				}), e => !!e),
-				er = e => Object(Xn.a)(e, Tn.Ce),
-				tr = Object(Y.a)(e => Object(Ln.c)(e, {
+				tr = e => Object(Zn.a)(e, Tn.Ce),
+				sr = Object(Y.a)(e => Object(Ln.c)(e, {
 					experimentEligibilitySelector: Ln.a,
 					experimentName: Tn.Ce,
 					expEventOverride: !1
 				}), e => !!e);
-			var sr, nr = s("./src/reddit/selectors/userPrefs.ts"),
-				rr = s("./src/reddit/components/SearchBanner/index.m.less"),
-				or = s.n(rr);
+			var nr, rr = s("./src/reddit/selectors/userPrefs.ts"),
+				or = s("./src/reddit/components/SearchBanner/index.m.less"),
+				ar = s.n(or);
 			! function(e) {
 				e.Covid = "covid", e.NSFW = "nsfw", e.MFeed = "mfeed"
-			}(sr || (sr = {}));
-			const ar = {
-				[sr.Covid]: {
+			}(nr || (nr = {}));
+			const ir = {
+				[nr.Covid]: {
 					visible: !1,
 					dismissed: !1,
 					seen: !1,
 					announcement: zn.a
 				},
-				[sr.NSFW]: {
+				[nr.NSFW]: {
 					visible: !1,
 					dismissed: !1,
 					seen: !1,
 					announcement: Jn.b
 				},
-				[sr.MFeed]: {
+				[nr.MFeed]: {
 					visible: !1,
 					dismissed: !1,
 					seen: !1,
@@ -8619,7 +8620,7 @@
 				}
 			};
 
-			function ir() {
+			function cr() {
 				const e = Object(Ce.a)(),
 					t = Object(R.ib)(),
 					s = Object(i.f)(),
@@ -8628,13 +8629,13 @@
 					} = Object(Bt.b)(),
 					c = Object(i.d)(),
 					[d, m] = Object(o.useState)(null),
-					u = Object(o.useRef)(ar),
+					u = Object(o.useRef)(ir),
 					p = Object(R.Z)(t),
-					b = Object(i.e)(tr),
-					h = Object(i.e)($n),
-					g = Object(i.e)(nr.a);
+					b = Object(i.e)(sr),
+					h = Object(i.e)(er),
+					g = Object(i.e)(rr.a);
 				if (Object(o.useEffect)(() => {
-						Object(R.db)(t) ? m(sr.Covid) : b && Object(R.eb)(t) && n && g && er(s.getState()) ? m(sr.MFeed) : h && Object(R.fb)(t) && !g && Zn(s.getState()) ? m(sr.NSFW) : m(null)
+						Object(R.db)(t) ? m(nr.Covid) : b && Object(R.eb)(t) && n && g && tr(s.getState()) ? m(nr.MFeed) : h && Object(R.fb)(t) && !g && $n(s.getState()) ? m(nr.NSFW) : m(null)
 					}, [t, p, g, n, b, h]), !d || u.current[d].dismissed) return null;
 
 				function O(t) {
@@ -8643,20 +8644,20 @@
 				const f = u.current[d];
 				return f.seen || (O("view"), f.seen = !0), a.a.createElement(qn, {
 					announcement: f.announcement,
-					className: or.a.announcement,
+					className: ar.a.announcement,
 					onBtnClick: function() {
-						d === sr.NSFW && c(Object(Mn.h)(Qn.a.NSFW_SEARCH_MODAL)), O("click")
+						d === nr.NSFW && c(Object(Mn.h)(Qn.a.NSFW_SEARCH_MODAL)), O("click"), Object(Xn.e)(B.a.SEARCH_RESULTS, s.getState(), Object(l.e)(p))
 					},
 					onClose: function() {
 						O("dismiss"), f.dismissed = !0, m(null)
 					}
 				})
 			}
-			var cr = s("./src/reddit/pages/SearchResults/index.m.less"),
-				dr = s.n(cr);
+			var dr = s("./src/reddit/pages/SearchResults/index.m.less"),
+				lr = s.n(dr);
 
-			function lr() {
-				return (lr = Object.assign || function(e) {
+			function mr() {
+				return (mr = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -8664,8 +8665,8 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const mr = 3e3,
-				ur = {
+			const ur = 3e3,
+				pr = {
 					[je.h.Listings]: {
 						tab: je.h.Listings,
 						sidebar: !1,
@@ -8688,7 +8689,7 @@
 					}
 				};
 
-			function pr(e) {
+			function br(e) {
 				let {
 					location: t,
 					match: s
@@ -8710,7 +8711,7 @@
 						searchQueryId: C
 					} = Object(i.e)(e => Object(Fn.a)(e)),
 					v = Object(i.e)(Rn),
-					E = (Object(i.e)(e => Object(Xn.a)(e, Tn.Hc)), Object(R.Z)(m)),
+					E = (Object(i.e)(e => Object(Zn.a)(e, Tn.Hc)), Object(R.Z)(m)),
 					S = Object(d.a)(E) || null,
 					k = s.params.multiredditName,
 					_ = s.params.subredditName || k || "",
@@ -8728,17 +8729,17 @@
 						redesign: !0,
 						searchOptions: N
 					},
-					B = ur[T].tab,
-					A = Boolean(w) || ur[T].sidebar && !k,
-					D = ur[T].filterNav || T === je.h.Comments && v,
+					B = pr[T].tab,
+					A = Boolean(w) || pr[T].sidebar && !k,
+					D = pr[T].filterNav || T === je.h.Comments && v,
 					U = Object(wn.a)({
 						redditStyle: !0,
 						theme: g
 					});
 				let V;
-				return C && (xn.a.set(ws.a.SERP, P, C), n(Object(p.c)())), Object(R.S)(m) || Object(R.D)(m) ? V = a.a.createElement(gn, lr({}, M, {
+				return C && (xn.a.set(ws.a.SERP, P, C), n(Object(p.c)())), Object(R.S)(m) || Object(R.D)(m) ? V = a.a.createElement(gn, mr({}, M, {
 					url: Js(E)
-				})) : j && y && (V = a.a.createElement(gn, lr({}, M, {
+				})) : j && y && (V = a.a.createElement(gn, mr({}, M, {
 					subreddit: j,
 					url: Js(E, j.name)
 				}))), Object(yn.c)(), Object(o.useEffect)((function() {
@@ -8749,7 +8750,7 @@
 					On.a.reset()
 				}), []), Object(o.useEffect)(() => {
 					let e = 0;
-					return e = window.setTimeout(() => n(Object(b.k)()), mr), () => {
+					return e = window.setTimeout(() => n(Object(b.k)()), ur), () => {
 						Object(Ps.b)(Ps.a.SearchResults), window.clearTimeout(e)
 					}
 				}, []), Object(o.useEffect)(() => {
@@ -8769,13 +8770,13 @@
 						let e = 0;
 						return e = window.setTimeout(() => {
 							O.current = !0, n(Object(b.j)())
-						}, mr), () => {
+						}, ur), () => {
 							window.clearTimeout(e)
 						}
 					}
 				}, [B]), a.a.createElement(Pn, {
 					backgroundColor: U.canvas,
-					content: a.a.createElement(a.a.Fragment, null, a.a.createElement(h.a, null), a.a.createElement(ir, null), a.a.createElement(bt, {
+					content: a.a.createElement(a.a.Fragment, null, a.a.createElement(h.a, null), a.a.createElement(cr, null), a.a.createElement(bt, {
 						listingKey: P,
 						listingName: _,
 						location: t,
@@ -8793,10 +8794,10 @@
 						subredditName: _,
 						tab: B
 					}), V && a.a.createElement("div", {
-						className: dr.a.searchSwitcherContainer
+						className: lr.a.searchSwitcherContainer
 					}, V)),
 					sidebar: A && a.a.createElement(us, {
-						className: dr.a.sidebar,
+						className: lr.a.sidebar,
 						listingKey: F,
 						listingName: _ || je.c,
 						searchOptions: L,
@@ -8948,4 +8949,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.172f2ba52a34416362db.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.a0ca1b9ed4d14d762818.js.map

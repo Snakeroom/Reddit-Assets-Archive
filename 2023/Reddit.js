@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.dcf40d5dc606a59f46e6.js
-// Retrieved at 3/16/2023, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.82aa04559d347ce32909.js
+// Retrieved at 3/16/2023, 12:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -17824,7 +17824,7 @@
 									const r = Date.now() - s;
 									Object(G.a)(Object(mv.f)("tab_backgrounded", n)(l.getState(), r, e, t))
 								}(s || e || n || t) && (Ln.cb(), Ln.gb(), Ln.eb(), Ln.db())
-							}(null === (e = null == n ? void 0 : n.locationState) || void 0 === e ? void 0 : e.clickId) && eO.e[n.locationState.clickId] && !eO.e[n.locationState.clickId].completed && ("visible" !== document.visibilityState ? Object(eO.c)(n.locationState.clickId) : Object(eO.d)(n.locationState.clickId))
+							}(null === (e = null == n ? void 0 : n.locationState) || void 0 === e ? void 0 : e.clickId) && eO.f[n.locationState.clickId] && !eO.f[n.locationState.clickId].completed && ("visible" !== document.visibilityState ? Object(eO.c)(n.locationState.clickId) : Object(eO.d)(n.locationState.clickId))
 						}), Object(ae.h)(l.getState()) && hv(l.getState), (e => {
 							return Object(hc.c)(e, {
 								experimentEligibilitySelector: hc.a,
@@ -21161,4 +21161,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.dcf40d5dc606a59f46e6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.82aa04559d347ce32909.js.map
