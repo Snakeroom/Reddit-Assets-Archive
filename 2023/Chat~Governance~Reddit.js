@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.2d1d9800b14e319619b2.js
-// Retrieved at 3/14/2023, 1:20:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.edbd9f1097fae0f706c0.js
+// Retrieved at 3/16/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -5413,11 +5413,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("184499"),
+				buildNumber: Object(r.c)("184563"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1678811667"),
+				buildTimestamp: Object(r.b)("1678971763"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -8155,14 +8155,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c80167f81cfd7be699a97955a097394f56798b3d4-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cca786d0bb74b3e46056634fbad55fd4c2299de2d-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "80167f81cfd7be699a97955a097394f56798b3d4-production",
+						release: "ca786d0bb74b3e46056634fbad55fd4c2299de2d-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(D.d)(), new d.Integrations.Breadcrumbs({
@@ -8715,7 +8715,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "80167f81cfd7be699a97955a097394f56798b3d4-production",
+							releaseClient: "ca786d0bb74b3e46056634fbad55fd4c2299de2d-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -18991,15 +18991,15 @@
 			})), i.d(t, "rf", (function() {
 				return oo
 			})), i.d(t, "cd", (function() {
-				return ao
-			})), i.d(t, "g", (function() {
 				return lo
-			})), i.d(t, "Od", (function() {
+			})), i.d(t, "g", (function() {
 				return co
+			})), i.d(t, "Od", (function() {
+				return uo
 			})), i.d(t, "Ae", (function() {
-				return _o
-			})), i.d(t, "ng", (function() {
 				return mo
+			})), i.d(t, "ng", (function() {
+				return po
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/fbt/lib/FbtPublic.js");
@@ -19253,7 +19253,7 @@
 			const Sn = "enabled",
 				On = "treatment",
 				In = e => e === Tn.Control1 || e === Tn.Control2;
-			var Rn, Cn, Fn, Nn, jn, An, Pn, xn, Ln, Dn, kn, Bn, Mn, Un, Gn, qn, Vn, Hn, Wn, zn, Kn, Yn, $n, Qn, Jn, Xn, Zn, er, tr, ir, nr, rr, sr, or, dr, ar, lr, cr, ur, _r, mr, pr, hr, fr, br, gr, vr, wr, yr, Er, Tr, Sr, Or, Ir, Rr, Cr, Fr, Nr, jr, Ar, Pr, xr, Lr, Dr, kr, Br, Mr, Ur, Gr, qr, Vr, Hr, Wr, zr, Kr, Yr, $r, Qr, Jr, Xr, Zr, es, ts, is, ns, rs, ss, os, ds, as, ls, cs, us, _s, ms, ps, hs, fs, bs, gs, vs, ws, ys, Es, Ts, Ss, Os, Is, Rs, Cs, Fs, Ns, js, As, Ps, xs, Ls, Ds, ks, Bs, Ms, Us, Gs, qs, Vs, Hs, Ws, zs, Ks, Ys, $s, Qs, Js, Xs, Zs, eo, to, io, no, ro, so, oo, ao;
+			var Rn, Cn, Fn, Nn, jn, An, Pn, xn, Ln, Dn, kn, Bn, Mn, Un, Gn, qn, Vn, Hn, Wn, zn, Kn, Yn, $n, Qn, Jn, Xn, Zn, er, tr, ir, nr, rr, sr, or, dr, ar, lr, cr, ur, _r, mr, pr, hr, fr, br, gr, vr, wr, yr, Er, Tr, Sr, Or, Ir, Rr, Cr, Fr, Nr, jr, Ar, Pr, xr, Lr, Dr, kr, Br, Mr, Ur, Gr, qr, Vr, Hr, Wr, zr, Kr, Yr, $r, Qr, Jr, Xr, Zr, es, ts, is, ns, rs, ss, os, ds, as, ls, cs, us, _s, ms, ps, hs, fs, bs, gs, vs, ws, ys, Es, Ts, Ss, Os, Is, Rs, Cs, Fs, Ns, js, As, Ps, xs, Ls, Ds, ks, Bs, Ms, Us, Gs, qs, Vs, Hs, Ws, zs, Ks, Ys, $s, Qs, Js, Xs, Zs, eo, to, io, no, ro, so, oo, ao, lo;
 			! function(e) {
 				e.Enabled = "enabled"
 			}(Rn || (Rn = {})),
@@ -19681,10 +19681,14 @@
 				e.Minimalist = "minimalist", e.HotnessSignals = "hotness_signals", e.Description = "description"
 			}(oo || (oo = {})),
 			function(e) {
+				e.Minimalist = "related_subs_minimal", e.SocialSignals = "related_subs_social", e.Description = "related_subs_description"
+			}(ao || (ao = {})),
+			function(e) {
 				e.BottomSheet = "bottom_sheet"
-			}(ao || (ao = {}));
-			const lo = {
+			}(lo || (lo = {}));
+			const co = {
 					[bn]: [Sn],
+					d2x_related_community_recommendations_profile: [ao.Minimalist, ao.Description, ao.SocialSignals],
 					[fn]: [Sn],
 					[je]: [Sn],
 					[an]: [Sn],
@@ -19692,7 +19696,7 @@
 					[on]: [oo.Minimalist, oo.Description, oo.HotnessSignals],
 					[en]: [ro.HideTrending],
 					[rn]: [Zs.TopTwo, Zs.All],
-					[nn]: [ao.BottomSheet],
+					[nn]: [lo.BottomSheet],
 					[Zi]: [Sn],
 					[Qi]: [Sn],
 					[$i]: [no.Ads, no.AdsUpdateSettings],
@@ -19942,8 +19946,8 @@
 					[ln]: [Sn],
 					[un]: [Sn]
 				},
-				co = new Set([Ki, Ie, wn, Vt, Et, Tt, bt, f, s, g, F, "guest_d2x_subreddit_subreddit_links_url", M, q, H, W, K, J, te, xe, Ge, qe, Je, Ve, re, se, oe, "d2x_signal_collection", ct, ht, ft, ut, we, ye, Gt, Ut, qt, Yt, Ee, ii, ni, ri, zt, Pi, ui, _i, hi, yi, Oe, vi, Ui, Gi, zi, dn]),
-				uo = {
+				uo = new Set([Ki, Ie, wn, Vt, Et, Tt, bt, f, s, g, F, "guest_d2x_subreddit_subreddit_links_url", M, q, H, W, K, J, te, xe, Ge, qe, Je, Ve, re, se, oe, "d2x_signal_collection", ct, ht, ft, ut, we, ye, Gt, Ut, qt, Yt, Ee, ii, ni, ri, zt, Pi, ui, _i, hi, yi, Oe, vi, Ui, Gi, zi, dn]),
+				_o = {
 					NFL: () => n.fbt._("NFL", null, {
 						hk: "3ktT9l"
 					}),
@@ -20050,9 +20054,9 @@
 						hk: "nSJdn"
 					})
 				},
-				_o = (e => e.reduce((e, t, i) => (e[t] = i + 1, e), {}))(["NFL", "Discussion", "Relationships", "Sports", "Gaming", "News", "Beauty", "Health & Fitness", "Learning", "Parenting", "Tech", "Crypto", "Science", "Video Games", "TV", "Popcorn", "Vroom", "Food", "Outdoors", "Fashion", "Books & Writing", "Art & Design", "Nostalgia", "Music", "Travel", "Photography", "Funny", "Wholesome", "Memes", "Aww", "Pics & Gifs", "Mindblowing", "Videos", "Cringe", "Schadenfreude"]),
-				mo = e => {
-					const t = uo[e];
+				mo = (e => e.reduce((e, t, i) => (e[t] = i + 1, e), {}))(["NFL", "Discussion", "Relationships", "Sports", "Gaming", "News", "Beauty", "Health & Fitness", "Learning", "Parenting", "Tech", "Crypto", "Science", "Video Games", "TV", "Popcorn", "Vroom", "Food", "Outdoors", "Fashion", "Books & Writing", "Art & Design", "Nostalgia", "Music", "Travel", "Photography", "Funny", "Wholesome", "Memes", "Aww", "Pics & Gifs", "Mindblowing", "Videos", "Cringe", "Schadenfreude"]),
+				po = e => {
+					const t = _o[e];
 					return t && t() || e
 				}
 		},
@@ -52584,4 +52588,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.2d1d9800b14e319619b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.edbd9f1097fae0f706c0.js.map
