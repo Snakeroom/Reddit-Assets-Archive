@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.63744a99ed502864a6e8.js
-// Retrieved at 3/13/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.7fffc0bcda0b7b584699.js
+// Retrieved at 3/16/2023, 10:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, n) {
@@ -651,7 +651,7 @@
 			})), n.d(t, "a", (function() {
 				return V
 			})), n.d(t, "c", (function() {
-				return z
+				return q
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/lodash/pick.js"),
@@ -881,7 +881,7 @@
 					})
 				}, "MetaFlair", g.a);
 
-			function z(e) {
+			function q(e) {
 				const {
 					className: t,
 					disabled: n = !1,
@@ -1885,7 +1885,7 @@
 											variant: t
 										}, {})
 									}
-								} else Object(s.d)(e, r.zf, t)
+								} else Object(s.d)(e, r.yf, t)
 							})(t(), r.Q.Control1);
 							else if (a === i.a.Treatment) return window.location.href = e.pathname, !1
 					})
@@ -1899,4 +1899,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.63744a99ed502864a6e8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.7fffc0bcda0b7b584699.js.map

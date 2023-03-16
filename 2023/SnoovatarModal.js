@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SnoovatarModal.5e56b5bce11c024a024c.js
-// Retrieved at 3/13/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SnoovatarModal.3fc819c7aaafc2b2078d.js
+// Retrieved at 3/16/2023, 10:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SnoovatarModal"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, r) {
@@ -63,15 +63,15 @@
 				}, []);
 				const {
 					activeDetails: h,
-					activeTab: N,
-					activeMeSubpage: k,
+					activeTab: k,
+					activeMeSubpage: N,
 					shopTabState: R
 				} = r, C = Object(n.useMemo)(() => ({
-					activeTab: N || void 0,
-					activeMeSubpage: k || void 0,
+					activeTab: k || void 0,
+					activeMeSubpage: N || void 0,
 					activeDetails: h || void 0,
 					shopTabState: R || void 0
-				}), [h, N, k, R]), I = Object(o.e)(e => !Object(O.S)(e) && Object(m.w)(e));
+				}), [h, k, N, R]), I = Object(o.e)(e => !Object(O.S)(e) && Object(m.w)(e));
 				if (!_ || !f) return null;
 				if (I) return a.a.createElement("div", {
 					className: Object(c.a)(x.a.container, {
@@ -233,10 +233,10 @@
 			const o = e => {
 					return !(Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: s.ve
-					}) === s.Nd)
+						experimentName: s.ue
+					}) === s.Md)
 				},
-				c = Object(a.a)(s.we)
+				c = Object(a.a)(s.ve)
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, r) {
 			"use strict";
@@ -245,9 +245,9 @@
 			}));
 			var s = r("./src/reddit/constants/experiments.ts"),
 				n = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(n.a)(s.xd)
+			const a = Object(n.a)(s.wd)
 		},
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.5e56b5bce11c024a024c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.3fc819c7aaafc2b2078d.js.map
