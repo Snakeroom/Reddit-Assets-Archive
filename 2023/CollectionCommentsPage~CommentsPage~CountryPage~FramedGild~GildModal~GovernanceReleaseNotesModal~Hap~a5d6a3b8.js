@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8.9104585ae29e14d8a387.js
-// Retrieved at 3/16/2023, 4:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8.1496063a83d5acc47213.js
+// Retrieved at 3/16/2023, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -1932,8 +1932,6 @@
 						src: this.props.blurImageSrc
 					}), !y && !f && c.a.createElement("div", {
 						style: {
-							backgroundColor: p.b,
-							backgroundImage: `url(${this.props.posterUrl})`,
 							zIndex: 10
 						},
 						className: this.state.videoFullScreen ? is.a.HTML5StreamPlayer__VideoFullscreen : is.a.HTML5StreamPlayer__VideoRegular
@@ -1945,6 +1943,7 @@
 						muted: h,
 						onTimeUpdate: this.updateTime,
 						preload: "metadata",
+						poster: this.props.posterUrl,
 						ref: this.combinedVideoRefs,
 						className: this.state.videoFullScreen ? is.a.HTML5StreamPlayer__VideoFullscreen : is.a.HTML5StreamPlayer__VideoRegular
 					}, this.props.hlsSource && c.a.createElement("source", {
@@ -2753,4 +2752,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8.9104585ae29e14d8a387.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8.1496063a83d5acc47213.js.map
