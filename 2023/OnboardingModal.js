@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.518cc46e09b35376c317.js
-// Retrieved at 3/16/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.ea2778bb98b149bf3cd6.js
+// Retrieved at 3/16/2023, 4:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -467,7 +467,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.og)(p),
+						includeInterestTopics: !!p && !Object(b.pg)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: h && !(null === (s = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === s ? void 0 : s.total),
@@ -1819,8 +1819,8 @@
 						toggleLanguageSelection: u
 					} = e;
 					const [m, p] = Object(a.useState)(!1), b = Object(i.e)(ee.fb);
-					let g = Object(i.e)(Se.i) === ke.fd.TopTwo;
-					const f = Object(i.e)(Se.h) === ke.fd.TopTwo;
+					let g = Object(i.e)(Se.i) === ke.gd.TopTwo;
+					const f = Object(i.e)(Se.h) === ke.gd.TopTwo;
 					g = g || f;
 					const h = Object(i.e)(ye.b),
 						O = Object(_.a)();
@@ -3003,7 +3003,7 @@
 						xe = Object(i.e)(ye.k),
 						_e = Object(i.e)(Se.i),
 						Ee = Object(i.e)(Se.h),
-						Ce = _e === ke.fd.TopTwo || _e === ke.fd.All || Ee === ke.fd.TopTwo || Ee === ke.fd.All,
+						Ce = _e === ke.gd.TopTwo || _e === ke.gd.All || Ee === ke.gd.TopTwo || Ee === ke.gd.All,
 						je = Object(a.useCallback)(async e => {
 							ie(!0);
 							const n = await Object(On.c)(e, t, xe);
@@ -3022,9 +3022,9 @@
 						Ie = Object(i.e)(ee.U),
 						we = Object(i.e)(ye.g),
 						Pe = Object(i.e)(kn.a),
-						Re = Pe === ke.Uf.CloseOnboarding,
-						Fe = Pe === ke.Uf.SkipTopicSelection,
-						Ge = Pe === ke.Uf.SmartSignal,
+						Re = Pe === ke.Vf.CloseOnboarding,
+						Fe = Pe === ke.Vf.SkipTopicSelection,
+						Ge = Pe === ke.Vf.SmartSignal,
 						Ae = Object(a.useCallback)(() => {
 							s(Object(b.g)(Kt.a.ONBOARDING_MODAL_D2X)), Te && s(Object(g.h)()), h && (r(Object(F.t)()), Object(xn.a)()), we && Ie && s(Object(m.startChangeUsernameFlow)())
 						}, [s, Ie, we, h, Te, r]),
@@ -3165,11 +3165,11 @@
 						className: ne.a.subtitle
 					}, function(e) {
 						switch (e) {
-							case ke.Ue.Ads:
+							case ke.Ve.Ads:
 								return In._("Tell us about yourself to improve your recommendations and ads.", null, {
 									hk: "tlFdQ"
 								});
-							case ke.Ue.AdsUpdateSettings:
+							case ke.Ve.AdsUpdateSettings:
 								return In._("Tell us about yourself to improve your recommendations and ads. You can update this any time in settings.", null, {
 									hk: "CbUFt"
 								});
@@ -3503,7 +3503,11 @@
 						this.setState({
 							isCustomGenderModalOpen: !1
 						})
-					}
+					}, this.getGenderToggleCopy = () => this.props.showUpdatedAccountGenderCopy ? s.fbt._("This information may be used to improve your recommendations and ads.", null, {
+						hk: "3vtjqc"
+					}) : s.fbt._("Reddit will never share this information and only uses it to improve what content you see.", null, {
+						hk: "1PqDkg"
+					})
 				}
 				render() {
 					const {
@@ -3522,9 +3526,7 @@
 						label: s.fbt._("Gender", null, {
 							hk: "1spCV5"
 						}),
-						subtext: s.fbt._("This information may be used to improve your recommendations and ads.", null, {
-							hk: "3vtjqc"
-						})
+						subtext: this.getGenderToggleCopy()
 					}, a.a.createElement("div", {
 						className: x.a.wrapper
 					}, a.a.createElement(h.a, {
@@ -5069,10 +5071,10 @@
 			const o = e => {
 					return !(Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.ve
-					}) === s.Nd)
+						experimentName: s.we
+					}) === s.Od)
 				},
-				i = Object(a.a)(s.we)
+				i = Object(a.a)(s.xe)
 		},
 		"./src/redditGQL/operations/Frontpage.json": function(e) {
 			e.exports = JSON.parse('{"id":"590ed564157c"}')
@@ -5106,4 +5108,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.518cc46e09b35376c317.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.ea2778bb98b149bf3cd6.js.map
