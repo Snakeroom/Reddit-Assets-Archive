@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8.b7df9d1699ee2536b04f.js
-// Retrieved at 3/16/2023, 10:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8.836a4877b7f6363a85ec.js
+// Retrieved at 3/16/2023, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -1120,7 +1120,10 @@
 						source: o
 					}, c.a.createElement("div", {
 						className: Rt.a.ctaWrapper
-					}, (e => It[e = e || "Learn More"])(t), c.a.createElement("span", {
+					}, function() {
+						let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "";
+						return It[e] || It["Learn More"]
+					}(t), c.a.createElement("span", {
 						className: Rt.a.ctaText
 					}, t || "Learn More")))
 				}),
@@ -2750,4 +2753,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8.b7df9d1699ee2536b04f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8.836a4877b7f6363a85ec.js.map
