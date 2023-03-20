@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.9d5d27a1c513bdb56c63.js
-// Retrieved at 3/20/2023, 10:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.d945411d06f4c4a2e22f.js
+// Retrieved at 3/20/2023, 6:00:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, s) {
@@ -968,8 +968,10 @@
 			s.d(t, "a", (function() {
 				return T
 			})), s.d(t, "b", (function() {
-				return W
+				return C
 			})), s.d(t, "c", (function() {
+				return W
+			})), s.d(t, "d", (function() {
 				return w
 			}));
 			var o = s("./src/config.ts"),
@@ -987,11 +989,36 @@
 				h = s("./src/reddit/selectors/user.ts"),
 				x = s("./src/reddit/components/BoostPost/BoostPostBanner.m.less"),
 				f = s.n(x),
-				v = s("./src/reddit/constants/experiments.ts"),
-				O = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				C = s("./src/reddit/endpoints/profile/info.ts"),
-				_ = s("./src/reddit/helpers/isCrosspost.ts"),
-				E = s("./src/reddit/helpers/karma.ts"),
+				v = s("./src/reddit/contexts/PageLayer/index.tsx");
+			const O = Object(r.createContext)({
+					isEligibleOnPostId: e => !1,
+					setVisibleOnPostId: e => {}
+				}),
+				C = e => {
+					let {
+						children: t
+					} = e;
+					const [s, o] = Object(r.useState)(Object(m.h)()), n = Object(r.useRef)(), a = Object(v.ib)(), c = Object(r.useCallback)(e => {
+						void 0 === n.current && (n.current = e)
+					}, []), d = Object(r.useCallback)(e => !s && (void 0 === n.current || n.current === e), [s]);
+					return Object(r.useEffect)(() => {
+						const e = () => {
+							o(Object(m.h)())
+						};
+						return window.addEventListener("storage", e), () => {
+							window.removeEventListener("storage", e)
+						}
+					}, []), Object(r.useEffect)(() => {
+						(null == a ? void 0 : a.queryParams) && (n.current = void 0)
+					}, [a]), i.a.createElement(O.Provider, {
+						value: {
+							isEligibleOnPostId: d,
+							setVisibleOnPostId: c
+						}
+					}, t)
+				};
+			var _ = s("./src/reddit/constants/experiments.ts"),
+				E = s("./src/reddit/helpers/isCrosspost.ts"),
 				g = s("./src/reddit/hooks/useExperimentVariant.ts"),
 				j = s("./src/reddit/models/Post/index.ts"),
 				k = s("./src/reddit/selectors/posts.ts"),
@@ -1005,31 +1032,25 @@
 						hideOverride: o
 					} = e;
 					var n;
-					const i = Object(O.ib)(),
+					const i = Object(v.ib)(),
 						c = null !== (n = null == i ? void 0 : i.urlParams.profileName) && void 0 !== n ? n : "",
 						d = Object(a.e)(e => Object(I.k)(e, {
 							profileName: c
 						})),
-						l = Object(a.e)(e => Object(O.G)(e, {
+						l = Object(a.e)(e => Object(v.G)(e, {
 							pageLayer: i
 						})),
 						m = Object(a.e)(e => Object(k.G)(e, {
 							postId: t
 						})),
-						p = Object(r.useMemo)(() => ({
-							...C.a,
-							...null == s ? void 0 : s.karma,
-							total: Object(E.a)(null != s ? s : void 0)
-						}), [s]),
-						u = Object(r.useCallback)(() => !(o || !l || Object(_.a)(m) || !Object(j.s)(m) || !w(m, s) || !P(d, s)), [o, l, m, d, s]),
-						b = Object(r.useCallback)(() => !(o || !w(m, s) || !P(d, s)), [o, m, d, s]),
-						h = Object(r.useCallback)(e => () => !!e() && p.total > 50, [p.total]),
-						x = Object(g.a)(v.r, u),
-						f = Object(g.a)(v.q, h(u)),
-						y = Object(g.a)(v.s, b),
-						T = Object(g.a)(v.t, h(b));
+						p = Object(r.useCallback)(() => !(o || !l || Object(E.a)(m) || !Object(j.s)(m) || !w(m, s) || !P(d, s)), [o, l, m, d, s]),
+						u = Object(r.useCallback)(() => !(o || !w(m, s) || !P(d, s)), [o, m, d, s]),
+						b = Object(g.a)(_.r, p),
+						h = Object(g.a)(_.q, p),
+						x = Object(g.a)(_.s, u),
+						f = Object(g.a)(_.t, u);
 					return {
-						canBoostPost: x === v.Od || f === v.Od || y === v.Od || T === v.Od
+						canBoostPost: b === _.Od || h === _.Od || x === _.Od || f === _.Od
 					}
 				},
 				T = e => {
@@ -1037,18 +1058,13 @@
 						postId: t,
 						user: s
 					} = e;
-					const [o, n] = Object(r.useState)(Object(m.h)());
-					return Object(r.useEffect)(() => {
-						const e = () => {
-							n(Object(m.h)())
-						};
-						return window.addEventListener("storage", e), () => {
-							window.removeEventListener("storage", e)
-						}
-					}, []), i.a.createElement(S, {
+					const {
+						isEligibleOnPostId: o
+					} = Object(r.useContext)(O);
+					return i.a.createElement(S, {
 						postId: t,
 						user: s,
-						hideOverride: o
+						hideOverride: !o(t)
 					})
 				},
 				S = Object(r.memo)(e => {
@@ -1057,27 +1073,29 @@
 						user: s,
 						hideOverride: x
 					} = e;
-					const v = Object(u.a)(),
-						O = Object(a.e)(h.fb),
-						{
-							canBoostPost: C
-						} = y({
-							postId: t,
-							user: s,
-							hideOverride: x
-						});
-					Object(r.useEffect)(() => {
-						C && v(Object(p.w)(t))
-					}, [C, v, t]);
-					const _ = Object(r.useCallback)(() => {
-							Object(m.mb)(), v(Object(p.a)(t))
-						}, [v, t]),
-						E = Object(r.useCallback)(e => {
-							e.stopPropagation(), Object(m.mb)(), v(Object(p.c)(t))
-						}, [v, t]);
-					return C ? i.a.createElement("div", {
+					const {
+						setVisibleOnPostId: v
+					} = Object(r.useContext)(O), C = Object(u.a)(), _ = Object(a.e)(h.fb), {
+						canBoostPost: E
+					} = y({
+						postId: t,
+						user: s,
+						hideOverride: x
+					});
+					Object(r.useEffect)(() => (E && v(t), () => {
+						v(void 0)
+					}), [E, t, v]), Object(r.useEffect)(() => {
+						E && C(Object(p.w)(t))
+					}, [E, C, t]);
+					const g = Object(r.useCallback)(() => {
+							Object(m.mb)(), C(Object(p.a)(t))
+						}, [C, t]),
+						j = Object(r.useCallback)(e => {
+							e.stopPropagation(), Object(m.mb)(), C(Object(p.c)(t))
+						}, [C, t]);
+					return E ? i.a.createElement("div", {
 						className: Object(c.a)(f.a.root, {
-							[f.a.nightRoot]: O
+							[f.a.nightRoot]: _
 						})
 					}, i.a.createElement("div", {
 						className: f.a.boostPost
@@ -1103,7 +1121,7 @@
 						className: f.a.boostPostButton,
 						kind: l.b.ExternalLink,
 						priority: l.c.Secondary,
-						onClick: _,
+						onClick: g,
 						href: `${o.a.adsUiOrigin}/boostPost?postId=${t}&utm_source=d2x_consumer&utm_name=boost_post_banner`,
 						target: "_blank",
 						Icon: Object(b.b)("external_link_fill", {
@@ -1119,14 +1137,14 @@
 						}))
 					}), i.a.createElement("button", {
 						className: f.a.boostPostCloseButton,
-						onClick: E,
+						onClick: j,
 						"aria-label": n.fbt._("Hide", null, {
 							hk: "2qpeBI"
 						})
 					}, i.a.createElement(b.a, {
 						className: f.a.boostPostClose,
 						name: d.a.close_fill,
-						onClick: E,
+						onClick: j,
 						style: {
 							fontSize: 12,
 							lineHeight: "12px",
@@ -2481,7 +2499,7 @@
 					}, r.a.createElement(g.a, {
 						postCreated: de.created,
 						subredditId: de.belongsTo.id
-					})), A && Object(C.c)(de, b) && r.a.createElement(C.b, {
+					})), A && Object(C.d)(de, b) && r.a.createElement(C.c, {
 						postId: de.id,
 						user: b,
 						userIsOp: _e,
@@ -6712,4 +6730,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.9d5d27a1c513bdb56c63.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.d945411d06f4c4a2e22f.js.map
