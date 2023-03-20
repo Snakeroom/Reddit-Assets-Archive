@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.fe82a08cf98539390039.js
-// Retrieved at 3/16/2023, 4:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.1e76022b1f86d37381ef.js
+// Retrieved at 3/20/2023, 10:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ModQueuePages~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1318,7 +1318,7 @@
 								commentId: e,
 								followState: t
 							})).ok) {
-							Object(G.ub)(null !== (m = null === (l = null === (c = o().pages) || void 0 === c ? void 0 : c.comments) || void 0 === l ? void 0 : l.followed) && void 0 !== m ? m : [], null === (u = o().user.account) || void 0 === u ? void 0 : u.id);
+							Object(G.vb)(null !== (m = null === (l = null === (c = o().pages) || void 0 === c ? void 0 : c.comments) || void 0 === l ? void 0 : l.followed) && void 0 !== m ? m : [], null === (u = o().user.account) || void 0 === u ? void 0 : u.id);
 							const e = r ? n.fbt._("Followed! You’ll get updates when there’s new activity.", null, {
 								hk: "2O1Ou3"
 							}) : n.fbt._("Unfollowed. You won’t get updates on this comment anymore.", null, {
@@ -1985,7 +1985,7 @@
 						}),
 						kind: m.b.SuccessCommunity,
 						text: d
-					})), Object(a.sb)(o + 1)
+					})), Object(a.tb)(o + 1)
 				}
 		},
 		"./src/reddit/actions/relatedCommunitiesRecommendations/constants.ts": function(e, t, s) {
@@ -9622,4 +9622,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.fe82a08cf98539390039.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.1e76022b1f86d37381ef.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.892bf4f9ec18b1e32274.js
-// Retrieved at 3/8/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.a56d8e5980a9a8804982.js
+// Retrieved at 3/20/2023, 10:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -447,7 +447,7 @@
 								[t]: e
 							})), a(Object(E.n)(t)), await a(Object(c.b)(s))), n && (await Y.a.enterChannel(e), await a(Object(m.r)(t, n, C.c.TEXT)))
 						} else a(Ke()), a(Object(E.hb)(e));
-						a(Object(b.j)("old")), a(ze())
+						a(Object(b.j)(!1)), a(ze())
 					}
 				}, Qe = e => async t => {
 					e = e.slice(0, 1), await t(Object(v.t)(e)), t(Ze(e)), location.origin === r.a.oldRedditUrl && t(Object(E.o)(e))
@@ -1966,43 +1966,37 @@
 		"./src/chat/actions/redditChat.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "f", (function() {
-				return s
-			})), n.d(t, "j", (function() {
 				return c
-			})), n.d(t, "c", (function() {
-				return r
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "j", (function() {
 				return o
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "c", (function() {
 				return i
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "i", (function() {
 				return l
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "a", (function() {
 				return d
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "g", (function() {
 				return u
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "b", (function() {
 				return h
-			})), n.d(t, "l", (function() {
+			})), n.d(t, "h", (function() {
 				return m
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "e", (function() {
 				return p
-			})), n.d(t, "k", (function() {
+			})), n.d(t, "l", (function() {
 				return b
+			})), n.d(t, "d", (function() {
+				return g
+			})), n.d(t, "k", (function() {
+				return f
 			}));
-			var a = n("./src/lib/makeActionCreator/index.ts");
-			const s = "SET_ACTIVE_CHAT_APP",
-				c = Object(a.a)(s),
-				r = "REDDIT_CHAT_RESET_STATE",
-				o = Object(a.a)(r),
-				i = "REDDIT_CHAT_OPEN",
-				l = Object(a.a)(i),
-				d = "REDDIT_CHAT_OPEN_DM",
-				u = Object(a.a)(d),
-				h = "REDDIT_CHAT_SET_ROOMS_COUNT",
-				m = Object(a.a)(h),
-				p = "REDDIT_CHAT_SET_NOTIFICATIONS_COUNT",
-				b = Object(a.a)(p)
+			var a = n("./src/lib/makeActionCreator/index.ts"),
+				s = n("./src/reddit/helpers/localStorage/index.ts");
+			const c = "SET_ACTIVE_CHAT_APP",
+				r = Object(a.a)(c),
+				o = e => async t => {
+					Object(s.Cb)(e), t(r(e ? "new" : "old"))
+				}, i = "REDDIT_CHAT_RESET_STATE", l = Object(a.a)(i), d = "REDDIT_CHAT_OPEN", u = Object(a.a)(d), h = "REDDIT_CHAT_OPEN_DM", m = Object(a.a)(h), p = "REDDIT_CHAT_SET_ROOMS_COUNT", b = Object(a.a)(p), g = "REDDIT_CHAT_SET_NOTIFICATIONS_COUNT", f = Object(a.a)(g)
 		},
 		"./src/chat/actions/renameGroupChat/index.ts": function(e, t, n) {
 			"use strict";
@@ -9806,7 +9800,7 @@
 						[E.a.active]: !t
 					}),
 					onClick: () => {
-						f(Object(l.j)("old"))
+						f(Object(l.j)(!1))
 					}
 				}, i.fbt._("Legacy Chat", null, {
 					hk: "2GRdcQ"
@@ -9818,7 +9812,7 @@
 						[E.a.active]: t
 					}),
 					onClick: () => {
-						f(Object(l.j)("new"))
+						f(Object(l.j)(!0))
 					}
 				}, i.fbt._("Chat", null, {
 					hk: "16ZrKS"
@@ -9895,11 +9889,11 @@
 						}
 						if (0 === (null === (o = null === (r = e.data) || void 0 === r ? void 0 : r.indexOf) || void 0 === o ? void 0 : o.call(r, L.OPEN_SENDBIRD_ROOM))) {
 							const [, t] = e.data.split(":"), n = Object(k.getRedirectURL)(Object(k.channelUrl)(Object(P.f)(t)));
-							d(Object(R.b)(n)), d(Object(l.j)("old"))
+							d(Object(R.b)(n)), d(Object(l.j)(!1))
 						}
 						if (0 === (null === (h = null === (u = e.data) || void 0 === u ? void 0 : u.indexOf) || void 0 === h ? void 0 : h.call(u, L.OPEN_SENDBIRD_DM))) {
 							const [, t] = e.data.split(":"), n = Object(k.getRedirectURL)(Object(k.channelUserIdUrl)(t));
-							d(Object(R.b)(n)), d(Object(l.j)("old"))
+							d(Object(R.b)(n)), d(Object(l.j)(!1))
 						}
 						if (null === (p = null === (m = e.data) || void 0 === m ? void 0 : m.startsWith) || void 0 === p ? void 0 : p.call(m, L.OPEN_IMAGE)) {
 							const t = e.data.substring(L.OPEN_IMAGE.length + 1, e.data.length);
@@ -17306,38 +17300,39 @@
 		"./src/chat/selectors/redditChat.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return s
-			})), n.d(t, "c", (function() {
 				return c
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "c", (function() {
 				return r
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "d", (function() {
 				return o
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "e", (function() {
 				return i
+			})), n.d(t, "a", (function() {
+				return l
 			}));
-			var a = n("./src/chat/selectors/experiments.ts");
-
-			function s(e) {
-				return null === e.redditChat.active ? Object(a.o)(e) : e.redditChat.active
-			}
+			var a = n("./src/chat/selectors/experiments.ts"),
+				s = n("./src/reddit/helpers/localStorage/index.ts");
 
 			function c(e) {
-				return e.redditChat.chatId
+				return null === e.redditChat.active ? Object(s.w)() : e.redditChat.active
 			}
 
 			function r(e) {
-				return e.redditChat.userId
+				return e.redditChat.chatId
 			}
 
 			function o(e) {
-				return e.redditChat.notificationsCount
+				return e.redditChat.userId
 			}
 
 			function i(e) {
+				return e.redditChat.notificationsCount
+			}
+
+			function l(e) {
 				return Boolean(Object(a.q)(e) && (function(e) {
 					return e.redditChat.roomsCount > 0
-				}(e) || Object(a.o)(e) || r(e) || c(e)))
+				}(e) || Object(a.o)(e) || o(e) || r(e)))
 			}
 		},
 		"./src/chat/selectors/richUnits.ts": function(e, t, n) {
@@ -18348,4 +18343,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.892bf4f9ec18b1e32274.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.a56d8e5980a9a8804982.js.map

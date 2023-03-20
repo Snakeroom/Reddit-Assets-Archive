@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.ca43094f38a5023160aa.js
-// Retrieved at 3/16/2023, 4:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.f7134fc75b657c67b706.js
+// Retrieved at 3/20/2023, 10:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -2852,7 +2852,7 @@
 			const f = "INCREMENT_SEEN_COUNT_PER_SESS",
 				h = (e, t, n) => async (a, o) => {
 					const f = o(),
-						h = Object(i.C)(),
+						h = Object(i.D)(),
 						g = Date.now(),
 						v = h && g - h < 18e4,
 						E = Object(u.c)(f, {
@@ -2860,7 +2860,7 @@
 						}),
 						_ = f.upvotePromptCountPerSess,
 						O = (() => {
-							const e = Object(i.B)();
+							const e = Object(i.C)();
 							if (!e) return [];
 							const t = Date.now();
 							return e.filter(e => t - e < 864e5)
@@ -2889,7 +2889,7 @@
 						action: "view",
 						noun: l,
 						...Object(d.o)(e)
-					}))(f)), Object(i.Eb)(), Object(i.Db)(S), a(m()), n && n()
+					}))(f)), Object(i.Gb)(), Object(i.Fb)(S), a(m()), n && n()
 				}, b = e => async (t, n) => {
 					Object(p.a)((e => ({
 						source: l,
@@ -25563,4 +25563,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.ca43094f38a5023160aa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.f7134fc75b657c67b706.js.map

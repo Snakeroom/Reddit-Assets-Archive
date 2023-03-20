@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.caf7f331b0fd6aa43513.js
-// Retrieved at 3/16/2023, 4:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.817aa4948b5160a1a218.js
+// Retrieved at 3/20/2023, 10:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -2501,7 +2501,7 @@
 						a = Object(h.b)(y),
 						o = Object(h.b)(E),
 						[d, c] = function(e, t) {
-							const [n, i] = Object(s.useState)(Object(A.S)(e, t));
+							const [n, i] = Object(s.useState)(Object(A.T)(e, t));
 							return [n, Object(s.useCallback)(() => {
 								const n = Object(A.a)(e, t);
 								i(n)
@@ -2531,7 +2531,7 @@
 							e.stopPropagation(), a.visible ? g() : x()
 						}, [g, x, a.visible]),
 						N = Object(s.useCallback)(t => {
-							t === v.c.FREQUENT && Object(A.bb)(e.userId, e.subredditId)
+							t === v.c.FREQUENT && Object(A.cb)(e.userId, e.subredditId)
 						}, [e.subredditId, e.userId]),
 						I = Object(s.useCallback)(s => {
 							const {
@@ -2842,7 +2842,7 @@
 					small: !0,
 					isFullWidth: !0,
 					afterUnsubscribeAction: () => {
-						t && (Object(A.bb)(e.userId, t), e.updateSubredditInfo())
+						t && (Object(A.cb)(e.userId, t), e.updateSubredditInfo())
 					}
 				})), P && i.a.createElement(ye, {
 					onClickUnmute: () => {
@@ -11525,4 +11525,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.caf7f331b0fd6aa43513.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.817aa4948b5160a1a218.js.map

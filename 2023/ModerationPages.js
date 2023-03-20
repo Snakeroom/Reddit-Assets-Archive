@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.289cba13685e9b8eec61.js
-// Retrieved at 3/17/2023, 5:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.3fc0b5718df6c718a995.js
+// Retrieved at 3/20/2023, 10:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "ModQueuePages~reddit-components-MediumPost", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -2671,7 +2671,7 @@
 								commentId: e,
 								followState: t
 							})).ok) {
-							Object(z.ub)(null !== (u = null === (l = null === (c = r().pages) || void 0 === c ? void 0 : c.comments) || void 0 === l ? void 0 : l.followed) && void 0 !== u ? u : [], null === (m = r().user.account) || void 0 === m ? void 0 : m.id);
+							Object(z.vb)(null !== (u = null === (l = null === (c = r().pages) || void 0 === c ? void 0 : c.comments) || void 0 === l ? void 0 : l.followed) && void 0 !== u ? u : [], null === (m = r().user.account) || void 0 === m ? void 0 : m.id);
 							const e = o ? s.fbt._("Followed! You’ll get updates when there’s new activity.", null, {
 								hk: "2O1Ou3"
 							}) : s.fbt._("Unfollowed. You won’t get updates on this comment anymore.", null, {
@@ -7237,14 +7237,14 @@
 				c = e => {
 					switch (e) {
 						case r.a.Denied:
-							a.ob(!1), Object(s.c)();
+							a.pb(!1), Object(s.c)();
 							break;
 						case r.a.Default:
 						case r.a.Granted:
-							a.ob(!0), Object(s.c)();
+							a.pb(!0), Object(s.c)();
 							break;
 						case r.a.Closed:
-							a.ob(!0)
+							a.pb(!0)
 					}
 				}
 		},
@@ -8935,7 +8935,7 @@
 				} = a, l = !!d && d >= 51 && d <= 100, u = !o || Object(p.a)(o), m = i && i.urlParams.subredditName === o, b = Object(ee.S)(s), f = Object(Z.c)(s, {
 					subredditId: Object(H.I)(s, o)
 				});
-				if (u || m || Object(K.G)() || !l || !b || f) return;
+				if (u || m || Object(K.H)() || !l || !b || f) return;
 				const h = Object(G.d)(t(), {
 					subredditName: o
 				});
@@ -8949,7 +8949,7 @@
 					id: "createPostCta",
 					kind: J.b.Modal,
 					name: "createPostCta",
-					secondButtonAction: async () => Object(K.Gb)(),
+					secondButtonAction: async () => Object(K.Ib)(),
 					secondButtonText: "Dismiss",
 					text: `There have been over ${v} visits to r/${o} in the past week. Create a new post and start the next conversation.`
 				}))
@@ -11657,7 +11657,7 @@
 						}),
 						kind: u.b.SuccessCommunity,
 						text: d
-					})), Object(a.sb)(r + 1)
+					})), Object(a.tb)(r + 1)
 				}
 		},
 		"./src/reddit/actions/postCreation/general.ts": function(e, t, n) {
@@ -21416,10 +21416,10 @@
 						E && v(Object(m.w)(t))
 					}, [E, v, t]);
 					const O = Object(o.useCallback)(() => {
-							Object(u.lb)(), v(Object(m.a)(t))
+							Object(u.mb)(), v(Object(m.a)(t))
 						}, [v, t]),
 						C = Object(o.useCallback)(e => {
-							e.stopPropagation(), Object(u.lb)(), v(Object(m.c)(t))
+							e.stopPropagation(), Object(u.mb)(), v(Object(m.c)(t))
 						}, [v, t]);
 					return E ? i.a.createElement("div", {
 						className: Object(d.a)(g.a.root, {
@@ -27035,7 +27035,7 @@
 					update: u
 				} = e, m = Object(ce.a)(), p = Object(a.d)(), [b, f] = Object(o.useState)(n), [h, g] = Object(o.useState)(!1), [v, x] = Object(o.useState)(!0);
 				return Object(o.useEffect)(() => {
-					x(Object(de.J)("location")), Object(de.Jb)("location")
+					x(Object(de.K)("location")), Object(de.Lb)("location")
 				}, []), i.a.createElement(i.a.Fragment, null, i.a.createElement(J.a, {
 					className: ke.a.noMarginHeading
 				}, z.fbt._("Community Location and main language", null, {
@@ -28279,10 +28279,10 @@
 			}
 			var x = Object(i.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(c.i)()), Object(p.Ab)()
+					e(Object(c.i)()), Object(p.Bb)()
 				},
 				onViewTooltip: () => {
-					Object(p.Xb)()
+					Object(p.Zb)()
 				}
 			}))(Object(u.c)(v));
 			const E = "editable-primary-topic-idcard";
@@ -34535,9 +34535,9 @@
 					R = Object(m.a)(),
 					[L, B, F] = function(e, t, n) {
 						const [r, o] = Object(s.useState)(Object(u.s)(e, t) || 0), i = Object(s.useCallback)(() => {
-							o(r + 1), Object(u.yb)(e, t, r + 1)
+							o(r + 1), Object(u.zb)(e, t, r + 1)
 						}, []), a = Object(s.useCallback)(() => {
-							n > 0 && (o(n), Object(u.yb)(e, t, n))
+							n > 0 && (o(n), Object(u.zb)(e, t, n))
 						}, []);
 						return [r, i, a]
 					}(h, n.notificationName, (null === (g = n.persistence) || void 0 === g ? void 0 : g.maxViews) || 0),
@@ -35072,7 +35072,7 @@
 						[O, C] = function(e) {
 							const [t, n] = Object(r.useState)(() => Object(K.v)(e));
 							return [t, Object(r.useCallback)(() => {
-								n(!0), Object(K.zb)(e)
+								n(!0), Object(K.Ab)(e)
 							}, [e])]
 						}(v),
 						[A, y] = function(e) {
@@ -40817,7 +40817,7 @@
 					}, this.onOpenPostSortDropdown = () => {
 						this.props.onOpenDropdown(ue), this.props.sendEventWithName("modqueue_sort")()
 					}, this.onShowTooltip = () => {
-						Object(v.H)() || (this.props.openModInsightsTooltip(), Object(v.Hb)())
+						Object(v.I)() || (this.props.openModInsightsTooltip(), Object(v.Jb)())
 					}
 				}
 				componentDidMount() {
@@ -48331,9 +48331,9 @@
 							isFixed: e
 						})
 					}, this.onShowTooltip = () => {
-						Object(A.w)() || (this.props.onShowTooltip(ie), setTimeout(() => {
+						Object(A.x)() || (this.props.onShowTooltip(ie), setTimeout(() => {
 							this.props.onHideTooltip()
-						}, ae), Object(A.Sb)())
+						}, ae), Object(A.Ub)())
 					}, this.onAddReason = () => {
 						this.setState({
 							reasonToEdit: null
@@ -62061,7 +62061,7 @@
 					}
 				}),
 				a = (e, t) => {
-					t && (Object(r.Bb)(e.postId), Object(r.Lb)(t)), e.impressionIdStr ? Object(r.Cb)(e.impressionIdStr) : e.impressionId && Object(r.Cb)(e.impressionId)
+					t && (Object(r.Db)(e.postId), Object(r.Nb)(t)), e.impressionIdStr ? Object(r.Eb)(e.impressionIdStr) : e.impressionId && Object(r.Eb)(e.impressionId)
 				}
 		},
 		"./src/reddit/helpers/trackers/blade.ts": function(e, t, n) {
@@ -67989,7 +67989,7 @@
 			function o(e) {
 				const [t, n] = Object(s.useState)(Object(r.u)(e));
 				return [t, Object(s.useCallback)(() => {
-					n(!0), Object(r.pb)(e)
+					n(!0), Object(r.qb)(e)
 				}, [])]
 			}
 		},
@@ -71105,7 +71105,7 @@
 				}
 				componentDidMount() {
 					this.setState({
-						locationSettingSeen: Object(te.J)("location")
+						locationSettingSeen: Object(te.K)("location")
 					})
 				}
 				renderDevPlatformNavSection() {
@@ -76431,7 +76431,7 @@
 					const {
 						id: n,
 						eventViews: s
-					} = Object(o.z)();
+					} = Object(o.A)();
 					return n === e.id && s > e.maxViews ? null : e
 				}),
 				l = Object(s.a)(c, e => {
@@ -76439,7 +76439,7 @@
 					const {
 						id: t,
 						lastInteractionTimestamp: n
-					} = Object(o.z)();
+					} = Object(o.A)();
 					return t === e.id && n > 0 ? null : e.banner
 				})
 		},
@@ -80369,4 +80369,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.289cba13685e9b8eec61.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.3fc0b5718df6c718a995.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.f68cf70513ed684f80e6.js
-// Retrieved at 3/16/2023, 4:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.9d5d27a1c513bdb56c63.js
+// Retrieved at 3/20/2023, 10:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, s) {
@@ -1070,10 +1070,10 @@
 						C && v(Object(p.w)(t))
 					}, [C, v, t]);
 					const _ = Object(r.useCallback)(() => {
-							Object(m.lb)(), v(Object(p.a)(t))
+							Object(m.mb)(), v(Object(p.a)(t))
 						}, [v, t]),
 						E = Object(r.useCallback)(e => {
-							e.stopPropagation(), Object(m.lb)(), v(Object(p.c)(t))
+							e.stopPropagation(), Object(m.mb)(), v(Object(p.c)(t))
 						}, [v, t]);
 					return C ? i.a.createElement("div", {
 						className: Object(c.a)(f.a.root, {
@@ -6712,4 +6712,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.f68cf70513ed684f80e6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.9d5d27a1c513bdb56c63.js.map

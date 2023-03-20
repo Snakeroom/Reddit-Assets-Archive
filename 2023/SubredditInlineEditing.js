@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.74404697dd91af99027f.js
-// Retrieved at 3/8/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.375f0d017359a5af0cc6.js
+// Retrieved at 3/20/2023, 10:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditInlineEditing"], {
 		"./src/reddit/components/CommunityTopics/NumTopicsSelected.tsx": function(e, t, s) {
@@ -84,10 +84,10 @@
 			}
 			var f = Object(r.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(c.i)()), Object(u.Ab)()
+					e(Object(c.i)()), Object(u.Bb)()
 				},
 				onViewTooltip: () => {
-					Object(u.Xb)()
+					Object(u.Zb)()
 				}
 			}))(Object(p.c)(g));
 			const T = "editable-primary-topic-idcard";
@@ -808,9 +808,9 @@
 				M = s("./src/reddit/components/ContentTooltip/index.tsx"),
 				L = s("./src/reddit/icons/fonts/Info/index.tsx"),
 				F = s("./src/reddit/components/InlineSubredditEditing/InlineCommunityTopics/InfoTooltip/index.m.less"),
-				A = s.n(F);
+				H = s.n(F);
 			const {
-				fbt: H
+				fbt: A
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), U = Object(r.c)({
 				activeTooltipId: B.a
 			}), K = Object(i.b)(U, e => ({
@@ -847,16 +847,16 @@
 						onMouseEnter: this.onShowTooltip,
 						onMouseLeave: this.props.onHideTooltip
 					}, o.a.createElement(L.a, {
-						className: Object(a.a)(A.a.infoIcon, {
-							[A.a.activeInfoIcon]: this.tooltipIsOpen()
+						className: Object(a.a)(H.a.infoIcon, {
+							[H.a.activeInfoIcon]: this.tooltipIsOpen()
 						})
 					}), o.a.createElement(M.a, {
 						tooltipId: this.state.tooltipId,
 						defaultTooltipPosition: "bottom",
 						caretColor: V
 					}, o.a.createElement("div", {
-						className: A.a.container
-					}, H._("Adding community topics allow people to find your community. Add a primary topic and sub topics to be discovered more easily.", null, {
+						className: H.a.container
+					}, A._("Adding community topics allow people to find your community. Add a primary topic and sub topics to be discovered more easily.", null, {
 						hk: "2PLIUO"
 					}))))
 				}
@@ -1752,4 +1752,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.74404697dd91af99027f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.375f0d017359a5af0cc6.js.map
