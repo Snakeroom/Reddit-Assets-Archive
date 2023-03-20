@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.3fc0b5718df6c718a995.js
-// Retrieved at 3/20/2023, 10:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.981d7699970b1ce3194c.js
+// Retrieved at 3/20/2023, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "ModQueuePages~reddit-components-MediumPost", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -70646,7 +70646,7 @@
 					return Object(o.useEffect)(() => {
 						"ready" === p && async function() {
 							try {
-								b("importing"), await Promise.all([n.e("vendors~mod-nav~shreddit-player"), n.e("mod-nav")]).then(n.bind(null, "./node_modules/@reddit/shreddit.components.mod-nav/dist/index.js")), b("done")
+								b("importing"), await Promise.all([n.e("vendors~mod-nav~shreddit-player"), n.e("vendors~mod-nav")]).then(n.bind(null, "./node_modules/@reddit/shreddit.components.mod-nav/dist/index.js")), b("done")
 							} catch (e) {
 								console.error("Error importing mod-nav", e), b("error"), g.c.withScope(n => {
 									n.setExtra("info", {
@@ -80369,4 +80369,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.3fc0b5718df6c718a995.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.981d7699970b1ce3194c.js.map

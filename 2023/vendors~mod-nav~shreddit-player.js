@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~mod-nav~shreddit-player.12b6aca94b429d9425a0.js
-// Retrieved at 2/23/2023, 2:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~mod-nav~shreddit-player.f6a700a1ac25f2b2bf5a.js
+// Retrieved at 3/20/2023, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~mod-nav~shreddit-player"], {
 		"./node_modules/@lit/localize/lit-localize.js": function(n, t, r) {
@@ -38,20 +38,39 @@
 			const l = [];
 			for (let b = 0; b < 256; b++) l[b] = (b >> 4 & 15).toString(16) + (15 & b).toString(16);
 			new WeakMap, new Map;
-			let d = new i;
-			d.resolve();
+			let c = new i;
+			c.resolve();
 			let s = a,
-				c = !1;
+				d = !1;
 
 			function u(n) {
-				if (c) throw new Error("lit-localize can only be configured once");
-				s = n, c = !0
+				if (d) throw new Error("lit-localize can only be configured once");
+				s = n, d = !0
+			}
+		},
+		"./node_modules/@reddit/baseplate/lib/device/getDeviceTierForYearClass.js": function(n, t, r) {
+			"use strict";
+			r.d(t, "a", (function() {
+				return a
+			}));
+			const e = "high",
+				o = new Map([
+					[2011, "low"],
+					[2012, "moderately_low"],
+					[2014, "medium"],
+					[2016, "moderately_high"]
+				]);
+
+			function a(n) {
+				for (const [t, r] of o)
+					if (n <= t) return r;
+				return e
 			}
 		},
 		"./node_modules/@reddit/faceplate-ui/base-classes/icon-element.js": function(n, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return d
+				return c
 			}));
 			var e, o = r("./node_modules/tslib/tslib.es6.js"),
 				a = r("./node_modules/lit/index.js"),
@@ -89,14 +108,14 @@
   }
 `;
 
-			function d(n, t, r, d = l) {
+			function c(n, t, r, c = l) {
 				if (r) {
 					class l extends a.a {
 						constructor() {
 							super(...arguments), this.size = e.Small, this.fill = !1
 						}
 						static get styles() {
-							return d
+							return c
 						}
 						render() {
 							return this.fill ? r : t
@@ -114,7 +133,7 @@
 							super(...arguments), this.size = e.Small
 						}
 						static get styles() {
-							return d
+							return c
 						}
 						render() {
 							return t
@@ -149,16 +168,12 @@
 				return e
 			}))
 		},
-		"./node_modules/@reddit/shreddit.lib.telemetry/dist/eventV2JSONUtils.js": function(n, t, r) {
+		"./node_modules/@reddit/faceplate/lib/device.js": function(n, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return E
+				return o
 			}));
-			var e = r("./node_modules/uuid/dist/esm-browser/v4.js"),
-				o = r("./node_modules/js-cookie/dist/js.cookie.js"),
-				a = r.n(o),
-				i = r("./node_modules/@reddit/adblock-detection/browser.js");
-			const l = [{
+			const e = [{
 				dpi: 3,
 				height: 926,
 				width: 428,
@@ -214,7 +229,7 @@
 				yearClass: 2011
 			}];
 
-			function d() {
+			function o() {
 				const n = function(n) {
 					if (!window.screen || !window.devicePixelRatio) return;
 					const {
@@ -222,166 +237,12 @@
 						width: r
 					} = window.screen, e = window.devicePixelRatio;
 					return r && t && e ? n.find(n => e === n.dpi && t === n.height && r === n.width) : void 0
-				}(l);
+				}(e);
 				if (n) return {
 					deviceName: n.version.toLowerCase().replace(" ", "-"),
 					yearClass: n.yearClass
 				}
 			}
-			const s = "high",
-				c = new Map([
-					[2011, "low"],
-					[2012, "moderately_low"],
-					[2014, "medium"],
-					[2016, "moderately_high"]
-				]);
-
-			function u(n) {
-				for (const [t, r] of c)
-					if (n <= t) return r;
-				return s
-			}
-			const b = {
-					screen: {
-						view_type: "card"
-					}
-				},
-				h = {
-					app: {
-						name: "mweb3x"
-					}
-				},
-				p = function() {
-					let n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "",
-						t = "",
-						r = "";
-					const e = n.split(".");
-					if (e.length >= 3) {
-						t = `t2_${e[0].replace(/\b0+/g,"")}`, r = e[2]
-					}
-					return {
-						id: t,
-						cookie_created_timestamp: parseInt(r, 10)
-					}
-				},
-				v = function() {
-					let n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "";
-					const t = n.split("."),
-						r = t[0],
-						e = parseInt(t[2], 10);
-					return {
-						id: r,
-						created_timestamp: e
-					}
-				};
-			let g = null;
-			const m = () => {
-					const n = a.a.get("session_tracker"),
-						{
-							domain: t,
-							url: r
-						} = w();
-					return {
-						...v(n),
-						referrer_domain: t,
-						referrer_url: r
-					}
-				},
-				f = () => {
-					var n, t;
-					const r = a.a.get("loid");
-					return {
-						...r ? p(r) : "",
-						logged_in: null !== (n = null === (t = document.querySelector("shreddit-app")) || void 0 === t ? void 0 : t.hasAttribute("user-logged-in")) && void 0 !== n && n
-					}
-				},
-				w = () => {
-					const n = document.referrer;
-					let t = "";
-					if (n) {
-						t = new URL(document.referrer).hostname
-					}
-					return {
-						url: n,
-						domain: t
-					}
-				},
-				x = () => ({
-					enabled: Object(i.hasAdblock)(),
-					acceptable_ads: Object(i.hasAcceptableAds)()
-				}),
-				y = n => {
-					let t = {};
-					try {
-						var r, e, o;
-						t = JSON.parse(null !== (r = null === (e = document.getElementsByTagName("shreddit-screenview-data")) || void 0 === e ? void 0 : null === (o = e[0]) || void 0 === o ? void 0 : o.getAttribute("data")) && void 0 !== r ? r : "{}")
-					} catch (a) {
-						throw new Error("Unable to parse screenview data")
-					}
-					return t[n]
-				},
-				k = () => {
-					const {
-						hostname: n,
-						origin: t,
-						pathname: r,
-						search: e
-					} = window.location, o = `${t}${r}`;
-					return {
-						base_url: e ? `${o}${e}` : o,
-						canonical_url: void 0,
-						domain: n,
-						user_agent: window.navigator.userAgent
-					}
-				},
-				_ = () => {
-					var n, t;
-					const r = null !== (n = null === (t = d()) || void 0 === t ? void 0 : t.yearClass) && void 0 !== n ? n : null;
-					return {
-						year_class: r,
-						device_tier: r ? u(r) : void 0
-					}
-				},
-				$ = () => ({
-					adblock: x(),
-					referrer: w(),
-					session: m(),
-					user: f(),
-					client_timestamp: Date.now(),
-					platform: _(),
-					...b,
-					...h
-				}),
-				A = function(n, t) {
-					let r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : y;
-					if (null != t && t[n]) return {};
-					const e = r(n);
-					return e ? {
-						[n]: e
-					} : {}
-				},
-				S = n => (n.request = {
-					...k(),
-					...n.request || {}
-				}, g ? (n.request.google_client_id = g, n) : n),
-				E = function(n) {
-					let {
-						source: t,
-						action: r,
-						noun: o,
-						...a
-					} = n, i = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-					return {
-						...S(i),
-						source: t,
-						action: r,
-						noun: o,
-						uuid: Object(e.a)(),
-						...$(),
-						...A("post", i),
-						...a
-					}
-				}
 		},
 		"./node_modules/@reddit/shreddit.styles/dist/index.js": function(n, t, r) {
 			"use strict";
@@ -397,7 +258,7 @@
 			"use strict";
 			var e = r("./node_modules/css-loader/dist/runtime/api.js"),
 				o = r.n(e)()(!1);
-			o.push([n.i, "/*\n * This is a Tailwind CSS file, it must be run through the PostCSS compiler\n * with the Tailwind plugin, not Less. The `postcss-import` plugin is also\n * needed, if you have other additions to your Tailwind entry point CSS.\n *\n * @example\n * // tailwind.css\n * @import '@reddit/faceplate/styles/tailwind-components.css'\n * @tailwind components;\n * @tailwind utilities;\n *\n * // styles.less\n * @import (less) '@reddit/faceplate/faceplate.css';\n * @import (less) './tailwind-build.css';\n */\n.-translate-y-1\\/2, .-translate-x-1\\/2, .translate-x-0, .translate-y-md, .rotate-90, .scale-75, .scale-150, .scale-100, .-scale-x-100, .transform {\n    --tw-translate-x: 0;\n    --tw-translate-y: 0;\n    --tw-rotate: 0;\n    --tw-skew-x: 0;\n    --tw-skew-y: 0;\n    --tw-scale-x: 1;\n    --tw-scale-y: 1;\n}\n.ordinal {\n    --tw-ordinal:  ;\n    --tw-slashed-zero:  ;\n    --tw-numeric-figure:  ;\n    --tw-numeric-spacing:  ;\n    --tw-numeric-fraction:  ;\n}\n.shadow-none, .shadow-sm, .shadow-md {\n    --tw-ring-offset-shadow: 0 0 #0000;\n    --tw-ring-shadow: 0 0 #0000;\n    --tw-shadow: 0 0 #0000;\n    --tw-shadow-colored: 0 0 #0000;\n}\n.ring {\n    --tw-ring-inset:  ;\n    --tw-ring-offset-width: 0px;\n    --tw-ring-offset-color: #fff;\n    --tw-ring-color: rgb(59 130 246 / 0.5);\n    --tw-ring-offset-shadow: 0 0 #0000;\n    --tw-ring-shadow: 0 0 #0000;\n    --tw-shadow: 0 0 #0000;\n    --tw-shadow-colored: 0 0 #0000;\n}\n.container {\n    width: 100%;\n}\n.\\!container {\n    width: 100% !important;\n}\n@media (min-width: 1024px) {\n    .container {\n        max-width: 1024px;\n    }\n    .\\!container {\n        max-width: 1024px !important;\n    }\n}\n/* Anchor component*/\n.a {\n    border: var(--line-a-focus) solid transparent;\n    border-radius: 2px;\n    color: var(--color-a-default);\n    font-size: 1em;\n    padding: 0 var(--spacer-a-px);\n    margin: calc(-1 * var(--line-a-focus)) calc(-1 * (var(--spacer-a-px) + var(--line-a-focus)));\n    text-decoration: none;\n  }\n.\\!a {\n    border: var(--line-a-focus) solid transparent !important;\n    border-radius: 2px !important;\n    color: var(--color-a-default) !important;\n    font-size: 1em !important;\n    padding: 0 var(--spacer-a-px) !important;\n    margin: calc(-1 * var(--line-a-focus)) calc(-1 * (var(--spacer-a-px) + var(--line-a-focus))) !important;\n    text-decoration: none !important;\n  }\n.a:hover {\n    color: var(--color-a-hover);\n  }\n.\\!a:hover {\n    color: var(--color-a-hover) !important;\n  }\n.a:visited:not(.no-visited),\n  .a.visited:not(.no-visited) {\n    color: var(--color-a-visited);\n  }\n.\\!a:visited:not(.no-visited),\n  .\\!a.visited:not(.no-visited) {\n    color: var(--color-a-visited) !important;\n  }\n.a:focus {\n    border-color: var(--color-global-focus, transparent);\n    outline: var(--line-a-outline-moz) dotted #212121;\n    outline: var(--line-a-outline-wb) auto -webkit-focus-ring-color;\n  }\n.\\!a:focus {\n    border-color: var(--color-global-focus, transparent) !important;\n    outline: var(--line-a-outline-moz) dotted #212121 !important;\n    outline: var(--line-a-outline-wb) auto -webkit-focus-ring-color !important;\n  }\n.a:focus:not(:focus-visible) {\n    border-color: transparent;\n  }\n.\\!a:focus:not(:focus-visible) {\n    border-color: transparent !important;\n  }\n/* Button component */\n.button {\n    background: var(--button-color-background);\n    border-radius: 999px;\n    border: none;\n    border: var(--button-border-width, 0) solid var(--button-border-color, transparent);\n    box-shadow: var(--button-shadow);\n    box-sizing: border-box;\n    color: var(--button-color-text);\n    cursor: pointer;\n    display: inline-block;\n    font: var(--button-font);\n    height: var(--button-height);\n    line-height: calc(var(--button-height) - (2 * var(--button-border-width, 0px)));\n    outline: none;\n    overflow: hidden;\n    padding: 0 calc(var(--button-padding) - var(--button-border-width, 0px));\n    text-align: center;\n    text-decoration: none;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n    --button-border-color: var(--button-border-color-default);\n    --button-border-width: var(--button-border-width-default);\n    --button-color-background: var(--button-color-background-default);\n    --button-color-text: var(--button-color-text-default);\n    /* This is :active, AKA Pressed */\n    /* This is Selected */\n  }\n.\\!button {\n    background: var(--button-color-background) !important;\n    border-radius: 999px !important;\n    border: none !important;\n    border: var(--button-border-width, 0) solid var(--button-border-color, transparent) !important;\n    box-shadow: var(--button-shadow) !important;\n    box-sizing: border-box !important;\n    color: var(--button-color-text) !important;\n    cursor: pointer !important;\n    display: inline-block !important;\n    font: var(--button-font) !important;\n    height: var(--button-height) !important;\n    line-height: calc(var(--button-height) - (2 * var(--button-border-width, 0px))) !important;\n    outline: none !important;\n    overflow: hidden !important;\n    padding: 0 calc(var(--button-padding) - var(--button-border-width, 0px)) !important;\n    text-align: center !important;\n    text-decoration: none !important;\n    text-overflow: ellipsis !important;\n    white-space: nowrap !important;\n    --button-border-color: var(--button-border-color-default) !important;\n    --button-border-width: var(--button-border-width-default) !important;\n    --button-color-background: var(--button-color-background-default) !important;\n    --button-color-text: var(--button-color-text-default) !important;\n    /* This is :active, AKA Pressed */\n    /* This is Selected */\n  }\n.button .button-icon {\n    margin-right: var(--spacer-xs);\n  }\n.\\!button .button-icon {\n    margin-right: var(--spacer-xs) !important;\n  }\n.button .dropdown-icon {\n    transform: rotate(0deg);\n    transition: transform 0.2s ease-in-out;\n  }\n.\\!button .dropdown-icon {\n    transform: rotate(0deg) !important;\n    transition: transform 0.2s ease-in-out !important;\n  }\n.button:focus,\n  .button:hover {\n    --button-color-overlay: var(--color-button-overlay-focus);\n  }\n.\\!button:focus,\n  .\\!button:hover {\n    --button-color-overlay: var(--color-button-overlay-focus) !important;\n  }\n.button:hover {\n    --button-border-color: var(--button-border-color-hover);\n    --button-color-background: var(--button-color-background-hover);\n  }\n.\\!button:hover {\n    --button-border-color: var(--button-border-color-hover) !important;\n    --button-color-background: var(--button-color-background-hover) !important;\n  }\n.button:focus {\n    --button-shadow: var(--elevation-button-focus);\n  }\n.\\!button:focus {\n    --button-shadow: var(--elevation-button-focus) !important;\n  }\n.button:focus:not(:focus-visible) {\n    --button-shadow: 0 0 0 var(--line-l) transparent;\n  }\n.\\!button:focus:not(:focus-visible) {\n    --button-shadow: 0 0 0 var(--line-l) transparent !important;\n  }\n.button:active {\n    --button-color-overlay: var(--color-button-overlay-active);\n    --button-color-background: linear-gradient(var(--color-interactive-pressed), var(--color-interactive-pressed)),\n      var(--button-color-background-active);\n  }\n.\\!button:active {\n    --button-color-overlay: var(--color-button-overlay-active) !important;\n    --button-color-background: linear-gradient(var(--color-interactive-pressed), var(--color-interactive-pressed)),\n      var(--button-color-background-active) !important;\n  }\n.button:focus,\n  .button:hover,\n  .button:active {\n    position: relative;\n  }\n.\\!button:focus,\n  .\\!button:hover,\n  .\\!button:active {\n    position: relative !important;\n  }\n.button:focus::before,\n  .button:hover::before,\n  .button:active::before {\n    content: '';\n    position: absolute;\n    left: 0;\n    right: 0;\n    top: 0;\n    bottom: 0;\n    display: block;\n    background: var(--button-color-overlay);\n    border-radius: inherit;\n    pointer-events: none;\n  }\n.\\!button:focus::before,\n  .\\!button:hover::before,\n  .\\!button:active::before {\n    content: '' !important;\n    position: absolute !important;\n    left: 0 !important;\n    right: 0 !important;\n    top: 0 !important;\n    bottom: 0 !important;\n    display: block !important;\n    background: var(--button-color-overlay) !important;\n    border-radius: inherit !important;\n    pointer-events: none !important;\n  }\n.button:disabled {\n    --button-color-background: var(--button-color-background-disabled);\n    --button-color-text: var(--button-color-text-disabled);\n    cursor: not-allowed;\n  }\n.\\!button:disabled {\n    --button-color-background: var(--button-color-background-disabled) !important;\n    --button-color-text: var(--button-color-text-disabled) !important;\n    cursor: not-allowed !important;\n  }\n.button:disabled::before {\n    display: none;\n  }\n.\\!button:disabled::before {\n    display: none !important;\n  }\n.button.button-activated {\n    --button-border-width: var(--button-border-width-activated);\n    --button-color-background: var(--button-color-background-activated);\n    --button-color-text: var(--button-color-text-activated);\n  }\n.\\!button.button-activated {\n    --button-border-width: var(--button-border-width-activated) !important;\n    --button-color-background: var(--button-color-background-activated) !important;\n    --button-color-text: var(--button-color-text-activated) !important;\n  }\n.button.button-activated span.dropdown-icon {\n    transform: rotate(180deg);\n    transition: transform 0.22s ease-in-out;\n  }\n.\\!button.button-activated span.dropdown-icon {\n    transform: rotate(180deg) !important;\n    transition: transform 0.22s ease-in-out !important;\n  }\n.button-shell {\n    background: var(--button-color-background);\n    border-radius: 999px;\n    border: none;\n    border: var(--button-border-width, 0) solid var(--button-border-color, transparent);\n    box-shadow: var(--button-shadow);\n    box-sizing: border-box;\n    color: var(--button-color-text);\n    cursor: pointer;\n    display: inline-block;\n    font: var(--button-font);\n    height: var(--button-height);\n    line-height: calc(var(--button-height) - (2 * var(--button-border-width, 0px)));\n    outline: none;\n    overflow: hidden;\n    padding: 0 calc(var(--button-padding) - var(--button-border-width, 0px));\n    text-align: center;\n    text-decoration: none;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n    --button-border-color: var(--button-border-color-default);\n    --button-border-width: var(--button-border-width-default);\n    --button-color-background: var(--button-color-background-default);\n    --button-color-text: var(--button-color-text-default);\n  }\n.button-large {\n    --button-height: var(--size-button-lg-h);\n    --button-padding: var(--spacer-xs);\n    --button-font: var(--font-button-lg);\n    --button-border-width-default: var(--line-button-lg-border);\n    --button-border-width-activated: var(--line-button-border-activated);\n  }\n.button-medium {\n    --button-height: var(--size-button-md-h);\n    --button-padding: var(--spacer-xs);\n    --button-font: var(--font-button-md);\n    --button-border-width-default: var(--line-button-md-border);\n    --button-border-width-activated: var(--line-button-border-activated);\n  }\n.button-small {\n    --button-height: var(--size-button-sm-h);\n    --button-padding: var(--spacer-2xs);\n    --button-font: var(--font-button-sm);\n    --button-border-width-default: var(--line-button-sm-border);\n    --button-border-width-activated: var(--line-button-border-activated);\n  }\n.button-x-small {\n    --button-height: var(--size-button-xs-h);\n    --button-padding: var(--spacer-sm);\n    --button-font: var(--font-button-xs);\n    --button-border-width-default: var(--line-button-xs-border);\n    --button-border-width-activated: var(--line-button-border-activated);\n  }\n.button-icon {\n    --button-padding: 0;\n    width: var(--button-height);\n  }\n.button-primary {\n    --button-color-background-default: var(--color-primary-background);\n    --button-color-background-focus: var(--color-primary-background);\n    --button-color-background-hover: var(--color-button-primary-background-hover);\n    --button-color-background-active: linear-gradient(var(--color-button-primary-background-hover), var(--color-button-primary-background-hover));\n    --button-color-background-disabled: var(--color-button-primary-background-disabled);\n    --button-color-background-activated: var(--color-global-white);\n    --button-color-text-default: var(--color-global-white);\n    --button-color-text-disabled: var(--color-button-primary-text-disabled);\n    --button-color-text-activated: var(--color-button-primary-text-activated);\n    --button-border-color-default: transparent;\n  }\n.button-secondary {\n    --button-color-background-default: var(--color-button-secondary-background);\n    --button-color-background-focus: var(--color-button-secondary-background-focus);\n    --button-color-background-hover: var(--color-button-secondary-background-hover);\n    --button-color-background-active: linear-gradient(var(--color-button-secondary-background-hover), var(--color-button-secondary-background-hover));\n    --button-color-background-disabled: var(--color-button-secondary-background-disabled);\n    --button-color-background-activated: var(--color-button-secondary-background-activated);\n    --button-color-text-default: var(--color-button-secondary-text);\n    --button-color-text-disabled: var(--color-button-secondary-text-disabled);\n    --button-color-text-activated: var(--color-button-secondary-text-activated);\n    --button-border-color-default: var(--color-button-secondary-border);\n  }\n.button-tertiary {\n    --button-color-background-default: var(--color-button-tertiary-background);\n    --button-color-background-focus: var(--color-button-tertiary-background-focus);\n    --button-color-background-hover: var(--color-button-tertiary-background-hover);\n    --button-color-background-disabled: var(--color-button-tertiary-background-disabled);\n    --button-color-background-activated: var(--color-button-tertiary-background-activated);\n    --button-color-text-default: var(--color-button-tertiary-text);\n    --button-color-text-disabled: var(--color-button-tertiary-text-disabled);\n    --button-color-text-activated: var(--color-button-tertiary-text-activated);\n    --button-border-color-default: transparent;\n  }\n.button-plain {\n    --button-color-background-default: transparent;\n    --button-color-background-focus: transparent;\n    --button-color-background-hover: var(--color-button-plain-background-hover);\n    --button-color-background-disabled: var(--color-button-plain-background-disabled);\n    --button-color-background-activated: var(--color-button-plain-background-activated);\n    --button-color-background-active: linear-gradient(var(--color-button-secondary-background-hover), var(--color-button-secondary-background-hover));\n    --button-color-text-default: var(--color-button-plain-text);\n    --button-color-text-disabled: var(--color-button-plain-text-disabled);\n    --button-color-text-activated: var(--color-button-plain-text-activated);\n    --button-border-color-default: transparent;\n  }\n.button-outline {\n    --button-color-background-default: transparent;\n    --button-color-background-focus: transparent;\n    --button-color-background-hover: transparent;\n    --button-color-background-active: linear-gradient(transparent, transparent);\n    --button-color-background-disabled: transparent;\n    --button-color-background-activated: transparent;\n    --button-color-text-default: var(--color-neutral-content);\n    --button-color-text-disabled: var(--color-neutral-content-disabled);\n    --button-color-text-activated: var(--color-neutral-content-strong);\n    --button-border-color-default: var(--color-neutral-content-weak);\n    --button-border-color-hover: var(--color-neutral-content-disabled);\n    --button-border-color-active: var(--color-neutral-content);\n    --button-border-color-activated: var(--color-neutral-content-strong);\n    --button-border-color-disabled: var(--color-neutral-content-disabled);\n    --button-border-width-default: var(--line-md);\n    --button-border-width-activated: var(--line-md);\n  }\n.button-destructive {\n    --button-color-background-default: var(--color-danger-background);\n    --button-color-background-focus: var(--color-danger-background-hover);\n    --button-color-background-hover: var(--color-danger-background-hover);\n    --button-color-background-active: linear-gradient(var(--color-danger-background-hover), var(--color-danger-background-hover));\n    --button-color-background-disabled: var(--color-danger-background);\n    --button-color-text-default: var(--color-danger-content-default);\n    --button-color-text-disabled: var(--color-danger-content-default);\n    --button-border-color-default: transparent;\n    --button-border-color-hover: transparent;\n    --button-border-color-active: transparent;\n  }\n.button-media {\n    --button-color-background-default: var(--color-media-background);\n    --button-color-background-focus: var(--color-media-background-hover);\n    --button-color-background-hover: var(--color-media-background-hover);\n    --button-color-background-active: linear-gradient(var(--color-media-background-hover), var(--color-media-background-hover));\n    --button-color-text-default: white;\n    --button-color-text-disabled: var(--color-media-onbackground-disabled);\n    --button-color-background-disabled: var(--color-media-background);\n  }\n.button-brand {\n    --button-color-background-default: var(--color-brand-background);\n    --button-color-background-hover: var(--color-brand-background-hover);\n    --button-color-background-active: linear-gradient(var(--color-brand-background-hover), var(--color-brand-background-hover));\n    --button-color-background-disabled: var(--color-neutral-background-disabled);\n    --button-color-text-default: var(--color-danger-content-default);\n    --button-color-text-disabled: var(--color-neutral-content-disabled);\n    --button-border-color-default: transparent;\n    --button-border-width-default: 0px;\n  }\n.button-success {\n    --button-color-background-default: var(--color-success-background);\n    --button-color-background-focus: var(--color-success-background-hover);\n    --button-color-background-hover: var(--color-success-background-hover);\n    --button-color-background-active: linear-gradient(var(--color-success-background-hover), var(--color-success-background-hover));\n    --button-color-background-disabled: var(--color-button-primary-background-disabled);\n    --button-color-text-default: var(--color-success-onBackground);\n    --button-color-text-disabled: var(--color-button-primary-text-disabled);\n    --button-border-color-default: transparent;\n  }\n.button-plain-inverted {\n    --button-color-background-default: transparent;\n    --button-color-background-focus: var(--color-neutral-content);\n    --button-color-background-hover: var(--color-neutral-content);\n    --button-color-background-active: var(--color-interactive-pressed);\n    --button-color-background-disabled: transparent;\n    --button-color-text-default: var(--color-neutral-background-weak);\n    --button-color-text-disabled: var(--color-neutral-content);\n    --button-border-color-default: transparent;\n  }\n/* Featured avatar */\n.featured-avatar-xs {\n    --featured-avatar-xs-size: var(--rem48);\n    height: var(--featured-avatar-xs-size);\n    width: var(--featured-avatar-xs-size);\n  }\n.featured-avatar-sm {\n    --featured-avatar-sm-size: var(--rem64);\n    height: var(--featured-avatar-sm-size);\n    width: var(--featured-avatar-sm-size);\n  }\n.featured-avatar-md {\n    --featured-avatar-md-size: var(--rem88);\n    height: var(--featured-avatar-md-size);\n    width: var(--featured-avatar-md-size);\n  }\n.featured-avatar-lg {\n    --featured-avatar-lg-size: var(--rem144);\n    height: var(--featured-avatar-lg-size);\n    width: var(--featured-avatar-lg-size);\n  }\n.featured-avatar-xl {\n    --featured-avatar-xl-size: var(--rem192);\n    height: var(--featured-avatar-xl-size);\n    width: var(--featured-avatar-xl-size);\n  }\n.featured-avatar-2xl {\n    --featured-avatar-2xl-size: var(--rem320);\n    height: var(--featured-avatar-2xl-size);\n    width: var(--featured-avatar-2xl-size);\n  }\n.pointer-events-none {\n    pointer-events: none;\n}\n.pointer-events-auto {\n    pointer-events: auto;\n}\n.visible {\n    visibility: visible;\n}\n.\\!visible {\n    visibility: visible !important;\n}\n.invisible {\n    visibility: hidden;\n}\n.static {\n    position: static;\n}\n.fixed {\n    position: fixed;\n}\n.absolute {\n    position: absolute;\n}\n.relative {\n    position: relative;\n}\n.sticky {\n    position: sticky;\n}\n.\\!sticky {\n    position: sticky !important;\n}\n.inset-0 {\n    top: 0px;\n    right: 0px;\n    bottom: 0px;\n    left: 0px;\n}\n.top-0 {\n    top: 0px;\n}\n.left-0 {\n    left: 0px;\n}\n.right-0 {\n    right: 0px;\n}\n.top-\\[128px\\] {\n    top: 128px;\n}\n.top-\\[30px\\] {\n    top: 30px;\n}\n.top-1\\/2 {\n    top: 50%;\n}\n.bottom-2xl {\n    bottom: 3rem;\n}\n.left-1\\/2 {\n    left: 50%;\n}\n.bottom-0 {\n    bottom: 0px;\n}\n.left-xs {\n    left: 0.5rem;\n}\n.top-2xs {\n    top: 0.25rem;\n}\n.right-2xs {\n    right: 0.25rem;\n}\n.right-xs {\n    right: 0.5rem;\n}\n.right-sm {\n    right: 0.75rem;\n}\n.top-sm {\n    top: 0.75rem;\n}\n.left-md {\n    left: 1rem;\n}\n.top-md {\n    top: 1rem;\n}\n.top-100 {\n    top: 100%;\n}\n.left-lg {\n    left: 1.5rem;\n}\n.top-3xl {\n    top: 4rem;\n}\n.-right-\\[0\\.0625rem\\] {\n    right: -0.0625rem;\n}\n.-right-\\[0\\.0825rem\\] {\n    right: -0.0825rem;\n}\n.-right-\\[0\\.125rem\\] {\n    right: -0.125rem;\n}\n.-right-\\[\\.65rem\\] {\n    right: -.65rem;\n}\n.-right-\\[\\.75rem\\] {\n    right: -.75rem;\n}\n.isolate {\n    isolation: isolate;\n}\n.z-\\[80\\] {\n    z-index: 80;\n}\n.z-10 {\n    z-index: 10;\n}\n.z-0 {\n    z-index: 0;\n}\n.z-20 {\n    z-index: 20;\n}\n.z-50 {\n    z-index: 50;\n}\n.z-\\[2\\] {\n    z-index: 2;\n}\n.z-\\[3\\] {\n    z-index: 3;\n}\n.col-span-full {\n    grid-column: 1 / -1;\n}\n.col-span-6 {\n    grid-column: span 6 / span 6;\n}\n.col-span-1 {\n    grid-column: span 1 / span 1;\n}\n.col-span-4 {\n    grid-column: span 4 / span 4;\n}\n.col-span-2 {\n    grid-column: span 2 / span 2;\n}\n.col-start-1 {\n    grid-column-start: 1;\n}\n.col-start-2 {\n    grid-column-start: 2;\n}\n.col-start-3 {\n    grid-column-start: 3;\n}\n.col-end-1 {\n    grid-column-end: 1;\n}\n.col-end-4 {\n    grid-column-end: 4;\n}\n.col-end-2 {\n    grid-column-end: 2;\n}\n.row-start-1 {\n    grid-row-start: 1;\n}\n.row-end-auto {\n    grid-row-end: auto;\n}\n.float-right {\n    float: right;\n}\n.m-0 {\n    margin: 0px;\n}\n.m-lg {\n    margin: 1.5rem;\n}\n.m-xs {\n    margin: 0.5rem;\n}\n.m-auto {\n    margin: auto;\n}\n.m-sm {\n    margin: 0.75rem;\n}\n.m-md {\n    margin: 1rem;\n}\n.my-0 {\n    margin-top: 0px;\n    margin-bottom: 0px;\n}\n.mx-auto {\n    margin-left: auto;\n    margin-right: auto;\n}\n.mx-md {\n    margin-left: 1rem;\n    margin-right: 1rem;\n}\n.mx-0 {\n    margin-left: 0px;\n    margin-right: 0px;\n}\n.mx-sm {\n    margin-left: 0.75rem;\n    margin-right: 0.75rem;\n}\n.mx-xs {\n    margin-left: 0.5rem;\n    margin-right: 0.5rem;\n}\n.my-sm {\n    margin-top: 0.75rem;\n    margin-bottom: 0.75rem;\n}\n.mx-2xs {\n    margin-left: 0.25rem;\n    margin-right: 0.25rem;\n}\n.-mx-md {\n    margin-left: -1rem;\n    margin-right: -1rem;\n}\n.my-md {\n    margin-top: 1rem;\n    margin-bottom: 1rem;\n}\n.my-xs {\n    margin-top: 0.5rem;\n    margin-bottom: 0.5rem;\n}\n.mb-xs {\n    margin-bottom: 0.5rem;\n}\n.mb-lg {\n    margin-bottom: 1.5rem;\n}\n.mr-md {\n    margin-right: 1rem;\n}\n.mb-0 {\n    margin-bottom: 0px;\n}\n.mt-\\[2px\\] {\n    margin-top: 2px;\n}\n.ml-\\[-4px\\] {\n    margin-left: -4px;\n}\n.ml-\\[8px\\] {\n    margin-left: 8px;\n}\n.mt-\\[4px\\] {\n    margin-top: 4px;\n}\n.ml-auto {\n    margin-left: auto;\n}\n.mb-\\[10px\\] {\n    margin-bottom: 10px;\n}\n.mt-2xs {\n    margin-top: 0.25rem;\n}\n.mt-sm {\n    margin-top: 0.75rem;\n}\n.ml-md {\n    margin-left: 1rem;\n}\n.mb-sm {\n    margin-bottom: 0.75rem;\n}\n.ml-xs {\n    margin-left: 0.5rem;\n}\n.ml-2xs {\n    margin-left: 0.25rem;\n}\n.mr-2xs {\n    margin-right: 0.25rem;\n}\n.ml-sm {\n    margin-left: 0.75rem;\n}\n.mr-sm {\n    margin-right: 0.75rem;\n}\n.mt-md {\n    margin-top: 1rem;\n}\n.mb-md {\n    margin-bottom: 1rem;\n}\n.mt-lg {\n    margin-top: 1.5rem;\n}\n.mt-0 {\n    margin-top: 0px;\n}\n.mt-xs {\n    margin-top: 0.5rem;\n}\n.mr-xs {\n    margin-right: 0.5rem;\n}\n.mt-xl {\n    margin-top: 2rem;\n}\n.-mt-xl {\n    margin-top: -2rem;\n}\n.mr-0 {\n    margin-right: 0px;\n}\n.mb-2xs {\n    margin-bottom: 0.25rem;\n}\n.-ml-sm {\n    margin-left: -0.75rem;\n}\n.mr-auto {\n    margin-right: auto;\n}\n.ml-0 {\n    margin-left: 0px;\n}\n.-ml-md {\n    margin-left: -1rem;\n}\n.-mt-sm {\n    margin-top: -0.75rem;\n}\n.mb-2xl {\n    margin-bottom: 3rem;\n}\n.ml-px {\n    margin-left: 1px;\n}\n.ml-xl {\n    margin-left: 2rem;\n}\n.-ml-\\[var\\(--rem4\\)\\] {\n    margin-left: calc(var(--rem4) * -1);\n}\n.-ml-\\[var\\(--rem6\\)\\] {\n    margin-left: calc(var(--rem6) * -1);\n}\n.-ml-\\[var\\(--rem8\\)\\] {\n    margin-left: calc(var(--rem8) * -1);\n}\n.-ml-\\[var\\(--rem10\\)\\] {\n    margin-left: calc(var(--rem10) * -1);\n}\n.-ml-\\[var\\(--rem12\\)\\] {\n    margin-left: calc(var(--rem12) * -1);\n}\n.-ml-\\[var\\(--rem14\\)\\] {\n    margin-left: calc(var(--rem14) * -1);\n}\n.-ml-\\[var\\(--rem16\\)\\] {\n    margin-left: calc(var(--rem16) * -1);\n}\n.-ml-\\[var\\(--rem18\\)\\] {\n    margin-left: calc(var(--rem18) * -1);\n}\n.-ml-\\[var\\(--rem20\\)\\] {\n    margin-left: calc(var(--rem20) * -1);\n}\n.mr-\\[length\\:var\\(--rem6\\)\\] {\n    margin-right: var(--rem6);\n}\n.mt-\\[-0\\.125rem\\] {\n    margin-top: -0.125rem;\n}\n.ml-\\[-\\.25rem\\] {\n    margin-left: -.25rem;\n}\n.mt-\\[-0\\.25rem\\] {\n    margin-top: -0.25rem;\n}\n.box-border {\n    box-sizing: border-box;\n}\n.block {\n    display: block;\n}\n.\\!block {\n    display: block !important;\n}\n.inline-block {\n    display: inline-block;\n}\n.inline {\n    display: inline;\n}\n.flex {\n    display: flex;\n}\n.inline-flex {\n    display: inline-flex;\n}\n.table {\n    display: table;\n}\n.\\!table {\n    display: table !important;\n}\n.table-cell {\n    display: table-cell;\n}\n.grid {\n    display: grid;\n}\n.contents {\n    display: contents;\n}\n.list-item {\n    display: list-item;\n}\n.hidden {\n    display: none;\n}\n.\\!hidden {\n    display: none !important;\n}\n.aspect-square {\n    aspect-ratio: 1 / 1;\n}\n.h-\\[10px\\] {\n    height: 10px;\n}\n.h-\\[20px\\] {\n    height: 20px;\n}\n.\\!h-\\[32px\\] {\n    height: 32px !important;\n}\n.h-\\[16px\\] {\n    height: 16px;\n}\n.h-full {\n    height: 100%;\n}\n.h-3xl {\n    height: 4rem;\n}\n.h-2xl {\n    height: 3rem;\n}\n.h-100 {\n    height: 100%;\n}\n.h-2xs {\n    height: 0.25rem;\n}\n.h-lg {\n    height: 1.5rem;\n}\n.h-md {\n    height: 1rem;\n}\n.h-sm {\n    height: 0.75rem;\n}\n.h-xs {\n    height: 0.5rem;\n}\n.h-px {\n    height: 1px;\n}\n.h-auto {\n    height: auto;\n}\n.h-xl {\n    height: 2rem;\n}\n.h-4xl {\n    height: 6rem;\n}\n.h-screen {\n    height: 100vh;\n}\n.h-0 {\n    height: 0px;\n}\n.h-\\[1rem\\] {\n    height: 1rem;\n}\n.h-\\[1\\.25rem\\] {\n    height: 1.25rem;\n}\n.h-\\[1\\.5rem\\] {\n    height: 1.5rem;\n}\n.h-\\[2rem\\] {\n    height: 2rem;\n}\n.h-\\[2\\.5rem\\] {\n    height: 2.5rem;\n}\n.h-\\[3rem\\] {\n    height: 3rem;\n}\n.h-\\[2\\.87rem\\] {\n    height: 2.87rem;\n}\n.h-\\[3\\.25rem\\] {\n    height: 3.25rem;\n}\n.h-\\[4\\.5rem\\] {\n    height: 4.5rem;\n}\n.h-\\[3\\.5rem\\] {\n    height: 3.5rem;\n}\n.h-\\[4rem\\] {\n    height: 4rem;\n}\n.h-\\[5\\.5rem\\] {\n    height: 5.5rem;\n}\n.h-\\[\\.25rem\\] {\n    height: .25rem;\n}\n.h-\\[\\.375rem\\] {\n    height: .375rem;\n}\n.h-\\[\\.625rem\\] {\n    height: .625rem;\n}\n.h-\\[length\\:var\\(--size-button-md-h\\)\\] {\n    height: var(--size-button-md-h);\n}\n.max-h-full {\n    max-height: 100%;\n}\n.max-h-\\[240px\\] {\n    max-height: 240px;\n}\n.max-h-\\[253px\\] {\n    max-height: 253px;\n}\n.min-h-\\[20px\\] {\n    min-height: 20px;\n}\n.min-h-screen {\n    min-height: 100vh;\n}\n.min-h-full {\n    min-height: 100%;\n}\n.min-h-\\[1rem\\] {\n    min-height: 1rem;\n}\n.w-100 {\n    width: 100%;\n}\n.w-\\[539px\\] {\n    width: 539px;\n}\n.w-\\[16px\\] {\n    width: 16px;\n}\n.\\!w-\\[32px\\] {\n    width: 32px !important;\n}\n.w-full {\n    width: 100%;\n}\n.w-3xl {\n    width: 4rem;\n}\n.w-fit {\n    width: fit-content;\n}\n.w-\\[280px\\] {\n    width: 280px;\n}\n.w-\\[268px\\] {\n    width: 268px;\n}\n.w-\\[64px\\] {\n    width: 64px;\n}\n.w-xs {\n    width: 0.5rem;\n}\n.w-lg {\n    width: 1.5rem;\n}\n.w-md {\n    width: 1rem;\n}\n.w-5xl {\n    width: 8rem;\n}\n.w-xl {\n    width: 2rem;\n}\n.w-auto {\n    width: auto;\n}\n.w-screen {\n    width: 100vw;\n}\n.w-2xl {\n    width: 3rem;\n}\n.w-px {\n    width: 1px;\n}\n.w-\\[1rem\\] {\n    width: 1rem;\n}\n.w-\\[1\\.25rem\\] {\n    width: 1.25rem;\n}\n.w-\\[1\\.5rem\\] {\n    width: 1.5rem;\n}\n.w-\\[2rem\\] {\n    width: 2rem;\n}\n.w-\\[2\\.5rem\\] {\n    width: 2.5rem;\n}\n.w-\\[3rem\\] {\n    width: 3rem;\n}\n.w-\\[2\\.87rem\\] {\n    width: 2.87rem;\n}\n.w-\\[3\\.25rem\\] {\n    width: 3.25rem;\n}\n.w-\\[4\\.5rem\\] {\n    width: 4.5rem;\n}\n.w-\\[3\\.5rem\\] {\n    width: 3.5rem;\n}\n.w-\\[4rem\\] {\n    width: 4rem;\n}\n.w-\\[5\\.5rem\\] {\n    width: 5.5rem;\n}\n.w-\\[\\.25rem\\] {\n    width: .25rem;\n}\n.w-\\[\\.375rem\\] {\n    width: .375rem;\n}\n.w-\\[\\.625rem\\] {\n    width: .625rem;\n}\n.min-w-\\[500px\\] {\n    min-width: 500px;\n}\n.min-w-0 {\n    min-width: 0px;\n}\n.min-w-\\[20px\\] {\n    min-width: 20px;\n}\n.min-w-full {\n    min-width: 100%;\n}\n.min-w-\\[0\\.5rem\\] {\n    min-width: 0.5rem;\n}\n.max-w-\\[12rem\\] {\n    max-width: 12rem;\n}\n.max-w-full {\n    max-width: 100%;\n}\n.max-w-\\[240px\\] {\n    max-width: 240px;\n}\n.max-w-none {\n    max-width: none;\n}\n.max-w-\\[480px\\] {\n    max-width: 480px;\n}\n.flex-auto {\n    flex: 1 1 auto;\n}\n.flex-1 {\n    flex: 1 1 0%;\n}\n.flex-none {\n    flex: none;\n}\n.flex-shrink-0 {\n    flex-shrink: 0;\n}\n.flex-shrink {\n    flex-shrink: 1;\n}\n.shrink {\n    flex-shrink: 1;\n}\n.shrink-0 {\n    flex-shrink: 0;\n}\n.flex-grow-0 {\n    flex-grow: 0;\n}\n.flex-grow {\n    flex-grow: 1;\n}\n.grow {\n    flex-grow: 1;\n}\n.grow-0 {\n    flex-grow: 0;\n}\n.basis-0 {\n    flex-basis: 0px;\n}\n.basis-2xl {\n    flex-basis: 3rem;\n}\n.basis-full {\n    flex-basis: 100%;\n}\n.border-separate {\n    border-collapse: separate;\n}\n.-translate-y-1\\/2 {\n    --tw-translate-y: -50%;\n    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));\n}\n.-translate-x-1\\/2 {\n    --tw-translate-x: -50%;\n    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));\n}\n.translate-x-0 {\n    --tw-translate-x: 0px;\n    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));\n}\n.translate-y-md {\n    --tw-translate-y: 1rem;\n    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));\n}\n.rotate-90 {\n    --tw-rotate: 90deg;\n    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));\n}\n.scale-75 {\n    --tw-scale-x: .75;\n    --tw-scale-y: .75;\n    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));\n}\n.scale-150 {\n    --tw-scale-x: 1.5;\n    --tw-scale-y: 1.5;\n    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));\n}\n.scale-100 {\n    --tw-scale-x: 1;\n    --tw-scale-y: 1;\n    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));\n}\n.-scale-x-100 {\n    --tw-scale-x: -1;\n    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));\n}\n.transform {\n    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));\n}\n.transform-gpu {\n    transform: translate3d(var(--tw-translate-x), var(--tw-translate-y), 0) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));\n}\n@keyframes spin {\n    to {\n        transform: rotate(360deg);\n    }\n}\n.animate-spin {\n    animation: spin 1s linear infinite;\n}\n.cursor-pointer {\n    cursor: pointer;\n}\n.cursor-default {\n    cursor: default;\n}\n.cursor-none {\n    cursor: none;\n}\n.select-none {\n    user-select: none;\n}\n.resize-y {\n    resize: vertical;\n}\n.resize {\n    resize: both;\n}\n.list-none {\n    list-style-type: none;\n}\n.columns-1 {\n    columns: 1;\n}\n.grid-cols-1 {\n    grid-template-columns: repeat(1, minmax(0, 1fr));\n}\n.grid-cols-8 {\n    grid-template-columns: repeat(8, minmax(0, 1fr));\n}\n.flex-row {\n    flex-direction: row;\n}\n.flex-col {\n    flex-direction: column;\n}\n.flex-wrap {\n    flex-wrap: wrap;\n}\n.flex-nowrap {\n    flex-wrap: nowrap;\n}\n.items-start {\n    align-items: flex-start;\n}\n.items-end {\n    align-items: flex-end;\n}\n.items-center {\n    align-items: center;\n}\n.items-stretch {\n    align-items: stretch;\n}\n.justify-start {\n    justify-content: flex-start;\n}\n.justify-end {\n    justify-content: flex-end;\n}\n.justify-center {\n    justify-content: center;\n}\n.justify-between {\n    justify-content: space-between;\n}\n.justify-around {\n    justify-content: space-around;\n}\n.justify-items-start {\n    justify-items: start;\n}\n.justify-items-center {\n    justify-items: center;\n}\n.gap-xs {\n    gap: 0.5rem;\n}\n.gap-sm {\n    gap: 0.75rem;\n}\n.gap-md {\n    gap: 1rem;\n}\n.gap-2xs {\n    gap: 0.25rem;\n}\n.gap-\\[1rem\\] {\n    gap: 1rem;\n}\n.gap-\\[length\\:var\\(--rem12\\)\\] {\n    gap: var(--rem12);\n}\n.gap-x-md {\n    column-gap: 1rem;\n}\n.gap-x-xs {\n    column-gap: 0.5rem;\n}\n.self-start {\n    align-self: flex-start;\n}\n.self-end {\n    align-self: flex-end;\n}\n.self-center {\n    align-self: center;\n}\n.self-baseline {\n    align-self: baseline;\n}\n.overflow-auto {\n    overflow: auto;\n}\n.overflow-hidden {\n    overflow: hidden;\n}\n.overflow-visible {\n    overflow: visible;\n}\n.overflow-scroll {\n    overflow: scroll;\n}\n.overflow-y-auto {\n    overflow-y: auto;\n}\n.overflow-x-hidden {\n    overflow-x: hidden;\n}\n.overflow-x-visible {\n    overflow-x: visible;\n}\n.overflow-x-scroll {\n    overflow-x: scroll;\n}\n.overscroll-none {\n    overscroll-behavior: none;\n}\n.scroll-smooth {\n    scroll-behavior: smooth;\n}\n.truncate {\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n}\n.overflow-ellipsis {\n    text-overflow: ellipsis;\n}\n.text-ellipsis {\n    text-overflow: ellipsis;\n}\n.whitespace-normal {\n    white-space: normal;\n}\n.whitespace-nowrap {\n    white-space: nowrap;\n}\n.break-normal {\n    overflow-wrap: normal;\n    word-break: normal;\n}\n.rounded-sm {\n    border-radius: 0.25rem;\n}\n.rounded-full {\n    border-radius: 624.9375rem;\n}\n.rounded-\\[0\\.5rem\\] {\n    border-radius: 0.5rem;\n}\n.rounded-lg {\n    border-radius: 2rem;\n}\n.rounded-none {\n    border-radius: 0rem;\n}\n.rounded-\\[\\.5rem\\] {\n    border-radius: .5rem;\n}\n.rounded-l-sm {\n    border-top-left-radius: 0.25rem;\n    border-bottom-left-radius: 0.25rem;\n}\n.rounded-t-lg {\n    border-top-left-radius: 2rem;\n    border-top-right-radius: 2rem;\n}\n.rounded-r-sm {\n    border-top-right-radius: 0.25rem;\n    border-bottom-right-radius: 0.25rem;\n}\n.rounded-r-lg {\n    border-top-right-radius: 2rem;\n    border-bottom-right-radius: 2rem;\n}\n.rounded-b-none {\n    border-bottom-right-radius: 0rem;\n    border-bottom-left-radius: 0rem;\n}\n.rounded-br-none {\n    border-bottom-right-radius: 0rem;\n}\n.border {\n    border-width: 0.0625rem;\n}\n.border-sm {\n    border-width: 0.0625rem;\n}\n.border-lg {\n    border-width: 0.25rem;\n}\n.border-0 {\n    border-width: 0rem;\n}\n.border-md {\n    border-width: 0.125rem;\n}\n.border-y-sm {\n    border-top-width: 0.0625rem;\n    border-bottom-width: 0.0625rem;\n}\n.border-x-0 {\n    border-left-width: 0rem;\n    border-right-width: 0rem;\n}\n.border-y-0 {\n    border-top-width: 0rem;\n    border-bottom-width: 0rem;\n}\n.border-b {\n    border-bottom-width: 0.0625rem;\n}\n.border-r-sm {\n    border-right-width: 0.0625rem;\n}\n.border-t-sm {\n    border-top-width: 0.0625rem;\n}\n.border-b-0 {\n    border-bottom-width: 0rem;\n}\n.border-r-0 {\n    border-right-width: 0rem;\n}\n.border-l-0 {\n    border-left-width: 0rem;\n}\n.border-b-sm {\n    border-bottom-width: 0.0625rem;\n}\n.border-t-0 {\n    border-top-width: 0rem;\n}\n.border-t {\n    border-top-width: 0.0625rem;\n}\n.border-l-sm {\n    border-left-width: 0.0625rem;\n}\n.border-r-md {\n    border-right-width: 0.125rem;\n}\n.border-r {\n    border-right-width: 0.0625rem;\n}\n.border-l-lg {\n    border-left-width: 0.25rem;\n}\n.border-solid {\n    border-style: solid;\n}\n.border-none {\n    border-style: none;\n}\n.border-neutral-border-weak {\n    border-color: var(--color-neutral-border-weak);\n}\n.border-white {\n    --tw-border-opacity: 1;\n    border-color: rgb(255 255 255 / var(--tw-border-opacity));\n}\n.border-neutral-border {\n    border-color: var(--color-neutral-border);\n}\n.border-global-white {\n    border-color: var(--color-global-white);\n}\n.border-tone-2 {\n    border-color: var(--color-tone-2);\n}\n.border-neutral-content {\n    border-color: var(--color-neutral-content);\n}\n.border-tone-4 {\n    border-color: var(--color-tone-4);\n}\n.border-action-secondary {\n    border-color: var(--color-action-secondary);\n}\n.border-tone-7 {\n    border-color: var(--color-tone-7);\n}\n.border-tone-5 {\n    border-color: var(--color-tone-5);\n}\n.border-danger-content {\n    border-color: var(--color-danger-content);\n}\n.border-tone-6 {\n    border-color: var(--color-tone-6);\n}\n.border-tone-3 {\n    border-color: var(--color-tone-3);\n}\n.border-coolgray-350 {\n    --tw-border-opacity: 1;\n    border-color: rgb(184 197 201 / var(--tw-border-opacity));\n}\n.border-transparent {\n    border-color: transparent;\n}\n.border-alert-negative {\n    border-color: var(--color-alert-negative);\n}\n.border-global-orangered {\n    border-color: var(--color-global-orangered);\n}\n.border-neutral-border-medium {\n    border-color: var(--color-neutral-border-medium);\n}\n.border-coolgray-100 {\n    --tw-border-opacity: 1;\n    border-color: rgb(242 244 245 / var(--tw-border-opacity));\n}\n.border-action-primary {\n    border-color: var(--color-action-primary);\n}\n.border-alert-caution {\n    border-color: var(--color-alert-caution);\n}\n.border-neutral-background {\n    border-color: var(--color-neutral-background);\n}\n.border-secondary-background-selected {\n    border-color: var(--color-secondary-background-selected);\n}\n.border-action-upvote {\n    border-color: var(--color-action-upvote);\n}\n.border-action-downvote {\n    border-color: var(--color-action-downvote);\n}\n.border-r-neutral-border-weak {\n    border-right-color: var(--color-neutral-border-weak);\n}\n.bg-neutral-background {\n    background-color: var(--color-neutral-background);\n}\n.bg-tone-7 {\n    background-color: var(--color-tone-7);\n}\n.bg-global-orangered {\n    background-color: var(--color-global-orangered);\n}\n.bg-coolgray-350 {\n    --tw-bg-opacity: 1;\n    background-color: rgb(184 197 201 / var(--tw-bg-opacity));\n}\n.bg-\\[color\\:var\\(--newCommunityTheme-body\\)\\] {\n    background-color: var(--newCommunityTheme-body);\n}\n.bg-neutral-background-strong {\n    background-color: var(--color-neutral-background-strong);\n}\n.bg-secondary-background-selected {\n    background-color: var(--color-secondary-background-selected);\n}\n.bg-neutral-background-disabled {\n    background-color: var(--color-neutral-background-disabled);\n}\n.bg-black {\n    --tw-bg-opacity: 1;\n    background-color: rgb(0 0 0 / var(--tw-bg-opacity));\n}\n.bg-white {\n    --tw-bg-opacity: 1;\n    background-color: rgb(255 255 255 / var(--tw-bg-opacity));\n}\n.bg-opacity-50 {\n    background-color: var(--color-opacity-50);\n}\n.bg-scrim {\n    background-color: var(--color-scrim);\n}\n.bg-transparent {\n    background-color: transparent;\n}\n.bg-tone-6 {\n    background-color: var(--color-tone-6);\n}\n.bg-tone-4 {\n    background-color: var(--color-tone-4);\n}\n.bg-ui-modalbackground {\n    background-color: var(--color-ui-modalbackground);\n}\n.bg-tone-5 {\n    background-color: var(--color-tone-5);\n}\n.bg-neutral-background-weak {\n    background-color: var(--color-neutral-background-weak);\n}\n.bg-tone-1 {\n    background-color: var(--color-tone-1);\n}\n.bg-secondary-background {\n    background-color: var(--color-secondary-background);\n}\n.bg-neutral-background-hover {\n    background-color: var(--color-neutral-background-hover);\n}\n.bg-primary-background {\n    background-color: var(--color-primary-background);\n}\n.bg-global-white {\n    background-color: var(--color-global-white);\n}\n.bg-brand-background {\n    background-color: var(--color-brand-background);\n}\n.bg-global-alienblue {\n    background-color: var(--color-global-alienblue);\n}\n.bg-secondary-weak {\n    background-color: var(--color-secondary-weak);\n}\n.bg-kiwigreen-400 {\n    --tw-bg-opacity: 1;\n    background-color: rgb(85 189 70 / var(--tw-bg-opacity));\n}\n.bg-kiwigreen-600 {\n    --tw-bg-opacity: 1;\n    background-color: rgb(10 96 0 / var(--tw-bg-opacity));\n}\n.bg-yelloworange-400 {\n    --tw-bg-opacity: 1;\n    background-color: rgb(255 156 26 / var(--tw-bg-opacity));\n}\n.bg-action-primary {\n    background-color: var(--color-action-primary);\n}\n.bg-orangered-300 {\n    --tw-bg-opacity: 1;\n    background-color: rgb(255 190 166 / var(--tw-bg-opacity));\n}\n.bg-coolgray-200 {\n    --tw-bg-opacity: 1;\n    background-color: rgb(226 231 233 / var(--tw-bg-opacity));\n}\n.bg-online {\n    background-color: var(--color-online);\n}\n.bg-warning-content {\n    background-color: var(--color-warning-content);\n}\n.bg-success-content {\n    background-color: var(--color-success-content);\n}\n.bg-neutral-content {\n    background-color: var(--color-neutral-content);\n}\n.bg-danger-content {\n    background-color: var(--color-danger-content);\n}\n.bg-neutral-content-disabled {\n    background-color: var(--color-neutral-content-disabled);\n}\n.bg-brand-onBackground {\n    background-color: var(--color-brand-onBackground);\n}\n.bg-action-upvote {\n    background-color: var(--color-action-upvote);\n}\n.bg-action-downvote {\n    background-color: var(--color-action-downvote);\n}\n.bg-interactive-background-disabled {\n    background-color: var(--color-interactive-background-disabled);\n}\n.bg-\\[color\\:var\\(--color-button-plain-background-disabled\\)\\] {\n    background-color: var(--color-button-plain-background-disabled);\n}\n.bg-opacity-25 {\n    --tw-bg-opacity: 0.25;\n}\n.bg-opacity-50 {\n    --tw-bg-opacity: 0.5;\n}\n.bg-gradient-to-r {\n    background-image: linear-gradient(to right, var(--tw-gradient-stops));\n}\n.bg-gradient-to-l {\n    background-image: linear-gradient(to left, var(--tw-gradient-stops));\n}\n.bg-gradient-to-t {\n    background-image: linear-gradient(to top, var(--tw-gradient-stops));\n}\n.from-white {\n    --tw-gradient-from: #ffffff;\n    --tw-gradient-to: rgb(255 255 255 / 0);\n    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);\n}\n.from-transparent {\n    --tw-gradient-from: transparent;\n    --tw-gradient-to: rgb(0 0 0 / 0);\n    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);\n}\n.via-white {\n    --tw-gradient-to: rgb(255 255 255 / 0);\n    --tw-gradient-stops: var(--tw-gradient-from), #ffffff, var(--tw-gradient-to);\n}\n.fill-brand-background {\n    fill: var(--color-brand-background);\n}\n.fill-current {\n    fill: currentColor;\n}\n.stroke-tone-2 {\n    stroke: var(--color-tone-2);\n}\n.object-contain {\n    object-fit: contain;\n}\n.p-md {\n    padding: 1rem;\n}\n.p-sm {\n    padding: 0.75rem;\n}\n.p-xs {\n    padding: 0.5rem;\n}\n.p-\\[32px\\] {\n    padding: 32px;\n}\n.p-px {\n    padding: 1px;\n}\n.p-0 {\n    padding: 0px;\n}\n.p-2xs {\n    padding: 0.25rem;\n}\n.p-lg {\n    padding: 1.5rem;\n}\n.px-lg {\n    padding-left: 1.5rem;\n    padding-right: 1.5rem;\n}\n.px-\\[8px\\] {\n    padding-left: 8px;\n    padding-right: 8px;\n}\n.py-\\[6px\\] {\n    padding-top: 6px;\n    padding-bottom: 6px;\n}\n.px-\\[length\\:var\\(--rem8\\)\\] {\n    padding-left: var(--rem8);\n    padding-right: var(--rem8);\n}\n.py-\\[32px\\] {\n    padding-top: 32px;\n    padding-bottom: 32px;\n}\n.px-\\[16px\\] {\n    padding-left: 16px;\n    padding-right: 16px;\n}\n.py-\\[8px\\] {\n    padding-top: 8px;\n    padding-bottom: 8px;\n}\n.py-sm {\n    padding-top: 0.75rem;\n    padding-bottom: 0.75rem;\n}\n.px-md {\n    padding-left: 1rem;\n    padding-right: 1rem;\n}\n.px-2xs {\n    padding-left: 0.25rem;\n    padding-right: 0.25rem;\n}\n.py-lg {\n    padding-top: 1.5rem;\n    padding-bottom: 1.5rem;\n}\n.px-sm {\n    padding-left: 0.75rem;\n    padding-right: 0.75rem;\n}\n.py-xs {\n    padding-top: 0.5rem;\n    padding-bottom: 0.5rem;\n}\n.py-0 {\n    padding-top: 0px;\n    padding-bottom: 0px;\n}\n.py-2xs {\n    padding-top: 0.25rem;\n    padding-bottom: 0.25rem;\n}\n.px-2xl {\n    padding-left: 3rem;\n    padding-right: 3rem;\n}\n.px-xs {\n    padding-left: 0.5rem;\n    padding-right: 0.5rem;\n}\n.py-md {\n    padding-top: 1rem;\n    padding-bottom: 1rem;\n}\n.px-0 {\n    padding-left: 0px;\n    padding-right: 0px;\n}\n.px-\\[length\\:var\\(--rem10\\)\\] {\n    padding-left: var(--rem10);\n    padding-right: var(--rem10);\n}\n.px-\\[length\\:var\\(--rem6\\)\\] {\n    padding-left: var(--rem6);\n    padding-right: var(--rem6);\n}\n.px-\\[length\\:var\\(--rem14\\)\\] {\n    padding-left: var(--rem14);\n    padding-right: var(--rem14);\n}\n.px-\\[length\\:var\\(--rem12\\)\\] {\n    padding-left: var(--rem12);\n    padding-right: var(--rem12);\n}\n.py-\\[length\\:var\\(--rem2\\)\\] {\n    padding-top: var(--rem2);\n    padding-bottom: var(--rem2);\n}\n.py-\\[length\\:var\\(--rem8\\)\\] {\n    padding-top: var(--rem8);\n    padding-bottom: var(--rem8);\n}\n.py-\\[length\\:var\\(--rem10\\)\\] {\n    padding-top: var(--rem10);\n    padding-bottom: var(--rem10);\n}\n.py-\\[length\\:var\\(--rem14\\)\\] {\n    padding-top: var(--rem14);\n    padding-bottom: var(--rem14);\n}\n.pr-0 {\n    padding-right: 0px;\n}\n.pt-md {\n    padding-top: 1rem;\n}\n.pt-sm {\n    padding-top: 0.75rem;\n}\n.pb-xs {\n    padding-bottom: 0.5rem;\n}\n.pl-sm {\n    padding-left: 0.75rem;\n}\n.pb-2xs {\n    padding-bottom: 0.25rem;\n}\n.pt-lg {\n    padding-top: 1.5rem;\n}\n.pb-\\[8px\\] {\n    padding-bottom: 8px;\n}\n.pt-\\[4px\\] {\n    padding-top: 4px;\n}\n.pr-sm {\n    padding-right: 0.75rem;\n}\n.pb-lg {\n    padding-bottom: 1.5rem;\n}\n.pb-md {\n    padding-bottom: 1rem;\n}\n.pr-lg {\n    padding-right: 1.5rem;\n}\n.pl-xs {\n    padding-left: 0.5rem;\n}\n.pl-md {\n    padding-left: 1rem;\n}\n.pt-\\[20px\\] {\n    padding-top: 20px;\n}\n.pb-\\[6px\\] {\n    padding-bottom: 6px;\n}\n.pt-0 {\n    padding-top: 0px;\n}\n.pt-px {\n    padding-top: 1px;\n}\n.pt-xs {\n    padding-top: 0.5rem;\n}\n.pr-xs {\n    padding-right: 0.5rem;\n}\n.pb-sm {\n    padding-bottom: 0.75rem;\n}\n.pl-2xs {\n    padding-left: 0.25rem;\n}\n.pl-lg {\n    padding-left: 1.5rem;\n}\n.pr-2xs {\n    padding-right: 0.25rem;\n}\n.pt-2xs {\n    padding-top: 0.25rem;\n}\n.pr-md {\n    padding-right: 1rem;\n}\n.pb-0 {\n    padding-bottom: 0px;\n}\n.pb-xl {\n    padding-bottom: 2rem;\n}\n.pt-xl {\n    padding-top: 2rem;\n}\n.pr-xl {\n    padding-right: 2rem;\n}\n.pr-2xl {\n    padding-right: 3rem;\n}\n.pr-3xl {\n    padding-right: 4rem;\n}\n.pl-0 {\n    padding-left: 0px;\n}\n.pl-\\[length\\:var\\(--rem10\\)\\] {\n    padding-left: var(--rem10);\n}\n.pr-\\[length\\:var\\(--rem14\\)\\] {\n    padding-right: var(--rem14);\n}\n.pr-\\[length\\:var\\(--rem6\\)\\] {\n    padding-right: var(--rem6);\n}\n.pl-\\[length\\:var\\(--rem14\\)\\] {\n    padding-left: var(--rem14);\n}\n.pr-\\[length\\:var\\(--rem10\\)\\] {\n    padding-right: var(--rem10);\n}\n.pl-\\[0\\.125rem\\] {\n    padding-left: 0.125rem;\n}\n.pl-\\[length\\:var\\(--rem12\\)\\] {\n    padding-left: var(--rem12);\n}\n.pr-\\[length\\:var\\(--rem12\\)\\] {\n    padding-right: var(--rem12);\n}\n.pr-\\[length\\:var\\(--rem16\\)\\] {\n    padding-right: var(--rem16);\n}\n.pr-\\[length\\:var\\(--rem8\\)\\] {\n    padding-right: var(--rem8);\n}\n.pl-\\[length\\:var\\(--rem16\\)\\] {\n    padding-left: var(--rem16);\n}\n.text-left {\n    text-align: left;\n}\n.text-center {\n    text-align: center;\n}\n.text-right {\n    text-align: right;\n}\n.indent-0 {\n    text-indent: 0px;\n}\n.align-top {\n    vertical-align: top;\n}\n.align-middle {\n    vertical-align: middle;\n}\n.align-text-bottom {\n    vertical-align: text-bottom;\n}\n.font-mono {\n    font-family: var(--font-mono);\n}\n.font-sans {\n    font-family: var(--font-sans);\n}\n.text-24 {\n    font-size: 1.5rem;\n    line-height: 1.75rem;\n}\n.text-16 {\n    font-size: 1rem;\n    line-height: 1.25rem;\n}\n.text-14 {\n    font-size: 0.875rem;\n    line-height: 1.25rem;\n}\n.text-12 {\n    font-size: 0.75rem;\n    line-height: 1rem;\n}\n.text-\\[32px\\] {\n    font-size: 32px;\n}\n.text-20 {\n    font-size: 1.25rem;\n    line-height: 1.25rem;\n}\n.\\!text-\\[32px\\] {\n    font-size: 32px !important;\n}\n.text-\\[14px\\] {\n    font-size: 14px;\n}\n.text-\\[12px\\] {\n    font-size: 12px;\n}\n.text-18 {\n    font-size: 1.125rem;\n    line-height: 1.5rem;\n}\n.text-32 {\n    font-size: 2rem;\n    line-height: 2.25rem;\n}\n.text-64 {\n    font-size: 4rem;\n    line-height: 4rem;\n}\n.text-10 {\n    font-size: 0.625rem;\n    line-height: 1rem;\n}\n.text-48 {\n    font-size: 3rem;\n    line-height: 3rem;\n}\n.font-semibold {\n    font-weight: 600;\n}\n.font-bold {\n    font-weight: 700;\n}\n.font-normal {\n    font-weight: 400;\n}\n.uppercase {\n    text-transform: uppercase;\n}\n.lowercase {\n    text-transform: lowercase;\n}\n.capitalize {\n    text-transform: capitalize;\n}\n.italic {\n    font-style: italic;\n}\n.not-italic {\n    font-style: normal;\n}\n.ordinal {\n    --tw-ordinal: ordinal;\n    font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);\n}\n.leading-5 {\n    line-height: 1.25rem;\n}\n.leading-4 {\n    line-height: 1rem;\n}\n.\\!leading-none {\n    line-height: 1 !important;\n}\n.leading-\\[16px\\] {\n    line-height: 16px;\n}\n.leading-\\[14px\\] {\n    line-height: 14px;\n}\n.leading-\\[20px\\] {\n    line-height: 20px;\n}\n.leading-6 {\n    line-height: 1.5rem;\n}\n.leading-none {\n    line-height: 1;\n}\n.leading-3 {\n    line-height: .75rem;\n}\n.leading-8 {\n    line-height: 2rem;\n}\n.leading-normal {\n    line-height: 1.5;\n}\n.leading-9 {\n    line-height: 2.25rem;\n}\n.leading-7 {\n    line-height: 1.75rem;\n}\n.leading-\\[0\\.875rem\\] {\n    line-height: 0.875rem;\n}\n.tracking-normal {\n    letter-spacing: 0em;\n}\n.text-white {\n    --tw-text-opacity: 1;\n    color: rgb(255 255 255 / var(--tw-text-opacity));\n}\n.text-neutral-content-strong {\n    color: var(--color-neutral-content-strong);\n}\n.text-neutral-content-weak {\n    color: var(--color-neutral-content-weak);\n}\n.text-coolgray-900 {\n    --tw-text-opacity: 1;\n    color: rgb(11 20 22 / var(--tw-text-opacity));\n}\n.text-primary {\n    color: var(--color-primary);\n}\n.text-action-primary {\n    color: var(--color-action-primary);\n}\n.text-secondary-weak {\n    color: var(--color-secondary-weak);\n}\n.text-global-white {\n    color: var(--color-global-white);\n}\n.text-tone-3 {\n    color: var(--color-tone-3);\n}\n.text-global-alienblue {\n    color: var(--color-global-alienblue);\n}\n.text-tone-1 {\n    color: var(--color-tone-1);\n}\n.text-action-secondary {\n    color: var(--color-action-secondary);\n}\n.text-primary-background-hover {\n    color: var(--color-primary-background-hover);\n}\n.text-category-nsfw {\n    color: var(--color-category-nsfw);\n}\n.text-tone-2 {\n    color: var(--color-tone-2);\n}\n.text-neutral-content {\n    color: var(--color-neutral-content);\n}\n.text-puregray-400 {\n    --tw-text-opacity: 1;\n    color: rgb(172 172 172 / var(--tw-text-opacity));\n}\n.text-danger-content {\n    color: var(--color-danger-content);\n}\n.text-tone-7 {\n    color: var(--color-tone-7);\n}\n.text-primary-background {\n    color: var(--color-primary-background);\n}\n.text-identity-moderator {\n    color: var(--color-identity-moderator);\n}\n.text-alert-negative {\n    color: var(--color-alert-negative);\n}\n.text-coolgray-850 {\n    --tw-text-opacity: 1;\n    color: rgb(15 26 28 / var(--tw-text-opacity));\n}\n.text-coolgray-650 {\n    --tw-text-opacity: 1;\n    color: rgb(42 60 66 / var(--tw-text-opacity));\n}\n.text-coolgray-550 {\n    --tw-text-opacity: 1;\n    color: rgb(75 96 102 / var(--tw-text-opacity));\n}\n.text-neutral-background-strong {\n    color: var(--color-neutral-background-strong);\n}\n.text-periwinkle-500 {\n    --tw-text-opacity: 1;\n    color: rgb(106 92 255 / var(--tw-text-opacity));\n}\n.text-coolgray-0 {\n    --tw-text-opacity: 1;\n    color: rgb(255 255 255 / var(--tw-text-opacity));\n}\n.text-coolgray-950 {\n    --tw-text-opacity: 1;\n    color: rgb(4 9 10 / var(--tw-text-opacity));\n}\n.text-action-downvote {\n    color: var(--color-action-downvote);\n}\n.text-global-black {\n    color: var(--color-global-black);\n}\n.text-secondary {\n    color: var(--color-secondary);\n}\n.text-alert-caution {\n    color: var(--color-alert-caution);\n}\n.text-current {\n    color: currentColor;\n}\n.text-category-spoiler {\n    color: var(--color-category-spoiler);\n}\n.text-warning-content {\n    color: var(--color-warning-content);\n}\n.text-primary-onBackground {\n    color: var(--color-primary-onBackground);\n}\n.text-brand-onBackground {\n    color: var(--color-brand-onBackground);\n}\n.text-neutral-content-disabled {\n    color: var(--color-neutral-content-disabled);\n}\n.text-\\[color\\:var\\(--color-button-secondary-text-disabled\\)\\] {\n    color: var(--color-button-secondary-text-disabled);\n}\n.text-\\[color\\:var\\(--color-button-plain-text-disabled\\)\\] {\n    color: var(--color-button-plain-text-disabled);\n}\n.underline {\n    text-decoration-line: underline;\n}\n.line-through {\n    text-decoration-line: line-through;\n}\n.no-underline {\n    text-decoration-line: none;\n}\n.opacity-25 {\n    opacity: 0.25;\n}\n.opacity-75 {\n    opacity: 0.75;\n}\n.opacity-0 {\n    opacity: 0;\n}\n.opacity-100 {\n    opacity: 1;\n}\n.opacity-30 {\n    opacity: 0.3;\n}\n.opacity-50 {\n    opacity: 0.5;\n}\n.opacity-20 {\n    opacity: 0.2;\n}\n.opacity-60 {\n    opacity: 0.6;\n}\n.opacity-40 {\n    opacity: 0.4;\n}\n.shadow-none {\n    --tw-shadow: 0 0 #0000;\n    --tw-shadow-colored: 0 0 #0000;\n    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n.shadow-sm {\n    --tw-shadow: var(--elevation-sm);\n    --tw-shadow-colored: var(--elevation-sm);\n    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n.shadow-md {\n    --tw-shadow: var(--elevation-md);\n    --tw-shadow-colored: var(--elevation-md);\n    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n.outline-none {\n    outline: 2px solid transparent;\n    outline-offset: 2px;\n}\n.outline {\n    outline-style: solid;\n}\n.ring {\n    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);\n    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);\n    box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);\n}\n.drop-shadow {\n    --tw-drop-shadow: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));\n    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n}\n.grayscale {\n    --tw-grayscale: grayscale(100%);\n    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n}\n.invert {\n    --tw-invert: invert(100%);\n    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n}\n.transition {\n    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;\n    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n    transition-duration: 150ms;\n}\n.transition-transform {\n    transition-property: transform;\n    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n    transition-duration: 150ms;\n}\n.transition-opacity {\n    transition-property: opacity;\n    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n    transition-duration: 150ms;\n}\n.duration-150 {\n    transition-duration: 150ms;\n}\n.duration-300 {\n    transition-duration: 300ms;\n}\n.duration-100 {\n    transition-duration: 100ms;\n}\n.duration-1000 {\n    transition-duration: 1000ms;\n}\n.ease-out {\n    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);\n}\n.ease-in-out {\n    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n}\n.ease-linear {\n    transition-timing-function: linear;\n}\n.scrollbar-hide {\n    -ms-overflow-style: none;\n    scrollbar-width: none;\n}\n.scrollbar-hide::-webkit-scrollbar {\n    display: none;\n}\n.before\\:absolute::before {\n    content: var(--tw-content);\n    position: absolute;\n}\n.before\\:top-\\[28px\\]::before {\n    content: var(--tw-content);\n    top: 28px;\n}\n.before\\:left-\\[9px\\]::before {\n    content: var(--tw-content);\n    left: 9px;\n}\n.before\\:top-\\[-3px\\]::before {\n    content: var(--tw-content);\n    top: -3px;\n}\n.before\\:left-\\[-16\\.5px\\]::before {\n    content: var(--tw-content);\n    left: -16.5px;\n}\n.before\\:top-0::before {\n    content: var(--tw-content);\n    top: 0px;\n}\n.before\\:left-\\[16\\.5px\\]::before {\n    content: var(--tw-content);\n    left: 16.5px;\n}\n.before\\:h-\\[calc\\(100\\%-28px\\)\\]::before {\n    content: var(--tw-content);\n    height: calc(100% - 28px);\n}\n.before\\:h-full::before {\n    content: var(--tw-content);\n    height: 100%;\n}\n.before\\:h-\\[calc\\(100\\%\\+6px\\)\\]::before {\n    content: var(--tw-content);\n    height: calc(100% + 6px);\n}\n.before\\:border-y-0::before {\n    content: var(--tw-content);\n    border-top-width: 0rem;\n    border-bottom-width: 0rem;\n}\n.before\\:border-l-\\[1px\\]::before {\n    content: var(--tw-content);\n    border-left-width: 1px;\n}\n.before\\:border-r-\\[0px\\]::before {\n    content: var(--tw-content);\n    border-right-width: 0px;\n}\n.before\\:border-solid::before {\n    content: var(--tw-content);\n    border-style: solid;\n}\n.before\\:border-tone-4::before {\n    content: var(--tw-content);\n    border-color: var(--color-tone-4);\n}\n.before\\:content-\\[\\'\\'\\]::before {\n    --tw-content: '';\n    content: var(--tw-content);\n}\n.after\\:absolute::after {\n    content: var(--tw-content);\n    position: absolute;\n}\n.after\\:-top-sm::after {\n    content: var(--tw-content);\n    top: -0.75rem;\n}\n.after\\:left-\\[-16\\.5px\\]::after {\n    content: var(--tw-content);\n    left: -16.5px;\n}\n.after\\:bottom-\\[15px\\]::after {\n    content: var(--tw-content);\n    bottom: 15px;\n}\n.after\\:left-\\[3\\.5px\\]::after {\n    content: var(--tw-content);\n    left: 3.5px;\n}\n.after\\:h-\\[30px\\]::after {\n    content: var(--tw-content);\n    height: 30px;\n}\n.after\\:h-\\[54px\\]::after {\n    content: var(--tw-content);\n    height: 54px;\n}\n.after\\:w-md::after {\n    content: var(--tw-content);\n    width: 1rem;\n}\n.after\\:w-\\[23px\\]::after {\n    content: var(--tw-content);\n    width: 23px;\n}\n.after\\:rounded-bl-\\[12px\\]::after {\n    content: var(--tw-content);\n    border-bottom-left-radius: 12px;\n}\n.after\\:border-y-0::after {\n    content: var(--tw-content);\n    border-top-width: 0rem;\n    border-bottom-width: 0rem;\n}\n.after\\:border-l-\\[1px\\]::after {\n    content: var(--tw-content);\n    border-left-width: 1px;\n}\n.after\\:border-r-\\[0px\\]::after {\n    content: var(--tw-content);\n    border-right-width: 0px;\n}\n.after\\:border-b-\\[1px\\]::after {\n    content: var(--tw-content);\n    border-bottom-width: 1px;\n}\n.after\\:border-solid::after {\n    content: var(--tw-content);\n    border-style: solid;\n}\n.after\\:border-tone-4::after {\n    content: var(--tw-content);\n    border-color: var(--color-tone-4);\n}\n.after\\:content-\\[\\'\\'\\]::after {\n    --tw-content: '';\n    content: var(--tw-content);\n}\n.first\\:ml-0:first-child {\n    margin-left: 0px;\n}\n.hover\\:border-secondary-background-selected:hover {\n    border-color: var(--color-secondary-background-selected);\n}\n.hover\\:border-secondary-background-hover:hover {\n    border-color: var(--color-secondary-background-hover);\n}\n.hover\\:bg-neutral-background-hover:hover {\n    background-color: var(--color-neutral-background-hover);\n}\n.hover\\:bg-secondary-background-selected:hover {\n    background-color: var(--color-secondary-background-selected);\n}\n.hover\\:bg-secondary-background-hover:hover {\n    background-color: var(--color-secondary-background-hover);\n}\n.hover\\:bg-transparent-background-hover:hover {\n    background-color: var(--color-transparent-background-hover);\n}\n.hover\\:bg-brand-background-hover:hover {\n    background-color: var(--color-brand-background-hover);\n}\n.hover\\:text-secondary:hover {\n    color: var(--color-secondary);\n}\n.hover\\:text-global-white:hover {\n    color: var(--color-global-white);\n}\n.hover\\:text-action-upvote:hover {\n    color: var(--color-action-upvote);\n}\n.hover\\:text-action-downvote:hover {\n    color: var(--color-action-downvote);\n}\n.hover\\:underline:hover {\n    text-decoration-line: underline;\n}\n.hover\\:no-underline:hover {\n    text-decoration-line: none;\n}\n.focus\\:rounded-sm:focus {\n    border-radius: 0.25rem;\n}\n.focus\\:border-global-focus:focus {\n    border-color: var(--color-global-focus);\n}\n.focus\\:outline-none:focus {\n    outline: 2px solid transparent;\n    outline-offset: 2px;\n}\n.focus-visible\\:text-action-upvote:focus-visible {\n    color: var(--color-action-upvote);\n}\n.focus-visible\\:text-action-downvote:focus-visible {\n    color: var(--color-action-downvote);\n}\n.active\\:bg-secondary-background:active {\n    background-color: var(--color-secondary-background);\n}\n.disabled\\:text-interactive-content-disabled:disabled {\n    color: var(--color-interactive-content-disabled);\n}\n", ""]), t.a = o
+			o.push([n.i, "/*\n * This is a Tailwind CSS file, it must be run through the PostCSS compiler\n * with the Tailwind plugin, not Less. The `postcss-import` plugin is also\n * needed, if you have other additions to your Tailwind entry point CSS.\n *\n * @example\n * // tailwind.css\n * @import '@reddit/faceplate/styles/tailwind-components.css'\n * @tailwind components;\n * @tailwind utilities;\n *\n * // styles.less\n * @import (less) '@reddit/faceplate/faceplate.css';\n * @import (less) './tailwind-build.css';\n */\n.-translate-y-1\\/2, .-translate-x-1\\/2, .translate-x-0, .translate-y-md, .rotate-90, .scale-75, .scale-150, .scale-100, .-scale-x-100, .transform {\n    --tw-translate-x: 0;\n    --tw-translate-y: 0;\n    --tw-rotate: 0;\n    --tw-skew-x: 0;\n    --tw-skew-y: 0;\n    --tw-scale-x: 1;\n    --tw-scale-y: 1;\n}\n.ordinal {\n    --tw-ordinal:  ;\n    --tw-slashed-zero:  ;\n    --tw-numeric-figure:  ;\n    --tw-numeric-spacing:  ;\n    --tw-numeric-fraction:  ;\n}\n.shadow-none, .shadow-sm, .shadow-md {\n    --tw-ring-offset-shadow: 0 0 #0000;\n    --tw-ring-shadow: 0 0 #0000;\n    --tw-shadow: 0 0 #0000;\n    --tw-shadow-colored: 0 0 #0000;\n}\n.ring {\n    --tw-ring-inset:  ;\n    --tw-ring-offset-width: 0px;\n    --tw-ring-offset-color: #fff;\n    --tw-ring-color: rgb(59 130 246 / 0.5);\n    --tw-ring-offset-shadow: 0 0 #0000;\n    --tw-ring-shadow: 0 0 #0000;\n    --tw-shadow: 0 0 #0000;\n    --tw-shadow-colored: 0 0 #0000;\n}\n.container {\n    width: 100%;\n}\n.\\!container {\n    width: 100% !important;\n}\n@media (min-width: 1024px) {\n    .container {\n        max-width: 1024px;\n    }\n    .\\!container {\n        max-width: 1024px !important;\n    }\n}\n/* Anchor component*/\n.a {\n    border: var(--line-a-focus) solid transparent;\n    border-radius: 2px;\n    color: var(--color-a-default);\n    font-size: 1em;\n    padding: 0 var(--spacer-a-px);\n    margin: calc(-1 * var(--line-a-focus)) calc(-1 * (var(--spacer-a-px) + var(--line-a-focus)));\n    text-decoration: none;\n  }\n.\\!a {\n    border: var(--line-a-focus) solid transparent !important;\n    border-radius: 2px !important;\n    color: var(--color-a-default) !important;\n    font-size: 1em !important;\n    padding: 0 var(--spacer-a-px) !important;\n    margin: calc(-1 * var(--line-a-focus)) calc(-1 * (var(--spacer-a-px) + var(--line-a-focus))) !important;\n    text-decoration: none !important;\n  }\n.a:hover {\n    color: var(--color-a-hover);\n  }\n.\\!a:hover {\n    color: var(--color-a-hover) !important;\n  }\n.a:visited:not(.no-visited),\n  .a.visited:not(.no-visited) {\n    color: var(--color-a-visited);\n  }\n.\\!a:visited:not(.no-visited),\n  .\\!a.visited:not(.no-visited) {\n    color: var(--color-a-visited) !important;\n  }\n.a:focus {\n    border-color: var(--color-global-focus, transparent);\n    outline: var(--line-a-outline-moz) dotted #212121;\n    outline: var(--line-a-outline-wb) auto -webkit-focus-ring-color;\n  }\n.\\!a:focus {\n    border-color: var(--color-global-focus, transparent) !important;\n    outline: var(--line-a-outline-moz) dotted #212121 !important;\n    outline: var(--line-a-outline-wb) auto -webkit-focus-ring-color !important;\n  }\n.a:focus:not(:focus-visible) {\n    border-color: transparent;\n  }\n.\\!a:focus:not(:focus-visible) {\n    border-color: transparent !important;\n  }\n/* Button component */\n.button {\n    background: var(--button-color-background);\n    border-radius: 999px;\n    border: none;\n    border: var(--button-border-width, 0) solid var(--button-border-color, transparent);\n    box-shadow: var(--button-shadow);\n    box-sizing: border-box;\n    color: var(--button-color-text);\n    cursor: pointer;\n    display: inline-block;\n    font: var(--button-font);\n    height: var(--button-height);\n    line-height: calc(var(--button-height) - (2 * var(--button-border-width, 0px)));\n    outline: none;\n    overflow: hidden;\n    padding: 0 calc(var(--button-padding) - var(--button-border-width, 0px));\n    text-align: center;\n    text-decoration: none;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n    --button-border-color: var(--button-border-color-default);\n    --button-border-width: var(--button-border-width-default);\n    --button-color-background: var(--button-color-background-default);\n    --button-color-text: var(--button-color-text-default);\n    /* This is :active, AKA Pressed */\n    /* This is Selected */\n  }\n.\\!button {\n    background: var(--button-color-background) !important;\n    border-radius: 999px !important;\n    border: none !important;\n    border: var(--button-border-width, 0) solid var(--button-border-color, transparent) !important;\n    box-shadow: var(--button-shadow) !important;\n    box-sizing: border-box !important;\n    color: var(--button-color-text) !important;\n    cursor: pointer !important;\n    display: inline-block !important;\n    font: var(--button-font) !important;\n    height: var(--button-height) !important;\n    line-height: calc(var(--button-height) - (2 * var(--button-border-width, 0px))) !important;\n    outline: none !important;\n    overflow: hidden !important;\n    padding: 0 calc(var(--button-padding) - var(--button-border-width, 0px)) !important;\n    text-align: center !important;\n    text-decoration: none !important;\n    text-overflow: ellipsis !important;\n    white-space: nowrap !important;\n    --button-border-color: var(--button-border-color-default) !important;\n    --button-border-width: var(--button-border-width-default) !important;\n    --button-color-background: var(--button-color-background-default) !important;\n    --button-color-text: var(--button-color-text-default) !important;\n    /* This is :active, AKA Pressed */\n    /* This is Selected */\n  }\n.button .button-icon {\n    margin-right: var(--spacer-xs);\n  }\n.\\!button .button-icon {\n    margin-right: var(--spacer-xs) !important;\n  }\n.button .dropdown-icon {\n    transform: rotate(0deg);\n    transition: transform 0.2s ease-in-out;\n  }\n.\\!button .dropdown-icon {\n    transform: rotate(0deg) !important;\n    transition: transform 0.2s ease-in-out !important;\n  }\n.button:focus,\n  .button:hover {\n    --button-color-overlay: var(--color-button-overlay-focus);\n  }\n.\\!button:focus,\n  .\\!button:hover {\n    --button-color-overlay: var(--color-button-overlay-focus) !important;\n  }\n.button:hover {\n    --button-border-color: var(--button-border-color-hover);\n    --button-color-background: var(--button-color-background-hover);\n  }\n.\\!button:hover {\n    --button-border-color: var(--button-border-color-hover) !important;\n    --button-color-background: var(--button-color-background-hover) !important;\n  }\n.button:focus {\n    --button-shadow: var(--elevation-button-focus);\n  }\n.\\!button:focus {\n    --button-shadow: var(--elevation-button-focus) !important;\n  }\n.button:focus:not(:focus-visible) {\n    --button-shadow: 0 0 0 var(--line-l) transparent;\n  }\n.\\!button:focus:not(:focus-visible) {\n    --button-shadow: 0 0 0 var(--line-l) transparent !important;\n  }\n.button:active {\n    --button-color-overlay: var(--color-button-overlay-active);\n    --button-color-background: linear-gradient(var(--color-interactive-pressed), var(--color-interactive-pressed)),\n      var(--button-color-background-active);\n  }\n.\\!button:active {\n    --button-color-overlay: var(--color-button-overlay-active) !important;\n    --button-color-background: linear-gradient(var(--color-interactive-pressed), var(--color-interactive-pressed)),\n      var(--button-color-background-active) !important;\n  }\n.button:focus,\n  .button:hover,\n  .button:active {\n    position: relative;\n  }\n.\\!button:focus,\n  .\\!button:hover,\n  .\\!button:active {\n    position: relative !important;\n  }\n.button:focus::before,\n  .button:hover::before,\n  .button:active::before {\n    content: '';\n    position: absolute;\n    left: 0;\n    right: 0;\n    top: 0;\n    bottom: 0;\n    display: block;\n    background: var(--button-color-overlay);\n    border-radius: inherit;\n    pointer-events: none;\n  }\n.\\!button:focus::before,\n  .\\!button:hover::before,\n  .\\!button:active::before {\n    content: '' !important;\n    position: absolute !important;\n    left: 0 !important;\n    right: 0 !important;\n    top: 0 !important;\n    bottom: 0 !important;\n    display: block !important;\n    background: var(--button-color-overlay) !important;\n    border-radius: inherit !important;\n    pointer-events: none !important;\n  }\n.button:disabled {\n    --button-color-background: var(--button-color-background-disabled);\n    --button-color-text: var(--button-color-text-disabled);\n    cursor: not-allowed;\n  }\n.\\!button:disabled {\n    --button-color-background: var(--button-color-background-disabled) !important;\n    --button-color-text: var(--button-color-text-disabled) !important;\n    cursor: not-allowed !important;\n  }\n.button:disabled::before {\n    display: none;\n  }\n.\\!button:disabled::before {\n    display: none !important;\n  }\n.button.button-activated {\n    --button-border-width: var(--button-border-width-activated);\n    --button-color-background: var(--button-color-background-activated);\n    --button-color-text: var(--button-color-text-activated);\n  }\n.\\!button.button-activated {\n    --button-border-width: var(--button-border-width-activated) !important;\n    --button-color-background: var(--button-color-background-activated) !important;\n    --button-color-text: var(--button-color-text-activated) !important;\n  }\n.button.button-activated span.dropdown-icon {\n    transform: rotate(180deg);\n    transition: transform 0.22s ease-in-out;\n  }\n.\\!button.button-activated span.dropdown-icon {\n    transform: rotate(180deg) !important;\n    transition: transform 0.22s ease-in-out !important;\n  }\n.button-shell {\n    background: var(--button-color-background);\n    border-radius: 999px;\n    border: none;\n    border: var(--button-border-width, 0) solid var(--button-border-color, transparent);\n    box-shadow: var(--button-shadow);\n    box-sizing: border-box;\n    color: var(--button-color-text);\n    cursor: pointer;\n    display: inline-block;\n    font: var(--button-font);\n    height: var(--button-height);\n    line-height: calc(var(--button-height) - (2 * var(--button-border-width, 0px)));\n    outline: none;\n    overflow: hidden;\n    padding: 0 calc(var(--button-padding) - var(--button-border-width, 0px));\n    text-align: center;\n    text-decoration: none;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n    --button-border-color: var(--button-border-color-default);\n    --button-border-width: var(--button-border-width-default);\n    --button-color-background: var(--button-color-background-default);\n    --button-color-text: var(--button-color-text-default);\n  }\n.button-large {\n    --button-height: var(--size-button-lg-h);\n    --button-padding: var(--spacer-xs);\n    --button-font: var(--font-button-lg);\n    --button-border-width-default: var(--line-button-lg-border);\n    --button-border-width-activated: var(--line-button-border-activated);\n  }\n.button-medium {\n    --button-height: var(--size-button-md-h);\n    --button-padding: var(--spacer-xs);\n    --button-font: var(--font-button-md);\n    --button-border-width-default: var(--line-button-md-border);\n    --button-border-width-activated: var(--line-button-border-activated);\n  }\n.button-small {\n    --button-height: var(--size-button-sm-h);\n    --button-padding: var(--spacer-2xs);\n    --button-font: var(--font-button-sm);\n    --button-border-width-default: var(--line-button-sm-border);\n    --button-border-width-activated: var(--line-button-border-activated);\n  }\n.button-x-small {\n    --button-height: var(--size-button-xs-h);\n    --button-padding: var(--spacer-sm);\n    --button-font: var(--font-button-xs);\n    --button-border-width-default: var(--line-button-xs-border);\n    --button-border-width-activated: var(--line-button-border-activated);\n  }\n.button-icon {\n    --button-padding: 0;\n    width: var(--button-height);\n  }\n.button-primary {\n    --button-color-background-default: var(--color-primary-background);\n    --button-color-background-focus: var(--color-primary-background);\n    --button-color-background-hover: var(--color-button-primary-background-hover);\n    --button-color-background-active: linear-gradient(var(--color-button-primary-background-hover), var(--color-button-primary-background-hover));\n    --button-color-background-disabled: var(--color-button-primary-background-disabled);\n    --button-color-background-activated: var(--color-global-white);\n    --button-color-text-default: var(--color-global-white);\n    --button-color-text-disabled: var(--color-button-primary-text-disabled);\n    --button-color-text-activated: var(--color-button-primary-text-activated);\n    --button-border-color-default: transparent;\n  }\n.button-secondary {\n    --button-color-background-default: var(--color-button-secondary-background);\n    --button-color-background-focus: var(--color-button-secondary-background-focus);\n    --button-color-background-hover: var(--color-button-secondary-background-hover);\n    --button-color-background-active: linear-gradient(var(--color-button-secondary-background-hover), var(--color-button-secondary-background-hover));\n    --button-color-background-disabled: var(--color-button-secondary-background-disabled);\n    --button-color-background-activated: var(--color-button-secondary-background-activated);\n    --button-color-text-default: var(--color-button-secondary-text);\n    --button-color-text-disabled: var(--color-button-secondary-text-disabled);\n    --button-color-text-activated: var(--color-button-secondary-text-activated);\n    --button-border-color-default: var(--color-button-secondary-border);\n  }\n.button-tertiary {\n    --button-color-background-default: var(--color-button-tertiary-background);\n    --button-color-background-focus: var(--color-button-tertiary-background-focus);\n    --button-color-background-hover: var(--color-button-tertiary-background-hover);\n    --button-color-background-disabled: var(--color-button-tertiary-background-disabled);\n    --button-color-background-activated: var(--color-button-tertiary-background-activated);\n    --button-color-text-default: var(--color-button-tertiary-text);\n    --button-color-text-disabled: var(--color-button-tertiary-text-disabled);\n    --button-color-text-activated: var(--color-button-tertiary-text-activated);\n    --button-border-color-default: transparent;\n  }\n.button-plain {\n    --button-color-background-default: transparent;\n    --button-color-background-focus: transparent;\n    --button-color-background-hover: var(--color-button-plain-background-hover);\n    --button-color-background-disabled: var(--color-button-plain-background-disabled);\n    --button-color-background-activated: var(--color-button-plain-background-activated);\n    --button-color-background-active: linear-gradient(var(--color-button-secondary-background-hover), var(--color-button-secondary-background-hover));\n    --button-color-text-default: var(--color-button-plain-text);\n    --button-color-text-disabled: var(--color-button-plain-text-disabled);\n    --button-color-text-activated: var(--color-button-plain-text-activated);\n    --button-border-color-default: transparent;\n  }\n.button-outline {\n    --button-color-background-default: transparent;\n    --button-color-background-focus: transparent;\n    --button-color-background-hover: transparent;\n    --button-color-background-active: linear-gradient(transparent, transparent);\n    --button-color-background-disabled: transparent;\n    --button-color-background-activated: transparent;\n    --button-color-text-default: var(--color-neutral-content);\n    --button-color-text-disabled: var(--color-neutral-content-disabled);\n    --button-color-text-activated: var(--color-neutral-content-strong);\n    --button-border-color-default: var(--color-neutral-content-weak);\n    --button-border-color-hover: var(--color-neutral-content-disabled);\n    --button-border-color-active: var(--color-neutral-content);\n    --button-border-color-activated: var(--color-neutral-content-strong);\n    --button-border-color-disabled: var(--color-neutral-content-disabled);\n    --button-border-width-default: var(--line-md);\n    --button-border-width-activated: var(--line-md);\n  }\n.button-destructive {\n    --button-color-background-default: var(--color-danger-background);\n    --button-color-background-focus: var(--color-danger-background-hover);\n    --button-color-background-hover: var(--color-danger-background-hover);\n    --button-color-background-active: linear-gradient(var(--color-danger-background-hover), var(--color-danger-background-hover));\n    --button-color-background-disabled: var(--color-danger-background);\n    --button-color-text-default: var(--color-danger-content-default);\n    --button-color-text-disabled: var(--color-danger-content-default);\n    --button-border-color-default: transparent;\n    --button-border-color-hover: transparent;\n    --button-border-color-active: transparent;\n  }\n.button-media {\n    --button-color-background-default: var(--color-media-background);\n    --button-color-background-focus: var(--color-media-background-hover);\n    --button-color-background-hover: var(--color-media-background-hover);\n    --button-color-background-active: linear-gradient(var(--color-media-background-hover), var(--color-media-background-hover));\n    --button-color-text-default: white;\n    --button-color-text-disabled: var(--color-media-onbackground-disabled);\n    --button-color-background-disabled: var(--color-media-background);\n  }\n.button-brand {\n    --button-color-background-default: var(--color-brand-background);\n    --button-color-background-hover: var(--color-brand-background-hover);\n    --button-color-background-active: linear-gradient(var(--color-brand-background-hover), var(--color-brand-background-hover));\n    --button-color-background-disabled: var(--color-neutral-background-disabled);\n    --button-color-text-default: var(--color-danger-content-default);\n    --button-color-text-disabled: var(--color-neutral-content-disabled);\n    --button-border-color-default: transparent;\n    --button-border-width-default: 0px;\n  }\n.button-success {\n    --button-color-background-default: var(--color-success-background);\n    --button-color-background-focus: var(--color-success-background-hover);\n    --button-color-background-hover: var(--color-success-background-hover);\n    --button-color-background-active: linear-gradient(var(--color-success-background-hover), var(--color-success-background-hover));\n    --button-color-background-disabled: var(--color-button-primary-background-disabled);\n    --button-color-text-default: var(--color-success-onBackground);\n    --button-color-text-disabled: var(--color-button-primary-text-disabled);\n    --button-border-color-default: transparent;\n  }\n.button-plain-inverted {\n    --button-color-background-default: transparent;\n    --button-color-background-focus: var(--color-neutral-content);\n    --button-color-background-hover: var(--color-neutral-content);\n    --button-color-background-active: var(--color-interactive-pressed);\n    --button-color-background-disabled: transparent;\n    --button-color-text-default: var(--color-neutral-background-weak);\n    --button-color-text-disabled: var(--color-neutral-content);\n    --button-border-color-default: transparent;\n  }\n/* Featured avatar */\n.featured-avatar-xs {\n    --featured-avatar-xs-size: var(--rem48);\n    height: var(--featured-avatar-xs-size);\n    width: var(--featured-avatar-xs-size);\n  }\n.featured-avatar-sm {\n    --featured-avatar-sm-size: var(--rem64);\n    height: var(--featured-avatar-sm-size);\n    width: var(--featured-avatar-sm-size);\n  }\n.featured-avatar-md {\n    --featured-avatar-md-size: var(--rem88);\n    height: var(--featured-avatar-md-size);\n    width: var(--featured-avatar-md-size);\n  }\n.featured-avatar-lg {\n    --featured-avatar-lg-size: var(--rem144);\n    height: var(--featured-avatar-lg-size);\n    width: var(--featured-avatar-lg-size);\n  }\n.featured-avatar-xl {\n    --featured-avatar-xl-size: var(--rem192);\n    height: var(--featured-avatar-xl-size);\n    width: var(--featured-avatar-xl-size);\n  }\n.featured-avatar-2xl {\n    --featured-avatar-2xl-size: var(--rem320);\n    height: var(--featured-avatar-2xl-size);\n    width: var(--featured-avatar-2xl-size);\n  }\n.pointer-events-none {\n    pointer-events: none;\n}\n.pointer-events-auto {\n    pointer-events: auto;\n}\n.visible {\n    visibility: visible;\n}\n.\\!visible {\n    visibility: visible !important;\n}\n.invisible {\n    visibility: hidden;\n}\n.static {\n    position: static;\n}\n.fixed {\n    position: fixed;\n}\n.absolute {\n    position: absolute;\n}\n.relative {\n    position: relative;\n}\n.sticky {\n    position: sticky;\n}\n.\\!sticky {\n    position: sticky !important;\n}\n.inset-0 {\n    top: 0px;\n    right: 0px;\n    bottom: 0px;\n    left: 0px;\n}\n.top-0 {\n    top: 0px;\n}\n.left-0 {\n    left: 0px;\n}\n.right-0 {\n    right: 0px;\n}\n.top-\\[128px\\] {\n    top: 128px;\n}\n.top-\\[30px\\] {\n    top: 30px;\n}\n.top-1\\/2 {\n    top: 50%;\n}\n.bottom-2xl {\n    bottom: 3rem;\n}\n.left-1\\/2 {\n    left: 50%;\n}\n.bottom-0 {\n    bottom: 0px;\n}\n.left-xs {\n    left: 0.5rem;\n}\n.top-2xs {\n    top: 0.25rem;\n}\n.right-2xs {\n    right: 0.25rem;\n}\n.right-xs {\n    right: 0.5rem;\n}\n.right-sm {\n    right: 0.75rem;\n}\n.top-sm {\n    top: 0.75rem;\n}\n.left-md {\n    left: 1rem;\n}\n.top-md {\n    top: 1rem;\n}\n.top-100 {\n    top: 100%;\n}\n.left-lg {\n    left: 1.5rem;\n}\n.top-3xl {\n    top: 4rem;\n}\n.-right-\\[0\\.0625rem\\] {\n    right: -0.0625rem;\n}\n.-right-\\[0\\.0825rem\\] {\n    right: -0.0825rem;\n}\n.-right-\\[0\\.125rem\\] {\n    right: -0.125rem;\n}\n.-right-\\[\\.65rem\\] {\n    right: -.65rem;\n}\n.-right-\\[\\.75rem\\] {\n    right: -.75rem;\n}\n.isolate {\n    isolation: isolate;\n}\n.z-\\[80\\] {\n    z-index: 80;\n}\n.z-10 {\n    z-index: 10;\n}\n.z-0 {\n    z-index: 0;\n}\n.z-20 {\n    z-index: 20;\n}\n.z-50 {\n    z-index: 50;\n}\n.z-\\[2\\] {\n    z-index: 2;\n}\n.z-\\[3\\] {\n    z-index: 3;\n}\n.col-span-full {\n    grid-column: 1 / -1;\n}\n.col-span-6 {\n    grid-column: span 6 / span 6;\n}\n.col-span-1 {\n    grid-column: span 1 / span 1;\n}\n.col-span-4 {\n    grid-column: span 4 / span 4;\n}\n.col-span-2 {\n    grid-column: span 2 / span 2;\n}\n.col-start-1 {\n    grid-column-start: 1;\n}\n.col-start-2 {\n    grid-column-start: 2;\n}\n.col-start-3 {\n    grid-column-start: 3;\n}\n.col-end-1 {\n    grid-column-end: 1;\n}\n.col-end-4 {\n    grid-column-end: 4;\n}\n.col-end-2 {\n    grid-column-end: 2;\n}\n.row-start-1 {\n    grid-row-start: 1;\n}\n.row-end-auto {\n    grid-row-end: auto;\n}\n.float-right {\n    float: right;\n}\n.m-0 {\n    margin: 0px;\n}\n.m-lg {\n    margin: 1.5rem;\n}\n.m-xs {\n    margin: 0.5rem;\n}\n.m-auto {\n    margin: auto;\n}\n.m-sm {\n    margin: 0.75rem;\n}\n.m-md {\n    margin: 1rem;\n}\n.my-0 {\n    margin-top: 0px;\n    margin-bottom: 0px;\n}\n.mx-auto {\n    margin-left: auto;\n    margin-right: auto;\n}\n.mx-md {\n    margin-left: 1rem;\n    margin-right: 1rem;\n}\n.mx-0 {\n    margin-left: 0px;\n    margin-right: 0px;\n}\n.mx-sm {\n    margin-left: 0.75rem;\n    margin-right: 0.75rem;\n}\n.mx-xs {\n    margin-left: 0.5rem;\n    margin-right: 0.5rem;\n}\n.my-sm {\n    margin-top: 0.75rem;\n    margin-bottom: 0.75rem;\n}\n.mx-2xs {\n    margin-left: 0.25rem;\n    margin-right: 0.25rem;\n}\n.-mx-md {\n    margin-left: -1rem;\n    margin-right: -1rem;\n}\n.my-md {\n    margin-top: 1rem;\n    margin-bottom: 1rem;\n}\n.my-xs {\n    margin-top: 0.5rem;\n    margin-bottom: 0.5rem;\n}\n.mb-xs {\n    margin-bottom: 0.5rem;\n}\n.mb-lg {\n    margin-bottom: 1.5rem;\n}\n.mr-md {\n    margin-right: 1rem;\n}\n.mb-0 {\n    margin-bottom: 0px;\n}\n.mt-\\[2px\\] {\n    margin-top: 2px;\n}\n.ml-\\[-4px\\] {\n    margin-left: -4px;\n}\n.ml-\\[8px\\] {\n    margin-left: 8px;\n}\n.mt-\\[4px\\] {\n    margin-top: 4px;\n}\n.ml-auto {\n    margin-left: auto;\n}\n.mb-\\[10px\\] {\n    margin-bottom: 10px;\n}\n.mt-2xs {\n    margin-top: 0.25rem;\n}\n.mt-sm {\n    margin-top: 0.75rem;\n}\n.ml-md {\n    margin-left: 1rem;\n}\n.mb-sm {\n    margin-bottom: 0.75rem;\n}\n.ml-xs {\n    margin-left: 0.5rem;\n}\n.ml-2xs {\n    margin-left: 0.25rem;\n}\n.mr-2xs {\n    margin-right: 0.25rem;\n}\n.ml-sm {\n    margin-left: 0.75rem;\n}\n.mr-sm {\n    margin-right: 0.75rem;\n}\n.mt-md {\n    margin-top: 1rem;\n}\n.mb-md {\n    margin-bottom: 1rem;\n}\n.mt-lg {\n    margin-top: 1.5rem;\n}\n.mt-0 {\n    margin-top: 0px;\n}\n.mt-xs {\n    margin-top: 0.5rem;\n}\n.mr-xs {\n    margin-right: 0.5rem;\n}\n.mt-xl {\n    margin-top: 2rem;\n}\n.-mt-xl {\n    margin-top: -2rem;\n}\n.mr-0 {\n    margin-right: 0px;\n}\n.mb-2xs {\n    margin-bottom: 0.25rem;\n}\n.-ml-sm {\n    margin-left: -0.75rem;\n}\n.mr-auto {\n    margin-right: auto;\n}\n.ml-0 {\n    margin-left: 0px;\n}\n.-ml-md {\n    margin-left: -1rem;\n}\n.-mt-sm {\n    margin-top: -0.75rem;\n}\n.mb-2xl {\n    margin-bottom: 3rem;\n}\n.ml-px {\n    margin-left: 1px;\n}\n.ml-xl {\n    margin-left: 2rem;\n}\n.-ml-\\[var\\(--rem4\\)\\] {\n    margin-left: calc(var(--rem4) * -1);\n}\n.-ml-\\[var\\(--rem6\\)\\] {\n    margin-left: calc(var(--rem6) * -1);\n}\n.-ml-\\[var\\(--rem8\\)\\] {\n    margin-left: calc(var(--rem8) * -1);\n}\n.-ml-\\[var\\(--rem10\\)\\] {\n    margin-left: calc(var(--rem10) * -1);\n}\n.-ml-\\[var\\(--rem12\\)\\] {\n    margin-left: calc(var(--rem12) * -1);\n}\n.-ml-\\[var\\(--rem14\\)\\] {\n    margin-left: calc(var(--rem14) * -1);\n}\n.-ml-\\[var\\(--rem16\\)\\] {\n    margin-left: calc(var(--rem16) * -1);\n}\n.-ml-\\[var\\(--rem18\\)\\] {\n    margin-left: calc(var(--rem18) * -1);\n}\n.-ml-\\[var\\(--rem20\\)\\] {\n    margin-left: calc(var(--rem20) * -1);\n}\n.mr-\\[length\\:var\\(--rem6\\)\\] {\n    margin-right: var(--rem6);\n}\n.mt-\\[-0\\.125rem\\] {\n    margin-top: -0.125rem;\n}\n.ml-\\[-\\.25rem\\] {\n    margin-left: -.25rem;\n}\n.mt-\\[-0\\.25rem\\] {\n    margin-top: -0.25rem;\n}\n.box-border {\n    box-sizing: border-box;\n}\n.block {\n    display: block;\n}\n.\\!block {\n    display: block !important;\n}\n.inline-block {\n    display: inline-block;\n}\n.inline {\n    display: inline;\n}\n.flex {\n    display: flex;\n}\n.inline-flex {\n    display: inline-flex;\n}\n.table {\n    display: table;\n}\n.\\!table {\n    display: table !important;\n}\n.table-cell {\n    display: table-cell;\n}\n.grid {\n    display: grid;\n}\n.contents {\n    display: contents;\n}\n.list-item {\n    display: list-item;\n}\n.hidden {\n    display: none;\n}\n.\\!hidden {\n    display: none !important;\n}\n.aspect-square {\n    aspect-ratio: 1 / 1;\n}\n.h-\\[10px\\] {\n    height: 10px;\n}\n.h-\\[20px\\] {\n    height: 20px;\n}\n.\\!h-\\[32px\\] {\n    height: 32px !important;\n}\n.h-\\[16px\\] {\n    height: 16px;\n}\n.h-full {\n    height: 100%;\n}\n.h-3xl {\n    height: 4rem;\n}\n.h-2xl {\n    height: 3rem;\n}\n.h-100 {\n    height: 100%;\n}\n.h-2xs {\n    height: 0.25rem;\n}\n.h-lg {\n    height: 1.5rem;\n}\n.h-md {\n    height: 1rem;\n}\n.h-\\[28px\\] {\n    height: 28px;\n}\n.h-sm {\n    height: 0.75rem;\n}\n.h-xs {\n    height: 0.5rem;\n}\n.h-px {\n    height: 1px;\n}\n.h-auto {\n    height: auto;\n}\n.h-xl {\n    height: 2rem;\n}\n.h-4xl {\n    height: 6rem;\n}\n.h-screen {\n    height: 100vh;\n}\n.h-0 {\n    height: 0px;\n}\n.h-\\[1rem\\] {\n    height: 1rem;\n}\n.h-\\[1\\.25rem\\] {\n    height: 1.25rem;\n}\n.h-\\[1\\.5rem\\] {\n    height: 1.5rem;\n}\n.h-\\[2rem\\] {\n    height: 2rem;\n}\n.h-\\[2\\.5rem\\] {\n    height: 2.5rem;\n}\n.h-\\[3rem\\] {\n    height: 3rem;\n}\n.h-\\[2\\.87rem\\] {\n    height: 2.87rem;\n}\n.h-\\[3\\.25rem\\] {\n    height: 3.25rem;\n}\n.h-\\[4\\.5rem\\] {\n    height: 4.5rem;\n}\n.h-\\[3\\.5rem\\] {\n    height: 3.5rem;\n}\n.h-\\[4rem\\] {\n    height: 4rem;\n}\n.h-\\[5\\.5rem\\] {\n    height: 5.5rem;\n}\n.h-\\[\\.25rem\\] {\n    height: .25rem;\n}\n.h-\\[\\.375rem\\] {\n    height: .375rem;\n}\n.h-\\[\\.625rem\\] {\n    height: .625rem;\n}\n.h-\\[length\\:var\\(--size-button-md-h\\)\\] {\n    height: var(--size-button-md-h);\n}\n.max-h-full {\n    max-height: 100%;\n}\n.max-h-\\[240px\\] {\n    max-height: 240px;\n}\n.max-h-\\[253px\\] {\n    max-height: 253px;\n}\n.min-h-\\[20px\\] {\n    min-height: 20px;\n}\n.min-h-screen {\n    min-height: 100vh;\n}\n.min-h-full {\n    min-height: 100%;\n}\n.min-h-\\[1rem\\] {\n    min-height: 1rem;\n}\n.w-100 {\n    width: 100%;\n}\n.w-\\[539px\\] {\n    width: 539px;\n}\n.w-\\[16px\\] {\n    width: 16px;\n}\n.\\!w-\\[32px\\] {\n    width: 32px !important;\n}\n.w-full {\n    width: 100%;\n}\n.w-3xl {\n    width: 4rem;\n}\n.w-fit {\n    width: fit-content;\n}\n.w-\\[280px\\] {\n    width: 280px;\n}\n.w-\\[268px\\] {\n    width: 268px;\n}\n.w-\\[64px\\] {\n    width: 64px;\n}\n.w-xs {\n    width: 0.5rem;\n}\n.w-lg {\n    width: 1.5rem;\n}\n.w-md {\n    width: 1rem;\n}\n.w-5xl {\n    width: 8rem;\n}\n.w-xl {\n    width: 2rem;\n}\n.w-auto {\n    width: auto;\n}\n.w-screen {\n    width: 100vw;\n}\n.w-2xl {\n    width: 3rem;\n}\n.w-px {\n    width: 1px;\n}\n.w-\\[1rem\\] {\n    width: 1rem;\n}\n.w-\\[1\\.25rem\\] {\n    width: 1.25rem;\n}\n.w-\\[1\\.5rem\\] {\n    width: 1.5rem;\n}\n.w-\\[2rem\\] {\n    width: 2rem;\n}\n.w-\\[2\\.5rem\\] {\n    width: 2.5rem;\n}\n.w-\\[3rem\\] {\n    width: 3rem;\n}\n.w-\\[2\\.87rem\\] {\n    width: 2.87rem;\n}\n.w-\\[3\\.25rem\\] {\n    width: 3.25rem;\n}\n.w-\\[4\\.5rem\\] {\n    width: 4.5rem;\n}\n.w-\\[3\\.5rem\\] {\n    width: 3.5rem;\n}\n.w-\\[4rem\\] {\n    width: 4rem;\n}\n.w-\\[5\\.5rem\\] {\n    width: 5.5rem;\n}\n.w-\\[\\.25rem\\] {\n    width: .25rem;\n}\n.w-\\[\\.375rem\\] {\n    width: .375rem;\n}\n.w-\\[\\.625rem\\] {\n    width: .625rem;\n}\n.min-w-\\[500px\\] {\n    min-width: 500px;\n}\n.min-w-0 {\n    min-width: 0px;\n}\n.min-w-\\[20px\\] {\n    min-width: 20px;\n}\n.min-w-full {\n    min-width: 100%;\n}\n.min-w-\\[0\\.5rem\\] {\n    min-width: 0.5rem;\n}\n.max-w-\\[12rem\\] {\n    max-width: 12rem;\n}\n.max-w-full {\n    max-width: 100%;\n}\n.max-w-\\[240px\\] {\n    max-width: 240px;\n}\n.max-w-none {\n    max-width: none;\n}\n.max-w-\\[480px\\] {\n    max-width: 480px;\n}\n.flex-auto {\n    flex: 1 1 auto;\n}\n.flex-1 {\n    flex: 1 1 0%;\n}\n.flex-none {\n    flex: none;\n}\n.flex-shrink-0 {\n    flex-shrink: 0;\n}\n.flex-shrink {\n    flex-shrink: 1;\n}\n.shrink {\n    flex-shrink: 1;\n}\n.shrink-0 {\n    flex-shrink: 0;\n}\n.flex-grow-0 {\n    flex-grow: 0;\n}\n.flex-grow {\n    flex-grow: 1;\n}\n.grow {\n    flex-grow: 1;\n}\n.grow-0 {\n    flex-grow: 0;\n}\n.basis-0 {\n    flex-basis: 0px;\n}\n.basis-2xl {\n    flex-basis: 3rem;\n}\n.basis-full {\n    flex-basis: 100%;\n}\n.border-separate {\n    border-collapse: separate;\n}\n.-translate-y-1\\/2 {\n    --tw-translate-y: -50%;\n    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));\n}\n.-translate-x-1\\/2 {\n    --tw-translate-x: -50%;\n    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));\n}\n.translate-x-0 {\n    --tw-translate-x: 0px;\n    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));\n}\n.translate-y-md {\n    --tw-translate-y: 1rem;\n    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));\n}\n.rotate-90 {\n    --tw-rotate: 90deg;\n    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));\n}\n.scale-75 {\n    --tw-scale-x: .75;\n    --tw-scale-y: .75;\n    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));\n}\n.scale-150 {\n    --tw-scale-x: 1.5;\n    --tw-scale-y: 1.5;\n    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));\n}\n.scale-100 {\n    --tw-scale-x: 1;\n    --tw-scale-y: 1;\n    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));\n}\n.-scale-x-100 {\n    --tw-scale-x: -1;\n    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));\n}\n.transform {\n    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));\n}\n.transform-gpu {\n    transform: translate3d(var(--tw-translate-x), var(--tw-translate-y), 0) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));\n}\n@keyframes spin {\n    to {\n        transform: rotate(360deg);\n    }\n}\n.animate-spin {\n    animation: spin 1s linear infinite;\n}\n.cursor-pointer {\n    cursor: pointer;\n}\n.cursor-default {\n    cursor: default;\n}\n.cursor-none {\n    cursor: none;\n}\n.select-none {\n    user-select: none;\n}\n.resize-y {\n    resize: vertical;\n}\n.resize {\n    resize: both;\n}\n.list-none {\n    list-style-type: none;\n}\n.columns-1 {\n    columns: 1;\n}\n.grid-cols-1 {\n    grid-template-columns: repeat(1, minmax(0, 1fr));\n}\n.grid-cols-8 {\n    grid-template-columns: repeat(8, minmax(0, 1fr));\n}\n.flex-row {\n    flex-direction: row;\n}\n.flex-col {\n    flex-direction: column;\n}\n.flex-wrap {\n    flex-wrap: wrap;\n}\n.flex-nowrap {\n    flex-wrap: nowrap;\n}\n.items-start {\n    align-items: flex-start;\n}\n.items-end {\n    align-items: flex-end;\n}\n.items-center {\n    align-items: center;\n}\n.items-stretch {\n    align-items: stretch;\n}\n.justify-start {\n    justify-content: flex-start;\n}\n.justify-end {\n    justify-content: flex-end;\n}\n.justify-center {\n    justify-content: center;\n}\n.justify-between {\n    justify-content: space-between;\n}\n.justify-around {\n    justify-content: space-around;\n}\n.justify-items-start {\n    justify-items: start;\n}\n.justify-items-center {\n    justify-items: center;\n}\n.gap-xs {\n    gap: 0.5rem;\n}\n.gap-sm {\n    gap: 0.75rem;\n}\n.gap-md {\n    gap: 1rem;\n}\n.gap-2xs {\n    gap: 0.25rem;\n}\n.gap-\\[1rem\\] {\n    gap: 1rem;\n}\n.gap-\\[length\\:var\\(--rem12\\)\\] {\n    gap: var(--rem12);\n}\n.gap-x-md {\n    column-gap: 1rem;\n}\n.gap-x-xs {\n    column-gap: 0.5rem;\n}\n.self-start {\n    align-self: flex-start;\n}\n.self-end {\n    align-self: flex-end;\n}\n.self-center {\n    align-self: center;\n}\n.self-baseline {\n    align-self: baseline;\n}\n.overflow-auto {\n    overflow: auto;\n}\n.overflow-hidden {\n    overflow: hidden;\n}\n.overflow-visible {\n    overflow: visible;\n}\n.overflow-scroll {\n    overflow: scroll;\n}\n.overflow-y-auto {\n    overflow-y: auto;\n}\n.overflow-x-hidden {\n    overflow-x: hidden;\n}\n.overflow-x-visible {\n    overflow-x: visible;\n}\n.overflow-x-scroll {\n    overflow-x: scroll;\n}\n.overscroll-none {\n    overscroll-behavior: none;\n}\n.scroll-smooth {\n    scroll-behavior: smooth;\n}\n.truncate {\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n}\n.overflow-ellipsis {\n    text-overflow: ellipsis;\n}\n.text-ellipsis {\n    text-overflow: ellipsis;\n}\n.whitespace-normal {\n    white-space: normal;\n}\n.whitespace-nowrap {\n    white-space: nowrap;\n}\n.break-normal {\n    overflow-wrap: normal;\n    word-break: normal;\n}\n.rounded-sm {\n    border-radius: 0.25rem;\n}\n.rounded-full {\n    border-radius: 624.9375rem;\n}\n.rounded-\\[0\\.5rem\\] {\n    border-radius: 0.5rem;\n}\n.rounded-lg {\n    border-radius: 2rem;\n}\n.rounded-none {\n    border-radius: 0rem;\n}\n.rounded-\\[\\.5rem\\] {\n    border-radius: .5rem;\n}\n.rounded-l-sm {\n    border-top-left-radius: 0.25rem;\n    border-bottom-left-radius: 0.25rem;\n}\n.rounded-t-lg {\n    border-top-left-radius: 2rem;\n    border-top-right-radius: 2rem;\n}\n.rounded-r-sm {\n    border-top-right-radius: 0.25rem;\n    border-bottom-right-radius: 0.25rem;\n}\n.rounded-r-lg {\n    border-top-right-radius: 2rem;\n    border-bottom-right-radius: 2rem;\n}\n.rounded-b-none {\n    border-bottom-right-radius: 0rem;\n    border-bottom-left-radius: 0rem;\n}\n.rounded-br-none {\n    border-bottom-right-radius: 0rem;\n}\n.border {\n    border-width: 0.0625rem;\n}\n.border-sm {\n    border-width: 0.0625rem;\n}\n.border-lg {\n    border-width: 0.25rem;\n}\n.border-0 {\n    border-width: 0rem;\n}\n.border-md {\n    border-width: 0.125rem;\n}\n.border-y-sm {\n    border-top-width: 0.0625rem;\n    border-bottom-width: 0.0625rem;\n}\n.border-x-0 {\n    border-left-width: 0rem;\n    border-right-width: 0rem;\n}\n.border-y-0 {\n    border-top-width: 0rem;\n    border-bottom-width: 0rem;\n}\n.border-b {\n    border-bottom-width: 0.0625rem;\n}\n.border-r-sm {\n    border-right-width: 0.0625rem;\n}\n.border-t-sm {\n    border-top-width: 0.0625rem;\n}\n.border-b-0 {\n    border-bottom-width: 0rem;\n}\n.border-r-0 {\n    border-right-width: 0rem;\n}\n.border-l-0 {\n    border-left-width: 0rem;\n}\n.border-b-sm {\n    border-bottom-width: 0.0625rem;\n}\n.border-t-0 {\n    border-top-width: 0rem;\n}\n.border-t {\n    border-top-width: 0.0625rem;\n}\n.border-l-sm {\n    border-left-width: 0.0625rem;\n}\n.border-r-md {\n    border-right-width: 0.125rem;\n}\n.border-r {\n    border-right-width: 0.0625rem;\n}\n.border-l-lg {\n    border-left-width: 0.25rem;\n}\n.border-solid {\n    border-style: solid;\n}\n.border-none {\n    border-style: none;\n}\n.border-neutral-border-weak {\n    border-color: var(--color-neutral-border-weak);\n}\n.border-white {\n    --tw-border-opacity: 1;\n    border-color: rgb(255 255 255 / var(--tw-border-opacity));\n}\n.border-neutral-border {\n    border-color: var(--color-neutral-border);\n}\n.border-global-white {\n    border-color: var(--color-global-white);\n}\n.border-tone-2 {\n    border-color: var(--color-tone-2);\n}\n.border-neutral-content {\n    border-color: var(--color-neutral-content);\n}\n.border-tone-4 {\n    border-color: var(--color-tone-4);\n}\n.border-action-secondary {\n    border-color: var(--color-action-secondary);\n}\n.border-tone-7 {\n    border-color: var(--color-tone-7);\n}\n.border-tone-5 {\n    border-color: var(--color-tone-5);\n}\n.border-danger-content {\n    border-color: var(--color-danger-content);\n}\n.border-tone-6 {\n    border-color: var(--color-tone-6);\n}\n.border-tone-3 {\n    border-color: var(--color-tone-3);\n}\n.border-coolgray-350 {\n    --tw-border-opacity: 1;\n    border-color: rgb(184 197 201 / var(--tw-border-opacity));\n}\n.border-transparent {\n    border-color: transparent;\n}\n.border-alert-negative {\n    border-color: var(--color-alert-negative);\n}\n.border-global-orangered {\n    border-color: var(--color-global-orangered);\n}\n.border-neutral-border-medium {\n    border-color: var(--color-neutral-border-medium);\n}\n.border-coolgray-100 {\n    --tw-border-opacity: 1;\n    border-color: rgb(242 244 245 / var(--tw-border-opacity));\n}\n.border-action-primary {\n    border-color: var(--color-action-primary);\n}\n.border-alert-caution {\n    border-color: var(--color-alert-caution);\n}\n.border-neutral-background {\n    border-color: var(--color-neutral-background);\n}\n.border-secondary-background-selected {\n    border-color: var(--color-secondary-background-selected);\n}\n.border-action-upvote {\n    border-color: var(--color-action-upvote);\n}\n.border-action-downvote {\n    border-color: var(--color-action-downvote);\n}\n.border-r-neutral-border-weak {\n    border-right-color: var(--color-neutral-border-weak);\n}\n.bg-neutral-background {\n    background-color: var(--color-neutral-background);\n}\n.bg-tone-7 {\n    background-color: var(--color-tone-7);\n}\n.bg-global-orangered {\n    background-color: var(--color-global-orangered);\n}\n.bg-coolgray-350 {\n    --tw-bg-opacity: 1;\n    background-color: rgb(184 197 201 / var(--tw-bg-opacity));\n}\n.bg-\\[color\\:var\\(--newCommunityTheme-body\\)\\] {\n    background-color: var(--newCommunityTheme-body);\n}\n.bg-neutral-background-strong {\n    background-color: var(--color-neutral-background-strong);\n}\n.bg-secondary-background-selected {\n    background-color: var(--color-secondary-background-selected);\n}\n.bg-neutral-background-disabled {\n    background-color: var(--color-neutral-background-disabled);\n}\n.bg-black {\n    --tw-bg-opacity: 1;\n    background-color: rgb(0 0 0 / var(--tw-bg-opacity));\n}\n.bg-white {\n    --tw-bg-opacity: 1;\n    background-color: rgb(255 255 255 / var(--tw-bg-opacity));\n}\n.bg-opacity-50 {\n    background-color: var(--color-opacity-50);\n}\n.bg-transparent {\n    background-color: transparent;\n}\n.bg-scrim {\n    background-color: var(--color-scrim);\n}\n.bg-tone-6 {\n    background-color: var(--color-tone-6);\n}\n.bg-tone-4 {\n    background-color: var(--color-tone-4);\n}\n.bg-ui-modalbackground {\n    background-color: var(--color-ui-modalbackground);\n}\n.bg-tone-5 {\n    background-color: var(--color-tone-5);\n}\n.bg-neutral-background-weak {\n    background-color: var(--color-neutral-background-weak);\n}\n.bg-tone-1 {\n    background-color: var(--color-tone-1);\n}\n.bg-secondary-background {\n    background-color: var(--color-secondary-background);\n}\n.bg-neutral-background-hover {\n    background-color: var(--color-neutral-background-hover);\n}\n.bg-primary-background {\n    background-color: var(--color-primary-background);\n}\n.bg-global-white {\n    background-color: var(--color-global-white);\n}\n.bg-brand-background {\n    background-color: var(--color-brand-background);\n}\n.bg-global-alienblue {\n    background-color: var(--color-global-alienblue);\n}\n.bg-secondary-weak {\n    background-color: var(--color-secondary-weak);\n}\n.bg-kiwigreen-400 {\n    --tw-bg-opacity: 1;\n    background-color: rgb(85 189 70 / var(--tw-bg-opacity));\n}\n.bg-kiwigreen-600 {\n    --tw-bg-opacity: 1;\n    background-color: rgb(10 96 0 / var(--tw-bg-opacity));\n}\n.bg-yelloworange-400 {\n    --tw-bg-opacity: 1;\n    background-color: rgb(255 156 26 / var(--tw-bg-opacity));\n}\n.bg-action-primary {\n    background-color: var(--color-action-primary);\n}\n.bg-orangered-300 {\n    --tw-bg-opacity: 1;\n    background-color: rgb(255 190 166 / var(--tw-bg-opacity));\n}\n.bg-coolgray-200 {\n    --tw-bg-opacity: 1;\n    background-color: rgb(226 231 233 / var(--tw-bg-opacity));\n}\n.bg-online {\n    background-color: var(--color-online);\n}\n.bg-warning-content {\n    background-color: var(--color-warning-content);\n}\n.bg-success-content {\n    background-color: var(--color-success-content);\n}\n.bg-neutral-content {\n    background-color: var(--color-neutral-content);\n}\n.bg-danger-content {\n    background-color: var(--color-danger-content);\n}\n.bg-neutral-content-disabled {\n    background-color: var(--color-neutral-content-disabled);\n}\n.bg-brand-onBackground {\n    background-color: var(--color-brand-onBackground);\n}\n.bg-action-upvote {\n    background-color: var(--color-action-upvote);\n}\n.bg-action-downvote {\n    background-color: var(--color-action-downvote);\n}\n.bg-interactive-background-disabled {\n    background-color: var(--color-interactive-background-disabled);\n}\n.bg-\\[color\\:var\\(--color-button-plain-background-disabled\\)\\] {\n    background-color: var(--color-button-plain-background-disabled);\n}\n.bg-opacity-25 {\n    --tw-bg-opacity: 0.25;\n}\n.bg-opacity-50 {\n    --tw-bg-opacity: 0.5;\n}\n.bg-gradient-to-r {\n    background-image: linear-gradient(to right, var(--tw-gradient-stops));\n}\n.bg-gradient-to-l {\n    background-image: linear-gradient(to left, var(--tw-gradient-stops));\n}\n.bg-gradient-to-t {\n    background-image: linear-gradient(to top, var(--tw-gradient-stops));\n}\n.from-white {\n    --tw-gradient-from: #ffffff;\n    --tw-gradient-to: rgb(255 255 255 / 0);\n    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);\n}\n.from-transparent {\n    --tw-gradient-from: transparent;\n    --tw-gradient-to: rgb(0 0 0 / 0);\n    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);\n}\n.via-white {\n    --tw-gradient-to: rgb(255 255 255 / 0);\n    --tw-gradient-stops: var(--tw-gradient-from), #ffffff, var(--tw-gradient-to);\n}\n.fill-brand-background {\n    fill: var(--color-brand-background);\n}\n.fill-current {\n    fill: currentColor;\n}\n.stroke-tone-2 {\n    stroke: var(--color-tone-2);\n}\n.object-contain {\n    object-fit: contain;\n}\n.p-md {\n    padding: 1rem;\n}\n.p-sm {\n    padding: 0.75rem;\n}\n.p-xs {\n    padding: 0.5rem;\n}\n.p-\\[32px\\] {\n    padding: 32px;\n}\n.p-px {\n    padding: 1px;\n}\n.p-0 {\n    padding: 0px;\n}\n.p-2xs {\n    padding: 0.25rem;\n}\n.p-lg {\n    padding: 1.5rem;\n}\n.px-lg {\n    padding-left: 1.5rem;\n    padding-right: 1.5rem;\n}\n.px-\\[8px\\] {\n    padding-left: 8px;\n    padding-right: 8px;\n}\n.py-\\[6px\\] {\n    padding-top: 6px;\n    padding-bottom: 6px;\n}\n.px-\\[length\\:var\\(--rem8\\)\\] {\n    padding-left: var(--rem8);\n    padding-right: var(--rem8);\n}\n.py-\\[32px\\] {\n    padding-top: 32px;\n    padding-bottom: 32px;\n}\n.px-\\[16px\\] {\n    padding-left: 16px;\n    padding-right: 16px;\n}\n.py-\\[8px\\] {\n    padding-top: 8px;\n    padding-bottom: 8px;\n}\n.py-sm {\n    padding-top: 0.75rem;\n    padding-bottom: 0.75rem;\n}\n.px-md {\n    padding-left: 1rem;\n    padding-right: 1rem;\n}\n.px-2xs {\n    padding-left: 0.25rem;\n    padding-right: 0.25rem;\n}\n.py-lg {\n    padding-top: 1.5rem;\n    padding-bottom: 1.5rem;\n}\n.py-0 {\n    padding-top: 0px;\n    padding-bottom: 0px;\n}\n.px-sm {\n    padding-left: 0.75rem;\n    padding-right: 0.75rem;\n}\n.py-xs {\n    padding-top: 0.5rem;\n    padding-bottom: 0.5rem;\n}\n.py-2xs {\n    padding-top: 0.25rem;\n    padding-bottom: 0.25rem;\n}\n.px-2xl {\n    padding-left: 3rem;\n    padding-right: 3rem;\n}\n.px-xs {\n    padding-left: 0.5rem;\n    padding-right: 0.5rem;\n}\n.py-md {\n    padding-top: 1rem;\n    padding-bottom: 1rem;\n}\n.px-0 {\n    padding-left: 0px;\n    padding-right: 0px;\n}\n.px-\\[length\\:var\\(--rem10\\)\\] {\n    padding-left: var(--rem10);\n    padding-right: var(--rem10);\n}\n.px-\\[length\\:var\\(--rem6\\)\\] {\n    padding-left: var(--rem6);\n    padding-right: var(--rem6);\n}\n.px-\\[length\\:var\\(--rem14\\)\\] {\n    padding-left: var(--rem14);\n    padding-right: var(--rem14);\n}\n.px-\\[length\\:var\\(--rem12\\)\\] {\n    padding-left: var(--rem12);\n    padding-right: var(--rem12);\n}\n.py-\\[length\\:var\\(--rem2\\)\\] {\n    padding-top: var(--rem2);\n    padding-bottom: var(--rem2);\n}\n.py-\\[length\\:var\\(--rem8\\)\\] {\n    padding-top: var(--rem8);\n    padding-bottom: var(--rem8);\n}\n.py-\\[length\\:var\\(--rem10\\)\\] {\n    padding-top: var(--rem10);\n    padding-bottom: var(--rem10);\n}\n.py-\\[length\\:var\\(--rem14\\)\\] {\n    padding-top: var(--rem14);\n    padding-bottom: var(--rem14);\n}\n.pr-0 {\n    padding-right: 0px;\n}\n.pt-md {\n    padding-top: 1rem;\n}\n.pt-sm {\n    padding-top: 0.75rem;\n}\n.pb-xs {\n    padding-bottom: 0.5rem;\n}\n.pl-sm {\n    padding-left: 0.75rem;\n}\n.pb-2xs {\n    padding-bottom: 0.25rem;\n}\n.pt-lg {\n    padding-top: 1.5rem;\n}\n.pb-\\[8px\\] {\n    padding-bottom: 8px;\n}\n.pt-\\[4px\\] {\n    padding-top: 4px;\n}\n.pr-sm {\n    padding-right: 0.75rem;\n}\n.pb-lg {\n    padding-bottom: 1.5rem;\n}\n.pb-md {\n    padding-bottom: 1rem;\n}\n.pr-lg {\n    padding-right: 1.5rem;\n}\n.pl-xs {\n    padding-left: 0.5rem;\n}\n.pl-md {\n    padding-left: 1rem;\n}\n.pt-\\[20px\\] {\n    padding-top: 20px;\n}\n.pb-\\[6px\\] {\n    padding-bottom: 6px;\n}\n.pt-0 {\n    padding-top: 0px;\n}\n.pt-px {\n    padding-top: 1px;\n}\n.pt-xs {\n    padding-top: 0.5rem;\n}\n.pr-xs {\n    padding-right: 0.5rem;\n}\n.pb-sm {\n    padding-bottom: 0.75rem;\n}\n.pl-2xs {\n    padding-left: 0.25rem;\n}\n.pl-lg {\n    padding-left: 1.5rem;\n}\n.pr-2xs {\n    padding-right: 0.25rem;\n}\n.pt-2xs {\n    padding-top: 0.25rem;\n}\n.pr-md {\n    padding-right: 1rem;\n}\n.pb-0 {\n    padding-bottom: 0px;\n}\n.pb-xl {\n    padding-bottom: 2rem;\n}\n.pt-xl {\n    padding-top: 2rem;\n}\n.pr-xl {\n    padding-right: 2rem;\n}\n.pr-2xl {\n    padding-right: 3rem;\n}\n.pr-3xl {\n    padding-right: 4rem;\n}\n.pl-0 {\n    padding-left: 0px;\n}\n.pl-\\[length\\:var\\(--rem10\\)\\] {\n    padding-left: var(--rem10);\n}\n.pr-\\[length\\:var\\(--rem14\\)\\] {\n    padding-right: var(--rem14);\n}\n.pr-\\[length\\:var\\(--rem6\\)\\] {\n    padding-right: var(--rem6);\n}\n.pl-\\[length\\:var\\(--rem14\\)\\] {\n    padding-left: var(--rem14);\n}\n.pr-\\[length\\:var\\(--rem10\\)\\] {\n    padding-right: var(--rem10);\n}\n.pl-\\[0\\.125rem\\] {\n    padding-left: 0.125rem;\n}\n.pl-\\[length\\:var\\(--rem12\\)\\] {\n    padding-left: var(--rem12);\n}\n.pr-\\[length\\:var\\(--rem12\\)\\] {\n    padding-right: var(--rem12);\n}\n.pr-\\[length\\:var\\(--rem16\\)\\] {\n    padding-right: var(--rem16);\n}\n.pr-\\[length\\:var\\(--rem8\\)\\] {\n    padding-right: var(--rem8);\n}\n.pl-\\[length\\:var\\(--rem16\\)\\] {\n    padding-left: var(--rem16);\n}\n.text-left {\n    text-align: left;\n}\n.text-center {\n    text-align: center;\n}\n.text-right {\n    text-align: right;\n}\n.indent-0 {\n    text-indent: 0px;\n}\n.align-top {\n    vertical-align: top;\n}\n.align-middle {\n    vertical-align: middle;\n}\n.align-text-bottom {\n    vertical-align: text-bottom;\n}\n.font-mono {\n    font-family: var(--font-mono);\n}\n.font-sans {\n    font-family: var(--font-sans);\n}\n.text-24 {\n    font-size: 1.5rem;\n    line-height: 1.75rem;\n}\n.text-16 {\n    font-size: 1rem;\n    line-height: 1.25rem;\n}\n.text-14 {\n    font-size: 0.875rem;\n    line-height: 1.25rem;\n}\n.text-12 {\n    font-size: 0.75rem;\n    line-height: 1rem;\n}\n.text-\\[32px\\] {\n    font-size: 32px;\n}\n.text-20 {\n    font-size: 1.25rem;\n    line-height: 1.25rem;\n}\n.\\!text-\\[32px\\] {\n    font-size: 32px !important;\n}\n.text-\\[14px\\] {\n    font-size: 14px;\n}\n.text-\\[12px\\] {\n    font-size: 12px;\n}\n.text-18 {\n    font-size: 1.125rem;\n    line-height: 1.5rem;\n}\n.text-32 {\n    font-size: 2rem;\n    line-height: 2.25rem;\n}\n.text-64 {\n    font-size: 4rem;\n    line-height: 4rem;\n}\n.text-10 {\n    font-size: 0.625rem;\n    line-height: 1rem;\n}\n.text-48 {\n    font-size: 3rem;\n    line-height: 3rem;\n}\n.font-semibold {\n    font-weight: 600;\n}\n.font-bold {\n    font-weight: 700;\n}\n.font-normal {\n    font-weight: 400;\n}\n.uppercase {\n    text-transform: uppercase;\n}\n.lowercase {\n    text-transform: lowercase;\n}\n.capitalize {\n    text-transform: capitalize;\n}\n.italic {\n    font-style: italic;\n}\n.not-italic {\n    font-style: normal;\n}\n.ordinal {\n    --tw-ordinal: ordinal;\n    font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);\n}\n.leading-5 {\n    line-height: 1.25rem;\n}\n.leading-4 {\n    line-height: 1rem;\n}\n.\\!leading-none {\n    line-height: 1 !important;\n}\n.leading-\\[16px\\] {\n    line-height: 16px;\n}\n.leading-\\[14px\\] {\n    line-height: 14px;\n}\n.leading-\\[20px\\] {\n    line-height: 20px;\n}\n.leading-6 {\n    line-height: 1.5rem;\n}\n.leading-none {\n    line-height: 1;\n}\n.leading-3 {\n    line-height: .75rem;\n}\n.leading-8 {\n    line-height: 2rem;\n}\n.leading-normal {\n    line-height: 1.5;\n}\n.leading-9 {\n    line-height: 2.25rem;\n}\n.leading-7 {\n    line-height: 1.75rem;\n}\n.leading-\\[0\\.875rem\\] {\n    line-height: 0.875rem;\n}\n.tracking-normal {\n    letter-spacing: 0em;\n}\n.text-white {\n    --tw-text-opacity: 1;\n    color: rgb(255 255 255 / var(--tw-text-opacity));\n}\n.text-neutral-content-strong {\n    color: var(--color-neutral-content-strong);\n}\n.text-neutral-content-weak {\n    color: var(--color-neutral-content-weak);\n}\n.text-coolgray-900 {\n    --tw-text-opacity: 1;\n    color: rgb(11 20 22 / var(--tw-text-opacity));\n}\n.text-primary {\n    color: var(--color-primary);\n}\n.text-action-primary {\n    color: var(--color-action-primary);\n}\n.text-secondary-weak {\n    color: var(--color-secondary-weak);\n}\n.text-global-white {\n    color: var(--color-global-white);\n}\n.text-tone-3 {\n    color: var(--color-tone-3);\n}\n.text-global-alienblue {\n    color: var(--color-global-alienblue);\n}\n.text-tone-1 {\n    color: var(--color-tone-1);\n}\n.text-action-secondary {\n    color: var(--color-action-secondary);\n}\n.text-primary-background-hover {\n    color: var(--color-primary-background-hover);\n}\n.text-category-nsfw {\n    color: var(--color-category-nsfw);\n}\n.text-tone-2 {\n    color: var(--color-tone-2);\n}\n.text-neutral-content {\n    color: var(--color-neutral-content);\n}\n.text-puregray-400 {\n    --tw-text-opacity: 1;\n    color: rgb(172 172 172 / var(--tw-text-opacity));\n}\n.text-danger-content {\n    color: var(--color-danger-content);\n}\n.text-tone-7 {\n    color: var(--color-tone-7);\n}\n.text-primary-background {\n    color: var(--color-primary-background);\n}\n.text-identity-moderator {\n    color: var(--color-identity-moderator);\n}\n.text-alert-negative {\n    color: var(--color-alert-negative);\n}\n.text-coolgray-850 {\n    --tw-text-opacity: 1;\n    color: rgb(15 26 28 / var(--tw-text-opacity));\n}\n.text-coolgray-650 {\n    --tw-text-opacity: 1;\n    color: rgb(42 60 66 / var(--tw-text-opacity));\n}\n.text-coolgray-550 {\n    --tw-text-opacity: 1;\n    color: rgb(75 96 102 / var(--tw-text-opacity));\n}\n.text-neutral-background-strong {\n    color: var(--color-neutral-background-strong);\n}\n.text-periwinkle-500 {\n    --tw-text-opacity: 1;\n    color: rgb(106 92 255 / var(--tw-text-opacity));\n}\n.text-coolgray-0 {\n    --tw-text-opacity: 1;\n    color: rgb(255 255 255 / var(--tw-text-opacity));\n}\n.text-coolgray-950 {\n    --tw-text-opacity: 1;\n    color: rgb(4 9 10 / var(--tw-text-opacity));\n}\n.text-action-downvote {\n    color: var(--color-action-downvote);\n}\n.text-global-black {\n    color: var(--color-global-black);\n}\n.text-secondary {\n    color: var(--color-secondary);\n}\n.text-alert-caution {\n    color: var(--color-alert-caution);\n}\n.text-current {\n    color: currentColor;\n}\n.text-category-spoiler {\n    color: var(--color-category-spoiler);\n}\n.text-warning-content {\n    color: var(--color-warning-content);\n}\n.text-primary-onBackground {\n    color: var(--color-primary-onBackground);\n}\n.text-brand-onBackground {\n    color: var(--color-brand-onBackground);\n}\n.text-neutral-content-disabled {\n    color: var(--color-neutral-content-disabled);\n}\n.text-\\[color\\:var\\(--color-button-secondary-text-disabled\\)\\] {\n    color: var(--color-button-secondary-text-disabled);\n}\n.text-\\[color\\:var\\(--color-button-plain-text-disabled\\)\\] {\n    color: var(--color-button-plain-text-disabled);\n}\n.underline {\n    text-decoration-line: underline;\n}\n.line-through {\n    text-decoration-line: line-through;\n}\n.no-underline {\n    text-decoration-line: none;\n}\n.opacity-25 {\n    opacity: 0.25;\n}\n.opacity-75 {\n    opacity: 0.75;\n}\n.opacity-0 {\n    opacity: 0;\n}\n.opacity-100 {\n    opacity: 1;\n}\n.opacity-30 {\n    opacity: 0.3;\n}\n.opacity-50 {\n    opacity: 0.5;\n}\n.opacity-20 {\n    opacity: 0.2;\n}\n.opacity-60 {\n    opacity: 0.6;\n}\n.opacity-40 {\n    opacity: 0.4;\n}\n.shadow-none {\n    --tw-shadow: 0 0 #0000;\n    --tw-shadow-colored: 0 0 #0000;\n    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n.shadow-sm {\n    --tw-shadow: var(--elevation-sm);\n    --tw-shadow-colored: var(--elevation-sm);\n    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n.shadow-md {\n    --tw-shadow: var(--elevation-md);\n    --tw-shadow-colored: var(--elevation-md);\n    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n.outline-none {\n    outline: 2px solid transparent;\n    outline-offset: 2px;\n}\n.outline {\n    outline-style: solid;\n}\n.ring {\n    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);\n    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);\n    box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);\n}\n.drop-shadow {\n    --tw-drop-shadow: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));\n    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n}\n.grayscale {\n    --tw-grayscale: grayscale(100%);\n    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n}\n.invert {\n    --tw-invert: invert(100%);\n    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n}\n.transition {\n    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;\n    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n    transition-duration: 150ms;\n}\n.transition-transform {\n    transition-property: transform;\n    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n    transition-duration: 150ms;\n}\n.transition-opacity {\n    transition-property: opacity;\n    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n    transition-duration: 150ms;\n}\n.duration-150 {\n    transition-duration: 150ms;\n}\n.duration-300 {\n    transition-duration: 300ms;\n}\n.duration-100 {\n    transition-duration: 100ms;\n}\n.duration-1000 {\n    transition-duration: 1000ms;\n}\n.ease-out {\n    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);\n}\n.ease-in-out {\n    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n}\n.ease-linear {\n    transition-timing-function: linear;\n}\n.scrollbar-hide {\n    -ms-overflow-style: none;\n    scrollbar-width: none;\n}\n.scrollbar-hide::-webkit-scrollbar {\n    display: none;\n}\n.before\\:absolute::before {\n    content: var(--tw-content);\n    position: absolute;\n}\n.before\\:top-\\[28px\\]::before {\n    content: var(--tw-content);\n    top: 28px;\n}\n.before\\:left-\\[9px\\]::before {\n    content: var(--tw-content);\n    left: 9px;\n}\n.before\\:top-\\[-6px\\]::before {\n    content: var(--tw-content);\n    top: -6px;\n}\n.before\\:left-\\[-6\\.5px\\]::before {\n    content: var(--tw-content);\n    left: -6.5px;\n}\n.before\\:top-0::before {\n    content: var(--tw-content);\n    top: 0px;\n}\n.before\\:left-\\[11\\.5px\\]::before {\n    content: var(--tw-content);\n    left: 11.5px;\n}\n.before\\:top-\\[-3px\\]::before {\n    content: var(--tw-content);\n    top: -3px;\n}\n.before\\:left-\\[-16\\.5px\\]::before {\n    content: var(--tw-content);\n    left: -16.5px;\n}\n.before\\:left-\\[16\\.5px\\]::before {\n    content: var(--tw-content);\n    left: 16.5px;\n}\n.before\\:h-\\[calc\\(100\\%-28px\\)\\]::before {\n    content: var(--tw-content);\n    height: calc(100% - 28px);\n}\n.before\\:h-full::before {\n    content: var(--tw-content);\n    height: 100%;\n}\n.before\\:h-\\[calc\\(100\\%\\+6px\\)\\]::before {\n    content: var(--tw-content);\n    height: calc(100% + 6px);\n}\n.before\\:border-y-0::before {\n    content: var(--tw-content);\n    border-top-width: 0rem;\n    border-bottom-width: 0rem;\n}\n.before\\:border-l-\\[1px\\]::before {\n    content: var(--tw-content);\n    border-left-width: 1px;\n}\n.before\\:border-r-\\[0px\\]::before {\n    content: var(--tw-content);\n    border-right-width: 0px;\n}\n.before\\:border-solid::before {\n    content: var(--tw-content);\n    border-style: solid;\n}\n.before\\:border-tone-4::before {\n    content: var(--tw-content);\n    border-color: var(--color-tone-4);\n}\n.before\\:content-\\[\\'\\'\\]::before {\n    --tw-content: '';\n    content: var(--tw-content);\n}\n.after\\:absolute::after {\n    content: var(--tw-content);\n    position: absolute;\n}\n.after\\:-top-\\[8px\\]::after {\n    content: var(--tw-content);\n    top: -8px;\n}\n.after\\:-left-\\[6\\.5px\\]::after {\n    content: var(--tw-content);\n    left: -6.5px;\n}\n.after\\:bottom-\\[15px\\]::after {\n    content: var(--tw-content);\n    bottom: 15px;\n}\n.after\\:left-\\[11\\.5px\\]::after {\n    content: var(--tw-content);\n    left: 11.5px;\n}\n.after\\:-top-sm::after {\n    content: var(--tw-content);\n    top: -0.75rem;\n}\n.after\\:left-\\[-16\\.5px\\]::after {\n    content: var(--tw-content);\n    left: -16.5px;\n}\n.after\\:left-\\[3\\.5px\\]::after {\n    content: var(--tw-content);\n    left: 3.5px;\n}\n.after\\:h-\\[20px\\]::after {\n    content: var(--tw-content);\n    height: 20px;\n}\n.after\\:h-\\[54px\\]::after {\n    content: var(--tw-content);\n    height: 54px;\n}\n.after\\:h-\\[26px\\]::after {\n    content: var(--tw-content);\n    height: 26px;\n}\n.after\\:h-\\[30px\\]::after {\n    content: var(--tw-content);\n    height: 30px;\n}\n.after\\:w-\\[6px\\]::after {\n    content: var(--tw-content);\n    width: 6px;\n}\n.after\\:w-md::after {\n    content: var(--tw-content);\n    width: 1rem;\n}\n.after\\:w-\\[23px\\]::after {\n    content: var(--tw-content);\n    width: 23px;\n}\n.after\\:rounded-bl-\\[12px\\]::after {\n    content: var(--tw-content);\n    border-bottom-left-radius: 12px;\n}\n.after\\:border-y-0::after {\n    content: var(--tw-content);\n    border-top-width: 0rem;\n    border-bottom-width: 0rem;\n}\n.after\\:border-l-\\[1px\\]::after {\n    content: var(--tw-content);\n    border-left-width: 1px;\n}\n.after\\:border-r-\\[0px\\]::after {\n    content: var(--tw-content);\n    border-right-width: 0px;\n}\n.after\\:border-b-\\[1px\\]::after {\n    content: var(--tw-content);\n    border-bottom-width: 1px;\n}\n.after\\:border-solid::after {\n    content: var(--tw-content);\n    border-style: solid;\n}\n.after\\:border-tone-4::after {\n    content: var(--tw-content);\n    border-color: var(--color-tone-4);\n}\n.after\\:content-\\[\\'\\'\\]::after {\n    --tw-content: '';\n    content: var(--tw-content);\n}\n.first\\:ml-0:first-child {\n    margin-left: 0px;\n}\n.visited\\:bg-transparent:visited {\n    background-color: transparent;\n}\n.hover\\:border-secondary-background-selected:hover {\n    border-color: var(--color-secondary-background-selected);\n}\n.hover\\:border-secondary-background-hover:hover {\n    border-color: var(--color-secondary-background-hover);\n}\n.hover\\:bg-neutral-background-hover:hover {\n    background-color: var(--color-neutral-background-hover);\n}\n.hover\\:bg-transparent:hover {\n    background-color: transparent;\n}\n.hover\\:bg-secondary-background-selected:hover {\n    background-color: var(--color-secondary-background-selected);\n}\n.hover\\:bg-secondary-background-hover:hover {\n    background-color: var(--color-secondary-background-hover);\n}\n.hover\\:bg-transparent-background-hover:hover {\n    background-color: var(--color-transparent-background-hover);\n}\n.hover\\:bg-brand-background-hover:hover {\n    background-color: var(--color-brand-background-hover);\n}\n.hover\\:text-secondary:hover {\n    color: var(--color-secondary);\n}\n.hover\\:text-global-white:hover {\n    color: var(--color-global-white);\n}\n.hover\\:text-action-upvote:hover {\n    color: var(--color-action-upvote);\n}\n.hover\\:text-action-downvote:hover {\n    color: var(--color-action-downvote);\n}\n.hover\\:underline:hover {\n    text-decoration-line: underline;\n}\n.hover\\:no-underline:hover {\n    text-decoration-line: none;\n}\n.focus\\:rounded-sm:focus {\n    border-radius: 0.25rem;\n}\n.focus\\:border-global-focus:focus {\n    border-color: var(--color-global-focus);\n}\n.focus\\:bg-transparent:focus {\n    background-color: transparent;\n}\n.focus\\:outline-none:focus {\n    outline: 2px solid transparent;\n    outline-offset: 2px;\n}\n.focus-visible\\:text-action-upvote:focus-visible {\n    color: var(--color-action-upvote);\n}\n.focus-visible\\:text-action-downvote:focus-visible {\n    color: var(--color-action-downvote);\n}\n.active\\:bg-transparent:active {\n    background-color: transparent;\n}\n.active\\:bg-secondary-background:active {\n    background-color: var(--color-secondary-background);\n}\n.disabled\\:text-interactive-content-disabled:disabled {\n    color: var(--color-interactive-content-disabled);\n}\n", ""]), t.a = o
 		},
 		"./node_modules/css-loader/dist/runtime/api.js": function(n, t, r) {
 			"use strict";
@@ -410,13 +271,13 @@
 								e = n[3];
 							if (!e) return r;
 							if (t && "function" == typeof btoa) {
-								var o = (i = e, l = btoa(unescape(encodeURIComponent(JSON.stringify(i)))), d = "sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(l), "/*# ".concat(d, " */")),
+								var o = (i = e, l = btoa(unescape(encodeURIComponent(JSON.stringify(i)))), c = "sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(l), "/*# ".concat(c, " */")),
 									a = e.sources.map((function(n) {
 										return "/*# sourceURL=".concat(e.sourceRoot || "").concat(n, " */")
 									}));
 								return [r].concat(a).concat([o]).join("\n")
 							}
-							var i, l, d;
+							var i, l, c;
 							return [r].join("\n")
 						}(t, n);
 						return t[2] ? "@media ".concat(t[2], " {").concat(r, "}") : r
@@ -432,8 +293,8 @@
 							null != i && (o[i] = !0)
 						}
 					for (var l = 0; l < n.length; l++) {
-						var d = [].concat(n[l]);
-						e && o[d[0]] || (r && (d[2] ? d[2] = "".concat(r, " and ").concat(d[2]) : d[2] = r), t.push(d))
+						var c = [].concat(n[l]);
+						e && o[c[0]] || (r && (c[2] ? c[2] = "".concat(r, " and ").concat(c[2]) : c[2] = r), t.push(c))
 					}
 				}, t
 			}
@@ -497,13 +358,13 @@
 					createHTML: n => n
 				}) : void 0,
 				l = `lit$${(Math.random()+"").slice(9)}$`,
-				d = "?" + l,
-				s = `<${d}>`,
-				c = document,
-				u = (n = "") => c.createComment(n),
+				c = "?" + l,
+				s = `<${c}>`,
+				d = document,
+				u = (n = "") => d.createComment(n),
 				b = n => null === n || "object" != typeof n && "function" != typeof n,
-				h = Array.isArray,
-				p = n => h(n) || "function" == typeof(null == n ? void 0 : n[Symbol.iterator]),
+				p = Array.isArray,
+				h = n => p(n) || "function" == typeof(null == n ? void 0 : n[Symbol.iterator]),
 				v = /<(?:(!--|\/[^a-zA-Z])|(\/?[a-zA-Z][^>\s]*)|(\/?$))/g,
 				g = /-->/g,
 				m = />/g,
@@ -531,25 +392,25 @@
 					}
 					return i._$AI(n), i
 				},
-				j = c.createTreeWalker(c, 129, null, !1),
-				C = (n, t) => {
+				C = d.createTreeWalker(d, 129, null, !1),
+				j = (n, t) => {
 					const r = n.length - 1,
 						e = [];
 					let o, a = 2 === t ? "<svg>" : "",
-						d = v;
+						c = v;
 					for (let i = 0; i < r; i++) {
 						const t = n[i];
-						let r, c, u = -1,
+						let r, d, u = -1,
 							b = 0;
-						for (; b < t.length && (d.lastIndex = b, null !== (c = d.exec(t)));) b = d.lastIndex, d === v ? "!--" === c[1] ? d = g : void 0 !== c[1] ? d = m : void 0 !== c[2] ? (y.test(c[2]) && (o = RegExp("</" + c[2], "g")), d = f) : void 0 !== c[3] && (d = f) : d === f ? ">" === c[0] ? (d = null != o ? o : v, u = -1) : void 0 === c[1] ? u = -2 : (u = d.lastIndex - c[2].length, r = c[1], d = void 0 === c[3] ? f : '"' === c[3] ? x : w) : d === x || d === w ? d = f : d === g || d === m ? d = v : (d = f, o = void 0);
-						const h = d === f && n[i + 1].startsWith("/>") ? " " : "";
-						a += d === v ? t + s : u >= 0 ? (e.push(r), t.slice(0, u) + "$lit$" + t.slice(u) + l + h) : t + l + (-2 === u ? (e.push(void 0), i) : h)
+						for (; b < t.length && (c.lastIndex = b, null !== (d = c.exec(t)));) b = c.lastIndex, c === v ? "!--" === d[1] ? c = g : void 0 !== d[1] ? c = m : void 0 !== d[2] ? (y.test(d[2]) && (o = RegExp("</" + d[2], "g")), c = f) : void 0 !== d[3] && (c = f) : c === f ? ">" === d[0] ? (c = null != o ? o : v, u = -1) : void 0 === d[1] ? u = -2 : (u = c.lastIndex - d[2].length, r = d[1], c = void 0 === d[3] ? f : '"' === d[3] ? x : w) : c === x || c === w ? c = f : c === g || c === m ? c = v : (c = f, o = void 0);
+						const p = c === f && n[i + 1].startsWith("/>") ? " " : "";
+						a += c === v ? t + s : u >= 0 ? (e.push(r), t.slice(0, u) + "$lit$" + t.slice(u) + l + p) : t + l + (-2 === u ? (e.push(void 0), i) : p)
 					}
-					const c = a + (n[r] || "<?>") + (2 === t ? "</svg>" : "");
+					const d = a + (n[r] || "<?>") + (2 === t ? "</svg>" : "");
 					if (!Array.isArray(n) || !n.hasOwnProperty("raw")) throw Error("invalid template strings array");
-					return [void 0 !== i ? i.createHTML(c) : c, e]
+					return [void 0 !== i ? i.createHTML(d) : d, e]
 				};
-			class O {
+			class P {
 				constructor({
 					strings: n,
 					_$litType$: t
@@ -559,31 +420,31 @@
 					let o = 0,
 						i = 0;
 					const s = n.length - 1,
-						c = this.parts,
-						[b, h] = C(n, t);
-					if (this.el = O.createElement(b, r), j.currentNode = this.el.content, 2 === t) {
+						d = this.parts,
+						[b, p] = j(n, t);
+					if (this.el = P.createElement(b, r), C.currentNode = this.el.content, 2 === t) {
 						const n = this.el.content,
 							t = n.firstChild;
 						t.remove(), n.append(...t.childNodes)
 					}
-					for (; null !== (e = j.nextNode()) && c.length < s;) {
+					for (; null !== (e = C.nextNode()) && d.length < s;) {
 						if (1 === e.nodeType) {
 							if (e.hasAttributes()) {
 								const n = [];
 								for (const t of e.getAttributeNames())
 									if (t.endsWith("$lit$") || t.startsWith(l)) {
-										const r = h[i++];
+										const r = p[i++];
 										if (n.push(t), void 0 !== r) {
 											const n = e.getAttribute(r.toLowerCase() + "$lit$").split(l),
 												t = /([.?@])?(.*)/.exec(r);
-											c.push({
+											d.push({
 												type: 1,
 												index: o,
 												name: t[2],
 												strings: n,
-												ctor: "." === t[1] ? N : "?" === t[1] ? M : "@" === t[1] ? L : H
+												ctor: "." === t[1] ? M : "?" === t[1] ? N : "@" === t[1] ? L : H
 											})
-										} else c.push({
+										} else d.push({
 											type: 6,
 											index: o
 										})
@@ -594,7 +455,7 @@
 									t = n.length - 1;
 								if (t > 0) {
 									e.textContent = a ? a.emptyScript : "";
-									for (let r = 0; r < t; r++) e.append(n[r], u()), j.nextNode(), c.push({
+									for (let r = 0; r < t; r++) e.append(n[r], u()), C.nextNode(), d.push({
 										type: 2,
 										index: ++o
 									});
@@ -602,13 +463,13 @@
 								}
 							}
 						} else if (8 === e.nodeType)
-							if (e.data === d) c.push({
+							if (e.data === c) d.push({
 								type: 2,
 								index: o
 							});
 							else {
 								let n = -1;
-								for (; - 1 !== (n = e.data.indexOf(l, n + 1));) c.push({
+								for (; - 1 !== (n = e.data.indexOf(l, n + 1));) d.push({
 									type: 7,
 									index: o
 								}), n += l.length - 1
@@ -616,17 +477,17 @@
 					}
 				}
 				static createElement(n, t) {
-					const r = c.createElement("template");
+					const r = d.createElement("template");
 					return r.innerHTML = n, r
 				}
 			}
 
-			function P(n, t, r = n, e) {
+			function O(n, t, r = n, e) {
 				var o, a, i, l;
 				if (t === A) return t;
-				let d = void 0 !== e ? null === (o = r._$Cl) || void 0 === o ? void 0 : o[e] : r._$Cu;
+				let c = void 0 !== e ? null === (o = r._$Cl) || void 0 === o ? void 0 : o[e] : r._$Cu;
 				const s = b(t) ? void 0 : t._$litDirective$;
-				return (null == d ? void 0 : d.constructor) !== s && (null === (a = null == d ? void 0 : d._$AO) || void 0 === a || a.call(d, !1), void 0 === s ? d = void 0 : (d = new s(n))._$AT(n, r, e), void 0 !== e ? (null !== (i = (l = r)._$Cl) && void 0 !== i ? i : l._$Cl = [])[e] = d : r._$Cu = d), void 0 !== d && (t = P(n, d._$AS(n, t.values), d, e)), t
+				return (null == c ? void 0 : c.constructor) !== s && (null === (a = null == c ? void 0 : c._$AO) || void 0 === a || a.call(c, !1), void 0 === s ? c = void 0 : (c = new s(n))._$AT(n, r, e), void 0 !== e ? (null !== (i = (l = r)._$Cl) && void 0 !== i ? i : l._$Cl = [])[e] = c : r._$Cu = c), void 0 !== c && (t = O(n, c._$AS(n, t.values), c, e)), t
 			}
 			class T {
 				constructor(n, t) {
@@ -645,18 +506,18 @@
 							content: r
 						},
 						parts: e
-					} = this._$AD, o = (null !== (t = null == n ? void 0 : n.creationScope) && void 0 !== t ? t : c).importNode(r, !0);
-					j.currentNode = o;
-					let a = j.nextNode(),
+					} = this._$AD, o = (null !== (t = null == n ? void 0 : n.creationScope) && void 0 !== t ? t : d).importNode(r, !0);
+					C.currentNode = o;
+					let a = C.nextNode(),
 						i = 0,
 						l = 0,
-						d = e[0];
-					for (; void 0 !== d;) {
-						if (i === d.index) {
+						c = e[0];
+					for (; void 0 !== c;) {
+						if (i === c.index) {
 							let t;
-							2 === d.type ? t = new U(a, a.nextSibling, this, n) : 1 === d.type ? t = new d.ctor(a, d.name, d.strings, this, n) : 6 === d.type && (t = new B(a, this, n)), this.v.push(t), d = e[++l]
+							2 === c.type ? t = new U(a, a.nextSibling, this, n) : 1 === c.type ? t = new c.ctor(a, c.name, c.strings, this, n) : 6 === c.type && (t = new B(a, this, n)), this.v.push(t), c = e[++l]
 						}
-						i !== (null == d ? void 0 : d.index) && (a = j.nextNode(), i++)
+						i !== (null == c ? void 0 : c.index) && (a = C.nextNode(), i++)
 					}
 					return o
 				}
@@ -686,7 +547,7 @@
 					return this._$AB
 				}
 				_$AI(n, t = this) {
-					n = P(this, n, t), b(n) ? n === S || null == n || "" === n ? (this._$AH !== S && this._$AR(), this._$AH = S) : n !== this._$AH && n !== A && this.$(n) : void 0 !== n._$litType$ ? this.T(n) : void 0 !== n.nodeType ? this.k(n) : p(n) ? this.O(n) : this.$(n)
+					n = O(this, n, t), b(n) ? n === S || null == n || "" === n ? (this._$AH !== S && this._$AR(), this._$AH = S) : n !== this._$AH && n !== A && this.$(n) : void 0 !== n._$litType$ ? this.T(n) : void 0 !== n.nodeType ? this.k(n) : h(n) ? this.O(n) : this.$(n)
 				}
 				S(n, t = this._$AB) {
 					return this._$AA.parentNode.insertBefore(n, t)
@@ -695,14 +556,14 @@
 					this._$AH !== n && (this._$AR(), this._$AH = this.S(n))
 				}
 				$(n) {
-					this._$AH !== S && b(this._$AH) ? this._$AA.nextSibling.data = n : this.k(c.createTextNode(n)), this._$AH = n
+					this._$AH !== S && b(this._$AH) ? this._$AA.nextSibling.data = n : this.k(d.createTextNode(n)), this._$AH = n
 				}
 				T(n) {
 					var t;
 					const {
 						values: r,
 						_$litType$: e
-					} = n, o = "number" == typeof e ? this._$AC(n) : (void 0 === e.el && (e.el = O.createElement(e.h, this.options)), e);
+					} = n, o = "number" == typeof e ? this._$AC(n) : (void 0 === e.el && (e.el = P.createElement(e.h, this.options)), e);
 					if ((null === (t = this._$AH) || void 0 === t ? void 0 : t._$AD) === o) this._$AH.m(r);
 					else {
 						const n = new T(o, this),
@@ -712,10 +573,10 @@
 				}
 				_$AC(n) {
 					let t = E.get(n.strings);
-					return void 0 === t && E.set(n.strings, t = new O(n)), t
+					return void 0 === t && E.set(n.strings, t = new P(n)), t
 				}
 				O(n) {
-					h(this._$AH) || (this._$AH = [], this._$AR());
+					p(this._$AH) || (this._$AH = [], this._$AR());
 					const t = this._$AH;
 					let r, e = 0;
 					for (const o of n) e === t.length ? t.push(r = new U(this.S(u()), this.S(u()), this, this.options)) : r = t[e], r._$AI(o), e++;
@@ -746,11 +607,11 @@
 				_$AI(n, t = this, r, e) {
 					const o = this.strings;
 					let a = !1;
-					if (void 0 === o) n = P(this, n, t, 0), (a = !b(n) || n !== this._$AH && n !== A) && (this._$AH = n);
+					if (void 0 === o) n = O(this, n, t, 0), (a = !b(n) || n !== this._$AH && n !== A) && (this._$AH = n);
 					else {
 						const e = n;
 						let i, l;
-						for (n = o[0], i = 0; i < o.length - 1; i++)(l = P(this, e[r + i], t, i)) === A && (l = this._$AH[i]), a || (a = !b(l) || l !== this._$AH[i]), l === S ? n = S : n !== S && (n += (null != l ? l : "") + o[i + 1]), this._$AH[i] = l
+						for (n = o[0], i = 0; i < o.length - 1; i++)(l = O(this, e[r + i], t, i)) === A && (l = this._$AH[i]), a || (a = !b(l) || l !== this._$AH[i]), l === S ? n = S : n !== S && (n += (null != l ? l : "") + o[i + 1]), this._$AH[i] = l
 					}
 					a && !e && this.P(n)
 				}
@@ -758,7 +619,7 @@
 					n === S ? this.element.removeAttribute(this.name) : this.element.setAttribute(this.name, null != n ? n : "")
 				}
 			}
-			class N extends H {
+			class M extends H {
 				constructor() {
 					super(...arguments), this.type = 3
 				}
@@ -767,7 +628,7 @@
 				}
 			}
 			const R = a ? a.emptyScript : "";
-			class M extends H {
+			class N extends H {
 				constructor() {
 					super(...arguments), this.type = 4
 				}
@@ -781,7 +642,7 @@
 				}
 				_$AI(n, t = this) {
 					var r;
-					if ((n = null !== (r = P(this, n, t, 0)) && void 0 !== r ? r : S) === A) return;
+					if ((n = null !== (r = O(this, n, t, 0)) && void 0 !== r ? r : S) === A) return;
 					const e = this._$AH,
 						o = n === S && e !== S || n.capture !== e.capture || n.once !== e.once || n.passive !== e.passive,
 						a = n !== S && (e === S || o);
@@ -800,27 +661,27 @@
 					return this._$AM._$AU
 				}
 				_$AI(n) {
-					P(this, n)
+					O(this, n)
 				}
 			}
 			const I = {
 					A: "$lit$",
 					M: l,
-					C: d,
+					C: c,
 					L: 1,
-					R: C,
+					R: j,
 					D: T,
-					V: p,
-					I: P,
+					V: h,
+					I: O,
 					H: U,
 					N: H,
-					U: M,
+					U: N,
 					B: L,
-					F: N,
+					F: M,
 					W: B
 				},
 				D = o.litHtmlPolyfillSupport;
-			null == D || D(O, U), (null !== (e = o.litHtmlVersions) && void 0 !== e ? e : o.litHtmlVersions = []).push("2.3.1")
+			null == D || D(P, U), (null !== (e = o.litHtmlVersions) && void 0 !== e ? e : o.litHtmlVersions = []).push("2.3.1")
 		},
 		"./node_modules/lit/decorators.js": function(n, t, r) {
 			"use strict";
@@ -831,7 +692,7 @@
 			})), r.d(t, "d", (function() {
 				return i
 			})), r.d(t, "c", (function() {
-				return d
+				return c
 			}));
 			const e = n => t => "function" == typeof t ? ((n, t) => (customElements.define(n, t), t))(n, t) : ((n, t) => {
 					const {
@@ -902,7 +763,7 @@
 				}
 			};
 
-			function d(n, t) {
+			function c(n, t) {
 				return l({
 					descriptor: r => {
 						const e = {
@@ -961,7 +822,7 @@
 		"./node_modules/lit/index.js": function(n, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
-				return d
+				return c
 			})), r.d(t, "c", (function() {
 				return k.b
 			})), r.d(t, "d", (function() {
@@ -997,7 +858,7 @@
 					return this.cssText
 				}
 			}
-			const d = (n, ...t) => {
+			const c = (n, ...t) => {
 					const r = 1 === n.length ? n[0] : t.reduce((t, r, e) => t + (n => {
 						if (!0 === n._$cssResult$) return n.cssText;
 						if ("number" == typeof n) return n;
@@ -1012,21 +873,21 @@
 						void 0 !== o && r.setAttribute("nonce", o), r.textContent = t.cssText, n.appendChild(r)
 					})
 				},
-				c = o ? n => n : n => n instanceof CSSStyleSheet ? (n => {
+				d = o ? n => n : n => n instanceof CSSStyleSheet ? (n => {
 					let t = "";
 					for (const r of n.cssRules) t += r.cssText;
 					return (n => new l("string" == typeof n ? n : n + "", void 0, a))(t)
 				})(n) : n;
 			var u;
 			const b = window,
-				h = b.trustedTypes,
-				p = h ? h.emptyScript : "",
+				p = b.trustedTypes,
+				h = p ? p.emptyScript : "",
 				v = b.reactiveElementPolyfillSupport,
 				g = {
 					toAttribute(n, t) {
 						switch (t) {
 							case Boolean:
-								n = n ? p : null;
+								n = n ? h : null;
 								break;
 							case Object:
 							case Array:
@@ -1116,8 +977,8 @@
 					const t = [];
 					if (Array.isArray(n)) {
 						const r = new Set(n.flat(1 / 0).reverse());
-						for (const n of r) t.unshift(c(n))
-					} else void 0 !== n && t.push(c(n));
+						for (const n of r) t.unshift(d(n))
+					} else void 0 !== n && t.push(d(n));
 					return t
 				}
 				static _$Ep(n, t) {
@@ -1296,19 +1157,19 @@
 			})), r.d(t, "h", (function() {
 				return l
 			})), r.d(t, "e", (function() {
-				return d
+				return c
 			})), r.d(t, "j", (function() {
 				return s
 			})), r.d(t, "n", (function() {
-				return c
+				return d
 			})), r.d(t, "k", (function() {
 				return u
 			})), r.d(t, "m", (function() {
 				return b
 			})), r.d(t, "d", (function() {
-				return h
-			})), r.d(t, "b", (function() {
 				return p
+			})), r.d(t, "b", (function() {
+				return h
 			})), r.d(t, "c", (function() {
 				return v
 			})), r.d(t, "f", (function() {
@@ -1362,11 +1223,11 @@
 				return a > 3 && i && Object.defineProperty(t, r, i), i
 			}
 
-			function d(n, t, r, e) {
+			function c(n, t, r, e) {
 				return new(r || (r = Promise))((function(o, a) {
 					function i(n) {
 						try {
-							d(e.next(n))
+							c(e.next(n))
 						} catch (t) {
 							a(t)
 						}
@@ -1374,19 +1235,19 @@
 
 					function l(n) {
 						try {
-							d(e.throw(n))
+							c(e.throw(n))
 						} catch (t) {
 							a(t)
 						}
 					}
 
-					function d(n) {
+					function c(n) {
 						var t;
 						n.done ? o(n.value) : (t = n.value, t instanceof r ? t : new r((function(n) {
 							n(t)
 						}))).then(i, l)
 					}
-					d((e = e.apply(n, t || [])).next())
+					c((e = e.apply(n, t || [])).next())
 				}))
 			}
 
@@ -1467,7 +1328,7 @@
 			}
 			Object.create;
 
-			function c(n) {
+			function d(n) {
 				var t = "function" == typeof Symbol && Symbol.iterator,
 					r = t && n[t],
 					e = 0;
@@ -1511,11 +1372,11 @@
 				return n.concat(e || t)
 			}
 
-			function h(n) {
-				return this instanceof h ? (this.v = n, this) : new h(n)
+			function p(n) {
+				return this instanceof p ? (this.v = n, this) : new p(n)
 			}
 
-			function p(n, t, r) {
+			function h(n, t, r) {
 				if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
 				var e, o = r.apply(n, t || []),
 					a = [];
@@ -1533,14 +1394,14 @@
 
 				function l(n, t) {
 					try {
-						(r = o[n](t)).value instanceof h ? Promise.resolve(r.value.v).then(d, s) : c(a[0][2], r)
+						(r = o[n](t)).value instanceof p ? Promise.resolve(r.value.v).then(c, s) : d(a[0][2], r)
 					} catch (e) {
-						c(a[0][3], e)
+						d(a[0][3], e)
 					}
 					var r
 				}
 
-				function d(n) {
+				function c(n) {
 					l("next", n)
 				}
 
@@ -1548,7 +1409,7 @@
 					l("throw", n)
 				}
 
-				function c(n, t) {
+				function d(n, t) {
 					n(t), a.shift(), a.length && l(a[0][0], a[0][1])
 				}
 			}
@@ -1556,7 +1417,7 @@
 			function v(n) {
 				if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
 				var t, r = n[Symbol.asyncIterator];
-				return r ? r.call(n) : (n = c(n), t = {}, e("next"), e("throw"), e("return"), t[Symbol.asyncIterator] = function() {
+				return r ? r.call(n) : (n = d(n), t = {}, e("next"), e("throw"), e("return"), t[Symbol.asyncIterator] = function() {
 					return this
 				}, t);
 
@@ -1592,4 +1453,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~mod-nav~shreddit-player.12b6aca94b429d9425a0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~mod-nav~shreddit-player.f6a700a1ac25f2b2bf5a.js.map
