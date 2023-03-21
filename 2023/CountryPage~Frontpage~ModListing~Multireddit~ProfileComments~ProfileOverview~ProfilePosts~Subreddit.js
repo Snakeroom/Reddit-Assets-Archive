@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.6a3d1f650599f7f96cbe.js
-// Retrieved at 3/16/2023, 4:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.f49421e9ac3cb3499803.js
+// Retrieved at 3/21/2023, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit"], {
 		"./src/reddit/actions/subreddit/muting.ts": function(e, t, n) {
@@ -1904,7 +1904,7 @@
 				const t = Object(o.f)().getState(),
 					n = Object(f.a)(t, Object(i.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === p.hd.GreyRereddit || e.d2xPdpSideRailRecsVariant === p.hd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === p.hd.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === p.id.GreyRereddit || e.d2xPdpSideRailRecsVariant === p.id.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === p.id.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(E, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -2633,7 +2633,7 @@
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: s.I
-				}) === s.Od
+				}) === s.Pd
 			}
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, n) {
@@ -2692,4 +2692,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.6a3d1f650599f7f96cbe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.f49421e9ac3cb3499803.js.map

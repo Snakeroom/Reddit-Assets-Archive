@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.eeb34086f08a9ca080c5.js
-// Retrieved at 3/16/2023, 4:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.9b2da1d4bc1da0609f64.js
+// Retrieved at 3/21/2023, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./src/lib/LiveChatActiveUsers/index.m.less": function(e, t, s) {
@@ -2341,7 +2341,7 @@
 			const b = Object(u.a)(e => Object(p.c)(e, {
 				experimentEligibilitySelector: p.a,
 				experimentName: m.xc
-			}), e => e === m.Od);
+			}), e => e === m.Pd);
 			var h = s("./node_modules/fbt/lib/FbtPublic.js"),
 				x = s("./src/lib/classNames/index.ts"),
 				f = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
@@ -3817,4 +3817,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.eeb34086f08a9ca080c5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.9b2da1d4bc1da0609f64.js.map

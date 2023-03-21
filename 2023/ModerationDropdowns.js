@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.2090f4eca4c954b45ea4.js
-// Retrieved at 3/16/2023, 4:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.fc2dca51a4fdddde8f18.js
+// Retrieved at 3/21/2023, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, n) {
@@ -660,8 +660,8 @@
 						onRemovePost: M,
 						onModToMemberShareOpened: F,
 						onSpamPost: A,
-						onStickyPost: W,
-						onSpoilerPost: B,
+						onStickyPost: B,
+						onSpoilerPost: W,
 						post: H
 					} = e;
 					var V, G, U, K, Z;
@@ -714,7 +714,7 @@
 						onClick: F
 					}, s.a.createElement(S.f, null)), !H.isRemoved && !H.isSpam && !d && s.a.createElement(g.a, {
 						isSelected: H.isStickied,
-						onClick: W,
+						onClick: B,
 						text: k.fbt._("Sticky post", null, {
 							hk: "3uXoIh"
 						})
@@ -766,7 +766,7 @@
 						onClick: C
 					}, s.a.createElement(S.d, null)), s.a.createElement(g.a, {
 						isSelected: H.isSpoiler,
-						onClick: B,
+						onClick: W,
 						text: k.fbt._("Mark as spoiler", null, {
 							hk: "3ef0MU"
 						})
@@ -776,8 +776,8 @@
 						moderator: !0
 					}))
 				};
-			var W = n("./src/reddit/components/PostModModeDropdown/_PostModModeDropdown.m.less"),
-				B = n.n(W);
+			var B = n("./src/reddit/components/PostModModeDropdown/_PostModModeDropdown.m.less"),
+				W = n.n(B);
 			const H = Object(x.v)({
 					isProfilePage: x.L,
 					pageLayer: e => e
@@ -859,7 +859,7 @@
 					L = I ? a.J.NONE : a.J.MODERATOR,
 					R = Object(p.b)(y.id, c);
 				return s.a.createElement(U, {
-					className: B.a.dropdown,
+					className: W.a.dropdown,
 					isOpen: r,
 					tooltipId: F
 				}, s.a.createElement(A, {
@@ -1350,9 +1350,9 @@
 				r = n("./src/reddit/selectors/user.ts");
 			const i = (e, t) => t && Object(s.c)(e, {
 				experimentEligibilitySelector: r.S,
-				experimentName: o.zf
-			}) === o.Od
+				experimentName: o.Bf
+			}) === o.Pd
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.2090f4eca4c954b45ea4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.fc2dca51a4fdddde8f18.js.map
