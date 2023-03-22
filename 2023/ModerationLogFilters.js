@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationLogFilters.d32273285a07e487d38a.js
-// Retrieved at 2/23/2023, 2:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationLogFilters.ccf3fcf8caa414405bc0.js
+// Retrieved at 3/22/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationLogFilters"], {
 		"./src/reddit/components/CCM/ModerationLog/Filters/ActionsDropdown/ActionsTreeFilter/ActionBranch/index.m.less": function(e, t, a) {
@@ -762,7 +762,7 @@
 					className: N.a.dropdownContent,
 					moderatorNames: t,
 					onApply: e => {
-						n(e), i(Object(p.e)())
+						n(e), i(Object(p.f)())
 					},
 					onClose: g,
 					subredditId: a
@@ -1144,4 +1144,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationLogFilters.d32273285a07e487d38a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationLogFilters.ccf3fcf8caa414405bc0.js.map
