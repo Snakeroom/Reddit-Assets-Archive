@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.a56d8e5980a9a8804982.js
-// Retrieved at 3/20/2023, 10:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.4e3aaa902152b38b8c78.js
+// Retrieved at 3/22/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -9560,7 +9560,8 @@
 			}, Qe = Object(M.a)({
 				isEmbedded: ie.g,
 				iconMembers: (e, t) => Object(le.w)(e, t.channelId),
-				isFullSize: ie.h
+				isFullSize: ie.h,
+				isChatSwitcherEnabled: Ne.a
 			}), Ye = Object(c.b)(Qe, e => ({
 				minimize: () => {
 					e(Object(o.sizeChanged)(_e.a.MINIMIZED)), e(Object(u.x)())
@@ -9592,61 +9593,62 @@
 							className: n,
 							dropdownId: a,
 							isEmbedded: c,
-							minimize: o,
-							showMenu: i,
-							subTitle: l,
-							title: d,
-							channelType: u,
-							iconMembers: m,
-							toggleSidebar: p,
-							showMembers: b,
-							isFullSize: g,
-							hasWarning: f,
-							withBorder: E
+							isChatSwitcherEnabled: o,
+							minimize: i,
+							showMenu: l,
+							subTitle: d,
+							title: u,
+							channelType: m,
+							iconMembers: p,
+							toggleSidebar: b,
+							showMembers: g,
+							isFullSize: f,
+							hasWarning: E,
+							withBorder: v
 						},
-						showChannelNameInput: v
+						showChannelNameInput: O
 					} = this;
 					return s.a.createElement("nav", {
 						className: Object(r.a)(ze.a.Nav, {
-							[ze.a.isFullSize]: g,
-							[ze.a.withBorder]: E
+							[ze.a.isFullSize]: f,
+							[ze.a.withBorder]: v
 						}, n)
 					}, s.a.createElement(Ce.d, {
-						onClick: p,
+						onClick: b,
 						className: Object(r.a)(ze.a.IconButton, {
-							[ze.a.isFullSize]: g
+							[ze.a.isFullSize]: f
 						})
 					}, s.a.createElement(We.a, {
 						className: ze.a.ArrowLeft
 					})), s.a.createElement("span", {
-						onClick: c ? Object(Ve.b)(o) : void 0,
+						onClick: c && !o ? Object(Ve.b)(i) : void 0,
 						className: Object(r.a)(ze.a.TitleWrapper, {
 							[ze.a.embed]: c
 						})
-					}, b && m && m.firstUser && s.a.createElement(h.a, {
+					}, g && p && p.firstUser && s.a.createElement(h.a, {
 						className: Object(r.a)(ze.a.ChatIcon, {
-							[ze.a.isFullSize]: g
+							[ze.a.isFullSize]: f
 						}),
-						userId: m.firstUser.id,
-						secondUserId: null === (e = m.secondUser) || void 0 === e ? void 0 : e.id
-					}), t && void 0 !== u ? s.a.createElement(Ze, {
-						userName: d,
+						userId: p.firstUser.id,
+						secondUserId: null === (e = p.secondUser) || void 0 === e ? void 0 : e.id
+					}), t && void 0 !== m ? s.a.createElement(Ze, {
+						userName: u,
 						channelId: t,
-						channelType: u
+						channelType: m
 					}) : s.a.createElement("span", {
 						className: ze.a.Title
-					}, d), s.a.createElement("span", {
+					}, u), s.a.createElement("span", {
 						className: Object(r.a)(ze.a.SubTitle, {
-							[ze.a.isWarning]: f
+							[ze.a.isWarning]: E
 						})
-					}, l)), s.a.createElement(ke, {
+					}, d)), s.a.createElement(ke, {
 						channelId: t,
-						toggleChannelNameInput: v,
-						showMenu: !!i,
+						toggleChannelNameInput: O,
+						showMenu: !!l,
 						dropdownId: a
-					}), t && d && s.a.createElement(Ge, {
+					}), t && u && s.a.createElement(Ge, {
 						channelId: t,
-						name: d
+						name: u
 					}))
 				}
 			}
@@ -9924,8 +9926,10 @@
 				const s = Object(r.e)(F.q),
 					i = Object(r.e)(b.a),
 					l = Object(r.e)(b.b),
-					d = Object(r.e)(p.a) === u.a.MINIMIZED,
-					h = c.a.createElement(t, null, c.a.createElement(o.d, {
+					d = Object(r.e)(p.i),
+					h = Object(r.e)(p.a) === u.a.MINIMIZED,
+					m = i && !h && !d,
+					g = c.a.createElement(t, null, c.a.createElement(o.d, {
 						component: e => c.a.createElement(A, null, c.a.createElement(o.f, {
 							location: e.location
 						}, n))
@@ -9934,15 +9938,15 @@
 					className: O.a
 				}, c.a.createElement("div", {
 					className: V.a.chatWindowContent
-				}, i && !d && c.a.createElement(v, null), !l && c.a.createElement("div", {
+				}, m && c.a.createElement(v, null), !l && c.a.createElement("div", {
 					className: V.a.chatApp
-				}, h), c.a.createElement(B, {
+				}, g), !d && c.a.createElement(B, {
 					className: Object(a.a)(V.a.chatApp, {
 						[V.a.hidden]: !l
 					})
 				}))) : c.a.createElement(H.a, {
 					className: O.a
-				}, h)
+				}, g)
 			}
 		},
 		"./src/chat/components/Scroller/index.m.less": function(e, t, n) {
@@ -18343,4 +18347,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.a56d8e5980a9a8804982.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.4e3aaa902152b38b8c78.js.map
