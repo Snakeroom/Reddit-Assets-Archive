@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.dc68cd426d3dd08c8b77.js
-// Retrieved at 3/21/2023, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.7b4020e118b7ff70b7bc.js
+// Retrieved at 3/23/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit~StandalonePostPage", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -28841,7 +28841,8 @@
 						userHasNft: o
 					} = e;
 					return e => {
-						const r = Object(a.a)(t.accountIcon);
+						const r = Object(a.a)(t.accountIcon),
+							i = (null == t ? void 0 : t.id) && (null == t ? void 0 : t.username);
 						return {
 							source: "profile",
 							action: "screen",
@@ -28850,10 +28851,10 @@
 							actionInfo: {
 								pageType: n
 							},
-							profile: {
+							profile: i ? {
 								id: t.id,
-								name: t.displayName
-							},
+								name: t.username
+							} : null,
 							snoovatar: {
 								snoovatarActive: r,
 								userHasNft: o
@@ -40202,4 +40203,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.dc68cd426d3dd08c8b77.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.7b4020e118b7ff70b7bc.js.map

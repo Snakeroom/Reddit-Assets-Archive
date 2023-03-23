@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.0bc36b2aa467ce9bbf78.js
-// Retrieved at 3/21/2023, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.a44717b49e95664e6cc2.js
+// Retrieved at 3/23/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -4383,7 +4383,8 @@
 						userHasNft: r
 					} = e;
 					return e => {
-						const o = Object(a.a)(t.accountIcon);
+						const o = Object(a.a)(t.accountIcon),
+							i = (null == t ? void 0 : t.id) && (null == t ? void 0 : t.username);
 						return {
 							source: "profile",
 							action: "screen",
@@ -4392,10 +4393,10 @@
 							actionInfo: {
 								pageType: n
 							},
-							profile: {
+							profile: i ? {
 								id: t.id,
-								name: t.displayName
-							},
+								name: t.username
+							} : null,
 							snoovatar: {
 								snoovatarActive: o,
 								userHasNft: r
@@ -5494,4 +5495,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.0bc36b2aa467ce9bbf78.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.a44717b49e95664e6cc2.js.map

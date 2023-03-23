@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.acd550237b0900744d35.js
-// Retrieved at 3/21/2023, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.9215d30b6cea3d626eaf.js
+// Retrieved at 3/23/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/avatarShareImages.ts": function(e, t, n) {
@@ -2865,7 +2865,8 @@
 						userHasNft: r
 					} = e;
 					return e => {
-						const o = Object(c.a)(t.accountIcon);
+						const o = Object(c.a)(t.accountIcon),
+							a = (null == t ? void 0 : t.id) && (null == t ? void 0 : t.username);
 						return {
 							source: "profile",
 							action: "screen",
@@ -2874,10 +2875,10 @@
 							actionInfo: {
 								pageType: n
 							},
-							profile: {
+							profile: a ? {
 								id: t.id,
-								name: t.displayName
-							},
+								name: t.username
+							} : null,
 							snoovatar: {
 								snoovatarActive: o,
 								userHasNft: r
@@ -3915,4 +3916,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.acd550237b0900744d35.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.9215d30b6cea3d626eaf.js.map
