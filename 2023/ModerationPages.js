@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.cedb4cc38d412541608c.js
-// Retrieved at 3/23/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.66d69be6761cd4fa1cfb.js
+// Retrieved at 3/23/2023, 6:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "ModQueuePages~reddit-components-MediumPost", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -39945,19 +39945,24 @@
 					d = Object(a.e)(e => Object(ve.X)(e, {
 						subredditId: o ? t.belongsTo.id : t.subredditId
 					})),
-					c = o && t.removedByCategory ? t.removedByCategory : null,
-					l = c ? Object(ge.b)(c) : "clear_fill",
-					u = t.bannedAtUTC ? (null === (n = t.bannedAtUTC) || void 0 === n ? void 0 : n.toString().length) > 10 ? t.bannedAtUTC / 1e3 : t.bannedAtUTC : null;
-				return i.a.createElement(i.a.Fragment, null, s ? i.a.createElement("div", {
+					c = Object(a.e)(e => {
+						var t, n, s, r;
+						return (null === (n = null === (t = e.user) || void 0 === t ? void 0 : t.account) || void 0 === n ? void 0 : n.isAdmin) || (null === (r = null === (s = e.user) || void 0 === s ? void 0 : s.account) || void 0 === r ? void 0 : r.isEmployee)
+					}),
+					l = o && t.removedByCategory ? t.removedByCategory : null,
+					u = l ? Object(ge.b)(l) : "clear_fill",
+					m = t.bannedAtUTC ? (null === (n = t.bannedAtUTC) || void 0 === n ? void 0 : n.toString().length) > 10 ? t.bannedAtUTC / 1e3 : t.bannedAtUTC : null,
+					p = ![E.g.AntiEvilOps, E.g.CommunityOps, E.g.ContentTakedown, E.g.CopyrightTakedown, E.g.Reddit].includes(l) || c;
+				return i.a.createElement(i.a.Fragment, null, s && p ? i.a.createElement("div", {
 					className: pe.a.userIconWrapper
 				}, i.a.createElement(Z.a, {
 					className: Object(P.a)(pe.a.userIcon),
-					iconUrl: null == s ? void 0 : s.accountIcon,
-					userName: null == s ? void 0 : s.username,
-					isNSFW: null == s ? void 0 : s.isNSFW
+					iconUrl: s.accountIcon,
+					userName: s.username,
+					isNSFW: s.isNSFW
 				})) : i.a.createElement(x.a, {
 					isFilled: !0,
-					name: l,
+					name: u,
 					className: Object(P.a)(pe.a.coloredIcon, pe.a.icon)
 				}), i.a.createElement("div", {
 					className: pe.a.statusText
@@ -39965,15 +39970,15 @@
 					className: pe.a.status
 				}, r.fbt._("Removed{spam}{reason}", [r.fbt._param("spam", t.isSpam ? " as spam" : ""), r.fbt._param("reason", t.modRemovalReason ? `: ${t.modRemovalReason}` : "")], {
 					hk: "3BGtSz"
-				})), i.a.createElement("p", null, (null == s ? void 0 : s.username) ? i.a.createElement(i.a.Fragment, null, i.a.createElement("a", {
+				})), i.a.createElement("p", null, p && (null == s ? void 0 : s.username) ? i.a.createElement(i.a.Fragment, null, i.a.createElement("a", {
 					className: pe.a.userlink,
 					href: `${X.a.redditUrl}/user/${s.username}`,
 					target: "_blank",
 					rel: "noopener noreferrer",
 					onClick: e => e.stopPropagation()
-				}, Object($.e)(s.username)), u && i.a.createElement(i.a.Fragment, null, " ", i.a.createElement(ue.d, {
-					seconds: u
-				}))) : c && Object(ge.e)(c, (null == s ? void 0 : s.username) || null, d.name))))
+				}, Object($.e)(s.username)), m && i.a.createElement(i.a.Fragment, null, " ", i.a.createElement(ue.d, {
+					seconds: m
+				}))) : l && Object(ge.e)(l, (null == s ? void 0 : s.username) || null, d.name))))
 			};
 			var Ee = n("./src/reddit/components/Reports/SnoozableReport/index.tsx"),
 				Oe = n("./src/reddit/components/RestrictedFlatlistButton/index.tsx"),
@@ -80412,4 +80417,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.cedb4cc38d412541608c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.66d69be6761cd4fa1cfb.js.map

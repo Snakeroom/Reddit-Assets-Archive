@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.b0628844c5d742cb1608.js
-// Retrieved at 3/23/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.17bdaba4e179f6583000.js
+// Retrieved at 3/23/2023, 6:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ModQueuePages~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -5052,19 +5052,24 @@
 					d = Object(a.e)(e => Object(xe.X)(e, {
 						subredditId: r ? t.belongsTo.id : t.subredditId
 					})),
-					c = r && t.removedByCategory ? t.removedByCategory : null,
-					l = c ? Object(Oe.b)(c) : "clear_fill",
-					m = t.bannedAtUTC ? (null === (s = t.bannedAtUTC) || void 0 === s ? void 0 : s.toString().length) > 10 ? t.bannedAtUTC / 1e3 : t.bannedAtUTC : null;
-				return i.a.createElement(i.a.Fragment, null, n ? i.a.createElement("div", {
+					c = Object(a.e)(e => {
+						var t, s, n, o;
+						return (null === (s = null === (t = e.user) || void 0 === t ? void 0 : t.account) || void 0 === s ? void 0 : s.isAdmin) || (null === (o = null === (n = e.user) || void 0 === n ? void 0 : n.account) || void 0 === o ? void 0 : o.isEmployee)
+					}),
+					l = r && t.removedByCategory ? t.removedByCategory : null,
+					m = l ? Object(Oe.b)(l) : "clear_fill",
+					u = t.bannedAtUTC ? (null === (s = t.bannedAtUTC) || void 0 === s ? void 0 : s.toString().length) > 10 ? t.bannedAtUTC / 1e3 : t.bannedAtUTC : null,
+					p = ![v.g.AntiEvilOps, v.g.CommunityOps, v.g.ContentTakedown, v.g.CopyrightTakedown, v.g.Reddit].includes(l) || c;
+				return i.a.createElement(i.a.Fragment, null, n && p ? i.a.createElement("div", {
 					className: pe.a.userIconWrapper
 				}, i.a.createElement(X.a, {
 					className: Object(w.a)(pe.a.userIcon),
-					iconUrl: null == n ? void 0 : n.accountIcon,
-					userName: null == n ? void 0 : n.username,
-					isNSFW: null == n ? void 0 : n.isNSFW
+					iconUrl: n.accountIcon,
+					userName: n.username,
+					isNSFW: n.isNSFW
 				})) : i.a.createElement(_.a, {
 					isFilled: !0,
-					name: l,
+					name: m,
 					className: Object(w.a)(pe.a.coloredIcon, pe.a.icon)
 				}), i.a.createElement("div", {
 					className: pe.a.statusText
@@ -5072,15 +5077,15 @@
 					className: pe.a.status
 				}, o.fbt._("Removed{spam}{reason}", [o.fbt._param("spam", t.isSpam ? " as spam" : ""), o.fbt._param("reason", t.modRemovalReason ? `: ${t.modRemovalReason}` : "")], {
 					hk: "3BGtSz"
-				})), i.a.createElement("p", null, (null == n ? void 0 : n.username) ? i.a.createElement(i.a.Fragment, null, i.a.createElement("a", {
+				})), i.a.createElement("p", null, p && (null == n ? void 0 : n.username) ? i.a.createElement(i.a.Fragment, null, i.a.createElement("a", {
 					className: pe.a.userlink,
 					href: `${Z.a.redditUrl}/user/${n.username}`,
 					target: "_blank",
 					rel: "noopener noreferrer",
 					onClick: e => e.stopPropagation()
-				}, Object($.e)(n.username)), m && i.a.createElement(i.a.Fragment, null, " ", i.a.createElement(me.d, {
-					seconds: m
-				}))) : c && Object(Oe.e)(c, (null == n ? void 0 : n.username) || null, d.name))))
+				}, Object($.e)(n.username)), u && i.a.createElement(i.a.Fragment, null, " ", i.a.createElement(me.d, {
+					seconds: u
+				}))) : l && Object(Oe.e)(l, (null == n ? void 0 : n.username) || null, d.name))))
 			};
 			var ve = s("./src/reddit/components/Reports/SnoozableReport/index.tsx"),
 				ge = s("./src/reddit/components/RestrictedFlatlistButton/index.tsx"),
@@ -9668,4 +9673,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.b0628844c5d742cb1608.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.17bdaba4e179f6583000.js.map
