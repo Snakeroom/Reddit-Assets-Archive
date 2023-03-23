@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.c9fd084b9df166b48b83.js
-// Retrieved at 3/21/2023, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.960ce77d05ac2ae27578.js
+// Retrieved at 3/23/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1413,7 +1413,7 @@
 				const t = Object(i.f)().getState(),
 					s = Object(g.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === m.id.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.id.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.id.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === m.jd.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.jd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.jd.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(j, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -3366,17 +3366,25 @@
 		},
 		"./src/reddit/selectors/experiments/antievil/index.tsx": function(e, t, s) {
 			"use strict";
-			s.d(t, "a", (function() {
+			s.d(t, "b", (function() {
 				return i
+			})), s.d(t, "a", (function() {
+				return o
 			}));
 			var n = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = e => {
-				return Object(r.c)(e, {
-					experimentEligibilitySelector: r.a,
-					experimentName: n.I
-				}) === n.Pd
-			}
+					return Object(r.c)(e, {
+						experimentEligibilitySelector: r.a,
+						experimentName: n.J
+					}) === n.Qd
+				},
+				o = e => {
+					return Object(r.c)(e, {
+						experimentEligibilitySelector: r.a,
+						experimentName: n.o
+					}) === n.Qd
+				}
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, s) {
 			"use strict";
@@ -3393,11 +3401,11 @@
 				d = s("./node_modules/reselect/es/index.js");
 			const c = Object(d.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(a.h)(e) && Object(i.f)(e),
-					experimentName: n.pc
+					experimentName: n.qc
 				}), o.a),
 				l = Object(d.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.h)(e) && Object(i.f)(e),
-					experimentName: n.oc
+					experimentName: n.pc
 				}), o.a),
 				u = Object(d.a)(c, l, (e, t) => e || t),
 				m = Object(d.a)(c, l, (e, t) => !(!e && !t))
@@ -3437,4 +3445,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.c9fd084b9df166b48b83.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.960ce77d05ac2ae27578.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8.5af7cc752c1418a95afc.js
-// Retrieved at 3/21/2023, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8.803a3677818572c51243.js
+// Retrieved at 3/23/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -349,8 +349,8 @@
 				A = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const O = e => Object(A.c)(e, {
 				experimentEligibilitySelector: A.a,
-				experimentName: H.Uc
-			}) === H.Pd;
+				experimentName: H.Vc
+			}) === H.Qd;
 			var j = s("./src/reddit/selectors/experiments/videoReactions.ts"),
 				D = s("./src/reddit/selectors/media.ts"),
 				U = s("./src/reddit/selectors/platform.ts"),
@@ -2749,14 +2749,14 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = s("./src/reddit/selectors/experiments/index.ts");
 			const n = e => Object(o.c)(e, {
-					experimentName: i.pb,
+					experimentName: i.qb,
 					experimentEligibilitySelector: a.e
-				}) === i.Pd,
+				}) === i.Qd,
 				r = e => Object(o.c)(e, {
-					experimentName: i.yc,
+					experimentName: i.zc,
 					experimentEligibilitySelector: o.a
-				}) === i.Pd
+				}) === i.Qd
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8.5af7cc752c1418a95afc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8.803a3677818572c51243.js.map

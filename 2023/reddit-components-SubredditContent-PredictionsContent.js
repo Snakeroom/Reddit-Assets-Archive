@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.90b9f05c2e5907874304.js
-// Retrieved at 3/13/2023, 6:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.10b2d34047deed60db2b.js
+// Retrieved at 3/23/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-PredictionsContent"], {
 		"./src/reddit/components/Econ/Prediction/hooks/useTournamentsQuery.ts": function(e, t, n) {
@@ -212,7 +212,7 @@
 					}(t, "allowPredictionContributors");
 				return void 0 === r ? null : c.a.createElement(p, null, c.a.createElement(h, null, o.fbt._("Predictions Submission Permissions", null, {
 					hk: "3rjmMV"
-				})), c.a.createElement(y.p, {
+				})), c.a.createElement(y.q, {
 					on: r,
 					onClick: () => {
 						n(Object(x.d)(!r)), a()
@@ -554,4 +554,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.90b9f05c2e5907874304.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.10b2d34047deed60db2b.js.map

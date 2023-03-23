@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.ba2fd694af93959fb999.js
-// Retrieved at 3/21/2023, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.d9f1db2ff46bf74911d3.js
+// Retrieved at 3/23/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -2160,7 +2160,7 @@
 				const t = Object(i.f)().getState(),
 					n = Object(_.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === m.id.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.id.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.id.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === m.jd.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.jd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.jd.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(O, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -3833,11 +3833,11 @@
 				c = n("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(a.h)(e) && Object(i.f)(e),
-					experimentName: s.pc
+					experimentName: s.qc
 				}), o.a),
 				l = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.h)(e) && Object(i.f)(e),
-					experimentName: s.oc
+					experimentName: s.pc
 				}), o.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -3850,4 +3850,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.ba2fd694af93959fb999.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.d9f1db2ff46bf74911d3.js.map

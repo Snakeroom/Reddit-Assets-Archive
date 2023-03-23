@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrowdControlModal.89ca856edfb8e9a9be33.js
-// Retrieved at 1/31/2023, 5:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrowdControlModal.7bc299af5bdffe511c7b.js
+// Retrieved at 3/23/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrowdControlModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -176,8 +176,8 @@
 					onClick: e.onCloseClicked
 				}, o.a.createElement(m.b, null))),
 				v = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				g = n("./src/reddit/components/MiniPost/index.tsx"),
-				E = n("./src/reddit/components/Settings/shared/Widgets.tsx");
+				E = n("./src/reddit/components/MiniPost/index.tsx"),
+				g = n("./src/reddit/components/Settings/shared/Widgets.tsx");
 			const w = {
 				0: {
 					key: "OFF",
@@ -219,11 +219,11 @@
 				} = e;
 				return o.a.createElement(m.l, {
 					className: k.a.main
-				}, o.a.createElement(m.n, null, t && o.a.createElement(g.a, {
+				}, o.a.createElement(m.n, null, t && o.a.createElement(E.a, {
 					postId: t.id,
 					showSubreddit: !0,
 					crowdControlPreview: !0
-				})), o.a.createElement(E.j, {
+				})), o.a.createElement(g.k, {
 					direction: "column",
 					inModal: !0,
 					ticks: w,
@@ -238,7 +238,7 @@
 					subtext: a.fbt._("{subText}", [a.fbt._param("subText", w[r].subText)], {
 						hk: "3ZFhAV"
 					})
-				}), o.a.createElement(E.p, {
+				}), o.a.createElement(g.q, {
 					className: k.a.filterToggle,
 					on: n,
 					onClick: d,
@@ -460,7 +460,7 @@
 				v = Object(s.b)(f, (e, t) => ({
 					openLightbox: t => e(Object(p.a)(t.permalink))
 				}));
-			class g extends o.a.PureComponent {
+			class E extends o.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onClickContainer = () => {
 						const {
@@ -535,7 +535,7 @@
 					}, Object(c.a)(t.created / 1e3, !0))))))
 				}
 			}
-			t.a = v(g)
+			t.a = v(E)
 		},
 		"./src/reddit/components/RichTextEditor/HoverTooltip/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -657,21 +657,21 @@
 		},
 		"./src/reddit/components/Settings/shared/Widgets.tsx": function(e, t, n) {
 			"use strict";
-			n.d(t, "n", (function() {
+			n.d(t, "o", (function() {
 				return Q
-			})), n.d(t, "k", (function() {
+			})), n.d(t, "l", (function() {
 				return J
-			})), n.d(t, "o", (function() {
+			})), n.d(t, "p", (function() {
 				return X
 			})), n.d(t, "f", (function() {
 				return $
-			})), n.d(t, "l", (function() {
-				return te
 			})), n.d(t, "m", (function() {
+				return te
+			})), n.d(t, "n", (function() {
 				return oe
-			})), n.d(t, "p", (function() {
+			})), n.d(t, "q", (function() {
 				return se
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "k", (function() {
 				return pe
 			})), n.d(t, "b", (function() {
 				return Ce
@@ -684,11 +684,13 @@
 			})), n.d(t, "i", (function() {
 				return ve
 			})), n.d(t, "c", (function() {
-				return ge
-			})), n.d(t, "e", (function() {
 				return Ee
+			})), n.d(t, "e", (function() {
+				return ge
 			})), n.d(t, "h", (function() {
 				return we
+			})), n.d(t, "j", (function() {
+				return _e
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var a = n("./node_modules/react/index.js"),
@@ -708,10 +710,10 @@
 				h = n("./src/lib/lessComponent.tsx"),
 				f = n("./src/reddit/icons/svgs/Dropdown/index.tsx"),
 				v = n("./src/reddit/controls/Select/index.m.less"),
-				g = n.n(v);
+				E = n.n(v);
 
-			function E() {
-				return (E = Object.assign || function(e) {
+			function g() {
+				return (g = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -719,9 +721,9 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const w = h.a.span("Wrapper", g.a),
-				_ = h.a.select("Inner", g.a),
-				k = h.a.wrapped(f.b, "Caret", g.a);
+			const w = h.a.span("Wrapper", E.a),
+				_ = h.a.select("Inner", E.a),
+				k = h.a.wrapped(f.b, "Caret", E.a);
 
 			function N(e) {
 				let {
@@ -734,9 +736,9 @@
 				} : {};
 				return r.a.createElement(w, {
 					className: t
-				}, r.a.createElement(_, E({
+				}, r.a.createElement(_, g({
 					className: n
-				}, a)), r.a.createElement(k, E({
+				}, a)), r.a.createElement(k, g({
 					isSubreddit: !0
 				}, o)))
 			}
@@ -769,8 +771,8 @@
 				V = h.a.h3("Label", G.a),
 				Q = h.a.wrapped(y.c, "Subtext", G.a),
 				z = h.a.wrapped(u.a, "HoverTooltip", G.a),
-				U = h.a.div("ControlContainer", G.a),
-				q = h.a.div("TextContainer", G.a),
+				q = h.a.div("ControlContainer", G.a),
+				U = h.a.div("TextContainer", G.a),
 				Y = h.a.div("ActionContainer", G.a),
 				J = e => {
 					let {
@@ -807,7 +809,7 @@
 					indent: e.indent,
 					isCreateCommunity: e.isCreateCommunity,
 					last: e.last
-				}, r.a.createElement(q, {
+				}, r.a.createElement(U, {
 					className: e.textContainerClassName
 				}, r.a.createElement(V, null, e.label, e.isRequired && r.a.createElement(W, null)), r.a.createElement(Q, null, e.subtext)), r.a.createElement(Y, null, e.children)),
 				ne = h.a.div("StyledFlair", G.a),
@@ -830,10 +832,10 @@
 						disabled: e.disabled,
 						indent: e.indent,
 						last: e.last
-					}, r.a.createElement(q, null, r.a.createElement(M.a, null, r.a.createElement("label", {
+					}, r.a.createElement(U, null, r.a.createElement(M.a, null, r.a.createElement("label", {
 						htmlFor: t,
 						className: e.labelClassname
-					}, r.a.createElement(V, null, e.label))), r.a.createElement(Q, null, e.subtext)), r.a.createElement(Y, null, r.a.createElement(U, null, e.tooltip && r.a.createElement(z, {
+					}, r.a.createElement(V, null, e.label))), r.a.createElement(Q, null, e.subtext)), r.a.createElement(Y, null, r.a.createElement(q, null, e.tooltip && r.a.createElement(z, {
 						tooltipContentClass: e.tooltipContentClassName,
 						text: e.tooltip
 					}), r.a.createElement(O.a, {
@@ -862,7 +864,7 @@
 						isNightModeOn: e.isNightModeOn,
 						direction: e.direction,
 						className: e.className
-					}, r.a.createElement(q, {
+					}, r.a.createElement(U, {
 						style: {
 							flex: 5
 						}
@@ -904,7 +906,7 @@
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, r.a.createElement(q, null, r.a.createElement(M.a, null, r.a.createElement(V, null, e.label)), r.a.createElement(Q, null, e.subtext)), r.a.createElement(Y, null, r.a.createElement(U, null, r.a.createElement(I.o, {
+				}, r.a.createElement(U, null, r.a.createElement(M.a, null, r.a.createElement(V, null, e.label)), r.a.createElement(Q, null, e.subtext)), r.a.createElement(Y, null, r.a.createElement(q, null, r.a.createElement(I.o, {
 					onClick: e.onClick
 				}, e.actionText)))),
 				be = e => r.a.createElement(J, {
@@ -912,7 +914,7 @@
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, r.a.createElement(q, null, r.a.createElement(K, {
+				}, r.a.createElement(U, null, r.a.createElement(K, {
 					href: e.link,
 					onClick: e.onClick,
 					target: e.openInNewTab ? "_blank" : void 0
@@ -926,7 +928,7 @@
 					disabled: e.disabled,
 					indent: e.indent,
 					last: e.last
-				}, r.a.createElement(q, null, r.a.createElement($, {
+				}, r.a.createElement(U, null, r.a.createElement($, {
 					onClick: e.onClick,
 					className: Object(i.a)({
 						[G.a.NoColor]: e.color && "none" === e.color
@@ -956,7 +958,7 @@
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, r.a.createElement(q, null, r.a.createElement(V, null, e.label), r.a.createElement(Q, null, e.subtext)), r.a.createElement(Y, null, (e => r.a.createElement("div", {
+				}, r.a.createElement(U, null, r.a.createElement(V, null, e.label), r.a.createElement(Q, null, e.subtext)), r.a.createElement(Y, null, (e => r.a.createElement("div", {
 					className: G.a.DropdownWrapper,
 					onClick: e.openDropdown
 				}, r.a.createElement("span", {
@@ -994,7 +996,7 @@
 						} = l;
 					return r.a.createElement(J, {
 						disabled: t
-					}, r.a.createElement(q, null, r.a.createElement("label", {
+					}, r.a.createElement(U, null, r.a.createElement("label", {
 						htmlFor: l.id
 					}, r.a.createElement(V, {
 						className: l.labelClassname
@@ -1021,14 +1023,14 @@
 						}, n)
 					}))))
 				},
-				ge = e => r.a.createElement(J, {
+				Ee = e => r.a.createElement(J, {
 					className: e.className,
 					direction: e.direction,
 					disabled: e.disabled,
 					indent: e.indent,
 					last: e.last
-				}, r.a.createElement(q, null, r.a.createElement(V, null, e.label), r.a.createElement(Q, null, e.subtext)), r.a.createElement(Y, null, e.children)),
-				Ee = e => r.a.createElement(te, {
+				}, r.a.createElement(U, null, r.a.createElement(V, null, e.label), r.a.createElement(Q, null, e.subtext)), r.a.createElement(Y, null, e.children)),
+				ge = e => r.a.createElement(te, {
 					isCreateCommunity: e.isCreateCommunity,
 					isRequired: e.isRequired,
 					label: e.label,
@@ -1077,7 +1079,17 @@
 					text: e.value || ""
 				}), !!e.actionLink && r.a.createElement("div", {
 					className: G.a.ActionLinkContainer
-				}, e.actionLink)))
+				}, e.actionLink))),
+				_e = e => r.a.createElement(J, {
+					className: e.className,
+					last: e.last,
+					indent: e.indent,
+					disabled: e.disabled
+				}, r.a.createElement(U, null, r.a.createElement(V, null, e.label), r.a.createElement(Q, null, e.subtext)), r.a.createElement(Y, null, r.a.createElement(K, {
+					href: e.link,
+					onClick: e.onClick,
+					"aria-label": e.linkLabel
+				}, r.a.createElement(ee, null))))
 		},
 		"./src/reddit/components/StructuredStyles/StyledComponents/forms.m.less": function(e, t, n) {
 			e.exports = {
@@ -1147,9 +1159,9 @@
 			})), n.d(t, "c", (function() {
 				return v
 			})), n.d(t, "d", (function() {
-				return g
-			})), n.d(t, "j", (function() {
 				return E
+			})), n.d(t, "j", (function() {
+				return g
 			}));
 			var a = n("./src/lib/lessComponent.tsx"),
 				r = n("./src/reddit/components/StructuredStyles/StyledComponents/forms.m.less"),
@@ -1168,8 +1180,8 @@
 				h = a.a.h3("FormElementTitle", o.a),
 				f = a.a.div("FormElementDescription", o.a),
 				v = a.a.div("FormElementError", o.a),
-				g = a.a.div("FormElementSubGroup", o.a),
-				E = a.a.li("FormListItem", o.a)
+				E = a.a.div("FormElementSubGroup", o.a),
+				g = a.a.li("FormListItem", o.a)
 		},
 		"./src/reddit/components/StructuredStyles/StyledComponents/inputs.m.less": function(e, t, n) {
 			e.exports = {
@@ -1252,9 +1264,9 @@
 		"./src/reddit/controls/ErrorText/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return g
-			})), n.d(t, "c", (function() {
 				return E
+			})), n.d(t, "c", (function() {
+				return g
 			}));
 			var a = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./node_modules/lodash/uniqueId.js"),
@@ -1348,7 +1360,7 @@
 					}, n || e))
 				}
 			}
-			const g = e => {
+			const E = e => {
 					const {
 						className: t,
 						errorClassName: n,
@@ -1364,7 +1376,7 @@
 						key: t
 					}, e))) : null
 				},
-				E = e => d.a.createElement(g, {
+				g = e => d.a.createElement(E, {
 					fallbackMessage: a.fbt._("Something went wrong", null, {
 						hk: "Cw1BT"
 					}),
@@ -1702,4 +1714,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal.89ca856edfb8e9a9be33.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal.7bc299af5bdffe511c7b.js.map

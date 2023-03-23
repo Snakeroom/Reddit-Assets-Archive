@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SnoovatarModal.a26788339e0951a66c85.js
-// Retrieved at 3/21/2023, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SnoovatarModal.9f9e83567fe6a682553e.js
+// Retrieved at 3/23/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SnoovatarModal"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, r) {
@@ -233,10 +233,10 @@
 			const o = e => {
 					return !(Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: s.xe
-					}) === s.Pd)
+						experimentName: s.ye
+					}) === s.Qd)
 				},
-				c = Object(a.a)(s.ye)
+				c = Object(a.a)(s.ze)
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, r) {
 			"use strict";
@@ -245,9 +245,9 @@
 			}));
 			var s = r("./src/reddit/constants/experiments.ts"),
 				n = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(n.a)(s.zd)
+			const a = Object(n.a)(s.Ad)
 		},
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.a26788339e0951a66c85.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.9f9e83567fe6a682553e.js.map

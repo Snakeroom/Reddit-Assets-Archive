@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.59d01abc4f726352bdb6.js
-// Retrieved at 3/13/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.d365634a1fff8a8f476c.js
+// Retrieved at 3/23/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-ContentControls"], {
 		"./node_modules/lodash/negate.js": function(e, t) {
@@ -441,7 +441,7 @@
 				fe = n("./src/reddit/featureFlags/component.tsx"),
 				xe = n("./src/reddit/components/ModHub/ContentControls/index.m.less"),
 				Ce = n.n(xe);
-			const ye = pe.a.wrapped(ee.p, "toggleSetting", Ce.a),
+			const ye = pe.a.wrapped(ee.q, "toggleSetting", Ce.a),
 				ke = Object(fe.a)("newPostRequirements", d.a.Fragment),
 				Se = () => d.a.createElement("a", {
 					className: Ce.a.externalLink,
@@ -937,7 +937,7 @@
 						label: s.fbt._("Allowed words", null, {
 							hk: "4qOqj0"
 						})
-					}, d.a.createElement(ee.n, {
+					}, d.a.createElement(ee.o, {
 						className: lt.a.subText
 					}, s.fbt._("Comments with these words will not be considered abusive by the filter. Choose up to {max number of permitted terms allowed} words, max 40 characters per word.", [s.fbt._param("max number of permitted terms allowed", 15)], {
 						hk: "1KHCuZ"
@@ -1855,4 +1855,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.59d01abc4f726352bdb6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.d365634a1fff8a8f476c.js.map

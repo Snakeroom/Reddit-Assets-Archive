@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.4b2df3d88cb19ed622df.js
-// Retrieved at 3/8/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.b577deffdcfef00b171d.js
+// Retrieved at 3/23/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CommunitySettings-ModPnSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -143,7 +143,7 @@
 					}, e), {}),
 					_ = a ? s : o,
 					f = g.replace("{count}", `${_}`);
-				return i.a.createElement(i.a.Fragment, null, i.a.createElement(c.p, {
+				return i.a.createElement(i.a.Fragment, null, i.a.createElement(c.q, {
 					on: !a,
 					onClick: () => {
 						r(u, {
@@ -156,7 +156,7 @@
 					label: m,
 					subtext: p,
 					disabled: n
-				}), i.a.createElement(c.j, {
+				}), i.a.createElement(c.k, {
 					ticks: b,
 					min: 0,
 					max: l.length - 1,
@@ -185,7 +185,7 @@
 					description: o,
 					id: r
 				} = a;
-				return i.a.createElement(c.p, {
+				return i.a.createElement(c.q, {
 					on: t,
 					onClick: () => n(r, {
 						isEnabled: !t
@@ -207,7 +207,7 @@
 					description: r,
 					id: d
 				} = s;
-				return i.a.createElement(c.p, {
+				return i.a.createElement(c.q, {
 					on: n,
 					onClick: () => a(d, {
 						isEnabled: !n
@@ -355,8 +355,8 @@
 						subredditIds: [t]
 					}
 				}),
-				V = (e, t) => "threshold" in t ? G(e, t) : q(e, t),
-				G = (e, t) => Object(D.a)(e, {
+				V = (e, t) => "threshold" in t ? q(e, t) : G(e, t),
+				q = (e, t) => Object(D.a)(e, {
 					...B,
 					variables: {
 						input: {
@@ -364,7 +364,7 @@
 						}
 					}
 				}),
-				q = (e, t) => Object(D.a)(e, {
+				G = (e, t) => Object(D.a)(e, {
 					...T,
 					variables: {
 						input: {
@@ -683,4 +683,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.4b2df3d88cb19ed622df.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.b577deffdcfef00b171d.js.map

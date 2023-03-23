@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.c54aab8d7eef3a1398fd.js
-// Retrieved at 3/14/2023, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.2698681e4f89add77a91.js
+// Retrieved at 3/23/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -682,7 +682,7 @@
 					const r = Object(y.d)(),
 						a = Object(V.a)(),
 						l = Object(h.useRef)(!1),
-						d = Object(y.e)(A.a),
+						d = Object(y.e)(A.b),
 						{
 							hideRecommendationFooter: c,
 							recommendationFooterView: u,
@@ -2509,4 +2509,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.c54aab8d7eef3a1398fd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.2698681e4f89add77a91.js.map

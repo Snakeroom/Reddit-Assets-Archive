@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.15c1eb5c22768cc2a9a1.js
-// Retrieved at 3/21/2023, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.8bb6e9fae8c1e95c6006.js
+// Retrieved at 3/23/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -3164,8 +3164,8 @@
 				p = s("./node_modules/reselect/es/index.js");
 			const b = Object(p.a)(e => Object(u.c)(e, {
 				experimentEligibilitySelector: u.a,
-				experimentName: m.xc
-			}), e => e === m.Pd);
+				experimentName: m.yc
+			}), e => e === m.Qd);
 			var h = s("./node_modules/fbt/lib/FbtPublic.js"),
 				g = s("./src/lib/classNames/index.ts"),
 				f = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
@@ -4342,7 +4342,7 @@
 				const t = Object(r.f)().getState(),
 					s = Object(g.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.id.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.id.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.id.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.jd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.jd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.jd.LargeImagePreview ? e.reredditButtons : [];
 					return o.a.createElement(w, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -7426,17 +7426,25 @@
 		},
 		"./src/reddit/selectors/experiments/antievil/index.tsx": function(e, t, s) {
 			"use strict";
-			s.d(t, "a", (function() {
+			s.d(t, "b", (function() {
 				return r
+			})), s.d(t, "a", (function() {
+				return i
 			}));
 			var n = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const r = e => {
-				return Object(o.c)(e, {
-					experimentEligibilitySelector: o.a,
-					experimentName: n.I
-				}) === n.Pd
-			}
+					return Object(o.c)(e, {
+						experimentEligibilitySelector: o.a,
+						experimentName: n.J
+					}) === n.Qd
+				},
+				i = e => {
+					return Object(o.c)(e, {
+						experimentEligibilitySelector: o.a,
+						experimentName: n.o
+					}) === n.Qd
+				}
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, s) {
 			"use strict";
@@ -7453,11 +7461,11 @@
 				d = s("./node_modules/reselect/es/index.js");
 			const c = Object(d.a)(e => Object(o.c)(e, {
 					experimentEligibilitySelector: e => Object(a.h)(e) && Object(r.f)(e),
-					experimentName: n.pc
+					experimentName: n.qc
 				}), i.a),
 				l = Object(d.a)(e => Object(o.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.h)(e) && Object(r.f)(e),
-					experimentName: n.oc
+					experimentName: n.pc
 				}), i.a),
 				m = Object(d.a)(c, l, (e, t) => e || t),
 				u = Object(d.a)(c, l, (e, t) => !(!e && !t))
@@ -7542,4 +7550,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.15c1eb5c22768cc2a9a1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.8bb6e9fae8c1e95c6006.js.map

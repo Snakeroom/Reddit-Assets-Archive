@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.e3d42bddbb4e019f60ed.js
-// Retrieved at 3/21/2023, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.2a123f1120a292ca9056.js
+// Retrieved at 3/23/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -1608,7 +1608,7 @@
 				})())), await Promise.all(h); {
 					const e = n();
 					if (!Object(k.S)(e)) return Object(L.a)(t, e);
-					Object(B.a)(e) && t(Object(N.a)())
+					Object(B.b)(e) && t(Object(N.a)())
 				}
 				const {
 					page: g = a.kc.Account
@@ -4802,7 +4802,7 @@
 						last: !0
 					}), d && i.a.createElement(i.a.Fragment, null, i.a.createElement(G.a, null, s.fbt._("premium features", null, {
 						hk: "20MX2a"
-					})), i.a.createElement(H.p, {
+					})), i.a.createElement(H.q, {
 						on: v,
 						disabled: !d,
 						onClick: this.onHideAdsToggle,
@@ -4812,7 +4812,7 @@
 						subtext: s.fbt._("Enable an ads-free experience on desktop", null, {
 							hk: "YQWdf"
 						})
-					}), i.a.createElement(H.p, {
+					}), i.a.createElement(H.q, {
 						on: g,
 						disabled: !d,
 						onClick: this.onHighlightCommentsToggle,
@@ -5377,21 +5377,21 @@
 		},
 		"./src/reddit/components/Settings/shared/Widgets.tsx": function(e, t, n) {
 			"use strict";
-			n.d(t, "n", (function() {
+			n.d(t, "o", (function() {
 				return z
-			})), n.d(t, "k", (function() {
+			})), n.d(t, "l", (function() {
 				return J
-			})), n.d(t, "o", (function() {
+			})), n.d(t, "p", (function() {
 				return Z
 			})), n.d(t, "f", (function() {
 				return $
-			})), n.d(t, "l", (function() {
-				return te
 			})), n.d(t, "m", (function() {
+				return te
+			})), n.d(t, "n", (function() {
 				return ae
-			})), n.d(t, "p", (function() {
+			})), n.d(t, "q", (function() {
 				return re
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "k", (function() {
 				return pe
 			})), n.d(t, "b", (function() {
 				return be
@@ -5409,6 +5409,8 @@
 				return ke
 			})), n.d(t, "h", (function() {
 				return Ce
+			})), n.d(t, "j", (function() {
+				return je
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./node_modules/react/index.js"),
@@ -5797,7 +5799,17 @@
 					text: e.value || ""
 				}), !!e.actionLink && o.a.createElement("div", {
 					className: F.a.ActionLinkContainer
-				}, e.actionLink)))
+				}, e.actionLink))),
+				je = e => o.a.createElement(J, {
+					className: e.className,
+					last: e.last,
+					indent: e.indent,
+					disabled: e.disabled
+				}, o.a.createElement(Q, null, o.a.createElement(W, null, e.label), o.a.createElement(z, null, e.subtext)), o.a.createElement(Y, null, o.a.createElement(K, {
+					href: e.link,
+					onClick: e.onClick,
+					"aria-label": e.linkLabel
+				}, o.a.createElement(ee, null))))
 		},
 		"./src/reddit/components/SocialLinks/SocialLinkButton.m.less": function(e, t, n) {
 			e.exports = {
@@ -8875,13 +8887,13 @@
 				oe = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const ae = Object(l.a)(e => Object(oe.c)(e, {
 				experimentEligibilitySelector: I.S,
-				experimentName: se.J
-			}), e => e === se.S.Enabled);
+				experimentName: se.K
+			}), e => e === se.T.Enabled);
 			var re = n("./src/reddit/selectors/meta.ts");
 			const ie = Object(l.a)(e => Object(oe.c)(e, {
-				experimentName: se.nb,
+				experimentName: se.ob,
 				experimentEligibilitySelector: oe.a
-			}), e => e !== se.Pd);
+			}), e => e !== se.Qd);
 			var le = n("./src/reddit/components/Settings/AccountPrefsSection/index.m.less"),
 				ce = n.n(le);
 			const de = Object(l.c)({
@@ -9283,7 +9295,7 @@
 						text: o ? null : i,
 						onClick: t
 					}))
-				})(), a.a.createElement(ee.p, {
+				})(), a.a.createElement(ee.q, {
 					disabled: !e.twitterAccount,
 					indent: !0,
 					label: s.fbt._("Show link on profile", null, {
@@ -9338,8 +9350,8 @@
 				gt = n.n(ft);
 			const vt = Pe.a.wrapped(Ce.b, "Trash", gt.a),
 				_t = Pe.a.wrapped($.a, "BetaTestsHeading", gt.a),
-				yt = Pe.a.wrapped(ee.p, "InBetaToggle", gt.a),
-				kt = Pe.a.wrapped(ee.p, "InRedesignBetaToggle", gt.a),
+				yt = Pe.a.wrapped(ee.q, "InBetaToggle", gt.a),
+				kt = Pe.a.wrapped(ee.q, "InRedesignBetaToggle", gt.a),
 				Ct = Pe.a.button("DeactivateButton", gt.a),
 				jt = Pe.a.div("DeactivateWrapper", gt.a),
 				xt = Object(l.c)({
@@ -9541,7 +9553,7 @@
 				Xt = Pe.a.div("ListBox", Jt.a),
 				$t = Pe.a.div("MoreWrapper", Jt.a),
 				en = Pe.a.button("MoreButton", Jt.a),
-				tn = Pe.a.wrapped(ee.n, "Subtext", Jt.a);
+				tn = Pe.a.wrapped(ee.o, "Subtext", Jt.a);
 			class nn extends a.a.Component {
 				constructor(e) {
 					super(e), this.state = {
@@ -9816,7 +9828,7 @@
 						className: e
 					}, a.a.createElement($.a, null, En._("accept tips", null, {
 						hk: "1kEl0R"
-					})), a.a.createElement(ee.l, {
+					})), a.a.createElement(ee.m, {
 						direction: "row",
 						label: En._("Stripe Account", null, {
 							hk: "2WMbeu"
@@ -10119,7 +10131,7 @@
 						disabled: this.state.isLoading
 					}), o && a.a.createElement(Dn.c, {
 						className: Jn.a.formError
-					}, o), a.a.createElement(ee.p, {
+					}, o), a.a.createElement(ee.q, {
 						label: Kn._("I am a US Resident", null, {
 							hk: "30hX4A"
 						}),
@@ -10128,7 +10140,7 @@
 						disabled: this.state.isLoading
 					}), b && a.a.createElement(Dn.c, {
 						className: Jn.a.formError
-					}, b), a.a.createElement(ee.p, {
+					}, b), a.a.createElement(ee.q, {
 						label: Kn._("I confirm that I am 18 years of age or older", null, {
 							hk: "42nN16"
 						}),
@@ -10137,7 +10149,7 @@
 						disabled: this.state.isLoading
 					}), g && a.a.createElement(Dn.c, {
 						className: Jn.a.formError
-					}, g), a.a.createElement(ee.p, {
+					}, g), a.a.createElement(ee.q, {
 						label: Kn._("I agree to the terms below", null, {
 							hk: "4ha1OS"
 						}),
@@ -10359,7 +10371,7 @@
 					hk: "2R5BB"
 				})), a.a.createElement($.a, null, s.fbt._("Content Preferences", null, {
 					hk: "76osn"
-				})), a.a.createElement(ee.p, {
+				})), a.a.createElement(ee.q, {
 					on: u,
 					onClick: () => y(!u, "over18"),
 					label: s.fbt._("Adult content", null, {
@@ -10368,7 +10380,7 @@
 					subtext: s.fbt._("Enable to view adult and NSFW (not safe for work) content in your feed and search results.", null, {
 						hk: "IjOZK"
 					})
-				}), a.a.createElement(ee.p, {
+				}), a.a.createElement(ee.q, {
 					disabled: !u,
 					label: s.fbt._("Safe browsing mode", null, {
 						hk: "CeEkN"
@@ -10378,7 +10390,7 @@
 					subtext: s.fbt._("Blur thumbnails and media preview for anything labeled NSFW (not safe for work).", null, {
 						hk: "5tKRi"
 					})
-				}), a.a.createElement(ee.p, {
+				}), a.a.createElement(ee.q, {
 					label: s.fbt._("Enable home feed recommendations", null, {
 						hk: "17H8xj"
 					}),
@@ -10387,7 +10399,7 @@
 					subtext: s.fbt._("Allow us to introduce recommended posts in your home feed.", null, {
 						hk: "EK7rr"
 					})
-				}), n && a.a.createElement(ee.p, {
+				}), n && a.a.createElement(ee.q, {
 					label: s.fbt._("Enable live recommendations", null, {
 						hk: "yGcJd"
 					}),
@@ -10396,7 +10408,7 @@
 					subtext: s.fbt._("Allow us to feature recommended live events at the top of your home feed.", null, {
 						hk: "1vTU5g"
 					})
-				}), a.a.createElement(ee.p, {
+				}), a.a.createElement(ee.q, {
 					on: o,
 					onClick: () => y(!o, "autoplayVideo"),
 					label: s.fbt._("Autoplay media", null, {
@@ -10405,7 +10417,7 @@
 					subtext: s.fbt._("Play videos and gifs automatically when in the viewport.", null, {
 						hk: "2flu5F"
 					})
-				}), a.a.createElement(ee.p, {
+				}), a.a.createElement(ee.q, {
 					on: p,
 					onClick: () => y(!p, "reduceAnimationsFromAwards"),
 					label: s.fbt._("Reduce Animations", null, {
@@ -10414,7 +10426,7 @@
 					subtext: s.fbt._("Reduce animations on posts, comments, and feeds.", null, {
 						hk: "3QFTsR"
 					})
-				}), a.a.createElement(ee.p, {
+				}), a.a.createElement(ee.q, {
 					on: !!f,
 					onClick: () => y(!f, "stylesEnabled"),
 					label: s.fbt._("Community themes", null, {
@@ -10430,7 +10442,7 @@
 					onChange: e => {
 						h !== e && y(e, "sort")
 					}
-				}), a.a.createElement(ee.p, {
+				}), a.a.createElement(ee.q, {
 					className: k,
 					indent: !0,
 					on: !!b,
@@ -10452,7 +10464,7 @@
 					subtext: s.fbt._("Choose how you would like content displayed in feeds. This control is also found above your feed.", null, {
 						hk: "1NyVGg"
 					})
-				}), a.a.createElement(ee.p, {
+				}), a.a.createElement(ee.q, {
 					className: k,
 					on: !!_,
 					onClick: () => y(!_, "rememberCommunityLayout"),
@@ -10463,7 +10475,7 @@
 						hk: "3fxqrV"
 					}),
 					indent: !0
-				}), a.a.createElement(ee.p, {
+				}), a.a.createElement(ee.q, {
 					className: k,
 					on: !!c,
 					onClick: () => y(!c, "openPostInNewTab"),
@@ -10477,7 +10489,7 @@
 					className: k
 				}, s.fbt._("Post Preferences", null, {
 					hk: "35wQ1I"
-				})), a.a.createElement(ee.p, {
+				})), a.a.createElement(ee.q, {
 					className: k,
 					on: !!g,
 					onClick: () => y(!g, "useMarkdown"),
@@ -10702,8 +10714,8 @@
 				oo = n("./src/reddit/selectors/experiments/antievil/index.tsx");
 			const ao = Object(l.a)(e => Object(oe.c)(e, {
 				experimentEligibilitySelector: I.S,
-				experimentName: se.G
-			}), e => e === se.P.Enabled);
+				experimentName: se.H
+			}), e => e === se.Q.Enabled);
 			var ro = n("./src/lib/hooks/usePrevious.ts"),
 				io = n("./src/reddit/actions/subreddit/muting.ts"),
 				lo = n("./src/telemetry/models/Event.ts");
@@ -10723,7 +10735,7 @@
 					shouldShowCreatePasswordModal: N.d,
 					shouldShowBadCommentAutocollapse: ao,
 					badCommentAutocollapse: I.e,
-					isCommunityMutingEnabled: oo.a,
+					isCommunityMutingEnabled: oo.b,
 					mutedSubredditList: mo.t
 				}),
 				go = Object(r.b)(fo, (e, t) => ({
@@ -10865,7 +10877,7 @@
 						selectedCollapseLevel: P
 					}) : null, ((e, t, n, o, r, i, l, c, d) => a.a.createElement(a.a.Fragment, null, a.a.createElement($.a, null, s.fbt._("Privacy", null, {
 						hk: "30eaw9"
-					})), a.a.createElement(ee.p, {
+					})), a.a.createElement(ee.q, {
 						on: !e,
 						onClick: () => o(!e, "hideFromRobots"),
 						label: s.fbt._("Show up in search results", null, {
@@ -10874,7 +10886,7 @@
 						subtext: s.fbt._("Allow search engines like Google to link to your profile in their search results.", null, {
 							hk: "4tnz3n"
 						})
-					}), a.a.createElement(ee.p, {
+					}), a.a.createElement(ee.q, {
 						on: t,
 						onClick: () => o(!t, "allowClickTracking"),
 						label: s.fbt._("Personalize all of Reddit based on the outbound links you click on", null, {
@@ -10883,7 +10895,7 @@
 						subtext: s.fbt._("Allow us to use the links to other sites you click on for operational purposes (that help us better understand how you and others use Reddit) and to show you better ads and recommendations.", null, {
 							hk: "DnCX0"
 						})
-					}), a.a.createElement(ee.p, {
+					}), a.a.createElement(ee.q, {
 						on: n,
 						onClick: () => o(!n, "activityRelevantAds"),
 						label: s.fbt._("Personalize ads based on your Reddit activity and account info", null, {
@@ -10892,7 +10904,7 @@
 						subtext: s.fbt._("Allow us to use your interactions on Reddit and account information to show you better ads.", null, {
 							hk: "18UwMp"
 						})
-					}), a.a.createElement(ee.p, {
+					}), a.a.createElement(ee.q, {
 						on: r,
 						onClick: () => o(!r, "thirdPartyDataPersonalizedAds"),
 						label: s.fbt._("Personalize ads based on information from our partners", null, {
@@ -10901,7 +10913,7 @@
 						subtext: s.fbt._("Allow us to use information that our advertising partners send us to show you better ads.", null, {
 							hk: "37eGRC"
 						})
-					}), a.a.createElement(ee.p, {
+					}), a.a.createElement(ee.q, {
 						on: l,
 						onClick: () => o(!l, "thirdPartySiteDataPersonalizedAds"),
 						label: s.fbt._("Personalize ads based on your activity with our partners", null, {
@@ -10910,7 +10922,7 @@
 						subtext: s.fbt._("Allow us to use your interactions with sites and apps we partner with to show you better ads.", null, {
 							hk: "2T8SXc"
 						})
-					}), i && a.a.createElement(ee.p, {
+					}), i && a.a.createElement(ee.q, {
 						on: c,
 						onClick: () => o(!c, "showLocationBasedRecommendations"),
 						label: s.fbt._("Personalize recommendations based on your general location", null, {
@@ -10919,7 +10931,7 @@
 						subtext: s.fbt._("Allow us to use your city, state, or country (based on your IP) to recommend better posts and communities.", null, {
 							hk: "5IBGv"
 						})
-					}), a.a.createElement(ee.p, {
+					}), a.a.createElement(ee.q, {
 						on: d,
 						onClick: () => o(!d, "thirdPartySiteDataPersonalizedContent"),
 						label: s.fbt._("Personalize recommendations based on your activity with our partners", null, {
@@ -10931,7 +10943,7 @@
 						last: !0
 					})))(c, l, u, E, p, O, b, f, h), a.a.createElement($.a, null, s.fbt._("Advanced security", null, {
 						hk: "3H7FJN"
-					})), a.a.createElement(ee.p, {
+					})), a.a.createElement(ee.q, {
 						on: m,
 						onClick: () => {
 							w ? C() : m ? _() : v()
@@ -11187,7 +11199,7 @@
 							hk: "3gGUDy"
 						}),
 						value: E
-					}), a.a.createElement(ee.l, {
+					}), a.a.createElement(ee.m, {
 						label: Do._("Social links (5 max)", null, {
 							hk: "3tji2O"
 						}),
@@ -11202,7 +11214,7 @@
 						username: s
 					})), a.a.createElement($.a, null, Do._("Images", null, {
 						hk: "38DOkf"
-					})), a.a.createElement(ee.l, {
+					})), a.a.createElement(ee.m, {
 						label: Do._("Avatar and banner image", null, {
 							hk: "16dJ39"
 						}),
@@ -11248,7 +11260,7 @@
 						onChange: this.onBannerChange
 					}))), a.a.createElement($.a, null, Do._("Profile category", null, {
 						hk: "1YRE6p"
-					})), a.a.createElement(ee.p, {
+					})), a.a.createElement(ee.q, {
 						label: Do._("NSFW", null, {
 							hk: "XPmIh"
 						}),
@@ -11259,7 +11271,7 @@
 						onClick: this.onNSFWToggled
 					}), a.a.createElement($.a, null, Do._("Advanced", null, {
 						hk: "1US2Ur"
-					})), a.a.createElement(ee.p, {
+					})), a.a.createElement(ee.q, {
 						label: Do._("Allow people to follow you", null, {
 							hk: "30iVQH"
 						}),
@@ -11268,7 +11280,7 @@
 						}),
 						on: r,
 						onClick: this.onEnableFollowersToggle
-					}), a.a.createElement(ee.p, {
+					}), a.a.createElement(ee.q, {
 						label: Do._("Content visibility", null, {
 							hk: "3RQ2dW"
 						}),
@@ -11281,7 +11293,7 @@
 						}),
 						on: t,
 						onClick: this.onContentVisibleChange
-					}), a.a.createElement(ee.p, {
+					}), a.a.createElement(ee.q, {
 						label: Do._("Active in communities visibility", null, {
 							hk: "3GUmB5"
 						}),
@@ -11854,7 +11866,7 @@
 						disabled: !!t
 					}), a.a.createElement($.a, null), a.a.createElement("span", {
 						id: "unsubscribe-from-all-emails"
-					}, a.a.createElement(ee.p, {
+					}, a.a.createElement(ee.q, {
 						on: !!t,
 						onClick: () => {
 							r(Object(ur.a)(!!t)), o(!t, "emailUnsubscribe")
@@ -11952,9 +11964,9 @@
 					},
 					isDspEnabled: e => {
 						return Object(oe.c)(e, {
-							experimentName: se.qd,
+							experimentName: se.rd,
 							experimentEligibilitySelector: oe.a
-						}) === se.Pd
+						}) === se.Qd
 					}
 				}),
 				gr = Object(ve.v)(),
@@ -12493,9 +12505,9 @@
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/user.ts");
 			const r = e => Object(o.c)(e, {
-				experimentName: s.w,
+				experimentName: s.x,
 				experimentEligibilitySelector: () => Object(a.R)(e)
-			}) === s.Pd
+			}) === s.Qd
 		},
 		"./src/reddit/selectors/gold/powerups/benefitSettings.ts": function(e, t, n) {
 			"use strict";
@@ -12733,4 +12745,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.e3d42bddbb4e019f60ed.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.2a123f1120a292ca9056.js.map
