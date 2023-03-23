@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NsfwSearchModal.08b6e2bb18b755ce1f13.js
-// Retrieved at 3/21/2023, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NsfwSearchModal.0623027e4fe076c3ee61.js
+// Retrieved at 3/23/2023, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NsfwSearchModal"], {
 		"./src/reddit/components/Upsell/NsfwSearch/Modal.tsx": function(e, t, n) {
@@ -13,69 +13,70 @@
 				i = n.n(a),
 				l = n("./node_modules/fbt/lib/FbtPublic.js"),
 				d = n("./node_modules/react-redux/es/index.js"),
-				u = n("./node_modules/react-router-redux/es/index.js"),
-				b = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				m = n("./src/reddit/controls/Button/index.tsx"),
-				p = n("./src/reddit/helpers/counters/nsfwBypassableBlocking.ts"),
-				f = n("./src/reddit/helpers/trackers/nsfwSignupBypassableUpsell.ts"),
+				u = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				b = n("./src/reddit/controls/Button/index.tsx"),
+				m = n("./src/reddit/helpers/counters/nsfwBypassableBlocking.ts"),
+				p = n("./src/reddit/helpers/trackers/nsfwSignupBypassableUpsell.ts"),
 				C = n("./src/reddit/helpers/trackers/nsfwSignupUpsell.ts"),
-				x = n("./src/reddit/icons/svgs/NSFWWarningIcon/index.tsx"),
+				f = n("./src/reddit/icons/svgs/NSFWWarningIcon/index.tsx"),
 				O = n("./src/reddit/selectors/experiments/nsfwBypassableBlockingExperiment.ts"),
-				j = n("./src/reddit/actions/contentGate.ts"),
-				g = n("./src/reddit/selectors/user.ts"),
-				w = n("./src/reddit/components/Upsell/NsfwSearch/index.m.less"),
-				v = n.n(w);
-			const h = () => {
+				g = n("./src/reddit/actions/contentGate.ts"),
+				x = n("./src/reddit/selectors/user.ts"),
+				j = n("./src/reddit/actions/modal.ts"),
+				w = n("./src/reddit/constants/modals.ts"),
+				v = n("./src/reddit/components/Upsell/NsfwSearch/index.m.less"),
+				h = n.n(v);
+			const N = () => {
 					const e = Object(d.d)(),
-						t = Object(b.b)(),
-						n = Object(d.e)(g.S);
+						t = Object(u.b)(),
+						n = Object(d.e)(x.S);
 					return i.a.createElement("div", {
-						className: v.a.modalContent
+						className: h.a.modalContent
 					}, i.a.createElement("div", {
-						className: v.a.textContainer
-					}, i.a.createElement(x.b, {
-						fill: x.a.DEFAULT
+						className: h.a.textContainer
+					}, i.a.createElement(f.b, {
+						fill: f.a.DEFAULT
 					}), i.a.createElement("span", {
-						className: v.a.title
+						className: h.a.title
 					}, (() => l.fbt._("Confirm you're over 18", null, {
 						hk: "UUekV"
 					}))()), i.a.createElement("span", {
-						className: v.a.body
+						className: h.a.body
 					}, (() => l.fbt._("This page is NSFW (Not Safe for Work) and may have mature or adult content. To continue, confirm you’re over 18.", null, {
 						hk: "1YTdFy"
 					}))())), i.a.createElement("div", {
-						className: v.a.buttonContainer
-					}, i.a.createElement(m.t, {
-						priority: m.c.Primary,
-						className: v.a.continue,
+						className: h.a.buttonContainer
+					}, i.a.createElement(b.t, {
+						priority: b.c.Primary,
+						className: h.a.continue,
 						onClick: async () => {
-							t(Object(f.b)()), Object(p.b)(p.a.Continue), n ? e(Object(j.r)()) : Object(j.q)(), Object(O.d)(), window.location.reload()
+							t(Object(p.b)()), Object(m.b)(m.a.Continue), n ? e(Object(g.r)()) : Object(g.q)(), Object(O.d)(), window.location.reload()
 						},
 						"data-testid": "continue-button"
 					}, (() => l.fbt._("Yes, I'm over 18", null, {
 						hk: "3aYK0v"
-					}))()), i.a.createElement(m.t, {
-						priority: m.c.Secondary,
-						className: Object(o.a)(v.a.continue, v.a.dismiss),
+					}))()), i.a.createElement(b.t, {
+						priority: b.c.Secondary,
+						className: Object(o.a)(h.a.continue, h.a.dismiss),
 						onClick: () => {
-							t(Object(f.c)()), Object(p.b)(p.a.Dismiss), e(Object(u.b)("/"))
+							t(Object(p.c)()), Object(m.b)(m.a.Dismiss), e(Object(j.g)(w.a.NSFW_SEARCH_MODAL))
 						},
 						"data-testid": "dismiss-button"
-					}, (() => l.fbt._("Go to Home", null, {
-						hk: "3zORsB"
+					}, (() => l.fbt._("Dismiss", null, {
+						hk: "s43tA"
 					}))())))
 				},
-				N = () => {
-					const e = Object(b.b)();
+				_ = () => {
+					const e = Object(u.b)();
 					return i.a.useEffect(() => {
 						e(Object(C.c)())
 					}, [e]), i.a.createElement("div", {
-						className: v.a.container
-					}, i.a.createElement(h, null))
+						className: h.a.container
+					}, i.a.createElement(N, null))
 				};
 
-			function _() {
-				return (_ = Object.assign || function(e) {
+			function B() {
+				return (B = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -84,13 +85,13 @@
 				}).apply(this, arguments)
 			}
 			const {
-				fbt: B
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), y = Object(s.a)(() => i.a.createElement(N, null));
-			t.default = e => i.a.createElement(y, _({}, e, {
-				className: Object(o.a)(e.className, v.a.modal),
+				fbt: y
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), k = Object(s.a)(() => i.a.createElement(_, null));
+			t.default = e => i.a.createElement(k, B({}, e, {
+				className: Object(o.a)(e.className, h.a.modal),
 				shouldBlurBackground: !0,
 				onOverlayClick: c.a,
-				overlayClassName: v.a.overlay
+				overlayClassName: h.a.overlay
 			}))
 		},
 		"./src/reddit/components/Upsell/NsfwSearch/index.m.less": function(e, t, n) {
@@ -267,9 +268,9 @@
 			})), n.d(t, "b", (function() {
 				return b
 			})), n.d(t, "c", (function() {
-				return f
-			})), n.d(t, "a", (function() {
 				return C
+			})), n.d(t, "a", (function() {
+				return f
 			}));
 			var s = n("./src/lib/constants/index.ts"),
 				o = n("./src/lib/localStorageAvailable/index.ts"),
@@ -291,7 +292,7 @@
 				},
 				m = (e, t) => t === a.a.NoPreview && (e === r.ib.SkippableButtons || e === r.ib.SkippableText),
 				p = (e, t) => t === a.a.NoPreview && e === r.ib.NoUpsell,
-				f = Object(l.a)(a.h, a.g, (e, t) => {
+				C = Object(l.a)(a.h, a.g, (e, t) => {
 					return {
 						isControlVariant: !(!e || !t) && ((e, t) => t === a.a.NoPreview && !m(e, t) && !p(e, t))(e, t),
 						isNewDesignVariant: !(!e || !t) && m(e, t),
@@ -299,8 +300,8 @@
 						variant: e
 					}
 				}),
-				C = Object(l.a)(f, i.a, (e, t) => !e.isOldDesignVariant && (!e.isNewDesignVariant || !t))
+				f = Object(l.a)(C, i.a, (e, t) => !e.isOldDesignVariant && (!e.isNewDesignVariant || !t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwSearchModal.08b6e2bb18b755ce1f13.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwSearchModal.0623027e4fe076c3ee61.js.map
