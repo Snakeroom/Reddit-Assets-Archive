@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~shreddit-player.6a0f9c483be0d0412ba7.js
-// Retrieved at 3/20/2023, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~shreddit-player.fc287100bea72de75fa0.js
+// Retrieved at 3/23/2023, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~shreddit-player"], {
 		"./node_modules/@reddit/shreddit.components.shreddit-player/dist/index.js": function(e, t, i) {
@@ -1072,7 +1072,7 @@
 			const Ve = Symbol("@vidstack/media-provider-discovery");
 			class qe extends s.a {
 				constructor() {
-					super(), this._disconnectDisposal = new U.a, this.manualPaused = !1, this.loading = "lazy", this._attemptingAutoplay = !1, this.userHasInteracted = !1, this.controllerQueue = new ie, this._store = xe(), this._state = ce(this._store), this.connectedQueue = ue(this), this.mediaQueue = new ie, this.screenOrientationController = new pe(this), this.fullscreenController = new ge(this, this.screenOrientationController), X(this, "vds-media-provider-connect", {
+					super(), this._disconnectDisposal = new U.a, this.manualPaused = !1, this.loading = "lazy", this._attemptingAutoplay = !1, this.muteToggledManually = !1, this.controllerQueue = new ie, this._store = xe(), this._state = ce(this._store), this.connectedQueue = ue(this), this.mediaQueue = new ie, this.screenOrientationController = new pe(this), this.fullscreenController = new ge(this, this.screenOrientationController), X(this, "vds-media-provider-connect", {
 						register: Ve
 					});
 					const e = function() {
@@ -1354,11 +1354,13 @@
 						const t = Object(U.e)(e, "vds-volume-change", Z(this._handleMediaVolumeChange.bind(this), 10, !0));
 						this._providerDisposal.add(t)
 					}
-					const i = Object(U.e)(e, "vds-volume-change", this._saveMediaVolume.bind(this));
-					this._providerDisposal.add(i), window.requestAnimationFrame(() => {
+					window.requestAnimationFrame(() => {
 						if (this._provider) {
 							const e = this._getSavedMediaVolume();
-							x(null == e ? void 0 : e.volume) && (this._provider.volume = e.volume), this._provider.autoplay && !this._provider.userHasInteracted ? this._provider.muted = !0 : P(null == e ? void 0 : e.muted) || (this._provider.muted = e.muted)
+							if (x(null == e ? void 0 : e.volume) && (this._provider.volume = e.volume), this._provider.autoplay && !1 === (null == e ? void 0 : e.muted)) {
+								const e = [...$e].some(e => e.muteToggledManually);
+								this._provider.muted = !e
+							} else P(null == e ? void 0 : e.muted) || (this._provider.muted = e.muted)
 						}
 					}), t(() => {
 						$e.delete(e), this._provider = void 0, this._providerDisposal.empty()
@@ -1377,7 +1379,7 @@
 						muted: i
 					} = e.detail;
 					$e.forEach(e => {
-						e !== this._provider && (e.volume = t, e.muted = i, e.userHasInteracted = !0)
+						e !== this._provider && (e.volume = t, e.muted = i)
 					}), this.dispatchEvent(B("vds-media-volume-sync", {
 						bubbles: !0,
 						composed: !0,
@@ -1390,9 +1392,6 @@
 					} catch (e) {
 						return
 					}
-				}
-				_saveMediaVolume(e) {
-					ee.setItem(De, JSON.stringify(e.detail))
 				}
 			}
 			Ie([Object(n.b)({
@@ -1609,9 +1608,15 @@
 						seeking: [],
 						userIdle: []
 					}, this._handleMuteRequest = Object(We.a)(this._host, "vds-mute-request", this._createMediaRequestHandler("muted", e => {
-						this.state.muted || (this._pendingMediaRequests.volume.push(e), this.provider.muted = !0)
+						this.state.muted || (this._pendingMediaRequests.volume.push(e), this.provider.muted = !0, this.provider.muteToggledManually = !0, this._persistVolumeSetting({
+							volume: this.state.volume,
+							muted: !0
+						}))
 					})), this._handleUnmuteRequest = Object(We.a)(this._host, "vds-unmute-request", this._createMediaRequestHandler("muted", e => {
-						this.state.muted && (this._pendingMediaRequests.volume.push(e), this.provider.muted = !1, 0 === this.state.volume && (this._pendingMediaRequests.volume.push(e), this.provider.volume = .25))
+						this.state.muted && (this._pendingMediaRequests.volume.push(e), this.provider.muted = !1, this.provider.muteToggledManually = !0, this._persistVolumeSetting({
+							volume: this.state.volume,
+							muted: !1
+						}), 0 === this.state.volume && (this._pendingMediaRequests.volume.push(e), this.provider.volume = .25))
 					})), this._handlePlayRequest = Object(We.a)(this._host, "vds-play-request", this._createMediaRequestHandler("paused", e => {
 						this.state.paused && (this._pendingMediaRequests.play.push(e), this.provider.paused = !1, this.provider.manualPaused = !1)
 					})), this._handlePauseRequest = Object(We.a)(this._host, "vds-pause-request", this._createMediaRequestHandler("paused", e => {
@@ -1624,7 +1629,10 @@
 						this.state.duration - e.detail < .25 && (t = this.state.duration), this.provider.currentTime = t
 					})), this._handleVolumeChangeRequest = Object(We.a)(this._host, "vds-volume-change-request", this._createMediaRequestHandler("volume", e => {
 						const t = e.detail;
-						this.state.volume !== t && (this._pendingMediaRequests.volume.push(e), this.provider.volume = t, t > 0 && this.state.muted && (this.provider.muted = !1))
+						this.state.volume !== t && (this._pendingMediaRequests.volume.push(e), this.provider.volume = t, t > 0 && this.state.muted && (this.provider.muted = !1), this._persistVolumeSetting({
+							volume: t,
+							muted: 0 === t
+						}))
 					})), this._handleEnterFullscreenRequest = Object(We.a)(this._host, "vds-enter-fullscreen-request", this._createMediaRequestHandler("fullscreen", async e => {
 						var t;
 						if (this.state.fullscreen) return;
@@ -1922,6 +1930,9 @@
 				}
 				_handleViewTypeChange(e) {
 					this._store.viewType.set(e.detail)
+				}
+				_persistVolumeSetting(e) {
+					ee.setItem(De, JSON.stringify(e))
 				}
 			}
 			class Xe {
@@ -6129,4 +6140,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~shreddit-player.6a0f9c483be0d0412ba7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~shreddit-player.fc287100bea72de75fa0.js.map
