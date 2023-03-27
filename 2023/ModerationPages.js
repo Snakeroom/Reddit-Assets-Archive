@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.ef509d397d0af5a72537.js
-// Retrieved at 3/27/2023, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.998732ce246588cf5d92.js
+// Retrieved at 3/27/2023, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "ModQueuePages~reddit-components-MediumPost", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -70770,7 +70770,11 @@
 					}, [p, d, u]), Object(o.useEffect)(() => {
 						if ("done" !== p) return;
 						const e = e => {
-								(null == e ? void 0 : e.detail) && "/" === (null == e ? void 0 : e.detail.charAt(0)) ? (e.stopPropagation(), e.preventDefault(), l(Object(v.b)(null == e ? void 0 : e.detail))) : window.open(null == e ? void 0 : e.detail, "_blank")
+								if ((null == e ? void 0 : e.detail) && "/" === (null == e ? void 0 : e.detail.charAt(0)) && !(null == e ? void 0 : e.detail.includes("insights"))) e.stopPropagation(), e.preventDefault(), l(Object(v.b)(null == e ? void 0 : e.detail));
+								else {
+									const t = !((null == e ? void 0 : e.detail) && (null == e ? void 0 : e.detail.includes("insights")));
+									window.open(null == e ? void 0 : e.detail, t ? "_blank" : "_self")
+								}
 							},
 							{
 								current: t
@@ -80470,4 +80474,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.ef509d397d0af5a72537.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.998732ce246588cf5d92.js.map
