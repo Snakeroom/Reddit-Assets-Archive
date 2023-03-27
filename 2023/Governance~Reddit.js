@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.43724e0f78d72762c28f.js
-// Retrieved at 3/27/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.75ff1353fea9bd1ae326.js
+// Retrieved at 3/27/2023, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -25545,7 +25545,7 @@
 			e.exports = JSON.parse('{"id":"abcab38cb71c"}')
 		},
 		"./src/redditGQL/operations/SubredditTopContent.json": function(e) {
-			e.exports = JSON.parse('{"id":"1ef306afabd0"}')
+			e.exports = JSON.parse('{"id":"810509acdf86"}')
 		},
 		"./src/redditGQL/operations/SubredditsCarousel.json": function(e) {
 			e.exports = JSON.parse('{"id":"a818d17baafc"}')
@@ -25564,4 +25564,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.43724e0f78d72762c28f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.75ff1353fea9bd1ae326.js.map

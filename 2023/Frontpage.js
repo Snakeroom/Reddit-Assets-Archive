@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.3bd9a8998f0465477887.js
-// Retrieved at 3/23/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.766bea139e8e5fe91adc.js
+// Retrieved at 3/27/2023, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -5940,11 +5940,11 @@
 			const n = e => e.merchandisingUnitAnnouncements
 		},
 		"./src/redditGQL/operations/Frontpage.json": function(e) {
-			e.exports = JSON.parse('{"id":"590ed564157c"}')
+			e.exports = JSON.parse('{"id":"140f78c71c20"}')
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"c1fc98c26cf2"}')
+			e.exports = JSON.parse('{"id":"60cb5c2d5cba"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.3bd9a8998f0465477887.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.766bea139e8e5fe91adc.js.map

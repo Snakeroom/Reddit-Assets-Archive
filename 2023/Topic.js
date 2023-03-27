@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.960ce77d05ac2ae27578.js
-// Retrieved at 3/23/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.556daf886f6ec11c7c5f.js
+// Retrieved at 3/27/2023, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -3432,7 +3432,7 @@
 			e.exports = JSON.parse('{"id":"c09ff0d041c1"}')
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"c1fc98c26cf2"}')
+			e.exports = JSON.parse('{"id":"60cb5c2d5cba"}')
 		},
 		"./src/redditGQL/operations/UpdateSpokenLanguagesPreference.json": function(e) {
 			e.exports = JSON.parse('{"id":"6d0707c83164"}')
@@ -3445,4 +3445,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.960ce77d05ac2ae27578.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.556daf886f6ec11c7c5f.js.map

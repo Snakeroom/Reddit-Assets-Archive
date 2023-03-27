@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.66d69be6761cd4fa1cfb.js
-// Retrieved at 3/23/2023, 6:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.ef509d397d0af5a72537.js
+// Retrieved at 3/27/2023, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "ModQueuePages~reddit-components-MediumPost", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -39385,9 +39385,11 @@
 				approved: "_3PA1NUdBncNEoWXl9e53aE",
 				statusText: "_3trW-r5LnijGIrjgDF1u2M",
 				status: "_3Q6W_eSDsN-BhormvQBcRr",
+				statusMeta: "_3Qp7V0IlguVisBYUCEDLwX",
 				snoozabledButton: "_3Rixx0Z51qJ71wGmQ8UtQj",
 				userIconWrapper: "_3vnCHVExwDbhdlwSh9BV9k",
 				userIcon: "_1O-L18qAEJqcxeYP7bE4mK",
+				filteredExplanationIcon: "a13uMv6sihYo-UyNBZDo8",
 				snoozableDropdown: "_3L6lZrroGMf7wnI2DFJDJx",
 				snoozeIcon: "BUoPqJh1q6Pv_Vf5bsKyT",
 				caretButton: "_1iROd0ZxfCEcEidNiygaYB",
@@ -39410,7 +39412,7 @@
 		"./src/reddit/components/ModQueueActionBar/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return Re
+				return He
 			}));
 			var s, r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				o = n("./node_modules/react/index.js"),
@@ -39847,93 +39849,144 @@
 					seconds: d
 				})))))
 			};
-			var fe = n("./src/reddit/models/ModQueueTrigger/index.ts");
-			const he = e => {
-				let {
-					content: t
-				} = e;
-				const n = Object(o.useMemo)(() => {
-					var e;
-					const n = [];
-					(null === (e = t.modQueueTriggers) || void 0 === e ? void 0 : e.length) || t.bannedBy !== d.m || n.push({
-						icon: "bot_fill",
-						heading: r.fbt._("Blocked by AutoMod", null, {
-							hk: "XZuzM"
-						})
-					});
-					for (const s of t.modQueueTriggers || []) switch (s.type) {
-						case fe.a.AUTOMOD:
-							n.push({
-								icon: "bot_fill",
-								heading: r.fbt._("Blocked by AutoMod", null, {
-									hk: "XZuzM"
-								}),
-								reason: s.message
-							});
-							break;
-						case fe.a.SHADOWBANNED_SUBMITTER:
-							n.push({
-								icon: "ban_fill",
-								heading: r.fbt._("Blocked by automatic filter", null, {
-									hk: "47ub6E"
-								}),
-								reason: s.message
-							});
-							break;
-						case fe.a.HATEFUL_CONTENT:
-							n.push({
-								icon: "mod_mode_fill",
-								heading: r.fbt._("Blocked by automatic filter", null, {
-									hk: "42FKya"
-								}),
-								reason: s.message
-							});
-							break;
-						case fe.a.CROWD_CONTROL:
-							n.push({
-								icon: "crowd_control",
-								heading: r.fbt._("Blocked by crowd control", null, {
-									hk: "iFsfG"
-								}),
-								reason: s.message
-							});
-							break;
-						case fe.a.BAN_EVASION:
-							n.push({
-								icon: "ban_fill",
-								heading: r.fbt._("Blocked by automatic filter", null, {
-									hk: "1Olxtp"
-								}),
-								reason: s.message
-							})
-					}
-					return n
-				}, [t.modQueueTriggers, t.bannedBy]);
-				return i.a.createElement("div", {
-					className: pe.a.filteredWrapper
-				}, n.map((e, t) => {
-					let {
-						heading: n,
-						reason: s,
-						icon: r
-					} = e;
-					return i.a.createElement("div", {
-						key: `${n}-${s}-${t}`,
-						className: pe.a.filteredRow
-					}, i.a.createElement(x.a, {
-						isFilled: !0,
-						name: r,
-						className: Object(P.a)(pe.a.coloredIcon, pe.a.icon)
-					}), i.a.createElement("div", {
-						className: pe.a.statusText
-					}, i.a.createElement("p", {
-						className: pe.a.status
-					}, n), s && i.a.createElement("p", null, s)))
-				}))
-			};
-			var ge = n("./src/reddit/components/InfoBanners/PostRemovalBanner/helpers.tsx"),
-				ve = n("./src/reddit/selectors/subreddit.ts");
+			var fe = n("./src/reddit/models/ModQueueTrigger/index.ts"),
+				he = n("./src/reddit/components/RichTextJson/index.tsx"),
+				ge = n("./src/reddit/components/InfoTextTooltip/Hooked.tsx"),
+				ve = n("./src/reddit/hooks/useInfoTextTooltip.ts");
 			const xe = e => {
+					let {
+						children: t
+					} = e;
+					const n = Object(ve.a)({
+						placement: "top-end"
+					});
+					return i.a.createElement("div", {
+						onMouseEnter: n.show,
+						onMouseLeave: n.hide,
+						ref: n.target.ref
+					}, i.a.createElement("button", {
+						onClick: e => {
+							e.stopPropagation(), n.toggle()
+						},
+						"aria-label": r.fbt._("Additional filter information", null, {
+							hk: "4ByehP"
+						})
+					}, i.a.createElement(x.a, {
+						name: "info",
+						className: pe.a.filteredExplanationIcon
+					})), i.a.createElement(ge.a, {
+						popperProps: n.popperProps,
+						arrowProps: n.arrowProps,
+						visible: n.visible,
+						className: "max-w-[230px] font-semibold text-12"
+					}, i.a.createElement("div", {
+						className: "p-xs"
+					}, t)))
+				},
+				Ee = e => {
+					if (e) try {
+						return JSON.parse(e)
+					} catch {
+						return
+					}
+				},
+				Oe = e => {
+					let {
+						content: t
+					} = e;
+					const n = Object(o.useMemo)(() => {
+						var e, n, s;
+						const o = [];
+						(null === (e = t.modQueueTriggers) || void 0 === e ? void 0 : e.length) || t.bannedBy !== d.m || o.push({
+							icon: "bot_fill",
+							heading: r.fbt._("Blocked by AutoMod", null, {
+								hk: "XZuzM"
+							})
+						});
+						for (const i of t.modQueueTriggers || []) switch (i.type) {
+							case fe.a.AUTOMOD:
+								o.push({
+									icon: "bot_fill",
+									heading: r.fbt._("Blocked by AutoMod", null, {
+										hk: "XZuzM"
+									}),
+									reason: i.message
+								});
+								break;
+							case fe.a.SHADOWBANNED_SUBMITTER:
+								o.push({
+									icon: "ban_fill",
+									heading: r.fbt._("Blocked by Automatic Filter", null, {
+										hk: "2iaUCM"
+									}),
+									reason: i.message
+								});
+								break;
+							case fe.a.HATEFUL_CONTENT:
+								o.push({
+									icon: "mod_mode_fill",
+									heading: r.fbt._("Blocked by Automatic Filter", null, {
+										hk: "4vu7uy"
+									}),
+									reason: i.message
+								});
+								break;
+							case fe.a.CROWD_CONTROL:
+								o.push({
+									icon: "crowd_control",
+									heading: r.fbt._("Blocked by Crowd Control", null, {
+										hk: "6LNvT"
+									}),
+									reason: i.message
+								});
+								break;
+							case fe.a.BAN_EVASION:
+								o.push({
+									icon: "ban_fill",
+									heading: r.fbt._("Blocked by Ban Evasion Protection", null, {
+										hk: "1unYu9"
+									}),
+									reason: i.message,
+									reasonRichText: Ee(null === (s = null === (n = i.details) || void 0 === n ? void 0 : n.recencyExplanation) || void 0 === s ? void 0 : s.richtext),
+									filterExplanation: i.details ? r.fbt._("This account is suspected of ban evasion based on signals such as a verified email or device ID.", null, {
+										hk: "1wLwOR"
+									}) : void 0
+								})
+						}
+						return o
+					}, [t.modQueueTriggers, t.bannedBy]);
+					return i.a.createElement("div", {
+						className: pe.a.filteredWrapper
+					}, n.map((e, t) => {
+						let {
+							heading: n,
+							reason: s,
+							reasonRichText: r,
+							icon: o,
+							filterExplanation: a
+						} = e;
+						return i.a.createElement("div", {
+							key: `${n}-${s}-${t}`,
+							className: pe.a.filteredRow
+						}, i.a.createElement(x.a, {
+							isFilled: !0,
+							name: o,
+							className: Object(P.a)(pe.a.coloredIcon, pe.a.icon)
+						}), i.a.createElement("div", {
+							className: pe.a.statusText
+						}, i.a.createElement("div", {
+							className: pe.a.statusMeta
+						}, i.a.createElement("p", {
+							className: pe.a.status
+						}, n), a && i.a.createElement(xe, null, a)), r && i.a.createElement(he.b, {
+							content: r,
+							rtJsonElementProps: {}
+						}), s && !r && i.a.createElement("p", null, s)))
+					}))
+				};
+			var Ce = n("./src/reddit/components/InfoBanners/PostRemovalBanner/helpers.tsx"),
+				Ae = n("./src/reddit/selectors/subreddit.ts");
+			const ye = e => {
 				let {
 					content: t
 				} = e;
@@ -39942,7 +39995,7 @@
 						userName: null == t ? void 0 : t.bannedBy
 					}) : null),
 					o = Object(b.b)(t),
-					d = Object(a.e)(e => Object(ve.X)(e, {
+					d = Object(a.e)(e => Object(Ae.X)(e, {
 						subredditId: o ? t.belongsTo.id : t.subredditId
 					})),
 					c = Object(a.e)(e => {
@@ -39950,7 +40003,7 @@
 						return (null === (n = null === (t = e.user) || void 0 === t ? void 0 : t.account) || void 0 === n ? void 0 : n.isAdmin) || (null === (r = null === (s = e.user) || void 0 === s ? void 0 : s.account) || void 0 === r ? void 0 : r.isEmployee)
 					}),
 					l = o && t.removedByCategory ? t.removedByCategory : null,
-					u = l ? Object(ge.b)(l) : "clear_fill",
+					u = l ? Object(Ce.b)(l) : "clear_fill",
 					m = t.bannedAtUTC ? (null === (n = t.bannedAtUTC) || void 0 === n ? void 0 : n.toString().length) > 10 ? t.bannedAtUTC / 1e3 : t.bannedAtUTC : null,
 					p = ![E.g.AntiEvilOps, E.g.CommunityOps, E.g.ContentTakedown, E.g.CopyrightTakedown, E.g.Reddit].includes(l) || c;
 				return i.a.createElement(i.a.Fragment, null, s && p ? i.a.createElement("div", {
@@ -39978,41 +40031,41 @@
 					onClick: e => e.stopPropagation()
 				}, Object($.e)(s.username)), m && i.a.createElement(i.a.Fragment, null, " ", i.a.createElement(ue.d, {
 					seconds: m
-				}))) : l && Object(ge.e)(l, (null == s ? void 0 : s.username) || null, d.name))))
+				}))) : l && Object(Ce.e)(l, (null == s ? void 0 : s.username) || null, d.name))))
 			};
-			var Ee = n("./src/reddit/components/Reports/SnoozableReport/index.tsx"),
-				Oe = n("./src/reddit/components/RestrictedFlatlistButton/index.tsx"),
-				Ce = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				Ae = n("./src/reddit/icons/fonts/helpers.tsx");
+			var je = n("./src/reddit/components/Reports/SnoozableReport/index.tsx"),
+				Ie = n("./src/reddit/components/RestrictedFlatlistButton/index.tsx"),
+				ke = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				_e = n("./src/reddit/icons/fonts/helpers.tsx");
 			n("./src/reddit/icons/fonts/Admin/index.tsx"), n("./src/reddit/icons/fonts/Approve/index.tsx"), n("./src/reddit/icons/fonts/Archived/index.tsx"), n("./src/reddit/icons/fonts/Calendar/index.tsx"), n("./src/reddit/icons/fonts/Clock/index.tsx"), n("./src/reddit/icons/fonts/Clear/index.tsx"), n("./src/reddit/icons/fonts/Coin/index.tsx"), n("./src/reddit/icons/fonts/Comment/index.tsx"), n("./src/reddit/icons/fonts/DistinguishShield/index.tsx"), n("./src/reddit/icons/fonts/Downvote/index.tsx"), n("./src/reddit/icons/fonts/DropdownTriangle/index.tsx"), n("./src/reddit/icons/fonts/Envelope/index.tsx"), n("./src/reddit/icons/fonts/Expand/index.tsx"), n("./src/reddit/icons/fonts/Expandos/Arrows/Collapse/index.tsx"), n("./src/reddit/icons/fonts/Expandos/Arrows/Expand/index.tsx"), n("./src/reddit/icons/fonts/Gift/index.tsx");
-			var ye = n("./src/reddit/icons/fonts/IgnoreReport/index.tsx");
+			var Se = n("./src/reddit/icons/fonts/IgnoreReport/index.tsx");
 			n("./src/reddit/icons/fonts/Info/index.tsx"), n("./src/reddit/icons/fonts/Live/index.tsx"), n("./src/reddit/icons/fonts/Lock/index.tsx");
 			n("./src/reddit/icons/fonts/ModActions/index.tsx"), n("./src/reddit/icons/fonts/ModSettings/index.tsx");
-			var je = n("./src/reddit/icons/fonts/Op/index.m.less"),
-				Ie = n.n(je),
-				ke = n("./src/lib/lessComponent.tsx");
-			ke.a.wrapped(e => i.a.createElement("i", {
-				className: `${Object(Ae.b)("author",e.isFilled)} ${e.className}`,
+			var we = n("./src/reddit/icons/fonts/Op/index.m.less"),
+				Te = n.n(we),
+				Pe = n("./src/lib/lessComponent.tsx");
+			Pe.a.wrapped(e => i.a.createElement("i", {
+				className: `${Object(_e.b)("author",e.isFilled)} ${e.className}`,
 				id: e.id,
 				onMouseEnter: e.onMouseEnter,
 				onMouseLeave: e.onMouseLeave
-			}, i.a.createElement(Ae.a, null, e.desc)), "OpIcon", Ie.a), n("./src/reddit/icons/fonts/OutboundLink/index.tsx"), n("./src/reddit/icons/fonts/Pencil/index.tsx");
-			var _e = n("./src/reddit/icons/fonts/Photos/index.m.less"),
-				Se = n.n(_e);
-			ke.a.wrapped(e => i.a.createElement("i", {
-				className: `${Object(Ae.b)("image_post",e.isFilled)} ${e.className}`
-			}), "PhotoIcon", Se.a), n("./src/reddit/icons/fonts/Premium/index.tsx"), n("./src/reddit/icons/fonts/Remove/index.tsx");
-			var we = n("./src/reddit/icons/fonts/Report/index.tsx"),
-				Te = (n("./src/reddit/icons/fonts/Share/index.tsx"), n("./src/reddit/icons/fonts/Spam/index.tsx"), n("./src/reddit/icons/fonts/Sticky/index.tsx"), n("./src/reddit/icons/fonts/Tag/index.tsx"), n("./src/reddit/icons/fonts/Text/index.m.less")),
-				Pe = n.n(Te);
-			ke.a.wrapped(e => i.a.createElement("i", {
-				className: `${Object(Ae.b)("text_post",e.isFilled)} ${e.className}`
-			}), "TextIcon", Pe.a), n("./src/reddit/icons/fonts/Upvote/index.tsx");
-			const Ne = e => {
+			}, i.a.createElement(_e.a, null, e.desc)), "OpIcon", Te.a), n("./src/reddit/icons/fonts/OutboundLink/index.tsx"), n("./src/reddit/icons/fonts/Pencil/index.tsx");
+			var Ne = n("./src/reddit/icons/fonts/Photos/index.m.less"),
+				De = n.n(Ne);
+			Pe.a.wrapped(e => i.a.createElement("i", {
+				className: `${Object(_e.b)("image_post",e.isFilled)} ${e.className}`
+			}), "PhotoIcon", De.a), n("./src/reddit/icons/fonts/Premium/index.tsx"), n("./src/reddit/icons/fonts/Remove/index.tsx");
+			var Me = n("./src/reddit/icons/fonts/Report/index.tsx"),
+				Re = (n("./src/reddit/icons/fonts/Share/index.tsx"), n("./src/reddit/icons/fonts/Spam/index.tsx"), n("./src/reddit/icons/fonts/Sticky/index.tsx"), n("./src/reddit/icons/fonts/Tag/index.tsx"), n("./src/reddit/icons/fonts/Text/index.m.less")),
+				Le = n.n(Re);
+			Pe.a.wrapped(e => i.a.createElement("i", {
+				className: `${Object(_e.b)("text_post",e.isFilled)} ${e.className}`
+			}), "TextIcon", Le.a), n("./src/reddit/icons/fonts/Upvote/index.tsx");
+			const Be = e => {
 					let {
 						content: t
 					} = e;
-					const n = Object(Ce.b)(),
+					const n = Object(ke.b)(),
 						s = Object(a.d)(),
 						d = Object(o.useCallback)(() => {
 							const e = Object(b.a)(t.id),
@@ -40056,7 +40109,7 @@
 						return n + e
 					}, 0), "number of reports")], {
 						hk: "1l1xMH"
-					})), !c && i.a.createElement(Oe.c, {
+					})), !c && i.a.createElement(Ie.c, {
 						className: pe.a.ignoreButton,
 						onClick: d,
 						text: t.ignoreReports ? r.fbt._("Restore Reports", null, {
@@ -40064,13 +40117,13 @@
 						}) : r.fbt._("ignore reports", null, {
 							hk: "48jlNW"
 						})
-					}, t.ignoreReports ? i.a.createElement(we.a, {
+					}, t.ignoreReports ? i.a.createElement(Me.a, {
 						className: pe.a.ignoreButtonIcon
-					}) : i.a.createElement(ye.a, {
+					}) : i.a.createElement(Se.a, {
 						className: pe.a.ignoreButtonIcon
 					}))), t.userReports.map((e, n) => {
 						let [s, r, o, a] = e;
-						return s ? void 0 !== o && a ? i.a.createElement(Ee.a, {
+						return s ? void 0 !== o && a ? i.a.createElement(je.a, {
 							key: `user-${s}`,
 							reason: s,
 							amount: r,
@@ -40085,7 +40138,7 @@
 						}, s, " (", r, ")") : null
 					}))))
 				},
-				De = e => {
+				Fe = e => {
 					let {
 						content: t
 					} = e;
@@ -40098,15 +40151,15 @@
 									});
 								case s.REMOVED:
 								case s.SPAM:
-									return i.a.createElement(xe, {
+									return i.a.createElement(ye, {
 										content: t
 									});
 								case s.FILTERED:
-									return i.a.createElement(he, {
+									return i.a.createElement(Oe, {
 										content: t
 									});
 								case s.REPORTED:
-									return i.a.createElement(Ne, {
+									return i.a.createElement(Be, {
 										content: t
 									});
 								default:
@@ -40144,8 +40197,8 @@
 						postOrCommentId: t.id
 					}))
 				},
-				Me = (e, t) => Object(f.c)(t, e),
-				Re = e => {
+				Ue = (e, t) => Object(f.c)(t, e),
+				He = e => {
 					let {
 						content: t,
 						listingKey: n,
@@ -40191,7 +40244,7 @@
 						Y = P === s.FILTERED || V,
 						J = P === s.REMOVED && !t.modRemovalReason && !Y,
 						X = [s.REMOVED, s.SPAM].indexOf(P) > -1,
-						Z = D ? h.n : Me,
+						Z = D ? h.n : Ue,
 						$ = Object(o.useCallback)(() => {
 							const e = D ? A.r : O.a;
 							w(e(t.id)), _(Z(t.id, "approve"))
@@ -40221,7 +40274,7 @@
 						className: T.a.wrapper,
 						"data-testid": "modqueue-action-bar",
 						ref: H
-					}, i.a.createElement(De, {
+					}, i.a.createElement(Fe, {
 						content: t
 					}), i.a.createElement("div", {
 						className: T.a.actionBar
@@ -80101,7 +80154,7 @@
 			e.exports = JSON.parse('{"id":"84b1688a0244"}')
 		},
 		"./src/redditGQL/operations/AddPredictionDrafts.json": function(e) {
-			e.exports = JSON.parse('{"id":"892d793918d8"}')
+			e.exports = JSON.parse('{"id":"2e35b2459632"}')
 		},
 		"./src/redditGQL/operations/AllModerators.json": function(e) {
 			e.exports = JSON.parse('{"id":"fcd88a3eea91"}')
@@ -80128,13 +80181,13 @@
 			e.exports = JSON.parse('{"id":"1b7d106afc6c"}')
 		},
 		"./src/redditGQL/operations/CreateComment.json": function(e) {
-			e.exports = JSON.parse('{"id":"f474c490e3e9"}')
+			e.exports = JSON.parse('{"id":"5c467a9695d0"}')
 		},
 		"./src/redditGQL/operations/CreateModUserNote.json": function(e) {
 			e.exports = JSON.parse('{"id":"10ad38be41ae"}')
 		},
 		"./src/redditGQL/operations/CreatePredictionTournament.json": function(e) {
-			e.exports = JSON.parse('{"id":"a44eec05bc52"}')
+			e.exports = JSON.parse('{"id":"61f92a746c27"}')
 		},
 		"./src/redditGQL/operations/CreateScheduledPost.json": function(e) {
 			e.exports = JSON.parse('{"id":"737d59db38fc"}')
@@ -80158,10 +80211,10 @@
 			e.exports = JSON.parse('{"id":"124d4a37eca2"}')
 		},
 		"./src/redditGQL/operations/EndPredictionTournament.json": function(e) {
-			e.exports = JSON.parse('{"id":"a7b24402a759"}')
+			e.exports = JSON.parse('{"id":"85a32f21719a"}')
 		},
 		"./src/redditGQL/operations/EventPostsBySubredditName.json": function(e) {
-			e.exports = JSON.parse('{"id":"b464d6a16b34"}')
+			e.exports = JSON.parse('{"id":"d9609c5e1876"}')
 		},
 		"./src/redditGQL/operations/FetchContentControls.json": function(e) {
 			e.exports = JSON.parse('{"id":"58b71dbd3384"}')
@@ -80185,7 +80238,7 @@
 			e.exports = JSON.parse('{"id":"8a89fd7c7db1"}')
 		},
 		"./src/redditGQL/operations/GetCommentById.json": function(e) {
-			e.exports = JSON.parse('{"id":"88a3ec64fa21"}')
+			e.exports = JSON.parse('{"id":"251ec8495c0f"}')
 		},
 		"./src/redditGQL/operations/GetDevPlatformMetadata.json": function(e) {
 			e.exports = JSON.parse('{"id":"fbfb3b396dfe"}')
@@ -80215,7 +80268,7 @@
 			e.exports = JSON.parse('{"id":"bb325c103c55"}')
 		},
 		"./src/redditGQL/operations/GetTournaments.json": function(e) {
-			e.exports = JSON.parse('{"id":"897cd7cb6920"}')
+			e.exports = JSON.parse('{"id":"5905d3f2880d"}')
 		},
 		"./src/redditGQL/operations/GetTournamentsBaseInfo.json": function(e) {
 			e.exports = JSON.parse('{"id":"cebfc8734cec"}')
@@ -80233,10 +80286,10 @@
 			e.exports = JSON.parse('{"id":"963b46029a60"}')
 		},
 		"./src/redditGQL/operations/ModQueueItems.json": function(e) {
-			e.exports = JSON.parse('{"id":"dd7e6cf5fa5b"}')
+			e.exports = JSON.parse('{"id":"c99e33dcfb64"}')
 		},
 		"./src/redditGQL/operations/ModQueueTriggers.json": function(e) {
-			e.exports = JSON.parse('{"id":"de8696c3b5fd"}')
+			e.exports = JSON.parse('{"id":"cc11efb25027"}')
 		},
 		"./src/redditGQL/operations/ModerationActionCategories.json": function(e) {
 			e.exports = JSON.parse('{"id":"45bc34defbb5"}')
@@ -80260,10 +80313,10 @@
 			e.exports = JSON.parse('{"id":"a20cc8dd230d"}')
 		},
 		"./src/redditGQL/operations/PopularFeedElements.json": function(e) {
-			e.exports = JSON.parse('{"id":"18fe4e9c67de"}')
+			e.exports = JSON.parse('{"id":"f383974e883c"}')
 		},
 		"./src/redditGQL/operations/ProfileFeed.json": function(e) {
-			e.exports = JSON.parse('{"id":"92aea4e29317"}')
+			e.exports = JSON.parse('{"id":"ec69156a6203"}')
 		},
 		"./src/redditGQL/operations/RemoveApprovedTalkHost.json": function(e) {
 			e.exports = JSON.parse('{"id":"e016564e243a"}')
@@ -80278,10 +80331,10 @@
 			e.exports = JSON.parse('{"id":"ece6b91ed02d"}')
 		},
 		"./src/redditGQL/operations/SingleCommentById.json": function(e) {
-			e.exports = JSON.parse('{"id":"f151b4667f32"}')
+			e.exports = JSON.parse('{"id":"d46cadc7a557"}')
 		},
 		"./src/redditGQL/operations/SinglePostInfoById.json": function(e) {
-			e.exports = JSON.parse('{"id":"b8368f5028bb"}')
+			e.exports = JSON.parse('{"id":"6b1f3b296ee7"}')
 		},
 		"./src/redditGQL/operations/SubmitScheduledPost.json": function(e) {
 			e.exports = JSON.parse('{"id":"6f9e584d390a"}')
@@ -80308,7 +80361,7 @@
 			e.exports = JSON.parse('{"id":"29aee4089528"}')
 		},
 		"./src/redditGQL/operations/SubredditPage.json": function(e) {
-			e.exports = JSON.parse('{"id":"109ea36626e4"}')
+			e.exports = JSON.parse('{"id":"609335dde4ed"}')
 		},
 		"./src/redditGQL/operations/SubredditPageExtra.json": function(e) {
 			e.exports = JSON.parse('{"id":"d8f0b7e2edbe"}')
@@ -80341,7 +80394,7 @@
 			e.exports = JSON.parse('{"id":"ca83defc2e15"}')
 		},
 		"./src/redditGQL/operations/TopAwardedPosts.json": function(e) {
-			e.exports = JSON.parse('{"id":"4d8150ddad2e"}')
+			e.exports = JSON.parse('{"id":"9d5fe5c2a097"}')
 		},
 		"./src/redditGQL/operations/TopAwardersLeaderboard.json": function(e) {
 			e.exports = JSON.parse('{"id":"750ff4a757de"}')
@@ -80371,7 +80424,7 @@
 			e.exports = JSON.parse('{"id":"8732ab4560ce"}')
 		},
 		"./src/redditGQL/operations/UpdatePredictionTournament.json": function(e) {
-			e.exports = JSON.parse('{"id":"ae93908b33c0"}')
+			e.exports = JSON.parse('{"id":"24b744477051"}')
 		},
 		"./src/redditGQL/operations/UpdateScheduledPost.json": function(e) {
 			e.exports = JSON.parse('{"id":"db256acfa640"}')
@@ -80417,4 +80470,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.66d69be6761cd4fa1cfb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.ef509d397d0af5a72537.js.map

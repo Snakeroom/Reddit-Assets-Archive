@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.537a73acd4e32e3d0fe3.js
-// Retrieved at 3/23/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.d45afd942764fc14ec67.js
+// Retrieved at 3/27/2023, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit~StandalonePostPage", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -40138,7 +40138,7 @@
 			e.exports = JSON.parse('{"id":"445164f0825f"}')
 		},
 		"./src/redditGQL/operations/CreateComment.json": function(e) {
-			e.exports = JSON.parse('{"id":"f474c490e3e9"}')
+			e.exports = JSON.parse('{"id":"5c467a9695d0"}')
 		},
 		"./src/redditGQL/operations/CreateLiveAudioRoomOnProfile.json": function(e) {
 			e.exports = JSON.parse('{"id":"e35a47c6aa21"}')
@@ -40211,4 +40211,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.537a73acd4e32e3d0fe3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.d45afd942764fc14ec67.js.map
