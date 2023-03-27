@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.853519c44401911bdfdd.js
-// Retrieved at 3/27/2023, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7c8216b87e00903a4fbe.js
+// Retrieved at 3/27/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -5413,11 +5413,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("184816"),
+				buildNumber: Object(r.c)("184828"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1679929941"),
+				buildTimestamp: Object(r.b)("1679940618"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -8155,14 +8155,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c7b915850ccedf3aaf4252612c851f8bb630a5f21-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c9fbdc5a770d6026d274afdc9c166f2905ca82cbd-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "7b915850ccedf3aaf4252612c851f8bb630a5f21-production",
+						release: "9fbdc5a770d6026d274afdc9c166f2905ca82cbd-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -8715,7 +8715,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "7b915850ccedf3aaf4252612c851f8bb630a5f21-production",
+							releaseClient: "9fbdc5a770d6026d274afdc9c166f2905ca82cbd-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -27563,90 +27563,103 @@
 		"./src/reddit/helpers/installGoodVisitFeedSearchTracker/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "f", (function() {
-				return u
-			})), i.d(t, "a", (function() {
 				return _
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "a", (function() {
 				return m
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "c", (function() {
 				return p
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "d", (function() {
 				return h
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "b", (function() {
 				return b
+			})), i.d(t, "e", (function() {
+				return v
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./src/lib/constants/index.ts"),
 				r = i("./src/lib/makeSearchKey/index.ts"),
-				s = i("./src/reddit/helpers/trackers/global.ts"),
-				o = i("./src/reddit/selectors/telemetry.ts"),
-				d = i("./src/telemetry/index.ts"),
-				a = i("./node_modules/uuid/dist/esm-browser/v4.js"),
-				l = i("./src/reddit/helpers/localStorage/index.ts");
-			const c = 5e3,
-				u = {};
+				s = i("./src/reddit/helpers/localStorage/index.ts"),
+				o = i("./src/reddit/helpers/trackers/global.ts"),
+				d = i("./src/reddit/selectors/telemetry.ts"),
+				a = i("./src/telemetry/index.ts"),
+				l = i("./node_modules/uuid/dist/esm-browser/v4.js"),
+				c = i("./src/reddit/helpers/clickSourceData/index.ts");
+			const u = 5e3,
+				_ = {};
 			"undefined" != typeof window && window.addEventListener("beforeunload", (function() {
 				var e, t;
-				for (const i of Object.values(u)) i.completed || (null === (e = i.goodVisitTimer) || void 0 === e || e.clear(), null === (t = i.downtimeTimer) || void 0 === t || t.clear())
+				for (const i of Object.values(_)) i.completed || (null === (e = i.goodVisitTimer) || void 0 === e || e.clear(), null === (t = i.downtimeTimer) || void 0 === t || t.clear())
 			}));
-			const _ = (e, t, i, n, o, a, l, c) => {
-					if (u[e]) return;
-					u[e] = {
+			const m = (e, t, i, n, s, d, l, c) => {
+					if (_[e]) return;
+					_[e] = {
 						completed: !1
-					}, b(t, i(), Object(r.e)((null == a ? void 0 : a.queryParams) || {}), o);
-					const _ = u[e],
+					}, v(t, i(), Object(r.e)((null == d ? void 0 : d.queryParams) || {}), s);
+					const u = _[e],
 						m = null != l ? l : 15e3,
 						p = null != c ? c : 3e4;
-					_.goodVisitTimer = new g(m, () => {
+					u.goodVisitTimer = new w(m, () => {
 						var e;
-						null === (e = _.goodVisitTimer) || void 0 === e || e.clear(), Object(d.a)(Object(s.d)(m, t, n, o, a)(i())), _.goodVisitTimer = new g(p - m, () => {
+						null === (e = u.goodVisitTimer) || void 0 === e || e.clear(), Object(a.a)(Object(o.d)(m, t, n, s, d)(i())), u.goodVisitTimer = new w(p - m, () => {
 							var e, r;
-							null === (e = _.goodVisitTimer) || void 0 === e || e.clear(), null === (r = _.downtimeTimer) || void 0 === r || r.clear(), Object(d.a)(Object(s.d)(p, t, n, o, a)(i())), _.completed = !0
+							null === (e = u.goodVisitTimer) || void 0 === e || e.clear(), null === (r = u.downtimeTimer) || void 0 === r || r.clear(), Object(a.a)(Object(o.d)(p, t, n, s, d)(i())), u.completed = !0
 						})
 					})
 				},
-				m = e => {
+				p = e => {
 					var t;
-					const i = u[e];
-					i && (i.completed || (null === (t = i.goodVisitTimer) || void 0 === t || t.pause(), i.downtimeTimer = new g(3e5, () => {
+					const i = _[e];
+					i && (i.completed || (null === (t = i.goodVisitTimer) || void 0 === t || t.pause(), i.downtimeTimer = new w(3e5, () => {
 						var e, t;
 						null === (e = i.goodVisitTimer) || void 0 === e || e.clear(), null === (t = i.downtimeTimer) || void 0 === t || t.clear(), i.completed = !0
 					})))
 				},
-				p = e => {
+				h = e => {
 					var t, i;
-					const n = u[e];
+					const n = _[e];
 					n && (n.completed || (null === (t = n.downtimeTimer) || void 0 === t || t.clear(), null === (i = n.goodVisitTimer) || void 0 === i || i.reset()))
-				},
-				h = function(e, t) {
-					let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 15e3,
-						r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 3e4;
-					var s;
-					if (!e) return;
-					const a = e.source,
-						l = new Date(e.expires) <= new Date,
-						c = t(),
-						_ = null === (s = c.platform.currentPage) || void 0 === s ? void 0 : s.routeMatch,
-						m = _ && o.w(_),
-						p = n.R.has(a) && m && n.S.has(m) && !l;
-					if (!p) return;
-					if (u[e.key]) return;
-					u[e.key] = {
-						completed: !1
-					};
-					const h = u[e.key];
-					h.goodVisitTimer = new g(i, () => {
-						var n;
-						null === (n = h.goodVisitTimer) || void 0 === n || n.clear(), Object(d.a)(f(t(), e, i)), h.goodVisitTimer = new g(r - i, () => {
-							var i, n;
-							null === (i = h.goodVisitTimer) || void 0 === i || i.clear(), null === (n = h.downtimeTimer) || void 0 === n || n.clear(), Object(d.a)(f(t(), e, r)), h.completed = !0
-						})
-					})
 				};
 
-			function f(e, t, i) {
-				var n, r, o, d, a;
-				const l = Object(s.d)(i, t.source, (null === (n = e.platform.currentPage) || void 0 === n ? void 0 : n.routeMatch) || void 0, null === (o = null === (r = t.eventPayload) || void 0 === r ? void 0 : r.timer) || void 0 === o ? void 0 : o.referrerCorrelationId)(e);
+			function f(e) {
+				const t = e.platform.currentPage;
+				if (!t) return;
+				const i = Object(r.e)(t.queryParams),
+					n = s.r();
+				if ((null == n ? void 0 : n.source) === c.a.SEARCH_DROPDOWN && new Date(null == n ? void 0 : n.expires) >= new Date) return void v(c.a.SEARCH_DROPDOWN, e, i);
+				const o = d.v(t);
+				o && v(o, e, i)
+			}
+			const b = function(e, t) {
+				let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 15e3,
+					r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 3e4;
+				var s;
+				if (window.addEventListener("beforeunload", () => {
+						f(t())
+					}), !e) return;
+				const o = e.source,
+					l = new Date(e.expires) <= new Date,
+					c = t(),
+					u = null === (s = c.platform.currentPage) || void 0 === s ? void 0 : s.routeMatch,
+					m = u && d.w(u),
+					p = n.R.has(o) && m && n.S.has(m) && !l;
+				if (!p) return;
+				if (_[e.key]) return;
+				_[e.key] = {
+					completed: !1
+				};
+				const h = _[e.key];
+				h.goodVisitTimer = new w(i, () => {
+					var n;
+					null === (n = h.goodVisitTimer) || void 0 === n || n.clear(), Object(a.a)(g(t(), e, i)), h.goodVisitTimer = new w(r - i, () => {
+						var i, n;
+						null === (i = h.goodVisitTimer) || void 0 === i || i.clear(), null === (n = h.downtimeTimer) || void 0 === n || n.clear(), Object(a.a)(g(t(), e, r)), h.completed = !0
+					})
+				})
+			};
+
+			function g(e, t, i) {
+				var n, r, s, d, a;
+				const l = Object(o.d)(i, t.source, (null === (n = e.platform.currentPage) || void 0 === n ? void 0 : n.routeMatch) || void 0, null === (s = null === (r = t.eventPayload) || void 0 === r ? void 0 : r.timer) || void 0 === s ? void 0 : s.referrerCorrelationId)(e);
 				return {
 					...l,
 					search: {
@@ -27660,29 +27673,29 @@
 				}
 			}
 
-			function b(e, t, i, r) {
-				let d;
+			function v(e, t, i, r) {
+				let a;
 				if (n.Q.has(e)) {
-					const n = Object(s.c)(e);
-					d = {
-						search: o.db(t, i, n)
+					const n = Object(o.c)(e);
+					a = {
+						search: t && i ? d.db(t, i, n) : {}
 					}
 				} else {
 					if (!n.P.has(e)) return;
-					d = {
+					a = {
 						timer: {
 							referrerCorrelationId: r
 						}
 					}
 				}
-				Object(l.yb)({
-					key: Object(a.a)(),
+				Object(s.yb)({
+					key: Object(l.a)(),
 					source: e,
-					expires: new Date((new Date).getTime() + c),
-					eventPayload: d
+					expires: new Date((new Date).getTime() + u),
+					eventPayload: a
 				})
 			}
-			class g {
+			class w {
 				constructor(e, t) {
 					this.remaining = e, this.callback = t, this.reset()
 				}
@@ -30073,7 +30086,7 @@
 				}),
 				T = e => {
 					switch (e) {
-						case b.a.TYPEAHEAD:
+						case b.a.SEARCH_DROPDOWN:
 							return c.a.Typeahead;
 						case b.a.POST_DETAIL_COMMENT_SEARCH:
 							return c.a.PdpCommentSearch;
@@ -52604,4 +52617,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.853519c44401911bdfdd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7c8216b87e00903a4fbe.js.map
