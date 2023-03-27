@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.a69ea31dacf40ab6e890.js
-// Retrieved at 3/27/2023, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.0f7da6e59ac626ef7296.js
+// Retrieved at 3/27/2023, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "CollectionCommentsPage~SearchResults", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -48460,34 +48460,35 @@
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return m
+				return p
 			})), n.d(t, "b", (function() {
-				return b
+				return f
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
-				o = n("./src/reddit/helpers/trackers/experiments/user.ts"),
-				i = n("./src/reddit/reducers/user/experiments/shredditPDPExperimentHeader/index.ts"),
-				a = n("./src/reddit/selectors/telemetry.ts"),
-				c = n("./node_modules/reselect/es/index.js"),
-				d = n("./src/reddit/selectors/user.ts");
-			const l = e => e.user.experiments.shredditPDPExperimentInfo,
-				u = Object(c.a)(d.S, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? i.a.Off : t),
-				m = Object(c.a)(u, e => e === i.a.Treatment),
-				p = Object(c.a)(u, l, (e, t) => e !== i.a.Off && null !== t),
-				b = (e, t) => {
+				o = n("./src/reddit/helpers/installGoodVisitFeedSearchTracker/index.ts"),
+				i = n("./src/reddit/helpers/trackers/experiments/user.ts"),
+				a = n("./src/reddit/reducers/user/experiments/shredditPDPExperimentHeader/index.ts"),
+				c = n("./src/reddit/selectors/telemetry.ts"),
+				d = n("./node_modules/reselect/es/index.js"),
+				l = n("./src/reddit/selectors/user.ts");
+			const u = e => e.user.experiments.shredditPDPExperimentInfo,
+				m = Object(d.a)(l.S, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? a.a.Off : t),
+				p = Object(d.a)(m, e => e === a.a.Treatment),
+				b = Object(d.a)(m, u, (e, t) => e !== a.a.Off && null !== t),
+				f = (e, t) => {
 					const n = t(),
-						c = u(n);
-					Object(d.S)(n) || c === i.a.Off || e.block(e => {
+						d = m(n);
+					Object(l.S)(n) || d === a.a.Off || e.block(e => {
 						if ((e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname))
-							if (c === i.a.Control)((e, t) => {
-								if (p(e)) {
-									const n = l(e);
+							if (d === a.a.Control)((e, t) => {
+								if (b(e)) {
+									const n = u(e);
 									if (null != n) {
-										const s = a.f(e),
-											r = a.sb(e),
-											i = a.ab(e);
-										Object(o.a)(s, r, i, {
+										const s = c.f(e),
+											r = c.sb(e),
+											o = c.ab(e);
+										Object(i.a)(s, r, o, {
 											id: n.id,
 											isOverride: !1,
 											name: n.name,
@@ -48497,7 +48498,7 @@
 									}
 								} else Object(r.d)(e, s.Df, t)
 							})(t(), s.S.Control1);
-							else if (c === i.a.Treatment) return window.location.href = e.pathname, !1
+							else if (d === a.a.Treatment) return Object(o.f)(n), window.location.href = e.pathname, !1
 					})
 				}
 		},
@@ -49433,4 +49434,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.a69ea31dacf40ab6e890.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.0f7da6e59ac626ef7296.js.map

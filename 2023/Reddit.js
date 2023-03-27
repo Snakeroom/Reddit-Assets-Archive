@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.fe9a3818bebf84eb72d9.js
-// Retrieved at 3/27/2023, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.69faab1b89938c964936.js
+// Retrieved at 3/27/2023, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -17839,7 +17839,7 @@
 									const r = Date.now() - s;
 									Object(G.a)(Object(mv.f)("tab_backgrounded", n)(l.getState(), r, e, t))
 								}(s || e || n || t) && (Ln.db(), Ln.hb(), Ln.fb(), Ln.eb())
-							}(null === (e = null == n ? void 0 : n.locationState) || void 0 === e ? void 0 : e.clickId) && eO.f[n.locationState.clickId] && !eO.f[n.locationState.clickId].completed && ("visible" !== document.visibilityState ? Object(eO.c)(n.locationState.clickId) : Object(eO.d)(n.locationState.clickId))
+							}(null === (e = null == n ? void 0 : n.locationState) || void 0 === e ? void 0 : e.clickId) && eO.g[n.locationState.clickId] && !eO.g[n.locationState.clickId].completed && ("visible" !== document.visibilityState ? Object(eO.c)(n.locationState.clickId) : Object(eO.d)(n.locationState.clickId))
 						}), Object(ae.h)(l.getState()) && hv(l.getState), (e => {
 							return Object(hc.c)(e, {
 								experimentEligibilitySelector: hc.a,
@@ -20768,34 +20768,35 @@
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return m
+				return p
 			})), n.d(t, "b", (function() {
-				return b
+				return h
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
-				o = n("./src/reddit/helpers/trackers/experiments/user.ts"),
-				a = n("./src/reddit/reducers/user/experiments/shredditPDPExperimentHeader/index.ts"),
-				i = n("./src/reddit/selectors/telemetry.ts"),
-				c = n("./node_modules/reselect/es/index.js"),
-				l = n("./src/reddit/selectors/user.ts");
-			const d = e => e.user.experiments.shredditPDPExperimentInfo,
-				u = Object(c.a)(l.S, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? a.a.Off : t),
-				m = Object(c.a)(u, e => e === a.a.Treatment),
-				p = Object(c.a)(u, d, (e, t) => e !== a.a.Off && null !== t),
-				b = (e, t) => {
+				o = n("./src/reddit/helpers/installGoodVisitFeedSearchTracker/index.ts"),
+				a = n("./src/reddit/helpers/trackers/experiments/user.ts"),
+				i = n("./src/reddit/reducers/user/experiments/shredditPDPExperimentHeader/index.ts"),
+				c = n("./src/reddit/selectors/telemetry.ts"),
+				l = n("./node_modules/reselect/es/index.js"),
+				d = n("./src/reddit/selectors/user.ts");
+			const u = e => e.user.experiments.shredditPDPExperimentInfo,
+				m = Object(l.a)(d.S, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? i.a.Off : t),
+				p = Object(l.a)(m, e => e === i.a.Treatment),
+				b = Object(l.a)(m, u, (e, t) => e !== i.a.Off && null !== t),
+				h = (e, t) => {
 					const n = t(),
-						c = u(n);
-					Object(l.S)(n) || c === a.a.Off || e.block(e => {
+						l = m(n);
+					Object(d.S)(n) || l === i.a.Off || e.block(e => {
 						if ((e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname))
-							if (c === a.a.Control)((e, t) => {
-								if (p(e)) {
-									const n = d(e);
+							if (l === i.a.Control)((e, t) => {
+								if (b(e)) {
+									const n = u(e);
 									if (null != n) {
-										const s = i.f(e),
-											r = i.sb(e),
-											a = i.ab(e);
-										Object(o.a)(s, r, a, {
+										const s = c.f(e),
+											r = c.sb(e),
+											o = c.ab(e);
+										Object(a.a)(s, r, o, {
 											id: n.id,
 											isOverride: !1,
 											name: n.name,
@@ -20805,7 +20806,7 @@
 									}
 								} else Object(r.d)(e, s.Df, t)
 							})(t(), s.S.Control1);
-							else if (c === a.a.Treatment) return window.location.href = e.pathname, !1
+							else if (l === i.a.Treatment) return Object(o.f)(n), window.location.href = e.pathname, !1
 					})
 				}
 		},
@@ -21176,4 +21177,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.fe9a3818bebf84eb72d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.69faab1b89938c964936.js.map

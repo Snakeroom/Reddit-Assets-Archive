@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.0d00f4f3802f86eaa184.js
-// Retrieved at 3/27/2023, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.075dda80758e3a073aab.js
+// Retrieved at 3/27/2023, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -5413,11 +5413,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("184854"),
+				buildNumber: Object(r.c)("184857"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1679952267"),
+				buildTimestamp: Object(r.b)("1679956056"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -8155,14 +8155,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c5d9a3b2999b4fe416f16d2ee7a87fc7e153c9509-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c19b19e89467947dba80a06a502ee503f03545952-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "5d9a3b2999b4fe416f16d2ee7a87fc7e153c9509-production",
+						release: "19b19e89467947dba80a06a502ee503f03545952-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -8715,7 +8715,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "5d9a3b2999b4fe416f16d2ee7a87fc7e153c9509-production",
+							releaseClient: "19b19e89467947dba80a06a502ee503f03545952-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -13605,9 +13605,9 @@
 						const x = (null === (y = null === (l = null === (a = null == C ? void 0 : C.routeMatch) || void 0 === a ? void 0 : a.route) || void 0 === l ? void 0 : l.meta) || void 0 === y ? void 0 : y.name) === (null === (T = null === (E = null == i ? void 0 : i.route) || void 0 === E ? void 0 : E.meta) || void 0 === T ? void 0 : T.name) && (null == i ? void 0 : i.route.meta.name) === r.Tb.COMMENTS && Object(c.a)(i.match),
 							D = x && (null === (S = null == e ? void 0 : e.state) || void 0 === S ? void 0 : S.clickSource) !== p.a.POST_DETAIL_COMMENT_SEARCH,
 							L = x && (null === (O = null == C ? void 0 : C.locationState) || void 0 === O ? void 0 : O.clickSource) === p.a.POST_DETAIL_COMMENT_SEARCH;
-						(null === (I = null == C ? void 0 : C.locationState) || void 0 === I ? void 0 : I.clickId) && h.f[C.locationState.clickId] && !h.f[C.locationState.clickId].completed && (D && !L || Object(h.c)(C.locationState.clickId));
+						(null === (I = null == C ? void 0 : C.locationState) || void 0 === I ? void 0 : I.clickId) && h.g[C.locationState.clickId] && !h.g[C.locationState.clickId].completed && (D && !L || Object(h.c)(C.locationState.clickId));
 						const k = i && Object(v.w)(i);
-						(null === (R = null == e ? void 0 : e.state) || void 0 === R ? void 0 : R.clickId) && (h.f[e.state.clickId] ? Object(h.d)(e.state.clickId) : i && k && r.S.has(k) && r.R.has(e.state.clickSource) && Object(h.a)(e.state.clickId, e.state.clickSource, o, i, e.state[_.b.ClickSourceFeedCorrelationId], C)), C && Object(n.a)(C.url, e) || w.b.isEnabled
+						(null === (R = null == e ? void 0 : e.state) || void 0 === R ? void 0 : R.clickId) && (h.g[e.state.clickId] ? Object(h.d)(e.state.clickId) : i && k && r.S.has(k) && r.R.has(e.state.clickSource) && Object(h.a)(e.state.clickId, e.state.clickSource, o, i, e.state[_.b.ClickSourceFeedCorrelationId], C)), C && Object(n.a)(C.url, e) || w.b.isEnabled
 					})(e, t, i)), await o(((e, t) => async (i, r, o) => {
 						var d, a;
 						const c = r().platform.currentPage;
@@ -27562,7 +27562,7 @@
 		},
 		"./src/reddit/helpers/installGoodVisitFeedSearchTracker/index.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "f", (function() {
+			i.d(t, "g", (function() {
 				return _
 			})), i.d(t, "a", (function() {
 				return m
@@ -27570,6 +27570,8 @@
 				return p
 			})), i.d(t, "d", (function() {
 				return h
+			})), i.d(t, "f", (function() {
+				return f
 			})), i.d(t, "b", (function() {
 				return b
 			})), i.d(t, "e", (function() {
@@ -52617,4 +52619,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.0d00f4f3802f86eaa184.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.075dda80758e3a073aab.js.map
