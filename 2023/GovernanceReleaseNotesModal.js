@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.cdabb050ddc75bb87d6f.js
-// Retrieved at 3/23/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.f5d39774013b4cc7548d.js
+// Retrieved at 3/28/2023, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -552,9 +552,9 @@
 			})), n.d(t, "a", (function() {
 				return C
 			})), n.d(t, "f", (function() {
-				return T
-			})), n.d(t, "b", (function() {
 				return R
+			})), n.d(t, "b", (function() {
+				return T
 			}));
 			var i = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./src/lib/makeActionCreator/index.ts"),
@@ -771,7 +771,7 @@
 							hk: "2dCj3Q"
 						})
 					}))
-				}, T = e => {
+				}, R = e => {
 					let {
 						subredditId: t,
 						subredditName: n
@@ -787,7 +787,7 @@
 							e(v(`error-unmuting-${t}`))
 						}
 					}
-				}, R = e => {
+				}, T = e => {
 					let {
 						subredditName: t
 					} = e;
@@ -1112,17 +1112,17 @@
 					hk: "2uULSy"
 				})))
 			}
-			var T = n("./src/reddit/components/Governance/ReleaseNotesModal/SlideIndicator/index.m.less"),
-				R = n.n(T);
+			var R = n("./src/reddit/components/Governance/ReleaseNotesModal/SlideIndicator/index.m.less"),
+				T = n.n(R);
 
 			function L(e) {
 				return o.a.createElement("div", {
-					className: Object(h.a)(R.a.container, e.className)
+					className: Object(h.a)(T.a.container, e.className)
 				}, Array.from({
 					length: e.totalSlides
 				}).map((t, n) => o.a.createElement("div", {
-					className: Object(h.a)(R.a.dot, {
-						[R.a.dotSelected]: n === e.currentSlide
+					className: Object(h.a)(T.a.dot, {
+						[T.a.dotSelected]: n === e.currentSlide
 					})
 				})))
 			}
@@ -1343,13 +1343,13 @@
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
 						experimentName: i.J
-					}) === i.Qd
+					}) === i.Rd
 				},
 				s = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
 						experimentName: i.o
-					}) === i.Qd
+					}) === i.Rd
 				}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
@@ -1418,4 +1418,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.cdabb050ddc75bb87d6f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.f5d39774013b4cc7548d.js.map

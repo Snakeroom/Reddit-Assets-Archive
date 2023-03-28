@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.55a7aec1709a1116cfa0.js
-// Retrieved at 3/23/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.f866823e8b47346ad1bb.js
+// Retrieved at 3/28/2023, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, n) {
@@ -664,8 +664,8 @@
 						onSpoilerPost: B,
 						post: H
 					} = e;
-					var V, G, U, K, Q;
-					const Z = (null === (V = H.pollData) || void 0 === V ? void 0 : V.isPrediction) && !(null === (G = H.pollData) || void 0 === G ? void 0 : G.resolvedOptionId),
+					var V, G, U, K, Z;
+					const Q = (null === (V = H.pollData) || void 0 === V ? void 0 : V.isPrediction) && !(null === (G = H.pollData) || void 0 === G ? void 0 : G.resolvedOptionId),
 						q = (null === (U = H.pollData) || void 0 === U ? void 0 : U.isPrediction) && null !== H.pollData.resolvedOptionId,
 						z = H.flair.filter(e => e.type !== N.f.Nsfw && e.type !== N.f.Spoiler).length > 0,
 						Y = Object(P.b)(H),
@@ -719,12 +719,12 @@
 							hk: "3uXoIh"
 						})
 					}), Object(E.b)(H) && s.a.createElement(S.e, {
-						disabled: Boolean((null === (K = H.pollData) || void 0 === K ? void 0 : K.resolvedOptionId) || (null === (Q = H.pollData) || void 0 === Q ? void 0 : Q.predictionStatus) === w.b.Cancelled),
+						disabled: Boolean((null === (K = H.pollData) || void 0 === K ? void 0 : K.resolvedOptionId) || (null === (Z = H.pollData) || void 0 === Z ? void 0 : Z.predictionStatus) === w.b.Cancelled),
 						displayText: k.fbt._("Cancel Prediction", null, {
 							hk: "hgWFW"
 						}),
 						onClick: p
-					}, s.a.createElement(S.i, null)), Z && s.a.createElement(S.e, {
+					}, s.a.createElement(S.i, null)), Q && s.a.createElement(S.e, {
 						displayText: k.fbt._("Update the end date", null, {
 							hk: "FjDpu"
 						}),
@@ -1350,9 +1350,9 @@
 				r = n("./src/reddit/selectors/user.ts");
 			const i = (e, t) => t && Object(s.c)(e, {
 				experimentEligibilitySelector: r.S,
-				experimentName: o.Cf
-			}) === o.Qd
+				experimentName: o.Df
+			}) === o.Rd
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.55a7aec1709a1116cfa0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.f866823e8b47346ad1bb.js.map

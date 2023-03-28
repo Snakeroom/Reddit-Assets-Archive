@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.0d0dfea0acac113d0f20.js
-// Retrieved at 3/23/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.b8efd9e9c0fb1edf095c.js
+// Retrieved at 3/28/2023, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, o) {
@@ -587,7 +587,7 @@
 				return n
 			}));
 			var s = o("./src/reddit/models/ModQueueTrigger/index.ts");
-			const n = e => (e => !e.isApproved && !!Object(s.b)(e, s.a.AUTOMOD))(e) || (e => !e.isApproved && !!Object(s.b)(e, s.a.BAN_EVASION))(e) || (e => !e.isApproved && !!Object(s.b)(e, s.a.CROWD_CONTROL))(e) || (e => !e.isApproved && !!Object(s.b)(e, s.a.HATEFUL_CONTENT))(e)
+			const n = e => (e => !e.isApproved && !!Object(s.c)(e, s.b.AUTOMOD))(e) || (e => !e.isApproved && !!Object(s.c)(e, s.b.BAN_EVASION))(e) || (e => !e.isApproved && !!Object(s.c)(e, s.b.CROWD_CONTROL))(e) || (e => !e.isApproved && !!Object(s.c)(e, s.b.HATEFUL_CONTENT))(e)
 		},
 		"./src/reddit/components/ModModeFilteredReason/index.tsx": function(e, t, o) {
 			"use strict";
@@ -2101,20 +2101,25 @@
 		},
 		"./src/reddit/models/ModQueueTrigger/index.ts": function(e, t, o) {
 			"use strict";
-			var s;
+			var s, n;
 
-			function n(e, t) {
+			function r(e, t) {
 				var o;
 				return null === (o = e.modQueueTriggers) || void 0 === o ? void 0 : o.find(e => e.type === t)
 			}
-			o.d(t, "a", (function() {
+			o.d(t, "b", (function() {
 					return s
-				})), o.d(t, "b", (function() {
+				})), o.d(t, "a", (function() {
 					return n
+				})), o.d(t, "c", (function() {
+					return r
 				})),
 				function(e) {
 					e.USER_REPORTS = "USER_REPORTS", e.AUTOMOD = "AUTOMOD", e.MOD = "MOD", e.ADMIN = "ADMIN", e.SHADOWBANNED_SUBMITTER = "SHADOWBANNED_SUBMITTER", e.HATEFUL_CONTENT = "HATEFUL_CONTENT", e.CROWD_CONTROL = "CROWD_CONTROL", e.BAN_EVASION = "BAN_EVASION"
-				}(s || (s = {}))
+				}(s || (s = {})),
+				function(e) {
+					e.LOW = "LOW", e.HIGH = "HIGH"
+				}(n || (n = {}))
 		},
 		"./src/reddit/selectors/experiments/reportingRevampDesktop.ts": function(e, t, o) {
 			"use strict";
@@ -2141,13 +2146,13 @@
 				c = o("./src/reddit/models/Post/index.ts"),
 				i = o("./src/reddit/selectors/posts.ts");
 			const d = e => Object(r.c)(e, {
-					experimentName: n.if,
+					experimentName: n.jf,
 					experimentEligibilitySelector: r.a
 				}),
-				a = (e, t) => (t === n.pf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(c.A)(e),
+				a = (e, t) => (t === n.qf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(c.A)(e),
 				l = Object(s.a)(i.G, d, (e, t) => a(e, t));
 			Object(s.a)((e, t) => t, d, (e, t) => a(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.0d0dfea0acac113d0f20.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.b8efd9e9c0fb1edf095c.js.map

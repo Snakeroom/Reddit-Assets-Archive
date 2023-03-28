@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage.015c0c91b04b0e6adaa2.js
-// Retrieved at 3/27/2023, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage.bdf9fff7c82125623159.js
+// Retrieved at 3/28/2023, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage"], {
 		"./src/reddit/actions/pages/countrySite/index.ts": function(e, t, s) {
@@ -298,8 +298,8 @@
 			t.default = v(_(Object(b.c)(F)))
 		},
 		"./src/redditGQL/operations/CountrySiteHomeFeed.json": function(e) {
-			e.exports = JSON.parse('{"id":"5005302aa536"}')
+			e.exports = JSON.parse('{"id":"b862fca60f30"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage.015c0c91b04b0e6adaa2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage.bdf9fff7c82125623159.js.map

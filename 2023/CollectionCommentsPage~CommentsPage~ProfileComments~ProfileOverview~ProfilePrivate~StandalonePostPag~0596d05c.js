@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.32b2e42f400ee938c2f1.js
-// Retrieved at 3/27/2023, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.f20dc07bbc1926656a42.js
+// Retrieved at 3/28/2023, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, s) {
@@ -1050,7 +1050,7 @@
 						x = Object(g.a)(_.t, u),
 						f = Object(g.a)(_.u, u);
 					return {
-						canBoostPost: b === _.Qd || h === _.Qd || x === _.Qd || f === _.Qd
+						canBoostPost: b === _.Rd || h === _.Rd || x === _.Rd || f === _.Rd
 					}
 				},
 				T = e => {
@@ -2685,7 +2685,7 @@
 				return n
 			}));
 			var o = s("./src/reddit/models/ModQueueTrigger/index.ts");
-			const n = e => (e => !e.isApproved && !!Object(o.b)(e, o.a.AUTOMOD))(e) || (e => !e.isApproved && !!Object(o.b)(e, o.a.BAN_EVASION))(e) || (e => !e.isApproved && !!Object(o.b)(e, o.a.CROWD_CONTROL))(e) || (e => !e.isApproved && !!Object(o.b)(e, o.a.HATEFUL_CONTENT))(e)
+			const n = e => (e => !e.isApproved && !!Object(o.c)(e, o.b.AUTOMOD))(e) || (e => !e.isApproved && !!Object(o.c)(e, o.b.BAN_EVASION))(e) || (e => !e.isApproved && !!Object(o.c)(e, o.b.CROWD_CONTROL))(e) || (e => !e.isApproved && !!Object(o.c)(e, o.b.HATEFUL_CONTENT))(e)
 		},
 		"./src/reddit/components/ModModeFilteredReason/index.tsx": function(e, t, s) {
 			"use strict";
@@ -6614,20 +6614,25 @@
 		},
 		"./src/reddit/models/ModQueueTrigger/index.ts": function(e, t, s) {
 			"use strict";
-			var o;
+			var o, n;
 
-			function n(e, t) {
+			function r(e, t) {
 				var s;
 				return null === (s = e.modQueueTriggers) || void 0 === s ? void 0 : s.find(e => e.type === t)
 			}
-			s.d(t, "a", (function() {
+			s.d(t, "b", (function() {
 					return o
-				})), s.d(t, "b", (function() {
+				})), s.d(t, "a", (function() {
 					return n
+				})), s.d(t, "c", (function() {
+					return r
 				})),
 				function(e) {
 					e.USER_REPORTS = "USER_REPORTS", e.AUTOMOD = "AUTOMOD", e.MOD = "MOD", e.ADMIN = "ADMIN", e.SHADOWBANNED_SUBMITTER = "SHADOWBANNED_SUBMITTER", e.HATEFUL_CONTENT = "HATEFUL_CONTENT", e.CROWD_CONTROL = "CROWD_CONTROL", e.BAN_EVASION = "BAN_EVASION"
-				}(o || (o = {}))
+				}(o || (o = {})),
+				function(e) {
+					e.LOW = "LOW", e.HIGH = "HIGH"
+				}(n || (n = {}))
 		},
 		"./src/reddit/selectors/eventPosts.ts": function(e, t, s) {
 			"use strict";
@@ -6688,10 +6693,10 @@
 				n = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(o.a)(e => Object(r.c)(e, {
-					experimentName: n.Kc,
+					experimentName: n.Lc,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				a = Object(o.a)(i, e => e === n.Qd)
+				a = Object(o.a)(i, e => e === n.Rd)
 		},
 		"./src/reddit/selectors/experiments/reportingRevampDesktop.ts": function(e, t, s) {
 			"use strict";
@@ -6718,16 +6723,16 @@
 				i = s("./src/reddit/models/Post/index.ts"),
 				a = s("./src/reddit/selectors/posts.ts");
 			const c = e => Object(r.c)(e, {
-					experimentName: n.if,
+					experimentName: n.jf,
 					experimentEligibilitySelector: r.a
 				}),
-				d = (e, t) => (t === n.pf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(i.A)(e),
+				d = (e, t) => (t === n.qf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(i.A)(e),
 				l = Object(o.a)(a.G, c, (e, t) => d(e, t));
 			Object(o.a)((e, t) => t, c, (e, t) => d(e, t))
 		},
 		"./src/redditGQL/operations/EventPostsBySubredditName.json": function(e) {
-			e.exports = JSON.parse('{"id":"d9609c5e1876"}')
+			e.exports = JSON.parse('{"id":"8ef372fe4e86"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.32b2e42f400ee938c2f1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.f20dc07bbc1926656a42.js.map

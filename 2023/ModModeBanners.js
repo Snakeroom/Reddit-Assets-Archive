@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModModeBanners.651e049e6c8f54cf31c9.js
-// Retrieved at 2/16/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModModeBanners.5fc5fde67c51a6e47eb7.js
+// Retrieved at 3/28/2023, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModModeBanners"], {
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, s) {
@@ -281,21 +281,21 @@
 			const {
 				fbt: b
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), x = {
-				[i.a.AUTOMOD]: "bot_fill",
-				[i.a.BAN_EVASION]: "ban_fill",
-				[i.a.CROWD_CONTROL]: "crowd_control",
-				[i.a.HATEFUL_CONTENT]: "mod_mode_fill"
+				[i.b.AUTOMOD]: "bot_fill",
+				[i.b.BAN_EVASION]: "ban_fill",
+				[i.b.CROWD_CONTROL]: "crowd_control",
+				[i.b.HATEFUL_CONTENT]: "mod_mode_fill"
 			}, R = {
-				[i.a.AUTOMOD]: b._("AutoMod", null, {
+				[i.b.AUTOMOD]: b._("AutoMod", null, {
 					hk: "S2d13"
 				}),
-				[i.a.BAN_EVASION]: b._("Ban Evasion Protection", null, {
+				[i.b.BAN_EVASION]: b._("Ban Evasion Protection", null, {
 					hk: "3WIzsw"
 				}),
-				[i.a.CROWD_CONTROL]: b._("Crowd Control", null, {
+				[i.b.CROWD_CONTROL]: b._("Crowd Control", null, {
 					hk: "3Z8nM0"
 				}),
-				[i.a.HATEFUL_CONTENT]: b._("Automatic Filter", null, {
+				[i.b.HATEFUL_CONTENT]: b._("Automatic Filter", null, {
 					hk: "2vNH1o"
 				})
 			};
@@ -689,4 +689,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.651e049e6c8f54cf31c9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.5fc5fde67c51a6e47eb7.js.map
