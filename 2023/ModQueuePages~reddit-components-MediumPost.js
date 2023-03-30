@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-MediumPost.72037af3cf9681a7d22d.js
-// Retrieved at 3/28/2023, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-MediumPost.5878952dabfab84ce834.js
+// Retrieved at 3/30/2023, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~reddit-components-MediumPost"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, s) {
@@ -1544,7 +1544,7 @@
 					let {
 						content: t
 					} = e;
-					const s = Object(Oe.a)(he.bc) === he.Rd,
+					const s = Object(Oe.a)(he.bc) === he.Sd,
 						n = Object(a.useMemo)(() => {
 							var e, s, n, a, r, i;
 							const c = [];
@@ -2883,21 +2883,21 @@
 						experimentEligibilitySelector: o.a,
 						experimentName: n.oc
 					});
-					return !(!t || Object(n.tg)(t))
+					return !(!t || Object(n.vg)(t))
 				},
 				r = e => {
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
 						experimentName: n.cc
 					});
-					return !(!t || Object(n.tg)(t))
+					return !(!t || Object(n.vg)(t))
 				},
 				i = e => {
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.td
+						experimentName: n.ud
 					});
-					return !(!t || Object(n.tg)(t))
+					return !(!t || Object(n.vg)(t))
 				}
 		},
 		"./src/redditGQL/operations/LastModActionInSubreddit.json": function(e) {
@@ -2914,4 +2914,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-MediumPost.72037af3cf9681a7d22d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-MediumPost.5878952dabfab84ce834.js.map

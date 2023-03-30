@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.dd4027d014fb3a6e4854.js
-// Retrieved at 3/28/2023, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.65b803878a66a0b3b765.js
+// Retrieved at 3/30/2023, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./src/reddit/components/FrontpageSidebar/index.tsx": function(e, t, n) {
@@ -187,8 +187,8 @@
 				L = n("./src/reddit/components/SidebarStickyBottom/index.tsx"),
 				R = n("./node_modules/lodash/sampleSize.js"),
 				B = n.n(R),
-				U = n("./node_modules/request-idle-callback/index.js"),
-				W = n("./src/lib/constants/index.ts"),
+				W = n("./node_modules/request-idle-callback/index.js"),
+				U = n("./src/lib/constants/index.ts"),
 				I = n("./src/reddit/components/SubredditIcon/index.tsx"),
 				D = n("./src/reddit/constants/localStorage.ts"),
 				K = n("./src/reddit/contexts/ApiContext.tsx"),
@@ -200,14 +200,14 @@
 				q = n("./src/reddit/constants/headers.ts");
 			const X = e => Object(J.a)(Object(M.a)(e, [q.a]), {
 				endpoint: `${e.apiUrl}/api/multi/user/CommunityAdoptionBot/m/adoption_week/`,
-				method: W.pb.GET,
+				method: U.pb.GET,
 				type: "json"
 			});
 			var Z = n("./src/reddit/components/SubredditAdoptionWidget/index.m.less"),
-				z = n.n(Z);
+				V = n.n(Z);
 			const {
-				fbt: V
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Y = 3, $ = 30 * W.qb, ee = "SubredditAdoption";
+				fbt: z
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Y = 3, $ = 30 * U.qb, ee = "SubredditAdoption";
 			class te extends a.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -226,7 +226,7 @@
 					return te.cachedData = e, e ? e.subreddits : []
 				}
 				componentDidMount() {
-					Object(U.requestIdleCallback)(async () => {
+					Object(W.requestIdleCallback)(async () => {
 						const e = await this.getSubredditForAdoption();
 						this.setState({
 							subredditNames: B()(e, Y)
@@ -238,23 +238,23 @@
 						subredditNames: e
 					} = this.state;
 					return e.length ? a.a.createElement("div", {
-						className: z.a.container
+						className: V.a.container
 					}, a.a.createElement("div", {
-						className: z.a.main
+						className: V.a.main
 					}, a.a.createElement("div", {
-						className: z.a.title
+						className: V.a.title
 					}, a.a.createElement(I.b, {
-						className: z.a.icon
-					}), V._("International Subreddit Adoption Week", null, {
+						className: V.a.icon
+					}), z._("International Subreddit Adoption Week", null, {
 						hk: "487Ffc"
 					})), a.a.createElement("div", {
-						className: z.a.description
-					}, V._("{subreddits list} and more are looking for moderators!", [V._param("subreddits list", a.a.createElement("strong", null, e.map(G.d).join(", ") + (e.length > 1 ? "," : "")))], {
+						className: V.a.description
+					}, z._("{subreddits list} and more are looking for moderators!", [z._param("subreddits list", a.a.createElement("strong", null, e.map(G.d).join(", ") + (e.length > 1 ? "," : "")))], {
 						hk: "2Tb946"
 					}))), a.a.createElement(b.n, {
-						className: z.a.button,
+						className: V.a.button,
 						to: `/r/${ee}?utm_source=reddit&utm_medium=fp_banner&utm_campaign=subreddit_adoption_week`
-					}, V._("Go Now", null, {
+					}, z._("Go Now", null, {
 						hk: "LCCmX"
 					}))) : null
 				}
@@ -609,17 +609,17 @@
 				Le = n("./src/reddit/constants/experiments.ts"),
 				Re = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				Be = n("./src/reddit/selectors/user.ts");
-			var Ue = n("./src/reddit/selectors/seo/linksModule.ts"),
-				We = n("./src/reddit/helpers/createBannerProperties/index.ts");
+			var We = n("./src/reddit/selectors/seo/linksModule.ts"),
+				Ue = n("./src/reddit/helpers/createBannerProperties/index.ts");
 			const Ie = Object(o.c)({
 					isLoggedIn: Be.R,
 					currentUser: Be.m,
-					frontpageLinks: Ue.b,
+					frontpageLinks: We.b,
 					shouldShowTopicsWidget: e => (function(e) {
 						return Object(Re.c)(e, {
 							experimentEligibilitySelector: Be.S,
-							experimentName: Le.Uc
-						}) === Le.Rd
+							experimentName: Le.Vc
+						}) === Le.Sd
 					})(e),
 					isNavbarLikeMwebEnabled: i.a
 				}),
@@ -649,11 +649,11 @@
 						className: t,
 						"data-testid": "frontpage-sidebar"
 					}, a.a.createElement(T.a, {
-						placement: W.e.ABOVE_THE_FOLD,
+						placement: U.e.ABOVE_THE_FOLD,
 						listingName: r,
 						removeSidebarSpacer: !1,
-						position: We.a.FIRST,
-						sizes: W.j,
+						position: Ue.a.FIRST,
+						sizes: U.j,
 						placementIndex: e++
 					}), Ke(this.props) && a.a.createElement(k, null), i && a.a.createElement(m.a, null, a.a.createElement(Ae, null)), s && a.a.createElement(m.a, null, a.a.createElement(d.a, {
 						listingName: r
@@ -661,10 +661,10 @@
 						links: n
 					})), a.a.createElement(L.a, {
 						adComponent: a.a.createElement(T.a, {
-							placement: W.e.BELOW_THE_FOLD,
+							placement: U.e.BELOW_THE_FOLD,
 							listingName: r,
-							position: We.a.BOTTOM,
-							sizes: W.q,
+							position: Ue.a.BOTTOM,
+							sizes: U.q,
 							placementIndex: e++
 						})
 					}, s && a.a.createElement(ne, null)))
@@ -915,4 +915,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.dd4027d014fb3a6e4854.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.65b803878a66a0b3b765.js.map

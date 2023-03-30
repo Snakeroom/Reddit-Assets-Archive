@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.7a808369c5b58ebab592.js
-// Retrieved at 3/28/2023, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.95941c4c9b9cd27aff93.js
+// Retrieved at 3/30/2023, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "ModQueuePages~reddit-components-MediumPost"], {
 		"./src/lib/LiveChatActiveUsers/index.m.less": function(e, t, s) {
@@ -42,12 +42,12 @@
 				l = s("./src/reddit/constants/promo.ts"),
 				m = s("./src/reddit/hooks/promo/useIsSignupUpsellVariantEligible.ts");
 			var u = function() {
-					const e = Object(m.a)(d.dd.Bottom_cell),
-						t = Object(m.a)(d.dd.Bottom_cell_dismissible),
-						s = Object(m.a)(d.dd.Bottom_cell_dismissible_immediate_trigger),
-						o = Object(m.a)(d.dd.Bottom_cell_signup_upsell_copy),
-						n = Object(m.a)(d.dd.Bottom_cell_surprise_install_copy),
-						r = Object(m.a)(d.dd.Bottom_sheet);
+					const e = Object(m.a)(d.ed.Bottom_cell),
+						t = Object(m.a)(d.ed.Bottom_cell_dismissible),
+						s = Object(m.a)(d.ed.Bottom_cell_dismissible_immediate_trigger),
+						o = Object(m.a)(d.ed.Bottom_cell_signup_upsell_copy),
+						n = Object(m.a)(d.ed.Bottom_cell_surprise_install_copy),
+						r = Object(m.a)(d.ed.Bottom_sheet);
 					return e || o || n ? l.b.SignupUpsellCell : t || s ? l.b.SignupUpsellCellDismissible : r ? l.b.SignupUpsellBottomSheet : null
 				},
 				p = s("./src/reddit/hooks/promo/useIsPromoShown.ts");
@@ -72,7 +72,7 @@
 						let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : b;
 						const {
 							showPromo: t
-						} = Object(c.a)(), s = u(), r = Object(p.a)(s), l = Object(m.a)(d.dd.Bottom_cell_dismissible_immediate_trigger);
+						} = Object(c.a)(), s = u(), r = Object(p.a)(s), l = Object(m.a)(d.ed.Bottom_cell_dismissible_immediate_trigger);
 						return o.useMemo(() => a()(() => {
 							if (!r && s) {
 								const e = document.getElementById(i.e),
@@ -3878,7 +3878,7 @@
 			const we = Object(i.a)(y.N, e => e.some(Pe.c)),
 				Ie = Object(i.a)(we, e => e),
 				Se = (e, t) => Object(ye.c)(e, {
-					experimentName: _e.qd,
+					experimentName: _e.rd,
 					experimentEligibilitySelector: e => {
 						const {
 							listingKey: s
@@ -3891,7 +3891,7 @@
 			var Ne = s("./src/reddit/selectors/experiments/index.ts");
 
 			function Te(e) {
-				return e === _e.wf.Minimalist || e === _e.wf.Description || e === _e.wf.HotnessSignals
+				return e === _e.yf.Minimalist || e === _e.yf.Description || e === _e.yf.HotnessSignals
 			}
 			const Re = e => {
 				const t = Object(ye.c)(e, {
@@ -4065,7 +4065,7 @@
 						isUpdatedContent: ot,
 						isNightMode: nt,
 						onSubscribe: rt = (() => {})
-					} = e, at = Object(O.a)(), it = !!e.redditStyle || !!e["data-redditstyle"], dt = it ? void 0 : j, ct = Object(l.a)(Ne), lt = Te && ct, mt = Object(d.a)(Ne), ut = Object(c.a)(Ne), pt = Object(H.c)(De), bt = Object(W.a)(De), ht = !!De.media && De.media.type === g.o.RTJSON, xt = Je && ht, ft = s ? s - X.a : void 0, vt = !!De.recommendationContext, Ot = !(me && fe || ke) || vt && fe, gt = (e => e === _e.lf.OnlyTitles)(Be) && !Object(be.a)(De), Et = (e => e === _e.lf.MediumHeight)(Be) && !Object(be.a)(De), Ct = (e => {
+					} = e, at = Object(O.a)(), it = !!e.redditStyle || !!e["data-redditstyle"], dt = it ? void 0 : j, ct = Object(l.a)(Ne), lt = Te && ct, mt = Object(d.a)(Ne), ut = Object(c.a)(Ne), pt = Object(H.c)(De), bt = Object(W.a)(De), ht = !!De.media && De.media.type === g.o.RTJSON, xt = Je && ht, ft = s ? s - X.a : void 0, vt = !!De.recommendationContext, Ot = !(me && fe || ke) || vt && fe, gt = (e => e === _e.mf.OnlyTitles)(Be) && !Object(be.a)(De), Et = (e => e === _e.mf.MediumHeight)(Be) && !Object(be.a)(De), Ct = (e => {
 						var t;
 						const {
 							post: s,
@@ -5104,7 +5104,7 @@
 					let {
 						content: t
 					} = e;
-					const s = Object(ve.a)(fe.bc) === fe.Rd,
+					const s = Object(ve.a)(fe.bc) === fe.Sd,
 						o = Object(r.useMemo)(() => {
 							var e, s, o, r, a, i;
 							const c = [];
@@ -6179,7 +6179,7 @@
 			const b = Object(p.a)(e => Object(u.c)(e, {
 				experimentEligibilitySelector: u.a,
 				experimentName: m.zc
-			}), e => e === m.Rd);
+			}), e => e === m.Sd);
 			var h = s("./node_modules/fbt/lib/FbtPublic.js"),
 				x = s("./src/lib/classNames/index.ts"),
 				f = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
@@ -6761,7 +6761,7 @@
 					} = e;
 					return {
 						...x.o(t),
-						post: x.K(t, s),
+						post: s ? x.K(t, s) : void 0,
 						source: "cdd_discovery_unit",
 						actionInfo: {
 							pageType: c,
@@ -6796,7 +6796,7 @@
 					switch (t.type) {
 						case C.b: {
 							const {
-								postId: s
+								subredditId: s
 							} = t.payload;
 							return {
 								...e,
@@ -6808,7 +6808,7 @@
 						}
 						case C.c: {
 							const {
-								postId: s,
+								subredditId: s,
 								subreddits: o = {},
 								modelVersion: n
 							} = t.payload;
@@ -6826,7 +6826,7 @@
 						}
 						case C.a: {
 							const {
-								postId: s
+								subredditId: s
 							} = t.payload;
 							return {
 								...e,
@@ -6887,16 +6887,20 @@
 
 			function M(e) {
 				switch (e) {
+					case O.yf.Minimalist:
 					case O.wf.Minimalist:
-					case O.vf.Minimalist:
+					case O.xf.Minimalist:
 						return T.MINIMALIST;
-					case O.wf.HotnessSignals:
-					case O.vf.SocialSignals:
+					case O.yf.HotnessSignals:
+					case O.wf.SocialSignals:
+					case O.xf.SocialSignals:
 						return T.SIGNALS;
+					case O.yf.Description:
 					case O.wf.Description:
-					case O.vf.Description:
+					case O.xf.Description:
 						return T.DESCRIPTION
 				}
+				return T.MINIMALIST
 			}! function(e) {
 				e[e.MINIMALIST = 0] = "MINIMALIST", e[e.SIGNALS = 1] = "SIGNALS", e[e.DESCRIPTION = 2] = "DESCRIPTION"
 			}(T || (T = {}));
@@ -7057,33 +7061,33 @@
 			const W = Object(A.a)(C.b),
 				G = Object(A.a)(C.c),
 				H = Object(A.a)(C.a),
-				K = (e, t) => async (s, o, n) => {
+				K = e => async (t, s, o) => {
 					let {
-						gqlContext: r
-					} = n;
-					s(W({
-						postId: t
+						gqlContext: n
+					} = o;
+					t(W({
+						subredditId: e
 					}));
 					try {
-						const o = await V(r(), {
+						const s = await V(n(), {
 							subredditId: e
 						});
-						s(G({
-							postId: t,
-							modelVersion: o.modelVersion,
-							subreddits: o.models,
-							subredditAboutInfo: o.aboutInfo
+						t(G({
+							subredditId: e,
+							modelVersion: s.modelVersion,
+							subreddits: s.models,
+							subredditAboutInfo: s.aboutInfo
 						}))
-					} catch (a) {
-						s(H({
-							postId: t,
-							ApiError: a
+					} catch (r) {
+						t(H({
+							subredditId: e,
+							ApiError: r
 						}))
 					}
 				};
 			var q;
 			! function(e) {
-				e.Home = "home", e.Profile = "profile"
+				e.Home = "home", e.Profile = "profile", e.Community = "community"
 			}(q || (q = {}));
 			const Q = e => {
 				let {
@@ -7116,30 +7120,28 @@
 						modelVersion: y
 					} = function(e) {
 						let {
-							postId: t,
-							subredditId: s
+							subredditId: t
 						} = e;
-						const o = Object(l.d)(),
-							n = Object(l.e)(e => w(e, t)),
+						const s = Object(l.d)(),
+							o = Object(l.e)(e => w(e, t)),
 							{
-								pending: a,
-								loaded: i,
-								error: d,
-								modelVersion: c
+								pending: n,
+								loaded: a,
+								error: i,
+								modelVersion: d
 							} = Object(l.e)(e => P(e, t)),
-							m = !i && !a;
+							c = !a && !n;
 						return Object(r.useEffect)(() => {
-							m && o(K(s, t))
-						}, [o, s, t, m]), {
-							recommendations: n,
-							fetchPending: a,
-							recommendationsLoaded: i,
-							fetchError: d,
-							modelVersion: c
+							c && s(K(t))
+						}, [s, t, c]), {
+							recommendations: o,
+							fetchPending: n,
+							recommendationsLoaded: a,
+							fetchError: i,
+							modelVersion: d
 						}
 					}({
-						subredditId: u,
-						postId: m
+						subredditId: u
 					}),
 					I = O < (C.length || 0),
 					S = Object(r.useMemo)(() => !k || j ? null : _ || C.length <= 0 ? {
@@ -8483,7 +8485,7 @@
 				ne = s("./src/reddit/selectors/experiments/index.ts");
 
 			function re(e) {
-				return e === se.vf.Minimalist || e === se.vf.Description || e === se.vf.SocialSignals
+				return e === se.wf.Minimalist || e === se.wf.Description || e === se.wf.SocialSignals
 			}
 			var ae = s("./src/reddit/components/RelatedCommunitiesRecommendations/index.tsx"),
 				ie = s("./src/reddit/components/OverviewConversationsPost/index.m.less"),
@@ -9425,21 +9427,21 @@
 						experimentEligibilitySelector: n.a,
 						experimentName: o.oc
 					});
-					return !(!t || Object(o.tg)(t))
+					return !(!t || Object(o.vg)(t))
 				},
 				a = e => {
 					const t = Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
 						experimentName: o.cc
 					});
-					return !(!t || Object(o.tg)(t))
+					return !(!t || Object(o.vg)(t))
 				},
 				i = e => {
 					const t = Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: o.td
+						experimentName: o.ud
 					});
-					return !(!t || Object(o.tg)(t))
+					return !(!t || Object(o.vg)(t))
 				}
 		},
 		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, s) {
@@ -9469,9 +9471,9 @@
 					experimentName: e,
 					experimentEligibilitySelector: d,
 					throttledVariants: {
-						[n.dd.Bottom_cell_dismissible]: e,
-						[n.dd.Bottom_cell_dismissible_immediate_trigger]: e,
-						[n.dd.Bottom_sheet]: e
+						[n.ed.Bottom_cell_dismissible]: e,
+						[n.ed.Bottom_cell_dismissible_immediate_trigger]: e,
+						[n.ed.Bottom_sheet]: e
 					},
 					expEventOverride: t
 				})
@@ -9496,7 +9498,7 @@
 				a = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(n.tg)(t)
+					return Boolean(t) && !Object(n.vg)(t)
 				},
 				d = Object(o.a)(i, r.d, (e, t) => e && !t)
 		},
@@ -9547,4 +9549,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.7a808369c5b58ebab592.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.95941c4c9b9cd27aff93.js.map
