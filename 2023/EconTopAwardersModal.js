@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.82bfcded6bd6445b9852.js
-// Retrieved at 3/23/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.ea46bf99727e558152b6.js
+// Retrieved at 3/30/2023, 11:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -601,7 +601,7 @@
 				return s.a.createElement(d.t, {
 					onClick: e => {
 						if (f && f(e), t(I), b === a.awardNotification) return v();
-						o(Object(l.b)(c)), o(Object(l.c)(g, c))
+						o(Object(l.b)(c))
 					},
 					className: n,
 					text: r,
@@ -1300,7 +1300,7 @@
 					}, a ? n.a.createElement(Z.a, {
 						role: "button",
 						onClick: () => {
-							s(this.props.user.id), o(H.f(t))
+							s(this.props.user.id), o(H.e(t))
 						}
 					}, n.a.createElement(X.a, {
 						name: "ban",
@@ -1321,7 +1321,7 @@
 					})), r && n.a.createElement(Z.a, {
 						role: "button",
 						onClick: () => {
-							i(), o(H.e(t))
+							i(), o(H.d(t))
 						}
 					}, n.a.createElement(X.a, {
 						name: "mod_mute",
@@ -1367,7 +1367,7 @@
 				}))(e => n.a.createElement(Z.a, {
 					role: "button",
 					onClick: () => {
-						e.onToggleUserFlairModal(), e.sendEvent(H.d(e.contextId))
+						e.onToggleUserFlairModal(), e.sendEvent(H.c(e.contextId))
 					}
 				}, n.a.createElement(X.a, {
 					name: "tag",
@@ -1530,7 +1530,7 @@
 							name: e.user.username,
 							type: "profile"
 						},
-						getEventFactory: e => Object(H.j)(e ? "unfollow" : "follow", s),
+						getEventFactory: e => Object(H.h)(e ? "unfollow" : "follow", s),
 						isFullWidth: !0,
 						small: !0
 					})), k && s && !C && v && n.a.createElement(se, {
@@ -2713,4 +2713,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.82bfcded6bd6445b9852.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.ea46bf99727e558152b6.js.map

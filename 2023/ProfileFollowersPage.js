@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.15ad7d599ef11de4b346.js
-// Retrieved at 3/30/2023, 10:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.5bdc61b75d231cb3ae7c.js
+// Retrieved at 3/30/2023, 11:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -1327,7 +1327,7 @@
 				return o.a.createElement(l.t, {
 					onClick: e => {
 						if (b && b(e), t(x), h === n.awardNotification) return f();
-						i(Object(c.b)(a)), i(Object(c.c)(C, a))
+						i(Object(c.b)(a))
 					},
 					className: r,
 					text: s,
@@ -1573,7 +1573,7 @@
 					}, n ? r.a.createElement(Z.a, {
 						role: "button",
 						onClick: () => {
-							o(this.props.user.id), i(B.f(t))
+							o(this.props.user.id), i(B.e(t))
 						}
 					}, r.a.createElement(J.a, {
 						name: "ban",
@@ -1594,7 +1594,7 @@
 					})), s && r.a.createElement(Z.a, {
 						role: "button",
 						onClick: () => {
-							d(), i(B.e(t))
+							d(), i(B.d(t))
 						}
 					}, r.a.createElement(J.a, {
 						name: "mod_mute",
@@ -1640,7 +1640,7 @@
 				}))(e => r.a.createElement(Z.a, {
 					role: "button",
 					onClick: () => {
-						e.onToggleUserFlairModal(), e.sendEvent(B.d(e.contextId))
+						e.onToggleUserFlairModal(), e.sendEvent(B.c(e.contextId))
 					}
 				}, r.a.createElement(J.a, {
 					name: "tag",
@@ -1803,7 +1803,7 @@
 							name: e.user.username,
 							type: "profile"
 						},
-						getEventFactory: e => Object(B.j)(e ? "unfollow" : "follow", o),
+						getEventFactory: e => Object(B.h)(e ? "unfollow" : "follow", o),
 						isFullWidth: !0,
 						small: !0
 					})), P && o && !E && f && r.a.createElement(oe, {
@@ -6547,4 +6547,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.15ad7d599ef11de4b346.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.5bdc61b75d231cb3ae7c.js.map

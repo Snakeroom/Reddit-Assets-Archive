@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SettingsPanel.d71390814d417b013c8d.js
-// Retrieved at 2/8/2023, 12:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SettingsPanel.b77b7736209cf8997f0e.js
+// Retrieved at 3/30/2023, 11:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SettingsPanel"], {
 		"./src/chat/components/Sidebar/SettingsPanel/SettingsGroup/index.m.less": function(e, t, a) {
@@ -399,7 +399,7 @@
 						onclick: () => (e => {
 							switch (e) {
 								case P.About:
-									l(Object(o.i)()), l(Object(u.sb)());
+									l(Object(o.i)()), l(Object(u.rb)());
 									break;
 								case P.InvitePeople:
 									l(Object(o.c)()), l(Object(u.c)());
@@ -408,7 +408,7 @@
 									l(Object(o.d)()), l(Object(u.S)());
 									break;
 								case P.UnmuteNotifications:
-									l(Object(o.e)()), l(Object(u.gb)());
+									l(Object(o.e)()), l(Object(u.fb)());
 									break;
 								case P.LeaveChat:
 									b(Se);
@@ -566,4 +566,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SettingsPanel.d71390814d417b013c8d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SettingsPanel.b77b7736209cf8997f0e.js.map

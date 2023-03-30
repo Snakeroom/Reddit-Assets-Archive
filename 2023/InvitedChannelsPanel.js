@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InvitedChannelsPanel.f57fcd13a7ec141ab38f.js
-// Retrieved at 2/7/2023, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InvitedChannelsPanel.2abaeb7157170dbd4f46.js
+// Retrieved at 3/30/2023, 11:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InvitedChannelsPanel"], {
 		"./src/chat/components/Sidebar/InvitedChannelsPanel/index.m.less": function(e, n, t) {
@@ -29,22 +29,22 @@
 				_ = t("./src/chat/components/SkeletonPlaceholder/SkeletonPlaceholder.tsx"),
 				x = t("./src/chat/controls/ChannelsFilter/index.tsx"),
 				u = t("./src/chat/icons/svgs/ArrowLeft/index.tsx"),
-				j = t("./src/chat/models/Sidebar/index.ts"),
-				p = t("./src/chat/selectors/channels.ts"),
-				E = t("./src/chat/components/Sidebar/InvitedChannelsPanel/index.m.less"),
-				O = t.n(E);
+				p = t("./src/chat/models/Sidebar/index.ts"),
+				E = t("./src/chat/selectors/channels.ts"),
+				j = t("./src/chat/components/Sidebar/InvitedChannelsPanel/index.m.less"),
+				O = t.n(j);
 			n.default = () => {
 				const e = Object(r.d)();
 				Object(o.useEffect)(() => {
-					e(Object(h.jb)())
+					e(Object(h.ib)())
 				}, [e]);
-				const n = Object(r.e)(p.d),
-					t = Object(r.e)(p.I),
-					a = Object(r.e)(p.b);
+				const n = Object(r.e)(E.d),
+					t = Object(r.e)(E.I),
+					a = Object(r.e)(E.b);
 				return l.a.createElement(l.a.Fragment, null, l.a.createElement("button", {
 					className: O.a.Header,
 					onClick: () => {
-						e(Object(i.e)(j.a.CHANNELS))
+						e(Object(i.e)(p.a.CHANNELS))
 					}
 				}, l.a.createElement(u.a, {
 					className: O.a.BackIcon,
@@ -65,4 +65,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InvitedChannelsPanel.f57fcd13a7ec141ab38f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InvitedChannelsPanel.2abaeb7157170dbd4f46.js.map

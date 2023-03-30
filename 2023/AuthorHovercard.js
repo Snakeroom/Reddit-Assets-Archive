@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.1e2218dbf6a95849b526.js
-// Retrieved at 3/23/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.7017262c20584f04a482.js
+// Retrieved at 3/30/2023, 11:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -1034,7 +1034,7 @@
 				return s.a.createElement(d.t, {
 					onClick: e => {
 						if (f && f(e), t(_), p === r.awardNotification) return h();
-						o(Object(l.b)(i)), o(Object(l.c)(I, i))
+						o(Object(l.b)(i))
 					},
 					className: a,
 					text: n,
@@ -1449,7 +1449,7 @@
 					}, r ? a.a.createElement(V.a, {
 						role: "button",
 						onClick: () => {
-							s(this.props.user.id), o(H.f(t))
+							s(this.props.user.id), o(H.e(t))
 						}
 					}, a.a.createElement(X.a, {
 						name: "ban",
@@ -1470,7 +1470,7 @@
 					})), n && a.a.createElement(V.a, {
 						role: "button",
 						onClick: () => {
-							c(), o(H.e(t))
+							c(), o(H.d(t))
 						}
 					}, a.a.createElement(X.a, {
 						name: "mod_mute",
@@ -1516,7 +1516,7 @@
 				}))(e => a.a.createElement(V.a, {
 					role: "button",
 					onClick: () => {
-						e.onToggleUserFlairModal(), e.sendEvent(H.d(e.contextId))
+						e.onToggleUserFlairModal(), e.sendEvent(H.c(e.contextId))
 					}
 				}, a.a.createElement(X.a, {
 					name: "tag",
@@ -1679,7 +1679,7 @@
 							name: e.user.username,
 							type: "profile"
 						},
-						getEventFactory: e => Object(H.j)(e ? "unfollow" : "follow", s),
+						getEventFactory: e => Object(H.h)(e ? "unfollow" : "follow", s),
 						isFullWidth: !0,
 						small: !0
 					})), U && s && !k && h && a.a.createElement(se, {
@@ -3001,7 +3001,7 @@
 							}))
 						}, [i, l, u]),
 						M = Object(r.useCallback)(() => {
-							i(Object(dt.e)(l, g.id)), o(Fe.f(d))
+							i(Object(dt.e)(l, g.id)), o(Fe.e(d))
 						}, [g.id, l, i, d, o]),
 						T = Object(r.useCallback)(() => {
 							i(Object(ot.c)({
@@ -3018,13 +3018,13 @@
 								username: u,
 								subredditId: l,
 								contextId: d
-							})), i(Object(it.i)(st.a.MUTE_USER)), o(Fe.e(d))
+							})), i(Object(it.i)(st.a.MUTE_USER)), o(Fe.d(d))
 						}, [o, i, u, l, d]),
 						H = Object(r.useCallback)(() => {
-							i(Object(lt.d)(l, g.id)), o(Fe.g(d))
+							i(Object(lt.d)(l, g.id)), o(Fe.f(d))
 						}, [o, i, g.id, l, d]),
 						F = Object(r.useCallback)(() => {
-							i(Object(ut.g)(l, u)), o(Fe.d(d))
+							i(Object(ut.g)(l, u)), o(Fe.c(d))
 						}, [o, i, u, l, d]),
 						R = Object(r.useCallback)(() => l && o(Object(m.l)({
 							subredditId: l,
@@ -3373,7 +3373,7 @@
 							name: e.user.username,
 							type: "profile"
 						},
-						getEventFactory: e => Object(Fe.j)(e ? "unfollow" : "follow", n),
+						getEventFactory: e => Object(Fe.h)(e ? "unfollow" : "follow", n),
 						isFullWidth: !0,
 						small: !0,
 						style: {
@@ -3521,7 +3521,7 @@
 			class m extends a.a.Component {
 				constructor() {
 					super(...arguments), this.sendEvent = () => {
-						this.props.sendEvent(Object(l.h)(this.props.postOrComment.id)), this.props.sendEvent(Object(l.i)(this.props.postOrComment.id, this.props.postOrComment.authorId || ""))
+						this.props.sendEvent(Object(l.g)(this.props.postOrComment.id))
 					}
 				}
 				render() {
@@ -6687,4 +6687,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.1e2218dbf6a95849b526.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.7017262c20584f04a482.js.map

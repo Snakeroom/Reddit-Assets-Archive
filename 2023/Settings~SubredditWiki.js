@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.534311a8c755cf7db2e9.js
-// Retrieved at 3/30/2023, 10:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.565de0f0cd5a8b91df59.js
+// Retrieved at 3/30/2023, 11:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, r) {
@@ -977,7 +977,7 @@
 				return a.a.createElement(c.t, {
 					onClick: e => {
 						if (f && f(e), t(g), p === n.awardNotification) return v();
-						o(Object(l.b)(i)), o(Object(l.c)(I, i))
+						o(Object(l.b)(i))
 					},
 					className: s,
 					text: r,
@@ -1223,7 +1223,7 @@
 					}, n ? s.a.createElement(Y.a, {
 						role: "button",
 						onClick: () => {
-							a(this.props.user.id), o(H.f(t))
+							a(this.props.user.id), o(H.e(t))
 						}
 					}, s.a.createElement(Z.a, {
 						name: "ban",
@@ -1244,7 +1244,7 @@
 					})), r && s.a.createElement(Y.a, {
 						role: "button",
 						onClick: () => {
-							d(), o(H.e(t))
+							d(), o(H.d(t))
 						}
 					}, s.a.createElement(Z.a, {
 						name: "mod_mute",
@@ -1290,7 +1290,7 @@
 				}))(e => s.a.createElement(Y.a, {
 					role: "button",
 					onClick: () => {
-						e.onToggleUserFlairModal(), e.sendEvent(H.d(e.contextId))
+						e.onToggleUserFlairModal(), e.sendEvent(H.c(e.contextId))
 					}
 				}, s.a.createElement(Z.a, {
 					name: "tag",
@@ -1453,7 +1453,7 @@
 							name: e.user.username,
 							type: "profile"
 						},
-						getEventFactory: e => Object(H.j)(e ? "unfollow" : "follow", a),
+						getEventFactory: e => Object(H.h)(e ? "unfollow" : "follow", a),
 						isFullWidth: !0,
 						small: !0
 					})), U && a && !y && v && s.a.createElement(ae, {
@@ -2764,4 +2764,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.534311a8c755cf7db2e9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.565de0f0cd5a8b91df59.js.map

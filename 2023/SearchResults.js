@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.422489403b3c0ca549b4.js
-// Retrieved at 3/30/2023, 10:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.359c509ed6a5a11920b9.js
+// Retrieved at 3/30/2023, 11:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, o) {
@@ -1143,25 +1143,24 @@
 				p = o("./src/reddit/controls/Dropdown/index.tsx"),
 				b = o("./src/reddit/controls/Dropdown/Row.tsx"),
 				x = o("./src/reddit/constants/tracking.ts"),
-				f = o("./src/reddit/helpers/trackers/chat.ts"),
-				v = o("./src/reddit/selectors/telemetry.ts");
-			var h = o("./src/reddit/hooks/useTracking.ts"),
-				O = o("./src/reddit/icons/fonts/index.tsx"),
-				_ = o("./src/reddit/models/Subreddit/index.ts"),
-				E = o("./src/reddit/routes/postCreation/constants.ts"),
-				w = o("./src/reddit/selectors/experiments/chat.ts"),
-				C = o("./src/reddit/selectors/tooltip.ts"),
-				j = o("./src/reddit/components/ShareMenu/index.m.less"),
-				N = o.n(j);
-			const k = Object(m.a)(p.a),
-				M = e => {
+				f = o("./src/reddit/selectors/telemetry.ts");
+			var v = o("./src/reddit/hooks/useTracking.ts"),
+				h = o("./src/reddit/icons/fonts/index.tsx"),
+				O = o("./src/reddit/models/Subreddit/index.ts"),
+				_ = o("./src/reddit/routes/postCreation/constants.ts"),
+				E = o("./src/reddit/selectors/experiments/chat.ts"),
+				w = o("./src/reddit/selectors/tooltip.ts"),
+				C = o("./src/reddit/components/ShareMenu/index.m.less"),
+				j = o.n(C);
+			const N = Object(m.a)(p.a),
+				k = e => {
 					let {
 						permalink: t,
 						onShare: o
 					} = e;
 					return r.a.createElement(b.b, {
 						id: "shareToChat",
-						className: N.a.dropdownRow,
+						className: j.a.dropdownRow,
 						displayText: s.fbt._("share to chat", null, {
 							hk: "3EuIWT"
 						}),
@@ -1173,91 +1172,76 @@
 							});
 							o(e)
 						}
-					}, r.a.createElement(O.a, {
+					}, r.a.createElement(h.a, {
 						name: "chat",
-						className: N.a.chatIcon
+						className: j.a.chatIcon
 					}))
 				},
-				y = e => {
+				M = e => {
 					let {
 						permalink: t,
 						sendEventWithName: o
 					} = e;
 					return r.a.createElement(b.b, {
-						className: N.a.dropdownRow,
+						className: j.a.dropdownRow,
 						displayText: s.fbt._("Embed", null, {
 							hk: "2CcsuC"
 						}),
 						onClick: () => {
 							o("share_embed"), window.open(`${i.a.rebedMediaUrl}/embed?url=${t}`, "RedditEmbed", "height=500,width=650,modal=yes,alwaysRaised=yes")
 						}
-					}, r.a.createElement(O.a, {
+					}, r.a.createElement(h.a, {
 						name: "embed",
-						className: N.a.embedIcon
+						className: j.a.embedIcon
 					}))
 				},
-				g = e => {
+				y = e => {
 					let {
 						onCrosspost: t
 					} = e;
 					return r.a.createElement(b.b, {
-						className: N.a.dropdownRow,
+						className: j.a.dropdownRow,
 						displayText: s.fbt._("crosspost", null, {
 							hk: "23zSN6"
 						}),
 						onClick: t
-					}, r.a.createElement(O.a, {
+					}, r.a.createElement(h.a, {
 						name: "crosspost",
-						className: N.a.crosspostIcon
+						className: j.a.crosspostIcon
 					}))
 				},
-				R = r.a.memo(e => {
+				g = r.a.memo(e => {
 					const t = Object(c.d)(),
-						o = Object(h.a)(),
-						i = Object(c.e)(t => Object(C.b)(e.dropdownId)(t)),
-						m = Object(c.e)(w.i),
+						o = Object(v.a)(),
+						i = Object(c.e)(t => Object(w.b)(e.dropdownId)(t)),
+						m = Object(c.e)(E.i),
 						p = Object(n.useCallback)(() => {
 							t(Object(u.h)({
 								tooltipId: e.dropdownId
 							}))
 						}, [t, e.dropdownId]),
-						j = !e.subredditType || e.subredditType === _.g.Public,
-						R = !!e.post && e.post.isCrosspostable && !e.post.isSponsored,
-						I = !m,
-						F = Object(n.useCallback)(s => {
-							t(Object(a.e)(s)), o((() => e => ({
-								...Object(v.o)(e),
+						C = !e.subredditType || e.subredditType === O.g.Public,
+						g = !!e.post && e.post.isCrosspostable && !e.post.isSponsored,
+						R = !m,
+						I = Object(n.useCallback)(e => {
+							t(Object(a.e)(e)), o((() => e => ({
+								...Object(f.o)(e),
 								source: "post",
 								action: x.c.CLICK,
 								noun: "share_chat",
-								subreddit: Object(v.lb)(e)
-							}))()), o((e => t => Object(f.a)({
-								...Object(v.o)(t),
-								source: "post",
-								action: x.c.CLICK,
-								noun: "share_chat",
-								post: e ? {
-									id: e.id,
-									createdTimestamp: e.created,
-									title: e.title,
-									authorId: e.authorId,
-									nsfw: e.isNSFW,
-									promoted: e.isSponsored,
-									numberComments: e.numComments,
-									upvoteRatio: e.upvoteRatio || void 0
-								} : void 0
-							}))(e.post))
-						}, [t, e.post, o]);
+								subreddit: Object(f.lb)(e)
+							}))())
+						}, [t, o]);
 					return r.a.createElement("div", {
 						className: e.className,
 						onClick: p,
 						id: e.dropdownId
-					}, e.children, r.a.createElement(k, {
-						className: N.a.dropdown,
+					}, e.children, r.a.createElement(N, {
+						className: j.a.dropdown,
 						isOpen: i,
 						tooltipId: e.dropdownId
 					}, r.a.createElement(b.b, {
-						className: N.a.dropdownRow,
+						className: j.a.dropdownRow,
 						displayText: s.fbt._("Copy link", null, {
 							hk: "1tCqox"
 						}),
@@ -1271,22 +1255,22 @@
 							});
 							e.sendEventWithName("share_copy"), (e => t(Object(l.C)(e)))(s)
 						}
-					}, r.a.createElement(O.a, {
+					}, r.a.createElement(h.a, {
 						name: "link_post",
-						className: N.a.linkIcon
-					})), R && r.a.createElement(g, {
+						className: j.a.linkIcon
+					})), g && r.a.createElement(y, {
 						onCrosspost: () => {
-							e.sendEventWithName("share_crosspost"), e.post && window.open(`${E.b}?source_id=${e.post.id}`, "_blank")
+							e.sendEventWithName("share_crosspost"), e.post && window.open(`${_.b}?source_id=${e.post.id}`, "_blank")
 						}
-					}), j && r.a.createElement(y, {
+					}), C && r.a.createElement(M, {
 						permalink: e.permalink,
 						sendEventWithName: e.sendEventWithName
-					}), I && r.a.createElement(M, {
+					}), R && r.a.createElement(k, {
 						permalink: e.permalink,
-						onShare: F
+						onShare: I
 					})))
 				});
-			t.a = R
+			t.a = g
 		},
 		"./src/reddit/components/ViewReportsDropdown/Loader.ts": function(e, t, o) {
 			"use strict";
@@ -2155,4 +2139,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.422489403b3c0ca549b4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.359c509ed6a5a11920b9.js.map

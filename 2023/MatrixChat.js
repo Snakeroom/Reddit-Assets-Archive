@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MatrixChat.714b6b664e044318b6cd.js
-// Retrieved at 3/6/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MatrixChat.913a906b788e4ab65b3b.js
+// Retrieved at 3/30/2023, 11:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MatrixChat"], {
 		"./src/reddit/components/IFrame/index.m.less": function(e, t, a) {
@@ -78,7 +78,7 @@
 		"./src/reddit/components/MatrixChat/index.tsx": function(e, t, a) {
 			"use strict";
 			a.r(t), a.d(t, "MatrixChat", (function() {
-				return S
+				return y
 			}));
 			var n = a("./node_modules/fbt/lib/FbtPublic.js"),
 				s = a("./node_modules/react/index.js"),
@@ -125,15 +125,14 @@
 				}, c.a.createElement(m.b, null))), c.a.createElement("div", null)))
 			};
 			var E = a("./src/lib/prettyPrintNumber/index.ts"),
-				h = a("./src/chat/actions/tracking.ts"),
 				f = a("./src/reddit/icons/svgs/Close/index.tsx"),
-				p = a("./src/reddit/reducers/features/matrixChat/index.ts"),
-				M = a("./src/reddit/selectors/features/matrixChat/index.ts"),
-				j = a("./src/reddit/components/MatrixChat/MinimizedChat/index.m.less"),
-				C = a.n(j);
+				h = a("./src/reddit/reducers/features/matrixChat/index.ts"),
+				p = a("./src/reddit/selectors/features/matrixChat/index.ts"),
+				M = a("./src/reddit/components/MatrixChat/MinimizedChat/index.m.less"),
+				j = a.n(M);
 
-			function _() {
-				return (_ = Object.assign || function(e) {
+			function C() {
+				return (C = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var a = arguments[t];
 						for (var n in a) Object.prototype.hasOwnProperty.call(a, n) && (e[n] = a[n])
@@ -141,98 +140,98 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const v = e => {
+			const _ = e => {
 				let {
 					className: t,
 					...a
 				} = e;
 				const s = Object(r.d)(),
-					i = Object(r.e)(M.a);
-				return c.a.createElement("section", _({
-					className: Object(o.a)(C.a.container, t),
+					i = Object(r.e)(p.a);
+				return c.a.createElement("section", C({
+					className: Object(o.a)(j.a.container, t),
 					onClick: () => {
 						s(Object(l.c)({
-							state: p.b.NORMAL
-						})), s(Object(h.eb)(!0, "minimized"))
+							state: h.b.NORMAL
+						}))
 					}
 				}, a), c.a.createElement("div", {
-					className: C.a.titleContainer
+					className: j.a.titleContainer
 				}, n.fbt._("Chat", null, {
 					hk: "2Joznw"
 				}), i && i > 0 && c.a.createElement("span", {
-					className: C.a.notificationsBadge
+					className: j.a.notificationsBadge
 				}, Object(E.b)(i))), c.a.createElement("button", {
 					type: "button",
 					onClick: e => {
 						null == e || e.stopPropagation(), s(Object(l.c)({
-							state: p.b.CLOSED
+							state: h.b.CLOSED
 						}))
 					}
 				}, c.a.createElement(f.a, null)))
 			};
-			var I = a("./src/reddit/hooks/useToast.tsx"),
-				N = a("./src/reddit/selectors/user.ts"),
-				L = a("./src/reddit/components/MatrixChat/Modal/Modal.m.less"),
-				g = a.n(L);
-			const A = e => c.a.createElement("div", {
+			var v = a("./src/reddit/hooks/useToast.tsx"),
+				I = a("./src/reddit/selectors/user.ts"),
+				N = a("./src/reddit/components/MatrixChat/Modal/Modal.m.less"),
+				L = a.n(N);
+			const g = e => c.a.createElement("div", {
 				onClick: t => {
 					t.stopPropagation(), e.onClose()
 				},
-				className: g.a.chatModal
+				className: L.a.chatModal
 			}, e.children, c.a.createElement(f.a, {
-				className: g.a.close
+				className: L.a.close
 			}));
-			var w, D = a("./src/reddit/components/MatrixChat/index.m.less"),
-				y = a.n(D);
+			var A, w = a("./src/reddit/components/MatrixChat/index.m.less"),
+				D = a.n(w);
 			! function(e) {
 				e.CLOSE = "matrix-chat.close", e.MINIMIZE = "matrix-chat.minimize", e.MAXIMIZE = "matrix-chat.maximize", e.LOADED = "matrix-chat.loaded", e.NOTIFICATIONS = "matrix-chat.notifications", e.OPEN_IMAGE = "matrix-chat.open_img_modal"
-			}(w || (w = {}));
-			const S = () => {
-				const [e, t] = c.a.useState(!1), [a, s] = c.a.useState(null), m = c.a.useRef(null), u = Object(r.d)(), b = Object(r.e)(N.k), x = Object(r.e)(M.c), E = Object(r.e)(M.b), h = Object(r.e)(M.d), f = Object(I.a)(), j = E === p.b.CHAT_WITH_USER ? `${x}/user/${h}` : x, C = e => {
+			}(A || (A = {}));
+			const y = () => {
+				const [e, t] = c.a.useState(!1), [a, s] = c.a.useState(null), m = c.a.useRef(null), u = Object(r.d)(), b = Object(r.e)(I.k), x = Object(r.e)(p.c), E = Object(r.e)(p.b), f = Object(r.e)(p.d), M = Object(v.a)(), j = E === h.b.CHAT_WITH_USER ? `${x}/user/${f}` : x, C = e => {
 					null == e || e.stopPropagation(), s(null), u(Object(l.c)({
-						state: p.b.CLOSED
+						state: h.b.CLOSED
 					}))
 				};
 				return c.a.useLayoutEffect(() => {
 					const e = e => {
 						var a, n, c, r;
-						if (e.data === w.CLOSE && C(), e.data === w.MINIMIZE && u(Object(l.c)({
-								state: p.b.MINIMIZED
-							})), e.data === w.MAXIMIZE && u(Object(l.c)({
-								state: p.b.MINIMIZED
-							})), e.data === w.LOADED && (t(!0), clearTimeout(m.current || void 0)), 0 === (null === (n = null === (a = e.data) || void 0 === a ? void 0 : a.indexOf) || void 0 === n ? void 0 : n.call(a, w.NOTIFICATIONS))) {
+						if (e.data === A.CLOSE && C(), e.data === A.MINIMIZE && u(Object(l.c)({
+								state: h.b.MINIMIZED
+							})), e.data === A.MAXIMIZE && u(Object(l.c)({
+								state: h.b.MINIMIZED
+							})), e.data === A.LOADED && (t(!0), clearTimeout(m.current || void 0)), 0 === (null === (n = null === (a = e.data) || void 0 === a ? void 0 : a.indexOf) || void 0 === n ? void 0 : n.call(a, A.NOTIFICATIONS))) {
 							const [, t] = e.data.split(":");
 							u(Object(l.b)({
 								count: parseInt(t, 10)
 							}))
 						}
-						if (null === (r = null === (c = e.data) || void 0 === c ? void 0 : c.startsWith) || void 0 === r ? void 0 : r.call(c, w.OPEN_IMAGE)) {
-							const t = e.data.substring(w.OPEN_IMAGE.length + 1, e.data.length);
+						if (null === (r = null === (c = e.data) || void 0 === c ? void 0 : c.startsWith) || void 0 === r ? void 0 : r.call(c, A.OPEN_IMAGE)) {
+							const t = e.data.substring(A.OPEN_IMAGE.length + 1, e.data.length);
 							s(t)
 						}
 					};
 					return window.addEventListener("message", e), () => window.document.removeEventListener("message", e)
 				}, []), c.a.useEffect(() => {
-					E === p.b.CLOSED && m.current && (t(!1), clearTimeout(m.current))
+					E === h.b.CLOSED && m.current && (t(!1), clearTimeout(m.current))
 				}, [E]), c.a.useEffect(() => {
-					E !== p.b.NORMAL || e || (m.current = window.setTimeout(() => {
-						C(), f(n.fbt._("Oops, something went wrong. Try again.", null, {
+					E !== h.b.NORMAL || e || (m.current = window.setTimeout(() => {
+						C(), M(n.fbt._("Oops, something went wrong. Try again.", null, {
 							hk: "4mYDx0"
 						}))
 					}, 3e4))
 				}, [E, e]), c.a.useEffect(() => {
 					b && u(Object(l.a)(b))
-				}, [b]), E === p.b.CLOSED ? null : c.a.createElement(i.a, null, E === p.b.MINIMIZED && c.a.createElement(v, {
-					className: y.a.container
-				}), !e && E === p.b.NORMAL && c.a.createElement(O, {
-					className: Object(o.a)(y.a.container, y.a.main),
+				}, [b]), E === h.b.CLOSED ? null : c.a.createElement(i.a, null, E === h.b.MINIMIZED && c.a.createElement(_, {
+					className: D.a.container
+				}), !e && E === h.b.NORMAL && c.a.createElement(O, {
+					className: Object(o.a)(D.a.container, D.a.main),
 					onClose: C
 				}), c.a.createElement(d.a, {
-					className: Object(o.a)(y.a.container, y.a.main, {
-						[y.a.hidden]: !(e && E === p.b.NORMAL)
+					className: Object(o.a)(D.a.container, D.a.main, {
+						[D.a.hidden]: !(e && E === h.b.NORMAL)
 					}),
 					src: j
-				}), a && c.a.createElement(A, {
+				}), a && c.a.createElement(g, {
 					onClose: () => s(null)
 				}, c.a.createElement("img", {
 					src: a
@@ -268,4 +267,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MatrixChat.714b6b664e044318b6cd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MatrixChat.913a906b788e4ab65b3b.js.map
