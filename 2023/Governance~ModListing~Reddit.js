@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.41585a8a8480e35d3cee.js
-// Retrieved at 3/30/2023, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.a042ce73c80265bd3b85.js
+// Retrieved at 3/30/2023, 10:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -2291,17 +2291,17 @@
 			})), n.d(t, "l", (function() {
 				return Y
 			})), n.d(t, "v", (function() {
-				return $
+				return X
 			})), n.d(t, "d", (function() {
-				return Z
+				return J
 			})), n.d(t, "t", (function() {
-				return ne
+				return te
 			})), n.d(t, "s", (function() {
-				return re
+				return ne
 			})), n.d(t, "u", (function() {
-				return oe
+				return re
 			})), n.d(t, "g", (function() {
-				return se
+				return oe
 			}));
 			var r = n("./node_modules/lodash/pick.js"),
 				o = n.n(r),
@@ -2351,9 +2351,6 @@
 							Object(C.a)(U(a, i, b, n, r, f)(t));
 							break
 						}
-						case s.Tb.COMMUNITY_HUBS:
-							Object(C.a)(Q()(t));
-							break;
 						case s.Tb.INDEX:
 						case s.Tb.LISTING:
 						case s.Tb.MULTIREDDIT:
@@ -2443,7 +2440,7 @@
 							break;
 						case s.Tb.SETTINGS: {
 							const o = e;
-							Object(C.a)(X(n, r)(t)), o.match.params.page === s.kc.Profile && Object(f.l)(t);
+							Object(C.a)(Q(n, r)(t)), o.match.params.page === s.kc.Profile && Object(f.l)(t);
 							break
 						}
 						case s.Tb.POST_CREATION:
@@ -2461,7 +2458,7 @@
 							break
 						}
 						case s.Tb.SUBREDDIT_WIKI:
-							Object(C.a)(J(n, r)(t));
+							Object(C.a)($(n, r)(t));
 							break;
 						case s.Tb.COINS:
 							Object(C.a)(W(n, r)(t)), Object(C.a)(K()(t));
@@ -2479,7 +2476,7 @@
 							b && B(t, !0, d ? d.subredditName : null, d ? d.profileName : null);
 							break;
 						case s.Tb.COLLECTION_COMMENTS:
-							b && oe(t, !0);
+							b && re(t, !0);
 							break;
 						case s.Tb.MODQUEUE_PAGES:
 							b && G(t, d ? d.subredditName : null, d ? d.profileName : null);
@@ -2488,17 +2485,17 @@
 							if (b) {
 								const s = Object(l.e)(e);
 								if (!s) return;
-								Object(C.a)(ne(s, Object(x.e)(o()(h && h.queryParams || {}, a.z)), n, r, h)(t))
+								Object(C.a)(te(s, Object(x.e)(o()(h && h.queryParams || {}, a.z)), n, r, h)(t))
 							}
 							break;
 						case s.Tb.GEOTAGGING:
-							b && Object(C.a)(Z()(t));
+							b && Object(C.a)(J()(t));
 							break;
 						case s.Tb.SUBREDDIT_CREATION:
-							b && Object(C.a)($()(t));
+							b && Object(C.a)(X()(t));
 							break;
 						case s.Tb.MOD_LISTING:
-							b && se(t, !0)
+							b && oe(t, !0)
 					}
 				},
 				k = e => ({
@@ -2799,26 +2796,20 @@
 					...k(n),
 					timer: N.rb(e, t)
 				}),
-				Q = () => e => ({
-					action: "view",
-					source: "global",
-					noun: "screen",
-					...k(e)
-				}),
-				X = (e, t) => n => ({
+				Q = (e, t) => n => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
 					...k(n),
 					timer: N.rb(e, t)
 				}),
-				$ = () => e => ({
+				X = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
 					...k(e)
 				}),
-				J = (e, t) => n => ({
+				$ = (e, t) => n => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -2829,21 +2820,21 @@
 					userSubreddit: N.ub(n),
 					adblock: N.e(n)
 				}),
-				Z = () => e => ({
+				J = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
 					...k(e)
 				}),
-				ee = {
+				Z = {
 					source: "global",
 					action: d.c.VIEW,
 					noun: "screen"
 				},
-				te = e => !!e && {
+				ee = e => !!e && {
 					correlationId: Object(j.c)(j.a.SearchResults)
 				},
-				ne = (e, t, n, r, o, i) => c => {
+				te = (e, t, n, r, o, i) => c => {
 					var a, d;
 					let u = !0;
 					if (t.type.indexOf(s.jc.Posts) > -1) {
@@ -2861,7 +2852,7 @@
 					const l = N.H(c, o);
 					return {
 						...v.f(c, t),
-						...ee,
+						...Z,
 						...N.o(c),
 						actionInfo: N.d(c, {
 							success: u,
@@ -2873,22 +2864,22 @@
 							sort: null !== (a = t.sort) && void 0 !== a ? a : s.Wb,
 							range: null !== (d = t.t) && void 0 !== d ? d : s.Xb
 						},
-						...te(i),
+						...ee(i),
 						userPreferences: N.gb(c)
 					}
 				},
-				re = (e, t, n) => r => ({
+				ne = (e, t, n) => r => ({
 					...N.o(r),
-					...ee,
+					...Z,
 					actionInfo: {
 						...N.d(r),
 						pageType: "search_dropdown"
 					},
 					search: N.db(r, e, E.a.Typeahead, t || void 0),
-					...te(n),
+					...ee(n),
 					userPreferences: N.gb(r)
 				}),
-				oe = (e, t) => {
+				re = (e, t) => {
 					Object(C.a)({
 						source: "global",
 						action: "view",
@@ -2899,7 +2890,7 @@
 						})
 					})
 				},
-				se = (e, t) => {
+				oe = (e, t) => {
 					Object(C.a)({
 						source: "global",
 						action: "view",
@@ -3406,7 +3397,7 @@
 					return r ? r * o.Yb < 1639443600180 ? void 0 : O(e) : void 0
 				},
 				O = Object(r.a)(e => Object(c.c)(e, {
-					experimentName: s.Le,
+					experimentName: s.Ke,
 					experimentEligibilitySelector: a.e
 				}), d.a)
 		},
@@ -3516,4 +3507,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.41585a8a8480e35d3cee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.a042ce73c80265bd3b85.js.map

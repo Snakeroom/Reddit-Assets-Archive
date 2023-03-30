@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsPermissionPromptLoader.e0df81f5b98e18f31780.js
-// Retrieved at 3/30/2023, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsPermissionPromptLoader.3d08e89d3ea794eb5215.js
+// Retrieved at 3/30/2023, 10:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsPermissionPromptLoader", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -65,11 +65,11 @@
 			})), i.d(t, "requestNotificationsPermissions", (function() {
 				return G
 			})), i.d(t, "subscribeForPNs", (function() {
-				return A
-			})), i.d(t, "unsubscribeFromPNs", (function() {
-				return W
-			})), i.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
 				return R
+			})), i.d(t, "unsubscribeFromPNs", (function() {
+				return A
+			})), i.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
+				return W
 			})), i.d(t, "subscribeToPermissionsChange", (function() {
 				return L
 			}));
@@ -95,21 +95,21 @@
 				y = i("./src/reddit/selectors/activeModalId.ts"),
 				k = i("./src/reddit/constants/experiments.ts"),
 				x = i("./src/reddit/helpers/chooseVariant/index.ts"),
-				S = i("./src/reddit/selectors/user.ts");
-			const w = e => Object(x.c)(e, {
-				experimentEligibilitySelector: S.S,
+				w = i("./src/reddit/selectors/user.ts");
+			const N = e => Object(x.c)(e, {
+				experimentEligibilitySelector: w.S,
 				experimentName: k.Ab
-			}) === k.Sd;
-			var N = i("./src/reddit/selectors/experiments/delayDnPermission.ts"),
+			}) === k.Rd;
+			var S = i("./src/reddit/selectors/experiments/delayDnPermission.ts"),
 				P = i("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts");
 			const F = e => Object(x.c)(e, {
-				experimentName: k.fc,
+				experimentName: k.ec,
 				experimentEligibilitySelector: x.a
-			}) === k.Sd;
+			}) === k.Rd;
 			var q = i("./src/reddit/selectors/meta.ts");
 			let C = !1;
 			const E = async (e, t) => {
-				const i = Object(S.R)(e);
+				const i = Object(w.R)(e);
 				if (C) return;
 				if (C = !0, Object(b.a)(e) !== d.d.NotificationsSupported) return;
 				await Object(u.a)();
@@ -137,26 +137,26 @@
 						u = Object(q.f)(c),
 						l = F(c),
 						f = !!Object(y.a)(c),
-						b = Object(N.a)(c),
+						b = Object(S.a)(c),
 						p = Object(P.e)(c),
 						m = Object(j.c)(g.a.NSFW_BLOCKING_MODAL_V2)(c),
-						O = w(c);
+						O = N(c);
 					if (p || m) return;
 					if (await Object(r.a)() || u) return;
 					await E(c, n);
 					_.l(c), await Object(a.b)(e, t, () => {
 						l || b || f || n(Object(d.s)()), n(Object(d.q)()), _.j(c)
 					}, (e, t) => {
-						n(Object(d.o)()), n(W(t ? d.a.Denied : d.a.Closed)), e && (t ? _.e(c) : _.f(c)), i()
+						n(Object(d.o)()), n(A(t ? d.a.Denied : d.a.Closed)), e && (t ? _.e(c) : _.f(c)), i()
 					}, e => {
-						n(Object(d.p)()), n(A()), e && _.d(c), i()
+						n(Object(d.p)()), n(R()), e && _.d(c), i()
 					}, () => {
 						n(Object(d.n)()), i()
 					}, () => {
 						n(Object(d.r)())
 					}, O)
 				}
-			}, A = e => async (t, i, o) => {
+			}, R = e => async (t, i, o) => {
 				const s = i();
 				try {
 					switch (await Object(c.b)(o.gqlContext)) {
@@ -177,7 +177,7 @@
 				} catch (r) {
 					_.k(s, "registration_failed_uncaught_exception"), console.error(r)
 				}
-			}, W = (e, t) => async i => {
+			}, A = (e, t) => async i => {
 				try {
 					Object(b.b)(e);
 					const o = await Object(u.a)();
@@ -191,7 +191,7 @@
 						})))
 					}
 				} catch (o) {}
-			}, R = e => async (t, i) => {
+			}, W = e => async (t, i) => {
 				const n = i();
 				if (Object(b.a)(n) === d.d.NotificationsSupported) switch (Object(a.a)()) {
 					case d.a.Default:
@@ -212,13 +212,13 @@
 				o.onchange = () => (t => {
 					switch (t) {
 						case d.a.Denied:
-							e(W(d.a.Denied)), _.e(n);
+							e(A(d.a.Denied)), _.e(n);
 							break;
 						case d.a.Granted:
-							e(A()), _.d(n);
+							e(R()), _.d(n);
 							break;
 						default:
-							e(W(d.a.Default))
+							e(A(d.a.Default))
 					}
 				})(o.state)
 			}
@@ -319,7 +319,7 @@
 			})), i.d(t, "h", (function() {
 				return x
 			})), i.d(t, "g", (function() {
-				return S
+				return w
 			}));
 			var n = i("./src/reddit/selectors/telemetry.ts"),
 				o = i("./src/telemetry/index.ts"),
@@ -453,7 +453,7 @@
 					noun: "desktop_notification_permissions",
 					source: "overlay"
 				}),
-				S = () => e => ({
+				w = () => e => ({
 					...n.o(e),
 					action: "auto_dismiss",
 					noun: "desktop_notification_permissions",
@@ -465,4 +465,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPermissionPromptLoader.e0df81f5b98e18f31780.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPermissionPromptLoader.3d08e89d3ea794eb5215.js.map

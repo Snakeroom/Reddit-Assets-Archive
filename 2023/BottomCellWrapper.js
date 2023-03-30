@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BottomCellWrapper.5dda2f1a845a463f6acc.js
-// Retrieved at 3/30/2023, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BottomCellWrapper.c6f3663ecc95d38eabfc.js
+// Retrieved at 3/30/2023, 10:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BottomCellWrapper", "SignupUpsell"], {
 		"./src/reddit/components/ErrorBoundary/index.tsx": function(e, t, s) {
@@ -49,9 +49,9 @@
 				i = s("./src/reddit/components/Upsell/SignupUpsell/index.tsx"),
 				r = s("./src/reddit/constants/promo.ts"),
 				c = s("./src/reddit/hooks/promo/useIsPromoShown.ts"),
-				a = s("./src/reddit/hooks/usePromoContext.ts"),
-				d = s("./src/reddit/components/Upsell/BottomCellWrapper/index.m.less"),
-				p = s.n(d);
+				d = s("./src/reddit/hooks/usePromoContext.ts"),
+				a = s("./src/reddit/components/Upsell/BottomCellWrapper/index.m.less"),
+				p = s.n(a);
 
 			function u(e) {
 				let {
@@ -65,7 +65,7 @@
 			t.default = function() {
 				const {
 					dismissPromo: e
-				} = Object(a.a)(), t = Object(c.a)(r.b.SignupUpsellCell), s = Object(c.a)(r.b.SignupUpsellCellDismissible);
+				} = Object(d.a)(), t = Object(c.a)(r.b.SignupUpsellCell), s = Object(c.a)(r.b.SignupUpsellCellDismissible);
 				return t ? n.createElement(u, null, n.createElement(i.default, {
 					size: "small"
 				})) : s ? n.createElement(u, null, n.createElement(i.default, {
@@ -109,8 +109,8 @@
 				i = s("./node_modules/react-redux/es/index.js"),
 				r = s("./src/reddit/actions/login.ts"),
 				c = s("./src/reddit/actions/modal.ts"),
-				a = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				d = s("./src/lib/classNames/index.ts"),
+				d = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				a = s("./src/lib/classNames/index.ts"),
 				p = s("./src/reddit/controls/Button/index.tsx"),
 				u = s("./src/reddit/components/Upsell/SSOButton/index.m.less"),
 				m = s.n(u);
@@ -124,9 +124,9 @@
 						className: r
 					} = e;
 					return l.createElement(p.t, {
-						className: Object(d.a)(m.a.button, r),
+						className: Object(a.a)(m.a.button, r),
 						Icon: t,
-						iconClassName: Object(d.a)(m.a.icon, i),
+						iconClassName: Object(a.a)(m.a.icon, i),
 						iconPosition: p.h.L,
 						isFullWidth: !0,
 						onClick: n,
@@ -196,7 +196,7 @@
 					onDismiss: t,
 					size: s
 				} = e;
-				const u = Object(a.b)();
+				const u = Object(d.b)();
 				l.useEffect(() => {
 					u(C())
 				}, [u]);
@@ -213,12 +213,12 @@
 						const e = Object(i.e)(w.b),
 							t = Object(i.e)(w.d),
 							s = Object(i.e)(w.f),
-							o = Object(O.a)(b.ed.Bottom_sheet),
-							l = Object(O.a)(b.ed.Bottom_cell),
-							r = Object(O.a)(b.ed.Bottom_cell_dismissible),
-							c = Object(O.a)(b.ed.Bottom_cell_dismissible_immediate_trigger),
-							a = Object(O.a)(b.ed.Bottom_cell_signup_upsell_copy),
-							d = Object(O.a)(b.ed.Bottom_cell_surprise_install_copy);
+							o = Object(O.a)(b.dd.Bottom_sheet),
+							l = Object(O.a)(b.dd.Bottom_cell),
+							r = Object(O.a)(b.dd.Bottom_cell_dismissible),
+							c = Object(O.a)(b.dd.Bottom_cell_dismissible_immediate_trigger),
+							d = Object(O.a)(b.dd.Bottom_cell_signup_upsell_copy),
+							a = Object(O.a)(b.dd.Bottom_cell_surprise_install_copy);
 						let p;
 						if (e) p = I;
 						else if (t) p = U;
@@ -231,12 +231,12 @@
 						if (l) return `${u}bottom_cell.png`;
 						if (r) return `${u}bottom_cell_dismissible.png`;
 						if (e && c) return `${u}bottom_cell_immediate_trigger_dismissible.png`;
-						if (e && a) return `${u}bottom_cell_signup_upsell_copy.png`;
-						if (e && d) return `${u}bottom_cell_surprise_install_copy.png`;
+						if (e && d) return `${u}bottom_cell_signup_upsell_copy.png`;
+						if (e && a) return `${u}bottom_cell_surprise_install_copy.png`;
 						throw new Error("Invalid variant for signup upsell")
 					}(),
-					y = Object(O.a)(b.ed.Bottom_cell_signup_upsell_copy),
-					H = Object(O.a)(b.ed.Bottom_cell_surprise_install_copy),
+					y = Object(O.a)(b.dd.Bottom_cell_signup_upsell_copy),
+					H = Object(O.a)(b.dd.Bottom_cell_surprise_install_copy),
 					A = y ? o.fbt._("Come join us, we have snacks", null, {
 						hk: "1LUl2W"
 					}) : o.fbt._("Log in or sign up for the best experience", null, {
@@ -248,7 +248,7 @@
 						hk: "2NvKYa"
 					});
 				return l.createElement("div", {
-					className: Object(d.a)(k.a.wrapper, {
+					className: Object(a.a)(k.a.wrapper, {
 						[k.a.small]: s === L.S,
 						[k.a.large]: s === L.L
 					})
@@ -289,7 +289,7 @@
 				})), l.createElement("div", {
 					className: k.a.bottomWrapper
 				}, l.createElement(p.j, {
-					className: Object(d.a)(k.a.linkButton, k.a.emailButton),
+					className: Object(a.a)(k.a.linkButton, k.a.emailButton),
 					onClick: () => {
 						x(), u(j(f.Reddit))
 					},
@@ -406,7 +406,7 @@
 		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return d
+				return a
 			})), s.d(t, "c", (function() {
 				return p
 			})), s.d(t, "e", (function() {
@@ -425,25 +425,25 @@
 				r = s("./src/reddit/selectors/experiments/index.ts");
 			const c = Object(n.a)(i.h, i.d, r.e, (e, t, s) => !e && !t && !s);
 
-			function a(e, t) {
+			function d(e, t) {
 				return s => Object(l.c)(s, {
 					experimentName: e,
 					experimentEligibilitySelector: c,
 					throttledVariants: {
-						[o.ed.Bottom_cell_dismissible]: e,
-						[o.ed.Bottom_cell_dismissible_immediate_trigger]: e,
-						[o.ed.Bottom_sheet]: e
+						[o.dd.Bottom_cell_dismissible]: e,
+						[o.dd.Bottom_cell_dismissible_immediate_trigger]: e,
+						[o.dd.Bottom_sheet]: e
 					},
 					expEventOverride: t
 				})
 			}
-			const d = a(o.Bb, !0),
-				p = a(o.Cb, !0),
-				u = a(o.Db, !0),
-				m = a(o.Bb, !1),
-				_ = a(o.Cb, !1),
-				b = a(o.Db, !1)
+			const a = d(o.Bb, !0),
+				p = d(o.Cb, !0),
+				u = d(o.Db, !0),
+				m = d(o.Bb, !1),
+				_ = d(o.Cb, !1),
+				b = d(o.Db, !1)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.5dda2f1a845a463f6acc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.c6f3663ecc95d38eabfc.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.1d0e9ea8f75129c9288f.js
-// Retrieved at 3/30/2023, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.f630aed1ce7ff5be045d.js
+// Retrieved at 3/30/2023, 10:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3667,7 +3667,7 @@
 			const b = "hideModmailHarassmentCampaignUntil";
 
 			function f() {
-				return Object(c.a)(i.ac) === i.Sd
+				return Object(c.a)(i.ac) === i.Rd
 			}
 
 			function h() {
@@ -5961,7 +5961,7 @@
 			const U = e => Object(R.c)(e, {
 				experimentEligibilitySelector: H.S,
 				experimentName: F.dc
-			}) === F.Sd;
+			}) === F.Rd;
 			var Y = n("./src/reddit/components/ModQueueList/SortByNumReportsTooltip.m.less"),
 				G = n.n(Y);
 			const z = e => {
@@ -8627,12 +8627,12 @@
 						rtJsonElementProps: a
 					});
 					switch (r) {
-						case b.Uf.SmIcon:
+						case b.Tf.SmIcon:
 							return o.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: a
 							});
-						case b.Uf.SmIconHc:
+						case b.Tf.SmIconHc:
 							return o.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -10093,13 +10093,13 @@
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
 						experimentName: s.J
-					}) === s.Sd
+					}) === s.Rd
 				},
 				a = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
 						experimentName: s.o
-					}) === s.Sd
+					}) === s.Rd
 				}
 		},
 		"./src/reddit/selectors/subredditMention.ts": function(e, t, n) {
@@ -10125,12 +10125,12 @@
 				d = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: s.Of
+						experimentName: s.Nf
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.Uf.SmIcon || t === s.Uf.SmIconHc
+					return t === s.Tf.SmIcon || t === s.Tf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -10171,4 +10171,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.1d0e9ea8f75129c9288f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.f630aed1ce7ff5be045d.js.map
