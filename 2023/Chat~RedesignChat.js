@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.6a17169e79da65ab45a8.js
-// Retrieved at 3/30/2023, 11:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.dd0121a932bb1e14d2ed.js
+// Retrieved at 3/31/2023, 7:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -18191,7 +18191,7 @@
 			function l(e) {
 				return Boolean(Object(a.q)(e) && (function(e) {
 					return e.redditChat.roomsCount > 0
-				}(e) || Object(a.o)(e) || o(e) || r(e)))
+				}(e) || Object(a.n)(e) || Object(a.o)(e) || o(e) || r(e)))
 			}
 		},
 		"./src/chat/selectors/richUnits.ts": function(e, t, n) {
@@ -20067,4 +20067,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.6a17169e79da65ab45a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.dd0121a932bb1e14d2ed.js.map
