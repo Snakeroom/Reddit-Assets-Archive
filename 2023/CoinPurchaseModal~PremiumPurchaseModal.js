@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PremiumPurchaseModal.9387f57b6bfddeb632cb.js
-// Retrieved at 4/3/2023, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PremiumPurchaseModal.d17cb5c1383e7d35241c.js
+// Retrieved at 4/3/2023, 3:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal~PremiumPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1071,33 +1071,34 @@
 				let {
 					className: t,
 					productOffer: r,
-					pricePackage: a,
-					productsCount: p,
-					extraParams: m,
-					onPaymentSuccess: f,
-					onButtonClick: b
+					pricePackage: p,
+					productsCount: m,
+					extraParams: f,
+					onPaymentSuccess: b,
+					onButtonClick: h
 				} = e;
-				const h = Object(d.a)(),
-					y = Object(n.useStripe)(),
-					g = Object(n.useElements)(),
-					v = Object(s.e)(l.x),
-					C = Object(s.e)(l.n) || v;
+				const y = Object(d.a)(),
+					g = Object(n.useStripe)(),
+					v = Object(n.useElements)(),
+					[C, O] = Object(a.useState)(!1),
+					j = Object(s.e)(l.x),
+					x = Object(s.e)(l.n);
 				return o.a.createElement(i.t, {
 					onClick: async () => {
-						if (!y || !g || !r) return;
-						null == b || b();
-						const e = await h(Object(c.i)({
-							stripe: y,
-							stripeElements: g,
+						if (!g || !v || !r) return;
+						null == h || h(), O(!0);
+						const e = await y(Object(c.i)({
+							stripe: g,
+							stripeElements: v,
 							productOffer: r,
-							pricePackage: a,
-							productsCount: p,
-							extraParams: m || {}
+							pricePackage: p,
+							productsCount: m,
+							extraParams: f || {}
 						}));
-						Object(c.c)(e) && e.success && f()
+						Object(c.c)(e) && e.success && b(), O(!1)
 					},
 					className: t,
-					disabled: C || !y
+					disabled: C || x || j || !g
 				}, u._("Complete purchase", null, {
 					hk: "KaR26"
 				}))
@@ -2349,4 +2350,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PremiumPurchaseModal.9387f57b6bfddeb632cb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PremiumPurchaseModal.d17cb5c1383e7d35241c.js.map

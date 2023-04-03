@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.60fa2db0af8eb42f2812.js
-// Retrieved at 4/3/2023, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.3e21ac6d700f4c5a53b8.js
+// Retrieved at 4/3/2023, 3:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./node_modules/@stripe/stripe-js/dist/stripe.esm.js": function(e, t, a) {
@@ -939,33 +939,34 @@
 				let {
 					className: t,
 					productOffer: a,
-					pricePackage: n,
-					productsCount: u,
-					extraParams: p,
-					onPaymentSuccess: h,
-					onButtonClick: b
+					pricePackage: u,
+					productsCount: p,
+					extraParams: h,
+					onPaymentSuccess: b,
+					onButtonClick: g
 				} = e;
-				const g = Object(d.a)(),
-					f = Object(r.useStripe)(),
-					C = Object(r.useElements)(),
-					y = Object(o.e)(l.x),
-					P = Object(o.e)(l.n) || y;
+				const f = Object(d.a)(),
+					C = Object(r.useStripe)(),
+					y = Object(r.useElements)(),
+					[P, x] = Object(n.useState)(!1),
+					v = Object(o.e)(l.x),
+					E = Object(o.e)(l.n);
 				return s.a.createElement(i.t, {
 					onClick: async () => {
-						if (!f || !C || !a) return;
-						null == b || b();
-						const e = await g(Object(c.i)({
-							stripe: f,
-							stripeElements: C,
+						if (!C || !y || !a) return;
+						null == g || g(), x(!0);
+						const e = await f(Object(c.i)({
+							stripe: C,
+							stripeElements: y,
 							productOffer: a,
-							pricePackage: n,
-							productsCount: u,
-							extraParams: p || {}
+							pricePackage: u,
+							productsCount: p,
+							extraParams: h || {}
 						}));
-						Object(c.c)(e) && e.success && h()
+						Object(c.c)(e) && e.success && b(), x(!1)
 					},
 					className: t,
-					disabled: P || !f
+					disabled: P || E || v || !C
 				}, m._("Complete purchase", null, {
 					hk: "KaR26"
 				}))
@@ -2065,4 +2066,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.60fa2db0af8eb42f2812.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.3e21ac6d700f4c5a53b8.js.map
