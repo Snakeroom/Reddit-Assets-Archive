@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~shreddit-player.fc287100bea72de75fa0.js
-// Retrieved at 3/23/2023, 8:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~shreddit-player.9845aee8d5d2fff74833.js
+// Retrieved at 4/3/2023, 6:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~shreddit-player"], {
 		"./node_modules/@reddit/shreddit.components.shreddit-player/dist/index.js": function(e, t, i) {
@@ -336,8 +336,8 @@
 				let s = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : "vds";
 				e.style.setProperty(`--${s}-${t}`, i || null)
 			}
-			var U = i("./node_modules/@reddit/vidstack.components.foundation/dist/src/utils/events.js");
-			class z extends CustomEvent {
+			var z = i("./node_modules/@reddit/vidstack.components.foundation/dist/src/utils/events.js");
+			class U extends CustomEvent {
 				constructor(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
 					super(e, t), this.triggerEvent = t.triggerEvent, this.hasOwnProperty("originEvent") || Object.defineProperties(this, {
@@ -367,7 +367,7 @@
 
 			function B(e) {
 				let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-				return new z(e, t)
+				return new U(e, t)
 			}
 
 			function W(e) {
@@ -414,7 +414,7 @@
 
 			function X(e, t) {
 				const i = (arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {}).register,
-					s = new U.a,
+					s = new z.a,
 					n = e => {
 						s.add(e)
 					},
@@ -686,7 +686,7 @@
 			}
 			class pe {
 				constructor(e) {
-					this._host = e, this._isScreenOrientationLocked = !1, this._updateScreenOrientation(), this._listenerDisposal = new U.a, e.addController({
+					this._host = e, this._isScreenOrientationLocked = !1, this._updateScreenOrientation(), this._listenerDisposal = new z.a, e.addController({
 						hostConnected: this._handleHostConnected.bind(this),
 						hostDisconnected: this._handleHostDisconnected.bind(this)
 					})
@@ -724,7 +724,7 @@
 					this.canOrient && this._listenerDisposal.add(this._addScreenOrientationChangeEventListener())
 				}
 				_addScreenOrientationChangeEventListener() {
-					return Object(U.e)(screen.orientation, "change", this._handleOrientationChange.bind(this))
+					return Object(z.e)(screen.orientation, "change", this._handleOrientationChange.bind(this))
 				}
 				_handleOrientationChange(e) {
 					this._screenOrientation = window.screen.orientation.type, this._host.dispatchEvent(B("vds-screen-orientation-change", {
@@ -745,7 +745,7 @@
 			var ve = i("./node_modules/fscreen/dist/fscreen.esm.js");
 			class ge {
 				constructor(e, t) {
-					this._host = e, this._screenOrientationController = t, this._listenerDisposal = new U.a, e.addController({
+					this._host = e, this._screenOrientationController = t, this._listenerDisposal = new z.a, e.addController({
 						hostDisconnected: this._handleHostDisconnected.bind(this)
 					})
 				}
@@ -771,14 +771,14 @@
 				}
 				_addFullscreenChangeEventListener(e) {
 					if (!this.isSupported) return S;
-					const t = Object(U.e)(ve.a, "fullscreenchange", e);
+					const t = Object(z.e)(ve.a, "fullscreenchange", e);
 					return () => {
 						t()
 					}
 				}
 				_addFullscreenErrorEventListener(e) {
 					if (!this.isSupported) return S;
-					const t = Object(U.e)(ve.a, "fullscreenerror", e);
+					const t = Object(z.e)(ve.a, "fullscreenerror", e);
 					return () => {
 						t()
 					}
@@ -931,7 +931,7 @@
 			}
 			class Ee {
 				constructor(e, t, i) {
-					this._host = e, this._initValue = t, this._options = i, this._stopDisposal = new U.a, this._value = t(), e.addController({
+					this._host = e, this._initValue = t, this._options = i, this._stopDisposal = new z.a, this._value = t(), e.addController({
 						hostConnected: this.start.bind(this),
 						hostDisconnected: this.stop.bind(this)
 					})
@@ -943,7 +943,7 @@
 					return this._value
 				}
 				start() {
-					const e = Object(U.e)(this._host, "vds-context-consumer-connect", this._handleConsumerConnect.bind(this));
+					const e = Object(z.e)(this._host, "vds-context-consumer-connect", this._handleConsumerConnect.bind(this));
 					for (const t of function(e, t) {
 							var i;
 							const s = null !== (i = fe.get(e)) && void 0 !== i ? i : [],
@@ -1072,7 +1072,7 @@
 			const Ve = Symbol("@vidstack/media-provider-discovery");
 			class qe extends s.a {
 				constructor() {
-					super(), this._disconnectDisposal = new U.a, this.manualPaused = !1, this.loading = "lazy", this._attemptingAutoplay = !1, this.muteToggledManually = !1, this.controllerQueue = new ie, this._store = xe(), this._state = ce(this._store), this.connectedQueue = ue(this), this.mediaQueue = new ie, this.screenOrientationController = new pe(this), this.fullscreenController = new ge(this, this.screenOrientationController), X(this, "vds-media-provider-connect", {
+					super(), this._disconnectDisposal = new z.a, this.manualPaused = !1, this.loading = "lazy", this._attemptingAutoplay = !1, this.muteToggledManually = !1, this.controllerQueue = new ie, this._store = xe(), this._state = ce(this._store), this.connectedQueue = ue(this), this.mediaQueue = new ie, this.screenOrientationController = new pe(this), this.fullscreenController = new ge(this, this.screenOrientationController), X(this, "vds-media-provider-connect", {
 						register: Ve
 					});
 					const e = function() {
@@ -1325,7 +1325,7 @@
 				He = !1;
 			class Ne extends s.a {
 				constructor() {
-					super(), this.singlePlayback = !1, this.syncVolume = !1, this._providerDisposal = new U.a, G(this, Ve, (e, t) => {
+					super(), this.singlePlayback = !1, this.syncVolume = !1, this._providerDisposal = new z.a, G(this, Ve, (e, t) => {
 						this._handleMediaProviderConnect(e, t)
 					})
 				}
@@ -1347,11 +1347,11 @@
 				}
 				_handleMediaProviderConnect(e, t) {
 					if (this._provider = e, $e.add(e), this.singlePlayback) {
-						const t = Object(U.e)(e, "vds-play", this._handleMediaPlay.bind(this));
+						const t = Object(z.e)(e, "vds-play", this._handleMediaPlay.bind(this));
 						this._providerDisposal.add(t)
 					}
 					if (this.syncVolume) {
-						const t = Object(U.e)(e, "vds-volume-change", Z(this._handleMediaVolumeChange.bind(this), 10, !0));
+						const t = Object(z.e)(e, "vds-volume-change", Z(this._handleMediaVolumeChange.bind(this), 10, !0));
 						this._providerDisposal.add(t)
 					}
 					window.requestAnimationFrame(() => {
@@ -1401,8 +1401,8 @@
 				type: Boolean,
 				attribute: "sync-volume"
 			})], Ne.prototype, "syncVolume", void 0), $("vds-media-sync", Ne);
-			var Ue = i("./node_modules/@reddit/vidstack.components.foundation/dist/src/observers/PageController.js"),
-				ze = function(e, t, i, s) {
+			var ze = i("./node_modules/@reddit/vidstack.components.foundation/dist/src/observers/PageController.js"),
+				Ue = function(e, t, i, s) {
 					var n, r = arguments.length,
 						a = r < 3 ? t : null === s ? s = Object.getOwnPropertyDescriptor(t, i) : s;
 					if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) a = Reflect.decorate(e, t, i, s);
@@ -1412,7 +1412,7 @@
 				};
 			class Be extends s.a {
 				constructor() {
-					super(), this.viewportEnterDelay = 0, this.pageChangeType = "state", this.pageEnterDelay = 0, this.intersectionThreshold = 1, this._isIntersecting = !1, this._providerDisposal = new U.a, this._hasIntersected = !1, this.pageController = new Ue.a(this, e => {
+					super(), this.viewportEnterDelay = 0, this.pageChangeType = "state", this.pageEnterDelay = 0, this.intersectionThreshold = 1, this._isIntersecting = !1, this._providerDisposal = new z.a, this._hasIntersected = !1, this.pageController = new ze.a(this, e => {
 						let {
 							state: t,
 							visibility: i
@@ -1448,9 +1448,9 @@
 					this._provider = e;
 					let i = () => {};
 					this._provider.addEventListener("vds-can-play", () => {
-						this.intersectionController = this.initializeIntersectionController(), i = this.intersectionController.observe(this)
+						this.intersectionController = this.initializeIntersectionController(), this.initializeScrollListener(), i = this.intersectionController.observe(this)
 					}), t(() => {
-						i(), this._provider = void 0, this._providerDisposal.empty()
+						i(), this._provider = void 0, this._providerDisposal.empty(), this._scrollListener && window.removeEventListener("scroll", this._scrollListener)
 					})
 				}
 				initializeIntersectionController() {
@@ -1464,6 +1464,12 @@
 							this._triggerOnEnter(this.enterViewport), this._intersectionTimeout = void 0
 						}, this.viewportEnterDelay) : this._triggerOnEnter(this.enterViewport) : this.exitViewport && this._triggerOnExit(this.exitViewport), this._hasIntersected = !0, this._dispatchVisibilityChange()
 					})
+				}
+				initializeScrollListener() {
+					this._scrollListener = Z(() => {
+						var e;
+						!this.isIntersecting && null !== (e = this.provider) && void 0 !== e && e.state.playing && this._triggerOnExit(this.exitViewport)
+					}, 100, !1), window.addEventListener("scroll", this._scrollListener)
 				}
 				_triggerOnEnter(e) {
 					this._provider && ("play" === e ? !1 === this._provider.state.started ? this._provider.attemptAutoplay() : this._provider.manualPaused || (this._provider.paused = !1) : "unmute" === e && (this._provider.muted = !1))
@@ -1488,25 +1494,25 @@
 					}))
 				}
 			}
-			ze([Object(n.b)({
+			Ue([Object(n.b)({
 				attribute: "enter-viewport"
-			})], Be.prototype, "enterViewport", void 0), ze([Object(n.b)({
+			})], Be.prototype, "enterViewport", void 0), Ue([Object(n.b)({
 				attribute: "exit-viewport"
-			})], Be.prototype, "exitViewport", void 0), ze([Object(n.b)({
+			})], Be.prototype, "exitViewport", void 0), Ue([Object(n.b)({
 				type: Number,
 				attribute: "viewport-enter-delay"
-			})], Be.prototype, "viewportEnterDelay", void 0), ze([Object(n.b)({
+			})], Be.prototype, "viewportEnterDelay", void 0), Ue([Object(n.b)({
 				attribute: "enter-page"
-			})], Be.prototype, "enterPage", void 0), ze([Object(n.b)({
+			})], Be.prototype, "enterPage", void 0), Ue([Object(n.b)({
 				attribute: "exit-page"
-			})], Be.prototype, "exitPage", void 0), ze([Object(n.b)({
+			})], Be.prototype, "exitPage", void 0), Ue([Object(n.b)({
 				attribute: "page-change-type"
-			})], Be.prototype, "pageChangeType", void 0), ze([Object(n.b)({
+			})], Be.prototype, "pageChangeType", void 0), Ue([Object(n.b)({
 				type: Number,
 				attribute: "page-enter-delay"
-			})], Be.prototype, "pageEnterDelay", void 0), ze([Object(n.b)({
+			})], Be.prototype, "pageEnterDelay", void 0), Ue([Object(n.b)({
 				attribute: "intersection-root"
-			})], Be.prototype, "intersectionRoot", void 0), ze([Object(n.b)({
+			})], Be.prototype, "intersectionRoot", void 0), Ue([Object(n.b)({
 				type: Number,
 				attribute: "intersection-threshold"
 			})], Be.prototype, "intersectionThreshold", void 0), $("vds-media-visibility", Be);
@@ -1540,7 +1546,7 @@
 			const Ke = Oe(() => ae(void 0));
 			class Ye {
 				constructor(e, t) {
-					this._host = e, this._mediaStore = t, this._idle = !1, this._mediaPaused = !1, this._idlingPaused = !1, this._isMouseOverMedia = !0, this._isMouseOverUIControls = !1, this._disposal = new U.a, this.delay = 1500, e.addController(this)
+					this._host = e, this._mediaStore = t, this._idle = !1, this._mediaPaused = !1, this._idlingPaused = !1, this._isMouseOverMedia = !0, this._isMouseOverUIControls = !1, this._disposal = new z.a, this.delay = 1500, e.addController(this)
 				}
 				get paused() {
 					return this._idlingPaused || this._mediaPaused
@@ -1554,22 +1560,22 @@
 						this._mediaPaused = e, this._handleIdleChange()
 					}));
 					["pointerdown", "pointermove", "focus", "keydown"].forEach(e => {
-						const t = Object(U.e)(this._host, e, Z(this._handleIdleChange.bind(this), 1, !0));
+						const t = Object(z.e)(this._host, e, Z(this._handleIdleChange.bind(this), 1, !0));
 						this._disposal.add(t)
 					});
-					const t = Object(U.e)(this._host, "mouseenter", () => {
+					const t = Object(z.e)(this._host, "mouseenter", () => {
 							this._isMouseOverMedia = !0
 						}),
-						i = Object(U.e)(this._host, "mouseleave", () => {
+						i = Object(z.e)(this._host, "mouseleave", () => {
 							this._isMouseOverMedia = !1, this._handleIdleChange()
 						});
 					this._disposal.add(t), this._disposal.add(i);
 					const s = null === (e = this._host) || void 0 === e ? void 0 : e.querySelector(".disappearing-controls");
 					if (s) {
-						const e = Object(U.e)(s, "mouseenter", () => {
+						const e = Object(z.e)(s, "mouseenter", () => {
 								this._isMouseOverUIControls = !0
 							}),
-							t = Object(U.e)(s, "mouseleave", () => {
+							t = Object(z.e)(s, "mouseleave", () => {
 								this._isMouseOverUIControls = !1, this._handleIdleChange()
 							});
 						this._disposal.add(e), this._disposal.add(t)
@@ -1597,7 +1603,7 @@
 			}
 			class Ge {
 				constructor(e) {
-					this._host = e, this._disconnectDisposal = new U.a, this.providerQueue = new ie, this.providerDisposal = new U.a, this._providerContext = Ke.provide(this._host), this._mediaStoreProvider = Le.provide(this._host), this.state = ce(this._store), this._handleIdleChange = Object(We.a)(this._host, "vds-user-idle-change", e => {
+					this._host = e, this._disconnectDisposal = new z.a, this.providerQueue = new ie, this.providerDisposal = new z.a, this._providerContext = Ke.provide(this._host), this._mediaStoreProvider = Le.provide(this._host), this.state = ce(this._store), this._handleIdleChange = Object(We.a)(this._host, "vds-user-idle-change", e => {
 						this._store.userIdle.set(e.detail), this._satisfyMediaRequest("userIdle", e)
 					}), this._pendingMediaRequests = {
 						play: [],
@@ -1798,7 +1804,7 @@
 					};
 					for (const t of ne(e)) {
 						const i = e[t].bind(this);
-						this.providerDisposal.add(Object(U.e)(this._provider, t, i))
+						this.providerDisposal.add(Object(z.e)(this._provider, t, i))
 					}
 				}
 				_clearMediaStateTracking() {
@@ -1937,7 +1943,7 @@
 			}
 			class Xe {
 				constructor(e, t, i) {
-					this._host = e, this._store = t, this._mediaProps = i, this._disposal = new U.a, this._host.addController({
+					this._host = e, this._store = t, this._mediaProps = i, this._disposal = new z.a, this._host.addController({
 						hostConnected: this._hostConnected.bind(this),
 						hostDisconnected: this._hostDisconnected.bind(this)
 					})
@@ -2082,7 +2088,7 @@
 			const nt = new Map;
 			class rt extends s.a {
 				constructor() {
-					super(), this._disposal = new U.a, this.repeat = 0, this.priority = 10, this._mediaCurrentTime = 0, this._currentToggleState = !1, this._mediaStoreConsumer = Le.consume(this), de(this, Ke, e => {
+					super(), this._disposal = new z.a, this.repeat = 0, this.priority = 10, this._mediaCurrentTime = 0, this._currentToggleState = !1, this._mediaStoreConsumer = Le.consume(this), de(this, Ke, e => {
 						this._mediaProviderElement = e
 					})
 				}
@@ -2135,7 +2141,7 @@
 					var e = this;
 					if (this._disposal.empty(), !this._mediaProviderElement || !this.type || !this.action) return;
 					let t, i = 0;
-					const s = Object(U.e)(this._mediaProviderElement, this.type, s => {
+					const s = Object(z.e)(this._mediaProviderElement, this.type, s => {
 						if (this._validateEvent(s)) {
 							var n;
 							if (s.preventDefault(), 0 == i) null === (n = this._pendingActions) || void 0 === n || n.set(this, [s, te()]);
@@ -2154,9 +2160,9 @@
 					this._disposal.add(s)
 				}
 				_validateEvent(e) {
-					if (Object(U.c)(e) || Object(U.b)(e) || Object(U.d)(e)) {
+					if (Object(z.c)(e) || Object(z.b)(e) || Object(z.d)(e)) {
 						var t, i;
-						const s = Object(U.d)(e) ? e.touches[0] : void 0,
+						const s = Object(z.d)(e) ? e.touches[0] : void 0,
 							n = null !== (t = null == s ? void 0 : s.clientX) && void 0 !== t ? t : e.clientX,
 							r = null !== (i = null == s ? void 0 : s.clientY) && void 0 !== i ? i : e.clientY,
 							a = this.getBoundingClientRect(),
@@ -2253,7 +2259,7 @@
 				ct = /\.(mp4|og[gv]|webm|mov|m4v|avi)($|\?)/i;
 			class ut extends qe {
 				constructor() {
-					super(...arguments), this.preload = "metadata", this._timeRAF = void 0, this._hasMediaElementConnected = !1, this._mediaElementDisposal = new U.a, this._isMediaWaiting = !1, this._ignoreNextAbortEvent = !1, this._ignoreNextEmptiedEvent = !1
+					super(...arguments), this.preload = "metadata", this._timeRAF = void 0, this._hasMediaElementConnected = !1, this._mediaElementDisposal = new z.a, this._isMediaWaiting = !1, this._ignoreNextAbortEvent = !1, this._ignoreNextEmptiedEvent = !1
 				}
 				get mediaElement() {
 					return this._mediaElement
@@ -2388,7 +2394,7 @@
 					};
 					ne(e).forEach(t => {
 						const i = e[t].bind(this),
-							s = Object(U.e)(this.mediaElement, t, async e => {
+							s = Object(z.e)(this.mediaElement, t, async e => {
 								await i(e)
 							});
 						this._mediaElementDisposal.add(s)
@@ -2625,7 +2631,7 @@
 					return this._presentationController.setPresentationMode("inline")
 				}
 				_addFullscreenChangeEventListener(e) {
-					return this.isSupportedNatively ? super._addFullscreenChangeEventListener(e) : this.isSupportedOnSafari ? Object(U.e)(this._host, "vds-video-presentation-change", this._handlePresentationModeChange.bind(this)) : S
+					return this.isSupportedNatively ? super._addFullscreenChangeEventListener(e) : this.isSupportedOnSafari ? Object(z.e)(this._host, "vds-video-presentation-change", this._handlePresentationModeChange.bind(this)) : S
 				}
 				_handlePresentationModeChange(e) {
 					this._handleFullscreenChange(e)
@@ -2638,7 +2644,7 @@
 			function vt(e, t) {
 				var i;
 				if (t.bubbles && t.composed) return;
-				const s = new z(t.type, {
+				const s = new U(t.type, {
 					triggerEvent: null !== (i = t.triggerEvent) && void 0 !== i ? i : t,
 					detail: t.detail,
 					bubbles: t.bubbles,
@@ -2649,10 +2655,10 @@
 			}
 			class gt {
 				constructor(e) {
-					this._host = e, this._listenerDisposal = new U.a;
+					this._host = e, this._listenerDisposal = new z.a;
 					const t = e.firstUpdated;
 					e.firstUpdated = i => {
-						null == t || t.call(e, i), this._listenerDisposal.add(Object(U.e)(e, "vds-media-element-connected", () => {
+						null == t || t.call(e, i), this._listenerDisposal.add(Object(z.e)(e, "vds-media-element-connected", () => {
 							this._listenerDisposal.add(this._addPresentationModeChangeEventListener())
 						}))
 					}, e.addController({
@@ -2684,7 +2690,7 @@
 					null === (t = this._host.videoElement) || void 0 === t || null === (i = t.webkitSetPresentationMode) || void 0 === i || i.call(t, e)
 				}
 				_addPresentationModeChangeEventListener() {
-					return !this.isSupported || M(this._host.videoElement) ? S : Object(U.e)(this._host.videoElement, "webkitpresentationmodechanged", this._handlePresentationModeChange.bind(this))
+					return !this.isSupported || M(this._host.videoElement) ? S : Object(z.e)(this._host.videoElement, "webkitpresentationmodechanged", this._handlePresentationModeChange.bind(this))
 				}
 				_handlePresentationModeChange(e) {
 					vt(this._host, e), this._host.dispatchEvent(B("vds-video-presentation-change", {
@@ -2971,7 +2977,7 @@
 					const {
 						live: i,
 						totalduration: s
-					} = t.details, n = new z(e, {
+					} = t.details, n = new U(e, {
 						detail: t
 					}), r = i ? Ce.a.LiveVideo : Ce.a.Video;
 					this.state.mediaType !== r && this.dispatchEvent(B("vds-media-type-change", {
@@ -3097,9 +3103,9 @@
 			class jt {
 				constructor(e) {
 					this._host = e;
-					const t = new U.a;
+					const t = new z.a;
 					let i = !1;
-					t.add(Object(U.e)(document, "pointerdown", () => {
+					t.add(Object(z.e)(document, "pointerdown", () => {
 						i = !1
 					})), Object(We.a)(e, "keydown", e => {
 						e.metaKey || e.altKey || e.ctrlKey || (i = !0)
@@ -3443,7 +3449,7 @@
 			}
 			var Nt;
 
-			function Ut(e) {
+			function zt(e) {
 				const t = Math.trunc(e / 3600),
 					i = Math.trunc(e % 3600 / 60),
 					s = Math.trunc(e % 60),
@@ -3456,14 +3462,14 @@
 				}
 			}
 
-			function zt(e) {
+			function Ut(e) {
 				let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
 					i = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
 				const {
 					hours: s,
 					minutes: n,
 					seconds: r
-				} = Ut(e), a = t ? Ht(s, 2) : s, o = Ht(n, 2), l = Ht(r, 2);
+				} = zt(e), a = t ? Ht(s, 2) : s, o = Ht(n, 2), l = Ht(r, 2);
 				return s > 0 || i ? `${a}:${o}:${l}` : `${n}:${l}`
 			}
 
@@ -3473,7 +3479,7 @@
 						hours: i,
 						minutes: s,
 						seconds: n
-					} = Ut(e),
+					} = zt(e),
 					r = (e, t) => 1 === e ? t : `${t}s`;
 				return i > 0 && t.push(`${i} ${r(i,"hour")}`), s > 0 && t.push(`${s} ${r(s,"minute")}`), (n > 0 || 0 === t.length) && t.push(`${n} ${r(n,"second")}`), t.join(", ")
 			}
@@ -3497,7 +3503,7 @@
 			};
 			class Qt extends s.a {
 				constructor() {
-					super(...arguments), this._disposal = new U.a, this._mediaStoreConsumer = Le.consume(this), this.__seconds = 0, this.type = "current", this.showHours = !1, this.padHours = !1, this.remainder = !1
+					super(...arguments), this._disposal = new z.a, this._mediaStoreConsumer = Le.consume(this), this.__seconds = 0, this.type = "current", this.showHours = !1, this.padHours = !1, this.remainder = !1
 				}
 				static get styles() {
 					return [s.b`
@@ -3553,7 +3559,7 @@
 					})
 				}
 				_getFormattedTime() {
-					return zt(this.__seconds, this.padHours, this.showHours)
+					return Ut(this.__seconds, this.padHours, this.showHours)
 				}
 			}
 
@@ -3642,7 +3648,7 @@
 			}(Jt || (Jt = {}));
 			class ei extends s.a {
 				constructor() {
-					super(), this._sliderStoreProvider = Yt.provide(this), this.disabled = !1, this.value = 50, this._step = 1, this.direction = Jt.Horizontal, this._keyboardStep = 1, this.shiftKeyMultiplier = 5, this.customValueText = !1, this._mediaRemote = new St(this), this._disconnectDisposal = new U.a, this._handlePointerEnter = Object(We.a)(this, "pointerenter", () => {
+					super(), this._sliderStoreProvider = Yt.provide(this), this.disabled = !1, this.value = 50, this._step = 1, this.direction = Jt.Horizontal, this._keyboardStep = 1, this.shiftKeyMultiplier = 5, this.customValueText = !1, this._mediaRemote = new St(this), this._disconnectDisposal = new z.a, this._handlePointerEnter = Object(We.a)(this, "pointerenter", () => {
 						this.disabled || (this.setAttribute("pointing", ""), this.store.pointing.set(!0))
 					}), this._handlePointerMove = Object(We.a)(this, "pointermove", e => {
 						if (this.disabled || this.isDragging) return;
@@ -3964,7 +3970,7 @@
 			};
 			class ri extends s.a {
 				constructor() {
-					super(...arguments), this._disposal = new U.a, this._sliderStoreConsumer = Yt.consume(this), this.__value = 0, this.type = "current", this.showHours = !1, this.padHours = !1, this.decimalPlaces = 2
+					super(...arguments), this._disposal = new z.a, this._sliderStoreConsumer = Yt.consume(this), this.__value = 0, this.type = "current", this.showHours = !1, this.padHours = !1, this.decimalPlaces = 2
 				}
 				static get styles() {
 					return [s.b`
@@ -4021,7 +4027,7 @@
 					return `${me(this.__value,this.decimalPlaces)}%`
 				}
 				_getTimeFormat() {
-					return zt(this.__value, this.padHours, this.showHours)
+					return Ut(this.__value, this.padHours, this.showHours)
 				}
 			}
 			ni([Object(n.d)()], ri.prototype, "__value", void 0), ni([Object(n.b)()], ri.prototype, "type", void 0), ni([Object(n.b)()], ri.prototype, "format", void 0), ni([Object(n.b)({
@@ -4519,7 +4525,7 @@
 			};
 			let Si = class extends s.a {
 				constructor() {
-					super(...arguments), this.hlsLibrary = () => i.e(3).then(i.t.bind(null, "./node_modules/@reddit/shreddit.components.shreddit-player/node_modules/hls.js/dist/hls.min.js", 7)), this.autoplay = !1, this.autoplayPref = !1, this.showAutoplayToggle = !1, this.gif = !1, this.playOutOfViewport = !1, this.ui = "mobile", this.objectFit = "contain", this.mediaLoadRequested = !1, this.disableMuteButton = !1, this.handleLoadMediaClick = () => {
+					super(...arguments), this.hlsLibrary = () => i.e(3).then(i.t.bind(null, "./node_modules/@reddit/shreddit.components.shreddit-player/node_modules/hls.js/dist/hls.min.js", 7)), this.autoplay = !1, this.autoplayPref = !1, this.showAutoplayToggle = !1, this.gif = !1, this.playOutOfViewport = !1, this.ui = "mobile", this.objectFit = "contain", this.isEmbed = !1, this.mediaLoadRequested = !1, this.disableMuteButton = !1, this.handleLoadMediaClick = () => {
 						this.mediaLoadRequested || (this.mediaLoadRequested = !0, setTimeout(() => {
 							var e;
 							null === (e = this.hlsElement) || void 0 === e || e.startLoadingMedia()
@@ -4616,7 +4622,7 @@
               class="disappearing-controls flex items-center w-full opacity-100 visible ease duration-300"
             >
               <vds-play-button
-                class="control flex items-center justify-center rounded-sm cursor-pointer pointer-events-auto relative ${"ease duration-150"}"
+                class="control ${this.isEmbed?"embed-xs:absolute embed-xs:z-10 embed-xs:!min-w-[43px]":""}  flex items-center justify-center rounded-sm cursor-pointer pointer-events-auto relative ${"ease duration-150"}"
               >
                 <icon-play fill class="play-icon text-18 ${i}"></icon-play>
                 <icon-refresh fill class="refresh-icon text-24 ${i}"></icon-refresh>
@@ -4625,18 +4631,18 @@
 
               <vds-time-slider
                 step="0.1"
-                class="flex-1 flex items-center z-0 cursor-pointer pointer-events-auto h-2xl mx-sm relative"
+                class="flex-1 flex items-center z-0 cursor-pointer pointer-events-auto h-2xl mx-sm ${this.isEmbed?"embed-xs:mx-0":""}  relative"
               >
                 <div
-                  class="slider-track w-full h-2xs absolute top-1/2 left-0 z-0 pointer-events-none -translate-y-1/2"
+                  class="slider-track w-full h-2xs ${this.isEmbed?"embed-xs:h-[2px]":""}  absolute top-1/2 left-0 z-0 pointer-events-none -translate-y-1/2"
                 ></div>
 
                 <div
-                  class="slider-track-fill z-10 absolute top-1/2 left-0 w-full h-2xs pointer-events-none "
+                  class="slider-track-fill z-10 absolute top-1/2 left-0 w-full h-2xs ${this.isEmbed?"embed-xs:h-[2px]":""} pointer-events-none "
                 ></div>
 
                 <div
-                  class="slider-thumb-container absolute top-0 w-lg h-full z-20 -translate-x-1/2"
+                  class="slider-thumb-container ${this.isEmbed?"embed-xs:hidden":""} absolute top-0 w-lg h-full z-20 -translate-x-1/2"
                 >
                   <div
                     class="
@@ -4663,8 +4669,8 @@
 
               <span class="flex ml-2xs font-semibold">
                 <vds-time type="current"></vds-time>
-                <span class="vds-time-spacer px-2xs">/</span>
-                <vds-time type="duration"></vds-time>
+                ${this.isEmbed?"":s.c`<span class="vds-time-spacer px-2xs">/</span>
+                      <vds-time type="duration"></vds-time>`}
               </span>
 
               ${t&&this.hlsEngine?s.c`
@@ -4677,7 +4683,7 @@
                   `:""}
 
               <vds-fullscreen-button
-                class="control flex items-center justify-center rounded-sm cursor-pointer pointer-events-auto relative ${"ease duration-150"}"
+                class="control ${this.isEmbed?"embed-xs:!min-w-[40px] embed-xs:ml-md":""} flex items-center justify-center rounded-sm cursor-pointer pointer-events-auto relative ${"ease duration-150"}"
               >
                 <icon-expand-left fill class="expand-icon text-18 ${i}"></icon-expand-left>
                 <icon-collapse-left
@@ -4850,7 +4856,10 @@
 			})], Si.prototype, "ui", void 0), Ci([Object(n.b)({
 				type: String,
 				attribute: "object-fit"
-			})], Si.prototype, "objectFit", void 0), Ci([Object(n.d)()], Si.prototype, "mediaLoadRequested", void 0), Ci([Object(n.d)()], Si.prototype, "hlsEngine", void 0), Ci([Object(n.d)()], Si.prototype, "disableMuteButton", void 0), Ci([Object(n.d)()], Si.prototype, "mediaError", void 0), Ci([Object(n.c)("vds-hls")], Si.prototype, "hlsElement", void 0), Ci([Object(n.c)("vds-volume-slider")], Si.prototype, "volumeSlider", void 0), Si = Ci([Object(n.a)("shreddit-player")], Si)
+			})], Si.prototype, "objectFit", void 0), Ci([Object(n.b)({
+				type: Boolean,
+				attribute: "is-embed"
+			})], Si.prototype, "isEmbed", void 0), Ci([Object(n.d)()], Si.prototype, "mediaLoadRequested", void 0), Ci([Object(n.d)()], Si.prototype, "hlsEngine", void 0), Ci([Object(n.d)()], Si.prototype, "disableMuteButton", void 0), Ci([Object(n.d)()], Si.prototype, "mediaError", void 0), Ci([Object(n.c)("vds-hls")], Si.prototype, "hlsElement", void 0), Ci([Object(n.c)("vds-volume-slider")], Si.prototype, "volumeSlider", void 0), Si = Ci([Object(n.a)("shreddit-player")], Si)
 		},
 		"./node_modules/@reddit/shreddit.components.shreddit-player/dist/media-telemetry-observer/media-telemetry-observer.js": function(e, t, i) {
 			"use strict";
@@ -5188,7 +5197,7 @@
 				return F(e) === f.Playing
 			}
 
-			function U(e) {
+			function z(e) {
 				return !e.state.muted && e.state.volume > 0
 			}! function(e) {
 				e.Landscape = "landscape", e.Portrait = "portrait"
@@ -5235,7 +5244,7 @@
 			function(e) {
 				e.Auto = "auto", e.Buffer = "buffer", e.Manual = "manual"
 			}(x || (x = {}));
-			class z {
+			class U {
 				constructor(e, t) {
 					var i, s, n, r;
 					this._handleHeartbeat = e => {
@@ -5243,7 +5252,7 @@
 					}, this._validateHeartbeat = e => e.latency < l, this._mediaOrigin = null == t ? void 0 : null === (i = t.media) || void 0 === i ? void 0 : i.origin, this._playbackPlayerType = null == t ? void 0 : null === (s = t.playback) || void 0 === s ? void 0 : s.playerType, this._player = e, this._pulse = new R({
 						interval: o
 					}), this._stopwatch = new T, this._firstPlayTrusted = !1, this.id = Object(A.a)(), this._lastContinueReason = x.Auto, this._live = (null === (n = this._player.state) || void 0 === n ? void 0 : n.mediaType) === L.a.LiveVideo, this.hasLooped = !1, this._playedInFullscreen = !1, this._playedWithSound = !1, this.startedAt = 0, this._waiting = !1, this._sequenceNumber = -1, this._pulse.onHeartbeat(this._handleHeartbeat), this._watchPercentThresholdObserver = new V(d), this._watchSecondsThresholdObserver = new V(h);
-					const a = U(this._player),
+					const a = z(this._player),
 						{
 							fullscreen: p = !1
 						} = null !== (r = this._player.state) && void 0 !== r ? r : {};
@@ -5307,7 +5316,7 @@
 					this._viewableImpressionObserver.test(), this._fullyViewableImpressionObserver.test()
 				}
 				volumeChange(e) {
-					const t = U(e);
+					const t = z(e);
 					t && N(e) && !this._playedWithSound && (this._playedWithSound = !0), this._viewableImpressionObserver.audible = t, this._fullyViewableImpressionObserver.audible = t
 				}
 				waiting() {
@@ -5510,7 +5519,7 @@
 					var s;
 					const n = Oe(e.requestEvent),
 						r = [];
-					if (U(i._player) && !t._playedWithSound) {
+					if (z(i._player) && !t._playedWithSound) {
 						t._playedWithSound = !0;
 						const e = I({
 							source: S.Videoplayer,
@@ -5651,7 +5660,7 @@
 							source: S.Videoplayer,
 							action: j.Click,
 							noun: "vds-mute-request" === a ? P.Mute : P.Unmute
-						}, i._player, t)), U(i._player) && N(i._player) && !t._playedWithSound) {
+						}, i._player, t)), z(i._player) && N(i._player) && !t._playedWithSound) {
 						const e = I({
 							source: S.Videoplayer,
 							action: j.PlayWithSound,
@@ -5863,7 +5872,7 @@
 							playerType: this.playbackPlayerType
 						}
 					};
-					this._mediaSession = new z(this._player, t), this._createIntersectionObservers(), null === (e = this._mediaSession) || void 0 === e || e.isVisible("hidden" !== this._pageController.state)
+					this._mediaSession = new U(this._player, t), this._createIntersectionObservers(), null === (e = this._mediaSession) || void 0 === e || e.isVisible("hidden" !== this._pageController.state)
 				}
 				_destroyMediaSession() {
 					var e, t;
@@ -6140,4 +6149,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~shreddit-player.fc287100bea72de75fa0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~shreddit-player.9845aee8d5d2fff74833.js.map

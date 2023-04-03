@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.0fee2e1f878141f09cdf.js
-// Retrieved at 4/3/2023, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.6940ef0684e1e44510f8.js
+// Retrieved at 4/3/2023, 6:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -1239,7 +1239,7 @@
 					const {
 						current: t
 					} = i;
-					if (y && !(null === (e = null == t ? void 0 : t.hlsElement) || void 0 === e ? void 0 : e.hasAttribute("paused"))) try {
+					if (y && (null === (e = null == t ? void 0 : t.hlsElement) || void 0 === e ? void 0 : e.state.canPlay)) try {
 						null == t || t.pause()
 					} catch (s) {}
 				}, [a, y, i]);
@@ -1302,7 +1302,7 @@
 					ref: t
 				}, l.a.createElement("shreddit-player", {
 					ref: i,
-					autoplay: c && !y || void 0,
+					autoplay: c && !m || void 0,
 					"autoplay-pref": u || void 0,
 					"play-out-of-viewport": Object(Dt.z)(h) || void 0,
 					poster: b,
@@ -1318,7 +1318,7 @@
 				const s = null == e ? void 0 : e.hlsSource,
 					i = null == t ? void 0 : t.hlsSource;
 				if (s && i && s.split("?")[0] !== i.split("?")[0]) return !1;
-				for (const n of Object.keys(t).filter(e => "hlsSource" !== e))
+				for (const n of Object.keys(t).filter(e => "hlsSource" !== e && "object" != typeof t[e]))
 					if (e[n] !== t[n]) return !1;
 				return !0
 			}));
@@ -2264,4 +2264,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.0fee2e1f878141f09cdf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.6940ef0684e1e44510f8.js.map
