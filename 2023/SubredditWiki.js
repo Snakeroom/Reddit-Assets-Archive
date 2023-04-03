@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.61435945756141870ce1.js
-// Retrieved at 4/3/2023, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.19cf3bf97ee2d2167424.js
+// Retrieved at 4/3/2023, 7:00:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -9880,7 +9880,8 @@
 				container: "I0T583ZtOWVEpRWsa0kbu",
 				button: "_2IOi-lonN6Hy4pTcjFTLBp",
 				revisionInfo: "Ln6UHsxFeDZdhv1yRUL0F",
-				flexSpacer: "meAs5YnW58CX9i8rWjZQL"
+				flexSpacer: "meAs5YnW58CX9i8rWjZQL",
+				insightsIcon: "_2jZ56a8X91s-hvF2Hs0YO6"
 			}
 		},
 		"./src/reddit/components/Wiki/WikiPageTopBar/index.tsx": function(e, t, n) {
@@ -9898,30 +9899,31 @@
 				p = n("./src/reddit/components/Wiki/common/RevisionInfo/index.tsx"),
 				b = n("./src/reddit/constants/wiki.ts"),
 				h = n("./src/reddit/controls/Button/index.tsx"),
-				g = n("./src/reddit/models/SubredditWikiPage/index.ts"),
-				f = n("./src/reddit/models/Toast/index.ts"),
-				x = n("./src/reddit/selectors/moderatorPermissions.ts"),
-				k = n("./src/reddit/selectors/subreddit.ts"),
-				v = n("./src/reddit/selectors/subredditWiki.ts"),
-				C = n("./src/config.ts"),
-				y = n("./src/reddit/components/OverflowMenu/index.tsx"),
-				E = n("./src/reddit/constants/parameters.ts"),
-				_ = n("./src/reddit/controls/Dropdown/Row.tsx"),
-				O = n("./src/reddit/helpers/trackers/subredditWiki.ts"),
-				w = n("./src/reddit/components/Wiki/WikiPageTopBar/OverflowMenu/index.m.less"),
-				j = n.n(w);
-			const N = ["right", "bottom"],
-				S = ["right", "top"];
-			class I extends a.a.Component {
+				g = n("./src/reddit/icons/fonts/index.tsx"),
+				f = n("./src/reddit/models/SubredditWikiPage/index.ts"),
+				x = n("./src/reddit/models/Toast/index.ts"),
+				k = n("./src/reddit/selectors/moderatorPermissions.ts"),
+				v = n("./src/reddit/selectors/subreddit.ts"),
+				C = n("./src/reddit/selectors/subredditWiki.ts"),
+				y = n("./src/config.ts"),
+				E = n("./src/reddit/components/OverflowMenu/index.tsx"),
+				_ = n("./src/reddit/constants/parameters.ts"),
+				O = n("./src/reddit/controls/Dropdown/Row.tsx"),
+				w = n("./src/reddit/helpers/trackers/subredditWiki.ts"),
+				j = n("./src/reddit/components/Wiki/WikiPageTopBar/OverflowMenu/index.m.less"),
+				N = n.n(j);
+			const S = ["right", "bottom"],
+				I = ["right", "top"];
+			class P extends a.a.Component {
 				constructor() {
 					super(...arguments), this.onViewPageSourceClick = () => {
-						this.props.sendEvent(O.r)
+						this.props.sendEvent(w.r)
 					}, this.onCopyPageUrl = () => {
 						const {
 							subredditName: e,
 							wikiPageName: t
-						} = this.props, n = `${C.a.redditUrl}/r/${e}/wiki/${t}`;
-						this.props.onCopyPageUrl(n), this.props.sendEvent(O.e)
+						} = this.props, n = `${y.a.redditUrl}/r/${e}/wiki/${t}`;
+						this.props.onCopyPageUrl(n), this.props.sendEvent(w.e)
 					}
 				}
 				render() {
@@ -9933,33 +9935,33 @@
 						wikiPage: r,
 						wikiPageName: o
 					} = this.props, d = n ? `/r/${i}/about/wiki` : `/r/${i}/wiki`;
-					return a.a.createElement(y.b, {
-						className: Object(c.a)(e, j.a.container),
-						dropdownClassName: j.a.dropdown,
+					return a.a.createElement(E.b, {
+						className: Object(c.a)(e, N.a.container),
+						dropdownClassName: N.a.dropdown,
 						dropdownId: t,
-						targetPosition: N,
-						tooltipPosition: S
-					}, r && a.a.createElement(_.b, {
-						className: j.a.row,
+						targetPosition: S,
+						tooltipPosition: I
+					}, r && a.a.createElement(O.b, {
+						className: N.a.row,
 						displayText: s.fbt._("View page history", null, {
 							hk: "fy9yY"
 						}),
 						href: `${d}/revisions/${o}/`
-					}), r && a.a.createElement(_.b, {
-						className: j.a.row,
+					}), r && a.a.createElement(O.b, {
+						className: N.a.row,
 						displayText: s.fbt._("View page source", null, {
 							hk: "1d5vg5"
 						}),
-						href: `${d}/${o}/?${E.Q}`,
+						href: `${d}/${o}/?${_.Q}`,
 						onClick: this.onViewPageSourceClick
-					}), n && a.a.createElement(_.b, {
-						className: j.a.row,
+					}), n && a.a.createElement(O.b, {
+						className: N.a.row,
 						displayText: s.fbt._("View in community", null, {
 							hk: "mSFod"
 						}),
 						href: `/r/${i}/wiki/${o}/`
-					}), a.a.createElement(_.b, {
-						className: j.a.row,
+					}), a.a.createElement(O.b, {
+						className: N.a.row,
 						displayText: s.fbt._("Copy URL", null, {
 							hk: "3yBYUk"
 						}),
@@ -9967,26 +9969,33 @@
 					}))
 				}
 			}
-			var P = I,
-				T = n("./src/reddit/components/Wiki/WikiPageTopBar/index.m.less"),
-				R = n.n(T);
-			const L = Object(d.c)({
+			var T = P,
+				R = n("./src/reddit/constants/experiments.ts"),
+				L = n("./src/reddit/helpers/chooseVariant/index.ts"),
+				W = n("./src/reddit/selectors/user.ts");
+			var D = n("./src/reddit/components/Wiki/WikiPageTopBar/index.m.less"),
+				B = n.n(D);
+			const M = Object(d.c)({
 					hasWikiModPerms: (e, t) => {
-						const n = Object(k.C)(e, t);
-						return !!n && Object(x.j)(e, {
+						const n = Object(v.C)(e, t);
+						return !!n && Object(k.j)(e, {
 							subredditId: n.id
 						})
 					},
-					wikiPage: v.c
+					wikiPage: C.c,
+					isInShredditAutomodInsightsExperiment: e => (e => Object(L.c)(e, {
+						experimentEligibilitySelector: W.S,
+						experimentName: R.Df
+					}) === R.Qd)(e)
 				}),
-				W = Object(o.b)(L, e => ({
+				F = Object(o.b)(M, e => ({
 					onCopyPageUrl: t => e((e => async t => {
 						Object(l.a)(e) && t(Object(u.f)(Object(u.e)(s.fbt._("Copied page URL", null, {
 							hk: "4qKWjj"
-						}), f.b.SuccessCommunity)))
+						}), x.b.SuccessCommunity)))
 					})(t))
 				}));
-			class D extends a.a.Component {
+			class A extends a.a.Component {
 				render() {
 					const {
 						hasWikiModPerms: e,
@@ -9995,30 +10004,42 @@
 						wikiPageName: r,
 						subredditName: o,
 						className: d
-					} = this.props, l = !!n && n.status === g.b.Valid, u = !!n && n.isRevisable, m = e && u && l, f = t ? `/r/${o}/about/wiki/edit/${r}` : `/r/${o}/wiki/edit/${r}`;
+					} = this.props, l = !!n && n.status === f.b.Valid, u = !!n && n.isRevisable, m = e && u && l, x = t ? `/r/${o}/about/wiki/edit/${r}` : `/r/${o}/wiki/edit/${r}`;
 					return a.a.createElement("div", {
-						className: Object(c.a)(d, R.a.container)
+						className: Object(c.a)(d, B.a.container)
 					}, t && n && n.revision && a.a.createElement(p.a, {
 						showTimeAgo: !0,
-						className: R.a.revisionInfo,
+						className: B.a.revisionInfo,
 						isLastRevision: !0,
 						revision: n.revision
 					}), a.a.createElement("div", {
-						className: R.a.flexSpacer
-					}), m && a.a.createElement(h.q, {
-						className: R.a.button,
+						className: B.a.flexSpacer
+					}), l && this.props.isInShredditAutomodInsightsExperiment && a.a.createElement(h.t, {
+						priority: h.c.Secondary,
+						className: B.a.button,
+						kind: h.b.ExternalLink,
+						href: `/mod/${o}/insights/automod`,
+						target: "_blank",
+						rel: "noopener noreferrer"
+					}, a.a.createElement(g.a, {
+						name: "statistics",
+						className: B.a.insightsIcon
+					}), s.fbt._("Automod Insights", null, {
+						hk: "2UENkn"
+					})), m && a.a.createElement(h.q, {
+						className: B.a.button,
 						to: `/r/${o}/about/wiki/settings/${r}`
 					}, s.fbt._("Page settings", null, {
 						hk: "2IAvWU"
 					})), l && u && a.a.createElement(h.n, {
-						className: R.a.button,
-						to: Object(i.c)(f, {
+						className: B.a.button,
+						to: Object(i.c)(x, {
 							[b.a]: !0
 						})
 					}, s.fbt._("Edit", null, {
 						hk: "1nftDt"
-					})), l && a.a.createElement(P, {
-						className: R.a.overflowMenu,
+					})), l && a.a.createElement(T, {
+						className: B.a.overflowMenu,
 						dropdownId: `wikiPage-OverflowMenu-${r}-${t}`,
 						isModHub: t,
 						onCopyPageUrl: this.props.onCopyPageUrl,
@@ -10029,7 +10050,7 @@
 					}))
 				}
 			}
-			t.a = W(Object(m.c)(D))
+			t.a = F(Object(m.c)(A))
 		},
 		"./src/reddit/components/Wiki/common/ContentPlaceholder/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -11525,4 +11546,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.61435945756141870ce1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.19cf3bf97ee2d2167424.js.map

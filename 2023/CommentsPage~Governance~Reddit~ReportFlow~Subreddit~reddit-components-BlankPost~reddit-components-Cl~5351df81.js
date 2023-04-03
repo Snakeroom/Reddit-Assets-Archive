@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.cbf5d6f6c820dc1d6712.js
-// Retrieved at 4/3/2023, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.e3c1251587ae77646b00.js
+// Retrieved at 4/3/2023, 7:00:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"], {
 		"./src/lib/name/index.ts": function(e, t, r) {
@@ -2547,7 +2547,7 @@
 						} = t;
 						var b, m;
 						const p = Object(he.k)(e),
-							f = !!p && !Object(Oe.tg)(p) && (i || p === Oe.mb.Community),
+							f = !!p && !Object(Oe.ug)(p) && (i || p === Oe.mb.Community),
 							{
 								adsSeenCount: O,
 								totalPostsSeenCount: g,
@@ -6793,7 +6793,7 @@
 								experimentName: i.E,
 								expEventOverride: t
 							});
-							return !!(Object(i.tg)(r) ? void 0 : r)
+							return !!(Object(i.ug)(r) ? void 0 : r)
 						})(r)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -10768,7 +10768,7 @@
 					var t;
 					const r = null === (t = e.platform.currentPage) || void 0 === t ? void 0 : t.urlParams,
 						n = r.subredditName;
-					return Object(m.a)(e) !== o.Zf.TargetedOnboarding || n && Object(i.a)(n, {
+					return Object(m.a)(e) !== o.ag.TargetedOnboarding || n && Object(i.a)(n, {
 						countryCode: r.countryCode,
 						languageCode: r.languageCode
 					}) || !Object.keys(r).length
@@ -10779,7 +10779,7 @@
 					} = e.onboarding;
 					if (t.success || t.failure) return t
 				},
-				I = Object(s.a)(b.k, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(o.tg)(e) ? t : null),
+				I = Object(s.a)(b.k, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(o.ug)(e) ? t : null),
 				v = Object(s.a)(b.k, (e, t) => {
 					let {
 						pageLayer: r
@@ -11442,4 +11442,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.cbf5d6f6c820dc1d6712.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.e3c1251587ae77646b00.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.912c87122837e20b4b11.js
-// Retrieved at 4/3/2023, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.f410650d2362101e20e0.js
+// Retrieved at 4/3/2023, 7:00:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -25545,7 +25545,7 @@
 						experimentEligibilitySelector: o.S,
 						experimentName: r.zd
 					});
-					return !(!t || Object(r.tg)(t))
+					return !(!t || Object(r.ug)(t))
 				},
 				a = e => {
 					return Object(s.c)(e, {
@@ -26060,7 +26060,7 @@
 											variant: t
 										}, {})
 									}
-								} else Object(s.d)(e, r.Ef, t)
+								} else Object(s.d)(e, r.Ff, t)
 							})(t(), r.S.Control1);
 							else if (d === a.a.Treatment) return Object(o.f)(n), window.location.href = e.pathname, !1
 					})
@@ -26138,9 +26138,9 @@
 					experimentName: s.qd,
 					experimentEligibilitySelector: e => c(e, t)
 				}), e => e),
-				l = e => e === s.ag.NoCommunityWidgets,
-				u = e => e === s.ag.NoRulesModerators,
-				m = e => e === s.ag.RelatedPostsDu
+				l = e => e === s.bg.NoCommunityWidgets,
+				u = e => e === s.bg.NoRulesModerators,
+				m = e => e === s.bg.RelatedPostsDu
 		},
 		"./src/reddit/selectors/experiments/uxtsIntegration.ts": function(e, t, n) {
 			"use strict";
@@ -26422,4 +26422,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.912c87122837e20b4b11.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.f410650d2362101e20e0.js.map

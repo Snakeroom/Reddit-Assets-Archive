@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.b7af477b6d2d5fc5c746.js
-// Retrieved at 4/3/2023, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.667e040f10e9c5c01a06.js
+// Retrieved at 4/3/2023, 7:00:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4075,12 +4075,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case h.Sf.SmIcon:
+						case h.Tf.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: i
 							});
-						case h.Sf.SmIconHc:
+						case h.Tf.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -5375,7 +5375,7 @@
 											variant: t
 										}, {})
 									}
-								} else Object(r.d)(e, n.Ef, t)
+								} else Object(r.d)(e, n.Ff, t)
 							})(t(), n.S.Control1);
 							else if (c === a.a.Treatment) return Object(o.f)(s), window.location.href = e.pathname, !1
 					})
@@ -5394,7 +5394,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(r.tg)(t)
+					return Boolean(t) && !Object(r.ug)(t)
 				},
 				d = Object(n.a)(a, o.d, (e, t) => e && !t)
 		},
@@ -5484,12 +5484,12 @@
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.Mf
+						experimentName: n.Nf
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.Sf.SmIcon || t === n.Sf.SmIconHc
+					return t === n.Tf.SmIcon || t === n.Tf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -5515,4 +5515,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.b7af477b6d2d5fc5c746.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.667e040f10e9c5c01a06.js.map
