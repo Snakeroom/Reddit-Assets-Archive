@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Avatar.4b2094faddb58b71ada6.js
-// Retrieved at 3/30/2023, 10:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Avatar.d42dd5b128cddd136c81.js
+// Retrieved at 4/3/2023, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Avatar"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, s) {
@@ -62,16 +62,16 @@
 					E(!0)
 				}, []);
 				const {
-					activeDetails: R,
-					activeTab: h,
+					activeDetails: h,
+					activeTab: R,
 					activeMeSubpage: k,
 					shopTabState: N
 				} = s, T = Object(n.useMemo)(() => ({
-					activeTab: h || void 0,
+					activeTab: R || void 0,
 					activeMeSubpage: k || void 0,
-					activeDetails: R || void 0,
+					activeDetails: h || void 0,
 					shopTabState: N || void 0
-				}), [R, h, k, N]), C = Object(c.e)(e => !Object(O.S)(e) && Object(m.w)(e));
+				}), [h, R, k, N]), C = Object(c.e)(e => !Object(O.S)(e) && Object(m.w)(e));
 				if (!f || !j) return null;
 				if (C) return a.a.createElement("div", {
 					className: Object(o.a)(x.a.container, {
@@ -204,10 +204,10 @@
 			const c = e => {
 					return !(Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: r.ze
-					}) === r.Rd)
+						experimentName: r.ye
+					}) === r.Qd)
 				},
-				o = Object(a.a)(r.Ae)
+				o = Object(a.a)(r.ze)
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, s) {
 			"use strict";
@@ -216,9 +216,9 @@
 			}));
 			var r = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(n.a)(r.Bd)
+			const a = Object(n.a)(r.Ad)
 		},
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.4b2094faddb58b71ada6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.d42dd5b128cddd136c81.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.e6bc2592136f6d6b70c4.js
-// Retrieved at 3/30/2023, 10:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.f784f8c5541533cdeb07.js
+// Retrieved at 4/3/2023, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -784,8 +784,8 @@
 				z = s("./src/reddit/controls/OutboundLink/styled.tsx"),
 				q = s("./src/reddit/models/Media/index.ts"),
 				J = s("./src/reddit/components/ClassicPost/Thumbnail.tsx"),
-				X = s("./src/reddit/connectors/ClassicPost/index.tsx"),
-				Q = s("./src/reddit/constants/postLayout.ts"),
+				Q = s("./src/reddit/connectors/ClassicPost/index.tsx"),
+				X = s("./src/reddit/constants/postLayout.ts"),
 				Z = s("./src/reddit/helpers/hasModFlairPermissions/index.ts"),
 				K = s("./src/reddit/helpers/hasModFullPermissions/index.ts"),
 				$ = s("./src/reddit/helpers/hasModPostPermissions/index.ts"),
@@ -827,7 +827,7 @@
 					isGalleryTileLayoutDefault: k,
 					isLoggedIn: P,
 					isOverlay: y,
-					imageGalleryCurrentItem: X,
+					imageGalleryCurrentItem: Q,
 					moderatorPermissions: oe,
 					modModeEnabled: ce,
 					onClickPost: ue,
@@ -874,15 +874,15 @@
 						shouldShowSubscribeButton: !(j && P) || We && P,
 						subredditOrProfile: Se
 					},
-					He = Object(r.t)(he, X),
+					He = Object(r.t)(he, Q),
 					{
 						source: ze
 					} = He,
 					[qe, Je] = Object(o.useState)(!1),
-					Xe = Object(o.useCallback)(() => {
+					Qe = Object(o.useCallback)(() => {
 						Je(!qe), Ie(Object(se.d)(_e))
 					}, [qe, _e, Ie]);
-				let Qe = n.a.createElement(J.a, {
+				let Xe = n.a.createElement(J.a, {
 					className: de.a.classicThumbnail,
 					crosspost: Ae && he,
 					isMeta: he.isMeta,
@@ -890,7 +890,7 @@
 					redditStyle: xe,
 					templatePlaceholderImage: Le && Le.postPlaceholderImage
 				});
-				Object(h.c)(he) && (Qe = n.a.createElement(N, {
+				Object(h.c)(he) && (Xe = n.a.createElement(N, {
 					post: he
 				}));
 				const Ze = Object(re.r)(he);
@@ -926,7 +926,7 @@
 					className: de.a.mainBody
 				}, n.a.createElement("div", {
 					className: Ge ? de.a.expandoContainer : de.a.thumbnailContainer
-				}, !Ge && Qe, n.a.createElement(T.a, {
+				}, !Ge && Xe, n.a.createElement(T.a, {
 					crosspost: Ae,
 					className: de.a.rightExpando,
 					isExpanded: !!_,
@@ -939,7 +939,7 @@
 					"data-click-id": "body"
 				}, Ze && n.a.createElement(U.a, {
 					content: he.recommendationContext.content,
-					layout: Q.g.Classic,
+					layout: X.g.Classic,
 					post: he
 				}), n.a.createElement(Y.c, {
 					className: fe ? de.a.titleWithPoll : void 0,
@@ -998,7 +998,7 @@
 					hostPostData: C,
 					isOverlay: !!y,
 					modModeEnabled: ce,
-					onClickInsightsButton: Xe,
+					onClickInsightsButton: Qe,
 					onIgnoreReports: me,
 					onOpenReportsDropdown: pe,
 					post: he,
@@ -1020,7 +1020,7 @@
 					isOwnProfileStats: !0
 				})))
 			});
-			t.default = Object(X.a)(ue)
+			t.default = Object(Q.a)(ue)
 		},
 		"./src/reddit/components/CompactPost/HorizontalVotes/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1938,8 +1938,8 @@
 				p = s("./node_modules/reselect/es/index.js");
 			const b = Object(p.a)(e => Object(m.c)(e, {
 				experimentEligibilitySelector: m.a,
-				experimentName: u.yc
-			}), e => e === u.Rd);
+				experimentName: u.xc
+			}), e => e === u.Qd);
 			var f = s("./node_modules/fbt/lib/FbtPublic.js"),
 				h = s("./src/lib/classNames/index.ts"),
 				_ = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
@@ -2046,7 +2046,7 @@
 			var z = s("./src/reddit/components/PromotedUserPostsAd/PromotedUserPost/index.m.less"),
 				q = s.n(z);
 			const J = Object(j.a)(null);
-			var X = Object(P.b)(J(e => {
+			var Q = Object(P.b)(J(e => {
 					let {
 						post: t
 					} = e;
@@ -2065,13 +2065,13 @@
 						post: t
 					})))
 				})),
-				Q = s("./src/reddit/components/PromotedUserPostsAd/PromotedUserPosts/index.m.less"),
-				Z = s.n(Q);
+				X = s("./src/reddit/components/PromotedUserPostsAd/PromotedUserPosts/index.m.less"),
+				Z = s.n(X);
 			const K = e => {
 				let {
 					postIds: t
 				} = e;
-				const s = t.map(e => n.a.createElement(X, {
+				const s = t.map(e => n.a.createElement(Q, {
 					postId: e,
 					key: e
 				}));
@@ -2303,7 +2303,7 @@
 			s.d(t, "b", (function() {
 				return U
 			})), s.d(t, "a", (function() {
-				return Q
+				return X
 			}));
 			var o = s("./src/config.ts"),
 				n = s("./node_modules/polished/dist/polished.es.js"),
@@ -2370,8 +2370,8 @@
 				q = s("./src/reddit/components/PostTitle/index.m.less"),
 				J = s.n(q);
 
-			function X() {
-				return (X = Object.assign || function(e) {
+			function Q() {
+				return (Q = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var o in s) Object.prototype.hasOwnProperty.call(s, o) && (e[o] = s[o])
@@ -2381,7 +2381,7 @@
 			}! function(e) {
 				e[e.ExtraLarge = 0] = "ExtraLarge", e[e.Large = 1] = "Large", e[e.Medium = 2] = "Medium", e[e.Small = 3] = "Small", e[e.ExtraSmall = 4] = "ExtraSmall", e[e.Metadata = 5] = "Metadata"
 			}(U || (U = {}));
-			const Q = e => {
+			const X = e => {
 					let {
 						size: t,
 						titleColor: s,
@@ -2436,7 +2436,7 @@
 						children: n,
 						...r
 					} = e;
-					return a.a.createElement(c.a, X({}, r, {
+					return a.a.createElement(c.a, Q({}, r, {
 						className: Object(u.a)(t, J.a.styledLink, {
 							[J.a.isVisitedEnabled]: !s
 						})
@@ -2523,7 +2523,7 @@
 					})(n));
 					const r = e.isCommentsPage ? B.a.PostComments : B.a.PostItem,
 						i = !(!e.isNsfwBlurSubreddit || !e.post.isNSFW);
-					return a.a.createElement(Q, {
+					return a.a.createElement(X, {
 						className: e.titleClassName,
 						nowrap: e.nowrap,
 						redditStyle: e.redditStyle || e.isCommentsPage || e.isCommentsPageAd,
@@ -2614,7 +2614,7 @@
 						nowrap: !0,
 						post: c,
 						sendEvent: this.props.sendEvent
-					}), !Object(y.b)(c) && a.a.createElement(ee, X({}, this.props, {
+					}), !Object(y.b)(c) && a.a.createElement(ee, Q({}, this.props, {
 						leftFlair: d ? f : void 0
 					})), i && a.a.createElement(F, {
 						className: J.a.pollMeta,
@@ -2645,7 +2645,7 @@
 					})),
 					r = Object(g.a)(),
 					c = Object(m.b)();
-				return o ? a.a.createElement(oe, X({
+				return o ? a.a.createElement(oe, Q({
 					pageLayer: t,
 					isCommentPermalink: s
 				}, o, n, e, {
@@ -3899,10 +3899,10 @@
 				n = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const a = Object(o.a)(e => Object(r.c)(e, {
-					experimentName: n.fg,
+					experimentName: n.eg,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				i = Object(o.a)(a, e => e === n.Zf)
+				i = Object(o.a)(a, e => e === n.Yf)
 		},
 		"./src/reddit/selectors/removedPosts.ts": function(e, t, s) {
 			"use strict";
@@ -3996,4 +3996,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.e6bc2592136f6d6b70c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.f784f8c5541533cdeb07.js.map
