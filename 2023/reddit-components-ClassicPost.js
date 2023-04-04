@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.7d251250e6ad82a99a06.js
-// Retrieved at 4/3/2023, 7:00:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.127113b216f488f0c17b.js
+// Retrieved at 4/4/2023, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -875,14 +875,11 @@
 						subredditOrProfile: Se
 					},
 					He = Object(r.t)(he, Q),
-					{
-						source: ze
-					} = He,
-					[qe, Je] = Object(o.useState)(!1),
-					Qe = Object(o.useCallback)(() => {
-						Je(!qe), Ie(Object(se.d)(_e))
-					}, [qe, _e, Ie]);
-				let Xe = n.a.createElement(J.a, {
+					[ze, qe] = Object(o.useState)(!1),
+					Je = Object(o.useCallback)(() => {
+						qe(!ze), Ie(Object(se.d)(_e))
+					}, [ze, _e, Ie]);
+				let Qe = n.a.createElement(J.a, {
 					className: de.a.classicThumbnail,
 					crosspost: Ae && he,
 					isMeta: he.isMeta,
@@ -890,10 +887,10 @@
 					redditStyle: xe,
 					templatePlaceholderImage: Le && Le.postPlaceholderImage
 				});
-				Object(h.c)(he) && (Xe = n.a.createElement(N, {
+				Object(h.c)(he) && (Qe = n.a.createElement(N, {
 					post: he
 				}));
-				const Ze = Object(re.r)(he);
+				const Xe = Object(re.r)(he);
 				return n.a.createElement(B.b, {
 					className: Object(a.a)(ne.a.classicPostStyles, de.a.postContainer, Object(te.a)(e), {
 						[de.a.shouldShowOverflow]: ge
@@ -926,7 +923,7 @@
 					className: de.a.mainBody
 				}, n.a.createElement("div", {
 					className: Ge ? de.a.expandoContainer : de.a.thumbnailContainer
-				}, !Ge && Xe, n.a.createElement(T.a, {
+				}, !Ge && Qe, n.a.createElement(T.a, {
 					crosspost: Ae,
 					className: de.a.rightExpando,
 					isExpanded: !!_,
@@ -937,7 +934,7 @@
 						[de.a.showBulkActionCheckbox]: Oe
 					}),
 					"data-click-id": "body"
-				}, Ze && n.a.createElement(U.a, {
+				}, Xe && n.a.createElement(U.a, {
 					content: he.recommendationContext.content,
 					layout: X.g.Classic,
 					post: he
@@ -962,7 +959,7 @@
 				}), ce && we && Fe && n.a.createElement(D.a, {
 					onIgnoreReports: me,
 					reportable: he
-				}), ye && ze && ze.url && !he.isSurveyAd && n.a.createElement(u.a, {
+				}), ye && Object(r.v)(he, Q) && n.a.createElement(u.a, {
 					ctaExperimentDesign: Ne && "classic",
 					className: Object(a.a)(de.a.adLinkWrapper, {
 						[de.a.ctaExperiment]: Ne
@@ -998,7 +995,7 @@
 					hostPostData: C,
 					isOverlay: !!y,
 					modModeEnabled: ce,
-					onClickInsightsButton: Qe,
+					onClickInsightsButton: Je,
 					onIgnoreReports: me,
 					onOpenReportsDropdown: pe,
 					post: he,
@@ -1013,7 +1010,7 @@
 						mute: !Me,
 						save: !Me
 					})
-				})), n.a.createElement(A.d, null))), Object(ee.a)(he, de.a, Ee, _, Pe, k), Se && qe && n.a.createElement(b.a, {
+				})), n.a.createElement(A.d, null))), Object(ee.a)(he, de.a, Ee, _, Pe, k), Se && ze && n.a.createElement(b.a, {
 					className: de.a.creatorStatsContainer,
 					post: he,
 					subreddit: Se,
@@ -3996,4 +3993,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.7d251250e6ad82a99a06.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.127113b216f488f0c17b.js.map

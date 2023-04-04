@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.a7194ecccc5d22467e6b.js
-// Retrieved at 4/4/2023, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.a55ff85e671dd858ded8.js
+// Retrieved at 4/4/2023, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "ModQueuePages~reddit-components-MediumPost"], {
 		"./src/lib/LiveChatActiveUsers/index.m.less": function(e, t, s) {
@@ -1863,14 +1863,11 @@
 						subredditOrProfile: ke
 					},
 					He = Object(r.t)(xe, J),
-					{
-						source: Ke
-					} = He,
-					[qe, Qe] = Object(o.useState)(!1),
-					Je = Object(o.useCallback)(() => {
-						Qe(!qe), Se(Object(se.d)(fe))
-					}, [qe, fe, Se]);
-				let Ze = n.a.createElement(Q.a, {
+					[Ke, qe] = Object(o.useState)(!1),
+					Qe = Object(o.useCallback)(() => {
+						qe(!Ke), Se(Object(se.d)(fe))
+					}, [Ke, fe, Se]);
+				let Je = n.a.createElement(Q.a, {
 					className: ce.a.classicThumbnail,
 					crosspost: Re && xe,
 					isMeta: xe.isMeta,
@@ -1878,10 +1875,10 @@
 					redditStyle: ve,
 					templatePlaceholderImage: Te && Te.postPlaceholderImage
 				});
-				Object(x.c)(xe) && (Ze = n.a.createElement(I, {
+				Object(x.c)(xe) && (Je = n.a.createElement(I, {
 					post: xe
 				}));
-				const Xe = Object(re.r)(xe);
+				const Ze = Object(re.r)(xe);
 				return n.a.createElement(U.b, {
 					className: Object(a.a)(ne.a.classicPostStyles, ce.a.postContainer, Object(te.a)(e), {
 						[ce.a.shouldShowOverflow]: je
@@ -1914,7 +1911,7 @@
 					className: ce.a.mainBody
 				}, n.a.createElement("div", {
 					className: ze ? ce.a.expandoContainer : ce.a.thumbnailContainer
-				}, !ze && Ze, n.a.createElement(N.a, {
+				}, !ze && Je, n.a.createElement(N.a, {
 					crosspost: Re,
 					className: ce.a.rightExpando,
 					isExpanded: !!f,
@@ -1925,7 +1922,7 @@
 						[ce.a.showBulkActionCheckbox]: ge
 					}),
 					"data-click-id": "body"
-				}, Xe && n.a.createElement(F.a, {
+				}, Ze && n.a.createElement(F.a, {
 					content: xe.recommendationContext.content,
 					layout: Z.g.Classic,
 					post: xe
@@ -1950,7 +1947,7 @@
 				}), de && Me && Be && n.a.createElement(A.a, {
 					onIgnoreReports: ue,
 					reportable: xe
-				}), we && Ke && Ke.url && !xe.isSurveyAd && n.a.createElement(m.a, {
+				}), we && Object(r.v)(xe, J) && n.a.createElement(m.a, {
 					ctaExperimentDesign: Ie && "classic",
 					className: Object(a.a)(ce.a.adLinkWrapper, {
 						[ce.a.ctaExperiment]: Ie
@@ -1986,7 +1983,7 @@
 					hostPostData: C,
 					isOverlay: !!w,
 					modModeEnabled: de,
-					onClickInsightsButton: Je,
+					onClickInsightsButton: Qe,
 					onIgnoreReports: ue,
 					onOpenReportsDropdown: pe,
 					post: xe,
@@ -2001,7 +1998,7 @@
 						mute: !De,
 						save: !De
 					})
-				})), n.a.createElement(R.d, null))), Object(ee.a)(xe, ce.a, Oe, f, Pe, y), ke && qe && n.a.createElement(b.a, {
+				})), n.a.createElement(R.d, null))), Object(ee.a)(xe, ce.a, Oe, f, Pe, y), ke && Ke && n.a.createElement(b.a, {
 					className: ce.a.creatorStatsContainer,
 					post: xe,
 					subreddit: ke,
@@ -4081,9 +4078,7 @@
 							hasBottomCompactPostStyles: a,
 							showPinnnedHeader: r
 						}
-					})(e), jt = Object(r.d)(), kt = Object(r.e)(je.b), _t = Object(r.e)(je.c), yt = Object(r.e)(P.lb), Pt = Object(ge.a)(), wt = De.permalink, It = e.isCommentPermalink ? Object(he.b)(wt) : Object(S.a)(wt, void 0, Pt), St = !!(null == y ? void 0 : y.shouldShowLinkedPosts), Nt = (!ee || St || Ge) && !De.isSponsored, Tt = Object(w.t)(De, N), {
-						source: Rt
-					} = Tt, Mt = Object(o.useRef)(null), Lt = Object(o.useCallback)(e => {
+					})(e), jt = Object(r.d)(), kt = Object(r.e)(je.b), _t = Object(r.e)(je.c), yt = Object(r.e)(P.lb), Pt = Object(ge.a)(), wt = De.permalink, It = e.isCommentPermalink ? Object(he.b)(wt) : Object(S.a)(wt, void 0, Pt), St = !!(null == y ? void 0 : y.shouldShowLinkedPosts), Nt = (!ee || St || Ge) && !De.isSponsored, Tt = Object(w.t)(De, N), Rt = Object(o.useRef)(null), Mt = Object(o.useCallback)(e => {
 						e.forEach(e => {
 							const {
 								isIntersecting: t
@@ -4091,17 +4086,17 @@
 							t && (null == Ye || Ye(Ie))
 						})
 					}, [Ye, Ie]);
-					Object(v.a)(Mt, Lt);
-					const [At, Dt] = Object(o.useState)(!1), Ft = Object(o.useCallback)(() => {
-						Dt(!At), at(Object(Oe.d)(Ze))
-					}, [At, at, Ze]), Bt = !!(te && (null == Qe ? void 0 : Qe.isNSFW)), Ut = Object(o.useRef)({
+					Object(v.a)(Rt, Mt);
+					const [Lt, At] = Object(o.useState)(!1), Dt = Object(o.useCallback)(() => {
+						At(!Lt), at(Object(Oe.d)(Ze))
+					}, [Lt, at, Ze]), Ft = !!(te && (null == Qe ? void 0 : Qe.isNSFW)), Bt = Object(o.useRef)({
 						renderingObjectInfo: De
-					}), Vt = Object(o.useCallback)(e => {
+					}), Ut = Object(o.useCallback)(e => {
 						(kt || _t) && (e.preventDefault(), jt(Object(u.Z)(Object(he.b)(De.permalink), De.id)))
-					}, [jt, kt, _t, De.id, De.permalink]), zt = De && De.media && (De.media.type === g.o.TEXT || De.media.type === g.o.RTJSON), Wt = Object(E.r)(De), {
-						isEnabled: Gt,
-						variant: Ht
-					} = Object(r.e)(Re), [Kt, qt] = Object(o.useState)(!1);
+					}, [jt, kt, _t, De.id, De.permalink]), Vt = De && De.media && (De.media.type === g.o.TEXT || De.media.type === g.o.RTJSON), zt = Object(E.r)(De), {
+						isEnabled: Wt,
+						variant: Gt
+					} = Object(r.e)(Re), [Ht, Kt] = Object(o.useState)(!1);
 					return n.a.createElement(n.a.Fragment, null, n.a.createElement(Z.b, {
 						className: Object(I.a)(Ue.a.container, i, ve.a.largeAndMediumPostStyles, ve.a.largeAndMediumActiveStyles, Object(m.a)(e), {
 							[ve.a.mUseRedditTheme]: it,
@@ -4122,7 +4117,7 @@
 						onClick: Me,
 						eventFactory: C
 					}, n.a.createElement("div", {
-						ref: Mt
+						ref: Rt
 					}), n.a.createElement(re.a, {
 						model: De,
 						handleVote: e.handleVote,
@@ -4157,7 +4152,7 @@
 						post: De
 					}), n.a.createElement(h.a, {
 						post: De
-					})), !Object(a.c)(De) && n.a.createElement(n.a.Fragment, null, Wt && n.a.createElement(Q.a, {
+					})), !Object(a.c)(De) && n.a.createElement(n.a.Fragment, null, zt && n.a.createElement(Q.a, {
 						content: De.recommendationContext.content,
 						layout: le.g.Large,
 						post: De
@@ -4180,7 +4175,7 @@
 						showSubredditIcon: !0,
 						subredditOrProfile: Qe,
 						onSubscribed: () => {
-							qt(!0), rt()
+							Kt(!0), rt()
 						}
 					}), n.a.createElement(ae.c, {
 						className: Ue.a.postTitle,
@@ -4193,20 +4188,20 @@
 						className: Ue.a.adSupplementaryText,
 						post: De,
 						size: ae.b.Large
-					}), De.source && !De.isSponsored && !Bt && n.a.createElement(n.a.Fragment, null, n.a.createElement(ce.a, {
+					}), De.source && !De.isSponsored && !Ft && n.a.createElement(n.a.Fragment, null, n.a.createElement(ce.a, {
 						className: Ue.a.sourceLink,
 						post: De
 					}), $e && De.media && De.media.type !== g.o.TEXT && De.media.type !== g.o.IMAGE && De.media.richtextContent && n.a.createElement(f.a, {
 						content: De.media.richtextContent,
-						rtJsonElementProps: Ut.current
+						rtJsonElementProps: Bt.current
 					}))), n.a.createElement("div", {
 						className: Ue.a.postMediaWrapper
 					}, !Ct && n.a.createElement(He, {
-						handlePostLinkClick: Vt,
+						handlePostLinkClick: Ut,
 						postPermalink: It,
 						disableVisited: e.disableVisited,
 						shouldOpenPostInNewTab: yt,
-						shouldStylePostAfterVisitLink: zt
+						shouldStylePostAfterVisitLink: Vt
 					}, n.a.createElement(Y.a, {
 						isGalleryTileLayoutDefault: ue,
 						isListing: !0,
@@ -4222,7 +4217,7 @@
 						autoplayPref: t,
 						shouldShowGalleryTileOption: ze,
 						showPromotedCTA: qe
-					}))), qe && Rt && Rt.url && !De.isSurveyAd && n.a.createElement(T.a, {
+					}))), qe && Object(w.v)(De, N) && n.a.createElement(T.a, {
 						className: Ue.a.adLinkWrapper,
 						ctaExperimentDesign: et && "card"
 					}, n.a.createElement(R.a, {
@@ -4269,7 +4264,7 @@
 						isOverlay: !!Ce,
 						listingKey: Se,
 						modModeEnabled: Te,
-						onClickInsightsButton: Ft,
+						onClickInsightsButton: Dt,
 						onIgnoreReports: Le,
 						onOpenReportsDropdown: Ae,
 						post: De,
@@ -4283,7 +4278,7 @@
 							report: !1,
 							mute: !1
 						})
-					}))), Qe && At && n.a.createElement(F.a, {
+					}))), Qe && Lt && n.a.createElement(F.a, {
 						className: Ue.a.creatorStatsContainer,
 						post: De,
 						subreddit: Qe,
@@ -4295,13 +4290,13 @@
 						post: De,
 						postIds: null != Xe ? Xe : [],
 						subredditId: null == Qe ? void 0 : Qe.id
-					})), me && Wt && Gt && Kt && Qe && n.a.createElement(de.b, {
+					})), me && zt && Wt && Ht && Qe && n.a.createElement(de.b, {
 						postId: De.id,
 						subredditId: Qe.id,
 						subredditDisplayText: Qe.displayText,
-						variant: Ht,
+						variant: Gt,
 						onDismiss: () => {
-							qt(!1)
+							Kt(!1)
 						},
 						pageType: de.a.Home
 					}))
@@ -9528,4 +9523,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.a7194ecccc5d22467e6b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.a55ff85e671dd858ded8.js.map

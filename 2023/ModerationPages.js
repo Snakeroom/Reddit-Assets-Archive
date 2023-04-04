@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.c94b46f453a974b6ddeb.js
-// Retrieved at 4/3/2023, 7:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.06ba8eecb9feaea985fc.js
+// Retrieved at 4/4/2023, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "ModQueuePages~reddit-components-MediumPost", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -29039,9 +29039,7 @@
 						showPromotedCTA: Ne,
 						showCTAExperimentDesign: Me,
 						isLiveChatUserCountEnabled: Re
-					} = this.props, Be = !!fe.media && fe.media.type === g.o.RTJSON, Fe = ge && Be, Ue = Object(Y.b)(fe.id, j), He = Object(pe.a)(X), Ge = Object(ue.a)(X), Qe = Object(me.a)(X), We = `-mod-actions-menu-${fe.id}`, qe = `voting-arrows-${fe.id}`, ze = !!r && Object(x.e)(r) === fe.author, Ve = Object(H.a)(fe), Ke = Object(Q.c)(fe), Ye = Object(L.a)("View--Reports", fe.id, Se), Je = Object(Q.a)(fe), Xe = !(j || E || O), Ze = e => Te(Object(h.n)(fe.id, e)), $e = Object(c.t)(fe, u), {
-						source: et
-					} = $e, tt = Object(v.r)(fe);
+					} = this.props, Be = !!fe.media && fe.media.type === g.o.RTJSON, Fe = ge && Be, Ue = Object(Y.b)(fe.id, j), He = Object(pe.a)(X), Ge = Object(ue.a)(X), Qe = Object(me.a)(X), We = `-mod-actions-menu-${fe.id}`, qe = `voting-arrows-${fe.id}`, ze = !!r && Object(x.e)(r) === fe.author, Ve = Object(H.a)(fe), Ke = Object(Q.c)(fe), Ye = Object(L.a)("View--Reports", fe.id, Se), Je = Object(Q.a)(fe), Xe = !(j || E || O), Ze = e => Te(Object(h.n)(fe.id, e)), $e = Object(c.t)(fe, u), et = Object(v.r)(fe);
 					return o.a.createElement(K.b, {
 						className: Object(l.a)(Ae.a.compactPostStyles, _e.a.postContainer, Object(f.a)(this.props), t),
 						isOverlay: j,
@@ -29107,7 +29105,7 @@
 					}), o.a.createElement("div", {
 						className: _e.a.topLine,
 						"data-click-id": "body"
-					}, tt && o.a.createElement(q.a, {
+					}, et && o.a.createElement(q.a, {
 						content: fe.recommendationContext.content,
 						layout: p.g.Compact,
 						post: fe
@@ -29209,7 +29207,7 @@
 						isExpanded: C,
 						post: fe,
 						useMediaIcons: !0
-					}))), Ne && et && et.url && !fe.isSurveyAd && o.a.createElement(_.a, {
+					}))), Ne && Object(c.v)(fe, u) && o.a.createElement(_.a, {
 						className: Object(l.a)(_e.a.adLinkWrapper, {
 							[_e.a.ctaExperiment]: Me
 						}),
@@ -80436,4 +80434,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.c94b46f453a974b6ddeb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.06ba8eecb9feaea985fc.js.map

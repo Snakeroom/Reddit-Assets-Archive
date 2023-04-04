@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.86214056d871bc98cef7.js
-// Retrieved at 4/3/2023, 7:00:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.dad85ec793bc86fd84ad.js
+// Retrieved at 4/4/2023, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -876,9 +876,7 @@
 						showPromotedCTA: we,
 						showCTAExperimentDesign: De,
 						isLiveChatUserCountEnabled: Me
-					} = this.props, Ue = !!_e.media && _e.media.type === h.o.RTJSON, Fe = he && Ue, Be = Object(J.b)(_e.id, g), We = Object(pe.a)(K), Ye = Object(ue.a)(K), Ve = Object(me.a)(K), Ge = `-mod-actions-menu-${_e.id}`, He = `voting-arrows-${_e.id}`, ze = !!n && Object(E.e)(n) === _e.author, qe = Object(W.a)(_e), Ze = Object(V.c)(_e), Je = Object(R.a)("View--Reports", _e.id, Ne), Xe = Object(V.a)(_e), Ke = !(g || O || C), Qe = e => Ie(Object(f.n)(_e.id, e)), $e = Object(d.t)(_e, u), {
-						source: et
-					} = $e, tt = Object(x.r)(_e);
+					} = this.props, Ue = !!_e.media && _e.media.type === h.o.RTJSON, Fe = he && Ue, Be = Object(J.b)(_e.id, g), We = Object(pe.a)(K), Ye = Object(ue.a)(K), Ve = Object(me.a)(K), Ge = `-mod-actions-menu-${_e.id}`, He = `voting-arrows-${_e.id}`, ze = !!n && Object(E.e)(n) === _e.author, qe = Object(W.a)(_e), Ze = Object(V.c)(_e), Je = Object(R.a)("View--Reports", _e.id, Ne), Xe = Object(V.a)(_e), Ke = !(g || O || C), Qe = e => Ie(Object(f.n)(_e.id, e)), $e = Object(d.t)(_e, u), et = Object(x.r)(_e);
 					return r.a.createElement(Z.b, {
 						className: Object(l.a)(Se.a.compactPostStyles, ke.a.postContainer, Object(_.a)(this.props), t),
 						isOverlay: g,
@@ -944,7 +942,7 @@
 					}), r.a.createElement("div", {
 						className: ke.a.topLine,
 						"data-click-id": "body"
-					}, tt && r.a.createElement(H.a, {
+					}, et && r.a.createElement(H.a, {
 						content: _e.recommendationContext.content,
 						layout: p.g.Compact,
 						post: _e
@@ -1046,7 +1044,7 @@
 						isExpanded: v,
 						post: _e,
 						useMediaIcons: !0
-					}))), we && et && et.url && !_e.isSurveyAd && r.a.createElement(k.a, {
+					}))), we && Object(d.v)(_e, u) && r.a.createElement(k.a, {
 						className: Object(l.a)(ke.a.adLinkWrapper, {
 							[ke.a.ctaExperiment]: De
 						}),
@@ -3295,4 +3293,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.86214056d871bc98cef7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.dad85ec793bc86fd84ad.js.map

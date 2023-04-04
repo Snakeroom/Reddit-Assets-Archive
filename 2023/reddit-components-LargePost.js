@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.c523629950793894e679.js
-// Retrieved at 4/4/2023, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.2bdefc965e462e742e3f.js
+// Retrieved at 4/4/2023, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ModQueuePages~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4103,9 +4103,7 @@
 							hasBottomCompactPostStyles: i,
 							showPinnnedHeader: r
 						}
-					})(e), Ct = Object(r.d)(), jt = Object(r.e)(Ce.b), yt = Object(r.e)(Ce.c), St = Object(r.e)(k.lb), kt = Object(_e.a)(), It = De.permalink, Nt = e.isCommentPermalink ? Object(fe.b)(It) : Object(T.a)(It, void 0, kt), Tt = !!(null == S ? void 0 : S.shouldShowLinkedPosts), Pt = (!ee || Tt || He) && !De.isSponsored, wt = Object(I.t)(De, P), {
-						source: Rt
-					} = wt, At = Object(n.useRef)(null), Mt = Object(n.useCallback)(e => {
+					})(e), Ct = Object(r.d)(), jt = Object(r.e)(Ce.b), yt = Object(r.e)(Ce.c), St = Object(r.e)(k.lb), kt = Object(_e.a)(), It = De.permalink, Nt = e.isCommentPermalink ? Object(fe.b)(It) : Object(T.a)(It, void 0, kt), Tt = !!(null == S ? void 0 : S.shouldShowLinkedPosts), Pt = (!ee || Tt || He) && !De.isSponsored, wt = Object(I.t)(De, P), Rt = Object(n.useRef)(null), At = Object(n.useCallback)(e => {
 						e.forEach(e => {
 							const {
 								isIntersecting: t
@@ -4113,17 +4111,17 @@
 							t && (null == Xe || Xe(Ne))
 						})
 					}, [Xe, Ne]);
-					Object(x.a)(At, Mt);
-					const [Lt, Dt] = Object(n.useState)(!1), Bt = Object(n.useCallback)(() => {
-						Dt(!Lt), it(Object(ve.d)(Je))
-					}, [Lt, it, Je]), Ft = !!(te && (null == Qe ? void 0 : Qe.isNSFW)), Ut = Object(n.useRef)({
+					Object(x.a)(Rt, At);
+					const [Mt, Lt] = Object(n.useState)(!1), Dt = Object(n.useCallback)(() => {
+						Lt(!Mt), it(Object(ve.d)(Je))
+					}, [Mt, it, Je]), Bt = !!(te && (null == Qe ? void 0 : Qe.isNSFW)), Ft = Object(n.useRef)({
 						renderingObjectInfo: De
-					}), zt = Object(n.useCallback)(e => {
+					}), Ut = Object(n.useCallback)(e => {
 						(jt || yt) && (e.preventDefault(), Ct(Object(u.Z)(Object(fe.b)(De.permalink), De.id)))
-					}, [Ct, jt, yt, De.id, De.permalink]), Wt = De && De.media && (De.media.type === _.o.TEXT || De.media.type === _.o.RTJSON), Vt = Object(g.r)(De), {
-						isEnabled: Ht,
-						variant: Gt
-					} = Object(r.e)(Re), [Kt, qt] = Object(n.useState)(!1);
+					}, [Ct, jt, yt, De.id, De.permalink]), zt = De && De.media && (De.media.type === _.o.TEXT || De.media.type === _.o.RTJSON), Wt = Object(g.r)(De), {
+						isEnabled: Vt,
+						variant: Ht
+					} = Object(r.e)(Re), [Gt, Kt] = Object(n.useState)(!1);
 					return o.a.createElement(o.a.Fragment, null, o.a.createElement(J.b, {
 						className: Object(N.a)(Ue.a.container, a, xe.a.largeAndMediumPostStyles, xe.a.largeAndMediumActiveStyles, Object(m.a)(e), {
 							[xe.a.mUseRedditTheme]: at,
@@ -4144,7 +4142,7 @@
 						onClick: Ae,
 						eventFactory: E
 					}, o.a.createElement("div", {
-						ref: At
+						ref: Rt
 					}), o.a.createElement(re.a, {
 						model: De,
 						handleVote: e.handleVote,
@@ -4179,7 +4177,7 @@
 						post: De
 					}), o.a.createElement(f.a, {
 						post: De
-					})), !Object(i.c)(De) && o.a.createElement(o.a.Fragment, null, Vt && o.a.createElement(Q.a, {
+					})), !Object(i.c)(De) && o.a.createElement(o.a.Fragment, null, Wt && o.a.createElement(Q.a, {
 						content: De.recommendationContext.content,
 						layout: le.g.Large,
 						post: De
@@ -4202,7 +4200,7 @@
 						showSubredditIcon: !0,
 						subredditOrProfile: Qe,
 						onSubscribed: () => {
-							qt(!0), rt()
+							Kt(!0), rt()
 						}
 					}), o.a.createElement(ie.c, {
 						className: Ue.a.postTitle,
@@ -4215,20 +4213,20 @@
 						className: Ue.a.adSupplementaryText,
 						post: De,
 						size: ie.b.Large
-					}), De.source && !De.isSponsored && !Ft && o.a.createElement(o.a.Fragment, null, o.a.createElement(ce.a, {
+					}), De.source && !De.isSponsored && !Bt && o.a.createElement(o.a.Fragment, null, o.a.createElement(ce.a, {
 						className: Ue.a.sourceLink,
 						post: De
 					}), $e && De.media && De.media.type !== _.o.TEXT && De.media.type !== _.o.IMAGE && De.media.richtextContent && o.a.createElement(O.a, {
 						content: De.media.richtextContent,
-						rtJsonElementProps: Ut.current
+						rtJsonElementProps: Ft.current
 					}))), o.a.createElement("div", {
 						className: Ue.a.postMediaWrapper
 					}, !Et && o.a.createElement(Ge, {
-						handlePostLinkClick: zt,
+						handlePostLinkClick: Ut,
 						postPermalink: Nt,
 						disableVisited: e.disableVisited,
 						shouldOpenPostInNewTab: St,
-						shouldStylePostAfterVisitLink: Wt
+						shouldStylePostAfterVisitLink: zt
 					}, o.a.createElement(X.a, {
 						isGalleryTileLayoutDefault: ue,
 						isListing: !0,
@@ -4244,7 +4242,7 @@
 						autoplayPref: t,
 						shouldShowGalleryTileOption: We,
 						showPromotedCTA: qe
-					}))), qe && Rt && Rt.url && !De.isSurveyAd && o.a.createElement(w.a, {
+					}))), qe && Object(I.v)(De, P) && o.a.createElement(w.a, {
 						className: Ue.a.adLinkWrapper,
 						ctaExperimentDesign: et && "card"
 					}, o.a.createElement(R.a, {
@@ -4291,7 +4289,7 @@
 						isOverlay: !!Ee,
 						listingKey: Te,
 						modModeEnabled: we,
-						onClickInsightsButton: Bt,
+						onClickInsightsButton: Dt,
 						onIgnoreReports: Me,
 						onOpenReportsDropdown: Le,
 						post: De,
@@ -4305,7 +4303,7 @@
 							report: !1,
 							mute: !1
 						})
-					}))), Qe && Lt && o.a.createElement(B.a, {
+					}))), Qe && Mt && o.a.createElement(B.a, {
 						className: Ue.a.creatorStatsContainer,
 						post: De,
 						subreddit: Qe,
@@ -4317,13 +4315,13 @@
 						post: De,
 						postIds: null != Ze ? Ze : [],
 						subredditId: null == Qe ? void 0 : Qe.id
-					})), me && Vt && Ht && Kt && Qe && o.a.createElement(de.b, {
+					})), me && Wt && Vt && Gt && Qe && o.a.createElement(de.b, {
 						postId: De.id,
 						subredditId: Qe.id,
 						subredditDisplayText: Qe.displayText,
-						variant: Gt,
+						variant: Ht,
 						onDismiss: () => {
-							qt(!1)
+							Kt(!1)
 						},
 						pageType: de.a.Home
 					}))
@@ -9786,4 +9784,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.c523629950793894e679.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.2bdefc965e462e742e3f.js.map

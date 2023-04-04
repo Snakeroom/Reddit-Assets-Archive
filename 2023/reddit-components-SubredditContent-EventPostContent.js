@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.1aa8b76751dbdc147161.js
-// Retrieved at 3/8/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.25478d759d9979367b6e.js
+// Retrieved at 4/4/2023, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-EventPostContent"], {
 		"./src/reddit/components/ClassicPost/index.tsx": function(e, t, s) {
@@ -66,9 +66,9 @@
 						className: g.a.muteIcon
 					})))
 				},
-				y = s("./src/reddit/components/Econ/Audio/UpcomingTalk/index.tsx");
+				P = s("./src/reddit/components/Econ/Audio/UpcomingTalk/index.tsx");
 			const {
-				fbt: P
+				fbt: y
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 			var N = e => {
 					let {
@@ -79,7 +79,7 @@
 						postId: o,
 						author: a
 					} = t;
-					return Object(x.e)(v.m) && s.roomStatus === h.b.NotStarted ? r.a.createElement(y.a, {
+					return Object(x.e)(v.m) && s.roomStatus === h.b.NotStarted ? r.a.createElement(P.a, {
 						postId: o,
 						author: a,
 						roomId: s.roomId,
@@ -158,8 +158,8 @@
 					isCurrentUserProfilePost: k,
 					isFrontpage: S,
 					isGalleryTileLayoutDefault: _,
-					isLoggedIn: y,
-					isOverlay: P,
+					isLoggedIn: P,
+					isOverlay: y,
 					imageGalleryCurrentItem: Y,
 					moderatorPermissions: oe,
 					modModeEnabled: de,
@@ -179,8 +179,8 @@
 					subredditOrProfile: ke,
 					toggleCheckbox: Se,
 					userIsOp: _e,
-					shouldShowGalleryTileOption: ye,
-					showPromotedCTA: Pe,
+					shouldShowGalleryTileOption: Pe,
+					showPromotedCTA: ye,
 					showCTAExperimentDesign: Ne
 				} = e, we = Object(l.a)(), Ie = Object(c.a)(v);
 				Object(o.useEffect)(() => {
@@ -203,19 +203,16 @@
 						post: he,
 						inSubredditOrProfile: f,
 						isCurrentUserProfilePost: k,
-						isOverlay: P,
-						shouldShowSubscribeButton: !(S && y) || De && y,
+						isOverlay: y,
+						shouldShowSubscribeButton: !(S && P) || De && P,
 						subredditOrProfile: ke
 					},
 					He = Object(a.t)(he, Y),
-					{
-						source: We
-					} = He,
-					[Ke, Xe] = Object(o.useState)(!1),
-					Ye = Object(o.useCallback)(() => {
-						Xe(!Ke), we(Object(se.d)(ve))
-					}, [Ke, ve, we]);
-				let $e = r.a.createElement(X.a, {
+					[We, Ke] = Object(o.useState)(!1),
+					Xe = Object(o.useCallback)(() => {
+						Ke(!We), we(Object(se.d)(ve))
+					}, [We, ve, we]);
+				let Ye = r.a.createElement(X.a, {
 					className: ce.a.classicThumbnail,
 					crosspost: Te && he,
 					isMeta: he.isMeta,
@@ -223,15 +220,15 @@
 					redditStyle: fe,
 					templatePlaceholderImage: Ae && Ae.postPlaceholderImage
 				});
-				Object(h.c)(he) && ($e = r.a.createElement(N, {
+				Object(h.c)(he) && (Ye = r.a.createElement(N, {
 					post: he
 				}));
-				const qe = Object(ae.r)(he);
+				const $e = Object(ae.r)(he);
 				return r.a.createElement(B.b, {
 					className: Object(n.a)(re.a.classicPostStyles, ce.a.postContainer, Object(te.a)(e), {
 						[ce.a.shouldShowOverflow]: Ce
 					}, t),
-					isOverlay: P,
+					isOverlay: y,
 					style: {
 						...Object(te.d)(e),
 						...Object(te.b)(Ae)
@@ -259,7 +256,7 @@
 					className: ce.a.mainBody
 				}, r.a.createElement("div", {
 					className: Qe ? ce.a.expandoContainer : ce.a.thumbnailContainer
-				}, !Qe && $e, r.a.createElement(I.a, {
+				}, !Qe && Ye, r.a.createElement(I.a, {
 					crosspost: Te,
 					className: ce.a.rightExpando,
 					isExpanded: !!v,
@@ -270,7 +267,7 @@
 						[ce.a.showBulkActionCheckbox]: Oe
 					}),
 					"data-click-id": "body"
-				}, qe && r.a.createElement(G.a, {
+				}, $e && r.a.createElement(G.a, {
 					content: he.recommendationContext.content,
 					layout: $.g.Classic,
 					post: he
@@ -282,7 +279,7 @@
 					redditStyle: fe,
 					size: J.b.Medium,
 					titleColor: Ae && Ae.postTitleColor,
-					isOverlay: P
+					isOverlay: y
 				}, he.source && !Te && !he.isSurveyAd && r.a.createElement(W.a, {
 					href: he.source.url,
 					isSponsored: he.isSponsored,
@@ -295,7 +292,7 @@
 				}), de && Re && Ve && r.a.createElement(M.a, {
 					onIgnoreReports: me,
 					reportable: he
-				}), Pe && We && We.url && !he.isSurveyAd && r.a.createElement(u.a, {
+				}), ye && Object(a.v)(he, Y) && r.a.createElement(u.a, {
 					ctaExperimentDesign: Ne && "classic",
 					className: Object(n.a)(ce.a.adLinkWrapper, {
 						[ce.a.ctaExperiment]: Ne
@@ -329,16 +326,16 @@
 					hasModPostPerms: Re,
 					hasModFullPerms: Me,
 					hostPostData: E,
-					isOverlay: !!P,
+					isOverlay: !!y,
 					modModeEnabled: de,
-					onClickInsightsButton: Ye,
+					onClickInsightsButton: Xe,
 					onIgnoreReports: me,
 					onOpenReportsDropdown: pe,
 					post: he,
 					shouldShowInsightsButton: Ce,
 					showEditPost: Ue,
 					showEditFlair: je,
-					tooltipType: P ? H.f.Lightbox : void 0,
+					tooltipType: y ? H.f.Lightbox : void 0,
 					useFlatlistBreakpoints: Object(Q.b)({
 						editPost: !Fe,
 						hide: !Fe,
@@ -346,7 +343,7 @@
 						mute: !Fe,
 						save: !Fe
 					})
-				})), r.a.createElement(T.d, null))), Object(ee.a)(he, ce.a, ge, v, ye, _), ke && Ke && r.a.createElement(b.a, {
+				})), r.a.createElement(T.d, null))), Object(ee.a)(he, ce.a, ge, v, Pe, _), ke && We && r.a.createElement(b.a, {
 					className: ce.a.creatorStatsContainer,
 					post: he,
 					subreddit: ke,
@@ -621,7 +618,7 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), _ = () => r.a.createElement("span", {
 				className: b.a.MicrophoneIcon
 			}, r.a.createElement(O, null));
-			var y = e => {
+			var P = e => {
 				let {
 					roomId: t
 				} = e;
@@ -667,7 +664,7 @@
 				})
 			};
 			const {
-				fbt: P
+				fbt: y
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 			t.a = e => {
 				let {
@@ -719,11 +716,11 @@
 					className: b.a.upcomingTalkInfo
 				}, r.a.createElement("div", {
 					className: b.a.upcomingTalkLabel
-				}, P._("Upcoming Talk", null, {
+				}, y._("Upcoming Talk", null, {
 					hk: "464Rq3"
 				})), r.a.createElement("div", {
 					className: b.a.upcomingTalkHost
-				}, "u/", t), O && p && r.a.createElement(y, {
+				}, "u/", t), O && p && r.a.createElement(P, {
 					roomId: p
 				}))))
 			}
@@ -755,14 +752,14 @@
 				k = s("./src/reddit/selectors/experiments/shredditModNav.ts"),
 				S = s("./src/reddit/components/SubredditContent/index.m.less"),
 				_ = s.n(S);
-			const y = Object(d.c)({
+			const P = Object(d.c)({
 					eventPosts: C.f,
 					isPending: C.d,
 					hasData: C.b,
 					endCursor: C.a,
 					isInShredditModNavExperiment: e => Object(k.a)(e, !0)
 				}),
-				P = Object(n.b)(y, (e, t) => {
+				y = Object(n.b)(P, (e, t) => {
 					let {
 						subredditName: s
 					} = t;
@@ -846,7 +843,7 @@
 					})), !t && e ? Object(x.a)() : this.renderBody(), t && e && Object(x.a)(1)))
 				}
 			}
-			t.default = P(Object(h.c)(N))
+			t.default = y(Object(h.c)(N))
 		},
 		"./src/reddit/connectors/ClassicPost/index.tsx": function(e, t, s) {
 			"use strict";
@@ -930,9 +927,9 @@
 			})), s.d(t, "a", (function() {
 				return _
 			})), s.d(t, "i", (function() {
-				return y
-			})), s.d(t, "b", (function() {
 				return P
+			})), s.d(t, "b", (function() {
+				return y
 			})), s.d(t, "l", (function() {
 				return N
 			}));
@@ -1010,7 +1007,7 @@
 					[v.m.SubredditRoomLimitExceeded]: o.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
 						hk: "2mGf21"
 					})
-				}, y = e => e.data.prepareAudioRoom || e.data.prepareAudioRoomOnProfile, P = {
+				}, P = e => e.data.prepareAudioRoom || e.data.prepareAudioRoomOnProfile, y = {
 					[v.Q.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
@@ -1277,4 +1274,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.1aa8b76751dbdc147161.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.25478d759d9979367b6e.js.map
