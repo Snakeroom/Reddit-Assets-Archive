@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.f410650d2362101e20e0.js
-// Retrieved at 4/3/2023, 7:00:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.9424c6ca745891c45be0.js
+// Retrieved at 4/4/2023, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -10955,26 +10955,34 @@
 					onDismiss: p,
 					pageType: b
 				} = e;
-				const h = function(e) {
-						switch (e) {
+				const h = D(n),
+					g = function(e) {
+						let {
+							pageType: t,
+							activeUIVariant: n
+						} = e;
+						switch (t) {
 							case z.Profile:
-								return "double";
+								return n === P.MINIMALIST ? "double" : "single";
 							case z.Home:
 							default:
 								return "single"
 						}
-					}(b),
-					g = function(e, t) {
+					}({
+						pageType: b,
+						activeUIVariant: h
+					}),
+					v = function(e, t) {
 						return "double" === t ? e === P.DESCRIPTION ? 2 : 4 : 3
-					}(D(n), h),
-					[v, x] = Object(o.useState)(g),
-					y = Object(c.a)(),
+					}(h, g),
+					[x, y] = Object(o.useState)(v),
+					E = Object(c.a)(),
 					{
-						recommendations: E,
-						fetchPending: O,
-						recommendationsLoaded: j,
-						fetchError: C,
-						modelVersion: I
+						recommendations: O,
+						fetchPending: j,
+						recommendationsLoaded: C,
+						fetchError: I,
+						modelVersion: k
 					} = function(e) {
 						let {
 							subredditId: t
@@ -11000,9 +11008,9 @@
 					}({
 						subredditId: m
 					}),
-					k = v < (E.length || 0),
-					w = Object(o.useMemo)(() => !j || O ? null : C || E.length <= 0 ? {
-						modelVersion: I,
+					w = x < (O.length || 0),
+					T = Object(o.useMemo)(() => !C || j ? null : I || O.length <= 0 ? {
+						modelVersion: k,
 						seen: !1,
 						postId: u,
 						subredditId: m,
@@ -11011,22 +11019,22 @@
 						seenItems: [],
 						pageType: b
 					} : {
-						modelVersion: I,
+						modelVersion: k,
 						seen: !0,
 						postId: u,
 						subredditId: m,
 						variant: n,
-						numberItems: E.length,
-						seenItems: E.slice(0, g),
+						numberItems: O.length,
+						seenItems: O.slice(0, v),
 						pageType: b
-					}, [j, O, C, E, I, u, m, n, g, b]);
+					}, [C, j, I, O, k, u, m, n, v, b]);
 				if (Object(o.useEffect)(() => {
-						y && w && y((e => t => ({
+						E && T && E((e => t => ({
 							..._(e, t),
 							action: f.c.VIEW,
 							noun: r.RECOMMENDATION_MODULE
-						}))(w))
-					}, [y, w]), !j || E.length <= 0) return null;
+						}))(T))
+					}, [E, T]), !C || O.length <= 0) return null;
 				return i.a.createElement("div", {
 					className: "bg-[color:var(--newCommunityTheme-body)] mb-[10px]"
 				}, i.a.createElement("div", {
@@ -11041,40 +11049,40 @@
 						hk: "1D8cvx"
 					}),
 					onClick: () => {
-						p(), w && y((e => t => ({
+						p(), T && E((e => t => ({
 							..._(e, t),
 							action: f.c.CLICK,
 							noun: r.CLOSE
 						}))({
-							...w,
-							seenItems: null == E ? void 0 : E.slice(0, v)
+							...T,
+							seenItems: null == O ? void 0 : O.slice(0, x)
 						}))
 					}
 				}, i.a.createElement(d.a, {
 					className: "block w-full h-full text-neutral-content-weak",
 					fill: "currentColor"
 				}))), i.a.createElement(i.a.Fragment, null, i.a.createElement(R, {
-					recommendedCommunities: E,
-					numberOfVisibleItems: v,
+					recommendedCommunities: O,
+					numberOfVisibleItems: x,
 					postId: u,
 					originalSubredditId: m,
 					variant: n,
 					pageType: b,
-					columnLayout: h
-				}), k && i.a.createElement("div", {
+					columnLayout: g
+				}), w && i.a.createElement("div", {
 					className: "flex items-center justify-center pb-[8px]"
 				}, i.a.createElement(a.a, {
 					kind: a.b.Button,
 					priority: a.c.Tertiary,
 					onClick: () => {
-						const e = v + g;
-						x(e), y((e => t => ({
+						const e = x + v;
+						y(e), E((e => t => ({
 							..._(e, t),
 							action: f.c.CLICK,
 							noun: r.SHOW_MORE
 						}))({
-							...w,
-							seenItems: null == E ? void 0 : E.slice(0, e)
+							...T,
+							seenItems: null == O ? void 0 : O.slice(0, e)
 						}))
 					}
 				}, s.fbt._("Show more", null, {
@@ -26422,4 +26430,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.f410650d2362101e20e0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.9424c6ca745891c45be0.js.map
