@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.06ba8eecb9feaea985fc.js
-// Retrieved at 4/4/2023, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.f83d6e162850bbaa2736.js
+// Retrieved at 4/5/2023, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "ModQueuePages~reddit-components-MediumPost", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -6135,6 +6135,8 @@
 					all: (null == e ? void 0 : e.isAllAllowed) || !1,
 					chatConfig: (null == e ? void 0 : e.isChatConfigEditingAllowed) || !1,
 					chatOperator: (null == e ? void 0 : e.isChatOperator) || !1,
+					communityChat: !1,
+					channels: !1,
 					config: (null == e ? void 0 : e.isConfigEditingAllowed) || !1,
 					flair: (null == e ? void 0 : e.isFlairEditingAllowed) || !1,
 					mail: (null == e ? void 0 : e.isMailEditingAllowed) || !1,
@@ -42650,6 +42652,15 @@
 							return r.fbt._("Monitor Chats", null, {
 								hk: "3x751K"
 							});
+						case "community_chat":
+						case G.c.communityChat:
+							return r.fbt._("Channel Moderation", null, {
+								hk: "3SzJoj"
+							});
+						case G.c.channels:
+							return r.fbt._("Channel Management", null, {
+								hk: "1v0Ix9"
+							});
 						case G.c.flair:
 							return r.fbt._("Manage Flair", null, {
 								hk: "IgS6W"
@@ -42694,6 +42705,15 @@
 						case G.c.chatOperator:
 							return r.fbt._("Remove messages, remove users, and lock chats.", null, {
 								hk: "TFYA1"
+							});
+						case "community_chat":
+						case G.c.communityChat:
+							return r.fbt._("Moderate channel content and users.", null, {
+								hk: "2rwWrA"
+							});
+						case G.c.channels:
+							return r.fbt._("Create, edit, and delete channels.", null, {
+								hk: "2pCECL"
 							});
 						case G.c.flair:
 							return r.fbt._("Create and manage user and post flair.", null, {
@@ -80434,4 +80454,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.06ba8eecb9feaea985fc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.f83d6e162850bbaa2736.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.c57e2ae8073e9ccf2be8.js
-// Retrieved at 3/30/2023, 10:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.c2532c038ca975a47f2c.js
+// Retrieved at 4/5/2023, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, o) {
@@ -361,6 +361,8 @@
 					all: (null == e ? void 0 : e.isAllAllowed) || !1,
 					chatConfig: (null == e ? void 0 : e.isChatConfigEditingAllowed) || !1,
 					chatOperator: (null == e ? void 0 : e.isChatOperator) || !1,
+					communityChat: !1,
+					channels: !1,
 					config: (null == e ? void 0 : e.isConfigEditingAllowed) || !1,
 					flair: (null == e ? void 0 : e.isFlairEditingAllowed) || !1,
 					mail: (null == e ? void 0 : e.isMailEditingAllowed) || !1,
@@ -1916,4 +1918,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.c57e2ae8073e9ccf2be8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.c2532c038ca975a47f2c.js.map
