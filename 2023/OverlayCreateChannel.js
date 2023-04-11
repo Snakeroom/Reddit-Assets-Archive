@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayCreateChannel.3043459f7779825eb5ad.js
-// Retrieved at 3/30/2023, 11:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayCreateChannel.7c534f44cdcfa17a583c.js
+// Retrieved at 4/11/2023, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayCreateChannel"], {
 		"./src/chat/components/OverlayCreateChannel/index.m.less": function(e, t, n) {
@@ -135,20 +135,20 @@
 				z = e => e.toLocaleLowerCase(),
 				Z = Object(T.a)({
 					channelAction: e => Object(F.d)(e),
-					channel: e => Object(R.n)(e),
+					channel: e => Object(R.o)(e),
 					currentUserName: M.b,
 					existingGroupUsers: e => {
-						const t = Object(R.E)(e, "members");
+						const t = Object(R.F)(e, "members");
 						return t && t.map(e => e.id)
 					},
-					isCreatingChannel: R.O,
+					isCreatingChannel: R.P,
 					loadedContacts: H.i,
 					knownContacts: H.h,
-					memberCount: e => Object(R.E)(e, "memberCount"),
+					memberCount: e => Object(R.F)(e, "memberCount"),
 					selectedUsers: H.j,
 					selectedUsersCount: H.k,
 					isBlockedUserMessageEnabled: W.a,
-					directChatOpponentId: R.u
+					directChatOpponentId: R.v
 				}),
 				K = Object(h.b)(Z, e => ({
 					onCreateNewChannel: (t, n, s) => e(Object(m.B)(t, n, s)),
@@ -172,7 +172,7 @@
 					const a = Object(h.d)(),
 						r = Object(h.e)(M.a),
 						c = t || r,
-						i = Object(h.e)(R.a),
+						i = Object(h.e)(R.b),
 						o = Object(h.e)(e => Object(A.a)(e, c)),
 						m = Object(h.e)(e => Object(A.b)(e, c));
 					return t ? l.a.createElement("span", {
@@ -774,4 +774,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayCreateChannel.3043459f7779825eb5ad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayCreateChannel.7c534f44cdcfa17a583c.js.map

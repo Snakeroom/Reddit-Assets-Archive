@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayGroupAbout.b8c9e2d8d90a082d28a5.js
-// Retrieved at 3/30/2023, 11:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayGroupAbout.f10048367215730aa9fb.js
+// Retrieved at 4/11/2023, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayGroupAbout"], {
 		"./src/chat/components/OverlayGroupAbout/index.m.less": function(e, t, n) {
@@ -38,13 +38,13 @@
 				I = n("./src/chat/icons/svgs/InviteMember/index.tsx"),
 				g = n("./src/chat/selectors/channels.ts"),
 				N = n("./src/chat/selectors/members.ts"),
-				E = n("./src/chat/components/OverlayGroupAbout/index.m.less"),
-				O = n.n(E),
+				O = n("./src/chat/components/OverlayGroupAbout/index.m.less"),
+				E = n.n(O),
 				T = n("./src/lib/classNames/index.ts");
 			const v = Object(C.a)({
-					channelType: e => Object(g.E)(e, "type"),
-					currentChannel: g.n,
-					memberCount: e => Object(g.E)(e, "memberCount"),
+					channelType: e => Object(g.F)(e, "type"),
+					currentChannel: g.o,
+					memberCount: e => Object(g.F)(e, "memberCount"),
 					members: e => Object(N.g)(e),
 					fetchingMembers: N.a,
 					hasMoreMembers: N.e
@@ -62,13 +62,13 @@
 					members: C,
 					fetchChannelMembers: g,
 					fetchingMembers: N,
-					hasMoreMembers: E
+					hasMoreMembers: O
 				} = e, v = Object(o.d)(), [y, f] = Object(c.useState)(null == n ? void 0 : n.name);
 				if (n) {
 					const {
 						channelState: c
 					} = n, o = c === h.b.INVITED, A = c === h.b.JOINED, B = () => {
-						!N && E && g({
+						!N && O && g({
 							loadMore: !0
 						})
 					}, j = () => !!N;
@@ -97,24 +97,24 @@
 							hk: "3z2BLx"
 						})
 					}), s.a.createElement("div", {
-						className: O.a.Content
+						className: E.a.Content
 					}, s.a.createElement(p.a, {
 						text: a.fbt._("Group name", null, {
 							hk: "4mpueC"
 						})
 					}), s.a.createElement(x.a, {
-						className: O.a.ChannelNameInput,
+						className: E.a.ChannelNameInput,
 						handleChannelNameInput: L,
 						value: y,
 						maxLength: h.g
 					}, s.a.createElement("span", {
-						className: Object(T.a)(O.a.ChannelNameLengthCounter, {
-							[O.a.warning]: k < 0
+						className: Object(T.a)(E.a.ChannelNameLengthCounter, {
+							[E.a.warning]: k < 0
 						})
 					}, `${k}/${h.g}`)), s.a.createElement(p.a, {
 						text: `${l} ${a.fbt._("Members",null,{hk:"2vedT1"})}`
 					}), s.a.createElement(d.a, {
-						className: O.a.Scroller,
+						className: E.a.Scroller,
 						loadMoreRows: B,
 						isLoadMoreRowsComplete: j
 					}, s.a.createElement(m.a, {
@@ -123,7 +123,7 @@
 						useNSFWIcons: o || A
 					}), N && s.a.createElement("div", {
 						role: "progressbar",
-						className: O.a.LoadingIndicator
+						className: E.a.LoadingIndicator
 					}, a.fbt._("Loading members...", null, {
 						hk: "2sCDrM"
 					}))), s.a.createElement(S.a, {
@@ -227,4 +227,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayGroupAbout.b8c9e2d8d90a082d28a5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayGroupAbout.f10048367215730aa9fb.js.map

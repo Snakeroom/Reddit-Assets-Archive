@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a4b7c54ae7e27fe693be.js
-// Retrieved at 4/5/2023, 5:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3dbe812ba1db3e549906.js
+// Retrieved at 4/11/2023, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -28,7 +28,7 @@
 				l = Object(n.a)(o),
 				u = Object(n.a)(d),
 				c = e => async (t, i) => {
-					const n = Object(r.v)(i(), e);
+					const n = Object(r.w)(i(), e);
 					(null == n ? void 0 : n.length) && t(u(e))
 				}, _ = e => async (t, i) => {
 					const n = i().channels.draftMessages[e.channelId];
@@ -498,7 +498,7 @@
 						e(Object(s.e)(l.a.CHANNELS));
 						const i = Object(d.b)(t());
 						if (i) {
-							const r = Object(u.i)(t(), i);
+							const r = Object(u.j)(t(), i);
 							if (r) {
 								const t = Object(a.getChannelUrl)(r),
 									i = Object(a.getRedirectURL)(t);
@@ -507,12 +507,12 @@
 						}
 					} else e(Object(s.e)(l.a.SETTINGS))
 				}, y = () => async (e, t) => {
-					const i = Object(u.o)(t());
+					const i = Object(u.p)(t());
 					if (!i) return;
 					const r = Object(a.themesUrl)(i);
 					e(Object(o.chatThemeSettingsClickedAction)()), e(Object(n.b)(r))
 				}, E = () => async (e, t) => {
-					const i = Object(u.o)(t());
+					const i = Object(u.p)(t());
 					if (!i) return;
 					const r = Object(a.privacyAndSupportUrl)(i);
 					e(Object(n.b)(r))
@@ -2366,94 +2366,96 @@
 		},
 		"./src/chat/selectors/channels.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "x", (function() {
+			i.d(t, "y", (function() {
 				return h
-			})), i.d(t, "y", (function() {
-				return f
-			})), i.d(t, "j", (function() {
-				return b
-			})), i.d(t, "i", (function() {
-				return g
-			})), i.d(t, "n", (function() {
-				return v
-			})), i.d(t, "o", (function() {
-				return w
-			})), i.d(t, "p", (function() {
-				return y
-			})), i.d(t, "q", (function() {
-				return E
-			})), i.d(t, "A", (function() {
-				return T
-			})), i.d(t, "B", (function() {
-				return S
-			})), i.d(t, "r", (function() {
-				return O
 			})), i.d(t, "z", (function() {
-				return I
-			})), i.d(t, "t", (function() {
-				return R
-			})), i.d(t, "u", (function() {
-				return F
-			})), i.d(t, "Q", (function() {
-				return C
-			})), i.d(t, "f", (function() {
-				return N
+				return f
+			})), i.d(t, "a", (function() {
+				return g
+			})), i.d(t, "k", (function() {
+				return v
+			})), i.d(t, "j", (function() {
+				return w
+			})), i.d(t, "o", (function() {
+				return y
+			})), i.d(t, "p", (function() {
+				return E
+			})), i.d(t, "q", (function() {
+				return T
+			})), i.d(t, "r", (function() {
+				return S
+			})), i.d(t, "B", (function() {
+				return O
 			})), i.d(t, "C", (function() {
+				return I
+			})), i.d(t, "s", (function() {
+				return R
+			})), i.d(t, "A", (function() {
+				return F
+			})), i.d(t, "u", (function() {
+				return C
+			})), i.d(t, "v", (function() {
+				return N
+			})), i.d(t, "R", (function() {
+				return A
+			})), i.d(t, "g", (function() {
 				return j
-			})), i.d(t, "F", (function() {
-				return P
 			})), i.d(t, "D", (function() {
 				return x
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "G", (function() {
 				return D
-			})), i.d(t, "R", (function() {
-				return L
 			})), i.d(t, "E", (function() {
+				return L
+			})), i.d(t, "i", (function() {
 				return k
-			})), i.d(t, "J", (function() {
+			})), i.d(t, "S", (function() {
 				return B
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "F", (function() {
 				return M
-			})), i.d(t, "I", (function() {
-				return G
-			})), i.d(t, "b", (function() {
-				return q
+			})), i.d(t, "K", (function() {
+				return U
 			})), i.d(t, "d", (function() {
+				return G
+			})), i.d(t, "J", (function() {
+				return V
+			})), i.d(t, "c", (function() {
 				return H
 			})), i.d(t, "e", (function() {
-				return W
-			})), i.d(t, "K", (function() {
 				return z
-			})), i.d(t, "P", (function() {
+			})), i.d(t, "f", (function() {
 				return K
-			})), i.d(t, "O", (function() {
-				return Y
-			})), i.d(t, "k", (function() {
-				return $
-			})), i.d(t, "a", (function() {
-				return Q
 			})), i.d(t, "L", (function() {
+				return Y
+			})), i.d(t, "Q", (function() {
+				return $
+			})), i.d(t, "P", (function() {
+				return Q
+			})), i.d(t, "l", (function() {
 				return J
-			})), i.d(t, "N", (function() {
+			})), i.d(t, "b", (function() {
 				return X
-			})), i.d(t, "v", (function() {
+			})), i.d(t, "M", (function() {
 				return Z
-			})), i.d(t, "H", (function() {
+			})), i.d(t, "O", (function() {
 				return ee
 			})), i.d(t, "w", (function() {
 				return te
-			})), i.d(t, "l", (function() {
+			})), i.d(t, "I", (function() {
 				return ie
-			})), i.d(t, "M", (function() {
+			})), i.d(t, "x", (function() {
 				return ne
 			})), i.d(t, "m", (function() {
 				return re
-			})), i.d(t, "G", (function() {
+			})), i.d(t, "N", (function() {
 				return se
-			})), i.d(t, "s", (function() {
+			})), i.d(t, "n", (function() {
 				return oe
-			})), i.d(t, "g", (function() {
+			})), i.d(t, "H", (function() {
 				return de
+			})), i.d(t, "t", (function() {
+				return ae
+			})), i.d(t, "h", (function() {
+				return le
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/lodash/values.js"),
@@ -2470,57 +2472,59 @@
 				p = i("./src/chat/selectors/user.ts");
 			const h = e => e.channels.invited.sortedKeys.length,
 				f = e => e.channels.joined.sortedKeys.length,
-				b = Object(s.a)((e, t) => t, e => e.channels.models, (e, t) => t[e]),
-				g = Object(s.a)((e, t) => {
+				b = e => e.channels.models,
+				g = e => Object.keys(b(e)).length,
+				v = Object(s.a)((e, t) => t, b, (e, t) => t[e]),
+				w = Object(s.a)((e, t) => {
 					const i = e.channels.models,
 						n = "string" == typeof t ? t : t.channelId;
 					if (n) return i[n]
 				}, e => e),
-				v = e => {
+				y = e => {
 					const {
 						currentPage: t
 					} = e.platform, i = t && t.urlParams.channelId;
-					if (i) return g(e, i)
+					if (i) return w(e, i)
 				},
-				w = Object(s.a)(v, e => null == e ? void 0 : e.channelId),
-				y = e => {
-					const t = v(e);
+				E = Object(s.a)(y, e => null == e ? void 0 : e.channelId),
+				T = e => {
+					const t = y(e);
 					if (t && t.channelState === o.b.JOINED) return t
 				},
-				E = e => {
+				S = e => {
 					const {
 						currentPage: t
 					} = e.platform, i = null == t ? void 0 : t.urlParams.postId;
 					if (i) return Object(m.c)(e, i)
 				},
-				T = e => {
+				O = e => {
 					const {
 						channelId: t
 					} = e.channels.selected;
-					if (t) return g(e, t)
+					if (t) return w(e, t)
 				},
-				S = e => e.channels.selected && e.channels.selected.channelId,
-				O = e => v(e) || T(e),
-				I = e => {
+				I = e => e.channels.selected && e.channels.selected.channelId,
+				R = e => y(e) || O(e),
+				F = e => {
 					const {
 						user: t
-					} = e, i = O(e);
+					} = e, i = R(e);
 					if (i && i.members) return i.members.filter(e => e.id !== t.account.id)
 				},
-				R = e => {
+				C = e => {
 					const {
 						user: t
-					} = e, i = v(e);
+					} = e, i = y(e);
 					if (i && i.type === u.b.Direct && i.members) return i.members.find(e => e.id !== t.account.id)
 				},
-				F = e => {
-					const t = R(e);
+				N = e => {
+					const t = C(e);
 					return null == t ? void 0 : t.id
 				},
-				C = e => {
-					return !!y(e)
+				A = e => {
+					return !!T(e)
 				},
-				N = e => {
+				j = e => {
 					const t = [],
 						i = e.user.account.id;
 					return r()(e.channels.models).forEach(e => {
@@ -2530,43 +2534,43 @@
 						}
 					}), t.length && t
 				},
-				A = (e, t) => {
+				P = (e, t) => {
 					const i = ((e, t) => {
-						const i = g(e, t);
+						const i = w(e, t);
 						return i && i.lastMessage
 					})(e, t);
 					return Boolean((null == i ? void 0 : i.messageType) === d.d.SYSTEM && (null == i ? void 0 : i.customType) === c.a.AWARDING)
 				},
-				j = Object(s.a)((e, t) => t, e => e.messages.models, (e, t) => r()(t).filter(t => t.channelId === e)),
-				P = e => r()(e.messages.models).filter(t => t.messageType === d.d.USER && t.channelId === e.channels.selected.channelId),
-				x = e => r()(e.messages.pending).filter(t => t.channelId === e.channels.selected.channelId),
-				D = (e, t) => {
+				x = Object(s.a)((e, t) => t, e => e.messages.models, (e, t) => r()(t).filter(t => t.channelId === e)),
+				D = e => r()(e.messages.models).filter(t => t.messageType === d.d.USER && t.channelId === e.channels.selected.channelId),
+				L = e => r()(e.messages.pending).filter(t => t.channelId === e.channels.selected.channelId),
+				k = (e, t) => {
 					var i, n;
-					if (Boolean(A(e, t))) {
-						const r = g(e, t);
+					if (Boolean(P(e, t))) {
+						const r = w(e, t);
 						return null === (n = null === (i = null == r ? void 0 : r.lastMessage) || void 0 === i ? void 0 : i.messageData.awarding) || void 0 === n ? void 0 : n.award_id
 					}
 				},
-				L = (e, t) => {
+				B = (e, t) => {
 					var i, n;
 					const r = Object(p.a)(e),
-						s = v(e),
+						s = y(e),
 						o = (null == s ? void 0 : s.type) === u.b.Direct,
-						a = Boolean(x(e).length);
+						a = Boolean(L(e).length);
 					if (!o) return !1;
-					const l = F(e);
+					const l = N(e);
 					return l && e.channels.messageQuickReplyUsers[l] === l || (null === (n = null === (i = null == t ? void 0 : t.messageData) || void 0 === i ? void 0 : i.awarding) || void 0 === n ? void 0 : n.awarder_id) !== r && !a && Boolean((null == t ? void 0 : t.messageType) === d.d.SYSTEM && (null == t ? void 0 : t.customType) === c.a.AWARDING)
 				},
-				k = (e, t) => {
-					const i = T(e);
+				M = (e, t) => {
+					const i = O(e);
 					return i && i[t]
 				},
-				B = e => e.channels.joined.hasMoreChannels,
-				M = e => e.channels.joined.fetchingChannels,
-				U = Object(s.a)(e => e.channels.invited, e => e.channels.models, (e, t) => e.sortedKeys.map(e => t[e])),
-				G = e => e.channels.invited.hasMoreChannels,
-				q = e => e.channels.invited.fetchingChannels,
-				V = (e, t) => {
+				U = e => e.channels.joined.hasMoreChannels,
+				G = e => e.channels.joined.fetchingChannels,
+				q = Object(s.a)(e => e.channels.invited, e => e.channels.models, (e, t) => e.sortedKeys.map(e => t[e])),
+				V = e => e.channels.invited.hasMoreChannels,
+				H = e => e.channels.invited.fetchingChannels,
+				W = (e, t) => {
 					const i = Object(_.a)(e),
 						n = t.filter(e => e && !Object(l.b)(e));
 					switch (i) {
@@ -2578,45 +2582,45 @@
 							return n
 					}
 				},
-				H = e => {
-					const t = U(e);
-					return V(e, t)
-				},
-				W = e => {
-					const t = (e => e.channels.joined.sortedKeys.map(t => e.channels.models[t]))(e);
-					return V(e, t)
-				},
 				z = e => {
-					const t = T(e);
-					return t && t.inviter && t.inviter.name
+					const t = q(e);
+					return W(e, t)
 				},
 				K = e => {
-					const t = v(e);
+					const t = (e => e.channels.joined.sortedKeys.map(t => e.channels.models[t]))(e);
+					return W(e, t)
+				},
+				Y = e => {
+					const t = O(e);
+					return t && t.inviter && t.inviter.name
+				},
+				$ = e => {
+					const t = y(e);
 					return Boolean(t && t.isMessageListLoaded)
 				},
-				Y = e => e.channels.isCreatingChannel,
-				$ = e => {
-					const t = v(e);
+				Q = e => e.channels.isCreatingChannel,
+				J = e => {
+					const t = y(e);
 					return t && t.channelState
 				},
-				Q = Object(s.a)(v, e => Boolean(null == e ? void 0 : e.isModerator)),
-				J = e => {
-					const t = v(e);
+				X = Object(s.a)(y, e => Boolean(null == e ? void 0 : e.isModerator)),
+				Z = e => {
+					const t = y(e);
 					return !(!t || !t.isMuted)
 				},
-				X = (e, t) => {
-					const i = g(e, t);
+				ee = (e, t) => {
+					const i = w(e, t);
 					return Boolean(i && i.isNotifsMuted)
 				},
-				Z = (e, t) => {
+				te = (e, t) => {
 					var i;
 					return (null === (i = e.channels.draftMessages[t]) || void 0 === i ? void 0 : i.messageValue) || ""
 				},
-				ee = e => {
+				ie = e => {
 					var t;
-					return Boolean(null === (t = U(e)) || void 0 === t ? void 0 : t.length)
+					return Boolean(null === (t = q(e)) || void 0 === t ? void 0 : t.length)
 				},
-				te = Object(s.a)((e, t) => t ? e.channels.models[t] : void 0, e => Object(p.e)(e), (e, t) => {
+				ne = Object(s.a)((e, t) => t ? e.channels.models[t] : void 0, e => Object(p.e)(e), (e, t) => {
 					var i;
 					if (e && (null == t ? void 0 : t.id)) {
 						const n = e.channelState === o.b.JOINED,
@@ -2645,21 +2649,21 @@
 						}
 					}
 				}),
-				ie = (e, t) => {
+				re = (e, t) => {
 					var i;
 					if (t) {
-						const n = g(e, t),
-							r = te(e, t);
+						const n = w(e, t),
+							r = ne(e, t);
 						if (n) return n.type === u.b.Group ? n.name && "Group Channel" !== n.name ? n.name : n.members.map(e => e.name).join(", ") : null === (i = null == r ? void 0 : r.firstUser) || void 0 === i ? void 0 : i.name
 					}
 				},
-				ne = Object(s.a)(v, e => (null == e ? void 0 : e.type) === u.b.Direct && (null == e ? void 0 : e.members.some(e => e.state === u.f.Invited))),
-				re = Object(s.a)((e, t) => g(e, t), e => null == e ? void 0 : e.type),
-				se = Object(s.a)((e, t) => g(e, t), e => Boolean(null == e ? void 0 : e.members.some(e => e.isBlockedByMe))),
-				oe = (e, t) => {
+				se = Object(s.a)(y, e => (null == e ? void 0 : e.type) === u.b.Direct && (null == e ? void 0 : e.members.some(e => e.state === u.f.Invited))),
+				oe = Object(s.a)((e, t) => w(e, t), e => null == e ? void 0 : e.type),
+				de = Object(s.a)((e, t) => w(e, t), e => Boolean(null == e ? void 0 : e.members.some(e => e.isBlockedByMe))),
+				ae = (e, t) => {
 					return Object.values(e.channels.models).find(e => e.type === u.b.Direct && e.members.some(e => e.name === t))
 				},
-				de = Object(s.a)(W, m.d, (e, t) => [...e, ...t].sort(a.a))
+				le = Object(s.a)(K, m.d, (e, t) => [...e, ...t].sort(a.a))
 		},
 		"./src/chat/selectors/channelsFilter.ts": function(e, t, i) {
 			"use strict";
@@ -2720,7 +2724,7 @@
 					const i = p(e, t);
 					return i && i.method
 				},
-				f = Object(d.a)((e, t) => Object(a.j)(e, t), e => e.contacts.models, (e, t) => {
+				f = Object(d.a)((e, t) => Object(a.k)(e, t), e => e.contacts.models, (e, t) => {
 					if (null == e ? void 0 : e.inviter) return t[e.inviter.id]
 				}),
 				b = e => e.contacts.knownContacts,
@@ -2929,7 +2933,7 @@
 				s = i("./src/chat/models/Channel/index.ts"),
 				o = i("./src/chat/selectors/channels.ts");
 			const d = e => {
-					const t = Object(o.o)(e);
+					const t = Object(o.p)(e);
 					if (t) return e.members[t]
 				},
 				a = e => {
@@ -3036,7 +3040,7 @@
 				},
 				u = (e, t) => e.messages.pending[t],
 				c = (e, t) => {
-					const i = Object(r.a)(e);
+					const i = Object(r.b)(e);
 					return Object.keys(n.b).map(e => i && t.includes("@" + n.b[e]) && n.b[e]).filter(e => e)
 				},
 				_ = (e, t) => {
@@ -3278,7 +3282,7 @@
 					}
 				},
 				a = e => {
-					const t = Object(o.o)(e);
+					const t = Object(o.p)(e);
 					if (!t) return [];
 					const i = e.uploads.activeUploads[t];
 					return i && i.map(t => e.uploads.models[t]) || []
@@ -3422,14 +3426,14 @@
 					}
 				},
 				f = (e, t) => {
-					const i = t ? Object(u.i)(e, t) : Object(u.n)(e);
+					const i = t ? Object(u.j)(e, t) : Object(u.o)(e);
 					return i && {
 						id: i.channelSendbirdUrl
 					}
 				},
 				b = (e, t) => {
-					const i = t ? Object(u.i)(e, t) : Object(u.r)(e);
-					if (Object(u.q)(e)) return {
+					const i = t ? Object(u.j)(e, t) : Object(u.s)(e);
+					if (Object(u.r)(e)) return {
 						type: n.LiveChatPost
 					};
 					if (i) {
@@ -3466,7 +3470,7 @@
 					}
 				},
 				E = e => {
-					const t = Object(u.r)(e);
+					const t = Object(u.s)(e);
 					return {
 						number_members: t && t.memberCount
 					}
@@ -3478,7 +3482,7 @@
 					}
 				},
 				S = e => {
-					const t = Object(u.n)(e);
+					const t = Object(u.o)(e);
 					return {
 						sender_user_id: t && t.inviter && t.inviter.id
 					}
@@ -3490,7 +3494,7 @@
 					number_unreads: Object(p.e)(e)
 				}),
 				R = (e, t) => {
-					const i = Object(u.r)(e),
+					const i = Object(u.s)(e),
 						n = i && i.unreadMessageCount;
 					return {
 						number_unreads: "number" == typeof t ? t : n || 0
@@ -3500,10 +3504,10 @@
 					number_unreads: Object(_.g)(e, t) ? 1 : 0
 				}),
 				C = e => ({
-					number_channels: Object(u.y)(e)
+					number_channels: Object(u.z)(e)
 				}),
 				N = e => ({
-					number_pending_invites: Object(u.x)(e)
+					number_pending_invites: Object(u.y)(e)
 				}),
 				A = (e, t, i, n) => ({
 					message_type: n || (null == i ? void 0 : i.type) || Object(m.e)(e, t) || a.c.TEXT
@@ -3523,13 +3527,13 @@
 				x = e => {
 					let t = !1;
 					const i = Object(c.e)(e),
-						n = Object(u.f)(e);
+						n = Object(u.g)(e);
 					return i && i.length && n && n.length && (t = !!n.find(e => d()(s()(i.sort(), e.sort())))), {
 						existing_channel: t
 					}
 				},
 				D = e => {
-					const t = Object(u.r)(e);
+					const t = Object(u.s)(e);
 					return {
 						invitation_id: t ? t.channelSendbirdUrl : null
 					}
@@ -3538,14 +3542,14 @@
 					if (t) return {
 						invitation_type: t
 					};
-					const i = Object(u.r)(e),
+					const i = Object(u.s)(e),
 						n = i && h(i.type);
 					return n && {
 						invitation_type: n
 					}
 				},
 				k = e => {
-					const t = Object(u.r)(e);
+					const t = Object(u.s)(e);
 					return {
 						invitation_timestamp: t ? t.createdAt : null
 					}
@@ -3554,9 +3558,9 @@
 					reported_user_id: e || null
 				}),
 				M = e => {
-					const t = Object(u.r)(e),
+					const t = Object(u.s)(e),
 						i = !(!t || t.type !== l.b.Direct),
-						n = Object(u.z)(e),
+						n = Object(u.A)(e),
 						r = n && n.length && n[0].id;
 					return {
 						recipient_user_id: i ? r : null
@@ -3575,10 +3579,10 @@
 					}
 				},
 				q = e => ({
-					is_member: Object(u.Q)(e)
+					is_member: Object(u.R)(e)
 				}),
 				V = e => {
-					const t = Object(u.p)(e);
+					const t = Object(u.q)(e);
 					return t && {
 						shown_history: !!t.lastMessage
 					}
@@ -3653,11 +3657,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("185128"),
+				buildNumber: Object(r.c)("185257"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1680726363"),
+				buildTimestamp: Object(r.b)("1681218084"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6405,14 +6409,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %ccf23f0ac3e027f23c585f52d3cd22e9ecf579c69-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c35820d63a2f1058015c831a1afe90c29ec1d05c2-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "cf23f0ac3e027f23c585f52d3cd22e9ecf579c69-production",
+						release: "35820d63a2f1058015c831a1afe90c29ec1d05c2-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6965,7 +6969,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "cf23f0ac3e027f23c585f52d3cd22e9ecf579c69-production",
+							releaseClient: "35820d63a2f1058015c831a1afe90c29ec1d05c2-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -50853,4 +50857,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a4b7c54ae7e27fe693be.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3dbe812ba1db3e549906.js.map

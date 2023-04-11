@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.d586335e990150b5986b.js
-// Retrieved at 4/5/2023, 5:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.26db8dfc0f1650fb34b2.js
+// Retrieved at 4/11/2023, 9:40:05 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1498,18 +1498,18 @@
 						"reddit-components-PostCreationForm-PredictionEditor-InactivityModal": "c69b240b5733aa348258",
 						"reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal": "cd11803960dd6c0af1e9",
 						"translations/bn_BD-json": "b3173786cd3d094eccd3",
-						"translations/de_DE-json": "9a89ee171df5c9844acb",
-						"translations/es_ES-json": "01982beb94c67cff7ba6",
-						"translations/es_MX-json": "18af4eb1909f25f4b16f",
-						"translations/fr_CA-json": "891f075716009a1b6b40",
-						"translations/fr_FR-json": "d4b12b5888517c6b9bed",
+						"translations/de_DE-json": "0fac1e73278f822f42e9",
+						"translations/es_ES-json": "8870e79e195323e74eb4",
+						"translations/es_MX-json": "080188503be27402bea3",
+						"translations/fr_CA-json": "563b8be91ed505d2e365",
+						"translations/fr_FR-json": "3a24d18a5bb489c3845b",
 						"translations/hi_IN-json": "afefded40c44acf4111c",
-						"translations/it_IT-json": "2b31bd4c7171f73c2d52",
-						"translations/nl_NL-json": "a12d30b0af4f5f96873b",
+						"translations/it_IT-json": "503837c8e27d48d9f1f6",
+						"translations/nl_NL-json": "f771f3a0e3fe7054f9fc",
 						"translations/pseudo-json": "9405dd64d37919613be0",
-						"translations/pt_BR-json": "9af6396d6960071707dd",
-						"translations/pt_PT-json": "aba1f3bd17e37b7c9f97",
-						"translations/sv_SE-json": "5b62f7e202ff99c02d41",
+						"translations/pt_BR-json": "20a34838ced19c86c120",
+						"translations/pt_PT-json": "cd258a4988caca69f633",
+						"translations/sv_SE-json": "3a76af8cbc80d9c37268",
 						"vendors~AdminPanel": "9abedef941b07fd50b75",
 						AdminPanel: "6c4064f9ed0b56f5cd5d",
 						"vendors~Avatar~ChatPost~CollectiblesShowcaseUnit~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProf~7d152600": "6f19d2e4659dbfb6d084",
@@ -1529,7 +1529,7 @@
 						MembershipPaywallPage: "f343c7197ac8ec0bfd20",
 						FlairEdit: "6344f65032a364c807c3",
 						"vendors~Chat~RedesignChat": "1913d26467681b3a7b06",
-						"Chat~RedesignChat": "dd0121a932bb1e14d2ed",
+						"Chat~RedesignChat": "5a97ee021769c6109ba6",
 						RedesignChat: "7b8e09883d2be235bb97",
 						ModListing: "0f5cfa4abf4ed9ed05f6",
 						"vendors~Subreddit~SubredditWiki": "c17b16c26feb8de5d65f",
@@ -1642,21 +1642,21 @@
 						"reddit-components-Governance-TransactionModals-SubscriptionModal": "8e58e1934d57ac20132a",
 						ChatEmpty: "dbbcde7d0cc092042a9f",
 						ChatMinimize: "44c69e3b0034bf285b68",
-						ChatOverlayReport: "493368c7bd7a2099aa1e",
+						ChatOverlayReport: "7b0b62c2f744b31cdb7b",
 						ChatPage: "e7a4cc9709580c54e430",
 						ExternalLinkUnit: "153ced6ab890735e0557",
-						InvitedChannelsPanel: "2abaeb7157170dbd4f46",
+						InvitedChannelsPanel: "04b671227cdbd4548952",
 						OverlayBlockUser: "e897f9f910e35cf34254",
 						OverlayChannelRemoval: "3e99f981552a43c29d99",
-						OverlayCreateChannel: "3043459f7779825eb5ad",
+						OverlayCreateChannel: "7c534f44cdcfa17a583c",
 						OverlayDeleteMessage: "8d6926d88209a311ee0f",
 						OverlayDirectsEmptyState: "ecc8e021616a4810c9c8",
-						OverlayGroupAbout: "b8c9e2d8d90a082d28a5",
+						OverlayGroupAbout: "f10048367215730aa9fb",
 						OverlayLinkSharingSettings: "06836434821cfd50d6e8",
 						OverlayNSFWWarning: "2b052f9d71f8d4d481ad",
 						OverlayPrivacyAndSupport: "f787e549328ccd70c258",
-						OverlayThemes: "2d2f746de226bc78b2f8",
-						SettingsPanel: "b77b7736209cf8997f0e",
+						OverlayThemes: "b38b0fad31a0bcff7e82",
+						SettingsPanel: "675393eff4a6d4b37608",
 						CommentRichUnit: "db84e2b5da3c25aad56b",
 						PostRichUnit: "06f02b21a6809a869707",
 						"SubredditTopContent~TopWeekPostsDiscoveryUnit": "b8758a4cc848c545cf67",
@@ -1781,4 +1781,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.d586335e990150b5986b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.26db8dfc0f1650fb34b2.js.map

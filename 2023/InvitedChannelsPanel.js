@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InvitedChannelsPanel.2abaeb7157170dbd4f46.js
-// Retrieved at 3/30/2023, 11:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InvitedChannelsPanel.04b671227cdbd4548952.js
+// Retrieved at 4/11/2023, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InvitedChannelsPanel"], {
 		"./src/chat/components/Sidebar/InvitedChannelsPanel/index.m.less": function(e, n, t) {
@@ -38,9 +38,9 @@
 				Object(o.useEffect)(() => {
 					e(Object(h.ib)())
 				}, [e]);
-				const n = Object(r.e)(E.d),
-					t = Object(r.e)(E.I),
-					a = Object(r.e)(E.b);
+				const n = Object(r.e)(E.e),
+					t = Object(r.e)(E.J),
+					a = Object(r.e)(E.c);
 				return l.a.createElement(l.a.Fragment, null, l.a.createElement("button", {
 					className: O.a.Header,
 					onClick: () => {
@@ -65,4 +65,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InvitedChannelsPanel.2abaeb7157170dbd4f46.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InvitedChannelsPanel.04b671227cdbd4548952.js.map
