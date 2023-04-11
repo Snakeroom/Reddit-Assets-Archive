@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3dbe812ba1db3e549906.js
-// Retrieved at 4/11/2023, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d06a7ef10df3818ad59c.js
+// Retrieved at 4/11/2023, 11:00:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3657,11 +3657,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("185257"),
+				buildNumber: Object(r.c)("185264"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1681218084"),
+				buildTimestamp: Object(r.b)("1681222947"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6409,14 +6409,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c35820d63a2f1058015c831a1afe90c29ec1d05c2-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c9080e91c1509873f3aa69d054539fe6692b901a1-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "35820d63a2f1058015c831a1afe90c29ec1d05c2-production",
+						release: "9080e91c1509873f3aa69d054539fe6692b901a1-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6969,7 +6969,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "35820d63a2f1058015c831a1afe90c29ec1d05c2-production",
+							releaseClient: "9080e91c1509873f3aa69d054539fe6692b901a1-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -44122,7 +44122,7 @@
 				r = i("./src/lib/initializeClient/installReducer.ts");
 			var s = i("./node_modules/fbt/lib/FbtPublic.js"),
 				o = i("./src/reddit/helpers/name/index.ts");
-			const d = ["school_shooting", "robb_elementary_school_shooting", "sandy_hook_elementary_school_shooting", "gun_violence", "mass_shooting", "police_brutality", "death_of_elijah_mcclain", "killing_of_breonna_taylor", "murder_of_george_floyd", "murder", "boston_marathon_bombings", "delphi_murders", "serial_killer", "9_11"];
+			const d = ["school_shooting", "robb_elementary_school_shooting", "sandy_hook_elementary_school_shooting", "gun_violence", "mass_shooting", "police_brutality", "death_of_elijah_mcclain", "killing_of_breonna_taylor", "murder_of_george_floyd", "murder", "boston_marathon_bombings", "delphi_murders", "serial_killer", "9_11", "hate_speech", "racism", "white_supremacy", "michigan_state_university_shooting", "nashville_school_shooting", "university_of_virginia_shooting", "yellow_peril", "rwandan_genocide", "racism_in_the_uk", "racism_in_sport", "anti_black_racism", "racism_in_canada", "racial_segregation", "islamophobia", "anti_lgbt_discrimination", "harassment", "sexual_harrassment", "substance_abuse", "discrimination", "human_rights_violation"];
 			var a = i("./node_modules/redux/es/redux.js"),
 				l = i("./src/reddit/actions/pages/topic.ts");
 			const u = {};
@@ -50857,4 +50857,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3dbe812ba1db3e549906.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d06a7ef10df3818ad59c.js.map
