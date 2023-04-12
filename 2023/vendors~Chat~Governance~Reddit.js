@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.129ad206362dbdcb7a01.js
-// Retrieved at 1/5/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.6921f706c26009a1fbb3.js
+// Retrieved at 4/12/2023, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~Governance~Reddit"], {
 		"./node_modules/@loadable/component/dist/loadable.esm.js": function(e, t, n) {
@@ -303,7 +303,7 @@
 				return e.id = "acceptabletest", e.className = "promotedlink", e.style.width = e.style.height = "1px", e.style.position = "absolute", e.style.top = "0", e.style.left = "-1000px", e.style.display = "block", e
 			}, t.adblockDetectorElement = () => {
 				const e = document.createElement("div");
-				return e.id = "adblocktest", e.className = "ad adsense-ad adsense-ads googad googads gemini-ad openx ad-banner ad-BANNER GoogleAd googleAd hasads LeftAd native-ad ad-300-250 adbar ads-area HeaderAd NavBarAd ad-medium post-ad promoad rectad sidebar-ad small-ad sponsorAd sponsorPost", e.style.width = e.style.height = "1px", e.style.position = "absolute", e.style.top = "0", e.style.left = "-1000px", e
+				return e.id = "adblocktest", e.className = "AdHeader AdUnit adsense-ads HeaderAd SidebarAd VerticalAd _has-ads ad--content ad-adsense ad-banner adsense-ads googads ad-banner-content ad-BANNER googleAd googlead hasads leftAd native-ad ADBAR ad-medium post-ad promoad rectad sidebar-ad small-ad sponsorAd sponsorPost", e.style.width = e.style.height = "1px", e.style.position = "absolute", e.style.top = "0", e.style.left = "-1000px", e
 			}, t.hasAcceptableAds = () => {
 				if (!o()) return null;
 				const e = document.getElementById("acceptabletest");
@@ -36091,4 +36091,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.129ad206362dbdcb7a01.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.6921f706c26009a1fbb3.js.map
