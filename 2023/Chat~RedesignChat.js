@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.5a97ee021769c6109ba6.js
-// Retrieved at 4/11/2023, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.eb6e49c852dac7adda51.js
+// Retrieved at 4/12/2023, 1:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -10724,30 +10724,29 @@
 					router: t,
 					routes: n
 				} = e;
-				const s = Object(r.e)(F.q),
-					i = Object(r.e)(p.a),
-					l = Object(r.e)(p.b),
-					d = Object(r.e)(b.i),
-					h = Object(r.e)(b.a) === u.a.MINIMIZED,
-					m = i && !h && !d,
-					f = c.a.createElement(t, null, c.a.createElement(o.d, {
+				const [i, l] = Object(s.useState)(!1), d = Object(r.e)(F.q), h = Object(r.e)(p.a), m = Object(r.e)(p.b), f = Object(r.e)(b.i), g = Object(r.e)(b.a) === u.a.MINIMIZED;
+				if (Object(s.useEffect)(() => {
+						l(!0)
+					}, []), !i) return null;
+				const O = h && !g && !f,
+					E = c.a.createElement(t, null, c.a.createElement(o.d, {
 						component: e => c.a.createElement(A, null, c.a.createElement(o.f, {
 							location: e.location
 						}, n))
 					}));
-				return s ? c.a.createElement(H.a, {
+				return d ? c.a.createElement(H.a, {
 					className: j.a
 				}, c.a.createElement("div", {
 					className: V.a.chatWindowContent
-				}, m && c.a.createElement(v, null), !l && c.a.createElement("div", {
+				}, O && c.a.createElement(v, null), !m && c.a.createElement("div", {
 					className: V.a.chatApp
-				}, f), !d && c.a.createElement(B, {
+				}, E), !f && c.a.createElement(B, {
 					className: Object(a.a)(V.a.chatApp, {
-						[V.a.hidden]: !l
+						[V.a.hidden]: !m
 					})
 				}))) : c.a.createElement(H.a, {
 					className: j.a
-				}, f)
+				}, E)
 			}
 		},
 		"./src/chat/components/Scroller/index.m.less": function(e, t, n) {
@@ -20080,4 +20079,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.5a97ee021769c6109ba6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.eb6e49c852dac7adda51.js.map
