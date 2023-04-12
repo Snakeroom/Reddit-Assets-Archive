@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.7e4e9bef590cc013b8f1.js
-// Retrieved at 4/5/2023, 5:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.673e4be1efc7de291109.js
+// Retrieved at 4/12/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -2841,6 +2841,9 @@
 					},
 					small: !0,
 					isFullWidth: !0,
+					onClick: () => {
+						!e.userIsSubscriber && e.setRelatedRecommendedCommunitiesVisible && e.setRelatedRecommendedCommunitiesVisible(!0)
+					},
 					afterUnsubscribeAction: () => {
 						t && (Object(A.cb)(e.userId, t), e.updateSubredditInfo())
 					}
@@ -11546,4 +11549,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.7e4e9bef590cc013b8f1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.673e4be1efc7de291109.js.map
