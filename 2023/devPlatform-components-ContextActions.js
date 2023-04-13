@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.cee75b944d0c1e45a5e2.js
-// Retrieved at 2/15/2023, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.c3f78370a9e92f116947.js
+// Retrieved at 4/13/2023, 6:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["devPlatform-components-ContextActions"], {
 		"./src/devPlatform/components/ContextActions/index.m.less": function(e, t, o) {},
@@ -22,7 +22,7 @@
 				b = o("./src/reddit/models/Vote/index.ts"),
 				g = e => {
 					var t, o, n, i, d, a, s, r, l, c, u, m, p, v, g, f, w, x;
-					return h.F.fromPartial({
+					return h.H.fromPartial({
 						approved: e.isApproved,
 						approvedAtUtc: null !== (t = e.approvedAtUTC) && void 0 !== t ? t : void 0,
 						approvedBy: null !== (o = e.approvedBy) && void 0 !== o ? o : void 0,
@@ -74,7 +74,7 @@
 				w = o("./src/reddit/models/Media/index.ts"),
 				x = e => {
 					var t, o, n, i, d, a, s, r, l, c, u, m, p, v, g, x, A, O, y;
-					return h.F.fromPartial({
+					return h.H.fromPartial({
 						approved: e.isApproved,
 						approvedAtUtc: null !== (t = e.approvedAtUTC) && void 0 !== t ? t : void 0,
 						approvedBy: null !== (o = e.approvedBy) && void 0 !== o ? o : void 0,
@@ -130,7 +130,7 @@
 						url: null === (y = e.source) || void 0 === y ? void 0 : y.url
 					})
 				},
-				A = e => h.O.fromPartial({
+				A = e => h.Q.fromPartial({
 					freeFormReports: e.freeFormReports,
 					communityIcon: e.communityIcon,
 					displayName: e.name,
@@ -180,9 +180,9 @@
 					}
 				})),
 				P = (e, t) => ({
-					post: e === h.g.POST ? x(t) : void 0,
-					comment: e === h.g.COMMENT ? g(t) : void 0,
-					subreddit: e === h.g.SUBREDDIT ? A(t) : void 0
+					post: e === h.h.POST ? x(t) : void 0,
+					comment: e === h.h.COMMENT ? g(t) : void 0,
+					subreddit: e === h.h.SUBREDDIT ? A(t) : void 0
 				});
 			t.default = M(e => {
 				const {
@@ -206,11 +206,11 @@
 						var n, i, d, a, s;
 						if (t && !(null === (n = o.users) || void 0 === n ? void 0 : n.moderator) || !t && (null === (i = o.users) || void 0 === i ? void 0 : i.moderator)) return !1;
 						switch (e) {
-							case h.g.POST:
+							case h.h.POST:
 								return !!(null === (d = o.contexts) || void 0 === d ? void 0 : d.post);
-							case h.g.COMMENT:
+							case h.h.COMMENT:
 								return !!(null === (a = o.contexts) || void 0 === a ? void 0 : a.comment);
-							case h.g.SUBREDDIT:
+							case h.h.SUBREDDIT:
 								return !!(null === (s = o.contexts) || void 0 === s ? void 0 : s.subreddit);
 							default:
 								return !1
@@ -220,7 +220,7 @@
 							return () => {
 								const a = d => {
 									var a, s;
-									return null === (s = null === (a = y.a.getActor(e)) || void 0 === a ? void 0 : a.As(h.e)) || void 0 === s ? void 0 : s.OnAction(h.f.fromPartial({
+									return null === (s = null === (a = y.a.getActor(e)) || void 0 === a ? void 0 : a.As(h.f)) || void 0 === s ? void 0 : s.OnAction(h.g.fromPartial({
 										actionId: t.actionId,
 										context: o,
 										...P(o, n),
@@ -310,11 +310,14 @@
 			const v = new class {
 				constructor() {
 					var e;
-					if (this.runtime = new d.a(m), this.gatewayUrl = "", this.loadedSubId = "", this.subActors = [], this.loadedMetadata = null, this.mockMetadata = null, this.sortedContextActions = [], this.localStorageAvailable = Object(u.a)(), this.runtimeInitialized = !1, this.debugLogging = !1, this.localStorageAvailable) {
+					if (this.gatewayUrl = "", this.loadedSubId = "", this.subActors = [], this.loadedMetadata = null, this.mockMetadata = null, this.sortedContextActions = [], this.localStorageAvailable = Object(u.a)(), this.runtimeInitialized = !1, this.debugLogging = !1, this.localStorageAvailable) {
 						this.gatewayUrl = null !== (e = localStorage.getItem(a.b)) && void 0 !== e ? e : n.a.devPlatformGatewayUrl;
 						const t = localStorage.getItem(a.c);
 						t && (this.mockMetadata = JSON.parse(t)), this.debugLogging = "true" === localStorage.getItem(a.d)
 					}
+					this.runtime = new d.a(m, {
+						logLevel: this.debugLogging ? void 0 : "off"
+					})
 				}
 				init() {
 					this.runtimeInitialized || (this.runtimeInitialized = !0, this.runtime.start())
@@ -339,7 +342,7 @@
 					if (this.loadedMetadata = null, this.debugLog(() => "Metadata not yet loaded"), void 0 !== e.devPlatformMetadata ? (this.debugLog(() => {
 							var t;
 							return `Loading metadata from Subreddit (${null===(t=e.devPlatformMetadata)||void 0===t?void 0:t.length} bytes)`
-						}), this.loadedMetadata = i.i.fromJSON(JSON.parse(atob(e.devPlatformMetadata))), this.debugLog(() => {
+						}), this.loadedMetadata = i.j.fromJSON(JSON.parse(atob(e.devPlatformMetadata))), this.debugLog(() => {
 							var e;
 							return ["metadata.installedRemoteApps:", null === (e = this.loadedMetadata) || void 0 === e ? void 0 : e.installedRemoteApps]
 						}), this.debugLog(() => {
@@ -351,7 +354,7 @@
 					return this.debugLog(() => `Connecting to ${this.loadedMetadata.installedRemoteApps.length} remote actors from ${t.size} apps`), this.loadedMetadata.installedRemoteApps.forEach(e => {
 						const t = e.provides.flatMap(e => {
 								try {
-									return [i.h.fromSerializable(e)]
+									return [i.i.fromSerializable(e)]
 								} catch {
 									this.debugLog(() => `Unknown app type, skipping: ${e.fullName}`)
 								}
@@ -383,10 +386,10 @@
 				loadActor(e) {
 					const t = e.hostname.split("."),
 						o = {
-							"devvit-installation": i.N.fromPartial({
+							"devvit-installation": i.P.fromPartial({
 								values: [t[0]]
 							}),
-							"devvit-actor": i.N.fromPartial({
+							"devvit-actor": i.P.fromPartial({
 								values: [t[2]]
 							})
 						};
@@ -614,4 +617,4 @@
 		"ignored /drone/src/node_modules/cron-parser/lib fs": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.cee75b944d0c1e45a5e2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.c3f78370a9e92f116947.js.map

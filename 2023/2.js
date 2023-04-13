@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/2.0d9fdc858539bf6ff481.js
-// Retrieved at 2/14/2023, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/2.a30a1a29653592fdb59c.js
+// Retrieved at 4/13/2023, 6:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[2], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -79,7 +79,7 @@
 				I = u.a.div("ConfigFormStringRow", k.a),
 				R = u.a.div("NumberInputWrapper", k.a),
 				j = u.a.div("ConfigFormFooterWrapper", k.a);
-			class T extends a.a.Component {
+			class M extends a.a.Component {
 				constructor(e) {
 					super(e), this.state = {
 						values: e.configForm.fields.reduce((e, t) => (e.set(t.key, JSON.parse(t.response || '""')), e), new Map)
@@ -96,7 +96,7 @@
 					})
 				}
 				onSubmit() {
-					const e = d.d.fromJSON(this.props.configForm);
+					const e = d.e.fromJSON(this.props.configForm);
 					for (const t of e.fields) t.response = JSON.stringify(this.state.values.get(t.key));
 					this.props.onSubmitClick(e)
 				}
@@ -108,8 +108,8 @@
 						configForm: i,
 						onCloseClick: l
 					} = this.props, u = [];
-					for (const c of i.fields) switch (Object(d.T)(c.fieldType)) {
-						case d.c.STRING:
+					for (const c of i.fields) switch (Object(d.ab)(c.fieldType)) {
+						case d.d.STRING:
 							u.push(a.a.createElement(I, {
 								key: c.key
 							}, a.a.createElement("label", {
@@ -120,7 +120,7 @@
 								onChange: e => this.updateValue(c.key, e.target.value)
 							})));
 							break;
-						case d.c.PARAGRAPH:
+						case d.d.PARAGRAPH:
 							u.push(a.a.createElement(I, {
 								key: c.key
 							}, a.a.createElement("label", {
@@ -131,7 +131,7 @@
 								value: null !== (t = this.state.values.get(c.key)) && void 0 !== t ? t : ""
 							})));
 							break;
-						case d.c.NUMBER:
+						case d.d.NUMBER:
 							u.push(a.a.createElement(O, {
 								key: c.key
 							}, a.a.createElement("label", {
@@ -143,7 +143,7 @@
 								value: null !== (n = this.state.values.get(c.key)) && void 0 !== n ? n : 0
 							}))));
 							break;
-						case d.c.BOOLEAN:
+						case d.d.BOOLEAN:
 							const r = null !== (s = this.state.values.get(c.key)) && void 0 !== s && s;
 							u.push(a.a.createElement(O, {
 								key: c.key
@@ -155,7 +155,7 @@
 								onToggle: () => this.updateValue(c.key, !r)
 							})));
 							break;
-						case d.c.UNRECOGNIZED:
+						case d.d.UNRECOGNIZED:
 					}
 					return a.a.createElement(y, null, a.a.createElement(N, null, a.a.createElement(E, {
 						title: r,
@@ -167,7 +167,7 @@
 					})))))
 				}
 			}
-			var M = T;
+			var T = M;
 			const F = Object(o.c)({});
 			class S extends a.a.Component {
 				constructor() {
@@ -199,7 +199,7 @@
 						},
 						closeUserInputModal: s
 					} = this.props;
-					return a.a.createElement(M, {
+					return a.a.createElement(T, {
 						title: e,
 						description: t,
 						configForm: n,
@@ -817,4 +817,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/2.0d9fdc858539bf6ff481.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/2.a30a1a29653592fdb59c.js.map
