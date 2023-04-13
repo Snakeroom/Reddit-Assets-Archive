@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.162bb6b24635669b5da7.js
-// Retrieved at 4/5/2023, 5:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.5326056a88b4dc428939.js
+// Retrieved at 4/13/2023, 9:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "ModQueuePages~reddit-components-MediumPost", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -18839,7 +18839,7 @@
 							subredditId: r
 						}),
 						E = t && e ? Object(l.g)(e) : void 0;
-					Object(c.h)(d(), s, x.name, t, E), s === p && Object(c.j)(d(), n, x.name)
+					E && Object(c.h)(d(), s, x.name, t, E), s === p && Object(c.j)(d(), n, x.name)
 				}, F = (e, t) => async (n, s, r) => {
 					let {
 						apiContext: o
@@ -80462,4 +80462,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.162bb6b24635669b5da7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.5326056a88b4dc428939.js.map
