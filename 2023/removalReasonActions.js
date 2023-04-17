@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.7df3272b4702f412e6be.js
-// Retrieved at 4/3/2023, 7:00:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.e7087a7aed8908a5551f.js
+// Retrieved at 4/17/2023, 6:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./node_modules/lodash/map.js": function(e, t, s) {
@@ -269,7 +269,7 @@
 		"./src/reddit/actions/removalReasons/index.ts": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "removalReasonsPending", (function() {
-				return W
+				return Y
 			})), s.d(t, "removalReasonsLoaded", (function() {
 				return ee
 			})), s.d(t, "removalReasonsFailed", (function() {
@@ -527,15 +527,15 @@
 				H = s("./src/reddit/models/ModQueue/index.ts"),
 				q = s("./src/reddit/models/PostDraft/index.ts"),
 				Q = s("./src/reddit/models/RemovalReason/index.ts"),
-				Y = s("./src/reddit/models/Toast/index.ts"),
-				X = s("./src/reddit/selectors/comments.ts"),
-				Z = s("./src/reddit/selectors/platform.ts");
+				X = s("./src/reddit/models/Toast/index.ts"),
+				Z = s("./src/reddit/selectors/comments.ts"),
+				W = s("./src/reddit/selectors/platform.ts");
 			Object(n.a)({
 				features: {
 					removalReasons: h
 				}
 			});
-			const W = Object(I.a)("REMOVALREASONS__LOAD_PENDING"),
+			const Y = Object(I.a)("REMOVALREASONS__LOAD_PENDING"),
 				ee = Object(I.a)(d),
 				te = Object(I.a)("REMOVALREASONS__LOAD_FAILED"),
 				se = e => async (t, s, o) => {
@@ -543,7 +543,7 @@
 						apiContext: n
 					} = o;
 					const r = s().subreddits.models[e].name;
-					t(W());
+					t(Y());
 					const d = await ((e, t) => Object(w.a)(Object(V.a)(e, [B.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons.json`,
 						method: y.pb.GET
@@ -574,7 +574,7 @@
 							subredditId: e,
 							reason: r
 						})), s(Object(P.f)({
-							kind: Y.b.SuccessMod,
+							kind: X.b.SuccessMod,
 							text: o.fbt._("Removal reason added!", null, {
 								hk: "2WSh8N"
 							})
@@ -598,7 +598,7 @@
 						subredditId: e,
 						reason: t
 					})), s(Object(P.f)({
-						kind: Y.b.SuccessMod,
+						kind: X.b.SuccessMod,
 						text: o.fbt._("Removal reason saved", null, {
 							hk: "28ScuL"
 						})
@@ -617,7 +617,7 @@
 						subredditId: e,
 						reasonId: t
 					})), s(Object(P.f)({
-						kind: Y.b.SuccessMod,
+						kind: X.b.SuccessMod,
 						text: o.fbt._("Removal reason deleted", null, {
 							hk: "4xzgsa"
 						})
@@ -674,7 +674,7 @@
 												comment: e,
 												parentId: m
 											},
-											s = Object(Z.f)(l),
+											s = Object(W.f)(l),
 											o = l.platform.currentPage && l.platform.currentPage.routeMatch;
 										let n = s && o && Object(z.a)(o, l, l.posts.models[e.postId]);
 										if (n || (n = Object(x.a)(e.postId, null, {
@@ -684,7 +684,7 @@
 											const s = Object(k.a)(q.c.replyToPost, m);
 											d(Object(C.r)({
 												...t,
-												headCommentId: Object(X.w)(l, {
+												headCommentId: Object(Z.w)(l, {
 													commentsPageKey: n
 												}),
 												commentsPageKey: n,
@@ -702,7 +702,7 @@
 											}))
 										} else if (p === Q.e.Comment) {
 											const e = Object(k.a)(q.c.replyToComment, b.id),
-												s = Object(X.j)(l, {
+												s = Object(Z.j)(l, {
 													commentId: m,
 													commentsPageKey: n
 												});
@@ -737,7 +737,7 @@
 					if (!u) return;
 					d(Re());
 					const m = Object(P.f)({
-							kind: Y.b.SuccessMod,
+							kind: X.b.SuccessMod,
 							text: o.fbt._({
 								"*": "Added removal reason for {number} posts/comments",
 								_1: "Added removal reason for 1 post/comment"
@@ -1073,11 +1073,11 @@
 				experimentEligibilitySelector: n.a,
 				experimentName: o.ub
 			}), e => ({
-				bucketed: e === o.Yc.ExpandedSearch || e === o.Yc.CollapsedSearch,
-				collapsed: e === o.Yc.CollapsedSearch,
-				expanded: e === o.Yc.ExpandedSearch
+				bucketed: e === o.Xc.ExpandedSearch || e === o.Xc.CollapsedSearch,
+				collapsed: e === o.Xc.CollapsedSearch,
+				expanded: e === o.Xc.ExpandedSearch
 			}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.7df3272b4702f412e6be.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.e7087a7aed8908a5551f.js.map
