@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.297af5748e73696b780a.js
-// Retrieved at 4/4/2023, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.4d1bccb9d0b34ef5949b.js
+// Retrieved at 4/17/2023, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "CollectionCommentsPage~SearchResults", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -6741,7 +6741,7 @@
 								n = Object.keys(te.body.comments);
 							if (o(A.y(t, H.a.CommentsView)), Object(de.h)(i(), {
 									subredditId: t.belongsTo.id
-								}) && o(Object(M.a)({
+								}) && await o(Object(M.a)({
 									commentIds: n,
 									postIds: [e]
 								})), t && "subreddit" === t.belongsTo.type && te.body.comments) {
@@ -49357,4 +49357,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.297af5748e73696b780a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.4d1bccb9d0b34ef5949b.js.map
