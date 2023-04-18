@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.b8d58361dcdaa250970e.js
-// Retrieved at 4/18/2023, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.a6d6555dc835da329a32.js
+// Retrieved at 4/18/2023, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -8610,6 +8610,7 @@
 			e.exports = {
 				container: "e_hUuI8E4_-4joOuOJxiG",
 				expanded: "_1wpebj121xvsT_ALlIraAs",
+				isSubscriptionsPinned: "_1dKBP8RyDqi98Fm3SZdS-X",
 				garlicBreadIcon: "_9_GnEondPnEvAiqhn8bEt",
 				iframe: "_3Sf9ucwF90vy8KQgnmYHkY",
 				overlay: "_1vTup2Yz1pFxSinanTQR1Q",
@@ -8745,15 +8746,16 @@
 			};
 			var P = n("./src/reddit/selectors/platform.ts"),
 				L = n("./src/reddit/selectors/user.ts"),
-				D = n("./src/higherOrderComponents/asModal/index.tsx"),
-				R = n("./src/reddit/icons/svgs/GarlicBread/index.tsx"),
-				A = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				B = n("./src/reddit/controls/Button/index.tsx"),
-				M = n("./src/reddit/components/GarlicBreadEmbed/index.m.less"),
-				U = n.n(M);
+				D = n("./src/reddit/selectors/userPrefs.ts"),
+				R = n("./src/higherOrderComponents/asModal/index.tsx"),
+				A = n("./src/reddit/icons/svgs/GarlicBread/index.tsx"),
+				B = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				M = n("./src/reddit/controls/Button/index.tsx"),
+				U = n("./src/reddit/components/GarlicBreadEmbed/index.m.less"),
+				F = n.n(U);
 			const {
-				fbt: F
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), W = e => e.preventDefault(), H = Object(D.a)(e => {
+				fbt: W
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), H = e => e.preventDefault(), V = Object(R.a)(e => {
 				let {
 					title: t,
 					modalBody: n,
@@ -8763,113 +8765,113 @@
 					onPrimaryButtonClick: a,
 					onSecondaryButtonClick: c
 				} = e;
-				return o.a.createElement(A.e, {
-					className: U.a.ModalBody
-				}, o.a.createElement(A.i, {
-					className: U.a.ModalHeader
-				}, o.a.createElement(R.a, {
-					className: U.a.ModalIcon
-				}), o.a.createElement(A.q, {
-					className: U.a.ModalTitle
-				}, t)), o.a.createElement(A.l, {
-					className: U.a.ModalMain
-				}, n), o.a.createElement(A.g, {
-					className: U.a.ModalFooter
-				}, s && o.a.createElement(B.t, {
-					kind: B.b.Button,
-					priority: B.c.Primary,
-					className: U.a.ConfirmButton,
+				return o.a.createElement(B.e, {
+					className: F.a.ModalBody
+				}, o.a.createElement(B.i, {
+					className: F.a.ModalHeader
+				}, o.a.createElement(A.a, {
+					className: F.a.ModalIcon
+				}), o.a.createElement(B.q, {
+					className: F.a.ModalTitle
+				}, t)), o.a.createElement(B.l, {
+					className: F.a.ModalMain
+				}, n), o.a.createElement(B.g, {
+					className: F.a.ModalFooter
+				}, s && o.a.createElement(M.t, {
+					kind: M.b.Button,
+					priority: M.c.Primary,
+					className: F.a.ConfirmButton,
 					onClick: a,
-					onMouseDown: W
-				}, r), !s && o.a.createElement(B.t, {
+					onMouseDown: H
+				}, r), !s && o.a.createElement(M.t, {
 					to: "/settings/account",
-					kind: B.b.InternalLink,
-					priority: B.c.Primary,
-					className: U.a.ConfirmButton,
+					kind: M.b.InternalLink,
+					priority: M.c.Primary,
+					className: F.a.ConfirmButton,
 					onClick: a,
-					onMouseDown: W
-				}, r), o.a.createElement(B.t, {
-					className: U.a.PlainButton,
-					kind: B.b.Button,
-					priority: B.c.PlainLink,
+					onMouseDown: H
+				}, r), o.a.createElement(M.t, {
+					className: F.a.PlainButton,
+					kind: M.b.Button,
+					priority: M.c.PlainLink,
 					onClick: c,
-					onMouseDown: W
+					onMouseDown: H
 				}, i)))
-			}), V = e => {
+			}), G = e => {
 				let {
 					email: t
 				} = e;
 				return o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
-					className: U.a.ModalFormItem
+					className: F.a.ModalFormItem
 				}, o.a.createElement("div", {
-					className: U.a.ModalInputLabel
-				}, F._("Email", null, {
+					className: F.a.ModalInputLabel
+				}, W._("Email", null, {
 					hk: "N93Hq"
 				})), o.a.createElement("div", {
-					className: U.a.ModalInput
-				}, t)), o.a.createElement(B.t, {
+					className: F.a.ModalInput
+				}, t)), o.a.createElement(M.t, {
 					to: "/settings/account",
-					className: U.a.PlainButton,
-					kind: B.b.InternalLink,
-					priority: B.c.PlainLink,
-					onMouseDown: W
-				}, F._("Update email address", null, {
+					className: F.a.PlainButton,
+					kind: M.b.InternalLink,
+					priority: M.c.PlainLink,
+					onMouseDown: H
+				}, W._("Update email address", null, {
 					hk: "4bgFyL"
 				})))
-			}, G = e => {
+			}, q = e => {
 				let {
 					email: t,
 					onPrimaryButtonClick: n,
 					onSecondaryButtonClick: r
 				} = e;
-				return o.a.createElement(H, {
+				return o.a.createElement(V, {
 					isPrimaryAction: !0,
-					className: U.a.Modal,
+					className: F.a.Modal,
 					withOverlay: !0,
 					onOverlayClick: r,
-					title: F._("Verify your email to make your mark on the canvas", null, {
+					title: W._("Verify your email to make your mark on the canvas", null, {
 						hk: "Lad1Z"
 					}),
-					modalBody: o.a.createElement(V, {
+					modalBody: o.a.createElement(G, {
 						email: t
 					}),
-					primaryButtonText: F._("Send verification email", null, {
+					primaryButtonText: W._("Send verification email", null, {
 						hk: "1zdmej"
 					}),
 					onPrimaryButtonClick: n,
-					secondaryButtonText: F._("Not now", null, {
+					secondaryButtonText: W._("Not now", null, {
 						hk: "YkgPb"
 					}),
 					onSecondaryButtonClick: r
 				})
-			}, q = e => {
+			}, K = e => {
 				let {
 					onSecondaryButtonClick: t
 				} = e;
-				return o.a.createElement(H, {
+				return o.a.createElement(V, {
 					isPrimaryAction: !1,
-					className: U.a.Modal,
+					className: F.a.Modal,
 					withOverlay: !0,
 					onOverlayClick: t,
-					title: F._("Add your email to make your mark on the canvas", null, {
+					title: W._("Add your email to make your mark on the canvas", null, {
 						hk: "2PVqer"
 					}),
-					primaryButtonText: F._("Add an email", null, {
+					primaryButtonText: W._("Add an email", null, {
 						hk: "3rY2VL"
 					}),
-					secondaryButtonText: F._("Not now", null, {
+					secondaryButtonText: W._("Not now", null, {
 						hk: "YkgPb"
 					}),
 					onSecondaryButtonClick: t
 				})
 			}, {
-				fbt: K
+				fbt: z
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			var z;
+			var Q;
 			! function(e) {
 				e.None = "none", e.VerifyEmail = "verifyEmail", e.AddEmail = "addEmail"
-			}(z || (z = {}));
-			const Q = Object(c.c)({
+			}(Q || (Q = {}));
+			const Y = Object(c.c)({
 					session: e => e.user.session,
 					telemetryDefaults: e => {
 						const t = {
@@ -8893,9 +8895,10 @@
 					isHeaderDropdownOpened: e => e.header.isSubscriptionsDropdownOpen,
 					isLoggedIn: L.S,
 					queryParams: e => Object(P.q)(e),
-					email: L.p
+					email: L.p,
+					isSubscriptionsPinned: D.c
 				}),
-				Y = Object(i.b)(Q, e => ({
+				J = Object(i.b)(Y, e => ({
 					closeSearchDropdown: () => e(Object(m.l)()),
 					closeHeaderDropdown: () => e(Object(l.f)()),
 					closeTooltipModal: () => e(Object(b.j)()),
@@ -8904,13 +8907,13 @@
 					openErrorToast: () => e(Object(p.f)({
 						duration: p.a,
 						kind: N.b.Error,
-						text: K._("Something wen't wrong. Please try again later.", null, {
+						text: z._("Something wen't wrong. Please try again later.", null, {
 							hk: "4vD48K"
 						})
 					})),
 					resendEmail: () => e(Object(f.v)())
 				}));
-			class J extends o.a.Component {
+			class Z extends o.a.Component {
 				constructor(e) {
 					var t;
 					super(e), this.iframeRef = Object(s.createRef)(), this.handleEscapeKey = e => {
@@ -8951,13 +8954,13 @@
 						t && "string" == typeof t && this.props.openProfilePage(t)
 					}, this.onMessageVerifyAccount = () => {
 						this.props.email ? this.setState({
-							showModal: z.VerifyEmail
+							showModal: Q.VerifyEmail
 						}) : this.setState({
-							showModal: z.AddEmail
+							showModal: Q.AddEmail
 						})
 					}, this.onClickVerifyEmail = () => {
 						this.setState({
-							showModal: z.None
+							showModal: Q.None
 						}), this.props.resendEmail()
 					}, this.onLoad = () => {
 						this.setState({
@@ -8980,7 +8983,7 @@
 						iframeURL: n,
 						isFullscreen: !!(null === (t = this.props.queryParams) || void 0 === t ? void 0 : t.fullscreen),
 						isLoaded: !1,
-						showModal: z.None
+						showModal: Q.None
 					}
 				}
 				componentDidMount() {
@@ -9020,36 +9023,37 @@
 						showModal: s
 					} = this.state, i = this.isAnyRedditModalOpened();
 					return o.a.createElement("div", {
-						className: Object(d.a)(U.a.container, {
-							[U.a.expanded]: t
+						className: Object(d.a)(F.a.container, {
+							[F.a.expanded]: t,
+							[F.a.isSubscriptionsPinned]: this.props.isSubscriptionsPinned
 						})
 					}, n && o.a.createElement("iframe", {
 						ref: this.iframeRef,
 						onLoad: this.onLoad,
 						onError: this.onError,
-						className: U.a.iframe,
+						className: F.a.iframe,
 						allow: "web-share; clipboard-read; clipboard-write",
 						src: n
 					}), !e && o.a.createElement("img", {
-						className: U.a.garlicBreadIcon,
+						className: F.a.garlicBreadIcon,
 						src: `${r.a.assetPath}/img/garlic-bread-loader.gif`
 					}), e && (!t || i) && o.a.createElement("div", {
-						className: U.a.overlay,
+						className: F.a.overlay,
 						onClick: this.onOverlayClick
-					}), s === z.VerifyEmail && o.a.createElement(G, {
+					}), s === Q.VerifyEmail && o.a.createElement(q, {
 						email: this.props.email,
 						onPrimaryButtonClick: this.onClickVerifyEmail,
 						onSecondaryButtonClick: () => this.setState({
-							showModal: z.None
+							showModal: Q.None
 						})
-					}), s === z.AddEmail && o.a.createElement(q, {
+					}), s === Q.AddEmail && o.a.createElement(K, {
 						onSecondaryButtonClick: () => this.setState({
-							showModal: z.None
+							showModal: Q.None
 						})
 					}))
 				}
 			}
-			t.a = Object(C.c)(Y(J))
+			t.a = Object(C.c)(J(Z))
 		},
 		"./src/reddit/components/Governance/CommunityCard/async.tsx": function(e, t, n) {
 			"use strict";
@@ -26658,4 +26662,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.b8d58361dcdaa250970e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.a6d6555dc835da329a32.js.map
