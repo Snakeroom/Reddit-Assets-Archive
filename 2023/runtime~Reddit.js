@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.26ec3faf33d8ef379ec7.js
-// Retrieved at 4/17/2023, 6:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.3d24629ca338b19fee8f.js
+// Retrieved at 4/18/2023, 10:00:04 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1509,14 +1509,14 @@
 						"translations/pseudo-json": "4c1a12d66bf27f8ecac0",
 						"translations/pt_BR-json": "2b443fb15d9624489e13",
 						"translations/pt_PT-json": "d2ab414719edf43ce386",
-						"translations/sv_SE-json": "e3061ee5e36bae17f1a1",
+						"translations/sv_SE-json": "1fc62ec3af1fb7e06827",
 						"vendors~AdminPanel": "9abedef941b07fd50b75",
 						AdminPanel: "b92678a73e15f413b43a",
 						"vendors~Avatar~ChatPost~CollectiblesShowcaseUnit~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProf~7d152600": "6f19d2e4659dbfb6d084",
 						RealtimeGQLSubscriptionAsync: "c89c62e561b4816f488a",
 						"vendors~Avatar~CollectiblesShowcaseUnit~CryptoLibEthers~GovernanceTransferPointsModal~MarketplaceCla~cd1771e1": "f9a51d62319543535c8f",
 						GovernanceTransferPointsModal: "19c2d812339c73cd5f96",
-						"vendors~Avatar~CollectiblesShowcaseUnit~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~S~bb3e1fe2": "692fffbbc7714192a846",
+						"vendors~Avatar~CollectiblesShowcaseUnit~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~S~bb3e1fe2": "f2e3210652da80235260",
 						Avatar: "a0abf2224f963e7b958d",
 						MarketplaceClaimModal: "72a477d2da54d494423b",
 						SnoovatarModal: "03237d789d8df5eee4f2",
@@ -1607,7 +1607,7 @@
 						RichTextEditor: "6b5b70c55cadaedaae74",
 						"vendors~devPlatform-components-AdminPanel-Utilities-DevPlatformConfig~devPlatform-components-ContextActions": "48b8de56c5c79c000f0c",
 						"devPlatform-components-ContextActions": "c3f78370a9e92f116947",
-						"vendors~mod-nav~shreddit-player": "5487463e27f9c1648e72",
+						"vendors~mod-nav~shreddit-player": "d82c45ac25f258df715b",
 						"vendors~shreddit-player": "9845aee8d5d2fff74833",
 						ContributorRequestButton: "e2cd43543c7809ff2361",
 						SubredditSearchCarousel: "747f216a25b192290e86",
@@ -1781,4 +1781,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.26ec3faf33d8ef379ec7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.3d24629ca338b19fee8f.js.map

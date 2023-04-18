@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~mod-nav~shreddit-player.5487463e27f9c1648e72.js
-// Retrieved at 4/3/2023, 7:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~mod-nav~shreddit-player.d82c45ac25f258df715b.js
+// Retrieved at 4/18/2023, 10:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~mod-nav~shreddit-player"], {
 		"./node_modules/@lit/localize/lit-localize.js": function(n, t, r) {
@@ -1453,4 +1453,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~mod-nav~shreddit-player.5487463e27f9c1648e72.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~mod-nav~shreddit-player.d82c45ac25f258df715b.js.map
