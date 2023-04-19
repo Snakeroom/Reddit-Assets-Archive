@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.a6d6555dc835da329a32.js
-// Retrieved at 4/18/2023, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.ab0713c00c11e92b2bcf.js
+// Retrieved at 4/19/2023, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -10946,13 +10946,14 @@
 					postId: d,
 					originalSubredditId: g,
 					pageType: v,
-					columnLayout: y = "single"
+					columnLayout: y = "single",
+					dismissCallback: E
 				} = e;
-				const E = Object(c.a)(),
-					O = Object(l.e)(e => k(e, {
+				const O = Object(c.a)(),
+					C = Object(l.e)(e => k(e, {
 						subredditIds: t
 					})),
-					C = {
+					j = {
 						postId: d,
 						subredditId: g,
 						variant: o,
@@ -10960,11 +10961,11 @@
 						seenItems: t.slice(0, n),
 						pageType: v
 					},
-					j = D(o);
+					I = D(o);
 				return i.a.createElement("ul", {
 					className: `pb-[8px] ${"double"===y&&"grid gap-4 grid-cols-2"}`,
 					"data-testid": "recommended-community-list"
-				}, O.map((e, t) => {
+				}, C.map((e, t) => {
 					let {
 						id: o,
 						subscribers: c,
@@ -10972,37 +10973,39 @@
 						icon: l,
 						communityIcon: g,
 						name: v,
-						url: O,
-						displayText: I,
-						publicDescription: S
+						url: C,
+						displayText: S,
+						publicDescription: N
 					} = e;
 					if (t >= n) return null;
-					const N = s.fbt._({
+					const k = s.fbt._({
 							"*": "{Number of subscribers} members",
 							_1: "{Number of subscribers} member"
 						}, [s.fbt._param("Number of subscribers", Object(u.b)(c)), s.fbt._plural(c)], {
 							hk: "3fAm5T"
 						}),
-						k = d ? `• ${s.fbt._("{Number of subscribers online} Online",[s.fbt._param("Number of subscribers online",Object(u.b)(d))],{hk:"4s9dx5"})}` : "",
-						w = () => E(((e, t, n) => s => ({
-							..._(e, s),
-							subreddit: h.mb(s, t),
-							action: f.c.CLICK,
-							noun: r.TITLE_SUBREDDIT,
-							actionInfo: {
-								..._(e, s).actionInfo,
-								position: n
-							}
-						}))(C, o, t));
+						w = d ? `• ${s.fbt._("{Number of subscribers online} Online",[s.fbt._param("Number of subscribers online",Object(u.b)(d))],{hk:"4s9dx5"})}` : "",
+						T = () => {
+							E && E(), O(((e, t, n) => s => ({
+								..._(e, s),
+								subreddit: h.mb(s, t),
+								action: f.c.CLICK,
+								noun: r.TITLE_SUBREDDIT,
+								actionInfo: {
+									..._(e, s).actionInfo,
+									position: n
+								}
+							}))(j, o, t))
+						};
 					return i.a.createElement("li", {
 						key: o,
 						className: "px-[16px] py-[8px] flex items-start"
 					}, i.a.createElement("div", {
-						onClick: w
+						onClick: T
 					}, i.a.createElement(m.b, {
 						iconUrl: (null == l ? void 0 : l.url) || g,
 						className: "block !w-[32px] !h-[32px] rounded-full !text-[32px] !leading-none",
-						linkTo: O || `/${I}`
+						linkTo: C || `/${S}`
 					})), i.a.createElement("div", {
 						className: `${"single"===y&&"truncate"} flex flex-col w-100`
 					}, i.a.createElement("div", {
@@ -11011,15 +11014,15 @@
 						className: "ml-[8px] min-w-0"
 					}, i.a.createElement(x.default, {
 						className: "text-[14px] leading-[16px] font-semibold text-neutral-content-strong truncate",
-						to: O || `/${I}`,
-						onClick: w
-					}, I, i.a.createElement("div", {
+						to: C || `/${S}`,
+						onClick: T
+					}, S, i.a.createElement("div", {
 						className: "mt-[4px] text-[12px] leading-[14px] font-normal text-neutral-content-weak truncate"
-					}, j === P.MINIMALIST && N, (j === P.SIGNALS || j === P.DESCRIPTION) && i.a.createElement("div", {
+					}, I === P.MINIMALIST && k, (I === P.SIGNALS || I === P.DESCRIPTION) && i.a.createElement("div", {
 						className: "flex gap-x-xs justify-start items-center"
 					}, i.a.createElement(L, {
 						seed: t
-					}), i.a.createElement("div", null, `${N} ${k}`))))), i.a.createElement(p.a, {
+					}), i.a.createElement("div", null, `${k} ${w}`))))), i.a.createElement(p.a, {
 						doNotHideOtherSubscribeButtons: !0,
 						className: "ml-auto mt-[2px]",
 						postId: o,
@@ -11037,7 +11040,7 @@
 								..._(e, s).actionInfo,
 								position: n
 							}
-						}))(C, o, t) : ((e, t, n) => s => ({
+						}))(j, o, t) : ((e, t, n) => s => ({
 							..._(e, s),
 							subreddit: h.mb(s, t),
 							action: f.c.CLICK,
@@ -11046,13 +11049,13 @@
 								..._(e, s).actionInfo,
 								position: n
 							}
-						}))(C, o, t)
-					})), j === P.DESCRIPTION && i.a.createElement("div", {
+						}))(j, o, t)
+					})), I === P.DESCRIPTION && i.a.createElement("div", {
 						className: `pt-[4px] ml-[8px] pr-sm text-[12px] leading-[14px] font-normal text-neutral-content-weak ${"double"===y?"[-webkit-line-clamp:3] [text-overflow:ellipsis] [display:-webkit-box] [-webkit-box-orient:vertical] max-h-[4.143em] overflow-hidden":"truncate"}`
 					}, i.a.createElement(x.default, {
-						to: O || `/${I}`,
-						onClick: w
-					}, S))))
+						to: C || `/${S}`,
+						onClick: T
+					}, N))))
 				}))
 			};
 			var A = n("./src/lib/makeActionCreator/index.ts"),
@@ -11214,7 +11217,7 @@
 						}))(T))
 					}, [E, T]), !j || O.length <= 0) return null;
 				return i.a.createElement("div", {
-					className: "bg-[color:var(--newCommunityTheme-body)] mb-[10px]"
+					className: "bg-[color:var(--newCommunityTheme-body)] mb-[10px] border border-solid border-[color:var(--newCommunityTheme-postLine)] rounded-[4px]"
 				}, i.a.createElement("div", {
 					className: "px-[16px] py-[8px] flex items-center"
 				}, i.a.createElement("h3", {
@@ -11246,7 +11249,8 @@
 					originalSubredditId: m,
 					variant: n,
 					pageType: b,
-					columnLayout: g
+					columnLayout: g,
+					dismissCallback: p
 				}), w && i.a.createElement("div", {
 					className: "flex items-center justify-center pb-[8px]"
 				}, i.a.createElement(a.a, {
@@ -23353,7 +23357,8 @@
 					}
 					e.subredditName !== this.props.subredditName && (this.newPostPillTimer && clearTimeout(this.newPostPillTimer), this.setState({
 						isNewPostPillRenderedOnce: !1,
-						shouldShowNewPostPill: !1
+						shouldShowNewPostPill: !1,
+						isRelatedRecommendedCommunitiesVisible: !1
 					}))
 				}
 				componentWillUnmount() {
@@ -26662,4 +26667,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.a6d6555dc835da329a32.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.ab0713c00c11e92b2bcf.js.map

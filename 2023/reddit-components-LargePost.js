@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.8328aacdaa4591700d60.js
-// Retrieved at 4/17/2023, 6:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.b6c7f30b77e0b9aa2d59.js
+// Retrieved at 4/19/2023, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ModQueuePages~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -6985,13 +6985,14 @@
 					postId: c,
 					originalSubredditId: O,
 					pageType: v,
-					columnLayout: g = "single"
+					columnLayout: g = "single",
+					dismissCallback: E
 				} = e;
-				const E = Object(d.a)(),
-					C = Object(l.e)(e => N(e, {
+				const C = Object(d.a)(),
+					j = Object(l.e)(e => N(e, {
 						subredditIds: t
 					})),
-					j = {
+					y = {
 						postId: c,
 						subredditId: O,
 						variant: r,
@@ -6999,11 +7000,11 @@
 						seenItems: t.slice(0, s),
 						pageType: v
 					},
-					y = A(r);
+					S = A(r);
 				return i.a.createElement("ul", {
 					className: `pb-[8px] ${"double"===g&&"grid gap-4 grid-cols-2"}`,
 					"data-testid": "recommended-community-list"
-				}, C.map((e, t) => {
+				}, j.map((e, t) => {
 					let {
 						id: r,
 						subscribers: d,
@@ -7011,37 +7012,39 @@
 						icon: l,
 						communityIcon: O,
 						name: v,
-						url: C,
-						displayText: S,
-						publicDescription: k
+						url: j,
+						displayText: k,
+						publicDescription: I
 					} = e;
 					if (t >= s) return null;
-					const I = o.fbt._({
+					const N = o.fbt._({
 							"*": "{Number of subscribers} members",
 							_1: "{Number of subscribers} member"
 						}, [o.fbt._param("Number of subscribers", Object(m.b)(d)), o.fbt._plural(d)], {
 							hk: "3fAm5T"
 						}),
-						N = c ? `• ${o.fbt._("{Number of subscribers online} Online",[o.fbt._param("Number of subscribers online",Object(m.b)(c))],{hk:"4s9dx5"})}` : "",
-						T = () => E(((e, t, s) => o => ({
-							...x(e, o),
-							subreddit: h.mb(o, t),
-							action: f.c.CLICK,
-							noun: n.TITLE_SUBREDDIT,
-							actionInfo: {
-								...x(e, o).actionInfo,
-								position: s
-							}
-						}))(j, r, t));
+						T = c ? `• ${o.fbt._("{Number of subscribers online} Online",[o.fbt._param("Number of subscribers online",Object(m.b)(c))],{hk:"4s9dx5"})}` : "",
+						P = () => {
+							E && E(), C(((e, t, s) => o => ({
+								...x(e, o),
+								subreddit: h.mb(o, t),
+								action: f.c.CLICK,
+								noun: n.TITLE_SUBREDDIT,
+								actionInfo: {
+									...x(e, o).actionInfo,
+									position: s
+								}
+							}))(y, r, t))
+						};
 					return i.a.createElement("li", {
 						key: r,
 						className: "px-[16px] py-[8px] flex items-start"
 					}, i.a.createElement("div", {
-						onClick: T
+						onClick: P
 					}, i.a.createElement(u.b, {
 						iconUrl: (null == l ? void 0 : l.url) || O,
 						className: "block !w-[32px] !h-[32px] rounded-full !text-[32px] !leading-none",
-						linkTo: C || `/${S}`
+						linkTo: j || `/${k}`
 					})), i.a.createElement("div", {
 						className: `${"single"===g&&"truncate"} flex flex-col w-100`
 					}, i.a.createElement("div", {
@@ -7050,15 +7053,15 @@
 						className: "ml-[8px] min-w-0"
 					}, i.a.createElement(_.default, {
 						className: "text-[14px] leading-[16px] font-semibold text-neutral-content-strong truncate",
-						to: C || `/${S}`,
-						onClick: T
-					}, S, i.a.createElement("div", {
+						to: j || `/${k}`,
+						onClick: P
+					}, k, i.a.createElement("div", {
 						className: "mt-[4px] text-[12px] leading-[14px] font-normal text-neutral-content-weak truncate"
-					}, y === w.MINIMALIST && I, (y === w.SIGNALS || y === w.DESCRIPTION) && i.a.createElement("div", {
+					}, S === w.MINIMALIST && N, (S === w.SIGNALS || S === w.DESCRIPTION) && i.a.createElement("div", {
 						className: "flex gap-x-xs justify-start items-center"
 					}, i.a.createElement(R, {
 						seed: t
-					}), i.a.createElement("div", null, `${I} ${N}`))))), i.a.createElement(p.a, {
+					}), i.a.createElement("div", null, `${N} ${T}`))))), i.a.createElement(p.a, {
 						doNotHideOtherSubscribeButtons: !0,
 						className: "ml-auto mt-[2px]",
 						postId: r,
@@ -7076,7 +7079,7 @@
 								...x(e, o).actionInfo,
 								position: s
 							}
-						}))(j, r, t) : ((e, t, s) => o => ({
+						}))(y, r, t) : ((e, t, s) => o => ({
 							...x(e, o),
 							subreddit: h.mb(o, t),
 							action: f.c.CLICK,
@@ -7085,13 +7088,13 @@
 								...x(e, o).actionInfo,
 								position: s
 							}
-						}))(j, r, t)
-					})), y === w.DESCRIPTION && i.a.createElement("div", {
+						}))(y, r, t)
+					})), S === w.DESCRIPTION && i.a.createElement("div", {
 						className: `pt-[4px] ml-[8px] pr-sm text-[12px] leading-[14px] font-normal text-neutral-content-weak ${"double"===g?"[-webkit-line-clamp:3] [text-overflow:ellipsis] [display:-webkit-box] [-webkit-box-orient:vertical] max-h-[4.143em] overflow-hidden":"truncate"}`
 					}, i.a.createElement(_.default, {
-						to: C || `/${S}`,
-						onClick: T
-					}, k))))
+						to: j || `/${k}`,
+						onClick: P
+					}, I))))
 				}))
 			};
 			var L = s("./src/lib/makeActionCreator/index.ts"),
@@ -7253,7 +7256,7 @@
 						}))(P))
 					}, [E, P]), !y || C.length <= 0) return null;
 				return i.a.createElement("div", {
-					className: "bg-[color:var(--newCommunityTheme-body)] mb-[10px]"
+					className: "bg-[color:var(--newCommunityTheme-body)] mb-[10px] border border-solid border-[color:var(--newCommunityTheme-postLine)] rounded-[4px]"
 				}, i.a.createElement("div", {
 					className: "px-[16px] py-[8px] flex items-center"
 				}, i.a.createElement("h3", {
@@ -7285,7 +7288,8 @@
 					originalSubredditId: u,
 					variant: s,
 					pageType: b,
-					columnLayout: O
+					columnLayout: O,
+					dismissCallback: p
 				}), T && i.a.createElement("div", {
 					className: "flex items-center justify-center pb-[8px]"
 				}, i.a.createElement(a.a, {
@@ -9763,4 +9767,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.8328aacdaa4591700d60.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.b6c7f30b77e0b9aa2d59.js.map
