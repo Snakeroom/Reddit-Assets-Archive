@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.eb6e49c852dac7adda51.js
-// Retrieved at 4/12/2023, 1:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.ba621a2d6c493042cd48.js
+// Retrieved at 4/19/2023, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -9355,8 +9355,8 @@
 				}, e.children), "Container", f.a),
 				E = o.a.span("TitleWithCounter", f.a),
 				_ = Object(m.a)({
-					unreadCount: b.e,
-					hasNewMessages: b.b
+					unreadCount: e => Object(b.f)(e) + Object(b.b)(e).chatV2UnreadMessages,
+					hasNewMessages: b.c
 				}),
 				C = Object(c.b)(_, e => ({
 					close: () => e(Object(i.sizeChanged)(u.a.HIDDEN)),
@@ -10570,7 +10570,7 @@
 		"./src/chat/components/Root/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return W
+				return z
 			}));
 			var a = n("./src/lib/classNames/index.ts"),
 				s = n("./node_modules/react/index.js"),
@@ -10591,7 +10591,7 @@
 			const v = () => {
 				const e = Object(r.e)(b.a),
 					t = Object(r.e)(p.b),
-					n = Object(r.e)(f.e) > 0,
+					n = Object(r.e)(f.f) > 0,
 					s = Object(r.e)(p.e) > 0,
 					o = e === u.a.EMBED,
 					g = Object(r.d)();
@@ -10664,67 +10664,68 @@
 						}
 					}, c.a.createElement(w.d, null))), c.a.createElement(S.a, null))
 				},
-				D = n("./src/chat/components/MediaPreview/index.tsx"),
-				R = n("./node_modules/react-router-redux/es/index.js"),
-				U = n("./src/chat/actions/message/unreadCount.ts"),
-				P = n("./src/chat/models/Channel/utils.ts");
+				D = n("./node_modules/react-router-redux/es/index.js"),
+				R = n("./src/chat/actions/message/unreadCount.ts"),
+				U = n("./src/chat/actions/tracking.ts"),
+				P = n("./src/chat/components/MediaPreview/index.tsx"),
+				B = n("./src/chat/models/Channel/utils.ts");
 			! function(e) {
 				e.CLOSE = "matrix-chat.close", e.MINIMIZE = "matrix-chat.minimize", e.MAXIMIZE = "matrix-chat.maximize", e.LOADED = "matrix-chat.loaded", e.NOTIFICATIONS = "matrix-chat.notifications", e.ROOMS = "matrix-chat.rooms_count", e.OPEN_SENDBIRD_ROOM = "matrix-chat.open_sb_room", e.OPEN_SENDBIRD_DM = "matrix-chat.open_sb_dm", e.OPEN_IMAGE = "matrix-chat.open_img_modal"
 			}(L || (L = {}));
-			const B = e => {
+			const H = e => {
 				let {
 					className: t
 				} = e;
-				const [n, s] = c.a.useState(!1), [o, i] = c.a.useState(null), d = Object(r.d)(), u = Object(r.e)(p.c), h = Object(r.e)(p.d), m = `${E.a.matrixChatUrl}?disableWindowControls=1`, b = c.a.useRef(null);
+				const [n, s] = c.a.useState(!1), [o, i] = c.a.useState(null), d = Object(r.d)(), h = Object(r.e)(p.c), m = Object(r.e)(p.d), b = Object(r.e)(p.a), f = `${E.a.matrixChatUrl}${b?"?disableWindowControls=1":""}`, g = c.a.useRef(null);
 				return c.a.useEffect(() => {
 					var e, t, a, s;
-					n && (u && (null === (t = null === (e = b.current) || void 0 === e ? void 0 : e.contentWindow) || void 0 === t || t.postMessage(`openRoom:${u}`, "*"), d(Object(l.i)())), h && (null === (s = null === (a = b.current) || void 0 === a ? void 0 : a.contentWindow) || void 0 === s || s.postMessage(`openDM:${h}`, "*"), d(Object(l.i)())))
-				}, [n, u, h, d]), c.a.useLayoutEffect(() => {
+					n && (h && (null === (t = null === (e = g.current) || void 0 === e ? void 0 : e.contentWindow) || void 0 === t || t.postMessage(`openRoom:${h}`, "*"), d(Object(l.i)())), m && (null === (s = null === (a = g.current) || void 0 === a ? void 0 : a.contentWindow) || void 0 === s || s.postMessage(`openDM:${m}`, "*"), d(Object(l.i)())))
+				}, [n, h, m, d]), c.a.useLayoutEffect(() => {
 					const e = e => {
-						var t, n, a, c, r, o, u, h, m, b;
-						if (e.data === L.LOADED && s(!0), 0 === (null === (n = null === (t = e.data) || void 0 === t ? void 0 : t.indexOf) || void 0 === n ? void 0 : n.call(t, L.NOTIFICATIONS))) {
+						var t, n, a, c, r, o, h, m, b, p;
+						if (e.data === L.LOADED && s(!0), e.data === L.CLOSE && (d(Object(I.sizeChanged)(u.a.HIDDEN)), d(Object(U.j)())), e.data === L.MINIMIZE && (d(Object(I.sizeChanged)(u.a.MINIMIZED)), d(Object(U.x)())), e.data === L.MAXIMIZE && d(Object(I.sizeChanged)(u.a.HIDDEN)), 0 === (null === (n = null === (t = e.data) || void 0 === t ? void 0 : t.indexOf) || void 0 === n ? void 0 : n.call(t, L.NOTIFICATIONS))) {
 							const [, t] = e.data.split(":");
-							d(Object(l.k)(parseInt(t, 10))), d(Object(U.c)())
+							d(Object(l.k)(parseInt(t, 10))), d(Object(R.c)())
 						}
 						if (0 === (null === (c = null === (a = e.data) || void 0 === a ? void 0 : a.indexOf) || void 0 === c ? void 0 : c.call(a, L.ROOMS))) {
 							const [, t] = e.data.split(":");
 							d(Object(l.l)(parseInt(t, 10)))
 						}
 						if (0 === (null === (o = null === (r = e.data) || void 0 === r ? void 0 : r.indexOf) || void 0 === o ? void 0 : o.call(r, L.OPEN_SENDBIRD_ROOM))) {
-							const [, t] = e.data.split(":"), n = Object(k.getRedirectURL)(Object(k.channelUrl)(Object(P.f)(t)));
-							d(Object(R.b)(n)), d(Object(l.j)(!1))
+							const [, t] = e.data.split(":"), n = Object(k.getRedirectURL)(Object(k.channelUrl)(Object(B.f)(t)));
+							d(Object(D.b)(n)), d(Object(l.j)(!1))
 						}
-						if (0 === (null === (h = null === (u = e.data) || void 0 === u ? void 0 : u.indexOf) || void 0 === h ? void 0 : h.call(u, L.OPEN_SENDBIRD_DM))) {
+						if (0 === (null === (m = null === (h = e.data) || void 0 === h ? void 0 : h.indexOf) || void 0 === m ? void 0 : m.call(h, L.OPEN_SENDBIRD_DM))) {
 							const [, t] = e.data.split(":"), n = Object(k.getRedirectURL)(Object(k.channelUserIdUrl)(t));
-							d(Object(R.b)(n)), d(Object(l.j)(!1))
+							d(Object(D.b)(n)), d(Object(l.j)(!1))
 						}
-						if (null === (b = null === (m = e.data) || void 0 === m ? void 0 : m.startsWith) || void 0 === b ? void 0 : b.call(m, L.OPEN_IMAGE)) {
+						if (null === (p = null === (b = e.data) || void 0 === b ? void 0 : b.startsWith) || void 0 === p ? void 0 : p.call(b, L.OPEN_IMAGE)) {
 							const t = e.data.substring(L.OPEN_IMAGE.length + 1, e.data.length);
 							i(t)
 						}
 					};
 					return window.addEventListener("message", e), () => window.removeEventListener("message", e)
 				}, []), c.a.createElement(c.a.Fragment, null, c.a.createElement("iframe", {
-					ref: b,
+					ref: g,
 					className: Object(a.a)(t),
-					src: m,
+					src: f,
 					"data-testid": "reddit-chat-window"
-				}), o && c.a.createElement(D.a, {
+				}), o && c.a.createElement(P.a, {
 					onClose: () => i(null),
 					url: o
 				}))
 			};
-			var H = n("./src/chat/components/ThemeProvider/index.tsx"),
-				F = n("./src/chat/selectors/experiments.ts"),
-				G = n("./src/chat/components/Root/index.m.less"),
-				V = n.n(G);
+			var F = n("./src/chat/components/ThemeProvider/index.tsx"),
+				G = n("./src/chat/selectors/experiments.ts"),
+				V = n("./src/chat/components/Root/index.m.less"),
+				W = n.n(V);
 
-			function W(e) {
+			function z(e) {
 				let {
 					router: t,
 					routes: n
 				} = e;
-				const [i, l] = Object(s.useState)(!1), d = Object(r.e)(F.q), h = Object(r.e)(p.a), m = Object(r.e)(p.b), f = Object(r.e)(b.i), g = Object(r.e)(b.a) === u.a.MINIMIZED;
+				const [i, l] = Object(s.useState)(!1), d = Object(r.e)(G.q), h = Object(r.e)(p.a), m = Object(r.e)(p.b), f = Object(r.e)(b.i), g = Object(r.e)(b.a) === u.a.MINIMIZED;
 				if (Object(s.useEffect)(() => {
 						l(!0)
 					}, []), !i) return null;
@@ -10734,17 +10735,17 @@
 							location: e.location
 						}, n))
 					}));
-				return d ? c.a.createElement(H.a, {
+				return d ? c.a.createElement(F.a, {
 					className: j.a
 				}, c.a.createElement("div", {
-					className: V.a.chatWindowContent
+					className: W.a.chatWindowContent
 				}, O && c.a.createElement(v, null), !m && c.a.createElement("div", {
-					className: V.a.chatApp
-				}, E), !f && c.a.createElement(B, {
-					className: Object(a.a)(V.a.chatApp, {
-						[V.a.hidden]: !m
+					className: W.a.chatApp
+				}, E), !f && c.a.createElement(H, {
+					className: Object(a.a)(W.a.chatApp, {
+						[W.a.hidden]: !m
 					})
-				}))) : c.a.createElement(H.a, {
+				}))) : c.a.createElement(F.a, {
 					className: j.a
 				}, E)
 			}
@@ -11613,8 +11614,8 @@
 					const e = Object(c.d)(),
 						t = Object(c.e)(v.d),
 						n = Object(c.e)(v.K),
-						a = Object(c.e)(E.e),
-						r = Object(c.e)(E.b),
+						a = Object(c.e)(E.f),
+						r = Object(c.e)(E.c),
 						o = Object(c.e)(j.k),
 						d = Object(c.e)(j.o),
 						u = Object(c.e)(j.c);
@@ -12285,8 +12286,8 @@
 			var v = () => {
 					const e = Object(c.d)(),
 						t = Object(c.e)(h.a),
-						n = Object(c.e)(m.c),
-						b = Object(c.e)(m.d),
+						n = Object(c.e)(m.d),
+						b = Object(c.e)(m.e),
 						v = Object(a.useCallback)(t => {
 							e(Object(o.d)({
 								filter: t
@@ -20079,4 +20080,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.eb6e49c852dac7adda51.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.ba621a2d6c493042cd48.js.map
