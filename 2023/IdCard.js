@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.ed959ca258ebec49c3ce.js
-// Retrieved at 4/17/2023, 6:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.546c5c8024a583fce3a7.js
+// Retrieved at 4/19/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1896,24 +1896,24 @@
 					})
 				},
 				g = {
-					[s.W.Low]: r.fbt._("Low", null, {
+					[s.V.Low]: r.fbt._("Low", null, {
 						hk: "4k3iTe"
 					}),
-					[s.W.High]: r.fbt._("High (default)", null, {
+					[s.V.High]: r.fbt._("High (default)", null, {
 						hk: "2GOHsH"
 					}),
-					[s.W.All]: r.fbt._("All", null, {
+					[s.V.All]: r.fbt._("All", null, {
 						hk: "gl6gc"
 					})
 				},
 				x = {
-					[s.W.Low]: r.fbt._("Low (default)", null, {
+					[s.V.Low]: r.fbt._("Low (default)", null, {
 						hk: "2tqJd7"
 					}),
-					[s.W.High]: r.fbt._("High", null, {
+					[s.V.High]: r.fbt._("High", null, {
 						hk: "ABfkc"
 					}),
-					[s.W.All]: r.fbt._("All", null, {
+					[s.V.All]: r.fbt._("All", null, {
 						hk: "3bPDOM"
 					})
 				},
@@ -2351,7 +2351,7 @@
 			})), n.d(t, "a", (function() {
 				return z
 			})), n.d(t, "c", (function() {
-				return V
+				return W
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/lodash/pick.js"),
@@ -2556,7 +2556,7 @@
 				U = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(j.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(E.a)(Object(j.a)(e).post, v.a.black, v.a.white) : e.textColor === k.e.Dark ? v.a.black : v.a.white,
 				H = p.a.wrapped(L, "TextFlair", S.a),
 				q = p.a.wrapped(A, "RichTextFlair", S.a),
-				W = e => {
+				V = e => {
 					switch (e.type) {
 						case "spoiler":
 							return "#A4A7A8";
@@ -2567,7 +2567,7 @@
 					}
 				},
 				z = p.a.wrapped(e => {
-					const t = W(e),
+					const t = V(e),
 						n = d.a.createElement("span", {
 							className: e.className,
 							style: {
@@ -2581,7 +2581,7 @@
 					})
 				}, "MetaFlair", S.a);
 
-			function V(e) {
+			function W(e) {
 				const {
 					className: t,
 					disabled: n = !1,
@@ -3370,9 +3370,9 @@
 					}, i.a.createElement(A.a, null)),
 					getComponent: () => Object(E.a)(() => n.e("SubredditInlineEditing").then(n.bind(null, "./src/reddit/components/InlineSubredditEditing/InlineCommunityTopics/index.tsx"))).then(e => e.default)
 				}),
-				W = n("./src/reddit/components/OverflowMenu/index.tsx"),
+				V = n("./src/reddit/components/OverflowMenu/index.tsx"),
 				z = n("./src/lib/lessComponent.tsx"),
-				V = n("./src/reddit/actions/authorFlair.ts"),
+				W = n("./src/reddit/actions/authorFlair.ts"),
 				G = n("./src/reddit/actions/economics/powerups/flairs/index.ts"),
 				K = n("./src/reddit/actions/gold/powerups.ts"),
 				Q = n("./src/reddit/helpers/trackers/userFlair.ts"),
@@ -3439,7 +3439,7 @@
 						onClick: () => {
 							if (d) c(Object(K.a)());
 							else {
-								(e => c(Object(V.b)({
+								(e => c(Object(W.b)({
 									username: e,
 									subredditId: n
 								})))(t ? Object(Y.e)(t) : null)
@@ -3483,9 +3483,9 @@
 				Ue = n("./src/reddit/selectors/experiments/newCommunityProgressV3.ts"),
 				He = n("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
 				qe = n("./src/reddit/selectors/moderatorPermissions.ts"),
-				We = n("./src/reddit/selectors/structuredStyles.ts"),
+				Ve = n("./src/reddit/selectors/structuredStyles.ts"),
 				ze = n("./src/reddit/selectors/subreddit.ts"),
-				Ve = n("./src/reddit/selectors/subscriptions.ts"),
+				We = n("./src/reddit/selectors/subscriptions.ts"),
 				Ge = n("./src/reddit/selectors/tooltip.ts"),
 				Ke = n("./src/reddit/selectors/widgets.ts"),
 				Qe = n("./src/reddit/components/IdCard/index.m.less"),
@@ -3905,7 +3905,7 @@
 				Ht = n.n(Ut);
 			const {
 				fbt: qt
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Wt = e => {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Vt = e => {
 				let {
 					cakeDayCreated: t,
 					cakeDayTooltipId: n,
@@ -3940,12 +3940,12 @@
 				})))
 			};
 			var zt = n("./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx"),
-				Vt = n("./src/devPlatform/constants.ts");
+				Wt = n("./src/devPlatform/constants.ts");
 			const Gt = "IDCARD_OVERFLOW_DROPDOWN_ID",
 				Kt = Object(o.b)(() => Object(m.c)({
 					activeTooltipId: Ge.a,
 					postCategories: (e, t) => Object(Me.l)(e, t.postId),
-					favoriteSubredditsIds: Ve.a,
+					favoriteSubredditsIds: We.a,
 					idCardWidget: (e, t) => Object(Ke.d)(e, {
 						subredditName: t.listingName
 					}),
@@ -3991,7 +3991,7 @@
 							subredditName: n
 						})
 					},
-					subredditIcon: (e, t) => Object(We.p)(e, {
+					subredditIcon: (e, t) => Object(Ve.p)(e, {
 						subredditName: t.listingName
 					}),
 					adminCommunityTopicsEnabled: Oe.d.adminCommunityTopics,
@@ -4173,7 +4173,7 @@
 						snooBackground: U,
 						subscribersCount: H,
 						subscribersText: z,
-						titleText: V,
+						titleText: W,
 						url: G
 					} = Object(ut.d)({
 						listingName: P,
@@ -4188,7 +4188,7 @@
 						description: A,
 						shouldTruncateDescription: !1,
 						subreddit: y
-					}), ie = d && C, oe = l ? ie && k && k > 0 : ie, ae = S ? i.a.createElement(i.a.Fragment, null, !F && !te && J && i.a.createElement(i.a.Fragment, null, i.a.createElement(Wt, {
+					}), ie = d && C, oe = l ? ie && k && k > 0 : ie, ae = S ? i.a.createElement(i.a.Fragment, null, !F && !te && J && i.a.createElement(i.a.Fragment, null, i.a.createElement(Vt, {
 						className: Je.a.cakeDayBlock,
 						cakeDayCreated: J,
 						cakeDayTooltipId: $,
@@ -4221,7 +4221,7 @@
 						subredditName: P
 					}), !F && !te && J && i.a.createElement(i.a.Fragment, null, i.a.createElement("hr", {
 						className: Je.a.HorizontalLine
-					}), i.a.createElement(Wt, {
+					}), i.a.createElement(Vt, {
 						cakeDayCreated: J,
 						cakeDayTooltipId: $,
 						toggleTooltip: T
@@ -4243,7 +4243,7 @@
 							className: Je.a.ModSettings
 						}), r.fbt._("Mod tools", null, {
 							hk: "3tJVME"
-						})), u && y && i.a.createElement(W.b, {
+						})), u && y && i.a.createElement(V.b, {
 							className: Je.a.overflowButton,
 							dropdownId: Gt,
 							targetPosition: ["right", "bottom"],
@@ -4263,7 +4263,7 @@
 							}),
 							onClick: this.props.onToggleFavoriteClick
 						}), i.a.createElement(zt.a, {
-							contextType: Vt.a.SUBREDDIT,
+							contextType: Wt.a.SUBREDDIT,
 							contextData: y
 						}), o && b && i.a.createElement(ye.b, {
 							className: Je.a.muteDropdownRow,
@@ -4294,7 +4294,7 @@
 					}, K && i.a.createElement(Xe, {
 						bannerBackgroundImage: D
 					}), F || x || s ? F ? ft({
-						titleText: V,
+						titleText: W,
 						snooBackground: U
 					}) : i.a.createElement(Bt, {
 						isTargetBlank: x,
@@ -4302,7 +4302,7 @@
 						subredditIcon: j,
 						canEditIcon: re,
 						subreddit: y,
-						titleText: V,
+						titleText: W,
 						onOpenFilePicker: this.openIconFilePicker,
 						isInNCPV3Experiment: l,
 						shouldBlurSubredditIcon: f
@@ -6080,4 +6080,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.ed959ca258ebec49c3ce.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.546c5c8024a583fce3a7.js.map

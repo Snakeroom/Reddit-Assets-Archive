@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.ab0713c00c11e92b2bcf.js
-// Retrieved at 4/19/2023, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.4781adae7fe17271dbb7.js
+// Retrieved at 4/19/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -5477,24 +5477,24 @@
 					})
 				},
 				g = {
-					[s.W.Low]: r.fbt._("Low", null, {
+					[s.V.Low]: r.fbt._("Low", null, {
 						hk: "4k3iTe"
 					}),
-					[s.W.High]: r.fbt._("High (default)", null, {
+					[s.V.High]: r.fbt._("High (default)", null, {
 						hk: "2GOHsH"
 					}),
-					[s.W.All]: r.fbt._("All", null, {
+					[s.V.All]: r.fbt._("All", null, {
 						hk: "gl6gc"
 					})
 				},
 				_ = {
-					[s.W.Low]: r.fbt._("Low (default)", null, {
+					[s.V.Low]: r.fbt._("Low (default)", null, {
 						hk: "2tqJd7"
 					}),
-					[s.W.High]: r.fbt._("High", null, {
+					[s.V.High]: r.fbt._("High", null, {
 						hk: "ABfkc"
 					}),
-					[s.W.All]: r.fbt._("All", null, {
+					[s.V.All]: r.fbt._("All", null, {
 						hk: "3bPDOM"
 					})
 				},
@@ -7564,7 +7564,7 @@
 						})),
 						r = Object(o.e)(e => n ? Object(N.h)(e, n.tournamentId) : []);
 					if (!n) return null;
-					if (n.status === k.P.Closed) return s.a.createElement(R, null);
+					if (n.status === k.O.Closed) return s.a.createElement(R, null);
 					const i = r.filter(e => e.predictionStatus === S.b.Open && e.endsAt > Date.now()),
 						a = i.length > 0,
 						c = i.length && i.some(e => !e.userSelection);
@@ -26667,4 +26667,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.ab0713c00c11e92b2bcf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.4781adae7fe17271dbb7.js.map

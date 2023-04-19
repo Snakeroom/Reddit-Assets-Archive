@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.d4e0e546101fbb22b1dd.js
-// Retrieved at 3/8/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.04f9245f1377694b8aa0.js
+// Retrieved at 4/19/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium~reddit-components-Econ-Prediction-PremiumModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -636,7 +636,7 @@
 						const b = c();
 						let y, v, k = "";
 						try {
-							k = await e(j(n, a, o, i, g.K.Stripe))
+							k = await e(j(n, a, o, i, g.J.Stripe))
 						} catch (w) {
 							return u.c.captureException(w), void(w.message && e(Object(p.stripeApiError)(w.message)))
 						}
@@ -692,7 +692,7 @@
 						var f;
 						let v = "";
 						try {
-							v = await e(j(t, r, n, a, g.K.Paypal))
+							v = await e(j(t, r, n, a, g.J.Paypal))
 						} catch (E) {
 							return u.c.captureException(E), E.message && e(Object(p.paypalApiError)(E.message)), null
 						}
@@ -2616,4 +2616,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.d4e0e546101fbb22b1dd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.04f9245f1377694b8aa0.js.map

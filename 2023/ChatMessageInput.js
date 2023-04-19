@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.80f6a23412dd82b844c3.js
-// Retrieved at 3/8/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.b1ddfb34bd8575fbb037.js
+// Retrieved at 4/19/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, s) {},
@@ -1414,7 +1414,7 @@
 							};
 							this.cleanInputForm(), s(n, w.i.RICH_TEXT, e, t), setTimeout(() => this.focusOnForm(), 50), this.isAllowedToCreateLiveChatAssociation() && this.associationTimerId && !this.state.messageSent && (this.props.createChatTabAssociation({
 								postId: this.props.postId,
-								engagementType: V.r.Participated
+								engagementType: V.q.Participated
 							}), clearTimeout(this.associationTimerId), this.setState({
 								messageSent: !0,
 								hasCreatedLiveChatAssociation: !0
@@ -1443,7 +1443,7 @@
 					this.isAllowedToCreateLiveChatAssociation() && (this.associationTimerId = setTimeout(() => {
 						this.props.createChatTabAssociation({
 							postId: this.props.postId,
-							engagementType: V.r.Previewed
+							engagementType: V.q.Previewed
 						}), this.setState({
 							hasCreatedLiveChatAssociation: !0
 						}), !this.isEmbeddedLiveChat() && this.props.fetchLiveChatPosts()
@@ -1914,4 +1914,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.80f6a23412dd82b844c3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.b1ddfb34bd8575fbb037.js.map

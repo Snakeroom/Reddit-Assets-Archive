@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.ba621a2d6c493042cd48.js
-// Retrieved at 4/19/2023, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.53bb19565f76621b6020.js
+// Retrieved at 4/19/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -402,14 +402,14 @@
 							const t = e[0];
 							if (await Object(N.a)(l(), {
 									interlocutorId: t,
-									chatSystem: i.f.ChatM2
+									chatSystem: i.e.ChatM2
 								})) return a(Object(p.h)(t)), a(Ke()), void a(nt())
 						}
 						if (2 === s.length && h) {
 							const t = e[0];
 							if (!(await Object(N.a)(l(), {
 									interlocutorId: t,
-									chatSystem: i.f.ChatS1
+									chatSystem: i.e.ChatS1
 								}))) return a(Object(p.h)(t)), a(Ke()), void a(nt())
 						}
 						const r = await Object(w.b)(o(), f, s, t);
@@ -7515,7 +7515,7 @@
 				}),
 				Dc = Object(i.b)(Ac, e => ({
 					fetchLiveChats: () => e(Object(a.fetchLiveChats)()),
-					fetchUXExperiences: () => e(Object(c.c)([Mc.cb.LiveChatVideoEdu])),
+					fetchUXExperiences: () => e(Object(c.c)([Mc.bb.LiveChatVideoEdu])),
 					sendChatTabViewEvent: () => e(Object(s.lb)())
 				}));
 			class Rc extends o.a.Component {
@@ -11318,13 +11318,13 @@
 								hk: "2UMwVj"
 							}) + " · " : "";
 						switch (e.engagementType) {
-							case ie.r.Previewed:
+							case ie.q.Previewed:
 								return s.a.createElement(s.a.Fragment, null, s.a.createElement(ce, {
 									className: de.a.Clock
 								}), i.fbt._("Visited · {active user count}{subreddit path}", [i.fbt._param("active user count", r), i.fbt._param("subreddit path", c)], {
 									hk: "3E63i7"
 								}));
-							case ie.r.Participated:
+							case ie.q.Participated:
 							default:
 								return i.fbt._("{active user count}{subreddit path}", [i.fbt._param("active user count", r), i.fbt._param("subreddit path", c)], {
 									hk: "inwJF"
@@ -11463,14 +11463,14 @@
 				Be = n.n(Pe);
 			const He = () => {
 				var e;
-				const [t, n] = Object(a.useState)(!1), [r, o] = Object(a.useState)(!1), l = Object(a.useRef)(null), d = Object(a.useRef)(!1), h = Object(a.useRef)([0, 25, 50, 75, 100]), m = null === (e = Object(c.e)((e => t => t.uxExperiences.experiences[e] || null)(ie.cb.LiveChatVideoEdu))) || void 0 === e ? void 0 : e.value, b = Object(c.d)(), p = Object(a.useContext)(Ae.a), f = Object(a.useCallback)(() => {
+				const [t, n] = Object(a.useState)(!1), [r, o] = Object(a.useState)(!1), l = Object(a.useRef)(null), d = Object(a.useRef)(!1), h = Object(a.useRef)([0, 25, 50, 75, 100]), m = null === (e = Object(c.e)((e => t => t.uxExperiences.experiences[e] || null)(ie.bb.LiveChatVideoEdu))) || void 0 === e ? void 0 : e.value, b = Object(c.d)(), p = Object(a.useContext)(Ae.a), f = Object(a.useCallback)(() => {
 					var e;
-					const t = ie.cb.LiveChatVideoEdu;
-					b(Object(Le.e)(ie.cb.LiveChatVideoEdu)), b(Object(Le.d)({
+					const t = ie.bb.LiveChatVideoEdu;
+					b(Object(Le.e)(ie.bb.LiveChatVideoEdu)), b(Object(Le.d)({
 						experience: t,
 						value: !1
 					})), null === (e = null == p ? void 0 : p.updateUXExperienceValue) || void 0 === e || e.call(p, {
-						experience: ie.cb.LiveChatVideoEdu,
+						experience: ie.bb.LiveChatVideoEdu,
 						value: !1
 					})
 				}, [b]);
@@ -13790,7 +13790,7 @@
 				});
 				if (!Object(s.c)(n)) return null;
 				const r = n.body.data.directChatRoom;
-				return (null == r ? void 0 : r.replicationInfo) && r.replicationInfo.status !== o.T.Main ? null : r ? r.id : null
+				return (null == r ? void 0 : r.replicationInfo) && r.replicationInfo.status !== o.S.Main ? null : r ? r.id : null
 			}
 		},
 		"./src/chat/endpoints/messages/index.tsx": function(e, t, n) {
@@ -15884,7 +15884,7 @@
 				},
 				M = e => {
 					var t;
-					return (null === (t = e.post.media) || void 0 === t ? void 0 : t.typeHint) === N.w.Rpan
+					return (null === (t = e.post.media) || void 0 === t ? void 0 : t.typeHint) === N.v.Rpan
 				},
 				L = (e, t, n) => e[t] ? {
 					...e,
@@ -19640,9 +19640,9 @@
 				c = n("./src/chat/selectors/liveChat/index.ts"),
 				r = n("./src/redditGQL/types.ts");
 			const o = {
-					[r.r.Previewed]: "recently_viewed",
-					[r.r.Participated]: "engaged",
-					[r.r.Unknown]: "unknown"
+					[r.q.Previewed]: "recently_viewed",
+					[r.q.Participated]: "engaged",
+					[r.q.Unknown]: "unknown"
 				},
 				i = e => {
 					return {
@@ -20080,4 +20080,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.ba621a2d6c493042cd48.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.53bb19565f76621b6020.js.map

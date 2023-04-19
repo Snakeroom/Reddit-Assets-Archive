@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.5727031804b85efecb26.js
-// Retrieved at 4/17/2023, 6:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.0961daf61e3bd6f52822.js
+// Retrieved at 4/19/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./node_modules/@stripe/stripe-js/dist/stripe.esm.js": function(e, t, a) {
@@ -196,7 +196,7 @@
 						const b = i();
 						let f, y, v = "";
 						try {
-							v = await e(x(r, n, s, o, C.K.Stripe))
+							v = await e(x(r, n, s, o, C.J.Stripe))
 						} catch (O) {
 							return m.c.captureException(O), void(O.message && e(Object(p.stripeApiError)(O.message)))
 						}
@@ -252,7 +252,7 @@
 						var h;
 						let y = "";
 						try {
-							y = await e(x(t, a, r, n, C.K.Paypal))
+							y = await e(x(t, a, r, n, C.J.Paypal))
 						} catch (j) {
 							return m.c.captureException(j), j.message && e(Object(p.paypalApiError)(j.message)), null
 						}
@@ -2066,4 +2066,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.5727031804b85efecb26.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.0961daf61e3bd6f52822.js.map

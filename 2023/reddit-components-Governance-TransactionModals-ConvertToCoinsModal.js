@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.b89f470dc58702e08d47.js
-// Retrieved at 4/17/2023, 6:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.b040edd9dc4fad155d9a.js
+// Retrieved at 4/19/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ConvertToCoinsModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, n) {
@@ -500,7 +500,7 @@
 						const b = i();
 						let y, g, j = "";
 						try {
-							j = await e(O(r, a, c, s, h.K.Stripe))
+							j = await e(O(r, a, c, s, h.J.Stripe))
 						} catch (w) {
 							return u.c.captureException(w), void(w.message && e(Object(m.stripeApiError)(w.message)))
 						}
@@ -556,7 +556,7 @@
 						var f;
 						let g = "";
 						try {
-							g = await e(O(t, n, r, a, h.K.Paypal))
+							g = await e(O(t, n, r, a, h.J.Paypal))
 						} catch (C) {
 							return u.c.captureException(C), C.message && e(Object(m.paypalApiError)(C.message)), null
 						}
@@ -2762,4 +2762,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.b89f470dc58702e08d47.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.b040edd9dc4fad155d9a.js.map

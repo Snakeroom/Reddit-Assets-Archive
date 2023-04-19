@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.e927c23aa7c5d30b1963.js
-// Retrieved at 4/17/2023, 6:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.6e9fc7b81f165592ecdd.js
+// Retrieved at 4/19/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1176,7 +1176,7 @@
 								type: e
 							}
 						}))(m)), S(!1), s(Object(a.c)({
-							experience: T.cb.LanguagePreferenceBottomSheet,
+							experience: T.bb.LanguagePreferenceBottomSheet,
 							value: !1
 						}))
 					},
@@ -1209,7 +1209,7 @@
 								})
 							}))
 						})(), S(!1), s(Object(a.c)({
-							experience: T.cb.LanguagePreferenceBottomSheet,
+							experience: T.bb.LanguagePreferenceBottomSheet,
 							value: !1
 						}))
 					};
@@ -1222,7 +1222,7 @@
 						...Object(h.d)(t),
 						type: e
 					}
-				}))(m)), s(Object(a.d)(T.cb.LanguagePreferenceBottomSheet)), r.a.createElement("div", {
+				}))(m)), s(Object(a.d)(T.bb.LanguagePreferenceBottomSheet)), r.a.createElement("div", {
 					className: l.a.PromptContainer
 				}, r.a.createElement("div", {
 					className: l.a.PromptClose
@@ -1262,7 +1262,7 @@
 					gqlContext: s
 				} = e, n = Object(i.f)().getState();
 				return (null === (t = Object(i.e)(e => Object(_.a)(e, {
-					experience: T.cb.LanguagePreferenceBottomSheet
+					experience: T.bb.LanguagePreferenceBottomSheet
 				}))) || void 0 === t ? void 0 : t.value) && Object(S.b)(n) ? r.a.createElement(C, {
 					gqlContext: s
 				}) : null
@@ -1366,7 +1366,7 @@
 					href: "https://www.redditinc.com/policies/impressum"
 				}, E._("Impressum", null, {
 					hk: "4cKXSI"
-				})), t === y.l.De && r.a.createElement(T, {
+				})), t === y.k.De && r.a.createElement(T, {
 					href: "https://reddit.zendesk.com/hc/de/requests/new?ticket_form_id=360000152352",
 					className: S.a.NoneCapitalizeLink
 				}, E._("Report NetzDG Content", null, {
@@ -1377,7 +1377,7 @@
 					href: "https://www.reddithelp.com"
 				}, E._("help", null, {
 					hk: "4lyYaD"
-				})), t === y.l.De && r.a.createElement(T, {
+				})), t === y.k.De && r.a.createElement(T, {
 					href: "https://reddit.zendesk.com/hc/de/articles/360045289772-Deutschland-Meldungen-nach-dem-Netzwerkdurchsetzungsgesetz-NetzDG-"
 				}, E._("Transparency report", null, {
 					hk: "3CgBdG"
@@ -1446,7 +1446,7 @@
 					href: "https://www.redditinc.com/policies/impressum"
 				}, E._("Impressum", null, {
 					hk: "4cKXSI"
-				})), e.countryCode === y.l.De && r.a.createElement(T, {
+				})), e.countryCode === y.k.De && r.a.createElement(T, {
 					href: "https://reddit.zendesk.com/hc/de/requests/new?ticket_form_id=360000152352",
 					className: S.a.NoneCapitalizeLink
 				}, E._("Report NetzDG Content", null, {
@@ -1457,7 +1457,7 @@
 					href: "https://www.reddithelp.com"
 				}, E._("help", null, {
 					hk: "4lyYaD"
-				})), e.countryCode === y.l.De && r.a.createElement(T, {
+				})), e.countryCode === y.k.De && r.a.createElement(T, {
 					href: "https://reddit.zendesk.com/hc/de/articles/360045289772-Deutschland-Meldungen-nach-dem-Netzwerkdurchsetzungsgesetz-NetzDG-"
 				}, E._("Transparency report", null, {
 					hk: "3CgBdG"
@@ -3445,4 +3445,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.e927c23aa7c5d30b1963.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.6e9fc7b81f165592ecdd.js.map

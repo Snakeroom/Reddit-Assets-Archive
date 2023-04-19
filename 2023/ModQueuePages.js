@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.13cfefc8c977c5abff67.js
-// Retrieved at 4/19/2023, 9:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.96adb57601415ee7e526.js
+// Retrieved at 4/19/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -901,16 +901,16 @@
 				B = n("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts"),
 				j = n("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts");
 			const O = {
-					[o.xb.Edited]: C.H.Edited,
-					[o.xb.Modqueue]: C.H.Mod,
-					[o.xb.Reports]: C.H.Reported,
-					[o.xb.Spam]: C.H.Removed,
-					[o.xb.Unmoderated]: C.H.Unmoderated
+					[o.xb.Edited]: C.G.Edited,
+					[o.xb.Modqueue]: C.G.Mod,
+					[o.xb.Reports]: C.G.Reported,
+					[o.xb.Spam]: C.G.Removed,
+					[o.xb.Unmoderated]: C.G.Unmoderated
 				},
 				k = {
-					comments: C.F.Comment,
-					links: C.F.Post,
-					chat_comments: C.F.ChatComment
+					comments: C.E.Comment,
+					links: C.E.Post,
+					chat_comments: C.E.ChatComment
 				};
 
 			function I(e) {
@@ -948,7 +948,7 @@
 					...!!s.profile && {
 						subredditIds: [s.profile]
 					},
-					sort: s.sort === f.a.MostReportedFirst ? C.G.SortReports : C.G.SortDate,
+					sort: s.sort === f.a.MostReportedFirst ? C.F.SortReports : C.F.SortDate,
 					...c,
 					includeAllModActivitySummaries: p,
 					includeModActivitySummariesByNames: !p,
@@ -2066,7 +2066,7 @@
 							tooltipId: e,
 							args: {
 								isModNotesView: !0,
-								modNotesFilter: h.A.Note
+								modNotesFilter: h.z.Note
 							}
 						})), C(Object(d.a)(n.id, n.authorId))
 					}, [n, x, v, C]);
@@ -10173,4 +10173,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.13cfefc8c977c5abff67.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.96adb57601415ee7e526.js.map

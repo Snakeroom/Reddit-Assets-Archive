@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.c2532c038ca975a47f2c.js
-// Retrieved at 4/5/2023, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.8cb29cefc8efd575282d.js
+// Retrieved at 4/19/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, o) {
@@ -298,16 +298,16 @@
 				A = o("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts"),
 				E = o("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts");
 			const k = {
-					[r.xb.Edited]: _.H.Edited,
-					[r.xb.Modqueue]: _.H.Mod,
-					[r.xb.Reports]: _.H.Reported,
-					[r.xb.Spam]: _.H.Removed,
-					[r.xb.Unmoderated]: _.H.Unmoderated
+					[r.xb.Edited]: _.G.Edited,
+					[r.xb.Modqueue]: _.G.Mod,
+					[r.xb.Reports]: _.G.Reported,
+					[r.xb.Spam]: _.G.Removed,
+					[r.xb.Unmoderated]: _.G.Unmoderated
 				},
 				x = {
-					comments: _.F.Comment,
-					links: _.F.Post,
-					chat_comments: _.F.ChatComment
+					comments: _.E.Comment,
+					links: _.E.Post,
+					chat_comments: _.E.ChatComment
 				};
 
 			function I(e) {
@@ -345,7 +345,7 @@
 					...!!s.profile && {
 						subredditIds: [s.profile]
 					},
-					sort: s.sort === O.a.MostReportedFirst ? _.G.SortReports : _.G.SortDate,
+					sort: s.sort === O.a.MostReportedFirst ? _.F.SortReports : _.F.SortDate,
 					...c,
 					includeAllModActivitySummaries: b,
 					includeModActivitySummariesByNames: !b,
@@ -608,18 +608,18 @@
 				q = o("./src/lib/initializeClient/installReducer.ts"),
 				B = o("./src/reddit/reducers/features/modActivitySummaries/index.ts"),
 				U = o("./node_modules/redux/es/redux.js"),
-				H = o("./node_modules/icepick/icepick.js"),
-				G = o("./src/reddit/actions/modQueue/constants.ts");
-			const V = {};
+				G = o("./node_modules/icepick/icepick.js"),
+				V = o("./src/reddit/actions/modQueue/constants.ts");
+			const H = {};
 			var $ = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : V,
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : H,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case G.i:
-					case G.f:
-					case G.r:
-					case G.u:
-					case G.A: {
+					case V.i:
+					case V.f:
+					case V.r:
+					case V.u:
+					case V.A: {
 						const {
 							response: o
 						} = t.payload, {
@@ -630,9 +630,9 @@
 							var t;
 							const o = null === (t = e.previousActions) || void 0 === t ? void 0 : t.actions;
 							o && o.length && o.forEach(e => e.modAction ? n[e.modAction.id] = e.modAction : !!e.reportAction && (n[e.reportAction.id] = e.reportAction))
-						}), Object(H.merge)(e, n)
+						}), Object(G.merge)(e, n)
 					}
-					case G.l: {
+					case V.l: {
 						const {
 							summary: o
 						} = t.payload, {
@@ -648,7 +648,7 @@
 								__typename: "ModAction",
 								moderatorInfo: o
 							})
-						}), Object(H.merge)(e, r)
+						}), Object(G.merge)(e, r)
 					}
 					default:
 						return e
@@ -659,11 +659,11 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : K,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case G.i:
-						case G.f:
-						case G.r:
-						case G.u:
-						case G.A: {
+						case V.i:
+						case V.f:
+						case V.r:
+						case V.u:
+						case V.A: {
 							const {
 								response: o
 							} = t.payload, {
@@ -677,9 +677,9 @@
 									return (null === (t = e.modAction) || void 0 === t ? void 0 : t.id) || (null === (o = e.reportAction) || void 0 === o ? void 0 : o.id)
 								}).filter(e => !!e).splice(0, 5)), e
 							}, {});
-							return Object(H.merge)(e, n)
+							return Object(G.merge)(e, n)
 						}
-						case G.l: {
+						case V.l: {
 							const {
 								summary: o
 							} = t.payload, {
@@ -690,7 +690,7 @@
 									lastModAction: o
 								} = t;
 								o && o.id && o.target && (r[o.target.id] = [o.id, ...e[o.target.id] || []].splice(0, 5))
-							}), Object(H.merge)(e, r)
+							}), Object(G.merge)(e, r)
 						}
 						default:
 							return e
@@ -719,22 +719,22 @@
 					realtimeModqueue: J.a
 				}
 			});
-			const Z = Object(n.a)(G.k),
-				X = Object(n.a)(G.j),
-				ee = Object(n.a)(G.i),
-				te = Object(n.a)(G.h),
-				oe = Object(n.a)(G.g),
-				se = Object(n.a)(G.f),
-				re = Object(n.a)(G.e),
-				ne = Object(n.a)(G.s),
-				de = Object(n.a)(G.r),
-				ae = Object(n.a)(G.q),
-				ie = Object(n.a)(G.v),
-				ce = Object(n.a)(G.u),
-				ue = Object(n.a)(G.t),
-				le = Object(n.a)(G.B),
-				me = Object(n.a)(G.A),
-				be = Object(n.a)(G.z),
+			const Z = Object(n.a)(V.k),
+				X = Object(n.a)(V.j),
+				ee = Object(n.a)(V.i),
+				te = Object(n.a)(V.h),
+				oe = Object(n.a)(V.g),
+				se = Object(n.a)(V.f),
+				re = Object(n.a)(V.e),
+				ne = Object(n.a)(V.s),
+				de = Object(n.a)(V.r),
+				ae = Object(n.a)(V.q),
+				ie = Object(n.a)(V.v),
+				ce = Object(n.a)(V.u),
+				ue = Object(n.a)(V.t),
+				le = Object(n.a)(V.B),
+				me = Object(n.a)(V.A),
+				be = Object(n.a)(V.z),
 				pe = (e, t, o) => async (n, d, a) => {
 					let {
 						apiContext: b,
@@ -786,7 +786,7 @@
 						page: `${o.page||w.b}`,
 						response: S
 					}))
-				}, fe = Object(n.a)(G.n), Oe = Object(n.a)(G.b), ve = e => async (t, o, r) => {
+				}, fe = Object(n.a)(V.n), Oe = Object(n.a)(V.b), ve = e => async (t, o, r) => {
 					let {
 						gqlContext: n
 					} = r;
@@ -814,7 +814,7 @@
 					}));
 					const f = N(p.body.data);
 					t(fe(f)), f.moderatedAfter ? t(ve()) : t(Oe())
-				}, je = Object(n.a)(G.y), he = Object(n.a)(G.x), ge = Object(n.a)(G.w), _e = (e, t, o) => async (r, n, c) => {
+				}, je = Object(n.a)(V.y), he = Object(n.a)(V.x), ge = Object(n.a)(V.w), _e = (e, t, o) => async (r, n, c) => {
 					let {
 						apiContext: u
 					} = c;
@@ -1017,7 +1017,7 @@
 						}), L.b.Error);
 						r(Object(i.f)(e))
 					}
-				}, Se = Object(n.a)(G.a), ye = Object(n.a)(G.c), Re = Object(n.a)(G.d)
+				}, Se = Object(n.a)(V.a), ye = Object(n.a)(V.c), Re = Object(n.a)(V.d)
 		},
 		"./src/reddit/actions/pages/modQueue/index.ts": function(e, t, o) {
 			"use strict";
@@ -1318,14 +1318,14 @@
 						mod_note: t.modNote
 					}
 				}),
-				H = (e, t, o) => Object(T.a)(Object(F.a)(e, [Q.a]), {
+				G = (e, t, o) => Object(T.a)(Object(F.a)(e, [Q.a]), {
 					endpoint: Object(q.a)(Object(B.a)(`${e.apiUrl}/api/v1/modactions/removal_${o}_message/`)),
 					method: A.pb.POST,
 					type: "json",
 					data: t
 				});
-			var G = o("./src/reddit/helpers/isPost.ts"),
-				V = o("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
+			var V = o("./src/reddit/helpers/isPost.ts"),
+				H = o("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
 				$ = o("./src/reddit/helpers/routeKey/index.ts"),
 				K = o("./src/reddit/models/ModQueue/index.ts"),
 				z = o("./src/reddit/models/PostDraft/index.ts"),
@@ -1441,7 +1441,7 @@
 					const u = a(),
 						l = u.user.account && u.user.account.displayText,
 						m = e[0],
-						b = Object(G.a)(m) ? W.e.Post : W.e.Comment,
+						b = Object(V.a)(m) ? W.e.Post : W.e.Comment,
 						p = b === W.e.Post ? u.posts.models[m] : u.features.comments.models[m],
 						f = b === W.e.Post ? w.Q : M.j;
 					if (!p || !l) return !1;
@@ -1468,11 +1468,11 @@
 									isLocked: n,
 									type: s
 								},
-								a = await H(c(), Object(W.h)(r, b), b);
+								a = await G(c(), Object(W.h)(r, b), b);
 							if (a.ok) {
 								if ([W.f.Public, W.f.PublicAsSubreddit].includes(s)) {
 									if (d(Se()), a.body) {
-										const e = Object(V.a)(a.body),
+										const e = Object(H.a)(a.body),
 											t = {
 												comment: e,
 												parentId: m
@@ -1571,7 +1571,7 @@
 									title: t.title,
 									type: r
 								},
-								n = await H(c(), Object(W.h)(s, W.e.Bulk), W.e.Bulk);
+								n = await G(c(), Object(W.h)(s, W.e.Bulk), W.e.Bulk);
 							n.ok ? (d(_e()), d(m)) : d(ye(n.error))
 						} else d(m)
 					} else d(he(p.error))
@@ -1918,4 +1918,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.c2532c038ca975a47f2c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.8cb29cefc8efd575282d.js.map
