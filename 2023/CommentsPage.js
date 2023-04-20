@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.43963c87375dacf881b2.js
-// Retrieved at 4/19/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.149677dd134ec7c6037c.js
+// Retrieved at 4/20/2023, 12:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "CollectionCommentsPage~SearchResults", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -23754,7 +23754,7 @@
 							canonicalUrl: s.canonical_url,
 							baseUrl: s.base_url,
 							hostPostId: t,
-							shouldShowLinkedPosts: !Object(g.tg)(n) && !Object(w.a)(n),
+							shouldShowLinkedPosts: !Object(g.rg)(n) && !Object(w.a)(n),
 							subreddit: r
 						}
 					}
@@ -23817,7 +23817,7 @@
 						hostPostData: c,
 						listingBelowVariant: d
 					} = e;
-					if (d && !Object(g.tg)(d) && !Object(w.a)(d) && !i) return a.a.createElement("div", {
+					if (d && !Object(g.rg)(d) && !Object(w.a)(d) && !i) return a.a.createElement("div", {
 						className: q.a.smallBanner
 					});
 					const {
@@ -32625,11 +32625,11 @@
 		"./src/reddit/controls/Search/SearchBar/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return x
+				return b
 			})), n.d(t, "a", (function() {
-				return y
+				return f
 			})), n.d(t, "c", (function() {
-				return E
+				return h
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./src/lib/classNames/index.ts"),
@@ -32637,129 +32637,88 @@
 				i = n.n(o),
 				a = n("./node_modules/react/index.js"),
 				c = n.n(a),
-				d = n("./node_modules/react-redux/es/index.js"),
-				l = n("./src/reddit/controls/InvisibleScreenReaderText/index.tsx"),
-				u = n("./src/reddit/icons/fonts/index.tsx"),
-				m = n("./src/reddit/constants/experiments.ts"),
-				p = n("./src/reddit/helpers/chooseVariant/index.ts"),
-				b = n("./node_modules/reselect/es/index.js");
-			const f = Object(b.a)(e => Object(p.c)(e, {
-				experimentEligibilitySelector: p.a,
-				experimentName: m.qg
-			}), e => ({
-				promptBeforeClick: e === m.rg.PromptBeforeClick,
-				promptAfterClick: e === m.rg.PromptAfterClick
-			}));
-			var h = n("./src/reddit/controls/Search/SearchScopePill/index.tsx"),
-				C = n("./src/reddit/controls/Search/SearchBar/index.m.less"),
-				g = n.n(C);
-			const _ = "Search Reddit",
-				v = ["world news", "uplifting news", "wnba", "awws", "make me smile", "eye bleach", "dogecoin", "the bachelor", "catloaf", "blep", "wholesome memes", "history memes", "starter packs", "mildly interesting", "learn japanese", "learn programming", "vinyl", "houseplants", "skincare addicts", "nasa", "ask historians", "ask reddit", "100 years ago", "data is beautiful", "what is this thing"];
-			class O {
-				static get() {
-					if (O.showFirstValue) {
-						O.showFirstValue = !1;
-						const e = document.getElementById("header-search-bar").placeholder;
-						if (e && e !== _) return e
-					}
-					O.showFirstValue = !1, 0 === O.queriesToBeShown.length && (O.queriesToBeShown = [...v]);
-					const e = Math.floor(Math.random() * O.queriesToBeShown.length),
-						t = O.queriesToBeShown[e];
-					return O.queriesToBeShown.splice(e, 1), `Search "${t}"`
-				}
-			}
-			O.queriesToBeShown = new Array(...v), O.showFirstValue = !0;
-			const x = "search-bar-dismiss-button",
-				y = "header-search-bar",
-				E = e => {
+				d = n("./src/reddit/controls/InvisibleScreenReaderText/index.tsx"),
+				l = n("./src/reddit/icons/fonts/index.tsx"),
+				u = n("./src/reddit/controls/Search/SearchScopePill/index.tsx"),
+				m = n("./src/reddit/controls/Search/SearchBar/index.m.less"),
+				p = n.n(m);
+			const b = "search-bar-dismiss-button",
+				f = "header-search-bar",
+				h = e => {
 					let {
 						inputRef: t,
 						isOpen: n,
 						onChange: o,
-						onClearSearchQuery: m,
-						onClickDismissSearchScopePill: p,
-						onFocusSearchBar: b,
+						onClearSearchQuery: a,
+						onClickDismissSearchScopePill: m,
+						onFocusSearchBar: h,
 						onFormSubmit: C,
-						onKeyDown: v,
-						searchQuery: E,
-						showSearchScopePill: j,
-						searchScopePill: k,
-						searchOriginPage: S
+						onKeyDown: g,
+						searchQuery: _,
+						showSearchScopePill: v,
+						searchScopePill: O
 					} = e;
-					var I;
-					const {
-						promptBeforeClick: w,
-						promptAfterClick: T
-					} = Object(d.e)(f), [L, P] = Object(a.useState)();
-					Object(a.useEffect)(() => {
-						T && "home" === S && P(void 0)
-					}, [T, S]);
-					const N = Object(a.useMemo)(() => w && "home" === S && O.get(), [w, S]),
-						M = "home" === S && (T && L || N),
-						D = j && k ? s.fbt._("Search within {subredditName}", [s.fbt._param("subredditName", k.title)], {
+					var x;
+					const y = s.fbt._("Search Reddit", null, {
+							hk: "2daMjM"
+						}),
+						E = v && O ? s.fbt._("Search within {subredditName}", [s.fbt._param("subredditName", O.title)], {
 							hk: "2B6J3t"
 						}) : s.fbt._("Search all of Reddit", null, {
 							hk: "1Fi1f5"
 						});
 					return c.a.createElement("div", {
-						className: Object(r.a)(g.a.searchBar, n && g.a.isOpen)
+						className: Object(r.a)(p.a.searchBar, n && p.a.isOpen)
 					}, c.a.createElement("form", {
 						action: "/search/",
 						autoComplete: "off",
-						className: g.a.form,
+						className: p.a.form,
 						method: "get",
 						onSubmit: C,
-						onFocus: b,
+						onFocus: h,
 						role: "search"
 					}, c.a.createElement("label", {
-						className: g.a.inputLabel,
+						className: p.a.inputLabel,
 						htmlFor: "header-search-bar"
 					}, c.a.createElement("div", {
 						"aria-hidden": !0,
-						className: g.a.iconContainer
-					}, c.a.createElement(u.a, {
+						className: p.a.iconContainer
+					}, c.a.createElement(l.a, {
 						name: "search",
-						className: g.a.icon
-					})), c.a.createElement(l.a, {
+						className: p.a.icon
+					})), c.a.createElement(d.a, {
 						"aria-live": "assertive"
-					}, D)), j && k && c.a.createElement(h.b, {
+					}, E)), v && O && c.a.createElement(u.b, {
 						onClickDismiss: function() {
 							var e;
-							null === (e = t.current) || void 0 === e || e.focus(), p()
+							null === (e = t.current) || void 0 === e || e.focus(), m()
 						},
-						content: k
+						content: O
 					}), c.a.createElement("input", {
-						className: g.a.input,
-						defaultValue: E,
-						id: y,
+						className: p.a.input,
+						defaultValue: _,
+						id: f,
 						name: "q",
 						onChange: i()((function() {
 							var e;
 							o((null === (e = null == t ? void 0 : t.current) || void 0 === e ? void 0 : e.value) || "")
 						}), 200),
-						onKeyDown: v,
-						onClick: T ? () => {
-							"home" === S && P(O.get())
-						} : void 0,
-						placeholder: M ? s.fbt._("{query}", [s.fbt._param("query", M)], {
-							hk: "occSN"
-						}) : s.fbt._("{Text}", [s.fbt._param("Text", _)], {
-							hk: "DG9dX"
-						}),
+						onKeyDown: g,
+						placeholder: y,
 						ref: t,
 						type: "search"
-					})), (null === (I = null == t ? void 0 : t.current) || void 0 === I ? void 0 : I.value) ? c.a.createElement("button", {
+					})), (null === (x = null == t ? void 0 : t.current) || void 0 === x ? void 0 : x.value) ? c.a.createElement("button", {
 						"aria-label": s.fbt._("Remove search bar text", null, {
 							hk: "4twCsS"
 						}),
-						id: x,
-						className: g.a.dismissButton,
-						"data-testid": x,
+						id: b,
+						className: p.a.dismissButton,
+						"data-testid": b,
 						onClick: function() {
 							var e;
-							null === (e = t.current) || void 0 === e || e.focus(), m()
+							null === (e = t.current) || void 0 === e || e.focus(), a()
 						}
-					}, c.a.createElement(u.a, {
+					}, c.a.createElement(l.a, {
 						name: "clear"
 					})) : null)
 				}
@@ -48857,7 +48816,7 @@
 				i = n("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(r.tg)(t)
+					return Boolean(t) && !Object(r.rg)(t)
 				},
 				c = Object(s.a)(a, o.d, (e, t) => e && !t)
 		},
@@ -49357,4 +49316,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.43963c87375dacf881b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.149677dd134ec7c6037c.js.map
