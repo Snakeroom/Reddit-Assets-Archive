@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.dc4b77e633f7a10e10a0.js
-// Retrieved at 4/20/2023, 12:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.cc03781df2b139390e14.js
+// Retrieved at 4/24/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./node_modules/@stripe/stripe-js/dist/stripe.esm.js": function(e, t, a) {
@@ -538,11 +538,11 @@
 				}
 			}
 			const M = Object(m.b)(_, (e, t) => ({
-				createPayment: () => "coinPackage" in t ? e(Object(w.f)(t.coinPackage)) : "awardId" in t ? e(Object(N.d)(t.awardId, t.pennies, t.thingId)) : void 0,
+				createPayment: () => "coinPackage" in t ? e(Object(w.d)(t.coinPackage)) : "awardId" in t ? e(Object(N.d)(t.awardId, t.pennies, t.thingId)) : void 0,
 				executePayment: (a, r) => {
 					if ("coinPackage" in t) {
-						if (a) return void e(Object(w.h)(r, t.coinPackage));
-						e(Object(w.g)(r, t.coinPackage))
+						if (a) return void e(Object(w.f)(r, t.coinPackage));
+						e(Object(w.e)(r, t.coinPackage))
 					} else "awardId" in t && e(Object(N.c)(r))
 				}
 			}))(S);
@@ -2066,4 +2066,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.dc4b77e633f7a10e10a0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.cc03781df2b139390e14.js.map

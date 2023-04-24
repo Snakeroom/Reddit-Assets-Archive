@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.8b680c4edd3506c5b2d8.js
-// Retrieved at 2/16/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.f567ad8e65ea27bf5c32.js
+// Retrieved at 4/24/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
 		"./src/reddit/endpoints/gold/productCatalog/old.index.ts": function(e, r, t) {
@@ -277,7 +277,7 @@
 				l = e => e.features.goldPurchase.packageOfferModal.packageId,
 				p = e => e.features.goldPurchase.premiumPurchaseModal.renewInterval,
 				f = e => {
-					const r = Object(n.l)(e),
+					const r = Object(n.k)(e),
 						t = (e => e.features.goldPurchase.premiumPurchaseModal.packageId)(e);
 					return r.length && t && r.find(e => e.mobileId === t) || null
 				},
@@ -311,4 +311,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.8b680c4edd3506c5b2d8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.f567ad8e65ea27bf5c32.js.map

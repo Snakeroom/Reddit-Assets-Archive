@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.b55a2563f91787f0d703.js
-// Retrieved at 4/20/2023, 12:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.585a6d817f0d2ff6a483.js
+// Retrieved at 4/24/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -4517,10 +4517,10 @@
 					} = e;
 					const o = Object(p.b)(),
 						c = Object(l.e)(_.f),
-						d = Object(l.e)(A.m),
-						u = Object(l.e)(A.i) || "1000",
+						d = Object(l.e)(A.l),
+						u = Object(l.e)(A.h) || "1000",
 						h = {
-							periodicalCoins: Object(l.e)(A.j),
+							periodicalCoins: Object(l.e)(A.i),
 							bonusCoins: d
 						};
 					Object(r.useEffect)(() => {
@@ -7870,7 +7870,7 @@
 					} = t;
 					let a = "";
 					if (n) {
-						const t = Object(o.k)(e, n);
+						const t = Object(o.j)(e, n);
 						if (!t) return null;
 						a = t.frequency
 					} else s && (a = s);
@@ -8626,7 +8626,7 @@
 				} = e;
 				var _, y;
 				const k = Object(u.b)(),
-					C = Object(c.e)(h.l),
+					C = Object(c.e)(h.k),
 					j = Object(c.e)(b.d);
 				if (Object(c.e)(f.y)) return g ? a.a.createElement("div", {
 					className: Object(r.a)(v.a.buttons, t, {
@@ -12745,4 +12745,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.b55a2563f91787f0d703.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.585a6d817f0d2ff6a483.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.0401f3da241762596f4e.js
-// Retrieved at 4/24/2023, 9:50:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9816bc77f01865e05160.js
+// Retrieved at 4/24/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3659,11 +3659,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("185679"),
+				buildNumber: Object(r.c)("185683"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1682341603"),
+				buildTimestamp: Object(r.b)("1682349328"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6411,14 +6411,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cc7ddd4caecaa133a796ced6397deb6433ed33899-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c333d09033d2b05428fb18f9f81604a6505eab604-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "c7ddd4caecaa133a796ced6397deb6433ed33899-production",
+						release: "333d09033d2b05428fb18f9f81604a6505eab604-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6971,7 +6971,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "c7ddd4caecaa133a796ced6397deb6433ed33899-production",
+							releaseClient: "333d09033d2b05428fb18f9f81604a6505eab604-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -30715,22 +30715,17 @@
 			"use strict";
 			i.d(t, "a", (function() {
 				return r
-			})), i.d(t, "c", (function() {
-				return s
 			})), i.d(t, "b", (function() {
-				return o
+				return s
 			})), i.d(t, "d", (function() {
+				return o
+			})), i.d(t, "c", (function() {
 				return d
-			})), i.d(t, "f", (function() {
-				return a
-			})), i.d(t, "e", (function() {
-				return l
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/fbt/lib/FbtPublic.js");
-			const r = new Set(["low_coin_upsell"]),
-				s = new Set(["new_purchaser", "repeat_purchaser"]),
-				o = [{
+			new Set(["low_coin_upsell"]), new Set(["new_purchaser", "repeat_purchaser"]);
+			const r = [{
 					prompt: () => n.fbt._("What are coins?", null, {
 						hk: "bD2cQ"
 					}),
@@ -30787,9 +30782,9 @@
 						hk: "aFpGc"
 					})
 				}],
-				d = e => "COIN_SALE" === e.promoType,
-				a = e => "COIN_DEAL" === e.promoType,
-				l = e => "Coin" === e.kind
+				s = e => "COIN_SALE" === e.promoType,
+				o = e => "COIN_DEAL" === e.promoType,
+				d = e => "Coin" === e.kind
 		},
 		"./src/reddit/models/Gold/Gild/index.tsx": function(e, t, i) {
 			"use strict";
@@ -35247,9 +35242,9 @@
 						} : null
 					}
 					case r.i: {
-						const i = t.payload.pricePackages.find(e => e.promos.some(L.d));
+						const i = t.payload.pricePackages.find(e => e.promos.some(L.b));
 						if (!i) return e;
-						const n = i.promos.find(L.d);
+						const n = i.promos.find(L.b);
 						return {
 							dropdownHeaderBackgroundAsset: n.headerImage.url,
 							dropdownHeaderText: n.headerText,
@@ -35332,7 +35327,7 @@
 						return e.map(e => e.mobileId)
 					}
 					case r.i:
-						return t.payload.pricePackages.filter(e => e.promos.some(L.f)).map(e => e.id);
+						return t.payload.pricePackages.filter(e => e.promos.some(L.d)).map(e => e.id);
 					default:
 						return e
 				}
@@ -35396,10 +35391,10 @@
 						const i = t.payload,
 							n = {};
 						return i.pricePackages.forEach(e => {
-							const t = e.skus.find(L.e);
+							const t = e.skus.find(L.c);
 							if (!t) return;
 							const i = e.tags.includes("featured"),
-								r = e.promos.find(L.f);
+								r = e.promos.find(L.d);
 							n[e.id] = {
 								pennies: Number(e.price),
 								baselinePennies: Number(e.baselinePrice || e.price),
@@ -38274,36 +38269,34 @@
 				return l
 			})), i.d(t, "c", (function() {
 				return u
-			})), i.d(t, "f", (function() {
-				return c
 			})), i.d(t, "e", (function() {
+				return c
+			})), i.d(t, "q", (function() {
 				return _
-			})), i.d(t, "r", (function() {
+			})), i.d(t, "o", (function() {
 				return m
-			})), i.d(t, "p", (function() {
+			})), i.d(t, "k", (function() {
 				return p
-			})), i.d(t, "l", (function() {
+			})), i.d(t, "g", (function() {
 				return h
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "l", (function() {
 				return f
-			})), i.d(t, "m", (function() {
+			})), i.d(t, "h", (function() {
 				return b
 			})), i.d(t, "i", (function() {
 				return g
 			})), i.d(t, "j", (function() {
 				return v
-			})), i.d(t, "k", (function() {
-				return w
-			})), i.d(t, "o", (function() {
-				return y
 			})), i.d(t, "n", (function() {
+				return w
+			})), i.d(t, "m", (function() {
+				return y
+			})), i.d(t, "p", (function() {
 				return E
-			})), i.d(t, "q", (function() {
+			})), i.d(t, "f", (function() {
 				return T
-			})), i.d(t, "g", (function() {
-				return S
 			})), i.d(t, "b", (function() {
-				return O
+				return S
 			}));
 			var n = i("./src/reddit/selectors/communityAwards.ts"),
 				r = i("./node_modules/reselect/es/index.js"),
@@ -38325,13 +38318,10 @@
 				c = e => {
 					return e.features.goldPurchase.purchaseCatalog.coinPackages.dealPackageIds.map(t => e.features.goldPurchase.purchaseCatalog.coinPackages.models[t])
 				},
-				_ = (e, t) => {
-					return c(e).filter(e => e.mobileId === t)[0]
-				},
-				m = e => {
+				_ = e => {
 					return e.features.goldPurchase.purchaseCatalog.coinPackages.recommendedPackageIds.map(t => e.features.goldPurchase.purchaseCatalog.coinPackages.models[t])
 				},
-				p = (e, t) => {
+				m = (e, t) => {
 					var i;
 					const r = e.features.goldPurchase.purchaseCatalog.coinPackages.recommendedPackageIds.map(t => e.features.goldPurchase.purchaseCatalog.coinPackages.models[t]);
 					if (!t) return null === (i = r.find(e => {
@@ -38346,39 +38336,39 @@
 						}).sort((e, t) => e.coins - t.coins).find(e => o + e.coins > s.coinPrice);
 					return null == a ? void 0 : a.mobileId
 				},
-				h = e => e.features.goldPurchase.purchaseCatalog.premiumPackages,
-				f = Object(r.a)(h, e => {
+				p = e => e.features.goldPurchase.purchaseCatalog.premiumPackages,
+				h = Object(r.a)(p, e => {
 					if (!(null == e ? void 0 : e.length)) return;
 					const {
 						signupBonusCoins: t
 					} = e[0];
 					return t
 				}),
-				b = Object(r.a)(f, e => e && e > 0 ? e.toLocaleString() : void 0),
-				g = Object(r.a)(h, e => {
+				f = Object(r.a)(h, e => e && e > 0 ? e.toLocaleString() : void 0),
+				b = Object(r.a)(p, e => {
 					var t;
 					const i = null === (t = null == e ? void 0 : e[0]) || void 0 === t ? void 0 : t.defaultSignupBonusCoins;
 					return i && i > 0 ? i.toLocaleString() : void 0
 				}),
-				v = e => {
-					const t = h(e);
+				g = e => {
+					const t = p(e);
 					if (!(null == t ? void 0 : t.length)) return;
 					const {
 						periodicalCoins: i
 					} = t[0];
 					return i.toLocaleString()
 				},
-				w = (e, t) => {
-					return h(e).find(e => e.mobileId === t)
+				v = (e, t) => {
+					return p(e).find(e => e.mobileId === t)
 				},
-				y = e => e.features.goldPurchase.purchaseCatalog.api.storefrontPending,
-				E = e => e.features.goldPurchase.purchaseCatalog.api.errorMessage,
-				T = e => e.features.goldPurchase.purchaseCatalog.api.recommendedPending,
-				S = e => {
+				w = e => e.features.goldPurchase.purchaseCatalog.api.storefrontPending,
+				y = e => e.features.goldPurchase.purchaseCatalog.api.errorMessage,
+				E = e => e.features.goldPurchase.purchaseCatalog.api.recommendedPending,
+				T = e => {
 					var t;
 					return !!(null === (t = e.features.goldPurchase.purchaseCatalog.freeAwardEvent) || void 0 === t ? void 0 : t.isEnabled)
 				},
-				O = e => {
+				S = e => {
 					var t;
 					const i = null === (t = e.features.goldPurchase.purchaseCatalog.freeAwardEvent) || void 0 === t ? void 0 : t.awardIds[0];
 					return i ? Object(n.a)(e, i) : null
@@ -50848,4 +50838,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.0401f3da241762596f4e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9816bc77f01865e05160.js.map
