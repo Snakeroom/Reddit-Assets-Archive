@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9816bc77f01865e05160.js
-// Retrieved at 4/24/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c0ba2ca736cb91f058e0.js
+// Retrieved at 4/24/2023, 3:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3659,11 +3659,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("185683"),
+				buildNumber: Object(r.c)("185696"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1682349328"),
+				buildTimestamp: Object(r.b)("1682359860"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6411,14 +6411,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c333d09033d2b05428fb18f9f81604a6505eab604-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cd30daf7f926ebad1c414e01799ef83a94c01c4f2-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "333d09033d2b05428fb18f9f81604a6505eab604-production",
+						release: "d30daf7f926ebad1c414e01799ef83a94c01c4f2-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6971,7 +6971,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "333d09033d2b05428fb18f9f81604a6505eab604-production",
+							releaseClient: "d30daf7f926ebad1c414e01799ef83a94c01c4f2-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -10823,7 +10823,7 @@
 				v = Object(s.a)(g),
 				w = Object(s.a)(b),
 				y = (e, t, i) => async (s, o) => {
-					s(p(e)), !e && i && (r.e(i, e, n.n.muted), s(Object(_.N)(t, i)))
+					s(p(e)), !e && i && (r.e(i, e, n.n.muted), s(Object(_.O)(t, i)))
 				}, E = "MEDIA__EMBED_HEIGHT_MEASURED", T = Object(s.a)(E), S = e => {
 					let {
 						height: t,
@@ -15458,78 +15458,80 @@
 				return L
 			})), i.d(t, "G", (function() {
 				return k
-			})), i.d(t, "ab", (function() {
+			})), i.d(t, "bb", (function() {
 				return B
-			})), i.d(t, "N", (function() {
-				return M
-			})), i.d(t, "cb", (function() {
-				return U
-			})), i.d(t, "db", (function() {
-				return G
-			})), i.d(t, "K", (function() {
-				return V
-			})), i.d(t, "L", (function() {
-				return W
-			})), i.d(t, "P", (function() {
-				return Y
-			})), i.d(t, "V", (function() {
-				return $
-			})), i.d(t, "F", (function() {
-				return Q
-			})), i.d(t, "W", (function() {
-				return X
-			})), i.d(t, "U", (function() {
-				return te
-			})), i.d(t, "S", (function() {
-				return ie
-			})), i.d(t, "s", (function() {
-				return ne
-			})), i.d(t, "Q", (function() {
-				return re
-			})), i.d(t, "r", (function() {
-				return se
-			})), i.d(t, "M", (function() {
-				return oe
 			})), i.d(t, "O", (function() {
-				return de
-			})), i.d(t, "D", (function() {
-				return ae
-			})), i.d(t, "T", (function() {
-				return le
+				return M
+			})), i.d(t, "db", (function() {
+				return U
+			})), i.d(t, "eb", (function() {
+				return G
+			})), i.d(t, "N", (function() {
+				return q
+			})), i.d(t, "K", (function() {
+				return H
+			})), i.d(t, "L", (function() {
+				return z
+			})), i.d(t, "Q", (function() {
+				return $
+			})), i.d(t, "W", (function() {
+				return Q
+			})), i.d(t, "F", (function() {
+				return J
 			})), i.d(t, "X", (function() {
+				return Z
+			})), i.d(t, "V", (function() {
+				return ie
+			})), i.d(t, "T", (function() {
+				return ne
+			})), i.d(t, "s", (function() {
+				return re
+			})), i.d(t, "R", (function() {
+				return se
+			})), i.d(t, "r", (function() {
+				return oe
+			})), i.d(t, "M", (function() {
+				return de
+			})), i.d(t, "P", (function() {
+				return ae
+			})), i.d(t, "D", (function() {
+				return le
+			})), i.d(t, "U", (function() {
 				return ue
 			})), i.d(t, "Y", (function() {
 				return ce
-			})), i.d(t, "u", (function() {
-				return _e
-			})), i.d(t, "q", (function() {
-				return me
-			})), i.d(t, "v", (function() {
-				return pe
-			})), i.d(t, "z", (function() {
-				return he
-			})), i.d(t, "A", (function() {
-				return fe
-			})), i.d(t, "C", (function() {
-				return be
-			})), i.d(t, "w", (function() {
-				return ge
-			})), i.d(t, "t", (function() {
-				return ve
-			})), i.d(t, "x", (function() {
-				return we
-			})), i.d(t, "y", (function() {
-				return ye
-			})), i.d(t, "B", (function() {
-				return Ee
-			})), i.d(t, "E", (function() {
-				return Te
-			})), i.d(t, "R", (function() {
-				return Se
-			})), i.d(t, "bb", (function() {
-				return Oe
 			})), i.d(t, "Z", (function() {
+				return _e
+			})), i.d(t, "u", (function() {
+				return me
+			})), i.d(t, "q", (function() {
+				return pe
+			})), i.d(t, "v", (function() {
+				return he
+			})), i.d(t, "z", (function() {
+				return fe
+			})), i.d(t, "A", (function() {
+				return be
+			})), i.d(t, "C", (function() {
+				return ge
+			})), i.d(t, "w", (function() {
+				return ve
+			})), i.d(t, "t", (function() {
+				return we
+			})), i.d(t, "x", (function() {
+				return ye
+			})), i.d(t, "y", (function() {
+				return Ee
+			})), i.d(t, "B", (function() {
+				return Te
+			})), i.d(t, "E", (function() {
+				return Se
+			})), i.d(t, "S", (function() {
+				return Oe
+			})), i.d(t, "cb", (function() {
 				return Ie
+			})), i.d(t, "ab", (function() {
+				return Re
 			}));
 			var n = i("./src/lib/makeActionCreator/index.ts"),
 				r = i("./src/reddit/constants/adEvents.ts"),
@@ -15650,55 +15652,55 @@
 							d = "watch_10_seconds", a = r.a.VideoWatchedSeconds10
 					}
 					i(j(t, d, "video", !1)), o.isSponsored && i(Object(l.y)(o, a, d))
-				}, q = Object(n.a)(f), V = Object(n.a)(v), H = Object(n.a)(w), W = Object(n.a)(y), z = Object(n.a)(E), K = Object(n.a)(b), Y = Object(n.a)(T), $ = Object(n.a)(R), Q = Object(n.a)(g), J = Object(n.a)(S), X = Object(n.a)(O), Z = Object(n.a)(I), ee = Object(n.a)(F), te = Object(n.a)(C), ie = e => async (t, i) => {
+				}, q = (e, t, i) => {
+					i(j(t, "play_expanded", "video", !1)), i(j(t, "is_viewable", "video", !1)), i(j(t, "is_fully_viewable", "video", !1)), e.isSponsored && (i(Object(l.y)(e, r.a.VideoPlayedExpanded)), i(Object(l.y)(e, r.a.VideoViewableImpression)), i(Object(l.y)(e, r.a.VideoFullyViewableImpression)))
+				}, V = Object(n.a)(f), H = Object(n.a)(v), W = Object(n.a)(w), z = Object(n.a)(y), K = Object(n.a)(E), Y = Object(n.a)(b), $ = Object(n.a)(T), Q = Object(n.a)(R), J = Object(n.a)(g), X = Object(n.a)(S), Z = Object(n.a)(O), ee = Object(n.a)(I), te = Object(n.a)(F), ie = Object(n.a)(C), ne = e => async (t, i) => {
 					const n = Object(m.G)(i(), {
 						postId: e
 					});
-					t(K({
+					t(Y({
 						postId: e
-					})), ((e, t, i) => {
-						i(j(t, "play_expanded", "video", !1)), i(j(t, "is_viewable", "video", !1)), i(j(t, "is_fully_viewable", "video", !1)), e.isSponsored && (i(Object(l.y)(e, r.a.VideoPlayedExpanded)), i(Object(l.y)(e, r.a.VideoViewableImpression)), i(Object(l.y)(e, r.a.VideoFullyViewableImpression)))
-					})(n, e, t)
-				}, ne = (e, t) => async (i, n) => {
+					})), q(n, e, t)
+				}, re = (e, t) => async (i, n) => {
 					const r = n();
-					r.posts.video.autoPlayed[e] && Object(_.k)(r) && (c.f(r, e), void 0 !== t && i(ee({
+					r.posts.video.autoPlayed[e] && Object(_.k)(r) && (c.f(r, e), void 0 !== t && i(te({
 						postId: e,
 						isBuffering: t
 					})))
-				}, re = e => async (t, i) => {
+				}, se = e => async (t, i) => {
 					const n = i();
 					n.posts.video.autoPlayed[e] && Object(_.k)(n) && c.j(n, e)
-				}, se = (e, t) => async (i, n) => {
-					i(H({
+				}, oe = (e, t) => async (i, n) => {
+					i(W({
 						postId: e,
 						time: t
 					}));
 					const r = n();
 					Object(_.k)(r) && c.h(r, e)
-				}, oe = (e, t) => async (i, n) => {
-					i(z({
+				}, de = (e, t) => async (i, n) => {
+					i(K({
 						postId: e,
 						time: t
 					}));
 					const r = n();
 					Object(_.k)(r) && c.a(r, e)
-				}, de = e => async (t, i) => {
-					const n = i(),
-						r = n.posts.video.autoPlayed[e],
-						s = n.posts.video.started[e];
-					t(J({
-						postId: e
-					})), t(Z({
-						postId: e
-					})), !s && r && Object(_.k)(n) && c.e(n, e)
 				}, ae = e => async (t, i) => {
 					const n = i(),
 						r = n.posts.video.autoPlayed[e],
+						s = n.posts.video.started[e];
+					t(X({
+						postId: e
+					})), t(ee({
+						postId: e
+					})), !s && r && Object(_.k)(n) && c.e(n, e)
+				}, le = e => async (t, i) => {
+					const n = i(),
+						r = n.posts.video.autoPlayed[e],
 						s = n.posts.video.consumed[e];
-					t(q({
+					t(V({
 						postId: e
 					})), r && Object(_.k)(n) && !s && c.b(n, e)
-				}, le = Object(n.a)(A), ue = (e, t) => async (i, n) => {
+				}, ue = Object(n.a)(A), ce = (e, t) => async (i, n) => {
 					i(P({
 						postId: e,
 						time: t
@@ -15707,40 +15709,40 @@
 					Object(m.G)(r, {
 						postId: e
 					}).isSponsored && a.e(e, !0, d.n.seeked)
-				}, ce = e => async (t, i) => {
+				}, _e = e => async (t, i) => {
 					const n = i();
 					Object(m.G)(n, {
 						postId: e
 					}).isSponsored && a.e(e, !0, d.n.seeked)
-				}, _e = (e, t) => async i => {
+				}, me = (e, t) => async i => {
 					i(j(e, "click", t ? "video_autoplay_on" : "video_autoplay_off", !1))
-				}, me = e => async t => {
-					t(j(e, "background", "video", !1))
 				}, pe = e => async t => {
-					t(j(e, "click", "fullscreen", !1))
+					t(j(e, "background", "video", !1))
 				}, he = e => async t => {
-					t(j(e, "click", "replay", !1))
+					t(j(e, "click", "fullscreen", !1))
 				}, fe = e => async t => {
-					t(j(e, "click", "seek", !1))
+					t(j(e, "click", "replay", !1))
 				}, be = e => async t => {
+					t(j(e, "click", "seek", !1))
+				}, ge = e => async t => {
 					t(j(e, "click", "volume", !1))
-				}, ge = (e, t) => async i => {
+				}, ve = (e, t) => async i => {
 					i(j(e, "click", t ? "mute" : "unmute", !1))
-				}, ve = e => async t => {
-					t(j(e, "change", "pagetype", !0))
 				}, we = e => async t => {
-					t(j(e, "click", "pause", !1))
+					t(j(e, "change", "pagetype", !0))
 				}, ye = e => async t => {
-					t(j(e, "click", "play", !1))
+					t(j(e, "click", "pause", !1))
 				}, Ee = e => async t => {
-					t(j(e, "click", "snoo", !1))
+					t(j(e, "click", "play", !1))
 				}, Te = e => async t => {
-					t(j(e, "error", "video", !1))
+					t(j(e, "click", "snoo", !1))
 				}, Se = e => async t => {
-					t(j(e, "scroll", "pause", !1))
+					t(j(e, "error", "video", !1))
 				}, Oe = e => async t => {
-					t(j(e, "view", "autoplay", !1))
+					t(j(e, "scroll", "pause", !1))
 				}, Ie = e => async t => {
+					t(j(e, "view", "autoplay", !1))
+				}, Re = e => async t => {
 					t(j(e, "served", "video", !0))
 				}
 		},
@@ -17436,7 +17438,7 @@
 				fi = "d2x_enable_happening_now_page",
 				bi = "d2x_promoted_user_post_ads",
 				gi = "d2x_report_an_ad_feature",
-				vi = "d2x_shreddit_player",
+				vi = "d2x_shreddit_player_ads",
 				wi = "d2x_gif_comments_setting",
 				yi = "d2x_onboarding_language_selection_v2",
 				Ei = "d2x_live_chat_nux_reactions",
@@ -50838,4 +50840,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9816bc77f01865e05160.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c0ba2ca736cb91f058e0.js.map

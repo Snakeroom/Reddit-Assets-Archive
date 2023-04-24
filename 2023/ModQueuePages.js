@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.a1d7f32a7157b97b3b63.js
-// Retrieved at 4/24/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.b74e5e90ddace7af4b32.js
+// Retrieved at 4/24/2023, 3:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -4682,7 +4682,7 @@
 				} = e, D = t && !(I && Object(c.hasAcceptableAds)()), T = Object(i.d)();
 
 				function N(e) {
-					T(e ? Object(m.s)(A) : Object(m.Q)(A))
+					T(e ? Object(m.s)(A) : Object(m.R)(A))
 				}
 
 				function S() {
@@ -4713,7 +4713,7 @@
 
 				function H(e) {
 					! function(e) {
-						T(Object(m.P)({
+						T(Object(m.Q)({
 							metadata: e,
 							postId: A
 						}))
@@ -4726,7 +4726,7 @@
 				}
 
 				function U(e) {
-					s || F(e), r || H(e), T(Object(m.O)(A))
+					s || F(e), r || H(e), T(Object(m.P)(A))
 				}
 
 				function Y() {
@@ -10173,4 +10173,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.a1d7f32a7157b97b3b63.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.b74e5e90ddace7af4b32.js.map

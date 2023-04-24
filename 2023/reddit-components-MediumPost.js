@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.c26ccc89277f7068707c.js
-// Retrieved at 4/20/2023, 12:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.02e6c2fe672b24622244.js
+// Retrieved at 4/24/2023, 3:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1569,7 +1569,7 @@
 				} = e, N = t && !(P && Object(c.hasAcceptableAds)()), M = Object(a.d)();
 
 				function L(e) {
-					M(e ? Object(u.s)(b) : Object(u.Q)(b))
+					M(e ? Object(u.s)(b) : Object(u.R)(b))
 				}
 
 				function R() {
@@ -1600,7 +1600,7 @@
 
 				function U(e) {
 					! function(e) {
-						M(Object(u.P)({
+						M(Object(u.Q)({
 							metadata: e,
 							postId: b
 						}))
@@ -1613,7 +1613,7 @@
 				}
 
 				function H(e) {
-					n || B(e), o || U(e), M(Object(u.O)(b))
+					n || B(e), o || U(e), M(Object(u.P)(b))
 				}
 
 				function V() {
@@ -5513,4 +5513,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.c26ccc89277f7068707c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.02e6c2fe672b24622244.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5.6217cd8ed641de3764d6.js
-// Retrieved at 4/20/2023, 12:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5.955c88a77c0d3f6bc507.js
+// Retrieved at 4/24/2023, 3:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5"], {
 		"./src/reddit/components/Governance/VaultActionLink/async.ts": function(e, t, n) {
@@ -547,7 +547,7 @@
 				} = e, I = t && !(T && Object(d.hasAcceptableAds)()), N = Object(a.d)();
 
 				function R(e) {
-					N(e ? Object(u.s)(p) : Object(u.Q)(p))
+					N(e ? Object(u.s)(p) : Object(u.R)(p))
 				}
 
 				function P() {
@@ -578,7 +578,7 @@
 
 				function U(e) {
 					! function(e) {
-						N(Object(u.P)({
+						N(Object(u.Q)({
 							metadata: e,
 							postId: p
 						}))
@@ -591,7 +591,7 @@
 				}
 
 				function A(e) {
-					s || D(e), i || U(e), N(Object(u.O)(p))
+					s || D(e), i || U(e), N(Object(u.P)(p))
 				}
 
 				function J() {
@@ -2198,4 +2198,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5.6217cd8ed641de3764d6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~GovernanceReleaseNotesModal~ModerationPages~Multired~4b0513d5.955c88a77c0d3f6bc507.js.map

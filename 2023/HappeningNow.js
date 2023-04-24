@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HappeningNow.57fb8d8961985c2899c1.js
-// Retrieved at 4/20/2023, 12:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HappeningNow.8f56b2cdb4722c97d5e5.js
+// Retrieved at 4/24/2023, 3:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HappeningNow"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1080,7 +1080,7 @@
 				} = e, T = t && !(N && Object(c.hasAcceptableAds)()), I = Object(i.d)();
 
 				function L(e) {
-					I(e ? Object(u.s)(h) : Object(u.Q)(h))
+					I(e ? Object(u.s)(h) : Object(u.R)(h))
 				}
 
 				function P() {
@@ -1111,7 +1111,7 @@
 
 				function D(e) {
 					! function(e) {
-						I(Object(u.P)({
+						I(Object(u.Q)({
 							metadata: e,
 							postId: h
 						}))
@@ -1124,7 +1124,7 @@
 				}
 
 				function U(e) {
-					r || H(e), a || D(e), I(Object(u.O)(h))
+					r || H(e), a || D(e), I(Object(u.P)(h))
 				}
 
 				function V() {
@@ -3983,4 +3983,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.57fb8d8961985c2899c1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.8f56b2cdb4722c97d5e5.js.map

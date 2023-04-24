@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8.d2be62e117a8e0591743.js
-// Retrieved at 4/20/2023, 12:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8.9c5240ac92c50a4a2425.js
+// Retrieved at 4/24/2023, 3:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -1253,7 +1253,7 @@
 						onLoadStarted: t => {
 							s && e(b.r(s, t))
 						},
-						onMetadataReceived: t => e(b.P({
+						onMetadataReceived: t => e(b.Q({
 							metadata: t,
 							postId: t.id
 						})),
@@ -1261,10 +1261,10 @@
 							s && e(b.M(s, t))
 						},
 						onScrollPause: () => {
-							s && e(b.R(s))
+							s && e(b.S(s))
 						},
 						onUpdateVideoTime: r()(t => {
-							s && e(b.V({
+							s && e(b.W({
 								postId: s,
 								time: t
 							}))
@@ -1280,39 +1280,39 @@
 							})
 						},
 						setPlaying: t => {
-							s && e(b.U({
+							s && e(b.V({
 								postId: s,
 								isPlaying: t
 							}))
 						},
 						setAutoplayPref: t => e(C.s(t)),
 						setVideoFullscreen: () => {
-							s && e(b.S(s))
+							s && e(b.T(s))
 						},
 						setVideoMuted: (t, i) => e(S.g(t, i, s)),
 						setVideoVolume: t => e(S.h(t)),
 						onWatchedPercent: t => {
-							s && e(b.cb(t, s))
-						},
-						onWatchedSeconds: t => {
 							s && e(b.db(t, s))
 						},
+						onWatchedSeconds: t => {
+							s && e(b.eb(t, s))
+						},
 						onUpdateContinuousViewStartTime: t => {
-							s && e(b.X(s, t))
+							s && e(b.Y(s, t))
 						},
 						onViewAutoplay: () => {
-							s && e(b.bb(s))
+							s && e(b.cb(s))
 						},
 						onVideoServed: () => {
-							s && e(b.Z(s))
-						},
-						onVideoStarted: () => {
 							s && e(b.ab(s))
 						},
-						onVideoReset: () => {
-							s && e(b.Y(s))
+						onVideoStarted: () => {
+							s && e(b.bb(s))
 						},
-						setMutedInFeed: t => e(b.T(t))
+						onVideoReset: () => {
+							s && e(b.Z(s))
+						},
+						setMutedInFeed: t => e(b.U(t))
 					}
 				});
 			class cs extends l.Component {
@@ -2759,4 +2759,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8.d2be62e117a8e0591743.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8.9c5240ac92c50a4a2425.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.659cf5e312bc394fd485.js
-// Retrieved at 4/24/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.f5df7ff10bb8cb3011be.js
+// Retrieved at 4/24/2023, 3:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, n) {
@@ -3570,7 +3570,7 @@
 				} = e, T = t && !(P && Object(d.hasAcceptableAds)()), A = Object(i.d)();
 
 				function M(e) {
-					A(e ? Object(u.s)(b) : Object(u.Q)(b))
+					A(e ? Object(u.s)(b) : Object(u.R)(b))
 				}
 
 				function L() {
@@ -3601,7 +3601,7 @@
 
 				function D(e) {
 					! function(e) {
-						A(Object(u.P)({
+						A(Object(u.Q)({
 							metadata: e,
 							postId: b
 						}))
@@ -3614,7 +3614,7 @@
 				}
 
 				function H(e) {
-					r || G(e), a || D(e), A(Object(u.O)(b))
+					r || G(e), a || D(e), A(Object(u.P)(b))
 				}
 
 				function U() {
@@ -5856,4 +5856,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.659cf5e312bc394fd485.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.f5df7ff10bb8cb3011be.js.map
