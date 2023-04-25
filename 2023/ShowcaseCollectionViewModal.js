@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ShowcaseCollectionViewModal.4d171e77096c98a33699.js
-// Retrieved at 4/24/2023, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ShowcaseCollectionViewModal.d61d0ebe770dd05905c3.js
+// Retrieved at 4/25/2023, 10:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ShowcaseCollectionViewModal"], {
 		"./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx": function(e, t, r) {
@@ -9,8 +9,8 @@
 			}));
 			var n = r("./src/config.ts"),
 				s = r("./src/lib/env/index.ts"),
-				c = r("./node_modules/react/index.js"),
-				o = r("./node_modules/react-redux/es/index.js"),
+				o = r("./node_modules/react/index.js"),
+				c = r("./node_modules/react-redux/es/index.js"),
 				i = r("./src/reddit/endpoints/governance/crypto.ts"),
 				a = r("./src/reddit/hooks/useTracking.ts"),
 				d = r("./src/reddit/selectors/experiments/econ/index.ts"),
@@ -28,22 +28,22 @@
 					SNOOVATAR_API_URL: `${n.a.snoovatarUrl}/api`
 				},
 				f = () => {
-					const e = Object(o.e)(l.a),
-						t = Object(o.e)(d.o),
-						r = Object(o.e)(u.b),
-						s = Object(o.e)(e => e.user.session),
+					const e = Object(c.e)(l.a),
+						t = Object(c.e)(d.o),
+						r = Object(c.e)(u.b),
+						s = Object(c.e)(e => e.user.session),
 						f = s ? s.accessToken : "",
 						O = s ? new Date(s.expires).getTime() : 1,
-						k = Object(o.e)(p.fb),
+						k = Object(c.e)(p.fb),
 						j = Object(a.a)(),
 						E = b ? i.a.Rinkeby : i.a.Ethereum,
-						_ = Object(c.useMemo)(() => ({
+						y = Object(o.useMemo)(() => ({
 							headers: {
 								Authorization: `Bearer ${f}`
 							},
 							expiration: O
 						}), [f, O]),
-						y = {
+						x = {
 							...h,
 							STRIPE_API_KEY: n.a.stripe.apiKey(e),
 							STRIPE_API_VERSION: n.a.stripe.apiVersion(t),
@@ -53,7 +53,7 @@
 								NO_VAULT: !0
 							} : {}
 						},
-						x = Object(c.useCallback)(e => {
+						_ = Object(o.useCallback)(e => {
 							j(t => {
 								const r = m.o(t);
 								return {
@@ -68,12 +68,12 @@
 								}
 							})
 						}, [j]);
-					return Object(c.useMemo)(() => ({
-						authHeaders: _,
-						config: y,
+					return Object(o.useMemo)(() => ({
+						authHeaders: y,
+						config: x,
 						isNightMode: k,
-						sendEvent: x
-					}), [_, y, k, x])
+						sendEvent: _
+					}), [y, x, k, _])
 				}
 		},
 		"./src/reddit/components/Econ/Marketplace/ShowcaseCollectionViewModal/index.m.less": function(e, t, r) {
@@ -85,26 +85,28 @@
 		"./src/reddit/components/Econ/Marketplace/ShowcaseCollectionViewModal/index.tsx": function(e, t, r) {
 			"use strict";
 			r.r(t), r.d(t, "_ShowcaseCollectionView", (function() {
-				return y
+				return A
 			}));
 			var n = r("./node_modules/@reddit/marketplace/marketplace.es.js"),
 				s = r("./node_modules/fbt/lib/FbtPublic.js"),
-				c = r("./node_modules/react/index.js"),
-				o = r.n(c),
-				i = r("./node_modules/react-redux/es/index.js"),
-				a = r("./src/higherOrderComponents/asModal/index.tsx"),
-				d = r("./src/reddit/actions/modal.ts"),
-				u = r("./src/reddit/components/Marketplace/MarketplaceConfigProvider.tsx"),
-				l = r("./src/reddit/constants/modals.ts"),
-				m = r("./src/reddit/hooks/useToast.tsx"),
-				p = r("./src/reddit/selectors/profile.ts"),
-				b = r("./src/reddit/selectors/user.ts"),
-				h = r("./src/reddit/components/TrackingHelper/index.tsx"),
-				f = r("./src/reddit/helpers/trackers/marketplace/claims.ts"),
-				O = r("./src/reddit/models/Toast/index.ts"),
-				k = r("./src/reddit/selectors/activeModal.ts"),
-				j = r("./src/reddit/components/Econ/Marketplace/ShowcaseCollectionViewModal/index.m.less"),
-				E = r.n(j);
+				o = r("./node_modules/lodash/noop.js"),
+				c = r.n(o),
+				i = r("./node_modules/react/index.js"),
+				a = r.n(i),
+				d = r("./node_modules/react-redux/es/index.js"),
+				u = r("./src/higherOrderComponents/asModal/index.tsx"),
+				l = r("./src/reddit/actions/modal.ts"),
+				m = r("./src/reddit/components/Marketplace/MarketplaceConfigProvider.tsx"),
+				p = r("./src/reddit/constants/modals.ts"),
+				b = r("./src/reddit/hooks/useToast.tsx"),
+				h = r("./src/reddit/selectors/profile.ts"),
+				f = r("./src/reddit/selectors/user.ts"),
+				O = r("./src/reddit/components/TrackingHelper/index.tsx"),
+				k = r("./src/reddit/helpers/trackers/marketplace/claims.ts"),
+				j = r("./src/reddit/models/Toast/index.ts"),
+				E = r("./src/reddit/selectors/activeModal.ts"),
+				y = r("./src/reddit/components/Econ/Marketplace/ShowcaseCollectionViewModal/index.m.less"),
+				x = r.n(y);
 
 			function _() {
 				return (_ = Object.assign || function(e) {
@@ -115,50 +117,44 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const y = e => {
+			const A = e => {
 					let {
 						onClose: t
 					} = e;
-					const r = Object(m.b)(),
-						c = Object(m.a)(),
-						a = Object(h.b)(),
-						j = Object(i.d)(),
-						_ = Object(i.f)().getState(),
-						y = Object(i.e)(e => Object(k.a)(e)),
+					const r = Object(b.b)(),
+						o = Object(b.a)(),
+						i = Object(O.b)(),
+						u = Object(d.d)(),
+						y = Object(d.f)().getState(),
+						_ = Object(d.e)(e => Object(E.a)(e)),
 						{
-							telemetryReason: x,
-							profileUserName: A
-						} = y || {},
-						g = Object(b.Cb)(_, {
-							userName: A || ""
+							telemetryReason: A,
+							profileUserName: v
+						} = _ || {},
+						g = Object(f.Cb)(y, {
+							userName: v || ""
 						}) || {},
-						v = Object(p.j)(_, g.profileId),
-						w = Object(n.l)(g.snoovatarFullBodyAsset || "");
-					return o.a.createElement(u.a, null, o.a.createElement(n.k, {
-						telemetryReason: x || "",
+						w = Object(h.j)(y, g.profileId),
+						R = Object(n.l)(g.snoovatarFullBodyAsset || "");
+					return a.a.createElement(m.a, null, a.a.createElement(n.k, {
+						telemetryReason: A || "",
 						ownerId: g.id || "",
 						ownerSnoovatarImage: g.snoovatarFullBodyAsset || "",
-						ownerProfileItemId: w || "",
-						ownerProfileTitle: v.title || "",
+						ownerProfileItemId: R || "",
+						ownerProfileTitle: w.title || "",
 						ownerDisplayName: g.displayName || "",
 						onClose: t,
 						onOutfitClick: e => {
-							t(), a(Object(f.k)("marketplace_collection_page")), j(Object(d.h)(l.a.ECON_NFT_PRODUCT_DETAILS, {
+							t(), i(Object(k.k)("marketplace_collection_page")), u(Object(l.h)(p.a.ECON_NFT_PRODUCT_DETAILS, {
 								itemId: e.detail.outfit.id,
 								showBack: !0,
-								profileUserName: A
+								profileUserName: v
 							}))
 						},
-						className: E.a.container,
-						onProfileImageClick: () => {
-							t(), a(Object(f.k)("marketplace_collection_page")), j(Object(d.h)(l.a.ECON_NFT_PRODUCT_DETAILS, {
-								itemId: w,
-								showBack: !0,
-								profileUserName: A
-							}))
-						},
+						className: x.a.container,
+						onProfileImageClick: c.a,
 						onEmptyState: () => {
-							c(s.fbt._("Collection disabled!", null, {
+							o(s.fbt._("Collection disabled!", null, {
 								hk: "4oqnKH"
 							}))
 						},
@@ -168,15 +164,15 @@
 									hk: "2lidsg"
 								}),
 								duration: 5e3,
-								kind: O.b.SuccessAward
+								kind: j.b.SuccessAward
 							})
 						}
 					}))
 				},
-				x = Object(a.a)(y);
-			t.default = e => o.a.createElement(x, _({
+				v = Object(u.a)(A);
+			t.default = e => a.a.createElement(v, _({
 				withOverlay: !0,
-				className: E.a.modal
+				className: x.a.modal
 			}, e))
 		},
 		"./src/reddit/components/Marketplace/MarketplaceConfigProvider.tsx": function(e, t, r) {
@@ -186,8 +182,8 @@
 			}));
 			var n = r("./node_modules/@reddit/marketplace/marketplace.es.js"),
 				s = r("./node_modules/react/index.js"),
-				c = r.n(s),
-				o = r("./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx");
+				o = r.n(s),
+				c = r("./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx");
 
 			function i() {
 				return (i = Object.assign || function(e) {
@@ -202,8 +198,8 @@
 				let {
 					children: t
 				} = e;
-				const r = Object(o.a)();
-				return c.a.createElement(n.d, i({}, r, {
+				const r = Object(c.a)();
+				return o.a.createElement(n.d, i({}, r, {
 					shouldContainModal: !1
 				}), t)
 			}
@@ -213,7 +209,7 @@
 			r.d(t, "a", (function() {
 				return n
 			})), r.d(t, "j", (function() {
-				return o
+				return c
 			})), r.d(t, "i", (function() {
 				return i
 			})), r.d(t, "h", (function() {
@@ -240,9 +236,9 @@
 				return k
 			}));
 			var n, s = r("./src/config.ts"),
-				c = r("./src/reddit/endpoints/governance/requester.ts");
+				o = r("./src/reddit/endpoints/governance/requester.ts");
 
-			function o(e) {
+			function c(e) {
 				switch (e) {
 					case n.Ethereum:
 					case n.EthTraderEthereum:
@@ -298,7 +294,7 @@
 				return e === n.ArbitrumRinkeby ? 5e3 : 3e4
 			}
 			async function u(e, t, r) {
-				return Object(c.a)(e, {
+				return Object(o.a)(e, {
 					method: "post",
 					endpoint: `${s.a.metaUrl}/crypto/${t}/challenges`,
 					data: {
@@ -308,14 +304,14 @@
 				})
 			}
 			async function l(e, t, r) {
-				return await Object(c.a)(e, {
+				return await Object(o.a)(e, {
 					method: "post",
 					endpoint: `${s.a.metaUrl}/crypto/${t}/registrations`,
 					data: r
 				})
 			}
 			async function m(e, t, r) {
-				return await Object(c.a)(e, {
+				return await Object(o.a)(e, {
 					method: "delete",
 					endpoint: `${s.a.metaUrl}/crypto/${t}/registrations/${r}`
 				})
@@ -348,7 +344,7 @@
 					amount: n
 				});
 			async function k(e, t) {
-				return await Object(c.a)(e, {
+				return await Object(o.a)(e, {
 					method: "put",
 					endpoint: `${s.a.metaUrl}/crypto/ethereum/transaction-intent`,
 					data: t
@@ -364,19 +360,19 @@
 			}));
 			var n = r("./node_modules/react/index.js"),
 				s = r("./node_modules/react-redux/es/index.js"),
-				c = r("./src/reddit/actions/toaster.ts"),
-				o = r("./src/reddit/models/Toast/index.ts");
+				o = r("./src/reddit/actions/toaster.ts"),
+				c = r("./src/reddit/models/Toast/index.ts");
 
 			function i() {
 				const e = Object(s.d)();
-				return Object(n.useCallback)(t => e(Object(c.f)(t)), [e])
+				return Object(n.useCallback)(t => e(Object(o.f)(t)), [e])
 			}
 
 			function a() {
 				const e = i();
 				return Object(n.useCallback)((t, r) => e({
 					duration: 5e3,
-					kind: o.b.Error,
+					kind: c.b.Error,
 					...r,
 					text: t
 				}), [e])
@@ -385,31 +381,31 @@
 		"./src/reddit/selectors/experiments/econ/marketplace.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return o
+				return c
 			})), r.d(t, "b", (function() {
 				return i
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/helpers/chooseVariant/index.ts"),
-				c = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const o = e => {
+				o = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
+			const c = e => {
 					return !(Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
 						experimentName: n.xe
 					}) === n.Pd)
 				},
-				i = Object(c.a)(n.ye)
+				i = Object(o.a)(n.ye)
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return c
+				return o
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const c = Object(s.a)(n.zd)
+			const o = Object(s.a)(n.zd)
 		},
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ShowcaseCollectionViewModal.4d171e77096c98a33699.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ShowcaseCollectionViewModal.d61d0ebe770dd05905c3.js.map

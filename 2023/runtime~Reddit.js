@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.299a82c8908d09f04a59.js
-// Retrieved at 4/25/2023, 9:40:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.cf276988989a6c456e74.js
+// Retrieved at 4/25/2023, 10:00:04 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1612,7 +1612,7 @@
 						ContributorRequestButton: "e2cd43543c7809ff2361",
 						SubredditSearchCarousel: "747f216a25b192290e86",
 						CommunityTopicSurvey: "3519b176d636485f0c0c",
-						ShowcaseCollectionViewModal: "4d171e77096c98a33699",
+						ShowcaseCollectionViewModal: "d61d0ebe770dd05905c3",
 						"reddit-components-BlankPost": "952cf0800bacccadcb9b",
 						editCollectionModal: "2b16bc294ccb125d71fa",
 						PennyPurchaseModal: "443853daaa01ebbbae1c",
@@ -1709,7 +1709,7 @@
 						ProfileIdCardUnblockConfirmationModal: "88345eaec863def589c8",
 						SocialLinks: "b03754114e6b604c1af3",
 						ColorPickerDropdown: "a3deef95bace61d04faf",
-						NftProductDetailsModal: "5e38773ed51077d5773e",
+						NftProductDetailsModal: "b3e2642a0d60f1d85baf",
 						GeneralGifsTooltip: "35870537e3ef190c8c6f",
 						PowerupsGifsTooltip: "2e6eab976315d27dd0be",
 						SpecialMembershipsGifsTooltip: "c86f183c1362b57fd13f",
@@ -1781,4 +1781,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.299a82c8908d09f04a59.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.cf276988989a6c456e74.js.map

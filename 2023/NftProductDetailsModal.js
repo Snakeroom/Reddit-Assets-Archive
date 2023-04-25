@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NftProductDetailsModal.5e38773ed51077d5773e.js
-// Retrieved at 3/8/2023, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NftProductDetailsModal.b3e2642a0d60f1d85baf.js
+// Retrieved at 4/25/2023, 10:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NftProductDetailsModal"], {
 		"./src/reddit/components/Econ/Marketplace/NftProductDetails/index.m.less": function(e, t, a) {
@@ -55,7 +55,7 @@
 							}
 						}),
 						v = Object(n.d)();
-					if (!a || !s) return null;
+					if (!s) return null;
 					return c.a.createElement("div", {
 						className: O.a.container
 					}, c.a.createElement(l.a, null, c.a.createElement(r.i, {
@@ -66,7 +66,7 @@
 						} : void 0,
 						itemId: s,
 						onClose: t,
-						currentUserId: a,
+						currentUserId: a || "",
 						onViewAvatar: () => {
 							t(), v(Object(d.b)({
 								activeTab: p.a.ME,
@@ -121,4 +121,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProductDetailsModal.5e38773ed51077d5773e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProductDetailsModal.b3e2642a0d60f1d85baf.js.map
