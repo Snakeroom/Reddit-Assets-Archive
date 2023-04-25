@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.58ad571969ef5f8f23ef.js
-// Retrieved at 4/24/2023, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.50c27cbd9a7a8237f5c6.js
+// Retrieved at 4/25/2023, 9:40:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -9198,12 +9198,14 @@
 							}
 					}
 					const u = !!o && !!a && "left" === r,
-						b = Object(m.g)(Object(p.a)(e).banner.backgroundColor, Object(p.a)(e).banner.backgroundImage, Object(p.a)(e).banner.backgroundImagePosition),
-						C = parseInt(Object(p.a)(e).banner.iconDimensions.customSize, 10),
-						j = `${4+C}px`;
+						b = Object(p.a)(e).banner.backgroundImage,
+						C = b && "string" == typeof b && "tiled" === Object(p.a)(e).banner.backgroundImagePosition ? b.split("?")[0] : b,
+						j = Object(m.g)(Object(p.a)(e).banner.backgroundColor, C, Object(p.a)(e).banner.backgroundImagePosition),
+						I = parseInt(Object(p.a)(e).banner.iconDimensions.customSize, 10),
+						S = `${4+I}px`;
 					return s.a.createElement(O, {
 						style: {
-							background: b,
+							background: j,
 							filter: e.shouldBlurHeaderImage ? "blur(6px)" : "none",
 							height: `${Object(p.a)(e).banner.height}px`
 						}
@@ -9226,19 +9228,19 @@
 						style: {
 							backgroundImage: `url(${n})`,
 							borderRadius: `${Object(p.a)(e).banner.iconDimensions.borderRadius}px`,
-							height: j,
-							width: j
+							height: S,
+							width: S
 						}
 					}) : s.a.createElement(h, {
 						style: {
 							padding: `${Object(p.a)(e).banner.iconDimensions.padding}px`,
 							borderRadius: `${Object(p.a)(e).banner.iconDimensions.borderRadius}px`,
-							height: j,
-							width: j
+							height: S,
+							width: S
 						}
 					})), s.a.createElement(y, {
 						style: {
-							paddingTop: 32 === C ? "4px" : "14px"
+							paddingTop: 32 === I ? "4px" : "14px"
 						}
 					}, t)), s.a.createElement(_, {
 						className: Object(i.a)(f.a.PositionedImage, {
@@ -26667,4 +26669,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.58ad571969ef5f8f23ef.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.50c27cbd9a7a8237f5c6.js.map

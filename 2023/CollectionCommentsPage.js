@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.bf11e5d8129c95d3f5c8.js
-// Retrieved at 4/24/2023, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.e9d7e60753d5b45dba53.js
+// Retrieved at 4/25/2023, 9:40:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -2930,12 +2930,14 @@
 							}
 					}
 					const m = !!o && !!a && "left" === n,
-						b = Object(u.g)(Object(p.a)(e).banner.backgroundColor, Object(p.a)(e).banner.backgroundImage, Object(p.a)(e).banner.backgroundImagePosition),
-						E = parseInt(Object(p.a)(e).banner.iconDimensions.customSize, 10),
-						k = `${4+E}px`;
+						b = Object(p.a)(e).banner.backgroundImage,
+						E = b && "string" == typeof b && "tiled" === Object(p.a)(e).banner.backgroundImagePosition ? b.split("?")[0] : b,
+						k = Object(u.g)(Object(p.a)(e).banner.backgroundColor, E, Object(p.a)(e).banner.backgroundImagePosition),
+						j = parseInt(Object(p.a)(e).banner.iconDimensions.customSize, 10),
+						P = `${4+j}px`;
 					return r.a.createElement(O, {
 						style: {
-							background: b,
+							background: k,
 							filter: e.shouldBlurHeaderImage ? "blur(6px)" : "none",
 							height: `${Object(p.a)(e).banner.height}px`
 						}
@@ -2958,19 +2960,19 @@
 						style: {
 							backgroundImage: `url(${s})`,
 							borderRadius: `${Object(p.a)(e).banner.iconDimensions.borderRadius}px`,
-							height: k,
-							width: k
+							height: P,
+							width: P
 						}
 					}) : r.a.createElement(g, {
 						style: {
 							padding: `${Object(p.a)(e).banner.iconDimensions.padding}px`,
 							borderRadius: `${Object(p.a)(e).banner.iconDimensions.borderRadius}px`,
-							height: k,
-							width: k
+							height: P,
+							width: P
 						}
 					})), r.a.createElement(y, {
 						style: {
-							paddingTop: 32 === E ? "4px" : "14px"
+							paddingTop: 32 === j ? "4px" : "14px"
 						}
 					}, t)), r.a.createElement(f, {
 						className: Object(i.a)(h.a.PositionedImage, {
@@ -11388,4 +11390,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.bf11e5d8129c95d3f5c8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.e9d7e60753d5b45dba53.js.map

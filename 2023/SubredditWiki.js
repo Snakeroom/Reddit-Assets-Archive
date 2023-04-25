@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.5e5c51b1948472e0e047.js
-// Retrieved at 4/24/2023, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.0285ba4c0eaaa2faa729.js
+// Retrieved at 4/25/2023, 9:40:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -3910,12 +3910,14 @@
 							}
 					}
 					const u = !!r && !!o && "left" === s,
-						b = Object(m.g)(Object(p.a)(e).banner.backgroundColor, Object(p.a)(e).banner.backgroundImage, Object(p.a)(e).banner.backgroundImagePosition),
-						_ = parseInt(Object(p.a)(e).banner.iconDimensions.customSize, 10),
-						O = `${4+_}px`;
+						b = Object(p.a)(e).banner.backgroundImage,
+						_ = b && "string" == typeof b && "tiled" === Object(p.a)(e).banner.backgroundImagePosition ? b.split("?")[0] : b,
+						O = Object(m.g)(Object(p.a)(e).banner.backgroundColor, _, Object(p.a)(e).banner.backgroundImagePosition),
+						w = parseInt(Object(p.a)(e).banner.iconDimensions.customSize, 10),
+						j = `${4+w}px`;
 					return i.a.createElement(E, {
 						style: {
-							background: b,
+							background: O,
 							filter: e.shouldBlurHeaderImage ? "blur(6px)" : "none",
 							height: `${Object(p.a)(e).banner.height}px`
 						}
@@ -3938,19 +3940,19 @@
 						style: {
 							backgroundImage: `url(${n})`,
 							borderRadius: `${Object(p.a)(e).banner.iconDimensions.borderRadius}px`,
-							height: O,
-							width: O
+							height: j,
+							width: j
 						}
 					}) : i.a.createElement(g, {
 						style: {
 							padding: `${Object(p.a)(e).banner.iconDimensions.padding}px`,
 							borderRadius: `${Object(p.a)(e).banner.iconDimensions.borderRadius}px`,
-							height: O,
-							width: O
+							height: j,
+							width: j
 						}
 					})), i.a.createElement(C, {
 						style: {
-							paddingTop: 32 === _ ? "4px" : "14px"
+							paddingTop: 32 === w ? "4px" : "14px"
 						}
 					}, t)), i.a.createElement(x, {
 						className: Object(a.a)(h.a.PositionedImage, {
@@ -11549,4 +11551,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.5e5c51b1948472e0e047.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.0285ba4c0eaaa2faa729.js.map
