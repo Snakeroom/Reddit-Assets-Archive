@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.354fc07bca475ccd9770.js
-// Retrieved at 4/26/2023, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.b6af112ed36245348535.js
+// Retrieved at 4/26/2023, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -10923,17 +10923,17 @@
 
 			function D(e) {
 				switch (e) {
-					case v.wf.Minimalist:
 					case v.uf.Minimalist:
-					case v.vf.Minimalist:
+					case v.sf.Minimalist:
+					case v.tf.Minimalist:
 						return P.MINIMALIST;
-					case v.wf.HotnessSignals:
-					case v.uf.SocialSignals:
-					case v.vf.SocialSignals:
+					case v.uf.HotnessSignals:
+					case v.sf.SocialSignals:
+					case v.tf.SocialSignals:
 						return P.SIGNALS;
-					case v.wf.Description:
 					case v.uf.Description:
-					case v.vf.Description:
+					case v.sf.Description:
+					case v.tf.Description:
 						return P.DESCRIPTION
 				}
 				return P.MINIMALIST
@@ -25792,7 +25792,7 @@
 						experimentEligibilitySelector: o.S,
 						experimentName: r.zd
 					});
-					return !(!t || Object(r.sg)(t))
+					return !(!t || Object(r.qg)(t))
 				},
 				a = e => {
 					return Object(s.c)(e, {
@@ -26242,7 +26242,7 @@
 				o = n("./src/reddit/selectors/experiments/index.ts");
 
 			function i(e) {
-				return e === r.vf.Minimalist || e === r.vf.Description || e === r.vf.SocialSignals
+				return e === r.tf.Minimalist || e === r.tf.Description || e === r.tf.SocialSignals
 			}
 			const a = e => {
 				const t = Object(s.c)(e, {
@@ -26265,8 +26265,8 @@
 				o = n("./src/reddit/selectors/meta.ts");
 			const i = e => Object(s.c)(e, {
 				experimentEligibilitySelector: e => !Object(o.d)(e) && "US" === Object(o.b)(e),
-				experimentName: r.tf
-			}) === r.yf.Enabled
+				experimentName: r.rf
+			}) === r.wf.Enabled
 		},
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, n) {
 			"use strict";
@@ -26307,7 +26307,7 @@
 											variant: t
 										}, {})
 									}
-								} else Object(s.d)(e, r.Ff, t)
+								} else Object(s.d)(e, r.Df, t)
 							})(t(), r.T.Control1);
 							else if (d === a.a.Treatment) return Object(o.f)(n), window.location.href = e.pathname, !1
 					})
@@ -26385,9 +26385,9 @@
 					experimentName: s.qd,
 					experimentEligibilitySelector: e => c(e, t)
 				}), e => e),
-				l = e => e === s.bg.NoCommunityWidgets,
-				u = e => e === s.bg.NoRulesModerators,
-				m = e => e === s.bg.RelatedPostsDu
+				l = e => e === s.Zf.NoCommunityWidgets,
+				u = e => e === s.Zf.NoRulesModerators,
+				m = e => e === s.Zf.RelatedPostsDu
 		},
 		"./src/reddit/selectors/experiments/uxtsIntegration.ts": function(e, t, n) {
 			"use strict";
@@ -26669,4 +26669,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.354fc07bca475ccd9770.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.b6af112ed36245348535.js.map

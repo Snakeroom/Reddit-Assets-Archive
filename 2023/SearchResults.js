@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.8738ac77a361ba93cade.js
-// Retrieved at 4/26/2023, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.13caa8d10bb037b56936.js
+// Retrieved at 4/26/2023, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, o) {
@@ -2118,25 +2118,7 @@
 				experimentEligibilitySelector: c.S,
 				experimentName: s.e
 			}) === s.c.Enabled
-		},
-		"./src/reddit/selectors/showPromotedCTA.ts": function(e, t, o) {
-			"use strict";
-			o.d(t, "a", (function() {
-				return l
-			}));
-			var s = o("./node_modules/reselect/es/index.js"),
-				n = o("./src/reddit/constants/experiments.ts"),
-				r = o("./src/reddit/helpers/chooseVariant/index.ts"),
-				c = o("./src/reddit/models/Post/index.ts"),
-				i = o("./src/reddit/selectors/posts.ts");
-			const d = e => Object(r.c)(e, {
-					experimentName: n.if,
-					experimentEligibilitySelector: r.a
-				}),
-				a = (e, t) => (t === n.pf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(c.A)(e),
-				l = Object(s.a)(i.G, d, (e, t) => a(e, t));
-			Object(s.a)((e, t) => t, d, (e, t) => a(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.8738ac77a361ba93cade.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.13caa8d10bb037b56936.js.map

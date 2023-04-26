@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow.1cac0caef055d9de7ce9.js
-// Retrieved at 4/26/2023, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow.85dcdbeefd92c3ae81ed.js
+// Retrieved at 4/26/2023, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow"], {
 		"./src/lib/assertNever.ts": function(t, e, i) {
@@ -782,7 +782,7 @@
 			})), i.d(e, "g", (function() {
 				return $
 			})), i.d(e, "c", (function() {
-				return Z
+				return J
 			})), i.d(e, "f", (function() {
 				return et
 			})), i.d(e, "b", (function() {
@@ -1009,7 +1009,7 @@
 						if (d instanceof Error) throw d;
 						n(Object(_.i)(d))
 					}
-				}, J = Object(d.a)(A.b), Z = (t, e, i) => async (n, o, s) => {
+				}, Z = Object(d.a)(A.b), J = (t, e, i) => async (n, o, s) => {
 					const c = o(),
 						a = c.structuredStyles.models[t] || {},
 						d = c.structuredStyles.draft,
@@ -1020,12 +1020,12 @@
 								...r()(d, i),
 								...e
 							};
-						n(J({
+						n(Z({
 							subredditId: t,
 							styles: o
 						}))
 					} else {
-						n(J({
+						n(Z({
 							subredditId: t,
 							styles: a
 						}))
@@ -2328,9 +2328,9 @@
 			})), i.d(e, "u", (function() {
 				return $
 			})), i.d(e, "G", (function() {
-				return J
-			})), i.d(e, "w", (function() {
 				return Z
+			})), i.d(e, "w", (function() {
+				return J
 			})), i.d(e, "k", (function() {
 				return tt
 			})), i.d(e, "F", (function() {
@@ -2673,14 +2673,14 @@
 						id: Object(d.I)(i, t)
 					}
 				}),
-				J = t => {
+				Z = t => {
 					Object(f.a)({
 						...S(t),
 						action: n.c.SKIP,
 						noun: V
 					})
 				},
-				Z = (t, e) => i => ({
+				J = (t, e) => i => ({
 					...S(i),
 					action: n.c.VIEW,
 					noun: `${V}_hover`,
@@ -3039,9 +3039,9 @@
 					experimentName: r.qd,
 					experimentEligibilitySelector: t => c(t, e)
 				}), t => t),
-				d = t => t === r.bg.NoCommunityWidgets,
-				u = t => t === r.bg.NoRulesModerators,
-				_ = t => t === r.bg.RelatedPostsDu
+				d = t => t === r.Zf.NoCommunityWidgets,
+				u = t => t === r.Zf.NoRulesModerators,
+				_ = t => t === r.Zf.RelatedPostsDu
 		},
 		"./src/reddit/selectors/tooltip.ts": function(t, e, i) {
 			"use strict";
@@ -3067,4 +3067,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow.1cac0caef055d9de7ce9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow.85dcdbeefd92c3ae81ed.js.map
