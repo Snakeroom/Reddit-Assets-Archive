@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.dfc2b42a5a33edb81650.js
-// Retrieved at 4/24/2023, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.b0cc9219566f548cfe7b.js
+// Retrieved at 4/26/2023, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "ModQueuePages~reddit-components-MediumPost", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -38826,7 +38826,7 @@
 					}, o.a.createElement("div", {
 						className: "font-bold text-18 leading-6"
 					}, s), o.a.createElement("div", {
-						className: "flex mt-sm overflow-scroll"
+						className: "flex mt-sm overflow-auto"
 					}, t.map(e => {
 						const t = n === e.pageName;
 						return o.a.createElement(c.default, {
@@ -80437,4 +80437,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.dfc2b42a5a33edb81650.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.b0cc9219566f548cfe7b.js.map

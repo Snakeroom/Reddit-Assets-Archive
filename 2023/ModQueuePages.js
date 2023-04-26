@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.b74e5e90ddace7af4b32.js
-// Retrieved at 4/24/2023, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.72304023bf1056340da1.js
+// Retrieved at 4/26/2023, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -5314,7 +5314,7 @@
 					}, r.a.createElement("div", {
 						className: "font-bold text-18 leading-6"
 					}, s), r.a.createElement("div", {
-						className: "flex mt-sm overflow-scroll"
+						className: "flex mt-sm overflow-auto"
 					}, t.map(e => {
 						const t = n === e.pageName;
 						return r.a.createElement(c.default, {
@@ -10173,4 +10173,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.b74e5e90ddace7af4b32.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.72304023bf1056340da1.js.map
