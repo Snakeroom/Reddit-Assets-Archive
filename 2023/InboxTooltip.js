@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxTooltip.e5040c840615a609fb42.js
-// Retrieved at 4/24/2023, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxTooltip.e876f3f0efb9a784dc5d.js
+// Retrieved at 4/26/2023, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxTooltip", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -98,20 +98,20 @@
 				w = i("./src/reddit/selectors/user.ts");
 			const y = e => Object(N.c)(e, {
 				experimentEligibilitySelector: w.S,
-				experimentName: k.Ab
-			}) === k.Pd;
+				experimentName: k.Bb
+			}) === k.Qd;
 			var _ = i("./src/reddit/selectors/experiments/delayDnPermission.ts"),
 				I = i("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts");
 			const E = e => Object(N.c)(e, {
-				experimentName: k.cc,
+				experimentName: k.dc,
 				experimentEligibilitySelector: N.a
-			}) === k.Pd;
-			var P = i("./src/reddit/selectors/meta.ts");
-			let F = !1;
+			}) === k.Qd;
+			var F = i("./src/reddit/selectors/meta.ts");
+			let P = !1;
 			const B = async (e, t) => {
 				const i = Object(w.R)(e);
-				if (F) return;
-				if (F = !0, Object(f.a)(e) !== d.d.NotificationsSupported) return;
+				if (P) return;
+				if (P = !0, Object(f.a)(e) !== d.d.NotificationsSupported) return;
 				await Object(u.a)();
 				navigator.serviceWorker.addEventListener("message", n => {
 					const s = n.data,
@@ -134,7 +134,7 @@
 				let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : () => {};
 				return async (n, s, o) => {
 					const c = s(),
-						u = Object(P.f)(c),
+						u = Object(F.f)(c),
 						l = E(c),
 						b = !!Object(S.a)(c),
 						f = Object(_.a)(c),
@@ -399,8 +399,8 @@
 					messagesBadgeCount: _,
 					notifications: I,
 					showBrowserNotificationsPermissionSettings: E,
-					updateInboxActivitySeenState: P,
-					userId: F
+					updateInboxActivitySeenState: F,
+					userId: P
 				} = e;
 				const B = Object(f.a)(),
 					[C, A] = Object(n.useState)("");
@@ -410,7 +410,7 @@
 							first: 5
 						})
 					}
-					S && x && (P(), B(Object(b.u)({
+					S && x && (F(), B(Object(b.u)({
 						badgeCount: O
 					})))
 				}, [S]), s.a.createElement(l.b, {
@@ -439,7 +439,7 @@
 					notifications: I,
 					setActiveOverflowMenuId: A,
 					showBrowserNotificationsPermissionSettings: E,
-					userId: F
+					userId: P
 				})
 			})
 		},
@@ -620,4 +620,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.e5040c840615a609fb42.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.e876f3f0efb9a784dc5d.js.map

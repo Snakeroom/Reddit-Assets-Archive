@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.c4611f0e4c014edc4955.js
-// Retrieved at 4/24/2023, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.b743e98cb86f71f9b3ba.js
+// Retrieved at 4/26/2023, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-InFeedPostCreation"], {
 		"./src/reddit/components/InFeedPostCreation/index.m.less": function(e, t, n) {
@@ -39,13 +39,13 @@
 				E = n("./src/reddit/selectors/experiments/onlineIndicator.ts"),
 				O = n("./src/reddit/selectors/subreddit.ts"),
 				U = n("./src/reddit/selectors/user.ts"),
-				P = n("./src/reddit/components/InFeedPostCreation/index.m.less"),
-				C = n.n(P);
-			const N = l.a.wrapped(b.a, "CurrentUserIcon", C.a);
-			var j;
+				C = n("./src/reddit/components/InFeedPostCreation/index.m.less"),
+				N = n.n(C);
+			const j = l.a.wrapped(b.a, "CurrentUserIcon", N.a);
+			var P;
 			! function(e) {
 				e.Media = "post-composer-du-media", e.Link = "post-composer-du-link"
-			}(j || (j = {}));
+			}(P || (P = {}));
 			const h = e => {
 					switch (e) {
 						case d.cc.MEDIA:
@@ -128,19 +128,19 @@
 					U = () => {
 						O(d.cc.POST), o(b)
 					},
-					P = n && s,
+					C = n && s,
 					M = t ? c.a.createElement(x.default, {
-						className: C.a.UserIconWrapper,
+						className: N.a.UserIconWrapper,
 						to: t.url
-					}, c.a.createElement(N, {
-						className: C.a.UserIcon,
-						shouldShowPresenceIndicator: P
+					}, c.a.createElement(j, {
+						className: N.a.UserIcon,
+						shouldShowPresenceIndicator: C
 					})) : null;
 				return c.a.createElement("div", {
-					className: C.a.Container
+					className: N.a.Container
 				}, M, c.a.createElement("input", {
 					name: "createPost",
-					className: C.a.Input,
+					className: N.a.Input,
 					onChange: U,
 					onClick: U,
 					onKeyPress: U,
@@ -149,38 +149,38 @@
 					}),
 					type: "text"
 				}), E.media && c.a.createElement(I.t, {
-					className: C.a.Button,
+					className: N.a.Button,
 					"aria-label": L(),
 					priority: I.c.Plain,
 					kind: I.b.InternalLink,
 					size: I.d.M,
-					id: j.Media,
+					id: P.Media,
 					onClick: () => O(d.cc.MEDIA),
-					onMouseEnter: () => m(j.Media),
-					onMouseLeave: () => m(j.Media),
+					onMouseEnter: () => m(P.Media),
+					onMouseLeave: () => m(P.Media),
 					to: b + h(d.cc.MEDIA),
 					Icon: Object(_.b)("image_post"),
 					isSquare: !0
 				}, c.a.createElement(p.c, {
 					caretOnTop: !0,
-					tooltipId: j.Media,
+					tooltipId: P.Media,
 					text: L()
 				})), E.link && c.a.createElement(I.t, {
-					className: C.a.Button,
+					className: N.a.Button,
 					priority: I.c.Plain,
 					kind: I.b.InternalLink,
 					size: I.d.M,
 					"aria-label": v(),
-					id: j.Link,
+					id: P.Link,
 					onClick: () => O(d.cc.LINK_ONLY),
-					onMouseEnter: () => m(j.Link),
-					onMouseLeave: () => m(j.Link),
+					onMouseEnter: () => m(P.Link),
+					onMouseLeave: () => m(P.Link),
 					to: b + h(d.cc.LINK_ONLY),
 					Icon: Object(_.b)("link_post"),
 					isSquare: !0
 				}, c.a.createElement(p.c, {
 					caretOnTop: !0,
-					tooltipId: j.Media,
+					tooltipId: P.Media,
 					text: L()
 				})))
 			}))
@@ -255,30 +255,30 @@
 			const o = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.gf
-					}) === r.Pd
+						experimentName: r.hf
+					}) === r.Qd
 				},
 				i = e => {
 					if (Object(c.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.ff
-					}) === r.Pd
+						experimentName: r.gf
+					}) === r.Qd
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.Te
-					}) === r.Pd
+						experimentName: r.Ue
+					}) === r.Qd
 				},
 				d = e => {
 					if (Object(c.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.Se
-					}) === r.Pd
+						experimentName: r.Te
+					}) === r.Qd
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.c4611f0e4c014edc4955.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.b743e98cb86f71f9b3ba.js.map

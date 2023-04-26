@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.5af26a38c7ae590170b2.js
-// Retrieved at 4/24/2023, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.16ee5ab6f09ee432b12d.js
+// Retrieved at 4/26/2023, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -215,16 +215,16 @@
 			const E = Object(c.a)(e => {
 				const t = Object(v.c)(e, {
 					experimentEligibilitySelector: v.a,
-					experimentName: f.De
+					experimentName: f.Ee
 				});
-				return Object(f.rg)(t) ? void 0 : t
+				return Object(f.sg)(t) ? void 0 : t
 			}, e => {
 				const t = Object(v.c)(e, {
 					experimentEligibilitySelector: v.a,
-					experimentName: f.Ee
+					experimentName: f.Fe
 				});
-				return Object(f.rg)(t) ? void 0 : t
-			}, (e, t) => e === f.Ge.Enabled && t === f.Ge.Enabled);
+				return Object(f.sg)(t) ? void 0 : t
+			}, (e, t) => e === f.He.Enabled && t === f.He.Enabled);
 			var x = s("./src/config.ts");
 			var y = s("./src/reddit/selectors/user.ts");
 			const O = e => {
@@ -461,8 +461,8 @@
 				B = s("./src/lib/objectSelector/index.ts"),
 				V = s("./src/lib/onFocusAndVisibilityChange/index.ts"),
 				W = s("./src/lib/sentry/index.ts"),
-				U = s("./src/lib/truncateText/index.ts"),
-				H = s("./src/reddit/actions/post.ts"),
+				H = s("./src/lib/truncateText/index.ts"),
+				U = s("./src/reddit/actions/post.ts"),
 				F = s("./src/reddit/components/AdViewability/index.tsx"),
 				G = s("./src/reddit/components/Governance/VaultActionLink/async.ts"),
 				K = s("./src/reddit/components/HTML5StreamPlayer/index.tsx"),
@@ -734,7 +734,7 @@
 							}))
 						}, [t, m]),
 						R = Object(r.useCallback)(e => {
-							t(Object(H.y)(h, oe.a.GalleryItemImpression, `Slide${e}`))
+							t(Object(U.y)(h, oe.a.GalleryItemImpression, `Slide${e}`))
 						}, [t, h]),
 						B = Object(r.useCallback)(() => {
 							t(Object(ie.i)({
@@ -818,7 +818,7 @@
 							o = p && p[i];
 						if (!o || !o.s) return null;
 						const r = t.caption ? t.caption : g,
-							d = Object(U.a)(v ? `${v} - ${r}` : r, 300, _.ob),
+							d = Object(H.a)(v ? `${v} - ${r}` : r, 300, _.ob),
 							c = [...o && o.s ? [o.s] : [], ...o && o.p ? o.p : []],
 							u = ce(n, c);
 						if (!u) return null;
@@ -899,8 +899,8 @@
 				Be = s("./src/reddit/constants/componentSizes.ts"),
 				Ve = s("./src/reddit/helpers/styles/mixins/loading.ts"),
 				We = s("./src/reddit/components/Media/RichTextContainer/index.m.less"),
-				Ue = s.n(We);
-			class He extends l.a.Component {
+				He = s.n(We);
+			class Ue extends l.a.Component {
 				componentDidMount() {
 					this.loadRichTextContentIfNeeded()
 				}
@@ -912,10 +912,10 @@
 						isLoading: !0
 					});
 					return l.a.createElement("div", {
-						className: Ue.a.placeholder
+						className: He.a.placeholder
 					}, [1, 2, 3].map(t => l.a.createElement("div", {
 						key: t,
-						className: Ue.a.placeholderParagraph
+						className: He.a.placeholderParagraph
 					}, l.a.createElement("div", {
 						className: e
 					}), l.a.createElement("div", {
@@ -926,8 +926,8 @@
 				}
 			}
 			var Fe = Object(d.b)(null, e => ({
-				onLoadRichTextContentIfNeeded: t => e(Object(H.x)(t))
-			}))(He);
+				onLoadRichTextContentIfNeeded: t => e(Object(U.x)(t))
+			}))(Ue);
 
 			function Ge() {
 				return (Ge = Object.assign || function(e) {
@@ -953,9 +953,9 @@
 						...p
 					} = e;
 					const h = {
-							[Ue.a.richTextContainerFull]: u,
-							[Ue.a.richTextContainerTitleOnly]: d && !u,
-							[Ue.a.richTextContainer]: !u && !d
+							[He.a.richTextContainerFull]: u,
+							[He.a.richTextContainerTitleOnly]: d && !u,
+							[He.a.richTextContainer]: !u && !d
 						},
 						m = {};
 					u || (m.maxHeight = d ? `${de.m}px` : o ? `${de.l}px` : `${de.k}px`), n && (m.maxWidth = `${Be.d}px`);
@@ -1173,8 +1173,8 @@
 				}).apply(this, arguments)
 			}
 			const {
-				fbt: Ut
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), Ht = Object(d.b)(() => Object(c.c)({
+				fbt: Ht
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), Ut = Object(d.b)(() => Object(c.c)({
 				autoplayPref: y.d
 			}), (e, t) => {
 				let {
@@ -1200,7 +1200,7 @@
 					setAutoplayPref: t => e(_t.s(t))
 				}
 			});
-			var Ft = Object(r.memo)(Ht(Object(At.b)(e => {
+			var Ft = Object(r.memo)(Ut(Object(At.b)(e => {
 					const t = Object(r.useRef)(),
 						i = Object(r.useRef)(),
 						n = Object(Z.a)(),
@@ -1356,7 +1356,7 @@
 							alignItems: "center",
 							justifyContent: "center"
 						}
-					}), Ut._("Sorry, something went wrong when loading this video.", null, {
+					}), Ht._("Sorry, something went wrong when loading this video.", null, {
 						hk: "9N3Tr"
 					}));
 					const P = c && !p && (Object(Rt.z)(v) || !(e.isSponsored && Object(Mt.hasAcceptableAds)()));
@@ -1476,8 +1476,8 @@
 							var i;
 							return !!Et.includes(null === (i = null == t ? void 0 : t.meta) || void 0 === i ? void 0 : i.name) && (!s.isSponsored || Object(v.c)(e, {
 								experimentEligibilitySelector: v.a,
-								experimentName: f.Qc
-							}) === f.Pd)
+								experimentName: f.Rc
+							}) === f.Qd)
 						})(e, s, i)
 					},
 					isNSFW: (e, t) => {
@@ -1499,9 +1499,9 @@
 					isOptionalTextExpEnabled: xt.a
 				}),
 				rs = Object(d.b)(as, e => ({
-					fireAdPixelsOfType: (t, s) => e(Object(H.y)(t, s)),
-					openPost: t => e(Object(H.K)(t)),
-					openPostLink: t => e(Object(H.Z)(Object(mt.b)(t.permalink), t.id))
+					fireAdPixelsOfType: (t, s) => e(Object(U.y)(t, s)),
+					openPost: t => e(Object(U.K)(t)),
+					openPostLink: t => e(Object(U.Z)(Object(mt.b)(t.permalink), t.id))
 				})),
 				ls = Object(B.b)(e => ({
 					renderingObjectInfo: e.post,
@@ -1654,7 +1654,7 @@
 					} = this.props;
 					if (!n) return;
 					let o = "";
-					return i && (o += i), t && e ? o += `${zt}${t}` : s.title && (o += `${zt}${s.title}`), o.length > Yt ? Object(U.a)(o, Yt, _.ob) : o
+					return i && (o += i), t && e ? o += `${zt}${t}` : s.title && (o += `${zt}${s.title}`), o.length > Yt ? Object(H.a)(o, Yt, _.ob) : o
 				}
 				getVideoExpandoMaxDimensions() {
 					let e, t = Math.max(de.j, this.state.viewportHeight),
@@ -1779,8 +1779,8 @@
 						isBackgrounded: D,
 						shouldPause: B,
 						shouldStop: V,
-						viewportWidth: U
-					} = this.state, H = E && x;
+						viewportWidth: H
+					} = this.state, U = E && x;
 					if (!T.media) return null;
 					const K = T.isSponsored || Object(L.u)(C);
 					let $;
@@ -1807,7 +1807,7 @@
 							...ie,
 							className: n,
 							forceAspectRatio: p,
-							viewportWidth: U
+							viewportWidth: H
 						},
 						oe = this.shouldBlur(),
 						ae = !((null === (t = T.pollData) || void 0 === t ? void 0 : t.isPrediction) && !h),
@@ -1831,7 +1831,7 @@
 						imageClassName: this.props.imageBoxClassName,
 						isListing: b,
 						isNSFW: x,
-						isNsfwBlockingModalEligible: H,
+						isNsfwBlockingModalEligible: U,
 						isSpoiler: O,
 						isVideoThumbnail: !!T.media && T.media.type === de.o.VIDEO,
 						onClick: this.onClickRevealBlurred,
@@ -1868,7 +1868,7 @@
 								flairStyleTemplate: c,
 								isListing: b,
 								isNSFW: x,
-								isNsfwBlockingModalEligible: H,
+								isNsfwBlockingModalEligible: U,
 								isSpoiler: O,
 								mediaMetadata: T.media.mediaMetadata,
 								onClickRevealBlurred: this.onClickRevealBlurred,
@@ -2132,7 +2132,7 @@
 								className: this.props.imageBoxClassName,
 								isListing: b,
 								isNSFW: x,
-								isNsfwBlockingModalEligible: H,
+								isNsfwBlockingModalEligible: U,
 								isSpoiler: O,
 								shouldBlur: oe,
 								onClickRevealBlurred: this.onClickRevealBlurred,
@@ -2320,11 +2320,11 @@
 				return !(!l || d) && (e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: i.Ob
-					}) === i.Pd
+						experimentName: i.Pb
+					}) === i.Qd
 				})(e)
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.5af26a38c7ae590170b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.16ee5ab6f09ee432b12d.js.map

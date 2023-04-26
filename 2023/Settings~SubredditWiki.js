@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.49270e45be7957200d4a.js
-// Retrieved at 4/24/2023, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.b381e51b7922fb0b1452.js
+// Retrieved at 4/26/2023, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, r) {
@@ -2728,28 +2728,6 @@
 				})))
 			}
 		},
-		"./src/reddit/selectors/experiments/antievil/index.tsx": function(e, t, r) {
-			"use strict";
-			r.d(t, "b", (function() {
-				return a
-			})), r.d(t, "a", (function() {
-				return o
-			}));
-			var n = r("./src/reddit/constants/experiments.ts"),
-				s = r("./src/reddit/helpers/chooseVariant/index.ts");
-			const a = e => {
-					return Object(s.c)(e, {
-						experimentEligibilitySelector: s.a,
-						experimentName: n.J
-					}) === n.Pd
-				},
-				o = e => {
-					return Object(s.c)(e, {
-						experimentEligibilitySelector: s.a,
-						experimentName: n.o
-					}) === n.Pd
-				}
-		},
 		"./src/redditGQL/operations/DeleteSubredditMuteSettings.json": function(e) {
 			e.exports = JSON.parse('{"id":"c518a45f60a5"}')
 		},
@@ -2764,4 +2742,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.49270e45be7957200d4a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.b381e51b7922fb0b1452.js.map

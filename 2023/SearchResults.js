@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.be9471e2427f66aeb0b4.js
-// Retrieved at 4/24/2023, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.8738ac77a361ba93cade.js
+// Retrieved at 4/26/2023, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, o) {
@@ -2130,13 +2130,13 @@
 				c = o("./src/reddit/models/Post/index.ts"),
 				i = o("./src/reddit/selectors/posts.ts");
 			const d = e => Object(r.c)(e, {
-					experimentName: n.hf,
+					experimentName: n.if,
 					experimentEligibilitySelector: r.a
 				}),
-				a = (e, t) => (t === n.of.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(c.A)(e),
+				a = (e, t) => (t === n.pf.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored)) && !Object(c.A)(e),
 				l = Object(s.a)(i.G, d, (e, t) => a(e, t));
 			Object(s.a)((e, t) => t, d, (e, t) => a(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.be9471e2427f66aeb0b4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.8738ac77a361ba93cade.js.map
