@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.86ee95116758fcaa6df5.js
-// Retrieved at 4/27/2023, 3:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e8e9927f384eeab0be4a.js
+// Retrieved at 5/1/2023, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3659,11 +3659,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("185842"),
+				buildNumber: Object(r.c)("185874"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1682622599"),
+				buildTimestamp: Object(r.b)("1682957350"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6414,14 +6414,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c42f9b0b16557a778d11fd013849971a9feb5363f-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c8de3953e68cf9e250d752129f72b03b9332edd49-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "42f9b0b16557a778d11fd013849971a9feb5363f-production",
+						release: "8de3953e68cf9e250d752129f72b03b9332edd49-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6974,7 +6974,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "42f9b0b16557a778d11fd013849971a9feb5363f-production",
+							releaseClient: "8de3953e68cf9e250d752129f72b03b9332edd49-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -25825,141 +25825,146 @@
 		"./src/reddit/helpers/installGoodVisitFeedSearchTracker/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "g", (function() {
-				return _
-			})), i.d(t, "a", (function() {
-				return m
-			})), i.d(t, "c", (function() {
-				return p
-			})), i.d(t, "d", (function() {
-				return h
-			})), i.d(t, "f", (function() {
 				return f
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "a", (function() {
 				return b
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "c", (function() {
+				return g
+			})), i.d(t, "d", (function() {
 				return v
+			})), i.d(t, "f", (function() {
+				return w
+			})), i.d(t, "b", (function() {
+				return y
+			})), i.d(t, "e", (function() {
+				return T
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
-			var n = i("./src/lib/constants/index.ts"),
-				r = i("./src/lib/makeSearchKey/index.ts"),
-				s = i("./src/reddit/helpers/localStorage/index.ts"),
-				o = i("./src/reddit/helpers/trackers/global.ts"),
-				d = i("./src/reddit/selectors/telemetry.ts"),
-				a = i("./src/telemetry/index.ts"),
-				l = i("./node_modules/uuid/dist/esm-browser/v4.js"),
-				u = i("./src/reddit/helpers/clickSourceData/index.ts");
-			const c = 5e3,
-				_ = {};
+			var n = i("./node_modules/lodash/mapKeys.js"),
+				r = i.n(n),
+				s = i("./node_modules/lodash/snakeCase.js"),
+				o = i.n(s),
+				d = i("./src/lib/constants/index.ts"),
+				a = i("./src/lib/makeSearchKey/index.ts"),
+				l = i("./src/reddit/helpers/localStorage/index.ts"),
+				u = i("./src/reddit/helpers/trackers/global.ts"),
+				c = i("./src/reddit/selectors/telemetry.ts"),
+				_ = i("./src/telemetry/index.ts"),
+				m = i("./node_modules/uuid/dist/esm-browser/v4.js"),
+				p = i("./src/reddit/helpers/clickSourceData/index.ts");
+			const h = 5e3,
+				f = {};
 			"undefined" != typeof window && window.addEventListener("beforeunload", (function() {
 				var e, t;
-				for (const i of Object.values(_)) i.completed || (null === (e = i.goodVisitTimer) || void 0 === e || e.clear(), null === (t = i.downtimeTimer) || void 0 === t || t.clear())
+				for (const i of Object.values(f)) i.completed || (null === (e = i.goodVisitTimer) || void 0 === e || e.clear(), null === (t = i.downtimeTimer) || void 0 === t || t.clear())
 			}));
-			const m = (e, t, i, n, s, d, l, u) => {
-					if (_[e]) return;
-					_[e] = {
+			const b = (e, t, i, n, r, s, o, d) => {
+					if (f[e]) return;
+					f[e] = {
 						completed: !1
-					}, v(t, i(), Object(r.e)((null == d ? void 0 : d.queryParams) || {}), s);
-					const c = _[e],
-						m = null != l ? l : 15e3,
-						p = null != u ? u : 3e4;
-					c.goodVisitTimer = new w(m, () => {
+					}, T(t, i(), Object(a.e)((null == s ? void 0 : s.queryParams) || {}), r);
+					const l = f[e],
+						c = null != o ? o : 15e3,
+						m = null != d ? d : 3e4;
+					l.goodVisitTimer = new S(c, () => {
 						var e;
-						null === (e = c.goodVisitTimer) || void 0 === e || e.clear(), Object(a.a)(Object(o.d)(m, t, n, s, d)(i())), c.goodVisitTimer = new w(p - m, () => {
-							var e, r;
-							null === (e = c.goodVisitTimer) || void 0 === e || e.clear(), null === (r = c.downtimeTimer) || void 0 === r || r.clear(), Object(a.a)(Object(o.d)(p, t, n, s, d)(i())), c.completed = !0
+						null === (e = l.goodVisitTimer) || void 0 === e || e.clear(), Object(_.a)(Object(u.d)(c, t, n, r, s)(i())), l.goodVisitTimer = new S(m - c, () => {
+							var e, o;
+							null === (e = l.goodVisitTimer) || void 0 === e || e.clear(), null === (o = l.downtimeTimer) || void 0 === o || o.clear(), Object(_.a)(Object(u.d)(m, t, n, r, s)(i())), l.completed = !0
 						})
 					})
 				},
-				p = e => {
+				g = e => {
 					var t;
-					const i = _[e];
-					i && (i.completed || (null === (t = i.goodVisitTimer) || void 0 === t || t.pause(), i.downtimeTimer = new w(3e5, () => {
+					const i = f[e];
+					i && (i.completed || (null === (t = i.goodVisitTimer) || void 0 === t || t.pause(), i.downtimeTimer = new S(3e5, () => {
 						var e, t;
 						null === (e = i.goodVisitTimer) || void 0 === e || e.clear(), null === (t = i.downtimeTimer) || void 0 === t || t.clear(), i.completed = !0
 					})))
 				},
-				h = e => {
+				v = e => {
 					var t, i;
-					const n = _[e];
+					const n = f[e];
 					n && (n.completed || (null === (t = n.downtimeTimer) || void 0 === t || t.clear(), null === (i = n.goodVisitTimer) || void 0 === i || i.reset()))
 				};
 
-			function f(e) {
+			function w(e) {
 				const t = e.platform.currentPage;
 				if (!t) return;
-				const i = Object(r.e)(t.queryParams),
-					n = s.r();
-				if ((null == n ? void 0 : n.source) === u.a.SEARCH_DROPDOWN && new Date(null == n ? void 0 : n.expires) >= new Date) return void v(u.a.SEARCH_DROPDOWN, e, i);
-				const o = d.v(t);
-				o && v(o, e, i)
+				const i = Object(a.e)(t.queryParams),
+					n = l.r();
+				if ((null == n ? void 0 : n.source) === p.a.SEARCH_DROPDOWN && new Date(null == n ? void 0 : n.expires) >= new Date) return void T(p.a.SEARCH_DROPDOWN, e, i);
+				const r = c.v(t);
+				r && T(r, e, i)
 			}
-			const b = function(e, t) {
+			const y = function(e, t) {
 				let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 15e3,
-					r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 3e4;
-				var s;
+					n = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 3e4;
+				var r;
 				if (window.addEventListener("beforeunload", () => {
-						f(t())
+						w(t())
 					}), !e) return;
-				const o = e.source,
-					l = new Date(e.expires) <= new Date,
-					u = t(),
-					c = null === (s = u.platform.currentPage) || void 0 === s ? void 0 : s.routeMatch,
-					m = c && d.w(c),
-					p = n.R.has(o) && m && n.S.has(m) && !l;
-				if (!p) return;
-				if (_[e.key]) return;
-				_[e.key] = {
+				const s = e.source,
+					o = new Date(e.expires) <= new Date,
+					a = t(),
+					l = null === (r = a.platform.currentPage) || void 0 === r ? void 0 : r.routeMatch,
+					u = l && c.w(l),
+					m = d.R.has(s) && u && d.S.has(u) && !o;
+				if (!m) return;
+				if (f[e.key]) return;
+				f[e.key] = {
 					completed: !1
 				};
-				const h = _[e.key];
-				h.goodVisitTimer = new w(i, () => {
-					var n;
-					null === (n = h.goodVisitTimer) || void 0 === n || n.clear(), Object(a.a)(g(t(), e, i)), h.goodVisitTimer = new w(r - i, () => {
-						var i, n;
-						null === (i = h.goodVisitTimer) || void 0 === i || i.clear(), null === (n = h.downtimeTimer) || void 0 === n || n.clear(), Object(a.a)(g(t(), e, r)), h.completed = !0
+				const p = f[e.key];
+				p.goodVisitTimer = new S(i, () => {
+					var r;
+					null === (r = p.goodVisitTimer) || void 0 === r || r.clear(), Object(_.a)(E(t(), e, i)), p.goodVisitTimer = new S(n - i, () => {
+						var i, r;
+						null === (i = p.goodVisitTimer) || void 0 === i || i.clear(), null === (r = p.downtimeTimer) || void 0 === r || r.clear(), Object(_.a)(E(t(), e, n)), p.completed = !0
 					})
 				})
 			};
 
-			function g(e, t, i) {
-				var n, r, s, d, a;
-				const l = Object(o.d)(i, t.source, (null === (n = e.platform.currentPage) || void 0 === n ? void 0 : n.routeMatch) || void 0, null === (s = null === (r = t.eventPayload) || void 0 === r ? void 0 : r.timer) || void 0 === s ? void 0 : s.referrerCorrelationId)(e);
+			function E(e, t, i) {
+				var n, r, s, o, d;
+				const a = Object(u.d)(i, t.source, (null === (n = e.platform.currentPage) || void 0 === n ? void 0 : n.routeMatch) || void 0, null === (s = null === (r = t.eventPayload) || void 0 === r ? void 0 : r.timer) || void 0 === s ? void 0 : s.referrerCorrelationId)(e);
 				return {
-					...l,
+					...a,
 					search: {
-						...l.search,
-						...(null === (d = t.eventPayload) || void 0 === d ? void 0 : d.search) || {}
+						...a.search,
+						...(null === (o = t.eventPayload) || void 0 === o ? void 0 : o.search) || {}
 					},
 					timer: {
-						...l.timer,
-						...(null === (a = t.eventPayload) || void 0 === a ? void 0 : a.timer) || {}
+						...a.timer,
+						...(null === (d = t.eventPayload) || void 0 === d ? void 0 : d.timer) || {}
 					}
 				}
 			}
 
-			function v(e, t, i, r) {
-				let a;
-				if (n.Q.has(e)) {
-					const n = Object(o.c)(e);
-					a = {
-						search: t && i ? d.db(t, i, n) : {}
+			function T(e, t, i, n) {
+				let s;
+				if (d.Q.has(e)) {
+					const n = Object(u.c)(e),
+						d = t && i ? c.db(t, i, n) : {};
+					s = {
+						search: r()(d, (e, t) => o()(t))
 					}
 				} else {
-					if (!n.P.has(e)) return;
-					a = {
+					if (!d.P.has(e)) return;
+					s = {
 						timer: {
-							referrerCorrelationId: r
+							referrer_correlation_id: n
 						}
 					}
 				}
-				Object(s.yb)({
-					key: Object(l.a)(),
+				Object(l.yb)({
+					key: Object(m.a)(),
 					source: e,
-					expires: new Date((new Date).getTime() + c),
-					eventPayload: a
+					expires: new Date((new Date).getTime() + h),
+					eventPayload: s
 				})
 			}
-			class w {
+			class S {
 				constructor(e, t) {
 					this.remaining = e, this.callback = t, this.reset()
 				}
@@ -50877,4 +50882,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.86ee95116758fcaa6df5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e8e9927f384eeab0be4a.js.map
