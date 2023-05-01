@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.3203aa743ef52b0931ed.js
-// Retrieved at 4/26/2023, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.e2cae45b1b1ba2154511.js
+// Retrieved at 5/1/2023, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -3433,8 +3433,8 @@
 					Object(s.useEffect)(() => {
 						d && c(Object(G.getSubredditCurrentUserPowerupsFlairs)(n))
 					}, [c, n, d]);
-					return t && (r || d) ? i.a.createElement(se, null, i.a.createElement(oe, null, re._("user flair preview", null, {
-						hk: "3aBytK"
+					return t && (r || d) ? i.a.createElement(se, null, i.a.createElement(oe, null, re._("preview", null, {
+						hk: "2so8Zj"
 					}), i.a.createElement(ue, {
 						onClick: () => {
 							if (d) c(Object(K.a)());
@@ -6058,4 +6058,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.3203aa743ef52b0931ed.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.e2cae45b1b1ba2154511.js.map

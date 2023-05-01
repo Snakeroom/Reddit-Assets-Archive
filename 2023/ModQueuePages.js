@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.f6c852f89a7635fa8f44.js
-// Retrieved at 4/26/2023, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.a70c8a09d3faeb06ff49.js
+// Retrieved at 5/1/2023, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -5206,15 +5206,15 @@
 				}),
 				h = e => [{
 					pageName: i.nc.UserFlair,
-					displayName: () => s.fbt._("User Flair", null, {
-						hk: "3m5bvJ"
+					displayName: () => s.fbt._("Setup", null, {
+						hk: "33R1cD"
 					}),
 					href: `/r/${e}/about/userflair`,
 					eventNoun: "user-flair-settings"
 				}, {
 					pageName: i.nc.Flair,
-					displayName: () => s.fbt._("Grant User Flair", null, {
-						hk: "cSIqR"
+					displayName: () => s.fbt._("Assign", null, {
+						hk: "23QqpZ"
 					}),
 					href: `/r/${e}/about/flair`,
 					eventNoun: "grant-user-flair"
@@ -10151,4 +10151,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.f6c852f89a7635fa8f44.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.a70c8a09d3faeb06ff49.js.map
