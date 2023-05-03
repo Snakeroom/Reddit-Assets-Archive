@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.a5565adb5793683054b2.js
-// Retrieved at 4/26/2023, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.3eec61444ca51b7f6f7f.js
+// Retrieved at 5/3/2023, 5:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -1208,22 +1208,23 @@
 						{
 							autoplayPref: c,
 							hlsSource: u,
-							isOverlay: p,
-							onPlayedExpanded: h,
-							onPlayedWithSound: m,
-							onWatchedPercent: g,
-							onWatchedSeconds: b,
-							onVideoStarted: f,
-							pageLayer: v,
-							post: E,
-							postId: x,
-							posterUrl: y,
-							setAutoplayPref: O,
-							scrubberThumbSource: w
+							isGif: p,
+							isOverlay: h,
+							onPlayedExpanded: m,
+							onPlayedWithSound: g,
+							onWatchedPercent: b,
+							onWatchedSeconds: f,
+							onVideoStarted: v,
+							pageLayer: E,
+							post: x,
+							postId: y,
+							posterUrl: O,
+							setAutoplayPref: w,
+							scrubberThumbSource: I
 						} = e || {},
-						I = u || void 0,
-						S = Object(d.e)(Vt.i),
-						C = !p && S;
+						S = u || void 0,
+						C = Object(d.e)(Vt.i),
+						T = !h && C;
 					Object(r.useEffect)(() => {
 						"ready" === o && async function() {
 							try {
@@ -1231,26 +1232,26 @@
 							} catch (e) {
 								console.error("Error importing shreddit-player", e), a("error"), W.c.withScope(t => {
 									t.setExtra("info", {
-										postId: x
+										postId: y
 									}), W.c.captureException(e)
 								})
 							}
 						}()
-					}, [o, x]), Object(r.useEffect)(() => {
+					}, [o, y]), Object(r.useEffect)(() => {
 						if ("done" !== o) return;
 						const e = e => {
 								e.stopPropagation();
 								const {
 									details: t
 								} = (null == e ? void 0 : e.detail) || {};
-								if (x && t) {
+								if (y && t) {
 									const {
 										action: e,
 										noun: s,
 										media: i,
 										playback: o
 									} = t;
-									n(Object(Bt.b)(x, e, s, i, null == o ? void 0 : o.id)), E.isSponsored && function(e) {
+									n(Object(Bt.b)(y, e, s, i, null == o ? void 0 : o.id)), x.isSponsored && function(e) {
 										let {
 											action: t,
 											noun: s,
@@ -1274,17 +1275,17 @@
 									}({
 										action: e,
 										noun: s,
-										onPlayedExpanded: h,
-										onPlayedWithSound: m,
-										onWatchedPercent: g,
-										onWatchedSeconds: b,
-										onVideoStarted: f
+										onPlayedExpanded: m,
+										onPlayedWithSound: g,
+										onWatchedPercent: b,
+										onWatchedSeconds: f,
+										onVideoStarted: v
 									})
 								}
 							},
 							s = e => {
 								var t, s;
-								void 0 !== typeof(null === (t = e.detail) || void 0 === t ? void 0 : t.newValue) && O(null === (s = e.detail) || void 0 === s ? void 0 : s.newValue)
+								void 0 !== typeof(null === (t = e.detail) || void 0 === t ? void 0 : t.newValue) && w(null === (s = e.detail) || void 0 === s ? void 0 : s.newValue)
 							},
 							{
 								current: i
@@ -1292,17 +1293,17 @@
 						return null == i || i.addEventListener("track-event", e), null == i || i.addEventListener("change-autoplay-pref", s), () => {
 							null == i || i.removeEventListener("track-event", e), null == i || i.removeEventListener("change-autoplay-pref", s)
 						}
-					}, [o, t, h, m, f, g, b, x, E.isSponsored, n, O]), Object(r.useEffect)(() => {
+					}, [o, t, m, g, v, b, f, y, x.isSponsored, n, w]), Object(r.useEffect)(() => {
 						var e;
 						if ("done" !== o) return;
 						const {
 							current: t
 						} = i;
-						if (C && (null === (e = null == t ? void 0 : t.hlsElement) || void 0 === e ? void 0 : e.state.canPlay)) try {
+						if (T && (null === (e = null == t ? void 0 : t.hlsElement) || void 0 === e ? void 0 : e.state.canPlay)) try {
 							null == t || t.pause()
 						} catch (s) {}
-					}, [o, C, i]);
-					const T = {
+					}, [o, T, i]);
+					const j = {
 							cursor: "default",
 							height: "100%",
 							width: "100%",
@@ -1310,14 +1311,14 @@
 							maxWidth: "100%",
 							color: "white"
 						},
-						j = {
+						P = {
 							onClick: e => {
 								e.stopPropagation()
 							},
-							style: T,
+							style: j,
 							"data-testid": "shreddit-player-wrapper"
 						};
-					if ("ready" === o || "importing" === o) return l.a.createElement("div", Wt({}, j, {
+					if ("ready" === o || "importing" === o) return l.a.createElement("div", Wt({}, P, {
 						style: {
 							backgroundColor: "black",
 							height: "100%",
@@ -1348,9 +1349,9 @@
 						strokeDashoffset: 50,
 						pathLength: "100"
 					}))));
-					if ("error" === o) return l.a.createElement("div", Wt({}, j, {
+					if ("error" === o) return l.a.createElement("div", Wt({}, P, {
 						style: {
-							...T,
+							...j,
 							backgroundColor: "black",
 							display: "flex",
 							alignItems: "center",
@@ -1359,21 +1360,22 @@
 					}), Ht._("Sorry, something went wrong when loading this video.", null, {
 						hk: "9N3Tr"
 					}));
-					const P = c && !p && (Object(Rt.z)(v) || !(e.isSponsored && Object(Mt.hasAcceptableAds)()));
-					return l.a.createElement("div", j, l.a.createElement("media-telemetry-observer", {
+					const N = c && !h && (Object(Rt.z)(E) || !(e.isSponsored && Object(Mt.hasAcceptableAds)()));
+					return l.a.createElement("div", P, l.a.createElement("media-telemetry-observer", {
 						ref: t
 					}, l.a.createElement("shreddit-player", {
 						ref: i,
-						autoplay: P || void 0,
+						autoplay: N || void 0,
 						"autoplay-pref": c || void 0,
-						"play-out-of-viewport": Object(Rt.z)(v) || void 0,
-						poster: y,
-						preview: w || void 0,
+						gif: p || void 0,
+						"play-out-of-viewport": Object(Rt.z)(E) || void 0,
+						poster: O,
+						preview: I || void 0,
 						"show-autoplay-toggle": !0,
-						src: I,
+						src: S,
 						ui: "desktop"
 					}, l.a.createElement("source", {
-						src: I,
+						src: S,
 						type: "application/vnd.apple.mpegURL"
 					}))))
 				})), (function(e, t) {
@@ -2030,6 +2032,7 @@
 									post: T,
 									postId: T.id,
 									hlsSource: T.media.hlsUrl,
+									isGif: T.media.isGif,
 									isSponsored: T.isSponsored,
 									pageLayer: this.props.pageLayer,
 									posterUrl: T.media.posterUrl,
@@ -2326,4 +2329,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.a5565adb5793683054b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.3eec61444ca51b7f6f7f.js.map
