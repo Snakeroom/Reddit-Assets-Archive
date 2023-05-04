@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.53bb19565f76621b6020.js
-// Retrieved at 4/19/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.1fe0aea2f48d9ad35968.js
+// Retrieved at 5/3/2023, 11:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -10570,7 +10570,7 @@
 		"./src/chat/components/Root/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return z
+				return K
 			}));
 			var a = n("./src/lib/classNames/index.ts"),
 				s = n("./node_modules/react/index.js"),
@@ -10668,18 +10668,19 @@
 				R = n("./src/chat/actions/message/unreadCount.ts"),
 				U = n("./src/chat/actions/tracking.ts"),
 				P = n("./src/chat/components/MediaPreview/index.tsx"),
-				B = n("./src/chat/models/Channel/utils.ts");
+				B = n("./src/chat/models/Channel/utils.ts"),
+				H = n("./src/chat/selectors/user.ts");
 			! function(e) {
 				e.CLOSE = "matrix-chat.close", e.MINIMIZE = "matrix-chat.minimize", e.MAXIMIZE = "matrix-chat.maximize", e.LOADED = "matrix-chat.loaded", e.NOTIFICATIONS = "matrix-chat.notifications", e.ROOMS = "matrix-chat.rooms_count", e.OPEN_SENDBIRD_ROOM = "matrix-chat.open_sb_room", e.OPEN_SENDBIRD_DM = "matrix-chat.open_sb_dm", e.OPEN_IMAGE = "matrix-chat.open_img_modal"
 			}(L || (L = {}));
-			const H = e => {
+			const F = e => {
 				let {
 					className: t
 				} = e;
-				const [n, s] = c.a.useState(!1), [o, i] = c.a.useState(null), d = Object(r.d)(), h = Object(r.e)(p.c), m = Object(r.e)(p.d), b = Object(r.e)(p.a), f = `${E.a.matrixChatUrl}${b?"?disableWindowControls=1":""}`, g = c.a.useRef(null);
+				const [n, s] = c.a.useState(!1), [o, i] = c.a.useState(null), d = Object(r.d)(), h = Object(r.e)(p.c), m = Object(r.e)(p.d), b = Object(r.e)(p.a), f = Object(r.e)(H.a), g = `${E.a.matrixChatUrl}?redditUserId=${f}${b?"&disableWindowControls=1":""}`, O = c.a.useRef(null);
 				return c.a.useEffect(() => {
 					var e, t, a, s;
-					n && (h && (null === (t = null === (e = g.current) || void 0 === e ? void 0 : e.contentWindow) || void 0 === t || t.postMessage(`openRoom:${h}`, "*"), d(Object(l.i)())), m && (null === (s = null === (a = g.current) || void 0 === a ? void 0 : a.contentWindow) || void 0 === s || s.postMessage(`openDM:${m}`, "*"), d(Object(l.i)())))
+					n && (h && (null === (t = null === (e = O.current) || void 0 === e ? void 0 : e.contentWindow) || void 0 === t || t.postMessage(`openRoom:${h}`, "*"), d(Object(l.i)())), m && (null === (s = null === (a = O.current) || void 0 === a ? void 0 : a.contentWindow) || void 0 === s || s.postMessage(`openDM:${m}`, "*"), d(Object(l.i)())))
 				}, [n, h, m, d]), c.a.useLayoutEffect(() => {
 					const e = e => {
 						var t, n, a, c, r, o, h, m, b, p;
@@ -10706,26 +10707,26 @@
 					};
 					return window.addEventListener("message", e), () => window.removeEventListener("message", e)
 				}, []), c.a.createElement(c.a.Fragment, null, c.a.createElement("iframe", {
-					ref: g,
+					ref: O,
 					className: Object(a.a)(t),
-					src: f,
+					src: g,
 					"data-testid": "reddit-chat-window"
 				}), o && c.a.createElement(P.a, {
 					onClose: () => i(null),
 					url: o
 				}))
 			};
-			var F = n("./src/chat/components/ThemeProvider/index.tsx"),
-				G = n("./src/chat/selectors/experiments.ts"),
-				V = n("./src/chat/components/Root/index.m.less"),
-				W = n.n(V);
+			var G = n("./src/chat/components/ThemeProvider/index.tsx"),
+				V = n("./src/chat/selectors/experiments.ts"),
+				W = n("./src/chat/components/Root/index.m.less"),
+				z = n.n(W);
 
-			function z(e) {
+			function K(e) {
 				let {
 					router: t,
 					routes: n
 				} = e;
-				const [i, l] = Object(s.useState)(!1), d = Object(r.e)(G.q), h = Object(r.e)(p.a), m = Object(r.e)(p.b), f = Object(r.e)(b.i), g = Object(r.e)(b.a) === u.a.MINIMIZED;
+				const [i, l] = Object(s.useState)(!1), d = Object(r.e)(V.q), h = Object(r.e)(p.a), m = Object(r.e)(p.b), f = Object(r.e)(b.i), g = Object(r.e)(b.a) === u.a.MINIMIZED;
 				if (Object(s.useEffect)(() => {
 						l(!0)
 					}, []), !i) return null;
@@ -10735,17 +10736,17 @@
 							location: e.location
 						}, n))
 					}));
-				return d ? c.a.createElement(F.a, {
+				return d ? c.a.createElement(G.a, {
 					className: j.a
 				}, c.a.createElement("div", {
-					className: W.a.chatWindowContent
+					className: z.a.chatWindowContent
 				}, O && c.a.createElement(v, null), !m && c.a.createElement("div", {
-					className: W.a.chatApp
-				}, E), !f && c.a.createElement(H, {
-					className: Object(a.a)(W.a.chatApp, {
-						[W.a.hidden]: !m
+					className: z.a.chatApp
+				}, E), !f && c.a.createElement(F, {
+					className: Object(a.a)(z.a.chatApp, {
+						[z.a.hidden]: !m
 					})
-				}))) : c.a.createElement(F.a, {
+				}))) : c.a.createElement(G.a, {
 					className: j.a
 				}, E)
 			}
@@ -20080,4 +20081,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.53bb19565f76621b6020.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.1fe0aea2f48d9ad35968.js.map
