@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.1e3654d0e35ca1aabfcc.js
-// Retrieved at 4/26/2023, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.e0380863450e715538b0.js
+// Retrieved at 5/4/2023, 2:00:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -802,7 +802,7 @@
 								type: e
 							}
 						}))(m)), v(!1), n(Object(a.c)({
-							experience: j.bb.LanguagePreferenceBottomSheet,
+							experience: j.ab.LanguagePreferenceBottomSheet,
 							value: !1
 						}))
 					},
@@ -835,7 +835,7 @@
 								})
 							}))
 						})(), v(!1), n(Object(a.c)({
-							experience: j.bb.LanguagePreferenceBottomSheet,
+							experience: j.ab.LanguagePreferenceBottomSheet,
 							value: !1
 						}))
 					};
@@ -848,7 +848,7 @@
 						...Object(f.d)(t),
 						type: e
 					}
-				}))(m)), n(Object(a.d)(j.bb.LanguagePreferenceBottomSheet)), s.a.createElement("div", {
+				}))(m)), n(Object(a.d)(j.ab.LanguagePreferenceBottomSheet)), s.a.createElement("div", {
 					className: l.a.PromptContainer
 				}, s.a.createElement("div", {
 					className: l.a.PromptClose
@@ -888,7 +888,7 @@
 					gqlContext: n
 				} = e, o = Object(r.f)().getState();
 				return (null === (t = Object(r.e)(e => Object(k.a)(e, {
-					experience: j.bb.LanguagePreferenceBottomSheet
+					experience: j.ab.LanguagePreferenceBottomSheet
 				}))) || void 0 === t ? void 0 : t.value) && Object(v.b)(o) ? s.a.createElement(O, {
 					gqlContext: n
 				}) : null
@@ -1370,7 +1370,7 @@
 					href: "https://www.redditinc.com/policies/impressum"
 				}, E._("Impressum", null, {
 					hk: "4cKXSI"
-				})), t === C.k.De && s.a.createElement(j, {
+				})), t === C.j.De && s.a.createElement(j, {
 					href: "https://reddit.zendesk.com/hc/de/requests/new?ticket_form_id=360000152352",
 					className: v.a.NoneCapitalizeLink
 				}, E._("Report NetzDG Content", null, {
@@ -1381,7 +1381,7 @@
 					href: "https://www.reddithelp.com"
 				}, E._("help", null, {
 					hk: "4lyYaD"
-				})), t === C.k.De && s.a.createElement(j, {
+				})), t === C.j.De && s.a.createElement(j, {
 					href: "https://reddit.zendesk.com/hc/de/articles/360045289772-Deutschland-Meldungen-nach-dem-Netzwerkdurchsetzungsgesetz-NetzDG-"
 				}, E._("Transparency report", null, {
 					hk: "3CgBdG"
@@ -1417,7 +1417,7 @@
 				const t = Object(r.f)().getState(),
 					n = Object(h.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === m.jd.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.jd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.jd.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === m.id.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.id.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.id.LargeImagePreview ? e.reredditButtons : [];
 					return s.a.createElement(S, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -1450,7 +1450,7 @@
 					href: "https://www.redditinc.com/policies/impressum"
 				}, E._("Impressum", null, {
 					hk: "4cKXSI"
-				})), e.countryCode === C.k.De && s.a.createElement(j, {
+				})), e.countryCode === C.j.De && s.a.createElement(j, {
 					href: "https://reddit.zendesk.com/hc/de/requests/new?ticket_form_id=360000152352",
 					className: v.a.NoneCapitalizeLink
 				}, E._("Report NetzDG Content", null, {
@@ -1461,7 +1461,7 @@
 					href: "https://www.reddithelp.com"
 				}, E._("help", null, {
 					hk: "4lyYaD"
-				})), e.countryCode === C.k.De && s.a.createElement(j, {
+				})), e.countryCode === C.j.De && s.a.createElement(j, {
 					href: "https://reddit.zendesk.com/hc/de/articles/360045289772-Deutschland-Meldungen-nach-dem-Netzwerkdurchsetzungsgesetz-NetzDG-"
 				}, E._("Transparency report", null, {
 					hk: "3CgBdG"
@@ -3117,11 +3117,11 @@
 				c = n("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => Object(a.h)(e) && Object(r.f)(e),
-					experimentName: o.pc
+					experimentName: o.oc
 				}), i.a),
 				l = Object(c.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.h)(e) && Object(r.f)(e),
-					experimentName: o.oc
+					experimentName: o.nc
 				}), i.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -3134,4 +3134,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.1e3654d0e35ca1aabfcc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.e0380863450e715538b0.js.map

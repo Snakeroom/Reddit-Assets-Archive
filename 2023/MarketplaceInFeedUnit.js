@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.ef083120336def620d5c.js
-// Retrieved at 4/26/2023, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.367b866c43c8ac846d92.js
+// Retrieved at 5/4/2023, 2:00:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MarketplaceInFeedUnit"], {
 		"./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx": function(e, t, s) {
@@ -53,7 +53,7 @@
 								NO_VAULT: !0
 							} : {}
 						},
-						A = Object(c.useCallback)(e => {
+						I = Object(c.useCallback)(e => {
 							k(t => {
 								const s = m.o(t);
 								return {
@@ -72,8 +72,8 @@
 						authHeaders: x,
 						config: C,
 						isNightMode: E,
-						sendEvent: A
-					}), [x, C, E, A])
+						sendEvent: I
+					}), [x, C, E, I])
 				}
 		},
 		"./src/reddit/components/Econ/Marketplace/InFeedUnit/index.m.less": function(e, t, s) {
@@ -114,7 +114,7 @@
 				const s = Object(i.d)(),
 					f = Object(_.a)(),
 					C = Object(i.e)(E.a),
-					[A, I] = Object(a.useState)(!1),
+					[I, A] = Object(a.useState)(!1),
 					[g, M] = Object(a.useState)(!1);
 				Object(j.a)(l.a);
 				const [L, h] = Object(b.a)("marketplaceClaimInFeedUnitDismissed", !1), [N, v] = Object(b.a)("marketplaceClaimInFeedUnitLoadCount", 0), U = Object(a.useRef)(N), R = U.current % 2 == 0;
@@ -141,13 +141,13 @@
 							claimId: C.id
 						}))
 					},
-					onClose: () => I(!0),
+					onClose: () => A(!0),
 					title: C.title,
 					description: C.description,
 					ctaText: C.buttonCtaText,
 					isNotCardLayout: S
-				})))), A && o.a.createElement(k.a, {
-					onGoBack: () => I(!1),
+				})))), I && o.a.createElement(k.a, {
+					onGoBack: () => A(!1),
 					onDismiss: () => {
 						f(Object(O.e)()), h(!0)
 					}
@@ -204,9 +204,9 @@
 			}));
 			var r = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const c = Object(n.a)(r.Ad)
+			const c = Object(n.a)(r.zd)
 		},
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.ef083120336def620d5c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.367b866c43c8ac846d92.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.e3592c23ab130e746f2c.js
-// Retrieved at 4/26/2023, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.f06cfedafdd720571148.js
+// Retrieved at 5/4/2023, 2:00:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./node_modules/lodash/map.js": function(e, t, s) {
@@ -219,7 +219,7 @@
 					})(N);
 					H = e.postId, V = e.commentId
 				} else U !== v.a.PostReply && U !== v.a.LifecyclePostSuggestions || (V = L);
-				const z = e => {
+				const X = e => {
 					if (H && V) {
 						const e = Object(a.a)(H, V, Object(_.c)(N)),
 							t = {
@@ -271,7 +271,7 @@
 						case v.a.CommentFollow: {
 							const e = P;
 							return P || e ? n.a.createElement(p.t, {
-								onClick: z,
+								onClick: X,
 								kind: p.b.InternalLink,
 								to: N,
 								isFullWidth: S,
@@ -514,13 +514,13 @@
 				r = s("./node_modules/reselect/es/index.js");
 			const i = Object(r.a)(e => Object(n.c)(e, {
 				experimentEligibilitySelector: n.a,
-				experimentName: o.vb
+				experimentName: o.ub
 			}), e => ({
-				bucketed: e === o.Yc.ExpandedSearch || e === o.Yc.CollapsedSearch,
-				collapsed: e === o.Yc.CollapsedSearch,
-				expanded: e === o.Yc.ExpandedSearch
+				bucketed: e === o.Xc.ExpandedSearch || e === o.Xc.CollapsedSearch,
+				collapsed: e === o.Xc.CollapsedSearch,
+				expanded: e === o.Xc.ExpandedSearch
 			}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.e3592c23ab130e746f2c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.f06cfedafdd720571148.js.map

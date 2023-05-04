@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.45225eefddc7a560b091.js
-// Retrieved at 4/26/2023, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.d30f23235f07e2e7e387.js
+// Retrieved at 5/4/2023, 2:00:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~SubredditForkingCTA"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, r) {
@@ -52,8 +52,8 @@
 			}), u = r("./node_modules/fbt/lib/FbtPublic.js"), l = r("./src/reddit/models/Toast/index.ts"), b = r("./node_modules/reselect/es/index.js"), f = r("./src/reddit/constants/experiments.ts"), p = r("./src/reddit/helpers/chooseVariant/index.ts"), m = r("./src/reddit/selectors/user.ts");
 			const h = Object(b.a)(e => Object(p.c)(e, {
 				experimentEligibilitySelector: m.S,
-				experimentName: f.Xb
-			}), e => e === f.Qd);
+				experimentName: f.Wb
+			}), e => e === f.Pd);
 			var O = r("./src/reddit/actions/toaster.ts");
 			const y = "SUBREDDIT_COUNTRY_SITE__LOADED",
 				_ = "SUBREDDIT_COUNTRY_SITE__CHANGED",
@@ -863,8 +863,8 @@
 				F = Object(n.a)(w.db),
 				V = Object(n.a)(w.J),
 				B = Object(n.a)(w.a),
-				$ = Object(n.a)(w.F),
-				W = e => `/r/${e}/about/${D.s}`,
+				W = Object(n.a)(w.F),
+				$ = e => `/r/${e}/about/${D.s}`,
 				z = (e, t) => {
 					const r = e || {
 							duration: s.E,
@@ -910,7 +910,7 @@
 						pending: a
 					} = o.creations.api.post.submit, u = Object(x.g)(o);
 					if (a || u) return;
-					r($(e)), o = n();
+					r(W(e)), o = n();
 					const l = Object(k.a)(o),
 						b = _.d.rteVideoPoster(o),
 						f = H(o),
@@ -946,7 +946,7 @@
 					}, E = await Object(y.a)(n(), g);
 					if (E.ok) return t(Object(u.e)({
 						subredditId: c.id
-					})), void t(Object(l.a)(W(c.name), !1));
+					})), void t(Object(l.a)($(c.name), !1));
 					const P = E.error;
 					t(G(P))
 				}, J = e => async (t, r, s) => {
@@ -980,7 +980,7 @@
 							subredditId: c.id
 						}));
 						const e = _.body.data.createScheduledPost.scheduledPost;
-						return e && Object(d.a)(Object(S.o)(Object(g.d)(e))(i)), void t(Object(l.a)(W(c.name), !1))
+						return e && Object(d.a)(Object(S.o)(Object(g.d)(e))(i)), void t(Object(l.a)($(c.name), !1))
 					}
 					const j = _.error;
 					t(G(j))
@@ -1470,7 +1470,7 @@
 								postFieldValidationPending: Promise.resolve()
 							})), Object(l.b)(D)
 						}
-						await t(Object(s.b)(`${r.path}`)), p ? p === b.Re.NewModule && t(Object(c.h)({
+						await t(Object(s.b)(`${r.path}`)), p ? p === b.Qe.NewModule && t(Object(c.h)({
 							tooltipId: u.MOD_WELCOME_TOOLTIP_ID
 						})) : (t(Object(o.h)(f.a.POST_FLOW_UPSELL_MODAL_ID)), Object(k.a)(Object(E.g)()(T))), Object(j.b)(j.a.SubredditCreation), t(Object(x.f)(d, null !== (g = Object(C.db)(T)) && void 0 !== g ? g : Object(P.k)(T)))
 					} else w.error && Object(k.a)(Object(E.h)(w.error.type, A)(T)), t(U({
@@ -2955,4 +2955,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.45225eefddc7a560b091.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.d30f23235f07e2e7e387.js.map

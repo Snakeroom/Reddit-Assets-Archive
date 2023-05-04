@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.9d69c6914ee93a93c241.js
-// Retrieved at 4/26/2023, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.1c309bd8806590ad5dc1.js
+// Retrieved at 5/4/2023, 2:00:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/backo2/index.js": function(e, t) {
@@ -2971,9 +2971,9 @@
 				xn = n("./src/reddit/constants/experiments.ts"),
 				kn = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const jn = e => Object(kn.c)(e, {
-					experimentName: xn.ub,
+					experimentName: xn.tb,
 					experimentEligibilitySelector: kn.a
-				}) === xn.ob.Enabled,
+				}) === xn.nb.Enabled,
 				Nn = (e, t) => {
 					let {
 						commentId: n
@@ -3715,7 +3715,7 @@
 						const t = Object(fe.c)(e),
 							n = Object(ye.b)(3 * r.E)(e),
 							o = Object(mo.a)(e, {
-								experience: ho.bb.LiveChatReactionEdu
+								experience: ho.ab.LiveChatReactionEdu
 							});
 						return t && n && !!(null == o ? void 0 : o.value)
 					}
@@ -3748,9 +3748,9 @@
 								text: We
 							})
 						})), e(Object(te.c)({
-							experience: ho.bb.LiveChatReactionEdu,
+							experience: ho.ab.LiveChatReactionEdu,
 							value: !1
-						})), e(Object(te.d)(ho.bb.LiveChatReactionEdu))
+						})), e(Object(te.d)(ho.ab.LiveChatReactionEdu))
 					}
 				})),
 				wo = e => {
@@ -4563,4 +4563,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.9d69c6914ee93a93c241.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.1c309bd8806590ad5dc1.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.58195c8a498015b52e8d.js
-// Retrieved at 4/26/2023, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.91714b51d1796f3753c8.js
+// Retrieved at 5/4/2023, 2:00:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -967,7 +967,7 @@
 					post: he,
 					adLinkContent: Ye,
 					ctaExperimentDesign: ye && "classic"
-				})), he.discussionType === ae.o.Chat && n.a.createElement(ie.a, {
+				})), he.discussionType === ae.n.Chat && n.a.createElement(ie.a, {
 					postId: he.id
 				}), n.a.createElement("div", {
 					className: de.a.flatlistContainer
@@ -1531,12 +1531,12 @@
 						});
 						if (!e.ok) return d(Object(k.f)({
 							kind: j.b.Error,
-							text: S.a[P.l.ServiceError]
+							text: S.a[P.k.ServiceError]
 						})), void c(!1);
 						const s = Object(S.d)(e.body);
 						if (null == s ? void 0 : s.errorState) return d(Object(k.f)({
 							kind: j.b.Error,
-							text: S.a[s.errorState.code] || S.a[P.l.ServiceError]
+							text: S.a[s.errorState.code] || S.a[P.k.ServiceError]
 						})), void c(!1);
 						(null == s ? void 0 : s.okState) && (window.location.href = `${x.a.redditUrl}/talk/${t}`)
 					}
@@ -1957,8 +1957,8 @@
 				p = s("./node_modules/reselect/es/index.js");
 			const b = Object(p.a)(e => Object(m.c)(e, {
 				experimentEligibilitySelector: m.a,
-				experimentName: u.xc
-			}), e => e === u.Qd);
+				experimentName: u.wc
+			}), e => e === u.Pd);
 			var f = s("./node_modules/fbt/lib/FbtPublic.js"),
 				h = s("./src/lib/classNames/index.ts"),
 				_ = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
@@ -2806,33 +2806,33 @@
 						...a,
 						variables: t
 					});
-					return !!Object(r.c)(s) && (s.body.data.subredditInfoById.allowedPostTypes || []).includes(l.N.Talk)
+					return !!Object(r.c)(s) && (s.body.data.subredditInfoById.allowedPostTypes || []).includes(l.M.Talk)
 				}, p = async (e, t) => {
 					var s, o;
 					const a = await Object(n.a)(e, {
 						...i,
 						variables: t
 					});
-					return !!Object(r.c)(a) && (null !== (o = null === (s = a.body.data.profileByName) || void 0 === s ? void 0 : s.allowedPostTypes) && void 0 !== o ? o : []).includes(l.N.Talk)
+					return !!Object(r.c)(a) && (null !== (o = null === (s = a.body.data.profileByName) || void 0 === s ? void 0 : s.allowedPostTypes) && void 0 !== o ? o : []).includes(l.M.Talk)
 				}, b = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile || e.data.startAudioRoom, f = {
-					[l.l.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+					[l.k.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
 					}),
-					[l.l.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
+					[l.k.UserNotAuthorized]: o.fbt._("You don't have permission to start talks in this community.", null, {
 						hk: "1XY1Ss"
 					}),
-					[l.l.RoomLimitExceeded]: o.fbt._("You can only create three talks at one time. To continue, close a talk you're not using.", null, {
+					[l.k.RoomLimitExceeded]: o.fbt._("You can only create three talks at one time. To continue, close a talk you're not using.", null, {
 						hk: "3zPx9X"
 					}),
-					[l.l.ConcurrentRoomLimitExceeded]: o.fbt._("Too many talks are happening right now. Try again later.", null, {
+					[l.k.ConcurrentRoomLimitExceeded]: o.fbt._("Too many talks are happening right now. Try again later.", null, {
 						hk: "2LYXJx"
 					}),
-					[l.l.SubredditRoomLimitExceeded]: o.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
+					[l.k.SubredditRoomLimitExceeded]: o.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
 						hk: "2mGf21"
 					})
-				}, h = (l.P.ServiceError, o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+				}, h = (l.O.ServiceError, o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 					hk: "3XqPJS"
-				}), l.P.UserNotAuthorized, o.fbt._("You don't have permission to start talks in this community.", null, {
+				}), l.O.UserNotAuthorized, o.fbt._("You don't have permission to start talks in this community.", null, {
 					hk: "1XY1Ss"
 				}), (e, t) => Object(n.a)(e, {
 					...d,
@@ -3787,10 +3787,10 @@
 				n = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const a = Object(o.a)(e => Object(r.c)(e, {
-					experimentName: n.dg,
+					experimentName: n.cg,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				i = Object(o.a)(a, e => e === n.Xf)
+				i = Object(o.a)(a, e => e === n.Wf)
 		},
 		"./src/reddit/selectors/removedPosts.ts": function(e, t, s) {
 			"use strict";
@@ -3884,4 +3884,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.58195c8a498015b52e8d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.91714b51d1796f3753c8.js.map

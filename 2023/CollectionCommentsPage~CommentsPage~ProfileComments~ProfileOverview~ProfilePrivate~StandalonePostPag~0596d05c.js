@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.ed6f2f641bd599da52ce.js
-// Retrieved at 4/26/2023, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.63f7a9390a0292f5b6cf.js
+// Retrieved at 5/4/2023, 2:00:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, s) {
@@ -1045,12 +1045,12 @@
 						})),
 						p = Object(r.useCallback)(() => !(o || !l || Object(E.a)(m) || !Object(j.s)(m) || !w(m, s) || !P(d, s)), [o, l, m, d, s]),
 						u = Object(r.useCallback)(() => !(o || !w(m, s) || !P(d, s)), [o, m, d, s]),
-						b = Object(g.a)(_.t, p),
-						h = Object(g.a)(_.s, p),
-						x = Object(g.a)(_.u, u),
-						f = Object(g.a)(_.v, u);
+						b = Object(g.a)(_.s, p),
+						h = Object(g.a)(_.r, p),
+						x = Object(g.a)(_.t, u),
+						f = Object(g.a)(_.u, u);
 					return {
-						canBoostPost: b === _.Qd || h === _.Qd || x === _.Qd || f === _.Qd
+						canBoostPost: b === _.Pd || h === _.Pd || x === _.Pd || f === _.Pd
 					}
 				},
 				T = e => {
@@ -1255,7 +1255,7 @@
 							tooltipId: e,
 							args: {
 								isModNotesView: !0,
-								modNotesFilter: f.z.Note
+								modNotesFilter: f.y.Note
 							}
 						})), _(Object(c.a)(s.id, s.authorId))
 					}, [s, C, O, _]);
@@ -4447,7 +4447,7 @@
 						} = t;
 						return Object(X.i)(e, s)
 					},
-					isCommunityMutingEnabled: se.c,
+					isCommunityMutingEnabled: se.b,
 					isReportAnAdEnabled: oe.a,
 					isEventPostUiHidden: fe.a
 				}), (e, t) => {
@@ -6677,10 +6677,10 @@
 				n = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(o.a)(e => Object(r.c)(e, {
-					experimentName: n.Kc,
+					experimentName: n.Jc,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				a = Object(o.a)(i, e => e === n.Qd)
+				a = Object(o.a)(i, e => e === n.Pd)
 		},
 		"./src/reddit/selectors/experiments/reportingRevampDesktop.ts": function(e, t, s) {
 			"use strict";
@@ -6701,4 +6701,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.ed6f2f641bd599da52ce.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.63f7a9390a0292f5b6cf.js.map
