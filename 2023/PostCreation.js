@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.02340e1d3334e3fcb473.js
-// Retrieved at 5/4/2023, 2:00:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.ff14810f2bd2a12a0a1e.js
+// Retrieved at 5/4/2023, 5:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit~StandalonePostPage", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -922,8 +922,8 @@
 				se = n("./node_modules/reselect/es/index.js");
 			const ie = Object(se.a)(e => Object(re.c)(e, {
 				experimentEligibilitySelector: re.a,
-				experimentName: oe.Fb
-			}), e => e === oe.Pd);
+				experimentName: oe.Gb
+			}), e => e === oe.Qd);
 			var ae = n("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				ce = n("./src/reddit/selectors/platform.ts"),
 				de = n("./src/reddit/selectors/posts.ts"),
@@ -20143,7 +20143,7 @@
 				const t = Object(s.f)().getState(),
 					n = Object(f.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === m.id.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.id.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.id.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === m.jd.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.jd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.jd.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(T, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -38653,11 +38653,11 @@
 				s = n("./node_modules/reselect/es/index.js");
 			const i = Object(s.a)(e => Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: o.ub
+				experimentName: o.vb
 			}), e => ({
-				bucketed: e === o.Xc.ExpandedSearch || e === o.Xc.CollapsedSearch,
-				collapsed: e === o.Xc.CollapsedSearch,
-				expanded: e === o.Xc.ExpandedSearch
+				bucketed: e === o.Yc.ExpandedSearch || e === o.Yc.CollapsedSearch,
+				collapsed: e === o.Yc.CollapsedSearch,
+				expanded: e === o.Yc.ExpandedSearch
 			}))
 		},
 		"./src/reddit/selectors/experiments/contributeBeforeSignUp.ts": function(e, t, n) {
@@ -38682,11 +38682,11 @@
 				l = Object(o.a)(d, e => !!e),
 				u = e => {
 					const t = d(e);
-					return !!t && c(e, t) === r.V.SkipOnboarding
+					return !!t && c(e, t) === r.W.SkipOnboarding
 				},
 				m = e => {
 					const t = d(e);
-					return !!t && c(e, t) === r.V.RegOnboarding
+					return !!t && c(e, t) === r.W.RegOnboarding
 				}
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, n) {
@@ -38704,11 +38704,11 @@
 				c = n("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(a.h)(e) && Object(s.f)(e),
-					experimentName: o.oc
+					experimentName: o.pc
 				}), i.a),
 				l = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.h)(e) && Object(s.f)(e),
-					experimentName: o.nc
+					experimentName: o.oc
 				}), i.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -38721,9 +38721,9 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const s = e => Object(r.c)(e, {
-				experimentName: o.He,
+				experimentName: o.Ie,
 				experimentEligibilitySelector: r.a
-			}) === o.Pe.Enabled
+			}) === o.Qe.Enabled
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
 			"use strict";
@@ -38735,8 +38735,8 @@
 			const s = e => {
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: o.ef
-				}) === o.Pd
+					experimentName: o.ff
+				}) === o.Qd
 			}
 		},
 		"./src/reddit/selectors/experiments/typingIndicators.ts": function(e, t, n) {
@@ -38758,29 +38758,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.hg
-					}) === o.Pd
+						experimentName: o.ig
+					}) === o.Qd
 				},
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.ig
-					}) === o.Pd
+						experimentName: o.jg
+					}) === o.Qd
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.gg
+						experimentName: o.hg
 					});
-					return t === o.Zf.TypingIndicators || t === o.Zf.IndicatorsPlusCTA
+					return t === o.ag.TypingIndicators || t === o.ag.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.d)(e, {
-						experimentName: o.gg
+						experimentName: o.hg
 					});
-					return (null == t ? void 0 : t.variant) === o.Zf.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.ag.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/experiments/uxtsIntegration.ts": function(e, t, n) {
@@ -38798,15 +38798,15 @@
 				i = n("./src/reddit/selectors/user.ts");
 			const a = e => {
 					var t;
-					return (null === (t = null == e ? void 0 : e.user.experiments.byName[r.Tc]) || void 0 === t ? void 0 : t.variant) === r.Pd
+					return (null === (t = null == e ? void 0 : e.user.experiments.byName[r.Uc]) || void 0 === t ? void 0 : t.variant) === r.Qd
 				},
 				c = Object(o.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: i.S,
-					experimentName: r.Vb
-				}), e => e === r.ed.BottomSheet),
+					experimentName: r.Wb
+				}), e => e === r.fd.BottomSheet),
 				d = Object(o.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: i.S,
-					experimentName: r.Vb,
+					experimentName: r.Wb,
 					expEventOverride: !1
 				}), e => !!e)
 		},
@@ -39499,4 +39499,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.02340e1d3334e3fcb473.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.ff14810f2bd2a12a0a1e.js.map
