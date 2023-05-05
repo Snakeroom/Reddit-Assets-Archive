@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.824c8cea1f3c5f9bc312.js
-// Retrieved at 5/4/2023, 5:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.2b935249a1da8191c494.js
+// Retrieved at 5/4/2023, 8:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, n) {
@@ -136,9 +136,9 @@
 			})), n.d(t, "y", (function() {
 				return C
 			})), n.d(t, "v", (function() {
-				return y
-			})), n.d(t, "w", (function() {
 				return g
+			})), n.d(t, "w", (function() {
+				return y
 			})), n.d(t, "x", (function() {
 				return v
 			})), n.d(t, "d", (function() {
@@ -168,8 +168,8 @@
 				j = "MULTIREDDIT__SUBREDDIT_RECOMMENDATIONS_SUCCESS",
 				I = "MULTIREDDIT__SUBREDDIT_RECOMMENDATIONS_FAILURE",
 				C = 10,
-				y = "MULTIREDDIT__REMOVE_SUBREDDIT_FAILURE",
-				g = "MULTIREDDIT__REMOVE_SUBREDDIT_PENDING",
+				g = "MULTIREDDIT__REMOVE_SUBREDDIT_FAILURE",
+				y = "MULTIREDDIT__REMOVE_SUBREDDIT_PENDING",
 				v = "MULTIREDDIT__REMOVE_SUBREDDIT_SUCCESS";
 			var L;
 			! function(e) {
@@ -334,8 +334,8 @@
 			const C = () => r.fbt._("Sorry, failed to update favorites.", null, {
 					hk: "40XHkp"
 				}),
-				y = Object(i.a)(d.c),
-				g = Object(i.a)(d.b),
+				g = Object(i.a)(d.c),
+				y = Object(i.a)(d.b),
 				v = Object(i.a)(d.a),
 				L = Object(i.a)(d.h),
 				k = (Object(i.a)(d.i), Object(i.a)(d.g), () => async (e, t, n) => {
@@ -344,11 +344,11 @@
 					} = n;
 					const s = t();
 					if (!s.user.account || s.subscriptions.api.fetched) return;
-					e(g());
+					e(y());
 					const o = await Object(f.a)(r());
 					if (o.ok) {
 						const t = O(o.body.data);
-						e(y(t))
+						e(g(t))
 					} else e(v({
 						error: o.error
 					}))
@@ -698,8 +698,8 @@
 				j = n("./src/reddit/icons/svgs/Close/index.tsx"),
 				I = n("./src/reddit/models/Flair/index.ts"),
 				C = n("./src/reddit/models/Theme/NewColorSystem/index.ts"),
-				y = n("./src/reddit/components/Flair/index.m.less"),
-				g = n.n(y);
+				g = n("./src/reddit/components/Flair/index.m.less"),
+				y = n.n(g);
 
 			function v() {
 				return (v = Object.assign || function(e) {
@@ -711,8 +711,8 @@
 				}).apply(this, arguments)
 			}
 			const L = Object(x.a)(E.b),
-				k = b.a.div("FlairWrapper", g.a),
-				N = b.a.wrapped(d.a, "CloseButton", g.a),
+				k = b.a.div("FlairWrapper", y.a),
+				N = b.a.wrapped(d.a, "CloseButton", y.a),
 				U = b.a.wrapped(Object(m.a)(e => {
 					let {
 						forceSmallEmojis: t,
@@ -725,7 +725,7 @@
 							...w(!!t, s) || {}
 						}
 					}, r))
-				}), "FlairEmojiDisplay", g.a),
+				}), "FlairEmojiDisplay", y.a),
 				w = (e, t) => {
 					if (!e && !!t.subredditContext.emojiHeight && !!t.subredditContext.emojiWidth) return {
 						height: `${t.subredditContext.emojiHeight}px`,
@@ -764,7 +764,7 @@
 				render() {
 					const e = a.a.createElement("span", {
 						className: Object(u.a)(this.props.className, {
-							[g.a.transparentBackgroundColor]: "transparent" === this.props.backgroundColor
+							[y.a.transparentBackgroundColor]: "transparent" === this.props.backgroundColor
 						}),
 						onMouseEnter: this.props.tooltip ? this.onShowTooltip : void 0,
 						onMouseLeave: this.props.tooltip ? this.onHideTooltip : void 0,
@@ -777,7 +777,7 @@
 						to: "./",
 						onClick: this.props.onCloseClick
 					}, a.a.createElement(j.a, {
-						className: g.a.CloseIcon,
+						className: y.a.CloseIcon,
 						style: {
 							fill: this.props.backgroundColor || Object(C.a)(this.props).flair
 						}
@@ -825,7 +825,7 @@
 					});
 					const o = a.a.createElement(k, {
 						className: Object(u.a)(e.className, {
-							[g.a.transparentBackgroundColor]: "transparent" === e.backgroundColor
+							[y.a.transparentBackgroundColor]: "transparent" === e.backgroundColor
 						}),
 						style: {
 							...s,
@@ -836,7 +836,7 @@
 						to: "./",
 						onClick: e.onCloseClick
 					}, a.a.createElement(j.a, {
-						className: g.a.CloseIcon,
+						className: y.a.CloseIcon,
 						style: {
 							fill: e.backgroundColor || Object(C.a)(e).flair
 						}
@@ -854,8 +854,8 @@
 					})
 				}),
 				B = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(C.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(S.a)(Object(C.a)(e).post, O.a.black, O.a.white) : e.textColor === I.e.Dark ? O.a.black : O.a.white,
-				H = b.a.wrapped(P, "TextFlair", g.a),
-				G = b.a.wrapped(F, "RichTextFlair", g.a),
+				H = b.a.wrapped(P, "TextFlair", y.a),
+				G = b.a.wrapped(F, "RichTextFlair", y.a),
 				W = e => {
 					switch (e.type) {
 						case "spoiler":
@@ -879,7 +879,7 @@
 						flair: n,
 						searchableTerm: e.text
 					})
-				}, "MetaFlair", g.a);
+				}, "MetaFlair", y.a);
 
 			function q(e) {
 				const {
@@ -896,9 +896,9 @@
 					forceSmallEmojis: p,
 					to: f
 				} = e, _ = Object(u.a)({
-					[g.a.flairVariant]: o,
-					[g.a.small]: o && !e.large,
-					[g.a.large]: o && e.large
+					[y.a.flairVariant]: o,
+					[y.a.small]: o && !e.large,
+					[y.a.large]: o && e.large
 				}, t);
 				switch (s.type) {
 					case I.f.Richtext:
@@ -1850,9 +1850,9 @@
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return b
-			})), n.d(t, "b", (function() {
 				return f
+			})), n.d(t, "b", (function() {
+				return h
 			}));
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
@@ -1862,18 +1862,23 @@
 				a = n("./src/reddit/selectors/telemetry.ts"),
 				d = n("./node_modules/reselect/es/index.js"),
 				l = n("./src/reddit/selectors/user.ts");
-			const u = e => e.user.experiments.shredditPDPExperimentInfo,
-				m = Object(d.a)(l.S, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? c.a.Off : t),
-				b = Object(d.a)(m, e => e === c.a.Treatment),
-				p = Object(d.a)(m, u, (e, t) => e !== c.a.Off && null !== t),
-				f = (e, t) => {
+			const u = Object(d.a)(e => Object(s.c)(e, {
+					experimentName: "d2x_search_string_routing_killswitch",
+					experimentEligibilitySelector: s.a
+				}), e => e),
+				m = Object(d.a)(u, e => e !== r.Qd),
+				b = e => e.user.experiments.shredditPDPExperimentInfo,
+				p = Object(d.a)(l.S, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? c.a.Off : t),
+				f = Object(d.a)(p, e => e === c.a.Treatment),
+				_ = Object(d.a)(p, b, (e, t) => e !== c.a.Off && null !== t),
+				h = (e, t) => {
 					const n = t(),
-						d = m(n);
+						d = p(n);
 					Object(l.S)(n) || d === c.a.Off || e.block(e => {
 						if ((e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname))
 							if (d === c.a.Control)((e, t) => {
-								if (p(e)) {
-									const n = u(e);
+								if (_(e)) {
+									const n = b(e);
 									if (null != n) {
 										const r = a.f(e),
 											s = a.sb(e),
@@ -1888,7 +1893,11 @@
 									}
 								} else Object(s.d)(e, r.Df, t)
 							})(t(), r.T.Control1);
-							else if (d === c.a.Treatment) return Object(o.f)(n), window.location.href = e.pathname, !1
+							else if (d === c.a.Treatment) {
+							Object(o.f)(n);
+							const t = m(n) ? e.pathname + e.search : e.pathname;
+							return window.location.href = t, !1
+						}
 					})
 				}
 		},
@@ -1900,4 +1909,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.824c8cea1f3c5f9bc312.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.2b935249a1da8191c494.js.map

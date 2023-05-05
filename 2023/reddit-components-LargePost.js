@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.c6e4d4d6e2d156dad7ac.js
-// Retrieved at 5/4/2023, 5:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.e01bbba5dad3dcd6f1aa.js
+// Retrieved at 5/4/2023, 8:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ModQueuePages~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -9604,9 +9604,9 @@
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return p
-			})), s.d(t, "b", (function() {
 				return f
+			})), s.d(t, "b", (function() {
+				return x
 			}));
 			var n = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
@@ -9616,18 +9616,23 @@
 				d = s("./src/reddit/selectors/telemetry.ts"),
 				c = s("./node_modules/reselect/es/index.js"),
 				l = s("./src/reddit/selectors/user.ts");
-			const m = e => e.user.experiments.shredditPDPExperimentInfo,
-				u = Object(c.a)(l.S, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? a.a.Off : t),
-				p = Object(c.a)(u, e => e === a.a.Treatment),
-				b = Object(c.a)(u, m, (e, t) => e !== a.a.Off && null !== t),
-				f = (e, t) => {
+			const m = Object(c.a)(e => Object(o.c)(e, {
+					experimentName: "d2x_search_string_routing_killswitch",
+					experimentEligibilitySelector: o.a
+				}), e => e),
+				u = Object(c.a)(m, e => e !== n.Qd),
+				p = e => e.user.experiments.shredditPDPExperimentInfo,
+				b = Object(c.a)(l.S, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? a.a.Off : t),
+				f = Object(c.a)(b, e => e === a.a.Treatment),
+				h = Object(c.a)(b, p, (e, t) => e !== a.a.Off && null !== t),
+				x = (e, t) => {
 					const s = t(),
-						c = u(s);
+						c = b(s);
 					Object(l.S)(s) || c === a.a.Off || e.block(e => {
 						if ((e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname))
 							if (c === a.a.Control)((e, t) => {
-								if (b(e)) {
-									const s = m(e);
+								if (h(e)) {
+									const s = p(e);
 									if (null != s) {
 										const n = d.f(e),
 											o = d.sb(e),
@@ -9642,7 +9647,11 @@
 									}
 								} else Object(o.d)(e, n.Df, t)
 							})(t(), n.T.Control1);
-							else if (c === a.a.Treatment) return Object(r.f)(s), window.location.href = e.pathname, !1
+							else if (c === a.a.Treatment) {
+							Object(r.f)(s);
+							const t = u(s) ? e.pathname + e.search : e.pathname;
+							return window.location.href = t, !1
+						}
 					})
 				}
 		},
@@ -9769,4 +9778,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.c6e4d4d6e2d156dad7ac.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.e01bbba5dad3dcd6f1aa.js.map

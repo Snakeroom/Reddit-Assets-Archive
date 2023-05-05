@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.8b24617afffea3469930.js
-// Retrieved at 5/4/2023, 5:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.9de9676689e5de844a0e.js
+// Retrieved at 5/4/2023, 8:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -20666,9 +20666,9 @@
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return p
-			})), n.d(t, "b", (function() {
 				return h
+			})), n.d(t, "b", (function() {
+				return f
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
@@ -20678,18 +20678,23 @@
 				c = n("./src/reddit/selectors/telemetry.ts"),
 				l = n("./node_modules/reselect/es/index.js"),
 				d = n("./src/reddit/selectors/user.ts");
-			const u = e => e.user.experiments.shredditPDPExperimentInfo,
-				m = Object(l.a)(d.S, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? i.a.Off : t),
-				p = Object(l.a)(m, e => e === i.a.Treatment),
-				b = Object(l.a)(m, u, (e, t) => e !== i.a.Off && null !== t),
-				h = (e, t) => {
+			const u = Object(l.a)(e => Object(r.c)(e, {
+					experimentName: "d2x_search_string_routing_killswitch",
+					experimentEligibilitySelector: r.a
+				}), e => e),
+				m = Object(l.a)(u, e => e !== s.Qd),
+				p = e => e.user.experiments.shredditPDPExperimentInfo,
+				b = Object(l.a)(d.S, e => e.user.experiments.shredditPDPExperimentHeader, (e, t) => e ? i.a.Off : t),
+				h = Object(l.a)(b, e => e === i.a.Treatment),
+				g = Object(l.a)(b, p, (e, t) => e !== i.a.Off && null !== t),
+				f = (e, t) => {
 					const n = t(),
-						l = m(n);
+						l = b(n);
 					Object(d.S)(n) || l === i.a.Off || e.block(e => {
 						if ((e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname))
 							if (l === i.a.Control)((e, t) => {
-								if (b(e)) {
-									const n = u(e);
+								if (g(e)) {
+									const n = p(e);
 									if (null != n) {
 										const s = c.f(e),
 											r = c.sb(e),
@@ -20704,7 +20709,11 @@
 									}
 								} else Object(r.d)(e, s.Df, t)
 							})(t(), s.T.Control1);
-							else if (l === i.a.Treatment) return Object(o.f)(n), window.location.href = e.pathname, !1
+							else if (l === i.a.Treatment) {
+							Object(o.f)(n);
+							const t = m(n) ? e.pathname + e.search : e.pathname;
+							return window.location.href = t, !1
+						}
 					})
 				}
 		},
@@ -21075,4 +21084,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.8b24617afffea3469930.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.9de9676689e5de844a0e.js.map
