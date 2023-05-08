@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.1230a0a28ed09798cdae.js
-// Retrieved at 5/8/2023, 10:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.560ea5a4f6104b2c71b8.js
+// Retrieved at 5/8/2023, 11:30:03 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1516,7 +1516,7 @@
 						RealtimeGQLSubscriptionAsync: "c89c62e561b4816f488a",
 						"vendors~Avatar~CollectiblesShowcaseUnit~CryptoLibEthers~GovernanceTransferPointsModal~MarketplaceCla~cd1771e1": "f9a51d62319543535c8f",
 						GovernanceTransferPointsModal: "a45bc99a62e21a5f47ef",
-						"vendors~Avatar~CollectiblesShowcaseUnit~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~S~bb3e1fe2": "ca6814d4ef9f6501c7a3",
+						"vendors~Avatar~CollectiblesShowcaseUnit~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProfileUnit~S~bb3e1fe2": "96e1edece38293b5cc73",
 						Avatar: "823c5ca9ff30a4838f18",
 						MarketplaceClaimModal: "89e61f4def6974e359c8",
 						SnoovatarModal: "fa6ba7b6bad1f4fcce8f",
@@ -1607,7 +1607,7 @@
 						RichTextEditor: "7c244285a8aa1d163176",
 						"vendors~devPlatform-components-AdminPanel-Utilities-DevPlatformConfig~devPlatform-components-ContextActions": "48b8de56c5c79c000f0c",
 						"devPlatform-components-ContextActions": "c3f78370a9e92f116947",
-						"vendors~mod-nav~shreddit-player": "bcbfb91228a8f5b650ba",
+						"vendors~mod-nav~shreddit-player": "1533d12cfffe7b56d6b6",
 						"vendors~shreddit-player": "9845aee8d5d2fff74833",
 						ContributorRequestButton: "e2cd43543c7809ff2361",
 						SubredditSearchCarousel: "747f216a25b192290e86",
@@ -1781,4 +1781,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.1230a0a28ed09798cdae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.560ea5a4f6104b2c71b8.js.map
