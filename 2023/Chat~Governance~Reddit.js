@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.cc0c147d23c21b461b4c.js
-// Retrieved at 5/8/2023, 11:30:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.42abb9ccbbbcbc7ef4ac.js
+// Retrieved at 5/8/2023, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3659,11 +3659,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("186150"),
+				buildNumber: Object(r.c)("186159"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1683556490"),
+				buildTimestamp: Object(r.b)("1683574419"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6414,14 +6414,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cf772b1264868d94bf8c730af4c65d19b968296da-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c903f9655ef9c8c1514f3610fe8de864696792de1-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "f772b1264868d94bf8c730af4c65d19b968296da-production",
+						release: "903f9655ef9c8c1514f3610fe8de864696792de1-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6974,7 +6974,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "f772b1264868d94bf8c730af4c65d19b968296da-production",
+							releaseClient: "903f9655ef9c8c1514f3610fe8de864696792de1-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -16631,9 +16631,9 @@
 				return b
 			})), i.d(t, "Kf", (function() {
 				return g
-			})), i.d(t, "Ib", (function() {
+			})), i.d(t, "Jb", (function() {
 				return v
-			})), i.d(t, "Hb", (function() {
+			})), i.d(t, "Ib", (function() {
 				return w
 			})), i.d(t, "d", (function() {
 				return y
@@ -16675,7 +16675,7 @@
 				return M
 			})), i.d(t, "Ke", (function() {
 				return U
-			})), i.d(t, "ub", (function() {
+			})), i.d(t, "vb", (function() {
 				return G
 			})), i.d(t, "Ef", (function() {
 				return q
@@ -16709,11 +16709,11 @@
 				return ie
 			})), i.d(t, "wd", (function() {
 				return ne
-			})), i.d(t, "Cb", (function() {
-				return re
 			})), i.d(t, "Db", (function() {
-				return se
+				return re
 			})), i.d(t, "Eb", (function() {
+				return se
+			})), i.d(t, "Fb", (function() {
 				return oe
 			})), i.d(t, "Kd", (function() {
 				return de
@@ -16757,7 +16757,7 @@
 				return Ie
 			})), i.d(t, "nc", (function() {
 				return Re
-			})), i.d(t, "vb", (function() {
+			})), i.d(t, "wb", (function() {
 				return Fe
 			})), i.d(t, "Lc", (function() {
 				return Ce
@@ -16787,7 +16787,7 @@
 				return Ge
 			})), i.d(t, "Pe", (function() {
 				return qe
-			})), i.d(t, "Nb", (function() {
+			})), i.d(t, "Ob", (function() {
 				return Ve
 			})), i.d(t, "N", (function() {
 				return He
@@ -16797,21 +16797,21 @@
 				return ze
 			})), i.d(t, "me", (function() {
 				return Ke
-			})), i.d(t, "Ob", (function() {
+			})), i.d(t, "Pb", (function() {
 				return Ye
 			})), i.d(t, "Ve", (function() {
 				return $e
-			})), i.d(t, "Rb", (function() {
-				return Qe
 			})), i.d(t, "Sb", (function() {
-				return Je
+				return Qe
 			})), i.d(t, "Tb", (function() {
-				return Xe
-			})), i.d(t, "Vb", (function() {
-				return Ze
+				return Je
 			})), i.d(t, "Ub", (function() {
+				return Xe
+			})), i.d(t, "Wb", (function() {
+				return Ze
+			})), i.d(t, "Vb", (function() {
 				return et
-			})), i.d(t, "Qb", (function() {
+			})), i.d(t, "Rb", (function() {
 				return tt
 			})), i.d(t, "gg", (function() {
 				return it
@@ -16823,7 +16823,7 @@
 				return st
 			})), i.d(t, "eg", (function() {
 				return ot
-			})), i.d(t, "ac", (function() {
+			})), i.d(t, "bc", (function() {
 				return dt
 			})), i.d(t, "Tf", (function() {
 				return at
@@ -16857,7 +16857,7 @@
 				return Et
 			})), i.d(t, "Cd", (function() {
 				return Tt
-			})), i.d(t, "Kb", (function() {
+			})), i.d(t, "Lb", (function() {
 				return St
 			})), i.d(t, "We", (function() {
 				return Ot
@@ -16881,9 +16881,9 @@
 				return xt
 			})), i.d(t, "yc", (function() {
 				return Dt
-			})), i.d(t, "Xb", (function() {
+			})), i.d(t, "Yb", (function() {
 				return Lt
-			})), i.d(t, "Lb", (function() {
+			})), i.d(t, "Mb", (function() {
 				return kt
 			})), i.d(t, "pc", (function() {
 				return Bt
@@ -16901,15 +16901,15 @@
 				return Ht
 			})), i.d(t, "ye", (function() {
 				return Wt
-			})), i.d(t, "Pb", (function() {
+			})), i.d(t, "Qb", (function() {
 				return zt
 			})), i.d(t, "z", (function() {
 				return Kt
-			})), i.d(t, "Gb", (function() {
+			})), i.d(t, "Hb", (function() {
 				return Yt
 			})), i.d(t, "K", (function() {
 				return $t
-			})), i.d(t, "zb", (function() {
+			})), i.d(t, "Ab", (function() {
 				return Qt
 			})), i.d(t, "y", (function() {
 				return Jt
@@ -16917,7 +16917,7 @@
 				return Xt
 			})), i.d(t, "Od", (function() {
 				return Zt
-			})), i.d(t, "wb", (function() {
+			})), i.d(t, "xb", (function() {
 				return ei
 			})), i.d(t, "ke", (function() {
 				return ti
@@ -16939,7 +16939,7 @@
 				return li
 			})), i.d(t, "oe", (function() {
 				return ui
-			})), i.d(t, "xb", (function() {
+			})), i.d(t, "yb", (function() {
 				return ci
 			})), i.d(t, "wc", (function() {
 				return _i
@@ -16947,7 +16947,7 @@
 				return mi
 			})), i.d(t, "yf", (function() {
 				return pi
-			})), i.d(t, "Ab", (function() {
+			})), i.d(t, "Bb", (function() {
 				return hi
 			})), i.d(t, "xc", (function() {
 				return fi
@@ -16959,7 +16959,7 @@
 				return vi
 			})), i.d(t, "kc", (function() {
 				return wi
-			})), i.d(t, "Zb", (function() {
+			})), i.d(t, "ac", (function() {
 				return yi
 			})), i.d(t, "sc", (function() {
 				return Ei
@@ -16973,7 +16973,7 @@
 				return Ii
 			})), i.d(t, "Jd", (function() {
 				return Ri
-			})), i.d(t, "Mb", (function() {
+			})), i.d(t, "Nb", (function() {
 				return Fi
 			})), i.d(t, "Bc", (function() {
 				return Ci
@@ -16983,7 +16983,7 @@
 				return Ai
 			})), i.d(t, "Cc", (function() {
 				return ji
-			})), i.d(t, "Yb", (function() {
+			})), i.d(t, "Zb", (function() {
 				return Pi
 			})), i.d(t, "H", (function() {
 				return xi
@@ -16991,7 +16991,7 @@
 				return Di
 			})), i.d(t, "Dc", (function() {
 				return Li
-			})), i.d(t, "tb", (function() {
+			})), i.d(t, "ub", (function() {
 				return ki
 			})), i.d(t, "mc", (function() {
 				return Bi
@@ -16999,9 +16999,9 @@
 				return Mi
 			})), i.d(t, "Vc", (function() {
 				return Ui
-			})), i.d(t, "Bb", (function() {
+			})), i.d(t, "Cb", (function() {
 				return Gi
-			})), i.d(t, "Fb", (function() {
+			})), i.d(t, "Gb", (function() {
 				return qi
 			})), i.d(t, "Nc", (function() {
 				return Vi
@@ -17017,19 +17017,19 @@
 				return Yi
 			})), i.d(t, "jg", (function() {
 				return $i
-			})), i.d(t, "Jb", (function() {
+			})), i.d(t, "Kb", (function() {
 				return Qi
 			})), i.d(t, "ze", (function() {
 				return Ji
-			})), i.d(t, "Wb", (function() {
+			})), i.d(t, "Xb", (function() {
 				return Xi
 			})), i.d(t, "lc", (function() {
 				return Zi
-			})), i.d(t, "yb", (function() {
+			})), i.d(t, "zb", (function() {
 				return en
 			})), i.d(t, "Ec", (function() {
 				return tn
-			})), i.d(t, "bc", (function() {
+			})), i.d(t, "tb", (function() {
 				return nn
 			})), i.d(t, "ng", (function() {
 				return rn
@@ -17474,7 +17474,7 @@
 				Zi = "d2x_onboarding_language_selection_v2_more_geo",
 				en = "d2x_drop_events_killswitch",
 				tn = "d2x_related_community_recommendations",
-				nn = "d2x_modmail_harassment_adoption_campaign",
+				nn = "web_ban_evasion_adoption_campaign",
 				rn = "web_x_mr_stripe_payment_intents_api_migration",
 				sn = "m_feed_m2",
 				on = "d2x_search_growth_banner",
@@ -17961,7 +17961,7 @@
 					[mn]: [On],
 					[Ne]: [On],
 					[rn]: [On],
-					[nn]: [On],
+					d2x_modmail_harassment_adoption_campaign: [On],
 					[tn]: [ao.Minimalist, ao.Description, ao.HotnessSignals],
 					[Qi]: [so.HideTrending],
 					[Zi]: [eo.TopTwo, eo.All],
@@ -18213,7 +18213,7 @@
 					[dn]: [On],
 					[an]: [On]
 				},
-				po = new Set([qi, Ie, yn, Gt, wt, yt, ht, f, s, g, C, "guest_d2x_subreddit_subreddit_links_url", M, q, H, W, K, J, te, Pe, Ue, Ge, $e, qe, re, se, oe, "d2x_signal_collection", at, mt, pt, lt, we, ye, Mt, Bt, Ut, zt, Ee, ei, ti, ii, Ht, Ci, li, ui, mi, vi, Oe, bi, Li, ki, Gi, nn, gn]),
+				po = new Set([qi, Ie, yn, Gt, wt, yt, ht, f, s, g, C, "guest_d2x_subreddit_subreddit_links_url", M, q, H, W, K, J, te, Pe, Ue, Ge, $e, qe, re, se, oe, "d2x_signal_collection", at, mt, pt, lt, we, ye, Mt, Bt, Ut, zt, Ee, ei, ti, ii, Ht, Ci, li, ui, mi, vi, Oe, bi, Li, ki, Gi, "d2x_modmail_harassment_adoption_campaign", gn]),
 				ho = {
 					NFL: () => n.fbt._("NFL", null, {
 						hk: "3ktT9l"
@@ -18357,9 +18357,9 @@
 			const c = a(1, n.E),
 				_ = a(1, n.yc),
 				m = {
-					[r.Cb]: _,
 					[r.Db]: _,
 					[r.Eb]: _,
+					[r.Fb]: _,
 					[r.od]: o(1),
 					[r.eb.Daily]: c,
 					[r.eb.Weekly]: _,
@@ -18513,7 +18513,7 @@
 					return r
 				})),
 				function(e) {
-					e.ANNOUNCEMENT_BANNER_SEEN_STORE = "announcement-banner-seen-store", e.ANNOUNCEMENT_BANNER_SEEN_STORE_V2 = "announcement-banner-seen-store-v2", e.AVATAR_PUSHCARD_EVENT_STORE = "avatar_pushcard_event_store", e.AVATAR_QUICK_CREATE_EVENT_STORE = "avatar_quick_create_event_store", e.BANNER_DISMISSED_STORE = "banner_dismissed_store", e.BREAKING_NEWS_DISABLED_STORE = "breaking_news_disabled_store", e.CATEGORIES_RANKING_STORE = "categories-ranking-store", e.COMMUNITY_SURVEY_DISMISSED = "community-survey-dismissed", e.CREATE_POLLS_PAINTED_DOOR_DISMISSED_STORE = "create_polls_painted_door_dismissed_store", e.DESKTOP_NOTIFICATIONS = "desktop-notifications", e.DESKTOP_NOTIFICATIONS_PROMPT_BANNER_SEEN_STORE = "desktop_notifications_prompt_banner_seen_store", e.DISCLAIMER_DISMISSED_STORE = "disclaimer_store", e.DOWNLOAD_OBS_DISMISSED_STORE = "download-obs-dismissed-store", e.EDITOR_MODE_HINT_SEEN_STORE = "editor-mode-hint", e.EMAIL_COLLECTION_REPROMPT_STORE = "email-collection-reprompt-store", e.FEATURE_THROTTLING_STORE = "feature-throttling-store", e.FOCUS_VERTICAL_VARIANT = "FOCUS_VERTICAL_VARIANT", e.FOLLOW_STORE = "follow_store", e.GILD_DEFAULTS_STORE = "gild_defaults_store", e.GIVE_FREE_AWARD_TOOLTIP_STORE = "give_free_award_tooltip_store", e.GOOD_VISIT_FS = "good-visit-feeds-search", e.INBOX_BANNER_SEEN_COUNT_STORE = "inbox_banner_seen_count_store", e.INBOX_PRIVACY_POLICY_BANNER_SEEN_STORE = "inbox-privacy-policy-banner-seen-store", e.INLINE_ID_CARD_PRIMARY_TOPIC_TOOLTIP_STORE = "inline-id-card-primary-topic-tooltip-store", e.LAST_CLICKED_AD_ID = "last-clicked-ad-id", e.LAST_CLICKED_IMPRESSION_ID = "last-clicked-impression-id", e.LEGACY_INLINE_ID_CARD_EDIT_EDU_TOOLTIP_STORE = "inline-edit-edu-tooltip-store", e.LOCAL_PERSISTED_EXPERIMENTS_STORE = "local_persisted_experiments_store", e.LOW_ACTIVITY_CALL_TO_ACTION_STORE = "low-activity-call-to-action-store", e.MOD_ONBOARDING_DISMISSED_STORE = "mod-onboarding-store", e.MODAL_DISMISSED_STORE = "modal_dismissed_store", e.MODHUB_SETTING_SEEN = "modhub-setting-seen", e.MODMAIL_HARASSMENT_CAMPAIGN_STORE = "modmail_harassment_campaign_store", e.NAV_BAR_ICON_STATUS = "nav-bar-icon-status", e.OLD_COLLECTIONS_DISMISSED_KEY = "post-creation-collection-tooltip-store", e.OLD_EVENT_DISMISSED_KEY = "post-creation-event-tooltip-store", e.PAGE_TYPE_BEFORE_AD_CLICK = "page-type-before-ad-click", e.POST_CREATION_EDU_TOOLTIP_STORE = "post-creation-edu-tooltip-store", e.POST_STATS_CLICKED = "post-stats-clicked", e.POSTS_CONSUMED_WEEKLY = "posts-consumed-weekly", e.POSTS_RECENTLY_CONSUMED = "posts-recently-consumed", e.PROFILE_PINNED_POSTS_STORE = "profile-pinned-posts-store", e.RECAP_BANNER_SEEN_STORE = "recap-banner-seen-store", e.RECENT_SEARCHES_STORE = "recent_searches", e.SUBSCRIBED_SUBREDDIT_VISITS = "subscribed-subreddit-visits", e.SUBREDDITS_FOR_ADOPTION_STORE = "subreddits-for-adoption", e.SURVEY_CONFIG = "survey-config", e.SURVEY_LAST_SEEN = "survey-last-seen", e.SURVEY_TRIGGER_ACTION_COUNTS = "survey-trigger-action-counts", e.TIME_BEFORE_UNFOCUS = "time-before-unfocus", e.UPVOTE_TOAST_CTA_LAST_SHOWN = "upvote-toast-cta-last-shown", e.UPVOTE_TOAST_LAST_THREE = "upvote-toast-last-three", e.REMOVAL_REASONS_TOOLTIP_SEEN = "removal-reasons-tooltip-seen", e.EMPTY_INBOX_STATE_BADGE_SEEN = "empty_inbox_state_badge_seen", e.GARLIC_BREAD_BANNER_SEEN = "garlic-bread-banner-seen", e.LOGGED_OUT_HOME_SEEN = "logged-out-home-seen", e.XpromoConsolidation = "xpromo-consolidation", e.MOD_INSIGHTS_ENTRYPOINT_TOOLTIP_SEEN = "mod-insights-entrypoint-tooltip-seen", e.BOOST_POST_CTA_CLICKED = "boost-post-cta-clicked", e.DEFAULT_REDDIT_CHAT = "default-reddit-chat"
+					e.ANNOUNCEMENT_BANNER_SEEN_STORE = "announcement-banner-seen-store", e.ANNOUNCEMENT_BANNER_SEEN_STORE_V2 = "announcement-banner-seen-store-v2", e.AVATAR_PUSHCARD_EVENT_STORE = "avatar_pushcard_event_store", e.AVATAR_QUICK_CREATE_EVENT_STORE = "avatar_quick_create_event_store", e.BAN_EVASION_CAMPAIGN_STORE = "ban_evasion_campaign_store", e.BANNER_DISMISSED_STORE = "banner_dismissed_store", e.BREAKING_NEWS_DISABLED_STORE = "breaking_news_disabled_store", e.CATEGORIES_RANKING_STORE = "categories-ranking-store", e.COMMUNITY_SURVEY_DISMISSED = "community-survey-dismissed", e.CREATE_POLLS_PAINTED_DOOR_DISMISSED_STORE = "create_polls_painted_door_dismissed_store", e.DESKTOP_NOTIFICATIONS = "desktop-notifications", e.DESKTOP_NOTIFICATIONS_PROMPT_BANNER_SEEN_STORE = "desktop_notifications_prompt_banner_seen_store", e.DISCLAIMER_DISMISSED_STORE = "disclaimer_store", e.DOWNLOAD_OBS_DISMISSED_STORE = "download-obs-dismissed-store", e.EDITOR_MODE_HINT_SEEN_STORE = "editor-mode-hint", e.EMAIL_COLLECTION_REPROMPT_STORE = "email-collection-reprompt-store", e.FEATURE_THROTTLING_STORE = "feature-throttling-store", e.FOCUS_VERTICAL_VARIANT = "FOCUS_VERTICAL_VARIANT", e.FOLLOW_STORE = "follow_store", e.GILD_DEFAULTS_STORE = "gild_defaults_store", e.GIVE_FREE_AWARD_TOOLTIP_STORE = "give_free_award_tooltip_store", e.GOOD_VISIT_FS = "good-visit-feeds-search", e.INBOX_BANNER_SEEN_COUNT_STORE = "inbox_banner_seen_count_store", e.INBOX_PRIVACY_POLICY_BANNER_SEEN_STORE = "inbox-privacy-policy-banner-seen-store", e.INLINE_ID_CARD_PRIMARY_TOPIC_TOOLTIP_STORE = "inline-id-card-primary-topic-tooltip-store", e.LAST_CLICKED_AD_ID = "last-clicked-ad-id", e.LAST_CLICKED_IMPRESSION_ID = "last-clicked-impression-id", e.LEGACY_INLINE_ID_CARD_EDIT_EDU_TOOLTIP_STORE = "inline-edit-edu-tooltip-store", e.LOCAL_PERSISTED_EXPERIMENTS_STORE = "local_persisted_experiments_store", e.LOW_ACTIVITY_CALL_TO_ACTION_STORE = "low-activity-call-to-action-store", e.MOD_ONBOARDING_DISMISSED_STORE = "mod-onboarding-store", e.MODAL_DISMISSED_STORE = "modal_dismissed_store", e.MODHUB_SETTING_SEEN = "modhub-setting-seen", e.MODMAIL_HARASSMENT_CAMPAIGN_STORE = "modmail_harassment_campaign_store", e.NAV_BAR_ICON_STATUS = "nav-bar-icon-status", e.OLD_COLLECTIONS_DISMISSED_KEY = "post-creation-collection-tooltip-store", e.OLD_EVENT_DISMISSED_KEY = "post-creation-event-tooltip-store", e.PAGE_TYPE_BEFORE_AD_CLICK = "page-type-before-ad-click", e.POST_CREATION_EDU_TOOLTIP_STORE = "post-creation-edu-tooltip-store", e.POST_STATS_CLICKED = "post-stats-clicked", e.POSTS_CONSUMED_WEEKLY = "posts-consumed-weekly", e.POSTS_RECENTLY_CONSUMED = "posts-recently-consumed", e.PROFILE_PINNED_POSTS_STORE = "profile-pinned-posts-store", e.RECAP_BANNER_SEEN_STORE = "recap-banner-seen-store", e.RECENT_SEARCHES_STORE = "recent_searches", e.SUBSCRIBED_SUBREDDIT_VISITS = "subscribed-subreddit-visits", e.SUBREDDITS_FOR_ADOPTION_STORE = "subreddits-for-adoption", e.SURVEY_CONFIG = "survey-config", e.SURVEY_LAST_SEEN = "survey-last-seen", e.SURVEY_TRIGGER_ACTION_COUNTS = "survey-trigger-action-counts", e.TIME_BEFORE_UNFOCUS = "time-before-unfocus", e.UPVOTE_TOAST_CTA_LAST_SHOWN = "upvote-toast-cta-last-shown", e.UPVOTE_TOAST_LAST_THREE = "upvote-toast-last-three", e.REMOVAL_REASONS_TOOLTIP_SEEN = "removal-reasons-tooltip-seen", e.EMPTY_INBOX_STATE_BADGE_SEEN = "empty_inbox_state_badge_seen", e.GARLIC_BREAD_BANNER_SEEN = "garlic-bread-banner-seen", e.LOGGED_OUT_HOME_SEEN = "logged-out-home-seen", e.XpromoConsolidation = "xpromo-consolidation", e.MOD_INSIGHTS_ENTRYPOINT_TOOLTIP_SEEN = "mod-insights-entrypoint-tooltip-seen", e.BOOST_POST_CTA_CLICKED = "boost-post-cta-clicked", e.DEFAULT_REDDIT_CHAT = "default-reddit-chat"
 				}(n || (n = {}));
 			const r = 1e3
 		},
@@ -37446,7 +37446,7 @@
 				u = Object(s.a)(r.D),
 				c = Object(s.a)(r.ue),
 				_ = Object(s.a)(n.b.LiveChatUserCount),
-				m = Object(s.a)(r.Zb),
+				m = Object(s.a)(r.ac),
 				p = Object(s.a)(r.ve),
 				h = Object(s.a)(r.jg)
 		},
@@ -37740,7 +37740,7 @@
 				_ = Object(n.a)(o.f, a.d, l.l, l.f, u.o, (e, t, i, n, r) => i || n ? e && !t && !!r : e && !t),
 				m = Object(n.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: _,
-					experimentName: r.Kb,
+					experimentName: r.Lb,
 					throttledVariants: {
 						[r.db.SoftBlockingThrottledDaily]: r.eb.Daily,
 						[r.db.SoftBlockingThrottledWeekly]: r.eb.Weekly
@@ -37750,7 +37750,7 @@
 				h = Object(n.a)(m, e => e === r.db.HardBlocking),
 				f = (Object(n.a)(m, e => e !== r.db.HardBlocking), Object(n.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: _,
-					experimentName: r.Lb,
+					experimentName: r.Mb,
 					throttledVariants: {
 						[r.gb.SoftBlockingOnce]: r.fb.Once,
 						[r.gb.SoftBlockingTwice]: r.fb.Twice,
@@ -45044,7 +45044,7 @@
 			e.exports = JSON.parse('{"id":"72e76fc8e5c5"}')
 		},
 		"./src/redditGQL/operations/GetSubredditSettings.json": function(e) {
-			e.exports = JSON.parse('{"id":"6a88ab03683d"}')
+			e.exports = JSON.parse('{"id":"b75531b20155"}')
 		},
 		"./src/redditGQL/operations/ModApprove.json": function(e) {
 			e.exports = JSON.parse('{"id":"660e0733e963"}')
@@ -45110,7 +45110,7 @@
 			e.exports = JSON.parse('{"id":"9d437bfa4b8b"}')
 		},
 		"./src/redditGQL/operations/UpdateSubredditSettings.json": function(e) {
-			e.exports = JSON.parse('{"id":"6fc530e12a33"}')
+			e.exports = JSON.parse('{"id":"ff76dffeb500"}')
 		},
 		"./src/redditGQL/operations/UpdateVideoContentPermissionsSetting.json": function(e) {
 			e.exports = JSON.parse('{"id":"5f706173ed69"}')
@@ -50845,4 +50845,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.cc0c147d23c21b461b4c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.42abb9ccbbbcbc7ef4ac.js.map

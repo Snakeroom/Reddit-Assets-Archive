@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.b770ce3197b9f9076e03.js
-// Retrieved at 5/8/2023, 10:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.ae635b4e91f7198f8773.js
+// Retrieved at 5/8/2023, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -5872,12 +5872,12 @@
 					expEventOverride: t
 				})
 			}
-			const d = l(s.Cb, !0),
-				m = l(s.Db, !0),
-				u = l(s.Eb, !0),
-				p = l(s.Cb, !1),
-				h = l(s.Db, !1),
-				b = l(s.Eb, !1)
+			const d = l(s.Db, !0),
+				m = l(s.Eb, !0),
+				u = l(s.Fb, !0),
+				p = l(s.Db, !1),
+				h = l(s.Eb, !1),
+				b = l(s.Fb, !1)
 		},
 		"./src/reddit/selectors/features/liveBar/index.ts": function(e, t, a) {
 			"use strict";
@@ -5947,4 +5947,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.b770ce3197b9f9076e03.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.ae635b4e91f7198f8773.js.map

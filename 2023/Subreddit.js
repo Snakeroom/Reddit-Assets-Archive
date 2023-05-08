@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.6b7674da19e1e6010df6.js
-// Retrieved at 5/8/2023, 10:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.e9f1a2c6f1db846eb7f1.js
+// Retrieved at 5/8/2023, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -25826,11 +25826,11 @@
 				o = n("./node_modules/reselect/es/index.js");
 			const i = Object(o.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.Jb
+					experimentName: r.Kb
 				}), e => e === r.le.HideTrending),
 				a = Object(o.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.Jb,
+					experimentName: r.Kb,
 					expEventOverride: !1
 				}), e => e === r.le.HideTrending)
 		},
@@ -25854,27 +25854,27 @@
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/experiments/index.ts");
 			const a = Object(r.a)(e => Object(o.c)(e, {
-					experimentName: s.Qb,
+					experimentName: s.Rb,
 					experimentEligibilitySelector: i.e
 				}), e => e === s.X.Enabled),
 				c = Object(r.a)(e => Object(o.c)(e, {
-					experimentName: s.Rb,
+					experimentName: s.Sb,
 					experimentEligibilitySelector: i.e
 				}), e => e === s.Y.Enabled),
 				d = Object(r.a)(e => Object(o.c)(e, {
-					experimentName: s.Sb,
+					experimentName: s.Tb,
 					experimentEligibilitySelector: i.e
 				}), e => e === s.Z.Enabled),
 				l = Object(r.a)(e => Object(o.c)(e, {
-					experimentName: s.Tb,
+					experimentName: s.Ub,
 					experimentEligibilitySelector: i.e
 				}), e => e === s.ab.Enabled),
 				u = Object(r.a)(e => Object(o.c)(e, {
-					experimentName: s.Vb,
+					experimentName: s.Wb,
 					experimentEligibilitySelector: i.e
 				}), e => e === s.cb.Enabled),
 				m = Object(r.a)(e => Object(o.c)(e, {
-					experimentName: s.Ub,
+					experimentName: s.Vb,
 					experimentEligibilitySelector: i.e
 				}), e => e === s.bb.Enabled)
 		},
@@ -26295,12 +26295,12 @@
 					expEventOverride: t
 				})
 			}
-			const l = d(s.Cb, !0),
-				u = d(s.Db, !0),
-				m = d(s.Eb, !0),
-				p = d(s.Cb, !1),
-				b = d(s.Db, !1),
-				f = d(s.Eb, !1)
+			const l = d(s.Db, !0),
+				u = d(s.Eb, !0),
+				m = d(s.Fb, !0),
+				p = d(s.Db, !1),
+				b = d(s.Eb, !1),
+				f = d(s.Fb, !1)
 		},
 		"./src/reddit/selectors/experiments/topPosts.ts": function(e, t, n) {
 			"use strict";
@@ -26356,11 +26356,11 @@
 				},
 				c = Object(r.a)(e => Object(o.c)(e, {
 					experimentEligibilitySelector: i.S,
-					experimentName: s.Wb
+					experimentName: s.Xb
 				}), e => e === s.fd.BottomSheet),
 				d = Object(r.a)(e => Object(o.c)(e, {
 					experimentEligibilitySelector: i.S,
-					experimentName: s.Wb,
+					experimentName: s.Xb,
 					expEventOverride: !1
 				}), e => !!e)
 		},
@@ -26617,4 +26617,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.6b7674da19e1e6010df6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.e9f1a2c6f1db846eb7f1.js.map

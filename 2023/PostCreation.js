@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.be69d60384b7297fbfac.js
-// Retrieved at 5/8/2023, 10:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.72513d291023510e2e4b.js
+// Retrieved at 5/8/2023, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit~StandalonePostPage", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -922,7 +922,7 @@
 				se = n("./node_modules/reselect/es/index.js");
 			const ie = Object(se.a)(e => Object(re.c)(e, {
 				experimentEligibilitySelector: re.a,
-				experimentName: oe.Gb
+				experimentName: oe.Hb
 			}), e => e === oe.Qd);
 			var ae = n("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				ce = n("./src/reddit/selectors/platform.ts"),
@@ -38653,7 +38653,7 @@
 				s = n("./node_modules/reselect/es/index.js");
 			const i = Object(s.a)(e => Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: o.vb
+				experimentName: o.wb
 			}), e => ({
 				bucketed: e === o.Yc.ExpandedSearch || e === o.Yc.CollapsedSearch,
 				collapsed: e === o.Yc.CollapsedSearch,
@@ -38802,11 +38802,11 @@
 				},
 				c = Object(o.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: i.S,
-					experimentName: r.Wb
+					experimentName: r.Xb
 				}), e => e === r.fd.BottomSheet),
 				d = Object(o.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: i.S,
-					experimentName: r.Wb,
+					experimentName: r.Xb,
 					expEventOverride: !1
 				}), e => !!e)
 		},
@@ -39499,4 +39499,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.be69d60384b7297fbfac.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.72513d291023510e2e4b.js.map
