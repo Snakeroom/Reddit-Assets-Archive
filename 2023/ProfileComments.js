@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.6bf46a42f31be546fbdb.js
-// Retrieved at 5/8/2023, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.3b7f8334614565f1fd19.js
+// Retrieved at 5/9/2023, 3:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./src/lib/LiveChatActiveUsers/index.m.less": function(e, t, s) {
@@ -266,7 +266,7 @@
 						postId: o,
 						author: r
 					} = t;
-					return Object(h.e)(f.m) && s.roomStatus === x.b.NotStarted ? n.a.createElement(w.a, {
+					return Object(h.e)(f.n) && s.roomStatus === x.b.NotStarted ? n.a.createElement(w.a, {
 						postId: o,
 						author: r,
 						roomId: s.roomId,
@@ -1084,16 +1084,20 @@
 					isExpanded: r,
 					showFlatlist: i,
 					showModTools: c
-				} = e, l = s => n.a.createElement(Te.b, {
-					className: s,
-					content: Object(Me.a)(t),
-					mediaMetadata: t.media && t.media.mediaMetadata,
-					rtJsonElementProps: Ve(e),
-					mediaProps: {
-						alignLeft: !0,
-						renderSmallMedia: !0
-					}
-				});
+				} = e, l = s => {
+					var o;
+					return n.a.createElement(Te.b, {
+						className: s,
+						content: Object(Me.a)(t),
+						mediaMetadata: t.media && t.media.mediaMetadata,
+						expressionAssetData: null === (o = t.media) || void 0 === o ? void 0 : o.expressionAssetData,
+						rtJsonElementProps: Ve(e),
+						mediaProps: {
+							alignLeft: !0,
+							renderSmallMedia: !0
+						}
+					})
+				};
 				return n.a.createElement(Ue, {
 					className: Object(a.a)({
 						[Fe.a.isRemoved]: !!t.bannedBy
@@ -3705,4 +3709,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.6bf46a42f31be546fbdb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.3b7f8334614565f1fd19.js.map

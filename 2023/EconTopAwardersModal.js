@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.ea46bf99727e558152b6.js
-// Retrieved at 3/30/2023, 11:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.4693ff415ed56e2ec1eb.js
+// Retrieved at 5/9/2023, 3:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -1692,7 +1692,7 @@
 					collapsed: e.collapsed
 				});
 			t.a = Te(e => {
-				const t = Object(s.e)(p.n);
+				const t = Object(s.e)(p.o);
 				return Object(a.useEffect)(() => {
 					e.user && Object(u.a)({
 						sendEvent: e.sendEvent,
@@ -2178,7 +2178,7 @@
 				const h = s && Object(u.d)(s),
 					x = f === l.a.Profile,
 					I = f === l.a.Hovercard,
-					g = Object(c.e)(m.n);
+					g = Object(c.e)(m.o);
 				return h ? o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
 					className: Object(n.a)({
 						[b.a.profileTreatment]: x,
@@ -2347,7 +2347,7 @@
 					url: k,
 					isHovercard: A
 				} = e;
-				const S = Object(s.e)(e => !N && !!y && Object(d.d)(e));
+				const S = Object(s.e)(e => !N && !!y && Object(d.e)(e));
 				return n.a.createElement(n.a.Fragment, null, n.a.createElement(m.a, {
 					bannerBackgroundImage: t,
 					editMode: !!b,
@@ -2713,4 +2713,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.ea46bf99727e558152b6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.4693ff415ed56e2ec1eb.js.map

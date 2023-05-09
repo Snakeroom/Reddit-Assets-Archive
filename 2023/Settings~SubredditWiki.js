@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.b381e51b7922fb0b1452.js
-// Retrieved at 4/26/2023, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.c7a23c882d3b0e27a717.js
+// Retrieved at 5/9/2023, 3:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, r) {
@@ -1615,7 +1615,7 @@
 					collapsed: e.collapsed
 				});
 			t.a = Be(e => {
-				const t = Object(a.e)(b.n);
+				const t = Object(a.e)(b.o);
 				return Object(n.useEffect)(() => {
 					e.user && Object(u.a)({
 						sendEvent: e.sendEvent,
@@ -2101,7 +2101,7 @@
 				const x = a && Object(u.d)(a),
 					h = f === l.a.Profile,
 					g = f === l.a.Hovercard,
-					I = Object(i.e)(m.n);
+					I = Object(i.e)(m.o);
 				return x ? o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
 					className: Object(s.a)({
 						[p.a.profileTreatment]: h,
@@ -2270,7 +2270,7 @@
 					url: U,
 					isHovercard: w
 				} = e;
-				const F = Object(a.e)(e => !O && !!E && Object(c.d)(e));
+				const F = Object(a.e)(e => !O && !!E && Object(c.e)(e));
 				return s.a.createElement(s.a.Fragment, null, s.a.createElement(m.a, {
 					bannerBackgroundImage: t,
 					editMode: !!p,
@@ -2742,4 +2742,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.b381e51b7922fb0b1452.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.c7a23c882d3b0e27a717.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Avatar.8c7857501e8dbf65b595.js
-// Retrieved at 5/8/2023, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Avatar.bcb07ce672fd9ddf33fa.js
+// Retrieved at 5/9/2023, 3:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Avatar"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, s) {
@@ -71,7 +71,7 @@
 					activeMeSubpage: k || void 0,
 					activeDetails: h || void 0,
 					shopTabState: N || void 0
-				}), [h, R, k, N]), C = Object(c.e)(e => !Object(O.S)(e) && Object(m.w)(e));
+				}), [h, R, k, N]), C = Object(c.e)(e => !Object(O.S)(e) && Object(m.x)(e));
 				if (!f || !j) return null;
 				if (C) return a.a.createElement("div", {
 					className: Object(o.a)(x.a.container, {
@@ -132,7 +132,7 @@
 				},
 				x = () => {
 					const e = Object(c.e)(u.a),
-						t = Object(c.e)(d.o),
+						t = Object(c.e)(d.p),
 						s = Object(c.e)(l.b),
 						n = Object(c.e)(e => e.user.session),
 						x = n ? n.accessToken : "",
@@ -221,4 +221,4 @@
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.8c7857501e8dbf65b595.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.bcb07ce672fd9ddf33fa.js.map

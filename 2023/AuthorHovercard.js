@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.47f1b329160f6f6cb3d9.js
-// Retrieved at 5/4/2023, 2:00:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.54ee8daee83e3f8b0f1d.js
+// Retrieved at 5/9/2023, 3:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -1841,7 +1841,7 @@
 					collapsed: e.collapsed
 				});
 			t.a = Te(e => {
-				const t = Object(s.e)(b.n);
+				const t = Object(s.e)(b.o);
 				return Object(r.useEffect)(() => {
 					e.user && Object(u.a)({
 						sendEvent: e.sendEvent,
@@ -5209,7 +5209,7 @@
 				const v = s && Object(u.d)(s),
 					x = f === l.a.Profile,
 					_ = f === l.a.Hovercard,
-					g = Object(i.e)(m.n);
+					g = Object(i.e)(m.o);
 				return v ? o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
 					className: Object(a.a)({
 						[p.a.profileTreatment]: x,
@@ -5378,7 +5378,7 @@
 					url: U,
 					isHovercard: P
 				} = e;
-				const M = Object(s.e)(e => !O && !!E && Object(d.d)(e));
+				const M = Object(s.e)(e => !O && !!E && Object(d.e)(e));
 				return a.a.createElement(a.a.Fragment, null, a.a.createElement(m.a, {
 					bannerBackgroundImage: t,
 					editMode: !!p,
@@ -6687,4 +6687,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.47f1b329160f6f6cb3d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.54ee8daee83e3f8b0f1d.js.map

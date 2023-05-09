@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectiblesShowcaseUnit.3eb18dda14ed9a703a54.js
-// Retrieved at 5/8/2023, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectiblesShowcaseUnit.60d73b5aba6a85bf56a8.js
+// Retrieved at 5/9/2023, 3:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectiblesShowcaseUnit"], {
 		"./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx": function(e, t, r) {
@@ -29,7 +29,7 @@
 				},
 				f = () => {
 					const e = Object(i.e)(l.a),
-						t = Object(i.e)(d.o),
+						t = Object(i.e)(d.p),
 						r = Object(i.e)(u.b),
 						s = Object(i.e)(e => e.user.session),
 						f = s ? s.accessToken : "",
@@ -382,4 +382,4 @@
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectiblesShowcaseUnit.3eb18dda14ed9a703a54.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectiblesShowcaseUnit.60d73b5aba6a85bf56a8.js.map
