@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657.b59c8453cd4decf5a6d8.js
-// Retrieved at 5/10/2023, 11:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657.b1ae04e9b3320a132b0d.js
+// Retrieved at 5/10/2023, 2:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -3702,7 +3702,7 @@
 					subredditId: t
 				}),
 				q = (e, t, r) => {
-					if (Object(h.a)(e)) return !(!t || !Object(m.C)(e, {
+					if (Object(h.b)(e)) return !(!t || !Object(m.C)(e, {
 						subredditId: t
 					})) || (!!z(e, t) || !(!s.d.spGiphy(e) || !Q(e, r)));
 					if (!Object(f.a)(e, {
@@ -3750,7 +3750,7 @@
 						experimentEligibilitySelector: n.S,
 						experimentName: s.yd
 					});
-					return !(!t || Object(s.pg)(t))
+					return !(!t || Object(s.qg)(t))
 				},
 				i = e => {
 					return Object(o.c)(e, {
@@ -3890,4 +3890,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657.b59c8453cd4decf5a6d8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657.b1ae04e9b3320a132b0d.js.map

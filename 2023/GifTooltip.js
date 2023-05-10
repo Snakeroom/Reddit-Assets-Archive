@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GifTooltip.f2498ac245d345405cb6.js
-// Retrieved at 1/18/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GifTooltip.ddfbf107dad7bf3016fe.js
+// Retrieved at 5/10/2023, 2:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GifTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/General/async.ts": function(e, t, s) {
@@ -99,7 +99,7 @@
 			t.default = e => {
 				const {
 					subreddit: t
-				} = e, s = t.id, u = Object(i.useRef)(Object(n.a)()), h = Object(r.e)(e => Object(d.a)(e)), T = Object(r.e)(e => Object(c.a)(e, {
+				} = e, s = t.id, u = Object(i.useRef)(Object(n.a)()), h = Object(r.e)(e => Object(d.b)(e)), T = Object(r.e)(e => Object(c.a)(e, {
 					subredditId: s
 				}));
 				return h ? o.a.createElement(l.a, e) : T ? o.a.createElement(a.a, m({}, e, {
@@ -111,4 +111,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GifTooltip.f2498ac245d345405cb6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GifTooltip.ddfbf107dad7bf3016fe.js.map

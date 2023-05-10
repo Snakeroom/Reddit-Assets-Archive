@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.af6dea3875bd1a2fde69.js
-// Retrieved at 5/10/2023, 11:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.9c487dae7c51195c7fb1.js
+// Retrieved at 5/10/2023, 2:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -6058,4 +6058,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.af6dea3875bd1a2fde69.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.9c487dae7c51195c7fb1.js.map

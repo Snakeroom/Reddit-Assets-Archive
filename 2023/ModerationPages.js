@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.160138bb95cd2f444130.js
-// Retrieved at 5/10/2023, 11:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.e18cfe216d1963c37cd3.js
+// Retrieved at 5/10/2023, 2:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -9310,7 +9310,7 @@
 						} = t;
 						var m, p;
 						const b = Object(Ce.k)(e),
-							f = !!b && !Object(he.pg)(b) && (o || b === he.nb.Community),
+							f = !!b && !Object(he.qg)(b) && (o || b === he.nb.Community),
 							{
 								adsSeenCount: h,
 								totalPostsSeenCount: g,
@@ -27456,11 +27456,11 @@
 						spamSelfposts: A,
 						spoilersEnabled: I,
 						suggestedCommentSort: _
-					} = t, S = Object(a.e)(Qe.b), w = Object(a.e)(Ge.c), P = Object(a.e)(Ge.a), N = Object(a.e)(e => ((e, t) => {
+					} = t, S = Object(a.e)(Qe.c), w = Object(a.e)(Qe.a), P = Object(a.e)(Ge.c), N = Object(a.e)(Ge.a), D = Object(a.e)(e => ((e, t) => {
 						const n = t && e.subreddits.about[t];
 						return Boolean(n && n.isMediaInCommentsSettingShown)
-					})(e, d)), D = Object(He.a)(Ue.Cf) === Ue.Pd, M = S && N, R = (null == g ? void 0 : g.allowedMediaTypes) || [], L = _, B = Object(o.useCallback)(() => s(!c, "archivePostsEnabled"), [c, s]), F = e => e.toUpperCase() === Q.U.All, U = e => {
-						const n = F(t[e]) ? Q.U.Low : Q.U.All;
+					})(e, d)), M = Object(He.a)(Ue.Cf) === Ue.Pd, R = S && D, L = (null == g ? void 0 : g.allowedMediaTypes) || [], B = _, F = Object(o.useCallback)(() => s(!c, "archivePostsEnabled"), [c, s]), U = e => e.toUpperCase() === Q.U.All, H = e => {
+						const n = U(t[e]) ? Q.U.Low : Q.U.All;
 						s(n, e)
 					};
 					return i.a.createElement(k.a, null, i.a.createElement(j, null, i.a.createElement(k.b, null, q.fbt._("Post and Comment settings", null, {
@@ -27486,7 +27486,7 @@
 						})
 					}), i.a.createElement(X.q, {
 						on: c,
-						onClick: B,
+						onClick: F,
 						label: q.fbt._("Archive posts", null, {
 							hk: "3FdbDg"
 						}),
@@ -27545,7 +27545,7 @@
 						subtext: q.fbt._("Allow predictions by mods in your community (only for public, SFW communities with 10k or more members)", null, {
 							hk: "40loX3"
 						})
-					}), D ? i.a.createElement(i.a.Fragment, null, i.a.createElement(X.m, {
+					}), M ? i.a.createElement(i.a.Fragment, null, i.a.createElement(X.m, {
 						label: q.fbt._("Content filters", null, {
 							hk: "ZAU2O"
 						}),
@@ -27554,25 +27554,25 @@
 						})
 					}), i.a.createElement(X.q, {
 						indent: !0,
-						on: F(C),
+						on: U(C),
 						label: q.fbt._("Filter link, poll, and media posts", null, {
 							hk: "2JjdGk"
 						}),
-						onClick: () => U("spamLinks")
+						onClick: () => H("spamLinks")
 					}), i.a.createElement(X.q, {
 						indent: !0,
-						on: F(A),
+						on: U(A),
 						label: q.fbt._("Filter text posts", null, {
 							hk: "3kvyDv"
 						}),
-						onClick: () => U("spamSelfposts")
+						onClick: () => H("spamSelfposts")
 					}), i.a.createElement(X.q, {
 						indent: !0,
-						on: F(O),
+						on: U(O),
 						label: q.fbt._("Filter comments", null, {
 							hk: "1llhZg"
 						}),
-						onClick: () => U("spamComments")
+						onClick: () => H("spamComments")
 					})) : i.a.createElement(i.a.Fragment, null, i.a.createElement(X.m, {
 						label: q.fbt._("Spam filter strength", null, {
 							hk: "4C4qar"
@@ -27624,8 +27624,8 @@
 						}),
 						items: Object.keys(se.j),
 						displayItems: Object.values(se.j),
-						displayTitle: se.j[L],
-						selected: L,
+						displayTitle: se.j[B],
+						selected: B,
 						onClick: e => s(e, "suggestedCommentSort"),
 						id: "suggestedCommentSort"
 					}), i.a.createElement(X.q, {
@@ -27646,12 +27646,12 @@
 						max: se.b,
 						type: "number",
 						value: x
-					})), M && i.a.createElement(i.a.Fragment, null, i.a.createElement(X.m, {
+					})), R && i.a.createElement(i.a.Fragment, null, i.a.createElement(X.m, {
 						label: q.fbt._("Media in comments", null, {
 							hk: "25YOda"
 						})
 					}), i.a.createElement(X.q, {
-						on: R.includes(Q.f.Giphy),
+						on: L.includes(Q.f.Giphy),
 						onClick: () => s(We(Q.f.Giphy, g), "commentContributionSettings"),
 						label: q.fbt._("GIFs from GIPHY", null, {
 							hk: "1jwTaz"
@@ -27661,7 +27661,17 @@
 						}),
 						indent: !0
 					}), w && i.a.createElement(X.q, {
-						on: R.includes(Q.f.Static),
+						on: L.includes(Q.f.Expression),
+						onClick: () => s(We(Q.f.Expression, g), "commentContributionSettings"),
+						label: q.fbt._("Collectible Expressions", null, {
+							hk: "19g0dC"
+						}),
+						subtext: q.fbt._("Allow comments with Collectible Expressions.", null, {
+							hk: "fmjBM"
+						}),
+						indent: !0
+					}), P && i.a.createElement(X.q, {
+						on: L.includes(Q.f.Static),
 						onClick: () => s(We(Q.f.Static, g), "commentContributionSettings"),
 						label: q.fbt._("Images", null, {
 							hk: "3Vrqqu"
@@ -27670,8 +27680,8 @@
 							hk: "4kSi3w"
 						}),
 						indent: !0
-					}), P && i.a.createElement(X.q, {
-						on: R.includes(Q.f.Animated),
+					}), N && i.a.createElement(X.q, {
+						on: L.includes(Q.f.Animated),
 						onClick: () => s(We(Q.f.Animated, g), "commentContributionSettings"),
 						label: q.fbt._("GIFs", null, {
 							hk: "2vQkCj"
@@ -60150,7 +60160,7 @@
 								experimentName: o.F,
 								expEventOverride: t
 							});
-							return !!(Object(o.pg)(n) ? void 0 : n)
+							return !!(Object(o.qg)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -76940,7 +76950,7 @@
 					const o = ((null === (r = null === (s = e.pages) || void 0 === s ? void 0 : s.comments) || void 0 === r ? void 0 : r.followed) || []).find(e => e.id === n);
 					return !!(o && o.expiresAt < Date.now())
 				},
-				ne = Object(a.a)(l.a, u.y, (e, t) => {
+				ne = Object(a.a)(l.b, u.y, (e, t) => {
 					var n;
 					return e && (null === (n = null == t ? void 0 : t.allowedMediaInComments) || void 0 === n ? void 0 : n.includes(h.f.Giphy)) || !1
 				}),
@@ -77216,14 +77226,14 @@
 						experimentEligibilitySelector: r.a,
 						experimentName: s.mc
 					});
-					return !(!t || Object(s.pg)(t))
+					return !(!t || Object(s.qg)(t))
 				},
 				i = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
 						experimentName: s.rd
 					});
-					return !(!t || Object(s.pg)(t))
+					return !(!t || Object(s.qg)(t))
 				}
 		},
 		"./src/reddit/selectors/experiments/commentSearchPdp.ts": function(e, t, n) {
@@ -77531,10 +77541,12 @@
 		},
 		"./src/reddit/selectors/experiments/mediaInComments.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "b", (function() {
+			n.d(t, "c", (function() {
 				return o
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "b", (function() {
 				return i
+			})), n.d(t, "a", (function() {
+				return a
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
@@ -77545,6 +77557,10 @@
 				i = e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: s.Ae
+				}) === s.Pd,
+				a = e => Object(r.c)(e, {
+					experimentEligibilitySelector: r.a,
+					experimentName: s.kg
 				}) === s.Pd
 		},
 		"./src/reddit/selectors/experiments/newCommunityProgressV3.ts": function(e, t, n) {
@@ -78927,7 +78943,7 @@
 					} = e.onboarding;
 					if (t.success || t.failure) return t
 				},
-				E = Object(r.a)(m.k, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(i.pg)(e) ? t : null),
+				E = Object(r.a)(m.k, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(i.qg)(e) ? t : null),
 				O = Object(r.a)(m.k, (e, t) => {
 					let {
 						pageLayer: n
@@ -80374,4 +80390,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.160138bb95cd2f444130.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.e18cfe216d1963c37cd3.js.map

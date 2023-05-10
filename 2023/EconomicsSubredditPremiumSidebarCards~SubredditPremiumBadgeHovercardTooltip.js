@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip.65618ec2fe7ec37bd0d4.js
-// Retrieved at 1/18/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip.b34aeb6d4143acee65dd.js
+// Retrieved at 5/10/2023, 2:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -2409,7 +2409,7 @@
 					subredditId: t
 				}),
 				z = (e, t, n) => {
-					if (Object(p.a)(e)) return !(!t || !Object(m.C)(e, {
+					if (Object(p.b)(e)) return !(!t || !Object(m.C)(e, {
 						subredditId: t
 					})) || (!!q(e, t) || !(!r.d.spGiphy(e) || !Z(e, n)));
 					if (!Object(h.a)(e, {
@@ -2550,4 +2550,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip.65618ec2fe7ec37bd0d4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip.b34aeb6d4143acee65dd.js.map
