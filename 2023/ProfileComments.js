@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.3b7f8334614565f1fd19.js
-// Retrieved at 5/9/2023, 3:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.0bfa8b81db053f716f96.js
+// Retrieved at 5/10/2023, 11:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./src/lib/LiveChatActiveUsers/index.m.less": function(e, t, s) {
@@ -29,9 +29,9 @@
 			})), s.d(t, "profileCommentsRequested", (function() {
 				return F
 			})), s.d(t, "moreItemsPending", (function() {
-				return B
-			})), s.d(t, "moreItemsLoaded", (function() {
 				return U
+			})), s.d(t, "moreItemsLoaded", (function() {
+				return B
 			})), s.d(t, "moreItemsFailed", (function() {
 				return D
 			})), s.d(t, "moreItemsRequested", (function() {
@@ -126,7 +126,7 @@
 						meta: s().meta,
 						...S
 					})), await Promise.all([t(Object(p.c)(O)), t(Object(h.q)()), t(Object(m.b)()), t(l.o(O))])
-				}, B = Object(a.a)(T.c), U = Object(a.a)(T.b), D = Object(a.a)(T.a), W = () => async (e, t, s) => {
+				}, U = Object(a.a)(T.c), B = Object(a.a)(T.b), D = Object(a.a)(T.a), W = () => async (e, t, s) => {
 					let {
 						apiContext: o
 					} = s;
@@ -155,7 +155,7 @@
 						}),
 						C = g && g[x.token];
 					if (O || C) return;
-					e(B({
+					e(U({
 						key: h,
 						fetchedToken: x.token
 					}));
@@ -175,7 +175,7 @@
 								...j.body,
 								commentIds: n()(j.body.commentIds, t)
 							};
-						e(U({
+						e(B({
 							fetchedToken: x.token,
 							key: h,
 							meta: r.meta,
@@ -293,8 +293,8 @@
 				R = s("./src/reddit/components/ModModeFilteredReason/helpers.ts"),
 				A = s("./src/reddit/components/ModModeReports/index.tsx"),
 				F = s("./src/reddit/components/ModModeReports/helpers.ts"),
-				B = s("./src/reddit/components/OneFeed/PostRecommendationContext.tsx"),
-				U = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
+				U = s("./src/reddit/components/OneFeed/PostRecommendationContext.tsx"),
+				B = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				D = s("./src/reddit/components/PostContainer/index.tsx"),
 				W = s("./src/reddit/components/PostMeta/index.tsx"),
 				V = s("./src/reddit/components/PostOverflowMenu/index.tsx"),
@@ -379,9 +379,9 @@
 					Re = Object(Y.a)(oe),
 					Ae = de && $.a,
 					Fe = Object(R.a)(xe),
-					Be = Object(F.c)(xe),
-					Ue = !!xe.media && xe.media.type === q.o.RTJSON,
-					De = ye && Ue,
+					Ue = Object(F.c)(xe),
+					Be = !!xe.media && xe.media.type === q.o.RTJSON,
+					De = ye && Be,
 					We = v && !je,
 					Ve = !!xe.recommendationContext,
 					Ge = {
@@ -431,7 +431,7 @@
 					flairStyleTemplate: Ne,
 					redditStyle: ve,
 					postId: fe
-				}), n.a.createElement(U.a, {
+				}), n.a.createElement(B.a, {
 					className: Ee ? ce.a.shouldUseRoundedBorder : void 0,
 					"data-click-id": "background",
 					flairStyleTemplate: Ne
@@ -453,7 +453,7 @@
 						[ce.a.showBulkActionCheckbox]: ge
 					}),
 					"data-click-id": "body"
-				}, Ze && n.a.createElement(B.a, {
+				}, Ze && n.a.createElement(U.a, {
 					content: xe.recommendationContext.content,
 					layout: z.g.Classic,
 					post: xe
@@ -475,7 +475,7 @@
 					key: "PostMeta"
 				}, Ge)), de && Te && Fe && n.a.createElement(M.a, {
 					thing: xe
-				}), de && Te && Be && n.a.createElement(A.a, {
+				}), de && Te && Ue && n.a.createElement(A.a, {
 					onIgnoreReports: pe,
 					reportable: xe
 				}), Object(r.v)(xe, Z) && n.a.createElement(m.a, {
@@ -722,8 +722,8 @@
 				R = s("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
 				A = s("./src/reddit/components/DistinguishCommentDropdown/index.tsx"),
 				F = s("./src/reddit/components/ModActionsMenu/index.tsx"),
-				B = s("./src/reddit/components/ModModeReports/helpers.ts"),
-				U = s("./src/reddit/components/ViewReportsDropdown/Loader.ts"),
+				U = s("./src/reddit/components/ModModeReports/helpers.ts"),
+				B = s("./src/reddit/components/ViewReportsDropdown/Loader.ts"),
 				D = s("./src/reddit/contexts/InsideOverlay.tsx"),
 				W = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				V = s("./src/reddit/helpers/correlationIdTracker.ts"),
@@ -798,7 +798,7 @@
 						let {
 							comment: s
 						} = t;
-						return Object(Y.B)(e, {
+						return Object(Y.A)(e, {
 							postId: s.postId
 						})
 					},
@@ -822,7 +822,7 @@
 						let {
 							comment: s
 						} = t;
-						return Object(Y.V)(e, {
+						return Object(Y.U)(e, {
 							postId: s.postId
 						})
 					},
@@ -884,13 +884,13 @@
 						comment: e,
 						modModeEnabled: t,
 						showModTools: s
-					} = this.props, o = Object(B.a)(e);
-					if (s && Object(B.c)(e) && !t) return n.a.createElement(M.a, {
+					} = this.props, o = Object(U.a)(e);
+					if (s && Object(U.c)(e) && !t) return n.a.createElement(M.a, {
 						text: `${o}`,
 						onClick: this.handleRestrictedButtonClick,
 						selected: this.props.activeTooltipId === Ie(e.id),
 						id: Ie(e.id)
-					}, n.a.createElement(U.a, {
+					}, n.a.createElement(B.a, {
 						model: e,
 						onIgnoreReports: this.handleIgnoreReports,
 						tooltipId: Ie(e.id)
@@ -1066,8 +1066,8 @@
 				Re = s("./src/reddit/selectors/commentSelector.ts"),
 				Ae = s("./src/reddit/components/Comments/ProfileComment/index.m.less"),
 				Fe = s.n(Ae);
-			const Be = he.a.wrapped(Se.a, "TopMeta", Fe.a),
-				Ue = he.a.div("ProfileCommentWrapper", Fe.a),
+			const Ue = he.a.wrapped(Se.a, "TopMeta", Fe.a),
+				Be = he.a.div("ProfileCommentWrapper", Fe.a),
 				De = he.a.div("CommentBody", Fe.a),
 				We = Object(r.b)(() => Object(i.c)({
 					comment: (e, t) => Object(Re.c)(e, t),
@@ -1098,11 +1098,11 @@
 						}
 					})
 				};
-				return n.a.createElement(Ue, {
+				return n.a.createElement(Be, {
 					className: Object(a.a)({
 						[Fe.a.isRemoved]: !!t.bannedBy
 					})
-				}, n.a.createElement(Be, {
+				}, n.a.createElement(Ue, {
 					collapsedBecauseCrowdControl: !1,
 					collapsed: !1,
 					comment: t,
@@ -1245,9 +1245,9 @@
 					className: c
 				}, r.a.createElement(T, null, r.a.createElement(w, null, r.a.createElement(p.a, d)), F(i), i.source && r.a.createElement(b.a, {
 					post: i
-				}), U(e)), W(e)) : r.a.createElement(y, {
+				}), B(e)), W(e)) : r.a.createElement(y, {
 					className: c
-				}, r.a.createElement(w, null, r.a.createElement(p.a, d)), F(i), B(e), U(e))
+				}, r.a.createElement(w, null, r.a.createElement(p.a, d)), F(i), U(e), B(e))
 			}));
 			const F = e => r.a.createElement(I, {
 					isCrosspost: !0,
@@ -1255,7 +1255,7 @@
 					shouldLinkWrap: !0,
 					size: u.b.Small
 				}),
-				B = e => {
+				U = e => {
 					const {
 						mediaProps: t,
 						post: s
@@ -1269,7 +1269,7 @@
 						scrollerItemRef: t.scrollerItemRef
 					})))
 				},
-				U = e => {
+				B = e => {
 					const {
 						post: t
 					} = e, {
@@ -2363,8 +2363,8 @@
 				u = s("./node_modules/reselect/es/index.js");
 			const b = Object(u.a)(e => Object(p.c)(e, {
 				experimentEligibilitySelector: p.a,
-				experimentName: m.xc
-			}), e => e === m.Qd);
+				experimentName: m.wc
+			}), e => e === m.Pd);
 			var h = s("./node_modules/fbt/lib/FbtPublic.js"),
 				x = s("./src/lib/classNames/index.ts"),
 				f = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
@@ -2378,7 +2378,7 @@
 					postId: t,
 					className: s
 				} = e;
-				const o = Object(d.e)(e => Object(O.G)(e, {
+				const o = Object(d.e)(e => Object(O.F)(e, {
 						postId: t
 					})),
 					r = Object(d.e)(e => "subreddit" === (null == o ? void 0 : o.belongsTo.type) ? Object(g.X)(e, {
@@ -2424,8 +2424,8 @@
 			};
 			var A = s("./src/lib/isUrl/index.ts"),
 				F = s("./src/reddit/actions/profile/index.ts"),
-				B = s("./src/reddit/components/Thumbnail/index.tsx"),
-				U = s("./src/reddit/components/UserIcon/index.tsx"),
+				U = s("./src/reddit/components/Thumbnail/index.tsx"),
+				B = s("./src/reddit/components/UserIcon/index.tsx"),
 				D = s("./src/reddit/components/UserIcon/UserIcon.tsx"),
 				W = s("./src/reddit/helpers/userSnoovatar/index.ts"),
 				V = s("./src/reddit/selectors/profile.ts"),
@@ -2438,7 +2438,7 @@
 				var s, r, i, a;
 				const c = Object(d.d)(),
 					l = Object(d.e)(Object(V.l)(t.author)),
-					m = Object(o.useMemo)(() => Object(B.c)({
+					m = Object(o.useMemo)(() => Object(U.c)({
 						post: t
 					}), [t]),
 					p = Object(o.useMemo)(() => Object(A.a)(m), [m]);
@@ -2449,7 +2449,7 @@
 					b = Object(D.c)(null === (r = null == l ? void 0 : l.icon) || void 0 === r ? void 0 : r.url);
 				return n.a.createElement("div", {
 					className: J.a.media
-				}, p ? n.a.createElement(B.b, {
+				}, p ? n.a.createElement(U.b, {
 					post: t,
 					url: m,
 					className: J.a.mediaThumbnail,
@@ -2457,7 +2457,7 @@
 					containerClassName: J.a.mediaThumbnailContainer
 				}) : null, !p && (null === (i = null == l ? void 0 : l.icon) || void 0 === i ? void 0 : i.url) && n.a.createElement("div", {
 					className: J.a.userIconContainer
-				}, n.a.createElement(U.a, {
+				}, n.a.createElement(B.a, {
 					className: Object(x.a)({
 						[J.a.snoovatarUserIcon]: u,
 						[J.a.defaultUserIcon]: b
@@ -3356,7 +3356,7 @@
 					currentProfileName: _.j,
 					pageLayer: e => e
 				}),
-				B = Object(d.c)({
+				U = Object(d.c)({
 					comment: (e, t) => {
 						let {
 							itemId: s
@@ -3377,7 +3377,7 @@
 						})(e, s)
 					}
 				});
-			var U = F(Object(a.b)(B)(e => {
+			var B = F(Object(a.b)(U)(e => {
 				const {
 					comment: t,
 					itemId: s,
@@ -3452,7 +3452,7 @@
 					commentsById: X.q,
 					itemIds: $.f,
 					itemIdToPostId: $.e,
-					postsById: Y.J,
+					postsById: Y.I,
 					estimateItemHeight: e => (e, t, s) => {
 						if (s) switch (t) {
 							case I.g.Medium:
@@ -3503,7 +3503,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const de = e => i.a.createElement(U, ae({}, e, {
+			const de = e => i.a.createElement(B, ae({}, e, {
 					allowModToolsUnderComments: !0
 				})),
 				ce = (e => Object(q.c)(oe(ie(e))))(W.a);
@@ -3709,4 +3709,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.3b7f8334614565f1fd19.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.0bfa8b81db053f716f96.js.map

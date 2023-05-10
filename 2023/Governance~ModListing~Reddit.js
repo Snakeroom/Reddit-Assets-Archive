@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.e312f9a4d22d4252b92d.js
-// Retrieved at 5/9/2023, 3:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.f6ca0e8207a1be98bce1.js
+// Retrieved at 5/10/2023, 11:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -399,9 +399,9 @@
 			})), n.d(t, "e", (function() {
 				return A
 			})), n.d(t, "b", (function() {
-				return G
-			})), n.d(t, "i", (function() {
 				return F
+			})), n.d(t, "i", (function() {
+				return G
 			})), n.d(t, "f", (function() {
 				return H
 			})), n.d(t, "c", (function() {
@@ -539,7 +539,7 @@
 					i && i !== s && n(M({
 						index: i
 					}))
-				}, M = Object(o.a)(c.g), B = (Object(o.a)(c.h), Object(o.a)(c.f)), G = e => async (t, n, o) => {
+				}, M = Object(o.a)(c.g), B = (Object(o.a)(c.h), Object(o.a)(c.f)), F = e => async (t, n, o) => {
 					let {
 						gqlContext: s
 					} = o;
@@ -562,7 +562,7 @@
 					} else t(Object(d.f)(Object(d.e)(r.fbt._("Failed to hide notification, please try again.", null, {
 						hk: "fL7uB"
 					}), N.b.Error)))
-				}, F = (e, t) => async (n, o, s) => {
+				}, G = (e, t) => async (n, o, s) => {
 					let {
 						gqlContext: i
 					} = s;
@@ -589,7 +589,7 @@
 						});
 						return Object(d.f)(Object(d.e)(n, N.b.Undo, r.fbt._("Undo", null, {
 							hk: "4zFGDk"
-						}), F(e, t)))
+						}), G(e, t)))
 					})()) : n(Object(d.f)(Object(d.e)(r.fbt._("Failed to hide notifications, please try again.", null, {
 						hk: "KEGcB"
 					}), N.b.Error)))
@@ -1406,7 +1406,7 @@
 					wrapperClassName: w,
 					style: L,
 					...A
-				} = e, D = !!i && Object(l.e)(i) === P, U = D ? i : k, R = U && U.accountIcon || c, M = k ? k.isNSFW : p, B = Object(d.a)(R) && !b, G = B ? s.a.createElement(_.a, {
+				} = e, D = !!i && Object(l.e)(i) === P, U = D ? i : k, R = U && U.accountIcon || c, M = k ? k.isNSFW : p, B = Object(d.a)(R) && !b, F = B ? s.a.createElement(_.a, {
 					headshot: R,
 					className: e.className,
 					hasNftBorder: m && Object(d.d)(c),
@@ -1416,7 +1416,7 @@
 					isCurrentUser: D,
 					isNSFW: M,
 					style: L
-				})), [F, H] = Object(o.useState)(!1), V = Object(o.useMemo)(() => ({
+				})), [G, H] = Object(o.useState)(!1), V = Object(o.useMemo)(() => ({
 					input: {
 						channel: {
 							teamOwner: "CONTENT_AND_COMMUNITIES",
@@ -1440,7 +1440,7 @@
 				}, []), Q = Object(o.useRef)({
 					rootMargin: "750px 0px 1000px 0px"
 				});
-				return Object(u.a)(K, z, Q.current), N ? G : s.a.createElement("div", {
+				return Object(u.a)(K, z, Q.current), N ? F : s.a.createElement("div", {
 					className: Object(r.a)(O.a.userIconWrapper, {
 						[O.a.hasHeadShotWrapper]: B,
 						[O.a.isProfileIcon]: S
@@ -1448,7 +1448,7 @@
 					ref: K
 				}, m && s.a.createElement(I, {
 					iconUrl: c
-				}), G, y && (F || h && v) && s.a.createElement(g.default, {
+				}), F, y && (G || h && v) && s.a.createElement(g.default, {
 					showPresence: !0,
 					isHighlighted: f,
 					onceInViewport: C
@@ -1587,7 +1587,7 @@
 						postId: r
 					} = t;
 					return n && r ? Object(x.b)(e, r) : null
-				}, x.G, h.d, (e, t, n, r, o) => ({
+				}, x.F, h.d, (e, t, n, r, o) => ({
 					allowClickTracking: e,
 					basePixelMetadata: n,
 					userId: t ? Object(m.a)(t.id) : null,
@@ -2279,9 +2279,9 @@
 			})), n.d(t, "h", (function() {
 				return B
 			})), n.d(t, "i", (function() {
-				return G
-			})), n.d(t, "f", (function() {
 				return F
+			})), n.d(t, "f", (function() {
+				return G
 			})), n.d(t, "b", (function() {
 				return W
 			})), n.d(t, "a", (function() {
@@ -2470,7 +2470,7 @@
 							Object(C.a)(z(n, r)(t));
 							break;
 						case s.Tb.INBOX_PAGES:
-							b && F(t);
+							b && G(t);
 							break;
 						case s.Tb.MODERATION_PAGES:
 							b && B(t, !0, d ? d.subredditName : null, d ? d.profileName : null);
@@ -2479,7 +2479,7 @@
 							b && re(t, !0);
 							break;
 						case s.Tb.MODQUEUE_PAGES:
-							b && G(t, d ? d.subredditName : null, d ? d.profileName : null);
+							b && F(t, d ? d.subredditName : null, d ? d.profileName : null);
 							break;
 						case s.Tb.SEARCH_RESULTS:
 							if (b) {
@@ -2710,7 +2710,7 @@
 						adblock: N.e(e)
 					})
 				},
-				G = (e, t, n) => {
+				F = (e, t, n) => {
 					Object(C.a)({
 						source: "global",
 						action: "view",
@@ -2722,7 +2722,7 @@
 						adblock: N.e(e)
 					})
 				},
-				F = e => {
+				G = e => {
 					Object(C.a)({
 						source: "global",
 						action: "view",
@@ -3397,7 +3397,7 @@
 					return r ? r * o.Yb < 1639443600180 ? void 0 : O(e) : void 0
 				},
 				O = Object(r.a)(e => Object(c.c)(e, {
-					experimentName: s.Je,
+					experimentName: s.Ie,
 					experimentEligibilitySelector: a.e
 				}), d.a)
 		},
@@ -3507,4 +3507,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.e312f9a4d22d4252b92d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.f6ca0e8207a1be98bce1.js.map

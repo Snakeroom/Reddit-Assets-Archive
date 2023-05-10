@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.48f7efab35072f282499.js
-// Retrieved at 3/30/2023, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.c87c618e2fcb47eec659.js
+// Retrieved at 5/10/2023, 11:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/Body/index.m.less": function(e, t, s) {
@@ -187,8 +187,8 @@
 				},
 				M = s("./src/reddit/components/SubredditIcon/index.tsx"),
 				K = s("./src/reddit/components/SubscribeButton/Inline.tsx"),
-				z = s("./src/reddit/components/Widgets/CommunityList/helpers.ts"),
-				J = s("./src/reddit/constants/posts.ts"),
+				J = s("./src/reddit/components/Widgets/CommunityList/helpers.ts"),
+				z = s("./src/reddit/constants/posts.ts"),
 				G = s("./src/reddit/controls/Button/index.tsx"),
 				Q = s("./src/reddit/controls/InternalLink/index.tsx"),
 				q = s("./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/Header/index.m.less"),
@@ -200,7 +200,7 @@
 						onSubredditOrProfileClick: r,
 						shouldShowSubscribeButton: n,
 						subredditOrProfile: i
-					} = e, c = Object(f.i)(i) ? J.a.PROFILE : J.a.SUBREDDIT;
+					} = e, c = Object(f.i)(i) ? z.a.PROFILE : z.a.SUBREDDIT;
 					return a.a.createElement("div", {
 						className: Object(o.a)(V.a.header, t)
 					}, a.a.createElement(Q.default, {
@@ -218,7 +218,7 @@
 						"data-redditstyle": !0,
 						to: i.url,
 						onMouseDown: r
-					}, Object(z.b)(i.displayText || i.name, c))), n && a.a.createElement(K.a, {
+					}, Object(J.b)(i.displayText || i.name, c))), n && a.a.createElement(K.a, {
 						className: V.a.subscribe,
 						"data-redditstyle": !0,
 						getEventFactory: s,
@@ -309,7 +309,7 @@
 			}
 			const {
 				fbt: de
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), le = [], me = () => {}, pe = () => void 0, be = c.a.button("CloseButton", oe.a), ue = Object(i.a)(b.z, e => e.filter(e => 9 === e.length)), he = Object(i.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), le = [], me = () => {}, pe = () => void 0, be = c.a.button("CloseButton", oe.a), ue = Object(i.a)(b.y, e => e.filter(e => 9 === e.length)), he = Object(i.c)({
 				discoveryUnit: e => Object(p.b)(e, {
 					unitName: m.j
 				}),
@@ -370,4 +370,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.48f7efab35072f282499.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.c87c618e2fcb47eec659.js.map

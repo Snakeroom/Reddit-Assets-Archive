@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.16a1eb7368ee9477f0d6.js
-// Retrieved at 5/9/2023, 3:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.309c9fd82acf8789b6ca.js
+// Retrieved at 5/10/2023, 11:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -1219,7 +1219,7 @@
 						thingId: e
 					}));
 					o(Object(c.z)(g.author));
-					const R = Object(b.V)(p, {
+					const R = Object(b.U)(p, {
 						postId: f ? p.features.comments.models[e].postId : p.posts.models[e].id
 					});
 					p.reportRules.sitewideRules && p.reportRules.sitewideRules.length || o(Object(i.b)()), R && o(Object(l.o)(R.name, R.type)), o(D(e)), o(M(!!t)), n && o(B(n)), R && o(H(R.name))
@@ -1773,8 +1773,8 @@
 				Q = n.n(z);
 			const J = c.a.wrapped(h.a, "blockUserHolder", Q.a),
 				Y = c.a.wrapped(W.a, "BlockUserIcon", Q.a),
-				V = c.a.div("BlockUserHeader", Q.a),
-				X = c.a.div("OptionHolder", Q.a),
+				X = c.a.div("BlockUserHeader", Q.a),
+				V = c.a.div("OptionHolder", Q.a),
 				Z = c.a.div("OptionHeader", Q.a),
 				$ = c.a.div("OptionDescription", Q.a),
 				ee = c.a.a("Link", Q.a),
@@ -1805,7 +1805,7 @@
 						}) : o.fbt._("Block {username}", [o.fbt._param("username", e)], {
 							hk: "ohbdA"
 						})
-					}, this.renderAbuseOfReportButtonOption = () => s.a.createElement(X, null, s.a.createElement(Z, null, o.fbt._("Turn off free-form reports", null, {
+					}, this.renderAbuseOfReportButtonOption = () => s.a.createElement(V, null, s.a.createElement(Z, null, o.fbt._("Turn off free-form reports", null, {
 						hk: "2yXM3i"
 					})), s.a.createElement($, null, o.fbt._("If you are a moderator, you can {=visit the Help Center} to learn how to modify your subreddit’s reporting settings to disallow users from submitting free-form reports. We also have automated processes in place to prevent excessive reporting.", [o.fbt._param("=visit the Help Center", s.a.createElement(ee, {
 						target: "_blank",
@@ -1820,7 +1820,7 @@
 						} = this, t = this.getBlockUserHeaderText();
 						return s.a.createElement(J, {
 							onClick: () => this.onBlockAuthor(e.authorName)
-						}, s.a.createElement(Y, null), s.a.createElement("div", null, s.a.createElement(V, null, t), s.a.createElement($, null, o.fbt._("You won't see posts or comments from {username}. You can change this later in your preference.", [o.fbt._param("username", e.authorName)], {
+						}, s.a.createElement(Y, null), s.a.createElement("div", null, s.a.createElement(X, null, t), s.a.createElement($, null, o.fbt._("You won't see posts or comments from {username}. You can change this later in your preference.", [o.fbt._param("username", e.authorName)], {
 							hk: "2iUUlN"
 						}))))
 					}
@@ -2143,7 +2143,7 @@
 				Qe = n.n(ze);
 			const Je = c.a.div("CloseWrapper", Qe.a),
 				Ye = c.a.wrapped(Le.a, "Close", Qe.a),
-				Ve = Object(i.c)({
+				Xe = Object(i.c)({
 					comment: (e, t) => {
 						let {
 							commentId: n
@@ -2157,7 +2157,7 @@
 						let {
 							postId: n
 						} = t;
-						return n ? Object(We.G)(e, {
+						return n ? Object(We.F)(e, {
 							postId: n
 						}) : null
 					},
@@ -2168,7 +2168,7 @@
 						let {
 							postId: n
 						} = t;
-						return n ? Object(We.V)(e, {
+						return n ? Object(We.U)(e, {
 							postId: n
 						}) : null
 					},
@@ -2176,7 +2176,7 @@
 					userIsMod: e => e.features.reportFlow.userIsMod,
 					crisisFlowEnabled: qe.a
 				});
-			class Xe extends s.a.Component {
+			class Ve extends s.a.Component {
 				constructor(e) {
 					super(e), this.handleEscapeKey = e => {
 						if (27 === e.keyCode) return this.handleReportFlowClose()
@@ -2318,7 +2318,7 @@
 					}, this.getContent())
 				}
 			}
-			const Ze = Object(a.b)(Ve, (e, t) => {
+			const Ze = Object(a.b)(Xe, (e, t) => {
 				let {
 					timestamp: n
 				} = t;
@@ -2334,7 +2334,7 @@
 						}, r))
 					}
 				}
-			})(Xe);
+			})(Ve);
 			t.default = Object(l.a)(Ze)
 		},
 		"./src/reddit/components/ReportFlow/_ReportFlowNew.tsx": function(e, t, n) {
@@ -2413,7 +2413,7 @@
 						let {
 							postId: n
 						} = t;
-						return n ? Object(F.G)(e, {
+						return n ? Object(F.F)(e, {
 							postId: n
 						}) : null
 					},
@@ -2432,7 +2432,7 @@
 							postId: r
 						} = t, s = o ? Object(j.c)(e, {
 							commentId: o
-						}) : null, a = r ? Object(F.G)(e, {
+						}) : null, a = r ? Object(F.F)(e, {
 							postId: r
 						}) : null;
 						(s ? s.author : a ? a.author : null) || t.author;
@@ -4172,10 +4172,10 @@
 				r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const a = Object(o.a)(e => Object(s.c)(e, {
-					experimentName: r.Kc,
+					experimentName: r.Jc,
 					experimentEligibilitySelector: s.a
 				}), e => e),
-				i = Object(o.a)(a, e => e === r.Qd)
+				i = Object(o.a)(a, e => e === r.Pd)
 		},
 		"./src/redditGQL/operations/CreateLiveAudioRoomOnProfile.json": function(e) {
 			e.exports = JSON.parse('{"id":"e35a47c6aa21"}')
@@ -4218,4 +4218,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.16a1eb7368ee9477f0d6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.309c9fd82acf8789b6ca.js.map

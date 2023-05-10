@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.7f754240dc072831f194.js
-// Retrieved at 5/9/2023, 3:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.5e0fbd61ddc5dc65d8e9.js
+// Retrieved at 5/10/2023, 11:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -873,7 +873,7 @@
 						let f = null;
 						if (b) f = b.id;
 						else if (Object(s.a)(r)) {
-							const e = Object(m.G)(a, {
+							const e = Object(m.F)(a, {
 								postId: r
 							});
 							e && (f = e.belongsTo.id)
@@ -1769,8 +1769,8 @@
 				p = n("./node_modules/reselect/es/index.js");
 			const b = Object(p.a)(e => Object(m.c)(e, {
 				experimentEligibilitySelector: m.a,
-				experimentName: u.xc
-			}), e => e === u.Qd);
+				experimentName: u.wc
+			}), e => e === u.Pd);
 			var f = n("./node_modules/fbt/lib/FbtPublic.js"),
 				h = n("./src/lib/classNames/index.ts"),
 				v = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
@@ -1784,7 +1784,7 @@
 					postId: t,
 					className: n
 				} = e;
-				const r = Object(c.e)(e => Object(g.G)(e, {
+				const r = Object(c.e)(e => Object(g.F)(e, {
 						postId: t
 					})),
 					s = Object(c.e)(e => "subreddit" === (null == r ? void 0 : r.belongsTo.type) ? Object(O.X)(e, {
@@ -5262,7 +5262,7 @@
 					} = t;
 					const i = Object(d.d)(e),
 						c = l.find(e => e >= r),
-						u = o ? Object(a.G)(e, {
+						u = o ? Object(a.F)(e, {
 							postId: o
 						}) || Object(s.c)(e, {
 							commentId: o
@@ -5478,4 +5478,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.7f754240dc072831f194.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.5e0fbd61ddc5dc65d8e9.js.map

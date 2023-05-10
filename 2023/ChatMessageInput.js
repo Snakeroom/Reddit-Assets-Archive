@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.b53a9c45ae8e466e57b5.js
-// Retrieved at 5/4/2023, 5:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.29c94c71705ee2a11ed3.js
+// Retrieved at 5/10/2023, 11:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, s) {},
@@ -333,9 +333,9 @@
 			})), s.d(t, "a", (function() {
 				return U
 			})), s.d(t, "c", (function() {
-				return M
-			})), s.d(t, "e", (function() {
 				return F
+			})), s.d(t, "e", (function() {
+				return M
 			})), s.d(t, "d", (function() {
 				return H
 			}));
@@ -417,10 +417,10 @@
 					let P = null,
 						U = !1,
 						R = !1,
-						M = !1;
-					const F = e => {
-						if (!M && o && U) {
-							M = !0;
+						F = !1;
+					const M = e => {
+						if (!F && o && U) {
+							F = !0;
 							const s = T(),
 								n = Date.now() - N,
 								a = Object(f.c)(f.a.PostComposer);
@@ -495,7 +495,7 @@
 					return await O(Object(c.l)(e, t, async f => {
 						var g, v, j, x;
 						U = !0, Object(c.k)(f.id, () => {
-							F(!0)
+							M(!0)
 						});
 						const {
 							error: E,
@@ -667,11 +667,11 @@
 						}) : {
 							error: L.error || void 0
 						}
-					}, !0)), F(!1), T().uploads[t] || null
-				}, M = (e, t) => async (s, n) => {
+					}, !0)), M(!1), T().uploads[t] || null
+				}, F = (e, t) => async (s, n) => {
 					const o = n().uploads[e];
 					o && !Object(g.c)(o) && await s(R(o.file, o.key, t, o.metadata.fileSource, void 0))
-				}, F = (e, t, s, a, i, c) => async (l, u) => {
+				}, M = (e, t, s, a, i, c) => async (l, u) => {
 					const m = e.map((e, n) => new Promise(async n => {
 							const r = Object(g.d)(s, Object(o.a)().slice(-6));
 							await l(R(e, r, a, t, () => n({
@@ -738,7 +738,7 @@
 							})
 						})), p = p.slice(0, e))
 					} else p = p.slice(0, 1), h = !0, s(Object(c.j)(U, !0));
-					const b = await s(F(p, t, U, !0));
+					const b = await s(M(p, t, U, !0));
 					if (!b.length) return;
 					const f = b.map(e => ({
 							uploadKey: e,
@@ -1295,8 +1295,8 @@
 				P = s("./src/lib/constants/index.ts"),
 				U = s("./src/lib/makeGqlRequest/index.ts"),
 				R = s("./src/redditGQL/operations/CreateLiveChatAssociation.json");
-			var M = s("./src/reddit/components/CommentsChat/MessageInput/index.m.less"),
-				F = s.n(M),
+			var F = s("./src/reddit/components/CommentsChat/MessageInput/index.m.less"),
+				M = s.n(F),
 				H = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				B = s("./src/reddit/helpers/chat/isEmbeddedLiveChat.ts"),
 				K = s("./src/reddit/helpers/trackers/commentsChat.ts"),
@@ -1313,10 +1313,10 @@
 					hasError: A.v,
 					isChatPost: D.d,
 					pending: (e, t) => e.features.comments.submit.pending[t.draftKey],
-					post: N.G,
+					post: N.F,
 					isLiveChatInChatTabEnabled: W.b,
 					currentUserId: k.k,
-					isTalkPost: Object(c.a)(N.G, e => Object(L.x)(e)),
+					isTalkPost: Object(c.a)(N.F, e => Object(L.x)(e)),
 					isLiveChatThreadingEnabled: W.d
 				}), (e, t) => {
 					let {
@@ -1489,12 +1489,12 @@
 						hk: "3yojgj"
 					}), b = r === P.L.RATELIMIT && parseInt(null === (e = null == o ? void 0 : o[0]) || void 0 === e ? void 0 : e.replace(/\D/g, "")) || q;
 					return h && (null == u ? void 0 : u.isDeleted) ? null : i.a.createElement("div", {
-						className: Object(l.a)(F.a.FormWrapper, {
-							[F.a.v2]: t,
-							[F.a.V2ChatPost]: t && !d
+						className: Object(l.a)(M.a.FormWrapper, {
+							[M.a.v2]: t,
+							[M.a.V2ChatPost]: t && !d
 						})
 					}, !!this.state.spamTimeoutDraftKey && i.a.createElement("p", {
-						className: F.a.spamTimeout
+						className: M.a.spamTimeout
 					}, n.fbt._("Time until you can message", null, {
 						hk: "3mkJ7J"
 					}), " ", i.a.createElement(g, {
@@ -1509,23 +1509,23 @@
 						isMessageComposer: !0,
 						onReplyClick: s
 					}), i.a.createElement("div", {
-						className: F.a.inputLine
+						className: M.a.inputLine
 					}, i.a.createElement("form", {
-						className: Object(l.a)(F.a.Form, {
-							[F.a.Editing]: d
+						className: Object(l.a)(M.a.Form, {
+							[M.a.Editing]: d
 						}),
 						onSubmit: this.handleSubmit,
 						onReset: this.handleCancel
 					}, !t && i.a.createElement(Q, {
 						isEditing: !!d
 					}), i.a.createElement(v.a, {
-						className: Object(l.a)(F.a.RichTextEditor, {
-							[F.a.Editing]: d,
-							[F.a.isV2ChatPost]: t,
-							[F.a.isEmbeddedLiveChat]: m
+						className: Object(l.a)(M.a.RichTextEditor, {
+							[M.a.Editing]: d,
+							[M.a.isV2ChatPost]: t,
+							[M.a.isEmbeddedLiveChat]: m
 						}),
 						focusableContentRTEClassName: Object(l.a)({
-							[F.a.V2ChatPostFocusableContent]: t
+							[M.a.V2ChatPostFocusableContent]: t
 						}),
 						dataTestId: G,
 						editorType: O.a.Comment,
@@ -1539,18 +1539,18 @@
 						placeholderText: p,
 						readOnly: c,
 						showSubmitButton: !1,
-						submitButtonClassName: Object(l.a)(F.a.insetSubmitButton, F.a.submitButton),
+						submitButtonClassName: Object(l.a)(M.a.insetSubmitButton, M.a.submitButton),
 						submitOnEnter: !0,
 						trackToolbarClick: a.a,
 						hideToolbar: !0,
 						noBorder: !0,
 						isChatPost: !0
 					}), d && i.a.createElement(E.e, {
-						className: Object(l.a)(F.a.ChatButton),
+						className: Object(l.a)(M.a.ChatButton),
 						type: "reset"
 					}, i.a.createElement(I.a, null)), i.a.createElement(E.e, {
-						className: Object(l.a)(F.a.ChatButton, {
-							[F.a.v2ChatPostButton]: !d && t
+						className: Object(l.a)(M.a.ChatButton, {
+							[M.a.v2ChatPostButton]: !d && t
 						}),
 						type: "submit",
 						disabled: !this.canSubmit(),
@@ -1565,7 +1565,7 @@
 					isEditing: t
 				} = e;
 				return t ? i.a.createElement(_.a, {
-					className: F.a.SmallChatUserIcon,
+					className: M.a.SmallChatUserIcon,
 					height: 20,
 					width: 20
 				}) : i.a.createElement(_.a, {
@@ -1914,4 +1914,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.b53a9c45ae8e466e57b5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.29c94c71705ee2a11ed3.js.map

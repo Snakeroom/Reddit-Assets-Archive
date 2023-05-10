@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Poll.6a7b5b2bd3d99a318955.js
-// Retrieved at 3/14/2023, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Poll.b8721cd833887c1f6e0f.js
+// Retrieved at 5/10/2023, 11:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Poll"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -843,8 +843,8 @@
 					poll: e.poll
 				}))
 			}
-			var M = n("./node_modules/lodash/isNil.js"),
-				U = n.n(M),
+			var U = n("./node_modules/lodash/isNil.js"),
+				M = n.n(U),
 				F = n("./src/reddit/constants/elementClassNames.ts"),
 				H = n("./src/reddit/controls/Button/index.tsx"),
 				q = n("./src/reddit/controls/LoadingIcon/index.tsx"),
@@ -873,7 +873,7 @@
 								for (const t of e)
 									if (t.checked) return parseInt(t.value)
 							}(Array.from(n.elements).filter(Z));
-						U()(r) || (this.props.onVoteSelection(t.options[r]), this.props.sendEvent(Object(R.m)(t.id, t.postId, r)))
+						M()(r) || (this.props.onVoteSelection(t.options[r]), this.props.sendEvent(Object(R.m)(t.id, t.postId, r)))
 					}
 				}
 				render() {
@@ -1236,10 +1236,10 @@
 				poll: y.e,
 				pollId: y.a,
 				pollReward: y.d,
-				post: j.G,
+				post: j.F,
 				resultsByVoters: y.c,
 				resultsByVotingPower: y.b,
-				subredditOrProfile: j.V
+				subredditOrProfile: j.U
 			});
 			t.default = Object(a.b)(xe)(Ne)
 		},
@@ -1820,4 +1820,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Poll.6a7b5b2bd3d99a318955.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Poll.b8721cd833887c1f6e0f.js.map

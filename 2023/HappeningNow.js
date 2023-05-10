@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HappeningNow.6a0b2b7de749f9a1117f.js
-// Retrieved at 5/9/2023, 3:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HappeningNow.35d07b9156e3714a1df4.js
+// Retrieved at 5/10/2023, 11:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HappeningNow"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1001,8 +1001,8 @@
 				}))),
 				V = n("./src/lib/prettyPrintNumber/index.ts"),
 				U = n("./src/reddit/components/Econ/Audio/SpeakerRings/SpeakerRingInner.tsx"),
-				G = n("./src/reddit/components/Econ/Audio/SpeakerRings/SpeakerRingMiddle.tsx"),
-				D = n("./src/reddit/components/Econ/Audio/SpeakerRings/SpeakerRingOuter.tsx"),
+				D = n("./src/reddit/components/Econ/Audio/SpeakerRings/SpeakerRingMiddle.tsx"),
+				G = n("./src/reddit/components/Econ/Audio/SpeakerRings/SpeakerRingOuter.tsx"),
 				Z = n("./src/reddit/components/HappeningNow/Post/LiveRing/index.m.less"),
 				q = n.n(Z);
 			var K = e => {
@@ -1018,10 +1018,10 @@
 						className: Object(i.a)(q.a.speakerRingInner, {
 							[q.a.animatedRing]: r
 						})
-					}), r && o.a.createElement(o.a.Fragment, null, o.a.createElement(G.a, {
+					}), r && o.a.createElement(o.a.Fragment, null, o.a.createElement(D.a, {
 						ringId: t,
 						className: q.a.speakerRingMiddle
-					}), o.a.createElement(D.a, {
+					}), o.a.createElement(G.a, {
 						ringId: t,
 						className: q.a.speakerRingOuter
 					})))
@@ -1086,10 +1086,10 @@
 					let {
 						model: t
 					} = e;
-					const n = Object(s.e)(e => Object(X.G)(e, {
+					const n = Object(s.e)(e => Object(X.F)(e, {
 							postId: t.postId
 						})),
-						l = Object(s.e)(e => Object(X.V)(e, {
+						l = Object(s.e)(e => Object(X.U)(e, {
 							postId: t.postId
 						})),
 						c = Object(s.e)($.fb),
@@ -1307,7 +1307,7 @@
 					const d = Object(s.d)(),
 						m = Object(N.a)(),
 						u = Object(s.e)(e => Object(S.d)(e, t)),
-						p = Object(s.e)(e => Object(X.G)(e, {
+						p = Object(s.e)(e => Object(X.F)(e, {
 							postId: t
 						})),
 						h = Object(a.useMemo)(() => {
@@ -1373,16 +1373,16 @@
 					}))
 				},
 				Ue = n("./src/reddit/components/HappeningNow/Section/index.m.less"),
-				Ge = n.n(Ue);
-			const De = e => {
+				De = n.n(Ue);
+			const Ge = e => {
 				let {
 					title: t,
 					children: n
 				} = e;
 				return o.a.createElement("div", null, o.a.createElement("h1", {
-					className: Ge.a.header
+					className: De.a.header
 				}, t), o.a.createElement("div", {
-					className: Ge.a.content
+					className: De.a.content
 				}, n))
 			};
 
@@ -1787,13 +1787,13 @@
 						className: st.a.twoColumnLayout
 					}, o.a.createElement("div", {
 						className: Object(i.a)(st.a.column, st.a.content)
-					}, !!t.length && o.a.createElement(De, {
+					}, !!t.length && o.a.createElement(Ge, {
 						title: it[v.s.Recommended]
 					}, t.map(e => o.a.createElement(Ve, {
 						key: e,
 						postId: e,
 						itemKey: lt(v.s.Recommended, e)
-					}))), !!e.length && !n && o.a.createElement(De, {
+					}))), !!e.length && !n && o.a.createElement(Ge, {
 						title: it[v.s.Popular]
 					}, e.map(e => o.a.createElement(Ve, {
 						key: e,
@@ -1837,4 +1837,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.6a0b2b7de749f9a1117f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.35d07b9156e3714a1df4.js.map

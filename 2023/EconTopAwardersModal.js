@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.4693ff415ed56e2ec1eb.js
-// Retrieved at 5/9/2023, 3:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.6f87772e8425e487d021.js
+// Retrieved at 5/10/2023, 11:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -992,7 +992,7 @@
 					pending: a,
 					post: null
 				};
-				const s = Object(x.G)(e, {
+				const s = Object(x.F)(e, {
 						postId: t
 					}),
 					o = Object(h.b)(e, t),
@@ -1618,7 +1618,7 @@
 					isNightMode: _.fb,
 					lastAuthorModNote: (e, t) => {
 						if (!t.contextId) return;
-						const r = Object(l.a)(t.contextId) ? Object(h.G)(e, {
+						const r = Object(l.a)(t.contextId) ? Object(h.F)(e, {
 							postId: t.contextId
 						}) : Object(m.c)(e, {
 							commentId: t.contextId
@@ -2713,4 +2713,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.4693ff415ed56e2ec1eb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.6f87772e8425e487d021.js.map

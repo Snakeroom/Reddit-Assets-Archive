@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.149d74a1c2998b3e8c21.js
-// Retrieved at 5/9/2023, 3:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.1c1f697bbdf3c0ac2aae.js
+// Retrieved at 5/10/2023, 11:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./src/reddit/components/FrontpageSidebar/index.tsx": function(e, t, n) {
@@ -300,7 +300,7 @@
 			var _e = ue(pe),
 				he = n("./src/reddit/selectors/posts.ts");
 			const ge = Object(o.c)({
-				recentPosts: he.R
+				recentPosts: he.Q
 			});
 			var xe = Object(r.b)(ge, (e, t) => ({
 					openLightbox: t => () => e(Object(le.a)(t.permalink))
@@ -618,8 +618,8 @@
 					shouldShowTopicsWidget: e => (function(e) {
 						return Object(Re.c)(e, {
 							experimentEligibilitySelector: Be.S,
-							experimentName: Le.Tc
-						}) === Le.Qd
+							experimentName: Le.Sc
+						}) === Le.Pd
 					})(e),
 					isNavbarLikeMwebEnabled: i.a
 				}),
@@ -707,7 +707,7 @@
 				_ = n("./src/reddit/selectors/subreddit.ts"),
 				h = n("./src/reddit/components/MiniPost/index.m.less"),
 				g = n.n(h);
-			const x = Object(o.a)(e => e, p.G, p.d, (e, t, n) => {
+			const x = Object(o.a)(e => e, p.F, p.d, (e, t, n) => {
 					return {
 						crosspost: n,
 						post: t,
@@ -915,4 +915,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.149d74a1c2998b3e8c21.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.1c1f697bbdf3c0ac2aae.js.map

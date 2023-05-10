@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.8b81d7b137e5fb36661b.js
-// Retrieved at 5/9/2023, 3:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.4fc3f4db8fbcee6ea797.js
+// Retrieved at 5/10/2023, 11:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/backo2/index.js": function(e, t) {
@@ -1847,11 +1847,11 @@
 			var L = n("./src/lib/env/index.ts");
 			const A = new Map,
 				R = e => e,
-				B = new Set;
-			var D;
+				D = new Set;
+			var B;
 			! function(e) {
 				e.NEW_COMMENT = "new_comment", e.UPDATE_COMMENT = "update_comment", e.UPDATE_COMMENT_SCORE = "update_comment_score", e.DELETE_COMMENT = "delete_comment", e.REMOVE_COMMENT = "remove_comment", e.USER_JOIN = "join_system_message"
-			}(D || (D = {}));
+			}(B || (B = {}));
 			const P = {
 					backoffTime: 2e3,
 					connectionAttempts: 0,
@@ -1938,8 +1938,8 @@
 							url: o,
 							uniqueId: s
 						} = e;
-						B.has(s) ? t() : (B.add(s), setTimeout(() => {
-							B.delete(s), F(o, s, {
+						D.has(s) ? t() : (D.add(s), setTimeout(() => {
+							D.delete(s), F(o, s, {
 								...P
 							}, n), t()
 						}, 1))
@@ -1948,7 +1948,7 @@
 						url: t,
 						cb: t => {
 							switch (t.type) {
-								case D.NEW_COMMENT: {
+								case B.NEW_COMMENT: {
 									const n = t.payload.name,
 										a = j(t.payload),
 										i = r(),
@@ -1979,7 +1979,7 @@
 									}
 									break
 								}
-								case D.UPDATE_COMMENT: {
+								case B.UPDATE_COMMENT: {
 									const n = t.payload.name,
 										a = r(),
 										i = n && Object(W.c)(a, {
@@ -1998,7 +1998,7 @@
 									}
 									break
 								}
-								case D.UPDATE_COMMENT_SCORE: {
+								case B.UPDATE_COMMENT_SCORE: {
 									const n = t.payload.name,
 										o = t.payload.score,
 										a = r(),
@@ -2014,7 +2014,7 @@
 									}));
 									break
 								}
-								case D.DELETE_COMMENT: {
+								case B.DELETE_COMMENT: {
 									const e = t.payload.name,
 										n = r(),
 										o = Object(W.c)(n, {
@@ -2022,10 +2022,10 @@
 										});
 									o && !o.isDeleted ? s($({
 										id: e
-									})) : X[e] = D.DELETE_COMMENT;
+									})) : X[e] = B.DELETE_COMMENT;
 									break
 								}
-								case D.REMOVE_COMMENT: {
+								case B.REMOVE_COMMENT: {
 									const e = t.payload.link_id,
 										n = t.payload.name,
 										o = r(),
@@ -2036,12 +2036,12 @@
 										c = !!e && !!Object(Q.m)(o, {
 											postId: e
 										});
-									!a || a.isRemoved && a.isDeleted || i || c ? X[n] = D.REMOVE_COMMENT : s($({
+									!a || a.isRemoved && a.isDeleted || i || c ? X[n] = B.REMOVE_COMMENT : s($({
 										id: n
 									}));
 									break
 								}
-								case D.USER_JOIN: {
+								case B.USER_JOIN: {
 									const n = j(t.payload, {
 											isSystem: !0
 										}),
@@ -2153,7 +2153,7 @@
 					} catch (r) {
 						t(xe(r))
 					}
-				}, Be = async (e, t) => {
+				}, De = async (e, t) => {
 					let {
 						awardId: n,
 						commentId: o,
@@ -2192,7 +2192,7 @@
 							}
 						}
 					})
-				}, De = e => async (t, n, o) => {
+				}, Be = e => async (t, n, o) => {
 					let {
 						gqlContext: s
 					} = o;
@@ -2235,11 +2235,11 @@
 								targetId: o,
 								isAnonymous: !1,
 								nonce: s
-							}), c || await Be(a, {
+							}), c || await De(a, {
 								awardId: n,
 								commentId: o,
 								operation: ue.f.Add
-							}), await t(De(o)), t(je({
+							}), await t(Be(o)), t(je({
 								awardId: n,
 								commentId: o
 							}))
@@ -2272,11 +2272,11 @@
 							} = e, c = Object(fe.f)(i);
 							await Object(de.c)(a(), {
 								awardingId: s
-							}), c || await Be(i, {
+							}), c || await De(i, {
 								awardId: o,
 								commentId: r,
 								operation: ue.f.Remove
-							}), !(null == t ? void 0 : t.suppressCommentDataRefresh) && await n(De(e.commentId)), n(Se({
+							}), !(null == t ? void 0 : t.suppressCommentDataRefresh) && await n(Be(e.commentId)), n(Se({
 								awardId: o,
 								awardingId: s,
 								commentId: r
@@ -2480,8 +2480,8 @@
 				Lt = n("./src/reddit/components/ModModeReports/helpers.ts"),
 				At = n("./src/reddit/controls/Dropdown/Row.tsx"),
 				Rt = n("./src/reddit/icons/fonts/Approve/index.tsx"),
-				Bt = n("./src/reddit/icons/fonts/Remove/index.tsx"),
-				Dt = n("./src/reddit/icons/fonts/Spam/index.tsx"),
+				Dt = n("./src/reddit/icons/fonts/Remove/index.tsx"),
+				Bt = n("./src/reddit/icons/fonts/Spam/index.tsx"),
 				Pt = n("./src/reddit/icons/svgs/Bling/index.tsx"),
 				Ut = n("./src/reddit/icons/svgs/Distinguish/index.tsx");
 			const Ft = e => {
@@ -2550,7 +2550,7 @@
 						hk: "3tYl0U"
 					}),
 					onClick: b
-				}, h.a.createElement(Bt.a, {
+				}, h.a.createElement(Dt.a, {
 					className: Ot.a.dropdownIcon
 				})), l && h.a.createElement(At.b, {
 					className: Ot.a.dropdownMenuItem,
@@ -2558,7 +2558,7 @@
 						hk: "2bRa8t"
 					}),
 					onClick: v
-				}, h.a.createElement(Dt.a, {
+				}, h.a.createElement(Bt.a, {
 					className: Ot.a.dropdownIcon
 				})))
 			};
@@ -2988,8 +2988,8 @@
 				Ln = n("./src/reddit/components/ContentTooltip/index.tsx"),
 				An = n("./src/reddit/helpers/trackers/gild.ts"),
 				Rn = n("./src/reddit/icons/svgs/Close/index.tsx"),
-				Bn = n("./src/reddit/components/CommentsChat/Comment/AwardsBadge/AwardsHovercard/index.m.less"),
-				Dn = n.n(Bn);
+				Dn = n("./src/reddit/components/CommentsChat/Comment/AwardsBadge/AwardsHovercard/index.m.less"),
+				Bn = n.n(Dn);
 
 			function Pn() {
 				return (Pn = Object.assign || function(e) {
@@ -3026,7 +3026,7 @@
 							a(Object(bt.i)())
 						}, [a]);
 					return r && c.length ? h.a.createElement(Ln.a, Pn({
-						className: Dn.a.container,
+						className: Bn.a.container,
 						tooltipId: s,
 						tooltipSizeEstimate: Un,
 						defaultTooltipPosition: "top"
@@ -3034,24 +3034,24 @@
 						id: n,
 						onClick: e => e.stopPropagation()
 					}, h.a.createElement("div", {
-						className: Dn.a.header
+						className: Bn.a.header
 					}, h.a.createElement("span", {
-						className: Dn.a.title
+						className: Bn.a.title
 					}, o.fbt._("Awards", null, {
 						hk: "2HinFQ"
 					})), h.a.createElement("button", {
 						onClick: u
 					}, h.a.createElement(Rn.a, {
-						className: Dn.a.closeIcon
+						className: Bn.a.closeIcon
 					}))), h.a.createElement("div", {
-						className: Dn.a.awardsList
+						className: Bn.a.awardsList
 					}, c.map(e => h.a.createElement("div", {
 						key: e.id,
-						className: Dn.a.award
+						className: Bn.a.award
 					}, h.a.createElement("span", null, Object(rn.b)(r[e.id])), h.a.createElement("img", {
 						key: e.id,
 						alt: e.name,
-						className: Dn.a.awardIcon,
+						className: Bn.a.awardIcon,
 						src: Object(be.c)({
 							award: e,
 							postOrComment: t,
@@ -3059,7 +3059,7 @@
 							prefersReducedMotion: m
 						})
 					}), h.a.createElement("span", null, e.name))), !d && h.a.createElement("button", {
-						className: Dn.a.giveAwardButton,
+						className: Bn.a.giveAwardButton,
 						onClick: () => {
 							u();
 							const e = Object(ct.d)(ct.a.GildingFlow, !0);
@@ -3071,7 +3071,7 @@
 							}))
 						}
 					}, h.a.createElement(mt.a, {
-						className: Dn.a.awardIcon
+						className: Bn.a.awardIcon
 					}), h.a.createElement("span", null, o.fbt._("Give another award", null, {
 						hk: "hGgqt"
 					})))))) : null
@@ -3255,8 +3255,8 @@
 						commentThreadingMetadata: L
 					} = e;
 					var A, R;
-					const B = h.a.useRef(null),
-						D = h.a.useRef(null),
+					const D = h.a.useRef(null),
+						B = h.a.useRef(null),
 						[P, U] = h.a.useState(a && a.collapsed),
 						[F, H] = h.a.useState(!1),
 						[G, V] = h.a.useState(!1),
@@ -3270,10 +3270,10 @@
 						};
 					if (h.a.useEffect(() => {
 							var e;
-							D.current && (null === (e = D.current) || void 0 === e ? void 0 : e.scrollHeight) > 250 && !t && V(!0)
+							B.current && (null === (e = B.current) || void 0 === e ? void 0 : e.scrollHeight) > 250 && !t && V(!0)
 						}, []), h.a.useEffect(() => {
-							if (!D.current) return;
-							const e = D.current;
+							if (!B.current) return;
+							const e = B.current;
 							let t = 250;
 							if (F) {
 								t = e.scrollHeight + 10;
@@ -3285,9 +3285,9 @@
 							e.style.maxHeight = `${t}px`
 						}, [F, G]), h.a.useEffect(() => {
 							var e;
-							C && (null === (e = B.current) || void 0 === e || e.focus())
+							C && (null === (e = D.current) || void 0 === e || e.focus())
 						}, [C]), h.a.useEffect(() => {
-							B.current && x && x(B)
+							D.current && x && x(D)
 						}, [x]), !a) return null;
 					const Z = a.isSystem,
 						z = !a.isDeleted && !Z,
@@ -3305,7 +3305,7 @@
 							[Wn.a.BotComment]: Y
 						}),
 						tabIndex: 0,
-						ref: B
+						ref: D
 					}, a.parentId && !W && h.a.createElement("div", {
 						className: Wn.a.replyWrapper
 					}, h.a.createElement(ln.a, {
@@ -3348,7 +3348,7 @@
 					}, h.a.createElement(On.d, {
 						seconds: a.created
 					}))), !f && h.a.createElement("div", {
-						ref: D,
+						ref: B,
 						className: Object(s.a)(Wn.a.commentBody, {
 							[Wn.a.expanded]: F
 						})
@@ -3705,7 +3705,7 @@
 					blockedRedditorsPending: ft.b,
 					chatCommentLinks: q.g,
 					isPending: q.d,
-					liveCommentsWebsocket: uo.E,
+					liveCommentsWebsocket: uo.D,
 					moreCommentsLink: q.H,
 					isCommentReactionStreamingKillSwitchEnabled: fe.f,
 					currentUserId: ye.k,
@@ -4563,4 +4563,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.8b81d7b137e5fb36661b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.4fc3f4db8fbcee6ea797.js.map

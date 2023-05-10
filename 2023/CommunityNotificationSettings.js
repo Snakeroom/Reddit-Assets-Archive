@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.ebd87c6c1a23560652cb.js
-// Retrieved at 5/9/2023, 3:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.474d225c26f1b0e22cd7.js
+// Retrieved at 5/10/2023, 11:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityNotificationSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -106,7 +106,7 @@
 						isNsfw: w,
 						isMuted: I
 					} = t,
-					j = I && d === b.Qd,
+					j = I && d === b.Pd,
 					L = j ? f.c.OFF : k,
 					T = t.styles.icon || (null === (i = t.styles.legacyIcon) || void 0 === i ? void 0 : i.url),
 					D = null !== (c = t.styles.primaryColor) && void 0 !== c ? c : void 0,
@@ -144,7 +144,7 @@
 								})
 						}
 					})(L),
-					B = (e => {
+					P = (e => {
 						switch (e) {
 							case f.c.OFF:
 								return r.a.createElement(p.a, {
@@ -161,7 +161,7 @@
 								})
 						}
 					})(L),
-					P = [{
+					B = [{
 						displayText: o.fbt._("Frequent", null, {
 							hk: "21spt7"
 						}),
@@ -218,13 +218,13 @@
 				})))), r.a.createElement(g.b, {
 					isCompactStyle: !0,
 					displayText: F,
-					options: P,
+					options: B,
 					onSelect: e => {
 						var t;
 						j ? (E.current = e.value, u(!0)) : (C(Object(O.n)(N, y, null === (t = e.value) || void 0 === t ? void 0 : t.toLowerCase())), s(N, e.value))
 					},
 					buttonClassName: v.a.dropdown,
-					buttonIcon: B
+					buttonIcon: P
 				}), l && r.a.createElement(m.a, {
 					withOverlay: !0,
 					headerText: o.fbt._("Unmute {name of subreddit to unmute}", [o.fbt._param("name of subreddit to unmute", `r/${t.name}`)], {
@@ -557,4 +557,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.ebd87c6c1a23560652cb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.474d225c26f1b0e22cd7.js.map

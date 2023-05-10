@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.7946a3793e6701e389b6.js
-// Retrieved at 5/9/2023, 3:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.a05e5074f3e1a182be36.js
+// Retrieved at 5/10/2023, 11:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1046,7 +1046,7 @@
 				}, $ = Object(s.a)(z.s), ee = (e, t) => {
 					const {
 						id: r
-					} = t, n = Object(F.a)(r) ? Object(C.G)(e, {
+					} = t, n = Object(F.a)(r) ? Object(C.F)(e, {
 						postId: r
 					}) : Object(O.c)(e, {
 						commentId: r
@@ -2670,7 +2670,7 @@
 						s = t && t.id
 					}
 					if (!s && Object(l.a)(r)) {
-						const t = Object(B.G)(e, {
+						const t = Object(B.F)(e, {
 							postId: r
 						});
 						s = t && t.belongsTo.id
@@ -2742,7 +2742,7 @@
 						let {
 							thingId: r
 						} = t;
-						return Object(l.a)(r) ? Object(B.G)(e, {
+						return Object(l.a)(r) ? Object(B.F)(e, {
 							postId: r
 						}) : Object(_.c)(e, {
 							commentId: r
@@ -2777,7 +2777,7 @@
 							s = t && t.id
 						}
 						if (!s && Object(l.a)(r)) {
-							const t = Object(B.G)(e, {
+							const t = Object(B.F)(e, {
 								postId: r
 							});
 							s = t && t.belongsTo.id
@@ -3710,4 +3710,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.7946a3793e6701e389b6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.a05e5074f3e1a182be36.js.map

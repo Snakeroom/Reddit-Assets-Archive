@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityAwards.3d33fc84357aeae872ba.js
-// Retrieved at 2/16/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityAwards.d190b1739afa244b2540.js
+// Retrieved at 5/10/2023, 11:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityAwards"], {
 		"./src/reddit/actions/gold/communityAwards/communityAwards.ts": function(e, t, r) {
@@ -21,7 +21,7 @@
 			})), r.d(t, "manageableAwardsLoaded", (function() {
 				return P
 			})), r.d(t, "optionalAwardsLoaded", (function() {
-				return G
+				return N
 			})), r.d(t, "awardSheetInfoRequested", (function() {
 				return v
 			})), r.d(t, "awardSheetInfoPending", (function() {
@@ -201,13 +201,13 @@
 						const r = await u;
 						if (!r.ok) {
 							const e = y();
-							return void(await t(T(e)))
+							return void(await t(G(e)))
 						}
 						let a = [];
 						if (o) a = r.body.data.globalAwards;
 						else {
 							const n = c ? r.body.data.subreddit : r.body.data.profileByName;
-							a = n.manageableAwards || [], t(G({
+							a = n.manageableAwards || [], t(N({
 								awards: n.optionalAwards || [],
 								subredditOrProfileId: e
 							})), t(D({
@@ -221,10 +221,10 @@
 						}))
 					} catch (l) {
 						const e = y();
-						t(T(e))
+						t(G(e))
 					}
-				}, E = Object(n.a)(O.G), P = Object(n.a)(O.F), G = Object(n.a)(O.K), N = Object(n.a)(O.E), T = e => async (t, r) => {
-					await t(N(e)), t(Object(o.f)({
+				}, E = Object(n.a)(O.G), P = Object(n.a)(O.F), N = Object(n.a)(O.K), T = Object(n.a)(O.E), G = e => async (t, r) => {
+					await t(T(e)), t(Object(o.f)({
 						kind: c.b.Error,
 						duration: o.a,
 						text: e
@@ -263,7 +263,7 @@
 									profileId: a
 								});
 								if (d) return d.name;
-								const i = Object(l.G)(e, {
+								const i = Object(l.F)(e, {
 									postId: r
 								});
 								return "profile" === (null === (n = null == i ? void 0 : i.belongsTo) || void 0 === n ? void 0 : n.type) ? i.author : null
@@ -455,11 +455,11 @@
 			})), r.d(t, "m", (function() {
 				return P
 			})), r.d(t, "h", (function() {
-				return G
-			})), r.d(t, "i", (function() {
 				return N
-			})), r.d(t, "e", (function() {
+			})), r.d(t, "i", (function() {
 				return T
+			})), r.d(t, "e", (function() {
+				return G
 			}));
 			var a = r("./src/lib/constants/index.ts"),
 				n = r("./src/lib/makeApiRequest/index.ts"),
@@ -591,19 +591,19 @@
 					variables: {
 						awardId: t
 					}
-				}), G = (e, t, r) => Object(d.a)(e, {
+				}), N = (e, t, r) => Object(d.a)(e, {
 					...f,
 					variables: {
 						awardId: t,
 						subredditId: r
 					}
-				}), N = (e, t, r) => Object(d.a)(e, {
+				}), T = (e, t, r) => Object(d.a)(e, {
 					...w,
 					variables: {
 						awardId: t,
 						subredditId: r
 					}
-				}), T = async (e, t, r) => {
+				}), G = async (e, t, r) => {
 					const d = {
 						api_type: "json",
 						award_id: t,
@@ -713,4 +713,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityAwards.3d33fc84357aeae872ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityAwards.d190b1739afa244b2540.js.map

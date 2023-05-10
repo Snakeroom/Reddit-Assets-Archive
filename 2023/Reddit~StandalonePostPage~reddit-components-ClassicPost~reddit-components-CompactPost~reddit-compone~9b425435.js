@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.4772b3ced903459a98da.js
-// Retrieved at 5/9/2023, 3:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.f7f470671155356736f7.js
+// Retrieved at 5/10/2023, 11:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/avatarShareImages.ts": function(e, t, n) {
@@ -217,7 +217,7 @@
 						let b = null;
 						if (f) b = f.id;
 						else if (Object(s.a)(r)) {
-							const e = Object(m.G)(c, {
+							const e = Object(m.F)(c, {
 								postId: r
 							});
 							e && (b = e.belongsTo.id)
@@ -489,7 +489,7 @@
 				}, [t, j, C]);
 				const F = Object(r.useRef)(0),
 					D = Object(r.useRef)(!1),
-					G = Object(r.useCallback)(e => {
+					L = Object(r.useCallback)(e => {
 						e.forEach(e => {
 							const {
 								isIntersecting: t,
@@ -500,14 +500,14 @@
 							}, u())), F.current > 0 && (T.current(F.current), F.current = 0)) : r && (D.current = !1)
 						})
 					}, []);
-				Object(c.a)(A, G);
-				const [L, V] = Object(r.useState)(!1), U = Object(r.useCallback)(e => {
+				Object(c.a)(A, L);
+				const [V, G] = Object(r.useState)(!1), U = Object(r.useCallback)(e => {
 					e.forEach(e => {
 						const {
 							isIntersecting: t,
 							intersectionRatio: n
 						} = e, r = 1 !== n;
-						t ? V(!0) : r && V(!1)
+						t ? G(!0) : r && G(!1)
 					})
 				}, []), B = Object(r.useRef)({
 					rootMargin: "2000px 0px 2000px 0px"
@@ -564,7 +564,7 @@
 					role: "screen-reader"
 				}, [...E].reverse().join(""))), o.a.createElement("span", {
 					ref: A
-				}), L && o.a.createElement(a.a, {
+				}), V && o.a.createElement(a.a, {
 					variables: g,
 					onData: f ? m : b,
 					queryKey: h,
@@ -1448,7 +1448,7 @@
 							shouldShowUpvoteRatioOnHover: n,
 							postId: r
 						} = t;
-						if (n && r) return Object(y.G)(e, {
+						if (n && r) return Object(y.F)(e, {
 							postId: r
 						})
 					}
@@ -1943,11 +1943,11 @@
 			})), n.d(t, "clickAddCoinsButtonEvent", (function() {
 				return D
 			})), n.d(t, "clickNextButtonEvent", (function() {
-				return G
-			})), n.d(t, "clickCloseGildModalEvent", (function() {
 				return L
-			})), n.d(t, "viewKarmaSuccessEvent", (function() {
+			})), n.d(t, "clickCloseGildModalEvent", (function() {
 				return V
+			})), n.d(t, "viewKarmaSuccessEvent", (function() {
+				return G
 			})), n.d(t, "clickFilterEvent", (function() {
 				return U
 			})), n.d(t, "clickNextFiltersEvent", (function() {
@@ -2117,19 +2117,19 @@
 					action: "click",
 					noun: "add_coins"
 				}),
-				G = e => t => ({
+				L = e => t => ({
 					...p(t, e),
 					source: "give_gold",
 					action: "click",
 					noun: "next"
 				}),
-				L = e => t => ({
+				V = e => t => ({
 					...p(t, e),
 					source: "give_gold",
 					action: "click",
 					noun: "close"
 				}),
-				V = e => {
+				G = e => {
 					let {
 						award: t,
 						awardeeKarmaEarned: n,
@@ -3414,11 +3414,11 @@
 					}
 				},
 				u = (e, t, n) => {
-					const r = Object(a.G)(e, {
+					const r = Object(a.F)(e, {
 						postId: t
 					});
 					if (!r || r.isSponsored || r.removedByCategory) return !1;
-					const o = Object(a.V)(e, {
+					const o = Object(a.U)(e, {
 						postId: t
 					});
 					if (o && o.isQuarantined) return !1;
@@ -3515,8 +3515,8 @@
 					if (Object(a.a)(e)) return !1;
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: r.zc
-					}) === r.kd.Enabled
+						experimentName: r.yc
+					}) === r.jd.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
@@ -3529,8 +3529,8 @@
 			const s = e => {
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: r.ff
-				}) === r.Qd
+					experimentName: r.ef
+				}) === r.Pd
 			}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -3617,7 +3617,7 @@
 					} = t;
 					const a = Object(d.d)(e),
 						i = l.find(e => e >= r),
-						u = o ? Object(c.G)(e, {
+						u = o ? Object(c.F)(e, {
 							postId: o
 						}) || Object(s.c)(e, {
 							commentId: o
@@ -3851,4 +3851,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.4772b3ced903459a98da.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.f7f470671155356736f7.js.map
