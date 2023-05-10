@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.a1bc3f0f19306eab2b3b.js
-// Retrieved at 5/10/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.c761fa2695f5ee36e4f0.js
+// Retrieved at 5/10/2023, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -21357,7 +21357,7 @@
 				y = n("./src/reddit/models/Post/index.ts"),
 				j = n("./src/reddit/selectors/posts.ts"),
 				I = n("./src/reddit/selectors/profile.ts");
-			const k = (e, t) => !(!e || !t || e.authorId !== t.id || e.isNSFW || e.pollData || e.predictionTournament || e.discussionType),
+			const k = (e, t) => !(!e || !t || e.authorId !== t.id || e.isNSFW || e.pollData || e.predictionTournament || e.discussionType || Object(C.a)(e)),
 				_ = (e, t) => !(!(t && t.hasVerifiedEmail && e) || e.isNSFW || e.isQuarantined),
 				S = e => {
 					let {
@@ -21377,7 +21377,7 @@
 						u = Object(a.e)(e => Object(j.F)(e, {
 							postId: t
 						})),
-						m = Object(o.useCallback)(() => !(s || !l || Object(C.a)(u) || !Object(y.s)(u) || !k(u, n) || !_(c, n)), [s, l, u, c, n]),
+						m = Object(o.useCallback)(() => !!(!s && l && Object(y.s)(u) && k(u, n) && _(c, n)), [s, l, u, c, n]),
 						p = Object(o.useCallback)(() => !(s || !k(u, n) || !_(c, n)), [s, u, c, n]),
 						b = Object(A.a)(O.s, m),
 						f = Object(A.a)(O.r, m),
@@ -80415,4 +80415,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.a1bc3f0f19306eab2b3b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.c761fa2695f5ee36e4f0.js.map

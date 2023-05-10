@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.6ba7bf142675bdde858e.js
-// Retrieved at 5/10/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.cd4c3d20e74bc9067879.js
+// Retrieved at 5/10/2023, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, s) {
@@ -1023,7 +1023,7 @@
 				j = s("./src/reddit/models/Post/index.ts"),
 				k = s("./src/reddit/selectors/posts.ts"),
 				I = s("./src/reddit/selectors/profile.ts");
-			const w = (e, t) => !(!e || !t || e.authorId !== t.id || e.isNSFW || e.pollData || e.predictionTournament || e.discussionType),
+			const w = (e, t) => !(!e || !t || e.authorId !== t.id || e.isNSFW || e.pollData || e.predictionTournament || e.discussionType || Object(E.a)(e)),
 				P = (e, t) => !(!(t && t.hasVerifiedEmail && e) || e.isNSFW || e.isQuarantined),
 				y = e => {
 					let {
@@ -1043,7 +1043,7 @@
 						m = Object(a.e)(e => Object(k.F)(e, {
 							postId: t
 						})),
-						p = Object(r.useCallback)(() => !(o || !l || Object(E.a)(m) || !Object(j.s)(m) || !w(m, s) || !P(d, s)), [o, l, m, d, s]),
+						p = Object(r.useCallback)(() => !!(!o && l && Object(j.s)(m) && w(m, s) && P(d, s)), [o, l, m, d, s]),
 						u = Object(r.useCallback)(() => !(o || !w(m, s) || !P(d, s)), [o, m, d, s]),
 						b = Object(g.a)(_.s, p),
 						h = Object(g.a)(_.r, p),
@@ -6701,4 +6701,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.6ba7bf142675bdde858e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.cd4c3d20e74bc9067879.js.map
