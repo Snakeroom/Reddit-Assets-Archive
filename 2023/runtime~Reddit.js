@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.429ff2f1be6ed2319f94.js
-// Retrieved at 5/10/2023, 11:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.62f5592b1b631de3c281.js
+// Retrieved at 5/10/2023, 12:30:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1389,7 +1389,7 @@
 						Coins: "c73ae879f3f5a924a404",
 						CoinsMobile: "519cabfbe0820f85ca18",
 						"CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8": "9e0080beeb3c4968570b",
-						"CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~cb450973": "e427f56b129a936aff53",
+						"CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~cb450973": "ec2690ed37914538d0f6",
 						"CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32": "dfb8621387edb3b9e556",
 						"CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657": "b59c8453cd4decf5a6d8",
 						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab": "f56bfe587b33b73dd234",
@@ -1776,4 +1776,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.429ff2f1be6ed2319f94.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.62f5592b1b631de3c281.js.map
