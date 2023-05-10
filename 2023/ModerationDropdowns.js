@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.51437112b72e6dfd9eee.js
-// Retrieved at 5/10/2023, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.54ba7187052e289a3a8c.js
+// Retrieved at 5/10/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, n) {
@@ -660,12 +660,12 @@
 						onRemovePost: M,
 						onModToMemberShareOpened: F,
 						onSpamPost: A,
-						onStickyPost: B,
-						onSpoilerPost: W,
+						onStickyPost: W,
+						onSpoilerPost: B,
 						post: H
 					} = e;
-					var V, G, U, K, Z;
-					const Q = (null === (V = H.pollData) || void 0 === V ? void 0 : V.isPrediction) && !(null === (G = H.pollData) || void 0 === G ? void 0 : G.resolvedOptionId),
+					var V, G, U, K, Q;
+					const Z = (null === (V = H.pollData) || void 0 === V ? void 0 : V.isPrediction) && !(null === (G = H.pollData) || void 0 === G ? void 0 : G.resolvedOptionId),
 						q = (null === (U = H.pollData) || void 0 === U ? void 0 : U.isPrediction) && null !== H.pollData.resolvedOptionId,
 						z = H.flair.filter(e => e.type !== N.f.Nsfw && e.type !== N.f.Spoiler).length > 0,
 						Y = Object(P.b)(H),
@@ -714,17 +714,17 @@
 						onClick: F
 					}, s.a.createElement(S.f, null)), !H.isRemoved && !H.isSpam && !d && s.a.createElement(g.a, {
 						isSelected: H.isStickied,
-						onClick: B,
+						onClick: W,
 						text: k.fbt._("Sticky post", null, {
 							hk: "3uXoIh"
 						})
 					}), Object(E.b)(H) && s.a.createElement(S.e, {
-						disabled: Boolean((null === (K = H.pollData) || void 0 === K ? void 0 : K.resolvedOptionId) || (null === (Z = H.pollData) || void 0 === Z ? void 0 : Z.predictionStatus) === w.b.Cancelled),
+						disabled: Boolean((null === (K = H.pollData) || void 0 === K ? void 0 : K.resolvedOptionId) || (null === (Q = H.pollData) || void 0 === Q ? void 0 : Q.predictionStatus) === w.b.Cancelled),
 						displayText: k.fbt._("Cancel Prediction", null, {
 							hk: "hgWFW"
 						}),
 						onClick: p
-					}, s.a.createElement(S.i, null)), Q && s.a.createElement(S.e, {
+					}, s.a.createElement(S.i, null)), Z && s.a.createElement(S.e, {
 						displayText: k.fbt._("Update the end date", null, {
 							hk: "FjDpu"
 						}),
@@ -766,7 +766,7 @@
 						onClick: C
 					}, s.a.createElement(S.d, null)), s.a.createElement(g.a, {
 						isSelected: H.isSpoiler,
-						onClick: W,
+						onClick: B,
 						text: k.fbt._("Mark as spoiler", null, {
 							hk: "3ef0MU"
 						})
@@ -776,8 +776,8 @@
 						moderator: !0
 					}))
 				};
-			var B = n("./src/reddit/components/PostModModeDropdown/_PostModModeDropdown.m.less"),
-				W = n.n(B);
+			var W = n("./src/reddit/components/PostModModeDropdown/_PostModModeDropdown.m.less"),
+				B = n.n(W);
 			const H = Object(x.v)({
 					isProfilePage: x.L,
 					pageLayer: e => e
@@ -859,7 +859,7 @@
 					L = I ? a.J.NONE : a.J.MODERATOR,
 					R = Object(p.b)(y.id, c);
 				return s.a.createElement(U, {
-					className: W.a.dropdown,
+					className: B.a.dropdown,
 					isOpen: r,
 					tooltipId: F
 				}, s.a.createElement(A, {
@@ -1350,9 +1350,9 @@
 				r = n("./src/reddit/selectors/user.ts");
 			const i = (e, t) => t && Object(s.c)(e, {
 				experimentEligibilitySelector: r.S,
-				experimentName: o.Bf
-			}) === o.Pd
+				experimentName: o.Df
+			}) === o.Qd
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.51437112b72e6dfd9eee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.54ba7187052e289a3a8c.js.map

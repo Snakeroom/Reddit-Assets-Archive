@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.78522e893c503078985a.js
-// Retrieved at 5/10/2023, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.1c0399e22b164c9b04b9.js
+// Retrieved at 5/10/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -2144,8 +2144,8 @@
 							noun: "go_live",
 							subreddit: u.lb(e),
 							liveAudioRoom: {
-								title: Object(m.vb)(e),
-								topicIds: Object(m.ub)(e).topics.map(e => e.id)
+								title: Object(m.xb)(e),
+								topicIds: Object(m.wb)(e).topics.map(e => e.id)
 							}
 						}))()), d(!0);
 						const e = await Object(_.f)(h(), {
@@ -3187,8 +3187,8 @@
 				p = s("./node_modules/reselect/es/index.js");
 			const b = Object(p.a)(e => Object(u.c)(e, {
 				experimentEligibilitySelector: u.a,
-				experimentName: m.wc
-			}), e => e === m.Pd);
+				experimentName: m.xc
+			}), e => e === m.Qd);
 			var h = s("./node_modules/fbt/lib/FbtPublic.js"),
 				g = s("./src/lib/classNames/index.ts"),
 				f = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
@@ -4357,15 +4357,15 @@
 					hk: "tWEG"
 				})))), o.a.createElement("div", {
 					className: O.a.Copyright
-				}, E._("Reddit Inc © {year}. All rights reserved", [E._param("year", (new Date).getFullYear().toString())], {
-					hk: "4BrCkA"
+				}, E._("Reddit, Inc. © {year}. All rights reserved.", [E._param("year", (new Date).getFullYear().toString())], {
+					hk: "DPZBh"
 				})))
 			};
 			t.a = I(k(Object(l.c)(e => {
 				const t = Object(r.f)().getState(),
 					s = Object(g.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.id.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.id.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.id.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.jd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.jd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.jd.LargeImagePreview ? e.reredditButtons : [];
 					return o.a.createElement(w, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -4443,8 +4443,8 @@
 					className: O.a.Column
 				}, n("de"), n("es"), n("pt"))), o.a.createElement("div", {
 					className: O.a.Copyright
-				}, E._("Reddit Inc © {year}. All rights reserved", [E._param("year", (new Date).getFullYear().toString())], {
-					hk: "4BrCkA"
+				}, E._("Reddit, Inc. © {year}. All rights reserved.", [E._param("year", (new Date).getFullYear().toString())], {
+					hk: "DPZBh"
 				})), o.a.createElement(c.a, null))
 			})))
 		},
@@ -7331,11 +7331,11 @@
 				d = s("./node_modules/reselect/es/index.js");
 			const c = Object(d.a)(e => Object(o.c)(e, {
 					experimentEligibilitySelector: e => Object(a.h)(e) && Object(r.f)(e),
-					experimentName: n.oc
+					experimentName: n.pc
 				}), i.a),
 				l = Object(d.a)(e => Object(o.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.h)(e) && Object(r.f)(e),
-					experimentName: n.nc
+					experimentName: n.oc
 				}), i.a),
 				m = Object(d.a)(c, l, (e, t) => e || t),
 				u = Object(d.a)(c, l, (e, t) => !(!e && !t))
@@ -7420,4 +7420,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.78522e893c503078985a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.1c0399e22b164c9b04b9.js.map

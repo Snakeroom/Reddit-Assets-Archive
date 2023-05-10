@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.b9119dea2809eca1408f.js
-// Retrieved at 5/10/2023, 11:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.391a9df72b2613fee4d5.js
+// Retrieved at 5/10/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-EventPostContent"], {
 		"./src/reddit/components/ClassicPost/index.tsx": function(e, t, s) {
@@ -653,8 +653,8 @@
 							noun: "go_live",
 							subreddit: u.lb(e),
 							liveAudioRoom: {
-								title: Object(m.vb)(e),
-								topicIds: Object(m.ub)(e).topics.map(e => e.id)
+								title: Object(m.xb)(e),
+								topicIds: Object(m.wb)(e).topics.map(e => e.id)
 							}
 						}))()), d(!0);
 						const e = await Object(k.f)(x(), {
@@ -1165,4 +1165,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.b9119dea2809eca1408f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.391a9df72b2613fee4d5.js.map

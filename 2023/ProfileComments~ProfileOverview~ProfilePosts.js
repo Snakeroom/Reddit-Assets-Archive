@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts.3f3630288c6ebb1ce705.js
-// Retrieved at 5/10/2023, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts.58e7eea021430aed78e4.js
+// Retrieved at 5/10/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePosts", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -1083,16 +1083,16 @@
 					[l.a.mIsGrey]: e.textColor === _.Grey,
 					[l.a.mIsWhite]: e.textColor === _.White
 				})
-			}, s.a.createElement(u, null, d._("Use of this site constitutes acceptance of our {=User Agreement} and {=Privacy Policy.} ©{year} reddit inc. All rights reserved. REDDIT and the ALIEN Logo are registered trademarks of reddit inc.", [d._param("=User Agreement", s.a.createElement(m, {
+			}, s.a.createElement(u, null, d._("Use of this site constitutes acceptance of our {=User Agreement} and {=Privacy Policy.} Reddit, Inc. © {year}. All rights reserved. REDDIT and the ALIEN Logo are registered trademarks of reddit inc.", [d._param("=User Agreement", s.a.createElement(m, {
 				href: `${a.a.redditUrl}/help/useragreement`
 			}, d._("User Agreement", null, {
-				hk: "YviZP"
+				hk: "1Dc18v"
 			}))), d._param("=Privacy Policy.", s.a.createElement(p, {
 				href: `${a.a.redditUrl}/help/privacypolicy`
 			}, d._("Privacy Policy.", null, {
-				hk: "1fsgYq"
+				hk: "1Ubjrd"
 			}))), d._param("year", (new Date).getFullYear())], {
-				hk: "3wzgp7"
+				hk: "yxLlI"
 			})))
 		},
 		"./src/reddit/components/LayoutNavigation/ConsiderateNav.m.less": function(e, t, n) {
@@ -2085,7 +2085,7 @@
 					}, i.a.createElement(_.b, {
 						textColor: l
 					})), i.a.createElement(L, {
-						qrCodeAsset: (() => r === b.fd.Enabled || s === b.jb.BlurredPreview || s === b.jb.NoPreview ? N.d2x_nsfw_signup_blocking_de_v1 : N.d2x_nsfw_signup_blocking_non_us_v1)()
+						qrCodeAsset: (() => r === b.gd.Enabled || s === b.jb.BlurredPreview || s === b.jb.NoPreview ? N.d2x_nsfw_signup_blocking_de_v1 : N.d2x_nsfw_signup_blocking_non_us_v1)()
 					}))
 				},
 				A = e => {
@@ -2921,4 +2921,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts.3f3630288c6ebb1ce705.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts.58e7eea021430aed78e4.js.map

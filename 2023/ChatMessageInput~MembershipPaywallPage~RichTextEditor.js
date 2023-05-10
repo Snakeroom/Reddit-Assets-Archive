@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.4beed0c79a9effa94009.js
-// Retrieved at 2/16/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.75e135d91e5c54c0eb70.js
+// Retrieved at 5/10/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -1222,52 +1222,53 @@
 				K = t => {
 					const {
 						className: e,
-						allowMediaUploads: n = !1,
-						destSubreddit: o,
-						editorState: r,
-						isOverlay: s,
-						onChange: a,
-						onFilesSelect: u,
-						readOnly: h,
-						trackOnClick: m,
-						onLinkButtonClick: g,
-						onMarkdownButtonClick: f,
-						editorKey: b
-					} = t, y = Object(p.a)(r);
-					return h && Object(p.b)(y), i.a.createElement("div", {
+						allowImageUploads: n = !1,
+						allowVideoUploads: o = !1,
+						destSubreddit: r,
+						editorState: s,
+						isOverlay: a,
+						onChange: u,
+						onFilesSelect: h,
+						readOnly: m,
+						trackOnClick: g,
+						onLinkButtonClick: f,
+						onMarkdownButtonClick: b,
+						editorKey: y
+					} = t, E = Object(p.a)(s);
+					return m && Object(p.b)(E), i.a.createElement("div", {
 						className: Object(c.a)(k.a.ToolbarWrapper, e, {
-							[k.a.isSticky]: !s
+							[k.a.isSticky]: !a
 						})
 					}, i.a.createElement(l.a, {
-						oveflowMenuDropdownId: b,
+						oveflowMenuDropdownId: y,
 						className: k.a.CollapseIntoOverflow,
 						editorType: d.a.Post
-					}, R(w, y, r, a, m), i.a.createElement(_, {
-						controlsState: y,
-						trackOnClick: m,
-						onLinkButtonClick: g
-					}), R(B, y, r, a, m), i.a.createElement(v, null), R(I, y, r, a, m), i.a.createElement(v, null), i.a.createElement(A, {
-						controlsState: y,
-						editorState: r,
-						trackOnClick: m,
-						onChange: a
+					}, R(w, E, s, u, g), i.a.createElement(_, {
+						controlsState: E,
+						trackOnClick: g,
+						onLinkButtonClick: f
+					}), R(B, E, s, u, g), i.a.createElement(v, null), R(I, E, s, u, g), i.a.createElement(v, null), i.a.createElement(A, {
+						controlsState: E,
+						editorState: s,
+						trackOnClick: g,
+						onChange: u
 					}), n && i.a.createElement(C.a, {
-						destSubreddit: o,
-						controlsState: y,
-						onClick: () => m("image_upload"),
-						onFilesInput: u,
+						destSubreddit: r,
+						controlsState: E,
+						onClick: () => g("image_upload"),
+						onFilesInput: h,
 						type: "image"
-					}), n && i.a.createElement(C.a, {
-						destSubreddit: o,
-						controlsState: y,
-						onClick: () => m("video_upload"),
-						onFilesInput: u,
+					}), o && i.a.createElement(C.a, {
+						destSubreddit: r,
+						controlsState: E,
+						onClick: () => g("video_upload"),
+						onFilesInput: h,
 						type: "video"
 					})), i.a.createElement("div", {
 						className: k.a.MarkdownButtonWrapper
 					}, i.a.createElement(S.a, {
 						className: k.a.MarkdownButton,
-						onClick: f
+						onClick: b
 					})))
 				}
 		},
@@ -6415,7 +6416,7 @@
 						const n = Pr(e, this.editorRef, t, this.props.editorType);
 						n && this.onChange(n)
 					}, this.handleFilesPaste = (t, e) => {
-						if (!this.props.allowMediaUploads) return void t.stopPropagation();
+						if (!this.props.allowImageUploads && !this.props.allowVideoUploads) return void t.stopPropagation();
 						const n = t.clipboardData.files;
 						if (n && n.length) {
 							const o = Array.from(n),
@@ -6690,73 +6691,75 @@
 						className: t,
 						userCanUseEmojis: e,
 						userCanUseGifs: n,
-						allowMediaUploads: s = !1,
-						dataTestId: i,
-						destSubreddit: c,
-						editorType: a,
-						focusableContentRTEClassName: l,
-						hideToolbar: u,
-						rteState: h,
-						isExpanded: m,
-						isOverlay: g,
-						isCommentBoxDesignEnabled: f,
-						onSubmit: y,
-						placeholderText: E,
-						shouldShowCommentGifsTooltip: S,
-						showSubmitButton: C = !1,
-						submitButtonClassName: O,
-						toolbarPosition: T = "top",
-						renderToolbar: x = this.renderToolbar,
-						isTypingIndicatorsWriteTestEnabled: v
+						allowImageUploads: s = !1,
+						allowVideoUploads: i = !1,
+						dataTestId: c,
+						destSubreddit: a,
+						editorType: l,
+						focusableContentRTEClassName: u,
+						hideToolbar: h,
+						rteState: m,
+						isExpanded: g,
+						isOverlay: f,
+						isCommentBoxDesignEnabled: y,
+						onSubmit: E,
+						placeholderText: S,
+						shouldShowCommentGifsTooltip: C,
+						showSubmitButton: O = !1,
+						submitButtonClassName: T,
+						toolbarPosition: x = "top",
+						renderToolbar: v = this.renderToolbar,
+						isTypingIndicatorsWriteTestEnabled: j
 					} = this.props, {
-						editorKey: j
-					} = h, {
-						containerRef: R,
-						editorState: w,
-						mediaToInsert: B,
-						confirmModalOpen: _,
-						isUserTyping: K
-					} = this.state, M = this.props.readOnly || !!B, L = I(w), N = this.isEmpty(), D = x({
-						allowMediaUploads: s,
-						destSubreddit: c,
-						editorKey: j,
-						editorState: w,
-						isOverlay: !!g,
+						editorKey: R
+					} = m, {
+						containerRef: w,
+						editorState: B,
+						mediaToInsert: _,
+						confirmModalOpen: K,
+						isUserTyping: M
+					} = this.state, L = this.props.readOnly || !!_, N = I(B), D = this.isEmpty(), F = v({
+						allowImageUploads: s,
+						allowVideoUploads: i,
+						destSubreddit: a,
+						editorKey: R,
+						editorState: B,
+						isOverlay: !!f,
 						onChange: this.toolbarSetState,
 						onFilesSelect: this.onFilesSelect,
 						trackOnClick: this.props.trackToolbarClick,
-						readOnly: M,
+						readOnly: L,
 						onEmoteButtonClick: this.onToolbarEmoteButtonClick,
 						onGifButtonClick: this.onToolbarGifButtonClick,
 						onLinkButtonClick: this.onToolbarLinkButtonClick,
 						onMarkdownButtonClick: this.onToolbarMarkdownSwitchClick,
 						userCanUseEmojis: !!e,
 						userCanUseGifs: !!n
-					}), F = !u && (!f || m);
+					}), P = !h && (!y || g);
 					return p.a.createElement(gc, {
 						className: t,
 						innerRef: this.setContainerRef
-					}, v && K && p.a.createElement(k.a, {
+					}, j && M && p.a.createElement(k.a, {
 						variables: this.realtimeGQLVariables,
 						onData: d.a,
 						queryKey: "userIsTypingOnPost"
-					}), f && p.a.createElement("div", {
+					}), y && p.a.createElement("div", {
 						className: ac.a.userIcon
 					}, p.a.createElement(fc, null)), p.a.createElement(mc, {
-						className: Object(b.a)(l, {
-							[ac.a.showSubmitButton]: C,
-							[ac.a.mExpanded]: m,
-							[ac.a.mRedesign]: f
+						className: Object(b.a)(u, {
+							[ac.a.showSubmitButton]: O,
+							[ac.a.mExpanded]: g,
+							[ac.a.mRedesign]: y
 						}),
 						noBorder: this.props.noBorder,
 						isFocused: this.isFocused(),
 						ref: this.setFocusableContentRef
-					}, F && "top" === T && D, R && p.a.createElement(bo, {
-						editorState: w,
-						readOnly: M,
+					}, P && "top" === x && F, w && p.a.createElement(bo, {
+						editorState: B,
+						readOnly: L,
 						onChange: this.onChange,
 						onSetApi: this.setTableToolbarControllerApi,
-						rteDomRef: R
+						rteDomRef: w
 					}), p.a.createElement("div", {
 						className: Object(b.a)(ac.a.editorWrapper, {
 							[ac.a.hasInitialHeight]: !!this.props.initialHeight,
@@ -6767,7 +6770,7 @@
 							"--rte-initial-height": this.props.initialHeight ? `${this.props.initialHeight}px` : void 0,
 							"--rte-initial-min-height": this.props.initialMinHeight ? `${this.props.initialMinHeight}px` : void 0
 						},
-						"data-test-id": i,
+						"data-test-id": c,
 						onCopyCapture: this.handleOnCopy,
 						onCutCapture: this.handleOnCut,
 						onPasteCapture: this.handleOnPaste,
@@ -6775,23 +6778,23 @@
 						onMouseUp: this.handleOnMouseUp
 					}, p.a.createElement("style", {
 						dangerouslySetInnerHTML: {
-							__html: `\n                .${nc.b}[${nc.d}="${L}-0-0"]::after {\n                  bottom: 0;\n                  color: var(--newCommunityTheme-actionIcon);\n                  content: '${E}';\n                  cursor: text;\n                  left: 0;\n                  position: absolute;\n                  top: 0;\n                }\n              `
+							__html: `\n                .${nc.b}[${nc.d}="${N}-0-0"]::after {\n                  bottom: 0;\n                  color: var(--newCommunityTheme-actionIcon);\n                  content: '${S}';\n                  cursor: text;\n                  left: 0;\n                  position: absolute;\n                  top: 0;\n                }\n              `
 						}
 					}), p.a.createElement(jr, {
-						allowMediaUploads: s && !M,
+						allowMediaUploads: (s || i) && !L,
 						onBlockMove: this.onBlockMove,
 						onFilesDrop: this.onFilesDrop,
-						editorState: w,
+						editorState: B,
 						onChange: this.onChange
 					}, p.a.createElement(Co.Provider, {
 						value: this.entityElementRegistry
 					}, p.a.createElement(o.Editor, {
-						readOnly: M,
+						readOnly: L,
 						ref: this.setEditorRef,
 						blockRendererFn: this.blockRendererFn,
 						blockRenderMap: this.blockRenderMap,
-						editorKey: j,
-						editorState: w,
+						editorKey: R,
+						editorState: B,
 						keyBindingFn: this.keyBindingFN,
 						handleBeforeInput: this.handleBeforeInput,
 						handleKeyCommand: this.handleKeyCommand,
@@ -6808,37 +6811,37 @@
 						spellCheck: !0,
 						handleReturn: this.handleReturn,
 						customStyleMap: Ts()
-					})))), F && "bottom" === T && D, p.a.createElement(ps, {
-						containerRef: R,
-						editorState: w,
+					})))), P && "bottom" === x && F, p.a.createElement(ps, {
+						containerRef: w,
+						editorState: B,
 						entityElementRegistry: this.entityElementRegistry,
 						onSetApi: this.setLinksControllerApi,
 						onChange: this.onChange
-					}), a === Wt.a.Comment && c && p.a.createElement(Ao, {
-						editorState: w,
+					}), l === Wt.a.Comment && a && p.a.createElement(Ao, {
+						editorState: B,
 						onChange: this.onChange,
 						onSetApi: this.setEmotesTooltipApi,
-						subreddit: c,
+						subreddit: a,
 						userCanUseEmojis: !!e
-					}), (S || n) && c && p.a.createElement(rr, {
-						editorState: w,
+					}), (C || n) && a && p.a.createElement(rr, {
+						editorState: B,
 						onChange: this.onChange,
 						onSetApi: this.setGifTooltipApi,
-						subreddit: c,
+						subreddit: a,
 						userCanUseGifs: !!n
-					}), this.renderInternalLinkSuggestionDropdown(), C && p.a.createElement(oe.e, {
+					}), this.renderInternalLinkSuggestionDropdown(), O && p.a.createElement(oe.e, {
 						"aria-label": r.fbt._("submit", null, {
 							hk: "12XoZ8"
 						}),
-						className: Object(b.a)(O, ac.a.insetSubmitButton, {
-							[ac.a.emptyContent]: N,
+						className: Object(b.a)(T, ac.a.insetSubmitButton, {
+							[ac.a.emptyContent]: D,
 							[ac.a.focusedContent]: this.isFocused()
 						}),
-						disabled: N,
-						onClick: y,
+						disabled: D,
+						onClick: E,
 						tabIndex: -1,
 						type: "submit"
-					}, p.a.createElement(sc.a, null))), _ && p.a.createElement(A.a, {
+					}, p.a.createElement(sc.a, null))), K && p.a.createElement(A.a, {
 						toggleModal: this.toggleConfirmModal,
 						onConfirm: this.handleSwitchToMarkdownMode,
 						actionText: r.fbt._("Continue", null, {
@@ -6850,7 +6853,7 @@
 						headerText: r.fbt._("Switch to Markdown", null, {
 							hk: "3zGkKa"
 						}),
-						modalText: a === Wt.a.Comment ? r.fbt._("Switching to markdown will remove any image or GIF from your comment.", null, {
+						modalText: l === Wt.a.Comment ? r.fbt._("Switching to markdown will remove any image or GIF from your comment.", null, {
 							hk: "3v46Jt"
 						}) : r.fbt._("Switching to markdown will remove any images, gifs or videos from your post.", null, {
 							hk: "3rlwkB"
@@ -8042,4 +8045,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.4beed0c79a9effa94009.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.75e135d91e5c54c0eb70.js.map

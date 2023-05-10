@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.b5a35a8c430331aa630d.js
-// Retrieved at 5/9/2023, 3:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.007c66f1f8b51607edb0.js
+// Retrieved at 5/10/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium~reddit-components-Econ-Prediction-PremiumModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1433,8 +1433,8 @@
 				hk: "1VvAdM"
 			}))), a.a.createElement("li", {
 				className: i.a.legalItem
-			}, c._("© {year} Reddit, Inc. All rights reserved", [c._param("year", (new Date).getFullYear().toString())], {
-				hk: "23FUx6"
+			}, c._("Reddit, Inc. © {year}. All rights reserved.", [c._param("year", (new Date).getFullYear().toString())], {
+				hk: "4fplqp"
 			})))))
 		},
 		"./src/reddit/controls/LoadingIcon/index.m.less": function(e, t, r) {
@@ -2616,4 +2616,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.b5a35a8c430331aa630d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.007c66f1f8b51607edb0.js.map

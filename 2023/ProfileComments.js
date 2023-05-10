@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.ccda11c2347970f7ac34.js
-// Retrieved at 5/10/2023, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.ffaa9677c0370c5abebb.js
+// Retrieved at 5/10/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./src/lib/LiveChatActiveUsers/index.m.less": function(e, t, s) {
@@ -1582,8 +1582,8 @@
 							noun: "go_live",
 							subreddit: p.lb(e),
 							liveAudioRoom: {
-								title: Object(m.vb)(e),
-								topicIds: Object(m.ub)(e).topics.map(e => e.id)
+								title: Object(m.xb)(e),
+								topicIds: Object(m.wb)(e).topics.map(e => e.id)
 							}
 						}))()), d(!0);
 						const e = await Object(P.f)(h(), {
@@ -2363,8 +2363,8 @@
 				u = s("./node_modules/reselect/es/index.js");
 			const b = Object(u.a)(e => Object(p.c)(e, {
 				experimentEligibilitySelector: p.a,
-				experimentName: m.wc
-			}), e => e === m.Pd);
+				experimentName: m.xc
+			}), e => e === m.Qd);
 			var h = s("./node_modules/fbt/lib/FbtPublic.js"),
 				x = s("./src/lib/classNames/index.ts"),
 				f = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
@@ -3709,4 +3709,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.ccda11c2347970f7ac34.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.ffaa9677c0370c5abebb.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ShowcaseCollectionViewModal.6eb990cd5af3b3a68d8c.js
-// Retrieved at 5/10/2023, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ShowcaseCollectionViewModal.0fcc97c1e4f6b85434ee.js
+// Retrieved at 5/10/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ShowcaseCollectionViewModal"], {
 		"./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx": function(e, t, r) {
@@ -43,7 +43,7 @@
 							},
 							expiration: O
 						}), [f, O]),
-						x = {
+						_ = {
 							...h,
 							STRIPE_API_KEY: n.a.stripe.apiKey(e),
 							STRIPE_API_VERSION: n.a.stripe.apiVersion(t),
@@ -53,7 +53,7 @@
 								NO_VAULT: !0
 							} : {}
 						},
-						_ = Object(o.useCallback)(e => {
+						x = Object(o.useCallback)(e => {
 							j(t => {
 								const r = m.o(t);
 								return {
@@ -70,10 +70,10 @@
 						}, [j]);
 					return Object(o.useMemo)(() => ({
 						authHeaders: y,
-						config: x,
+						config: _,
 						isNightMode: k,
-						sendEvent: _
-					}), [y, x, k, _])
+						sendEvent: x
+					}), [y, _, k, x])
 				}
 		},
 		"./src/reddit/components/Econ/Marketplace/ShowcaseCollectionViewModal/index.m.less": function(e, t, r) {
@@ -106,10 +106,10 @@
 				j = r("./src/reddit/models/Toast/index.ts"),
 				E = r("./src/reddit/selectors/activeModal.ts"),
 				y = r("./src/reddit/components/Econ/Marketplace/ShowcaseCollectionViewModal/index.m.less"),
-				x = r.n(y);
+				_ = r.n(y);
 
-			function _() {
-				return (_ = Object.assign || function(e) {
+			function x() {
+				return (x = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n])
@@ -126,11 +126,11 @@
 						i = Object(O.b)(),
 						u = Object(d.d)(),
 						y = Object(d.f)().getState(),
-						_ = Object(d.e)(e => Object(E.a)(e)),
+						x = Object(d.e)(e => Object(E.a)(e)),
 						{
 							telemetryReason: A,
 							profileUserName: v
-						} = _ || {},
+						} = x || {},
 						g = Object(f.Cb)(y, {
 							userName: v || ""
 						}) || {},
@@ -151,7 +151,7 @@
 								profileUserName: v
 							}))
 						},
-						className: x.a.container,
+						className: _.a.container,
 						onProfileImageClick: c.a,
 						onEmptyState: () => {
 							o(s.fbt._("Collection disabled!", null, {
@@ -170,9 +170,9 @@
 					}))
 				},
 				v = Object(u.a)(A);
-			t.default = e => a.a.createElement(v, _({
+			t.default = e => a.a.createElement(v, x({
 				withOverlay: !0,
-				className: x.a.modal
+				className: _.a.modal
 			}, e))
 		},
 		"./src/reddit/components/Marketplace/MarketplaceConfigProvider.tsx": function(e, t, r) {
@@ -391,10 +391,10 @@
 			const c = e => {
 					return !(Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.xe
-					}) === n.Pd)
+						experimentName: n.ye
+					}) === n.Qd)
 				},
-				i = Object(o.a)(n.ye)
+				i = Object(o.a)(n.ze)
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, r) {
 			"use strict";
@@ -403,9 +403,9 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const o = Object(s.a)(n.zd)
+			const o = Object(s.a)(n.Ad)
 		},
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ShowcaseCollectionViewModal.6eb990cd5af3b3a68d8c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ShowcaseCollectionViewModal.0fcc97c1e4f6b85434ee.js.map

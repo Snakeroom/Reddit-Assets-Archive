@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.fdae44111e770bd40060.js
-// Retrieved at 5/10/2023, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.7ee8c2cd063bc623d6cf.js
+// Retrieved at 5/10/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -3775,16 +3775,16 @@
 					[c.a.mIsGrey]: e.textColor === b.Grey,
 					[c.a.mIsWhite]: e.textColor === b.White
 				})
-			}, i.a.createElement(u, null, l._("Use of this site constitutes acceptance of our {=User Agreement} and {=Privacy Policy.} ©{year} reddit inc. All rights reserved. REDDIT and the ALIEN Logo are registered trademarks of reddit inc.", [l._param("=User Agreement", i.a.createElement(m, {
+			}, i.a.createElement(u, null, l._("Use of this site constitutes acceptance of our {=User Agreement} and {=Privacy Policy.} Reddit, Inc. © {year}. All rights reserved. REDDIT and the ALIEN Logo are registered trademarks of reddit inc.", [l._param("=User Agreement", i.a.createElement(m, {
 				href: `${r.a.redditUrl}/help/useragreement`
 			}, l._("User Agreement", null, {
-				hk: "YviZP"
+				hk: "1Dc18v"
 			}))), l._param("=Privacy Policy.", i.a.createElement(p, {
 				href: `${r.a.redditUrl}/help/privacypolicy`
 			}, l._("Privacy Policy.", null, {
-				hk: "1fsgYq"
+				hk: "1Ubjrd"
 			}))), l._param("year", (new Date).getFullYear())], {
-				hk: "3wzgp7"
+				hk: "yxLlI"
 			})))
 		},
 		"./src/reddit/components/Governance/CommunityCard/async.tsx": function(e, t, n) {
@@ -5635,15 +5635,15 @@
 					hk: "tWEG"
 				})))), i.a.createElement("div", {
 					className: y.a.Copyright
-				}, E._("Reddit Inc © {year}. All rights reserved", [E._param("year", (new Date).getFullYear().toString())], {
-					hk: "4BrCkA"
+				}, E._("Reddit, Inc. © {year}. All rights reserved.", [E._param("year", (new Date).getFullYear().toString())], {
+					hk: "DPZBh"
 				})))
 			};
 			t.a = j(w(Object(l.c)(e => {
 				const t = Object(r.f)().getState(),
 					n = Object(g.a)(t, Object(o.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === m.id.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.id.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.id.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === m.jd.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.jd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.jd.LargeImagePreview ? e.reredditButtons : [];
 					return i.a.createElement(N, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -5721,8 +5721,8 @@
 					className: y.a.Column
 				}, s("de"), s("es"), s("pt"))), i.a.createElement("div", {
 					className: y.a.Copyright
-				}, E._("Reddit Inc © {year}. All rights reserved", [E._param("year", (new Date).getFullYear().toString())], {
-					hk: "4BrCkA"
+				}, E._("Reddit, Inc. © {year}. All rights reserved.", [E._param("year", (new Date).getFullYear().toString())], {
+					hk: "DPZBh"
 				})), i.a.createElement(c.a, null))
 			})))
 		},
@@ -7178,7 +7178,7 @@
 						} = t;
 						return Object(vt.c)(e, n)
 					},
-					isInNewModuleNCPV3Experiment: e => Object(Ct.a)(e) === gt.Qe.NewModule,
+					isInNewModuleNCPV3Experiment: e => Object(Ct.a)(e) === gt.Se.NewModule,
 					showCommunityChat: Et.d,
 					showGovernance: ft.d.spPoints,
 					showLeaderboard: ft.d.spLeaderboard,
@@ -10038,8 +10038,8 @@
 					wikiPage: C.c,
 					isInShredditAutomodInsightsExperiment: e => (e => Object(L.c)(e, {
 						experimentEligibilitySelector: D.S,
-						experimentName: R.Af
-					}) === R.Pd)(e)
+						experimentName: R.Cf
+					}) === R.Qd)(e)
 				}),
 				F = Object(o.b)(M, e => ({
 					onCopyPageUrl: t => e((e => async t => {
@@ -11401,7 +11401,7 @@
 				d = e => Object(a.c)(e, {
 					experimentEligibilitySelector: o,
 					experimentName: s.qb
-				}) === s.Wc.Treatment
+				}) === s.Xc.Treatment
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, n) {
 			"use strict";
@@ -11418,11 +11418,11 @@
 				d = n("./node_modules/reselect/es/index.js");
 			const c = Object(d.a)(e => Object(i.c)(e, {
 					experimentEligibilitySelector: e => Object(o.h)(e) && Object(r.f)(e),
-					experimentName: s.oc
+					experimentName: s.pc
 				}), a.a),
 				l = Object(d.a)(e => Object(i.c)(e, {
 					experimentEligibilitySelector: e => !Object(o.h)(e) && Object(r.f)(e),
-					experimentName: s.nc
+					experimentName: s.oc
 				}), a.a),
 				u = Object(d.a)(c, l, (e, t) => e || t),
 				m = Object(d.a)(c, l, (e, t) => !(!e && !t))
@@ -11599,4 +11599,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.fdae44111e770bd40060.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.7ee8c2cd063bc623d6cf.js.map

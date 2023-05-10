@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.bad6758162d384d9f949.js
-// Retrieved at 5/10/2023, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.785133586ecc9447a554.js
+// Retrieved at 5/10/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, n) {
@@ -625,15 +625,15 @@
 					hk: "tWEG"
 				})))), r.a.createElement("div", {
 					className: y.a.Copyright
-				}, C._("Reddit Inc © {year}. All rights reserved", [C._param("year", (new Date).getFullYear().toString())], {
-					hk: "4BrCkA"
+				}, C._("Reddit, Inc. © {year}. All rights reserved.", [C._param("year", (new Date).getFullYear().toString())], {
+					hk: "DPZBh"
 				})))
 			};
 			t.a = k(v(Object(l.c)(e => {
 				const t = Object(a.f)().getState(),
 					n = Object(h.a)(t, Object(i.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === m.id.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.id.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.id.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === m.jd.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.jd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.jd.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(N, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -711,8 +711,8 @@
 					className: y.a.Column
 				}, s("de"), s("es"), s("pt"))), r.a.createElement("div", {
 					className: y.a.Copyright
-				}, C._("Reddit Inc © {year}. All rights reserved", [C._param("year", (new Date).getFullYear().toString())], {
-					hk: "4BrCkA"
+				}, C._("Reddit, Inc. © {year}. All rights reserved.", [C._param("year", (new Date).getFullYear().toString())], {
+					hk: "DPZBh"
 				})), r.a.createElement(d.a, null))
 			})))
 		},
@@ -2097,11 +2097,11 @@
 				c = n("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(i.h)(e) && Object(a.f)(e),
-					experimentName: s.oc
+					experimentName: s.pc
 				}), o.a),
 				l = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(i.h)(e) && Object(a.f)(e),
-					experimentName: s.nc
+					experimentName: s.oc
 				}), o.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -2126,4 +2126,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.bad6758162d384d9f949.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.785133586ecc9447a554.js.map

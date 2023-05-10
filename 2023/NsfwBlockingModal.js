@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NsfwBlockingModal.fa8d059d2bf08c70ca31.js
-// Retrieved at 5/10/2023, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NsfwBlockingModal.6276818d80d12203248b.js
+// Retrieved at 5/10/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NsfwBlockingModal"], {
 		"./src/reddit/components/Footer/index.m.less": function(e, t, n) {
@@ -40,16 +40,16 @@
 					[l.a.mIsGrey]: e.textColor === p.Grey,
 					[l.a.mIsWhite]: e.textColor === p.White
 				})
-			}, a.a.createElement(b, null, d._("Use of this site constitutes acceptance of our {=User Agreement} and {=Privacy Policy.} ©{year} reddit inc. All rights reserved. REDDIT and the ALIEN Logo are registered trademarks of reddit inc.", [d._param("=User Agreement", a.a.createElement(u, {
+			}, a.a.createElement(b, null, d._("Use of this site constitutes acceptance of our {=User Agreement} and {=Privacy Policy.} Reddit, Inc. © {year}. All rights reserved. REDDIT and the ALIEN Logo are registered trademarks of reddit inc.", [d._param("=User Agreement", a.a.createElement(u, {
 				href: `${r.a.redditUrl}/help/useragreement`
 			}, d._("User Agreement", null, {
-				hk: "YviZP"
+				hk: "1Dc18v"
 			}))), d._param("=Privacy Policy.", a.a.createElement(m, {
 				href: `${r.a.redditUrl}/help/privacypolicy`
 			}, d._("Privacy Policy.", null, {
-				hk: "1fsgYq"
+				hk: "1Ubjrd"
 			}))), d._param("year", (new Date).getFullYear())], {
-				hk: "3wzgp7"
+				hk: "yxLlI"
 			})))
 		},
 		"./src/reddit/components/Upsell/NsfwBlocking/Modal.tsx": function(e, t, n) {
@@ -67,8 +67,8 @@
 				u = n("./src/reddit/components/Upsell/NsfwBlocking/index.m.less"),
 				m = n.n(u),
 				p = n("./src/reddit/contexts/PageLayer/selectors.ts"),
-				f = n("./src/reddit/helpers/name/index.ts"),
-				_ = n("./src/reddit/selectors/platform.ts");
+				_ = n("./src/reddit/helpers/name/index.ts"),
+				f = n("./src/reddit/selectors/platform.ts");
 
 			function g() {
 				return (g = Object.assign || function(e) {
@@ -82,7 +82,7 @@
 			const {
 				fbt: k
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), j = Object(s.a)(e => {
-				const t = Object(d.e)(_.b),
+				const t = Object(d.e)(f.b),
 					n = Object(d.e)(() => t ? Object(p.f)(t) : null),
 					s = Object(d.e)(e => t ? Object(p.kb)(e, {
 						pageLayer: t
@@ -93,8 +93,8 @@
 				return l.a.createElement(b.a, {
 					contentTitle: (() => {
 						if (n === r.u.COMMENTS_PAGE || n === r.u.SUBREDDIT) {
-							if (s) return Object(f.d)(s)
-						} else if ((n === r.u.PROFILE_COMMENTS || n === r.u.PROFILE_OVERVIEW || n === r.u.PROFILE_POSTS) && a) return Object(f.e)(a);
+							if (s) return Object(_.d)(s)
+						} else if ((n === r.u.PROFILE_COMMENTS || n === r.u.PROFILE_OVERVIEW || n === r.u.PROFILE_POSTS) && a) return Object(_.e)(a);
 						return null
 					})()
 				})
@@ -157,8 +157,8 @@
 				u = n("./src/reddit/actions/login.ts"),
 				m = n("./src/reddit/actions/modal.ts"),
 				p = n("./src/reddit/components/Footer/index.tsx"),
-				f = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				_ = n("./src/reddit/constants/experiments.ts"),
+				_ = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				f = n("./src/reddit/constants/experiments.ts"),
 				g = n("./src/reddit/controls/Button/index.tsx"),
 				k = n("./src/reddit/helpers/counters/nsfwblocking.ts"),
 				j = n("./src/reddit/helpers/counters/nsfwBypassableBlocking.ts"),
@@ -180,9 +180,9 @@
 				L = () => a.fbt._("I'm not over 18", null, {
 					hk: "11UX9Q"
 				}),
-				T = e => {
+				I = e => {
 					const t = Object(c.d)(),
-						n = Object(f.b)(),
+						n = Object(_.b)(),
 						s = Object(c.e)(O.g),
 						d = Object(r.useCallback)(() => {
 							s === O.a.Blurred && t(Object(m.k)({
@@ -224,7 +224,7 @@
 						}
 					}, L())))
 				},
-				I = Object(b.a)(e => {
+				T = Object(b.a)(e => {
 					const t = `${s.a.assetPath}/img/nsfw-blocking-promo/snoovatar_anonymous_cropped.png`;
 					return o.a.createElement("div", {
 						className: y.a.qrCodeOuter
@@ -250,7 +250,7 @@
 					})))
 				}),
 				D = e => {
-					const t = Object(f.b)(),
+					const t = Object(_.b)(),
 						{
 							contentTitle: n
 						} = e,
@@ -266,7 +266,7 @@
 						className: y.a.container
 					}, i.isNewDesignVariant ? o.a.createElement(U, {
 						contentTitle: n
-					}) : o.a.createElement(T, {
+					}) : o.a.createElement(I, {
 						contentTitle: n
 					}), o.a.createElement("div", {
 						className: Object(d.a)(y.a.footerWrapper, {
@@ -274,20 +274,20 @@
 						})
 					}, o.a.createElement(p.b, {
 						textColor: l
-					})), o.a.createElement(I, {
-						qrCodeAsset: (() => s === _.fd.Enabled || a === _.jb.BlurredPreview || a === _.jb.NoPreview ? N.d2x_nsfw_signup_blocking_de_v1 : N.d2x_nsfw_signup_blocking_non_us_v1)()
+					})), o.a.createElement(T, {
+						qrCodeAsset: (() => s === f.gd.Enabled || a === f.jb.BlurredPreview || a === f.jb.NoPreview ? N.d2x_nsfw_signup_blocking_de_v1 : N.d2x_nsfw_signup_blocking_non_us_v1)()
 					}))
 				},
 				U = e => {
 					const t = Object(c.d)(),
-						n = Object(f.b)(),
+						n = Object(_.b)(),
 						s = Object(c.e)(O.h);
 					return Object(r.useEffect)(() => {
 						Object(j.c)(s)
 					}, [s]), o.a.createElement("div", {
 						className: Object(d.a)(y.a.mainCta, {
-							[y.a.skippable_buttons]: s === _.kb.SkippableButtons,
-							[y.a.skippable_text]: s === _.kb.SkippableText
+							[y.a.skippable_buttons]: s === f.kb.SkippableButtons,
+							[y.a.skippable_text]: s === f.kb.SkippableText
 						})
 					}, o.a.createElement("div", {
 						className: y.a.contentDescription
@@ -310,7 +310,7 @@
 						onClick: () => {
 							n(Object(v.a)()), Object(j.b)(j.a.Login), t(Object(u.openLoginModal)())
 						}
-					}, B()), s === _.kb.SkippableButtons && o.a.createElement("div", {
+					}, B()), s === f.kb.SkippableButtons && o.a.createElement("div", {
 						className: y.a.divider
 					}, o.a.createElement("div", {
 						className: y.a.dividerLine
@@ -329,12 +329,12 @@
 						hk: "4nUG6S"
 					}))()), o.a.createElement(g.j, {
 						className: Object(d.a)(y.a.continue, y.a.dismiss, {
-							[y.a.no_border]: s === _.kb.SkippableText
+							[y.a.no_border]: s === f.kb.SkippableText
 						}),
 						onClick: () => {
 							n(Object(v.c)()), Object(j.b)(j.a.Dismiss), t(Object(i.b)("/"))
 						}
-					}, s === _.kb.SkippableText ? (() => a.fbt._("Go back to home", null, {
+					}, s === f.kb.SkippableText ? (() => a.fbt._("Go back to home", null, {
 						hk: "4yEgxF"
 					}))() : L())))
 				}
@@ -500,9 +500,9 @@
 			})), n.d(t, "b", (function() {
 				return u
 			})), n.d(t, "c", (function() {
-				return f
-			})), n.d(t, "a", (function() {
 				return _
+			})), n.d(t, "a", (function() {
+				return f
 			}));
 			var s = n("./src/lib/constants/index.ts"),
 				a = n("./src/lib/localStorageAvailable/index.ts"),
@@ -524,7 +524,7 @@
 				},
 				m = (e, t) => t === c.a.NoPreview && (e === r.kb.SkippableButtons || e === r.kb.SkippableText),
 				p = (e, t) => t === c.a.NoPreview && e === r.kb.NoUpsell,
-				f = Object(l.a)(c.h, c.g, (e, t) => {
+				_ = Object(l.a)(c.h, c.g, (e, t) => {
 					return {
 						isControlVariant: !(!e || !t) && ((e, t) => t === c.a.NoPreview && !m(e, t) && !p(e, t))(e, t),
 						isNewDesignVariant: !(!e || !t) && m(e, t),
@@ -532,8 +532,8 @@
 						variant: e
 					}
 				}),
-				_ = Object(l.a)(f, i.a, (e, t) => !e.isOldDesignVariant && (!e.isNewDesignVariant || !t))
+				f = Object(l.a)(_, i.a, (e, t) => !e.isOldDesignVariant && (!e.isNewDesignVariant || !t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwBlockingModal.fa8d059d2bf08c70ca31.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwBlockingModal.6276818d80d12203248b.js.map

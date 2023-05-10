@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.c605656735951ca7952c.js
-// Retrieved at 5/10/2023, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.38afd326772fd1b4b4d0.js
+// Retrieved at 5/10/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -293,7 +293,7 @@
 			n.d(t, "b", (function() {
 				return D
 			})), n.d(t, "e", (function() {
-				return A
+				return B
 			})), n.d(t, "g", (function() {
 				return F
 			})), n.d(t, "a", (function() {
@@ -429,7 +429,7 @@
 						n(T(e))
 					}
 					return a
-				}, M = Object(i.a)(c.f), A = e => async (t, n, s) => {
+				}, M = Object(i.a)(c.f), B = e => async (t, n, s) => {
 					let {
 						apiContext: r
 					} = s;
@@ -442,7 +442,7 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, B = Object(i.a)(c.g), F = (e, t, n) => async (s, r, i) => {
+				}, A = Object(i.a)(c.g), F = (e, t, n) => async (s, r, i) => {
 					let {
 						apiContext: a
 					} = i;
@@ -456,7 +456,7 @@
 								collectionId: e
 							}),
 							u = (l && l.postIds && l.postIds.indexOf(t) || -1) - 1;
-						if (s(B({
+						if (s(A({
 								collectionId: e,
 								postId: t
 							})), n && u >= 0) {
@@ -1137,7 +1137,7 @@
 				h = p.a.ol("Ol", m.a),
 				g = p.a.div("Title", m.a),
 				x = Object(a.c)({
-					submissionType: l.pb
+					submissionType: l.rb
 				});
 			t.a = p.a.wrapped(Object(i.b)(x)(e => {
 				const {
@@ -1265,10 +1265,10 @@
 					subredditRules: R,
 					currentPostCollection: h.g,
 					isOpenAIPilotV1: x.g,
-					submissionType: _.pb
+					submissionType: _.rb
 				}),
-				A = Object(d.b)(M),
-				B = e => {
+				B = Object(d.b)(M),
+				A = e => {
 					const {
 						className: t,
 						currentPostCollection: n,
@@ -1302,7 +1302,7 @@
 						redditStyle: !0
 					}))
 				};
-			t.a = N(A(B))
+			t.a = N(B(A))
 		},
 		"./src/reddit/components/RawHTMLDisplay/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1457,15 +1457,15 @@
 					hk: "tWEG"
 				})))), s.a.createElement("div", {
 					className: k.a.Copyright
-				}, E._("Reddit Inc © {year}. All rights reserved", [E._param("year", (new Date).getFullYear().toString())], {
-					hk: "4BrCkA"
+				}, E._("Reddit, Inc. © {year}. All rights reserved.", [E._param("year", (new Date).getFullYear().toString())], {
+					hk: "DPZBh"
 				})))
 			};
 			t.a = w(O(Object(l.c)(e => {
 				const t = Object(r.f)().getState(),
 					n = Object(h.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === m.id.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.id.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.id.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === m.jd.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.jd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.jd.LargeImagePreview ? e.reredditButtons : [];
 					return s.a.createElement(S, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -1543,8 +1543,8 @@
 					className: k.a.Column
 				}, o("de"), o("es"), o("pt"))), s.a.createElement("div", {
 					className: k.a.Copyright
-				}, E._("Reddit Inc © {year}. All rights reserved", [E._param("year", (new Date).getFullYear().toString())], {
-					hk: "4BrCkA"
+				}, E._("Reddit, Inc. © {year}. All rights reserved.", [E._param("year", (new Date).getFullYear().toString())], {
+					hk: "DPZBh"
 				})), s.a.createElement(d.a, null))
 			})))
 		},
@@ -1807,7 +1807,7 @@
 			const {
 				fbt: m
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), p = Object(c.c)({
-				title: d.vb
+				title: d.xb
 			});
 			var b = Object(a.b)(p)(e => {
 					const {
@@ -1899,7 +1899,7 @@
 			const {
 				fbt: R
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), D = ["right", "bottom"], M = ["right", "top"];
-			class A extends s.a.PureComponent {
+			class B extends s.a.PureComponent {
 				constructor() {
 					super(...arguments), this.renderItem = (e, t) => s.a.createElement(I, {
 						collectionId: this.props.collection.id,
@@ -1934,7 +1934,7 @@
 					}, n)), s.a.createElement(b, null))
 				}
 			}
-			t.a = A
+			t.a = B
 		},
 		"./src/reddit/components/Widgets/SubredditRules/Rule/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -3093,10 +3093,10 @@
 				P = n("./src/reddit/components/HumanDate/index.tsx");
 			const {
 				fbt: L
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), I = c.a.div("ReviewDraftHeader", S.a), N = c.a.h2("PostDraftLabel", S.a), T = c.a.div("Container", S.a), R = c.a.time("DraftSavedTime", S.a), D = c.a.h1("Title", S.a), M = Object(d.v)(), A = Object(i.c)({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), I = c.a.div("ReviewDraftHeader", S.a), N = c.a.h2("PostDraftLabel", S.a), T = c.a.div("Container", S.a), R = c.a.time("DraftSavedTime", S.a), D = c.a.h1("Title", S.a), M = Object(d.v)(), B = Object(i.c)({
 				profile: d.l
 			});
-			var B = M(Object(r.b)(A)(e => {
+			var A = M(Object(r.b)(B)(e => {
 					const {
 						draft: t,
 						profile: n
@@ -3139,7 +3139,7 @@
 						redditStyle: !0,
 						disableFullscreen: !0,
 						navBar: s.a.createElement("div", null),
-						content: s.a.createElement(B, {
+						content: s.a.createElement(A, {
 							draft: e
 						}),
 						sidebar: n && s.a.createElement(F.a, {
@@ -3165,11 +3165,11 @@
 				c = n("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => Object(a.h)(e) && Object(r.f)(e),
-					experimentName: o.oc
+					experimentName: o.pc
 				}), i.a),
 				l = Object(c.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.h)(e) && Object(r.f)(e),
-					experimentName: o.nc
+					experimentName: o.oc
 				}), i.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -3182,4 +3182,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.c605656735951ca7952c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.38afd326772fd1b4b4d0.js.map

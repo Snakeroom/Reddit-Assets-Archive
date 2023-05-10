@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.c73ae879f3f5a924a404.js
-// Retrieved at 4/24/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.e127760f21230796779c.js
+// Retrieved at 5/10/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, n) {
@@ -1344,8 +1344,8 @@
 				hk: "1VvAdM"
 			}))), a.a.createElement("li", {
 				className: c.a.legalItem
-			}, o._("© {year} Reddit, Inc. All rights reserved", [o._param("year", (new Date).getFullYear().toString())], {
-				hk: "23FUx6"
+			}, o._("Reddit, Inc. © {year}. All rights reserved.", [o._param("year", (new Date).getFullYear().toString())], {
+				hk: "4fplqp"
 			})))))
 		},
 		"./src/reddit/components/PremiumMarketingBanner/index.m.less": function(e, t, n) {
@@ -1833,8 +1833,8 @@
 				R = n.n(B),
 				G = n("./src/lib/classNames/index.ts"),
 				D = n("./src/lib/currency/currencies.ts"),
-				V = n("./src/lib/localizeCurrency/index.ts"),
-				q = n("./src/reddit/controls/Button/index.tsx"),
+				q = n("./src/lib/localizeCurrency/index.ts"),
+				V = n("./src/reddit/controls/Button/index.tsx"),
 				F = n("./src/reddit/hooks/useLocale.ts"),
 				U = n("./src/reddit/icons/svgs/Coin/index.tsx"),
 				H = n("./src/reddit/icons/svgs/Stamp/index.tsx");
@@ -1854,13 +1854,13 @@
 						featuredLabel: b,
 						images: g,
 						pennies: h
-					} = s, y = Object(V.b)(h, {
+					} = s, y = Object(q.b)(h, {
 						locale: l
-					}), v = Object(V.b)(p, {
+					}), v = Object(q.b)(p, {
 						locale: l,
 						type: D.b.Reddit,
 						currency: D.a
-					}), O = c ? null === (t = g.marketing["4x"]) || void 0 === t ? void 0 : t.url : null === (n = g.marketing["2x"]) || void 0 === n ? void 0 : n.url, j = m > 0 && `${Object(V.a)(m,{locale:l})}%`, E = a.fbt._("bonus", null, {
+					}), O = c ? null === (t = g.marketing["4x"]) || void 0 === t ? void 0 : t.url : null === (n = g.marketing["2x"]) || void 0 === n ? void 0 : n.url, j = m > 0 && `${Object(q.a)(m,{locale:l})}%`, E = a.fbt._("bonus", null, {
 						hk: "L8mcp"
 					}), k = c ? R.a.large : "", C = d !== p, _ = u !== h;
 					return o.a.createElement("div", {
@@ -1891,20 +1891,20 @@
 						className: R.a.priceValue
 					}, v), C && o.a.createElement("div", {
 						className: Object(G.a)(R.a.priceCurrency, R.a.crossout)
-					}, Object(V.b)(d, {
+					}, Object(q.b)(d, {
 						locale: l,
 						type: D.b.Reddit,
 						currency: D.a
 					})))), o.a.createElement("div", {
 						className: R.a.description
-					}, f)), o.a.createElement("div", null, o.a.createElement(q.t, {
-						kind: q.b.Button,
-						priority: q.c.Primary,
+					}, f)), o.a.createElement("div", null, o.a.createElement(V.t, {
+						kind: V.b.Button,
+						priority: V.c.Primary,
 						className: R.a.cta,
 						onClick: i
 					}, y), _ && o.a.createElement("div", {
 						className: R.a.priceCrossout
-					}, Object(V.b)(u, {
+					}, Object(q.b)(u, {
 						locale: l
 					})))))
 				},
@@ -1949,12 +1949,12 @@
 					className: ee.a.premiumDescription
 				}, te._("Get {Number of monthly coins} coins every month with Reddit Premium and browse ads-free", [te._param("Number of monthly coins", l)], {
 					hk: "42dB3q"
-				})), n ? o.a.createElement(q.l, {
+				})), n ? o.a.createElement(V.l, {
 					className: ee.a.premiumCTA,
 					onClick: s
 				}, te._("Manage", null, {
 					hk: "4BQsAp"
-				})) : o.a.createElement(q.l, {
+				})) : o.a.createElement(V.l, {
 					className: ee.a.premiumCTA,
 					onClick: a
 				}, te._("Upgrade", null, {
@@ -2019,7 +2019,7 @@
 					className: ie.a.heroDescription
 				}, oe._("Coins are a virtual good you can use to award exemplary posts or comments. Support Reddit and encourage your favorite contributors to keep making Reddit better.", null, {
 					hk: "3rPVMo"
-				})), o.a.createElement(q.g, {
+				})), o.a.createElement(V.g, {
 					className: ie.a.heroCTA,
 					onClick: a
 				}, oe._("Get Coins", null, {
@@ -2287,4 +2287,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.c73ae879f3f5a924a404.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.e127760f21230796779c.js.map

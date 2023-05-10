@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.29c94c71705ee2a11ed3.js
-// Retrieved at 5/10/2023, 11:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.1cfe4c0c43b25dd479c2.js
+// Retrieved at 5/10/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, s) {},
@@ -708,12 +708,12 @@
 					}(p)), h.filter(e => e.isValid).map(e => e.uploadKey)
 				}, H = (e, t) => async (s, o) => {
 					const a = o(),
-						r = Object(I.X)(a),
+						r = Object(I.Z)(a),
 						{
 							items: i
 						} = r,
 						u = !i.length && 1 === e.length,
-						m = Object(I.O)(a) && !u;
+						m = Object(I.P)(a) && !u;
 					let h = !1,
 						p = e;
 					if (m) {
@@ -1303,8 +1303,8 @@
 				W = s("./src/reddit/selectors/experiments/chat.ts"),
 				V = s("./src/redditGQL/types.ts");
 			const G = "chat_submission_from_rte",
-				q = 15,
-				Z = 15e3,
+				Z = 15,
+				q = 15e3,
 				z = Object(H.v)(),
 				Y = Object(d.b)(() => Object(c.c)({
 					draft: A.i,
@@ -1447,7 +1447,7 @@
 						}), this.setState({
 							hasCreatedLiveChatAssociation: !0
 						}), !this.isEmbeddedLiveChat() && this.props.fetchLiveChatPosts()
-					}, Z), window.addEventListener("beforeunload", this.showLiveChatTooltipIfCreatedAssociation))
+					}, q), window.addEventListener("beforeunload", this.showLiveChatTooltipIfCreatedAssociation))
 				}
 				UNSAFE_componentWillReceiveProps(e) {
 					!this.props.isEditing && this.props.draft && this.props.draft.rteState && e.draft && null === e.draft.rteState && this.cleanInputForm(), this.isReplyCommentChanged(e) && e.replyComment && this.focusOnForm(), e.hasError !== this.props.hasError && this.setState({
@@ -1487,7 +1487,7 @@
 						isLiveChatThreadingEnabled: h
 					} = this.props, p = n.fbt._("Send a message (use the Enter key)", null, {
 						hk: "3yojgj"
-					}), b = r === P.L.RATELIMIT && parseInt(null === (e = null == o ? void 0 : o[0]) || void 0 === e ? void 0 : e.replace(/\D/g, "")) || q;
+					}), b = r === P.L.RATELIMIT && parseInt(null === (e = null == o ? void 0 : o[0]) || void 0 === e ? void 0 : e.replace(/\D/g, "")) || Z;
 					return h && (null == u ? void 0 : u.isDeleted) ? null : i.a.createElement("div", {
 						className: Object(l.a)(M.a.FormWrapper, {
 							[M.a.v2]: t,
@@ -1914,4 +1914,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.29c94c71705ee2a11ed3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.1cfe4c0c43b25dd479c2.js.map

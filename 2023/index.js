@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.8f163502bae09171a1ab.js
-// Retrieved at 5/10/2023, 11:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.3b360fb7be4ab7cb97c7.js
+// Retrieved at 5/10/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -280,8 +280,8 @@
 							noun: "go_live",
 							subreddit: m.lb(e),
 							liveAudioRoom: {
-								title: Object(u.vb)(e),
-								topicIds: Object(u.ub)(e).topics.map(e => e.id)
+								title: Object(u.xb)(e),
+								topicIds: Object(u.wb)(e).topics.map(e => e.id)
 							}
 						}))()), c(!0);
 						const e = await Object(_.f)(g(), {
@@ -1217,4 +1217,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.8f163502bae09171a1ab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.3b360fb7be4ab7cb97c7.js.map

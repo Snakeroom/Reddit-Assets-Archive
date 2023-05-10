@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.f829d07c2667e597a2e4.js
-// Retrieved at 5/10/2023, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.53c97ada028e2663be2e.js
+// Retrieved at 5/10/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./node_modules/lodash/map.js": function(e, t, s) {
@@ -219,7 +219,7 @@
 					})(N);
 					H = e.postId, V = e.commentId
 				} else U !== v.a.PostReply && U !== v.a.LifecyclePostSuggestions || (V = L);
-				const X = e => {
+				const z = e => {
 					if (H && V) {
 						const e = Object(a.a)(H, V, Object(_.c)(N)),
 							t = {
@@ -271,7 +271,7 @@
 						case v.a.CommentFollow: {
 							const e = P;
 							return P || e ? n.a.createElement(p.t, {
-								onClick: X,
+								onClick: z,
 								kind: p.b.InternalLink,
 								to: N,
 								isFullWidth: S,
@@ -516,11 +516,11 @@
 				experimentEligibilitySelector: n.a,
 				experimentName: o.wb
 			}), e => ({
-				bucketed: e === o.Xc.ExpandedSearch || e === o.Xc.CollapsedSearch,
-				collapsed: e === o.Xc.CollapsedSearch,
-				expanded: e === o.Xc.ExpandedSearch
+				bucketed: e === o.Yc.ExpandedSearch || e === o.Yc.CollapsedSearch,
+				collapsed: e === o.Yc.CollapsedSearch,
+				expanded: e === o.Yc.ExpandedSearch
 			}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.f829d07c2667e597a2e4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.53c97ada028e2663be2e.js.map
