@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.b93bfff5287927d7e6e1.js
-// Retrieved at 5/11/2023, 11:50:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.0f96e5053bf199cbf909.js
+// Retrieved at 5/11/2023, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~SubredditForkingCTA"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(t, e, r) {
@@ -437,7 +437,7 @@
 							uploadKey: s
 						} = t;
 						const n = Object(y.b)(Object(y.d)(r), "poster.png");
-						return e(U(n, s, !0))
+						return e(U(n, s, !0, !1))
 					});
 					await Promise.all(s);
 					const n = r().uploads,
@@ -461,24 +461,24 @@
 				});
 			const R = "RTE",
 				L = "GALLERY",
-				U = (t, e, r, n, i, o, u) => async (P, k, x) => {
+				U = (t, e, r, n, i, o, u, P) => async (k, x, T) => {
 					let {
-						apiContext: T,
-						gqlContext: A
-					} = x;
-					const N = Object(v.h)(k()),
-						D = Date.now();
-					let R = null,
-						L = !1,
+						apiContext: A,
+						gqlContext: N
+					} = T;
+					const D = Object(v.h)(x()),
+						R = Date.now();
+					let L = null,
 						U = !1,
-						M = !1;
-					const G = t => {
-						if (!M && n && L) {
-							M = !0;
-							const r = k(),
-								s = Date.now() - D,
-								d = Object(h.c)(h.a.PostComposer);
-							U ? (async t => {
+						M = !1,
+						G = !1;
+					const q = t => {
+						if (!G && i && U) {
+							G = !0;
+							const r = x(),
+								s = Date.now() - R,
+								n = Object(h.c)(h.a.PostComposer);
+							M ? (async t => {
 								let {
 									state: e,
 									uploadKey: r,
@@ -538,77 +538,77 @@
 							})({
 								state: r,
 								uploadKey: e,
-								assetId: R,
+								assetId: L,
 								isCanceled: t,
-								fileSource: n,
+								fileSource: i,
 								uploadDuration: s,
-								correlationId: d
+								correlationId: n
 							}) : S.D(r, e)
 						}
 					};
-					return await P(Object(c.l)(t, e, async h => {
+					return await k(Object(c.l)(t, e, async h => {
 						var _, g, j, E;
-						L = !0, Object(c.k)(h.id, () => {
-							G(!0)
+						U = !0, Object(c.k)(h.id, () => {
+							q(!0)
 						});
 						const {
 							error: S,
 							metadata: v
-						} = await async function(t, e, r, n) {
-							const i = r && r.allowedPostTypes,
-								o = r && r.name,
-								a = await Object(y.h)(t) || t.type,
-								c = Object(y.c)(t) || void 0;
-							if (!c) return w("UNSUPPORTED_BROWSER");
-							const u = {
-								localUrl: c,
-								mimetype: a,
+						} = await async function(t, e, r, n, i) {
+							const o = n && n.allowedPostTypes,
+								a = n && n.name,
+								c = await Object(y.h)(t) || t.type,
+								u = Object(y.c)(t) || void 0;
+							if (!u) return w("UNSUPPORTED_BROWSER");
+							const l = {
+								localUrl: u,
+								mimetype: c,
 								size: t.size
 							};
-							if (!a || !Object(y.k)(a)) return {
+							if (!c || !Object(y.k)(c)) return {
 								error: {
 									type: d.Z
 								}
 							};
-							if (a.startsWith("image/")) {
-								if (e && i && !i.images) {
-									const t = s.fbt._("Images are not allowed in r/{subredditName}", [s.fbt._param("subredditName", o)], {
+							if (c.startsWith("image/")) {
+								if (e && r && o && !o.images) {
+									const t = s.fbt._("Images are not allowed in r/{subredditName}", [s.fbt._param("subredditName", a)], {
 										hk: "3C2E7Q"
 									});
 									return w(d.Z, t)
 								}
-								if ("image/gif" === a) {
+								if ("image/gif" === c) {
 									if (t.size > d.fb) return w(d.O)
 								} else if (t.size > d.hb) return w(d.X);
-								const r = await Object(O.a)(c);
-								if (n && (r.width < n || r.height < n)) {
-									const t = s.fbt._("Image must be {min_image_width}x{min_image_height} pixels or larger.", [s.fbt._param("min_image_width", n.toString()), s.fbt._param("min_image_height", n.toString())], {
+								const n = await Object(O.a)(u);
+								if (i && (n.width < i || n.height < i)) {
+									const t = s.fbt._("Image must be {min_image_width}x{min_image_height} pixels or larger.", [s.fbt._param("min_image_width", i.toString()), s.fbt._param("min_image_height", i.toString())], {
 										hk: "2WFKgs"
 									});
 									return w(d.W, t)
 								}
-								u.width = r.width, u.height = r.height
-							} else if (a.startsWith("video/")) {
+								l.width = n.width, l.height = n.height
+							} else if (c.startsWith("video/")) {
 								if (t.size > d.lb) return w(d.wc);
 								let e;
 								try {
-									e = await Object(y.j)(c, !0)
-								} catch (l) {
+									e = await Object(y.j)(u, !0)
+								} catch (b) {
 									return w(d.Z)
 								}
-								if (i) {
+								if (o) {
 									const {
 										videos: t,
 										images: r
-									} = i;
+									} = o;
 									if (r && !t && e.duration > d.mb) {
-										const t = s.fbt._("Sorry, r/{subredditName} doesn't allow videos. Please upload a video less than 60 seconds to convert to animated GIF.", [s.fbt._param("subredditName", o)], {
+										const t = s.fbt._("Sorry, r/{subredditName} doesn't allow videos. Please upload a video less than 60 seconds to convert to animated GIF.", [s.fbt._param("subredditName", a)], {
 											hk: "46ULiz"
 										});
 										return w(d.Z, t)
 									}
 									if (!r && !t) {
-										const t = s.fbt._("Videos are not allowed in r/{subredditName}", [s.fbt._param("subredditName", o)], {
+										const t = s.fbt._("Videos are not allowed in r/{subredditName}", [s.fbt._param("subredditName", a)], {
 											hk: "4uTUZb"
 										});
 										return w(d.Z, t)
@@ -644,22 +644,22 @@
 									});
 									return w(d.Z, t)
 								}
-								u.height = e.height, u.width = e.width, u.videoDuration = e.duration, u.videoFirstFrameUrl = e.firstFrame.dataUrl
+								l.height = e.height, l.width = e.width, l.videoDuration = e.duration, l.videoFirstFrameUrl = e.firstFrame.dataUrl
 							}
 							return {
-								metadata: u
+								metadata: l
 							}
-						}(t, r, N, u);
+						}(t, r, n, D, P);
 						if (S || !v) return {
 							error: S
 						};
-						if (P(Object(c.m)({
+						if (k(Object(c.m)({
 								key: e,
 								metadata: {
-									fileSource: n,
+									fileSource: i,
 									...v
 								}
-							})), U = !0, i && i(), o) {
+							})), M = !0, o && o(), u) {
 							const t = v.mimetype,
 								e = t && d.U[t];
 							if (t && e) {
@@ -672,7 +672,7 @@
 											}
 										}
 									})
-								})(A(), e);
+								})(N(), e);
 								if (t.ok) {
 									const e = t.body,
 										r = (null === (_ = e.data.createMediaUploadLease) || void 0 === _ ? void 0 : _.uploadLease.uploadLeaseUrl) || "",
@@ -680,7 +680,7 @@
 											uploadLeaseUrl: r,
 											uploadLeaseHeaders: null === (g = e.data.createMediaUploadLease) || void 0 === g ? void 0 : g.uploadLease.uploadLeaseHeaders
 										});
-									return R = (null === (j = e.data.createMediaUploadLease) || void 0 === j ? void 0 : j.mediaId) || null, {
+									return L = (null === (j = e.data.createMediaUploadLease) || void 0 === j ? void 0 : j.mediaId) || null, {
 										uploadLease: s
 									}
 								} {
@@ -697,7 +697,7 @@
 									}
 								}
 							}
-							return P(Object(a.f)({
+							return k(Object(a.f)({
 								kind: I.b.Error,
 								text: s.fbt._("Only .jpeg and .png image types are are allowed", null, {
 									hk: "30Ms4V"
@@ -707,28 +707,28 @@
 								error: void 0
 							}
 						}
-						const k = t.name,
-							x = await (async (t, e, r) => Object(l.a)(Object(f.a)(t, [p.a]), {
+						const x = t.name,
+							T = await (async (t, e, r) => Object(l.a)(Object(f.a)(t, [p.a]), {
 								endpoint: `${t.apiUrl}/api/media/asset.json`,
 								method: d.pb.POST,
 								data: {
 									filepath: e,
 									mimetype: r
 								}
-							}))(T(), k, v.mimetype);
-						return x.ok ? (R = x.body.asset.asset_id, {
-							uploadLease: x.body.args
+							}))(A(), x, v.mimetype);
+						return T.ok ? (L = T.body.asset.asset_id, {
+							uploadLease: T.body.args
 						}) : {
-							error: x.error || void 0
+							error: T.error || void 0
 						}
-					}, !0)), G(!1), k().uploads[e] || null
+					}, !0)), q(!1), x().uploads[e] || null
 				}, M = (t, e) => async (r, s) => {
 					const n = s().uploads[t];
-					n && !Object(_.c)(n) && await r(U(n.file, n.key, e, n.metadata.fileSource, void 0))
+					n && !Object(_.c)(n) && await r(U(n.file, n.key, e, !1, n.metadata.fileSource, void 0))
 				}, G = (t, e, r, d, o, c) => async (u, l) => {
 					const b = t.map((t, s) => new Promise(async s => {
 							const i = Object(_.d)(r, Object(n.a)().slice(-6));
-							await u(U(t, i, d, e, () => s({
+							await u(U(t, i, d, !0, e, () => s({
 								uploadKey: i,
 								isValid: !0
 							}), o, c)), s({
@@ -2955,4 +2955,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.b93bfff5287927d7e6e1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.0f96e5053bf199cbf909.js.map
