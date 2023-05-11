@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NsfwSearchModal.b88bc10aef7409eaf8fb.js
-// Retrieved at 5/11/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NsfwSearchModal.1755434626e39c695282.js
+// Retrieved at 5/11/2023, 11:50:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NsfwSearchModal"], {
 		"./src/reddit/actions/search/safeSearch.ts": function(e, t, s) {
@@ -58,7 +58,7 @@
 				w = s("./src/reddit/hooks/usePageLayer.ts"),
 				_ = s("./src/reddit/components/Upsell/NsfwSearch/index.m.less"),
 				N = s.n(_);
-			const k = () => {
+			const S = () => {
 					const e = Object(d.d)(),
 						t = Object(u.b)(),
 						{
@@ -102,13 +102,13 @@
 						hk: "s43tA"
 					}))())))
 				},
-				S = () => {
+				k = () => {
 					const e = Object(u.b)();
 					return i.a.useEffect(() => {
 						e(Object(f.c)())
 					}, [e]), i.a.createElement("div", {
 						className: N.a.container
-					}, i.a.createElement(k, null))
+					}, i.a.createElement(S, null))
 				};
 
 			function B() {
@@ -122,7 +122,7 @@
 			}
 			const {
 				fbt: E
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), D = Object(n.a)(() => i.a.createElement(S, null));
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), D = Object(n.a)(() => i.a.createElement(k, null));
 			t.default = e => i.a.createElement(D, B({}, e, {
 				className: Object(r.a)(e.className, N.a.modal),
 				shouldBlurBackground: !0,
@@ -363,8 +363,8 @@
 					const t = Date.parse(e);
 					return Number.isNaN(t) ? (localStorage.removeItem(a.b.XpromoConsolidation), !0) : Date.now() > t + d
 				},
-				m = (e, t) => t === c.a.NoPreview && (e === o.kb.SkippableButtons || e === o.kb.SkippableText),
-				p = (e, t) => t === c.a.NoPreview && e === o.kb.NoUpsell,
+				m = (e, t) => t === c.a.NoPreview && (e === o.nb.SkippableButtons || e === o.nb.SkippableText),
+				p = (e, t) => t === c.a.NoPreview && e === o.nb.NoUpsell,
 				f = Object(l.a)(c.h, c.g, (e, t) => {
 					return {
 						isControlVariant: !(!e || !t) && ((e, t) => t === c.a.NoPreview && !m(e, t) && !p(e, t))(e, t),
@@ -377,4 +377,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwSearchModal.b88bc10aef7409eaf8fb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwSearchModal.1755434626e39c695282.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.1cfe4c0c43b25dd479c2.js
-// Retrieved at 5/10/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.4794715ef2b3b5660423.js
+// Retrieved at 5/11/2023, 11:50:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, s) {},
@@ -1897,21 +1897,7 @@
 					fill: "inherit"
 				})))
 			}
-		},
-		"./src/reddit/selectors/chat.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "c", (function() {
-				return o
-			})), s.d(t, "b", (function() {
-				return a
-			})), s.d(t, "a", (function() {
-				return r
-			}));
-			var n = s("./node_modules/reselect/es/index.js");
-			const o = e => !(e.chat.isInited || e.chat.unread.api.pending),
-				a = e => e.chat.liveChatTooltipShowState,
-				r = Object(n.a)((e, t) => t, e => e.chat.activeUserCountByLiveChatId, (e, t) => t[e])
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.1cfe4c0c43b25dd479c2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.4794715ef2b3b5660423.js.map
