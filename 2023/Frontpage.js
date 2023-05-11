@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.e4cb6ed81caf5dd869dc.js
-// Retrieved at 5/10/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.914420391fd7e3a60c00.js
+// Retrieved at 5/11/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -666,7 +666,7 @@
 						sort: d,
 						t: m,
 						correlationId: u
-					} = t, p = Object(L.k)(e), v = Object(B.bb)(e) || Object(B.S)(e), f = Object(F.b)(e), _ = Object(R.q)(e), {
+					} = t, p = Object(L.j)(e), v = Object(B.bb)(e) || Object(B.S)(e), f = Object(F.b)(e), _ = Object(R.q)(e), {
 						adsSeenCount: x,
 						totalPostsSeenCount: E,
 						sessionStartTime: y
@@ -685,7 +685,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(h.sg)(p),
+						includeInterestTopics: !!p && !Object(h.qg)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: v && !(null === (n = null === (a = e.user.account) || void 0 === a ? void 0 : a.karma) || void 0 === n ? void 0 : n.total),
@@ -4328,7 +4328,7 @@
 				} = e;
 				const a = Object(r.d)(),
 					o = Object(l.b)(),
-					_ = Object(r.e)(v.k),
+					_ = Object(r.e)(v.j),
 					y = _ === d.nb.Feed ? t.topics.slice(0, 5) : t.topics,
 					[O, j] = Object(n.useState)(!1),
 					[C, k] = Object(n.useState)(),
@@ -5427,7 +5427,7 @@
 				isTalkLiveBarEnabled: V.s,
 				isTrendingHiddenEnabled: W.b,
 				interestTopicRecommendations: ae.b,
-				reonboardingFlow: Q.k,
+				reonboardingFlow: Q.j,
 				marketplaceFeedUnit: e => Object(K.a)(e) ? Object($.a)(e) : null,
 				merchandasingUnitAnnouncements: ee.a,
 				liveBarItems: X.a
@@ -5829,7 +5829,7 @@
 						experimentEligibilitySelector: r.S,
 						experimentName: n.zd
 					});
-					return !(!t || Object(n.sg)(t))
+					return !(!t || Object(n.qg)(t))
 				},
 				i = e => {
 					return Object(s.c)(e, {
@@ -5947,4 +5947,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.e4cb6ed81caf5dd869dc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.914420391fd7e3a60c00.js.map

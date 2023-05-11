@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.7ee8c2cd063bc623d6cf.js
-// Retrieved at 5/10/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.d242e5a4417a43e637d0.js
+// Retrieved at 5/11/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -10038,7 +10038,7 @@
 					wikiPage: C.c,
 					isInShredditAutomodInsightsExperiment: e => (e => Object(L.c)(e, {
 						experimentEligibilitySelector: D.S,
-						experimentName: R.Cf
+						experimentName: R.Af
 					}) === R.Qd)(e)
 				}),
 				F = Object(o.b)(M, e => ({
@@ -11599,4 +11599,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.7ee8c2cd063bc623d6cf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.d242e5a4417a43e637d0.js.map

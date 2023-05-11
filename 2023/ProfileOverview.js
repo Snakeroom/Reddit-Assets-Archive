@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.0d477f10f7074a06061a.js
-// Retrieved at 5/10/2023, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.215f81cec47a683e2c12.js
+// Retrieved at 5/11/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./src/lib/LiveChatActiveUsers/index.m.less": function(e, t, s) {
@@ -3929,7 +3929,7 @@
 			var Ne = s("./src/reddit/selectors/experiments/index.ts");
 
 			function Te(e) {
-				return e === _e.vf.Minimalist || e === _e.vf.Description || e === _e.vf.HotnessSignals
+				return e === _e.tf.Minimalist || e === _e.tf.Description || e === _e.tf.HotnessSignals
 			}
 			var Re = s("./src/reddit/selectors/modQueue.ts"),
 				Me = s("./src/reddit/selectors/postFlair.ts"),
@@ -4109,7 +4109,7 @@
 						isUpdatedContent: tt,
 						isNightMode: st,
 						onSubscribe: nt = (() => {})
-					} = e, ot = Object(O.a)(), rt = !!e.redditStyle || !!e["data-redditstyle"], at = rt ? void 0 : j, it = Object(l.a)(Se), dt = Ne && it, ct = Object(d.a)(Se), lt = Object(c.a)(Se), mt = Object(H.c)(Le), ut = Object(G.a)(Le), pt = !!Le.media && Le.media.type === g.o.RTJSON, bt = qe && pt, ht = s ? s - X.a : void 0, xt = !!Le.recommendationContext, ft = !(de && pe || Ce) || xt && pe, vt = (e => e === _e.kf.OnlyTitles)(De) && !Object(be.a)(Le), Ot = (e => e === _e.kf.MediumHeight)(De) && !Object(be.a)(Le), gt = (e => {
+					} = e, ot = Object(O.a)(), rt = !!e.redditStyle || !!e["data-redditstyle"], at = rt ? void 0 : j, it = Object(l.a)(Se), dt = Ne && it, ct = Object(d.a)(Se), lt = Object(c.a)(Se), mt = Object(H.c)(Le), ut = Object(G.a)(Le), pt = !!Le.media && Le.media.type === g.o.RTJSON, bt = qe && pt, ht = s ? s - X.a : void 0, xt = !!Le.recommendationContext, ft = !(de && pe || Ce) || xt && pe, vt = (e => e === _e.if.OnlyTitles)(De) && !Object(be.a)(Le), Ot = (e => e === _e.if.MediumHeight)(De) && !Object(be.a)(Le), gt = (e => {
 						var t;
 						const {
 							post: s,
@@ -6897,17 +6897,17 @@
 
 			function M(e) {
 				switch (e) {
-					case O.vf.Minimalist:
 					case O.tf.Minimalist:
-					case O.uf.Minimalist:
+					case O.rf.Minimalist:
+					case O.sf.Minimalist:
 						return T.MINIMALIST;
-					case O.vf.HotnessSignals:
-					case O.tf.SocialSignals:
-					case O.uf.SocialSignals:
+					case O.tf.HotnessSignals:
+					case O.rf.SocialSignals:
+					case O.sf.SocialSignals:
 						return T.SIGNALS;
-					case O.vf.Description:
 					case O.tf.Description:
-					case O.uf.Description:
+					case O.rf.Description:
+					case O.sf.Description:
 						return T.DESCRIPTION
 				}
 				return T.MINIMALIST
@@ -8377,7 +8377,7 @@
 				oe = s("./src/reddit/selectors/experiments/index.ts");
 
 			function re(e) {
-				return e === se.tf.Minimalist || e === se.tf.Description || e === se.tf.SocialSignals
+				return e === se.rf.Minimalist || e === se.rf.Description || e === se.rf.SocialSignals
 			}
 			var ae = s("./src/reddit/components/RelatedCommunitiesRecommendations/index.tsx"),
 				ie = s("./src/reddit/components/OverviewConversationsPost/index.m.less"),
@@ -9365,7 +9365,7 @@
 				a = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(o.sg)(t)
+					return Boolean(t) && !Object(o.qg)(t)
 				},
 				d = Object(n.a)(i, r.d, (e, t) => e && !t)
 		},
@@ -9416,4 +9416,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.0d477f10f7074a06061a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.215f81cec47a683e2c12.js.map
