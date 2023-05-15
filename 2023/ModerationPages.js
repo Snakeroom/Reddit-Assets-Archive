@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.ee06f2cb1c4d7ede52ae.js
-// Retrieved at 5/11/2023, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.1b71f1883f3c45a03d94.js
+// Retrieved at 5/15/2023, 1:00:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -44,14 +44,15 @@
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return c
+				return l
 			}));
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
 				o = n("./node_modules/react-redux/es/index.js"),
 				i = n("./node_modules/@loadable/component/dist/loadable.esm.js"),
-				a = n("./src/reddit/selectors/experiments/devPlatform.ts");
-			const d = Object(i.a)({
+				a = n("./src/reddit/selectors/experiments/devPlatform.ts"),
+				d = n("./src/devPlatform/components/ContextActions/placeholder/ContextActionsPlaceholder.tsx");
+			const c = Object(i.a)({
 				resolved: {},
 				chunkName: () => "devPlatform-components-ContextActions",
 				isReady(e) {
@@ -74,12 +75,82 @@
 				ssr: !1
 			});
 
-			function c(e) {
-				return Object(o.e)(e => Object(a.a)(e)) ? r.a.createElement(d, {
+			function l(e) {
+				return Object(o.e)(e => Object(a.a)(e)) ? r.a.createElement(c, {
 					contextType: e.contextType,
 					contextData: e.contextData,
-					moderator: e.moderator
+					moderator: e.moderator,
+					fallback: r.a.createElement(d.a, {
+						contextType: e.contextType,
+						moderator: e.moderator
+					})
 				}) : null
+			}
+		},
+		"./src/devPlatform/components/ContextActions/index.m.less": function(e, t, n) {
+			e.exports = {
+				DropdownRow: "_2A5FemPDmjHjEjpCkaUK2h",
+				dropdownRow: "_2A5FemPDmjHjEjpCkaUK2h",
+				Icon: "SnpDpl5eEAD07JaiyJbpr",
+				icon: "SnpDpl5eEAD07JaiyJbpr"
+			}
+		},
+		"./src/devPlatform/components/ContextActions/placeholder/ContextActionsPlaceholder.tsx": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return m
+			}));
+			var s = n("./node_modules/react/index.js"),
+				r = n.n(s),
+				o = n("./node_modules/react-redux/es/index.js"),
+				i = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				a = n("./src/reddit/controls/Dropdown/Row.tsx"),
+				d = n("./src/reddit/icons/fonts/index.tsx"),
+				c = n("./src/devPlatform/constants.ts"),
+				l = n("./src/devPlatform/components/ContextActions/index.m.less"),
+				u = n.n(l);
+
+			function m(e) {
+				const t = Object(i.ib)(),
+					n = Object(o.e)(e => Object(i.s)(e, {
+						pageLayer: t
+					})),
+					l = Object(s.useMemo)(() => {
+						if (!(null == n ? void 0 : n.devPlatformMetadata)) return [];
+						let t;
+						try {
+							t = JSON.parse(atob(n.devPlatformMetadata))
+						} catch (s) {
+							return []
+						}
+						return t ? t.contextActions.sort((e, t) => e.actorHostname.localeCompare(t.actorHostname)).reduce((t, n) => {
+							var s;
+							let r = [];
+							return (null === (s = n.actions) || void 0 === s ? void 0 : s.actions) && (r = n.actions.actions.filter(t => {
+								var n, s, r, o, i;
+								if (e.moderator && !(null === (n = t.users) || void 0 === n ? void 0 : n.moderator) || !e.moderator && (null === (s = t.users) || void 0 === s ? void 0 : s.moderator)) return !1;
+								switch (e.contextType) {
+									case c.a.POST:
+										return !!(null === (r = t.contexts) || void 0 === r ? void 0 : r.post);
+									case c.a.COMMENT:
+										return !!(null === (o = t.contexts) || void 0 === o ? void 0 : o.comment);
+									case c.a.SUBREDDIT:
+										return !!(null === (i = t.contexts) || void 0 === i ? void 0 : i.subreddit);
+									default:
+										return !1
+								}
+							})), [...t, ...r]
+						}, []).sort((e, t) => e.name.localeCompare(t.name)) : []
+					}, [e.contextType, e.moderator, n]);
+				return r.a.createElement(r.a.Fragment, null, l.map(t => r.a.createElement(a.b, {
+					disabled: !0,
+					className: u.a.DropdownRow,
+					displayText: t.name,
+					key: `${e.contextType}.${t.actionId}`
+				}, r.a.createElement(d.a, {
+					name: e.moderator ? "mod" : "bot",
+					className: u.a.Icon
+				}))))
 			}
 		},
 		"./src/devPlatform/constants.ts": function(e, t, n) {
@@ -80376,4 +80447,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.ee06f2cb1c4d7ede52ae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.1b71f1883f3c45a03d94.js.map
