@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.8c90cf7e078964457e08.js
-// Retrieved at 5/15/2023, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.76e94795f1b2cfcb6abd.js
+// Retrieved at 5/15/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -353,14 +353,14 @@
 				d = e => {
 					switch (e) {
 						case o.a.Denied:
-							c.pb(!1), Object(r.c)();
+							c.qb(!1), Object(r.c)();
 							break;
 						case o.a.Default:
 						case o.a.Granted:
-							c.pb(!0), Object(r.c)();
+							c.qb(!0), Object(r.c)();
 							break;
 						case o.a.Closed:
-							c.pb(!0)
+							c.qb(!0)
 					}
 				}
 		},
@@ -399,9 +399,9 @@
 			})), n.d(t, "e", (function() {
 				return A
 			})), n.d(t, "b", (function() {
-				return F
-			})), n.d(t, "i", (function() {
 				return G
+			})), n.d(t, "i", (function() {
+				return F
 			})), n.d(t, "f", (function() {
 				return H
 			})), n.d(t, "c", (function() {
@@ -409,7 +409,7 @@
 			})), n.d(t, "a", (function() {
 				return W
 			})), n.d(t, "h", (function() {
-				return q
+				return K
 			})), n.d(t, "j", (function() {
 				return Y
 			})), n.d(t, "g", (function() {
@@ -539,7 +539,7 @@
 					i && i !== s && n(M({
 						index: i
 					}))
-				}, M = Object(o.a)(c.g), B = (Object(o.a)(c.h), Object(o.a)(c.f)), F = e => async (t, n, o) => {
+				}, M = Object(o.a)(c.g), B = (Object(o.a)(c.h), Object(o.a)(c.f)), G = e => async (t, n, o) => {
 					let {
 						gqlContext: s
 					} = o;
@@ -562,7 +562,7 @@
 					} else t(Object(d.f)(Object(d.e)(r.fbt._("Failed to hide notification, please try again.", null, {
 						hk: "fL7uB"
 					}), N.b.Error)))
-				}, G = (e, t) => async (n, o, s) => {
+				}, F = (e, t) => async (n, o, s) => {
 					let {
 						gqlContext: i
 					} = s;
@@ -589,7 +589,7 @@
 						});
 						return Object(d.f)(Object(d.e)(n, N.b.Undo, r.fbt._("Undo", null, {
 							hk: "4zFGDk"
-						}), G(e, t)))
+						}), F(e, t)))
 					})()) : n(Object(d.f)(Object(d.e)(r.fbt._("Failed to hide notifications, please try again.", null, {
 						hk: "KEGcB"
 					}), N.b.Error)))
@@ -621,7 +621,7 @@
 					}), N.b.SuccessCommunityGreen))) : t(Object(d.f)(Object(d.e)(r.fbt._("Failed to block awarder, please try again", null, {
 						hk: "2dxeA8"
 					}), N.b.Error)))
-				}, K = Object(o.a)(c.d), q = (e, t) => async (n, r, o) => {
+				}, q = Object(o.a)(c.d), K = (e, t) => async (n, r, o) => {
 					let i, {
 						apiContext: c
 					} = o;
@@ -652,7 +652,7 @@
 					}))(c(), e);
 					if (i.ok) {
 						const t = (new Date).toISOString();
-						n(K({
+						n(q({
 							id: e,
 							now: t
 						}))
@@ -1406,7 +1406,7 @@
 					wrapperClassName: w,
 					style: L,
 					...A
-				} = e, D = !!i && Object(l.e)(i) === P, U = D ? i : k, R = U && U.accountIcon || c, M = k ? k.isNSFW : p, B = Object(d.a)(R) && !b, F = B ? s.a.createElement(_.a, {
+				} = e, D = !!i && Object(l.e)(i) === P, U = D ? i : k, R = U && U.accountIcon || c, M = k ? k.isNSFW : p, B = Object(d.a)(R) && !b, G = B ? s.a.createElement(_.a, {
 					headshot: R,
 					className: e.className,
 					hasNftBorder: m && Object(d.d)(c),
@@ -1416,7 +1416,7 @@
 					isCurrentUser: D,
 					isNSFW: M,
 					style: L
-				})), [G, H] = Object(o.useState)(!1), V = Object(o.useMemo)(() => ({
+				})), [F, H] = Object(o.useState)(!1), V = Object(o.useMemo)(() => ({
 					input: {
 						channel: {
 							teamOwner: "CONTENT_AND_COMMUNITIES",
@@ -1429,7 +1429,7 @@
 						isOnline: t
 					} = e.subscribe.data;
 					H(t)
-				}, []), K = Object(o.useRef)(null), [q, Y] = Object(o.useState)(!1), z = Object(o.useCallback)(e => {
+				}, []), q = Object(o.useRef)(null), [K, Y] = Object(o.useState)(!1), z = Object(o.useCallback)(e => {
 					e.forEach(e => {
 						const {
 							isIntersecting: t,
@@ -1440,19 +1440,19 @@
 				}, []), Q = Object(o.useRef)({
 					rootMargin: "750px 0px 1000px 0px"
 				});
-				return Object(u.a)(K, z, Q.current), N ? F : s.a.createElement("div", {
+				return Object(u.a)(q, z, Q.current), N ? G : s.a.createElement("div", {
 					className: Object(r.a)(O.a.userIconWrapper, {
 						[O.a.hasHeadShotWrapper]: B,
 						[O.a.isProfileIcon]: S
 					}, w),
-					ref: K
+					ref: q
 				}, m && s.a.createElement(I, {
 					iconUrl: c
-				}), F, y && (G || h && v) && s.a.createElement(g.default, {
+				}), G, y && (F || h && v) && s.a.createElement(g.default, {
 					showPresence: !0,
 					isHighlighted: f,
 					onceInViewport: C
-				}), (y || T) && !h && q && s.a.createElement(a.a, {
+				}), (y || T) && !h && K && s.a.createElement(a.a, {
 					variables: V,
 					onData: y ? W : E,
 					queryKey: "isUserOnline"
@@ -1780,7 +1780,7 @@
 					}
 				}),
 				c = (e, t) => {
-					t && (Object(o.Db)(e.postId), Object(o.Nb)(t)), e.impressionIdStr ? Object(o.Eb)(e.impressionIdStr) : e.impressionId && Object(o.Eb)(e.impressionId)
+					t && (Object(o.Fb)(e.postId), Object(o.Pb)(t)), e.impressionIdStr ? Object(o.Gb)(e.impressionIdStr) : e.impressionId && Object(o.Gb)(e.impressionId)
 				}
 		},
 		"./src/reddit/helpers/trackers/inbox.ts": function(e, t, n) {
@@ -2279,15 +2279,15 @@
 			})), n.d(t, "h", (function() {
 				return B
 			})), n.d(t, "i", (function() {
-				return F
-			})), n.d(t, "f", (function() {
 				return G
+			})), n.d(t, "f", (function() {
+				return F
 			})), n.d(t, "b", (function() {
 				return W
 			})), n.d(t, "a", (function() {
-				return K
-			})), n.d(t, "m", (function() {
 				return q
+			})), n.d(t, "m", (function() {
+				return K
 			})), n.d(t, "l", (function() {
 				return Y
 			})), n.d(t, "v", (function() {
@@ -2461,16 +2461,16 @@
 							Object(C.a)($(n, r)(t));
 							break;
 						case s.Tb.COINS:
-							Object(C.a)(W(n, r)(t)), Object(C.a)(K()(t));
+							Object(C.a)(W(n, r)(t)), Object(C.a)(q()(t));
 							break;
 						case s.Tb.PREMIUM:
-							Object(C.a)(q(n, r)(t)), Object(C.a)(Y()(t));
+							Object(C.a)(K(n, r)(t)), Object(C.a)(Y()(t));
 							break;
 						case s.Tb.APPEAL:
 							Object(C.a)(z(n, r)(t));
 							break;
 						case s.Tb.INBOX_PAGES:
-							b && G(t);
+							b && F(t);
 							break;
 						case s.Tb.MODERATION_PAGES:
 							b && B(t, !0, d ? d.subredditName : null, d ? d.profileName : null);
@@ -2479,7 +2479,7 @@
 							b && re(t, !0);
 							break;
 						case s.Tb.MODQUEUE_PAGES:
-							b && F(t, d ? d.subredditName : null, d ? d.profileName : null);
+							b && G(t, d ? d.subredditName : null, d ? d.profileName : null);
 							break;
 						case s.Tb.SEARCH_RESULTS:
 							if (b) {
@@ -2710,7 +2710,7 @@
 						adblock: N.e(e)
 					})
 				},
-				F = (e, t, n) => {
+				G = (e, t, n) => {
 					Object(C.a)({
 						source: "global",
 						action: "view",
@@ -2722,7 +2722,7 @@
 						adblock: N.e(e)
 					})
 				},
-				G = e => {
+				F = e => {
 					Object(C.a)({
 						source: "global",
 						action: "view",
@@ -2768,13 +2768,13 @@
 					timer: N.rb(e, t),
 					adblock: N.e(n)
 				}),
-				K = () => e => ({
+				q = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
 					...k(e)
 				}),
-				q = (e, t) => n => ({
+				K = (e, t) => n => ({
 					source: "premium_marketing",
 					action: "view",
 					noun: "page",
@@ -3507,4 +3507,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.8c90cf7e078964457e08.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.76e94795f1b2cfcb6abd.js.map

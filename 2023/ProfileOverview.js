@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.adac73ea9df1b55fc2e6.js
-// Retrieved at 5/15/2023, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.92b221c340ac7c981f03.js
+// Retrieved at 5/15/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./src/lib/LiveChatActiveUsers/index.m.less": function(e, t, s) {
@@ -8853,7 +8853,9 @@
 						modModeEnabled: h,
 						numComments: f.numComments,
 						type: $.g.Compact,
-						onClick: x
+						onClick: x,
+						isSponsored: f.isSponsored,
+						impressionId: f.impressionId
 					}), a.a.createElement(Ze.a, {
 						className: et.a.shareMenu,
 						dropdownId: Object(Ke.d)(nt, f.id, m, p),
@@ -9069,7 +9071,7 @@
 							pauseMedia: !0
 						})
 					}, this.onGotItClick = () => {
-						Object(ht.Qb)(), this.setState({
+						Object(ht.Sb)(), this.setState({
 							showEducation: !1
 						})
 					}, this.onClickPost = (e, t) => {
@@ -9089,7 +9091,7 @@
 				}
 				componentDidMount() {
 					this.setState({
-						showEducation: !Object(ht.P)()
+						showEducation: !Object(ht.Q)()
 					}), document.addEventListener("scroll", this.handleScroll), this.handleScroll()
 				}
 				componentWillUnmount() {
@@ -9561,4 +9563,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.adac73ea9df1b55fc2e6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.92b221c340ac7c981f03.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.ba79999d55e69bfeedd6.js
-// Retrieved at 5/11/2023, 11:50:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.cb1529ea5249907ecab4.js
+// Retrieved at 5/15/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -1987,7 +1987,7 @@
 			const c = "SET_ACTIVE_CHAT_APP",
 				r = Object(a.a)(c),
 				o = e => async t => {
-					Object(s.Cb)(e), t(r(e ? "new" : "old"))
+					Object(s.Eb)(e), t(r(e ? "new" : "old"))
 				}, i = "REDDIT_CHAT_RESET_STATE", l = Object(a.a)(i), d = "REDDIT_CHAT_OPEN", u = Object(a.a)(d), h = "REDDIT_CHAT_OPEN_DM", m = Object(a.a)(h), b = "REDDIT_CHAT_SET_ROOMS_COUNT", p = Object(a.a)(b), f = "REDDIT_CHAT_SET_NOTIFICATIONS_COUNT", g = Object(a.a)(f)
 		},
 		"./src/chat/actions/renameGroupChat/index.ts": function(e, t, n) {
@@ -18160,7 +18160,7 @@
 				r = n("./src/reddit/helpers/localStorage/index.ts");
 
 			function o(e) {
-				return !!u(e) && (!h(e) || (null === e.redditChat.active ? Object(r.w)() : e.redditChat.active))
+				return !!u(e) && (!h(e) || (null === e.redditChat.active ? Object(r.x)() : e.redditChat.active))
 			}
 
 			function i(e) {
@@ -20062,4 +20062,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.ba79999d55e69bfeedd6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.cb1529ea5249907ecab4.js.map

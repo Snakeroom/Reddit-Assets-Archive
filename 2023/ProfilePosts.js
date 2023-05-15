@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.a80c622c7d271b019aea.js
-// Retrieved at 5/15/2023, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.17e66e61f579b5b9a7b8.js
+// Retrieved at 5/15/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -933,7 +933,7 @@
 						const e = {
 							includeIdentity: h,
 							includeModerated: v,
-							recentPostIds: Object(S.S)(null == b ? void 0 : b.id).reverse()
+							recentPostIds: Object(S.T)(null == b ? void 0 : b.id).reverse()
 						};
 						x = await ((e, t) => Object(d.a)(e, {
 							...u,
@@ -1569,4 +1569,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.a80c622c7d271b019aea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.17e66e61f579b5b9a7b8.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.3df5344262f2f04e6df8.js
-// Retrieved at 5/15/2023, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.90ece704b9d373821547.js
+// Retrieved at 5/15/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, s) {
@@ -1088,10 +1088,10 @@
 						E && C(Object(p.w)(t))
 					}, [E, C, t]);
 					const g = Object(r.useCallback)(() => {
-							Object(m.mb)(), C(Object(p.a)(t))
+							Object(m.nb)(), C(Object(p.a)(t))
 						}, [C, t]),
 						j = Object(r.useCallback)(e => {
-							e.stopPropagation(), Object(m.mb)(), C(Object(p.c)(t))
+							e.stopPropagation(), Object(m.nb)(), C(Object(p.c)(t))
 						}, [C, t]);
 					return E ? i.a.createElement("div", {
 						className: Object(c.a)(f.a.root, {
@@ -1518,23 +1518,24 @@
 					}, P)))
 				};
 			var _ = s("./src/reddit/constants/componentTestIds.ts"),
-				E = s("./src/reddit/helpers/path/index.ts"),
-				g = s("./src/reddit/hooks/useClickSourceData.ts"),
-				j = s("./src/reddit/selectors/chatPost.ts"),
-				k = s("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
-				I = s("./src/reddit/selectors/experiments/postSeo.ts"),
-				w = s("./src/reddit/selectors/posts.ts"),
-				P = s("./src/reddit/selectors/user.ts"),
-				y = s("./src/higherOrderComponents/withAdClickLocation/Locations.ts");
-			const T = Object(r.b)(() => Object(a.c)({
-				isChatPost: j.d,
-				isPostSEOEligible: I.e,
-				postPermalink: w.E,
-				shouldOpenPostInNewTab: P.lb,
-				isBlockingInterstitialEnabled: k.b,
-				isBlockingInterstitialV2Enabled: k.c
+				E = s("./src/reddit/helpers/localStorage/index.ts"),
+				g = s("./src/reddit/helpers/path/index.ts"),
+				j = s("./src/reddit/hooks/useClickSourceData.ts"),
+				k = s("./src/reddit/selectors/chatPost.ts"),
+				I = s("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
+				w = s("./src/reddit/selectors/experiments/postSeo.ts"),
+				P = s("./src/reddit/selectors/posts.ts"),
+				y = s("./src/reddit/selectors/user.ts"),
+				T = s("./src/higherOrderComponents/withAdClickLocation/Locations.ts");
+			const S = Object(r.b)(() => Object(a.c)({
+				isChatPost: k.d,
+				isPostSEOEligible: w.e,
+				postPermalink: P.E,
+				shouldOpenPostInNewTab: y.lb,
+				isBlockingInterstitialEnabled: I.b,
+				isBlockingInterstitialV2Enabled: I.c
 			}));
-			t.a = T(e => {
+			t.a = S(e => {
 				let {
 					className: t,
 					hasModPostPerms: s,
@@ -1548,49 +1549,51 @@
 					numComments: x,
 					onClick: f,
 					postPermalink: O,
-					shouldOpenPostInNewTab: j,
-					shouldShowIcon: k = !0,
-					shouldShowText: I = !0,
-					text: w,
-					type: P,
-					postId: T,
-					isCommentCountAnimation: S,
-					isCountAnimShadowTestEnabled: N,
-					isBlockingInterstitialEnabled: M,
-					isBlockingInterstitialV2Enabled: F
+					shouldOpenPostInNewTab: k,
+					shouldShowIcon: I = !0,
+					shouldShowText: w = !0,
+					text: P,
+					type: y,
+					postId: S,
+					isCommentCountAnimation: N,
+					isCountAnimShadowTestEnabled: M,
+					isBlockingInterstitialEnabled: F,
+					isBlockingInterstitialV2Enabled: R,
+					isSponsored: A,
+					impressionId: L
 				} = e;
-				const R = Object(r.d)(),
-					A = p && !m && !b,
-					L = m && !u,
-					B = Object(g.a)(),
-					D = n.a.createElement(C, {
+				const B = Object(r.d)(),
+					D = p && !m && !b,
+					U = m && !u,
+					W = Object(j.a)(),
+					V = n.a.createElement(C, {
 						hasModPostPerms: s,
-						isCountAnimShadowTestEnabled: !!N,
+						isCountAnimShadowTestEnabled: !!M,
 						isChatPost: a,
-						isCommentCountAnimation: !!S,
+						isCommentCountAnimation: !!N,
 						modModeEnabled: h,
 						numComments: x,
-						postId: T,
-						shouldShowIcon: k,
-						shouldShowText: I,
-						text: w,
-						type: P
+						postId: S,
+						shouldShowIcon: I,
+						shouldShowText: w,
+						text: P,
+						type: y
 					});
-				return A ? n.a.createElement("div", {
+				return D ? n.a.createElement("div", {
 					className: Object(c.a)(v.a.commentsLink, v.a.defaultCursorWrapper, t),
 					onClick: f
-				}, D) : n.a.createElement(i.a, {
+				}, V) : n.a.createElement(i.a, {
 					rel: "nofollow",
 					"data-click-id": "comments",
-					"data-adclicklocation": y.b.COMMENTS,
+					"data-adclicklocation": T.b.COMMENTS,
 					"data-test-id": _.a,
 					className: Object(c.a)(v.a.commentsLink, v.a.link, t),
-					target: o || j ? "_blank" : void 0,
-					to: L ? Object(E.b)(O) : Object(d.a)(O, !0, B),
+					target: o || k ? "_blank" : void 0,
+					to: U ? Object(g.b)(O) : Object(d.a)(O, !0, W),
 					onClick: e => {
-						(M || F) && (e.preventDefault(), R(Object(l.X)(Object(E.b)(O), T))), f && f()
+						A && L && O.includes("impressionid") && Object(E.Db)(L, S), (F || R) && (e.preventDefault(), B(Object(l.X)(Object(g.b)(O), S))), f && f()
 					}
-				}, D)
+				}, V)
 			})
 		},
 		"./src/reddit/components/ContentTooltip/index.m.less": function(e, t, s) {
@@ -2365,7 +2368,9 @@
 						modModeEnabled: J,
 						numComments: de.numComments,
 						isCommentCountAnimation: je,
-						isCountAnimShadowTestEnabled: M
+						isCountAnimShadowTestEnabled: M,
+						isSponsored: de.isSponsored,
+						impressionId: de.impressionId
 					}), ot && r.a.createElement(r.a.Fragment, null, r.a.createElement(W.a, {
 						displayText: o.fbt._("Award", null, {
 							hk: "2fZCpE"
@@ -6701,4 +6706,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.3df5344262f2f04e6df8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.90ece704b9d373821547.js.map
