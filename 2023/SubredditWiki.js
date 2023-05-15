@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.d5827508d4fb19a17694.js
-// Retrieved at 5/11/2023, 11:50:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.8c078fe7099dce9c765d.js
+// Retrieved at 5/15/2023, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -7178,7 +7178,7 @@
 						} = t;
 						return Object(vt.c)(e, n)
 					},
-					isInNewModuleNCPV3Experiment: e => Object(Ct.a)(e) === gt.Ve.NewModule,
+					isInNewModuleNCPV3Experiment: e => Object(Ct.a)(e) === gt.We.NewModule,
 					showCommunityChat: Et.d,
 					showGovernance: ft.d.spPoints,
 					showLeaderboard: ft.d.spLeaderboard,
@@ -10038,7 +10038,7 @@
 					wikiPage: C.c,
 					isInShredditAutomodInsightsExperiment: e => (e => Object(L.c)(e, {
 						experimentEligibilitySelector: D.S,
-						experimentName: R.Df
+						experimentName: R.Ef
 					}) === R.Td)(e)
 				}),
 				F = Object(o.b)(M, e => ({
@@ -11599,4 +11599,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.d5827508d4fb19a17694.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.8c078fe7099dce9c765d.js.map

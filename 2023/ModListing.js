@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.03c4f24d7435896a7942.js
-// Retrieved at 5/11/2023, 11:50:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.952400027e25515db78f.js
+// Retrieved at 5/15/2023, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, n) {
@@ -305,7 +305,7 @@
 			n.d(t, "a", (function() {
 				return C
 			})), n.d(t, "b", (function() {
-				return N
+				return M
 			}));
 			var r, s = n("./src/lib/makeActionCreator/index.ts"),
 				i = n("./src/lib/performanceTimings/index.tsx"),
@@ -467,7 +467,7 @@
 						r = t && t.type;
 					return !!(n && !L(e) && r === c.GEO && n[0] && n[0].recommendedSubreddit && n[0].interactedSubreddit)
 				},
-				N = () => async (e, t, n) => {
+				M = () => async (e, t, n) => {
 					var r, s;
 					const o = t(),
 						a = (e => e.focusedVerticals.lastLoadedEnv)(o);
@@ -490,7 +490,7 @@
 		"./src/reddit/actions/pages/modListing/index.ts": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "modListingDataPending", (function() {
-				return M
+				return N
 			})), n.d(t, "modListingDataLoaded", (function() {
 				return T
 			})), n.d(t, "modListingDataFailed", (function() {
@@ -520,9 +520,9 @@
 			})), n.d(t, "toggleHiddenSubreddit", (function() {
 				return Q
 			})), n.d(t, "hideSubreddit", (function() {
-				return Y
-			})), n.d(t, "unhideSubreddit", (function() {
 				return W
+			})), n.d(t, "unhideSubreddit", (function() {
+				return Y
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/lodash/pick.js"),
@@ -564,14 +564,14 @@
 				k = n("./src/reddit/models/Toast/index.ts"),
 				L = n("./src/reddit/routes/modListing/index.ts"),
 				P = n("./src/reddit/selectors/user.ts"),
-				N = n("./src/reddit/actions/pages/modListing/constants.ts");
-			const M = Object(a.a)(N.f),
-				T = Object(a.a)(N.e),
-				w = Object(a.a)(N.d),
+				M = n("./src/reddit/actions/pages/modListing/constants.ts");
+			const N = Object(a.a)(M.f),
+				T = Object(a.a)(M.e),
+				w = Object(a.a)(M.d),
 				F = (e, t) => async (n, s, i) => {
 					const o = s();
 					if (o.listings.postOrder.api.pending[e]) return;
-					n(M({
+					n(N({
 						key: e
 					}));
 					const a = await Object(C.a)("modListing", () => x(i.apiContext(), t)),
@@ -617,7 +617,7 @@
 							hk: "3RYtBz"
 						})
 					})), Object(I.g)(s(), !0)
-				}, B = Object(a.a)(N.i), V = Object(a.a)(N.h), A = Object(a.a)(N.g), H = e => async (t, n, r) => {
+				}, B = Object(a.a)(M.i), V = Object(a.a)(M.h), A = Object(a.a)(M.g), H = e => async (t, n, r) => {
 					let {
 						apiContext: s
 					} = r;
@@ -667,12 +667,12 @@
 				const t = m.J in e && e[m.J].toUpperCase() || "";
 				return t in o.pc && o.pc[t]
 			}
-			const q = Object(a.a)(N.c),
-				K = Object(a.a)(N.b),
-				G = Object(a.a)(N.a),
-				U = Object(a.a)(N.l),
-				J = Object(a.a)(N.k),
-				X = Object(a.a)(N.j),
+			const q = Object(a.a)(M.c),
+				K = Object(a.a)(M.b),
+				G = Object(a.a)(M.a),
+				U = Object(a.a)(M.l),
+				J = Object(a.a)(M.k),
+				X = Object(a.a)(M.j),
 				Q = (e, t) => async (n, r, s) => {
 					let {
 						apiContext: i
@@ -688,7 +688,7 @@
 					n(d(e));
 					const p = await u(i(), a.displayText, e);
 					p.ok ? (await n(R(m.routeMatch.match, !0)), n(c(e))) : n(l(p.body))
-				}, Y = e => Q(e, !0), W = e => Q(e, !1)
+				}, W = e => Q(e, !0), Y = e => Q(e, !1)
 		},
 		"./src/reddit/actions/postList.ts": function(e, t, n) {
 			"use strict";
@@ -1424,14 +1424,14 @@
 					} = r;
 					return Object(h.n)(e, t, "post", s, i, o, void 0)
 				},
-				N = Object(r.b)(I, k, (e, t, n) => ({
+				M = Object(r.b)(I, k, (e, t, n) => ({
 					...e,
 					...t,
 					...n,
 					postComponentForLayout: L,
 					postClickEventFactory: P
 				}));
-			t.a = e => Object(m.c)(j(N(e)))
+			t.a = e => Object(m.c)(j(M(e)))
 		},
 		"./src/reddit/connectors/connectClickToToggleEditor.ts": function(e, t, n) {
 			"use strict";
@@ -2026,10 +2026,10 @@
 					navBar: k,
 					redditStyle: L,
 					sidebar: P,
-					sidebars: N,
-					trendingUnit: M,
+					sidebars: M,
+					trendingUnit: N,
 					subredditId: T
-				} = e, w = M ? "28px" : "0", F = C ? {
+				} = e, w = N ? "28px" : "0", F = C ? {
 					marginRight: `${d.p}px`,
 					marginTop: w
 				} : {
@@ -2049,7 +2049,7 @@
 					subredditName: n
 				}), b);
 				let V;
-				V = N ? s.a.createElement(s.a.Fragment, null, N[0], B, N[1]) : C ? s.a.createElement(s.a.Fragment, null, R, B) : s.a.createElement(s.a.Fragment, null, B, R);
+				V = M ? s.a.createElement(s.a.Fragment, null, M[0], B, M[1]) : C ? s.a.createElement(s.a.Fragment, null, R, B) : s.a.createElement(s.a.Fragment, null, B, R);
 				const A = y ? `${I||l.a+2*d.l}px` : "100%",
 					H = Object(r.useContext)(u.a);
 				return s.a.createElement(v.a, {
@@ -2069,7 +2069,7 @@
 					style: {
 						maxWidth: A
 					}
-				}, M), s.a.createElement("div", {
+				}, N), s.a.createElement("div", {
 					className: E.a.body,
 					style: {
 						maxWidth: A
@@ -2121,7 +2121,7 @@
 				L = n.n(k);
 			const {
 				fbt: P
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), N = Object(_.a)(e => o.a.createElement(v.e, {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), M = Object(_.a)(e => o.a.createElement(v.e, {
 				className: L.a.modalBody
 			}, o.a.createElement(v.i, null, o.a.createElement(j.a, null, o.a.createElement(v.q, {
 				className: L.a.modalTitle
@@ -2140,7 +2140,7 @@
 			})), o.a.createElement(O.b, {
 				isSidebar: !1,
 				subredditsOrProfilesIds: e.moderatedCommunitiesIds
-			})))), M = e => o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
+			})))), N = e => o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
 				className: L.a.feedDetailsTitle
 			}, o.a.createElement(S.a, {
 				className: L.a.modIcon
@@ -2171,10 +2171,10 @@
 						moderatedCommunitiesIds: n,
 						toggleModal: r
 					} = e;
-					return n ? o.a.createElement(o.a.Fragment, null, o.a.createElement(M, {
+					return n ? o.a.createElement(o.a.Fragment, null, o.a.createElement(N, {
 						moderatedCommunitiesIds: n,
 						onSeeMoreDetails: r
-					}), t && o.a.createElement(N, {
+					}), t && o.a.createElement(M, {
 						moderatedCommunitiesIds: n,
 						onCloseModal: r,
 						onOverlayClick: r,
@@ -2243,14 +2243,14 @@
 			var Q = Object(a.b)(J, e => ({
 					hide: t => e(Object(m.hideSubreddit)(t))
 				}))(Object(R.c)(X)),
-				Y = n("./src/lib/lessComponent.tsx"),
-				W = n("./src/reddit/components/SubredditIcon/index.tsx"),
+				W = n("./src/lib/lessComponent.tsx"),
+				Y = n("./src/reddit/components/SubredditIcon/index.tsx"),
 				z = n("./src/reddit/icons/fonts/Clear/index.tsx"),
 				Z = n("./src/reddit/selectors/profile.ts"),
 				$ = n("./src/reddit/selectors/subreddit.ts"),
 				ee = n("./src/reddit/components/ModListingSidebar/HideCommunities/SubredditsList/SubredditsListRow/index.m.less"),
 				te = n.n(ee);
-			const ne = Y.a.wrapped(W.b, "SubredditIcon", te.a),
+			const ne = W.a.wrapped(Y.b, "SubredditIcon", te.a),
 				re = Object(d.c)({
 					isApiPending: D,
 					subredditOrProfile: (e, t) => {
@@ -2492,7 +2492,7 @@
 				const p = Object(o.e)(e => e.subreddits.survey[n]),
 					b = Object(o.e)(e => e.subreddits.progressModule[n]),
 					h = Object(o.e)(u.a),
-					g = h !== c.Ve.NewModule;
+					g = h !== c.We.NewModule;
 				return (null === (s = null == b ? void 0 : b.cards) || void 0 === s ? void 0 : s.length) > 0 && g ? i.a.createElement(m, {
 					closeModuleOnMount: !!t && t !== l.g.Large,
 					subredditId: n,
@@ -2520,7 +2520,7 @@
 						experimentEligibilitySelector: i.S,
 						experimentName: r.Cd
 					});
-					return !(!t || Object(r.tg)(t))
+					return !(!t || Object(r.ug)(t))
 				},
 				a = e => {
 					return Object(s.c)(e, {
@@ -2537,9 +2537,9 @@
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = e => Object(s.c)(e, {
-				experimentName: r.Le,
+				experimentName: r.Me,
 				experimentEligibilitySelector: s.a
-			}) === r.Ue.Enabled
+			}) === r.Ve.Enabled
 		},
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, n) {
 			"use strict";
@@ -2602,4 +2602,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.03c4f24d7435896a7942.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.952400027e25515db78f.js.map

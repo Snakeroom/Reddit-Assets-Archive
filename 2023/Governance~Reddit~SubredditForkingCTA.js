@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.0f96e5053bf199cbf909.js
-// Retrieved at 5/11/2023, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.a03a8380ba10d941939e.js
+// Retrieved at 5/15/2023, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~SubredditForkingCTA"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(t, e, r) {
@@ -863,8 +863,8 @@
 				F = Object(n.a)(w.db),
 				V = Object(n.a)(w.J),
 				B = Object(n.a)(w.a),
-				$ = Object(n.a)(w.F),
-				W = t => `/r/${t}/about/${D.s}`,
+				W = Object(n.a)(w.F),
+				$ = t => `/r/${t}/about/${D.s}`,
 				z = (t, e) => {
 					const r = t || {
 							duration: s.E,
@@ -910,7 +910,7 @@
 						pending: a
 					} = o.creations.api.post.submit, u = Object(x.g)(o);
 					if (a || u) return;
-					r($(t)), o = n();
+					r(W(t)), o = n();
 					const l = Object(k.a)(o),
 						b = _.d.rteVideoPoster(o),
 						f = H(o),
@@ -946,7 +946,7 @@
 					}, E = await Object(y.a)(n(), g);
 					if (E.ok) return e(Object(u.e)({
 						subredditId: c.id
-					})), void e(Object(l.a)(W(c.name), !1));
+					})), void e(Object(l.a)($(c.name), !1));
 					const P = E.error;
 					e(G(P))
 				}, J = t => async (e, r, s) => {
@@ -980,7 +980,7 @@
 							subredditId: c.id
 						}));
 						const t = _.body.data.createScheduledPost.scheduledPost;
-						return t && Object(d.a)(Object(S.o)(Object(g.d)(t))(i)), void e(Object(l.a)(W(c.name), !1))
+						return t && Object(d.a)(Object(S.o)(Object(g.d)(t))(i)), void e(Object(l.a)($(c.name), !1))
 					}
 					const j = _.error;
 					e(G(j))
@@ -1470,7 +1470,7 @@
 								postFieldValidationPending: Promise.resolve()
 							})), Object(l.b)(D)
 						}
-						await e(Object(s.b)(`${r.path}`)), p ? p === b.Ve.NewModule && e(Object(c.h)({
+						await e(Object(s.b)(`${r.path}`)), p ? p === b.We.NewModule && e(Object(c.h)({
 							tooltipId: u.MOD_WELCOME_TOOLTIP_ID
 						})) : (e(Object(o.h)(f.a.POST_FLOW_UPSELL_MODAL_ID)), Object(k.a)(Object(E.g)()(T))), Object(j.b)(j.a.SubredditCreation), e(Object(x.f)(d, null !== (g = Object(C.db)(T)) && void 0 !== g ? g : Object(P.k)(T)))
 					} else w.error && Object(k.a)(Object(E.h)(w.error.type, A)(T)), e(U({
@@ -2955,4 +2955,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.0f96e5053bf199cbf909.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.a03a8380ba10d941939e.js.map

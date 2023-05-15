@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.84bf2531bb2374fb5408.js
-// Retrieved at 5/11/2023, 11:50:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.c332d74488627f595211.js
+// Retrieved at 5/15/2023, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -1915,7 +1915,7 @@
 							post: s,
 							isOverlay: n
 						} = t;
-						return !Object(T.s)(s) && !n && Object(F.a)(e) === I.Ve.NewModule
+						return !Object(T.s)(s) && !n && Object(F.a)(e) === I.We.NewModule
 					},
 					isLoggedIn: M.S,
 					postSEOV2IdCardVariant: A.h,
@@ -4805,14 +4805,14 @@
 			const Ue = e => {
 					return Object(De.c)(e, {
 						experimentEligibilitySelector: De.a,
-						experimentName: Me.hg
+						experimentName: Me.ig
 					}) === Me.Td
 				},
 				He = e => {
 					if (Object(We.a)(e)) return !1;
 					return Object(De.c)(e, {
 						experimentEligibilitySelector: De.a,
-						experimentName: Me.gg
+						experimentName: Me.hg
 					}) === Me.Td
 				},
 				Ve = (e, t) => {
@@ -4824,7 +4824,7 @@
 					});
 					return !(Object(We.a)(e) || !n || n.isSponsored) && Object(De.c)(e, {
 						experimentEligibilitySelector: De.a,
-						experimentName: Me.fg
+						experimentName: Me.gg
 					}) === Me.Td
 				};
 			var ze = s("./src/reddit/selectors/experiments/typingIndicators.ts"),
@@ -6197,7 +6197,7 @@
 							canonicalUrl: n.canonical_url,
 							baseUrl: n.base_url,
 							hostPostId: t,
-							shouldShowLinkedPosts: !Object(f.tg)(s) && !Object(I.a)(s),
+							shouldShowLinkedPosts: !Object(f.ug)(s) && !Object(I.a)(s),
 							subreddit: r
 						}
 					}
@@ -6260,7 +6260,7 @@
 						hostPostData: d,
 						listingBelowVariant: c
 					} = e;
-					if (c && !Object(f.tg)(c) && !Object(I.a)(c) && !i) return a.a.createElement("div", {
+					if (c && !Object(f.ug)(c) && !Object(I.a)(c) && !i) return a.a.createElement("div", {
 						className: K.a.smallBanner
 					});
 					const {
@@ -6271,7 +6271,7 @@
 						hk: "2g363L"
 					}) : Object(I.b)(c) ? n.fbt._("More posts like this", null, {
 						hk: "Maj0v"
-					}) : t === f.Re.DeRecs ? n.fbt._("Popular Posts Near You", null, {
+					}) : t === f.Se.DeRecs ? n.fbt._("Popular Posts Near You", null, {
 						hk: "22vlW0"
 					}) : n.fbt._("More posts you may like", null, {
 						hk: "33WdfT"
@@ -11214,8 +11214,8 @@
 				o = s("./src/reddit/selectors/meta.ts");
 			const i = e => Object(r.c)(e, {
 				experimentEligibilitySelector: e => !Object(o.d)(e) && "US" === Object(o.b)(e),
-				experimentName: n.tf
-			}) === n.yf.Enabled
+				experimentName: n.uf
+			}) === n.zf.Enabled
 		},
 		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, s) {
 			"use strict";
@@ -11271,13 +11271,13 @@
 			const i = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: n.Kf
+						experimentName: n.Lf
 					}) === n.Td
 				},
 				a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.e,
-						experimentName: n.Jf
+						experimentName: n.Kf
 					}) === n.Td
 				}
 		},
@@ -11300,29 +11300,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.e,
-						experimentName: n.jg
+						experimentName: n.kg
 					}) === n.Td
 				},
 				d = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.e,
-						experimentName: n.kg
+						experimentName: n.lg
 					}) === n.Td
 				},
 				c = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: o.e,
-						experimentName: n.ig
+						experimentName: n.jg
 					});
-					return t === n.bg.TypingIndicators || t === n.bg.IndicatorsPlusCTA
+					return t === n.cg.TypingIndicators || t === n.cg.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(o.d)(e, {
-						experimentName: n.ig
+						experimentName: n.jg
 					});
-					return (null == t ? void 0 : t.variant) === n.bg.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === n.cg.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/isEligibleForCommentTruncation.ts": function(e, t, s) {
@@ -11386,4 +11386,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.84bf2531bb2374fb5408.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.c332d74488627f595211.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.53639745db65a499003a.js
-// Retrieved at 5/11/2023, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.bb64e5d6104f16d417c4.js
+// Retrieved at 5/15/2023, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit~StandalonePostPage", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -38778,9 +38778,9 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const s = e => Object(r.c)(e, {
-				experimentName: o.Le,
+				experimentName: o.Me,
 				experimentEligibilitySelector: r.a
-			}) === o.Ue.Enabled
+			}) === o.Ve.Enabled
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
 			"use strict";
@@ -38792,7 +38792,7 @@
 			const s = e => {
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: o.hf
+					experimentName: o.if
 				}) === o.Td
 			}
 		},
@@ -38815,29 +38815,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.jg
+						experimentName: o.kg
 					}) === o.Td
 				},
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.kg
+						experimentName: o.lg
 					}) === o.Td
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.ig
+						experimentName: o.jg
 					});
-					return t === o.bg.TypingIndicators || t === o.bg.IndicatorsPlusCTA
+					return t === o.cg.TypingIndicators || t === o.cg.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.d)(e, {
-						experimentName: o.ig
+						experimentName: o.jg
 					});
-					return (null == t ? void 0 : t.variant) === o.bg.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.cg.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/experiments/uxtsIntegration.ts": function(e, t, n) {
@@ -39556,4 +39556,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.53639745db65a499003a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.bb64e5d6104f16d417c4.js.map
