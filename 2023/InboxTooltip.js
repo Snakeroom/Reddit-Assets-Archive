@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxTooltip.ae463042f20155026e5b.js
-// Retrieved at 5/15/2023, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxTooltip.4c6063740988506e288b.js
+// Retrieved at 5/16/2023, 5:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxTooltip", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -69,9 +69,9 @@
 			})), i.d(t, "unsubscribeFromPNs", (function() {
 				return L
 			})), i.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
-				return T
-			})), i.d(t, "subscribeToPermissionsChange", (function() {
 				return U
+			})), i.d(t, "subscribeToPermissionsChange", (function() {
+				return T
 			}));
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
 				s = i("./node_modules/lodash/omit.js"),
@@ -98,14 +98,14 @@
 				w = i("./src/reddit/selectors/user.ts");
 			const y = e => Object(N.c)(e, {
 				experimentEligibilitySelector: w.S,
-				experimentName: k.Fb
-			}) === k.Td;
+				experimentName: k.Eb
+			}) === k.Sd;
 			var _ = i("./src/reddit/selectors/experiments/delayDnPermission.ts"),
 				I = i("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts");
 			const E = e => Object(N.c)(e, {
-				experimentName: k.gc,
+				experimentName: k.fc,
 				experimentEligibilitySelector: N.a
-			}) === k.Td;
+			}) === k.Sd;
 			var F = i("./src/reddit/selectors/meta.ts");
 			let P = !1;
 			const B = async (e, t) => {
@@ -191,7 +191,7 @@
 						})))
 					}
 				} catch (s) {}
-			}, T = e => async (t, i) => {
+			}, U = e => async (t, i) => {
 				const n = i();
 				if (Object(f.a)(n) === d.d.NotificationsSupported) switch (Object(a.a)()) {
 					case d.a.Default:
@@ -201,7 +201,7 @@
 					case d.a.Denied:
 						t(Object(b.h)(e))
 				}
-			}, U = () => async (e, t) => {
+			}, T = () => async (e, t) => {
 				var i;
 				if (!(null === (i = null === navigator || void 0 === navigator ? void 0 : navigator.permissions) || void 0 === i ? void 0 : i.query)) return;
 				const n = t();
@@ -620,4 +620,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.ae463042f20155026e5b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.4c6063740988506e288b.js.map

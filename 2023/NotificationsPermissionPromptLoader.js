@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsPermissionPromptLoader.60585d9f06338e582bb9.js
-// Retrieved at 5/15/2023, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsPermissionPromptLoader.ccce585d73412d245428.js
+// Retrieved at 5/16/2023, 5:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsPermissionPromptLoader", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -95,21 +95,21 @@
 				y = i("./src/reddit/selectors/activeModalId.ts"),
 				k = i("./src/reddit/constants/experiments.ts"),
 				x = i("./src/reddit/helpers/chooseVariant/index.ts"),
-				w = i("./src/reddit/selectors/user.ts");
-			const N = e => Object(x.c)(e, {
-				experimentEligibilitySelector: w.S,
-				experimentName: k.Fb
-			}) === k.Td;
-			var S = i("./src/reddit/selectors/experiments/delayDnPermission.ts"),
+				S = i("./src/reddit/selectors/user.ts");
+			const w = e => Object(x.c)(e, {
+				experimentEligibilitySelector: S.S,
+				experimentName: k.Eb
+			}) === k.Sd;
+			var N = i("./src/reddit/selectors/experiments/delayDnPermission.ts"),
 				P = i("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts");
 			const F = e => Object(x.c)(e, {
-				experimentName: k.gc,
+				experimentName: k.fc,
 				experimentEligibilitySelector: x.a
-			}) === k.Td;
+			}) === k.Sd;
 			var q = i("./src/reddit/selectors/meta.ts");
 			let C = !1;
 			const E = async (e, t) => {
-				const i = Object(w.R)(e);
+				const i = Object(S.R)(e);
 				if (C) return;
 				if (C = !0, Object(b.a)(e) !== d.d.NotificationsSupported) return;
 				await Object(u.a)();
@@ -137,10 +137,10 @@
 						u = Object(q.f)(c),
 						l = F(c),
 						f = !!Object(y.a)(c),
-						b = Object(S.a)(c),
+						b = Object(N.a)(c),
 						p = Object(P.e)(c),
 						m = Object(j.c)(g.a.NSFW_BLOCKING_MODAL_V2)(c),
-						O = N(c);
+						O = w(c);
 					if (p || m) return;
 					if (await Object(r.a)() || u) return;
 					await E(c, n);
@@ -319,7 +319,7 @@
 			})), i.d(t, "h", (function() {
 				return x
 			})), i.d(t, "g", (function() {
-				return w
+				return S
 			}));
 			var n = i("./src/reddit/selectors/telemetry.ts"),
 				o = i("./src/telemetry/index.ts"),
@@ -453,7 +453,7 @@
 					noun: "desktop_notification_permissions",
 					source: "overlay"
 				}),
-				w = () => e => ({
+				S = () => e => ({
 					...n.o(e),
 					action: "auto_dismiss",
 					noun: "desktop_notification_permissions",
@@ -465,4 +465,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPermissionPromptLoader.60585d9f06338e582bb9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPermissionPromptLoader.ccce585d73412d245428.js.map

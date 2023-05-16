@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NsfwSearchModal.ef5a652afe1ba5aa5373.js
-// Retrieved at 5/15/2023, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NsfwSearchModal.02f9e8e0d7edbeb606da.js
+// Retrieved at 5/16/2023, 5:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NsfwSearchModal"], {
 		"./src/reddit/actions/search/safeSearch.ts": function(e, t, s) {
@@ -363,8 +363,8 @@
 					const t = Date.parse(e);
 					return Number.isNaN(t) ? (localStorage.removeItem(a.b.XpromoConsolidation), !0) : Date.now() > t + d
 				},
-				m = (e, t) => t === c.a.NoPreview && (e === o.nb.SkippableButtons || e === o.nb.SkippableText),
-				p = (e, t) => t === c.a.NoPreview && e === o.nb.NoUpsell,
+				m = (e, t) => t === c.a.NoPreview && (e === o.mb.SkippableButtons || e === o.mb.SkippableText),
+				p = (e, t) => t === c.a.NoPreview && e === o.mb.NoUpsell,
 				f = Object(l.a)(c.h, c.g, (e, t) => {
 					return {
 						isControlVariant: !(!e || !t) && ((e, t) => t === c.a.NoPreview && !m(e, t) && !p(e, t))(e, t),
@@ -377,4 +377,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwSearchModal.ef5a652afe1ba5aa5373.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwSearchModal.02f9e8e0d7edbeb606da.js.map

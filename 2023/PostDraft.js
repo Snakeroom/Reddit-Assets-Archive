@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.ef1c4786cb8a796c92d8.js
-// Retrieved at 5/15/2023, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.2158b77f27d9943904f9.js
+// Retrieved at 5/16/2023, 5:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -299,7 +299,7 @@
 			})), n.d(t, "a", (function() {
 				return H
 			})), n.d(t, "c", (function() {
-				return G
+				return q
 			})), n.d(t, "h", (function() {
 				return V
 			})), n.d(t, "f", (function() {
@@ -522,7 +522,7 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, Y = Object(i.a)(c.e), G = (e, t) => async (n, i, a) => {
+				}, Y = Object(i.a)(c.e), q = (e, t) => async (n, i, a) => {
 					let {
 						apiContext: c
 					} = a;
@@ -548,11 +548,11 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, q = Object(i.a)(c.r), K = Object(i.a)(c.n), U = Object(i.a)(c.s), V = (e, t) => async (n, s, r) => {
+				}, G = Object(i.a)(c.r), K = Object(i.a)(c.n), U = Object(i.a)(c.s), V = (e, t) => async (n, s, r) => {
 					let {
 						apiContext: i
 					} = r;
-					n(q());
+					n(G());
 					const a = await v(i(), e, t);
 					let c = !1;
 					if (a.ok) n(U({
@@ -1465,7 +1465,7 @@
 				const t = Object(r.f)().getState(),
 					n = Object(h.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === m.md.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.md.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.md.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === m.ld.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.ld.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.ld.LargeImagePreview ? e.reredditButtons : [];
 					return s.a.createElement(S, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -3116,7 +3116,7 @@
 				z = n("./src/reddit/pages/ErrorPages/index.tsx"),
 				H = n("./src/reddit/selectors/postDraft.ts");
 			const Y = Object(d.v)(),
-				G = Object(i.c)({
+				q = Object(i.c)({
 					draft: (e, t) => {
 						let {
 							match: n
@@ -3126,7 +3126,7 @@
 						})
 					}
 				}),
-				q = Object(r.b)(G);
+				G = Object(r.b)(q);
 			class K extends o.Component {
 				render() {
 					const {
@@ -3148,7 +3148,7 @@
 					})
 				}
 			}
-			t.default = Y(q(K))
+			t.default = Y(G(K))
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, n) {
 			"use strict";
@@ -3165,11 +3165,11 @@
 				c = n("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => Object(a.h)(e) && Object(r.f)(e),
-					experimentName: o.sc
+					experimentName: o.rc
 				}), i.a),
 				l = Object(c.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.h)(e) && Object(r.f)(e),
-					experimentName: o.rc
+					experimentName: o.qc
 				}), i.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -3182,4 +3182,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.ef1c4786cb8a796c92d8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.2158b77f27d9943904f9.js.map

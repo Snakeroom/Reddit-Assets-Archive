@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.e7d58055877fa5620a68.js
-// Retrieved at 5/15/2023, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.2266a07d8d2dbf840ee6.js
+// Retrieved at 5/16/2023, 5:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit"], {
 		"./src/reddit/actions/subreddit/muting.ts": function(e, t, n) {
@@ -750,7 +750,7 @@
 					dropdownIsOpen: (e, t) => Object(L.b)(t.dropdownId || A)(e),
 					isPopularPage: l.H
 				}),
-				K = Object(o.b)(Y, (e, t) => {
+				q = Object(o.b)(Y, (e, t) => {
 					let {
 						dropdownId: n,
 						pageLayer: s
@@ -761,7 +761,7 @@
 						}))
 					}
 				});
-			var q = R.a.wrapped(W(K(Object(c.c)(e => r.a.createElement("div", {
+			var K = R.a.wrapped(W(q(Object(c.c)(e => r.a.createElement("div", {
 					className: e.className,
 					onClick: e.onOpenDropdown
 				}, !1 !== e.showTitle && r.a.createElement(G, null, S.fbt._("Sort", null, {
@@ -1420,7 +1420,7 @@
 						sortOptions: o,
 						timeSort: i
 					} = this.props, d = !t && Re.has(s), c = Be.has(s), l = o.filter(e => !this.isOverflowSort(e)), u = o.filter(e => this.isOverflowSort(e) && e !== s);
-					return r.a.createElement(r.a.Fragment, null, r.a.createElement(q, Pe({}, this.props, {
+					return r.a.createElement(r.a.Fragment, null, r.a.createElement(K, Pe({}, this.props, {
 						buttonClassName: Ie.a.DropdownButton,
 						className: Object(a.a)(Ie.a.SortDropdown, e),
 						rowClassName: Ie.a.DropdownRow,
@@ -1439,7 +1439,7 @@
 						rowSelectedClassName: Ie.a.DropdownRowSelected,
 						timeSort: i || b.qc,
 						wrapperClassName: Ie.a.DropdownSortWrapper
-					}), u.length > 0 && r.a.createElement(q, Pe({}, this.props, {
+					}), u.length > 0 && r.a.createElement(K, Pe({}, this.props, {
 						className: Object(a.a)(Ie.a.SortOverflow, e),
 						dropdownClassName: Ie.a.Dropdown,
 						dropdownId: Ue,
@@ -1463,7 +1463,7 @@
 					isProfilePage: l.L,
 					pageLayer: e => e
 				}),
-				Ke = Object(o.b)(null, (e, t) => {
+				qe = Object(o.b)(null, (e, t) => {
 					let {
 						subredditId: n
 					} = t;
@@ -1479,7 +1479,7 @@
 						}
 					}
 				});
-			class qe extends r.a.Component {
+			class Ke extends r.a.Component {
 				constructor() {
 					super(...arguments), this.blurListingBroadcast = () => {
 						u.a.setState({
@@ -1525,7 +1525,7 @@
 					}))
 				}
 			}
-			t.a = Ye(Ke(Object(c.c)(qe)))
+			t.a = Ye(qe(Object(c.c)(Ke)))
 		},
 		"./src/reddit/components/ListingSort/ListingSortIcon.tsx": function(e, t, n) {
 			"use strict";
@@ -1904,7 +1904,7 @@
 				const t = Object(o.f)().getState(),
 					n = Object(f.a)(t, Object(i.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === m.md.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.md.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.md.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === m.ld.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.ld.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.ld.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(E, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -2622,6 +2622,20 @@
 					}
 				})
 		},
+		"./src/reddit/selectors/experiments/antievil/index.tsx": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return o
+			}));
+			var s = n("./src/reddit/constants/experiments.ts"),
+				r = n("./src/reddit/helpers/chooseVariant/index.ts");
+			const o = e => {
+				return Object(r.c)(e, {
+					experimentEligibilitySelector: r.a,
+					experimentName: s.M
+				}) === s.Sd
+			}
+		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -2637,11 +2651,11 @@
 				d = n("./node_modules/reselect/es/index.js");
 			const c = Object(d.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(i.h)(e) && Object(o.f)(e),
-					experimentName: s.sc
+					experimentName: s.rc
 				}), a.a),
 				l = Object(d.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(i.h)(e) && Object(o.f)(e),
-					experimentName: s.rc
+					experimentName: s.qc
 				}), a.a),
 				u = Object(d.a)(c, l, (e, t) => e || t),
 				m = Object(d.a)(c, l, (e, t) => !(!e && !t))
@@ -2678,4 +2692,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.e7d58055877fa5620a68.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.2266a07d8d2dbf840ee6.js.map

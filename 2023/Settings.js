@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.2a3bc55693e559145f97.js
-// Retrieved at 5/15/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.e2c61d00f8d8c19360db.js
+// Retrieved at 5/16/2023, 5:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -1608,7 +1608,7 @@
 				})())), await Promise.all(h); {
 					const e = n();
 					if (!Object(k.S)(e)) return Object(L.a)(t, e);
-					Object(B.b)(e) && t(Object(N.a)())
+					Object(B.a)(e) && t(Object(N.a)())
 				}
 				const {
 					page: g = a.kc.Account
@@ -8887,13 +8887,13 @@
 				oe = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const ae = Object(l.a)(e => Object(oe.c)(e, {
 				experimentEligibilitySelector: I.S,
-				experimentName: se.O
-			}), e => e === se.X.Enabled);
+				experimentName: se.N
+			}), e => e === se.W.Enabled);
 			var re = n("./src/reddit/selectors/meta.ts");
 			const ie = Object(l.a)(e => Object(oe.c)(e, {
-				experimentName: se.sb,
+				experimentName: se.rb,
 				experimentEligibilitySelector: oe.a
-			}), e => e !== se.Td);
+			}), e => e !== se.Sd);
 			var le = n("./src/reddit/components/Settings/AccountPrefsSection/index.m.less"),
 				ce = n.n(le);
 			const de = Object(l.c)({
@@ -10714,8 +10714,8 @@
 				oo = n("./src/reddit/selectors/experiments/antievil/index.tsx");
 			const ao = Object(l.a)(e => Object(oe.c)(e, {
 				experimentEligibilitySelector: I.S,
-				experimentName: se.L
-			}), e => e === se.U.Enabled);
+				experimentName: se.K
+			}), e => e === se.T.Enabled);
 			var ro = n("./src/lib/hooks/usePrevious.ts"),
 				io = n("./src/reddit/actions/subreddit/muting.ts"),
 				lo = n("./src/telemetry/models/Event.ts");
@@ -10735,7 +10735,7 @@
 					shouldShowCreatePasswordModal: N.d,
 					shouldShowBadCommentAutocollapse: ao,
 					badCommentAutocollapse: I.e,
-					isCommunityMutingEnabled: oo.b,
+					isCommunityMutingEnabled: oo.a,
 					mutedSubredditList: mo.t
 				}),
 				go = Object(r.b)(fo, (e, t) => ({
@@ -11964,9 +11964,9 @@
 					},
 					isDspEnabled: e => {
 						return Object(oe.c)(e, {
-							experimentName: se.ud,
+							experimentName: se.td,
 							experimentEligibilitySelector: oe.a
-						}) === se.Td
+						}) === se.Sd
 					}
 				}),
 				gr = Object(ve.v)(),
@@ -12505,9 +12505,9 @@
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/user.ts");
 			const r = e => Object(o.c)(e, {
-				experimentName: s.x,
+				experimentName: s.w,
 				experimentEligibilitySelector: () => Object(a.R)(e)
-			}) === s.Td
+			}) === s.Sd
 		},
 		"./src/reddit/selectors/gold/powerups/benefitSettings.ts": function(e, t, n) {
 			"use strict";
@@ -12745,4 +12745,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.2a3bc55693e559145f97.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.e2c61d00f8d8c19360db.js.map

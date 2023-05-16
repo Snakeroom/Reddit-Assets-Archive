@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.57db6b385d80fd1151c2.js
-// Retrieved at 5/15/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.400d3ea8fab779521a55.js
+// Retrieved at 5/16/2023, 5:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./src/reddit/components/FrontpageSidebar/index.tsx": function(e, t, n) {
@@ -186,8 +186,8 @@
 				A = n("./src/reddit/components/SidebarContainer/index.tsx"),
 				L = n("./src/reddit/components/SidebarStickyBottom/index.tsx"),
 				R = n("./node_modules/lodash/sampleSize.js"),
-				W = n.n(R),
-				B = n("./node_modules/request-idle-callback/index.js"),
+				B = n.n(R),
+				W = n("./node_modules/request-idle-callback/index.js"),
 				U = n("./src/lib/constants/index.ts"),
 				I = n("./src/reddit/components/SubredditIcon/index.tsx"),
 				D = n("./src/reddit/constants/localStorage.ts"),
@@ -204,9 +204,9 @@
 				type: "json"
 			});
 			var Z = n("./src/reddit/components/SubredditAdoptionWidget/index.m.less"),
-				z = n.n(Z);
+				V = n.n(Z);
 			const {
-				fbt: V
+				fbt: z
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), Y = 3, $ = 30 * U.qb, ee = "SubredditAdoption";
 			class te extends a.a.Component {
 				constructor() {
@@ -226,10 +226,10 @@
 					return te.cachedData = e, e ? e.subreddits : []
 				}
 				componentDidMount() {
-					Object(B.requestIdleCallback)(async () => {
+					Object(W.requestIdleCallback)(async () => {
 						const e = await this.getSubredditForAdoption();
 						this.setState({
-							subredditNames: W()(e, Y)
+							subredditNames: B()(e, Y)
 						})
 					})
 				}
@@ -238,23 +238,23 @@
 						subredditNames: e
 					} = this.state;
 					return e.length ? a.a.createElement("div", {
-						className: z.a.container
+						className: V.a.container
 					}, a.a.createElement("div", {
-						className: z.a.main
+						className: V.a.main
 					}, a.a.createElement("div", {
-						className: z.a.title
+						className: V.a.title
 					}, a.a.createElement(I.b, {
-						className: z.a.icon
-					}), V._("International Subreddit Adoption Week", null, {
+						className: V.a.icon
+					}), z._("International Subreddit Adoption Week", null, {
 						hk: "487Ffc"
 					})), a.a.createElement("div", {
-						className: z.a.description
-					}, V._("{subreddits list} and more are looking for moderators!", [V._param("subreddits list", a.a.createElement("strong", null, e.map(J.d).join(", ") + (e.length > 1 ? "," : "")))], {
+						className: V.a.description
+					}, z._("{subreddits list} and more are looking for moderators!", [z._param("subreddits list", a.a.createElement("strong", null, e.map(J.d).join(", ") + (e.length > 1 ? "," : "")))], {
 						hk: "2Tb946"
 					}))), a.a.createElement(b.n, {
-						className: z.a.button,
+						className: V.a.button,
 						to: `/r/${ee}?utm_source=reddit&utm_medium=fp_banner&utm_campaign=subreddit_adoption_week`
-					}, V._("Go Now", null, {
+					}, z._("Go Now", null, {
 						hk: "LCCmX"
 					}))) : null
 				}
@@ -608,18 +608,18 @@
 				}),
 				Le = n("./src/reddit/constants/experiments.ts"),
 				Re = n("./src/reddit/helpers/chooseVariant/index.ts"),
-				We = n("./src/reddit/selectors/user.ts");
-			var Be = n("./src/reddit/selectors/seo/linksModule.ts"),
+				Be = n("./src/reddit/selectors/user.ts");
+			var We = n("./src/reddit/selectors/seo/linksModule.ts"),
 				Ue = n("./src/reddit/helpers/createBannerProperties/index.ts");
 			const Ie = Object(o.c)({
-					isLoggedIn: We.R,
-					currentUser: We.m,
-					frontpageLinks: Be.b,
+					isLoggedIn: Be.R,
+					currentUser: Be.m,
+					frontpageLinks: We.b,
 					shouldShowTopicsWidget: e => (function(e) {
 						return Object(Re.c)(e, {
-							experimentEligibilitySelector: We.S,
-							experimentName: Le.Wc
-						}) === Le.Td
+							experimentEligibilitySelector: Be.S,
+							experimentName: Le.Vc
+						}) === Le.Sd
 					})(e),
 					isNavbarLikeMwebEnabled: i.a
 				}),
@@ -915,4 +915,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.57db6b385d80fd1151c2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.400d3ea8fab779521a55.js.map

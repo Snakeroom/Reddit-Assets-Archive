@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ShowcaseCollectionViewModal.aac53838e9eba0087258.js
-// Retrieved at 5/15/2023, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ShowcaseCollectionViewModal.762aca42eed211362e97.js
+// Retrieved at 5/16/2023, 5:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ShowcaseCollectionViewModal"], {
 		"./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx": function(e, t, r) {
@@ -135,12 +135,12 @@
 							userName: v || ""
 						}) || {},
 						w = Object(h.j)(y, g.profileId),
-						T = Object(n.l)(g.snoovatarFullBodyAsset || "");
+						C = Object(n.l)(g.snoovatarFullBodyAsset || "");
 					return a.a.createElement(m.a, null, a.a.createElement(n.k, {
 						telemetryReason: A || "",
 						ownerId: g.id || "",
 						ownerSnoovatarImage: g.snoovatarFullBodyAsset || "",
-						ownerProfileItemId: T || "",
+						ownerProfileItemId: C || "",
 						ownerProfileTitle: w.title || "",
 						ownerDisplayName: g.displayName || "",
 						onClose: t,
@@ -391,10 +391,10 @@
 			const c = e => {
 					return !(Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.Ce
-					}) === n.Td)
+						experimentName: n.Be
+					}) === n.Sd)
 				},
-				i = Object(o.a)(n.De)
+				i = Object(o.a)(n.Ce)
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, r) {
 			"use strict";
@@ -403,9 +403,9 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const o = Object(s.a)(n.Dd)
+			const o = Object(s.a)(n.Cd)
 		},
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ShowcaseCollectionViewModal.aac53838e9eba0087258.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ShowcaseCollectionViewModal.762aca42eed211362e97.js.map

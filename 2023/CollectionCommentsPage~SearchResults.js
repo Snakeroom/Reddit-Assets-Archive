@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.50e720616a722cb6db78.js
-// Retrieved at 5/15/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.9f7948579449517627f0.js
+// Retrieved at 5/16/2023, 5:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -658,8 +658,8 @@
 						} = Object(Y.a)(e, r);
 					return (!o || o === l.w.CONFIDENCE) && Object(ne.c)(e, {
 						experimentEligibilitySelector: () => Object(pe.R)(e),
-						experimentName: m.q
-					}) === m.w.Enabled
+						experimentName: m.p
+					}) === m.v.Enabled
 				};
 			var et = s("./src/reddit/selectors/chatPost.ts"),
 				tt = s("./src/reddit/selectors/seo/index.ts"),
@@ -798,9 +798,9 @@
 							r = Object(ue.Q)(s(), {
 								identifier: T.belongsTo
 							});
-						if (r && (e => m.yf.Redirect === Object(ne.b)(e, {
+						if (r && (e => m.xf.Redirect === Object(ne.b)(e, {
 								experimentEligibilitySelector: ce,
-								experimentName: m.sf
+								experimentName: m.rf
 							}))(s())) return void t(Object(o.c)(r.url));
 						if (T.belongsTo.type !== q.a.SUBREDDIT || T.isSponsored) {
 							if (T.belongsTo.type === q.a.PROFILE) {
@@ -5667,7 +5667,7 @@
 				const t = Object(o.f)().getState(),
 					s = Object(g.a)(t, Object(i.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.md.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.md.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.md.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.ld.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.ld.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.ld.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(I, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -8346,8 +8346,8 @@
 			const on = e => {
 				return Object(rn.c)(e, {
 					experimentEligibilitySelector: rn.a,
-					experimentName: nn.K
-				}) === nn.Td
+					experimentName: nn.J
+				}) === nn.Sd
 			};
 			var an = s("./src/reddit/selectors/searchQueryId.ts"),
 				cn = s("./node_modules/lodash/isEmpty.js"),
@@ -8409,16 +8409,16 @@
 				En = s("./src/reddit/constants/nsfwBanner.ts"),
 				Sn = s("./src/reddit/helpers/installGoodVisitFeedSearchTracker/index.ts"),
 				kn = s("./src/reddit/selectors/experiments/search/searchSingleVariant.ts");
-			const _n = e => Object(kn.a)(e, nn.Pc),
+			const _n = e => Object(kn.a)(e, nn.Oc),
 				In = Object(ie.a)(e => Object(rn.c)(e, {
 					experimentEligibilitySelector: rn.a,
-					experimentName: nn.Pc,
+					experimentName: nn.Oc,
 					expEventOverride: !1
 				}), e => !!e),
-				Nn = e => Object(kn.a)(e, nn.Ke),
+				Nn = e => Object(kn.a)(e, nn.Je),
 				Pn = Object(ie.a)(e => Object(rn.c)(e, {
 					experimentEligibilitySelector: rn.a,
-					experimentName: nn.Ke,
+					experimentName: nn.Je,
 					expEventOverride: !1
 				}), e => !!e);
 			var wn, Tn = s("./src/reddit/selectors/userPrefs.ts"),
@@ -8539,7 +8539,7 @@
 						searchQueryId: C
 					} = Object(i.e)(e => Object(an.a)(e)),
 					v = Object(i.e)(on),
-					E = (Object(i.e)(e => Object(kn.a)(e, nn.Oc)), Object(Y.Z)(m)),
+					E = (Object(i.e)(e => Object(kn.a)(e, nn.Nc)), Object(Y.Z)(m)),
 					S = Object(d.a)(E) || null,
 					k = s.params.multiredditName,
 					_ = s.params.subredditName || k || "",
@@ -8634,6 +8634,20 @@
 				})
 			}
 		},
+		"./src/reddit/selectors/experiments/antievil/index.tsx": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return o
+			}));
+			var n = s("./src/reddit/constants/experiments.ts"),
+				r = s("./src/reddit/helpers/chooseVariant/index.ts");
+			const o = e => {
+				return Object(r.c)(e, {
+					experimentEligibilitySelector: r.a,
+					experimentName: n.M
+				}) === n.Sd
+			}
+		},
 		"./src/reddit/selectors/experiments/commentBox.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
@@ -8646,8 +8660,8 @@
 			const i = Object(n.a)(a.S, a.R, (e, t) => e || t),
 				c = Object(n.a)(e => Object(o.c)(e, {
 					experimentEligibilitySelector: i,
-					experimentName: r.J
-				}), e => e === r.T.Enabled)
+					experimentName: r.I
+				}), e => e === r.S.Enabled)
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, s) {
 			"use strict";
@@ -8664,11 +8678,11 @@
 				c = s("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(i.h)(e) && Object(o.f)(e),
-					experimentName: n.sc
+					experimentName: n.rc
 				}), a.a),
 				l = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(i.h)(e) && Object(o.f)(e),
-					experimentName: n.rc
+					experimentName: n.qc
 				}), a.a),
 				m = Object(c.a)(d, l, (e, t) => e || t),
 				u = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -8683,10 +8697,10 @@
 				o = s("./node_modules/reselect/es/index.js");
 			const a = Object(o.a)(e => Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: n.Bf
+				experimentName: n.Af
 			}), e => ({
-				isSubEnlarged: e === n.Rf.Variant1 || e === n.Rf.Variant3,
-				withCommunityDescription: e === n.Rf.Variant2 || e === n.Rf.Variant3
+				isSubEnlarged: e === n.Qf.Variant1 || e === n.Qf.Variant3,
+				withCommunityDescription: e === n.Qf.Variant2 || e === n.Qf.Variant3
 			}))
 		},
 		"./src/reddit/selectors/i18n/index.ts": function(e, t, s) {
@@ -8702,7 +8716,7 @@
 				a = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(r.ug)(t)
+					return Boolean(t) && !Object(r.tg)(t)
 				},
 				c = Object(n.a)(i, o.d, (e, t) => e && !t)
 		},
@@ -8763,4 +8777,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.50e720616a722cb6db78.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.9f7948579449517627f0.js.map

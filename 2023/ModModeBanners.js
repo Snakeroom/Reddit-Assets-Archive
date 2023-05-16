@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModModeBanners.519cf7ccedbb064403f1.js
-// Retrieved at 5/15/2023, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModModeBanners.2b55af1f933c90d47505.js
+// Retrieved at 5/16/2023, 5:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModModeBanners"], {
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, s) {
@@ -528,8 +528,8 @@
 					}))))
 				};
 			var y = s("./src/reddit/components/ModQueueActionBar/StatusDisplays/StatusDisplay.m.less"),
-				D = s.n(y);
-			const S = e => {
+				S = s.n(y);
+			const D = e => {
 					if (e) try {
 						return JSON.parse(e)
 					} catch {
@@ -545,7 +545,7 @@
 					const a = Object(u.a)();
 					if (o) {
 						if (!a) return n.a.createElement("p", {
-							className: D.a.reasonText
+							className: S.a.reasonText
 						}, r.fbt._("Loading filter reason…", null, {
 							hk: "K3Ipd"
 						}));
@@ -558,14 +558,14 @@
 						content: t,
 						rtJsonElementProps: {}
 					}) : s ? n.a.createElement("p", {
-						className: D.a.reasonText
+						className: S.a.reasonText
 					}, s) : null
 				},
 				w = e => {
 					let {
 						content: t
 					} = e;
-					const s = Object(p.a)(m.oe) === m.Td,
+					const s = Object(p.a)(m.ne) === m.Sd,
 						{
 							contentIds: u
 						} = h(),
@@ -629,15 +629,15 @@
 											hk: "1unYu9"
 										}),
 										reason: c.message,
-										reasonRichText: S(null === (n = null === (o = c.details) || void 0 === o ? void 0 : o.recencyExplanation) || void 0 === n ? void 0 : n.richtext),
+										reasonRichText: D(null === (n = null === (o = c.details) || void 0 === o ? void 0 : o.recencyExplanation) || void 0 === n ? void 0 : n.richtext),
 										confidence: null === (a = c.details) || void 0 === a ? void 0 : a.confidence,
-										confidenceExplanation: S(null === (l = null === (i = c.details) || void 0 === i ? void 0 : i.confidenceExplanation) || void 0 === l ? void 0 : l.richtext)
+										confidenceExplanation: D(null === (l = null === (i = c.details) || void 0 === i ? void 0 : i.confidenceExplanation) || void 0 === l ? void 0 : l.richtext)
 									})
 							}
 							return m
 						}, [t.modQueueTriggers, t.bannedBy, t.id, s]);
 					return n.a.createElement("div", {
-						className: D.a.filteredWrapper
+						className: S.a.filteredWrapper
 					}, b.map((e, t) => {
 						const {
 							heading: s,
@@ -648,21 +648,21 @@
 						} = e;
 						return n.a.createElement("div", {
 							key: `${s}-${o}-${t}`,
-							className: D.a.filteredRow
+							className: S.a.filteredRow
 						}, n.a.createElement(i.a, {
 							isFilled: !0,
 							name: r,
-							className: Object(a.a)(D.a.coloredIcon, D.a.icon)
+							className: Object(a.a)(S.a.coloredIcon, S.a.icon)
 						}), n.a.createElement("div", {
-							className: D.a.statusText
+							className: S.a.statusText
 						}, n.a.createElement("div", {
-							className: D.a.statusMeta
+							className: S.a.statusMeta
 						}, n.a.createElement("p", {
-							className: D.a.status
+							className: S.a.status
 						}, s), c && d && n.a.createElement(v, {
 							confidence: c
 						}, n.a.createElement(l.b, {
-							className: D.a.tooltipContent,
+							className: S.a.tooltipContent,
 							content: d,
 							rtJsonElementProps: {}
 						}))), n.a.createElement(M, e)))
@@ -988,4 +988,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.519cf7ccedbb064403f1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.2b55af1f933c90d47505.js.map

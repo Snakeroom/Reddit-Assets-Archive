@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.1da04941dda5dfa442e7.js
-// Retrieved at 5/15/2023, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.d13d37fc7eca858ccf1e.js
+// Retrieved at 5/16/2023, 5:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1539,8 +1539,8 @@
 				Q = n("./src/reddit/icons/fonts/Report/index.tsx"),
 				K = n("./src/reddit/icons/fonts/Spam/index.tsx"),
 				G = n("./src/reddit/selectors/modQueue.ts"),
-				Z = n("./src/reddit/components/Comments/Comment/TopMeta/modBadgeTooltip.m.less"),
-				Y = n.n(Z);
+				Y = n("./src/reddit/components/Comments/Comment/TopMeta/modBadgeTooltip.m.less"),
+				Z = n.n(Y);
 			const $ = e => {
 				let {
 					comment: t,
@@ -1565,7 +1565,7 @@
 					C = b("CommentTopMeta--Spam--"),
 					g = p(v);
 				return r.a.createElement(r.a.Fragment, null, (t.approvedBy || t.isApproved) && !u && r.a.createElement(r.a.Fragment, null, r.a.createElement(W.a, {
-					className: Y.a.approveIcon,
+					className: Z.a.approveIcon,
 					desc: Object(V.a)(t),
 					id: f,
 					onMouseEnter: p(f),
@@ -1575,7 +1575,7 @@
 					tooltipId: f,
 					text: Object(V.a)(t)
 				})), Object(U.a)(t) && !u && r.a.createElement(r.a.Fragment, null, r.a.createElement(q.a, {
-					className: Y.a.removeIcon,
+					className: Z.a.removeIcon,
 					desc: Object(V.b)(t),
 					id: v,
 					onMouseEnter: g,
@@ -1585,26 +1585,26 @@
 					tooltipId: v,
 					text: Object(V.b)(t)
 				})), Object(U.a)(t) && t.isRemoved && !t.modNote && !t.modRemovalReason && !u && r.a.createElement("a", {
-					className: Y.a.removalReason,
+					className: Z.a.removalReason,
 					onClick: () => {
 						Promise.all([n.e("Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba"), n.e("removalReasonActions")]).then(n.bind(null, "./src/reddit/actions/removalReasons/index.ts")).then(e => c(e.fetchReasonsAndOpenModal(t.subredditId, [t.id])))
 					}
 				}, o.fbt._("Add a removal reason", null, {
 					hk: "L6yrL"
 				})), Object(U.a)(t) && !(t.isRemoved && !t.modNote && !t.modRemovalReason) && !u && r.a.createElement("a", {
-					className: Y.a.removalReason,
+					className: Z.a.removalReason,
 					onMouseEnter: g,
 					onMouseLeave: h
 				}, o.fbt._("Removal reason", null, {
 					hk: "20NRw8"
 				})), t.isLocked && !s && r.a.createElement(z.a, {
-					className: Y.a.lockIcon,
+					className: Z.a.lockIcon,
 					desc: o.fbt._("Locked", null, {
 						hk: "40Ju3g"
 					}),
 					isFilled: !0
 				}), t.bannedBy && t.isSpam && !u && r.a.createElement(r.a.Fragment, null, r.a.createElement(K.a, {
-					className: Y.a.spamIcon,
+					className: Z.a.spamIcon,
 					desc: Object(V.d)(t),
 					id: C,
 					onMouseEnter: p(C),
@@ -1614,7 +1614,7 @@
 					tooltipId: C,
 					text: Object(V.d)(t)
 				})), Object(J.a)(t) && !u && r.a.createElement(r.a.Fragment, null, r.a.createElement(Q.a, {
-					className: Y.a.reportIcon,
+					className: Z.a.reportIcon,
 					desc: Object(V.c)(t.numReports),
 					id: x,
 					onMouseEnter: p(x),
@@ -1624,10 +1624,10 @@
 					tooltipId: x,
 					text: Object(V.c)(t.numReports)
 				})), t.isDeleted && d && !u && r.a.createElement(r.a.Fragment, null, r.a.createElement(q.a, {
-					className: Y.a.removeIcon,
+					className: Z.a.removeIcon,
 					isFilled: !0
 				}), r.a.createElement("span", {
-					className: Y.a.userDeletion
+					className: Z.a.userDeletion
 				}, o.fbt._("Comment deleted by user", null, {
 					hk: "1Rtt4V"
 				}))))
@@ -2655,11 +2655,11 @@
 				s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(o.a)(e => Object(r.c)(e, {
-					experimentName: s.fg,
+					experimentName: s.eg,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				a = Object(o.a)(i, e => e === s.Zf)
+				a = Object(o.a)(i, e => e === s.Yf)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.1da04941dda5dfa442e7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.d13d37fc7eca858ccf1e.js.map

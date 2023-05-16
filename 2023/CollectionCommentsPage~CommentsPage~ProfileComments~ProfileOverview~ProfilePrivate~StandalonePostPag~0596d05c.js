@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.e0db9942afab603b3a24.js
-// Retrieved at 5/15/2023, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.91f575db6d2dfc1822ac.js
+// Retrieved at 5/16/2023, 5:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, s) {
@@ -1115,12 +1115,12 @@
 						})),
 						p = Object(r.useCallback)(() => !!(!o && l && Object(j.s)(m) && w(m, s) && P(d, s)), [o, l, m, d, s]),
 						u = Object(r.useCallback)(() => !(o || !w(m, s) || !P(d, s)), [o, m, d, s]),
-						b = Object(g.a)(E.s, p),
-						h = Object(g.a)(E.r, p),
-						x = Object(g.a)(E.t, u),
-						f = Object(g.a)(E.u, u);
+						b = Object(g.a)(E.r, p),
+						h = Object(g.a)(E.q, p),
+						x = Object(g.a)(E.s, u),
+						f = Object(g.a)(E.t, u);
 					return {
-						canBoostPost: b === E.Td || h === E.Td || x === E.Td || f === E.Td
+						canBoostPost: b === E.Sd || h === E.Sd || x === E.Sd || f === E.Sd
 					}
 				},
 				T = e => {
@@ -4522,7 +4522,7 @@
 						} = t;
 						return Object(X.i)(e, s)
 					},
-					isCommunityMutingEnabled: se.b,
+					isCommunityMutingEnabled: se.a,
 					isReportAnAdEnabled: oe.a,
 					isEventPostUiHidden: fe.a
 				}), (e, t) => {
@@ -6752,10 +6752,10 @@
 				n = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(o.a)(e => Object(r.c)(e, {
-					experimentName: n.Nc,
+					experimentName: n.Mc,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				a = Object(o.a)(i, e => e === n.Td)
+				a = Object(o.a)(i, e => e === n.Sd)
 		},
 		"./src/reddit/selectors/experiments/reportingRevampDesktop.ts": function(e, t, s) {
 			"use strict";
@@ -6776,4 +6776,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.e0db9942afab603b3a24.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.91f575db6d2dfc1822ac.js.map
