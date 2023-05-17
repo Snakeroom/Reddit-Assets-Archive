@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.a134ff633972c0d754a5.js
-// Retrieved at 5/17/2023, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.653e6d62cac4cde2f872.js
+// Retrieved at 5/17/2023, 6:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -55333,6 +55333,9 @@
 					REMOVE_WIKI_CONTRIBUTOR: () => s.fbt._("Remove wiki contributor", null, {
 						hk: "1PcCja"
 					}),
+					REORDER_REMOVAL_REASON: () => s.fbt._("Reorder removal reason", null, {
+						hk: "2dAkjt"
+					}),
 					REORDER_MODERATORS: () => s.fbt._("Reorder moderators", null, {
 						hk: "3Csxj8"
 					}),
@@ -80808,4 +80811,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.a134ff633972c0d754a5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.653e6d62cac4cde2f872.js.map
