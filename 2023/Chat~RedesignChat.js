@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.cb1529ea5249907ecab4.js
-// Retrieved at 5/15/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.e7b7dd3fb4e42d2359f5.js
+// Retrieved at 5/17/2023, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -145,7 +145,7 @@
 				});
 				if (!Object(N.c)(n)) return null;
 				const a = n.body.data.directChatRoom;
-				return (null == a ? void 0 : a.replicationInfo) && a.replicationInfo.status !== i.R.Main ? null : a ? a.id : null
+				return (null == a ? void 0 : a.replicationInfo) && a.replicationInfo.status !== i.T.Main ? null : a ? a.id : null
 			};
 			var T = n("./src/chat/endpoints/sendbird/index.ts"),
 				M = n("./src/chat/helpers/errors.ts"),
@@ -7525,7 +7525,7 @@
 				}),
 				Dc = Object(i.b)(Ac, e => ({
 					fetchLiveChats: () => e(Object(a.fetchLiveChats)()),
-					fetchUXExperiences: () => e(Object(c.c)([Mc.ab.LiveChatVideoEdu])),
+					fetchUXExperiences: () => e(Object(c.c)([Mc.cb.LiveChatVideoEdu])),
 					sendChatTabViewEvent: () => e(Object(s.lb)())
 				}));
 			class Rc extends o.a.Component {
@@ -11474,14 +11474,14 @@
 				Be = n.n(Pe);
 			const He = () => {
 				var e;
-				const [t, n] = Object(a.useState)(!1), [r, o] = Object(a.useState)(!1), l = Object(a.useRef)(null), d = Object(a.useRef)(!1), h = Object(a.useRef)([0, 25, 50, 75, 100]), m = null === (e = Object(c.e)((e => t => t.uxExperiences.experiences[e] || null)(ie.ab.LiveChatVideoEdu))) || void 0 === e ? void 0 : e.value, b = Object(c.d)(), p = Object(a.useContext)(Ae.a), f = Object(a.useCallback)(() => {
+				const [t, n] = Object(a.useState)(!1), [r, o] = Object(a.useState)(!1), l = Object(a.useRef)(null), d = Object(a.useRef)(!1), h = Object(a.useRef)([0, 25, 50, 75, 100]), m = null === (e = Object(c.e)((e => t => t.uxExperiences.experiences[e] || null)(ie.cb.LiveChatVideoEdu))) || void 0 === e ? void 0 : e.value, b = Object(c.d)(), p = Object(a.useContext)(Ae.a), f = Object(a.useCallback)(() => {
 					var e;
-					const t = ie.ab.LiveChatVideoEdu;
-					b(Object(Le.e)(ie.ab.LiveChatVideoEdu)), b(Object(Le.d)({
+					const t = ie.cb.LiveChatVideoEdu;
+					b(Object(Le.e)(ie.cb.LiveChatVideoEdu)), b(Object(Le.d)({
 						experience: t,
 						value: !1
 					})), null === (e = null == p ? void 0 : p.updateUXExperienceValue) || void 0 === e || e.call(p, {
-						experience: ie.ab.LiveChatVideoEdu,
+						experience: ie.cb.LiveChatVideoEdu,
 						value: !1
 					})
 				}, [b]);
@@ -20062,4 +20062,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.cb1529ea5249907ecab4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.e7b7dd3fb4e42d2359f5.js.map

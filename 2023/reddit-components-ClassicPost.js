@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.be21c30ea4829733449d.js
-// Retrieved at 5/16/2023, 5:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.dec7fe6993d808fc183c.js
+// Retrieved at 5/17/2023, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1957,8 +1957,8 @@
 				p = s("./node_modules/reselect/es/index.js");
 			const b = Object(p.a)(e => Object(m.c)(e, {
 				experimentEligibilitySelector: m.a,
-				experimentName: u.zc
-			}), e => e === u.Sd);
+				experimentName: u.Ac
+			}), e => e === u.Td);
 			var f = s("./node_modules/fbt/lib/FbtPublic.js"),
 				h = s("./src/lib/classNames/index.ts"),
 				x = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
@@ -2854,14 +2854,14 @@
 						...a,
 						variables: t
 					});
-					return !!Object(r.c)(s) && (s.body.data.subredditInfoById.allowedPostTypes || []).includes(l.M.Talk)
+					return !!Object(r.c)(s) && (s.body.data.subredditInfoById.allowedPostTypes || []).includes(l.O.Talk)
 				}, p = async (e, t) => {
 					var s, o;
 					const a = await Object(n.a)(e, {
 						...i,
 						variables: t
 					});
-					return !!Object(r.c)(a) && (null !== (o = null === (s = a.body.data.profileByName) || void 0 === s ? void 0 : s.allowedPostTypes) && void 0 !== o ? o : []).includes(l.M.Talk)
+					return !!Object(r.c)(a) && (null !== (o = null === (s = a.body.data.profileByName) || void 0 === s ? void 0 : s.allowedPostTypes) && void 0 !== o ? o : []).includes(l.O.Talk)
 				}, b = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile || e.data.startAudioRoom, f = {
 					[l.k.ServiceError]: o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
@@ -2878,9 +2878,9 @@
 					[l.k.SubredditRoomLimitExceeded]: o.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
 						hk: "2mGf21"
 					})
-				}, h = (l.O.ServiceError, o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+				}, h = (l.Q.ServiceError, o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 					hk: "3XqPJS"
-				}), l.O.UserNotAuthorized, o.fbt._("You don't have permission to start talks in this community.", null, {
+				}), l.Q.UserNotAuthorized, o.fbt._("You don't have permission to start talks in this community.", null, {
 					hk: "1XY1Ss"
 				}), (e, t) => Object(n.a)(e, {
 					...d,
@@ -3821,10 +3821,10 @@
 				n = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const a = Object(o.a)(e => Object(r.c)(e, {
-					experimentName: n.eg,
+					experimentName: n.fg,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				i = Object(o.a)(a, e => e === n.Yf)
+				i = Object(o.a)(a, e => e === n.Zf)
 		},
 		"./src/reddit/selectors/removedPosts.ts": function(e, t, s) {
 			"use strict";
@@ -3918,4 +3918,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.be21c30ea4829733449d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.dec7fe6993d808fc183c.js.map

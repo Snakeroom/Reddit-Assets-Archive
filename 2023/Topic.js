@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.179a064c5bb041c4e4d6.js
-// Retrieved at 5/16/2023, 5:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.c2e27fc5a289b19c14ef.js
+// Retrieved at 5/17/2023, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1176,7 +1176,7 @@
 								type: e
 							}
 						}))(m)), S(!1), s(Object(a.c)({
-							experience: T.ab.LanguagePreferenceBottomSheet,
+							experience: T.cb.LanguagePreferenceBottomSheet,
 							value: !1
 						}))
 					},
@@ -1209,7 +1209,7 @@
 								})
 							}))
 						})(), S(!1), s(Object(a.c)({
-							experience: T.ab.LanguagePreferenceBottomSheet,
+							experience: T.cb.LanguagePreferenceBottomSheet,
 							value: !1
 						}))
 					};
@@ -1222,7 +1222,7 @@
 						...Object(h.d)(t),
 						type: e
 					}
-				}))(m)), s(Object(a.d)(T.ab.LanguagePreferenceBottomSheet)), r.a.createElement("div", {
+				}))(m)), s(Object(a.d)(T.cb.LanguagePreferenceBottomSheet)), r.a.createElement("div", {
 					className: l.a.PromptContainer
 				}, r.a.createElement("div", {
 					className: l.a.PromptClose
@@ -1262,7 +1262,7 @@
 					gqlContext: s
 				} = e, n = Object(i.f)().getState();
 				return (null === (t = Object(i.e)(e => Object(_.a)(e, {
-					experience: T.ab.LanguagePreferenceBottomSheet
+					experience: T.cb.LanguagePreferenceBottomSheet
 				}))) || void 0 === t ? void 0 : t.value) && Object(S.b)(n) ? r.a.createElement(C, {
 					gqlContext: s
 				}) : null
@@ -1413,7 +1413,7 @@
 				const t = Object(i.f)().getState(),
 					s = Object(g.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === m.ld.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.ld.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.ld.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === m.md.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.md.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.md.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(j, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -3375,7 +3375,7 @@
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: n.M
-				}) === n.Sd
+				}) === n.Td
 			}
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, s) {
@@ -3437,4 +3437,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.179a064c5bb041c4e4d6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.c2e27fc5a289b19c14ef.js.map

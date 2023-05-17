@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.da9531ed54dd1a3c476a.js
-// Retrieved at 5/16/2023, 5:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.c829fefd654cc6924c47.js
+// Retrieved at 5/17/2023, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -4344,7 +4344,7 @@
 			const u = "hideBanEvasionCampaignUntil";
 
 			function p() {
-				return Object(i.a)(r.vb) === r.Sd
+				return Object(i.a)(r.vb) === r.Td
 			}
 
 			function A() {
@@ -6295,7 +6295,7 @@
 					let {
 						content: t
 					} = e;
-					const n = Object(u.a)(m.ne) === m.Sd,
+					const n = Object(u.a)(m.oe) === m.Td,
 						{
 							contentIds: p
 						} = g(),
@@ -7633,7 +7633,7 @@
 			const U = e => Object(F.c)(e, {
 				experimentEligibilitySelector: H.S,
 				experimentName: L.ec
-			}) === L.Sd;
+			}) === L.Td;
 			var z = n("./src/reddit/components/ModQueueList/SortByNumReportsTooltip.m.less"),
 				Y = n.n(z);
 			const G = e => {
@@ -8851,7 +8851,7 @@
 			class P extends a.a.Component {
 				constructor(e) {
 					super(e), this.trackEvent = () => {
-						this.props.sendEvent(Object(g.F)(this.props.subredditId))
+						this.props.sendEvent(Object(g.G)(this.props.subredditId))
 					}, this.onApply = () => {
 						const {
 							previewFlair: e
@@ -10958,7 +10958,7 @@
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
 					experimentName: s.M
-				}) === s.Sd
+				}) === s.Td
 			}
 		},
 		"./src/redditGQL/operations/DeleteSubredditMuteSettings.json": function(e) {
@@ -10990,4 +10990,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.da9531ed54dd1a3c476a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.c829fefd654cc6924c47.js.map

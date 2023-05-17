@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.eef72b631eb8c7b0669d.js
-// Retrieved at 5/16/2023, 5:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.3a199e3be9e2b12b1545.js
+// Retrieved at 5/17/2023, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -2771,7 +2771,7 @@
 								type: e
 							}
 						}))(u)), O(!1), s(Object(a.c)({
-							experience: _.ab.LanguagePreferenceBottomSheet,
+							experience: _.cb.LanguagePreferenceBottomSheet,
 							value: !1
 						}))
 					},
@@ -2804,7 +2804,7 @@
 								})
 							}))
 						})(), O(!1), s(Object(a.c)({
-							experience: _.ab.LanguagePreferenceBottomSheet,
+							experience: _.cb.LanguagePreferenceBottomSheet,
 							value: !1
 						}))
 					};
@@ -2817,7 +2817,7 @@
 						...Object(h.d)(t),
 						type: e
 					}
-				}))(u)), s(Object(a.d)(_.ab.LanguagePreferenceBottomSheet)), o.a.createElement("div", {
+				}))(u)), s(Object(a.d)(_.cb.LanguagePreferenceBottomSheet)), o.a.createElement("div", {
 					className: l.a.PromptContainer
 				}, o.a.createElement("div", {
 					className: l.a.PromptClose
@@ -2857,7 +2857,7 @@
 					gqlContext: s
 				} = e, n = Object(r.f)().getState();
 				return (null === (t = Object(r.e)(e => Object(C.a)(e, {
-					experience: _.ab.LanguagePreferenceBottomSheet
+					experience: _.cb.LanguagePreferenceBottomSheet
 				}))) || void 0 === t ? void 0 : t.value) && Object(O.b)(n) ? o.a.createElement(k, {
 					gqlContext: s
 				}) : null
@@ -3200,8 +3200,8 @@
 				p = s("./node_modules/reselect/es/index.js");
 			const b = Object(p.a)(e => Object(u.c)(e, {
 				experimentEligibilitySelector: u.a,
-				experimentName: m.zc
-			}), e => e === m.Sd);
+				experimentName: m.Ac
+			}), e => e === m.Td);
 			var h = s("./node_modules/fbt/lib/FbtPublic.js"),
 				g = s("./src/lib/classNames/index.ts"),
 				f = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
@@ -4378,7 +4378,7 @@
 				const t = Object(r.f)().getState(),
 					s = Object(g.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.ld.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.ld.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.ld.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.md.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.md.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.md.LargeImagePreview ? e.reredditButtons : [];
 					return o.a.createElement(w, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -5604,14 +5604,14 @@
 						...i,
 						variables: t
 					});
-					return !!Object(r.c)(s) && (s.body.data.subredditInfoById.allowedPostTypes || []).includes(l.M.Talk)
+					return !!Object(r.c)(s) && (s.body.data.subredditInfoById.allowedPostTypes || []).includes(l.O.Talk)
 				}, p = async (e, t) => {
 					var s, n;
 					const i = await Object(o.a)(e, {
 						...a,
 						variables: t
 					});
-					return !!Object(r.c)(i) && (null !== (n = null === (s = i.body.data.profileByName) || void 0 === s ? void 0 : s.allowedPostTypes) && void 0 !== n ? n : []).includes(l.M.Talk)
+					return !!Object(r.c)(i) && (null !== (n = null === (s = i.body.data.profileByName) || void 0 === s ? void 0 : s.allowedPostTypes) && void 0 !== n ? n : []).includes(l.O.Talk)
 				}, b = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile || e.data.startAudioRoom, h = {
 					[l.k.ServiceError]: n.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
@@ -5628,9 +5628,9 @@
 					[l.k.SubredditRoomLimitExceeded]: n.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
 						hk: "2mGf21"
 					})
-				}, g = (l.O.ServiceError, n.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+				}, g = (l.Q.ServiceError, n.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 					hk: "3XqPJS"
-				}), l.O.UserNotAuthorized, n.fbt._("You don't have permission to start talks in this community.", null, {
+				}), l.Q.UserNotAuthorized, n.fbt._("You don't have permission to start talks in this community.", null, {
 					hk: "1XY1Ss"
 				}), (e, t) => Object(o.a)(e, {
 					...c,
@@ -7340,7 +7340,7 @@
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
 					experimentName: n.M
-				}) === n.Sd
+				}) === n.Td
 			}
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, s) {
@@ -7447,4 +7447,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.eef72b631eb8c7b0669d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.3a199e3be9e2b12b1545.js.map

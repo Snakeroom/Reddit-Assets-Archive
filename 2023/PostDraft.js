@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.2158b77f27d9943904f9.js
-// Retrieved at 5/16/2023, 5:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.d09b4c404836a6f98123.js
+// Retrieved at 5/17/2023, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -802,7 +802,7 @@
 								type: e
 							}
 						}))(m)), k(!1), n(Object(a.c)({
-							experience: j.ab.LanguagePreferenceBottomSheet,
+							experience: j.cb.LanguagePreferenceBottomSheet,
 							value: !1
 						}))
 					},
@@ -835,7 +835,7 @@
 								})
 							}))
 						})(), k(!1), n(Object(a.c)({
-							experience: j.ab.LanguagePreferenceBottomSheet,
+							experience: j.cb.LanguagePreferenceBottomSheet,
 							value: !1
 						}))
 					};
@@ -848,7 +848,7 @@
 						...Object(f.d)(t),
 						type: e
 					}
-				}))(m)), n(Object(a.d)(j.ab.LanguagePreferenceBottomSheet)), s.a.createElement("div", {
+				}))(m)), n(Object(a.d)(j.cb.LanguagePreferenceBottomSheet)), s.a.createElement("div", {
 					className: l.a.PromptContainer
 				}, s.a.createElement("div", {
 					className: l.a.PromptClose
@@ -888,7 +888,7 @@
 					gqlContext: n
 				} = e, o = Object(r.f)().getState();
 				return (null === (t = Object(r.e)(e => Object(v.a)(e, {
-					experience: j.ab.LanguagePreferenceBottomSheet
+					experience: j.cb.LanguagePreferenceBottomSheet
 				}))) || void 0 === t ? void 0 : t.value) && Object(k.b)(o) ? s.a.createElement(O, {
 					gqlContext: n
 				}) : null
@@ -1465,7 +1465,7 @@
 				const t = Object(r.f)().getState(),
 					n = Object(h.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === m.ld.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.ld.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.ld.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === m.md.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.md.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.md.LargeImagePreview ? e.reredditButtons : [];
 					return s.a.createElement(S, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -3182,4 +3182,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.2158b77f27d9943904f9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.d09b4c404836a6f98123.js.map

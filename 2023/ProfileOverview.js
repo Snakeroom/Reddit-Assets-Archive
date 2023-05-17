@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.fee20c92162d0185f189.js
-// Retrieved at 5/16/2023, 5:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.7bb606a769d87d5e8d19.js
+// Retrieved at 5/17/2023, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./src/lib/LiveChatActiveUsers/index.m.less": function(e, t, s) {
@@ -42,12 +42,12 @@
 				l = s("./src/reddit/constants/promo.ts"),
 				m = s("./src/reddit/hooks/promo/useIsSignupUpsellVariantEligible.ts");
 			var u = function() {
-					const e = Object(m.a)(d.ed.Bottom_cell),
-						t = Object(m.a)(d.ed.Bottom_cell_dismissible),
-						s = Object(m.a)(d.ed.Bottom_cell_dismissible_immediate_trigger),
-						n = Object(m.a)(d.ed.Bottom_cell_signup_upsell_copy),
-						o = Object(m.a)(d.ed.Bottom_cell_surprise_install_copy),
-						r = Object(m.a)(d.ed.Bottom_sheet);
+					const e = Object(m.a)(d.fd.Bottom_cell),
+						t = Object(m.a)(d.fd.Bottom_cell_dismissible),
+						s = Object(m.a)(d.fd.Bottom_cell_dismissible_immediate_trigger),
+						n = Object(m.a)(d.fd.Bottom_cell_signup_upsell_copy),
+						o = Object(m.a)(d.fd.Bottom_cell_surprise_install_copy),
+						r = Object(m.a)(d.fd.Bottom_sheet);
 					return e || n || o ? l.b.SignupUpsellCell : t || s ? l.b.SignupUpsellCellDismissible : r ? l.b.SignupUpsellBottomSheet : null
 				},
 				p = s("./src/reddit/hooks/promo/useIsPromoShown.ts");
@@ -72,7 +72,7 @@
 						let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : b;
 						const {
 							showPromo: t
-						} = Object(c.a)(), s = u(), r = Object(p.a)(s), l = Object(m.a)(d.ed.Bottom_cell_dismissible_immediate_trigger);
+						} = Object(c.a)(), s = u(), r = Object(p.a)(s), l = Object(m.a)(d.fd.Bottom_cell_dismissible_immediate_trigger);
 						return n.useMemo(() => a()(() => {
 							if (!r && s) {
 								const e = document.getElementById(i.e),
@@ -3916,7 +3916,7 @@
 			const Ie = Object(i.a)(y.M, e => e.some(Pe.c)),
 				we = Object(i.a)(Ie, e => e),
 				Se = (e, t) => Object(ye.c)(e, {
-					experimentName: _e.rd,
+					experimentName: _e.sd,
 					experimentEligibilitySelector: e => {
 						const {
 							listingKey: s
@@ -3929,7 +3929,7 @@
 			var Ne = s("./src/reddit/selectors/experiments/index.ts");
 
 			function Te(e) {
-				return e === _e.wf.Minimalist || e === _e.wf.Description || e === _e.wf.HotnessSignals
+				return e === _e.xf.Minimalist || e === _e.xf.Description || e === _e.xf.HotnessSignals
 			}
 			var Re = s("./src/reddit/selectors/modQueue.ts"),
 				Me = s("./src/reddit/selectors/postFlair.ts"),
@@ -4046,7 +4046,7 @@
 					} = Object(r.e)(e => (e => {
 						const t = Object(ye.c)(e, {
 							experimentEligibilitySelector: Ne.e,
-							experimentName: _e.Gc
+							experimentName: _e.Hc
 						}) || _e.V.Control1;
 						return {
 							isEnabled: Te(t),
@@ -4109,7 +4109,7 @@
 						isUpdatedContent: tt,
 						isNightMode: st,
 						onSubscribe: nt = (() => {})
-					} = e, ot = Object(O.a)(), rt = !!e.redditStyle || !!e["data-redditstyle"], at = rt ? void 0 : j, it = Object(l.a)(Se), dt = Ne && it, ct = Object(d.a)(Se), lt = Object(c.a)(Se), mt = Object(z.c)(Le), ut = Object(G.a)(Le), pt = !!Le.media && Le.media.type === g.o.RTJSON, bt = Qe && pt, ht = s ? s - X.a : void 0, xt = !!Le.recommendationContext, ft = !(de && pe || Ce) || xt && pe, vt = (e => e === _e.lf.OnlyTitles)(Fe) && !Object(be.a)(Le), Ot = (e => e === _e.lf.MediumHeight)(Fe) && !Object(be.a)(Le), gt = (e => {
+					} = e, ot = Object(O.a)(), rt = !!e.redditStyle || !!e["data-redditstyle"], at = rt ? void 0 : j, it = Object(l.a)(Se), dt = Ne && it, ct = Object(d.a)(Se), lt = Object(c.a)(Se), mt = Object(z.c)(Le), ut = Object(G.a)(Le), pt = !!Le.media && Le.media.type === g.o.RTJSON, bt = Qe && pt, ht = s ? s - X.a : void 0, xt = !!Le.recommendationContext, ft = !(de && pe || Ce) || xt && pe, vt = (e => e === _e.mf.OnlyTitles)(Fe) && !Object(be.a)(Le), Ot = (e => e === _e.mf.MediumHeight)(Fe) && !Object(be.a)(Le), gt = (e => {
 						var t;
 						const {
 							post: s,
@@ -4754,7 +4754,7 @@
 					let {
 						content: t
 					} = e;
-					const s = Object(u.a)(m.ne) === m.Sd,
+					const s = Object(u.a)(m.oe) === m.Td,
 						{
 							contentIds: p
 						} = f(),
@@ -6333,8 +6333,8 @@
 				p = s("./node_modules/reselect/es/index.js");
 			const b = Object(p.a)(e => Object(u.c)(e, {
 				experimentEligibilitySelector: u.a,
-				experimentName: m.zc
-			}), e => e === m.Sd);
+				experimentName: m.Ac
+			}), e => e === m.Td);
 			var h = s("./node_modules/fbt/lib/FbtPublic.js"),
 				x = s("./src/lib/classNames/index.ts"),
 				f = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
@@ -7042,17 +7042,17 @@
 
 			function M(e) {
 				switch (e) {
-					case O.wf.Minimalist:
-					case O.uf.Minimalist:
+					case O.xf.Minimalist:
 					case O.vf.Minimalist:
+					case O.wf.Minimalist:
 						return T.MINIMALIST;
-					case O.wf.HotnessSignals:
-					case O.uf.SocialSignals:
+					case O.xf.HotnessSignals:
 					case O.vf.SocialSignals:
+					case O.wf.SocialSignals:
 						return T.SIGNALS;
-					case O.wf.Description:
-					case O.uf.Description:
+					case O.xf.Description:
 					case O.vf.Description:
+					case O.wf.Description:
 						return T.DESCRIPTION
 				}
 				return T.MINIMALIST
@@ -7810,14 +7810,14 @@
 						...a,
 						variables: t
 					});
-					return !!Object(r.c)(s) && (s.body.data.subredditInfoById.allowedPostTypes || []).includes(l.M.Talk)
+					return !!Object(r.c)(s) && (s.body.data.subredditInfoById.allowedPostTypes || []).includes(l.O.Talk)
 				}, p = async (e, t) => {
 					var s, n;
 					const a = await Object(o.a)(e, {
 						...i,
 						variables: t
 					});
-					return !!Object(r.c)(a) && (null !== (n = null === (s = a.body.data.profileByName) || void 0 === s ? void 0 : s.allowedPostTypes) && void 0 !== n ? n : []).includes(l.M.Talk)
+					return !!Object(r.c)(a) && (null !== (n = null === (s = a.body.data.profileByName) || void 0 === s ? void 0 : s.allowedPostTypes) && void 0 !== n ? n : []).includes(l.O.Talk)
 				}, b = e => e.data.createAudioRoomOrError || e.data.createAudioRoomOnProfile || e.data.startAudioRoom, h = {
 					[l.k.ServiceError]: n.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 						hk: "3XqPJS"
@@ -7834,9 +7834,9 @@
 					[l.k.SubredditRoomLimitExceeded]: n.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
 						hk: "2mGf21"
 					})
-				}, x = (l.O.ServiceError, n.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+				}, x = (l.Q.ServiceError, n.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 					hk: "3XqPJS"
-				}), l.O.UserNotAuthorized, n.fbt._("You don't have permission to start talks in this community.", null, {
+				}), l.Q.UserNotAuthorized, n.fbt._("You don't have permission to start talks in this community.", null, {
 					hk: "1XY1Ss"
 				}), (e, t) => Object(o.a)(e, {
 					...c,
@@ -8522,7 +8522,7 @@
 				oe = s("./src/reddit/selectors/experiments/index.ts");
 
 			function re(e) {
-				return e === se.uf.Minimalist || e === se.uf.Description || e === se.uf.SocialSignals
+				return e === se.vf.Minimalist || e === se.vf.Description || e === se.vf.SocialSignals
 			}
 			var ae = s("./src/reddit/components/RelatedCommunitiesRecommendations/index.tsx"),
 				ie = s("./src/reddit/components/OverviewConversationsPost/index.m.less"),
@@ -8547,7 +8547,7 @@
 					} = Object(i.e)(e => (e => {
 						const t = Object(ne.c)(e, {
 							experimentEligibilitySelector: oe.e,
-							experimentName: se.Hc
+							experimentName: se.Ic
 						}) || se.V.Control1;
 						return {
 							isEnabled: re(t),
@@ -9485,9 +9485,9 @@
 					experimentName: e,
 					experimentEligibilitySelector: d,
 					throttledVariants: {
-						[o.ed.Bottom_cell_dismissible]: e,
-						[o.ed.Bottom_cell_dismissible_immediate_trigger]: e,
-						[o.ed.Bottom_sheet]: e
+						[o.fd.Bottom_cell_dismissible]: e,
+						[o.fd.Bottom_cell_dismissible_immediate_trigger]: e,
+						[o.fd.Bottom_sheet]: e
 					},
 					expEventOverride: t
 				})
@@ -9512,7 +9512,7 @@
 				a = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(o.tg)(t)
+					return Boolean(t) && !Object(o.ug)(t)
 				},
 				d = Object(n.a)(i, r.d, (e, t) => e && !t)
 		},
@@ -9563,4 +9563,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.fee20c92162d0185f189.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.7bb606a769d87d5e8d19.js.map
