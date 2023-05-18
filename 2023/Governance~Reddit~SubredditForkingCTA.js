@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.9ec1f3d6310eb95fc830.js
-// Retrieved at 5/17/2023, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.5435f671697865062b37.js
+// Retrieved at 5/18/2023, 5:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~SubredditForkingCTA"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(t, e, r) {
@@ -53,7 +53,7 @@
 			const h = Object(b.a)(t => Object(p.c)(t, {
 				experimentEligibilitySelector: m.S,
 				experimentName: f.ac
-			}), t => t === f.Td);
+			}), t => t === f.Ud);
 			var O = r("./src/reddit/actions/toaster.ts");
 			const y = "SUBREDDIT_COUNTRY_SITE__LOADED",
 				_ = "SUBREDDIT_COUNTRY_SITE__CHANGED",
@@ -827,7 +827,7 @@
 				i = r("./src/telemetry/index.ts"),
 				d = r("./src/reddit/actions/crosspostSubredditRec/index.ts"),
 				o = r("./src/reddit/actions/governance/index.ts"),
-				a = r("./src/reddit/actions/pages/subreddit.ts"),
+				a = r("./src/reddit/actions/pages/subreddit/index.ts"),
 				c = r("./src/reddit/actions/postDraft.ts"),
 				u = r("./src/reddit/actions/scheduledPosts/index.ts"),
 				l = r("./src/reddit/actions/urlRequested.ts"),
@@ -863,8 +863,8 @@
 				F = Object(s.a)(R.y),
 				V = Object(s.a)(R.eb),
 				B = Object(s.a)(R.K),
-				W = Object(s.a)(R.a),
-				$ = Object(s.a)(R.G),
+				$ = Object(s.a)(R.a),
+				W = Object(s.a)(R.G),
 				z = t => `/r/${t}/about/${C.s}`,
 				H = (t, e) => {
 					const r = t || {
@@ -911,7 +911,7 @@
 						pending: a
 					} = o.creations.api.post.submit, u = Object(A.g)(o);
 					if (a || u) return;
-					r($(t)), o = s();
+					r(W(t)), o = s();
 					const l = Object(T.a)(o),
 						b = _.d.rteVideoPoster(o),
 						f = K(o),
@@ -1071,7 +1071,7 @@
 						C = r();
 					E.C(C, S, P, t.correlationId)
 				}, X = (t, e) => {
-					e.type === n.L.BAD_CAPTCHA_ERROR ? t(W()) : e.type === n.L.VALIDATION_ERROR ? t(V(e)) : e.type === n.L.SUBMIT_VALIDATION_ERROR ? t(B(e)) : t(q(e))
+					e.type === n.L.BAD_CAPTCHA_ERROR ? t($()) : e.type === n.L.VALIDATION_ERROR ? t(V(e)) : e.type === n.L.SUBMIT_VALIDATION_ERROR ? t(B(e)) : t(q(e))
 				}
 		},
 		"./src/reddit/actions/scheduledPosts/constants.ts": function(t, e, r) {
@@ -1474,7 +1474,7 @@
 								postFieldValidationPending: Promise.resolve()
 							})), Object(l.b)(D)
 						}
-						await e(Object(n.b)(`${r.path}`)), p ? p === b.We.NewModule && e(Object(c.h)({
+						await e(Object(n.b)(`${r.path}`)), p ? p === b.Xe.NewModule && e(Object(c.h)({
 							tooltipId: u.MOD_WELCOME_TOOLTIP_ID
 						})) : (e(Object(o.h)(f.a.POST_FLOW_UPSELL_MODAL_ID)), Object(k.a)(Object(E.g)()(T))), Object(j.b)(j.a.SubredditCreation), e(Object(x.f)(i, null !== (g = Object(C.db)(T)) && void 0 !== g ? g : Object(P.k)(T)))
 					} else w.error && Object(k.a)(Object(E.h)(w.error.type, A)(T)), e(U({
@@ -2959,4 +2959,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.9ec1f3d6310eb95fc830.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.5435f671697865062b37.js.map
