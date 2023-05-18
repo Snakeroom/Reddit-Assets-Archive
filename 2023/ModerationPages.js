@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.653e6d62cac4cde2f872.js
-// Retrieved at 5/17/2023, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.399db485e447be7301f6.js
+// Retrieved at 5/18/2023, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -8192,9 +8192,9 @@
 				y = n("./src/reddit/helpers/timeApiRoute/index.ts"),
 				j = n("./src/reddit/models/User/index.ts"),
 				I = n("./src/reddit/selectors/contentControls.ts"),
-				k = n("./src/reddit/selectors/postCollection.ts"),
-				_ = n("./src/reddit/selectors/postCreations.ts"),
-				S = n("./src/reddit/selectors/postGuidance.ts"),
+				k = n("./src/reddit/selectors/experiments/postGuidance.ts"),
+				_ = n("./src/reddit/selectors/postCollection.ts"),
+				S = n("./src/reddit/selectors/postCreations.ts"),
 				w = n("./src/reddit/selectors/posts.ts"),
 				T = n("./src/reddit/selectors/profile.ts"),
 				P = n("./src/reddit/selectors/subreddit.ts"),
@@ -8220,8 +8220,8 @@
 				U = Object(i.a)(L),
 				H = () => async (e, t) => {
 					const n = t(),
-						s = Object(_.a)(n);
-					s !== Object(_.rb)(n) && e(Object(b.g)({
+						s = Object(S.a)(n);
+					s !== Object(S.rb)(n) && e(Object(b.g)({
 						submissionType: s
 					}))
 				}, G = e => async (t, n, s) => {
@@ -8236,8 +8236,8 @@
 					t(B({
 						key: l
 					}));
-					let k = d;
-					!d && i && (k = `u_${i}`), A.push(((e, t) => Object(O.a)(e, {
+					let _ = d;
+					!d && i && (_ = `u_${i}`), A.push(((e, t) => Object(O.a)(e, {
 						method: E.pb.GET,
 						endpoint: Object(C.a)(`${x.a.gatewayUrl}/desktopapi/v1/submitpage`),
 						data: {
@@ -8245,12 +8245,12 @@
 							collection_id: t.collectionId
 						}
 					}))(s.apiContext(), {
-						subredditName: k,
+						subredditName: _,
 						collectionId: r
 					})), i && (A.push(t(h.d(i))), A.push(t(h.b(i))));
-					const [_] = await Object(y.a)("postCreation", () => Promise.all(A));
-					if (_.ok) {
-						const e = _.body,
+					const [S] = await Object(y.a)("postCreation", () => Promise.all(A));
+					if (S.ok) {
+						const e = S.body,
 							{
 								posts: s = {}
 							} = e;
@@ -8265,15 +8265,13 @@
 						r.push(t(u.o()));
 						const i = Object(N.m)(n());
 						if (i && i.hasUserProfile && r.push(t(h.d(Object(j.e)(i)))), d && !Object(o.a)(d)) {
-							r.push(t(g.o(d)), t(Object(f.a)(d))), !!Object(I.b)(n(), {
+							r.push(t(g.o(d))), !!Object(I.b)(n(), {
 								subredditName: d
-							}) || r.push(t(Object(c.a)(d))), Object(S.d)(m, {
-								subredditName: d
-							}) || r.push(t(Object(f.a)(d)))
+							}) || r.push(t(Object(c.a)(d))), Object(k.a)(m) && r.push(t(Object(f.a)(d)))
 						}
 						await Promise.all(r)
 					} else t(U({
-						error: _.error,
+						error: S.error,
 						key: l
 					}))
 				}, Q = e => async (t, n) => {
@@ -8311,7 +8309,7 @@
 						}))
 					})(e.params, a.source_id));
 					else if (d) {
-						const o = Object(k.q)(n(), {
+						const o = Object(_.q)(n(), {
 							collectionId: d
 						});
 						c && o && o.subredditId === c.id || t(Object(s.c)(Object(r.a)(e.url, ["collection"])))
@@ -78389,6 +78387,20 @@
 					return !!(t || n || s)
 				})(e) && (e.creations.formData.submissionType === s.cc.POST || e.creations.formData.submissionType === s.cc.LINK_ONLY || e.creations.formData.submissionType === s.cc.CROSSPOST)
 		},
+		"./src/reddit/selectors/experiments/postGuidance.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return o
+			}));
+			var s = n("./src/reddit/constants/experiments.ts"),
+				r = n("./src/reddit/helpers/chooseVariant/index.ts");
+			const o = e => {
+				return Object(r.c)(e, {
+					experimentEligibilitySelector: r.a,
+					experimentName: s.vc
+				}) === s.Td
+			}
+		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -80811,4 +80823,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.653e6d62cac4cde2f872.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.399db485e447be7301f6.js.map

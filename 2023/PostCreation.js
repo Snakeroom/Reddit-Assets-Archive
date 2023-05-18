@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.0ef33fbc519d245338cd.js
-// Retrieved at 5/17/2023, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.7df1c452654c79fc01f5.js
+// Retrieved at 5/18/2023, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit~StandalonePostPage", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -39014,20 +39014,6 @@
 				experimentEligibilitySelector: r.a
 			}) === o.Ve.Enabled
 		},
-		"./src/reddit/selectors/experiments/postGuidance.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return s
-			}));
-			var o = n("./src/reddit/constants/experiments.ts"),
-				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const s = e => {
-				return Object(r.c)(e, {
-					experimentEligibilitySelector: r.a,
-					experimentName: o.vc
-				}) === o.Td
-			}
-		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -39805,4 +39791,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.0ef33fbc519d245338cd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.7df1c452654c79fc01f5.js.map
