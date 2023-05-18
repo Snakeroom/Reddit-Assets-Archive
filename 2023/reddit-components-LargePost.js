@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.f1b5676dbb447112be5e.js
-// Retrieved at 5/18/2023, 5:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.5291d05895eb5109b19a.js
+// Retrieved at 5/18/2023, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4300,7 +4300,7 @@
 						post: Me,
 						subreddit: ze,
 						isOwnProfileStats: !0
-					})), Object(M.d)(Me, p) && o.a.createElement(M.a, {
+					})), Object(g.s)(Me) && Object(M.d)(Me, p) && o.a.createElement(M.a, {
 						postId: Qe,
 						user: p
 					}), de && o.a.createElement(L.a, {
@@ -9896,4 +9896,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.f1b5676dbb447112be5e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.5291d05895eb5109b19a.js.map

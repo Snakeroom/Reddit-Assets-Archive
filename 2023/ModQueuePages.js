@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.02f7701dd33036e68765.js
-// Retrieved at 5/18/2023, 5:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.508339c11fc00b5cb5d5.js
+// Retrieved at 5/18/2023, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -10035,22 +10035,6 @@
 					}
 				})
 		},
-		"./src/reddit/hooks/useExperimentVariant.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return r
-			}));
-			var s = n("./node_modules/react-redux/es/index.js"),
-				o = n("./src/reddit/helpers/chooseVariant/index.ts");
-
-			function r(e) {
-				let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : o.a;
-				return Object(s.e)(n => Object(o.c)(n, {
-					experimentName: e,
-					experimentEligibilitySelector: t
-				}))
-			}
-		},
 		"./src/reddit/icons/fonts/Approve/index.tsx": function(e, t, n) {
 			"use strict";
 			var s = n("./node_modules/react/index.js"),
@@ -10990,4 +10974,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.02f7701dd33036e68765.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.508339c11fc00b5cb5d5.js.map
