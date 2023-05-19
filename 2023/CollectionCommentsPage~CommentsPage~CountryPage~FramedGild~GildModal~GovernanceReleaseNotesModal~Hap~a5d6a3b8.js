@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8.1b49fa9f2728c62c60b5.js
-// Retrieved at 5/18/2023, 5:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8.d0fc45a1b372eae425c8.js
+// Retrieved at 5/18/2023, 8:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -349,11 +349,11 @@
 				A = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const O = e => Object(A.c)(e, {
 				experimentEligibilitySelector: A.a,
-				experimentName: H.Zc
-			}) === H.Ud;
+				experimentName: H.Yc
+			}) === H.Td;
 			var j = s("./src/reddit/selectors/experiments/videoReactions.ts"),
-				U = s("./src/reddit/selectors/media.ts"),
-				D = s("./src/reddit/selectors/platform.ts"),
+				D = s("./src/reddit/selectors/media.ts"),
+				U = s("./src/reddit/selectors/platform.ts"),
 				W = s("./src/reddit/selectors/posts.ts"),
 				z = s("./src/reddit/selectors/user.ts"),
 				G = s("./src/reddit/selectors/video.ts"),
@@ -741,18 +741,18 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const Ue = K.a.wrapped(Ne, "TooltipControl", Oe.a),
-				De = K.a.div("NormalControl", Oe.a),
-				We = K.a.wrapped(Ue, "ControlSnoo", Oe.a),
-				ze = K.a.wrapped(Ue, "ControlPlay", Oe.a),
-				Ge = K.a.wrapped(De, "Time", Oe.a),
+			const De = K.a.wrapped(Ne, "TooltipControl", Oe.a),
+				Ue = K.a.div("NormalControl", Oe.a),
+				We = K.a.wrapped(De, "ControlSnoo", Oe.a),
+				ze = K.a.wrapped(De, "ControlPlay", Oe.a),
+				Ge = K.a.wrapped(Ue, "Time", Oe.a),
 				Ye = K.a.wrapped(Ge, "LeftTime", Oe.a),
 				Ze = K.a.wrapped(Ge, "RightTime", Oe.a),
 				Ke = K.a.div("LiveLabel", Oe.a),
-				Je = K.a.wrapped(De, "ControlScrubber", Oe.a),
-				Qe = K.a.wrapped(De, "ControlVolume", Oe.a),
-				qe = K.a.wrapped(Ue, "ControlExpand", Oe.a),
-				Xe = K.a.wrapped(Ue, "ControlCollapse", Oe.a),
+				Je = K.a.wrapped(Ue, "ControlScrubber", Oe.a),
+				Qe = K.a.wrapped(Ue, "ControlVolume", Oe.a),
+				qe = K.a.wrapped(De, "ControlExpand", Oe.a),
+				Xe = K.a.wrapped(De, "ControlCollapse", Oe.a),
 				$e = e => {
 					let {
 						className: t,
@@ -1130,11 +1130,11 @@
 				}),
 				Ot = s("./src/reddit/icons/svgs/VideoReplay/index.tsx"),
 				jt = s("./src/reddit/components/HTML5StreamPlayer/ReplayVideo/index.m.less"),
-				Ut = s.n(jt);
-			const Dt = K.a.div("Centered", Ut.a),
-				Wt = K.a.div("EndedOverlay", Ut.a),
-				zt = K.a.span("ReplayText", Ut.a),
-				Gt = K.a.button("ReplayButton", Ut.a);
+				Dt = s.n(jt);
+			const Ut = K.a.div("Centered", Dt.a),
+				Wt = K.a.div("EndedOverlay", Dt.a),
+				zt = K.a.span("ReplayText", Dt.a),
+				Gt = K.a.button("ReplayButton", Dt.a);
 			var Yt = e => {
 					const {
 						onClick: t,
@@ -1144,7 +1144,7 @@
 					} = e;
 					return d.a.createElement(Wt, {
 						onClick: t
-					}, d.a.createElement(Dt, null, d.a.createElement(Gt, null, d.a.createElement(Ot.a, null), d.a.createElement(zt, {
+					}, d.a.createElement(Ut, null, d.a.createElement(Gt, null, d.a.createElement(Ot.a, null), d.a.createElement(zt, {
 						className: "replay-video"
 					}, P.fbt._("Replay Video", null, {
 						hk: "1iD2Wj"
@@ -1199,13 +1199,13 @@
 					autoplayPref: z.d,
 					currentTime: G.c,
 					currentUser: z.m,
-					isOverlayOpen: D.i,
+					isOverlayOpen: U.i,
 					loadTimes: G.f,
 					metadata: G.h,
 					mutedInFeed: G.i,
 					postUrl: W.H,
 					started: G.k,
-					volume: U.f,
+					volume: D.f,
 					isReactionPillKillswitchEnabled: j.b,
 					isVideoCorrelationIdFix: O
 				}), (e, t) => {
@@ -2751,12 +2751,12 @@
 			const n = e => Object(o.c)(e, {
 					experimentName: i.tb,
 					experimentEligibilitySelector: a.e
-				}) === i.Ud,
+				}) === i.Td,
 				r = e => Object(o.c)(e, {
-					experimentName: i.Cc,
+					experimentName: i.Bc,
 					experimentEligibilitySelector: o.a
-				}) === i.Ud
+				}) === i.Td
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8.1b49fa9f2728c62c60b5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8.d0fc45a1b372eae425c8.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.b54e0037b9c90aed60d2.js
-// Retrieved at 5/18/2023, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.ead4a391e6584288b5f6.js
+// Retrieved at 5/18/2023, 8:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/avatarShareImages.ts": function(e, t, n) {
@@ -490,7 +490,7 @@
 						h = Object(w.a)(_.s, b),
 						O = Object(w.a)(_.t, b);
 					return {
-						canBoostPost: f === _.Ud || v === _.Ud || h === _.Ud || O === _.Ud
+						canBoostPost: f === _.Td || v === _.Td || h === _.Td || O === _.Td
 					}
 				},
 				A = e => {
@@ -3976,8 +3976,8 @@
 					if (Object(a.a)(e)) return !1;
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: r.Dc
-					}) === r.od.Enabled
+						experimentName: r.Cc
+					}) === r.nd.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
@@ -3990,8 +3990,8 @@
 			const s = e => {
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: r.jf
-				}) === r.Ud
+					experimentName: r.if
+				}) === r.Td
 			}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -4312,4 +4312,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.b54e0037b9c90aed60d2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.ead4a391e6584288b5f6.js.map
