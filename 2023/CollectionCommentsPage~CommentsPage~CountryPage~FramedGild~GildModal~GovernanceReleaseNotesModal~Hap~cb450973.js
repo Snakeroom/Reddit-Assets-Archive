@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~cb450973.a402e62b212050167bd2.js
-// Retrieved at 5/22/2023, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~cb450973.679b8bba8e1160589417.js
+// Retrieved at 5/22/2023, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~cb450973"], {
 		"./src/lib/collectible-expressions/index.ts": function(e, t, n) {
@@ -1762,7 +1762,7 @@
 					className: F.a.expressionLayer
 				}))), o.a.createElement("span", {
 					className: F.a.attribution
-				}, L.fbt._("{attributionLink} by Reddit", [L.fbt._param("attributionLink", o.a.createElement("a", {
+				}, L.fbt._("by Reddit via {attributionLink}", [L.fbt._param("attributionLink", o.a.createElement("a", {
 					href: "https://reddithelp.com/hc/articles/14430023441172",
 					target: "_blank",
 					rel: "noopener noreferrer",
@@ -1770,7 +1770,7 @@
 				}, L.fbt._("Collectible Expressions", null, {
 					hk: "3faisR"
 				})))], {
-					hk: "3bhRPZ"
+					hk: "3Vhru6"
 				})))
 			};
 			const A = (e, t, n) => {
@@ -2397,4 +2397,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~cb450973.a402e62b212050167bd2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~cb450973.679b8bba8e1160589417.js.map
