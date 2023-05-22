@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.e5a6b719c09b3f3c8fc1.js
-// Retrieved at 5/18/2023, 8:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.80960544ddd919f4e0f5.js
+// Retrieved at 5/22/2023, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -6188,28 +6188,38 @@
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return l
+				return f
 			})), s.d(t, "b", (function() {
-				return u
+				return h
 			}));
 			var n = s("./src/reddit/helpers/installGoodVisitFeedSearchTracker/index.ts"),
 				o = s("./node_modules/reselect/es/index.js"),
 				r = s("./src/reddit/selectors/user.ts"),
 				a = s("./src/reddit/constants/experiments.ts"),
-				i = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const d = Object(o.a)(e => Object(i.c)(e, {
-					experimentName: "d2x_search_string_routing_killswitch",
-					experimentEligibilitySelector: i.a
-				}), e => e),
-				c = Object(o.a)(d, e => e !== a.Td),
-				l = Object(o.a)(r.S, e => !e),
-				u = (e, t) => {
+				i = s("./src/reddit/helpers/chooseVariant/index.ts"),
+				d = s("./src/reddit/selectors/experiments/index.ts");
+			const c = /^\/?(new|top|hot|controversial|rising|best)?\/?$/,
+				l = /^\/r\/popular\/?((new|top|hot|controversial|rising|best)\/?)?$/,
+				u = /^\/r\/[^/]+\/?((controversial|new|about|top)\/?)?$/,
+				m = /^\/r\/[^/]+\/w(iki)?\/?([^/]+\/?)?$/,
+				p = (e, t) => !!(e => !!e.match(c) || !!e.match(l))(t) && Object(i.c)(e, {
+					experimentEligibilitySelector: d.f,
+					experimentName: a.Gf
+				}) === a.Td,
+				b = (e, t) => !!(e => !e.match(l) && (!!e.match(u) || !!e.match(m)))(t) && Object(i.c)(e, {
+					experimentEligibilitySelector: d.f,
+					experimentName: a.Ff
+				}) === a.Td,
+				f = Object(o.a)(r.S, e => !e),
+				h = (e, t) => {
 					const s = t();
 					Object(r.S)(s) || e.block(e => {
-						if ((e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname)) {
-							Object(n.f)(s);
-							const t = c(s) ? e.pathname + e.search : e.pathname;
-							return window.location.href = t, !1
+						const t = (e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname),
+							o = p(s, e.pathname),
+							r = b(s, e.pathname);
+						if (t || o || r) {
+							const t = e.pathname + e.search;
+							return Object(n.f)(s), window.location.href = t, !1
 						}
 					})
 				}
@@ -6227,7 +6237,7 @@
 				a = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(o.ug)(t)
+					return Boolean(t) && !Object(o.wg)(t)
 				},
 				d = Object(n.a)(i, r.d, (e, t) => e && !t)
 		},
@@ -6308,4 +6318,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.e5a6b719c09b3f3c8fc1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.80960544ddd919f4e0f5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow.171b5026d3c5400efaa5.js
-// Retrieved at 5/18/2023, 8:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow.09eec621725a311aaffe.js
+// Retrieved at 5/22/2023, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow"], {
 		"./src/lib/assertNever.ts": function(t, e, i) {
@@ -3068,9 +3068,9 @@
 					experimentName: r.td,
 					experimentEligibilitySelector: t => c(t, e)
 				}), t => t),
-				d = t => t === r.bg.NoCommunityWidgets,
-				u = t => t === r.bg.NoRulesModerators,
-				_ = t => t === r.bg.RelatedPostsDu
+				d = t => t === r.dg.NoCommunityWidgets,
+				u = t => t === r.dg.NoRulesModerators,
+				_ = t => t === r.dg.RelatedPostsDu
 		},
 		"./src/reddit/selectors/postGuidance.ts": function(t, e, i) {
 			"use strict";
@@ -3128,4 +3128,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow.171b5026d3c5400efaa5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow.09eec621725a311aaffe.js.map
