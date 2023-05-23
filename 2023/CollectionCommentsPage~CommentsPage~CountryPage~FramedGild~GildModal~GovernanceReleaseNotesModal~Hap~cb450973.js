@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~cb450973.679b8bba8e1160589417.js
-// Retrieved at 5/22/2023, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~cb450973.e51dc3ad7edc92596b3e.js
+// Retrieved at 5/23/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~cb450973"], {
 		"./src/lib/collectible-expressions/index.ts": function(e, t, n) {
@@ -735,7 +735,7 @@
 					s || F(e), i || A(e), R(Object(u.P)(p))
 				}
 
-				function V() {
+				function W() {
 					const e = {};
 					return w && (e.margin = "0 auto"), y || g || (e.maxHeight = `${h.d}px`), a.a.createElement(v, {
 						autoplay: N,
@@ -764,7 +764,7 @@
 						width: I ? void 0 : k
 					})
 				}
-				return y ? V() : a.a.createElement("div", {
+				return y ? W() : a.a.createElement("div", {
 					className: Object(l.a)(j.a.container, S, {
 						[j.a.centered]: w
 					})
@@ -776,7 +776,7 @@
 						height: f,
 						width: k
 					}
-				}, V()))
+				}, W()))
 			}
 		},
 		"./src/reddit/components/Media/index.m.less": function(e, t, n) {
@@ -1599,9 +1599,9 @@
 			})), n.d(t, "d", (function() {
 				return J
 			})), n.d(t, "a", (function() {
-				return V
-			})), n.d(t, "b", (function() {
 				return W
+			})), n.d(t, "b", (function() {
+				return V
 			})), n.d(t, "f", (function() {
 				return G
 			})), n.d(t, "h", (function() {
@@ -1790,7 +1790,7 @@
 				J = e => o.a.createElement(c.e, {
 					key: e
 				}),
-				V = (e, t, n, s, r) => {
+				W = (e, t, n, s, r) => {
 					const i = e.c;
 					if (!i) return;
 					const a = i.length,
@@ -1800,7 +1800,7 @@
 						key: s
 					}, d)
 				},
-				W = (e, t) => {
+				V = (e, t) => {
 					const n = e.c;
 					return o.a.createElement(c.k, {
 						key: t
@@ -1824,9 +1824,9 @@
 				Y = (e, t, n, s, r) => {
 					switch (e.e) {
 						case m.b:
-							return V(e, t, n, s, r);
+							return W(e, t, n, s, r);
 						case m.c:
-							return W(e, s);
+							return V(e, s);
 						case m.k:
 							return A(e, n, s);
 						case m.l:
@@ -2144,12 +2144,12 @@
 						rtJsonElementProps: a
 					});
 					switch (i) {
-						case b.Vf.SmIcon:
+						case b.Wf.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: s,
 								rtJsonElementProps: a
 							});
-						case b.Vf.SmIconHc:
+						case b.Wf.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2366,12 +2366,12 @@
 				c = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: o,
-						experimentName: s.Pf
+						experimentName: s.Qf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Vf.SmIcon || t === s.Vf.SmIconHc
+					return t === s.Wf.SmIcon || t === s.Wf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -2397,4 +2397,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~cb450973.679b8bba8e1160589417.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~cb450973.e51dc3ad7edc92596b3e.js.map

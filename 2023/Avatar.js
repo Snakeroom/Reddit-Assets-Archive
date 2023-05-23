@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Avatar.f4e3bc281f562ff0489d.js
-// Retrieved at 5/22/2023, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Avatar.27ba8126bee5f9b3f1d7.js
+// Retrieved at 5/23/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Avatar"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, s) {
@@ -51,7 +51,7 @@
 				} = e;
 				const b = Object(p.a)(),
 					f = Object(c.e)(e => e.user.session),
-					[j, E] = Object(n.useState)(!1),
+					[E, j] = Object(n.useState)(!1),
 					A = Object(n.useContext)(l.a),
 					g = Object(c.d)(),
 					S = () => g(Object(i.openLoginModal)()),
@@ -59,7 +59,7 @@
 				Object(n.useEffect)(() => {
 					b(u.s)
 				}, [b]), Object(n.useEffect)(() => {
-					E(!0)
+					j(!0)
 				}, []);
 				const {
 					activeDetails: h,
@@ -72,7 +72,7 @@
 					activeDetails: h || void 0,
 					shopTabState: k || void 0
 				}), [h, R, T, k]), C = Object(c.e)(e => !Object(O.S)(e) && Object(m.x)(e));
-				if (!f || !j) return null;
+				if (!f || !E) return null;
 				if (C) return a.a.createElement("div", {
 					className: Object(o.a)(x.a.container, {
 						[x.a.containerExp]: A
@@ -139,8 +139,8 @@
 						_ = n ? new Date(n.expires).getTime() : 1,
 						v = Object(c.e)(m.fb),
 						f = Object(i.a)(),
-						j = O ? o.a.Rinkeby : o.a.Ethereum,
-						E = Object(a.useMemo)(() => ({
+						E = O ? o.a.Rinkeby : o.a.Ethereum,
+						j = Object(a.useMemo)(() => ({
 							headers: {
 								Authorization: `Bearer ${x}`
 							},
@@ -151,7 +151,7 @@
 							STRIPE_API_KEY: r.a.stripe.apiKey(e),
 							STRIPE_API_VERSION: r.a.stripe.apiVersion(t),
 							ACCESS_TOKEN: x,
-							BLOCKCHAIN_PROVIDER: j,
+							BLOCKCHAIN_PROVIDER: E,
 							OVERRIDES: s ? {
 								NO_VAULT: !0
 							} : {}
@@ -172,11 +172,11 @@
 							})
 						}, [f]);
 					return Object(a.useMemo)(() => ({
-						authHeaders: E,
+						authHeaders: j,
 						config: A,
 						isNightMode: v,
 						sendEvent: g
-					}), [E, A, v, g])
+					}), [j, A, v, g])
 				}
 		},
 		"./src/reddit/pages/Avatar/index.tsx": function(e, t, s) {
@@ -204,10 +204,10 @@
 			const c = e => {
 					return !(Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: r.Ce
+						experimentName: r.De
 					}) === r.Td)
 				},
-				o = Object(a.a)(r.De)
+				o = Object(a.a)(r.Ee)
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, s) {
 			"use strict";
@@ -221,4 +221,4 @@
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.f4e3bc281f562ff0489d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.27ba8126bee5f9b3f1d7.js.map

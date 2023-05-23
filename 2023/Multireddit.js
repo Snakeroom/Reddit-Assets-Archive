@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.bf8944fd9815ac2618e5.js
-// Retrieved at 5/22/2023, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.4cb6d9ad1652098c247e.js
+// Retrieved at 5/23/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, n) {
@@ -1828,22 +1828,26 @@
 				l = /^\/r\/popular\/?((new|top|hot|controversial|rising|best)\/?)?$/,
 				u = /^\/r\/[^/]+\/?((controversial|new|about|top)\/?)?$/,
 				m = /^\/r\/[^/]+\/w(iki)?\/?([^/]+\/?)?$/,
-				b = (e, t) => !!(e => !!e.match(d) || !!e.match(l))(t) && Object(c.c)(e, {
-					experimentEligibilitySelector: a.f,
-					experimentName: i.Gf
-				}) === i.Td,
-				p = (e, t) => !!(e => !e.match(l) && (!!e.match(u) || !!e.match(m)))(t) && Object(c.c)(e, {
-					experimentEligibilitySelector: a.f,
-					experimentName: i.Ff
-				}) === i.Td,
+				b = e => !!e.match(d) || !!e.match(l),
+				p = e => !e.match(l) && (!!e.match(u) || !!e.match(m)),
 				f = Object(o.a)(s.S, e => !e),
 				h = (e, t) => {
 					const n = t();
 					Object(s.S)(n) || e.block(e => {
 						const t = (e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname),
-							o = b(n, e.pathname),
-							s = p(n, e.pathname);
-						if (t || o || s) {
+							o = ((e, t) => !(!p(t) && !b(t)) && Object(c.c)(e, {
+								experimentEligibilitySelector: a.f,
+								experimentName: i.pe
+							}) === i.Td)(n, e.pathname),
+							s = ((e, t) => !!b(t) && Object(c.c)(e, {
+								experimentEligibilitySelector: a.f,
+								experimentName: i.Hf
+							}) === i.Td)(n, e.pathname),
+							d = ((e, t) => !!p(t) && Object(c.c)(e, {
+								experimentEligibilitySelector: a.f,
+								experimentName: i.Gf
+							}) === i.Td)(n, e.pathname);
+						if (o || t || s || d) {
 							const t = e.pathname + e.search;
 							return Object(r.f)(n), window.location.href = t, !1
 						}
@@ -1858,4 +1862,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.bf8944fd9815ac2618e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.4cb6d9ad1652098c247e.js.map

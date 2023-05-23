@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow.09eec621725a311aaffe.js
-// Retrieved at 5/22/2023, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow.2fd826b97acca72c15b9.js
+// Retrieved at 5/23/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow"], {
 		"./src/lib/assertNever.ts": function(t, e, i) {
@@ -782,7 +782,7 @@
 			})), i.d(e, "g", (function() {
 				return $
 			})), i.d(e, "c", (function() {
-				return J
+				return Z
 			})), i.d(e, "f", (function() {
 				return et
 			})), i.d(e, "b", (function() {
@@ -1009,7 +1009,7 @@
 						if (d instanceof Error) throw d;
 						n(Object(_.i)(d))
 					}
-				}, Z = Object(d.a)(A.b), J = (t, e, i) => async (n, o, l) => {
+				}, J = Object(d.a)(A.b), Z = (t, e, i) => async (n, o, l) => {
 					const c = o(),
 						a = c.structuredStyles.models[t] || {},
 						d = c.structuredStyles.draft,
@@ -1020,12 +1020,12 @@
 								...r()(d, i),
 								...e
 							};
-						n(Z({
+						n(J({
 							subredditId: t,
 							styles: o
 						}))
 					} else {
-						n(Z({
+						n(J({
 							subredditId: t,
 							styles: a
 						}))
@@ -2326,7 +2326,7 @@
 			})), i.d(e, "c", (function() {
 				return $
 			})), i.d(e, "v", (function() {
-				return J
+				return Z
 			})), i.d(e, "u", (function() {
 				return tt
 			})), i.d(e, "H", (function() {
@@ -2680,11 +2680,11 @@
 						}
 					})
 				},
-				Z = "community_recommendation",
-				J = () => t => ({
+				J = "community_recommendation",
+				Z = () => t => ({
 					...E(t),
 					action: n.c.VIEW,
-					noun: Z,
+					noun: J,
 					listing: {
 						links: Object(c.c)(t).map(e => Object(u.I)(t, e.name))
 					}
@@ -2692,7 +2692,7 @@
 				tt = (t, e) => i => ({
 					...E(i),
 					action: n.c.CLICK,
-					noun: Z,
+					noun: J,
 					actionInfo: {
 						..._.d(i),
 						position: e
@@ -2706,13 +2706,13 @@
 					Object(p.a)({
 						...E(t),
 						action: n.c.SKIP,
-						noun: Z
+						noun: J
 					})
 				},
 				it = (t, e) => i => ({
 					...E(i),
 					action: n.c.VIEW,
-					noun: `${Z}_hover`,
+					noun: `${J}_hover`,
 					actionInfo: {
 						..._.d(i),
 						position: e
@@ -2959,35 +2959,35 @@
 				_ = t => {
 					return Object(s.c)(t, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.Ze
-					}) === o.bf.ContentMatch
+						experimentName: o.af
+					}) === o.cf.ContentMatch
 				},
 				f = t => {
 					return Object(s.c)(t, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.Ze
-					}) === o.bf.ConfidenceAndSuccess
+						experimentName: o.af
+					}) === o.cf.ConfidenceAndSuccess
 				},
 				p = t => {
 					const e = Object(s.c)(t, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.Ze
+						experimentName: o.af
 					});
-					return e === o.bf.ContentMatch || e === o.bf.ConfidenceAndSuccess || e === o.V.Control1 || e === o.V.Control2
+					return e === o.cf.ContentMatch || e === o.cf.ConfidenceAndSuccess || e === o.V.Control1 || e === o.V.Control2
 				},
 				m = t => {
 					const e = Object(s.c)(t, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.Ze
+						experimentName: o.af
 					});
 					return e === o.V.Control1 || e === o.V.Control2
 				},
 				b = t => {
 					const e = Object(s.c)(t, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.Ze
+						experimentName: o.af
 					});
-					return e === o.bf.ContentMatch || e === o.bf.ConfidenceAndSuccess
+					return e === o.cf.ContentMatch || e === o.cf.ConfidenceAndSuccess
 				},
 				S = t => t.creations.subredditRec.api.pending,
 				E = t => t.creations.subredditRec.api.error,
@@ -3068,9 +3068,9 @@
 					experimentName: r.td,
 					experimentEligibilitySelector: t => c(t, e)
 				}), t => t),
-				d = t => t === r.dg.NoCommunityWidgets,
-				u = t => t === r.dg.NoRulesModerators,
-				_ = t => t === r.dg.RelatedPostsDu
+				d = t => t === r.eg.NoCommunityWidgets,
+				u = t => t === r.eg.NoRulesModerators,
+				_ = t => t === r.eg.RelatedPostsDu
 		},
 		"./src/reddit/selectors/postGuidance.ts": function(t, e, i) {
 			"use strict";
@@ -3128,4 +3128,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow.09eec621725a311aaffe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow.2fd826b97acca72c15b9.js.map

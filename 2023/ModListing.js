@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.ab2024b2badbb33b1ff5.js
-// Retrieved at 5/22/2023, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.651694746195cbfedc0a.js
+// Retrieved at 5/23/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, n) {
@@ -490,9 +490,9 @@
 		"./src/reddit/actions/pages/modListing/index.ts": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "modListingDataPending", (function() {
-				return M
-			})), n.d(t, "modListingDataLoaded", (function() {
 				return T
+			})), n.d(t, "modListingDataLoaded", (function() {
+				return M
 			})), n.d(t, "modListingDataFailed", (function() {
 				return w
 			})), n.d(t, "modListingPageRequested", (function() {
@@ -565,18 +565,18 @@
 				L = n("./src/reddit/routes/modListing/index.ts"),
 				N = n("./src/reddit/selectors/user.ts"),
 				P = n("./src/reddit/actions/pages/modListing/constants.ts");
-			const M = Object(a.a)(P.f),
-				T = Object(a.a)(P.e),
+			const T = Object(a.a)(P.f),
+				M = Object(a.a)(P.e),
 				w = Object(a.a)(P.d),
 				F = (e, t) => async (n, s, i) => {
 					const o = s();
 					if (o.listings.postOrder.api.pending[e]) return;
-					n(M({
+					n(T({
 						key: e
 					}));
 					const a = await Object(C.a)("modListing", () => _(i.apiContext(), t)),
 						d = `error-${e}`;
-					a.ok ? (n(T({
+					a.ok ? (n(M({
 						key: e,
 						meta: o.meta,
 						...a.body
@@ -2027,9 +2027,9 @@
 					redditStyle: L,
 					sidebar: N,
 					sidebars: P,
-					trendingUnit: M,
-					subredditId: T
-				} = e, w = M ? "28px" : "0", F = C ? {
+					trendingUnit: T,
+					subredditId: M
+				} = e, w = T ? "28px" : "0", F = C ? {
 					marginRight: `${d.p}px`,
 					marginTop: w
 				} : {
@@ -2053,7 +2053,7 @@
 				const A = y ? `${I||l.a+2*d.l}px` : "100%",
 					H = Object(r.useContext)(u.a);
 				return s.a.createElement(v.a, {
-					subredditId: T
+					subredditId: M
 				}, s.a.createElement("div", {
 					className: Object(a.a)(E.a.outerContainer, c.i, m, {
 						[E.a.outerContainerExp]: H
@@ -2069,7 +2069,7 @@
 					style: {
 						maxWidth: A
 					}
-				}, M), s.a.createElement("div", {
+				}, T), s.a.createElement("div", {
 					className: E.a.body,
 					style: {
 						maxWidth: A
@@ -2140,7 +2140,7 @@
 			})), o.a.createElement(O.b, {
 				isSidebar: !1,
 				subredditsOrProfilesIds: e.moderatedCommunitiesIds
-			})))), M = e => o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
+			})))), T = e => o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
 				className: L.a.feedDetailsTitle
 			}, o.a.createElement(S.a, {
 				className: L.a.modIcon
@@ -2156,11 +2156,11 @@
 				subredditsOrProfilesIds: e.moderatedCommunitiesIds
 			}) : o.a.createElement("div", {
 				className: L.a.loadingBar
-			})), T = Object(d.c)({
+			})), M = Object(d.c)({
 				isModalOpen: Object(C.b)("MOD_LISTING_FEED_DETAILS_MODAL_ID"),
 				moderatedCommunitiesIds: I.h
 			});
-			var w = Object(a.b)(T, (e, t) => {
+			var w = Object(a.b)(M, (e, t) => {
 					let {} = t;
 					return {
 						toggleModal: () => e(Object(_.i)("MOD_LISTING_FEED_DETAILS_MODAL_ID"))
@@ -2171,7 +2171,7 @@
 						moderatedCommunitiesIds: n,
 						toggleModal: r
 					} = e;
-					return n ? o.a.createElement(o.a.Fragment, null, o.a.createElement(M, {
+					return n ? o.a.createElement(o.a.Fragment, null, o.a.createElement(T, {
 						moderatedCommunitiesIds: n,
 						onSeeMoreDetails: r
 					}), t && o.a.createElement(P, {
@@ -2492,7 +2492,7 @@
 				const p = Object(o.e)(e => e.subreddits.survey[n]),
 					b = Object(o.e)(e => e.subreddits.progressModule[n]),
 					h = Object(o.e)(u.a),
-					g = h !== c.We.NewModule;
+					g = h !== c.Xe.NewModule;
 				return (null === (s = null == b ? void 0 : b.cards) || void 0 === s ? void 0 : s.length) > 0 && g ? i.a.createElement(m, {
 					closeModuleOnMount: !!t && t !== l.g.Large,
 					subredditId: n,
@@ -2520,7 +2520,7 @@
 						experimentEligibilitySelector: i.S,
 						experimentName: r.Cd
 					});
-					return !(!t || Object(r.wg)(t))
+					return !(!t || Object(r.xg)(t))
 				},
 				a = e => {
 					return Object(s.c)(e, {
@@ -2537,9 +2537,9 @@
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = e => Object(s.c)(e, {
-				experimentName: r.Me,
+				experimentName: r.Ne,
 				experimentEligibilitySelector: s.a
-			}) === r.Ve.Enabled
+			}) === r.We.Enabled
 		},
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, n) {
 			"use strict";
@@ -2558,22 +2558,26 @@
 				l = /^\/r\/popular\/?((new|top|hot|controversial|rising|best)\/?)?$/,
 				u = /^\/r\/[^/]+\/?((controversial|new|about|top)\/?)?$/,
 				m = /^\/r\/[^/]+\/w(iki)?\/?([^/]+\/?)?$/,
-				p = (e, t) => !!(e => !!e.match(c) || !!e.match(l))(t) && Object(a.c)(e, {
-					experimentEligibilitySelector: d.f,
-					experimentName: o.Gf
-				}) === o.Td,
-				b = (e, t) => !!(e => !e.match(l) && (!!e.match(u) || !!e.match(m)))(t) && Object(a.c)(e, {
-					experimentEligibilitySelector: d.f,
-					experimentName: o.Ff
-				}) === o.Td,
+				p = e => !!e.match(c) || !!e.match(l),
+				b = e => !e.match(l) && (!!e.match(u) || !!e.match(m)),
 				h = Object(s.a)(i.S, e => !e),
 				g = (e, t) => {
 					const n = t();
 					Object(i.S)(n) || e.block(e => {
 						const t = (e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname),
-							s = p(n, e.pathname),
-							i = b(n, e.pathname);
-						if (t || s || i) {
+							s = ((e, t) => !(!b(t) && !p(t)) && Object(a.c)(e, {
+								experimentEligibilitySelector: d.f,
+								experimentName: o.pe
+							}) === o.Td)(n, e.pathname),
+							i = ((e, t) => !!p(t) && Object(a.c)(e, {
+								experimentEligibilitySelector: d.f,
+								experimentName: o.Hf
+							}) === o.Td)(n, e.pathname),
+							c = ((e, t) => !!b(t) && Object(a.c)(e, {
+								experimentEligibilitySelector: d.f,
+								experimentName: o.Gf
+							}) === o.Td)(n, e.pathname);
+						if (s || t || i || c) {
 							const t = e.pathname + e.search;
 							return Object(r.f)(n), window.location.href = t, !1
 						}
@@ -2612,4 +2616,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.ab2024b2badbb33b1ff5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.651694746195cbfedc0a.js.map
