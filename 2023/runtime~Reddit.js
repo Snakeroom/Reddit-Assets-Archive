@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.8c5f183651905f9138b3.js
-// Retrieved at 5/23/2023, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.3594c75d4f8a783f4786.js
+// Retrieved at 5/23/2023, 1:40:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1382,7 +1382,7 @@
 						ChangeUsernameModals: "12130e8d1683c2d7a14c",
 						ChangeUsernameTooltip: "930fbc6b22bf0ff6e2d0",
 						ClaimFreeAwardModal: "420bee13e97ff7778ea0",
-						"CoinPurchaseModal~PremiumPurchaseModal": "b50f6a9aa0860f39bbf5",
+						"CoinPurchaseModal~PremiumPurchaseModal": "4210ba3fe30c2757aa19",
 						CoinPurchaseModal: "ce64ef36d4e0ec27287f",
 						PremiumPurchaseModal: "5e5829dfa93c24c68e97",
 						Coins: "e127760f21230796779c",
@@ -1462,7 +1462,7 @@
 						NsfwSearchModal: "2a5f8650a9483455b476",
 						PostFlowUpsellModal: "c006d5d1958d4b927113",
 						PostSetPageAction: "079d4a7d1ad95d30aaba",
-						"Premium~reddit-components-Econ-Prediction-PremiumModal": "20f3acb99649cfbcb592",
+						"Premium~reddit-components-Econ-Prediction-PremiumModal": "fc3f3125309725e6793f",
 						Premium: "f567ad8e65ea27bf5c32",
 						"reddit-components-Econ-Prediction-PremiumModal": "da64ca129afd213379f3",
 						ProfileFollowersAction: "19b5ae53a2d4eff191b3",
@@ -1517,7 +1517,7 @@
 						"vendors~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-~339111b0": "003c5a051b1aaec502e5",
 						"reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67": "a9bc764ea04240b53444",
 						"reddit-components-Governance-TransactionModals-BurnPointsModal": "f0b8347d5df6ef351582",
-						"reddit-components-Governance-TransactionModals-ConvertToCoinsModal": "ef94f4a4dc2580c4a33e",
+						"reddit-components-Governance-TransactionModals-ConvertToCoinsModal": "00a1ad08ea23e94a8970",
 						"vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0": "201e0a53b4d00907b96f",
 						"ChatMessageInput~MembershipPaywallPage~RichTextEditor": "9aaed3240527b8b791a4",
 						MembershipPaywallPage: "3fb6b2fbfdf74bb0fde5",
@@ -1541,7 +1541,7 @@
 						"vendors~ModStatsChart~Settings~ViewsTooltip": "ca7c845d62fd39d960b6",
 						"vendors~Settings": "86b1cfc53320ea8eef91",
 						"Settings~SubredditWiki": "9d9521d7fe54c317221b",
-						Settings: "d888f04359a16705723c",
+						Settings: "da464176dca1935a222a",
 						"vendors~ExportTheme~ImportTheme": "4e4dc70c7eeb3e02be12",
 						ExportTheme: "fba93d918b220f151980",
 						ImportTheme: "ffa092f19a1ee16c7439",
@@ -1608,7 +1608,7 @@
 						"reddit-components-ModQueueActivitySummaryCards": "8fb76e6f396986e23b21",
 						"reddit-components-ModQueueActivitySummaryCards-ModActivityPreview": "f9f2c9d6320c537efbd1",
 						"reddit-components-BlankPost": "e498f29ac822b2b926b7",
-						PennyPurchaseModal: "c837cec4ffab18da4364",
+						PennyPurchaseModal: "d6e2462fb66f0628e5a8",
 						editCollectionModal: "2b16bc294ccb125d71fa",
 						NewCommunityProgress: "b4cf1817f351cf0b7dc6",
 						FeaturedLiveEntrypointAnnouncement: "34892a7da4c11121f89f",
@@ -1624,7 +1624,7 @@
 						NftProfileUnit: "b5888ae273fd212586a0",
 						JsonEMEntityView: "858027fa85eb87c716ab",
 						"reddit-components-CrisisFlow-CrisisFlowPage": "a64ded7c6dee6a8810ea",
-						"reddit-pages-PaypalFinishPage": "b5f9aade66211a8b12d4",
+						"reddit-pages-PaypalFinishPage": "d714d4d719b69a7628ef",
 						"reddit-components-NotificationUnit-Button": "6c46d7d2e9c0b6984c2d",
 						CrisisFlow: "a7609dfd0cfe3bc5ade4",
 						"devPlatform-components-AdminPanel-Utilities-DevPlatformConfig": "bc85a86fd626b0cba500",
@@ -1775,4 +1775,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.8c5f183651905f9138b3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.3594c75d4f8a783f4786.js.map
