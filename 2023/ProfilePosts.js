@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.e37cf4d6acb2f130b508.js
-// Retrieved at 5/23/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.ce2ac7dd3a30bf0b8a61.js
+// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -933,7 +933,7 @@
 						const e = {
 							includeIdentity: h,
 							includeModerated: v,
-							recentPostIds: Object(S.T)(null == b ? void 0 : b.id).reverse()
+							recentPostIds: Object(S.U)(null == b ? void 0 : b.id).reverse()
 						};
 						x = await ((e, t) => Object(d.a)(e, {
 							...u,
@@ -1391,7 +1391,7 @@
 					let {
 						match: r
 					} = t;
-					return Object(C.h)(e, c.rc + r.params.profileName)
+					return Object(C.h)(e, c.qc + r.params.profileName)
 				}, (e, t) => {
 					let {
 						match: r
@@ -1569,4 +1569,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.e37cf4d6acb2f130b508.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.ce2ac7dd3a30bf0b8a61.js.map

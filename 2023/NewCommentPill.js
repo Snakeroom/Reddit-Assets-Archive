@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommentPill.b6f874ae55db014ad142.js
-// Retrieved at 2/23/2023, 2:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommentPill.f7eb62aa5a2efc686805.js
+// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommentPill"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, s) {
@@ -101,8 +101,8 @@
 					{
 						post: S
 					} = Object(O.a)() || {},
-					[w, P] = Object(o.useReducer)(v, 0),
-					D = Object(c.e)(_.a),
+					[w, D] = Object(o.useReducer)(v, 0),
+					P = Object(c.e)(_.a),
 					T = Object(c.e)(e => Object(h.a)(e) || Object(h.c)(e)),
 					[U, M] = Object(o.useState)(!1);
 				Object(o.useEffect)(() => {
@@ -126,7 +126,7 @@
 						if (!S) return;
 						k(!1), K.current && (clearTimeout(K.current), K.current = null), L.current && (L.current = null), B.current = 2, (() => {
 							const e = new URLSearchParams(location.search);
-							e.get(j.E) !== C.w.NEW && (e.set(j.E, C.w.NEW), z(Object(i.b)(Object(r.c)({
+							e.get(j.D) !== C.w.NEW && (e.set(j.D, C.w.NEW), z(Object(i.b)(Object(r.c)({
 								pathname: location.pathname,
 								search: e.toString()
 							}, {
@@ -142,7 +142,7 @@
 								hasSortParam: !0,
 								sort: C.w.NEW
 							}, C.w.NEW))
-						})(), Object(N.a)(!!E), R.current = setTimeout(() => P({
+						})(), Object(N.a)(!!E), R.current = setTimeout(() => D({
 							type: "reset"
 						}), 1e3)
 					}, [S]);
@@ -160,12 +160,12 @@
 					const {
 						topLevelCommentCountChange: t
 					} = e.subscribe.data;
-					t && P({
+					t && D({
 						type: "add",
 						delta: t
 					})
 				}, []);
-				return D ? a.a.createElement(a.a.Fragment, null, a.a.createElement(d.a, {
+				return P ? a.a.createElement(a.a.Fragment, null, a.a.createElement(d.a, {
 					variables: W,
 					onData: J,
 					queryKey: "topLevelCommentCountChange"
@@ -382,7 +382,7 @@
 					[N, x] = Object(u.useState)(0),
 					[y, v] = Object(u.useState)(0),
 					E = Object(u.useCallback)(a()(e => {
-						e(0), D(null)
+						e(0), P(null)
 					}, j.e), []),
 					R = Object(u.useCallback)(l()((e, t) => {
 						t(e), E(t)
@@ -395,21 +395,21 @@
 						R(t, "PostReadingCountMessageData" === s ? x : v)
 					}, []),
 					w = Object(u.useRef)(""),
-					[P, D] = Object(u.useState)(null),
+					[D, P] = Object(u.useState)(null),
 					T = Object(u.useRef)(null);
 				Object(u.useEffect)(() => {
-					if (!t && !o) return void(P && D(null));
+					if (!t && !o) return void(D && P(null));
 					if (N >= j.a || y >= j.b) return w.current = ((e, t) => {
 						return t >= j.b ? n.fbt._("{number of people typing} people typing...", [n.fbt._param("number of people typing", _(t))], {
 							hk: "31RibC"
 						}) : n.fbt._("{number of users reading} people here", [n.fbt._param("number of users reading", _(e))], {
 							hk: "3foy5g"
 						})
-					})(N, y), void(P || D(Date.now()));
-					if (!P) return;
-					const e = Date.now() - P;
-					e >= j.f ? D(null) : T.current = setTimeout(() => D(null), j.f - e)
-				}, [P, t, o, N, y]);
+					})(N, y), void(D || P(Date.now()));
+					if (!D) return;
+					const e = Date.now() - D;
+					e >= j.f ? P(null) : T.current = setTimeout(() => P(null), j.f - e)
+				}, [D, t, o, N, y]);
 				const {
 					className: U,
 					shouldMount: M,
@@ -417,7 +417,7 @@
 				} = Object(f.a)({
 					defaultClass: h.a.usersCountIndicator,
 					addedClass: h.a.isDisplayed,
-					mountCondition: !!P
+					mountCondition: !!D
 				});
 				return Object(u.useEffect)(() => () => {
 					E.cancel(), R.cancel(), T.current && clearTimeout(T.current)
@@ -525,4 +525,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommentPill.b6f874ae55db014ad142.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommentPill.f7eb62aa5a2efc686805.js.map

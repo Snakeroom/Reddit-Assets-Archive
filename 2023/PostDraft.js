@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.fca6a466bacb0849754c.js
-// Retrieved at 5/23/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.d6587b573cc8b609e41c.js
+// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -299,9 +299,9 @@
 			})), n.d(t, "a", (function() {
 				return H
 			})), n.d(t, "c", (function() {
-				return q
+				return G
 			})), n.d(t, "h", (function() {
-				return V
+				return Y
 			})), n.d(t, "f", (function() {
 				return Q
 			})), n.d(t, "d", (function() {
@@ -522,7 +522,7 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, Y = Object(i.a)(c.e), q = (e, t) => async (n, i, a) => {
+				}, q = Object(i.a)(c.e), G = (e, t) => async (n, i, a) => {
 					let {
 						apiContext: c
 					} = a;
@@ -533,7 +533,7 @@
 						} = l.platform.currentPage, a = Object(P.q)(l, {
 							collectionId: e
 						}), c = a && a.title || "", u = a && a.subredditId, m = u ? Object(I.c)(l, u) : "/";
-						n(Y({
+						n(q({
 							collectionId: e,
 							collection: a
 						})), n(t ? Object(s.c)(Object(r.a)(i, ["collection"])) : Object(s.b)(m)), n(Object(d.f)({
@@ -548,14 +548,14 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, G = Object(i.a)(c.r), K = Object(i.a)(c.n), U = Object(i.a)(c.s), V = (e, t) => async (n, s, r) => {
+				}, K = Object(i.a)(c.r), U = Object(i.a)(c.n), X = Object(i.a)(c.s), Y = (e, t) => async (n, s, r) => {
 					let {
 						apiContext: i
 					} = r;
-					n(G());
+					n(K());
 					const a = await v(i(), e, t);
 					let c = !1;
-					if (a.ok) n(U({
+					if (a.ok) n(X({
 						collectionId: e,
 						newTitle: t
 					})), n(Object(d.f)({
@@ -566,7 +566,7 @@
 					})), c = !0;
 					else {
 						const e = a.error;
-						n(K(e)), n(Object(d.f)({
+						n(U(e)), n(Object(d.f)({
 							kind: w.b.Error,
 							text: o.fbt._("Something went wrong. Just don't panic.", null, {
 								hk: "4Ck6Cm"
@@ -574,7 +574,7 @@
 						}))
 					}
 					return c
-				}, X = Object(i.a)(c.l), J = Object(i.a)(c.m), Z = Object(i.a)(c.k), Q = e => async (t, n) => {
+				}, V = Object(i.a)(c.l), J = Object(i.a)(c.m), Z = Object(i.a)(c.k), Q = e => async (t, n) => {
 					const o = n();
 					if (Object(S.b)(o) || Object(S.c)(o)) return void t(Object(a.Z)(Object(O.b)(e.permalink), e.id));
 					const r = o.platform.currentPage.locationState;
@@ -611,11 +611,11 @@
 								hk: "4Ck6Cm"
 							})
 						}))), c
-					})(s, a))), c && n.push(t(V(s, c))), void 0 !== r && n.push(t(((e, t) => async (n, s, r) => {
+					})(s, a))), c && n.push(t(Y(s, c))), void 0 !== r && n.push(t(((e, t) => async (n, s, r) => {
 						let {
 							apiContext: i
 						} = r;
-						n(X());
+						n(V());
 						const a = await E(i(), e, t);
 						let c = !1;
 						if (a.ok) n(J({
@@ -1143,7 +1143,7 @@
 				const {
 					className: t,
 					submissionType: n
-				} = e, s = n === c.cc.CROSSPOST;
+				} = e, s = n === c.bc.CROSSPOST;
 				return r.a.createElement("div", {
 					className: t
 				}, r.a.createElement(g, null, r.a.createElement(b, null), s ? o.fbt._("Crossposting to Reddit", null, {
@@ -1298,7 +1298,7 @@
 						display: g.h.COMPACT,
 						rules: h,
 						redditStyle: !0
-					})), d === S.cc.TALK && c.a.createElement(p.a, null, c.a.createElement(E.a, null)), c.a.createElement(y.a, null), c.a.createElement(p.a, null), c.a.createElement(j.a, null), c.a.createElement(m.a, {
+					})), d === S.bc.TALK && c.a.createElement(p.a, null, c.a.createElement(E.a, null)), c.a.createElement(y.a, null), c.a.createElement(p.a, null), c.a.createElement(j.a, null), c.a.createElement(m.a, {
 						redditStyle: !0
 					}))
 				};
@@ -1879,7 +1879,7 @@
 					}, t.title), s.a.createElement("div", {
 						className: k.a.metaLine
 					}, S._("Posted · {timeAgo}", [S._param("timeAgo", s.a.createElement(_.d, {
-						seconds: t.created / C.Yb
+						seconds: t.created / C.Xb
 					}))], {
 						hk: "ZVJpV"
 					}))), s.a.createElement(E.a, {
@@ -2647,12 +2647,12 @@
 				k = e => {
 					return {
 						postScheduled: !!e,
-						submitScheduledTime: e && e.submitTime === c.j.AtEventTime ? Object(i.f)(e.startDate).getTime() / s.Yb : void 0
+						submitScheduledTime: e && e.submitTime === c.j.AtEventTime ? Object(i.f)(e.startDate).getTime() / s.Xb : void 0
 					}
 				},
 				E = e => {
-					const t = Object(i.f)(e.startDate).getTime() / s.Yb,
-						n = Object(i.f)(e.endDate).getTime() / s.Yb;
+					const t = Object(i.f)(e.startDate).getTime() / s.Xb,
+						n = Object(i.f)(e.endDate).getTime() / s.Xb;
 					return {
 						eventStartTimestamp: t,
 						eventEndTimestamp: n,
@@ -3104,7 +3104,7 @@
 					return t ? s.a.createElement(s.a.Fragment, null, s.a.createElement(I, null, s.a.createElement(N, null, L._("Review draft", null, {
 						hk: "tclLq"
 					}))), s.a.createElement(T, null, n && s.a.createElement(R, null, L._("Draft last updated by {username} {timeDiff}", [L._param("username", `u/${n.name}`), L._param("timeDiff", s.a.createElement(P.d, {
-						seconds: (t.modified || t.created) / a.Yb
+						seconds: (t.modified || t.created) / a.Xb
 					}))], {
 						hk: "3QCJvU"
 					})), s.a.createElement(D, null, t.title), s.a.createElement(x, {
@@ -3115,8 +3115,8 @@
 				W = n("./src/reddit/layout/page/Listing/index.tsx"),
 				z = n("./src/reddit/pages/ErrorPages/index.tsx"),
 				H = n("./src/reddit/selectors/postDraft.ts");
-			const Y = Object(d.v)(),
-				q = Object(i.c)({
+			const q = Object(d.v)(),
+				G = Object(i.c)({
 					draft: (e, t) => {
 						let {
 							match: n
@@ -3126,8 +3126,8 @@
 						})
 					}
 				}),
-				G = Object(r.b)(q);
-			class K extends o.Component {
+				K = Object(r.b)(G);
+			class U extends o.Component {
 				render() {
 					const {
 						draft: e,
@@ -3148,7 +3148,7 @@
 					})
 				}
 			}
-			t.default = Y(G(K))
+			t.default = q(K(U))
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, n) {
 			"use strict";
@@ -3182,4 +3182,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.fca6a466bacb0849754c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.d6587b573cc8b609e41c.js.map

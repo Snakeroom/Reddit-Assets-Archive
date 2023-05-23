@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.739a90d373bc83e1827a.js
-// Retrieved at 5/23/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.04ca78bd4a712a27d594.js
+// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -965,14 +965,14 @@
 							subredditName: d = P.e,
 							wikiPageName: c,
 							wikiSubRoute: l
-						} = e, u = t[I.O], m = t[I.P], p = u ? Object(v.a)(u) : void 0, b = m ? Object(v.a)(m) : void 0, h = c === P.j, k = l === P.m.Revisions;
+						} = e, u = t[I.M], m = t[I.N], p = u ? Object(v.a)(u) : void 0, b = m ? Object(v.a)(m) : void 0, h = c === P.j, k = l === P.m.Revisions;
 						let C = !1,
 							y = !1;
 						if (n) {
 							const {
 								pageName: t
 							} = e;
-							C = t === o.nc.WikiContributors, y = t === o.nc.WikiBanned
+							C = t === o.mc.WikiContributors, y = t === o.mc.WikiBanned
 						}
 						const E = r(),
 							_ = (h || n) && !Ze(E, d),
@@ -2501,7 +2501,7 @@
 						a = Object(h.b)(y),
 						o = Object(h.b)(E),
 						[d, c] = function(e, t) {
-							const [n, i] = Object(s.useState)(Object(A.U)(e, t));
+							const [n, i] = Object(s.useState)(Object(A.V)(e, t));
 							return [n, Object(s.useCallback)(() => {
 								const n = Object(A.a)(e, t);
 								i(n)
@@ -2531,7 +2531,7 @@
 							e.stopPropagation(), a.visible ? g() : x()
 						}, [g, x, a.visible]),
 						N = Object(s.useCallback)(t => {
-							t === v.c.FREQUENT && Object(A.db)(e.userId, e.subredditId)
+							t === v.c.FREQUENT && Object(A.fb)(e.userId, e.subredditId)
 						}, [e.subredditId, e.userId]),
 						I = Object(s.useCallback)(s => {
 							const {
@@ -2845,7 +2845,7 @@
 						!e.userIsSubscriber && e.setRelatedRecommendedCommunitiesVisible && e.setRelatedRecommendedCommunitiesVisible(!0)
 					},
 					afterUnsubscribeAction: () => {
-						t && (Object(A.db)(e.userId, t), e.updateSubredditInfo())
+						t && (Object(A.fb)(e.userId, t), e.updateSubredditInfo())
 					}
 				})), P && i.a.createElement(ye, {
 					onClickUnmute: () => {
@@ -3537,7 +3537,7 @@
 			const k = "create-community-button",
 				v = x.a.wrapped(l.c, "StyledTooltip", f.a),
 				C = Object(o.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(h.rb)(e),
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(h.sb)(e),
 					userIsSuspended: h.Z
 				});
 			t.a = Object(a.b)(C, (e, t) => {
@@ -7024,7 +7024,7 @@
 				et = n.n($e);
 			const tt = 10,
 				nt = Object(c.a)((e, t) => t.subredditName, e => Object(he.a)(e, l.cb.TOP, {
-					t: l.pc.WEEK
+					t: l.oc.WEEK
 				})),
 				st = Object(c.c)({
 					discoveryUnit: e => Object(Qe.b)(e, {
@@ -7104,7 +7104,7 @@
 						loadMorePosts: () => e(Object(ge.r)({
 							sort: l.cb.TOP,
 							subredditName: n,
-							t: l.pc.WEEK
+							t: l.oc.WEEK
 						}))
 					}
 				})(Object(Je.c)(it)),
@@ -8632,7 +8632,7 @@
 				} = t;
 				if (!n && !s) return e;
 				const i = {};
-				n && (i[x.O] = Object(k.b)(n)), s && (i[x.P] = Object(k.b)(s));
+				n && (i[x.M] = Object(k.b)(n)), s && (i[x.N] = Object(k.b)(s));
 				const r = e.endsWith("/") ? e : `${e}/`;
 				return Object(f.a)(r, i)
 			}
@@ -10005,7 +10005,7 @@
 						displayText: s.fbt._("View page source", null, {
 							hk: "1d5vg5"
 						}),
-						href: `${d}/${o}/?${_.Q}`,
+						href: `${d}/${o}/?${_.O}`,
 						onClick: this.onViewPageSourceClick
 					}), n && a.a.createElement(O.b, {
 						className: N.a.row,
@@ -10293,7 +10293,7 @@
 						onMouseEnter: this.onShowTooltip,
 						onMouseLeave: this.onHideTooltip
 					}, " - ", a.a.createElement(p.d, {
-						seconds: b.valueOf() / c.Yb
+						seconds: b.valueOf() / c.Xb
 					}), a.a.createElement(y, {
 						text: b.toString(),
 						isOpen: o,
@@ -11273,7 +11273,7 @@
 					} = e, {
 						wikiSubRoute: r,
 						wikiPageName: a
-					} = n, o = s[x.O], d = s[x.P], c = x.Q in s;
+					} = n, o = s[x.M], d = s[x.N], c = x.O in s;
 					switch (r) {
 						case k.m.Create:
 						case k.m.Edit:
@@ -11599,4 +11599,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.739a90d373bc83e1827a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.04ca78bd4a712a27d594.js.map

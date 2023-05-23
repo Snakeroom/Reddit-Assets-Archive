@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsInbox.940528e24702e83307e9.js
-// Retrieved at 3/30/2023, 10:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsInbox.04f84b7b44c9bf2d3951.js
+// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsInbox"], {
 		"./src/reddit/actions/pages/notificationsInbox.ts": function(e, t, n) {
@@ -620,7 +620,7 @@
 				isInboxPostEmbedEnabled: P.a,
 				isPending: A.e,
 				todayNotifications: A.i,
-				userId: U.Eb
+				userId: U.Fb
 			});
 			var B = Object(d.b)(R, e => ({
 					clearMessageTabBadgeCount: () => e(Object(u.b)()),
@@ -733,4 +733,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.940528e24702e83307e9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.04f84b7b44c9bf2d3951.js.map

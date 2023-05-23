@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.61b34c70efcf5fb4d8a1.js
-// Retrieved at 2/16/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.bcec9bf28a3011d6c386.js
+// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UsernameConfirmationModals"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -317,7 +317,7 @@
 						kind: C.b.Button,
 						onClick: c,
 						priority: C.c.Plain
-					}, A())))
+					}, I())))
 				},
 				M = () => a.fbt._("Change username", null, {
 					hk: "3l2BGo"
@@ -337,10 +337,10 @@
 				T = () => a.fbt._("Yes, Keep this Name", null, {
 					hk: "4iElQQ"
 				}),
-				A = () => a.fbt._("Log in to a different account", null, {
+				I = () => a.fbt._("Log in to a different account", null, {
 					hk: "2BmtHB"
 				});
-			var I = n("./src/reddit/components/Settings/ChangeUsernameModal.tsx"),
+			var A = n("./src/reddit/components/Settings/ChangeUsernameModal.tsx"),
 				R = n("./src/reddit/components/Settings/modalIds.ts"),
 				L = n("./src/reddit/constants/parameters.ts"),
 				P = n("./src/reddit/contexts/ApiContext.tsx"),
@@ -358,13 +358,13 @@
 				}).join(", ") : (() => a.fbt._("Sorry, something went wrong. Try again later.", null, {
 					hk: "3HcWgL"
 				}))(),
-				Y = Object(c.c)({
+				z = Object(c.c)({
 					changeUsernameModalOpen: Object(V.b)(R.b),
 					confirmSaveUsernameModalOpen: Object(V.b)(R.d),
 					interceptActionModalOpen: Object(V.b)(R.e),
 					welcomeBackModalOpen: Object(V.b)(R.r)
 				}),
-				z = Object(r.b)(Y, (e, t) => ({
+				X = Object(r.b)(z, (e, t) => ({
 					closeModal: () => {
 						e(Object(p.f)()), e(Object(u.d)())
 					},
@@ -382,7 +382,7 @@
 					},
 					logOutAndOpenLoginModal: () => {
 						const e = Object(l.a)(window.location.href, {
-							[L.A]: !0
+							[L.z]: !0
 						});
 						Object(d.a)(e, []), t.logoutUser()
 					},
@@ -402,7 +402,7 @@
 						}, b.a)
 					}
 				})),
-				X = Object(i.a)(Object(P.b)(z(e => {
+				Y = Object(i.a)(Object(P.b)(X(e => {
 					let {
 						apiContext: t,
 						changeUsernameModalOpen: n,
@@ -463,7 +463,7 @@
 						},
 						onView: () => S(Object(K.L)()),
 						username: N
-					}), n && o.a.createElement(I.a, {
+					}), n && o.a.createElement(A.a, {
 						initialUsername: E || "",
 						isResponsive: h,
 						onClose: r,
@@ -480,7 +480,7 @@
 						username: N
 					}))
 				})));
-			t.default = X
+			t.default = Y
 		},
 		"./src/reddit/components/Settings/ChangeUsernameModal.tsx": function(e, t, n) {
 			"use strict";
@@ -511,7 +511,7 @@
 					} = e, [o, l] = Object(r.useState)([0, 0]), [m, u] = Object(r.useState)([]), [p, g] = Object(r.useState)(!1), N = Object(r.useCallback)(async () => {
 						g(!0), setTimeout(() => {
 							g(!1)
-						}, 10 * d.Yb);
+						}, 10 * d.Xb);
 						const e = await (e => Object(b.a)(Object(h.a)(e, [f.a]), {
 							endpoint: `${e.apiUrl}/api/v1/generate_username.json`,
 							method: d.pb.GET
@@ -576,10 +576,10 @@
 				T = () => a.fbt._("Great name! It's not taken, so it's all yours.", null, {
 					hk: "42rpS"
 				}),
-				A = () => a.fbt._("Sorry, this username is taken. Try another.", null, {
+				I = () => a.fbt._("Sorry, this username is taken. Try another.", null, {
 					hk: "2HkykK"
 				}),
-				I = () => a.fbt._("Username must be between 3 and 20 characters.", null, {
+				A = () => a.fbt._("Username must be between 3 and 20 characters.", null, {
 					hk: "1V72yV"
 				}),
 				R = () => a.fbt._("Sorry, something went wrong. Try again later.", null, {
@@ -596,7 +596,7 @@
 			class H extends c.a.Component {
 				constructor() {
 					super(...arguments), this.state = L, this.checkUsername = async e => e.length < B || e.length > w ? {
-						error: I(),
+						error: A(),
 						state: l.a.Invalid
 					} : e === this.props.initialUsername ? P : await this.validateUsername(e), this.validateUsername = async e => {
 						const {
@@ -605,7 +605,7 @@
 							username: e
 						});
 						return a.ok ? !0 === a.body ? P : {
-							error: A(),
+							error: I(),
 							state: l.a.Invalid
 						} : a.error && a.error.fields && a.error.fields[0] ? {
 							error: a.error.fields[0].msg,
@@ -978,4 +978,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.61b34c70efcf5fb4d8a1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.bcec9bf28a3011d6c386.js.map

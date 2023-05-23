@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChangeUsernameModals.12130e8d1683c2d7a14c.js
-// Retrieved at 2/16/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChangeUsernameModals.fc842671085241a83e2b.js
+// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChangeUsernameModals"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -386,7 +386,7 @@
 					} = e, [o, l] = Object(r.useState)([0, 0]), [m, u] = Object(r.useState)([]), [p, g] = Object(r.useState)(!1), x = Object(r.useCallback)(async () => {
 						g(!0), setTimeout(() => {
 							g(!1)
-						}, 10 * d.Yb);
+						}, 10 * d.Xb);
 						const e = await (e => Object(h.a)(Object(A.a)(e, [C.a]), {
 							endpoint: `${e.apiUrl}/api/v1/generate_username.json`,
 							method: d.pb.GET
@@ -888,4 +888,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameModals.12130e8d1683c2d7a14c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameModals.fc842671085241a83e2b.js.map

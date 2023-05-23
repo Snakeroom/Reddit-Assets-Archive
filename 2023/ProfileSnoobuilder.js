@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.6115436c717434955b5e.js
-// Retrieved at 5/23/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.fa540daf55742a40343f.js
+// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -1213,7 +1213,7 @@
 			const y = "create-community-button",
 				x = g.a.wrapped(l.c, "StyledTooltip", f.a),
 				v = Object(a.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.rb)(e),
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.sb)(e),
 					userIsSuspended: b.Z
 				});
 			t.a = Object(o.b)(v, (e, t) => {
@@ -2092,7 +2092,7 @@
 				})())))
 			};
 			h.defaultProps = {
-				minimizedLength: c.Zb
+				minimizedLength: c.Yb
 			}, t.a = h
 		},
 		"./src/reddit/components/SidebarFooter/index.m.less": function(e, t, n) {
@@ -3178,7 +3178,7 @@
 					let {
 						subredditOrProfile: n
 					} = t;
-					return n.type === l.a.PROFILE ? Object(h.Cb)(e, {
+					return n.type === l.a.PROFILE ? Object(h.Db)(e, {
 						userName: n.name
 					}) : null
 				}
@@ -3898,4 +3898,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.6115436c717434955b5e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.fa540daf55742a40343f.js.map

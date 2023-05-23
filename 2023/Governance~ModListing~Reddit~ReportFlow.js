@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow.2fd826b97acca72c15b9.js
-// Retrieved at 5/23/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow.a9b3994d263bb751b7af.js
+// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow"], {
 		"./src/lib/assertNever.ts": function(t, e, i) {
@@ -559,7 +559,7 @@
 				[r.Z]: () => n.fbt._("Sorry, we accept only images (.png, .jpeg, .gif) and videos (.mp4, .mov)", null, {
 					hk: "1hw868"
 				}),
-				[r.wc]: () => n.fbt._("Video size must be less than {max file size}GB", [n.fbt._param("max file size", (r.lb / r.nb / 1024).toFixed(1))], {
+				[r.vc]: () => n.fbt._("Video size must be less than {max file size}GB", [n.fbt._param("max file size", (r.lb / r.nb / 1024).toFixed(1))], {
 					hk: "4FkABU"
 				})
 			}
@@ -2076,7 +2076,7 @@
 			var n = i("./src/lib/constants/index.ts"),
 				r = i("./src/lib/listingSort/index.ts");
 			e.a = (t, e) => {
-				if (t) return Object(r.a)(t) ? e || n.qc : void 0
+				if (t) return Object(r.a)(t) ? e || n.pc : void 0
 			}
 		},
 		"./src/reddit/helpers/graphql/normalizePostFlairStyleTemplateFromGql/index.ts": function(t, e, i) {
@@ -3018,7 +3018,7 @@
 				},
 				h = t => t.creations.subredditRec.isInputChanged,
 				D = t => {
-					if (!(t.creations.formData.submissionType === n.cc.POST)) return "";
+					if (!(t.creations.formData.submissionType === n.bc.POST)) return "";
 					const e = t.creations.formState.editorMode === l.i.RICH_TEXT || null === t.creations.formState.editorMode,
 						i = t.creations.formState.editorMode === l.i.MARKDOWN;
 					if (e) {
@@ -3028,14 +3028,14 @@
 					return i && t.creations.formData.body.markdown || ""
 				},
 				I = t => {
-					return t.creations.formData.submissionType === n.cc.LINK_ONLY && t.creations.formData.body.link || ""
+					return t.creations.formData.submissionType === n.bc.LINK_ONLY && t.creations.formData.body.link || ""
 				},
 				O = t => p(t) && (!E(t) || E(t) && h(t)) && (t => {
 					const e = t.creations.formData.title,
 						i = I(t),
 						n = D(t);
 					return !!(e || i || n)
-				})(t) && (t.creations.formData.submissionType === n.cc.POST || t.creations.formData.submissionType === n.cc.LINK_ONLY || t.creations.formData.submissionType === n.cc.CROSSPOST)
+				})(t) && (t.creations.formData.submissionType === n.bc.POST || t.creations.formData.submissionType === n.bc.LINK_ONLY || t.creations.formData.submissionType === n.bc.CROSSPOST)
 		},
 		"./src/reddit/selectors/experiments/topPosts.ts": function(t, e, i) {
 			"use strict";
@@ -3128,4 +3128,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow.2fd826b97acca72c15b9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow.a9b3994d263bb751b7af.js.map

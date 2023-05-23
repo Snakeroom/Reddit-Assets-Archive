@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.9d9521d7fe54c317221b.js
-// Retrieved at 5/23/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.bbf8e7c5564229f210fb.js
+// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, r) {
@@ -664,7 +664,7 @@
 						return e
 				}
 			};
-			var G = function() {
+			var D = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -677,7 +677,7 @@
 						return e
 				}
 			};
-			var z = function() {
+			var G = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -690,9 +690,9 @@
 							return e
 					}
 				},
-				D = Object(k.c)({
-					error: G,
-					pending: z
+				z = Object(k.c)({
+					error: D,
+					pending: G
 				});
 			var Q = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
@@ -710,7 +710,7 @@
 					}
 				},
 				J = Object(k.c)({
-					api: D,
+					api: z,
 					result: Q
 				});
 			const K = {};
@@ -901,7 +901,7 @@
 							await r(Object(c.o)(t.name))
 						}
 					})(), (async () => {
-						const n = Object(y.Cb)(s, {
+						const n = Object(y.Db)(s, {
 							userName: t
 						});
 						if (!n) return;
@@ -1177,9 +1177,9 @@
 				H = r("./src/reddit/helpers/trackers/authorHovercard.ts"),
 				W = r("./src/reddit/icons/svgs/Admin/index.tsx"),
 				R = r("./src/reddit/icons/svgs/Premium/index.tsx"),
-				G = r("./src/reddit/models/User/index.ts"),
-				z = r("./src/reddit/components/HumanDate/index.tsx"),
-				D = r("./src/reddit/components/ProfileIdCard/AwardedLastMonth.tsx"),
+				D = r("./src/reddit/models/User/index.ts"),
+				G = r("./src/reddit/components/HumanDate/index.tsx"),
+				z = r("./src/reddit/components/ProfileIdCard/AwardedLastMonth.tsx"),
 				Q = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/index.tsx"),
 				J = r("./src/reddit/actions/inContextModeration.ts"),
 				K = r("./src/reddit/actions/modal.ts"),
@@ -1199,7 +1199,7 @@
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(C.Cb)(e, {
+				user: (e, t) => Object(C.Db)(e, {
 					userName: t.username
 				})
 			});
@@ -1336,7 +1336,7 @@
 					})
 				}), e.user.isGold && s.a.createElement(S.a, {
 					to: "/premium"
-				}, s.a.createElement(fe, null))), s.a.createElement(xe, null, s.a.createElement(he, null, `u/${e.userName}`, s.a.createElement(ge, null, "•")), s.a.createElement(he, null, (e.user.createdUtc || e.user.created) && s.a.createElement(z.d, {
+				}, s.a.createElement(fe, null))), s.a.createElement(xe, null, s.a.createElement(he, null, `u/${e.userName}`, s.a.createElement(ge, null, "•")), s.a.createElement(he, null, (e.user.createdUtc || e.user.created) && s.a.createElement(G.d, {
 					seconds: e.user.createdUtc || e.user.created
 				})))),
 				Pe = e => {
@@ -1388,7 +1388,7 @@
 					if (!g) return s.a.createElement(ke, {
 						style: f
 					});
-					const y = !!o && Object(G.e)(o) === h,
+					const y = !!o && Object(D.e)(o) === h,
 						N = !!(null == o ? void 0 : o.snoovatarFullBodyAsset),
 						S = g.accountIcon || `${k.a.assetPath}/img/snoo_user_placeholder.png`,
 						P = null == u ? void 0 : u.flair,
@@ -1435,7 +1435,7 @@
 						userName: h
 					})), s.a.createElement(Pe, {
 						user: g
-					}), A && s.a.createElement(D.a, {
+					}), A && s.a.createElement(z.a, {
 						recentAwardings: A,
 						topAwardIcon: x,
 						username: h
@@ -1512,7 +1512,7 @@
 							minSize: 32
 						})
 					},
-					user: C.Cb,
+					user: C.Db,
 					userFlair: (e, t) => {
 						let {
 							subredditId: r
@@ -2756,4 +2756,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.9d9521d7fe54c317221b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~SubredditWiki.bbf8e7c5564229f210fb.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.3dd0827090753bb275ab.js
-// Retrieved at 5/23/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.0be5b7cc9f363858dd67.js
+// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./src/reddit/components/FrontpageSidebar/index.tsx": function(e, t, n) {
@@ -193,12 +193,12 @@
 				D = n("./src/reddit/constants/localStorage.ts"),
 				K = n("./src/reddit/contexts/ApiContext.tsx"),
 				Q = n("./src/reddit/featureFlags/component.tsx"),
-				H = n("./src/reddit/helpers/localStorage/index.ts"),
-				J = n("./src/reddit/helpers/name/index.ts"),
-				G = n("./src/lib/makeApiRequest/index.ts"),
+				G = n("./src/reddit/helpers/localStorage/index.ts"),
+				H = n("./src/reddit/helpers/name/index.ts"),
+				J = n("./src/lib/makeApiRequest/index.ts"),
 				M = n("./src/lib/omitHeaders/index.ts"),
 				q = n("./src/reddit/constants/headers.ts");
-			const X = e => Object(G.a)(Object(M.a)(e, [q.a]), {
+			const X = e => Object(J.a)(Object(M.a)(e, [q.a]), {
 				endpoint: `${e.apiUrl}/api/multi/user/CommunityAdoptionBot/m/adoption_week/`,
 				method: U.pb.GET,
 				type: "json"
@@ -215,13 +215,13 @@
 					}
 				}
 				async getSubredditForAdoption() {
-					let e = te.cachedData || Object(H.F)(D.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
+					let e = te.cachedData || Object(G.G)(D.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
 					if (!e || Date.now() - e.fetchedAt > $) {
 						const t = await X(this.props.apiContext());
 						t.ok && (e = {
 							subreddits: t.body.data.subreddits.map(e => e.name),
 							fetchedAt: Date.now()
-						}, Object(H.Jb)(D.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
+						}, Object(G.Lb)(D.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
 					}
 					return te.cachedData = e, e ? e.subreddits : []
 				}
@@ -249,7 +249,7 @@
 						hk: "487Ffc"
 					})), a.a.createElement("div", {
 						className: z.a.description
-					}, V._("{subreddits list} and more are looking for moderators!", [V._param("subreddits list", a.a.createElement("strong", null, e.map(J.d).join(", ") + (e.length > 1 ? "," : "")))], {
+					}, V._("{subreddits list} and more are looking for moderators!", [V._param("subreddits list", a.a.createElement("strong", null, e.map(H.d).join(", ") + (e.length > 1 ? "," : "")))], {
 						hk: "2Tb946"
 					}))), a.a.createElement(b.n, {
 						className: z.a.button,
@@ -670,10 +670,10 @@
 					}, s && a.a.createElement(ne, null)))
 				}
 			}
-			const He = Object(r.b)(Ie, e => ({
+			const Ge = Object(r.b)(Ie, e => ({
 				subredditAboutRequested: t => e(Object(l.u)(t))
 			}));
-			t.default = He(Qe)
+			t.default = Ge(Qe)
 		},
 		"./src/reddit/components/MiniPost/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -915,4 +915,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.3dd0827090753bb275ab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.0be5b7cc9f363858dd67.js.map

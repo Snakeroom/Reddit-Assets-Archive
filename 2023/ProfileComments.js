@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.27b2b31fed384ffaf52b.js
-// Retrieved at 5/23/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.33fe7178dcde53abd8e2.js
+// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./src/lib/LiveChatActiveUsers/index.m.less": function(e, t, s) {
@@ -103,7 +103,7 @@
 						return
 					}
 					const k = {
-						...i()(e.queryParams, [...f.q, f.l]),
+						...i()(e.queryParams, [...f.p, f.l]),
 						sort: a,
 						t: Object(I.a)(a, v)
 					};
@@ -164,7 +164,7 @@
 						dist: x.dist,
 						sort: m,
 						t: u,
-						...i()(c, f.q),
+						...i()(c, f.p),
 						layout: Object(v.U)(r, {}).toLowerCase()
 					}, Object(L.a)(r));
 					if (j.ok) {
@@ -1123,7 +1123,7 @@
 					flair: o,
 					renderedInOverlay: !1
 				}), n.a.createElement("div", null, !t.isDeleted && n.a.createElement(Ge, null, r ? l() : n.a.createElement(O, {
-					height: d.ac,
+					height: d.Zb,
 					isExpanded: r
 				}, l)), !t.isDeleted && i && n.a.createElement(Re, {
 					comment: t,
@@ -1631,10 +1631,10 @@
 					O = Object(u.a)(),
 					g = Object(r.e)(b.H),
 					C = Object(r.e)(b.fb),
-					j = Object(r.e)(e => Object(b.Fb)(e, {
+					j = Object(r.e)(e => Object(b.Gb)(e, {
 						postId: s
 					})),
-					E = Object(r.e)(e => Object(b.Cb)(e, {
+					E = Object(r.e)(e => Object(b.Db)(e, {
 						userName: t
 					}));
 				Object(o.useEffect)(() => {
@@ -3567,7 +3567,7 @@
 					let {
 						match: s
 					} = t;
-					return Object(se.h)(e, c.rc + s.params.profileName)
+					return Object(se.h)(e, c.qc + s.params.profileName)
 				}, (e, t) => {
 					let {
 						match: s
@@ -3722,4 +3722,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.27b2b31fed384ffaf52b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.33fe7178dcde53abd8e2.js.map

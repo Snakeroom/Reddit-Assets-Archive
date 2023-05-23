@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NftProductDetailsModal.b3e2642a0d60f1d85baf.js
-// Retrieved at 4/25/2023, 10:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NftProductDetailsModal.9f9b244b841ff72fa8a2.js
+// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NftProductDetailsModal"], {
 		"./src/reddit/components/Econ/Marketplace/NftProductDetails/index.m.less": function(e, t, a) {
@@ -24,9 +24,9 @@
 				u = a("./src/reddit/constants/modals.ts"),
 				p = a("./src/reddit/helpers/avatarRouting.ts"),
 				m = a("./src/reddit/selectors/activeModal.ts"),
-				E = a("./src/reddit/selectors/user.ts"),
-				f = a("./src/reddit/components/Econ/Marketplace/NftProductDetails/index.m.less"),
-				O = a.n(f);
+				f = a("./src/reddit/selectors/user.ts"),
+				E = a("./src/reddit/components/Econ/Marketplace/NftProductDetails/index.m.less"),
+				O = a.n(E);
 
 			function v() {
 				return (v = Object.assign || function(e) {
@@ -41,11 +41,11 @@
 					let {
 						onClose: t
 					} = e;
-					const a = Object(n.e)(E.Eb),
+					const a = Object(n.e)(f.Fb),
 						{
 							itemId: s,
 							showBack: o,
-							profileUserName: f
+							profileUserName: E
 						} = Object(n.e)(e => {
 							const t = Object(m.a)(e);
 							return {
@@ -61,7 +61,7 @@
 					}, c.a.createElement(l.a, null, c.a.createElement(r.i, {
 						onBack: o ? () => {
 							t(), v(Object(i.h)(u.a.X_SHOWCASE_COLLECTION_VIEW_MODAL, {
-								profileUserName: f
+								profileUserName: E
 							}))
 						} : void 0,
 						itemId: s,
@@ -121,4 +121,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProductDetailsModal.b3e2642a0d60f1d85baf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProductDetailsModal.9f9b244b841ff72fa8a2.js.map

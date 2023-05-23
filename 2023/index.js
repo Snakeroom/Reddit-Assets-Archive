@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.bc1318877cb23e1f2e8c.js
-// Retrieved at 5/17/2023, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.ec21c342b6f01c533d4b.js
+// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -316,10 +316,10 @@
 					E = Object(p.a)(),
 					h = Object(r.e)(b.H),
 					O = Object(r.e)(b.fb),
-					k = Object(r.e)(e => Object(b.Fb)(e, {
+					k = Object(r.e)(e => Object(b.Gb)(e, {
 						postId: n
 					})),
-					j = Object(r.e)(e => Object(b.Cb)(e, {
+					j = Object(r.e)(e => Object(b.Db)(e, {
 						userName: t
 					}));
 				Object(o.useEffect)(() => {
@@ -772,8 +772,8 @@
 				R = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionsCarousel/PredictionsProgress/index.m.less"),
 				V = n.n(R);
 
-			function F() {
-				return (F = Object.assign || function(e) {
+			function G() {
+				return (G = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
@@ -781,7 +781,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const G = e => {
+			const F = e => {
 				let {
 					value: t,
 					count: n,
@@ -790,7 +790,7 @@
 				} = e;
 				const i = Object(r.e)(g.fb),
 					c = Math.floor(100 * t / n);
-				return a.a.createElement("div", F({
+				return a.a.createElement("div", G({
 					className: Object(p.a)(V.a.container, o, {
 						[V.a.isNightMode]: i
 					})
@@ -1006,7 +1006,7 @@
 						name: "caret_right",
 						className: ne.a.icon,
 						isFilled: !0
-					})), a.a.createElement(G, {
+					})), a.a.createElement(F, {
 						className: ne.a.counter,
 						value: s,
 						count: n.length
@@ -1217,4 +1217,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.bc1318877cb23e1f2e8c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.ec21c342b6f01c533d4b.js.map

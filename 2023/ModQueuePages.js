@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.ea5913e11d48df0f27ad.js
-// Retrieved at 5/23/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.0f6334e0c4e1163388ab.js
+// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -810,7 +810,7 @@
 						commentId: e
 					});
 					if (!l) return;
-					const m = n === o.lc.Snoozed,
+					const m = n === o.kc.Snoozed,
 						f = {
 							itemId: e,
 							reportText: t,
@@ -1741,7 +1741,7 @@
 					if (!A || b || !f) return;
 					const g = await Object(u.b)(o(), {
 						id: i
-					}) || (null === (a = Object(w.Bb)(l, {
+					}) || (null === (a = Object(w.Cb)(l, {
 						userId: i
 					})) || void 0 === a ? void 0 : a.username);
 					g && t(Object(m.z)(g)), t(B({
@@ -5256,7 +5256,7 @@
 					postTypeFilter: e.postTypeFilter,
 					postSort: e.postSort,
 					sendEventWithName: e.sendEventWithName,
-					showTypeFilter: e.pageName !== m.nc.Unmoderated,
+					showTypeFilter: e.pageName !== m.mc.Unmoderated,
 					subredditName: e.subredditName
 				}), d.a.createElement(B.a, {
 					after: e.after,
@@ -5419,32 +5419,32 @@
 					className: n
 				}),
 				p = e => [{
-					pageName: i.nc.Modqueue,
-					displayName: () => Object(d.getModHubPageName)(i.nc.Modqueue),
+					pageName: i.mc.Modqueue,
+					displayName: () => Object(d.getModHubPageName)(i.mc.Modqueue),
 					href: `/r/${e}/about/modqueue`,
 					eventNoun: "mod-queue"
 				}, {
-					pageName: i.nc.Reports,
+					pageName: i.mc.Reports,
 					displayName: () => s.fbt._("Reported", null, {
 						hk: "2XagIZ"
 					}),
 					href: `/r/${e}/about/reports`,
 					eventNoun: "report-queue"
 				}, {
-					pageName: i.nc.Spam,
+					pageName: i.mc.Spam,
 					displayName: () => s.fbt._("Removed", null, {
 						hk: "1qrEsN"
 					}),
 					href: `/r/${e}/about/spam`,
 					eventNoun: "spam-queue"
 				}, {
-					pageName: i.nc.Edited,
-					displayName: () => Object(d.getModHubPageName)(i.nc.Edited),
+					pageName: i.mc.Edited,
+					displayName: () => Object(d.getModHubPageName)(i.mc.Edited),
 					href: `/r/${e}/about/edited`,
 					eventNoun: "edited-queue"
 				}, {
-					pageName: i.nc.Unmoderated,
-					displayName: () => Object(d.getModHubPageName)(i.nc.Unmoderated),
+					pageName: i.mc.Unmoderated,
+					displayName: () => Object(d.getModHubPageName)(i.mc.Unmoderated),
 					href: `/r/${e}/about/unmoderated`,
 					eventNoun: "unmoderated-queue"
 				}],
@@ -5456,35 +5456,35 @@
 					})
 				}),
 				b = e => [{
-					pageName: i.nc.Banned,
+					pageName: i.mc.Banned,
 					displayName: () => s.fbt._("Banned", null, {
 						hk: "4lYx7f"
 					}),
 					href: `/r/${e}/about/banned`,
 					eventNoun: "banned"
 				}, {
-					pageName: i.nc.Muted,
+					pageName: i.mc.Muted,
 					displayName: () => s.fbt._("Muted", null, {
 						hk: "4r3Lpj"
 					}),
 					href: `/r/${e}/about/muted`,
 					eventNoun: "muted"
 				}, {
-					pageName: i.nc.Contributors,
+					pageName: i.mc.Contributors,
 					displayName: () => s.fbt._("Approved", null, {
 						hk: "2sfe68"
 					}),
 					href: `/r/${e}/about/contributors`,
 					eventNoun: "approved"
 				}, {
-					pageName: i.nc.TalkHosts,
+					pageName: i.mc.TalkHosts,
 					displayName: () => s.fbt._("Talk Hosts", null, {
 						hk: "3da8wd"
 					}),
 					href: `/r/${e}/about/talkhosts`,
 					eventNoun: "talk-hosts"
 				}, {
-					pageName: i.nc.Moderators,
+					pageName: i.mc.Moderators,
 					displayName: () => s.fbt._("Moderators", null, {
 						hk: "Y1Jqo"
 					}),
@@ -5500,14 +5500,14 @@
 					className: n
 				}),
 				g = e => [{
-					pageName: i.nc.UserFlair,
+					pageName: i.mc.UserFlair,
 					displayName: () => s.fbt._("Setup", null, {
 						hk: "33R1cD"
 					}),
 					href: `/r/${e}/about/userflair`,
 					eventNoun: "user-flair-settings"
 				}, {
-					pageName: i.nc.Flair,
+					pageName: i.mc.Flair,
 					displayName: () => s.fbt._("Assign", null, {
 						hk: "23QqpZ"
 					}),
@@ -5522,14 +5522,14 @@
 					})
 				}),
 				h = e => [{
-					pageName: i.nc.SubredditRules,
+					pageName: i.mc.SubredditRules,
 					displayName: () => s.fbt._("Rules", null, {
 						hk: "1wh4CY"
 					}),
 					href: `/r/${e}/about/rules`,
 					eventNoun: "rules"
 				}, {
-					pageName: i.nc.Removal,
+					pageName: i.mc.Removal,
 					displayName: () => s.fbt._("Removal Reasons", null, {
 						hk: "3so7Dm"
 					}),
@@ -5545,28 +5545,28 @@
 					className: o
 				}),
 				C = e => [{
-					pageName: i.nc.Awards,
+					pageName: i.mc.Awards,
 					displayName: () => s.fbt._("Awards", null, {
 						hk: "21lDrE"
 					}),
 					href: `/r/${e}/about/awards`,
 					eventNoun: "awards"
 				}, {
-					pageName: i.nc.Emojis,
+					pageName: i.mc.Emojis,
 					displayName: () => s.fbt._("Emojis", null, {
 						hk: "4AReV1"
 					}),
 					href: `/r/${e}/about/emojis`,
 					eventNoun: "emojis"
 				}, {
-					pageName: i.nc.Badges,
+					pageName: i.mc.Badges,
 					displayName: () => s.fbt._("Badges", null, {
 						hk: "2OUEVf"
 					}),
 					href: `/r/${e}/about/badges`,
 					eventNoun: "badges"
 				}, {
-					pageName: i.nc.Emotes,
+					pageName: i.mc.Emotes,
 					displayName: () => s.fbt._("Emotes", null, {
 						hk: "26Tr2v"
 					}),
@@ -5574,14 +5574,14 @@
 					eventNoun: "emotes"
 				}],
 				E = e => [{
-					pageName: i.nc.Awards,
+					pageName: i.mc.Awards,
 					displayName: () => s.fbt._("Awards", null, {
 						hk: "21lDrE"
 					}),
 					href: `/r/${e}/about/awards`,
 					eventNoun: "awards"
 				}, {
-					pageName: i.nc.Emojis,
+					pageName: i.mc.Emojis,
 					displayName: () => s.fbt._("Emojis", null, {
 						hk: "4AReV1"
 					}),
@@ -6756,8 +6756,8 @@
 						...n
 					} = e;
 					const o = Object($.a)(),
-						a = "string" == typeof t ? Object(_.g)(t) / i.Yb : t,
-						d = new Date(a * i.Yb);
+						a = "string" == typeof t ? Object(_.g)(t) / i.Xb : t,
+						d = new Date(a * i.Xb);
 					if (!Z.a) return r.a.createElement(r.a.Fragment, null, d.toLocaleString());
 					const c = new Intl.DateTimeFormat(o, {
 							month: "short",
@@ -6878,7 +6878,7 @@
 				} = e;
 				var n;
 				const o = (null == t ? void 0 : t.approvedBy) || "",
-					i = Object(a.e)(e => (null == t ? void 0 : t.approvedBy) ? Object(Y.Cb)(e, {
+					i = Object(a.e)(e => (null == t ? void 0 : t.approvedBy) ? Object(Y.Db)(e, {
 						userName: o
 					}) : null),
 					d = t.approvedAtUTC ? (null === (n = t.approvedAtUTC) || void 0 === n ? void 0 : n.toString().length) > 10 ? t.approvedAtUTC / 1e3 : t.approvedAtUTC : null;
@@ -6913,7 +6913,7 @@
 					content: t
 				} = e;
 				var n;
-				const o = Object(a.e)(e => (null == t ? void 0 : t.bannedBy) && "string" == typeof(null == t ? void 0 : t.bannedBy) ? Object(Y.Cb)(e, {
+				const o = Object(a.e)(e => (null == t ? void 0 : t.bannedBy) && "string" == typeof(null == t ? void 0 : t.bannedBy) ? Object(Y.Db)(e, {
 						userName: null == t ? void 0 : t.bannedBy
 					}) : null),
 					i = Object(p.b)(t),
@@ -7831,7 +7831,7 @@
 					}, this.onOpenPostSortDropdown = () => {
 						this.props.onOpenDropdown(me), this.props.sendEventWithName("modqueue_sort")()
 					}, this.onShowTooltip = () => {
-						Object(v.J)() || (this.props.openModInsightsTooltip(), Object(v.Lb)())
+						Object(v.K)() || (this.props.openModInsightsTooltip(), Object(v.Nb)())
 					}
 				}
 				componentDidMount() {
@@ -9100,7 +9100,7 @@
 			class I extends o.a.Component {
 				constructor() {
 					super(...arguments), this.tooltipTarget = null, this.setTooltipTargetRef = e => this.tooltipTarget = e, this.onSnoozeButtonClick = () => {
-						const e = this.props.isSnoozed ? d.lc.None : d.lc.Snoozed;
+						const e = this.props.isSnoozed ? d.kc.None : d.kc.Snoozed;
 						this.props.toggleSnooze(e);
 						const t = Object(g.p)(Object(f.a)(this.props.reportedThingId), this.props.isSnoozed, this.props.reportedThingId, this.props.reason);
 						this.props.sendEvent(t)
@@ -10974,4 +10974,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.ea5913e11d48df0f27ad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.0f6334e0c4e1163388ab.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.fd4a4ccf61a766d43274.js
-// Retrieved at 5/23/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.9eae617fc121a24c58bf.js
+// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~SubredditForkingCTA"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(t, e, r) {
@@ -589,7 +589,7 @@
 								}
 								l.width = s.width, l.height = s.height
 							} else if (c.startsWith("video/")) {
-								if (t.size > i.lb) return w(i.wc);
+								if (t.size > i.lb) return w(i.vc);
 								let e;
 								try {
 									e = await Object(y.j)(u, !0)
@@ -892,8 +892,8 @@
 						r = Object(T.Z)(t),
 						s = Object(T.a)(t),
 						i = Object(T.lb)(t);
-					if (s === n.cc.POST) return b.a.getPendingThumbnailUploads(i, e);
-					if (s === n.cc.MEDIA && r && r.items.length) {
+					if (s === n.bc.POST) return b.a.getPendingThumbnailUploads(i, e);
+					if (s === n.bc.MEDIA && r && r.items.length) {
 						const {
 							video: t
 						} = r.items[0];
@@ -915,7 +915,7 @@
 					const l = Object(T.a)(o),
 						b = _.d.rteVideoPoster(o),
 						f = K(o),
-						p = l === n.cc.MEDIA;
+						p = l === n.bc.MEDIA;
 					f && (b || p) && (await r(U.f(f)), K(s())) || (t === v.r.Draft ? await r(Object(c.r)(e.draftId)) : t === v.r.ScheduledPost && Object(D.r)(o) ? await r(J(e)) : t === v.r.ScheduledPost ? await r(Z(e)) : await r(Y(e)))
 				}, J = t => async (e, r, n) => {
 					let {
@@ -1464,7 +1464,7 @@
 								postId: D
 							});
 							e(Object(d.h)(t.title)), e(Object(d.g)({
-								submissionType: s.cc.CROSSPOST
+								submissionType: s.bc.CROSSPOST
 							})), await e(Object(a.d)({
 								destSubreddit: {
 									...r,
@@ -2959,4 +2959,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.fd4a4ccf61a766d43274.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.9eae617fc121a24c58bf.js.map

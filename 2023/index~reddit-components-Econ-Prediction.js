@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.a793e2753bfe19d1d59a.js
-// Retrieved at 5/9/2023, 3:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.b808f0e898bc3fd3c129.js
+// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, n) {
@@ -1530,7 +1530,7 @@
 					userSelection: E,
 					predictionStatus: g,
 					voteUpdatesRemained: O
-				} = t, v = Boolean((null == t ? void 0 : t.userSelection) && !(null == t ? void 0 : t.resolvedOptionId) && t.predictionStatus === de.b.Open && t.endsAt > Date.now()), x = Object(r.e)(e => (null == t ? void 0 : t.tournamentId) ? Object(ie.a)(e, t.tournamentId) : null), C = Object(r.e)(f.fb), N = Object(r.e)(f.Eb), I = Object(r.e)(f.S), [k, A] = Object(a.useState)(!1), y = l === N, S = m < Date.now(), P = S && y && !_, w = g === de.b.Cancelled || g === de.b.CancelInProgress, M = S || !!E || !!_ || w;
+				} = t, v = Boolean((null == t ? void 0 : t.userSelection) && !(null == t ? void 0 : t.resolvedOptionId) && t.predictionStatus === de.b.Open && t.endsAt > Date.now()), x = Object(r.e)(e => (null == t ? void 0 : t.tournamentId) ? Object(ie.a)(e, t.tournamentId) : null), C = Object(r.e)(f.fb), N = Object(r.e)(f.Fb), I = Object(r.e)(f.S), [k, A] = Object(a.useState)(!1), y = l === N, S = m < Date.now(), P = S && y && !_, w = g === de.b.Cancelled || g === de.b.CancelInProgress, M = S || !!E || !!_ || w;
 				return Object(a.useEffect)(() => {
 					A(!1)
 				}, [E, t]), o.a.createElement("div", me({
@@ -3031,6 +3031,47 @@
 					subreddit: Object(o.lb)(e)
 				})
 		},
+		"./src/reddit/hooks/useLocalStorage.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return c
+			}));
+			var a = n("./node_modules/react/index.js"),
+				o = n("./src/reddit/helpers/localStorage/index.ts");
+			const r = {},
+				s = (e, t, n) => (r[e] || (r[e] = {
+					callbacks: [],
+					value: n
+				}), r[e].callbacks.push(t), {
+					deregister: () => {
+						const {
+							callbacks: n
+						} = r[e], a = n.indexOf(t);
+						a > -1 && n.splice(a, 1)
+					},
+					emit: n => {
+						r[e].value !== n && (r[e].value = n, r[e].callbacks.forEach(e => {
+							e !== t && e(n)
+						}))
+					}
+				});
+
+			function c(e, t) {
+				const n = Object(a.useRef)(null);
+				let r;
+				r = Object(o.G)(e);
+				const [c, d] = Object(a.useState)(null != r ? r : t);
+				return Object(a.useEffect)(() => (n.current = s(e, d, t), () => {
+					var e;
+					return null === (e = n.current) || void 0 === e ? void 0 : e.deregister()
+				}), [e, t]), Object(a.useEffect)(() => {
+					var e;
+					null === (e = n.current) || void 0 === e || e.emit(c)
+				}, [c]), [c, function(t) {
+					Object(o.Lb)(e, t), d(t)
+				}]
+			}
+		},
 		"./src/reddit/hooks/useToast.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
@@ -3192,4 +3233,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.a793e2753bfe19d1d59a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.b808f0e898bc3fd3c129.js.map

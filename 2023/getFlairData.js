@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/getFlairData.945302b59c5817307415.js
-// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/getFlairData.73077651fc28682d4a20.js
+// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["getFlairData"], {
 		"./src/reddit/helpers/trackers/features/getFlairData.ts": function(e, t, i) {
@@ -48,4 +48,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/getFlairData.945302b59c5817307415.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/getFlairData.73077651fc28682d4a20.js.map

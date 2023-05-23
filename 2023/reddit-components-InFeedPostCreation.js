@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.95c84aec7e6b6079cda8.js
-// Retrieved at 5/23/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.a15f29385b05958cabc5.js
+// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-InFeedPostCreation"], {
 		"./src/reddit/components/InFeedPostCreation/index.m.less": function(e, t, n) {
@@ -23,8 +23,8 @@
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/react/index.js"),
 				i = n.n(s),
-				c = n("./node_modules/react-redux/es/index.js"),
-				o = n("./node_modules/react-router-redux/es/index.js"),
+				o = n("./node_modules/react-redux/es/index.js"),
+				c = n("./node_modules/react-router-redux/es/index.js"),
 				d = n("./node_modules/reselect/es/index.js"),
 				a = n("./src/lib/constants/index.ts"),
 				l = n("./src/lib/lessComponent.tsx"),
@@ -49,9 +49,9 @@
 			}(P || (P = {}));
 			const M = e => {
 					switch (e) {
-						case a.cc.MEDIA:
+						case a.bc.MEDIA:
 							return "?media=true";
-						case a.cc.LINK_ONLY:
+						case a.bc.LINK_ONLY:
 							return "?url";
 						default:
 							return ""
@@ -59,9 +59,9 @@
 				},
 				k = e => {
 					switch (e) {
-						case a.cc.MEDIA:
+						case a.bc.MEDIA:
 							return "media_post";
-						case a.cc.LINK_ONLY:
+						case a.bc.LINK_ONLY:
 							return "link_post";
 						default:
 							return "create_post"
@@ -75,8 +75,8 @@
 					subreddit: U.C,
 					subredditAboutInfo: U.z
 				}),
-				y = Object(c.b)(w, e => ({
-					navigateTo: t => e(Object(o.b)(t)),
+				y = Object(o.b)(w, e => ({
+					navigateTo: t => e(Object(c.b)(t)),
 					toggleTooltip: t => e(Object(u.h)({
 						tooltipId: t
 					}))
@@ -92,8 +92,8 @@
 					currentUser: t,
 					isNsfwCommunityMediaUploadKillSwitchEnabled: n,
 					isPresenceConsumptionExpEnabled: s,
-					isPresenceTogglePref: c,
-					navigateTo: o,
+					isPresenceTogglePref: o,
+					navigateTo: c,
 					sendEvent: d,
 					subreddit: l,
 					subredditAboutInfo: u,
@@ -118,12 +118,12 @@
 						};
 						const {
 							images: i,
-							links: c,
-							videos: o
+							links: o,
+							videos: c
 						} = s, d = !!t && t.isNSFW;
 						return {
-							link: c,
-							media: (o || i) && !(d && r)
+							link: o,
+							media: (c || i) && !(d && r)
 						}
 					}({
 						subreddit: l,
@@ -138,9 +138,9 @@
 						}))
 					},
 					N = () => {
-						C(a.cc.POST), o(_)
+						C(a.bc.POST), c(_)
 					},
-					O = s && c,
+					O = s && o,
 					w = t ? i.a.createElement(x.default, {
 						className: j.a.UserIconWrapper,
 						to: t.url
@@ -167,10 +167,10 @@
 					kind: I.b.InternalLink,
 					size: I.d.M,
 					id: P.Media,
-					onClick: () => C(a.cc.MEDIA),
+					onClick: () => C(a.bc.MEDIA),
 					onMouseEnter: () => b(P.Media),
 					onMouseLeave: () => b(P.Media),
-					to: _ + M(a.cc.MEDIA),
+					to: _ + M(a.bc.MEDIA),
 					Icon: Object(E.b)("image_post"),
 					isSquare: !0
 				}, i.a.createElement(p.c, {
@@ -184,10 +184,10 @@
 					size: I.d.M,
 					"aria-label": g(),
 					id: P.Link,
-					onClick: () => C(a.cc.LINK_ONLY),
+					onClick: () => C(a.bc.LINK_ONLY),
 					onMouseEnter: () => b(P.Link),
 					onMouseLeave: () => b(P.Link),
-					to: _ + M(a.cc.LINK_ONLY),
+					to: _ + M(a.bc.LINK_ONLY),
 					Icon: Object(E.b)("link_post"),
 					isSquare: !0
 				}, i.a.createElement(p.c, {
@@ -202,8 +202,8 @@
 			var r = n("./src/lib/classNames/index.ts"),
 				s = n("./node_modules/react/index.js"),
 				i = n.n(s),
-				c = n("./node_modules/react-redux/es/index.js"),
-				o = n("./node_modules/reselect/es/index.js"),
+				o = n("./node_modules/react-redux/es/index.js"),
+				c = n("./node_modules/reselect/es/index.js"),
 				d = n("./src/reddit/helpers/userSnoovatar/index.ts"),
 				a = n("./src/reddit/selectors/user.ts"),
 				l = n("./src/reddit/components/UserIcon/PresenceDot.tsx"),
@@ -221,27 +221,27 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const x = Object(o.c)({
+			const x = Object(c.c)({
 					currentUser: a.m,
 					isNightMode: a.fb,
 					isPresenceUserPrefEnabled: a.X,
 					shouldHideNSFW: a.H
 				}),
-				f = Object(c.b)(x);
+				f = Object(o.b)(x);
 			t.a = f(e => {
 				const {
 					currentUser: t,
 					shouldShowPresenceIndicator: n,
 					isPresenceUserPrefEnabled: s,
-					wrapperClassName: c,
-					...o
+					wrapperClassName: o,
+					...c
 				} = e, a = Object(d.a)(null == t ? void 0 : t.accountIcon);
 				return i.a.createElement("div", {
-					className: Object(r.a)(b.a.currentUserIconWrapper, c)
+					className: Object(r.a)(b.a.currentUserIconWrapper, o)
 				}, a ? i.a.createElement(u.a, {
 					headshot: t.accountIcon,
 					className: e.className
-				}) : i.a.createElement(p.b, I({}, o, {
+				}) : i.a.createElement(p.b, I({}, c, {
 					iconUrl: t ? t.accountIcon : void 0,
 					isCurrentUser: !0,
 					isNSFW: !!t && t.isNSFW
@@ -253,9 +253,9 @@
 		"./src/reddit/selectors/experiments/onlineIndicator.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "d", (function() {
-				return c
-			})), n.d(t, "c", (function() {
 				return o
+			})), n.d(t, "c", (function() {
+				return c
 			})), n.d(t, "b", (function() {
 				return d
 			})), n.d(t, "a", (function() {
@@ -264,13 +264,13 @@
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/experiments/presence.ts");
-			const c = e => {
+			const o = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
 						experimentName: r.lf
 					}) === r.Td
 				},
-				o = e => {
+				c = e => {
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
@@ -293,4 +293,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.95c84aec7e6b6079cda8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.a15f29385b05958cabc5.js.map

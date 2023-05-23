@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.6f87772e8425e487d021.js
-// Retrieved at 5/10/2023, 11:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.6b238ac4abf539f3b71f.js
+// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -551,7 +551,7 @@
 							await r(Object(d.o)(t.name))
 						}
 					})(), (async () => {
-						const a = Object(C.Cb)(n, {
+						const a = Object(C.Db)(n, {
 							userName: t
 						});
 						if (!a) return;
@@ -1276,7 +1276,7 @@
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(_.Cb)(e, {
+				user: (e, t) => Object(_.Db)(e, {
 					userName: t.username
 				})
 			});
@@ -1589,7 +1589,7 @@
 							minSize: 32
 						})
 					},
-					user: _.Cb,
+					user: _.Db,
 					userFlair: (e, t) => {
 						let {
 							subredditId: r
@@ -2713,4 +2713,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.6f87772e8425e487d021.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.6b238ac4abf539f3b71f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.3994ab99a2cc3c1813c3.js
-// Retrieved at 5/23/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.80bb452cd42d57d5af98.js
+// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1595,7 +1595,7 @@
 			const v = "create-community-button",
 				y = g.a.wrapped(d.c, "StyledTooltip", f.a),
 				x = Object(a.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.rb)(e),
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.sb)(e),
 					userIsSuspended: b.Z
 				});
 			t.a = Object(o.b)(x, (e, t) => {
@@ -3119,8 +3119,8 @@
 				},
 				Ve = Object(l.a)(He, We, Ze, (e, t, n) => Object(m.a)(n, e, t)),
 				Ge = Object(l.a)(We, e => {
-					const t = h.J in e && e[h.J].toUpperCase();
-					return "string" == typeof t && t in d.pc ? d.pc[t] : d.qc
+					const t = h.H in e && e[h.H].toUpperCase();
+					return "string" == typeof t && t in d.oc ? d.oc[t] : d.pc
 				}),
 				Ke = Object(l.c)({
 					isNsfwBlurSubreddit: ze.e,
@@ -3283,4 +3283,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.3994ab99a2cc3c1813c3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.80bb452cd42d57d5af98.js.map

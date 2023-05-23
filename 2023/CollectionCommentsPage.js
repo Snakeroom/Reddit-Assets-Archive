@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.a6f5ffafda9bd14cd0c9.js
-// Retrieved at 5/23/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.275be5daccffe719fc82.js
+// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -3679,7 +3679,7 @@
 					hk: "2x1D6M"
 				})), d.a.createElement("span", {
 					className: E.a.separator
-				}, "•"), l && d.a.createElement("span", null, Object(g.a)(new Date(l).getTime() / b.Yb, !0)))))
+				}, "•"), l && d.a.createElement("span", null, Object(g.a)(new Date(l).getTime() / b.Xb, !0)))))
 			};
 			var j = s("./src/reddit/selectors/posts.ts"),
 				P = s("./src/reddit/components/ItemCarousel/helpers.ts"),
@@ -4957,7 +4957,7 @@
 				showEditFlair: Ae.a,
 				subredditOrProfile: z.U,
 				isEditing: V.M,
-				userIsOp: K.Fb,
+				userIsOp: K.Gb,
 				isVoteCountAnimation: (e, t) => !!t.isActionBarAnimationEnabled && Object(Me.f)(e, {
 					postId: t.postId
 				}),
@@ -5945,7 +5945,7 @@
 					Z = z && Object(O.i)(z),
 					X = Object(i.e)(e => {
 						if (!Z) return !0;
-						const t = Object(k.Ib)(e, D.author || "");
+						const t = Object(k.Jb)(e, D.author || "");
 						return !t || t.enableFollowers
 					}),
 					Q = Object(i.e)(E.a);
@@ -6234,7 +6234,7 @@
 						sort: l.cb.TOP,
 						timerType: t,
 						timerMillis: e,
-						timeSort: l.pc.WEEK
+						timeSort: l.oc.WEEK
 					}), this.onFooterClick = e => {
 						this.props.sendEvent(Object(O.c)("recommended_footer"))
 					}
@@ -6251,7 +6251,7 @@
 						subredditOrProfile: o
 					} = this.props;
 					return s || e ? t : r && n && n.id ? Object(V.a)(n.id) : Object(p.a)(o.name, l.cb.TOP, {
-						t: l.pc.WEEK
+						t: l.oc.WEEK
 					})
 				}
 				renderSmallBanner() {
@@ -10309,7 +10309,7 @@
 						tooltipIdPrefix: J.a,
 						tooltipType: ct.f.StickyPost
 					}))(e),
-					userPrefs: We.Jb,
+					userPrefs: We.Kb,
 					inResonatePilot: Le.a,
 					isQualifiedForUpvotePrompt: ge.c,
 					isModWithUserNotesPermissions: (e, t) => {
@@ -10792,32 +10792,33 @@
 						sendEvent: L,
 						sort: A,
 						subredditAboutInfo: B,
-						subredditOrProfile: R
+						subredditOrProfile: R,
+						userPrefs: M
 					} = this.props, {
-						isEmbeddedInLiveChatIframe: M
+						isEmbeddedInLiveChatIframe: D
 					} = this.state;
 					if (!I) return null;
-					let D, W = "";
-					const U = (null == y ? void 0 : y.bucketed) && Object(lt.a)(w) && Object(lt.b)(I);
-					if (U) {
+					let W, U = "";
+					const H = (null == y ? void 0 : y.bucketed) && Object(lt.a)(w) && Object(lt.b)(I);
+					if (H) {
 						const e = d()([...Object(i.a)(C.search)]);
-						D = Object(ve.e)(u()(e, se.d)), W = Object(ve.b)(N, void 0, D)
+						W = Object(ve.e)(u()(e, se.d)), U = Object(ve.b)(N, void 0, W, M.over18 && M.searchOver18)
 					}
-					const H = this.isCommentPermalink(),
-						V = [],
-						z = I.isLocked && !s,
-						K = !(H || I.isArchived || B && B.userIsBanned || I.authorIsBlocked || I.unrepliableReason);
-					if (z) V.push(g.a.createElement(st.a, {
+					const V = this.isCommentPermalink(),
+						z = [],
+						K = I.isLocked && !s,
+						q = !(V || I.isArchived || B && B.userIsBanned || I.authorIsBlocked || I.unrepliableReason);
+					if (K) z.push(g.a.createElement(st.a, {
 						key: "commentThreadBanner",
 						subredditOrProfile: R
 					}));
-					else if (I.isArchived) V.push(g.a.createElement(tt.a, {
+					else if (I.isArchived) z.push(g.a.createElement(tt.a, {
 						key: "commentThreadBanner"
 					}));
-					else if (K && !p && !O)
+					else if (q && !p && !O)
 						if (f || !f && h) {
 							const e = Object(S.a)(_.c.replyToPost, N);
-							V.push(g.a.createElement(Ve.a, {
+							z.push(g.a.createElement(Ve.a, {
 								autofocus: !1,
 								isTopLevelComment: !0,
 								depth: 0,
@@ -10850,17 +10851,17 @@
 									hk: "m3FAA"
 								})
 							}))
-						} else V.push(g.a.createElement(ze.a, {
+						} else z.push(g.a.createElement(ze.a, {
 							key: "loggedOutCommentForm",
 							location: C,
 							openLoginModal: k,
 							openRegisterModal: j,
 							origin: P
 						}));
-					if (I.contestMode && V.push(g.a.createElement(nt.a, {
+					if (I.contestMode && z.push(g.a.createElement(nt.a, {
 							hasModeratorPostPermissions: c,
 							key: "contestModeBanner"
-						})), p || O || (this.props.isSubredditDiscoveryCrosspostEnabled ? V.push(g.a.createElement(wt.a, {
+						})), p || O || (this.props.isSubredditDiscoveryCrosspostEnabled ? z.push(g.a.createElement(wt.a, {
 							commentId: n,
 							commentsPageKey: o,
 							isOverlay: v,
@@ -10875,7 +10876,7 @@
 							postId: N,
 							sort: A,
 							suggestedSort: I.suggestedSort
-						})) : V.push(g.a.createElement(Je.b, {
+						})) : z.push(g.a.createElement(Je.b, {
 							commentId: n,
 							elementRef: this.updateCommentSortRef,
 							isOverlay: v,
@@ -10890,12 +10891,12 @@
 							isOverlay: v,
 							key: "commentNavigation",
 							postId: N
-						}))), V.push(g.a.createElement(ut.a, {
+						}))), z.push(g.a.createElement(ut.a, {
 							key: "subredditForkingCTA",
 							postId: N
 						})), !t || l || p || O)
 						if (!e || l || O)
-							if (O) V.push(g.a.createElement(Ut, {
+							if (O) z.push(g.a.createElement(Ut, {
 								commentSort: A,
 								key: "otherDiscussions",
 								postId: N,
@@ -10910,7 +10911,7 @@
 									commentId: n,
 									commentsPageKey: o
 								});
-							V.push(g.a.createElement(Ge.a, {
+							z.push(g.a.createElement(Ge.a, {
 								commentId: n,
 								commentsPageKey: s,
 								draftKey: e,
@@ -10919,14 +10920,14 @@
 								postId: N,
 								renderedInOverlay: v,
 								subredditId: R.id,
-								isEmbeddedLiveChat: M
+								isEmbeddedLiveChat: D
 							}, t => {
 								let {
 									scrollToBottom: n
 								} = t;
 								return f ? g.a.createElement(Ye.a, {
 									isV2: !0,
-									isEmbeddedLiveChat: M,
+									isEmbeddedLiveChat: D,
 									key: "chatCommentsForm",
 									postId: N,
 									replyComment: T,
@@ -10945,15 +10946,15 @@
 								})
 							}))
 						}
-					} else U && D ? V.push(g.a.createElement(mt.a, {
+					} else H && W ? z.push(g.a.createElement(mt.a, {
 						key: `search-pdp-comments-${o}`,
 						commentsPageKey: o,
 						isOverlay: v,
 						prevLocation: C,
-						listingKey: W,
+						listingKey: U,
 						post: I,
-						searchOptions: D
-					})) : (V.push(g.a.createElement("div", {
+						searchOptions: W
+					})) : (z.push(g.a.createElement("div", {
 						className: Object(E.a)(Ft.a.CommentsPaneWrapper, {
 							[Ft.a.mIsInOverlay]: v
 						}),
@@ -10969,30 +10970,30 @@
 						postId: N,
 						onAllCommentsRendered: this.onAllCommentsRendered,
 						renderedInOverlay: v
-					})))), e && l ? V.push(g.a.createElement(qe.e, {
+					})))), e && l ? z.push(g.a.createElement(qe.e, {
 						key: "commentsErrorState",
 						postId: N,
 						commentId: n,
 						sort: A,
 						apiError: e
-					})) : !a && t && V.push(g.a.createElement(qe.a, {
+					})) : !a && t && z.push(g.a.createElement(qe.a, {
 						isAvatarsInCommentsEnabled: m,
 						key: "commentsPlaceholder"
 					})));
-					else V.push(g.a.createElement(qe.e, {
+					else z.push(g.a.createElement(qe.e, {
 						key: "errorState",
 						postId: N,
 						commentId: n,
 						sort: A,
 						apiError: e
 					}));
-					else this.didRenderLoading = !0, V.push(g.a.createElement(qe.a, {
+					else this.didRenderLoading = !0, z.push(g.a.createElement(qe.a, {
 						isAvatarsInCommentsEnabled: m,
 						key: "commentsPlaceholder"
 					}));
 					return g.a.createElement(ae.a.Provider, {
 						value: this.sendEventWithName
-					}, V)
+					}, z)
 				}
 			}
 			const Xt = qt(Object(oe.b)(Jt(Object(bt.c)(Zt)))),
@@ -11393,4 +11394,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.a6f5ffafda9bd14cd0c9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.275be5daccffe719fc82.js.map

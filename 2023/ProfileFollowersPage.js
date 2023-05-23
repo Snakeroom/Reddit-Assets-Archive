@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.8d9908150b5b038616c4.js
-// Retrieved at 5/23/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.3e6d533644c42486129e.js
+// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -164,7 +164,7 @@
 					}));
 					const h = p.name;
 					if ((await Object(l.c)(d(), {
-							subredditNames: [`${r.rc}${p.name}`],
+							subredditNames: [`${r.qc}${p.name}`],
 							subscribe: t
 						})).ok) {
 						s(w({
@@ -798,7 +798,7 @@
 					const b = f.e[Object(g.U)(s(), {})],
 						x = p.toLowerCase(),
 						I = {
-							...r()(e.queryParams, v.q),
+							...r()(e.queryParams, v.p),
 							sort: u,
 							layout: b,
 							t: m
@@ -1222,7 +1222,7 @@
 							await s(Object(l.o)(t.name))
 						}
 					})(), (async () => {
-						const n = Object(E.Cb)(r, {
+						const n = Object(E.Db)(r, {
 							userName: t
 						});
 						if (!n) return;
@@ -1549,7 +1549,7 @@
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(I.Cb)(e, {
+				user: (e, t) => Object(I.Db)(e, {
 					userName: t.username
 				})
 			});
@@ -1862,7 +1862,7 @@
 							minSize: 32
 						})
 					},
-					user: I.Cb,
+					user: I.Db,
 					userFlair: (e, t) => {
 						let {
 							subredditId: s
@@ -4226,7 +4226,7 @@
 				})())))
 			};
 			h.defaultProps = {
-				minimizedLength: d.Zb
+				minimizedLength: d.Yb
 			}, t.a = h
 		},
 		"./src/reddit/components/SidebarFooter/index.m.less": function(e, t, s) {
@@ -5302,7 +5302,7 @@
 					let {
 						subredditOrProfile: s
 					} = t;
-					return s.type === c.a.PROFILE ? Object(h.Cb)(e, {
+					return s.type === c.a.PROFILE ? Object(h.Db)(e, {
 						userName: s.name
 					}) : null
 				}
@@ -6547,4 +6547,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.8d9908150b5b038616c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.3e6d533644c42486129e.js.map

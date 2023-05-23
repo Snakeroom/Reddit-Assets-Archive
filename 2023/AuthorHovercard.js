@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.3730da5ca5e61eecfcfd.js
-// Retrieved at 5/17/2023, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.ac9874ae5124427deda0.js
+// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -59,7 +59,7 @@
 					shortMonths: o,
 					locale: i = r.DEFAULT_LOCALE
 				} = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-				const c = new Date(e * a.Yb);
+				const c = new Date(e * a.Xb);
 				return s.a ? new Intl.DateTimeFormat(i, {
 					month: o ? "short" : "long",
 					day: t ? "numeric" : void 0,
@@ -491,7 +491,7 @@
 							await n(Object(d.o)(t.name))
 						}
 					})(), (async () => {
-						const r = Object(k.Cb)(a, {
+						const r = Object(k.Db)(a, {
 							userName: t
 						});
 						if (!r) return;
@@ -1425,7 +1425,7 @@
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(I.Cb)(e, {
+				user: (e, t) => Object(I.Db)(e, {
 					userName: t.username
 				})
 			});
@@ -1738,7 +1738,7 @@
 							minSize: 32
 						})
 					},
-					user: I.Cb,
+					user: I.Db,
 					userFlair: (e, t) => {
 						let {
 							subredditId: n
@@ -1984,13 +1984,13 @@
 						}
 					}, []), Object(r.useEffect)(() => {
 						if (Object(x.a)()) {
-							const e = Object(_.F)("modnote-draft");
+							const e = Object(_.G)("modnote-draft");
 							y(e && e[c] ? e[c] : "")
 						}
 					}, [c]);
 					const T = Object(s.d)(),
 						L = Object(r.useCallback)(e => {
-							y(e), Object(_.Jb)("modnote-draft", {
+							y(e), Object(_.Lb)("modnote-draft", {
 								[c]: e
 							})
 						}, [y, c]),
@@ -2661,7 +2661,7 @@
 							userId: i,
 							filter: c
 						} = e,
-						l = Object(s.e)(e => Object(E.Bb)(e, {
+						l = Object(s.e)(e => Object(E.Cb)(e, {
 							userId: i
 						})),
 						u = Object(s.e)(e => Object(T.X)(e, {
@@ -2977,7 +2977,7 @@
 						x = Object(s.e)(t => Object(pt.b)(mt.c.access)(t, e)),
 						_ = Object(s.e)(t => Object(pt.b)(mt.c.mail)(t, e)),
 						g = Object(s.e)(t => Object(pt.b)(mt.c.flair)(t, e)),
-						C = Object(s.e)(e => Object(E.Cb)(e, {
+						C = Object(s.e)(e => Object(E.Db)(e, {
 							userName: u
 						})),
 						I = Object(s.e)(e => !!Object(bt.b)(e, {
@@ -3442,7 +3442,7 @@
 						}
 					})()
 				}, [c]);
-				const l = Object(s.e)(e => c && Object(E.Cb)(e, {
+				const l = Object(s.e)(e => c && Object(E.Db)(e, {
 					userName: c
 				}));
 				return i ? c && l ? a.a.createElement(At, Pt({}, e, {
@@ -3657,7 +3657,7 @@
 					c = null != n ? n : r;
 				return a.a.createElement(a.a.Fragment, null, function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : s.DEFAULT_LOCALE;
-					const n = e * o.Yb;
+					const n = e * o.Xb;
 					return new Date(n).toLocaleString(t, {
 						weekday: "short",
 						month: "short",
@@ -3724,7 +3724,7 @@
 				let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
 					r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : c.DEFAULT_LOCALE;
 				const a = Object(u.e)(e, t),
-					s = new Date(e * l.Yb);
+					s = new Date(e * l.Xb);
 				let o;
 				if (a === u.a.Live || n) return d.fbt._("Now", null, {
 					hk: "Prpcg"
@@ -3815,9 +3815,9 @@
 					T = Object(m.a)(),
 					[L, D, F] = function(e, t, n) {
 						const [a, s] = Object(r.useState)(Object(u.s)(e, t) || 0), o = Object(r.useCallback)(() => {
-							s(a + 1), Object(u.Ab)(e, t, a + 1)
+							s(a + 1), Object(u.Cb)(e, t, a + 1)
 						}, []), i = Object(r.useCallback)(() => {
-							n > 0 && (s(n), Object(u.Ab)(e, t, n))
+							n > 0 && (s(n), Object(u.Cb)(e, t, n))
 						}, []);
 						return [a, o, i]
 					}(h, n.notificationName, (null === (v = n.persistence) || void 0 === v ? void 0 : v.maxViews) || 0),
@@ -4352,7 +4352,7 @@
 						[C, I] = function(e) {
 							const [t, n] = Object(a.useState)(() => Object(q.w)(e));
 							return [t, Object(a.useCallback)(() => {
-								n(!0), Object(q.Bb)(e)
+								n(!0), Object(q.Db)(e)
 							}, [e])]
 						}(x),
 						[O, N] = function(e) {
@@ -6042,8 +6042,49 @@
 			function s(e) {
 				const [t, n] = Object(r.useState)(Object(a.v)(e));
 				return [t, Object(r.useCallback)(() => {
-					n(!0), Object(a.rb)(e)
+					n(!0), Object(a.tb)(e)
 				}, [])]
+			}
+		},
+		"./src/reddit/hooks/useLocalStorage.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return i
+			}));
+			var r = n("./node_modules/react/index.js"),
+				a = n("./src/reddit/helpers/localStorage/index.ts");
+			const s = {},
+				o = (e, t, n) => (s[e] || (s[e] = {
+					callbacks: [],
+					value: n
+				}), s[e].callbacks.push(t), {
+					deregister: () => {
+						const {
+							callbacks: n
+						} = s[e], r = n.indexOf(t);
+						r > -1 && n.splice(r, 1)
+					},
+					emit: n => {
+						s[e].value !== n && (s[e].value = n, s[e].callbacks.forEach(e => {
+							e !== t && e(n)
+						}))
+					}
+				});
+
+			function i(e, t) {
+				const n = Object(r.useRef)(null);
+				let s;
+				s = Object(a.G)(e);
+				const [i, c] = Object(r.useState)(null != s ? s : t);
+				return Object(r.useEffect)(() => (n.current = o(e, c, t), () => {
+					var e;
+					return null === (e = n.current) || void 0 === e ? void 0 : e.deregister()
+				}), [e, t]), Object(r.useEffect)(() => {
+					var e;
+					null === (e = n.current) || void 0 === e || e.emit(i)
+				}, [i]), [i, function(t) {
+					Object(a.Lb)(e, t), c(t)
+				}]
 			}
 		},
 		"./src/reddit/hooks/useLocale.ts": function(e, t, n) {
@@ -6431,7 +6472,7 @@
 					const {
 						id: n,
 						eventViews: r
-					} = Object(s.B)();
+					} = Object(s.C)();
 					return n === e.id && r > e.maxViews ? null : e
 				}),
 				l = Object(r.a)(d, e => {
@@ -6439,7 +6480,7 @@
 					const {
 						id: t,
 						lastInteractionTimestamp: n
-					} = Object(s.B)();
+					} = Object(s.C)();
 					return t === e.id && n > 0 ? null : e.banner
 				})
 		},
@@ -6477,7 +6518,7 @@
 						subredditId: n,
 						username: r
 					} = t;
-					const a = Object(o.Cb)(e, {
+					const a = Object(o.Db)(e, {
 						userName: r
 					});
 					if (!a) return;
@@ -6687,4 +6728,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.3730da5ca5e61eecfcfd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.ac9874ae5124427deda0.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.e7b7dd3fb4e42d2359f5.js
-// Retrieved at 5/17/2023, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.4fd1ee91bd7e5506b841.js
+// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -82,9 +82,9 @@
 			})), n.d(t, "J", (function() {
 				return We
 			})), n.d(t, "B", (function() {
-				return Ye
-			})), n.d(t, "A", (function() {
 				return Xe
+			})), n.d(t, "A", (function() {
+				return Ye
 			})), n.d(t, "G", (function() {
 				return Je
 			})), n.d(t, "Q", (function() {
@@ -191,8 +191,8 @@
 				q = n("./src/chat/selectors/experiments.ts"),
 				Z = n("./src/chat/selectors/liveChat/index.ts"),
 				Q = n("./node_modules/reselect/es/index.js");
-			const Y = Object(Q.a)(Z.e, e => e[0]);
-			var X = n("./src/chat/selectors/platform.ts"),
+			const X = Object(Q.a)(Z.e, e => e[0]);
+			var Y = n("./src/chat/selectors/platform.ts"),
 				J = n("./src/chat/singleton/SendbirdSDK.ts");
 			const $ = "CHANNEL__ADD_SUCCESS",
 				ee = "CHANNEL__ADD_FAIL",
@@ -304,7 +304,7 @@
 						n(Object(b.c)())
 					}
 				}, De = (e, t) => {
-					return Object(X.e)(e) === t.channelId && (t.unreadMessageCount = 0), t
+					return Object(Y.e)(e) === t.channelId && (t.unreadMessageCount = 0), t
 				}, Re = Object(o.a)(ue), Ue = e => async (t, n) => {
 					const {
 						channelId: a
@@ -316,8 +316,8 @@
 					}))
 				}, Pe = Object(o.a)(se), Be = Object(o.a)(ae), He = Object(o.a)(ce), Fe = () => async (e, t) => {
 					const n = t(),
-						a = Object(X.e)(n),
-						s = Object(X.d)(n),
+						a = Object(Y.e)(n),
+						s = Object(Y.d)(n),
 						{
 							CREATE: r,
 							DENY: o,
@@ -326,7 +326,7 @@
 							INVITE_LINK_SETTINGS: b
 						} = E.a,
 						p = Object(d.a)(n);
-					if (p) return void e(Xe([p]));
+					if (p) return void e(Ye([p]));
 					if (s === b) return;
 					if (!n.platform.currentPage) return;
 					a && (await e(Object(f.d)(a)), e(Object(f.f)(!1))), await e(Object(h.f)()), e(Object(l.i)());
@@ -357,7 +357,7 @@
 					}
 				}, Ge = Object(o.a)(Ce), Ve = () => async (e, t) => {
 					const n = t(),
-						a = Object(X.f)(n);
+						a = Object(Y.f)(n);
 					a && (e(Object(f.d)(a)), e(Object(u.updateLastReadAtTimestamp)({
 						postId: a,
 						lastReadAt: Object(L.b)(new Date)
@@ -366,7 +366,7 @@
 					})))
 				}, We = e => async (t, n) => {
 					const a = n(),
-						s = e || Object(X.e)(a);
+						s = e || Object(Y.e)(a);
 					s && (await t(Pe(s)), await J.a.markChannelAsRead(), t(Object(b.c)()))
 				}, ze = Object(o.a)(te), Ke = Object(o.a)($), qe = Object(o.a)(ee), Ze = Object(o.a)(ne), Qe = (e, t, n) => {
 					const a = e.map(e => ({
@@ -383,7 +383,7 @@
 						})
 					}
 					return a
-				}, Ye = (e, t, n) => async (a, s, r) => {
+				}, Xe = (e, t, n) => async (a, s, r) => {
 					let {
 						apiContext: o,
 						gqlContext: l
@@ -459,8 +459,8 @@
 						} else a(qe()), a(Object(O.gb)(e));
 						a(Object(p.j)(!1)), a(Ze())
 					}
-				}, Xe = e => async t => {
-					e = e.slice(0, 1), await t(Object(v.t)(e)), t(Ye(e)), location.origin === r.a.oldRedditUrl && t(Object(O.o)(e))
+				}, Ye = e => async t => {
+					e = e.slice(0, 1), await t(Object(v.t)(e)), t(Xe(e)), location.origin === r.a.oldRedditUrl && t(Object(O.o)(e))
 				}, Je = e => async (t, n, a) => {
 					let {
 						apiContext: s
@@ -476,7 +476,7 @@
 							}
 						} = r,
 						d = Object(H.F)(r, "channelSendbirdUrl"),
-						u = Object(X.d)(r);
+						u = Object(Y.d)(r);
 					if (o && i) {
 						const n = Qe(e, l);
 						if ((await Object(T.j)(s(), i, n, d)).body && u === E.a.INVITE_MEMBERS) {
@@ -502,7 +502,7 @@
 					e(Object(c.c)(t))
 				}, tt = () => async (e, t) => {
 					const n = t(),
-						a = Y(n);
+						a = X(n);
 					if (null != a && a.post.id) {
 						const t = {
 							postId: a.post.id
@@ -563,7 +563,7 @@
 					} = n();
 					if (a && a.urlParams.userIds) {
 						const e = a.urlParams.userIds.split(",");
-						return t(Xe(e))
+						return t(Ye(e))
 					}
 					if (e) return t($e(e));
 					const s = Object(I.b)(n());
@@ -633,8 +633,8 @@
 						{
 							INVITE_LINK_SETTINGS: a
 						} = E.a,
-						s = Object(X.e)(n),
-						c = Object(X.d)(n);
+						s = Object(Y.e)(n),
+						c = Object(Y.d)(n);
 					s && c !== a && await J.a.addChannelModelByChannelId(s).catch(() => e(rt()))
 				}, vt = (Object(o.a)(re), Object(o.a)(oe), Object(o.a)(Ee)), jt = e => async (t, n, a) => {
 					let {
@@ -1253,7 +1253,7 @@
 			})), n.d(t, "i", (function() {
 				return Q
 			})), n.d(t, "x", (function() {
-				return X
+				return Y
 			})), n.d(t, "b", (function() {
 				return J
 			})), n.d(t, "p", (function() {
@@ -1496,14 +1496,14 @@
 							await n(A(e, l.url, s))
 						}
 					}
-				}, Q = "MESSAGE__RECEIVE_ADD_ONE", Y = Object(o.a)(Q), X = e => async (t, n) => {
+				}, Q = "MESSAGE__RECEIVE_ADD_ONE", X = Object(o.a)(Q), Y = e => async (t, n) => {
 					const {
 						messageId: a,
 						messageData: {
 							clientMessageId: s
 						}
 					} = e, c = n(), r = Object(N.C)(c) === e.channelId, o = Object(S.e)(c), l = Object(k.f)(c, s), u = Object(k.b)(c, a);
-					o && r && t(Object(i.J)(e.channelId)), l ? (e.createdAt = l.createdAt, t(Object(d.eb)(e))) : u && (e.createdAt = u.createdAt), await t(Y({
+					o && r && t(Object(i.J)(e.channelId)), l ? (e.createdAt = l.createdAt, t(Object(d.eb)(e))) : u && (e.createdAt = u.createdAt), await t(X({
 						[a]: e
 					})), t(Object(j.c)(e))
 				}, J = "MESSAGE__ADD_LIST", $ = Object(o.a)(J), ee = (e, t) => async n => {
@@ -1987,7 +1987,7 @@
 			const c = "SET_ACTIVE_CHAT_APP",
 				r = Object(a.a)(c),
 				o = e => async t => {
-					Object(s.Eb)(e), t(r(e ? "new" : "old"))
+					Object(s.Gb)(e), t(r(e ? "new" : "old"))
 				}, i = "REDDIT_CHAT_RESET_STATE", l = Object(a.a)(i), d = "REDDIT_CHAT_OPEN", u = Object(a.a)(d), h = "REDDIT_CHAT_OPEN_DM", m = Object(a.a)(h), b = "REDDIT_CHAT_SET_ROOMS_COUNT", p = Object(a.a)(b), f = "REDDIT_CHAT_SET_NOTIFICATIONS_COUNT", g = Object(a.a)(f)
 		},
 		"./src/chat/actions/renameGroupChat/index.ts": function(e, t, n) {
@@ -2402,9 +2402,9 @@
 			})), n.d(t, "L", (function() {
 				return Q
 			})), n.d(t, "M", (function() {
-				return Y
-			})), n.d(t, "c", (function() {
 				return X
+			})), n.d(t, "c", (function() {
+				return Y
 			})), n.d(t, "C", (function() {
 				return J
 			})), n.d(t, "X", (function() {
@@ -2645,7 +2645,7 @@
 					},
 					...Object(h.a)(e)
 				}))(t())
-			}, Y = e => async (t, n) => {
+			}, X = e => async (t, n) => {
 				((e, t) => {
 					const n = Object(p.c)(e, t);
 					n && Object(m.a)({
@@ -2660,7 +2660,7 @@
 						...Object(h.a)(e)
 					})
 				})(n(), e)
-			}, X = () => async (e, t) => {
+			}, Y = () => async (e, t) => {
 				(e => Object(m.a)({
 					noun: "add_to_group",
 					source: a.b.ChatSettings,
@@ -3409,7 +3409,7 @@
 			})), n.d(t, "m", (function() {
 				return Q
 			})), n.d(t, "b", (function() {
-				return Y
+				return X
 			})), n.d(t, "n", (function() {
 				return $
 			})), n.d(t, "o", (function() {
@@ -3509,7 +3509,7 @@
 						userId: e,
 						username: i
 					})), t(Object(o.a)())) : v && t(Z(v.error))
-				}, Y = "BLOCKED_USER_LIST_FETCH_COMPLETED", X = Object(i.a)("BLOCKED_USER_LIST_FETCH_FAILED"), J = Object(i.a)(Y), $ = () => async (e, t, n) => {
+				}, X = "BLOCKED_USER_LIST_FETCH_COMPLETED", Y = Object(i.a)("BLOCKED_USER_LIST_FETCH_FAILED"), J = Object(i.a)(X), $ = () => async (e, t, n) => {
 					let {
 						apiContext: a
 					} = n;
@@ -3543,7 +3543,7 @@
 							}), e(J({
 								blockedContacts: c
 							}))
-						} else e(X(t.error))
+						} else e(Y(t.error))
 					}
 				}, ee = Object(i.a)("MODERATOR__KICK_USER"), te = (e, t) => async (n, a, s) => {
 					let {
@@ -4672,9 +4672,9 @@
 				q = n("./node_modules/lodash/isEqual.js"),
 				Z = n.n(q),
 				Q = n("./node_modules/lodash/map.js"),
-				Y = n.n(Q),
-				X = n("./node_modules/lodash/sortBy.js"),
-				J = n.n(X),
+				X = n.n(Q),
+				Y = n("./node_modules/lodash/sortBy.js"),
+				J = n.n(Y),
 				$ = n("./src/chat/actions/channel.ts"),
 				ee = n("./src/chat/actions/container.ts"),
 				te = n("./src/chat/actions/message/index.ts"),
@@ -4920,8 +4920,8 @@
 			var Ke, qe = n("./src/chat/constants/users.ts"),
 				Ze = n("./src/chat/endpoints/accounts/index.ts"),
 				Qe = n("./src/chat/endpoints/sendbird/index.ts"),
-				Ye = n("./src/chat/helpers/urls/index.ts"),
-				Xe = n("./src/chat/models/Channel/utils.ts"),
+				Xe = n("./src/chat/helpers/urls/index.ts"),
+				Ye = n("./src/chat/models/Channel/utils.ts"),
 				Je = n("./src/chat/models/Contact/index.ts"),
 				$e = n("./src/chat/selectors/contacts.ts");
 			! function(e) {
@@ -4989,7 +4989,7 @@
 									}])
 								}
 							}
-							e.length && await Object(Qe.j)(c(), o, e, Object(Xe.a)(n))
+							e.length && await Object(Qe.j)(c(), o, e, Object(Ye.a)(n))
 						}
 					}
 				}
@@ -5130,7 +5130,7 @@
 										n && (t = n.id)
 									}
 								}
-								t && e(Object(De.b)(Object(Ye.userActionUrl)(n, t, qe.a.Kick, {
+								t && e(Object(De.b)(Object(Xe.userActionUrl)(n, t, qe.a.Kick, {
 									source: Ue.b.ChatView
 								})))
 							}
@@ -5142,7 +5142,7 @@
 				command: "new",
 				description: "Start new chat",
 				action: () => async e => {
-					const t = Object(Ye.getRedirectURL)(Object(Ye.channelUrl)("create"));
+					const t = Object(Xe.getRedirectURL)(Object(Xe.channelUrl)("create"));
 					e(Object(De.b)(t))
 				}
 			}, {
@@ -5158,7 +5158,7 @@
 						if (!t) return;
 						const a = Object(C.t)(n(), t);
 						if (a) {
-							const t = Object(Ye.getRedirectURL)(Object(Ye.channelUrl)(a.channelId));
+							const t = Object(Xe.getRedirectURL)(Object(Xe.channelUrl)(a.channelId));
 							e(Object(De.b)(t))
 						} else e(nt({
 							commandValue: t
@@ -5447,20 +5447,20 @@
 						className: n
 					}, t)
 				}, "Wrapper", Kt.a),
-				Yt = Object(Vt.a)({
+				Xt = Object(Vt.a)({
 					channelId: C.C,
 					channelMembers: Wt.g,
 					hasMoreMembers: Wt.e,
 					fetchingMembers: Wt.a,
 					isEmbedded: ut.g
 				});
-			class Xt extends r.Component {
+			class Yt extends r.Component {
 				constructor(e) {
 					var t;
 					super(e), t = this, this.fetchedFilter = "", this.isMount = !1, this.fetchSubredditChannelUsers = K()((function() {
 						let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "";
 						t.props.fetchSubredditChannelUsers(e)
-					}), Re.Yb, {
+					}), Re.Xb, {
 						leading: !0,
 						trailing: !1
 					}), this.onArrowUpListener = e => {
@@ -5534,11 +5534,11 @@
 					}, this.renderContent())
 				}
 			}
-			var Jt = Object(i.b)(Yt, e => ({
+			var Jt = Object(i.b)(Xt, e => ({
 					fetchSubredditChannelUsers: t => e(Object(Ft.e)({
 						filter: t
 					}))
-				}))(Xt),
+				}))(Yt),
 				$t = n("./src/chat/constants/keys.ts"),
 				en = n("./src/chat/singleton/SendbirdSDK.ts"),
 				tn = n("./src/chat/controls/ContentEditable/index.m.less"),
@@ -6116,8 +6116,8 @@
 				qn = n("./node_modules/lodash/xorBy.js"),
 				Zn = n.n(qn),
 				Qn = n("./src/lib/hooks/usePrevious.ts"),
-				Yn = n("./src/lib/prettyPrintNumber/index.ts"),
-				Xn = n("./src/chat/actions/message/reactions.ts"),
+				Xn = n("./src/lib/prettyPrintNumber/index.ts"),
+				Yn = n("./src/chat/actions/message/reactions.ts"),
 				Jn = n("./src/chat/models/MessageReaction/index.ts"),
 				$n = n("./src/chat/selectors/reactions.ts"),
 				ea = n("./src/chat/selectors/user.ts"),
@@ -6137,7 +6137,7 @@
 					b = Object(Qn.a)(h),
 					p = Object(i.d)(),
 					f = Object(r.useRef)(Te()(e => {
-						p(Object(Xn.b)({
+						p(Object(Yn.b)({
 							channelSendbirdId: t,
 							messageSendbirdId: c,
 							reactionIconKey: d,
@@ -6173,12 +6173,12 @@
 					})
 				}, O && o.a.createElement("span", {
 					className: na.a.ReactionCounter
-				}, Object(Yn.b)(O - 1)), o.a.createElement("span", {
+				}, Object(Xn.b)(O - 1)), o.a.createElement("span", {
 					className: na.a.ReactionCounter,
 					title: `${O||h}`
-				}, Object(Yn.b)(O || h)), O && o.a.createElement("span", {
+				}, Object(Xn.b)(O || h)), O && o.a.createElement("span", {
 					className: na.a.ReactionCounter
-				}, Object(Yn.b)(O + 1))))) : null
+				}, Object(Xn.b)(O + 1))))) : null
 			}));
 			var sa = o.a.memo(e => {
 					let {
@@ -6449,7 +6449,7 @@
 							if (u && u.messageType === He.d.USER) {
 								const n = u.reactions.find(e => e.key === t),
 									a = !!Boolean(n) && Boolean(null == n ? void 0 : n.userIds.find(e => e === h));
-								e(Object(Xn.b)({
+								e(Object(Yn.b)({
 									channelSendbirdId: u.channelId,
 									messageSendbirdId: u.messageId,
 									reactionIconKey: t,
@@ -6588,7 +6588,7 @@
 					if (t.length > Aa && this.isChannelSwitched(e)) {
 						const e = t.length - Aa,
 							a = t.slice(0, e);
-						n(Y()(a, e => {
+						n(X()(a, e => {
 							let {
 								messageId: t
 							} = e;
@@ -6711,8 +6711,8 @@
 				Za = n("./src/chat/components/OverlayShareToChat/RichUnit/index.m.less"),
 				Qa = n.n(Za);
 			const {
-				POST: Ya,
-				USER_POST: Xa,
+				POST: Xa,
+				USER_POST: Ya,
 				COMMENT: Ja
 			} = He.c;
 			var $a = e => {
@@ -6725,8 +6725,8 @@
 						className: Qa.a.Wrapper
 					}, a ? ((e, t) => {
 						switch (t.type) {
-							case Xa:
 							case Ya:
+							case Xa:
 								return o.a.createElement(qa.a, {
 									postUrl: e,
 									richUnitData: t,
@@ -6872,13 +6872,13 @@
 						O = Object(i.e)(C.z),
 						v = Object(r.useMemo)(() => O >= xa.a.InitChannels || !g, [O, g]),
 						j = Object(r.useCallback)(() => {
-							const e = Object(Ye.getShareToNewChatUrl)(t);
+							const e = Object(Xe.getShareToNewChatUrl)(t);
 							n(Object(De.b)(e))
 						}, [n, t]),
 						E = Object(r.useCallback)((e, t) => {
 							h(n => e ? [...n, t] : n.filter(e => e !== t))
 						}, []),
-						_ = Object(r.useMemo)(() => Object(Ye.getChatUnitType)(t), [t]),
+						_ = Object(r.useMemo)(() => Object(Xe.getChatUnitType)(t), [t]),
 						I = Object(r.useMemo)(() => !Boolean(u.length), [u]),
 						y = Object(r.useMemo)(() => ms._({
 							"*": "Share to {amount of chats} chats",
@@ -7160,11 +7160,11 @@
 					}, ((e, t) => {
 						const n = (new Date).getTime(),
 							a = Math.round(Math.abs((e - n) / Re.E)),
-							s = Math.round(Math.abs((e - n) / Re.zc));
+							s = Math.round(Math.abs((e - n) / Re.yc));
 						let c = "";
 						const r = `${a}${je.fbt._("d",null,{hk:"1d5Wxl"})}`,
 							o = `${s}${je.fbt._("y",null,{hk:"3DaEfY"})}`;
-						return c = s < 1 ? `${r}` : `${o}`, `${`${Object(Yn.b)(t||0)} ${je.fbt._("karma",null,{hk:"4cmcG"})}`} • ${je.fbt._("redditor for {amount of time}",[je.fbt._param("amount of time",c)],{hk:"3o8EdY"})}`
+						return c = s < 1 ? `${r}` : `${o}`, `${`${Object(Xn.b)(t||0)} ${je.fbt._("karma",null,{hk:"4cmcG"})}`} • ${je.fbt._("redditor for {amount of time}",[je.fbt._param("amount of time",c)],{hk:"3o8EdY"})}`
 					})(t.created, t.totalKarma))
 				},
 				Fs = n("./src/chat/controls/MediaObject/index.m.less"),
@@ -7182,8 +7182,8 @@
 				Zs = n("./src/chat/components/OverlayChannelInvited/BlockedUsersPreview/index.m.less"),
 				Qs = n.n(Zs);
 			const {
-				fbt: Ys
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Xs = e => {
+				fbt: Xs
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Ys = e => {
 				let {
 					userId: t
 				} = e;
@@ -7209,23 +7209,23 @@
 						className: Qs.a.BlockedUsersPreview
 					}, o.a.createElement("div", {
 						className: Qs.a.MembersIcons
-					}, null == e ? void 0 : e.members.reduce((e, t) => t.isBlockedByMe ? [...e, o.a.createElement(Xs, {
+					}, null == e ? void 0 : e.members.reduce((e, t) => t.isBlockedByMe ? [...e, o.a.createElement(Ys, {
 						key: t.id,
 						userId: t.id
 					})] : e, []).slice(0, n)), o.a.createElement("div", {
 						className: Qs.a.Message
 					}, o.a.createElement("span", {
 						className: Qs.a.WarningMessage
-					}, Ys._("Heads up: you've blocked {name}", [Ys._param("name", null == t ? void 0 : t.slice(0, n).join(", "))], {
+					}, Xs._("Heads up: you've blocked {name}", [Xs._param("name", null == t ? void 0 : t.slice(0, n).join(", "))], {
 						hk: "22NnY"
-					}), a > 0 && o.a.createElement(o.a.Fragment, null, " ", Ys._({
+					}), a > 0 && o.a.createElement(o.a.Fragment, null, " ", Xs._({
 						"*": "and {totalOthersBlocked} others",
 						_1: "and 1 other"
-					}, [Ys._plural(a, "totalOthersBlocked")], {
+					}, [Xs._plural(a, "totalOthersBlocked")], {
 						hk: "1eT3ED"
-					})), " ", Ys._("in this chat", null, {
+					})), " ", Xs._("in this chat", null, {
 						hk: "CP5Sx"
-					})), Ys._(". If you accept you'll be able to see each other's messages and activity. They'll remain blocked on the rest of Reddit.", null, {
+					})), Xs._(". If you accept you'll be able to see each other's messages and activity. They'll remain blocked on the rest of Reddit.", null, {
 						hk: "2p46CR"
 					})))
 				},
@@ -7966,7 +7966,7 @@
 				[V.c.Uploading]: q.a.uploading,
 				[V.c.Processing]: q.a.processing
 			};
-			var Y = e => {
+			var X = e => {
 					let {
 						messageDataType: t,
 						uploadId: n,
@@ -8061,8 +8061,8 @@
 						width: null == k ? void 0 : k.width
 					})
 				},
-				X = n("./src/chat/components/Message/OffensiveMessageReportPrompt.m.less"),
-				J = n.n(X);
+				Y = n("./src/chat/components/Message/OffensiveMessageReportPrompt.m.less"),
+				J = n.n(Y);
 			const $ = y.a.wrapped(S.a, "Regular", J.a),
 				ee = y.a.wrapped(S.a, "Active", J.a),
 				te = Object(r.b)(void 0, (e, t) => ({
@@ -8289,9 +8289,9 @@
 				Ze = n("./src/chat/selectors/sidebar.ts");
 			const {
 				PENDING: Qe,
-				USER: Ye
+				USER: Xe
 			} = g.d, {
-				POST: Xe,
+				POST: Ye,
 				USER_POST: Je,
 				COMMENT: $e,
 				SNOOMOJI: et,
@@ -8410,7 +8410,7 @@
 					type: S,
 					report: N,
 					collapsedInvitePreview: w
-				} = h.messageData, T = h.messageType === Qe && h.error && h.clientMessageId, M = S !== et && S !== st && (S !== at || S === at && b), L = f && !T && !N, A = h.messageType === Ye && L, D = ((e, t, n, s, r, o) => {
+				} = h.messageData, T = h.messageType === Qe && h.error && h.clientMessageId, M = S !== et && S !== st && (S !== at || S === at && b), L = f && !T && !N, A = h.messageType === Xe && L, D = ((e, t, n, s, r, o) => {
 					var i, l, d, u, h;
 					const {
 						messageType: m,
@@ -8443,9 +8443,9 @@
 								darkBackground: !n,
 								faviconUrl: e.faviconUrl
 							}) : O;
-						case Xe:
+						case Ye:
 						case Je:
-							return (null == s ? void 0 : s.type) !== Xe && (null == s ? void 0 : s.type) !== Je || (null == s ? void 0 : s.removedByCategory) === Ge.b.Deleted ? O : c.a.createElement(ie.a, {
+							return (null == s ? void 0 : s.type) !== Ye && (null == s ? void 0 : s.type) !== Je || (null == s ? void 0 : s.removedByCategory) === Ge.b.Deleted ? O : c.a.createElement(ie.a, {
 								darkBackground: !n,
 								postUrl: f,
 								highlights: p,
@@ -8482,7 +8482,7 @@
 						}
 						case st: {
 							const e = b.clientMessageId;
-							return o || t && !(null === (h = b.image) || void 0 === h ? void 0 : h.blurredUrl) ? g : c.a.createElement(Y, {
+							return o || t && !(null === (h = b.image) || void 0 === h ? void 0 : h.blurredUrl) ? g : c.a.createElement(X, {
 								messageDataType: b.type,
 								uploadId: e,
 								uploadedImage: b.image,
@@ -9834,7 +9834,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var Y = e => s.a.createElement(L.a, Q({}, e, {
+			var X = e => s.a.createElement(L.a, Q({}, e, {
 					viewBox: "0 0 20 20"
 				}), e.isFilled ? s.a.createElement(s.a.Fragment, null, s.a.createElement("path", {
 					d: "M10.8,4.029,1.214,13.405a1.135,1.135,0,0,0-.339.805V18A1.127,1.127,0,0,0,2,19.125H5.79a1.134,1.134,0,0,0,.8-.338L15.971,9.2Z"
@@ -9843,7 +9843,7 @@
 				})) : s.a.createElement("path", {
 					d: "M18.25,3.159,16.841,1.75a2.634,2.634,0,0,0-3.692-.021L1.214,13.405a1.135,1.135,0,0,0-.339.805V18A1.127,1.127,0,0,0,2,19.125H5.79a1.134,1.134,0,0,0,.8-.338L18.271,6.851A2.634,2.634,0,0,0,18.25,3.159ZM5.79,17.875H2.124L2.087,14.3l9.771-9.559,3.4,3.406Zm11.587-11.9L16.136,7.252,12.751,3.867l1.272-1.244a1.381,1.381,0,0,1,1.934.011l1.409,1.409A1.381,1.381,0,0,1,17.377,5.977Z"
 				})),
-				X = n("./src/chat/icons/svgs/EnableNotifications/index.tsx"),
+				Y = n("./src/chat/icons/svgs/EnableNotifications/index.tsx"),
 				J = n("./src/chat/icons/svgs/InviteMember/index.tsx"),
 				$ = n("./src/chat/icons/svgs/Leave/index.tsx"),
 				ee = n("./src/chat/icons/svgs/Link/index.tsx"),
@@ -9950,13 +9950,13 @@
 							return {
 								text: m.fbt._("Rename group", null, {
 									hk: "hTeQ"
-								}), icon: s.a.createElement(Y, null)
+								}), icon: s.a.createElement(X, null)
 							};
 						case G.b.UnmuteNotifs:
 							return {
 								text: m.fbt._("Unmute notifications", null, {
 									hk: "2TcEwL"
-								}), icon: s.a.createElement(X.a, null)
+								}), icon: s.a.createElement(Y.a, null)
 							};
 						case G.b.ViewMembers:
 							return {
@@ -10373,7 +10373,7 @@
 				iconMembers: (e, t) => Object(le.x)(e, t.channelId),
 				isFullSize: ie.h,
 				isChatSwitcherEnabled: Se.a
-			}), Ye = Object(c.b)(Qe, e => ({
+			}), Xe = Object(c.b)(Qe, e => ({
 				minimize: () => {
 					e(Object(o.sizeChanged)(Ee.a.MINIMIZED)), e(Object(u.x)())
 				},
@@ -10383,7 +10383,7 @@
 					isVisible: !0
 				}))
 			}));
-			class Xe extends a.Component {
+			class Ye extends a.Component {
 				constructor(e) {
 					super(e), this.showChannelNameInput = () => {
 						this.props.showRenameGroupChat(), this.props.clickRenameGroupTracking()
@@ -10463,7 +10463,7 @@
 					}))
 				}
 			}
-			t.a = Ye(Xe)
+			t.a = Xe(Ye)
 		},
 		"./src/chat/components/OverlayNavButtonGroup/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -11072,7 +11072,7 @@
 						a = W.get(n);
 					a && a.socket && (a.isClosePlanned = !0, a.socket.close())
 				},
-				Y = (e, t, n, a) => {
+				X = (e, t, n, a) => {
 					const s = z(t),
 						c = W.get(s);
 					if (c && (c.socket.readyState === WebSocket.CONNECTING || c.socket.readyState === WebSocket.OPEN)) return;
@@ -11087,9 +11087,9 @@
 						r.retries = {
 							...Z
 						}
-					}), r.socket.addEventListener("message", $.bind(null, a)), r.socket.addEventListener("close", X.bind(null, s, a)), r.socket.addEventListener("error", ee.bind(null, s)), window && window.addEventListener("beforeunload", Q.bind(null, e, t))
+					}), r.socket.addEventListener("message", $.bind(null, a)), r.socket.addEventListener("close", Y.bind(null, s, a)), r.socket.addEventListener("error", ee.bind(null, s)), window && window.addEventListener("beforeunload", Q.bind(null, e, t))
 				},
-				X = (e, t, n) => {
+				Y = (e, t, n) => {
 					const a = W.get(e);
 					a && (a.isClosePlanned ? W.delete(e) : J(e, t))
 				},
@@ -11116,7 +11116,7 @@
 								connectionAttempts: s + 1
 							};
 						setTimeout(() => {
-							Y(l, i, d, t)
+							X(l, i, d, t)
 						}, o), Object(V.a)() && console.debug(`Connection reset, retrying in ${o}ms`)
 					}
 				},
@@ -11151,7 +11151,7 @@
 								uniqueId: s
 							} = e;
 							K.has(s) ? t() : (K.add(s), setTimeout(() => {
-								K.delete(s), Y(a, s, {
+								K.delete(s), X(a, s, {
 									...Z
 								}, n), t()
 							}, 1))
@@ -11651,17 +11651,17 @@
 					}, s.a.createElement(qe, null))), u && !d && s.a.createElement(ke, null))
 				},
 				Qe = n("./src/higherOrderComponents/makeAsync.tsx"),
-				Ye = n("./src/lib/loadWithRetries/index.ts");
-			const Xe = () => null;
+				Xe = n("./src/lib/loadWithRetries/index.ts");
+			const Ye = () => null;
 			var Je = Object(Qe.a)({
-				ErrorComponent: Xe,
-				getComponent: () => Object(Ye.a)(() => n.e("InvitedChannelsPanel").then(n.bind(null, "./src/chat/components/Sidebar/InvitedChannelsPanel/index.tsx"))).then(e => e.default),
-				LoadingComponent: Xe
+				ErrorComponent: Ye,
+				getComponent: () => Object(Xe.a)(() => n.e("InvitedChannelsPanel").then(n.bind(null, "./src/chat/components/Sidebar/InvitedChannelsPanel/index.tsx"))).then(e => e.default),
+				LoadingComponent: Ye
 			});
 			const $e = () => null;
 			var et = Object(Qe.a)({
 					ErrorComponent: $e,
-					getComponent: () => Object(Ye.a)(() => n.e("SettingsPanel").then(n.bind(null, "./src/chat/components/Sidebar/SettingsPanel/index.tsx"))).then(e => e.default),
+					getComponent: () => Object(Xe.a)(() => n.e("SettingsPanel").then(n.bind(null, "./src/chat/components/Sidebar/SettingsPanel/index.tsx"))).then(e => e.default),
 					LoadingComponent: $e
 				}),
 				tt = n("./src/chat/models/Settings/index.ts"),
@@ -13705,7 +13705,7 @@
 			let l, d;
 			const u = s()(e => {
 				Object(o.d)(l, e, 5 * i.qb)
-			}, 5 * i.Yb, {
+			}, 5 * i.Xb, {
 				leading: !1,
 				trailing: !0
 			});
@@ -14794,7 +14794,7 @@
 					isNSFW: !1
 				},
 				i = e => ({
-					created: e.date * a.Yb,
+					created: e.date * a.Xb,
 					id: e.id,
 					name: e.name,
 					profileImg: e.icon_img
@@ -16183,7 +16183,7 @@
 						return e
 				}
 			};
-			var Y = Object(a.c)({
+			var X = Object(a.c)({
 					channelsFilter: o,
 					draftMessages: b,
 					firstLoaded: f,
@@ -16209,12 +16209,12 @@
 					messageQuickReplyUsers: P,
 					liveChat: D
 				}),
-				X = n("./src/chat/actions/user.ts");
+				Y = n("./src/chat/actions/user.ts");
 			var J = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case X.b:
+						case Y.b:
 							return !0;
 						default:
 							return e
@@ -16280,7 +16280,7 @@
 							}
 						}
 					}
-					case X.h: {
+					case Y.h: {
 						const n = t.payload;
 						return {
 							...e,
@@ -16292,7 +16292,7 @@
 							}, e), {})
 						}
 					}
-					case X.c: {
+					case Y.c: {
 						const {
 							username: n
 						} = t.payload;
@@ -16326,11 +16326,11 @@
 							[n.id]: n
 						} : e
 					}
-					case X.h:
+					case Y.h:
 						return {
 							...e, ...t.payload || {}
 						};
-					case X.c: {
+					case Y.c: {
 						const {
 							userId: n
 						} = t.payload;
@@ -16342,7 +16342,7 @@
 							}
 						} : e
 					}
-					case X.b: {
+					case Y.b: {
 						const {
 							blockedContacts: n
 						} = t.payload;
@@ -16360,11 +16360,11 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : le,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case X.g:
+					case Y.g:
 						return [...e, t.payload];
-					case X.j:
+					case Y.j:
 						return e.filter(e => e !== t.payload);
-					case X.i:
+					case Y.i:
 						return le;
 					default:
 						return e
@@ -16966,8 +16966,8 @@
 					}
 				},
 				Qe = n("./node_modules/lodash/isEqual.js"),
-				Ye = n.n(Qe),
-				Xe = n("./src/chat/actions/message/unreadCount.ts");
+				Xe = n.n(Qe),
+				Ye = n("./src/chat/actions/message/unreadCount.ts");
 			const Je = {
 				unreadMessages: 0,
 				hasNewMessages: !1,
@@ -16982,8 +16982,8 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Je,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case Xe.a:
-							return Ye()(e, t.payload) ? e : {
+						case Ye.a:
+							return Xe()(e, t.payload) ? e : {
 								...e,
 								...t.payload
 							}
@@ -17368,7 +17368,7 @@
 			};
 
 			function qt(e, t) {
-				return e === t || (0 === e.length && 0 === t.length || !(0 === e.length && t.length > 0) && (!(e.length > 0 && 0 === t.length) && (1 === e.length && 1 === t.length ? e[0] === t[0] : 2 === e.length && 2 === t.length ? e[0] === t[0] && e[1] === t[1] : 3 === e.length && 3 === t.length ? e[0] === t[0] && e[1] === t[1] && e[2] === t[2] : Ye()(e, t))))
+				return e === t || (0 === e.length && 0 === t.length || !(0 === e.length && t.length > 0) && (!(e.length > 0 && 0 === t.length) && (1 === e.length && 1 === t.length ? e[0] === t[0] : 2 === e.length && 2 === t.length ? e[0] === t[0] && e[1] === t[1] : 3 === e.length && 3 === t.length ? e[0] === t[0] && e[1] === t[1] && e[2] === t[2] : Xe()(e, t))))
 			}
 			var Zt = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Kt,
@@ -17391,10 +17391,10 @@
 					}
 				},
 				Qt = n("./src/chat/actions/uploads/index.ts"),
-				Yt = n("./src/chat/models/Uploads/index.ts");
-			const Xt = {};
+				Xt = n("./src/chat/models/Uploads/index.ts");
+			const Yt = {};
 			var Jt = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Xt,
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Yt,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case Qt.a: {
@@ -17414,10 +17414,10 @@
 							channelId: a,
 							status: s
 						} = t.payload;
-						if (s === Yt.c.Submit) return {
+						if (s === Xt.c.Submit) return {
 							[a]: []
 						};
-						if (s === Yt.c.Canceled) {
+						if (s === Xt.c.Canceled) {
 							const t = new Set([...e[a] || []]);
 							return {
 								[a]: [...t.delete(n) && t || t]
@@ -17474,7 +17474,7 @@
 								...e,
 								[n.id]: {
 									...n,
-									status: Yt.c.Pending
+									status: Xt.c.Pending
 								}
 							}
 						}
@@ -17536,7 +17536,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case X.a: {
+					case Y.a: {
 						const e = t.payload.profileImg || t.payload.subreddit && t.payload.subreddit.icon_img || t.payload.iconImg;
 						return {
 							id: t.payload.id,
@@ -17579,7 +17579,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : hn,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case X.d:
+					case Y.d:
 						return t.payload;
 					default:
 						return e
@@ -17601,7 +17601,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : fn,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case X.e:
+						case Y.e:
 							return t.payload;
 						default:
 							return e
@@ -17658,7 +17658,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "",
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case X.f:
+						case Y.f:
 							return t.payload;
 						default:
 							return e
@@ -17721,7 +17721,7 @@
 				},
 				Nn = n("./src/lib/activeUserCountByLiveChatId/reducers/index.ts");
 			const wn = {
-				channels: Y,
+				channels: X,
 				contacts: me,
 				container: ge,
 				experiments: Ce,
@@ -18449,7 +18449,7 @@
 					e.onReconnectSucceeded = () => {
 						this.dispatch(Object(I.h)(t)), this.dispatch(Object(x.g)({
 							toast: T.a.ConnectionOpen
-						})), Object(d.setTimeout)(() => this.dispatch(Object(x.d)()), 3 * u.Yb);
+						})), Object(d.setTimeout)(() => this.dispatch(Object(x.d)()), 3 * u.Xb);
 						this.dispatch(Object(E.v)(!0)), this.dispatch(Object(m.D)())
 					}, this.self.addConnectionHandler("RECONNECT_SUCCEEDED", e), this.connectionUniqueHandlerID.push("RECONNECT_SUCCEEDED")
 				}
@@ -20062,4 +20062,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.e7b7dd3fb4e42d2359f5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.4fd1ee91bd7e5506b841.js.map
