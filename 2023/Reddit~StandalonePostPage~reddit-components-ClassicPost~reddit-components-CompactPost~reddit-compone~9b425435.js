@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.118d205b0d52ac3f89c6.js
-// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.af39a5cde09c1304188f.js
+// Retrieved at 5/24/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/avatarShareImages.ts": function(e, t, n) {
@@ -554,7 +554,7 @@
 						h = Object(w.a)(_.s, b),
 						O = Object(w.a)(_.t, b);
 					return {
-						canBoostPost: f === _.Td || v === _.Td || h === _.Td || O === _.Td
+						canBoostPost: f === _.Ud || v === _.Ud || h === _.Ud || O === _.Ud
 					}
 				},
 				A = e => {
@@ -4040,8 +4040,8 @@
 					if (Object(a.a)(e)) return !1;
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: r.Cc
-					}) === r.nd.Enabled
+						experimentName: r.Dc
+					}) === r.od.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
@@ -4054,8 +4054,8 @@
 			const s = e => {
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: r.jf
-				}) === r.Td
+					experimentName: r.kf
+				}) === r.Ud
 			}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -4376,4 +4376,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.118d205b0d52ac3f89c6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.af39a5cde09c1304188f.js.map

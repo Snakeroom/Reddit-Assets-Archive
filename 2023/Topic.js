@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.40f620bc83aecf314a77.js
-// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.0dea9553a62f48b0b9f1.js
+// Retrieved at 5/24/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1413,7 +1413,7 @@
 				const t = Object(i.f)().getState(),
 					s = Object(g.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === m.md.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.md.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.md.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === m.nd.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.nd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.nd.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(j, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -3375,7 +3375,7 @@
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: n.M
-				}) === n.Td
+				}) === n.Ud
 			}
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, s) {
@@ -3393,11 +3393,11 @@
 				d = s("./node_modules/reselect/es/index.js");
 			const c = Object(d.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(a.h)(e) && Object(i.f)(e),
-					experimentName: n.rc
+					experimentName: n.sc
 				}), o.a),
 				l = Object(d.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.h)(e) && Object(i.f)(e),
-					experimentName: n.qc
+					experimentName: n.rc
 				}), o.a),
 				u = Object(d.a)(c, l, (e, t) => e || t),
 				m = Object(d.a)(c, l, (e, t) => !(!e && !t))
@@ -3424,7 +3424,7 @@
 			e.exports = JSON.parse('{"id":"c09ff0d041c1"}')
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"655eef09fadc"}')
+			e.exports = JSON.parse('{"id":"be09d1d59e65"}')
 		},
 		"./src/redditGQL/operations/UpdateSpokenLanguagesPreference.json": function(e) {
 			e.exports = JSON.parse('{"id":"6d0707c83164"}')
@@ -3437,4 +3437,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.40f620bc83aecf314a77.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.0dea9553a62f48b0b9f1.js.map

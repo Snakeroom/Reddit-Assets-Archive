@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.18dc8ca2ed7d5e9524f6.js
-// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.d129e99468d64649c1ba.js
+// Retrieved at 5/24/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -468,7 +468,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.xg)(p),
+						includeInterestTopics: !!p && !Object(b.yg)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: h && !(null === (s = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === s ? void 0 : s.total),
@@ -1823,8 +1823,8 @@
 						toggleLanguageSelection: u
 					} = e;
 					const [m, p] = Object(a.useState)(!1), b = Object(i.e)(ee.fb);
-					let g = Object(i.e)(Se.h) === ke.ld.TopTwo;
-					const f = Object(i.e)(Se.g) === ke.ld.TopTwo;
+					let g = Object(i.e)(Se.h) === ke.md.TopTwo;
+					const f = Object(i.e)(Se.g) === ke.md.TopTwo;
 					g = g || f;
 					const h = Object(i.e)(ye.b),
 						O = Object(_.a)();
@@ -3005,7 +3005,7 @@
 					xe = Object(i.e)(ye.k),
 					_e = Object(i.e)(Se.h),
 					Ee = Object(i.e)(Se.g),
-					Ce = _e === ke.ld.TopTwo || _e === ke.ld.All || Ee === ke.ld.TopTwo || Ee === ke.ld.All,
+					Ce = _e === ke.md.TopTwo || _e === ke.md.All || Ee === ke.md.TopTwo || Ee === ke.md.All,
 					je = Object(a.useCallback)(async e => {
 						ie(!0);
 						const n = await Object(On.c)(e, t, xe);
@@ -3024,9 +3024,9 @@
 					Ie = Object(i.e)(ee.U),
 					we = Object(i.e)(ye.g),
 					Pe = Object(i.e)(kn.a),
-					Re = Pe === ke.dg.CloseOnboarding,
-					Fe = Pe === ke.dg.SkipTopicSelection,
-					Ge = Pe === ke.dg.SmartSignal,
+					Re = Pe === ke.eg.CloseOnboarding,
+					Fe = Pe === ke.eg.SkipTopicSelection,
+					Ge = Pe === ke.eg.SmartSignal,
 					Ae = Object(a.useCallback)(() => {
 						s(Object(b.g)(Kt.a.ONBOARDING_MODAL_D2X)), Te && s(Object(g.h)()), h && (r(Object(F.t)()), Object(xn.a)()), we && Ie && s(Object(m.startChangeUsernameFlow)())
 					}, [s, Ie, we, h, Te, r]),
@@ -5071,13 +5071,13 @@
 			const o = e => {
 					return !(Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.De
-					}) === s.Td)
+						experimentName: s.Ee
+					}) === s.Ud)
 				},
-				i = Object(a.a)(s.Ee)
+				i = Object(a.a)(s.Fe)
 		},
 		"./src/redditGQL/operations/Frontpage.json": function(e) {
-			e.exports = JSON.parse('{"id":"8549ad3368a5"}')
+			e.exports = JSON.parse('{"id":"d45d9e249839"}')
 		},
 		"./src/redditGQL/operations/GetAccountGender.json": function(e) {
 			e.exports = JSON.parse('{"id":"1508e05ea2ee"}')
@@ -5095,7 +5095,7 @@
 			e.exports = JSON.parse('{"id":"40df26b7117b"}')
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"655eef09fadc"}')
+			e.exports = JSON.parse('{"id":"be09d1d59e65"}')
 		},
 		"./src/redditGQL/operations/UpdateAccountGender.json": function(e) {
 			e.exports = JSON.parse('{"id":"670e8e8d3018"}')
@@ -5108,4 +5108,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.18dc8ca2ed7d5e9524f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.d129e99468d64649c1ba.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SignupUpsell.b4c16c4795f9d103388b.js
-// Retrieved at 5/23/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SignupUpsell.962a6169709a2055ec31.js
+// Retrieved at 5/24/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SignupUpsell"], {
 		"./src/reddit/components/Upsell/SSOButton/index.m.less": function(e, t, s) {
@@ -65,43 +65,43 @@
 						className: m.a.buttonText
 					}, s))
 				},
-				b = s("./src/reddit/constants/experiments.ts"),
-				g = s("./src/reddit/selectors/telemetry.ts");
+				g = s("./src/reddit/constants/experiments.ts"),
+				b = s("./src/reddit/selectors/telemetry.ts");
 			const f = "sso_signup";
 			var x;
 			! function(e) {
 				e.Apple = "apple", e.Google = "google", e.Reddit = "reddit"
 			}(x || (x = {}));
 			const C = () => e => ({
-					...Object(g.o)(e),
+					...Object(b.o)(e),
 					source: "popup",
 					action: "view",
 					noun: f,
-					actionInfo: Object(g.d)(e)
+					actionInfo: Object(b.d)(e)
 				}),
 				h = () => e => ({
-					...Object(g.o)(e),
+					...Object(b.o)(e),
 					source: "popup",
 					action: "dismiss",
 					noun: f,
-					actionInfo: Object(g.d)(e)
+					actionInfo: Object(b.d)(e)
 				}),
 				j = e => t => ({
-					...Object(g.o)(t),
+					...Object(b.o)(t),
 					source: "popup",
 					action: "click",
 					noun: f,
-					actionInfo: Object(g.d)(t, {
+					actionInfo: Object(b.d)(t, {
 						popup_button_text: "signup",
 						type: e
 					})
 				}),
 				v = () => e => ({
-					...Object(g.o)(e),
+					...Object(b.o)(e),
 					source: "popup",
 					action: "click",
 					noun: f,
-					actionInfo: Object(g.d)(e, {
+					actionInfo: Object(b.d)(e, {
 						popup_button_text: "login"
 					})
 				});
@@ -129,24 +129,24 @@
 					u(C())
 				}, [u]);
 				const m = Object(i.d)(),
-					g = () => {
+					b = () => {
 						m(Object(r.k)({
 							actionSource: r.a.GeoSignupUpsell
 						}))
 					},
 					f = () => {
-						g(), m(Object(c.openRegisterModal)())
+						b(), m(Object(c.openRegisterModal)())
 					},
 					L = function() {
 						const e = Object(i.e)(w.b),
 							t = Object(i.e)(w.d),
 							s = Object(i.e)(w.f),
-							l = Object(E.a)(b.fd.Bottom_sheet),
-							o = Object(E.a)(b.fd.Bottom_cell),
-							c = Object(E.a)(b.fd.Bottom_cell_dismissible),
-							r = Object(E.a)(b.fd.Bottom_cell_dismissible_immediate_trigger),
-							a = Object(E.a)(b.fd.Bottom_cell_signup_upsell_copy),
-							d = Object(E.a)(b.fd.Bottom_cell_surprise_install_copy);
+							l = Object(E.a)(g.gd.Bottom_sheet),
+							o = Object(E.a)(g.gd.Bottom_cell),
+							c = Object(E.a)(g.gd.Bottom_cell_dismissible),
+							r = Object(E.a)(g.gd.Bottom_cell_dismissible_immediate_trigger),
+							a = Object(E.a)(g.gd.Bottom_cell_signup_upsell_copy),
+							d = Object(E.a)(g.gd.Bottom_cell_surprise_install_copy);
 						let p;
 						if (e) p = I;
 						else if (t) p = H;
@@ -163,8 +163,8 @@
 						if (e && d) return `${u}bottom_cell_surprise_install_copy.png`;
 						throw new Error("Invalid variant for signup upsell")
 					}(),
-					R = Object(E.a)(b.fd.Bottom_cell_signup_upsell_copy),
-					y = Object(E.a)(b.fd.Bottom_cell_surprise_install_copy),
+					R = Object(E.a)(g.gd.Bottom_cell_signup_upsell_copy),
+					y = Object(E.a)(g.gd.Bottom_cell_surprise_install_copy),
 					A = R ? l.fbt._("Come join us, we have snacks", null, {
 						hk: "1LUl2W"
 					}) : l.fbt._("Log in or sign up for the best experience", null, {
@@ -228,7 +228,7 @@
 				})), o.createElement(p.j, {
 					className: S.a.linkButton,
 					onClick: () => {
-						g(), m(Object(c.openLoginModal)()), u(v())
+						b(), m(Object(c.openLoginModal)()), u(v())
 					},
 					redditStyle: !0,
 					size: p.d.XS
@@ -321,7 +321,7 @@
 			})), s.d(t, "d", (function() {
 				return _
 			})), s.d(t, "f", (function() {
-				return b
+				return g
 			}));
 			var n = s("./node_modules/reselect/es/index.js"),
 				l = s("./src/reddit/constants/experiments.ts"),
@@ -335,9 +335,9 @@
 					experimentName: e,
 					experimentEligibilitySelector: r,
 					throttledVariants: {
-						[l.fd.Bottom_cell_dismissible]: e,
-						[l.fd.Bottom_cell_dismissible_immediate_trigger]: e,
-						[l.fd.Bottom_sheet]: e
+						[l.gd.Bottom_cell_dismissible]: e,
+						[l.gd.Bottom_cell_dismissible_immediate_trigger]: e,
+						[l.gd.Bottom_sheet]: e
 					},
 					expEventOverride: t
 				})
@@ -347,8 +347,8 @@
 				u = a(l.Hb, !0),
 				m = a(l.Fb, !1),
 				_ = a(l.Gb, !1),
-				b = a(l.Hb, !1)
+				g = a(l.Hb, !1)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SignupUpsell.b4c16c4795f9d103388b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SignupUpsell.962a6169709a2055ec31.js.map

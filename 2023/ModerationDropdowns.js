@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.9d6bd72851dd5c0221d2.js
-// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.95c433c6664b38e201b2.js
+// Retrieved at 5/24/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, n) {
@@ -1420,9 +1420,9 @@
 				r = n("./src/reddit/selectors/user.ts");
 			const a = (e, t) => t && Object(s.c)(e, {
 				experimentEligibilitySelector: r.S,
-				experimentName: o.If
-			}) === o.Td
+				experimentName: o.Jf
+			}) === o.Ud
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.9d6bd72851dd5c0221d2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.95c433c6664b38e201b2.js.map

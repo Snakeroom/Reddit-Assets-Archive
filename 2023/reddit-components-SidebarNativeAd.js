@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.b5ac069fdd0613200e26.js
-// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.69b851164213935ca0d0.js
+// Retrieved at 5/24/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1769,8 +1769,8 @@
 				p = n("./node_modules/reselect/es/index.js");
 			const b = Object(p.a)(e => Object(m.c)(e, {
 				experimentEligibilitySelector: m.a,
-				experimentName: u.Ac
-			}), e => e === u.Td);
+				experimentName: u.Bc
+			}), e => e === u.Ud);
 			var f = n("./node_modules/fbt/lib/FbtPublic.js"),
 				h = n("./src/lib/classNames/index.ts"),
 				v = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
@@ -5478,4 +5478,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.b5ac069fdd0613200e26.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.69b851164213935ca0d0.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.b39fba4c57f4cff033be.js
-// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.039ae6096544e2464304.js
+// Retrieved at 5/24/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba"], {
 		"./src/lib/scroll/index.ts": function(e, t, o) {
@@ -229,7 +229,7 @@
 			const ce = Object(se.a)(e => Object(re.c)(e, {
 				experimentEligibilitySelector: re.a,
 				experimentName: ne.Jb
-			}), e => e === ne.Td);
+			}), e => e === ne.Ud);
 			var ie = o("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				ae = o("./src/reddit/selectors/platform.ts"),
 				de = o("./src/reddit/selectors/posts.ts"),
@@ -2122,7 +2122,7 @@
 			e.exports = JSON.parse('{"id":"445164f0825f"}')
 		},
 		"./src/redditGQL/operations/CreateComment.json": function(e) {
-			e.exports = JSON.parse('{"id":"32868b55d0d1"}')
+			e.exports = JSON.parse('{"id":"f0b0ca6701b9"}')
 		},
 		"./src/redditGQL/operations/UpdateComment.json": function(e) {
 			e.exports = JSON.parse('{"id":"3d83ef4f0375"}')
@@ -2132,4 +2132,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.b39fba4c57f4cff033be.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.039ae6096544e2464304.js.map

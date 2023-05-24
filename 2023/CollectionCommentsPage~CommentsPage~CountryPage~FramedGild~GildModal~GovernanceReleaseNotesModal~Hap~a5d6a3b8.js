@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8.5e961ba0adadfd57189c.js
-// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8.bf7b580208e3bec8820d.js
+// Retrieved at 5/24/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -285,8 +285,8 @@
 				A = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const O = e => Object(A.c)(e, {
 				experimentEligibilitySelector: A.a,
-				experimentName: H.Yc
-			}) === H.Td;
+				experimentName: H.Zc
+			}) === H.Ud;
 			var j = s("./src/reddit/selectors/experiments/videoReactions.ts"),
 				U = s("./src/reddit/selectors/media.ts"),
 				D = s("./src/reddit/selectors/platform.ts"),
@@ -2687,12 +2687,12 @@
 			const r = e => Object(o.c)(e, {
 					experimentName: i.tb,
 					experimentEligibilitySelector: a.e
-				}) === i.Td,
+				}) === i.Ud,
 				n = e => Object(o.c)(e, {
-					experimentName: i.Bc,
+					experimentName: i.Cc,
 					experimentEligibilitySelector: o.a
-				}) === i.Td
+				}) === i.Ud
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8.5e961ba0adadfd57189c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8.bf7b580208e3bec8820d.js.map

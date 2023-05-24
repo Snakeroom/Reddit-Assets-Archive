@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModModeBanners.88afa55e2598e12ab4ef.js
-// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModModeBanners.43313fbf5082f08de9d9.js
+// Retrieved at 5/24/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModModeBanners"], {
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, s) {
@@ -565,7 +565,7 @@
 					let {
 						content: t
 					} = e;
-					const s = Object(p.a)(m.oe) === m.Td,
+					const s = Object(p.a)(m.pe) === m.Ud,
 						{
 							contentIds: u
 						} = h(),
@@ -1013,4 +1013,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.88afa55e2598e12ab4ef.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.43313fbf5082f08de9d9.js.map
