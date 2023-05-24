@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.f90b79e60c06171928ad.js
-// Retrieved at 5/24/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.9e0b2bea8f431ee7a967.js
+// Retrieved at 5/24/2023, 4:20:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -5369,7 +5369,7 @@
 						isTypingIndicatorsExperiment: z,
 						isTypingIndicatorsReadLoadTest: K,
 						postId: Be.id
-					}), !Qe && Jt), Object(J.d)(Be, n) && i.a.createElement(J.a, {
+					}), !Qe && Jt), Object(J.e)(Be, n) && i.a.createElement(J.a, {
 						postId: Be.id,
 						user: n
 					}))
@@ -5468,7 +5468,7 @@
 					isTypingIndicatorsExperiment: z,
 					isTypingIndicatorsReadLoadTest: K,
 					postId: Be.id
-				}), !Qe && Jt), Object(J.d)(Be, n) && i.a.createElement(J.a, {
+				}), !Qe && Jt), Object(J.e)(Be, n) && i.a.createElement(J.a, {
 					postId: Be.id,
 					user: n
 				})));
@@ -11394,4 +11394,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.f90b79e60c06171928ad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.9e0b2bea8f431ee7a967.js.map
