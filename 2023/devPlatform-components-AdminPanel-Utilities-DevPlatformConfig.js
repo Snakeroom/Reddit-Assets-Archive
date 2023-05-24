@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/devPlatform-components-AdminPanel-Utilities-DevPlatformConfig.bc85a86fd626b0cba500.js
-// Retrieved at 4/13/2023, 6:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/devPlatform-components-AdminPanel-Utilities-DevPlatformConfig.fc7b63e8e773349d13d3.js
+// Retrieved at 5/24/2023, 11:50:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["devPlatform-components-AdminPanel-Utilities-DevPlatformConfig"], {
 		"./src/devPlatform/components/AdminPanel/Utilities/DevPlatformConfig/index.tsx": function(t, e, a) {
@@ -214,10 +214,10 @@
 				loadActor(t) {
 					const e = t.hostname.split("."),
 						a = {
-							"devvit-installation": s.P.fromPartial({
+							"devvit-installation": s.Q.fromPartial({
 								values: [e[0]]
 							}),
-							"devvit-actor": s.P.fromPartial({
+							"devvit-actor": s.Q.fromPartial({
 								values: [e[2]]
 							})
 						};
@@ -238,4 +238,4 @@
 		"ignored /drone/src/node_modules/cron-parser/lib fs": function(t, e) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/devPlatform-components-AdminPanel-Utilities-DevPlatformConfig.bc85a86fd626b0cba500.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/devPlatform-components-AdminPanel-Utilities-DevPlatformConfig.fc7b63e8e773349d13d3.js.map

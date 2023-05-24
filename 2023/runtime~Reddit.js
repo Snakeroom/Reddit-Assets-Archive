@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.a782b9afcf275cc6f255.js
-// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.c6257ba2a39b1eae9276.js
+// Retrieved at 5/24/2023, 11:50:03 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1366,7 +1366,7 @@
 					} [e] || e) + "." + {
 						0: "f61d72358dcbc8f2079c",
 						1: "80aa87920b2400c68c27",
-						2: "a30a1a29653592fdb59c",
+						2: "3de82649f71f6910dc40",
 						3: "743ea6051843eeeba680",
 						4: "e7d8d9b8e9a374d654d4",
 						5: "b3faf990a78144bb5a8f",
@@ -1597,8 +1597,8 @@
 						"reddit-components-LargePost": "c219aa13c93edc458391",
 						"reddit-components-MediumPost": "31a0923094401154634d",
 						"vendors~dashjs": "518ef1c4a3ea00bc51bc",
-						"vendors~devPlatform-components-AdminPanel-Utilities-DevPlatformConfig~devPlatform-components-ContextActions": "48b8de56c5c79c000f0c",
-						"devPlatform-components-ContextActions": "ec6ac883f3ac38fb968f",
+						"vendors~devPlatform-components-AdminPanel-Utilities-DevPlatformConfig~devPlatform-components-ContextActions": "09d4909c2d5fa6dc1dc4",
+						"devPlatform-components-ContextActions": "c4f1397643e699a12453",
 						"vendors~mod-nav~shreddit-player": "49387f0c823c0904a7e0",
 						"vendors~shreddit-player": "9845aee8d5d2fff74833",
 						ContributorRequestButton: "e2cd43543c7809ff2361",
@@ -1627,7 +1627,7 @@
 						"reddit-pages-PaypalFinishPage": "ae04999b81aba7959cbe",
 						"reddit-components-NotificationUnit-Button": "7545e4bef57023e595c2",
 						CrisisFlow: "0605b1318205fd083705",
-						"devPlatform-components-AdminPanel-Utilities-DevPlatformConfig": "bc85a86fd626b0cba500",
+						"devPlatform-components-AdminPanel-Utilities-DevPlatformConfig": "fc7b63e8e773349d13d3",
 						"reddit-components-Governance-TransactionModals-TransferTransactionModal": "5f3ec9c4bc449d570223",
 						GifTooltip: "ddfbf107dad7bf3016fe",
 						PowerupsEmotesTooltip: "26b6a1e365e4e3822801",
@@ -1775,4 +1775,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.a782b9afcf275cc6f255.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.c6257ba2a39b1eae9276.js.map

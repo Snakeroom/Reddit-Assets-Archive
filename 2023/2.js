@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/2.a30a1a29653592fdb59c.js
-// Retrieved at 4/13/2023, 6:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/2.3de82649f71f6910dc40.js
+// Retrieved at 5/24/2023, 11:50:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[2], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -108,7 +108,7 @@
 						configForm: i,
 						onCloseClick: l
 					} = this.props, u = [];
-					for (const c of i.fields) switch (Object(d.ab)(c.fieldType)) {
+					for (const c of i.fields) switch (Object(d.cb)(c.fieldType)) {
 						case d.d.STRING:
 							u.push(a.a.createElement(I, {
 								key: c.key
@@ -817,4 +817,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/2.a30a1a29653592fdb59c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/2.3de82649f71f6910dc40.js.map
