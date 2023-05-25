@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~cb450973.ae5b954484cba1bbe898.js
-// Retrieved at 5/25/2023, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~cb450973.4348e7224f815c5e7666.js
+// Retrieved at 5/25/2023, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~cb450973"], {
 		"./src/lib/collectible-expressions/index.ts": function(e, t, n) {
@@ -678,48 +678,49 @@
 					showFull: _,
 					shouldPause: O,
 					width: k,
-					isListing: y,
-					className: S,
-					showCentered: w,
-					originalSource: T,
-					isPromoted: M,
-					renderSmallMedia: I,
-					onClick: L
-				} = e, N = t && !(M && Object(d.hasAcceptableAds)()), R = Object(o.d)();
+					isGif: y,
+					isListing: S,
+					className: w,
+					showCentered: T,
+					originalSource: M,
+					isPromoted: I,
+					renderSmallMedia: L,
+					onClick: N
+				} = e, R = !(!t && !y || I && Object(d.hasAcceptableAds)()), B = Object(o.d)();
 
-				function B(e) {
-					R(e ? Object(u.s)(p) : Object(u.R)(p))
+				function P(e) {
+					B(e ? Object(u.s)(p) : Object(u.R)(p))
 				}
 
-				function P() {
-					return R(Object(u.L)({
+				function H() {
+					return B(Object(u.L)({
 						postId: p
 					}))
 				}
-				const H = r()(e => {
+				const D = r()(e => {
 					if (n) return;
 					const {
 						target: t
 					} = e;
-					t && t.played && 1 === t.played.length && 0 === t.played.start(0) && t.played.end(0) === t.duration && R(Object(u.D)(p))
+					t && t.played && 1 === t.played.length && 0 === t.played.start(0) && t.played.end(0) === t.duration && B(Object(u.D)(p))
 				}, 200);
 
-				function D(e) {
-					e.persist(), H(e)
-				}
-
 				function F(e) {
-					var t;
-					(i || A(e), c) || (t = e.timeStamp, R(Object(u.M)(p, t)))
+					e.persist(), D(e)
 				}
 
 				function U(e) {
-					R(Object(u.r)(p, e.timeStamp))
+					var t;
+					(i || J(e), c) || (t = e.timeStamp, B(Object(u.M)(p, t)))
 				}
 
 				function A(e) {
+					B(Object(u.r)(p, e.timeStamp))
+				}
+
+				function J(e) {
 					! function(e) {
-						R(Object(u.Q)({
+						B(Object(u.Q)({
 							metadata: e,
 							postId: p
 						}))
@@ -731,52 +732,52 @@
 					})
 				}
 
-				function J(e) {
-					s || F(e), i || A(e), R(Object(u.P)(p))
+				function W(e) {
+					s || U(e), i || J(e), B(Object(u.P)(p))
 				}
 
-				function W() {
+				function G() {
 					const e = {};
-					return w && (e.margin = "0 auto"), y || g || (e.maxHeight = `${h.d}px`), a.a.createElement(v, {
-						autoplay: N,
+					return T && (e.margin = "0 auto"), S || g || (e.maxHeight = `${h.d}px`), a.a.createElement(v, {
+						autoplay: R,
 						className: Object(l.a)(m.a, j.a.styledVideo, {
-							[j.a.renderSmallMedia]: I
+							[j.a.renderSmallMedia]: L
 						}),
-						height: I ? void 0 : f,
-						isListing: y,
+						height: L ? void 0 : f,
+						isListing: S,
 						isNotCardView: E,
 						key: p,
 						loop: !0,
-						onBufferingChange: B,
-						onClick: L,
-						onLoadStart: U,
-						onLoadedData: F,
-						onLoadedMetadata: A,
-						onPause: P,
-						onPlaying: J,
-						onTimeUpdate: D,
+						onBufferingChange: P,
+						onClick: N,
+						onLoadStart: A,
+						onLoadedData: U,
+						onLoadedMetadata: J,
+						onPause: H,
+						onPlaying: W,
+						onTimeUpdate: F,
 						shouldLoad: b,
 						shouldPause: O,
-						showCentered: w,
+						showCentered: T,
 						showFull: _,
 						source: x,
-						style: I ? void 0 : e,
-						width: I ? void 0 : k
+						style: L ? void 0 : e,
+						width: L ? void 0 : k
 					})
 				}
-				return y ? W() : a.a.createElement("div", {
-					className: Object(l.a)(j.a.container, S, {
-						[j.a.centered]: w
+				return S ? G() : a.a.createElement("div", {
+					className: Object(l.a)(j.a.container, w, {
+						[j.a.centered]: T
 					})
 				}, a.a.createElement("a", {
-					href: T,
+					href: M,
 					target: "_blank",
 					rel: "noopener noreferrer",
 					style: {
 						height: f,
 						width: k
 					}
-				}, W()))
+				}, G()))
 			}
 		},
 		"./src/reddit/components/Media/index.m.less": function(e, t, n) {
@@ -1544,6 +1545,7 @@
 						}, i.a.createElement(m.a, {
 							height: "100%",
 							noMaxHeight: !0,
+							isGif: !0,
 							isListing: !1,
 							isNotCardView: !0,
 							originalSource: d.mp4,
@@ -1601,9 +1603,9 @@
 			})), n.d(t, "a", (function() {
 				return W
 			})), n.d(t, "b", (function() {
-				return V
-			})), n.d(t, "f", (function() {
 				return G
+			})), n.d(t, "f", (function() {
+				return V
 			})), n.d(t, "h", (function() {
 				return X
 			})), n.d(t, "g", (function() {
@@ -1800,13 +1802,13 @@
 						key: s
 					}, d)
 				},
-				V = (e, t) => {
+				G = (e, t) => {
 					const n = e.c;
 					return o.a.createElement(c.k, {
 						key: t
 					}, o.a.createElement(c.h, null, n.reduce((e, t, n, s) => e += t.t + (n < s.length ? "\n" : ""), "")))
 				},
-				G = (e, t, n, s, r) => {
+				V = (e, t, n, s, r) => {
 					const i = e.c,
 						a = [],
 						d = i.length;
@@ -1826,13 +1828,13 @@
 						case m.b:
 							return W(e, t, n, s, r);
 						case m.c:
-							return V(e, s);
+							return G(e, s);
 						case m.k:
 							return A(e, n, s);
 						case m.l:
 							return J(s);
 						case m.p:
-							return G(e, t, n, s, r);
+							return V(e, t, n, s, r);
 						case m.v:
 							return K({
 								p: e,
@@ -2397,4 +2399,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~cb450973.ae5b954484cba1bbe898.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~cb450973.4348e7224f815c5e7666.js.map
