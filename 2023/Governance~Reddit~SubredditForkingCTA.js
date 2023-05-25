@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.05be319bf36a5027ccb1.js
-// Retrieved at 5/24/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.f7e6addd28a60838b36c.js
+// Retrieved at 5/25/2023, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~SubredditForkingCTA"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(t, e, r) {
@@ -52,8 +52,8 @@
 			}), u = r("./node_modules/fbt/lib/FbtPublic.js"), l = r("./src/reddit/models/Toast/index.ts"), b = r("./node_modules/reselect/es/index.js"), f = r("./src/reddit/constants/experiments.ts"), p = r("./src/reddit/helpers/chooseVariant/index.ts"), m = r("./src/reddit/selectors/user.ts");
 			const h = Object(b.a)(t => Object(p.c)(t, {
 				experimentEligibilitySelector: m.S,
-				experimentName: f.ac
-			}), t => t === f.Ud);
+				experimentName: f.Zb
+			}), t => t === f.Td);
 			var O = r("./src/reddit/actions/toaster.ts");
 			const y = "SUBREDDIT_COUNTRY_SITE__LOADED",
 				_ = "SUBREDDIT_COUNTRY_SITE__CHANGED",
@@ -818,7 +818,7 @@
 			})), r.d(e, "c", (function() {
 				return Q
 			})), r.d(e, "d", (function() {
-				return Z
+				return Y
 			})), r.d(e, "a", (function() {
 				return X
 			}));
@@ -916,7 +916,7 @@
 						b = _.d.rteVideoPoster(o),
 						f = K(o),
 						p = l === n.bc.MEDIA;
-					f && (b || p) && (await r(U.f(f)), K(s())) || (t === v.r.Draft ? await r(Object(c.r)(e.draftId)) : t === v.r.ScheduledPost && Object(D.r)(o) ? await r(J(e)) : t === v.r.ScheduledPost ? await r(Y(e)) : await r(Z(e)))
+					f && (b || p) && (await r(U.f(f)), K(s())) || (t === v.r.Draft ? await r(Object(c.r)(e.draftId)) : t === v.r.ScheduledPost && Object(D.r)(o) ? await r(J(e)) : t === v.r.ScheduledPost ? await r(Z(e)) : await r(Y(e)))
 				}, J = t => async (e, r, n) => {
 					let {
 						gqlContext: s
@@ -951,7 +951,7 @@
 					})), void e(Object(l.a)(z(c.name), !1));
 					const P = E.error;
 					e(q(P))
-				}, Y = t => async (e, r, n) => {
+				}, Z = t => async (e, r, n) => {
 					let {
 						gqlContext: s
 					} = n;
@@ -987,7 +987,7 @@
 					}
 					const j = _.error;
 					e(q(j))
-				}, Z = t => async (e, r, s) => {
+				}, Y = t => async (e, r, s) => {
 					let {
 						apiContext: i
 					} = s;
@@ -1474,7 +1474,7 @@
 								postFieldValidationPending: Promise.resolve()
 							})), Object(l.b)(D)
 						}
-						await e(Object(n.b)(`${r.path}`)), p ? p === b.Ye.NewModule && e(Object(c.h)({
+						await e(Object(n.b)(`${r.path}`)), p ? p === b.Xe.NewModule && e(Object(c.h)({
 							tooltipId: u.MOD_WELCOME_TOOLTIP_ID
 						})) : (e(Object(o.h)(f.a.POST_FLOW_UPSELL_MODAL_ID)), Object(k.a)(Object(E.g)()(T))), Object(j.b)(j.a.SubredditCreation), e(Object(x.f)(i, null !== (g = Object(C.db)(T)) && void 0 !== g ? g : Object(P.k)(T)))
 					} else w.error && Object(k.a)(Object(E.h)(w.error.type, A)(T)), e(U({
@@ -2959,4 +2959,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.05be319bf36a5027ccb1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.f7e6addd28a60838b36c.js.map
