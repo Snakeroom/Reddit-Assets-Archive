@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.6bd1bfa050384ec7a415.js
-// Retrieved at 5/25/2023, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.87b4f1f8c182ff5b47f8.js
+// Retrieved at 5/25/2023, 7:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -8707,108 +8707,113 @@
 				p = n("./src/reddit/actions/toaster.ts"),
 				b = n("./src/reddit/actions/tooltip.ts"),
 				f = n("./src/reddit/actions/users.ts");
-			const h = r.a.garlicBreadUrl,
-				g = new URL(`${h}/embed`),
-				_ = ["fullscreen", "edit", "cx", "cy", "px", "ts", "locale"],
-				v = e => {
-					var t;
+			const h = r.a.garlicBreadUrl;
+			var g, _, v;
+			! function(e) {
+				e.RefreshAuth = "refreshAuth", e.Close = "close", e.SignIn = "signIn", e.SyncCoordinates = "syncCoordinates", e.OpenProfile = "openProfile", e.VerifyAccount = "verifyAccount"
+			}(g || (g = {})),
+			function(e) {
+				e.SetScreenMode = "setScreenMode", e.InjectAuthHeaders = "injectAuthHeaders", e.InjectTelemetryDefaults = "injectTelemetryDefaults"
+			}(_ || (_ = {})),
+			function(e) {
+				e.Preview = "preview", e.FullScreen = "fullscreen", e.PictureInPicture = "pip"
+			}(v || (v = {}));
+			var x = class {
+				constructor(e, t, n, r, s, o, i) {
+					this.subscribe = () => {
+						null === window || void 0 === window || window.addEventListener("message", this.onMessage)
+					}, this.unsubscribe = () => {
+						null === window || void 0 === window || window.removeEventListener("message", this.onMessage)
+					}, this.onMessage = e => {
+						let {
+							origin: t,
+							data: n
+						} = e;
+						t === h && (n.type === g.RefreshAuth ? this.sendMessageAuthAndTelemetry() : n.type === g.Close ? this.onMessageClose() : n.type === g.SignIn && n.dest ? this.onMessageSignIn(n.dest) : n.type === g.SyncCoordinates && n.data ? this.onMessageSyncCoordinates(n.data) : n.type === g.OpenProfile && n.data ? this.onMessageOpenProfile(n.data) : n.type === g.VerifyAccount && this.onMessageVerifyAccount())
+					}, this.sendMessageAuthAndTelemetry = () => {
+						const {
+							expiration: e,
+							headers: t,
+							telemetryDefaults: n
+						} = this.getAuthClientData();
+						this.sendMessageInjectAuthHeaders({
+							expiration: e,
+							headers: t
+						}), this.sendMessageInjectTelemetryDefaults({
+							telemetryDefaults: n
+						})
+					}, this.sendMessageScreenMode = e => {
+						this.sendMessage({
+							type: _.SetScreenMode,
+							state: e
+						})
+					}, this.sendMessageInjectAuthHeaders = e => {
+						this.sendMessage({
+							type: _.InjectAuthHeaders,
+							...e
+						})
+					}, this.sendMessageInjectTelemetryDefaults = e => {
+						this.sendMessage({
+							type: _.InjectTelemetryDefaults,
+							...e
+						})
+					}, this.ref = e, this.getAuthClientData = t, this.onMessageClose = n, this.onMessageSignIn = r, this.onMessageSyncCoordinates = s, this.onMessageOpenProfile = o, this.onMessageVerifyAccount = i
+				}
+				sendMessage(e) {
+					var t, n;
+					null === (n = null === (t = this.ref.current) || void 0 === t ? void 0 : t.contentWindow) || void 0 === n || n.postMessage(e, h)
+				}
+			};
+			const y = r.a.garlicBreadUrl,
+				E = new URL(`${y}/embed`),
+				O = ["screenmode", "edit", "cx", "cy", "px", "ts", "locale"],
+				C = e => {
+					var t, n;
 					if ("undefined" == typeof window) return {
 						iframeURL: void 0,
 						isFullscreen: !1
 					};
-					const n = window.location.search.toLocaleLowerCase(),
-						r = new URLSearchParams(n);
-					for (const s of _) {
-						const e = null === (t = r.get(s)) || void 0 === t ? void 0 : t.toLocaleLowerCase(),
+					const r = window.location.search.toLocaleLowerCase(),
+						s = new URLSearchParams(r);
+					for (const i of O) {
+						const e = null === (t = s.get(i)) || void 0 === t ? void 0 : t.toLocaleLowerCase(),
 							n = "string" == typeof e && "false" !== e;
-						r.has(s) && n && e && g.searchParams.set(s, e)
+						s.has(i) && n && e && E.searchParams.set(i, e)
 					}
-					return g.searchParams.set("locale", e), {
-						iframeURL: g.toString(),
-						isFullscreen: g.searchParams.has("fullscreen") || g.searchParams.has("edit")
+					E.searchParams.set("locale", e);
+					const o = (null === (n = E.searchParams.get("screenmode")) || void 0 === n ? void 0 : n.toLocaleLowerCase()) === v.FullScreen;
+					return E.searchParams.set("screenmode", o ? v.FullScreen : v.Preview), {
+						iframeURL: E.toString(),
+						isFullscreen: o
 					}
-				},
-				x = r.a.garlicBreadUrl;
-			var y, E;
-			! function(e) {
-				e.RefreshAuth = "refreshAuth", e.Close = "close", e.SignIn = "signIn", e.SyncCoordinates = "syncCoordinates", e.OpenProfile = "openProfile", e.VerifyAccount = "verifyAccount"
-			}(y || (y = {})),
-			function(e) {
-				e.SetFullScreen = "setFullScreen", e.InjectAuthHeaders = "injectAuthHeaders", e.InjectTelemetryDefaults = "injectTelemetryDefaults"
-			}(E || (E = {}));
-			var O = class {
-					constructor(e, t, n, r, s, o, i) {
-						this.subscribe = () => {
-							null === window || void 0 === window || window.addEventListener("message", this.onMessage)
-						}, this.unsubscribe = () => {
-							null === window || void 0 === window || window.removeEventListener("message", this.onMessage)
-						}, this.onMessage = e => {
-							let {
-								origin: t,
-								data: n
-							} = e;
-							t === x && (n.type === y.RefreshAuth ? this.sendMessageAuthAndTelemetry() : n.type === y.Close ? this.onMessageClose() : n.type === y.SignIn && n.dest ? this.onMessageSignIn(n.dest) : n.type === y.SyncCoordinates && n.data ? this.onMessageSyncCoordinates(n.data) : n.type === y.OpenProfile && n.data ? this.onMessageOpenProfile(n.data) : n.type === y.VerifyAccount && this.onMessageVerifyAccount())
-						}, this.sendMessageAuthAndTelemetry = () => {
-							const {
-								expiration: e,
-								headers: t,
-								telemetryDefaults: n
-							} = this.getAuthClientData();
-							this.sendMessageInjectAuthHeaders({
-								expiration: e,
-								headers: t
-							}), this.sendMessageInjectTelemetryDefaults({
-								telemetryDefaults: n
-							})
-						}, this.sendMessageFullscreen = e => {
-							this.sendMessage({
-								type: E.SetFullScreen,
-								state: e
-							})
-						}, this.sendMessageInjectAuthHeaders = e => {
-							this.sendMessage({
-								type: E.InjectAuthHeaders,
-								...e
-							})
-						}, this.sendMessageInjectTelemetryDefaults = e => {
-							this.sendMessage({
-								type: E.InjectTelemetryDefaults,
-								...e
-							})
-						}, this.ref = e, this.getAuthClientData = t, this.onMessageClose = n, this.onMessageSignIn = r, this.onMessageSyncCoordinates = s, this.onMessageOpenProfile = o, this.onMessageVerifyAccount = i
-					}
-					sendMessage(e) {
-						var t, n;
-						null === (n = null === (t = this.ref.current) || void 0 === t ? void 0 : t.contentWindow) || void 0 === n || n.postMessage(e, x)
-					}
-				},
-				C = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				j = n("./src/reddit/constants/keycodes.ts"),
-				I = n("./src/reddit/helpers/toggleBodyScroll/index.ts"),
-				S = n("./src/reddit/helpers/trackers/garlicBread.ts"),
-				N = n("./src/reddit/models/Toast/index.ts"),
-				k = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./src/reddit/selectors/telemetry.ts")),
-				w = n("./src/telemetry/models/Event.ts");
-			const T = function(e) {
+				};
+			var j = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				I = n("./src/reddit/constants/keycodes.ts"),
+				S = n("./src/reddit/helpers/toggleBodyScroll/index.ts"),
+				N = n("./src/reddit/helpers/trackers/garlicBread.ts"),
+				k = n("./src/reddit/models/Toast/index.ts"),
+				w = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./src/reddit/selectors/telemetry.ts")),
+				T = n("./src/telemetry/models/Event.ts");
+			const P = function(e) {
 				let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
 				return Object.keys(e).reduce((n, r) => {
 					const s = e[r];
-					return s ? (n[r] = "object" == typeof s && t <= 4 ? T(s, t + 1) : s, n) : n
+					return s ? (n[r] = "object" == typeof s && t <= 4 ? P(s, t + 1) : s, n) : n
 				}, {})
 			};
-			var P = n("./src/reddit/selectors/meta.ts"),
-				L = n("./src/reddit/selectors/platform.ts"),
-				D = n("./src/reddit/selectors/user.ts"),
-				R = n("./src/reddit/selectors/userPrefs.ts"),
-				A = n("./src/higherOrderComponents/asModal/index.tsx"),
-				B = n("./src/reddit/icons/svgs/GarlicBread/index.tsx"),
-				M = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				U = n("./src/reddit/controls/Button/index.tsx"),
-				F = n("./src/reddit/components/GarlicBreadEmbed/index.m.less"),
-				W = n.n(F);
+			var L = n("./src/reddit/selectors/meta.ts"),
+				D = n("./src/reddit/selectors/platform.ts"),
+				R = n("./src/reddit/selectors/user.ts"),
+				A = n("./src/reddit/selectors/userPrefs.ts"),
+				B = n("./src/higherOrderComponents/asModal/index.tsx"),
+				M = n("./src/reddit/icons/svgs/GarlicBread/index.tsx"),
+				U = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				F = n("./src/reddit/controls/Button/index.tsx"),
+				W = n("./src/reddit/components/GarlicBreadEmbed/index.m.less"),
+				H = n.n(W);
 			const {
-				fbt: H
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), V = e => e.preventDefault(), G = Object(A.a)(e => {
+				fbt: V
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), G = e => e.preventDefault(), q = Object(B.a)(e => {
 				let {
 					title: t,
 					modalBody: n,
@@ -8818,121 +8823,121 @@
 					onPrimaryButtonClick: a,
 					onSecondaryButtonClick: c
 				} = e;
-				return o.a.createElement(M.e, {
-					className: W.a.ModalBody
-				}, o.a.createElement(M.i, {
-					className: W.a.ModalHeader
-				}, o.a.createElement(B.a, {
-					className: W.a.ModalIcon
-				}), o.a.createElement(M.q, {
-					className: W.a.ModalTitle
-				}, t)), o.a.createElement(M.l, {
-					className: W.a.ModalMain
-				}, n), o.a.createElement(M.g, {
-					className: W.a.ModalFooter
-				}, s && o.a.createElement(U.t, {
-					kind: U.b.Button,
-					priority: U.c.Primary,
-					className: W.a.ConfirmButton,
+				return o.a.createElement(U.e, {
+					className: H.a.ModalBody
+				}, o.a.createElement(U.i, {
+					className: H.a.ModalHeader
+				}, o.a.createElement(M.a, {
+					className: H.a.ModalIcon
+				}), o.a.createElement(U.q, {
+					className: H.a.ModalTitle
+				}, t)), o.a.createElement(U.l, {
+					className: H.a.ModalMain
+				}, n), o.a.createElement(U.g, {
+					className: H.a.ModalFooter
+				}, s && o.a.createElement(F.t, {
+					kind: F.b.Button,
+					priority: F.c.Primary,
+					className: H.a.ConfirmButton,
 					onClick: a,
-					onMouseDown: V
-				}, r), !s && o.a.createElement(U.t, {
+					onMouseDown: G
+				}, r), !s && o.a.createElement(F.t, {
 					to: "/settings/account",
-					kind: U.b.InternalLink,
-					priority: U.c.Primary,
-					className: W.a.ConfirmButton,
+					kind: F.b.InternalLink,
+					priority: F.c.Primary,
+					className: H.a.ConfirmButton,
 					onClick: a,
-					onMouseDown: V
-				}, r), o.a.createElement(U.t, {
-					className: W.a.PlainButton,
-					kind: U.b.Button,
-					priority: U.c.PlainLink,
+					onMouseDown: G
+				}, r), o.a.createElement(F.t, {
+					className: H.a.PlainButton,
+					kind: F.b.Button,
+					priority: F.c.PlainLink,
 					onClick: c,
-					onMouseDown: V
+					onMouseDown: G
 				}, i)))
-			}), q = e => {
+			}), K = e => {
 				let {
 					email: t
 				} = e;
 				return o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
-					className: W.a.ModalFormItem
+					className: H.a.ModalFormItem
 				}, o.a.createElement("div", {
-					className: W.a.ModalInputLabel
-				}, H._("Email", null, {
+					className: H.a.ModalInputLabel
+				}, V._("Email", null, {
 					hk: "N93Hq"
 				})), o.a.createElement("div", {
-					className: W.a.ModalInput
-				}, t)), o.a.createElement(U.t, {
+					className: H.a.ModalInput
+				}, t)), o.a.createElement(F.t, {
 					to: "/settings/account",
-					className: W.a.PlainButton,
-					kind: U.b.InternalLink,
-					priority: U.c.PlainLink,
-					onMouseDown: V
-				}, H._("Update email address", null, {
+					className: H.a.PlainButton,
+					kind: F.b.InternalLink,
+					priority: F.c.PlainLink,
+					onMouseDown: G
+				}, V._("Update email address", null, {
 					hk: "4bgFyL"
 				})))
-			}, K = e => {
+			}, z = e => {
 				let {
 					email: t,
 					onPrimaryButtonClick: n,
 					onSecondaryButtonClick: r
 				} = e;
-				return o.a.createElement(G, {
+				return o.a.createElement(q, {
 					isPrimaryAction: !0,
-					className: W.a.Modal,
+					className: H.a.Modal,
 					withOverlay: !0,
 					onOverlayClick: r,
-					title: H._("Verify your email to make your mark on the canvas", null, {
+					title: V._("Verify your email to make your mark on the canvas", null, {
 						hk: "Lad1Z"
 					}),
-					modalBody: o.a.createElement(q, {
+					modalBody: o.a.createElement(K, {
 						email: t
 					}),
-					primaryButtonText: H._("Send verification email", null, {
+					primaryButtonText: V._("Send verification email", null, {
 						hk: "1zdmej"
 					}),
 					onPrimaryButtonClick: n,
-					secondaryButtonText: H._("Not now", null, {
+					secondaryButtonText: V._("Not now", null, {
 						hk: "YkgPb"
 					}),
 					onSecondaryButtonClick: r
 				})
-			}, z = e => {
+			}, Q = e => {
 				let {
 					onSecondaryButtonClick: t
 				} = e;
-				return o.a.createElement(G, {
+				return o.a.createElement(q, {
 					isPrimaryAction: !1,
-					className: W.a.Modal,
+					className: H.a.Modal,
 					withOverlay: !0,
 					onOverlayClick: t,
-					title: H._("Add your email to make your mark on the canvas", null, {
+					title: V._("Add your email to make your mark on the canvas", null, {
 						hk: "2PVqer"
 					}),
-					primaryButtonText: H._("Add an email", null, {
+					primaryButtonText: V._("Add an email", null, {
 						hk: "3rY2VL"
 					}),
-					secondaryButtonText: H._("Not now", null, {
+					secondaryButtonText: V._("Not now", null, {
 						hk: "YkgPb"
 					}),
 					onSecondaryButtonClick: t
 				})
 			}, {
-				fbt: Q
+				fbt: Y
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			var Y;
+			var J;
 			! function(e) {
 				e.None = "none", e.VerifyEmail = "verifyEmail", e.AddEmail = "addEmail"
-			}(Y || (Y = {}));
-			const J = Object(c.c)({
+			}(J || (J = {}));
+			const Z = Object(c.c)({
 					session: e => e.user.session,
 					telemetryDefaults: e => {
 						const t = {
-								...Object(k.o)(e),
+								...Object(w.o)(e),
 								...{
-									action: w.d.Load,
-									source: w.f.Experiment,
-									noun: w.e.UserId
+									action: T.d.Load,
+									source: T.f.Experiment,
+									noun: T.e.UserId
 								}
 							},
 							{
@@ -8940,19 +8945,19 @@
 								source: r,
 								noun: s,
 								...o
-							} = Object(w.g)(t);
-						return T(o)
+							} = Object(T.g)(t);
+						return P(o)
 					},
 					isTooltipOpened: e => Boolean(e.tooltip.tooltipId),
 					isSearchDropdownOpened: e => e.search.isDropdownOpen,
 					isHeaderDropdownOpened: e => e.header.isSubscriptionsDropdownOpen,
-					isLoggedIn: D.S,
-					queryParams: e => Object(L.q)(e),
-					email: D.p,
-					isSubscriptionsPinned: R.c,
-					locale: P.k
+					isLoggedIn: R.S,
+					queryParams: e => Object(D.q)(e),
+					email: R.p,
+					isSubscriptionsPinned: A.c,
+					locale: L.k
 				}),
-				Z = Object(i.b)(J, e => ({
+				X = Object(i.b)(Z, e => ({
 					closeSearchDropdown: () => e(Object(m.n)()),
 					closeHeaderDropdown: () => e(Object(l.f)()),
 					closeTooltipModal: () => e(Object(b.j)()),
@@ -8960,22 +8965,21 @@
 					openProfilePage: t => e(Object(a.b)(`/user/${t}`)),
 					openErrorToast: () => e(Object(p.f)({
 						duration: p.a,
-						kind: N.b.Error,
-						text: Q._("Something wen't wrong. Please try again later.", null, {
+						kind: k.b.Error,
+						text: Y._("Something wen't wrong. Please try again later.", null, {
 							hk: "4vD48K"
 						})
 					})),
 					resendEmail: () => e(Object(f.v)())
 				}));
-			class X extends o.a.Component {
+			class $ extends o.a.Component {
 				constructor(e) {
-					var t;
 					super(e), this.iframeRef = Object(s.createRef)(), this.handleEscapeKey = e => {
-						e.code === j.a.Escape.toString() && this.toggleFullScreen(!1)
+						e.code === I.a.Escape.toString() && this.toggleFullScreen(!1)
 					}, this.toggleFullScreen = e => {
-						this.messenger.sendMessageFullscreen(e), this.setState({
+						this.messenger.sendMessageScreenMode(e ? v.FullScreen : v.Preview), this.setState({
 							isFullscreen: e
-						}), Object(I.e)(!e)
+						}), Object(S.e)(!e)
 					}, this.getAuthClientData = () => {
 						const {
 							session: e,
@@ -9008,13 +9012,13 @@
 						t && "string" == typeof t && this.props.openProfilePage(t)
 					}, this.onMessageVerifyAccount = () => {
 						this.props.email ? this.setState({
-							showModal: Y.VerifyEmail
+							showModal: J.VerifyEmail
 						}) : this.setState({
-							showModal: Y.AddEmail
+							showModal: J.AddEmail
 						})
 					}, this.onClickVerifyEmail = () => {
 						this.setState({
-							showModal: Y.None
+							showModal: J.None
 						}), this.props.resendEmail()
 					}, this.onLoad = () => {
 						this.setState({
@@ -9028,20 +9032,24 @@
 						const {
 							isFullscreen: e
 						} = this.state, t = this.isAnyRedditModalOpened();
-						e && t ? this.closeAnyRedditModal() : this.state.isFullscreen || (this.toggleFullScreen(!0), this.props.sendEvent(Object(S.b)()))
-					}, this.messenger = new O(this.iframeRef, this.getAuthClientData, this.onMessageClose, this.onMessageSignIn, this.onMessageSyncCoordinates, this.onMessageOpenProfile, this.onMessageVerifyAccount);
+						e && t ? this.closeAnyRedditModal() : this.state.isFullscreen || (this.toggleFullScreen(!0), this.props.sendEvent(Object(N.b)()))
+					}, this.messenger = new x(this.iframeRef, this.getAuthClientData, this.onMessageClose, this.onMessageSignIn, this.onMessageSyncCoordinates, this.onMessageOpenProfile, this.onMessageVerifyAccount);
 					const {
-						iframeURL: n
-					} = v(this.props.locale);
+						iframeURL: t
+					} = C(this.props.locale);
 					this.state = {
-						iframeURL: n,
-						isFullscreen: !!(null === (t = this.props.queryParams) || void 0 === t ? void 0 : t.fullscreen),
+						iframeURL: t,
+						isFullscreen: !1,
 						isLoaded: !1,
-						showModal: Y.None
+						showModal: J.None
 					}
 				}
 				componentDidMount() {
-					this.messenger.subscribe(), document.removeEventListener("keydown", this.handleEscapeKey)
+					this.messenger.subscribe();
+					const {
+						isFullscreen: e
+					} = C(this.props.locale);
+					this.toggleFullScreen(e), document.removeEventListener("keydown", this.handleEscapeKey)
 				}
 				componentWillUnmount() {
 					this.messenger.unsubscribe(), document.addEventListener("keydown", this.handleEscapeKey)
@@ -9077,37 +9085,37 @@
 						showModal: s
 					} = this.state, i = this.isAnyRedditModalOpened();
 					return o.a.createElement("div", {
-						className: Object(d.a)(W.a.container, {
-							[W.a.expanded]: t,
-							[W.a.isSubscriptionsPinned]: this.props.isSubscriptionsPinned
+						className: Object(d.a)(H.a.container, {
+							[H.a.expanded]: t,
+							[H.a.isSubscriptionsPinned]: this.props.isSubscriptionsPinned
 						})
 					}, n && o.a.createElement("iframe", {
 						ref: this.iframeRef,
 						onLoad: this.onLoad,
 						onError: this.onError,
-						className: W.a.iframe,
+						className: H.a.iframe,
 						allow: "web-share; clipboard-read; clipboard-write",
 						src: n
 					}), !e && o.a.createElement("img", {
-						className: W.a.garlicBreadIcon,
+						className: H.a.garlicBreadIcon,
 						src: `${r.a.assetPath}/img/garlic-bread-loader.gif`
 					}), e && (!t || i) && o.a.createElement("div", {
-						className: W.a.overlay,
+						className: H.a.overlay,
 						onClick: this.onOverlayClick
-					}), s === Y.VerifyEmail && o.a.createElement(K, {
+					}), s === J.VerifyEmail && o.a.createElement(z, {
 						email: this.props.email,
 						onPrimaryButtonClick: this.onClickVerifyEmail,
 						onSecondaryButtonClick: () => this.setState({
-							showModal: Y.None
+							showModal: J.None
 						})
-					}), s === Y.AddEmail && o.a.createElement(z, {
+					}), s === J.AddEmail && o.a.createElement(Q, {
 						onSecondaryButtonClick: () => this.setState({
-							showModal: Y.None
+							showModal: J.None
 						})
 					}))
 				}
 			}
-			t.a = Object(C.c)(Z(X))
+			t.a = Object(j.c)(X($))
 		},
 		"./src/reddit/components/Governance/CommunityCard/async.tsx": function(e, t, n) {
 			"use strict";
@@ -26809,4 +26817,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.6bd1bfa050384ec7a415.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.87b4f1f8c182ff5b47f8.js.map
