@@ -1,310 +1,391 @@
-// https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.c4f1397643e699a12453.js
-// Retrieved at 5/24/2023, 11:50:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.c5a08559b28fdd46ccd9.js
+// Retrieved at 5/25/2023, 11:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["devPlatform-components-ContextActions"], {
-		"./src/devPlatform/components/ContextActions/index.tsx": function(e, t, o) {
+		"./src/devPlatform/components/ContextActions/index.tsx": function(t, e, o) {
 			"use strict";
-			o.r(t);
-			var i = o("./node_modules/react/index.js"),
-				a = o.n(i),
+			o.r(e);
+			var a = o("./node_modules/react/index.js"),
+				i = o.n(a),
 				d = o("./node_modules/react-redux/es/index.js"),
-				s = o("./node_modules/reselect/es/index.js"),
+				n = o("./node_modules/reselect/es/index.js"),
 				r = o("./src/reddit/actions/toaster.ts"),
-				n = o("./src/reddit/contexts/PageLayer/index.tsx"),
+				s = o("./src/reddit/contexts/PageLayer/index.tsx"),
 				l = o("./src/reddit/controls/Dropdown/Row.tsx"),
 				c = o("./src/reddit/icons/fonts/index.tsx"),
 				u = o("./src/reddit/models/Toast/index.ts"),
 				m = o("./src/reddit/selectors/experiments/devPlatform.ts"),
 				v = o("./src/devPlatform/components/ContextActions/index.m.less"),
-				p = o.n(v),
-				h = o("./node_modules/@devvit/protos/index.js"),
+				h = o.n(v),
+				p = o("./node_modules/@devvit/protos/index.js"),
 				b = o("./src/reddit/models/Vote/index.ts"),
-				g = e => {
-					var t, o, i, a, d, s, r, n, l, c, u, m, v, p, g, f, y, A;
-					return h.I.fromPartial({
-						approved: e.isApproved,
-						approvedAtUtc: null !== (t = e.approvedAtUTC) && void 0 !== t ? t : void 0,
-						approvedBy: null !== (o = e.approvedBy) && void 0 !== o ? o : void 0,
-						author: e.author,
-						authorFullname: e.authorId,
-						authorPremium: !!e.isAuthorPremium,
-						awarders: null !== (i = e.awarders) && void 0 !== i ? i : [],
-						bannedAtUtc: null !== (a = e.bannedAtUTC) && void 0 !== a ? a : void 0,
-						bannedBy: e.bannedBy ? String(e.bannedBy) : void 0,
-						body: null !== (d = e.bodyMD) && void 0 !== d ? d : "",
-						bodyHtml: null !== (s = e.body) && void 0 !== s ? s : "",
-						canGild: e.isGildable,
-						collapsed: e.collapsed,
-						collapsedBecauseCrowdControl: null !== (r = e.collapsedBecauseCrowdControl) && void 0 !== r && r,
-						collapsedReason: null !== (n = e.collapsedReason) && void 0 !== n ? n : void 0,
-						collapsedReasonCode: null !== (l = e.collapsedReasonCode) && void 0 !== l ? l : void 0,
-						commentType: null !== (c = e.commentType) && void 0 !== c ? c : void 0,
-						created: e.created,
-						createdUtc: e.created,
-						distinguished: null !== (u = e.distinguishType) && void 0 !== u ? u : void 0,
-						edited: null !== e.editedAt,
-						id: e.id.replace(/t[1-5]_/, ""),
-						ignoreReports: e.ignoreReports,
-						isSubmitter: e.isOp,
-						likes: e.voteState === b.a.upvoted || e.voteState !== b.a.downvoted && void 0,
-						linkId: e.postId,
-						locked: e.isLocked,
-						modNote: null !== (m = e.modNote) && void 0 !== m ? m : void 0,
-						modReasonBy: null !== (v = e.modReasonBy) && void 0 !== v ? v : void 0,
-						name: e.id,
-						numReports: null !== (p = e.numReports) && void 0 !== p ? p : 0,
-						parentId: null !== (g = e.parentId) && void 0 !== g ? g : void 0,
-						permalink: e.permalink,
-						removalReason: null !== (f = e.modRemovalReason) && void 0 !== f ? f : void 0,
-						removed: e.isRemoved,
-						rteMode: e.media.rteMode,
-						saved: e.isSaved,
-						score: e.score,
-						scoreHidden: e.isScoreHidden,
-						sendReplies: e.sendReplies,
-						spam: e.isSpam,
-						stickied: e.isStickied,
-						subredditId: e.subredditId,
-						linkTitle: null !== (y = e.postTitle) && void 0 !== y ? y : void 0,
-						linkAuthor: null !== (A = e.postAuthor) && void 0 !== A ? A : void 0
+				g = t => {
+					var e, o, a, i, d, n, r, s, l, c, u, m, v, h, g, f, y, A;
+					return p.L.fromPartial({
+						approved: t.isApproved,
+						approvedAtUtc: null !== (e = t.approvedAtUTC) && void 0 !== e ? e : void 0,
+						approvedBy: null !== (o = t.approvedBy) && void 0 !== o ? o : void 0,
+						author: t.author,
+						authorFullname: t.authorId,
+						authorPremium: !!t.isAuthorPremium,
+						awarders: null !== (a = t.awarders) && void 0 !== a ? a : [],
+						bannedAtUtc: null !== (i = t.bannedAtUTC) && void 0 !== i ? i : void 0,
+						bannedBy: t.bannedBy ? String(t.bannedBy) : void 0,
+						body: null !== (d = t.bodyMD) && void 0 !== d ? d : "",
+						bodyHtml: null !== (n = t.body) && void 0 !== n ? n : "",
+						canGild: t.isGildable,
+						collapsed: t.collapsed,
+						collapsedBecauseCrowdControl: null !== (r = t.collapsedBecauseCrowdControl) && void 0 !== r && r,
+						collapsedReason: null !== (s = t.collapsedReason) && void 0 !== s ? s : void 0,
+						collapsedReasonCode: null !== (l = t.collapsedReasonCode) && void 0 !== l ? l : void 0,
+						commentType: null !== (c = t.commentType) && void 0 !== c ? c : void 0,
+						created: t.created,
+						createdUtc: t.created,
+						distinguished: null !== (u = t.distinguishType) && void 0 !== u ? u : void 0,
+						edited: null !== t.editedAt,
+						id: t.id.replace(/t[1-5]_/, ""),
+						ignoreReports: t.ignoreReports,
+						isSubmitter: t.isOp,
+						likes: t.voteState === b.a.upvoted || t.voteState !== b.a.downvoted && void 0,
+						linkId: t.postId,
+						locked: t.isLocked,
+						modNote: null !== (m = t.modNote) && void 0 !== m ? m : void 0,
+						modReasonBy: null !== (v = t.modReasonBy) && void 0 !== v ? v : void 0,
+						name: t.id,
+						numReports: null !== (h = t.numReports) && void 0 !== h ? h : 0,
+						parentId: null !== (g = t.parentId) && void 0 !== g ? g : void 0,
+						permalink: t.permalink,
+						removalReason: null !== (f = t.modRemovalReason) && void 0 !== f ? f : void 0,
+						removed: t.isRemoved,
+						rteMode: t.media.rteMode,
+						saved: t.isSaved,
+						score: t.score,
+						scoreHidden: t.isScoreHidden,
+						sendReplies: t.sendReplies,
+						spam: t.isSpam,
+						stickied: t.isStickied,
+						subredditId: t.subredditId,
+						linkTitle: null !== (y = t.postTitle) && void 0 !== y ? y : void 0,
+						linkAuthor: null !== (A = t.postAuthor) && void 0 !== A ? A : void 0
 					})
 				},
 				f = o("./src/reddit/models/Flair/index.ts"),
 				y = o("./src/reddit/models/Media/index.ts"),
-				A = e => {
-					var t, o, i, a, d, s, r, n, l, c, u, m, v, p, g, A, S, x, w;
-					return h.I.fromPartial({
-						approved: e.isApproved,
-						approvedAtUtc: null !== (t = e.approvedAtUTC) && void 0 !== t ? t : void 0,
-						approvedBy: null !== (o = e.approvedBy) && void 0 !== o ? o : void 0,
-						archived: e.isArchived,
-						author: e.author,
-						authorFlairBackgroundColor: null === (i = e.flair[0]) || void 0 === i ? void 0 : i.backgroundColor,
-						authorFlairCssClass: null === (a = e.flair[0]) || void 0 === a ? void 0 : a.cssClass,
-						authorFlairRichtext: (null === (d = e.flair[0]) || void 0 === d ? void 0 : d.type) === f.f.Richtext ? e.flair[0].richtext : void 0,
-						authorFlairTemplateId: null === (s = e.flair[0]) || void 0 === s ? void 0 : s.templateId,
-						authorFlairText: (null === (r = e.flair[0]) || void 0 === r ? void 0 : r.type) === f.f.Text ? e.flair[0].text : void 0,
-						authorFlairTextColor: null === (n = e.flair[0]) || void 0 === n ? void 0 : n.textColor,
-						authorFlairType: null === (l = e.flair[0]) || void 0 === l ? void 0 : l.type,
-						authorFullname: e.authorId,
-						authorIsBlocked: e.authorIsBlocked,
-						authorPremium: e.isAuthorPremium,
-						awarders: e.awarders,
-						bannedAtUtc: null !== (c = e.bannedAtUTC) && void 0 !== c ? c : void 0,
-						bannedBy: e.bannedBy ? String(e.bannedBy) : void 0,
-						canGild: e.isGildable,
-						created: e.created,
-						createdUtc: e.created,
-						distinguished: null !== (u = e.distinguishType) && void 0 !== u ? u : void 0,
-						id: e.id.replace(/t[1-5]_/, ""),
-						ignoreReports: e.ignoreReports,
-						likes: e.voteState === b.a.upvoted || e.voteState !== b.a.downvoted && void 0,
-						locked: e.isLocked,
-						modNote: null !== (m = e.modNote) && void 0 !== m ? m : void 0,
-						modReasonBy: null !== (v = e.modReasonBy) && void 0 !== v ? v : void 0,
-						modReasonTitle: null !== (p = e.modRemovalReason) && void 0 !== p ? p : void 0,
-						name: e.id,
-						numReports: null !== (g = e.numReports) && void 0 !== g ? g : void 0,
-						permalink: e.permalink,
-						removalReason: null !== (A = e.modRemovalReason) && void 0 !== A ? A : void 0,
-						removed: e.isRemoved,
-						saved: e.saved,
-						score: e.score,
-						scoreHidden: e.isScoreHidden,
-						sendReplies: e.sendReplies,
-						spam: e.isSpam,
-						stickied: e.isStickied,
-						subredditId: e.belongsTo.id,
-						subredditType: e.belongsTo.type,
-						topAwardedType: e.topAwardedType,
-						numComments: e.numComments,
-						over18: e.isNSFW,
-						selftext: e.media && Object(y.N)(e.media) ? e.media.markdownContent : void 0,
-						selftextHtml: e.media && Object(y.N)(e.media) ? e.media.content : void 0,
-						spoiler: String(e.isSpoiler),
-						thumbnail: e.thumbnail.url,
-						thumbnailWidth: null !== (S = e.thumbnail.width) && void 0 !== S ? S : void 0,
-						thumbnailHeight: null !== (x = e.thumbnail.height) && void 0 !== x ? x : void 0,
-						title: e.title,
-						url: null === (w = e.source) || void 0 === w ? void 0 : w.url
+				A = t => {
+					var e, o, a, i, d, n, r, s, l, c, u, m, v, h, g, A, S, O, w;
+					return p.L.fromPartial({
+						approved: t.isApproved,
+						approvedAtUtc: null !== (e = t.approvedAtUTC) && void 0 !== e ? e : void 0,
+						approvedBy: null !== (o = t.approvedBy) && void 0 !== o ? o : void 0,
+						archived: t.isArchived,
+						author: t.author,
+						authorFlairBackgroundColor: null === (a = t.flair[0]) || void 0 === a ? void 0 : a.backgroundColor,
+						authorFlairCssClass: null === (i = t.flair[0]) || void 0 === i ? void 0 : i.cssClass,
+						authorFlairRichtext: (null === (d = t.flair[0]) || void 0 === d ? void 0 : d.type) === f.f.Richtext ? t.flair[0].richtext : void 0,
+						authorFlairTemplateId: null === (n = t.flair[0]) || void 0 === n ? void 0 : n.templateId,
+						authorFlairText: (null === (r = t.flair[0]) || void 0 === r ? void 0 : r.type) === f.f.Text ? t.flair[0].text : void 0,
+						authorFlairTextColor: null === (s = t.flair[0]) || void 0 === s ? void 0 : s.textColor,
+						authorFlairType: null === (l = t.flair[0]) || void 0 === l ? void 0 : l.type,
+						authorFullname: t.authorId,
+						authorIsBlocked: t.authorIsBlocked,
+						authorPremium: t.isAuthorPremium,
+						awarders: t.awarders,
+						bannedAtUtc: null !== (c = t.bannedAtUTC) && void 0 !== c ? c : void 0,
+						bannedBy: t.bannedBy ? String(t.bannedBy) : void 0,
+						canGild: t.isGildable,
+						created: t.created,
+						createdUtc: t.created,
+						distinguished: null !== (u = t.distinguishType) && void 0 !== u ? u : void 0,
+						id: t.id.replace(/t[1-5]_/, ""),
+						ignoreReports: t.ignoreReports,
+						likes: t.voteState === b.a.upvoted || t.voteState !== b.a.downvoted && void 0,
+						locked: t.isLocked,
+						modNote: null !== (m = t.modNote) && void 0 !== m ? m : void 0,
+						modReasonBy: null !== (v = t.modReasonBy) && void 0 !== v ? v : void 0,
+						modReasonTitle: null !== (h = t.modRemovalReason) && void 0 !== h ? h : void 0,
+						name: t.id,
+						numReports: null !== (g = t.numReports) && void 0 !== g ? g : void 0,
+						permalink: t.permalink,
+						removalReason: null !== (A = t.modRemovalReason) && void 0 !== A ? A : void 0,
+						removed: t.isRemoved,
+						saved: t.saved,
+						score: t.score,
+						scoreHidden: t.isScoreHidden,
+						sendReplies: t.sendReplies,
+						spam: t.isSpam,
+						stickied: t.isStickied,
+						subredditId: t.belongsTo.id,
+						subredditType: t.belongsTo.type,
+						topAwardedType: t.topAwardedType,
+						numComments: t.numComments,
+						over18: t.isNSFW,
+						selftext: t.media && Object(y.N)(t.media) ? t.media.markdownContent : void 0,
+						selftextHtml: t.media && Object(y.N)(t.media) ? t.media.content : void 0,
+						spoiler: String(t.isSpoiler),
+						thumbnail: t.thumbnail.url,
+						thumbnailWidth: null !== (S = t.thumbnail.width) && void 0 !== S ? S : void 0,
+						thumbnailHeight: null !== (O = t.thumbnail.height) && void 0 !== O ? O : void 0,
+						title: t.title,
+						url: null === (w = t.source) || void 0 === w ? void 0 : w.url
 					})
 				},
-				S = e => h.R.fromPartial({
-					freeFormReports: e.freeFormReports,
-					communityIcon: e.communityIcon,
-					displayName: e.name,
-					title: e.title,
-					over18: e.isNSFW,
-					iconSize: e.icon.width && e.icon.height ? [e.icon.width, e.icon.height] : [],
-					primaryColor: e.primaryColor,
-					iconImg: e.icon.url,
-					subscribers: e.subscribers,
-					displayNamePrefixed: e.displayText,
-					name: e.id,
-					url: e.url,
-					quarantine: e.isQuarantined,
-					acceptFollowers: e.acceptFollowers,
-					publicDescription: e.publicDescription,
-					subredditType: e.type,
-					userIsSubscriber: e.isSubscribed,
-					id: e.id.replace(/t[1-5]_/, "")
+				S = t => p.U.fromPartial({
+					freeFormReports: t.freeFormReports,
+					communityIcon: t.communityIcon,
+					displayName: t.name,
+					title: t.title,
+					over18: t.isNSFW,
+					iconSize: t.icon.width && t.icon.height ? [t.icon.width, t.icon.height] : [],
+					primaryColor: t.primaryColor,
+					iconImg: t.icon.url,
+					subscribers: t.subscribers,
+					displayNamePrefixed: t.displayText,
+					name: t.id,
+					url: t.url,
+					quarantine: t.isQuarantined,
+					acceptFollowers: t.acceptFollowers,
+					publicDescription: t.publicDescription,
+					subredditType: t.type,
+					userIsSubscriber: t.isSubscribed,
+					id: t.id.replace(/t[1-5]_/, "")
 				}),
-				x = o("./src/devPlatform/components/UserInputModal/modals.ts"),
-				w = o("./src/devPlatform/singleton/runtime.ts"),
-				R = o("./src/higherOrderComponents/makeAsync.tsx"),
-				C = o("./src/lib/loadWithRetries/index.ts"),
+				O = o("./src/devPlatform/components/FormModal/modals.ts"),
+				w = o("./src/devPlatform/components/UserInputModal/modals.ts"),
+				x = o("./src/devPlatform/singleton/runtime.ts");
+
+			function R(t, e, o, a) {
+				let i = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : {};
+				e.forEach(e => {
+					var d, n;
+					switch (e.type) {
+						case p.l.EFFECT_SHOW_TOAST:
+							if (null === (d = e.showToast) || void 0 === d ? void 0 : d.toast) {
+								const t = e.showToast.toast.appearance === p.Y.SUCCESS ? u.b.SuccessCommunityGreen : void 0;
+								o(e.showToast.toast.text, t)
+							}
+							break;
+						case p.l.EFFECT_SHOW_FORM:
+							(null === (n = e.showForm) || void 0 === n ? void 0 : n.form) && a(e.showForm.form, function(t, e, o, a) {
+								let i = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : {};
+								return async d => {
+									const n = x.a.getActor(t);
+									if (!n) return;
+									const r = await n.As(p.Z).HandleUIEvent(p.s.fromPartial({
+										event: {
+											formSubmitted: {
+												formId: e.id,
+												results: d
+											}
+										},
+										state: i
+									}));
+									R(t, r.effects, o, a, r.state)
+								}
+							}(t, e.showForm.form, o, a, i))
+					}
+				})
+			}
+			var M = R,
+				C = o("./src/higherOrderComponents/makeAsync.tsx"),
+				_ = o("./src/lib/loadWithRetries/index.ts"),
 				I = o("./src/reddit/components/GlobalModalContainer/registry.ts"),
-				O = o("./src/reddit/constants/modals.ts");
-			const M = Object(R.a)({
-					getComponent: () => Object(C.a)(() => o.e(2).then(o.bind(null, "./src/devPlatform/components/UserInputModal/index.tsx"))).then(e => e.default),
+				P = o("./src/reddit/constants/modals.ts");
+			const T = Object(C.a)({
+					getComponent: () => Object(_.a)(() => o.e(2).then(o.bind(null, "./src/devPlatform/components/FormModal/index.tsx"))).then(t => t.default),
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
-				T = e => () => {
-					e()
+				j = t => () => {
+					t()
 				};
-			Object(I.b)(O.a.DEV_PLATFORM_USER_INPUT_MODAL, e => a.a.createElement(M, {
-				onOverlayClick: T(e),
+			Object(I.b)(P.a.DEV_PLATFORM_FORM_MODAL, t => i.a.createElement(T, {
+				onOverlayClick: j(t),
 				withOverlay: !0
 			}));
-			var _ = function(e, t) {
-				e.forEach(e => {
-					var o;
-					switch (e.type) {
-						case h.l.EFFECT_SHOW_TOAST:
-							if (null === (o = e.showToast) || void 0 === o ? void 0 : o.toast) {
-								const o = e.showToast.toast.appearance === h.V.SUCCESS ? u.b.SuccessCommunityGreen : void 0;
-								t(e.showToast.toast.text, o)
-							}
-					}
-				})
-			};
-			const P = Object(d.b)(() => Object(s.c)({}), e => ({
-					showToast: (t, o) => {
-						e(Object(r.f)(Object(r.e)(t, o)))
+			const L = Object(C.a)({
+					getComponent: () => Object(_.a)(() => o.e(3).then(o.bind(null, "./src/devPlatform/components/UserInputModal/index.tsx"))).then(t => t.default),
+					ErrorComponent: () => null,
+					LoadingComponent: () => null
+				}),
+				k = t => () => {
+					t()
+				};
+			Object(I.b)(P.a.DEV_PLATFORM_USER_INPUT_MODAL, t => i.a.createElement(L, {
+				onOverlayClick: k(t),
+				withOverlay: !0
+			}));
+			const F = Object(d.b)(() => Object(n.c)({}), t => ({
+					showToast: (e, o) => {
+						t(Object(r.f)(Object(r.e)(e, o)))
 					},
-					onShowUserInput: (t, o) => {
-						e(Object(x.b)({
-							action: t,
+					showForm: (e, o) => {
+						t(Object(O.b)({
+							form: e,
+							onSubmit: o
+						}))
+					},
+					onShowUserInput: (e, o) => {
+						t(Object(w.b)({
+							action: e,
 							onAction: o
 						}))
 					}
 				})),
-				k = (e, t) => ({
-					post: e === h.h.POST ? A(t) : void 0,
-					comment: e === h.h.COMMENT ? g(t) : void 0,
-					subreddit: e === h.h.SUBREDDIT ? S(t) : void 0
+				U = (t, e) => ({
+					post: t === p.h.POST ? A(e) : void 0,
+					comment: t === p.h.COMMENT ? g(e) : void 0,
+					subreddit: t === p.h.SUBREDDIT ? S(e) : void 0
 				});
-			t.default = P(e => {
+			e.default = F(t => {
 				const {
-					moderator: t,
+					moderator: e,
 					contextType: o,
-					contextData: i,
-					showToast: s,
-					onShowUserInput: r
-				} = e, v = Object(d.e)(m.a), b = Object(n.ib)(), g = Object(d.e)(e => Object(n.s)(e, {
-					pageLayer: b
+					contextData: a,
+					onShowUserInput: n,
+					showToast: r,
+					showForm: v
+				} = t, b = Object(d.e)(m.a), g = Object(s.ib)(), f = Object(d.e)(t => Object(s.s)(t, {
+					pageLayer: g
 				}));
-				let f = [];
-				v && g && (w.a.init(), f = w.a.loadSubreddit(g));
-				const y = (e, t) => {
-						r(e, t)
+				let y = [];
+				b && f && (x.a.init(), y = x.a.loadSubreddit(f));
+				const A = (t, e) => {
+						n(t, e)
 					},
-					A = [];
-				return f.forEach(e => {
+					S = [];
+				return y.forEach(t => {
 					var d;
-					return null === (d = e.actions) || void 0 === d ? void 0 : d.actions.filter(((e, t) => o => {
-						var i, a, d, s, r;
-						if (t && !(null === (i = o.users) || void 0 === i ? void 0 : i.moderator) || !t && (null === (a = o.users) || void 0 === a ? void 0 : a.moderator)) return !1;
-						switch (e) {
-							case h.h.POST:
+					return null === (d = t.actions) || void 0 === d ? void 0 : d.actions.filter(((t, e) => o => {
+						var a, i, d, n, r;
+						if (e && !(null === (a = o.users) || void 0 === a ? void 0 : a.moderator) || !e && (null === (i = o.users) || void 0 === i ? void 0 : i.moderator)) return !1;
+						switch (t) {
+							case p.h.POST:
 								return !!(null === (d = o.contexts) || void 0 === d ? void 0 : d.post);
-							case h.h.COMMENT:
-								return !!(null === (s = o.contexts) || void 0 === s ? void 0 : s.comment);
-							case h.h.SUBREDDIT:
+							case p.h.COMMENT:
+								return !!(null === (n = o.contexts) || void 0 === n ? void 0 : n.comment);
+							case p.h.SUBREDDIT:
 								return !!(null === (r = o.contexts) || void 0 === r ? void 0 : r.subreddit);
 							default:
 								return !1
 						}
-					})(o, t)).forEach(d => {
-						const r = function(e, t, o, i, a, d) {
+					})(o, e)).forEach(d => {
+						const n = function(t, e, o, a, i, d, n) {
 							return () => {
-								const s = d => {
-									var s, r;
-									return null === (r = null === (s = w.a.getActor(e)) || void 0 === s ? void 0 : s.As(h.f)) || void 0 === r ? void 0 : r.OnAction(h.g.fromPartial({
-										actionId: t.actionId,
+								const r = i => {
+									var r, s;
+									return null === (s = null === (r = x.a.getActor(t)) || void 0 === r ? void 0 : r.As(p.f)) || void 0 === s ? void 0 : s.OnAction(p.g.fromPartial({
+										actionId: e.actionId,
 										context: o,
-										...k(o, i),
-										userInput: d
-									})).then(e => {
-										var t;
-										if ((null === (t = e.effects) || void 0 === t ? void 0 : t.length) > 0) _(e.effects, a);
-										else if (null != e.message && null != e.success) {
-											const t = e.success ? u.b.SuccessCommunityGreen : u.b.Error;
-											a(e.message, t)
+										...U(o, a),
+										userInput: i
+									})).then(o => {
+										var i;
+										if ((null === (i = o.effects) || void 0 === i ? void 0 : i.length) > 0) M(t, o.effects, d, n, {
+											__contextAction: {
+												actionId: e.actionId,
+												thingId: a.id
+											}
+										});
+										else if (null != o.message && null != o.success) {
+											const t = o.success ? u.b.SuccessCommunityGreen : u.b.Error;
+											d(o.message, t)
 										}
 									})
 								};
-								t.userInput ? d(t, s) : s()
+								e.userInput ? i(e, r) : r()
 							}
-						}(e.actorHostname, d, o, i, s, y);
-						A.push(a.a.createElement(l.b, {
-							className: p.a.DropdownRow,
+						}(t.actorHostname, d, o, a, A, r, v);
+						S.push(i.a.createElement(l.b, {
+							className: h.a.DropdownRow,
 							displayText: d.name,
-							key: `${e.actorHostname}.${d.actionId}`,
-							onClick: r
-						}, a.a.createElement(c.a, {
-							name: t ? "mod" : "bot",
-							className: p.a.Icon
+							key: `${t.actorHostname}.${d.actionId}`,
+							onClick: n
+						}, i.a.createElement(c.a, {
+							name: e ? "mod" : "bot",
+							className: h.a.Icon
 						})))
 					})
-				}), a.a.createElement(a.a.Fragment, null, A)
+				}), i.a.createElement(i.a.Fragment, null, S)
 			})
 		},
-		"./src/devPlatform/components/UserInputModal/modals.ts": function(e, t, o) {
+		"./src/devPlatform/components/FormModal/modals.ts": function(t, e, o) {
 			"use strict";
-			o.d(t, "b", (function() {
+			o.d(e, "a", (function() {
 				return c
-			})), o.d(t, "a", (function() {
+			})), o.d(e, "b", (function() {
 				return u
 			}));
-			var i = o("./src/lib/initializeClient/installReducer.ts"),
-				a = o("./src/lib/makeActionCreator/index.ts"),
+			var a = o("./src/lib/initializeClient/installReducer.ts"),
+				i = o("./src/lib/makeActionCreator/index.ts"),
 				d = o("./src/reddit/actions/modal.ts"),
-				s = o("./src/reddit/constants/modals.ts"),
+				n = o("./src/reddit/constants/modals.ts"),
 				r = o("./src/reddit/reducers/features/devPlatform/index.ts"),
-				n = o("./src/devPlatform/constants.ts");
-			Object(i.a)({
+				s = o("./src/devPlatform/constants.ts");
+			Object(a.a)({
 				features: {
 					devPlatform: r.a
 				}
 			});
-			const l = Object(a.a)(n.e),
-				c = e => {
+			const l = Object(i.a)(s.e),
+				c = () => async t => {
+					t(Object(d.g)(n.a.DEV_PLATFORM_FORM_MODAL))
+				}, u = t => {
 					let {
-						action: t,
-						onAction: o
-					} = e;
-					return async e => {
-						e(l({
-							action: t,
-							onAction: o
-						})), e(Object(d.h)(s.a.DEV_PLATFORM_USER_INPUT_MODAL))
+						form: e,
+						onSubmit: o
+					} = t;
+					return async t => {
+						t(l({
+							form: e,
+							onSubmit: o
+						})), t(Object(d.h)(n.a.DEV_PLATFORM_FORM_MODAL))
 					}
-				},
-				u = () => async e => {
-					e(Object(d.g)(s.a.DEV_PLATFORM_USER_INPUT_MODAL))
 				}
 		},
-		"./src/devPlatform/singleton/runtime.ts": function(e, t, o) {
+		"./src/devPlatform/components/UserInputModal/modals.ts": function(t, e, o) {
+			"use strict";
+			o.d(e, "b", (function() {
+				return c
+			})), o.d(e, "a", (function() {
+				return u
+			}));
+			var a = o("./src/lib/initializeClient/installReducer.ts"),
+				i = o("./src/lib/makeActionCreator/index.ts"),
+				d = o("./src/reddit/actions/modal.ts"),
+				n = o("./src/reddit/constants/modals.ts"),
+				r = o("./src/reddit/reducers/features/devPlatform/index.ts"),
+				s = o("./src/devPlatform/constants.ts");
+			Object(a.a)({
+				features: {
+					devPlatform: r.a
+				}
+			});
+			const l = Object(i.a)(s.f),
+				c = t => {
+					let {
+						action: e,
+						onAction: o
+					} = t;
+					return async t => {
+						t(l({
+							action: e,
+							onAction: o
+						})), t(Object(d.h)(n.a.DEV_PLATFORM_USER_INPUT_MODAL))
+					}
+				},
+				u = () => async t => {
+					t(Object(d.g)(n.a.DEV_PLATFORM_USER_INPUT_MODAL))
+				}
+		},
+		"./src/devPlatform/singleton/runtime.ts": function(t, e, o) {
 			"use strict";
 			o("./node_modules/core-js/modules/web.dom.iterable.js");
-			var i = o("./src/config.ts"),
-				a = o("./node_modules/@devvit/protos/index.js"),
+			var a = o("./src/config.ts"),
+				i = o("./node_modules/@devvit/protos/index.js"),
 				d = o("./node_modules/@devvit/runtimes/platform/browser/BrowserRuntime.js"),
-				s = o("./src/devPlatform/constants.ts"),
+				n = o("./src/devPlatform/constants.ts"),
 				r = o("./node_modules/@devvit/runtimes/worker.bootstrap.cjs"),
-				n = o("./node_modules/@devvit/runtimes/worker.echo.cjs"),
+				s = o("./node_modules/@devvit/runtimes/worker.echo.cjs"),
 				l = o("./node_modules/@devvit/runtimes/worker.redditapi.cjs"),
 				c = o("./node_modules/@devvit/runtimes/worker.supervisor.cjs"),
 				u = o("./src/lib/localStorageAvailable/index.ts");
@@ -312,24 +393,24 @@
 				["bootstrap", r.a],
 				["supervisor", c.a],
 				["redditapi", l.a],
-				["echo", n.a]
+				["echo", s.a]
 			]);
 			class v {
-				constructor(e) {
-					this.hostname = e
+				constructor(t) {
+					this.hostname = t
 				}
 				async dispose() {}
 				onBind() {}
 				onUnbind() {}
 				post() {}
 			}
-			const p = new class {
+			const h = new class {
 				constructor() {
-					var e;
+					var t;
 					if (this.gatewayUrl = "", this.loadedSubId = "", this.subActors = [], this.loadedMetadata = null, this.mockMetadata = null, this.sortedContextActions = [], this.localStorageAvailable = Object(u.a)(), this.runtimeInitialized = !1, this.debugLogging = !1, this.localStorageAvailable) {
-						this.gatewayUrl = null !== (e = localStorage.getItem(s.b)) && void 0 !== e ? e : i.a.devPlatformGatewayUrl;
-						const t = localStorage.getItem(s.c);
-						t && (this.mockMetadata = JSON.parse(t)), this.debugLogging = "true" === localStorage.getItem(s.d)
+						this.gatewayUrl = null !== (t = localStorage.getItem(n.b)) && void 0 !== t ? t : a.a.devPlatformGatewayUrl;
+						const e = localStorage.getItem(n.c);
+						e && (this.mockMetadata = JSON.parse(e)), this.debugLogging = "true" === localStorage.getItem(n.d)
 					}
 					this.runtime = new d.a(m, {
 						logLevel: this.debugLogging ? void 0 : "off"
@@ -341,148 +422,175 @@
 				getGatewayUrl() {
 					return this.gatewayUrl
 				}
-				setGatewayUrl(e) {
-					return this.gatewayUrl = e, this.localStorageAvailable && (e === i.a.devPlatformGatewayUrl ? localStorage.removeItem(s.b) : localStorage.setItem(s.b, e)), this.reloadSubreddit(), this.subActors.length
+				setGatewayUrl(t) {
+					return this.gatewayUrl = t, this.localStorageAvailable && (t === a.a.devPlatformGatewayUrl ? localStorage.removeItem(n.b) : localStorage.setItem(n.b, t)), this.reloadSubreddit(), this.subActors.length
 				}
 				getDebugLogging() {
 					return this.debugLogging
 				}
-				setDebugLogging(e) {
-					this.debugLogging = e, localStorage.setItem(s.d, e ? "true" : "false")
+				setDebugLogging(t) {
+					this.debugLogging = t, localStorage.setItem(n.d, t ? "true" : "false")
 				}
-				loadMockData(e) {
-					this.mockMetadata = e, this.localStorageAvailable && (e ? localStorage.setItem(s.c, JSON.stringify(e)) : localStorage.removeItem(s.c))
+				loadMockData(t) {
+					this.mockMetadata = t, this.localStorageAvailable && (t ? localStorage.setItem(n.c, JSON.stringify(t)) : localStorage.removeItem(n.c))
 				}
-				loadSubreddit(e) {
-					if (e.id === this.loadedSubId) return this.sortedContextActions;
-					if (this.loadedMetadata = null, this.debugLog(() => "Metadata not yet loaded"), void 0 !== e.devPlatformMetadata ? (this.debugLog(() => {
+				loadSubreddit(t) {
+					if (t.id === this.loadedSubId) return this.sortedContextActions;
+					if (this.loadedMetadata = null, this.debugLog(() => "Metadata not yet loaded"), void 0 !== t.devPlatformMetadata ? (this.debugLog(() => {
+							var e;
+							return `Loading metadata from Subreddit (${null===(e=t.devPlatformMetadata)||void 0===e?void 0:e.length} bytes)`
+						}), this.loadedMetadata = i.j.fromJSON(JSON.parse(atob(t.devPlatformMetadata))), this.debugLog(() => {
 							var t;
-							return `Loading metadata from Subreddit (${null===(t=e.devPlatformMetadata)||void 0===t?void 0:t.length} bytes)`
-						}), this.loadedMetadata = a.j.fromJSON(JSON.parse(atob(e.devPlatformMetadata))), this.debugLog(() => {
-							var e;
-							return ["metadata.installedRemoteApps:", null === (e = this.loadedMetadata) || void 0 === e ? void 0 : e.installedRemoteApps]
+							return ["metadata.installedRemoteApps:", null === (t = this.loadedMetadata) || void 0 === t ? void 0 : t.installedRemoteApps]
 						}), this.debugLog(() => {
-							var e;
-							return ["metadata.contextActions:", null === (e = this.loadedMetadata) || void 0 === e ? void 0 : e.contextActions]
+							var t;
+							return ["metadata.contextActions:", null === (t = this.loadedMetadata) || void 0 === t ? void 0 : t.contextActions]
 						})) : null !== this.mockMetadata && (this.debugLog(() => "Using mock metadata"), this.loadedMetadata = this.mockMetadata), !this.loadedMetadata) return this.debugLog(() => "No metadata found"), [];
-					this.unloadSubreddit(), this.loadedSubId = e.id, this.subActors = [];
-					const t = this.loadedMetadata.installedRemoteApps.reduce((e, t) => (e.add(t.hostname.split(".")[0]), e), new Set);
-					return this.debugLog(() => `Connecting to ${this.loadedMetadata.installedRemoteApps.length} remote actors from ${t.size} apps`), this.loadedMetadata.installedRemoteApps.forEach(e => {
-						const t = e.provides.flatMap(e => {
+					this.unloadSubreddit(), this.loadedSubId = t.id, this.subActors = [];
+					const e = this.loadedMetadata.installedRemoteApps.reduce((t, e) => (t.add(e.hostname.split(".")[0]), t), new Set);
+					return this.debugLog(() => `Connecting to ${this.loadedMetadata.installedRemoteApps.length} remote actors from ${e.size} apps`), this.loadedMetadata.installedRemoteApps.forEach(t => {
+						const e = t.provides.flatMap(t => {
 								try {
-									return [a.i.fromSerializable(e)]
+									return [i.i.fromSerializable(t)]
 								} catch {
-									this.debugLog(() => `Unknown app type, skipping: ${e.fullName}`)
+									this.debugLog(() => `Unknown app type, skipping: ${t.fullName}`)
 								}
 								return []
 							}),
 							o = {
-								hostname: e.hostname,
-								provides: t
+								hostname: t.hostname,
+								provides: e
 							};
 						this.loadActor(o), this.subActors.push(o)
-					}), this.debugLog(() => `Found ${this.loadedMetadata.contextActions.reduce((e,t)=>{var o,i;return e+(null!==(i=null===(o=t.actions)||void 0===o?void 0:o.actions.length)&&void 0!==i?i:0)},0)} actions across ${this.loadedMetadata.contextActions.length} actors`), this.sortedContextActions = this.loadedMetadata.contextActions.sort((e, t) => e.actorHostname.localeCompare(t.actorHostname)).map(e => {
-						var t, o, i;
+					}), this.debugLog(() => `Found ${this.loadedMetadata.contextActions.reduce((t,e)=>{var o,a;return t+(null!==(a=null===(o=e.actions)||void 0===o?void 0:o.actions.length)&&void 0!==a?a:0)},0)} actions across ${this.loadedMetadata.contextActions.length} actors`), this.sortedContextActions = this.loadedMetadata.contextActions.sort((t, e) => t.actorHostname.localeCompare(e.actorHostname)).map(t => {
+						var e, o, a;
 						return {
-							actorHostname: e.actorHostname,
+							actorHostname: t.actorHostname,
 							actions: {
-								actions: null !== (i = null === (o = null === (t = e.actions) || void 0 === t ? void 0 : t.actions) || void 0 === o ? void 0 : o.sort((e, t) => e.name.localeCompare(t.name))) && void 0 !== i ? i : []
+								actions: null !== (a = null === (o = null === (e = t.actions) || void 0 === e ? void 0 : e.actions) || void 0 === o ? void 0 : o.sort((t, e) => t.name.localeCompare(e.name))) && void 0 !== a ? a : []
 							}
 						}
 					}), this.sortedContextActions
 				}
-				getActor(e) {
-					return this.runtime.getActorRef(e)
+				getActor(t) {
+					return this.runtime.getActorRef(t)
 				}
 				unloadSubreddit() {
-					this.subActors.forEach(e => {
-						this.runtime.unbind(new v(e.hostname))
+					this.subActors.forEach(t => {
+						this.runtime.unbind(new v(t.hostname))
 					})
 				}
-				loadActor(e) {
-					const t = e.hostname.split("."),
+				loadActor(t) {
+					const e = t.hostname.split("."),
 						o = {
-							"devvit-installation": a.Q.fromPartial({
-								values: [t[0]]
+							"devvit-installation": i.T.fromPartial({
+								values: [e[0]]
 							}),
-							"devvit-actor": a.Q.fromPartial({
-								values: [t[2]]
+							"devvit-actor": i.T.fromPartial({
+								values: [e[2]]
 							})
 						};
-					this.runtime.bindRemoteActor(e.provides, e.hostname, this.gatewayUrl, o)
+					this.runtime.bindRemoteActor(t.provides, t.hostname, this.gatewayUrl, o)
 				}
 				reloadSubreddit() {
-					this.unloadSubreddit(), this.subActors.forEach(e => this.loadActor(e))
+					this.unloadSubreddit(), this.subActors.forEach(t => this.loadActor(t))
 				}
-				debugLog(e) {
+				debugLog(t) {
 					if (this.debugLogging) {
-						const t = e();
-						"string" == typeof t ? console.log(t) : console.log.apply(null, t)
+						const e = t();
+						"string" == typeof e ? console.log(e) : console.log.apply(null, e)
 					}
 				}
 			};
-			t.a = p
+			e.a = h
 		},
-		"./src/reddit/components/GlobalModalContainer/registry.ts": function(e, t, o) {
+		"./src/reddit/components/GlobalModalContainer/registry.ts": function(t, e, o) {
 			"use strict";
-			o.d(t, "b", (function() {
+			o.d(e, "b", (function() {
 				return d
-			})), o.d(t, "a", (function() {
-				return s
+			})), o.d(e, "a", (function() {
+				return n
 			}));
-			const i = {},
-				a = () => null;
+			const a = {},
+				i = () => null;
 
-			function d(e, t) {
-				if (e in i) throw new Error(`Modal with id ${e} already registered!`);
-				i[e] = t
+			function d(t, e) {
+				if (t in a) throw new Error(`Modal with id ${t} already registered!`);
+				a[t] = e
 			}
 
-			function s(e) {
-				return e && e in i ? i[e] : a
+			function n(t) {
+				return t && t in a ? a[t] : i
 			}
 		},
-		"./src/reddit/reducers/features/devPlatform/index.ts": function(e, t, o) {
+		"./src/reddit/reducers/features/devPlatform/index.ts": function(t, e, o) {
 			"use strict";
-			var i = o("./node_modules/redux/es/redux.js"),
-				a = o("./src/lib/initializeClient/installReducer.ts"),
+			var a = o("./node_modules/redux/es/redux.js"),
+				i = o("./src/lib/initializeClient/installReducer.ts"),
 				d = o("./src/devPlatform/constants.ts");
-			Object(a.a)({
+			Object(i.a)({
 				features: {
-					devPlatform: l
+					devPlatform: m
 				}
 			});
-			var s = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
-					t = arguments.length > 1 ? arguments[1] : void 0;
-				const o = t.payload;
-				switch (t.type) {
-					case d.e:
+			var n = function() {
+				let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
+					e = arguments.length > 1 ? arguments[1] : void 0;
+				const o = e.payload;
+				return e.type === d.e ? o.form : t
+			};
+			Object(i.a)({
+				features: {
+					devPlatform: m
+				}
+			});
+			var r = function() {
+					let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
+						e = arguments.length > 1 ? arguments[1] : void 0;
+					const o = e.payload;
+					return e.type === d.e ? o.onSubmit : t
+				},
+				s = Object(a.c)({
+					form: n,
+					onSubmit: r
+				});
+			Object(i.a)({
+				features: {
+					devPlatform: m
+				}
+			});
+			var l = function() {
+				let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
+					e = arguments.length > 1 ? arguments[1] : void 0;
+				const o = e.payload;
+				switch (e.type) {
+					case d.f:
 						return o.action;
 					default:
-						return e
+						return t
 				}
 			};
-			var r = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
-						t = arguments.length > 1 ? arguments[1] : void 0;
-					const o = t.payload;
-					switch (t.type) {
-						case d.e:
+			var c = function() {
+					let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
+						e = arguments.length > 1 ? arguments[1] : void 0;
+					const o = e.payload;
+					switch (e.type) {
+						case d.f:
 							return o.onAction;
 						default:
-							return e
+							return t
 					}
 				},
-				n = Object(i.c)({
-					action: s,
-					onAction: r
+				u = Object(a.c)({
+					action: l,
+					onAction: c
 				}),
-				l = t.a = Object(i.c)({
-					userInputModal: n
+				m = e.a = Object(a.c)({
+					formModal: s,
+					userInputModal: u
 				})
 		},
-		"ignored /drone/src/node_modules/cron-parser/lib fs": function(e, t) {}
+		"ignored /drone/src/node_modules/cron-parser/lib fs": function(t, e) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.c4f1397643e699a12453.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.c5a08559b28fdd46ccd9.js.map

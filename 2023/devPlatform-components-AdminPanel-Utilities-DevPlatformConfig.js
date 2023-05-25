@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/devPlatform-components-AdminPanel-Utilities-DevPlatformConfig.fc7b63e8e773349d13d3.js
-// Retrieved at 5/24/2023, 11:50:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/devPlatform-components-AdminPanel-Utilities-DevPlatformConfig.d683077eacb7fa25e444.js
+// Retrieved at 5/25/2023, 11:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["devPlatform-components-AdminPanel-Utilities-DevPlatformConfig"], {
 		"./src/devPlatform/components/AdminPanel/Utilities/DevPlatformConfig/index.tsx": function(t, e, a) {
@@ -96,17 +96,20 @@
 				return i
 			})), a.d(e, "e", (function() {
 				return n
-			})), a.d(e, "a", (function() {
+			})), a.d(e, "f", (function() {
 				return r
+			})), a.d(e, "a", (function() {
+				return l
 			}));
 			const o = "devvit-gateway-url",
 				s = "devvit-mock-metadata",
 				i = "devvit-debug-logging",
-				n = "DEV_PLAT__OPEN_USER_INPUT_MODAL";
-			var r;
+				n = "DEV_PLAT__OPEN_FORM_MODAL",
+				r = "DEV_PLAT__OPEN_USER_INPUT_MODAL";
+			var l;
 			! function(t) {
 				t[t.POST = 0] = "POST", t[t.COMMENT = 1] = "COMMENT", t[t.SUBREDDIT = 2] = "SUBREDDIT", t[t.UNRECOGNIZED = -1] = "UNRECOGNIZED"
-			}(r || (r = {}))
+			}(l || (l = {}))
 		},
 		"./src/devPlatform/singleton/runtime.ts": function(t, e, a) {
 			"use strict";
@@ -214,10 +217,10 @@
 				loadActor(t) {
 					const e = t.hostname.split("."),
 						a = {
-							"devvit-installation": s.Q.fromPartial({
+							"devvit-installation": s.T.fromPartial({
 								values: [e[0]]
 							}),
-							"devvit-actor": s.Q.fromPartial({
+							"devvit-actor": s.T.fromPartial({
 								values: [e[2]]
 							})
 						};
@@ -238,4 +241,4 @@
 		"ignored /drone/src/node_modules/cron-parser/lib fs": function(t, e) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/devPlatform-components-AdminPanel-Utilities-DevPlatformConfig.fc7b63e8e773349d13d3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/devPlatform-components-AdminPanel-Utilities-DevPlatformConfig.d683077eacb7fa25e444.js.map

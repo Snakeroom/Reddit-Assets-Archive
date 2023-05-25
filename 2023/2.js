@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/2.3de82649f71f6910dc40.js
-// Retrieved at 5/24/2023, 11:50:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/2.ef0a0a9052abe4e0e1af.js
+// Retrieved at 5/25/2023, 11:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[2], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -10,80 +10,66 @@
 				return s(e) + t
 			}
 		},
-		"./src/devPlatform/components/ConfigFormRenderer/header/index.m.less": function(e, t, n) {
-			e.exports = {
-				ConfigFormHeaderWrapper: "PqiKC5y3MtpOWAIJA2M56",
-				configFormHeaderWrapper: "PqiKC5y3MtpOWAIJA2M56",
-				Close: "_1TlzzDiOrfvW2fVh0tHECm",
-				close: "_1TlzzDiOrfvW2fVh0tHECm",
-				backButton: "_1zXy5VOV6LnR1Ha0Y7yTtF"
-			}
-		},
-		"./src/devPlatform/components/ConfigFormRenderer/index.m.less": function(e, t, n) {
-			e.exports = {
-				Wrapper: "LE17otPrEaIC4mTQHgpuk",
-				wrapper: "LE17otPrEaIC4mTQHgpuk",
-				Component: "_1LWJ0MrQU0wvwf9WsmYluK",
-				component: "_1LWJ0MrQU0wvwf9WsmYluK",
-				ConfigFormRendererWrapper: "_1T3gVE7EY08IWN6ZTM8Rzw",
-				configFormRendererWrapper: "_1T3gVE7EY08IWN6ZTM8Rzw",
-				TextWrapper: "_2D9Yj77y8eVlppJvyYCB32",
-				textWrapper: "_2D9Yj77y8eVlppJvyYCB32",
-				ConfigFormRow: "_1FQy9rv60ba9iVg2Pj940w",
-				configFormRow: "_1FQy9rv60ba9iVg2Pj940w",
-				ConfigFormStringRow: "mi382vZStoG3cwZMxklG2",
-				configFormStringRow: "mi382vZStoG3cwZMxklG2",
-				ConfigFormFooterWrapper: "_1uaFfE8oT-yzuDIV8qeU9J",
-				configFormFooterWrapper: "_1uaFfE8oT-yzuDIV8qeU9J",
-				NumberInputWrapper: "_2a5qiX925BSbyxyB6DvA0T",
-				numberInputWrapper: "_2a5qiX925BSbyxyB6DvA0T"
-			}
-		},
-		"./src/devPlatform/components/UserInputModal/index.tsx": function(e, t, n) {
+		"./src/devPlatform/components/FormModal/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t);
 			var s = n("./node_modules/react/index.js"),
 				a = n.n(s),
-				r = n("./node_modules/react-redux/es/index.js"),
-				o = n("./node_modules/reselect/es/index.js"),
-				i = n("./src/higherOrderComponents/asModal/index.tsx"),
-				l = n("./src/devPlatform/components/UserInputModal/modals.ts"),
-				c = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./node_modules/fbt/lib/FbtPublic.js")),
-				d = n("./node_modules/@devvit/protos/index.js"),
+				l = n("./node_modules/react-redux/es/index.js"),
+				i = n("./node_modules/reselect/es/index.js"),
+				o = n("./src/higherOrderComponents/asModal/index.tsx"),
+				r = n("./src/devPlatform/components/FormModal/modals.ts"),
+				d = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./node_modules/fbt/lib/FbtPublic.js")),
+				c = n("./node_modules/@devvit/protos/index.js"),
 				u = n("./src/lib/lessComponent.tsx"),
 				p = n("./src/reddit/controls/Button/index.tsx"),
-				m = n("./src/reddit/controls/Input/index.tsx"),
-				h = n("./src/reddit/controls/NumberInput/index.tsx"),
+				m = n("./src/reddit/controls/DropdownSelector/index.tsx"),
+				h = n("./src/reddit/controls/Input/index.tsx"),
+				f = n("./src/reddit/controls/NumberInput/index.tsx"),
 				v = n("./src/reddit/controls/ToggleSwitch/index.tsx"),
-				f = n("./src/reddit/icons/svgs/Close/index.tsx"),
-				x = n("./src/devPlatform/components/ConfigFormRenderer/header/index.m.less"),
-				g = n.n(x);
-			const b = u.a.div("ConfigFormHeaderWrapper", g.a),
-				C = u.a.wrapped(f.a, "Close", g.a);
-
-			function E(e) {
-				const {
-					title: t,
-					onCloseClick: n
-				} = e;
-				return a.a.createElement(b, null, t, a.a.createElement(C, {
-					onClick: n
-				}))
-			}
-			var w = n("./src/devPlatform/components/ConfigFormRenderer/index.m.less"),
-				k = n.n(w);
-			const y = u.a.div("Wrapper", k.a),
-				N = u.a.div("ConfigFormRendererWrapper", k.a),
-				_ = u.a.p("TextWrapper", k.a),
-				O = u.a.div("ConfigFormRow", k.a),
-				I = u.a.div("ConfigFormStringRow", k.a),
-				R = u.a.div("NumberInputWrapper", k.a),
-				j = u.a.div("ConfigFormFooterWrapper", k.a);
-			class M extends a.a.Component {
+				g = n("./src/devPlatform/components/FormRenderer/index.m.less"),
+				x = n.n(g);
+			const b = u.a.div("FormFooterWrapper", x.a),
+				C = u.a.div("FormHeaderWrapper", x.a),
+				E = u.a.div("FormRendererWrapper", x.a),
+				I = u.a.div("FormRow", x.a),
+				O = u.a.div("FormStringRow", x.a),
+				w = u.a.div("GroupField", x.a),
+				_ = u.a.label("GroupFieldLabel", x.a),
+				N = u.a.div("GroupFieldsContainer", x.a),
+				S = u.a.div("HelpText", x.a),
+				k = u.a.div("LabelAndHelpTextWrapper", x.a),
+				T = u.a.div("NumberInputWrapper", x.a),
+				y = u.a.div("SelectionRow", x.a),
+				R = u.a.p("TextWrapper", x.a),
+				F = u.a.div("Wrapper", x.a);
+			class D extends a.a.Component {
 				constructor(e) {
 					super(e), this.state = {
-						values: e.configForm.fields.reduce((e, t) => (e.set(t.key, JSON.parse(t.response || '""')), e), new Map)
+						values: this.getDefaultValues(e.form.fields)
 					}
+				}
+				getDefaultValues(e) {
+					var t, n, s, a, l, i, o, r;
+					let d = new Map;
+					for (const u of e) switch (u.fieldType) {
+						case c.p.STRING:
+						case c.p.PARAGRAPH:
+							d.set(u.fieldId, null === (t = u.defaultValue) || void 0 === t ? void 0 : t.stringValue);
+							break;
+						case c.p.NUMBER:
+							d.set(u.fieldId, null === (n = u.defaultValue) || void 0 === n ? void 0 : n.numberValue);
+							break;
+						case c.p.BOOLEAN:
+							d.set(u.fieldId, null === (s = u.defaultValue) || void 0 === s ? void 0 : s.boolValue);
+							break;
+						case c.p.SELECTION:
+							d.set(u.fieldId, null === (l = null === (a = u.defaultValue) || void 0 === a ? void 0 : a.selectionValue) || void 0 === l ? void 0 : l.values);
+							break;
+						case c.p.GROUP:
+							d = new Map([...d, ...this.getDefaultValues(null !== (r = null === (o = null === (i = u.fieldConfig) || void 0 === i ? void 0 : i.groupConfig) || void 0 === o ? void 0 : o.fields) && void 0 !== r ? r : [])])
+					}
+					return d
 				}
 				updateValue(e, t) {
 					this.setState(n => {
@@ -95,91 +81,212 @@
 						}
 					})
 				}
+				getMissingRequiredFields(e) {
+					var t, n, s;
+					let a = [];
+					for (const l of e)
+						if (l.required)
+							if (l.fieldType === c.p.GROUP) a = [...a, ...this.getMissingRequiredFields(null !== (s = null === (n = null === (t = l.fieldConfig) || void 0 === t ? void 0 : t.groupConfig) || void 0 === n ? void 0 : n.fields) && void 0 !== s ? s : [])];
+							else if (l.fieldType === c.p.SELECTION) {
+						const e = this.state.values.get(l.fieldId);
+						null != e && 0 !== e.length || a.push(l.fieldId)
+					} else {
+						const e = this.state.values.get(l.fieldId);
+						null != e && "" !== e || a.push(l.fieldId)
+					}
+					return a
+				}
+				buildResults(e) {
+					var t, n, s, a, l;
+					let i = {};
+					for (const o of e) switch (o.fieldType !== c.p.GROUP && (i[o.fieldId] = c.q.fromJSON({
+						fieldType: o.fieldType
+					})), Object(c.hb)(o.fieldType)) {
+						case c.p.STRING:
+						case c.p.PARAGRAPH:
+							i[o.fieldId].stringValue = this.state.values.get(o.fieldId);
+							break;
+						case c.p.NUMBER:
+							i[o.fieldId].numberValue = null !== (t = this.state.values.get(o.fieldId)) && void 0 !== t ? t : 0;
+							break;
+						case c.p.BOOLEAN:
+							i[o.fieldId].boolValue = Boolean(this.state.values.get(o.fieldId));
+							break;
+						case c.p.SELECTION:
+							i[o.fieldId].selectionValue = {
+								values: null !== (n = this.state.values.get(o.fieldId)) && void 0 !== n ? n : []
+							};
+							break;
+						case c.p.GROUP:
+							i = {
+								...i,
+								...this.buildResults(null !== (l = null === (a = null === (s = o.fieldConfig) || void 0 === s ? void 0 : s.groupConfig) || void 0 === a ? void 0 : a.fields) && void 0 !== l ? l : [])
+							}
+					}
+					return i
+				}
 				onSubmit() {
-					const e = d.e.fromJSON(this.props.configForm);
-					for (const t of e.fields) t.response = JSON.stringify(this.state.values.get(t.key));
-					this.props.onSubmitClick(e)
+					const {
+						form: e
+					} = this.props, t = this.buildResults(e.fields);
+					this.props.onSubmitClick(t)
+				}
+				renderStringField(e) {
+					var t, n, s, l, i, o, r;
+					return a.a.createElement(O, {
+						key: e.fieldId
+					}, a.a.createElement("label", {
+						htmlFor: e.fieldId
+					}, e.label), a.a.createElement(h.a, {
+						id: e.fieldId,
+						disabled: e.disabled,
+						maxLength: null === (n = null === (t = e.fieldConfig) || void 0 === t ? void 0 : t.stringConfig) || void 0 === n ? void 0 : n.maxLength,
+						minLength: null === (l = null === (s = e.fieldConfig) || void 0 === s ? void 0 : s.stringConfig) || void 0 === l ? void 0 : l.minLength,
+						placeholder: null === (o = null === (i = e.fieldConfig) || void 0 === i ? void 0 : i.stringConfig) || void 0 === o ? void 0 : o.placeholder,
+						required: e.required,
+						value: null !== (r = this.state.values.get(e.fieldId)) && void 0 !== r ? r : "",
+						onChange: t => this.updateValue(e.fieldId, t.target.value)
+					}), e.helpText && a.a.createElement(S, null, e.helpText))
+				}
+				renderParagraphField(e) {
+					var t, n, s, l, i, o, r;
+					return a.a.createElement(O, {
+						key: e.fieldId
+					}, a.a.createElement("label", {
+						htmlFor: e.fieldId
+					}, e.label), a.a.createElement("textarea", {
+						id: e.fieldId,
+						disabled: e.disabled,
+						maxLength: null === (n = null === (t = e.fieldConfig) || void 0 === t ? void 0 : t.paragraphConfig) || void 0 === n ? void 0 : n.maxCharacters,
+						placeholder: null === (l = null === (s = e.fieldConfig) || void 0 === s ? void 0 : s.paragraphConfig) || void 0 === l ? void 0 : l.placeholder,
+						required: e.required,
+						rows: null === (o = null === (i = e.fieldConfig) || void 0 === i ? void 0 : i.paragraphConfig) || void 0 === o ? void 0 : o.lineHeight,
+						value: null !== (r = this.state.values.get(e.fieldId)) && void 0 !== r ? r : "",
+						onChange: t => this.updateValue(e.fieldId, t.target.value)
+					}), e.helpText && a.a.createElement(S, null, e.helpText))
+				}
+				renderNumberField(e) {
+					var t, n, s, l, i;
+					return a.a.createElement(I, {
+						key: e.fieldId
+					}, a.a.createElement(k, null, a.a.createElement("label", {
+						htmlFor: e.fieldId
+					}, e.label), e.helpText && a.a.createElement(S, null, e.helpText)), a.a.createElement(T, null, a.a.createElement(f.a, {
+						id: e.fieldId,
+						disabled: e.disabled,
+						max: null === (n = null === (t = e.fieldConfig) || void 0 === t ? void 0 : t.numberConfig) || void 0 === n ? void 0 : n.max,
+						min: null === (l = null === (s = e.fieldConfig) || void 0 === s ? void 0 : s.numberConfig) || void 0 === l ? void 0 : l.min,
+						value: null !== (i = this.state.values.get(e.fieldId)) && void 0 !== i ? i : 0,
+						onChange: t => this.updateValue(e.fieldId, t)
+					})))
+				}
+				renderBooleanField(e) {
+					var t;
+					const n = null !== (t = this.state.values.get(e.fieldId)) && void 0 !== t && t;
+					return a.a.createElement(I, {
+						key: e.fieldId
+					}, a.a.createElement(k, null, a.a.createElement("label", {
+						htmlFor: e.fieldId
+					}, e.label), e.helpText && a.a.createElement(S, null, e.helpText)), a.a.createElement(v.a, {
+						id: e.fieldId,
+						on: n,
+						onToggle: () => this.updateValue(e.fieldId, !n)
+					}))
+				}
+				renderSelectionField(e) {
+					var t, n, s;
+					const l = null !== (s = null === (n = null === (t = e.fieldConfig) || void 0 === t ? void 0 : t.selectionConfig) || void 0 === n ? void 0 : n.choices.map(t => {
+							var n;
+							return {
+								displayText: t.label,
+								value: t.value,
+								isSelected: null === (n = this.state.values.get(e.fieldId)) || void 0 === n ? void 0 : n.includes(t.value)
+							}
+						})) && void 0 !== s ? s : [],
+						i = l.filter(e => e.isSelected).map(e => e.displayText).join(", ");
+					return a.a.createElement(y, {
+						key: e.fieldId
+					}, a.a.createElement("label", {
+						htmlFor: e.fieldId
+					}, e.label), a.a.createElement(m.b, {
+						id: e.fieldId,
+						buttonClassName: x.a.selectionButton,
+						disabled: e.disabled,
+						displayText: i,
+						name: e.fieldId,
+						options: l,
+						showSelectedCheckmark: !0,
+						onSelect: t => {
+							var n, s, a;
+							if (null === (s = null === (n = e.fieldConfig) || void 0 === n ? void 0 : n.selectionConfig) || void 0 === s ? void 0 : s.multiSelect) {
+								const n = null !== (a = this.state.values.get(e.fieldId)) && void 0 !== a ? a : [];
+								return n.indexOf(t.value) < 0 ? n.push(t.value) : n.splice(n.indexOf(t.value), 1), void this.updateValue(e.fieldId, n)
+							}
+							this.updateValue(e.fieldId, [t.value])
+						}
+					}), e.helpText && a.a.createElement(S, null, e.helpText))
+				}
+				renderGroupField(e) {
+					var t, n, s;
+					return a.a.createElement(w, {
+						key: e.fieldId
+					}, a.a.createElement(k, null, a.a.createElement(_, null, e.label), e.helpText && a.a.createElement(S, null, e.helpText)), a.a.createElement(N, null, this.renderFields(null !== (s = null === (n = null === (t = e.fieldConfig) || void 0 === t ? void 0 : t.groupConfig) || void 0 === n ? void 0 : n.fields) && void 0 !== s ? s : [])))
+				}
+				renderFields(e) {
+					const t = [];
+					for (const n of e) switch (Object(c.hb)(n.fieldType)) {
+						case c.p.STRING:
+							t.push(this.renderStringField(n));
+							break;
+						case c.p.PARAGRAPH:
+							t.push(this.renderParagraphField(n));
+							break;
+						case c.p.NUMBER:
+							t.push(this.renderNumberField(n));
+							break;
+						case c.p.BOOLEAN:
+							t.push(this.renderBooleanField(n));
+							break;
+						case c.p.SELECTION:
+							t.push(this.renderSelectionField(n));
+							break;
+						case c.p.GROUP:
+							t.push(this.renderGroupField(n))
+					}
+					return t
 				}
 				render() {
-					var e, t, n, s;
+					var e, t;
 					const {
-						title: r,
-						description: o,
-						configForm: i,
-						onCloseClick: l
-					} = this.props, u = [];
-					for (const c of i.fields) switch (Object(d.cb)(c.fieldType)) {
-						case d.d.STRING:
-							u.push(a.a.createElement(I, {
-								key: c.key
-							}, a.a.createElement("label", {
-								htmlFor: c.key
-							}, c.prompt), a.a.createElement(m.a, {
-								id: c.key,
-								value: null !== (e = this.state.values.get(c.key)) && void 0 !== e ? e : "",
-								onChange: e => this.updateValue(c.key, e.target.value)
-							})));
-							break;
-						case d.d.PARAGRAPH:
-							u.push(a.a.createElement(I, {
-								key: c.key
-							}, a.a.createElement("label", {
-								htmlFor: c.key
-							}, c.prompt), a.a.createElement("textarea", {
-								id: c.key,
-								onChange: e => this.updateValue(c.key, e.target.value),
-								value: null !== (t = this.state.values.get(c.key)) && void 0 !== t ? t : ""
-							})));
-							break;
-						case d.d.NUMBER:
-							u.push(a.a.createElement(O, {
-								key: c.key
-							}, a.a.createElement("label", {
-								htmlFor: c.key
-							}, c.prompt), a.a.createElement(R, null, a.a.createElement(h.a, {
-								id: c.key,
-								step: 1,
-								onChange: e => this.updateValue(c.key, e || 0),
-								value: null !== (n = this.state.values.get(c.key)) && void 0 !== n ? n : 0
-							}))));
-							break;
-						case d.d.BOOLEAN:
-							const r = null !== (s = this.state.values.get(c.key)) && void 0 !== s && s;
-							u.push(a.a.createElement(O, {
-								key: c.key
-							}, a.a.createElement("label", {
-								htmlFor: c.key
-							}, c.prompt), a.a.createElement(v.a, {
-								id: c.key,
-								on: r,
-								onToggle: () => this.updateValue(c.key, !r)
-							})));
-							break;
-						case d.d.UNRECOGNIZED:
-					}
-					return a.a.createElement(y, null, a.a.createElement(N, null, a.a.createElement(E, {
-						title: r,
-						onCloseClick: l
-					}), a.a.createElement(_, null, o), u, a.a.createElement(j, null, a.a.createElement(p.t, {
+						form: n,
+						onCloseClick: s
+					} = this.props, l = this.getMissingRequiredFields(n.fields);
+					return a.a.createElement(F, null, a.a.createElement(E, null, n.title && a.a.createElement(C, null, n.title), n.shortDescription && a.a.createElement(R, null, n.shortDescription), this.renderFields(n.fields), a.a.createElement(b, null, a.a.createElement(p.t, {
+						priority: p.c.Secondary,
+						onClick: s
+					}, null !== (e = n.cancelLabel) && void 0 !== e ? e : d.fbt._("Cancel", null, {
+						hk: "370pdF"
+					})), a.a.createElement(p.t, {
+						disabled: l.length > 0,
 						onClick: () => this.onSubmit()
-					}, c.fbt._("Ok", null, {
+					}, null !== (t = n.acceptLabel) && void 0 !== t ? t : d.fbt._("Ok", null, {
 						hk: "2Giu9U"
 					})))))
 				}
 			}
-			var T = M;
-			const F = Object(o.c)({});
-			class S extends a.a.Component {
+			var j = D;
+			const M = Object(i.c)({});
+			class L extends a.a.Component {
 				constructor() {
 					super(...arguments), this.handleEscapeKey = e => {
 						const {
-							closeUserInputModal: t
+							closeFormModal: t
 						} = this.props;
 						if ("Escape" === e.key) return t()
 					}, this.onSubmitClick = e => {
 						const {
-							onAction: t,
-							closeUserInputModal: n
+							onSubmit: t,
+							closeFormModal: n
 						} = this.props;
 						t(e), n()
 					}
@@ -192,35 +299,29 @@
 				}
 				render() {
 					const {
-						action: {
-							name: e,
-							description: t,
-							userInput: n
-						},
-						closeUserInputModal: s
+						form: e,
+						closeFormModal: t
 					} = this.props;
-					return a.a.createElement(T, {
-						title: e,
-						description: t,
-						configForm: n,
+					return a.a.createElement(j, {
+						form: e,
 						onSubmitClick: this.onSubmitClick,
-						onCloseClick: s
+						onCloseClick: t
 					})
 				}
 			}
-			var D = Object(r.b)(F, e => ({
-					closeUserInputModal: () => e(Object(l.a)())
-				}))(S),
-				W = n("./src/lib/initializeClient/installReducer.ts"),
-				A = n("./src/reddit/reducers/features/devPlatform/index.ts");
-			Object(W.a)({
+			var P = Object(l.b)(M, e => ({
+					closeFormModal: () => e(Object(r.a)())
+				}))(L),
+				B = n("./src/lib/initializeClient/installReducer.ts"),
+				V = n("./src/reddit/reducers/features/devPlatform/index.ts");
+			Object(B.a)({
 				features: {
-					devPlatform: A.a
+					devPlatform: V.a
 				}
 			});
 
-			function P() {
-				return (P = Object.assign || function(e) {
+			function A() {
+				return (A = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -228,21 +329,225 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const B = Object(o.c)({
-					action: e => e.features.devPlatform.userInputModal.action,
-					onAction: e => e.features.devPlatform.userInputModal.onAction
+			const W = Object(i.c)({
+					form: e => e.features.devPlatform.formModal.form,
+					onSubmit: e => e.features.devPlatform.formModal.onSubmit
 				}),
-				V = Object(r.b)(B, e => ({
-					closeUserInputModal: () => e(Object(l.a)())
+				U = Object(l.b)(W, e => ({
+					closeFormModal: () => e(Object(r.a)())
 				})),
-				L = Object(i.a)(e => e.action && e.onAction ? a.a.createElement(D, {
-					action: e.action,
-					onAction: e.onAction
+				H = Object(o.a)(e => e.form && e.onSubmit ? a.a.createElement(P, {
+					form: e.form,
+					onSubmit: e.onSubmit
 				}) : null);
-			t.default = V(e => a.a.createElement(L, P({}, e, {
+			t.default = U(e => a.a.createElement(H, A({}, e, {
 				withOverlay: !0,
-				onOverlayClick: e.closeUserInputModal
+				onOverlayClick: e.closeFormModal
 			})))
+		},
+		"./src/devPlatform/components/FormRenderer/index.m.less": function(e, t, n) {
+			e.exports = {
+				Wrapper: "_1pmZCsgMzk3C0_3d7XAeqq",
+				wrapper: "_1pmZCsgMzk3C0_3d7XAeqq",
+				Component: "GQ5XNmLj1AF2HQwU_S19t",
+				component: "GQ5XNmLj1AF2HQwU_S19t",
+				FormRendererWrapper: "_3BIn2_SsLrN4AMWbH03VTG",
+				formRendererWrapper: "_3BIn2_SsLrN4AMWbH03VTG",
+				TextWrapper: "_2lolP0j-D8DdsnX230MvTS",
+				textWrapper: "_2lolP0j-D8DdsnX230MvTS",
+				FormRow: "_3KJvZkfL3VZCEZZc3EJBWS",
+				formRow: "_3KJvZkfL3VZCEZZc3EJBWS",
+				FormStringRow: "_1lzX-VJh6G-8QcsP2Wjxl6",
+				formStringRow: "_1lzX-VJh6G-8QcsP2Wjxl6",
+				SelectionRow: "GevQ136mVAtNCEyV9SQba",
+				selectionRow: "GevQ136mVAtNCEyV9SQba",
+				selectionButton: "_3XO_5uaI_Q7IwEshUYoj1U",
+				FormHeaderWrapper: "_2K2qTcF_Clcd_TNSLWCyB7",
+				formHeaderWrapper: "_2K2qTcF_Clcd_TNSLWCyB7",
+				FormFooterWrapper: "_3Uf6UMd9LFaJ-fZ77kOKnJ",
+				formFooterWrapper: "_3Uf6UMd9LFaJ-fZ77kOKnJ",
+				NumberInputWrapper: "_3I9-VV1NHnibHEdcYcRQrM",
+				numberInputWrapper: "_3I9-VV1NHnibHEdcYcRQrM",
+				GroupField: "_2SgsEIr4QmiX4jVoM0TVZz",
+				groupField: "_2SgsEIr4QmiX4jVoM0TVZz",
+				GroupFieldLabel: "_2hPhlETItut6A0PPiomSBz",
+				groupFieldLabel: "_2hPhlETItut6A0PPiomSBz",
+				GroupFieldsContainer: "_37vfJDECYU3d7YbiaTlU05",
+				groupFieldsContainer: "_37vfJDECYU3d7YbiaTlU05",
+				HelpText: "_2jq2HpSLJGIxF0DevZa6WX",
+				helpText: "_2jq2HpSLJGIxF0DevZa6WX",
+				LabelAndHelpTextWrapper: "_3ktRBCWJhiEUACPOme-Jml",
+				labelAndHelpTextWrapper: "_3ktRBCWJhiEUACPOme-Jml"
+			}
+		},
+		"./src/reddit/controls/DropdownSelector/index.m.less": function(e, t, n) {
+			e.exports = {
+				dropdownMenu: "_1PLoXiZH4WKzHTfmYIt34X",
+				selector: "apk_M-7ks6NcaiMN8cotM",
+				selectorContent: "Ot99igbaJ5id3P1tw6wow",
+				disabled: "FVIZ8GUq5tMGZlJ7y28ll",
+				compact: "_1qaMsHCBrTmejbIUPjsRVI",
+				caretDown: "_2i4dyr-iTBOmkZ4fL_M70P",
+				topics: "qWs3cMcSjquK-OXl-9jH5",
+				loadingIcon: "_3WxhmmhQ3cYt1J7mtfcoKG",
+				menuItems: "_3ssvFhIB2HAXL261eWf7G0",
+				isClosed: "_3sZzbLftdYnJNnJ7m7ImmO",
+				menuOption: "_1Qm1phX3yfiJHnjgi_O_9V",
+				buttonIcon: "_1J0h3Uv7HEaVZiJLcCUlQw"
+			}
+		},
+		"./src/reddit/controls/DropdownSelector/index.tsx": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return p
+			}));
+			var s = n("./node_modules/react/index.js"),
+				a = n.n(s),
+				l = n("./src/reddit/controls/DropdownSelector/index.m.less"),
+				i = n.n(l),
+				o = n("./src/lib/classNames/index.ts"),
+				r = n("./src/reddit/controls/Dropdown/Row.tsx"),
+				d = n("./src/reddit/controls/LoadingIcon/index.tsx"),
+				c = n("./src/reddit/icons/fonts/index.tsx");
+			const u = e => {
+				e.preventDefault()
+			};
+			class p extends a.a.Component {
+				constructor() {
+					super(...arguments), this.dropdownButton = a.a.createRef(), this.menuItems = a.a.createRef(), this.containerRef = a.a.createRef(), this.state = {
+						isOpen: !1
+					}, this.handleDocumentClick = e => {
+						this.containerRef && this.containerRef.current && (this.containerRef.current.contains(e.target) || this.setState({
+							isOpen: !1
+						}))
+					}, this.onSelectOption = (e, t, n) => {
+						const {
+							onSelect: s
+						} = this.props;
+						e.preventDefault(), e.stopPropagation(), e.nativeEvent.stopPropagation(), s(t), n && this.dropdownButton.current && this.dropdownButton.current.focus(), this.setState({
+							isOpen: !1
+						})
+					}, this.onOptionClick = (e, t) => {
+						this.onSelectOption(e, t)
+					}, this.handleDropdownClick = e => {
+						e.preventDefault(), e.stopPropagation(), this.props.onOpen && this.props.onOpen(), this.setState({
+							isOpen: !this.state.isOpen
+						})
+					}, this.handleDropdownBlur = e => {
+						let t = !1;
+						if (e.relatedTarget === this.dropdownButton.current) t = !0;
+						else {
+							if (!this.menuItems.current) return;
+							const n = this.menuItems.current.getElementsByClassName(i.a.menuOption);
+							for (let s = 0; s < n.length; s++) e.relatedTarget === n[s] && (t = !0)
+						}
+						this.setState({
+							isOpen: t
+						})
+					}, this.handleDropdownKeyDown = e => {
+						if (!this.state.isOpen && [40, 32, 13].includes(e.keyCode)) return e.preventDefault(), void this.setState({
+							isOpen: !0
+						}, this.focusOnFirstOption);
+						40 === e.keyCode && (e.preventDefault(), this.focusOnFirstOption()), 27 === e.keyCode && this.state.isOpen && (e.stopPropagation(), e.nativeEvent.stopPropagation(), e.nativeEvent.stopImmediatePropagation(), this.setState({
+							isOpen: !1
+						}))
+					}, this.handleOptionKeyDown = (e, t) => {
+						if (32 === e.keyCode || 13 === e.keyCode) this.onSelectOption(e, t, !0);
+						else if (38 === e.keyCode || 40 === e.keyCode) {
+							if (e.preventDefault(), !this.menuItems.current) return;
+							const t = this.menuItems.current.getElementsByClassName(i.a.menuOption);
+							for (let n = 0; n < t.length; n++) t[n] === e.target && (38 === e.keyCode && n > 0 && t[n - 1].focus(), 40 === e.keyCode && n < t.length - 1 && t[n + 1].focus())
+						}
+					}
+				}
+				componentDidMount() {
+					document.body.addEventListener("click", this.handleDocumentClick, !1)
+				}
+				componentWillUnmount() {
+					document.body.removeEventListener("click", this.handleDocumentClick, !1)
+				}
+				focusOnFirstOption() {
+					if (!this.menuItems.current) return;
+					const e = this.menuItems.current.getElementsByClassName(i.a.menuOption);
+					e.length && e[0].focus()
+				}
+				getDropdownMenuItems() {
+					const {
+						options: e,
+						showSelectedCheckmark: t,
+						isTopicsStyle: n,
+						menuOptionClassName: s
+					} = this.props;
+					return e.map((e, l) => a.a.createElement(r.b, {
+						key: l + e.displayText,
+						className: Object(o.a)(i.a.menuOption, s, {
+							[i.a.topics]: n
+						}),
+						noIcon: Boolean(e.icon),
+						onKeydown: t => this.handleOptionKeyDown(t, e),
+						onMouseDown: t => this.onOptionClick(t, e),
+						onBlur: this.handleDropdownBlur,
+						showSelectedCheckmark: t,
+						isSelected: void 0 !== e.isSelected ? e.isSelected : void 0,
+						isTopicsStyle: n
+					}, e.icon && e.icon, e.displayText))
+				}
+				render() {
+					const {
+						buttonClassName: e,
+						className: t,
+						displayText: n,
+						isCompactStyle: s,
+						isTopicsStyle: l,
+						menuItemsClassName: r,
+						name: p,
+						isSaving: m,
+						buttonIcon: h,
+						disabled: f
+					} = this.props, {
+						isOpen: v
+					} = this.state;
+					return a.a.createElement("div", {
+						ref: this.containerRef,
+						id: this.props.id,
+						className: Object(o.a)(i.a.dropdownMenu, t, {
+							[i.a.topics]: l
+						})
+					}, a.a.createElement("button", {
+						onClick: f ? void 0 : this.handleDropdownClick,
+						className: Object(o.a)(e, i.a.selector, {
+							[i.a.compact]: s
+						}, {
+							[i.a.topics]: l
+						}, {
+							[i.a.disabled]: f
+						}),
+						name: p,
+						role: "menu",
+						ref: this.dropdownButton,
+						onBlur: f ? void 0 : this.handleDropdownBlur,
+						onKeyDown: f ? void 0 : this.handleDropdownKeyDown
+					}, a.a.createElement("span", {
+						className: i.a.selectorContent,
+						tabIndex: -1
+					}, h && a.a.createElement("span", {
+						className: i.a.buttonIcon
+					}, h), n), f ? null : m ? a.a.createElement(d.a, {
+						sizePx: 8,
+						className: i.a.loadingIcon
+					}) : a.a.createElement(c.a, {
+						name: "caret_down"
+					})), a.a.createElement("div", {
+						className: Object(o.a)(i.a.menuItems, r, {
+							[i.a.topics]: l,
+							[i.a.isClosed]: !v
+						}),
+						onMouseDown: u,
+						ref: this.menuItems
+					}, !f && v && this.getDropdownMenuItems()))
+				}
+			}
+			t.b = p
 		},
 		"./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -269,48 +574,48 @@
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				a = n("./node_modules/lodash/uniqueId.js"),
-				r = n.n(a),
-				o = n("./node_modules/raf/index.js"),
-				i = n.n(o),
-				l = n("./node_modules/react/index.js"),
-				c = n.n(l),
-				d = n("./src/lib/classNames/index.ts"),
+				l = n.n(a),
+				i = n("./node_modules/raf/index.js"),
+				o = n.n(i),
+				r = n("./node_modules/react/index.js"),
+				d = n.n(r),
+				c = n("./src/lib/classNames/index.ts"),
 				u = n("./src/higherOrderComponents/asModal/index.tsx"),
 				p = n("./src/reddit/controls/Button/index.tsx"),
 				m = n("./src/reddit/layout/row/Inline/index.tsx"),
 				h = n("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
-				v = n.n(h);
-			var f = Object(u.a)(e => {
+				f = n.n(h);
+			var v = Object(u.a)(e => {
 					const {
 						children: t,
 						title: n
 					} = e;
-					return c.a.createElement("div", {
-						className: v.a.wrapper
-					}, c.a.createElement(m.a, {
-						className: v.a.titleRow
-					}, n), c.a.createElement("div", {
-						className: v.a.detailsContainer
-					}, t), c.a.createElement(m.a, {
-						className: v.a.buttonRow
-					}, c.a.createElement(p.l, {
-						className: v.a.confirmButton,
+					return d.a.createElement("div", {
+						className: f.a.wrapper
+					}, d.a.createElement(m.a, {
+						className: f.a.titleRow
+					}, n), d.a.createElement("div", {
+						className: f.a.detailsContainer
+					}, t), d.a.createElement(m.a, {
+						className: f.a.buttonRow
+					}, d.a.createElement(p.l, {
+						className: f.a.confirmButton,
 						onClick: e.onConfirmed
 					}, s.fbt._("Ok", null, {
 						hk: "2Giu9U"
 					}))))
 				}),
-				x = n("./src/reddit/controls/ErrorText/index.m.less"),
-				g = n.n(x);
-			class b extends c.a.Component {
+				g = n("./src/reddit/controls/ErrorText/index.m.less"),
+				x = n.n(g);
+			class b extends d.a.Component {
 				constructor(e) {
-					super(e), this.spanRef = c.a.createRef(), this.toggleModal = () => {
+					super(e), this.spanRef = d.a.createRef(), this.toggleModal = () => {
 						this.setState({
 							isModalOpen: !this.state.isModalOpen
 						})
 					}, this.state = {
 						textHasOverflowed: !1,
-						modalId: `ErrorTextModal--${r()()}`,
+						modalId: `ErrorTextModal--${l()()}`,
 						isModalOpen: !1
 					}
 				}
@@ -321,7 +626,7 @@
 					this.calcTextDidOverflow()
 				}
 				calcTextDidOverflow() {
-					i()(() => {
+					o()(() => {
 						const e = this.spanRef.current;
 						if (!e) return;
 						const t = e.scrollWidth > e.clientWidth;
@@ -338,22 +643,22 @@
 						errorModalTitle: a = s.fbt._("Error", null, {
 							hk: "2nPF4G"
 						}),
-						moreText: r = s.fbt._("More", null, {
+						moreText: l = s.fbt._("More", null, {
 							hk: "1bCAQ0"
 						})
 					} = this.props, {
-						textHasOverflowed: o,
-						isModalOpen: i
+						textHasOverflowed: i,
+						isModalOpen: o
 					} = this.state;
-					return c.a.createElement("div", {
-						className: Object(d.a)(g.a.wrapper, t)
-					}, c.a.createElement("span", {
-						className: g.a.description,
+					return d.a.createElement("div", {
+						className: Object(c.a)(x.a.wrapper, t)
+					}, d.a.createElement("span", {
+						className: x.a.description,
 						ref: this.spanRef
-					}, e), o && c.a.createElement("span", {
-						className: g.a.moreText,
+					}, e), i && d.a.createElement("span", {
+						className: x.a.moreText,
 						onClick: this.toggleModal
-					}, r), i && c.a.createElement(f, {
+					}, l), o && d.a.createElement(v, {
 						onConfirmed: this.toggleModal,
 						title: a
 					}, n || e))
@@ -365,17 +670,17 @@
 						errorClassName: n,
 						errorModalTitle: s,
 						fallbackMessage: a,
-						messages: r = []
-					} = e, o = r.length ? r : a ? [a] : [];
-					return o.length ? c.a.createElement("div", {
+						messages: l = []
+					} = e, i = l.length ? l : a ? [a] : [];
+					return i.length ? d.a.createElement("div", {
 						className: t
-					}, o.map((e, t) => c.a.createElement(b, {
+					}, i.map((e, t) => d.a.createElement(b, {
 						className: n,
 						errorModalTitle: s,
 						key: t
 					}, e))) : null
 				},
-				E = e => c.a.createElement(C, {
+				E = e => d.a.createElement(C, {
 					fallbackMessage: s.fbt._("Something went wrong", null, {
 						hk: "Cw1BT"
 					}),
@@ -405,22 +710,22 @@
 			n.d(t, "a", (function() {
 				return m
 			})), n.d(t, "b", (function() {
-				return v
-			})), n.d(t, "c", (function() {
 				return f
+			})), n.d(t, "c", (function() {
+				return v
 			})), n.d(t, "d", (function() {
 				return b
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./node_modules/react/index.js"),
 				a = n.n(s),
-				r = n("./src/lib/classNames/index.ts"),
-				o = n("./src/lib/lessComponent.tsx"),
-				i = n("./src/reddit/controls/ErrorText/index.tsx"),
-				l = n("./src/reddit/icons/svgs/Plus/index.tsx"),
-				c = n("./src/reddit/icons/svgs/Trash2/index.tsx"),
-				d = n("./src/reddit/controls/FormFields/index.m.less"),
-				u = n.n(d);
+				l = n("./src/lib/classNames/index.ts"),
+				i = n("./src/lib/lessComponent.tsx"),
+				o = n("./src/reddit/controls/ErrorText/index.tsx"),
+				r = n("./src/reddit/icons/svgs/Plus/index.tsx"),
+				d = n("./src/reddit/icons/svgs/Trash2/index.tsx"),
+				c = n("./src/reddit/controls/FormFields/index.m.less"),
+				u = n.n(c);
 
 			function p() {
 				return (p = Object.assign || function(e) {
@@ -431,69 +736,69 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const m = o.a.input("input", u.a),
+			const m = i.a.input("input", u.a),
 				h = e => {
 					"LABEL" === e.target.tagName && (e.target.parentElement.firstElementChild.focus(), e.stopPropagation())
-				},
-				v = e => {
-					let {
-						label: t,
-						children: n,
-						inputRef: s,
-						className: o,
-						isInvalid: i,
-						...l
-					} = e;
-					const c = void 0 !== l.value && "" !== l.value;
-					return a.a.createElement("div", {
-						className: Object(r.a)(u.a.inputWrapper, o, {
-							[u.a.mIsInvalid]: i
-						}),
-						onClick: h
-					}, a.a.createElement(m, p({
-						"aria-invalid": i,
-						innerRef: s
-					}, l)), t && a.a.createElement("label", {
-						className: Object(r.a)(u.a.label, {
-							[u.a.mHasValue]: c
-						})
-					}, t), n)
 				},
 				f = e => {
 					let {
 						label: t,
 						children: n,
 						inputRef: s,
-						isInvalid: o,
 						className: i,
-						redditStyle: l,
-						...c
+						isInvalid: o,
+						...r
 					} = e;
-					const d = void 0 !== c.value && "" !== c.value;
+					const d = void 0 !== r.value && "" !== r.value;
 					return a.a.createElement("div", {
-						className: Object(r.a)(u.a.inputMovingLabelWrapper, i, {
-							[u.a.mIsInvalid]: o,
-							[u.a.mIsRedditStyle]: l
+						className: Object(l.a)(u.a.inputWrapper, i, {
+							[u.a.mIsInvalid]: o
 						}),
 						onClick: h
 					}, a.a.createElement(m, p({
+						"aria-invalid": o,
 						innerRef: s
-					}, c)), t && a.a.createElement("label", {
-						className: Object(r.a)(u.a.label, {
+					}, r)), t && a.a.createElement("label", {
+						className: Object(l.a)(u.a.label, {
 							[u.a.mHasValue]: d
 						})
 					}, t), n)
 				},
-				x = e => a.a.createElement("div", {
-					className: Object(r.a)(u.a.addValueButton, e.className),
+				v = e => {
+					let {
+						label: t,
+						children: n,
+						inputRef: s,
+						isInvalid: i,
+						className: o,
+						redditStyle: r,
+						...d
+					} = e;
+					const c = void 0 !== d.value && "" !== d.value;
+					return a.a.createElement("div", {
+						className: Object(l.a)(u.a.inputMovingLabelWrapper, o, {
+							[u.a.mIsInvalid]: i,
+							[u.a.mIsRedditStyle]: r
+						}),
+						onClick: h
+					}, a.a.createElement(m, p({
+						innerRef: s
+					}, d)), t && a.a.createElement("label", {
+						className: Object(l.a)(u.a.label, {
+							[u.a.mHasValue]: c
+						})
+					}, t), n)
+				},
+				g = e => a.a.createElement("div", {
+					className: Object(l.a)(u.a.addValueButton, e.className),
 					onClick: e.onClick
-				}, e.text, " ", a.a.createElement(l.a, {
+				}, e.text, " ", a.a.createElement(r.a, {
 					className: u.a.plus
 				}));
-			var g;
+			var x;
 			! function(e) {
 				e[e.ADD = 0] = "ADD", e[e.REMOVE = 1] = "REMOVE"
-			}(g || (g = {}));
+			}(x || (x = {}));
 			class b extends a.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -501,7 +806,7 @@
 					}, this.addValue = () => {
 						const e = this.props.values.slice();
 						this.props.buttonOnTop ? e.unshift("") : e.push(""), this.props.onChange(e), this.props.onEvent && this.props.onEvent({
-							action: g.ADD
+							action: x.ADD
 						})
 					}, this.updateValue = (e, t) => {
 						const n = this.props.values.slice();
@@ -510,7 +815,7 @@
 						const t = this.props.values.slice(),
 							n = t[e];
 						t.splice(e, 1), this.props.onChange(t), this.props.onEvent && this.props.onEvent({
-							action: g.REMOVE,
+							action: x.REMOVE,
 							value: n,
 							index: e
 						})
@@ -535,15 +840,15 @@
 						disabled: t,
 						label: n,
 						placeholder: s,
-						errors: r = []
+						errors: l = []
 					} = this.props;
-					return e.map((e, o) => a.a.createElement(v, {
-						inputRef: e => this.setInputRef(e, o),
-						isInvalid: !!r[o],
+					return e.map((e, i) => a.a.createElement(f, {
+						inputRef: e => this.setInputRef(e, i),
+						isInvalid: !!l[i],
 						disabled: t,
 						type: "text",
 						label: n,
-						onChange: e => this.updateValue(e, o),
+						onChange: e => this.updateValue(e, i),
 						placeholder: s,
 						value: e,
 						style: {
@@ -551,12 +856,12 @@
 						}
 					}, a.a.createElement("div", {
 						className: u.a.trashContainer,
-						onClick: () => this.removeValue(o)
-					}, a.a.createElement(c.b, {
+						onClick: () => this.removeValue(i)
+					}, a.a.createElement(d.b, {
 						className: u.a.trash
-					})), !!r[o] && a.a.createElement(i.b, {
+					})), !!l[i] && a.a.createElement(o.b, {
 						className: u.a.errorText
-					}, r[o])))
+					}, l[i])))
 				}
 				render() {
 					const {
@@ -564,19 +869,19 @@
 						buttonOnTop: t,
 						values: n,
 						maxLength: s,
-						addValueText: o,
-						disabled: i
+						addValueText: i,
+						disabled: o
 					} = this.props;
 					this.focusedInput = null;
-					const l = !(!!s && n.length >= s) && !i;
+					const r = !(!!s && n.length >= s) && !o;
 					return a.a.createElement("div", {
-						className: Object(r.a)(u.a.multiInputWrapper, e)
-					}, t && l && a.a.createElement(x, {
+						className: Object(l.a)(u.a.multiInputWrapper, e)
+					}, t && r && a.a.createElement(g, {
 						onClick: this.addValue,
-						text: o
-					}), this.renderFields(), !t && l && a.a.createElement(x, {
+						text: i
+					}), this.renderFields(), !t && r && a.a.createElement(g, {
 						onClick: this.addValue,
-						text: o
+						text: i
 					}))
 				}
 			}
@@ -585,8 +890,39 @@
 			"use strict";
 			var s = n("./src/lib/lessComponent.tsx"),
 				a = n("./src/reddit/controls/Input/index.m.less"),
-				r = n.n(a);
-			t.a = s.a.input("input", r.a)
+				l = n.n(a);
+			t.a = s.a.input("input", l.a)
+		},
+		"./src/reddit/controls/LoadingIcon/index.m.less": function(e, t, n) {
+			e.exports = {
+				loadingIcon: "_3LwT7hgGcSjmJ7ng7drAuq",
+				spin: "ibDwUVR1CAykturOgqOS5",
+				mCentered: "_2qr28EeyPvBWAsPKl-KuWN"
+			}
+		},
+		"./src/reddit/controls/LoadingIcon/index.tsx": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/react/index.js"),
+				a = n.n(s),
+				l = n("./src/lib/classNames/index.ts"),
+				i = n("./src/reddit/controls/LoadingIcon/index.m.less"),
+				o = n.n(i);
+			t.a = e => {
+				let {
+					center: t,
+					className: n,
+					sizePx: s = 10
+				} = e;
+				return a.a.createElement("div", {
+					className: Object(l.a)(o.a.loadingIcon, n, {
+						[o.a.mCentered]: t
+					}),
+					style: {
+						"--sizePx": `${s}px`
+					},
+					"data-testid": "LoadingIcon"
+				})
+			}
 		},
 		"./src/reddit/controls/NumberInput/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -604,12 +940,12 @@
 			}));
 			var s = n("./node_modules/react/index.js"),
 				a = n.n(s),
-				r = n("./src/lib/classNames/index.ts"),
-				o = n("./src/reddit/controls/FormFields/index.tsx"),
-				i = n("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
-				l = n("./src/reddit/icons/svgs/ChevronUp/index.tsx"),
-				c = n("./src/reddit/controls/NumberInput/index.m.less"),
-				d = n.n(c);
+				l = n("./src/lib/classNames/index.ts"),
+				i = n("./src/reddit/controls/FormFields/index.tsx"),
+				o = n("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
+				r = n("./src/reddit/icons/svgs/ChevronUp/index.tsx"),
+				d = n("./src/reddit/controls/NumberInput/index.m.less"),
+				c = n.n(d);
 
 			function u() {
 				return (u = Object.assign || function(e) {
@@ -652,31 +988,31 @@
 						className: e,
 						id: t,
 						...n
-					} = this.props, s = t || d.a.inputId;
-					return a.a.createElement(o.b, u({}, n, {
-						className: Object(r.a)(e, d.a.numberInput),
+					} = this.props, s = t || c.a.inputId;
+					return a.a.createElement(i.b, u({}, n, {
+						className: Object(l.a)(e, c.a.numberInput),
 						id: s,
 						inputRef: this.setInputRef,
 						onChange: this.handleChangeEvent,
 						type: "number"
 					}), a.a.createElement("div", {
-						className: d.a.buttonContainer
+						className: c.a.buttonContainer
 					}, a.a.createElement("button", {
 						"aria-controls": s,
-						className: d.a.chevronBtn,
+						className: c.a.chevronBtn,
 						onClick: this.handleIncrement,
 						onMouseDown: this.focusOnInput,
 						tabIndex: -1
-					}, a.a.createElement(l.a, {
-						className: d.a.icon
+					}, a.a.createElement(r.a, {
+						className: c.a.icon
 					})), a.a.createElement("button", {
 						"aria-controls": s,
-						className: d.a.chevronBtn,
+						className: c.a.chevronBtn,
 						onClick: this.handleDecrement,
 						onMouseDown: this.focusOnInput,
 						tabIndex: -1
-					}, a.a.createElement(i.a, {
-						className: d.a.icon
+					}, a.a.createElement(o.a, {
+						className: c.a.icon
 					}))))
 				}
 			}
@@ -699,23 +1035,23 @@
 			"use strict";
 			var s = n("./node_modules/react/index.js"),
 				a = n.n(s),
-				r = n("./src/lib/classNames/index.ts"),
-				o = n("./src/reddit/controls/Button/index.tsx"),
-				i = n("./src/reddit/controls/ToggleSwitch/index.m.less"),
-				l = n.n(i);
+				l = n("./src/lib/classNames/index.ts"),
+				i = n("./src/reddit/controls/Button/index.tsx"),
+				o = n("./src/reddit/controls/ToggleSwitch/index.m.less"),
+				r = n.n(o);
 			t.a = Object(s.memo)(Object(s.forwardRef)((e, t) => {
-				const n = e.size || o.d.XS;
+				const n = e.size || i.d.XS;
 				return a.a.createElement("button", {
 					"aria-checked": e.on,
-					className: Object(r.a)(l.a.toggleSwitch, e.className, {
-						[l.a.xs]: n === o.d.XS,
-						[l.a.s]: n === o.d.S,
-						[l.a.m]: n === o.d.M,
-						[l.a.l]: n === o.d.L,
-						[l.a.xl]: n === o.d.XL,
-						[l.a.mActive]: e.on && !e.disabled || e.forceOn && e.on,
-						[l.a.mDisabled]: e.disabled,
-						[l.a.redditStyle]: e.redditStyle
+					className: Object(l.a)(r.a.toggleSwitch, e.className, {
+						[r.a.xs]: n === i.d.XS,
+						[r.a.s]: n === i.d.S,
+						[r.a.m]: n === i.d.M,
+						[r.a.l]: n === i.d.L,
+						[r.a.xl]: n === i.d.XL,
+						[r.a.mActive]: e.on && !e.disabled || e.forceOn && e.on,
+						[r.a.mDisabled]: e.disabled,
+						[r.a.redditStyle]: e.redditStyle
 					}),
 					style: e.on && !e.disabled && e.activeColorOverride ? {
 						backgroundColor: e.activeColorOverride
@@ -727,7 +1063,7 @@
 					onClick: () => !e.disabled && e.onToggle && e.onToggle(),
 					ref: t
 				}, a.a.createElement("div", {
-					className: l.a.toggleDisplay
+					className: r.a.toggleDisplay
 				}))
 			}))
 		},
@@ -784,15 +1120,15 @@
 		"./src/reddit/icons/svgs/Trash2/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return l
+				return r
 			}));
 			var s = n("./node_modules/react/index.js"),
 				a = n.n(s),
-				r = n("./src/lib/classNames/index.ts"),
-				o = n("./src/reddit/icons/svgs/Trash2/index.m.less"),
-				i = n.n(o);
-			const l = e => a.a.createElement("svg", {
-				className: Object(r.a)(i.a.icon, e.className),
+				l = n("./src/lib/classNames/index.ts"),
+				i = n("./src/reddit/icons/svgs/Trash2/index.m.less"),
+				o = n.n(i);
+			const r = e => a.a.createElement("svg", {
+				className: Object(l.a)(o.a.icon, e.className),
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg",
 				onClick: e.onClick
@@ -801,7 +1137,7 @@
 			}), a.a.createElement("path", {
 				d: "M16.5,5H3.5a.5.5,0,0,0-.5.5v12A1.5,1.5,0,0,0,4.5,19h11A1.5,1.5,0,0,0,17,17.5V5.5A.5.5,0,0,0,16.5,5ZM6.75,15.5a.75.75,0,0,1-1.5,0v-7a.75.75,0,0,1,1.5,0Zm4,0a.75.75,0,0,1-1.5,0v-7a.75.75,0,0,1,1.5,0Zm4,0a.75.75,0,0,1-1.5,0v-7a.75.75,0,0,1,1.5,0Z"
 			}));
-			t.b = l
+			t.b = r
 		},
 		"./src/reddit/layout/row/Inline/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -812,9 +1148,9 @@
 			"use strict";
 			var s = n("./src/lib/lessComponent.tsx"),
 				a = n("./src/reddit/layout/row/Inline/index.m.less"),
-				r = n.n(a);
-			t.a = s.a.div("inlineRow", r.a)
+				l = n.n(a);
+			t.a = s.a.div("inlineRow", l.a)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/2.3de82649f71f6910dc40.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/2.ef0a0a9052abe4e0e1af.js.map

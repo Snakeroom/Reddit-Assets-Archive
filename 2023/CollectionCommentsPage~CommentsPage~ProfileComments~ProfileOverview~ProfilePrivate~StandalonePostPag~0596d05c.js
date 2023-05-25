@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.1367289f47681a42c289.js
-// Retrieved at 5/24/2023, 4:20:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.5b6262cb7482f4044945.js
+// Retrieved at 5/25/2023, 11:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, s) {
@@ -123,17 +123,20 @@
 				return r
 			})), s.d(t, "e", (function() {
 				return i
-			})), s.d(t, "a", (function() {
+			})), s.d(t, "f", (function() {
 				return a
+			})), s.d(t, "a", (function() {
+				return c
 			}));
 			const o = "devvit-gateway-url",
 				n = "devvit-mock-metadata",
 				r = "devvit-debug-logging",
-				i = "DEV_PLAT__OPEN_USER_INPUT_MODAL";
-			var a;
+				i = "DEV_PLAT__OPEN_FORM_MODAL",
+				a = "DEV_PLAT__OPEN_USER_INPUT_MODAL";
+			var c;
 			! function(e) {
 				e[e.POST = 0] = "POST", e[e.COMMENT = 1] = "COMMENT", e[e.SUBREDDIT = 2] = "SUBREDDIT", e[e.UNRECOGNIZED = -1] = "UNRECOGNIZED"
-			}(a || (a = {}))
+			}(c || (c = {}))
 		},
 		"./src/higherOrderComponents/withAdClickLocation/index.tsx": function(e, t, s) {
 			"use strict";
@@ -6356,4 +6359,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.1367289f47681a42c289.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.5b6262cb7482f4044945.js.map

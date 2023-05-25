@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.95c433c6664b38e201b2.js
-// Retrieved at 5/24/2023, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.323a30ad9a8164e8dfaf.js
+// Retrieved at 5/25/2023, 11:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, n) {
@@ -123,17 +123,20 @@
 				return r
 			})), n.d(t, "e", (function() {
 				return a
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "f", (function() {
 				return i
+			})), n.d(t, "a", (function() {
+				return c
 			}));
 			const o = "devvit-gateway-url",
 				s = "devvit-mock-metadata",
 				r = "devvit-debug-logging",
-				a = "DEV_PLAT__OPEN_USER_INPUT_MODAL";
-			var i;
+				a = "DEV_PLAT__OPEN_FORM_MODAL",
+				i = "DEV_PLAT__OPEN_USER_INPUT_MODAL";
+			var c;
 			! function(e) {
 				e[e.POST = 0] = "POST", e[e.COMMENT = 1] = "COMMENT", e[e.SUBREDDIT = 2] = "SUBREDDIT", e[e.UNRECOGNIZED = -1] = "UNRECOGNIZED"
-			}(i || (i = {}))
+			}(c || (c = {}))
 		},
 		"./src/reddit/actions/economics/predictions/modTools.ts": function(e, t, n) {
 			"use strict";
@@ -1425,4 +1428,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.95c433c6664b38e201b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.323a30ad9a8164e8dfaf.js.map
