@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~shreddit-player.059146c6672150b4a69e.js
-// Retrieved at 5/25/2023, 11:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~shreddit-player.128cbe187c852f90fb58.js
+// Retrieved at 5/30/2023, 2:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~shreddit-player"], {
 		"./node_modules/@reddit/shreddit.components.shreddit-player/dist/index.js": function(e, t, i) {
@@ -1568,10 +1568,12 @@
 					window.requestAnimationFrame(() => {
 						if (this._provider) {
 							const e = this._getSavedMediaVolume();
-							if (pe(null == e ? void 0 : e.volume) && (this._provider.volume = e.volume), this._provider.autoplay && !1 === (null == e ? void 0 : e.muted)) {
-								const e = [...Et].some(e => e.muteToggledManually);
-								this._provider.muted = !e
-							} else ce(null == e ? void 0 : e.muted) || (this._provider.muted = e.muted)
+							if (pe(null == e ? void 0 : e.volume) && (this._provider.volume = e.volume), this._provider.autoplay)
+								if (!1 === (null == e ? void 0 : e.muted)) {
+									const e = [...Et].some(e => e.muteToggledManually);
+									this._provider.muted = !e
+								} else e || (this._provider.muted = !0);
+							else ce(null == e ? void 0 : e.muted) || (this._provider.muted = e.muted)
 						}
 					}), t(() => {
 						Et.delete(e), this._provider = void 0, this._providerDisposal.empty()
@@ -6530,4 +6532,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~shreddit-player.059146c6672150b4a69e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~shreddit-player.128cbe187c852f90fb58.js.map
