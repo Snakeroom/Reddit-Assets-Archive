@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.970ad73ca6ef8ae4ee16.js
-// Retrieved at 5/25/2023, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.a9cb66cfb04d21e11db2.js
+// Retrieved at 5/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -9449,7 +9449,7 @@
 						} = t;
 						var m, p;
 						const b = Object(Ce.j)(e),
-							f = !!b && !Object(he.xg)(b) && (o || b === he.ob.Community),
+							f = !!b && !Object(he.yg)(b) && (o || b === he.ob.Community),
 							{
 								adsSeenCount: h,
 								totalPostsSeenCount: g,
@@ -47892,7 +47892,7 @@
 					url: T,
 					isHovercard: P
 				} = e;
-				const N = Object(o.e)(e => !A && !!I && Object(c.e)(e));
+				const N = Object(o.e)(e => !A && !!I && Object(c.f)(e));
 				return r.a.createElement(r.a.Fragment, null, r.a.createElement(m.a, {
 					bannerBackgroundImage: t,
 					editMode: !!b,
@@ -60645,7 +60645,7 @@
 								experimentName: o.G,
 								expEventOverride: t
 							});
-							return !!(Object(o.xg)(n) ? void 0 : n)
+							return !!(Object(o.yg)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -77794,14 +77794,14 @@
 						experimentEligibilitySelector: r.a,
 						experimentName: s.pc
 					});
-					return !(!t || Object(s.xg)(t))
+					return !(!t || Object(s.yg)(t))
 				},
 				i = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
 						experimentName: s.vd
 					});
-					return !(!t || Object(s.xg)(t))
+					return !(!t || Object(s.yg)(t))
 				}
 		},
 		"./src/reddit/selectors/experiments/commentSearchPdp.ts": function(e, t, n) {
@@ -78128,7 +78128,7 @@
 				}) === s.Td,
 				a = e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.rg
+					experimentName: s.sg
 				}) === s.Td
 		},
 		"./src/reddit/selectors/experiments/newCommunityProgressV3.ts": function(e, t, n) {
@@ -79147,7 +79147,7 @@
 				u = e => e.features.goldPurchase.packageOfferModal.packageId,
 				m = e => e.features.goldPurchase.premiumPurchaseModal.renewInterval,
 				p = e => {
-					const t = Object(s.k)(e),
+					const t = Object(s.i)(e),
 						n = (e => e.features.goldPurchase.premiumPurchaseModal.packageId)(e);
 					return t.length && n && t.find(e => e.mobileId === n) || null
 				},
@@ -79519,7 +79519,7 @@
 					} = e.onboarding;
 					if (t.success || t.failure) return t
 				},
-				E = Object(r.a)(m.j, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(i.xg)(e) ? t : null),
+				E = Object(r.a)(m.j, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(i.yg)(e) ? t : null),
 				O = Object(r.a)(m.j, (e, t) => {
 					let {
 						pageLayer: n
@@ -81001,4 +81001,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.970ad73ca6ef8ae4ee16.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.a9cb66cfb04d21e11db2.js.map

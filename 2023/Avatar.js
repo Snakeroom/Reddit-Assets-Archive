@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Avatar.fb1d50ad97f7fe6a67ac.js
-// Retrieved at 5/25/2023, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Avatar.57064e740f3b669e5ca2.js
+// Retrieved at 5/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Avatar"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, s) {
@@ -221,4 +221,4 @@
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.fb1d50ad97f7fe6a67ac.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.57064e740f3b669e5ca2.js.map

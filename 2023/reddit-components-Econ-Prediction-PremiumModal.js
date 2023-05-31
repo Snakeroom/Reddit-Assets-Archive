@@ -1,8 +1,8 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-PremiumModal.da64ca129afd213379f3.js
-// Retrieved at 4/24/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-PremiumModal.5f96c353a38cafbc0416.js
+// Retrieved at 5/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-PremiumModal"], {
-		"./src/reddit/components/Econ/Prediction/PremiumModal/index.m.less": function(e, t, a) {
+		"./src/reddit/components/Econ/Prediction/PremiumModal/index.m.less": function(e, t, i) {
 			e.exports = {
 				modal: "_2BtHtL1Zjhoqs7ZiPXcXLg",
 				background: "_1iNAKjha6s-badBHwqzsdx",
@@ -20,106 +20,108 @@
 				changePrediction: "DUbTe52Ax5ebrV43igiEy"
 			}
 		},
-		"./src/reddit/components/Econ/Prediction/PremiumModal/index.tsx": function(e, t, a) {
+		"./src/reddit/components/Econ/Prediction/PremiumModal/index.tsx": function(e, t, i) {
 			"use strict";
-			a.r(t);
-			var r = a("./src/config.ts"),
-				i = a("./node_modules/react/index.js"),
-				s = a.n(i),
-				c = a("./node_modules/react-redux/es/index.js"),
-				n = a("./src/reddit/actions/economics/predictions/index.ts"),
-				o = a("./src/reddit/selectors/activeModal.ts"),
-				d = a("./src/higherOrderComponents/asModal/index.tsx"),
-				l = a("./src/reddit/actions/gold/productOfferPurchase.ts"),
-				m = a("./src/reddit/actions/gold/productOffers.ts"),
-				u = a("./src/reddit/actions/goldPurchaseModals/premiumPurchaseModal.ts"),
-				g = a("./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts"),
-				p = a("./src/reddit/components/PremiumPurchaseModal/Loader.tsx"),
-				h = a("./src/reddit/controls/Button/index.tsx"),
-				P = a("./src/reddit/helpers/correlationIdTracker.ts"),
-				b = a("./src/reddit/helpers/trackers/premium.ts"),
-				f = a("./src/reddit/hooks/usePreloadModal.ts"),
-				_ = a("./src/reddit/hooks/useTracking.ts"),
-				k = a("./src/reddit/icons/fonts/index.tsx"),
-				x = a("./src/reddit/icons/svgs/PremiumLogo/index.tsx"),
-				E = a("./src/reddit/models/Gold/ProductOffer.ts"),
-				O = a("./src/reddit/pages/Premium/index.tsx"),
-				j = a("./src/reddit/pages/Premium/BenefitsSection/index.tsx"),
-				B = a("./src/reddit/pages/Premium/PremiumButtons/index.tsx"),
-				C = a("./src/reddit/selectors/gold/purchaseCatalog.ts"),
-				N = a("./src/reddit/components/Econ/Prediction/PremiumModal/index.m.less"),
-				v = a.n(N);
+			i.r(t);
+			var r = i("./src/config.ts"),
+				a = i("./node_modules/react/index.js"),
+				s = i.n(a),
+				c = i("./node_modules/react-redux/es/index.js"),
+				n = i("./src/reddit/actions/economics/predictions/index.ts"),
+				o = i("./src/reddit/selectors/activeModal.ts"),
+				d = i("./src/higherOrderComponents/asModal/index.tsx"),
+				l = i("./src/reddit/actions/gold/productOfferPurchase.ts"),
+				m = i("./src/reddit/actions/gold/productOffers.ts"),
+				u = i("./src/reddit/actions/goldPurchaseModals/premiumPurchaseModal.ts"),
+				g = i("./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts"),
+				p = i("./src/reddit/components/PremiumPurchaseModal/Loader.tsx"),
+				b = i("./src/reddit/controls/Button/index.tsx"),
+				h = i("./src/reddit/helpers/correlationIdTracker.ts"),
+				P = i("./src/reddit/helpers/trackers/premium.ts"),
+				f = i("./src/reddit/hooks/usePreloadModal.ts"),
+				_ = i("./src/reddit/hooks/useTracking.ts"),
+				x = i("./src/reddit/icons/fonts/index.tsx"),
+				k = i("./src/reddit/icons/svgs/PremiumLogo/index.tsx"),
+				O = i("./src/reddit/models/Gold/ProductOffer.ts"),
+				E = i("./src/reddit/pages/Premium/index.tsx"),
+				j = i("./src/reddit/pages/Premium/BenefitsSection/index.tsx"),
+				B = i("./src/reddit/pages/Premium/PremiumButtons/index.tsx"),
+				C = i("./src/reddit/selectors/experiments/econ/index.ts"),
+				N = i("./src/reddit/selectors/gold/purchaseCatalog.ts"),
+				v = i("./src/reddit/components/Econ/Prediction/PremiumModal/index.m.less"),
+				w = i.n(v);
 			const {
-				fbt: w
-			} = a("./node_modules/fbt/lib/FbtPublic.js");
-			var M = Object(d.a)(e => {
+				fbt: M
+			} = i("./node_modules/fbt/lib/FbtPublic.js");
+			var y = Object(d.a)(e => {
 				let {
 					title: t,
-					description: a,
+					description: i,
 					footer: r,
 					image: n,
 					onClose: o
 				} = e;
 				const d = Object(c.d)(),
-					N = Object(_.a)(),
-					M = Object(c.e)(C.k),
-					I = Object(c.e)(C.n),
-					y = Object(P.d)(P.a.GoldPayment, !1);
-				Object(f.a)(p.a), Object(i.useEffect)(() => {
-					M.length || I || d(Object(g.b)({
-						correlationId: y
-					})), d(Object(m.d)(E.c.Premium))
+					v = Object(_.a)(),
+					y = Object(c.e)(C.d),
+					I = Object(c.e)(N.i),
+					L = Object(c.e)(N.l),
+					S = Object(h.d)(h.a.GoldPayment, !1);
+				Object(f.a)(p.a), Object(a.useEffect)(() => {
+					I.length || L || d(Object(g.b)({
+						correlationId: S
+					})), d(Object(m.d)(O.c.Premium))
 				});
 				return s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
-					className: v.a.background,
+					className: w.a.background,
 					style: {
 						backgroundImage: "linear-gradient(\n              to right,\n              rgba(0, 0, 0, 0.6) 0%,\n              rgba(0, 0, 0, 0) 50%\n            )",
 						backgroundSize: "auto 100%"
 					}
-				}, n, s.a.createElement(h.t, {
-					"aria-label": w._("Close", null, {
+				}, n, s.a.createElement(b.t, {
+					"aria-label": M._("Close", null, {
 						hk: "2xO1CF"
 					}),
-					className: v.a.closeButton,
-					Icon: Object(k.b)("close"),
+					className: w.a.closeButton,
+					Icon: Object(x.b)("close"),
 					onClick: o,
-					priority: h.c.Plain
+					priority: b.c.Plain
 				}), s.a.createElement("div", {
-					className: v.a.prediction
+					className: w.a.prediction
 				}, s.a.createElement("div", {
-					className: v.a.logo
-				}, s.a.createElement(x.a, null)), s.a.createElement("h2", {
-					className: v.a.title
+					className: w.a.logo
+				}, s.a.createElement(k.a, null)), s.a.createElement("h2", {
+					className: w.a.title
 				}, t), s.a.createElement("h3", {
-					className: v.a.description
-				}, a), s.a.createElement("p", {
-					className: v.a.footer
+					className: w.a.description
+				}, i), s.a.createElement("p", {
+					className: w.a.footer
 				}, r))), s.a.createElement("div", {
-					className: v.a.premium
+					className: w.a.premium
 				}, s.a.createElement("h3", {
-					className: v.a.benefitsText
-				}, w._("More Reddit Premium Features", null, {
+					className: w.a.benefitsText
+				}, M._("More Reddit Premium Features", null, {
 					hk: "2qvl5q"
 				})), s.a.createElement(j.a, {
 					isCompactMode: !0
 				}), s.a.createElement(B.a, {
 					onClickPackage: (e, t) => {
 						d(Object(u.openWithBlob)({
-							correlationId: y,
+							correlationId: S,
 							packageId: e
 						})), d(Object(l.h)({
 							renewInterval: t
-						})), N(b.c({
+						})), v(P.c({
 							renewInterval: t
 						}))
 					}
 				}), s.a.createElement("div", {
-					className: v.a.paidPremiumSubtext
-				}, O.PAID_PREMIUM_SUBTEXT)))
+					className: w.a.paidPremiumSubtext
+				}, Object(E.getPaidPremiumSubtext)(y))))
 			});
 			const {
 				fbt: I
-			} = a("./node_modules/fbt/lib/FbtPublic.js"), y = {
+			} = i("./node_modules/fbt/lib/FbtPublic.js"), L = {
 				CHANGE_PREDICTION: {
 					title: I._("Change your Prediction with Reddit Premium", null, {
 						hk: "10eeE8"
@@ -132,7 +134,7 @@
 					}),
 					image: s.a.createElement("img", {
 						alt: "Snoo magician in front of a magic ball",
-						className: v.a.changePrediction,
+						className: w.a.changePrediction,
 						src: `${r.a.assetPath}/img/econ/predictions/change_prediction.png`
 					})
 				},
@@ -148,7 +150,7 @@
 					}),
 					image: s.a.createElement("img", {
 						alt: "Snoo peeking into curtains",
-						className: v.a.sneakPeek,
+						className: w.a.sneakPeek,
 						src: `${r.a.assetPath}/img/econ/predictions/sneak_peek.png`
 					})
 				}
@@ -159,27 +161,27 @@
 						feature: t
 					} = Object(c.e)(e => Object(o.a)(e));
 				if (!t) return null;
-				const a = () => e(Object(n.f)());
-				return s.a.createElement(M, {
-					className: v.a.modal,
+				const i = () => e(Object(n.f)());
+				return s.a.createElement(y, {
+					className: w.a.modal,
 					withOverlay: !0,
-					onOverlayClick: a,
-					onClose: a,
-					title: y[t].title,
-					description: y[t].description,
-					footer: y[t].footer,
-					image: y[t].image
+					onOverlayClick: i,
+					onClose: i,
+					title: L[t].title,
+					description: L[t].description,
+					footer: L[t].footer,
+					image: L[t].image
 				})
 			}
 		},
-		"./src/reddit/hooks/usePreloadModal.ts": function(e, t, a) {
+		"./src/reddit/hooks/usePreloadModal.ts": function(e, t, i) {
 			"use strict";
-			a.d(t, "a", (function() {
-				return i
+			i.d(t, "a", (function() {
+				return a
 			}));
-			var r = a("./node_modules/react/index.js");
+			var r = i("./node_modules/react/index.js");
 
-			function i(e) {
+			function a(e) {
 				Object(r.useEffect)(() => {
 					e()
 				}, [e])
@@ -187,4 +189,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-PremiumModal.da64ca129afd213379f3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-PremiumModal.5f96c353a38cafbc0416.js.map

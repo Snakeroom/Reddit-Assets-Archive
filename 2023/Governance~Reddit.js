@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.9a588916187416855ef1.js
-// Retrieved at 5/30/2023, 10:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.ed393a9e80733c2bca28.js
+// Retrieved at 5/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -1707,17 +1707,17 @@
 		"./src/reddit/actions/page.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "d", (function() {
-				return _
-			})), n.d(t, "a", (function() {
 				return O
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "a", (function() {
 				return I
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "f", (function() {
 				return S
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "c", (function() {
 				return T
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "b", (function() {
 				return D
+			})), n.d(t, "e", (function() {
+				return w
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = n("./node_modules/react-router-redux/es/index.js"),
@@ -1735,12 +1735,13 @@
 				h = Object(i.a)(p.a);
 			var y = n("./src/reddit/actions/redditEmbed.ts"),
 				m = n("./src/reddit/actions/users.ts"),
-				g = n("./src/reddit/selectors/user.ts"),
-				v = n("./src/lib/makeListingKey/index.ts"),
-				E = n("./src/lib/matchRoute/index.ts");
-			const _ = e => async t => {
+				g = n("./src/reddit/selectors/experiments/econ/index.ts"),
+				v = n("./src/reddit/selectors/user.ts"),
+				E = n("./src/lib/makeListingKey/index.ts"),
+				_ = n("./src/lib/matchRoute/index.ts");
+			const O = e => async t => {
 				await t(Object(y.c)(e, !0))
-			}, O = () => async e => {
+			}, I = () => async e => {
 				await e((() => async (e, t, n) => {
 					let {
 						apiContext: r
@@ -1756,13 +1757,13 @@
 					else Object(u.a)(e, s);
 					else e(h(a.error))
 				})())
-			}, I = (e, t, n) => async (o, c, i) => {
+			}, S = (e, t, n) => async (o, c, i) => {
 				let {
 					routes: d
 				} = i;
 				const l = c(),
 					u = (t || l.platform.currentPage).routeMatch.match,
-					p = Object(E.a)(u.url, d);
+					p = Object(_.a)(u.url, d);
 				if (!p) return;
 				const f = e.metaKey || e.ctrlKey || 1 === e.button;
 				if (p.route && p.route.meta && (p.route.meta.name === a.Tb.INDEX || p.route.meta.name === a.Tb.MULTIREDDIT || p.route.meta.name === a.Tb.SUBREDDIT)) f ? window.open(u.url) : n ? o(Object(r.b)(u.url)) : await o(p.route.action(u, !0));
@@ -1773,23 +1774,26 @@
 					if (f) window.open(t);
 					else if (n) o(Object(r.b)(t));
 					else {
-						const n = Object(v.a)(e, a.cb.HOT);
+						const n = Object(E.a)(e, a.cb.HOT);
 						await o(Object(r.b)(t)), o(Object(s.subredditDataRequested)(n, e, {}))
 					}
 				}
-			}, S = () => async (e, t) => {
+			}, T = () => async (e, t) => {
 				const n = t();
-				e(d.n({
+				Object(g.d)(n) ? window.location.replace("https://reddithelp.com/hc/articles/360043034252") : (e(d.n({
 					title: o.b()
-				})), Object(g.S)(n) || await e(m.s())
-			}, T = () => async e => e(d.n({
-				title: o.b()
-			})), D = e => async (t, r) => {
+				})), Object(v.S)(n) || await e(m.s()))
+			}, D = () => async (e, t) => {
+				const n = t();
+				Object(g.d)(n) ? window.location.replace("https://reddithelp.com/hc/articles/360043034252") : e(d.n({
+					title: o.b()
+				}))
+			}, w = e => async (t, r) => {
 				const s = r();
 				t(d.n({
 					title: o.k()
-				})), Object(g.S)(s) || await t(m.s());
-				const a = Object(g.S)(s);
+				})), Object(v.S)(s) || await t(m.s());
+				const a = Object(v.S)(s);
 				if (e.queryParams.thanks && a) {
 					const e = await n.e("GoldPurchasePaymentActions").then(n.bind(null, "./src/reddit/actions/goldPurchaseModals/payment.ts")).then(e => e.paymentCompleted),
 						r = await n.e("GoldPurchasePaymentActions").then(n.bind(null, "./src/reddit/actions/goldPurchaseModals/premiumPurchaseModal.ts")).then(e => e.openPremiumPurchaseModal);
@@ -25642,4 +25646,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.9a588916187416855ef1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.ed393a9e80733c2bca28.js.map

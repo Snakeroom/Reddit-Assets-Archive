@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.4aa29578fe072555fba2.js
-// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.4cb86bbc0fdf91526420.js
+// Retrieved at 5/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GoldTargetedOfferModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -518,21 +518,21 @@
 		"./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
-				return P
-			})), r.d(t, "a", (function() {
 				return k
-			})), r.d(t, "c", (function() {
+			})), r.d(t, "a", (function() {
 				return w
-			})), r.d(t, "h", (function() {
+			})), r.d(t, "c", (function() {
 				return C
-			})), r.d(t, "g", (function() {
+			})), r.d(t, "h", (function() {
 				return x
-			})), r.d(t, "d", (function() {
+			})), r.d(t, "g", (function() {
 				return S
-			})), r.d(t, "e", (function() {
+			})), r.d(t, "d", (function() {
 				return I
-			})), r.d(t, "f", (function() {
+			})), r.d(t, "e", (function() {
 				return A
+			})), r.d(t, "f", (function() {
+				return T
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				o = r("./src/lib/formatApiError/index.ts"),
@@ -550,26 +550,28 @@
 				y = r("./src/reddit/models/Gold/Award.ts"),
 				O = r("./src/reddit/models/Gold/ProductOffer.ts"),
 				g = r("./src/reddit/models/Toast/index.ts"),
-				j = r("./src/reddit/selectors/gold/purchaseCatalog.ts"),
-				h = r("./src/reddit/selectors/goldPurchaseModals.ts"),
-				v = r("./src/reddit/actions/goldPurchaseModals/constants.ts");
-			const _ = Object(c.a)(v.u),
-				E = Object(c.a)(v.c),
-				P = e => async (t, r) => {
-					t(_(e)), t(Object(l.h)(s.a.ECON_COIN_PURCHASE))
-				}, k = () => async (e, t) => {
-					e(E()), e(Object(l.g)(s.a.ECON_COIN_PURCHASE))
-				}, w = (e, t, r) => async (o, c) => {
+				j = r("./src/reddit/selectors/experiments/econ/index.ts"),
+				h = r("./src/reddit/selectors/gold/purchaseCatalog.ts"),
+				v = r("./src/reddit/selectors/goldPurchaseModals.ts"),
+				_ = r("./src/reddit/actions/goldPurchaseModals/constants.ts");
+			const E = Object(c.a)(_.u),
+				P = Object(c.a)(_.c),
+				k = e => async (t, r) => {
+					const n = r();
+					Object(j.d)(n) || (t(E(e)), t(Object(l.h)(s.a.ECON_COIN_PURCHASE)))
+				}, w = () => async (e, t) => {
+					e(P()), e(Object(l.g)(s.a.ECON_COIN_PURCHASE))
+				}, C = (e, t, r) => async (o, c) => {
 					await o(Object(d.c)());
 					const a = c(),
-						s = Object(j.o)(a, e);
-					if (s) o(P({
+						s = Object(h.m)(a, e);
+					if (s) o(k({
 						correlationId: r,
 						packageId: s,
 						thingId: t
 					}));
 					else {
-						const e = Object(j.m)(a),
+						const e = Object(h.k)(a),
 							t = n.fbt._("Unable to create purchase request.", null, {
 								hk: "lgfDj"
 							});
@@ -579,7 +581,7 @@
 							text: e || t
 						}))
 					}
-				}, C = (e, t, r) => async (c, a, s) => {
+				}, x = (e, t, r) => async (c, a, s) => {
 					let {
 						apiContext: d
 					} = s;
@@ -588,11 +590,11 @@
 							coins: u,
 							pennies: p
 						} = r,
-						m = Object(h.s)(l) || Object(f.d)(f.a.GoldPayment, !1);
+						m = Object(v.s)(l) || Object(f.d)(f.a.GoldPayment, !1);
 					let y, g;
 					c(Object(i.stripeTokenPending)());
-					const j = Object(h.z)(l);
-					if (j || (y = await c(Object(i.validateAndCreateStripeToken)(e, t)), g = Object(h.w)(l), y)) try {
+					const j = Object(v.z)(l);
+					if (j || (y = await c(Object(i.validateAndCreateStripeToken)(e, t)), g = Object(v.w)(l), y)) try {
 						const e = await Object(b.d)({
 							coins: u,
 							context: d(),
@@ -611,8 +613,8 @@
 							coins: e.body.coins ? e.body.coins : 0,
 							confirmed: !1
 						})), void Object(f.b)(f.a.GoldPayment)
-					} catch (v) {
-						const e = Object(o.a)(v);
+					} catch (h) {
+						const e = Object(o.a)(h);
 						c(Object(i.stripeApiError)(e))
 					} else {
 						const e = n.fbt._("Looks like something went wrong validating your credit card.", null, {
@@ -620,7 +622,7 @@
 						});
 						c(Object(i.stripeApiError)(e))
 					}
-				}, x = (e, t, c, a) => async (s, d, l) => {
+				}, S = (e, t, c, a) => async (s, d, l) => {
 					let {
 						apiContext: u
 					} = l;
@@ -629,11 +631,11 @@
 							coins: g,
 							pennies: j
 						} = c,
-						v = Object(h.s)(p) || Object(f.d)(f.a.GoldPayment, !1);
+						h = Object(v.s)(p) || Object(f.d)(f.a.GoldPayment, !1);
 					let _, E;
 					s(Object(i.stripeTokenPending)());
-					const P = Object(h.z)(p);
-					if (P || (_ = await s(Object(i.validateAndCreateStripeToken)(e, t)), E = Object(h.w)(p), _)) try {
+					const P = Object(v.z)(p);
+					if (P || (_ = await s(Object(i.validateAndCreateStripeToken)(e, t)), E = Object(v.w)(p), _)) try {
 						const {
 							gildModalThingId: e,
 							isAnonymous: t,
@@ -646,17 +648,17 @@
 							});
 							return void s(Object(i.stripeApiError)(e))
 						}
-						const h = l.id,
-							w = {
-								gildType: h,
+						const v = l.id,
+							k = {
+								gildType: v,
 								isAnonymous: t,
 								message: d
 							},
 							C = await Object(b.c)({
 								coins: g,
 								context: u(),
-								correlationId: v,
-								gildParams: w,
+								correlationId: h,
+								gildParams: k,
 								isOldReddit: a,
 								offerContext: Object(O.d)(c, !0),
 								pennies: j,
@@ -672,7 +674,7 @@
 							const {
 								gildSuccessful: t
 							} = await r.e("gildActions").then(r.bind(null, "./src/reddit/actions/gold/gild.ts"));
-							s(k()), s(Object(i.paymentCompleted)({
+							s(w()), s(Object(i.paymentCompleted)({
 								confirmed: !1
 							}));
 							const {
@@ -683,7 +685,7 @@
 							} = C.body;
 							return s(t({
 								awardKarmaReceived: n || 0,
-								awardId: h,
+								awardId: v,
 								awardings: o && o.length ? Object(m.a)(o).map(e => ({
 									award: Object(y.i)(e),
 									total: e.count
@@ -693,8 +695,8 @@
 								treatmentTags: a
 							})), void Object(f.b)(f.a.GoldPayment)
 						}
-					} catch (w) {
-						const e = Object(o.a)(w);
+					} catch (k) {
+						const e = Object(o.a)(k);
 						s(Object(i.stripeApiError)(e))
 					} else {
 						const e = n.fbt._("Looks like something went wrong validating your credit card.", null, {
@@ -702,7 +704,7 @@
 						});
 						s(Object(i.stripeApiError)(e))
 					}
-				}, S = e => async (t, r, n) => {
+				}, I = e => async (t, r, n) => {
 					let {
 						apiContext: c
 					} = n;
@@ -732,12 +734,12 @@
 						const e = Object(o.a)(u);
 						t(Object(i.paypalApiError)(e))
 					}
-				}, I = (e, t) => async (r, n, c) => {
+				}, A = (e, t) => async (r, n, c) => {
 					let {
 						apiContext: s
 					} = c;
 					const d = n(),
-						l = Object(h.s)(d) || Object(f.d)(f.a.GoldPayment, !1),
+						l = Object(v.s)(d) || Object(f.d)(f.a.GoldPayment, !1),
 						{
 							coins: u,
 							pennies: b
@@ -768,12 +770,12 @@
 						const e = Object(o.a)(m);
 						r(Object(i.paypalApiError)(e))
 					}
-				}, A = (e, t) => async (c, s, d) => {
+				}, T = (e, t) => async (c, s, d) => {
 					let {
 						apiContext: l
 					} = d;
 					const u = s(),
-						b = Object(h.s)(u) || Object(f.d)(f.a.GoldPayment, !1),
+						b = Object(v.s)(u) || Object(f.d)(f.a.GoldPayment, !1),
 						{
 							coins: g,
 							pennies: j
@@ -805,7 +807,7 @@
 							const e = Object(o.a)(_.error);
 							c(Object(i.paypalApiError)(e))
 						} else {
-							c(k());
+							c(w());
 							const {
 								all_awardings: e,
 								awarder_karma_received: t,
@@ -833,9 +835,9 @@
 								treatmentTags: s
 							})), Object(f.b)(f.a.GoldPayment)
 						}
-					} catch (v) {
-						a.c.captureException(v);
-						const e = Object(o.a)(v);
+					} catch (h) {
+						a.c.captureException(h);
+						const e = Object(o.a)(h);
 						c(Object(i.paypalApiError)(e))
 					}
 				}
@@ -1593,4 +1595,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.4aa29578fe072555fba2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.4cb86bbc0fdf91526420.js.map

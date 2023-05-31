@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.0b6468e80d4b961ff200.js
-// Retrieved at 5/30/2023, 7:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.b3c5504c4fcfa1f4d53c.js
+// Retrieved at 5/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -8496,10 +8496,6 @@
 				}, s.fbt._("press", null, {
 					hk: "x8wb0"
 				})), m.a.createElement(Ct, {
-					href: "https://www.reddit.com/coins"
-				}, s.fbt._("Reddit coins", null, {
-					hk: "4EwVXk"
-				})), m.a.createElement(Ct, {
 					href: "https://redditgifts.com/"
 				}, s.fbt._("Reddit gifts", null, {
 					hk: "1XCLXF"
@@ -11227,10 +11223,12 @@
 							r = new bo.a("id"),
 							o = Object(O.S)(e),
 							a = Object(lo.f)(e),
-							i = Object(O.sb)(e),
-							c = [],
-							l = (e => Object(uo.m)(e) ? [Po, _o, So] : [_o, Po, So])(e),
-							d = c.length ? l.filter(e => !c.includes(e(null).id)) : l;
+							i = Object(uo.d)(e),
+							c = Object(O.sb)(e),
+							l = [];
+						i && l.push(Gr.Coins);
+						const d = (e => Object(uo.m)(e) ? [Po, _o, So] : [_o, Po, So])(e),
+							u = l.length ? d.filter(e => !l.includes(e(null).id)) : d;
 						if (o) {
 							const o = n.account;
 							(n.favoriteSubreddits.length || n.favoriteProfiles.length || n.favoriteMultireddits.length) && (r.push({
@@ -11364,7 +11362,7 @@
 									model: t,
 									telemetryNoun: "profile"
 								})))
-							}(r, n, i, t), ((e, t, n, r) => (yo().forEach(e => t.push(e(n))), n.isEmployee && Oo.forEach(e => t.push(e(n))), Object(mo.a)(e) && t.push({
+							}(r, n, c, t), ((e, t, n, r) => (yo().forEach(e => t.push(e(n))), n.isEmployee && Oo.forEach(e => t.push(e(n))), Object(mo.a)(e) && t.push({
 								id: Gr.HappeningNow,
 								type: vo.GenericLink,
 								model: {
@@ -11437,7 +11435,7 @@
 									}
 								},
 								telemetryNoun: "inbox"
-							}))(r), d.forEach(e => r.push(e(o)))
+							}))(r), u.forEach(e => r.push(e(o)))
 						} else n.subscriptions.length ? yo().forEach(e => r.push(e(null))) : (xo.forEach(e => {
 							if (!e) return;
 							e(null).id === Gr.Home && a || r.push(e(null))
@@ -12919,57 +12917,58 @@
 					a = Object(je.e)(mc),
 					i = Object(je.e)(ac),
 					c = Object(je.e)(uo.c),
-					l = Object(je.e)(mo.a),
-					d = Object(je.e)(tc.a),
-					p = Object(Er.a)(),
+					l = Object(je.e)(uo.d),
+					d = Object(je.e)(mo.a),
+					p = Object(je.e)(tc.a),
 					b = Object(Er.a)(),
 					h = Object(Er.a)(),
-					g = !(i || c && !!d) || e.isAvatarButtonClicked;
+					g = Object(Er.a)(),
+					f = !l && (!(i || c && !!p) || e.isAvatarButtonClicked);
 				return m.a.createElement("div", {
 					className: Object(Ne.a)(Pr.a.container, e.className, {
-						[Pr.a.containerWithoutCoin]: !g
+						[Pr.a.containerWithoutCoin]: !f
 					})
 				}, m.a.createElement("div", {
 					className: Pr.a.row
 				}, m.a.createElement(dr.a, {
 					className: Pr.a.icon,
-					innerRef: p.target.ref,
+					innerRef: b.target.ref,
 					to: r ? Yi.c[Yi.b.Popular] : Yi.c[Yi.b.Home],
 					onClick: n,
-					onMouseEnter: p.show,
-					onMouseLeave: p.hide
-				}, m.a.createElement(wr.a, {
-					name: "popular"
-				})), m.a.createElement(Cr.a, {
-					arrowProps: p.arrowProps,
-					popperProps: p.popperProps,
-					visible: p.visible
-				}, s.fbt._("Popular", null, {
-					hk: "1Kx4va"
-				})), g && m.a.createElement(m.a.Fragment, null, m.a.createElement("span", {
-					ref: h.target.ref,
-					onMouseEnter: h.show,
-					onMouseLeave: h.hide,
-					className: Pr.a.icon
-				}, m.a.createElement(Vi.a, null)), m.a.createElement(Cr.a, {
-					arrowProps: h.arrowProps,
-					popperProps: h.popperProps,
-					visible: h.visible
-				}, s.fbt._("Coin", null, {
-					hk: "zOcNq"
-				}))), l && m.a.createElement($i, null), a && m.a.createElement(m.a.Fragment, null, m.a.createElement(dr.a, {
-					className: Pr.a.icon,
-					innerRef: b.target.ref,
-					to: "/r/psbattleslive",
-					onClick: () => {},
 					onMouseEnter: b.show,
 					onMouseLeave: b.hide
-				}, m.a.createElement(ec, {
-					className: Pr.a.psBattlesIcon
+				}, m.a.createElement(wr.a, {
+					name: "popular"
 				})), m.a.createElement(Cr.a, {
 					arrowProps: b.arrowProps,
 					popperProps: b.popperProps,
 					visible: b.visible
+				}, s.fbt._("Popular", null, {
+					hk: "1Kx4va"
+				})), f && m.a.createElement(m.a.Fragment, null, m.a.createElement("span", {
+					ref: g.target.ref,
+					onMouseEnter: g.show,
+					onMouseLeave: g.hide,
+					className: Pr.a.icon
+				}, m.a.createElement(Vi.a, null)), m.a.createElement(Cr.a, {
+					arrowProps: g.arrowProps,
+					popperProps: g.popperProps,
+					visible: g.visible
+				}, s.fbt._("Coin", null, {
+					hk: "zOcNq"
+				}))), d && m.a.createElement($i, null), a && m.a.createElement(m.a.Fragment, null, m.a.createElement(dr.a, {
+					className: Pr.a.icon,
+					innerRef: h.target.ref,
+					to: "/r/psbattleslive",
+					onClick: () => {},
+					onMouseEnter: h.show,
+					onMouseLeave: h.hide
+				}, m.a.createElement(ec, {
+					className: Pr.a.psBattlesIcon
+				})), m.a.createElement(Cr.a, {
+					arrowProps: h.arrowProps,
+					popperProps: h.popperProps,
+					visible: h.visible
 				}, s.fbt._("PsBattles Live in partnership with Adobe", null, {
 					hk: "3mGYdM"
 				}))), m.a.createElement(Di, null), m.a.createElement(Sr, null), o && m.a.createElement(Zi, {
@@ -21213,4 +21212,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.0b6468e80d4b961ff200.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.b3c5504c4fcfa1f4d53c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinsMobile.593d4538ebbc5c931c4a.js
-// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinsMobile.8a7744f49063c94cb90a.js
+// Retrieved at 5/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinsMobile"], {
 		"./src/reddit/components/CollapsibleFAQ/index.m.less": function(e, t, a) {
@@ -134,47 +134,54 @@
 				s = a("./node_modules/fbt/lib/FbtPublic.js"),
 				i = a("./node_modules/react/index.js"),
 				r = a.n(i),
-				l = a("./src/lib/constants/index.ts"),
-				c = a("./src/reddit/components/TrackingHelper/index.tsx"),
-				o = a("./src/reddit/helpers/correlationIdTracker.ts"),
-				d = a("./src/reddit/helpers/trackers/screenview.ts"),
-				p = a("./src/telemetry/index.ts"),
-				m = a("./src/telemetry/models/Timer.ts"),
-				u = a("./src/reddit/pages/CoinsMobilePage/index.m.less"),
-				b = a.n(u),
-				h = a("./src/reddit/helpers/createEmojiText/index.tsx"),
-				g = a("./src/reddit/models/Gold/Award.ts"),
+				l = a("./node_modules/react-redux/es/index.js"),
+				c = a("./node_modules/reselect/es/index.js"),
+				o = a("./src/lib/constants/index.ts"),
+				d = a("./src/reddit/components/TrackingHelper/index.tsx"),
+				p = a("./src/reddit/helpers/correlationIdTracker.ts"),
+				m = a("./src/reddit/helpers/trackers/screenview.ts"),
+				u = a("./src/telemetry/index.ts"),
+				b = a("./src/telemetry/models/Timer.ts"),
+				h = a("./src/reddit/pages/CoinsMobilePage/index.m.less"),
+				g = a.n(h),
+				_ = a("./src/reddit/helpers/createEmojiText/index.tsx"),
+				x = a("./src/reddit/models/Gold/Award.ts"),
 				f = a("./src/reddit/models/Gold/Coins/index.ts"),
-				_ = a("./src/reddit/components/CollapsibleFAQ/index.tsx"),
-				C = a("./src/reddit/components/GildMarketingDescription/index.tsx"),
-				E = a("./src/reddit/icons/fonts/Coin/index.tsx");
-			class x extends r.a.Component {
+				C = a("./src/reddit/components/CollapsibleFAQ/index.tsx"),
+				E = a("./src/reddit/components/GildMarketingDescription/index.tsx"),
+				N = a("./src/reddit/icons/fonts/Coin/index.tsx"),
+				w = a("./src/reddit/selectors/experiments/econ/index.ts");
+			const O = Object(c.c)({
+				isCoinsSunset: w.d
+			});
+			class A extends r.a.Component {
 				componentDidMount() {
-					Object(o.d)(o.a.GoldPayment, !1);
-					const e = l.Tb.COINS;
-					p.c.has(e) && this.props.sendEvent(Object(d.b)(m.TimerType.InApp, p.c.end(e)))
+					Object(p.d)(p.a.GoldPayment, !1);
+					const e = o.Tb.COINS;
+					u.c.has(e) && this.props.sendEvent(Object(m.b)(b.TimerType.InApp, u.c.end(e)))
 				}
 				render() {
 					const {
-						className: e
+						className: e,
+						isCoinsSunset: t
 					} = this.props;
-					return r.a.createElement("div", {
+					return t ? null : r.a.createElement("div", {
 						className: e
 					}, r.a.createElement("div", {
-						className: b.a.wrapper
+						className: g.a.wrapper
 					}, this.renderGildBreakdown(), this.renderFAQSection()))
 				}
 				renderGildBreakdown() {
 					return r.a.createElement("div", {
-						className: b.a.detailGridSection
+						className: g.a.detailGridSection
 					}, r.a.createElement("p", {
-						className: b.a.detailDesription
+						className: g.a.detailDesription
 					}, s.fbt._("Coins are used to award exemplary posts or comments and help support Reddit.", null, {
 						hk: "2phDYF"
 					})), r.a.createElement("div", {
-						className: b.a.gridContainer
-					}, r.a.createElement(C.a, {
-						className: b.a.gridItem,
+						className: g.a.gridContainer
+					}, r.a.createElement(E.a, {
+						className: g.a.gridItem,
 						icon: r.a.createElement("img", {
 							src: `${n.a.assetPath}/img/gold/badges/award-silver-large.png`
 						}),
@@ -182,14 +189,14 @@
 						title: s.fbt._("Silver Award", null, {
 							hk: "2h79np"
 						})
-					}, Object(h.a)(s.fbt._("Shows a Silver Award on the post or comment and ... that’s it. You’ll need {Coin price placeholder} Coins.", [s.fbt._param("Coin price placeholder", ":coin_price:")], {
+					}, Object(_.a)(s.fbt._("Shows a Silver Award on the post or comment and ... that’s it. You’ll need {Coin price placeholder} Coins.", [s.fbt._param("Coin price placeholder", ":coin_price:")], {
 						hk: "zIrMH"
 					}), {
 						":coin_price:": r.a.createElement("span", {
-							className: b.a.nowrap
-						}, r.a.createElement(E.a, null), g.r.coinPrice)
-					})), r.a.createElement(C.a, {
-						className: b.a.gridItem,
+							className: g.a.nowrap
+						}, r.a.createElement(N.a, null), x.r.coinPrice)
+					})), r.a.createElement(E.a, {
+						className: g.a.gridItem,
 						icon: r.a.createElement("img", {
 							src: `${n.a.assetPath}/img/gold/badges/award-gold-large.png`
 						}),
@@ -197,17 +204,17 @@
 						title: s.fbt._("Gold Award", null, {
 							hk: "1oYdz0"
 						})
-					}, Object(h.a)(s.fbt._("Gives {Coin benefit placeholder} Reddit Coins and a week of r/lounge access and ad-free browsing. You’ll need {Coin price placeholder} Coins.", [s.fbt._param("Coin benefit placeholder", ":coin_benefit:"), s.fbt._param("Coin price placeholder", ":coin_price:")], {
+					}, Object(_.a)(s.fbt._("Gives {Coin benefit placeholder} Reddit Coins and a week of r/lounge access and ad-free browsing. You’ll need {Coin price placeholder} Coins.", [s.fbt._param("Coin benefit placeholder", ":coin_benefit:"), s.fbt._param("Coin price placeholder", ":coin_price:")], {
 						hk: "rZ9s8"
 					}), {
 						":coin_benefit:": r.a.createElement("span", {
-							className: b.a.nowrap
-						}, r.a.createElement(E.a, null), "100"),
+							className: g.a.nowrap
+						}, r.a.createElement(N.a, null), "100"),
 						":coin_price:": r.a.createElement("span", {
-							className: b.a.nowrap
-						}, r.a.createElement(E.a, null), g.o.coinPrice)
-					})), r.a.createElement(C.a, {
-						className: b.a.gridItem,
+							className: g.a.nowrap
+						}, r.a.createElement(N.a, null), x.o.coinPrice)
+					})), r.a.createElement(E.a, {
+						className: g.a.gridItem,
 						icon: r.a.createElement("img", {
 							src: `${n.a.assetPath}/img/gold/badges/award-platinum-large.png`
 						}),
@@ -215,38 +222,38 @@
 						title: s.fbt._("Platinum Award", null, {
 							hk: "3nCEqM"
 						})
-					}, Object(h.a)(s.fbt._("Gives a month of r/lounge access and ad-free browsing, and {Coin benefit placeholder} Reddit Coins for that month. You’ll need {Coin price placeholder} Coins.", [s.fbt._param("Coin benefit placeholder", ":coin_benefit:"), s.fbt._param("Coin price placeholder", ":coin_price:")], {
+					}, Object(_.a)(s.fbt._("Gives a month of r/lounge access and ad-free browsing, and {Coin benefit placeholder} Reddit Coins for that month. You’ll need {Coin price placeholder} Coins.", [s.fbt._param("Coin benefit placeholder", ":coin_benefit:"), s.fbt._param("Coin price placeholder", ":coin_price:")], {
 						hk: "1JTJWQ"
 					}), {
 						":coin_benefit:": r.a.createElement("span", {
-							className: b.a.nowrap
-						}, r.a.createElement(E.a, null), "700"),
+							className: g.a.nowrap
+						}, r.a.createElement(N.a, null), "700"),
 						":coin_price:": r.a.createElement("span", {
-							className: b.a.nowrap
-						}, r.a.createElement(E.a, null), g.q.coinPrice)
+							className: g.a.nowrap
+						}, r.a.createElement(N.a, null), x.q.coinPrice)
 					}))))
 				}
 				renderFAQSection() {
 					return r.a.createElement("div", {
-						className: b.a.faqsSection
+						className: g.a.faqsSection
 					}, r.a.createElement("h2", {
-						className: b.a.faqsTitle
+						className: g.a.faqsTitle
 					}, s.fbt._("Coins FAQ", null, {
 						hk: "21x0aE"
 					})), r.a.createElement("div", {
-						className: b.a.faqs
-					}, f.a.map((e, t) => r.a.createElement(_.a, {
+						className: g.a.faqs
+					}, f.a.map((e, t) => r.a.createElement(C.a, {
 						defaultClosed: !0,
 						question: e.prompt(),
 						key: t
 					}, e.answer()))))
 				}
 				componentWillUnmount() {
-					Object(o.b)(o.a.GoldPayment)
+					Object(p.b)(p.a.GoldPayment)
 				}
 			}
-			t.default = Object(c.c)(x)
+			t.default = Object(l.b)(O)(Object(d.c)(A))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinsMobile.593d4538ebbc5c931c4a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinsMobile.8a7744f49063c94cb90a.js.map
