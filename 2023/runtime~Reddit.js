@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.3057e7dcb40aa9131d8d.js
-// Retrieved at 5/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.17a37362de0a91b944b6.js
+// Retrieved at 5/31/2023, 1:40:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1398,7 +1398,7 @@
 						"CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c": "8da5dc14874aa32c47c8",
 						"CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults": "930cae2789eb6ed7a7b9",
 						"CollectionCommentsPage~ModProgressModule~NewCommunityProgress": "eb148b2027be31d29dc5",
-						"CollectionCommentsPage~SearchResults": "4540406644415b139a66",
+						"CollectionCommentsPage~SearchResults": "4d356568ad594a8d2d44",
 						CollectionCommentsPage: "616137580fa600492b94",
 						ProfilePrivate: "d8c4707b7907209bba54",
 						"CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit": "74516b7060044f67e198",
@@ -1532,7 +1532,7 @@
 						"vendors~Subreddit~SubredditWiki": "c17b16c26feb8de5d65f",
 						"vendors~PostCreation~Subreddit": "e1c74d9c118cc2abc046",
 						Subreddit: "3adef8bb9654521962ef",
-						CommentsPage: "d73316ed2f5c0c38ccb8",
+						CommentsPage: "eecb70092e3072d1e302",
 						"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "fbf6b3871488094312c2",
 						CryptoHarbergerTaxManageModal: "0216bab5823eaef6ca11",
 						HarbergerTaxManageModal: "0342cd37d9e7ee6fab6a",
@@ -1778,4 +1778,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.3057e7dcb40aa9131d8d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.17a37362de0a91b944b6.js.map
