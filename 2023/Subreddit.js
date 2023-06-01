@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.792c30e8c5233330b965.js
-// Retrieved at 6/1/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.c3c3a3e61bc0c89118d4.js
+// Retrieved at 6/1/2023, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -8786,34 +8786,37 @@
 						iframeURL: E.toString(),
 						isFullscreen: o
 					}
+				},
+				j = () => {
+					E.searchParams.delete("screenmode")
 				};
-			var j = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				I = n("./src/reddit/constants/keycodes.ts"),
-				S = n("./src/reddit/helpers/toggleBodyScroll/index.ts"),
-				N = n("./src/reddit/helpers/trackers/garlicBread.ts"),
-				k = n("./src/reddit/models/Toast/index.ts"),
-				w = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./src/reddit/selectors/telemetry.ts")),
-				T = n("./src/telemetry/models/Event.ts");
-			const P = function(e) {
+			var I = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				S = n("./src/reddit/constants/keycodes.ts"),
+				N = n("./src/reddit/helpers/toggleBodyScroll/index.ts"),
+				k = n("./src/reddit/helpers/trackers/garlicBread.ts"),
+				w = n("./src/reddit/models/Toast/index.ts"),
+				T = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./src/reddit/selectors/telemetry.ts")),
+				P = n("./src/telemetry/models/Event.ts");
+			const L = function(e) {
 				let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
 				return Object.keys(e).reduce((n, r) => {
 					const s = e[r];
-					return s ? (n[r] = "object" == typeof s && t <= 4 ? P(s, t + 1) : s, n) : n
+					return s ? (n[r] = "object" == typeof s && t <= 4 ? L(s, t + 1) : s, n) : n
 				}, {})
 			};
-			var L = n("./src/reddit/selectors/meta.ts"),
-				D = n("./src/reddit/selectors/platform.ts"),
-				R = n("./src/reddit/selectors/user.ts"),
-				A = n("./src/reddit/selectors/userPrefs.ts"),
-				B = n("./src/higherOrderComponents/asModal/index.tsx"),
-				M = n("./src/reddit/icons/svgs/GarlicBread/index.tsx"),
-				U = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				F = n("./src/reddit/controls/Button/index.tsx"),
-				W = n("./src/reddit/components/GarlicBreadEmbed/index.m.less"),
-				H = n.n(W);
+			var D = n("./src/reddit/selectors/meta.ts"),
+				R = n("./src/reddit/selectors/platform.ts"),
+				A = n("./src/reddit/selectors/user.ts"),
+				B = n("./src/reddit/selectors/userPrefs.ts"),
+				M = n("./src/higherOrderComponents/asModal/index.tsx"),
+				U = n("./src/reddit/icons/svgs/GarlicBread/index.tsx"),
+				F = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				W = n("./src/reddit/controls/Button/index.tsx"),
+				H = n("./src/reddit/components/GarlicBreadEmbed/index.m.less"),
+				V = n.n(H);
 			const {
-				fbt: V
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), G = e => e.preventDefault(), q = Object(B.a)(e => {
+				fbt: G
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), q = e => e.preventDefault(), K = Object(M.a)(e => {
 				let {
 					title: t,
 					modalBody: n,
@@ -8823,121 +8826,121 @@
 					onPrimaryButtonClick: a,
 					onSecondaryButtonClick: c
 				} = e;
-				return o.a.createElement(U.e, {
-					className: H.a.ModalBody
-				}, o.a.createElement(U.i, {
-					className: H.a.ModalHeader
-				}, o.a.createElement(M.a, {
-					className: H.a.ModalIcon
-				}), o.a.createElement(U.q, {
-					className: H.a.ModalTitle
-				}, t)), o.a.createElement(U.l, {
-					className: H.a.ModalMain
-				}, n), o.a.createElement(U.g, {
-					className: H.a.ModalFooter
-				}, s && o.a.createElement(F.t, {
-					kind: F.b.Button,
-					priority: F.c.Primary,
-					className: H.a.ConfirmButton,
+				return o.a.createElement(F.e, {
+					className: V.a.ModalBody
+				}, o.a.createElement(F.i, {
+					className: V.a.ModalHeader
+				}, o.a.createElement(U.a, {
+					className: V.a.ModalIcon
+				}), o.a.createElement(F.q, {
+					className: V.a.ModalTitle
+				}, t)), o.a.createElement(F.l, {
+					className: V.a.ModalMain
+				}, n), o.a.createElement(F.g, {
+					className: V.a.ModalFooter
+				}, s && o.a.createElement(W.t, {
+					kind: W.b.Button,
+					priority: W.c.Primary,
+					className: V.a.ConfirmButton,
 					onClick: a,
-					onMouseDown: G
-				}, r), !s && o.a.createElement(F.t, {
+					onMouseDown: q
+				}, r), !s && o.a.createElement(W.t, {
 					to: "/settings/account",
-					kind: F.b.InternalLink,
-					priority: F.c.Primary,
-					className: H.a.ConfirmButton,
+					kind: W.b.InternalLink,
+					priority: W.c.Primary,
+					className: V.a.ConfirmButton,
 					onClick: a,
-					onMouseDown: G
-				}, r), o.a.createElement(F.t, {
-					className: H.a.PlainButton,
-					kind: F.b.Button,
-					priority: F.c.PlainLink,
+					onMouseDown: q
+				}, r), o.a.createElement(W.t, {
+					className: V.a.PlainButton,
+					kind: W.b.Button,
+					priority: W.c.PlainLink,
 					onClick: c,
-					onMouseDown: G
+					onMouseDown: q
 				}, i)))
-			}), K = e => {
+			}), z = e => {
 				let {
 					email: t
 				} = e;
 				return o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
-					className: H.a.ModalFormItem
+					className: V.a.ModalFormItem
 				}, o.a.createElement("div", {
-					className: H.a.ModalInputLabel
-				}, V._("Email", null, {
+					className: V.a.ModalInputLabel
+				}, G._("Email", null, {
 					hk: "N93Hq"
 				})), o.a.createElement("div", {
-					className: H.a.ModalInput
-				}, t)), o.a.createElement(F.t, {
+					className: V.a.ModalInput
+				}, t)), o.a.createElement(W.t, {
 					to: "/settings/account",
-					className: H.a.PlainButton,
-					kind: F.b.InternalLink,
-					priority: F.c.PlainLink,
-					onMouseDown: G
-				}, V._("Update email address", null, {
+					className: V.a.PlainButton,
+					kind: W.b.InternalLink,
+					priority: W.c.PlainLink,
+					onMouseDown: q
+				}, G._("Update email address", null, {
 					hk: "4bgFyL"
 				})))
-			}, z = e => {
+			}, Q = e => {
 				let {
 					email: t,
 					onPrimaryButtonClick: n,
 					onSecondaryButtonClick: r
 				} = e;
-				return o.a.createElement(q, {
+				return o.a.createElement(K, {
 					isPrimaryAction: !0,
-					className: H.a.Modal,
+					className: V.a.Modal,
 					withOverlay: !0,
 					onOverlayClick: r,
-					title: V._("Verify your email to make your mark on the canvas", null, {
+					title: G._("Verify your email to make your mark on the canvas", null, {
 						hk: "Lad1Z"
 					}),
-					modalBody: o.a.createElement(K, {
+					modalBody: o.a.createElement(z, {
 						email: t
 					}),
-					primaryButtonText: V._("Send verification email", null, {
+					primaryButtonText: G._("Send verification email", null, {
 						hk: "1zdmej"
 					}),
 					onPrimaryButtonClick: n,
-					secondaryButtonText: V._("Not now", null, {
+					secondaryButtonText: G._("Not now", null, {
 						hk: "YkgPb"
 					}),
 					onSecondaryButtonClick: r
 				})
-			}, Q = e => {
+			}, Y = e => {
 				let {
 					onSecondaryButtonClick: t
 				} = e;
-				return o.a.createElement(q, {
+				return o.a.createElement(K, {
 					isPrimaryAction: !1,
-					className: H.a.Modal,
+					className: V.a.Modal,
 					withOverlay: !0,
 					onOverlayClick: t,
-					title: V._("Add your email to make your mark on the canvas", null, {
+					title: G._("Add your email to make your mark on the canvas", null, {
 						hk: "2PVqer"
 					}),
-					primaryButtonText: V._("Add an email", null, {
+					primaryButtonText: G._("Add an email", null, {
 						hk: "3rY2VL"
 					}),
-					secondaryButtonText: V._("Not now", null, {
+					secondaryButtonText: G._("Not now", null, {
 						hk: "YkgPb"
 					}),
 					onSecondaryButtonClick: t
 				})
 			}, {
-				fbt: Y
+				fbt: J
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			var J;
+			var Z;
 			! function(e) {
 				e.None = "none", e.VerifyEmail = "verifyEmail", e.AddEmail = "addEmail"
-			}(J || (J = {}));
-			const Z = Object(c.c)({
+			}(Z || (Z = {}));
+			const X = Object(c.c)({
 					session: e => e.user.session,
 					telemetryDefaults: e => {
 						const t = {
-								...Object(w.o)(e),
+								...Object(T.o)(e),
 								...{
-									action: T.d.Load,
-									source: T.f.Experiment,
-									noun: T.e.UserId
+									action: P.d.Load,
+									source: P.f.Experiment,
+									noun: P.e.UserId
 								}
 							},
 							{
@@ -8945,19 +8948,19 @@
 								source: r,
 								noun: s,
 								...o
-							} = Object(T.g)(t);
-						return P(o)
+							} = Object(P.g)(t);
+						return L(o)
 					},
 					isTooltipOpened: e => Boolean(e.tooltip.tooltipId),
 					isSearchDropdownOpened: e => e.search.isDropdownOpen,
 					isHeaderDropdownOpened: e => e.header.isSubscriptionsDropdownOpen,
-					isLoggedIn: R.S,
-					queryParams: e => Object(D.q)(e),
-					email: R.p,
-					isSubscriptionsPinned: A.c,
-					locale: L.k
+					isLoggedIn: A.S,
+					queryParams: e => Object(R.q)(e),
+					email: A.p,
+					isSubscriptionsPinned: B.c,
+					locale: D.k
 				}),
-				X = Object(i.b)(Z, e => ({
+				$ = Object(i.b)(X, e => ({
 					closeSearchDropdown: () => e(Object(m.n)()),
 					closeHeaderDropdown: () => e(Object(l.f)()),
 					closeTooltipModal: () => e(Object(b.j)()),
@@ -8965,21 +8968,21 @@
 					openProfilePage: t => e(Object(a.b)(`/user/${t}`)),
 					openErrorToast: () => e(Object(p.f)({
 						duration: p.a,
-						kind: k.b.Error,
-						text: Y._("Something wen't wrong. Please try again later.", null, {
+						kind: w.b.Error,
+						text: J._("Something wen't wrong. Please try again later.", null, {
 							hk: "4vD48K"
 						})
 					})),
 					resendEmail: () => e(Object(f.v)())
 				}));
-			class $ extends o.a.Component {
+			class ee extends o.a.Component {
 				constructor(e) {
 					super(e), this.iframeRef = Object(s.createRef)(), this.handleEscapeKey = e => {
-						e.code === I.a.Escape.toString() && this.toggleFullScreen(!1)
+						e.code === S.a.Escape.toString() && this.toggleFullScreen(!1)
 					}, this.toggleFullScreen = e => {
 						this.messenger.sendMessageScreenMode(e ? v.FullScreen : v.Preview), this.setState({
 							isFullscreen: e
-						}), Object(S.e)(!e)
+						}), Object(N.e)(!e)
 					}, this.getAuthClientData = () => {
 						const {
 							session: e,
@@ -9012,18 +9015,22 @@
 						t && "string" == typeof t && this.props.openProfilePage(t)
 					}, this.onMessageVerifyAccount = () => {
 						this.props.email ? this.setState({
-							showModal: J.VerifyEmail
+							showModal: Z.VerifyEmail
 						}) : this.setState({
-							showModal: J.AddEmail
+							showModal: Z.AddEmail
 						})
 					}, this.onClickVerifyEmail = () => {
 						this.setState({
-							showModal: J.None
+							showModal: Z.None
 						}), this.props.resendEmail()
 					}, this.onLoad = () => {
 						this.setState({
 							isLoaded: !0
-						})
+						});
+						const {
+							isFullscreen: e
+						} = C(this.props.locale);
+						this.toggleFullScreen(e)
 					}, this.onError = () => {
 						this.setState({
 							isLoaded: !1
@@ -9032,7 +9039,7 @@
 						const {
 							isFullscreen: e
 						} = this.state, t = this.isAnyRedditModalOpened();
-						e && t ? this.closeAnyRedditModal() : this.state.isFullscreen || (this.toggleFullScreen(!0), this.props.sendEvent(Object(N.b)()))
+						e && t ? this.closeAnyRedditModal() : this.state.isFullscreen || (this.toggleFullScreen(!0), this.props.sendEvent(Object(k.b)()))
 					}, this.messenger = new x(this.iframeRef, this.getAuthClientData, this.onMessageClose, this.onMessageSignIn, this.onMessageSyncCoordinates, this.onMessageOpenProfile, this.onMessageVerifyAccount);
 					const {
 						iframeURL: t
@@ -9041,18 +9048,14 @@
 						iframeURL: t,
 						isFullscreen: !1,
 						isLoaded: !1,
-						showModal: J.None
+						showModal: Z.None
 					}
 				}
 				componentDidMount() {
-					this.messenger.subscribe();
-					const {
-						isFullscreen: e
-					} = C(this.props.locale);
-					this.toggleFullScreen(e), document.removeEventListener("keydown", this.handleEscapeKey)
+					this.messenger.subscribe(), document.removeEventListener("keydown", this.handleEscapeKey)
 				}
 				componentWillUnmount() {
-					this.messenger.unsubscribe(), document.addEventListener("keydown", this.handleEscapeKey)
+					this.messenger.unsubscribe(), j(), document.addEventListener("keydown", this.handleEscapeKey)
 				}
 				componentDidUpdate(e) {
 					let {
@@ -9085,37 +9088,37 @@
 						showModal: s
 					} = this.state, i = this.isAnyRedditModalOpened();
 					return o.a.createElement("div", {
-						className: Object(d.a)(H.a.container, {
-							[H.a.expanded]: t,
-							[H.a.isSubscriptionsPinned]: this.props.isSubscriptionsPinned
+						className: Object(d.a)(V.a.container, {
+							[V.a.expanded]: t,
+							[V.a.isSubscriptionsPinned]: this.props.isSubscriptionsPinned
 						})
 					}, n && o.a.createElement("iframe", {
 						ref: this.iframeRef,
 						onLoad: this.onLoad,
 						onError: this.onError,
-						className: H.a.iframe,
+						className: V.a.iframe,
 						allow: "web-share; clipboard-read; clipboard-write",
 						src: n
 					}), !e && o.a.createElement("img", {
-						className: H.a.garlicBreadIcon,
+						className: V.a.garlicBreadIcon,
 						src: `${r.a.assetPath}/img/garlic-bread-loader.gif`
 					}), e && (!t || i) && o.a.createElement("div", {
-						className: H.a.overlay,
+						className: V.a.overlay,
 						onClick: this.onOverlayClick
-					}), s === J.VerifyEmail && o.a.createElement(z, {
+					}), s === Z.VerifyEmail && o.a.createElement(Q, {
 						email: this.props.email,
 						onPrimaryButtonClick: this.onClickVerifyEmail,
 						onSecondaryButtonClick: () => this.setState({
-							showModal: J.None
+							showModal: Z.None
 						})
-					}), s === J.AddEmail && o.a.createElement(Q, {
+					}), s === Z.AddEmail && o.a.createElement(Y, {
 						onSecondaryButtonClick: () => this.setState({
-							showModal: J.None
+							showModal: Z.None
 						})
 					}))
 				}
 			}
-			t.a = Object(j.c)(X($))
+			t.a = Object(I.c)($(ee))
 		},
 		"./src/reddit/components/Governance/CommunityCard/async.tsx": function(e, t, n) {
 			"use strict";
@@ -26817,4 +26820,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.792c30e8c5233330b965.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.c3c3a3e61bc0c89118d4.js.map
