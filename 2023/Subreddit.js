@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.3adef8bb9654521962ef.js
-// Retrieved at 5/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.792c30e8c5233330b965.js
+// Retrieved at 6/1/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -26404,7 +26404,7 @@
 				u = /^\/r\/[^/]+\/?((controversial|new|about|top)\/?)?$/,
 				m = /^\/r\/[^/]+\/w(iki)?\/?([^/]+\/?)?$/,
 				p = e => !!e.match(d) || !!e.match(l),
-				b = e => !e.match(l) && (!!e.match(u) || !!e.match(m)),
+				b = e => !e.match(l) && ("/r/all" !== e && !e.startsWith("/r/all/") && (!!e.match(u) || !!e.match(m))),
 				f = Object(s.a)(o.S, e => !e),
 				h = (e, t) => {
 					const n = t();
@@ -26817,4 +26817,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.3adef8bb9654521962ef.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.792c30e8c5233330b965.js.map

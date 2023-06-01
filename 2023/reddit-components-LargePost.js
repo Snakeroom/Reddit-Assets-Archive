@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.d79178639aee393a325c.js
-// Retrieved at 5/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.cd83913f16fa4f961a3f.js
+// Retrieved at 6/1/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -9800,7 +9800,7 @@
 				m = /^\/r\/[^/]+\/?((controversial|new|about|top)\/?)?$/,
 				u = /^\/r\/[^/]+\/w(iki)?\/?([^/]+\/?)?$/,
 				p = e => !!e.match(c) || !!e.match(l),
-				b = e => !e.match(l) && (!!e.match(m) || !!e.match(u)),
+				b = e => !e.match(l) && ("/r/all" !== e && !e.startsWith("/r/all/") && (!!e.match(m) || !!e.match(u))),
 				f = Object(o.a)(r.S, e => !e),
 				h = (e, t) => {
 					const s = t();
@@ -9948,4 +9948,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.d79178639aee393a325c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.cd83913f16fa4f961a3f.js.map

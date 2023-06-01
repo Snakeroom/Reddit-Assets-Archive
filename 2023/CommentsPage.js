@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.eecb70092e3072d1e302.js
-// Retrieved at 5/31/2023, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.750d134d63811fe3df20.js
+// Retrieved at 6/1/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "CollectionCommentsPage~SearchResults", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -48859,7 +48859,7 @@
 				u = /^\/r\/[^/]+\/?((controversial|new|about|top)\/?)?$/,
 				m = /^\/r\/[^/]+\/w(iki)?\/?([^/]+\/?)?$/,
 				p = e => !!e.match(d) || !!e.match(l),
-				b = e => !e.match(l) && (!!e.match(u) || !!e.match(m)),
+				b = e => !e.match(l) && ("/r/all" !== e && !e.startsWith("/r/all/") && (!!e.match(u) || !!e.match(m))),
 				f = Object(r.a)(o.S, e => !e),
 				h = (e, t) => {
 					const n = t();
@@ -49848,4 +49848,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.eecb70092e3072d1e302.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.750d134d63811fe3df20.js.map

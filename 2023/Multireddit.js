@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.118607e341a4c360ce2f.js
-// Retrieved at 5/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.126c07025cf61eb4c585.js
+// Retrieved at 6/1/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, n) {
@@ -1829,7 +1829,7 @@
 				u = /^\/r\/[^/]+\/?((controversial|new|about|top)\/?)?$/,
 				m = /^\/r\/[^/]+\/w(iki)?\/?([^/]+\/?)?$/,
 				b = e => !!e.match(d) || !!e.match(l),
-				p = e => !e.match(l) && (!!e.match(u) || !!e.match(m)),
+				p = e => !e.match(l) && ("/r/all" !== e && !e.startsWith("/r/all/") && (!!e.match(u) || !!e.match(m))),
 				f = Object(o.a)(s.S, e => !e),
 				h = (e, t) => {
 					const n = t();
@@ -1862,4 +1862,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.118607e341a4c360ce2f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.126c07025cf61eb4c585.js.map

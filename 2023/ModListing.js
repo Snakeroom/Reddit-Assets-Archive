@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.25bdcbfd2fd9c539ed04.js
-// Retrieved at 5/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.fa0232f272edbd3d694d.js
+// Retrieved at 6/1/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, n) {
@@ -520,9 +520,9 @@
 			})), n.d(t, "toggleHiddenSubreddit", (function() {
 				return Y
 			})), n.d(t, "hideSubreddit", (function() {
-				return Q
-			})), n.d(t, "unhideSubreddit", (function() {
 				return W
+			})), n.d(t, "unhideSubreddit", (function() {
+				return Q
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/lodash/pick.js"),
@@ -688,7 +688,7 @@
 					n(d(e));
 					const p = await u(i(), a.displayText, e);
 					p.ok ? (await n(R(m.routeMatch.match, !0)), n(c(e))) : n(l(p.body))
-				}, Q = e => Y(e, !0), W = e => Y(e, !1)
+				}, W = e => Y(e, !0), Q = e => Y(e, !1)
 		},
 		"./src/reddit/actions/postList.ts": function(e, t, n) {
 			"use strict";
@@ -2243,14 +2243,14 @@
 			var Y = Object(a.b)(J, e => ({
 					hide: t => e(Object(m.hideSubreddit)(t))
 				}))(Object(R.c)(X)),
-				Q = n("./src/lib/lessComponent.tsx"),
-				W = n("./src/reddit/components/SubredditIcon/index.tsx"),
+				W = n("./src/lib/lessComponent.tsx"),
+				Q = n("./src/reddit/components/SubredditIcon/index.tsx"),
 				z = n("./src/reddit/icons/fonts/Clear/index.tsx"),
 				Z = n("./src/reddit/selectors/profile.ts"),
 				$ = n("./src/reddit/selectors/subreddit.ts"),
 				ee = n("./src/reddit/components/ModListingSidebar/HideCommunities/SubredditsList/SubredditsListRow/index.m.less"),
 				te = n.n(ee);
-			const ne = Q.a.wrapped(W.b, "SubredditIcon", te.a),
+			const ne = W.a.wrapped(Q.b, "SubredditIcon", te.a),
 				re = Object(d.c)({
 					isApiPending: D,
 					subredditOrProfile: (e, t) => {
@@ -2559,7 +2559,7 @@
 				u = /^\/r\/[^/]+\/?((controversial|new|about|top)\/?)?$/,
 				m = /^\/r\/[^/]+\/w(iki)?\/?([^/]+\/?)?$/,
 				p = e => !!e.match(c) || !!e.match(l),
-				b = e => !e.match(l) && (!!e.match(u) || !!e.match(m)),
+				b = e => !e.match(l) && ("/r/all" !== e && !e.startsWith("/r/all/") && (!!e.match(u) || !!e.match(m))),
 				h = Object(s.a)(i.S, e => !e),
 				g = (e, t) => {
 					const n = t();
@@ -2616,4 +2616,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.25bdcbfd2fd9c539ed04.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.fa0232f272edbd3d694d.js.map
