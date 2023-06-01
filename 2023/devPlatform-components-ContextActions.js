@@ -1,35 +1,34 @@
-// https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.c5a08559b28fdd46ccd9.js
-// Retrieved at 5/25/2023, 11:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.b162575999dd07c324b4.js
+// Retrieved at 6/1/2023, 1:20:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["devPlatform-components-ContextActions"], {
 		"./src/devPlatform/components/ContextActions/index.tsx": function(t, e, o) {
 			"use strict";
 			o.r(e);
-			var a = o("./node_modules/react/index.js"),
-				i = o.n(a),
+			var i = o("./node_modules/react/index.js"),
+				a = o.n(i),
 				d = o("./node_modules/react-redux/es/index.js"),
 				n = o("./node_modules/reselect/es/index.js"),
 				r = o("./src/reddit/actions/toaster.ts"),
-				s = o("./src/reddit/contexts/PageLayer/index.tsx"),
-				l = o("./src/reddit/controls/Dropdown/Row.tsx"),
-				c = o("./src/reddit/icons/fonts/index.tsx"),
-				u = o("./src/reddit/models/Toast/index.ts"),
-				m = o("./src/reddit/selectors/experiments/devPlatform.ts"),
-				v = o("./src/devPlatform/components/ContextActions/index.m.less"),
-				h = o.n(v),
-				p = o("./node_modules/@devvit/protos/index.js"),
-				b = o("./src/reddit/models/Vote/index.ts"),
-				g = t => {
-					var e, o, a, i, d, n, r, s, l, c, u, m, v, h, g, f, y, A;
-					return p.L.fromPartial({
+				s = o("./src/reddit/controls/Dropdown/Row.tsx"),
+				l = o("./src/reddit/icons/fonts/index.tsx"),
+				c = o("./src/reddit/models/Toast/index.ts"),
+				u = o("./src/reddit/selectors/experiments/devPlatform.ts"),
+				m = o("./src/devPlatform/components/ContextActions/index.m.less"),
+				v = o.n(m),
+				h = o("./node_modules/@devvit/protos/index.js"),
+				p = o("./src/reddit/models/Vote/index.ts"),
+				b = t => {
+					var e, o, i, a, d, n, r, s, l, c, u, m, v, b, f, g, A, y;
+					return h.L.fromPartial({
 						approved: t.isApproved,
 						approvedAtUtc: null !== (e = t.approvedAtUTC) && void 0 !== e ? e : void 0,
 						approvedBy: null !== (o = t.approvedBy) && void 0 !== o ? o : void 0,
 						author: t.author,
 						authorFullname: t.authorId,
 						authorPremium: !!t.isAuthorPremium,
-						awarders: null !== (a = t.awarders) && void 0 !== a ? a : [],
-						bannedAtUtc: null !== (i = t.bannedAtUTC) && void 0 !== i ? i : void 0,
+						awarders: null !== (i = t.awarders) && void 0 !== i ? i : [],
+						bannedAtUtc: null !== (a = t.bannedAtUTC) && void 0 !== a ? a : void 0,
 						bannedBy: t.bannedBy ? String(t.bannedBy) : void 0,
 						body: null !== (d = t.bodyMD) && void 0 !== d ? d : "",
 						bodyHtml: null !== (n = t.body) && void 0 !== n ? n : "",
@@ -46,16 +45,16 @@
 						id: t.id.replace(/t[1-5]_/, ""),
 						ignoreReports: t.ignoreReports,
 						isSubmitter: t.isOp,
-						likes: t.voteState === b.a.upvoted || t.voteState !== b.a.downvoted && void 0,
+						likes: t.voteState === p.a.upvoted || t.voteState !== p.a.downvoted && void 0,
 						linkId: t.postId,
 						locked: t.isLocked,
 						modNote: null !== (m = t.modNote) && void 0 !== m ? m : void 0,
 						modReasonBy: null !== (v = t.modReasonBy) && void 0 !== v ? v : void 0,
 						name: t.id,
-						numReports: null !== (h = t.numReports) && void 0 !== h ? h : 0,
-						parentId: null !== (g = t.parentId) && void 0 !== g ? g : void 0,
+						numReports: null !== (b = t.numReports) && void 0 !== b ? b : 0,
+						parentId: null !== (f = t.parentId) && void 0 !== f ? f : void 0,
 						permalink: t.permalink,
-						removalReason: null !== (f = t.modRemovalReason) && void 0 !== f ? f : void 0,
+						removalReason: null !== (g = t.modRemovalReason) && void 0 !== g ? g : void 0,
 						removed: t.isRemoved,
 						rteMode: t.media.rteMode,
 						saved: t.isSaved,
@@ -65,22 +64,22 @@
 						spam: t.isSpam,
 						stickied: t.isStickied,
 						subredditId: t.subredditId,
-						linkTitle: null !== (y = t.postTitle) && void 0 !== y ? y : void 0,
-						linkAuthor: null !== (A = t.postAuthor) && void 0 !== A ? A : void 0
+						linkTitle: null !== (A = t.postTitle) && void 0 !== A ? A : void 0,
+						linkAuthor: null !== (y = t.postAuthor) && void 0 !== y ? y : void 0
 					})
 				},
 				f = o("./src/reddit/models/Flair/index.ts"),
-				y = o("./src/reddit/models/Media/index.ts"),
+				g = o("./src/reddit/models/Media/index.ts"),
 				A = t => {
-					var e, o, a, i, d, n, r, s, l, c, u, m, v, h, g, A, S, O, w;
-					return p.L.fromPartial({
+					var e, o, i, a, d, n, r, s, l, c, u, m, v, b, A, y, S, w, O;
+					return h.L.fromPartial({
 						approved: t.isApproved,
 						approvedAtUtc: null !== (e = t.approvedAtUTC) && void 0 !== e ? e : void 0,
 						approvedBy: null !== (o = t.approvedBy) && void 0 !== o ? o : void 0,
 						archived: t.isArchived,
 						author: t.author,
-						authorFlairBackgroundColor: null === (a = t.flair[0]) || void 0 === a ? void 0 : a.backgroundColor,
-						authorFlairCssClass: null === (i = t.flair[0]) || void 0 === i ? void 0 : i.cssClass,
+						authorFlairBackgroundColor: null === (i = t.flair[0]) || void 0 === i ? void 0 : i.backgroundColor,
+						authorFlairCssClass: null === (a = t.flair[0]) || void 0 === a ? void 0 : a.cssClass,
 						authorFlairRichtext: (null === (d = t.flair[0]) || void 0 === d ? void 0 : d.type) === f.f.Richtext ? t.flair[0].richtext : void 0,
 						authorFlairTemplateId: null === (n = t.flair[0]) || void 0 === n ? void 0 : n.templateId,
 						authorFlairText: (null === (r = t.flair[0]) || void 0 === r ? void 0 : r.type) === f.f.Text ? t.flair[0].text : void 0,
@@ -98,15 +97,15 @@
 						distinguished: null !== (u = t.distinguishType) && void 0 !== u ? u : void 0,
 						id: t.id.replace(/t[1-5]_/, ""),
 						ignoreReports: t.ignoreReports,
-						likes: t.voteState === b.a.upvoted || t.voteState !== b.a.downvoted && void 0,
+						likes: t.voteState === p.a.upvoted || t.voteState !== p.a.downvoted && void 0,
 						locked: t.isLocked,
 						modNote: null !== (m = t.modNote) && void 0 !== m ? m : void 0,
 						modReasonBy: null !== (v = t.modReasonBy) && void 0 !== v ? v : void 0,
-						modReasonTitle: null !== (h = t.modRemovalReason) && void 0 !== h ? h : void 0,
+						modReasonTitle: null !== (b = t.modRemovalReason) && void 0 !== b ? b : void 0,
 						name: t.id,
-						numReports: null !== (g = t.numReports) && void 0 !== g ? g : void 0,
+						numReports: null !== (A = t.numReports) && void 0 !== A ? A : void 0,
 						permalink: t.permalink,
-						removalReason: null !== (A = t.modRemovalReason) && void 0 !== A ? A : void 0,
+						removalReason: null !== (y = t.modRemovalReason) && void 0 !== y ? y : void 0,
 						removed: t.isRemoved,
 						saved: t.saved,
 						score: t.score,
@@ -119,17 +118,17 @@
 						topAwardedType: t.topAwardedType,
 						numComments: t.numComments,
 						over18: t.isNSFW,
-						selftext: t.media && Object(y.N)(t.media) ? t.media.markdownContent : void 0,
-						selftextHtml: t.media && Object(y.N)(t.media) ? t.media.content : void 0,
+						selftext: t.media && Object(g.N)(t.media) ? t.media.markdownContent : void 0,
+						selftextHtml: t.media && Object(g.N)(t.media) ? t.media.content : void 0,
 						spoiler: String(t.isSpoiler),
 						thumbnail: t.thumbnail.url,
 						thumbnailWidth: null !== (S = t.thumbnail.width) && void 0 !== S ? S : void 0,
-						thumbnailHeight: null !== (O = t.thumbnail.height) && void 0 !== O ? O : void 0,
+						thumbnailHeight: null !== (w = t.thumbnail.height) && void 0 !== w ? w : void 0,
 						title: t.title,
-						url: null === (w = t.source) || void 0 === w ? void 0 : w.url
+						url: null === (O = t.source) || void 0 === O ? void 0 : O.url
 					})
 				},
-				S = t => p.U.fromPartial({
+				y = t => h.U.fromPartial({
 					freeFormReports: t.freeFormReports,
 					communityIcon: t.communityIcon,
 					displayName: t.name,
@@ -149,77 +148,77 @@
 					userIsSubscriber: t.isSubscribed,
 					id: t.id.replace(/t[1-5]_/, "")
 				}),
-				O = o("./src/devPlatform/components/FormModal/modals.ts"),
+				S = o("./src/devPlatform/components/FormModal/modals.ts"),
 				w = o("./src/devPlatform/components/UserInputModal/modals.ts"),
-				x = o("./src/devPlatform/singleton/runtime.ts");
+				O = o("./src/devPlatform/singleton/runtime.ts");
 
-			function R(t, e, o, a) {
-				let i = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : {};
+			function x(t, e, o, i) {
+				let a = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : {};
 				e.forEach(e => {
 					var d, n;
 					switch (e.type) {
-						case p.l.EFFECT_SHOW_TOAST:
+						case h.l.EFFECT_SHOW_TOAST:
 							if (null === (d = e.showToast) || void 0 === d ? void 0 : d.toast) {
-								const t = e.showToast.toast.appearance === p.Y.SUCCESS ? u.b.SuccessCommunityGreen : void 0;
+								const t = e.showToast.toast.appearance === h.Y.SUCCESS ? c.b.SuccessCommunityGreen : void 0;
 								o(e.showToast.toast.text, t)
 							}
 							break;
-						case p.l.EFFECT_SHOW_FORM:
-							(null === (n = e.showForm) || void 0 === n ? void 0 : n.form) && a(e.showForm.form, function(t, e, o, a) {
-								let i = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : {};
+						case h.l.EFFECT_SHOW_FORM:
+							(null === (n = e.showForm) || void 0 === n ? void 0 : n.form) && i(e.showForm.form, function(t, e, o, i) {
+								let a = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : {};
 								return async d => {
-									const n = x.a.getActor(t);
+									const n = O.a.getActor(t);
 									if (!n) return;
-									const r = await n.As(p.Z).HandleUIEvent(p.s.fromPartial({
+									const r = await n.As(h.Z).HandleUIEvent(h.s.fromPartial({
 										event: {
 											formSubmitted: {
 												formId: e.id,
 												results: d
 											}
 										},
-										state: i
+										state: a
 									}));
-									R(t, r.effects, o, a, r.state)
+									x(t, r.effects, o, i, r.state)
 								}
-							}(t, e.showForm.form, o, a, i))
+							}(t, e.showForm.form, o, i, a))
 					}
 				})
 			}
-			var M = R,
-				C = o("./src/higherOrderComponents/makeAsync.tsx"),
-				_ = o("./src/lib/loadWithRetries/index.ts"),
-				I = o("./src/reddit/components/GlobalModalContainer/registry.ts"),
-				P = o("./src/reddit/constants/modals.ts");
-			const T = Object(C.a)({
-					getComponent: () => Object(_.a)(() => o.e(2).then(o.bind(null, "./src/devPlatform/components/FormModal/index.tsx"))).then(t => t.default),
+			var R = x,
+				M = o("./src/higherOrderComponents/makeAsync.tsx"),
+				C = o("./src/lib/loadWithRetries/index.ts"),
+				_ = o("./src/reddit/components/GlobalModalContainer/registry.ts"),
+				I = o("./src/reddit/constants/modals.ts");
+			const P = Object(M.a)({
+					getComponent: () => Object(C.a)(() => o.e(2).then(o.bind(null, "./src/devPlatform/components/FormModal/index.tsx"))).then(t => t.default),
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
-				j = t => () => {
+				T = t => () => {
 					t()
 				};
-			Object(I.b)(P.a.DEV_PLATFORM_FORM_MODAL, t => i.a.createElement(T, {
-				onOverlayClick: j(t),
+			Object(_.b)(I.a.DEV_PLATFORM_FORM_MODAL, t => a.a.createElement(P, {
+				onOverlayClick: T(t),
 				withOverlay: !0
 			}));
-			const L = Object(C.a)({
-					getComponent: () => Object(_.a)(() => o.e(3).then(o.bind(null, "./src/devPlatform/components/UserInputModal/index.tsx"))).then(t => t.default),
+			const j = Object(M.a)({
+					getComponent: () => Object(C.a)(() => o.e(3).then(o.bind(null, "./src/devPlatform/components/UserInputModal/index.tsx"))).then(t => t.default),
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
-				k = t => () => {
+				L = t => () => {
 					t()
 				};
-			Object(I.b)(P.a.DEV_PLATFORM_USER_INPUT_MODAL, t => i.a.createElement(L, {
-				onOverlayClick: k(t),
+			Object(_.b)(I.a.DEV_PLATFORM_USER_INPUT_MODAL, t => a.a.createElement(j, {
+				onOverlayClick: L(t),
 				withOverlay: !0
 			}));
-			const F = Object(d.b)(() => Object(n.c)({}), t => ({
+			const k = Object(d.b)(() => Object(n.c)({}), t => ({
 					showToast: (e, o) => {
 						t(Object(r.f)(Object(r.e)(e, o)))
 					},
 					showForm: (e, o) => {
-						t(Object(O.b)({
+						t(Object(S.b)({
 							form: e,
 							onSubmit: o
 						}))
@@ -231,81 +230,82 @@
 						}))
 					}
 				})),
-				U = (t, e) => ({
-					post: t === p.h.POST ? A(e) : void 0,
-					comment: t === p.h.COMMENT ? g(e) : void 0,
-					subreddit: t === p.h.SUBREDDIT ? S(e) : void 0
+				F = (t, e) => ({
+					post: t === h.h.POST ? A(e) : void 0,
+					comment: t === h.h.COMMENT ? b(e) : void 0,
+					subreddit: t === h.h.SUBREDDIT ? y(e) : void 0
 				});
-			e.default = F(t => {
+			e.default = k(t => {
 				const {
 					moderator: e,
 					contextType: o,
-					contextData: a,
+					contextData: i,
 					onShowUserInput: n,
-					showToast: r,
-					showForm: v
-				} = t, b = Object(d.e)(m.a), g = Object(s.ib)(), f = Object(d.e)(t => Object(s.s)(t, {
-					pageLayer: g
-				}));
-				let y = [];
-				b && f && (x.a.init(), y = x.a.loadSubreddit(f));
-				const A = (t, e) => {
+					subreddit: r,
+					showToast: m,
+					showForm: p
+				} = t;
+				if (!Object(d.e)(u.a)) return null;
+				if (null == r) return null;
+				let b = [];
+				O.a.init(), b = O.a.loadSubreddit(r);
+				const f = (t, e) => {
 						n(t, e)
 					},
-					S = [];
-				return y.forEach(t => {
-					var d;
-					return null === (d = t.actions) || void 0 === d ? void 0 : d.actions.filter(((t, e) => o => {
-						var a, i, d, n, r;
-						if (e && !(null === (a = o.users) || void 0 === a ? void 0 : a.moderator) || !e && (null === (i = o.users) || void 0 === i ? void 0 : i.moderator)) return !1;
+					g = [];
+				return b.forEach(d => {
+					var n;
+					return null === (n = d.actions) || void 0 === n ? void 0 : n.actions.filter(((t, e) => o => {
+						var i, a, d, n, r;
+						if (e && !(null === (i = o.users) || void 0 === i ? void 0 : i.moderator) || !e && (null === (a = o.users) || void 0 === a ? void 0 : a.moderator)) return !1;
 						switch (t) {
-							case p.h.POST:
+							case h.h.POST:
 								return !!(null === (d = o.contexts) || void 0 === d ? void 0 : d.post);
-							case p.h.COMMENT:
+							case h.h.COMMENT:
 								return !!(null === (n = o.contexts) || void 0 === n ? void 0 : n.comment);
-							case p.h.SUBREDDIT:
+							case h.h.SUBREDDIT:
 								return !!(null === (r = o.contexts) || void 0 === r ? void 0 : r.subreddit);
 							default:
 								return !1
 						}
-					})(o, e)).forEach(d => {
-						const n = function(t, e, o, a, i, d, n) {
+					})(o, !!e)).forEach(n => {
+						const r = function(t, e, o, i, a, d, n) {
 							return () => {
-								const r = i => {
+								const r = a => {
 									var r, s;
-									return null === (s = null === (r = x.a.getActor(t)) || void 0 === r ? void 0 : r.As(p.f)) || void 0 === s ? void 0 : s.OnAction(p.g.fromPartial({
+									return null === (s = null === (r = O.a.getActor(t)) || void 0 === r ? void 0 : r.As(h.f)) || void 0 === s ? void 0 : s.OnAction(h.g.fromPartial({
 										actionId: e.actionId,
 										context: o,
-										...U(o, a),
-										userInput: i
+										...F(o, i),
+										userInput: a
 									})).then(o => {
-										var i;
-										if ((null === (i = o.effects) || void 0 === i ? void 0 : i.length) > 0) M(t, o.effects, d, n, {
+										var a;
+										if ((null === (a = o.effects) || void 0 === a ? void 0 : a.length) > 0) R(t, o.effects, d, n, {
 											__contextAction: {
 												actionId: e.actionId,
-												thingId: a.id
+												thingId: i.id
 											}
 										});
 										else if (null != o.message && null != o.success) {
-											const t = o.success ? u.b.SuccessCommunityGreen : u.b.Error;
+											const t = o.success ? c.b.SuccessCommunityGreen : c.b.Error;
 											d(o.message, t)
 										}
 									})
 								};
-								e.userInput ? i(e, r) : r()
+								e.userInput ? a(e, r) : r()
 							}
-						}(t.actorHostname, d, o, a, A, r, v);
-						S.push(i.a.createElement(l.b, {
-							className: h.a.DropdownRow,
-							displayText: d.name,
-							key: `${t.actorHostname}.${d.actionId}`,
-							onClick: n
-						}, i.a.createElement(c.a, {
+						}(d.actorHostname, n, o, i, f, m, p);
+						g.push(a.a.createElement(s.b, {
+							className: t.isOnModQueueOverflowMenu ? v.a.DropdownRowBorderless : v.a.Dropdown,
+							displayText: n.name,
+							key: `${d.actorHostname}.${n.actionId}`,
+							onClick: r
+						}, a.a.createElement(l.a, {
 							name: e ? "mod" : "bot",
-							className: h.a.Icon
+							className: v.a.Icon
 						})))
 					})
-				}), i.a.createElement(i.a.Fragment, null, S)
+				}), a.a.createElement(a.a.Fragment, null, g)
 			})
 		},
 		"./src/devPlatform/components/FormModal/modals.ts": function(t, e, o) {
@@ -315,18 +315,18 @@
 			})), o.d(e, "b", (function() {
 				return u
 			}));
-			var a = o("./src/lib/initializeClient/installReducer.ts"),
-				i = o("./src/lib/makeActionCreator/index.ts"),
+			var i = o("./src/lib/initializeClient/installReducer.ts"),
+				a = o("./src/lib/makeActionCreator/index.ts"),
 				d = o("./src/reddit/actions/modal.ts"),
 				n = o("./src/reddit/constants/modals.ts"),
 				r = o("./src/reddit/reducers/features/devPlatform/index.ts"),
 				s = o("./src/devPlatform/constants.ts");
-			Object(a.a)({
+			Object(i.a)({
 				features: {
 					devPlatform: r.a
 				}
 			});
-			const l = Object(i.a)(s.e),
+			const l = Object(a.a)(s.e),
 				c = () => async t => {
 					t(Object(d.g)(n.a.DEV_PLATFORM_FORM_MODAL))
 				}, u = t => {
@@ -349,18 +349,18 @@
 			})), o.d(e, "a", (function() {
 				return u
 			}));
-			var a = o("./src/lib/initializeClient/installReducer.ts"),
-				i = o("./src/lib/makeActionCreator/index.ts"),
+			var i = o("./src/lib/initializeClient/installReducer.ts"),
+				a = o("./src/lib/makeActionCreator/index.ts"),
 				d = o("./src/reddit/actions/modal.ts"),
 				n = o("./src/reddit/constants/modals.ts"),
 				r = o("./src/reddit/reducers/features/devPlatform/index.ts"),
 				s = o("./src/devPlatform/constants.ts");
-			Object(a.a)({
+			Object(i.a)({
 				features: {
 					devPlatform: r.a
 				}
 			});
-			const l = Object(i.a)(s.f),
+			const l = Object(a.a)(s.f),
 				c = t => {
 					let {
 						action: e,
@@ -380,8 +380,8 @@
 		"./src/devPlatform/singleton/runtime.ts": function(t, e, o) {
 			"use strict";
 			o("./node_modules/core-js/modules/web.dom.iterable.js");
-			var a = o("./src/config.ts"),
-				i = o("./node_modules/@devvit/protos/index.js"),
+			var i = o("./src/config.ts"),
+				a = o("./node_modules/@devvit/protos/index.js"),
 				d = o("./node_modules/@devvit/runtimes/platform/browser/BrowserRuntime.js"),
 				n = o("./src/devPlatform/constants.ts"),
 				r = o("./node_modules/@devvit/runtimes/worker.bootstrap.cjs"),
@@ -408,7 +408,7 @@
 				constructor() {
 					var t;
 					if (this.gatewayUrl = "", this.loadedSubId = "", this.subActors = [], this.loadedMetadata = null, this.mockMetadata = null, this.sortedContextActions = [], this.localStorageAvailable = Object(u.a)(), this.runtimeInitialized = !1, this.debugLogging = !1, this.localStorageAvailable) {
-						this.gatewayUrl = null !== (t = localStorage.getItem(n.b)) && void 0 !== t ? t : a.a.devPlatformGatewayUrl;
+						this.gatewayUrl = null !== (t = localStorage.getItem(n.b)) && void 0 !== t ? t : i.a.devPlatformGatewayUrl;
 						const e = localStorage.getItem(n.c);
 						e && (this.mockMetadata = JSON.parse(e)), this.debugLogging = "true" === localStorage.getItem(n.d)
 					}
@@ -423,7 +423,7 @@
 					return this.gatewayUrl
 				}
 				setGatewayUrl(t) {
-					return this.gatewayUrl = t, this.localStorageAvailable && (t === a.a.devPlatformGatewayUrl ? localStorage.removeItem(n.b) : localStorage.setItem(n.b, t)), this.reloadSubreddit(), this.subActors.length
+					return this.gatewayUrl = t, this.localStorageAvailable && (t === i.a.devPlatformGatewayUrl ? localStorage.removeItem(n.b) : localStorage.setItem(n.b, t)), this.reloadSubreddit(), this.subActors.length
 				}
 				getDebugLogging() {
 					return this.debugLogging
@@ -439,7 +439,7 @@
 					if (this.loadedMetadata = null, this.debugLog(() => "Metadata not yet loaded"), void 0 !== t.devPlatformMetadata ? (this.debugLog(() => {
 							var e;
 							return `Loading metadata from Subreddit (${null===(e=t.devPlatformMetadata)||void 0===e?void 0:e.length} bytes)`
-						}), this.loadedMetadata = i.j.fromJSON(JSON.parse(atob(t.devPlatformMetadata))), this.debugLog(() => {
+						}), this.loadedMetadata = a.j.fromJSON(JSON.parse(atob(t.devPlatformMetadata))), this.debugLog(() => {
 							var t;
 							return ["metadata.installedRemoteApps:", null === (t = this.loadedMetadata) || void 0 === t ? void 0 : t.installedRemoteApps]
 						}), this.debugLog(() => {
@@ -451,7 +451,7 @@
 					return this.debugLog(() => `Connecting to ${this.loadedMetadata.installedRemoteApps.length} remote actors from ${e.size} apps`), this.loadedMetadata.installedRemoteApps.forEach(t => {
 						const e = t.provides.flatMap(t => {
 								try {
-									return [i.i.fromSerializable(t)]
+									return [a.i.fromSerializable(t)]
 								} catch {
 									this.debugLog(() => `Unknown app type, skipping: ${t.fullName}`)
 								}
@@ -462,12 +462,12 @@
 								provides: e
 							};
 						this.loadActor(o), this.subActors.push(o)
-					}), this.debugLog(() => `Found ${this.loadedMetadata.contextActions.reduce((t,e)=>{var o,a;return t+(null!==(a=null===(o=e.actions)||void 0===o?void 0:o.actions.length)&&void 0!==a?a:0)},0)} actions across ${this.loadedMetadata.contextActions.length} actors`), this.sortedContextActions = this.loadedMetadata.contextActions.sort((t, e) => t.actorHostname.localeCompare(e.actorHostname)).map(t => {
-						var e, o, a;
+					}), this.debugLog(() => `Found ${this.loadedMetadata.contextActions.reduce((t,e)=>{var o,i;return t+(null!==(i=null===(o=e.actions)||void 0===o?void 0:o.actions.length)&&void 0!==i?i:0)},0)} actions across ${this.loadedMetadata.contextActions.length} actors`), this.sortedContextActions = this.loadedMetadata.contextActions.sort((t, e) => t.actorHostname.localeCompare(e.actorHostname)).map(t => {
+						var e, o, i;
 						return {
 							actorHostname: t.actorHostname,
 							actions: {
-								actions: null !== (a = null === (o = null === (e = t.actions) || void 0 === e ? void 0 : e.actions) || void 0 === o ? void 0 : o.sort((t, e) => t.name.localeCompare(e.name))) && void 0 !== a ? a : []
+								actions: null !== (i = null === (o = null === (e = t.actions) || void 0 === e ? void 0 : e.actions) || void 0 === o ? void 0 : o.sort((t, e) => t.name.localeCompare(e.name))) && void 0 !== i ? i : []
 							}
 						}
 					}), this.sortedContextActions
@@ -483,10 +483,10 @@
 				loadActor(t) {
 					const e = t.hostname.split("."),
 						o = {
-							"devvit-installation": i.T.fromPartial({
+							"devvit-installation": a.T.fromPartial({
 								values: [e[0]]
 							}),
-							"devvit-actor": i.T.fromPartial({
+							"devvit-actor": a.T.fromPartial({
 								values: [e[2]]
 							})
 						};
@@ -511,24 +511,24 @@
 			})), o.d(e, "a", (function() {
 				return n
 			}));
-			const a = {},
-				i = () => null;
+			const i = {},
+				a = () => null;
 
 			function d(t, e) {
-				if (t in a) throw new Error(`Modal with id ${t} already registered!`);
-				a[t] = e
+				if (t in i) throw new Error(`Modal with id ${t} already registered!`);
+				i[t] = e
 			}
 
 			function n(t) {
-				return t && t in a ? a[t] : i
+				return t && t in i ? i[t] : a
 			}
 		},
 		"./src/reddit/reducers/features/devPlatform/index.ts": function(t, e, o) {
 			"use strict";
-			var a = o("./node_modules/redux/es/redux.js"),
-				i = o("./src/lib/initializeClient/installReducer.ts"),
+			var i = o("./node_modules/redux/es/redux.js"),
+				a = o("./src/lib/initializeClient/installReducer.ts"),
 				d = o("./src/devPlatform/constants.ts");
-			Object(i.a)({
+			Object(a.a)({
 				features: {
 					devPlatform: m
 				}
@@ -539,7 +539,7 @@
 				const o = e.payload;
 				return e.type === d.e ? o.form : t
 			};
-			Object(i.a)({
+			Object(a.a)({
 				features: {
 					devPlatform: m
 				}
@@ -550,11 +550,11 @@
 					const o = e.payload;
 					return e.type === d.e ? o.onSubmit : t
 				},
-				s = Object(a.c)({
+				s = Object(i.c)({
 					form: n,
 					onSubmit: r
 				});
-			Object(i.a)({
+			Object(a.a)({
 				features: {
 					devPlatform: m
 				}
@@ -581,11 +581,11 @@
 							return t
 					}
 				},
-				u = Object(a.c)({
+				u = Object(i.c)({
 					action: l,
 					onAction: c
 				}),
-				m = e.a = Object(a.c)({
+				m = e.a = Object(i.c)({
 					formModal: s,
 					userInputModal: u
 				})
@@ -593,4 +593,4 @@
 		"ignored /drone/src/node_modules/cron-parser/lib fs": function(t, e) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.c5a08559b28fdd46ccd9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.b162575999dd07c324b4.js.map
