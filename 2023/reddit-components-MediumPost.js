@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.74a21d3fc8f362de82c0.js
-// Retrieved at 6/1/2023, 1:20:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.113bfbba570de30abebc.js
+// Retrieved at 6/5/2023, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2435,7 +2435,7 @@
 		"./src/reddit/components/ModQueueActionBar/StatusDisplays/FilteredStatusDisplay.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return M
+				return U
 			}));
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n),
@@ -2445,16 +2445,40 @@
 				d = s("./src/reddit/icons/fonts/index.tsx"),
 				c = s("./src/reddit/models/ModQueueTrigger/index.ts"),
 				l = s("./src/reddit/components/RichTextJson/index.tsx"),
-				u = s("./src/reddit/constants/experiments.ts"),
-				m = s("./src/reddit/hooks/useExperimentVariant.ts"),
-				p = s("./src/reddit/hooks/useMounted.ts"),
-				b = (s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./src/reddit/constants/localStorage.ts")),
-				f = s("./src/reddit/hooks/useLocalStorage.ts"),
-				h = s("./src/reddit/hooks/useUserContext.ts");
-			const x = () => {
+				u = s("./src/reddit/constants/things.ts"),
+				m = s("./src/reddit/selectors/telemetry.ts");
+			const p = e => t => ({
+					source: "moderator",
+					action: "click",
+					noun: e.isCorrect ? "filter_is_correct" : "filter_is_incorrect",
+					...b(e, t)
+				}),
+				b = (e, t) => {
+					const s = e.contentId.startsWith(u.a) ? e.contentId : "",
+						n = e.contentId.startsWith(u.b) ? e.contentId : "";
+					return {
+						comment: s ? Object(m.h)({
+							state: t,
+							commentId: s
+						}) : null,
+						post: n ? Object(m.K)(t, n) : null,
+						filter: {
+							reference: {
+								name: e.filterName
+							}
+						},
+						subreddit: Object(m.ob)(t, e.contentId),
+						...m.o(t)
+					}
+				};
+			var f = s("./src/reddit/hooks/useIntersectionObserver.ts"),
+				h = (s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./src/reddit/constants/localStorage.ts")),
+				x = s("./src/reddit/hooks/useLocalStorage.ts"),
+				_ = s("./src/reddit/hooks/useUserContext.ts");
+			const v = () => {
 				var e, t;
-				const s = `${null!==(t=null===(e=Object(h.a)().currentUser)||void 0===e?void 0:e.id)&&void 0!==t?t:""}-${b.b.SAFETY_FILTER_FEEDBACK_CONTENT_IDS}`,
-					[n, o] = Object(f.a)(s, []);
+				const s = `${null!==(t=null===(e=Object(_.a)().currentUser)||void 0===e?void 0:e.id)&&void 0!==t?t:""}-${h.b.SAFETY_FILTER_FEEDBACK_CONTENT_IDS}`,
+					[n, o] = Object(x.a)(s, []);
 				return {
 					contentIds: new Set(n),
 					addContentId: e => {
@@ -2463,20 +2487,52 @@
 					}
 				}
 			};
-			var _ = s("./src/reddit/components/ModQueueActionBar/helpers.ts"),
-				v = s("./node_modules/lodash/debounce.js"),
-				O = s.n(v),
-				E = s("./src/reddit/components/InfoTextTooltip/Hooked.tsx"),
-				g = s("./src/reddit/hooks/useInfoTextTooltip.ts");
-			const k = e => {
+			var O = s("./src/reddit/hooks/useTracking.ts");
+			const E = {
+				threshold: [.5]
+			};
+			var g = e => {
+					const t = Object(n.useRef)(null),
+						s = Object(O.a)(),
+						{
+							contentIds: r
+						} = v(),
+						a = Object(n.useCallback)(t => {
+							t.forEach(t => {
+								let {
+									intersectionRatio: n
+								} = t;
+								n >= .5 && !r.has(e.contentId) && s((e => t => ({
+									source: "modqueue",
+									action: "view",
+									noun: "hitl_filter_feedback",
+									...b(e, t)
+								}))({
+									...e
+								}))
+							})
+						}, [s, e, r]);
+					return Object(f.a)(t, a, E), o.a.createElement("div", {
+						ref: t
+					}, e.children)
+				},
+				k = s("./src/reddit/constants/experiments.ts"),
+				C = s("./src/reddit/hooks/useExperimentVariant.ts"),
+				S = s("./src/reddit/hooks/useMounted.ts"),
+				y = s("./src/reddit/components/ModQueueActionBar/helpers.ts"),
+				j = s("./node_modules/lodash/debounce.js"),
+				N = s.n(j),
+				w = s("./src/reddit/components/InfoTextTooltip/Hooked.tsx"),
+				R = s("./src/reddit/hooks/useInfoTextTooltip.ts");
+			const T = e => {
 				let {
 					confidence: t,
 					children: s
 				} = e;
-				const n = Object(g.a)({
+				const n = Object(R.a)({
 						placement: "top-end"
 					}),
-					i = O()(n.hide, 500);
+					i = N()(n.hide, 500);
 				return o.a.createElement("div", {
 					onMouseEnter: () => {
 						n.show(), i.cancel()
@@ -2504,7 +2560,7 @@
 								hk: "2UzCkt"
 							})
 					}
-				}(t)), o.a.createElement(E.a, {
+				}(t)), o.a.createElement(w.a, {
 					popperProps: n.popperProps,
 					arrowProps: n.arrowProps,
 					visible: n.visible,
@@ -2516,123 +2572,97 @@
 					name: "info_fill"
 				}), o.a.createElement("div", null, s))))
 			};
-			var C = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				S = s("./src/reddit/constants/things.ts"),
-				y = s("./src/reddit/selectors/telemetry.ts"),
-				j = s("./src/reddit/components/ModQueueActionBar/StatusDisplays/SafetyFilterFeedbackPrompt.m.less"),
-				N = s.n(j);
-			const w = e => t => ({
-					source: "moderator",
-					action: "click",
-					noun: e.isCorrect ? "filter_is_correct" : "filter_is_incorrect",
-					comment: e.commentId ? Object(y.h)({
-						state: t,
-						commentId: e.commentId
-					}) : null,
-					post: e.postId ? Object(y.K)(t, e.postId) : null,
-					filter: {
-						reference: {
-							name: e.filterName
-						}
-					},
-					subreddit: Object(y.ob)(t, e.commentId || e.postId),
-					...y.o(t)
-				}),
-				R = e => {
-					let {
+			var A = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				P = s("./src/reddit/components/ModQueueActionBar/StatusDisplays/SafetyFilterFeedbackPrompt.m.less"),
+				I = s.n(P);
+			const M = e => {
+				let {
+					filterName: t,
+					contentId: s
+				} = e;
+				const a = Object(A.b)(),
+					{
+						addContentId: i
+					} = v(),
+					[d, c] = Object(n.useState)(!1),
+					l = e => t => {
+						t.stopPropagation(), i(s), c(!0), a(e)
+					};
+				return o.a.createElement("div", {
+					className: I.a.feedbackPromptContainer
+				}, o.a.createElement("p", {
+					className: I.a.feedbackPrompt
+				}, d ? r.fbt._("Thanks for your feedback!", null, {
+					hk: "3ImVsP"
+				}) : r.fbt._("Was this accurate?", null, {
+					hk: "370juX"
+				})), !d && o.a.createElement(o.a.Fragment, null, o.a.createElement("button", {
+					"aria-label": "feedback response yes",
+					className: I.a.feedbackPromptButton,
+					onClick: l(p({
+						isCorrect: !0,
 						filterName: t,
 						contentId: s
-					} = e;
-					const a = Object(C.b)(),
-						{
-							addContentId: i
-						} = x(),
-						d = s.startsWith(S.a) ? s : "",
-						c = s.startsWith(S.b) ? s : "",
-						[l, u] = Object(n.useState)(!1),
-						m = e => t => {
-							t.stopPropagation(), i(s), u(!0), a(e)
-						};
-					return o.a.createElement("div", {
-						className: N.a.feedbackPromptContainer
-					}, o.a.createElement("p", {
-						className: N.a.feedbackPrompt
-					}, l ? r.fbt._("Thanks for your feedback!", null, {
-						hk: "3ImVsP"
-					}) : r.fbt._("Was this accurate?", null, {
-						hk: "370juX"
-					})), !l && o.a.createElement(o.a.Fragment, null, o.a.createElement("button", {
-						"aria-label": "feedback response yes",
-						className: N.a.feedbackPromptButton,
-						onClick: m(w({
-							isCorrect: !0,
-							filterName: t,
-							commentId: d,
-							postId: c
-						}))
-					}, r.fbt._("Yes", null, {
-						hk: "QULVC"
-					})), o.a.createElement("span", {
-						className: N.a.feedbackButtonMiddot
-					}, "·"), o.a.createElement("button", {
-						"aria-label": "feedback response no",
-						className: N.a.feedbackPromptButton,
-						onClick: m(w({
-							isCorrect: !1,
-							filterName: t,
-							commentId: d,
-							postId: c
-						}))
-					}, r.fbt._("No", null, {
-						hk: "4zGto5"
-					}))))
-				};
-			var T = s("./src/reddit/components/ModQueueActionBar/StatusDisplays/StatusDisplay.m.less"),
-				A = s.n(T);
-			const P = e => {
+					}))
+				}, r.fbt._("Yes", null, {
+					hk: "QULVC"
+				})), o.a.createElement("span", {
+					className: I.a.feedbackButtonMiddot
+				}, "·"), o.a.createElement("button", {
+					"aria-label": "feedback response no",
+					className: I.a.feedbackPromptButton,
+					onClick: l(p({
+						isCorrect: !1,
+						filterName: t,
+						contentId: s
+					}))
+				}, r.fbt._("No", null, {
+					hk: "4zGto5"
+				}))))
+			};
+			var D = s("./src/reddit/components/ModQueueActionBar/StatusDisplays/StatusDisplay.m.less"),
+				L = s.n(D);
+			const F = e => {
 					if (e) try {
 						return JSON.parse(e)
 					} catch {
 						return
 					}
 				},
-				I = e => {
+				B = e => {
 					let {
 						reasonRichText: t,
 						reason: s,
 						feedbackPrompt: n
 					} = e;
-					const a = Object(p.a)();
+					const a = Object(S.a)();
 					if (n) {
 						if (!a) return o.a.createElement("p", {
-							className: A.a.reasonText
+							className: L.a.reasonText
 						}, r.fbt._("Loading filter reason…", null, {
 							hk: "K3Ipd"
 						}));
-						if (!n.feedbackSent) return o.a.createElement(R, {
-							filterName: n.filterName,
-							contentId: n.contentId
-						})
+						if (!n.feedbackSent) return o.a.createElement(g, n, o.a.createElement(M, n))
 					}
 					return t ? o.a.createElement(l.b, {
 						content: t,
 						rtJsonElementProps: {}
 					}) : s ? o.a.createElement("p", {
-						className: A.a.reasonText
+						className: L.a.reasonText
 					}, s) : null
 				},
-				M = e => {
+				U = e => {
 					let {
 						content: t
 					} = e;
-					const s = Object(m.a)(u.oe) === u.Td,
+					const s = Object(C.a)(k.oe) === k.Td,
 						{
-							contentIds: p
-						} = x(),
-						b = Object(n.useMemo)(() => {
+							contentIds: u
+						} = v(),
+						m = Object(n.useMemo)(() => {
 							var e, n, o, a, d, l;
-							const u = [];
-							(null === (e = t.modQueueTriggers) || void 0 === e ? void 0 : e.length) || t.bannedBy !== i.m || u.push({
+							const m = [];
+							(null === (e = t.modQueueTriggers) || void 0 === e ? void 0 : e.length) || t.bannedBy !== i.m || m.push({
 								icon: "bot_fill",
 								heading: r.fbt._("Blocked by AutoMod", null, {
 									hk: "XZuzM"
@@ -2640,7 +2670,7 @@
 							});
 							for (const i of t.modQueueTriggers || []) switch (i.type) {
 								case c.b.AUTOMOD:
-									u.push({
+									m.push({
 										icon: "bot_fill",
 										heading: r.fbt._("Blocked by AutoMod", null, {
 											hk: "XZuzM"
@@ -2649,7 +2679,7 @@
 									});
 									break;
 								case c.b.SHADOWBANNED_SUBMITTER:
-									u.push({
+									m.push({
 										icon: "ban_fill",
 										heading: r.fbt._("Blocked by Automatic Filter", null, {
 											hk: "2iaUCM"
@@ -2658,7 +2688,7 @@
 									});
 									break;
 								case c.b.HATEFUL_CONTENT:
-									u.push({
+									m.push({
 										icon: "mod_mode_fill",
 										heading: s ? r.fbt._("Blocked for Harassment", null, {
 											hk: "1FQFpi"
@@ -2667,14 +2697,14 @@
 										}),
 										reason: i.message,
 										feedbackPrompt: s ? {
-											filterName: _.b.HarassingContent,
-											feedbackSent: p.has(t.id),
+											filterName: y.b.HarassingContent,
+											feedbackSent: u.has(t.id),
 											contentId: t.id
 										} : void 0
 									});
 									break;
 								case c.b.CROWD_CONTROL:
-									u.push({
+									m.push({
 										icon: "crowd_control",
 										heading: r.fbt._("Blocked by Crowd Control", null, {
 											hk: "6LNvT"
@@ -2683,22 +2713,22 @@
 									});
 									break;
 								case c.b.BAN_EVASION:
-									u.push({
+									m.push({
 										icon: "ban_fill",
 										heading: r.fbt._("Blocked by Ban Evasion Protection", null, {
 											hk: "1unYu9"
 										}),
 										reason: i.message,
-										reasonRichText: P(null === (o = null === (n = i.details) || void 0 === n ? void 0 : n.recencyExplanation) || void 0 === o ? void 0 : o.richtext),
+										reasonRichText: F(null === (o = null === (n = i.details) || void 0 === n ? void 0 : n.recencyExplanation) || void 0 === o ? void 0 : o.richtext),
 										confidence: null === (a = i.details) || void 0 === a ? void 0 : a.confidence,
-										confidenceExplanation: P(null === (l = null === (d = i.details) || void 0 === d ? void 0 : d.confidenceExplanation) || void 0 === l ? void 0 : l.richtext)
+										confidenceExplanation: F(null === (l = null === (d = i.details) || void 0 === d ? void 0 : d.confidenceExplanation) || void 0 === l ? void 0 : l.richtext)
 									})
 							}
-							return u
+							return m
 						}, [t.modQueueTriggers, t.bannedBy, t.id, s]);
 					return o.a.createElement("div", {
-						className: A.a.filteredWrapper
-					}, b.map((e, t) => {
+						className: L.a.filteredWrapper
+					}, m.map((e, t) => {
 						const {
 							heading: s,
 							reason: n,
@@ -2708,24 +2738,24 @@
 						} = e;
 						return o.a.createElement("div", {
 							key: `${s}-${n}-${t}`,
-							className: A.a.filteredRow
+							className: L.a.filteredRow
 						}, o.a.createElement(d.a, {
 							isFilled: !0,
 							name: r,
-							className: Object(a.a)(A.a.coloredIcon, A.a.icon)
+							className: Object(a.a)(L.a.coloredIcon, L.a.icon)
 						}), o.a.createElement("div", {
-							className: A.a.statusText
+							className: L.a.statusText
 						}, o.a.createElement("div", {
-							className: A.a.statusMeta
+							className: L.a.statusMeta
 						}, o.a.createElement("p", {
-							className: A.a.status
-						}, s), i && c && o.a.createElement(k, {
+							className: L.a.status
+						}, s), i && c && o.a.createElement(T, {
 							confidence: i
 						}, o.a.createElement(l.b, {
-							className: A.a.tooltipContent,
+							className: L.a.tooltipContent,
 							content: c,
 							rtJsonElementProps: {}
-						}))), o.a.createElement(I, e)))
+						}))), o.a.createElement(B, e)))
 					}))
 				}
 		},
@@ -6375,4 +6405,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.74a21d3fc8f362de82c0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.113bfbba570de30abebc.js.map
