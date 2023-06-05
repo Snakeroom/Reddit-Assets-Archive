@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.bd4ca1f008dbfcfcf4f4.js
-// Retrieved at 6/1/2023, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.4f9a40ea64d46a7198f5.js
+// Retrieved at 6/5/2023, 9:50:04 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1495,18 +1495,18 @@
 						"reddit-components-PostCreationForm-PredictionEditor-InactivityModal": "c69b240b5733aa348258",
 						"reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal": "541e55f80a1f6864c568",
 						"translations/bn_BD-json": "99d295dad4328f5f7047",
-						"translations/de_DE-json": "284f1fffd4069a435a9e",
-						"translations/es_ES-json": "a34d83e5fd578be58bd5",
+						"translations/de_DE-json": "6085aae451c90d34d2c6",
+						"translations/es_ES-json": "09c61440b19d58b1ec75",
 						"translations/es_MX-json": "570458070745278831e2",
-						"translations/fr_CA-json": "be85340ad078cd68cc3f",
-						"translations/fr_FR-json": "fbd38f9b518e29c9acc6",
+						"translations/fr_CA-json": "daa59d99079c94c12edd",
+						"translations/fr_FR-json": "0d4cef7888905e978be8",
 						"translations/hi_IN-json": "9eb86d5a5fd2d8f214bb",
-						"translations/it_IT-json": "761a1616802d2b2e2957",
-						"translations/nl_NL-json": "6d9d96032a623a80f2e4",
+						"translations/it_IT-json": "a08e3938168855d7c5f1",
+						"translations/nl_NL-json": "bd8c8dd8ead64e9d3e30",
 						"translations/pseudo-json": "404130f7fbe53be611c1",
-						"translations/pt_BR-json": "2a9508f113a70cd1fb48",
+						"translations/pt_BR-json": "978fcdad3cb69c178cdc",
 						"translations/pt_PT-json": "4a0675476a8e6a3b9e9b",
-						"translations/sv_SE-json": "9b4a9dae1d6a431a038d",
+						"translations/sv_SE-json": "1c2370afda612be4601f",
 						"vendors~AdminPanel": "9abedef941b07fd50b75",
 						AdminPanel: "a241ac3ea2b1f38739e1",
 						"vendors~Avatar~ChatPost~CollectiblesShowcaseUnit~MarketplaceClaimModal~MarketplaceInFeedUnit~NftProf~7d152600": "6f19d2e4659dbfb6d084",
@@ -1778,4 +1778,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.bd4ca1f008dbfcfcf4f4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.4f9a40ea64d46a7198f5.js.map
