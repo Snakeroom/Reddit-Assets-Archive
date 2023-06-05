@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.96b4c7e88dce310ba115.js
-// Retrieved at 6/5/2023, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9a9566c9e29f83410249.js
+// Retrieved at 6/5/2023, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3659,11 +3659,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("187172"),
+				buildNumber: Object(r.c)("187178"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1685982940"),
+				buildTimestamp: Object(r.b)("1685988708"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6411,14 +6411,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c388bad888e11d4aca0d3e7f01cfa19c54dfb0ad0-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c949f048b62a8d18887a06d7bc3a01e5d530ff319-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "388bad888e11d4aca0d3e7f01cfa19c54dfb0ad0-production",
+						release: "949f048b62a8d18887a06d7bc3a01e5d530ff319-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6971,7 +6971,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "388bad888e11d4aca0d3e7f01cfa19c54dfb0ad0-production",
+							releaseClient: "949f048b62a8d18887a06d7bc3a01e5d530ff319-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -23489,67 +23489,67 @@
 					return n
 				},
 				a = (e, t, i) => {
-					let a = null,
-						l = null;
+					var a, l, u;
+					let c = null,
+						_ = null;
 					if ("undefined" == typeof document || "undefined" == typeof window) return null;
-					const u = Date.now(),
+					const m = Date.now(),
 						{
-							thresholdData: c,
-							videoThresholdData: _,
-							videoAds: m
+							thresholdData: p,
+							videoThresholdData: h,
+							videoAds: f
 						} = r.c(e) || r.a,
 						{
-							videoData: p
+							videoData: b
 						} = t,
-						h = o(c, u),
-						f = o(_, u),
-						b = c[1].totalTime + h[1],
-						g = c[50].totalTime + h[50],
-						v = c[100].totalTime + h[100],
-						w = Math.max(c[1].maxContinuousTime, h[1]),
-						y = Math.max(c[30].maxContinuousTime, h[30]),
-						E = Math.max(c[50].maxContinuousTime, h[50]),
-						T = Math.max(c[100].maxContinuousTime, h[100]),
-						S = E > n.m,
-						O = document.getElementById(e);
-					if (!O) return null;
-					const I = O.getElementsByTagName("video");
-					let R = null;
-					I && I[0] && (R = I[0].getBoundingClientRect());
-					const F = O.getBoundingClientRect(),
-						C = (a = Math.floor(F.width)) * (l = Math.floor(F.height)),
-						N = C > 242499 && E >= 1e3 || T >= 1e3 || i === s.a.GroupMViewable ? 1 : 0,
-						A = C > 242499 && y >= 1e3 || T >= 1e3 ? 1 : 0,
-						j = Math.max(_.FULL_IN_VIEW_TIME.maxContinuousTime, f.FULL_IN_VIEW_TIME) >= 1e3,
-						P = _.HALF_DURATION_80_IN_VIEW_AUDIBLE.totalTime + f.HALF_DURATION_80_IN_VIEW_AUDIBLE,
-						x = {
-							w: a,
-							h: l,
+						g = o(p, m),
+						v = o(h, m),
+						w = p[1].totalTime + g[1],
+						y = p[50].totalTime + g[50],
+						E = p[100].totalTime + g[100],
+						T = Math.max(p[1].maxContinuousTime, g[1]),
+						S = Math.max(p[30].maxContinuousTime, g[30]),
+						O = Math.max(p[50].maxContinuousTime, g[50]),
+						I = Math.max(p[100].maxContinuousTime, g[100]),
+						R = O > n.m,
+						F = document.getElementById(e);
+					if (!F) return null;
+					const C = null !== F.querySelector("shreddit-player"),
+						N = C ? null === (l = null === (a = F.querySelector("shreddit-player")) || void 0 === a ? void 0 : a.shadowRoot) || void 0 === l ? void 0 : l.querySelector("video") : F.querySelector("video");
+					let A = null;
+					N && (A = N.getBoundingClientRect());
+					const j = F.getBoundingClientRect(),
+						P = (c = Math.floor(j.width)) * (_ = Math.floor(j.height)),
+						x = P > 242499 && O >= 1e3 || I >= 1e3 || i === s.a.GroupMViewable ? 1 : 0,
+						D = P > 242499 && S >= 1e3 || I >= 1e3 ? 1 : 0,
+						L = Math.max(h.FULL_IN_VIEW_TIME.maxContinuousTime, v.FULL_IN_VIEW_TIME) >= 1e3,
+						B = h.HALF_DURATION_80_IN_VIEW_AUDIBLE.totalTime + v.HALF_DURATION_80_IN_VIEW_AUDIBLE,
+						k = {
+							w: c,
+							h: _,
 							sw: window.screen.width,
 							sh: window.screen.height,
-							t: u,
-							a: b,
-							b: g,
-							c: v,
-							d: w,
-							e: E,
-							f: T,
-							g: N ? 1 : 0,
-							i: i === s.a.Impression ? u : t.timeImpressionViewed || 0,
-							o: S ? 1 : 0,
-							q: A ? 1 : 0,
+							t: m,
+							a: w,
+							b: y,
+							c: E,
+							d: T,
+							e: O,
+							f: I,
+							g: x ? 1 : 0,
+							i: i === s.a.Impression ? m : t.timeImpressionViewed || 0,
+							o: R ? 1 : 0,
+							q: D ? 1 : 0,
 							r: t.eventGlobalCount ? t.eventGlobalCount : 0
 						};
-					if (p.isVideo) {
-						const e = p.videoDuration || 0,
-							{
-								videoAudible: r
-							} = t.videoData;
-						x.va = p.isVideo ? 1 : 0, x.vh = R ? Math.floor(R.height) : 0, x.vw = R ? Math.floor(R.width) : 0, x.ve = p.videoVolume || 0, x.vc = Math.floor(e), x.vd = Math.floor(p.cumulativeViewedTime) || 0, x.vq = p.wasFullScreen || 0, x.vg = _[1].timeEntered ? 1 : 0, x.vb = _.TOTAL_MRC_VIEWABLE_TIME.totalTime + f.TOTAL_MRC_VIEWABLE_TIME, x.vs = d(r, _[1].timeEntered, i === s.a.VideoStarted, p.videoStarted), x.vt = d(r, _[1].timeEntered, i === s.a.VideoWatched25, p.watched25), x.vu = d(r, _[1].timeEntered, i === s.a.VideoWatched50, p.watched50), x.vv = d(r, _[1].timeEntered, i === s.a.VideoWatched75, p.watched75), x.vx = d(r, _[1].timeEntered, i === s.a.VideoWatched100, p.watched100);
-						const o = e > 0 ? P >= Math.min(n.g, e / 2) : P >= n.g;
-						x.vr = o ? 1 : 0, x.vy = _.FULL_IN_VIEW_AUDIBLE_TIME.totalTime + f.FULL_IN_VIEW_AUDIBLE_TIME, x.vi = _.AUDIBLE_TIME.totalTime + f.AUDIBLE_TIME, x.vz = _.FULL_IN_VIEW_TIME.totalTime + f.FULL_IN_VIEW_TIME, x.xa = j ? 1 : 0, x.xb = Math.max(_.TOTAL_MRC_VIEWABLE_TIME.maxContinuousTime, f.TOTAL_MRC_VIEWABLE_TIME), x.xc = m.seeked.value ? 1 : 0
+					if (b.isVideo) {
+						const e = C ? 1e3 * (null !== (u = null == N ? void 0 : N.duration) && void 0 !== u ? u : 0) : b.videoDuration || 0,
+							r = C ? !N.muted && N.volume > 0 : t.videoData.videoAudible;
+						k.va = b.isVideo ? 1 : 0, k.vh = A ? Math.floor(A.height) : 0, k.vw = A ? Math.floor(A.width) : 0, k.ve = (C ? 100 * N.volume : b.videoVolume) || 0, k.vc = Math.floor(e), k.vd = Math.floor(b.cumulativeViewedTime) || 0, k.vq = b.wasFullScreen || 0, k.vg = h[1].timeEntered ? 1 : 0, k.vb = C ? Math.floor(b.cumulativeViewedTime) : h.TOTAL_MRC_VIEWABLE_TIME.totalTime + v.TOTAL_MRC_VIEWABLE_TIME, k.vs = d(r, h[1].timeEntered, i === s.a.VideoStarted, b.videoStarted), k.vt = d(r, h[1].timeEntered, i === s.a.VideoWatched25, b.watched25), k.vu = d(r, h[1].timeEntered, i === s.a.VideoWatched50, b.watched50), k.vv = d(r, h[1].timeEntered, i === s.a.VideoWatched75, b.watched75), k.vx = d(r, h[1].timeEntered, i === s.a.VideoWatched100, b.watched100);
+						const o = e > 0 ? B >= Math.min(n.g, e / 2) : B >= n.g;
+						k.vr = o ? 1 : 0, k.vy = h.FULL_IN_VIEW_AUDIBLE_TIME.totalTime + v.FULL_IN_VIEW_AUDIBLE_TIME, k.vi = h.AUDIBLE_TIME.totalTime + v.AUDIBLE_TIME, k.vz = C ? Math.floor(b.cumulativeViewedTime) : h.FULL_IN_VIEW_TIME.totalTime + v.FULL_IN_VIEW_TIME, k.xa = L ? 1 : 0, k.xb = Math.max(h.TOTAL_MRC_VIEWABLE_TIME.maxContinuousTime, v.TOTAL_MRC_VIEWABLE_TIME), k.xc = f.seeked.value ? 1 : 0
 					}
-					return x
+					return k
 				}
 		},
 		"./src/reddit/helpers/graphql/helpers.ts": function(e, t, i) {
@@ -50965,4 +50965,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.96b4c7e88dce310ba115.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9a9566c9e29f83410249.js.map
