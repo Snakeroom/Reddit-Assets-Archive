@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.990af5006fb8b22b387e.js
-// Retrieved at 6/1/2023, 1:20:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.4d87e96baf1296ff6eeb.js
+// Retrieved at 6/5/2023, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4252,9 +4252,7 @@
 					}, o.a.createElement(K.a, {
 						onIgnoreReports: Ae,
 						reportable: De
-					})), Object(ge.c)(De) && o.a.createElement(b.a, {
-						post: De
-					}), o.a.createElement(W.d, null), et && o.a.createElement(z.a, {
+					})), Object(ge.b)(De) && o.a.createElement(b.a, null), o.a.createElement(W.d, null), et && o.a.createElement(z.a, {
 						post: De
 					}), De.discussionType === g.b.Chat && o.a.createElement(Le.a, {
 						postId: De.id,
@@ -9960,4 +9958,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.990af5006fb8b22b387e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.4d87e96baf1296ff6eeb.js.map

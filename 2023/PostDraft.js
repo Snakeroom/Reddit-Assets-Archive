@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.7e7c5cb6d1d6a1eb31f6.js
-// Retrieved at 5/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.b1ee16654204638fb8d3.js
+// Retrieved at 6/5/2023, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1807,7 +1807,7 @@
 			const {
 				fbt: m
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), p = Object(c.c)({
-				title: d.xb
+				title: d.wb
 			});
 			var b = Object(a.b)(p)(e => {
 					const {
@@ -3182,4 +3182,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.7e7c5cb6d1d6a1eb31f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.b1ee16654204638fb8d3.js.map
