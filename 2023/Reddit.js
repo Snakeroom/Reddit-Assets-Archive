@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.5a4148979263d9075fdf.js
-// Retrieved at 6/6/2023, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.4942b5b5e0ea94d01bc0.js
+// Retrieved at 6/6/2023, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -4719,7 +4719,8 @@
 					const e = new Date;
 					e.setFullYear(e.getFullYear() + 2), i.a.set(v.h, !0, {
 						expires: e,
-						domain: s.a.cookieDomain
+						domain: s.a.cookieDomain,
+						path: "/"
 					})
 				};
 
@@ -4728,36 +4729,34 @@
 					searchOptions: t
 				} = e;
 				const n = Object(j.a)(),
-					s = Object(b.d)(),
-					a = Object(b.e)(e => Object(_.rb)(e)),
-					[P, k] = Object(m.useState)(a),
-					I = Object(E.a)({}),
+					a = Object(b.d)(),
+					P = Object(b.e)(e => Object(_.rb)(e)),
+					[k, I] = Object(m.useState)(P),
+					T = Object(E.a)({}),
 					{
-						shouldShowTooltip: T,
-						resetShowTooltip: A
-					} = S(!P);
+						shouldShowTooltip: A,
+						resetShowTooltip: R
+					} = S(!k);
 				Object(m.useEffect)(() => {
-					if (T) return window.addEventListener("click", A), () => {
-						window.removeEventListener("click", A)
+					if (A) return window.addEventListener("click", R), () => {
+						window.removeEventListener("click", R)
 					}
-				}, [T]);
-				const R = Object(x.a)();
-				return I.arrowProps.style = {
-					...I.arrowProps.style,
+				}, [A]);
+				const L = Object(x.a)();
+				return T.arrowProps.style = {
+					...T.arrowProps.style,
 					borderBottom: `3px solid ${u.a.alien600}`
-				}, I.popperProps.style = {
-					...I.popperProps.style,
+				}, T.popperProps.style = {
+					...T.popperProps.style,
 					backgroundColor: u.a.alien600,
 					top: "4px",
 					maxWidth: "360px",
 					textAlign: "center"
-				}, Object(m.useEffect)(() => {
-					P ? M() : i.a.remove(v.h)
-				}, [P]), p.a.createElement("div", {
+				}, p.a.createElement("div", {
 					className: Object(l.a)(N.a.searchNSFWToggle),
 					"data-testid": w,
-					onMouseEnter: I.show,
-					onMouseLeave: I.hide
+					onMouseEnter: T.show,
+					onMouseLeave: T.hide
 				}, p.a.createElement("label", {
 					htmlFor: w,
 					className: Object(l.a)(N.a.searchNSFWToggleLabel)
@@ -4766,23 +4765,26 @@
 				})), p.a.createElement(O.a, {
 					activeColorOverride: d.a,
 					id: w,
-					on: !P,
+					on: !k,
 					onToggle: function() {
 						var e;
-						k(!P), n(Object(y.h)(P, t, R)), s(Object(g.l)({
-							searchOver18: !P
-						})), s(Object(h.b)(Object(o.c)({
-							pathname: (null === (e = null == R ? void 0 : R.routeMatch) || void 0 === e ? void 0 : e.match.url) || C.a,
-							search: Object(c.a)("", (null == R ? void 0 : R.queryParams) || {})
+						k ? (I(!1), i.a.remove(v.h, {
+							domain: s.a.cookieDomain,
+							path: "/"
+						})) : (I(!0), M()), n(Object(y.h)(k, t, L)), a(Object(g.l)({
+							searchOver18: !k
+						})), a(Object(h.b)(Object(o.c)({
+							pathname: (null === (e = null == L ? void 0 : L.routeMatch) || void 0 === e ? void 0 : e.match.url) || C.a,
+							search: Object(c.a)("", (null == L ? void 0 : L.queryParams) || {})
 						})))
 					},
 					redditStyle: !0,
-					ref: I.target.ref
+					ref: T.target.ref
 				}), p.a.createElement(f.a, {
-					visible: T || I.visible,
-					arrowProps: I.arrowProps,
-					popperProps: I.popperProps
-				}, P ? r.fbt._("You'll see adult and Not Safe for Work (NSFW) search results unless you turn Safe Search on", null, {
+					visible: A || T.visible,
+					arrowProps: T.arrowProps,
+					popperProps: T.popperProps
+				}, k ? r.fbt._("You'll see adult and Not Safe for Work (NSFW) search results unless you turn Safe Search on", null, {
 					hk: "tQoEJ"
 				}) : r.fbt._("You won't see adult or Not Safe for Work (NSFW) search results unless you turn Safe Search off", null, {
 					hk: "2FiDyW"
@@ -21212,4 +21214,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.5a4148979263d9075fdf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.4942b5b5e0ea94d01bc0.js.map

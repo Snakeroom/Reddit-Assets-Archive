@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.a39f1efa6a69d55f66c1.js
-// Retrieved at 6/5/2023, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.ae6539b5ccccea5ecaa3.js
+// Retrieved at 6/6/2023, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "CollectionCommentsPage~SearchResults", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -24747,7 +24747,8 @@
 					const e = new Date;
 					e.setFullYear(e.getFullYear() + 2), a.a.set(g.h, !0, {
 						expires: e,
-						domain: s.a.cookieDomain
+						domain: s.a.cookieDomain,
+						path: "/"
 					})
 				};
 
@@ -24756,36 +24757,34 @@
 					searchOptions: t
 				} = e;
 				const n = Object(E.a)(),
-					s = Object(b.d)(),
-					i = Object(b.e)(e => Object(j.rb)(e)),
-					[k, I] = Object(m.useState)(i),
-					P = Object(x.a)({}),
+					i = Object(b.d)(),
+					k = Object(b.e)(e => Object(j.rb)(e)),
+					[I, P] = Object(m.useState)(k),
+					N = Object(x.a)({}),
 					{
-						shouldShowTooltip: N,
-						resetShowTooltip: M
-					} = S(!k);
+						shouldShowTooltip: M,
+						resetShowTooltip: D
+					} = S(!I);
 				Object(m.useEffect)(() => {
-					if (N) return window.addEventListener("click", M), () => {
-						window.removeEventListener("click", M)
+					if (M) return window.addEventListener("click", D), () => {
+						window.removeEventListener("click", D)
 					}
-				}, [N]);
-				const D = Object(y.a)();
-				return P.arrowProps.style = {
-					...P.arrowProps.style,
+				}, [M]);
+				const R = Object(y.a)();
+				return N.arrowProps.style = {
+					...N.arrowProps.style,
 					borderBottom: `3px solid ${u.a.alien600}`
-				}, P.popperProps.style = {
-					...P.popperProps.style,
+				}, N.popperProps.style = {
+					...N.popperProps.style,
 					backgroundColor: u.a.alien600,
 					top: "4px",
 					maxWidth: "360px",
 					textAlign: "center"
-				}, Object(m.useEffect)(() => {
-					k ? L() : a.a.remove(g.h)
-				}, [k]), p.a.createElement("div", {
+				}, p.a.createElement("div", {
 					className: Object(d.a)(w.a.searchNSFWToggle),
 					"data-testid": T,
-					onMouseEnter: P.show,
-					onMouseLeave: P.hide
+					onMouseEnter: N.show,
+					onMouseLeave: N.hide
 				}, p.a.createElement("label", {
 					htmlFor: T,
 					className: Object(d.a)(w.a.searchNSFWToggleLabel)
@@ -24794,23 +24793,26 @@
 				})), p.a.createElement(_.a, {
 					activeColorOverride: l.a,
 					id: T,
-					on: !k,
+					on: !I,
 					onToggle: function() {
 						var e;
-						I(!k), n(Object(O.h)(k, t, D)), s(Object(h.l)({
-							searchOver18: !k
-						})), s(Object(f.b)(Object(o.c)({
-							pathname: (null === (e = null == D ? void 0 : D.routeMatch) || void 0 === e ? void 0 : e.match.url) || v.a,
-							search: Object(c.a)("", (null == D ? void 0 : D.queryParams) || {})
+						I ? (P(!1), a.a.remove(g.h, {
+							domain: s.a.cookieDomain,
+							path: "/"
+						})) : (P(!0), L()), n(Object(O.h)(I, t, R)), i(Object(h.l)({
+							searchOver18: !I
+						})), i(Object(f.b)(Object(o.c)({
+							pathname: (null === (e = null == R ? void 0 : R.routeMatch) || void 0 === e ? void 0 : e.match.url) || v.a,
+							search: Object(c.a)("", (null == R ? void 0 : R.queryParams) || {})
 						})))
 					},
 					redditStyle: !0,
-					ref: P.target.ref
+					ref: N.target.ref
 				}), p.a.createElement(C.a, {
-					visible: N || P.visible,
-					arrowProps: P.arrowProps,
-					popperProps: P.popperProps
-				}, k ? r.fbt._("You'll see adult and Not Safe for Work (NSFW) search results unless you turn Safe Search on", null, {
+					visible: M || N.visible,
+					arrowProps: N.arrowProps,
+					popperProps: N.popperProps
+				}, I ? r.fbt._("You'll see adult and Not Safe for Work (NSFW) search results unless you turn Safe Search on", null, {
 					hk: "tQoEJ"
 				}) : r.fbt._("You won't see adult or Not Safe for Work (NSFW) search results unless you turn Safe Search off", null, {
 					hk: "2FiDyW"
@@ -49846,4 +49848,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.a39f1efa6a69d55f66c1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.ae6539b5ccccea5ecaa3.js.map
