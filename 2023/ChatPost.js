@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.78fad20ba5f27026b2b3.js
-// Retrieved at 5/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.c5abf6b4d125ba4813f6.js
+// Retrieved at 6/6/2023, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/backo2/index.js": function(e, t) {
@@ -1481,7 +1481,11 @@
 					}
 					return r.a.createElement(r.a.Fragment, null, t)
 				},
-				f = e => e.c && e.c.length ? r.a.createElement(r.a.Fragment, null, Object(u.i)(e.c, null, {})) : r.a.createElement("br", null);
+				f = e => e.c && e.c.length ? r.a.createElement(r.a.Fragment, null, Object(u.i)({
+					nodes: e.c,
+					mediaMetadata: null,
+					rtJsonElementProps: {}
+				})) : r.a.createElement("br", null);
 			var b = n("./src/reddit/constants/elementClassNames.ts");
 			const v = {
 				[h.a]: "<animated image>",
@@ -4563,4 +4567,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.78fad20ba5f27026b2b3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.c5abf6b4d125ba4813f6.js.map

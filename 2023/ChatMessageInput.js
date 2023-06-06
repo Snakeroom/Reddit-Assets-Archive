@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.4a3de26e05b16b403a51.js
-// Retrieved at 6/5/2023, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.239a0cd1ac7471410690.js
+// Retrieved at 6/6/2023, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, s) {},
@@ -1112,7 +1112,11 @@
 					}
 					return a.a.createElement(a.a.Fragment, null, t)
 				},
-				f = e => e.c && e.c.length ? a.a.createElement(a.a.Fragment, null, Object(m.i)(e.c, null, {})) : a.a.createElement("br", null);
+				f = e => e.c && e.c.length ? a.a.createElement(a.a.Fragment, null, Object(m.i)({
+					nodes: e.c,
+					mediaMetadata: null,
+					rtJsonElementProps: {}
+				})) : a.a.createElement("br", null);
 			var _ = s("./src/reddit/constants/elementClassNames.ts");
 			const C = {
 				[h.a]: "<animated image>",
@@ -1900,4 +1904,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.4a3de26e05b16b403a51.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.239a0cd1ac7471410690.js.map
