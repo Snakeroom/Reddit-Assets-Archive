@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.e4576ebcdf803bd415e5.js
-// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.05134acb5dc22fad155f.js
+// Retrieved at 6/6/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement"], {
 		"./src/reddit/actions/flairManagement/constants.ts": function(e, t, s) {
@@ -86,7 +86,7 @@
 						bannedAtUTC: void 0,
 						bannedBy: void 0,
 						contestMode: !1,
-						created: Date.now() - p.V,
+						created: Date.now() - p.U,
 						crosspostParentId: null,
 						crosspostRootId: null,
 						discussionType: null,
@@ -1770,7 +1770,7 @@
 						className: Object(r.a)(qt.a.contentContainer, {
 							[qt.a.newModNav]: s && f
 						})
-					}, s && n && f ? o.a.createElement(o.a.Fragment, null, Object(m.d)(n, i.mc.UserFlair), this.renderTopBar(!0)) : o.a.createElement(u.b, null, f ? A.fbt._("User flair management", null, {
+					}, s && n && f ? o.a.createElement(o.a.Fragment, null, Object(m.d)(n, i.lc.UserFlair), this.renderTopBar(!0)) : o.a.createElement(u.b, null, f ? A.fbt._("User flair management", null, {
 						hk: "2a4oeD"
 					}) : A.fbt._("Post flair", null, {
 						hk: "2EdNv9"
@@ -2275,4 +2275,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.e4576ebcdf803bd415e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.05134acb5dc22fad155f.js.map

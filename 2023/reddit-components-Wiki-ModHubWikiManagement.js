@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.c6748d194293f982a696.js
-// Retrieved at 5/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.dfc78efa03b472ec5123.js
+// Retrieved at 6/6/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Wiki-ModHubWikiManagement"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -788,8 +788,8 @@
 				F = n("./src/reddit/controls/TextButton/index.tsx"),
 				V = n("./src/reddit/helpers/isValidUsername/index.tsx"),
 				q = n("./src/reddit/helpers/normalizeUsername/index.tsx"),
-				X = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
-				G = n("./src/reddit/models/SubredditModeration/index.ts"),
+				G = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
+				X = n("./src/reddit/models/SubredditModeration/index.ts"),
 				K = n("./src/reddit/components/BannedUserList/AddBannedUserModal/DaysInput.tsx"),
 				Z = n("./src/reddit/components/BannedUserList/AddBannedUserModal/RulesDropdown.tsx"),
 				Y = n("./src/reddit/components/Wiki/ModHubWikiManagement/WikiBannedContributors/index.m.less"),
@@ -819,7 +819,7 @@
 						})
 					}, this.onChangeBanDuration = e => {
 						const t = Number(e.currentTarget.value);
-						"number" == typeof t && (t < 0 || t > G.b || this.setState({
+						"number" == typeof t && (t < 0 || t > X.b || this.setState({
 							duration: t
 						}))
 					}, this.togglePermanent = e => {
@@ -855,7 +855,7 @@
 						props: e,
 						state: t
 					} = this;
-					return s.a.createElement(z.e, null, s.a.createElement(z.i, null, s.a.createElement(X.a, null, s.a.createElement(z.q, null, w.fbt._("Ban wiki contributor", null, {
+					return s.a.createElement(z.e, null, s.a.createElement(z.i, null, s.a.createElement(G.a, null, s.a.createElement(z.q, null, w.fbt._("Ban wiki contributor", null, {
 						hk: "1d5Hrk"
 					}), e.bannedUser && `: u/${e.bannedUser.username}`), s.a.createElement(F.a, {
 						onClick: e.toggleModal
@@ -1079,7 +1079,7 @@
 						props: e,
 						state: t
 					} = this;
-					return s.a.createElement(z.e, null, s.a.createElement(z.i, null, s.a.createElement(X.a, null, s.a.createElement(z.q, null, w.fbt._("Add wiki contributor", null, {
+					return s.a.createElement(z.e, null, s.a.createElement(z.i, null, s.a.createElement(G.a, null, s.a.createElement(z.q, null, w.fbt._("Add wiki contributor", null, {
 						hk: "4Df0lQ"
 					})), s.a.createElement(F.a, {
 						onClick: e.toggleModal
@@ -1547,13 +1547,13 @@
 				})(Object(W.c)(ze)),
 				Ve = n("./src/reddit/components/Wiki/ModHubWikiManagement/index.m.less"),
 				qe = n.n(Ve);
-			const Xe = Object(u.v)(),
-				Ge = () => {
+			const Ge = Object(u.v)(),
+				Xe = () => {
 					document.body.scrollTop = 0, document.documentElement.scrollTop = 0
 				};
 			class Ke extends s.a.Component {
 				scrollToTopIfNeeded() {
-					location.hash || Ge()
+					location.hash || Xe()
 				}
 				componentDidMount() {
 					this.scrollToTopIfNeeded()
@@ -1600,10 +1600,10 @@
 							});
 							break;
 						default:
-							return b === o.mc.WikiBanned ? s.a.createElement(se, {
+							return b === o.lc.WikiBanned ? s.a.createElement(se, {
 								subredditId: e.id,
 								subredditName: e.name
-							}) : b === o.mc.WikiContributors ? s.a.createElement(pe, {
+							}) : b === o.lc.WikiContributors ? s.a.createElement(pe, {
 								subredditName: e.name
 							}) : p && g && k ? s.a.createElement(a.a, {
 								comparisonRevisionId: Object(m.a)(k),
@@ -1623,7 +1623,7 @@
 					}
 				}
 			}
-			t.default = Xe(Ke)
+			t.default = Ge(Ke)
 		},
 		"./src/reddit/components/Wiki/RevisionsHistory/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1768,10 +1768,10 @@
 					})
 				})
 			}
-			const X = Object(r.c)({
+			const G = Object(r.c)({
 				revision: P.n
 			});
-			class G extends o.a.Component {
+			class X extends o.a.Component {
 				constructor() {
 					super(...arguments), this.reasonElementRef = o.a.createRef(), this.state = {}, this.onToggleHiddenClick = async () => {
 						const {
@@ -1880,9 +1880,9 @@
 					}))))))
 				}
 			}
-			var K = Object(a.b)(X, e => ({
+			var K = Object(a.b)(G, e => ({
 				toggleIsHidden: t => e(Object(c.b)(t))
-			}))(G);
+			}))(X);
 
 			function Z() {
 				return (Z = Object.assign || function(e) {
@@ -2535,7 +2535,7 @@
 				v = n("./src/reddit/helpers/addRedesignIdentifier/index.ts");
 			var x = e => Object(g.a)(Object(k.a)(e.context, [f.a]), {
 					endpoint: Object(v.a)(`${e.context.apiUrl}/r/${e.subredditName}/api/wiki/edit`),
-					method: b.pb.POST,
+					method: b.ob.POST,
 					data: {
 						content: e.pageContent,
 						page: e.wikiPageName,
@@ -2568,8 +2568,8 @@
 				F = n("./src/reddit/controls/LoadingIcon/index.tsx"),
 				V = n("./src/reddit/controls/TextButton/index.tsx"),
 				q = n("./src/reddit/components/Wiki/WikiPageEditor/AddRevisionReasonModal/index.m.less"),
-				X = n.n(q);
-			class G extends o.a.PureComponent {
+				G = n.n(q);
+			class X extends o.a.PureComponent {
 				constructor() {
 					super(...arguments), this.state = {
 						text: ""
@@ -2591,22 +2591,22 @@
 						text: t
 					} = this.state, n = p.g - t.length;
 					return o.a.createElement("div", {
-						className: X.a.container
+						className: G.a.container
 					}, o.a.createElement(z.i, {
-						className: X.a.modalHeader
+						className: G.a.modalHeader
 					}, o.a.createElement(z.q, null, i.fbt._("Add a reason for your revision", null, {
 						hk: "3ozq8e"
 					})), o.a.createElement(V.a, {
 						onClick: this.props.onCancel
 					}, o.a.createElement(z.b, null))), o.a.createElement("div", {
-						className: X.a.contentBlock
+						className: G.a.contentBlock
 					}, o.a.createElement("label", null, o.a.createElement("span", {
-						className: X.a.labelText
+						className: G.a.labelText
 					}, i.fbt._("Revision reason", null, {
 						hk: "W55mK"
 					})), o.a.createElement("input", {
 						autoFocus: !0,
-						className: X.a.reasonInput,
+						className: G.a.reasonInput,
 						maxLength: p.g,
 						onChange: this.onTextChange,
 						placeholder: i.fbt._("Ex: Added source to appendix", null, {
@@ -2614,14 +2614,14 @@
 						}),
 						value: t
 					})), o.a.createElement("div", {
-						className: X.a.details
+						className: G.a.details
 					}, i.fbt._({
 						"*": "{number} characters left",
 						_1: "1 character left"
 					}, [i.fbt._plural(n, "number")], {
 						hk: "1Ra9c8"
 					}))), o.a.createElement(z.g, {
-						className: X.a.modalFooter
+						className: G.a.modalFooter
 					}, o.a.createElement(z.a, {
 						onClick: this.props.onCancel
 					}, i.fbt._("Cancel", null, {
@@ -2630,14 +2630,14 @@
 						onClick: this.onSaveButtonClick,
 						disabled: e
 					}, e ? o.a.createElement(F.a, {
-						className: X.a.loadingIcon,
+						className: G.a.loadingIcon,
 						sizePx: 10
 					}) : i.fbt._("Save", null, {
 						hk: "4yMsMq"
 					}))))
 				}
 			}
-			var K = Object(D.a)(G),
+			var K = Object(D.a)(X),
 				Z = n("./src/reddit/components/Wiki/WikiPageEditor/index.m.less"),
 				Y = n.n(Z);
 			const J = "Discard-wiki-page-changes",
@@ -3332,7 +3332,7 @@
 						showTimeAgo: o = !1
 					} = this.props, {
 						showTooltip: r
-					} = this.state, c = n.authorInfo && n.authorInfo.name || l.H, p = new Date(Object(b.g)(n.revisedAt)), k = a.a.createElement(m.a, {
+					} = this.state, c = n.authorInfo && n.authorInfo.name || l.G, p = new Date(Object(b.g)(n.revisedAt)), k = a.a.createElement(m.a, {
 						tooltipId: "wikipage-revision-author",
 						user: c,
 						sendHoverCardEvent: s.a
@@ -3353,7 +3353,7 @@
 						onMouseEnter: this.onShowTooltip,
 						onMouseLeave: this.onHideTooltip
 					}, " - ", a.a.createElement(h.d, {
-						seconds: p.valueOf() / l.Xb
+						seconds: p.valueOf() / l.Wb
 					}), a.a.createElement(E, {
 						text: p.toString(),
 						isOpen: r,
@@ -3483,4 +3483,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.c6748d194293f982a696.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.dfc78efa03b472ec5123.js.map

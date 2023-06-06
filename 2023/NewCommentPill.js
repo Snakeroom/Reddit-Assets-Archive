@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommentPill.f7eb62aa5a2efc686805.js
-// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommentPill.b411404003e783505a44.js
+// Retrieved at 6/6/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommentPill"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, s) {
@@ -81,9 +81,9 @@
 				C = s("./src/lib/constants/index.ts"),
 				g = s("./src/lib/makeCommentsPageKey/index.ts"),
 				N = s("./src/lib/scroll/index.ts"),
-				x = s("./src/reddit/components/NewCommentPill/index.m.less"),
-				y = s.n(x);
-			const v = (e, t) => {
+				v = s("./src/reddit/components/NewCommentPill/index.m.less"),
+				x = s.n(v);
+			const y = (e, t) => {
 				let {
 					type: s,
 					delta: n
@@ -94,21 +94,21 @@
 				let {
 					commentId: t,
 					postId: s,
-					isNightMode: x,
+					isNightMode: v,
 					isOverlay: E
 				} = e;
 				const R = Object(o.useRef)(null),
 					{
 						post: S
 					} = Object(O.a)() || {},
-					[w, D] = Object(o.useReducer)(v, 0),
-					P = Object(c.e)(_.a),
-					T = Object(c.e)(e => Object(h.a)(e) || Object(h.c)(e)),
+					[D, P] = Object(o.useReducer)(y, 0),
+					T = Object(c.e)(_.a),
+					w = Object(c.e)(e => Object(h.a)(e) || Object(h.c)(e)),
 					[U, M] = Object(o.useState)(!1);
 				Object(o.useEffect)(() => {
-					if (!S || !T) return;
+					if (!S || !w) return;
 					b.d.addListeners(b.b, () => M(!0)), b.d.addListeners(b.a, () => M(!1))
-				}, [S, T]);
+				}, [S, w]);
 				const [A, k] = Object(o.useState)(!1), K = Object(o.useRef)(), L = Object(o.useRef)(), B = Object(o.useRef)(2), W = Object(o.useMemo)(() => ({
 					input: {
 						channel: {
@@ -126,7 +126,7 @@
 						if (!S) return;
 						k(!1), K.current && (clearTimeout(K.current), K.current = null), L.current && (L.current = null), B.current = 2, (() => {
 							const e = new URLSearchParams(location.search);
-							e.get(j.D) !== C.w.NEW && (e.set(j.D, C.w.NEW), z(Object(i.b)(Object(r.c)({
+							e.get(j.D) !== C.v.NEW && (e.set(j.D, C.v.NEW), z(Object(i.b)(Object(r.c)({
 								pathname: location.pathname,
 								search: e.toString()
 							}, {
@@ -134,24 +134,24 @@
 							}))));
 							const n = Object(g.a)(s, t, {
 								hasSortParam: !0,
-								sort: C.w.NEW
+								sort: C.v.NEW
 							});
 							z(Object(l.commentsPageRemoveLoadedFull)({
 								key: n
 							})), z(Object(l.commentsPageDataRequested)(s, t, {
 								hasSortParam: !0,
-								sort: C.w.NEW
-							}, C.w.NEW))
-						})(), Object(N.a)(!!E), R.current = setTimeout(() => D({
+								sort: C.v.NEW
+							}, C.v.NEW))
+						})(), Object(N.a)(!!E), R.current = setTimeout(() => P({
 							type: "reset"
 						}), 1e3)
 					}, [S]);
 				Object(o.useEffect)(() => {
 					const e = B.current <= 0;
-					if (!w || e) return;
+					if (!D || e) return;
 					const t = Date.now();
 					(!L.current || t - L.current >= 25e3) && k(!0)
-				}, [w]), Object(o.useEffect)(() => (A && S && (K.current = setTimeout(() => {
+				}, [D]), Object(o.useEffect)(() => (A && S && (K.current = setTimeout(() => {
 					k(!1), L.current = Date.now(), B.current -= 1
 				}, 5e3)), () => {
 					K.current && clearTimeout(K.current)
@@ -160,43 +160,43 @@
 					const {
 						topLevelCommentCountChange: t
 					} = e.subscribe.data;
-					t && D({
+					t && P({
 						type: "add",
 						delta: t
 					})
 				}, []);
-				return P ? a.a.createElement(a.a.Fragment, null, a.a.createElement(d.a, {
+				return T ? a.a.createElement(a.a.Fragment, null, a.a.createElement(d.a, {
 					variables: W,
 					onData: J,
 					queryKey: "topLevelCommentCountChange"
 				}), a.a.createElement("div", {
-					className: Object(I.a)(y.a.wrapper, {
-						[y.a.isOverlayWrapper]: E,
-						[y.a.wrapperVisible]: A,
-						[y.a.joinOptimizationsM2]: !E && T && U
+					className: Object(I.a)(x.a.wrapper, {
+						[x.a.isOverlayWrapper]: E,
+						[x.a.wrapperVisible]: A,
+						[x.a.joinOptimizationsM2]: !E && w && U
 					})
 				}, a.a.createElement(u.a, {
-					className: y.a.pillContainer
+					className: x.a.pillContainer
 				}, a.a.createElement(m.a, {
-					className: Object(I.a)(y.a.pillButton, {
-						[y.a.isNightMode]: x
+					className: Object(I.a)(x.a.pillButton, {
+						[x.a.isNightMode]: v
 					}),
 					onClick: q,
 					variant: m.b.BUTTON
 				}, a.a.createElement(p.a, {
 					iconsKey: s,
 					shouldShowPresenceDot: !0,
-					memberIconClassName: Object(I.a)(y.a.memberIcon, {
-						[y.a.isNightMode]: x
+					memberIconClassName: Object(I.a)(x.a.memberIcon, {
+						[x.a.isNightMode]: v
 					}),
-					presenceDotOutlineClassName: Object(I.a)(y.a.presenceDotOutlineClass, {
-						[y.a.isNightMode]: x
+					presenceDotOutlineClassName: Object(I.a)(x.a.presenceDotOutlineClass, {
+						[x.a.isNightMode]: v
 					})
 				}), a.a.createElement("span", {
-					className: Object(I.a)(y.a.newCommentsText, {
-						[y.a.isNightMode]: x
+					className: Object(I.a)(x.a.newCommentsText, {
+						[x.a.isNightMode]: v
 					})
-				}, w > 1 ? n.fbt._("{number of new comments} new comments", [n.fbt._param("number of new comments", Object(f.formatPresenceNumber)(w))], {
+				}, D > 1 ? n.fbt._("{number of new comments} new comments", [n.fbt._param("number of new comments", Object(f.formatPresenceNumber)(D))], {
 					hk: "2jSNSA"
 				}) : n.fbt._("1 new comment", null, {
 					hk: "4nXICl"
@@ -379,10 +379,10 @@
 							}
 						}
 					}), [d]),
-					[N, x] = Object(u.useState)(0),
-					[y, v] = Object(u.useState)(0),
+					[N, v] = Object(u.useState)(0),
+					[x, y] = Object(u.useState)(0),
 					E = Object(u.useCallback)(a()(e => {
-						e(0), P(null)
+						e(0), T(null)
 					}, j.e), []),
 					R = Object(u.useCallback)(l()((e, t) => {
 						t(e), E(t)
@@ -392,24 +392,24 @@
 							numUsers: t,
 							__typename: s
 						} = e.subscribe.data;
-						R(t, "PostReadingCountMessageData" === s ? x : v)
+						R(t, "PostReadingCountMessageData" === s ? v : y)
 					}, []),
-					w = Object(u.useRef)(""),
-					[D, P] = Object(u.useState)(null),
-					T = Object(u.useRef)(null);
+					D = Object(u.useRef)(""),
+					[P, T] = Object(u.useState)(null),
+					w = Object(u.useRef)(null);
 				Object(u.useEffect)(() => {
-					if (!t && !o) return void(D && P(null));
-					if (N >= j.a || y >= j.b) return w.current = ((e, t) => {
+					if (!t && !o) return void(P && T(null));
+					if (N >= j.a || x >= j.b) return D.current = ((e, t) => {
 						return t >= j.b ? n.fbt._("{number of people typing} people typing...", [n.fbt._param("number of people typing", _(t))], {
 							hk: "31RibC"
 						}) : n.fbt._("{number of users reading} people here", [n.fbt._param("number of users reading", _(e))], {
 							hk: "3foy5g"
 						})
-					})(N, y), void(D || P(Date.now()));
-					if (!D) return;
-					const e = Date.now() - D;
-					e >= j.f ? P(null) : T.current = setTimeout(() => P(null), j.f - e)
-				}, [D, t, o, N, y]);
+					})(N, x), void(P || T(Date.now()));
+					if (!P) return;
+					const e = Date.now() - P;
+					e >= j.f ? T(null) : w.current = setTimeout(() => T(null), j.f - e)
+				}, [P, t, o, N, x]);
 				const {
 					className: U,
 					shouldMount: M,
@@ -417,10 +417,10 @@
 				} = Object(f.a)({
 					defaultClass: h.a.usersCountIndicator,
 					addedClass: h.a.isDisplayed,
-					mountCondition: !!D
+					mountCondition: !!P
 				});
 				return Object(u.useEffect)(() => () => {
-					E.cancel(), R.cancel(), T.current && clearTimeout(T.current)
+					E.cancel(), R.cancel(), w.current && clearTimeout(w.current)
 				}, []), m.a.createElement(m.a.Fragment, null, r && m.a.createElement(b.a, {
 					variables: I,
 					onData: i.a,
@@ -436,7 +436,7 @@
 				}), M && m.a.createElement("div", {
 					className: U,
 					onTransitionEnd: A
-				}, w.current, m.a.createElement(p.a, {
+				}, D.current, m.a.createElement(p.a, {
 					memberIconClassName: h.a.offsetMemberIcon,
 					iconsKey: d,
 					numVisibleIcons: j.g,
@@ -525,4 +525,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommentPill.f7eb62aa5a2efc686805.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommentPill.b411404003e783505a44.js.map
