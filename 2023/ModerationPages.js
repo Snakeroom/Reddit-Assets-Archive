@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.b4546009f88499c911d2.js
-// Retrieved at 6/7/2023, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.af548520e061de766094.js
+// Retrieved at 6/7/2023, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -17785,38 +17785,38 @@
 							apiContext: l,
 							gqlContext: f
 						} = c;
-						var h, v, x;
+						var h, v, x, E, O;
 						i(q());
-						const E = d(),
-							O = o()(Object(w.Z)(E, e), ...Object.keys(t)),
-							C = o()(Object(T.b)(E, {
+						const C = d(),
+							A = o()(Object(w.Z)(C, e), ...Object.keys(t)),
+							y = o()(Object(T.b)(C, {
 								subredditId: e
 							}), ...Object.keys(n)),
-							A = k(t),
-							y = await Object(u.f)(f(), e, A),
-							j = Object.keys(n).length > 0;
-						let S = !0;
-						if (j) {
-							S = (await Object(b.b)(f(), e, n)).ok
+							j = k(t),
+							S = await Object(u.f)(f(), e, j),
+							P = Object.keys(n).length > 0;
+						let D = !0;
+						if (P) {
+							D = (await Object(b.b)(f(), e, n)).ok
 						}
-						if (y.ok && (!j || S)) {
-							const o = g(null === (x = null === (v = null === (h = null == y ? void 0 : y.body) || void 0 === h ? void 0 : h.data) || void 0 === v ? void 0 : v.updateSubredditSettings) || void 0 === x ? void 0 : x.subreddit);
+						if (S.ok && (!P || D)) {
+							const o = g(null === (x = null === (v = null === (h = null == S ? void 0 : S.body) || void 0 === h ? void 0 : h.data) || void 0 === v ? void 0 : v.updateSubredditSettings) || void 0 === x ? void 0 : x.subreddit);
 							i(V({
 								settings: {
 									...o,
 									subredditId: e
 								},
-								idCardWidgetId: Object(N.c)(E, {
+								idCardWidgetId: Object(N.c)(C, {
 									subredditId: e
 								})
-							})), j && i(F({
+							})), P && i(F({
 								notificationSettings: n,
 								subredditId: e
 							}));
 							const d = {};
-							return r && 0 === a()(Object.keys(t), Object.keys(O)).length && (d.buttonText = s.fbt._("Undo", null, {
+							return r && 0 === a()(Object.keys(t), Object.keys(A)).length && (d.buttonText = s.fbt._("Undo", null, {
 								hk: "1Gskii"
-							}), d.buttonAction = K(e, O, C, r)), void i(Object(p.f)({
+							}), d.buttonAction = K(e, A, y, r)), void i(Object(p.f)({
 								kind: _.b.SuccessCommunity,
 								text: s.fbt._("Subreddit settings updated successfully", null, {
 									hk: "2fmdlZ"
@@ -17824,7 +17824,13 @@
 								...d
 							}))
 						}
-						i(z()), i(Object(p.f)({
+						i(z()), (null === (O = null === (E = S.error) || void 0 === E ? void 0 : E.fields) || void 0 === O ? void 0 : O.some(e => e.msg.includes("INACTIVE_MODERATOR"))) ? i(Object(p.f)({
+							kind: _.b.Error,
+							text: s.fbt._("You must be an active moderator to update this setting", null, {
+								hk: "3qhpxZ"
+							}),
+							duration: 4e3
+						})) : i(Object(p.f)({
 							kind: _.b.Error,
 							text: s.fbt._("Give us a few minutes to fix the problem. Sorry!", null, {
 								hk: "3wBPeO"
@@ -17832,8 +17838,8 @@
 							buttonText: s.fbt._("Retry", null, {
 								hk: "1QXiG6"
 							}),
-							buttonAction: K(e, t, C, void 0)
-						})), r && Object(m.a)(Object(I.c)(E, "BE returned an error:"))
+							buttonAction: K(e, t, y, void 0)
+						})), r && Object(m.a)(Object(I.c)(C, "BE returned an error:"))
 					}
 				}, Y = (e, t) => async (n, r, o) => {
 					let {
@@ -81081,4 +81087,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.b4546009f88499c911d2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.af548520e061de766094.js.map
