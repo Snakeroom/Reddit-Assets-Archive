@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.94a8effe683e87f70caa.js
-// Retrieved at 6/7/2023, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.21cfb93e3e952294c50e.js
+// Retrieved at 6/7/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal", "gildActions"], {
 		"./src/reddit/actions/economics/powerups/helpers.ts": function(e, t, a) {
@@ -1182,7 +1182,7 @@
 					}, c.a.createElement(f.a, {
 						className: R.a.balance,
 						coinBalance: a
-					}), o === d.Nb && ((null == t ? void 0 : t.pennyPrice) && r ? c.a.createElement(N, {
+					}), o === d.Mb && ((null == t ? void 0 : t.pennyPrice) && r ? c.a.createElement(N, {
 						awardId: t.id,
 						className: Object(b.a)(R.a.purchaseButton, R.a.paypalCheckoutButton),
 						pennies: t.pennyPrice,
@@ -1190,7 +1190,7 @@
 					}) : s && c.a.createElement(N, {
 						className: Object(b.a)(R.a.purchaseButton, R.a.paypalCheckoutButton),
 						coinPackage: s
-					})), o === d.Mb && c.a.createElement(T.l, {
+					})), o === d.Lb && c.a.createElement(T.l, {
 						className: R.a.purchaseButton,
 						"data-redditstyle": !0,
 						disabled: i || n,
@@ -1202,8 +1202,8 @@
 				const I = null == x ? void 0 : x.pricePackages.find(e => e.id === (null == s ? void 0 : s.mobileId));
 				if (!x || !I || !s) return null;
 				if (!(null != o)) return null;
-				const _ = o === d.Nb,
-					A = o === d.Mb,
+				const _ = o === d.Mb,
+					A = o === d.Lb,
 					M = {
 						className: R.a.purchaseButton,
 						productOffer: x,
@@ -1345,7 +1345,7 @@
 					selectedPayment: e.selectedPayment,
 					onPaymentSelected: e.onPaymentSelected,
 					paymentMethods: e.purchaseMethods
-				}), e.selectedPayment === d.Mb && c.a.createElement(r.ElementsConsumer, null, t => {
+				}), e.selectedPayment === d.Lb && c.a.createElement(r.ElementsConsumer, null, t => {
 					let {
 						stripe: a
 					} = t;
@@ -1361,9 +1361,9 @@
 					locale: t
 				}))], {
 					hk: "3dx6W8"
-				}))), e.selectedPayment === d.Nb && e.paypalErrorMessage && c.a.createElement("div", {
+				}))), e.selectedPayment === d.Mb && e.paypalErrorMessage && c.a.createElement("div", {
 					className: R.a.errorMessage
-				}, e.paypalErrorMessage), e.selectedPayment === d.Mb && e.stripeErrorMessage && c.a.createElement("div", {
+				}, e.paypalErrorMessage), e.selectedPayment === d.Lb && e.stripeErrorMessage && c.a.createElement("div", {
 					className: R.a.errorMessage
 				}, e.stripeErrorMessage), c.a.createElement("div", {
 					className: R.a.agreementLink
@@ -1874,4 +1874,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.94a8effe683e87f70caa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.21cfb93e3e952294c50e.js.map

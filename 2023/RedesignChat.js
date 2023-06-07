@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.1d0caae35c6242b84dd3.js
-// Retrieved at 6/7/2023, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.a9150058ff04a662725e.js
+// Retrieved at 6/7/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -270,7 +270,7 @@
 						userLoggedOut: x.b,
 						userReauthenticated: x.c
 					},
-					statsAppName: u.o.Chat
+					statsAppName: u.n.Chat
 				}),
 				we = Object(g.a)(Ce.apiContext),
 				ye = Object(g.a)(Ce.apiContext, je.a.gqlRealtimeUrl);
@@ -299,7 +299,7 @@
 							routes: t
 						})), document.body))
 					}(e, t))),
-					appName: u.o.Chat,
+					appName: u.n.Chat,
 					history: Object(r.d)({
 						initialEntries: [n],
 						initialIndex: 0
@@ -708,4 +708,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.1d0caae35c6242b84dd3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.a9150058ff04a662725e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.b55107c4dc2d5ec4c370.js
-// Retrieved at 6/7/2023, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.03c7a91ac7d26634587f.js
+// Retrieved at 6/7/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -79,7 +79,7 @@
 					correlation_id: i
 				};
 				return Object(f.a)(Object(C.a)(e, [v.a]), {
-					method: b.pb.POST,
+					method: b.ob.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/give_premium`,
 					data: c
 				}).then(e => e.ok ? {
@@ -98,11 +98,11 @@
 					if (o) {
 						const n = ((e, t) => {
 							switch (!0) {
-								case e && e.error && e.error.type && e.error.type === b.L.AUTHENTICATION_ERROR:
+								case e && e.error && e.error.type && e.error.type === b.K.AUTHENTICATION_ERROR:
 									return s.fbt._("There was an authentication error", null, {
 										hk: "12YR0w"
 									});
-								case e && e.error && e.error.type && e.error.type === b.L.INVALID_PREMIUM_AMOUNT:
+								case e && e.error && e.error.type && e.error.type === b.K.INVALID_PREMIUM_AMOUNT:
 									return s.fbt._("That Premium gift amount is invalid.", null, {
 										hk: "3XzSbH"
 									});
@@ -116,10 +116,10 @@
 							text: n
 						}))
 					}
-				}, L = Object(x.a)(I.B), N = e => async (t, n) => {
+				}, N = Object(x.a)(I.B), M = e => async (t, n) => {
 					const o = n(),
 						i = Object(y.d)(o);
-					t(L(e));
+					t(N(e));
 					const c = s.fbt._("Success! You’ve given Premium to {recipient username}!", [s.fbt._param("recipient username", `u/${i}`)], {
 						hk: "3cBrLk"
 					});
@@ -128,19 +128,19 @@
 						text: c
 					}))
 				};
-			var M = n("./src/reddit/actions/gold/modals.ts"),
-				P = n("./src/reddit/components/CoinBalance/index.tsx"),
-				T = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
+			var P = n("./src/reddit/actions/gold/modals.ts"),
+				T = n("./src/reddit/components/CoinBalance/index.tsx"),
+				L = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				D = n("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
 				R = n("./src/reddit/controls/DropdownSelector/index.tsx"),
 				A = n("./src/reddit/controls/LoadingIcon/index.tsx"),
 				B = n("./src/reddit/controls/TextButton/index.tsx"),
-				U = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
-				F = n("./src/reddit/models/Gold/Premium/index.ts"),
-				G = n("./src/reddit/selectors/user.ts");
+				K = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
+				U = n("./src/reddit/models/Gold/Premium/index.ts"),
+				F = n("./src/reddit/selectors/user.ts");
 
-			function K() {
-				return (K = Object.assign || function(e) {
+			function G() {
+				return (G = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -150,13 +150,13 @@
 			}
 			const W = 10,
 				H = Object(a.c)({
-					coinBalance: G.g,
-					isEmployee: G.P,
+					coinBalance: F.g,
+					isEmployee: F.P,
 					isPending: y.b,
 					recipientName: y.d
 				}),
 				V = Object(c.b)(H, e => ({
-					closeModal: () => e(Object(M.b)()),
+					closeModal: () => e(Object(P.b)()),
 					onGivePremium: (t, n, s, o, i) => {
 						e(((e, t, n, s) => async (o, i, c) => {
 							let {
@@ -168,7 +168,7 @@
 								if (i.error) await o(S(i));
 								else {
 									const e = i.body;
-									await o(N(e)), Object(k.b)(k.a.GiftPremiumFlow)
+									await o(M(e)), Object(k.b)(k.a.GiftPremiumFlow)
 								}
 							} catch (r) {
 								await o(S(r))
@@ -183,7 +183,7 @@
 						isAnonymous: !0,
 						message: "",
 						messageTypeEventSent: !1,
-						selectedPackage: F.a.PREMIUM_1_MONTH
+						selectedPackage: U.a.PREMIUM_1_MONTH
 					}, this.handleEscapeKey = e => {
 						const {
 							closeModal: t
@@ -261,8 +261,8 @@
 						coinBalance: e,
 						isEmployee: t
 					} = this.props;
-					return Object(F.d)(e, t).map(e => ({
-						displayText: Object(F.e)(e),
+					return Object(U.d)(e, t).map(e => ({
+						displayText: Object(U.e)(e),
 						value: e
 					}))
 				}
@@ -277,14 +277,14 @@
 						isAnonymous: a,
 						message: r,
 						selectedPackage: d
-					} = this.state, u = Object(F.e)(d), p = c ? [l.a.messageInputOpen] : "";
-					return i.a.createElement(T.e, {
+					} = this.state, u = Object(U.e)(d), p = c ? [l.a.messageInputOpen] : "";
+					return i.a.createElement(L.e, {
 						className: e
-					}, i.a.createElement(T.i, null, i.a.createElement(U.a, null, i.a.createElement(T.q, null, s.fbt._("Give Premium", null, {
+					}, i.a.createElement(L.i, null, i.a.createElement(K.a, null, i.a.createElement(L.q, null, s.fbt._("Give Premium", null, {
 						hk: "4APAYj"
 					})), i.a.createElement(B.a, {
 						onClick: this.onClickClose
-					}, i.a.createElement(T.b, null)))), i.a.createElement("div", {
+					}, i.a.createElement(L.b, null)))), i.a.createElement("div", {
 						className: l.a.modalMain
 					}, i.a.createElement("span", {
 						className: l.a.description
@@ -311,7 +311,7 @@
 							hk: "I4chZ"
 						}),
 						onClick: this.handleToggleIncludeMessage
-					})), i.a.createElement(T.t, {
+					})), i.a.createElement(L.t, {
 						className: Object(m.a)(l.a.textArea, p),
 						"data-redditstyle": !0,
 						value: r,
@@ -322,18 +322,18 @@
 						placeholder: s.fbt._("Type here...", null, {
 							hk: "1O7V4Q"
 						})
-					}))), i.a.createElement(T.g, null, i.a.createElement(U.a, {
+					}))), i.a.createElement(L.g, null, i.a.createElement(K.a, {
 						className: l.a.coinCountSection
-					}, i.a.createElement(P.a, {
+					}, i.a.createElement(T.a, {
 						className: l.a.coinCount,
 						coinBalance: t
 					}), i.a.createElement("div", {
 						className: l.a.actions
-					}, i.a.createElement(T.a, {
+					}, i.a.createElement(L.a, {
 						onClick: this.onClickClose
 					}, s.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), i.a.createElement(T.r, {
+					})), i.a.createElement(L.r, {
 						className: l.a.confirmButton,
 						"data-redditstyle": !0,
 						disabled: n,
@@ -347,7 +347,7 @@
 				}
 			}
 			const z = Object(d.a)(Object(u.c)(X));
-			t.default = V(e => i.a.createElement(z, K({}, e, {
+			t.default = V(e => i.a.createElement(z, G({}, e, {
 				withOverlay: !0,
 				onOverlayClick: e.closeModal
 			})))
@@ -582,23 +582,23 @@
 					for (const t of e) {
 						const e = t[0] || "";
 						switch (e) {
-							case s.L.NO_STRIPE_SUBSCRIPTION:
-							case s.L.USER_DOESNT_EXIST:
-							case s.L.USER_REQUIRED_ERROR:
-							case s.L.VALIDATION_ERROR:
+							case s.K.NO_STRIPE_SUBSCRIPTION:
+							case s.K.USER_DOESNT_EXIST:
+							case s.K.USER_REQUIRED_ERROR:
+							case s.K.VALIDATION_ERROR:
 								return e;
-							case s.L.NO_USER:
-							case s.L.NO_TEXT:
-							case s.L.NO_URL:
-								return s.L.VALIDATION_ERROR;
-							case s.L.CREDIT_CARD_FAILURE:
-							case s.L.CREDIT_CARD_FAILURE_GENERIC:
-								return s.L.CREDIT_CARD_FAILURE;
+							case s.K.NO_USER:
+							case s.K.NO_TEXT:
+							case s.K.NO_URL:
+								return s.K.VALIDATION_ERROR;
+							case s.K.CREDIT_CARD_FAILURE:
+							case s.K.CREDIT_CARD_FAILURE_GENERIC:
+								return s.K.CREDIT_CARD_FAILURE;
 							default:
-								if (e.startsWith("SUBMIT_VALIDATION")) return s.L.SUBMIT_VALIDATION_ERROR
+								if (e.startsWith("SUBMIT_VALIDATION")) return s.K.SUBMIT_VALIDATION_ERROR
 						}
 					}
-					return s.L.VALIDATION_ERROR
+					return s.K.VALIDATION_ERROR
 				},
 				i = e => {
 					const t = e.body;
@@ -784,4 +784,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.b55107c4dc2d5ec4c370.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.03c7a91ac7d26634587f.js.map

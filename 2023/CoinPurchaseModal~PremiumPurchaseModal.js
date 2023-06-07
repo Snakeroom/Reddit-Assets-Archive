@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PremiumPurchaseModal.e2f72f695a9d2daebf7d.js
-// Retrieved at 6/7/2023, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PremiumPurchaseModal.b6620a85a6fcc52c746d.js
+// Retrieved at 6/7/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal~PremiumPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1231,8 +1231,8 @@
 				l = r("./src/reddit/components/PaymentMethodSelector/index.m.less"),
 				u = r.n(l);
 			const p = {
-					[c.Mb]: ["visa.png", "mastercard.png", "amex.png", "discover.jpg"],
-					[c.Nb]: ["paypal.png"]
+					[c.Lb]: ["visa.png", "mastercard.png", "amex.png", "discover.jpg"],
+					[c.Mb]: ["paypal.png"]
 				},
 				m = e => o.a.createElement("label", {
 					className: Object(s.a)(e.className, u.a.paymentOption, {
@@ -1260,10 +1260,10 @@
 								sendEvent: a
 							} = this.props;
 						switch (t) {
-							case c.Mb:
+							case c.Lb:
 								a(Object(d.e)(r));
 								break;
-							case c.Nb:
+							case c.Mb:
 								a(Object(d.f)(r))
 						}
 						return n(t)
@@ -1878,7 +1878,7 @@
 					u = `${r.apiUrl}/api/v2/gold/paypal/initiate_premium_payment`,
 					p = Object(c.a)(u);
 				return Object(a.a)(Object(o.a)(r, [s.a]), {
-					method: n.pb.POST,
+					method: n.ob.POST,
 					endpoint: p,
 					data: l
 				}).then(i.a)
@@ -1895,7 +1895,7 @@
 					correlation_id: d
 				};
 				return Object(a.a)(Object(o.a)(t, [s.a]), {
-					method: n.pb.POST,
+					method: n.ob.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/create_coin_purchase_order`,
 					data: l
 				}).then(i.a)
@@ -1914,7 +1914,7 @@
 					thing_id: d
 				};
 				return Object(a.a)(Object(o.a)(t, [s.a]), {
-					method: n.pb.POST,
+					method: n.ob.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/create_award_purchase_order`,
 					data: u
 				}).then(i.a)
@@ -1935,7 +1935,7 @@
 					correlation_id: u
 				};
 				return Object(a.a)(Object(o.a)(t, [s.a]), {
-					method: n.pb.POST,
+					method: n.ob.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_coin_order`,
 					data: p
 				}).then(i.a)
@@ -1964,7 +1964,7 @@
 					thing_id: b
 				};
 				return Object(a.a)(Object(o.a)(r, [s.a]), {
-					method: n.pb.POST,
+					method: n.ob.POST,
 					endpoint: `${r.apiUrl}/api/v2/gold/paypal/execute_coin_with_gild_order`,
 					data: y
 				}).then(i.a)
@@ -1987,7 +1987,7 @@
 					thing_id: p
 				};
 				return Object(a.a)(Object(o.a)(r, [s.a]), {
-					method: n.pb.POST,
+					method: n.ob.POST,
 					endpoint: `${r.apiUrl}/api/v2/gold/paypal/execute_award_purchase_order`,
 					data: m
 				}).then(i.a)
@@ -2283,7 +2283,7 @@
 				s = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
 			const c = Object(s.a)(o.df),
 				i = Object(s.a)(o.ef),
-				d = Object(n.a)([c, i], (e, t) => new Set([e && a.Nb, t && a.Mb].filter(e => !!e)))
+				d = Object(n.a)([c, i], (e, t) => new Set([e && a.Mb, t && a.Lb].filter(e => !!e)))
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, r) {
 			"use strict";
@@ -2397,4 +2397,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PremiumPurchaseModal.e2f72f695a9d2daebf7d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PremiumPurchaseModal.b6620a85a6fcc52c746d.js.map

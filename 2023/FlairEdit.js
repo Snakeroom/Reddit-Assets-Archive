@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FlairEdit.6536ea25cef0a66eac0c.js
-// Retrieved at 6/7/2023, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FlairEdit.de8f4ed5149c2befb9d0.js
+// Retrieved at 6/7/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FlairEdit"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, o) {},
@@ -116,7 +116,7 @@
 				d = o("./src/reddit/constants/headers.ts");
 			const p = async (e, t) => Object(a.a)(Object(c.a)(e, [d.a]), {
 				endpoint: `${e.apiUrl}/api/v1/${t}/emojis/all`,
-				method: r.pb.GET,
+				method: r.ob.GET,
 				type: "json"
 			}).then(e => (e.ok && (e.body = (e => {
 				let t;
@@ -185,7 +185,7 @@
 							h = await Object(g.h)(m),
 							f = await (async (e, t, o, s) => Object(a.a)(Object(c.a)(e, [d.a]), {
 								endpoint: `${e.apiUrl}/api/v1/${t}/emoji_asset_upload_s3.json`,
-								method: r.pb.POST,
+								method: r.ob.POST,
 								data: {
 									filepath: o,
 									mimetype: s
@@ -221,7 +221,7 @@
 						subredditId: l
 					}).name, x = await (async (e, t, o, s, n) => Object(a.a)(Object(c.a)(e, [d.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/emoji.json`,
-						method: r.pb.POST,
+						method: r.ob.POST,
 						data: {
 							s3_key: o,
 							name: s,
@@ -308,7 +308,7 @@
 						}).name,
 						u = await (async (e, t, o) => Object(a.a)(Object(c.a)(e, [d.a]), {
 							endpoint: `${e.apiUrl}/api/v1/${o}/emoji/${t}`,
-							method: r.pb.DELETE,
+							method: r.ob.DELETE,
 							type: "json"
 						}))(l(), e, m);
 					if (u.ok) {
@@ -337,7 +337,7 @@
 						}).name;
 					if ((await (async (e, t, o) => Object(a.a)(Object(c.a)(e, [d.a]), {
 							endpoint: `${e.apiUrl}/api/enable_emojis_in_sr.json`,
-							method: r.pb.POST,
+							method: r.ob.POST,
 							data: {
 								subreddit: t,
 								enable: o
@@ -363,7 +363,7 @@
 						}).name;
 					(await (async (e, t, o, s) => Object(a.a)(Object(c.a)(e, [d.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${o}/emoji_permissions.json`,
-						method: r.pb.POST,
+						method: r.ob.POST,
 						data: {
 							name: t,
 							post_flair_allowed: s.postFlairAllowed,
@@ -1860,4 +1860,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FlairEdit.6536ea25cef0a66eac0c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FlairEdit.de8f4ed5149c2befb9d0.js.map

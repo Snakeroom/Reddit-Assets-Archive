@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.97d728ae6b6712bdc5a8.js
-// Retrieved at 6/7/2023, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.16ac2356fecefd20e711.js
+// Retrieved at 6/7/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./src/lib/LiveChatActiveUsers/index.m.less": function(e, t, s) {
@@ -67,7 +67,7 @@
 				return o && (n = Object(E.a)(n)), Object(P.a)(e, {
 					data: s,
 					endpoint: n,
-					method: g.pb.GET
+					method: g.ob.GET
 				})
 			};
 			var _ = s("./src/reddit/helpers/getTimeSortForListing/index.ts"),
@@ -245,8 +245,8 @@
 				z = s("./src/reddit/helpers/trackers/creatorStats.ts"),
 				q = s("./src/reddit/helpers/styles/mixins/index.m.less"),
 				Z = s.n(q),
-				Q = s("./src/reddit/models/Post/index.ts"),
-				Y = s("./src/redditGQL/types.ts"),
+				Y = s("./src/reddit/models/Post/index.ts"),
+				Q = s("./src/redditGQL/types.ts"),
 				X = s("./src/reddit/components/LiveChatActiveUserCountWrapper/index.tsx"),
 				$ = s("./src/reddit/components/ClassicPost/index.m.less"),
 				ee = s.n($);
@@ -338,7 +338,7 @@
 					templatePlaceholderImage: Ne && Ne.postPlaceholderImage
 				});
 				Object(F.b)(xe) && (qe = n.a.createElement(C, null));
-				const Ze = Object(Q.r)(xe);
+				const Ze = Object(Y.r)(xe);
 				return n.a.createElement(L.b, {
 					className: Object(i.a)(Z.a.classicPostStyles, ee.a.postContainer, Object(G.a)(e), {
 						[ee.a.shouldShowOverflow]: je
@@ -416,7 +416,7 @@
 					post: xe,
 					adLinkContent: He,
 					ctaExperimentDesign: _e && "classic"
-				})), xe.discussionType === Y.n.Chat && n.a.createElement(X.a, {
+				})), xe.discussionType === Q.n.Chat && n.a.createElement(X.a, {
 					postId: xe.id
 				}), n.a.createElement("div", {
 					className: ee.a.flatlistContainer
@@ -574,7 +574,7 @@
 				h = s.n(u);
 			const {
 				fbt: b
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), x = .75, O = 10 * d.N;
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), x = .75, O = 10 * d.M;
 			class v extends n.a.Component {
 				constructor(e) {
 					super(e), this.commentElement = null, this.handleResize = m()(() => {
@@ -663,8 +663,8 @@
 				z = s("./src/reddit/helpers/trackers/lightbox.ts"),
 				q = s("./src/reddit/models/PostDraft/index.ts"),
 				Z = s("./src/reddit/models/Comment/index.ts"),
-				Q = s("./src/reddit/selectors/activeModalId.ts"),
-				Y = s("./src/reddit/selectors/comments.ts"),
+				Y = s("./src/reddit/selectors/activeModalId.ts"),
+				Q = s("./src/reddit/selectors/comments.ts"),
 				X = s("./src/reddit/selectors/experiments/reportingRevampDesktop.ts"),
 				$ = s("./src/reddit/selectors/moderatorPermissions.ts"),
 				ee = s("./src/reddit/selectors/posts.ts"),
@@ -706,13 +706,13 @@
 						let {
 							comment: s
 						} = t;
-						return Object(Q.a)(e) === ke(s.id)
+						return Object(Y.a)(e) === ke(s.id)
 					},
 					isPendingDeletion: (e, t) => {
 						let {
 							comment: s
 						} = t;
-						return Object(Y.E)(e, {
+						return Object(Q.E)(e, {
 							commentId: s.postId
 						})
 					},
@@ -739,7 +739,7 @@
 						let {
 							comment: s
 						} = t;
-						return Object(Y.m)(e, {
+						return Object(Q.m)(e, {
 							commentId: s.id
 						})
 					},
@@ -1013,7 +1013,7 @@
 				Ke = ve.a.div("CommentBody", We.a),
 				He = Object(r.b)(() => Object(i.c)({
 					comment: (e, t) => Object(De.c)(e, t),
-					flair: Y.e
+					flair: Q.e
 				})),
 				Je = Object(c.b)(e => ({
 					renderingObjectInfo: e.comment
@@ -1052,7 +1052,7 @@
 					flair: o,
 					renderedInOverlay: !1
 				}), n.a.createElement("div", null, !t.isDeleted && n.a.createElement(Ke, null, r ? l() : n.a.createElement(C, {
-					height: d.Zb,
+					height: d.Yb,
 					isExpanded: r
 				}, l)), !t.isDeleted && i && n.a.createElement(Re, {
 					comment: t,
@@ -1158,7 +1158,7 @@
 				S = P.a.div("ThumbnailContainer", g.a),
 				R = Object(d.c)({
 					isCurrentUserProfilePost: v.l,
-					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== x.Tb.TOPIC),
+					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== x.Sb.TOPIC),
 					shouldOpenPostInNewTab: C.lb
 				}),
 				A = Object(i.b)(R);
@@ -2110,8 +2110,8 @@
 						post: t
 					})))
 				})),
-				Q = s("./src/reddit/components/PromotedUserPostsAd/PromotedUserPosts/index.m.less"),
-				Y = s.n(Q);
+				Y = s("./src/reddit/components/PromotedUserPostsAd/PromotedUserPosts/index.m.less"),
+				Q = s.n(Y);
 			const X = e => {
 				let {
 					postIds: t
@@ -2121,7 +2121,7 @@
 					key: e
 				}));
 				return n.a.createElement("div", {
-					className: Y.a.container
+					className: Q.a.container
 				}, s)
 			};
 			var $ = s("./src/reddit/components/PromotedUserPostsAd/index.m.less"),
@@ -2399,7 +2399,7 @@
 				componentDidMount() {
 					if (this.checkAndSendScreenview(), this.timerId) {
 						const e = C.c.end(this.timerId);
-						setTimeout(() => Object(C.b)(a.o.Redesign, {
+						setTimeout(() => Object(C.b)(a.n.Redesign, {
 							type: "mount",
 							component: "overviewChronoList",
 							duration: e
@@ -2413,7 +2413,7 @@
 					if (this.checkAndSendScreenview(), this.timerId && C.c.has(this.timerId)) {
 						const e = C.c.end(this.timerId);
 						if (e < 10) return;
-						setTimeout(() => Object(C.b)(a.o.Redesign, {
+						setTimeout(() => Object(C.b)(a.n.Redesign, {
 							duration: e,
 							type: "mount",
 							component: "overviewChronoList"
@@ -2987,8 +2987,8 @@
 				z = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				q = s("./src/reddit/helpers/postComponentForLayout/index.tsx"),
 				Z = s("./src/reddit/helpers/trackers/post.ts"),
-				Q = s("./src/reddit/featureFlags/index.ts"),
-				Y = s("./src/reddit/selectors/comments.ts"),
+				Y = s("./src/reddit/featureFlags/index.ts"),
+				Q = s("./src/reddit/selectors/comments.ts"),
 				X = s("./src/reddit/selectors/posts.ts"),
 				$ = s("./src/reddit/selectors/profileComments.ts"),
 				ee = s("./src/reddit/selectors/subreddit.ts"),
@@ -2999,12 +2999,12 @@
 					apiError: $.a,
 					apiPending: $.b,
 					currentUser: se.m,
-					measureScrollFPS: Q.d.measureScrollFPS,
+					measureScrollFPS: Y.d.measureScrollFPS,
 					layout: k.U,
 					loadMore: $.d,
 					subredditsById: ee.eb,
-					viewportDataLoaded: te.a,
-					commentsById: Y.q,
+					viewportDataLoaded: te.b,
+					commentsById: Q.q,
 					itemIds: $.f,
 					itemIdToPostId: $.e,
 					postsById: X.I,
@@ -3109,7 +3109,7 @@
 					let {
 						match: s
 					} = t;
-					return Object(se.h)(e, c.qc + s.params.profileName)
+					return Object(se.h)(e, c.pc + s.params.profileName)
 				}, (e, t) => {
 					let {
 						match: s
@@ -3207,7 +3207,7 @@
 				const _ = {
 					sort: g,
 					baseUrl: I,
-					sortOptions: c.Jb,
+					sortOptions: c.Ib,
 					timeSort: P
 				};
 				return i.a.createElement(Oe.a, {
@@ -3237,4 +3237,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.97d728ae6b6712bdc5a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.16ac2356fecefd20e711.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.ee65616dd19e47ef3de3.js
-// Retrieved at 6/7/2023, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.62a5ab07f2fe6de500b2.js
+// Retrieved at 6/7/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -877,7 +877,7 @@
 						const t = `https://${r.pointsDocsBaseUrl}v1.json?web`,
 							n = await Object(s.b)({
 								endpoint: t,
-								method: o.pb.GET
+								method: o.ob.GET
 							});
 						n.ok && n.body && e(u(n.body))
 					}
@@ -940,7 +940,7 @@
 				});
 			var g = (e, t) => Object(d.a)(Object(c.a)(e, [l.a]), {
 					endpoint: Object(p.a)(Object(u.a)(`${e.apiUrl}/api/editusertext`)),
-					method: a.pb.POST,
+					method: a.ob.POST,
 					data: _(t)
 				}).then(m.b),
 				x = n("./src/reddit/helpers/overlay/index.ts"),
@@ -1193,7 +1193,7 @@
 							};
 							if (!c || !Object(g.k)(c)) return {
 								error: {
-									type: r.Z
+									type: r.Y
 								}
 							};
 							if (c.startsWith("image/")) {
@@ -1201,74 +1201,74 @@
 									const e = o.fbt._("Images are not allowed in r/{subredditName}", [o.fbt._param("subredditName", d)], {
 										hk: "3C2E7Q"
 									});
-									return I(r.Z, e)
+									return I(r.Y, e)
 								}
 								if ("image/gif" === c) {
-									if (e.size > r.fb) return I(r.O)
-								} else if (e.size > r.hb) return I(r.X);
+									if (e.size > r.eb) return I(r.N)
+								} else if (e.size > r.gb) return I(r.W);
 								const s = await Object(_.a)(l);
 								if (i && (s.width < i || s.height < i)) {
 									const e = o.fbt._("Image must be {min_image_width}x{min_image_height} pixels or larger.", [o.fbt._param("min_image_width", i.toString()), o.fbt._param("min_image_height", i.toString())], {
 										hk: "2WFKgs"
 									});
-									return I(r.W, e)
+									return I(r.V, e)
 								}
 								u.width = s.width, u.height = s.height
 							} else if (c.startsWith("video/")) {
-								if (e.size > r.lb) return I(r.vc);
+								if (e.size > r.kb) return I(r.uc);
 								let t;
 								try {
 									t = await Object(g.j)(l, !0)
 								} catch (m) {
-									return I(r.Z)
+									return I(r.Y)
 								}
 								if (a) {
 									const {
 										videos: e,
 										images: n
 									} = a;
-									if (n && !e && t.duration > r.mb) {
+									if (n && !e && t.duration > r.lb) {
 										const e = o.fbt._("Sorry, r/{subredditName} doesn't allow videos. Please upload a video less than 60 seconds to convert to animated GIF.", [o.fbt._param("subredditName", d)], {
 											hk: "46ULiz"
 										});
-										return I(r.Z, e)
+										return I(r.Y, e)
 									}
 									if (!n && !e) {
 										const e = o.fbt._("Videos are not allowed in r/{subredditName}", [o.fbt._param("subredditName", d)], {
 											hk: "4uTUZb"
 										});
-										return I(r.Z, e)
+										return I(r.Y, e)
 									}
 								}
-								if (t.duration > r.kb) {
-									const e = o.fbt._("Video is too long. Maximum video length is {duration} minutes.", [o.fbt._param("duration", (r.kb / 60).toString())], {
+								if (t.duration > r.jb) {
+									const e = o.fbt._("Video is too long. Maximum video length is {duration} minutes.", [o.fbt._param("duration", (r.jb / 60).toString())], {
 										hk: "20nB6Q"
 									});
-									return I(r.Z, e)
+									return I(r.Y, e)
 								}
-								if (t.duration < r.sb) {
-									const e = o.fbt._("Video is too short. Minimum video length is {duration} seconds.", [o.fbt._param("duration", r.sb.toString())], {
+								if (t.duration < r.rb) {
+									const e = o.fbt._("Video is too short. Minimum video length is {duration} seconds.", [o.fbt._param("duration", r.rb.toString())], {
 										hk: "49PSW8"
 									});
-									return I(r.Z, e)
+									return I(r.Y, e)
 								}
 								if (0 === t.height || 0 === t.width) {
 									const e = o.fbt._("Your browser does not support the video codec used for this video. Please try using a different video codec.", null, {
 										hk: "1AC0mg"
 									});
-									return I(r.Z, e)
+									return I(r.Y, e)
 								}
-								if (t.height < r.tb || t.width < r.ub) {
-									const e = o.fbt._("Videos must be {min_video_width}x{min_video_height} pixels or larger.", [o.fbt._param("min_video_width", r.ub.toString()), o.fbt._param("min_video_height", r.tb.toString())], {
+								if (t.height < r.sb || t.width < r.tb) {
+									const e = o.fbt._("Videos must be {min_video_width}x{min_video_height} pixels or larger.", [o.fbt._param("min_video_width", r.tb.toString()), o.fbt._param("min_video_height", r.sb.toString())], {
 										hk: "2HSUGl"
 									});
-									return I(r.Z, e)
+									return I(r.Y, e)
 								}
-								if (e.size / t.duration < r.rb) {
-									const e = o.fbt._("Videos must have a bitrate of {min_bitrate}KB/s or larger.", [o.fbt._param("min_bitrate", (r.rb / r.ab).toString())], {
+								if (e.size / t.duration < r.qb) {
+									const e = o.fbt._("Videos must have a bitrate of {min_bitrate}KB/s or larger.", [o.fbt._param("min_bitrate", (r.qb / r.Z).toString())], {
 										hk: "1ehgDE"
 									});
-									return I(r.Z, e)
+									return I(r.Y, e)
 								}
 								u.height = t.height, u.width = t.width, u.videoDuration = t.duration, u.videoFirstFrameUrl = t.firstFrame.dataUrl
 							}
@@ -1287,7 +1287,7 @@
 								}
 							})), B = !0, a && a(), l) {
 							const e = j.mimetype,
-								t = e && r.U[e];
+								t = e && r.T[e];
 							if (e && t) {
 								const e = await (async (e, t) => {
 									return await Object(m.a)(e, {
@@ -1336,7 +1336,7 @@
 						const F = e.name,
 							R = await (async (e, t, n) => Object(u.a)(Object(p.a)(e, [h.a]), {
 								endpoint: `${e.apiUrl}/api/media/asset.json`,
-								method: r.pb.POST,
+								method: r.ob.POST,
 								data: {
 									filepath: t,
 									mimetype: n
@@ -1488,7 +1488,7 @@
 						if (!f) return
 					}
 					const _ = Object(m.q)(d, {
-							field: o.Cb.TITLE
+							field: o.Bb.TITLE
 						}),
 						g = Object(m.n)(d),
 						x = Object(m.lb)(d),
@@ -1940,8 +1940,8 @@
 				G = n("./src/reddit/components/CommentCreation/getCancelModalId.ts"),
 				K = n("./src/realtime/GQLSubscription/async.tsx"),
 				V = n("./src/reddit/components/UsersCountIndicator/constants.ts"),
-				Z = n("./src/reddit/constants/componentSizes.ts"),
-				X = n("./src/reddit/constants/componentTestIds.ts"),
+				X = n("./src/reddit/constants/componentSizes.ts"),
+				Z = n("./src/reddit/constants/componentTestIds.ts"),
 				J = n("./src/reddit/selectors/activeModalId.ts"),
 				Q = n("./src/reddit/selectors/comments.ts"),
 				Y = n("./src/reddit/selectors/editorContent.ts"),
@@ -1986,7 +1986,7 @@
 						isUserTyping: !1
 					}), V.c), this.detectBreakout = () => {
 						if (!this.wrapperEl || !this.wrapperEl.parentElement || this.props.isTopLevelComment) return;
-						const e = this.wrapperEl.parentElement.getBoundingClientRect().width < Z.c,
+						const e = this.wrapperEl.parentElement.getBoundingClientRect().width < X.c,
 							t = this.getWrapperHeight();
 						e === this.state.breakOut && t === this.state.wrapperHeight || w.a.write(() => {
 							this.setState({
@@ -2107,7 +2107,7 @@
 				getWrapperHeight() {
 					if (!this.textAreaRef) return;
 					const e = Object(l.findDOMNode)(this.textAreaRef);
-					return e instanceof Element ? e.getBoundingClientRect().height + fe + _e + Z.n : void 0
+					return e instanceof Element ? e.getBoundingClientRect().height + fe + _e + X.n : void 0
 				}
 				render() {
 					const {
@@ -2139,7 +2139,7 @@
 						isUserTyping: P
 					} = this.state, B = Object(G.a)(l), L = d.draftType === oe.c.edit;
 					return c.a.createElement("div", {
-						"data-test-id": X.b,
+						"data-test-id": Z.b,
 						className: Object(H.a)(ie.a.Wrapper, s, {
 							[ie.a.isTopLevelComment]: O,
 							[ie.a.mExpanded]: j,
@@ -2530,14 +2530,14 @@
 			}
 			var K = n("./src/reddit/selectors/comments.ts"),
 				V = n("./src/reddit/selectors/experiments/mediaInComments.ts"),
-				Z = n("./src/lib/constants/index.ts");
+				X = n("./src/lib/constants/index.ts");
 
-			function X(e) {
+			function Z(e) {
 				let {
 					isImageUploadEnabled: t,
 					isGifUploadEnabled: n
 				} = e, o = [];
-				return t && (o = Array.from(Z.c)), n && (o = [...o, ...Array.from(Z.a)]), o
+				return t && (o = Array.from(X.c)), n && (o = [...o, ...Array.from(X.a)]), o
 			}
 			var J = n("./src/reddit/hooks/useTracking.ts"),
 				Q = n("./src/reddit/selectors/experiments/imageComment.ts"),
@@ -2582,7 +2582,7 @@
 					O = Object(J.a)(),
 					T = Object(r.useCallback)(() => O(Object(u.l)()), [O]),
 					F = x.giphy.isEnabled,
-					R = Object(r.useMemo)(() => X({
+					R = Object(r.useMemo)(() => Z({
 						isGifUploadEnabled: w,
 						isImageUploadEnabled: k
 					}).join(), [k, w]);
@@ -2815,7 +2815,7 @@
 						if ((e.length > 1 || s && e.length >= 1) && (r(C.fbt._("Limit one media per comment", null, {
 								hk: "iejOT"
 							})), s)) return [];
-						const i = X({
+						const i = Z({
 								isImageUploadEnabled: o,
 								isGifUploadEnabled: n
 							}),
@@ -2984,7 +2984,7 @@
 				Ge = n("./src/reddit/selectors/experiments/commentBox.ts"),
 				Ke = n("./src/reddit/selectors/posts.ts");
 			const Ve = Object(xe.v)(),
-				Ze = Object(d.c)({
+				Xe = Object(d.c)({
 					activeModalId: ve.a,
 					contributorRequestPending: (e, t) => {
 						let {
@@ -3007,7 +3007,7 @@
 					},
 					postAuthorIsBlocked: Ke.w
 				}),
-				Xe = Object(a.b)(Ze, (e, t) => ({
+				Ze = Object(a.b)(Xe, (e, t) => ({
 					onMount: () => e(c.a(t.draftKey)),
 					onCancel: () => {
 						t.draftType === he.c.edit ? e(l.d({
@@ -3118,7 +3118,7 @@
 					return e.contributorRequestPending ? i.a.createElement(He.a, null) : e.showContributorRequestFlow ? i.a.createElement(y, null) : e.draft.commentMode === pe.i.RICH_TEXT ? i.a.createElement(Ue, n) : i.a.createElement(m.b, n)
 				}
 			}
-			t.default = Ve(Xe(Je))
+			t.default = Ve(Ze(Je))
 		},
 		"./src/reddit/components/ContributorRequestFlow/ContributorRequestButton/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -3720,9 +3720,9 @@
 					})(r, s, n);
 				return i ? [i] : (e => {
 					const t = [];
-					return e.image > _.gb && t.push(o.fbt._("Post may not contain more that 20 images", null, {
+					return e.image > _.fb && t.push(o.fbt._("Post may not contain more that 20 images", null, {
 						hk: "1Szc36"
-					})), e.video + e.gifvideo > _.jb && t.push(o.fbt._("Post may not contain more that 5 videos", null, {
+					})), e.video + e.gifvideo > _.ib && t.push(o.fbt._("Post may not contain more that 5 videos", null, {
 						hk: "2WhZ8k"
 					})), t
 				})(r)
@@ -3754,8 +3754,8 @@
 			const G = P.a.div("BottomRow", A.a),
 				K = P.a.div("FormContent", A.a),
 				V = P.a.wrapped(M.l, "SubmitButton", A.a),
-				Z = P.a.wrapped(I.a, "LoadingIcon", A.a),
-				X = Object(k.v)(),
+				X = P.a.wrapped(I.a, "LoadingIcon", A.a),
+				Z = Object(k.v)(),
 				J = Object(l.c)({
 					destSubreddit: S.h,
 					editorMode: S.i,
@@ -3977,7 +3977,7 @@
 					})), a.a.createElement(V, {
 						disabled: !!i || !!j.length || !this.hasChanged() || S || c,
 						onClick: this.onSubmit
-					}, i ? a.a.createElement(Z, {
+					}, i ? a.a.createElement(X, {
 						sizePx: 10
 					}) : o.fbt._("Save", null, {
 						hk: "4yMsMq"
@@ -3991,7 +3991,7 @@
 					}))
 				}
 			}
-			t.default = X(Q(Y))
+			t.default = Z(Q(Y))
 		},
 		"./src/reddit/components/PostGuidance/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -4701,4 +4701,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.ee65616dd19e47ef3de3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.62a5ab07f2fe6de500b2.js.map

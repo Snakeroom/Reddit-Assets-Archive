@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationLogFilters.4133c702d49f04122e7e.js
-// Retrieved at 6/7/2023, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationLogFilters.ccb3a8cfe5972aebab1e.js
+// Retrieved at 6/7/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationLogFilters"], {
 		"./src/reddit/components/CCM/ModerationLog/Filters/ActionsDropdown/ActionsTreeFilter/ActionBranch/index.m.less": function(e, t, a) {
@@ -596,7 +596,7 @@
 								name: "reddit",
 								title: `${o.fbt._("Reddit",null,{hk:"2PddN0"})}`
 							}, {
-								name: g.m,
+								name: g.l,
 								title: `${o.fbt._("AutoModerator",null,{hk:"4wxc1W"})}`
 							}, ...m.map(e => ({
 								name: e.name,
@@ -1144,4 +1144,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationLogFilters.4133c702d49f04122e7e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationLogFilters.ccb3a8cfe5972aebab1e.js.map
