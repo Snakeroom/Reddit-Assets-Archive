@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostSetPage.0513f813d859c106853a.js
-// Retrieved at 6/6/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostSetPage.a9394be2f0a9244b2980.js
+// Retrieved at 6/6/2023, 10:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostSetPage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -951,11 +951,11 @@
 				let {
 					className: t,
 					profileName: n,
-					timeSort: r = o.nc.ALL
+					timeSort: r = o.oc.ALL
 				} = e;
 				return i.a.createElement(m, {
 					className: t
-				}, r === o.nc.ALL ? s.fbt._("hmm... {profileName} hasn't commented on anything", [s.fbt._param("profileName", `u/${n}`)], {
+				}, r === o.oc.ALL ? s.fbt._("hmm... {profileName} hasn't commented on anything", [s.fbt._param("profileName", `u/${n}`)], {
 					hk: "1MHn3t"
 				}) : s.fbt._("hmm... {profileName} hasn't commented recently", [s.fbt._param("profileName", `u/${n}`)], {
 					hk: "qN3uL"
@@ -965,11 +965,11 @@
 				let {
 					className: t,
 					profileName: n,
-					timeSort: r = o.nc.ALL
+					timeSort: r = o.oc.ALL
 				} = e;
 				return i.a.createElement(m, {
 					className: t
-				}, r === o.nc.ALL ? s.fbt._("hmm... {profileName} hasn't posted anything", [s.fbt._param("profileName", `u/${n}`)], {
+				}, r === o.oc.ALL ? s.fbt._("hmm... {profileName} hasn't posted anything", [s.fbt._param("profileName", `u/${n}`)], {
 					hk: "28vBEd"
 				}) : s.fbt._("hmm... {profileName} hasn't posted recently", [s.fbt._param("profileName", `u/${n}`)], {
 					hk: "38GhqN"
@@ -1323,7 +1323,7 @@
 				})())))
 			};
 			b.defaultProps = {
-				minimizedLength: a.Xb
+				minimizedLength: a.Yb
 			}, t.a = b
 		},
 		"./src/reddit/components/SidebarFooter/index.m.less": function(e, t, n) {
@@ -1806,7 +1806,7 @@
 						this.windowHeight = window.innerHeight
 					}, this.handleResize = i()(() => {
 						this.updateMeasurements(), this.updateState()
-					}, a.M), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
+					}, a.N), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
 						isAdSticky: !0,
 						isBottomSticky: !1,
 						isFooterSticky: !0
@@ -2497,7 +2497,7 @@
 						return Object(v.C)(e, n, s, r)
 					}),
 					subredditsById: _.eb,
-					viewportDataLoaded: E.b,
+					viewportDataLoaded: E.a,
 					pageReferrer: p.X,
 					postListPlaceholderComponent: () => g.a,
 					isNpsScrollSurveyEnabled: x.e,
@@ -3094,7 +3094,7 @@
 						postClassName: y.a.post,
 						noPostsComponent: () => r.a.createElement(d.c, {
 							profileName: t,
-							timeSort: o.nc.ALL
+							timeSort: o.oc.ALL
 						}),
 						shouldShowInsightsButton: C
 					}), k && r.a.createElement(_, {
@@ -3166,6 +3166,18 @@
 					}) === s.Td
 				}
 		},
+		"./src/reddit/selectors/tracking.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return s
+			}));
+			const s = (e, t) => {
+				let {
+					listingKey: n
+				} = t;
+				return e.tracking.viewportDataLoaded[n]
+			}
+		},
 		"./src/redditGQL/operations/DeleteSubredditMuteSettings.json": function(e) {
 			e.exports = JSON.parse('{"id":"c518a45f60a5"}')
 		},
@@ -3189,4 +3201,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.0513f813d859c106853a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.a9394be2f0a9244b2980.js.map

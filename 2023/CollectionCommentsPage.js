@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.c7aec0cab71c8998a4c0.js
-// Retrieved at 6/6/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.c67b18f7363dc553e3d0.js
+// Retrieved at 6/6/2023, 10:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -668,7 +668,7 @@
 			var j = (e, t, s, r, o) => Object(O.a)(e, {
 					data: o,
 					endpoint: k(t, s, r),
-					method: n.ob.GET
+					method: n.pb.GET
 				}),
 				P = s("./src/reddit/endpoints/page/subredditPage.ts"),
 				w = s("./src/reddit/helpers/canonicalUrls.ts"),
@@ -729,7 +729,7 @@
 								identifier: t
 							}),
 							o = Object(i.c)(s.title, r.name).toString();
-						return Object(a.a)(o, v.c, n.nb)
+						return Object(a.a)(o, v.c, n.ob)
 					})(s(), E) || Object(i.e)();
 					t(m.n({
 						title: N
@@ -1601,7 +1601,7 @@
 						this.state.isBlockingModalShowed || (this.setState({
 							isBlockingModalShowed: !0
 						}), this.props.showModalOnCommentsScroll(this.props.postPermalink))
-					}, u.M, {
+					}, u.N, {
 						leading: !0,
 						maxWait: 1e3
 					}), this.parentNodeIdsMap = {}, ye.c(), this.childrenInfoMap = {}, this.state = {
@@ -1619,7 +1619,7 @@
 					this.timerId && Ne.c.cancel(this.timerId), e.length && (this.timerId = Ne.c.start()), this.findHiddenNodes(e, t, s, n)
 				}
 				componentDidMount() {
-					this.timerId && Object(Ne.b)(u.n.Redesign, {
+					this.timerId && Object(Ne.b)(u.o.Redesign, {
 						type: "mount",
 						component: "commentsList",
 						duration: Ne.c.end(this.timerId)
@@ -1647,7 +1647,7 @@
 					this.timerId && Ne.c.cancel(this.timerId), e.commentLinks.length && (this.timerId = Ne.c.start())
 				}
 				componentDidUpdate(e) {
-					this.timerId && Object(Ne.b)(u.n.Redesign, {
+					this.timerId && Object(Ne.b)(u.o.Redesign, {
 						type: "mount",
 						component: "commentsList",
 						duration: Ne.c.end(this.timerId)
@@ -1994,7 +1994,7 @@
 							placementIndex: e,
 							position: N.a.BOTTOM,
 							refreshKey: r.id,
-							sizes: m.p,
+							sizes: m.q,
 							commentsPageKey: t
 						}) : null
 					})
@@ -2220,7 +2220,7 @@
 				F = C.a.div("ThumbnailContainer", y.a),
 				A = Object(d.c)({
 					isCurrentUserProfilePost: f.l,
-					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== g.Sb.TOPIC),
+					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== g.Tb.TOPIC),
 					shouldOpenPostInNewTab: v.lb
 				}),
 				B = Object(i.b)(A);
@@ -3679,7 +3679,7 @@
 					hk: "2x1D6M"
 				})), d.a.createElement("span", {
 					className: E.a.separator
-				}, "•"), l && d.a.createElement("span", null, Object(g.a)(new Date(l).getTime() / b.Wb, !0)))))
+				}, "•"), l && d.a.createElement("span", null, Object(g.a)(new Date(l).getTime() / b.Xb, !0)))))
 			};
 			var j = s("./src/reddit/selectors/posts.ts"),
 				P = s("./src/reddit/components/ItemCarousel/helpers.ts"),
@@ -6221,7 +6221,7 @@
 				}),
 				Z = Object(d.b)(J, e => ({
 					loadMorePosts: t => e(Object(b.r)({
-						sort: l.bb.HOT,
+						sort: l.cb.HOT,
 						subredditName: t
 					}))
 				}));
@@ -6229,10 +6229,10 @@
 				constructor() {
 					super(...arguments), this.scrollContainer = () => this.props.isOverlay ? document.getElementById(x.e) : null, this.onViewed = (e, t) => Object(E.e)({
 						key: this.listingKey(),
-						sort: l.bb.TOP,
+						sort: l.cb.TOP,
 						timerType: t,
 						timerMillis: e,
-						timeSort: l.nc.WEEK
+						timeSort: l.oc.WEEK
 					}), this.onFooterClick = e => {
 						this.props.sendEvent(Object(O.c)("recommended_footer"))
 					}
@@ -6248,8 +6248,8 @@
 						shouldShowNsfwListingBelow: r,
 						subredditOrProfile: o
 					} = this.props;
-					return s || e ? t : r && n && n.id ? Object(V.a)(n.id) : Object(p.a)(o.name, l.bb.TOP, {
-						t: l.nc.WEEK
+					return s || e ? t : r && n && n.id ? Object(V.a)(n.id) : Object(p.a)(o.name, l.cb.TOP, {
+						t: l.oc.WEEK
 					})
 				}
 				renderSmallBanner() {
@@ -6898,7 +6898,7 @@
 				fbt: q
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 			const G = Object(d.v)(),
-				Y = [K.Sb.SUBREDDIT, K.Sb.COMMENTS, K.Sb.COLLECTION_COMMENTS],
+				Y = [K.Tb.SUBREDDIT, K.Tb.COMMENTS, K.Tb.COLLECTION_COMMENTS],
 				J = Object(i.c)({
 					isMetaFilterEnabled: (e, t) => !!e.subreddits.appliedFilters.meta[t.subredditId],
 					isPostsRoute: (e, t) => !!t.pageLayer && !!t.pageLayer.meta && Y.indexOf(t.pageLayer.meta.name) > -1,
@@ -6978,7 +6978,7 @@
 					homeUrl: t,
 					isTopBannerVariant: s,
 					pageLayer: n
-				} = e, o = !!n && !!n.meta && n.meta.name === K.Sb.SUBREDDIT_WIKI, i = `wiki/${ie.i}`, a = t.endsWith("/") ? t + i : `${t}/${i}`;
+				} = e, o = !!n && !!n.meta && n.meta.name === K.Tb.SUBREDDIT_WIKI, i = `wiki/${ie.i}`, a = t.endsWith("/") ? t + i : `${t}/${i}`;
 				return r.a.createElement(C, {
 					isActive: o,
 					isTopBannerVariant: s,
@@ -8829,7 +8829,7 @@
 				e.Continue = "continue", e.Dismiss = "dismiss", e.Login = "login", e.View = "view"
 			}(n || (n = {}));
 			const d = e => {
-					Object(i.b)() || Object(a.b)(r.n.Redesign, {
+					Object(i.b)() || Object(a.b)(r.o.Redesign, {
 						type: a.a.NsfwBypassableBlocking,
 						data: {
 							action: e
@@ -8837,7 +8837,7 @@
 					})
 				},
 				c = e => {
-					!Object(i.b)() && e && Object(o.b)(10) && Object(a.b)(r.n.Redesign, {
+					!Object(i.b)() && e && Object(o.b)(10) && Object(a.b)(r.o.Redesign, {
 						type: a.a.NsfwBypassableBlocking,
 						data: {
 							action: n.View,
@@ -9846,7 +9846,7 @@
 					D = B > 0,
 					W = Object(x.b)(Object(m.e)(M));
 				if (!R && !D) return null;
-				const U = (null == j ? void 0 : j.queryParams.q) && (null === (s = j.meta) || void 0 === s ? void 0 : s.name) === l.Sb.COMMENTS,
+				const U = (null == j ? void 0 : j.queryParams.q) && (null === (s = j.meta) || void 0 === s ? void 0 : s.name) === l.Tb.COMMENTS,
 					H = a.bucketed && Object(b.a)(n) && Object(b.b)(P),
 					V = Object(d.a)(Object(x.b)(M), (null == j ? void 0 : j.queryParams) || {});
 				return r.a.createElement("div", {
@@ -10394,7 +10394,7 @@
 								tooltipType: ct.f.StickyPost
 							}))
 						}))
-					}, k.M), this.sendEventWithName = (e, t) => () => this.props.sendEvent(Object(Ot.d)(this.props.postId, e, t)), this.updateWindowHeight = () => {
+					}, k.N), this.sendEventWithName = (e, t) => () => this.props.sendEvent(Object(Ot.d)(this.props.postId, e, t)), this.updateWindowHeight = () => {
 						this.needsUpdatedMeasurements = !0, this.handleScroll()
 					}, this.updateCommentSortRef = e => {
 						this.commentSortRef = e, this.needsUpdatedMeasurements = !0
@@ -10496,7 +10496,7 @@
 							this.props.isOverlay || Object(N.d)(N.c.CommentsPage, r, e)
 						}), this.props.inResonatePilot) {
 						const e = this.props.subredditName ? this.props.subredditName.toLowerCase() : "";
-						k.Rb.includes(e) && Object(Ct.a)(e)
+						k.Sb.includes(e) && Object(Ct.a)(e)
 					}
 					this.props.isLoggedIn && Object(de.c)() && this.props.submitCommentAfterSignUp(), (null == d ? void 0 : d.isNSFW) && l && o && a()
 				}
@@ -10666,7 +10666,7 @@
 					if (!_) {
 						if (t) return g.a.createElement(qe.f, null);
 						const s = this.renderPageError();
-						return s || (e ? e.type === k.o ? g.a.createElement(Vt, {
+						return s || (e ? e.type === k.p ? g.a.createElement(Vt, {
 							contentGateType: Pt.a.PostBlockedForLegalReason
 						}) : g.a.createElement(qe.d, {
 							postId: y,
@@ -11187,7 +11187,7 @@
 				a = s("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
 				d = s("./src/reddit/selectors/userPrefs.ts"),
 				c = s("./node_modules/reselect/es/index.js");
-			const l = 30 * n.pb,
+			const l = 30 * n.qb,
 				m = () => {
 					localStorage.setItem(i.b.XpromoConsolidation, (new Date).toString())
 				},
@@ -11392,4 +11392,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.c7aec0cab71c8998a4c0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.c67b18f7363dc553e3d0.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.9c9066e815ab8498ff0a.js
-// Retrieved at 6/6/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.126c07025cf61eb4c585.js
+// Retrieved at 6/6/2023, 10:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, n) {
@@ -39,7 +39,7 @@
 					shortMonths: i,
 					locale: c = r.DEFAULT_LOCALE
 				} = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-				const a = new Date(e * o.Wb);
+				const a = new Date(e * o.Xb);
 				return s.a ? new Intl.DateTimeFormat(c, {
 					month: i ? "short" : "long",
 					day: t ? "numeric" : void 0,
@@ -351,7 +351,7 @@
 						type: e.type
 					} : {
 						id: Object(S.o)(d(), e.name),
-						name: `${o.pc}${e.name}`,
+						name: `${o.qc}${e.name}`,
 						type: e.type
 					});
 					if (!Object(I.S)(d())) return i(Object(a.k)({
@@ -482,7 +482,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: i
 					})), (await ((e, t, n) => Object(m.a)(Object(b.a)(e, [p.a]), {
-						method: o.ob.POST,
+						method: o.pb.POST,
 						endpoint: `${e.apiUrl}/api/multi/favorite`,
 						data: {
 							make_favorite: n ? "true" : "false",
@@ -522,7 +522,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: a
 					})), (await ((e, t, n) => Object(m.a)(Object(b.a)(e, [p.a]), {
-						method: o.ob.POST,
+						method: o.pb.POST,
 						endpoint: `${e.apiUrl}/api/multi/subscribe`,
 						data: {
 							action: n ? "sub" : "unsub",
@@ -1001,7 +1001,7 @@
 					a = null != n ? n : r;
 				return o.a.createElement(o.a.Fragment, null, function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : s.DEFAULT_LOCALE;
-					const n = e * i.Wb;
+					const n = e * i.Xb;
 					return new Date(n).toLocaleString(t, {
 						weekday: "short",
 						month: "short",
@@ -1068,7 +1068,7 @@
 				let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
 					r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : a.DEFAULT_LOCALE;
 				const o = Object(u.e)(e, t),
-					s = new Date(e * l.Wb);
+					s = new Date(e * l.Xb);
 				let i;
 				if (o === u.a.Live || n) return d.fbt._("Now", null, {
 					hk: "Prpcg"
@@ -1445,7 +1445,7 @@
 						subscribe: i
 					} = t;
 					return Object(s.a)(Object(c.a)(e, [a.a]), {
-						method: o.ob.POST,
+						method: o.pb.POST,
 						endpoint: Object(d.a)(`${e.apiUrl}/api/subscribe`),
 						data: {
 							action: i ? "sub" : "unsub",
@@ -1456,7 +1456,7 @@
 					})
 				},
 				u = (e, t, n) => Object(s.a)(Object(c.a)(e, [a.a]), {
-					method: o.ob.POST,
+					method: o.pb.POST,
 					endpoint: `${e.apiUrl}/api/favorite`,
 					data: {
 						make_favorite: n ? "true" : "false",
@@ -1485,7 +1485,7 @@
 				e.Dismiss = "dismiss", e.Login = "login", e.Signup = "signup", e.View = "view"
 			}(c || (c = {}));
 			const a = e => {
-					i() || Object(s.b)(r.n.Redesign, {
+					i() || Object(s.b)(r.o.Redesign, {
 						type: s.a.NsfwBlocking,
 						data: {
 							action: e
@@ -1493,7 +1493,7 @@
 					})
 				},
 				d = e => {
-					!i() && e && Object(o.b)(10) && Object(s.b)(r.n.Redesign, {
+					!i() && e && Object(o.b)(10) && Object(s.b)(r.o.Redesign, {
 						type: s.a.NsfwBlocking,
 						data: {
 							action: c.View,
@@ -1862,4 +1862,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.9c9066e815ab8498ff0a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.126c07025cf61eb4c585.js.map
