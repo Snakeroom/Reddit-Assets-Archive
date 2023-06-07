@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.777825354054e3b953ec.js
-// Retrieved at 6/7/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.ce2427f6b01d7b04fef7.js
+// Retrieved at 6/7/2023, 4:20:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1497,14 +1497,14 @@
 						"translations/bn_BD-json": "bad5218ef6c29e3b71cb",
 						"translations/de_DE-json": "be3ae0845faa384d13d9",
 						"translations/es_ES-json": "4cf49c938f7c18ac6346",
-						"translations/es_MX-json": "ec8447a00024cd1ce2c8",
+						"translations/es_MX-json": "479be88e5353d29b6173",
 						"translations/fr_CA-json": "29180c5b30ee7942e7b6",
 						"translations/fr_FR-json": "134365f29c04750cd456",
 						"translations/hi_IN-json": "106cf33f05656325ff41",
 						"translations/it_IT-json": "59f0bb4c099064e0142d",
-						"translations/nl_NL-json": "a252ee404c74fd586c51",
+						"translations/nl_NL-json": "4d3221d4a0684ca9fbea",
 						"translations/pseudo-json": "a16ab481720c94583183",
-						"translations/pt_BR-json": "9030e6bc8c7830d80b49",
+						"translations/pt_BR-json": "ce208aa3aebbde323e4c",
 						"translations/pt_PT-json": "e355377336376ac602c2",
 						"translations/sv_SE-json": "933c52acacde8f974213",
 						"vendors~AdminPanel": "9abedef941b07fd50b75",
@@ -1538,7 +1538,7 @@
 						HarbergerTaxManageModal: "7da7a33e2dcbf2a680f8",
 						SubredditPremiumUploadModal: "89dc7a127ea5179a0b29",
 						"vendors~PostCreation": "5c4160c6e1330f77c587",
-						PostCreation: "f6372666ca1d9edb2e5a",
+						PostCreation: "da322f0fee5c6687cfad",
 						"vendors~ModerationPages": "4afdb9fb9fc356131054",
 						ModerationPages: "de99ec6cf5ce32d1038d",
 						"vendors~ModStatsChart~Settings~ViewsTooltip": "ca7c845d62fd39d960b6",
@@ -1778,4 +1778,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.777825354054e3b953ec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.ce2427f6b01d7b04fef7.js.map

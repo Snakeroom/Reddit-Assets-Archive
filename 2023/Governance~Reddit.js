@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.f58e861b33abbece4f83.js
-// Retrieved at 6/7/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.1be0c876e5c53dbf606d.js
+// Retrieved at 6/7/2023, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -130,7 +130,7 @@
 					super("reCaptcha Enterprise client is not available")
 				}
 			}! function(e) {
-				e.PageLoad = "PAGE_LOAD", e.PostSubmit = "POST_SUBMIT"
+				e.PageLoad = "PAGE_LOAD", e.PostSubmit = "post_submit"
 			}(u || (u = {}));
 			var h = u;
 			const b = new class {
@@ -25560,4 +25560,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.f58e861b33abbece4f83.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.1be0c876e5c53dbf606d.js.map

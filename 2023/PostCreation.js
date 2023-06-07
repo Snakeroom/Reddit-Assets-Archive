@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.f6372666ca1d9edb2e5a.js
-// Retrieved at 6/7/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.da322f0fee5c6687cfad.js
+// Retrieved at 6/7/2023, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit~StandalonePostPage", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -737,7 +737,7 @@
 					super("reCaptcha Enterprise client is not available")
 				}
 			}! function(e) {
-				e.PageLoad = "PAGE_LOAD", e.PostSubmit = "POST_SUBMIT"
+				e.PageLoad = "PAGE_LOAD", e.PostSubmit = "post_submit"
 			}(u || (u = {}));
 			var h = u;
 			const b = new class {
@@ -40136,4 +40136,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.f6372666ca1d9edb2e5a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.da322f0fee5c6687cfad.js.map
