@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.6a7886866f42c3485b2d.js
-// Retrieved at 6/7/2023, 12:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.b759ce3d3a0900f73b15.js
+// Retrieved at 6/7/2023, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./node_modules/lodash/map.js": function(e, t, s) {
@@ -192,20 +192,20 @@
 						isFullWidth: S,
 						isUnread: k,
 						isNightMode: A,
-						notificationId: D,
-						onEvent: U
+						notificationId: L,
+						onEvent: D
 					} = e,
-					P = null == E ? void 0 : E.messageType,
-					F = P === v.a.CommentReply,
-					B = P === v.a.SubredditRecommendation,
-					L = P === v.a.LifecyclePostSuggestions,
-					K = null === (t = null == E ? void 0 : E.post) || void 0 === t ? void 0 : t.permalink;
-				let M = null === (s = null == E ? void 0 : E.comment) || void 0 === s ? void 0 : s.id,
-					V = (null === (o = null == E ? void 0 : E.post) || void 0 === o ? void 0 : o.id) || (null === (f = null === (x = null == E ? void 0 : E.comment) || void 0 === x ? void 0 : x.postInfo) || void 0 === f ? void 0 : f.id);
-				const H = null === (R = null == E ? void 0 : E.subreddit) || void 0 === R ? void 0 : R.id,
-					W = null === (T = null === (C = null == E ? void 0 : E.awarding) || void 0 === C ? void 0 : C.award) || void 0 === T ? void 0 : T.id,
+					U = null == E ? void 0 : E.messageType,
+					P = U === v.a.CommentReply,
+					F = U === v.a.SubredditRecommendation,
+					B = U === v.a.LifecyclePostSuggestions,
+					M = null === (t = null == E ? void 0 : E.post) || void 0 === t ? void 0 : t.permalink;
+				let V = null === (s = null == E ? void 0 : E.comment) || void 0 === s ? void 0 : s.id,
+					H = (null === (o = null == E ? void 0 : E.post) || void 0 === o ? void 0 : o.id) || (null === (f = null === (x = null == E ? void 0 : E.comment) || void 0 === x ? void 0 : x.postInfo) || void 0 === f ? void 0 : f.id);
+				const W = null === (R = null == E ? void 0 : E.subreddit) || void 0 === R ? void 0 : R.id,
+					K = null === (T = null === (C = null == E ? void 0 : E.awarding) || void 0 === C ? void 0 : C.award) || void 0 === T ? void 0 : T.id,
 					J = null === (g = null === (j = null == E ? void 0 : E.awarding) || void 0 === j ? void 0 : j.awarder) || void 0 === g ? void 0 : g.id;
-				if (P === v.a.CommentFollow || P === v.a.PostFollow) {
+				if (U === v.a.CommentFollow || U === v.a.PostFollow) {
 					const e = (e => {
 						const t = {},
 							{
@@ -217,32 +217,32 @@
 						const [n, r, i, a] = o.slice(1);
 						return r && "r" === n && (t.subredditName = r), i && (t.postId = `${u.b}${i}`), a && (t.commentId = `${u.a}${a}`), t
 					})(N);
-					V = e.postId, M = e.commentId
-				} else P !== v.a.PostReply && P !== v.a.LifecyclePostSuggestions || (M = D);
+					H = e.postId, V = e.commentId
+				} else U !== v.a.PostReply && U !== v.a.LifecyclePostSuggestions || (V = L);
 				const z = e => {
-					if (V && M) {
-						const e = Object(a.a)(V, M, Object(_.c)(N)),
+					if (H && V) {
+						const e = Object(a.a)(H, V, Object(_.c)(N)),
 							t = {
-								parentCommentId: M,
+								parentCommentId: V,
 								commentsPageKey: e
 							};
-						w(Object(d.h)(t)), U({
+						w(Object(d.h)(t)), D({
 							position: h.d.SECOND
 						})
 					} else e.preventDefault(), w(Object(c.f)(O))
 				};
 				return (() => {
-					switch (P) {
+					switch (U) {
 						case v.a.HFNSubredditInterestingPost:
 						case v.a.LifecyclePostSuggestions:
 						case v.a.SubredditRecommendation: {
-							const e = L;
-							if (!B && !e) return null;
+							const e = B;
+							if (!F && !e) return null;
 							const t = e => {
-									K ? U({
+									M ? D({
 										position: h.d.SECOND,
-										postId: V,
-										subredditId: H
+										postId: H,
+										subredditId: W
 									}) : (e.preventDefault(), w(Object(c.f)(O)))
 								},
 								s = I._("Check It Out", null, {
@@ -269,8 +269,8 @@
 						case v.a.CommentReply:
 						case v.a.PostFollow:
 						case v.a.CommentFollow: {
-							const e = F;
-							return F || e ? n.a.createElement(p.t, {
+							const e = P;
+							return P || e ? n.a.createElement(p.t, {
 								onClick: z,
 								kind: p.b.InternalLink,
 								to: N,
@@ -292,9 +292,9 @@
 						case v.a.AwardReceived: {
 							if (!J) return null;
 							const e = e => {
-								e.preventDefault(), J ? U({
+								e.preventDefault(), J ? D({
 									position: h.d.SECOND,
-									awardId: W
+									awardId: K
 								}) : w(Object(c.f)(O))
 							};
 							return n.a.createElement(l.b, {
@@ -418,7 +418,7 @@
 					isAdmin: "admin" === e.distinguished,
 					isAuthorPremium: !!e.author_premium,
 					isApproved: e.approved,
-					isDeleted: e.author === o.G,
+					isDeleted: e.author === o.H,
 					isGildable: e.can_gild,
 					isLocked: e.locked,
 					isMod: "moderator" === e.distinguished,
@@ -455,7 +455,7 @@
 				return e.all_awardings && (t.allAwardings = Object(r.a)(e.all_awardings)), e.awarders && (t.awarders = e.awarders), e.associated_award && (t.associatedAwardId = e.associated_award.id, t.associatedAward = Object(r.b)(e.associated_award)), t
 			};
 			const c = e => "string" == typeof e ? JSON.parse(e) : e,
-				l = e => e.author !== o.G ? null : e.body === o.H ? d.c.User : e.body === o.Qb ? d.c.Moderator : null
+				l = e => e.author !== o.H ? null : e.body === o.I ? d.c.User : e.body === o.Rb ? d.c.Moderator : null
 		},
 		"./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts": function(e, t, s) {
 			"use strict";
@@ -467,23 +467,23 @@
 					for (const t of e) {
 						const e = t[0] || "";
 						switch (e) {
-							case o.K.NO_STRIPE_SUBSCRIPTION:
-							case o.K.USER_DOESNT_EXIST:
-							case o.K.USER_REQUIRED_ERROR:
-							case o.K.VALIDATION_ERROR:
+							case o.L.NO_STRIPE_SUBSCRIPTION:
+							case o.L.USER_DOESNT_EXIST:
+							case o.L.USER_REQUIRED_ERROR:
+							case o.L.VALIDATION_ERROR:
 								return e;
-							case o.K.NO_USER:
-							case o.K.NO_TEXT:
-							case o.K.NO_URL:
-								return o.K.VALIDATION_ERROR;
-							case o.K.CREDIT_CARD_FAILURE:
-							case o.K.CREDIT_CARD_FAILURE_GENERIC:
-								return o.K.CREDIT_CARD_FAILURE;
+							case o.L.NO_USER:
+							case o.L.NO_TEXT:
+							case o.L.NO_URL:
+								return o.L.VALIDATION_ERROR;
+							case o.L.CREDIT_CARD_FAILURE:
+							case o.L.CREDIT_CARD_FAILURE_GENERIC:
+								return o.L.CREDIT_CARD_FAILURE;
 							default:
-								if (e.startsWith("SUBMIT_VALIDATION")) return o.K.SUBMIT_VALIDATION_ERROR
+								if (e.startsWith("SUBMIT_VALIDATION")) return o.L.SUBMIT_VALIDATION_ERROR
 						}
 					}
-					return o.K.VALIDATION_ERROR
+					return o.L.VALIDATION_ERROR
 				},
 				r = e => {
 					const t = e.body;
@@ -523,4 +523,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.6a7886866f42c3485b2d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.b759ce3d3a0900f73b15.js.map

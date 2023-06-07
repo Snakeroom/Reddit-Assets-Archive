@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.3bee127df357d780a489.js
-// Retrieved at 6/7/2023, 12:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.930cae2789eb6ed7a7b9.js
+// Retrieved at 6/7/2023, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -722,7 +722,7 @@
 						commentId: e
 					});
 					if (!m) return;
-					const l = n === s.jc.Snoozed,
+					const l = n === s.kc.Snoozed,
 						f = {
 							itemId: e,
 							reportText: t,
@@ -754,8 +754,8 @@
 					o(Object(v.j)({
 						[e]: {
 							distinguishType: t,
-							isAdmin: t === s.I.ADMIN,
-							isMod: t === s.I.MODERATOR,
+							isAdmin: t === s.J.ADMIN,
+							isMod: t === s.J.MODERATOR,
 							isStickied: !!n
 						}
 					})), n && h && h !== e && o(Object(v.j)({
@@ -770,7 +770,7 @@
 						id: e,
 						postId: p,
 						commentsPageKey: Object(i.a)(p, null, {
-							sort: s.v.CONFIDENCE,
+							sort: s.w.CONFIDENCE,
 							...m.platform.currentPage.queryParams
 						})
 					})) : (o(Object(v.j)({
@@ -1011,7 +1011,7 @@
 				} = e;
 				const N = Object(p.b)(n),
 					R = n.isApproved && N,
-					A = !n.isRemoved || n.bannedBy === c.l,
+					A = !n.isRemoved || n.bannedBy === c.m,
 					D = a,
 					L = e => I(Object(f.c)(e, n.id)),
 					S = "chat_comments" === (null == T ? void 0 : T.queryParams.only);
@@ -1029,13 +1029,13 @@
 				}, r.a.createElement(k.a, {
 					className: w.a.icon
 				})), A && r.a.createElement(r.a.Fragment, null, r.a.createElement(j.a, {
-					text: n.bannedBy === c.l ? o.fbt._("Confirm Removal", null, {
+					text: n.bannedBy === c.m ? o.fbt._("Confirm Removal", null, {
 						hk: "3JozXJ"
 					}) : o.fbt._("Remove", null, {
 						hk: "3tYl0U"
 					}),
 					onClick: () => {
-						v(), S && I(Object(f.b)("remove", n.id)), n.bannedBy === c.l ? L("confirm_remove") : L("remove")
+						v(), S && I(Object(f.b)("remove", n.id)), n.bannedBy === c.m ? L("confirm_remove") : L("remove")
 					}
 				}, r.a.createElement(O.a, {
 					className: w.a.icon
@@ -1100,7 +1100,7 @@
 				} = e;
 				const x = Object(a.f)(o),
 					C = s.a.createElement(d.b, {
-						ignore: x || !!o.distinguishType && o.distinguishType !== i.I.NONE,
+						ignore: x || !!o.distinguishType && o.distinguishType !== i.J.NONE,
 						subredditId: o.subredditId,
 						userId: o.authorId
 					}, s.a.createElement(l.a, {
@@ -1363,8 +1363,8 @@
 					const t = Object(a.d)(),
 						n = function(e) {
 							if (e.isAdmin) return o.Admin;
-							const t = e.isMod || e.distinguishType === h.I.MODERATOR;
-							return t && e.author && Object(b.a)(e.author) ? o.ModTeam : t ? o.Mod : e.isOp ? o.Op : e.distinguishType === h.I.ALUMNI_ADMIN ? o.AlumniAdmin : e.authorIsContractor ? o.Contractor : null
+							const t = e.isMod || e.distinguishType === h.J.MODERATOR;
+							return t && e.author && Object(b.a)(e.author) ? o.ModTeam : t ? o.Mod : e.isOp ? o.Op : e.distinguishType === h.J.ALUMNI_ADMIN ? o.AlumniAdmin : e.authorIsContractor ? o.Contractor : null
 						}(e.comment);
 					if (!n) return null;
 					if (n === o.Contractor && !e.renderContractorBadge) return null;
@@ -1531,11 +1531,11 @@
 				H = n("./src/reddit/contexts/PageLayer/selectors.ts"),
 				U = n("./src/reddit/helpers/isRemoved.ts"),
 				V = n("./src/reddit/helpers/modTooltipTemplates/index.ts"),
-				X = n("./src/reddit/helpers/showReportIndicator/index.ts"),
-				W = n("./src/reddit/hooks/usePageLayer.ts"),
-				z = n("./src/reddit/icons/fonts/Approve/index.tsx"),
-				q = n("./src/reddit/icons/fonts/Lock/index.tsx"),
-				J = n("./src/reddit/icons/fonts/Remove/index.tsx"),
+				J = n("./src/reddit/helpers/showReportIndicator/index.ts"),
+				X = n("./src/reddit/hooks/usePageLayer.ts"),
+				W = n("./src/reddit/icons/fonts/Approve/index.tsx"),
+				z = n("./src/reddit/icons/fonts/Lock/index.tsx"),
+				q = n("./src/reddit/icons/fonts/Remove/index.tsx"),
 				Q = n("./src/reddit/icons/fonts/Report/index.tsx"),
 				K = n("./src/reddit/icons/fonts/Spam/index.tsx"),
 				G = n("./src/reddit/selectors/modQueue.ts"),
@@ -1549,7 +1549,7 @@
 					isAdmin: d
 				} = e;
 				const c = Object(i.d)(),
-					m = Object(W.a)(),
+					m = Object(X.a)(),
 					l = Object(i.e)(e => F.e[Object(H.V)(e, {
 						pageLayer: m
 					})] === F.d.Card),
@@ -1564,7 +1564,7 @@
 					x = b("CommentTopMeta--Report--"),
 					C = b("CommentTopMeta--Spam--"),
 					g = p(v);
-				return r.a.createElement(r.a.Fragment, null, (t.approvedBy || t.isApproved) && !u && r.a.createElement(r.a.Fragment, null, r.a.createElement(z.a, {
+				return r.a.createElement(r.a.Fragment, null, (t.approvedBy || t.isApproved) && !u && r.a.createElement(r.a.Fragment, null, r.a.createElement(W.a, {
 					className: Z.a.approveIcon,
 					desc: Object(V.a)(t),
 					id: f,
@@ -1574,7 +1574,7 @@
 				}), r.a.createElement(w.c, {
 					tooltipId: f,
 					text: Object(V.a)(t)
-				})), Object(U.a)(t) && !u && r.a.createElement(r.a.Fragment, null, r.a.createElement(J.a, {
+				})), Object(U.a)(t) && !u && r.a.createElement(r.a.Fragment, null, r.a.createElement(q.a, {
 					className: Z.a.removeIcon,
 					desc: Object(V.b)(t),
 					id: v,
@@ -1597,7 +1597,7 @@
 					onMouseLeave: h
 				}, o.fbt._("Removal reason", null, {
 					hk: "20NRw8"
-				})), t.isLocked && !s && r.a.createElement(q.a, {
+				})), t.isLocked && !s && r.a.createElement(z.a, {
 					className: Z.a.lockIcon,
 					desc: o.fbt._("Locked", null, {
 						hk: "40Ju3g"
@@ -1613,7 +1613,7 @@
 				}), r.a.createElement(w.c, {
 					tooltipId: C,
 					text: Object(V.d)(t)
-				})), Object(X.a)(t) && !u && r.a.createElement(r.a.Fragment, null, r.a.createElement(Q.a, {
+				})), Object(J.a)(t) && !u && r.a.createElement(r.a.Fragment, null, r.a.createElement(Q.a, {
 					className: Z.a.reportIcon,
 					desc: Object(V.c)(t.numReports),
 					id: x,
@@ -1623,7 +1623,7 @@
 				}), r.a.createElement(w.c, {
 					tooltipId: x,
 					text: Object(V.c)(t.numReports)
-				})), t.isDeleted && d && !u && r.a.createElement(r.a.Fragment, null, r.a.createElement(J.a, {
+				})), t.isDeleted && d && !u && r.a.createElement(r.a.Fragment, null, r.a.createElement(q.a, {
 					className: Z.a.removeIcon,
 					isFilled: !0
 				}), r.a.createElement("span", {
@@ -2149,31 +2149,31 @@
 						className: t,
 						style: n
 					}, s.a.createElement(x, {
-						onClick: () => u(r.I.NONE, null),
+						onClick: () => u(r.J.NONE, null),
 						selected: !c && !o,
 						text: i.fbt._("Undistinguish", null, {
 							hk: "1P0FyT"
 						})
 					}), d && s.a.createElement(x, {
-						onClick: () => u(r.I.MODERATOR, null),
+						onClick: () => u(r.J.MODERATOR, null),
 						selected: c && !m,
 						text: i.fbt._("Distinguish as Mod", null, {
 							hk: "KDx42"
 						})
 					}), l && d && s.a.createElement(x, {
-						onClick: () => u(r.I.MODERATOR, !0),
+						onClick: () => u(r.J.MODERATOR, !0),
 						selected: c && m,
 						text: i.fbt._("Distinguish as Mod and Sticky", null, {
 							hk: "1J1DBd"
 						})
 					}), a && s.a.createElement(x, {
-						onClick: () => u(r.I.ADMIN, null),
+						onClick: () => u(r.J.ADMIN, null),
 						selected: o && !m,
 						text: i.fbt._("Distinguish as Admin", null, {
 							hk: "1JsJOX"
 						})
 					}), a && d && l && s.a.createElement(x, {
-						onClick: () => u(r.I.ADMIN, !0),
+						onClick: () => u(r.J.ADMIN, !0),
 						selected: o && m,
 						text: i.fbt._("Distinguish as Admin and Sticky", null, {
 							hk: "3x8QWN"
@@ -2207,7 +2207,7 @@
 					isStickied: d,
 					isTopLevelComment: c,
 					onDistinguishComment: (e, t) => {
-						m(e, t), e === r.I.MODERATOR ? l(!d && t ? "distinguish_sticky" : "distinguish") : e === r.I.ADMIN ? l("admin_distinguish") : a && e !== r.I.MODERATOR ? l("undistinguish") : n && e !== r.I.ADMIN && l("admin_undistinguish"), d && !t && l("unsticky")
+						m(e, t), e === r.J.MODERATOR ? l(!d && t ? "distinguish_sticky" : "distinguish") : e === r.J.ADMIN ? l("admin_distinguish") : a && e !== r.J.MODERATOR ? l("undistinguish") : n && e !== r.J.ADMIN && l("admin_undistinguish"), d && !t && l("unsticky")
 					}
 				}))
 			}
@@ -2662,4 +2662,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.3bee127df357d780a489.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.930cae2789eb6ed7a7b9.js.map

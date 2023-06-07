@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Trending.638c6166aeed2b78e916.js
-// Retrieved at 6/7/2023, 12:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Trending.4c0f812e5012025c135b.js
+// Retrieved at 6/7/2023, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Trending"], {
 		"./src/reddit/actions/search/trending.ts": function(e, t, r) {
@@ -14,10 +14,10 @@
 				i = r("./src/lib/constants/index.ts"),
 				d = (r("./node_modules/core-js/modules/web.dom.iterable.js"), r("./src/lib/extractQueryParams/index.ts"));
 
-			function o() {
+			function a() {
 				return Object(d.a)(window.location.href)
 			}
-			var a = r("./src/lib/makeApiRequest/index.ts"),
+			var o = r("./src/lib/makeApiRequest/index.ts"),
 				c = r("./src/lib/omitHeaders/index.ts"),
 				l = r("./src/reddit/constants/headers.ts"),
 				m = r("./src/reddit/helpers/r2/normalizePostFromR2/index.ts"),
@@ -53,14 +53,14 @@
 								if ("TrendingSearchElement" === (null === (r = null == t ? void 0 : t.node) || void 0 === r ? void 0 : r.__typename)) {
 									const {
 										contextPostInfo: r,
-										queryString: o,
-										id: a
+										queryString: a,
+										id: o
 									} = null == t ? void 0 : t.node;
 									e.push({
 										id: Object(n.a)(),
 										post: r ? Object(h.f)(r) : null,
-										rawQuery: o,
-										searchQuery: a,
+										rawQuery: a,
+										searchQuery: o,
 										section: u.c.trending,
 										subredditInfo: "SubredditPost" === (null == r ? void 0 : r.__typename) && (null == r ? void 0 : r.subreddit) ? {
 											icon: (null === (s = r.subreddit.styles) || void 0 === s ? void 0 : s.icon) || (null === (d = null === (i = r.subreddit.styles) || void 0 === i ? void 0 : i.legacyIcon) || void 0 === d ? void 0 : d.url),
@@ -76,7 +76,7 @@
 								searchInput: {
 									queryId: t,
 									originPageType: r,
-									ad: o().get("ad")
+									ad: a().get("ad")
 								}
 							};
 							return await Object(p.a)(e, {
@@ -94,12 +94,12 @@
 						const r = await ((e, t) => {
 							const r = {
 								withAds: 1,
-								ad: o().get("ad"),
+								ad: a().get("ad"),
 								subplacement: t
 							};
-							return Object(a.a)(Object(c.a)(e, [l.a]), {
+							return Object(o.a)(Object(c.a)(e, [l.a]), {
 								endpoint: `${e.apiUrl}/api/trending_searches_v1.json`,
-								method: i.ob.GET,
+								method: i.pb.GET,
 								data: r
 							})
 						})(d(), e);
@@ -185,8 +185,8 @@
 				n = r("./node_modules/polished/dist/polished.es.js"),
 				i = r("./node_modules/react/index.js"),
 				d = r.n(i),
-				o = r("./src/lib/addQueryParams/index.ts"),
-				a = r("./src/lib/classNames/index.ts"),
+				a = r("./src/lib/addQueryParams/index.ts"),
+				o = r("./src/lib/classNames/index.ts"),
 				c = r("./src/lib/CSSVariableProvider/withTheme.tsx"),
 				l = r("./src/lib/permalinkToOverlayLocation/index.ts"),
 				m = r("./src/lib/prettyPrintNumber/index.ts"),
@@ -220,18 +220,18 @@
 					showSubredditMeta: P = !0,
 					showSubredditName: j,
 					subredditOrProfile: T
-				} = e, N = h && h.preview && h.preview.url || void 0, k = h && h.isSponsored ? "promoted_trend" : "trending", I = h && Object(l.a)(h.permalink) || "", E = f && I || g && Object(o.a)("/search", {
+				} = e, N = h && h.preview && h.preview.url || void 0, k = h && h.isSponsored ? "promoted_trend" : "trending", I = h && Object(l.a)(h.permalink) || "", E = f && I || g && Object(a.a)("/search", {
 					q: g.rawQuery,
 					source: k
 				}) || I, D = g ? g.subredditInfo && g.subredditInfo.icon : T && T.icon.url, V = g ? g.subredditInfo && g.subredditInfo.displayText : T && (T.displayText || T.name), U = h ? h.flair.filter(w) : [], A = h ? h.score : 0, R = h ? h.numComments : 0, F = h && h.isSponsored, L = Object(O.a)(e).body, W = `linear-gradient(\n      ${Object(n.f)(L,.2)},\n      ${Object(n.f)(L,.3)},\n      ${Object(n.f)(L,.4)},\n      ${Object(n.f)(L,.6)},\n      ${Object(n.f)(L,.8)},\n      ${L}\n    )`, M = d.a.createElement("div", {
 					id: i,
-					className: Object(a.a)(S.a.trendingPost, {
+					className: Object(o.a)(S.a.trendingPost, {
 						[S.a["m-background"]]: !!N
 					})
 				}, d.a.createElement(x.default, {
 					to: E
 				}, d.a.createElement("div", {
-					className: Object(a.a)(S.a.backgroundWrapper, C.a.backgroundWrapper, t),
+					className: Object(o.a)(S.a.backgroundWrapper, C.a.backgroundWrapper, t),
 					style: {
 						background: Object(v.g)(Object(O.a)(e).body, N || Object(O.a)(e).banner.backgroundImage, "cover"),
 						"--SearchDiscoveryUnits-TrendingPosts-Post-background": W
@@ -241,13 +241,13 @@
 				}, s.fbt._("promoted", null, {
 					hk: "1mLJfa"
 				})), d.a.createElement("div", {
-					className: Object(a.a)(S.a.innerContainer, C.a.innerContainer, c),
+					className: Object(o.a)(S.a.innerContainer, C.a.innerContainer, c),
 					onClick: b,
 					title: h ? h.title : ""
 				}, d.a.createElement("h2", {
 					className: h ? S.a.title : S.a.titleNoDescription
 				}, e.title), h ? d.a.createElement("div", {
-					className: Object(a.a)(S.a.description, r)
+					className: Object(o.a)(S.a.description, r)
 				}, U.length > 0 && d.a.createElement(u.a, {
 					className: S.a.flair,
 					titleFlair: U,
@@ -302,8 +302,8 @@
 				n = r.n(s),
 				i = r("./node_modules/react-redux/es/index.js"),
 				d = r("./node_modules/reselect/es/index.js"),
-				o = r("./src/reddit/actions/search/trending.ts"),
-				a = r("./src/reddit/components/Scroller/Simple.tsx"),
+				a = r("./src/reddit/actions/search/trending.ts"),
+				o = r("./src/reddit/components/Scroller/Simple.tsx"),
 				c = r("./src/reddit/components/SearchDiscoveryUnits/DiscoveryUnitHeader/index.tsx"),
 				l = r("./src/lib/classNames/index.ts"),
 				m = r("./src/reddit/actions/post.ts"),
@@ -369,7 +369,7 @@
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), N = "TrendingPostsContainer", k = Object(i.b)(() => Object(d.c)({
 				trendingItems: e => Object(j.a)(e, C.d.tile)
 			}), e => ({
-				fetchTrendingItems: () => e(Object(o.b)(C.d.tile)),
+				fetchTrendingItems: () => e(Object(a.b)(C.d.tile)),
 				trackPostView: t => e((e, r) => g.p({
 					state: r(),
 					trendingSearch: t,
@@ -437,7 +437,7 @@
 						showCardView: s,
 						trendingItems: i,
 						trendingPostCustomizations: d
-					} = this.props, o = n.a.createElement(n.a.Fragment, null, n.a.createElement(c.a, {
+					} = this.props, a = n.a.createElement(n.a.Fragment, null, n.a.createElement(c.a, {
 						className: t
 					}, T._("Trending today", null, {
 						hk: "3rOxuO"
@@ -446,19 +446,19 @@
 						className: e,
 						showCardView: !!s
 					});
-					const a = r ? i.slice(0, r) : i;
+					const o = r ? i.slice(0, r) : i;
 					return n.a.createElement(S.a, {
 						id: N,
 						className: e,
-						header: o,
+						header: a,
 						showCardView: s
 					}, n.a.createElement(O, {
 						styleCustomizations: d,
-						trendingSearches: a
+						trendingSearches: o
 					}))
 				}
 				render() {
-					return n.a.createElement(a.b, null, this.scrollChildForItem())
+					return n.a.createElement(o.b, null, this.scrollChildForItem())
 				}
 			}
 			t.default = Object(P.b)(k(E))
@@ -469,8 +469,8 @@
 				n = r("./node_modules/reselect/es/index.js"),
 				i = r("./src/reddit/actions/post.ts"),
 				d = r("./src/reddit/actions/postFlair.ts"),
-				o = r("./src/reddit/actions/tooltip.ts"),
-				a = r("./src/reddit/models/Vote/index.ts"),
+				a = r("./src/reddit/actions/tooltip.ts"),
+				o = r("./src/reddit/models/Vote/index.ts"),
 				c = r("./src/reddit/contexts/PageLayer/index.tsx"),
 				l = r("./src/reddit/selectors/activeModalId.ts"),
 				m = r("./src/reddit/selectors/moderatorPermissions.ts"),
@@ -506,11 +506,11 @@
 						}))
 					},
 					handleVote: t => {
-						const s = t === a.a.upvoted ? Object(i.ib)(r) : Object(i.v)(r);
+						const s = t === o.a.upvoted ? Object(i.ib)(r) : Object(i.v)(r);
 						e(s)
 					},
 					onIgnoreReports: () => e(Object(i.eb)(r)),
-					onOpenReportsDropdown: t => e(Object(o.h)({
+					onOpenReportsDropdown: t => e(Object(a.h)({
 						tooltipId: t
 					}))
 				}
@@ -539,4 +539,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Trending.638c6166aeed2b78e916.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Trending.4c0f812e5012025c135b.js.map

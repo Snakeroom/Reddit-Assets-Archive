@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.b9dbf8da96591a4dd9d0.js
-// Retrieved at 6/7/2023, 12:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.bcec9bf28a3011d6c386.js
+// Retrieved at 6/7/2023, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UsernameConfirmationModals"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -364,7 +364,7 @@
 					interceptActionModalOpen: Object(V.b)(R.e),
 					welcomeBackModalOpen: Object(V.b)(R.r)
 				}),
-				Y = Object(r.b)(z, (e, t) => ({
+				X = Object(r.b)(z, (e, t) => ({
 					closeModal: () => {
 						e(Object(p.f)()), e(Object(u.d)())
 					},
@@ -402,7 +402,7 @@
 						}, b.a)
 					}
 				})),
-				X = Object(i.a)(Object(P.b)(Y(e => {
+				Y = Object(i.a)(Object(P.b)(X(e => {
 					let {
 						apiContext: t,
 						changeUsernameModalOpen: n,
@@ -480,7 +480,7 @@
 						username: N
 					}))
 				})));
-			t.default = X
+			t.default = Y
 		},
 		"./src/reddit/components/Settings/ChangeUsernameModal.tsx": function(e, t, n) {
 			"use strict";
@@ -511,10 +511,10 @@
 					} = e, [o, l] = Object(r.useState)([0, 0]), [m, u] = Object(r.useState)([]), [p, g] = Object(r.useState)(!1), N = Object(r.useCallback)(async () => {
 						g(!0), setTimeout(() => {
 							g(!1)
-						}, 10 * d.Wb);
+						}, 10 * d.Xb);
 						const e = await (e => Object(b.a)(Object(h.a)(e, [f.a]), {
 							endpoint: `${e.apiUrl}/api/v1/generate_username.json`,
-							method: d.ob.GET
+							method: d.pb.GET
 						}))(t());
 						if (e.ok && e.body) {
 							const {
@@ -805,7 +805,7 @@
 				o = n("./src/lib/omitHeaders/index.ts"),
 				r = n("./src/reddit/constants/headers.ts");
 			const c = (e, t) => Object(s.a)(Object(o.a)(e, [r.a]), {
-				method: a.ob.POST,
+				method: a.pb.POST,
 				endpoint: `${e.apiUrl}/api/update_name`,
 				data: {
 					api_type: "json",
@@ -978,4 +978,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.b9dbf8da96591a4dd9d0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UsernameConfirmationModals.bcec9bf28a3011d6c386.js.map
