@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.9bd784477216d97793d1.js
-// Retrieved at 6/6/2023, 10:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.8ec125803e97a9408510.js
+// Retrieved at 6/6/2023, 10:20:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
 		"./src/reddit/endpoints/gold/productCatalog/old.index.ts": function(e, r, t) {
@@ -85,7 +85,7 @@
 						h = `${t.apiUrl}/api/v2/gold/stripe/buy_coins`,
 						b = Object(c.a)(h);
 					return Object(a.a)(Object(s.a)(t, [i.a]), {
-						method: n.pb.POST,
+						method: n.ob.POST,
 						endpoint: b,
 						data: g
 					}).then(p)
@@ -121,7 +121,7 @@
 						correlation_id: d
 					}, v = `${t.apiUrl}/api/v2/gold/stripe/buy_coins_and_gild`, j = u ? v : Object(c.a)(v);
 					return Object(a.a)(Object(s.a)(t, [i.a]), {
-						method: n.pb.POST,
+						method: n.ob.POST,
 						endpoint: j,
 						data: O
 					}).then(p)
@@ -153,7 +153,7 @@
 						correlation_id: t
 					}, _ = `${r.apiUrl}/api/v2/gold/stripe/buy_award`, O = o ? _ : Object(c.a)(_);
 					return Object(a.a)(Object(s.a)(r, [i.a]), {
-						method: n.pb.POST,
+						method: n.ob.POST,
 						endpoint: O,
 						data: y
 					}).then(p)
@@ -172,7 +172,7 @@
 						l = `${r.apiUrl}/api/v2/gold/stripe/buy_premium_subscription`,
 						f = Object(c.a)(l);
 					return Object(a.a)(Object(s.a)(r, [i.a]), {
-						method: n.pb.POST,
+						method: n.ob.POST,
 						endpoint: f,
 						data: u
 					}).then(p)
@@ -197,7 +197,7 @@
 			var n = t("./node_modules/fbt/lib/FbtPublic.js"),
 				a = t("./src/lib/constants/index.ts");
 			r.a = () => ({
-				type: a.L.SERVER_ERROR,
+				type: a.K.SERVER_ERROR,
 				fields: [{
 					field: "",
 					msg: n.fbt._("Something went wrong.", null, {
@@ -311,4 +311,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.9bd784477216d97793d1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.8ec125803e97a9408510.js.map

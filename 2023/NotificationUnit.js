@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationUnit.efac6fe0bb5109c5968b.js
-// Retrieved at 6/6/2023, 10:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationUnit.bf519fb431d2d7e65ece.js
+// Retrieved at 6/6/2023, 10:20:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationUnit"], {
 		"./src/reddit/components/NotificationUnit/Avatar.tsx": function(e, t, i) {
@@ -347,7 +347,7 @@
 					title: h
 				} = e, x = (i || b || f || u) && !c, E = Object(o.a)(m.a.menuButton, {
 					[m.a.isOpen]: p
-				}), w = Date.parse(N) / s.Xb;
+				}), w = Date.parse(N) / s.Wb;
 				return n.a.createElement("span", {
 					className: m.a.topBar
 				}, n.a.createElement("span", {
@@ -456,9 +456,9 @@
 						avatar: q,
 						body: K,
 						context: $,
-						deeplinkUrl: X,
-						isHideNotifEligible: J,
-						isToggleLowUpdateFromSubredditEligible: Q,
+						deeplinkUrl: J,
+						isHideNotifEligible: Q,
+						isToggleLowUpdateFromSubredditEligible: X,
 						isToggleNotificationUpdateEligible: G,
 						isToggleUpdateFromSubredditEligible: Y,
 						icon: ee,
@@ -475,8 +475,8 @@
 						isViewed: !0,
 						type: oe
 					}, he = $.messageType === v.a.AwardReceived, xe = oe === v.a.LifecyclePostSuggestions, Ee = he ? null === (E = null == $ ? void 0 : $.awarding) || void 0 === E ? void 0 : E.id : "", we = null === (j = null === (I = null == $ ? void 0 : $.awarding) || void 0 === I ? void 0 : I.target) || void 0 === j ? void 0 : j.permalink, Oe = null === (k = null === (_ = null == $ ? void 0 : $.awarding) || void 0 === _ ? void 0 : _.award) || void 0 === k ? void 0 : k.id;
-					let Ae = (null === (S = null == $ ? void 0 : $.post) || void 0 === S ? void 0 : S.permalink) || X;
-					he && we ? Ae = we : xe && X && (Ae = X);
+					let Ae = (null === (S = null == $ ? void 0 : $.post) || void 0 === S ? void 0 : S.permalink) || J;
+					he && we ? Ae = we : xe && J && (Ae = J);
 					const Ue = null === (M = null === (y = null == $ ? void 0 : $.awarding) || void 0 === y ? void 0 : y.awarder) || void 0 === M ? void 0 : M.isAcceptingChats,
 						Te = e => {
 							H(Object(b.k)({
@@ -507,12 +507,12 @@
 							className: w.a.contentContainer
 						}, l.a.createElement(u.a, {
 							dropdownId: ue,
-							isHideNotifEligible: J,
+							isHideNotifEligible: Q,
 							isInTooltip: R,
 							isOverflowMenuOpen: be,
 							isToggleNotificationUpdateEligible: G,
 							isToggleUpdateFromSubredditEligible: Y,
-							isToggleLowUpdateFromSubredditEligible: Q,
+							isToggleLowUpdateFromSubredditEligible: X,
 							sendInboxClickOverflow: () => H(Object(b.j)({
 								...ge,
 								awardId: Oe
@@ -578,9 +578,9 @@
 							e.isInTooltip && e.setActiveOverflowMenuId && e.setActiveOverflowMenuId(U), e.blockAwarder && e.blockAwarder(Ee), Te(b.e.BlockAwarder)
 						},
 						isInTooltip: R,
-						isHideNotifEligible: J,
+						isHideNotifEligible: Q,
 						isOpen: be,
-						isToggleLowUpdateFromSubredditEligible: Q,
+						isToggleLowUpdateFromSubredditEligible: X,
 						isToggleNotificationUpdateEligible: G,
 						isToggleUpdateFromSubredditEligible: !(!Y || !de),
 						isBlockAwarderEligible: he,
@@ -730,4 +730,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.efac6fe0bb5109c5968b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.bf519fb431d2d7e65ece.js.map

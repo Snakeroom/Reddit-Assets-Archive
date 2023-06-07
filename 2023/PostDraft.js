@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.b1ee16654204638fb8d3.js
-// Retrieved at 6/6/2023, 10:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.0220e1849402b81a1c13.js
+// Retrieved at 6/6/2023, 10:20:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -301,7 +301,7 @@
 			})), n.d(t, "c", (function() {
 				return G
 			})), n.d(t, "h", (function() {
-				return Y
+				return V
 			})), n.d(t, "f", (function() {
 				return Q
 			})), n.d(t, "d", (function() {
@@ -322,7 +322,7 @@
 				b = n("./src/reddit/constants/headers.ts");
 			var f = (e, t, n) => Object(m.a)(Object(p.a)(e, [b.a]), {
 				endpoint: `${e.apiUrl}/api/v1/collections/add_post_to_collection.json`,
-				method: u.pb.POST,
+				method: u.ob.POST,
 				data: {
 					collection_id: t,
 					link_fullname: n
@@ -330,7 +330,7 @@
 			});
 			var h = (e, t, n) => Object(m.a)(Object(p.a)(e, [b.a]), {
 				endpoint: `${e.apiUrl}/api/v1/collections/create_collection.json`,
-				method: u.pb.POST,
+				method: u.ob.POST,
 				data: {
 					title: t,
 					sr_fullname: n
@@ -338,7 +338,7 @@
 			});
 			var g = (e, t) => Object(m.a)(Object(p.a)(e, [b.a]), {
 					endpoint: `${e.apiUrl}/api/v1/collections/delete_collection.json`,
-					method: u.pb.POST,
+					method: u.ob.POST,
 					data: {
 						collection_id: t
 					}
@@ -346,11 +346,11 @@
 				x = n("./src/config.ts");
 			var _ = (e, t) => Object(m.a)(Object(p.a)(e, [b.a]), {
 				endpoint: `${x.a.gatewayUrl}/desktopapi/v1/subreddit_collections/${t}`,
-				method: u.pb.GET
+				method: u.ob.GET
 			});
 			var C = (e, t, n) => Object(m.a)(Object(p.a)(e, [b.a]), {
 				endpoint: `${e.apiUrl}/api/v1/collections/remove_post_in_collection.json`,
-				method: u.pb.POST,
+				method: u.ob.POST,
 				data: {
 					collection_id: t,
 					link_fullname: n
@@ -358,7 +358,7 @@
 			});
 			var v = (e, t, n) => Object(m.a)(Object(p.a)(e, [b.a]), {
 				endpoint: `${e.apiUrl}/api/v1/collections/update_collection_title.json`,
-				method: u.pb.POST,
+				method: u.ob.POST,
 				data: {
 					collection_id: t,
 					title: n
@@ -366,7 +366,7 @@
 			});
 			var k = (e, t, n) => Object(m.a)(Object(p.a)(e, [b.a]), {
 				endpoint: `${e.apiUrl}/api/v1/collections/reorder_collection.json`,
-				method: u.pb.POST,
+				method: u.ob.POST,
 				data: {
 					collection_id: t,
 					link_ids: n.join(",")
@@ -374,7 +374,7 @@
 			});
 			var E = (e, t, n) => Object(m.a)(Object(p.a)(e, [b.a]), {
 				endpoint: `${e.apiUrl}/api/v1/collections/update_collection_description.json`,
-				method: u.pb.POST,
+				method: u.ob.POST,
 				data: {
 					collection_id: t,
 					description: n
@@ -382,7 +382,7 @@
 			});
 			var j = (e, t, n) => Object(m.a)(Object(p.a)(e, [b.a]), {
 					endpoint: `${e.apiUrl}/api/v1/collections/update_collection_display_layout.json`,
-					method: u.pb.POST,
+					method: u.ob.POST,
 					data: {
 						collection_id: t,
 						display_layout: n
@@ -548,14 +548,14 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, K = Object(i.a)(c.r), U = Object(i.a)(c.n), X = Object(i.a)(c.s), Y = (e, t) => async (n, s, r) => {
+				}, K = Object(i.a)(c.r), U = Object(i.a)(c.n), Y = Object(i.a)(c.s), V = (e, t) => async (n, s, r) => {
 					let {
 						apiContext: i
 					} = r;
 					n(K());
 					const a = await v(i(), e, t);
 					let c = !1;
-					if (a.ok) n(X({
+					if (a.ok) n(Y({
 						collectionId: e,
 						newTitle: t
 					})), n(Object(d.f)({
@@ -574,7 +574,7 @@
 						}))
 					}
 					return c
-				}, V = Object(i.a)(c.l), J = Object(i.a)(c.m), Z = Object(i.a)(c.k), Q = e => async (t, n) => {
+				}, X = Object(i.a)(c.l), J = Object(i.a)(c.m), Z = Object(i.a)(c.k), Q = e => async (t, n) => {
 					const o = n();
 					if (Object(S.b)(o) || Object(S.c)(o)) return void t(Object(a.Z)(Object(O.b)(e.permalink), e.id));
 					const r = o.platform.currentPage.locationState;
@@ -611,11 +611,11 @@
 								hk: "4Ck6Cm"
 							})
 						}))), c
-					})(s, a))), c && n.push(t(Y(s, c))), void 0 !== r && n.push(t(((e, t) => async (n, s, r) => {
+					})(s, a))), c && n.push(t(V(s, c))), void 0 !== r && n.push(t(((e, t) => async (n, s, r) => {
 						let {
 							apiContext: i
 						} = r;
-						n(V());
+						n(X());
 						const a = await E(i(), e, t);
 						let c = !1;
 						if (a.ok) n(J({
@@ -1143,7 +1143,7 @@
 				const {
 					className: t,
 					submissionType: n
-				} = e, s = n === c.bc.CROSSPOST;
+				} = e, s = n === c.ac.CROSSPOST;
 				return r.a.createElement("div", {
 					className: t
 				}, r.a.createElement(g, null, r.a.createElement(b, null), s ? o.fbt._("Crossposting to Reddit", null, {
@@ -1298,7 +1298,7 @@
 						display: g.h.COMPACT,
 						rules: h,
 						redditStyle: !0
-					})), d === S.bc.TALK && c.a.createElement(p.a, null, c.a.createElement(E.a, null)), c.a.createElement(y.a, null), c.a.createElement(p.a, null), c.a.createElement(j.a, null), c.a.createElement(m.a, {
+					})), d === S.ac.TALK && c.a.createElement(p.a, null, c.a.createElement(E.a, null)), c.a.createElement(y.a, null), c.a.createElement(p.a, null), c.a.createElement(j.a, null), c.a.createElement(m.a, {
 						redditStyle: !0
 					}))
 				};
@@ -1879,7 +1879,7 @@
 					}, t.title), s.a.createElement("div", {
 						className: k.a.metaLine
 					}, S._("Posted · {timeAgo}", [S._param("timeAgo", s.a.createElement(_.d, {
-						seconds: t.created / C.Xb
+						seconds: t.created / C.Wb
 					}))], {
 						hk: "ZVJpV"
 					}))), s.a.createElement(E.a, {
@@ -2647,12 +2647,12 @@
 				k = e => {
 					return {
 						postScheduled: !!e,
-						submitScheduledTime: e && e.submitTime === c.j.AtEventTime ? Object(i.f)(e.startDate).getTime() / s.Xb : void 0
+						submitScheduledTime: e && e.submitTime === c.j.AtEventTime ? Object(i.f)(e.startDate).getTime() / s.Wb : void 0
 					}
 				},
 				E = e => {
-					const t = Object(i.f)(e.startDate).getTime() / s.Xb,
-						n = Object(i.f)(e.endDate).getTime() / s.Xb;
+					const t = Object(i.f)(e.startDate).getTime() / s.Wb,
+						n = Object(i.f)(e.endDate).getTime() / s.Wb;
 					return {
 						eventStartTimestamp: t,
 						eventEndTimestamp: n,
@@ -3104,7 +3104,7 @@
 					return t ? s.a.createElement(s.a.Fragment, null, s.a.createElement(I, null, s.a.createElement(N, null, L._("Review draft", null, {
 						hk: "tclLq"
 					}))), s.a.createElement(T, null, n && s.a.createElement(R, null, L._("Draft last updated by {username} {timeDiff}", [L._param("username", `u/${n.name}`), L._param("timeDiff", s.a.createElement(P.d, {
-						seconds: (t.modified || t.created) / a.Xb
+						seconds: (t.modified || t.created) / a.Wb
 					}))], {
 						hk: "3QCJvU"
 					})), s.a.createElement(D, null, t.title), s.a.createElement(x, {
@@ -3182,4 +3182,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.b1ee16654204638fb8d3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.0220e1849402b81a1c13.js.map

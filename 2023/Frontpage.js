@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.25d6f655c9dbfdc25d52.js
-// Retrieved at 6/6/2023, 10:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.3ffd0ed4c594a76985e7.js
+// Retrieved at 6/6/2023, 10:20:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -863,7 +863,7 @@
 								logKeyType: u.a.gqlNormalizationTiming
 							}];
 						Object(u.h)({
-							name: l.u.FRONTPAGE,
+							name: l.t.FRONTPAGE,
 							isLoggedIn: a,
 							metrics: o,
 							statsdPathsForExperiments: n
@@ -985,7 +985,7 @@
 						p = c.listings.postOrder.api.pending[d],
 						h = Object(oe.b)(c),
 						b = te.H in e.queryParams && e.queryParams[te.H].toUpperCase() || "",
-						g = b in l.oc && l.oc[b],
+						g = b in l.nc && l.nc[b],
 						v = W.e();
 					if (p || m && !u && !t) return void(m && (a(X.n({
 						title: h ? Object(Q.a)(c, v) : v
@@ -1042,7 +1042,7 @@
 						u = Object(pe.a)(ee.b, d, m),
 						p = i.listings.postOrder.loadMore[u],
 						h = m[te.H] ? m[te.H].toUpperCase() : "",
-						b = h in l.oc && l.oc[h];
+						b = h in l.nc && l.nc[h];
 					if (p) {
 						const e = i.listings.postOrder.api.pending[u],
 							n = i.listings.postOrder.fetchedTokens,
@@ -1105,7 +1105,7 @@
 						c = n.platform.currentPage ? n.platform.currentPage.queryParams : {},
 						i = Object(pe.a)(ee.b, r, c),
 						o = c[te.H] ? c[te.H].toUpperCase() : "",
-						d = o in l.oc && l.oc[o],
+						d = o in l.nc && l.nc[o],
 						m = Object(se.a)(n),
 						u = Object(se.b)(m);
 					await t(Me(i, {
@@ -2445,12 +2445,12 @@
 				x = v.a.wrapped(u.n, "SubmitLink", b.a),
 				E = e => {
 					switch (e) {
-						case l.cb.RISING:
+						case l.bb.RISING:
 							return n.fbt._("Create a new post and take all the glory", null, {
 								hk: "1NhXUe"
 							});
-						case l.cb.TOP:
-						case l.cb.CONTROVERSIAL:
+						case l.bb.TOP:
+						case l.bb.CONTROVERSIAL:
 							return null;
 						default:
 							return n.fbt._("Be the first to till this fertile land.", null, {
@@ -2470,12 +2470,12 @@
 						className: b.a.PrimaryText
 					}, (e => {
 						switch (e) {
-							case l.cb.RISING:
+							case l.bb.RISING:
 								return n.fbt._("Looks like nothing is rising fast enough in this subreddit", null, {
 									hk: "kJ3Te"
 								});
-							case l.cb.TOP:
-							case l.cb.CONTROVERSIAL:
+							case l.bb.TOP:
+							case l.bb.CONTROVERSIAL:
 								return n.fbt._("No posts were found using the {listing sort option} sort. Try changing the sort.", [n.fbt._param("listing sort option", r()(e))], {
 									hk: "48BeCW"
 								});
@@ -2971,14 +2971,14 @@
 				W = a("./src/reddit/constants/headers.ts");
 			const Q = e => Object(G.a)(Object(K.a)(e, [W.a]), {
 				endpoint: `${e.apiUrl}/api/multi/user/CommunityAdoptionBot/m/adoption_week/`,
-				method: B.pb.GET,
+				method: B.ob.GET,
 				type: "json"
 			});
 			var z = a("./src/reddit/components/SubredditAdoptionWidget/index.m.less"),
 				J = a.n(z);
 			const {
 				fbt: X
-			} = a("./node_modules/fbt/lib/FbtPublic.js"), Y = 3, $ = 30 * B.qb, ee = "SubredditAdoption";
+			} = a("./node_modules/fbt/lib/FbtPublic.js"), Y = 3, $ = 30 * B.pb, ee = "SubredditAdoption";
 			class te extends s.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -3435,7 +3435,7 @@
 							placement: B.e.BELOW_THE_FOLD,
 							listingName: r,
 							position: Be.a.BOTTOM,
-							sizes: B.q,
+							sizes: B.p,
 							placementIndex: e++
 						})
 					}, n && s.a.createElement(ae, null)))
@@ -5006,7 +5006,7 @@
 						return Object(x.C)(e, a, n, s)
 					}),
 					subredditsById: E.eb,
-					viewportDataLoaded: y.a,
+					viewportDataLoaded: y.b,
 					pageReferrer: p.X,
 					postListPlaceholderComponent: () => g.a,
 					isNpsScrollSurveyEnabled: f.e,
@@ -5441,7 +5441,7 @@
 					sort: c
 				} = t;
 				const i = F.H in r && r[F.H].toUpperCase(),
-					o = "string" == typeof i && i in se.oc ? se.oc[i] : se.pc,
+					o = "string" == typeof i && i in se.nc ? se.nc[i] : se.oc,
 					l = Object(b.a)(ce.b, c, r),
 					d = e;
 				return {
@@ -5951,4 +5951,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.25d6f655c9dbfdc25d52.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.3ffd0ed4c594a76985e7.js.map

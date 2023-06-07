@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.5078e66b62eac685a700.js
-// Retrieved at 6/6/2023, 10:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.54897cb50fcbb80aa287.js
+// Retrieved at 6/6/2023, 10:20:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, n) {
@@ -300,14 +300,14 @@
 									N = j(l),
 									I = j(u),
 									A = j(k),
-									T = j(h),
-									S = j(O);
+									S = j(h),
+									T = j(O);
 								t.useLayoutEffect((function() {
 									if (null == x.current && _ && null != w.current) {
 										var t = _.create(e, i);
 										x.current = t, t.mount(w.current), t.on("ready", (function() {
 											return P(t)
-										})), t.on("change", T), t.on("blur", N), t.on("focus", I), t.on("escape", S), t.on("click", A)
+										})), t.on("change", S), t.on("blur", N), t.on("focus", I), t.on("escape", T), t.on("click", A)
 									}
 								}));
 								var M = m(i);
@@ -345,15 +345,15 @@
 					N = C("cardCvc", k),
 					I = C("fpxBank", k),
 					A = C("iban", k),
-					T = C("idealBank", k),
-					S = C("p24Bank", k),
+					S = C("idealBank", k),
+					T = C("p24Bank", k),
 					M = C("epsBank", k),
 					L = C("payment", k),
 					B = C("paymentRequestButton", k),
 					R = C("linkAuthentication", k),
 					G = C("shippingAddress", k),
 					D = C("afterpayClearpayMessage", k);
-				e.AfterpayClearpayMessageElement = D, e.AuBankAccountElement = _, e.CardCvcElement = N, e.CardElement = x, e.CardExpiryElement = P, e.CardNumberElement = w, e.Elements = y, e.ElementsConsumer = O, e.EpsBankElement = M, e.FpxBankElement = I, e.IbanElement = A, e.IdealBankElement = T, e.LinkAuthenticationElement = R, e.P24BankElement = S, e.PaymentElement = L, e.PaymentRequestButtonElement = B, e.ShippingAddressElement = G, e.useElements = function() {
+				e.AfterpayClearpayMessageElement = D, e.AuBankAccountElement = _, e.CardCvcElement = N, e.CardElement = x, e.CardExpiryElement = P, e.CardNumberElement = w, e.Elements = y, e.ElementsConsumer = O, e.EpsBankElement = M, e.FpxBankElement = I, e.IbanElement = A, e.IdealBankElement = S, e.LinkAuthenticationElement = R, e.P24BankElement = T, e.PaymentElement = L, e.PaymentRequestButtonElement = B, e.ShippingAddressElement = G, e.useElements = function() {
 					return v("calls useElements()").elements
 				}, e.useStripe = function() {
 					return v("calls useStripe()").stripe
@@ -579,7 +579,7 @@
 			})), n.d(t, "e", (function() {
 				return A
 			})), n.d(t, "f", (function() {
-				return T
+				return S
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				a = n("./src/lib/formatApiError/index.ts"),
@@ -817,7 +817,7 @@
 						const e = Object(a.a)(b);
 						n(Object(o.paypalApiError)(e))
 					}
-				}, T = (e, t) => async (s, i, l) => {
+				}, S = (e, t) => async (s, i, l) => {
 					let {
 						apiContext: d
 					} = l;
@@ -1415,7 +1415,7 @@
 					u = `${n.apiUrl}/api/v2/gold/paypal/initiate_premium_payment`,
 					m = Object(i.a)(u);
 				return Object(a.a)(Object(s.a)(n, [c.a]), {
-					method: r.pb.POST,
+					method: r.ob.POST,
 					endpoint: m,
 					data: d
 				}).then(o.a)
@@ -1432,7 +1432,7 @@
 					correlation_id: l
 				};
 				return Object(a.a)(Object(s.a)(t, [c.a]), {
-					method: r.pb.POST,
+					method: r.ob.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/create_coin_purchase_order`,
 					data: d
 				}).then(o.a)
@@ -1451,7 +1451,7 @@
 					thing_id: l
 				};
 				return Object(a.a)(Object(s.a)(t, [c.a]), {
-					method: r.pb.POST,
+					method: r.ob.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/create_award_purchase_order`,
 					data: u
 				}).then(o.a)
@@ -1472,7 +1472,7 @@
 					correlation_id: u
 				};
 				return Object(a.a)(Object(s.a)(t, [c.a]), {
-					method: r.pb.POST,
+					method: r.ob.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_coin_order`,
 					data: m
 				}).then(o.a)
@@ -1501,7 +1501,7 @@
 					thing_id: b
 				};
 				return Object(a.a)(Object(s.a)(n, [c.a]), {
-					method: r.pb.POST,
+					method: r.ob.POST,
 					endpoint: `${n.apiUrl}/api/v2/gold/paypal/execute_coin_with_gild_order`,
 					data: g
 				}).then(o.a)
@@ -1524,7 +1524,7 @@
 					thing_id: m
 				};
 				return Object(a.a)(Object(s.a)(n, [c.a]), {
-					method: r.pb.POST,
+					method: r.ob.POST,
 					endpoint: `${n.apiUrl}/api/v2/gold/paypal/execute_award_purchase_order`,
 					data: p
 				}).then(o.a)
@@ -1820,8 +1820,8 @@
 				N = n("./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts"),
 				I = n("./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts"),
 				A = n("./src/reddit/actions/login.ts"),
-				T = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				S = n("./src/reddit/models/Gold/Coins/index.ts"),
+				S = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				T = n("./src/reddit/models/Gold/Coins/index.ts"),
 				M = n("./src/reddit/selectors/experiments/econ/index.ts"),
 				L = n("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				B = n("./src/reddit/selectors/user.ts"),
@@ -2022,7 +2022,7 @@
 					hk: "2YmtPc"
 				}))))
 			});
-			const ue = Object(T.v)(),
+			const ue = Object(S.v)(),
 				me = Object(u.c)({
 					activeSaleConfig: L.a,
 					coinPackages: L.d,
@@ -2074,7 +2074,7 @@
 						requestPurchaseCatalog: n
 					} = this.props;
 					e.length || t || n(this.correlationId), document.documentElement.scrollTop = document.body.scrollTop = 0;
-					const r = m.Tb.COINS;
+					const r = m.Sb.COINS;
 					C.c.has(r) && (this.props.sendEvent(Object(E.b)(k.TimerType.InApp, C.c.end(r))), this.props.sendEvent(Object(E.a)())), Object(p.a)()
 				}
 				render() {
@@ -2204,7 +2204,7 @@
 						hk: "21x0aE"
 					})), o.a.createElement("div", {
 						className: x.a.faqs
-					}, S.a.map((e, t) => o.a.createElement(J.a, {
+					}, T.a.map((e, t) => o.a.createElement(J.a, {
 						defaultClosed: !0,
 						question: e.prompt(),
 						key: t
@@ -2286,4 +2286,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.5078e66b62eac685a700.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.54897cb50fcbb80aa287.js.map

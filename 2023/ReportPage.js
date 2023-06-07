@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportPage.4c6b7956796d099d32f1.js
-// Retrieved at 6/6/2023, 10:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportPage.d3fa86eb41813ed53556.js
+// Retrieved at 6/6/2023, 10:20:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportPage"], {
 		"./src/lib/formatPythonString/index.ts": function(e, t, n) {
@@ -757,7 +757,7 @@
 				e.Rule = "rule", e.SiteRule = "siteRule", e.Other = "other", e.FileComplaint = "fileComplaint", e.CrisisTextLine = "crisisTextLine"
 			}(m || (m = {}));
 			const p = (e, t) => Object(s.a)(Object(o.a)(e, [i.a]), {
-					method: r.pb.POST,
+					method: r.ob.POST,
 					endpoint: Object(l.a)(`${e.apiUrl}/api/report`),
 					data: h(t)
 				}),
@@ -790,7 +790,7 @@
 					}
 				},
 				g = (e, t, n) => Object(s.a)(Object(o.a)(e, [i.a]), {
-					method: r.pb.POST,
+					method: r.ob.POST,
 					endpoint: Object(l.a)(`${e.apiUrl}/api/report`),
 					data: f(t, n)
 				}),
@@ -1902,4 +1902,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportPage.4c6b7956796d099d32f1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportPage.d3fa86eb41813ed53556.js.map
