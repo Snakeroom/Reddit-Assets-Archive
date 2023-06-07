@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Appeal.acb456727bc185c5e158.js
-// Retrieved at 6/7/2023, 12:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Appeal.e45a6a6652e7c168a1f8.js
+// Retrieved at 6/7/2023, 12:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Appeal"], {
 		"./src/lib/validateEmail/index.ts": function(e, a, t) {
@@ -234,7 +234,7 @@
 				k = t("./src/reddit/constants/headers.ts"),
 				C = t("./src/reddit/helpers/addRedesignIdentifier/index.ts");
 			const y = (e, a, t) => Object(_.a)(Object(g.a)(e, [k.a]), {
-					method: x.pb.POST,
+					method: x.ob.POST,
 					endpoint: Object(C.a)(`${e.apiUrl}/api/appeal`),
 					data: {
 						api_type: "json",
@@ -243,7 +243,7 @@
 					}
 				}),
 				E = e => Object(_.a)(Object(g.a)(e, [k.a]), {
-					method: x.pb.GET,
+					method: x.ob.GET,
 					endpoint: Object(C.a)(`${e.apiUrl}/api/eligible_for_appeal`),
 					data: {
 						api_type: "json"
@@ -530,4 +530,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Appeal.acb456727bc185c5e158.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Appeal.e45a6a6652e7c168a1f8.js.map

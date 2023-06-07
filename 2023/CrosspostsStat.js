@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrosspostsStat.cdb149f54111e4469aec.js
-// Retrieved at 6/7/2023, 12:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrosspostsStat.493e22be5db187e60fcb.js
+// Retrieved at 6/7/2023, 12:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrosspostsStat"], {
 		"./src/reddit/components/CreatorStats/CrosspostsStat.m.less": function(e, t, s) {
@@ -89,11 +89,11 @@
 			})), s.d(t, "f", (function() {
 				return x
 			})), s.d(t, "e", (function() {
-				return v
-			})), s.d(t, "b", (function() {
-				return I
-			})), s.d(t, "a", (function() {
 				return h
+			})), s.d(t, "b", (function() {
+				return v
+			})), s.d(t, "a", (function() {
+				return C
 			}));
 			var r = s("./node_modules/node-libs-browser/node_modules/url/url.js"),
 				n = s("./src/lib/constants/index.ts"),
@@ -184,6 +184,7 @@
 						discussion_type: e.isChatPost ? m.b.Chat : void 0,
 						spoiler: e.isSpoiler,
 						nsfw: e.isNSFW,
+						recaptcha_token: e.reCaptchaEnterpriseToken,
 						...e.kind !== b.p.POLL ? {
 							kind: j(e),
 							original_content: e.isOC
@@ -222,9 +223,9 @@
 				x = e => {
 					const t = /comments\/(\w+)\/.*$/.exec(e),
 						s = t && t[1];
-					return s ? `${n.Ob.Post}_${s}` : ""
+					return s ? `${n.Nb.Post}_${s}` : ""
 				},
-				v = async (e, t) => {
+				h = async (e, t) => {
 					if (!e.ok) return Object(p.b)(e);
 					const s = e.body.json.data;
 					let n = s.url;
@@ -255,14 +256,14 @@
 							draftsCount: d
 						}
 					}
-				}, I = (e, t) => Object(o.a)(Object(a.a)(e, [d.a]), {
+				}, v = (e, t) => Object(o.a)(Object(a.a)(e, [d.a]), {
 					endpoint: Object(_.a)(Object(i.a)(`${e.apiUrl}/api/submit_poll_post.json?resubmit=true`)),
-					method: n.pb.POST,
+					method: n.ob.POST,
 					data: S(t),
 					type: "json"
-				}).then(e => v(e, t)), h = (e, t) => Object(o.a)(Object(a.a)(e, [d.a]), {
+				}).then(e => h(e, t)), C = (e, t) => Object(o.a)(Object(a.a)(e, [d.a]), {
 					endpoint: Object(_.a)(Object(i.a)(`${e.apiUrl}/api/submit_gallery_post.json?resubmit=true`)),
-					method: n.pb.POST,
+					method: n.ob.POST,
 					data: {
 						...S(t),
 						items: t.galleryItems.map(e => ({
@@ -272,13 +273,13 @@
 						}))
 					},
 					type: "json"
-				}).then(e => v(e, t));
+				}).then(e => h(e, t));
 			t.c = (e, t) => Object(o.a)(Object(a.a)(e, [d.a]), {
 				endpoint: Object(_.a)(Object(i.a)(`${e.apiUrl}/api/submit?resubmit=true`)),
-				method: n.pb.POST,
+				method: n.ob.POST,
 				data: S(t)
-			}).then(async e => await v(e, t))
+			}).then(async e => await h(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrosspostsStat.cdb149f54111e4469aec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrosspostsStat.493e22be5db187e60fcb.js.map

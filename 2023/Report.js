@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Report.16f7bde7d841ad65ffd6.js
-// Retrieved at 6/7/2023, 12:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Report.a003162e7d59100bcd86.js
+// Retrieved at 6/7/2023, 12:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Report"], {
 		"./src/reddit/actions/pages/report/index.ts": function(e, t, r) {
@@ -30,7 +30,7 @@
 					if (!c.user || !c.user.language) return;
 					const p = await (e => Object(a.a)(Object(o.a)(e, [i.a]), {
 						endpoint: `${e.apiUrl}/api/report_page_rules.json`,
-						method: s.pb.GET
+						method: s.ob.GET
 					}))(n());
 					if (p.ok) {
 						const {
@@ -65,4 +65,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Report.16f7bde7d841ad65ffd6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Report.a003162e7d59100bcd86.js.map
