@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.a9f0eb2a32eea1d0c0b8.js
-// Retrieved at 6/6/2023, 10:20:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.17ada38d286fb6c596b9.js
+// Retrieved at 6/7/2023, 12:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less": function(e, t, s) {
@@ -31,13 +31,13 @@
 				u = s("./src/reddit/components/DiscoveryUnit/Layout/PostsCarousel/index.tsx"),
 				h = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				_ = s("./src/reddit/components/Widgets/Base/index.tsx"),
-				b = s("./src/reddit/helpers/trackers/discoveryUnit.ts"),
-				y = s("./src/reddit/constants/experiments.ts"),
+				y = s("./src/reddit/helpers/trackers/discoveryUnit.ts"),
+				b = s("./src/reddit/constants/experiments.ts"),
 				x = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				D = s("./src/reddit/selectors/user.ts");
-			const C = e => Object(D.P)(e) || y.Xf.ShowTopContent === Object(x.c)(e, {
+			const C = e => Object(D.P)(e) || b.Xf.ShowTopContent === Object(x.c)(e, {
 				experimentEligibilitySelector: x.a,
-				experimentName: y.Rf
+				experimentName: b.Rf
 			});
 			var v = s("./src/reddit/selectors/subreddit.ts"),
 				U = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
@@ -46,9 +46,9 @@
 				inSubredditTopContentExperiment: C,
 				subredditUrl: v.d
 			}), e => ({
-				trackDiscoveryUnitView: t => e((e, s) => b.a(s(), t)),
-				trackDismissClick: t => e((e, s) => b.c(s(), t)),
-				trackPostView: i()((t, s, o) => e((e, r) => b.m(r(), t, s, o)), (e, t) => {
+				trackDiscoveryUnitView: t => e((e, s) => y.a(s(), t)),
+				trackDismissClick: t => e((e, s) => y.c(s(), t)),
+				trackPostView: i()((t, s, o) => e((e, r) => y.m(r(), t, s, o)), (e, t) => {
 					let {
 						id: s
 					} = e;
@@ -83,7 +83,7 @@
 					const {
 						postIds: r,
 						range: i
-					} = s, n = `${t}${p.bb.TOP}?t=${i}`, c = d.a.createElement(_.a, {
+					} = s, n = `${t}${p.cb.TOP}?t=${i}`, c = d.a.createElement(_.a, {
 						className: k.a.widgetHeader
 					}, d.a.createElement("button", {
 						className: k.a.closeButton,
@@ -121,4 +121,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.a9f0eb2a32eea1d0c0b8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.17ada38d286fb6c596b9.js.map

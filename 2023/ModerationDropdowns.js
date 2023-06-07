@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.31958ebd26de2b34199d.js
-// Retrieved at 6/6/2023, 10:20:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.7c9cfa1b8bd71c3db1e5.js
+// Retrieved at 6/7/2023, 12:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, n) {
@@ -765,9 +765,9 @@
 					var V, U, G, K, Q;
 					const Z = (null === (V = H.pollData) || void 0 === V ? void 0 : V.isPrediction) && !(null === (U = H.pollData) || void 0 === U ? void 0 : U.resolvedOptionId),
 						q = (null === (G = H.pollData) || void 0 === G ? void 0 : G.isPrediction) && null !== H.pollData.resolvedOptionId,
-						z = H.flair.filter(e => e.type !== S.f.Nsfw && e.type !== S.f.Spoiler).length > 0,
-						J = Object(M.b)(H),
-						Y = !(!H.approvedBy || !J),
+						J = H.flair.filter(e => e.type !== S.f.Nsfw && e.type !== S.f.Spoiler).length > 0,
+						z = Object(M.b)(H),
+						Y = !(!H.approvedBy || !z),
 						X = i ? void 0 : l,
 						$ = Object(N.a)(H),
 						ee = u ? L : A;
@@ -799,7 +799,7 @@
 						onClick: R
 					}, s.a.createElement(T.j, null))), t && s.a.createElement(T.e, {
 						className: ee(g.a.Flair, X),
-						displayText: z ? j.fbt._("Edit post flair", null, {
+						displayText: J ? j.fbt._("Edit post flair", null, {
 							hk: "2oet1"
 						}) : j.fbt._("Add post flair", null, {
 							hk: "1iPNLQ"
@@ -953,8 +953,8 @@
 					sendEvent: T,
 					tooltipId: I
 				} = e;
-				const F = y.distinguishType === i.I.MODERATOR,
-					L = F ? i.I.NONE : i.I.MODERATOR,
+				const F = y.distinguishType === i.J.MODERATOR,
+					L = F ? i.J.NONE : i.J.MODERATOR,
 					A = Object(p.b)(y.id, c);
 				return s.a.createElement(G, {
 					className: W.a.dropdown,
@@ -1453,4 +1453,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.31958ebd26de2b34199d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.7c9cfa1b8bd71c3db1e5.js.map

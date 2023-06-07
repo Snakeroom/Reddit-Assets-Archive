@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.55b1e5d4ad932cf8a5e5.js
-// Retrieved at 6/6/2023, 10:20:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.2a227e2fccf72c7374f8.js
+// Retrieved at 6/7/2023, 12:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -245,14 +245,14 @@
 			! function(e) {
 				e.SHA1 = "SHA-1", e.SHA256 = "SHA-256", e.SHA384 = "SHA-384", e.SHA512 = "SHA-512"
 			}(I || (I = {}));
-			const C = async e => (async (e, t) => {
+			const T = async e => (async (e, t) => {
 				const s = (new TextEncoder).encode(t),
 					i = await crypto.subtle.digest(e, s);
 				return Array.from(new Uint8Array(i)).map(S).join("")
 			})(I.SHA1, e);
 
-			function T() {
-				return (T = Object.assign || function(e) {
+			function C() {
+				return (C = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var i in s) Object.prototype.hasOwnProperty.call(s, i) && (e[i] = s[i])
@@ -319,7 +319,7 @@
 								forwardedRef: t,
 								...s
 							} = this.props, i = s;
-							return l.a.createElement(e, T({}, i, {
+							return l.a.createElement(e, C({}, i, {
 								onDashCreate: this.handleDashCreate,
 								onDashDestroy: this.handleDashDestroy,
 								onHlsCreate: this.handleHlsCreate,
@@ -372,7 +372,7 @@
 							const e = this.props.redditUserId || P.ANONYMOUS_USER_ID,
 								t = this.getOrCreateSalt(),
 								s = `${w()}${e}${t}`;
-							return (await C(s)).substr(0, P.VIEWER_USER_ID_LENGTH)
+							return (await T(s)).substr(0, P.VIEWER_USER_ID_LENGTH)
 						}
 						getDashInstanceData() {
 							const {
@@ -440,7 +440,7 @@
 						}
 					}
 					P.displayName = j(e), P.ANONYMOUS_USER_ID = s, P.DEBUG = i, P.DISABLE_COOKIES = n, P.DURATION_LIVE = 1 / 0, P.ENV_KEY = a, P.LOCAL_STORAGE_SALT_KEY = o, P.LOCAL_STORAGE_VIEWER_USER_ID_KEY = u, P.PLAYER_NAME = p, P.PLAYER_VERSION = g, P.RESPECT_DO_NOT_TRACK = v, P.SALT_LENGTH = f, P.SALT_TIME_TO_LIVE = S, P.STREAM_TYPE_LIVE = "live", P.STREAM_TYPE_ON_DEMAND = "on-demand", P.VIEWER_USER_ID_LENGTH = I;
-					const L = Object(r.forwardRef)((e, t) => l.a.createElement(P, T({}, e, {
+					const L = Object(r.forwardRef)((e, t) => l.a.createElement(P, C({}, e, {
 							forwardedRef: t
 						}))),
 						M = Object(c.c)({
@@ -667,14 +667,14 @@
 				return (t.hostname ? t.hostname.replace("www.", "") : "") + i.substring(i.lastIndexOf("/") + 1)
 			})(e.outboundUrl)), l.a.createElement(te.a, {
 				className: Ee.a.linkIcon
-			})))), Ce = e => l.a.createElement("div", {
+			})))), Te = e => l.a.createElement("div", {
 				className: Ee.a.slideIndicator,
 				onClick: e.toggleTileLayout ? t => {
 					t.preventDefault(), t.stopPropagation(), e.toggleTileLayout()
 				} : void 0
 			}, e.toggleTileLayout && l.a.createElement(se.a, {
 				className: Ee.a.tileIcon
-			}), e.currentSlide, "/", e.totalSlides), Te = function(e) {
+			}), e.currentSlide, "/", e.totalSlides), Ce = function(e) {
 				let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 4,
 					s = e - t;
 				return s < 0 && (s = 0), s
@@ -707,25 +707,25 @@
 						w = Object(Z.a)(),
 						S = Object(r.useRef)(null),
 						I = Object(r.useRef)(null),
-						[C, T] = Object(r.useState)(E ? x : -1),
+						[T, C] = Object(r.useState)(E ? x : -1),
 						[j, N] = Object(r.useState)(E ? x : -1),
 						P = Object(q.a)(E),
 						L = Object(q.a)(x);
 					Object(r.useEffect)(() => {
-						(void 0 !== P && P !== E && E && C < 0 && j < 0 || void 0 !== L && L !== x && E && (C > x || j < x)) && (T(Te(x, 1)), N(je(x, i.length, 1)))
-					}, [P, x, E, C, j, L, i.length, h]);
+						(void 0 !== P && P !== E && E && T < 0 && j < 0 || void 0 !== L && L !== x && E && (T > x || j < x)) && (C(Ce(x, 1)), N(je(x, i.length, 1)))
+					}, [P, x, E, T, j, L, i.length, h]);
 					const M = Object(r.useRef)(),
 						D = Object(r.useCallback)(e => {
 							e.forEach(e => {
 								const {
 									isIntersecting: t
 								} = e;
-								t ? (C < 0 || j - C == 0) && (M.current = setTimeout(() => {
+								t ? (T < 0 || j - T == 0) && (M.current = setTimeout(() => {
 									const e = je(j, i.length);
 									e !== j && N(e)
-								}, 1e3)) : (C < 0 || j - C == 0) && clearTimeout(M.current)
+								}, 1e3)) : (T < 0 || j - T == 0) && clearTimeout(M.current)
 							})
-						}, [C, j, i.length]);
+						}, [T, j, i.length]);
 					Object(z.a)(I, D);
 					const R = Object(r.useCallback)(e => {
 							t(Object(ie.f)({
@@ -754,13 +754,13 @@
 						W = Object(r.useCallback)(() => {
 							if (!y) return;
 							const e = x - 1;
-							if (e - 1 <= C) {
-								const e = Te(C);
-								e !== C && T(e)
+							if (e - 1 <= T) {
+								const e = Ce(T);
+								e !== T && C(e)
 							}
 							const t = x + 1;
 							R(e), w(Q.a(h, t)), w(Q.d(h, t - 1)), A(e)
-						}, [y, x, A, R, w, h, C]),
+						}, [y, x, A, R, w, h, T]),
 						F = Object(r.useCallback)(() => {
 							const e = i[x] && i[x].outboundUrl;
 							e && w(Q.c(h, e))
@@ -818,12 +818,12 @@
 							a = p && p[i];
 						if (!a || !a.s) return null;
 						const r = t.caption ? t.caption : g,
-							d = Object(U.a)(f ? `${f} - ${r}` : r, 300, _.nb),
+							d = Object(U.a)(f ? `${f} - ${r}` : r, 300, _.ob),
 							c = [...a && a.s ? [a.s] : [], ...a && a.p ? a.p : []],
 							u = ce(n, c);
 						if (!u) return null;
 						const m = e.shouldBlur && ce(n, a.o || []) || void 0,
-							h = s >= C && s <= j;
+							h = s >= T && s <= j;
 						return l.a.createElement(we, {
 							slideIndex: s,
 							currentIndex: x,
@@ -858,7 +858,7 @@
 						}),
 						iconClassName: Ee.a.nextIcon,
 						className: Ee.a.nextButton
-					}))), i.length > 1 ? l.a.createElement(Ce, {
+					}))), i.length > 1 ? l.a.createElement(Te, {
 						currentSlide: x + 1,
 						totalSlides: i.length,
 						toggleTileLayout: b && B || void 0
@@ -1122,15 +1122,15 @@
 					document: s.updated
 				} : e
 			}
-			const Et = [_.Sb.INDEX, _.Sb.COMMENTS, _.Sb.SUBREDDIT, ..._.Hb];
+			const Et = [_.Tb.INDEX, _.Tb.COMMENTS, _.Tb.SUBREDDIT, ..._.Ib];
 			var xt = s("./src/reddit/selectors/experiments/intuitivePostTypes.ts"),
 				yt = s("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
 				Ot = s("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
 				wt = s("./src/reddit/selectors/experiments/postSeo.ts"),
 				St = s("./src/reddit/selectors/meta.ts"),
 				It = s("./src/reddit/selectors/postCreations.ts"),
-				Ct = s("./src/reddit/selectors/posts.ts"),
-				Tt = s("./src/reddit/selectors/seo/index.ts"),
+				Tt = s("./src/reddit/selectors/posts.ts"),
+				Ct = s("./src/reddit/selectors/seo/index.ts"),
 				jt = s("./src/reddit/selectors/telemetry.ts");
 			const Nt = (e, t, s, i) => {
 					const n = e / t,
@@ -1275,8 +1275,8 @@
 							onPlayedWithSound: w,
 							onUpdateVideoTime: S,
 							onVideoStarted: I,
-							onWatchedPercent: C,
-							onWatchedSeconds: T,
+							onWatchedPercent: T,
+							onWatchedSeconds: C,
 							packagedMedia: j,
 							pageLayer: N,
 							post: P,
@@ -1340,8 +1340,8 @@
 										noun: s,
 										onPlayedExpanded: O,
 										onPlayedWithSound: w,
-										onWatchedPercent: C,
-										onWatchedSeconds: T,
+										onWatchedPercent: T,
+										onWatchedSeconds: C,
 										onVideoStarted: I
 									}), Gt({
 										lastUpdate: p,
@@ -1365,7 +1365,7 @@
 						return null == s || s.addEventListener("track-event", e), null == s || s.addEventListener("change-autoplay-pref", t), () => {
 							null == s || s.removeEventListener("track-event", e), null == s || s.removeEventListener("change-autoplay-pref", t)
 						}
-					}, [c, p, h, n, y, O, w, S, I, C, T, L, P.isSponsored, o, k]), Object(r.useEffect)(() => {
+					}, [c, p, h, n, y, O, w, S, I, T, C, L, P.isSponsored, o, k]), Object(r.useEffect)(() => {
 						var e;
 						if ("done" !== c) return;
 						const {
@@ -1507,7 +1507,7 @@
 						let {
 							post: s
 						} = t;
-						return Object(Ct.U)(e, {
+						return Object(Tt.U)(e, {
 							postId: s.id
 						})
 					},
@@ -1519,7 +1519,7 @@
 							postId: s.id
 						})
 					},
-					shouldShowAltText: (e, t) => Object(Tt.d)(e, t),
+					shouldShowAltText: (e, t) => Object(Ct.d)(e, t),
 					isGalleryTileLayout: (e, t) => {
 						let {
 							shouldShowGalleryTileOption: s,
@@ -1535,7 +1535,7 @@
 						let {
 							post: s
 						} = t;
-						return Object(Ct.b)(e, s.id)
+						return Object(Tt.b)(e, s.id)
 					},
 					isBlockingInterstitialEnabled: yt.b,
 					isBlockingInterstitialV2Enabled: yt.c,
@@ -1732,7 +1732,7 @@
 					} = this.props;
 					if (!n) return;
 					let a = "";
-					return i && (a += i), t && e ? a += `${Qt}${t}` : s.title && (a += `${Qt}${s.title}`), a.length > qt ? Object(U.a)(a, qt, _.nb) : a
+					return i && (a += i), t && e ? a += `${Qt}${t}` : s.title && (a += `${Qt}${s.title}`), a.length > qt ? Object(U.a)(a, qt, _.ob) : a
 				}
 				getVideoExpandoMaxDimensions() {
 					let e, t = Math.max(de.j, this.state.viewportHeight),
@@ -1845,8 +1845,8 @@
 						isSpoiler: w,
 						isTitleOnly: S,
 						nightmode: I,
-						openPost: C,
-						pageLayer: T,
+						openPost: T,
+						pageLayer: C,
 						post: j,
 						showCentered: N,
 						showFull: P = !1,
@@ -1860,7 +1860,7 @@
 						viewportWidth: U
 					} = this.state, H = x && y;
 					if (!j.media) return null;
-					const K = j.isSponsored || Object(L.u)(T);
+					const K = j.isSponsored || Object(L.u)(C);
 					let $;
 					j.media.type !== de.o.TEXT && ($ = j.media.richtextContent);
 					const z = O && $ && !K,
@@ -1893,7 +1893,7 @@
 						le = Object(jt.vb)() || "",
 						ce = j.isSponsored ? Object(it.b)(j.id, {
 							fireAdPixelsOfType: d,
-							openPost: C
+							openPost: T
 						}) : o.a,
 						me = e => {
 							ce && ce(e, this.props.post, this.props.basePixelMetadata, void 0, this.props.pageType)
@@ -2409,4 +2409,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.55b1e5d4ad932cf8a5e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.2a227e2fccf72c7374f8.js.map

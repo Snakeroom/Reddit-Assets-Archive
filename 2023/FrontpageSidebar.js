@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.4d353b8457801a81a59e.js
-// Retrieved at 6/6/2023, 10:20:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.bb26065cf359bfb3e40c.js
+// Retrieved at 6/7/2023, 12:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./src/reddit/components/FrontpageSidebar/index.tsx": function(e, t, n) {
@@ -197,17 +197,17 @@
 				H = n("./src/reddit/helpers/name/index.ts"),
 				J = n("./src/lib/makeApiRequest/index.ts"),
 				M = n("./src/lib/omitHeaders/index.ts"),
-				X = n("./src/reddit/constants/headers.ts");
-			const q = e => Object(J.a)(Object(M.a)(e, [X.a]), {
+				q = n("./src/reddit/constants/headers.ts");
+			const X = e => Object(J.a)(Object(M.a)(e, [q.a]), {
 				endpoint: `${e.apiUrl}/api/multi/user/CommunityAdoptionBot/m/adoption_week/`,
-				method: U.ob.GET,
+				method: U.pb.GET,
 				type: "json"
 			});
 			var Z = n("./src/reddit/components/SubredditAdoptionWidget/index.m.less"),
 				z = n.n(Z);
 			const {
 				fbt: V
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Y = 3, $ = 30 * U.pb, ee = "SubredditAdoption";
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Y = 3, $ = 30 * U.qb, ee = "SubredditAdoption";
 			class te extends a.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -217,7 +217,7 @@
 				async getSubredditForAdoption() {
 					let e = te.cachedData || Object(G.G)(D.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
 					if (!e || Date.now() - e.fetchedAt > $) {
-						const t = await q(this.props.apiContext());
+						const t = await X(this.props.apiContext());
 						t.ok && (e = {
 							subreddits: t.body.data.subreddits.map(e => e.name),
 							fetchedAt: Date.now()
@@ -664,7 +664,7 @@
 							placement: U.e.BELOW_THE_FOLD,
 							listingName: r,
 							position: Ue.a.BOTTOM,
-							sizes: U.p,
+							sizes: U.q,
 							placementIndex: e++
 						})
 					}, s && a.a.createElement(ne, null)))
@@ -915,4 +915,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.4d353b8457801a81a59e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.bb26065cf359bfb3e40c.js.map
