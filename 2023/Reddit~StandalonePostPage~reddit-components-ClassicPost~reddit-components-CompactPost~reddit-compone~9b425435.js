@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.27d51029aa5e490d8832.js
-// Retrieved at 6/7/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.1442d0e772ed219bb7a2.js
+// Retrieved at 6/7/2023, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/avatarShareImages.ts": function(e, t, n) {
@@ -467,15 +467,15 @@
 		"./src/reddit/components/BoostPost/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return F
+				return R
 			})), n.d(t, "b", (function() {
 				return _
 			})), n.d(t, "d", (function() {
-				return H
+				return z
 			})), n.d(t, "e", (function() {
-				return S
+				return T
 			})), n.d(t, "c", (function() {
-				return Y
+				return J
 			}));
 			var r = n("./src/config.ts"),
 				o = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -531,32 +531,33 @@
 				y = n("./src/reddit/helpers/isCrosspost.ts"),
 				C = n("./src/reddit/hooks/useExperimentVariant.ts"),
 				k = n("./src/reddit/models/Post/index.ts"),
-				I = n("./src/reddit/selectors/posts.ts"),
-				E = n("./src/reddit/selectors/profile.ts"),
-				P = n("./src/reddit/selectors/subreddit.ts");
-			const S = (e, t) => !(!e || !t || e.authorId !== t.id || e.isSponsored || e.isNSFW || e.pollData || e.predictionTournament || e.discussionType && e.discussionType !== k.b.Comment || Object(y.a)(e)),
-				T = e => !!e && e.hasVerifiedEmail,
-				A = e => !!e && !e.isNSFW && !e.isQuarantined,
-				N = e => {
+				I = n("./src/reddit/models/WhitelistStatus/index.ts"),
+				E = n("./src/reddit/selectors/posts.ts"),
+				P = n("./src/reddit/selectors/profile.ts"),
+				S = n("./src/reddit/selectors/subreddit.ts");
+			const T = (e, t) => !(!e || !t || e.authorId !== t.id || e.isSponsored || e.isNSFW || e.pollData || e.predictionTournament || e.discussionType && e.discussionType !== k.b.Comment || Object(y.a)(e)),
+				A = e => !!e && e.hasVerifiedEmail,
+				N = e => !!e && !e.isNSFW && !e.isQuarantined,
+				F = e => {
 					let {
 						postId: t,
 						user: n
 					} = e;
 					const r = Object(w.ib)(),
-						o = Object(c.e)(e => Object(I.F)(e, {
+						o = Object(c.e)(e => Object(E.F)(e, {
 							postId: t
 						})),
 						a = Object(k.s)(o) ? o.belongsTo.id : "",
 						i = Object(k.w)(o) ? o.belongsTo.id : "",
-						d = Object(c.e)(e => Object(E.j)(e, a)),
-						l = Object(c.e)(e => Object(P.X)(e, {
+						d = Object(c.e)(e => Object(P.j)(e, a)),
+						l = Object(c.e)(e => Object(S.X)(e, {
 							subredditId: i
 						})),
 						u = Object(c.e)(e => Object(w.G)(e, {
 							pageLayer: r
 						})),
-						m = Object(s.useCallback)(() => !!(u && Object(k.s)(o) && S(o, n) && T(n) && A(d)), [u, o, d, n]),
-						p = Object(s.useCallback)(() => S(o, n) && T(n) && A(l), [o, n, l]),
+						m = Object(s.useCallback)(() => !!(u && Object(k.s)(o) && T(o, n) && A(n) && N(d)), [u, o, d, n]),
+						p = Object(s.useCallback)(() => T(o, n) && A(n) && N(l) && (e => !!e && (e.wls === I.b.ALL_ADS || "all_ads" === e.whitelistStatus))(l), [o, n, l]),
 						b = Object(C.a)(x.r, m),
 						f = Object(C.a)(x.q, m),
 						v = Object(C.a)(x.s, p),
@@ -565,7 +566,7 @@
 						canBoostPost: b === x.Td || f === x.Td || v === x.Td || h === x.Td
 					}
 				},
-				F = e => {
+				R = e => {
 					let {
 						postId: t,
 						user: n
@@ -575,16 +576,16 @@
 						attemptVisiblePostIdUpdate: o
 					} = Object(s.useContext)(g), {
 						canBoostPost: c
-					} = N({
+					} = F({
 						postId: t,
 						user: n
 					});
-					return c && o(t), r === t ? a.a.createElement(R, {
+					return c && o(t), r === t ? a.a.createElement(M, {
 						postId: t
 					}) : null
 				};
-			F.displayName = "BoostPostBanner";
-			const R = Object(s.memo)(e => {
+			R.displayName = "BoostPostBanner";
+			const M = Object(s.memo)(e => {
 				let {
 					postId: t
 				} = e;
@@ -659,56 +660,56 @@
 					}
 				}))))
 			});
-			R.displayName = "BoostPostBannerMemo";
-			var M = n("./node_modules/classnames/index.js"),
-				D = n.n(M),
-				B = n("./src/reddit/components/Flatlist/constants.ts"),
-				V = n("./src/reddit/components/Flatlist/ResponsiveRow.tsx"),
-				L = n("./src/reddit/components/InfoTextTooltip/Hooked.tsx"),
-				G = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				U = n("./src/reddit/hooks/useInfoTextTooltip.ts"),
-				K = n("./src/reddit/components/BoostPost/BoostPostIconButton.m.less"),
-				W = n.n(K),
-				q = n("./src/reddit/components/BoostPost/useBoostPostAction.ts");
-			const H = Object(s.memo)(e => {
+			M.displayName = "BoostPostBannerMemo";
+			var D = n("./node_modules/classnames/index.js"),
+				B = n.n(D),
+				V = n("./src/reddit/components/Flatlist/constants.ts"),
+				L = n("./src/reddit/components/Flatlist/ResponsiveRow.tsx"),
+				G = n("./src/reddit/components/InfoTextTooltip/Hooked.tsx"),
+				U = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				K = n("./src/reddit/hooks/useInfoTextTooltip.ts"),
+				W = n("./src/reddit/components/BoostPost/BoostPostIconButton.m.less"),
+				q = n.n(W),
+				H = n("./src/reddit/components/BoostPost/useBoostPostAction.ts");
+			const z = Object(s.memo)(e => {
 				let {
 					postId: t,
 					user: n,
 					userIsOp: r,
 					showIconOnly: c
 				} = e;
-				const i = Object(U.a)(),
+				const i = Object(K.a)(),
 					{
 						canBoostPost: l
-					} = N({
+					} = F({
 						postId: t,
 						user: n
 					}),
 					{
 						onBoostPostClick: u
-					} = Object(q.a)(t),
-					p = Object(G.b)();
+					} = Object(H.a)(t),
+					p = Object(U.b)();
 				return Object(s.useEffect)(() => {
 					l && p(Object(m.x)(t))
 				}, [l, p, t]), l ? a.a.createElement("span", {
 					onMouseEnter: i.show,
 					onMouseLeave: i.hide,
 					ref: i.target.ref,
-					className: W.a.container
-				}, a.a.createElement(V.a, {
-					iconWrapperClassName: D()(W.a.boostPostIconButton, {
-						[W.a.boostPostIconButtonIconOnly]: c
+					className: q.a.container
+				}, a.a.createElement(L.a, {
+					iconWrapperClassName: B()(q.a.boostPostIconButton, {
+						[q.a.boostPostIconButtonIconOnly]: c
 					}),
 					displayText: c ? void 0 : o.fbt._("Promote", null, {
 						hk: "K797d"
 					}),
-					flatlistItem: B.a.PromotePost,
+					flatlistItem: V.a.PromotePost,
 					isLoggedIn: !!n,
 					isUserOp: r,
 					onClick: u
 				}, a.a.createElement(b.a, {
 					name: d.a.promote_snoo
-				})), a.a.createElement(L.a, {
+				})), a.a.createElement(G.a, {
 					arrowProps: i.arrowProps,
 					popperProps: {
 						...i.popperProps,
@@ -722,15 +723,15 @@
 					hk: "38gIbE"
 				}))) : null
 			});
-			H.displayName = "BoostPostIconButton";
-			var z = n("./src/reddit/hooks/usePageLayer.ts");
-			const Y = e => {
+			z.displayName = "BoostPostIconButton";
+			var Y = n("./src/reddit/hooks/usePageLayer.ts");
+			const J = e => {
 				let {
 					children: t
 				} = e;
 				const {
 					resetVisiblePostIdToDefault: n
-				} = Object(s.useContext)(g), r = Object(z.a)(), [o, a] = Object(s.useState)(null == r ? void 0 : r.queryParams);
+				} = Object(s.useContext)(g), r = Object(Y.a)(), [o, a] = Object(s.useState)(null == r ? void 0 : r.queryParams);
 				return Object(s.useEffect)(() => {
 					(null == r ? void 0 : r.queryParams) && (null == r ? void 0 : r.queryParams) !== o && (a(null == r ? void 0 : r.queryParams), n())
 				}, [r, o, n]), t
@@ -4391,4 +4392,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.27d51029aa5e490d8832.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.1442d0e772ed219bb7a2.js.map

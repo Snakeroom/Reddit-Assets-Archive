@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.de99ec6cf5ce32d1038d.js
-// Retrieved at 6/7/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.b4546009f88499c911d2.js
+// Retrieved at 6/7/2023, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -21594,15 +21594,15 @@
 		"./src/reddit/components/BoostPost/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return D
+				return M
 			})), n.d(t, "b", (function() {
 				return O
 			})), n.d(t, "d", (function() {
-				return V
+				return z
 			})), n.d(t, "e", (function() {
-				return w
+				return T
 			})), n.d(t, "c", (function() {
-				return K
+				return Y
 			}));
 			var s = n("./src/config.ts"),
 				r = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -21658,32 +21658,33 @@
 				y = n("./src/reddit/helpers/isCrosspost.ts"),
 				j = n("./src/reddit/hooks/useExperimentVariant.ts"),
 				k = n("./src/reddit/models/Post/index.ts"),
-				I = n("./src/reddit/selectors/posts.ts"),
-				_ = n("./src/reddit/selectors/profile.ts"),
-				S = n("./src/reddit/selectors/subreddit.ts");
-			const w = (e, t) => !(!e || !t || e.authorId !== t.id || e.isSponsored || e.isNSFW || e.pollData || e.predictionTournament || e.discussionType && e.discussionType !== k.b.Comment || Object(y.a)(e)),
-				T = e => !!e && e.hasVerifiedEmail,
-				P = e => !!e && !e.isNSFW && !e.isQuarantined,
-				N = e => {
+				I = n("./src/reddit/models/WhitelistStatus/index.ts"),
+				_ = n("./src/reddit/selectors/posts.ts"),
+				S = n("./src/reddit/selectors/profile.ts"),
+				w = n("./src/reddit/selectors/subreddit.ts");
+			const T = (e, t) => !(!e || !t || e.authorId !== t.id || e.isSponsored || e.isNSFW || e.pollData || e.predictionTournament || e.discussionType && e.discussionType !== k.b.Comment || Object(y.a)(e)),
+				P = e => !!e && e.hasVerifiedEmail,
+				N = e => !!e && !e.isNSFW && !e.isQuarantined,
+				D = e => {
 					let {
 						postId: t,
 						user: n
 					} = e;
 					const s = Object(A.ib)(),
-						r = Object(a.e)(e => Object(I.F)(e, {
+						r = Object(a.e)(e => Object(_.F)(e, {
 							postId: t
 						})),
 						i = Object(k.s)(r) ? r.belongsTo.id : "",
 						d = Object(k.w)(r) ? r.belongsTo.id : "",
-						c = Object(a.e)(e => Object(_.j)(e, i)),
-						l = Object(a.e)(e => Object(S.X)(e, {
+						c = Object(a.e)(e => Object(S.j)(e, i)),
+						l = Object(a.e)(e => Object(w.X)(e, {
 							subredditId: d
 						})),
 						u = Object(a.e)(e => Object(A.G)(e, {
 							pageLayer: s
 						})),
-						m = Object(o.useCallback)(() => !!(u && Object(k.s)(r) && w(r, n) && T(n) && P(c)), [u, r, c, n]),
-						p = Object(o.useCallback)(() => w(r, n) && T(n) && P(l), [r, n, l]),
+						m = Object(o.useCallback)(() => !!(u && Object(k.s)(r) && T(r, n) && P(n) && N(c)), [u, r, c, n]),
+						p = Object(o.useCallback)(() => T(r, n) && P(n) && N(l) && (e => !!e && (e.wls === I.b.ALL_ADS || "all_ads" === e.whitelistStatus))(l), [r, n, l]),
 						b = Object(j.a)(C.r, m),
 						f = Object(j.a)(C.q, m),
 						h = Object(j.a)(C.s, p),
@@ -21692,7 +21693,7 @@
 						canBoostPost: b === C.Td || f === C.Td || h === C.Td || g === C.Td
 					}
 				},
-				D = e => {
+				M = e => {
 					let {
 						postId: t,
 						user: n
@@ -21702,16 +21703,16 @@
 						attemptVisiblePostIdUpdate: r
 					} = Object(o.useContext)(v), {
 						canBoostPost: a
-					} = N({
+					} = D({
 						postId: t,
 						user: n
 					});
-					return a && r(t), s === t ? i.a.createElement(M, {
+					return a && r(t), s === t ? i.a.createElement(R, {
 						postId: t
 					}) : null
 				};
-			D.displayName = "BoostPostBanner";
-			const M = Object(o.memo)(e => {
+			M.displayName = "BoostPostBanner";
+			const R = Object(o.memo)(e => {
 				let {
 					postId: t
 				} = e;
@@ -21786,56 +21787,56 @@
 					}
 				}))))
 			});
-			M.displayName = "BoostPostBannerMemo";
-			var R = n("./node_modules/classnames/index.js"),
-				B = n.n(R),
-				L = n("./src/reddit/components/Flatlist/constants.ts"),
-				F = n("./src/reddit/components/Flatlist/ResponsiveRow.tsx"),
-				U = n("./src/reddit/components/InfoTextTooltip/Hooked.tsx"),
-				H = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				G = n("./src/reddit/hooks/useInfoTextTooltip.ts"),
-				Q = n("./src/reddit/components/BoostPost/BoostPostIconButton.m.less"),
-				W = n.n(Q),
-				q = n("./src/reddit/components/BoostPost/useBoostPostAction.ts");
-			const V = Object(o.memo)(e => {
+			R.displayName = "BoostPostBannerMemo";
+			var B = n("./node_modules/classnames/index.js"),
+				L = n.n(B),
+				F = n("./src/reddit/components/Flatlist/constants.ts"),
+				U = n("./src/reddit/components/Flatlist/ResponsiveRow.tsx"),
+				H = n("./src/reddit/components/InfoTextTooltip/Hooked.tsx"),
+				G = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				Q = n("./src/reddit/hooks/useInfoTextTooltip.ts"),
+				W = n("./src/reddit/components/BoostPost/BoostPostIconButton.m.less"),
+				q = n.n(W),
+				V = n("./src/reddit/components/BoostPost/useBoostPostAction.ts");
+			const z = Object(o.memo)(e => {
 				let {
 					postId: t,
 					user: n,
 					userIsOp: s,
 					showIconOnly: a
 				} = e;
-				const d = Object(G.a)(),
+				const d = Object(Q.a)(),
 					{
 						canBoostPost: l
-					} = N({
+					} = D({
 						postId: t,
 						user: n
 					}),
 					{
 						onBoostPostClick: u
-					} = Object(q.a)(t),
-					p = Object(H.b)();
+					} = Object(V.a)(t),
+					p = Object(G.b)();
 				return Object(o.useEffect)(() => {
 					l && p(Object(m.x)(t))
 				}, [l, p, t]), l ? i.a.createElement("span", {
 					onMouseEnter: d.show,
 					onMouseLeave: d.hide,
 					ref: d.target.ref,
-					className: W.a.container
-				}, i.a.createElement(F.a, {
-					iconWrapperClassName: B()(W.a.boostPostIconButton, {
-						[W.a.boostPostIconButtonIconOnly]: a
+					className: q.a.container
+				}, i.a.createElement(U.a, {
+					iconWrapperClassName: L()(q.a.boostPostIconButton, {
+						[q.a.boostPostIconButtonIconOnly]: a
 					}),
 					displayText: a ? void 0 : r.fbt._("Promote", null, {
 						hk: "K797d"
 					}),
-					flatlistItem: L.a.PromotePost,
+					flatlistItem: F.a.PromotePost,
 					isLoggedIn: !!n,
 					isUserOp: s,
 					onClick: u
 				}, i.a.createElement(b.a, {
 					name: c.a.promote_snoo
-				})), i.a.createElement(U.a, {
+				})), i.a.createElement(H.a, {
 					arrowProps: d.arrowProps,
 					popperProps: {
 						...d.popperProps,
@@ -21849,15 +21850,15 @@
 					hk: "38gIbE"
 				}))) : null
 			});
-			V.displayName = "BoostPostIconButton";
-			var z = n("./src/reddit/hooks/usePageLayer.ts");
-			const K = e => {
+			z.displayName = "BoostPostIconButton";
+			var K = n("./src/reddit/hooks/usePageLayer.ts");
+			const Y = e => {
 				let {
 					children: t
 				} = e;
 				const {
 					resetVisiblePostIdToDefault: n
-				} = Object(o.useContext)(v), s = Object(z.a)(), [r, i] = Object(o.useState)(null == s ? void 0 : s.queryParams);
+				} = Object(o.useContext)(v), s = Object(K.a)(), [r, i] = Object(o.useState)(null == s ? void 0 : s.queryParams);
 				return Object(o.useEffect)(() => {
 					(null == s ? void 0 : s.queryParams) && (null == s ? void 0 : s.queryParams) !== r && (i(null == s ? void 0 : s.queryParams), n())
 				}, [s, r, n]), t
@@ -81080,4 +81081,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.de99ec6cf5ce32d1038d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.b4546009f88499c911d2.js.map
