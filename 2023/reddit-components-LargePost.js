@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.3691550483440042e3f0.js
-// Retrieved at 6/7/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.cc0b22de32f57758d588.js
+// Retrieved at 6/8/2023, 12:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -696,8 +696,8 @@
 				re = s("./node_modules/reselect/es/index.js");
 			const ae = Object(re.a)(e => Object(oe.c)(e, {
 				experimentEligibilitySelector: oe.a,
-				experimentName: ne.Ib
-			}), e => e === ne.Td);
+				experimentName: ne.Jb
+			}), e => e === ne.Ud);
 			var ie = s("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				de = s("./src/reddit/selectors/platform.ts"),
 				ce = s("./src/reddit/selectors/posts.ts"),
@@ -922,7 +922,7 @@
 						commentId: m
 					}), _ = v && Object($.d)(O, {
 						postId: v.postId
-					}) && Object(se.d)(O), g = v && Object($.d)(O, {
+					}) && Object(se.e)(O), g = v && Object($.d)(O, {
 						postId: v.postId
 					}), E = g ? Object(K.b)() : f, j = Object(te.f)(O, {
 						commentId: E
@@ -3890,7 +3890,7 @@
 			const Ie = Object(i.a)(k.M, e => e.some(Se.c)),
 				Ne = Object(i.a)(Ie, e => e),
 				Te = (e, t) => Object(ke.c)(e, {
-					experimentName: ye.sd,
+					experimentName: ye.td,
 					experimentEligibilitySelector: e => {
 						const {
 							listingKey: s
@@ -3903,7 +3903,7 @@
 			var Pe = s("./src/reddit/selectors/experiments/index.ts");
 
 			function we(e) {
-				return e === ye.yf.Minimalist || e === ye.yf.Description || e === ye.yf.HotnessSignals
+				return e === ye.zf.Minimalist || e === ye.zf.Description || e === ye.zf.HotnessSignals
 			}
 			var Re = s("./src/reddit/selectors/modQueue.ts"),
 				Ae = s("./src/reddit/selectors/postFlair.ts"),
@@ -4020,8 +4020,8 @@
 					} = Object(r.e)(e => (e => {
 						const t = Object(ke.c)(e, {
 							experimentEligibilitySelector: Pe.e,
-							experimentName: ye.Hc
-						}) || ye.U.Control1;
+							experimentName: ye.Ic
+						}) || ye.V.Control1;
 						return {
 							isEnabled: we(t),
 							variant: t
@@ -4085,7 +4085,7 @@
 						onSubscribe: ot = (() => {})
 					} = e, rt = Object(v.a)(), at = Object(ue.ib)(), it = Object(r.e)(e => Object(ue.G)(e, {
 						pageLayer: at
-					})), dt = !!e.redditStyle || !!e["data-redditstyle"], ct = dt ? void 0 : j, lt = Object(l.a)(Pe), mt = we && lt, ut = Object(d.a)(Pe), pt = Object(c.a)(Pe), bt = Object(G.c)(De), ft = Object(H.a)(De), ht = !!De.media && De.media.type === _.o.RTJSON, xt = Qe && ht, Ot = s ? s - Z.a : void 0, vt = !!De.recommendationContext, _t = !(de && xe || Ce) || vt && xe, gt = (e => e === ye.of.OnlyTitles)(Fe) && !Object(be.a)(De), Et = (e => e === ye.of.MediumHeight)(Fe) && !Object(be.a)(De), jt = (e => {
+					})), dt = !!e.redditStyle || !!e["data-redditstyle"], ct = dt ? void 0 : j, lt = Object(l.a)(Pe), mt = we && lt, ut = Object(d.a)(Pe), pt = Object(c.a)(Pe), bt = Object(G.c)(De), ft = Object(H.a)(De), ht = !!De.media && De.media.type === _.o.RTJSON, xt = Qe && ht, Ot = s ? s - Z.a : void 0, vt = !!De.recommendationContext, _t = !(de && xe || Ce) || vt && xe, gt = (e => e === ye.pf.OnlyTitles)(Fe) && !Object(be.a)(De), Et = (e => e === ye.pf.MediumHeight)(Fe) && !Object(be.a)(De), jt = (e => {
 						var t;
 						const {
 							post: s,
@@ -4423,7 +4423,7 @@
 					className: s
 				} = e;
 				const n = Object(h.e)(e => Object(x.a)(e, t));
-				return Object(h.e)(O.e) ? a.a.createElement(f, {
+				return Object(h.e)(O.f) ? a.a.createElement(f, {
 					userCount: n,
 					className: s
 				}) : null
@@ -4687,7 +4687,7 @@
 					let {
 						content: t
 					} = e;
-					const s = Object(C.a)(j.oe) === j.Td,
+					const s = Object(C.a)(j.pe) === j.Ud,
 						{
 							contentIds: m
 						} = v(),
@@ -6065,8 +6065,8 @@
 				p = s("./node_modules/reselect/es/index.js");
 			const b = Object(p.a)(e => Object(u.c)(e, {
 				experimentEligibilitySelector: u.a,
-				experimentName: m.Ac
-			}), e => e === m.Td);
+				experimentName: m.Bc
+			}), e => e === m.Ud);
 			var f = s("./node_modules/fbt/lib/FbtPublic.js"),
 				h = s("./src/lib/classNames/index.ts"),
 				x = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
@@ -7185,17 +7185,17 @@
 
 			function A(e) {
 				switch (e) {
-					case v.yf.Minimalist:
-					case v.wf.Minimalist:
+					case v.zf.Minimalist:
 					case v.xf.Minimalist:
+					case v.yf.Minimalist:
 						return w.MINIMALIST;
-					case v.yf.HotnessSignals:
-					case v.wf.SocialSignals:
+					case v.zf.HotnessSignals:
 					case v.xf.SocialSignals:
+					case v.yf.SocialSignals:
 						return w.SIGNALS;
-					case v.yf.Description:
-					case v.wf.Description:
+					case v.zf.Description:
 					case v.xf.Description:
+					case v.yf.Description:
 						return w.DESCRIPTION
 				}
 				return w.MINIMALIST
@@ -9786,11 +9786,11 @@
 				r = s("./node_modules/reselect/es/index.js");
 			const a = Object(r.a)(e => Object(o.c)(e, {
 				experimentEligibilitySelector: o.a,
-				experimentName: n.xb
+				experimentName: n.yb
 			}), e => ({
-				bucketed: e === n.bd.ExpandedSearch || e === n.bd.CollapsedSearch,
-				collapsed: e === n.bd.CollapsedSearch,
-				expanded: e === n.bd.ExpandedSearch
+				bucketed: e === n.cd.ExpandedSearch || e === n.cd.CollapsedSearch,
+				collapsed: e === n.cd.CollapsedSearch,
+				expanded: e === n.cd.ExpandedSearch
 			}))
 		},
 		"./src/reddit/selectors/experiments/contributeBeforeSignUp.ts": function(e, t, s) {
@@ -9815,11 +9815,11 @@
 				l = Object(n.a)(c, e => !!e),
 				m = e => {
 					const t = c(e);
-					return !!t && d(e, t) === o.X.SkipOnboarding
+					return !!t && d(e, t) === o.Y.SkipOnboarding
 				},
 				u = e => {
 					const t = c(e);
-					return !!t && d(e, t) === o.X.RegOnboarding
+					return !!t && d(e, t) === o.Y.RegOnboarding
 				}
 		},
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, s) {
@@ -9848,16 +9848,16 @@
 						const t = (e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname),
 							o = ((e, t) => !(!b(t) && !p(t)) && Object(i.c)(e, {
 								experimentEligibilitySelector: d.f,
-								experimentName: a.pe
-							}) === a.Td)(s, e.pathname),
+								experimentName: a.qe
+							}) === a.Ud)(s, e.pathname),
 							r = ((e, t) => !!p(t) && Object(i.c)(e, {
 								experimentEligibilitySelector: d.f,
-								experimentName: a.Hf
-							}) === a.Td)(s, e.pathname),
+								experimentName: a.If
+							}) === a.Ud)(s, e.pathname),
 							c = ((e, t) => !!b(t) && Object(i.c)(e, {
 								experimentEligibilitySelector: d.f,
-								experimentName: a.Gf
-							}) === a.Td)(s, e.pathname);
+								experimentName: a.Hf
+							}) === a.Ud)(s, e.pathname);
 						if (o || t || r || c) {
 							const t = e.pathname + e.search;
 							return Object(n.f)(s), window.location.href = t, !1
@@ -9874,10 +9874,10 @@
 				o = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const a = Object(n.a)(e => Object(r.c)(e, {
-					experimentName: o.ig,
+					experimentName: o.jg,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				i = Object(n.a)(a, e => e === o.cg)
+				i = Object(n.a)(a, e => e === o.dg)
 		},
 		"./src/reddit/selectors/i18n/index.ts": function(e, t, s) {
 			"use strict";
@@ -9892,7 +9892,7 @@
 				a = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(o.yg)(t)
+					return Boolean(t) && !Object(o.zg)(t)
 				},
 				d = Object(n.a)(i, r.d, (e, t) => e && !t)
 		},
@@ -9988,4 +9988,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.3691550483440042e3f0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.cc0b22de32f57758d588.js.map

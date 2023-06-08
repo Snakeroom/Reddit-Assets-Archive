@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~cb450973.4ab7d949b7538aa63a24.js
-// Retrieved at 6/7/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~cb450973.2cee5563c1677f4c8cfa.js
+// Retrieved at 6/8/2023, 12:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~cb450973"], {
 		"./src/lib/collectible-expressions/index.ts": function(e, t, n) {
@@ -1616,7 +1616,7 @@
 			})), n.d(t, "f", (function() {
 				return V
 			})), n.d(t, "h", (function() {
-				return X
+				return Y
 			})), n.d(t, "g", (function() {
 				return K
 			})), n.d(t, "i", (function() {
@@ -1810,7 +1810,7 @@
 					if (!i) return;
 					const a = i.length,
 						d = [];
-					for (let o = 0; o < a; o++) d.push(Y(i[o], t, n, o, r));
+					for (let o = 0; o < a; o++) d.push(X(i[o], t, n, o, r));
 					return o.a.createElement(c.c, {
 						key: s
 					}, d)
@@ -1829,14 +1829,14 @@
 						const e = i[u].c;
 						e && e.length && a.push(o.a.createElement(c.g, {
 							key: u
-						}, e.map((e, s) => Y(e, t, n, s, r))))
+						}, e.map((e, s) => X(e, t, n, s, r))))
 					}
 					const l = e.o ? c.i : c.v;
 					return o.a.createElement(l, {
 						key: s
 					}, a)
 				},
-				Y = (e, t, n, s, r) => {
+				X = (e, t, n, s, r) => {
 					switch (e.e) {
 						case m.b:
 							return W(e, t, n, s, r);
@@ -1857,10 +1857,10 @@
 								onClickRevealSpoilerText: r
 							});
 						case m.A:
-							return X(e, t, n, s, r)
+							return Y(e, t, n, s, r)
 					}
 				},
-				X = (e, t, n, s, r) => {
+				Y = (e, t, n, s, r) => {
 					const i = e.c,
 						a = e.h,
 						d = i.length,
@@ -2189,12 +2189,12 @@
 						rtJsonElementProps: a
 					});
 					switch (i) {
-						case b.Wf.SmIcon:
+						case b.Xf.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: a
 							});
-						case b.Wf.SmIconHc:
+						case b.Xf.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2411,12 +2411,12 @@
 				c = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: o,
-						experimentName: s.Qf
+						experimentName: s.Rf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Wf.SmIcon || t === s.Wf.SmIconHc
+					return t === s.Xf.SmIcon || t === s.Xf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -2442,4 +2442,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~cb450973.4ab7d949b7538aa63a24.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~cb450973.2cee5563c1677f4c8cfa.js.map

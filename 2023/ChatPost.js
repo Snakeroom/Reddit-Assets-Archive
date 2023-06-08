@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.7ecb2df908b2c4acc23b.js
-// Retrieved at 6/7/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.8816c8acc348c983a0a9.js
+// Retrieved at 6/8/2023, 12:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/backo2/index.js": function(e, t) {
@@ -2216,7 +2216,7 @@
 							const {
 								awardId: n,
 								commentId: o
-							} = e, s = Object(oe.a)(), i = Object(Ce.a)(a, n), c = Object(fe.f)(a);
+							} = e, s = Object(oe.a)(), i = Object(Ce.a)(a, n), c = Object(fe.g)(a);
 							if ((e => _e(e) || (e => "chat_reaction_downvote" === e.id)(e))(i)) {
 								const e = _e(i) ? "chat_reaction_downvote" : "chat_reaction_upvote",
 									n = ((e, t, n) => {
@@ -2273,7 +2273,7 @@
 								awardId: o,
 								awardingId: s,
 								commentId: r
-							} = e, c = Object(fe.f)(i);
+							} = e, c = Object(fe.g)(i);
 							await Object(de.c)(a(), {
 								awardingId: s
 							}), c || await De(i, {
@@ -2739,7 +2739,7 @@
 							postId: n.postId
 						})
 					},
-					isLiveChatThreadingEnabled: fe.d
+					isLiveChatThreadingEnabled: fe.e
 				});
 			var sn = Object(p.b)(on, (e, t) => {
 					let {
@@ -2975,9 +2975,9 @@
 				xn = n("./src/reddit/constants/experiments.ts"),
 				kn = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const jn = e => Object(kn.c)(e, {
-					experimentName: xn.wb,
+					experimentName: xn.xb,
 					experimentEligibilitySelector: kn.a
-				}) === xn.pb.Enabled,
+				}) === xn.qb.Enabled,
 				Nn = (e, t) => {
 					let {
 						commentId: n
@@ -3268,7 +3268,7 @@
 							renderingObjectInfo: a || void 0
 						}), [a]),
 						q = Object(p.e)(e => a ? Ie(e, a) : []),
-						W = Object(p.e)(fe.d),
+						W = Object(p.e)(fe.e),
 						Q = () => {
 							U(!P)
 						};
@@ -3711,12 +3711,12 @@
 					isPending: q.d,
 					liveCommentsWebsocket: uo.D,
 					moreCommentsLink: q.H,
-					isCommentReactionStreamingKillSwitchEnabled: fe.f,
+					isCommentReactionStreamingKillSwitchEnabled: fe.g,
 					currentUserId: ye.k,
 					comments: W.a,
-					isLiveChatThreadingEnabled: fe.d,
+					isLiveChatThreadingEnabled: fe.e,
 					showReactionsHint: e => {
-						const t = Object(fe.c)(e),
+						const t = Object(fe.d)(e),
 							n = Object(ye.b)(3 * r.D)(e),
 							o = Object(mo.a)(e, {
 								experience: ho.cb.LiveChatReactionEdu
@@ -4567,4 +4567,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.7ecb2df908b2c4acc23b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.8816c8acc348c983a0a9.js.map

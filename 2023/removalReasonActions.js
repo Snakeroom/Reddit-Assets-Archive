@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.2bb8518448b2c5361ead.js
-// Retrieved at 6/7/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.702adc32ee8948a726e2.js
+// Retrieved at 6/8/2023, 12:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./node_modules/lodash/map.js": function(e, t, s) {
@@ -1071,13 +1071,13 @@
 				r = s("./node_modules/reselect/es/index.js");
 			const d = Object(r.a)(e => Object(n.c)(e, {
 				experimentEligibilitySelector: n.a,
-				experimentName: o.xb
+				experimentName: o.yb
 			}), e => ({
-				bucketed: e === o.bd.ExpandedSearch || e === o.bd.CollapsedSearch,
-				collapsed: e === o.bd.CollapsedSearch,
-				expanded: e === o.bd.ExpandedSearch
+				bucketed: e === o.cd.ExpandedSearch || e === o.cd.CollapsedSearch,
+				collapsed: e === o.cd.CollapsedSearch,
+				expanded: e === o.cd.ExpandedSearch
 			}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.2bb8518448b2c5361ead.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.702adc32ee8948a726e2.js.map

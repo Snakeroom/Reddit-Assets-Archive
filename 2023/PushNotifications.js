@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PushNotifications.92409a1ec5b6442b9483.js
-// Retrieved at 6/7/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PushNotifications.9aea80f34cd08be1a543.js
+// Retrieved at 6/8/2023, 12:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -61,15 +61,15 @@
 		"./src/reddit/actions/notifications/index.ts": function(e, t, i) {
 			"use strict";
 			i.r(t), i.d(t, "initializeServiceWorkerChannel", (function() {
-				return W
+				return D
 			})), i.d(t, "requestNotificationsPermissions", (function() {
 				return R
 			})), i.d(t, "subscribeForPNs", (function() {
-				return L
-			})), i.d(t, "unsubscribeFromPNs", (function() {
-				return P
-			})), i.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
 				return E
+			})), i.d(t, "unsubscribeFromPNs", (function() {
+				return L
+			})), i.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
+				return P
 			})), i.d(t, "subscribeToPermissionsChange", (function() {
 				return A
 			}));
@@ -98,20 +98,20 @@
 				S = i("./src/reddit/selectors/user.ts");
 			const F = e => Object(w.c)(e, {
 				experimentEligibilitySelector: S.S,
-				experimentName: y.Db
-			}) === y.Td;
+				experimentName: y.Eb
+			}) === y.Ud;
 			var N = i("./src/reddit/selectors/experiments/delayDnPermission.ts"),
 				x = i("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts");
 			const q = e => Object(w.c)(e, {
-				experimentName: y.fc,
+				experimentName: y.gc,
 				experimentEligibilitySelector: w.a
-			}) === y.Td;
+			}) === y.Ud;
 			var C = i("./src/reddit/selectors/meta.ts");
-			let D = !1;
-			const W = async (e, t) => {
+			let W = !1;
+			const D = async (e, t) => {
 				const i = Object(S.R)(e);
-				if (D) return;
-				if (D = !0, Object(f.a)(e) !== d.d.NotificationsSupported) return;
+				if (W) return;
+				if (W = !0, Object(f.a)(e) !== d.d.NotificationsSupported) return;
 				await Object(u.a)();
 				navigator.serviceWorker.addEventListener("message", n => {
 					const s = n.data,
@@ -143,20 +143,20 @@
 						O = F(c);
 					if (p || m) return;
 					if (await Object(r.a)() || u) return;
-					await W(c, n);
+					await D(c, n);
 					j.l(c), await Object(a.b)(e, t, () => {
 						l || f || b || n(Object(d.s)()), n(Object(d.q)()), j.j(c)
 					}, (e, t) => {
-						n(Object(d.o)()), n(P(t ? d.a.Denied : d.a.Closed)), e && (t ? j.e(c) : j.f(c)), i()
+						n(Object(d.o)()), n(L(t ? d.a.Denied : d.a.Closed)), e && (t ? j.e(c) : j.f(c)), i()
 					}, e => {
-						n(Object(d.p)()), n(L()), e && j.d(c), i()
+						n(Object(d.p)()), n(E()), e && j.d(c), i()
 					}, () => {
 						n(Object(d.n)()), i()
 					}, () => {
 						n(Object(d.r)())
 					}, O)
 				}
-			}, L = e => async (t, i, s) => {
+			}, E = e => async (t, i, s) => {
 				const o = i();
 				try {
 					switch (await Object(c.b)(s.gqlContext)) {
@@ -177,7 +177,7 @@
 				} catch (r) {
 					j.k(o, "registration_failed_uncaught_exception"), console.error(r)
 				}
-			}, P = (e, t) => async i => {
+			}, L = (e, t) => async i => {
 				try {
 					Object(f.b)(e);
 					const s = await Object(u.a)();
@@ -191,7 +191,7 @@
 						})))
 					}
 				} catch (s) {}
-			}, E = e => async (t, i) => {
+			}, P = e => async (t, i) => {
 				const n = i();
 				if (Object(f.a)(n) === d.d.NotificationsSupported) switch (Object(a.a)()) {
 					case d.a.Default:
@@ -212,13 +212,13 @@
 				s.onchange = () => (t => {
 					switch (t) {
 						case d.a.Denied:
-							e(P(d.a.Denied)), j.e(n);
+							e(L(d.a.Denied)), j.e(n);
 							break;
 						case d.a.Granted:
-							e(L()), j.d(n);
+							e(E()), j.d(n);
 							break;
 						default:
-							e(P(d.a.Default))
+							e(L(d.a.Default))
 					}
 				})(s.state)
 			}
@@ -400,4 +400,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.92409a1ec5b6442b9483.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.9aea80f34cd08be1a543.js.map

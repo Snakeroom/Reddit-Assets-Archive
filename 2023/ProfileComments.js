@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.16ac2356fecefd20e711.js
-// Retrieved at 6/7/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.db7af40a5cc7f98bd0f8.js
+// Retrieved at 6/8/2023, 12:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./src/lib/LiveChatActiveUsers/index.m.less": function(e, t, s) {
@@ -1496,7 +1496,7 @@
 					className: s
 				} = e;
 				const o = Object(x.e)(e => Object(O.a)(e, t));
-				return Object(x.e)(v.e) ? i.a.createElement(b, {
+				return Object(x.e)(v.f) ? i.a.createElement(b, {
 					userCount: o,
 					className: s
 				}) : null
@@ -1983,8 +1983,8 @@
 				u = s("./node_modules/reselect/es/index.js");
 			const h = Object(u.a)(e => Object(p.c)(e, {
 				experimentEligibilitySelector: p.a,
-				experimentName: m.Ac
-			}), e => e === m.Td);
+				experimentName: m.Bc
+			}), e => e === m.Ud);
 			var b = s("./node_modules/fbt/lib/FbtPublic.js"),
 				x = s("./src/lib/classNames/index.ts"),
 				O = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
@@ -3237,4 +3237,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.16ac2356fecefd20e711.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.db7af40a5cc7f98bd0f8.js.map

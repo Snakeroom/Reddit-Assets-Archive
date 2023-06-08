@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.4d353b8457801a81a59e.js
-// Retrieved at 6/7/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.d3e1ff27d201c71504da.js
+// Retrieved at 6/8/2023, 12:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./src/reddit/components/FrontpageSidebar/index.tsx": function(e, t, n) {
@@ -186,9 +186,9 @@
 				A = n("./src/reddit/components/SidebarContainer/index.tsx"),
 				L = n("./src/reddit/components/SidebarStickyBottom/index.tsx"),
 				R = n("./node_modules/lodash/sampleSize.js"),
-				W = n.n(R),
-				B = n("./node_modules/request-idle-callback/index.js"),
-				U = n("./src/lib/constants/index.ts"),
+				B = n.n(R),
+				U = n("./node_modules/request-idle-callback/index.js"),
+				W = n("./src/lib/constants/index.ts"),
 				I = n("./src/reddit/components/SubredditIcon/index.tsx"),
 				D = n("./src/reddit/constants/localStorage.ts"),
 				K = n("./src/reddit/contexts/ApiContext.tsx"),
@@ -200,14 +200,14 @@
 				X = n("./src/reddit/constants/headers.ts");
 			const q = e => Object(J.a)(Object(M.a)(e, [X.a]), {
 				endpoint: `${e.apiUrl}/api/multi/user/CommunityAdoptionBot/m/adoption_week/`,
-				method: U.ob.GET,
+				method: W.ob.GET,
 				type: "json"
 			});
 			var Z = n("./src/reddit/components/SubredditAdoptionWidget/index.m.less"),
 				z = n.n(Z);
 			const {
 				fbt: V
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Y = 3, $ = 30 * U.pb, ee = "SubredditAdoption";
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Y = 3, $ = 30 * W.pb, ee = "SubredditAdoption";
 			class te extends a.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -226,10 +226,10 @@
 					return te.cachedData = e, e ? e.subreddits : []
 				}
 				componentDidMount() {
-					Object(B.requestIdleCallback)(async () => {
+					Object(U.requestIdleCallback)(async () => {
 						const e = await this.getSubredditForAdoption();
 						this.setState({
-							subredditNames: W()(e, Y)
+							subredditNames: B()(e, Y)
 						})
 					})
 				}
@@ -608,18 +608,18 @@
 				}),
 				Le = n("./src/reddit/constants/experiments.ts"),
 				Re = n("./src/reddit/helpers/chooseVariant/index.ts"),
-				We = n("./src/reddit/selectors/user.ts");
-			var Be = n("./src/reddit/selectors/seo/linksModule.ts"),
-				Ue = n("./src/reddit/helpers/createBannerProperties/index.ts");
+				Be = n("./src/reddit/selectors/user.ts");
+			var Ue = n("./src/reddit/selectors/seo/linksModule.ts"),
+				We = n("./src/reddit/helpers/createBannerProperties/index.ts");
 			const Ie = Object(o.c)({
-					isLoggedIn: We.R,
-					currentUser: We.m,
-					frontpageLinks: Be.b,
+					isLoggedIn: Be.R,
+					currentUser: Be.m,
+					frontpageLinks: Ue.b,
 					shouldShowTopicsWidget: e => (function(e) {
 						return Object(Re.c)(e, {
-							experimentEligibilitySelector: We.S,
-							experimentName: Le.Wc
-						}) === Le.Td
+							experimentEligibilitySelector: Be.S,
+							experimentName: Le.Xc
+						}) === Le.Ud
 					})(e),
 					isNavbarLikeMwebEnabled: i.a
 				}),
@@ -649,11 +649,11 @@
 						className: t,
 						"data-testid": "frontpage-sidebar"
 					}, a.a.createElement(T.a, {
-						placement: U.e.ABOVE_THE_FOLD,
+						placement: W.e.ABOVE_THE_FOLD,
 						listingName: r,
 						removeSidebarSpacer: !1,
-						position: Ue.a.FIRST,
-						sizes: U.j,
+						position: We.a.FIRST,
+						sizes: W.j,
 						placementIndex: e++
 					}), Ke(this.props) && a.a.createElement(k, null), i && a.a.createElement(m.a, null, a.a.createElement(Ae, null)), s && a.a.createElement(m.a, null, a.a.createElement(d.a, {
 						listingName: r
@@ -661,10 +661,10 @@
 						links: n
 					})), a.a.createElement(L.a, {
 						adComponent: a.a.createElement(T.a, {
-							placement: U.e.BELOW_THE_FOLD,
+							placement: W.e.BELOW_THE_FOLD,
 							listingName: r,
-							position: Ue.a.BOTTOM,
-							sizes: U.p,
+							position: We.a.BOTTOM,
+							sizes: W.p,
 							placementIndex: e++
 						})
 					}, s && a.a.createElement(ne, null)))
@@ -915,4 +915,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.4d353b8457801a81a59e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.d3e1ff27d201c71504da.js.map

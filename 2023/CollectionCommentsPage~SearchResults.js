@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.7d28b7478f07ae7d64ee.js
-// Retrieved at 6/7/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.03eddaea9cda6507d7c2.js
+// Retrieved at 6/8/2023, 12:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -800,9 +800,9 @@
 							r = Object(ue.Q)(s(), {
 								identifier: T.belongsTo
 							});
-						if (r && (e => m.zf.Redirect === Object(ne.b)(e, {
+						if (r && (e => m.Af.Redirect === Object(ne.b)(e, {
 								experimentEligibilitySelector: ce,
-								experimentName: m.tf
+								experimentName: m.uf
 							}))(s())) return void t(Object(o.c)(r.url));
 						if (T.belongsTo.type !== q.a.SUBREDDIT || T.isSponsored) {
 							if (T.belongsTo.type === q.a.PROFILE) {
@@ -924,7 +924,7 @@
 							A = Object(me.F)(p, {
 								postId: e
 							}),
-							D = Object(dt.d)(p),
+							D = Object(dt.e)(p),
 							V = r || D && (null == A ? void 0 : A.discussionType) === P.b.Chat;
 						if ((C || f && !j) && !F) {
 							if (f && !p.sidebarPromotedPosts.firstFetch) {
@@ -1131,7 +1131,7 @@
 						p = Object(me.F)(d, {
 							postId: e
 						}),
-						b = Object(dt.d)(d),
+						b = Object(dt.e)(d),
 						h = "CHAT" === (null == p ? void 0 : p.discussionType) && b && !t,
 						O = Object(E.a)(o.apiContext(), e, t, h ? {
 							...s,
@@ -5692,7 +5692,7 @@
 				const t = Object(o.f)().getState(),
 					s = Object(O.a)(t, Object(i.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.md.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.md.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.md.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.nd.GreyRereddit || e.d2xPdpSideRailRecsVariant === u.nd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === u.nd.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(I, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -8264,8 +8264,8 @@
 			const $s = e => {
 				return Object(Zs.c)(e, {
 					experimentEligibilitySelector: Zs.a,
-					experimentName: Xs.I
-				}) === Xs.Td
+					experimentName: Xs.J
+				}) === Xs.Ud
 			};
 			var en = s("./src/reddit/selectors/searchQueryId.ts"),
 				tn = s("./node_modules/lodash/isEmpty.js"),
@@ -8327,16 +8327,16 @@
 				fn = s("./src/reddit/constants/nsfwBanner.ts"),
 				xn = s("./src/reddit/helpers/installGoodVisitFeedSearchTracker/index.ts"),
 				jn = s("./src/reddit/selectors/experiments/search/searchSingleVariant.ts");
-			const Cn = e => Object(jn.a)(e, Xs.Pc),
+			const Cn = e => Object(jn.a)(e, Xs.Qc),
 				yn = Object(ie.a)(e => Object(Zs.c)(e, {
 					experimentEligibilitySelector: Zs.a,
-					experimentName: Xs.Pc,
+					experimentName: Xs.Qc,
 					expEventOverride: !1
 				}), e => !!e),
-				vn = e => Object(jn.a)(e, Xs.Le),
+				vn = e => Object(jn.a)(e, Xs.Me),
 				En = Object(ie.a)(e => Object(Zs.c)(e, {
 					experimentEligibilitySelector: Zs.a,
-					experimentName: Xs.Le,
+					experimentName: Xs.Me,
 					expEventOverride: !1
 				}), e => !!e);
 			var Sn, kn = s("./src/reddit/components/SearchBanner/index.m.less"),
@@ -8454,7 +8454,7 @@
 						searchQueryId: y
 					} = Object(i.e)(e => Object(en.a)(e)),
 					v = Object(i.e)($s),
-					E = (Object(i.e)(e => Object(jn.a)(e, Xs.Oc)), Object(i.e)(e => Object(ae.mb)(e))),
+					E = (Object(i.e)(e => Object(jn.a)(e, Xs.Pc)), Object(i.e)(e => Object(ae.mb)(e))),
 					S = Object(i.e)(e => Object(ae.rb)(e)),
 					k = E && S,
 					_ = Object(Y.Z)(m),
@@ -8562,8 +8562,8 @@
 			const o = e => {
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: n.L
-				}) === n.Td
+					experimentName: n.M
+				}) === n.Ud
 			}
 		},
 		"./src/reddit/selectors/experiments/commentBox.ts": function(e, t, s) {
@@ -8578,8 +8578,8 @@
 			const i = Object(n.a)(a.S, a.R, (e, t) => e || t),
 				c = Object(n.a)(e => Object(o.c)(e, {
 					experimentEligibilitySelector: i,
-					experimentName: r.H
-				}), e => e === r.R.Enabled)
+					experimentName: r.I
+				}), e => e === r.S.Enabled)
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, s) {
 			"use strict";
@@ -8596,11 +8596,11 @@
 				c = s("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(i.h)(e) && Object(o.f)(e),
-					experimentName: n.rc
+					experimentName: n.sc
 				}), a.a),
 				l = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(i.h)(e) && Object(o.f)(e),
-					experimentName: n.qc
+					experimentName: n.rc
 				}), a.a),
 				m = Object(c.a)(d, l, (e, t) => e || t),
 				u = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -8615,10 +8615,10 @@
 				o = s("./node_modules/reselect/es/index.js");
 			const a = Object(o.a)(e => Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: n.Cf
+				experimentName: n.Df
 			}), e => ({
-				isSubEnlarged: e === n.Uf.Variant1 || e === n.Uf.Variant3,
-				withCommunityDescription: e === n.Uf.Variant2 || e === n.Uf.Variant3
+				isSubEnlarged: e === n.Vf.Variant1 || e === n.Vf.Variant3,
+				withCommunityDescription: e === n.Vf.Variant2 || e === n.Vf.Variant3
 			}))
 		},
 		"./src/reddit/selectors/i18n/index.ts": function(e, t, s) {
@@ -8634,7 +8634,7 @@
 				a = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(r.yg)(t)
+					return Boolean(t) && !Object(r.zg)(t)
 				},
 				c = Object(n.a)(i, o.d, (e, t) => e && !t)
 		},
@@ -8683,4 +8683,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.7d28b7478f07ae7d64ee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.03eddaea9cda6507d7c2.js.map

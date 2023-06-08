@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.299c53e5410295d9b26c.js
-// Retrieved at 6/7/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.260b2022227775d64203.js
+// Retrieved at 6/8/2023, 12:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -468,7 +468,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.yg)(p),
+						includeInterestTopics: !!p && !Object(b.zg)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: h && !(null === (s = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === s ? void 0 : s.total),
@@ -727,7 +727,7 @@
 							meta: f.meta,
 							correlationId: O,
 							...s
-						})), n(Z.g(E)), s.geoFilter && n(Object(X.k)(s.geoFilter)), s.liveBarContent && n(Object(Ce.b)(Object(ie.a)(f) ? null !== (u = null === (d = null === (l = s.liveBarContent) || void 0 === l ? void 0 : l.items) || void 0 === d ? void 0 : d.edges.map(e => e.node)) && void 0 !== u ? u : [] : null === (p = s.liveBarContent.posts) || void 0 === p ? void 0 : p.map(e => ({
+						})), n(Z.g(E)), s.geoFilter && n(Object(X.k)(s.geoFilter)), s.liveBarContent && n(Object(Ce.b)(Object(ie.b)(f) ? null !== (u = null === (d = null === (l = s.liveBarContent) || void 0 === l ? void 0 : l.items) || void 0 === d ? void 0 : d.edges.map(e => e.node)) && void 0 !== u ? u : [] : null === (p = s.liveBarContent.posts) || void 0 === p ? void 0 : p.map(e => ({
 							post: e,
 							__typename: "LiveBarTalk"
 						})))), n(Object(be.b)(ve.a.FRONTPAGE));
@@ -1823,8 +1823,8 @@
 						toggleLanguageSelection: u
 					} = e;
 					const [m, p] = Object(a.useState)(!1), b = Object(i.e)(ee.fb);
-					let g = Object(i.e)(Se.h) === ke.ld.TopTwo;
-					const f = Object(i.e)(Se.g) === ke.ld.TopTwo;
+					let g = Object(i.e)(Se.h) === ke.md.TopTwo;
+					const f = Object(i.e)(Se.g) === ke.md.TopTwo;
 					g = g || f;
 					const h = Object(i.e)(ye.b),
 						O = Object(_.a)();
@@ -2138,12 +2138,12 @@
 			var ht = (e, t) => {
 					const n = (e => {
 						return {
-							[ke.mb.Default]: it,
-							[ke.mb.FruitVeg]: ut,
-							[ke.mb.Karma]: mt,
-							[ke.mb.Interactive]: pt(e),
-							[ke.mb.Randomizer]: bt,
-							[ke.mb.FruitVegWithBody]: gt
+							[ke.nb.Default]: it,
+							[ke.nb.FruitVeg]: ut,
+							[ke.nb.Karma]: mt,
+							[ke.nb.Interactive]: pt(e),
+							[ke.nb.Randomizer]: bt,
+							[ke.nb.FruitVegWithBody]: gt
 						}
 					})(t);
 					return e in n ? n[e] : it
@@ -2981,7 +2981,7 @@
 				}, [I, N, t, he]), Object(a.useEffect)(() => {
 					N && Object(vn.a)(null == S ? void 0 : S.genderCategory, N.success)
 				}, [N, S]);
-				const Oe = Object(i.e)(Se.i) === ke.nb.Removed;
+				const Oe = Object(i.e)(Se.i) === ke.ob.Removed;
 				Object(a.useEffect)(() => {
 					let e = !1;
 					return async function() {
@@ -3005,7 +3005,7 @@
 					xe = Object(i.e)(ye.k),
 					_e = Object(i.e)(Se.h),
 					Ee = Object(i.e)(Se.g),
-					Ce = _e === ke.ld.TopTwo || _e === ke.ld.All || Ee === ke.ld.TopTwo || Ee === ke.ld.All,
+					Ce = _e === ke.md.TopTwo || _e === ke.md.All || Ee === ke.md.TopTwo || Ee === ke.md.All,
 					je = Object(a.useCallback)(async e => {
 						ie(!0);
 						const n = await Object(On.c)(e, t, xe);
@@ -3024,9 +3024,9 @@
 					Ie = Object(i.e)(ee.U),
 					we = Object(i.e)(ye.g),
 					Pe = Object(i.e)(kn.a),
-					Re = Pe === ke.dg.CloseOnboarding,
-					Fe = Pe === ke.dg.SkipTopicSelection,
-					Ge = Pe === ke.dg.SmartSignal,
+					Re = Pe === ke.eg.CloseOnboarding,
+					Fe = Pe === ke.eg.SkipTopicSelection,
+					Ge = Pe === ke.eg.SmartSignal,
 					Ae = Object(a.useCallback)(() => {
 						s(Object(b.g)(Kt.a.ONBOARDING_MODAL_D2X)), Te && s(Object(g.h)()), h && (r(Object(F.t)()), Object(xn.a)()), we && Ie && s(Object(m.startChangeUsernameFlow)())
 					}, [s, Ie, we, h, Te, r]),
@@ -5071,10 +5071,10 @@
 			const o = e => {
 					return !(Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.De
-					}) === s.Td)
+						experimentName: s.Ee
+					}) === s.Ud)
 				},
-				i = Object(a.a)(s.Ee)
+				i = Object(a.a)(s.Fe)
 		},
 		"./src/redditGQL/operations/Frontpage.json": function(e) {
 			e.exports = JSON.parse('{"id":"d45d9e249839"}')
@@ -5108,4 +5108,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.299c53e5410295d9b26c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.260b2022227775d64203.js.map

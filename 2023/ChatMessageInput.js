@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.83c7af26bae6cf110109.js
-// Retrieved at 6/7/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.2755fc5aa932c5c5f1ae.js
+// Retrieved at 6/8/2023, 12:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, s) {},
@@ -218,10 +218,8 @@
 			"use strict";
 			s.d(t, "a", (function() {
 				return d
-			})), s.d(t, "c", (function() {
-				return u
 			})), s.d(t, "b", (function() {
-				return m
+				return u
 			}));
 			var n = s("./src/lib/cache/index.ts"),
 				o = s("./src/lib/constants/index.ts"),
@@ -237,10 +235,6 @@
 					if (!r.a[d].includes(e)) return;
 					const u = c(t);
 					Object(n.d)(u, e, n.a), s(l(e))
-				}, m = e => async t => {
-					const s = c(e),
-						o = Object(n.b)(s);
-					o && t(l(o))
 				}
 		},
 		"./src/reddit/actions/economics/me/constants.ts": function(e, t, s) {
@@ -357,13 +351,13 @@
 				_ = s("./src/reddit/helpers/imagePreview/index.ts"),
 				C = s("./src/reddit/helpers/media/index.ts"),
 				g = s("./src/reddit/models/Upload/index.ts"),
-				j = s("./src/reddit/selectors/telemetry.ts"),
-				v = s("./src/telemetry/index.ts");
+				v = s("./src/reddit/selectors/telemetry.ts"),
+				j = s("./src/telemetry/index.ts");
 			const x = e => ({
-				...j.o(e),
-				screen: j.cb(e),
-				profile: j.T(e),
-				subreddit: j.lb(e)
+				...v.o(e),
+				screen: v.cb(e),
+				profile: v.T(e),
+				subreddit: v.lb(e)
 			});
 			var E = s("./src/reddit/helpers/trackers/postComposer.ts"),
 				O = s("./src/reddit/models/PostCreationForm/index.ts"),
@@ -452,14 +446,14 @@
 									height: m.height,
 									duration: m.videoDuration && Math.round(1e3 * m.videoDuration)
 								};
-								Object(v.a)({
+								Object(j.a)({
 									source: "post_composer",
 									action: "upload",
 									correlationId: i,
 									noun: b ? "video" : "image",
 									...x(t),
 									actionInfo: {
-										...j.d(t),
+										...v.d(t),
 										success: f,
 										..._ ? {
 											reason: _
@@ -493,7 +487,7 @@
 						}
 					};
 					return await S(Object(c.l)(e, t, async f => {
-						var g, j, v, x;
+						var g, v, j, x;
 						R = !0, Object(c.k)(f.id, () => {
 							H(!0)
 						});
@@ -624,9 +618,9 @@
 										s = (null === (g = t.data.createMediaUploadLease) || void 0 === g ? void 0 : g.uploadLease.uploadLeaseUrl) || "",
 										n = Object(T.a)({
 											uploadLeaseUrl: s,
-											uploadLeaseHeaders: null === (j = t.data.createMediaUploadLease) || void 0 === j ? void 0 : j.uploadLease.uploadLeaseHeaders
+											uploadLeaseHeaders: null === (v = t.data.createMediaUploadLease) || void 0 === v ? void 0 : v.uploadLease.uploadLeaseHeaders
 										});
-									return U = (null === (v = t.data.createMediaUploadLease) || void 0 === v ? void 0 : v.mediaId) || null, {
+									return U = (null === (j = t.data.createMediaUploadLease) || void 0 === j ? void 0 : j.mediaId) || null, {
 										uploadLease: n
 									}
 								} {
@@ -813,8 +807,8 @@
 				_ = Object(r.a)(c),
 				C = Object(r.a)(l),
 				g = Object(r.a)(u),
-				j = Object(r.a)(m),
-				v = Object(r.a)(h),
+				v = Object(r.a)(m),
+				j = Object(r.a)(h),
 				x = Object(r.a)(p),
 				E = Object(r.a)(b),
 				O = Object(r.a)(f),
@@ -864,7 +858,7 @@
 									total: e.total,
 									uploaded: e.loaded
 								};
-								r(j({
+								r(v({
 									key: l,
 									progress: t
 								}))
@@ -873,7 +867,7 @@
 						if (b = null, !m())
 							if (f.ok) {
 								const e = decodeURIComponent(f.body.PostResponse.Location);
-								r(v({
+								r(j({
 									key: l,
 									url: e
 								}))
@@ -975,11 +969,11 @@
 				_ = s("./src/reddit/components/UserIcon/SnoovatarHeadshot.tsx"),
 				C = s("./src/reddit/components/UserIcon/UserIcon.tsx"),
 				g = s("./src/reddit/helpers/userSnoovatar/index.ts"),
-				j = s("./src/reddit/icons/svgs/Remove/index.tsx");
-			const v = Object(r.c)({
+				v = s("./src/reddit/icons/svgs/Remove/index.tsx");
+			const j = Object(r.c)({
 					account: e => e.user.account
 				}),
-				x = Object(a.b)(v);
+				x = Object(a.b)(j);
 			t.a = i.a.wrapped(x(e => {
 				let {
 					account: t,
@@ -1000,7 +994,7 @@
 				if (i) return o.a.createElement("div", {
 					className: s,
 					style: u
-				}, o.a.createElement(j.a, {
+				}, o.a.createElement(v.a, {
 					className: p.a.TrashIcon
 				}));
 				const m = t && t.id === d ? t.accountIcon : r ? C.a : null != a ? a : void 0;
@@ -1165,8 +1159,8 @@
 						className: Object(i.a)(_.j, t)
 					}, o)
 				},
-				j = s("./src/reddit/components/UserIcon/index.tsx"),
-				v = s("./src/reddit/helpers/getRichTextContent/index.ts"),
+				v = s("./src/reddit/components/UserIcon/index.tsx"),
+				j = s("./src/reddit/helpers/getRichTextContent/index.ts"),
 				x = s("./src/reddit/icons/svgs/CloseV2/index.tsx"),
 				E = s("./src/reddit/selectors/comments.ts"),
 				O = s("./src/reddit/selectors/commentSelector.ts"),
@@ -1198,7 +1192,7 @@
 					rel: "noopener noreferrer",
 					target: "_blank",
 					onClick: Object(d.a)(() => u(m.id))
-				}, a.a.createElement(j.a, {
+				}, a.a.createElement(v.a, {
 					className: Object(i.a)(I.a.userIcon),
 					iconUrl: m.profileImage || m.authorIconImage,
 					userName: m.author,
@@ -1209,7 +1203,7 @@
 					hk: "15ByZb"
 				}) : m.author), a.a.createElement(g, {
 					className: I.a.commentBody,
-					content: Object(v.a)(m)
+					content: Object(j.a)(m)
 				}), l && a.a.createElement(x.a, {
 					className: I.a.closeIcon
 				})) : null
@@ -1281,8 +1275,8 @@
 					"data-testid": "inline-timer-text"
 				}, a, ":", d > 9 ? d : `0${d}`)
 			};
-			var j = s("./src/reddit/components/RichTextEditor/index.tsx"),
-				v = s("./src/reddit/components/RichTextEditor/RTEState/index.tsx"),
+			var v = s("./src/reddit/components/RichTextEditor/index.tsx"),
+				j = s("./src/reddit/components/RichTextEditor/RTEState/index.tsx"),
 				x = s("./src/reddit/constants/chat.ts"),
 				E = s("./src/reddit/controls/Button/index.tsx"),
 				O = s("./src/reddit/helpers/richTextEditor/index.ts"),
@@ -1318,10 +1312,10 @@
 					isChatPost: D.d,
 					pending: (e, t) => e.features.comments.submit.pending[t.draftKey],
 					post: A.F,
-					isLiveChatInChatTabEnabled: W.b,
+					isLiveChatInChatTabEnabled: W.c,
 					currentUserId: k.k,
 					isTalkPost: Object(c.a)(A.F, e => Object(L.x)(e)),
-					isLiveChatThreadingEnabled: W.d
+					isLiveChatThreadingEnabled: W.e
 				}), (e, t) => {
 					let {
 						isEditing: s,
@@ -1377,7 +1371,7 @@
 								}
 							})
 						})(t)),
-						setLiveChatTooltipShowState: (t, s) => e(Object(b.c)(t, s)),
+						setLiveChatTooltipShowState: (t, s) => e(Object(b.b)(t, s)),
 						fetchLiveChatPosts: () => e((() => async (e, t) => {
 							const [{
 								chatStore: s
@@ -1428,7 +1422,7 @@
 					}, this.canSubmit = () => Boolean(!this.props.pending && this.state.hasChanged && !this.state.showError && !this.state.spamTimeoutDraftKey), this.state = {
 						hasChanged: !1,
 						showError: e.hasError,
-						rteState: e.isEditing && e.comment ? v.a.createInitial(e.comment.media.richtextContent) : v.a.createInitial(),
+						rteState: e.isEditing && e.comment ? j.a.createInitial(e.comment.media.richtextContent) : j.a.createInitial(),
 						spamTimeoutDraftKey: null,
 						messageSent: !1,
 						hasCreatedLiveChatAssociation: !1
@@ -1474,7 +1468,7 @@
 				}
 				cleanInputForm() {
 					this.setState({
-						rteState: v.a.createInitial()
+						rteState: j.a.createInitial()
 					})
 				}
 				render() {
@@ -1522,7 +1516,7 @@
 						onReset: this.handleCancel
 					}, !t && i.a.createElement(Q, {
 						isEditing: !!d
-					}), i.a.createElement(j.a, {
+					}), i.a.createElement(v.a, {
 						className: Object(l.a)(M.a.RichTextEditor, {
 							[M.a.Editing]: d,
 							[M.a.isV2ChatPost]: t,
@@ -1904,4 +1898,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.83c7af26bae6cf110109.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.2755fc5aa932c5c5f1ae.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PremiumPurchaseModal.b6620a85a6fcc52c746d.js
-// Retrieved at 6/7/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PremiumPurchaseModal.2fd2cfe2f4d3911065f2.js
+// Retrieved at 6/8/2023, 12:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal~PremiumPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -350,10 +350,10 @@
 					R = x("epsBank", E),
 					M = x("payment", E),
 					L = x("paymentRequestButton", E),
-					D = x("linkAuthentication", E),
-					B = x("shippingAddress", E),
+					B = x("linkAuthentication", E),
+					D = x("shippingAddress", E),
 					F = x("afterpayClearpayMessage", E);
-				e.AfterpayClearpayMessageElement = F, e.AuBankAccountElement = P, e.CardCvcElement = N, e.CardElement = _, e.CardExpiryElement = S, e.CardNumberElement = w, e.Elements = g, e.ElementsConsumer = C, e.EpsBankElement = R, e.FpxBankElement = k, e.IbanElement = I, e.IdealBankElement = T, e.LinkAuthenticationElement = D, e.P24BankElement = A, e.PaymentElement = M, e.PaymentRequestButtonElement = L, e.ShippingAddressElement = B, e.useElements = function() {
+				e.AfterpayClearpayMessageElement = F, e.AuBankAccountElement = P, e.CardCvcElement = N, e.CardElement = _, e.CardExpiryElement = S, e.CardNumberElement = w, e.Elements = g, e.ElementsConsumer = C, e.EpsBankElement = R, e.FpxBankElement = k, e.IbanElement = I, e.IdealBankElement = T, e.LinkAuthenticationElement = B, e.P24BankElement = A, e.PaymentElement = M, e.PaymentRequestButtonElement = L, e.ShippingAddressElement = D, e.useElements = function() {
 					return v("calls useElements()").elements
 				}, e.useStripe = function() {
 					return v("calls useStripe()").stripe
@@ -2281,8 +2281,8 @@
 				a = r("./src/lib/constants/index.ts"),
 				o = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const c = Object(s.a)(o.df),
-				i = Object(s.a)(o.ef),
+			const c = Object(s.a)(o.ef),
+				i = Object(s.a)(o.ff),
 				d = Object(n.a)([c, i], (e, t) => new Set([e && a.Mb, t && a.Lb].filter(e => !!e)))
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, r) {
@@ -2292,7 +2292,7 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				a = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const o = Object(a.a)(n.Dd)
+			const o = Object(a.a)(n.Ed)
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, r) {
 			"use strict";
@@ -2397,4 +2397,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PremiumPurchaseModal.b6620a85a6fcc52c746d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PremiumPurchaseModal.2fd2cfe2f4d3911065f2.js.map
