@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Avatar.1252e8abee74032e1f66.js
-// Retrieved at 6/8/2023, 12:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Avatar.ea5a42bfe039c98e2a77.js
+// Retrieved at 6/8/2023, 2:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Avatar"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, s) {
@@ -51,7 +51,7 @@
 				} = e;
 				const b = Object(p.a)(),
 					f = Object(c.e)(e => e.user.session),
-					[E, j] = Object(n.useState)(!1),
+					[j, E] = Object(n.useState)(!1),
 					A = Object(n.useContext)(l.a),
 					g = Object(c.d)(),
 					S = () => g(Object(i.openLoginModal)()),
@@ -59,7 +59,7 @@
 				Object(n.useEffect)(() => {
 					b(u.s)
 				}, [b]), Object(n.useEffect)(() => {
-					j(!0)
+					E(!0)
 				}, []);
 				const {
 					activeDetails: h,
@@ -72,7 +72,7 @@
 					activeDetails: h || void 0,
 					shopTabState: N || void 0
 				}), [h, R, k, N]), C = Object(c.e)(e => !Object(O.S)(e) && Object(m.x)(e));
-				if (!f || !E) return null;
+				if (!f || !j) return null;
 				if (C) return a.a.createElement("div", {
 					className: Object(o.a)(x.a.container, {
 						[x.a.containerExp]: A
@@ -139,8 +139,8 @@
 						_ = n ? new Date(n.expires).getTime() : 1,
 						v = Object(c.e)(m.fb),
 						f = Object(i.a)(),
-						E = O ? o.a.Rinkeby : o.a.Ethereum,
-						j = Object(a.useMemo)(() => ({
+						j = O ? o.a.Rinkeby : o.a.Ethereum,
+						E = Object(a.useMemo)(() => ({
 							headers: {
 								Authorization: `Bearer ${x}`
 							},
@@ -151,7 +151,7 @@
 							STRIPE_API_KEY: r.a.stripe.apiKey(e),
 							STRIPE_API_VERSION: r.a.stripe.apiVersion(t),
 							ACCESS_TOKEN: x,
-							BLOCKCHAIN_PROVIDER: E,
+							BLOCKCHAIN_PROVIDER: j,
 							OVERRIDES: s ? {
 								NO_VAULT: !0
 							} : {}
@@ -172,11 +172,11 @@
 							})
 						}, [f]);
 					return Object(a.useMemo)(() => ({
-						authHeaders: j,
+						authHeaders: E,
 						config: A,
 						isNightMode: v,
 						sendEvent: g
-					}), [j, A, v, g])
+					}), [E, A, v, g])
 				}
 		},
 		"./src/reddit/pages/Avatar/index.tsx": function(e, t, s) {
@@ -204,10 +204,10 @@
 			const c = e => {
 					return !(Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: r.Ee
-					}) === r.Ud)
+						experimentName: r.Fe
+					}) === r.Vd)
 				},
-				o = Object(a.a)(r.Fe)
+				o = Object(a.a)(r.Ge)
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, s) {
 			"use strict";
@@ -216,9 +216,9 @@
 			}));
 			var r = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(n.a)(r.Ed)
+			const a = Object(n.a)(r.Fd)
 		},
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.1252e8abee74032e1f66.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.ea5a42bfe039c98e2a77.js.map

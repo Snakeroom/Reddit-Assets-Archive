@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.9500535daced28cd7c4b.js
-// Retrieved at 6/8/2023, 12:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.5e6a919f2daaf724354d.js
+// Retrieved at 6/8/2023, 2:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -6301,13 +6301,13 @@
 				return Object(a.c)(e, {
 					expEventOverride: !1,
 					experimentEligibilitySelector: d,
-					experimentName: r.Zd
+					experimentName: r.ae
 				})
 			}
 
 			function m(e) {
 				switch (e) {
-					case r.ae.Enabled:
+					case r.be.Enabled:
 						return 18;
 					default:
 						return
@@ -6317,7 +6317,7 @@
 			}(s || (s = {}));
 			const p = e => {
 				switch (e) {
-					case r.ae.Enabled:
+					case r.be.Enabled:
 						return s.Enabled;
 					default:
 						return s.NoBucket
@@ -8996,7 +8996,7 @@
 						removeGoogleOneTapStyles: !1,
 						removeHiddenOverlay: !1
 					}, this.closeModal = () => {
-						this.props.closeModal(this.props.path), this.props.path === Je.c.Register && Object($e.f)(this.props.frontpageSignupVariant) && qn.a.throttleFeature(Un.sd), this.props.sendEvent(Object(Ke.d)(this.subscriptions))
+						this.props.closeModal(this.props.path), this.props.path === Je.c.Register && Object($e.f)(this.props.frontpageSignupVariant) && qn.a.throttleFeature(Un.td), this.props.sendEvent(Object(Ke.d)(this.subscriptions))
 					}, this.resizeContainer = e => {
 						this.setState({
 							containerSize: e
@@ -12118,7 +12118,7 @@
 					gqlContext: r
 				} = s;
 				const o = n(),
-					a = Object(Xa.a)(o, Un.Ef),
+					a = Object(Xa.a)(o, Un.Ff),
 					i = fn.fb(o, Ka.a.Typeahead),
 					c = Object(O.mb)(o);
 				if (a) {
@@ -12313,7 +12313,7 @@
 						subredditName: S ? S.title.replace("r/", "") : ""
 					})),
 					z = Object(Ee.e)(e => Object(ui.a)(e, Ja.d.dropdown).slice(0, ei.d)),
-					Q = Object(Ee.e)(e => Object(Xa.a)(e, Un.Ef)),
+					Q = Object(Ee.e)(e => Object(Xa.a)(e, Un.Ff)),
 					Z = Object(Ee.e)(di.E),
 					J = Object(Ee.e)(di.D);
 				let K = [];
@@ -12893,14 +12893,14 @@
 			const lc = e => {
 					return Object(cc.c)(e, {
 						experimentEligibilitySelector: cc.a,
-						experimentName: Un.Cb
-					}) === Un.Ud
+						experimentName: Un.Db
+					}) === Un.Vd
 				},
 				dc = e => {
 					return Object(cc.c)(e, {
 						experimentEligibilitySelector: cc.a,
-						experimentName: Un.of
-					}) === Un.Ud
+						experimentName: Un.pf
+					}) === Un.Vd
 				};
 			var uc = m.a.memo((function(e) {
 				const t = Object(yr.a)(),
@@ -13427,9 +13427,9 @@
 				Bl = n("./src/reddit/layout/row/InlineButton/index.tsx"),
 				Gl = n("./src/reddit/selectors/avatarPushcard.ts");
 			const Ul = e => Object(cc.c)(e, {
-				experimentName: Un.hg,
+				experimentName: Un.ig,
 				experimentEligibilitySelector: cc.a
-			}) === Un.Ud;
+			}) === Un.Vd;
 			var Hl = n("./src/reddit/selectors/experiments/navbarLikeMweb.ts"),
 				ql = n("./src/reddit/selectors/experiments/onlineIndicator.ts"),
 				Wl = n("./src/reddit/selectors/modModeEnabled.ts"),
@@ -17383,13 +17383,13 @@
 				_v = n("./src/reddit/selectors/experiments/utils.ts");
 			const Sv = e => !!Object(_v.a)((e => Object(cc.c)(e, {
 					experimentEligibilitySelector: jv.f,
-					experimentName: Un.Lc
+					experimentName: Un.Mc
 				}))(e)),
 				Pv = {
 					displayDelay: 15,
 					displayOnRoutes: [k.Sb.SUBREDDIT, k.Sb.COMMENTS],
-					experimentName: Un.ie,
-					experimentVariant: Un.ne.On,
+					experimentName: Un.je,
+					experimentVariant: Un.oe.On,
 					isSEOOnly: !0,
 					samplingRate: 25,
 					seed: Math.random()
@@ -17674,18 +17674,18 @@
 							}
 						})), Object(U.d)("enabled" === Object(cc.c)(s.getState(), {
 							experimentEligibilitySelector: cc.a,
-							experimentName: Un.ag,
+							experimentName: Un.bg,
 							expEventOverride: !1
 						})), Object(U.c)("enabled" === Object(cc.c)(s.getState(), {
 							experimentEligibilitySelector: cc.a,
-							experimentName: Un.cg
+							experimentName: Un.dg
 						})), Object(U.h)("enabled" === Object(cc.c)(s.getState(), {
 							experimentEligibilitySelector: cc.a,
-							experimentName: Un.bg
+							experimentName: Un.cg
 						})), Object(U.f)((e => Object(cc.c)(e, {
 							experimentEligibilitySelector: cc.a,
-							experimentName: Un.Bb
-						}) === Un.ed.Enabled)(o)), Object(U.g)(Kv.gqlContext), window.addEventListener("beforeunload", () => {
+							experimentName: Un.Cb
+						}) === Un.fd.Enabled)(o)), Object(U.g)(Kv.gqlContext), window.addEventListener("beforeunload", () => {
 							const e = s.getState(),
 								t = Object(av.a)("tab_closed")(e),
 								n = H.g(t),
@@ -17914,8 +17914,8 @@
 								} = t.platform;
 							if ("visible" !== document.visibilityState && (Rn.cc(Date.now()), Object(G.a)(Object(av.a)("tab_backgrounded")(t))), (e => Object(cc.c)(e, {
 									experimentEligibilitySelector: e => !Object(oe.d)(e),
-									experimentName: Un.ad
-								}) === Un.rd.Enabled)(t) && "visible" === document.visibilityState && n && Object(ai.j)(n.routeMatch, l.getState(), q.TimerType.Revisit, 0, n.urlParams, !0), "visible" === document.visibilityState) {
+									experimentName: Un.bd
+								}) === Un.sd.Enabled)(t) && "visible" === document.visibilityState && n && Object(ai.j)(n.routeMatch, l.getState(), q.TimerType.Revisit, 0, n.urlParams, !0), "visible" === document.visibilityState) {
 								const e = Rn.A(),
 									t = Rn.B(),
 									n = Rn.O(),
@@ -17928,8 +17928,8 @@
 						}), Object(oe.h)(l.getState()) && lv(l.getState), (e => {
 							return Object(cc.c)(e, {
 								experimentEligibilitySelector: cc.a,
-								experimentName: Un.Uc
-							}) === Un.Ud
+								experimentName: Un.Vc
+							}) === Un.Vd
 						})(l.getState()) && Object(Zv.b)(Rn.r(), l.getState), l.dispatch(Object(ve.o)())
 					}), window.history.scrollRestoration = "manual", wv.a.attachStore(l);
 					const B = Rn.p(null === (u = l.getState().user.account) || void 0 === u ? void 0 : u.id),
@@ -20159,15 +20159,15 @@
 				b = n("./src/reddit/selectors/experiments/index.ts");
 			const h = Object(a.a)(e => Object(p.c)(e, {
 				experimentEligibilitySelector: b.f,
-				experimentName: l.fe
-			}), e => e === l.ke.Enabled);
+				experimentName: l.ge
+			}), e => e === l.le.Enabled);
 			var g = n("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
 				f = n("./src/reddit/selectors/experiments/magicLink.ts"),
 				v = n("./src/lib/getParsedUserAgent/index.ts");
 			const O = Object(a.a)(e => Object(p.c)(e, {
 				experimentEligibilitySelector: e => Object(v.g)(e.meta.userAgent) && Object(b.f)(e),
-				experimentName: l.Cf
-			}), e => e === l.Uf.Enabled);
+				experimentName: l.Df
+			}), e => e === l.Vf.Enabled);
 			var C = n("./src/reddit/selectors/meta.ts"),
 				y = n("./src/reddit/actions/modal.ts"),
 				E = n("./src/reddit/selectors/accountManager/modalData.ts");
@@ -20179,7 +20179,7 @@
 					magicLinkVariant: f.a,
 					ssoLoginLinkVariant: e => Object(p.c)(e, {
 						experimentEligibilitySelector: e => !Object(b.e)(e),
-						experimentName: l.Lf
+						experimentName: l.Mf
 					}),
 					blockingInterstitialVariant: g.e,
 					blockingInterstitialV2Variant: g.f
@@ -20210,27 +20210,27 @@
 					if (S = Object(i.a)(S, {
 							experiment_d2x_2020ify_buttons: "enabled"
 						}), O && (S = Object(i.a)(S, {
-							[`experiment_${l.Lf}`]: O
+							[`experiment_${l.Mf}`]: O
 						})), j && (S = Object(i.a)(S, {
-							[`experiment_${l.fe}`]: "enabled"
+							[`experiment_${l.ge}`]: "enabled"
 						})), h && (S = Object(i.a)(S, {
 							experiment_d2x_netzdg_compliance: d.Enabled,
 							thing_id: n
 						})), S = Object(i.a)(S, {
 							experiment_d2x_onboarding: "enabled"
 						}), _ && (S = Object(i.a)(S, {
-							[`experiment_${l.Cf}`]: "enabled"
+							[`experiment_${l.Df}`]: "enabled"
 						})), E && (S = Object(i.a)(S, {
-							[`experiment_${l.Nb}`]: g
+							[`experiment_${l.Ob}`]: g
 						})), x && (S = Object(i.a)(S, {
-							[`experiment_${l.Ob}`]: f
+							[`experiment_${l.Pb}`]: f
 						})), y && (S = Object(i.a)(S, {
 							[`experiment_${l.ub}`]: "enabled"
 						})), v && (S = Object(i.a)(S, {
-							[l.sd]: v,
+							[l.td]: v,
 							uiMode: t
 						})), C && (S = Object(i.a)(S, {
-							[`experiment_${l.Ce}`]: C
+							[`experiment_${l.De}`]: C
 						})), u && (S = Object(i.a)(S, {
 							mweb_responsive_settings: "treatment"
 						})), m) {
@@ -20530,9 +20530,9 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => s.dd.DnNoModal === Object(r.c)(e, {
+			const o = e => s.ed.DnNoModal === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.zb
+				experimentName: s.Ab
 			})
 		},
 		"./src/reddit/selectors/experiments/frontpageSignup.ts": function(e, t, n) {
@@ -20565,16 +20565,16 @@
 				}, c.c, (e, t, n) => !e && t && !n),
 				u = Object(s.a)((e, t) => Object(a.c)(e, {
 					experimentEligibilitySelector: e => d(e, t),
-					experimentName: r.sd,
+					experimentName: r.td,
 					throttledVariants: {
-						[r.be.CurrentThrottled]: r.sd
+						[r.ce.CurrentThrottled]: r.td
 					}
 				}), i.a),
-				m = e => e === r.be.CurrentThrottled,
-				p = e => e === r.be.CurrentThrottled || e === r.be.CurrentUnthrottled || e === r.be.CurrentUnthrottledCopy || e === r.be.NewPopUnthrottledCopy,
-				b = e => e === r.be.NewPopUnthrottledCopy,
-				h = e => e === r.be.NewPageUnthrottledCopy || e === r.be.NewPageUnthrottledCopyFields,
-				g = e => e === r.be.NewPageUnthrottledCopyFields
+				m = e => e === r.ce.CurrentThrottled,
+				p = e => e === r.ce.CurrentThrottled || e === r.ce.CurrentUnthrottled || e === r.ce.CurrentUnthrottledCopy || e === r.ce.NewPopUnthrottledCopy,
+				b = e => e === r.ce.NewPopUnthrottledCopy,
+				h = e => e === r.ce.NewPageUnthrottledCopy || e === r.ce.NewPageUnthrottledCopyFields,
+				g = e => e === r.ce.NewPageUnthrottledCopyFields
 		},
 		"./src/reddit/selectors/experiments/happeningNow.ts": function(e, t, n) {
 			"use strict";
@@ -20586,8 +20586,8 @@
 				o = n("./node_modules/reselect/es/index.js");
 			const a = Object(o.a)(e => Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.Db
-			}), e => e === s.fd.Enabled || e === s.fd.EnabledWithNux)
+				experimentName: s.Eb
+			}), e => e === s.gd.Enabled || e === s.gd.EnabledWithNux)
 		},
 		"./src/reddit/selectors/experiments/i18n/hideTrending.ts": function(e, t, n) {
 			"use strict";
@@ -20601,13 +20601,13 @@
 				o = n("./node_modules/reselect/es/index.js");
 			const a = Object(o.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.Mb
-				}), e => e === s.re.HideTrending),
+					experimentName: s.Nb
+				}), e => e === s.se.HideTrending),
 				i = Object(o.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.Mb,
+					experimentName: s.Nb,
 					expEventOverride: !1
-				}), e => e === s.re.HideTrending)
+				}), e => e === s.se.HideTrending)
 		},
 		"./src/reddit/selectors/experiments/inboxRedesign.ts": function(e, t, n) {
 			"use strict";
@@ -20628,27 +20628,27 @@
 				a = n("./src/reddit/selectors/experiments/index.ts"),
 				i = n("./src/reddit/selectors/experiments/utils.ts");
 			const c = Object(s.a)(e => Object(o.c)(e, {
-					experimentName: r.ve,
+					experimentName: r.we,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				l = Object(s.a)(c, e => e === r.ye.Enabled),
+				l = Object(s.a)(c, e => e === r.ze.Enabled),
 				d = Object(s.a)(e => Object(o.c)(e, {
-					experimentName: r.Ec,
+					experimentName: r.Fc,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				u = Object(s.a)(d, e => e === r.pd.Enabled),
+				u = Object(s.a)(d, e => e === r.qd.Enabled),
 				m = Object(s.a)(e => Object(o.c)(e, {
-					experimentName: r.Qb,
-					experimentEligibilitySelector: a.e
-				}), i.a),
-				p = Object(s.a)(m, e => e === r.we.ContinuousScroll),
-				b = Object(s.a)(e => Object(o.c)(e, {
 					experimentName: r.Rb,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				h = Object(s.a)(b, e => e === r.xe.Enabled),
+				p = Object(s.a)(m, e => e === r.xe.ContinuousScroll),
+				b = Object(s.a)(e => Object(o.c)(e, {
+					experimentName: r.Sb,
+					experimentEligibilitySelector: a.e
+				}), i.a),
+				h = Object(s.a)(b, e => e === r.ye.Enabled),
 				g = Object(s.a)(e => Object(o.c)(e, {
-					experimentName: r.dc,
+					experimentName: r.ec,
 					experimentEligibilitySelector: () => !0
 				}), i.a),
 				f = Object(s.a)(g, e => e === r.jb.Enabled)
@@ -20673,27 +20673,27 @@
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/experiments/index.ts");
 			const i = Object(s.a)(e => Object(o.c)(e, {
-					experimentName: r.Tb,
+					experimentName: r.Ub,
 					experimentEligibilitySelector: a.e
 				}), e => e === r.Z.Enabled),
 				c = Object(s.a)(e => Object(o.c)(e, {
-					experimentName: r.Ub,
+					experimentName: r.Vb,
 					experimentEligibilitySelector: a.e
 				}), e => e === r.ab.Enabled),
 				l = Object(s.a)(e => Object(o.c)(e, {
-					experimentName: r.Vb,
+					experimentName: r.Wb,
 					experimentEligibilitySelector: a.e
 				}), e => e === r.bb.Enabled),
 				d = Object(s.a)(e => Object(o.c)(e, {
-					experimentName: r.Wb,
+					experimentName: r.Xb,
 					experimentEligibilitySelector: a.e
 				}), e => e === r.cb.Enabled),
 				u = Object(s.a)(e => Object(o.c)(e, {
-					experimentName: r.Yb,
+					experimentName: r.Zb,
 					experimentEligibilitySelector: a.e
 				}), e => e === r.eb.Enabled),
 				m = Object(s.a)(e => Object(o.c)(e, {
-					experimentName: r.Xb,
+					experimentName: r.Yb,
 					experimentEligibilitySelector: a.e
 				}), e => e === r.db.Enabled)
 		},
@@ -20705,9 +20705,9 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(r.c)(e, {
-				experimentName: s.Oe,
+				experimentName: s.Pe,
 				experimentEligibilitySelector: r.a
-			}) === s.Xe.Enabled
+			}) === s.Ye.Enabled
 		},
 		"./src/reddit/selectors/experiments/onlineIndicator.ts": function(e, t, n) {
 			"use strict";
@@ -20726,28 +20726,28 @@
 			const a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.nf
-					}) === s.Ud
+						experimentName: s.of
+					}) === s.Vd
 				},
 				i = e => {
 					if (Object(o.a)(e)) return !1;
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.mf
-					}) === s.Ud
+						experimentName: s.nf
+					}) === s.Vd
 				},
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.af
-					}) === s.Ud
+						experimentName: s.bf
+					}) === s.Vd
 				},
 				l = e => {
 					if (Object(o.a)(e)) return !1;
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.Ze
-					}) === s.Ud
+						experimentName: s.af
+					}) === s.Vd
 				}
 		},
 		"./src/reddit/selectors/experiments/recap.ts": function(e, t, n) {
@@ -20765,20 +20765,20 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.Gc
-				}) === s.Ud,
+					experimentName: s.Hc
+				}) === s.Vd,
 				a = e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.Hc
-				}) === s.Ud,
+					experimentName: s.Ic
+				}) === s.Vd,
 				i = e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.wb
-				}) === s.Ud,
+					experimentName: s.xb
+				}) === s.Vd,
 				c = e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.Fc
-				}) === s.Ud
+					experimentName: s.Gc
+				}) === s.Vd
 		},
 		"./src/reddit/selectors/experiments/shredditModNav.ts": function(e, t, n) {
 			"use strict";
@@ -20790,8 +20790,8 @@
 				o = n("./src/reddit/selectors/user.ts");
 			const a = (e, t) => t && Object(r.c)(e, {
 				experimentEligibilitySelector: o.S,
-				experimentName: s.Jf
-			}) === s.Ud
+				experimentName: s.Kf
+			}) === s.Vd
 		},
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, n) {
 			"use strict";
@@ -20819,16 +20819,16 @@
 						const t = (e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname),
 							r = ((e, t) => !(!b(t) && !p(t)) && Object(i.c)(e, {
 								experimentEligibilitySelector: c.f,
-								experimentName: a.qe
-							}) === a.Ud)(n, e.pathname),
+								experimentName: a.re
+							}) === a.Vd)(n, e.pathname),
 							o = ((e, t) => !!p(t) && Object(i.c)(e, {
 								experimentEligibilitySelector: c.f,
-								experimentName: a.If
-							}) === a.Ud)(n, e.pathname),
+								experimentName: a.Jf
+							}) === a.Vd)(n, e.pathname),
 							l = ((e, t) => !!b(t) && Object(i.c)(e, {
 								experimentEligibilitySelector: c.f,
-								experimentName: a.Hf
-							}) === a.Ud)(n, e.pathname);
+								experimentName: a.If
+							}) === a.Vd)(n, e.pathname);
 						if (r || t || o || l) {
 							const t = e.pathname + e.search;
 							return Object(s.f)(n), window.location.href = t, !1
@@ -20851,15 +20851,15 @@
 				a = n("./src/reddit/selectors/user.ts");
 			const i = e => {
 					var t;
-					return (null === (t = null == e ? void 0 : e.user.experiments.byName[r.Yc]) || void 0 === t ? void 0 : t.variant) === r.Ud
+					return (null === (t = null == e ? void 0 : e.user.experiments.byName[r.Zc]) || void 0 === t ? void 0 : t.variant) === r.Vd
 				},
 				c = Object(s.a)(e => Object(o.c)(e, {
 					experimentEligibilitySelector: a.S,
-					experimentName: r.Zb
-				}), e => e === r.jd.BottomSheet),
+					experimentName: r.ac
+				}), e => e === r.kd.BottomSheet),
 				l = Object(s.a)(e => Object(o.c)(e, {
 					experimentEligibilitySelector: a.S,
-					experimentName: r.Zb,
+					experimentName: r.ac,
 					expEventOverride: !1
 				}), e => !!e)
 		},
@@ -20986,8 +20986,8 @@
 				a = n("./node_modules/reselect/es/index.js");
 			const i = Object(a.a)(e => Object(r.c)(e, {
 				experimentEligibilitySelector: o.f,
-				experimentName: s.Ib
-			}), e => e === s.Ud)
+				experimentName: s.Jb
+			}), e => e === s.Vd)
 		},
 		"./src/reddit/selectors/muted.ts": function(e, t, n) {
 			"use strict";
@@ -21200,4 +21200,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.9500535daced28cd7c4b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.5e6a919f2daaf724354d.js.map

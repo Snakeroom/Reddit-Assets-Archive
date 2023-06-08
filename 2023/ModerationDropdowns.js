@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.5e77cd97dd585fd8d70e.js
-// Retrieved at 6/8/2023, 12:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.d920db53d1655d68bcca.js
+// Retrieved at 6/8/2023, 2:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, n) {
@@ -762,12 +762,12 @@
 						onSpoilerPost: W,
 						post: H
 					} = e;
-					var U, V, G, K, Q;
-					const Z = (null === (U = H.pollData) || void 0 === U ? void 0 : U.isPrediction) && !(null === (V = H.pollData) || void 0 === V ? void 0 : V.resolvedOptionId),
+					var V, U, G, K, Q;
+					const Z = (null === (V = H.pollData) || void 0 === V ? void 0 : V.isPrediction) && !(null === (U = H.pollData) || void 0 === U ? void 0 : U.resolvedOptionId),
 						q = (null === (G = H.pollData) || void 0 === G ? void 0 : G.isPrediction) && null !== H.pollData.resolvedOptionId,
-						J = H.flair.filter(e => e.type !== S.f.Nsfw && e.type !== S.f.Spoiler).length > 0,
-						z = Object(M.b)(H),
-						Y = !(!H.approvedBy || !z),
+						z = H.flair.filter(e => e.type !== S.f.Nsfw && e.type !== S.f.Spoiler).length > 0,
+						J = Object(M.b)(H),
+						Y = !(!H.approvedBy || !J),
 						X = i ? void 0 : l,
 						$ = Object(N.a)(H),
 						ee = u ? L : A;
@@ -799,7 +799,7 @@
 						onClick: R
 					}, s.a.createElement(T.j, null))), t && s.a.createElement(T.e, {
 						className: ee(g.a.Flair, X),
-						displayText: J ? j.fbt._("Edit post flair", null, {
+						displayText: z ? j.fbt._("Edit post flair", null, {
 							hk: "2oet1"
 						}) : j.fbt._("Add post flair", null, {
 							hk: "1iPNLQ"
@@ -880,7 +880,7 @@
 					isProfilePage: x.L,
 					pageLayer: e => e
 				}),
-				U = Object(a.c)({
+				V = Object(a.c)({
 					layout: x.U,
 					isDropdownOpen: (e, t) => {
 						let {
@@ -890,7 +890,7 @@
 					},
 					isModToMemberShareEnabled: O.d.modToMemberShare
 				}),
-				V = Object(r.b)(U, (e, t) => {
+				U = Object(r.b)(V, (e, t) => {
 					let {
 						post: n
 					} = t;
@@ -922,7 +922,7 @@
 					}
 				}),
 				G = Object(m.a)(h.a);
-			t.default = H(V(Object(b.c)(e => {
+			t.default = H(U(Object(b.c)(e => {
 				let {
 					canEditFlair: t,
 					hasModFullPerms: n,
@@ -1448,9 +1448,9 @@
 				r = n("./src/reddit/selectors/user.ts");
 			const a = (e, t) => t && Object(s.c)(e, {
 				experimentEligibilitySelector: r.S,
-				experimentName: o.Jf
-			}) === o.Ud
+				experimentName: o.Kf
+			}) === o.Vd
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.5e77cd97dd585fd8d70e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.d920db53d1655d68bcca.js.map

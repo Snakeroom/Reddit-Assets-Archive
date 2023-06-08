@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.e76936810e5d87ca57a0.js
-// Retrieved at 6/8/2023, 12:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.0b30a46e0b6f147699a9.js
+// Retrieved at 6/8/2023, 2:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -2449,7 +2449,7 @@
 			})), n.d(t, "a", (function() {
 				return z
 			})), n.d(t, "c", (function() {
-				return G
+				return V
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/lodash/pick.js"),
@@ -2679,7 +2679,7 @@
 					})
 				}, "MetaFlair", S.a);
 
-			function G(e) {
+			function V(e) {
 				const {
 					className: t,
 					disabled: n = !1,
@@ -3470,8 +3470,8 @@
 				}),
 				W = n("./src/reddit/components/OverflowMenu/index.tsx"),
 				z = n("./src/lib/lessComponent.tsx"),
-				G = n("./src/reddit/actions/authorFlair.ts"),
-				V = n("./src/reddit/actions/economics/powerups/flairs/index.ts"),
+				V = n("./src/reddit/actions/authorFlair.ts"),
+				G = n("./src/reddit/actions/economics/powerups/flairs/index.ts"),
 				Q = n("./src/reddit/actions/gold/powerups.ts"),
 				K = n("./src/reddit/helpers/trackers/userFlair.ts"),
 				J = n("./src/reddit/hooks/useTracking.ts"),
@@ -3529,7 +3529,7 @@
 					const c = Object(o.d)(),
 						l = Object(J.a)();
 					Object(s.useEffect)(() => {
-						d && c(Object(V.getSubredditCurrentUserPowerupsFlairs)(n))
+						d && c(Object(G.getSubredditCurrentUserPowerupsFlairs)(n))
 					}, [c, n, d]);
 					return t && (r || d) ? i.a.createElement(se, null, i.a.createElement(oe, null, re._("preview", null, {
 						hk: "2so8Zj"
@@ -3537,7 +3537,7 @@
 						onClick: () => {
 							if (d) c(Object(Q.a)());
 							else {
-								(e => c(Object(G.b)({
+								(e => c(Object(V.b)({
 									username: e,
 									subredditId: n
 								})))(t ? Object(Y.e)(t) : null)
@@ -3583,8 +3583,8 @@
 				qe = n("./src/reddit/selectors/moderatorPermissions.ts"),
 				We = n("./src/reddit/selectors/structuredStyles.ts"),
 				ze = n("./src/reddit/selectors/subreddit.ts"),
-				Ge = n("./src/reddit/selectors/subscriptions.ts"),
-				Ve = n("./src/reddit/selectors/tooltip.ts"),
+				Ve = n("./src/reddit/selectors/subscriptions.ts"),
+				Ge = n("./src/reddit/selectors/tooltip.ts"),
 				Qe = n("./src/reddit/selectors/widgets.ts"),
 				Ke = n("./src/reddit/components/IdCard/index.m.less"),
 				Je = n.n(Ke);
@@ -4038,12 +4038,12 @@
 				})))
 			};
 			var zt = n("./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx"),
-				Gt = n("./src/devPlatform/constants.ts");
-			const Vt = "IDCARD_OVERFLOW_DROPDOWN_ID",
+				Vt = n("./src/devPlatform/constants.ts");
+			const Gt = "IDCARD_OVERFLOW_DROPDOWN_ID",
 				Qt = Object(o.b)(() => Object(m.c)({
-					activeTooltipId: Ve.a,
+					activeTooltipId: Ge.a,
 					postCategories: (e, t) => Object(Me.l)(e, t.postId),
-					favoriteSubredditsIds: Ge.a,
+					favoriteSubredditsIds: Ve.a,
 					idCardWidget: (e, t) => Object(Qe.d)(e, {
 						subredditName: t.listingName
 					}),
@@ -4271,8 +4271,8 @@
 						snooBackground: U,
 						subscribersCount: H,
 						subscribersText: z,
-						titleText: G,
-						url: V
+						titleText: V,
+						url: G
 					} = Object(ut.d)({
 						listingName: P,
 						subreddit: _,
@@ -4333,7 +4333,7 @@
 						onClick: g ? C : void 0,
 						headerButton: i.a.createElement("div", {
 							className: Je.a.headerButtonsContainer
-						}, !Q && _ && v && l !== ge.Ye.NewModule && i.a.createElement(a.a, {
+						}, !Q && _ && v && l !== ge.Ze.NewModule && i.a.createElement(a.a, {
 							className: Je.a.ModToolsLink,
 							to: v.posts ? `${_.url}about/modqueue` : `${_.url}about/`,
 							onClick: this.onClickModTools
@@ -4343,7 +4343,7 @@
 							hk: "3tJVME"
 						})), u && _ && i.a.createElement(W.b, {
 							className: Je.a.overflowButton,
-							dropdownId: Vt,
+							dropdownId: Gt,
 							targetPosition: ["right", "bottom"],
 							tooltipPosition: ["right", "top"]
 						}, !_.isQuarantined && i.a.createElement(_e.b, {
@@ -4361,10 +4361,10 @@
 							}),
 							onClick: this.props.onToggleFavoriteClick
 						}), i.a.createElement(zt.a, {
-							contextType: Gt.a.SUBREDDIT,
+							contextType: Vt.a.SUBREDDIT,
 							contextData: _
 						}), v && i.a.createElement(zt.a, {
-							contextType: Gt.a.SUBREDDIT,
+							contextType: Vt.a.SUBREDDIT,
 							contextData: _,
 							moderator: !0
 						}), o && b && i.a.createElement(_e.b, {
@@ -4396,15 +4396,15 @@
 					}, Q && i.a.createElement(Xe, {
 						bannerBackgroundImage: D
 					}), F || x || s ? F ? ft({
-						titleText: G,
+						titleText: V,
 						snooBackground: U
 					}) : i.a.createElement(Bt, {
 						isTargetBlank: x,
-						linkUrl: F ? void 0 : V,
+						linkUrl: F ? void 0 : G,
 						subredditIcon: j,
 						canEditIcon: re,
 						subreddit: _,
-						titleText: G,
+						titleText: V,
 						onOpenFilePicker: this.openIconFilePicker,
 						isInNCPV3Experiment: l,
 						shouldBlurSubredditIcon: f
@@ -6104,7 +6104,7 @@
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
 					experimentName: r.M
-				}) === r.Ud
+				}) === r.Vd
 			}
 		},
 		"./src/reddit/selectors/experiments/joinOptimizations.ts": function(e, t, n) {
@@ -6127,27 +6127,27 @@
 				i = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = n("./src/reddit/selectors/experiments/index.ts");
 			const a = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Tb,
+					experimentName: s.Ub,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.Z.Enabled),
 				d = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Ub,
+					experimentName: s.Vb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.ab.Enabled),
 				c = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Vb,
+					experimentName: s.Wb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.bb.Enabled),
 				l = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Wb,
+					experimentName: s.Xb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.cb.Enabled),
 				u = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Yb,
+					experimentName: s.Zb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.eb.Enabled),
 				m = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Xb,
+					experimentName: s.Yb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.db.Enabled)
 		},
@@ -6174,4 +6174,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.e76936810e5d87ca57a0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.0b30a46e0b6f147699a9.js.map

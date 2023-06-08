@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.d4a94289f47762f32de3.js
-// Retrieved at 6/8/2023, 12:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.ac2735951ecefbf9a85d.js
+// Retrieved at 6/8/2023, 2:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/avatarShareImages.ts": function(e, t, n) {
@@ -563,7 +563,7 @@
 						v = Object(C.a)(x.s, p),
 						h = Object(C.a)(x.t, p);
 					return {
-						canBoostPost: b === x.Ud || f === x.Ud || v === x.Ud || h === x.Ud
+						canBoostPost: b === x.Vd || f === x.Vd || v === x.Vd || h === x.Vd
 					}
 				},
 				R = e => {
@@ -4056,8 +4056,8 @@
 					if (Object(a.a)(e)) return !1;
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: r.Dc
-					}) === r.od.Enabled
+						experimentName: r.Ec
+					}) === r.pd.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
@@ -4070,8 +4070,8 @@
 			const s = e => {
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: r.lf
-				}) === r.Ud
+					experimentName: r.mf
+				}) === r.Vd
 			}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -4392,4 +4392,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.d4a94289f47762f32de3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.ac2735951ecefbf9a85d.js.map
