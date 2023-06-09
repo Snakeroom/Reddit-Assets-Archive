@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrosspostsStat.493e22be5db187e60fcb.js
-// Retrieved at 6/7/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrosspostsStat.e9eda26c5a23c7ce0ac4.js
+// Retrieved at 6/8/2023, 8:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrosspostsStat"], {
 		"./src/reddit/components/CreatorStats/CrosspostsStat.m.less": function(e, t, s) {
@@ -223,7 +223,7 @@
 				x = e => {
 					const t = /comments\/(\w+)\/.*$/.exec(e),
 						s = t && t[1];
-					return s ? `${n.Nb.Post}_${s}` : ""
+					return s ? `${n.Ob.Post}_${s}` : ""
 				},
 				h = async (e, t) => {
 					if (!e.ok) return Object(p.b)(e);
@@ -282,4 +282,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrosspostsStat.493e22be5db187e60fcb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrosspostsStat.e9eda26c5a23c7ce0ac4.js.map

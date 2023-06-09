@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.e2d5cbe8de3c03dfa3fa.js
-// Retrieved at 6/7/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.9af77a3be6271e53f7f0.js
+// Retrieved at 6/8/2023, 8:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -2497,11 +2497,11 @@
 				f = e => {
 					var t;
 					const s = e.platform && e.platform.currentPage;
-					return (null === (t = null == s ? void 0 : s.meta) || void 0 === t ? void 0 : t.name) === n.Sb.MODQUEUE_PAGES
+					return (null === (t = null == s ? void 0 : s.meta) || void 0 === t ? void 0 : t.name) === n.Tb.MODQUEUE_PAGES
 				},
 				C = (e, t) => (e => {
 					const t = e.platform && e.platform.currentPage;
-					return t && t.meta && (t.meta.name === n.Sb.MODERATION_PAGES || t.meta.name === n.Sb.MODQUEUE_PAGES)
+					return t && t.meta && (t.meta.name === n.Tb.MODERATION_PAGES || t.meta.name === n.Tb.MODQUEUE_PAGES)
 				})(e) && t || !1
 		},
 		"./src/redditGQL/operations/UpdateRecommendationPreferences.json": function(e) {
@@ -2509,4 +2509,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.e2d5cbe8de3c03dfa3fa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~e3d63e32.9af77a3be6271e53f7f0.js.map

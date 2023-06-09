@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.0072c6cf137f73d13895.js
-// Retrieved at 6/8/2023, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.10a270a39bf41945834c.js
+// Retrieved at 6/8/2023, 8:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -164,7 +164,7 @@
 					}));
 					const h = p.name;
 					if ((await Object(l.c)(d(), {
-							subredditNames: [`${r.pc}${p.name}`],
+							subredditNames: [`${r.qc}${p.name}`],
 							subscribe: t
 						})).ok) {
 						s(w({
@@ -395,7 +395,7 @@
 					loadMore: Y
 				});
 			const Z = {};
-			var X = function() {
+			var J = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Z,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -423,9 +423,9 @@
 						return e
 				}
 			};
-			const J = {};
+			const X = {};
 			var $ = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : J,
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : X,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
 						case R.f: {
@@ -452,7 +452,7 @@
 					}
 				},
 				ee = Object(M.c)({
-					error: X,
+					error: J,
 					pending: $
 				}),
 				te = s("./src/reddit/actions/profileConversations.ts");
@@ -804,7 +804,7 @@
 							t: m
 						},
 						w = [t(j.d(x))],
-						_ = Object(P.a)(x, o.zb, u, e.queryParams);
+						_ = Object(P.a)(x, o.Ab, u, e.queryParams);
 					if (t(S.n({
 							title: Te(s(), p)
 						})), s().listings.postOrder.ids[_] && !s().listings.postOrder.api.error[_] ? h = !0 : w.push(t(Ne(_, x, I, !0))), w.push(t(Object(i.b)())), await Promise.all(w), h) return;
@@ -1089,8 +1089,8 @@
 				}
 			});
 			const Z = Object(i.a)(_.s),
-				X = Object(i.a)(_.r),
-				J = Object(i.a)(_.q),
+				J = Object(i.a)(_.r),
+				X = Object(i.a)(_.q),
 				$ = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
 					return async (s, n, r) => {
@@ -1108,10 +1108,10 @@
 						}));
 						const c = i.subreddits.models[e].name,
 							u = await g(o(), c, t);
-						u.ok ? s(X({
+						u.ok ? s(J({
 							...u.body,
 							fetchedToken: a
-						})) : s(J({
+						})) : s(X({
 							subredditId: e,
 							fetchedToken: a
 						}))
@@ -1536,15 +1536,15 @@
 				Y = s("./src/reddit/actions/subredditModeration/ban.ts"),
 				Q = s("./src/reddit/constants/modals.ts"),
 				Z = s("./src/reddit/components/Hovercards/helpers.ts"),
-				X = s("./src/reddit/icons/fonts/index.tsx"),
-				J = s("./src/reddit/models/ModeratingSubreddits/index.ts"),
+				J = s("./src/reddit/icons/fonts/index.tsx"),
+				X = s("./src/reddit/models/ModeratingSubreddits/index.ts"),
 				$ = s("./src/reddit/selectors/bannedUser.ts"),
 				ee = s("./src/reddit/components/Hovercards/AuthorHovercard/ModActions.m.less"),
 				te = s.n(ee);
 			const {
 				fbt: se
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), ne = Object(i.c)({
-				hasModMailPermissions: Object(b.b)(J.c.mail),
+				hasModMailPermissions: Object(b.b)(X.c.mail),
 				isUserBanned: (e, t) => !!Object($.b)(e, {
 					subredditId: t.subredditId,
 					username: t.username
@@ -1575,7 +1575,7 @@
 						onClick: () => {
 							o(this.props.user.id), i(B.e(t))
 						}
-					}, r.a.createElement(X.a, {
+					}, r.a.createElement(J.a, {
 						name: "ban",
 						isFilled: !0,
 						className: te.a.icon
@@ -1586,7 +1586,7 @@
 						onClick: () => {
 							a(), i(B.a(t))
 						}
-					}, r.a.createElement(X.a, {
+					}, r.a.createElement(J.a, {
 						name: "ban",
 						className: te.a.icon
 					}), se._("Ban User", null, {
@@ -1596,7 +1596,7 @@
 						onClick: () => {
 							d(), i(B.d(t))
 						}
-					}, r.a.createElement(X.a, {
+					}, r.a.createElement(J.a, {
 						name: "mod_mute",
 						className: te.a.icon
 					}), se._("Mute User", null, {
@@ -1642,7 +1642,7 @@
 					onClick: () => {
 						e.onToggleUserFlairModal(), e.sendEvent(B.c(e.contextId))
 					}
-				}, r.a.createElement(X.a, {
+				}, r.a.createElement(J.a, {
 					name: "tag",
 					className: te.a.icon
 				}), ae._("Edit user flair", null, {
@@ -3650,8 +3650,8 @@
 				return t
 			}
 			const Z = 10,
-				X = .9,
 				J = .9,
+				X = .9,
 				$ = 1.8,
 				ee = 5,
 				te = 1500,
@@ -3814,8 +3814,8 @@
 							if (clearTimeout(this.resetCanFocusTimer), this.cancelPopulateRenderableChildrenWhenIdle(), Object(_.b)() || !this.scrollContainer) return void(this.pendingScollHandlerRead = null);
 							this.updateScrollMetrics();
 							const e = this.getAveragePixelsPerMilliSecond(),
-								t = e < X,
-								s = e < J,
+								t = e < J,
+								s = e < X,
 								n = e < $;
 							if (this.scrollContainer && !this.loadMoreFired && this.props.onLoadMore) {
 								let e = !1;
@@ -4226,7 +4226,7 @@
 				})())))
 			};
 			h.defaultProps = {
-				minimizedLength: d.Xb
+				minimizedLength: d.Yb
 			}, t.a = h
 		},
 		"./src/reddit/components/SidebarFooter/index.m.less": function(e, t, s) {
@@ -4342,7 +4342,7 @@
 				const t = Object(o.f)().getState(),
 					s = Object(f.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === m.od.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.od.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.od.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === m.pd.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.pd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.pd.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(j, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -6547,4 +6547,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.0072c6cf137f73d13895.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.10a270a39bf41945834c.js.map

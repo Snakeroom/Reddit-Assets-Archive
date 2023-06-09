@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.1c795854b3c746cf116b.js
-// Retrieved at 6/8/2023, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.0835f89659a0789cb45b.js
+// Retrieved at 6/8/2023, 8:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1215,7 +1215,7 @@
 								}
 								u.width = s.width, u.height = s.height
 							} else if (c.startsWith("video/")) {
-								if (e.size > r.kb) return I(r.uc);
+								if (e.size > r.kb) return I(r.vc);
 								let t;
 								try {
 									t = await Object(g.j)(l, !0)
@@ -1488,7 +1488,7 @@
 						if (!f) return
 					}
 					const _ = Object(m.q)(d, {
-							field: o.Bb.TITLE
+							field: o.Cb.TITLE
 						}),
 						g = Object(m.n)(d),
 						x = Object(m.lb)(d),
@@ -1938,8 +1938,8 @@
 				H = n("./src/lib/classNames/index.ts"),
 				q = n("./src/reddit/constants/keycodes.ts"),
 				G = n("./src/reddit/components/CommentCreation/getCancelModalId.ts"),
-				V = n("./src/realtime/GQLSubscription/async.tsx"),
-				K = n("./src/reddit/components/UsersCountIndicator/constants.ts"),
+				K = n("./src/realtime/GQLSubscription/async.tsx"),
+				V = n("./src/reddit/components/UsersCountIndicator/constants.ts"),
 				X = n("./src/reddit/constants/componentSizes.ts"),
 				Z = n("./src/reddit/constants/componentTestIds.ts"),
 				J = n("./src/reddit/selectors/activeModalId.ts"),
@@ -1984,7 +1984,7 @@
 						this.props.onCancel(), this.onBlur()
 					}, this.setUserStoppedTyping = r()(() => this.setState({
 						isUserTyping: !1
-					}), K.c), this.detectBreakout = () => {
+					}), V.c), this.detectBreakout = () => {
 						if (!this.wrapperEl || !this.wrapperEl.parentElement || this.props.isTopLevelComment) return;
 						const e = this.wrapperEl.parentElement.getBoundingClientRect().width < X.c,
 							t = this.getWrapperHeight();
@@ -2149,7 +2149,7 @@
 						style: {
 							height: z ? A : void 0
 						}
-					}, T && P && c.a.createElement(V.a, {
+					}, T && P && c.a.createElement(K.a, {
 						variables: this.realtimeGQLVariables,
 						onData: a.a,
 						queryKey: "userIsTypingOnPost"
@@ -2528,8 +2528,8 @@
 					onClick: n
 				})
 			}
-			var V = n("./src/reddit/selectors/comments.ts"),
-				K = n("./src/reddit/selectors/experiments/mediaInComments.ts"),
+			var K = n("./src/reddit/selectors/comments.ts"),
+				V = n("./src/reddit/selectors/experiments/mediaInComments.ts"),
 				X = n("./src/lib/constants/index.ts");
 
 			function Z(e) {
@@ -2545,7 +2545,7 @@
 				$ = n.n(Y),
 				ee = n("./src/reddit/components/RichTextEditor/Toolbar/MediaInputButton/index.tsx");
 			const te = p.a.div("SectionSpacer", $.a),
-				ne = Object(d.a)(K.b, V.C, P.c, S.d.spGiphy, (e, t, n, o) => e ? !!t || !!o : n);
+				ne = Object(d.a)(V.b, K.C, P.c, S.d.spGiphy, (e, t, n, o) => e ? !!t || !!o : n);
 
 			function oe(e) {
 				const {
@@ -2702,7 +2702,7 @@
 							id: n.id
 						} : void 0
 					},
-					draft: V.i,
+					draft: K.i,
 					isCommentBeforeSignUpEnabled: we.a,
 					isLoggedIn: je.S,
 					isLoginModalOpened: Object(Ce.c)(ae.a.LOGIN_MODAL_ID),
@@ -2982,8 +2982,8 @@
 				He = n("./src/reddit/components/RequestPendingBanner/index.tsx"),
 				qe = n("./src/reddit/models/User/index.ts"),
 				Ge = n("./src/reddit/selectors/experiments/commentBox.ts"),
-				Ve = n("./src/reddit/selectors/posts.ts");
-			const Ke = Object(xe.v)(),
+				Ke = n("./src/reddit/selectors/posts.ts");
+			const Ve = Object(xe.v)(),
 				Xe = Object(d.c)({
 					activeModalId: ve.a,
 					contributorRequestPending: (e, t) => {
@@ -2995,17 +2995,17 @@
 					isCommentBoxDesignEnabled: Ge.a,
 					userName: e => e.user.account ? Object(qe.e)(e.user.account) : "",
 					pending: (e, t) => e.features.comments.submit.pending[t.draftKey],
-					hasError: V.v,
-					errorMsgs: V.M,
-					draft: V.i,
-					disableAutofocus: V.f,
+					hasError: K.v,
+					errorMsgs: K.M,
+					draft: K.i,
+					disableAutofocus: K.f,
 					showContributorRequestFlow: (e, t) => {
 						let {
 							pageLayer: n
 						} = t;
 						return Object(xe.gb)(e, n, f.e.Comment)
 					},
-					postAuthorIsBlocked: Ve.w
+					postAuthorIsBlocked: Ke.w
 				}),
 				Ze = Object(a.b)(Xe, (e, t) => ({
 					onMount: () => e(c.a(t.draftKey)),
@@ -3118,7 +3118,7 @@
 					return e.contributorRequestPending ? i.a.createElement(He.a, null) : e.showContributorRequestFlow ? i.a.createElement(y, null) : e.draft.commentMode === pe.i.RICH_TEXT ? i.a.createElement(Ue, n) : i.a.createElement(m.b, n)
 				}
 			}
-			t.default = Ke(Ze(Je))
+			t.default = Ve(Ze(Je))
 		},
 		"./src/reddit/components/ContributorRequestFlow/ContributorRequestButton/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -3752,8 +3752,8 @@
 				H = n("./src/reddit/selectors/postGuidance.ts"),
 				q = n("./src/reddit/components/PostGuidance/index.tsx");
 			const G = P.a.div("BottomRow", A.a),
-				V = P.a.div("FormContent", A.a),
-				K = P.a.wrapped(M.l, "SubmitButton", A.a),
+				K = P.a.div("FormContent", A.a),
+				V = P.a.wrapped(M.l, "SubmitButton", A.a),
 				X = P.a.wrapped(I.a, "LoadingIcon", A.a),
 				Z = Object(k.v)(),
 				J = Object(l.c)({
@@ -3930,7 +3930,7 @@
 						hk: "FsWrq"
 					}));
 					const S = !v.a.isAllMediaUploaded(E, m);
-					return a.a.createElement(a.a.Fragment, null, a.a.createElement(V, null, e === T.i.RICH_TEXT ? a.a.createElement(C.a, {
+					return a.a.createElement(a.a.Fragment, null, a.a.createElement(K, null, e === T.i.RICH_TEXT ? a.a.createElement(C.a, {
 						allowImageUploads: p,
 						allowVideoUploads: h,
 						className: Object(u.a)(A.a.Editor, {
@@ -3974,7 +3974,7 @@
 						onClick: this.cancelEdit
 					}, o.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), a.a.createElement(K, {
+					})), a.a.createElement(V, {
 						disabled: !!i || !!j.length || !this.hasChanged() || S || c,
 						onClick: this.onSubmit
 					}, i ? a.a.createElement(X, {
@@ -4620,20 +4620,20 @@
 			const i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.ue
-					}) === o.Vd
+						experimentName: o.ve
+					}) === o.Wd
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.ve
-					}) === o.Vd
+						experimentName: o.we
+					}) === o.Wd
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.fe
-					}) === o.Vd
+						experimentName: o.ge
+					}) === o.Wd
 				},
 				c = (e, t) => {
 					let {
@@ -4671,29 +4671,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.pg
-					}) === o.Vd
+						experimentName: o.qg
+					}) === o.Wd
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.qg
-					}) === o.Vd
+						experimentName: o.rg
+					}) === o.Wd
 				},
 				c = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.og
+						experimentName: o.pg
 					});
-					return t === o.hg.TypingIndicators || t === o.hg.IndicatorsPlusCTA
+					return t === o.ig.TypingIndicators || t === o.ig.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: o.og
+						experimentName: o.pg
 					});
-					return (null == t ? void 0 : t.variant) === o.hg.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.ig.IndicatorsPlusCTA
 				}
 		},
 		"./src/redditGQL/operations/PostGuidanceValidation.json": function(e) {
@@ -4701,4 +4701,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.1c795854b3c746cf116b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.0835f89659a0789cb45b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.597d53e938d18a398e0b.js
-// Retrieved at 6/8/2023, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.c82e6f96483d2c8a9e41.js
+// Retrieved at 6/8/2023, 8:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -1773,8 +1773,8 @@
 				z = n.n(Q);
 			const J = c.a.wrapped(h.a, "blockUserHolder", z.a),
 				Y = c.a.wrapped(W.a, "BlockUserIcon", z.a),
-				V = c.a.div("BlockUserHeader", z.a),
-				X = c.a.div("OptionHolder", z.a),
+				X = c.a.div("BlockUserHeader", z.a),
+				V = c.a.div("OptionHolder", z.a),
 				Z = c.a.div("OptionHeader", z.a),
 				$ = c.a.div("OptionDescription", z.a),
 				ee = c.a.a("Link", z.a),
@@ -1805,7 +1805,7 @@
 						}) : o.fbt._("Block {username}", [o.fbt._param("username", e)], {
 							hk: "ohbdA"
 						})
-					}, this.renderAbuseOfReportButtonOption = () => s.a.createElement(X, null, s.a.createElement(Z, null, o.fbt._("Turn off free-form reports", null, {
+					}, this.renderAbuseOfReportButtonOption = () => s.a.createElement(V, null, s.a.createElement(Z, null, o.fbt._("Turn off free-form reports", null, {
 						hk: "2yXM3i"
 					})), s.a.createElement($, null, o.fbt._("If you are a moderator, you can {=visit the Help Center} to learn how to modify your subreddit’s reporting settings to disallow users from submitting free-form reports. We also have automated processes in place to prevent excessive reporting.", [o.fbt._param("=visit the Help Center", s.a.createElement(ee, {
 						target: "_blank",
@@ -1820,7 +1820,7 @@
 						} = this, t = this.getBlockUserHeaderText();
 						return s.a.createElement(J, {
 							onClick: () => this.onBlockAuthor(e.authorName)
-						}, s.a.createElement(Y, null), s.a.createElement("div", null, s.a.createElement(V, null, t), s.a.createElement($, null, o.fbt._("You won't see posts or comments from {username}. You can change this later in your preference.", [o.fbt._param("username", e.authorName)], {
+						}, s.a.createElement(Y, null), s.a.createElement("div", null, s.a.createElement(X, null, t), s.a.createElement($, null, o.fbt._("You won't see posts or comments from {username}. You can change this later in your preference.", [o.fbt._param("username", e.authorName)], {
 							hk: "2iUUlN"
 						}))))
 					}
@@ -2143,7 +2143,7 @@
 				ze = n.n(Qe);
 			const Je = c.a.div("CloseWrapper", ze.a),
 				Ye = c.a.wrapped(Le.a, "Close", ze.a),
-				Ve = Object(i.c)({
+				Xe = Object(i.c)({
 					comment: (e, t) => {
 						let {
 							commentId: n
@@ -2176,7 +2176,7 @@
 					userIsMod: e => e.features.reportFlow.userIsMod,
 					crisisFlowEnabled: qe.a
 				});
-			class Xe extends s.a.Component {
+			class Ve extends s.a.Component {
 				constructor(e) {
 					super(e), this.handleEscapeKey = e => {
 						if (27 === e.keyCode) return this.handleReportFlowClose()
@@ -2318,7 +2318,7 @@
 					}, this.getContent())
 				}
 			}
-			const Ze = Object(a.b)(Ve, (e, t) => {
+			const Ze = Object(a.b)(Xe, (e, t) => {
 				let {
 					timestamp: n
 				} = t;
@@ -2334,7 +2334,7 @@
 						}, r))
 					}
 				}
-			})(Xe);
+			})(Ve);
 			t.default = Object(l.a)(Ze)
 		},
 		"./src/reddit/components/ReportFlow/_ReportFlowNew.tsx": function(e, t, n) {
@@ -4157,10 +4157,10 @@
 				r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const a = Object(o.a)(e => Object(s.c)(e, {
-					experimentName: r.Pc,
+					experimentName: r.Qc,
 					experimentEligibilitySelector: s.a
 				}), e => e),
-				i = Object(o.a)(a, e => e === r.Vd)
+				i = Object(o.a)(a, e => e === r.Wd)
 		},
 		"./src/redditGQL/operations/CreateLiveAudioRoomOnProfile.json": function(e) {
 			e.exports = JSON.parse('{"id":"e35a47c6aa21"}')
@@ -4203,4 +4203,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.597d53e938d18a398e0b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.c82e6f96483d2c8a9e41.js.map

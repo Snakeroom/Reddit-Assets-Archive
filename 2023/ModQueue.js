@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.c87858c561c2d1e334df.js
-// Retrieved at 6/7/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.3d46b6373de385f8bf68.js
+// Retrieved at 6/8/2023, 8:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, o) {
@@ -192,7 +192,7 @@
 						commentId: e
 					});
 					if (!u) return;
-					const l = o === r.jc.Snoozed,
+					const l = o === r.kc.Snoozed,
 						O = {
 							itemId: e,
 							reportText: t,
@@ -334,7 +334,7 @@
 				s.sort === v.a.OldestFirst ? u.last = 25 : u.first = 25;
 				const l = s.subreddit ? [s.subreddit] : [],
 					m = (null == a ? void 0 : a.platform) && (null === (r = null == a ? void 0 : a.platform) || void 0 === r ? void 0 : r.currentPage),
-					b = (null === (d = null == m ? void 0 : m.meta) || void 0 === d ? void 0 : d.name) === n.Sb.MODQUEUE_PAGES;
+					b = (null === (d = null == m ? void 0 : m.meta) || void 0 === d ? void 0 : d.name) === n.Tb.MODQUEUE_PAGES;
 				return {
 					queueType: x[o],
 					moderatedAfter: s.moderatedAfter,
@@ -603,8 +603,8 @@
 			}
 			var L = o("./src/reddit/models/ModQueue/index.ts"),
 				D = o("./src/reddit/models/Toast/index.ts"),
-				F = o("./src/reddit/selectors/experiments/devPlatform.ts"),
-				T = o("./src/reddit/selectors/modQueue.ts"),
+				T = o("./src/reddit/selectors/experiments/devPlatform.ts"),
+				F = o("./src/reddit/selectors/modQueue.ts"),
 				Q = o("./src/reddit/selectors/subreddit.ts"),
 				q = o("./src/reddit/selectors/telemetry.ts"),
 				B = o("./src/telemetry/index.ts"),
@@ -744,7 +744,7 @@
 						gqlContext: p
 					} = a;
 					var f;
-					const O = Object(F.a)(d());
+					const O = Object(T.a)(d());
 					let v, j, h;
 					switch (t) {
 						case n.wb.Edited:
@@ -788,7 +788,7 @@
 						users: S,
 						...y
 					} = N(_.body.data), R = d(), A = u.e[Object(l.V)(R, {})] === u.d.Card;
-					Object(T.b)(R, A) && r(ee(S)), r(h({
+					Object(F.b)(R, A) && r(ee(S)), r(h({
 						listingKey: e,
 						page: `${o.page||L.b}`,
 						response: y
@@ -798,7 +798,7 @@
 						gqlContext: d
 					} = n;
 					const a = o(),
-						i = Object(r.e)(e => Object(F.a)(e)),
+						i = Object(r.e)(e => Object(T.a)(e)),
 						u = a.pages.modHub.modQueue.moderatedCommunitiesOrder.after,
 						l = a.pages.modHub.modQueue.moderatedCommunitiesOrder.pending,
 						b = a.pages.modHub.modQueue.moderatedCommunitiesOrder.loaded,
@@ -829,7 +829,7 @@
 					} = d;
 					r(Object(a.c)());
 					const l = n(),
-						b = Object(T.i)(l),
+						b = Object(F.i)(l),
 						O = l.user.account && l.user.account.displayText;
 					Object(p.d)(p.a.ModQueue);
 					const v = Object(p.c)(p.a.ModQueue);
@@ -1312,12 +1312,12 @@
 				N = o("./src/reddit/actions/post.ts"),
 				L = o("./src/reddit/actions/toaster.ts"),
 				D = o("./src/reddit/constants/modals.ts"),
-				F = o("./src/lib/makeApiRequest/index.ts"),
-				T = o("./src/lib/omitHeaders/index.ts"),
+				T = o("./src/lib/makeApiRequest/index.ts"),
+				F = o("./src/lib/omitHeaders/index.ts"),
 				Q = o("./src/reddit/constants/headers.ts"),
 				q = o("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
 				B = o("./src/reddit/models/RichTextJson/addRTJParam.ts");
-			const U = (e, t) => Object(F.a)(Object(T.a)(e, [Q.a]), {
+			const U = (e, t) => Object(T.a)(Object(F.a)(e, [Q.a]), {
 					endpoint: Object(q.a)(`${e.apiUrl}/api/v1/modactions/removal_reasons/`),
 					method: A.ob.POST,
 					type: "json",
@@ -1327,7 +1327,7 @@
 						mod_note: t.modNote
 					}
 				}),
-				V = (e, t, o) => Object(F.a)(Object(T.a)(e, [Q.a]), {
+				V = (e, t, o) => Object(T.a)(Object(F.a)(e, [Q.a]), {
 					endpoint: Object(q.a)(Object(B.a)(`${e.apiUrl}/api/v1/modactions/removal_${o}_message/`)),
 					method: A.ob.POST,
 					type: "json",
@@ -1356,7 +1356,7 @@
 					} = s;
 					const n = o().subreddits.models[e].name;
 					t(X());
-					const d = await ((e, t) => Object(F.a)(Object(T.a)(e, [Q.a]), {
+					const d = await ((e, t) => Object(T.a)(Object(F.a)(e, [Q.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons.json`,
 						method: A.ob.GET
 					}))(r(), n);
@@ -1370,7 +1370,7 @@
 					} = n;
 					const a = r().subreddits.models[e].name;
 					o(se());
-					const i = await ((e, t, o) => Object(F.a)(Object(T.a)(e, [Q.a]), {
+					const i = await ((e, t, o) => Object(T.a)(Object(F.a)(e, [Q.a]), {
 						endpoint: Object(q.a)(`${e.apiUrl}/api/v1/${t}/removal_reasons`),
 						method: A.ob.POST,
 						data: o
@@ -1398,7 +1398,7 @@
 					} = n;
 					const a = r().subreddits.models[e].name;
 					o(ae());
-					const i = await ((e, t, o) => Object(F.a)(Object(T.a)(e, [Q.a]), {
+					const i = await ((e, t, o) => Object(T.a)(Object(F.a)(e, [Q.a]), {
 						endpoint: Object(q.a)(`${e.apiUrl}/api/v1/${t}/removal_reasons/${o.id}`),
 						method: A.ob.PUT,
 						data: {
@@ -1421,7 +1421,7 @@
 					} = n;
 					const a = r().subreddits.models[e].name;
 					o(le());
-					const i = await ((e, t, o) => Object(F.a)(Object(T.a)(e, [Q.a]), {
+					const i = await ((e, t, o) => Object(T.a)(Object(F.a)(e, [Q.a]), {
 						endpoint: Object(q.a)(`${e.apiUrl}/api/v1/${t}/removal_reasons/${o}`),
 						method: A.ob.DELETE
 					}))(d(), a, t);
@@ -1918,13 +1918,13 @@
 				v = e => {
 					var t;
 					const o = e.platform && e.platform.currentPage;
-					return (null === (t = null == o ? void 0 : o.meta) || void 0 === t ? void 0 : t.name) === s.Sb.MODQUEUE_PAGES
+					return (null === (t = null == o ? void 0 : o.meta) || void 0 === t ? void 0 : t.name) === s.Tb.MODQUEUE_PAGES
 				},
 				j = (e, t) => (e => {
 					const t = e.platform && e.platform.currentPage;
-					return t && t.meta && (t.meta.name === s.Sb.MODERATION_PAGES || t.meta.name === s.Sb.MODQUEUE_PAGES)
+					return t && t.meta && (t.meta.name === s.Tb.MODERATION_PAGES || t.meta.name === s.Tb.MODQUEUE_PAGES)
 				})(e) && t || !1
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.c87858c561c2d1e334df.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.3d46b6373de385f8bf68.js.map

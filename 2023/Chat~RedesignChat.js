@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.de7d4ca38b28f2ea9fd0.js
-// Retrieved at 6/7/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.a7c646a009194970c7e5.js
+// Retrieved at 6/8/2023, 8:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -1686,7 +1686,7 @@
 							subredditsNames: [],
 							userPostsIds: []
 						},
-						u = e => e.startsWith(d.Nb.Comment) || e.startsWith(d.Nb.Post);
+						u = e => e.startsWith(d.Ob.Comment) || e.startsWith(d.Ob.Post);
 					for (const o in e) {
 						const t = s()(e[o].reduce((e, t) => t && (u(t) || "subreddit" === o) && e.push(t) && e || e, []));
 						switch (o) {
@@ -5460,7 +5460,7 @@
 					super(e), t = this, this.fetchedFilter = "", this.isMount = !1, this.fetchSubredditChannelUsers = K()((function() {
 						let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "";
 						t.props.fetchSubredditChannelUsers(e)
-					}), Re.Wb, {
+					}), Re.Xb, {
 						leading: !0,
 						trailing: !1
 					}), this.onArrowUpListener = e => {
@@ -7160,7 +7160,7 @@
 					}, ((e, t) => {
 						const n = (new Date).getTime(),
 							a = Math.round(Math.abs((e - n) / Re.D)),
-							s = Math.round(Math.abs((e - n) / Re.xc));
+							s = Math.round(Math.abs((e - n) / Re.yc));
 						let c = "";
 						const r = `${a}${je.fbt._("d",null,{hk:"1d5Wxl"})}`,
 							o = `${s}${je.fbt._("y",null,{hk:"3DaEfY"})}`;
@@ -13289,7 +13289,7 @@
 							const t = e.getState();
 							e.dispatch(Object(d.sizeChanged)(h.a.EMBED));
 							const a = t.platform.currentPage;
-							a && a.meta && a.meta.name === o.Sb.CHAT_MINIMIZE && e.dispatch(Object(l.P)());
+							a && a.meta && a.meta.name === o.Tb.CHAT_MINIMIZE && e.dispatch(Object(l.P)());
 							const {
 								action: s,
 								noun: c,
@@ -13416,7 +13416,7 @@
 			const j = (e, t) => {
 				const n = t && t.type === o.SIZE_CHANGED ? t.payload : e.container.size,
 					a = n === b.a.MINIMIZED || n === b.a.HIDDEN,
-					s = t && t.type === l.a ? t.payload && t.payload.routeMatch && t.payload.routeMatch.route.meta.name === c.Sb.CHAT_MINIMIZE : e.platform.currentPage && e.platform.currentPage.meta && e.platform.currentPage.meta.name === c.Sb.CHAT_MINIMIZE;
+					s = t && t.type === l.a ? t.payload && t.payload.routeMatch && t.payload.routeMatch.route.meta.name === c.Tb.CHAT_MINIMIZE : e.platform.currentPage && e.platform.currentPage.meta && e.platform.currentPage.meta.name === c.Tb.CHAT_MINIMIZE;
 				return !a && s
 			};
 			t.a = e => {
@@ -13438,7 +13438,7 @@
 					})(a) : s()(() => e.dispatch(Object(d.k)()))
 				};
 				let a;
-				Object(O.a)(e.getState()) === c.Sb.CHAT_MINIMIZE ? s()(async () => {
+				Object(O.a)(e.getState()) === c.Tb.CHAT_MINIMIZE ? s()(async () => {
 					j(e.getState()) ? n() : (await e.dispatch(Object(d.k)(!1)), e.getState().sendbird.session.token && await e.dispatch(Object(i.c)()))
 				}) : n();
 				return i => f => {
@@ -13705,7 +13705,7 @@
 			let l, d;
 			const u = s()(e => {
 				Object(o.d)(l, e, 5 * i.pb)
-			}, 5 * i.Wb, {
+			}, 5 * i.Xb, {
 				leading: !1,
 				trailing: !0
 			});
@@ -14170,7 +14170,7 @@
 						className: n,
 						style: u
 					});
-					const h = (e => e.replace(l.Nb.Account + "_", ""))(i),
+					const h = (e => e.replace(l.Ob.Account + "_", ""))(i),
 						{
 							avatar: p,
 							color: f
@@ -14777,7 +14777,7 @@
 
 			function r(e) {
 				if (e.contact_account_id || e.id) return {
-					id: e.contact_account_id || `${a.Nb.Account}_${e.id}`,
+					id: e.contact_account_id || `${a.Ob.Account}_${e.id}`,
 					name: e.name,
 					created: 1e3 * e.created_utc,
 					profileImg: e.profile_img,
@@ -14794,7 +14794,7 @@
 					isNSFW: !1
 				},
 				i = e => ({
-					created: e.date * a.Wb,
+					created: e.date * a.Xb,
 					id: e.id,
 					name: e.name,
 					profileImg: e.icon_img
@@ -15592,7 +15592,7 @@
 			}));
 			var a = n("./src/lib/constants/index.ts"),
 				s = n("./src/lib/convertToCamelCase/index.ts");
-			const c = `${a.Nb.Account}_`,
+			const c = `${a.Ob.Account}_`,
 				r = e => {
 					if (null == e ? void 0 : e.length) return e.reduce((e, t) => {
 						const n = function(e) {
@@ -17931,7 +17931,7 @@
 					component: o,
 					exact: !0,
 					meta: {
-						name: s.Sb.CHAT
+						name: s.Tb.CHAT
 					},
 					path: ["/chat", "/chat/"]
 				},
@@ -17962,7 +17962,7 @@
 					component: l,
 					exact: !0,
 					meta: {
-						name: s.Sb.CHAT_EMPTY
+						name: s.Tb.CHAT_EMPTY
 					},
 					path: "/chat/empty/"
 				},
@@ -17993,7 +17993,7 @@
 					component: u,
 					exact: !0,
 					meta: {
-						name: s.Sb.CHAT_MINIMIZE
+						name: s.Tb.CHAT_MINIMIZE
 					},
 					path: "/chat/minimize/"
 				},
@@ -18004,7 +18004,7 @@
 					component: o,
 					exact: !0,
 					meta: {
-						name: s.Sb.CHAT
+						name: s.Tb.CHAT
 					},
 					path: m
 				},
@@ -18014,7 +18014,7 @@
 					component: o,
 					exact: !0,
 					meta: {
-						name: s.Sb.CHAT
+						name: s.Tb.CHAT
 					},
 					path: "/chat/livechat/:postId/"
 				},
@@ -18025,7 +18025,7 @@
 					component: o,
 					exact: !0,
 					meta: {
-						name: s.Sb.CHAT
+						name: s.Tb.CHAT
 					},
 					path: f
 				},
@@ -18035,7 +18035,7 @@
 					component: o,
 					exact: !0,
 					meta: {
-						name: s.Sb.CHAT
+						name: s.Tb.CHAT
 					},
 					path: ["/chat/share"]
 				};
@@ -18049,7 +18049,7 @@
 				chunk: a.t.CHAT,
 				exact: !0,
 				meta: {
-					name: a.Sb.CHAT
+					name: a.Tb.CHAT
 				},
 				path: "/chat(.*)"
 			};
@@ -18449,7 +18449,7 @@
 					e.onReconnectSucceeded = () => {
 						this.dispatch(Object(I.h)(t)), this.dispatch(Object(x.g)({
 							toast: T.a.ConnectionOpen
-						})), Object(d.setTimeout)(() => this.dispatch(Object(x.d)()), 3 * u.Wb);
+						})), Object(d.setTimeout)(() => this.dispatch(Object(x.d)()), 3 * u.Xb);
 						this.dispatch(Object(E.v)(!0)), this.dispatch(Object(m.D)())
 					}, this.self.addConnectionHandler("RECONNECT_SUCCEEDED", e), this.connectionUniqueHandlerID.push("RECONNECT_SUCCEEDED")
 				}
@@ -20062,4 +20062,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.de7d4ca38b28f2ea9fd0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.a7c646a009194970c7e5.js.map

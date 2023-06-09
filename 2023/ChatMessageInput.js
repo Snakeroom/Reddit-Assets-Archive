@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.2755fc5aa932c5c5f1ae.js
-// Retrieved at 6/8/2023, 12:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.fb39afb607d38fe25085.js
+// Retrieved at 6/8/2023, 8:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, s) {},
@@ -321,7 +321,7 @@
 		"./src/reddit/actions/postCreation/mediaUpload.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "f", (function() {
-				return A
+				return N
 			})), s.d(t, "b", (function() {
 				return P
 			})), s.d(t, "a", (function() {
@@ -368,8 +368,8 @@
 				L = s("./src/reddit/actions/postCreation/general.ts");
 			const w = Object(i.a)(S.u),
 				D = Object(i.a)(S.v),
-				N = Object(i.a)(S.t),
-				A = e => async (t, s) => {
+				A = Object(i.a)(S.t),
+				N = e => async (t, s) => {
 					t(w());
 					const n = e.map(e => {
 						let {
@@ -387,7 +387,7 @@
 							} = e;
 							return o[t]
 						}).find(e => e.status !== g.a.SUCCESS);
-					t(a ? N(a.error) : D())
+					t(a ? A(a.error) : D())
 				}, k = (e, t) => ({
 					error: t ? {
 						type: e,
@@ -404,9 +404,9 @@
 				R = (e, t, s, o, r, i, l, O) => async (S, L, w) => {
 					let {
 						apiContext: D,
-						gqlContext: N
+						gqlContext: A
 					} = w;
-					const A = Object(I.h)(L()),
+					const N = Object(I.h)(L()),
 						P = Date.now();
 					let U = null,
 						R = !1,
@@ -529,7 +529,7 @@
 								}
 								u.width = o.width, u.height = o.height
 							} else if (c.startsWith("video/")) {
-								if (e.size > a.kb) return k(a.uc);
+								if (e.size > a.kb) return k(a.vc);
 								let t;
 								try {
 									t = await Object(C.j)(l, !0)
@@ -589,7 +589,7 @@
 							return {
 								metadata: u
 							}
-						}(e, s, o, A, O);
+						}(e, s, o, N, O);
 						if (E || !I) return {
 							error: E
 						};
@@ -612,7 +612,7 @@
 											}
 										}
 									})
-								})(N(), t);
+								})(A(), t);
 								if (e.ok) {
 									const t = e.body,
 										s = (null === (g = t.data.createMediaUploadLease) || void 0 === g ? void 0 : g.uploadLease.uploadLeaseUrl) || "",
@@ -945,7 +945,7 @@
 					} = e;
 					const {
 						processingAvatarImageUrl: n
-					} = d.a, a = (e => e.replace(u.Nb.Account + "_", ""))(s), {
+					} = d.a, a = (e => e.replace(u.Ob.Account + "_", ""))(s), {
 						avatar: r,
 						color: i
 					} = (e => {
@@ -1287,8 +1287,8 @@
 				L = s("./src/reddit/models/Post/index.ts"),
 				w = s("./src/reddit/models/PostCreationForm/index.ts"),
 				D = s("./src/reddit/selectors/chatPost.ts"),
-				N = s("./src/reddit/selectors/comments.ts"),
-				A = s("./src/reddit/selectors/posts.ts"),
+				A = s("./src/reddit/selectors/comments.ts"),
+				N = s("./src/reddit/selectors/posts.ts"),
 				k = s("./src/reddit/selectors/user.ts"),
 				P = s("./src/lib/constants/index.ts"),
 				U = s("./src/lib/makeGqlRequest/index.ts"),
@@ -1305,16 +1305,16 @@
 				G = 15e3,
 				z = Object(H.v)(),
 				Z = Object(d.b)(() => Object(c.c)({
-					draft: N.i,
-					errorMsgs: N.M,
-					errorType: N.N,
-					hasError: N.v,
+					draft: A.i,
+					errorMsgs: A.M,
+					errorType: A.N,
+					hasError: A.v,
 					isChatPost: D.d,
 					pending: (e, t) => e.features.comments.submit.pending[t.draftKey],
-					post: A.F,
+					post: N.F,
 					isLiveChatInChatTabEnabled: W.c,
 					currentUserId: k.k,
-					isTalkPost: Object(c.a)(A.F, e => Object(L.x)(e)),
+					isTalkPost: Object(c.a)(N.F, e => Object(L.x)(e)),
 					isLiveChatThreadingEnabled: W.e
 				}), (e, t) => {
 					let {
@@ -1898,4 +1898,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.2755fc5aa932c5c5f1ae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.fb39afb607d38fe25085.js.map

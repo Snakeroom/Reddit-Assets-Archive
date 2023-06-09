@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.7cdf9ade577b7b56bfca.js
-// Retrieved at 6/8/2023, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.8407abeddf431ee6ee8d.js
+// Retrieved at 6/8/2023, 8:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./node_modules/lodash/map.js": function(e, t, s) {
@@ -455,7 +455,7 @@
 				return e.all_awardings && (t.allAwardings = Object(r.a)(e.all_awardings)), e.awarders && (t.awarders = e.awarders), e.associated_award && (t.associatedAwardId = e.associated_award.id, t.associatedAward = Object(r.b)(e.associated_award)), t
 			};
 			const c = e => "string" == typeof e ? JSON.parse(e) : e,
-				l = e => e.author !== o.G ? null : e.body === o.H ? d.c.User : e.body === o.Qb ? d.c.Moderator : null
+				l = e => e.author !== o.G ? null : e.body === o.H ? d.c.User : e.body === o.Rb ? d.c.Moderator : null
 		},
 		"./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts": function(e, t, s) {
 			"use strict";
@@ -516,11 +516,11 @@
 				experimentEligibilitySelector: n.a,
 				experimentName: o.zb
 			}), e => ({
-				bucketed: e === o.dd.ExpandedSearch || e === o.dd.CollapsedSearch,
-				collapsed: e === o.dd.CollapsedSearch,
-				expanded: e === o.dd.ExpandedSearch
+				bucketed: e === o.ed.ExpandedSearch || e === o.ed.CollapsedSearch,
+				collapsed: e === o.ed.CollapsedSearch,
+				expanded: e === o.ed.ExpandedSearch
 			}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.7cdf9ade577b7b56bfca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.8407abeddf431ee6ee8d.js.map

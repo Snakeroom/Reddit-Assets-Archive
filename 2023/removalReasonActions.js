@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.cb58c1aa0436873e304b.js
-// Retrieved at 6/8/2023, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.7270d9cf6819ac01fae3.js
+// Retrieved at 6/8/2023, 8:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./node_modules/lodash/map.js": function(e, t, s) {
@@ -201,7 +201,7 @@
 						commentId: e
 					});
 					if (!l) return;
-					const m = s === n.jc.Snoozed,
+					const m = s === n.kc.Snoozed,
 						_ = {
 							itemId: e,
 							reportText: t,
@@ -970,7 +970,7 @@
 				return e.all_awardings && (t.allAwardings = Object(r.a)(e.all_awardings)), e.awarders && (t.awarders = e.awarders), e.associated_award && (t.associatedAwardId = e.associated_award.id, t.associatedAward = Object(r.b)(e.associated_award)), t
 			};
 			const c = e => "string" == typeof e ? JSON.parse(e) : e,
-				l = e => e.author !== o.G ? null : e.body === o.H ? i.c.User : e.body === o.Qb ? i.c.Moderator : null
+				l = e => e.author !== o.G ? null : e.body === o.H ? i.c.User : e.body === o.Rb ? i.c.Moderator : null
 		},
 		"./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts": function(e, t, s) {
 			"use strict";
@@ -1073,11 +1073,11 @@
 				experimentEligibilitySelector: n.a,
 				experimentName: o.zb
 			}), e => ({
-				bucketed: e === o.dd.ExpandedSearch || e === o.dd.CollapsedSearch,
-				collapsed: e === o.dd.CollapsedSearch,
-				expanded: e === o.dd.ExpandedSearch
+				bucketed: e === o.ed.ExpandedSearch || e === o.ed.CollapsedSearch,
+				collapsed: e === o.ed.CollapsedSearch,
+				expanded: e === o.ed.ExpandedSearch
 			}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.cb58c1aa0436873e304b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.7270d9cf6819ac01fae3.js.map

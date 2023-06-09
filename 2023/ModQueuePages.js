@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.07efdbf1817413889ea2.js
-// Retrieved at 6/8/2023, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.6516075deba2cac8a8b2.js
+// Retrieved at 6/8/2023, 8:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -971,7 +971,7 @@
 						commentId: e
 					});
 					if (!l) return;
-					const m = n === s.jc.Snoozed,
+					const m = n === s.kc.Snoozed,
 						f = {
 							itemId: e,
 							reportText: t,
@@ -1113,7 +1113,7 @@
 				o.sort === v.a.OldestFirst ? l.last = 25 : l.first = 25;
 				const m = o.subreddit ? [o.subreddit] : [],
 					u = (null == i ? void 0 : i.platform) && (null === (s = null == i ? void 0 : i.platform) || void 0 === s ? void 0 : s.currentPage),
-					p = (null === (a = null == u ? void 0 : u.meta) || void 0 === a ? void 0 : a.name) === r.Sb.MODQUEUE_PAGES;
+					p = (null === (a = null == u ? void 0 : u.meta) || void 0 === a ? void 0 : a.name) === r.Tb.MODQUEUE_PAGES;
 				return {
 					queueType: B[n],
 					moderatedAfter: o.moderatedAfter,
@@ -4514,7 +4514,7 @@
 			const u = "hideBanEvasionCampaignUntil";
 
 			function p() {
-				return Object(i.a)(r.vb) === r.Vd
+				return Object(i.a)(r.vb) === r.Wd
 			}
 
 			function A() {
@@ -5426,7 +5426,7 @@
 					postTypeFilter: e.postTypeFilter,
 					postSort: e.postSort,
 					sendEventWithName: e.sendEventWithName,
-					showTypeFilter: e.pageName !== m.lc.Unmoderated,
+					showTypeFilter: e.pageName !== m.mc.Unmoderated,
 					subredditName: e.subredditName
 				}), d.a.createElement(B.a, {
 					after: e.after,
@@ -5589,32 +5589,32 @@
 					className: n
 				}),
 				p = e => [{
-					pageName: i.lc.Modqueue,
-					displayName: () => Object(d.getModHubPageName)(i.lc.Modqueue),
+					pageName: i.mc.Modqueue,
+					displayName: () => Object(d.getModHubPageName)(i.mc.Modqueue),
 					href: `/r/${e}/about/modqueue`,
 					eventNoun: "mod-queue"
 				}, {
-					pageName: i.lc.Reports,
+					pageName: i.mc.Reports,
 					displayName: () => o.fbt._("Reported", null, {
 						hk: "2XagIZ"
 					}),
 					href: `/r/${e}/about/reports`,
 					eventNoun: "report-queue"
 				}, {
-					pageName: i.lc.Spam,
+					pageName: i.mc.Spam,
 					displayName: () => o.fbt._("Removed", null, {
 						hk: "1qrEsN"
 					}),
 					href: `/r/${e}/about/spam`,
 					eventNoun: "spam-queue"
 				}, {
-					pageName: i.lc.Edited,
-					displayName: () => Object(d.getModHubPageName)(i.lc.Edited),
+					pageName: i.mc.Edited,
+					displayName: () => Object(d.getModHubPageName)(i.mc.Edited),
 					href: `/r/${e}/about/edited`,
 					eventNoun: "edited-queue"
 				}, {
-					pageName: i.lc.Unmoderated,
-					displayName: () => Object(d.getModHubPageName)(i.lc.Unmoderated),
+					pageName: i.mc.Unmoderated,
+					displayName: () => Object(d.getModHubPageName)(i.mc.Unmoderated),
 					href: `/r/${e}/about/unmoderated`,
 					eventNoun: "unmoderated-queue"
 				}],
@@ -5626,35 +5626,35 @@
 					})
 				}),
 				b = e => [{
-					pageName: i.lc.Banned,
+					pageName: i.mc.Banned,
 					displayName: () => o.fbt._("Banned", null, {
 						hk: "4lYx7f"
 					}),
 					href: `/r/${e}/about/banned`,
 					eventNoun: "banned"
 				}, {
-					pageName: i.lc.Muted,
+					pageName: i.mc.Muted,
 					displayName: () => o.fbt._("Muted", null, {
 						hk: "4r3Lpj"
 					}),
 					href: `/r/${e}/about/muted`,
 					eventNoun: "muted"
 				}, {
-					pageName: i.lc.Contributors,
+					pageName: i.mc.Contributors,
 					displayName: () => o.fbt._("Approved", null, {
 						hk: "2sfe68"
 					}),
 					href: `/r/${e}/about/contributors`,
 					eventNoun: "approved"
 				}, {
-					pageName: i.lc.TalkHosts,
+					pageName: i.mc.TalkHosts,
 					displayName: () => o.fbt._("Talk Hosts", null, {
 						hk: "3da8wd"
 					}),
 					href: `/r/${e}/about/talkhosts`,
 					eventNoun: "talk-hosts"
 				}, {
-					pageName: i.lc.Moderators,
+					pageName: i.mc.Moderators,
 					displayName: () => o.fbt._("Moderators", null, {
 						hk: "Y1Jqo"
 					}),
@@ -5670,14 +5670,14 @@
 					className: n
 				}),
 				v = e => [{
-					pageName: i.lc.UserFlair,
+					pageName: i.mc.UserFlair,
 					displayName: () => o.fbt._("Setup", null, {
 						hk: "33R1cD"
 					}),
 					href: `/r/${e}/about/userflair`,
 					eventNoun: "user-flair-settings"
 				}, {
-					pageName: i.lc.Flair,
+					pageName: i.mc.Flair,
 					displayName: () => o.fbt._("Assign", null, {
 						hk: "23QqpZ"
 					}),
@@ -5692,14 +5692,14 @@
 					})
 				}),
 				h = e => [{
-					pageName: i.lc.SubredditRules,
+					pageName: i.mc.SubredditRules,
 					displayName: () => o.fbt._("Rules", null, {
 						hk: "1wh4CY"
 					}),
 					href: `/r/${e}/about/rules`,
 					eventNoun: "rules"
 				}, {
-					pageName: i.lc.Removal,
+					pageName: i.mc.Removal,
 					displayName: () => o.fbt._("Removal Reasons", null, {
 						hk: "3so7Dm"
 					}),
@@ -5715,28 +5715,28 @@
 					className: s
 				}),
 				C = e => [{
-					pageName: i.lc.Awards,
+					pageName: i.mc.Awards,
 					displayName: () => o.fbt._("Awards", null, {
 						hk: "21lDrE"
 					}),
 					href: `/r/${e}/about/awards`,
 					eventNoun: "awards"
 				}, {
-					pageName: i.lc.Emojis,
+					pageName: i.mc.Emojis,
 					displayName: () => o.fbt._("Emojis", null, {
 						hk: "4AReV1"
 					}),
 					href: `/r/${e}/about/emojis`,
 					eventNoun: "emojis"
 				}, {
-					pageName: i.lc.Badges,
+					pageName: i.mc.Badges,
 					displayName: () => o.fbt._("Badges", null, {
 						hk: "2OUEVf"
 					}),
 					href: `/r/${e}/about/badges`,
 					eventNoun: "badges"
 				}, {
-					pageName: i.lc.Emotes,
+					pageName: i.mc.Emotes,
 					displayName: () => o.fbt._("Emotes", null, {
 						hk: "26Tr2v"
 					}),
@@ -5744,14 +5744,14 @@
 					eventNoun: "emotes"
 				}],
 				E = e => [{
-					pageName: i.lc.Awards,
+					pageName: i.mc.Awards,
 					displayName: () => o.fbt._("Awards", null, {
 						hk: "21lDrE"
 					}),
 					href: `/r/${e}/about/awards`,
 					eventNoun: "awards"
 				}, {
-					pageName: i.lc.Emojis,
+					pageName: i.mc.Emojis,
 					displayName: () => o.fbt._("Emojis", null, {
 						hk: "4AReV1"
 					}),
@@ -6495,7 +6495,7 @@
 					let {
 						content: t
 					} = e;
-					const n = Object(O.a)(w.qe) === w.Vd,
+					const n = Object(O.a)(w.re) === w.Wd,
 						{
 							contentIds: m
 						} = h(),
@@ -6968,8 +6968,8 @@
 						...n
 					} = e;
 					const s = Object(te.a)(),
-						a = "string" == typeof t ? Object(ee.g)(t) / i.Wb : t,
-						d = new Date(a * i.Wb);
+						a = "string" == typeof t ? Object(ee.g)(t) / i.Xb : t,
+						d = new Date(a * i.Xb);
 					if (!$.a) return r.a.createElement(r.a.Fragment, null, d.toLocaleString());
 					const c = new Intl.DateTimeFormat(s, {
 							month: "short",
@@ -7845,7 +7845,7 @@
 			const U = e => Object(F.c)(e, {
 				experimentEligibilitySelector: H.S,
 				experimentName: L.fc
-			}) === L.Vd;
+			}) === L.Wd;
 			var z = n("./src/reddit/components/ModQueueList/SortByNumReportsTooltip.m.less"),
 				Y = n.n(z);
 			const G = e => {
@@ -9312,7 +9312,7 @@
 			class I extends s.a.Component {
 				constructor() {
 					super(...arguments), this.tooltipTarget = null, this.setTooltipTargetRef = e => this.tooltipTarget = e, this.onSnoozeButtonClick = () => {
-						const e = this.props.isSnoozed ? d.jc.None : d.jc.Snoozed;
+						const e = this.props.isSnoozed ? d.kc.None : d.kc.Snoozed;
 						this.props.toggleSnooze(e);
 						const t = Object(v.p)(Object(f.a)(this.props.reportedThingId), this.props.isSnoozed, this.props.reportedThingId, this.props.reason);
 						this.props.sendEvent(t)
@@ -11154,7 +11154,7 @@
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
 					experimentName: o.M
-				}) === o.Vd
+				}) === o.Wd
 			}
 		},
 		"./src/redditGQL/operations/DeleteSubredditMuteSettings.json": function(e) {
@@ -11186,4 +11186,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.07efdbf1817413889ea2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.6516075deba2cac8a8b2.js.map

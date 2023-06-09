@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.3255278f466ed34b61ab.js
-// Retrieved at 6/8/2023, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.a3236154644340ec83b6.js
+// Retrieved at 6/8/2023, 8:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~SubredditForkingCTA"], {
 		"./src/lib/asyncActions/index.ts": function(e, t, r) {
@@ -176,7 +176,7 @@
 			const h = Object(b.a)(e => Object(f.c)(e, {
 				experimentEligibilitySelector: m.S,
 				experimentName: p.bc
-			}), e => e === p.Vd);
+			}), e => e === p.Wd);
 			var O = r("./src/reddit/actions/toaster.ts");
 			const y = "SUBREDDIT_COUNTRY_SITE__LOADED",
 				_ = "SUBREDDIT_COUNTRY_SITE__CHANGED",
@@ -712,7 +712,7 @@
 								}
 								l.width = s.width, l.height = s.height
 							} else if (c.startsWith("video/")) {
-								if (e.size > i.kb) return R(i.uc);
+								if (e.size > i.kb) return R(i.vc);
 								let t;
 								try {
 									t = await Object(y.j)(u, !0)
@@ -1017,8 +1017,8 @@
 						r = Object(N.Z)(e),
 						s = Object(N.a)(e),
 						i = Object(N.lb)(e);
-					if (s === n.ac.POST) return f.a.getPendingThumbnailUploads(i, t);
-					if (s === n.ac.MEDIA && r && r.items.length) {
+					if (s === n.bc.POST) return f.a.getPendingThumbnailUploads(i, t);
+					if (s === n.bc.MEDIA && r && r.items.length) {
 						const {
 							video: e
 						} = r.items[0];
@@ -1040,7 +1040,7 @@
 					const l = Object(N.a)(o),
 						b = E.d.rteVideoPoster(o),
 						p = Y(o),
-						f = l === n.ac.MEDIA;
+						f = l === n.bc.MEDIA;
 					p && (b || f) && (await r(G.f(p)), Y(s())) || (e === k.r.Draft ? await r(Object(u.r)(t.draftId)) : e === k.r.ScheduledPost && Object(D.r)(o) ? await r(X(t)) : e === k.r.ScheduledPost ? await r(Z(t)) : await r(ee(t)))
 				}, X = e => async (t, r, n) => {
 					let {
@@ -1237,7 +1237,7 @@
 			const m = e => l.d.reCaptchaEnterprise(e) && !Object(f.d)(e),
 				h = e => !!Object(p.c)(e, {
 					experimentEligibilitySelector: Object(b.d)(Object(b.b)(...s.c)),
-					experimentName: u.lf
+					experimentName: u.mf
 				}),
 				O = Object(n.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				y = function() {
@@ -1668,7 +1668,7 @@
 								postId: T
 							});
 							t(Object(d.h)(e.title)), t(Object(d.g)({
-								submissionType: s.ac.CROSSPOST
+								submissionType: s.bc.CROSSPOST
 							})), await t(Object(a.d)({
 								destSubreddit: {
 									...r,
@@ -1678,7 +1678,7 @@
 								postFieldValidationPending: Promise.resolve()
 							})), Object(l.b)(T)
 						}
-						await t(Object(n.b)(`${r.path}`)), f ? f === b.Ze.NewModule && t(Object(c.h)({
+						await t(Object(n.b)(`${r.path}`)), f ? f === b.af.NewModule && t(Object(c.h)({
 							tooltipId: u.MOD_WELCOME_TOOLTIP_ID
 						})) : (t(Object(o.h)(p.a.POST_FLOW_UPSELL_MODAL_ID)), Object(k.a)(Object(j.g)()(x))), Object(E.b)(E.a.SubredditCreation), t(Object(w.f)(i, null !== (g = Object(I.db)(x)) && void 0 !== g ? g : Object(v.k)(x)))
 					} else R.error && Object(k.a)(Object(j.h)(R.error.type, A)(x)), t(U({
@@ -2211,7 +2211,7 @@
 				g = e => {
 					const t = /comments\/(\w+)\/.*$/.exec(e),
 						r = t && t[1];
-					return r ? `${s.Nb.Post}_${r}` : ""
+					return r ? `${s.Ob.Post}_${r}` : ""
 				},
 				E = async (e, t) => {
 					if (!e.ok) return Object(l.b)(e);
@@ -3222,4 +3222,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.3255278f466ed34b61ab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.a3236154644340ec83b6.js.map

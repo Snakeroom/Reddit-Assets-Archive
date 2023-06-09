@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.0b30a46e0b6f147699a9.js
-// Retrieved at 6/8/2023, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.80b4f108b6059fa59cf2.js
+// Retrieved at 6/8/2023, 8:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -545,7 +545,7 @@
 					shortMonths: o,
 					locale: a = r.DEFAULT_LOCALE
 				} = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-				const d = new Date(e * s.Wb);
+				const d = new Date(e * s.Xb);
 				return i.a ? new Intl.DateTimeFormat(a, {
 					month: o ? "short" : "long",
 					day: t ? "numeric" : void 0,
@@ -1479,7 +1479,7 @@
 						type: e.type
 					} : {
 						id: Object(_.o)(c(), e.name),
-						name: `${s.pc}${e.name}`,
+						name: `${s.qc}${e.name}`,
 						type: e.type
 					});
 					if (!Object(k.S)(c())) return o(Object(d.k)({
@@ -2449,7 +2449,7 @@
 			})), n.d(t, "a", (function() {
 				return z
 			})), n.d(t, "c", (function() {
-				return V
+				return G
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/lodash/pick.js"),
@@ -2679,7 +2679,7 @@
 					})
 				}, "MetaFlair", S.a);
 
-			function V(e) {
+			function G(e) {
 				const {
 					className: t,
 					disabled: n = !1,
@@ -2811,7 +2811,7 @@
 					d = null != n ? n : r;
 				return s.a.createElement(s.a.Fragment, null, function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : i.DEFAULT_LOCALE;
-					const n = e * o.Wb;
+					const n = e * o.Xb;
 					return new Date(n).toLocaleString(t, {
 						weekday: "short",
 						month: "short",
@@ -2878,7 +2878,7 @@
 				let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
 					r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : d.DEFAULT_LOCALE;
 				const s = Object(u.e)(e, t),
-					i = new Date(e * l.Wb);
+					i = new Date(e * l.Xb);
 				let o;
 				if (s === u.a.Live || n) return c.fbt._("Now", null, {
 					hk: "Prpcg"
@@ -3470,8 +3470,8 @@
 				}),
 				W = n("./src/reddit/components/OverflowMenu/index.tsx"),
 				z = n("./src/lib/lessComponent.tsx"),
-				V = n("./src/reddit/actions/authorFlair.ts"),
-				G = n("./src/reddit/actions/economics/powerups/flairs/index.ts"),
+				G = n("./src/reddit/actions/authorFlair.ts"),
+				V = n("./src/reddit/actions/economics/powerups/flairs/index.ts"),
 				Q = n("./src/reddit/actions/gold/powerups.ts"),
 				K = n("./src/reddit/helpers/trackers/userFlair.ts"),
 				J = n("./src/reddit/hooks/useTracking.ts"),
@@ -3529,7 +3529,7 @@
 					const c = Object(o.d)(),
 						l = Object(J.a)();
 					Object(s.useEffect)(() => {
-						d && c(Object(G.getSubredditCurrentUserPowerupsFlairs)(n))
+						d && c(Object(V.getSubredditCurrentUserPowerupsFlairs)(n))
 					}, [c, n, d]);
 					return t && (r || d) ? i.a.createElement(se, null, i.a.createElement(oe, null, re._("preview", null, {
 						hk: "2so8Zj"
@@ -3537,7 +3537,7 @@
 						onClick: () => {
 							if (d) c(Object(Q.a)());
 							else {
-								(e => c(Object(V.b)({
+								(e => c(Object(G.b)({
 									username: e,
 									subredditId: n
 								})))(t ? Object(Y.e)(t) : null)
@@ -3583,8 +3583,8 @@
 				qe = n("./src/reddit/selectors/moderatorPermissions.ts"),
 				We = n("./src/reddit/selectors/structuredStyles.ts"),
 				ze = n("./src/reddit/selectors/subreddit.ts"),
-				Ve = n("./src/reddit/selectors/subscriptions.ts"),
-				Ge = n("./src/reddit/selectors/tooltip.ts"),
+				Ge = n("./src/reddit/selectors/subscriptions.ts"),
+				Ve = n("./src/reddit/selectors/tooltip.ts"),
 				Qe = n("./src/reddit/selectors/widgets.ts"),
 				Ke = n("./src/reddit/components/IdCard/index.m.less"),
 				Je = n.n(Ke);
@@ -4038,12 +4038,12 @@
 				})))
 			};
 			var zt = n("./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx"),
-				Vt = n("./src/devPlatform/constants.ts");
-			const Gt = "IDCARD_OVERFLOW_DROPDOWN_ID",
+				Gt = n("./src/devPlatform/constants.ts");
+			const Vt = "IDCARD_OVERFLOW_DROPDOWN_ID",
 				Qt = Object(o.b)(() => Object(m.c)({
-					activeTooltipId: Ge.a,
+					activeTooltipId: Ve.a,
 					postCategories: (e, t) => Object(Me.l)(e, t.postId),
-					favoriteSubredditsIds: Ve.a,
+					favoriteSubredditsIds: Ge.a,
 					idCardWidget: (e, t) => Object(Qe.d)(e, {
 						subredditName: t.listingName
 					}),
@@ -4271,8 +4271,8 @@
 						snooBackground: U,
 						subscribersCount: H,
 						subscribersText: z,
-						titleText: V,
-						url: G
+						titleText: G,
+						url: V
 					} = Object(ut.d)({
 						listingName: P,
 						subreddit: _,
@@ -4333,7 +4333,7 @@
 						onClick: g ? C : void 0,
 						headerButton: i.a.createElement("div", {
 							className: Je.a.headerButtonsContainer
-						}, !Q && _ && v && l !== ge.Ze.NewModule && i.a.createElement(a.a, {
+						}, !Q && _ && v && l !== ge.af.NewModule && i.a.createElement(a.a, {
 							className: Je.a.ModToolsLink,
 							to: v.posts ? `${_.url}about/modqueue` : `${_.url}about/`,
 							onClick: this.onClickModTools
@@ -4343,7 +4343,7 @@
 							hk: "3tJVME"
 						})), u && _ && i.a.createElement(W.b, {
 							className: Je.a.overflowButton,
-							dropdownId: Gt,
+							dropdownId: Vt,
 							targetPosition: ["right", "bottom"],
 							tooltipPosition: ["right", "top"]
 						}, !_.isQuarantined && i.a.createElement(_e.b, {
@@ -4361,10 +4361,10 @@
 							}),
 							onClick: this.props.onToggleFavoriteClick
 						}), i.a.createElement(zt.a, {
-							contextType: Vt.a.SUBREDDIT,
+							contextType: Gt.a.SUBREDDIT,
 							contextData: _
 						}), v && i.a.createElement(zt.a, {
-							contextType: Vt.a.SUBREDDIT,
+							contextType: Gt.a.SUBREDDIT,
 							contextData: _,
 							moderator: !0
 						}), o && b && i.a.createElement(_e.b, {
@@ -4396,15 +4396,15 @@
 					}, Q && i.a.createElement(Xe, {
 						bannerBackgroundImage: D
 					}), F || x || s ? F ? ft({
-						titleText: V,
+						titleText: G,
 						snooBackground: U
 					}) : i.a.createElement(Bt, {
 						isTargetBlank: x,
-						linkUrl: F ? void 0 : G,
+						linkUrl: F ? void 0 : V,
 						subredditIcon: j,
 						canEditIcon: re,
 						subreddit: _,
-						titleText: V,
+						titleText: G,
 						onOpenFilePicker: this.openIconFilePicker,
 						isInNCPV3Experiment: l,
 						shouldBlurSubredditIcon: f
@@ -6104,7 +6104,7 @@
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
 					experimentName: r.M
-				}) === r.Vd
+				}) === r.Wd
 			}
 		},
 		"./src/reddit/selectors/experiments/joinOptimizations.ts": function(e, t, n) {
@@ -6174,4 +6174,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.0b30a46e0b6f147699a9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.80b4f108b6059fa59cf2.js.map

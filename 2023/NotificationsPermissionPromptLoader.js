@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsPermissionPromptLoader.392756c74f34c002a4ac.js
-// Retrieved at 6/8/2023, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsPermissionPromptLoader.4c5270215695b3f17f55.js
+// Retrieved at 6/8/2023, 8:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsPermissionPromptLoader", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -63,9 +63,9 @@
 			i.r(t), i.d(t, "initializeServiceWorkerChannel", (function() {
 				return E
 			})), i.d(t, "requestNotificationsPermissions", (function() {
-				return G
+				return D
 			})), i.d(t, "subscribeForPNs", (function() {
-				return W
+				return G
 			})), i.d(t, "unsubscribeFromPNs", (function() {
 				return A
 			})), i.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
@@ -99,13 +99,13 @@
 			const N = e => Object(x.c)(e, {
 				experimentEligibilitySelector: w.S,
 				experimentName: k.Fb
-			}) === k.Vd;
+			}) === k.Wd;
 			var S = i("./src/reddit/selectors/experiments/delayDnPermission.ts"),
 				P = i("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts");
 			const F = e => Object(x.c)(e, {
 				experimentName: k.hc,
 				experimentEligibilitySelector: x.a
-			}) === k.Vd;
+			}) === k.Wd;
 			var q = i("./src/reddit/selectors/meta.ts");
 			let C = !1;
 			const E = async (e, t) => {
@@ -116,7 +116,7 @@
 				navigator.serviceWorker.addEventListener("message", n => {
 					const o = n.data,
 						r = o.command || o.type;
-					if ("registerWithServiceWorker" === r) D(e);
+					if ("registerWithServiceWorker" === r) W(e);
 					else if (r === v.a && i) {
 						const e = s()(o, ["command"]);
 						t(Object(p.f)(e))
@@ -124,13 +124,13 @@
 						const e = Object(O.a)(o.data.href);
 						e && e.pathname && t(Object(l.c)(e.pathname))
 					}
-				}), D(e)
-			}, D = e => {
+				}), W(e)
+			}, W = e => {
 				navigator.serviceWorker.controller && navigator.serviceWorker.controller.postMessage({
 					command: "registerClient",
 					v2EventBoilerPlate: _.c(e)
 				})
-			}, G = function(e, t) {
+			}, D = function(e, t) {
 				let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : () => {};
 				return async (n, o, s) => {
 					const c = o(),
@@ -149,14 +149,14 @@
 					}, (e, t) => {
 						n(Object(d.o)()), n(A(t ? d.a.Denied : d.a.Closed)), e && (t ? _.e(c) : _.f(c)), i()
 					}, e => {
-						n(Object(d.p)()), n(W()), e && _.d(c), i()
+						n(Object(d.p)()), n(G()), e && _.d(c), i()
 					}, () => {
 						n(Object(d.n)()), i()
 					}, () => {
 						n(Object(d.r)())
 					}, O)
 				}
-			}, W = e => async (t, i, o) => {
+			}, G = e => async (t, i, o) => {
 				const s = i();
 				try {
 					switch (await Object(c.b)(o.gqlContext)) {
@@ -196,7 +196,7 @@
 				if (Object(b.a)(n) === d.d.NotificationsSupported) switch (Object(a.a)()) {
 					case d.a.Default:
 					case d.a.Closed:
-						await t(G(!0, !0));
+						await t(D(!0, !0));
 						break;
 					case d.a.Denied:
 						t(Object(f.h)(e))
@@ -215,7 +215,7 @@
 							e(A(d.a.Denied)), _.e(n);
 							break;
 						case d.a.Granted:
-							e(W()), _.d(n);
+							e(G()), _.d(n);
 							break;
 						default:
 							e(A(d.a.Default))
@@ -465,4 +465,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPermissionPromptLoader.392756c74f34c002a4ac.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPermissionPromptLoader.4c5270215695b3f17f55.js.map
