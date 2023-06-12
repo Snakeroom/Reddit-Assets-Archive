@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.dc2ab9b91367624a9b53.js
-// Retrieved at 6/8/2023, 8:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.4bf4afc763cd1a172a1e.js
+// Retrieved at 6/12/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -21669,11 +21669,15 @@
 		},
 		"./src/reddit/hooks/useWindowEvent.ts": function(e, t, n) {
 			"use strict";
+			n.d(t, "b", (function() {
+				return o
+			}));
 			var r = n("./node_modules/react/index.js");
-			const s = (e, t) => {
-				Object(r.useEffect)(() => (window.addEventListener(e, t), () => window.removeEventListener(e, t)), [e, t])
+			const s = (e, t, n) => {
+				Object(r.useEffect)(() => (window.addEventListener(e, t, n), () => window.removeEventListener(e, t)), [e, t, n])
 			};
-			t.a = s
+			t.a = s;
+			const o = (e, t) => s("keydown", e, t)
 		},
 		"./src/reddit/icons/fonts/Coin/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -26878,4 +26882,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.dc2ab9b91367624a9b53.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.4bf4afc763cd1a172a1e.js.map

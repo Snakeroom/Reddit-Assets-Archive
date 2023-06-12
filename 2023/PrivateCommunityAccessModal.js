@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PrivateCommunityAccessModal.d616c886df84c69a7536.js
-// Retrieved at 6/8/2023, 8:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PrivateCommunityAccessModal.69d37684e428f7b3f3ed.js
+// Retrieved at 6/12/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PrivateCommunityAccessModal"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, s) {
@@ -74,7 +74,7 @@
 		"./src/reddit/components/CCM/PrivateCommunityAccessModal/index.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "_PrivateSubredditBody", (function() {
-				return R
+				return B
 			}));
 			var n = s("./src/config.ts"),
 				r = s("./node_modules/react/index.js"),
@@ -87,20 +87,22 @@
 				u = s("./src/lib/loginHref/index.ts"),
 				m = s("./src/reddit/actions/modal.ts"),
 				b = s("./src/reddit/components/ContributorRequestFlow/ContributorRequestButton/async.tsx"),
-				v = s("./src/reddit/constants/modals.ts"),
-				h = s("./src/reddit/contexts/InsideOverlay.tsx"),
-				p = s("./src/reddit/controls/Button/index.tsx"),
-				C = s("./src/reddit/icons/svgs/Close/index.tsx"),
-				_ = s("./src/reddit/icons/svgs/PrivateKey/index.tsx"),
-				g = s("./src/reddit/selectors/activeModal.ts"),
-				x = s("./src/reddit/selectors/contentGate.ts"),
-				f = s("./src/reddit/selectors/meta.ts"),
-				O = s("./src/reddit/selectors/user.ts"),
-				j = s("./src/reddit/components/CCM/PrivateCommunityAccessModal/index.m.less"),
-				y = s.n(j);
+				v = s("./src/reddit/constants/keycodes.ts"),
+				h = s("./src/reddit/constants/modals.ts"),
+				p = s("./src/reddit/contexts/InsideOverlay.tsx"),
+				C = s("./src/reddit/controls/Button/index.tsx"),
+				_ = s("./src/reddit/hooks/useWindowEvent.ts"),
+				g = s("./src/reddit/icons/svgs/Close/index.tsx"),
+				x = s("./src/reddit/icons/svgs/PrivateKey/index.tsx"),
+				f = s("./src/reddit/selectors/activeModal.ts"),
+				O = s("./src/reddit/selectors/contentGate.ts"),
+				j = s("./src/reddit/selectors/meta.ts"),
+				y = s("./src/reddit/selectors/user.ts"),
+				k = s("./src/reddit/components/CCM/PrivateCommunityAccessModal/index.m.less"),
+				E = s.n(k);
 
-			function E() {
-				return (E = Object.assign || function(e) {
+			function N() {
+				return (N = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -109,8 +111,8 @@
 				}).apply(this, arguments)
 			}
 			const {
-				fbt: N
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), R = e => {
+				fbt: R
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), B = e => {
 				let {
 					subredditName: t,
 					subredditDescription: s,
@@ -123,80 +125,80 @@
 					setIsCollapsed: v,
 					shouldShowMoreButton: h
 				} = e;
-				return o.a.createElement(o.a.Fragment, null, o.a.createElement(_.a, {
-					className: y.a.privateKeyIcon
+				return o.a.createElement(o.a.Fragment, null, o.a.createElement(x.a, {
+					className: E.a.privateKeyIcon
 				}), o.a.createElement("h3", {
-					className: y.a.title
-				}, "r/", t, " ", N._("is a private community", null, {
+					className: E.a.title
+				}, "r/", t, " ", R._("is a private community", null, {
 					hk: "7zZmq"
 				})), s && s.length && o.a.createElement("div", {
-					className: Object(d.a)(y.a.detailsContainer, "flex relative mb-lg")
+					className: Object(d.a)(E.a.detailsContainer, "flex relative mb-lg")
 				}, o.a.createElement("div", {
 					id: "privateSubredditDetails",
-					className: Object(d.a)(y.a.privateSubredditDetails, {
-						[y.a.isCollapsed]: m
+					className: Object(d.a)(E.a.privateSubredditDetails, {
+						[E.a.isCollapsed]: m
 					})
 				}, s), h && o.a.createElement("button", {
-					className: y.a.moreButton,
+					className: E.a.moreButton,
 					onClick: () => v(!m)
-				}, m ? N._("...", null, {
+				}, m ? R._("...", null, {
 					hk: "1rUvqg"
 				}) : "")), o.a.createElement("div", {
-					className: y.a.description
-				}, N._("The moderators of", null, {
+					className: E.a.description
+				}, R._("The moderators of", null, {
 					hk: "3QSrbr"
-				}), " ", "r/", t, " ", N._("have set this community as private.", null, {
+				}), " ", "r/", t, " ", R._("have set this community as private.", null, {
 					hk: "3zhD9F"
-				}), " ", N._("Only approved members can view and take part in its discussions.", null, {
+				}), " ", R._("Only approved members can view and take part in its discussions.", null, {
 					hk: "af0uR"
 				})), o.a.createElement("div", {
-					className: y.a.buttonsContainer
+					className: E.a.buttonsContainer
 				}, i ? o.a.createElement(o.a.Fragment, null, !r && o.a.createElement(b.a, {
 					eventSource: "content_gate",
 					smallButton: !0,
-					className: y.a.contributorRequestButton,
+					className: E.a.contributorRequestButton,
 					isContributorRequestPending: a
-				}), o.a.createElement(p.p, {
-					className: y.a.secondaryLeftLinkButton,
+				}), o.a.createElement(C.p, {
+					className: E.a.secondaryLeftLinkButton,
 					href: `${n.a.redditUrl}/message/compose?to=/r/${t}`,
 					redditStyle: !0
-				}, N._("Message Mods", null, {
+				}, R._("Message Mods", null, {
 					hk: "vVe1i"
-				}))) : o.a.createElement(p.p, {
+				}))) : o.a.createElement(C.p, {
 					href: Object(u.a)(c, l),
 					redditStyle: !0,
-					className: y.a.secondaryLeftLinkButton
-				}, N._("Sign Up", null, {
+					className: E.a.secondaryLeftLinkButton
+				}, R._("Sign Up", null, {
 					hk: "rvpjy"
-				})), o.a.createElement(p.n, {
-					className: y.a.linkRouterButton,
+				})), o.a.createElement(C.n, {
+					className: E.a.linkRouterButton,
 					to: i ? "/" : "/r/popular",
 					redditStyle: !0
-				}, N._("Browse Reddit", null, {
+				}, R._("Browse Reddit", null, {
 					hk: "1fi8kh"
 				}))))
-			}, k = Object(i.i)(R);
-			const B = Object(l.a)(Object(h.b)((function(e) {
-				const t = Object(a.e)(e => Object(f.l)(e)),
-					s = Object(a.e)(e => Object(x.a)(e)),
+			}, S = Object(i.i)(B);
+			const q = Object(l.a)(Object(p.b)((function(e) {
+				const t = Object(a.e)(e => Object(j.l)(e)),
+					s = Object(a.e)(e => Object(O.a)(e)),
 					[n, i] = Object(r.useState)(!0),
-					c = Object(a.e)(e => Object(g.a)(e));
+					c = Object(a.e)(e => Object(f.a)(e));
 				if (!c) return e.closeModal(), null;
 				const {
 					subredditDescription: l,
 					subredditName: d,
 					isContributorRequestsDisabled: u
-				} = c, m = document.getElementById("privateSubredditDetails"), b = ((null == m ? void 0 : m.scrollHeight) || 1) > ((null == m ? void 0 : m.clientHeight) || 1);
+				} = c, m = document.getElementById("privateSubredditDetails"), b = ((null == m ? void 0 : m.scrollHeight) || 1) - 8 > ((null == m ? void 0 : m.clientHeight) || 1);
 				return o.a.createElement("div", {
-					className: y.a.inner
+					className: E.a.inner
 				}, o.a.createElement("div", {
-					className: y.a.modalHeader
-				}, o.a.createElement(C.a, {
-					className: y.a.closeIcon,
+					className: E.a.modalHeader
+				}, o.a.createElement(g.a, {
+					className: E.a.closeIcon,
 					onClick: e.closeModal
 				})), o.a.createElement("div", {
-					className: y.a.modalContent
-				}, o.a.createElement(k, {
+					className: E.a.modalContent
+				}, o.a.createElement(S, {
 					isContributorRequestsDisabled: !!u,
 					isLoggedIn: !!e.isLoggedIn,
 					isPrivateSubredditContributorRequestPending: s,
@@ -210,15 +212,21 @@
 			})));
 			t.default = e => {
 				const t = Object(a.d)(),
-					s = !!Object(a.e)(O.m),
+					s = !!Object(a.e)(y.m),
 					n = Object(r.useCallback)(() => {
-						t(Object(m.g)(v.a.CONTRIBUTOR_REQUEST_PRIVATE_SUREDDIT)), t(Object(c.b)(s ? "/" : "/r/popular"))
-					}, [t, s]);
-				return o.a.createElement(B, E({}, e, {
+						t(Object(c.b)(s ? "/" : "/r/popular"))
+					}, [t, s]),
+					i = Object(r.useCallback)(() => {
+						t(Object(m.g)(h.a.CONTRIBUTOR_REQUEST_PRIVATE_SUREDDIT)), n()
+					}, [t, n]),
+					l = Object(r.useCallback)(e => {
+						e.key === v.b.Escape && n()
+					}, [n]);
+				return Object(_.b)(l, !0), o.a.createElement(q, N({}, e, {
 					isLoggedIn: s,
-					closeModal: n,
-					onOverlayClick: n,
-					className: Object(d.a)(e.className, y.a.modal)
+					closeModal: i,
+					onOverlayClick: i,
+					className: Object(d.a)(e.className, E.a.modal)
 				}))
 			}
 		},
@@ -293,4 +301,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PrivateCommunityAccessModal.d616c886df84c69a7536.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PrivateCommunityAccessModal.69d37684e428f7b3f3ed.js.map
