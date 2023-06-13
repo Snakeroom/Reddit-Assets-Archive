@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.9ff2016264b0bfeec374.js
-// Retrieved at 6/13/2023, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.c6f98b371418880a7bd3.js
+// Retrieved at 6/13/2023, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, n) {
@@ -2563,14 +2563,14 @@
 				c = /^\/r\/[^/]+\/w(iki)?\/?([^/]+\/?)?$/,
 				l = e => !!e.match(o) || !!e.match(a),
 				u = e => !e.match(a) && ("/r/all" !== e && !e.startsWith("/r/all/") && (!!e.match(d) || !!e.match(c))),
-				m = (e, t) => !!l(t) && Object(s.c)(e, {
+				m = (e, t) => !!l(t) && [r.Zf.Enabled, r.Zf.HardReload].includes(Object(s.c)(e, {
 					experimentEligibilitySelector: i.f,
 					experimentName: r.Lf
-				}) === r.Wd,
-				p = (e, t) => !!u(t) && Object(s.c)(e, {
+				})),
+				p = (e, t) => !!u(t) && [r.Zf.Enabled, r.Zf.HardReload].includes(Object(s.c)(e, {
 					experimentEligibilitySelector: i.f,
 					experimentName: r.Kf
-				}) === r.Wd,
+				})),
 				b = (e, t) => !(!u(t) && !l(t)) && Object(s.c)(e, {
 					experimentEligibilitySelector: i.f,
 					experimentName: r.se
@@ -2644,4 +2644,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.9ff2016264b0bfeec374.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.c6f98b371418880a7bd3.js.map

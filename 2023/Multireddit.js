@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.932d318ed9ace7499f01.js
-// Retrieved at 6/13/2023, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.9e50b7a756f3506aa505.js
+// Retrieved at 6/13/2023, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, n) {
@@ -639,7 +639,7 @@
 			})), n.d(t, "a", (function() {
 				return V
 			})), n.d(t, "c", (function() {
-				return $
+				return Z
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				o = n("./node_modules/lodash/pick.js"),
@@ -869,7 +869,7 @@
 					})
 				}, "MetaFlair", y.a);
 
-			function $(e) {
+			function Z(e) {
 				const {
 					className: t,
 					disabled: n = !1,
@@ -1833,14 +1833,14 @@
 				d = /^\/r\/[^/]+\/w(iki)?\/?([^/]+\/?)?$/,
 				l = e => !!e.match(i) || !!e.match(c),
 				u = e => !e.match(c) && ("/r/all" !== e && !e.startsWith("/r/all/") && (!!e.match(a) || !!e.match(d))),
-				m = (e, t) => !!l(t) && Object(o.c)(e, {
+				m = (e, t) => !!l(t) && [r.Zf.Enabled, r.Zf.HardReload].includes(Object(o.c)(e, {
 					experimentEligibilitySelector: s.f,
 					experimentName: r.Lf
-				}) === r.Wd,
-				b = (e, t) => !!u(t) && Object(o.c)(e, {
+				})),
+				b = (e, t) => !!u(t) && [r.Zf.Enabled, r.Zf.HardReload].includes(Object(o.c)(e, {
 					experimentEligibilitySelector: s.f,
 					experimentName: r.Kf
-				}) === r.Wd,
+				})),
 				p = (e, t) => !(!u(t) && !l(t)) && Object(o.c)(e, {
 					experimentEligibilitySelector: s.f,
 					experimentName: r.se
@@ -1890,4 +1890,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.932d318ed9ace7499f01.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.9e50b7a756f3506aa505.js.map

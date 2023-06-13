@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.b81f6de78ecdf1cbc47b.js
-// Retrieved at 6/13/2023, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.af6b2392ceb67cb30837.js
+// Retrieved at 6/13/2023, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -9844,14 +9844,14 @@
 				c = /^\/r\/[^/]+\/w(iki)?\/?([^/]+\/?)?$/,
 				l = e => !!e.match(a) || !!e.match(i),
 				m = e => !e.match(i) && ("/r/all" !== e && !e.startsWith("/r/all/") && (!!e.match(d) || !!e.match(c))),
-				u = (e, t) => !!l(t) && Object(o.c)(e, {
+				u = (e, t) => !!l(t) && [n.Zf.Enabled, n.Zf.HardReload].includes(Object(o.c)(e, {
 					experimentEligibilitySelector: r.f,
 					experimentName: n.Lf
-				}) === n.Wd,
-				p = (e, t) => !!m(t) && Object(o.c)(e, {
+				})),
+				p = (e, t) => !!m(t) && [n.Zf.Enabled, n.Zf.HardReload].includes(Object(o.c)(e, {
 					experimentEligibilitySelector: r.f,
 					experimentName: n.Kf
-				}) === n.Wd,
+				})),
 				b = (e, t) => !(!m(t) && !l(t)) && Object(o.c)(e, {
 					experimentEligibilitySelector: r.f,
 					experimentName: n.se
@@ -10016,4 +10016,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.b81f6de78ecdf1cbc47b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.af6b2392ceb67cb30837.js.map

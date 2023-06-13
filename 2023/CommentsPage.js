@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.61c1ad66b09ff89748cb.js
-// Retrieved at 6/13/2023, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.172e17ccfb1edcc5c268.js
+// Retrieved at 6/13/2023, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "CollectionCommentsPage~SearchResults", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -48906,14 +48906,14 @@
 				d = /^\/r\/[^/]+\/w(iki)?\/?([^/]+\/?)?$/,
 				l = e => !!e.match(i) || !!e.match(a),
 				u = e => !e.match(a) && ("/r/all" !== e && !e.startsWith("/r/all/") && (!!e.match(c) || !!e.match(d))),
-				m = (e, t) => !!l(t) && Object(r.c)(e, {
+				m = (e, t) => !!l(t) && [s.Zf.Enabled, s.Zf.HardReload].includes(Object(r.c)(e, {
 					experimentEligibilitySelector: o.f,
 					experimentName: s.Lf
-				}) === s.Wd,
-				p = (e, t) => !!u(t) && Object(r.c)(e, {
+				})),
+				p = (e, t) => !!u(t) && [s.Zf.Enabled, s.Zf.HardReload].includes(Object(r.c)(e, {
 					experimentEligibilitySelector: o.f,
 					experimentName: s.Kf
-				}) === s.Wd,
+				})),
 				b = (e, t) => !(!u(t) && !l(t)) && Object(r.c)(e, {
 					experimentEligibilitySelector: o.f,
 					experimentName: s.se
@@ -49907,4 +49907,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.61c1ad66b09ff89748cb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.172e17ccfb1edcc5c268.js.map

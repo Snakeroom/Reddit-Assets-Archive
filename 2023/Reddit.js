@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.4e7b7c393a691261a4e6.js
-// Retrieved at 6/13/2023, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.29893bbc8b8df511ef62.js
+// Retrieved at 6/13/2023, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -20839,14 +20839,14 @@
 				l = /^\/r\/[^/]+\/w(iki)?\/?([^/]+\/?)?$/,
 				d = e => !!e.match(a) || !!e.match(i),
 				u = e => !e.match(i) && ("/r/all" !== e && !e.startsWith("/r/all/") && (!!e.match(c) || !!e.match(l))),
-				m = (e, t) => !!d(t) && Object(r.c)(e, {
+				m = (e, t) => !!d(t) && [s.Zf.Enabled, s.Zf.HardReload].includes(Object(r.c)(e, {
 					experimentEligibilitySelector: o.f,
 					experimentName: s.Lf
-				}) === s.Wd,
-				p = (e, t) => !!u(t) && Object(r.c)(e, {
+				})),
+				p = (e, t) => !!u(t) && [s.Zf.Enabled, s.Zf.HardReload].includes(Object(r.c)(e, {
 					experimentEligibilitySelector: o.f,
 					experimentName: s.Kf
-				}) === s.Wd,
+				})),
 				b = (e, t) => !(!u(t) && !d(t)) && Object(r.c)(e, {
 					experimentEligibilitySelector: o.f,
 					experimentName: s.se
@@ -21265,4 +21265,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.4e7b7c393a691261a4e6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.29893bbc8b8df511ef62.js.map
