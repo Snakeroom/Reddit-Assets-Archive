@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~cb450973.3ffccc5b03f5b94aeb5d.js
-// Retrieved at 6/8/2023, 8:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~cb450973.daaad86bb572016732c6.js
+// Retrieved at 6/13/2023, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~cb450973"], {
 		"./src/lib/collectible-expressions/index.ts": function(e, t, n) {
@@ -719,14 +719,14 @@
 
 				function A(e) {
 					var t;
-					(i || U(e), c) || (t = e.timeStamp, P(Object(u.M)(h, t)))
-				}
-
-				function J(e) {
-					P(Object(u.r)(h, e.timeStamp))
+					(i || J(e), c) || (t = e.timeStamp, P(Object(u.M)(h, t)))
 				}
 
 				function U(e) {
+					P(Object(u.r)(h, e.timeStamp))
+				}
+
+				function J(e) {
 					! function(e) {
 						P(Object(u.Q)({
 							metadata: e,
@@ -741,7 +741,7 @@
 				}
 
 				function W(e) {
-					s || A(e), i || U(e), P(Object(u.P)(h))
+					s || A(e), i || J(e), P(Object(u.P)(h))
 				}
 
 				function G() {
@@ -758,9 +758,9 @@
 						loop: !0,
 						onBufferingChange: B,
 						onClick: N,
-						onLoadStart: J,
+						onLoadStart: U,
 						onLoadedData: A,
-						onLoadedMetadata: U,
+						onLoadedMetadata: J,
 						onPause: H,
 						onPlaying: W,
 						onTimeUpdate: F,
@@ -1606,9 +1606,9 @@
 		"./src/reddit/components/RichTextJson/renderers.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
-				return J
-			})), n.d(t, "d", (function() {
 				return U
+			})), n.d(t, "d", (function() {
+				return J
 			})), n.d(t, "a", (function() {
 				return W
 			})), n.d(t, "b", (function() {
@@ -1618,9 +1618,9 @@
 			})), n.d(t, "h", (function() {
 				return X
 			})), n.d(t, "g", (function() {
-				return Z
-			})), n.d(t, "i", (function() {
 				return K
+			})), n.d(t, "i", (function() {
+				return Z
 			})), n.d(t, "e", (function() {
 				return z
 			}));
@@ -1788,7 +1788,7 @@
 					hk: "3Vhru6"
 				})))
 			};
-			const J = (e, t, n) => {
+			const U = (e, t, n) => {
 					const s = e.c || [],
 						r = e.l,
 						i = [],
@@ -1802,7 +1802,7 @@
 						key: n
 					}, i)
 				},
-				U = e => o.a.createElement(c.e, {
+				J = e => o.a.createElement(c.e, {
 					key: e
 				}),
 				W = (e, t, n, s, r) => {
@@ -1843,13 +1843,13 @@
 						case m.c:
 							return G(e, s);
 						case m.k:
-							return J(e, n, s);
+							return U(e, n, s);
 						case m.l:
-							return U(s);
+							return J(s);
 						case m.p:
 							return V(e, t, n, s, r);
 						case m.v:
-							return Z({
+							return K({
 								p: e,
 								mediaMetadata: t,
 								rtJsonElementProps: n,
@@ -1879,7 +1879,7 @@
 							} = e;
 						u.push(o.a.createElement(s, {
 							key: c
-						}, K({
+						}, Z({
 							nodes: d,
 							mediaMetadata: t,
 							rtJsonElementProps: n,
@@ -1897,7 +1897,7 @@
 								} = e[i];
 							a.push(o.a.createElement(s, {
 								key: i
-							}, K({
+							}, Z({
 								nodes: c,
 								mediaMetadata: t,
 								rtJsonElementProps: n,
@@ -1912,7 +1912,7 @@
 						key: s
 					}, o.a.createElement("thead", null, o.a.createElement(c.t, null, u)), o.a.createElement("tbody", null, m))
 				},
-				Z = e => {
+				K = e => {
 					let {
 						p: t,
 						mediaMetadata: n,
@@ -1928,7 +1928,7 @@
 					const l = t.c[0];
 					return l.e !== m.m && l.e !== m.a || !Object(M.h)(l.id) ? o.a.createElement(c.j, {
 						key: r
-					}, K({
+					}, Z({
 						nodes: t.c,
 						mediaMetadata: n,
 						rtJsonElementProps: s,
@@ -1942,7 +1942,7 @@
 						mediaProps: a
 					})
 				},
-				K = e => {
+				Z = e => {
 					let {
 						nodes: t,
 						mediaMetadata: n,
@@ -1958,7 +1958,7 @@
 						else if (e.e === m.y) a.push(o.a.createElement(C.a, {
 							key: d,
 							onClickReveal: r
-						}, K({
+						}, Z({
 							nodes: e.c,
 							mediaMetadata: n,
 							rtJsonElementProps: s,
@@ -2189,12 +2189,12 @@
 						rtJsonElementProps: a
 					});
 					switch (i) {
-						case b.Zf.SmIcon:
+						case b.bg.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: a
 							});
-						case b.Zf.SmIconHc:
+						case b.bg.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2411,12 +2411,12 @@
 				c = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: o,
-						experimentName: s.Tf
+						experimentName: s.Uf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Zf.SmIcon || t === s.Zf.SmIconHc
+					return t === s.bg.SmIcon || t === s.bg.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -2442,4 +2442,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~cb450973.3ffccc5b03f5b94aeb5d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~cb450973.daaad86bb572016732c6.js.map

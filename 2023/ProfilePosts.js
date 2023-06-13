@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.2b2ca17e6449e817cf1e.js
-// Retrieved at 6/8/2023, 8:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.5f5057092b9fb8ad5ce6.js
+// Retrieved at 6/13/2023, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -741,9 +741,9 @@
 			})), r.d(t, "morePending", (function() {
 				return V
 			})), r.d(t, "moreMixedLoaded", (function() {
-				return A
-			})), r.d(t, "morePostLoaded", (function() {
 				return D
+			})), r.d(t, "morePostLoaded", (function() {
+				return A
 			})), r.d(t, "moreFailed", (function() {
 				return H
 			})), r.d(t, "moreProfilePrivateRequested", (function() {
@@ -968,7 +968,7 @@
 						listingKey: p,
 						error: x.error
 					}))
-				}, V = Object(i.a)(E.f), A = Object(i.a)(E.e), D = Object(i.a)(E.g), H = Object(i.a)(E.d), z = e => async (t, r, i) => {
+				}, V = Object(i.a)(E.f), D = Object(i.a)(E.e), A = Object(i.a)(E.g), H = Object(i.a)(E.d), z = e => async (t, r, i) => {
 					const s = r(),
 						n = s.user.account && s.user.account.displayText && s.user.account.displayText.toLowerCase();
 					if (!n) return;
@@ -991,11 +991,11 @@
 							listingType: e,
 							rawData: a.body.data
 						});
-						e === g.b.Saved || e === g.b.ReceivedGildings || e === g.b.GivenGildings ? await t(A({
+						e === g.b.Saved || e === g.b.ReceivedGildings || e === g.b.GivenGildings ? await t(D({
 							listingKey: o,
 							profileName: n,
 							...r
-						})) : await t(D({
+						})) : await t(A({
 							listingKey: o,
 							profileName: n,
 							...r
@@ -1534,7 +1534,7 @@
 						experimentEligibilitySelector: n.S,
 						experimentName: i.Fd
 					});
-					return !(!t || Object(i.Bg)(t))
+					return !(!t || Object(i.Dg)(t))
 				},
 				d = e => {
 					return Object(s.c)(e, {
@@ -1569,4 +1569,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.2b2ca17e6449e817cf1e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.5f5057092b9fb8ad5ce6.js.map
