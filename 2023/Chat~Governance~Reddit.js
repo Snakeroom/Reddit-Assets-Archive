@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.2e3c69b4a84cf795e60b.js
-// Retrieved at 6/14/2023, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.459e51aac75c76cd7031.js
+// Retrieved at 6/14/2023, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3659,11 +3659,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("187476"),
+				buildNumber: Object(r.c)("187480"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1686758497"),
+				buildTimestamp: Object(r.b)("1686764742"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5506,12 +5506,12 @@
 				oe = new Set(["image/gif"]),
 				de = new Set(["video/mp4", "video/quicktime"]),
 				ae = {
-					"image/png": d.v.Png,
-					"image/gif": d.v.Gif,
-					"image/jpeg": d.v.Jpeg,
-					"image/webp": d.v.Webp,
-					"video/mp4": d.v.Mp4,
-					"video/quicktime": d.v.Quicktime
+					"image/png": d.w.Png,
+					"image/gif": d.w.Gif,
+					"image/jpeg": d.w.Jpeg,
+					"image/webp": d.w.Webp,
+					"video/mp4": d.w.Mp4,
+					"video/quicktime": d.w.Quicktime
 				},
 				le = 60,
 				ue = 900,
@@ -6411,14 +6411,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c03560462df36fe3d51f58e7172a4144028b9b4e0-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cfd98d3a8f58201a51dd0ab8010df1131870ab702-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "03560462df36fe3d51f58e7172a4144028b9b4e0-production",
+						release: "fd98d3a8f58201a51dd0ab8010df1131870ab702-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6971,7 +6971,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "03560462df36fe3d51f58e7172a4144028b9b4e0-production",
+							releaseClient: "fd98d3a8f58201a51dd0ab8010df1131870ab702-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -9234,7 +9234,7 @@
 							let {
 								node: t
 							} = e;
-							return null === t.replicationInfo.status || t.replicationInfo.status === d.T.Main
+							return null === t.replicationInfo.status || t.replicationInfo.status === d.U.Main
 						}).length
 					})(i.gqlContext());
 					void 0 !== n && e(l(n > 0))
@@ -9892,7 +9892,7 @@
 								const i = Object(a.a)(m, {
 									experience: e
 								});
-								return (e !== l.cb.LanguagePreferenceBottomSheet || null == i || !i.value) && !(t[e].allowCached && (null == i ? void 0 : i.fetched))
+								return (e !== l.db.LanguagePreferenceBottomSheet || null == i || !i.value) && !(t[e].allowCached && (null == i ? void 0 : i.fetched))
 							});
 						if (!p.length) return;
 						const h = await Object(o.a)(d(), p, i);
@@ -9918,17 +9918,17 @@
 				},
 				p = () => m({
 					experiences: {
-						[l.cb.LiveChatVideoEdu]: {
+						[l.db.LiveChatVideoEdu]: {
 							allowCached: !0
 						},
-						[l.cb.LiveChatReactionEdu]: {
+						[l.db.LiveChatReactionEdu]: {
 							allowCached: !0
 						}
 					}
 				}),
 				h = e => m({
 					experiences: {
-						[l.cb.LanguagePreferenceBottomSheet]: {
+						[l.db.LanguagePreferenceBottomSheet]: {
 							allowCached: !1
 						}
 					},
@@ -20619,7 +20619,7 @@
 			function A(e) {
 				const t = e.template.backgroundColor || void 0;
 				let i;
-				return e.template.textColor === S.r.Dark ? i = T.e.Dark : e.template.textColor === S.r.Light && (i = T.e.Light), {
+				return e.template.textColor === S.s.Dark ? i = T.e.Dark : e.template.textColor === S.s.Light && (i = T.e.Light), {
 					backgroundColor: t,
 					richtext: e.richtext ? Object(O.h)(e.richtext, []) : void 0,
 					text: e.text || "",
@@ -20658,7 +20658,7 @@
 
 			function D(e) {
 				var t, i, n;
-				const r = [S.u.Embed, S.u.Image, S.u.Video, S.u.Gifvideo],
+				const r = [S.v.Embed, S.v.Image, S.v.Video, S.v.Gifvideo],
 					s = {
 						url: (null === (t = null == e ? void 0 : e.thumbnail) || void 0 === t ? void 0 : t.url) || v.a.DEFAULT,
 						height: (null === (i = null == e ? void 0 : e.thumbnail) || void 0 === i ? void 0 : i.dimensions.height) || null,
@@ -20679,13 +20679,13 @@
 			function x(e) {
 				var t, i, n, r, s, o, d, a, l, u, c, _;
 				switch (null === (t = null == e ? void 0 : e.media) || void 0 === t ? void 0 : t.typeHint) {
-					case S.u.Image:
+					case S.v.Image:
 						if ((null == e ? void 0 : e.domain) === R && e.url) return e.url;
 						if (null === (r = null === (n = null === (i = null == e ? void 0 : e.media) || void 0 === i ? void 0 : i.still) || void 0 === n ? void 0 : n.source) || void 0 === r ? void 0 : r.url) return e.media.still.source.url;
 						break;
-					case S.u.Embed:
+					case S.v.Embed:
 						return (null === (o = null === (s = null == e ? void 0 : e.media) || void 0 === s ? void 0 : s.video) || void 0 === o ? void 0 : o.url) || (null === (l = null === (a = null === (d = null == e ? void 0 : e.media) || void 0 === d ? void 0 : d.still) || void 0 === a ? void 0 : a.source) || void 0 === l ? void 0 : l.url);
-					case S.u.Gifvideo:
+					case S.v.Gifvideo:
 						return null === (_ = null === (c = null === (u = null == e ? void 0 : e.media) || void 0 === u ? void 0 : u.animated) || void 0 === c ? void 0 : c.mp4_source) || void 0 === _ ? void 0 : _.url
 				}
 			}
@@ -20717,9 +20717,9 @@
 							id: e.profile.id,
 							isNSFW: e.profile.isNsfw,
 							name: e.profile.name,
-							type: S.X.User,
+							type: S.Y.User,
 							url: e.profile.path,
-							wls: e.whitelistStatus && S.db[e.whitelistStatus]
+							wls: e.whitelistStatus && S.eb[e.whitelistStatus]
 						}
 					}(e),
 					_ = function(e) {
@@ -20740,10 +20740,10 @@
 							isNSFW: e.subreddit.isNsfw,
 							isQuarantined: e.subreddit.isQuarantined,
 							name: e.subreddit.name,
-							type: S.X.Public,
+							type: S.Y.Public,
 							url: e.subreddit.path,
 							subscribers: e.subreddit.subscribersCount,
-							wls: e.whitelistStatus && S.db[e.whitelistStatus]
+							wls: e.whitelistStatus && S.eb[e.whitelistStatus]
 						}
 					}(e);
 				return {
@@ -20796,12 +20796,12 @@
 				H = i("./src/reddit/models/SearchDiscoveryUnit/index.ts");
 			const W = e => (null == e ? void 0 : e.__typename) === E.a.SubredditPost,
 				K = {
-					[S.bb.PostSearchPromotedTrend]: H.b.PromotedTrendHero,
-					[S.bb.PostSearchTrending]: H.b.Hero
+					[S.cb.PostSearchPromotedTrend]: H.b.PromotedTrendHero,
+					[S.cb.PostSearchTrending]: H.b.Hero
 				},
 				z = {
-					[S.bb.PostSearchPromotedTrend]: q.f,
-					[S.bb.PostSearchTrending]: q.l
+					[S.cb.PostSearchPromotedTrend]: q.f,
+					[S.cb.PostSearchTrending]: q.l
 				};
 
 			function Y(e, t, i, n) {
@@ -20879,11 +20879,11 @@
 			}
 			const Z = e => e && e.reduce((e, t) => "" === e ? e + t : e += `,${t}`, ""),
 				ee = {
-					[n.fc.Comments]: S.U.Comments,
-					[n.fc.Hot]: S.U.Hot,
-					[n.fc.New]: S.U.New,
-					[n.fc.Top]: S.U.Top,
-					[n.fc.Relevance]: S.U.Relevance
+					[n.fc.Comments]: S.V.Comments,
+					[n.fc.Hot]: S.V.Hot,
+					[n.fc.New]: S.V.New,
+					[n.fc.Top]: S.V.Top,
+					[n.fc.Relevance]: S.V.Relevance
 				},
 				te = e => !c()(e);
 
@@ -20934,7 +20934,7 @@
 						Ke = null === (N = null === (C = null === (F = null === (R = t.data.search) || void 0 === R ? void 0 : R.general) || void 0 === F ? void 0 : F.posts) || void 0 === C ? void 0 : C.feedMetadata) || void 0 === N ? void 0 : N.treatment;
 					ye = k(null === (D = null === (P = null === (j = null === (A = t.data.search) || void 0 === A ? void 0 : A.general) || void 0 === j ? void 0 : j.posts) || void 0 === P ? void 0 : P.feedMetadata) || void 0 === D ? void 0 : D.appliedSort);
 					const ze = null !== (L = null === (x = t.data) || void 0 === x ? void 0 : x.subredditsInfoByNames) && void 0 !== L ? L : [];
-					[Me, fe] = X(ze), Ue = Ke === S.bb.PostSearchTrending || Ke === S.bb.PostSearchPromotedTrend ? H.c.Trending : H.c.Default, [be, we, Ee, Te, Se, ve, ge] = function(e, t) {
+					[Me, fe] = X(ze), Ue = Ke === S.cb.PostSearchTrending || Ke === S.cb.PostSearchPromotedTrend ? H.c.Trending : H.c.Default, [be, we, Ee, Te, Se, ve, ge] = function(e, t) {
 						var i, n, r, s;
 						const o = {},
 							d = {},
@@ -21072,7 +21072,7 @@
 						He = null === (N = null === (C = null === (R = null === (I = t.data.search) || void 0 === I ? void 0 : I.general) || void 0 === R ? void 0 : R.posts) || void 0 === C ? void 0 : C.feedMetadata) || void 0 === N ? void 0 : N.treatment;
 					fe = k(null === (D = null === (P = null === (j = null === (A = t.data.search) || void 0 === A ? void 0 : A.general) || void 0 === j ? void 0 : j.posts) || void 0 === P ? void 0 : P.feedMetadata) || void 0 === D ? void 0 : D.appliedSort);
 					const We = null !== (B = null === (x = t.data) || void 0 === x ? void 0 : x.subredditsInfoByNames) && void 0 !== B ? B : [];
-					[Be, ge] = X(We), ke = He === S.bb.PostSearchTrending || He === S.bb.PostSearchPromotedTrend ? H.c.Trending : H.c.Default, [pe, Pe, he, De, ve, we] = function(e, t) {
+					[Be, ge] = X(We), ke = He === S.cb.PostSearchTrending || He === S.cb.PostSearchPromotedTrend ? H.c.Trending : H.c.Default, [pe, Pe, he, De, ve, we] = function(e, t) {
 						var i, n, r;
 						const s = {},
 							o = {},
@@ -21083,7 +21083,7 @@
 						if (e.length)
 							for (const c of e)
 								if (null === (i = null == c ? void 0 : c.node) || void 0 === i ? void 0 : i.id) {
-									if (t === S.bb.PostSearchPromotedTrend || t === S.bb.PostSearchTrending) {
+									if (t === S.cb.PostSearchPromotedTrend || t === S.cb.PostSearchTrending) {
 										const i = null === (r = null === (n = e[0]) || void 0 === n ? void 0 : n.node) || void 0 === r ? void 0 : r.id;
 										i && (l.push(i), u[i] = {
 											id: i,
@@ -21342,7 +21342,7 @@
 						return {
 							input: {
 								postId: e,
-								distinguishState: t === n.I.NONE ? b.J.None : b.J.Distinguished,
+								distinguishState: t === n.I.NONE ? b.K.None : b.K.Distinguished,
 								distinguishType: v[t]
 							}
 						}
@@ -21421,7 +21421,7 @@
 					variables: {
 						input: {
 							postId: t,
-							nsfwState: i ? b.H.Nsfw : b.H.None
+							nsfwState: i ? b.I.Nsfw : b.I.None
 						}
 					}
 				}),
@@ -24731,10 +24731,10 @@
 					}
 				},
 				ne = {
-					[p.S.NotAvailable]: c.a.NotAvailable,
-					[p.S.Processing]: c.a.Processing,
-					[p.S.Available]: c.a.Available,
-					[p.S.Removed]: c.a.Removed
+					[p.T.NotAvailable]: c.a.NotAvailable,
+					[p.T.Processing]: c.a.Processing,
+					[p.T.Available]: c.a.Available,
+					[p.T.Removed]: c.a.Removed
 				},
 				re = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
@@ -32451,7 +32451,7 @@
 				return Boolean(null === (t = e.pollData) || void 0 === t ? void 0 : t.isPrediction)
 			}
 			i.d(t, "a", (function() {
-				return n.P
+				return n.Q
 			}))
 		},
 		"./src/reddit/models/Prediction/index.ts": function(e, t, i) {
@@ -35770,7 +35770,7 @@
 			var n = i("./node_modules/redux/es/redux.js"),
 				r = i("./src/reddit/actions/gold/constants.ts"),
 				s = i("./src/redditGQL/types.ts");
-			const o = e => e.category === s.q.Achievement,
+			const o = e => e.category === s.r.Achievement,
 				d = {};
 			var a = i("./node_modules/icepick/icepick.js"),
 				l = i("./src/reddit/actions/economics/powerups/constants.ts");
@@ -44087,7 +44087,7 @@
 						subredditId: t.id
 					});
 					if (!n) return;
-					i.tournamentId = n.tournamentId, i.tournamentState = n.status === Fe.P.Live || n.status === Fe.P.LiveInProgress ? "active" : "not_active";
+					i.tournamentId = n.tournamentId, i.tournamentState = n.status === Fe.Q.Live || n.status === Fe.Q.LiveInProgress ? "active" : "not_active";
 					const r = Object(de.h)(e, n.tournamentId).filter(e => e.predictionStatus === be.b.Open && e.endsAt > Date.now());
 					return r.length ? i.userState = r.some(e => !e.userSelection) ? "predictions_available" : "predicted_all" : i.userState = "no_available_predictions", i
 				},
@@ -45193,88 +45193,90 @@
 				})), i.d(t, "o", (function() {
 					return Qe
 				})), i.d(t, "p", (function() {
-					return at
+					return nt
 				})), i.d(t, "q", (function() {
-					return gt
+					return at
 				})), i.d(t, "r", (function() {
-					return wt
+					return gt
 				})), i.d(t, "s", (function() {
-					return $t
+					return wt
 				})), i.d(t, "t", (function() {
-					return Qt
+					return $t
 				})), i.d(t, "u", (function() {
-					return ni
+					return Qt
 				})), i.d(t, "v", (function() {
-					return ci
+					return ni
 				})), i.d(t, "w", (function() {
-					return _i
+					return ci
 				})), i.d(t, "x", (function() {
-					return mi
+					return _i
 				})), i.d(t, "y", (function() {
-					return gi
+					return mi
 				})), i.d(t, "z", (function() {
-					return vi
+					return gi
 				})), i.d(t, "A", (function() {
-					return wi
+					return vi
 				})), i.d(t, "B", (function() {
-					return yi
+					return wi
 				})), i.d(t, "C", (function() {
-					return Ti
+					return yi
 				})), i.d(t, "D", (function() {
-					return Si
+					return Ti
 				})), i.d(t, "E", (function() {
-					return Oi
+					return Si
 				})), i.d(t, "F", (function() {
-					return Ri
+					return Oi
 				})), i.d(t, "G", (function() {
-					return Fi
+					return Ri
 				})), i.d(t, "H", (function() {
-					return ki
+					return Fi
 				})), i.d(t, "I", (function() {
-					return Xi
+					return ki
 				})), i.d(t, "J", (function() {
-					return sn
+					return Xi
 				})), i.d(t, "K", (function() {
-					return dn
+					return sn
 				})), i.d(t, "L", (function() {
-					return an
+					return dn
 				})), i.d(t, "M", (function() {
-					return cn
+					return an
 				})), i.d(t, "N", (function() {
-					return mn
+					return cn
 				})), i.d(t, "O", (function() {
-					return wn
+					return mn
 				})), i.d(t, "P", (function() {
-					return Sn
+					return wn
 				})), i.d(t, "Q", (function() {
-					return On
+					return Sn
 				})), i.d(t, "R", (function() {
-					return Fn
+					return On
 				})), i.d(t, "S", (function() {
-					return Hn
+					return Fn
 				})), i.d(t, "T", (function() {
-					return zn
+					return Hn
 				})), i.d(t, "U", (function() {
-					return Jn
+					return zn
 				})), i.d(t, "V", (function() {
-					return ir
+					return Jn
 				})), i.d(t, "W", (function() {
-					return rr
+					return ir
 				})), i.d(t, "X", (function() {
-					return Fr
+					return rr
 				})), i.d(t, "Y", (function() {
-					return Mr
+					return Fr
 				})), i.d(t, "Z", (function() {
-					return Ur
+					return Mr
 				})), i.d(t, "ab", (function() {
-					return Gr
+					return Ur
 				})), i.d(t, "bb", (function() {
-					return qr
+					return Gr
 				})), i.d(t, "cb", (function() {
-					return Qr
+					return qr
 				})), i.d(t, "db", (function() {
-					return ls
+					return Qr
 				})), i.d(t, "eb", (function() {
+					return ls
+				})), i.d(t, "fb", (function() {
 					return us
 				})),
 				function(e) {
@@ -51013,4 +51015,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.2e3c69b4a84cf795e60b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.459e51aac75c76cd7031.js.map

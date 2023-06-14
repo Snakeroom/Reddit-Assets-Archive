@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.3b783471825354665fa3.js
-// Retrieved at 6/13/2023, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.ba17b03b03ebb8558b1f.js
+// Retrieved at 6/14/2023, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -696,7 +696,7 @@
 						includeExposureEvents: !!t.isFirstLoad,
 						recentPostIds: e.posts.recent
 					};
-					return f ? (O.sort = V.L.Best, O.feedRankingContext.variant = "lo_d2x_def_pop") : d && (O.sort = d.toUpperCase()), O.feedRankingContext.loggedOutAllowNsfw = Object(Z.a)(e), m && (O.range = m.toUpperCase()), c ? O.pageSize = Object(g.a)(i) : l && (O.pageSize = l), _ && _.ad && (O.forceAds = {
+					return f ? (O.sort = V.M.Best, O.feedRankingContext.variant = "lo_d2x_def_pop") : d && (O.sort = d.toUpperCase()), O.feedRankingContext.loggedOutAllowNsfw = Object(Z.a)(e), m && (O.range = m.toUpperCase()), c ? O.pageSize = Object(g.a)(i) : l && (O.pageSize = l), _ && _.ad && (O.forceAds = {
 						ad: _.ad
 					}), s && (O.after = Object(o.a)(s)), O
 				},
@@ -1169,7 +1169,7 @@
 					const a = Object(c.d)(),
 						n = Object(c.f)(),
 						o = Object(r.useMemo)(() => ({
-							experience: m.cb.AnnouncementInFeed,
+							experience: m.db.AnnouncementInFeed,
 							uxVariant: {
 								variantId: e
 							}
@@ -1195,7 +1195,7 @@
 				b = (e, t) => {
 					const a = Object(c.f)(),
 						n = Object(r.useMemo)(() => ({
-							experience: m.cb.AnnouncementInFeed,
+							experience: m.db.AnnouncementInFeed,
 							uxVariant: {
 								variantId: e
 							}
@@ -1222,7 +1222,7 @@
 						Object(l.a)(d(a, e, t, "view"))
 					})(e, t, n());
 					const o = {
-						experience: m.cb.AnnouncementInFeed,
+						experience: m.db.AnnouncementInFeed,
 						uxVariant: {
 							variantId: e
 						}
@@ -5951,4 +5951,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.3b783471825354665fa3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.ba17b03b03ebb8558b1f.js.map

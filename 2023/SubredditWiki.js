@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.d0acb662ee5f3314efb9.js
-// Retrieved at 6/13/2023, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.1527a67ef95aa2243299.js
+// Retrieved at 6/14/2023, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -2966,24 +2966,24 @@
 					})
 				},
 				f = {
-					[i.W.Low]: s.fbt._("Low", null, {
+					[i.X.Low]: s.fbt._("Low", null, {
 						hk: "4k3iTe"
 					}),
-					[i.W.High]: s.fbt._("High (default)", null, {
+					[i.X.High]: s.fbt._("High (default)", null, {
 						hk: "2GOHsH"
 					}),
-					[i.W.All]: s.fbt._("All", null, {
+					[i.X.All]: s.fbt._("All", null, {
 						hk: "gl6gc"
 					})
 				},
 				x = {
-					[i.W.Low]: s.fbt._("Low (default)", null, {
+					[i.X.Low]: s.fbt._("Low (default)", null, {
 						hk: "2tqJd7"
 					}),
-					[i.W.High]: s.fbt._("High", null, {
+					[i.X.High]: s.fbt._("High", null, {
 						hk: "ABfkc"
 					}),
-					[i.W.All]: s.fbt._("All", null, {
+					[i.X.All]: s.fbt._("All", null, {
 						hk: "3bPDOM"
 					})
 				},
@@ -4843,7 +4843,7 @@
 								type: e
 							}
 						}))(m)), y(!1), n(Object(o.c)({
-							experience: E.cb.LanguagePreferenceBottomSheet,
+							experience: E.db.LanguagePreferenceBottomSheet,
 							value: !1
 						}))
 					},
@@ -4876,7 +4876,7 @@
 								})
 							}))
 						})(), y(!1), n(Object(o.c)({
-							experience: E.cb.LanguagePreferenceBottomSheet,
+							experience: E.db.LanguagePreferenceBottomSheet,
 							value: !1
 						}))
 					};
@@ -4889,7 +4889,7 @@
 						...Object(h.d)(t),
 						type: e
 					}
-				}))(m)), n(Object(o.d)(E.cb.LanguagePreferenceBottomSheet)), i.a.createElement("div", {
+				}))(m)), n(Object(o.d)(E.db.LanguagePreferenceBottomSheet)), i.a.createElement("div", {
 					className: l.a.PromptContainer
 				}, i.a.createElement("div", {
 					className: l.a.PromptClose
@@ -4929,7 +4929,7 @@
 					gqlContext: n
 				} = e, s = Object(r.f)().getState();
 				return (null === (t = Object(r.e)(e => Object(C.a)(e, {
-					experience: E.cb.LanguagePreferenceBottomSheet
+					experience: E.db.LanguagePreferenceBottomSheet
 				}))) || void 0 === t ? void 0 : t.value) && Object(y.b)(s) ? i.a.createElement(w, {
 					gqlContext: n
 				}) : null
@@ -11614,4 +11614,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.d0acb662ee5f3314efb9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.1527a67ef95aa2243299.js.map

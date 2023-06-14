@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.6da02d5f1e7e44a7f280.js
-// Retrieved at 6/13/2023, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.32c4f1924a92b47e25dc.js
+// Retrieved at 6/14/2023, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~SubredditForkingCTA"], {
 		"./src/lib/asyncActions/index.ts": function(e, t, r) {
@@ -1058,7 +1058,7 @@
 							scheduledPostId: u
 						});
 					if (f && Object(d.a)(Object(C.r)(f)(i)), t(q(a)), e.postFieldValidationPending && (await e.postFieldValidationPending, Object(N.x)(r()))) return;
-					if (e.postGuidanceValidationPending && (await e.postGuidanceValidationPending, Object(R.b)(r()))) return;
+					if (e.postGuidanceValidationPending && (await e.postGuidanceValidationPending, Object(R.c)(r()))) return;
 					const {
 						isPoll: m,
 						polls: h
@@ -1087,7 +1087,7 @@
 						u = Object(D.b)(i);
 					if (!a || !c.id || !o) return;
 					if (t(q(a)), e.postFieldValidationPending && (await e.postFieldValidationPending, Object(N.x)(r()))) return;
-					if (e.postGuidanceValidationPending && (await e.postGuidanceValidationPending, Object(R.b)(r()))) return;
+					if (e.postGuidanceValidationPending && (await e.postGuidanceValidationPending, Object(R.c)(r()))) return;
 					const {
 						isPoll: l,
 						polls: f
@@ -1125,7 +1125,7 @@
 						g = Q(_, u);
 					if (!b) return;
 					if (t(q(b)), e.postFieldValidationPending && (await e.postFieldValidationPending, Object(N.x)(r()))) return;
-					if (e.postGuidanceValidationPending && (await e.postGuidanceValidationPending, Object(R.b)(r()))) return;
+					if (e.postGuidanceValidationPending && (await e.postGuidanceValidationPending, Object(R.c)(r()))) return;
 					let j;
 					t(Object(l.b)({
 						action: i.a.PostSubmit,
@@ -3222,4 +3222,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.6da02d5f1e7e44a7f280.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.32c4f1924a92b47e25dc.js.map

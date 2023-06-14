@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.288f2e342d8e3446411e.js
-// Retrieved at 6/13/2023, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.0d462f3d3fe4db96cc3b.js
+// Retrieved at 6/14/2023, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -5529,24 +5529,24 @@
 					})
 				},
 				g = {
-					[s.W.Low]: r.fbt._("Low", null, {
+					[s.X.Low]: r.fbt._("Low", null, {
 						hk: "4k3iTe"
 					}),
-					[s.W.High]: r.fbt._("High (default)", null, {
+					[s.X.High]: r.fbt._("High (default)", null, {
 						hk: "2GOHsH"
 					}),
-					[s.W.All]: r.fbt._("All", null, {
+					[s.X.All]: r.fbt._("All", null, {
 						hk: "gl6gc"
 					})
 				},
 				_ = {
-					[s.W.Low]: r.fbt._("Low (default)", null, {
+					[s.X.Low]: r.fbt._("Low (default)", null, {
 						hk: "2tqJd7"
 					}),
-					[s.W.High]: r.fbt._("High", null, {
+					[s.X.High]: r.fbt._("High", null, {
 						hk: "ABfkc"
 					}),
-					[s.W.All]: r.fbt._("All", null, {
+					[s.X.All]: r.fbt._("All", null, {
 						hk: "3bPDOM"
 					})
 				},
@@ -7587,7 +7587,7 @@
 						})),
 						r = Object(o.e)(e => n ? Object(N.h)(e, n.tournamentId) : []);
 					if (!n) return null;
-					if (n.status === k.P.Closed) return s.a.createElement(R, null);
+					if (n.status === k.Q.Closed) return s.a.createElement(R, null);
 					const i = r.filter(e => e.predictionStatus === S.b.Open && e.endsAt > Date.now()),
 						a = i.length > 0,
 						c = i.length && i.some(e => !e.userSelection);
@@ -20014,10 +20014,10 @@
 					}
 				},
 				W = (e, t) => {
-					const n = l.d(e, {
+					const n = l.e(e, {
 							subredditName: t
 						}),
-						r = l.f(e);
+						r = l.g(e);
 					return {
 						automoderator: {
 							automod_post_guidance: !!n && n.postGuidanceConfig.length > 0,
@@ -26726,16 +26726,18 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return r
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "e", (function() {
 				return s
 			})), n.d(t, "b", (function() {
 				return o
-			})), n.d(t, "e", (function() {
-				return i
 			})), n.d(t, "c", (function() {
-				return a
+				return i
 			})), n.d(t, "f", (function() {
+				return a
+			})), n.d(t, "d", (function() {
 				return c
+			})), n.d(t, "g", (function() {
+				return d
 			}));
 			const r = (e, t) => {
 					let {
@@ -26749,10 +26751,16 @@
 					} = t;
 					return e.postGuidance.models[n.toLowerCase()]
 				},
-				o = e => e.creations.formState.postGuidance.isBlockRuleTriggered,
-				i = e => e.creations.formState.postGuidance.titleTriggeredRules,
-				a = e => e.creations.formState.postGuidance.bodyTriggeredRules,
-				c = e => e.creations.formState.postGuidance.uniqueRules
+				o = (e, t) => {
+					let {
+						subredditId: n
+					} = t;
+					return e.postGuidance.allowlist[n]
+				},
+				i = e => e.creations.formState.postGuidance.isBlockRuleTriggered,
+				a = e => e.creations.formState.postGuidance.titleTriggeredRules,
+				c = e => e.creations.formState.postGuidance.bodyTriggeredRules,
+				d = e => e.creations.formState.postGuidance.uniqueRules
 		},
 		"./src/reddit/selectors/searchQueryId.ts": function(e, t, n) {
 			"use strict";
@@ -26910,4 +26918,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.288f2e342d8e3446411e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.0d462f3d3fe4db96cc3b.js.map

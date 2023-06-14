@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HappeningNow.8bea3cd8d2fec9b7e135.js
-// Retrieved at 5/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HappeningNow.5cb1173194dba5cbd8ad.js
+// Retrieved at 6/14/2023, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HappeningNow"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -854,14 +854,14 @@
 									s[e.id] = e
 								}
 								switch (c) {
-									case v.t.Chat: {
+									case v.u.Chat: {
 										const e = null === (r = null === (n = null === (t = null == l ? void 0 : l.commentForest) || void 0 === t ? void 0 : t.trees) || void 0 === n ? void 0 : n.map(e => f(null == e ? void 0 : e.node))) || void 0 === r ? void 0 : r.filter(d.a);
 										(null == e ? void 0 : e.length) && u.push(...e);
 										const a = f(l.authorInfo);
 										a && u.push(a);
 										break
 									}
-									case v.t.Talk:
+									case v.u.Talk:
 										C = l.talkRoom, Array.isArray(null === (a = null == l ? void 0 : l.talkRoom) || void 0 === a ? void 0 : a.topUsers) && u.push(...l.talkRoom.topUsers)
 								}
 								return {
@@ -1074,11 +1074,11 @@
 				ee = n("./src/reddit/components/HappeningNow/Post/Header/index.m.less"),
 				te = n.n(ee);
 			const ne = {
-				[v.t.Unknown]: "",
-				[v.t.Chat]: r.fbt._("Chat", null, {
+				[v.u.Unknown]: "",
+				[v.u.Chat]: r.fbt._("Chat", null, {
 					hk: "1oa6K"
 				}),
-				[v.t.Talk]: r.fbt._("Talk", null, {
+				[v.u.Talk]: r.fbt._("Talk", null, {
 					hk: "1lMkQn"
 				})
 			};
@@ -1111,7 +1111,7 @@
 					}), o.a.createElement(W.b, {
 						className: te.a.subredditIcon,
 						iconUrl: d
-					}), t.contentType === v.t.Chat ? o.a.createElement(z, {
+					}), t.contentType === v.u.Chat ? o.a.createElement(z, {
 						className: Object(i.a)(te.a.liveChatIcon, {
 							[te.a.nightMode]: c
 						})
@@ -1339,10 +1339,10 @@
 						onClick: () => {
 							var e;
 							switch (u.contentType) {
-								case v.t.Chat:
+								case v.u.Chat:
 									d(Object(Pe.a)(p.permalink));
 									break;
-								case v.t.Talk:
+								case v.u.Talk:
 									window.open(`${k.a.redditUrl}/talk/${null===(e=u.talkRoom)||void 0===e?void 0:e.roomId}`)
 							}
 							m(Object(j.d)(t))
@@ -1738,11 +1738,11 @@
 				ot = n("./src/reddit/pages/HappeningNow/index.m.less"),
 				st = n.n(ot);
 			const it = {
-					[v.s.Unknown]: "",
-					[v.s.Popular]: r.fbt._("Popular", null, {
+					[v.t.Unknown]: "",
+					[v.t.Popular]: r.fbt._("Popular", null, {
 						hk: "2pUvlx"
 					}),
-					[v.s.Recommended]: r.fbt._("For you", null, {
+					[v.t.Recommended]: r.fbt._("For you", null, {
 						hk: "19HGNV"
 					})
 				},
@@ -1771,29 +1771,29 @@
 						className: st.a.outer
 					}, o.a.createElement("h1", {
 						className: st.a.header
-					}, it[v.s.Popular]), o.a.createElement(at, null, e.map(e => o.a.createElement(Ve, {
+					}, it[v.t.Popular]), o.a.createElement(at, null, e.map(e => o.a.createElement(Ve, {
 						key: e,
 						postId: e,
 						showVotes: !1,
 						showBodyContent: !1,
 						titleLineCount: 2,
-						itemKey: lt(v.s.Popular, e)
+						itemKey: lt(v.t.Popular, e)
 					})))), o.a.createElement("div", {
 						className: st.a.twoColumnLayout
 					}, o.a.createElement("div", {
 						className: Object(i.a)(st.a.column, st.a.content)
 					}, !!t.length && o.a.createElement(Ge, {
-						title: it[v.s.Recommended]
+						title: it[v.t.Recommended]
 					}, t.map(e => o.a.createElement(Ve, {
 						key: e,
 						postId: e,
-						itemKey: lt(v.s.Recommended, e)
+						itemKey: lt(v.t.Recommended, e)
 					}))), !!e.length && !n && o.a.createElement(Ge, {
-						title: it[v.s.Popular]
+						title: it[v.t.Popular]
 					}, e.map(e => o.a.createElement(Ve, {
 						key: e,
 						postId: e,
-						itemKey: lt(v.s.Popular, e)
+						itemKey: lt(v.t.Popular, e)
 					})))), o.a.createElement(ct, {
 						addTopMargin: !0
 					})))
@@ -1832,4 +1832,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.8bea3cd8d2fec9b7e135.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.5cb1173194dba5cbd8ad.js.map

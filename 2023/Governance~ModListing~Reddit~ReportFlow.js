@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow.fd5305e0a3b29d837812.js
-// Retrieved at 6/13/2023, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow.bca42b536069bdba25bf.js
+// Retrieved at 6/14/2023, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow"], {
 		"./src/lib/assertNever.ts": function(t, e, i) {
@@ -2540,10 +2540,10 @@
 					}
 				},
 				G = (t, e) => {
-					const i = d.d(t, {
+					const i = d.e(t, {
 							subredditName: e
 						}),
-						n = d.f(t);
+						n = d.g(t);
 					return {
 						automoderator: {
 							automod_post_guidance: !!i && i.postGuidanceConfig.length > 0,
@@ -3076,16 +3076,18 @@
 			"use strict";
 			i.d(e, "a", (function() {
 				return n
-			})), i.d(e, "d", (function() {
+			})), i.d(e, "e", (function() {
 				return r
 			})), i.d(e, "b", (function() {
 				return o
-			})), i.d(e, "e", (function() {
-				return s
 			})), i.d(e, "c", (function() {
-				return l
+				return s
 			})), i.d(e, "f", (function() {
+				return l
+			})), i.d(e, "d", (function() {
 				return c
+			})), i.d(e, "g", (function() {
+				return a
 			}));
 			const n = (t, e) => {
 					let {
@@ -3099,10 +3101,16 @@
 					} = e;
 					return t.postGuidance.models[i.toLowerCase()]
 				},
-				o = t => t.creations.formState.postGuidance.isBlockRuleTriggered,
-				s = t => t.creations.formState.postGuidance.titleTriggeredRules,
-				l = t => t.creations.formState.postGuidance.bodyTriggeredRules,
-				c = t => t.creations.formState.postGuidance.uniqueRules
+				o = (t, e) => {
+					let {
+						subredditId: i
+					} = e;
+					return t.postGuidance.allowlist[i]
+				},
+				s = t => t.creations.formState.postGuidance.isBlockRuleTriggered,
+				l = t => t.creations.formState.postGuidance.titleTriggeredRules,
+				c = t => t.creations.formState.postGuidance.bodyTriggeredRules,
+				a = t => t.creations.formState.postGuidance.uniqueRules
 		},
 		"./src/reddit/selectors/tooltip.ts": function(t, e, i) {
 			"use strict";
@@ -3128,4 +3136,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow.fd5305e0a3b29d837812.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow.bca42b536069bdba25bf.js.map

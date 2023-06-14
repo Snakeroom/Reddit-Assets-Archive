@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.f2e3821523174e4c5cc1.js
-// Retrieved at 6/13/2023, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.b7e58b2e74adc4122a7b.js
+// Retrieved at 6/14/2023, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit~StandalonePostPage", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -3710,7 +3710,7 @@
 							scheduledPostId: l
 						});
 					if (h && Object(i.a)(Object(k.r)(h)(s)), t(U(c)), e.postFieldValidationPending && (await e.postFieldValidationPending, Object(N.x)(n()))) return;
-					if (e.postGuidanceValidationPending && (await e.postGuidanceValidationPending, Object(M.b)(n()))) return;
+					if (e.postGuidanceValidationPending && (await e.postGuidanceValidationPending, Object(M.c)(n()))) return;
 					const {
 						isPoll: b,
 						polls: f
@@ -3739,7 +3739,7 @@
 						l = Object(D.b)(s);
 					if (!c || !d.id || !a) return;
 					if (t(U(c)), e.postFieldValidationPending && (await e.postFieldValidationPending, Object(N.x)(n()))) return;
-					if (e.postGuidanceValidationPending && (await e.postGuidanceValidationPending, Object(M.b)(n()))) return;
+					if (e.postGuidanceValidationPending && (await e.postGuidanceValidationPending, Object(M.c)(n()))) return;
 					const {
 						isPoll: u,
 						polls: h
@@ -3777,7 +3777,7 @@
 						y = J(C, l);
 					if (!m) return;
 					if (t(U(m)), e.postFieldValidationPending && (await e.postFieldValidationPending, Object(N.x)(n()))) return;
-					if (e.postGuidanceValidationPending && (await e.postGuidanceValidationPending, Object(M.b)(n()))) return;
+					if (e.postGuidanceValidationPending && (await e.postGuidanceValidationPending, Object(M.c)(n()))) return;
 					let x;
 					t(Object(u.b)({
 						action: s.a.PostSubmit,
@@ -5428,7 +5428,7 @@
 							tooltipId: e,
 							args: {
 								isModNotesView: !0,
-								modNotesFilter: g.y.Note
+								modNotesFilter: g.z.Note
 							}
 						})), E(Object(c.a)(n.id, n.authorId))
 					}, [n, y, C, E]);
@@ -9541,7 +9541,7 @@
 								type: e
 							}
 						}))(m)), x(!1), n(Object(a.c)({
-							experience: _.cb.LanguagePreferenceBottomSheet,
+							experience: _.db.LanguagePreferenceBottomSheet,
 							value: !1
 						}))
 					},
@@ -9574,7 +9574,7 @@
 								})
 							}))
 						})(), x(!1), n(Object(a.c)({
-							experience: _.cb.LanguagePreferenceBottomSheet,
+							experience: _.db.LanguagePreferenceBottomSheet,
 							value: !1
 						}))
 					};
@@ -9587,7 +9587,7 @@
 						...Object(b.d)(t),
 						type: e
 					}
-				}))(m)), n(Object(a.d)(_.cb.LanguagePreferenceBottomSheet)), r.a.createElement("div", {
+				}))(m)), n(Object(a.d)(_.db.LanguagePreferenceBottomSheet)), r.a.createElement("div", {
 					className: l.a.PromptContainer
 				}, r.a.createElement("div", {
 					className: l.a.PromptClose
@@ -9627,7 +9627,7 @@
 					gqlContext: n
 				} = e, o = Object(s.f)().getState();
 				return (null === (t = Object(s.e)(e => Object(E.a)(e, {
-					experience: _.cb.LanguagePreferenceBottomSheet
+					experience: _.db.LanguagePreferenceBottomSheet
 				}))) || void 0 === t ? void 0 : t.value) && Object(x.b)(o) ? r.a.createElement(j, {
 					gqlContext: n
 				}) : null
@@ -12312,7 +12312,7 @@
 					triggeredRules: t = [],
 					trackPostGuidanceView: n
 				} = e;
-				const [d, u] = Object(r.useState)(!1), m = t.filter(e => e.actionType === i.M.Block), p = m.length > 0 ? m : t, h = d ? p : p.slice(0, 5), b = Object(a.a)(h);
+				const [d, u] = Object(r.useState)(!1), m = t.filter(e => e.actionType === i.N.Block), p = m.length > 0 ? m : t, h = d ? p : p.slice(0, 5), b = Object(a.a)(h);
 				return Object(r.useEffect)(() => {
 					const e = h.map(e => e.guidanceId),
 						t = (null == b ? void 0 : b.map(e => e.guidanceId)) || [],
@@ -12321,10 +12321,10 @@
 				}, [t, h, b, n]), s.a.createElement("div", {
 					"data-testid": "post-guidance-validation"
 				}, s.a.createElement("ol", null, h.map((e, t) => s.a.createElement("li", {
-					className: `${e.actionType===i.M.Block?l.a.errorText:""} text-12 pt-2xs`,
+					className: `${e.actionType===i.N.Block?l.a.errorText:""} text-12 pt-2xs`,
 					key: t
 				}, e.validationMessage.richtext ? s.a.createElement(c.b, {
-					className: `${e.actionType===i.M.Block?l.a.errorText:""} !text-12 !pt-2xs`,
+					className: `${e.actionType===i.N.Block?l.a.errorText:""} !text-12 !pt-2xs`,
 					useExplicitTextColor: !0,
 					content: JSON.parse(e.validationMessage.richtext),
 					rtJsonElementProps: {}
@@ -25937,14 +25937,14 @@
 						...i,
 						variables: t
 					});
-					return !!Object(s.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(d.O.Talk)
+					return !!Object(s.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(d.P.Talk)
 				}, m = async (e, t) => {
 					var n, o;
 					const i = await Object(r.a)(e, {
 						...a,
 						variables: t
 					});
-					return !!Object(s.c)(i) && (null !== (o = null === (n = i.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(d.O.Talk)
+					return !!Object(s.c)(i) && (null !== (o = null === (n = i.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(d.P.Talk)
 				};
 			d.k.ServiceError, o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 				hk: "3XqPJS"
@@ -25956,9 +25956,9 @@
 				hk: "2LYXJx"
 			}), d.k.SubredditRoomLimitExceeded, o.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
 				hk: "2mGf21"
-			}), d.Q.ServiceError, o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+			}), d.R.ServiceError, o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 				hk: "3XqPJS"
-			}), d.Q.UserNotAuthorized, o.fbt._("You don't have permission to start talks in this community.", null, {
+			}), d.R.UserNotAuthorized, o.fbt._("You don't have permission to start talks in this community.", null, {
 				hk: "1XY1Ss"
 			})
 		},
@@ -32600,7 +32600,7 @@
 					eventSchedule: w.p,
 					hasDraftError: A.f,
 					hasError: w.w,
-					postGuidanceBlockRuleTriggered: _.b,
+					postGuidanceBlockRuleTriggered: _.c,
 					hasSubmitValidationError: w.x,
 					destSubredditAboutInfo: w.g,
 					govType: e => e.creations.formData.govType,
@@ -35022,8 +35022,8 @@
 					poll: e => e.creations.formData.polls || void 0,
 					postCreationFieldErrors: Ot,
 					postRequirements: w.ub,
-					postGuidanceBodyTriggeredRules: _.c,
-					postGuidanceBlockRuleTriggered: _.b,
+					postGuidanceBodyTriggeredRules: _.d,
+					postGuidanceBlockRuleTriggered: _.c,
 					rteState: w.lb,
 					shouldAllowBodyText: w.nb,
 					subreddit: R.s,
@@ -35082,7 +35082,7 @@
 						this.setState({
 							hasFocus: !0
 						}), this.props.onFocus()
-					}, this.hasPostGuidanceBlockingError = () => this.props.postGuidanceBodyTriggeredRules.some(e => e.actionType === yd.M.Block), this.showPostGuidance = () => this.state.hasFocus || this.hasPostGuidanceBlockingError()
+					}, this.hasPostGuidanceBlockingError = () => this.props.postGuidanceBodyTriggeredRules.some(e => e.actionType === yd.N.Block), this.showPostGuidance = () => this.state.hasFocus || this.hasPostGuidanceBlockingError()
 				}
 				componentDidMount() {
 					const {
@@ -35589,8 +35589,8 @@
 					pending: w.eb,
 					postCreationFieldErrors: Ot,
 					postRequirements: w.ub,
-					postGuidanceBlockRuleTriggered: _.b,
-					postGuidanceTitleTriggeredRules: _.e,
+					postGuidanceBlockRuleTriggered: _.c,
+					postGuidanceTitleTriggeredRules: _.f,
 					shouldAllowBodyText: w.nb,
 					submissionType: w.a,
 					subreddit: R.s,
@@ -35627,7 +35627,7 @@
 						postGuidanceTitleTriggeredRules: l,
 						postCreationFieldErrors: u,
 						subreddit: m
-					} = e, b = e.submissionType === h.bc.POST && !e.shouldAllowBodyText, f = l.some(e => e.actionType === yd.M.Block), g = u[h.Cb.TITLE].length > 0 || f, v = t ? ft.f : c && c.titleTextMaxLength || ft.f, C = e.submissionType === h.bc.PREDICTION, y = C ? d.fbt._("e.g. Who will win best actress at the Oscars this year?", null, {
+					} = e, b = e.submissionType === h.bc.POST && !e.shouldAllowBodyText, f = l.some(e => e.actionType === yd.N.Block), g = u[h.Cb.TITLE].length > 0 || f, v = t ? ft.f : c && c.titleTextMaxLength || ft.f, C = e.submissionType === h.bc.PREDICTION, y = C ? d.fbt._("e.g. Who will win best actress at the Oscars this year?", null, {
 						hk: "YLQFW"
 					}) : d.fbt._("Title", null, {
 						hk: "j3s6r"
@@ -36056,7 +36056,7 @@
 						var n;
 						const o = Object(R.q)(e, t);
 						if (!o) return !1;
-						const r = Object(_.d)(e, {
+						const r = Object(_.e)(e, {
 								subredditName: o.name.toLowerCase()
 							}),
 							s = Object(Xl.c)(e, {
@@ -40141,4 +40141,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.f2e3821523174e4c5cc1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.b7e58b2e74adc4122a7b.js.map

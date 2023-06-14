@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.bfeda117f25cb74253af.js
-// Retrieved at 6/13/2023, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.b9df33d9f3d112f00f52.js
+// Retrieved at 6/14/2023, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ConvertToCoinsModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, n) {
@@ -505,7 +505,7 @@
 						const E = i();
 						let O, C, M = "";
 						try {
-							M = await e(x(r, a, c, s, g.I.Stripe))
+							M = await e(x(r, a, c, s, g.J.Stripe))
 						} catch (N) {
 							return u.c.captureException(N), void(N.message && e(Object(f.stripeApiError)(N.message)))
 						}
@@ -515,7 +515,7 @@
 							if (r.type === p.c.Coinpack && Object(b.p)(E)) try {
 								const n = await Object(y.g)(d(), {
 									orderId: M,
-									provider: g.I.Stripe
+									provider: g.J.Stripe
 								});
 								if (!(null == n ? void 0 : n.ok)) return void e(P);
 								const {
@@ -590,7 +590,7 @@
 						var m;
 						let b = "";
 						try {
-							b = await e(x(t, n, r, a, g.I.Paypal))
+							b = await e(x(t, n, r, a, g.J.Paypal))
 						} catch (C) {
 							return u.c.captureException(C), C.message && e(Object(f.paypalApiError)(C.message)), null
 						}
@@ -1586,9 +1586,9 @@
 				q = n("./src/reddit/components/Governance/Token/index.tsx"),
 				Q = n("./src/reddit/components/Governance/TransactionModals/Common/CurrentBalance.tsx"),
 				H = n("./src/reddit/components/Governance/TransactionModals/ConvertToCoinsModal/ApprovalOverview.m.less"),
-				Y = n.n(H);
+				J = n.n(H);
 			const {
-				fbt: J
+				fbt: Y
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
 			function X(e, t) {
@@ -1606,13 +1606,13 @@
 					tokenConversion: i
 				} = e, l = new O.a(t).dividedBy(i), d = X(n, t);
 				return a.a.createElement("div", {
-					className: Y.a.container
+					className: J.a.container
 				}, a.a.createElement("div", {
-					className: Y.a.conversion
+					className: J.a.conversion
 				}, a.a.createElement("div", {
-					className: Y.a.pointsAmount
+					className: J.a.pointsAmount
 				}, a.a.createElement(V.c, {
-					className: Y.a.pointsInput,
+					className: J.a.pointsInput,
 					disabled: !n,
 					type: "number",
 					label: `${o.displayText} ${c}`,
@@ -1631,10 +1631,10 @@
 						e.onChange(s, c)
 					}
 				}), a.a.createElement(q.a, {
-					className: Y.a.pointsInputIcon,
+					className: J.a.pointsInputIcon,
 					subredditId: o.id
 				})), a.a.createElement("div", {
-					className: Y.a.chevron
+					className: J.a.chevron
 				}, a.a.createElement("svg", {
 					width: "8",
 					height: "24",
@@ -1648,25 +1648,25 @@
 					strokeLinecap: "round",
 					strokeLinejoin: "round"
 				}))), a.a.createElement("div", {
-					className: Y.a.coinsAmount
+					className: J.a.coinsAmount
 				}, a.a.createElement(U.a, {
-					className: Y.a.coinIcon
+					className: J.a.coinIcon
 				}), !n && s ? a.a.createElement(W.a, {
-					className: Y.a.loadingIcon,
+					className: J.a.loadingIcon,
 					sizePx: 5
 				}) : d, a.a.createElement("div", {
-					className: Y.a.coinsLabel
-				}, J._("Reddit Coins", null, {
+					className: J.a.coinsLabel
+				}, Y._("Reddit Coins", null, {
 					hk: "4n6R5v"
 				})))), a.a.createElement(Q.a, {
 					subredditId: o.id
 				}), n || s ? a.a.createElement("div", {
-					className: Y.a.disclaimer
-				}, J._("Note: converted Coins will be only eligible for use in the community you've earned points. You'll see your updated coin balance when giving awards in this community.", null, {
+					className: J.a.disclaimer
+				}, Y._("Note: converted Coins will be only eligible for use in the community you've earned points. You'll see your updated coin balance when giving awards in this community.", null, {
 					hk: "1AgEx3"
 				})) : a.a.createElement("div", {
-					className: Y.a.errorLoading
-				}, J._("There was an error loading the conversion price. Please try again later.", null, {
+					className: J.a.errorLoading
+				}, Y._("There was an error loading the conversion price. Please try again later.", null, {
 					hk: "NYpbS"
 				})))
 			}
@@ -2808,4 +2808,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.bfeda117f25cb74253af.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.b9df33d9f3d112f00f52.js.map

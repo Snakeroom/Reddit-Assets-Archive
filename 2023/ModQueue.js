@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.3d46b6373de385f8bf68.js
-// Retrieved at 6/8/2023, 8:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.b50bcd07d5eab1e7be3c.js
+// Retrieved at 6/14/2023, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, o) {
@@ -299,16 +299,16 @@
 				E = o("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts"),
 				k = o("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts");
 			const x = {
-					[n.wb.Edited]: S.F.Edited,
-					[n.wb.Modqueue]: S.F.Mod,
-					[n.wb.Reports]: S.F.Reported,
-					[n.wb.Spam]: S.F.Removed,
-					[n.wb.Unmoderated]: S.F.Unmoderated
+					[n.wb.Edited]: S.G.Edited,
+					[n.wb.Modqueue]: S.G.Mod,
+					[n.wb.Reports]: S.G.Reported,
+					[n.wb.Spam]: S.G.Removed,
+					[n.wb.Unmoderated]: S.G.Unmoderated
 				},
 				M = {
-					comments: S.D.Comment,
-					links: S.D.Post,
-					chat_comments: S.D.ChatComment
+					comments: S.E.Comment,
+					links: S.E.Post,
+					chat_comments: S.E.ChatComment
 				};
 
 			function I(e) {
@@ -346,7 +346,7 @@
 					...!!s.profile && {
 						subredditIds: [s.profile]
 					},
-					sort: s.sort === v.a.MostReportedFirst ? S.E.SortReports : S.E.SortDate,
+					sort: s.sort === v.a.MostReportedFirst ? S.F.SortReports : S.F.SortDate,
 					...c,
 					includeAllModActivitySummaries: b,
 					includeModActivitySummariesByNames: !b,
@@ -609,8 +609,8 @@
 				q = o("./src/reddit/selectors/telemetry.ts"),
 				B = o("./src/telemetry/index.ts"),
 				U = o("./src/lib/initializeClient/installReducer.ts"),
-				V = o("./src/reddit/reducers/features/modActivitySummaries/index.ts"),
-				G = o("./node_modules/redux/es/redux.js"),
+				G = o("./src/reddit/reducers/features/modActivitySummaries/index.ts"),
+				V = o("./node_modules/redux/es/redux.js"),
 				H = o("./node_modules/icepick/icepick.js"),
 				$ = o("./src/reddit/actions/modQueue/constants.ts");
 			const K = {};
@@ -699,7 +699,7 @@
 							return e
 					}
 				},
-				Y = Object(G.c)({
+				Y = Object(V.c)({
 					models: z,
 					order: J
 				}),
@@ -711,7 +711,7 @@
 				}
 			}), Object(U.a)({
 				features: {
-					modActivitySummaries: V.a
+					modActivitySummaries: G.a
 				}
 			}), Object(U.a)({
 				features: {
@@ -1327,13 +1327,13 @@
 						mod_note: t.modNote
 					}
 				}),
-				V = (e, t, o) => Object(T.a)(Object(F.a)(e, [Q.a]), {
+				G = (e, t, o) => Object(T.a)(Object(F.a)(e, [Q.a]), {
 					endpoint: Object(q.a)(Object(B.a)(`${e.apiUrl}/api/v1/modactions/removal_${o}_message/`)),
 					method: A.ob.POST,
 					type: "json",
 					data: t
 				});
-			var G = o("./src/reddit/helpers/isPost.ts"),
+			var V = o("./src/reddit/helpers/isPost.ts"),
 				H = o("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
 				$ = o("./src/reddit/helpers/routeKey/index.ts"),
 				K = o("./src/reddit/models/ModQueue/index.ts"),
@@ -1450,7 +1450,7 @@
 					const u = a(),
 						l = u.user.account && u.user.account.displayText,
 						m = e[0],
-						b = Object(G.a)(m) ? W.e.Post : W.e.Comment,
+						b = Object(V.a)(m) ? W.e.Post : W.e.Comment,
 						p = b === W.e.Post ? u.posts.models[m] : u.features.comments.models[m],
 						f = b === W.e.Post ? N.Q : I.j;
 					if (!p || !l) return !1;
@@ -1477,7 +1477,7 @@
 									isLocked: n,
 									type: s
 								},
-								a = await V(c(), Object(W.h)(r, b), b);
+								a = await G(c(), Object(W.h)(r, b), b);
 							if (a.ok) {
 								if ([W.f.Public, W.f.PublicAsSubreddit].includes(s)) {
 									if (d(Se()), a.body) {
@@ -1580,7 +1580,7 @@
 									title: t.title,
 									type: r
 								},
-								n = await V(c(), Object(W.h)(s, W.e.Bulk), W.e.Bulk);
+								n = await G(c(), Object(W.h)(s, W.e.Bulk), W.e.Bulk);
 							n.ok ? (d(_e()), d(m)) : d(ye(n.error))
 						} else d(m)
 					} else d(he(p.error))
@@ -1927,4 +1927,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.3d46b6373de385f8bf68.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.b50bcd07d5eab1e7be3c.js.map

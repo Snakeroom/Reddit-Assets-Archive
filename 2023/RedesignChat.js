@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.6076b9ab285bc1bad698.js
-// Retrieved at 6/8/2023, 8:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.23695d529f508eb00eab.js
+// Retrieved at 6/14/2023, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -15,11 +15,11 @@
 			n.d(t, "a", (function() {
 				return a
 			})), n.d(t, "b", (function() {
-				return c
+				return r
 			}));
 			var s = n("./src/lib/makeActionCreator/index.ts");
 			const a = "NAVIGATE__HOST_APP_NAVIGATE",
-				c = Object(s.a)(a)
+				r = Object(s.a)(a)
 		},
 		"./src/chat/components/PortalContainer/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -40,8 +40,8 @@
 			}));
 			var s = n("./src/chat/contexts/ConnectFnsContext.tsx"),
 				a = n("./node_modules/react/index.js"),
-				c = n.n(a),
-				r = n("./node_modules/history/esm/history.js"),
+				r = n.n(a),
+				c = n("./node_modules/history/esm/history.js"),
 				i = n("./node_modules/js-cookie/dist/js.cookie.js"),
 				o = n.n(i),
 				d = n("./node_modules/redux-thunk/es/index.js"),
@@ -74,7 +74,7 @@
 			function B(e) {
 				return void 0 !== e ? e : -1
 			}
-			const S = w.a.wrapped(e => c.a.createElement("div", {
+			const S = w.a.wrapped(e => r.a.createElement("div", {
 					className: e.className
 				}, e.children), "BasePortalContainer", A.a),
 				R = w.a.wrapped(e => {
@@ -89,7 +89,7 @@
 						};
 					return Object(a.useEffect)(() => (document.addEventListener("focusin", s), () => {
 						document.removeEventListener("focusin", s)
-					})), c.a.createElement("div", {
+					})), r.a.createElement("div", {
 						ref: n,
 						className: e.className,
 						style: {
@@ -98,7 +98,7 @@
 						}
 					}, e.children)
 				}, "EmbedPortalContainer", A.a),
-				I = w.a.wrapped(e => c.a.createElement("div", {
+				I = w.a.wrapped(e => r.a.createElement("div", {
 					className: e.className,
 					style: {
 						width: `${B(k.width)}px`,
@@ -114,15 +114,15 @@
 			function q(e) {
 				switch (e.container) {
 					case M.a.EMBED:
-						return c.a.createElement(R, null, e.children);
+						return r.a.createElement(R, null, e.children);
 					case M.a.HIDDEN:
-						return c.a.createElement(I, null, e.children);
+						return r.a.createElement(I, null, e.children);
 					case M.a.FULL:
-						return c.a.createElement(U, null, e.children);
+						return r.a.createElement(U, null, e.children);
 					case M.a.MINIMIZED:
-						return c.a.createElement(D, null);
+						return r.a.createElement(D, null);
 					default:
-						return c.a.createElement(R, null, e.children)
+						return r.a.createElement(R, null, e.children)
 				}
 			}
 			var z = n("./src/chat/customMiddleware/channelsFilter.ts"),
@@ -143,8 +143,8 @@
 				ne = n("./src/chat/customMiddleware/uploadPrompt.ts"),
 				se = n("./node_modules/lodash/uniqueId.js"),
 				ae = n.n(se),
-				ce = n("./src/chat/constants/theme.ts"),
-				re = n("./src/chat/models/Theme/index.ts"),
+				re = n("./src/chat/constants/theme.ts"),
+				ce = n("./src/chat/models/Theme/index.ts"),
 				ie = n("./src/chat/reducers/experiments/helpers.ts"),
 				oe = n("./src/chat/reducers/meta/index.ts"),
 				de = n("./src/chat/reducers/platform/index.ts"),
@@ -155,8 +155,8 @@
 					const {
 						account: s,
 						language: a,
-						loid: c,
-						prefs: r,
+						loid: r,
+						prefs: c,
 						session: i,
 						sessionTracker: o
 					} = e.user;
@@ -173,9 +173,9 @@
 							totalKarma: null === (n = s.karma) || void 0 === n ? void 0 : n.total
 						} : null,
 						language: a,
-						loid: c,
+						loid: r,
 						prefs: {
-							...r,
+							...c,
 							invitePolicy: e.user.chatSettings.invitePolicy
 						},
 						sessionTracker: o,
@@ -191,11 +191,11 @@
 						const {
 							NIGHT: t,
 							REDDIT: n
-						} = ce.b, {
+						} = re.b, {
 							nightmode: s
 						} = e.user.prefs, a = s ? t : n;
 						e.themes = {
-							current: re.e[a],
+							current: ce.e[a],
 							chatTheme: null,
 							cached: {}
 						}, e.user.prefs.globalTheme = a
@@ -204,23 +204,23 @@
 				},
 				ge = (e, t, n) => {
 					const s = ae()(),
-						a = Object(r.c)(t.location, void 0, s),
-						c = Object(h.a)(Object(r.e)(a), n),
+						a = Object(c.c)(t.location, void 0, s),
+						r = Object(h.a)(Object(c.e)(a), n),
 						i = Object(de.b)(de.a, Object(v.e)({
 							location: a,
 							action: "PUSH",
-							routeMatch: c
+							routeMatch: r
 						}));
 					return e.platform = {
 						...i
 					}, e
 				},
 				fe = (e, t) => {
-					var n, s, a, c, r;
+					var n, s, a, r, c;
 					const i = {},
 						o = null === (n = e.platform.currentPage) || void 0 === n ? void 0 : n.queryParams;
 					for (const u in null === (a = null === (s = null == e ? void 0 : e.user) || void 0 === s ? void 0 : s.experiments) || void 0 === a ? void 0 : a.byName) i[u] = {
-						...null === (r = null === (c = null == e ? void 0 : e.user) || void 0 === c ? void 0 : c.experiments) || void 0 === r ? void 0 : r.byName[u],
+						...null === (c = null === (r = null == e ? void 0 : e.user) || void 0 === r ? void 0 : r.experiments) || void 0 === c ? void 0 : c.byName[u],
 						isOverride: !1
 					};
 					const d = Object(ie.a)(i, o);
@@ -238,7 +238,7 @@
 				pe = (e, t) => {
 					var n;
 					const s = null === (n = e.features) || void 0 === n ? void 0 : n.eligibleUXExperiences,
-						a = [le.cb.LiveChatVideoEdu].reduce((e, t) => {
+						a = [le.db.LiveChatVideoEdu].reduce((e, t) => {
 							const n = null == s ? void 0 : s.experiences[t];
 							return (null == n ? void 0 : n.fetched) ? {
 								...e,
@@ -285,22 +285,22 @@
 					routes: xe.a,
 					apiContext: Ce.apiContext,
 					gqlContext: we.gqlContext,
-					appFactory: (e, t) => c.a.createElement(b.a.Provider, {
+					appFactory: (e, t) => r.a.createElement(b.a.Provider, {
 						value: {
 							apiContext: Ce.apiContext,
 							gqlContext: we.gqlContext
 						}
-					}, c.a.createElement(s.a.Provider, {
+					}, r.a.createElement(s.a.Provider, {
 						value: a || {}
 					}, function(e, t) {
 						const n = Object(O.b)(L)(q);
-						return c.a.createElement("div", null, Object(C.d)(c.a.createElement(n, null, c.a.createElement(E.a, {
+						return r.a.createElement("div", null, Object(C.d)(r.a.createElement(n, null, r.a.createElement(E.a, {
 							router: e,
 							routes: t
 						})), document.body))
 					}(e, t))),
 					appName: u.n.Chat,
-					history: Object(r.d)({
+					history: Object(c.d)({
 						initialEntries: [n],
 						initialIndex: 0
 					}),
@@ -324,7 +324,7 @@
 							store: s
 						} = e;
 						return s.dispatch(Object(j.k)()), t.listen((e, t) => {
-							const a = Object(h.a)(Object(r.e)(e), n);
+							const a = Object(h.a)(Object(c.e)(e), n);
 							s.dispatch(Object(v.d)(e, t, a)), s.dispatch(Object(j.k)())
 						}), "undefined" != typeof window && window.addEventListener("load", async () => {
 							s.dispatch(Object(p.a)(!1, !1))
@@ -348,14 +348,14 @@
 			})), n.d(t, "b", (function() {
 				return a
 			})), n.d(t, "d", (function() {
-				return c
-			})), n.d(t, "a", (function() {
 				return r
+			})), n.d(t, "a", (function() {
+				return c
 			}));
 			const s = "APP_BADGES__PENDING",
 				a = "APP_BADGES__LOADED",
-				c = "APP_BADGES__UPDATED",
-				r = "APP_BADGES__FAILED"
+				r = "APP_BADGES__UPDATED",
+				c = "APP_BADGES__FAILED"
 		},
 		"./src/reddit/actions/appBadgeIndicators/index.ts": function(e, t, n) {
 			"use strict";
@@ -372,18 +372,18 @@
 			}));
 			var s = n("./src/lib/makeActionCreator/index.ts"),
 				a = n("./src/lib/makeRequest/index.ts"),
-				c = n("./src/reddit/actions/appBadgeIndicators/constants.ts"),
-				r = n("./src/reddit/actions/tabBadging.ts"),
+				r = n("./src/reddit/actions/appBadgeIndicators/constants.ts"),
+				c = n("./src/reddit/actions/tabBadging.ts"),
 				i = n("./src/lib/makeGqlRequest/index.ts"),
 				o = n("./src/redditGQL/operations/BadgeIndicators.json"),
 				d = e => Object(i.a)(e, {
 					...o
 				}),
 				u = n("./src/reddit/models/Badge/index.ts");
-			const l = Object(s.a)(c.c),
-				h = Object(s.a)(c.b),
-				b = Object(s.a)(c.d),
-				m = Object(s.a)(c.a),
+			const l = Object(s.a)(r.c),
+				h = Object(s.a)(r.b),
+				b = Object(s.a)(r.d),
+				m = Object(s.a)(r.a),
 				g = e => {
 					let {
 						key: t,
@@ -415,11 +415,11 @@
 						gqlContext: s
 					} = n;
 					e(l());
-					const c = await async function(e) {
-						var t, n, s, c;
-						const r = await d(e());
-						if (Object(a.c)(r) && (null === (n = null === (t = r.body) || void 0 === t ? void 0 : t.data) || void 0 === n ? void 0 : n.badgeIndicators)) {
-							const e = null === (c = null === (s = r.body) || void 0 === s ? void 0 : s.data) || void 0 === c ? void 0 : c.badgeIndicators;
+					const r = await async function(e) {
+						var t, n, s, r;
+						const c = await d(e());
+						if (Object(a.c)(c) && (null === (n = null === (t = c.body) || void 0 === t ? void 0 : t.data) || void 0 === n ? void 0 : n.badgeIndicators)) {
+							const e = null === (r = null === (s = c.body) || void 0 === s ? void 0 : s.data) || void 0 === r ? void 0 : r.badgeIndicators;
 							return {
 								...e,
 								chatUnreadMessages: {
@@ -428,7 +428,7 @@
 							}
 						}
 					}(s);
-					c ? (e(h(c)), e(Object(r.d)())) : e(m())
+					r ? (e(h(r)), e(Object(c.d)())) : e(m())
 				};
 			const v = () => async e => {
 				const t = g({
@@ -443,8 +443,8 @@
 			n.r(t);
 			var s = n("./node_modules/lodash/isEqual.js"),
 				a = n.n(s),
-				c = n("./node_modules/react-router-redux/es/index.js"),
-				r = n("./src/chat/actions/message/unreadCount.ts"),
+				r = n("./node_modules/react-router-redux/es/index.js"),
+				c = n("./src/chat/actions/message/unreadCount.ts"),
 				i = n("./src/chat/actions/navigate.ts"),
 				o = n("./src/chat/actions/surveyTrigger/index.ts"),
 				d = n("./src/reddit/actions/appBadgeIndicators/index.ts"),
@@ -452,10 +452,10 @@
 				l = n("./src/reddit/actions/tabBadging.ts");
 			t.default = (e, t) => n => {
 				switch (n.type) {
-					case r.a: {
+					case c.a: {
 						const s = n.payload,
-							c = Object(l.b)(t());
-						if (!a()(s, c)) {
+							r = Object(l.b)(t());
+						if (!a()(s, r)) {
 							const t = Object(d.d)(s.unreadMessages, s.hasNewMessages, s.chatV2UnreadMessages);
 							e(Object(d.a)(t)), e(Object(l.d)())
 						}
@@ -468,7 +468,7 @@
 					const {
 						path: t
 					} = n.payload;
-					e(Object(c.b)(t));
+					e(Object(r.b)(t));
 					break
 				}
 				}
@@ -491,15 +491,15 @@
 			}));
 			var s = n("./node_modules/reselect/es/index.js"),
 				a = n("./src/lib/fastdom/index.ts"),
-				c = n("./src/lib/makeActionCreator/index.ts"),
-				r = n("./src/reddit/contexts/PageLayer/selectors.ts"),
+				r = n("./src/lib/makeActionCreator/index.ts"),
+				c = n("./src/reddit/contexts/PageLayer/selectors.ts"),
 				i = n("./src/reddit/helpers/tabBadging/index.ts"),
 				o = n("./src/reddit/models/Badge/index.ts"),
 				d = n("./src/reddit/selectors/appBadges.ts"),
 				u = n("./src/reddit/selectors/user.ts"),
 				l = n("./src/reddit/actions/appBadgeIndicators/index.ts");
 			const h = "TAB__UPDATE_HAS_UNREAD_MESSAGES_BADGE",
-				b = Object(c.a)(h),
+				b = Object(r.a)(h),
 				m = (e, t) => {
 					e <= 0 ? a.a.write(() => {
 						Object(i.b)(!1), window.document.title = t
@@ -514,7 +514,7 @@
 				}),
 				f = () => async (e, t) => {
 					const n = t(),
-						s = Object(r.g)(n, {});
+						s = Object(c.g)(n, {});
 					if (!(Object(u.R)(n) || Object(u.S)(n)) || !s) return;
 					const a = Object(d.j)(n);
 					m(a, s), e(b({
@@ -532,25 +532,25 @@
 				}, v = e => async (t, n) => {
 					const s = n(),
 						a = Object(d.f)(s),
-						c = Object(d.i)(s),
+						r = Object(d.i)(s),
 						{
-							basicChannelCount: r,
+							basicChannelCount: c,
 							inboxCount: i
 						} = e;
-					if (a !== r) {
+					if (a !== c) {
 						const e = Object(l.e)({
-							count: r,
+							count: c,
 							key: o.c.ChatTab
 						});
 						t(Object(l.a)(e))
 					}
-					if (i && i !== c) {
+					if (i && i !== r) {
 						const e = Object(l.e)({
 							count: i,
 							key: o.c.MessageTab
 						});
 						t(Object(l.a)(e))
-					}(a !== r || i && i !== c) && t(f())
+					}(a !== c || i && i !== r) && t(f())
 				}
 		},
 		"./src/reddit/helpers/tabBadging/index.ts": function(e, t, n) {
@@ -564,16 +564,16 @@
 			}));
 			var s = n("./src/config.ts");
 			const a = `${s.a.assetPath}/img/favicon/badged-favicon-32x32.png`,
-				c = `${s.a.assetPath}/img/favicon/badged-favicon-16x16.png`,
-				r = `${s.a.assetPath}/img/favicon/favicon-32x32.png`,
+				r = `${s.a.assetPath}/img/favicon/badged-favicon-16x16.png`,
+				c = `${s.a.assetPath}/img/favicon/favicon-32x32.png`,
 				i = `${s.a.assetPath}/img/favicon/favicon-16x16.png`,
 				o = "badgeCountSync",
 				d = e => window.document.querySelector(`link[href="${e}"]`),
 				u = function() {
 					let e = !(arguments.length > 0 && void 0 !== arguments[0]) || arguments[0];
-					const t = d(e ? r : a),
-						n = d(e ? i : c);
-					t && n && (t.href = e ? a : r, n.href = e ? c : i)
+					const t = d(e ? c : a),
+						n = d(e ? i : r);
+					t && n && (t.href = e ? a : c, n.href = e ? r : i)
 				},
 				l = e => {
 					navigator && navigator.serviceWorker && navigator.serviceWorker.controller && navigator.serviceWorker.controller.postMessage({
@@ -595,10 +595,10 @@
 			})), n.d(t, "c", (function() {
 				return a
 			})), n.d(t, "b", (function() {
-				return c
+				return r
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
-			var s, a, c, r = n("./src/config.ts");
+			var s, a, r, c = n("./src/config.ts");
 
 			function i(e) {
 				return "userId" in e
@@ -612,34 +612,34 @@
 				const s = n.media[0],
 					a = Object.keys(s);
 				if (s["0x0"]) return s["0x0"];
-				let c = {
+				let r = {
 					width: 1 / 0,
 					height: 1 / 0,
 					url: ""
 				};
 				if (a.forEach(n => {
 						const a = s[n],
-							[r, i] = n.split("x").map(e => parseInt(e));
-						(r < c.width && r >= e || i < c.height && i >= t) && (c = {
+							[c, i] = n.split("x").map(e => parseInt(e));
+						(c < r.width && c >= e || i < r.height && i >= t) && (r = {
 							height: i,
-							width: r,
+							width: c,
 							url: a
 						})
-					}), !c.url && a.length) {
+					}), !r.url && a.length) {
 					const e = Object.keys(s)[0],
 						t = s[e],
 						[n, a] = e.split("x").map(e => parseInt(e));
-					c = {
+					r = {
 						height: a,
 						width: n,
 						url: t
 					}
 				}
-				return c.url
+				return r.url
 			}
 
 			function u(e) {
-				return e.startsWith("https") ? e : `${r.a.assetPath}/${e}`
+				return e.startsWith("https") ? e : `${c.a.assetPath}/${e}`
 			}
 
 			function l(e, t, n) {
@@ -657,16 +657,16 @@
 			}(a || (a = {})),
 			function(e) {
 				e.Numbered = "NUMBERED", e.Filled = "FILLED"
-			}(c || (c = {}))
+			}(r || (r = {}))
 		},
 		"./src/reddit/selectors/appBadges.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
 				return a
 			})), n.d(t, "f", (function() {
-				return c
-			})), n.d(t, "e", (function() {
 				return r
+			})), n.d(t, "e", (function() {
+				return c
 			})), n.d(t, "d", (function() {
 				return i
 			})), n.d(t, "c", (function() {
@@ -684,28 +684,28 @@
 			}));
 			var s = n("./node_modules/reselect/es/index.js");
 			const a = e => e.appBadges.badges,
-				c = Object(s.a)(a, e => {
+				r = Object(s.a)(a, e => {
 					var t;
 					return (null === (t = e.chatUnreadMessages) || void 0 === t ? void 0 : t.count) || 0
 				}),
-				r = e => {
+				c = e => {
 					var t;
 					return (null === (t = e.appBadges.badges.chatV2UnreadMessages) || void 0 === t ? void 0 : t.count) || 0
 				},
 				i = Object(s.a)(a, e => e && e.chatRooms && e.chatRooms.count || 0),
 				o = Object(s.a)(a, e => e && e.chatRoomMentions && e.chatRoomMentions.count || 0),
-				d = Object(s.a)(c, a, (e, t) => {
+				d = Object(s.a)(r, a, (e, t) => {
 					var n;
 					return 0 === e && !!(null === (n = t.chatHasNewMessages) || void 0 === n ? void 0 : n.isShowing)
 				}),
 				u = Object(s.a)(a, e => e && e.activityTab && e.activityTab.count || 0),
 				l = Object(s.a)(a, e => e && e.messageTab && e.messageTab.count || 0),
 				h = Object(s.a)(u, l, (e, t) => e + t),
-				b = Object(s.a)(c, h, (e, t) => e + t)
+				b = Object(s.a)(r, h, (e, t) => e + t)
 		},
 		"./src/redditGQL/operations/BadgeIndicators.json": function(e) {
 			e.exports = JSON.parse('{"id":"fbbc7389e1ff"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.6076b9ab285bc1bad698.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.23695d529f508eb00eab.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.1b81b89548b3a0015b3b.js
-// Retrieved at 6/13/2023, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.b9080e82c3503eeb8144.js
+// Retrieved at 6/14/2023, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -1493,7 +1493,7 @@
 								type: e
 							}
 						}))(m)), k(!1), n(Object(a.c)({
-							experience: w.cb.LanguagePreferenceBottomSheet,
+							experience: w.db.LanguagePreferenceBottomSheet,
 							value: !1
 						}))
 					},
@@ -1526,7 +1526,7 @@
 								})
 							}))
 						})(), k(!1), n(Object(a.c)({
-							experience: w.cb.LanguagePreferenceBottomSheet,
+							experience: w.db.LanguagePreferenceBottomSheet,
 							value: !1
 						}))
 					};
@@ -1539,7 +1539,7 @@
 						...Object(b.d)(t),
 						type: e
 					}
-				}))(m)), n(Object(a.d)(w.cb.LanguagePreferenceBottomSheet)), r.a.createElement("div", {
+				}))(m)), n(Object(a.d)(w.db.LanguagePreferenceBottomSheet)), r.a.createElement("div", {
 					className: l.a.PromptContainer
 				}, r.a.createElement("div", {
 					className: l.a.PromptClose
@@ -1579,7 +1579,7 @@
 					gqlContext: n
 				} = e, s = Object(i.f)().getState();
 				return (null === (t = Object(i.e)(e => Object(v.a)(e, {
-					experience: w.cb.LanguagePreferenceBottomSheet
+					experience: w.db.LanguagePreferenceBottomSheet
 				}))) || void 0 === t ? void 0 : t.value) && Object(k.b)(s) ? r.a.createElement(S, {
 					gqlContext: n
 				}) : null
@@ -3918,4 +3918,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.1b81b89548b3a0015b3b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.b9080e82c3503eeb8144.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.ba2e07d259a2572e60ff.js
-// Retrieved at 6/13/2023, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.7c8c5c02d58b654c8976.js
+// Retrieved at 6/14/2023, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -3765,7 +3765,7 @@
 						var n;
 						const o = Object(k.q)(e, t);
 						if (!o) return !1;
-						const s = Object(H.d)(e, {
+						const s = Object(H.e)(e, {
 								subredditName: o.name.toLowerCase()
 							}),
 							r = Object(U.c)(e, {
@@ -3776,8 +3776,8 @@
 					markdownDraft: S.l,
 					pending: S.db,
 					postRequirements: S.ub,
-					postGuidanceBodyTriggeredRules: H.c,
-					postGuidanceBlockRuleTriggered: H.b,
+					postGuidanceBodyTriggeredRules: H.d,
+					postGuidanceBlockRuleTriggered: H.c,
 					rteDraft: S.m,
 					submissionType: S.a,
 					subreddit: k.s,
@@ -3785,7 +3785,13 @@
 					user: D.m,
 					isCommentsPage: R.f,
 					isImageCreationEnabled: S.O,
-					isVideoCreationEnabled: S.W
+					isVideoCreationEnabled: S.W,
+					isSubredditInPostGuidanceAllowlist: (e, t) => {
+						const n = Object(k.q)(e, t);
+						return !!n && Object(H.b)(e, {
+							subredditId: n.id
+						})
+					}
 				}),
 				Q = Object(d.b)(J, (e, t) => ({
 					onCancel: t => e(m.b(t)),
@@ -3796,7 +3802,7 @@
 						e(h.b(t, n, o))
 					},
 					onFetchPostGuidanceConfig: t => {
-						e(Object(N.a)(t))
+						e(Object(N.b)(t))
 					}
 				}));
 			class Y extends a.a.Component {
@@ -3874,7 +3880,7 @@
 					}
 				}
 				componentDidMount() {
-					Object(j.d)(j.a.PostComposer), this.props.subreddit && this.props.onFetchPostGuidanceConfig(this.props.subreddit.name)
+					Object(j.d)(j.a.PostComposer), this.props.subreddit && this.props.isSubredditInPostGuidanceAllowlist && this.props.onFetchPostGuidanceConfig(this.props.subreddit.name)
 				}
 				componentWillUnmount() {
 					Object(j.b)(j.a.PostComposer), this.cancelEdit()
@@ -4017,7 +4023,7 @@
 					triggeredRules: t = [],
 					trackPostGuidanceView: n
 				} = e;
-				const [c, u] = Object(s.useState)(!1), m = t.filter(e => e.actionType === i.M.Block), p = m.length > 0 ? m : t, h = c ? p : p.slice(0, 5), b = Object(a.a)(h);
+				const [c, u] = Object(s.useState)(!1), m = t.filter(e => e.actionType === i.N.Block), p = m.length > 0 ? m : t, h = c ? p : p.slice(0, 5), b = Object(a.a)(h);
 				return Object(s.useEffect)(() => {
 					const e = h.map(e => e.guidanceId),
 						t = (null == b ? void 0 : b.map(e => e.guidanceId)) || [],
@@ -4026,10 +4032,10 @@
 				}, [t, h, b, n]), r.a.createElement("div", {
 					"data-testid": "post-guidance-validation"
 				}, r.a.createElement("ol", null, h.map((e, t) => r.a.createElement("li", {
-					className: `${e.actionType===i.M.Block?l.a.errorText:""} text-12 pt-2xs`,
+					className: `${e.actionType===i.N.Block?l.a.errorText:""} text-12 pt-2xs`,
 					key: t
 				}, e.validationMessage.richtext ? r.a.createElement(d.b, {
-					className: `${e.actionType===i.M.Block?l.a.errorText:""} !text-12 !pt-2xs`,
+					className: `${e.actionType===i.N.Block?l.a.errorText:""} !text-12 !pt-2xs`,
 					useExplicitTextColor: !0,
 					content: JSON.parse(e.validationMessage.richtext),
 					rtJsonElementProps: {}
@@ -4701,4 +4707,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.ba2e07d259a2572e60ff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.7c8c5c02d58b654c8976.js.map
