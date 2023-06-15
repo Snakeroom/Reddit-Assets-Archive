@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.bbaa5ea7b2ad54932e29.js
-// Retrieved at 6/8/2023, 8:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.f229836b829f697ac0e2.js
+// Retrieved at 6/15/2023, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-ContentControls"], {
 		"./node_modules/lodash/negate.js": function(e, t) {
@@ -1284,9 +1284,8 @@
 				render() {
 					const {
 						formState: e,
-						isLoading: t,
-						isPostGuidanceModEnabled: n
-					} = this.props, i = e.linkDomains.serverErrors.length ? e.linkDomains.serverErrors : e.linkDomains.clientErrors;
+						isLoading: t
+					} = this.props, n = e.linkDomains.serverErrors.length ? e.linkDomains.serverErrors : e.linkDomains.clientErrors;
 					return d.a.createElement("fieldset", null, d.a.createElement("legend", {
 						className: Ce.a.sectionLegend
 					}, s.fbt._("Post Requirements", null, {
@@ -1320,7 +1319,7 @@
 						className: Ce.a.characterCountdown,
 						maxChars: I,
 						text: e.guidelines.guidelineText
-					})), !n && d.a.createElement(ye, {
+					})), d.a.createElement(ye, {
 						on: e.titleRequiredStrings.enabled,
 						onClick: this.onToggleTitleRequiredStrings,
 						label: s.fbt._("Require words in the post title", null, {
@@ -1329,7 +1328,7 @@
 						subtext: s.fbt._("Posts without these words in the title can’t be submitted. (Choose up to 15 words, 40 characters each.)", null, {
 							hk: "4i9wtv"
 						})
-					}), !n && e.titleRequiredStrings.enabled && d.a.createElement(le, {
+					}), e.titleRequiredStrings.enabled && d.a.createElement(le, {
 						label: s.fbt._("Add required words", null, {
 							hk: "22VjqJ"
 						})
@@ -1337,7 +1336,7 @@
 						errors: e.titleRequiredStrings.clientErrors,
 						onChange: this.onTitleRequiredStringsChange,
 						strings: e.titleRequiredStrings.strings
-					})), !n && d.a.createElement(ke, null, d.a.createElement(ye, {
+					})), d.a.createElement(ke, null, d.a.createElement(ye, {
 						on: e.titleBlacklistedStrings.enabled,
 						onClick: this.onToggleTitleBlacklistedStrings,
 						label: s.fbt._("Ban words from the post title", null, {
@@ -1354,7 +1353,7 @@
 						errors: e.titleBlacklistedStrings.clientErrors,
 						onChange: this.onTitleBlacklistedStringsChange,
 						strings: e.titleBlacklistedStrings.strings
-					}))), !n && e.bodyRequirement.restrictionPolicy === v.a.Required && d.a.createElement(ke, null, d.a.createElement(ye, {
+					}))), e.bodyRequirement.restrictionPolicy === v.a.Required && d.a.createElement(ke, null, d.a.createElement(ye, {
 						on: e.bodyRequiredStrings.enabled,
 						onClick: this.onToggleBodyRequiredStrings,
 						label: s.fbt._("Require words in the post body", null, {
@@ -1371,7 +1370,7 @@
 						errors: e.bodyRequiredStrings.clientErrors,
 						onChange: this.onBodyRequiredStringsChange,
 						strings: e.bodyRequiredStrings.strings
-					}))), !n && e.bodyRequirement.restrictionPolicy !== v.a.NotAllowed && d.a.createElement(ke, null, d.a.createElement(ye, {
+					}))), e.bodyRequirement.restrictionPolicy !== v.a.NotAllowed && d.a.createElement(ke, null, d.a.createElement(ye, {
 						on: e.bodyBlacklistedStrings.enabled,
 						onClick: this.onToggleBodyBlacklistedStrings,
 						label: s.fbt._("Ban words from the post body", null, {
@@ -1424,7 +1423,7 @@
 							hk: "Plgix"
 						})
 					}, d.a.createElement("textarea", {
-						"aria-invalid": !!i.length,
+						"aria-invalid": !!n.length,
 						className: Ce.a.domainsTextarea,
 						maxLength: A,
 						onBlur: this.onLinkDomainsBlur,
@@ -1436,7 +1435,7 @@
 						spellCheck: !1,
 						value: e.linkDomains.domainsText
 					}), d.a.createElement(te.a, {
-						messages: i
+						messages: n
 					}))), d.a.createElement(ye, {
 						on: e.repostFrequency.enabled,
 						onClick: this.onToggleRepostFrequency,
@@ -1855,4 +1854,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.bbaa5ea7b2ad54932e29.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.f229836b829f697ac0e2.js.map
