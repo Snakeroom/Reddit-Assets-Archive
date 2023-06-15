@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.b162575999dd07c324b4.js
-// Retrieved at 6/1/2023, 1:20:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.ef80022f98208f55985e.js
+// Retrieved at 6/15/2023, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["devPlatform-components-ContextActions"], {
 		"./src/devPlatform/components/ContextActions/index.tsx": function(t, e, o) {
@@ -286,7 +286,7 @@
 												thingId: i.id
 											}
 										});
-										else if (null != o.message && null != o.success) {
+										else if (null != o.message && o.message.length > 0 && null != o.success) {
 											const t = o.success ? c.b.SuccessCommunityGreen : c.b.Error;
 											d(o.message, t)
 										}
@@ -593,4 +593,4 @@
 		"ignored /drone/src/node_modules/cron-parser/lib fs": function(t, e) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.b162575999dd07c324b4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.ef80022f98208f55985e.js.map
