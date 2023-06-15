@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.882e9a1bf6a23726a431.js
-// Retrieved at 6/13/2023, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.1d3cb025cb7fa116e7f9.js
+// Retrieved at 6/15/2023, 2:00:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./src/reddit/components/FrontpageSidebar/index.tsx": function(e, t, n) {
@@ -186,8 +186,8 @@
 				A = n("./src/reddit/components/SidebarContainer/index.tsx"),
 				L = n("./src/reddit/components/SidebarStickyBottom/index.tsx"),
 				R = n("./node_modules/lodash/sampleSize.js"),
-				W = n.n(R),
-				B = n("./node_modules/request-idle-callback/index.js"),
+				B = n.n(R),
+				W = n("./node_modules/request-idle-callback/index.js"),
 				U = n("./src/lib/constants/index.ts"),
 				I = n("./src/reddit/components/SubredditIcon/index.tsx"),
 				D = n("./src/reddit/constants/localStorage.ts"),
@@ -226,10 +226,10 @@
 					return te.cachedData = e, e ? e.subreddits : []
 				}
 				componentDidMount() {
-					Object(B.requestIdleCallback)(async () => {
+					Object(W.requestIdleCallback)(async () => {
 						const e = await this.getSubredditForAdoption();
 						this.setState({
-							subredditNames: W()(e, Y)
+							subredditNames: B()(e, Y)
 						})
 					})
 				}
@@ -608,18 +608,18 @@
 				}),
 				Le = n("./src/reddit/constants/experiments.ts"),
 				Re = n("./src/reddit/helpers/chooseVariant/index.ts"),
-				We = n("./src/reddit/selectors/user.ts");
-			var Be = n("./src/reddit/selectors/seo/linksModule.ts"),
+				Be = n("./src/reddit/selectors/user.ts");
+			var We = n("./src/reddit/selectors/seo/linksModule.ts"),
 				Ue = n("./src/reddit/helpers/createBannerProperties/index.ts");
 			const Ie = Object(o.c)({
-					isLoggedIn: We.R,
-					currentUser: We.m,
-					frontpageLinks: Be.b,
+					isLoggedIn: Be.R,
+					currentUser: Be.m,
+					frontpageLinks: We.b,
 					shouldShowTopicsWidget: e => (function(e) {
 						return Object(Re.c)(e, {
-							experimentEligibilitySelector: We.S,
-							experimentName: Le.Zc
-						}) === Le.Wd
+							experimentEligibilitySelector: Be.S,
+							experimentName: Le.ad
+						}) === Le.Xd
 					})(e),
 					isNavbarLikeMwebEnabled: i.a
 				}),
@@ -915,4 +915,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.882e9a1bf6a23726a431.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.1d3cb025cb7fa116e7f9.js.map

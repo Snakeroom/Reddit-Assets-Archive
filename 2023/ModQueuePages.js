@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.696a7483186bdd748c83.js
-// Retrieved at 6/14/2023, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.237dfcfa49fffc1ad670.js
+// Retrieved at 6/15/2023, 2:00:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -4514,7 +4514,7 @@
 			const u = "hideBanEvasionCampaignUntil";
 
 			function p() {
-				return Object(i.a)(r.vb) === r.Wd
+				return Object(i.a)(r.vb) === r.Xd
 			}
 
 			function A() {
@@ -6495,7 +6495,7 @@
 					let {
 						content: t
 					} = e;
-					const n = Object(O.a)(w.re) === w.Wd,
+					const n = Object(O.a)(w.se) === w.Xd,
 						{
 							contentIds: m
 						} = h(),
@@ -7845,7 +7845,7 @@
 			const U = e => Object(F.c)(e, {
 				experimentEligibilitySelector: H.S,
 				experimentName: L.fc
-			}) === L.Wd;
+			}) === L.Xd;
 			var z = n("./src/reddit/components/ModQueueList/SortByNumReportsTooltip.m.less"),
 				Y = n.n(z);
 			const G = e => {
@@ -11154,7 +11154,7 @@
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
 					experimentName: o.M
-				}) === o.Wd
+				}) === o.Xd
 			}
 		},
 		"./src/redditGQL/operations/DeleteSubredditMuteSettings.json": function(e) {
@@ -11186,4 +11186,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.696a7483186bdd748c83.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.237dfcfa49fffc1ad670.js.map

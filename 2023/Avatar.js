@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Avatar.0daf843019ff3b6edc6c.js
-// Retrieved at 6/13/2023, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Avatar.cd34d922e4db4d2ba527.js
+// Retrieved at 6/15/2023, 2:00:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Avatar"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, s) {
@@ -71,9 +71,9 @@
 					activeMeSubpage: k || void 0,
 					activeDetails: h || void 0,
 					shopTabState: N || void 0
-				}), [h, R, k, N]), C = Object(c.e)(e => !Object(O.S)(e) && Object(m.x)(e));
+				}), [h, R, k, N]), I = Object(c.e)(e => !Object(O.S)(e) && Object(m.x)(e));
 				if (!f || !j) return null;
-				if (C) return a.a.createElement("div", {
+				if (I) return a.a.createElement("div", {
 					className: Object(o.a)(x.a.container, {
 						[x.a.containerExp]: A
 					})
@@ -81,7 +81,7 @@
 					openLogin: S,
 					fancyBackground: !0
 				}));
-				const I = {
+				const C = {
 					...M,
 					config: {
 						...M.config,
@@ -96,7 +96,7 @@
 						[x.a.snoovatarModalBuilderV2]: t,
 						[x.a.containerExp]: A
 					})
-				}, a.a.createElement(r.a, v({}, I, {
+				}, a.a.createElement(r.a, v({}, C, {
 					navState: T,
 					isModal: t
 				}), a.a.createElement(r.b, {
@@ -204,10 +204,10 @@
 			const c = e => {
 					return !(Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: r.Ge
-					}) === r.Wd)
+						experimentName: r.He
+					}) === r.Xd)
 				},
-				o = Object(a.a)(r.He)
+				o = Object(a.a)(r.Ie)
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, s) {
 			"use strict";
@@ -216,9 +216,9 @@
 			}));
 			var r = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(n.a)(r.Gd)
+			const a = Object(n.a)(r.Hd)
 		},
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.0daf843019ff3b6edc6c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.cd34d922e4db4d2ba527.js.map

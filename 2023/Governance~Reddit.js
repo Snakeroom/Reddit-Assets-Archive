@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.5799d91cb6475cdfe7bf.js
-// Retrieved at 6/14/2023, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.bf60b8279d4e4e077f3d.js
+// Retrieved at 6/15/2023, 2:00:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -2223,7 +2223,7 @@
 							return Object(g.c)(e, {
 								experimentEligibilitySelector: g.a,
 								experimentName: y.Tc
-							}) === y.Wd
+							}) === y.Xd
 						}(O) && e === p.d.dropdown) {
 						const n = (e => {
 							var t, n;
@@ -3999,7 +3999,7 @@
 					relativePosition: T
 				} = e;
 				var D, w, j, C, A, P;
-				const R = Object(a.e)(e => Object(V.a)(e, q.Gf)),
+				const R = Object(a.e)(e => Object(V.a)(e, q.Hf)),
 					N = Object(y.a)(),
 					x = (null === (D = o.displayInfo) || void 0 === D ? void 0 : D.karma) || 0,
 					k = (null === (w = o.displayInfo) || void 0 === w ? void 0 : w.subscribers) || 0,
@@ -4140,7 +4140,7 @@
 					searchOriginPage: f
 				} = e;
 				const b = Object(y.a)(),
-					h = Object(a.e)(e => Object(V.a)(e, q.Gf)),
+					h = Object(a.e)(e => Object(V.a)(e, q.Hf)),
 					g = Object(a.e)(U.mb),
 					{
 						nsfwTypeaheadExpanded: v,
@@ -4376,7 +4376,7 @@
 					onUpdateSearchQuery: A
 				} = e, P = Object(a.d)(), [R, N] = Object(r.useState)(null), [L, U] = Object(r.useState)(n), [M, F] = Object(r.useState)(new Array(Ee).fill(!1)), {
 					enabled: B
-				} = Object(a.e)(re.j), G = Object(a.e)(e => Object(V.a)(e, q.Gf)), H = !!(null === (t = g.searchQuery) || void 0 === t ? void 0 : t.trim()), W = l || i, K = B, Y = [...b.communities, ...b.people, ...b.nsfw], $ = !l && (!H || m >= 0) && (G ? 0 === Y.length : 0 === f.length) && !K, z = {
+				} = Object(a.e)(re.j), G = Object(a.e)(e => Object(V.a)(e, q.Hf)), H = !!(null === (t = g.searchQuery) || void 0 === t ? void 0 : t.trim()), W = l || i, K = B, Y = [...b.communities, ...b.people, ...b.nsfw], $ = !l && (!H || m >= 0) && (G ? 0 === Y.length : 0 === f.length) && !K, z = {
 					width: L ? `${L}px` : "inherit",
 					overflow: "auto"
 				};
@@ -25182,9 +25182,9 @@
 				experimentEligibilitySelector: s.a,
 				experimentName: r.zb
 			}), e => ({
-				bucketed: e === r.ed.ExpandedSearch || e === r.ed.CollapsedSearch,
-				collapsed: e === r.ed.CollapsedSearch,
-				expanded: e === r.ed.ExpandedSearch
+				bucketed: e === r.fd.ExpandedSearch || e === r.fd.CollapsedSearch,
+				collapsed: e === r.fd.CollapsedSearch,
+				expanded: e === r.fd.ExpandedSearch
 			}))
 		},
 		"./src/reddit/selectors/experiments/garlicBread.ts": function(e, t, n) {
@@ -25209,7 +25209,7 @@
 					if (!u(e)) return;
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: l,
-						experimentName: a.ee,
+						experimentName: a.fe,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -25232,9 +25232,9 @@
 				},
 				b = e => !!p(e) && Object(o.c)(e, {
 					experimentEligibilitySelector: u,
-					experimentName: a.fe,
+					experimentName: a.ge,
 					expEventOverride: !1
-				}) !== a.le.Readonly
+				}) !== a.me.Readonly
 		},
 		"./src/reddit/selectors/removedPosts.ts": function(e, t, n) {
 			"use strict";
@@ -25378,4 +25378,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.5799d91cb6475cdfe7bf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.bf60b8279d4e4e077f3d.js.map
