@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.af1648e81a062cea08ba.js
-// Retrieved at 6/15/2023, 2:00:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.9b5a5ce376194d0a583f.js
+// Retrieved at 6/16/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, n) {
@@ -256,7 +256,7 @@
 			})), n.d(t, "c", (function() {
 				return M
 			})), n.d(t, "a", (function() {
-				return R
+				return A
 			})), n.d(t, "b", (function() {
 				return P
 			}));
@@ -463,7 +463,7 @@
 						text: I(),
 						kind: T.b.Error
 					}))))
-				}, A = Object(i.a)(d.d), R = e => async (t, n, r) => {
+				}, R = Object(i.a)(d.d), A = e => async (t, n, r) => {
 					let {
 						apiContext: s
 					} = r;
@@ -477,7 +477,7 @@
 						a = i[e];
 					if (!a) return void c();
 					const d = !a.isFavorited;
-					t(A({
+					t(R({
 						makeFavorite: d,
 						multiredditPath: e,
 						multiredditsModelsState: i
@@ -489,7 +489,7 @@
 							multipath: t,
 							api_type: "json"
 						}
-					}))(s(), e, d)).ok || (t(A({
+					}))(s(), e, d)).ok || (t(R({
 						makeFavorite: !d,
 						multiredditPath: e,
 						multiredditsModelsState: i
@@ -728,14 +728,14 @@
 						[T.x]: t ? "1" : ""
 					})
 				},
-				A = e => e.isFlairFilter ? a.a.createElement(S.default, {
+				R = e => e.isFlairFilter ? a.a.createElement(S.default, {
 					onMouseDown: e.onMouseDown,
 					to: e.to || ""
 				}, e.flair) : e.onClick ? a.a.createElement(S.default, {
 					onClick: () => e.onClick(e.searchableTerm),
 					to: M(e.searchableTerm, e.subredditName)
 				}, e.flair) : e.flair;
-			class R extends a.a.Component {
+			class A extends a.a.Component {
 				constructor() {
 					super(...arguments), this.tooltipTargetElement = null, this.state = {
 						isTooltipOpen: !1
@@ -776,7 +776,7 @@
 						targetPosition: ["center", "top"],
 						tooltipPosition: ["center", "bottom"]
 					}));
-					return a.a.createElement(A, {
+					return a.a.createElement(R, {
 						flair: e,
 						isFlairFilter: this.props.isFlairFilter,
 						onClick: this.props.onClick,
@@ -787,7 +787,7 @@
 					})
 				}
 			}
-			const F = Object(m.a)(R),
+			const F = Object(m.a)(A),
 				P = Object(m.a)(e => {
 					let t = "",
 						n = !1;
@@ -829,7 +829,7 @@
 							fill: e.backgroundColor || Object(I.a)(e).flair
 						}
 					})));
-					return a.a.createElement(A, {
+					return a.a.createElement(R, {
 						flair: s,
 						isFlairFilter: e.isFlairFilter,
 						onClick: e.onClick ? () => {
@@ -863,7 +863,7 @@
 								color: t
 							}
 						}, e.text);
-					return a.a.createElement(A, {
+					return a.a.createElement(R, {
 						flair: n,
 						searchableTerm: e.text
 					})
@@ -1814,15 +1814,17 @@
 		"./src/reddit/selectors/experiments/shredditMigration.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "d", (function() {
-				return m
-			})), n.d(t, "c", (function() {
 				return b
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "c", (function() {
 				return p
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "b", (function() {
 				return f
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "a", (function() {
 				return h
+			})), n.d(t, "f", (function() {
+				return _
+			})), n.d(t, "e", (function() {
+				return x
 			}));
 			var r = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
@@ -1831,29 +1833,37 @@
 				c = /^\/r\/popular\/?((new|top|hot|controversial|rising|best)\/?)?$/,
 				a = /^\/r\/[^/]+\/?((controversial|new|about|top)\/?)?$/,
 				d = /^\/r\/[^/]+\/w(iki)?\/?([^/]+\/?)?$/,
-				l = e => !!e.match(i) || !!e.match(c),
-				u = e => !e.match(c) && ("/r/all" !== e && !e.startsWith("/r/all/") && (!!e.match(a) || !!e.match(d))),
-				m = (e, t) => !!l(t) && [r.ag.Enabled, r.ag.HardReload].includes(Object(o.c)(e, {
+				l = /^\/u(?:ser)?\/[^/]+(\/[^/]+)?$/,
+				u = e => !!e.match(i) || !!e.match(c),
+				m = e => !e.match(c) && ("/r/all" !== e && !e.startsWith("/r/all/") && (!!e.match(a) || !!e.match(d))),
+				b = (e, t) => !!u(t) && [r.bg.Enabled, r.bg.HardReload].includes(Object(o.c)(e, {
 					experimentEligibilitySelector: s.f,
 					experimentName: r.Mf
 				})),
-				b = (e, t) => !!u(t) && [r.ag.Enabled, r.ag.HardReload].includes(Object(o.c)(e, {
+				p = (e, t) => !!m(t) && [r.bg.Enabled, r.bg.HardReload].includes(Object(o.c)(e, {
 					experimentEligibilitySelector: s.f,
 					experimentName: r.Lf
 				})),
-				p = (e, t) => !(!u(t) && !l(t)) && Object(o.c)(e, {
+				f = (e, t) => !(!m(t) && !u(t)) && Object(o.c)(e, {
 					experimentEligibilitySelector: s.f,
 					experimentName: r.te
 				}) === r.Xd,
-				f = e => {
+				h = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: s.f,
 						experimentName: r.Kf
 					})
 				},
-				h = (e, t) => !!(e => {
+				_ = (e, t) => !!(e => {
 					return /^(?:\/r\/[^\/]+)?\/search\/?$/i.test(e) || /^\/u(?:ser)?\/[^\/]+\/m\/[^\/]+\/search\/?$/i.test(e)
-				})(t) && (f(e) === r.ag.Enabled || f(e) === r.ag.HardReload)
+				})(t) && (h(e) === r.bg.Enabled || h(e) === r.bg.HardReload),
+				E = e => {
+					return Object(o.c)(e, {
+						experimentEligibilitySelector: s.f,
+						experimentName: r.Nf
+					})
+				},
+				x = (e, t) => !!(e => !!e.match(l))(t) && (E(e) === r.bg.Enabled || E(e) === r.bg.HardReload)
 		},
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, n) {
 			"use strict";
@@ -1874,8 +1884,9 @@
 							o = Object(i.b)(n, e.pathname),
 							s = Object(i.d)(n, e.pathname),
 							c = Object(i.c)(n, e.pathname),
-							a = Object(i.e)(n, e.pathname);
-						if (o || t || s || c || a) {
+							a = Object(i.f)(n, e.pathname),
+							d = Object(i.e)(n, e.pathname);
+						if (o || t || s || c || a || d) {
 							const t = e.pathname + e.search;
 							return Object(r.f)(n), window.location.href = t, !1
 						}
@@ -1890,4 +1901,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.af1648e81a062cea08ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.9b5a5ce376194d0a583f.js.map

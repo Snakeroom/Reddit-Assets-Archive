@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.08162ccf6bb0cc60fcd6.js
-// Retrieved at 6/15/2023, 2:00:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.5a58fb9dd48fef40a431.js
+// Retrieved at 6/16/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -9628,7 +9628,7 @@
 						} = t;
 						var m, p;
 						const b = Object(Ce.j)(e),
-							f = !!b && !Object(he.Eg)(b) && (o || b === he.pb.Community),
+							f = !!b && !Object(he.Fg)(b) && (o || b === he.pb.Community),
 							{
 								adsSeenCount: h,
 								totalPostsSeenCount: g,
@@ -28069,7 +28069,7 @@
 					} = t, T = Object(a.e)(Qe.c), P = Object(a.e)(Qe.a), N = Object(a.e)(Ge.c), D = Object(a.e)(Ge.a), M = Object(a.e)(e => ((e, t) => {
 						const n = t && e.subreddits.about[t];
 						return Boolean(n && n.isMediaInCommentsSettingShown)
-					})(e, d)), R = Object(He.a)(Ue.Of) === Ue.Xd, L = T && M, B = (null == v ? void 0 : v.allowedMediaTypes) || [], F = S, U = Object(o.useCallback)(() => s(!u, "archivePostsEnabled"), [u, s]), H = e => e.toUpperCase() === Q.X.All, G = e => {
+					})(e, d)), R = Object(He.a)(Ue.Pf) === Ue.Xd, L = T && M, B = (null == v ? void 0 : v.allowedMediaTypes) || [], F = S, U = Object(o.useCallback)(() => s(!u, "archivePostsEnabled"), [u, s]), H = e => e.toUpperCase() === Q.X.All, G = e => {
 						const n = H(t[e]) ? Q.X.Low : Q.X.All;
 						s(n, e)
 					};
@@ -60967,7 +60967,7 @@
 								experimentName: o.H,
 								expEventOverride: t
 							});
-							return !!(Object(o.Eg)(n) ? void 0 : n)
+							return !!(Object(o.Fg)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -78243,21 +78243,21 @@
 						experimentEligibilitySelector: r.a,
 						experimentName: s.rc
 					});
-					return !(!t || Object(s.Eg)(t))
+					return !(!t || Object(s.Fg)(t))
 				},
 				i = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
 						experimentName: s.zd
 					});
-					return !(!t || Object(s.Eg)(t))
+					return !(!t || Object(s.Fg)(t))
 				},
 				a = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
 						experimentName: s.Ac
 					});
-					return !(!t || Object(s.Eg)(t))
+					return !(!t || Object(s.Fg)(t))
 				}
 		},
 		"./src/reddit/selectors/experiments/commentSearchPdp.ts": function(e, t, n) {
@@ -78584,7 +78584,7 @@
 				}) === s.Xd,
 				a = e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.yg
+					experimentName: s.zg
 				}) === s.Xd
 		},
 		"./src/reddit/selectors/experiments/newCommunityProgressV3.ts": function(e, t, n) {
@@ -79087,7 +79087,7 @@
 				o = n("./src/reddit/selectors/user.ts");
 			const i = (e, t) => t && Object(r.c)(e, {
 				experimentEligibilitySelector: o.S,
-				experimentName: s.Nf
+				experimentName: s.Of
 			}) === s.Xd
 		},
 		"./src/reddit/selectors/experiments/supportingLinkAds.ts": function(e, t, n) {
@@ -79147,9 +79147,9 @@
 					experimentName: r.xd,
 					experimentEligibilitySelector: e => d(e, t)
 				}), e => e),
-				l = e => e === r.kg.NoCommunityWidgets,
-				u = e => e === r.kg.NoRulesModerators,
-				m = e => e === r.kg.RelatedPostsDu
+				l = e => e === r.lg.NoCommunityWidgets,
+				u = e => e === r.lg.NoRulesModerators,
+				m = e => e === r.lg.RelatedPostsDu
 		},
 		"./src/reddit/selectors/experiments/web2x_cta.ts": function(e, t, n) {
 			"use strict";
@@ -79160,10 +79160,10 @@
 				r = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = Object(s.a)(e => Object(o.c)(e, {
-					experimentName: r.og,
+					experimentName: r.pg,
 					experimentEligibilitySelector: o.a
 				}), e => e),
-				a = Object(s.a)(i, e => e === r.ig)
+				a = Object(s.a)(i, e => e === r.jg)
 		},
 		"./src/reddit/selectors/externalAccount.ts": function(e, t, n) {
 			"use strict";
@@ -79964,7 +79964,7 @@
 					var t;
 					const n = null === (t = e.platform.currentPage) || void 0 === t ? void 0 : t.urlParams,
 						s = n.subredditName;
-					return Object(p.a)(e) !== i.jg.TargetedOnboarding || s && Object(o.a)(s, {
+					return Object(p.a)(e) !== i.kg.TargetedOnboarding || s && Object(o.a)(s, {
 						countryCode: n.countryCode,
 						languageCode: n.languageCode
 					}) || !Object.keys(n).length
@@ -79975,7 +79975,7 @@
 					} = e.onboarding;
 					if (t.success || t.failure) return t
 				},
-				E = Object(r.a)(m.j, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(i.Eg)(e) ? t : null),
+				E = Object(r.a)(m.j, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(i.Fg)(e) ? t : null),
 				O = Object(r.a)(m.j, (e, t) => {
 					let {
 						pageLayer: n
@@ -81468,4 +81468,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.08162ccf6bb0cc60fcd6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.5a58fb9dd48fef40a431.js.map
