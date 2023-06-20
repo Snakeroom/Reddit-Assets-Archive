@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Recap.f0a1687dc3eb83dfa6ec.js
-// Retrieved at 6/16/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Recap.0197d5e1edee3a6eea2c.js
+// Retrieved at 6/20/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Recap", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, a, t) {
@@ -2467,7 +2467,7 @@
 							let e = document.getElementById("shareId");
 							if (W && (e = document.getElementById("abilityCardShareId")), e) {
 								x(!0);
-								const a = await (() => t.e(5).then(t.bind(null, "./node_modules/html-to-image/es/index.js")))(),
+								const a = await (() => t.e(10).then(t.bind(null, "./node_modules/html-to-image/es/index.js")))(),
 									r = await a.getFontEmbedCSS(e),
 									i = await a.toPng(e, {
 										backgroundColor: W ? "transparent" : Ke[y[d].cardTemplateColor],
@@ -2557,4 +2557,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Recap.f0a1687dc3eb83dfa6ec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Recap.0197d5e1edee3a6eea2c.js.map

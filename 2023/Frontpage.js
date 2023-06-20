@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.f8a3385dd43e3c6d0088.js
-// Retrieved at 6/16/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.4df9f94c1061bcbacd4e.js
+// Retrieved at 6/20/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -2182,7 +2182,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!a.m[t]
 					},
-					importAsync: () => Promise.all([a.e(0), a.e(1)]).then(a.bind(null, "./src/reddit/components/ContentSurvey/index.tsx")),
+					importAsync: () => Promise.all([a.e(0), a.e(5)]).then(a.bind(null, "./src/reddit/components/ContentSurvey/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -5951,4 +5951,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.f8a3385dd43e3c6d0088.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.4df9f94c1061bcbacd4e.js.map

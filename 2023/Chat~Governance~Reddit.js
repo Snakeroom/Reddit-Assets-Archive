@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8424f5320425bee4896c.js
-// Retrieved at 6/16/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.60cbce2656b9e9c16f4b.js
+// Retrieved at 6/20/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3659,11 +3659,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("187560"),
+				buildNumber: Object(r.c)("187597"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1686941399"),
+				buildTimestamp: Object(r.b)("1687271858"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5928,7 +5928,7 @@
 						d = e.concat([n, o]);
 					return e.from(d).toString("base64")
 				}
-			}).call(this, i("./node_modules/buffer/index.js").Buffer)
+			}).call(this, i("./node_modules/node-libs-browser/node_modules/buffer/index.js").Buffer)
 		},
 		"./src/lib/delay/index.ts": function(e, t, i) {
 			"use strict";
@@ -6411,14 +6411,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c941a712b7a40045446a52c2866326f1cb16cd1e0-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cd70c1860c64ac5f3767672079d1a28069b437f04-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "941a712b7a40045446a52c2866326f1cb16cd1e0-production",
+						release: "d70c1860c64ac5f3767672079d1a28069b437f04-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6971,7 +6971,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "941a712b7a40045446a52c2866326f1cb16cd1e0-production",
+							releaseClient: "d70c1860c64ac5f3767672079d1a28069b437f04-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -8262,7 +8262,7 @@
 					if (i < 0 || i > 100) throw new Error("Sampling rate should be greater than or equal to 0 and less than or equal to 1");
 					return 100 === i || i > 0 && e.meta.samplingBucket < i
 				}
-			}).call(this, i("./node_modules/buffer/index.js").Buffer)
+			}).call(this, i("./node_modules/node-libs-browser/node_modules/buffer/index.js").Buffer)
 		},
 		"./src/lib/scheduler/index.ts": function(e, t, i) {
 			"use strict";
@@ -45042,7 +45042,7 @@
 					}
 				};
 				t.b = m
-			}).call(this, i("./node_modules/buffer/index.js").Buffer)
+			}).call(this, i("./node_modules/node-libs-browser/node_modules/buffer/index.js").Buffer)
 		},
 		"./src/redditGQL/operations/ChatBadgeIndicators.json": function(e) {
 			e.exports = JSON.parse('{"id":"051a1d7b8755"}')
@@ -49147,7 +49147,7 @@
 						return JSON.stringify(this.stack.pop())
 					}
 				}
-			}).call(this, i("./node_modules/buffer/index.js").Buffer)
+			}).call(this, i("./node_modules/node-libs-browser/node_modules/buffer/index.js").Buffer)
 		},
 		"./src/telemetry/helpers/getSerializedThriftJSON.ts": function(e, t, i) {
 			"use strict";
@@ -51023,4 +51023,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8424f5320425bee4896c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.60cbce2656b9e9c16f4b.js.map

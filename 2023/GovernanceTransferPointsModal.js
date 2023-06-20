@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.7b27b6084a9d38d4a5cd.js
-// Retrieved at 6/16/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.0c015376dde10a6415e1.js
+// Retrieved at 6/20/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -961,7 +961,7 @@
 				if (!r || r.length <= _e.b) return void a(Ge.Empty);
 				const i = Be.test(r);
 				if (i) try {
-					if (!!Object(ke.a)(r)) return void a(e ? Ge.InputtedWalletAddress : Ge.Valid)
+					if (!!Object(ke.getAddress)(r)) return void a(e ? Ge.InputtedWalletAddress : Ge.Valid)
 				} catch {}
 				r.length <= _e.a ? (a(Ge.Searching), s(((e, t) => async (n, s, a) => {
 					let {
@@ -2106,4 +2106,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.7b27b6084a9d38d4a5cd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.0c015376dde10a6415e1.js.map

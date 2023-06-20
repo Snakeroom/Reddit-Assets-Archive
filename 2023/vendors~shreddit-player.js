@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~shreddit-player.c3f459e4914858ea003a.js
-// Retrieved at 6/14/2023, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~shreddit-player.76c78b72523ad311070b.js
+// Retrieved at 6/20/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~shreddit-player"], {
 		"./node_modules/@reddit/shreddit.components.shreddit-player/dist/index.js": function(e, t, i) {
@@ -4825,7 +4825,7 @@
 			};
 			let ps = class extends s.a {
 				constructor() {
-					super(...arguments), this.hlsLibrary = () => i.e(4).then(i.t.bind(null, "./node_modules/@reddit/shreddit.components.shreddit-player/node_modules/hls.js/dist/hls.min.js", 7)), this.autoplay = !1, this.autoplayPref = !1, this.showAutoplayToggle = !1, this.gif = !1, this.playOutOfViewport = !1, this.ui = "mobile", this.objectFit = "contain", this.isEmbed = !1, this.mediaLoadRequested = !1, this.disableMuteButton = !1, this.hideBufferingPoster = !1, this.handleLoadMediaClick = () => {
+					super(...arguments), this.hlsLibrary = () => i.e(9).then(i.t.bind(null, "./node_modules/@reddit/shreddit.components.shreddit-player/node_modules/hls.js/dist/hls.min.js", 7)), this.autoplay = !1, this.autoplayPref = !1, this.showAutoplayToggle = !1, this.gif = !1, this.playOutOfViewport = !1, this.ui = "mobile", this.objectFit = "contain", this.isEmbed = !1, this.mediaLoadRequested = !1, this.disableMuteButton = !1, this.hideBufferingPoster = !1, this.handleLoadMediaClick = () => {
 						this.mediaLoadRequested || (this.mediaLoadRequested = !0, setTimeout(() => {
 							var e;
 							null === (e = this.provider) || void 0 === e || e.startLoadingMedia()
@@ -6374,4 +6374,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~shreddit-player.c3f459e4914858ea003a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~shreddit-player.76c78b72523ad311070b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Subreddit~SubredditWiki.c17b16c26feb8de5d65f.js
-// Retrieved at 1/5/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Subreddit~SubredditWiki.8df6cd112941920a1a96.js
+// Retrieved at 6/20/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Subreddit~SubredditWiki"], {
 		"./node_modules/another-json/another-json.js": function(e, t, i) {
@@ -164,62 +164,6 @@
 					return e && Array.prototype.forEach.call(e.length ? e : [e], d), e
 				}), t.exports = l
 			}) ? n.apply(t, r) : n) || (e.exports = s)
-		},
-		"./node_modules/base-x/src/index.js": function(e, t, i) {
-			"use strict";
-			e.exports = function(e) {
-				if (e.length >= 255) throw new TypeError("Alphabet too long");
-				for (var t = new Uint8Array(256), i = 0; i < t.length; i++) t[i] = 255;
-				for (var n = 0; n < e.length; n++) {
-					var r = e.charAt(n),
-						s = r.charCodeAt(0);
-					if (255 !== t[s]) throw new TypeError(r + " is ambiguous");
-					t[s] = n
-				}
-				var o = e.length,
-					a = e.charAt(0),
-					d = Math.log(o) / Math.log(256),
-					l = Math.log(256) / Math.log(o);
-
-				function c(e) {
-					if ("string" != typeof e) throw new TypeError("Expected String");
-					if (0 === e.length) return new Uint8Array;
-					for (var i = 0, n = 0, r = 0; e[i] === a;) n++, i++;
-					for (var s = (e.length - i) * d + 1 >>> 0, l = new Uint8Array(s); e[i];) {
-						var c = t[e.charCodeAt(i)];
-						if (255 === c) return;
-						for (var u = 0, h = s - 1;
-							(0 !== c || u < r) && -1 !== h; h--, u++) c += o * l[h] >>> 0, l[h] = c % 256 >>> 0, c = c / 256 >>> 0;
-						if (0 !== c) throw new Error("Non-zero carry");
-						r = u, i++
-					}
-					for (var m = s - r; m !== s && 0 === l[m];) m++;
-					for (var p = new Uint8Array(n + (s - m)), g = n; m !== s;) p[g++] = l[m++];
-					return p
-				}
-				return {
-					encode: function(t) {
-						if (t instanceof Uint8Array || (ArrayBuffer.isView(t) ? t = new Uint8Array(t.buffer, t.byteOffset, t.byteLength) : Array.isArray(t) && (t = Uint8Array.from(t))), !(t instanceof Uint8Array)) throw new TypeError("Expected Uint8Array");
-						if (0 === t.length) return "";
-						for (var i = 0, n = 0, r = 0, s = t.length; r !== s && 0 === t[r];) r++, i++;
-						for (var d = (s - r) * l + 1 >>> 0, c = new Uint8Array(d); r !== s;) {
-							for (var u = t[r], h = 0, m = d - 1;
-								(0 !== u || h < n) && -1 !== m; m--, h++) u += 256 * c[m] >>> 0, c[m] = u % o >>> 0, u = u / o >>> 0;
-							if (0 !== u) throw new Error("Non-zero carry");
-							n = h, r++
-						}
-						for (var p = d - n; p !== d && 0 === c[p];) p++;
-						for (var g = a.repeat(i); p < d; ++p) g += e.charAt(c[p]);
-						return g
-					},
-					decodeUnsafe: c,
-					decode: function(e) {
-						var t = c(e);
-						if (t) return t;
-						throw new Error("Non-base" + o + " character")
-					}
-				}
-			}
 		},
 		"./node_modules/bowser/src/bowser.js": function(e, t, i) {
 			var n;
@@ -470,10 +414,6 @@
 					return !o(e, t, i)
 				}, i._detect = t, i.detect = t, i
 			}, e.exports ? e.exports = n() : i("./node_modules/webpack/buildin/amd-define.js")("bowser", n)
-		},
-		"./node_modules/bs58/index.js": function(e, t, i) {
-			const n = i("./node_modules/base-x/src/index.js");
-			e.exports = n("123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz")
 		},
 		"./node_modules/computed-style/dist/computedStyle.commonjs.js": function(e, t) {
 			e.exports = function(e, t, i) {
@@ -7004,7 +6944,7 @@
 					}
 				}
 				t.DeviceTrustLevel = g
-			}).call(this, i("./node_modules/webpack/buildin/global.js"), i("./node_modules/buffer/index.js").Buffer)
+			}).call(this, i("./node_modules/webpack/buildin/global.js"), i("./node_modules/node-libs-browser/node_modules/buffer/index.js").Buffer)
 		},
 		"./node_modules/matrix-js-sdk/lib/crypto/DeviceList.js": function(e, t, i) {
 			"use strict";
@@ -9939,7 +9879,7 @@
 						this.timeoutId && (n.clearTimeout(this.timeoutId), this.timeoutId = void 0)
 					}
 				}
-			}).call(this, i("./node_modules/buffer/index.js").Buffer, i("./node_modules/webpack/buildin/global.js"))
+			}).call(this, i("./node_modules/node-libs-browser/node_modules/buffer/index.js").Buffer, i("./node_modules/webpack/buildin/global.js"))
 		},
 		"./node_modules/matrix-js-sdk/lib/crypto/deviceinfo.js": function(e, t, i) {
 			"use strict";
@@ -11350,7 +11290,7 @@
 						this.userId = e.getSender(), this.deviceId = t.requesting_device_id, this.requestId = t.request_id
 					}
 				}
-			}).call(this, i("./node_modules/webpack/buildin/global.js"), i("./node_modules/buffer/index.js").Buffer)
+			}).call(this, i("./node_modules/webpack/buildin/global.js"), i("./node_modules/node-libs-browser/node_modules/buffer/index.js").Buffer)
 		},
 		"./node_modules/matrix-js-sdk/lib/crypto/key_passphrase.js": function(e, t, i) {
 			"use strict";
@@ -11570,7 +11510,7 @@
 					return n.from(e).toString("base64")
 				}
 				t.MEGOLM_BACKUP_ALGORITHM = u
-			}).call(this, i("./node_modules/webpack/buildin/global.js"), i("./node_modules/buffer/index.js").Buffer)
+			}).call(this, i("./node_modules/webpack/buildin/global.js"), i("./node_modules/node-libs-browser/node_modules/buffer/index.js").Buffer)
 		},
 		"./node_modules/matrix-js-sdk/lib/crypto/recoverykey.js": function(e, t, i) {
 			"use strict";
@@ -11611,7 +11551,7 @@
 							a && (a.get || a.set) ? Object.defineProperty(n, o, a) : n[o] = e[o]
 						} n.default = e, i && i.set(e, n);
 					return n
-				}(i("./node_modules/bs58/index.js"));
+				}(i("./node_modules/matrix-js-sdk/node_modules/bs58/index.js"));
 
 				function s(e) {
 					if ("function" != typeof WeakMap) return null;
@@ -11622,7 +11562,7 @@
 					})(e)
 				}
 				const o = [139, 1]
-			}).call(this, i("./node_modules/buffer/index.js").Buffer, i("./node_modules/webpack/buildin/global.js"))
+			}).call(this, i("./node_modules/node-libs-browser/node_modules/buffer/index.js").Buffer, i("./node_modules/webpack/buildin/global.js"))
 		},
 		"./node_modules/matrix-js-sdk/lib/crypto/store/indexeddb-crypto-store-backend.js": function(e, t, i) {
 			"use strict";
@@ -13287,7 +13227,7 @@
 					}
 				}
 				t.QRCodeData = g
-			}).call(this, i("./node_modules/webpack/buildin/global.js"), i("./node_modules/buffer/index.js").Buffer)
+			}).call(this, i("./node_modules/webpack/buildin/global.js"), i("./node_modules/node-libs-browser/node_modules/buffer/index.js").Buffer)
 		},
 		"./node_modules/matrix-js-sdk/lib/crypto/verification/SAS.js": function(e, t, i) {
 			"use strict";
@@ -24590,6 +24530,66 @@
 				return r
 			}, e.exports.default = e.exports, e.exports.__esModule = !0
 		},
+		"./node_modules/matrix-js-sdk/node_modules/base-x/src/index.js": function(e, t, i) {
+			"use strict";
+			e.exports = function(e) {
+				if (e.length >= 255) throw new TypeError("Alphabet too long");
+				for (var t = new Uint8Array(256), i = 0; i < t.length; i++) t[i] = 255;
+				for (var n = 0; n < e.length; n++) {
+					var r = e.charAt(n),
+						s = r.charCodeAt(0);
+					if (255 !== t[s]) throw new TypeError(r + " is ambiguous");
+					t[s] = n
+				}
+				var o = e.length,
+					a = e.charAt(0),
+					d = Math.log(o) / Math.log(256),
+					l = Math.log(256) / Math.log(o);
+
+				function c(e) {
+					if ("string" != typeof e) throw new TypeError("Expected String");
+					if (0 === e.length) return new Uint8Array;
+					for (var i = 0, n = 0, r = 0; e[i] === a;) n++, i++;
+					for (var s = (e.length - i) * d + 1 >>> 0, l = new Uint8Array(s); e[i];) {
+						var c = t[e.charCodeAt(i)];
+						if (255 === c) return;
+						for (var u = 0, h = s - 1;
+							(0 !== c || u < r) && -1 !== h; h--, u++) c += o * l[h] >>> 0, l[h] = c % 256 >>> 0, c = c / 256 >>> 0;
+						if (0 !== c) throw new Error("Non-zero carry");
+						r = u, i++
+					}
+					for (var m = s - r; m !== s && 0 === l[m];) m++;
+					for (var p = new Uint8Array(n + (s - m)), g = n; m !== s;) p[g++] = l[m++];
+					return p
+				}
+				return {
+					encode: function(t) {
+						if (t instanceof Uint8Array || (ArrayBuffer.isView(t) ? t = new Uint8Array(t.buffer, t.byteOffset, t.byteLength) : Array.isArray(t) && (t = Uint8Array.from(t))), !(t instanceof Uint8Array)) throw new TypeError("Expected Uint8Array");
+						if (0 === t.length) return "";
+						for (var i = 0, n = 0, r = 0, s = t.length; r !== s && 0 === t[r];) r++, i++;
+						for (var d = (s - r) * l + 1 >>> 0, c = new Uint8Array(d); r !== s;) {
+							for (var u = t[r], h = 0, m = d - 1;
+								(0 !== u || h < n) && -1 !== m; m--, h++) u += 256 * c[m] >>> 0, c[m] = u % o >>> 0, u = u / o >>> 0;
+							if (0 !== u) throw new Error("Non-zero carry");
+							n = h, r++
+						}
+						for (var p = d - n; p !== d && 0 === c[p];) p++;
+						for (var g = a.repeat(i); p < d; ++p) g += e.charAt(c[p]);
+						return g
+					},
+					decodeUnsafe: c,
+					decode: function(e) {
+						var t = c(e);
+						if (t) return t;
+						throw new Error("Non-base" + o + " character")
+					}
+				}
+			}
+		},
+		"./node_modules/matrix-js-sdk/node_modules/bs58/index.js": function(e, t, i) {
+			const n = i("./node_modules/matrix-js-sdk/node_modules/base-x/src/index.js");
+			e.exports = n("123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz")
+		},
 		"./node_modules/matrix-widget-api/lib/ClientWidgetApi.js": function(e, t, i) {
 			"use strict";
 
@@ -29185,4 +29185,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Subreddit~SubredditWiki.c17b16c26feb8de5d65f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Subreddit~SubredditWiki.8df6cd112941920a1a96.js.map
