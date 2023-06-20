@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.f9be9707020921004239.js
-// Retrieved at 6/16/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.314b0a4c7abc3871d124.js
+// Retrieved at 6/20/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1040,10 +1040,10 @@
 				E = n("./src/reddit/selectors/telemetry.ts"),
 				y = n("./src/telemetry/index.ts");
 			const C = e => ({
-				...E.o(e),
-				screen: E.cb(e),
-				profile: E.T(e),
-				subreddit: E.lb(e)
+				...E.p(e),
+				screen: E.db(e),
+				profile: E.U(e),
+				subreddit: E.mb(e)
 			});
 			var v = n("./src/reddit/helpers/trackers/postComposer.ts"),
 				k = n("./src/reddit/models/PostCreationForm/index.ts"),
@@ -2328,9 +2328,9 @@
 				h = n("./src/reddit/selectors/telemetry.ts");
 			const b = e => ({
 					source: "toxicity_modal",
-					...h.o(e),
-					screen: h.cb(e),
-					subreddit: h.lb(e)
+					...h.p(e),
+					screen: h.db(e),
+					subreddit: h.mb(e)
 				}),
 				f = e => t => ({
 					action: p.c.VIEW,
@@ -4471,18 +4471,18 @@
 			}));
 			var o = n("./src/reddit/selectors/telemetry.ts");
 			const s = e => t => ({
-					...o.o(t),
+					...o.p(t),
 					source: e,
 					action: "click",
 					noun: "request_to_join_button",
-					subreddit: o.lb(t)
+					subreddit: o.mb(t)
 				}),
 				r = e => t => ({
-					...o.o(t),
+					...o.p(t),
 					source: e,
 					action: "click",
 					noun: "request_to_join_submit",
-					subreddit: o.lb(t)
+					subreddit: o.mb(t)
 				})
 		},
 		"./src/reddit/helpers/trackers/restrictedCommunity.ts": function(e, t, n) {
@@ -4494,18 +4494,18 @@
 			}));
 			var o = n("./src/reddit/selectors/telemetry.ts");
 			const s = e => t => ({
-					...o.o(t),
+					...o.p(t),
 					source: e,
 					action: "click",
 					noun: "request_restricted_approval_button",
-					subreddit: o.lb(t)
+					subreddit: o.mb(t)
 				}),
 				r = e => t => ({
-					...o.o(t),
+					...o.p(t),
 					source: "request_restricted_approval_form",
 					action: "click",
 					noun: e,
-					subreddit: o.lb(t)
+					subreddit: o.mb(t)
 				})
 		},
 		"./src/reddit/icons/svgs/Help/index.tsx": function(e, t, n) {
@@ -4707,4 +4707,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.f9be9707020921004239.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.314b0a4c7abc3871d124.js.map

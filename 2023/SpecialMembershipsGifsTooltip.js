@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.282e68fea0fcb68f6e76.js
-// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.b2bb4b6f01045374aabb.js
+// Retrieved at 6/20/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SpecialMembershipsGifsTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/BaseTooltip.m.less": function(e, t, s) {
@@ -515,11 +515,11 @@
 			var i = s("./src/reddit/selectors/telemetry.ts");
 			const o = (e, t, s, o, n) => a => {
 					const r = {
-						...Object(i.o)(a),
+						...Object(i.p)(a),
 						source: "meta",
 						action: e,
 						noun: "transaction",
-						subreddit: Object(i.mb)(a, s),
+						subreddit: Object(i.nb)(a, s),
 						actionInfo: {
 							settingValue: t,
 							reason: n
@@ -535,17 +535,17 @@
 					source: "meta",
 					action: "open",
 					noun: "gif_tooltip",
-					subreddit: t ? Object(i.mb)(s, t) : void 0,
+					subreddit: t ? Object(i.nb)(s, t) : void 0,
 					correlationId: e,
-					...Object(i.o)(s)
+					...Object(i.p)(s)
 				}),
 				c = (e, t) => s => ({
 					source: "meta",
 					action: "open",
 					noun: "gif_upsell",
-					subreddit: t ? Object(i.mb)(s, t) : void 0,
+					subreddit: t ? Object(i.nb)(s, t) : void 0,
 					correlationId: e,
-					...Object(i.o)(s)
+					...Object(i.p)(s)
 				})
 		},
 		"./src/reddit/helpers/trackers/features/gifTooltip.ts": function(e, t, s) {
@@ -561,23 +561,23 @@
 					action: "change",
 					noun: "gif_tooltip_search",
 					correlationId: s,
-					subreddit: t ? i.mb(o, t) : void 0,
-					post: i.k(o),
+					subreddit: t ? i.nb(o, t) : void 0,
+					post: i.l(o),
 					search: {
 						query: e
 					},
-					...i.o(o)
+					...i.p(o)
 				}),
 				n = (e, t, s) => o => {
-					const n = i.o(o);
+					const n = i.p(o);
 					return {
 						...n,
 						source: "meta",
 						action: "select",
 						noun: "gif_tooltip_result",
 						correlationId: s,
-						subreddit: t ? i.mb(o, t) : void 0,
-						post: i.k(o),
+						subreddit: t ? i.nb(o, t) : void 0,
+						post: i.l(o),
 						actionInfo: {
 							...n.actionInfo,
 							reason: e ? "has-gif-product" : "gif-train"
@@ -602,4 +602,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.282e68fea0fcb68f6e76.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.b2bb4b6f01045374aabb.js.map

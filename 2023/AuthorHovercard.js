@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.825597a538e912061866.js
-// Retrieved at 6/14/2023, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.77330e2363ea12844260.js
+// Retrieved at 6/20/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -5955,19 +5955,19 @@
 			var r = n("./src/reddit/selectors/avatarPushcard.ts"),
 				a = n("./src/reddit/selectors/telemetry.ts");
 			const s = () => e => ({
-					...Object(a.o)(e),
+					...Object(a.p)(e),
 					source: "marketplace",
 					action: "view",
 					noun: "claim_post_unit"
 				}),
 				o = () => e => ({
-					...Object(a.o)(e),
+					...Object(a.p)(e),
 					source: "marketplace",
 					action: "click",
 					noun: "claim_post_unit"
 				}),
 				i = () => e => ({
-					...Object(a.o)(e),
+					...Object(a.p)(e),
 					source: "marketplace",
 					action: "close",
 					noun: "claim_post_unit"
@@ -5977,7 +5977,7 @@
 				e.Profile = "profile", e.Hovercard = "hovercard"
 			}(c || (c = {}));
 			const d = e => t => {
-					const n = Object(a.o)(t);
+					const n = Object(a.p)(t);
 					return {
 						...n,
 						source: "marketplace",
@@ -5993,7 +5993,7 @@
 				l = (e, t, n) => s => {
 					const o = Object(r.a)(s).id;
 					return {
-						...Object(a.o)(s),
+						...Object(a.p)(s),
 						source: e,
 						action: t,
 						noun: n,
@@ -6728,4 +6728,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.825597a538e912061866.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.77330e2363ea12844260.js.map

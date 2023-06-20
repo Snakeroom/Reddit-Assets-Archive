@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.150311f558ee72a84b01.js
-// Retrieved at 5/10/2023, 11:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.2cd86aec065672376d86.js
+// Retrieved at 6/20/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-EndTimeModal"], {
 		"./node_modules/lodash/_baseClamp.js": function(e, t) {
@@ -657,10 +657,10 @@
 			}));
 			var o = n("./src/reddit/selectors/telemetry.ts");
 			const s = (e, t) => ({
-					...Object(o.o)(e),
-					post: Object(o.K)(e, t),
-					predictions: Object(o.Q)(e, t),
-					subreddit: Object(o.lb)(e)
+					...Object(o.p)(e),
+					post: Object(o.L)(e, t),
+					predictions: Object(o.R)(e, t),
+					subreddit: Object(o.mb)(e)
 				}),
 				r = e => t => ({
 					...s(t, e),
@@ -701,4 +701,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.150311f558ee72a84b01.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.2cd86aec065672376d86.js.map

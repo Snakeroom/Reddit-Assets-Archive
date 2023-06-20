@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxTooltip.d13ae6812601288ae3bc.js
-// Retrieved at 6/16/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxTooltip.407f772c81a4639d9d07.js
+// Retrieved at 6/20/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxTooltip", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -484,7 +484,7 @@
 				e.FREQUENT = "frequent", e.LOW = "low", e.OFF = "off"
 			}(r || (r = {}));
 			const c = e => ({
-					...n.o(e),
+					...n.p(e),
 					noun: "desktop_notification_permissions"
 				}),
 				a = e => e ? "enable" : "disable",
@@ -517,7 +517,7 @@
 					})
 				},
 				f = (e, t, i) => ({
-					...n.o(e),
+					...n.p(e),
 					actionInfo: n.d(e, {
 						success: t,
 						reason: i
@@ -546,18 +546,18 @@
 					})
 				},
 				O = e => ({
-					...n.o(e),
+					...n.p(e),
 					noun: "push_notification"
 				}),
 				h = e => ({
 					...O(e),
-					notification: n.F(e, void 0, void 0),
+					notification: n.G(e, void 0, void 0),
 					action: void 0,
 					source: "notification",
 					correlationId: void 0
 				}),
 				j = (e, t) => i => ({
-					...n.o(i),
+					...n.p(i),
 					action: a(e),
 					email: {
 						type: t
@@ -566,7 +566,7 @@
 					source: "email_app_settings"
 				}),
 				v = (e, t) => i => ({
-					...n.o(i),
+					...n.p(i),
 					action: a(e),
 					notification: {
 						type: t
@@ -575,7 +575,7 @@
 					source: "notification_app_settings"
 				}),
 				x = e => t => ({
-					...n.o(t),
+					...n.p(t),
 					source: "email_app_settings",
 					action: a(e),
 					noun: "email",
@@ -584,7 +584,7 @@
 					}
 				}),
 				S = (e, t, i) => s => ({
-					...n.o(s),
+					...n.p(s),
 					action: "set_frequency",
 					noun: i,
 					source: "community_notifications",
@@ -594,7 +594,7 @@
 					}
 				}),
 				k = () => e => ({
-					...n.o(e),
+					...n.p(e),
 					action: o.c.View,
 					noun: "screen",
 					source: "global",
@@ -603,13 +603,13 @@
 					}
 				}),
 				N = () => e => ({
-					...n.o(e),
+					...n.p(e),
 					action: "click",
 					noun: "desktop_notification_permissions",
 					source: "overlay"
 				}),
 				w = () => e => ({
-					...n.o(e),
+					...n.p(e),
 					action: "auto_dismiss",
 					noun: "desktop_notification_permissions",
 					source: "overlay"
@@ -620,4 +620,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.d13ae6812601288ae3bc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.407f772c81a4639d9d07.js.map

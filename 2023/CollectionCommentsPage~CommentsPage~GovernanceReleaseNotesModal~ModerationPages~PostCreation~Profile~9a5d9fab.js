@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.a3e42a87dc4240b239d4.js
-// Retrieved at 6/16/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.b2667736dc2c505f3dae.js
+// Retrieved at 6/20/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -38,7 +38,7 @@
 						}
 						return {
 							...i,
-							actionInfo: Object(o.S)(s, n)
+							actionInfo: Object(o.T)(s, n)
 						}
 					})), u(n.target, n.currentTarget, c.anchorsAndButtons) && i(n)
 				}
@@ -465,8 +465,8 @@
 				H = s("./src/reddit/actions/post.ts"),
 				F = s("./src/reddit/components/AdViewability/index.tsx"),
 				G = s("./src/reddit/components/Governance/VaultActionLink/async.ts"),
-				K = s("./src/reddit/components/HTML5StreamPlayer/index.tsx"),
-				J = s("./src/reddit/components/IntuitivePostTypes/OptionalText.tsx");
+				J = s("./src/reddit/components/HTML5StreamPlayer/index.tsx"),
+				K = s("./src/reddit/components/IntuitivePostTypes/OptionalText.tsx");
 			const Y = "https://www.redditmedia.com";
 			var $ = s("./src/reddit/components/Media/EmbedBox/index.tsx"),
 				z = s("./src/reddit/hooks/useIntersectionObserver.ts"),
@@ -767,8 +767,8 @@
 						}, [w, h, x, i]);
 					Q(oe.a.ArrowLeft, S.current, W), Q(oe.a.ArrowRight, S.current, V);
 					const G = i[x] && i[x].caption,
-						K = i[x] && i[x].outboundUrl,
-						J = Oe(p, n, a);
+						J = i[x] && i[x].outboundUrl,
+						K = Oe(p, n, a);
 					return l.a.createElement("div", {
 						"data-adclicklocation": u.a.MEDIA,
 						className: Object(k.a)(Ee.a.outerContainer),
@@ -808,7 +808,7 @@
 						tabIndex: -1,
 						ref: I,
 						onClick: e.onClickRevealBlurred,
-						style: J
+						style: K
 					}, l.a.createElement("div", {
 						className: Ee.a.imagesWrapper
 					}, l.a.createElement("ul", {
@@ -862,7 +862,7 @@
 						currentSlide: x + 1,
 						totalSlides: i.length,
 						toggleTileLayout: b && B || void 0
-					}) : ""), !G && !K || c || v ? !!s && !c && !v && l.a.createElement("div", {
+					}) : ""), !G && !J || c || v ? !!s && !c && !v && l.a.createElement("div", {
 						className: Ee.a.emptyCaptionBlock,
 						style: {
 							height: s
@@ -870,7 +870,7 @@
 					}) : l.a.createElement(Ie, {
 						caption: G,
 						onClickEvent: F,
-						outboundUrl: K,
+						outboundUrl: J,
 						captionHeight: s
 					}))
 				},
@@ -938,7 +938,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var Ke = e => {
+			var Je = e => {
 					let {
 						canLoadContent: t,
 						children: s,
@@ -969,7 +969,7 @@
 						postId: c
 					}))
 				},
-				Je = s("./node_modules/fbt/lib/FbtPublic.js"),
+				Ke = s("./node_modules/fbt/lib/FbtPublic.js"),
 				Ye = s("./src/lib/intersectionObserver/index.ts"),
 				$e = s("./src/reddit/components/Media/TwitterEmbed/index.m.less"),
 				ze = s.n($e);
@@ -1025,7 +1025,7 @@
 					}), ze.a.tweetPlaceholder)
 				}), u && b && l.a.createElement("p", {
 					className: ze.a.tweetDeleted
-				}, Je.fbt._("This Tweet has been deleted.", null, {
+				}, Ke.fbt._("This Tweet has been deleted.", null, {
 					hk: "1LhcOw"
 				})), l.a.createElement($.a, {
 					childRef: function(e) {
@@ -1049,7 +1049,7 @@
 					title: o
 				}), s.isListing && v > de.j && l.a.createElement("div", {
 					className: ze.a.seeMore
-				}, Je.fbt._("See full tweet", null, {
+				}, Ke.fbt._("See full tweet", null, {
 					hk: "1bxtrd"
 				}))))
 			}
@@ -1256,7 +1256,7 @@
 					o(null)
 				})
 			};
-			var Kt = Object(r.memo)(Ft(Object(At.b)(e => {
+			var Jt = Object(r.memo)(Ft(Object(At.b)(e => {
 					var t, i;
 					const n = Object(r.useRef)(),
 						a = Object(r.useRef)(),
@@ -1431,15 +1431,15 @@
 						hk: "9N3Tr"
 					}));
 					const G = (f || b && !y) && (Object(Bt.z)(P) || !(e.isSponsored && Object(kt.hasAcceptableAds)())),
-						K = x && void 0 !== (null === (t = null == N ? void 0 : N.playbackMp4s) || void 0 === t ? void 0 : t.duration) && (null === (i = null == N ? void 0 : N.playbackMp4s) || void 0 === i ? void 0 : i.duration) <= 45 ? JSON.stringify(N) : void 0,
-						J = l.a.createElement("media-telemetry-observer", {
+						J = x && void 0 !== (null === (t = null == N ? void 0 : N.playbackMp4s) || void 0 === t ? void 0 : t.duration) && (null === (i = null == N ? void 0 : N.playbackMp4s) || void 0 === i ? void 0 : i.duration) <= 45 ? JSON.stringify(N) : void 0,
+						K = l.a.createElement("media-telemetry-observer", {
 							ref: n
 						}, l.a.createElement("shreddit-player", {
 							ref: a,
 							autoplay: G || void 0,
 							"autoplay-pref": b || void 0,
 							gif: f || void 0,
-							"packaged-media-json": K,
+							"packaged-media-json": J,
 							"play-out-of-viewport": Object(Bt.z)(P) || void 0,
 							poster: _,
 							preview: D || void 0,
@@ -1450,19 +1450,19 @@
 							src: A || void 0,
 							type: "application/vnd.apple.mpegURL"
 						})));
-					return E ? l.a.createElement("div", F, J) : l.a.createElement("div", F, l.a.createElement("a", {
+					return E ? l.a.createElement("div", F, K) : l.a.createElement("div", F, l.a.createElement("a", {
 						href: L,
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}, J))
+					}, K))
 				})), (function(e, t) {
 					const s = ["isGif", "isSponsored", "postId"];
 					for (const i of s)
 						if (e[i] !== t[i]) return !1;
 					return !0
 				})),
-				Jt = s("./src/reddit/components/Media/index.m.less"),
-				Yt = s.n(Jt);
+				Kt = s("./src/reddit/components/Media/index.m.less"),
+				Yt = s.n(Kt);
 
 			function $t() {
 				return ($t = Object.assign || function(e) {
@@ -1473,7 +1473,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const zt = N(K.b, {
+			const zt = N(J.b, {
 					playerName: "Reddit Player"
 				}),
 				Xt = 300,
@@ -1867,10 +1867,10 @@
 						viewportWidth: U
 					} = this.state, H = x && y;
 					if (!j.media) return null;
-					const K = j.isSponsored || Object(P.u)(C);
+					const J = j.isSponsored || Object(P.u)(C);
 					let Y;
 					j.media.type !== de.o.TEXT && (Y = j.media.richtextContent);
-					const z = O && Y && !K,
+					const z = O && Y && !J,
 						X = D || B,
 						q = V,
 						{
@@ -1897,7 +1897,7 @@
 						ae = this.shouldBlur(),
 						oe = !((null === (t = j.pollData) || void 0 === t ? void 0 : t.isPrediction) && !m),
 						re = !(!j.isSponsored || !j.source),
-						le = Object(jt.vb)() || "",
+						le = Object(jt.wb)() || "",
 						ce = j.isSponsored ? Object(it.b)(j.id, {
 							fireAdPixelsOfType: d,
 							openPost: T
@@ -1935,7 +1935,7 @@
 							if (null === e) return null;
 							if (!N && !Object(pt.a)(j, null === (s = this.props.theme) || void 0 === s ? void 0 : s.subredditContext)) return null;
 							const t = j.isMeta ? ft(e, j.id) : e;
-							return l.a.createElement(l.a.Fragment, null, oe && l.a.createElement(Ke, {
+							return l.a.createElement(l.a.Fragment, null, oe && l.a.createElement(Je, {
 								canLoadContent: _,
 								className: n,
 								"data-click-id": "text",
@@ -1976,7 +1976,7 @@
 										isListing: b,
 										isCommentsPage: m
 									}), W.c.captureMessage(e)
-								}), Object(R.a)() && console.log(`${j.id}: ${e}`), l.a.createElement(l.a.Fragment, null, oe && l.a.createElement(Ke, {
+								}), Object(R.a)() && console.log(`${j.id}: ${e}`), l.a.createElement(l.a.Fragment, null, oe && l.a.createElement(Je, {
 									postId: j.id,
 									className: n,
 									"data-click-id": "text",
@@ -2022,7 +2022,7 @@
 								source: Q,
 								title: j.title,
 								postId: j.id
-							}), z && l.a.createElement(J.a, {
+							}), z && l.a.createElement(K.a, {
 								content: Y,
 								rtJsonElementProps: cs(this.props)
 							})) : l.a.createElement(l.a.Fragment, null, l.a.createElement(Pe.a, $t({}, ne, {
@@ -2040,7 +2040,7 @@
 								showFull: N,
 								source: Q,
 								title: j.title
-							})), z && l.a.createElement(J.a, {
+							})), z && l.a.createElement(K.a, {
 								content: Y,
 								rtJsonElementProps: cs(this.props)
 							})) : l.a.createElement(l.a.Fragment, null, l.a.createElement(Pe.a, $t({}, ne, {
@@ -2052,7 +2052,7 @@
 								onLoad: this.onIframeLoaded,
 								source: Q,
 								fullWidth: j.media.provider === de.v.IFrameEmbed
-							}))), z && l.a.createElement(J.a, {
+							}))), z && l.a.createElement(K.a, {
 								content: Y,
 								rtJsonElementProps: cs(this.props)
 							}));
@@ -2060,7 +2060,7 @@
 							let e = ee,
 								t = te;
 							e > de.j && (t = te / ee * (e = de.j));
-							const s = M ? l.a.createElement(Kt, {
+							const s = M ? l.a.createElement(Jt, {
 								height: e,
 								isGif: !0,
 								isListing: b,
@@ -2091,7 +2091,7 @@
 								blurSrc: se ? j.media.gifBackgroundImage : void 0
 							}), l.a.createElement(ss, {
 								isVisible: _
-							}, s, z && l.a.createElement(J.a, {
+							}, s, z && l.a.createElement(K.a, {
 								content: Y,
 								rtJsonElementProps: cs(this.props)
 							})))
@@ -2116,7 +2116,7 @@
 								source: e,
 								originalSource: e,
 								onPostMediaClick: this.handlePostMediaClick
-							})), l.a.createElement(st.a, null)))), z && l.a.createElement(J.a, {
+							})), l.a.createElement(st.a, null)))), z && l.a.createElement(K.a, {
 								content: Y,
 								rtJsonElementProps: cs(this.props)
 							}));
@@ -2130,7 +2130,7 @@
 									},
 									isReactAllowed: j.isReactAllowed
 								} : void 0,
-								s = M ? l.a.createElement(Kt, {
+								s = M ? l.a.createElement(Jt, {
 									isGif: j.media.isGif,
 									isListing: b,
 									isMp4DeliveryEnabled: f,
@@ -2176,7 +2176,7 @@
 							return j.isSponsored ? l.a.createElement(F.a, {
 								post: j,
 								trackVideo: !0
-							}, n) : l.a.createElement(l.a.Fragment, null, n, z && l.a.createElement(J.a, {
+							}, n) : l.a.createElement(l.a.Fragment, null, n, z && l.a.createElement(K.a, {
 								content: Y,
 								rtJsonElementProps: cs(this.props)
 							}))
@@ -2210,7 +2210,7 @@
 								originalSource: j.media.content,
 								onPostMediaClick: this.handlePostMediaClick,
 								fireAdPixelsOfType: this.props.fireAdPixelsOfType
-							})))), z && l.a.createElement(J.a, {
+							})))), z && l.a.createElement(K.a, {
 								content: Y,
 								rtJsonElementProps: cs(this.props)
 							}));
@@ -2246,7 +2246,7 @@
 								isTileLayout: !!g,
 								shouldShowTileLayoutOption: this.props.shouldShowGalleryTileOption,
 								isVisible: _
-							}), z && l.a.createElement(J.a, {
+							}), z && l.a.createElement(K.a, {
 								content: Y,
 								rtJsonElementProps: cs(this.props)
 							})));
@@ -2312,16 +2312,16 @@
 				a = s("./src/reddit/selectors/media.ts"),
 				o = s("./src/reddit/selectors/telemetry.ts");
 			const r = (e, t, s) => ({
-					gallery: o.s(e, t, s),
-					post: o.K(e, t),
-					...o.o(e)
+					gallery: o.t(e, t, s),
+					post: o.L(e, t),
+					...o.p(e)
 				}),
 				l = (e, t) => s => ({
 					...r(s, e, t),
 					action: i.c.VIEW,
 					noun: "media",
 					source: "gallery",
-					media: o.C(s, e)
+					media: o.D(s, e)
 				}),
 				d = (e, t) => s => {
 					const l = Object(n.a)(t),
@@ -2332,7 +2332,7 @@
 						noun: "outbound_url",
 						source: "gallery",
 						media: {
-							...o.C(s, e),
+							...o.D(s, e),
 							outboundUrl: t,
 							outboundDomain: l ? l.hostname : void 0
 						}
@@ -2434,4 +2434,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.a3e42a87dc4240b239d4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.b2667736dc2c505f3dae.js.map

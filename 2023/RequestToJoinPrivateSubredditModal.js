@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RequestToJoinPrivateSubredditModal.3a837d25d434efd41ba0.js
-// Retrieved at 6/8/2023, 8:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RequestToJoinPrivateSubredditModal.06ce884ec4a45bc7b7dd.js
+// Retrieved at 6/20/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RequestToJoinPrivateSubredditModal"], {
 		"./src/reddit/components/ContributorRequestFlow/RequestToJoinPrivateSubredditModal/index.m.less": function(e, t, a) {
@@ -278,20 +278,20 @@
 			}));
 			var n = a("./src/reddit/selectors/telemetry.ts");
 			const s = e => t => ({
-					...n.o(t),
+					...n.p(t),
 					source: e,
 					action: "click",
 					noun: "request_to_join_button",
-					subreddit: n.lb(t)
+					subreddit: n.mb(t)
 				}),
 				r = e => t => ({
-					...n.o(t),
+					...n.p(t),
 					source: e,
 					action: "click",
 					noun: "request_to_join_submit",
-					subreddit: n.lb(t)
+					subreddit: n.mb(t)
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RequestToJoinPrivateSubredditModal.3a837d25d434efd41ba0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RequestToJoinPrivateSubredditModal.06ce884ec4a45bc7b7dd.js.map

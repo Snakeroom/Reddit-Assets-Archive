@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NftProfileUnit.a6a9e8d6d96f6fc16e39.js
-// Retrieved at 6/16/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NftProfileUnit.b8ab85fbd4db7dfab8d4.js
+// Retrieved at 6/20/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NftProfileUnit"], {
 		"./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx": function(e, t, r) {
@@ -55,7 +55,7 @@
 						},
 						x = Object(i.useCallback)(e => {
 							k(t => {
-								const r = m.o(t);
+								const r = m.p(t);
 								return {
 									...r,
 									...e,
@@ -370,4 +370,4 @@
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProfileUnit.a6a9e8d6d96f6fc16e39.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProfileUnit.b8ab85fbd4db7dfab8d4.js.map

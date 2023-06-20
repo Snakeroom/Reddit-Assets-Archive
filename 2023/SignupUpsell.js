@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SignupUpsell.49ddca930e4c56fd3bc2.js
-// Retrieved at 6/16/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SignupUpsell.2d8b5b07b21983e3af93.js
+// Retrieved at 6/20/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SignupUpsell"], {
 		"./src/reddit/components/Upsell/SSOButton/index.m.less": function(e, t, s) {
@@ -73,21 +73,21 @@
 				e.Apple = "apple", e.Google = "google", e.Reddit = "reddit"
 			}(x || (x = {}));
 			const C = () => e => ({
-					...Object(g.o)(e),
+					...Object(g.p)(e),
 					source: "popup",
 					action: "view",
 					noun: f,
 					actionInfo: Object(g.d)(e)
 				}),
 				j = () => e => ({
-					...Object(g.o)(e),
+					...Object(g.p)(e),
 					source: "popup",
 					action: "dismiss",
 					noun: f,
 					actionInfo: Object(g.d)(e)
 				}),
 				h = e => t => ({
-					...Object(g.o)(t),
+					...Object(g.p)(t),
 					source: "popup",
 					action: "click",
 					noun: f,
@@ -97,7 +97,7 @@
 					})
 				}),
 				v = () => e => ({
-					...Object(g.o)(e),
+					...Object(g.p)(e),
 					source: "popup",
 					action: "click",
 					noun: f,
@@ -351,4 +351,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SignupUpsell.49ddca930e4c56fd3bc2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SignupUpsell.2d8b5b07b21983e3af93.js.map

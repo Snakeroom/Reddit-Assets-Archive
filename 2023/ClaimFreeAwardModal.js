@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.2174881a4f7767e45bf6.js
-// Retrieved at 5/31/2023, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.e71ba2604cc284650edb.js
+// Retrieved at 6/20/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ClaimFreeAwardModal"], {
 		"./src/reddit/actions/economics/powerups/helpers.ts": function(e, t, r) {
@@ -28,8 +28,8 @@
 				l = r("./src/reddit/actions/post.ts"),
 				u = r("./src/lib/makeGqlRequest/index.ts"),
 				f = r("./src/reddit/actions/economics/powerups/helpers.ts"),
-				p = r("./src/redditGQL/operations/PurchaseCatalogProductOffers.json");
-			var m = r("./src/reddit/selectors/gold/productOffers.ts"),
+				m = r("./src/redditGQL/operations/PurchaseCatalogProductOffers.json");
+			var p = r("./src/reddit/selectors/gold/productOffers.ts"),
 				b = r("./src/reddit/actions/goldPurchaseModals/constants.ts");
 			Object(o.a)(b.m);
 			const w = Object(o.a)(b.o),
@@ -41,13 +41,13 @@
 						gqlContext: d
 					} = o;
 					const c = r(),
-						i = Object(m.a)(c);
+						i = Object(p.a)(c);
 					if ((null == e ? void 0 : e.forceLoad) || !i) {
 						t(w());
 						try {
 							const e = await (async e => {
 								const t = await Object(u.a)(e, {
-									...p
+									...m
 								});
 								if (!t.ok) {
 									const {
@@ -82,13 +82,13 @@
 								awards: r.awards
 							})), e(Object(l.A)())
 						}
-					} catch (p) {
-						Object(a.b)() || console.error(p), e(Object(c.f)({
+					} catch (m) {
+						Object(a.b)() || console.error(m), e(Object(c.f)({
 							kind: i.b.Error,
 							text: n.fbt._("Sorry, something went wrong. Try Claiming again.", null, {
 								hk: "FWjud"
 							})
-						})), s.c.captureException(p)
+						})), s.c.captureException(m)
 					}
 				}
 		},
@@ -120,8 +120,8 @@
 				l = r("./src/reddit/helpers/trackers/freeAwardOffer.ts"),
 				u = r("./src/reddit/hooks/useTracking.ts"),
 				f = r("./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts"),
-				p = r("./src/reddit/actions/modal.ts"),
-				m = r("./src/reddit/selectors/gold/purchaseCatalog.ts"),
+				m = r("./src/reddit/actions/modal.ts"),
+				p = r("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				b = r("./src/reddit/components/LottieAnimation/index.tsx"),
 				w = r("./src/reddit/components/LottieAnimation/util.ts"),
 				O = r("./src/reddit/components/ModalStyledComponents/index.tsx"),
@@ -136,7 +136,7 @@
 			t.default = Object(c.a)((function() {
 				const e = Object(u.a)(),
 					t = Object(d.d)(),
-					r = Object(d.e)(e => Object(m.b)(e)),
+					r = Object(d.e)(e => Object(p.b)(e)),
 					[n, c] = Object(o.useState)(null);
 				Object(o.useEffect)(() => {
 					Object(w.a)(`${g}/opening.json`).then(e => {
@@ -144,7 +144,7 @@
 					}), e(Object(l.b)())
 				}, []);
 				const v = () => {
-					e(Object(l.a)("complete")), t(Object(p.f)())
+					e(Object(l.a)("complete")), t(Object(m.f)())
 				};
 				let P = !1;
 				return s.a.createElement(O.e, {
@@ -205,8 +205,8 @@
 						offerContext: o.a.StorefrontFreeAward
 					}),
 					correlationId: Object(n.d)(n.a.GoldPayment, !1),
-					profile: s.T(e),
-					subreddit: s.lb(e)
+					profile: s.U(e),
+					subreddit: s.mb(e)
 				}),
 				c = () => e => ({
 					source: "free_award_offer",
@@ -261,7 +261,7 @@
 			})), r.d(t, "i", (function() {
 				return f
 			})), r.d(t, "c", (function() {
-				return m
+				return p
 			})), r.d(t, "b", (function() {
 				return b
 			})), r.d(t, "f", (function() {
@@ -296,8 +296,8 @@
 					return (null == t ? void 0 : t[0]) || null
 				},
 				f = (e, t) => (null == e ? void 0 : e.pricePackages) ? null == e ? void 0 : e.pricePackages.filter(e => e.renewInterval === t && e.requiredPaymentProviders && (e => e[0] === s.b.PayPal || e[0] === s.b.Stripe)(e.requiredPaymentProviders)) : null,
-				p = Object(n.a)(u, d.q, (e, t) => f(e, t) || null),
-				m = Object(n.a)(p, (e, t) => {
+				m = Object(n.a)(u, d.q, (e, t) => f(e, t) || null),
+				p = Object(n.a)(m, (e, t) => {
 					let {
 						provider: r
 					} = t;
@@ -306,7 +306,7 @@
 					var r;
 					return (null === (r = e.requiredPaymentProviders) || void 0 === r ? void 0 : r[0]) === t
 				})),
-				b = Object(n.a)(p, e => (null == e ? void 0 : e[0].price) || null),
+				b = Object(n.a)(m, e => (null == e ? void 0 : e[0].price) || null),
 				w = Object(n.a)(e => {
 					var t;
 					return null === (t = e.user.productOfferSubscriptions) || void 0 === t ? void 0 : t.subscriptions
@@ -318,4 +318,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.2174881a4f7767e45bf6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.e71ba2604cc284650edb.js.map

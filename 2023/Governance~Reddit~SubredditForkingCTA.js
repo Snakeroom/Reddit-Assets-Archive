@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.dadbd5ffe68a04087e1a.js
-// Retrieved at 6/16/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.242a833186fce326c0d3.js
+// Retrieved at 6/20/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~SubredditForkingCTA"], {
 		"./src/lib/asyncActions/index.ts": function(e, t, r) {
@@ -537,10 +537,10 @@
 				g = r("./src/reddit/selectors/telemetry.ts"),
 				E = r("./src/telemetry/index.ts");
 			const j = e => ({
-				...g.o(e),
-				screen: g.cb(e),
-				profile: g.T(e),
-				subreddit: g.lb(e)
+				...g.p(e),
+				screen: g.db(e),
+				profile: g.U(e),
+				subreddit: g.mb(e)
 			});
 			var S = r("./src/reddit/helpers/trackers/postComposer.ts"),
 				v = r("./src/reddit/models/PostCreationForm/index.ts"),
@@ -3222,4 +3222,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.dadbd5ffe68a04087e1a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.242a833186fce326c0d3.js.map

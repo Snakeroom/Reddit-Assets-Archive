@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PushNotifications.a73d1bfc436de474779e.js
-// Retrieved at 6/16/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PushNotifications.f9f63de69ac81a137714.js
+// Retrieved at 6/20/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -11,8 +11,8 @@
 			}));
 			var n = i("./src/config.ts"),
 				s = i("./src/redditGQL/operations/RegisterWebPushToken.json"),
-				o = i("./src/lib/makeGqlRequest/index.ts"),
-				r = i("./src/lib/serviceWorker/index.ts"),
+				r = i("./src/lib/makeGqlRequest/index.ts"),
+				o = i("./src/lib/serviceWorker/index.ts"),
 				c = i("./src/lib/timezone/index.ts"),
 				a = e => {
 					const t = (e + "=".repeat((4 - e.length % 4) % 4)).replace(/\-/g, "+").replace(/_/g, "/"),
@@ -27,7 +27,7 @@
 			}(d || (d = {}));
 			const u = async e => {
 				try {
-					const t = await Object(r.a)();
+					const t = await Object(o.a)();
 					if (!t) return d.FailedNoServiceWorker;
 					let i = await t.pushManager.getSubscription();
 					if (!i) {
@@ -45,7 +45,7 @@
 							timestamp: (new Date).toISOString(),
 							language: "en_us"
 						};
-						return Object(o.a)(e(), {
+						return Object(r.a)(e(), {
 							...s,
 							variables: i
 						})
@@ -61,7 +61,7 @@
 		"./src/reddit/actions/notifications/index.ts": function(e, t, i) {
 			"use strict";
 			i.r(t), i.d(t, "initializeServiceWorkerChannel", (function() {
-				return D
+				return W
 			})), i.d(t, "requestNotificationsPermissions", (function() {
 				return R
 			})), i.d(t, "subscribeForPNs", (function() {
@@ -75,8 +75,8 @@
 			}));
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
 				s = i("./node_modules/lodash/omit.js"),
-				o = i.n(s),
-				r = i("./src/lib/browser/isIncognito.ts"),
+				r = i.n(s),
+				o = i("./src/lib/browser/isIncognito.ts"),
 				c = i("./src/lib/notifications/token.ts"),
 				a = i("./src/lib/notifications/index.ts"),
 				d = i("./src/lib/notifications/constants.ts"),
@@ -107,32 +107,32 @@
 				experimentEligibilitySelector: w.a
 			}) === y.Xd;
 			var C = i("./src/reddit/selectors/meta.ts");
-			let W = !1;
-			const D = async (e, t) => {
+			let G = !1;
+			const W = async (e, t) => {
 				const i = Object(S.R)(e);
-				if (W) return;
-				if (W = !0, Object(f.a)(e) !== d.d.NotificationsSupported) return;
+				if (G) return;
+				if (G = !0, Object(f.a)(e) !== d.d.NotificationsSupported) return;
 				await Object(u.a)();
 				navigator.serviceWorker.addEventListener("message", n => {
 					const s = n.data,
-						r = s.command || s.type;
-					if ("registerWithServiceWorker" === r) G(e);
-					else if (r === v.a && i) {
-						const e = o()(s, ["command"]);
+						o = s.command || s.type;
+					if ("registerWithServiceWorker" === o) D(e);
+					else if (o === v.a && i) {
+						const e = r()(s, ["command"]);
 						t(Object(p.f)(e))
-					} else if ("navigate.chat" === r) {
+					} else if ("navigate.chat" === o) {
 						const e = Object(O.a)(s.data.href);
 						e && e.pathname && t(Object(l.c)(e.pathname))
 					}
-				}), G(e)
-			}, G = e => {
+				}), D(e)
+			}, D = e => {
 				navigator.serviceWorker.controller && navigator.serviceWorker.controller.postMessage({
 					command: "registerClient",
 					v2EventBoilerPlate: h.c(e)
 				})
 			}, R = function(e, t) {
 				let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : () => {};
-				return async (n, s, o) => {
+				return async (n, s, r) => {
 					const c = s(),
 						u = Object(C.f)(c),
 						l = q(c),
@@ -142,8 +142,8 @@
 						m = Object(_.c)(g.a.NSFW_BLOCKING_MODAL_V2)(c),
 						O = F(c);
 					if (p || m) return;
-					if (await Object(r.a)() || u) return;
-					await D(c, n);
+					if (await Object(o.a)() || u) return;
+					await W(c, n);
 					h.l(c), await Object(a.b)(e, t, () => {
 						l || f || b || n(Object(d.s)()), n(Object(d.q)()), h.j(c)
 					}, (e, t) => {
@@ -157,11 +157,11 @@
 					}, O)
 				}
 			}, L = e => async (t, i, s) => {
-				const o = i();
+				const r = i();
 				try {
 					switch (await Object(c.b)(s.gqlContext)) {
 						case c.a.Success:
-							Object(f.b)(d.a.Granted), h.m(o), e && t(Object(m.f)({
+							Object(f.b)(d.a.Granted), h.m(r), e && t(Object(m.f)({
 								kind: j.b.SuccessCommunity,
 								text: n.fbt._("Changes saved", null, {
 									hk: "wGH5U"
@@ -169,13 +169,13 @@
 							}));
 							break;
 						case c.a.FailedResponse:
-							h.k(o, "registration_failed_generally");
+							h.k(r, "registration_failed_generally");
 							break;
 						case c.a.FailedGqlReponse:
-							h.k(o, "registration_failed_in_gql")
+							h.k(r, "registration_failed_in_gql")
 					}
-				} catch (r) {
-					h.k(o, "registration_failed_uncaught_exception"), console.error(r)
+				} catch (o) {
+					h.k(r, "registration_failed_uncaught_exception"), console.error(o)
 				}
 			}, P = (e, t) => async i => {
 				try {
@@ -258,46 +258,46 @@
 			}));
 			var n = i("./src/reddit/selectors/telemetry.ts"),
 				s = i("./src/telemetry/index.ts"),
-				o = i("./src/telemetry/models/Event.ts");
-			var r;
+				r = i("./src/telemetry/models/Event.ts");
+			var o;
 			! function(e) {
 				e.FREQUENT = "frequent", e.LOW = "low", e.OFF = "off"
-			}(r || (r = {}));
+			}(o || (o = {}));
 			const c = e => ({
-					...n.o(e),
+					...n.p(e),
 					noun: "desktop_notification_permissions"
 				}),
 				a = e => e ? "enable" : "disable",
 				d = e => {
 					Object(s.a)({
 						...c(e),
-						action: o.c.View,
+						action: r.c.View,
 						source: "popup"
 					})
 				},
 				u = e => {
 					Object(s.a)({
 						...c(e),
-						action: o.c.Allow,
+						action: r.c.Allow,
 						source: "popup"
 					})
 				},
 				l = e => {
 					Object(s.a)({
 						...c(e),
-						action: o.c.Block,
+						action: r.c.Block,
 						source: "popup"
 					})
 				},
 				b = e => {
 					Object(s.a)({
 						...c(e),
-						action: o.c.Close,
+						action: r.c.Close,
 						source: "popup"
 					})
 				},
 				f = (e, t, i) => ({
-					...n.o(e),
+					...n.p(e),
 					actionInfo: n.d(e, {
 						success: t,
 						reason: i
@@ -307,37 +307,37 @@
 				p = e => {
 					Object(s.a)({
 						...f(e, !0),
-						action: o.c.Request,
+						action: r.c.Request,
 						source: "notification"
 					})
 				},
 				m = e => {
 					Object(s.a)({
 						...f(e, !0),
-						action: o.c.Register,
+						action: r.c.Register,
 						source: "notification"
 					})
 				},
 				g = (e, t) => {
 					Object(s.a)({
 						...f(e, !1, t),
-						action: o.c.Bail,
+						action: r.c.Bail,
 						source: "notification"
 					})
 				},
 				O = e => ({
-					...n.o(e),
+					...n.p(e),
 					noun: "push_notification"
 				}),
 				v = e => ({
 					...O(e),
-					notification: n.F(e, void 0, void 0),
+					notification: n.G(e, void 0, void 0),
 					action: void 0,
 					source: "notification",
 					correlationId: void 0
 				}),
 				h = (e, t) => i => ({
-					...n.o(i),
+					...n.p(i),
 					action: a(e),
 					email: {
 						type: t
@@ -346,7 +346,7 @@
 					source: "email_app_settings"
 				}),
 				j = (e, t) => i => ({
-					...n.o(i),
+					...n.p(i),
 					action: a(e),
 					notification: {
 						type: t
@@ -355,7 +355,7 @@
 					source: "notification_app_settings"
 				}),
 				_ = e => t => ({
-					...n.o(t),
+					...n.p(t),
 					source: "email_app_settings",
 					action: a(e),
 					noun: "email",
@@ -364,7 +364,7 @@
 					}
 				}),
 				k = (e, t, i) => s => ({
-					...n.o(s),
+					...n.p(s),
 					action: "set_frequency",
 					noun: i,
 					source: "community_notifications",
@@ -374,8 +374,8 @@
 					}
 				}),
 				y = () => e => ({
-					...n.o(e),
-					action: o.c.View,
+					...n.p(e),
+					action: r.c.View,
 					noun: "screen",
 					source: "global",
 					actionInfo: {
@@ -383,13 +383,13 @@
 					}
 				}),
 				w = () => e => ({
-					...n.o(e),
+					...n.p(e),
 					action: "click",
 					noun: "desktop_notification_permissions",
 					source: "overlay"
 				}),
 				S = () => e => ({
-					...n.o(e),
+					...n.p(e),
 					action: "auto_dismiss",
 					noun: "desktop_notification_permissions",
 					source: "overlay"
@@ -400,4 +400,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.a73d1bfc436de474779e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.f9f63de69ac81a137714.js.map

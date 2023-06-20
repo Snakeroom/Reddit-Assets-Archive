@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.f1b111caf4050ce74ab2.js
-// Retrieved at 6/20/2023, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.e7c8f32716ae01e58e69.js
+// Retrieved at 6/20/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1153,7 +1153,7 @@
 				o = a("./src/reddit/selectors/telemetry.ts"),
 				l = a("./src/telemetry/index.ts");
 			const d = (e, t, a, n) => ({
-				...o.o(e),
+				...o.p(e),
 				source: "announcement_tool",
 				noun: "feed_unit",
 				action: n,
@@ -3695,9 +3695,9 @@
 			var v = a("./src/reddit/selectors/telemetry.ts"),
 				f = a("./src/telemetry/models/Event.ts");
 			const _ = (e, t, a) => ({
-					...v.o(e),
-					post: v.K(e, t),
-					subreddit: v.mb(e, a)
+					...v.p(e),
+					post: v.L(e, t),
+					subreddit: v.nb(e, a)
 				}),
 				x = {
 					[n.chat]: "live_chat",
@@ -3717,7 +3717,7 @@
 						action: f.d.Click,
 						noun: "live_bar_item",
 						actionInfo: {
-							...v.B(x[r], e),
+							...v.C(x[r], e),
 							position: n
 						},
 						...s || {}
@@ -3971,7 +3971,7 @@
 					})(t)
 				}, [u]), Object(s.useEffect)(() => {
 					T((() => e => ({
-						...v.o(e),
+						...v.p(e),
 						source: "live_bar",
 						action: f.d.View,
 						noun: "live_bar_banner"
@@ -4131,7 +4131,7 @@
 								action: f.d.View,
 								noun: "live_bar_item",
 								actionInfo: {
-									...v.B(x[r], e),
+									...v.C(x[r], e),
 									position: n
 								},
 								...s || {}
@@ -5957,4 +5957,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.f1b111caf4050ce74ab2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.e7c8f32716ae01e58e69.js.map

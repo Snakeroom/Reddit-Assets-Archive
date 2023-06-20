@@ -1,21 +1,21 @@
-// https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.3cacf641b7b30b47e17e.js
-// Retrieved at 1/18/2023, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.9e528153b723179b80d3.js
+// Retrieved at 6/20/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SpecialMembershipsEmotesTooltip"], {
-		"./src/reddit/components/RichTextEditor/emotes/BaseTooltip.tsx": function(e, t, o) {
+		"./src/reddit/components/RichTextEditor/emotes/BaseTooltip.tsx": function(e, t, s) {
 			"use strict";
-			var s = o("./node_modules/react/index.js"),
-				i = o.n(s),
-				n = o("./src/lib/classNames/index.ts"),
-				a = o("./src/reddit/components/RichTextEditor/Tooltip/index.tsx"),
-				r = o("./src/reddit/components/RichTextEditor/Tooltip/getSelectionClientRect.ts"),
-				c = o("./src/reddit/icons/svgs/Close/index.tsx"),
-				l = o("./src/reddit/components/RichTextEditor/emotes/tooltipHeader.m.less"),
-				d = o.n(l);
+			var o = s("./node_modules/react/index.js"),
+				i = s.n(o),
+				n = s("./src/lib/classNames/index.ts"),
+				a = s("./src/reddit/components/RichTextEditor/Tooltip/index.tsx"),
+				r = s("./src/reddit/components/RichTextEditor/Tooltip/getSelectionClientRect.ts"),
+				c = s("./src/reddit/icons/svgs/Close/index.tsx"),
+				l = s("./src/reddit/components/RichTextEditor/emotes/tooltipHeader.m.less"),
+				d = s.n(l);
 			const m = e => {
 				let {
 					title: t,
-					onClickClose: o
+					onClickClose: s
 				} = e;
 				return i.a.createElement("div", {
 					className: d.a.header
@@ -23,11 +23,11 @@
 					className: d.a.spacer
 				}), i.a.createElement(c.a, {
 					className: d.a.closeIcon,
-					onClick: o
+					onClick: s
 				}))
 			};
-			var p = o("./src/reddit/components/RichTextEditor/emotes/baseTooltip.m.less"),
-				h = o.n(p);
+			var p = s("./src/reddit/components/RichTextEditor/emotes/baseTooltip.m.less"),
+				h = s.n(p);
 			class u extends i.a.Component {
 				constructor() {
 					super(...arguments), this.updateTooltipPosition = null, this.handleWindowClick = e => {
@@ -93,25 +93,25 @@
 			}
 			t.a = u
 		},
-		"./src/reddit/components/RichTextEditor/emotes/EmoteButton.tsx": function(e, t, o) {
+		"./src/reddit/components/RichTextEditor/emotes/EmoteButton.tsx": function(e, t, s) {
 			"use strict";
-			o.d(t, "a", (function() {
+			s.d(t, "a", (function() {
 				return m
 			}));
-			var s, i = o("./node_modules/react/index.js"),
-				n = o.n(i),
-				a = o("./src/lib/classNames/index.ts"),
-				r = o("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				c = o("./src/reddit/components/RichTextEditor/emotes/emoteButton.m.less"),
-				l = o.n(c);
+			var o, i = s("./node_modules/react/index.js"),
+				n = s.n(i),
+				a = s("./src/lib/classNames/index.ts"),
+				r = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				c = s("./src/reddit/components/RichTextEditor/emotes/emoteButton.m.less"),
+				l = s.n(c);
 			! function(e) {
 				e[e.Inside = 0] = "Inside", e[e.Outside = 1] = "Outside"
-			}(s || (s = {}));
+			}(o || (o = {}));
 			const d = 750,
 				m = e => {
 					let {
 						className: t,
-						containerClassName: o,
+						containerClassName: s,
 						imageClassName: c,
 						disabled: m,
 						id: p,
@@ -122,17 +122,17 @@
 						onClickDelete: f,
 						mouseEnterBufferTime: g = d
 					} = e;
-					const T = Object(i.useRef)(s.Outside),
+					const T = Object(i.useRef)(o.Outside),
 						[x, v] = Object(i.useState)(!1);
 					return n.a.createElement("div", {
-						className: Object(a.a)(l.a.container, o),
+						className: Object(a.a)(l.a.container, s),
 						onMouseEnter: f ? () => {
-							T.current = s.Inside, setTimeout(() => {
-								T.current === s.Inside && v(!0)
+							T.current = o.Inside, setTimeout(() => {
+								T.current === o.Inside && v(!0)
 							}, g)
 						} : void 0,
 						onMouseLeave: f ? () => {
-							T.current = s.Outside, v(!1)
+							T.current = o.Outside, v(!1)
 						} : void 0
 					}, x && n.a.createElement("button", {
 						className: l.a.deleteButton,
@@ -155,7 +155,7 @@
 					})))
 				}
 		},
-		"./src/reddit/components/RichTextEditor/emotes/SpecialMemberships/tooltip.m.less": function(e, t, o) {
+		"./src/reddit/components/RichTextEditor/emotes/SpecialMemberships/tooltip.m.less": function(e, t, s) {
 			e.exports = {
 				addEmoteIcon: "Vl4Izh3aGRVf1oXrUN4AS",
 				tooltip: "RJ1eaUw3sbfRmzYm7bjEC",
@@ -172,34 +172,34 @@
 				whiteScrim: "_1-7xQHARTZsJqIsYzznPo8"
 			}
 		},
-		"./src/reddit/components/RichTextEditor/emotes/SpecialMemberships/tooltip.tsx": function(e, t, o) {
+		"./src/reddit/components/RichTextEditor/emotes/SpecialMemberships/tooltip.tsx": function(e, t, s) {
 			"use strict";
-			o.r(t);
-			o("./node_modules/core-js/modules/web.dom.iterable.js");
-			var s = o("./node_modules/draft-js/lib/Draft.js"),
-				i = o("./node_modules/fbt/lib/FbtPublic.js"),
-				n = o("./node_modules/react/index.js"),
-				a = o.n(n),
-				r = o("./node_modules/react-redux/es/index.js"),
-				c = o("./node_modules/reselect/es/index.js"),
-				l = o("./node_modules/uuid/dist/esm-browser/v4.js"),
-				d = o("./src/lib/classNames/index.ts"),
-				m = o("./src/lib/domUtils/index.ts"),
-				p = o("./src/lib/permalinkToOverlayLocation/index.ts"),
-				h = o("./src/reddit/actions/economics/subredditPremium/actionCreators.ts"),
-				u = o("./src/reddit/components/TrackingHelper/index.tsx"),
-				E = o("./src/reddit/constants/keycodes.ts"),
-				b = o("./src/reddit/controls/Button/index.tsx"),
-				f = o("./src/reddit/endpoints/economics/uploadedAssets.ts"),
-				g = o("./src/reddit/icons/svgs/AddSquare/index.tsx"),
-				T = o("./src/reddit/selectors/economics.ts"),
-				x = o("./src/reddit/selectors/telemetry.ts"),
-				v = o("./src/reddit/components/RichTextEditor/constants/editorChangeTypes.ts"),
-				y = o("./src/reddit/components/RichTextEditor/emotes/BaseTooltip.tsx"),
-				k = o("./src/reddit/components/RichTextEditor/emotes/EmoteButton.tsx"),
-				w = o("./src/reddit/components/RichTextEditor/emotes/helpers.ts"),
-				C = o("./src/reddit/components/RichTextEditor/emotes/SpecialMemberships/tooltip.m.less"),
-				S = o.n(C);
+			s.r(t);
+			s("./node_modules/core-js/modules/web.dom.iterable.js");
+			var o = s("./node_modules/draft-js/lib/Draft.js"),
+				i = s("./node_modules/fbt/lib/FbtPublic.js"),
+				n = s("./node_modules/react/index.js"),
+				a = s.n(n),
+				r = s("./node_modules/react-redux/es/index.js"),
+				c = s("./node_modules/reselect/es/index.js"),
+				l = s("./node_modules/uuid/dist/esm-browser/v4.js"),
+				d = s("./src/lib/classNames/index.ts"),
+				m = s("./src/lib/domUtils/index.ts"),
+				p = s("./src/lib/permalinkToOverlayLocation/index.ts"),
+				h = s("./src/reddit/actions/economics/subredditPremium/actionCreators.ts"),
+				u = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				E = s("./src/reddit/constants/keycodes.ts"),
+				b = s("./src/reddit/controls/Button/index.tsx"),
+				f = s("./src/reddit/endpoints/economics/uploadedAssets.ts"),
+				g = s("./src/reddit/icons/svgs/AddSquare/index.tsx"),
+				T = s("./src/reddit/selectors/economics.ts"),
+				x = s("./src/reddit/selectors/telemetry.ts"),
+				v = s("./src/reddit/components/RichTextEditor/constants/editorChangeTypes.ts"),
+				y = s("./src/reddit/components/RichTextEditor/emotes/BaseTooltip.tsx"),
+				k = s("./src/reddit/components/RichTextEditor/emotes/EmoteButton.tsx"),
+				w = s("./src/reddit/components/RichTextEditor/emotes/helpers.ts"),
+				C = s("./src/reddit/components/RichTextEditor/emotes/SpecialMemberships/tooltip.m.less"),
+				S = s.n(C);
 			const _ = e => `tooltip-emote-${e}`,
 				j = ["blink", "bush", "chug", "clappy", "confused", "cuddle", "dab", "dance", "default", "oof", "respect", "soon", "unfortunately", "wow"].map(e => `https://meta.redditmedia.com/img/fortnitebr/emotes/${e}-2x.gif`);
 			class I extends a.a.Component {
@@ -224,7 +224,7 @@
 						})
 					}, this.sendEvent = () => {
 						this.props.sendEvent(e => {
-							const t = x.o(e);
+							const t = x.p(e);
 							return {
 								source: "meta",
 								action: "open",
@@ -234,16 +234,16 @@
 									...t.actionInfo,
 									reason: this.state.emoteBeingTyped ? "type" : "click"
 								},
-								subreddit: x.lb(e)
+								subreddit: x.mb(e)
 							}
 						})
 					}, this.onEmoteClick = e => {
 						let t = this.props.editorState;
-						const o = Object(w.f)(t);
-						if (o && this.state.emoteBeingTyped) {
+						const s = Object(w.f)(t);
+						if (s && this.state.emoteBeingTyped) {
 							const e = t.getSelection();
-							t = s.EditorState.forceSelection(t, e.merge({
-								anchorOffset: e.getFocusOffset() - o.length - 1
+							t = o.EditorState.forceSelection(t, e.merge({
+								anchorOffset: e.getFocusOffset() - s.length - 1
 							}))
 						}
 						t = Object(w.g)(e, t), this.props.onChange(t), this.closeTooltip()
@@ -253,17 +253,17 @@
 						const t = document.activeElement;
 						if (!t) return;
 						e.preventDefault();
-						let o = t;
-						for (; o = o.previousElementSibling;)
-							if (o.offsetLeft === t.offsetLeft) return void o.focus()
+						let s = t;
+						for (; s = s.previousElementSibling;)
+							if (s.offsetLeft === t.offsetLeft) return void s.focus()
 					}, this.handleDownArrow = e => {
 						const t = document.activeElement;
 						if (!t) return;
 						e.preventDefault();
-						let o = t,
-							s = t;
-						for (; o.nextElementSibling && (!(o = o.nextElementSibling).classList.contains(S.a.emoteButton) || (s = o).offsetLeft !== t.offsetLeft););
-						s === t ? this.returnFocusToEditor() : s.focus()
+						let s = t,
+							o = t;
+						for (; s.nextElementSibling && (!(s = s.nextElementSibling).classList.contains(S.a.emoteButton) || (o = s).offsetLeft !== t.offsetLeft););
+						o === t ? this.returnFocusToEditor() : o.focus()
 					}, this.handleLeftArrow = () => {
 						const e = document.activeElement && document.activeElement.previousElementSibling;
 						this.state.isTooltipVisible && e && e.classList.contains(S.a.emoteButton) && e.focus()
@@ -278,15 +278,15 @@
 				getMatchingEmotes(e) {
 					const t = [];
 					if (e) {
-						const o = {
+						const s = {
 							emotes: [],
 							title: void 0
 						};
 						this.props.emotePacks.forEach(t => {
 							Object.keys(t.emotes).filter(t => -1 !== t.toLowerCase().indexOf(e)).forEach(e => {
-								o.emotes.push(t.emotes[e])
+								s.emotes.push(t.emotes[e])
 							})
-						}), o.emotes.sort((e, t) => e.id.localeCompare(t.id)), t.push(o)
+						}), s.emotes.sort((e, t) => e.id.localeCompare(t.id)), t.push(s)
 					} else this.props.emotePacks.forEach(e => {
 						t.push({
 							emotes: Object.keys(e.emotes).map(t => e.emotes[t]).sort((e, t) => e.id.localeCompare(t.id)),
@@ -300,34 +300,34 @@
 						editorState: e
 					} = this.props, t = e.getLastChangeType();
 					if (t !== v.d && t !== v.a) return;
-					const o = Object(w.f)(e);
-					if (!o) return void(this.state.emoteBeingTyped && this.setState({
+					const s = Object(w.f)(e);
+					if (!s) return void(this.state.emoteBeingTyped && this.setState({
 						isTooltipVisible: !1,
 						emoteBeingTyped: null
 					}));
 					if (this.state.emoteBeingTyped && !this.state.isTooltipVisible) return;
-					if (":" === o[o.length - 1]) return void this.handleFinishTypingEmote(o);
-					const s = this.getMatchingEmotes(o),
-						i = !!s.length && !!s[0].emotes.length,
+					if (":" === s[s.length - 1]) return void this.handleFinishTypingEmote(s);
+					const o = this.getMatchingEmotes(s),
+						i = !!o.length && !!o[0].emotes.length,
 						n = this.state.isTooltipVisible;
 					this.setState({
 						isTooltipVisible: i,
-						emoteBeingTyped: i ? o : null
+						emoteBeingTyped: i ? s : null
 					}, () => {
 						this.state.isTooltipVisible && this.state.isTooltipVisible !== n && this.sendEvent()
 					})
 				}
 				handleFinishTypingEmote(e) {
 					const t = e.substring(0, e.length - 1);
-					let o = this.getMatchingEmotes(t).reduce((e, t) => e.concat(t.emotes), []);
-					if (o.length > 1 && (o = o.filter(e => e.id === t)), o.length) {
+					let s = this.getMatchingEmotes(t).reduce((e, t) => e.concat(t.emotes), []);
+					if (s.length > 1 && (s = s.filter(e => e.id === t)), s.length) {
 						const {
 							editorState: e
 						} = this.props, i = e.getSelection();
-						let n = s.EditorState.forceSelection(e, i.merge({
+						let n = o.EditorState.forceSelection(e, i.merge({
 							anchorOffset: i.getFocusOffset() - t.length - 2
 						}));
-						n = Object(w.g)(o[0], n), this.props.onChange(n)
+						n = Object(w.g)(s[0], n), this.props.onChange(n)
 					}
 					this.setState({
 						isTooltipVisible: !1,
@@ -339,28 +339,28 @@
 						editorState: e,
 						onChange: t
 					} = this.props;
-					t(s.EditorState.forceSelection(e, this.previousSelectionState || e.getSelection()))
+					t(o.EditorState.forceSelection(e, this.previousSelectionState || e.getSelection()))
 				}
 				render() {
 					const {
 						showUpsell: e,
 						subreddit: t
 					} = this.props, {
-						emoteBeingTyped: o,
-						isTooltipVisible: s
-					} = this.state, n = this.getMatchingEmotes(o), r = Object(l.a)(), c = t.name, m = Object(p.a)(`/web/special-membership/${c}?corr=${r}`);
+						emoteBeingTyped: s,
+						isTooltipVisible: o
+					} = this.state, n = this.getMatchingEmotes(s), r = Object(l.a)(), c = t.name, m = Object(p.a)(`/web/special-membership/${c}?corr=${r}`);
 					return a.a.createElement(y.a, {
 						focusOnTooltip: this.focusOnTooltip,
-						isVisible: s,
+						isVisible: o,
 						setIsVisible: this.setIsVisisble,
 						onSetApi: this.props.onSetApi,
-						className: o ? void 0 : S.a.toolbarTooltip,
-						title: o ? i.fbt._('Emotes matching "{emote}"', [i.fbt._param("emote", o)], {
+						className: s ? void 0 : S.a.toolbarTooltip,
+						title: s ? i.fbt._('Emotes matching "{emote}"', [i.fbt._param("emote", s)], {
 							hk: "tVQ7S"
 						}) : i.fbt._("Add r/{communityName} Emote", [i.fbt._param("communityName", t.name)], {
 							hk: "21G6fU"
 						}),
-						isSearching: !!o
+						isSearching: !!s
 					}, a.a.createElement("div", {
 						className: S.a.body,
 						ref: e => this.bodyEl = e
@@ -379,7 +379,7 @@
 						title: e.id,
 						onClick: () => this.onEmoteClick(e),
 						onKeyDown: this.onKeyPressedInTooltip
-					}))))), !o && e && a.a.createElement("div", {
+					}))))), !s && e && a.a.createElement("div", {
 						className: S.a.upsell
 					}, a.a.createElement("div", {
 						className: Object(d.a)(S.a.upsellMoreEmotes, S.a.emotes)
@@ -396,13 +396,13 @@
 								source: "meta",
 								action: "click",
 								noun: "emoji_tooltip_open_learn_more",
-								...x.o(e),
-								subreddit: x.lb(e)
+								...x.p(e),
+								subreddit: x.mb(e)
 							}))
 						}
 					}, i.fbt._("Get More Emotes", null, {
 						hk: "3GJcvl"
-					}))), !o && a.a.createElement("article", {
+					}))), !s && a.a.createElement("article", {
 						className: S.a.emotePack
 					}, a.a.createElement("header", {
 						className: S.a.emotePackTitle
@@ -424,10 +424,10 @@
 				}) || [],
 				showUpsell: (e, t) => {
 					let {
-						subreddit: o
+						subreddit: s
 					} = t;
-					if (o.id) {
-						return Object(T.x)(e, o.id) === T.a.NotSubscribed
+					if (s.id) {
+						return Object(T.x)(e, s.id) === T.a.NotSubscribed
 					}
 					return !1
 				}
@@ -435,12 +435,12 @@
 				onOpenUploadDialog: () => e(Object(h.j)(f.b.Emote))
 			}))(Object(u.c)(I))
 		},
-		"./src/reddit/components/RichTextEditor/emotes/baseTooltip.m.less": function(e, t, o) {
+		"./src/reddit/components/RichTextEditor/emotes/baseTooltip.m.less": function(e, t, s) {
 			e.exports = {
 				tooltip: "_2LFEVtexHPCOv-lxi8OsR8"
 			}
 		},
-		"./src/reddit/components/RichTextEditor/emotes/emoteButton.m.less": function(e, t, o) {
+		"./src/reddit/components/RichTextEditor/emotes/emoteButton.m.less": function(e, t, s) {
 			e.exports = {
 				container: "_1xDkiINVQUjf0tjZcbF3a7",
 				emoteButton: "_2-SqXmcI6RcjKEbTfkrLVe",
@@ -449,40 +449,40 @@
 				deleteIcon: "_1BJNzscR61JS-t7pR4p3Ik"
 			}
 		},
-		"./src/reddit/components/RichTextEditor/emotes/tooltipHeader.m.less": function(e, t, o) {
+		"./src/reddit/components/RichTextEditor/emotes/tooltipHeader.m.less": function(e, t, s) {
 			e.exports = {
 				header: "_3TevD19z6_EfVwVFoSJkRo",
 				spacer: "_1eD-y2tjKEx_8fbVucvhxI",
 				closeIcon: "_1FQVuhZLRBnHYRhiL7giYi"
 			}
 		},
-		"./src/reddit/endpoints/economics/uploadedAssets.ts": function(e, t, o) {
+		"./src/reddit/endpoints/economics/uploadedAssets.ts": function(e, t, s) {
 			"use strict";
-			o.d(t, "b", (function() {
-				return s
-			})), o.d(t, "a", (function() {
+			s.d(t, "b", (function() {
+				return o
+			})), s.d(t, "a", (function() {
 				return i
-			})), o.d(t, "c", (function() {
+			})), s.d(t, "c", (function() {
 				return r
-			})), o.d(t, "e", (function() {
+			})), s.d(t, "e", (function() {
 				return c
-			})), o.d(t, "d", (function() {
+			})), s.d(t, "d", (function() {
 				return l
 			}));
-			var s, i, n = o("./src/config.ts"),
-				a = o("./src/reddit/endpoints/governance/requester.ts");
+			var o, i, n = s("./src/config.ts"),
+				a = s("./src/reddit/endpoints/governance/requester.ts");
 
-			function r(e, t, o, s) {
-				const i = `assetType=${o}&assetStatus=${s}`;
+			function r(e, t, s, o) {
+				const i = `assetType=${s}&assetStatus=${o}`;
 				return Object(a.a)(e, {
 					method: "get",
 					endpoint: `${n.a.metaUrl}/modtools/${t}/assets?${i}`
 				})
 			}
 
-			function c(e, t, o) {
+			function c(e, t, s) {
 				const i = new FormData;
-				return i.append("assetType", o.assetType), i.append("assetName", o.assetName), i.append("upfile", o.imageFile), o.assetType === s.Badge && (i.append("badgeColor", o.badgeColor || ""), i.append("badgeDescription", o.badgeDescription || "")), Object(a.a)(e, {
+				return i.append("assetType", s.assetType), i.append("assetName", s.assetName), i.append("upfile", s.imageFile), s.assetType === o.Badge && (i.append("badgeColor", s.badgeColor || ""), i.append("badgeDescription", s.badgeDescription || "")), Object(a.a)(e, {
 					endpoint: `${n.a.metaUrl}/modtools/${t}/assets`,
 					method: "post",
 					type: null,
@@ -490,26 +490,26 @@
 				})
 			}
 
-			function l(e, t, o, s, i) {
+			function l(e, t, s, o, i) {
 				return Object(a.a)(e, {
-					endpoint: `${n.a.metaUrl}/modtools/${t}/assets/${o}s/${s}`,
+					endpoint: `${n.a.metaUrl}/modtools/${t}/assets/${s}s/${o}`,
 					method: "patch",
 					data: i
 				})
 			}! function(e) {
 				e.Badge = "badge", e.Emote = "emote"
-			}(s || (s = {})),
+			}(o || (o = {})),
 			function(e) {
 				e.Uploaded = "uploaded", e.Approved = "approved", e.Rejected = "rejected"
 			}(i || (i = {}))
 		},
-		"./src/reddit/icons/svgs/AddSquare/index.tsx": function(e, t, o) {
+		"./src/reddit/icons/svgs/AddSquare/index.tsx": function(e, t, s) {
 			"use strict";
-			o.d(t, "a", (function() {
+			s.d(t, "a", (function() {
 				return n
 			}));
-			var s = o("./node_modules/react/index.js"),
-				i = o.n(s);
+			var o = s("./node_modules/react/index.js"),
+				i = s.n(o);
 
 			function n(e) {
 				return i.a.createElement("svg", {
@@ -535,4 +535,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.3cacf641b7b30b47e17e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.9e528153b723179b80d3.js.map
