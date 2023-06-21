@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.4446295105136e14cd37.js
-// Retrieved at 6/20/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.dbde2571dc44c03f95c7.js
+// Retrieved at 6/21/2023, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "CollectionCommentsPage~SearchResults", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -39219,7 +39219,7 @@
 					return {
 						...E.f(a, t),
 						...ee,
-						...S.p(a),
+						...L(a),
 						actionInfo: S.d(a, {
 							success: l,
 							paneName: u
@@ -39235,7 +39235,7 @@
 					}
 				},
 				se = (e, t, n) => s => ({
-					...S.p(s),
+					...L(s),
 					...ee,
 					actionInfo: {
 						...S.d(s),
@@ -49933,4 +49933,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.4446295105136e14cd37.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.dbde2571dc44c03f95c7.js.map
