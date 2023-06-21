@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ActiveCommunities.e3cc74ae580a7ef8e0e2.js
-// Retrieved at 6/20/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ActiveCommunities.78c0790e51b76c69df43.js
+// Retrieved at 6/21/2023, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ActiveCommunities"], {
 		"./src/reddit/components/ActiveCommunities/index.tsx": function(e, t, n) {
@@ -366,7 +366,7 @@
 						className: "overflow-hidden w-100 h-2xl rounded-t-[4px] bg-center bg-cover",
 						style: {
 							backgroundColor: l || "var(--color-secondary-background)",
-							backgroundImage: `url(${b})`
+							backgroundImage: b && `url(${b})`
 						}
 					})), o.a.createElement("div", {
 						className: "mt-[-40px] text-center"
@@ -473,4 +473,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ActiveCommunities.e3cc74ae580a7ef8e0e2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ActiveCommunities.78c0790e51b76c69df43.js.map
