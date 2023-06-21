@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.164adfd93d8964e98e4a.js
-// Retrieved at 6/20/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.d215e98d3ccb18b1ca4e.js
+// Retrieved at 6/21/2023, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1513,8 +1513,8 @@
 					q = U("Approve", G.id, W),
 					K = U("Archived", G.id, W),
 					X = U("Lock", G.id, W),
-					J = U("Mod", G.id, W),
-					Y = U("Remove", G.id, W),
+					Y = U("Mod", G.id, W),
+					J = U("Remove", G.id, W),
 					Q = U("Report", G.id, W),
 					Z = U("Spam", G.id, W),
 					$ = U("Sticky", G.id, W),
@@ -1526,7 +1526,7 @@
 					isFilled: !0,
 					className: Object(c.a)(T.a.icon, T.a.modIcon)
 				}), o.a.createElement(u.c, N({
-					tooltipId: J,
+					tooltipId: Y,
 					text: R(n)
 				}, V))), G.isArchived && o.a.createElement(s.Fragment, null, o.a.createElement(y.a, {
 					isFilled: !0,
@@ -1582,8 +1582,8 @@
 					isFilled: !0,
 					className: Object(c.a)(T.a.icon, T.a.removeIcon),
 					desc: Object(v.b)(G),
-					id: Y,
-					onMouseEnter: D(Y),
+					id: J,
+					onMouseEnter: D(J),
 					onMouseLeave: w
 				}), z && o.a.createElement(m.a, {
 					className: T.a.addRemovalReason,
@@ -1592,12 +1592,12 @@
 						hk: "1YDo3"
 					})
 				}), (G.modRemovalReason || G.modNote) && o.a.createElement(M, {
-					onMouseEnter: D(Y),
+					onMouseEnter: D(J),
 					onMouseLeave: w
 				}, r.fbt._("Removal reason", null, {
 					hk: "2DhKVZ"
 				})), o.a.createElement(u.c, N({
-					tooltipId: Y,
+					tooltipId: J,
 					text: Object(v.b)(G)
 				}, V))), G.bannedBy && G.isSpam && o.a.createElement(s.Fragment, null, o.a.createElement(E.a, {
 					isFilled: !0,
@@ -1769,8 +1769,8 @@
 				p = n("./node_modules/reselect/es/index.js");
 			const b = Object(p.a)(e => Object(m.c)(e, {
 				experimentEligibilitySelector: m.a,
-				experimentName: u.Dc
-			}), e => e === u.Xd);
+				experimentName: u.Ec
+			}), e => e === u.Yd);
 			var f = n("./node_modules/fbt/lib/FbtPublic.js"),
 				h = n("./src/lib/classNames/index.ts"),
 				v = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
@@ -1877,7 +1877,7 @@
 			var q = n("./src/reddit/components/PromotedUserPostsAd/PromotedUserPost/index.m.less"),
 				K = n.n(q);
 			const X = Object(E.a)(null);
-			var J = Object(C.b)(X(e => {
+			var Y = Object(C.b)(X(e => {
 					let {
 						post: t
 					} = e;
@@ -1896,13 +1896,13 @@
 						post: t
 					})))
 				})),
-				Y = n("./src/reddit/components/PromotedUserPostsAd/PromotedUserPosts/index.m.less"),
-				Q = n.n(Y);
+				J = n("./src/reddit/components/PromotedUserPostsAd/PromotedUserPosts/index.m.less"),
+				Q = n.n(J);
 			const Z = e => {
 				let {
 					postIds: t
 				} = e;
-				const n = t.map(e => s.a.createElement(J, {
+				const n = t.map(e => s.a.createElement(Y, {
 					postId: e,
 					key: e
 				}));
@@ -2075,7 +2075,7 @@
 			n.d(t, "b", (function() {
 				return F
 			})), n.d(t, "a", (function() {
-				return Y
+				return J
 			}));
 			var r = n("./src/config.ts"),
 				s = n("./node_modules/polished/dist/polished.es.js"),
@@ -2142,8 +2142,8 @@
 				K = n("./src/reddit/components/PostTitle/index.m.less"),
 				X = n.n(K);
 
-			function J() {
-				return (J = Object.assign || function(e) {
+			function Y() {
+				return (Y = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -2153,7 +2153,7 @@
 			}! function(e) {
 				e[e.ExtraLarge = 0] = "ExtraLarge", e[e.Large = 1] = "Large", e[e.Medium = 2] = "Medium", e[e.Small = 3] = "Small", e[e.ExtraSmall = 4] = "ExtraSmall", e[e.Metadata = 5] = "Metadata"
 			}(F || (F = {}));
-			const Y = e => {
+			const J = e => {
 					let {
 						size: t,
 						titleColor: n,
@@ -2208,7 +2208,7 @@
 						children: s,
 						...o
 					} = e;
-					return i.a.createElement(c.a, J({}, o, {
+					return i.a.createElement(c.a, Y({}, o, {
 						className: Object(u.a)(t, X.a.styledLink, {
 							[X.a.isVisitedEnabled]: !n
 						})
@@ -2295,7 +2295,7 @@
 					})(s));
 					const o = e.isCommentsPage ? D.a.PostComments : D.a.PostItem,
 						a = !(!e.isNsfwBlurSubreddit || !e.post.isNSFW);
-					return i.a.createElement(Y, {
+					return i.a.createElement(J, {
 						className: e.titleClassName,
 						nowrap: e.nowrap,
 						redditStyle: e.redditStyle || e.isCommentsPage || e.isCommentsPageAd,
@@ -2386,7 +2386,7 @@
 						nowrap: !0,
 						post: c,
 						sendEvent: this.props.sendEvent
-					}), !Object(P.b)(c) && i.a.createElement(ee, J({}, this.props, {
+					}), !Object(P.b)(c) && i.a.createElement(ee, Y({}, this.props, {
 						leftFlair: d ? f : void 0
 					})), a && i.a.createElement(U, {
 						className: X.a.pollMeta,
@@ -2417,7 +2417,7 @@
 					})),
 					o = Object(j.a)(),
 					c = Object(m.b)();
-				return r ? i.a.createElement(re, J({
+				return r ? i.a.createElement(re, Y({
 					pageLayer: t,
 					isCommentPermalink: n
 				}, r, s, e, {
@@ -2738,8 +2738,8 @@
 				q = m.a.div("PostMediaWrapper", B.a),
 				K = m.a.div("BackgroundWrapper", B.a),
 				X = m.a.wrapped(h.b, "PostContainer", B.a),
-				J = 640,
-				Y = e => Object(k.a)(e.title, 100),
+				Y = 640,
+				J = e => Object(k.a)(e.title, 100),
 				Q = e => {
 					if (e.post.isMediaOnly) return {};
 					const t = Object(j.a)(Object(x.a)(e), I.a.actionIcon, I.b.actionIcon);
@@ -2789,7 +2789,7 @@
 					})), o.a.createElement(z, {
 						post: e,
 						size: c.b.Large,
-						format: Y
+						format: J
 					}), e.source && o.a.createElement(H, null, o.a.createElement(O.a, {
 						href: e.source.url,
 						isSponsored: !0,
@@ -2800,7 +2800,7 @@
 						isNotCardView: !0,
 						showCentered: !0,
 						post: e,
-						availableWidth: J,
+						availableWidth: Y,
 						shouldLoad: !0
 					})))), o.a.createElement(i, m, o.a.createElement(X, {
 						className: t,
@@ -5480,4 +5480,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.164adfd93d8964e98e4a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.d215e98d3ccb18b1ca4e.js.map

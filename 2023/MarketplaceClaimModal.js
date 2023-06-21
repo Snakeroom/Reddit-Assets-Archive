@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.66ed2acd2ed891d69327.js
-// Retrieved at 6/20/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.5d14ae10d2426c0d0e13.js
+// Retrieved at 6/21/2023, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MarketplaceClaimModal"], {
 		"./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx": function(e, t, r) {
@@ -53,7 +53,7 @@
 								NO_VAULT: !0
 							} : {}
 						},
-						S = Object(c.useCallback)(e => {
+						I = Object(c.useCallback)(e => {
 							x(t => {
 								const r = p.p(t);
 								return {
@@ -72,8 +72,8 @@
 						authHeaders: v,
 						config: A,
 						isNightMode: f,
-						sendEvent: S
-					}), [v, A, f, S])
+						sendEvent: I
+					}), [v, A, f, I])
 				}
 		},
 		"./src/reddit/components/Econ/Marketplace/ClaimModal/index.m.less": function(e, t, r) {
@@ -224,10 +224,10 @@
 			const a = e => {
 					return !(Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: s.He
-					}) === s.Xd)
+						experimentName: s.Ie
+					}) === s.Yd)
 				},
-				o = Object(c.a)(s.Ie)
+				o = Object(c.a)(s.Je)
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, r) {
 			"use strict";
@@ -236,9 +236,9 @@
 			}));
 			var s = r("./src/reddit/constants/experiments.ts"),
 				n = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const c = Object(n.a)(s.Hd)
+			const c = Object(n.a)(s.Id)
 		},
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.66ed2acd2ed891d69327.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.5d14ae10d2426c0d0e13.js.map

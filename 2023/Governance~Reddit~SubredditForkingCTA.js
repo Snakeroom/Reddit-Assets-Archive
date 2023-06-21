@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.242a833186fce326c0d3.js
-// Retrieved at 6/20/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.8643c89cda817af7bd20.js
+// Retrieved at 6/21/2023, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~SubredditForkingCTA"], {
 		"./src/lib/asyncActions/index.ts": function(e, t, r) {
@@ -175,8 +175,8 @@
 			}), u = r("./node_modules/fbt/lib/FbtPublic.js"), l = r("./src/reddit/models/Toast/index.ts"), b = r("./node_modules/reselect/es/index.js"), p = r("./src/reddit/constants/experiments.ts"), f = r("./src/reddit/helpers/chooseVariant/index.ts"), m = r("./src/reddit/selectors/user.ts");
 			const h = Object(b.a)(e => Object(f.c)(e, {
 				experimentEligibilitySelector: m.S,
-				experimentName: p.bc
-			}), e => e === p.Xd);
+				experimentName: p.cc
+			}), e => e === p.Yd);
 			var O = r("./src/reddit/actions/toaster.ts");
 			const y = "SUBREDDIT_COUNTRY_SITE__LOADED",
 				_ = "SUBREDDIT_COUNTRY_SITE__CHANGED",
@@ -991,7 +991,7 @@
 				W = Object(s.a)(U.a),
 				H = Object(s.a)(U.G),
 				z = e => `/r/${e}/about/${w.s}`,
-				Q = (e, t) => {
+				Y = (e, t) => {
 					const r = e || {
 							duration: n.D,
 							options: []
@@ -1012,7 +1012,7 @@
 						text: e.text.trim()
 					})).filter(e => !!e.text), o
 				},
-				Y = e => {
+				Q = e => {
 					const t = e.uploads,
 						r = Object(N.Z)(e),
 						s = Object(N.a)(e),
@@ -1039,9 +1039,9 @@
 					r(H(e)), o = s();
 					const l = Object(N.a)(o),
 						b = E.d.rteVideoPoster(o),
-						p = Y(o),
+						p = Q(o),
 						f = l === n.bc.MEDIA;
-					p && (b || f) && (await r(G.f(p)), Y(s())) || (e === k.r.Draft ? await r(Object(u.r)(t.draftId)) : e === k.r.ScheduledPost && Object(D.r)(o) ? await r(X(t)) : e === k.r.ScheduledPost ? await r(Z(t)) : await r(ee(t)))
+					p && (b || f) && (await r(G.f(p)), Q(s())) || (e === k.r.Draft ? await r(Object(u.r)(t.draftId)) : e === k.r.ScheduledPost && Object(D.r)(o) ? await r(X(t)) : e === k.r.ScheduledPost ? await r(Z(t)) : await r(ee(t)))
 				}, X = e => async (t, r, n) => {
 					let {
 						gqlContext: s
@@ -1062,7 +1062,7 @@
 					const {
 						isPoll: m,
 						polls: h
-					} = Object(N.u)(i), O = Q(h, i), y = {
+					} = Object(N.u)(i), O = Y(h, i), y = {
 						...Object(_.e)({
 							poll: m ? O : void 0,
 							submission: a,
@@ -1091,7 +1091,7 @@
 					const {
 						isPoll: l,
 						polls: f
-					} = Object(N.u)(i), m = Q(f, i), h = {
+					} = Object(N.u)(i), m = Y(f, i), h = {
 						duration: m.duration,
 						options: m.options
 					}, O = {
@@ -1122,7 +1122,7 @@
 							isPoll: f,
 							polls: _
 						} = Object(N.u)(u),
-						g = Q(_, u);
+						g = Y(_, u);
 					if (!b) return;
 					if (t(q(b)), e.postFieldValidationPending && (await e.postFieldValidationPending, Object(N.x)(r()))) return;
 					if (e.postGuidanceValidationPending && (await e.postGuidanceValidationPending, Object(R.c)(r()))) return;
@@ -1237,7 +1237,7 @@
 			const m = e => l.d.reCaptchaEnterprise(e) && !Object(f.d)(e),
 				h = e => !!Object(p.c)(e, {
 					experimentEligibilitySelector: Object(b.d)(Object(b.b)(...s.c)),
-					experimentName: u.nf
+					experimentName: u.of
 				}),
 				O = Object(n.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				y = function() {
@@ -1678,7 +1678,7 @@
 								postFieldValidationPending: Promise.resolve()
 							})), Object(l.b)(T)
 						}
-						await t(Object(n.b)(`${r.path}`)), f ? f === b.bf.NewModule && t(Object(c.h)({
+						await t(Object(n.b)(`${r.path}`)), f ? f === b.cf.NewModule && t(Object(c.h)({
 							tooltipId: u.MOD_WELCOME_TOOLTIP_ID
 						})) : (t(Object(o.h)(p.a.POST_FLOW_UPSELL_MODAL_ID)), Object(k.a)(Object(j.g)()(x))), Object(E.b)(E.a.SubredditCreation), t(Object(w.f)(i, null !== (g = Object(I.db)(x)) && void 0 !== g ? g : Object(v.k)(x)))
 					} else R.error && Object(k.a)(Object(j.h)(R.error.type, A)(x)), t(U({
@@ -3222,4 +3222,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.242a833186fce326c0d3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.8643c89cda817af7bd20.js.map

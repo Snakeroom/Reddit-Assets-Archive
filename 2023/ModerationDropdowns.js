@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.7c1b730ccdc5c3b40e19.js
-// Retrieved at 6/20/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.6eb8e67a7e73f42f1281.js
+// Retrieved at 6/21/2023, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, n) {
@@ -765,15 +765,15 @@
 					var U, V, G, K, Q;
 					const Z = (null === (U = H.pollData) || void 0 === U ? void 0 : U.isPrediction) && !(null === (V = H.pollData) || void 0 === V ? void 0 : V.resolvedOptionId),
 						q = (null === (G = H.pollData) || void 0 === G ? void 0 : G.isPrediction) && null !== H.pollData.resolvedOptionId,
-						z = H.flair.filter(e => e.type !== S.f.Nsfw && e.type !== S.f.Spoiler).length > 0,
-						J = Object(M.b)(H),
-						Y = !(!H.approvedBy || !J),
+						Y = H.flair.filter(e => e.type !== S.f.Nsfw && e.type !== S.f.Spoiler).length > 0,
+						z = Object(M.b)(H),
+						J = !(!H.approvedBy || !z),
 						X = i ? void 0 : l,
 						$ = Object(N.a)(H),
 						ee = u ? L : A;
 					return s.a.createElement(T.g, null, o && s.a.createElement(s.a.Fragment, null, !H.isSponsored && s.a.createElement(s.a.Fragment, null, s.a.createElement(T.e, {
 						className: ee(g.a.Approve, X),
-						displayText: Y ? j.fbt._("Reapprove", null, {
+						displayText: J ? j.fbt._("Reapprove", null, {
 							hk: "39rQqr"
 						}) : H.approvedBy ? j.fbt._("Approved", null, {
 							hk: "1j7d8E"
@@ -799,7 +799,7 @@
 						onClick: R
 					}, s.a.createElement(T.j, null))), t && s.a.createElement(T.e, {
 						className: ee(g.a.Flair, X),
-						displayText: z ? j.fbt._("Edit post flair", null, {
+						displayText: Y ? j.fbt._("Edit post flair", null, {
 							hk: "2oet1"
 						}) : j.fbt._("Add post flair", null, {
 							hk: "1iPNLQ"
@@ -1448,9 +1448,9 @@
 				r = n("./src/reddit/selectors/user.ts");
 			const a = (e, t) => t && Object(s.c)(e, {
 				experimentEligibilitySelector: r.S,
-				experimentName: o.Of
-			}) === o.Xd
+				experimentName: o.Pf
+			}) === o.Yd
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.7c1b730ccdc5c3b40e19.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.6eb8e67a7e73f42f1281.js.map

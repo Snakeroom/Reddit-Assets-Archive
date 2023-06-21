@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow.0cc736b6958909a47f63.js
-// Retrieved at 6/20/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow.9e68397fde848530c8b4.js
+// Retrieved at 6/21/2023, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow"], {
 		"./src/lib/assertNever.ts": function(t, e, i) {
@@ -813,8 +813,8 @@
 				b = i("./src/reddit/selectors/postFlair.ts"),
 				S = i("./src/reddit/selectors/subreddit.ts"),
 				E = i("./src/reddit/actions/postFlairStyleTemplates/constants.ts");
-			const g = Object(d.a)(E.c),
-				h = Object(d.a)(E.b),
+			const h = Object(d.a)(E.c),
+				g = Object(d.a)(E.b),
 				y = Object(d.a)(E.a);
 			var D = i("./src/reddit/actions/toaster.ts"),
 				I = i("./src/reddit/actions/widgets/index.ts"),
@@ -858,21 +858,21 @@
 					r(Object(u.h)(n));
 					const b = Object(N.i)(i)(c);
 					let E = null,
-						g = null;
+						h = null;
 					try {
-						(E = await Object(_.f)(o(), j.a.StructuredStyles)) && (g = Object(_.m)(E)(r, o, s))
+						(E = await Object(_.f)(o(), j.a.StructuredStyles)) && (h = Object(_.m)(E)(r, o, s))
 					} catch (O) {
 						const t = Object(T.a)("webSocket");
 						return void r(Object(u.f)(n, t))
 					}
-					const h = Object(S.X)(c, {
+					const g = Object(S.X)(c, {
 							subredditId: t
 						}).name,
-						y = await p.e(l(), h, d),
+						y = await p.e(l(), g, d),
 						I = {};
 					if (y.ok) {
-						if (g) try {
-							await g
+						if (h) try {
+							await h
 						} catch (O) {}
 						const i = Object(C.f)(o(), {
 							apiRequestId: n
@@ -947,7 +947,7 @@
 							}),
 							c = l && l.templateIds;
 						if (!c || !c.length) return;
-						e(g({
+						e(h({
 							subredditId: t
 						}));
 						const a = await Object(p.a)(r(), s.name, c);
@@ -960,7 +960,7 @@
 								if (t && t.subreddit)
 									for (const e of t.subreddit.postFlairStyleTemplates) i[e.id] = Object(m.a)(e)
 							}
-							e(h({
+							e(g({
 								subredditId: t,
 								templates: i
 							}))
@@ -1132,9 +1132,9 @@
 			})), i.d(e, "k", (function() {
 				return E
 			})), i.d(e, "B", (function() {
-				return g
-			})), i.d(e, "A", (function() {
 				return h
+			})), i.d(e, "A", (function() {
+				return g
 			})), i.d(e, "C", (function() {
 				return y
 			})), i.d(e, "D", (function() {
@@ -1182,8 +1182,8 @@
 				b = "SUBREDDIT__ONBOARDING_SUBREDDITS_PENDING",
 				S = "SUBREDDIT__ONBOARDING_SUBREDDITS_LOADED",
 				E = "SUBREDDIT__ONBOARDING_SUBREDDITS_FAILED",
-				g = "SUBREDDIT__EDIT_REQUESTED",
-				h = "SUBREDDIT__EDIT_FAILED",
+				h = "SUBREDDIT__EDIT_REQUESTED",
+				g = "SUBREDDIT__EDIT_FAILED",
 				y = "SUBREDDIT__EDIT_SUCCESS",
 				D = "SUBREDDIT_QUESTIONS_LOADED",
 				I = "SUBREDDIT_SURVEY_ANSWERED",
@@ -1273,8 +1273,8 @@
 				b = i("./src/reddit/models/Widgets/index.ts"),
 				S = i("./src/reddit/selectors/subreddit.ts"),
 				E = i("./src/reddit/helpers/widgets/index.tsx"),
-				g = i("./src/reddit/models/Image/index.tsx"),
-				h = i("./src/reddit/models/Toast/index.ts"),
+				h = i("./src/reddit/models/Image/index.tsx"),
+				g = i("./src/reddit/models/Toast/index.ts"),
 				y = i("./src/reddit/actions/widgets/constants.ts");
 			const D = Object(r.a)(y.g),
 				I = (t, e, i) => async (r, _, p) => {
@@ -1290,7 +1290,7 @@
 					let O = null,
 						T = null;
 					try {
-						(O = await Object(s.f)(b, g.a.Widgets)) && (T = Object(s.m)(O)(r, _, p))
+						(O = await Object(s.f)(b, h.a.Widgets)) && (T = Object(s.m)(O)(r, _, p))
 					} catch (k) {
 						const t = Object(f.a)("webSocket");
 						return void r(Object(o.f)(i, t))
@@ -1305,7 +1305,7 @@
 						let s = w.body;
 						const c = s.id;
 						if ("calendar" === e.kind && r(Object(l.f)({
-								kind: h.b.SuccessMod,
+								kind: g.b.SuccessMod,
 								text: n.fbt._("New calendar added! It may take a few minutes to see your events appear", null, {
 									hk: "4iETrT"
 								})
@@ -1335,7 +1335,7 @@
 					let k = null,
 						j = null;
 					try {
-						(k = await Object(s.f)(I, g.a.Widgets)) && (j = Object(s.m)(k)(r, _, p))
+						(k = await Object(s.f)(I, h.a.Widgets)) && (j = Object(s.m)(k)(r, _, p))
 					} catch (x) {
 						const t = Object(f.a)("webSocket");
 						return void r(Object(o.f)(i, t))
@@ -1396,7 +1396,7 @@
 							widgetId: D,
 							widget: s
 						})), "calendar" === e.kind && r(Object(l.f)({
-							kind: h.b.SuccessMod,
+							kind: g.b.SuccessMod,
 							text: n.fbt._("Calendar is updated! It may take a few minutes to see your events change", null, {
 								hk: "10XWV"
 							})
@@ -1457,7 +1457,7 @@
 						}))(n.apiContext(), l, e.file.name, await Object(p.h)(e.file));
 						let f = !1;
 						try {
-							const n = await Object(s.g)(i(), _, e, g.a.Widgets);
+							const n = await Object(s.g)(i(), _, e, h.a.Widgets);
 							n && (t(Object(s.j)(n)), f = !0)
 						} catch (m) {
 							if (m instanceof Error) throw m;
@@ -1693,9 +1693,9 @@
 			})), i.d(e, "a", (function() {
 				return m
 			})), i.d(e, "m", (function() {
-				return g
-			})), i.d(e, "n", (function() {
 				return h
+			})), i.d(e, "n", (function() {
+				return g
 			})), i.d(e, "l", (function() {
 				return y
 			})), i.d(e, "p", (function() {
@@ -1762,8 +1762,8 @@
 						iconPosition: s = f.C,
 						isFullWidth: l = !1,
 						isSquare: m = !1,
-						children: g,
-						className: h,
+						children: h,
+						className: g,
 						kind: y = p.Button,
 						priority: D = _.Primary,
 						redditStyle: I,
@@ -1793,8 +1793,8 @@
 							[c.a.rplStyle]: n
 						})
 					})({
-						baseClassName: h,
-						children: g,
+						baseClassName: g,
+						children: h,
 						dataRedditStyle: e,
 						Icon: i,
 						isFullWidth: l,
@@ -1828,7 +1828,7 @@
 							isFilled: a === _.Primary
 						}))
 					})({
-						children: g,
+						children: h,
 						text: w,
 						Icon: i,
 						iconClassName: n,
@@ -1847,11 +1847,11 @@
 				b = t => r.a.createElement(s.default, t),
 				S = t => r.a.createElement("a", t),
 				E = t => r.a.createElement("button", t),
-				g = t => r.a.createElement(m, a({
+				h = t => r.a.createElement(m, a({
 					kind: p.ExternalLink,
 					priority: _.Primary
 				}, t)),
-				h = t => r.a.createElement(m, a({
+				g = t => r.a.createElement(m, a({
 					kind: p.InternalLink,
 					priority: _.Primary
 				}, t)),
@@ -2270,7 +2270,7 @@
 		"./src/reddit/helpers/trackers/postComposer.ts": function(t, e, i) {
 			"use strict";
 			i.d(e, "a", (function() {
-				return h
+				return g
 			})), i.d(e, "e", (function() {
 				return y
 			})), i.d(e, "L", (function() {
@@ -2381,10 +2381,10 @@
 					screen: _.db(t),
 					correlationId: Object(r.c)(r.a.PostComposer)
 				}),
-				g = (t, e) => "self" !== e ? {} : {
+				h = (t, e) => "self" !== e ? {} : {
 					editorMode: t.user.prefs.editorMode === s.i.MARKDOWN ? "markdown" : "rte"
 				},
-				h = t => {
+				g = t => {
 					Object(p.a)({
 						noun: "cancel",
 						...E(t)
@@ -2442,7 +2442,7 @@
 						subreddit: _.mb(t),
 						postComposer: {
 							type: e,
-							...g(t, e)
+							...h(t, e)
 						},
 						post: i ? _.L(t, i) : null,
 						...E(t),
@@ -2462,7 +2462,7 @@
 						subreddit: _.mb(t),
 						postComposer: {
 							type: e,
-							...g(t, e)
+							...h(t, e)
 						},
 						...E(t)
 					})
@@ -2935,9 +2935,9 @@
 			})), i.d(e, "f", (function() {
 				return E
 			})), i.d(e, "d", (function() {
-				return g
-			})), i.d(e, "c", (function() {
 				return h
+			})), i.d(e, "c", (function() {
+				return g
 			})), i.d(e, "e", (function() {
 				return y
 			})), i.d(e, "l", (function() {
@@ -2959,42 +2959,42 @@
 				_ = t => {
 					return Object(s.c)(t, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.ef
-					}) === o.gf.ContentMatch
+						experimentName: o.ff
+					}) === o.hf.ContentMatch
 				},
 				f = t => {
 					return Object(s.c)(t, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.ef
-					}) === o.gf.ConfidenceAndSuccess
+						experimentName: o.ff
+					}) === o.hf.ConfidenceAndSuccess
 				},
 				p = t => {
 					const e = Object(s.c)(t, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.ef
+						experimentName: o.ff
 					});
-					return e === o.gf.ContentMatch || e === o.gf.ConfidenceAndSuccess || e === o.V.Control1 || e === o.V.Control2
+					return e === o.hf.ContentMatch || e === o.hf.ConfidenceAndSuccess || e === o.V.Control1 || e === o.V.Control2
 				},
 				m = t => {
 					const e = Object(s.c)(t, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.ef
+						experimentName: o.ff
 					});
 					return e === o.V.Control1 || e === o.V.Control2
 				},
 				b = t => {
 					const e = Object(s.c)(t, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.ef
+						experimentName: o.ff
 					});
-					return e === o.gf.ContentMatch || e === o.gf.ConfidenceAndSuccess
+					return e === o.hf.ContentMatch || e === o.hf.ConfidenceAndSuccess
 				},
 				S = t => t.creations.subredditRec.api.pending,
 				E = t => t.creations.subredditRec.api.error,
-				g = t => {
+				h = t => {
 					return t.creations.subredditRec.order.length > 0
 				},
-				h = t => {
+				g = t => {
 					const e = t.creations.subredditRec.order,
 						i = [];
 					return e.forEach(e => {
@@ -3065,12 +3065,12 @@
 					return Object(o.Q)(i)
 				}, (t, e, i) => !t && !e && i),
 				a = Object(n.a)((t, e) => Object(s.c)(t, {
-					experimentName: r.xd,
+					experimentName: r.yd,
 					experimentEligibilitySelector: t => c(t, e)
 				}), t => t),
-				d = t => t === r.lg.NoCommunityWidgets,
-				u = t => t === r.lg.NoRulesModerators,
-				_ = t => t === r.lg.RelatedPostsDu
+				d = t => t === r.mg.NoCommunityWidgets,
+				u = t => t === r.mg.NoRulesModerators,
+				_ = t => t === r.mg.RelatedPostsDu
 		},
 		"./src/reddit/selectors/postGuidance.ts": function(t, e, i) {
 			"use strict";
@@ -3136,4 +3136,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow.0cc736b6958909a47f63.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow.9e68397fde848530c8b4.js.map

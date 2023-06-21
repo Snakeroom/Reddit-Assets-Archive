@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Avatar.d61f43fc4f6f7d727ffd.js
-// Retrieved at 6/20/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Avatar.cd2ce9819db3c19a3a78.js
+// Retrieved at 6/21/2023, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Avatar"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, s) {
@@ -65,15 +65,15 @@
 					activeDetails: h,
 					activeTab: R,
 					activeMeSubpage: k,
-					shopTabState: N
-				} = s, T = Object(n.useMemo)(() => ({
+					shopTabState: I
+				} = s, N = Object(n.useMemo)(() => ({
 					activeTab: R || void 0,
 					activeMeSubpage: k || void 0,
 					activeDetails: h || void 0,
-					shopTabState: N || void 0
-				}), [h, R, k, N]), I = Object(c.e)(e => !Object(O.S)(e) && Object(m.x)(e));
+					shopTabState: I || void 0
+				}), [h, R, k, I]), T = Object(c.e)(e => !Object(O.S)(e) && Object(m.x)(e));
 				if (!f || !j) return null;
-				if (I) return a.a.createElement("div", {
+				if (T) return a.a.createElement("div", {
 					className: Object(o.a)(x.a.container, {
 						[x.a.containerExp]: A
 					})
@@ -97,7 +97,7 @@
 						[x.a.containerExp]: A
 					})
 				}, a.a.createElement(r.a, v({}, C, {
-					navState: T,
+					navState: N,
 					isModal: t
 				}), a.a.createElement(r.b, {
 					isModal: t,
@@ -204,10 +204,10 @@
 			const c = e => {
 					return !(Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: r.He
-					}) === r.Xd)
+						experimentName: r.Ie
+					}) === r.Yd)
 				},
-				o = Object(a.a)(r.Ie)
+				o = Object(a.a)(r.Je)
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, s) {
 			"use strict";
@@ -216,9 +216,9 @@
 			}));
 			var r = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(n.a)(r.Hd)
+			const a = Object(n.a)(r.Id)
 		},
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.d61f43fc4f6f7d727ffd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.cd2ce9819db3c19a3a78.js.map

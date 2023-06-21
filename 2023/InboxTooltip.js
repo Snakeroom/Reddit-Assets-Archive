@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxTooltip.407f772c81a4639d9d07.js
-// Retrieved at 6/20/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxTooltip.03d98fbaaa79dd70f9ac.js
+// Retrieved at 6/21/2023, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxTooltip", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -71,7 +71,7 @@
 			})), i.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
 				return U
 			})), i.d(t, "subscribeToPermissionsChange", (function() {
-				return T
+				return G
 			}));
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
 				s = i("./node_modules/lodash/omit.js"),
@@ -98,14 +98,14 @@
 				w = i("./src/reddit/selectors/user.ts");
 			const y = e => Object(N.c)(e, {
 				experimentEligibilitySelector: w.S,
-				experimentName: k.Fb
-			}) === k.Xd;
+				experimentName: k.Gb
+			}) === k.Yd;
 			var _ = i("./src/reddit/selectors/experiments/delayDnPermission.ts"),
 				I = i("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts");
 			const E = e => Object(N.c)(e, {
-				experimentName: k.hc,
+				experimentName: k.ic,
 				experimentEligibilitySelector: N.a
-			}) === k.Xd;
+			}) === k.Yd;
 			var F = i("./src/reddit/selectors/meta.ts");
 			let P = !1;
 			const B = async (e, t) => {
@@ -201,7 +201,7 @@
 					case d.a.Denied:
 						t(Object(b.h)(e))
 				}
-			}, T = () => async (e, t) => {
+			}, G = () => async (e, t) => {
 				var i;
 				if (!(null === (i = null === navigator || void 0 === navigator ? void 0 : navigator.permissions) || void 0 === i ? void 0 : i.query)) return;
 				const n = t();
@@ -620,4 +620,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.407f772c81a4639d9d07.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.03d98fbaaa79dd70f9ac.js.map

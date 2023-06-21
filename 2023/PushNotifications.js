@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PushNotifications.f9f63de69ac81a137714.js
-// Retrieved at 6/20/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PushNotifications.c93e935da5c7306b0753.js
+// Retrieved at 6/21/2023, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -89,29 +89,29 @@
 				g = i("./src/reddit/constants/modals.ts"),
 				O = i("./src/reddit/helpers/parseUrl.ts"),
 				v = i("./src/reddit/helpers/tabBadging/index.ts"),
-				h = i("./src/reddit/helpers/trackers/notifications.ts"),
-				j = i("./src/reddit/models/Toast/index.ts"),
-				_ = i("./src/reddit/selectors/activeModal.ts"),
+				j = i("./src/reddit/helpers/trackers/notifications.ts"),
+				_ = i("./src/reddit/models/Toast/index.ts"),
+				h = i("./src/reddit/selectors/activeModal.ts"),
 				k = i("./src/reddit/selectors/activeModalId.ts"),
 				y = i("./src/reddit/constants/experiments.ts"),
 				w = i("./src/reddit/helpers/chooseVariant/index.ts"),
 				S = i("./src/reddit/selectors/user.ts");
-			const F = e => Object(w.c)(e, {
+			const N = e => Object(w.c)(e, {
 				experimentEligibilitySelector: S.S,
-				experimentName: y.Fb
-			}) === y.Xd;
-			var N = i("./src/reddit/selectors/experiments/delayDnPermission.ts"),
+				experimentName: y.Gb
+			}) === y.Yd;
+			var F = i("./src/reddit/selectors/experiments/delayDnPermission.ts"),
 				x = i("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts");
-			const q = e => Object(w.c)(e, {
-				experimentName: y.hc,
+			const G = e => Object(w.c)(e, {
+				experimentName: y.ic,
 				experimentEligibilitySelector: w.a
-			}) === y.Xd;
-			var C = i("./src/reddit/selectors/meta.ts");
-			let G = !1;
+			}) === y.Yd;
+			var q = i("./src/reddit/selectors/meta.ts");
+			let C = !1;
 			const W = async (e, t) => {
 				const i = Object(S.R)(e);
-				if (G) return;
-				if (G = !0, Object(f.a)(e) !== d.d.NotificationsSupported) return;
+				if (C) return;
+				if (C = !0, Object(f.a)(e) !== d.d.NotificationsSupported) return;
 				await Object(u.a)();
 				navigator.serviceWorker.addEventListener("message", n => {
 					const s = n.data,
@@ -128,28 +128,28 @@
 			}, D = e => {
 				navigator.serviceWorker.controller && navigator.serviceWorker.controller.postMessage({
 					command: "registerClient",
-					v2EventBoilerPlate: h.c(e)
+					v2EventBoilerPlate: j.c(e)
 				})
 			}, R = function(e, t) {
 				let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : () => {};
 				return async (n, s, r) => {
 					const c = s(),
-						u = Object(C.f)(c),
-						l = q(c),
+						u = Object(q.f)(c),
+						l = G(c),
 						b = !!Object(k.a)(c),
-						f = Object(N.a)(c),
+						f = Object(F.a)(c),
 						p = Object(x.e)(c),
-						m = Object(_.c)(g.a.NSFW_BLOCKING_MODAL_V2)(c),
-						O = F(c);
+						m = Object(h.c)(g.a.NSFW_BLOCKING_MODAL_V2)(c),
+						O = N(c);
 					if (p || m) return;
 					if (await Object(o.a)() || u) return;
 					await W(c, n);
-					h.l(c), await Object(a.b)(e, t, () => {
-						l || f || b || n(Object(d.s)()), n(Object(d.q)()), h.j(c)
+					j.l(c), await Object(a.b)(e, t, () => {
+						l || f || b || n(Object(d.s)()), n(Object(d.q)()), j.j(c)
 					}, (e, t) => {
-						n(Object(d.o)()), n(P(t ? d.a.Denied : d.a.Closed)), e && (t ? h.e(c) : h.f(c)), i()
+						n(Object(d.o)()), n(P(t ? d.a.Denied : d.a.Closed)), e && (t ? j.e(c) : j.f(c)), i()
 					}, e => {
-						n(Object(d.p)()), n(L()), e && h.d(c), i()
+						n(Object(d.p)()), n(L()), e && j.d(c), i()
 					}, () => {
 						n(Object(d.n)()), i()
 					}, () => {
@@ -161,21 +161,21 @@
 				try {
 					switch (await Object(c.b)(s.gqlContext)) {
 						case c.a.Success:
-							Object(f.b)(d.a.Granted), h.m(r), e && t(Object(m.f)({
-								kind: j.b.SuccessCommunity,
+							Object(f.b)(d.a.Granted), j.m(r), e && t(Object(m.f)({
+								kind: _.b.SuccessCommunity,
 								text: n.fbt._("Changes saved", null, {
 									hk: "wGH5U"
 								})
 							}));
 							break;
 						case c.a.FailedResponse:
-							h.k(r, "registration_failed_generally");
+							j.k(r, "registration_failed_generally");
 							break;
 						case c.a.FailedGqlReponse:
-							h.k(r, "registration_failed_in_gql")
+							j.k(r, "registration_failed_in_gql")
 					}
 				} catch (o) {
-					h.k(r, "registration_failed_uncaught_exception"), console.error(o)
+					j.k(r, "registration_failed_uncaught_exception"), console.error(o)
 				}
 			}, P = (e, t) => async i => {
 				try {
@@ -184,7 +184,7 @@
 					if (s) {
 						const e = await s.pushManager.getSubscription();
 						e && (e.unsubscribe(), t && i(Object(m.f)({
-							kind: j.b.SuccessCommunity,
+							kind: _.b.SuccessCommunity,
 							text: n.fbt._("Changes saved", null, {
 								hk: "wGH5U"
 							})
@@ -212,10 +212,10 @@
 				s.onchange = () => (t => {
 					switch (t) {
 						case d.a.Denied:
-							e(P(d.a.Denied)), h.e(n);
+							e(P(d.a.Denied)), j.e(n);
 							break;
 						case d.a.Granted:
-							e(L()), h.d(n);
+							e(L()), j.d(n);
 							break;
 						default:
 							e(P(d.a.Default))
@@ -242,11 +242,11 @@
 			})), i.d(t, "c", (function() {
 				return v
 			})), i.d(t, "b", (function() {
-				return h
-			})), i.d(t, "i", (function() {
 				return j
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "i", (function() {
 				return _
+			})), i.d(t, "a", (function() {
+				return h
 			})), i.d(t, "n", (function() {
 				return k
 			})), i.d(t, "o", (function() {
@@ -336,7 +336,7 @@
 					source: "notification",
 					correlationId: void 0
 				}),
-				h = (e, t) => i => ({
+				j = (e, t) => i => ({
 					...n.p(i),
 					action: a(e),
 					email: {
@@ -345,7 +345,7 @@
 					noun: "email",
 					source: "email_app_settings"
 				}),
-				j = (e, t) => i => ({
+				_ = (e, t) => i => ({
 					...n.p(i),
 					action: a(e),
 					notification: {
@@ -354,7 +354,7 @@
 					noun: "notification",
 					source: "notification_app_settings"
 				}),
-				_ = e => t => ({
+				h = e => t => ({
 					...n.p(t),
 					source: "email_app_settings",
 					action: a(e),
@@ -400,4 +400,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.f9f63de69ac81a137714.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.c93e935da5c7306b0753.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.18eb490c5490cd5629cf.js
-// Retrieved at 6/20/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.f04074d2c26184006d1b.js
+// Retrieved at 6/21/2023, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba"], {
 		"./src/lib/scroll/index.ts": function(e, t, o) {
@@ -74,7 +74,7 @@
 			})), o.d(t, "j", (function() {
 				return Je
 			})), o.d(t, "i", (function() {
-				return Ve
+				return Xe
 			})), o.d(t, "l", (function() {
 				return Ye
 			})), o.d(t, "u", (function() {
@@ -215,8 +215,8 @@
 				J = o("./src/reddit/helpers/sessionStorage/index.ts"),
 				Q = o("./src/reddit/helpers/trackers/commentsPage.ts"),
 				z = o("./src/reddit/models/Comment/index.ts"),
-				X = o("./src/reddit/models/PostDraft/index.ts"),
-				V = o("./src/reddit/models/RichTextJson/index.ts"),
+				V = o("./src/reddit/models/PostDraft/index.ts"),
+				X = o("./src/reddit/models/RichTextJson/index.ts"),
 				Y = o("./src/reddit/models/RichTextJson/nodeMakers.ts"),
 				Z = o("./src/reddit/models/Toast/index.ts"),
 				$ = o("./src/reddit/selectors/chatPost.ts"),
@@ -228,8 +228,8 @@
 				se = o("./node_modules/reselect/es/index.js");
 			const ce = Object(se.a)(e => Object(re.c)(e, {
 				experimentEligibilitySelector: re.a,
-				experimentName: ne.Kb
-			}), e => e === ne.Xd);
+				experimentName: ne.Lb
+			}), e => e === ne.Yd);
 			var ie = o("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				ae = o("./src/reddit/selectors/platform.ts"),
 				de = o("./src/reddit/selectors/posts.ts"),
@@ -541,10 +541,10 @@
 						apiContext: i
 					} = c;
 					const a = e === T.i.RICH_TEXT;
-					if (!t || "object" == typeof t && Object(V.H)(t)) r(Pe({
+					if (!t || "object" == typeof t && Object(X.H)(t)) r(Pe({
 						editorMode: e,
 						draftKey: o,
-						content: a ? V.i : ""
+						content: a ? X.i : ""
 					})), r(Object(u.c)(e));
 					else {
 						r(Object(u.b)(o));
@@ -572,7 +572,7 @@
 					} = e;
 					return async (e, r) => {
 						const c = r(),
-							l = Object(s.a)(X.c.replyToComment, o);
+							l = Object(s.a)(V.c.replyToComment, o);
 						if (!Object(le.S)(r()) && !Object(ie.a)(c)) return e(Object(a.openRegisterModal)()), void e(Object(d.k)({
 							actionSource: d.a.Reply,
 							redirectUrl: Object(ee.m)(r(), {
@@ -605,12 +605,12 @@
 						let g;
 						if (g = O ? {
 								commentMode: h,
-								draftType: X.c.replyToComment,
+								draftType: V.c.replyToComment,
 								rtJson: b,
 								text: `${p}\n`
 							} : f || {
 								commentMode: h,
-								draftType: X.c.replyToComment,
+								draftType: V.c.replyToComment,
 								rtJson: b,
 								text: ""
 							}, Object(le.U)(c)) {
@@ -668,7 +668,7 @@
 								text: s,
 								commentMode: o,
 								rteState: null,
-								draftType: X.c.edit,
+								draftType: V.c.edit,
 								hasFocus: !0
 							}
 						})))
@@ -779,7 +779,7 @@
 							error: u.error
 						}))
 					}
-				}, Qe = Object(r.a)(ue.C), ze = Object(r.a)(ue.B), Xe = Object(r.a)(ue.D), Ve = (e, t) => async (o, n, r) => {
+				}, Qe = Object(r.a)(ue.C), ze = Object(r.a)(ue.B), Ve = Object(r.a)(ue.D), Xe = (e, t) => async (o, n, r) => {
 					let {
 						apiContext: s
 					} = r;
@@ -804,7 +804,7 @@
 						...e,
 						error: e.error || Object(_.a)()
 					}))(s(), e);
-					i.ok ? o(Xe({
+					i.ok ? o(Ve({
 						id: e,
 						postId: t
 					})) : o(ze({
@@ -883,7 +883,7 @@
 					}));
 					const c = {
 						commentMode: s.media.rteMode,
-						draftType: s.parentId ? X.c.replyToComment : X.c.replyToPost,
+						draftType: s.parentId ? V.c.replyToComment : V.c.replyToPost,
 						rtJson: s.media.richtextContent,
 						hasFocus: !0,
 						text: ""
@@ -1158,8 +1158,8 @@
 				J = o("./src/reddit/components/CommentSort/CommentSort.m.less"),
 				Q = o.n(J),
 				z = o("./src/reddit/reducers/features/comments/visitHighlightingFilter/index.ts");
-			const X = Object(S.a)(w.a),
-				V = e => e === z.a.First ? n.fbt._("First Visit", null, {
+			const V = Object(S.a)(w.a),
+				X = e => e === z.a.First ? n.fbt._("First Visit", null, {
 					hk: "HdDSr"
 				}) : e === z.a.Last ? n.fbt._("Last Visit", null, {
 					hk: "3ubIq3"
@@ -1204,27 +1204,27 @@
 					}, s.a.createElement(T.b, {
 						className: Object(a.a)(Q.a.HighlightPicker, Q.a.Row),
 						textClassName: Q.a.SortOptionDropdownText,
-						displayText: `${n.fbt._("Highlight",null,{hk:"2ZiUE8"})}: ${V(r)}`,
+						displayText: `${n.fbt._("Highlight",null,{hk:"2ZiUE8"})}: ${X(r)}`,
 						id: t,
 						noHover: !0,
 						onClick: o
 					}), s.a.createElement(K.b, {
 						className: Q.a.DropdownTriangle,
 						onClick: o
-					}), s.a.createElement(X, {
+					}), s.a.createElement(V, {
 						isOpen: e,
 						renderContentsHidden: !0,
 						tooltipId: t
 					}, s.a.createElement(T.b, {
-						displayText: V(z.a.First),
+						displayText: X(z.a.First),
 						isSelected: r === z.a.First,
 						onClick: this.onDropdownClickFirst
 					}), s.a.createElement(T.b, {
-						displayText: V(z.a.Last),
+						displayText: X(z.a.Last),
 						isSelected: r === z.a.Last,
 						onClick: this.onDropdownClickLast
 					}), s.a.createElement(T.b, {
-						displayText: V(z.a.None),
+						displayText: X(z.a.None),
 						isSelected: r === z.a.None,
 						onClick: this.onDropdownClickNone
 					})))
@@ -1345,11 +1345,11 @@
 						suggestedSort: N,
 						showTooltip: P,
 						toggleContestModeModal: D
-					} = this.props, L = j.contestMode, F = null == r, B = i.bucketed && Object(v.a)(g) && Object(v.b)(j), H = i.bucketed && Object(v.b)(j) && F, U = !(null === (e = f.search) || void 0 === e ? void 0 : e.includes(d.v.CONFIDENCE)), G = w === d.v.CONFIDENCE && U, q = h && !G, W = d.x[w], J = W ? W() : "", z = N && w === N && !G ? this.addSuggestedLabel(J) : J, X = L ? n.fbt._("End contest mode?", null, {
+					} = this.props, L = j.contestMode, F = null == r, B = i.bucketed && Object(v.a)(g) && Object(v.b)(j), H = i.bucketed && Object(v.b)(j) && F, U = !(null === (e = f.search) || void 0 === e ? void 0 : e.includes(d.v.CONFIDENCE)), G = w === d.v.CONFIDENCE && U, q = h && !G, W = d.x[w], J = W ? W() : "", z = N && w === N && !G ? this.addSuggestedLabel(J) : J, V = L ? n.fbt._("End contest mode?", null, {
 						hk: "2AkJRZ"
 					}) : n.fbt._("Start contest?", null, {
 						hk: "2PQPOu"
-					}), V = L ? n.fbt._("End", null, {
+					}), X = L ? n.fbt._("End", null, {
 						hk: "1Q8KqM"
 					}) : n.fbt._("Start", null, {
 						hk: "Mjvpj"
@@ -1453,8 +1453,8 @@
 						selectedSort: _,
 						trackHighlight: R
 					})), l && s.a.createElement(x.a, {
-						actionText: V,
-						headerText: X,
+						actionText: X,
+						headerText: V,
 						modalText: Y,
 						onConfirm: this.setContestMode,
 						toggleModal: D,
@@ -1599,7 +1599,7 @@
 				})), G = Object(c.e)(e => Object(k.mb)(e)), q = Object(c.e)(e => Object(k.rb)(e)), W = Object(c.e)(e => Object(v.i)(e));
 				var J, Q, z;
 
-				function X() {
+				function V() {
 					var t;
 					if (!D.trim() || !H) return;
 					const o = new URL(H.permalink).pathname,
@@ -1640,7 +1640,7 @@
 				}, s.a.createElement("div", {
 					className: T.a.absolute,
 					role: "submit",
-					onClick: X
+					onClick: V
 				}, s.a.createElement(S.a, {
 					className: Object(d.a)(T.a.postIcon, T.a.paddingIcon),
 					name: "search"
@@ -1660,7 +1660,7 @@
 						}), j.a.PdpCommentSearchBar, b || void 0))
 					},
 					onKeyPress: function(e) {
-						e.key === p.b.Enter && X()
+						e.key === p.b.Enter && V()
 					},
 					placeholder: n.fbt._("Search comments", null, {
 						hk: "2ObH7B"
@@ -2132,4 +2132,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.18eb490c5490cd5629cf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.f04074d2c26184006d1b.js.map

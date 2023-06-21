@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.b5362fcc0fde1aa368db.js
-// Retrieved at 6/16/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.047b95c9ab83889ecb82.js
+// Retrieved at 6/21/2023, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -548,7 +548,7 @@
 						return Object(l.b)(e, n)
 					}
 				}),
-				$ = Object(a.b)(q, (e, t) => ({
+				Y = Object(a.b)(q, (e, t) => ({
 					onGovernanceError: t => {
 						Object(I.a)(e, t)
 					},
@@ -566,7 +566,7 @@
 						}))
 					}
 				}));
-			var Y = Object(S.b)($(Z)),
+			var $ = Object(S.b)(Y(Z)),
 				Q = n("./src/reddit/icons/svgs/QuarantineWarning/index.tsx"),
 				X = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/Risk/index.m.less"),
 				J = n.n(X);
@@ -735,7 +735,7 @@
 					}))), C && i.a.createElement(z, {
 						body: C.body,
 						title: C.title
-					}), n && b.blockchainProvider && i.a.createElement(Y, {
+					}), n && b.blockchainProvider && i.a.createElement($, {
 						publicAddress: y,
 						subredditId: f
 					}), n && !y && a && i.a.createElement(N.l, {
@@ -1850,8 +1850,8 @@
 			const o = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.Je
-				}) === r.Xd
+					experimentName: r.Ke
+				}) === r.Yd
 			}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
@@ -1911,4 +1911,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.b5362fcc0fde1aa368db.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.047b95c9ab83889ecb82.js.map

@@ -1,13 +1,13 @@
-// https://www.redditstatic.com/desktop2x/Appeal.d02f5a046b013b58cde8.js
-// Retrieved at 6/8/2023, 8:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Appeal.c27f5769d2f3654dc0ce.js
+// Retrieved at 6/21/2023, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Appeal"], {
 		"./src/lib/validateEmail/index.ts": function(e, a, t) {
 			"use strict";
 			t.d(a, "a", (function() {
-				return r
+				return n
 			}));
-			const r = (e, a) => {
+			const n = (e, a) => {
 				if (!e && a) return !0;
 				return /^.+\@.+\..+$/.test(e)
 			}
@@ -42,8 +42,8 @@
 			})), t.d(a, "c", (function() {
 				return g
 			}));
-			var r = t("./node_modules/react/index.js"),
-				n = t.n(r),
+			var n = t("./node_modules/react/index.js"),
+				r = t.n(n),
 				l = t("./src/lib/classNames/index.ts"),
 				i = t("./src/lib/lessComponent.tsx"),
 				s = t("./src/reddit/controls/Input/index.tsx"),
@@ -55,7 +55,7 @@
 				return (p = Object.assign || function(e) {
 					for (var a = 1; a < arguments.length; a++) {
 						var t = arguments[a];
-						for (var r in t) Object.prototype.hasOwnProperty.call(t, r) && (e[r] = t[r])
+						for (var n in t) Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n])
 					}
 					return e
 				}).apply(this, arguments)
@@ -70,7 +70,7 @@
 			function(e) {
 				e[e.GreyFields = 1] = "GreyFields", e[e.WhiteFields = 2] = "WhiteFields"
 			}(f || (f = {}));
-			const x = e => n.a.createElement("div", {
+			const x = e => r.a.createElement("div", {
 					className: Object(l.a)(e.isRequired && d.a.required, e.className, {
 						[d.a.container]: !e.isTextarea,
 						[d.a.textareaContainer]: !!e.isTextarea,
@@ -80,42 +80,42 @@
 							[d.a.mWhiteField]: e.backgroundColorState === f.WhiteFields
 						}
 					})
-				}, n.a.createElement("label", {
+				}, r.a.createElement("label", {
 					className: Object(l.a)({
 						[d.a.field]: !e.isTextarea,
 						[d.a.textareaField]: !!e.isTextarea
 					})
-				}, e.children, e.label && n.a.createElement("span", {
+				}, e.children, e.label && r.a.createElement("span", {
 					className: d.a.label
-				}, e.label), !!e.state && n.a.createElement(m, {
+				}, e.label), !!e.state && r.a.createElement(m, {
 					className: Object(l.a)({
 						[d.a.mValid]: e.state === b.Valid,
 						[d.a.mInvalid]: e.state === b.Invalid
 					})
-				}, e.state === b.Valid && n.a.createElement(o.a, null), e.state === b.Invalid && n.a.createElement(h, null, "!")))),
+				}, e.state === b.Valid && r.a.createElement(o.a, null), e.state === b.Invalid && r.a.createElement(h, null, "!")))),
 				_ = e => {
 					const {
 						backgroundColorState: a,
 						className: t,
-						inputRef: r,
+						inputRef: n,
 						isRequired: i,
 						label: o,
 						onKeyDown: c,
 						state: m,
 						...u
 					} = e;
-					return n.a.createElement(x, {
+					return r.a.createElement(x, {
 						backgroundColorState: a,
 						className: t,
 						isRequired: i,
 						label: o,
 						state: m
-					}, n.a.createElement(s.a, p({}, u, {
+					}, r.a.createElement(s.a, p({}, u, {
 						className: Object(l.a)(d.a.input, d.a.control, {
 							[d.a.hasState]: !!e.state
 						}),
 						"data-empty": !e.value,
-						innerRef: r,
+						innerRef: n,
 						onKeyDown: c
 					})))
 				},
@@ -123,26 +123,26 @@
 					const {
 						backgroundColorState: a,
 						className: t,
-						inputRef: r,
+						inputRef: n,
 						isRequired: i,
 						label: s,
 						onKeyDown: o,
 						state: c,
 						...m
 					} = e;
-					return n.a.createElement(x, {
+					return r.a.createElement(x, {
 						backgroundColorState: a,
 						className: t,
 						isRequired: i,
 						label: s,
 						state: c,
 						isTextarea: !0
-					}, n.a.createElement(u, p({}, m, {
+					}, r.a.createElement(u, p({}, m, {
 						className: Object(l.a)({
 							[d.a.mWhiteField]: e.backgroundColorState === f.WhiteFields
 						}),
 						"data-empty": !e.value,
-						innerRef: r,
+						innerRef: n,
 						onKeyDown: o
 					})))
 				}
@@ -152,35 +152,35 @@
 			t.d(a, "a", (function() {
 				return l
 			}));
-			var r = t("./node_modules/react/index.js"),
-				n = t.n(r);
+			var n = t("./node_modules/react/index.js"),
+				r = t.n(n);
 
 			function l(e) {
 				const {
 					children: a,
 					className: t,
-					onSubmit: r
+					onSubmit: n
 				} = e;
-				return n.a.createElement("form", {
+				return r.a.createElement("form", {
 					className: t,
-					onSubmit: i(r)
+					onSubmit: i(n)
 				}, a)
 			}
 			const i = e => a => {
 					if (!e) return;
 					a.preventDefault();
 					const t = a.target,
-						r = s(t);
-					e(r)
+						n = s(t);
+					e(n)
 				},
 				s = e => e && "form" === e.nodeName.toLowerCase() ? Array.from(e.elements).reduce((e, a) => (a.name && (e[a.name] = a.value), e), {}) : {}
 		},
 		"./src/reddit/controls/Input/index.tsx": function(e, a, t) {
 			"use strict";
-			var r = t("./src/lib/lessComponent.tsx"),
-				n = t("./src/reddit/controls/Input/index.m.less"),
-				l = t.n(n);
-			a.a = r.a.input("input", l.a)
+			var n = t("./src/lib/lessComponent.tsx"),
+				r = t("./src/reddit/controls/Input/index.m.less"),
+				l = t.n(r);
+			a.a = n.a.input("input", l.a)
 		},
 		"./src/reddit/pages/AppealPage/index.m.less": function(e, a, t) {
 			e.exports = {
@@ -214,9 +214,9 @@
 		"./src/reddit/pages/AppealPage/index.tsx": function(e, a, t) {
 			"use strict";
 			t.r(a);
-			var r = t("./node_modules/fbt/lib/FbtPublic.js"),
-				n = t("./node_modules/react/index.js"),
-				l = t.n(n),
+			var n = t("./node_modules/fbt/lib/FbtPublic.js"),
+				r = t("./node_modules/react/index.js"),
+				l = t.n(r),
 				i = t("./node_modules/react-redux/es/index.js"),
 				s = t("./node_modules/reselect/es/index.js"),
 				o = t("./src/lib/validateEmail/index.ts"),
@@ -261,7 +261,7 @@
 				}));
 			class w extends l.a.Component {
 				constructor() {
-					super(...arguments), this.state = {
+					super(...arguments), this.isUnmounted = !1, this.state = {
 						appealError: null,
 						appealPending: !1,
 						appealSuccess: !1,
@@ -277,7 +277,7 @@
 						submitWasClicked: !1
 					}, this.componentDidMount = async () => {
 						const e = await E(this.props.apiContext());
-						e.ok && this.setState({
+						e.ok && !this.isUnmounted && this.setState({
 							canShowWarning: !0,
 							eligibleForAppeal: !!e.body
 						})
@@ -321,19 +321,19 @@
 								appealPending: !1
 							})
 						}
-					}, this.getCheckboxText = () => l.a.createElement("label", null, r.fbt._("I have read the {=Reddit Content Policy} and the {=Suspensions help article} .", [r.fbt._param("=Reddit Content Policy", l.a.createElement("a", {
+					}, this.getCheckboxText = () => l.a.createElement("label", null, n.fbt._("I have read the {=Reddit Content Policy} and the {=Suspensions help article} .", [n.fbt._param("=Reddit Content Policy", l.a.createElement("a", {
 						className: d.a.link,
 						target: "_blank",
 						href: F,
 						rel: "noopener noreferrer"
-					}, r.fbt._("Reddit Content Policy", null, {
+					}, n.fbt._("Reddit Content Policy", null, {
 						hk: "1zrL2W"
-					}))), r.fbt._param("=Suspensions help article", l.a.createElement("a", {
+					}))), n.fbt._param("=Suspensions help article", l.a.createElement("a", {
 						className: d.a.link,
 						target: "_blank",
 						href: N,
 						rel: "noopener noreferrer"
-					}, r.fbt._("Suspensions help article", null, {
+					}, n.fbt._("Suspensions help article", null, {
 						hk: "1M9zrX"
 					})))], {
 						hk: "3Fr8Lf"
@@ -341,18 +341,18 @@
 						className: d.a.appealForm
 					}, l.a.createElement("div", {
 						className: d.a.appealFormHeader
-					}, r.fbt._("Appeal received", null, {
+					}, n.fbt._("Appeal received", null, {
 						hk: "3lQu7u"
 					})), l.a.createElement("div", {
 						className: d.a.appealFormDescription
-					}, r.fbt._("Thanks for submitting your request. We will review your submission and be in touch if the status of your account's restriction is changed. Please note that suspensions which were correctly issued will not be reversed or lifted prematurely.", null, {
+					}, n.fbt._("Thanks for submitting your request. We will review your submission and be in touch if the status of your account's restriction is changed. Please note that suspensions which were correctly issued will not be reversed or lifted prematurely.", null, {
 						hk: "2VTm7m"
 					}))), this.renderForm = e => {
 						const {
 							props: a,
 							state: t
 						} = this, {
-							canShowWarning: n,
+							canShowWarning: r,
 							description: i,
 							descriptionDirty: s,
 							email: o,
@@ -362,28 +362,28 @@
 							policyCheckboxDirty: x,
 							submitWasClicked: _
 						} = t;
-						return l.a.createElement(l.a.Fragment, null, n && e && this.renderWarning(), l.a.createElement(f.a, {
+						return l.a.createElement(l.a.Fragment, null, r && e && this.renderWarning(), l.a.createElement(f.a, {
 							className: d.a.appealForm,
 							onSubmit: this.handleSubmit
 						}, l.a.createElement("div", {
 							className: d.a.appealFormHeader
-						}, r.fbt._("Submit an appeal", null, {
+						}, n.fbt._("Submit an appeal", null, {
 							hk: "1CoPRt"
 						})), l.a.createElement("div", {
 							className: d.a.appealFormDescription
-						}, r.fbt._("If you have reviewed the {=Reddit Content Policy} and our {=Suspensions help article} and believe your account has been wrongfully suspended, submit this form and we'll review your request.", [r.fbt._param("=Reddit Content Policy", l.a.createElement("a", {
+						}, n.fbt._("If you have reviewed the {=Reddit Content Policy} and our {=Suspensions help article} and believe your account has been wrongfully suspended, submit this form and we'll review your request.", [n.fbt._param("=Reddit Content Policy", l.a.createElement("a", {
 							className: d.a.link,
 							target: "_blank",
 							href: F,
 							rel: "noopener noreferrer"
-						}, r.fbt._("Reddit Content Policy", null, {
+						}, n.fbt._("Reddit Content Policy", null, {
 							hk: "4qL67J"
-						}))), r.fbt._param("=Suspensions help article", l.a.createElement("a", {
+						}))), n.fbt._param("=Suspensions help article", l.a.createElement("a", {
 							className: d.a.link,
 							target: "_blank",
 							href: N,
 							rel: "noopener noreferrer"
-						}, r.fbt._("Suspensions help article", null, {
+						}, n.fbt._("Suspensions help article", null, {
 							hk: "3LTtzC"
 						})))], {
 							hk: "2Unawp"
@@ -392,19 +392,19 @@
 						}, l.a.createElement(m.b, {
 							className: d.a.labeledInput,
 							disabled: !0,
-							label: r.fbt._("Username", null, {
+							label: n.fbt._("Username", null, {
 								hk: "1vE7k6"
 							}),
 							state: _ ? m.d.Valid : void 0,
 							value: a.currentUser.displayText
 						}), l.a.createElement("div", {
 							className: d.a.appealFormFieldComment
-						}, r.fbt._("You can only appeal the account that you are logged into. If you are having trouble logging into another account, troubleshoot in our {=Help Center} .", [r.fbt._param("=Help Center", l.a.createElement("a", {
+						}, n.fbt._("You can only appeal the account that you are logged into. If you are having trouble logging into another account, troubleshoot in our {=Help Center} .", [n.fbt._param("=Help Center", l.a.createElement("a", {
 							className: d.a.link,
 							href: "https://www.reddithelp.com/",
 							target: "_blank",
 							rel: "noopener noreferrer"
-						}, r.fbt._("Help Center", null, {
+						}, n.fbt._("Help Center", null, {
 							hk: "1nt3UL"
 						})))], {
 							hk: "39gK6E"
@@ -413,7 +413,7 @@
 						}, l.a.createElement(m.b, {
 							className: d.a.labeledInput,
 							disabled: e || t.appealPending,
-							label: r.fbt._("Email address (optional)", null, {
+							label: n.fbt._("Email address (optional)", null, {
 								hk: "kQmzp"
 							}),
 							maxLength: 100,
@@ -423,24 +423,24 @@
 							value: o
 						}), p || c ? null : l.a.createElement("div", {
 							className: d.a.errorMessage
-						}, r.fbt._("Enter a valid email address", null, {
+						}, n.fbt._("Enter a valid email address", null, {
 							hk: "2NC6Ve"
 						})), l.a.createElement("div", {
 							className: d.a.appealFormFieldComment
-						}, r.fbt._("We will use this email address if we need to contact you for additional information.", null, {
+						}, n.fbt._("We will use this email address if we need to contact you for additional information.", null, {
 							hk: "3cAASn"
 						}))), l.a.createElement("fieldset", {
 							className: d.a.appealFormFieldSet
 						}, l.a.createElement("div", {
 							className: d.a.appealFormFieldDescription
-						}, r.fbt._("Help us understand why you have not violated our policy and have been suspended in error.", null, {
+						}, n.fbt._("Help us understand why you have not violated our policy and have been suspended in error.", null, {
 							hk: "AxUTy"
 						})), l.a.createElement("div", {
 							className: d.a.appealFormField
 						}, l.a.createElement(m.c, {
 							className: d.a.labeledTextArea,
 							disabled: e || t.appealPending,
-							label: r.fbt._("Brief description", null, {
+							label: n.fbt._("Brief description", null, {
 								hk: "Zpp5W"
 							}),
 							maxLength: 250,
@@ -449,11 +449,11 @@
 							value: i
 						}), !i && !s && l.a.createElement("div", {
 							className: d.a.errorMessage
-						}, r.fbt._("Enter a brief description", null, {
+						}, n.fbt._("Enter a brief description", null, {
 							hk: "1HEyz"
 						})), l.a.createElement("div", {
 							className: d.a.textAreaCounter
-						}, r.fbt._("{length}", [r.fbt._param("length", (i.length / 250).toString())], {
+						}, n.fbt._("{length}", [n.fbt._param("length", (i.length / 250).toString())], {
 							hk: "3fYpQM"
 						})))), l.a.createElement("div", {
 							className: d.a.policyCheckboxWrapper
@@ -465,50 +465,54 @@
 							onClick: this.handlePolicyCheckboxClick
 						}), u || x ? null : l.a.createElement("div", {
 							className: d.a.checkboxErrorMessage
-						}, r.fbt._("Required", null, {
+						}, n.fbt._("Required", null, {
 							hk: "zBEsu"
 						}))), t.appealError && t.appealError.fields && t.appealError.fields.map(e => l.a.createElement("div", {
-							className: d.a.errorMessage
+							className: d.a.errorMessage,
+							key: e.field
 						}, e.msg)), l.a.createElement("fieldset", {
 							className: d.a.submitButtonPanel
 						}, l.a.createElement(h.l, {
 							className: d.a.submitButton,
 							disabled: e || t.appealPending
-						}, t.appealPending ? r.fbt._("Pending", null, {
+						}, t.appealPending ? n.fbt._("Pending", null, {
 							hk: "3FtnOm"
-						}) : r.fbt._("Submit", null, {
+						}) : n.fbt._("Submit", null, {
 							hk: "4aU3dh"
 						})))))
 					}, this.renderWarning = () => l.a.createElement("div", {
 						className: d.a.appealFormWarning
 					}, l.a.createElement("div", {
 						className: d.a.appealFormWarningHeader
-					}, r.fbt._("You cannot submit an appeal", null, {
+					}, n.fbt._("You cannot submit an appeal", null, {
 						hk: "4xTZrb"
 					})), l.a.createElement("div", {
 						className: d.a.appealFormWarningText
-					}, r.fbt._("Your account is currently neither suspended nor restricted. If you are trying to submit an appeal for another account that is suspended or restricted, please {=log out} and log in to that account.", [r.fbt._param("=log out", l.a.createElement("a", {
+					}, n.fbt._("Your account is currently neither suspended nor restricted. If you are trying to submit an appeal for another account that is suspended or restricted, please {=log out} and log in to that account.", [n.fbt._param("=log out", l.a.createElement("a", {
 						className: d.a.link,
 						href: "#",
 						onClick: e => {
 							this.props.logoutUser(), e.preventDefault()
 						}
-					}, r.fbt._("log out", null, {
+					}, n.fbt._("log out", null, {
 						hk: "2lRi6H"
 					})))], {
 						hk: "41Leic"
 					})), l.a.createElement("div", {
 						className: d.a.appealFormWarningFooter
-					}, r.fbt._("For other account issues, please visit our {=Help Center} .", [r.fbt._param("=Help Center", l.a.createElement("a", {
+					}, n.fbt._("For other account issues, please visit our {=Help Center} .", [n.fbt._param("=Help Center", l.a.createElement("a", {
 						className: d.a.link,
 						href: "https://www.reddithelp.com/en/categories/using-reddit",
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}, r.fbt._("Help Center", null, {
+					}, n.fbt._("Help Center", null, {
 						hk: "10kFKe"
 					})))], {
 						hk: "3OziY8"
 					})))
+				}
+				componentWillUnmount() {
+					this.isUnmounted = !0
 				}
 				render() {
 					const {
@@ -521,7 +525,7 @@
 						className: d.a.content
 					}, l.a.createElement("h1", {
 						className: d.a.appealPageHeader
-					}, r.fbt._("Appeal suspension", null, {
+					}, n.fbt._("Appeal suspension", null, {
 						hk: "3LDNeF"
 					})), a.appealSuccess ? this.renderConfirmationPage() : this.renderForm(t))
 				}
@@ -530,4 +534,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Appeal.d02f5a046b013b58cde8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Appeal.c27f5769d2f3654dc0ce.js.map

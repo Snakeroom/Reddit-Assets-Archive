@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.feb09af3d5c580ca8e1d.js
-// Retrieved at 6/20/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.9ea0eb6d2bf614dd7f0f.js
+// Retrieved at 6/21/2023, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -1627,18 +1627,20 @@
 		},
 		"./src/reddit/actions/page.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "d", (function() {
-				return O
-			})), n.d(t, "a", (function() {
-				return I
-			})), n.d(t, "f", (function() {
-				return S
-			})), n.d(t, "c", (function() {
-				return T
-			})), n.d(t, "b", (function() {
+			n.d(t, "e", (function() {
 				return D
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "a", (function() {
 				return w
+			})), n.d(t, "b", (function() {
+				return j
+			})), n.d(t, "g", (function() {
+				return C
+			})), n.d(t, "d", (function() {
+				return A
+			})), n.d(t, "c", (function() {
+				return P
+			})), n.d(t, "f", (function() {
+				return R
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = n("./node_modules/react-router-redux/es/index.js"),
@@ -1650,41 +1652,51 @@
 				d = n("./src/reddit/actions/platform.ts"),
 				l = n("./src/reddit/endpoints/me/index.ts"),
 				u = n("./src/reddit/helpers/pageActionLoginRedirect.ts"),
-				p = n("./src/reddit/actions/pages/appeal/constants.ts");
-			const f = `${c.a.redditHelpUrl}/en/categories/rules-reporting/account-and-community-restrictions/my-account-was-suspended-or-locked`,
-				b = Object(i.a)(p.b),
-				h = Object(i.a)(p.a);
-			var m = n("./src/reddit/actions/redditEmbed.ts"),
-				y = n("./src/reddit/actions/users.ts"),
-				g = n("./src/reddit/selectors/experiments/econ/index.ts"),
-				v = n("./src/reddit/selectors/user.ts"),
-				_ = n("./src/lib/makeListingKey/index.ts"),
-				E = n("./src/lib/matchRoute/index.ts");
-			const O = e => async t => {
-				await t(Object(m.c)(e, !0))
-			}, I = () => async e => {
+				p = n("./src/reddit/constants/experiments.ts"),
+				f = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
+			const b = Object(f.a)(p.vb);
+			var h = n("./src/reddit/actions/pages/appeal/constants.ts");
+			const m = `${c.a.redditHelpUrl}/en/categories/rules-reporting/account-and-community-restrictions/my-account-was-suspended-or-locked`,
+				y = Object(i.a)(h.b),
+				g = Object(i.a)(h.a),
+				v = async e => {
+					const t = m;
+					window.location.href = t
+				};
+			var _ = n("./src/reddit/actions/redditEmbed.ts"),
+				E = n("./src/reddit/actions/users.ts"),
+				O = n("./src/reddit/selectors/experiments/econ/index.ts"),
+				I = n("./src/reddit/selectors/user.ts"),
+				S = n("./src/lib/makeListingKey/index.ts"),
+				T = n("./src/lib/matchRoute/index.ts");
+			const D = e => async t => {
+				await t(Object(_.c)(e, !0))
+			}, w = () => async e => {
 				await e((() => async (e, t, n) => {
 					let {
 						apiContext: r
 					} = n;
 					const s = t(),
 						a = await Object(l.a)(r());
-					if (a.ok && a.body)
-						if (a.body.account)
-							if (s.user.account && s.user.account.isFPR) {
-								const e = f;
-								window.location.href = e
-							} else e(b(a.body));
-					else Object(u.a)(e, s);
-					else e(h(a.error))
+					a.ok && a.body ? a.body.account ? s.user.account && s.user.account.isFPR ? v(e) : e(y(a.body)) : Object(u.a)(e, s) : e(g(a.error))
 				})())
-			}, S = (e, t, n) => async (o, c, i) => {
+			}, j = e => async e => {
+				await e((e => async (e, t, n) => {
+					let {
+						apiContext: s
+					} = n;
+					const a = t(),
+						o = b(a),
+						c = await Object(l.a)(s());
+					c.ok && c.body ? c.body.account ? o ? a.user.account && a.user.account.isFPR ? v(e) : e(y(c.body)) : e(Object(r.c)("/appeals")) : Object(u.a)(e, a) : e(g(c.error))
+				})())
+			}, C = (e, t, n) => async (o, c, i) => {
 				let {
 					routes: d
 				} = i;
 				const l = c(),
 					u = (t || l.platform.currentPage).routeMatch.match,
-					p = Object(E.a)(u.url, d);
+					p = Object(T.a)(u.url, d);
 				if (!p) return;
 				const f = e.metaKey || e.ctrlKey || 1 === e.button;
 				if (p.route && p.route.meta && (p.route.meta.name === a.Tb.INDEX || p.route.meta.name === a.Tb.MULTIREDDIT || p.route.meta.name === a.Tb.SUBREDDIT)) f ? window.open(u.url) : n ? o(Object(r.b)(u.url)) : await o(p.route.action(u, !0));
@@ -1695,26 +1707,26 @@
 					if (f) window.open(t);
 					else if (n) o(Object(r.b)(t));
 					else {
-						const n = Object(_.a)(e, a.bb.HOT);
+						const n = Object(S.a)(e, a.bb.HOT);
 						await o(Object(r.b)(t)), o(Object(s.subredditDataRequested)(n, e, {}))
 					}
 				}
-			}, T = () => async (e, t) => {
+			}, A = () => async (e, t) => {
 				const n = t();
-				Object(g.d)(n) ? window.location.replace("https://reddithelp.com/hc/articles/360043034252") : (e(d.n({
+				Object(O.d)(n) ? window.location.replace("https://reddithelp.com/hc/articles/360043034252") : (e(d.n({
 					title: o.b()
-				})), Object(v.S)(n) || await e(y.s()))
-			}, D = () => async (e, t) => {
+				})), Object(I.S)(n) || await e(E.s()))
+			}, P = () => async (e, t) => {
 				const n = t();
-				Object(g.d)(n) ? window.location.replace("https://reddithelp.com/hc/articles/360043034252") : e(d.n({
+				Object(O.d)(n) ? window.location.replace("https://reddithelp.com/hc/articles/360043034252") : e(d.n({
 					title: o.b()
 				}))
-			}, w = e => async (t, r) => {
+			}, R = e => async (t, r) => {
 				const s = r();
 				t(d.n({
 					title: o.k()
-				})), Object(v.S)(s) || await t(y.s());
-				const a = Object(v.S)(s);
+				})), Object(I.S)(s) || await t(E.s());
+				const a = Object(I.S)(s);
 				if (e.queryParams.thanks && a) {
 					const e = await n.e("GoldPurchasePaymentActions").then(n.bind(null, "./src/reddit/actions/goldPurchaseModals/payment.ts")).then(e => e.paymentCompleted),
 						r = await n.e("GoldPurchasePaymentActions").then(n.bind(null, "./src/reddit/actions/goldPurchaseModals/premiumPurchaseModal.ts")).then(e => e.openPremiumPurchaseModal);
@@ -2222,8 +2234,8 @@
 					if (function(e) {
 							return Object(g.c)(e, {
 								experimentEligibilitySelector: g.a,
-								experimentName: y.Tc
-							}) === y.Xd
+								experimentName: y.Uc
+							}) === y.Yd
 						}(O) && e === p.d.dropdown) {
 						const n = (e => {
 							var t, n;
@@ -3999,7 +4011,7 @@
 					relativePosition: T
 				} = e;
 				var D, w, j, C, A, P;
-				const R = Object(a.e)(e => Object(V.a)(e, q.Hf)),
+				const R = Object(a.e)(e => Object(V.a)(e, q.If)),
 					N = Object(y.a)(),
 					x = (null === (D = o.displayInfo) || void 0 === D ? void 0 : D.karma) || 0,
 					k = (null === (w = o.displayInfo) || void 0 === w ? void 0 : w.subscribers) || 0,
@@ -4140,7 +4152,7 @@
 					searchOriginPage: f
 				} = e;
 				const b = Object(y.a)(),
-					h = Object(a.e)(e => Object(V.a)(e, q.Hf)),
+					h = Object(a.e)(e => Object(V.a)(e, q.If)),
 					g = Object(a.e)(U.mb),
 					{
 						nsfwTypeaheadExpanded: v,
@@ -4376,7 +4388,7 @@
 					onUpdateSearchQuery: A
 				} = e, P = Object(a.d)(), [R, N] = Object(r.useState)(null), [L, U] = Object(r.useState)(n), [M, F] = Object(r.useState)(new Array(Ee).fill(!1)), {
 					enabled: B
-				} = Object(a.e)(re.j), G = Object(a.e)(e => Object(V.a)(e, q.Hf)), H = !!(null === (t = g.searchQuery) || void 0 === t ? void 0 : t.trim()), W = l || i, Y = B, K = [...b.communities, ...b.people, ...b.nsfw], $ = !l && (!H || m >= 0) && (G ? 0 === K.length : 0 === f.length) && !Y, z = {
+				} = Object(a.e)(re.j), G = Object(a.e)(e => Object(V.a)(e, q.If)), H = !!(null === (t = g.searchQuery) || void 0 === t ? void 0 : t.trim()), W = l || i, Y = B, K = [...b.communities, ...b.people, ...b.nsfw], $ = !l && (!H || m >= 0) && (G ? 0 === K.length : 0 === f.length) && !Y, z = {
 					width: L ? `${L}px` : "inherit",
 					overflow: "auto"
 				};
@@ -25093,7 +25105,7 @@
 					}
 				}),
 				i = {
-					action: a.e,
+					action: a.f,
 					chunk: s.t.PREMIUM,
 					component: c,
 					exact: !0,
@@ -25180,11 +25192,11 @@
 				a = n("./node_modules/reselect/es/index.js");
 			const o = Object(a.a)(e => Object(s.c)(e, {
 				experimentEligibilitySelector: s.a,
-				experimentName: r.zb
+				experimentName: r.Ab
 			}), e => ({
-				bucketed: e === r.fd.ExpandedSearch || e === r.fd.CollapsedSearch,
-				collapsed: e === r.fd.CollapsedSearch,
-				expanded: e === r.fd.ExpandedSearch
+				bucketed: e === r.gd.ExpandedSearch || e === r.gd.CollapsedSearch,
+				collapsed: e === r.gd.CollapsedSearch,
+				expanded: e === r.gd.ExpandedSearch
 			}))
 		},
 		"./src/reddit/selectors/experiments/garlicBread.ts": function(e, t, n) {
@@ -25209,7 +25221,7 @@
 					if (!u(e)) return;
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: l,
-						experimentName: a.fe,
+						experimentName: a.ge,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -25232,9 +25244,9 @@
 				},
 				b = e => !!p(e) && Object(o.c)(e, {
 					experimentEligibilitySelector: u,
-					experimentName: a.ge,
+					experimentName: a.he,
 					expEventOverride: !1
-				}) !== a.me.Readonly
+				}) !== a.ne.Readonly
 		},
 		"./src/reddit/selectors/removedPosts.ts": function(e, t, n) {
 			"use strict";
@@ -25378,4 +25390,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.feb09af3d5c580ca8e1d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.9ea0eb6d2bf614dd7f0f.js.map
