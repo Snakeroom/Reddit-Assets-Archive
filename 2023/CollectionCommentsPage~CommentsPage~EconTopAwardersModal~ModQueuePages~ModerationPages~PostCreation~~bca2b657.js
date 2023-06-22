@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657.8ab9532f6a0fb4f869f5.js
-// Retrieved at 6/21/2023, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657.ca25e4b5372dbc6c48ac.js
+// Retrieved at 6/21/2023, 9:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -3021,8 +3021,8 @@
 					return {
 						...Object(o.h)(e, t),
 						correlationId: Object(s.d)(s.a.GildingFlow, !1),
-						profile: a.U(e),
-						subreddit: a.mb(e)
+						profile: a.T(e),
+						subreddit: a.lb(e)
 					}
 				},
 				d = e => t => ({
@@ -3834,4 +3834,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657.8ab9532f6a0fb4f869f5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~PostCreation~~bca2b657.ca25e4b5372dbc6c48ac.js.map

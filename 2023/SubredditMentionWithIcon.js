@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.759561f2d21220471a77.js
-// Retrieved at 6/20/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.2d1de2389c612ba0e8a2.js
+// Retrieved at 6/21/2023, 9:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, s) {
@@ -789,11 +789,11 @@
 				G = s.n(H);
 			const {
 				fbt: W
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), V = Object(a.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), K = Object(a.c)({
 				subreddit: E.X,
 				subredditAboutInfo: E.z
 			});
-			class z extends o.a.Component {
+			class V extends o.a.Component {
 				constructor() {
 					super(...arguments), this.hasFiredViewEvent = !1, this.trackViewEvent = () => {
 						const {
@@ -899,8 +899,8 @@
 					}, r))))
 				}
 			}
-			var Q = Object(d.b)(V)(Object(A.c)(z)),
-				K = s("./src/reddit/components/Thumbnail/index.tsx"),
+			var z = Object(d.b)(K)(Object(A.c)(V)),
+				Q = s("./src/reddit/components/Thumbnail/index.tsx"),
 				Y = s("./src/reddit/helpers/overlay/index.ts"),
 				J = s("./src/reddit/selectors/posts.ts"),
 				X = s("./src/reddit/components/SubredditMention/MiniPost/index.m.less"),
@@ -966,7 +966,7 @@
 					})))), o.a.createElement("div", {
 						className: Z.a.thumbnailContainer,
 						onClick: this.onClickThumbnail
-					}, o.a.createElement(K.b, {
+					}, o.a.createElement(Q.b, {
 						post: t
 					})))
 				}
@@ -1142,7 +1142,7 @@
 						}
 					}, o.a.createElement("div", {
 						className: pe.a.hovercardStyle
-					}, o.a.createElement(Q, {
+					}, o.a.createElement(z, {
 						subredditId: r.id,
 						subredditName: a,
 						shouldHideBottomBorder: !0,
@@ -1818,13 +1818,13 @@
 			})), s.d(t, "g", (function() {
 				return W
 			})), s.d(t, "d", (function() {
-				return V
-			})), s.d(t, "e", (function() {
-				return z
-			})), s.d(t, "f", (function() {
-				return Q
-			})), s.d(t, "h", (function() {
 				return K
+			})), s.d(t, "e", (function() {
+				return V
+			})), s.d(t, "f", (function() {
+				return z
+			})), s.d(t, "h", (function() {
+				return Q
 			})), s.d(t, "q", (function() {
 				return Y
 			}));
@@ -1845,9 +1845,9 @@
 			}(n || (n = {}));
 			const f = "discovery_unit",
 				O = (e, t, s) => ({
-					...b.p(e),
+					...b.o(e),
 					source: f,
-					screen: b.db(e),
+					screen: b.cb(e),
 					discoveryUnit: {
 						id: t.id,
 						type: t.unitType,
@@ -1868,11 +1868,11 @@
 				},
 				E = (e, t) => s => _(s, e, t),
 				y = (e, t, s, n) => "unitName" in t ? O(e, t, n) : ((e, t, s) => ({
-					...b.p(e),
+					...b.o(e),
 					source: "search",
-					screen: b.db(e),
+					screen: b.cb(e),
 					search: s ? {
-						...b.eb(e, s, d.a.SERP),
+						...b.db(e, s, d.a.SERP),
 						structureType: b.c.Trending
 					} : null,
 					discoveryUnit: {
@@ -1886,7 +1886,7 @@
 					...y(e, t, i, r),
 					action: "view",
 					noun: n.ITEM_POST,
-					post: b.L(e, s)
+					post: b.K(e, s)
 				}),
 				I = e => {
 					let {
@@ -1936,7 +1936,7 @@
 						a = T[r],
 						l = Object(m.a)(i, a).filter(e => !e.post || !(e.post.isSponsored && e.post.isBlank)).findIndex(e => e.id === o.id) + s;
 					return {
-						...b.p(i),
+						...b.o(i),
 						source: "search",
 						action: t,
 						noun: n.TRENDING,
@@ -1951,7 +1951,7 @@
 							paneName: d,
 							position: l
 						}),
-						search: b.fb(i, {
+						search: b.eb(i, {
 							searchQuery: o.rawQuery,
 							structureType: b.c.Trending,
 							originElement: d === x.SEARCH_DROPDOWN ? b.a.SearchDropdown : void 0,
@@ -1961,7 +1961,7 @@
 				},
 				k = (e, t, s, n, i, r, d) => {
 					Object(h.a)({
-						...b.p(e),
+						...b.o(e),
 						...Object(a.l)({
 							state: e,
 							postId: s,
@@ -1995,7 +1995,7 @@
 						source: f,
 						action: o.c.CLICK,
 						noun: n.ITEM_POST,
-						post: b.L(r, t)
+						post: b.K(r, t)
 					}
 				},
 				R = function() {
@@ -2024,7 +2024,7 @@
 					source: f,
 					action: o.c.CLICK,
 					noun: n.ITEM_POST,
-					post: b.L(i, s)
+					post: b.K(i, s)
 				}),
 				F = (e, t, s, n) => {
 					Object(h.a)(q(t, s, n)(e))
@@ -2040,7 +2040,7 @@
 						source: f,
 						action: o.c.CLICK,
 						noun: "item_post_subreddit",
-						post: b.L(i, t)
+						post: b.K(i, t)
 					}
 				},
 				H = () => ({
@@ -2062,21 +2062,33 @@
 					return e => ({
 						...O(e, i),
 						actionInfo: G(e, 0, s),
-						subreddit: b.nb(e, t) || null,
+						subreddit: b.mb(e, t) || null,
 						source: f,
 						action: o.c.VIEW,
 						noun: n.ITEM_SUBREDDIT
 					})
 				},
-				V = (e, t, s) => {
+				K = (e, t, s) => {
 					const i = H();
 					return e => ({
 						...O(e, i),
 						actionInfo: G(e, 0, s),
-						subreddit: b.nb(e, t) || null,
+						subreddit: b.mb(e, t) || null,
 						source: f,
 						action: o.c.CLICK,
 						noun: n.ITEM_SUBREDDIT
+					})
+				},
+				V = (e, t, s, i) => {
+					const r = H();
+					return e => ({
+						...O(e, r),
+						actionInfo: G(e, 0, s),
+						subreddit: b.mb(e, t) || null,
+						post: i ? b.K(e, i) : null,
+						source: f,
+						action: o.c.CLICK,
+						noun: n.ITEM_SUBREDDIT_SUBSCRIBE
 					})
 				},
 				z = (e, t, s, i) => {
@@ -2084,26 +2096,14 @@
 					return e => ({
 						...O(e, r),
 						actionInfo: G(e, 0, s),
-						subreddit: b.nb(e, t) || null,
-						post: i ? b.L(e, i) : null,
-						source: f,
-						action: o.c.CLICK,
-						noun: n.ITEM_SUBREDDIT_SUBSCRIBE
-					})
-				},
-				Q = (e, t, s, i) => {
-					const r = H();
-					return e => ({
-						...O(e, r),
-						actionInfo: G(e, 0, s),
-						subreddit: b.nb(e, t) || null,
-						post: i ? b.L(e, i) : null,
+						subreddit: b.mb(e, t) || null,
+						post: i ? b.K(e, i) : null,
 						source: f,
 						action: o.c.CLICK,
 						noun: n.ITEM_SUBREDDIT_UNSUBSCRIBE
 					})
 				},
-				K = (e, t) => s => ({
+				Q = (e, t) => s => ({
 					...O(s, e),
 					...t && Object(p.b)(s, t),
 					source: f,
@@ -2258,4 +2258,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.759561f2d21220471a77.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.2d1de2389c612ba0e8a2.js.map

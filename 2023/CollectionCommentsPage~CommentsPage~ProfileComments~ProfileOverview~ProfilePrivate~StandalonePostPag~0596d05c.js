@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.365066c504065d919506.js
-// Retrieved at 6/21/2023, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.85b864a7b000c8bc6a9e.js
+// Retrieved at 6/21/2023, 9:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, s) {
@@ -174,7 +174,7 @@
 				r = s("./node_modules/react-redux/es/index.js"),
 				i = s("./src/reddit/selectors/telemetry.ts");
 			const a = e => (e, t, s) => ({
-				...i.p(e),
+				...i.o(e),
 				source: "post",
 				action: "click",
 				noun: "ad",
@@ -182,18 +182,18 @@
 					location: t
 				},
 				actionInfo: i.d(e),
-				adblock: i.f(e),
-				app: i.g(e),
-				feed: i.s(e),
-				geo: i.u(e),
-				platform: i.J(e),
-				referrer: i.ab(e),
-				request: i.bb(e),
-				screen: i.db(e),
-				session: i.ib(e),
-				user: i.tb(e),
-				media: s ? i.D(e, s) : null,
-				post: s ? i.L(e, s) : null
+				adblock: i.e(e),
+				app: i.f(e),
+				feed: i.r(e),
+				geo: i.t(e),
+				platform: i.I(e),
+				referrer: i.Z(e),
+				request: i.ab(e),
+				screen: i.cb(e),
+				session: i.hb(e),
+				user: i.sb(e),
+				media: s ? i.C(e, s) : null,
+				post: s ? i.K(e, s) : null
 			});
 			var c = s("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
 				d = s("./src/telemetry/index.ts");
@@ -4930,11 +4930,11 @@
 						T = !p,
 						S = Object(n.useCallback)(e => {
 							t(Object(d.e)(e)), s((() => e => ({
-								...Object(x.p)(e),
+								...Object(x.o)(e),
 								source: "post",
 								action: h.c.CLICK,
 								noun: "share_chat",
-								subreddit: Object(x.mb)(e)
+								subreddit: Object(x.lb)(e)
 							}))())
 						}, [t, s]);
 					return r.a.createElement("div", {
@@ -5636,8 +5636,8 @@
 						offerContext: r.a.StorefrontFreeAward
 					}),
 					correlationId: Object(o.d)(o.a.GoldPayment, !1),
-					profile: i.U(e),
-					subreddit: i.mb(e)
+					profile: i.T(e),
+					subreddit: i.lb(e)
 				}),
 				c = () => e => ({
 					source: "free_award_offer",
@@ -5734,17 +5734,17 @@
 				},
 				p = (e, t) => {
 					const s = {
-						...c.p(e),
+						...c.o(e),
 						action: r.c.CLICK,
-						subreddit: c.mb(e)
+						subreddit: c.lb(e)
 					};
 					return void 0 === t ? s : {
 						...s,
-						post: c.L(e, t),
-						postCollection: c.N(e, {
+						post: c.K(e, t),
+						postCollection: c.M(e, {
 							postId: t
 						}),
-						postEvent: c.O(e, {
+						postEvent: c.N(e, {
 							postId: t
 						})
 					}
@@ -5770,8 +5770,8 @@
 					noun: n.eventEducationGotIt
 				}),
 				f = e => ({
-					...c.p(e),
-					subreddit: c.mb(e),
+					...c.o(e),
+					subreddit: c.lb(e),
 					source: o.postComposer
 				}),
 				v = (e, t) => s => ({
@@ -5803,12 +5803,12 @@
 					noun: n.collectionSelect
 				}),
 				g = e => t => ({
-					...c.p(t),
-					subreddit: c.mb(t),
+					...c.o(t),
+					subreddit: c.lb(t),
 					source: o.collectionComposer,
 					action: r.c.CLICK,
 					noun: n.collectionDelete,
-					postCollection: c.M(t, {
+					postCollection: c.L(t, {
 						collectionId: e
 					})
 				}),
@@ -5816,7 +5816,7 @@
 					...p(t),
 					source: o.collectionComposer,
 					noun: n.collectionEdit,
-					postCollection: c.M(t, {
+					postCollection: c.L(t, {
 						collectionId: e
 					})
 				}),
@@ -5869,20 +5869,20 @@
 				}),
 				b = e => {
 					Object(p.a)({
-						...m.p(e),
+						...m.o(e),
 						source: o.postComposer,
 						action: a.c.CLICK,
 						noun: "event_create",
-						subreddit: m.mb(e)
+						subreddit: m.lb(e)
 					})
 				},
 				h = e => {
 					Object(p.a)({
-						...m.p(e),
+						...m.o(e),
 						source: o.postComposer,
 						action: a.c.CLICK,
 						noun: "event_edit",
-						subreddit: m.mb(e),
+						subreddit: m.lb(e),
 						postEvent: C(e),
 						postComposer: E(e)
 					})
@@ -5936,15 +5936,15 @@
 					const s = {
 						source: o.eventComposer,
 						action: a.c.CLICK,
-						subreddit: m.mb(e)
+						subreddit: m.lb(e)
 					};
 					return t ? {
 						...s,
-						post: m.L(e, t),
-						postEvent: m.O(e, {
+						post: m.K(e, t),
+						postEvent: m.N(e, {
 							postId: t
 						}),
-						postCollection: m.N(e, {
+						postCollection: m.M(e, {
 							postId: t
 						})
 					} : s
@@ -6384,4 +6384,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.365066c504065d919506.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.85b864a7b000c8bc6a9e.js.map

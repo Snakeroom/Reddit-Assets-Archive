@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.7132759c9f94249d0ed0.js
-// Retrieved at 6/21/2023, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.1947909b870836ad93b6.js
+// Retrieved at 6/21/2023, 9:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba"], {
 		"./src/lib/scroll/index.ts": function(e, t, o) {
@@ -1124,12 +1124,12 @@
 					actionInfo: {
 						pageType: t ? "post_detail" : "home"
 					},
-					listing: Object(N.A)(s, void 0, {
+					listing: Object(N.z)(s, void 0, {
 						oldSort: o,
 						sort: n,
 						source: r
 					}),
-					userSubreddit: Object(N.vb)(s)
+					userSubreddit: Object(N.ub)(s)
 				}),
 				R = (e, t) => o => ({
 					source: "comment_highlighting",
@@ -1137,8 +1137,8 @@
 					noun: e
 				}),
 				D = e => ({
-					subreddit: Object(N.mb)(e),
-					userSubreddit: Object(N.vb)(e)
+					subreddit: Object(N.lb)(e),
+					userSubreddit: Object(N.ub)(e)
 				}),
 				L = e => t => ({
 					source: "contest_mode",
@@ -1905,11 +1905,11 @@
 					return {
 						source: "comment_composer",
 						action: r.c.CLICK,
-						...Object(d.p)(e),
-						screen: Object(d.db)(e),
-						subreddit: Object(d.mb)(e),
-						post: t ? Object(d.L)(e, t) : null,
-						profile: Object(d.U)(e),
+						...Object(d.o)(e),
+						screen: Object(d.cb)(e),
+						subreddit: Object(d.lb)(e),
+						post: t ? Object(d.K)(e, t) : null,
+						profile: Object(d.T)(e),
 						correlationId: Object(s.c)(s.a.CommentComposer)
 					}
 				},
@@ -1926,12 +1926,12 @@
 					return Object(l.a)({
 						noun: "comment",
 						...u(e),
-						comment: s ? Object(d.i)({
+						comment: s ? Object(d.h)({
 							state: e,
 							commentId: s,
 							contentType: p
 						}) : null,
-						listing: Object(d.A)(e, void 0, {
+						listing: Object(d.z)(e, void 0, {
 							depth: a
 						}),
 						commentComposer: {
@@ -1989,10 +1989,10 @@
 					source: "comment",
 					noun: "delete",
 					action: "click",
-					...Object(d.p)(t),
-					screen: Object(d.db)(t),
-					subreddit: Object(d.mb)(t),
-					post: Object(d.L)(t, e)
+					...Object(d.o)(t),
+					screen: Object(d.cb)(t),
+					subreddit: Object(d.lb)(t),
+					post: Object(d.K)(t, e)
 				}), g = e => Object(l.a)({
 					noun: "edit",
 					...u(e)
@@ -2132,4 +2132,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.7132759c9f94249d0ed0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.1947909b870836ad93b6.js.map

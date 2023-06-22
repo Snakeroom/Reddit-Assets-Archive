@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.aaed9ef6313df875b22e.js
-// Retrieved at 6/21/2023, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.725423e1189d18bd7a15.js
+// Retrieved at 6/21/2023, 9:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -1908,7 +1908,7 @@
 					reason: t || De(e)
 				}),
 				Je = e => ({
-					...Object(Ke.p)(e),
+					...Object(Ke.o)(e),
 					actionInfo: Xe(e),
 					source: ze.ONBOARDING,
 					experiment: Ye(e)
@@ -5108,4 +5108,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.aaed9ef6313df875b22e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.725423e1189d18bd7a15.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ModProgressModule~NewCommunityProgress.14a0cf11afd5061c966b.js
-// Retrieved at 6/20/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ModProgressModule~NewCommunityProgress.eb148b2027be31d29dc5.js
+// Retrieved at 6/21/2023, 9:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~ModProgressModule~NewCommunityProgress"], {
 		"./src/reddit/components/NewCommunityProgress/icons/index.tsx": function(C, e, a) {
@@ -1224,7 +1224,7 @@
 				}
 			}
 			const L = (C, e) => a => ({
-					...Object(l.p)(a),
+					...Object(l.o)(a),
 					source: "new_community_setup",
 					action: "view",
 					noun: "progress_module",
@@ -1233,10 +1233,10 @@
 						pageType: "community",
 						reason: e
 					},
-					subreddit: Object(l.mb)(a)
+					subreddit: Object(l.lb)(a)
 				}),
 				c = (C, e, a) => L => ({
-					...Object(l.p)(L),
+					...Object(l.o)(L),
 					source: "new_community_setup",
 					action: "click",
 					noun: "card_action_button",
@@ -1247,10 +1247,10 @@
 							reason: a
 						}
 					},
-					subreddit: Object(l.mb)(L)
+					subreddit: Object(l.lb)(L)
 				}),
 				n = C => e => ({
-					...Object(l.p)(e),
+					...Object(l.o)(e),
 					source: "new_community_setup",
 					action: "click",
 					noun: "expand_progress_module",
@@ -1259,10 +1259,10 @@
 						pageType: "community",
 						reason: "expanded_module"
 					},
-					subreddit: Object(l.mb)(e)
+					subreddit: Object(l.lb)(e)
 				}),
 				i = C => e => ({
-					...Object(l.p)(e),
+					...Object(l.o)(e),
 					source: "new_community_setup",
 					action: "click",
 					noun: "collapse_progress_module",
@@ -1271,10 +1271,10 @@
 						pageType: "community",
 						reason: "collapses_module"
 					},
-					subreddit: Object(l.mb)(e)
+					subreddit: Object(l.lb)(e)
 				}),
 				r = (C, e) => a => ({
-					...Object(l.p)(a),
+					...Object(l.o)(a),
 					source: "new_community_setup",
 					action: "click",
 					noun: "card_menu_button",
@@ -1282,10 +1282,10 @@
 					actionInfo: {
 						pageType: "community"
 					},
-					subreddit: Object(l.mb)(a)
+					subreddit: Object(l.lb)(a)
 				}),
 				d = (C, e) => a => ({
-					...Object(l.p)(a),
+					...Object(l.o)(a),
 					source: "new_community_setup",
 					action: "click",
 					noun: "dismiss",
@@ -1293,10 +1293,10 @@
 					actionInfo: {
 						pageType: "community"
 					},
-					subreddit: Object(l.mb)(a)
+					subreddit: Object(l.lb)(a)
 				}),
 				m = (C, e) => a => ({
-					...Object(l.p)(a),
+					...Object(l.o)(a),
 					source: "new_community_setup",
 					action: "click",
 					noun: "complete",
@@ -1304,7 +1304,7 @@
 					actionInfo: {
 						pageType: "community"
 					},
-					subreddit: Object(l.mb)(a)
+					subreddit: Object(l.lb)(a)
 				})
 		},
 		"./src/redditGQL/operations/CompleteCommunityProgressCard.json": function(C) {
@@ -1321,4 +1321,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ModProgressModule~NewCommunityProgress.14a0cf11afd5061c966b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ModProgressModule~NewCommunityProgress.eb148b2027be31d29dc5.js.map

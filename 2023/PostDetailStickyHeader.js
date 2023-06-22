@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.bd408d0ae336bf0dc180.js
-// Retrieved at 6/20/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.1a43e34a210083c86005.js
+// Retrieved at 6/21/2023, 9:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDetailStickyHeader"], {
 		"./src/reddit/actions/shortcuts/close.ts": function(t, e, s) {
@@ -272,7 +272,7 @@
 										type: "subreddit"
 									}
 								}) ? "subscribe" : "unsubscribe",
-								post: s ? P.L(t, s.id) : void 0,
+								post: s ? P.K(t, s.id) : void 0,
 								subreddit: e
 							}
 						})
@@ -471,13 +471,13 @@
 					source: "shortcuts",
 					action: "submit",
 					noun: t,
-					post: n.L(s, e)
+					post: n.K(s, e)
 				}),
 				r = (t, e) => s => ({
 					source: "shortcuts",
 					action: "submit",
 					noun: t,
-					comment: n.i({
+					comment: n.h({
 						state: s,
 						commentId: e
 					})
@@ -540,4 +540,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.bd408d0ae336bf0dc180.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.1a43e34a210083c86005.js.map

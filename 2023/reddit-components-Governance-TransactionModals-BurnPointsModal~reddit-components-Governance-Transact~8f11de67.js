@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.90fa0381525b7562a053.js
-// Retrieved at 6/20/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.0abc29153c39bccde26c.js
+// Retrieved at 6/21/2023, 9:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67"], {
 		"./src/reddit/components/Governance/TransactionModals/ApprovalModal/ApprovalBar.m.less": function(A, e, t) {
@@ -1267,14 +1267,14 @@
 			}));
 			var i = t("./src/reddit/selectors/telemetry.ts");
 			const a = A => e => ({
-					...Object(i.p)(e),
+					...Object(i.o)(e),
 					source: "meta",
 					action: "click",
 					noun: "cancel_membership_with_points",
-					subreddit: Object(i.nb)(e, A)
+					subreddit: Object(i.mb)(e, A)
 				}),
 				r = A => e => ({
-					...Object(i.p)(e),
+					...Object(i.o)(e),
 					source: "meta",
 					action: "generate",
 					noun: "broken_wallet",
@@ -1283,7 +1283,7 @@
 					}
 				}),
 				n = A => e => ({
-					...Object(i.p)(e),
+					...Object(i.o)(e),
 					source: "meta",
 					action: "generate",
 					noun: "unexpected_wallet",
@@ -1306,11 +1306,11 @@
 			var i = t("./src/reddit/selectors/telemetry.ts");
 			const a = (A, e, t, a, r) => n => {
 					const s = {
-						...Object(i.p)(n),
+						...Object(i.o)(n),
 						source: "meta",
 						action: A,
 						noun: "transaction",
-						subreddit: Object(i.nb)(n, t),
+						subreddit: Object(i.mb)(n, t),
 						actionInfo: {
 							settingValue: e,
 							reason: r
@@ -1326,19 +1326,19 @@
 					source: "meta",
 					action: "open",
 					noun: "gif_tooltip",
-					subreddit: e ? Object(i.nb)(t, e) : void 0,
+					subreddit: e ? Object(i.mb)(t, e) : void 0,
 					correlationId: A,
-					...Object(i.p)(t)
+					...Object(i.o)(t)
 				}),
 				o = (A, e) => t => ({
 					source: "meta",
 					action: "open",
 					noun: "gif_upsell",
-					subreddit: e ? Object(i.nb)(t, e) : void 0,
+					subreddit: e ? Object(i.mb)(t, e) : void 0,
 					correlationId: A,
-					...Object(i.p)(t)
+					...Object(i.o)(t)
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.90fa0381525b7562a053.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.0abc29153c39bccde26c.js.map

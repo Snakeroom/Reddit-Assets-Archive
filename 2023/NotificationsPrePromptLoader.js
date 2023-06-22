@@ -1,98 +1,98 @@
-// https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.9b4b1e81e023ec0ea790.js
-// Retrieved at 6/20/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.bf376437394794c9e1fc.js
+// Retrieved at 6/21/2023, 9:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsPrePromptLoader"], {
-		"./src/reddit/components/NotificationsPrePrompt/index.m.less": function(t, n, e) {
+		"./src/reddit/components/NotificationsPrePrompt/index.m.less": function(t, n, o) {
 			t.exports = {
 				overlay: "_3Ig_EsWWVLquWs2yBBQjec",
 				backgroundAnimation: "_2iwhmPhcdf_cKfsjSxiNTC"
 			}
 		},
-		"./src/reddit/components/NotificationsPrePrompt/index.tsx": function(t, n, e) {
+		"./src/reddit/components/NotificationsPrePrompt/index.tsx": function(t, n, o) {
 			"use strict";
-			e.r(n), e.d(n, "NotificationsPrePrompt", (function() {
-				return l
+			o.r(n), o.d(n, "NotificationsPrePrompt", (function() {
+				return p
 			}));
-			var o = e("./node_modules/react/index.js"),
-				i = e.n(o),
-				c = e("./node_modules/react-redux/es/index.js"),
-				r = e("./src/higherOrderComponents/asModal/index.tsx"),
-				s = e("./src/lib/notifications/constants.ts"),
-				a = e("./src/reddit/components/TrackingHelper/index.tsx"),
-				u = e("./src/reddit/helpers/trackers/notifications.ts"),
-				d = e("./src/reddit/components/NotificationsPrePrompt/index.m.less"),
-				p = e.n(d);
+			var e = o("./node_modules/react/index.js"),
+				i = o.n(e),
+				c = o("./node_modules/react-redux/es/index.js"),
+				r = o("./src/higherOrderComponents/asModal/index.tsx"),
+				s = o("./src/lib/notifications/constants.ts"),
+				a = o("./src/reddit/components/TrackingHelper/index.tsx"),
+				u = o("./src/reddit/helpers/trackers/notifications.ts"),
+				d = o("./src/reddit/components/NotificationsPrePrompt/index.m.less"),
+				f = o.n(d);
 
-			function f() {
-				return (f = Object.assign || function(t) {
+			function l() {
+				return (l = Object.assign || function(t) {
 					for (var n = 1; n < arguments.length; n++) {
-						var e = arguments[n];
-						for (var o in e) Object.prototype.hasOwnProperty.call(e, o) && (t[o] = e[o])
+						var o = arguments[n];
+						for (var e in o) Object.prototype.hasOwnProperty.call(o, e) && (t[e] = o[e])
 					}
 					return t
 				}).apply(this, arguments)
 			}
-			const l = Object(r.a)(() => null);
+			const p = Object(r.a)(() => null);
 			n.default = t => {
 				const n = Object(a.b)(),
-					e = Object(c.d)(),
-					[r, d] = Object(o.useState)();
-				return Object(o.useEffect)(() => {
+					o = Object(c.d)(),
+					[r, d] = Object(e.useState)();
+				return Object(e.useEffect)(() => {
 					d(setTimeout(() => {
-						e(Object(s.n)()), n(Object(u.g)())
+						o(Object(s.n)()), n(Object(u.g)())
 					}, 5e3))
-				}, [e, n]), i.a.createElement(l, f({
+				}, [o, n]), i.a.createElement(p, l({
 					onOverlayClick: () => {
-						clearTimeout(Number(r)), e(Object(s.n)()), n(Object(u.h)())
+						clearTimeout(Number(r)), o(Object(s.n)()), n(Object(u.h)())
 					}
 				}, t, {
-					overlayClassName: p.a.overlay,
+					overlayClassName: f.a.overlay,
 					withOverlay: !0
 				}))
 			}
 		},
-		"./src/reddit/helpers/trackers/notifications.ts": function(t, n, e) {
+		"./src/reddit/helpers/trackers/notifications.ts": function(t, n, o) {
 			"use strict";
-			e.d(n, "j", (function() {
+			o.d(n, "j", (function() {
 				return u
-			})), e.d(n, "d", (function() {
+			})), o.d(n, "d", (function() {
 				return d
-			})), e.d(n, "e", (function() {
-				return p
-			})), e.d(n, "f", (function() {
+			})), o.d(n, "e", (function() {
 				return f
-			})), e.d(n, "l", (function() {
+			})), o.d(n, "f", (function() {
+				return l
+			})), o.d(n, "l", (function() {
 				return m
-			})), e.d(n, "m", (function() {
+			})), o.d(n, "m", (function() {
 				return _
-			})), e.d(n, "k", (function() {
+			})), o.d(n, "k", (function() {
 				return O
-			})), e.d(n, "c", (function() {
+			})), o.d(n, "c", (function() {
 				return j
-			})), e.d(n, "b", (function() {
+			})), o.d(n, "b", (function() {
 				return y
-			})), e.d(n, "i", (function() {
+			})), o.d(n, "i", (function() {
 				return v
-			})), e.d(n, "a", (function() {
+			})), o.d(n, "a", (function() {
 				return h
-			})), e.d(n, "n", (function() {
+			})), o.d(n, "n", (function() {
 				return g
-			})), e.d(n, "o", (function() {
+			})), o.d(n, "o", (function() {
 				return x
-			})), e.d(n, "h", (function() {
+			})), o.d(n, "h", (function() {
 				return k
-			})), e.d(n, "g", (function() {
+			})), o.d(n, "g", (function() {
 				return w
 			}));
-			var o = e("./src/reddit/selectors/telemetry.ts"),
-				i = e("./src/telemetry/index.ts"),
-				c = e("./src/telemetry/models/Event.ts");
+			var e = o("./src/reddit/selectors/telemetry.ts"),
+				i = o("./src/telemetry/index.ts"),
+				c = o("./src/telemetry/models/Event.ts");
 			var r;
 			! function(t) {
 				t.FREQUENT = "frequent", t.LOW = "low", t.OFF = "off"
 			}(r || (r = {}));
 			const s = t => ({
-					...o.p(t),
+					...e.o(t),
 					noun: "desktop_notification_permissions"
 				}),
 				a = t => t ? "enable" : "disable",
@@ -110,62 +110,62 @@
 						source: "popup"
 					})
 				},
-				p = t => {
+				f = t => {
 					Object(i.a)({
 						...s(t),
 						action: c.c.Block,
 						source: "popup"
 					})
 				},
-				f = t => {
+				l = t => {
 					Object(i.a)({
 						...s(t),
 						action: c.c.Close,
 						source: "popup"
 					})
 				},
-				l = (t, n, e) => ({
-					...o.p(t),
-					actionInfo: o.d(t, {
+				p = (t, n, o) => ({
+					...e.o(t),
+					actionInfo: e.d(t, {
 						success: n,
-						reason: e
+						reason: o
 					}),
 					noun: "push_token"
 				}),
 				m = t => {
 					Object(i.a)({
-						...l(t, !0),
+						...p(t, !0),
 						action: c.c.Request,
 						source: "notification"
 					})
 				},
 				_ = t => {
 					Object(i.a)({
-						...l(t, !0),
+						...p(t, !0),
 						action: c.c.Register,
 						source: "notification"
 					})
 				},
 				O = (t, n) => {
 					Object(i.a)({
-						...l(t, !1, n),
+						...p(t, !1, n),
 						action: c.c.Bail,
 						source: "notification"
 					})
 				},
 				b = t => ({
-					...o.p(t),
+					...e.o(t),
 					noun: "push_notification"
 				}),
 				j = t => ({
 					...b(t),
-					notification: o.G(t, void 0, void 0),
+					notification: e.F(t, void 0, void 0),
 					action: void 0,
 					source: "notification",
 					correlationId: void 0
 				}),
-				y = (t, n) => e => ({
-					...o.p(e),
+				y = (t, n) => o => ({
+					...e.o(o),
 					action: a(t),
 					email: {
 						type: n
@@ -173,8 +173,8 @@
 					noun: "email",
 					source: "email_app_settings"
 				}),
-				v = (t, n) => e => ({
-					...o.p(e),
+				v = (t, n) => o => ({
+					...e.o(o),
 					action: a(t),
 					notification: {
 						type: n
@@ -183,7 +183,7 @@
 					source: "notification_app_settings"
 				}),
 				h = t => n => ({
-					...o.p(n),
+					...e.o(n),
 					source: "email_app_settings",
 					action: a(t),
 					noun: "email",
@@ -191,10 +191,10 @@
 						type: "all"
 					}
 				}),
-				g = (t, n, e) => i => ({
-					...o.p(i),
+				g = (t, n, o) => i => ({
+					...e.o(i),
 					action: "set_frequency",
-					noun: e,
+					noun: o,
 					source: "community_notifications",
 					subreddit: {
 						id: t,
@@ -202,7 +202,7 @@
 					}
 				}),
 				x = () => t => ({
-					...o.p(t),
+					...e.o(t),
 					action: c.c.View,
 					noun: "screen",
 					source: "global",
@@ -211,13 +211,13 @@
 					}
 				}),
 				k = () => t => ({
-					...o.p(t),
+					...e.o(t),
 					action: "click",
 					noun: "desktop_notification_permissions",
 					source: "overlay"
 				}),
 				w = () => t => ({
-					...o.p(t),
+					...e.o(t),
 					action: "auto_dismiss",
 					noun: "desktop_notification_permissions",
 					source: "overlay"
@@ -225,4 +225,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.9b4b1e81e023ec0ea790.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.bf376437394794c9e1fc.js.map

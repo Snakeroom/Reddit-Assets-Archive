@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.2e500d06212c7167c485.js
-// Retrieved at 6/21/2023, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.db83041e47ea3621f765.js
+// Retrieved at 6/21/2023, 9:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, n) {
@@ -762,8 +762,8 @@
 						onSpoilerPost: W,
 						post: H
 					} = e;
-					var U, V, G, Q, K;
-					const Z = (null === (U = H.pollData) || void 0 === U ? void 0 : U.isPrediction) && !(null === (V = H.pollData) || void 0 === V ? void 0 : V.resolvedOptionId),
+					var V, U, G, Q, K;
+					const Z = (null === (V = H.pollData) || void 0 === V ? void 0 : V.isPrediction) && !(null === (U = H.pollData) || void 0 === U ? void 0 : U.resolvedOptionId),
 						q = (null === (G = H.pollData) || void 0 === G ? void 0 : G.isPrediction) && null !== H.pollData.resolvedOptionId,
 						Y = H.flair.filter(e => e.type !== S.f.Nsfw && e.type !== S.f.Spoiler).length > 0,
 						z = Object(M.b)(H),
@@ -880,7 +880,7 @@
 					isProfilePage: x.L,
 					pageLayer: e => e
 				}),
-				U = Object(a.c)({
+				V = Object(a.c)({
 					layout: x.U,
 					isDropdownOpen: (e, t) => {
 						let {
@@ -890,7 +890,7 @@
 					},
 					isModToMemberShareEnabled: O.d.modToMemberShare
 				}),
-				V = Object(r.b)(U, (e, t) => {
+				U = Object(r.b)(V, (e, t) => {
 					let {
 						post: n
 					} = t;
@@ -922,7 +922,7 @@
 					}
 				}),
 				G = Object(m.a)(h.a);
-			t.default = H(V(Object(b.c)(e => {
+			t.default = H(U(Object(b.c)(e => {
 				let {
 					canEditFlair: t,
 					hasModFullPerms: n,
@@ -1168,10 +1168,10 @@
 			}));
 			var o = n("./src/reddit/selectors/telemetry.ts");
 			const s = e => ({
-					screen: o.db(e),
-					subreddit: o.mb(e),
-					profile: o.U(e),
-					userSubreddit: o.vb(e)
+					screen: o.cb(e),
+					subreddit: o.lb(e),
+					profile: o.T(e),
+					userSubreddit: o.ub(e)
 				}),
 				r = e => t => ({
 					source: "mod_hub_nav",
@@ -1250,10 +1250,10 @@
 			}));
 			var o = n("./src/reddit/selectors/telemetry.ts");
 			const s = (e, t) => ({
-					...Object(o.p)(e),
-					post: Object(o.L)(e, t),
-					predictions: Object(o.R)(e, t),
-					subreddit: Object(o.mb)(e)
+					...Object(o.o)(e),
+					post: Object(o.K)(e, t),
+					predictions: Object(o.Q)(e, t),
+					subreddit: Object(o.lb)(e)
 				}),
 				r = e => t => ({
 					...s(t, e),
@@ -1453,4 +1453,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.2e500d06212c7167c485.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.db83041e47ea3621f765.js.map

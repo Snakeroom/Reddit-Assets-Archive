@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.fe9ffba90686d8920033.js
-// Retrieved at 6/20/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.c77eeb79fa3fb58858de.js
+// Retrieved at 6/21/2023, 9:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ContributorRequestRequestModal"], {
 		"./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less": function(e, t, a) {
@@ -290,20 +290,20 @@
 			}));
 			var r = a("./src/reddit/selectors/telemetry.ts");
 			const s = e => t => ({
-					...r.p(t),
+					...r.o(t),
 					source: e,
 					action: "click",
 					noun: "request_restricted_approval_button",
-					subreddit: r.mb(t)
+					subreddit: r.lb(t)
 				}),
 				n = e => t => ({
-					...r.p(t),
+					...r.o(t),
 					source: "request_restricted_approval_form",
 					action: "click",
 					noun: e,
-					subreddit: r.mb(t)
+					subreddit: r.lb(t)
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.fe9ffba90686d8920033.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.c77eeb79fa3fb58858de.js.map

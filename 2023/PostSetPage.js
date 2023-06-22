@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostSetPage.cf64303b39a9157c995f.js
-// Retrieved at 6/21/2023, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostSetPage.6860a93a6180abdfe86c.js
+// Retrieved at 6/21/2023, 9:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostSetPage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1098,7 +1098,7 @@
 				}, [T]);
 				const R = e => {
 						c("skip" === e ? (e => t => ({
-							...Object(h.p)(t),
+							...Object(h.o)(t),
 							source: g,
 							action: b.c.CLICK,
 							noun: f.SKIP,
@@ -1107,7 +1107,7 @@
 								type: e
 							}
 						}))(m) : (e => t => ({
-							...Object(h.p)(t),
+							...Object(h.o)(t),
 							source: g,
 							action: b.c.CLICK,
 							noun: f.LATER,
@@ -1123,7 +1123,7 @@
 					B = () => {
 						const e = Object.keys(j).join();
 						c(((e, t) => n => ({
-							...Object(h.p)(n),
+							...Object(h.o)(n),
 							source: g,
 							action: b.c.CLICK,
 							noun: f.ADD,
@@ -1154,7 +1154,7 @@
 						}))
 					};
 				return P = P.filter(e => !L.includes(e)), _ && 0 !== P.length ? (c((e => t => ({
-					...Object(h.p)(t),
+					...Object(h.o)(t),
 					source: g,
 					action: b.c.VIEW,
 					noun: b.b.SCREEN,
@@ -1930,11 +1930,11 @@
 							source: "trophy",
 							action: "click",
 							noun: "trophy",
-							...l.p(t),
+							...l.o(t),
 							actionInfo: Object(l.d)(t, {
 								paneName: "profile_about"
 							}),
-							profile: l.U(t),
+							profile: l.T(t),
 							trophy: e
 						}))({
 							id: t.id,
@@ -2783,7 +2783,7 @@
 						subreddit: {
 							id: t
 						},
-						...s.p(e),
+						...s.o(e),
 						...n && {
 							post: {
 								id: n
@@ -2803,7 +2803,7 @@
 						subreddit: {
 							id: t
 						},
-						...s.p(e),
+						...s.o(e),
 						...n && {
 							post: {
 								id: n
@@ -2835,37 +2835,37 @@
 					source: r.COMMUNITY_WIDGETS,
 					action: i.c.CLICK,
 					noun: s.SEE_MORE,
-					widget: Object(o.zb)(n, {
+					widget: Object(o.yb)(n, {
 						subredditId: e,
 						widgetKind: t
 					}),
-					...o.p
+					...o.o
 				}),
 				a = (e, t) => n => ({
 					source: r.POST,
 					action: i.c.CLICK,
 					noun: s.REREDDIT_PROMO,
-					post: o.L(n, e),
-					subreddit: o.mb(n),
+					post: o.K(n, e),
+					subreddit: o.lb(n),
 					...t && {
 						banner: {
 							buttonText: t,
 							id: s.REREDDIT_PROMO
 						}
 					},
-					...o.p(n)
+					...o.o(n)
 				}),
 				c = () => e => ({
 					source: r.SIDEBAR,
 					action: i.c.VIEW,
 					noun: s.TOPICS_WIDGET,
-					...o.p(e)
+					...o.o(e)
 				}),
 				l = e => t => ({
 					source: r.TOPICS_WIDGET,
 					action: i.c.CLICK,
 					noun: s.TOPIC,
-					...o.p(t),
+					...o.o(t),
 					topicMetadata: {
 						displayName: e
 					}
@@ -3189,4 +3189,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.cf64303b39a9157c995f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostSetPage.6860a93a6180abdfe86c.js.map

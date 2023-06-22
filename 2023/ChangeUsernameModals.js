@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChangeUsernameModals.78d9e8d109de1d22e4c2.js
-// Retrieved at 6/20/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChangeUsernameModals.5dd2f006bc8e3d939743.js
+// Retrieved at 6/21/2023, 9:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChangeUsernameModals"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -748,7 +748,7 @@
 				},
 				C = e => e.payload.args && "string" == typeof e.payload.args[0] && e.payload.args[0] || "",
 				g = (e, t) => n => ({
-					...Object(u.p)(n),
+					...Object(u.o)(n),
 					action: l.c.VIEW,
 					actionInfo: Object(u.d)(n, {
 						reason: t ? A(Object(m.a)(n)) : void 0
@@ -757,7 +757,7 @@
 					source: e
 				}),
 				b = (e, t) => n => ({
-					...Object(u.p)(n),
+					...Object(u.o)(n),
 					action: l.c.CLICK,
 					noun: s.CHANGE_USERNAME_INITIAL,
 					popup: {
@@ -766,13 +766,13 @@
 					source: e
 				}),
 				f = () => e => ({
-					...Object(u.p)(e),
+					...Object(u.o)(e),
 					action: l.c.VIEW,
 					noun: s.CHANGE_USERNAME_CONFIRMATION,
 					source: p
 				}),
 				E = e => t => ({
-					...Object(u.p)(t),
+					...Object(u.o)(t),
 					action: l.c.CLICK,
 					noun: s.CHANGE_USERNAME_CONFIRMATION,
 					source: p,
@@ -781,13 +781,13 @@
 					}
 				}),
 				v = () => e => ({
-					...Object(u.p)(e),
+					...Object(u.o)(e),
 					action: l.c.VIEW,
 					noun: s.CHANGE_USERNAME_INPUT,
 					source: p
 				}),
 				x = () => e => ({
-					...Object(u.p)(e),
+					...Object(u.o)(e),
 					action: l.c.CLICK,
 					noun: s.CHANGE_USERNAME_INPUT,
 					popup: {
@@ -796,13 +796,13 @@
 					source: p
 				}),
 				O = () => e => ({
-					...Object(u.p)(e),
+					...Object(u.o)(e),
 					action: l.c.SELECT,
 					noun: s.CHANGE_USERNAME_INPUT,
 					source: p
 				}),
 				U = () => e => ({
-					...Object(u.p)(e),
+					...Object(u.o)(e),
 					action: l.c.VIEW,
 					noun: s.CHANGE_USERNAME_SUCCESS,
 					source: "toast"
@@ -888,4 +888,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameModals.78d9e8d109de1d22e4c2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameModals.5dd2f006bc8e3d939743.js.map

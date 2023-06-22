@@ -1,26 +1,26 @@
-// https://www.redditstatic.com/desktop2x/EditCommunityDescriptionModal.12059143bb8f0cd23059.js
-// Retrieved at 6/20/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EditCommunityDescriptionModal.405163c4e2e23a5773ed.js
+// Retrieved at 6/21/2023, 9:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EditCommunityDescriptionModal"], {
-		"./src/lib/hooks/useMutation.ts": function(e, t, s) {
+		"./src/lib/hooks/useMutation.ts": function(e, t, o) {
 			"use strict";
-			s.d(t, "a", (function() {
+			o.d(t, "a", (function() {
 				return r
 			}));
-			var o = s("./node_modules/react/index.js"),
-				n = s("./src/reddit/hooks/useGqlContext.ts");
+			var s = o("./node_modules/react/index.js"),
+				n = o("./src/reddit/hooks/useGqlContext.ts");
 
 			function r(e) {
 				const t = Object(n.a)(),
-					[s, r] = Object(o.useState)(!1),
-					[a, c] = Object(o.useState)(!1),
-					[i, d] = Object(o.useState)(null),
-					[u, l] = Object(o.useState)(null);
-				return [Object(o.useCallback)(async s => {
-					let o, n;
+					[o, r] = Object(s.useState)(!1),
+					[a, c] = Object(s.useState)(!1),
+					[i, d] = Object(s.useState)(null),
+					[u, l] = Object(s.useState)(null);
+				return [Object(s.useCallback)(async o => {
+					let s, n;
 					r(!0), c(!0);
 					try {
-						if ((n = (o = await e(t(), s)).body).error) throw new Error(n.error.message);
+						if ((n = (s = await e(t(), o)).body).error) throw new Error(n.error.message);
 						l(n.data)
 					} catch (i) {
 						d(i)
@@ -30,12 +30,12 @@
 				}, [t, e]), {
 					data: u,
 					error: i,
-					pending: s,
+					pending: o,
 					called: a
 				}]
 			}
 		},
-		"./src/reddit/components/EditCommunityDescriptionModal/index.m.less": function(e, t, s) {
+		"./src/reddit/components/EditCommunityDescriptionModal/index.m.less": function(e, t, o) {
 			e.exports = {
 				ModalBody: "bHp9U-xwuQZkN1op0j8n7",
 				modalBody: "bHp9U-xwuQZkN1op0j8n7",
@@ -57,33 +57,33 @@
 				saveButton: "_1cTbZ-X_H321wG2mSECP2L"
 			}
 		},
-		"./src/reddit/components/EditCommunityDescriptionModal/index.tsx": function(e, t, s) {
+		"./src/reddit/components/EditCommunityDescriptionModal/index.tsx": function(e, t, o) {
 			"use strict";
-			s.r(t);
-			var o = s("./node_modules/fbt/lib/FbtPublic.js"),
-				n = s("./node_modules/react/index.js"),
-				r = s.n(n),
-				a = s("./node_modules/react-redux/es/index.js"),
-				c = s("./src/higherOrderComponents/asModal/index.tsx"),
-				i = s("./src/lib/hooks/useMutation.ts"),
-				d = s("./src/reddit/actions/modal.ts"),
-				u = s("./src/reddit/actions/subreddit/questions.ts"),
-				l = s("./src/reddit/actions/subredditSettings.ts"),
-				m = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				p = s("./src/reddit/constants/modals.ts"),
-				b = s("./src/reddit/controls/Button/index.tsx"),
-				_ = s("./src/reddit/endpoints/subreddit/newCommunityProgress.ts"),
-				y = s("./src/reddit/helpers/trackers/communityProgressModule.ts"),
-				j = s("./src/reddit/hooks/useTracking.ts"),
-				f = s("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
-				O = s("./src/reddit/selectors/experiments/newCommunityProgressV3.ts"),
-				C = s("./src/reddit/selectors/platform.ts"),
-				g = s("./src/reddit/components/EditCommunityDescriptionModal/index.m.less"),
-				x = s.n(g);
+			o.r(t);
+			var s = o("./node_modules/fbt/lib/FbtPublic.js"),
+				n = o("./node_modules/react/index.js"),
+				r = o.n(n),
+				a = o("./node_modules/react-redux/es/index.js"),
+				c = o("./src/higherOrderComponents/asModal/index.tsx"),
+				i = o("./src/lib/hooks/useMutation.ts"),
+				d = o("./src/reddit/actions/modal.ts"),
+				u = o("./src/reddit/actions/subreddit/questions.ts"),
+				l = o("./src/reddit/actions/subredditSettings.ts"),
+				m = o("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				p = o("./src/reddit/constants/modals.ts"),
+				b = o("./src/reddit/controls/Button/index.tsx"),
+				_ = o("./src/reddit/endpoints/subreddit/newCommunityProgress.ts"),
+				y = o("./src/reddit/helpers/trackers/communityProgressModule.ts"),
+				j = o("./src/reddit/hooks/useTracking.ts"),
+				f = o("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
+				O = o("./src/reddit/selectors/experiments/newCommunityProgressV3.ts"),
+				C = o("./src/reddit/selectors/platform.ts"),
+				g = o("./src/reddit/components/EditCommunityDescriptionModal/index.m.less"),
+				x = o.n(g);
 			t.default = Object(c.a)(() => {
 				const e = Object(a.e)(C.c),
 					t = Object(a.e)(t => e && Object(O.c)(t)[e]),
-					[s, c] = Object(n.useState)(""),
+					[o, c] = Object(n.useState)(""),
 					g = Object(a.d)(),
 					M = Object(j.a)(),
 					[E] = Object(i.a)(_.a);
@@ -95,7 +95,7 @@
 					className: x.a.ModalHeader
 				}, r.a.createElement(f.a, {
 					className: x.a.ExpandLeft
-				}, r.a.createElement(m.q, null, o.fbt._("Write a description", null, {
+				}, r.a.createElement(m.q, null, s.fbt._("Write a description", null, {
 					hk: "1aXT9M"
 				})), r.a.createElement(b.t, {
 					className: x.a.CloseButton,
@@ -106,25 +106,25 @@
 				}, r.a.createElement(m.t, {
 					className: x.a.TextArea,
 					onChange: e => c(e.currentTarget.value),
-					placeholder: o.fbt._("Tell people what your community is about...", null, {
+					placeholder: s.fbt._("Tell people what your community is about...", null, {
 						hk: "17XTOW"
 					}),
-					value: s
+					value: o
 				}), r.a.createElement("label", {
 					className: x.a.TextAreaLabel
-				}, o.fbt._("description", null, {
+				}, s.fbt._("description", null, {
 					hk: "Pkdpn"
 				}))), r.a.createElement(m.g, {
 					className: x.a.modalFooter
 				}, r.a.createElement(m.a, {
 					onClick: k
-				}, o.fbt._("Cancel", null, {
+				}, s.fbt._("Cancel", null, {
 					hk: "2TSLl5"
 				})), r.a.createElement(b.t, {
 					className: x.a.SaveButton,
 					onClick: async () => {
 						g(Object(l.j)(e, {
-							publicDescription: s
+							publicDescription: o
 						}, {}, !0)), await E({
 							input: {
 								subredditId: e,
@@ -132,30 +132,30 @@
 							}
 						}), M(Object(y.d)(t, "add_descr")), g(Object(u.b)(e)), k()
 					}
-				}, o.fbt._("Save", null, {
+				}, s.fbt._("Save", null, {
 					hk: "4yMsMq"
 				}))))
 			})
 		},
-		"./src/reddit/endpoints/subreddit/newCommunityProgress.ts": function(e, t, s) {
+		"./src/reddit/endpoints/subreddit/newCommunityProgress.ts": function(e, t, o) {
 			"use strict";
-			s.d(t, "d", (function() {
+			o.d(t, "d", (function() {
 				return d
-			})), s.d(t, "e", (function() {
+			})), o.d(t, "e", (function() {
 				return u
-			})), s.d(t, "a", (function() {
+			})), o.d(t, "a", (function() {
 				return l
-			})), s.d(t, "b", (function() {
+			})), o.d(t, "b", (function() {
 				return m
-			})), s.d(t, "c", (function() {
+			})), o.d(t, "c", (function() {
 				return p
 			}));
-			var o = s("./src/redditGQL/operations/CompleteCommunityProgressCard.json"),
-				n = s("./src/redditGQL/operations/CompleteCommunityProgressModule.json"),
-				r = s("./src/redditGQL/operations/DismissCommunityProgressCard.json"),
-				a = s("./src/redditGQL/operations/DismissCommunityProgressCardV2.json"),
-				c = s("./src/lib/makeGqlRequest/index.ts"),
-				i = s("./src/reddit/actions/subreddit/questions.ts");
+			var s = o("./src/redditGQL/operations/CompleteCommunityProgressCard.json"),
+				n = o("./src/redditGQL/operations/CompleteCommunityProgressModule.json"),
+				r = o("./src/redditGQL/operations/DismissCommunityProgressCard.json"),
+				a = o("./src/redditGQL/operations/DismissCommunityProgressCardV2.json"),
+				c = o("./src/lib/makeGqlRequest/index.ts"),
+				i = o("./src/reddit/actions/subreddit/questions.ts");
 			const d = (e, t) => Object(c.a)(e, {
 					...r,
 					variables: t
@@ -165,14 +165,14 @@
 					variables: t
 				}),
 				l = (e, t) => Object(c.a)(e, {
-					...o,
+					...s,
 					variables: t
 				}),
 				m = (e, t) => Object(c.a)(e, {
 					...n,
 					variables: t
 				}),
-				p = (e, t) => async (s, o, n) => {
+				p = (e, t) => async (o, s, n) => {
 					let {
 						gqlContext: r
 					} = n;
@@ -182,27 +182,27 @@
 							moduleId: t
 						}
 					};
-					await m(r(), a), s(Object(i.b)(e))
+					await m(r(), a), o(Object(i.b)(e))
 				}
 		},
-		"./src/reddit/helpers/trackers/communityProgressModule.ts": function(e, t, s) {
+		"./src/reddit/helpers/trackers/communityProgressModule.ts": function(e, t, o) {
 			"use strict";
-			s.d(t, "g", (function() {
+			o.d(t, "g", (function() {
 				return r
-			})), s.d(t, "b", (function() {
+			})), o.d(t, "b", (function() {
 				return a
-			})), s.d(t, "f", (function() {
+			})), o.d(t, "f", (function() {
 				return c
-			})), s.d(t, "c", (function() {
+			})), o.d(t, "c", (function() {
 				return i
-			})), s.d(t, "a", (function() {
+			})), o.d(t, "a", (function() {
 				return d
-			})), s.d(t, "e", (function() {
+			})), o.d(t, "e", (function() {
 				return u
-			})), s.d(t, "d", (function() {
+			})), o.d(t, "d", (function() {
 				return l
 			}));
-			var o = s("./src/reddit/selectors/telemetry.ts");
+			var s = o("./src/reddit/selectors/telemetry.ts");
 
 			function n(e, t) {
 				return {
@@ -210,8 +210,8 @@
 					cardName: t
 				}
 			}
-			const r = (e, t) => s => ({
-					...Object(o.p)(s),
+			const r = (e, t) => o => ({
+					...Object(s.o)(o),
 					source: "new_community_setup",
 					action: "view",
 					noun: "progress_module",
@@ -220,24 +220,24 @@
 						pageType: "community",
 						reason: t
 					},
-					subreddit: Object(o.mb)(s)
+					subreddit: Object(s.lb)(o)
 				}),
-				a = (e, t, s) => r => ({
-					...Object(o.p)(r),
+				a = (e, t, o) => r => ({
+					...Object(s.o)(r),
 					source: "new_community_setup",
 					action: "click",
 					noun: "card_action_button",
 					progressModule: n(e, t),
 					actionInfo: {
 						pageType: "community",
-						...s && {
-							reason: s
+						...o && {
+							reason: o
 						}
 					},
-					subreddit: Object(o.mb)(r)
+					subreddit: Object(s.lb)(r)
 				}),
 				c = e => t => ({
-					...Object(o.p)(t),
+					...Object(s.o)(t),
 					source: "new_community_setup",
 					action: "click",
 					noun: "expand_progress_module",
@@ -246,10 +246,10 @@
 						pageType: "community",
 						reason: "expanded_module"
 					},
-					subreddit: Object(o.mb)(t)
+					subreddit: Object(s.lb)(t)
 				}),
 				i = e => t => ({
-					...Object(o.p)(t),
+					...Object(s.o)(t),
 					source: "new_community_setup",
 					action: "click",
 					noun: "collapse_progress_module",
@@ -258,10 +258,10 @@
 						pageType: "community",
 						reason: "collapses_module"
 					},
-					subreddit: Object(o.mb)(t)
+					subreddit: Object(s.lb)(t)
 				}),
-				d = (e, t) => s => ({
-					...Object(o.p)(s),
+				d = (e, t) => o => ({
+					...Object(s.o)(o),
 					source: "new_community_setup",
 					action: "click",
 					noun: "card_menu_button",
@@ -269,10 +269,10 @@
 					actionInfo: {
 						pageType: "community"
 					},
-					subreddit: Object(o.mb)(s)
+					subreddit: Object(s.lb)(o)
 				}),
-				u = (e, t) => s => ({
-					...Object(o.p)(s),
+				u = (e, t) => o => ({
+					...Object(s.o)(o),
 					source: "new_community_setup",
 					action: "click",
 					noun: "dismiss",
@@ -280,10 +280,10 @@
 					actionInfo: {
 						pageType: "community"
 					},
-					subreddit: Object(o.mb)(s)
+					subreddit: Object(s.lb)(o)
 				}),
-				l = (e, t) => s => ({
-					...Object(o.p)(s),
+				l = (e, t) => o => ({
+					...Object(s.o)(o),
 					source: "new_community_setup",
 					action: "click",
 					noun: "complete",
@@ -291,7 +291,7 @@
 					actionInfo: {
 						pageType: "community"
 					},
-					subreddit: Object(o.mb)(s)
+					subreddit: Object(s.lb)(o)
 				})
 		},
 		"./src/redditGQL/operations/CompleteCommunityProgressCard.json": function(e) {
@@ -308,4 +308,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EditCommunityDescriptionModal.12059143bb8f0cd23059.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EditCommunityDescriptionModal.405163c4e2e23a5773ed.js.map

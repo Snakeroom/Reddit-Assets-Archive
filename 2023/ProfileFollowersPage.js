@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.7852ab7baa4bf401a903.js
-// Retrieved at 6/21/2023, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.797a8dcdb6b1c3679030.js
+// Retrieved at 6/21/2023, 9:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -2650,7 +2650,7 @@
 				}, [R]);
 				const F = e => {
 						l("skip" === e ? (e => t => ({
-							...Object(b.p)(t),
+							...Object(b.o)(t),
 							source: f,
 							action: h.c.CLICK,
 							noun: v.SKIP,
@@ -2659,7 +2659,7 @@
 								type: e
 							}
 						}))(m) : (e => t => ({
-							...Object(b.p)(t),
+							...Object(b.o)(t),
 							source: f,
 							action: h.c.CLICK,
 							noun: v.LATER,
@@ -2675,7 +2675,7 @@
 					M = () => {
 						const e = Object.keys(_).join();
 						l(((e, t) => s => ({
-							...Object(b.p)(s),
+							...Object(b.o)(s),
 							source: f,
 							action: h.c.CLICK,
 							noun: v.ADD,
@@ -2706,7 +2706,7 @@
 						}))
 					};
 				return T = T.filter(e => !N.includes(e)), y && 0 !== T.length ? (l((e => t => ({
-					...Object(b.p)(t),
+					...Object(b.o)(t),
 					source: f,
 					action: h.c.VIEW,
 					noun: h.b.SCREEN,
@@ -4833,11 +4833,11 @@
 							source: "trophy",
 							action: "click",
 							noun: "trophy",
-							...c.p(t),
+							...c.o(t),
 							actionInfo: Object(c.d)(t, {
 								paneName: "profile_about"
 							}),
-							profile: c.U(t),
+							profile: c.T(t),
 							trophy: e
 						}))({
 							id: t.id,
@@ -5714,13 +5714,13 @@
 			var n = s("./src/reddit/constants/tracking.ts"),
 				r = s("./src/reddit/selectors/telemetry.ts");
 			const o = e => t => ({
-					...Object(r.p)(t),
+					...Object(r.o)(t),
 					action: n.c.CLICK,
 					noun: `follower_list_page_${e?"follow":"unfollow"}`,
 					source: "profile"
 				}),
 				i = () => e => ({
-					...Object(r.p)(e),
+					...Object(r.o)(e),
 					action: n.c.CLICK,
 					noun: "follower_list_cta",
 					source: "profile"
@@ -5771,37 +5771,37 @@
 					source: r.COMMUNITY_WIDGETS,
 					action: o.c.CLICK,
 					noun: n.SEE_MORE,
-					widget: Object(i.zb)(s, {
+					widget: Object(i.yb)(s, {
 						subredditId: e,
 						widgetKind: t
 					}),
-					...i.p
+					...i.o
 				}),
 				d = (e, t) => s => ({
 					source: r.POST,
 					action: o.c.CLICK,
 					noun: n.REREDDIT_PROMO,
-					post: i.L(s, e),
-					subreddit: i.mb(s),
+					post: i.K(s, e),
+					subreddit: i.lb(s),
 					...t && {
 						banner: {
 							buttonText: t,
 							id: n.REREDDIT_PROMO
 						}
 					},
-					...i.p(s)
+					...i.o(s)
 				}),
 				l = () => e => ({
 					source: r.SIDEBAR,
 					action: o.c.VIEW,
 					noun: n.TOPICS_WIDGET,
-					...i.p(e)
+					...i.o(e)
 				}),
 				c = e => t => ({
 					source: r.TOPICS_WIDGET,
 					action: o.c.CLICK,
 					noun: n.TOPIC,
-					...i.p(t),
+					...i.o(t),
 					topicMetadata: {
 						displayName: e
 					}
@@ -6547,4 +6547,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.7852ab7baa4bf401a903.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.797a8dcdb6b1c3679030.js.map

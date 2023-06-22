@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.cbc50fe24bdfa6745cbd.js
-// Retrieved at 6/21/2023, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.2445896753ca01886b7c.js
+// Retrieved at 6/21/2023, 9:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -549,7 +549,7 @@
 									value: e,
 									oldValue: t
 								},
-								...Object(c.p)(n)
+								...Object(c.o)(n)
 							}))(h, e)(p)), n.ok) {
 							const e = l.a[h];
 							t(b({
@@ -2279,7 +2279,7 @@
 							}, {
 								traceRequestName: "search_trending"
 							})
-						})(_(), v.gb(O, m.a.SERP), O.platform.currentPage ? v.w(O.platform.currentPage) : void 0)).body);
+						})(_(), v.fb(O, m.a.SERP), O.platform.currentPage ? v.v(O.platform.currentPage) : void 0)).body);
 						if (n.length > 0) return t(E({
 							items: n,
 							subplacement: e
@@ -2647,7 +2647,7 @@
 							source: l,
 							action: "click",
 							noun: "close",
-							...Object(d.p)(e)
+							...Object(d.o)(e)
 						}))(f))
 					}));
 					const S = [...O, Date.now()].slice(Math.max(O.length + 1 - 1, 0));
@@ -2655,14 +2655,14 @@
 						source: l,
 						action: "view",
 						noun: l,
-						...Object(d.p)(e)
+						...Object(d.o)(e)
 					}))(f)), Object(i.Kb)(), Object(i.Jb)(S), a(y()), n && n()
 				}, h = e => async (t, n) => {
 					Object(p.a)((e => ({
 						source: l,
 						action: "click",
 						noun: "upvote",
-						...Object(d.p)(e)
+						...Object(d.o)(e)
 					}))(n())), Object(u.c)(n(), {
 						postId: e
 					}) && t(Object(o.ib)(e))
@@ -5628,9 +5628,9 @@
 					action: "view",
 					source: "commentlist",
 					noun: "bottom",
-					...s.p(e),
-					listing: s.A(e, t),
-					subreddit: s.mb(e)
+					...s.o(e),
+					listing: s.z(e, t),
+					subreddit: s.lb(e)
 				})
 			}
 		},
@@ -5696,9 +5696,9 @@
 			}(r || (r = {}));
 			const m = "discovery_unit",
 				y = (e, t, n) => ({
-					...p.p(e),
+					...p.o(e),
 					source: m,
-					screen: p.db(e),
+					screen: p.cb(e),
 					discoveryUnit: {
 						id: t.id,
 						type: t.unitType,
@@ -5719,11 +5719,11 @@
 				},
 				_ = (e, t) => n => g(n, e, t),
 				E = (e, t, n, r) => "unitName" in t ? y(e, t, r) : ((e, t, n) => ({
-					...p.p(e),
+					...p.o(e),
 					source: "search",
-					screen: p.db(e),
+					screen: p.cb(e),
 					search: n ? {
-						...p.eb(e, n, c.a.SERP),
+						...p.db(e, n, c.a.SERP),
 						structureType: p.c.Trending
 					} : null,
 					discoveryUnit: {
@@ -5737,7 +5737,7 @@
 					...E(e, t, s, a),
 					action: "view",
 					noun: r.ITEM_POST,
-					post: p.L(e, n)
+					post: p.K(e, n)
 				}),
 				I = e => {
 					let {
@@ -5787,7 +5787,7 @@
 						i = j[a],
 						l = Object(f.a)(s, i).filter(e => !e.post || !(e.post.isSponsored && e.post.isBlank)).findIndex(e => e.id === o.id) + n;
 					return {
-						...p.p(s),
+						...p.o(s),
 						source: "search",
 						action: t,
 						noun: r.TRENDING,
@@ -5802,7 +5802,7 @@
 							paneName: c,
 							position: l
 						}),
-						search: p.fb(s, {
+						search: p.eb(s, {
 							searchQuery: o.rawQuery,
 							structureType: p.c.Trending,
 							originElement: c === S.SEARCH_DROPDOWN ? p.a.SearchDropdown : void 0,
@@ -5812,7 +5812,7 @@
 				},
 				A = (e, t, n, r, s, a, c) => {
 					Object(h.a)({
-						...p.p(e),
+						...p.o(e),
 						...Object(i.l)({
 							state: e,
 							postId: n,
@@ -5846,7 +5846,7 @@
 						source: m,
 						action: o.c.CLICK,
 						noun: r.ITEM_POST,
-						post: p.L(a, t)
+						post: p.K(a, t)
 					}
 				},
 				k = function() {
@@ -5875,7 +5875,7 @@
 					source: m,
 					action: o.c.CLICK,
 					noun: r.ITEM_POST,
-					post: p.L(s, n)
+					post: p.K(s, n)
 				}),
 				B = (e, t, n, r) => {
 					Object(h.a)(G(t, n, r)(e))
@@ -5891,7 +5891,7 @@
 						source: m,
 						action: o.c.CLICK,
 						noun: "item_post_subreddit",
-						post: p.L(s, t)
+						post: p.K(s, t)
 					}
 				},
 				H = () => ({
@@ -5913,7 +5913,7 @@
 					return e => ({
 						...y(e, s),
 						actionInfo: q(e, 0, n),
-						subreddit: p.nb(e, t) || null,
+						subreddit: p.mb(e, t) || null,
 						source: m,
 						action: o.c.VIEW,
 						noun: r.ITEM_SUBREDDIT
@@ -5924,7 +5924,7 @@
 					return e => ({
 						...y(e, s),
 						actionInfo: q(e, 0, n),
-						subreddit: p.nb(e, t) || null,
+						subreddit: p.mb(e, t) || null,
 						source: m,
 						action: o.c.CLICK,
 						noun: r.ITEM_SUBREDDIT
@@ -5935,8 +5935,8 @@
 					return e => ({
 						...y(e, a),
 						actionInfo: q(e, 0, n),
-						subreddit: p.nb(e, t) || null,
-						post: s ? p.L(e, s) : null,
+						subreddit: p.mb(e, t) || null,
+						post: s ? p.K(e, s) : null,
 						source: m,
 						action: o.c.CLICK,
 						noun: r.ITEM_SUBREDDIT_SUBSCRIBE
@@ -5947,8 +5947,8 @@
 					return e => ({
 						...y(e, a),
 						actionInfo: q(e, 0, n),
-						subreddit: p.nb(e, t) || null,
-						post: s ? p.L(e, s) : null,
+						subreddit: p.mb(e, t) || null,
+						post: s ? p.K(e, s) : null,
 						source: m,
 						action: o.c.CLICK,
 						noun: r.ITEM_SUBREDDIT_UNSUBSCRIBE
@@ -6024,10 +6024,10 @@
 			var r = n("./src/reddit/models/ScheduledPost/index.ts"),
 				s = n("./src/reddit/selectors/telemetry.ts");
 			const a = e => ({
-					...s.p(e),
-					screen: s.db(e),
-					subreddit: s.mb(e),
-					userSubreddit: s.vb(e)
+					...s.o(e),
+					screen: s.cb(e),
+					subreddit: s.lb(e),
+					userSubreddit: s.ub(e)
 				}),
 				o = e => ({
 					id: e.id,
@@ -6237,7 +6237,7 @@
 					source: e,
 					noun: "create_community_button",
 					action: "click",
-					...s.p(t),
+					...s.o(t),
 					actionInfo: s.d(t, {
 						settingValue: t.user.account && t.user.account.isMod ? "existing_mod" : "new_mod"
 					}),
@@ -6247,7 +6247,7 @@
 					source: "community_form",
 					noun: "save_community_button",
 					action: "click",
-					...s.p(a),
+					...s.o(a),
 					actionInfo: s.d(a, {
 						settingValue: e
 					}),
@@ -6266,7 +6266,7 @@
 					source: "community_form",
 					noun: "cancel",
 					action: "click",
-					...s.p(e),
+					...s.o(e),
 					actionInfo: s.d(e),
 					correlationId: Object(r.c)(r.a.SubredditCreation)
 				}),
@@ -6274,7 +6274,7 @@
 					source: "community_form",
 					noun: "error_message",
 					action: "view",
-					...s.p(n),
+					...s.o(n),
 					actionInfo: s.d(n, {
 						reason: e,
 						settingValue: t
@@ -6285,28 +6285,28 @@
 					source: "user_dropdown",
 					noun: "create_community",
 					action: "click",
-					...s.p(e),
+					...s.o(e),
 					actionInfo: s.d(e)
 				}),
 				l = () => e => ({
 					source: "community_first_post",
 					noun: "modal",
 					action: "view",
-					...s.p(e),
+					...s.o(e),
 					actionInfo: s.d(e)
 				}),
 				u = () => e => ({
 					source: "community_first_post",
 					noun: "modal",
 					action: "click",
-					...s.p(e),
+					...s.o(e),
 					actionInfo: s.d(e)
 				}),
 				p = () => e => ({
 					source: "community_first_post",
 					noun: "modal",
 					action: "dismiss",
-					...s.p(e),
+					...s.o(e),
 					actionInfo: s.d(e)
 				})
 		},
@@ -6324,7 +6324,7 @@
 					source: "post",
 					noun: "forking_module",
 					action: "click",
-					...r.p(e),
+					...r.o(e),
 					actionInfo: r.d(e, {
 						settingValue: e.user.account && e.user.account.isMod ? "existing_mod" : "new_mod"
 					})
@@ -6333,14 +6333,14 @@
 					source: "post",
 					noun: "forking_module",
 					action: "dismiss",
-					...r.p(e),
+					...r.o(e),
 					actionInfo: r.d(e)
 				}),
 				o = e => e => ({
 					source: "post",
 					noun: "forking_module",
 					action: "view",
-					...r.p(e),
+					...r.o(e),
 					actionInfo: r.d(e)
 				})
 		},
@@ -25390,4 +25390,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.cbc50fe24bdfa6745cbd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.2445896753ca01886b7c.js.map

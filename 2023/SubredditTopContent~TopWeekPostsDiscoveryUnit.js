@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.27bdbfc65ae3f3b220bb.js
-// Retrieved at 6/20/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.f1447ad885f7f71a09df.js
+// Retrieved at 6/21/2023, 9:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent~TopWeekPostsDiscoveryUnit"], {
 		"./node_modules/react-motion/lib/Motion.js": function(e, t, s) {
@@ -772,7 +772,7 @@
 				a = s("./node_modules/react-redux/es/index.js"),
 				o = s("./src/reddit/selectors/telemetry.ts");
 			const i = e => (e, t, s) => ({
-				...o.p(e),
+				...o.o(e),
 				source: "post",
 				action: "click",
 				noun: "ad",
@@ -780,18 +780,18 @@
 					location: t
 				},
 				actionInfo: o.d(e),
-				adblock: o.f(e),
-				app: o.g(e),
-				feed: o.s(e),
-				geo: o.u(e),
-				platform: o.J(e),
-				referrer: o.ab(e),
-				request: o.bb(e),
-				screen: o.db(e),
-				session: o.ib(e),
-				user: o.tb(e),
-				media: s ? o.D(e, s) : null,
-				post: s ? o.L(e, s) : null
+				adblock: o.e(e),
+				app: o.f(e),
+				feed: o.r(e),
+				geo: o.t(e),
+				platform: o.I(e),
+				referrer: o.Z(e),
+				request: o.ab(e),
+				screen: o.cb(e),
+				session: o.hb(e),
+				user: o.sb(e),
+				media: s ? o.C(e, s) : null,
+				post: s ? o.K(e, s) : null
 			});
 			var l = s("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
 				c = s("./src/telemetry/index.ts");
@@ -1220,8 +1220,8 @@
 				G = s("./src/reddit/components/Media/index.tsx"),
 				K = s("./src/reddit/components/MiniCardPost/MetaLine/index.tsx"),
 				Y = s("./src/reddit/components/MiniCardPost/Thumbnail/index.tsx"),
-				J = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
-				X = s("./src/reddit/components/PostContainer/index.tsx"),
+				X = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
+				J = s("./src/reddit/components/PostContainer/index.tsx"),
 				$ = s("./src/reddit/components/PostTitle/index.tsx"),
 				ee = s("./src/reddit/connectors/miniCardPost.ts"),
 				te = s("./src/reddit/contexts/Post/index.tsx"),
@@ -1297,7 +1297,7 @@
 					}, O)));
 					const C = !k && !j;
 					let P;
-					return x && (P = Object(ie.i)(x) ? Object(re.b)(x) : Object(re.c)(x)), a.a.createElement(X.b, {
+					return x && (P = Object(ie.i)(x) ? Object(re.b)(x) : Object(re.c)(x)), a.a.createElement(J.b, {
 						className: Object(c.a)(pe.a.container, ue.a.largeAndMediumActiveStyles, ue.a.largeAndMediumPostStyles, ce.a.postContainer, Object(ne.a)(this.props), s),
 						post: p,
 						onClick: m,
@@ -1308,7 +1308,7 @@
 							...this.props.style
 						},
 						"data-click-id": this.props["data-click-id"]
-					}, a.a.createElement(J.a, {
+					}, a.a.createElement(X.a, {
 						className: ce.a.backgroundWrapper,
 						flairStyleTemplate: i
 					}, a.a.createElement("div", {
@@ -2150,7 +2150,7 @@
 						type: n
 					}, a) : a)
 				},
-				J = e => {
+				X = e => {
 					let {
 						className: t,
 						disableVisited: s,
@@ -2164,7 +2164,7 @@
 						})
 					}), r)
 				},
-				X = e => {
+				J = e => {
 					let {
 						disableVisited: t,
 						nowrap: s,
@@ -2198,7 +2198,7 @@
 					} = t, n = Object(i.d)(), r = Object(v.a)(), a = Object(i.e)(B.b), l = Object(i.e)(B.c), c = e => {
 						(a || l) && (e.preventDefault(), n(Object(y.Z)(Object(x.b)(t.permalink), t.id))), t.isSponsored && Object(S.A)(t) && n(Object(y.y)(t, g.a.Click))
 					};
-					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(X, {
+					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(J, {
 						nowrap: e.nowrap
 					}, o.a.createElement(te, e));
 					if (e.isCommentsPageAd && t.source && t.source.url) return o.a.createElement(f.b, {
@@ -2209,7 +2209,7 @@
 					}, o.a.createElement(te, e)); {
 						const n = t.permalink,
 							a = e.isCommentPermalink ? Object(x.b)(n) : Object(h.a)(n, void 0, r);
-						return o.a.createElement(X, {
+						return o.a.createElement(J, {
 							disableVisited: e.disableVisited,
 							nowrap: e.nowrap
 						}, s && !Object(S.A)(t) ? ((e, t) => {
@@ -2222,7 +2222,7 @@
 								postId: e.id,
 								source: s
 							}, o.a.createElement(te, t)) : o.a.createElement(te, t)
-						})(t, e) : o.a.createElement(J, {
+						})(t, e) : o.a.createElement(X, {
 							className: e.titleLinkClassName,
 							"data-click-id": "body",
 							disableVisited: e.disableVisited,
@@ -2807,4 +2807,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.27bdbfc65ae3f3b220bb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.f1447ad885f7f71a09df.js.map

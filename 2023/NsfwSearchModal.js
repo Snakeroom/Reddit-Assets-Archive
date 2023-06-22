@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NsfwSearchModal.72acd31dee30dc702a77.js
-// Retrieved at 6/21/2023, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NsfwSearchModal.438feb90e433de52b06e.js
+// Retrieved at 6/21/2023, 9:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NsfwSearchModal"], {
 		"./src/reddit/components/Upsell/NsfwSearch/Modal.tsx": function(e, t, n) {
@@ -159,7 +159,7 @@
 			var s = n("./src/reddit/selectors/telemetry.ts");
 			const r = "nsfw_dialog_bypassable",
 				o = () => e => ({
-					...Object(s.p)(e),
+					...Object(s.o)(e),
 					source: "xpromo",
 					action: "view",
 					noun: r,
@@ -168,7 +168,7 @@
 					}
 				}),
 				c = () => e => ({
-					...Object(s.p)(e),
+					...Object(s.o)(e),
 					source: "xpromo",
 					action: "click",
 					noun: r,
@@ -178,7 +178,7 @@
 					}
 				}),
 				a = () => e => ({
-					...Object(s.p)(e),
+					...Object(s.o)(e),
 					source: "xpromo",
 					action: "dismiss",
 					noun: r,
@@ -188,7 +188,7 @@
 					}
 				}),
 				i = () => e => ({
-					...Object(s.p)(e),
+					...Object(s.o)(e),
 					source: "xpromo",
 					action: "click",
 					noun: r,
@@ -210,7 +210,7 @@
 			var s = n("./src/reddit/selectors/telemetry.ts");
 			const r = "nsfw_dialog",
 				o = () => e => ({
-					...Object(s.p)(e),
+					...Object(s.o)(e),
 					source: "xpromo",
 					action: "view",
 					noun: r,
@@ -219,7 +219,7 @@
 					}
 				}),
 				c = () => e => ({
-					...Object(s.p)(e),
+					...Object(s.o)(e),
 					source: "xpromo",
 					action: "click",
 					noun: r,
@@ -228,7 +228,7 @@
 					}
 				}),
 				a = () => e => ({
-					...Object(s.p)(e),
+					...Object(s.o)(e),
 					source: "xpromo",
 					action: "dismiss",
 					noun: r,
@@ -308,4 +308,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwSearchModal.72acd31dee30dc702a77.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwSearchModal.438feb90e433de52b06e.js.map
