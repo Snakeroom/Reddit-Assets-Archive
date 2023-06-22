@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.56f53e7a78d283857d3d.js
-// Retrieved at 6/22/2023, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.686a6b3e3f3347cbcfa6.js
+// Retrieved at 6/22/2023, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, n) {
@@ -1839,15 +1839,15 @@
 				u = /^\/u(?:ser)?\/[^/]+(\/[^/]+)?\/?$/,
 				m = e => !!e.match(i) || !!e.match(a),
 				b = e => !e.match(a) && (!e.match(c) && (!!e.match(d) || !!e.match(l))),
-				p = (e, t) => !!m(t) && [r.dg.Enabled, r.dg.HardReload].includes(Object(o.c)(e, {
+				p = (e, t) => !!m(t) && [r.eg.Enabled, r.eg.HardReload].includes(Object(o.c)(e, {
 					experimentEligibilitySelector: s.f,
 					experimentName: r.Of
 				})),
-				f = (e, t) => !!t.match(c) && [r.dg.Enabled, r.dg.HardReload].includes(Object(o.c)(e, {
+				f = (e, t) => !!t.match(c) && [r.eg.Enabled, r.eg.HardReload].includes(Object(o.c)(e, {
 					experimentEligibilitySelector: s.f,
 					experimentName: r.Mf
 				})),
-				h = (e, t) => !!b(t) && [r.dg.Enabled, r.dg.HardReload].includes(Object(o.c)(e, {
+				h = (e, t) => !!b(t) && [r.eg.Enabled, r.eg.HardReload].includes(Object(o.c)(e, {
 					experimentEligibilitySelector: s.f,
 					experimentName: r.Nf
 				})),
@@ -1863,14 +1863,14 @@
 				},
 				x = (e, t) => !!(e => {
 					return /^(?:\/r\/[^\/]+)?\/search\/?$/i.test(e) || /^\/u(?:ser)?\/[^\/]+\/m\/[^\/]+\/search\/?$/i.test(e)
-				})(t) && (E(e) === r.dg.Enabled || E(e) === r.dg.HardReload),
+				})(t) && (E(e) === r.eg.Enabled || E(e) === r.eg.HardReload),
 				O = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: s.f,
 						experimentName: r.Pf
 					})
 				},
-				T = (e, t) => !!(e => !!e.match(u))(t) && (O(e) === r.dg.Enabled || O(e) === r.dg.HardReload)
+				T = (e, t) => !!(e => !!e.match(u))(t) && (O(e) === r.eg.Enabled || O(e) === r.eg.HardReload)
 		},
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, n) {
 			"use strict";
@@ -1909,4 +1909,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.56f53e7a78d283857d3d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.686a6b3e3f3347cbcfa6.js.map

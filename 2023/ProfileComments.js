@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.970de6aa99fe8ba94de6.js
-// Retrieved at 6/21/2023, 9:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.da01d6e4a87f3600fffa.js
+// Retrieved at 6/22/2023, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./src/lib/LiveChatActiveUsers/index.m.less": function(e, t, s) {
@@ -3237,4 +3237,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.970de6aa99fe8ba94de6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.da01d6e4a87f3600fffa.js.map
