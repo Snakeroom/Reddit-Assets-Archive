@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.291b5c74deeb89597f78.js
-// Retrieved at 6/21/2023, 9:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.95fb53f99787c060bc64.js
+// Retrieved at 6/22/2023, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -60224,6 +60224,32 @@
 					is_public_link: e.isPublicLink
 				})
 		},
+		"./src/reddit/endpoints/redditor/index.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return a
+			})), n.d(t, "b", (function() {
+				return d
+			}));
+			var s = n("./src/lib/makeGqlRequest/index.ts"),
+				r = n("./src/lib/makeRequest/index.ts"),
+				o = n("./src/redditGQL/operations/RedditorIdByName.json"),
+				i = n("./src/redditGQL/operations/RedditorNameById.json");
+			const a = async (e, t) => {
+				var n;
+				const i = await Object(s.a)(e, {
+					...o,
+					variables: t
+				});
+				return Object(r.c)(i) && (null === (n = i.body.data.redditorInfoByName) || void 0 === n ? void 0 : n.id) || null
+			}, d = async (e, t) => {
+				const n = await Object(s.a)(e, {
+					...i,
+					variables: t
+				});
+				return Object(r.c)(n) && n.body.data.redditorInfoById.name || null
+			}
+		},
 		"./src/reddit/endpoints/scheduledPosts/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
@@ -81316,6 +81342,12 @@
 		"./src/redditGQL/operations/ProfileFeed.json": function(e) {
 			e.exports = JSON.parse('{"id":"e8d58a13151d"}')
 		},
+		"./src/redditGQL/operations/RedditorIdByName.json": function(e) {
+			e.exports = JSON.parse('{"id":"a24cf5c8adf7"}')
+		},
+		"./src/redditGQL/operations/RedditorNameById.json": function(e) {
+			e.exports = JSON.parse('{"id":"7206aafc3965"}')
+		},
 		"./src/redditGQL/operations/RemoveApprovedTalkHost.json": function(e) {
 			e.exports = JSON.parse('{"id":"e016564e243a"}')
 		},
@@ -81468,4 +81500,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.291b5c74deeb89597f78.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.95fb53f99787c060bc64.js.map

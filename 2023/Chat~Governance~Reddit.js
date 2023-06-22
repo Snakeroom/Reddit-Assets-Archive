@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ca0358fd27c1b8889fb7.js
-// Retrieved at 6/22/2023, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.735c2f984e7fa0b01e13.js
+// Retrieved at 6/22/2023, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3659,11 +3659,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("187668"),
+				buildNumber: Object(r.c)("187671"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1687445238"),
+				buildTimestamp: Object(r.b)("1687449885"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6411,14 +6411,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cd4411a6264faa0a6c17c0b2ea4fa464fac887d17-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c147a5d21a9dd9bbed30f9f1b0345a7607bc8137a-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "d4411a6264faa0a6c17c0b2ea4fa464fac887d17-production",
+						release: "147a5d21a9dd9bbed30f9f1b0345a7607bc8137a-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6971,7 +6971,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "d4411a6264faa0a6c17c0b2ea4fa464fac887d17-production",
+							releaseClient: "147a5d21a9dd9bbed30f9f1b0345a7607bc8137a-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -9303,7 +9303,8 @@
 				s.chatStore.dispatch(o(e))
 			}, g = (e, t, n) => async (s, o) => {
 				const d = o();
-				if (!1 === Object(c.e)(d)) return s(Object(l.e)(e)); {
+				if (!1 === Object(c.e)(d)) s(Object(l.f)(e));
+				else {
 					const d = (await (() => Object(r.a)(() => Promise.all([i.e("vendors~Chat~RedesignChat"), i.e("Chat~RedesignChat"), i.e("RedesignChat")]).then(i.bind(null, "./src/chat/helpers/urls/index.ts"))).then(e => e.channelUserIdUrl))())(e);
 					await p({
 						dispatch: s,
@@ -10708,106 +10709,92 @@
 		},
 		"./src/reddit/actions/matrixChat/constants.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "c", (function() {
+			i.d(t, "d", (function() {
 				return n
-			})), i.d(t, "b", (function() {
-				return r
-			})), i.d(t, "d", (function() {
-				return s
 			})), i.d(t, "a", (function() {
+				return r
+			})), i.d(t, "c", (function() {
+				return s
+			})), i.d(t, "e", (function() {
 				return o
+			})), i.d(t, "b", (function() {
+				return d
 			}));
 			const n = "MATRIX_CHAT_SET_URL",
-				r = "MATRIX_CHAT_SET_STATE",
-				s = "MATRIX_CHAT_START_CHAT_WITH_USER",
-				o = "MATRIX_CHAT_SET_NOTIFICATIONS_COUNT"
+				r = "MATRIX_CHAT_RESET_ACTIVE_CHAT",
+				s = "MATRIX_CHAT_SET_STATE",
+				o = "MATRIX_CHAT_START_CHAT_WITH_USER",
+				d = "MATRIX_CHAT_SET_NOTIFICATIONS_COUNT"
 		},
 		"./src/reddit/actions/matrixChat/index.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "d", (function() {
-				return f
-			})), i.d(t, "c", (function() {
-				return b
-			})), i.d(t, "b", (function() {
-				return g
-			})), i.d(t, "e", (function() {
-				return w
+			i.d(t, "e", (function() {
+				return _
 			})), i.d(t, "a", (function() {
-				return y
+				return m
+			})), i.d(t, "d", (function() {
+				return p
+			})), i.d(t, "c", (function() {
+				return h
+			})), i.d(t, "f", (function() {
+				return f
+			})), i.d(t, "b", (function() {
+				return b
 			}));
-			var n, r = i("./node_modules/fbt/lib/FbtPublic.js"),
-				s = i("./src/lib/cache/index.ts"),
-				o = i("./src/lib/constants/index.ts"),
-				d = i("./src/lib/makeActionCreator/index.ts"),
-				a = i("./src/reddit/reducers/features/matrixChat/index.ts");
+			var n, r = i("./src/lib/cache/index.ts"),
+				s = i("./src/lib/constants/index.ts"),
+				o = i("./src/lib/makeActionCreator/index.ts"),
+				d = i("./src/reddit/reducers/features/matrixChat/index.ts");
 
-			function l(e) {
-				return Object(s.c)(o.q.CHAT, o.z.CHAT_CONTAINER_SIZE_KEY, e)
+			function a(e) {
+				return Object(r.c)(s.q.CHAT, s.z.CHAT_CONTAINER_SIZE_KEY, e)
 			}
 
-			function u(e) {
+			function l(e) {
 				switch (e) {
 					case n.EMBED:
-						return a.b.NORMAL;
+						return d.b.NORMAL;
 					case n.MINIMIZED:
-						return a.b.MINIMIZED;
+						return d.b.MINIMIZED;
 					default:
-						return a.b.CLOSED
+						return d.b.CLOSED
 				}
 			}! function(e) {
 				e.EMBED = "embed", e.FULL = "full", e.HIDDEN = "hidden", e.MINIMIZED = "minimized"
 			}(n || (n = {}));
-			var c = i("./src/reddit/actions/toaster.ts"),
-				_ = i("./src/reddit/endpoints/redditor/index.ts"),
-				m = i("./src/reddit/models/Toast/index.ts"),
-				p = i("./src/reddit/selectors/user.ts"),
-				h = i("./src/reddit/actions/matrixChat/constants.ts");
-			const f = Object(d.a)(h.c),
-				b = e => (t, i) => {
-					const r = i(),
-						d = Object(p.k)(r);
-					if (d) {
-						const t = l(d),
+			var u = i("./src/reddit/selectors/user.ts"),
+				c = i("./src/reddit/actions/matrixChat/constants.ts");
+			const _ = Object(o.a)(c.d),
+				m = Object(o.a)(c.a),
+				p = e => (t, i) => {
+					const o = i(),
+						l = Object(u.k)(o);
+					if (l) {
+						const t = a(l),
 							i = function(e) {
 								switch (e) {
-									case a.b.NORMAL:
+									case d.b.NORMAL:
 										return n.EMBED;
-									case a.b.MINIMIZED:
+									case d.b.MINIMIZED:
 										return n.MINIMIZED;
 									default:
 										return n.HIDDEN
 								}
 							}(e.state);
-						Object(s.d)(t, i, o.xc)
+						Object(r.d)(t, i, s.xc)
 					}
 					return t({
-						type: h.b,
+						type: c.c,
 						payload: e
 					})
 				},
-				g = Object(d.a)(h.a),
-				v = Object(d.a)(h.d),
-				w = e => async (t, i, n) => {
-					let {
-						gqlContext: s
-					} = n;
-					const o = await Object(_.b)(s(), {
-						id: e
-					});
-					if (!o) {
-						const e = Object(c.e)(r.fbt._("Can't start chat: user not found.", null, {
-							hk: "2P52uD"
-						}), m.b.Error);
-						return t(Object(c.f)(e))
-					}
-					t(v({
-						username: o
-					}))
-				}, y = e => async t => {
-					const i = l(e),
-						n = Object(s.b)(i);
-					n && t(b({
-						state: u(n)
+				h = Object(o.a)(c.b),
+				f = Object(o.a)(c.e),
+				b = e => async t => {
+					const i = a(e),
+						n = Object(r.b)(i);
+					n && t(p({
+						state: l(n)
 					}))
 				}
 		},
@@ -21584,32 +21571,6 @@
 						name: t
 					}
 				})
-		},
-		"./src/reddit/endpoints/redditor/index.ts": function(e, t, i) {
-			"use strict";
-			i.d(t, "a", (function() {
-				return d
-			})), i.d(t, "b", (function() {
-				return a
-			}));
-			var n = i("./src/lib/makeGqlRequest/index.ts"),
-				r = i("./src/lib/makeRequest/index.ts"),
-				s = i("./src/redditGQL/operations/RedditorIdByName.json"),
-				o = i("./src/redditGQL/operations/RedditorNameById.json");
-			const d = async (e, t) => {
-				var i;
-				const o = await Object(n.a)(e, {
-					...s,
-					variables: t
-				});
-				return Object(r.c)(o) && (null === (i = o.body.data.redditorInfoByName) || void 0 === i ? void 0 : i.id) || null
-			}, a = async (e, t) => {
-				const i = await Object(n.a)(e, {
-					...o,
-					variables: t
-				});
-				return Object(r.c)(i) && i.body.data.redditorInfoById.name || null
-			}
 		},
 		"./src/reddit/endpoints/session/index.ts": function(e, t, i) {
 			"use strict";
@@ -35738,7 +35699,7 @@
 			var n, r = i("./src/config.ts"),
 				s = i("./src/reddit/actions/matrixChat/constants.ts");
 			! function(e) {
-				e[e.CLOSED = 0] = "CLOSED", e[e.NORMAL = 1] = "NORMAL", e[e.MINIMIZED = 2] = "MINIMIZED", e[e.CHAT_WITH_USER = 3] = "CHAT_WITH_USER"
+				e[e.CLOSED = 0] = "CLOSED", e[e.NORMAL = 1] = "NORMAL", e[e.MINIMIZED = 2] = "MINIMIZED"
 			}(n || (n = {}));
 			const o = {
 					state: n.CLOSED,
@@ -35748,14 +35709,14 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : o,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case s.c:
+						case s.d:
 							const {
 								url: i
 							} = t.payload;
 							return {
 								...e, url: i
 							};
-						case s.b:
+						case s.c:
 							const {
 								state: r
 							} = t.payload;
@@ -35763,18 +35724,20 @@
 								...e, state: r
 							};
 						case s.a:
+							return {
+								...e, activeUserId: void 0
+							};
+						case s.b:
 							const {
 								count: o
 							} = t.payload;
 							return {
 								...e, notificationsCount: o
 							};
-						case s.d:
-							const {
-								username: d
-							} = t.payload;
+						case s.e:
+							const d = t.payload;
 							return {
-								...e, state: n.CHAT_WITH_USER, username: d
+								...e, state: n.NORMAL, activeUserId: d
 							};
 						default:
 							return e
@@ -45118,17 +45081,11 @@
 		"./src/redditGQL/operations/ProfileTrophies.json": function(e) {
 			e.exports = JSON.parse('{"id":"3c59e5ed6f14"}')
 		},
-		"./src/redditGQL/operations/RedditorIdByName.json": function(e) {
-			e.exports = JSON.parse('{"id":"a24cf5c8adf7"}')
-		},
 		"./src/redditGQL/operations/RedditorKarma.json": function(e) {
 			e.exports = JSON.parse('{"id":"db6eb1356b13"}')
 		},
 		"./src/redditGQL/operations/RedditorMultireddits.json": function(e) {
 			e.exports = JSON.parse('{"id":"3d04e2bb92b5"}')
-		},
-		"./src/redditGQL/operations/RedditorNameById.json": function(e) {
-			e.exports = JSON.parse('{"id":"7206aafc3965"}')
 		},
 		"./src/redditGQL/operations/RichTextPostContent.json": function(e) {
 			e.exports = JSON.parse('{"id":"fc24b7b690ad"}')
@@ -51031,4 +50988,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ca0358fd27c1b8889fb7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.735c2f984e7fa0b01e13.js.map

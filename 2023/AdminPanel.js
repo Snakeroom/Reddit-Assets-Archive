@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminPanel.2c58bd2502a420f9de80.js
-// Retrieved at 6/21/2023, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminPanel.0b5c9d81e9fa5be368d0.js
+// Retrieved at 6/22/2023, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminPanel"], {
 		"./src/devPlatform/components/AdminPanel/Utilities/DevPlatformConfig/DevPlatformConfigLoader.tsx": function(e, t, n) {
@@ -1438,7 +1438,7 @@
 				}), s.a.createElement("div", null, s.a.createElement(Ne.a, {
 					priority: Ne.c.Plain,
 					onClick: () => {
-						e(Object(Mn.d)({
+						e(Object(Mn.e)({
 							url: n
 						}))
 					}
@@ -1448,7 +1448,7 @@
 					priority: Ne.c.Plain,
 					onClick: () => {
 						const t = Bn.a.matrixChatUrl;
-						a(t), e(Object(Mn.d)({
+						a(t), e(Object(Mn.e)({
 							url: t
 						}))
 					}
@@ -2010,4 +2010,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.2c58bd2502a420f9de80.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.0b5c9d81e9fa5be368d0.js.map
