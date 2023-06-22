@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.ff4606eb14c05f77f5b0.js
-// Retrieved at 6/21/2023, 9:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.56f53e7a78d283857d3d.js
+// Retrieved at 6/22/2023, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, n) {
@@ -1836,7 +1836,7 @@
 				a = /^\/r\/popular\/?((new|top|hot|controversial|rising|best)\/?)?$/,
 				d = /^\/r\/[^/]+\/?((controversial|new|about|top)\/?)?$/,
 				l = /^\/r\/[^/]+\/w(iki)?\/?([^/]+\/?)?$/,
-				u = /^\/u(?:ser)?\/[^/]+(\/[^/]+)?$/,
+				u = /^\/u(?:ser)?\/[^/]+(\/[^/]+)?\/?$/,
 				m = e => !!e.match(i) || !!e.match(a),
 				b = e => !e.match(a) && (!e.match(c) && (!!e.match(d) || !!e.match(l))),
 				p = (e, t) => !!m(t) && [r.dg.Enabled, r.dg.HardReload].includes(Object(o.c)(e, {
@@ -1909,4 +1909,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.ff4606eb14c05f77f5b0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.56f53e7a78d283857d3d.js.map

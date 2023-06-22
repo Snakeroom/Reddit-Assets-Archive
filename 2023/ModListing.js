@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.532e36bdf1a60a9e18b3.js
-// Retrieved at 6/21/2023, 9:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.1741afecfc62b4483898.js
+// Retrieved at 6/22/2023, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, n) {
@@ -2566,7 +2566,7 @@
 				a = /^\/r\/popular\/?((new|top|hot|controversial|rising|best)\/?)?$/,
 				c = /^\/r\/[^/]+\/?((controversial|new|about|top)\/?)?$/,
 				l = /^\/r\/[^/]+\/w(iki)?\/?([^/]+\/?)?$/,
-				u = /^\/u(?:ser)?\/[^/]+(\/[^/]+)?$/,
+				u = /^\/u(?:ser)?\/[^/]+(\/[^/]+)?\/?$/,
 				m = e => !!e.match(o) || !!e.match(a),
 				p = e => !e.match(a) && (!e.match(d) && (!!e.match(c) || !!e.match(l))),
 				b = (e, t) => !!m(t) && [r.dg.Enabled, r.dg.HardReload].includes(Object(s.c)(e, {
@@ -2663,4 +2663,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.532e36bdf1a60a9e18b3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.1741afecfc62b4483898.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.28fd5eb191d56c26522c.js
-// Retrieved at 6/21/2023, 9:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.8221d49936bb3db804b9.js
+// Retrieved at 6/22/2023, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -26476,7 +26476,7 @@
 				c = /^\/r\/popular\/?((new|top|hot|controversial|rising|best)\/?)?$/,
 				d = /^\/r\/[^/]+\/?((controversial|new|about|top)\/?)?$/,
 				l = /^\/r\/[^/]+\/w(iki)?\/?([^/]+\/?)?$/,
-				u = /^\/u(?:ser)?\/[^/]+(\/[^/]+)?$/,
+				u = /^\/u(?:ser)?\/[^/]+(\/[^/]+)?\/?$/,
 				m = e => !!e.match(i) || !!e.match(c),
 				p = e => !e.match(c) && (!e.match(a) && (!!e.match(d) || !!e.match(l))),
 				b = (e, t) => !!m(t) && [r.dg.Enabled, r.dg.HardReload].includes(Object(s.c)(e, {
@@ -26937,4 +26937,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.28fd5eb191d56c26522c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.8221d49936bb3db804b9.js.map

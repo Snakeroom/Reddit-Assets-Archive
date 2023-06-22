@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.2ff406c6efd712ee15d1.js
-// Retrieved at 6/21/2023, 9:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.2390d56d9944c216f96d.js
+// Retrieved at 6/22/2023, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -9847,7 +9847,7 @@
 				d = /^\/r\/popular\/?((new|top|hot|controversial|rising|best)\/?)?$/,
 				c = /^\/r\/[^/]+\/?((controversial|new|about|top)\/?)?$/,
 				l = /^\/r\/[^/]+\/w(iki)?\/?([^/]+\/?)?$/,
-				m = /^\/u(?:ser)?\/[^/]+(\/[^/]+)?$/,
+				m = /^\/u(?:ser)?\/[^/]+(\/[^/]+)?\/?$/,
 				u = e => !!e.match(a) || !!e.match(d),
 				p = e => !e.match(d) && (!e.match(i) && (!!e.match(c) || !!e.match(l))),
 				b = (e, t) => !!u(t) && [n.dg.Enabled, n.dg.HardReload].includes(Object(o.c)(e, {
@@ -10035,4 +10035,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.2ff406c6efd712ee15d1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.2390d56d9944c216f96d.js.map
