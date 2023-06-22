@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.2a00598aeddd9222a0d2.js
-// Retrieved at 6/22/2023, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.c367c477b6f204f3db14.js
+// Retrieved at 6/22/2023, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "CollectionCommentsPage~SearchResults", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -37171,13 +37171,13 @@
 				return p
 			})), n.d(t, "g", (function() {
 				return b
-			})), n.d(t, "o", (function() {
+			})), n.d(t, "q", (function() {
 				return f
 			})), n.d(t, "l", (function() {
 				return h
 			})), n.d(t, "k", (function() {
 				return C
-			})), n.d(t, "p", (function() {
+			})), n.d(t, "r", (function() {
 				return g
 			})), n.d(t, "i", (function() {
 				return _
@@ -37185,6 +37185,10 @@
 				return v
 			})), n.d(t, "a", (function() {
 				return O
+			})), n.d(t, "o", (function() {
+				return x
+			})), n.d(t, "p", (function() {
+				return y
 			}));
 			var s = n("./src/reddit/constants/tracking.ts"),
 				r = n("./src/reddit/selectors/telemetry.ts");
@@ -37369,6 +37373,28 @@
 					modAction: {
 						targetUserId: t
 					}
+				}),
+				x = (e, t, n, s) => i => ({
+					source: "post_mod_action_menu",
+					action: "click",
+					post: Object(r.K)(i, t),
+					noun: e,
+					setting: {
+						value: n,
+						oldValue: s
+					},
+					...o(i)
+				}),
+				y = (e, t, n, s) => i => ({
+					source: "post_mod_action_menu",
+					action: "save",
+					post: Object(r.K)(i, t),
+					noun: e,
+					setting: {
+						value: n,
+						oldValue: s
+					},
+					...o(i)
 				})
 		},
 		"./src/reddit/helpers/trackers/navigation.ts": function(e, t, n) {
@@ -49937,4 +49963,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.2a00598aeddd9222a0d2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.c367c477b6f204f3db14.js.map

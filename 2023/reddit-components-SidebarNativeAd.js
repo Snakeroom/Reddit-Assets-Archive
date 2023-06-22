@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.dccdb4fe00e328bc001e.js
-// Retrieved at 6/22/2023, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.2882d420db59801676a5.js
+// Retrieved at 6/22/2023, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3993,13 +3993,13 @@
 				return p
 			})), n.d(t, "g", (function() {
 				return b
-			})), n.d(t, "o", (function() {
+			})), n.d(t, "q", (function() {
 				return f
 			})), n.d(t, "l", (function() {
 				return h
 			})), n.d(t, "k", (function() {
 				return v
-			})), n.d(t, "p", (function() {
+			})), n.d(t, "r", (function() {
 				return _
 			})), n.d(t, "i", (function() {
 				return g
@@ -4007,6 +4007,10 @@
 				return O
 			})), n.d(t, "a", (function() {
 				return y
+			})), n.d(t, "o", (function() {
+				return x
+			})), n.d(t, "p", (function() {
+				return j
 			}));
 			var r = n("./src/reddit/constants/tracking.ts"),
 				o = n("./src/reddit/selectors/telemetry.ts");
@@ -4191,6 +4195,28 @@
 					modAction: {
 						targetUserId: t
 					}
+				}),
+				x = (e, t, n, r) => i => ({
+					source: "post_mod_action_menu",
+					action: "click",
+					post: Object(o.K)(i, t),
+					noun: e,
+					setting: {
+						value: n,
+						oldValue: r
+					},
+					...s(i)
+				}),
+				j = (e, t, n, r) => i => ({
+					source: "post_mod_action_menu",
+					action: "save",
+					post: Object(o.K)(i, t),
+					noun: e,
+					setting: {
+						value: n,
+						oldValue: r
+					},
+					...s(i)
 				})
 		},
 		"./src/reddit/helpers/trackers/snoovatar.ts": function(e, t, n) {
@@ -5478,4 +5504,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.dccdb4fe00e328bc001e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.2882d420db59801676a5.js.map

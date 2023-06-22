@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.260f85a7b09f1d0cebec.js
-// Retrieved at 6/22/2023, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.bedb009930e5cec310cf.js
+// Retrieved at 6/22/2023, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -32996,7 +32996,7 @@
 					}, o.a.createElement(M.a, {
 						model: le,
 						onIgnoreReports: () => {
-							oe(), me(Object(W.o)(le.ignoreReports ? "restore_reports" : "ignore_reports", le.id))
+							oe(), me(Object(W.q)(le.ignoreReports ? "restore_reports" : "ignore_reports", le.id))
 						},
 						tooltipId: Je
 					}), o.a.createElement(z.a, {
@@ -49516,7 +49516,7 @@
 					super(...arguments), this.tooltipTarget = null, this.setTooltipTargetRef = e => this.tooltipTarget = e, this.onSnoozeButtonClick = () => {
 						const e = this.props.isSnoozed ? d.kc.None : d.kc.Snoozed;
 						this.props.toggleSnooze(e);
-						const t = Object(g.p)(Object(h.a)(this.props.reportedThingId), this.props.isSnoozed, this.props.reportedThingId, this.props.reason);
+						const t = Object(g.r)(Object(h.a)(this.props.reportedThingId), this.props.isSnoozed, this.props.reportedThingId, this.props.reason);
 						this.props.sendEvent(t)
 					}
 				}
@@ -66177,13 +66177,13 @@
 				return p
 			})), n.d(t, "g", (function() {
 				return b
-			})), n.d(t, "o", (function() {
+			})), n.d(t, "q", (function() {
 				return f
 			})), n.d(t, "l", (function() {
 				return h
 			})), n.d(t, "k", (function() {
 				return g
-			})), n.d(t, "p", (function() {
+			})), n.d(t, "r", (function() {
 				return v
 			})), n.d(t, "i", (function() {
 				return x
@@ -66191,6 +66191,10 @@
 				return E
 			})), n.d(t, "a", (function() {
 				return O
+			})), n.d(t, "o", (function() {
+				return C
+			})), n.d(t, "p", (function() {
+				return A
 			}));
 			var s = n("./src/reddit/constants/tracking.ts"),
 				r = n("./src/reddit/selectors/telemetry.ts");
@@ -66375,6 +66379,28 @@
 					modAction: {
 						targetUserId: t
 					}
+				}),
+				C = (e, t, n, s) => i => ({
+					source: "post_mod_action_menu",
+					action: "click",
+					post: Object(r.K)(i, t),
+					noun: e,
+					setting: {
+						value: n,
+						oldValue: s
+					},
+					...o(i)
+				}),
+				A = (e, t, n, s) => i => ({
+					source: "post_mod_action_menu",
+					action: "save",
+					post: Object(r.K)(i, t),
+					noun: e,
+					setting: {
+						value: n,
+						oldValue: s
+					},
+					...o(i)
 				})
 		},
 		"./src/reddit/helpers/trackers/moderationPages.ts": function(e, t, n) {
@@ -81500,4 +81526,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.260f85a7b09f1d0cebec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.bedb009930e5cec310cf.js.map
