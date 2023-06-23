@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.f229836b829f697ac0e2.js
-// Retrieved at 6/21/2023, 9:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.68b58156a4584e5305b7.js
+// Retrieved at 6/23/2023, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-ContentControls"], {
 		"./node_modules/lodash/negate.js": function(e, t) {
@@ -213,9 +213,9 @@
 				L = n("./src/reddit/selectors/contentControls.ts"),
 				N = n("./src/reddit/selectors/experiments/shredditModNav.ts"),
 				F = n("./src/reddit/selectors/platform.ts"),
-				M = n("./src/config.ts"),
-				O = n("./src/reddit/models/HatefulContentFilters/index.ts");
-			const P = `${M.a.redditModHelpUrl}/hc/en-us/articles/360010322091`,
+				O = n("./src/config.ts"),
+				M = n("./src/reddit/models/HatefulContentFilters/index.ts");
+			const P = `${O.a.redditModHelpUrl}/hc/en-us/articles/360010322091`,
 				D = 2,
 				j = 300,
 				I = 400,
@@ -285,8 +285,8 @@
 						enabled: !1
 					},
 					hatefulContentFilters: {
-						hatefulContentThresholdAbuse: O.a.Off,
-						hatefulContentThresholdIdentity: O.a.Off,
+						hatefulContentThresholdAbuse: M.a.Off,
+						hatefulContentThresholdIdentity: M.a.Off,
 						permittedTerms: []
 					}
 				};
@@ -544,9 +544,8 @@
 				}
 				render() {
 					const {
-						formState: e,
-						isPostGuidanceModEnabled: t
-					} = this.props, n = e.bodyRequirement.restrictionPolicy === v.a.NotAllowed;
+						formState: e
+					} = this.props, t = e.bodyRequirement.restrictionPolicy === v.a.NotAllowed;
 					return d.a.createElement("fieldset", null, d.a.createElement("legend", {
 						className: Ce.a.sectionLegend
 					}, s.fbt._("Advanced post requirements", null, {
@@ -612,7 +611,7 @@
 						minLimit: D,
 						maxLimit: j,
 						errors: e.titleLength.clientErrors
-					})), !t && d.a.createElement(d.a.Fragment, null, d.a.createElement(ye, {
+					})), d.a.createElement(d.a.Fragment, null, d.a.createElement(ye, {
 						on: e.titleRegexes.enabled,
 						onClick: this.onToggleTitleRegex,
 						label: s.fbt._("Use title text RegEx requirements", null, {
@@ -637,8 +636,8 @@
 						})
 					}), d.a.createElement(te.a, {
 						messages: ve(e.titleRegexes)
-					}))), !t && d.a.createElement(d.a.Fragment, null, d.a.createElement(ke, null, d.a.createElement(ye, {
-						disabled: n,
+					}))), d.a.createElement(d.a.Fragment, null, d.a.createElement(ke, null, d.a.createElement(ye, {
+						disabled: t,
 						on: e.bodyRegexes.enabled,
 						onClick: this.onToggleBodyRegex,
 						label: s.fbt._("Use body text RegEx requirements", null, {
@@ -647,7 +646,7 @@
 						subtext: s.fbt._("Use regular expressions for more advanced body text matching. These use the {linkToDocumentation}", [s.fbt._param("linkToDocumentation", d.a.createElement(Se, null))], {
 							hk: "3mk1ff"
 						})
-					}), !n && e.bodyRegexes.enabled && d.a.createElement(le, {
+					}), !t && e.bodyRegexes.enabled && d.a.createElement(le, {
 						label: s.fbt._("Body must match one of:", null, {
 							hk: "1pLBfl"
 						})
@@ -696,17 +695,17 @@
 				}).map(e => "1fr"), "0.5fr"].join(" ")
 			}
 			var Fe = n("./src/reddit/controls/DiscreteSlideSelector/Labels/index.m.less"),
-				Me = n.n(Fe);
+				Oe = n.n(Fe);
 
-			function Oe(e) {
+			function Me(e) {
 				return d.a.createElement("div", {
-					className: Object(u.a)(Me.a.container, e.className),
+					className: Object(u.a)(Oe.a.container, e.className),
 					style: {
 						gridTemplateColumns: Ne(e.options.length)
 					}
 				}, e.options.map(t => d.a.createElement("div", {
-					className: Object(u.a)(Me.a.label, {
-						[Me.a.labelSelected]: t.value === e.selected
+					className: Object(u.a)(Oe.a.label, {
+						[Oe.a.labelSelected]: t.value === e.selected
 					}),
 					key: t.label,
 					style: {
@@ -775,7 +774,7 @@
 					currentStop: t,
 					numStops: e.options.length,
 					onChange: t => e.onChange(e.options[t].value)
-				})), d.a.createElement(Oe, {
+				})), d.a.createElement(Me, {
 					options: e.options,
 					selected: e.value
 				}))
@@ -786,19 +785,19 @@
 
 			function ze(e) {
 				switch (e) {
-					case O.a.Off:
+					case M.a.Off:
 						return s.fbt._("Off", null, {
 							hk: "2qG3tm"
 						});
-					case O.a.Lenient:
+					case M.a.Lenient:
 						return s.fbt._("Lenient", null, {
 							hk: "25DBzd"
 						});
-					case O.a.Moderate:
+					case M.a.Moderate:
 						return s.fbt._("Moderate", null, {
 							hk: "3j1ycq"
 						});
-					case O.a.Strict:
+					case M.a.Strict:
 						return s.fbt._("Strict", null, {
 							hk: "4wBjgi"
 						})
@@ -807,13 +806,13 @@
 
 			function Je(e) {
 				switch (e) {
-					case O.a.Off:
+					case M.a.Off:
 						return "var(--newCommunityTheme-bodyText)";
-					case O.a.Lenient:
+					case M.a.Lenient:
 						return Ke.b.lenient;
-					case O.a.Moderate:
+					case M.a.Moderate:
 						return Ke.b.moderate;
-					case O.a.Strict:
+					case M.a.Strict:
 						return Ke.b.strict
 				}
 			}
@@ -846,8 +845,8 @@
 					className: $e.a.levelLabel,
 					level: e.currentLevel
 				}), e.descriptions[e.currentLevel]()), d.a.createElement(Ge, {
-					options: [O.a.Off, O.a.Lenient, O.a.Moderate, O.a.Strict].map(e => ({
-						color: e === O.a.Off ? "var(--newRedditTheme-metaText)" : Je(e),
+					options: [M.a.Off, M.a.Lenient, M.a.Moderate, M.a.Strict].map(e => ({
+						color: e === M.a.Off ? "var(--newRedditTheme-metaText)" : Je(e),
 						label: ze(e),
 						value: e
 					})),
@@ -861,16 +860,16 @@
 						hk: "2bl8VK"
 					}),
 					descriptions: {
-						[O.a.Off]: () => s.fbt._("No content that contains potentially abusive language will be automatically held for review.", null, {
+						[M.a.Off]: () => s.fbt._("No content that contains potentially abusive language will be automatically held for review.", null, {
 							hk: "4yF6zk"
 						}),
-						[O.a.Lenient]: () => s.fbt._("Some content that contains potentially abusive language will be automatically held for review.", null, {
+						[M.a.Lenient]: () => s.fbt._("Some content that contains potentially abusive language will be automatically held for review.", null, {
 							hk: "4t8Kdq"
 						}),
-						[O.a.Moderate]: () => s.fbt._("Most content that contains potentially abusive language will be automatically held for review.", null, {
+						[M.a.Moderate]: () => s.fbt._("Most content that contains potentially abusive language will be automatically held for review.", null, {
 							hk: "3c5GPy"
 						}),
-						[O.a.Strict]: () => s.fbt._("All content that contains potentially abusive language will be automatically held for review.", null, {
+						[M.a.Strict]: () => s.fbt._("All content that contains potentially abusive language will be automatically held for review.", null, {
 							hk: "4C6oi2"
 						})
 					}
@@ -969,7 +968,7 @@
 				const {
 					formState: t,
 					onChange: n
-				} = e, i = tt.some(e => t.hatefulContentFilters[e.name] !== O.a.Off);
+				} = e, i = tt.some(e => t.hatefulContentFilters[e.name] !== M.a.Off);
 				return d.a.createElement("fieldset", null, d.a.createElement("legend", {
 					className: ut.a.title
 				}, s.fbt._("Automated Filtering", null, {
@@ -1105,12 +1104,12 @@
 						return [...vt(t.requiredStrings, t.blacklistedStrings), ...Rt(t.requiredStrings, t.maxTitleLength)]
 					})(t), t
 				},
-				Mt = e => Object.keys(e).some(t => {
+				Ot = e => Object.keys(e).some(t => {
 					if ("hatefulContentFilters" === t) return !1;
 					const n = e[t];
 					return n.enabled && !(a()(n.clientErrors) && a()(n.serverErrors))
 				});
-			class Ot extends d.a.Component {
+			class Mt extends d.a.Component {
 				constructor() {
 					super(...arguments), this.onToggleGuidelines = () => {
 						const {
@@ -1473,7 +1472,7 @@
 				hatefulContentFiltersEnabled: Y.d.hatefulContentFiltersEnabled,
 				isPostGuidanceModEnabled: $.b
 			});
-			var jt = Object(c.b)(Dt)(e => d.a.createElement(d.a.Fragment, null, (e => [...e.hatefulContentFiltersEnabled ? [ht] : [], Ot, Re])(e).map((t, n) => d.a.createElement(t, Pt({
+			var jt = Object(c.b)(Dt)(e => d.a.createElement(d.a.Fragment, null, (e => [...e.hatefulContentFiltersEnabled ? [ht] : [], Mt, Re])(e).map((t, n) => d.a.createElement(t, Pt({
 					key: n
 				}, e))))),
 				It = e => {
@@ -1662,7 +1661,7 @@
 						} = this.state;
 						if (!e) return;
 						const s = Ft(this.state.formState);
-						if (Mt(s)) return void this.setState({
+						if (Ot(s)) return void this.setState({
 							formState: s
 						}, this.focusErrorField);
 						const {
@@ -1854,4 +1853,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.f229836b829f697ac0e2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.68b58156a4584e5305b7.js.map
