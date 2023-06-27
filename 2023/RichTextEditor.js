@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.f94a524f6153adaa7e33.js
-// Retrieved at 6/27/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.a1395f3de0aae9144fa5.js
+// Retrieved at 6/27/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -3817,7 +3817,15 @@
 							subreddit: s
 						} = this.props, r = (null == s ? void 0 : s.id) || "", i = n.title, a = o === T.i.RICH_TEXT ? v.a.getRawText(t, " ") : e;
 						this.props.onPostGuidanceValidation(r, i, a || "")
-					}, 150), this.onEditorResize = e => {
+					}, 150), this.isFormEmpty = () => {
+						const {
+							markdownBody: e,
+							rteState: t
+						} = this.state, {
+							editorMode: n
+						} = this.props;
+						return "" === (n === T.i.RICH_TEXT ? v.a.getRawText(t, " ") : e)
+					}, this.onEditorResize = e => {
 						this.setState({
 							editorHeight: e
 						})
@@ -3943,7 +3951,7 @@
 							[A.a.isPending]: !!i
 						}),
 						focusableContentRTEClassName: Object(u.a)(A.a.focusableContent, {
-							[A.a.mHasError]: !!n || c
+							[A.a.mHasError]: !!n || c && !this.isFormEmpty()
 						}),
 						destSubreddit: this.props.destSubreddit,
 						editorType: O.a.Post,
@@ -3974,7 +3982,8 @@
 						className: A.a.errorMessages,
 						messages: R
 					}), a.a.createElement(q.a, {
-						triggeredRules: this.props.postGuidanceBodyTriggeredRules
+						triggeredRules: this.props.postGuidanceBodyTriggeredRules,
+						emptyState: this.isFormEmpty()
 					}), a.a.createElement(G, null, a.a.createElement(M.r, {
 						disabled: !!i,
 						onClick: this.cancelEdit
@@ -4021,29 +4030,30 @@
 			const u = e => {
 				let {
 					triggeredRules: t = [],
-					trackPostGuidanceView: n
+					trackPostGuidanceView: n,
+					emptyState: c = !1
 				} = e;
-				const [c, u] = Object(s.useState)(!1), m = t.filter(e => e.actionType === i.N.Block), p = m.length > 0 ? m : t, h = c ? p : p.slice(0, 5), b = Object(a.a)(h);
+				const [u, m] = Object(s.useState)(!1), p = t.filter(e => e.actionType === i.N.Block), h = p.length > 0 ? p : t, b = u ? h : h.slice(0, 5), f = Object(a.a)(b);
 				return Object(s.useEffect)(() => {
-					const e = h.map(e => e.guidanceId),
-						t = (null == b ? void 0 : b.map(e => e.guidanceId)) || [],
+					const e = b.map(e => e.guidanceId),
+						t = (null == f ? void 0 : f.map(e => e.guidanceId)) || [],
 						o = e.filter(e => !(null == t ? void 0 : t.includes(e)));
 					n && o.length > 0 && n(o)
-				}, [t, h, b, n]), r.a.createElement("div", {
+				}, [t, b, f, n]), r.a.createElement("div", {
 					"data-testid": "post-guidance-validation"
-				}, r.a.createElement("ol", null, h.map((e, t) => r.a.createElement("li", {
-					className: `${e.actionType===i.N.Block?l.a.errorText:""} text-12 pt-2xs`,
+				}, r.a.createElement("ol", null, b.map((e, t) => r.a.createElement("li", {
+					className: `${c||e.actionType!==i.N.Block?"":l.a.errorText} text-12 pt-2xs`,
 					key: t
 				}, e.validationMessage.richtext ? r.a.createElement(d.b, {
-					className: `${e.actionType===i.N.Block?l.a.errorText:""} !text-12 !pt-2xs`,
+					className: `${c||e.actionType!==i.N.Block?"":l.a.errorText} !text-12 !pt-2xs`,
 					useExplicitTextColor: !0,
 					content: JSON.parse(e.validationMessage.richtext),
 					rtJsonElementProps: {}
-				}) : e.validationMessage.markdown))), p.length > 5 && r.a.createElement("button", {
+				}) : e.validationMessage.markdown))), h.length > 5 && r.a.createElement("button", {
 					"data-testid": "post-guidance-btn",
 					className: `text-12 pt-2xs ${l.a.showAllBtn}`,
-					onClick: () => u(e => !e)
-				}, c ? o.fbt._("View less", null, {
+					onClick: () => m(e => !e)
+				}, u ? o.fbt._("View less", null, {
 					hk: "4dXCrs"
 				}) : o.fbt._("View more", null, {
 					hk: "mvs5E"
@@ -4707,4 +4717,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.f94a524f6153adaa7e33.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.a1395f3de0aae9144fa5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.614d63e7709fcb782251.js
-// Retrieved at 6/27/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.fc058fb0f4b05df6df72.js
+// Retrieved at 6/27/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit~StandalonePostPage", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -12310,29 +12310,30 @@
 			const u = e => {
 				let {
 					triggeredRules: t = [],
-					trackPostGuidanceView: n
+					trackPostGuidanceView: n,
+					emptyState: d = !1
 				} = e;
-				const [d, u] = Object(r.useState)(!1), m = t.filter(e => e.actionType === i.N.Block), p = m.length > 0 ? m : t, h = d ? p : p.slice(0, 5), b = Object(a.a)(h);
+				const [u, m] = Object(r.useState)(!1), p = t.filter(e => e.actionType === i.N.Block), h = p.length > 0 ? p : t, b = u ? h : h.slice(0, 5), f = Object(a.a)(b);
 				return Object(r.useEffect)(() => {
-					const e = h.map(e => e.guidanceId),
-						t = (null == b ? void 0 : b.map(e => e.guidanceId)) || [],
+					const e = b.map(e => e.guidanceId),
+						t = (null == f ? void 0 : f.map(e => e.guidanceId)) || [],
 						o = e.filter(e => !(null == t ? void 0 : t.includes(e)));
 					n && o.length > 0 && n(o)
-				}, [t, h, b, n]), s.a.createElement("div", {
+				}, [t, b, f, n]), s.a.createElement("div", {
 					"data-testid": "post-guidance-validation"
-				}, s.a.createElement("ol", null, h.map((e, t) => s.a.createElement("li", {
-					className: `${e.actionType===i.N.Block?l.a.errorText:""} text-12 pt-2xs`,
+				}, s.a.createElement("ol", null, b.map((e, t) => s.a.createElement("li", {
+					className: `${d||e.actionType!==i.N.Block?"":l.a.errorText} text-12 pt-2xs`,
 					key: t
 				}, e.validationMessage.richtext ? s.a.createElement(c.b, {
-					className: `${e.actionType===i.N.Block?l.a.errorText:""} !text-12 !pt-2xs`,
+					className: `${d||e.actionType!==i.N.Block?"":l.a.errorText} !text-12 !pt-2xs`,
 					useExplicitTextColor: !0,
 					content: JSON.parse(e.validationMessage.richtext),
 					rtJsonElementProps: {}
-				}) : e.validationMessage.markdown))), p.length > 5 && s.a.createElement("button", {
+				}) : e.validationMessage.markdown))), h.length > 5 && s.a.createElement("button", {
 					"data-testid": "post-guidance-btn",
 					className: `text-12 pt-2xs ${l.a.showAllBtn}`,
-					onClick: () => u(e => !e)
-				}, d ? o.fbt._("View less", null, {
+					onClick: () => m(e => !e)
+				}, u ? o.fbt._("View less", null, {
 					hk: "4dXCrs"
 				}) : o.fbt._("View more", null, {
 					hk: "mvs5E"
@@ -35054,7 +35055,17 @@
 					shouldAllowBodyText: w.nb,
 					subreddit: R.s,
 					isImageCreationEnabled: w.O,
-					isVideoCreationEnabled: w.W
+					isVideoCreationEnabled: w.W,
+					isFormEmpty: e => {
+						var t;
+						const n = (null === (t = Object(w.q)(e, {
+								field: h.Cb.TITLE
+							})) || void 0 === t ? void 0 : t.title) || "",
+							o = Object(w.n)(e),
+							r = Object(w.lb)(e),
+							s = o === C.i.RICH_TEXT ? ve.a.getRawText(r, " ") : Object(w.Y)(e);
+						return "" === n && "" === s
+					}
 				}),
 				Sd = Object(s.b)(jd, (e, t) => {
 					let {
@@ -35101,9 +35112,9 @@
 					}, this.onToggleEditorMode = async (e, t) => {
 						await this.props.onToggleEditorMode(e, t), e === C.i.RICH_TEXT ? this.rteRef && this.rteRef.focus() : this.markdownEditorRef && this.markdownEditorRef.focus()
 					}, this.setRteRef = e => this.rteRef = e, this.setMarkdownEditorRef = e => this.markdownEditorRef = e, this.onBlur = () => {
-						this.setState({
+						setTimeout(() => this.setState({
 							hasFocus: !1
-						}), this.props.onBlur()
+						}), 150), this.props.onBlur()
 					}, this.onFocus = () => {
 						this.setState({
 							hasFocus: !0
@@ -35129,8 +35140,9 @@
 						postCreationFieldErrors: c,
 						postRequirements: l,
 						rteState: u,
-						submissionType: m
-					} = this.props, b = m === h.bc.POLL, f = c[h.Cb.BODY].length > 0 || this.hasPostGuidanceBlockingError(), g = kd(e, l) ? d.fbt._("Text (required)", null, {
+						submissionType: m,
+						isFormEmpty: b
+					} = this.props, f = m === h.bc.POLL, g = c[h.Cb.BODY].length > 0 || this.hasPostGuidanceBlockingError() && !b, v = kd(e, l) ? d.fbt._("Text (required)", null, {
 						hk: "E1dIP"
 					}) : d.fbt._("Text (optional)", null, {
 						hk: "4jfNex"
@@ -35139,8 +35151,8 @@
 						allowImageUploads: o,
 						allowVideoUploads: s,
 						focusableContentRTEClassName: Object(p.a)(xd.a.focusableContent, {
-							[xd.a.mHasError]: f,
-							[xd.a.mPollBorder]: !!b
+							[xd.a.mHasError]: g,
+							[xd.a.mPollBorder]: !!f
 						}),
 						destSubreddit: t,
 						editorType: Wc.a.Post,
@@ -35152,14 +35164,14 @@
 						onFocus: this.onFocus,
 						onSubmit: this.props.onSubmit,
 						onSwitchEditorMode: this.onToggleEditorMode,
-						placeholderText: g,
+						placeholderText: v,
 						readOnly: a,
 						rteRef: this.setRteRef,
 						trackToolbarClick: this.props.onTrackToolbarClick
 					}) : r.a.createElement(Bc.a, {
 						focusableContentMarkdownClassName: Object(p.a)(xd.a.focusableContent, {
-							[xd.a.mHasError]: f,
-							[xd.a.mPollBorder]: !!b
+							[xd.a.mHasError]: g,
+							[xd.a.mPollBorder]: !!f
 						}),
 						initialHeight: this.state.editorHeight,
 						instanceRef: this.setMarkdownEditorRef,
@@ -35170,7 +35182,7 @@
 						value: i,
 						onSubmit: this.props.onSubmit,
 						onSwitchEditorMode: this.onToggleEditorMode,
-						placeholderText: g
+						placeholderText: v
 					})
 				}
 				render() {
@@ -35180,7 +35192,8 @@
 						shouldAllowBodyText: n,
 						submissionType: o,
 						subreddit: s,
-						onTrackPostGuidanceView: i
+						onTrackPostGuidanceView: i,
+						isFormEmpty: a
 					} = this.props;
 					return r.a.createElement("div", null, n && this.renderEditor(), o === h.bc.POLL && r.a.createElement("div", {
 						className: xd.a.pollCreator
@@ -35191,7 +35204,8 @@
 						messages: e[h.Cb.BODY]
 					}), this.showPostGuidance() && r.a.createElement(Cd.a, {
 						triggeredRules: t,
-						trackPostGuidanceView: i
+						trackPostGuidanceView: i,
+						emptyState: a
 					}))
 				}
 				govType() {
@@ -35620,7 +35634,17 @@
 					shouldAllowBodyText: w.nb,
 					submissionType: w.a,
 					subreddit: R.s,
-					title: w.wb
+					title: w.wb,
+					isFormEmpty: e => {
+						var t;
+						const n = (null === (t = Object(w.q)(e, {
+								field: h.Cb.TITLE
+							})) || void 0 === t ? void 0 : t.title) || "",
+							o = Object(w.n)(e),
+							r = Object(w.lb)(e),
+							s = o === C.i.RICH_TEXT ? ve.a.getRawText(r, " ") : Object(w.Y)(e);
+						return "" === n && "" === s
+					}
 				}),
 				dl = Object(s.b)(cl, (e, t) => {
 					let {
@@ -35646,51 +35670,53 @@
 					const {
 						canPostAsModerator: t,
 						isApprovedUser: n,
-						onBlur: s,
-						onInputFocus: i,
-						onTrackPostGuidanceView: a,
-						postRequirements: c,
-						postGuidanceTitleTriggeredRules: l,
-						postCreationFieldErrors: u,
-						subreddit: m
-					} = e, b = e.submissionType === h.bc.POST && !e.shouldAllowBodyText, f = l.some(e => e.actionType === yd.N.Block), g = u[h.Cb.TITLE].length > 0 || f, v = t ? ft.f : c && c.titleTextMaxLength || ft.f, C = e.submissionType === h.bc.PREDICTION, y = C ? d.fbt._("e.g. Who will win best actress at the Oscars this year?", null, {
+						isFormEmpty: s,
+						onBlur: i,
+						onInputFocus: a,
+						onTrackPostGuidanceView: c,
+						postRequirements: l,
+						postGuidanceTitleTriggeredRules: u,
+						postCreationFieldErrors: m,
+						subreddit: b
+					} = e, f = e.submissionType === h.bc.POST && !e.shouldAllowBodyText, g = u.some(e => e.actionType === yd.N.Block), v = m[h.Cb.TITLE].length > 0 || g && !s, C = t ? ft.f : l && l.titleTextMaxLength || ft.f, y = e.submissionType === h.bc.PREDICTION, E = y ? d.fbt._("e.g. Who will win best actress at the Oscars this year?", null, {
 						hk: "YLQFW"
 					}) : d.fbt._("Title", null, {
 						hk: "j3s6r"
-					}), [E, x] = Object(o.useState)(!1), O = Object(o.useCallback)(() => {
-						x(!1), s()
-					}, [s]), _ = Object(o.useCallback)(() => {
-						x(!0), i()
-					}, [i]), k = f || E;
+					}), [x, O] = Object(o.useState)(!1), _ = Object(o.useCallback)(() => {
+						setTimeout(() => O(!1), 150), i()
+					}, [i]), k = Object(o.useCallback)(() => {
+						O(!0), a()
+					}, [a]), j = g || x;
 					return r.a.createElement("div", {
 						className: al.a.container
-					}, C && r.a.createElement(sl, {
+					}, y && r.a.createElement(sl, {
 						isApprovedUser: n,
-						subredditId: (null == m ? void 0 : m.id) || ""
+						subredditId: (null == b ? void 0 : b.id) || ""
 					}), r.a.createElement("div", {
 						className: al.a.inputWrapper
 					}, r.a.createElement(Hr, {
 						className: Object(p.a)(al.a.PostTitleInput, {
-							[al.a.mHasError]: g
+							[al.a.mHasError]: v
 						}),
 						disabled: e.disableTitleEdits,
-						maxLength: v,
-						minHeight: b ? 92 : void 0,
-						onBlur: O,
-						onFocus: _,
+						maxLength: C,
+						minHeight: f ? 92 : void 0,
+						onBlur: _,
+						onFocus: k,
 						onKeyDown: e.onKeyDown,
 						onValueChange: e.onChange,
-						placeholder: y,
+						placeholder: E,
 						readOnly: e.pending,
 						value: e.title
 					}), r.a.createElement("div", {
 						className: al.a.charsCounter
-					}, e.title.length, "/", v)), r.a.createElement(ye.a, {
-						errorModalTitle: m ? Object(co.d)(m.name) : void 0,
-						messages: u[h.Cb.TITLE]
-					}), k && r.a.createElement(Cd.a, {
-						triggeredRules: l,
-						trackPostGuidanceView: a
+					}, e.title.length, "/", C)), r.a.createElement(ye.a, {
+						errorModalTitle: b ? Object(co.d)(b.name) : void 0,
+						messages: m[h.Cb.TITLE]
+					}), j && r.a.createElement(Cd.a, {
+						triggeredRules: u,
+						trackPostGuidanceView: c,
+						emptyState: s
 					}))
 				})),
 				ul = n("./src/reddit/components/PostCreationForm/Prompt/index.tsx");
@@ -40167,4 +40193,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.614d63e7709fcb782251.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.fc058fb0f4b05df6df72.js.map
