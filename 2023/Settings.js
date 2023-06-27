@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.8d9e4b94e09cf130a37d.js
-// Retrieved at 6/27/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.7f8beefbdc32550749a0.js
+// Retrieved at 6/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -7684,14 +7684,14 @@
 			}));
 			var s = n("./src/reddit/selectors/telemetry.ts");
 			const o = e => t => ({
-					...Object(s.o)(t),
+					...Object(s.p)(t),
 					source: "meta",
 					action: "click",
 					noun: "cancel_membership_with_points",
-					subreddit: Object(s.mb)(t, e)
+					subreddit: Object(s.nb)(t, e)
 				}),
 				r = e => t => ({
-					...Object(s.o)(t),
+					...Object(s.p)(t),
 					source: "meta",
 					action: "generate",
 					noun: "broken_wallet",
@@ -7700,7 +7700,7 @@
 					}
 				}),
 				a = e => t => ({
-					...Object(s.o)(t),
+					...Object(s.p)(t),
 					source: "meta",
 					action: "generate",
 					noun: "unexpected_wallet",
@@ -7719,13 +7719,13 @@
 			var s = n("./src/reddit/constants/tracking.ts"),
 				o = n("./src/reddit/selectors/telemetry.ts");
 			const r = e => t => ({
-					...Object(o.o)(t),
+					...Object(o.p)(t),
 					action: s.c.CLICK,
 					noun: `follower_list_page_${e?"follow":"unfollow"}`,
 					source: "profile"
 				}),
 				a = () => e => ({
-					...Object(o.o)(e),
+					...Object(o.p)(e),
 					action: s.c.CLICK,
 					noun: "follower_list_cta",
 					source: "profile"
@@ -7772,7 +7772,7 @@
 				e.FREQUENT = "frequent", e.LOW = "low", e.OFF = "off"
 			}(a || (a = {}));
 			const i = e => ({
-					...s.o(e),
+					...s.p(e),
 					noun: "desktop_notification_permissions"
 				}),
 				l = e => e ? "enable" : "disable",
@@ -7805,7 +7805,7 @@
 					})
 				},
 				p = (e, t, n) => ({
-					...s.o(e),
+					...s.p(e),
 					actionInfo: s.d(e, {
 						success: t,
 						reason: n
@@ -7834,18 +7834,18 @@
 					})
 				},
 				g = e => ({
-					...s.o(e),
+					...s.p(e),
 					noun: "push_notification"
 				}),
 				v = e => ({
 					...g(e),
-					notification: s.F(e, void 0, void 0),
+					notification: s.G(e, void 0, void 0),
 					action: void 0,
 					source: "notification",
 					correlationId: void 0
 				}),
 				_ = (e, t) => n => ({
-					...s.o(n),
+					...s.p(n),
 					action: l(e),
 					email: {
 						type: t
@@ -7854,7 +7854,7 @@
 					source: "email_app_settings"
 				}),
 				y = (e, t) => n => ({
-					...s.o(n),
+					...s.p(n),
 					action: l(e),
 					notification: {
 						type: t
@@ -7863,7 +7863,7 @@
 					source: "notification_app_settings"
 				}),
 				k = e => t => ({
-					...s.o(t),
+					...s.p(t),
 					source: "email_app_settings",
 					action: l(e),
 					noun: "email",
@@ -7872,7 +7872,7 @@
 					}
 				}),
 				j = (e, t, n) => o => ({
-					...s.o(o),
+					...s.p(o),
 					action: "set_frequency",
 					noun: n,
 					source: "community_notifications",
@@ -7882,7 +7882,7 @@
 					}
 				}),
 				C = () => e => ({
-					...s.o(e),
+					...s.p(e),
 					action: r.c.View,
 					noun: "screen",
 					source: "global",
@@ -7891,13 +7891,13 @@
 					}
 				}),
 				x = () => e => ({
-					...s.o(e),
+					...s.p(e),
 					action: "click",
 					noun: "desktop_notification_permissions",
 					source: "overlay"
 				}),
 				E = () => e => ({
-					...s.o(e),
+					...s.p(e),
 					action: "auto_dismiss",
 					noun: "desktop_notification_permissions",
 					source: "overlay"
@@ -7938,7 +7938,7 @@
 					action: "click",
 					noun: "price",
 					correlationId: Object(s.c)(s.a.GoldPayment),
-					...r.o(t),
+					...r.p(t),
 					...a(t, e)
 				}),
 				c = () => e => ({
@@ -7946,13 +7946,13 @@
 					action: "click",
 					noun: "manage",
 					correlationId: Object(s.c)(s.a.GoldPayment),
-					...r.o(e)
+					...r.p(e)
 				}),
 				d = e => t => ({
 					source: "premium_marketing",
 					action: "click",
 					noun: "premium_benefit",
-					...r.o(t),
+					...r.p(t),
 					goldPurchase: {
 						premiumMarketingBenefit: e
 					}
@@ -7994,9 +7994,9 @@
 				r = n("./src/telemetry/models/GoldPurchase.ts"),
 				a = n("./src/reddit/helpers/correlationIdTracker.ts");
 			const i = e => ({
-					...s.o(e),
+					...s.p(e),
 					correlationId: Object(a.c)(a.a.PremiumSettings),
-					screen: s.cb(e)
+					screen: s.db(e)
 				}),
 				l = () => e => ({
 					...i(e),
@@ -9972,7 +9972,7 @@
 						source: "dsp_settings",
 						action: "view",
 						noun: "page",
-						actionInfo: zn.o(e).actionInfo
+						actionInfo: zn.p(e).actionInfo
 					}
 				},
 				Qn = () => e => {
@@ -9980,7 +9980,7 @@
 						source: "dsp_settings",
 						action: "submit",
 						noun: "page",
-						actionInfo: zn.o(e).actionInfo
+						actionInfo: zn.p(e).actionInfo
 					}
 				},
 				Vn = () => e => {
@@ -9988,7 +9988,7 @@
 						source: "dsp_settings",
 						action: "submit",
 						noun: "error",
-						actionInfo: zn.o(e).actionInfo
+						actionInfo: zn.p(e).actionInfo
 					}
 				};
 			var Yn = n("./src/reddit/components/Settings/DspForm.m.less"),
@@ -10856,7 +10856,7 @@
 							targetUser: {
 								id: e
 							},
-							...zn.o(t)
+							...zn.p(t)
 						}))(a[a.length - 1].id))
 					}, [a, M, T]), r.a.createElement(fe.a, null, r.a.createElement(he.b, {
 						isResponsiveSettingsEnabled: k
@@ -10895,7 +10895,7 @@
 								targetUser: {
 									id: e
 								},
-								...zn.o(t)
+								...zn.p(t)
 							}))(n))
 						},
 						list: a,
@@ -12806,4 +12806,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.8d9e4b94e09cf130a37d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.7f8beefbdc32550749a0.js.map

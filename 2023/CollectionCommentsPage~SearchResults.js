@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.846193122124fee18d3b.js
-// Retrieved at 6/27/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.4581d050a18cae07f7fe.js
+// Retrieved at 6/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -3420,7 +3420,7 @@
 				}, [R]);
 				const L = e => {
 						d("skip" === e ? (e => t => ({
-							...Object(h.o)(t),
+							...Object(h.p)(t),
 							source: O,
 							action: b.c.CLICK,
 							noun: g.SKIP,
@@ -3429,7 +3429,7 @@
 								type: e
 							}
 						}))(u) : (e => t => ({
-							...Object(h.o)(t),
+							...Object(h.p)(t),
 							source: O,
 							action: b.c.CLICK,
 							noun: g.LATER,
@@ -3445,7 +3445,7 @@
 					F = () => {
 						const e = Object.keys(k).join();
 						d(((e, t) => s => ({
-							...Object(h.o)(s),
+							...Object(h.p)(s),
 							source: O,
 							action: b.c.CLICK,
 							noun: g.ADD,
@@ -3476,7 +3476,7 @@
 						}))
 					};
 				return T = T.filter(e => !P.includes(e)), C && 0 !== T.length ? (d((e => t => ({
-					...Object(h.o)(t),
+					...Object(h.p)(t),
 					source: O,
 					action: b.c.VIEW,
 					noun: b.b.SCREEN,
@@ -4753,16 +4753,16 @@
 							},
 							subscribeEventFactory: e => {
 								return ((e, t, s) => n => {
-									const r = kt.H(n, void 0);
+									const r = kt.I(n, void 0);
 									return {
 										source: ge.c.SEARCH,
 										action: Et.c.CLICK,
 										noun: `${s}_${ge.d[e.type]}`,
 										actionInfo: Object(ge.k)(n, void 0, r, void 0),
 										correlationId: Object(St.c)(St.a.SearchResults),
-										profile: "profile" === e.type ? kt.X(n, e.id) : void 0,
-										search: kt.db(n, t, mt.a.SERP),
-										subreddit: "subreddit" === e.type ? kt.pb(n, e.id) : void 0
+										profile: "profile" === e.type ? kt.Y(n, e.id) : void 0,
+										search: kt.eb(n, t, mt.a.SERP),
+										subreddit: "subreddit" === e.type ? kt.qb(n, e.id) : void 0
 									}
 								})(n, c, e ? "unsubscribe" : "subscribe")
 							},
@@ -5364,11 +5364,11 @@
 				if (c.c.has(p)) {
 					const d = c.c.end(p);
 					!u && d > n.a.telemetry.postConsumedThreshold && e(e => {
-						const n = Object(i.x)(e, t, s),
+						const n = Object(i.y)(e, t, s),
 							c = Object(o.g)(t, d, !1, null != n ? n : void 0)(e);
-						return c.actionInfo = Object(a.k)(e, m, Object(i.H)(e, m), {
+						return c.actionInfo = Object(a.k)(e, m, Object(i.I)(e, m), {
 							position: n
-						}), c.search = Object(i.db)(e, l, r.a.SERP, null != m ? m : void 0), c
+						}), c.search = Object(i.eb)(e, l, r.a.SERP, null != m ? m : void 0), c
 					})
 				}
 			}
@@ -6704,7 +6704,7 @@
 						subreddit: {
 							id: t
 						},
-						...n.o(e),
+						...n.p(e),
 						...s && {
 							post: {
 								id: s
@@ -6724,7 +6724,7 @@
 						subreddit: {
 							id: t
 						},
-						...n.o(e),
+						...n.p(e),
 						...s && {
 							post: {
 								id: s
@@ -6756,37 +6756,37 @@
 					source: r.COMMUNITY_WIDGETS,
 					action: o.c.CLICK,
 					noun: n.SEE_MORE,
-					widget: Object(a.yb)(s, {
+					widget: Object(a.zb)(s, {
 						subredditId: e,
 						widgetKind: t
 					}),
-					...a.o
+					...a.p
 				}),
 				c = (e, t) => s => ({
 					source: r.POST,
 					action: o.c.CLICK,
 					noun: n.REREDDIT_PROMO,
-					post: a.K(s, e),
-					subreddit: a.lb(s),
+					post: a.L(s, e),
+					subreddit: a.mb(s),
 					...t && {
 						banner: {
 							buttonText: t,
 							id: n.REREDDIT_PROMO
 						}
 					},
-					...a.o(s)
+					...a.p(s)
 				}),
 				d = () => e => ({
 					source: r.SIDEBAR,
 					action: o.c.VIEW,
 					noun: n.TOPICS_WIDGET,
-					...a.o(e)
+					...a.p(e)
 				}),
 				l = e => t => ({
 					source: r.TOPICS_WIDGET,
 					action: o.c.CLICK,
 					noun: n.TOPIC,
-					...a.o(t),
+					...a.p(t),
 					topicMetadata: {
 						displayName: e
 					}
@@ -7852,7 +7852,7 @@
 					return Object(c.zc)(s.sort) && (t.sort = s.sort), Object(c.Ac)(s.t) && (t.t = s.t), t
 				},
 				ss = (e, t, s, n) => () => e(e => {
-					const r = es.H(e, null);
+					const r = es.I(e, null);
 					return {
 						...Object(re.f)(e),
 						source: "search",
@@ -7860,7 +7860,7 @@
 						noun: t,
 						correlationId: Object(Zt.c)(Zt.a.SearchResults),
 						actionInfo: Object(re.k)(e, null, r),
-						search: es.db(e, ts(s, n), $t.a.SERP)
+						search: es.eb(e, ts(s, n), $t.a.SERP)
 					}
 				}),
 				ns = e => {
@@ -8684,4 +8684,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.846193122124fee18d3b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.4581d050a18cae07f7fe.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.b3337a93576ae2896ac3.js
-// Retrieved at 6/27/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.c02e2cc58dca82fd71e7.js
+// Retrieved at 6/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1326,7 +1326,7 @@
 						subreddit: {
 							id: t
 						},
-						...i.o(e),
+						...i.p(e),
 						...n && {
 							post: {
 								id: n
@@ -1346,7 +1346,7 @@
 						subreddit: {
 							id: t
 						},
-						...i.o(e),
+						...i.p(e),
 						...n && {
 							post: {
 								id: n
@@ -1458,4 +1458,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.b3337a93576ae2896ac3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.c02e2cc58dca82fd71e7.js.map

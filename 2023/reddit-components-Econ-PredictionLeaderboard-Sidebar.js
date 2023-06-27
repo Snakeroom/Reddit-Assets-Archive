@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.e8a263e420c272d1198a.js
-// Retrieved at 6/21/2023, 9:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.57396494a3a1a702c47d.js
+// Retrieved at 6/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/reddit/components/Econ/Prediction/TournamentTokenIcon/index.tsx": function(e, t, a) {
@@ -379,7 +379,7 @@
 		"./src/reddit/components/Econ/PredictionLeaderboard/Modal/index.tsx": function(e, t, a) {
 			"use strict";
 			a.d(t, "a", (function() {
-				return k
+				return v
 			}));
 			var c = a("./node_modules/react/index.js"),
 				n = a.n(c),
@@ -393,9 +393,9 @@
 				f = a("./src/reddit/hooks/useTracking.ts"),
 				u = a("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
 				p = a("./src/reddit/components/Econ/PredictionLeaderboard/List/index.tsx"),
-				E = a("./src/reddit/components/Econ/PredictionLeaderboard/Predictor/index.tsx"),
-				b = a("./src/reddit/components/Econ/PredictionLeaderboard/Modal/index.m.less"),
-				h = a.n(b);
+				b = a("./src/reddit/components/Econ/PredictionLeaderboard/Predictor/index.tsx"),
+				E = a("./src/reddit/components/Econ/PredictionLeaderboard/Modal/index.m.less"),
+				h = a.n(E);
 
 			function x() {
 				return (x = Object.assign || function(e) {
@@ -413,24 +413,24 @@
 					onClose: t,
 					leaderboard: a,
 					tournamentId: d,
-					tokenIcon: b,
+					tokenIcon: E,
 					isPreviousEvent: x = !1,
 					isQueried: A = !1
 				} = e;
-				const k = Object(f.a)(),
-					v = Object(m.a)(),
+				const v = Object(f.a)(),
+					j = Object(m.a)(),
 					{
-						currentRank: L,
-						topPredictorsRank: P
+						currentRank: k,
+						topPredictorsRank: L
 					} = a,
-					j = Object(r.e)(e => d ? Object(u.a)(e, d) : null),
-					g = Object(r.e)(e => Object(l.s)(e, {
-						pageLayer: v
+					P = Object(r.e)(e => d ? Object(u.a)(e, d) : null),
+					O = Object(r.e)(e => Object(l.s)(e, {
+						pageLayer: j
 					}));
 				Object(c.useEffect)(() => {
-					k(d ? Object(i.g)(d, x, A) : Object(i.e)())
+					v(d ? Object(i.g)(d, x, A) : Object(i.e)())
 				}, []);
-				const M = L && L.rank > 0;
+				const g = k && k.rank > 0;
 				return n.a.createElement("div", {
 					className: h.a.container
 				}, n.a.createElement("div", {
@@ -446,24 +446,24 @@
 					hk: "2OsQLm"
 				})), n.a.createElement("h2", {
 					className: h.a.subHeader
-				}, j ? j.name : null == g ? void 0 : g.displayText)), n.a.createElement("div", {
+				}, P ? P.name : null == O ? void 0 : O.displayText)), n.a.createElement("div", {
 					className: h.a.listContainer
 				}, n.a.createElement(p.a, {
-					currentRank: L,
-					topPredictorsRank: P,
-					tokenIcon: b
-				}), M && n.a.createElement("div", {
+					currentRank: k,
+					topPredictorsRank: L,
+					tokenIcon: E
+				}), g && n.a.createElement("div", {
 					className: h.a.spacer
-				}, " ")), L && L.redditorInfo && M && n.a.createElement(E.a, {
+				}, " ")), k && k.redditorInfo && g && n.a.createElement(b.a, {
 					className: h.a.currentRank,
 					isCurrentUser: !0,
-					rank: L.rank,
-					redditor: L.redditor,
-					redditorInfo: L.redditorInfo,
-					score: L.score,
-					tokenIcon: b
+					rank: k.rank,
+					redditor: k.redditor,
+					redditorInfo: k.redditorInfo,
+					score: k.score,
+					tokenIcon: E
 				}))
-			}), k = e => n.a.createElement(A, x({
+			}), v = e => n.a.createElement(A, x({
 				withOverlay: !0,
 				onOverlayClick: e.onClose
 			}, e))
@@ -487,7 +487,7 @@
 		"./src/reddit/components/Econ/PredictionLeaderboard/Predictor/index.tsx": function(e, t, a) {
 			"use strict";
 			a.d(t, "a", (function() {
-				return E
+				return b
 			}));
 			var c = a("./node_modules/react/index.js"),
 				n = a.n(c),
@@ -502,23 +502,23 @@
 				u = a.n(f);
 			const {
 				fbt: p
-			} = a("./node_modules/fbt/lib/FbtPublic.js"), E = e => {
+			} = a("./node_modules/fbt/lib/FbtPublic.js"), b = e => {
 				let {
 					className: t,
 					isCurrentUser: a,
 					rank: c,
 					redditor: f,
-					redditorInfo: E,
-					score: b,
+					redditorInfo: b,
+					score: E,
 					tokenIcon: h
 				} = e;
 				const x = Object(m.a)(),
 					{
 						icon: _,
 						name: A,
-						profile: k
+						profile: v
 					} = f || {},
-					v = null != A ? A : E.displayName;
+					j = null != A ? A : b.displayName;
 				return n.a.createElement("div", {
 					className: Object(r.a)(u.a.predictor, t)
 				}, n.a.createElement("div", {
@@ -526,17 +526,17 @@
 				}, c), n.a.createElement(o.default, {
 					className: u.a.userLink,
 					onClick: () => x(Object(i.f)({
-						targetUserId: E.id
+						targetUserId: b.id
 					})),
-					to: `/user/${v}`,
-					disabled: E.displayName === d.H || E.displayName === d.Rb
+					to: `/user/${j}`,
+					disabled: b.displayName === d.H || b.displayName === d.Rb
 				}, n.a.createElement("div", {
 					className: u.a.leaderboardIcon
 				}, n.a.createElement(s.a, {
 					className: Object(r.a)(u.a.userIcon, u.a.avatar),
 					iconUrl: null == _ ? void 0 : _.url,
-					isNSFW: !!(null == k ? void 0 : k.isNsfw),
-					userName: null != v ? v : ""
+					isNSFW: !!(null == v ? void 0 : v.isNsfw),
+					userName: null != j ? j : ""
 				}), n.a.createElement(l.a, {
 					className: u.a.rankBadge,
 					rank: c
@@ -544,7 +544,7 @@
 					className: u.a.name
 				}, n.a.createElement("div", {
 					className: u.a.userName
-				}, v), a && n.a.createElement("div", {
+				}, j), a && n.a.createElement("div", {
 					className: u.a.yourProfile
 				}, p._("Yep, thats you.", null, {
 					hk: "3DqdE1"
@@ -552,7 +552,7 @@
 					className: u.a.score
 				}, n.a.cloneElement(h, {
 					className: u.a.icon
-				}), b))
+				}), E))
 			}
 		},
 		"./src/reddit/components/Econ/PredictionLeaderboard/RankBadge/index.m.less": function(e, t, a) {
@@ -563,7 +563,7 @@
 		"./src/reddit/components/Econ/PredictionLeaderboard/RankBadge/index.tsx": function(e, t, a) {
 			"use strict";
 			a.d(t, "a", (function() {
-				return E
+				return b
 			}));
 			var c = a("./node_modules/fbt/lib/FbtPublic.js"),
 				n = a("./src/lib/classNames/index.ts"),
@@ -599,7 +599,7 @@
 						srcSet: `\n  ${i}/third.png,\n  ${u} 2x,\n  ${i}/third@3x.png 3x,\n`
 					}
 				},
-				E = e => {
+				b = e => {
 					let {
 						rank: t,
 						className: a
@@ -640,8 +640,8 @@
 				f = a("./src/reddit/helpers/trackers/predictionsLeaderboard.ts"),
 				u = a("./src/reddit/hooks/useModalState.ts"),
 				p = a("./src/reddit/hooks/useTracking.ts"),
-				E = a("./src/reddit/icons/fonts/Coin/index.tsx"),
-				b = a("./src/reddit/components/Econ/PredictionLeaderboard/List/index.tsx"),
+				b = a("./src/reddit/icons/fonts/Coin/index.tsx"),
+				E = a("./src/reddit/components/Econ/PredictionLeaderboard/List/index.tsx"),
 				h = a("./src/reddit/components/Econ/PredictionLeaderboard/Modal/index.tsx"),
 				x = a("./src/reddit/components/Econ/PredictionLeaderboard/Sidebar/index.m.less"),
 				_ = a.n(x);
@@ -653,23 +653,23 @@
 				} = e;
 				var x;
 				const A = Object(p.a)(),
-					k = Object(i.ib)(),
-					v = "true" === (null == k ? void 0 : k.queryParams["top-predictors"]),
-					[L, P, j] = Object(u.a)(v),
+					v = Object(i.ib)(),
+					j = "true" === (null == v ? void 0 : v.queryParams["top-predictors"]),
+					[k, L, P] = Object(u.a)(j),
 					{
-						leaderboard: g,
-						error: M
+						leaderboard: O,
+						error: g
 					} = Object(s.a)(a, n),
-					N = n ? r.a.createElement(l.a, {
+					M = n ? r.a.createElement(l.a, {
 						tournamentId: n
-					}) : r.a.createElement(E.a, null);
+					}) : r.a.createElement(b.a, null);
 				if (r.a.useEffect(() => {
-						g && A(n ? Object(f.h)(n) : Object(f.f)())
-					}, [g, n]), !(null === (x = null == g ? void 0 : g.topPredictorsRank) || void 0 === x ? void 0 : x.length) || M) return null;
+						O && A(n ? Object(f.h)(n) : Object(f.f)())
+					}, [O, n]), !(null === (x = null == O ? void 0 : O.topPredictorsRank) || void 0 === x ? void 0 : x.length) || g) return null;
 				const {
-					currentRank: O,
+					currentRank: N,
 					topPredictorsRank: I
-				} = g, z = Boolean(n) ? c.fbt._("Tournament leaderboard", null, {
+				} = O, z = Boolean(n) ? c.fbt._("Tournament leaderboard", null, {
 					hk: "1WFLrI"
 				}) : c.fbt._("Top Predictors", null, {
 					hk: "3HCYxQ"
@@ -679,11 +679,11 @@
 					contentOnly: !0
 				}, r.a.createElement("h2", {
 					className: _.a.header
-				}, z), r.a.createElement(b.a, {
+				}, z), r.a.createElement(E.a, {
 					className: _.a.list,
-					currentRank: O,
+					currentRank: N,
 					topPredictorsRank: I.slice(0, 4),
-					tokenIcon: N
+					tokenIcon: M
 				}), r.a.createElement("div", {
 					className: _.a.openModalButtonContainer
 				}, r.a.createElement(m.a, {
@@ -691,16 +691,16 @@
 					isFullWidth: !0,
 					priority: m.c.Primary,
 					onClick: () => {
-						n && A(Object(f.c)()), P()
+						n && A(Object(f.c)()), L()
 					}
 				}, c.fbt._("See All", null, {
 					hk: "1Ozf02"
-				}))), L && r.a.createElement(h.a, {
+				}))), k && r.a.createElement(h.a, {
 					className: _.a.modal,
-					leaderboard: g,
+					leaderboard: O,
 					tournamentId: n,
-					tokenIcon: N,
-					onClose: j
+					tokenIcon: M,
+					onClose: P
 				}))
 			};
 			t.default = A
@@ -760,8 +760,8 @@
 			}));
 			var c = a("./src/reddit/selectors/telemetry.ts");
 			const n = e => ({
-					...Object(c.o)(e),
-					subreddit: Object(c.lb)(e)
+					...Object(c.p)(e),
+					subreddit: Object(c.mb)(e)
 				}),
 				r = {
 					source: "global",
@@ -797,14 +797,20 @@
 					}
 				}),
 				o = () => e => ({
-					...n(e),
+					...Object(c.p)(e, {
+						isGVSEvent: !0
+					}),
+					subreddit: Object(c.mb)(e),
 					...r,
 					actionInfo: {
 						pageType: "all_time_community_predictors_preview"
 					}
 				}),
 				i = e => t => ({
-					...n(t),
+					...Object(c.p)(t, {
+						isGVSEvent: !0
+					}),
+					subreddit: Object(c.mb)(t),
 					...r,
 					actionInfo: {
 						pageType: "tournament_leaderboard_preview",
@@ -815,14 +821,20 @@
 					}
 				}),
 				m = () => e => ({
-					...n(e),
+					...Object(c.p)(e, {
+						isGVSEvent: !0
+					}),
+					subreddit: Object(c.mb)(e),
 					...r,
 					actionInfo: {
 						pageType: "previous_tournaments"
 					}
 				}),
 				f = () => e => ({
-					...n(e),
+					...Object(c.p)(e, {
+						isGVSEvent: !0
+					}),
+					subreddit: Object(c.mb)(e),
 					...r,
 					actionInfo: {
 						pageType: "all_time_community_predictors"
@@ -837,8 +849,11 @@
 						reason: t ? "previous_tournament" : "predictions_tab"
 					}
 				},
-				p = (e, t, a) => c => ({
-					...n(c),
+				p = (e, t, a) => n => ({
+					...Object(c.p)(n, {
+						isGVSEvent: !0
+					}),
+					subreddit: Object(c.mb)(n),
 					...r,
 					actionInfo: {
 						pageType: "tournament_leaderboard",
@@ -868,4 +883,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.e8a263e420c272d1198a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.57396494a3a1a702c47d.js.map

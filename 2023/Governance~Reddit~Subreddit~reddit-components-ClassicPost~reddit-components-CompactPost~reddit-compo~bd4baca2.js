@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.8059886190f66ce440e0.js
-// Retrieved at 6/27/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.e10e5973e2c4e3dec2e6.js
+// Retrieved at 6/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, s) {
@@ -3533,37 +3533,37 @@
 						source: "post",
 						action: "click",
 						noun: "post_flair",
-						...o.o(s),
+						...o.p(s),
 						actionInfo: o.d(s),
 						correlationId: Object(r.c)(r.a.SearchResults),
-						post: o.K(s, e),
+						post: o.L(s, e),
 						search: {
-							...o.O(s, t),
+							...o.P(s, t),
 							query: n,
-							queryId: o.fb(s, i.a.SERP),
+							queryId: o.gb(s, i.a.SERP),
 							impressionId: a.a.get(i.a.SERP)
 						},
-						subreddit: o.lb(s)
+						subreddit: o.mb(s)
 					}
 				},
 				c = e => t => ({
 					source: "post_flair_widget",
 					action: "click",
 					noun: "post_flair_search",
-					...o.o(t),
+					...o.p(t),
 					actionInfo: o.d(t),
 					correlationId: Object(r.c)(r.a.SearchResults),
-					search: o.O(t, e),
-					subreddit: o.lb(t)
+					search: o.P(t, e),
+					subreddit: o.mb(t)
 				}),
 				l = e => t => {
 					const s = Object(n.g)(e);
 					return {
-						...o.o(t),
+						...o.p(t),
 						action: "click",
 						noun: "post_flair",
 						source: "post_flair_widget",
-						subreddit: o.lb(t),
+						subreddit: o.mb(t),
 						postFlair: {
 							id: e.templateId,
 							title: s
@@ -3571,20 +3571,20 @@
 					}
 				},
 				u = () => e => ({
-					...o.o(e),
+					...o.p(e),
 					action: "click",
 					noun: "overflow",
 					source: "post_flair_widget",
-					subreddit: o.lb(e)
+					subreddit: o.mb(e)
 				}),
 				m = e => t => {
 					const s = Object(n.g)(e);
 					return {
-						...o.o(t),
+						...o.p(t),
 						action: "click",
 						noun: "clear",
 						source: "post_flair_widget",
-						subreddit: o.lb(t),
+						subreddit: o.mb(t),
 						postFlair: {
 							id: e.templateId,
 							title: s
@@ -3593,14 +3593,14 @@
 				},
 				p = (e, t) => s => {
 					const r = Object(n.g)(e),
-						d = o.K(s, t),
+						d = o.L(s, t),
 						c = `flair_name:'${r}'`;
 					return {
-						...o.o(s),
+						...o.p(s),
 						action: "click",
 						noun: "post_flair",
 						source: "post",
-						subreddit: o.lb(s),
+						subreddit: o.mb(s),
 						postFlair: {
 							id: e.templateId,
 							title: r
@@ -3612,11 +3612,11 @@
 							subredditName: d ? d.subredditName : void 0,
 							postFlairName: r,
 							originElement: "post_flair",
-							queryId: o.fb(s, i.a.SERP),
+							queryId: o.gb(s, i.a.SERP),
 							impressionId: a.a.get(i.a.SERP),
-							originPageType: s.platform.currentPage ? o.v(s.platform.currentPage) : void 0
+							originPageType: s.platform.currentPage ? o.w(s.platform.currentPage) : void 0
 						},
-						feed: o.r(s)
+						feed: o.s(s)
 					}
 				}
 		},
@@ -4148,4 +4148,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.8059886190f66ce440e0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.e10e5973e2c4e3dec2e6.js.map

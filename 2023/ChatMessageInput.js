@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.9d271e47a9977a3b5434.js
-// Retrieved at 6/21/2023, 9:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.4942cf34e1f90420e613.js
+// Retrieved at 6/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, s) {},
@@ -354,21 +354,21 @@
 				v = s("./src/reddit/selectors/telemetry.ts"),
 				j = s("./src/telemetry/index.ts");
 			const x = e => ({
-				...v.o(e),
-				screen: v.cb(e),
-				profile: v.T(e),
-				subreddit: v.lb(e)
+				...v.p(e),
+				screen: v.db(e),
+				profile: v.U(e),
+				subreddit: v.mb(e)
 			});
 			var E = s("./src/reddit/helpers/trackers/postComposer.ts"),
 				O = s("./src/reddit/models/PostCreationForm/index.ts"),
 				y = s("./src/reddit/models/Toast/index.ts"),
 				I = s("./src/reddit/selectors/postCreations.ts"),
-				T = s("./src/reddit/helpers/graphql/normalizeUploadLeaseFromGql/index.ts"),
-				S = s("./src/reddit/actions/postCreation/constants.ts"),
+				S = s("./src/reddit/helpers/graphql/normalizeUploadLeaseFromGql/index.ts"),
+				T = s("./src/reddit/actions/postCreation/constants.ts"),
 				L = s("./src/reddit/actions/postCreation/general.ts");
-			const w = Object(i.a)(S.u),
-				D = Object(i.a)(S.v),
-				A = Object(i.a)(S.t),
+			const w = Object(i.a)(T.u),
+				D = Object(i.a)(T.v),
+				A = Object(i.a)(T.t),
 				N = e => async (t, s) => {
 					t(w());
 					const n = e.map(e => {
@@ -401,7 +401,7 @@
 				});
 			const P = "RTE",
 				U = "GALLERY",
-				R = (e, t, s, o, r, i, l, O) => async (S, L, w) => {
+				R = (e, t, s, o, r, i, l, O) => async (T, L, w) => {
 					let {
 						apiContext: D,
 						gqlContext: A
@@ -486,7 +486,7 @@
 							}) : E.E(s, t)
 						}
 					};
-					return await S(Object(c.l)(e, t, async f => {
+					return await T(Object(c.l)(e, t, async f => {
 						var g, v, j, x;
 						R = !0, Object(c.k)(f.id, () => {
 							H(!0)
@@ -593,7 +593,7 @@
 						if (E || !I) return {
 							error: E
 						};
-						if (S(Object(c.m)({
+						if (T(Object(c.m)({
 								key: t,
 								metadata: {
 									fileSource: r,
@@ -616,7 +616,7 @@
 								if (e.ok) {
 									const t = e.body,
 										s = (null === (g = t.data.createMediaUploadLease) || void 0 === g ? void 0 : g.uploadLease.uploadLeaseUrl) || "",
-										n = Object(T.a)({
+										n = Object(S.a)({
 											uploadLeaseUrl: s,
 											uploadLeaseHeaders: null === (v = t.data.createMediaUploadLease) || void 0 === v ? void 0 : v.uploadLease.uploadLeaseHeaders
 										});
@@ -637,7 +637,7 @@
 									}
 								}
 							}
-							return S(Object(d.f)({
+							return T(Object(d.f)({
 								kind: y.b.Error,
 								text: n.fbt._("Only .jpeg and .png image types are are allowed", null, {
 									hk: "30Ms4V"
@@ -783,7 +783,7 @@
 			})), s.d(t, "k", (function() {
 				return I
 			})), s.d(t, "l", (function() {
-				return S
+				return T
 			})), s.d(t, "i", (function() {
 				return L
 			})), s.d(t, "j", (function() {
@@ -817,11 +817,11 @@
 					const s = y.get(e) || [];
 					s.push(t), y.set(e, s)
 				},
-				T = (e, t) => {
+				S = (e, t) => {
 					const s = y.get(e);
 					s && s.forEach(s => s(e, t)), y.delete(e)
 				},
-				S = function(e, t, s) {
+				T = function(e, t, s) {
 					let n = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
 					return async (r, c) => {
 						const l = t;
@@ -893,7 +893,7 @@
 					let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
 					return (s, n) => {
 						const o = n().uploads[e];
-						o && (T(o.id, t), s(t ? O({
+						o && (S(o.id, t), s(t ? O({
 							key: e
 						}) : E({
 							key: e
@@ -1082,7 +1082,7 @@
 		"./src/reddit/components/CommentsChat/Comment/Reply/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return T
+				return S
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				o = s("./node_modules/react/index.js"),
@@ -1166,7 +1166,7 @@
 				O = s("./src/reddit/selectors/commentSelector.ts"),
 				y = s("./src/reddit/components/CommentsChat/Comment/Reply/index.m.less"),
 				I = s.n(y);
-			const T = e => {
+			const S = e => {
 				let {
 					commentId: t,
 					className: s,
@@ -1282,8 +1282,8 @@
 				O = s("./src/reddit/helpers/richTextEditor/index.ts"),
 				y = s("./src/reddit/icons/fonts/Clock/index.tsx"),
 				I = s("./src/reddit/icons/svgs/Close/index.tsx"),
-				T = s("./src/reddit/icons/svgs/Send/index.tsx"),
-				S = s("./src/reddit/icons/svgs/Send2/index.tsx"),
+				S = s("./src/reddit/icons/svgs/Send/index.tsx"),
+				T = s("./src/reddit/icons/svgs/Send2/index.tsx"),
 				L = s("./src/reddit/models/Post/index.ts"),
 				w = s("./src/reddit/models/PostCreationForm/index.ts"),
 				D = s("./src/reddit/selectors/chatPost.ts"),
@@ -1555,7 +1555,7 @@
 						"aria-label": n.fbt._("send a message", null, {
 							hk: "4bL65Y"
 						})
-					}, t ? i.a.createElement(S.a, null) : i.a.createElement(T.a, null)))))
+					}, t ? i.a.createElement(T.a, null) : i.a.createElement(S.a, null)))))
 				}
 			}
 			const Q = e => {
@@ -1898,4 +1898,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.9d271e47a9977a3b5434.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.4942cf34e1f90420e613.js.map

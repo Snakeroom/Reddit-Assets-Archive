@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.1e9d33bc7a9452d84c4f.js
-// Retrieved at 6/27/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.4cfe2a75cfe3ede7b235.js
+// Retrieved at 6/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -301,7 +301,7 @@
 			})), n.d(t, "c", (function() {
 				return q
 			})), n.d(t, "h", (function() {
-				return Y
+				return K
 			})), n.d(t, "f", (function() {
 				return Q
 			})), n.d(t, "d", (function() {
@@ -548,14 +548,14 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, K = Object(i.a)(c.r), U = Object(i.a)(c.n), X = Object(i.a)(c.s), Y = (e, t) => async (n, s, r) => {
+				}, U = Object(i.a)(c.r), X = Object(i.a)(c.n), Y = Object(i.a)(c.s), K = (e, t) => async (n, s, r) => {
 					let {
 						apiContext: i
 					} = r;
-					n(K());
+					n(U());
 					const a = await v(i(), e, t);
 					let c = !1;
-					if (a.ok) n(X({
+					if (a.ok) n(Y({
 						collectionId: e,
 						newTitle: t
 					})), n(Object(d.f)({
@@ -566,7 +566,7 @@
 					})), c = !0;
 					else {
 						const e = a.error;
-						n(U(e)), n(Object(d.f)({
+						n(X(e)), n(Object(d.f)({
 							kind: w.b.Error,
 							text: o.fbt._("Something went wrong. Just don't panic.", null, {
 								hk: "4Ck6Cm"
@@ -611,7 +611,7 @@
 								hk: "4Ck6Cm"
 							})
 						}))), c
-					})(s, a))), c && n.push(t(Y(s, c))), void 0 !== r && n.push(t(((e, t) => async (n, s, r) => {
+					})(s, a))), c && n.push(t(K(s, c))), void 0 !== r && n.push(t(((e, t) => async (n, s, r) => {
 						let {
 							apiContext: i
 						} = r;
@@ -784,7 +784,7 @@
 				}, [T]);
 				const R = e => {
 						d("skip" === e ? (e => t => ({
-							...Object(f.o)(t),
+							...Object(f.p)(t),
 							source: h,
 							action: b.c.CLICK,
 							noun: g.SKIP,
@@ -793,7 +793,7 @@
 								type: e
 							}
 						}))(m) : (e => t => ({
-							...Object(f.o)(t),
+							...Object(f.p)(t),
 							source: h,
 							action: b.c.CLICK,
 							noun: g.LATER,
@@ -809,7 +809,7 @@
 					D = () => {
 						const e = Object.keys(O).join();
 						d(((e, t) => n => ({
-							...Object(f.o)(n),
+							...Object(f.p)(n),
 							source: h,
 							action: b.c.CLICK,
 							noun: g.ADD,
@@ -840,7 +840,7 @@
 						}))
 					};
 				return N = N.filter(e => !L.includes(e)), v && 0 !== N.length ? (d((e => t => ({
-					...Object(f.o)(t),
+					...Object(f.p)(t),
 					source: h,
 					action: b.c.VIEW,
 					noun: b.b.SCREEN,
@@ -2461,17 +2461,17 @@
 				},
 				m = (e, t) => {
 					const n = {
-						...c.o(e),
+						...c.p(e),
 						action: r.c.CLICK,
-						subreddit: c.lb(e)
+						subreddit: c.mb(e)
 					};
 					return void 0 === t ? n : {
 						...n,
-						post: c.K(e, t),
-						postCollection: c.M(e, {
+						post: c.L(e, t),
+						postCollection: c.N(e, {
 							postId: t
 						}),
-						postEvent: c.N(e, {
+						postEvent: c.O(e, {
 							postId: t
 						})
 					}
@@ -2497,8 +2497,8 @@
 					noun: s.eventEducationGotIt
 				}),
 				g = e => ({
-					...c.o(e),
-					subreddit: c.lb(e),
+					...c.p(e),
+					subreddit: c.mb(e),
 					source: o.postComposer
 				}),
 				x = (e, t) => n => ({
@@ -2530,12 +2530,12 @@
 					noun: s.collectionSelect
 				}),
 				E = e => t => ({
-					...c.o(t),
-					subreddit: c.lb(t),
+					...c.p(t),
+					subreddit: c.mb(t),
 					source: o.collectionComposer,
 					action: r.c.CLICK,
 					noun: s.collectionDelete,
-					postCollection: c.L(t, {
+					postCollection: c.M(t, {
 						collectionId: e
 					})
 				}),
@@ -2543,7 +2543,7 @@
 					...m(t),
 					source: o.collectionComposer,
 					noun: s.collectionEdit,
-					postCollection: c.L(t, {
+					postCollection: c.M(t, {
 						collectionId: e
 					})
 				}),
@@ -2596,20 +2596,20 @@
 				}),
 				b = e => {
 					Object(m.a)({
-						...u.o(e),
+						...u.p(e),
 						source: o.postComposer,
 						action: a.c.CLICK,
 						noun: "event_create",
-						subreddit: u.lb(e)
+						subreddit: u.mb(e)
 					})
 				},
 				f = e => {
 					Object(m.a)({
-						...u.o(e),
+						...u.p(e),
 						source: o.postComposer,
 						action: a.c.CLICK,
 						noun: "event_edit",
-						subreddit: u.lb(e),
+						subreddit: u.mb(e),
 						postEvent: C(e),
 						postComposer: v(e)
 					})
@@ -2663,15 +2663,15 @@
 					const n = {
 						source: o.eventComposer,
 						action: a.c.CLICK,
-						subreddit: u.lb(e)
+						subreddit: u.mb(e)
 					};
 					return t ? {
 						...n,
-						post: u.K(e, t),
-						postEvent: u.N(e, {
+						post: u.L(e, t),
+						postEvent: u.O(e, {
 							postId: t
 						}),
-						postCollection: u.M(e, {
+						postCollection: u.N(e, {
 							postId: t
 						})
 					} : n
@@ -2700,37 +2700,37 @@
 					source: s.COMMUNITY_WIDGETS,
 					action: r.c.CLICK,
 					noun: o.SEE_MORE,
-					widget: Object(i.yb)(n, {
+					widget: Object(i.zb)(n, {
 						subredditId: e,
 						widgetKind: t
 					}),
-					...i.o
+					...i.p
 				}),
 				c = (e, t) => n => ({
 					source: s.POST,
 					action: r.c.CLICK,
 					noun: o.REREDDIT_PROMO,
-					post: i.K(n, e),
-					subreddit: i.lb(n),
+					post: i.L(n, e),
+					subreddit: i.mb(n),
 					...t && {
 						banner: {
 							buttonText: t,
 							id: o.REREDDIT_PROMO
 						}
 					},
-					...i.o(n)
+					...i.p(n)
 				}),
 				d = () => e => ({
 					source: s.SIDEBAR,
 					action: r.c.VIEW,
 					noun: o.TOPICS_WIDGET,
-					...i.o(e)
+					...i.p(e)
 				}),
 				l = e => t => ({
 					source: s.TOPICS_WIDGET,
 					action: r.c.CLICK,
 					noun: o.TOPIC,
-					...i.o(t),
+					...i.p(t),
 					topicMetadata: {
 						displayName: e
 					}
@@ -3126,8 +3126,8 @@
 						})
 					}
 				}),
-				K = Object(r.b)(q);
-			class U extends o.Component {
+				U = Object(r.b)(q);
+			class X extends o.Component {
 				render() {
 					const {
 						draft: e,
@@ -3148,7 +3148,7 @@
 					})
 				}
 			}
-			t.default = G(K(U))
+			t.default = G(U(X))
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, n) {
 			"use strict";
@@ -3182,4 +3182,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.1e9d33bc7a9452d84c4f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.4cfe2a75cfe3ede7b235.js.map

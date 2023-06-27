@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ActiveCommunities.6b3c8582c439e71f36d2.js
-// Retrieved at 6/21/2023, 9:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ActiveCommunities.78c0790e51b76c69df43.js
+// Retrieved at 6/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ActiveCommunities"], {
 		"./src/reddit/components/ActiveCommunities/index.tsx": function(e, t, n) {
@@ -173,7 +173,7 @@
 						seenItems: r = []
 					} = e;
 					return {
-						...M.o(t),
+						...M.p(t),
 						source: "cdd_discovery_unit",
 						actionInfo: {
 							pageType: "profile",
@@ -189,7 +189,7 @@
 				},
 				F = (e, t, n) => r => ({
 					...P(e, r),
-					subreddit: M.mb(r, t),
+					subreddit: M.nb(r, t),
 					action: q.c.VIEW,
 					noun: k.ITEM_SUBREDDIT,
 					actionInfo: {
@@ -266,7 +266,7 @@
 					const f = (e, r) => () => {
 							n(((e, t, n) => r => ({
 								...P(e, r),
-								subreddit: M.mb(r, t),
+								subreddit: M.nb(r, t),
 								action: q.c.CLICK,
 								noun: k.TITLE_SUBREDDIT,
 								actionInfo: {
@@ -285,7 +285,7 @@
 							};
 							return r ? ((e, t, n) => r => ({
 								...P(e, r),
-								subreddit: M.mb(r, t),
+								subreddit: M.nb(r, t),
 								action: q.c.CLICK,
 								noun: k.SUBREDDIT_UNSUBSCRIBE,
 								actionInfo: {
@@ -294,7 +294,7 @@
 								}
 							}))(o, e, n) : ((e, t, n) => r => ({
 								...P(e, r),
-								subreddit: M.mb(r, t),
+								subreddit: M.nb(r, t),
 								action: q.c.CLICK,
 								noun: k.SUBREDDIT_SUBSCRIBE,
 								actionInfo: {
@@ -473,4 +473,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ActiveCommunities.6b3c8582c439e71f36d2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ActiveCommunities.78c0790e51b76c69df43.js.map

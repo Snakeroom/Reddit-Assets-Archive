@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.10b2d34047deed60db2b.js
-// Retrieved at 6/21/2023, 9:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.4e2efa55a1e26b01e03a.js
+// Retrieved at 6/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-PredictionsContent"], {
 		"./src/reddit/components/Econ/Prediction/hooks/useTournamentsQuery.ts": function(e, t, n) {
@@ -7,8 +7,8 @@
 			n.d(t, "a", (function() {
 				return d
 			}));
-			var o = n("./node_modules/react/index.js"),
-				r = n.n(o),
+			var r = n("./node_modules/react/index.js"),
+				o = n.n(r),
 				c = n("./node_modules/react-redux/es/index.js"),
 				s = n("./src/reddit/actions/economics/predictions/index.ts"),
 				a = n("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
@@ -19,20 +19,20 @@
 					n = Object(c.e)(t => Object(i.X)(t, {
 						subredditId: e
 					})),
-					o = Object(c.e)(t => Object(a.i)(t, {
+					r = Object(c.e)(t => Object(a.i)(t, {
 						subredditId: e
 					})),
 					d = Object(c.e)(t => Object(a.k)(t, {
 						subredditId: e
 					})),
-					l = r.a.useCallback(() => {
+					l = o.a.useCallback(() => {
 						n.name && t(Object(s.l)(n.name))
 					}, [n.name, t]);
-				return r.a.useEffect(() => {
-					d || o || l()
-				}, [d, o, l]), {
+				return o.a.useEffect(() => {
+					d || r || l()
+				}, [d, r, l]), {
 					isFetching: d,
-					isFetched: o,
+					isFetched: r,
 					fetch: l
 				}
 			}
@@ -47,8 +47,8 @@
 		},
 		"./src/reddit/components/PostCreationForm/Prompt/PromptModal.tsx": function(e, t, n) {
 			"use strict";
-			var o = n("./node_modules/react/index.js"),
-				r = n.n(o),
+			var r = n("./node_modules/react/index.js"),
+				o = n.n(r),
 				c = n("./src/higherOrderComponents/asModal/index.tsx"),
 				s = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				a = n("./src/reddit/constants/keycodes.ts"),
@@ -57,11 +57,11 @@
 				l = n("./src/reddit/controls/TextButton/index.tsx"),
 				u = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				m = n("./src/reddit/components/PostCreationForm/Prompt/PromptModal.m.less"),
-				b = n.n(m),
-				p = n("./src/lib/lessComponent.tsx");
-			const h = p.a.wrapped(i.l, "PrimaryButton", b.a),
-				f = p.a.wrapped(s.p, "ModalText", b.a);
-			class _ extends r.a.PureComponent {
+				p = n.n(m),
+				b = n("./src/lib/lessComponent.tsx");
+			const h = b.a.wrapped(i.l, "PrimaryButton", p.a),
+				f = b.a.wrapped(s.p, "ModalText", p.a);
+			class _ extends o.a.PureComponent {
 				constructor() {
 					super(...arguments), this.handleEscapeKey = e => {
 						e.keyCode === a.a.Escape && this.props.onClose()
@@ -78,15 +78,15 @@
 						primaryButtonLoading: e,
 						secondaryButtonLoading: t
 					} = this.props;
-					return r.a.createElement(s.e, null, r.a.createElement(s.i, null, r.a.createElement(u.a, null, r.a.createElement(s.q, null, this.props.titleText), r.a.createElement(l.a, {
+					return o.a.createElement(s.e, null, o.a.createElement(s.i, null, o.a.createElement(u.a, null, o.a.createElement(s.q, null, this.props.titleText), o.a.createElement(l.a, {
 						onClick: this.props.onClose
-					}, r.a.createElement(s.b, null)))), r.a.createElement(s.l, null, r.a.createElement(f, null, this.props.bodyText)), r.a.createElement(s.g, null, r.a.createElement(s.a, {
+					}, o.a.createElement(s.b, null)))), o.a.createElement(s.l, null, o.a.createElement(f, null, this.props.bodyText)), o.a.createElement(s.g, null, o.a.createElement(s.a, {
 						onClick: this.props.onSecondaryAction
-					}, t ? r.a.createElement(d.a, {
+					}, t ? o.a.createElement(d.a, {
 						sizePx: 16
-					}) : this.props.secondaryButtonText), r.a.createElement(h, {
+					}) : this.props.secondaryButtonText), o.a.createElement(h, {
 						onClick: this.props.onPrimaryAction
-					}, e ? r.a.createElement(d.a, {
+					}, e ? o.a.createElement(d.a, {
 						sizePx: 16
 					}) : this.props.primaryButtonText)))
 				}
@@ -117,9 +117,9 @@
 			n.r(t), n.d(t, "default", (function() {
 				return T
 			}));
-			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
-				r = n("./node_modules/react/index.js"),
-				c = n.n(r),
+			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
+				o = n("./node_modules/react/index.js"),
+				c = n.n(o),
 				s = n("./node_modules/react-redux/es/index.js"),
 				a = n("./src/lib/classNames/index.ts"),
 				i = n("./src/reddit/actions/economics/predictions/index.ts"),
@@ -128,21 +128,21 @@
 				u = n("./src/reddit/components/Settings/shared/Card/index.m.less"),
 				m = n.n(u);
 
-			function b() {
-				return (b = Object.assign || function(e) {
+			function p() {
+				return (p = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
-						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
+						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
 					}
 					return e
 				}).apply(this, arguments)
 			}
-			const p = e => {
+			const b = e => {
 					let {
 						className: t,
 						...n
 					} = e;
-					return c.a.createElement("div", b({
+					return c.a.createElement("div", p({
 						className: Object(a.a)(m.a.card, t)
 					}, n))
 				},
@@ -151,7 +151,7 @@
 						className: t,
 						...n
 					} = e;
-					return c.a.createElement("h3", b({
+					return c.a.createElement("h3", p({
 						className: Object(a.a)(m.a.title, t)
 					}, n))
 				};
@@ -167,23 +167,23 @@
 				let {
 					isEnding: t,
 					onClose: n,
-					onConfirm: r
+					onConfirm: o
 				} = e;
 				return c.a.createElement(E.a, {
-					titleText: o.fbt._("End Tournament?", null, {
+					titleText: r.fbt._("End Tournament?", null, {
 						hk: "3tTAeq"
 					}),
-					bodyText: o.fbt._("Are you sure you want to end this Tournament? Once it's ended, you can't start it back up again.", null, {
+					bodyText: r.fbt._("Are you sure you want to end this Tournament? Once it's ended, you can't start it back up again.", null, {
 						hk: "3DLUvL"
 					}),
 					onClose: n,
 					primaryButtonLoading: t,
-					primaryButtonText: o.fbt._("End", null, {
+					primaryButtonText: r.fbt._("End", null, {
 						hk: "15D68l"
 					}),
-					onPrimaryAction: r,
+					onPrimaryAction: o,
 					onSecondaryAction: n,
-					secondaryButtonText: o.fbt._("Cancel", null, {
+					secondaryButtonText: r.fbt._("Cancel", null, {
 						hk: "2TSLl5"
 					}),
 					withOverlay: !0,
@@ -198,29 +198,29 @@
 					subredditId: t
 				} = e;
 				const n = Object(j.a)(),
-					[r, a] = function(e, t) {
+					[o, a] = function(e, t) {
 						const n = Object(s.d)(),
-							o = Object(s.e)(t => Object(v.Z)(t, e)),
-							r = o ? Boolean(o[t]) : void 0;
-						return [r, function() {
-							let o = !(arguments.length > 0 && void 0 !== arguments[0]) || arguments[0];
+							r = Object(s.e)(t => Object(v.Z)(t, e)),
+							o = r ? Boolean(r[t]) : void 0;
+						return [o, function() {
+							let r = !(arguments.length > 0 && void 0 !== arguments[0]) || arguments[0];
 							const c = {
-								[t]: !r
+								[t]: !o
 							};
-							n(Object(C.j)(e, c, void 0, o))
+							n(Object(C.j)(e, c, void 0, r))
 						}]
 					}(t, "allowPredictionContributors");
-				return void 0 === r ? null : c.a.createElement(p, null, c.a.createElement(h, null, o.fbt._("Predictions Submission Permissions", null, {
+				return void 0 === o ? null : c.a.createElement(b, null, c.a.createElement(h, null, r.fbt._("Predictions Submission Permissions", null, {
 					hk: "3rjmMV"
 				})), c.a.createElement(y.q, {
-					on: r,
+					on: o,
 					onClick: () => {
-						n(Object(x.d)(!r)), a()
+						n(Object(x.d)(!o)), a()
 					},
-					label: o.fbt._("Allow Approved Users to Post / Resolve Predictions", null, {
+					label: r.fbt._("Allow Approved Users to Post / Resolve Predictions", null, {
 						hk: "49inYc"
 					}),
-					subtext: o.fbt._('You can allow users who are not mods to post and resolve predictions. By selecting this option, you allow "Approved Users" to also post and resolve predictions.', null, {
+					subtext: r.fbt._('You can allow users who are not mods to post and resolve predictions. By selecting this option, you allow "Approved Users" to also post and resolve predictions.', null, {
 						hk: "4CYzaA"
 					})
 				}))
@@ -235,11 +235,11 @@
 				} = e;
 				const n = Object(s.d)(),
 					u = Object(j.a)(),
-					[m, b] = Object(r.useState)(""),
-					[h, E] = Object(r.useState)(!1),
-					[y, C] = Object(r.useState)(!1),
-					[v, S] = Object(r.useState)(!1),
-					[T, w] = Object(r.useState)(null),
+					[m, p] = Object(o.useState)(""),
+					[h, E] = Object(o.useState)(!1),
+					[y, C] = Object(o.useState)(!1),
+					[v, S] = Object(o.useState)(!1),
+					[T, w] = Object(o.useState)(null),
 					{
 						isFetching: I
 					} = Object(l.a)(t.name),
@@ -249,12 +249,12 @@
 					L = Object(s.e)(e => Object(k.h)(e, {
 						subredditId: t.id
 					}));
-				Object(r.useEffect)(() => {
+				Object(o.useEffect)(() => {
 					u(Object(x.q)())
-				}, [u]), Object(r.useEffect)(() => {
-					B && (b(B.name), w(N - B.name.length))
+				}, [u]), Object(o.useEffect)(() => {
+					B && (p(B.name), w(N - B.name.length))
 				}, [B]);
-				const F = Object(r.useCallback)(() => {
+				const F = Object(o.useCallback)(() => {
 						u(Object(x.e)()), S(!0)
 					}, [u]),
 					M = !!m && ((null == B ? void 0 : B.name) !== m && m.length > 3);
@@ -262,14 +262,14 @@
 					className: A.a.predictionsContent
 				}, c.a.createElement("h1", {
 					className: A.a.heading
-				}, o.fbt._("Predictions", null, {
+				}, r.fbt._("Predictions", null, {
 					hk: "1SloUh"
-				})), c.a.createElement(p, null, c.a.createElement("div", {
+				})), c.a.createElement(b, null, c.a.createElement("div", {
 					className: A.a.section
 				}, c.a.createElement("label", {
 					className: A.a.label,
 					htmlFor: "tournament-name"
-				}, o.fbt._("Tournament name", null, {
+				}, r.fbt._("Tournament name", null, {
 					hk: "1ZAVPf"
 				})), c.a.createElement("input", {
 					name: "tournament-name",
@@ -281,19 +281,19 @@
 						const {
 							value: t
 						} = e.target;
-						t.length <= N && (b(t), w(N - t.length))
+						t.length <= N && (p(t), w(N - t.length))
 					},
-					placeholder: o.fbt._("/r/{subredditName} tournament", [o.fbt._param("subredditName", t.name)], {
+					placeholder: r.fbt._("/r/{subredditName} tournament", [r.fbt._param("subredditName", t.name)], {
 						hk: "bN9XA"
 					})
 				}), c.a.createElement("div", {
 					className: Object(a.a)(A.a.remainingCharacters, {
 						[A.a.maxCharacters]: (null == m ? void 0 : m.length) === N
 					})
-				}, B && B.name !== m && null !== T ? o.fbt._({
+				}, B && B.name !== m && null !== T ? r.fbt._({
 					"*": "{remaining characters} characters remaining",
 					_1: "1 character remaining"
-				}, [o.fbt._plural(T, "remaining characters")], {
+				}, [r.fbt._plural(T, "remaining characters")], {
 					hk: "1dBRgv"
 				}) : c.a.createElement(c.a.Fragment, null, " ")), c.a.createElement(f.l, {
 					className: A.a.button,
@@ -306,7 +306,7 @@
 						} catch (e) {
 							n(Object(d.f)({
 								kind: O.b.Error,
-								text: o.fbt._("Failed to update tournament name, please try again later", null, {
+								text: r.fbt._("Failed to update tournament name, please try again later", null, {
 									hk: "3bx78u"
 								})
 							}))
@@ -315,21 +315,21 @@
 					}
 				}, h ? c.a.createElement(_.a, {
 					sizePx: 16
-				}) : o.fbt._("Rename", null, {
+				}) : r.fbt._("Rename", null, {
 					hk: "4z2EPS"
 				}))), c.a.createElement("div", null, c.a.createElement("label", {
 					className: A.a.label
-				}, o.fbt._("End tournament", null, {
+				}, r.fbt._("End tournament", null, {
 					hk: "ZWlOH"
 				})), c.a.createElement("p", {
 					className: A.a.endConditions
-				}, o.fbt._("Tournament can only be ended after its predictions are ended and resolved", null, {
+				}, r.fbt._("Tournament can only be ended after its predictions are ended and resolved", null, {
 					hk: "2AgZtm"
 				})), c.a.createElement(f.l, {
 					className: A.a.button,
 					disabled: !B || !L || I,
 					onClick: F
-				}, o.fbt._("End", null, {
+				}, r.fbt._("End", null, {
 					hk: "HWN7f"
 				})), v && c.a.createElement(g, {
 					isEnding: y,
@@ -344,7 +344,7 @@
 						} catch (e) {
 							n(Object(d.f)({
 								kind: O.b.Error,
-								text: o.fbt._("Failed to end tournament, please try again later", null, {
+								text: r.fbt._("Failed to end tournament, please try again later", null, {
 									hk: "2huCGU"
 								})
 							}))
@@ -373,9 +373,9 @@
 			})), n.d(t, "f", (function() {
 				return m
 			})), n.d(t, "k", (function() {
-				return b
-			})), n.d(t, "q", (function() {
 				return p
+			})), n.d(t, "q", (function() {
+				return b
 			})), n.d(t, "e", (function() {
 				return h
 			})), n.d(t, "i", (function() {
@@ -393,12 +393,12 @@
 			})), n.d(t, "o", (function() {
 				return E
 			}));
-			var o = n("./src/reddit/models/Prediction/index.ts"),
-				r = n("./src/reddit/selectors/telemetry.ts");
+			var r = n("./src/reddit/models/Prediction/index.ts"),
+				o = n("./src/reddit/selectors/telemetry.ts");
 			const c = "poll",
 				s = "predictions",
 				a = e => ({
-					...Object(r.o)(e),
+					...Object(o.p)(e),
 					source: c,
 					action: "view",
 					noun: "predict_option_modal"
@@ -407,16 +407,16 @@
 					let {
 						pollId: t,
 						selectedNumberCoins: n,
-						totalStakeAmount: o
+						totalStakeAmount: r
 					} = e;
 					return e => ({
-						...Object(r.o)(e),
+						...Object(o.p)(e),
 						source: c,
 						action: "confirm",
 						noun: "predict",
-						poll: Object(r.J)(e, t, !1, void 0, n),
+						poll: Object(o.K)(e, t, !1, void 0, n),
 						goldPurchase: {
-							numberCoins: o
+							numberCoins: r
 						}
 					})
 				},
@@ -426,11 +426,11 @@
 						selectedNumberTokens: n
 					} = e;
 					return e => ({
-						...Object(r.o)(e),
+						...Object(o.p)(e),
 						source: c,
 						action: "confirm",
 						noun: "predict",
-						poll: Object(r.J)(e, t, !1, void 0, void 0, n)
+						poll: Object(o.K)(e, t, !1, void 0, void 0, n)
 					})
 				},
 				l = e => {
@@ -440,19 +440,19 @@
 						amount: s
 					} = e;
 					return e => {
-						const a = n === o.a.Coins ? s : void 0,
-							i = n === o.a.Tokens ? s : void 0;
+						const a = n === r.a.Coins ? s : void 0,
+							i = n === r.a.Tokens ? s : void 0;
 						return {
-							...Object(r.o)(e),
+							...Object(o.p)(e),
 							source: c,
 							action: "close",
 							noun: "prediction_modal",
-							poll: Object(r.J)(e, t, !1, a, i)
+							poll: Object(o.K)(e, t, !1, a, i)
 						}
 					}
 				},
 				u = e => ({
-					...Object(r.o)(e),
+					...Object(o.p)(e),
 					source: c,
 					action: "click",
 					noun: "add_coins"
@@ -462,7 +462,7 @@
 						targetUserId: t
 					} = e;
 					return e => ({
-						...Object(r.o)(e),
+						...Object(o.p)(e),
 						source: s,
 						action: "click",
 						noun: "leaderboard_profile",
@@ -471,12 +471,12 @@
 						}
 					})
 				},
-				b = e => {
+				p = e => {
 					let {
 						pageType: t
 					} = e;
 					return e => ({
-						...Object(r.o)(e),
+						...Object(o.p)(e),
 						source: s,
 						action: "click",
 						noun: "tournament",
@@ -485,8 +485,8 @@
 						}
 					})
 				},
-				p = () => e => ({
-					...Object(r.o)(e),
+				b = () => e => ({
+					...Object(o.p)(e),
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -495,19 +495,19 @@
 					}
 				}),
 				h = () => e => ({
-					...Object(r.o)(e),
+					...Object(o.p)(e),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "end_tournament"
 				}),
 				f = () => e => ({
-					...Object(r.o)(e),
+					...Object(o.p)(e),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "rename_tournament"
 				}),
 				_ = e => t => ({
-					...Object(r.o)(t),
+					...Object(o.p)(t),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "enable_predictions",
@@ -518,40 +518,40 @@
 						value: e ? "1" : "0",
 						oldValue: e ? "0" : "1"
 					},
-					subreddit: Object(r.lb)(t)
+					subreddit: Object(o.mb)(t)
 				}),
 				x = () => e => ({
-					...Object(r.o)(e),
+					...Object(o.p)(e),
 					source: s,
 					action: "click",
 					noun: "next"
 				}),
 				j = () => e => ({
-					...Object(r.o)(e),
+					...Object(o.p)(e),
 					source: s,
 					action: "click",
 					noun: "add_more"
 				}),
 				O = () => e => ({
-					...Object(r.o)(e),
+					...Object(o.p)(e),
 					source: s,
 					action: "click",
 					noun: "start_tournament"
 				}),
 				k = () => e => ({
-					...Object(r.o)(e),
+					...Object(o.p)(e),
 					source: "menu_links_bar",
 					action: "click",
 					noun: "predictions_tab"
 				}),
 				E = () => e => ({
-					...Object(r.o)(e),
+					...Object(o.p)(e),
 					source: "predictions_tab",
 					action: "view",
 					noun: "predictions_how_it_works",
-					subreddit: Object(r.lb)(e)
+					subreddit: Object(o.mb)(e)
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.10b2d34047deed60db2b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.4e2efa55a1e26b01e03a.js.map

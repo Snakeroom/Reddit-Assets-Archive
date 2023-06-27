@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.8c95496a45b388452ad1.js
-// Retrieved at 6/21/2023, 9:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.5c626e7b7781dbcd111b.js
+// Retrieved at 6/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CommunitySettings-ModPnSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -69,7 +69,7 @@
 						action: "view",
 						noun: "mod_pn_settings",
 						actionInfo: {
-							...u.o(t).actionInfo,
+							...u.p(t).actionInfo,
 							paneName: e
 						}
 					}
@@ -80,13 +80,13 @@
 						action: "click",
 						noun: "mod_pn_settings",
 						actionInfo: {
-							...u.o(t).actionInfo,
+							...u.p(t).actionInfo,
 							paneName: e
 						}
 					}
 				},
 				f = e => t => {
-					const n = u.o(t),
+					const n = u.p(t),
 						a = e.id,
 						s = e.id.toUpperCase();
 					if (p.includes(s)) {
@@ -683,4 +683,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.8c95496a45b388452ad1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.5c626e7b7781dbcd111b.js.map

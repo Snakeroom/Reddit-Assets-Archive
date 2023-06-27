@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.b50bcd07d5eab1e7be3c.js
-// Retrieved at 6/21/2023, 9:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.47c87fab6a746350de53.js
+// Retrieved at 6/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, o) {
@@ -837,12 +837,12 @@
 						source: "bulk_mod_action_menu",
 						action: "click",
 						noun: e,
-						...q.o(l),
+						...q.p(l),
 						actionInfo: q.d(l, {
 							count: b.length,
 							paneName: l.platform.currentPage ? l.platform.currentPage.urlParams.pageName : void 0
 						}),
-						screen: q.cb(l),
+						screen: q.db(l),
 						correlationId: v
 					});
 					for (let t = 0; t < b.length; t++) {
@@ -852,19 +852,19 @@
 							source: "bulk_mod_action",
 							action: "click",
 							noun: s,
-							...q.o(l),
+							...q.p(l),
 							actionInfo: q.d(l, {
 								count: b.length,
 								paneName: l.platform.currentPage ? l.platform.currentPage.urlParams.pageName : void 0
 							}),
-							comment: q.h({
+							comment: q.i({
 								state: l,
 								commentId: o
 							}),
-							post: q.K(l, o),
-							profile: q.V(l, o),
-							screen: q.cb(l),
-							subreddit: q.ob(l, o),
+							post: q.L(l, o),
+							profile: q.W(l, o),
+							screen: q.db(l),
+							subreddit: q.pb(l, o),
 							correlationId: v
 						})
 					}
@@ -1927,4 +1927,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.b50bcd07d5eab1e7be3c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.47c87fab6a746350de53.js.map

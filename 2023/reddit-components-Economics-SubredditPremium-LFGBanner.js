@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.a8b240d4df099c51f3d1.js
-// Retrieved at 6/21/2023, 9:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.6643d70a82584a0baf80.js
+// Retrieved at 6/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Economics-SubredditPremium-LFGBanner"], {
 		"./node_modules/lodash/_arraySample.js": function(e, t, n) {
@@ -1626,7 +1626,7 @@
 						displayText: String(e.type[t]),
 						onClick: () => {
 							e.onChange(t), e.sendEvent(n => {
-								const r = N.o(n);
+								const r = N.p(n);
 								return {
 									source: "meta",
 									action: "click",
@@ -1638,7 +1638,7 @@
 										paneName: le.get(e.type),
 										reason: t
 									},
-									subreddit: N.lb(n)
+									subreddit: N.mb(n)
 								}
 							})
 						}
@@ -1729,8 +1729,8 @@
 									action: "click",
 									noun: "lfg_banner_generate_badge",
 									correlationId: this.props.correlationId,
-									...N.o(e),
-									subreddit: N.lb(e)
+									...N.p(e),
+									subreddit: N.mb(e)
 								})))
 							}
 						}, r.fbt._("Generate Badge", null, {
@@ -1763,7 +1763,7 @@
 						i.ok ? (this.setState({
 							show: pe.Claimed
 						}), this.props.onDismissBanner(), this.props.onBadgeClaimed(a)) : this.props.onError(i.error), e && this.props.onOpenLandingPage(n, this.correlationId), this.props.sendEvent(t => {
-							const n = N.o(t);
+							const n = N.p(t);
 							return {
 								source: "meta",
 								action: "click",
@@ -1775,7 +1775,7 @@
 									reason: a,
 									paneName: E.a.LFG
 								},
-								subreddit: N.lb(t)
+								subreddit: N.mb(t)
 							}
 						})
 					}, this.handleDismiss = () => {
@@ -1784,7 +1784,7 @@
 						}) : (this.setState({
 							show: pe.Dismissed
 						}), this.props.sendEvent(e => {
-							const t = N.o(e);
+							const t = N.p(e);
 							return {
 								source: "meta",
 								action: "click",
@@ -1795,14 +1795,14 @@
 									...t.actionInfo,
 									paneName: E.a.LFG
 								},
-								subreddit: N.lb(e)
+								subreddit: N.mb(e)
 							}
 						})), this.props.onDismissBanner()
 					}, this.handleUndoDismiss = () => {
 						this.setState({
 							show: pe.Select
 						}), this.props.onUndismissBanner(), this.props.sendEvent(e => {
-							const t = N.o(e);
+							const t = N.p(e);
 							return {
 								source: "meta",
 								action: "click",
@@ -1813,7 +1813,7 @@
 									...t.actionInfo,
 									paneName: E.a.LFG
 								},
-								subreddit: N.lb(e)
+								subreddit: N.mb(e)
 							}
 						})
 					}, this.state = {
@@ -1830,7 +1830,7 @@
 					this.setState({
 						show: pe.Select
 					}), this.props.sendEvent(e => {
-						const t = N.o(e);
+						const t = N.p(e);
 						return {
 							source: "meta",
 							action: "view",
@@ -1841,7 +1841,7 @@
 								...t.actionInfo,
 								paneName: E.a.LFG
 							},
-							subreddit: N.lb(e)
+							subreddit: N.mb(e)
 						}
 					})
 				}
@@ -3223,4 +3223,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.a8b240d4df099c51f3d1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.6643d70a82584a0baf80.js.map

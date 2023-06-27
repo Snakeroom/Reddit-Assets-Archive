@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.d5b70e81ed6b4f37c835.js
-// Retrieved at 6/27/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.54acef71ee19c7913ba0.js
+// Retrieved at 6/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2568,7 +2568,7 @@
 						source: "meta",
 						action: "hover",
 						noun: "achieve_flair",
-						...i.o(a),
+						...i.p(a),
 						subreddit: {
 							id: t
 						},
@@ -2584,7 +2584,7 @@
 					source: "powerups",
 					action: "click",
 					noun: "view_your_achievements",
-					...i.o(e)
+					...i.p(e)
 				})
 		},
 		"./src/reddit/icons/fonts/DistinguishShield/index.tsx": function(e, t, n) {
@@ -2662,4 +2662,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.d5b70e81ed6b4f37c835.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.54acef71ee19c7913ba0.js.map

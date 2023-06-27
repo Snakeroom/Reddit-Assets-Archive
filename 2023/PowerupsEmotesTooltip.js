@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.26b6a1e365e4e3822801.js
-// Retrieved at 6/21/2023, 9:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.f28d682c754a61f31376.js
+// Retrieved at 6/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsEmotesTooltip"], {
 		"./src/reddit/actions/economics/powerups/helpers.ts": function(e, t, o) {
@@ -325,14 +325,14 @@
 				R = o("./src/reddit/controls/LoadingIcon/index.tsx"),
 				P = o("./src/reddit/icons/svgs/AddSquare/index.tsx"),
 				S = o("./src/reddit/models/Toast/index.ts"),
-				L = o("./src/reddit/selectors/gold/powerups/index.ts"),
-				U = o("./src/reddit/components/RichTextEditor/emotes/EmoteButton.tsx"),
+				U = o("./src/reddit/selectors/gold/powerups/index.ts"),
+				L = o("./src/reddit/components/RichTextEditor/emotes/EmoteButton.tsx"),
 				A = o("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
 				D = o("./src/reddit/components/RichTextEditor/emotes/Powerups/emotesSection.m.less"),
 				V = o.n(D);
 			const {
 				fbt: F
-			} = o("./node_modules/fbt/lib/FbtPublic.js"), q = e => {
+			} = o("./node_modules/fbt/lib/FbtPublic.js"), M = e => {
 				let {
 					emojiUrl: t,
 					onConfirm: o,
@@ -364,7 +364,7 @@
 				})
 			};
 			o("./node_modules/core-js/modules/web.dom.iterable.js");
-			const M = e => {
+			const H = e => {
 				let {
 					onEmoteClicked: t,
 					subredditId: o,
@@ -376,13 +376,13 @@
 					[b, h] = Object(s.useState)(null),
 					E = () => h(null),
 					[j, f] = Object(s.useState)(!1),
-					x = Object(l.e)(e => Object(L.g)(e, {
+					x = Object(l.e)(e => Object(U.g)(e, {
 						subredditId: o
 					})),
-					k = Object(l.e)(e => Object(L.b)(e, {
+					k = Object(l.e)(e => Object(U.b)(e, {
 						subredditId: o
 					})),
-					g = Object(l.e)(e => Object(L.c)(e, {
+					g = Object(l.e)(e => Object(U.c)(e, {
 						subredditId: o
 					})),
 					{
@@ -514,7 +514,7 @@
 					disabled: v
 				}, i.a.createElement(P.a, {
 					className: V.a.addIcon
-				}))), k.map(e => i.a.createElement(U.a, {
+				}))), k.map(e => i.a.createElement(L.a, {
 					key: e.id,
 					className: V.a.emoteButton,
 					imageClassName: V.a.customEmoteImage,
@@ -534,14 +534,14 @@
 					className: Object(u.a)(V.a.emotes, {
 						[V.a.disabled]: !d
 					})
-				}, g.map(e => i.a.createElement(U.a, {
+				}, g.map(e => i.a.createElement(L.a, {
 					key: e.id,
 					className: V.a.emoteButton,
 					imagePath: e.emoji.path,
 					title: e.id,
 					onClick: () => t(e),
 					disabled: !d
-				}))))), b && i.a.createElement(q, {
+				}))))), b && i.a.createElement(M, {
 					emojiUrl: b.emoji.path,
 					onCancel: E,
 					onClose: E,
@@ -571,8 +571,8 @@
 					}
 				}))
 			};
-			var H = o("./src/reddit/components/RichTextEditor/emotes/Powerups/tooltip.m.less"),
-				K = o.n(H);
+			var q = o("./src/reddit/components/RichTextEditor/emotes/Powerups/tooltip.m.less"),
+				K = o.n(q);
 			const {
 				fbt: Q
 			} = o("./node_modules/fbt/lib/FbtPublic.js");
@@ -600,7 +600,7 @@
 					}), null)
 				}, i.a.createElement("div", {
 					className: K.a.body
-				}, i.a.createElement(M, {
+				}, i.a.createElement(H, {
 					subredditId: l.id,
 					subredditName: l.name,
 					onEmoteClicked: e => {
@@ -675,12 +675,12 @@
 			var s = o("./src/reddit/helpers/correlationIdTracker.ts"),
 				i = o("./src/reddit/selectors/telemetry.ts");
 			const n = (e, t, o) => ({
-					...i.o(e),
+					...i.p(e),
 					correlationId: Object(s.d)(s.a.PowerupsFlow, !1),
-					profile: i.T(e),
-					subreddit: i.lb(e),
+					profile: i.U(e),
+					subreddit: i.mb(e),
 					powerups: {
-						...i.qb(e),
+						...i.rb(e),
 						freeCount: t,
 						paidCount: o
 					}
@@ -697,7 +697,7 @@
 					noun: "add_custom_emojis",
 					...n(o),
 					powerups: {
-						...i.qb(o),
+						...i.rb(o),
 						emojiCount: e
 					}
 				}),
@@ -707,7 +707,7 @@
 					noun: "custom_emojis",
 					...n(o),
 					powerups: {
-						...i.qb(o),
+						...i.rb(o),
 						emojiCount: e
 					}
 				}),
@@ -720,7 +720,7 @@
 						noun: "custom_emojis",
 						...n(o),
 						powerups: {
-							...i.qb(o),
+							...i.rb(o),
 							emojiCount: e
 						}
 					})
@@ -729,7 +729,7 @@
 					source: "meta",
 					action: "open",
 					noun: "gif_tooltip",
-					subreddit: t ? i.mb(o, t) : void 0,
+					subreddit: t ? i.nb(o, t) : void 0,
 					...n(o),
 					correlationId: e
 				})
@@ -775,4 +775,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.26b6a1e365e4e3822801.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.f28d682c754a61f31376.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.9a4cf77fa157286fc114.js
-// Retrieved at 6/27/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.606ea367d3a44e4380b3.js
+// Retrieved at 6/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityTopicSurvey"], {
 		"./node_modules/react-uid/dist/es2015/hooks.js": function(e, t, n) {
@@ -61,7 +61,7 @@
 		"./src/reddit/components/CommunityTopicSurvey/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "default", (function() {
-				return L
+				return F
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/react/index.js"),
@@ -244,7 +244,7 @@
 				})))
 			}
 
-			function F(e) {
+			function L(e) {
 				const {
 					questionId: t,
 					questionText: n,
@@ -290,7 +290,7 @@
 				})))
 			}
 
-			function L(e) {
+			function F(e) {
 				var t;
 				const {
 					subredditId: n,
@@ -355,7 +355,7 @@
 							inFeed: a
 						});
 					case S.e.SingleWithSubmit:
-						return o.a.createElement(F, {
+						return o.a.createElement(L, {
 							key: O.id,
 							questionId: O.id,
 							questionText: O.questionText,
@@ -366,7 +366,7 @@
 							inFeed: a
 						});
 					case S.e.SingleNoSubmit:
-						return o.a.createElement(F, {
+						return o.a.createElement(L, {
 							key: O.id,
 							questionId: O.id,
 							questionText: O.questionText,
@@ -892,15 +892,15 @@
 				e.LINK = "link", e.DISCOVERY_UNIT = "discovery_unit"
 			}(s || (s = {}));
 			const m = e => ({
-					...l.o(e),
+					...l.p(e),
 					source: s.LINK,
 					action: o.c.CLICK,
 					noun: r.INTERNAL_LINK
 				}),
 				b = e => ({
-					...l.o(e),
+					...l.p(e),
 					source: s,
-					screen: l.cb(e),
+					screen: l.db(e),
 					discoveryUnit: {
 						id: "xd_100",
 						name: r.SUBREDDIT_HOVERCARD,
@@ -945,8 +945,8 @@
 					if (!n || !Object(d.b)(n) && !Object(i.b)(n)) return {};
 					const r = Object(d.b)(n) ? n.belongsTo.id : n.subredditId;
 					return {
-						post: l.K(e, n.id),
-						subreddit: l.mb(e, r),
+						post: l.L(e, n.id),
+						subreddit: l.nb(e, r),
 						...p(e, t)
 					}
 				},
@@ -959,44 +959,44 @@
 					source: "global",
 					action: o.c.VIEW,
 					noun: r.SUBREDDIT_HOVERCARD,
-					subreddit: l.nb(t, e),
-					screen: l.cb(t)
+					subreddit: l.ob(t, e),
+					screen: l.db(t)
 				}),
 				x = (e, t) => n => ({
 					...b(n),
 					source: s.DISCOVERY_UNIT,
 					action: o.c.VIEW,
 					noun: r.ITEM_POST,
-					post: l.K(n, t),
-					subreddit: l.nb(n, e),
-					screen: l.cb(n)
+					post: l.L(n, t),
+					subreddit: l.ob(n, e),
+					screen: l.db(n)
 				}),
 				g = (e, t) => n => ({
 					...b(n),
 					source: s.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: r.ITEM_POST,
-					post: l.K(n, t),
-					subreddit: l.nb(n, e),
-					screen: l.cb(n)
+					post: l.L(n, t),
+					subreddit: l.ob(n, e),
+					screen: l.db(n)
 				}),
 				S = e => t => ({
 					...b(t),
-					subreddit: l.mb(t, e) || null,
+					subreddit: l.nb(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: r.HEADER_SUBREDDIT
 				}),
 				E = e => t => ({
 					...b(t),
-					subreddit: l.mb(t, e) || null,
+					subreddit: l.nb(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: r.HEADER_SUBREDDIT_SUBSCRIBE
 				}),
 				v = e => t => ({
 					...b(t),
-					subreddit: l.mb(t, e) || null,
+					subreddit: l.nb(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: r.HEADER_SUBREDDIT_UNSUBSCRIBE
@@ -1085,4 +1085,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.9a4cf77fa157286fc114.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.606ea367d3a44e4380b3.js.map

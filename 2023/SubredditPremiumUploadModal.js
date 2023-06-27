@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.89dc7a127ea5179a0b29.js
-// Retrieved at 6/21/2023, 9:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.4775dd207b2dc0c240c1.js
+// Retrieved at 6/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumUploadModal"], {
 		"./src/reddit/components/Economics/SubredditPremium/UploadModal/ImageUpload/index.m.less": function(e, t, a) {
@@ -570,7 +570,7 @@
 				}
 				sendEvent(e, t) {
 					this.props.sendEvent(a => {
-						const s = C.o(a);
+						const s = C.p(a);
 						return {
 							source: "meta",
 							action: e,
@@ -580,7 +580,7 @@
 								...s.actionInfo,
 								...t
 							},
-							subreddit: C.lb(a)
+							subreddit: C.mb(a)
 						}
 					})
 				}
@@ -1118,4 +1118,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.89dc7a127ea5179a0b29.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.4775dd207b2dc0c240c1.js.map

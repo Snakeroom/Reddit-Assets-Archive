@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectiblesShowcaseUnit.ec407ab8fc45d73a21f1.js
-// Retrieved at 6/27/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectiblesShowcaseUnit.6099e4eff7c0d5de296f.js
+// Retrieved at 6/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectiblesShowcaseUnit"], {
 		"./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx": function(e, t, r) {
@@ -55,7 +55,7 @@
 						},
 						A = Object(c.useCallback)(e => {
 							k(t => {
-								const r = m.o(t);
+								const r = m.p(t);
 								return {
 									...r,
 									...e,
@@ -109,7 +109,7 @@
 					origin: t,
 					profileId: E.id || "",
 					profileDisplayName: E.displayName || "",
-					telemetryPageType: Object(m.v)(O.platform.currentPage) || "",
+					telemetryPageType: Object(m.w)(O.platform.currentPage) || "",
 					loggedInUserProfileId: k || "",
 					onOutfitClick: e => {
 						n(Object(u.k)(f(t))), y(Object(a.h)(d.a.ECON_NFT_PRODUCT_DETAILS, {
@@ -382,4 +382,4 @@
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectiblesShowcaseUnit.ec407ab8fc45d73a21f1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectiblesShowcaseUnit.6099e4eff7c0d5de296f.js.map

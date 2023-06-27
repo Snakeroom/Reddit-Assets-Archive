@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxTooltip.9f611907d7bed36ac47d.js
-// Retrieved at 6/27/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxTooltip.d9966c20698acdb44c23.js
+// Retrieved at 6/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxTooltip", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -71,7 +71,7 @@
 			})), i.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
 				return U
 			})), i.d(t, "subscribeToPermissionsChange", (function() {
-				return T
+				return G
 			}));
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
 				s = i("./node_modules/lodash/omit.js"),
@@ -201,7 +201,7 @@
 					case d.a.Denied:
 						t(Object(b.h)(e))
 				}
-			}, T = () => async (e, t) => {
+			}, G = () => async (e, t) => {
 				var i;
 				if (!(null === (i = null === navigator || void 0 === navigator ? void 0 : navigator.permissions) || void 0 === i ? void 0 : i.query)) return;
 				const n = t();
@@ -484,7 +484,7 @@
 				e.FREQUENT = "frequent", e.LOW = "low", e.OFF = "off"
 			}(r || (r = {}));
 			const c = e => ({
-					...n.o(e),
+					...n.p(e),
 					noun: "desktop_notification_permissions"
 				}),
 				a = e => e ? "enable" : "disable",
@@ -517,7 +517,7 @@
 					})
 				},
 				f = (e, t, i) => ({
-					...n.o(e),
+					...n.p(e),
 					actionInfo: n.d(e, {
 						success: t,
 						reason: i
@@ -546,18 +546,18 @@
 					})
 				},
 				O = e => ({
-					...n.o(e),
+					...n.p(e),
 					noun: "push_notification"
 				}),
 				h = e => ({
 					...O(e),
-					notification: n.F(e, void 0, void 0),
+					notification: n.G(e, void 0, void 0),
 					action: void 0,
 					source: "notification",
 					correlationId: void 0
 				}),
 				j = (e, t) => i => ({
-					...n.o(i),
+					...n.p(i),
 					action: a(e),
 					email: {
 						type: t
@@ -566,7 +566,7 @@
 					source: "email_app_settings"
 				}),
 				v = (e, t) => i => ({
-					...n.o(i),
+					...n.p(i),
 					action: a(e),
 					notification: {
 						type: t
@@ -575,7 +575,7 @@
 					source: "notification_app_settings"
 				}),
 				x = e => t => ({
-					...n.o(t),
+					...n.p(t),
 					source: "email_app_settings",
 					action: a(e),
 					noun: "email",
@@ -584,7 +584,7 @@
 					}
 				}),
 				S = (e, t, i) => s => ({
-					...n.o(s),
+					...n.p(s),
 					action: "set_frequency",
 					noun: i,
 					source: "community_notifications",
@@ -594,7 +594,7 @@
 					}
 				}),
 				k = () => e => ({
-					...n.o(e),
+					...n.p(e),
 					action: o.c.View,
 					noun: "screen",
 					source: "global",
@@ -603,13 +603,13 @@
 					}
 				}),
 				N = () => e => ({
-					...n.o(e),
+					...n.p(e),
 					action: "click",
 					noun: "desktop_notification_permissions",
 					source: "overlay"
 				}),
 				w = () => e => ({
-					...n.o(e),
+					...n.p(e),
 					action: "auto_dismiss",
 					noun: "desktop_notification_permissions",
 					source: "overlay"
@@ -620,4 +620,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.9f611907d7bed36ac47d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.d9966c20698acdb44c23.js.map
