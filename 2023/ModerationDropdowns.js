@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.124aaf942ebdfb3d9364.js
-// Retrieved at 6/22/2023, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.f7e60b7f660a1e7ef5eb.js
+// Retrieved at 6/27/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, n) {
@@ -762,7 +762,7 @@
 						onSpoilerPost: W,
 						post: H
 					} = e;
-					var V, U, G, Q, K;
+					var V, U, G, K, Q;
 					const Z = (null === (V = H.pollData) || void 0 === V ? void 0 : V.isPrediction) && !(null === (U = H.pollData) || void 0 === U ? void 0 : U.resolvedOptionId),
 						q = (null === (G = H.pollData) || void 0 === G ? void 0 : G.isPrediction) && null !== H.pollData.resolvedOptionId,
 						Y = H.flair.filter(e => e.type !== S.f.Nsfw && e.type !== S.f.Spoiler).length > 0,
@@ -817,7 +817,7 @@
 							hk: "3uXoIh"
 						})
 					}), Object(E.b)(H) && s.a.createElement(T.e, {
-						disabled: Boolean((null === (Q = H.pollData) || void 0 === Q ? void 0 : Q.resolvedOptionId) || (null === (K = H.pollData) || void 0 === K ? void 0 : K.predictionStatus) === y.b.Cancelled),
+						disabled: Boolean((null === (K = H.pollData) || void 0 === K ? void 0 : K.resolvedOptionId) || (null === (Q = H.pollData) || void 0 === Q ? void 0 : Q.predictionStatus) === y.b.Cancelled),
 						displayText: j.fbt._("Cancel Prediction", null, {
 							hk: "hgWFW"
 						}),
@@ -1448,9 +1448,9 @@
 				r = n("./src/reddit/selectors/user.ts");
 			const a = (e, t) => t && Object(s.c)(e, {
 				experimentEligibilitySelector: r.S,
-				experimentName: o.Qf
+				experimentName: o.Rf
 			}) === o.Yd
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.124aaf942ebdfb3d9364.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.f7e60b7f660a1e7ef5eb.js.map

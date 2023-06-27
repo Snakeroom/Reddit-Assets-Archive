@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.328cc5f424dd6f44b838.js
-// Retrieved at 6/22/2023, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.f94a524f6153adaa7e33.js
+// Retrieved at 6/27/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -4626,13 +4626,13 @@
 			const i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.xe
+						experimentName: o.ye
 					}) === o.Yd
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.ye
+						experimentName: o.ze
 					}) === o.Yd
 				},
 				d = e => {
@@ -4677,29 +4677,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.xg
+						experimentName: o.yg
 					}) === o.Yd
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.yg
+						experimentName: o.zg
 					}) === o.Yd
 				},
 				c = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.wg
+						experimentName: o.xg
 					});
-					return t === o.pg.TypingIndicators || t === o.pg.IndicatorsPlusCTA
+					return t === o.qg.TypingIndicators || t === o.qg.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: o.wg
+						experimentName: o.xg
 					});
-					return (null == t ? void 0 : t.variant) === o.pg.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.qg.IndicatorsPlusCTA
 				}
 		},
 		"./src/redditGQL/operations/PostGuidanceValidation.json": function(e) {
@@ -4707,4 +4707,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.328cc5f424dd6f44b838.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.f94a524f6153adaa7e33.js.map

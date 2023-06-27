@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SnoovatarModal.0323d9e18f7c5be146c7.js
-// Retrieved at 6/22/2023, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SnoovatarModal.13a9568677869cab30c6.js
+// Retrieved at 6/27/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SnoovatarModal"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, r) {
@@ -64,14 +64,14 @@
 				const {
 					activeDetails: h,
 					activeTab: k,
-					activeMeSubpage: I,
-					shopTabState: N
+					activeMeSubpage: N,
+					shopTabState: I
 				} = r, R = Object(n.useMemo)(() => ({
 					activeTab: k || void 0,
-					activeMeSubpage: I || void 0,
+					activeMeSubpage: N || void 0,
 					activeDetails: h || void 0,
-					shopTabState: N || void 0
-				}), [h, k, I, N]), C = Object(o.e)(e => !Object(O.S)(e) && Object(m.x)(e));
+					shopTabState: I || void 0
+				}), [h, k, N, I]), C = Object(o.e)(e => !Object(O.S)(e) && Object(m.x)(e));
 				if (!_ || !f) return null;
 				if (C) return a.a.createElement("div", {
 					className: Object(c.a)(x.a.container, {
@@ -233,10 +233,10 @@
 			const o = e => {
 					return !(Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: s.Ie
+						experimentName: s.Je
 					}) === s.Yd)
 				},
-				c = Object(a.a)(s.Je)
+				c = Object(a.a)(s.Ke)
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, r) {
 			"use strict";
@@ -250,4 +250,4 @@
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.0323d9e18f7c5be146c7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.13a9568677869cab30c6.js.map

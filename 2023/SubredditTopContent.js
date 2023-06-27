@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.5fb94cfc9516772a138b.js
-// Retrieved at 6/22/2023, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.d6fabcd96a7df0307379.js
+// Retrieved at 6/27/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less": function(e, t, s) {
@@ -19,8 +19,8 @@
 			"use strict";
 			s.r(t);
 			var o = s("./node_modules/fbt/lib/FbtPublic.js"),
-				r = s("./node_modules/lodash/memoize.js"),
-				i = s.n(r),
+				i = s("./node_modules/lodash/memoize.js"),
+				r = s.n(i),
 				n = s("./node_modules/react/index.js"),
 				d = s.n(n),
 				c = s("./node_modules/react-redux/es/index.js"),
@@ -35,9 +35,9 @@
 				y = s("./src/reddit/constants/experiments.ts"),
 				x = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				D = s("./src/reddit/selectors/user.ts");
-			const C = e => Object(D.P)(e) || y.hg.ShowTopContent === Object(x.c)(e, {
+			const C = e => Object(D.P)(e) || y.ig.ShowTopContent === Object(x.c)(e, {
 				experimentEligibilitySelector: x.a,
-				experimentName: y.ag
+				experimentName: y.bg
 			});
 			var v = s("./src/reddit/selectors/subreddit.ts"),
 				U = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
@@ -48,7 +48,7 @@
 			}), e => ({
 				trackDiscoveryUnitView: t => e((e, s) => b.a(s(), t)),
 				trackDismissClick: t => e((e, s) => b.c(s(), t)),
-				trackPostView: i()((t, s, o) => e((e, r) => b.m(r(), t, s, o)), (e, t) => {
+				trackPostView: r()((t, s, o) => e((e, i) => b.m(i(), t, s, o)), (e, t) => {
 					let {
 						id: s
 					} = e;
@@ -81,9 +81,9 @@
 					} = this.props;
 					if (!e || !s) return null;
 					const {
-						postIds: r,
-						range: i
-					} = s, n = `${t}${p.bb.TOP}?t=${i}`, c = d.a.createElement(_.a, {
+						postIds: i,
+						range: r
+					} = s, n = `${t}${p.bb.TOP}?t=${r}`, c = d.a.createElement(_.a, {
 						className: k.a.widgetHeader
 					}, d.a.createElement("button", {
 						className: k.a.closeButton,
@@ -94,7 +94,7 @@
 					})), d.a.createElement(a.a, {
 						className: k.a.headerLink,
 						to: n
-					}, o.fbt._("Top posts from the past {range}", [o.fbt._param("range", i)], {
+					}, o.fbt._("Top posts from the past {range}", [o.fbt._param("range", r)], {
 						hk: "xhJKf"
 					})));
 					return d.a.createElement("div", {
@@ -108,7 +108,7 @@
 						searchDiscoveryUnit: this.props.searchDiscoveryUnit,
 						isLoading: !1,
 						isMiniCard: !1,
-						items: r,
+						items: i,
 						searchOptions: this.props.searchOptions,
 						showSubreddit: !0,
 						showTopPosts: !0,
@@ -121,4 +121,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.5fb94cfc9516772a138b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.d6fabcd96a7df0307379.js.map

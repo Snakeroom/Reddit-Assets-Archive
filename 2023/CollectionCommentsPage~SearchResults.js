@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.5db720949a1712b1e33f.js
-// Retrieved at 6/22/2023, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.846193122124fee18d3b.js
+// Retrieved at 6/27/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -800,9 +800,9 @@
 							r = Object(ue.Q)(s(), {
 								identifier: T.belongsTo
 							});
-						if (r && (e => m.Ef.Redirect === Object(ne.b)(e, {
+						if (r && (e => m.Ff.Redirect === Object(ne.b)(e, {
 								experimentEligibilitySelector: ce,
-								experimentName: m.yf
+								experimentName: m.zf
 							}))(s())) return void t(Object(o.c)(r.url));
 						if (T.belongsTo.type !== q.a.SUBREDDIT || T.isSponsored) {
 							if (T.belongsTo.type === q.a.PROFILE) {
@@ -7395,7 +7395,7 @@
 				})), d = Object(i.e)(e => Object(j.o)(e, {
 					listingKey: t
 				}));
-				return Object(i.e)(e => Object(x.a)(e)) === g.eg.Enabled && window.location.reload(), a.a.createElement("div", {
+				return Object(i.e)(e => Object(x.a)(e)) === g.fg.Enabled && window.location.reload(), a.a.createElement("div", {
 					className: Object(O.a)(L.a.resultsContainer)
 				}, n === f.h.Listings ? a.a.createElement(Ve.a, {
 					hasResults: r,
@@ -8334,10 +8334,10 @@
 					experimentName: g.Tc,
 					expEventOverride: !1
 				}), e => !!e),
-				En = e => Object(Cn.a)(e, g.Qe),
+				En = e => Object(Cn.a)(e, g.Re),
 				Sn = Object(de.a)(e => Object($s.c)(e, {
 					experimentEligibilitySelector: $s.a,
-					experimentName: g.Qe,
+					experimentName: g.Re,
 					expEventOverride: !1
 				}), e => !!e);
 			var kn, _n = s("./src/reddit/components/SearchBanner/index.m.less"),
@@ -8616,10 +8616,10 @@
 				o = s("./node_modules/reselect/es/index.js");
 			const a = Object(o.a)(e => Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: n.Hf
+				experimentName: n.If
 			}), e => ({
-				isSubEnlarged: e === n.dg.Variant1 || e === n.dg.Variant3,
-				withCommunityDescription: e === n.dg.Variant2 || e === n.dg.Variant3
+				isSubEnlarged: e === n.eg.Variant1 || e === n.eg.Variant3,
+				withCommunityDescription: e === n.eg.Variant2 || e === n.eg.Variant3
 			}))
 		},
 		"./src/reddit/selectors/i18n/index.ts": function(e, t, s) {
@@ -8635,7 +8635,7 @@
 				a = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(r.Ig)(t)
+					return Boolean(t) && !Object(r.Jg)(t)
 				},
 				c = Object(n.a)(i, o.d, (e, t) => e && !t)
 		},
@@ -8684,4 +8684,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.5db720949a1712b1e33f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.846193122124fee18d3b.js.map

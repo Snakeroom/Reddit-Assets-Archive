@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.b3d1b71ae7057b2462b1.js
-// Retrieved at 6/22/2023, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.0fdfef0e4d7168ce5146.js
+// Retrieved at 6/27/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MarketplaceClaimModal"], {
 		"./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx": function(e, t, r) {
@@ -53,7 +53,7 @@
 								NO_VAULT: !0
 							} : {}
 						},
-						I = Object(c.useCallback)(e => {
+						S = Object(c.useCallback)(e => {
 							x(t => {
 								const r = p.o(t);
 								return {
@@ -72,8 +72,8 @@
 						authHeaders: v,
 						config: A,
 						isNightMode: f,
-						sendEvent: I
-					}), [v, A, f, I])
+						sendEvent: S
+					}), [v, A, f, S])
 				}
 		},
 		"./src/reddit/components/Econ/Marketplace/ClaimModal/index.m.less": function(e, t, r) {
@@ -224,10 +224,10 @@
 			const a = e => {
 					return !(Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: s.Ie
+						experimentName: s.Je
 					}) === s.Yd)
 				},
-				o = Object(c.a)(s.Je)
+				o = Object(c.a)(s.Ke)
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, r) {
 			"use strict";
@@ -241,4 +241,4 @@
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.b3d1b71ae7057b2462b1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.0fdfef0e4d7168ce5146.js.map

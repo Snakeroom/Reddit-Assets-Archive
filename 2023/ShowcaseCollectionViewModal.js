@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ShowcaseCollectionViewModal.5ef341da592d1abedfa5.js
-// Retrieved at 6/22/2023, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ShowcaseCollectionViewModal.513dd2f3fdeec909893a.js
+// Retrieved at 6/27/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ShowcaseCollectionViewModal"], {
 		"./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx": function(e, t, r) {
@@ -135,12 +135,12 @@
 							userName: v || ""
 						}) || {},
 						w = Object(h.j)(y, g.profileId),
-						I = Object(n.l)(g.snoovatarFullBodyAsset || "");
+						R = Object(n.l)(g.snoovatarFullBodyAsset || "");
 					return a.a.createElement(m.a, null, a.a.createElement(n.k, {
 						telemetryReason: A || "",
 						ownerId: g.id || "",
 						ownerSnoovatarImage: g.snoovatarFullBodyAsset || "",
-						ownerProfileItemId: I || "",
+						ownerProfileItemId: R || "",
 						ownerProfileTitle: w.title || "",
 						ownerDisplayName: g.displayName || "",
 						onClose: t,
@@ -391,10 +391,10 @@
 			const c = e => {
 					return !(Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.Ie
+						experimentName: n.Je
 					}) === n.Yd)
 				},
-				i = Object(o.a)(n.Je)
+				i = Object(o.a)(n.Ke)
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, r) {
 			"use strict";
@@ -408,4 +408,4 @@
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ShowcaseCollectionViewModal.5ef341da592d1abedfa5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ShowcaseCollectionViewModal.513dd2f3fdeec909893a.js.map

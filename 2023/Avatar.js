@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Avatar.9ed4e6a15cc47ad9644f.js
-// Retrieved at 6/22/2023, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Avatar.3143c7b789ffb003c20d.js
+// Retrieved at 6/27/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Avatar"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, s) {
@@ -65,15 +65,15 @@
 					activeDetails: h,
 					activeTab: R,
 					activeMeSubpage: k,
-					shopTabState: I
-				} = s, N = Object(n.useMemo)(() => ({
+					shopTabState: N
+				} = s, T = Object(n.useMemo)(() => ({
 					activeTab: R || void 0,
 					activeMeSubpage: k || void 0,
 					activeDetails: h || void 0,
-					shopTabState: I || void 0
-				}), [h, R, k, I]), T = Object(c.e)(e => !Object(O.S)(e) && Object(m.x)(e));
+					shopTabState: N || void 0
+				}), [h, R, k, N]), I = Object(c.e)(e => !Object(O.S)(e) && Object(m.x)(e));
 				if (!f || !j) return null;
-				if (T) return a.a.createElement("div", {
+				if (I) return a.a.createElement("div", {
 					className: Object(o.a)(x.a.container, {
 						[x.a.containerExp]: A
 					})
@@ -97,7 +97,7 @@
 						[x.a.containerExp]: A
 					})
 				}, a.a.createElement(r.a, v({}, C, {
-					navState: N,
+					navState: T,
 					isModal: t
 				}), a.a.createElement(r.b, {
 					isModal: t,
@@ -204,10 +204,10 @@
 			const c = e => {
 					return !(Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: r.Ie
+						experimentName: r.Je
 					}) === r.Yd)
 				},
-				o = Object(a.a)(r.Je)
+				o = Object(a.a)(r.Ke)
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, s) {
 			"use strict";
@@ -221,4 +221,4 @@
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.9ed4e6a15cc47ad9644f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.3143c7b789ffb003c20d.js.map
