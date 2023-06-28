@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.4fb4b3ac327d74f89baa.js
-// Retrieved at 6/28/2023, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.2cb2f5911f71239045d2.js
+// Retrieved at 6/28/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit~StandalonePostPage", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -3858,15 +3858,15 @@
 		"./src/reddit/actions/reCaptchaEnterprise.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
-				return g
+				return f
 			})), n.d(t, "d", (function() {
-				return v
+				return g
 			})), n.d(t, "a", (function() {
-				return C
+				return v
 			})), n.d(t, "b", (function() {
-				return y
+				return C
 			})), n.d(t, "e", (function() {
-				return E
+				return y
 			}));
 			var o = n("./src/lib/asyncActions/index.ts"),
 				r = n("./src/lib/constants/euCookiePolicy.ts"),
@@ -3884,22 +3884,21 @@
 				l = n("./src/reddit/constants/experiments.ts"),
 				u = n("./src/reddit/featureFlags/index.ts"),
 				m = n("./src/reddit/featureFlags/utils.ts"),
-				p = n("./src/reddit/helpers/chooseVariant/index.ts"),
-				h = n("./src/reddit/selectors/meta.ts");
-			const b = e => u.d.reCaptchaEnterprise(e) && !Object(h.d)(e),
-				f = e => !!Object(p.c)(e, {
+				p = n("./src/reddit/helpers/chooseVariant/index.ts");
+			const h = e => u.d.reCaptchaEnterprise(e),
+				b = e => !!Object(p.c)(e, {
 					experimentEligibilitySelector: Object(m.d)(Object(m.b)(...r.c)),
 					experimentName: l.pf
 				}),
-				g = Object(o.b)("LOAD_RECAPTCHA_ENTERPRISE"),
-				v = function() {
+				f = Object(o.b)("LOAD_RECAPTCHA_ENTERPRISE"),
+				g = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-					return a(e => d()([b, f, e => e.tracking.reCaptchaEnterprise.load === o.a.New], t => t(e)))(async t => {
-						t(g.requested());
+					return a(e => d()([h, b, e => e.tracking.reCaptchaEnterprise.load === o.a.New], t => t(e)))(async t => {
+						t(f.requested());
 						try {
-							await s.b.loadScript(), t(g.succeeded())
+							await s.b.loadScript(), t(f.succeeded())
 						} catch (n) {
-							if (t(g.failed()), !e) throw n;
+							if (t(f.failed()), !e) throw n;
 							i.c.withScope(e => {
 								Object(i.a)(e, {
 									serverLogging: !1
@@ -3908,19 +3907,19 @@
 						}
 					})
 				},
-				C = Object(o.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
-				y = e => a(e => d()([b, f, e => e.tracking.reCaptchaEnterprise.load === o.a.Succeeded], t => t(e)))(async t => {
-					t(C.requested());
+				v = Object(o.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
+				C = e => a(e => d()([h, b, e => e.tracking.reCaptchaEnterprise.load === o.a.Succeeded], t => t(e)))(async t => {
+					t(v.requested());
 					try {
 						const n = await s.b.execute({
 							action: e.action,
 							fast: e.fast
 						});
-						return t(C.succeeded({
+						return t(v.succeeded({
 							token: n
 						})), n
 					} catch (n) {
-						if (t(C.failed()), e.catchAndLogError) return i.c.withScope(e => {
+						if (t(v.failed()), e.catchAndLogError) return i.c.withScope(e => {
 							Object(i.a)(e, {
 								serverLogging: !1
 							}), i.c.captureException(n)
@@ -3928,7 +3927,7 @@
 						throw n
 					}
 				}),
-				E = Object(o.b)("SEND_RECAPTCHA_TOKEN")
+				y = Object(o.b)("SEND_RECAPTCHA_TOKEN")
 		},
 		"./src/reddit/actions/scheduledPosts/constants.ts": function(e, t, n) {
 			"use strict";
@@ -40195,4 +40194,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.4fb4b3ac327d74f89baa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.2cb2f5911f71239045d2.js.map

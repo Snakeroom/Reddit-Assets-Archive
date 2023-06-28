@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.1973155c3e6e1901766d.js
-// Retrieved at 6/28/2023, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.167acc34c5da6584ede8.js
+// Retrieved at 6/28/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -13864,15 +13864,15 @@
 		"./src/reddit/actions/reCaptchaEnterprise.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
-				return g
+				return h
 			})), n.d(t, "d", (function() {
-				return v
+				return g
 			})), n.d(t, "a", (function() {
-				return x
+				return v
 			})), n.d(t, "b", (function() {
-				return E
+				return x
 			})), n.d(t, "e", (function() {
-				return O
+				return E
 			}));
 			var s = n("./src/lib/asyncActions/index.ts"),
 				r = n("./src/lib/constants/euCookiePolicy.ts"),
@@ -13890,22 +13890,21 @@
 				l = n("./src/reddit/constants/experiments.ts"),
 				u = n("./src/reddit/featureFlags/index.ts"),
 				m = n("./src/reddit/featureFlags/utils.ts"),
-				p = n("./src/reddit/helpers/chooseVariant/index.ts"),
-				b = n("./src/reddit/selectors/meta.ts");
-			const f = e => u.d.reCaptchaEnterprise(e) && !Object(b.d)(e),
-				h = e => !!Object(p.c)(e, {
+				p = n("./src/reddit/helpers/chooseVariant/index.ts");
+			const b = e => u.d.reCaptchaEnterprise(e),
+				f = e => !!Object(p.c)(e, {
 					experimentEligibilitySelector: Object(m.d)(Object(m.b)(...r.c)),
 					experimentName: l.pf
 				}),
-				g = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
-				v = function() {
+				h = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
+				g = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-					return a(e => c()([f, h, e => e.tracking.reCaptchaEnterprise.load === s.a.New], t => t(e)))(async t => {
-						t(g.requested());
+					return a(e => c()([b, f, e => e.tracking.reCaptchaEnterprise.load === s.a.New], t => t(e)))(async t => {
+						t(h.requested());
 						try {
-							await o.b.loadScript(), t(g.succeeded())
+							await o.b.loadScript(), t(h.succeeded())
 						} catch (n) {
-							if (t(g.failed()), !e) throw n;
+							if (t(h.failed()), !e) throw n;
 							i.c.withScope(e => {
 								Object(i.a)(e, {
 									serverLogging: !1
@@ -13914,19 +13913,19 @@
 						}
 					})
 				},
-				x = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
-				E = e => a(e => c()([f, h, e => e.tracking.reCaptchaEnterprise.load === s.a.Succeeded], t => t(e)))(async t => {
-					t(x.requested());
+				v = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
+				x = e => a(e => c()([b, f, e => e.tracking.reCaptchaEnterprise.load === s.a.Succeeded], t => t(e)))(async t => {
+					t(v.requested());
 					try {
 						const n = await o.b.execute({
 							action: e.action,
 							fast: e.fast
 						});
-						return t(x.succeeded({
+						return t(v.succeeded({
 							token: n
 						})), n
 					} catch (n) {
-						if (t(x.failed()), e.catchAndLogError) return i.c.withScope(e => {
+						if (t(v.failed()), e.catchAndLogError) return i.c.withScope(e => {
 							Object(i.a)(e, {
 								serverLogging: !1
 							}), i.c.captureException(n)
@@ -13934,7 +13933,7 @@
 						throw n
 					}
 				}),
-				O = Object(s.b)("SEND_RECAPTCHA_TOKEN")
+				E = Object(s.b)("SEND_RECAPTCHA_TOKEN")
 		},
 		"./src/reddit/actions/recentSubreddits/constants.ts": function(e, t, n) {
 			"use strict";
@@ -81549,4 +81548,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.1973155c3e6e1901766d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.167acc34c5da6584ede8.js.map

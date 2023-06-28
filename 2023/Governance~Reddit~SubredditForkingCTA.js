@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.abf0c97f4ffbaa69d0fb.js
-// Retrieved at 6/28/2023, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.07b23a1a1448fcdddf54.js
+// Retrieved at 6/28/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~SubredditForkingCTA"], {
 		"./src/lib/asyncActions/index.ts": function(e, t, r) {
@@ -1206,15 +1206,15 @@
 		"./src/reddit/actions/reCaptchaEnterprise.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "c", (function() {
-				return O
+				return h
 			})), r.d(t, "d", (function() {
-				return y
+				return O
 			})), r.d(t, "a", (function() {
-				return _
+				return y
 			})), r.d(t, "b", (function() {
-				return g
+				return _
 			})), r.d(t, "e", (function() {
-				return E
+				return g
 			}));
 			var n = r("./src/lib/asyncActions/index.ts"),
 				s = r("./src/lib/constants/euCookiePolicy.ts"),
@@ -1232,22 +1232,21 @@
 				u = r("./src/reddit/constants/experiments.ts"),
 				l = r("./src/reddit/featureFlags/index.ts"),
 				b = r("./src/reddit/featureFlags/utils.ts"),
-				p = r("./src/reddit/helpers/chooseVariant/index.ts"),
-				f = r("./src/reddit/selectors/meta.ts");
-			const m = e => l.d.reCaptchaEnterprise(e) && !Object(f.d)(e),
-				h = e => !!Object(p.c)(e, {
+				p = r("./src/reddit/helpers/chooseVariant/index.ts");
+			const f = e => l.d.reCaptchaEnterprise(e),
+				m = e => !!Object(p.c)(e, {
 					experimentEligibilitySelector: Object(b.d)(Object(b.b)(...s.c)),
 					experimentName: u.pf
 				}),
-				O = Object(n.b)("LOAD_RECAPTCHA_ENTERPRISE"),
-				y = function() {
+				h = Object(n.b)("LOAD_RECAPTCHA_ENTERPRISE"),
+				O = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-					return o(e => c()([m, h, e => e.tracking.reCaptchaEnterprise.load === n.a.New], t => t(e)))(async t => {
-						t(O.requested());
+					return o(e => c()([f, m, e => e.tracking.reCaptchaEnterprise.load === n.a.New], t => t(e)))(async t => {
+						t(h.requested());
 						try {
-							await i.b.loadScript(), t(O.succeeded())
+							await i.b.loadScript(), t(h.succeeded())
 						} catch (r) {
-							if (t(O.failed()), !e) throw r;
+							if (t(h.failed()), !e) throw r;
 							d.c.withScope(e => {
 								Object(d.a)(e, {
 									serverLogging: !1
@@ -1256,19 +1255,19 @@
 						}
 					})
 				},
-				_ = Object(n.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
-				g = e => o(e => c()([m, h, e => e.tracking.reCaptchaEnterprise.load === n.a.Succeeded], t => t(e)))(async t => {
-					t(_.requested());
+				y = Object(n.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
+				_ = e => o(e => c()([f, m, e => e.tracking.reCaptchaEnterprise.load === n.a.Succeeded], t => t(e)))(async t => {
+					t(y.requested());
 					try {
 						const r = await i.b.execute({
 							action: e.action,
 							fast: e.fast
 						});
-						return t(_.succeeded({
+						return t(y.succeeded({
 							token: r
 						})), r
 					} catch (r) {
-						if (t(_.failed()), e.catchAndLogError) return d.c.withScope(e => {
+						if (t(y.failed()), e.catchAndLogError) return d.c.withScope(e => {
 							Object(d.a)(e, {
 								serverLogging: !1
 							}), d.c.captureException(r)
@@ -1276,7 +1275,7 @@
 						throw r
 					}
 				}),
-				E = Object(n.b)("SEND_RECAPTCHA_TOKEN")
+				g = Object(n.b)("SEND_RECAPTCHA_TOKEN")
 		},
 		"./src/reddit/actions/scheduledPosts/constants.ts": function(e, t, r) {
 			"use strict";
@@ -3222,4 +3221,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.abf0c97f4ffbaa69d0fb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.07b23a1a1448fcdddf54.js.map
