@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.d058ea790b0cfc7b17fa.js
-// Retrieved at 6/28/2023, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.e56fe3e9e0ac7ee1734f.js
+// Retrieved at 6/28/2023, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"], {
 		"./src/lib/name/index.ts": function(e, t, r) {
@@ -3536,77 +3536,95 @@
 		"./src/reddit/actions/postGuidance/index.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return j
-			})), r.d(t, "b", (function() {
 				return _
+			})), r.d(t, "b", (function() {
+				return I
 			}));
 			var n = r("./src/lib/constants/index.ts"),
 				s = r("./src/lib/makeActionCreator/index.ts"),
 				i = r("./src/lib/sentry/index.ts"),
 				o = (r("./node_modules/core-js/modules/web.dom.iterable.js"), r("./src/lib/makeGqlRequest/index.ts")),
 				d = r("./src/redditGQL/operations/GetSingleDynamicConfig.json"),
-				c = r("./src/redditGQL/operations/FetchPostGuidanceConfig.json"),
-				a = r("./src/reddit/endpoints/subreddit/about.ts"),
-				u = r("./src/reddit/selectors/postGuidance.ts"),
-				l = r("./src/reddit/selectors/subreddit.ts"),
-				b = r("./src/redditGQL/types.ts"),
-				m = r("./src/reddit/actions/postGuidance/constants.ts");
-			const p = Object(s.a)(m.c),
-				f = Object(s.a)(m.d),
-				O = Object(s.a)(m.b),
-				g = Object(s.a)(m.a),
-				j = () => async (e, t, r) => {
+				c = (e, t) => Object(o.a)(e, {
+					...d,
+					variables: t
+				}).then(e => {
+					var t, r, n, s;
+					if (e.ok) {
+						const i = null === (n = null === (r = null === (t = e.body) || void 0 === t ? void 0 : t.data) || void 0 === r ? void 0 : r.dynamicConfigsByNames) || void 0 === n ? void 0 : n.values,
+							o = null === (s = null == i ? void 0 : i[0]) || void 0 === s ? void 0 : s.value;
+						return {
+							...e,
+							body: o ? JSON.parse(o) : {}
+						}
+					}
+					return e
+				}),
+				a = r("./src/redditGQL/operations/FetchPostGuidanceConfig.json"),
+				u = r("./src/reddit/endpoints/subreddit/about.ts"),
+				l = r("./src/reddit/selectors/postGuidance.ts"),
+				b = r("./src/reddit/selectors/subreddit.ts"),
+				m = r("./src/redditGQL/types.ts"),
+				p = r("./src/reddit/actions/postGuidance/constants.ts");
+			const f = Object(s.a)(p.c),
+				O = Object(s.a)(p.d),
+				g = Object(s.a)(p.b),
+				j = Object(s.a)(p.a),
+				_ = () => async (e, t, r) => {
 					let {
 						gqlContext: n
 					} = r;
-					const s = await ((e, t) => Object(o.a)(e, {
-						...d,
-						variables: t
-					}).then(e => {
-						var t, r, n, s;
-						if (e.ok) {
-							const i = null === (n = null === (r = null === (t = e.body) || void 0 === t ? void 0 : t.data) || void 0 === r ? void 0 : r.dynamicConfigsByNames) || void 0 === n ? void 0 : n.values,
-								o = null === (s = null == i ? void 0 : i[0]) || void 0 === s ? void 0 : s.value;
-							return {
-								...e,
-								body: o ? JSON.parse(o) : {}
-							}
-						}
-						return e
-					}))(n(), {
-						name: "post_guidance_beta_subreddits_v1",
-						type: b.p.Map
-					});
-					s.ok && e(g(s.body))
-				}, _ = e => async (t, r, s) => {
+					var s;
+					const i = c(n(), {
+							name: "post_guidance_beta_subreddits_v1",
+							type: m.p.Map
+						}),
+						o = c(n(), {
+							name: "post_guidance_tier3_subreddits_v1",
+							type: m.p.Map
+						}),
+						d = await Promise.allSettled([i, o]),
+						[a, u] = d;
+					let l = {};
+					"fulfilled" === a.status && a.value.ok && a.value.body && (l = {
+						...l,
+						...a.value.body
+					}), "fulfilled" === u.status && u.value.ok && (null === (s = u.value.body) || void 0 === s ? void 0 : s.ids) && (l = {
+						...l,
+						...u.value.body.ids.split(",").filter(e => "" !== e).reduce((e, t) => ({
+							...e,
+							[t]: !0
+						}), {})
+					}), l && e(j(l))
+				}, I = e => async (t, r, s) => {
 					let {
 						gqlContext: d
 					} = s;
-					var b, m, g;
+					var c, m, p;
 					const j = {
 						subredditName: e.toLowerCase()
 					};
-					if (Object(u.a)(r(), j)) return;
-					t(f(j));
-					let _, I = Object(l.I)(r(), e);
+					if (Object(l.a)(r(), j)) return;
+					t(O(j));
+					let _, I = Object(b.I)(r(), e);
 					if (!I) {
-						const r = await Object(a.a)(d(), e, !1);
+						const r = await Object(u.a)(d(), e, !1);
 						if (r.ok) {
 							const e = r.body;
-							I = null === (m = null === (b = null == e ? void 0 : e.data) || void 0 === b ? void 0 : b.subreddit) || void 0 === m ? void 0 : m.id
+							I = null === (m = null === (c = null == e ? void 0 : e.data) || void 0 === c ? void 0 : c.subreddit) || void 0 === m ? void 0 : m.id
 						}
 						if (!I) {
 							const e = r.error || {
 								type: n.K.NOT_FOUND_ERROR
 							};
-							return void t(O({
+							return void t(g({
 								...j,
 								error: e
 							}))
 						}
 					}
 					const v = await ((e, t) => Object(o.a)(e, {
-						...c,
+						...a,
 						variables: t
 					}).then(e => {
 						var t, r, n;
@@ -3628,7 +3646,7 @@
 						subredditName: e
 					});
 					if (v.ok) {
-						_ = null === (g = v.body.data.subreddit) || void 0 === g ? void 0 : g.postGuidanceConfig, t(p({
+						_ = null === (p = v.body.data.subreddit) || void 0 === p ? void 0 : p.postGuidanceConfig, t(f({
 							...j,
 							postGuidanceConfig: _
 						}))
@@ -3636,7 +3654,7 @@
 						const r = v.error || {
 							type: n.K.UNKNOWN_ERROR
 						};
-						t(O({
+						t(g({
 							...j,
 							error: r
 						})), i.c.withScope(t => {
@@ -11698,4 +11716,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.d058ea790b0cfc7b17fa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.e56fe3e9e0ac7ee1734f.js.map

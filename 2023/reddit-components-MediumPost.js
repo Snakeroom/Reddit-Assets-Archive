@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.f56c5c33db4e49abc57a.js
-// Retrieved at 6/28/2023, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.771974d47cdee4ee1dab.js
+// Retrieved at 6/28/2023, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -592,18 +592,18 @@
 							isLocked: a.isLocked
 						}
 					}))
-				}, g = Object(r.a)(v.J), y = e => async (t, s, o) => {
+				}, g = Object(r.a)(v.J), y = e => async (t, s, n) => {
 					let {
-						apiContext: r,
-						gqlContext: a
-					} = o;
-					const i = s(),
-						l = i.features.comments.models[e],
-						m = i.user.account ? i.user.account.displayText : null;
-					l && m && (t(Object(_.j)({
+						apiContext: o,
+						gqlContext: r
+					} = n;
+					const a = s(),
+						i = a.features.comments.models[e],
+						c = a.user.account ? a.user.account.displayText : null;
+					i && c && (t(Object(_.j)({
 						[e]: {
 							isApproved: !0,
-							approvedBy: m,
+							approvedBy: c,
 							approvedAtUTC: Date.now(),
 							bannedBy: null,
 							isRemoved: !1,
@@ -613,57 +613,45 @@
 							modRemovalReason: null,
 							numReports: 0
 						}
-					})), (await Object(u.a)(a(), e)).ok ? t(Object(c.f)({
-						kind: b.b.SuccessMod,
-						text: n.fbt._("comment has been approved", null, {
-							hk: "4GfKQi"
-						})
-					})) : t(Object(_.j)({
+					})), (await Object(u.a)(r(), e)).ok || t(Object(_.j)({
 						[e]: {
-							isApproved: l.isApproved,
+							isApproved: i.isApproved,
 							approvedBy: null,
-							bannedBy: l.bannedBy,
-							isRemoved: l.isRemoved,
-							isSpam: l.isSpam,
-							modNote: l.modNote,
-							modReasonBy: l.modReasonBy,
-							modRemovalReason: l.modRemovalReason,
-							numReports: l.numReports || null
+							bannedBy: i.bannedBy,
+							isRemoved: i.isRemoved,
+							isSpam: i.isSpam,
+							modNote: i.modNote,
+							modReasonBy: i.modReasonBy,
+							modRemovalReason: i.modRemovalReason,
+							numReports: i.numReports || null
 						}
 					})), Object(d.d)())
-				}, k = (e, t) => async (s, o, r) => {
+				}, k = (e, t) => async (s, n, o) => {
 					let {
-						apiContext: a,
-						gqlContext: i
-					} = r;
-					const l = o(),
-						m = l.features.comments.models[e],
-						p = l.user.account ? l.user.account.displayText : null;
-					m && p && (s(Object(_.j)({
+						apiContext: r,
+						gqlContext: a
+					} = o;
+					const i = n(),
+						c = i.features.comments.models[e],
+						l = i.user.account ? i.user.account.displayText : null;
+					c && l && (s(Object(_.j)({
 						[e]: {
 							approvedBy: null,
-							bannedBy: p,
+							bannedBy: l,
 							bannedAtUTC: Date.now(),
 							isApproved: !1,
 							isRemoved: !t,
 							isSpam: t,
 							numReports: 0
 						}
-					})), (await Object(u.h)(i(), e, t)).ok ? s(Object(c.f)({
-						kind: b.b.SuccessMod,
-						text: t ? n.fbt._("comment has been marked as spam", null, {
-							hk: "4fQaFM"
-						}) : n.fbt._("comment has been removed", null, {
-							hk: "1qNTrD"
-						})
-					})) : s(Object(_.j)({
+					})), (await Object(u.h)(a(), e, t)).ok || s(Object(_.j)({
 						[e]: {
-							approvedBy: m.approvedBy,
-							bannedBy: m.bannedBy,
-							isApproved: m.isApproved,
-							isRemoved: m.isRemoved,
-							isSpam: m.isSpam,
-							numReports: m.numReports
+							approvedBy: c.approvedBy,
+							bannedBy: c.bannedBy,
+							isApproved: c.isApproved,
+							isRemoved: c.isRemoved,
+							isSpam: c.isSpam,
+							numReports: c.numReports
 						}
 					})), Object(d.d)())
 				}, C = e => async (t, s, o) => {
@@ -1305,8 +1293,8 @@
 				});
 			var G = s("./src/reddit/helpers/isPost.ts"),
 				q = s("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
-				Q = s("./src/reddit/helpers/routeKey/index.ts"),
-				H = s("./src/reddit/models/ModQueue/index.ts"),
+				H = s("./src/reddit/helpers/routeKey/index.ts"),
+				Q = s("./src/reddit/models/ModQueue/index.ts"),
 				Y = s("./src/reddit/models/PostDraft/index.ts"),
 				K = s("./src/reddit/models/RemovalReason/index.ts"),
 				Z = s("./src/reddit/models/Toast/index.ts"),
@@ -1458,7 +1446,7 @@
 											},
 											s = Object(J.f)(l),
 											n = l.platform.currentPage && l.platform.currentPage.routeMatch;
-										let o = s && n && Object(Q.a)(n, l, l.posts.models[e.postId]);
+										let o = s && n && Object(H.a)(n, l, l.posts.models[e.postId]);
 										if (o || (o = Object(j.a)(e.postId, null, {
 												sort: C.w,
 												hasSortParam: !0
@@ -1536,7 +1524,7 @@
 					if (b.ok) {
 						const n = {
 							ids: e,
-							operation: H.a.RemovalReason,
+							operation: Q.a.RemovalReason,
 							username: u,
 							options: {
 								modNote: r,
@@ -2113,8 +2101,8 @@
 				z = s.n(W),
 				G = s("./src/reddit/hooks/useIsAvatarPost.ts"),
 				q = s("./src/reddit/hooks/useIsOverlay.ts"),
-				Q = s("./src/reddit/hooks/useIsRemovedOrDeletedPost.ts"),
-				H = s("./src/reddit/hooks/useUserContext.ts"),
+				H = s("./src/reddit/hooks/useIsRemovedOrDeletedPost.ts"),
+				Q = s("./src/reddit/hooks/useUserContext.ts"),
 				Y = s("./src/reddit/models/Media/index.ts"),
 				K = s("./src/reddit/models/Post/index.ts"),
 				Z = s("./src/reddit/models/Vote/index.ts"),
@@ -2184,7 +2172,7 @@
 						flairStyleTemplate: W,
 						hideNSFWPref: G,
 						hostPostData: q,
-						inSubredditOrProfile: H = !1,
+						inSubredditOrProfile: Q = !1,
 						isBlurredPreview: X,
 						isCheckboxSelected: J,
 						isCommentsPage: $,
@@ -2220,7 +2208,7 @@
 						showRealtimeUpdateAnimation: Ie,
 						isUpdatedContent: Te,
 						isNightMode: Ae
-					} = e, Pe = Object(r.d)(), Me = e => e === Z.a.upvoted ? Pe(Object(c.ib)(_e)) : Pe(Object(c.v)(_e)), De = () => Pe(Object(c.eb)(_e)), Le = Oe ? void 0 : W, Fe = Object(U.a)(pe), Be = be && Fe, Ue = Object(F.a)(pe), Ve = Object(B.a)(pe), We = Object(E.a)(he), ze = Object(y.c)(he), Ge = !!(null == q ? void 0 : q.shouldShowLinkedPosts), qe = Ee, Qe = !Object(Q.a)() && Object(L.a)(he), He = H && !ke && !Ge && !qe || Ne, Ye = He && !!he.source && !s, Ke = !(te && !!a || re) && !ee && (!H || Ge || qe) || oe, Ze = (!H || Ge || qe) && !he.isSponsored, Xe = Object(i.t)(he, ue), Je = !!(X && (null == Se ? void 0 : Se.isNSFW)), $e = Object(n.useRef)({
+					} = e, Pe = Object(r.d)(), Me = e => e === Z.a.upvoted ? Pe(Object(c.ib)(_e)) : Pe(Object(c.v)(_e)), De = () => Pe(Object(c.eb)(_e)), Le = Oe ? void 0 : W, Fe = Object(U.a)(pe), Be = be && Fe, Ue = Object(F.a)(pe), Ve = Object(B.a)(pe), We = Object(E.a)(he), ze = Object(y.c)(he), Ge = !!(null == q ? void 0 : q.shouldShowLinkedPosts), qe = Ee, He = !Object(H.a)() && Object(L.a)(he), Qe = Q && !ke && !Ge && !qe || Ne, Ye = Qe && !!he.source && !s, Ke = !(te && !!a || re) && !ee && (!Q || Ge || qe) || oe, Ze = (!Q || Ge || qe) && !he.isSponsored, Xe = Object(i.t)(he, ue), Je = !!(X && (null == Se ? void 0 : Se.isNSFW)), $e = Object(n.useRef)({
 						renderingObjectInfo: he
 					}), et = Object(K.r)(he);
 					return o.a.createElement(o.a.Fragment, null, o.a.createElement(N.b, {
@@ -2281,7 +2269,7 @@
 						hideNSFWPref: G,
 						hostPostData: q,
 						iconClassName: ie.a.postTopLineIcon,
-						inSubredditOrProfile: H,
+						inSubredditOrProfile: Q,
 						isCommentsPage: $,
 						isCurrentUserProfilePost: ee,
 						isModWithUserNotesPermissions: se,
@@ -2313,7 +2301,7 @@
 					}), we && he.media && he.media.type !== Y.o.TEXT && he.media.type !== Y.o.IMAGE && he.media.richtextContent && o.a.createElement(v.a, {
 						content: he.media.richtextContent,
 						rtJsonElementProps: $e.current
-					}))), !He && Qe && o.a.createElement(de.a, {
+					}))), !Qe && He && o.a.createElement(de.a, {
 						crosspost: s ? he : void 0,
 						hasModPostPerms: Fe,
 						isCommentsPage: $,
@@ -2388,7 +2376,7 @@
 				const t = Object(n.useMemo)(() => le(), []),
 					s = Object(r.e)(s => t(s, e), r.c),
 					a = Object(G.a)(e.post),
-					i = Object(H.a)();
+					i = Object(Q.a)();
 				return o.a.createElement(ue, ce({}, e, s, {
 					modModeEnabled: i.modModeEnabled,
 					hideNSFWPref: i.prefs.hideNSFW,
@@ -2878,8 +2866,8 @@
 				z = s("./src/reddit/selectors/user.ts"),
 				G = s("./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx"),
 				q = s("./src/devPlatform/constants.ts");
-			const Q = (e, t) => Object(b.c)(t, e),
-				H = (e, t) => e ? t ? n.fbt._("Unlock Comments", null, {
+			const H = (e, t) => Object(b.c)(t, e),
+				Q = (e, t) => e ? t ? n.fbt._("Unlock Comments", null, {
 					hk: "zGuti"
 				}) : n.fbt._("Lock Comments", null, {
 					hk: "1QO9cp"
@@ -2903,7 +2891,7 @@
 						k = Object(a.e)(z.P),
 						C = Object(a.e)(W.b),
 						S = Object(B.a)(c),
-						j = O ? f.n : Q,
+						j = O ? f.n : H,
 						N = t.authorId === y,
 						Y = k && N,
 						K = (null === (l = t.distinguishType) || void 0 === l ? void 0 : l.toLowerCase()) === i.I.ADMIN,
@@ -2996,7 +2984,7 @@
 					}))), r.a.createElement(L.b, {
 						className: w.a.dropdownRow,
 						onClick: X,
-						displayText: H(O, !!(null == t ? void 0 : t.isLocked))
+						displayText: Q(O, !!(null == t ? void 0 : t.isLocked))
 					}, r.a.createElement(v.a, {
 						name: I.a.lock,
 						isFilled: null == t ? void 0 : t.isLocked
@@ -3531,9 +3519,9 @@
 					const z = [j.a.REPORTED, j.a.FILTERED, j.a.UNMODERATED].includes(I),
 						G = [j.a.APPROVED, j.a.UNMODERATED, j.a.REPORTED].includes(I),
 						q = A && D,
-						Q = I === j.a.REMOVED && Object(p.b)(t) && t.removedByCategory === O.g.Reddit && !t.isRemoved && !t.isApproved,
-						H = I === j.a.FILTERED || Q,
-						K = I === j.a.REMOVED && !t.modRemovalReason && !H,
+						H = I === j.a.REMOVED && Object(p.b)(t) && t.removedByCategory === O.g.Reddit && !t.isRemoved && !t.isApproved,
+						Q = I === j.a.FILTERED || H,
+						K = I === j.a.REMOVED && !t.modRemovalReason && !Q,
 						Z = [j.a.REMOVED, j.a.SPAM].indexOf(I) > -1,
 						X = A ? f.n : Ae,
 						J = Object(o.useCallback)(() => {
@@ -3593,7 +3581,7 @@
 						text: n.fbt._("Add Removal Reason", null, {
 							hk: "2htsXM"
 						})
-					}), H && r.a.createElement(u.t, {
+					}), Q && r.a.createElement(u.t, {
 						className: w.a.button,
 						Icon: Object(v.b)("close"),
 						iconPosition: u.h.L,
@@ -4170,9 +4158,9 @@
 				z = s("./src/reddit/selectors/user.ts"),
 				G = s("./src/telemetry/models/Outbound.ts"),
 				q = s("./src/reddit/components/PostTitle/getLeftAndRightFlair.ts"),
-				Q = s("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
-				H = s("./src/reddit/components/PostTitle/index.m.less"),
-				Y = s.n(H);
+				H = s("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
+				Q = s("./src/reddit/components/PostTitle/index.m.less"),
+				Y = s.n(Q);
 
 			function K() {
 				return (K = Object.assign || function(e) {
@@ -4410,7 +4398,7 @@
 					return a.a.createElement("div", {
 						className: Object(u.a)(Y.a.Component, e, d.id),
 						ref: this.props.innerRef,
-						"data-adclicklocation": Q.a.TITLE,
+						"data-adclicklocation": H.a.TITLE,
 						onClick: m
 					}, !c && v && a.a.createElement(I.a, {
 						isFlairFilter: !0,
@@ -4523,8 +4511,8 @@
 					showSubredditIcon: z,
 					subredditOrProfile: G,
 					isFollowed: q,
-					shouldShowFollowButton: Q,
-					onFollowPostClick: H,
+					shouldShowFollowButton: H,
+					onFollowPostClick: Q,
 					onSubscribed: Y
 				} = e;
 				const K = L,
@@ -4592,9 +4580,9 @@
 					source: B.source
 				}, r.a.createElement(E.a, {
 					className: j.a.outboundLinkIcon
-				})), Q && X && r.a.createElement(u.a, {
+				})), H && X && r.a.createElement(u.a, {
 					isFilled: !!q,
-					onClick: H,
+					onClick: Q,
 					hasTooltip: !0,
 					tooltipText: n.fbt._("Follow post to stay updated", null, {
 						hk: "26UP9Z"
@@ -6498,4 +6486,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.f56c5c33db4e49abc57a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.771974d47cdee4ee1dab.js.map

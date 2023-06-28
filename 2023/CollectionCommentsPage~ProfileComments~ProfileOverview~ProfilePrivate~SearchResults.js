@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.e333bfc3ba179e5e7e56.js
-// Retrieved at 6/28/2023, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.f318a3a556a4228f6fac.js
+// Retrieved at 6/28/2023, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -617,18 +617,18 @@
 							isLocked: i.isLocked
 						}
 					}))
-				}, _ = Object(r.a)(x.J), O = e => async (t, n, s) => {
+				}, _ = Object(r.a)(x.J), O = e => async (t, n, o) => {
 					let {
-						apiContext: r,
-						gqlContext: i
-					} = s;
-					const a = n(),
-						m = a.features.comments.models[e],
-						u = a.user.account ? a.user.account.displayText : null;
-					m && u && (t(Object(v.j)({
+						apiContext: s,
+						gqlContext: r
+					} = o;
+					const i = n(),
+						a = i.features.comments.models[e],
+						c = i.user.account ? i.user.account.displayText : null;
+					a && c && (t(Object(v.j)({
 						[e]: {
 							isApproved: !0,
-							approvedBy: u,
+							approvedBy: c,
 							approvedAtUTC: Date.now(),
 							bannedBy: null,
 							isRemoved: !1,
@@ -638,57 +638,45 @@
 							modRemovalReason: null,
 							numReports: 0
 						}
-					})), (await Object(l.a)(i(), e)).ok ? t(Object(c.f)({
-						kind: h.b.SuccessMod,
-						text: o.fbt._("comment has been approved", null, {
-							hk: "4GfKQi"
-						})
-					})) : t(Object(v.j)({
+					})), (await Object(l.a)(r(), e)).ok || t(Object(v.j)({
 						[e]: {
-							isApproved: m.isApproved,
+							isApproved: a.isApproved,
 							approvedBy: null,
-							bannedBy: m.bannedBy,
-							isRemoved: m.isRemoved,
-							isSpam: m.isSpam,
-							modNote: m.modNote,
-							modReasonBy: m.modReasonBy,
-							modRemovalReason: m.modRemovalReason,
-							numReports: m.numReports || null
+							bannedBy: a.bannedBy,
+							isRemoved: a.isRemoved,
+							isSpam: a.isSpam,
+							modNote: a.modNote,
+							modReasonBy: a.modReasonBy,
+							modRemovalReason: a.modRemovalReason,
+							numReports: a.numReports || null
 						}
 					})), Object(d.d)())
-				}, y = (e, t) => async (n, s, r) => {
+				}, y = (e, t) => async (n, o, s) => {
 					let {
-						apiContext: i,
-						gqlContext: a
-					} = r;
-					const m = s(),
-						u = m.features.comments.models[e],
-						p = m.user.account ? m.user.account.displayText : null;
-					u && p && (n(Object(v.j)({
+						apiContext: r,
+						gqlContext: i
+					} = s;
+					const a = o(),
+						c = a.features.comments.models[e],
+						m = a.user.account ? a.user.account.displayText : null;
+					c && m && (n(Object(v.j)({
 						[e]: {
 							approvedBy: null,
-							bannedBy: p,
+							bannedBy: m,
 							bannedAtUTC: Date.now(),
 							isApproved: !1,
 							isRemoved: !t,
 							isSpam: t,
 							numReports: 0
 						}
-					})), (await Object(l.h)(a(), e, t)).ok ? n(Object(c.f)({
-						kind: h.b.SuccessMod,
-						text: t ? o.fbt._("comment has been marked as spam", null, {
-							hk: "4fQaFM"
-						}) : o.fbt._("comment has been removed", null, {
-							hk: "1qNTrD"
-						})
-					})) : n(Object(v.j)({
+					})), (await Object(l.h)(i(), e, t)).ok || n(Object(v.j)({
 						[e]: {
-							approvedBy: u.approvedBy,
-							bannedBy: u.bannedBy,
-							isApproved: u.isApproved,
-							isRemoved: u.isRemoved,
-							isSpam: u.isSpam,
-							numReports: u.numReports
+							approvedBy: c.approvedBy,
+							bannedBy: c.bannedBy,
+							isApproved: c.isApproved,
+							isRemoved: c.isRemoved,
+							isSpam: c.isSpam,
+							numReports: c.numReports
 						}
 					})), Object(d.d)())
 				}, E = e => async (t, n, s) => {
@@ -2662,4 +2650,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.e333bfc3ba179e5e7e56.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.f318a3a556a4228f6fac.js.map
