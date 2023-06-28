@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.034b0346e22037509827.js
-// Retrieved at 6/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.092c76fb3d543f7d7bf8.js
+// Retrieved at 6/28/2023, 10:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -25992,7 +25992,7 @@
 						experimentEligibilitySelector: i.S,
 						experimentName: r.Hd
 					});
-					return !(!t || Object(r.Jg)(t))
+					return !(!t || Object(r.Kg)(t))
 				},
 				a = e => {
 					return Object(s.c)(e, {
@@ -26480,10 +26480,12 @@
 				return g
 			})), n.d(t, "a", (function() {
 				return _
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "h", (function() {
 				return v
 			})), n.d(t, "f", (function() {
 				return y
+			})), n.d(t, "g", (function() {
+				return E
 			}));
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
@@ -26496,15 +26498,15 @@
 				u = /^\/u(?:ser)?\/[^/]+(\/[^/]+)?\/?$/,
 				m = e => !!e.match(o) || !!e.match(c),
 				p = e => !e.match(c) && (!e.match(a) && (!!e.match(d) || !!e.match(l))),
-				b = (e, t) => !!m(t) && [r.fg.Enabled, r.fg.HardReload].includes(Object(s.c)(e, {
+				b = (e, t) => !!m(t) && [r.gg.Enabled, r.gg.HardReload].includes(Object(s.c)(e, {
 					experimentEligibilitySelector: i.f,
 					experimentName: r.Pf
 				})),
-				f = (e, t) => !!t.match(a) && [r.fg.Enabled, r.fg.HardReload].includes(Object(s.c)(e, {
+				f = (e, t) => !!t.match(a) && [r.gg.Enabled, r.gg.HardReload].includes(Object(s.c)(e, {
 					experimentEligibilitySelector: i.f,
 					experimentName: r.Nf
 				})),
-				h = (e, t) => !!p(t) && [r.fg.Enabled, r.fg.HardReload].includes(Object(s.c)(e, {
+				h = (e, t) => !!p(t) && [r.gg.Enabled, r.gg.HardReload].includes(Object(s.c)(e, {
 					experimentEligibilitySelector: i.f,
 					experimentName: r.Of
 				})),
@@ -26520,14 +26522,20 @@
 				},
 				v = (e, t) => !!(e => {
 					return /^(?:\/r\/[^\/]+)?\/search\/?$/i.test(e) || /^\/u(?:ser)?\/[^\/]+\/m\/[^\/]+\/search\/?$/i.test(e)
-				})(t) && (_(e) === r.fg.Enabled || _(e) === r.fg.HardReload),
+				})(t) && (_(e) === r.gg.Enabled || _(e) === r.gg.HardReload),
 				x = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: i.f,
 						experimentName: r.Qf
 					})
 				},
-				y = (e, t) => !!(e => !!e.match(u))(t) && (x(e) === r.fg.Enabled || x(e) === r.fg.HardReload)
+				y = (e, t) => !!(e => !!e.match(u))(t) && (x(e) === r.gg.Enabled || x(e) === r.gg.HardReload),
+				E = (e, t) => !!(e => !!(e.match(a) || e.match(o) || e.match(c) || e.match(u) || e.match(d) || e.match(l)))(t) && (e => {
+					return Object(s.c)(e, {
+						experimentEligibilitySelector: i.e,
+						experimentName: r.Tf
+					})
+				})(e) === r.gg.Enabled
 		},
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, n) {
 			"use strict";
@@ -26543,15 +26551,21 @@
 			const a = Object(s.a)(i.S, e => !e),
 				c = (e, t) => {
 					const n = t();
-					Object(i.S)(n) || e.block(e => {
-						const t = (e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname),
-							s = Object(o.b)(n, e.pathname),
-							i = Object(o.e)(n, e.pathname),
-							a = Object(o.c)(n, e.pathname),
-							c = Object(o.d)(n, e.pathname),
-							d = Object(o.g)(n, e.pathname),
-							l = Object(o.f)(n, e.pathname);
-						if (s || t || i || a || c || d || l) {
+					e.block(e => {
+						let t = !1;
+						if (Object(i.S)(n)) {
+							Object(o.g)(n, e.pathname) && (t = !0)
+						} else {
+							const r = (e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname),
+								s = Object(o.b)(n, e.pathname),
+								i = Object(o.e)(n, e.pathname),
+								a = Object(o.c)(n, e.pathname),
+								c = Object(o.d)(n, e.pathname),
+								d = Object(o.h)(n, e.pathname),
+								l = Object(o.f)(n, e.pathname);
+							(s || r || i || a || c || d || l) && (t = !0)
+						}
+						if (t) {
 							const t = e.pathname + e.search;
 							return Object(r.f)(n), window.location.href = t, !1
 						}
@@ -26630,9 +26644,9 @@
 					experimentName: s.yd,
 					experimentEligibilitySelector: e => c(e, t)
 				}), e => e),
-				l = e => e === s.pg.NoCommunityWidgets,
-				u = e => e === s.pg.NoRulesModerators,
-				m = e => e === s.pg.RelatedPostsDu
+				l = e => e === s.qg.NoCommunityWidgets,
+				u = e => e === s.qg.NoRulesModerators,
+				m = e => e === s.qg.RelatedPostsDu
 		},
 		"./src/reddit/selectors/experiments/uxtsIntegration.ts": function(e, t, n) {
 			"use strict";
@@ -26954,4 +26968,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.034b0346e22037509827.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.092c76fb3d543f7d7bf8.js.map

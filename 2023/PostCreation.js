@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.4cb55dd7922ca17aa300.js
-// Retrieved at 6/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.4fb4b3ac327d74f89baa.js
+// Retrieved at 6/28/2023, 10:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit~StandalonePostPage", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -39451,29 +39451,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.yg
+						experimentName: o.zg
 					}) === o.Yd
 				},
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.zg
+						experimentName: o.Ag
 					}) === o.Yd
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.xg
+						experimentName: o.yg
 					});
-					return t === o.qg.TypingIndicators || t === o.qg.IndicatorsPlusCTA
+					return t === o.rg.TypingIndicators || t === o.rg.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.d)(e, {
-						experimentName: o.xg
+						experimentName: o.yg
 					});
-					return (null == t ? void 0 : t.variant) === o.qg.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.rg.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/experiments/uxtsIntegration.ts": function(e, t, n) {
@@ -40195,4 +40195,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.4cb55dd7922ca17aa300.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.4fb4b3ac327d74f89baa.js.map

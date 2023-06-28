@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.7e2d3f8f70a4aea8c670.js
-// Retrieved at 6/27/2023, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.1fe1317d83f970e05ffb.js
+// Retrieved at 6/28/2023, 10:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditForkingCTA"], {
 		"./node_modules/lodash/xorWith.js": function(t, _, e) {
@@ -348,10 +348,10 @@
 				p = e("./src/reddit/helpers/chooseVariant/index.ts"),
 				m = e("./src/reddit/selectors/experiments/utils.ts");
 			const f = Object(u.a)(t => Object(p.c)(t, {
-					experimentName: l.Zf,
+					experimentName: l.ag,
 					experimentEligibilitySelector: p.a
 				}), m.a),
-				b = Object(u.a)(f, t => t === l.gg.Enabled);
+				b = Object(u.a)(f, t => t === l.hg.Enabled);
 			var y = e("./src/reddit/selectors/posts.ts"),
 				x = e("./src/reddit/components/CreateCommunityButton/index.tsx"),
 				h = e("./src/reddit/components/TrackingHelper/index.tsx");
@@ -1432,4 +1432,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.7e2d3f8f70a4aea8c670.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.1fe1317d83f970e05ffb.js.map
