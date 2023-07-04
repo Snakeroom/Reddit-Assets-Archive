@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.fa3d73360ba52ef972cd.js
-// Retrieved at 7/4/2023, 1:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.c059d9ce693e97cb9b06.js
+// Retrieved at 7/4/2023, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1455,18 +1455,18 @@
 							isLocked: a.isLocked
 						}
 					}))
-				}, E = Object(r.a)(x.J), y = e => async (t, s, o) => {
+				}, E = Object(r.a)(x.J), y = e => async (t, s, n) => {
 					let {
-						apiContext: r,
-						gqlContext: a
-					} = o;
-					const i = s(),
-						l = i.features.comments.models[e],
-						u = i.user.account ? i.user.account.displayText : null;
-					l && u && (t(Object(O.j)({
+						apiContext: o,
+						gqlContext: r
+					} = n;
+					const a = s(),
+						i = a.features.comments.models[e],
+						c = a.user.account ? a.user.account.displayText : null;
+					i && c && (t(Object(O.j)({
 						[e]: {
 							isApproved: !0,
-							approvedBy: u,
+							approvedBy: c,
 							approvedAtUTC: Date.now(),
 							bannedBy: null,
 							isRemoved: !1,
@@ -1476,57 +1476,45 @@
 							modRemovalReason: null,
 							numReports: 0
 						}
-					})), (await Object(m.a)(a(), e)).ok ? t(Object(c.f)({
-						kind: b.b.SuccessMod,
-						text: n.fbt._("comment has been approved", null, {
-							hk: "4GfKQi"
-						})
-					})) : t(Object(O.j)({
+					})), (await Object(m.a)(r(), e)).ok || t(Object(O.j)({
 						[e]: {
-							isApproved: l.isApproved,
+							isApproved: i.isApproved,
 							approvedBy: null,
-							bannedBy: l.bannedBy,
-							isRemoved: l.isRemoved,
-							isSpam: l.isSpam,
-							modNote: l.modNote,
-							modReasonBy: l.modReasonBy,
-							modRemovalReason: l.modRemovalReason,
-							numReports: l.numReports || null
+							bannedBy: i.bannedBy,
+							isRemoved: i.isRemoved,
+							isSpam: i.isSpam,
+							modNote: i.modNote,
+							modReasonBy: i.modReasonBy,
+							modRemovalReason: i.modRemovalReason,
+							numReports: i.numReports || null
 						}
 					})), Object(d.d)())
-				}, j = (e, t) => async (s, o, r) => {
+				}, j = (e, t) => async (s, n, o) => {
 					let {
-						apiContext: a,
-						gqlContext: i
-					} = r;
-					const l = o(),
-						u = l.features.comments.models[e],
-						p = l.user.account ? l.user.account.displayText : null;
-					u && p && (s(Object(O.j)({
+						apiContext: r,
+						gqlContext: a
+					} = o;
+					const i = n(),
+						c = i.features.comments.models[e],
+						l = i.user.account ? i.user.account.displayText : null;
+					c && l && (s(Object(O.j)({
 						[e]: {
 							approvedBy: null,
-							bannedBy: p,
+							bannedBy: l,
 							bannedAtUTC: Date.now(),
 							isApproved: !1,
 							isRemoved: !t,
 							isSpam: t,
 							numReports: 0
 						}
-					})), (await Object(m.h)(i(), e, t)).ok ? s(Object(c.f)({
-						kind: b.b.SuccessMod,
-						text: t ? n.fbt._("comment has been marked as spam", null, {
-							hk: "4fQaFM"
-						}) : n.fbt._("comment has been removed", null, {
-							hk: "1qNTrD"
-						})
-					})) : s(Object(O.j)({
+					})), (await Object(m.h)(a(), e, t)).ok || s(Object(O.j)({
 						[e]: {
-							approvedBy: u.approvedBy,
-							bannedBy: u.bannedBy,
-							isApproved: u.isApproved,
-							isRemoved: u.isRemoved,
-							isSpam: u.isSpam,
-							numReports: u.numReports
+							approvedBy: c.approvedBy,
+							bannedBy: c.bannedBy,
+							isApproved: c.isApproved,
+							isRemoved: c.isRemoved,
+							isSpam: c.isSpam,
+							numReports: c.numReports
 						}
 					})), Object(d.d)())
 				}, C = e => async (t, s, o) => {
@@ -10081,4 +10069,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.fa3d73360ba52ef972cd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.c059d9ce693e97cb9b06.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.167acc34c5da6584ede8.js
-// Retrieved at 7/4/2023, 1:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.66078c4a4f96eac29f5f.js
+// Retrieved at 7/4/2023, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -3351,18 +3351,18 @@
 							isLocked: i.isLocked
 						}
 					}))
-				}, C = Object(o.a)(v.J), A = e => async (t, n, r) => {
+				}, C = Object(o.a)(v.J), A = e => async (t, n, s) => {
 					let {
-						apiContext: o,
-						gqlContext: i
-					} = r;
-					const a = n(),
-						l = a.features.comments.models[e],
-						m = a.user.account ? a.user.account.displayText : null;
-					l && m && (t(Object(g.j)({
+						apiContext: r,
+						gqlContext: o
+					} = s;
+					const i = n(),
+						a = i.features.comments.models[e],
+						c = i.user.account ? i.user.account.displayText : null;
+					a && c && (t(Object(g.j)({
 						[e]: {
 							isApproved: !0,
-							approvedBy: m,
+							approvedBy: c,
 							approvedAtUTC: Date.now(),
 							bannedBy: null,
 							isRemoved: !1,
@@ -3372,57 +3372,45 @@
 							modRemovalReason: null,
 							numReports: 0
 						}
-					})), (await Object(u.a)(i(), e)).ok ? t(Object(c.f)({
-						kind: b.b.SuccessMod,
-						text: s.fbt._("comment has been approved", null, {
-							hk: "4GfKQi"
-						})
-					})) : t(Object(g.j)({
+					})), (await Object(u.a)(o(), e)).ok || t(Object(g.j)({
 						[e]: {
-							isApproved: l.isApproved,
+							isApproved: a.isApproved,
 							approvedBy: null,
-							bannedBy: l.bannedBy,
-							isRemoved: l.isRemoved,
-							isSpam: l.isSpam,
-							modNote: l.modNote,
-							modReasonBy: l.modReasonBy,
-							modRemovalReason: l.modRemovalReason,
-							numReports: l.numReports || null
+							bannedBy: a.bannedBy,
+							isRemoved: a.isRemoved,
+							isSpam: a.isSpam,
+							modNote: a.modNote,
+							modReasonBy: a.modReasonBy,
+							modRemovalReason: a.modRemovalReason,
+							numReports: a.numReports || null
 						}
 					})), Object(d.d)())
-				}, y = (e, t) => async (n, r, o) => {
+				}, y = (e, t) => async (n, s, r) => {
 					let {
-						apiContext: i,
-						gqlContext: a
-					} = o;
-					const l = r(),
-						m = l.features.comments.models[e],
-						p = l.user.account ? l.user.account.displayText : null;
-					m && p && (n(Object(g.j)({
+						apiContext: o,
+						gqlContext: i
+					} = r;
+					const a = s(),
+						c = a.features.comments.models[e],
+						l = a.user.account ? a.user.account.displayText : null;
+					c && l && (n(Object(g.j)({
 						[e]: {
 							approvedBy: null,
-							bannedBy: p,
+							bannedBy: l,
 							bannedAtUTC: Date.now(),
 							isApproved: !1,
 							isRemoved: !t,
 							isSpam: t,
 							numReports: 0
 						}
-					})), (await Object(u.h)(a(), e, t)).ok ? n(Object(c.f)({
-						kind: b.b.SuccessMod,
-						text: t ? s.fbt._("comment has been marked as spam", null, {
-							hk: "4fQaFM"
-						}) : s.fbt._("comment has been removed", null, {
-							hk: "1qNTrD"
-						})
-					})) : n(Object(g.j)({
+					})), (await Object(u.h)(i(), e, t)).ok || n(Object(g.j)({
 						[e]: {
-							approvedBy: m.approvedBy,
-							bannedBy: m.bannedBy,
-							isApproved: m.isApproved,
-							isRemoved: m.isRemoved,
-							isSpam: m.isSpam,
-							numReports: m.numReports
+							approvedBy: c.approvedBy,
+							bannedBy: c.bannedBy,
+							isApproved: c.isApproved,
+							isRemoved: c.isRemoved,
+							isSpam: c.isSpam,
+							numReports: c.numReports
 						}
 					})), Object(d.d)())
 				}, j = e => async (t, n, r) => {
@@ -13748,77 +13736,95 @@
 		"./src/reddit/actions/postGuidance/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return v
-			})), n.d(t, "b", (function() {
 				return x
+			})), n.d(t, "b", (function() {
+				return E
 			}));
 			var s = n("./src/lib/constants/index.ts"),
 				r = n("./src/lib/makeActionCreator/index.ts"),
 				o = n("./src/lib/sentry/index.ts"),
 				i = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./src/lib/makeGqlRequest/index.ts")),
 				a = n("./src/redditGQL/operations/GetSingleDynamicConfig.json"),
-				d = n("./src/redditGQL/operations/FetchPostGuidanceConfig.json"),
-				c = n("./src/reddit/endpoints/subreddit/about.ts"),
-				l = n("./src/reddit/selectors/postGuidance.ts"),
-				u = n("./src/reddit/selectors/subreddit.ts"),
-				m = n("./src/redditGQL/types.ts"),
-				p = n("./src/reddit/actions/postGuidance/constants.ts");
-			const b = Object(r.a)(p.c),
-				f = Object(r.a)(p.d),
-				h = Object(r.a)(p.b),
-				g = Object(r.a)(p.a),
-				v = () => async (e, t, n) => {
+				d = (e, t) => Object(i.a)(e, {
+					...a,
+					variables: t
+				}).then(e => {
+					var t, n, s, r;
+					if (e.ok) {
+						const o = null === (s = null === (n = null === (t = e.body) || void 0 === t ? void 0 : t.data) || void 0 === n ? void 0 : n.dynamicConfigsByNames) || void 0 === s ? void 0 : s.values,
+							i = null === (r = null == o ? void 0 : o[0]) || void 0 === r ? void 0 : r.value;
+						return {
+							...e,
+							body: i ? JSON.parse(i) : {}
+						}
+					}
+					return e
+				}),
+				c = n("./src/redditGQL/operations/FetchPostGuidanceConfig.json"),
+				l = n("./src/reddit/endpoints/subreddit/about.ts"),
+				u = n("./src/reddit/selectors/postGuidance.ts"),
+				m = n("./src/reddit/selectors/subreddit.ts"),
+				p = n("./src/redditGQL/types.ts"),
+				b = n("./src/reddit/actions/postGuidance/constants.ts");
+			const f = Object(r.a)(b.c),
+				h = Object(r.a)(b.d),
+				g = Object(r.a)(b.b),
+				v = Object(r.a)(b.a),
+				x = () => async (e, t, n) => {
 					let {
 						gqlContext: s
 					} = n;
-					const r = await ((e, t) => Object(i.a)(e, {
-						...a,
-						variables: t
-					}).then(e => {
-						var t, n, s, r;
-						if (e.ok) {
-							const o = null === (s = null === (n = null === (t = e.body) || void 0 === t ? void 0 : t.data) || void 0 === n ? void 0 : n.dynamicConfigsByNames) || void 0 === s ? void 0 : s.values,
-								i = null === (r = null == o ? void 0 : o[0]) || void 0 === r ? void 0 : r.value;
-							return {
-								...e,
-								body: i ? JSON.parse(i) : {}
-							}
-						}
-						return e
-					}))(s(), {
-						name: "post_guidance_beta_subreddits_v1",
-						type: m.p.Map
-					});
-					r.ok && e(g(r.body))
-				}, x = e => async (t, n, r) => {
+					var r;
+					const o = d(s(), {
+							name: "post_guidance_beta_subreddits_v1",
+							type: p.p.Map
+						}),
+						i = d(s(), {
+							name: "post_guidance_tier3_subreddits_v1",
+							type: p.p.Map
+						}),
+						a = await Promise.allSettled([o, i]),
+						[c, l] = a;
+					let u = {};
+					"fulfilled" === c.status && c.value.ok && c.value.body && (u = {
+						...u,
+						...c.value.body
+					}), "fulfilled" === l.status && l.value.ok && (null === (r = l.value.body) || void 0 === r ? void 0 : r.ids) && (u = {
+						...u,
+						...l.value.body.ids.split(",").filter(e => "" !== e).reduce((e, t) => ({
+							...e,
+							[t]: !0
+						}), {})
+					}), u && e(v(u))
+				}, E = e => async (t, n, r) => {
 					let {
 						gqlContext: a
 					} = r;
-					var m, p, g;
+					var d, p, b;
 					const v = {
 						subredditName: e.toLowerCase()
 					};
-					if (Object(l.a)(n(), v)) return;
-					t(f(v));
-					let x, E = Object(u.I)(n(), e);
+					if (Object(u.a)(n(), v)) return;
+					t(h(v));
+					let x, E = Object(m.I)(n(), e);
 					if (!E) {
-						const n = await Object(c.a)(a(), e, !1);
+						const n = await Object(l.a)(a(), e, !1);
 						if (n.ok) {
 							const e = n.body;
-							E = null === (p = null === (m = null == e ? void 0 : e.data) || void 0 === m ? void 0 : m.subreddit) || void 0 === p ? void 0 : p.id
+							E = null === (p = null === (d = null == e ? void 0 : e.data) || void 0 === d ? void 0 : d.subreddit) || void 0 === p ? void 0 : p.id
 						}
 						if (!E) {
 							const e = n.error || {
 								type: s.K.NOT_FOUND_ERROR
 							};
-							return void t(h({
+							return void t(g({
 								...v,
 								error: e
 							}))
 						}
 					}
 					const O = await ((e, t) => Object(i.a)(e, {
-						...d,
+						...c,
 						variables: t
 					}).then(e => {
 						var t, n, s;
@@ -13840,7 +13846,7 @@
 						subredditName: e
 					});
 					if (O.ok) {
-						x = null === (g = O.body.data.subreddit) || void 0 === g ? void 0 : g.postGuidanceConfig, t(b({
+						x = null === (b = O.body.data.subreddit) || void 0 === b ? void 0 : b.postGuidanceConfig, t(f({
 							...v,
 							postGuidanceConfig: x
 						}))
@@ -13848,7 +13854,7 @@
 						const n = O.error || {
 							type: s.K.UNKNOWN_ERROR
 						};
-						t(h({
+						t(g({
 							...v,
 							error: n
 						})), o.c.withScope(t => {
@@ -81548,4 +81554,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.167acc34c5da6584ede8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.66078c4a4f96eac29f5f.js.map
