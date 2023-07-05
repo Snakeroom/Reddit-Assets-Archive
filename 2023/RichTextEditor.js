@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.3869f0d576e36ac45d44.js
-// Retrieved at 6/28/2023, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.9c55e47e06076dd42f89.js
+// Retrieved at 7/5/2023, 1:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -4033,7 +4033,7 @@
 					trackPostGuidanceView: n,
 					emptyState: c = !1
 				} = e;
-				const [u, m] = Object(o.useState)(!1), p = t.filter(e => e.actionType === i.N.Block), h = p.length > 0 ? p : t, b = u ? h : h.slice(0, 5), f = Object(a.a)(b);
+				const [u, m] = Object(o.useState)(!1), p = t.filter(e => e.actionType === i.O.Block), h = p.length > 0 ? p : t, b = u ? h : h.slice(0, 5), f = Object(a.a)(b);
 				return Object(o.useEffect)(() => {
 					const e = b.map(e => e.guidanceId),
 						t = (null == f ? void 0 : f.map(e => e.guidanceId)) || [],
@@ -4042,10 +4042,10 @@
 				}, [t, b, f, n]), r.a.createElement("div", {
 					"data-testid": "post-guidance-validation"
 				}, r.a.createElement("ol", null, b.map((e, t) => r.a.createElement("li", {
-					className: `${c||e.actionType!==i.N.Block?"":l.a.errorText} text-12 pt-2xs`,
+					className: `${c||e.actionType!==i.O.Block?"":l.a.errorText} text-12 pt-2xs`,
 					key: t
 				}, e.validationMessage.richtext ? r.a.createElement(d.b, {
-					className: `${c||e.actionType!==i.N.Block?"":l.a.errorText} !text-12 !pt-2xs`,
+					className: `${c||e.actionType!==i.O.Block?"":l.a.errorText} !text-12 !pt-2xs`,
 					useExplicitTextColor: !0,
 					content: JSON.parse(e.validationMessage.richtext),
 					rtJsonElementProps: {}
@@ -4717,4 +4717,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.3869f0d576e36ac45d44.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.9c55e47e06076dd42f89.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HappeningNow.5cb1173194dba5cbd8ad.js
-// Retrieved at 6/14/2023, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HappeningNow.9c7ce513dbc95455edfd.js
+// Retrieved at 7/5/2023, 1:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HappeningNow"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -28,8 +28,8 @@
 						p = /(web|hpw)os/i.test(t),
 						h = /windows phone/i.test(t),
 						b = (/SamsungBrowser/i.test(t), !h && /windows/i.test(t)),
-						C = !o && !d && /macintosh/i.test(t),
-						v = !s && !m && !u && !p && /linux/i.test(t),
+						v = !o && !d && /macintosh/i.test(t),
+						C = !s && !m && !u && !p && /linux/i.test(t),
 						f = r(/edg([ea]|ios)\/(\d+(\.\d+)?)/i),
 						w = n(/version\/(\d+(\.\d+)?)/i),
 						g = /tablet/i.test(t) && !/tablet pc/i.test(t),
@@ -174,7 +174,7 @@
 					} : {
 						name: n(/^(.*)\/(.*) /),
 						version: r(/^(.*)\/(.*) /)
-					}, !a.msedge && /(apple)?webkit/i.test(t) ? (/(apple)?webkit\/537\.36/i.test(t) ? (a.name = a.name || "Blink", a.blink = e) : (a.name = a.name || "Webkit", a.webkit = e), !a.version && w && (a.version = w)) : !a.opera && /gecko\//i.test(t) && (a.name = a.name || "Gecko", a.gecko = e, a.version = a.version || n(/gecko\/(\d+(\.\d+)?)/i)), a.windowsphone || !s && !a.silk ? !a.windowsphone && o ? (a[o] = e, a.ios = e, a.osname = "iOS") : C ? (a.mac = e, a.osname = "macOS") : _ ? (a.xbox = e, a.osname = "Xbox") : b ? (a.windows = e, a.osname = "Windows") : v && (a.linux = e, a.osname = "Linux") : (a.android = e, a.osname = "Android");
+					}, !a.msedge && /(apple)?webkit/i.test(t) ? (/(apple)?webkit\/537\.36/i.test(t) ? (a.name = a.name || "Blink", a.blink = e) : (a.name = a.name || "Webkit", a.webkit = e), !a.version && w && (a.version = w)) : !a.opera && /gecko\//i.test(t) && (a.name = a.name || "Gecko", a.gecko = e, a.version = a.version || n(/gecko\/(\d+(\.\d+)?)/i)), a.windowsphone || !s && !a.silk ? !a.windowsphone && o ? (a[o] = e, a.ios = e, a.osname = "iOS") : v ? (a.mac = e, a.osname = "macOS") : _ ? (a.xbox = e, a.osname = "Xbox") : b ? (a.windows = e, a.osname = "Windows") : C && (a.linux = e, a.osname = "Linux") : (a.android = e, a.osname = "Android");
 					var E = "";
 					a.windows ? E = function(e) {
 						switch (e) {
@@ -811,8 +811,8 @@
 				p = n("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts"),
 				h = n("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts"),
 				b = n("./src/reddit/models/Post/index.ts"),
-				C = n("./src/redditGQL/operations/FetchLiveDiscoveryContent.json"),
-				v = n("./src/redditGQL/types.ts");
+				v = n("./src/redditGQL/operations/FetchLiveDiscoveryContent.json"),
+				C = n("./src/redditGQL/types.ts");
 			const f = e => {
 					const {
 						icon: t,
@@ -826,7 +826,7 @@
 					}
 				},
 				w = async e => {
-					const t = await Object(m.a)(e, C);
+					const t = await Object(m.a)(e, v);
 					if (!Object(u.c)(t)) throw new Error("Encountered an error while fetching live discovery content");
 					return (e => {
 						var t, n, r, a;
@@ -847,28 +847,28 @@
 								} = i;
 								if (Object(b.j)(l) || Object(b.i)(l)) return;
 								const u = [];
-								let C;
+								let v;
 								const w = Object(p.f)(l);
 								if (o[w.id] = w, Object(b.n)(l)) {
 									const e = Object(h.a)(l.subreddit);
 									s[e.id] = e
 								}
 								switch (c) {
-									case v.u.Chat: {
+									case C.v.Chat: {
 										const e = null === (r = null === (n = null === (t = null == l ? void 0 : l.commentForest) || void 0 === t ? void 0 : t.trees) || void 0 === n ? void 0 : n.map(e => f(null == e ? void 0 : e.node))) || void 0 === r ? void 0 : r.filter(d.a);
 										(null == e ? void 0 : e.length) && u.push(...e);
 										const a = f(l.authorInfo);
 										a && u.push(a);
 										break
 									}
-									case v.u.Talk:
-										C = l.talkRoom, Array.isArray(null === (a = null == l ? void 0 : l.talkRoom) || void 0 === a ? void 0 : a.topUsers) && u.push(...l.talkRoom.topUsers)
+									case C.v.Talk:
+										v = l.talkRoom, Array.isArray(null === (a = null == l ? void 0 : l.talkRoom) || void 0 === a ? void 0 : a.topUsers) && u.push(...l.talkRoom.topUsers)
 								}
 								return {
 									postId: w.id,
 									participantAvatars: u,
 									contentType: c,
-									talkRoom: C,
+									talkRoom: v,
 									...m
 								}
 							},
@@ -1074,11 +1074,11 @@
 				ee = n("./src/reddit/components/HappeningNow/Post/Header/index.m.less"),
 				te = n.n(ee);
 			const ne = {
-				[v.u.Unknown]: "",
-				[v.u.Chat]: r.fbt._("Chat", null, {
+				[C.v.Unknown]: "",
+				[C.v.Chat]: r.fbt._("Chat", null, {
 					hk: "1oa6K"
 				}),
-				[v.u.Talk]: r.fbt._("Talk", null, {
+				[C.v.Talk]: r.fbt._("Talk", null, {
 					hk: "1lMkQn"
 				})
 			};
@@ -1111,7 +1111,7 @@
 					}), o.a.createElement(W.b, {
 						className: te.a.subredditIcon,
 						iconUrl: d
-					}), t.contentType === v.u.Chat ? o.a.createElement(z, {
+					}), t.contentType === C.v.Chat ? o.a.createElement(z, {
 						className: Object(i.a)(te.a.liveChatIcon, {
 							[te.a.nightMode]: c
 						})
@@ -1146,8 +1146,8 @@
 				pe = n("./src/reddit/selectors/tooltip.ts"),
 				he = n("./src/reddit/components/HappeningNow/Post/Menu/index.m.less"),
 				be = n.n(he);
-			const Ce = Object(se.a)(ce.a);
-			var ve = e => {
+			const ve = Object(se.a)(ce.a);
+			var Ce = e => {
 					let {
 						post: t,
 						itemKey: n
@@ -1172,7 +1172,7 @@
 						id: d,
 						className: be.a.menuButton,
 						onClick: p
-					}, o.a.createElement(ue.a, null), o.a.createElement(Ce, {
+					}, o.a.createElement(ue.a, null), o.a.createElement(ve, {
 						isOpen: m,
 						tooltipId: d
 					}, o.a.createElement(de.b, {
@@ -1317,8 +1317,8 @@
 						b = Object(a.useCallback)(e => {
 							e && f(e.scrollHeight)
 						}, []),
-						[C, f] = Object(a.useState)(0),
-						w = Object(a.useMemo)(() => C > 44, [C]),
+						[v, f] = Object(a.useState)(0),
+						w = Object(a.useMemo)(() => v > 44, [v]),
 						[g, x] = Object(a.useState)(!1),
 						_ = Object(a.useRef)(null),
 						E = Object(a.useCallback)(e => {
@@ -1339,10 +1339,10 @@
 						onClick: () => {
 							var e;
 							switch (u.contentType) {
-								case v.u.Chat:
+								case C.v.Chat:
 									d(Object(Pe.a)(p.permalink));
 									break;
-								case v.u.Talk:
+								case C.v.Talk:
 									window.open(`${k.a.redditUrl}/talk/${null===(e=u.talkRoom)||void 0===e?void 0:e.roomId}`)
 							}
 							m(Object(j.d)(t))
@@ -1367,7 +1367,7 @@
 					})), n && o.a.createElement(Fe, {
 						className: Le.a.votesContainer,
 						post: p
-					}), o.a.createElement(ve, {
+					}), o.a.createElement(Ce, {
 						post: p,
 						itemKey: c
 					}))
@@ -1655,7 +1655,7 @@
 						[c, d] = Object(a.useState)(null),
 						[m, u] = Object(a.useState)(null),
 						[p, h] = Object(a.useState)(!1),
-						[b, C] = Object(a.useState)(!1);
+						[b, v] = Object(a.useState)(!1);
 					Object(a.useEffect)(() => {
 						const e = n.current;
 						if (!e) return;
@@ -1680,9 +1680,9 @@
 							e.removeEventListener("scroll", t)
 						}
 					}, [n]), Object(a.useEffect)(() => {
-						h(Boolean(c)), C(Boolean(m))
+						h(Boolean(c)), v(Boolean(m))
 					}, [c, m]);
-					const v = Object(a.useCallback)(e => {
+					const C = Object(a.useCallback)(e => {
 							const t = n.current;
 							if (!t || !e) return;
 							let r = 0;
@@ -1691,8 +1691,8 @@
 								behavior: "smooth"
 							})
 						}, [n]),
-						f = Object(a.useCallback)(() => v(m), [v, m]),
-						w = Object(a.useCallback)(() => v(c), [v, c]);
+						f = Object(a.useCallback)(() => C(m), [C, m]),
+						w = Object(a.useCallback)(() => C(c), [C, c]);
 					return o.a.createElement("div", {
 						className: Object(i.a)(rt.a.container),
 						role: "region",
@@ -1738,11 +1738,11 @@
 				ot = n("./src/reddit/pages/HappeningNow/index.m.less"),
 				st = n.n(ot);
 			const it = {
-					[v.t.Unknown]: "",
-					[v.t.Popular]: r.fbt._("Popular", null, {
+					[C.u.Unknown]: "",
+					[C.u.Popular]: r.fbt._("Popular", null, {
 						hk: "2pUvlx"
 					}),
-					[v.t.Recommended]: r.fbt._("For you", null, {
+					[C.u.Recommended]: r.fbt._("For you", null, {
 						hk: "19HGNV"
 					})
 				},
@@ -1771,29 +1771,29 @@
 						className: st.a.outer
 					}, o.a.createElement("h1", {
 						className: st.a.header
-					}, it[v.t.Popular]), o.a.createElement(at, null, e.map(e => o.a.createElement(Ve, {
+					}, it[C.u.Popular]), o.a.createElement(at, null, e.map(e => o.a.createElement(Ve, {
 						key: e,
 						postId: e,
 						showVotes: !1,
 						showBodyContent: !1,
 						titleLineCount: 2,
-						itemKey: lt(v.t.Popular, e)
+						itemKey: lt(C.u.Popular, e)
 					})))), o.a.createElement("div", {
 						className: st.a.twoColumnLayout
 					}, o.a.createElement("div", {
 						className: Object(i.a)(st.a.column, st.a.content)
 					}, !!t.length && o.a.createElement(Ge, {
-						title: it[v.t.Recommended]
+						title: it[C.u.Recommended]
 					}, t.map(e => o.a.createElement(Ve, {
 						key: e,
 						postId: e,
-						itemKey: lt(v.t.Recommended, e)
+						itemKey: lt(C.u.Recommended, e)
 					}))), !!e.length && !n && o.a.createElement(Ge, {
-						title: it[v.t.Popular]
+						title: it[C.u.Popular]
 					}, e.map(e => o.a.createElement(Ve, {
 						key: e,
 						postId: e,
-						itemKey: lt(v.t.Popular, e)
+						itemKey: lt(C.u.Popular, e)
 					})))), o.a.createElement(ct, {
 						addTopMargin: !0
 					})))
@@ -1832,4 +1832,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.5cb1173194dba5cbd8ad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HappeningNow.9c7ce513dbc95455edfd.js.map

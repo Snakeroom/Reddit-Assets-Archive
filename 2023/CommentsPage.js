@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.60d12bb4502f9dd236f3.js
-// Retrieved at 7/5/2023, 5:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.fbf9519b3126ae612b49.js
+// Retrieved at 7/5/2023, 1:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "CollectionCommentsPage~SearchResults", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -4306,18 +4306,18 @@
 							isLocked: i.isLocked
 						}
 					}))
-				}, x = Object(o.a)(g.J), y = e => async (t, n, r) => {
+				}, x = Object(o.a)(g.J), y = e => async (t, n, s) => {
 					let {
-						apiContext: o,
-						gqlContext: i
-					} = r;
-					const a = n(),
-						l = a.features.comments.models[e],
-						m = a.user.account ? a.user.account.displayText : null;
-					l && m && (t(Object(C.j)({
+						apiContext: r,
+						gqlContext: o
+					} = s;
+					const i = n(),
+						a = i.features.comments.models[e],
+						d = i.user.account ? i.user.account.displayText : null;
+					a && d && (t(Object(C.j)({
 						[e]: {
 							isApproved: !0,
-							approvedBy: m,
+							approvedBy: d,
 							approvedAtUTC: Date.now(),
 							bannedBy: null,
 							isRemoved: !1,
@@ -4327,57 +4327,45 @@
 							modRemovalReason: null,
 							numReports: 0
 						}
-					})), (await Object(u.a)(i(), e)).ok ? t(Object(d.f)({
-						kind: b.b.SuccessMod,
-						text: s.fbt._("comment has been approved", null, {
-							hk: "4GfKQi"
-						})
-					})) : t(Object(C.j)({
+					})), (await Object(u.a)(o(), e)).ok || t(Object(C.j)({
 						[e]: {
-							isApproved: l.isApproved,
+							isApproved: a.isApproved,
 							approvedBy: null,
-							bannedBy: l.bannedBy,
-							isRemoved: l.isRemoved,
-							isSpam: l.isSpam,
-							modNote: l.modNote,
-							modReasonBy: l.modReasonBy,
-							modRemovalReason: l.modRemovalReason,
-							numReports: l.numReports || null
+							bannedBy: a.bannedBy,
+							isRemoved: a.isRemoved,
+							isSpam: a.isSpam,
+							modNote: a.modNote,
+							modReasonBy: a.modReasonBy,
+							modRemovalReason: a.modRemovalReason,
+							numReports: a.numReports || null
 						}
 					})), Object(c.d)())
-				}, E = (e, t) => async (n, r, o) => {
+				}, E = (e, t) => async (n, s, r) => {
 					let {
-						apiContext: i,
-						gqlContext: a
-					} = o;
-					const l = r(),
-						m = l.features.comments.models[e],
-						p = l.user.account ? l.user.account.displayText : null;
-					m && p && (n(Object(C.j)({
+						apiContext: o,
+						gqlContext: i
+					} = r;
+					const a = s(),
+						d = a.features.comments.models[e],
+						l = a.user.account ? a.user.account.displayText : null;
+					d && l && (n(Object(C.j)({
 						[e]: {
 							approvedBy: null,
-							bannedBy: p,
+							bannedBy: l,
 							bannedAtUTC: Date.now(),
 							isApproved: !1,
 							isRemoved: !t,
 							isSpam: t,
 							numReports: 0
 						}
-					})), (await Object(u.h)(a(), e, t)).ok ? n(Object(d.f)({
-						kind: b.b.SuccessMod,
-						text: t ? s.fbt._("comment has been marked as spam", null, {
-							hk: "4fQaFM"
-						}) : s.fbt._("comment has been removed", null, {
-							hk: "1qNTrD"
-						})
-					})) : n(Object(C.j)({
+					})), (await Object(u.h)(i(), e, t)).ok || n(Object(C.j)({
 						[e]: {
-							approvedBy: m.approvedBy,
-							bannedBy: m.bannedBy,
-							isApproved: m.isApproved,
-							isRemoved: m.isRemoved,
-							isSpam: m.isSpam,
-							numReports: m.numReports
+							approvedBy: d.approvedBy,
+							bannedBy: d.bannedBy,
+							isApproved: d.isApproved,
+							isRemoved: d.isRemoved,
+							isSpam: d.isSpam,
+							numReports: d.numReports
 						}
 					})), Object(c.d)())
 				}, j = e => async (t, n, r) => {
@@ -7056,8 +7044,8 @@
 				} = e;
 				const a = {
 					username: t,
-					sort: y(n, Object.values(O.M)),
-					range: y(r, Object.values(O.L)),
+					sort: y(n, Object.values(O.N)),
+					range: y(r, Object.values(O.M)),
 					filter: s
 				};
 				if (o) {
@@ -7294,7 +7282,7 @@
 						const e = E({
 							username: I,
 							profileSort: k,
-							filter: O.S.Posts,
+							filter: O.T.Posts,
 							timeSort: Object(P.a)(k, S),
 							shouldUseGqlCursor: !0
 						});
@@ -7331,7 +7319,7 @@
 						const e = E({
 								username: I,
 								profileSort: k,
-								filter: O.S.Posts
+								filter: O.T.Posts
 							}),
 							t = await x(s.gqlContext(), e);
 						if (t.ok && t.body) {
@@ -7407,7 +7395,7 @@
 						const e = E({
 							username: b,
 							profileSort: m,
-							filter: O.S.Posts,
+							filter: O.T.Posts,
 							timeSort: Object(P.a)(m, p),
 							loadMoreData: h,
 							shouldUseGqlCursor: !0
@@ -7446,7 +7434,7 @@
 						const e = E({
 								username: b,
 								profileSort: m,
-								filter: O.S.Posts,
+								filter: O.T.Posts,
 								loadMoreData: h
 							}),
 							t = await x(o(), e);
@@ -21758,7 +21746,7 @@
 								type: e
 							}
 						}))(m)), x(!1), n(Object(a.c)({
-							experience: E.db.LanguagePreferenceBottomSheet,
+							experience: E.eb.LanguagePreferenceBottomSheet,
 							value: !1
 						}))
 					},
@@ -21791,7 +21779,7 @@
 								})
 							}))
 						})(), x(!1), n(Object(a.c)({
-							experience: E.db.LanguagePreferenceBottomSheet,
+							experience: E.eb.LanguagePreferenceBottomSheet,
 							value: !1
 						}))
 					};
@@ -21804,7 +21792,7 @@
 						...Object(f.d)(t),
 						type: e
 					}
-				}))(m)), n(Object(a.d)(E.db.LanguagePreferenceBottomSheet)), r.a.createElement("div", {
+				}))(m)), n(Object(a.d)(E.eb.LanguagePreferenceBottomSheet)), r.a.createElement("div", {
 					className: l.a.PromptContainer
 				}, r.a.createElement("div", {
 					className: l.a.PromptClose
@@ -21844,7 +21832,7 @@
 					gqlContext: n
 				} = e, s = Object(o.f)().getState();
 				return (null === (t = Object(o.e)(e => Object(O.a)(e, {
-					experience: E.db.LanguagePreferenceBottomSheet
+					experience: E.eb.LanguagePreferenceBottomSheet
 				}))) || void 0 === t ? void 0 : t.value) && Object(x.b)(s) ? r.a.createElement(k, {
 					gqlContext: n
 				}) : null
@@ -22476,7 +22464,7 @@
 				var t;
 				return i.a.createElement("p", {
 					className: gt.a.VideoProcessingStatus
-				}, (null === (t = e.post.mediaStatus) || void 0 === t ? void 0 : t.transcodingStatus) === mt.bb.Error ? Ot._("The video file submitted for this post failed to process successfully.", null, {
+				}, (null === (t = e.post.mediaStatus) || void 0 === t ? void 0 : t.transcodingStatus) === mt.cb.Error ? Ot._("The video file submitted for this post failed to process successfully.", null, {
 					hk: "2ybSik"
 				}) : e.isAuthorCurrentUser ? Ot._("Your video is processing. We'll send you a notification when it's done.", null, {
 					hk: "1rkfJE"
@@ -49981,4 +49969,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.60d12bb4502f9dd236f3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.fbf9519b3126ae612b49.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.2cb2f5911f71239045d2.js
-// Retrieved at 6/28/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.8416cd211d4bf207a27a.js
+// Retrieved at 7/5/2023, 1:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit~StandalonePostPage", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -5427,7 +5427,7 @@
 							tooltipId: e,
 							args: {
 								isModNotesView: !0,
-								modNotesFilter: g.z.Note
+								modNotesFilter: g.A.Note
 							}
 						})), E(Object(c.a)(n.id, n.authorId))
 					}, [n, y, C, E]);
@@ -9540,7 +9540,7 @@
 								type: e
 							}
 						}))(m)), x(!1), n(Object(a.c)({
-							experience: _.db.LanguagePreferenceBottomSheet,
+							experience: _.eb.LanguagePreferenceBottomSheet,
 							value: !1
 						}))
 					},
@@ -9573,7 +9573,7 @@
 								})
 							}))
 						})(), x(!1), n(Object(a.c)({
-							experience: _.db.LanguagePreferenceBottomSheet,
+							experience: _.eb.LanguagePreferenceBottomSheet,
 							value: !1
 						}))
 					};
@@ -9586,7 +9586,7 @@
 						...Object(b.d)(t),
 						type: e
 					}
-				}))(m)), n(Object(a.d)(_.db.LanguagePreferenceBottomSheet)), r.a.createElement("div", {
+				}))(m)), n(Object(a.d)(_.eb.LanguagePreferenceBottomSheet)), r.a.createElement("div", {
 					className: l.a.PromptContainer
 				}, r.a.createElement("div", {
 					className: l.a.PromptClose
@@ -9626,7 +9626,7 @@
 					gqlContext: n
 				} = e, o = Object(s.f)().getState();
 				return (null === (t = Object(s.e)(e => Object(E.a)(e, {
-					experience: _.db.LanguagePreferenceBottomSheet
+					experience: _.eb.LanguagePreferenceBottomSheet
 				}))) || void 0 === t ? void 0 : t.value) && Object(x.b)(o) ? r.a.createElement(j, {
 					gqlContext: n
 				}) : null
@@ -12312,7 +12312,7 @@
 					trackPostGuidanceView: n,
 					emptyState: d = !1
 				} = e;
-				const [u, m] = Object(r.useState)(!1), p = t.filter(e => e.actionType === i.N.Block), h = p.length > 0 ? p : t, b = u ? h : h.slice(0, 5), f = Object(a.a)(b);
+				const [u, m] = Object(r.useState)(!1), p = t.filter(e => e.actionType === i.O.Block), h = p.length > 0 ? p : t, b = u ? h : h.slice(0, 5), f = Object(a.a)(b);
 				return Object(r.useEffect)(() => {
 					const e = b.map(e => e.guidanceId),
 						t = (null == f ? void 0 : f.map(e => e.guidanceId)) || [],
@@ -12321,10 +12321,10 @@
 				}, [t, b, f, n]), s.a.createElement("div", {
 					"data-testid": "post-guidance-validation"
 				}, s.a.createElement("ol", null, b.map((e, t) => s.a.createElement("li", {
-					className: `${d||e.actionType!==i.N.Block?"":l.a.errorText} text-12 pt-2xs`,
+					className: `${d||e.actionType!==i.O.Block?"":l.a.errorText} text-12 pt-2xs`,
 					key: t
 				}, e.validationMessage.richtext ? s.a.createElement(c.b, {
-					className: `${d||e.actionType!==i.N.Block?"":l.a.errorText} !text-12 !pt-2xs`,
+					className: `${d||e.actionType!==i.O.Block?"":l.a.errorText} !text-12 !pt-2xs`,
 					useExplicitTextColor: !0,
 					content: JSON.parse(e.validationMessage.richtext),
 					rtJsonElementProps: {}
@@ -25937,14 +25937,14 @@
 						...i,
 						variables: t
 					});
-					return !!Object(s.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(d.P.Talk)
+					return !!Object(s.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(d.Q.Talk)
 				}, m = async (e, t) => {
 					var n, o;
 					const i = await Object(r.a)(e, {
 						...a,
 						variables: t
 					});
-					return !!Object(s.c)(i) && (null !== (o = null === (n = i.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(d.P.Talk)
+					return !!Object(s.c)(i) && (null !== (o = null === (n = i.body.data.profileByName) || void 0 === n ? void 0 : n.allowedPostTypes) && void 0 !== o ? o : []).includes(d.Q.Talk)
 				};
 			d.k.ServiceError, o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 				hk: "3XqPJS"
@@ -25956,9 +25956,9 @@
 				hk: "2LYXJx"
 			}), d.k.SubredditRoomLimitExceeded, o.fbt._("This community can only host two talks at a time. Try again after one has ended.", null, {
 				hk: "2mGf21"
-			}), d.R.ServiceError, o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
+			}), d.S.ServiceError, o.fbt._("Something's wrong with the talk service right now. Check back later.", null, {
 				hk: "3XqPJS"
-			}), d.R.UserNotAuthorized, o.fbt._("You don't have permission to start talks in this community.", null, {
+			}), d.S.UserNotAuthorized, o.fbt._("You don't have permission to start talks in this community.", null, {
 				hk: "1XY1Ss"
 			})
 		},
@@ -35120,7 +35120,7 @@
 						this.setState({
 							hasFocus: !0
 						}), this.props.onFocus()
-					}, this.hasPostGuidanceBlockingError = () => this.props.postGuidanceBodyTriggeredRules.some(e => e.actionType === yd.N.Block), this.showPostGuidance = () => this.state.hasFocus || this.hasPostGuidanceBlockingError()
+					}, this.hasPostGuidanceBlockingError = () => this.props.postGuidanceBodyTriggeredRules.some(e => e.actionType === yd.O.Block), this.showPostGuidance = () => this.state.hasFocus || this.hasPostGuidanceBlockingError()
 				}
 				componentDidMount() {
 					const {
@@ -35679,7 +35679,7 @@
 						postGuidanceTitleTriggeredRules: u,
 						postCreationFieldErrors: m,
 						subreddit: b
-					} = e, f = e.submissionType === h.bc.POST && !e.shouldAllowBodyText, g = u.some(e => e.actionType === yd.N.Block), v = m[h.Cb.TITLE].length > 0 || g && !s, C = t ? ft.f : l && l.titleTextMaxLength || ft.f, y = e.submissionType === h.bc.PREDICTION, E = y ? d.fbt._("e.g. Who will win best actress at the Oscars this year?", null, {
+					} = e, f = e.submissionType === h.bc.POST && !e.shouldAllowBodyText, g = u.some(e => e.actionType === yd.O.Block), v = m[h.Cb.TITLE].length > 0 || g && !s, C = t ? ft.f : l && l.titleTextMaxLength || ft.f, y = e.submissionType === h.bc.PREDICTION, E = y ? d.fbt._("e.g. Who will win best actress at the Oscars this year?", null, {
 						hk: "YLQFW"
 					}) : d.fbt._("Title", null, {
 						hk: "j3s6r"
@@ -40194,4 +40194,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.2cb2f5911f71239045d2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.8416cd211d4bf207a27a.js.map

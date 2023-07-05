@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.7e4b149929b9715dcf4a.js
-// Retrieved at 6/14/2023, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.23b0de89808a8b67c979.js
+// Retrieved at 7/5/2023, 1:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -145,7 +145,7 @@
 				});
 				if (!Object(N.c)(n)) return null;
 				const a = n.body.data.directChatRoom;
-				return (null == a ? void 0 : a.replicationInfo) && a.replicationInfo.status !== i.U.Main ? null : a ? a.id : null
+				return (null == a ? void 0 : a.replicationInfo) && a.replicationInfo.status !== i.V.Main ? null : a ? a.id : null
 			};
 			var T = n("./src/chat/endpoints/sendbird/index.ts"),
 				M = n("./src/chat/helpers/errors.ts"),
@@ -7525,7 +7525,7 @@
 				}),
 				Dc = Object(i.b)(Ac, e => ({
 					fetchLiveChats: () => e(Object(a.fetchLiveChats)()),
-					fetchUXExperiences: () => e(Object(c.c)([Mc.db.LiveChatVideoEdu])),
+					fetchUXExperiences: () => e(Object(c.c)([Mc.eb.LiveChatVideoEdu])),
 					sendChatTabViewEvent: () => e(Object(s.lb)())
 				}));
 			class Rc extends o.a.Component {
@@ -11329,13 +11329,13 @@
 								hk: "2UMwVj"
 							}) + " · " : "";
 						switch (e.engagementType) {
-							case ie.q.Previewed:
+							case ie.r.Previewed:
 								return s.a.createElement(s.a.Fragment, null, s.a.createElement(ce, {
 									className: de.a.Clock
 								}), i.fbt._("Visited · {active user count}{subreddit path}", [i.fbt._param("active user count", r), i.fbt._param("subreddit path", c)], {
 									hk: "3E63i7"
 								}));
-							case ie.q.Participated:
+							case ie.r.Participated:
 							default:
 								return i.fbt._("{active user count}{subreddit path}", [i.fbt._param("active user count", r), i.fbt._param("subreddit path", c)], {
 									hk: "inwJF"
@@ -11474,14 +11474,14 @@
 				Be = n.n(Pe);
 			const He = () => {
 				var e;
-				const [t, n] = Object(a.useState)(!1), [r, o] = Object(a.useState)(!1), l = Object(a.useRef)(null), d = Object(a.useRef)(!1), h = Object(a.useRef)([0, 25, 50, 75, 100]), m = null === (e = Object(c.e)((e => t => t.uxExperiences.experiences[e] || null)(ie.db.LiveChatVideoEdu))) || void 0 === e ? void 0 : e.value, b = Object(c.d)(), p = Object(a.useContext)(Ae.a), f = Object(a.useCallback)(() => {
+				const [t, n] = Object(a.useState)(!1), [r, o] = Object(a.useState)(!1), l = Object(a.useRef)(null), d = Object(a.useRef)(!1), h = Object(a.useRef)([0, 25, 50, 75, 100]), m = null === (e = Object(c.e)((e => t => t.uxExperiences.experiences[e] || null)(ie.eb.LiveChatVideoEdu))) || void 0 === e ? void 0 : e.value, b = Object(c.d)(), p = Object(a.useContext)(Ae.a), f = Object(a.useCallback)(() => {
 					var e;
-					const t = ie.db.LiveChatVideoEdu;
-					b(Object(Le.e)(ie.db.LiveChatVideoEdu)), b(Object(Le.d)({
+					const t = ie.eb.LiveChatVideoEdu;
+					b(Object(Le.e)(ie.eb.LiveChatVideoEdu)), b(Object(Le.d)({
 						experience: t,
 						value: !1
 					})), null === (e = null == p ? void 0 : p.updateUXExperienceValue) || void 0 === e || e.call(p, {
-						experience: ie.db.LiveChatVideoEdu,
+						experience: ie.eb.LiveChatVideoEdu,
 						value: !1
 					})
 				}, [b]);
@@ -15869,7 +15869,7 @@
 				},
 				M = e => {
 					var t;
-					return (null === (t = e.post.media) || void 0 === t ? void 0 : t.typeHint) === N.v.Rpan
+					return (null === (t = e.post.media) || void 0 === t ? void 0 : t.typeHint) === N.w.Rpan
 				},
 				L = (e, t, n) => e[t] ? {
 					...e,
@@ -19625,9 +19625,9 @@
 				c = n("./src/chat/selectors/liveChat/index.ts"),
 				r = n("./src/redditGQL/types.ts");
 			const o = {
-					[r.q.Previewed]: "recently_viewed",
-					[r.q.Participated]: "engaged",
-					[r.q.Unknown]: "unknown"
+					[r.r.Previewed]: "recently_viewed",
+					[r.r.Participated]: "engaged",
+					[r.r.Unknown]: "unknown"
 				},
 				i = e => {
 					return {
@@ -20062,4 +20062,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.7e4b149929b9715dcf4a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.23b0de89808a8b67c979.js.map

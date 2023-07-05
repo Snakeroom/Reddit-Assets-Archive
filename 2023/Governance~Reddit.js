@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.d68bb0356d7623d25fe8.js
-// Retrieved at 6/28/2023, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.b9a639b2824f694770c4.js
+// Retrieved at 7/5/2023, 1:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -10568,7 +10568,7 @@
 				switch (t.type) {
 					case fr.D:
 						return {
-							...e, ...t.payload, titleTriggeredRules: null === (r = null === (n = t.payload) || void 0 === n ? void 0 : n.triggeredRules) || void 0 === r ? void 0 : r.filter(e => e.triggeredLocation === ta.O.Title || e.triggeredLocation === ta.O.All), bodyTriggeredRules: null === (a = null === (s = t.payload) || void 0 === s ? void 0 : s.triggeredRules) || void 0 === a ? void 0 : a.filter(e => e.triggeredLocation === ta.O.Body || e.triggeredLocation === ta.O.All), uniqueRules: [...e.uniqueRules, ...null === (o = t.payload) || void 0 === o ? void 0 : o.triggeredRules.map(e => e.guidanceId).filter(t => {
+							...e, ...t.payload, titleTriggeredRules: null === (r = null === (n = t.payload) || void 0 === n ? void 0 : n.triggeredRules) || void 0 === r ? void 0 : r.filter(e => e.triggeredLocation === ta.P.Title || e.triggeredLocation === ta.P.All), bodyTriggeredRules: null === (a = null === (s = t.payload) || void 0 === s ? void 0 : s.triggeredRules) || void 0 === a ? void 0 : a.filter(e => e.triggeredLocation === ta.P.Body || e.triggeredLocation === ta.P.All), uniqueRules: [...e.uniqueRules, ...null === (o = t.payload) || void 0 === o ? void 0 : o.triggeredRules.map(e => e.guidanceId).filter(t => {
 								if (!e.uniqueRules.includes(t)) return t
 							})]
 						};
@@ -25232,7 +25232,7 @@
 					if (!n) return !1;
 					let r = Object(i.r)(e),
 						a = Object(i.d)(e);
-					if ("undefined" != typeof window && !a) {
+					if ("undefined" != typeof window && (!a || r !== s.Tb.SUBREDDIT)) {
 						const e = Object(c.a)("subreddit", window.location.href);
 						(a = null === (t = null == e ? void 0 : e.components) || void 0 === t ? void 0 : t.subredditName) && (r = s.Tb.SUBREDDIT)
 					}
@@ -25390,4 +25390,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.d68bb0356d7623d25fe8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.b9a639b2824f694770c4.js.map

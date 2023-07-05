@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.88fc609486719c5b4cf0.js
-// Retrieved at 7/5/2023, 5:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.ae64683506f6dbe9e005.js
+// Retrieved at 7/5/2023, 1:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -6836,7 +6836,7 @@
 				},
 				m = (e, t) => {
 					const n = Object(r.d)(e, t),
-						s = (null == n ? void 0 : n.contentType) === c.u.Chat,
+						s = (null == n ? void 0 : n.contentType) === c.v.Chat,
 						a = Object(r.b)(e).indexOf(t),
 						o = Object(r.c)(e),
 						i = o.indexOf(t),
@@ -9687,8 +9687,8 @@
 						arrowProps: n.arrowProps,
 						popperProps: n.popperProps,
 						visible: n.visible
-					}, s.fbt._("Place your tile", null, {
-						hk: "34X0pD"
+					}, s.fbt._("Place your pixel", null, {
+						hk: "1Giu1S"
 					}))) : null
 				},
 				Pr = n("./src/reddit/actions/page.ts"),
@@ -18663,7 +18663,7 @@
 		"./src/reddit/routes/appeal/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return d
+				return u
 			}));
 			var s = n("./node_modules/@loadable/component/dist/loadable.esm.js"),
 				r = n("./src/lib/constants/index.ts"),
@@ -18690,7 +18690,27 @@
 						return "./src/reddit/pages/AppealPage/index.tsx"
 					}
 				}),
-				l = {
+				l = Object(s.a)({
+					resolved: {},
+					chunkName: () => "Appeal",
+					isReady(e) {
+						const t = this.resolve(e);
+						return !1 !== this.resolved[t] && !!n.m[t]
+					},
+					importAsync: () => n.e("Appeal").then(n.bind(null, "./src/reddit/pages/AppealUniquePage/index.tsx")),
+					requireAsync(e) {
+						const t = this.resolve(e);
+						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
+					},
+					requireSync(e) {
+						const t = this.resolve(e);
+						return n(t)
+					},
+					resolve() {
+						return "./src/reddit/pages/AppealUniquePage/index.tsx"
+					}
+				}),
+				d = {
 					action: a.a,
 					chunk: r.t.APPEAL,
 					component: c,
@@ -18700,17 +18720,17 @@
 					},
 					path: o
 				},
-				d = {
+				u = {
 					action: a.b,
 					chunk: r.t.APPEAL,
-					component: c,
+					component: l,
 					exact: !0,
 					meta: {
 						name: r.Tb.APPEAL
 					},
 					path: i
 				};
-			t.b = l
+			t.b = d
 		},
 		"./src/reddit/routes/avatar/index.ts": function(e, t, n) {
 			"use strict";
@@ -21048,12 +21068,12 @@
 						case a.a.Chat:
 							return t.filter(t => {
 								var n;
-								return (null === (n = p(e, t)) || void 0 === n ? void 0 : n.contentType) === c.u.Chat
+								return (null === (n = p(e, t)) || void 0 === n ? void 0 : n.contentType) === c.v.Chat
 							});
 						case a.a.Talk:
 							return t.filter(t => {
 								var n;
-								return (null === (n = p(e, t)) || void 0 === n ? void 0 : n.contentType) === c.u.Talk
+								return (null === (n = p(e, t)) || void 0 === n ? void 0 : n.contentType) === c.v.Talk
 							});
 						case a.a.All:
 						default:
@@ -21347,4 +21367,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~CommentsPage~ModerationPages~Reddit~reddit-components-ClassicPost~reddit-components-CompactP~d737df3e", "vendors~CommentsPage~Governance~ModListing~ModerationPages~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Chat~Governance~Reddit", "Governance~Reddit~SubredditForkingCTA", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.88fc609486719c5b4cf0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.ae64683506f6dbe9e005.js.map

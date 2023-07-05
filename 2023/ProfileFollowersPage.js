@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.ba212cd92e724fb9a916.js
-// Retrieved at 6/28/2023, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.b1c38523de3a148a8242.js
+// Retrieved at 7/5/2023, 1:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -2668,7 +2668,7 @@
 								type: e
 							}
 						}))(m)), I(!1), s(Object(a.c)({
-							experience: w.db.LanguagePreferenceBottomSheet,
+							experience: w.eb.LanguagePreferenceBottomSheet,
 							value: !1
 						}))
 					},
@@ -2701,7 +2701,7 @@
 								})
 							}))
 						})(), I(!1), s(Object(a.c)({
-							experience: w.db.LanguagePreferenceBottomSheet,
+							experience: w.eb.LanguagePreferenceBottomSheet,
 							value: !1
 						}))
 					};
@@ -2714,7 +2714,7 @@
 						...Object(b.d)(t),
 						type: e
 					}
-				}))(m)), s(Object(a.d)(w.db.LanguagePreferenceBottomSheet)), r.a.createElement("div", {
+				}))(m)), s(Object(a.d)(w.eb.LanguagePreferenceBottomSheet)), r.a.createElement("div", {
 					className: c.a.PromptContainer
 				}, r.a.createElement("div", {
 					className: c.a.PromptClose
@@ -2754,7 +2754,7 @@
 					gqlContext: s
 				} = e, n = Object(o.f)().getState();
 				return (null === (t = Object(o.e)(e => Object(y.a)(e, {
-					experience: w.db.LanguagePreferenceBottomSheet
+					experience: w.eb.LanguagePreferenceBottomSheet
 				}))) || void 0 === t ? void 0 : t.value) && Object(I.b)(n) ? r.a.createElement(_, {
 					gqlContext: s
 				}) : null
@@ -6547,4 +6547,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.ba212cd92e724fb9a916.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.b1c38523de3a148a8242.js.map

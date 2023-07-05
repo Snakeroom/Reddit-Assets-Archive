@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PremiumPurchaseModal.34a91f22045d308d066e.js
-// Retrieved at 6/28/2023, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PremiumPurchaseModal.b9faae5cd638459984ed.js
+// Retrieved at 7/5/2023, 1:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal~PremiumPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -707,7 +707,7 @@
 						const C = i();
 						let O, E, w = "";
 						try {
-							w = await e(x(n, a, o, s, v.J.Stripe))
+							w = await e(x(n, a, o, s, v.K.Stripe))
 						} catch (N) {
 							return u.c.captureException(N), void(N.message && e(Object(f.stripeApiError)(N.message)))
 						}
@@ -717,7 +717,7 @@
 							if (n.type === p.c.Coinpack && Object(b.p)(C)) try {
 								const r = await Object(g.g)(l(), {
 									orderId: w,
-									provider: v.J.Stripe
+									provider: v.K.Stripe
 								});
 								if (!(null == r ? void 0 : r.ok)) return void e(_);
 								const {
@@ -792,7 +792,7 @@
 						var m;
 						let b = "";
 						try {
-							b = await e(x(t, r, n, a, v.J.Paypal))
+							b = await e(x(t, r, n, a, v.K.Paypal))
 						} catch (E) {
 							return u.c.captureException(E), E.message && e(Object(f.paypalApiError)(E.message)), null
 						}
@@ -2397,4 +2397,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PremiumPurchaseModal.34a91f22045d308d066e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PremiumPurchaseModal.b9faae5cd638459984ed.js.map

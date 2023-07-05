@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.fe50cc9342d287b03f7b.js
-// Retrieved at 6/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.618c11419b354f02a2d7.js
+// Retrieved at 7/5/2023, 1:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-EventPostContent"], {
 		"./src/reddit/components/ClassicPost/index.tsx": function(e, t, s) {
@@ -229,7 +229,7 @@
 					post: he,
 					adLinkContent: Ue,
 					ctaExperimentDesign: Me && "classic"
-				})), he.discussionType === X.n.Chat && r.a.createElement(Z.a, {
+				})), he.discussionType === X.o.Chat && r.a.createElement(Z.a, {
 					postId: he.id
 				}), r.a.createElement("div", {
 					className: ee.a.flatlistContainer
@@ -680,4 +680,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.fe50cc9342d287b03f7b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-EventPostContent.618c11419b354f02a2d7.js.map

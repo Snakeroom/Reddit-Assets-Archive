@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.99dd3cd4c412108bc3f3.js
-// Retrieved at 6/28/2023, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.b86c279a884c2b29713a.js
+// Retrieved at 7/5/2023, 1:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1994,24 +1994,24 @@
 					})
 				},
 				g = {
-					[s.X.Low]: r.fbt._("Low", null, {
+					[s.Y.Low]: r.fbt._("Low", null, {
 						hk: "4k3iTe"
 					}),
-					[s.X.High]: r.fbt._("High (default)", null, {
+					[s.Y.High]: r.fbt._("High (default)", null, {
 						hk: "2GOHsH"
 					}),
-					[s.X.All]: r.fbt._("All", null, {
+					[s.Y.All]: r.fbt._("All", null, {
 						hk: "gl6gc"
 					})
 				},
 				x = {
-					[s.X.Low]: r.fbt._("Low (default)", null, {
+					[s.Y.Low]: r.fbt._("Low (default)", null, {
 						hk: "2tqJd7"
 					}),
-					[s.X.High]: r.fbt._("High", null, {
+					[s.Y.High]: r.fbt._("High", null, {
 						hk: "ABfkc"
 					}),
-					[s.X.All]: r.fbt._("All", null, {
+					[s.Y.All]: r.fbt._("All", null, {
 						hk: "3bPDOM"
 					})
 				},
@@ -6174,4 +6174,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.99dd3cd4c412108bc3f3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.b86c279a884c2b29713a.js.map

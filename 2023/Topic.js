@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.c7354110eb187f55fa02.js
-// Retrieved at 6/28/2023, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.724f9ef34c486116f196.js
+// Retrieved at 7/5/2023, 1:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1176,7 +1176,7 @@
 								type: e
 							}
 						}))(m)), S(!1), s(Object(a.c)({
-							experience: T.db.LanguagePreferenceBottomSheet,
+							experience: T.eb.LanguagePreferenceBottomSheet,
 							value: !1
 						}))
 					},
@@ -1209,7 +1209,7 @@
 								})
 							}))
 						})(), S(!1), s(Object(a.c)({
-							experience: T.db.LanguagePreferenceBottomSheet,
+							experience: T.eb.LanguagePreferenceBottomSheet,
 							value: !1
 						}))
 					};
@@ -1222,7 +1222,7 @@
 						...Object(h.d)(t),
 						type: e
 					}
-				}))(m)), s(Object(a.d)(T.db.LanguagePreferenceBottomSheet)), r.a.createElement("div", {
+				}))(m)), s(Object(a.d)(T.eb.LanguagePreferenceBottomSheet)), r.a.createElement("div", {
 					className: l.a.PromptContainer
 				}, r.a.createElement("div", {
 					className: l.a.PromptClose
@@ -1262,7 +1262,7 @@
 					gqlContext: s
 				} = e, n = Object(i.f)().getState();
 				return (null === (t = Object(i.e)(e => Object(y.a)(e, {
-					experience: T.db.LanguagePreferenceBottomSheet
+					experience: T.eb.LanguagePreferenceBottomSheet
 				}))) || void 0 === t ? void 0 : t.value) && Object(S.b)(n) ? r.a.createElement(C, {
 					gqlContext: s
 				}) : null
@@ -3425,4 +3425,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.c7354110eb187f55fa02.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.724f9ef34c486116f196.js.map
