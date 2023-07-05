@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.870c61075bf891356b66.js
-// Retrieved at 7/5/2023, 5:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7d5aab71b20df77ca460.js
+// Retrieved at 7/5/2023, 5:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3659,11 +3659,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("187868"),
+				buildNumber: Object(r.c)("187864"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 1.4.6",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1687991755"),
+				buildTimestamp: Object(r.b)("1687987714"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6411,14 +6411,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c69696ce69f246f5b701a833b68659060d4c11176-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cb97d73fc238a313e4303d7be717e44432bb92ca1-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "69696ce69f246f5b701a833b68659060d4c11176-production",
+						release: "b97d73fc238a313e4303d7be717e44432bb92ca1-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(x.d)(), new d.Integrations.Breadcrumbs({
@@ -6971,7 +6971,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "69696ce69f246f5b701a833b68659060d4c11176-production",
+							releaseClient: "b97d73fc238a313e4303d7be717e44432bb92ca1-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -12309,15 +12309,15 @@
 					} else Object(ce.g)(n()) && i(Object(y.n)())
 				}, qe = e => async (t, i, n) => {
 					let {
-						apiContext: r,
-						gqlContext: s
+						apiContext: s,
+						gqlContext: o
 					} = n;
-					const o = i(),
-						d = o.posts.models[e],
-						a = o.user.account ? o.user.account.displayText : null;
-					d && (t(Te({
+					const d = i(),
+						a = d.posts.models[e],
+						l = d.user.account ? d.user.account.displayText : null;
+					a && (t(Te({
 						[e]: {
-							approvedBy: a,
+							approvedBy: l,
 							bannedBy: null,
 							isApproved: !0,
 							approvedAtUTC: Date.now(),
@@ -12329,43 +12329,55 @@
 							modReasonBy: null,
 							removedByCategory: null
 						}
-					})), (await Object(U.a)(s(), e)).ok || t(Te({
+					})), (await Object(U.a)(o(), e)).ok ? t(Object(E.f)({
+						kind: oe.b.SuccessMod,
+						text: r.fbt._("post has been approved", null, {
+							hk: "lSMdX"
+						})
+					})) : t(Te({
 						[e]: {
 							approvedBy: null,
-							bannedBy: d.bannedBy,
-							isApproved: d.isApproved,
-							isRemoved: d.isRemoved,
-							isSpam: d.isSpam,
-							modNote: d.modNote,
-							numReports: d.numReports || null,
-							modRemovalReason: d.modRemovalReason,
-							modReasonBy: d.modReasonBy
+							bannedBy: a.bannedBy,
+							isApproved: a.isApproved,
+							isRemoved: a.isRemoved,
+							isSpam: a.isSpam,
+							modNote: a.modNote,
+							numReports: a.numReports || null,
+							modRemovalReason: a.modRemovalReason,
+							modReasonBy: a.modReasonBy
 						}
 					})))
-				}, He = (e, t) => async (i, n, r) => {
+				}, He = (e, t) => async (i, n, s) => {
 					let {
-						apiContext: s,
-						gqlContext: o
-					} = r;
-					const d = n(),
-						a = d.posts.models[e],
-						l = d.user.account ? d.user.account.displayText : null;
-					return !(!a || !l) && (i(Te({
+						apiContext: o,
+						gqlContext: d
+					} = s;
+					const a = n(),
+						l = a.posts.models[e],
+						u = a.user.account ? a.user.account.displayText : null;
+					return !(!l || !u) && (i(Te({
 						[e]: {
 							approvedBy: null,
 							bannedAtUTC: Date.now(),
-							bannedBy: l,
+							bannedBy: u,
 							isApproved: !1,
 							isRemoved: !t,
 							isSpam: t
 						}
-					})), !!(await Object(U.n)(o(), e, t)).ok || (i(Te({
+					})), (await Object(U.n)(d(), e, t)).ok ? (i(Object(E.f)({
+						kind: oe.b.SuccessCommunity,
+						text: t ? r.fbt._("post has been marked as spam", null, {
+							hk: "3L0Zxk"
+						}) : r.fbt._("post has been removed", null, {
+							hk: "20WbsG"
+						})
+					})), !0) : (i(Te({
 						[e]: {
-							approvedBy: a.approvedBy,
-							bannedBy: a.bannedBy,
-							isApproved: a.isApproved,
-							isRemoved: a.isRemoved,
-							isSpam: a.isSpam
+							approvedBy: l.approvedBy,
+							bannedBy: l.bannedBy,
+							isApproved: l.isApproved,
+							isRemoved: l.isRemoved,
+							isSpam: l.isSpam
 						}
 					})), !1))
 				}, We = (e, t, i) => async (n, s, o) => {
@@ -50980,4 +50992,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.870c61075bf891356b66.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7d5aab71b20df77ca460.js.map

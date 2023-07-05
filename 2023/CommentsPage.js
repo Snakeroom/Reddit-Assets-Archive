@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.038b75346c417c05077e.js
-// Retrieved at 7/5/2023, 5:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.60d12bb4502f9dd236f3.js
+// Retrieved at 7/5/2023, 5:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "CollectionCommentsPage~SearchResults", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -4306,18 +4306,18 @@
 							isLocked: i.isLocked
 						}
 					}))
-				}, x = Object(o.a)(g.J), y = e => async (t, n, s) => {
+				}, x = Object(o.a)(g.J), y = e => async (t, n, r) => {
 					let {
-						apiContext: r,
-						gqlContext: o
-					} = s;
-					const i = n(),
-						a = i.features.comments.models[e],
-						d = i.user.account ? i.user.account.displayText : null;
-					a && d && (t(Object(C.j)({
+						apiContext: o,
+						gqlContext: i
+					} = r;
+					const a = n(),
+						l = a.features.comments.models[e],
+						m = a.user.account ? a.user.account.displayText : null;
+					l && m && (t(Object(C.j)({
 						[e]: {
 							isApproved: !0,
-							approvedBy: d,
+							approvedBy: m,
 							approvedAtUTC: Date.now(),
 							bannedBy: null,
 							isRemoved: !1,
@@ -4327,45 +4327,57 @@
 							modRemovalReason: null,
 							numReports: 0
 						}
-					})), (await Object(u.a)(o(), e)).ok || t(Object(C.j)({
+					})), (await Object(u.a)(i(), e)).ok ? t(Object(d.f)({
+						kind: b.b.SuccessMod,
+						text: s.fbt._("comment has been approved", null, {
+							hk: "4GfKQi"
+						})
+					})) : t(Object(C.j)({
 						[e]: {
-							isApproved: a.isApproved,
+							isApproved: l.isApproved,
 							approvedBy: null,
-							bannedBy: a.bannedBy,
-							isRemoved: a.isRemoved,
-							isSpam: a.isSpam,
-							modNote: a.modNote,
-							modReasonBy: a.modReasonBy,
-							modRemovalReason: a.modRemovalReason,
-							numReports: a.numReports || null
+							bannedBy: l.bannedBy,
+							isRemoved: l.isRemoved,
+							isSpam: l.isSpam,
+							modNote: l.modNote,
+							modReasonBy: l.modReasonBy,
+							modRemovalReason: l.modRemovalReason,
+							numReports: l.numReports || null
 						}
 					})), Object(c.d)())
-				}, E = (e, t) => async (n, s, r) => {
+				}, E = (e, t) => async (n, r, o) => {
 					let {
-						apiContext: o,
-						gqlContext: i
-					} = r;
-					const a = s(),
-						d = a.features.comments.models[e],
-						l = a.user.account ? a.user.account.displayText : null;
-					d && l && (n(Object(C.j)({
+						apiContext: i,
+						gqlContext: a
+					} = o;
+					const l = r(),
+						m = l.features.comments.models[e],
+						p = l.user.account ? l.user.account.displayText : null;
+					m && p && (n(Object(C.j)({
 						[e]: {
 							approvedBy: null,
-							bannedBy: l,
+							bannedBy: p,
 							bannedAtUTC: Date.now(),
 							isApproved: !1,
 							isRemoved: !t,
 							isSpam: t,
 							numReports: 0
 						}
-					})), (await Object(u.h)(i(), e, t)).ok || n(Object(C.j)({
+					})), (await Object(u.h)(a(), e, t)).ok ? n(Object(d.f)({
+						kind: b.b.SuccessMod,
+						text: t ? s.fbt._("comment has been marked as spam", null, {
+							hk: "4fQaFM"
+						}) : s.fbt._("comment has been removed", null, {
+							hk: "1qNTrD"
+						})
+					})) : n(Object(C.j)({
 						[e]: {
-							approvedBy: d.approvedBy,
-							bannedBy: d.bannedBy,
-							isApproved: d.isApproved,
-							isRemoved: d.isRemoved,
-							isSpam: d.isSpam,
-							numReports: d.numReports
+							approvedBy: m.approvedBy,
+							bannedBy: m.bannedBy,
+							isApproved: m.isApproved,
+							isRemoved: m.isRemoved,
+							isSpam: m.isSpam,
+							numReports: m.numReports
 						}
 					})), Object(c.d)())
 				}, j = e => async (t, n, r) => {
@@ -49969,4 +49981,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.038b75346c417c05077e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.60d12bb4502f9dd236f3.js.map
