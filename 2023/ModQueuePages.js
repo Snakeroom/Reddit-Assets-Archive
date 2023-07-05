@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.3fa86cbd9edde99dcde4.js
-// Retrieved at 7/4/2023, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.9dd814c96f09535a9a7d.js
+// Retrieved at 7/5/2023, 5:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -866,18 +866,18 @@
 							isLocked: a.isLocked
 						}
 					}))
-				}, E = Object(r.a)(g.J), w = e => async (t, n, s) => {
+				}, E = Object(r.a)(g.J), w = e => async (t, n, o) => {
 					let {
-						apiContext: r,
-						gqlContext: a
-					} = s;
-					const i = n(),
-						l = i.features.comments.models[e],
-						u = i.user.account ? i.user.account.displayText : null;
-					l && u && (t(Object(v.j)({
+						apiContext: s,
+						gqlContext: r
+					} = o;
+					const a = n(),
+						i = a.features.comments.models[e],
+						c = a.user.account ? a.user.account.displayText : null;
+					i && c && (t(Object(v.j)({
 						[e]: {
 							isApproved: !0,
-							approvedBy: u,
+							approvedBy: c,
 							approvedAtUTC: Date.now(),
 							bannedBy: null,
 							isRemoved: !1,
@@ -887,57 +887,45 @@
 							modRemovalReason: null,
 							numReports: 0
 						}
-					})), (await Object(m.a)(a(), e)).ok ? t(Object(c.f)({
-						kind: A.b.SuccessMod,
-						text: o.fbt._("comment has been approved", null, {
-							hk: "4GfKQi"
-						})
-					})) : t(Object(v.j)({
+					})), (await Object(m.a)(r(), e)).ok || t(Object(v.j)({
 						[e]: {
-							isApproved: l.isApproved,
+							isApproved: i.isApproved,
 							approvedBy: null,
-							bannedBy: l.bannedBy,
-							isRemoved: l.isRemoved,
-							isSpam: l.isSpam,
-							modNote: l.modNote,
-							modReasonBy: l.modReasonBy,
-							modRemovalReason: l.modRemovalReason,
-							numReports: l.numReports || null
+							bannedBy: i.bannedBy,
+							isRemoved: i.isRemoved,
+							isSpam: i.isSpam,
+							modNote: i.modNote,
+							modReasonBy: i.modReasonBy,
+							modRemovalReason: i.modRemovalReason,
+							numReports: i.numReports || null
 						}
 					})), Object(d.d)())
-				}, O = (e, t) => async (n, s, r) => {
+				}, O = (e, t) => async (n, o, s) => {
 					let {
-						apiContext: a,
-						gqlContext: i
-					} = r;
-					const l = s(),
-						u = l.features.comments.models[e],
-						p = l.user.account ? l.user.account.displayText : null;
-					u && p && (n(Object(v.j)({
+						apiContext: r,
+						gqlContext: a
+					} = s;
+					const i = o(),
+						c = i.features.comments.models[e],
+						l = i.user.account ? i.user.account.displayText : null;
+					c && l && (n(Object(v.j)({
 						[e]: {
 							approvedBy: null,
-							bannedBy: p,
+							bannedBy: l,
 							bannedAtUTC: Date.now(),
 							isApproved: !1,
 							isRemoved: !t,
 							isSpam: t,
 							numReports: 0
 						}
-					})), (await Object(m.h)(i(), e, t)).ok ? n(Object(c.f)({
-						kind: A.b.SuccessMod,
-						text: t ? o.fbt._("comment has been marked as spam", null, {
-							hk: "4fQaFM"
-						}) : o.fbt._("comment has been removed", null, {
-							hk: "1qNTrD"
-						})
-					})) : n(Object(v.j)({
+					})), (await Object(m.h)(a(), e, t)).ok || n(Object(v.j)({
 						[e]: {
-							approvedBy: u.approvedBy,
-							bannedBy: u.bannedBy,
-							isApproved: u.isApproved,
-							isRemoved: u.isRemoved,
-							isSpam: u.isSpam,
-							numReports: u.numReports
+							approvedBy: c.approvedBy,
+							bannedBy: c.bannedBy,
+							isApproved: c.isApproved,
+							isRemoved: c.isRemoved,
+							isSpam: c.isSpam,
+							numReports: c.numReports
 						}
 					})), Object(d.d)())
 				}, P = e => async (t, n, s) => {
@@ -11186,4 +11174,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.3fa86cbd9edde99dcde4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.9dd814c96f09535a9a7d.js.map
