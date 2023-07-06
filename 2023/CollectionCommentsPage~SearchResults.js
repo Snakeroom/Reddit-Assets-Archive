@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.4423721b61a39fc18809.js
-// Retrieved at 7/5/2023, 1:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.db5da0796bf0e60fdd48.js
+// Retrieved at 7/6/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -800,9 +800,9 @@
 							r = Object(ue.Q)(s(), {
 								identifier: T.belongsTo
 							});
-						if (r && (e => m.Ff.Redirect === Object(ne.b)(e, {
+						if (r && (e => m.Gf.Redirect === Object(ne.b)(e, {
 								experimentEligibilitySelector: ce,
-								experimentName: m.zf
+								experimentName: m.Af
 							}))(s())) return void t(Object(o.c)(r.url));
 						if (T.belongsTo.type !== q.a.SUBREDDIT || T.isSponsored) {
 							if (T.belongsTo.type === q.a.PROFILE) {
@@ -6255,11 +6255,11 @@
 		"./src/reddit/connectors/PostList/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
-				return E
+				return S
 			})), s.d(t, "d", (function() {
-				return k
+				return _
 			})), s.d(t, "b", (function() {
-				return I
+				return N
 			}));
 			var n = s("./node_modules/react-redux/es/index.js"),
 				r = s("./node_modules/reselect/es/index.js"),
@@ -6276,14 +6276,15 @@
 				h = s("./src/reddit/helpers/trackers/post.ts"),
 				O = s("./src/reddit/components/PostList/Placeholder.tsx"),
 				g = s("./src/reddit/featureFlags/index.ts"),
-				f = s("./src/reddit/selectors/experiments/survey.ts"),
-				x = s("./src/reddit/selectors/listings.ts"),
-				j = s("./src/reddit/selectors/posts.ts"),
-				C = s("./src/reddit/selectors/subreddit.ts"),
-				y = s("./src/reddit/selectors/tracking.ts"),
-				v = s("./src/reddit/selectors/user.ts");
+				f = s("./src/reddit/selectors/experiments/hidePostMitigation.ts"),
+				x = s("./src/reddit/selectors/experiments/survey.ts"),
+				j = s("./src/reddit/selectors/listings.ts"),
+				C = s("./src/reddit/selectors/posts.ts"),
+				y = s("./src/reddit/selectors/subreddit.ts"),
+				v = s("./src/reddit/selectors/tracking.ts"),
+				E = s("./src/reddit/selectors/user.ts");
 
-			function E() {
+			function S() {
 				return Object(p.v)({
 					currentProfileName: p.j,
 					isCommentPermalink: p.x,
@@ -6294,31 +6295,39 @@
 					pageLayer: e => e
 				})
 			}
-			const S = E(),
-				k = {
-					apiError: x.c,
-					apiPending: x.d,
+			const k = S(),
+				_ = {
+					apiError: j.c,
+					apiPending: j.d,
 					measureScrollFPS: g.d.measureScrollFPS,
 					layout: (e, t) => t.forcedLayout || Object(p.U)(e, t),
-					loadMore: x.g,
-					postsById: j.S,
+					loadMore: j.g,
+					postsById: (e, t) => {
+						let {
+							listingKey: s
+						} = t;
+						return Object(C.S)(e, {
+							listingKey: s,
+							keepHiddenPosts: Object(f.a)(e)
+						})
+					},
 					postIds: Object(o.a)((e, t) => {
 						let {
 							listingKey: s,
 							listingName: n,
 							inSubredditOrProfile: r
 						} = t;
-						return Object(j.C)(e, s, n, r)
+						return Object(C.C)(e, s, n, r, Object(f.a)(e))
 					}),
-					subredditsById: C.eb,
-					viewportDataLoaded: y.b,
+					subredditsById: y.eb,
+					viewportDataLoaded: v.b,
 					pageReferrer: p.X,
 					postListPlaceholderComponent: () => O.a,
-					isNpsScrollSurveyEnabled: f.e,
-					isLoggedIn: v.S
+					isNpsScrollSurveyEnabled: x.e,
+					isLoggedIn: E.S
 				},
-				_ = Object(r.c)(k),
-				I = e => ({
+				I = Object(r.c)(_),
+				N = e => ({
 					onBottomViewed: (t, s) => e(l.c(t, s)),
 					onFirstPostChanged: t => e(Object(c.a)(t)),
 					adBrandSafetyStatusReceived: t => {
@@ -6343,10 +6352,10 @@
 					showModalOnScroll: () => e(d.ab()),
 					surveyTriggerScrollCounted: () => e(Object(m.m)())
 				}),
-				N = e => Object(b.b)({
+				P = e => Object(b.b)({
 					...e
 				}),
-				P = (e, t, s, n) => {
+				w = (e, t, s, n) => {
 					const {
 						listingKey: r,
 						hostPostData: o,
@@ -6354,14 +6363,14 @@
 					} = n;
 					return Object(h.n)(e, t, "post", r, o, a, void 0)
 				},
-				w = Object(n.b)(_, I, (e, t, s) => ({
+				T = Object(n.b)(I, N, (e, t, s) => ({
 					...e,
 					...t,
 					...s,
-					postComponentForLayout: N,
-					postClickEventFactory: P
+					postComponentForLayout: P,
+					postClickEventFactory: w
 				}));
-			t.a = e => Object(u.c)(S(w(e)))
+			t.a = e => Object(u.c)(k(T(e)))
 		},
 		"./src/reddit/contexts/TrackCommentsPageClick.ts": function(e, t, s) {
 			"use strict";
@@ -7395,7 +7404,7 @@
 				})), d = Object(i.e)(e => Object(j.o)(e, {
 					listingKey: t
 				}));
-				return Object(i.e)(e => Object(x.a)(e)) === g.gg.Enabled && window.location.reload(), a.a.createElement("div", {
+				return Object(i.e)(e => Object(x.a)(e)) === g.hg.Enabled && window.location.reload(), a.a.createElement("div", {
 					className: Object(O.a)(L.a.resultsContainer)
 				}, n === f.h.Listings ? a.a.createElement(Ve.a, {
 					hasResults: r,
@@ -8334,10 +8343,10 @@
 					experimentName: g.Tc,
 					expEventOverride: !1
 				}), e => !!e),
-				En = e => Object(Cn.a)(e, g.Re),
+				En = e => Object(Cn.a)(e, g.Se),
 				Sn = Object(de.a)(e => Object($s.c)(e, {
 					experimentEligibilitySelector: $s.a,
-					experimentName: g.Re,
+					experimentName: g.Se,
 					expEventOverride: !1
 				}), e => !!e);
 			var kn, _n = s("./src/reddit/components/SearchBanner/index.m.less"),
@@ -8616,10 +8625,10 @@
 				o = s("./node_modules/reselect/es/index.js");
 			const a = Object(o.a)(e => Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: n.If
+				experimentName: n.Jf
 			}), e => ({
-				isSubEnlarged: e === n.fg.Variant1 || e === n.fg.Variant3,
-				withCommunityDescription: e === n.fg.Variant2 || e === n.fg.Variant3
+				isSubEnlarged: e === n.gg.Variant1 || e === n.gg.Variant3,
+				withCommunityDescription: e === n.gg.Variant2 || e === n.gg.Variant3
 			}))
 		},
 		"./src/reddit/selectors/i18n/index.ts": function(e, t, s) {
@@ -8635,7 +8644,7 @@
 				a = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(r.Kg)(t)
+					return Boolean(t) && !Object(r.Lg)(t)
 				},
 				c = Object(n.a)(i, o.d, (e, t) => e && !t)
 		},
@@ -8684,4 +8693,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.4423721b61a39fc18809.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.db5da0796bf0e60fdd48.js.map

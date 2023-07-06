@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.82c7a5a82a1d464178f6.js
-// Retrieved at 6/28/2023, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.f9c418e2bffb4085be6d.js
+// Retrieved at 7/6/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-SubscriptionModal"], {
 		"./src/reddit/components/Governance/TokenAmount/index.m.less": function(e, t, n) {
@@ -332,10 +332,10 @@
 			const r = e => {
 				return Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: s.Le
+					experimentName: s.Me
 				}) === s.Yd
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.82c7a5a82a1d464178f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.f9c418e2bffb4085be6d.js.map

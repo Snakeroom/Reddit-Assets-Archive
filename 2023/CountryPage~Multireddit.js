@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.c2677dc86a0c50a5e7d4.js
-// Retrieved at 6/28/2023, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.e1294991cd7f4b853ae5.js
+// Retrieved at 7/6/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2246,11 +2246,11 @@
 		"./src/reddit/connectors/PostList/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
-				return w
+				return C
 			})), n.d(t, "d", (function() {
-				return j
+				return O
 			})), n.d(t, "b", (function() {
-				return F
+				return D
 			}));
 			var r = n("./node_modules/react-redux/es/index.js"),
 				s = n("./node_modules/reselect/es/index.js"),
@@ -2267,14 +2267,15 @@
 				b = n("./src/reddit/helpers/trackers/post.ts"),
 				_ = n("./src/reddit/components/PostList/Placeholder.tsx"),
 				f = n("./src/reddit/featureFlags/index.ts"),
-				g = n("./src/reddit/selectors/experiments/survey.ts"),
-				v = n("./src/reddit/selectors/listings.ts"),
-				y = n("./src/reddit/selectors/posts.ts"),
-				x = n("./src/reddit/selectors/subreddit.ts"),
-				k = n("./src/reddit/selectors/tracking.ts"),
-				E = n("./src/reddit/selectors/user.ts");
+				g = n("./src/reddit/selectors/experiments/hidePostMitigation.ts"),
+				v = n("./src/reddit/selectors/experiments/survey.ts"),
+				y = n("./src/reddit/selectors/listings.ts"),
+				x = n("./src/reddit/selectors/posts.ts"),
+				k = n("./src/reddit/selectors/subreddit.ts"),
+				E = n("./src/reddit/selectors/tracking.ts"),
+				w = n("./src/reddit/selectors/user.ts");
 
-			function w() {
+			function C() {
 				return Object(p.v)({
 					currentProfileName: p.j,
 					isCommentPermalink: p.x,
@@ -2285,31 +2286,39 @@
 					pageLayer: e => e
 				})
 			}
-			const C = w(),
-				j = {
-					apiError: v.c,
-					apiPending: v.d,
+			const j = C(),
+				O = {
+					apiError: y.c,
+					apiPending: y.d,
 					measureScrollFPS: f.d.measureScrollFPS,
 					layout: (e, t) => t.forcedLayout || Object(p.U)(e, t),
-					loadMore: v.g,
-					postsById: y.S,
+					loadMore: y.g,
+					postsById: (e, t) => {
+						let {
+							listingKey: n
+						} = t;
+						return Object(x.S)(e, {
+							listingKey: n,
+							keepHiddenPosts: Object(g.a)(e)
+						})
+					},
 					postIds: Object(i.a)((e, t) => {
 						let {
 							listingKey: n,
 							listingName: r,
 							inSubredditOrProfile: s
 						} = t;
-						return Object(y.C)(e, n, r, s)
+						return Object(x.C)(e, n, r, s, Object(g.a)(e))
 					}),
-					subredditsById: x.eb,
-					viewportDataLoaded: k.b,
+					subredditsById: k.eb,
+					viewportDataLoaded: E.b,
 					pageReferrer: p.X,
 					postListPlaceholderComponent: () => _.a,
-					isNpsScrollSurveyEnabled: g.e,
-					isLoggedIn: E.S
+					isNpsScrollSurveyEnabled: v.e,
+					isLoggedIn: w.S
 				},
-				O = Object(s.c)(j),
-				F = e => ({
+				F = Object(s.c)(O),
+				D = e => ({
 					onBottomViewed: (t, n) => e(d.c(t, n)),
 					onFirstPostChanged: t => e(Object(c.a)(t)),
 					adBrandSafetyStatusReceived: t => {
@@ -2334,10 +2343,10 @@
 					showModalOnScroll: () => e(l.ab()),
 					surveyTriggerScrollCounted: () => e(Object(u.m)())
 				}),
-				D = e => Object(h.b)({
+				S = e => Object(h.b)({
 					...e
 				}),
-				S = (e, t, n, r) => {
+				T = (e, t, n, r) => {
 					const {
 						listingKey: s,
 						hostPostData: i,
@@ -2345,14 +2354,14 @@
 					} = r;
 					return Object(b.n)(e, t, "post", s, i, o, void 0)
 				},
-				T = Object(r.b)(O, F, (e, t, n) => ({
+				L = Object(r.b)(F, D, (e, t, n) => ({
 					...e,
 					...t,
 					...n,
-					postComponentForLayout: D,
-					postClickEventFactory: S
+					postComponentForLayout: S,
+					postClickEventFactory: T
 				}));
-			t.a = e => Object(m.c)(C(T(e)))
+			t.a = e => Object(m.c)(j(L(e)))
 		},
 		"./src/reddit/constants/componentTestIds.ts": function(e, t, n) {
 			"use strict";
@@ -3243,13 +3252,35 @@
 						experimentEligibilitySelector: i.S,
 						experimentName: r.Hd
 					});
-					return !(!t || Object(r.Kg)(t))
+					return !(!t || Object(r.Lg)(t))
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: i.S,
 						experimentName: r.Hd
 					}) === r.ce.ListingEnabled
+				}
+		},
+		"./src/reddit/selectors/experiments/hidePostMitigation.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "b", (function() {
+				return i
+			})), n.d(t, "a", (function() {
+				return o
+			}));
+			var r = n("./src/reddit/constants/experiments.ts"),
+				s = n("./src/reddit/helpers/chooseVariant/index.ts");
+			const i = e => {
+					return Object(s.c)(e, {
+						experimentEligibilitySelector: s.a,
+						experimentName: r.ue
+					}) === r.Yd
+				},
+				o = e => {
+					return Object(s.c)(e, {
+						experimentEligibilitySelector: s.a,
+						experimentName: r.ve
+					}) === r.Yd
 				}
 		},
 		"./src/reddit/selectors/experiments/nsfwBypassableBlockingExperiment.ts": function(e, t, n) {
@@ -3298,4 +3329,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.c2677dc86a0c50a5e7d4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.e1294991cd7f4b853ae5.js.map

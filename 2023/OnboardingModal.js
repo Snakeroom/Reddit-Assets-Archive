@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.9d51ba25b94d184d8c1d.js
-// Retrieved at 7/5/2023, 1:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.da94f5fa75e6930b73a9.js
+// Retrieved at 7/6/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -468,7 +468,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.Kg)(p),
+						includeInterestTopics: !!p && !Object(b.Lg)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: h && !(null === (s = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === s ? void 0 : s.total),
@@ -3024,9 +3024,9 @@
 					Ie = Object(i.e)(ee.U),
 					we = Object(i.e)(ye.g),
 					Pe = Object(i.e)(kn.a),
-					Re = Pe === ke.pg.CloseOnboarding,
-					Fe = Pe === ke.pg.SkipTopicSelection,
-					Ge = Pe === ke.pg.SmartSignal,
+					Re = Pe === ke.qg.CloseOnboarding,
+					Fe = Pe === ke.qg.SkipTopicSelection,
+					Ge = Pe === ke.qg.SmartSignal,
 					Ae = Object(a.useCallback)(() => {
 						s(Object(b.g)(Kt.a.ONBOARDING_MODAL_D2X)), Te && s(Object(g.h)()), h && (r(Object(F.t)()), Object(xn.a)()), we && Ie && s(Object(m.startChangeUsernameFlow)())
 					}, [s, Ie, we, h, Te, r]),
@@ -5071,10 +5071,10 @@
 			const o = e => {
 					return !(Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.Je
+						experimentName: s.Ke
 					}) === s.Yd)
 				},
-				i = Object(a.a)(s.Ke)
+				i = Object(a.a)(s.Le)
 		},
 		"./src/redditGQL/operations/Frontpage.json": function(e) {
 			e.exports = JSON.parse('{"id":"d45d9e249839"}')
@@ -5108,4 +5108,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.9d51ba25b94d184d8c1d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.da94f5fa75e6930b73a9.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.134ca87bc75956adbd31.js
-// Retrieved at 7/5/2023, 1:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.dc385205c847a4937baf.js
+// Retrieved at 7/6/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3363,10 +3363,10 @@
 				o = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const a = Object(n.a)(e => Object(r.c)(e, {
-					experimentName: o.ug,
+					experimentName: o.vg,
 					experimentEligibilitySelector: r.a
 				}), e => e),
-				i = Object(n.a)(a, e => e === o.og)
+				i = Object(n.a)(a, e => e === o.pg)
 		},
 		"./src/reddit/selectors/removedPosts.ts": function(e, t, s) {
 			"use strict";
@@ -3433,4 +3433,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.134ca87bc75956adbd31.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.dc385205c847a4937baf.js.map

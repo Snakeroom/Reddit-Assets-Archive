@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.c00e23c08efb145d6149.js
-// Retrieved at 7/5/2023, 1:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.659c7fea9a2f0d344db0.js
+// Retrieved at 7/6/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, s) {
@@ -1912,7 +1912,7 @@
 					userIsOp: H.Gb,
 					subreddit: L.s,
 					isReportAnAdEnabled: W.a,
-					isHidePostButtonDisabled: U.a
+					isHidePostButtonDisabled: U.b
 				}),
 				_e = Object(i.b)(Ee, (e, t) => {
 					let {
@@ -4143,7 +4143,7 @@
 					isCommunityMutingEnabled: ne.a,
 					isReportAnAdEnabled: re.a,
 					isEventPostUiHidden: Oe.a,
-					isHidePostButtonDisabled: Ce.a
+					isHidePostButtonDisabled: Ce.b
 				}), (e, t) => {
 					let {
 						postId: s,
@@ -6358,17 +6358,25 @@
 		},
 		"./src/reddit/selectors/experiments/hidePostMitigation.ts": function(e, t, s) {
 			"use strict";
-			s.d(t, "a", (function() {
+			s.d(t, "b", (function() {
 				return r
+			})), s.d(t, "a", (function() {
+				return i
 			}));
 			var o = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const r = e => {
-				return Object(n.c)(e, {
-					experimentEligibilitySelector: n.a,
-					experimentName: o.ue
-				}) === o.Yd
-			}
+					return Object(n.c)(e, {
+						experimentEligibilitySelector: n.a,
+						experimentName: o.ue
+					}) === o.Yd
+				},
+				i = e => {
+					return Object(n.c)(e, {
+						experimentEligibilitySelector: n.a,
+						experimentName: o.ve
+					}) === o.Yd
+				}
 		},
 		"./src/reddit/selectors/experiments/reportAd.ts": function(e, t, s) {
 			"use strict";
@@ -6403,4 +6411,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.c00e23c08efb145d6149.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.659c7fea9a2f0d344db0.js.map

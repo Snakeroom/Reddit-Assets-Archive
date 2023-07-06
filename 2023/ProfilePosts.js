@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.87f6e08b7826cb2d054c.js
-// Retrieved at 6/28/2023, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.214cd95f36afe80bb07c.js
+// Retrieved at 7/6/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -33,8 +33,8 @@
 						v = i(/edg([ea]|ios)\/(\d+(\.\d+)?)/i),
 						x = r(/version\/(\d+(\.\d+)?)/i),
 						y = /tablet/i.test(t) && !/tablet pc/i.test(t),
-						w = !y && /[^-]mobi/i.test(t),
-						O = /xbox/i.test(t);
+						O = !y && /[^-]mobi/i.test(t),
+						w = /xbox/i.test(t);
 					/opera/i.test(t) ? s = {
 						name: "Opera",
 						opera: e,
@@ -174,7 +174,7 @@
 					} : {
 						name: r(/^(.*)\/(.*) /),
 						version: i(/^(.*)\/(.*) /)
-					}, !s.msedge && /(apple)?webkit/i.test(t) ? (/(apple)?webkit\/537\.36/i.test(t) ? (s.name = s.name || "Blink", s.blink = e) : (s.name = s.name || "Webkit", s.webkit = e), !s.version && x && (s.version = x)) : !s.opera && /gecko\//i.test(t) && (s.name = s.name || "Gecko", s.gecko = e, s.version = s.version || r(/gecko\/(\d+(\.\d+)?)/i)), s.windowsphone || !o && !s.silk ? !s.windowsphone && n ? (s[n] = e, s.ios = e, s.osname = "iOS") : h ? (s.mac = e, s.osname = "macOS") : O ? (s.xbox = e, s.osname = "Xbox") : b ? (s.windows = e, s.osname = "Windows") : g && (s.linux = e, s.osname = "Linux") : (s.android = e, s.osname = "Android");
+					}, !s.msedge && /(apple)?webkit/i.test(t) ? (/(apple)?webkit\/537\.36/i.test(t) ? (s.name = s.name || "Blink", s.blink = e) : (s.name = s.name || "Webkit", s.webkit = e), !s.version && x && (s.version = x)) : !s.opera && /gecko\//i.test(t) && (s.name = s.name || "Gecko", s.gecko = e, s.version = s.version || r(/gecko\/(\d+(\.\d+)?)/i)), s.windowsphone || !o && !s.silk ? !s.windowsphone && n ? (s[n] = e, s.ios = e, s.osname = "iOS") : h ? (s.mac = e, s.osname = "macOS") : w ? (s.xbox = e, s.osname = "Xbox") : b ? (s.windows = e, s.osname = "Windows") : g && (s.linux = e, s.osname = "Linux") : (s.android = e, s.osname = "Android");
 					var j = "";
 					s.windows ? j = function(e) {
 						switch (e) {
@@ -203,7 +203,7 @@
 						}
 					}(r(/Windows ((NT|XP)( \d\d?.\d)?)/i)) : s.windowsphone ? j = r(/windows phone (?:os)?\s?(\d+(\.\d+)*)/i) : s.mac ? j = (j = r(/Mac OS X (\d+([_\.\s]\d+)*)/i)).replace(/[_\s]/g, ".") : n ? j = (j = r(/os (\d+([_\s]\d+)*) like mac os x/i)).replace(/[_\s]/g, ".") : o ? j = r(/android[ \/-](\d+(\.\d+)*)/i) : s.webos ? j = r(/(?:web|hpw)os\/(\d+(\.\d+)*)/i) : s.blackberry ? j = r(/rim\stablet\sos\s(\d+(\.\d+)*)/i) : s.bada ? j = r(/bada\/(\d+(\.\d+)*)/i) : s.tizen && (j = r(/tizen[\/\s](\d+(\.\d+)*)/i)), j && (s.osversion = j);
 					var P = !s.windows && j.split(".")[0];
-					return y || a || "ipad" == n || o && (3 == P || P >= 4 && !w) || s.silk ? s.tablet = e : (w || "iphone" == n || "ipod" == n || o || d || s.blackberry || s.webos || s.bada) && (s.mobile = e), s.msedge || s.msie && s.version >= 10 || s.yandexbrowser && s.version >= 15 || s.vivaldi && s.version >= 1 || s.chrome && s.version >= 20 || s.samsungBrowser && s.version >= 4 || s.firefox && s.version >= 20 || s.safari && s.version >= 6 || s.opera && s.version >= 10 || s.ios && s.osversion && s.osversion.split(".")[0] >= 6 || s.blackberry && s.version >= 10.1 || s.chromium && s.version >= 20 ? s.a = e : s.msie && s.version < 10 || s.chrome && s.version < 20 || s.firefox && s.version < 20 || s.safari && s.version < 6 || s.opera && s.version < 10 || s.ios && s.osversion && s.osversion.split(".")[0] < 6 || s.chromium && s.version < 20 ? s.c = e : s.x = e, s
+					return y || a || "ipad" == n || o && (3 == P || P >= 4 && !O) || s.silk ? s.tablet = e : (O || "iphone" == n || "ipod" == n || o || d || s.blackberry || s.webos || s.bada) && (s.mobile = e), s.msedge || s.msie && s.version >= 10 || s.yandexbrowser && s.version >= 15 || s.vivaldi && s.version >= 1 || s.chrome && s.version >= 20 || s.samsungBrowser && s.version >= 4 || s.firefox && s.version >= 20 || s.safari && s.version >= 6 || s.opera && s.version >= 10 || s.ios && s.osversion && s.osversion.split(".")[0] >= 6 || s.blackberry && s.version >= 10.1 || s.chromium && s.version >= 20 ? s.a = e : s.msie && s.version < 10 || s.chrome && s.version < 20 || s.firefox && s.version < 20 || s.safari && s.version < 6 || s.opera && s.version < 10 || s.ios && s.osversion && s.osversion.split(".")[0] < 6 || s.chromium && s.version < 20 ? s.c = e : s.x = e, s
 				}
 				var r = t("undefined" != typeof navigator && navigator.userAgent || "");
 
@@ -613,8 +613,8 @@
 					}
 				}), d
 			});
-			var w = r("./src/reddit/selectors/platform.ts");
-			const O = Object(s.a)(o.f),
+			var O = r("./src/reddit/selectors/platform.ts");
+			const w = Object(s.a)(o.f),
 				j = Object(s.a)(o.d),
 				P = Object(s.a)(o.g),
 				_ = Object(s.a)(o.c),
@@ -678,7 +678,7 @@
 											category: n,
 											lastLoadedEnv: "client"
 										};
-									e(O(p)), f = !0
+									e(w(p)), f = !0
 								}
 							} else f = !1
 						}
@@ -713,7 +713,7 @@
 					if ((e => {
 							return e.focusedVerticals.api.error.focusedVerticalGqlError
 						})(o) || null === d || "client" === d) {
-						const r = null === (s = null === (i = Object(w.b)(t())) || void 0 === i ? void 0 : i.routeMatch) || void 0 === s ? void 0 : s.route.chunk,
+						const r = null === (s = null === (i = Object(O.b)(t())) || void 0 === i ? void 0 : i.routeMatch) || void 0 === s ? void 0 : s.route.chunk,
 							d = Object(h.S)(o);
 						return Object(n.i)(() => e(S()), {
 							name: "getFocusedVerticalsRequested",
@@ -768,8 +768,8 @@
 				v = r("./src/reddit/helpers/graphql/normalizeCommentFromGql/index.ts"),
 				x = r("./src/reddit/helpers/graphql/normalizeFlairFromGql/index.ts"),
 				y = r("./src/reddit/helpers/graphql/normalizePostFlairFromGql/index.ts"),
-				w = r("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts"),
-				O = r("./src/reddit/helpers/graphql/normalizePreferencesFromGql/index.ts"),
+				O = r("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts"),
+				w = r("./src/reddit/helpers/graphql/normalizePreferencesFromGql/index.ts"),
 				j = r("./src/reddit/helpers/graphql/normalizeProfileFromGql/index.ts"),
 				P = r("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts"),
 				_ = r("./src/reddit/helpers/graphql/normalizeUserFromGql/index.ts");
@@ -798,7 +798,7 @@
 						return e !== g.b.Saved && e !== g.b.ReceivedGildings && e !== g.b.GivenGildings || (t.comments = {}), t
 					})(t);
 					if (!n) return o;
-					if (i && (o.account = Object(_.a)(n) || null, o.preferences = Object(O.a)(n.preferences, n.interactions) || null, n.redditor.profile && (o.profiles[n.redditor.profile.id] = Object(j.a)(n.redditor.profile))), s && n.redditor && n.redditor.moderatedSubreddits) {
+					if (i && (o.account = Object(_.a)(n) || null, o.preferences = Object(w.a)(n.preferences, n.interactions) || null, n.redditor.profile && (o.profiles[n.redditor.profile.id] = Object(j.a)(n.redditor.profile))), s && n.redditor && n.redditor.moderatedSubreddits) {
 						const {
 							moderatedSubredditIds: e,
 							pageInfo: t,
@@ -840,7 +840,7 @@
 								const {
 									post: e,
 									crosspost: t
-								} = Object(w.a)(r.postInfo);
+								} = Object(O.a)(r.postInfo);
 								o.posts[e.id] = e, t && (o.posts[t.id] = t)
 							}
 						} else e = r, o.itemIds || (o.itemIds = []), o.itemIds.push(e.id);
@@ -848,7 +848,7 @@
 						const {
 							post: i,
 							crosspost: s
-						} = e && Object(w.a)(e);
+						} = e && Object(O.a)(e);
 						o.posts[i.id] = i, s && (o.posts[s.id] = s), Object(h.i)(e) || Object(h.j)(e) || (e.authorFlair && (o.authorFlair[i.belongsTo.id] || (o.authorFlair[i.belongsTo.id] = {}), o.authorFlair[i.belongsTo.id][i.author] = Object(x.a)(e.authorFlair)[0]), Object(h.l)(e) ? o.profiles[e.profile.id] || (o.profiles[e.profile.id] = Object(j.a)(e.profile)) : Object(h.n)(e) && (o.subreddits[e.subreddit.id] || (o.subreddits[e.subreddit.id] = Object(P.a)(e.subreddit)), o.postFlair[e.subreddit.id] || (o.postFlair[e.subreddit.id] = Object(y.a)(e.subreddit))))
 					}
 					return o
@@ -1076,11 +1076,11 @@
 		"./src/reddit/connectors/PostList/index.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "c", (function() {
-				return P
+				return _
 			})), r.d(t, "d", (function() {
-				return I
+				return S
 			})), r.d(t, "b", (function() {
-				return L
+				return E
 			}));
 			var i = r("./node_modules/react-redux/es/index.js"),
 				s = r("./node_modules/reselect/es/index.js"),
@@ -1097,14 +1097,15 @@
 				b = r("./src/reddit/helpers/trackers/post.ts"),
 				h = r("./src/reddit/components/PostList/Placeholder.tsx"),
 				g = r("./src/reddit/featureFlags/index.ts"),
-				v = r("./src/reddit/selectors/experiments/survey.ts"),
-				x = r("./src/reddit/selectors/listings.ts"),
-				y = r("./src/reddit/selectors/posts.ts"),
+				v = r("./src/reddit/selectors/experiments/hidePostMitigation.ts"),
+				x = r("./src/reddit/selectors/experiments/survey.ts"),
+				y = r("./src/reddit/selectors/listings.ts"),
+				O = r("./src/reddit/selectors/posts.ts"),
 				w = r("./src/reddit/selectors/subreddit.ts"),
-				O = r("./src/reddit/selectors/tracking.ts"),
-				j = r("./src/reddit/selectors/user.ts");
+				j = r("./src/reddit/selectors/tracking.ts"),
+				P = r("./src/reddit/selectors/user.ts");
 
-			function P() {
+			function _() {
 				return Object(m.v)({
 					currentProfileName: m.j,
 					isCommentPermalink: m.x,
@@ -1115,31 +1116,39 @@
 					pageLayer: e => e
 				})
 			}
-			const _ = P(),
-				I = {
-					apiError: x.c,
-					apiPending: x.d,
+			const I = _(),
+				S = {
+					apiError: y.c,
+					apiPending: y.d,
 					measureScrollFPS: g.d.measureScrollFPS,
 					layout: (e, t) => t.forcedLayout || Object(m.U)(e, t),
-					loadMore: x.g,
-					postsById: y.S,
+					loadMore: y.g,
+					postsById: (e, t) => {
+						let {
+							listingKey: r
+						} = t;
+						return Object(O.S)(e, {
+							listingKey: r,
+							keepHiddenPosts: Object(v.a)(e)
+						})
+					},
 					postIds: Object(n.a)((e, t) => {
 						let {
 							listingKey: r,
 							listingName: i,
 							inSubredditOrProfile: s
 						} = t;
-						return Object(y.C)(e, r, i, s)
+						return Object(O.C)(e, r, i, s, Object(v.a)(e))
 					}),
 					subredditsById: w.eb,
-					viewportDataLoaded: O.b,
+					viewportDataLoaded: j.b,
 					pageReferrer: m.X,
 					postListPlaceholderComponent: () => h.a,
-					isNpsScrollSurveyEnabled: v.e,
-					isLoggedIn: j.S
+					isNpsScrollSurveyEnabled: x.e,
+					isLoggedIn: P.S
 				},
-				S = Object(s.c)(I),
-				L = e => ({
+				L = Object(s.c)(S),
+				E = e => ({
 					onBottomViewed: (t, r) => e(l.c(t, r)),
 					onFirstPostChanged: t => e(Object(a.a)(t)),
 					adBrandSafetyStatusReceived: t => {
@@ -1164,10 +1173,10 @@
 					showModalOnScroll: () => e(c.ab()),
 					surveyTriggerScrollCounted: () => e(Object(u.m)())
 				}),
-				E = e => Object(f.b)({
+				k = e => Object(f.b)({
 					...e
 				}),
-				k = (e, t, r, i) => {
+				N = (e, t, r, i) => {
 					const {
 						listingKey: s,
 						hostPostData: n,
@@ -1175,14 +1184,14 @@
 					} = i;
 					return Object(b.n)(e, t, "post", s, n, o, void 0)
 				},
-				N = Object(i.b)(S, L, (e, t, r) => ({
+				T = Object(i.b)(L, E, (e, t, r) => ({
 					...e,
 					...t,
 					...r,
-					postComponentForLayout: E,
-					postClickEventFactory: k
+					postComponentForLayout: k,
+					postClickEventFactory: N
 				}));
-			t.a = e => Object(p.c)(_(N(e)))
+			t.a = e => Object(p.c)(I(T(e)))
 		},
 		"./src/reddit/constants/componentTestIds.ts": function(e, t, r) {
 			"use strict";
@@ -1344,8 +1353,8 @@
 				v = r("./src/reddit/components/GeneralCleanup/SortViewBar/index.tsx"),
 				x = r("./src/reddit/components/JumpToContent/index.tsx"),
 				y = r("./src/reddit/components/ListingPostList/index.tsx"),
-				w = r("./src/reddit/components/ProfileNavMenu/index.tsx"),
-				O = r("./src/reddit/components/ProfileSidebar/index.tsx"),
+				O = r("./src/reddit/components/ProfileNavMenu/index.tsx"),
+				w = r("./src/reddit/components/ProfileSidebar/index.tsx"),
 				j = r("./src/reddit/components/Upsell/NsfwBlocking/index.tsx"),
 				P = r("./src/reddit/contexts/PageLayer/index.tsx"),
 				_ = r("./src/reddit/helpers/name/index.ts"),
@@ -1494,7 +1503,7 @@
 					return o.a.createElement(L.a, {
 						className: this.props.className,
 						fitPageToContent: !0,
-						contentNavBar: o.a.createElement(o.a.Fragment, null, o.a.createElement(w.a, {
+						contentNavBar: o.a.createElement(o.a.Fragment, null, o.a.createElement(O.a, {
 							profileName: m,
 							viewBlockedConsent: S
 						})),
@@ -1511,7 +1520,7 @@
 							inSubredditOrProfile: !1,
 							shouldShowInsightsButton: i
 						})),
-						sidebar: o.a.createElement(O.a, F({}, C, {
+						sidebar: o.a.createElement(w.a, F({}, C, {
 							profileName: m
 						}))
 					})
@@ -1534,13 +1543,35 @@
 						experimentEligibilitySelector: n.S,
 						experimentName: i.Hd
 					});
-					return !(!t || Object(i.Kg)(t))
+					return !(!t || Object(i.Lg)(t))
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: n.S,
 						experimentName: i.Hd
 					}) === i.ce.ListingEnabled
+				}
+		},
+		"./src/reddit/selectors/experiments/hidePostMitigation.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "b", (function() {
+				return n
+			})), r.d(t, "a", (function() {
+				return o
+			}));
+			var i = r("./src/reddit/constants/experiments.ts"),
+				s = r("./src/reddit/helpers/chooseVariant/index.ts");
+			const n = e => {
+					return Object(s.c)(e, {
+						experimentEligibilitySelector: s.a,
+						experimentName: i.ue
+					}) === i.Yd
+				},
+				o = e => {
+					return Object(s.c)(e, {
+						experimentEligibilitySelector: s.a,
+						experimentName: i.ve
+					}) === i.Yd
 				}
 		},
 		"./src/redditGQL/operations/ProfileDownvoted.json": function(e) {
@@ -1569,4 +1600,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.87f6e08b7826cb2d054c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.214cd95f36afe80bb07c.js.map

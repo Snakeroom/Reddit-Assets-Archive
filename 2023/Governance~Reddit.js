@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.b9a639b2824f694770c4.js
-// Retrieved at 7/5/2023, 1:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.7107b1ce0676ab18d9af.js
+// Retrieved at 7/6/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -4011,7 +4011,7 @@
 					relativePosition: T
 				} = e;
 				var D, w, j, C, A, P;
-				const R = Object(a.e)(e => Object(V.a)(e, q.Jf)),
+				const R = Object(a.e)(e => Object(V.a)(e, q.Kf)),
 					N = Object(y.a)(),
 					x = (null === (D = o.displayInfo) || void 0 === D ? void 0 : D.karma) || 0,
 					k = (null === (w = o.displayInfo) || void 0 === w ? void 0 : w.subscribers) || 0,
@@ -4152,7 +4152,7 @@
 					searchOriginPage: f
 				} = e;
 				const b = Object(y.a)(),
-					h = Object(a.e)(e => Object(V.a)(e, q.Jf)),
+					h = Object(a.e)(e => Object(V.a)(e, q.Kf)),
 					g = Object(a.e)(U.mb),
 					{
 						nsfwTypeaheadExpanded: v,
@@ -4388,7 +4388,7 @@
 					onUpdateSearchQuery: A
 				} = e, P = Object(a.d)(), [R, N] = Object(r.useState)(null), [L, U] = Object(r.useState)(n), [M, F] = Object(r.useState)(new Array(Ee).fill(!1)), {
 					enabled: B
-				} = Object(a.e)(re.j), G = Object(a.e)(e => Object(V.a)(e, q.Jf)), H = !!(null === (t = g.searchQuery) || void 0 === t ? void 0 : t.trim()), W = l || i, Y = B, K = [...b.communities, ...b.people, ...b.nsfw], $ = !l && (!H || m >= 0) && (G ? 0 === K.length : 0 === f.length) && !Y, z = {
+				} = Object(a.e)(re.j), G = Object(a.e)(e => Object(V.a)(e, q.Kf)), H = !!(null === (t = g.searchQuery) || void 0 === t ? void 0 : t.trim()), W = l || i, Y = B, K = [...b.communities, ...b.people, ...b.nsfw], $ = !l && (!H || m >= 0) && (G ? 0 === K.length : 0 === f.length) && !Y, z = {
 					width: L ? `${L}px` : "inherit",
 					overflow: "auto"
 				};
@@ -25390,4 +25390,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.b9a639b2824f694770c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.7107b1ce0676ab18d9af.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.88018b955bfde8f57816.js
-// Retrieved at 6/28/2023, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.4bb60c79d287a89048ac.js
+// Retrieved at 7/6/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, n) {
@@ -126,11 +126,11 @@
 			})), n.d(t, "b", (function() {
 				return T
 			})), n.d(t, "c", (function() {
-				return g
-			})), n.d(t, "A", (function() {
 				return S
-			})), n.d(t, "B", (function() {
+			})), n.d(t, "A", (function() {
 				return j
+			})), n.d(t, "B", (function() {
+				return g
 			})), n.d(t, "z", (function() {
 				return D
 			})), n.d(t, "y", (function() {
@@ -163,9 +163,9 @@
 				x = "MULTIREDDIT__EDIT_SUCCESS",
 				O = "MULTIREDDIT__ADD_SUBREDDIT_FAILURE",
 				T = "MULTIREDDIT__ADD_SUBREDDIT_PENDING",
-				g = "MULTIREDDIT__ADD_SUBREDDIT_SUCCESS",
-				S = "MULTIREDDIT__SUBREDDIT_RECOMMENDATIONS_PENDING",
-				j = "MULTIREDDIT__SUBREDDIT_RECOMMENDATIONS_SUCCESS",
+				S = "MULTIREDDIT__ADD_SUBREDDIT_SUCCESS",
+				j = "MULTIREDDIT__SUBREDDIT_RECOMMENDATIONS_PENDING",
+				g = "MULTIREDDIT__SUBREDDIT_RECOMMENDATIONS_SUCCESS",
 				D = "MULTIREDDIT__SUBREDDIT_RECOMMENDATIONS_FAILURE",
 				I = 10,
 				C = "MULTIREDDIT__REMOVE_SUBREDDIT_FAILURE",
@@ -256,7 +256,7 @@
 			})), n.d(t, "c", (function() {
 				return R
 			})), n.d(t, "a", (function() {
-				return A
+				return M
 			})), n.d(t, "b", (function() {
 				return P
 			}));
@@ -315,9 +315,9 @@
 				}
 			}
 			var T = n("./src/reddit/models/Toast/index.ts"),
-				g = n("./src/reddit/selectors/profile.ts"),
-				S = n("./src/reddit/selectors/subreddit.ts"),
-				j = n("./src/reddit/selectors/subscriptions.ts"),
+				S = n("./src/reddit/selectors/profile.ts"),
+				j = n("./src/reddit/selectors/subreddit.ts"),
+				g = n("./src/reddit/selectors/subscriptions.ts"),
 				D = n("./src/reddit/selectors/user.ts");
 			const I = () => r.fbt._("Sorry, failed to update favorites.", null, {
 					hk: "40XHkp"
@@ -346,11 +346,11 @@
 					let {
 						apiContext: b
 					} = m, p = e.map(e => e.type === u.a.SUBREDDIT ? {
-						id: Object(S.I)(d(), e.name),
+						id: Object(j.I)(d(), e.name),
 						name: e.name,
 						type: e.type
 					} : {
-						id: Object(g.o)(d(), e.name),
+						id: Object(S.o)(d(), e.name),
 						name: `${o.qc}${e.name}`,
 						type: e.type
 					});
@@ -374,7 +374,7 @@
 						nameIdentifiers: e,
 						profileModels: d().profiles.models,
 						subredditModels: d().subreddits.models,
-						subscriptionsCount: Object(j.b)(d()),
+						subscriptionsCount: Object(g.b)(d()),
 						userIsSubscriber: t,
 						widgetId: n
 					}));
@@ -415,7 +415,7 @@
 							nameIdentifiers: e,
 							profileModels: d().profiles.models,
 							subredditModels: d().subreddits.models,
-							subscriptionsCount: Object(j.b)(d()),
+							subscriptionsCount: Object(g.b)(d()),
 							userIsSubscriber: !t,
 							widgetId: n
 						}));
@@ -430,7 +430,7 @@
 						apiContext: o
 					} = r;
 					const s = n(),
-						i = Object(S.Q)(s, {
+						i = Object(j.Q)(s, {
 							identifier: e
 						});
 					if (!i) throw new Error(`actions.subscription -- No subreddit or profile found with id ${e.id}`);
@@ -446,7 +446,7 @@
 							type: e.type,
 							name: i.name
 						},
-						x = () => Object(S.jb)(n(), {
+						x = () => Object(j.jb)(n(), {
 							identifier: E
 						});
 					(x() || (await t(U([E], !0)), x())) && (t(w({
@@ -463,7 +463,7 @@
 						text: I(),
 						kind: T.b.Error
 					}))))
-				}, M = Object(i.a)(d.d), A = e => async (t, n, r) => {
+				}, A = Object(i.a)(d.d), M = e => async (t, n, r) => {
 					let {
 						apiContext: s
 					} = r;
@@ -477,7 +477,7 @@
 						a = i[e];
 					if (!a) return void c();
 					const d = !a.isFavorited;
-					t(M({
+					t(A({
 						makeFavorite: d,
 						multiredditPath: e,
 						multiredditsModelsState: i
@@ -489,7 +489,7 @@
 							multipath: t,
 							api_type: "json"
 						}
-					}))(s(), e, d)).ok || (t(M({
+					}))(s(), e, d)).ok || (t(A({
 						makeFavorite: !d,
 						multiredditPath: e,
 						multiredditsModelsState: i
@@ -681,9 +681,9 @@
 				x = n("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
 				O = n("./src/reddit/constants/colors.ts"),
 				T = n("./src/reddit/constants/parameters.ts"),
-				g = n("./src/reddit/controls/InternalLink/index.tsx"),
-				S = n("./src/reddit/helpers/styles/smartTextColor.ts"),
-				j = n("./src/reddit/icons/svgs/Close/index.tsx"),
+				S = n("./src/reddit/controls/InternalLink/index.tsx"),
+				j = n("./src/reddit/helpers/styles/smartTextColor.ts"),
+				g = n("./src/reddit/icons/svgs/Close/index.tsx"),
 				D = n("./src/reddit/models/Flair/index.ts"),
 				I = n("./src/reddit/models/Theme/NewColorSystem/index.ts"),
 				C = n("./src/reddit/components/Flair/index.m.less"),
@@ -728,14 +728,14 @@
 						[T.x]: t ? "1" : ""
 					})
 				},
-				M = e => e.isFlairFilter ? a.a.createElement(g.default, {
+				A = e => e.isFlairFilter ? a.a.createElement(S.default, {
 					onMouseDown: e.onMouseDown,
 					to: e.to || ""
-				}, e.flair) : e.onClick ? a.a.createElement(g.default, {
+				}, e.flair) : e.onClick ? a.a.createElement(S.default, {
 					onClick: () => e.onClick(e.searchableTerm),
 					to: R(e.searchableTerm, e.subredditName)
 				}, e.flair) : e.flair;
-			class A extends a.a.Component {
+			class M extends a.a.Component {
 				constructor() {
 					super(...arguments), this.tooltipTargetElement = null, this.state = {
 						isTooltipOpen: !1
@@ -764,7 +764,7 @@
 					}, this.props.text, this.props.isSelected && a.a.createElement(N, {
 						to: "./",
 						onClick: this.props.onCloseClick
-					}, a.a.createElement(j.a, {
+					}, a.a.createElement(g.a, {
 						className: y.a.CloseIcon,
 						style: {
 							fill: this.props.backgroundColor || Object(I.a)(this.props).flair
@@ -776,7 +776,7 @@
 						targetPosition: ["center", "top"],
 						tooltipPosition: ["center", "bottom"]
 					}));
-					return a.a.createElement(M, {
+					return a.a.createElement(A, {
 						flair: e,
 						isFlairFilter: this.props.isFlairFilter,
 						onClick: this.props.onClick,
@@ -787,7 +787,7 @@
 					})
 				}
 			}
-			const F = Object(m.a)(A),
+			const F = Object(m.a)(M),
 				P = Object(m.a)(e => {
 					let t = "",
 						n = !1;
@@ -823,13 +823,13 @@
 					}, r, e.isSelected && a.a.createElement(N, {
 						to: "./",
 						onClick: e.onCloseClick
-					}, a.a.createElement(j.a, {
+					}, a.a.createElement(g.a, {
 						className: y.a.CloseIcon,
 						style: {
 							fill: e.backgroundColor || Object(I.a)(e).flair
 						}
 					})));
-					return a.a.createElement(M, {
+					return a.a.createElement(A, {
 						flair: s,
 						isFlairFilter: e.isFlairFilter,
 						onClick: e.onClick ? () => {
@@ -841,7 +841,7 @@
 						to: e.to
 					})
 				}),
-				B = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(I.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(S.a)(Object(I.a)(e).post, O.a.black, O.a.white) : e.textColor === D.e.Dark ? O.a.black : O.a.white,
+				B = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(I.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(j.a)(Object(I.a)(e).post, O.a.black, O.a.white) : e.textColor === D.e.Dark ? O.a.black : O.a.white,
 				H = b.a.wrapped(F, "TextFlair", y.a),
 				G = b.a.wrapped(P, "RichTextFlair", y.a),
 				W = e => {
@@ -863,7 +863,7 @@
 								color: t
 							}
 						}, e.text);
-					return a.a.createElement(M, {
+					return a.a.createElement(A, {
 						flair: n,
 						searchableTerm: e.text
 					})
@@ -1828,7 +1828,7 @@
 			})), n.d(t, "f", (function() {
 				return T
 			})), n.d(t, "g", (function() {
-				return g
+				return S
 			}));
 			var r = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
@@ -1841,44 +1841,44 @@
 				u = /^\/u(?:ser)?\/[^/]+(\/[^/]+)?\/?$/,
 				m = e => !!e.match(i) || !!e.match(a),
 				b = e => !e.match(a) && (!e.match(c) && (!!e.match(d) || !!e.match(l))),
-				p = (e, t) => !!m(t) && [r.gg.Enabled, r.gg.HardReload].includes(Object(o.c)(e, {
+				p = (e, t) => !!m(t) && [r.hg.Enabled, r.hg.HardReload].includes(Object(o.c)(e, {
 					experimentEligibilitySelector: s.f,
-					experimentName: r.Pf
+					experimentName: r.Qf
 				})),
-				f = (e, t) => !!t.match(c) && [r.gg.Enabled, r.gg.HardReload].includes(Object(o.c)(e, {
-					experimentEligibilitySelector: s.f,
-					experimentName: r.Nf
-				})),
-				h = (e, t) => !!b(t) && [r.gg.Enabled, r.gg.HardReload].includes(Object(o.c)(e, {
+				f = (e, t) => !!t.match(c) && [r.hg.Enabled, r.hg.HardReload].includes(Object(o.c)(e, {
 					experimentEligibilitySelector: s.f,
 					experimentName: r.Of
 				})),
+				h = (e, t) => !!b(t) && [r.hg.Enabled, r.hg.HardReload].includes(Object(o.c)(e, {
+					experimentEligibilitySelector: s.f,
+					experimentName: r.Pf
+				})),
 				_ = (e, t) => !(!b(t) && !m(t)) && Object(o.c)(e, {
 					experimentEligibilitySelector: s.f,
-					experimentName: r.ve
+					experimentName: r.we
 				}) === r.Yd,
 				E = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: s.f,
-						experimentName: r.Mf
+						experimentName: r.Nf
 					})
 				},
 				x = (e, t) => !!(e => {
 					return /^(?:\/r\/[^\/]+)?\/search\/?$/i.test(e) || /^\/u(?:ser)?\/[^\/]+\/m\/[^\/]+\/search\/?$/i.test(e)
-				})(t) && (E(e) === r.gg.Enabled || E(e) === r.gg.HardReload),
+				})(t) && (E(e) === r.hg.Enabled || E(e) === r.hg.HardReload),
 				O = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: s.f,
-						experimentName: r.Qf
+						experimentName: r.Rf
 					})
 				},
-				T = (e, t) => !!(e => !!e.match(u))(t) && (O(e) === r.gg.Enabled || O(e) === r.gg.HardReload),
-				g = (e, t) => !!(e => !!(e.match(c) || e.match(i) || e.match(a) || e.match(u) || e.match(d) || e.match(l)))(t) && (e => {
+				T = (e, t) => !!(e => !!e.match(u))(t) && (O(e) === r.hg.Enabled || O(e) === r.hg.HardReload),
+				S = (e, t) => !!(e => !!(e.match(c) || e.match(i) || e.match(a) || e.match(u) || e.match(d) || e.match(l)))(t) && (e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: r.Tf
+						experimentName: r.Uf
 					})
-				})(e) === r.gg.Enabled
+				})(e) === r.hg.Enabled
 		},
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, n) {
 			"use strict";
@@ -1923,4 +1923,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.88018b955bfde8f57816.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.4bb60c79d287a89048ac.js.map

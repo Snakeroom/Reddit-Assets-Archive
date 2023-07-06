@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.07b23a1a1448fcdddf54.js
-// Retrieved at 6/28/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.d6e978a39f93107f8dc0.js
+// Retrieved at 7/6/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~SubredditForkingCTA"], {
 		"./src/lib/asyncActions/index.ts": function(e, t, r) {
@@ -1236,7 +1236,7 @@
 			const f = e => l.d.reCaptchaEnterprise(e),
 				m = e => !!Object(p.c)(e, {
 					experimentEligibilitySelector: Object(b.d)(Object(b.b)(...s.c)),
-					experimentName: u.pf
+					experimentName: u.qf
 				}),
 				h = Object(n.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				O = function() {
@@ -1677,7 +1677,7 @@
 								postFieldValidationPending: Promise.resolve()
 							})), Object(l.b)(T)
 						}
-						await t(Object(n.b)(`${r.path}`)), f ? f === b.df.NewModule && t(Object(c.h)({
+						await t(Object(n.b)(`${r.path}`)), f ? f === b.ef.NewModule && t(Object(c.h)({
 							tooltipId: u.MOD_WELCOME_TOOLTIP_ID
 						})) : (t(Object(o.h)(p.a.POST_FLOW_UPSELL_MODAL_ID)), Object(k.a)(Object(j.g)()(x))), Object(E.b)(E.a.SubredditCreation), t(Object(w.f)(i, null !== (g = Object(I.db)(x)) && void 0 !== g ? g : Object(v.k)(x)))
 					} else R.error && Object(k.a)(Object(j.h)(R.error.type, A)(x)), t(U({
@@ -3221,4 +3221,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.07b23a1a1448fcdddf54.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.d6e978a39f93107f8dc0.js.map

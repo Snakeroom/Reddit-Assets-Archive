@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.644e9d2a68c19b56390e.js
-// Retrieved at 6/28/2023, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.a3bd484b56b4e841b1e6.js
+// Retrieved at 7/6/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeaturedLiveEntrypointAnnouncementsCarousel"], {
 		"./src/reddit/components/FeaturedLiveEntrypoint/AnnouncementsCarousel/index.m.less": function(e, n, t) {
@@ -105,7 +105,7 @@
 				g = (e, n) => t => {
 					if (t.experimentName) {
 						const n = e[t.experimentName.toLowerCase()];
-						if (n && Object(A.Kg)(n.variant)) return !1
+						if (n && Object(A.Lg)(n.variant)) return !1
 					}
 					return !((n[t.id] || 0) >= t.maxImpressionsCount)
 				};
@@ -221,7 +221,7 @@
 					activeIndex: h,
 					visibleAnnouncements: r,
 					setActiveIndex: N
-				}), k = (e => {
+				}), L = (e => {
 					let {
 						setIsHidden: n,
 						visibleAnnouncements: t
@@ -239,7 +239,7 @@
 				})({
 					visibleAnnouncements: r,
 					setIsHidden: m
-				}), L = (e => {
+				}), k = (e => {
 					let {
 						activeIndex: n,
 						setActiveIndex: t,
@@ -282,7 +282,7 @@
 					hk: "1R94KF"
 				})), o.a.createElement("button", {
 					className: f.a.CloseBtn,
-					onClick: k
+					onClick: L
 				}, o.a.createElement(l.a, {
 					name: "close"
 				})), o.a.createElement("div", {
@@ -308,7 +308,7 @@
 					}),
 					isActive: n === h,
 					key: e.id,
-					onClick: L
+					onClick: k
 				}))), r.length > 1 ? o.a.createElement("button", {
 					className: f.a.RightArrow,
 					onClick: w("next")
@@ -331,4 +331,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.644e9d2a68c19b56390e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.a3bd484b56b4e841b1e6.js.map

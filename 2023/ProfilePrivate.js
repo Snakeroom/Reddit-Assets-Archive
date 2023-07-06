@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.cb94729cdf83fdd3c5a2.js
-// Retrieved at 7/5/2023, 1:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.b306db539b3a0f7c0854.js
+// Retrieved at 7/6/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -6807,7 +6807,7 @@
 					...t,
 					...s,
 					postClickEventFactory: (e, t) => Object(w.n)(e, t),
-					postComponentForLayout: v.b
+					postComponentForLayout: v.d
 				}));
 			var ue = s("./src/reddit/helpers/makeProfileListingKey/index.ts"),
 				pe = s("./src/reddit/helpers/trackers/screenview.ts"),
@@ -6955,4 +6955,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.cb94729cdf83fdd3c5a2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.b306db539b3a0f7c0854.js.map
