@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.2d5960975e83d50fe7a6.js
-// Retrieved at 7/5/2023, 1:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.5a7785156126c2ad9315.js
+// Retrieved at 7/6/2023, 2:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -9990,7 +9990,7 @@
 				};
 				if ("Popular" === v) return void n(Object(c.c)(e.url.replace("r/Popular", "r/popular")));
 				if ("All" === v) return void n(Object(c.c)(e.url.replace("r/All", "r/all")));
-				const S = Object(h.d)(e.queryParams, Object(ee.mb)(j)),
+				const S = Object(h.d)(e.queryParams),
 					w = Lt({
 						subredditName: v,
 						countryCode: m,
@@ -81554,4 +81554,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.2d5960975e83d50fe7a6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.5a7785156126c2ad9315.js.map
