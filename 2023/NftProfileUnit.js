@@ -1,11 +1,11 @@
-// https://www.redditstatic.com/desktop2x/NftProfileUnit.c90715e763c6c6b1198d.js
-// Retrieved at 7/6/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NftProfileUnit.eeefcd5aa5af973c3030.js
+// Retrieved at 7/10/2023, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NftProfileUnit"], {
 		"./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return h
+				return f
 			}));
 			var n = r("./src/config.ts"),
 				s = r("./src/lib/env/index.ts"),
@@ -13,49 +13,47 @@
 				c = r("./node_modules/react-redux/es/index.js"),
 				a = r("./src/reddit/endpoints/governance/crypto.ts"),
 				o = r("./src/reddit/hooks/useTracking.ts"),
-				d = r("./src/reddit/selectors/experiments/econ/index.ts"),
-				u = r("./src/reddit/selectors/experiments/econ/marketplace.ts"),
-				l = r("./src/reddit/selectors/experiments/econ/paymentsSandbox.ts"),
-				m = r("./src/reddit/selectors/telemetry.ts"),
-				p = r("./src/reddit/selectors/user.ts");
-			const b = !(Object(s.c)() || Object(s.b)()),
-				f = {
+				d = r("./src/reddit/selectors/experiments/econ/marketplace.ts"),
+				u = r("./src/reddit/selectors/experiments/econ/paymentsSandbox.ts"),
+				l = r("./src/reddit/selectors/telemetry.ts"),
+				m = r("./src/reddit/selectors/user.ts");
+			const p = !(Object(s.c)() || Object(s.b)()),
+				b = {
 					GRAPHQL_URL: n.a.gqlUrl,
-					IS_DEVELOPMENT: b,
-					IS_PRODUCTION: !b,
+					IS_DEVELOPMENT: p,
+					IS_PRODUCTION: !p,
 					MOCKING_ENABLED: !1,
 					SNOOVATAR_BASE_URL: n.a.snoovatarUrl,
 					SNOOVATAR_API_URL: `${n.a.snoovatarUrl}/api`
 				},
-				h = () => {
-					const e = Object(c.e)(l.a),
-						t = Object(c.e)(d.p),
-						r = Object(c.e)(u.b),
-						s = Object(c.e)(e => e.user.session),
-						h = s ? s.accessToken : "",
-						E = s ? new Date(s.expires).getTime() : 1,
-						O = Object(c.e)(p.fb),
-						k = Object(o.a)(),
-						_ = b ? a.a.Rinkeby : a.a.Ethereum,
-						y = Object(i.useMemo)(() => ({
+				f = () => {
+					const e = Object(c.e)(u.a),
+						t = Object(c.e)(d.b),
+						r = Object(c.e)(e => e.user.session),
+						s = r ? r.accessToken : "",
+						f = r ? new Date(r.expires).getTime() : 1,
+						h = Object(c.e)(m.fb),
+						E = Object(o.a)(),
+						O = p ? a.a.Rinkeby : a.a.Ethereum,
+						k = Object(i.useMemo)(() => ({
 							headers: {
-								Authorization: `Bearer ${h}`
+								Authorization: `Bearer ${s}`
 							},
-							expiration: E
-						}), [h, E]),
-						j = {
-							...f,
+							expiration: f
+						}), [s, f]),
+						_ = {
+							...b,
 							STRIPE_API_KEY: n.a.stripe.apiKey(e),
-							STRIPE_API_VERSION: n.a.stripe.apiVersion(t),
-							ACCESS_TOKEN: h,
-							BLOCKCHAIN_PROVIDER: _,
-							OVERRIDES: r ? {
+							STRIPE_API_VERSION: n.a.stripe.apiVersion(!0),
+							ACCESS_TOKEN: s,
+							BLOCKCHAIN_PROVIDER: O,
+							OVERRIDES: t ? {
 								NO_VAULT: !0
 							} : {}
 						},
-						x = Object(i.useCallback)(e => {
-							k(t => {
-								const r = m.p(t);
+						y = Object(i.useCallback)(e => {
+							E(t => {
+								const r = l.p(t);
 								return {
 									...r,
 									...e,
@@ -67,13 +65,13 @@
 									}
 								}
 							})
-						}, [k]);
+						}, [E]);
 					return Object(i.useMemo)(() => ({
-						authHeaders: y,
-						config: j,
-						isNightMode: O,
-						sendEvent: x
-					}), [y, j, O, x])
+						authHeaders: k,
+						config: _,
+						isNightMode: h,
+						sendEvent: y
+					}), [k, _, h, y])
 				}
 		},
 		"./src/reddit/components/Econ/Marketplace/NftProfileUnit/index.m.less": function(e, t, r) {
@@ -370,4 +368,4 @@
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProfileUnit.c90715e763c6c6b1198d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProfileUnit.eeefcd5aa5af973c3030.js.map

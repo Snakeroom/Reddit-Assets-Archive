@@ -1,11 +1,11 @@
-// https://www.redditstatic.com/desktop2x/ShowcaseCollectionViewModal.2dd2ec36136a7679b27f.js
-// Retrieved at 7/6/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ShowcaseCollectionViewModal.b9161ef6231cb283f384.js
+// Retrieved at 7/10/2023, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ShowcaseCollectionViewModal"], {
 		"./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return f
+				return h
 			}));
 			var n = r("./src/config.ts"),
 				s = r("./src/lib/env/index.ts"),
@@ -13,49 +13,47 @@
 				c = r("./node_modules/react-redux/es/index.js"),
 				i = r("./src/reddit/endpoints/governance/crypto.ts"),
 				a = r("./src/reddit/hooks/useTracking.ts"),
-				d = r("./src/reddit/selectors/experiments/econ/index.ts"),
-				u = r("./src/reddit/selectors/experiments/econ/marketplace.ts"),
-				l = r("./src/reddit/selectors/experiments/econ/paymentsSandbox.ts"),
-				m = r("./src/reddit/selectors/telemetry.ts"),
-				p = r("./src/reddit/selectors/user.ts");
-			const b = !(Object(s.c)() || Object(s.b)()),
-				h = {
+				d = r("./src/reddit/selectors/experiments/econ/marketplace.ts"),
+				u = r("./src/reddit/selectors/experiments/econ/paymentsSandbox.ts"),
+				l = r("./src/reddit/selectors/telemetry.ts"),
+				m = r("./src/reddit/selectors/user.ts");
+			const p = !(Object(s.c)() || Object(s.b)()),
+				b = {
 					GRAPHQL_URL: n.a.gqlUrl,
-					IS_DEVELOPMENT: b,
-					IS_PRODUCTION: !b,
+					IS_DEVELOPMENT: p,
+					IS_PRODUCTION: !p,
 					MOCKING_ENABLED: !1,
 					SNOOVATAR_BASE_URL: n.a.snoovatarUrl,
 					SNOOVATAR_API_URL: `${n.a.snoovatarUrl}/api`
 				},
-				f = () => {
-					const e = Object(c.e)(l.a),
-						t = Object(c.e)(d.p),
-						r = Object(c.e)(u.b),
-						s = Object(c.e)(e => e.user.session),
-						f = s ? s.accessToken : "",
-						O = s ? new Date(s.expires).getTime() : 1,
-						k = Object(c.e)(p.fb),
-						j = Object(a.a)(),
-						E = b ? i.a.Rinkeby : i.a.Ethereum,
-						y = Object(o.useMemo)(() => ({
+				h = () => {
+					const e = Object(c.e)(u.a),
+						t = Object(c.e)(d.b),
+						r = Object(c.e)(e => e.user.session),
+						s = r ? r.accessToken : "",
+						h = r ? new Date(r.expires).getTime() : 1,
+						f = Object(c.e)(m.fb),
+						O = Object(a.a)(),
+						k = p ? i.a.Rinkeby : i.a.Ethereum,
+						j = Object(o.useMemo)(() => ({
 							headers: {
-								Authorization: `Bearer ${f}`
+								Authorization: `Bearer ${s}`
 							},
-							expiration: O
-						}), [f, O]),
-						_ = {
-							...h,
+							expiration: h
+						}), [s, h]),
+						E = {
+							...b,
 							STRIPE_API_KEY: n.a.stripe.apiKey(e),
-							STRIPE_API_VERSION: n.a.stripe.apiVersion(t),
-							ACCESS_TOKEN: f,
-							BLOCKCHAIN_PROVIDER: E,
-							OVERRIDES: r ? {
+							STRIPE_API_VERSION: n.a.stripe.apiVersion(!0),
+							ACCESS_TOKEN: s,
+							BLOCKCHAIN_PROVIDER: k,
+							OVERRIDES: t ? {
 								NO_VAULT: !0
 							} : {}
 						},
-						x = Object(o.useCallback)(e => {
-							j(t => {
-								const r = m.p(t);
+						y = Object(o.useCallback)(e => {
+							O(t => {
+								const r = l.p(t);
 								return {
 									...r,
 									...e,
@@ -67,13 +65,13 @@
 									}
 								}
 							})
-						}, [j]);
+						}, [O]);
 					return Object(o.useMemo)(() => ({
-						authHeaders: y,
-						config: _,
-						isNightMode: k,
-						sendEvent: x
-					}), [y, _, k, x])
+						authHeaders: j,
+						config: E,
+						isNightMode: f,
+						sendEvent: y
+					}), [j, E, f, y])
 				}
 		},
 		"./src/reddit/components/Econ/Marketplace/ShowcaseCollectionViewModal/index.m.less": function(e, t, r) {
@@ -408,4 +406,4 @@
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ShowcaseCollectionViewModal.2dd2ec36136a7679b27f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ShowcaseCollectionViewModal.b9161ef6231cb283f384.js.map

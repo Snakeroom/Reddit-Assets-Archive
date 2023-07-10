@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UpdateCardModal.d3c5bfb686ac32227ab9.js
-// Retrieved at 7/6/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UpdateCardModal.83c554ad1c0bc4ca8ddc.js
+// Retrieved at 7/10/2023, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UpdateCardModal"], {
 		"./node_modules/@stripe/stripe-js/dist/stripe.esm.js": function(e, t, r) {
@@ -84,8 +84,8 @@
 				f = r("./src/reddit/endpoints/gold/purchase.ts"),
 				w = r("./src/reddit/models/Toast/index.ts"),
 				b = r("./src/reddit/selectors/activeModalId.ts"),
-				x = r("./src/reddit/actions/goldPurchaseModals/constants.ts");
-			const j = Object(a.a)(x.f),
+				j = r("./src/reddit/actions/goldPurchaseModals/constants.ts");
+			const x = Object(a.a)(j.f),
 				v = e => async (t, r, n) => {
 					let {
 						gqlContext: s
@@ -108,7 +108,7 @@
 							duration: p.a,
 							text: e
 						})), t((() => async (e, t) => {
-							Object(b.b)(m.a)(t()) && (e(Object(l.i)(m.a)), e(j()))
+							Object(b.b)(m.a)(t()) && (e(Object(l.i)(m.a)), e(x()))
 						})())
 					}
 				};
@@ -133,21 +133,19 @@
 		"./src/reddit/hooks/useStripePromise.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return a
+				return d
 			}));
 			var n = r("./node_modules/@stripe/stripe-js/dist/stripe.esm.js"),
 				s = r("./src/config.ts"),
 				i = r("./node_modules/react-redux/es/index.js"),
-				o = r("./src/reddit/selectors/experiments/econ/index.ts"),
-				c = r("./src/reddit/selectors/experiments/econ/paymentsSandbox.ts");
-			let d = null;
+				o = r("./src/reddit/selectors/experiments/econ/paymentsSandbox.ts");
+			let c = null;
 
-			function a() {
-				const e = Object(i.e)(c.a),
-					t = Object(i.e)(o.p);
-				return d || (d = Object(n.a)(s.a.stripe.apiKey(e), {
-					apiVersion: s.a.stripe.apiVersion(t)
-				})), d
+			function d() {
+				const e = Object(i.e)(o.a);
+				return c || (c = Object(n.a)(s.a.stripe.apiKey(e), {
+					apiVersion: s.a.stripe.apiVersion(!0)
+				})), c
 			}
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, r) {
@@ -161,4 +159,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UpdateCardModal.d3c5bfb686ac32227ab9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UpdateCardModal.83c554ad1c0bc4ca8ddc.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.05137a7b076bd61654a3.js
-// Retrieved at 7/6/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ace9a6d336cfdd62f05e.js
+// Retrieved at 7/10/2023, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3659,11 +3659,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("187993"),
+				buildNumber: Object(r.c)("188046"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 1.4.6",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1688675587"),
+				buildTimestamp: Object(r.b)("1689005146"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6411,14 +6411,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c29f0f3c4841528607b7e97bddadb4546cc0c30e7-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cebcfe9dc98e35f4e1b4a2c75d920159c35e69fc0-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "29f0f3c4841528607b7e97bddadb4546cc0c30e7-production",
+						release: "ebcfe9dc98e35f4e1b4a2c75d920159c35e69fc0-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(x.d)(), new d.Integrations.Breadcrumbs({
@@ -6971,7 +6971,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "29f0f3c4841528607b7e97bddadb4546cc0c30e7-production",
+							releaseClient: "ebcfe9dc98e35f4e1b4a2c75d920159c35e69fc0-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -37019,7 +37019,7 @@
 						postId: i
 					} = t;
 					var n, o, l;
-					const u = Object(s.q)(e),
+					const u = Object(s.p)(e),
 						c = !!i && Object(d.F)(e, {
 							postId: i
 						});
@@ -37538,36 +37538,34 @@
 				return _
 			})), i.d(t, "f", (function() {
 				return m
-			})), i.d(t, "x", (function() {
+			})), i.d(t, "w", (function() {
 				return p
 			})), i.d(t, "h", (function() {
 				return h
-			})), i.d(t, "r", (function() {
-				return f
-			})), i.d(t, "u", (function() {
-				return b
-			})), i.d(t, "s", (function() {
-				return g
-			})), i.d(t, "v", (function() {
-				return v
 			})), i.d(t, "q", (function() {
-				return w
+				return f
 			})), i.d(t, "t", (function() {
+				return b
+			})), i.d(t, "r", (function() {
+				return g
+			})), i.d(t, "u", (function() {
+				return v
+			})), i.d(t, "p", (function() {
+				return w
+			})), i.d(t, "s", (function() {
 				return y
-			})), i.d(t, "w", (function() {
+			})), i.d(t, "v", (function() {
 				return E
 			})), i.d(t, "n", (function() {
 				return T
 			})), i.d(t, "b", (function() {
 				return S
-			})), i.d(t, "p", (function() {
-				return O
 			})), i.d(t, "o", (function() {
-				return I
+				return O
 			})), i.d(t, "e", (function() {
-				return R
+				return I
 			})), i.d(t, "d", (function() {
-				return F
+				return R
 			}));
 			var n = i("./src/reddit/constants/experiments.ts"),
 				r = i("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
@@ -37591,10 +37589,9 @@
 				E = Object(r.a)(n.Dg),
 				T = Object(r.a)(n.Rd),
 				S = Object(r.a)(n.Hg),
-				O = Object(r.a)(n.Jg),
-				I = Object(r.a)(n.Ig),
-				R = Object(r.a)(n.Gg),
-				F = Object(r.a)(n.Eg)
+				O = (Object(r.a)(n.Jg), Object(r.a)(n.Ig)),
+				I = Object(r.a)(n.Gg),
+				R = Object(r.a)(n.Eg)
 		},
 		"./src/reddit/selectors/experiments/econ/simpleExperiment.ts": function(e, t, i) {
 			"use strict";
@@ -50998,4 +50995,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.05137a7b076bd61654a3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ace9a6d336cfdd62f05e.js.map

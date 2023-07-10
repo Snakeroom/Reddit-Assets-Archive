@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.65e707607afa293f7fc8.js
-// Retrieved at 7/6/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.4a9c17bb55e5d4c4ceb3.js
+// Retrieved at 7/10/2023, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit~StandalonePostPage", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -36136,7 +36136,7 @@
 							subredditId: n.id
 						})
 					},
-					isTalkTopicSelectionEnabled: T.u,
+					isTalkTopicSelectionEnabled: T.t,
 					isScheduledTalksEnabled: T.n
 				});
 			class ru extends r.a.Component {
@@ -36476,7 +36476,7 @@
 					const t = Object(S.a)(),
 						[n, i] = Object(o.useState)(!1),
 						a = Object(s.e)(e => Object(w.h)(e)),
-						c = Object(s.e)(T.v),
+						c = Object(s.e)(T.u),
 						d = Object(o.useMemo)(() => {
 							var e;
 							return !!(null === (e = a.allowedPostTypes) || void 0 === e ? void 0 : e.talks)
@@ -40194,4 +40194,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.65e707607afa293f7fc8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.4a9c17bb55e5d4c4ceb3.js.map
