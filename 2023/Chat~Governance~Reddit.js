@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ace9a6d336cfdd62f05e.js
-// Retrieved at 7/10/2023, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9be4480b98f2f5dd7513.js
+// Retrieved at 7/10/2023, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3659,11 +3659,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("188046"),
+				buildNumber: Object(r.c)("188073"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 1.4.6",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1689005146"),
+				buildTimestamp: Object(r.b)("1689019596"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6411,14 +6411,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cebcfe9dc98e35f4e1b4a2c75d920159c35e69fc0-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %caacd3c56d5c2ce5864af81a131ee610e3464ed4b-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "ebcfe9dc98e35f4e1b4a2c75d920159c35e69fc0-production",
+						release: "aacd3c56d5c2ce5864af81a131ee610e3464ed4b-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(x.d)(), new d.Integrations.Breadcrumbs({
@@ -6971,7 +6971,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "ebcfe9dc98e35f4e1b4a2c75d920159c35e69fc0-production",
+							releaseClient: "aacd3c56d5c2ce5864af81a131ee610e3464ed4b-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -23500,67 +23500,66 @@
 					return n
 				},
 				a = (e, t, i) => {
-					var a, l, u;
-					let c = null,
-						_ = null;
+					var a, l;
+					let u = null,
+						c = null;
 					if ("undefined" == typeof document || "undefined" == typeof window) return null;
-					const m = Date.now(),
+					const _ = Date.now(),
 						{
-							thresholdData: p,
-							videoThresholdData: h,
-							videoAds: f
+							thresholdData: m,
+							videoThresholdData: p,
+							videoAds: h
 						} = r.c(e) || r.a,
 						{
-							videoData: b
+							videoData: f
 						} = t,
-						g = o(p, m),
-						v = o(h, m),
-						w = p[1].totalTime + g[1],
-						y = p[50].totalTime + g[50],
-						E = p[100].totalTime + g[100],
-						T = Math.max(p[1].maxContinuousTime, g[1]),
-						S = Math.max(p[30].maxContinuousTime, g[30]),
-						O = Math.max(p[50].maxContinuousTime, g[50]),
-						I = Math.max(p[100].maxContinuousTime, g[100]),
-						R = O > n.m,
-						F = document.getElementById(e);
-					if (!F) return null;
-					const C = null !== F.querySelector("shreddit-player"),
-						N = C ? null === (l = null === (a = F.querySelector("shreddit-player")) || void 0 === a ? void 0 : a.shadowRoot) || void 0 === l ? void 0 : l.querySelector("video") : F.querySelector("video");
-					let A = null;
-					N && (A = N.getBoundingClientRect());
-					const j = F.getBoundingClientRect(),
-						P = (c = Math.floor(j.width)) * (_ = Math.floor(j.height)),
-						D = P > 242499 && O >= 1e3 || I >= 1e3 || i === s.a.GroupMViewable ? 1 : 0,
-						L = P > 242499 && S >= 1e3 || I >= 1e3 ? 1 : 0,
-						x = Math.max(h.FULL_IN_VIEW_TIME.maxContinuousTime, v.FULL_IN_VIEW_TIME) >= 1e3,
-						B = h.HALF_DURATION_80_IN_VIEW_AUDIBLE.totalTime + v.HALF_DURATION_80_IN_VIEW_AUDIBLE,
-						k = {
-							w: c,
-							h: _,
+						b = o(m, _),
+						g = o(p, _),
+						v = m[1].totalTime + b[1],
+						w = m[50].totalTime + b[50],
+						y = m[100].totalTime + b[100],
+						E = Math.max(m[1].maxContinuousTime, b[1]),
+						T = Math.max(m[30].maxContinuousTime, b[30]),
+						S = Math.max(m[50].maxContinuousTime, b[50]),
+						O = Math.max(m[100].maxContinuousTime, b[100]),
+						I = S > n.m,
+						R = document.getElementById(e);
+					if (!R) return null;
+					const F = null !== R.querySelector("shreddit-player") ? null === (l = null === (a = R.querySelector("shreddit-player")) || void 0 === a ? void 0 : a.shadowRoot) || void 0 === l ? void 0 : l.querySelector("video") : R.querySelector("video");
+					let C = null;
+					F && (C = F.getBoundingClientRect());
+					const N = R.getBoundingClientRect(),
+						A = (u = Math.floor(N.width)) * (c = Math.floor(N.height)),
+						j = A > 242499 && S >= 1e3 || O >= 1e3 || i === s.a.GroupMViewable ? 1 : 0,
+						P = A > 242499 && T >= 1e3 || O >= 1e3 ? 1 : 0,
+						D = Math.max(p.FULL_IN_VIEW_TIME.maxContinuousTime, g.FULL_IN_VIEW_TIME) >= 1e3,
+						L = p.HALF_DURATION_80_IN_VIEW_AUDIBLE.totalTime + g.HALF_DURATION_80_IN_VIEW_AUDIBLE,
+						x = {
+							w: u,
+							h: c,
 							sw: window.screen.width,
 							sh: window.screen.height,
-							t: m,
-							a: w,
-							b: y,
-							c: E,
-							d: T,
-							e: O,
-							f: I,
-							g: D ? 1 : 0,
-							i: i === s.a.Impression ? m : t.timeImpressionViewed || 0,
-							o: R ? 1 : 0,
-							q: L ? 1 : 0,
+							t: _,
+							a: v,
+							b: w,
+							c: y,
+							d: E,
+							e: S,
+							f: O,
+							g: j ? 1 : 0,
+							i: i === s.a.Impression ? _ : t.timeImpressionViewed || 0,
+							o: I ? 1 : 0,
+							q: P ? 1 : 0,
 							r: t.eventGlobalCount ? t.eventGlobalCount : 0
 						};
-					if (b.isVideo) {
-						const e = C ? 1e3 * (null !== (u = null == N ? void 0 : N.duration) && void 0 !== u ? u : 0) : b.videoDuration || 0,
-							r = C ? !N.muted && N.volume > 0 : t.videoData.videoAudible;
-						k.va = b.isVideo ? 1 : 0, k.vh = A ? Math.floor(A.height) : 0, k.vw = A ? Math.floor(A.width) : 0, k.ve = (C ? 100 * N.volume : b.videoVolume) || 0, k.vc = Math.floor(e), k.vd = Math.floor(b.cumulativeViewedTime) || 0, k.vq = b.wasFullScreen || 0, k.vg = h[1].timeEntered ? 1 : 0, k.vb = C ? Math.floor(b.cumulativeViewedTime) : h.TOTAL_MRC_VIEWABLE_TIME.totalTime + v.TOTAL_MRC_VIEWABLE_TIME, k.vs = d(r, h[1].timeEntered, i === s.a.VideoStarted, b.videoStarted), k.vt = d(r, h[1].timeEntered, i === s.a.VideoWatched25, b.watched25), k.vu = d(r, h[1].timeEntered, i === s.a.VideoWatched50, b.watched50), k.vv = d(r, h[1].timeEntered, i === s.a.VideoWatched75, b.watched75), k.vx = d(r, h[1].timeEntered, i === s.a.VideoWatched100, b.watched100);
-						const o = e > 0 ? B >= Math.min(n.g, e / 2) : B >= n.g;
-						k.vr = o ? 1 : 0, k.vy = h.FULL_IN_VIEW_AUDIBLE_TIME.totalTime + v.FULL_IN_VIEW_AUDIBLE_TIME, k.vi = h.AUDIBLE_TIME.totalTime + v.AUDIBLE_TIME, k.vz = C ? Math.floor(b.cumulativeViewedTime) : h.FULL_IN_VIEW_TIME.totalTime + v.FULL_IN_VIEW_TIME, k.xa = x ? 1 : 0, k.xb = Math.max(h.TOTAL_MRC_VIEWABLE_TIME.maxContinuousTime, v.TOTAL_MRC_VIEWABLE_TIME), k.xc = f.seeked.value ? 1 : 0
+					if (f.isVideo) {
+						const e = f.videoDuration || 0,
+							r = t.videoData.videoAudible;
+						x.va = f.isVideo ? 1 : 0, x.vh = C ? Math.floor(C.height) : 0, x.vw = C ? Math.floor(C.width) : 0, x.ve = f.videoVolume || 0, x.vc = Math.floor(e), x.vd = Math.floor(f.cumulativeViewedTime) || 0, x.vq = f.wasFullScreen || 0, x.vg = p[1].timeEntered ? 1 : 0, x.vb = p.TOTAL_MRC_VIEWABLE_TIME.totalTime + g.TOTAL_MRC_VIEWABLE_TIME, x.vs = d(r, p[1].timeEntered, i === s.a.VideoStarted, f.videoStarted), x.vt = d(r, p[1].timeEntered, i === s.a.VideoWatched25, f.watched25), x.vu = d(r, p[1].timeEntered, i === s.a.VideoWatched50, f.watched50), x.vv = d(r, p[1].timeEntered, i === s.a.VideoWatched75, f.watched75), x.vx = d(r, p[1].timeEntered, i === s.a.VideoWatched100, f.watched100);
+						const o = e > 0 ? L >= Math.min(n.g, e / 2) : L >= n.g;
+						x.vr = o ? 1 : 0, x.vy = p.FULL_IN_VIEW_AUDIBLE_TIME.totalTime + g.FULL_IN_VIEW_AUDIBLE_TIME, x.vi = p.AUDIBLE_TIME.totalTime + g.AUDIBLE_TIME, x.vz = p.FULL_IN_VIEW_TIME.totalTime + g.FULL_IN_VIEW_TIME, x.xa = D ? 1 : 0, x.xb = Math.max(p.TOTAL_MRC_VIEWABLE_TIME.maxContinuousTime, g.TOTAL_MRC_VIEWABLE_TIME), x.xc = h.seeked.value ? 1 : 0
 					}
-					return k
+					return x
 				}
 		},
 		"./src/reddit/helpers/graphql/helpers.ts": function(e, t, i) {
@@ -50995,4 +50994,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ace9a6d336cfdd62f05e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9be4480b98f2f5dd7513.js.map
