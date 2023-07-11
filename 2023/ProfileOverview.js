@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.1c254a67db58cf7a20aa.js
-// Retrieved at 7/10/2023, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.0b40d52ff511c6306ddd.js
+// Retrieved at 7/11/2023, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./src/lib/LiveChatActiveUsers/index.m.less": function(e, t, s) {
@@ -8901,7 +8901,7 @@
 					let {
 						username: t
 					} = e;
-					const s = Object(i.e)(W.a);
+					const s = Object(i.e)(e => Object(W.a)(e, !1));
 					return t && s ? a.a.createElement(X, {
 						username: t
 					}) : null
@@ -9126,11 +9126,14 @@
 			var n = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/experiments/index.ts");
-			const a = e => {
-				return (Object(o.c)(e, {
+			const a = function(e) {
+				let t = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1];
+				const s = Object(o.c)(e, {
 					experimentEligibilitySelector: r.e,
-					experimentName: n.xb
-				}) || n.V.Control1) === n.Yd
+					experimentName: n.xb,
+					expEventOverride: t
+				}) || n.V.Control1;
+				return s === n.Yd
 			}
 		},
 		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, s) {
@@ -9211,4 +9214,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.1c254a67db58cf7a20aa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.0b40d52ff511c6306ddd.js.map
