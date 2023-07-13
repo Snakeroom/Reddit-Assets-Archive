@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.4a9c17bb55e5d4c4ceb3.js
-// Retrieved at 7/10/2023, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.daa6fff3849c8d4b93e9.js
+// Retrieved at 7/13/2023, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit~StandalonePostPage", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -3768,6 +3768,10 @@
 					let {
 						apiContext: i
 					} = r;
+					await t(Object(u.b)({
+						action: s.a.PostSubmit,
+						catchAndLogError: !0
+					}));
 					const l = n(),
 						m = Object(N.hb)(l, e),
 						{
@@ -3779,10 +3783,6 @@
 					if (t(U(m)), e.postFieldValidationPending && (await e.postFieldValidationPending, Object(N.x)(n()))) return;
 					if (e.postGuidanceValidationPending && (await e.postGuidanceValidationPending, Object(M.c)(n()))) return;
 					let x;
-					t(Object(u.b)({
-						action: s.a.PostSubmit,
-						catchAndLogError: !0
-					}));
 					const O = h && y.d.spPolls(l);
 					if ((x = O ? await
 							function(e, t, n) {
@@ -40194,4 +40194,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.4a9c17bb55e5d4c4ceb3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.daa6fff3849c8d4b93e9.js.map
