@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.2d6fa30cf5f7e9fe6ba2.js
-// Retrieved at 7/10/2023, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.1c36729ea7f0038e2d66.js
+// Retrieved at 7/17/2023, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -26574,7 +26574,7 @@
 					})
 				},
 				y = (e, t) => !!(e => !!e.match(u))(t) && (x(e) === r.hg.Enabled || x(e) === r.hg.HardReload),
-				E = (e, t) => !!(e => !!(e.match(a) || e.match(o) || e.match(c) || e.match(u) || e.match(d) || e.match(l)))(t) && (e => {
+				E = (e, t) => !!(e => !!e.match(u))(t) && (e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: i.e,
 						experimentName: r.Uf
@@ -27012,4 +27012,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.2d6fa30cf5f7e9fe6ba2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.1c36729ea7f0038e2d66.js.map

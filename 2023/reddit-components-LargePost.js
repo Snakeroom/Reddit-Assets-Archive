@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.b305aa03bde4cc2fa7b1.js
-// Retrieved at 7/6/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.52f98d60f96afd791d88.js
+// Retrieved at 7/17/2023, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -9898,7 +9898,7 @@
 					})
 				},
 				g = (e, t) => !!(e => !!e.match(m))(t) && (_(e) === n.hg.Enabled || _(e) === n.hg.HardReload),
-				E = (e, t) => !!(e => !!(e.match(i) || e.match(a) || e.match(d) || e.match(m) || e.match(c) || e.match(l)))(t) && (e => {
+				E = (e, t) => !!(e => !!e.match(m))(t) && (e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: r.e,
 						experimentName: n.Uf
@@ -10069,4 +10069,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.b305aa03bde4cc2fa7b1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.52f98d60f96afd791d88.js.map

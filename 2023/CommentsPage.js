@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.da5fa690384f520ba485.js
-// Retrieved at 7/6/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.cbfc30df0c363b425815.js
+// Retrieved at 7/17/2023, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "CollectionCommentsPage~SearchResults", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -48976,7 +48976,7 @@
 					})
 				},
 				O = (e, t) => !!(e => !!e.match(u))(t) && (v(e) === s.hg.Enabled || v(e) === s.hg.HardReload),
-				x = (e, t) => !!(e => !!(e.match(a) || e.match(i) || e.match(c) || e.match(u) || e.match(d) || e.match(l)))(t) && (e => {
+				x = (e, t) => !!(e => !!e.match(u))(t) && (e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.e,
 						experimentName: s.Uf
@@ -49978,4 +49978,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.da5fa690384f520ba485.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.cbfc30df0c363b425815.js.map

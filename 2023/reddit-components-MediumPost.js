@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.84760d6f63f201aada26.js
-// Retrieved at 7/6/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.2a6d5bcabd61732391cb.js
+// Retrieved at 7/17/2023, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -6344,7 +6344,7 @@
 					})
 				},
 				E = (e, t) => !!(e => !!e.match(u))(t) && (x(e) === n.hg.Enabled || x(e) === n.hg.HardReload),
-				g = (e, t) => !!(e => !!(e.match(i) || e.match(a) || e.match(d) || e.match(u) || e.match(c) || e.match(l)))(t) && (e => {
+				g = (e, t) => !!(e => !!e.match(u))(t) && (e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: r.e,
 						experimentName: n.Uf
@@ -6486,4 +6486,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.84760d6f63f201aada26.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.2a6d5bcabd61732391cb.js.map

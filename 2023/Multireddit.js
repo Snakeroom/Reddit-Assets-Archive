@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.4bb60c79d287a89048ac.js
-// Retrieved at 7/6/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.1643a7612c2dfa1b4986.js
+// Retrieved at 7/17/2023, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, n) {
@@ -1873,7 +1873,7 @@
 					})
 				},
 				T = (e, t) => !!(e => !!e.match(u))(t) && (O(e) === r.hg.Enabled || O(e) === r.hg.HardReload),
-				S = (e, t) => !!(e => !!(e.match(c) || e.match(i) || e.match(a) || e.match(u) || e.match(d) || e.match(l)))(t) && (e => {
+				S = (e, t) => !!(e => !!e.match(u))(t) && (e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: s.e,
 						experimentName: r.Uf
@@ -1923,4 +1923,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.4bb60c79d287a89048ac.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.1643a7612c2dfa1b4986.js.map
