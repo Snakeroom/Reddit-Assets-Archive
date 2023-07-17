@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.f46f0d7cc2691fb73e70.js
-// Retrieved at 7/10/2023, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.2467711b0f734ba30ad2.js
+// Retrieved at 7/17/2023, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1798,11 +1798,11 @@
 		"./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
-				return y
-			})), r.d(t, "c", (function() {
 				return O
+			})), r.d(t, "c", (function() {
+				return j
 			})), r.d(t, "a", (function() {
-				return x
+				return E
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				s = r("./src/lib/env/index.ts"),
@@ -1816,20 +1816,21 @@
 				m = r("./src/reddit/actions/economics/powerups/helpers.ts"),
 				p = r("./src/redditGQL/operations/PurchaseCatalogProductOffers.json");
 			var b = r("./src/reddit/selectors/gold/productOffers.ts"),
-				f = r("./src/reddit/actions/goldPurchaseModals/constants.ts");
-			Object(a.a)(f.m);
-			const g = Object(a.a)(f.o),
-				h = Object(a.a)(f.n),
-				w = Object(a.a)(f.i),
-				v = Object(a.a)(f.j),
-				y = e => async (t, r, a) => {
+				f = r("./src/reddit/selectors/gold/purchaseCatalog.ts"),
+				g = r("./src/reddit/actions/goldPurchaseModals/constants.ts");
+			Object(a.a)(g.m);
+			const h = Object(a.a)(g.o),
+				w = Object(a.a)(g.n),
+				v = Object(a.a)(g.i),
+				y = Object(a.a)(g.j),
+				O = e => async (t, r, a) => {
 					let {
 						gqlContext: i
 					} = a;
 					const c = r(),
-						d = Object(b.a)(c);
+						d = !(!Object(b.a)(c) && !Object(f.i)(c)[0]);
 					if ((null == e ? void 0 : e.forceLoad) || !d) {
-						t(g());
+						t(h());
 						try {
 							const e = await (async e => {
 								const t = await Object(u.a)(e, {
@@ -1843,16 +1844,16 @@
 								}
 								return t.body
 							})(i());
-							t(w(e.data.coinpacks.offers[0])), t(v(e.data.premium.offers[0]))
+							t(v(e.data.coinpacks.offers[0])), t(y(e.data.premium.offers[0]))
 						} catch (l) {
 							Object(s.b)() || console.error(l), o.c.captureException(l);
 							const e = n.fbt._("There was an error fetching available products", null, {
 								hk: "1Uvx37"
 							});
-							t(h(e))
+							t(w(e))
 						}
 					}
-				}, O = () => async e => e(y()), j = Object(a.a)(f.h), x = () => async (e, t, r) => {
+				}, j = () => async e => e(O()), x = Object(a.a)(g.h), E = () => async (e, t, r) => {
 					let {
 						gqlContext: a
 					} = r;
@@ -1864,7 +1865,7 @@
 							if (null === (u = r.errors) || void 0 === u ? void 0 : u.length) throw new Error(r.errors.map(e => e.message).join(" | "));
 							if (!(null === (m = r.awards) || void 0 === m ? void 0 : m.length)) throw new Error("Got empty award list on free award offer claim");
 							if (!r.ok) throw new Error("Got not ok response on free award offer claim");
-							await e(j({
+							await e(x({
 								awards: r.awards
 							})), e(Object(l.A)())
 						}
@@ -3713,4 +3714,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.f46f0d7cc2691fb73e70.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.2467711b0f734ba30ad2.js.map

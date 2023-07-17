@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.482e0d459d25926a1e5e.js
-// Retrieved at 7/10/2023, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.2d131dd9b86ec0ad8201.js
+// Retrieved at 7/17/2023, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GoldTargetedOfferModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -937,11 +937,11 @@
 		"./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
-				return h
-			})), r.d(t, "c", (function() {
 				return v
+			})), r.d(t, "c", (function() {
+				return _
 			})), r.d(t, "a", (function() {
-				return E
+				return P
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				o = r("./src/lib/env/index.ts"),
@@ -955,20 +955,21 @@
 				p = r("./src/reddit/actions/economics/powerups/helpers.ts"),
 				b = r("./src/redditGQL/operations/PurchaseCatalogProductOffers.json");
 			var f = r("./src/reddit/selectors/gold/productOffers.ts"),
-				m = r("./src/reddit/actions/goldPurchaseModals/constants.ts");
-			Object(c.a)(m.m);
-			const y = Object(c.a)(m.o),
-				O = Object(c.a)(m.n),
-				g = Object(c.a)(m.i),
-				j = Object(c.a)(m.j),
-				h = e => async (t, r, c) => {
+				m = r("./src/reddit/selectors/gold/purchaseCatalog.ts"),
+				y = r("./src/reddit/actions/goldPurchaseModals/constants.ts");
+			Object(c.a)(y.m);
+			const O = Object(c.a)(y.o),
+				g = Object(c.a)(y.n),
+				j = Object(c.a)(y.i),
+				h = Object(c.a)(y.j),
+				v = e => async (t, r, c) => {
 					let {
 						gqlContext: s
 					} = c;
 					const i = r(),
-						d = Object(f.a)(i);
+						d = !(!Object(f.a)(i) && !Object(m.i)(i)[0]);
 					if ((null == e ? void 0 : e.forceLoad) || !d) {
-						t(y());
+						t(O());
 						try {
 							const e = await (async e => {
 								const t = await Object(u.a)(e, {
@@ -982,16 +983,16 @@
 								}
 								return t.body
 							})(s());
-							t(g(e.data.coinpacks.offers[0])), t(j(e.data.premium.offers[0]))
+							t(j(e.data.coinpacks.offers[0])), t(h(e.data.premium.offers[0]))
 						} catch (l) {
 							Object(o.b)() || console.error(l), a.c.captureException(l);
 							const e = n.fbt._("There was an error fetching available products", null, {
 								hk: "1Uvx37"
 							});
-							t(O(e))
+							t(g(e))
 						}
 					}
-				}, v = () => async e => e(h()), _ = Object(c.a)(m.h), E = () => async (e, t, r) => {
+				}, _ = () => async e => e(v()), E = Object(c.a)(y.h), P = () => async (e, t, r) => {
 					let {
 						gqlContext: c
 					} = r;
@@ -1003,7 +1004,7 @@
 							if (null === (u = r.errors) || void 0 === u ? void 0 : u.length) throw new Error(r.errors.map(e => e.message).join(" | "));
 							if (!(null === (p = r.awards) || void 0 === p ? void 0 : p.length)) throw new Error("Got empty award list on free award offer claim");
 							if (!r.ok) throw new Error("Got not ok response on free award offer claim");
-							await e(_({
+							await e(E({
 								awards: r.awards
 							})), e(Object(l.A)())
 						}
@@ -1595,4 +1596,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.482e0d459d25926a1e5e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.2d131dd9b86ec0ad8201.js.map

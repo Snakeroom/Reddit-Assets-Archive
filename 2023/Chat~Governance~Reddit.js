@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1203c7274bbc8db7b7fc.js
-// Retrieved at 7/13/2023, 8:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.927bb2e884319537e336.js
+// Retrieved at 7/17/2023, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3659,11 +3659,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("188248"),
+				buildNumber: Object(r.c)("188315"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 1.4.6",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1689290405"),
+				buildTimestamp: Object(r.b)("1689603019"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6411,14 +6411,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %ca78f78fac8c638df77e87f88aac972d355be2be2-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c00afe868948f7f680b365aece6f79035f7b113c5-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "a78f78fac8c638df77e87f88aac972d355be2be2-production",
+						release: "00afe868948f7f680b365aece6f79035f7b113c5-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(x.d)(), new d.Integrations.Breadcrumbs({
@@ -6971,7 +6971,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "a78f78fac8c638df77e87f88aac972d355be2be2-production",
+							releaseClient: "00afe868948f7f680b365aece6f79035f7b113c5-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -35172,22 +35172,22 @@
 						}
 						case r.i: {
 							const i = t.payload,
-								n = {
-									id: i.id,
-									version: i.version,
-									description: i.description,
-									type: P.c.Coinpack,
-									name: i.name,
-									pricePackages: i.pricePackages.map(e => ({
-										price: Number(e.price),
-										quantity: Number(e.quantity),
-										id: e.id,
-										currency: e.currency
-									}))
-								};
-							return {
+								n = [];
+							return i && n.push({
+								id: i.id,
+								version: i.version,
+								description: i.description,
+								type: P.c.Coinpack,
+								name: i.name,
+								pricePackages: i.pricePackages.map(e => ({
+									price: Number(e.price),
+									quantity: Number(e.quantity),
+									id: e.id,
+									currency: e.currency
+								}))
+							}), {
 								...e,
-								[P.c.Coinpack]: [n]
+								[P.c.Coinpack]: n
 							}
 						}
 						default:
@@ -35216,17 +35216,18 @@
 						} : null
 					}
 					case r.i: {
-						const i = t.payload.pricePackages.find(e => e.promos.some(x.b));
-						if (!i) return e;
-						const n = i.promos.find(x.b);
+						const i = t.payload,
+							n = null == i ? void 0 : i.pricePackages.find(e => e.promos.some(x.b));
+						if (!n) return e;
+						const r = n.promos.find(x.b);
 						return {
-							dropdownHeaderBackgroundAsset: n.headerImage.url,
-							dropdownHeaderText: n.headerText,
-							endsAt: B(n.endsAt),
-							heroImageUrl: n.heroImage.url,
-							heroText: n.heroText,
-							heroSubtext: n.heroSubText,
-							ctaText: n.ctaText
+							dropdownHeaderBackgroundAsset: r.headerImage.url,
+							dropdownHeaderText: r.headerText,
+							endsAt: B(r.endsAt),
+							heroImageUrl: r.heroImage.url,
+							heroText: r.heroText,
+							heroSubtext: r.heroSubText,
+							ctaText: r.ctaText
 						}
 					}
 					default:
@@ -35293,6 +35294,7 @@
 			var H = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : q,
 					t = arguments.length > 1 ? arguments[1] : void 0;
+				var i;
 				switch (t.type) {
 					case r.m: {
 						const {
@@ -35300,8 +35302,10 @@
 						} = t.payload;
 						return e.map(e => e.mobileId)
 					}
-					case r.i:
-						return t.payload.pricePackages.filter(e => e.promos.some(x.d)).map(e => e.id);
+					case r.i: {
+						const e = t.payload;
+						return (null !== (i = null == e ? void 0 : e.pricePackages.filter(e => e.promos.some(x.d))) && void 0 !== i ? i : []).map(e => e.id)
+					}
 					default:
 						return e
 				}
@@ -35364,7 +35368,7 @@
 					case r.i: {
 						const i = t.payload,
 							n = {};
-						return i.pricePackages.forEach(e => {
+						return null == i || i.pricePackages.forEach(e => {
 							const t = e.skus.find(x.c);
 							if (!t) return;
 							const i = e.tags.includes("featured"),
@@ -35404,6 +35408,7 @@
 			var X = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Q,
 					t = arguments.length > 1 ? arguments[1] : void 0;
+				var i;
 				switch (t.type) {
 					case r.r: {
 						const {
@@ -35411,8 +35416,10 @@
 						} = t.payload;
 						return e.map(e => e.mobileId)
 					}
-					case r.i:
-						return t.payload.pricePackages.filter(e => e.tags.includes("recommended_candidate") || e.tags.includes("recommended_for_profile")).map(e => e.id);
+					case r.i: {
+						const e = t.payload;
+						return (null !== (i = null == e ? void 0 : e.pricePackages.filter(e => e.tags.includes("recommended_candidate") || e.tags.includes("recommended_for_profile"))) && void 0 !== i ? i : []).map(e => e.id)
+					}
 					case r.q:
 					case r.o:
 						return Q;
@@ -35424,6 +35431,7 @@
 			var Z = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : J,
 						t = arguments.length > 1 ? arguments[1] : void 0;
+					var i;
 					switch (t.type) {
 						case r.m: {
 							const {
@@ -35431,8 +35439,10 @@
 							} = t.payload;
 							return e.map(e => e.mobileId)
 						}
-						case r.i:
-							return t.payload.pricePackages.filter(e => e.tags.includes("regular")).map(e => e.id);
+						case r.i: {
+							const e = t.payload;
+							return (null !== (i = null == e ? void 0 : e.pricePackages.filter(e => e.tags.includes("regular"))) && void 0 !== i ? i : []).map(e => e.id)
+						}
 						default:
 							return e
 					}
@@ -35490,8 +35500,9 @@
 						case r.m:
 							return t.payload.premiumPackages;
 						case r.j: {
-							const e = [];
-							return t.payload.pricePackages.forEach(t => {
+							const e = [],
+								i = t.payload;
+							return null == i || i.pricePackages.forEach(t => {
 								var i, n;
 								e.push({
 									frequency: "MONTH" === t.renewInterval ? ne.c.Monthly : ne.c.Yearly,
@@ -50994,4 +51005,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1203c7274bbc8db7b7fc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.927bb2e884319537e336.js.map
