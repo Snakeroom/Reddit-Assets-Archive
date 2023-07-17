@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.1c36729ea7f0038e2d66.js
-// Retrieved at 7/17/2023, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.10ea91a51c3a7f470555.js
+// Retrieved at 7/17/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -17169,14 +17169,19 @@
 					disabled: r,
 					replace: c,
 					to: u,
-					...m
+					target: m,
+					...p
 				} = e;
 				return r ? s.a.createElement("span", {
 					className: Object(o.a)(d.a.disabledLink, n)
-				}, t) : ("string" == typeof u && (u = Object(a.b)(u)), s.a.createElement(i.a, l({
+				}, t) : ("string" == typeof u && (u = Object(a.b)(u)), m ? s.a.createElement(i.a, l({
+					className: n,
+					to: u,
+					target: m
+				}, p), t) : s.a.createElement(i.a, l({
 					className: n,
 					to: u
-				}, m), t))
+				}, p), t))
 			}
 		},
 		"./src/reddit/controls/LoadingIcon/index.m.less": function(e, t, n) {
@@ -26514,22 +26519,24 @@
 		},
 		"./src/reddit/selectors/experiments/shredditMigration.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "e", (function() {
+			n.d(t, "f", (function() {
 				return b
-			})), n.d(t, "c", (function() {
-				return f
 			})), n.d(t, "d", (function() {
+				return f
+			})), n.d(t, "e", (function() {
 				return h
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "c", (function() {
 				return g
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "b", (function() {
 				return _
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "i", (function() {
 				return v
-			})), n.d(t, "f", (function() {
-				return y
 			})), n.d(t, "g", (function() {
+				return y
+			})), n.d(t, "a", (function() {
 				return E
+			})), n.d(t, "h", (function() {
+				return O
 			}));
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
@@ -26574,12 +26581,13 @@
 					})
 				},
 				y = (e, t) => !!(e => !!e.match(u))(t) && (x(e) === r.hg.Enabled || x(e) === r.hg.HardReload),
-				E = (e, t) => !!(e => !!e.match(u))(t) && (e => {
+				E = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: i.e,
 						experimentName: r.Uf
 					})
-				})(e) === r.hg.Enabled
+				},
+				O = (e, t) => !!(e => !!e.match(u))(t) && E(e) === r.hg.Enabled
 		},
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, n) {
 			"use strict";
@@ -26598,15 +26606,15 @@
 					e.block(e => {
 						let t = !1;
 						if (Object(i.S)(n)) {
-							Object(o.g)(n, e.pathname) && (t = !0)
+							Object(o.h)(n, e.pathname) && (t = !0)
 						} else {
 							const r = (e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname),
-								s = Object(o.b)(n, e.pathname),
-								i = Object(o.e)(n, e.pathname),
-								a = Object(o.c)(n, e.pathname),
-								c = Object(o.d)(n, e.pathname),
-								d = Object(o.h)(n, e.pathname),
-								l = Object(o.f)(n, e.pathname);
+								s = Object(o.c)(n, e.pathname),
+								i = Object(o.f)(n, e.pathname),
+								a = Object(o.d)(n, e.pathname),
+								c = Object(o.e)(n, e.pathname),
+								d = Object(o.i)(n, e.pathname),
+								l = Object(o.g)(n, e.pathname);
 							(s || r || i || a || c || d || l) && (t = !0)
 						}
 						if (t) {
@@ -27012,4 +27020,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.1c36729ea7f0038e2d66.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.10ea91a51c3a7f470555.js.map

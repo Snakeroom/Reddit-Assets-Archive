@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.ba680aa4c9c1350842c8.js
-// Retrieved at 7/13/2023, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.745f596ba8e7bb3a078c.js
+// Retrieved at 7/17/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -57801,14 +57801,19 @@
 					disabled: s,
 					replace: d,
 					to: u,
-					...m
+					target: m,
+					...p
 				} = e;
 				return s ? r.a.createElement("span", {
 					className: Object(i.a)(c.a.disabledLink, n)
-				}, t) : ("string" == typeof u && (u = Object(a.b)(u)), r.a.createElement(o.a, l({
+				}, t) : ("string" == typeof u && (u = Object(a.b)(u)), m ? r.a.createElement(o.a, l({
+					className: n,
+					to: u,
+					target: m
+				}, p), t) : r.a.createElement(o.a, l({
 					className: n,
 					to: u
-				}, m), t))
+				}, p), t))
 			}
 		},
 		"./src/reddit/controls/InvisibleScreenReaderText/index.m.less": function(e, t, n) {
@@ -81562,4 +81567,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.ba680aa4c9c1350842c8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.745f596ba8e7bb3a078c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.db5da0796bf0e60fdd48.js
-// Retrieved at 7/6/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.8087db7583f3eb5cdd92.js
+// Retrieved at 7/17/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -7404,7 +7404,7 @@
 				})), d = Object(i.e)(e => Object(j.o)(e, {
 					listingKey: t
 				}));
-				return Object(i.e)(e => Object(x.a)(e)) === g.hg.Enabled && window.location.reload(), a.a.createElement("div", {
+				return Object(i.e)(e => Object(x.b)(e)) === g.hg.Enabled && window.location.reload(), a.a.createElement("div", {
 					className: Object(O.a)(L.a.resultsContainer)
 				}, n === f.h.Listings ? a.a.createElement(Ve.a, {
 					hasResults: r,
@@ -8693,4 +8693,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.db5da0796bf0e60fdd48.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~SearchResults.8087db7583f3eb5cdd92.js.map

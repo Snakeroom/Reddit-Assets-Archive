@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.1643a7612c2dfa1b4986.js
-// Retrieved at 7/17/2023, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.595ad36d4d8e86bb9ad5.js
+// Retrieved at 7/17/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, n) {
@@ -1813,22 +1813,24 @@
 		},
 		"./src/reddit/selectors/experiments/shredditMigration.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "e", (function() {
+			n.d(t, "f", (function() {
 				return p
-			})), n.d(t, "c", (function() {
-				return f
 			})), n.d(t, "d", (function() {
+				return f
+			})), n.d(t, "e", (function() {
 				return h
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "c", (function() {
 				return _
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "b", (function() {
 				return E
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "i", (function() {
 				return x
-			})), n.d(t, "f", (function() {
-				return T
 			})), n.d(t, "g", (function() {
+				return T
+			})), n.d(t, "a", (function() {
 				return S
+			})), n.d(t, "h", (function() {
+				return j
 			}));
 			var r = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
@@ -1873,12 +1875,13 @@
 					})
 				},
 				T = (e, t) => !!(e => !!e.match(u))(t) && (O(e) === r.hg.Enabled || O(e) === r.hg.HardReload),
-				S = (e, t) => !!(e => !!e.match(u))(t) && (e => {
+				S = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: s.e,
 						experimentName: r.Uf
 					})
-				})(e) === r.hg.Enabled
+				},
+				j = (e, t) => !!(e => !!e.match(u))(t) && S(e) === r.hg.Enabled
 		},
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, n) {
 			"use strict";
@@ -1897,15 +1900,15 @@
 					e.block(e => {
 						let t = !1;
 						if (Object(s.S)(n)) {
-							Object(i.g)(n, e.pathname) && (t = !0)
+							Object(i.h)(n, e.pathname) && (t = !0)
 						} else {
 							const r = (e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname),
-								o = Object(i.b)(n, e.pathname),
-								s = Object(i.e)(n, e.pathname),
-								c = Object(i.c)(n, e.pathname),
-								a = Object(i.d)(n, e.pathname),
-								d = Object(i.h)(n, e.pathname),
-								l = Object(i.f)(n, e.pathname);
+								o = Object(i.c)(n, e.pathname),
+								s = Object(i.f)(n, e.pathname),
+								c = Object(i.d)(n, e.pathname),
+								a = Object(i.e)(n, e.pathname),
+								d = Object(i.i)(n, e.pathname),
+								l = Object(i.g)(n, e.pathname);
 							(o || r || s || c || a || d || l) && (t = !0)
 						}
 						if (t) {
@@ -1923,4 +1926,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.1643a7612c2dfa1b4986.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.595ad36d4d8e86bb9ad5.js.map

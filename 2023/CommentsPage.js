@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.cbfc30df0c363b425815.js
-// Retrieved at 7/17/2023, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.244fd401ec85017a36fa.js
+// Retrieved at 7/17/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "CollectionCommentsPage~SearchResults", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -32683,14 +32683,19 @@
 					disabled: s,
 					replace: c,
 					to: u,
-					...m
+					target: m,
+					...p
 				} = e;
 				return s ? r.a.createElement("span", {
 					className: Object(i.a)(d.a.disabledLink, n)
-				}, t) : ("string" == typeof u && (u = Object(a.b)(u)), r.a.createElement(o.a, l({
+				}, t) : ("string" == typeof u && (u = Object(a.b)(u)), m ? r.a.createElement(o.a, l({
+					className: n,
+					to: u,
+					target: m
+				}, p), t) : r.a.createElement(o.a, l({
 					className: n,
 					to: u
-				}, m), t))
+				}, p), t))
 			}
 		},
 		"./src/reddit/controls/InvisibleScreenReaderText/index.m.less": function(e, t, n) {
@@ -43703,7 +43708,7 @@
 				})), d = Object(a.e)(e => Object(v.o)(e, {
 					listingKey: t
 				}));
-				return Object(a.e)(e => Object(_.a)(e)) === C.hg.Enabled && window.location.reload(), i.a.createElement("div", {
+				return Object(a.e)(e => Object(_.b)(e)) === C.hg.Enabled && window.location.reload(), i.a.createElement("div", {
 					className: Object(h.a)(M.a.resultsContainer)
 				}, s === g.h.Listings ? i.a.createElement(Ve.a, {
 					hasResults: r,
@@ -48916,22 +48921,24 @@
 		},
 		"./src/reddit/selectors/experiments/shredditMigration.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "e", (function() {
+			n.d(t, "f", (function() {
 				return b
-			})), n.d(t, "c", (function() {
-				return f
 			})), n.d(t, "d", (function() {
+				return f
+			})), n.d(t, "e", (function() {
 				return h
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "c", (function() {
 				return C
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "b", (function() {
 				return g
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "i", (function() {
 				return _
-			})), n.d(t, "f", (function() {
-				return O
 			})), n.d(t, "g", (function() {
+				return O
+			})), n.d(t, "a", (function() {
 				return x
+			})), n.d(t, "h", (function() {
+				return y
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
@@ -48976,12 +48983,13 @@
 					})
 				},
 				O = (e, t) => !!(e => !!e.match(u))(t) && (v(e) === s.hg.Enabled || v(e) === s.hg.HardReload),
-				x = (e, t) => !!(e => !!e.match(u))(t) && (e => {
+				x = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.e,
 						experimentName: s.Uf
 					})
-				})(e) === s.hg.Enabled
+				},
+				y = (e, t) => !!(e => !!e.match(u))(t) && x(e) === s.hg.Enabled
 		},
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, n) {
 			"use strict";
@@ -49000,15 +49008,15 @@
 					e.block(e => {
 						let t = !1;
 						if (Object(o.S)(n)) {
-							Object(i.g)(n, e.pathname) && (t = !0)
+							Object(i.h)(n, e.pathname) && (t = !0)
 						} else {
 							const s = (e => !!e.match(/^\/(?:r\/[^\/]+\/)?comments\/([a-z0-9]*)/i) || !!e.match(/^\/u(?:ser)?\/[^/]+\/comments\/[a-z0-9]+/i))(e.pathname),
-								r = Object(i.b)(n, e.pathname),
-								o = Object(i.e)(n, e.pathname),
-								a = Object(i.c)(n, e.pathname),
-								c = Object(i.d)(n, e.pathname),
-								d = Object(i.h)(n, e.pathname),
-								l = Object(i.f)(n, e.pathname);
+								r = Object(i.c)(n, e.pathname),
+								o = Object(i.f)(n, e.pathname),
+								a = Object(i.d)(n, e.pathname),
+								c = Object(i.e)(n, e.pathname),
+								d = Object(i.i)(n, e.pathname),
+								l = Object(i.g)(n, e.pathname);
 							(r || s || o || a || c || d || l) && (t = !0)
 						}
 						if (t) {
@@ -49978,4 +49986,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.cbfc30df0c363b425815.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.244fd401ec85017a36fa.js.map

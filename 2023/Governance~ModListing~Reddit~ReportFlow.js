@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow.1011f1a0d97ff54ab0e0.js
-// Retrieved at 7/6/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow.5ac2aeeb1aa2c4a96614.js
+// Retrieved at 7/17/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow"], {
 		"./src/lib/assertNever.ts": function(t, e, i) {
@@ -2023,14 +2023,19 @@
 					disabled: n,
 					replace: c,
 					to: u,
-					..._
+					target: _,
+					...f
 				} = t;
 				return n ? r.a.createElement("span", {
 					className: Object(s.a)(a.a.disabledLink, i)
-				}, e) : ("string" == typeof u && (u = Object(l.b)(u)), r.a.createElement(o.a, d({
+				}, e) : ("string" == typeof u && (u = Object(l.b)(u)), _ ? r.a.createElement(o.a, d({
+					className: i,
+					to: u,
+					target: _
+				}, f), e) : r.a.createElement(o.a, d({
 					className: i,
 					to: u
-				}, _), e))
+				}, f), e))
 			}
 		},
 		"./src/reddit/endpoints/subreddit/about.ts": function(t, e, i) {
@@ -3136,4 +3141,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow.1011f1a0d97ff54ab0e0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow.5ac2aeeb1aa2c4a96614.js.map
