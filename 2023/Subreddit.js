@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.cbffdbc906844624db69.js
-// Retrieved at 7/18/2023, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.64ffb6e3ea9143956e3c.js
+// Retrieved at 7/18/2023, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -9087,7 +9087,7 @@
 						src: n
 					}), !e && i.a.createElement("img", {
 						className: G.a.garlicBreadIcon,
-						src: `${r.a.assetPath}/img/garlic-bread-loader.gif`
+						src: `${r.a.assetPath}/img/pixel-loader.gif`
 					}), e && (!t || o) && i.a.createElement("div", {
 						className: G.a.overlay,
 						onClick: this.onOverlayClick
@@ -27000,4 +27000,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.cbffdbc906844624db69.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.64ffb6e3ea9143956e3c.js.map
