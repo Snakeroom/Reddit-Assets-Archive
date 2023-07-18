@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8.64d0e6e608743881bb0b.js
-// Retrieved at 7/17/2023, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8.5af446b62063773ecd4b.js
+// Retrieved at 7/18/2023, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -2129,7 +2129,7 @@
 					} = e || {},
 					ee = Object(d.e)(x.i),
 					te = !_ && ee,
-					se = (w || !z && C && !_) && (Object(v.z)(A) || !(e.isSponsored && Object(i.hasAcceptableAds)()));
+					se = (w || !z && C && !_) && (Object(v.z)(A) || !(e.isSponsored && "undefined" != typeof document && Object(i.hasAcceptableAds)()));
 				Object(r.useEffect)(() => {
 					"ready" === u && async function() {
 						try {
@@ -3120,4 +3120,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8.64d0e6e608743881bb0b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Hap~a5d6a3b8.5af446b62063773ecd4b.js.map
