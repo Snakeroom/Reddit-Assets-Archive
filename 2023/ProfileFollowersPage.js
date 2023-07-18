@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.438ba50dc582ae20dce9.js
-// Retrieved at 7/10/2023, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.19a5cfbfdfbebcba3a27.js
+// Retrieved at 7/18/2023, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -4920,9 +4920,9 @@
 		"./src/reddit/components/SubredditModerationTopBar/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return u
+				return p
 			})), s.d(t, "b", (function() {
-				return m
+				return h
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				r = s("./node_modules/react/index.js"),
@@ -4932,11 +4932,13 @@
 				d = s("./src/reddit/icons/svgs/Search/index.tsx"),
 				l = s("./src/reddit/components/SubredditModerationTopBar/index.m.less"),
 				c = s.n(l);
-			const u = i.a.div("topBarRow", c.a);
-			class m extends o.a.Component {
+			const u = 21,
+				m = "-ModTeam".length,
+				p = i.a.div("topBarRow", c.a);
+			class h extends o.a.Component {
 				constructor(e) {
 					super(e), this.onSearchChange = e => {
-						Object(a.a)(e.currentTarget.value).length < 21 && this.setState({
+						Object(a.a)(e.currentTarget.value).length < u + m && this.setState({
 							searchInputText: e.currentTarget.value
 						})
 					}, this.onKeyPress = e => {
@@ -6547,4 +6549,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.438ba50dc582ae20dce9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.19a5cfbfdfbebcba3a27.js.map

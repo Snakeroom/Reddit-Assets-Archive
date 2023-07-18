@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.745f596ba8e7bb3a078c.js
-// Retrieved at 7/17/2023, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.d53449bf53082b445fab.js
+// Retrieved at 7/18/2023, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -39231,13 +39231,6 @@
 					href: `/r/${e}/about/contributors`,
 					eventNoun: "approved"
 				}, {
-					pageName: a.mc.TalkHosts,
-					displayName: () => s.fbt._("Talk Hosts", null, {
-						hk: "3da8wd"
-					}),
-					href: `/r/${e}/about/talkhosts`,
-					eventNoun: "talk-hosts"
-				}, {
 					pageName: a.mc.Moderators,
 					displayName: () => s.fbt._("Moderators", null, {
 						hk: "Y1Jqo"
@@ -39580,12 +39573,12 @@
 				},
 				y = n("./src/reddit/components/TrackingHelper/index.tsx");
 			const j = e => {
-				if (null != e) return 0 === e ? s.fbt._("It’s the same as the previous 7 days.", null, {
-					hk: "1DoaPL"
-				}) : e > 0 ? s.fbt._("It’s {change in removed comments count} more than the previous 7 days.", [s.fbt._param("change in removed comments count", e.toString())], {
-					hk: "3PslP6"
-				}) : s.fbt._("It’s {change in removed comments count} less than the previous 7 days.", [s.fbt._param("change in removed comments count", Math.abs(e).toString())], {
-					hk: "49Ao1w"
+				if (null != e) return 0 === e ? s.fbt._("It's the same as the previous 7 days.", null, {
+					hk: "z9POC"
+				}) : e > 0 ? s.fbt._("It's {change in removed comments count} more than the previous 7 days.", [s.fbt._param("change in removed comments count", e.toString())], {
+					hk: "3zfBfa"
+				}) : s.fbt._("It's {change in removed comments count} less than the previous 7 days.", [s.fbt._param("change in removed comments count", Math.abs(e).toString())], {
+					hk: "28RDk"
 				})
 			};
 			t.a = e => {
@@ -39594,12 +39587,12 @@
 					isModListing: n,
 					pageName: x
 				} = e;
-				var I, k, _, S, w, T, P, N, D, M, R, L, B, F, U, H, G, Q;
-				const [q, W] = Object(r.useState)(void 0), [z, V] = Object(r.useState)(!1), K = Object(f.a)();
+				var I, k, _, S, w, T, P, N, D, M, R, L, B, F, U, H, G;
+				const [Q, q] = Object(r.useState)(void 0), [W, z] = Object(r.useState)(!1), V = Object(f.a)();
 				Object(r.useEffect)(() => {
 					(async () => {
 						var e, n, s, r, o, i;
-						V(!0);
+						z(!0);
 						const a = (() => {
 								const e = new Date,
 									t = e.getUTCHours() < 12 ? 2 : 1;
@@ -39610,14 +39603,14 @@
 							u = null === (e = (await ((e, t) => Object(m.a)(e, {
 								...p,
 								variables: t
-							}))(K(), {
+							}))(V(), {
 								name: t,
 								startDate: c,
 								endDate: l
 							})).body.data) || void 0 === e ? void 0 : e.subredditInfoByName;
 						if (u && "moderation" in u) {
 							let e = 0;
-							null === (i = null === (o = null === (r = null === (s = null === (n = u.moderation) || void 0 === n ? void 0 : n.modInsights) || void 0 === s ? void 0 : s.ranges) || void 0 === r ? void 0 : r.postReports) || void 0 === o ? void 0 : o.slices) || void 0 === i || i.map(t => null == t ? void 0 : t.values.map(t => e += null == t ? void 0 : t.metric)), W({
+							null === (i = null === (o = null === (r = null === (s = null === (n = u.moderation) || void 0 === n ? void 0 : n.modInsights) || void 0 === s ? void 0 : s.ranges) || void 0 === r ? void 0 : r.postReports) || void 0 === o ? void 0 : o.slices) || void 0 === i || i.map(t => null == t ? void 0 : t.values.map(t => e += null == t ? void 0 : t.metric)), q({
 								modActions: u.moderation.actions.approximateCount,
 								activeMods: u.moderation.modInsights.teamActivity.activeModCount,
 								publishedPosts: u.moderation.modInsights.summaries.postsPublished,
@@ -39627,24 +39620,24 @@
 								totalReports: e
 							})
 						}
-						V(!1)
+						z(!1)
 					})()
-				}, [K, t, x]);
-				const Y = Object(i.e)(e => Object(v.C)(e, {
+				}, [V, t, x]);
+				const K = Object(i.e)(e => Object(v.C)(e, {
 						subredditName: t
 					})),
-					[J, X] = Object(h.a)("mod_insights_entrypoint_card_collapsed", "false"),
-					Z = Object(y.b)(),
-					$ = Object(r.useCallback)(() => {
+					[Y, J] = Object(h.a)("mod_insights_entrypoint_card_collapsed", "false"),
+					X = Object(y.b)(),
+					Z = Object(r.useCallback)(() => {
 						const e = "modqueue" === x ? "embedded_insights_team_health" : "embedded_insights_community_health";
-						Z(Object(b.d)({
+						X(Object(b.d)({
 							source: "moderator",
 							action: "click",
 							noun: e,
 							paneName: void 0
 						}))
-					}, [Z, x]),
-					ee = "true" === J || !q || z;
+					}, [X, x]),
+					$ = "true" === Y || !Q || W;
 				return o.a.createElement(l.a, {
 					title: o.a.createElement("div", {
 						className: E.a.titleContainer
@@ -39657,25 +39650,25 @@
 						className: E.a.headerButtonContainer
 					}, o.a.createElement(g.a, {
 						className: Object(a.a)(E.a.headerButtonIcon, {
-							[E.a.up]: ee
+							[E.a.up]: $
 						}, "text-neutral-content-strong")
 					})),
 					headerStyles: {
 						borderRadius: 4
 					},
-					onHeaderClick: () => X(ee ? "false" : "true"),
+					onHeaderClick: () => J($ ? "false" : "true"),
 					redditStyle: !0
-				}, !ee && o.a.createElement("div", null, o.a.createElement("div", {
+				}, !$ && o.a.createElement("div", null, o.a.createElement("div", {
 					className: E.a.widgetContent
 				}, n && o.a.createElement("div", {
 					className: Object(a.a)(E.a.subredditRow, "flex items-center px-[8px] py-[6px]")
 				}, o.a.createElement(c.b, {
 					className: E.a.subredditIcon,
 					iconUrl: "",
-					subredditOrProfile: Y
+					subredditOrProfile: K
 				}), o.a.createElement("div", {
 					className: E.a.subredditName
-				}, null == Y ? void 0 : Y.displayText)), "modqueue" === x ? o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
+				}, null == K ? void 0 : K.displayText)), "modqueue" === x ? o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
 					className: E.a.subredditRow
 				}, o.a.createElement("img", {
 					className: E.a.snooImage,
@@ -39692,16 +39685,20 @@
 				}, s.fbt._({
 					"*": "{active mod count} active mods",
 					_1: "{active mod count} active mod"
-				}, [s.fbt._param("active mod count", (null === (I = null == q ? void 0 : q.activeMods) || void 0 === I ? void 0 : I.toString()) || ""), s.fbt._plural((null == q ? void 0 : q.activeMods) || 0)], {
+				}, [s.fbt._param("active mod count", (null === (I = null == Q ? void 0 : Q.activeMods) || void 0 === I ? void 0 : I.toString()) || ""), s.fbt._plural((null == Q ? void 0 : Q.activeMods) || 0)], {
 					hk: "3SijVh"
 				})), o.a.createElement("div", {
 					className: Object(a.a)(E.a.detailText, "text-neutral-content-weak")
-				}, s.fbt._({
-					"*": "Your team made {mod actions count} mod actions this week, keep it up!",
-					_1: "Your team made {mod actions count} mod action this week, keep it up!"
-				}, [s.fbt._param("mod actions count", (null === (k = null == q ? void 0 : q.modActions) || void 0 === k ? void 0 : k.toString()) || ""), s.fbt._plural((null == q ? void 0 : q.modActions) || 0)], {
-					hk: "moIRm"
-				})))), o.a.createElement("div", {
+				}, (e => {
+					if (null != e) return 0 === e ? s.fbt._("Your team made {mod actions count} mod actions this week.", [s.fbt._param("mod actions count", "0")], {
+						hk: "CD2jl"
+					}) : s.fbt._({
+						"*": "Your team made {mod actions count} mod actions this week, Keep it up!",
+						_1: "Your team made {mod actions count} mod action this week, Keep it up!"
+					}, [s.fbt._param("mod actions count", e.toString() || ""), s.fbt._plural(e)], {
+						hk: "34wf1S"
+					})
+				})((null == Q ? void 0 : Q.modActions) || 0)))), o.a.createElement("div", {
 					className: E.a.subredditRow
 				}, o.a.createElement(A, {
 					className: E.a.snooImage
@@ -39712,11 +39709,11 @@
 				}, s.fbt._({
 					"*": "{published posts count} published posts",
 					_1: "{published posts count} published post"
-				}, [s.fbt._param("published posts count", (null === (S = null === (_ = null == q ? void 0 : q.publishedPosts) || void 0 === _ ? void 0 : _.metric) || void 0 === S ? void 0 : S.toString()) || ""), s.fbt._plural((null === (w = null == q ? void 0 : q.publishedPosts) || void 0 === w ? void 0 : w.metric) || 0)], {
+				}, [s.fbt._param("published posts count", (null === (_ = null === (k = null == Q ? void 0 : Q.publishedPosts) || void 0 === k ? void 0 : k.metric) || void 0 === _ ? void 0 : _.toString()) || ""), s.fbt._plural((null === (S = null == Q ? void 0 : Q.publishedPosts) || void 0 === S ? void 0 : S.metric) || 0)], {
 					hk: "1PQUVl"
 				})), o.a.createElement("div", {
 					className: Object(a.a)(E.a.detailText, "text-neutral-content-weak")
-				}, j(null === (T = null == q ? void 0 : q.publishedPosts) || void 0 === T ? void 0 : T.delta)))), o.a.createElement("div", {
+				}, j(null === (w = null == Q ? void 0 : Q.publishedPosts) || void 0 === w ? void 0 : w.delta)))), o.a.createElement("div", {
 					className: E.a.subredditRow
 				}, o.a.createElement(O, {
 					className: E.a.snooImage
@@ -39727,11 +39724,11 @@
 				}, s.fbt._({
 					"*": "{published comments count} published comments",
 					_1: "{published comments count} published comment"
-				}, [s.fbt._param("published comments count", (null === (N = null === (P = null == q ? void 0 : q.publishedComments) || void 0 === P ? void 0 : P.metric) || void 0 === N ? void 0 : N.toString()) || ""), s.fbt._plural((null === (D = null == q ? void 0 : q.publishedComments) || void 0 === D ? void 0 : D.metric) || 0)], {
+				}, [s.fbt._param("published comments count", (null === (P = null === (T = null == Q ? void 0 : Q.publishedComments) || void 0 === T ? void 0 : T.metric) || void 0 === P ? void 0 : P.toString()) || ""), s.fbt._plural((null === (N = null == Q ? void 0 : Q.publishedComments) || void 0 === N ? void 0 : N.metric) || 0)], {
 					hk: "34gSaK"
 				})), o.a.createElement("div", {
 					className: Object(a.a)(E.a.detailText, "text-neutral-content-weak")
-				}, j(null === (M = null == q ? void 0 : q.publishedComments) || void 0 === M ? void 0 : M.delta)))), o.a.createElement("div", {
+				}, j(null === (D = null == Q ? void 0 : Q.publishedComments) || void 0 === D ? void 0 : D.delta)))), o.a.createElement("div", {
 					className: E.a.subredditRow
 				}, o.a.createElement(C.a, {
 					className: E.a.snooImage
@@ -39742,7 +39739,7 @@
 				}, s.fbt._({
 					"*": "{total reports} reports on posts and comments",
 					_1: "{total reports} report on posts and comments"
-				}, [s.fbt._param("total reports", ((null == q ? void 0 : q.totalReports) || 0).toString()), s.fbt._plural((null == q ? void 0 : q.totalReports) || 0)], {
+				}, [s.fbt._param("total reports", ((null == Q ? void 0 : Q.totalReports) || 0).toString()), s.fbt._plural((null == Q ? void 0 : Q.totalReports) || 0)], {
 					hk: "2HRlQi"
 				}))))) : o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
 					className: E.a.subredditRow
@@ -39755,11 +39752,11 @@
 				}, s.fbt._({
 					"*": "{removed post count} removed posts",
 					_1: "{removed post count} removed post"
-				}, [s.fbt._param("removed post count", (null === (L = null === (R = null == q ? void 0 : q.removedPosts) || void 0 === R ? void 0 : R.metric) || void 0 === L ? void 0 : L.toString()) || ""), s.fbt._plural((null === (B = null == q ? void 0 : q.removedPosts) || void 0 === B ? void 0 : B.metric) || 0)], {
+				}, [s.fbt._param("removed post count", (null === (R = null === (M = null == Q ? void 0 : Q.removedPosts) || void 0 === M ? void 0 : M.metric) || void 0 === R ? void 0 : R.toString()) || ""), s.fbt._plural((null === (L = null == Q ? void 0 : Q.removedPosts) || void 0 === L ? void 0 : L.metric) || 0)], {
 					hk: "3woUPL"
 				})), o.a.createElement("div", {
 					className: Object(a.a)(E.a.detailText, "text-neutral-content-weak")
-				}, j(null === (F = null == q ? void 0 : q.removedPosts) || void 0 === F ? void 0 : F.delta)))), o.a.createElement("div", {
+				}, j(null === (B = null == Q ? void 0 : Q.removedPosts) || void 0 === B ? void 0 : B.delta)))), o.a.createElement("div", {
 					className: E.a.subredditRow
 				}, o.a.createElement(O, {
 					className: E.a.snooImage
@@ -39770,14 +39767,14 @@
 				}, s.fbt._({
 					"*": "{removed comments count} removed comments",
 					_1: "{removed comments count} removed comment"
-				}, [s.fbt._param("removed comments count", (null === (H = null === (U = null == q ? void 0 : q.removedComments) || void 0 === U ? void 0 : U.metric) || void 0 === H ? void 0 : H.toString()) || ""), s.fbt._plural((null === (G = null == q ? void 0 : q.removedComments) || void 0 === G ? void 0 : G.metric) || 0)], {
+				}, [s.fbt._param("removed comments count", (null === (U = null === (F = null == Q ? void 0 : Q.removedComments) || void 0 === F ? void 0 : F.metric) || void 0 === U ? void 0 : U.toString()) || ""), s.fbt._plural((null === (H = null == Q ? void 0 : Q.removedComments) || void 0 === H ? void 0 : H.metric) || 0)], {
 					hk: "15hI0m"
 				})), o.a.createElement("div", {
 					className: Object(a.a)(E.a.detailText, "text-neutral-content-weak")
-				}, j(null === (Q = null == q ? void 0 : q.removedComments) || void 0 === Q ? void 0 : Q.delta)))))), o.a.createElement("a", {
+				}, j(null === (G = null == Q ? void 0 : Q.removedComments) || void 0 === G ? void 0 : G.delta)))))), o.a.createElement("a", {
 					className: Object(a.a)(E.a.moreLink, "pl-sm flex items-center text-12 font-bold pb-2xs"),
 					href: `/mod/${t}/insights/${"spam"===x?"community_health":"team_health"}`,
-					onClick: $,
+					onClick: Z,
 					target: "_blank",
 					rel: "noopener noreferrer"
 				}, s.fbt._("More Insights", null, {
@@ -52755,9 +52752,9 @@
 		"./src/reddit/components/SubredditModerationTopBar/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return u
+				return p
 			})), n.d(t, "b", (function() {
-				return m
+				return b
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./node_modules/react/index.js"),
@@ -52767,11 +52764,13 @@
 				d = n("./src/reddit/icons/svgs/Search/index.tsx"),
 				c = n("./src/reddit/components/SubredditModerationTopBar/index.m.less"),
 				l = n.n(c);
-			const u = i.a.div("topBarRow", l.a);
-			class m extends o.a.Component {
+			const u = 21,
+				m = "-ModTeam".length,
+				p = i.a.div("topBarRow", l.a);
+			class b extends o.a.Component {
 				constructor(e) {
 					super(e), this.onSearchChange = e => {
-						Object(a.a)(e.currentTarget.value).length < 21 && this.setState({
+						Object(a.a)(e.currentTarget.value).length < u + m && this.setState({
 							searchInputText: e.currentTarget.value
 						})
 					}, this.onKeyPress = e => {
@@ -81567,4 +81566,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.745f596ba8e7bb3a078c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.d53449bf53082b445fab.js.map
