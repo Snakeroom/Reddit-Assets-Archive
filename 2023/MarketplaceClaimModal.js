@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.680cfdbb011162d84da5.js
-// Retrieved at 7/10/2023, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.8d14d0b03f6b1d6cff80.js
+// Retrieved at 7/19/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MarketplaceClaimModal"], {
 		"./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx": function(e, t, r) {
@@ -122,7 +122,7 @@
 							return null === (t = Object(E.a)(e)) || void 0 === t ? void 0 : t.claimId
 						}),
 						c = Object(i.d)(),
-						f = Object(i.e)(b.v);
+						f = Object(i.e)(b.w);
 					if (!r || !a) return null;
 					return o.a.createElement("div", {
 						className: x.a.container
@@ -239,4 +239,4 @@
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.680cfdbb011162d84da5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.8d14d0b03f6b1d6cff80.js.map

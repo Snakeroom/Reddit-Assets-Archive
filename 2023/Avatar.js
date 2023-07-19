@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Avatar.e383bf3130858fa9fd69.js
-// Retrieved at 7/10/2023, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Avatar.a54888a787106932b92f.js
+// Retrieved at 7/19/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Avatar"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, r) {
@@ -71,7 +71,7 @@
 					activeMeSubpage: k || void 0,
 					activeDetails: h || void 0,
 					shopTabState: N || void 0
-				}), [h, R, k, N]), I = Object(c.e)(e => !Object(O.S)(e) && Object(m.w)(e));
+				}), [h, R, k, N]), I = Object(c.e)(e => !Object(O.S)(e) && Object(m.x)(e));
 				if (!f || !E) return null;
 				if (I) return a.a.createElement("div", {
 					className: Object(o.a)(x.a.container, {
@@ -219,4 +219,4 @@
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.e383bf3130858fa9fd69.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.a54888a787106932b92f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.d53449bf53082b445fab.js
-// Retrieved at 7/18/2023, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.e60ab8bc62caae2dbfc4.js
+// Retrieved at 7/19/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -8281,7 +8281,7 @@
 					ce = A && Object(y.I)(ne, A),
 					ve = C && Object(he.o)(ne, C),
 					xe = ce || ve,
-					Ee = Object(ue.q)(W),
+					Ee = Object(ue.r)(W),
 					Oe = Object(me.n)(ne, {
 						subredditId: xe
 					}),
@@ -72194,7 +72194,7 @@
 						subredditId: n.id
 					})
 				},
-				isTalkHostsExperimentEnabled: F.q,
+				isTalkHostsExperimentEnabled: F.r,
 				isEventPostUiHidden: ce.a,
 				isDevplatformEnabled: C.a
 			});
@@ -72685,7 +72685,7 @@
 					} = f, A = Object(U.a)(l, !!m);
 					return {
 						contentGateInfo: u,
-						isTalkHostsEnabled: Object(F.q)(l),
+						isTalkHostsEnabled: Object(F.r)(l),
 						isContributor: b,
 						isEmployee: t,
 						layout: n,
@@ -81566,4 +81566,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.d53449bf53082b445fab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.e60ab8bc62caae2dbfc4.js.map

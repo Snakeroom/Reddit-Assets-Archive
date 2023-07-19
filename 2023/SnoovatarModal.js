@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SnoovatarModal.10f749a8ca74773d8e7c.js
-// Retrieved at 7/10/2023, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SnoovatarModal.f67505a26aa87dba20ff.js
+// Retrieved at 7/19/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SnoovatarModal"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, r) {
@@ -32,8 +32,8 @@
 				m = r("./src/reddit/selectors/experiments/econ/index.ts"),
 				O = r("./src/reddit/selectors/user.ts"),
 				b = r("./src/reddit/components/AvatarBuilder/index.m.less"),
-				v = r.n(b),
-				x = r("./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx");
+				x = r.n(b),
+				v = r("./src/reddit/components/AvatarBuilder/useMarketplaceConfig.tsx");
 
 			function _() {
 				return (_ = Object.assign || function(e) {
@@ -55,7 +55,7 @@
 					M = Object(n.useContext)(l.a),
 					S = Object(o.d)(),
 					g = () => S(Object(i.openLoginModal)()),
-					A = Object(x.a)();
+					A = Object(v.a)();
 				Object(n.useEffect)(() => {
 					b(u.s)
 				}, [b]), Object(n.useEffect)(() => {
@@ -71,11 +71,11 @@
 					activeMeSubpage: N || void 0,
 					activeDetails: h || void 0,
 					shopTabState: I || void 0
-				}), [h, k, N, I]), C = Object(o.e)(e => !Object(O.S)(e) && Object(m.w)(e));
+				}), [h, k, N, I]), C = Object(o.e)(e => !Object(O.S)(e) && Object(m.x)(e));
 				if (!j || !f) return null;
 				if (C) return a.a.createElement("div", {
-					className: Object(c.a)(v.a.container, {
-						[v.a.containerExp]: M
+					className: Object(c.a)(x.a.container, {
+						[x.a.containerExp]: M
 					})
 				}, a.a.createElement(s.f, {
 					openLogin: g,
@@ -92,9 +92,9 @@
 				};
 				return a.a.createElement("div", {
 					className: Object(c.a)({
-						[v.a.container]: !t,
-						[v.a.snoovatarModalBuilderV2]: t,
-						[v.a.containerExp]: M
+						[x.a.container]: !t,
+						[x.a.snoovatarModalBuilderV2]: t,
+						[x.a.containerExp]: M
 					})
 				}, a.a.createElement(s.a, _({}, T, {
 					navState: R,
@@ -135,8 +135,8 @@
 						r = Object(o.e)(e => e.user.session),
 						n = r ? r.accessToken : "",
 						b = r ? new Date(r.expires).getTime() : 1,
-						v = Object(o.e)(p.fb),
-						x = Object(i.a)(),
+						x = Object(o.e)(p.fb),
+						v = Object(i.a)(),
 						_ = m ? c.a.Rinkeby : c.a.Ethereum,
 						j = Object(a.useMemo)(() => ({
 							headers: {
@@ -155,7 +155,7 @@
 							} : {}
 						},
 						E = Object(a.useCallback)(e => {
-							x(t => {
+							v(t => {
 								const r = u.p(t);
 								return {
 									...r,
@@ -168,13 +168,13 @@
 									}
 								}
 							})
-						}, [x]);
+						}, [v]);
 					return Object(a.useMemo)(() => ({
 						authHeaders: j,
 						config: f,
-						isNightMode: v,
+						isNightMode: x,
 						sendEvent: E
-					}), [j, f, v, E])
+					}), [j, f, x, E])
 				}
 		},
 		"./src/reddit/components/SnoovatarModal/index.m.less": function(e, t, r) {
@@ -248,4 +248,4 @@
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.10f749a8ca74773d8e7c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.f67505a26aa87dba20ff.js.map
