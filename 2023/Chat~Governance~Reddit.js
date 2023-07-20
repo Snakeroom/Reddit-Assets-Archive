@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.2c8284c14f6567445035.js
-// Retrieved at 7/20/2023, 3:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3730cc3b6bebfa692f75.js
+// Retrieved at 7/20/2023, 4:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3659,11 +3659,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("188466"),
+				buildNumber: Object(r.c)("188467"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 1.4.6",
 				dashVersion: "dash 4.4.0",
-				buildTimestamp: Object(r.b)("1689880486"),
+				buildTimestamp: Object(r.b)("1689882947"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6411,14 +6411,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c922209636bd5c08ce23d514a1f4e58f27161a381-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c30fc0a58a4927ba4daae8e0bebe6a583c07ff043-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "922209636bd5c08ce23d514a1f4e58f27161a381-production",
+						release: "30fc0a58a4927ba4daae8e0bebe6a583c07ff043-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(x.d)(), new d.Integrations.Breadcrumbs({
@@ -6971,7 +6971,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "922209636bd5c08ce23d514a1f4e58f27161a381-production",
+							releaseClient: "30fc0a58a4927ba4daae8e0bebe6a583c07ff043-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -12280,7 +12280,7 @@
 				}, Ge = (e, t, i) => async (n, r) => {
 					const s = Object(I.b)(r(), e.id),
 						o = Object(S.a)(e.id, s, t),
-						d = e.media && Object(ie.G)(e.media) ? Object(_e.d)(r(), e.id) : void 0;
+						d = e.media && Object(ie.H)(e.media) ? Object(_e.d)(r(), e.id) : void 0;
 					ke[t] && e.isSponsored && n(Me(String(t), {
 						postId: e.id,
 						vendorMetadata: o,
@@ -12787,7 +12787,7 @@
 						o = Object(I.F)(s, {
 							postId: e
 						});
-					if (!(o && o.media && Object(ie.L)(o.media) && o.media.isRichtextPreview)) return;
+					if (!(o && o.media && Object(ie.M)(o.media) && o.media.isRichtextPreview)) return;
 					const d = await ((e, t) => Object(G.a)(e, {
 						...q,
 						variables: t
@@ -15901,7 +15901,7 @@
 					if (e.isBound) {
 						return e.editorState.getCurrentContent().getBlockMap().some(e => !!e && (Object(o.t)(e.getType()) || Object(o.v)(e.getType()) || _.test(e.getText())))
 					}
-					return !Object(d.H)(e.initialRTJSON)
+					return !Object(d.I)(e.initialRTJSON)
 				}
 				static getTextLength(e) {
 					return e.isBound ? e.editorState.getCurrentContent().getPlainText().length : 0
@@ -15955,7 +15955,7 @@
 				}
 			}
 			p.createInitial = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : d.i,
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : d.j,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				return m(e) ? {
 					isBound: !1,
@@ -23354,44 +23354,44 @@
 				_ = e => !!c(e, null, !1),
 				m = (e, t) => {
 					switch (e.e) {
-						case d.o:
+						case d.p:
 							return t ? e.t : void 0;
 						case d.g:
-						case d.w:
-						case d.z:
-						case d.C:
+						case d.x:
+						case d.A:
 						case d.D:
+						case d.E:
 							return t ? `${e.e}${e.t}` : void 0;
-						case d.y:
+						case d.z:
 							return t ? n.fbt._("Spoiler alert. Click to see", null, {
 								hk: "1TQtKR"
 							}) : void 0;
-						case d.B:
-						case d.x:
+						case d.C:
+						case d.y:
 							return e.t && e.t.trim()
 					}
 				},
 				p = (e, t) => {
 					let i = [];
 					switch (e.e) {
-						case d.v:
+						case d.w:
 							e.c.forEach(e => {
 								const n = m(e, t);
 								n && i.push(n)
 							});
 							break;
-						case d.p:
+						case d.q:
 							const n = e.c;
 							n && n.forEach(e => {
-								e.e === d.q && e.c && e.c.forEach(e => {
-									e.e === d.v && e.c.forEach(e => {
+								e.e === d.r && e.c && e.c.forEach(e => {
+									e.e === d.w && e.c.forEach(e => {
 										const n = m(e, t);
 										n && i.push(n)
 									})
 								})
 							});
 							break;
-						case d.k:
+						case d.l:
 							e.c && e.c.forEach(e => {
 								const n = m(e, t);
 								n && i.push(n)
@@ -23408,7 +23408,7 @@
 								i = [...i, ...p(e, t)]
 							});
 							break;
-						case d.A:
+						case d.B:
 							e.h && t && e.h.forEach(e => {
 								e.c && e.c.forEach(e => {
 									const n = m(e, t);
@@ -24395,7 +24395,7 @@
 				},
 				x = e => Object.keys(j).reduce((t, i) => L(t, i, e), []),
 				B = e => Object.keys(P).reduce((t, i) => L(t, i, e), []),
-				k = e => Object(E.h)(e, g.i),
+				k = e => Object(E.h)(e, g.j),
 				M = e => {
 					const {
 						media: t,
@@ -24596,7 +24596,7 @@
 					switch (i.__typename) {
 						case f.c.ImageAsset:
 							"image/gif" === i.mimetype ? e[i.id] = {
-								e: g.r,
+								e: g.s,
 								id: i.id,
 								s: {
 									gif: i.url,
@@ -24604,7 +24604,7 @@
 									y: i.width
 								}
 							} : e[i.id] = {
-								e: g.s,
+								e: g.t,
 								id: i.id,
 								s: {
 									u: i.url,
@@ -24615,7 +24615,7 @@
 							break;
 						case f.c.AnimatedImageAsset:
 							"image/gif" === i.mimetype && (e[i.id] = {
-								e: g.r,
+								e: g.s,
 								id: i.id,
 								s: {
 									gif: i.url,
@@ -24629,7 +24629,7 @@
 						case f.c.VideoAsset:
 							e[i.id] = {
 								dashUrl: i.dashUrl,
-								e: g.t,
+								e: g.u,
 								hlsUrl: i.hlsUrl,
 								id: i.id,
 								x: i.height,
@@ -24668,7 +24668,7 @@
 									y: t.height || 0,
 									u: t.url
 								}, e[t.id] = {
-									e: g.s,
+									e: g.t,
 									id: t.id,
 									m: t.mimetype || "",
 									o: B(t),
@@ -27121,7 +27121,7 @@
 					const r = e.events;
 					let s = [];
 					const o = e.media;
-					if (o && Object(a.G)(o) && o.gallery && u.includes(t)) {
+					if (o && Object(a.H)(o) && o.gallery && u.includes(t)) {
 						const e = o.gallery.items[n];
 						s = (null == e ? void 0 : e.adEvents) || []
 					}
@@ -27394,7 +27394,7 @@
 					var t;
 					const i = null === (t = null == e ? void 0 : e.media) || void 0 === t ? void 0 : t.mediaMetadata;
 					return !!i && Object.keys(i).some(d)
-				}(e) && !a(e) && Object.values(i).some(e => "e" in e && ((null == e ? void 0 : e.e) === r.s || (null == e ? void 0 : e.e) === r.r))
+				}(e) && !a(e) && Object.values(i).some(e => "e" in e && ((null == e ? void 0 : e.e) === r.t || (null == e ? void 0 : e.e) === r.s))
 			}
 
 			function u(e) {
@@ -27411,12 +27411,12 @@
 			}
 
 			function m(e) {
-				return _(e, r.G).map(e => e.id)
+				return _(e, r.H).map(e => e.id)
 			}
 
 			function p(e) {
 				let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-				return _(e, e => e.e === r.o || t && e.e === r.z).map(e => e.u ? e.u : `https://reddit.com/r/${e.t}`)
+				return _(e, e => e.e === r.p || t && e.e === r.A).map(e => e.u ? e.u : `https://reddit.com/r/${e.t}`)
 			}
 		},
 		"./src/reddit/helpers/routeKey/index.ts": function(e, t, i) {
@@ -31111,103 +31111,106 @@
 			"use strict";
 			i.d(t, "v", (function() {
 				return n
-			})), i.d(t, "N", (function() {
-				return o
 			})), i.d(t, "O", (function() {
 				return d
-			})), i.d(t, "I", (function() {
-				return a
-			})), i.d(t, "F", (function() {
-				return l
-			})), i.d(t, "H", (function() {
-				return u
-			})), i.d(t, "G", (function() {
-				return c
-			})), i.d(t, "L", (function() {
-				return _
-			})), i.d(t, "o", (function() {
-				return m
-			})), i.d(t, "j", (function() {
-				return p
-			})), i.d(t, "k", (function() {
-				return h
-			})), i.d(t, "l", (function() {
-				return f
-			})), i.d(t, "m", (function() {
-				return b
-			})), i.d(t, "A", (function() {
-				return g
-			})), i.d(t, "i", (function() {
-				return v
-			})), i.d(t, "p", (function() {
-				return w
-			})), i.d(t, "z", (function() {
-				return y
-			})), i.d(t, "b", (function() {
-				return E
-			})), i.d(t, "n", (function() {
-				return T
-			})), i.d(t, "q", (function() {
-				return S
-			})), i.d(t, "r", (function() {
-				return O
-			})), i.d(t, "d", (function() {
-				return I
-			})), i.d(t, "e", (function() {
-				return R
-			})), i.d(t, "w", (function() {
-				return F
-			})), i.d(t, "t", (function() {
-				return C
-			})), i.d(t, "u", (function() {
-				return N
-			})), i.d(t, "g", (function() {
-				return A
-			})), i.d(t, "h", (function() {
-				return j
-			})), i.d(t, "a", (function() {
-				return P
-			})), i.d(t, "s", (function() {
-				return D
-			})), i.d(t, "y", (function() {
-				return L
-			})), i.d(t, "x", (function() {
-				return x
-			})), i.d(t, "c", (function() {
-				return B
-			})), i.d(t, "f", (function() {
-				return k
-			})), i.d(t, "B", (function() {
-				return M
-			})), i.d(t, "E", (function() {
-				return U
-			})), i.d(t, "D", (function() {
-				return G
-			})), i.d(t, "M", (function() {
-				return V
-			})), i.d(t, "C", (function() {
-				return q
 			})), i.d(t, "P", (function() {
-				return H
-			})), i.d(t, "K", (function() {
-				return W
+				return a
 			})), i.d(t, "J", (function() {
+				return l
+			})), i.d(t, "F", (function() {
+				return u
+			})), i.d(t, "I", (function() {
+				return c
+			})), i.d(t, "H", (function() {
+				return _
+			})), i.d(t, "M", (function() {
+				return m
+			})), i.d(t, "o", (function() {
+				return p
+			})), i.d(t, "j", (function() {
+				return h
+			})), i.d(t, "k", (function() {
+				return f
+			})), i.d(t, "l", (function() {
+				return b
+			})), i.d(t, "m", (function() {
+				return g
+			})), i.d(t, "A", (function() {
+				return v
+			})), i.d(t, "i", (function() {
+				return w
+			})), i.d(t, "p", (function() {
+				return y
+			})), i.d(t, "z", (function() {
+				return E
+			})), i.d(t, "b", (function() {
+				return T
+			})), i.d(t, "n", (function() {
+				return S
+			})), i.d(t, "q", (function() {
+				return O
+			})), i.d(t, "r", (function() {
+				return I
+			})), i.d(t, "d", (function() {
+				return R
+			})), i.d(t, "e", (function() {
+				return F
+			})), i.d(t, "w", (function() {
+				return C
+			})), i.d(t, "t", (function() {
+				return N
+			})), i.d(t, "u", (function() {
+				return A
+			})), i.d(t, "g", (function() {
+				return j
+			})), i.d(t, "h", (function() {
+				return P
+			})), i.d(t, "a", (function() {
+				return D
+			})), i.d(t, "s", (function() {
+				return L
+			})), i.d(t, "y", (function() {
+				return x
+			})), i.d(t, "x", (function() {
+				return B
+			})), i.d(t, "c", (function() {
+				return k
+			})), i.d(t, "f", (function() {
+				return M
+			})), i.d(t, "B", (function() {
+				return U
+			})), i.d(t, "E", (function() {
+				return G
+			})), i.d(t, "D", (function() {
+				return V
+			})), i.d(t, "N", (function() {
+				return q
+			})), i.d(t, "C", (function() {
+				return H
+			})), i.d(t, "Q", (function() {
+				return W
+			})), i.d(t, "L", (function() {
 				return K
+			})), i.d(t, "K", (function() {
+				return z
+			})), i.d(t, "G", (function() {
+				return Y
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
-			var n, r = i("./node_modules/node-libs-browser/node_modules/url/url.js"),
-				s = i.n(r);
+			var n, r = i("./src/reddit/models/RichTextJson/index.ts"),
+				s = i("./node_modules/node-libs-browser/node_modules/url/url.js"),
+				o = i.n(s);
 			! function(e) {
 				e.YouTube = "YouTube", e.Vimeo = "Vimeo", e.BandCamp = "BandCamp", e.Clyp = "Clyp", e.Gfycat = "Gfycat", e.GfycatOld = "gfycat", e.Giphy = "Giphy", e.Imgur = "Imgur", e.RedGIFS = "RedGIFS", e.SoundCloud = "SoundCloud", e.Spotify = "Spotify", e.Streamable = "Streamable", e.Twitch = "Twitch.tv", e.Twitter = "Twitter", e.IFrameEmbed = "iframe embed"
 			}(n || (n = {}));
-			const o = e => e.type === m.TEXT,
-				d = e => e.type === m.VIDEO,
-				a = e => e.type === m.LIVEAUDIO,
-				l = e => `https://www.redditmedia.com/mediaembed/${e.replace("t3_","")}`,
-				u = e => e.type === m.IMAGE,
-				c = e => e.type === m.GALLERY,
-				_ = e => "rtjson" === e.type,
-				m = {
+			const d = e => e.type === p.TEXT,
+				a = e => e.type === p.VIDEO,
+				l = e => e.type === p.LIVEAUDIO,
+				u = e => `https://www.redditmedia.com/mediaembed/${e.replace("t3_","")}`,
+				c = e => e.type === p.IMAGE,
+				_ = e => e.type === p.GALLERY,
+				m = e => "rtjson" === e.type,
+				p = {
 					LIVEAUDIO: "liveaudio",
 					TEXT: "text",
 					VIDEO: "video",
@@ -31217,24 +31220,24 @@
 					RTJSON: "rtjson",
 					GALLERY: "gallery"
 				},
-				p = (new Set([n.YouTube, n.Vimeo, n.Streamable, n.Twitch, n.Gfycat, n.GfycatOld, n.RedGIFS]), 512),
-				h = 250,
-				f = 60,
-				b = 0,
-				g = 608,
-				v = 40,
-				w = 160,
-				y = 143.5,
-				E = .5625,
-				T = 869,
-				S = 273,
-				O = 486,
-				I = 700,
-				R = 822,
-				F = 2 * I,
-				C = 363,
-				N = 645,
-				A = {
+				h = (new Set([n.YouTube, n.Vimeo, n.Streamable, n.Twitch, n.Gfycat, n.GfycatOld, n.RedGIFS]), 512),
+				f = 250,
+				b = 60,
+				g = 0,
+				v = 608,
+				w = 40,
+				y = 160,
+				E = 143.5,
+				T = .5625,
+				S = 869,
+				O = 273,
+				I = 486,
+				R = 700,
+				F = 822,
+				C = 2 * R,
+				N = 363,
+				A = 645,
+				j = {
 					"clyp.it": n.Clyp,
 					"gfycat.com": n.Gfycat,
 					"giphy.com": n.Giphy,
@@ -31246,22 +31249,22 @@
 					"youtube.com": n.YouTube,
 					"youtu.be": n.YouTube
 				},
-				j = new Set([n.Clyp, n.Gfycat, n.GfycatOld, n.Giphy, n.RedGIFS, n.SoundCloud, n.Spotify, n.Twitter, n.Vimeo, n.YouTube]),
-				P = new Set([n.BandCamp, n.Gfycat, n.GfycatOld, n.Giphy, n.Imgur, n.RedGIFS, n.SoundCloud, n.Spotify, n.Streamable, n.Twitch, n.Twitter, n.YouTube, n.Vimeo]),
-				D = new Set([n.SoundCloud, n.Spotify, n.Streamable, n.Twitter, n.Vimeo, n.YouTube]),
-				L = new Set([n.Gfycat, n.GfycatOld, n.Imgur, n.RedGIFS]),
-				x = ["gif", "jpeg", "jpg", "png", "tiff"],
-				B = new Set([m.VIDEO, m.GIFVIDEO, m.EMBED]);
-			var k, M;
+				P = new Set([n.Clyp, n.Gfycat, n.GfycatOld, n.Giphy, n.RedGIFS, n.SoundCloud, n.Spotify, n.Twitter, n.Vimeo, n.YouTube]),
+				D = new Set([n.BandCamp, n.Gfycat, n.GfycatOld, n.Giphy, n.Imgur, n.RedGIFS, n.SoundCloud, n.Spotify, n.Streamable, n.Twitch, n.Twitter, n.YouTube, n.Vimeo]),
+				L = new Set([n.SoundCloud, n.Spotify, n.Streamable, n.Twitter, n.Vimeo, n.YouTube]),
+				x = new Set([n.Gfycat, n.GfycatOld, n.Imgur, n.RedGIFS]),
+				B = ["gif", "jpeg", "jpg", "png", "tiff"],
+				k = new Set([p.VIDEO, p.GIFVIDEO, p.EMBED]);
+			var M, U;
 			! function(e) {
 				e.Mute = "mute", e.Pause = "pause", e.Play = "play"
-			}(k || (k = {})),
+			}(M || (M = {})),
 			function(e) {
 				e.Pause = "pauseVideo", e.Play = "playVideo", e.Mute = "mute"
-			}(M || (M = {}));
-			const U = e => e.source ? e.source.url : e.media && e.media.type !== m.VIDEO && e.media.type !== m.LIVEAUDIO && e.media.content ? e.media.content : "",
-				G = e => {
-					if (!d(e)) return;
+			}(U || (U = {}));
+			const G = e => e.source ? e.source.url : e.media && e.media.type !== p.VIDEO && e.media.type !== p.LIVEAUDIO && e.media.content ? e.media.content : "",
+				V = e => {
+					if (!a(e)) return;
 					const t = e;
 					let i;
 					if (t.hlsUrl) i = t.hlsUrl;
@@ -31270,26 +31273,35 @@
 						i = t.dashUrl
 					}
 					return (e => {
-						const t = s.a.parse(e);
+						const t = o.a.parse(e);
 						if (t && t.pathname) return t.pathname.split("/")[1]
 					})(i)
 				},
-				V = (e, t) => {
+				q = (e, t) => {
 					return e / t > 16 / 9
 				},
-				q = (e, t, i) => i ? 100 * i : e && t ? e / t * 100 : 100 * E,
-				H = e => {
-					const t = U(e);
-					return "v.redd.it" === s.a.parse(t).hostname
-				},
+				H = (e, t, i) => i ? 100 * i : e && t ? e / t * 100 : 100 * T,
 				W = e => {
+					const t = G(e);
+					return "v.redd.it" === o.a.parse(t).hostname
+				},
+				K = e => {
 					var t, i, n, r, s, o, d;
 					return (null === (t = e.media) || void 0 === t ? void 0 : t.hasOwnProperty("content")) || (null === (i = e.media) || void 0 === i ? void 0 : i.hasOwnProperty("dashUrl")) || (null === (n = e.media) || void 0 === n ? void 0 : n.hasOwnProperty("hlsUrl")) || (null === (r = e.media) || void 0 === r ? void 0 : r.hasOwnProperty("gallery")) || !!((null === (d = null === (o = null === (s = null == e ? void 0 : e.media) || void 0 === s ? void 0 : s.richtextContent) || void 0 === o ? void 0 : o.document) || void 0 === d ? void 0 : d.length) > 0) || !!(null == e ? void 0 : e.thumbnail)
 				},
-				K = e => {
+				z = e => {
 					var t, i, n, r, s;
 					const o = null == e ? void 0 : e.media;
-					return o && _(o) ? "[unavailable]" === (null === (s = null === (r = null === (n = null === (i = null === (t = null == o ? void 0 : o.richtextContent) || void 0 === t ? void 0 : t.document) || void 0 === i ? void 0 : i[0]) || void 0 === n ? void 0 : n.c) || void 0 === r ? void 0 : r[0]) || void 0 === s ? void 0 : s.t) : o && c(o) ? null === o.gallery : void 0
+					return o && m(o) ? "[unavailable]" === (null === (s = null === (r = null === (n = null === (i = null === (t = null == o ? void 0 : o.richtextContent) || void 0 === t ? void 0 : t.document) || void 0 === i ? void 0 : i[0]) || void 0 === n ? void 0 : n.c) || void 0 === r ? void 0 : r[0]) || void 0 === s ? void 0 : s.t) : o && _(o) ? null === o.gallery : void 0
+				},
+				Y = e => {
+					var t, i;
+					if (!e.media) return !1;
+					const n = null === (t = e.media) || void 0 === t ? void 0 : t.richtextContent;
+					if ((null === (i = null == n ? void 0 : n.document) || void 0 === i ? void 0 : i.length) !== r.h.length) return !1;
+					for (const [s, o] of r.h.entries())
+						if (n.document[s].e !== o) return !1;
+					return !0
 				}
 		},
 		"./src/reddit/models/ModQueue/index.ts": function(e, t, i) {
@@ -32257,7 +32269,7 @@
 					return (!i || !i.type) && !!e.source && Object(o.a)(e.source.url)
 				},
 				D = e => !!e.subcaption,
-				L = (e, t) => D(e) || ((e, t) => !!e.media && Object(u.G)(e.media) && !Object(_.b)(t))(e, t),
+				L = (e, t) => D(e) || ((e, t) => !!e.media && Object(u.H)(e.media) && !Object(_.b)(t))(e, t),
 				x = e => e.isStickied && !e.isSponsored,
 				B = e => R(e) && e.promotedUserPosts ? e.promotedUserPosts : [];
 			var k;
@@ -32573,41 +32585,41 @@
 		"./src/reddit/models/RichTextJson/index.ts": function(e, t, i) {
 			"use strict";
 			var n;
-			i.d(t, "j", (function() {
+			i.d(t, "k", (function() {
 					return n
-				})), i.d(t, "B", (function() {
+				})), i.d(t, "C", (function() {
 					return r
-				})), i.d(t, "x", (function() {
+				})), i.d(t, "y", (function() {
 					return s
-				})), i.d(t, "n", (function() {
-					return o
 				})), i.d(t, "o", (function() {
+					return o
+				})), i.d(t, "p", (function() {
 					return d
 				})), i.d(t, "g", (function() {
 					return a
-				})), i.d(t, "w", (function() {
+				})), i.d(t, "x", (function() {
 					return l
-				})), i.d(t, "z", (function() {
+				})), i.d(t, "A", (function() {
 					return u
-				})), i.d(t, "C", (function() {
-					return c
 				})), i.d(t, "D", (function() {
+					return c
+				})), i.d(t, "E", (function() {
 					return _
-				})), i.d(t, "y", (function() {
+				})), i.d(t, "z", (function() {
 					return m
-				})), i.d(t, "v", (function() {
+				})), i.d(t, "w", (function() {
 					return p
-				})), i.d(t, "k", (function() {
-					return h
 				})), i.d(t, "l", (function() {
+					return h
+				})), i.d(t, "m", (function() {
 					return f
 				})), i.d(t, "b", (function() {
 					return b
 				})), i.d(t, "c", (function() {
 					return g
-				})), i.d(t, "q", (function() {
+				})), i.d(t, "r", (function() {
 					return v
-				})), i.d(t, "p", (function() {
+				})), i.d(t, "q", (function() {
 					return w
 				})), i.d(t, "e", (function() {
 					return y
@@ -32615,32 +32627,34 @@
 					return E
 				})), i.d(t, "d", (function() {
 					return T
-				})), i.d(t, "A", (function() {
+				})), i.d(t, "B", (function() {
 					return S
-				})), i.d(t, "h", (function() {
+				})), i.d(t, "i", (function() {
 					return O
-				})), i.d(t, "m", (function() {
+				})), i.d(t, "n", (function() {
 					return I
-				})), i.d(t, "u", (function() {
+				})), i.d(t, "v", (function() {
 					return R
-				})), i.d(t, "s", (function() {
+				})), i.d(t, "t", (function() {
 					return F
 				})), i.d(t, "a", (function() {
 					return C
-				})), i.d(t, "r", (function() {
+				})), i.d(t, "s", (function() {
 					return N
-				})), i.d(t, "E", (function() {
-					return A
-				})), i.d(t, "t", (function() {
-					return j
-				})), i.d(t, "i", (function() {
-					return P
-				})), i.d(t, "H", (function() {
-					return D
-				})), i.d(t, "G", (function() {
-					return L
 				})), i.d(t, "F", (function() {
+					return A
+				})), i.d(t, "u", (function() {
+					return j
+				})), i.d(t, "j", (function() {
+					return P
+				})), i.d(t, "I", (function() {
+					return D
+				})), i.d(t, "H", (function() {
+					return L
+				})), i.d(t, "G", (function() {
 					return x
+				})), i.d(t, "h", (function() {
+					return B
 				})),
 				function(e) {
 					e[e.bold = 1] = "bold", e[e.italic = 2] = "italic", e[e.underline = 4] = "underline", e[e.strikethrough = 8] = "strikethrough", e[e.subscript = 16] = "subscript", e[e.superscript = 32] = "superscript", e[e.monospace = 64] = "monospace"
@@ -32685,7 +32699,8 @@
 				x = (e, t) => {
 					const i = e && e[t];
 					if (i && (!i.status || i.status === R.Valid)) return i
-				}
+				},
+				B = [h, g, h, g, h, g]
 		},
 		"./src/reddit/models/RichTextJson/nodeMakers.ts": function(e, t, i) {
 			"use strict";
@@ -32734,18 +32749,18 @@
 			}));
 			var n = i("./src/reddit/models/RichTextJson/index.ts");
 			const r = (e, t) => ({
-					e: n.B,
+					e: n.C,
 					t: e,
 					...t ? {
 						f: t
 					} : null
 				}),
 				s = e => ({
-					e: n.x,
+					e: n.y,
 					t: e
 				}),
 				o = (e, t, i) => ({
-					e: n.o,
+					e: n.p,
 					t: e,
 					u: t,
 					...i ? {
@@ -32753,25 +32768,25 @@
 					} : null
 				}),
 				d = e => ({
-					e: n.y,
+					e: n.z,
 					c: [r(e, null)]
 				}),
 				a = (e, t) => ({
-					e: n.z,
+					e: n.A,
 					t: e,
 					l: t
 				}),
 				l = (e, t) => ({
-					e: n.C,
+					e: n.D,
 					t: e,
 					l: t
 				}),
 				u = e => ({
-					e: n.v,
+					e: n.w,
 					c: e
 				}),
 				c = (e, t) => ({
-					e: n.k,
+					e: n.l,
 					l: e,
 					c: t
 				}),
@@ -32784,11 +32799,11 @@
 					c: e
 				}),
 				p = e => ({
-					e: n.q,
+					e: n.r,
 					c: e
 				}),
 				h = (e, t) => ({
-					e: n.p,
+					e: n.q,
 					c: e,
 					o: t
 				}),
@@ -32802,12 +32817,12 @@
 					c: e
 				}),
 				g = (e, t) => ({
-					e: n.A,
+					e: n.B,
 					h: e,
 					c: t
 				}),
 				v = (e, t) => ({
-					e: n.m,
+					e: n.n,
 					id: e,
 					c: t
 				}),
@@ -32817,7 +32832,7 @@
 					c: t
 				}),
 				y = (e, t, i, r) => ({
-					e: n.E,
+					e: n.F,
 					id: e,
 					c: t,
 					gifify: r,
@@ -32829,16 +32844,16 @@
 					e: n.a,
 					id: e
 				} : {
-					e: n.m,
+					e: n.n,
 					id: e
 				},
 				T = () => ({
-					e: n.n
+					e: n.o
 				}),
 				S = {
-					e: n.v,
+					e: n.w,
 					c: [{
-						e: n.B,
+						e: n.C,
 						t: ""
 					}]
 				}
@@ -34226,9 +34241,9 @@
 				if (t.url && t.metadata.localUrl) {
 					const i = J()(e),
 						n = Object(ee.b)(t.url);
-					if (i.media.mediaMetadata && i.media.mediaMetadata[n] && i.media.mediaMetadata[n].status === Z.u.Unprocessed) {
+					if (i.media.mediaMetadata && i.media.mediaMetadata[n] && i.media.mediaMetadata[n].status === Z.v.Unprocessed) {
 						const e = i.media.mediaMetadata[n];
-						return e.status = Z.u.Valid, e.e = Z.s, e.id = n, e.s = {
+						return e.status = Z.v.Valid, e.e = Z.t, e.id = n, e.s = {
 							u: null == t ? void 0 : t.metadata.localUrl,
 							x: (null == t ? void 0 : t.metadata.width) || 0,
 							y: (null == t ? void 0 : t.metadata.height) || 0
@@ -36412,7 +36427,7 @@
 						predictionTournament: o(t)
 					} : i
 				},
-				v = e => e.media && Object(l.G)(e.media) ? {
+				v = e => e.media && Object(l.H)(e.media) ? {
 					...Object(n.unsetIn)(e, ["source"])
 				} : e,
 				w = e => t => {
@@ -36421,7 +36436,7 @@
 				},
 				y = e => t => {
 					const i = e[t.id];
-					return t && t.media && i && i.media && Object(l.L)(t.media) && t.media.isRichtextPreview && Object(l.L)(i.media) && !i.media.isRichtextPreview && (t.media.richtextContent = i.media.richtextContent, t.media.isRichtextPreview = !1), t
+					return t && t.media && i && i.media && Object(l.M)(t.media) && t.media.isRichtextPreview && Object(l.M)(i.media) && !i.media.isRichtextPreview && (t.media.richtextContent = i.media.richtextContent, t.media.isRichtextPreview = !1), t
 				},
 				E = e => t => {
 					const i = e[t.id];
@@ -37874,14 +37889,14 @@
 					const n = Object(u.U)(e, i);
 					return n && n.displayText || i && i.author && Object(o.e)(i.author)
 				},
-				h = (e, t, i) => Object(_.f)(e) && !Object(_.i)(e) && !!t && !!t.title && !t.isNSFW && !!t.media && (Object(d.H)(t.media) || Object(d.L)(t.media)) && (e => !!e && !!e.media && (Object(d.H)(e.media) && (e => /https?:\/\/i\.redd\.it/.test(e))(e.media.content) || Object(d.L)(e.media) && e.media.richtextContent && e.media.richtextContent.document && e.media.richtextContent.document.some(e => {
+				h = (e, t, i) => Object(_.f)(e) && !Object(_.i)(e) && !!t && !!t.title && !t.isNSFW && !!t.media && (Object(d.I)(t.media) || Object(d.M)(t.media)) && (e => !!e && !!e.media && (Object(d.I)(e.media) && (e => /https?:\/\/i\.redd\.it/.test(e))(e.media.content) || Object(d.M)(e.media) && e.media.richtextContent && e.media.richtextContent.document && e.media.richtextContent.document.some(e => {
 					let {
 						e: t
 					} = e;
-					return t === a.m
+					return t === a.n
 				})))(t) && (i && !t.media.altText || !i),
 				f = (e, t) => {
-					const i = !!t && !!t.media && (Object(d.H)(t.media) || Object(d.L)(t.media)) && t.media.altText;
+					const i = !!t && !!t.media && (Object(d.I)(t.media) || Object(d.M)(t.media)) && t.media.altText;
 					return h(e, t, !1) && !!i && i.length <= 250 && t.title.toLowerCase() !== i.toLowerCase()
 				},
 				b = Object(n.a)(c.S, m, (e, t) => !e && t),
@@ -37905,7 +37920,7 @@
 					const i = Object(u.F)(e, {
 						postId: t
 					});
-					return i && i.media && (Object(d.H)(i.media) || Object(d.L)(i.media)) ? i.media.altText : null
+					return i && i.media && (Object(d.I)(i.media) || Object(d.M)(i.media)) ? i.media.altText : null
 				},
 				T = e => !!Object(s.b)(e, {
 					experimentEligibilitySelector: s.a,
@@ -40533,7 +40548,7 @@
 						const e = Object.keys(i).length;
 						c.eventGlobalCount = e
 					}
-					if (t && t.media && Object(l.O)(t.media)) {
+					if (t && t.media && Object(l.P)(t.media)) {
 						const n = Object(g.h)(e, {
 								postId: t.id
 							}),
@@ -41426,7 +41441,7 @@
 						let {
 							e: t
 						} = e;
-						return t === a.m
+						return t === a.n
 					}))
 				}
 		},
@@ -43325,14 +43340,14 @@
 				},
 				pt = (e, t, i) => {
 					const n = e.posts.models[t];
-					if (void 0 === n || !n.media || !Object($.G)(n.media)) return null;
+					if (void 0 === n || !n.media || !Object($.H)(n.media)) return null;
 					let r, s, o, d;
 					if (n.media.mediaMetadata && n.media.gallery) {
 						d = n.media.gallery.items.map(e => e.mediaId);
 						const e = n.media.mediaMetadata;
 						o = (r = d.length) - (s = d.reduce((t, i) => {
 							const n = e[i];
-							return !n || n.e !== Z.s && n.e !== Z.r ? t : t + 1
+							return !n || n.e !== Z.t && n.e !== Z.s ? t : t + 1
 						}, 0) || 0)
 					}
 					return {
@@ -51008,4 +51023,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.2c8284c14f6567445035.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3730cc3b6bebfa692f75.js.map

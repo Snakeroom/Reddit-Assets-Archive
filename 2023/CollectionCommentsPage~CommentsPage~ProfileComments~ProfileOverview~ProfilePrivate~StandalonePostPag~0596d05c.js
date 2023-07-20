@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.659c7fea9a2f0d344db0.js
-// Retrieved at 7/19/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.e00e0f3d72cfda015a4e.js
+// Retrieved at 7/20/2023, 4:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, s) {
@@ -3274,7 +3274,7 @@
 						tabIndex: -1,
 						"data-adclicklocation": E.a.BACKGROUND
 					}, s), _ = !!l.media && l.media.type === b.o.VIDEO;
-					return (e => l.media && Object(b.G)(l.media) && O ? n.a.createElement(m, {
+					return (e => l.media && Object(b.H)(l.media) && O ? n.a.createElement(m, {
 						postId: l.id
 					}, e) : e)((e => l.isSponsored || _ ? n.a.createElement(a.a, {
 						post: l,
@@ -6411,4 +6411,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.659c7fea9a2f0d344db0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c.e00e0f3d72cfda015a4e.js.map

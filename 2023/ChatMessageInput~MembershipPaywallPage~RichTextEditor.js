@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.d010f5e92eb3a1deb6a8.js
-// Retrieved at 7/17/2023, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.0a8d64f9232b20ec693f.js
+// Retrieved at 7/20/2023, 4:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -5580,13 +5580,13 @@
 				fi = n("./src/reddit/helpers/richTextJson/index.ts"),
 				bi = n("./src/reddit/models/RichTextJson/nodeMakers.ts");
 			const yi = {
-				BOLD: qn.j.bold,
-				ITALIC: qn.j.italic,
-				MONOSPACE: qn.j.monospace,
-				STRIKETHROUGH: qn.j.strikethrough,
-				SUBSCRIPT: qn.j.subscript,
-				SUPERSCRIPT: qn.j.superscript,
-				UNDERLINE: qn.j.underline
+				BOLD: qn.k.bold,
+				ITALIC: qn.k.italic,
+				MONOSPACE: qn.k.monospace,
+				STRIKETHROUGH: qn.k.strikethrough,
+				SUBSCRIPT: qn.k.subscript,
+				SUPERSCRIPT: qn.k.superscript,
+				UNDERLINE: qn.k.underline
 			};
 			var Ei = (t, e) => Si(t.getBlockMap(), t, e);
 			const Si = (t, e, n) => {
@@ -5713,7 +5713,7 @@
 					}), r
 				},
 				Ti = (t, e) => Object(bi.l)(ki(t, e)),
-				xi = t => "text" === t.e ? Object(bi.m)(t.t) : "link" === t.e ? Object(bi.i)(t.t, t.u, null) : t.e === qn.y ? t.c.map(xi) : t.e === qn.n ? Object(bi.m)("") : t,
+				xi = t => "text" === t.e ? Object(bi.m)(t.t) : "link" === t.e ? Object(bi.i)(t.t, t.u, null) : t.e === qn.z ? t.c.map(xi) : t.e === qn.o ? Object(bi.m)("") : t,
 				vi = (t, e) => Object(bi.f)(w.m[t.getType()], ((t, e) => ai()(ii()(ki(t, e), xi), (t, e) => {
 					let [n, ...o] = t;
 					if (!n) return [e];
@@ -5823,7 +5823,7 @@
 				if (!e) return (t => {
 					const e = t.id;
 					switch (t.e) {
-						case qn.m:
+						case qn.n:
 							return {
 								assetId: e, type: N.a.Image
 							};
@@ -5831,7 +5831,7 @@
 							return {
 								assetId: e, type: N.a.AnimatedImage
 							};
-						case qn.E:
+						case qn.F:
 							return {
 								assetId: e, type: N.a.Video
 							}
@@ -5839,7 +5839,7 @@
 				})(t);
 				const n = e.id;
 				switch (e.e) {
-					case qn.s: {
+					case qn.t: {
 						const {
 							s: t
 						} = e;
@@ -5851,7 +5851,7 @@
 							height: t.y
 						}
 					}
-					case qn.r: {
+					case qn.s: {
 						const {
 							s: t
 						} = e;
@@ -5865,7 +5865,7 @@
 							height: t.y
 						}
 					}
-					case qn.t: {
+					case qn.u: {
 						const {
 							isGif: t,
 							dashUrl: o,
@@ -5895,7 +5895,7 @@
 			function Ui(t, e, n) {
 				const r = t.id,
 					s = t.c,
-					i = qn.F(e, r),
+					i = qn.G(e, r),
 					c = Pi(t, i),
 					a = [new o.ContentBlock({
 						key: Object(o.genKey)(),
@@ -5915,27 +5915,27 @@
 			const Hi = Object.keys(yi),
 				Wi = (t, e, n) => {
 					switch (e.e) {
-						case qn.v:
+						case qn.w:
 							return Qi(t, e.c, w.b.UNSTYLED, n);
-						case qn.k:
+						case qn.l:
 							const o = w.h[e.l];
 							return Qi(t, e.c || [], o, n);
-						case qn.p:
+						case qn.q:
 							return Vi(t, e, n);
 						case qn.b:
 							return zi(t, e, n);
 						case qn.c:
 							return void e.c.forEach(e => Qi(t, [e], w.b.CODE_BLOCK, n));
-						case qn.A:
+						case qn.B:
 							return qi(t, e, n);
-						case qn.m:
+						case qn.n:
 						case qn.a:
-						case qn.E:
+						case qn.F:
 							return void t.blocks.push(...Ui(e, n.mediaMetadataMap, Object(N.q)(n.editorType)))
 					}
 				},
 				zi = (t, e, n) => {
-					e && e.c && e.c.length && e.c.forEach(e => e.e === qn.v ? Qi(t, e.c, w.b.BLOCK_QUOTE, n) : Wi(t, e, n))
+					e && e.c && e.c.length && e.c.forEach(e => e.e === qn.w ? Qi(t, e.c, w.b.BLOCK_QUOTE, n) : Wi(t, e, n))
 				},
 				qi = (t, e, n) => {
 					const {
@@ -5962,22 +5962,22 @@
 					e.c.forEach(e => {
 						const s = e.c;
 						if (!s || !s.length) return;
-						const [i, c] = s, a = i.e === qn.v ? i.c : [];
-						Qi(t, a, r, n, void 0, o), c && c.e === qn.p && Vi(t, c, n, o + 1)
+						const [i, c] = s, a = i.e === qn.w ? i.c : [];
+						Qi(t, a, r, n, void 0, o), c && c.e === qn.q && Vi(t, c, n, o + 1)
 					})
 				},
 				Gi = {
-					[qn.z]: ["r/", "/r/"],
-					[qn.C]: ["u/", "/user/"],
+					[qn.A]: ["r/", "/r/"],
 					[qn.D]: ["u/", "/user/"],
-					[qn.w]: ["p/", ""],
+					[qn.E]: ["u/", "/user/"],
+					[qn.x]: ["p/", ""],
 					[qn.g]: ["c/", ""]
 				},
 				Yi = {
-					[qn.z]: F.a.SUBREDDIT_LINK,
-					[qn.C]: F.a.USER_LINK,
-					[qn.D]: F.a.USER_MENTION,
-					[qn.w]: F.a.POST_LINK,
+					[qn.A]: F.a.SUBREDDIT_LINK,
+					[qn.D]: F.a.USER_LINK,
+					[qn.E]: F.a.USER_MENTION,
+					[qn.x]: F.a.POST_LINK,
 					[qn.g]: F.a.COMMENT_LINK
 				},
 				Qi = function(t, e, n, r) {
@@ -5985,7 +5985,7 @@
 						i = arguments.length > 5 ? arguments[5] : void 0,
 						c = arguments.length > 6 && void 0 !== arguments[6] && arguments[6];
 					const a = t.content;
-					if (1 === e.length && (e[0].e === qn.m || e[0].e === qn.a)) {
+					if (1 === e.length && (e[0].e === qn.n || e[0].e === qn.a)) {
 						const n = e[0];
 						if (Object(fi.h)(n.id)) return void t.blocks.push(...Ui(n, r.mediaMetadataMap, Object(N.q)(r.editorType)))
 					}
@@ -6019,7 +6019,7 @@
 				},
 				Xi = (t, e, n) => {
 					switch (t.e) {
-						case qn.B: {
+						case qn.C: {
 							const {
 								t: e,
 								f: n
@@ -6029,7 +6029,7 @@
 								text: e
 							}
 						}
-						case qn.y: {
+						case qn.z: {
 							const {
 								c: r
 							} = t, s = Ji(r, e, n);
@@ -6038,9 +6038,9 @@
 								entity: t.getEntity()
 							}))(t)), s
 						}
-						case qn.w:
+						case qn.x:
 						case qn.g:
-						case qn.x: {
+						case qn.y: {
 							const {
 								t: e
 							} = t;
@@ -6049,9 +6049,9 @@
 								text: e
 							}
 						}
-						case qn.z:
-						case qn.C:
-						case qn.D: {
+						case qn.A:
+						case qn.D:
+						case qn.E: {
 							const [n, o] = Gi[t.e], r = (t.l ? "/" : "") + n + t.t, s = o + t.t, i = Ni(e, Yi[t.e], s), c = i.getLastCreatedEntityKey();
 							return {
 								charList: $i(r, void 0, c),
@@ -6059,7 +6059,7 @@
 								updatedContent: i
 							}
 						}
-						case qn.o: {
+						case qn.p: {
 							const {
 								t: n,
 								u: o,
@@ -6071,7 +6071,7 @@
 								updatedContent: s
 							}
 						}
-						case qn.m:
+						case qn.n:
 						case qn.a:
 							const {
 								id: r
@@ -6567,7 +6567,7 @@
 						rteState: d
 					} = t;
 					let u;
-					d.isBound ? u = d.editorState : Object(qn.H)(d.initialRTJSON) ? u = this.createInitialState(d.editorKey) : (u = o.EditorState.createWithContent(ec(d.initialRTJSON, s, d.mediaMetadataMap, r), this.editorDecorators()), u = this.moveSelectionToEnd(u)), this.state = {
+					d.isBound ? u = d.editorState : Object(qn.I)(d.initialRTJSON) ? u = this.createInitialState(d.editorKey) : (u = o.EditorState.createWithContent(ec(d.initialRTJSON, s, d.mediaMetadataMap, r), this.editorDecorators()), u = this.moveSelectionToEnd(u)), this.state = {
 						noBorder: c,
 						containerRef: null,
 						confirmModalOpen: !1,
@@ -8065,4 +8065,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.d010f5e92eb3a1deb6a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.0a8d64f9232b20ec693f.js.map

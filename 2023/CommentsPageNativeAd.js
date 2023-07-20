@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.f0428561777243c3f310.js
-// Retrieved at 5/23/2023, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.2f37579e4c4abfcf5b7d.js
+// Retrieved at 7/20/2023, 4:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/CommentsPageNativeAd/index.m.less": function(e, t, s) {
@@ -52,10 +52,10 @@
 				C = s("./src/reddit/components/BlankPost/index.tsx"),
 				v = s("./src/reddit/components/CallToActionButton/index.tsx"),
 				O = s("./src/reddit/components/JSAPIContainers/index.tsx"),
-				_ = s("./src/reddit/components/PostContainer/index.tsx"),
-				f = s("./src/reddit/components/PostTitle/index.tsx"),
-				y = s("./src/reddit/constants/componentTestIds.ts"),
-				P = s("./src/reddit/controls/OutboundLink/index.tsx"),
+				P = s("./src/reddit/components/PostContainer/index.tsx"),
+				_ = s("./src/reddit/components/PostTitle/index.tsx"),
+				f = s("./src/reddit/constants/componentTestIds.ts"),
+				y = s("./src/reddit/controls/OutboundLink/index.tsx"),
 				S = s("./src/reddit/helpers/search/renderMedia.tsx"),
 				k = s("./src/reddit/components/PostTopMeta/index.tsx"),
 				N = s("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
@@ -116,7 +116,7 @@
 					usePreview: u,
 					mediaExpanded: h
 				} = e;
-				return i && i.media ? h && Object(x.O)(i.media) ? r.a.createElement("div", null, r.a.createElement(U.a, {
+				return i && i.media ? h && Object(x.P)(i.media) ? r.a.createElement("div", null, r.a.createElement(U.a, {
 					className: A.a.close,
 					onClick: s
 				}), r.a.createElement(M.a, {
@@ -140,8 +140,8 @@
 					isMeta: n,
 					post: i,
 					redditStyle: d,
-					removeLink: Object(x.O)(i.media),
-					url: Object(x.O)(i.media) ? void 0 : p,
+					removeLink: Object(x.P)(i.media),
+					url: Object(x.P)(i.media) ? void 0 : p,
 					usePreview: u
 				}) : r.a.createElement(R.b, {
 					className: Object(l.a)(A.a.thumbnail, t),
@@ -193,7 +193,7 @@
 					e(Object(b.d)(t.post.author))
 				}
 			}));
-			class K extends r.a.Component {
+			class H extends r.a.Component {
 				constructor(e) {
 					super(e), this.state = {
 						mediaExpanded: !1
@@ -213,11 +213,11 @@
 					} = this.props;
 					if (!a.source) return null;
 					let n = Object(p.a)(a);
-					a.media && Object(x.G)(a.media) && (null === (s = null === (t = null === (e = null == a ? void 0 : a.media) || void 0 === e ? void 0 : e.gallery) || void 0 === t ? void 0 : t.items[0]) || void 0 === s ? void 0 : s.displayUrl) && (n = a.media.gallery.items[0].displayUrl);
+					a.media && Object(x.H)(a.media) && (null === (s = null === (t = null === (e = null == a ? void 0 : a.media) || void 0 === e ? void 0 : e.gallery) || void 0 === t ? void 0 : t.items[0]) || void 0 === s ? void 0 : s.displayUrl) && (n = a.media.gallery.items[0].displayUrl);
 					const i = Object(l.a)(A.a.styledOutboundLink, {
 						[A.a.ctaExperiment]: o
 					});
-					return r.a.createElement(P.b, {
+					return r.a.createElement(y.b, {
 						className: i,
 						href: a.source.url,
 						postId: a.id,
@@ -243,7 +243,7 @@
 						post: p,
 						redditStyle: h,
 						scrollerItemRef: b,
-						showMedia: P,
+						showMedia: y,
 						showCTAExperiment: N
 					} = this.props;
 					if (p.isBlank) return r.a.createElement(C.default, {
@@ -254,7 +254,7 @@
 					});
 					return r.a.createElement("div", null, r.a.createElement("div", {
 						className: A.a.commentsSpacer
-					}), r.a.createElement(_.b, {
+					}), r.a.createElement(P.b, {
 						isOverlay: d,
 						post: p,
 						eventFactory: e
@@ -269,11 +269,11 @@
 						className: Object(l.a)(A.a.contentRow, {
 							[A.a.contentRowExpanded]: this.state.mediaExpanded
 						})
-					}, !(n && !P) && r.a.createElement(V, {
+					}, !(n && !y) && r.a.createElement(V, {
 						isMeta: p.isMeta,
 						post: p,
 						redditStyle: h,
-						isVideo: p.media && Object(x.O)(p.media),
+						isVideo: p.media && Object(x.P)(p.media),
 						scrollerItemRef: b,
 						mediaExpanded: this.state.mediaExpanded,
 						setExpandedState: e => this.setState({
@@ -281,7 +281,7 @@
 						})
 					}), r.a.createElement("div", {
 						className: A.a.contentColumn
-					}, r.a.createElement(f.c, {
+					}, r.a.createElement(_.c, {
 						format: s,
 						outboundLinkClassName: A.a.outboundLink,
 						className: A.a.postTitle,
@@ -296,7 +296,7 @@
 						className: j,
 						rel: "nofollow",
 						"data-click-id": "comments",
-						"data-test-id": y.a,
+						"data-test-id": f.a,
 						to: this.props.isOverlay ? Object(u.a)(p.permalink, !0) : Object(z.b)(p.permalink),
 						onClick: this.props.onClick
 					}, a.fbt._("Join the conversation", null, {
@@ -316,8 +316,8 @@
 					}))
 				}
 			}
-			const q = Object(m.a)(K);
-			t.default = Object(B.a)(G(q))
+			const K = Object(m.a)(H);
+			t.default = Object(B.a)(G(K))
 		},
 		"./src/reddit/connectors/ClassicPost/index.tsx": function(e, t, s) {
 			"use strict";
@@ -405,4 +405,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.f0428561777243c3f310.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.2f37579e4c4abfcf5b7d.js.map

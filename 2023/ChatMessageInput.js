@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.095d79a399caac9a0131.js
-// Retrieved at 7/5/2023, 1:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.e6975edd1f5d65a75a4a.js
+// Retrieved at 7/20/2023, 4:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, s) {},
@@ -321,13 +321,13 @@
 		"./src/reddit/actions/postCreation/mediaUpload.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "f", (function() {
-				return N
+				return A
 			})), s.d(t, "b", (function() {
 				return P
 			})), s.d(t, "a", (function() {
 				return U
 			})), s.d(t, "c", (function() {
-				return F
+				return R
 			})), s.d(t, "e", (function() {
 				return M
 			})), s.d(t, "d", (function() {
@@ -368,8 +368,8 @@
 				L = s("./src/reddit/actions/postCreation/general.ts");
 			const w = Object(i.a)(T.u),
 				D = Object(i.a)(T.v),
-				A = Object(i.a)(T.t),
-				N = e => async (t, s) => {
+				N = Object(i.a)(T.t),
+				A = e => async (t, s) => {
 					t(w());
 					const n = e.map(e => {
 						let {
@@ -377,7 +377,7 @@
 							uploadKey: n
 						} = e;
 						const o = Object(C.b)(Object(C.d)(s), "poster.png");
-						return t(R(o, n, !0, !1))
+						return t(F(o, n, !0, !1))
 					});
 					await Promise.all(n);
 					const o = s().uploads,
@@ -387,7 +387,7 @@
 							} = e;
 							return o[t]
 						}).find(e => e.status !== g.a.SUCCESS);
-					t(a ? A(a.error) : D())
+					t(a ? N(a.error) : D())
 				}, k = (e, t) => ({
 					error: t ? {
 						type: e,
@@ -401,24 +401,24 @@
 				});
 			const P = "RTE",
 				U = "GALLERY",
-				R = (e, t, s, o, r, i, l, O) => async (T, L, w) => {
+				F = (e, t, s, o, r, i, l, O) => async (T, L, w) => {
 					let {
 						apiContext: D,
-						gqlContext: A
+						gqlContext: N
 					} = w;
-					const N = Object(I.h)(L()),
+					const A = Object(I.h)(L()),
 						P = Date.now();
 					let U = null,
-						R = !1,
 						F = !1,
+						R = !1,
 						M = !1;
 					const H = e => {
-						if (!M && r && R) {
+						if (!M && r && F) {
 							M = !0;
 							const s = L(),
 								n = Date.now() - P,
 								o = Object(f.c)(f.a.PostComposer);
-							F ? (async e => {
+							R ? (async e => {
 								let {
 									state: t,
 									uploadKey: s,
@@ -488,7 +488,7 @@
 					};
 					return await T(Object(c.l)(e, t, async f => {
 						var g, v, j, x;
-						R = !0, Object(c.k)(f.id, () => {
+						F = !0, Object(c.k)(f.id, () => {
 							H(!0)
 						});
 						const {
@@ -589,7 +589,7 @@
 							return {
 								metadata: u
 							}
-						}(e, s, o, N, O);
+						}(e, s, o, A, O);
 						if (E || !I) return {
 							error: E
 						};
@@ -599,7 +599,7 @@
 									fileSource: r,
 									...I
 								}
-							})), F = !0, i && i(), l) {
+							})), R = !0, i && i(), l) {
 							const e = I.mimetype,
 								t = e && a.T[e];
 							if (e && t) {
@@ -612,7 +612,7 @@
 											}
 										}
 									})
-								})(A(), t);
+								})(N(), t);
 								if (e.ok) {
 									const t = e.body,
 										s = (null === (g = t.data.createMediaUploadLease) || void 0 === g ? void 0 : g.uploadLease.uploadLeaseUrl) || "",
@@ -662,13 +662,13 @@
 							error: w.error || void 0
 						}
 					}, !0)), H(!1), L().uploads[t] || null
-				}, F = (e, t) => async (s, n) => {
+				}, R = (e, t) => async (s, n) => {
 					const o = n().uploads[e];
-					o && !Object(g.c)(o) && await s(R(o.file, o.key, t, !1, o.metadata.fileSource, void 0))
+					o && !Object(g.c)(o) && await s(F(o.file, o.key, t, !1, o.metadata.fileSource, void 0))
 				}, M = (e, t, s, a, i, c) => async (l, u) => {
 					const m = e.map((e, n) => new Promise(async n => {
 							const r = Object(g.d)(s, Object(o.a)().slice(-6));
-							await l(R(e, r, a, !0, t, () => n({
+							await l(F(e, r, a, !0, t, () => n({
 								uploadKey: r,
 								isValid: !0
 							}), i, c)), n({
@@ -1102,7 +1102,7 @@
 						n = s.length;
 					for (let o = 0; o < n; o++) {
 						const e = s[o];
-						t.push(e.e === h.x ? e.t : Object(m.e)(e, {}, o))
+						t.push(e.e === h.y ? e.t : Object(m.e)(e, {}, o))
 					}
 					return a.a.createElement(a.a.Fragment, null, t)
 				},
@@ -1116,11 +1116,11 @@
 				[h.a]: "<animated image>",
 				[h.b]: "<quote>",
 				[h.c]: "<code block>",
-				[h.h]: "<embed>",
-				[h.m]: "<image>",
-				[h.p]: "<list>",
-				[h.A]: "<table>",
-				[h.E]: "<video>"
+				[h.i]: "<embed>",
+				[h.n]: "<image>",
+				[h.q]: "<list>",
+				[h.B]: "<table>",
+				[h.F]: "<video>"
 			};
 			var g = e => {
 					let {
@@ -1136,22 +1136,22 @@
 							const e = n[a],
 								t = e && C[e.e];
 							switch (e.e) {
-								case h.l:
+								case h.m:
 									break;
 								case h.b:
 								case h.c:
-								case h.p:
-								case h.A:
-								case h.m:
+								case h.q:
+								case h.B:
+								case h.n:
 								case h.a:
-								case h.E:
-								case h.h:
+								case h.F:
+								case h.i:
 									o.push(p(t));
 									break;
-								case h.k:
+								case h.l:
 									o.push(b(e));
 									break;
-								case h.v:
+								case h.w:
 									o.push(f(e))
 							}
 						}
@@ -1287,14 +1287,14 @@
 				L = s("./src/reddit/models/Post/index.ts"),
 				w = s("./src/reddit/models/PostCreationForm/index.ts"),
 				D = s("./src/reddit/selectors/chatPost.ts"),
-				A = s("./src/reddit/selectors/comments.ts"),
-				N = s("./src/reddit/selectors/posts.ts"),
+				N = s("./src/reddit/selectors/comments.ts"),
+				A = s("./src/reddit/selectors/posts.ts"),
 				k = s("./src/reddit/selectors/user.ts"),
 				P = s("./src/lib/constants/index.ts"),
 				U = s("./src/lib/makeGqlRequest/index.ts"),
-				R = s("./src/redditGQL/operations/CreateLiveChatAssociation.json");
-			var F = s("./src/reddit/components/CommentsChat/MessageInput/index.m.less"),
-				M = s.n(F),
+				F = s("./src/redditGQL/operations/CreateLiveChatAssociation.json");
+			var R = s("./src/reddit/components/CommentsChat/MessageInput/index.m.less"),
+				M = s.n(R),
 				H = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				B = s("./src/reddit/helpers/chat/isEmbeddedLiveChat.ts"),
 				K = s("./src/reddit/helpers/trackers/commentsChat.ts"),
@@ -1305,16 +1305,16 @@
 				G = 15e3,
 				z = Object(H.v)(),
 				Z = Object(d.b)(() => Object(c.c)({
-					draft: A.i,
-					errorMsgs: A.M,
-					errorType: A.N,
-					hasError: A.v,
+					draft: N.i,
+					errorMsgs: N.M,
+					errorType: N.N,
+					hasError: N.v,
 					isChatPost: D.d,
 					pending: (e, t) => e.features.comments.submit.pending[t.draftKey],
-					post: N.F,
+					post: A.F,
 					isLiveChatInChatTabEnabled: W.c,
 					currentUserId: k.k,
-					isTalkPost: Object(c.a)(N.F, e => Object(L.x)(e)),
+					isTalkPost: Object(c.a)(A.F, e => Object(L.x)(e)),
 					isLiveChatThreadingEnabled: W.e
 				}), (e, t) => {
 					let {
@@ -1365,7 +1365,7 @@
 								gqlContext: o
 							} = n;
 							return Object(U.a)(o(), {
-								...R,
+								...F,
 								variables: {
 									input: e
 								}
@@ -1898,4 +1898,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.095d79a399caac9a0131.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.e6975edd1f5d65a75a4a.js.map

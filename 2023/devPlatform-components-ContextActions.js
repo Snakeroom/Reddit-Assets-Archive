@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.b5ed46885bb65e45186b.js
-// Retrieved at 6/20/2023, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.c7339422f6c2c3afb18a.js
+// Retrieved at 7/20/2023, 4:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["devPlatform-components-ContextActions"], {
 		"./src/devPlatform/components/ContextActions/index.tsx": function(t, e, o) {
@@ -71,7 +71,7 @@
 				f = o("./src/reddit/models/Flair/index.ts"),
 				g = o("./src/reddit/models/Media/index.ts"),
 				A = t => {
-					var e, o, i, a, d, n, r, s, l, c, u, m, v, b, A, y, S, w, O;
+					var e, o, i, a, d, n, r, s, l, c, u, m, v, b, A, y, S, O, w;
 					return h.L.fromPartial({
 						approved: t.isApproved,
 						approvedAtUtc: null !== (e = t.approvedAtUTC) && void 0 !== e ? e : void 0,
@@ -118,14 +118,14 @@
 						topAwardedType: t.topAwardedType,
 						numComments: t.numComments,
 						over18: t.isNSFW,
-						selftext: t.media && Object(g.N)(t.media) ? t.media.markdownContent : void 0,
-						selftextHtml: t.media && Object(g.N)(t.media) ? t.media.content : void 0,
+						selftext: t.media && Object(g.O)(t.media) ? t.media.markdownContent : void 0,
+						selftextHtml: t.media && Object(g.O)(t.media) ? t.media.content : void 0,
 						spoiler: String(t.isSpoiler),
 						thumbnail: t.thumbnail.url,
 						thumbnailWidth: null !== (S = t.thumbnail.width) && void 0 !== S ? S : void 0,
-						thumbnailHeight: null !== (w = t.thumbnail.height) && void 0 !== w ? w : void 0,
+						thumbnailHeight: null !== (O = t.thumbnail.height) && void 0 !== O ? O : void 0,
 						title: t.title,
-						url: null === (O = t.source) || void 0 === O ? void 0 : O.url
+						url: null === (w = t.source) || void 0 === w ? void 0 : w.url
 					})
 				},
 				y = t => h.U.fromPartial({
@@ -149,8 +149,8 @@
 					id: t.id.replace(/t[1-5]_/, "")
 				}),
 				S = o("./src/devPlatform/components/FormModal/modals.ts"),
-				w = o("./src/devPlatform/components/UserInputModal/modals.ts"),
-				O = o("./src/devPlatform/singleton/runtime.ts");
+				O = o("./src/devPlatform/components/UserInputModal/modals.ts"),
+				w = o("./src/devPlatform/singleton/runtime.ts");
 
 			function x(t, e, o, i) {
 				let a = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : {};
@@ -167,7 +167,7 @@
 							(null === (n = e.showForm) || void 0 === n ? void 0 : n.form) && i(e.showForm.form, function(t, e, o, i) {
 								let a = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : {};
 								return async d => {
-									const n = O.a.getActor(t);
+									const n = w.a.getActor(t);
 									if (!n) return;
 									const r = await n.As(h.Z).HandleUIEvent(h.s.fromPartial({
 										event: {
@@ -224,7 +224,7 @@
 						}))
 					},
 					onShowUserInput: (e, o) => {
-						t(Object(w.b)({
+						t(Object(O.b)({
 							action: e,
 							onAction: o
 						}))
@@ -248,7 +248,7 @@
 				if (!Object(d.e)(u.a)) return null;
 				if (null == r) return null;
 				let b = [];
-				O.a.init(), b = O.a.loadSubreddit(r);
+				w.a.init(), b = w.a.loadSubreddit(r);
 				const f = (t, e) => {
 						n(t, e)
 					},
@@ -273,7 +273,7 @@
 							return () => {
 								const r = a => {
 									var r, s;
-									return null === (s = null === (r = O.a.getActor(t)) || void 0 === r ? void 0 : r.As(h.f)) || void 0 === s ? void 0 : s.OnAction(h.g.fromPartial({
+									return null === (s = null === (r = w.a.getActor(t)) || void 0 === r ? void 0 : r.As(h.f)) || void 0 === s ? void 0 : s.OnAction(h.g.fromPartial({
 										actionId: e.actionId,
 										context: o,
 										...F(o, i),
@@ -593,4 +593,4 @@
 		"ignored /drone/src/node_modules/cron-parser/lib fs": function(t, e) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.b5ed46885bb65e45186b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/devPlatform-components-ContextActions.c7339422f6c2c3afb18a.js.map

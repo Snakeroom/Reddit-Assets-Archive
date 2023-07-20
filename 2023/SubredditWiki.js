@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.ed76375057f825570723.js
-// Retrieved at 7/6/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.f4424374b26308f74d12.js
+// Retrieved at 7/20/2023, 4:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -5360,7 +5360,7 @@
 				}),
 				_ = Object(d.b)(y),
 				E = v.a.wrapped(b.a, "ThemedWidget", k.a),
-				O = e => !(!e || e.isBlank) && (!e.isMediaOnly || !!(e.media && Object(f.H)(e.media) && e.media.content)),
+				O = e => !(!e || e.isBlank) && (!e.isMediaOnly || !!(e.media && Object(f.I)(e.media) && e.media.content)),
 				w = [{
 					img: "/img/house-ads/eatcheapandhealthy.png",
 					href: "/r/eatcheapandhealthy"
@@ -11614,4 +11614,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.ed76375057f825570723.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.f4424374b26308f74d12.js.map

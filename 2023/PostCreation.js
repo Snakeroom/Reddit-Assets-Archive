@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.dd59aea738a197b5eef0.js
-// Retrieved at 7/19/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.773a0a9e2804cdcd7a06.js
+// Retrieved at 7/20/2023, 4:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit~StandalonePostPage", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -1422,10 +1422,10 @@
 						apiContext: a
 					} = i;
 					const c = e === T.i.RICH_TEXT;
-					if (!t || "object" == typeof t && Object(J.H)(t)) r(Re({
+					if (!t || "object" == typeof t && Object(J.I)(t)) r(Re({
 						editorMode: e,
 						draftKey: n,
-						content: c ? J.i : ""
+						content: c ? J.j : ""
 					})), r(Object(m.c)(e));
 					else {
 						r(Object(m.b)(n));
@@ -3020,7 +3020,7 @@
 					const C = t === d.i.MARKDOWN,
 						y = t === d.i.RICH_TEXT,
 						E = m.k;
-					if (C && Object(l.H)(n)) return r(b({
+					if (C && Object(l.I)(n)) return r(b({
 						editorKey: e,
 						editorMode: d.i.MARKDOWN,
 						content: ""
@@ -3028,7 +3028,7 @@
 					if (y && !n) return r(b({
 						editorKey: e,
 						editorMode: d.i.RICH_TEXT,
-						content: l.i
+						content: l.j
 					})), void r(g(t));
 					r(p(E));
 					const x = await Object(i.a)(v(), t, C ? JSON.stringify(n) : n);
@@ -18632,13 +18632,13 @@
 				fi = n("./src/reddit/helpers/richTextJson/index.ts"),
 				gi = n("./src/reddit/models/RichTextJson/nodeMakers.ts");
 			const vi = {
-				BOLD: Vn.j.bold,
-				ITALIC: Vn.j.italic,
-				MONOSPACE: Vn.j.monospace,
-				STRIKETHROUGH: Vn.j.strikethrough,
-				SUBSCRIPT: Vn.j.subscript,
-				SUPERSCRIPT: Vn.j.superscript,
-				UNDERLINE: Vn.j.underline
+				BOLD: Vn.k.bold,
+				ITALIC: Vn.k.italic,
+				MONOSPACE: Vn.k.monospace,
+				STRIKETHROUGH: Vn.k.strikethrough,
+				SUBSCRIPT: Vn.k.subscript,
+				SUPERSCRIPT: Vn.k.superscript,
+				UNDERLINE: Vn.k.underline
 			};
 			var Ci = (e, t) => yi(e.getBlockMap(), e, t);
 			const yi = (e, t, n) => {
@@ -18765,7 +18765,7 @@
 					}), r
 				},
 				_i = (e, t) => Object(gi.l)(Oi(e, t)),
-				ki = e => "text" === e.e ? Object(gi.m)(e.t) : "link" === e.e ? Object(gi.i)(e.t, e.u, null) : e.e === Vn.y ? e.c.map(ki) : e.e === Vn.n ? Object(gi.m)("") : e,
+				ki = e => "text" === e.e ? Object(gi.m)(e.t) : "link" === e.e ? Object(gi.i)(e.t, e.u, null) : e.e === Vn.z ? e.c.map(ki) : e.e === Vn.o ? Object(gi.m)("") : e,
 				ji = (e, t) => Object(gi.f)(w.m[e.getType()], ((e, t) => ci()(ii()(Oi(e, t), ki), (e, t) => {
 					let [n, ...o] = e;
 					if (!n) return [t];
@@ -18875,7 +18875,7 @@
 				if (!t) return (e => {
 					const t = e.id;
 					switch (e.e) {
-						case Vn.m:
+						case Vn.n:
 							return {
 								assetId: t, type: A.a.Image
 							};
@@ -18883,7 +18883,7 @@
 							return {
 								assetId: t, type: A.a.AnimatedImage
 							};
-						case Vn.E:
+						case Vn.F:
 							return {
 								assetId: t, type: A.a.Video
 							}
@@ -18891,7 +18891,7 @@
 				})(e);
 				const n = t.id;
 				switch (t.e) {
-					case Vn.s: {
+					case Vn.t: {
 						const {
 							s: e
 						} = t;
@@ -18903,7 +18903,7 @@
 							height: e.y
 						}
 					}
-					case Vn.r: {
+					case Vn.s: {
 						const {
 							s: e
 						} = t;
@@ -18917,7 +18917,7 @@
 							height: e.y
 						}
 					}
-					case Vn.t: {
+					case Vn.u: {
 						const {
 							isGif: e,
 							dashUrl: o,
@@ -18947,7 +18947,7 @@
 			function Ki(e, t, n) {
 				const r = e.id,
 					s = e.c,
-					i = Vn.F(t, r),
+					i = Vn.G(t, r),
 					a = Ui(e, i),
 					c = [new o.ContentBlock({
 						key: Object(o.genKey)(),
@@ -18967,27 +18967,27 @@
 			const Wi = Object.keys(vi),
 				Gi = (e, t, n) => {
 					switch (t.e) {
-						case Vn.v:
+						case Vn.w:
 							return Yi(e, t.c, w.b.UNSTYLED, n);
-						case Vn.k:
+						case Vn.l:
 							const o = w.h[t.l];
 							return Yi(e, t.c || [], o, n);
-						case Vn.p:
+						case Vn.q:
 							return zi(e, t, n);
 						case Vn.b:
 							return Hi(e, t, n);
 						case Vn.c:
 							return void t.c.forEach(t => Yi(e, [t], w.b.CODE_BLOCK, n));
-						case Vn.A:
+						case Vn.B:
 							return Vi(e, t, n);
-						case Vn.m:
+						case Vn.n:
 						case Vn.a:
-						case Vn.E:
+						case Vn.F:
 							return void e.blocks.push(...Ki(t, n.mediaMetadataMap, Object(A.q)(n.editorType)))
 					}
 				},
 				Hi = (e, t, n) => {
-					t && t.c && t.c.length && t.c.forEach(t => t.e === Vn.v ? Yi(e, t.c, w.b.BLOCK_QUOTE, n) : Gi(e, t, n))
+					t && t.c && t.c.length && t.c.forEach(t => t.e === Vn.w ? Yi(e, t.c, w.b.BLOCK_QUOTE, n) : Gi(e, t, n))
 				},
 				Vi = (e, t, n) => {
 					const {
@@ -19014,22 +19014,22 @@
 					t.c.forEach(t => {
 						const s = t.c;
 						if (!s || !s.length) return;
-						const [i, a] = s, c = i.e === Vn.v ? i.c : [];
-						Yi(e, c, r, n, void 0, o), a && a.e === Vn.p && zi(e, a, n, o + 1)
+						const [i, a] = s, c = i.e === Vn.w ? i.c : [];
+						Yi(e, c, r, n, void 0, o), a && a.e === Vn.q && zi(e, a, n, o + 1)
 					})
 				},
 				qi = {
-					[Vn.z]: ["r/", "/r/"],
-					[Vn.C]: ["u/", "/user/"],
+					[Vn.A]: ["r/", "/r/"],
 					[Vn.D]: ["u/", "/user/"],
-					[Vn.w]: ["p/", ""],
+					[Vn.E]: ["u/", "/user/"],
+					[Vn.x]: ["p/", ""],
 					[Vn.g]: ["c/", ""]
 				},
 				Qi = {
-					[Vn.z]: B.a.SUBREDDIT_LINK,
-					[Vn.C]: B.a.USER_LINK,
-					[Vn.D]: B.a.USER_MENTION,
-					[Vn.w]: B.a.POST_LINK,
+					[Vn.A]: B.a.SUBREDDIT_LINK,
+					[Vn.D]: B.a.USER_LINK,
+					[Vn.E]: B.a.USER_MENTION,
+					[Vn.x]: B.a.POST_LINK,
 					[Vn.g]: B.a.COMMENT_LINK
 				},
 				Yi = function(e, t, n, r) {
@@ -19037,7 +19037,7 @@
 						i = arguments.length > 5 ? arguments[5] : void 0,
 						a = arguments.length > 6 && void 0 !== arguments[6] && arguments[6];
 					const c = e.content;
-					if (1 === t.length && (t[0].e === Vn.m || t[0].e === Vn.a)) {
+					if (1 === t.length && (t[0].e === Vn.n || t[0].e === Vn.a)) {
 						const n = t[0];
 						if (Object(fi.h)(n.id)) return void e.blocks.push(...Ki(n, r.mediaMetadataMap, Object(A.q)(r.editorType)))
 					}
@@ -19071,7 +19071,7 @@
 				},
 				Xi = (e, t, n) => {
 					switch (e.e) {
-						case Vn.B: {
+						case Vn.C: {
 							const {
 								t,
 								f: n
@@ -19081,7 +19081,7 @@
 								text: t
 							}
 						}
-						case Vn.y: {
+						case Vn.z: {
 							const {
 								c: r
 							} = e, s = Ji(r, t, n);
@@ -19090,9 +19090,9 @@
 								entity: e.getEntity()
 							}))(e)), s
 						}
-						case Vn.w:
+						case Vn.x:
 						case Vn.g:
-						case Vn.x: {
+						case Vn.y: {
 							const {
 								t
 							} = e;
@@ -19101,9 +19101,9 @@
 								text: t
 							}
 						}
-						case Vn.z:
-						case Vn.C:
-						case Vn.D: {
+						case Vn.A:
+						case Vn.D:
+						case Vn.E: {
 							const [n, o] = qi[e.e], r = (e.l ? "/" : "") + n + e.t, s = o + e.t, i = Ai(t, Qi[e.e], s), a = i.getLastCreatedEntityKey();
 							return {
 								charList: $i(r, void 0, a),
@@ -19111,7 +19111,7 @@
 								updatedContent: i
 							}
 						}
-						case Vn.o: {
+						case Vn.p: {
 							const {
 								t: n,
 								u: o,
@@ -19123,7 +19123,7 @@
 								updatedContent: s
 							}
 						}
-						case Vn.m:
+						case Vn.n:
 						case Vn.a:
 							const {
 								id: r
@@ -19619,7 +19619,7 @@
 						rteState: l
 					} = e;
 					let u;
-					l.isBound ? u = l.editorState : Object(Vn.H)(l.initialRTJSON) ? u = this.createInitialState(l.editorKey) : (u = o.EditorState.createWithContent(ta(l.initialRTJSON, s, l.mediaMetadataMap, r), this.editorDecorators()), u = this.moveSelectionToEnd(u)), this.state = {
+					l.isBound ? u = l.editorState : Object(Vn.I)(l.initialRTJSON) ? u = this.createInitialState(l.editorKey) : (u = o.EditorState.createWithContent(ta(l.initialRTJSON, s, l.mediaMetadataMap, r), this.editorDecorators()), u = this.moveSelectionToEnd(u)), this.state = {
 						noBorder: a,
 						containerRef: null,
 						confirmModalOpen: !1,
@@ -40225,4 +40225,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.dd59aea738a197b5eef0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.773a0a9e2804cdcd7a06.js.map

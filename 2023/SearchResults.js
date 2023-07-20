@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.5dfc6fe84e037ca8f2df.js
-// Retrieved at 7/6/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.a4cde0109d803d06bbe9.js
+// Retrieved at 7/20/2023, 4:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./src/devPlatform/components/ContextActions/ContextActionsLoader.tsx": function(e, t, o) {
@@ -989,7 +989,7 @@
 						tabIndex: -1,
 						"data-adclicklocation": _.a.BACKGROUND
 					}, o), E = !!l.media && l.media.type === b.o.VIDEO;
-					return (e => l.media && Object(b.G)(l.media) && O ? s.a.createElement(u, {
+					return (e => l.media && Object(b.H)(l.media) && O ? s.a.createElement(u, {
 						postId: l.id
 					}, e) : e)((e => l.isSponsored || E ? s.a.createElement(i.a, {
 						post: l,
@@ -2244,4 +2244,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.5dfc6fe84e037ca8f2df.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.a4cde0109d803d06bbe9.js.map

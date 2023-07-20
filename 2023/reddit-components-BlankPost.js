@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.fde3d38d565c74200ad1.js
-// Retrieved at 7/6/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.2c1af1e8b2c01b83e3e1.js
+// Retrieved at 7/20/2023, 4:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-BlankPost"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, s) {
@@ -1119,8 +1119,8 @@
 				q = s("./node_modules/@sentry/minimal/esm/index.js"),
 				B = s("./node_modules/deep-diff/index.js"),
 				z = s("./src/lib/env/index.ts");
-			const $ = new Set(["authorFlair.cssClass", "posts.adSupplementaryText", "posts.allAwardings", "posts.approvedAtUTC", "posts.approvedBy", "posts.attributionInfo", "posts.audioRoom", "posts.bannedAtUTC", "posts.bannedBy", "posts.collapsedBecauseCrowdControl", "posts.ignoreReports", "posts.isApproved", "posts.isAuthorPremium", "posts.isEligibleForLinkedPosts", "posts.isEligibleForQASchema", "posts.isFollowed", "posts.isPinned", "posts.isReactAllowed", "posts.isRemoved", "posts.isSpam", "posts.lastAuthorModNote", "posts.modQueueTriggers", "posts.modReportsDismissed", "posts.pollData", "posts.predictionTournament", "posts.previewComments", "posts.modReports", "posts.numReports", "posts.reactedFrom", "posts.removedBy", "posts.removedByCategory", "posts.topAwardedType", "posts.userReports", "posts.userReportsDismissed", "posts.modReasonBy", "subreddits.answerableQuestions", "subreddits.freeFormReports", "subreddits.isSubscribed", "authorFlair.richtext", "authorFlair.text", "posts.collectionIds", "posts.liveCommentsWebsocket", "posts.thumbnail.url", "posts.discussionType", "posts.eventsOnRender", "posts.flair", "posts.gildings", "posts.media", "posts.goldCount", "posts.sendReplies", "posts.score", "posts.sendReplies", "posts.source.url", "posts.source.outboundUrl", "posts.source.outboundUrlCreated", "posts.source.outboundUrlExpiration", "profiles.acceptFollowers", "profiles.communityIcon", "profiles.icon.url", "posts.upvoteRatio", "subreddits.acceptFollowers", "subreddits.allowChatPostCreation", "subreddits.communityIcon", "subreddits.icon.url", "subreddits.isChatPostFeatureEnabled", "subreddits.primaryColor", "subreddits.subscribers"]),
-				H = (e, t) => {
+			const H = new Set(["authorFlair.cssClass", "posts.adSupplementaryText", "posts.allAwardings", "posts.approvedAtUTC", "posts.approvedBy", "posts.attributionInfo", "posts.audioRoom", "posts.bannedAtUTC", "posts.bannedBy", "posts.collapsedBecauseCrowdControl", "posts.ignoreReports", "posts.isApproved", "posts.isAuthorPremium", "posts.isEligibleForLinkedPosts", "posts.isEligibleForQASchema", "posts.isFollowed", "posts.isPinned", "posts.isReactAllowed", "posts.isRemoved", "posts.isSpam", "posts.lastAuthorModNote", "posts.modQueueTriggers", "posts.modReportsDismissed", "posts.pollData", "posts.predictionTournament", "posts.previewComments", "posts.modReports", "posts.numReports", "posts.reactedFrom", "posts.removedBy", "posts.removedByCategory", "posts.topAwardedType", "posts.userReports", "posts.userReportsDismissed", "posts.modReasonBy", "subreddits.answerableQuestions", "subreddits.freeFormReports", "subreddits.isSubscribed", "authorFlair.richtext", "authorFlair.text", "posts.collectionIds", "posts.liveCommentsWebsocket", "posts.thumbnail.url", "posts.discussionType", "posts.eventsOnRender", "posts.flair", "posts.gildings", "posts.media", "posts.goldCount", "posts.sendReplies", "posts.score", "posts.sendReplies", "posts.source.url", "posts.source.outboundUrl", "posts.source.outboundUrlCreated", "posts.source.outboundUrlExpiration", "profiles.acceptFollowers", "profiles.communityIcon", "profiles.icon.url", "posts.upvoteRatio", "subreddits.acceptFollowers", "subreddits.allowChatPostCreation", "subreddits.communityIcon", "subreddits.icon.url", "subreddits.isChatPostFeatureEnabled", "subreddits.primaryColor", "subreddits.subscribers"]),
+				$ = (e, t) => {
 					const s = {},
 						r = {};
 					Object.keys(e).forEach(o => {
@@ -1130,7 +1130,7 @@
 							const t = i[e],
 								a = n[e],
 								d = Object(B.diff)(t, a, {
-									prefilter: (e, t) => $.has(`${o}.${e.length?`${e.join(".")}.`:""}${t}`) || $.has(`${o}.${t}`),
+									prefilter: (e, t) => H.has(`${o}.${e.length?`${e.join(".")}.`:""}${t}`) || H.has(`${o}.${t}`),
 									normalize: (e, t, s, r) => s || r ? [s, r] : [s, s]
 								});
 							r[o] = d ? r[o] + d.length : (null == r ? void 0 : r[o]) || 0, d && (s[o][e] = {
@@ -1160,7 +1160,7 @@
 						allDiffs: e,
 						issueCounts: o,
 						totalIssues: i
-					} = H(t, s);
+					} = $(t, s);
 					console.groupCollapsed(`diff: ${i} issues`), console.log("lhs = gateway\nrhs = gql");
 					for (const t in e) {
 						if (console.groupCollapsed(`${t}: ${o[t]} issues`), o[t] > 0)
@@ -1180,7 +1180,7 @@
 						allDiffs: e,
 						issueCounts: r,
 						totalIssues: o
-					} = H(t, s);
+					} = $(t, s);
 					if (o <= 0) return;
 					q.l(t => {
 						t.setExtra("info", {
@@ -1793,7 +1793,7 @@
 						method: r.ob.GET
 					}))(o());
 					n.ok ? e(R(y(n.body))) : e(N(n.error))
-				}, F = "POST_DRAFT__SAVE_DRAFT_PENDING", L = "POST_DRAFT__SAVE_DRAFT_SUCCEEDED", V = "POST_DRAFT__SAVE_DRAFT_FAILED", U = "POST_DRAFT__SAVE_DRAFT_VALIDATION_FAILED", G = "POST_DRAFT__SAVE_DRAFT_SUBMIT_VALIDATION_FAILED", q = "POST_DRAFT__SAVE_DRAFT_CAPTCHA_REQUIRED", B = "POST_CREATION__TOGGLE_DRAFT_IS_PUBLIC", z = Object(i.a)(F), $ = Object(i.a)(L), H = Object(i.a)(V), W = Object(i.a)(U), Q = Object(i.a)(G), K = Object(i.a)(q), X = Object(i.a)(B), Y = e => async (t, s, i) => {
+				}, F = "POST_DRAFT__SAVE_DRAFT_PENDING", L = "POST_DRAFT__SAVE_DRAFT_SUCCEEDED", V = "POST_DRAFT__SAVE_DRAFT_FAILED", U = "POST_DRAFT__SAVE_DRAFT_VALIDATION_FAILED", G = "POST_DRAFT__SAVE_DRAFT_SUBMIT_VALIDATION_FAILED", q = "POST_DRAFT__SAVE_DRAFT_CAPTCHA_REQUIRED", B = "POST_CREATION__TOGGLE_DRAFT_IS_PUBLIC", z = Object(i.a)(F), H = Object(i.a)(L), $ = Object(i.a)(V), W = Object(i.a)(U), Q = Object(i.a)(G), K = Object(i.a)(q), X = Object(i.a)(B), Y = e => async (t, s, i) => {
 					let {
 						apiContext: n
 					} = i;
@@ -1824,13 +1824,13 @@
 							id: s,
 							draftsCount: r
 						} = Object(O.c)(f.body);
-						t($({
+						t(H({
 							draftId: s,
 							draftsCount: r
 						})), e || t(Object(a.a)(h.destSubreddit, s, !1))
 					} else {
 						const e = f.error;
-						e.type === r.K.BAD_CAPTCHA_ERROR ? t(K()) : e.type === r.K.VALIDATION_ERROR ? t(W(e)) : e.type === r.K.SUBMIT_VALIDATION_ERROR ? t(Q(e)) : t(H(e)), t(Object(d.f)({
+						e.type === r.K.BAD_CAPTCHA_ERROR ? t(K()) : e.type === r.K.VALIDATION_ERROR ? t(W(e)) : e.type === r.K.SUBMIT_VALIDATION_ERROR ? t(Q(e)) : t($(e)), t(Object(d.f)({
 							duration: d.a,
 							kind: j.b.Error,
 							text: Object(o.a)(e)
@@ -2092,7 +2092,7 @@
 						if (o()(this.state.event, e) || this.setState({
 								event: e
 							}), this.props.trackDisplay) {
-							const t = this.props.post.media && Object(m.G)(this.props.post.media);
+							const t = this.props.post.media && Object(m.H)(this.props.post.media);
 							this.viewabilityStats.forEach(s => {
 								(s.event !== b.a.GalleryItemImpression || t) && this.checkViewability(e, s)
 							})
@@ -2589,7 +2589,7 @@
 					}
 					return i()(n, e) ? e : n
 				},
-				$ = (e, t, s) => z(e, {
+				H = (e, t, s) => z(e, {
 					subreddit: {
 						[t]: {
 							...B,
@@ -2653,7 +2653,7 @@
 							layout: s,
 							subredditId: r
 						} = t.payload;
-						return $(e, r, {
+						return H(e, r, {
 							layout: s
 						})
 					}
@@ -2771,7 +2771,7 @@
 							subredditId: s,
 							prefs: r
 						} = t.payload;
-						return $(e, s, r)
+						return H(e, s, r)
 					}
 					case P.d:
 					case _.d:
@@ -2880,4 +2880,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.fde3d38d565c74200ad1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.2c1af1e8b2c01b83e3e1.js.map

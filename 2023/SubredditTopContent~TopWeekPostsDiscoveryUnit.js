@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.27bdbfc65ae3f3b220bb.js
-// Retrieved at 6/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.d65012724b077e9066b1.js
+// Retrieved at 7/20/2023, 4:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent~TopWeekPostsDiscoveryUnit"], {
 		"./node_modules/react-motion/lib/Motion.js": function(e, t, s) {
@@ -1185,33 +1185,33 @@
 					})))))
 				},
 				U = s("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
-				Q = s("./src/reddit/layout/twoCol/ExpandRight/index.tsx"),
-				q = s("./src/reddit/components/DiscoveryUnit/PostCommunity/index.m.less"),
-				H = s.n(q);
+				H = s("./src/reddit/layout/twoCol/ExpandRight/index.tsx"),
+				Q = s("./src/reddit/components/DiscoveryUnit/PostCommunity/index.m.less"),
+				q = s.n(Q);
 			var z = e => {
 					const t = Object(A.a)(e.name, e.type);
 					return a.a.createElement("div", {
-						className: Object(c.a)(H.a.container, e.className)
-					}, a.a.createElement(Q.a, {
-						className: H.a.layout
+						className: Object(c.a)(q.a.container, e.className)
+					}, a.a.createElement(H.a, {
+						className: q.a.layout
 					}, a.a.createElement("div", {
-						className: H.a.iconContainer
+						className: q.a.iconContainer
 					}, e.iconUrl ? a.a.createElement("img", {
-						className: H.a.icon,
+						className: q.a.icon,
 						src: e.iconUrl
 					}) : a.a.createElement(U.a, {
-						className: H.a.planetIcon,
+						className: q.a.planetIcon,
 						"data-redditstyle": !0
 					})), a.a.createElement("div", {
-						className: H.a.textContainer
+						className: q.a.textContainer
 					}, a.a.createElement(T.a, {
 						"data-click-id": "subreddit",
-						className: H.a.name,
+						className: q.a.name,
 						to: t
 					}, Object(A.b)(e.displayText || e.name, e.type)), a.a.createElement("span", {
-						className: H.a.separator
+						className: q.a.separator
 					}, "•"), a.a.createElement("span", {
-						className: H.a.timestamp
+						className: q.a.timestamp
 					}, a.a.createElement(D.d, {
 						seconds: e.created / M.Xb
 					})))))
@@ -1515,8 +1515,8 @@
 						showModalOnPostLinkClick: t => e(Object(d.Z)(Object(P.b)(t.permalink), t.id))
 					}
 				}),
-				Qe = Object(O.v)();
-			t.a = Qe(Ue(Object(j.c)(class extends _ {
+				He = Object(O.v)();
+			t.a = He(Ue(Object(j.c)(class extends _ {
 				constructor(e) {
 					super(e), this.state = {
 						scrollIndex: 0,
@@ -1982,7 +1982,7 @@
 						tabIndex: -1,
 						"data-adclicklocation": _.a.BACKGROUND
 					}, s), j = !!d.media && d.media.type === f.o.VIDEO;
-					return (e => d.media && Object(f.G)(d.media) && x ? r.a.createElement(u, {
+					return (e => d.media && Object(f.H)(d.media) && x ? r.a.createElement(u, {
 						postId: d.id
 					}, e) : e)((e => d.isSponsored || j ? r.a.createElement(i.a, {
 						post: d,
@@ -2085,9 +2085,9 @@
 				F = s("./src/reddit/components/SEOTitle/index.tsx"),
 				B = s("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
 				U = s("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
-				Q = s("./src/reddit/selectors/user.ts"),
-				q = s("./src/telemetry/models/Outbound.ts"),
-				H = s("./src/reddit/components/PostTitle/getLeftAndRightFlair.ts"),
+				H = s("./src/reddit/selectors/user.ts"),
+				Q = s("./src/telemetry/models/Outbound.ts"),
+				q = s("./src/reddit/components/PostTitle/getLeftAndRightFlair.ts"),
 				z = s("./src/higherOrderComponents/withAdClickLocation/Locations.ts"),
 				Z = s("./src/reddit/components/PostTitle/index.m.less"),
 				G = s.n(Z);
@@ -2188,7 +2188,7 @@
 						})
 					},
 					isNsfwBlurSubreddit: U.e,
-					shouldOpenPostInNewTab: Q.lb
+					shouldOpenPostInNewTab: H.lb
 				}),
 				ee = e => {
 					const {
@@ -2267,7 +2267,7 @@
 						post: n
 					} = e, {
 						isSponsored: r
-					} = n, a = e.isCommentsPage ? q.SourceElement.PostLink : q.SourceElement.ListingPostLink;
+					} = n, a = e.isCommentsPage ? Q.SourceElement.PostLink : Q.SourceElement.ListingPostLink;
 					if (Object(_.a)()) return null;
 					if (s && n.isNSFW) return null;
 					const i = !t && !e.isCrosspost && e.size !== W.Large && !n.isSponsored && (n.source || n.media && (n.media.type === P.o.GIFVIDEO || n.media.type === P.o.IMAGE || n.media.type === P.o.EMBED));
@@ -2319,7 +2319,7 @@
 					} = this.props, p = s === C.b.Left, f = Object(N.b)(l), {
 						leftFlair: b,
 						rightFlair: h
-					} = Object(H.a)({
+					} = Object(q.a)({
 						flair: f,
 						isFlairPositionedLeft: p,
 						showNSFWSpoilerFlairsOnly: c,
@@ -2807,4 +2807,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.27bdbfc65ae3f3b220bb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent~TopWeekPostsDiscoveryUnit.d65012724b077e9066b1.js.map

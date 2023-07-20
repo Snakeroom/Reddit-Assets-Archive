@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.bd408d0ae336bf0dc180.js
-// Retrieved at 6/27/2023, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.1285b7cf7d4e83e4c8f8.js
+// Retrieved at 7/20/2023, 4:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDetailStickyHeader"], {
 		"./src/reddit/actions/shortcuts/close.ts": function(t, e, s) {
@@ -540,4 +540,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.bd408d0ae336bf0dc180.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.1285b7cf7d4e83e4c8f8.js.map

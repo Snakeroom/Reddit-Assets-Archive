@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.bbf555a0756b43f58d36.js
-// Retrieved at 7/6/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.11c7e4d96d3a13c6ca31.js
+// Retrieved at 7/20/2023, 4:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"], {
 		"./src/lib/name/index.ts": function(e, t, r) {
@@ -2442,7 +2442,7 @@
 							quarantineRequiresEmail: e,
 							quarantineMessage: s.quarantineMessage,
 							quarantineMessageHtml: s.quarantineMessageHtml || "",
-							quarantineMessageRTJson: s.quarantineMessageRTJson || Ge.i
+							quarantineMessageRTJson: s.quarantineMessageRTJson || Ge.j
 						}))
 					} else if (i === $.f.GatedSubreddit) {
 						const {
@@ -7341,10 +7341,10 @@
 							quarantineRequiresEmailOptin: i,
 							...s ? {
 								quarantineMessage: s.markdown,
-								quarantineMessageRTJson: Object(N.h)(s.richtext, a.i)
+								quarantineMessageRTJson: Object(N.h)(s.richtext, a.j)
 							} : {},
 							interstitialWarningMessage: null == o ? void 0 : o.markdown,
-							interstitialWarningMessageRTJson: Object(N.h)(null == o ? void 0 : o.richtext, a.i)
+							interstitialWarningMessageRTJson: Object(N.h)(null == o ? void 0 : o.richtext, a.j)
 						}
 					}
 				}
@@ -11716,4 +11716,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.bbf555a0756b43f58d36.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.11c7e4d96d3a13c6ca31.js.map

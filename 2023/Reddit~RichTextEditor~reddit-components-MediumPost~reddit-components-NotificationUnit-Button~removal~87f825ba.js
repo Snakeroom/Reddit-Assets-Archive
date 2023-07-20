@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.a8a4f3c11d9beba3c994.js
-// Retrieved at 7/6/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.3164c3f30f0e90d173ff.js
+// Retrieved at 7/20/2023, 4:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba"], {
 		"./src/lib/scroll/index.ts": function(e, t, o) {
@@ -541,10 +541,10 @@
 						apiContext: i
 					} = c;
 					const a = e === T.i.RICH_TEXT;
-					if (!t || "object" == typeof t && Object(X.H)(t)) r(Pe({
+					if (!t || "object" == typeof t && Object(X.I)(t)) r(Pe({
 						editorMode: e,
 						draftKey: o,
-						content: a ? X.i : ""
+						content: a ? X.j : ""
 					})), r(Object(u.c)(e));
 					else {
 						r(Object(u.b)(o));
@@ -949,7 +949,7 @@
 					const j = t === d.i.MARKDOWN,
 						x = t === d.i.RICH_TEXT,
 						C = u.k;
-					if (j && Object(l.H)(o)) return r(h({
+					if (j && Object(l.I)(o)) return r(h({
 						editorKey: e,
 						editorMode: d.i.MARKDOWN,
 						content: ""
@@ -957,7 +957,7 @@
 					if (x && !o) return r(h({
 						editorKey: e,
 						editorMode: d.i.RICH_TEXT,
-						content: l.i
+						content: l.j
 					})), void r(f(t));
 					r(p(C));
 					const y = await Object(c.a)(g(), t, j ? JSON.stringify(o) : o);
@@ -2132,4 +2132,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.a8a4f3c11d9beba3c994.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba.3164c3f30f0e90d173ff.js.map

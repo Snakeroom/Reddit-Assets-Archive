@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.7107b1ce0676ab18d9af.js
-// Retrieved at 7/19/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.220bb5de5184f30de357.js
+// Retrieved at 7/20/2023, 4:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -5274,7 +5274,7 @@
 				s = n("./src/reddit/models/Media/index.ts");
 
 			function a(e, t) {
-				return !(e.removedByCategory || !e.thumbnail || !e.thumbnail.url || e.thumbnail.url === r.a.SELF || e.thumbnail.url === r.a.NSFW || e.media && Object(s.G)(e.media) || t)
+				return !(e.removedByCategory || !e.thumbnail || !e.thumbnail.url || e.thumbnail.url === r.a.SELF || e.thumbnail.url === r.a.NSFW || e.media && Object(s.H)(e.media) || t)
 			}
 		},
 		"./src/reddit/helpers/economics/sortBadges.ts": function(e, t, n) {
@@ -16916,7 +16916,7 @@
 							postId: n,
 							richtextContent: r
 						} = t.payload, s = e[n];
-						return s && s.media && Object(Kf.L)(s.media) ? {
+						return s && s.media && Object(Kf.M)(s.media) ? {
 							...e,
 							[n]: {
 								...s,
@@ -25390,4 +25390,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.7107b1ce0676ab18d9af.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.220bb5de5184f30de357.js.map
