@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.220bb5de5184f30de357.js
-// Retrieved at 7/20/2023, 4:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.a5c6c51d385c5406a04f.js
+// Retrieved at 7/20/2023, 5:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -1628,19 +1628,19 @@
 		"./src/reddit/actions/page.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "e", (function() {
-				return D
+				return S
 			})), n.d(t, "a", (function() {
-				return w
+				return T
 			})), n.d(t, "b", (function() {
-				return j
+				return D
 			})), n.d(t, "g", (function() {
-				return C
+				return w
 			})), n.d(t, "d", (function() {
-				return A
+				return j
 			})), n.d(t, "c", (function() {
-				return P
+				return C
 			})), n.d(t, "f", (function() {
-				return R
+				return A
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = n("./node_modules/react-router-redux/es/index.js"),
@@ -1652,51 +1652,49 @@
 				d = n("./src/reddit/actions/platform.ts"),
 				l = n("./src/reddit/endpoints/me/index.ts"),
 				u = n("./src/reddit/helpers/pageActionLoginRedirect.ts"),
-				p = n("./src/reddit/constants/experiments.ts"),
-				f = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const b = Object(f.a)(p.vb);
-			var h = n("./src/reddit/actions/pages/appeal/constants.ts");
-			const m = `${c.a.redditHelpUrl}/en/categories/rules-reporting/account-and-community-restrictions/my-account-was-suspended-or-locked`,
-				y = Object(i.a)(h.b),
-				g = Object(i.a)(h.a),
-				v = async e => {
-					const t = m;
+				p = n("./src/reddit/selectors/experiments/appeals.ts"),
+				f = n("./src/reddit/actions/pages/appeal/constants.ts");
+			const b = `${c.a.redditHelpUrl}/en/categories/rules-reporting/account-and-community-restrictions/my-account-was-suspended-or-locked`,
+				h = Object(i.a)(f.b),
+				m = Object(i.a)(f.a),
+				y = async e => {
+					const t = b;
 					window.location.href = t
 				};
-			var _ = n("./src/reddit/actions/redditEmbed.ts"),
-				E = n("./src/reddit/actions/users.ts"),
-				O = n("./src/reddit/selectors/experiments/econ/index.ts"),
-				I = n("./src/reddit/selectors/user.ts"),
-				S = n("./src/lib/makeListingKey/index.ts"),
-				T = n("./src/lib/matchRoute/index.ts");
-			const D = e => async t => {
-				await t(Object(_.c)(e, !0))
-			}, w = () => async e => {
+			var g = n("./src/reddit/actions/redditEmbed.ts"),
+				v = n("./src/reddit/actions/users.ts"),
+				_ = n("./src/reddit/selectors/experiments/econ/index.ts"),
+				E = n("./src/reddit/selectors/user.ts"),
+				O = n("./src/lib/makeListingKey/index.ts"),
+				I = n("./src/lib/matchRoute/index.ts");
+			const S = e => async t => {
+				await t(Object(g.c)(e, !0))
+			}, T = () => async e => {
 				await e((() => async (e, t, n) => {
 					let {
 						apiContext: r
 					} = n;
 					const s = t(),
 						a = await Object(l.a)(r());
-					a.ok && a.body ? a.body.account ? s.user.account && s.user.account.isFPR ? v(e) : e(y(a.body)) : Object(u.a)(e, s) : e(g(a.error))
+					a.ok && a.body ? a.body.account ? s.user.account && s.user.account.isFPR ? y(e) : e(h(a.body)) : Object(u.a)(e, s) : e(m(a.error))
 				})())
-			}, j = e => async e => {
+			}, D = e => async e => {
 				await e((e => async (e, t, n) => {
 					let {
 						apiContext: s
 					} = n;
 					const a = t(),
-						o = b(a),
+						o = Object(p.a)(a),
 						c = await Object(l.a)(s());
-					c.ok && c.body ? c.body.account ? o ? a.user.account && a.user.account.isFPR ? v(e) : e(y(c.body)) : e(Object(r.c)("/appeals")) : Object(u.a)(e, a) : e(g(c.error))
+					c.ok && c.body ? c.body.account ? o ? a.user.account && a.user.account.isFPR ? y(e) : e(h(c.body)) : e(Object(r.c)("/appeals")) : Object(u.a)(e, a) : e(m(c.error))
 				})())
-			}, C = (e, t, n) => async (o, c, i) => {
+			}, w = (e, t, n) => async (o, c, i) => {
 				let {
 					routes: d
 				} = i;
 				const l = c(),
 					u = (t || l.platform.currentPage).routeMatch.match,
-					p = Object(T.a)(u.url, d);
+					p = Object(I.a)(u.url, d);
 				if (!p) return;
 				const f = e.metaKey || e.ctrlKey || 1 === e.button;
 				if (p.route && p.route.meta && (p.route.meta.name === a.Tb.INDEX || p.route.meta.name === a.Tb.MULTIREDDIT || p.route.meta.name === a.Tb.SUBREDDIT)) f ? window.open(u.url) : n ? o(Object(r.b)(u.url)) : await o(p.route.action(u, !0));
@@ -1707,26 +1705,26 @@
 					if (f) window.open(t);
 					else if (n) o(Object(r.b)(t));
 					else {
-						const n = Object(S.a)(e, a.bb.HOT);
+						const n = Object(O.a)(e, a.bb.HOT);
 						await o(Object(r.b)(t)), o(Object(s.subredditDataRequested)(n, e, {}))
 					}
 				}
-			}, A = () => async (e, t) => {
+			}, j = () => async (e, t) => {
 				const n = t();
-				Object(O.d)(n) ? window.location.replace("https://reddithelp.com/hc/articles/360043034252") : (e(d.n({
+				Object(_.d)(n) ? window.location.replace("https://reddithelp.com/hc/articles/360043034252") : (e(d.n({
 					title: o.b()
-				})), Object(I.S)(n) || await e(E.s()))
-			}, P = () => async (e, t) => {
+				})), Object(E.S)(n) || await e(v.s()))
+			}, C = () => async (e, t) => {
 				const n = t();
-				Object(O.d)(n) ? window.location.replace("https://reddithelp.com/hc/articles/360043034252") : e(d.n({
+				Object(_.d)(n) ? window.location.replace("https://reddithelp.com/hc/articles/360043034252") : e(d.n({
 					title: o.b()
 				}))
-			}, R = e => async (t, r) => {
+			}, A = e => async (t, r) => {
 				const s = r();
 				t(d.n({
 					title: o.k()
-				})), Object(I.S)(s) || await t(E.s());
-				const a = Object(I.S)(s);
+				})), Object(E.S)(s) || await t(v.s());
+				const a = Object(E.S)(s);
 				if (e.queryParams.thanks && a) {
 					const e = await n.e("GoldPurchasePaymentActions").then(n.bind(null, "./src/reddit/actions/goldPurchaseModals/payment.ts")).then(e => e.paymentCompleted),
 						r = await n.e("GoldPurchasePaymentActions").then(n.bind(null, "./src/reddit/actions/goldPurchaseModals/premiumPurchaseModal.ts")).then(e => e.openPremiumPurchaseModal);
@@ -25182,6 +25180,15 @@
 				},
 				y = (e, t) => !!e.emojis.api.list.pending[t]
 		},
+		"./src/reddit/selectors/experiments/appeals.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return a
+			}));
+			var r = n("./src/reddit/constants/experiments.ts"),
+				s = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
+			const a = Object(s.a)(r.vb)
+		},
 		"./src/reddit/selectors/experiments/commentSearchPdp.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -25390,4 +25397,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.220bb5de5184f30de357.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.a5c6c51d385c5406a04f.js.map
