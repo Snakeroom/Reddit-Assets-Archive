@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.5d8a61e9875c49484e40.js
-// Retrieved at 7/20/2023, 4:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.9e05106de1044647795f.js
+// Retrieved at 7/24/2023, 1:20:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/higherOrderComponents/withAdClickLocation/Locations.ts": function(e, t, n) {
@@ -1787,29 +1787,29 @@
 				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/experiments/index.ts");
 			const c = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Vb,
-					experimentEligibilitySelector: i.e
-				}), e => e === o.Z.Enabled),
-				a = Object(r.a)(e => Object(s.c)(e, {
 					experimentName: o.Wb,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.ab.Enabled),
-				d = Object(r.a)(e => Object(s.c)(e, {
+				a = Object(r.a)(e => Object(s.c)(e, {
 					experimentName: o.Xb,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.bb.Enabled),
-				l = Object(r.a)(e => Object(s.c)(e, {
+				d = Object(r.a)(e => Object(s.c)(e, {
 					experimentName: o.Yb,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.cb.Enabled),
-				u = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.ac,
-					experimentEligibilitySelector: i.e
-				}), e => e === o.eb.Enabled),
-				m = Object(r.a)(e => Object(s.c)(e, {
+				l = Object(r.a)(e => Object(s.c)(e, {
 					experimentName: o.Zb,
 					experimentEligibilitySelector: i.e
-				}), e => e === o.db.Enabled)
+				}), e => e === o.db.Enabled),
+				u = Object(r.a)(e => Object(s.c)(e, {
+					experimentName: o.bc,
+					experimentEligibilitySelector: i.e
+				}), e => e === o.fb.Enabled),
+				m = Object(r.a)(e => Object(s.c)(e, {
+					experimentName: o.ac,
+					experimentEligibilitySelector: i.e
+				}), e => e === o.eb.Enabled)
 		},
 		"./src/reddit/selectors/experiments/shredditMigration.ts": function(e, t, n) {
 			"use strict";
@@ -1843,45 +1843,45 @@
 				u = /^\/u(?:ser)?\/[^/]+(\/[^/]+)?\/?$/,
 				m = e => !!e.match(i) || !!e.match(a),
 				b = e => !e.match(a) && (!e.match(c) && (!!e.match(d) || !!e.match(l))),
-				p = (e, t) => !!m(t) && [r.hg.Enabled, r.hg.HardReload].includes(Object(o.c)(e, {
+				p = (e, t) => !!m(t) && [r.ig.Enabled, r.ig.HardReload].includes(Object(o.c)(e, {
 					experimentEligibilitySelector: s.f,
-					experimentName: r.Qf
+					experimentName: r.Rf
 				})),
-				f = (e, t) => !!t.match(c) && [r.hg.Enabled, r.hg.HardReload].includes(Object(o.c)(e, {
-					experimentEligibilitySelector: s.f,
-					experimentName: r.Of
-				})),
-				h = (e, t) => !!b(t) && [r.hg.Enabled, r.hg.HardReload].includes(Object(o.c)(e, {
+				f = (e, t) => !!t.match(c) && [r.ig.Enabled, r.ig.HardReload].includes(Object(o.c)(e, {
 					experimentEligibilitySelector: s.f,
 					experimentName: r.Pf
 				})),
+				h = (e, t) => !!b(t) && [r.ig.Enabled, r.ig.HardReload].includes(Object(o.c)(e, {
+					experimentEligibilitySelector: s.f,
+					experimentName: r.Qf
+				})),
 				_ = (e, t) => !(!b(t) && !m(t)) && Object(o.c)(e, {
 					experimentEligibilitySelector: s.f,
-					experimentName: r.we
-				}) === r.Yd,
+					experimentName: r.xe
+				}) === r.Zd,
 				E = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: s.f,
-						experimentName: r.Nf
+						experimentName: r.Of
 					})
 				},
 				x = (e, t) => !!(e => {
 					return /^(?:\/r\/[^\/]+)?\/search\/?$/i.test(e) || /^\/u(?:ser)?\/[^\/]+\/m\/[^\/]+\/search\/?$/i.test(e)
-				})(t) && (E(e) === r.hg.Enabled || E(e) === r.hg.HardReload),
+				})(t) && (E(e) === r.ig.Enabled || E(e) === r.ig.HardReload),
 				O = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: s.f,
-						experimentName: r.Rf
+						experimentName: r.Sf
 					})
 				},
-				T = (e, t) => !!(e => !!e.match(u))(t) && (O(e) === r.hg.Enabled || O(e) === r.hg.HardReload),
+				T = (e, t) => !!(e => !!e.match(u))(t) && (O(e) === r.ig.Enabled || O(e) === r.ig.HardReload),
 				S = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: r.Uf
+						experimentName: r.Vf
 					})
 				},
-				j = (e, t) => !!(e => !!e.match(u))(t) && S(e) === r.hg.Enabled
+				j = (e, t) => !!(e => !!e.match(u))(t) && S(e) === r.ig.Enabled
 		},
 		"./src/reddit/selectors/experiments/shredditParity.ts": function(e, t, n) {
 			"use strict";
@@ -1926,4 +1926,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.5d8a61e9875c49484e40.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.9e05106de1044647795f.js.map

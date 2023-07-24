@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.3daa94c394c14e43b03a.js
-// Retrieved at 7/19/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.98d9f2e3414c5fa2bc12.js
+// Retrieved at 7/24/2023, 1:20:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -8916,13 +8916,13 @@
 				oe = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const ae = Object(l.a)(e => Object(oe.c)(e, {
 				experimentEligibilitySelector: I.S,
-				experimentName: se.N
-			}), e => e === se.W.Enabled);
+				experimentName: se.O
+			}), e => e === se.X.Enabled);
 			var re = n("./src/reddit/selectors/meta.ts");
 			const ie = Object(l.a)(e => Object(oe.c)(e, {
-				experimentName: se.rb,
+				experimentName: se.sb,
 				experimentEligibilitySelector: oe.a
-			}), e => e !== se.Yd);
+			}), e => e !== se.Zd);
 			var le = n("./src/reddit/components/Settings/AccountPrefsSection/index.m.less"),
 				ce = n.n(le);
 			const de = Object(l.c)({
@@ -10743,8 +10743,8 @@
 				oo = n("./src/reddit/selectors/experiments/antievil/index.tsx");
 			const ao = Object(l.a)(e => Object(oe.c)(e, {
 				experimentEligibilitySelector: I.S,
-				experimentName: se.K
-			}), e => e === se.T.Enabled);
+				experimentName: se.L
+			}), e => e === se.U.Enabled);
 			var ro = n("./src/lib/hooks/usePrevious.ts"),
 				io = n("./src/reddit/actions/subreddit/muting.ts"),
 				lo = n("./src/telemetry/models/Event.ts");
@@ -11993,9 +11993,9 @@
 					},
 					isDspEnabled: e => {
 						return Object(oe.c)(e, {
-							experimentName: se.zd,
+							experimentName: se.Ad,
 							experimentEligibilitySelector: oe.a
-						}) === se.Yd
+						}) === se.Zd
 					}
 				}),
 				gr = Object(ve.v)(),
@@ -12536,7 +12536,7 @@
 			const r = e => Object(o.c)(e, {
 				experimentName: s.x,
 				experimentEligibilitySelector: () => Object(a.R)(e)
-			}) === s.Yd
+			}) === s.Zd
 		},
 		"./src/reddit/selectors/gold/powerups/benefitSettings.ts": function(e, t, n) {
 			"use strict";
@@ -12777,4 +12777,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.3daa94c394c14e43b03a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.98d9f2e3414c5fa2bc12.js.map

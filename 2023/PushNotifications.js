@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PushNotifications.9eee509ef387ef43e27d.js
-// Retrieved at 7/6/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PushNotifications.e5664e1da5798a5cffd5.js
+// Retrieved at 7/24/2023, 1:20:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -98,20 +98,20 @@
 				S = i("./src/reddit/selectors/user.ts");
 			const N = e => Object(w.c)(e, {
 				experimentEligibilitySelector: S.S,
-				experimentName: y.Gb
-			}) === y.Yd;
+				experimentName: y.Hb
+			}) === y.Zd;
 			var F = i("./src/reddit/selectors/experiments/delayDnPermission.ts"),
 				x = i("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts");
-			const G = e => Object(w.c)(e, {
-				experimentName: y.ic,
+			const q = e => Object(w.c)(e, {
+				experimentName: y.jc,
 				experimentEligibilitySelector: w.a
-			}) === y.Yd;
-			var q = i("./src/reddit/selectors/meta.ts");
-			let C = !1;
+			}) === y.Zd;
+			var C = i("./src/reddit/selectors/meta.ts");
+			let G = !1;
 			const W = async (e, t) => {
 				const i = Object(S.R)(e);
-				if (C) return;
-				if (C = !0, Object(f.a)(e) !== d.d.NotificationsSupported) return;
+				if (G) return;
+				if (G = !0, Object(f.a)(e) !== d.d.NotificationsSupported) return;
 				await Object(u.a)();
 				navigator.serviceWorker.addEventListener("message", n => {
 					const s = n.data,
@@ -134,8 +134,8 @@
 				let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : () => {};
 				return async (n, s, r) => {
 					const c = s(),
-						u = Object(q.f)(c),
-						l = G(c),
+						u = Object(C.f)(c),
+						l = q(c),
 						b = !!Object(k.a)(c),
 						f = Object(F.a)(c),
 						p = Object(x.e)(c),
@@ -400,4 +400,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.9eee509ef387ef43e27d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.e5664e1da5798a5cffd5.js.map

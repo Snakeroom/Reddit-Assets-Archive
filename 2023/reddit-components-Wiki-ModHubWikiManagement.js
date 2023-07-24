@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.c098d5713a53b8d9344c.js
-// Retrieved at 7/6/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.a166322aa39b70045a0b.js
+// Retrieved at 7/24/2023, 1:20:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Wiki-ModHubWikiManagement"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -3098,8 +3098,8 @@
 					wikiPage: w.c,
 					isInShredditAutomodInsightsExperiment: e => (e => Object(W.c)(e, {
 						experimentEligibilitySelector: B.S,
-						experimentName: j.Mf
-					}) === j.Yd)(e)
+						experimentName: j.Nf
+					}) === j.Zd)(e)
 				}),
 				U = Object(r.b)(I, e => ({
 					onCopyPageUrl: t => e((e => async t => {
@@ -3483,4 +3483,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.c098d5713a53b8d9344c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.a166322aa39b70045a0b.js.map

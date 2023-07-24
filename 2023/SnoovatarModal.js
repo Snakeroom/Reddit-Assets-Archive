@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SnoovatarModal.f67505a26aa87dba20ff.js
-// Retrieved at 7/19/2023, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SnoovatarModal.7f32e1468cba3f0a1c94.js
+// Retrieved at 7/24/2023, 1:20:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SnoovatarModal"], {
 		"./src/reddit/components/AvatarBuilder/index.m.less": function(e, t, r) {
@@ -65,15 +65,15 @@
 					activeDetails: h,
 					activeTab: k,
 					activeMeSubpage: N,
-					shopTabState: I
-				} = r, R = Object(n.useMemo)(() => ({
+					shopTabState: R
+				} = r, C = Object(n.useMemo)(() => ({
 					activeTab: k || void 0,
 					activeMeSubpage: N || void 0,
 					activeDetails: h || void 0,
-					shopTabState: I || void 0
-				}), [h, k, N, I]), C = Object(o.e)(e => !Object(O.S)(e) && Object(m.x)(e));
+					shopTabState: R || void 0
+				}), [h, k, N, R]), I = Object(o.e)(e => !Object(O.S)(e) && Object(m.x)(e));
 				if (!j || !f) return null;
-				if (C) return a.a.createElement("div", {
+				if (I) return a.a.createElement("div", {
 					className: Object(c.a)(x.a.container, {
 						[x.a.containerExp]: M
 					})
@@ -97,7 +97,7 @@
 						[x.a.containerExp]: M
 					})
 				}, a.a.createElement(s.a, _({}, T, {
-					navState: R,
+					navState: C,
 					isModal: t
 				}), a.a.createElement(s.b, {
 					isModal: t,
@@ -231,10 +231,10 @@
 			const o = e => {
 					return !(Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: s.Ke
-					}) === s.Yd)
+						experimentName: s.Le
+					}) === s.Zd)
 				},
-				c = Object(a.a)(s.Le)
+				c = Object(a.a)(s.Me)
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, r) {
 			"use strict";
@@ -243,9 +243,9 @@
 			}));
 			var s = r("./src/reddit/constants/experiments.ts"),
 				n = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(n.a)(s.Id)
+			const a = Object(n.a)(s.Jd)
 		},
 		"ignored /drone/src/node_modules/qs/node_modules/object-inspect ./util.inspect": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.f67505a26aa87dba20ff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.7f32e1468cba3f0a1c94.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.4e2a8f643d7cd9fb4e6e.js
-// Retrieved at 7/20/2023, 4:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.c4fb197353f76e15af0c.js
+// Retrieved at 7/24/2023, 1:20:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./src/lib/LiveChatActiveUsers/index.m.less": function(e, t, s) {
@@ -270,8 +270,8 @@
 				G = s("./src/reddit/helpers/hasModFullPermissions/index.ts"),
 				J = s("./src/reddit/helpers/hasModPostPermissions/index.ts"),
 				z = s("./src/reddit/helpers/search/renderMedia.tsx"),
-				q = s("./src/reddit/helpers/styles/mixins/index.tsx"),
-				Z = s("./src/reddit/helpers/trackers/creatorStats.ts"),
+				Z = s("./src/reddit/helpers/styles/mixins/index.tsx"),
+				q = s("./src/reddit/helpers/trackers/creatorStats.ts"),
 				Y = s("./src/reddit/helpers/styles/mixins/index.m.less"),
 				Q = s.n(Y),
 				X = s("./src/reddit/models/Post/index.ts"),
@@ -355,10 +355,10 @@
 					},
 					Ge = Object(r.t)(Ce, ce),
 					[Je, ze] = Object(o.useState)(!1),
-					qe = Object(o.useCallback)(() => {
-						ze(!Je), Le(Object(Z.d)(ve))
+					Ze = Object(o.useCallback)(() => {
+						ze(!Je), Le(Object(q.d)(ve))
 					}, [Je, ve, Le]);
-				let Ze = n.a.createElement(U.a, {
+				let qe = n.a.createElement(U.a, {
 					className: se.a.classicThumbnail,
 					crosspost: Te && Ce,
 					isMeta: Ce.isMeta,
@@ -366,16 +366,16 @@
 					redditStyle: fe,
 					templatePlaceholderImage: Me && Me.postPlaceholderImage
 				});
-				Object(B.b)(Ce) ? Ze = n.a.createElement(g, null) : Object(W.G)(Ce) && (Ze = n.a.createElement(x, null));
+				Object(B.b)(Ce) ? qe = n.a.createElement(g, null) : Object(W.G)(Ce) && (qe = n.a.createElement(x, null));
 				const Ye = Object(X.r)(Ce);
 				return n.a.createElement(M.b, {
-					className: Object(i.a)(Q.a.classicPostStyles, se.a.postContainer, Object(q.a)(e), {
+					className: Object(i.a)(Q.a.classicPostStyles, se.a.postContainer, Object(Z.a)(e), {
 						[se.a.shouldShowOverflow]: je
 					}, t),
 					isOverlay: de,
 					style: {
-						...Object(q.d)(e),
-						...Object(q.b)(Me)
+						...Object(Z.d)(e),
+						...Object(Z.b)(Me)
 					},
 					post: Ce,
 					onClick: pe,
@@ -400,7 +400,7 @@
 					className: se.a.mainBody
 				}, n.a.createElement("div", {
 					className: Ve ? se.a.expandoContainer : se.a.thumbnailContainer
-				}, !Ve && Ze, n.a.createElement(P.a, {
+				}, !Ve && qe, n.a.createElement(P.a, {
 					crosspost: Te,
 					className: se.a.rightExpando,
 					isExpanded: !!C,
@@ -472,7 +472,7 @@
 					hostPostData: Y,
 					isOverlay: !!de,
 					modModeEnabled: me,
-					onClickInsightsButton: qe,
+					onClickInsightsButton: Ze,
 					onIgnoreReports: ue,
 					onOpenReportsDropdown: he,
 					post: Ce,
@@ -690,8 +690,8 @@
 				G = s("./src/reddit/helpers/hasModPostPermissions/index.ts"),
 				J = s("./src/reddit/helpers/overlay/index.ts"),
 				z = s("./src/reddit/helpers/trackers/lightbox.ts"),
-				q = s("./src/reddit/models/PostDraft/index.ts"),
-				Z = s("./src/reddit/models/Comment/index.ts"),
+				Z = s("./src/reddit/models/PostDraft/index.ts"),
+				q = s("./src/reddit/models/Comment/index.ts"),
 				Y = s("./src/reddit/selectors/activeModalId.ts"),
 				Q = s("./src/reddit/selectors/comments.ts"),
 				X = s("./src/reddit/selectors/experiments/reportingRevampDesktop.ts"),
@@ -906,7 +906,7 @@
 						postIsLocked: l,
 						subreddit: m,
 						toggleDeleteCommentModal: p
-					} = this.props, u = Object(G.a)(c), h = !!r && r.displayText === e.author, b = (!l && !e.isLocked || u && a) && !Object(Z.g)(e), x = r && e.isGildable && !Object(Z.g)(e);
+					} = this.props, u = Object(G.a)(c), h = !!r && r.displayText === e.author, b = (!l && !e.isLocked || u && a) && !Object(q.g)(e), x = r && e.isGildable && !Object(q.g)(e);
 					return n.a.createElement("div", {
 						className: s
 					}, n.a.createElement(we, null, b && n.a.createElement(Ie, {
@@ -1013,7 +1013,7 @@
 							const o = Object(P.a)(s.postId, s.id, {}),
 								n = {
 									commentId: s.id,
-									draftKey: Object(j.a)(q.c.edit, s.id),
+									draftKey: Object(j.a)(Z.c.edit, s.id),
 									text: s.bodyMD || "",
 									commentMode: s.media && s.media.rteMode,
 									commentsPageKey: o
@@ -2060,8 +2060,8 @@
 				b = s("./node_modules/reselect/es/index.js");
 			const x = Object(b.a)(e => Object(h.c)(e, {
 				experimentEligibilitySelector: h.a,
-				experimentName: u.Ec
-			}), e => e === u.Yd);
+				experimentName: u.Fc
+			}), e => e === u.Zd);
 			var C = s("./node_modules/fbt/lib/FbtPublic.js"),
 				v = s("./src/lib/classNames/index.ts"),
 				f = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
@@ -2165,8 +2165,8 @@
 					isNSFW: !1
 				})))
 			};
-			var q = s("./src/reddit/components/PromotedUserPostsAd/PromotedUserPost/index.m.less"),
-				Z = s.n(q);
+			var Z = s("./src/reddit/components/PromotedUserPostsAd/PromotedUserPost/index.m.less"),
+				q = s.n(Z);
 			const Y = Object(I.a)(null);
 			var Q = Object(k.b)(Y(e => {
 					let {
@@ -2180,7 +2180,7 @@
 						"data-testid": `promoted-user-post-${t.id}`,
 						to: i ? Object(L.b)(t.permalink) : Object(w.a)(t.permalink, !1, r)
 					}, n.a.createElement("div", {
-						className: Z.a.container
+						className: q.a.container
 					}, n.a.createElement(F, {
 						post: t
 					}), n.a.createElement(z, {
@@ -3064,8 +3064,8 @@
 				G = s("./src/reddit/actions/comment/list.ts"),
 				J = s("./src/reddit/actions/post.ts"),
 				z = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				q = s("./src/reddit/helpers/postComponentForLayout/index.tsx"),
-				Z = s("./src/reddit/helpers/trackers/post.ts"),
+				Z = s("./src/reddit/helpers/postComponentForLayout/index.tsx"),
+				q = s("./src/reddit/helpers/trackers/post.ts"),
 				Y = s("./src/reddit/featureFlags/index.ts"),
 				Q = s("./src/reddit/selectors/comments.ts"),
 				X = s("./src/reddit/selectors/posts.ts"),
@@ -3124,8 +3124,8 @@
 					...e,
 					...t,
 					...s,
-					postClickEventFactory: (e, t) => Object(Z.n)(e, t),
-					postComponentForLayout: q.b
+					postClickEventFactory: (e, t) => Object(q.n)(e, t),
+					postComponentForLayout: Z.b
 				}));
 
 			function ae() {
@@ -3316,4 +3316,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.4e2a8f643d7cd9fb4e6e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.c4fb197353f76e15af0c.js.map

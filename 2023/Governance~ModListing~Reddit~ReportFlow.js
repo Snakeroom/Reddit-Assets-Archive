@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow.565401d8d4be31d40b0e.js
-// Retrieved at 7/24/2023, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow.12e8315fbb38d901e17e.js
+// Retrieved at 7/24/2023, 1:20:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow"], {
 		"./src/lib/assertNever.ts": function(t, e, i) {
@@ -813,15 +813,15 @@
 				b = i("./src/reddit/selectors/postFlair.ts"),
 				S = i("./src/reddit/selectors/subreddit.ts"),
 				E = i("./src/reddit/actions/postFlairStyleTemplates/constants.ts");
-			const h = Object(d.a)(E.c),
-				g = Object(d.a)(E.b),
+			const g = Object(d.a)(E.c),
+				h = Object(d.a)(E.b),
 				y = Object(d.a)(E.a);
 			var D = i("./src/reddit/actions/toaster.ts"),
 				I = i("./src/reddit/actions/widgets/index.ts"),
 				O = i("./src/reddit/constants/modals.ts"),
 				T = i("./src/reddit/helpers/getGenericUploadError.ts"),
-				w = i("./src/reddit/helpers/graphql/normalizeSubredditStylesFromGql/index.ts"),
-				k = i("./src/reddit/helpers/media/index.ts"),
+				k = i("./src/reddit/helpers/graphql/normalizeSubredditStylesFromGql/index.ts"),
+				w = i("./src/reddit/helpers/media/index.ts"),
 				j = i("./src/reddit/models/Image/index.tsx"),
 				v = i("./src/reddit/models/StructuredStyles/index.ts"),
 				x = i("./src/reddit/models/Toast/index.ts"),
@@ -858,21 +858,21 @@
 					r(Object(u.h)(n));
 					const b = Object(N.i)(i)(c);
 					let E = null,
-						h = null;
+						g = null;
 					try {
-						(E = await Object(_.f)(o(), j.a.StructuredStyles)) && (h = Object(_.m)(E)(r, o, s))
+						(E = await Object(_.f)(o(), j.a.StructuredStyles)) && (g = Object(_.m)(E)(r, o, s))
 					} catch (O) {
 						const t = Object(T.a)("webSocket");
 						return void r(Object(u.f)(n, t))
 					}
-					const g = Object(S.X)(c, {
+					const h = Object(S.X)(c, {
 							subredditId: t
 						}).name,
-						y = await p.e(l(), g, d),
+						y = await p.e(l(), h, d),
 						I = {};
 					if (y.ok) {
-						if (h) try {
-							await h
+						if (g) try {
+							await g
 						} catch (O) {}
 						const i = Object(C.f)(o(), {
 							apiRequestId: n
@@ -901,11 +901,11 @@
 							success: y.ok
 						}
 					})
-				}, q = Object(d.a)(A.l), W = Object(d.a)(A.k), K = Object(d.a)(A.j), z = t => async (e, i, n) => {
+				}, W = Object(d.a)(A.l), q = Object(d.a)(A.k), K = Object(d.a)(A.j), z = t => async (e, i, n) => {
 					let {
 						apiContext: r
 					} = n;
-					e(q({
+					e(W({
 						subredditId: t
 					}));
 					const o = Object(S.X)(i(), {
@@ -915,7 +915,7 @@
 					if (s.ok) {
 						const n = i().structuredStyles.models[t],
 							r = n ? n.mobileKeyColor : null;
-						e(W({
+						e(q({
 							subredditId: t,
 							styles: {
 								mobileKeyColor: r
@@ -947,7 +947,7 @@
 							}),
 							c = l && l.templateIds;
 						if (!c || !c.length) return;
-						e(h({
+						e(g({
 							subredditId: t
 						}));
 						const a = await Object(p.a)(r(), s.name, c);
@@ -960,7 +960,7 @@
 								if (t && t.subreddit)
 									for (const e of t.subreddit.postFlairStyleTemplates) i[e.id] = Object(m.a)(e)
 							}
-							e(g({
+							e(h({
 								subredditId: t,
 								templates: i
 							}))
@@ -996,7 +996,7 @@
 						imageKey: t,
 						uploadId: e.id
 					})), n(Object(_.k)(e));
-					const a = await p.d(o.apiContext(), c, e.file.name, t, await Object(k.h)(e.file));
+					const a = await p.d(o.apiContext(), c, e.file.name, t, await Object(w.h)(e.file));
 					try {
 						const i = await Object(_.g)(r(), a, e, j.a.StructuredStyles);
 						if (i) {
@@ -1085,7 +1085,7 @@
 							const {
 								data: t
 							} = c.body;
-							t && t.subreddit && t.subreddit.styles && (e = Object(w.a)(t.subreddit.styles))
+							t && t.subreddit && t.subreddit.styles && (e = Object(k.a)(t.subreddit.styles))
 						}
 						i(ct({
 							subredditId: t,
@@ -1132,9 +1132,9 @@
 			})), i.d(e, "k", (function() {
 				return E
 			})), i.d(e, "B", (function() {
-				return h
-			})), i.d(e, "A", (function() {
 				return g
+			})), i.d(e, "A", (function() {
+				return h
 			})), i.d(e, "C", (function() {
 				return y
 			})), i.d(e, "D", (function() {
@@ -1146,9 +1146,9 @@
 			})), i.d(e, "d", (function() {
 				return T
 			})), i.d(e, "y", (function() {
-				return w
-			})), i.d(e, "z", (function() {
 				return k
+			})), i.d(e, "z", (function() {
+				return w
 			})), i.d(e, "x", (function() {
 				return j
 			})), i.d(e, "j", (function() {
@@ -1182,15 +1182,15 @@
 				b = "SUBREDDIT__ONBOARDING_SUBREDDITS_PENDING",
 				S = "SUBREDDIT__ONBOARDING_SUBREDDITS_LOADED",
 				E = "SUBREDDIT__ONBOARDING_SUBREDDITS_FAILED",
-				h = "SUBREDDIT__EDIT_REQUESTED",
-				g = "SUBREDDIT__EDIT_FAILED",
+				g = "SUBREDDIT__EDIT_REQUESTED",
+				h = "SUBREDDIT__EDIT_FAILED",
 				y = "SUBREDDIT__EDIT_SUCCESS",
 				D = "SUBREDDIT_QUESTIONS_LOADED",
 				I = "SUBREDDIT_SURVEY_ANSWERED",
 				O = "SUBREDDIT_SURVEY_DISMISSED",
 				T = "SUBREDDIT_SURVEY_DISMISS",
-				w = "SUBREDDIT_ABOUT_INFO_UPDATE__PENDING",
-				k = "SUBREDDIT_ABOUT_INFO_UPDATE__SUCCESS",
+				k = "SUBREDDIT_ABOUT_INFO_UPDATE__PENDING",
+				w = "SUBREDDIT_ABOUT_INFO_UPDATE__SUCCESS",
 				j = "SUBREDDIT_ABOUT_INFO_UPDATE__FAILED",
 				v = "MUTE_SUBREDDIT__SUCCESS",
 				x = "UNMUTE_SUBREDDIT_SUCCESS",
@@ -1238,7 +1238,7 @@
 			})), i.d(e, "e", (function() {
 				return T
 			})), i.d(e, "d", (function() {
-				return k
+				return w
 			})), i.d(e, "h", (function() {
 				return v
 			})), i.d(e, "a", (function() {
@@ -1273,8 +1273,8 @@
 				b = i("./src/reddit/models/Widgets/index.ts"),
 				S = i("./src/reddit/selectors/subreddit.ts"),
 				E = i("./src/reddit/helpers/widgets/index.tsx"),
-				h = i("./src/reddit/models/Image/index.tsx"),
-				g = i("./src/reddit/models/Toast/index.ts"),
+				g = i("./src/reddit/models/Image/index.tsx"),
+				h = i("./src/reddit/models/Toast/index.ts"),
 				y = i("./src/reddit/actions/widgets/constants.ts");
 			const D = Object(r.a)(y.g),
 				I = (t, e, i) => async (r, _, p) => {
@@ -1290,29 +1290,29 @@
 					let O = null,
 						T = null;
 					try {
-						(O = await Object(s.f)(b, h.a.Widgets)) && (T = Object(s.m)(O)(r, _, p))
-					} catch (k) {
+						(O = await Object(s.f)(b, g.a.Widgets)) && (T = Object(s.m)(O)(r, _, p))
+					} catch (w) {
 						const t = Object(f.a)("webSocket");
 						return void r(Object(o.f)(i, t))
 					}
-					const w = await (async (t, e, i) => Object(a.a)(Object(d.a)(t, [u.a]), {
+					const k = await (async (t, e, i) => Object(a.a)(Object(d.a)(t, [u.a]), {
 						endpoint: `${t.apiUrl}/r/${e}/api/widget`,
 						method: c.ob.POST,
 						type: "json",
 						data: i
 					}))(m(), y, I);
-					if (w.ok) {
-						let s = w.body;
+					if (k.ok) {
+						let s = k.body;
 						const c = s.id;
 						if ("calendar" === e.kind && r(Object(l.f)({
-								kind: g.b.SuccessMod,
+								kind: h.b.SuccessMod,
 								text: n.fbt._("New calendar added! It may take a few minutes to see your events appear", null, {
 									hk: "4iETrT"
 								})
 							})), O) {
 							try {
 								await T
-							} catch (k) {}
+							} catch (w) {}
 							s = await r(P(t, c)) || s
 						}
 						r(D({
@@ -1320,7 +1320,7 @@
 							widget: s,
 							widgetId: c
 						})), r(Object(o.e)(i))
-					} else O && O.websocket.close(), r(Object(o.f)(i, w.error))
+					} else O && O.websocket.close(), r(Object(o.f)(i, k.error))
 				}, O = Object(r.a)(y.i), T = (t, e, i) => async (r, _, p) => {
 					const {
 						apiContext: y
@@ -1331,11 +1331,11 @@
 						T = Object(S.X)(I, {
 							subredditId: t
 						}).name,
-						w = Object(E.e)(e);
-					let k = null,
+						k = Object(E.e)(e);
+					let w = null,
 						j = null;
 					try {
-						(k = await Object(s.f)(I, h.a.Widgets)) && (j = Object(s.m)(k)(r, _, p))
+						(w = await Object(s.f)(I, g.a.Widgets)) && (j = Object(s.m)(w)(r, _, p))
 					} catch (x) {
 						const t = Object(f.a)("webSocket");
 						return void r(Object(o.f)(i, t))
@@ -1345,7 +1345,7 @@
 						method: c.ob.PUT,
 						type: "json",
 						data: i
-					}))(y(), T, w);
+					}))(y(), T, k);
 					if (v.ok) {
 						let s = function(t, e, i) {
 							switch (t.kind) {
@@ -1396,13 +1396,13 @@
 							widgetId: D,
 							widget: s
 						})), "calendar" === e.kind && r(Object(l.f)({
-							kind: g.b.SuccessMod,
+							kind: h.b.SuccessMod,
 							text: n.fbt._("Calendar is updated! It may take a few minutes to see your events change", null, {
 								hk: "10XWV"
 							})
 						})), r(Object(o.e)(i))
-					} else k && k.websocket.close(), r(Object(o.f)(i, v.error))
-				}, w = Object(r.a)(y.h), k = (t, e, i) => async (n, r, s) => {
+					} else w && w.websocket.close(), r(Object(o.f)(i, v.error))
+				}, k = Object(r.a)(y.h), w = (t, e, i) => async (n, r, s) => {
 					let {
 						apiContext: l
 					} = s;
@@ -1416,7 +1416,7 @@
 							method: c.ob.DELETE,
 							type: "json"
 						}))(l(), f, e);
-					p.ok ? (n(Object(o.e)(i)), n(w({
+					p.ok ? (n(Object(o.e)(i)), n(k({
 						subredditId: t,
 						widgetId: _
 					}))) : n(Object(o.f)(i, p.error))
@@ -1457,7 +1457,7 @@
 						}))(n.apiContext(), l, e.file.name, await Object(p.h)(e.file));
 						let f = !1;
 						try {
-							const n = await Object(s.g)(i(), _, e, h.a.Widgets);
+							const n = await Object(s.g)(i(), _, e, g.a.Widgets);
 							n && (t(Object(s.j)(n)), f = !0)
 						} catch (m) {
 							if (m instanceof Error) throw m;
@@ -1693,9 +1693,9 @@
 			})), i.d(e, "a", (function() {
 				return m
 			})), i.d(e, "m", (function() {
-				return h
-			})), i.d(e, "n", (function() {
 				return g
+			})), i.d(e, "n", (function() {
+				return h
 			})), i.d(e, "l", (function() {
 				return y
 			})), i.d(e, "p", (function() {
@@ -1707,9 +1707,9 @@
 			})), i.d(e, "s", (function() {
 				return T
 			})), i.d(e, "r", (function() {
-				return w
-			})), i.d(e, "f", (function() {
 				return k
+			})), i.d(e, "f", (function() {
+				return w
 			})), i.d(e, "g", (function() {
 				return j
 			})), i.d(e, "k", (function() {
@@ -1762,15 +1762,15 @@
 						iconPosition: s = f.C,
 						isFullWidth: l = !1,
 						isSquare: m = !1,
-						children: h,
-						className: g,
+						children: g,
+						className: h,
 						kind: y = p.Button,
 						priority: D = _.Primary,
 						redditStyle: I,
 						rplStyle: O,
 						size: T = u.S,
-						text: w,
-						textClassName: k,
+						text: k,
+						textClassName: w,
 						...j
 					} = t, v = (t => {
 						let {
@@ -1793,8 +1793,8 @@
 							[c.a.rplStyle]: n
 						})
 					})({
-						baseClassName: g,
-						children: h,
+						baseClassName: h,
+						children: g,
 						dataRedditStyle: e,
 						Icon: i,
 						isFullWidth: l,
@@ -1803,7 +1803,7 @@
 						redditStyle: I,
 						rplStyle: O,
 						size: T,
-						text: w
+						text: k
 					}), x = (t => {
 						let {
 							children: e,
@@ -1828,13 +1828,13 @@
 							isFilled: a === _.Primary
 						}))
 					})({
-						children: h,
-						text: w,
+						children: g,
+						text: k,
 						Icon: i,
 						iconClassName: n,
 						iconPosition: s,
 						priority: D,
-						textClassName: k
+						textClassName: w
 					});
 					return y === p.InternalLink && (t => "to" in t)(j) ? r.a.createElement(b, a({}, d, j, {
 						className: v
@@ -1847,11 +1847,11 @@
 				b = t => r.a.createElement(s.default, t),
 				S = t => r.a.createElement("a", t),
 				E = t => r.a.createElement("button", t),
-				h = t => r.a.createElement(m, a({
+				g = t => r.a.createElement(m, a({
 					kind: p.ExternalLink,
 					priority: _.Primary
 				}, t)),
-				g = t => r.a.createElement(m, a({
+				h = t => r.a.createElement(m, a({
 					kind: p.InternalLink,
 					priority: _.Primary
 				}, t)),
@@ -1875,11 +1875,11 @@
 					kind: p.InternalLink,
 					priority: _.Plain
 				}, t)),
-				w = t => r.a.createElement(m, a({
+				k = t => r.a.createElement(m, a({
 					kind: p.Button,
 					priority: _.Plain
 				}, t)),
-				k = t => {
+				w = t => {
 					let {
 						className: e,
 						...i
@@ -2275,7 +2275,7 @@
 		"./src/reddit/helpers/trackers/postComposer.ts": function(t, e, i) {
 			"use strict";
 			i.d(e, "a", (function() {
-				return g
+				return h
 			})), i.d(e, "e", (function() {
 				return y
 			})), i.d(e, "L", (function() {
@@ -2287,9 +2287,9 @@
 			})), i.d(e, "z", (function() {
 				return T
 			})), i.d(e, "A", (function() {
-				return w
-			})), i.d(e, "N", (function() {
 				return k
+			})), i.d(e, "N", (function() {
+				return w
 			})), i.d(e, "C", (function() {
 				return j
 			})), i.d(e, "m", (function() {
@@ -2313,7 +2313,7 @@
 			})), i.d(e, "f", (function() {
 				return F
 			})), i.d(e, "r", (function() {
-				return q
+				return W
 			})), i.d(e, "B", (function() {
 				return K
 			})), i.d(e, "j", (function() {
@@ -2386,10 +2386,10 @@
 					screen: _.db(t),
 					correlationId: Object(r.c)(r.a.PostComposer)
 				}),
-				h = (t, e) => "self" !== e ? {} : {
+				g = (t, e) => "self" !== e ? {} : {
 					editorMode: t.user.prefs.editorMode === s.i.MARKDOWN ? "markdown" : "rte"
 				},
-				g = t => {
+				h = t => {
 					Object(p.a)({
 						noun: "cancel",
 						...E(t)
@@ -2424,11 +2424,11 @@
 					noun: "add_option",
 					...E(t)
 				}),
-				w = () => t => ({
+				k = () => t => ({
 					noun: "voting_length",
 					...E(t)
 				}),
-				k = (t, e, i) => {
+				w = (t, e, i) => {
 					"image_upload" === e || "video_upload" === e ? Object(p.a)({
 						noun: e,
 						...E(t)
@@ -2447,7 +2447,7 @@
 						subreddit: _.mb(t),
 						postComposer: {
 							type: e,
-							...h(t, e)
+							...g(t, e)
 						},
 						post: i ? _.L(t, i) : null,
 						...E(t),
@@ -2468,7 +2468,7 @@
 						subreddit: _.mb(t),
 						postComposer: {
 							type: e,
-							...h(t, e)
+							...g(t, e)
 						},
 						...E(t)
 					})
@@ -2557,7 +2557,7 @@
 						}
 					}
 				},
-				q = (t, e) => {
+				W = (t, e) => {
 					const {
 						draftId: i,
 						destSubreddit: n
@@ -2593,7 +2593,7 @@
 						...M(t, n.id)
 					}
 				},
-				W = (t, e) => {
+				q = (t, e) => {
 					const i = Object(f.m)(t),
 						n = {
 							authorId: i ? i.id : void 0,
@@ -2636,14 +2636,14 @@
 					Object(p.a)({
 						noun: "draft_load",
 						...E(t),
-						...q(t, e)
+						...W(t, e)
 					})
 				},
 				Y = (t, e, i) => {
 					Object(p.a)({
 						noun: e.draftId ? "draft_update" : "draft_create",
 						...E(t),
-						...q(t, e),
+						...W(t, e),
 						...G(t, i)
 					})
 				},
@@ -2651,7 +2651,7 @@
 					Object(p.a)({
 						noun: "draft_delete",
 						...E(t),
-						...W(t, e)
+						...q(t, e)
 					})
 				},
 				H = t => {
@@ -2671,7 +2671,7 @@
 				Q = (t, e, i) => {
 					Object(p.a)({
 						...E(t),
-						...q(t, e),
+						...W(t, e),
 						noun: "draft_share",
 						action: i ? n.c.ENABLE : n.c.DISABLE
 					})
@@ -2880,9 +2880,9 @@
 			const d = t => {
 					return Object(r.c)(t, {
 						experimentEligibilitySelector: r.a,
-						experimentName: n.L,
+						experimentName: n.M,
 						expEventOverride: !1
-					}) === n.U.Enabled
+					}) === n.V.Enabled
 				},
 				u = (t, e) => {
 					let {
@@ -2941,9 +2941,9 @@
 			})), i.d(e, "f", (function() {
 				return E
 			})), i.d(e, "d", (function() {
-				return h
-			})), i.d(e, "c", (function() {
 				return g
+			})), i.d(e, "c", (function() {
+				return h
 			})), i.d(e, "e", (function() {
 				return y
 			})), i.d(e, "l", (function() {
@@ -2965,42 +2965,42 @@
 				_ = t => {
 					return Object(s.c)(t, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.hf
-					}) === o.jf.ContentMatch
+						experimentName: o.if
+					}) === o.kf.ContentMatch
 				},
 				f = t => {
 					return Object(s.c)(t, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.hf
-					}) === o.jf.ConfidenceAndSuccess
+						experimentName: o.if
+					}) === o.kf.ConfidenceAndSuccess
 				},
 				p = t => {
 					const e = Object(s.c)(t, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.hf
+						experimentName: o.if
 					});
-					return e === o.jf.ContentMatch || e === o.jf.ConfidenceAndSuccess || e === o.V.Control1 || e === o.V.Control2
+					return e === o.kf.ContentMatch || e === o.kf.ConfidenceAndSuccess || e === o.W.Control1 || e === o.W.Control2
 				},
 				m = t => {
 					const e = Object(s.c)(t, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.hf
+						experimentName: o.if
 					});
-					return e === o.V.Control1 || e === o.V.Control2
+					return e === o.W.Control1 || e === o.W.Control2
 				},
 				b = t => {
 					const e = Object(s.c)(t, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.hf
+						experimentName: o.if
 					});
-					return e === o.jf.ContentMatch || e === o.jf.ConfidenceAndSuccess
+					return e === o.kf.ContentMatch || e === o.kf.ConfidenceAndSuccess
 				},
 				S = t => t.creations.subredditRec.api.pending,
 				E = t => t.creations.subredditRec.api.error,
-				h = t => {
+				g = t => {
 					return t.creations.subredditRec.order.length > 0
 				},
-				g = t => {
+				h = t => {
 					const e = t.creations.subredditRec.order,
 						i = [];
 					return e.forEach(e => {
@@ -3071,12 +3071,12 @@
 					return Object(o.Q)(i)
 				}, (t, e, i) => !t && !e && i),
 				a = Object(n.a)((t, e) => Object(s.c)(t, {
-					experimentName: r.yd,
+					experimentName: r.zd,
 					experimentEligibilitySelector: t => c(t, e)
 				}), t => t),
-				d = t => t === r.rg.NoCommunityWidgets,
-				u = t => t === r.rg.NoRulesModerators,
-				_ = t => t === r.rg.RelatedPostsDu
+				d = t => t === r.sg.NoCommunityWidgets,
+				u = t => t === r.sg.NoRulesModerators,
+				_ = t => t === r.sg.RelatedPostsDu
 		},
 		"./src/reddit/selectors/postGuidance.ts": function(t, e, i) {
 			"use strict";
@@ -3142,4 +3142,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow.565401d8d4be31d40b0e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow.12e8315fbb38d901e17e.js.map

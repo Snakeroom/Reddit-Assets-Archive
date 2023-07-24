@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.08a2d54d63fb468f71f7.js
-// Retrieved at 7/20/2023, 4:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.71fdd3cf2f5348856a7f.js
+// Retrieved at 7/24/2023, 1:20:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1559,10 +1559,10 @@
 					q = D("Approve", G.id, W),
 					K = D("Archived", G.id, W),
 					X = D("Lock", G.id, W),
-					Y = D("Mod", G.id, W),
-					J = D("Remove", G.id, W),
-					Q = D("Report", G.id, W),
-					Z = D("Spam", G.id, W),
+					J = D("Mod", G.id, W),
+					Y = D("Remove", G.id, W),
+					Z = D("Report", G.id, W),
+					Q = D("Spam", G.id, W),
 					$ = D("Sticky", G.id, W),
 					ee = D("Pinned", G.id, W);
 				return o.a.createElement("div", {
@@ -1572,7 +1572,7 @@
 					isFilled: !0,
 					className: Object(c.a)(T.a.icon, T.a.modIcon)
 				}), o.a.createElement(u.c, N({
-					tooltipId: Y,
+					tooltipId: J,
 					text: R(n)
 				}, V))), G.isArchived && o.a.createElement(s.Fragment, null, o.a.createElement(y.a, {
 					isFilled: !0,
@@ -1628,8 +1628,8 @@
 					isFilled: !0,
 					className: Object(c.a)(T.a.icon, T.a.removeIcon),
 					desc: Object(v.b)(G),
-					id: J,
-					onMouseEnter: U(J),
+					id: Y,
+					onMouseEnter: U(Y),
 					onMouseLeave: P
 				}), z && o.a.createElement(m.a, {
 					className: T.a.addRemovalReason,
@@ -1638,32 +1638,32 @@
 						hk: "1YDo3"
 					})
 				}), (G.modRemovalReason || G.modNote) && o.a.createElement(M, {
-					onMouseEnter: U(J),
+					onMouseEnter: U(Y),
 					onMouseLeave: P
 				}, r.fbt._("Removal reason", null, {
 					hk: "2DhKVZ"
 				})), o.a.createElement(u.c, N({
-					tooltipId: J,
+					tooltipId: Y,
 					text: Object(v.b)(G)
 				}, V))), G.bannedBy && G.isSpam && o.a.createElement(s.Fragment, null, o.a.createElement(j.a, {
 					isFilled: !0,
 					className: Object(c.a)(T.a.icon, T.a.spamIcon),
 					desc: Object(v.d)(G),
-					id: Z,
-					onMouseEnter: U(Z),
-					onMouseLeave: P
-				}), o.a.createElement(u.c, N({
-					tooltipId: Z,
-					text: Object(v.d)(G)
-				}, V)))), Object(_.a)(G) && !w && !H && o.a.createElement(s.Fragment, null, o.a.createElement(E.a, {
-					isFilled: !0,
-					className: Object(c.a)(T.a.icon, T.a.reportIcon),
-					desc: Object(v.c)(G.numReports),
 					id: Q,
 					onMouseEnter: U(Q),
 					onMouseLeave: P
 				}), o.a.createElement(u.c, N({
 					tooltipId: Q,
+					text: Object(v.d)(G)
+				}, V)))), Object(_.a)(G) && !w && !H && o.a.createElement(s.Fragment, null, o.a.createElement(E.a, {
+					isFilled: !0,
+					className: Object(c.a)(T.a.icon, T.a.reportIcon),
+					desc: Object(v.c)(G.numReports),
+					id: Z,
+					onMouseEnter: U(Z),
+					onMouseLeave: P
+				}), o.a.createElement(u.c, N({
+					tooltipId: Z,
 					text: Object(v.c)(G.numReports)
 				}, V))))
 			}))
@@ -1817,8 +1817,8 @@
 				f = n("./node_modules/reselect/es/index.js");
 			const h = Object(f.a)(e => Object(b.c)(e, {
 				experimentEligibilitySelector: b.a,
-				experimentName: p.Ec
-			}), e => e === p.Yd);
+				experimentName: p.Fc
+			}), e => e === p.Zd);
 			var v = n("./node_modules/fbt/lib/FbtPublic.js"),
 				_ = n("./src/lib/classNames/index.ts"),
 				g = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
@@ -1923,9 +1923,9 @@
 				})))
 			};
 			var X = n("./src/reddit/components/PromotedUserPostsAd/PromotedUserPost/index.m.less"),
-				Y = n.n(X);
-			const J = Object(C.a)(null);
-			var Q = Object(P.b)(J(e => {
+				J = n.n(X);
+			const Y = Object(C.a)(null);
+			var Z = Object(P.b)(Y(e => {
 					let {
 						post: t
 					} = e;
@@ -1937,20 +1937,20 @@
 						"data-testid": `promoted-user-post-${t.id}`,
 						to: i ? Object(S.b)(t.permalink) : Object(I.a)(t.permalink, !1, o)
 					}, s.a.createElement("div", {
-						className: Y.a.container
+						className: J.a.container
 					}, s.a.createElement(B, {
 						post: t
 					}), s.a.createElement(K, {
 						post: t
 					})))
 				})),
-				Z = n("./src/reddit/components/PromotedUserPostsAd/PromotedUserPosts/index.m.less"),
-				$ = n.n(Z);
+				Q = n("./src/reddit/components/PromotedUserPostsAd/PromotedUserPosts/index.m.less"),
+				$ = n.n(Q);
 			const ee = e => {
 				let {
 					postIds: t
 				} = e;
-				const n = t.map(e => s.a.createElement(Q, {
+				const n = t.map(e => s.a.createElement(Z, {
 					postId: e,
 					key: e
 				}));
@@ -2125,7 +2125,7 @@
 			n.d(t, "b", (function() {
 				return F
 			})), n.d(t, "a", (function() {
-				return J
+				return Y
 			}));
 			var r = n("./src/config.ts"),
 				s = n("./node_modules/polished/dist/polished.es.js"),
@@ -2192,8 +2192,8 @@
 				K = n("./src/reddit/components/PostTitle/index.m.less"),
 				X = n.n(K);
 
-			function Y() {
-				return (Y = Object.assign || function(e) {
+			function J() {
+				return (J = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -2203,7 +2203,7 @@
 			}! function(e) {
 				e[e.ExtraLarge = 0] = "ExtraLarge", e[e.Large = 1] = "Large", e[e.Medium = 2] = "Medium", e[e.Small = 3] = "Small", e[e.ExtraSmall = 4] = "ExtraSmall", e[e.Metadata = 5] = "Metadata"
 			}(F || (F = {}));
-			const J = e => {
+			const Y = e => {
 					let {
 						size: t,
 						titleColor: n,
@@ -2250,7 +2250,7 @@
 						type: r
 					}, o) : o)
 				},
-				Q = e => {
+				Z = e => {
 					let {
 						className: t,
 						disableVisited: n,
@@ -2258,13 +2258,13 @@
 						children: s,
 						...o
 					} = e;
-					return i.a.createElement(c.a, Y({}, o, {
+					return i.a.createElement(c.a, J({}, o, {
 						className: Object(u.a)(t, X.a.styledLink, {
 							[X.a.isVisitedEnabled]: !n
 						})
 					}), s)
 				},
-				Z = e => {
+				Q = e => {
 					let {
 						disableVisited: t,
 						nowrap: n,
@@ -2298,7 +2298,7 @@
 					} = t, r = Object(a.d)(), s = Object(x.a)(), o = Object(a.e)(G.b), c = Object(a.e)(G.c), d = e => {
 						(o || c) && (e.preventDefault(), r(Object(v.Z)(Object(g.b)(t.permalink), t.id))), t.isSponsored && Object(C.A)(t) && r(Object(v.y)(t, _.a.Click))
 					};
-					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return i.a.createElement(Z, {
+					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return i.a.createElement(Q, {
 						nowrap: e.nowrap
 					}, i.a.createElement(te, e));
 					if (e.isCommentsPageAd && t.source && t.source.url) return i.a.createElement(b.b, {
@@ -2309,7 +2309,7 @@
 					}, i.a.createElement(te, e)); {
 						const r = t.permalink,
 							o = e.isCommentPermalink ? Object(g.b)(r) : Object(h.a)(r, void 0, s);
-						return i.a.createElement(Z, {
+						return i.a.createElement(Q, {
 							disableVisited: e.disableVisited,
 							nowrap: e.nowrap
 						}, n && !Object(C.A)(t) ? ((e, t) => {
@@ -2322,7 +2322,7 @@
 								postId: e.id,
 								source: n
 							}, i.a.createElement(te, t)) : i.a.createElement(te, t)
-						})(t, e) : i.a.createElement(Q, {
+						})(t, e) : i.a.createElement(Z, {
 							className: e.titleLinkClassName,
 							"data-click-id": "body",
 							disableVisited: e.disableVisited,
@@ -2345,7 +2345,7 @@
 					})(s));
 					const o = e.isCommentsPage ? U.a.PostComments : U.a.PostItem,
 						a = !(!e.isNsfwBlurSubreddit || !e.post.isNSFW);
-					return i.a.createElement(J, {
+					return i.a.createElement(Y, {
 						className: e.titleClassName,
 						nowrap: e.nowrap,
 						redditStyle: e.redditStyle || e.isCommentsPage || e.isCommentsPageAd,
@@ -2436,7 +2436,7 @@
 						nowrap: !0,
 						post: c,
 						sendEvent: this.props.sendEvent
-					}), !Object(w.b)(c) && i.a.createElement(ee, Y({}, this.props, {
+					}), !Object(w.b)(c) && i.a.createElement(ee, J({}, this.props, {
 						leftFlair: d ? f : void 0
 					})), a && i.a.createElement(D, {
 						className: X.a.pollMeta,
@@ -2467,7 +2467,7 @@
 					})),
 					o = Object(k.a)(),
 					c = Object(m.b)();
-				return r ? i.a.createElement(re, Y({
+				return r ? i.a.createElement(re, J({
 					pageLayer: t,
 					isCommentPermalink: n
 				}, r, s, e, {
@@ -2788,9 +2788,9 @@
 				q = m.a.div("PostMediaWrapper", B.a),
 				K = m.a.div("BackgroundWrapper", B.a),
 				X = m.a.wrapped(h.b, "PostContainer", B.a),
-				Y = 640,
-				J = e => Object(E.a)(e.title, 100),
-				Q = e => {
+				J = 640,
+				Y = e => Object(E.a)(e.title, 100),
+				Z = e => {
 					if (e.post.isMediaOnly) return {};
 					const t = Object(k.a)(Object(O.a)(e), I.a.actionIcon, I.b.actionIcon);
 					return {
@@ -2798,7 +2798,7 @@
 						fill: t
 					}
 				},
-				Z = e => ({
+				Q = e => ({
 					background: Object(C.g)(Object(w.a)(e).body, null, null) || ""
 				});
 			class $ extends o.a.Component {
@@ -2831,7 +2831,7 @@
 					}, l = o.a.createElement(A, {
 						post: e
 					})) : (i = G, l = o.a.createElement(K, {
-						style: Z(this.props)
+						style: Q(this.props)
 					}, o.a.createElement(V, null, o.a.createElement(F, {
 						tooltipType: s ? d.f.Lightbox : void 0,
 						post: e,
@@ -2839,7 +2839,7 @@
 					})), o.a.createElement(z, {
 						post: e,
 						size: c.b.Large,
-						format: J
+						format: Y
 					}), e.source && o.a.createElement(H, null, o.a.createElement(x.a, {
 						href: e.source.url,
 						isSponsored: !0,
@@ -2850,7 +2850,7 @@
 						isNotCardView: !0,
 						showCentered: !0,
 						post: e,
-						availableWidth: Y,
+						availableWidth: J,
 						shouldLoad: !0
 					})))), o.a.createElement(i, m, o.a.createElement(X, {
 						className: t,
@@ -2858,7 +2858,7 @@
 						post: e,
 						onClick: this.onClick,
 						eventFactory: n,
-						style: Q(this.props)
+						style: Z(this.props)
 					}, l))
 				}
 			}
@@ -5556,4 +5556,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.08a2d54d63fb468f71f7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.71fdd3cf2f5348856a7f.js.map

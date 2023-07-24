@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NsfwSearchModal.f2dc1a9ffb0b3a1ee34b.js
-// Retrieved at 7/6/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NsfwSearchModal.87d0dccdad30ce59764e.js
+// Retrieved at 7/24/2023, 1:20:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NsfwSearchModal"], {
 		"./src/reddit/components/Upsell/NsfwSearch/Modal.tsx": function(e, t, n) {
@@ -15,8 +15,8 @@
 				d = n("./node_modules/react-redux/es/index.js"),
 				u = n("./src/reddit/actions/contentGate.ts"),
 				b = n("./src/reddit/actions/modal.ts"),
-				m = n("./src/reddit/actions/search.ts"),
-				p = n("./src/reddit/components/SearchNSFWToggle/SearchNSFWToggle.tsx"),
+				p = n("./src/reddit/actions/search.ts"),
+				m = n("./src/reddit/components/SearchNSFWToggle/SearchNSFWToggle.tsx"),
 				C = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				f = n("./src/reddit/constants/modals.ts"),
 				O = n("./src/reddit/controls/Button/index.tsx"),
@@ -52,9 +52,9 @@
 						priority: O.c.Primary,
 						className: _.a.continue,
 						onClick: async () => {
-							t(Object(j.b)()), Object(g.b)(g.a.Continue), n ? (e(Object(u.r)()), e(Object(m.l)({
+							t(Object(j.b)()), Object(g.b)(g.a.Continue), n ? (e(Object(u.r)()), e(Object(p.l)({
 								searchOver18: !0
-							}))) : (Object(u.q)(), Object(p.b)()), Object(h.d)(), window.location.reload()
+							}))) : (Object(u.q)(), Object(m.b)()), Object(h.d)(), window.location.reload()
 						},
 						"data-testid": "continue-button"
 					}, (() => l.fbt._("Yes, I'm over 18", null, {
@@ -294,13 +294,13 @@
 					const t = Date.parse(e);
 					return Number.isNaN(t) ? (localStorage.removeItem(c.b.XpromoConsolidation), !0) : Date.now() > t + d
 				},
-				m = (e, t) => t === a.a.NoPreview && (e === o.mb.SkippableButtons || e === o.mb.SkippableText),
-				p = (e, t) => t === a.a.NoPreview && e === o.mb.NoUpsell,
+				p = (e, t) => t === a.a.NoPreview && (e === o.nb.SkippableButtons || e === o.nb.SkippableText),
+				m = (e, t) => t === a.a.NoPreview && e === o.nb.NoUpsell,
 				C = Object(l.a)(a.h, a.g, (e, t) => {
 					return {
-						isControlVariant: !(!e || !t) && ((e, t) => t === a.a.NoPreview && !m(e, t) && !p(e, t))(e, t),
-						isNewDesignVariant: !(!e || !t) && m(e, t),
-						isOldDesignVariant: !(!e || !t) && p(e, t),
+						isControlVariant: !(!e || !t) && ((e, t) => t === a.a.NoPreview && !p(e, t) && !m(e, t))(e, t),
+						isNewDesignVariant: !(!e || !t) && p(e, t),
+						isOldDesignVariant: !(!e || !t) && m(e, t),
 						variant: e
 					}
 				}),
@@ -308,4 +308,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwSearchModal.f2dc1a9ffb0b3a1ee34b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwSearchModal.87d0dccdad30ce59764e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.e3f0e40fe390a5682974.js
-// Retrieved at 7/6/2023, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.9ec902fdd4a6e23c240a.js
+// Retrieved at 7/24/2023, 1:20:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1413,7 +1413,7 @@
 				const t = Object(i.f)().getState(),
 					s = Object(g.a)(t, Object(a.c)());
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === m.rd.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.rd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.rd.LargeImagePreview ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === m.sd.GreyRereddit || e.d2xPdpSideRailRecsVariant === m.sd.GreyRedditNoNsfw || e.d2xPdpSideRailRecsVariant === m.sd.LargeImagePreview ? e.reredditButtons : [];
 					return r.a.createElement(j, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -3022,8 +3022,8 @@
 			}
 			var K = Y,
 				Q = s("./src/lib/prettyPrintNumber/index.ts"),
-				X = s("./src/reddit/components/Flair/index.tsx"),
-				Z = s("./src/reddit/components/SubredditIcon/index.tsx"),
+				Z = s("./src/reddit/components/Flair/index.tsx"),
+				X = s("./src/reddit/components/SubredditIcon/index.tsx"),
 				$ = s("./src/reddit/components/SubscribeButton/index.tsx"),
 				ee = s("./src/reddit/constants/posts.ts"),
 				te = s("./src/reddit/helpers/name/index.ts"),
@@ -3056,7 +3056,7 @@
 					} = e, a = Object(te.d)(n.displayText || n.name);
 					return r.a.createElement("div", {
 						className: Object(o.a)(oe.a.Container, t)
-					}, r.a.createElement(Z.b, {
+					}, r.a.createElement(X.b, {
 						className: oe.a.Icon,
 						subredditOrProfile: n
 					}), r.a.createElement("div", {
@@ -3075,7 +3075,7 @@
 						_1: "member"
 					}, [ae._plural(n.subscribers, "subscribers count", Object(Q.b)(n.subscribers))], {
 						hk: "48BXj1"
-					})), n.isNSFW && r.a.createElement(X.c, {
+					})), n.isNSFW && r.a.createElement(Z.c, {
 						flair: le
 					}))), r.a.createElement("div", {
 						className: oe.a.About
@@ -3383,8 +3383,8 @@
 			const i = e => {
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: n.M
-				}) === n.Yd
+					experimentName: n.N
+				}) === n.Zd
 			}
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, s) {
@@ -3402,11 +3402,11 @@
 				d = s("./node_modules/reselect/es/index.js");
 			const c = Object(d.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(a.h)(e) && Object(i.f)(e),
-					experimentName: n.uc
+					experimentName: n.vc
 				}), o.a),
 				l = Object(d.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.h)(e) && Object(i.f)(e),
-					experimentName: n.tc
+					experimentName: n.uc
 				}), o.a),
 				u = Object(d.a)(c, l, (e, t) => e || t),
 				m = Object(d.a)(c, l, (e, t) => !(!e && !t))
@@ -3423,14 +3423,14 @@
 			const i = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: n.ue
-					}) === n.Yd
+						experimentName: n.ve
+					}) === n.Zd
 				},
 				o = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: n.ve
-					}) === n.Yd
+						experimentName: n.we
+					}) === n.Zd
 				}
 		},
 		"./src/redditGQL/operations/DeleteSubredditMuteSettings.json": function(e) {
@@ -3456,4 +3456,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.e3f0e40fe390a5682974.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.9ec902fdd4a6e23c240a.js.map
