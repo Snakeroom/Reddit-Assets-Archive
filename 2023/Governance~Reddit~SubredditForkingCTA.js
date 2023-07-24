@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.97cb12fe37e4852a069e.js
-// Retrieved at 7/13/2023, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.5f0605aac2b352a8e233.js
+// Retrieved at 7/24/2023, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~SubredditForkingCTA"], {
 		"./src/lib/asyncActions/index.ts": function(e, t, r) {
@@ -1198,7 +1198,7 @@
 					const C = Object(M.o)(b.kind),
 						P = j.ok && j.body && j.body.id && Object(I.y)(j.body.id),
 						k = r();
-					v.C(k, C, P, e.correlationId)
+					v.C(k, C, P, b.destSubreddit.name, e.correlationId)
 				}, te = (e, t) => {
 					t.type === n.K.BAD_CAPTCHA_ERROR ? e(W()) : t.type === n.K.VALIDATION_ERROR ? e($(t)) : t.type === n.K.SUBMIT_VALIDATION_ERROR ? e(K(t)) : e(V(t))
 				}
@@ -3221,4 +3221,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.97cb12fe37e4852a069e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~SubredditForkingCTA.5f0605aac2b352a8e233.js.map

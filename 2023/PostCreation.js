@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.773a0a9e2804cdcd7a06.js
-// Retrieved at 7/20/2023, 4:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.68363df82941cc41bad7.js
+// Retrieved at 7/24/2023, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ModListing~Reddit~StandalonePostPage", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
@@ -3850,7 +3850,7 @@
 					const k = Object(F.o)(m.kind),
 						j = x.ok && x.body && x.body.id && Object(S.y)(x.body.id),
 						w = n();
-					_.C(w, k, j, e.correlationId)
+					_.C(w, k, j, m.destSubreddit.name, e.correlationId)
 				}, te = (e, t) => {
 					t.type === o.K.BAD_CAPTCHA_ERROR ? e(z()) : t.type === o.K.VALIDATION_ERROR ? e(H(t)) : t.type === o.K.SUBMIT_VALIDATION_ERROR ? e(V(t)) : e(W(t))
 				}
@@ -40225,4 +40225,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.773a0a9e2804cdcd7a06.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.68363df82941cc41bad7.js.map

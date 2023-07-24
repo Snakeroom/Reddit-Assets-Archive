@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.fd1ce7762617dbde72c0.js
-// Retrieved at 7/20/2023, 4:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.f849ec70d3dc85b97f3f.js
+// Retrieved at 7/24/2023, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -19939,7 +19939,7 @@
 						..._(e)
 					})
 				},
-				k = (e, t, n, r) => {
+				k = (e, t, n, r, s) => {
 					Object(b.a)({
 						noun: "post",
 						subreddit: m.mb(e),
@@ -19949,7 +19949,8 @@
 						},
 						post: n ? m.L(e, n) : null,
 						..._(e),
-						correlationId: r
+						...W(e, r),
+						correlationId: s
 					})
 				},
 				N = (e, t) => {
@@ -27000,4 +27001,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.fd1ce7762617dbde72c0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.f849ec70d3dc85b97f3f.js.map

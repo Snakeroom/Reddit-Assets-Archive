@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.30810fa3b3b82c280e12.js
-// Retrieved at 7/20/2023, 4:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.f77e2fcb0de62cdebf34.js
+// Retrieved at 7/24/2023, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~StandalonePostPag~0596d05c", "CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "Governance~ModListing~Reddit", "Governance~Reddit~SubredditForkingCTA", "ModListing~Reddit~StandalonePostPage", "Settings~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -12976,7 +12976,7 @@
 					const j = Object(B.o)(m.kind),
 						I = C.ok && C.body && C.body.id && Object(k.y)(C.body.id),
 						S = n();
-					y.C(S, j, I, e.correlationId)
+					y.C(S, j, I, m.destSubreddit.name, e.correlationId)
 				}, te = (e, t) => {
 					t.type === s.K.BAD_CAPTCHA_ERROR ? e(z()) : t.type === s.K.VALIDATION_ERROR ? e(W(t)) : t.type === s.K.SUBMIT_VALIDATION_ERROR ? e(q(t)) : e(G(t))
 				}
@@ -66860,7 +66860,7 @@
 						...v(e)
 					})
 				},
-				_ = (e, t, n, s) => {
+				_ = (e, t, n, s, r) => {
 					Object(b.a)({
 						noun: "post",
 						subreddit: m.mb(e),
@@ -66870,7 +66870,8 @@
 						},
 						post: n ? m.L(e, n) : null,
 						...v(e),
-						correlationId: s
+						...H(e, s),
+						correlationId: r
 					})
 				},
 				S = (e, t) => {
@@ -81616,4 +81617,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.30810fa3b3b82c280e12.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.f77e2fcb0de62cdebf34.js.map
