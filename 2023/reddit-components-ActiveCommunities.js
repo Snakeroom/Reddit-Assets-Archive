@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ActiveCommunities.b7b399c381c0d7bfc9f1.js
-// Retrieved at 7/11/2023, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ActiveCommunities.1762a7263cee0f80e388.js
+// Retrieved at 7/24/2023, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ActiveCommunities"], {
 		"./src/reddit/components/ActiveCommunities/index.tsx": function(e, t, n) {
@@ -456,7 +456,7 @@
 				}({
 					username: t
 				});
-				return Object(s.e)(e => !(!n || i || a.length < 1) && Object(h.a)(e)) ? o.a.createElement("div", {
+				return Object(s.e)(e => !(!n || i || a.length < 1) && Object(h.b)(e)) ? o.a.createElement("div", {
 					className: "bg-[color:var(--newCommunityTheme-body)] mb-xs border border-solid border-[color:var(--newCommunityTheme-postLine)] rounded-[4px] py-xs pb-sm"
 				}, o.a.createElement("h3", {
 					className: "text-[12px] leading-[20px] text-[color:var(--newCommunityTheme-actionIcon)] truncate min-w-0 mb-xs mx-md"
@@ -474,4 +474,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ActiveCommunities.b7b399c381c0d7bfc9f1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ActiveCommunities.1762a7263cee0f80e388.js.map

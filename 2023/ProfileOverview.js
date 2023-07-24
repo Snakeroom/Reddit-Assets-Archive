@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.5ebbf576545cc3a401f6.js
-// Retrieved at 7/20/2023, 4:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.02f084edfd48373c8bef.js
+// Retrieved at 7/24/2023, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./src/lib/LiveChatActiveUsers/index.m.less": function(e, t, s) {
@@ -9204,19 +9204,25 @@
 			"use strict";
 			s.d(t, "a", (function() {
 				return a
+			})), s.d(t, "b", (function() {
+				return i
 			}));
 			var n = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/experiments/index.ts");
 			const a = function(e) {
-				let t = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1];
-				const s = Object(o.c)(e, {
-					experimentEligibilitySelector: r.e,
-					experimentName: n.xb,
-					expEventOverride: t
-				}) || n.V.Control1;
-				return s === n.Yd
-			}
+					let t = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1];
+					return Object(o.c)(e, {
+						experimentEligibilitySelector: r.e,
+						experimentName: n.xb,
+						expEventOverride: t
+					})
+				},
+				i = function(e) {
+					let t = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1];
+					const s = a(e, t) || n.V.Control1;
+					return s === n.Yd
+				}
 		},
 		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, s) {
 			"use strict";
@@ -9296,4 +9302,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.5ebbf576545cc3a401f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.02f084edfd48373c8bef.js.map
