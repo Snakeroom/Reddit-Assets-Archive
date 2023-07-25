@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.7852ce93c9aa9b2b3d61.js
-// Retrieved at 7/24/2023, 1:20:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.6d89b4a1a0c4ee12fae7.js
+// Retrieved at 7/25/2023, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "CollectionCommentsPage~SearchResults", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -38330,11 +38330,12 @@
 						...U(e, t.subredditId)
 					}
 				},
-				G = (e, t) => {
+				G = (e, t, n, r) => {
 					Object(b.a)({
 						noun: "post_guidance",
 						...g(e),
 						action: s.c.VIEW,
+						subreddit: n ? m.nb(e, n) : r ? m.ob(e, r) : void 0,
 						actionInfo: {
 							...m.d(e)
 						},
@@ -50396,4 +50397,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.7852ce93c9aa9b2b3d61.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.6d89b4a1a0c4ee12fae7.js.map

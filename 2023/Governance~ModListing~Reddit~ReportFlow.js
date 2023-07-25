@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow.12e8315fbb38d901e17e.js
-// Retrieved at 7/24/2023, 1:20:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow.a21d050539f29b380860.js
+// Retrieved at 7/25/2023, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow"], {
 		"./src/lib/assertNever.ts": function(t, e, i) {
@@ -822,8 +822,8 @@
 				T = i("./src/reddit/helpers/getGenericUploadError.ts"),
 				k = i("./src/reddit/helpers/graphql/normalizeSubredditStylesFromGql/index.ts"),
 				w = i("./src/reddit/helpers/media/index.ts"),
-				j = i("./src/reddit/models/Image/index.tsx"),
-				v = i("./src/reddit/models/StructuredStyles/index.ts"),
+				v = i("./src/reddit/models/Image/index.tsx"),
+				j = i("./src/reddit/models/StructuredStyles/index.ts"),
 				x = i("./src/reddit/models/Toast/index.ts"),
 				R = i("./src/reddit/selectors/activeModalId.ts"),
 				L = i("./src/reddit/selectors/platform.ts"),
@@ -860,7 +860,7 @@
 					let E = null,
 						g = null;
 					try {
-						(E = await Object(_.f)(o(), j.a.StructuredStyles)) && (g = Object(_.m)(E)(r, o, s))
+						(E = await Object(_.f)(o(), v.a.StructuredStyles)) && (g = Object(_.m)(E)(r, o, s))
 					} catch (O) {
 						const t = Object(T.a)("webSocket");
 						return void r(Object(u.f)(n, t))
@@ -882,7 +882,7 @@
 								const e = Object(C.g)(o(), {
 									name: t
 								});
-								e && Object(j.j)(e) && (I[t] = i[t])
+								e && Object(v.j)(e) && (I[t] = i[t])
 							} Object.keys(I).length && r(H(I)), r(Object(u.e)(n)), r(P({
 							subredditId: t,
 							styles: {
@@ -973,11 +973,11 @@
 					const r = M(t),
 						o = i();
 					for (const t in r)
-						if (Object(v.l)(t))
+						if (Object(j.l)(t))
 							if (r[t]) {
 								if ("string" != typeof r[t]) {
 									const o = r[t],
-										s = await Object(j.e)(o);
+										s = await Object(v.e)(o);
 									$(t, s)(e, i, n), r[t] = ""
 								}
 							} else {
@@ -998,7 +998,7 @@
 					})), n(Object(_.k)(e));
 					const a = await p.d(o.apiContext(), c, e.file.name, t, await Object(w.h)(e.file));
 					try {
-						const i = await Object(_.g)(r(), a, e, j.a.StructuredStyles);
+						const i = await Object(_.g)(r(), a, e, v.a.StructuredStyles);
 						if (i) {
 							const e = i.url;
 							n(Object(_.j)(i)), n(H({
@@ -1150,9 +1150,9 @@
 			})), i.d(e, "z", (function() {
 				return w
 			})), i.d(e, "x", (function() {
-				return j
-			})), i.d(e, "j", (function() {
 				return v
+			})), i.d(e, "j", (function() {
+				return j
 			})), i.d(e, "F", (function() {
 				return x
 			})), i.d(e, "G", (function() {
@@ -1191,8 +1191,8 @@
 				T = "SUBREDDIT_SURVEY_DISMISS",
 				k = "SUBREDDIT_ABOUT_INFO_UPDATE__PENDING",
 				w = "SUBREDDIT_ABOUT_INFO_UPDATE__SUCCESS",
-				j = "SUBREDDIT_ABOUT_INFO_UPDATE__FAILED",
-				v = "MUTE_SUBREDDIT__SUCCESS",
+				v = "SUBREDDIT_ABOUT_INFO_UPDATE__FAILED",
+				j = "MUTE_SUBREDDIT__SUCCESS",
 				x = "UNMUTE_SUBREDDIT_SUCCESS",
 				R = "UPDATE_MUTE_AND_NOTIFICATION_LEVEL_SUCCESS",
 				L = "MUTED_SUBREDDIT_LOADED__SUCCESS",
@@ -1240,7 +1240,7 @@
 			})), i.d(e, "d", (function() {
 				return w
 			})), i.d(e, "h", (function() {
-				return v
+				return j
 			})), i.d(e, "a", (function() {
 				return x
 			})), i.d(e, "b", (function() {
@@ -1333,20 +1333,20 @@
 						}).name,
 						k = Object(E.e)(e);
 					let w = null,
-						j = null;
+						v = null;
 					try {
-						(w = await Object(s.f)(I, g.a.Widgets)) && (j = Object(s.m)(w)(r, _, p))
+						(w = await Object(s.f)(I, g.a.Widgets)) && (v = Object(s.m)(w)(r, _, p))
 					} catch (x) {
 						const t = Object(f.a)("webSocket");
 						return void r(Object(o.f)(i, t))
 					}
-					const v = await (async (t, e, i) => Object(a.a)(Object(d.a)(t, [u.a]), {
+					const j = await (async (t, e, i) => Object(a.a)(Object(d.a)(t, [u.a]), {
 						endpoint: `${t.apiUrl}/r/${e}/api/widget/${i.id}`,
 						method: c.ob.PUT,
 						type: "json",
 						data: i
 					}))(y(), T, k);
-					if (v.ok) {
+					if (j.ok) {
 						let s = function(t, e, i) {
 							switch (t.kind) {
 								case b.i.Calendar:
@@ -1390,8 +1390,8 @@
 								default:
 									return Object(m.a)(t)
 							}
-						}(e, v.body, I);
-						j && (s = await r(P(t, D)) || s), r(O({
+						}(e, j.body, I);
+						v && (s = await r(P(t, D)) || s), r(O({
 							subredditId: t,
 							widgetId: D,
 							widget: s
@@ -1401,7 +1401,7 @@
 								hk: "10XWV"
 							})
 						})), r(Object(o.e)(i))
-					} else w && w.websocket.close(), r(Object(o.f)(i, v.error))
+					} else w && w.websocket.close(), r(Object(o.f)(i, j.error))
 				}, k = Object(r.a)(y.h), w = (t, e, i) => async (n, r, s) => {
 					let {
 						apiContext: l
@@ -1420,7 +1420,7 @@
 						subredditId: t,
 						widgetId: _
 					}))) : n(Object(o.f)(i, p.error))
-				}, j = Object(r.a)(y.f), v = (t, e) => async (i, n, r) => {
+				}, v = Object(r.a)(y.f), j = (t, e) => async (i, n, r) => {
 					let {
 						apiContext: o
 					} = r;
@@ -1432,7 +1432,7 @@
 						method: c.ob.PATCH,
 						type: "json",
 						data: i
-					}))(o(), s, e)).ok && i(j({
+					}))(o(), s, e)).ok && i(v({
 						subredditId: t,
 						widgetIds: e
 					}))
@@ -1711,9 +1711,9 @@
 			})), i.d(e, "f", (function() {
 				return w
 			})), i.d(e, "g", (function() {
-				return j
-			})), i.d(e, "k", (function() {
 				return v
+			})), i.d(e, "k", (function() {
+				return j
 			})), i.d(e, "e", (function() {
 				return x
 			})), i.d(e, "i", (function() {
@@ -1771,8 +1771,8 @@
 						size: T = u.S,
 						text: k,
 						textClassName: w,
-						...j
-					} = t, v = (t => {
+						...v
+					} = t, j = (t => {
 						let {
 							baseClassName: e,
 							redditStyle: i,
@@ -1836,12 +1836,12 @@
 						priority: D,
 						textClassName: w
 					});
-					return y === p.InternalLink && (t => "to" in t)(j) ? r.a.createElement(b, a({}, d, j, {
-						className: v
-					}), x) : y === p.ExternalLink && (t => "href" in t)(j) ? r.a.createElement(S, a({}, d, j, {
-						className: v
-					}), x) : r.a.createElement(E, a({}, d, j, {
-						className: v
+					return y === p.InternalLink && (t => "to" in t)(v) ? r.a.createElement(b, a({}, d, v, {
+						className: j
+					}), x) : y === p.ExternalLink && (t => "href" in t)(v) ? r.a.createElement(S, a({}, d, v, {
+						className: j
+					}), x) : r.a.createElement(E, a({}, d, v, {
+						className: j
 					}), x)
 				},
 				b = t => r.a.createElement(s.default, t),
@@ -1890,7 +1890,7 @@
 						className: Object(o.a)(e, c.a.DangerButtonColors)
 					}, i))
 				},
-				j = t => {
+				v = t => {
 					let {
 						className: e,
 						...i
@@ -1900,7 +1900,7 @@
 						className: Object(o.a)(e, c.a.GoldButtonColors)
 					}, i))
 				},
-				v = t => {
+				j = t => {
 					let {
 						className: e,
 						...i
@@ -2291,9 +2291,9 @@
 			})), i.d(e, "N", (function() {
 				return w
 			})), i.d(e, "C", (function() {
-				return j
-			})), i.d(e, "m", (function() {
 				return v
+			})), i.d(e, "m", (function() {
+				return j
 			})), i.d(e, "F", (function() {
 				return x
 			})), i.d(e, "E", (function() {
@@ -2441,7 +2441,7 @@
 						...E(t)
 					})
 				},
-				j = (t, e, i, n, r) => {
+				v = (t, e, i, n, r) => {
 					Object(p.a)({
 						noun: "post",
 						subreddit: _.mb(t),
@@ -2455,7 +2455,7 @@
 						correlationId: r
 					})
 				},
-				v = (t, e) => {
+				j = (t, e) => {
 					const i = e === s.i.MARKDOWN ? "markdown_mode" : "rte_mode";
 					Object(p.a)({
 						noun: i,
@@ -2619,11 +2619,12 @@
 						...M(t, e.subredditId)
 					}
 				},
-				K = (t, e) => {
+				K = (t, e, i, r) => {
 					Object(p.a)({
 						noun: "post_guidance",
 						...E(t),
 						action: n.c.VIEW,
+						subreddit: i ? _.nb(t, i) : r ? _.ob(t, r) : void 0,
 						actionInfo: {
 							..._.d(t)
 						},
@@ -3142,4 +3143,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow.12e8315fbb38d901e17e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow.a21d050539f29b380860.js.map

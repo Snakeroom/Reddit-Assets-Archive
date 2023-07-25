@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.26c52976c1e45e398faa.js
-// Retrieved at 7/24/2023, 1:20:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.2b7aa865d035f61d801c.js
+// Retrieved at 7/25/2023, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -4043,8 +4043,11 @@
 				return Object(o.useEffect)(() => {
 					const e = b.map(e => e.guidanceId),
 						t = (null == f ? void 0 : f.map(e => e.guidanceId)) || [],
-						s = e.filter(e => !(null == t ? void 0 : t.includes(e)));
-					n && s.length > 0 && n(s)
+						s = e.filter(e => !(null == t ? void 0 : t.includes(e))),
+						o = [];
+					s.forEach(e => {
+						e && o.push(e)
+					}), n && s.length > 0 && n(o)
 				}, [t, b, f, n]), r.a.createElement("div", {
 					"data-testid": "post-guidance-validation"
 				}, r.a.createElement("ol", null, b.map((e, t) => r.a.createElement("li", {
@@ -4723,4 +4726,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.26c52976c1e45e398faa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.2b7aa865d035f61d801c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~PostCreation.5c4160c6e1330f77c587.js
-// Retrieved at 6/7/2023, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~PostCreation.d9105be2164007413d7f.js
+// Retrieved at 7/25/2023, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~PostCreation"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -155,8 +155,8 @@
 						v = n(/edg([ea]|ios)\/(\d+(\.\d+)?)/i),
 						b = o(/version\/(\d+(\.\d+)?)/i),
 						g = /tablet/i.test(t) && !/tablet pc/i.test(t),
-						w = !g && /[^-]mobi/i.test(t),
-						j = /xbox/i.test(t);
+						j = !g && /[^-]mobi/i.test(t),
+						w = /xbox/i.test(t);
 					/opera/i.test(t) ? r = {
 						name: "Opera",
 						opera: e,
@@ -296,7 +296,7 @@
 					} : {
 						name: o(/^(.*)\/(.*) /),
 						version: n(/^(.*)\/(.*) /)
-					}, !r.msedge && /(apple)?webkit/i.test(t) ? (/(apple)?webkit\/537\.36/i.test(t) ? (r.name = r.name || "Blink", r.blink = e) : (r.name = r.name || "Webkit", r.webkit = e), !r.version && b && (r.version = b)) : !r.opera && /gecko\//i.test(t) && (r.name = r.name || "Gecko", r.gecko = e, r.version = r.version || o(/gecko\/(\d+(\.\d+)?)/i)), r.windowsphone || !a && !r.silk ? !r.windowsphone && s ? (r[s] = e, r.ios = e, r.osname = "iOS") : _ ? (r.mac = e, r.osname = "macOS") : j ? (r.xbox = e, r.osname = "Xbox") : h ? (r.windows = e, r.osname = "Windows") : y && (r.linux = e, r.osname = "Linux") : (r.android = e, r.osname = "Android");
+					}, !r.msedge && /(apple)?webkit/i.test(t) ? (/(apple)?webkit\/537\.36/i.test(t) ? (r.name = r.name || "Blink", r.blink = e) : (r.name = r.name || "Webkit", r.webkit = e), !r.version && b && (r.version = b)) : !r.opera && /gecko\//i.test(t) && (r.name = r.name || "Gecko", r.gecko = e, r.version = r.version || o(/gecko\/(\d+(\.\d+)?)/i)), r.windowsphone || !a && !r.silk ? !r.windowsphone && s ? (r[s] = e, r.ios = e, r.osname = "iOS") : _ ? (r.mac = e, r.osname = "macOS") : w ? (r.xbox = e, r.osname = "Xbox") : h ? (r.windows = e, r.osname = "Windows") : y && (r.linux = e, r.osname = "Linux") : (r.android = e, r.osname = "Android");
 					var x = "";
 					r.windows ? x = function(e) {
 						switch (e) {
@@ -325,7 +325,7 @@
 						}
 					}(o(/Windows ((NT|XP)( \d\d?.\d)?)/i)) : r.windowsphone ? x = o(/windows phone (?:os)?\s?(\d+(\.\d+)*)/i) : r.mac ? x = (x = o(/Mac OS X (\d+([_\.\s]\d+)*)/i)).replace(/[_\s]/g, ".") : s ? x = (x = o(/os (\d+([_\s]\d+)*) like mac os x/i)).replace(/[_\s]/g, ".") : a ? x = o(/android[ \/-](\d+(\.\d+)*)/i) : r.webos ? x = o(/(?:web|hpw)os\/(\d+(\.\d+)*)/i) : r.blackberry ? x = o(/rim\stablet\sos\s(\d+(\.\d+)*)/i) : r.bada ? x = o(/bada\/(\d+(\.\d+)*)/i) : r.tizen && (x = o(/tizen[\/\s](\d+(\.\d+)*)/i)), x && (r.osversion = x);
 					var k = !r.windows && x.split(".")[0];
-					return g || l || "ipad" == s || a && (3 == k || k >= 4 && !w) || r.silk ? r.tablet = e : (w || "iphone" == s || "ipod" == s || a || i || r.blackberry || r.webos || r.bada) && (r.mobile = e), r.msedge || r.msie && r.version >= 10 || r.yandexbrowser && r.version >= 15 || r.vivaldi && r.version >= 1 || r.chrome && r.version >= 20 || r.samsungBrowser && r.version >= 4 || r.firefox && r.version >= 20 || r.safari && r.version >= 6 || r.opera && r.version >= 10 || r.ios && r.osversion && r.osversion.split(".")[0] >= 6 || r.blackberry && r.version >= 10.1 || r.chromium && r.version >= 20 ? r.a = e : r.msie && r.version < 10 || r.chrome && r.version < 20 || r.firefox && r.version < 20 || r.safari && r.version < 6 || r.opera && r.version < 10 || r.ios && r.osversion && r.osversion.split(".")[0] < 6 || r.chromium && r.version < 20 ? r.c = e : r.x = e, r
+					return g || l || "ipad" == s || a && (3 == k || k >= 4 && !j) || r.silk ? r.tablet = e : (j || "iphone" == s || "ipod" == s || a || i || r.blackberry || r.webos || r.bada) && (r.mobile = e), r.msedge || r.msie && r.version >= 10 || r.yandexbrowser && r.version >= 15 || r.vivaldi && r.version >= 1 || r.chrome && r.version >= 20 || r.samsungBrowser && r.version >= 4 || r.firefox && r.version >= 20 || r.safari && r.version >= 6 || r.opera && r.version >= 10 || r.ios && r.osversion && r.osversion.split(".")[0] >= 6 || r.blackberry && r.version >= 10.1 || r.chromium && r.version >= 20 ? r.a = e : r.msie && r.version < 10 || r.chrome && r.version < 20 || r.firefox && r.version < 20 || r.safari && r.version < 6 || r.opera && r.version < 10 || r.ios && r.osversion && r.osversion.split(".")[0] < 6 || r.chromium && r.version < 20 ? r.c = e : r.x = e, r
 				}
 				var o = t("undefined" != typeof navigator && navigator.userAgent || "");
 
@@ -649,6 +649,14 @@
 				})), o
 			}
 		},
+		"./node_modules/lodash/_baseSetData.js": function(e, t, o) {
+			var n = o("./node_modules/lodash/identity.js"),
+				r = o("./node_modules/lodash/_metaMap.js"),
+				s = r ? function(e, t) {
+					return r.set(e, t), e
+				} : n;
+			e.exports = s
+		},
 		"./node_modules/lodash/_baseWhile.js": function(e, t, o) {
 			var n = o("./node_modules/lodash/_baseSlice.js");
 			e.exports = function(e, t, o, r) {
@@ -664,6 +672,141 @@
 				return o
 			}
 		},
+		"./node_modules/lodash/_composeArgs.js": function(e, t) {
+			var o = Math.max;
+			e.exports = function(e, t, n, r) {
+				for (var s = -1, a = e.length, i = n.length, l = -1, u = t.length, d = o(a - i, 0), c = Array(u + d), p = !r; ++l < u;) c[l] = t[l];
+				for (; ++s < i;)(p || s < a) && (c[n[s]] = e[s]);
+				for (; d--;) c[l++] = e[s++];
+				return c
+			}
+		},
+		"./node_modules/lodash/_composeArgsRight.js": function(e, t) {
+			var o = Math.max;
+			e.exports = function(e, t, n, r) {
+				for (var s = -1, a = e.length, i = -1, l = n.length, u = -1, d = t.length, c = o(a - l, 0), p = Array(c + d), m = !r; ++s < c;) p[s] = e[s];
+				for (var f = s; ++u < d;) p[f + u] = t[u];
+				for (; ++i < l;)(m || s < a) && (p[f + n[i]] = e[s++]);
+				return p
+			}
+		},
+		"./node_modules/lodash/_countHolders.js": function(e, t) {
+			e.exports = function(e, t) {
+				for (var o = e.length, n = 0; o--;) e[o] === t && ++n;
+				return n
+			}
+		},
+		"./node_modules/lodash/_createBind.js": function(e, t, o) {
+			var n = o("./node_modules/lodash/_createCtor.js"),
+				r = o("./node_modules/lodash/_root.js"),
+				s = 1;
+			e.exports = function(e, t, o) {
+				var a = t & s,
+					i = n(e);
+				return function t() {
+					return (this && this !== r && this instanceof t ? i : e).apply(a ? o : this, arguments)
+				}
+			}
+		},
+		"./node_modules/lodash/_createCtor.js": function(e, t, o) {
+			var n = o("./node_modules/lodash/_baseCreate.js"),
+				r = o("./node_modules/lodash/isObject.js");
+			e.exports = function(e) {
+				return function() {
+					var t = arguments;
+					switch (t.length) {
+						case 0:
+							return new e;
+						case 1:
+							return new e(t[0]);
+						case 2:
+							return new e(t[0], t[1]);
+						case 3:
+							return new e(t[0], t[1], t[2]);
+						case 4:
+							return new e(t[0], t[1], t[2], t[3]);
+						case 5:
+							return new e(t[0], t[1], t[2], t[3], t[4]);
+						case 6:
+							return new e(t[0], t[1], t[2], t[3], t[4], t[5]);
+						case 7:
+							return new e(t[0], t[1], t[2], t[3], t[4], t[5], t[6])
+					}
+					var o = n(e.prototype),
+						s = e.apply(o, t);
+					return r(s) ? s : o
+				}
+			}
+		},
+		"./node_modules/lodash/_createCurry.js": function(e, t, o) {
+			var n = o("./node_modules/lodash/_apply.js"),
+				r = o("./node_modules/lodash/_createCtor.js"),
+				s = o("./node_modules/lodash/_createHybrid.js"),
+				a = o("./node_modules/lodash/_createRecurry.js"),
+				i = o("./node_modules/lodash/_getHolder.js"),
+				l = o("./node_modules/lodash/_replaceHolders.js"),
+				u = o("./node_modules/lodash/_root.js");
+			e.exports = function(e, t, o) {
+				var d = r(e);
+				return function r() {
+					for (var c = arguments.length, p = Array(c), m = c, f = i(r); m--;) p[m] = arguments[m];
+					var h = c < 3 && p[0] !== f && p[c - 1] !== f ? [] : l(p, f);
+					return (c -= h.length) < o ? a(e, t, s, r.placeholder, void 0, p, h, void 0, void 0, o - c) : n(this && this !== u && this instanceof r ? d : e, this, p)
+				}
+			}
+		},
+		"./node_modules/lodash/_createHybrid.js": function(e, t, o) {
+			var n = o("./node_modules/lodash/_composeArgs.js"),
+				r = o("./node_modules/lodash/_composeArgsRight.js"),
+				s = o("./node_modules/lodash/_countHolders.js"),
+				a = o("./node_modules/lodash/_createCtor.js"),
+				i = o("./node_modules/lodash/_createRecurry.js"),
+				l = o("./node_modules/lodash/_getHolder.js"),
+				u = o("./node_modules/lodash/_reorder.js"),
+				d = o("./node_modules/lodash/_replaceHolders.js"),
+				c = o("./node_modules/lodash/_root.js"),
+				p = 1,
+				m = 2,
+				f = 8,
+				h = 16,
+				_ = 128,
+				y = 512;
+			e.exports = function e(t, o, v, b, g, j, w, x, k, D) {
+				var E = o & _,
+					z = o & p,
+					S = o & m,
+					F = o & (f | h),
+					O = o & y,
+					C = S ? void 0 : a(t);
+				return function p() {
+					for (var m = arguments.length, f = Array(m), h = m; h--;) f[h] = arguments[h];
+					if (F) var _ = l(p),
+						y = s(f, _);
+					if (b && (f = n(f, b, g, F)), j && (f = r(f, j, w, F)), m -= y, F && m < D) {
+						var A = d(f, _);
+						return i(t, o, e, p.placeholder, v, f, A, x, k, D - m)
+					}
+					var T = z ? v : this,
+						P = S ? T[t] : t;
+					return m = f.length, x ? f = u(f, x) : O && m > 1 && f.reverse(), E && k < m && (f.length = k), this && this !== c && this instanceof p && (P = C || a(P)), P.apply(T, f)
+				}
+			}
+		},
+		"./node_modules/lodash/_createPartial.js": function(e, t, o) {
+			var n = o("./node_modules/lodash/_apply.js"),
+				r = o("./node_modules/lodash/_createCtor.js"),
+				s = o("./node_modules/lodash/_root.js"),
+				a = 1;
+			e.exports = function(e, t, o, i) {
+				var l = t & a,
+					u = r(e);
+				return function t() {
+					for (var r = -1, a = arguments.length, d = -1, c = i.length, p = Array(c + a), m = this && this !== s && this instanceof t ? u : e; ++d < c;) p[d] = i[d];
+					for (; a--;) p[d++] = arguments[++r];
+					return n(m, l ? o : this, p)
+				}
+			}
+		},
 		"./node_modules/lodash/_createRange.js": function(e, t, o) {
 			var n = o("./node_modules/lodash/_baseRange.js"),
 				r = o("./node_modules/lodash/_isIterateeCall.js"),
@@ -672,6 +815,59 @@
 				return function(t, o, a) {
 					return a && "number" != typeof a && r(t, o, a) && (o = a = void 0), t = s(t), void 0 === o ? (o = t, t = 0) : o = s(o), a = void 0 === a ? t < o ? 1 : -1 : s(a), n(t, o, a, e)
 				}
+			}
+		},
+		"./node_modules/lodash/_createRecurry.js": function(e, t, o) {
+			var n = o("./node_modules/lodash/_isLaziable.js"),
+				r = o("./node_modules/lodash/_setData.js"),
+				s = o("./node_modules/lodash/_setWrapToString.js"),
+				a = 1,
+				i = 2,
+				l = 4,
+				u = 8,
+				d = 32,
+				c = 64;
+			e.exports = function(e, t, o, p, m, f, h, _, y, v) {
+				var b = t & u;
+				t |= b ? d : c, (t &= ~(b ? c : d)) & l || (t &= ~(a | i));
+				var g = [e, t, m, b ? f : void 0, b ? h : void 0, b ? void 0 : f, b ? void 0 : h, _, y, v],
+					j = o.apply(void 0, g);
+				return n(e) && r(j, g), j.placeholder = p, s(j, e, t)
+			}
+		},
+		"./node_modules/lodash/_createWrap.js": function(e, t, o) {
+			var n = o("./node_modules/lodash/_baseSetData.js"),
+				r = o("./node_modules/lodash/_createBind.js"),
+				s = o("./node_modules/lodash/_createCurry.js"),
+				a = o("./node_modules/lodash/_createHybrid.js"),
+				i = o("./node_modules/lodash/_createPartial.js"),
+				l = o("./node_modules/lodash/_getData.js"),
+				u = o("./node_modules/lodash/_mergeData.js"),
+				d = o("./node_modules/lodash/_setData.js"),
+				c = o("./node_modules/lodash/_setWrapToString.js"),
+				p = o("./node_modules/lodash/toInteger.js"),
+				m = "Expected a function",
+				f = 1,
+				h = 2,
+				_ = 8,
+				y = 16,
+				v = 32,
+				b = 64,
+				g = Math.max;
+			e.exports = function(e, t, o, j, w, x, k, D) {
+				var E = t & h;
+				if (!E && "function" != typeof e) throw new TypeError(m);
+				var z = j ? j.length : 0;
+				if (z || (t &= ~(v | b), j = w = void 0), k = void 0 === k ? k : g(p(k), 0), D = void 0 === D ? D : p(D), z -= w ? w.length : 0, t & b) {
+					var S = j,
+						F = w;
+					j = w = void 0
+				}
+				var O = E ? void 0 : l(e),
+					C = [e, t, o, j, w, S, F, x, k, D];
+				if (O && u(C, O), e = C[0], t = C[1], o = C[2], j = C[3], w = C[4], !(D = C[9] = void 0 === C[9] ? E ? 0 : e.length : g(C[9] - z, 0)) && t & (_ | y) && (t &= ~(_ | y)), t && t != f) A = t == _ || t == y ? s(e, t, D) : t != v && t != (f | v) || w.length ? a.apply(void 0, C) : i(e, t, o, j);
+				else var A = r(e, t, o);
+				return c((O ? n : d)(A, C), e, t)
 			}
 		},
 		"./node_modules/lodash/_escapeHtmlChar.js": function(e, t, o) {
@@ -683,6 +879,114 @@
 				"'": "&#39;"
 			});
 			e.exports = n
+		},
+		"./node_modules/lodash/_getHolder.js": function(e, t) {
+			e.exports = function(e) {
+				return e.placeholder
+			}
+		},
+		"./node_modules/lodash/_getWrapDetails.js": function(e, t) {
+			var o = /\{\n\/\* \[wrapped with (.+)\] \*/,
+				n = /,? & /;
+			e.exports = function(e) {
+				var t = e.match(o);
+				return t ? t[1].split(n) : []
+			}
+		},
+		"./node_modules/lodash/_insertWrapDetails.js": function(e, t) {
+			var o = /\{(?:\n\/\* \[wrapped with .+\] \*\/)?\n?/;
+			e.exports = function(e, t) {
+				var n = t.length;
+				if (!n) return e;
+				var r = n - 1;
+				return t[r] = (n > 1 ? "& " : "") + t[r], t = t.join(n > 2 ? ", " : " "), e.replace(o, "{\n/* [wrapped with " + t + "] */\n")
+			}
+		},
+		"./node_modules/lodash/_mergeData.js": function(e, t, o) {
+			var n = o("./node_modules/lodash/_composeArgs.js"),
+				r = o("./node_modules/lodash/_composeArgsRight.js"),
+				s = o("./node_modules/lodash/_replaceHolders.js"),
+				a = "__lodash_placeholder__",
+				i = 1,
+				l = 2,
+				u = 4,
+				d = 8,
+				c = 128,
+				p = 256,
+				m = Math.min;
+			e.exports = function(e, t) {
+				var o = e[1],
+					f = t[1],
+					h = o | f,
+					_ = h < (i | l | c),
+					y = f == c && o == d || f == c && o == p && e[7].length <= t[8] || f == (c | p) && t[7].length <= t[8] && o == d;
+				if (!_ && !y) return e;
+				f & i && (e[2] = t[2], h |= o & i ? 0 : u);
+				var v = t[3];
+				if (v) {
+					var b = e[3];
+					e[3] = b ? n(b, v, t[4]) : v, e[4] = b ? s(e[3], a) : t[4]
+				}
+				return (v = t[5]) && (b = e[5], e[5] = b ? r(b, v, t[6]) : v, e[6] = b ? s(e[5], a) : t[6]), (v = t[7]) && (e[7] = v), f & c && (e[8] = null == e[8] ? t[8] : m(e[8], t[8])), null == e[9] && (e[9] = t[9]), e[0] = t[0], e[1] = h, e
+			}
+		},
+		"./node_modules/lodash/_reorder.js": function(e, t, o) {
+			var n = o("./node_modules/lodash/_copyArray.js"),
+				r = o("./node_modules/lodash/_isIndex.js"),
+				s = Math.min;
+			e.exports = function(e, t) {
+				for (var o = e.length, a = s(t.length, o), i = n(e); a--;) {
+					var l = t[a];
+					e[a] = r(l, o) ? i[l] : void 0
+				}
+				return e
+			}
+		},
+		"./node_modules/lodash/_replaceHolders.js": function(e, t) {
+			var o = "__lodash_placeholder__";
+			e.exports = function(e, t) {
+				for (var n = -1, r = e.length, s = 0, a = []; ++n < r;) {
+					var i = e[n];
+					i !== t && i !== o || (e[n] = o, a[s++] = n)
+				}
+				return a
+			}
+		},
+		"./node_modules/lodash/_setData.js": function(e, t, o) {
+			var n = o("./node_modules/lodash/_baseSetData.js"),
+				r = o("./node_modules/lodash/_shortOut.js")(n);
+			e.exports = r
+		},
+		"./node_modules/lodash/_setWrapToString.js": function(e, t, o) {
+			var n = o("./node_modules/lodash/_getWrapDetails.js"),
+				r = o("./node_modules/lodash/_insertWrapDetails.js"),
+				s = o("./node_modules/lodash/_setToString.js"),
+				a = o("./node_modules/lodash/_updateWrapDetails.js");
+			e.exports = function(e, t, o) {
+				var i = t + "";
+				return s(e, r(i, a(n(i), o)))
+			}
+		},
+		"./node_modules/lodash/_updateWrapDetails.js": function(e, t, o) {
+			var n = o("./node_modules/lodash/_arrayEach.js"),
+				r = o("./node_modules/lodash/_arrayIncludes.js"),
+				s = [
+					["ary", 128],
+					["bind", 1],
+					["bindKey", 2],
+					["curry", 8],
+					["curryRight", 16],
+					["flip", 512],
+					["partial", 32],
+					["partialRight", 64],
+					["rearg", 256]
+				];
+			e.exports = function(e, t) {
+				return n(s, (function(o) {
+					var n = "_." + o[0];
+					t & o[1] && !r(e, n) && e.push(n)
+				})), e.sort()
+			}
 		},
 		"./node_modules/lodash/chunk.js": function(e, t, o) {
 			var n = o("./node_modules/lodash/_baseSlice.js"),
@@ -704,6 +1008,16 @@
 			e.exports = function(e, t, o) {
 				return void 0 === o && (o = t, t = void 0), void 0 !== o && (o = (o = r(o)) == o ? o : 0), void 0 !== t && (t = (t = r(t)) == t ? t : 0), n(r(e), t, o)
 			}
+		},
+		"./node_modules/lodash/curryRight.js": function(e, t, o) {
+			var n = o("./node_modules/lodash/_createWrap.js"),
+				r = 16;
+
+			function s(e, t, o) {
+				var a = n(e, r, void 0, void 0, void 0, void 0, void 0, t = o ? void 0 : t);
+				return a.placeholder = s.placeholder, a
+			}
+			s.placeholder = {}, e.exports = s
 		},
 		"./node_modules/lodash/dropRightWhile.js": function(e, t, o) {
 			var n = o("./node_modules/lodash/_baseIteratee.js"),
@@ -1154,10 +1468,10 @@
 												var g = l.default(f / 1e3, y, v, _.val, _.stiffness, _.damping, _.precision);
 												y = g[0], v = g[1]
 											}
-											var w = l.default(f / 1e3, y, v, _.val, _.stiffness, _.damping, _.precision),
-												j = w[0],
-												x = w[1];
-											p[h] = y + (j - y) * s, m[h] = v + (x - v) * s, i[h] = y, d[h] = v
+											var j = l.default(f / 1e3, y, v, _.val, _.stiffness, _.damping, _.precision),
+												w = j[0],
+												x = j[1];
+											p[h] = y + (w - y) * s, m[h] = v + (x - v) * s, i[h] = y, d[h] = v
 										}
 									} r.animationID = null, r.accumulatedTime -= a * f, r.setState({
 									currentStyle: p,
@@ -1286,19 +1600,19 @@
 									v = {},
 									b = {},
 									g = {};
-								for (var w in _)
-									if (Object.prototype.hasOwnProperty.call(_, w)) {
-										var j = _[w];
-										if ("number" == typeof j) y[w] = j, v[w] = 0, b[w] = j, g[w] = 0;
+								for (var j in _)
+									if (Object.prototype.hasOwnProperty.call(_, j)) {
+										var w = _[j];
+										if ("number" == typeof w) y[j] = w, v[j] = 0, b[j] = w, g[j] = 0;
 										else {
-											for (var x = r.state.lastIdealStyles[h][w], k = r.state.lastIdealVelocities[h][w], D = 0; D < a; D++) {
-												var z = l.default(f / 1e3, x, k, j.val, j.stiffness, j.damping, j.precision);
-												x = z[0], k = z[1]
+											for (var x = r.state.lastIdealStyles[h][j], k = r.state.lastIdealVelocities[h][j], D = 0; D < a; D++) {
+												var E = l.default(f / 1e3, x, k, w.val, w.stiffness, w.damping, w.precision);
+												x = E[0], k = E[1]
 											}
-											var E = l.default(f / 1e3, x, k, j.val, j.stiffness, j.damping, j.precision),
-												F = E[0],
-												S = E[1];
-											y[w] = x + (F - x) * s, v[w] = k + (S - k) * s, b[w] = x, g[w] = k
+											var z = l.default(f / 1e3, x, k, w.val, w.stiffness, w.damping, w.precision),
+												S = z[0],
+												F = z[1];
+											y[j] = x + (S - x) * s, v[j] = k + (F - k) * s, b[j] = x, g[j] = k
 										}
 									} p[h] = y, m[h] = v, i[h] = b, d[h] = g
 							}
@@ -1437,10 +1751,10 @@
 							b = g;
 							break
 						} if (null == b) {
-						var w = e(v);
-						m[y] = w, h[y] = w;
-						var j = a.default(v.style);
-						f[y] = j, _[y] = j
+						var j = e(v);
+						m[y] = j, h[y] = j;
+						var w = a.default(v.style);
+						f[y] = w, _[y] = w
 					} else m[y] = s[b], h[y] = l[b], f[y] = i[b], _[y] = d[b]
 				}
 				return [c, m, f, h, _]
@@ -1488,26 +1802,26 @@
 									s = n - r.prevTime;
 								if (r.prevTime = n, r.accumulatedTime = r.accumulatedTime + s, r.accumulatedTime > 10 * h && (r.accumulatedTime = 0), 0 === r.accumulatedTime) return r.animationID = null, void r.startAnimationIfNecessary();
 								for (var a = (r.accumulatedTime - Math.floor(r.accumulatedTime / h) * h) / h, i = Math.floor(r.accumulatedTime / h), u = y(r.props.willEnter, r.props.willLeave, r.props.didLeave, r.state.mergedPropsStyles, o, r.state.currentStyles, r.state.currentVelocities, r.state.lastIdealStyles, r.state.lastIdealVelocities), c = u[0], m = u[1], f = u[2], v = u[3], b = u[4], g = 0; g < c.length; g++) {
-									var w = c[g].style,
-										j = {},
+									var j = c[g].style,
+										w = {},
 										x = {},
 										k = {},
 										D = {};
-									for (var z in w)
-										if (Object.prototype.hasOwnProperty.call(w, z)) {
-											var E = w[z];
-											if ("number" == typeof E) j[z] = E, x[z] = 0, k[z] = E, D[z] = 0;
+									for (var E in j)
+										if (Object.prototype.hasOwnProperty.call(j, E)) {
+											var z = j[E];
+											if ("number" == typeof z) w[E] = z, x[E] = 0, k[E] = z, D[E] = 0;
 											else {
-												for (var F = v[g][z], S = b[g][z], O = 0; O < i; O++) {
-													var C = l.default(h / 1e3, F, S, E.val, E.stiffness, E.damping, E.precision);
-													F = C[0], S = C[1]
+												for (var S = v[g][E], F = b[g][E], O = 0; O < i; O++) {
+													var C = l.default(h / 1e3, S, F, z.val, z.stiffness, z.damping, z.precision);
+													S = C[0], F = C[1]
 												}
-												var A = l.default(h / 1e3, F, S, E.val, E.stiffness, E.damping, E.precision),
+												var A = l.default(h / 1e3, S, F, z.val, z.stiffness, z.damping, z.precision),
 													T = A[0],
 													P = A[1];
-												j[z] = F + (T - F) * a, x[z] = S + (P - S) * a, k[z] = F, D[z] = S
+												w[E] = S + (T - S) * a, x[E] = F + (P - F) * a, k[E] = S, D[E] = F
 											}
-										} v[g] = k, b[g] = D, m[g] = j, f[g] = x
+										} v[g] = k, b[g] = D, m[g] = w, f[g] = x
 								}
 								r.animationID = null, r.accumulatedTime -= i * h, r.setState({
 									currentStyles: m,
@@ -1945,4 +2259,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~PostCreation.5c4160c6e1330f77c587.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~PostCreation.d9105be2164007413d7f.js.map
