@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.02eb562d4b0e8b2870f8.js
-// Retrieved at 7/24/2023, 1:20:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.f70da419bf246db01226.js
+// Retrieved at 7/25/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81"], {
 		"./src/lib/name/index.ts": function(e, t, r) {
@@ -2569,7 +2569,7 @@
 						} = t;
 						var b, m;
 						const p = Object(he.j)(e),
-							f = !!p && !Object(Oe.Mg)(p) && (i || p === Oe.qb.Community),
+							f = !!p && !Object(Oe.Lg)(p) && (i || p === Oe.qb.Community),
 							{
 								adsSeenCount: O,
 								totalPostsSeenCount: g,
@@ -7006,7 +7006,7 @@
 								experimentName: i.H,
 								expEventOverride: t
 							});
-							return !!(Object(i.Mg)(r) ? void 0 : r)
+							return !!(Object(i.Lg)(r) ? void 0 : r)
 						})(r)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -10302,21 +10302,21 @@
 						experimentEligibilitySelector: s.a,
 						experimentName: n.tc
 					});
-					return !(!t || Object(n.Mg)(t))
+					return !(!t || Object(n.Lg)(t))
 				},
 				o = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
 						experimentName: n.Bd
 					});
-					return !(!t || Object(n.Mg)(t))
+					return !(!t || Object(n.Lg)(t))
 				},
 				d = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
 						experimentName: n.Cc
 					});
-					return !(!t || Object(n.Mg)(t))
+					return !(!t || Object(n.Lg)(t))
 				}
 		},
 		"./src/reddit/selectors/experiments/communityChat.ts": function(e, t, r) {
@@ -10430,7 +10430,7 @@
 				}) === n.Zd,
 				d = e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.Gg
+					experimentName: n.Fg
 				}) === n.Zd
 		},
 		"./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts": function(e, t, r) {
@@ -11036,7 +11036,7 @@
 					var t;
 					const r = null === (t = e.platform.currentPage) || void 0 === t ? void 0 : t.urlParams,
 						n = r.subredditName;
-					return Object(m.a)(e) !== o.rg.TargetedOnboarding || n && Object(i.a)(n, {
+					return Object(m.a)(e) !== o.qg.TargetedOnboarding || n && Object(i.a)(n, {
 						countryCode: r.countryCode,
 						languageCode: r.languageCode
 					}) || !Object.keys(r).length
@@ -11047,7 +11047,7 @@
 					} = e.onboarding;
 					if (t.success || t.failure) return t
 				},
-				I = Object(s.a)(b.j, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(o.Mg)(e) ? t : null),
+				I = Object(s.a)(b.j, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(o.Lg)(e) ? t : null),
 				v = Object(s.a)(b.j, (e, t) => {
 					let {
 						pageLayer: r
@@ -11716,4 +11716,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.02eb562d4b0e8b2870f8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage~Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-Cl~5351df81.f70da419bf246db01226.js.map

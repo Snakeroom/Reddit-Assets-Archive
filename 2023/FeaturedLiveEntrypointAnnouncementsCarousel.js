@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.7764bb837ffc3a3c53cd.js
-// Retrieved at 7/24/2023, 1:20:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.debfbf59389e232bf225.js
+// Retrieved at 7/25/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeaturedLiveEntrypointAnnouncementsCarousel"], {
 		"./src/reddit/components/FeaturedLiveEntrypoint/AnnouncementsCarousel/index.m.less": function(e, n, t) {
@@ -105,7 +105,7 @@
 				g = (e, n) => t => {
 					if (t.experimentName) {
 						const n = e[t.experimentName.toLowerCase()];
-						if (n && Object(A.Mg)(n.variant)) return !1
+						if (n && Object(A.Lg)(n.variant)) return !1
 					}
 					return !((n[t.id] || 0) >= t.maxImpressionsCount)
 				};
@@ -221,7 +221,7 @@
 					activeIndex: h,
 					visibleAnnouncements: r,
 					setActiveIndex: N
-				}), k = (e => {
+				}), L = (e => {
 					let {
 						setIsHidden: n,
 						visibleAnnouncements: t
@@ -239,7 +239,7 @@
 				})({
 					visibleAnnouncements: r,
 					setIsHidden: m
-				}), L = (e => {
+				}), k = (e => {
 					let {
 						activeIndex: n,
 						setActiveIndex: t,
@@ -282,7 +282,7 @@
 					hk: "1R94KF"
 				})), o.a.createElement("button", {
 					className: f.a.CloseBtn,
-					onClick: k
+					onClick: L
 				}, o.a.createElement(l.a, {
 					name: "close"
 				})), o.a.createElement("div", {
@@ -308,7 +308,7 @@
 					}),
 					isActive: n === h,
 					key: e.id,
-					onClick: L
+					onClick: k
 				}))), r.length > 1 ? o.a.createElement("button", {
 					className: f.a.RightArrow,
 					onClick: w("next")
@@ -331,4 +331,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.7764bb837ffc3a3c53cd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.debfbf59389e232bf225.js.map
