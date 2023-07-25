@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.4b4d0df4d22a467913d4.js
-// Retrieved at 7/24/2023, 1:20:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.f19a96ccbde5e9ab3e83.js
+// Retrieved at 7/25/2023, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -21026,23 +21026,23 @@
 						if ("subscribers" === n) return !0
 					})
 				},
-				NE = (e, t) => {
+				NE = (e, t, n) => {
 					if (!t) return e;
-					const n = Object.keys(t);
-					if (!n.length) return e;
-					const r = {};
-					for (let s = 0; s < n.length; s++) {
-						const a = n[s],
-							c = e[a],
-							o = t[a];
-						c && !RE(c, o) || (r[a] = {
-							...c,
-							...o
-						})
+					const r = Object.keys(t);
+					if (!r.length) return e;
+					const s = {};
+					for (let a = 0; a < r.length; a++) {
+						const c = r[a],
+							o = e[c],
+							i = t[c];
+						o && !RE(o, i) || (s[c] = {
+							...o,
+							...i
+						}, n && (null == o ? void 0 : o.devPlatformMetadata) && (s[c].devPlatformMetadata = o.devPlatformMetadata))
 					}
-					return Object.keys(r).length ? {
+					return Object.keys(s).length ? {
 						...e,
-						...r
+						...s
 					} : e
 				};
 			var LE = function() {
@@ -21054,7 +21054,6 @@
 					case $g.c:
 					case P.b:
 					case P.f:
-					case Qy.b:
 					case Jg.d:
 					case zg.f:
 					case D.g:
@@ -21105,6 +21104,8 @@
 					case U.MORE_POSTS_LOADED:
 					case fr.B:
 						return NE(e, t.payload.subreddits || {});
+					case Qy.b:
+						return NE(e, t.payload.subreddits, !0);
 					case fe.f:
 					case fe.i:
 					case fe.r:
@@ -25651,4 +25652,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.4b4d0df4d22a467913d4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.f19a96ccbde5e9ab3e83.js.map
