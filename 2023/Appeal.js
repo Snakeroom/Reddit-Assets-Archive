@@ -1,18 +1,18 @@
-// https://www.redditstatic.com/desktop2x/Appeal.0092339f0b627c5429a9.js
-// Retrieved at 7/12/2023, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Appeal.0d4d3adf4987e87fe761.js
+// Retrieved at 7/26/2023, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Appeal"], {
-		"./src/lib/validateEmail/index.ts": function(e, a, t) {
+		"./src/lib/validateEmail/index.ts": function(e, t, a) {
 			"use strict";
-			t.d(a, "a", (function() {
+			a.d(t, "a", (function() {
 				return n
 			}));
-			const n = (e, a) => {
-				if (!e && a) return !0;
+			const n = (e, t) => {
+				if (!e && t) return !0;
 				return /^.+\@.+\..+$/.test(e)
 			}
 		},
-		"./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.m.less": function(e, a, t) {
+		"./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.m.less": function(e, t, a) {
 			e.exports = {
 				input: "_21N5nyVpBzbYCGTZ5WIri4",
 				field: "_3K-rjepIoTAwKn_2B6UjSe",
@@ -31,31 +31,31 @@
 				invalid: "_1G5fQQh3gLl4hc3DIMA5j3"
 			}
 		},
-		"./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.tsx": function(e, a, t) {
+		"./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.tsx": function(e, t, a) {
 			"use strict";
-			t.d(a, "d", (function() {
+			a.d(t, "d", (function() {
 				return b
-			})), t.d(a, "a", (function() {
+			})), a.d(t, "a", (function() {
 				return f
-			})), t.d(a, "b", (function() {
+			})), a.d(t, "b", (function() {
 				return x
-			})), t.d(a, "c", (function() {
+			})), a.d(t, "c", (function() {
 				return k
 			}));
-			var n = t("./node_modules/react/index.js"),
-				r = t.n(n),
-				i = t("./src/lib/classNames/index.ts"),
-				l = t("./src/lib/lessComponent.tsx"),
-				s = t("./src/reddit/controls/Input/index.tsx"),
-				o = t("./src/reddit/icons/svgs/Checkmark/index.tsx"),
-				c = t("./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.m.less"),
-				d = t.n(c);
+			var n = a("./node_modules/react/index.js"),
+				r = a.n(n),
+				i = a("./src/lib/classNames/index.ts"),
+				l = a("./src/lib/lessComponent.tsx"),
+				s = a("./src/reddit/controls/Input/index.tsx"),
+				o = a("./src/reddit/icons/svgs/Checkmark/index.tsx"),
+				c = a("./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.m.less"),
+				d = a.n(c);
 
 			function p() {
 				return (p = Object.assign || function(e) {
-					for (var a = 1; a < arguments.length; a++) {
-						var t = arguments[a];
-						for (var n in t) Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n])
+					for (var t = 1; t < arguments.length; t++) {
+						var a = arguments[t];
+						for (var n in a) Object.prototype.hasOwnProperty.call(a, n) && (e[n] = a[n])
 					}
 					return e
 				}).apply(this, arguments)
@@ -95,8 +95,8 @@
 				}, e.state === b.Valid && r.a.createElement(o.a, null), e.state === b.Invalid && r.a.createElement(h, null, "!")))),
 				x = e => {
 					const {
-						backgroundColorState: a,
-						className: t,
+						backgroundColorState: t,
+						className: a,
 						inputRef: n,
 						isRequired: l,
 						label: o,
@@ -105,8 +105,8 @@
 						...u
 					} = e;
 					return r.a.createElement(g, {
-						backgroundColorState: a,
-						className: t,
+						backgroundColorState: t,
+						className: a,
 						isRequired: l,
 						label: o,
 						state: m
@@ -121,8 +121,8 @@
 				},
 				k = e => {
 					const {
-						backgroundColorState: a,
-						className: t,
+						backgroundColorState: t,
+						className: a,
 						inputRef: n,
 						isRequired: l,
 						label: s,
@@ -131,8 +131,8 @@
 						...m
 					} = e;
 					return r.a.createElement(g, {
-						backgroundColorState: a,
-						className: t,
+						backgroundColorState: t,
+						className: a,
 						isRequired: l,
 						label: s,
 						state: c,
@@ -147,71 +147,71 @@
 					})))
 				}
 		},
-		"./src/reddit/controls/Form/index.tsx": function(e, a, t) {
+		"./src/reddit/controls/Form/index.tsx": function(e, t, a) {
 			"use strict";
-			t.d(a, "a", (function() {
+			a.d(t, "a", (function() {
 				return i
 			}));
-			var n = t("./node_modules/react/index.js"),
-				r = t.n(n);
+			var n = a("./node_modules/react/index.js"),
+				r = a.n(n);
 
 			function i(e) {
 				const {
-					children: a,
-					className: t,
+					children: t,
+					className: a,
 					onSubmit: n
 				} = e;
 				return r.a.createElement("form", {
-					className: t,
+					className: a,
 					onSubmit: l(n)
-				}, a)
+				}, t)
 			}
-			const l = e => a => {
+			const l = e => t => {
 					if (!e) return;
-					a.preventDefault();
-					const t = a.target,
-						n = s(t);
+					t.preventDefault();
+					const a = t.target,
+						n = s(a);
 					e(n)
 				},
-				s = e => e && "form" === e.nodeName.toLowerCase() ? Array.from(e.elements).reduce((e, a) => (a.name && (e[a.name] = a.value), e), {}) : {}
+				s = e => e && "form" === e.nodeName.toLowerCase() ? Array.from(e.elements).reduce((e, t) => (t.name && (e[t.name] = t.value), e), {}) : {}
 		},
-		"./src/reddit/controls/Input/index.tsx": function(e, a, t) {
+		"./src/reddit/controls/Input/index.tsx": function(e, t, a) {
 			"use strict";
-			var n = t("./src/lib/lessComponent.tsx"),
-				r = t("./src/reddit/controls/Input/index.m.less"),
-				i = t.n(r);
-			a.a = n.a.input("input", i.a)
+			var n = a("./src/lib/lessComponent.tsx"),
+				r = a("./src/reddit/controls/Input/index.m.less"),
+				i = a.n(r);
+			t.a = n.a.input("input", i.a)
 		},
-		"./src/reddit/endpoints/appeal/index.ts": function(e, a, t) {
+		"./src/reddit/endpoints/appeal/index.ts": function(e, t, a) {
 			"use strict";
-			t.d(a, "a", (function() {
+			a.d(t, "a", (function() {
 				return p
-			})), t.d(a, "b", (function() {
+			})), a.d(t, "b", (function() {
 				return m
-			})), t.d(a, "d", (function() {
+			})), a.d(t, "d", (function() {
 				return u
-			})), t.d(a, "c", (function() {
+			})), a.d(t, "c", (function() {
 				return h
-			})), t.d(a, "e", (function() {
+			})), a.d(t, "e", (function() {
 				return b
-			})), t.d(a, "f", (function() {
+			})), a.d(t, "f", (function() {
 				return f
 			}));
-			var n = t("./src/lib/constants/index.ts"),
-				r = t("./src/lib/makeApiRequest/index.ts"),
-				i = t("./src/lib/makeGqlRequest/index.ts"),
-				l = t("./src/lib/omitHeaders/index.ts"),
-				s = t("./src/reddit/constants/headers.ts"),
-				o = t("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
-				c = t("./src/redditGQL/operations/AppealEligibility.json"),
-				d = t("./src/redditGQL/operations/RequestAppeal.json");
-			const p = (e, a, t) => Object(r.a)(Object(l.a)(e, [s.a]), {
+			var n = a("./src/lib/constants/index.ts"),
+				r = a("./src/lib/makeApiRequest/index.ts"),
+				i = a("./src/lib/makeGqlRequest/index.ts"),
+				l = a("./src/lib/omitHeaders/index.ts"),
+				s = a("./src/reddit/constants/headers.ts"),
+				o = a("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
+				c = a("./src/redditGQL/operations/AppealEligibility.json"),
+				d = a("./src/redditGQL/operations/RequestAppeal.json");
+			const p = (e, t, a) => Object(r.a)(Object(l.a)(e, [s.a]), {
 					method: n.ob.POST,
 					endpoint: Object(o.a)(`${e.apiUrl}/api/appeal`),
 					data: {
 						api_type: "json",
-						description: a,
-						email: t
+						description: t,
+						email: a
 					}
 				}),
 				m = e => Object(r.a)(Object(l.a)(e, [s.a]), {
@@ -222,27 +222,27 @@
 					}
 				}),
 				u = e => {
-					var a;
-					return Boolean(e && e.data && (null === (a = e.data.identity) || void 0 === a ? void 0 : a.adminDecisions))
+					var t;
+					return Boolean(e && e.data && (null === (t = e.data.identity) || void 0 === t ? void 0 : t.adminDecisions))
 				},
-				h = (e, a) => Object(i.a)(e, {
+				h = (e, t) => Object(i.a)(e, {
 					...c,
 					variables: {
-						decisionId: a
+						decisionId: t
 					}
 				}),
 				b = e => {
-					var a;
-					return Boolean(e && e.data && (null === (a = e.data.requestAppeal) || void 0 === a ? void 0 : a.ok))
+					var t;
+					return Boolean(e && e.data && (null === (t = e.data.requestAppeal) || void 0 === t ? void 0 : t.ok))
 				},
-				f = (e, a) => Object(i.a)(e, {
+				f = (e, t) => Object(i.a)(e, {
 					...d,
 					variables: {
-						input: a
+						input: t
 					}
 				})
 		},
-		"./src/reddit/pages/AppealPage/index.m.less": function(e, a, t) {
+		"./src/reddit/pages/AppealPage/index.m.less": function(e, t, a) {
 			e.exports = {
 				content: "_3MnGFxJCm1MO2z_Wyl13KK",
 				link: "_1sfty8WR4B7523GQl6NyyR",
@@ -271,34 +271,34 @@
 				submitButton: "_2AfOr4WVntuMal-kzYlZah"
 			}
 		},
-		"./src/reddit/pages/AppealPage/index.tsx": function(e, a, t) {
+		"./src/reddit/pages/AppealPage/index.tsx": function(e, t, a) {
 			"use strict";
-			t.r(a);
-			var n = t("./node_modules/fbt/lib/FbtPublic.js"),
-				r = t("./node_modules/react/index.js"),
-				i = t.n(r),
-				l = t("./node_modules/react-redux/es/index.js"),
-				s = t("./node_modules/reselect/es/index.js"),
-				o = t("./src/lib/validateEmail/index.ts"),
-				c = t("./src/reddit/pages/AppealPage/index.m.less"),
-				d = t.n(c),
-				p = t("./src/reddit/actions/users.ts"),
-				m = t("./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.tsx"),
-				u = t("./src/reddit/contexts/ApiContext.tsx"),
-				h = t("./src/reddit/controls/Button/index.tsx"),
-				b = t("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
-				f = t("./src/reddit/controls/Form/index.tsx"),
-				g = t("./src/reddit/endpoints/appeal/index.ts"),
-				x = t("./src/reddit/selectors/user.ts");
+			a.r(t);
+			var n = a("./node_modules/fbt/lib/FbtPublic.js"),
+				r = a("./node_modules/react/index.js"),
+				i = a.n(r),
+				l = a("./node_modules/react-redux/es/index.js"),
+				s = a("./node_modules/reselect/es/index.js"),
+				o = a("./src/lib/validateEmail/index.ts"),
+				c = a("./src/reddit/pages/AppealPage/index.m.less"),
+				d = a.n(c),
+				p = a("./src/reddit/actions/users.ts"),
+				m = a("./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.tsx"),
+				u = a("./src/reddit/contexts/ApiContext.tsx"),
+				h = a("./src/reddit/controls/Button/index.tsx"),
+				b = a("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
+				f = a("./src/reddit/controls/Form/index.tsx"),
+				g = a("./src/reddit/endpoints/appeal/index.ts"),
+				x = a("./src/reddit/selectors/user.ts");
 			const k = "https://www.redditinc.com/policies/content-policy",
 				y = "https://www.reddithelp.com/en/categories/rules-reporting/account-and-community-restrictions/suspensions",
 				C = Object(s.c)({
 					currentUser: x.m
 				}),
-				E = Object(l.b)(C, e => ({
+				_ = Object(l.b)(C, e => ({
 					logoutUser: () => e(Object(p.p)())
 				}));
-			class _ extends i.a.Component {
+			class E extends i.a.Component {
 				constructor() {
 					super(...arguments), this.isUnmounted = !1, this.state = {
 						appealError: null,
@@ -326,11 +326,11 @@
 							descriptionDirty: !0
 						})
 					}, this.handleEmailChange = e => {
-						const a = e.currentTarget.value;
+						const t = e.currentTarget.value;
 						this.setState({
-							email: a,
+							email: t,
 							emailDirty: !0,
-							emailValid: Object(o.a)(a, !0)
+							emailValid: Object(o.a)(t, !0)
 						})
 					}, this.handlePolicyCheckboxClick = () => {
 						this.setState({
@@ -340,23 +340,23 @@
 					}, this.handleSubmit = async () => {
 						const {
 							props: e,
-							state: a
+							state: t
 						} = this;
 						if (this.setState({
 								descriptionDirty: !1,
 								emailDirty: !1,
 								policyCheckboxDirty: !1,
 								submitWasClicked: !0
-							}), a.emailValid && a.description.length > 0 && a.policyCheckboxChecked) {
-							if (a.appealPending) return;
+							}), t.emailValid && t.description.length > 0 && t.policyCheckboxChecked) {
+							if (t.appealPending) return;
 							this.setState({
 								appealPending: !0
 							});
-							const t = await Object(g.a)(e.apiContext(), a.description, a.email ? a.email : void 0);
-							t.ok ? this.setState({
+							const a = await Object(g.a)(e.apiContext(), t.description, t.email ? t.email : void 0);
+							a.ok ? this.setState({
 								appealSuccess: !0
 							}) : this.setState({
-								appealError: t.error,
+								appealError: a.error,
 								appealPending: !1
 							})
 						}
@@ -388,8 +388,8 @@
 						hk: "2VTm7m"
 					}))), this.renderForm = e => {
 						const {
-							props: a,
-							state: t
+							props: t,
+							state: a
 						} = this, {
 							canShowWarning: r,
 							description: l,
@@ -400,7 +400,7 @@
 							policyCheckboxChecked: u,
 							policyCheckboxDirty: g,
 							submitWasClicked: x
-						} = t;
+						} = a;
 						return i.a.createElement(i.a.Fragment, null, r && e && this.renderWarning(), i.a.createElement(f.a, {
 							className: d.a.appealForm,
 							onSubmit: this.handleSubmit
@@ -435,7 +435,7 @@
 								hk: "1vE7k6"
 							}),
 							state: x ? m.d.Valid : void 0,
-							value: a.currentUser.displayText
+							value: t.currentUser.displayText
 						}), i.a.createElement("div", {
 							className: d.a.appealFormFieldComment
 						}, n.fbt._("You can only appeal the account that you are logged into. If you are having trouble logging into another account, troubleshoot in our {=Help Center} .", [n.fbt._param("=Help Center", i.a.createElement("a", {
@@ -447,11 +447,11 @@
 							hk: "1nt3UL"
 						})))], {
 							hk: "39gK6E"
-						}))), a.currentUser.hasVerifiedEmail ? null : i.a.createElement("fieldset", {
+						}))), t.currentUser.hasVerifiedEmail ? null : i.a.createElement("fieldset", {
 							className: d.a.appealFormFieldSet
 						}, i.a.createElement(m.b, {
 							className: d.a.labeledInput,
-							disabled: e || t.appealPending,
+							disabled: e || a.appealPending,
 							label: n.fbt._("Email address (optional)", null, {
 								hk: "kQmzp"
 							}),
@@ -478,7 +478,7 @@
 							className: d.a.appealFormField
 						}, i.a.createElement(m.c, {
 							className: d.a.labeledTextArea,
-							disabled: e || t.appealPending,
+							disabled: e || a.appealPending,
 							label: n.fbt._("Brief description", null, {
 								hk: "Zpp5W"
 							}),
@@ -492,13 +492,13 @@
 							hk: "1HEyz"
 						})), i.a.createElement("div", {
 							className: d.a.textAreaCounter
-						}, n.fbt._("{length}", [n.fbt._param("length", (l.length / 250).toString())], {
+						}, n.fbt._("{length}", [n.fbt._param("length", l.length.toString())], {
 							hk: "3fYpQM"
-						})))), i.a.createElement("div", {
+						}), "/ ", 250..toString()))), i.a.createElement("div", {
 							className: d.a.policyCheckboxWrapper
 						}, i.a.createElement(b.a, {
 							className: d.a.policyCheckbox,
-							disabled: e || t.appealPending,
+							disabled: e || a.appealPending,
 							isSelected: u,
 							text: this.getCheckboxText(),
 							onClick: this.handlePolicyCheckboxClick
@@ -506,15 +506,15 @@
 							className: d.a.checkboxErrorMessage
 						}, n.fbt._("Required", null, {
 							hk: "zBEsu"
-						}))), t.appealError && t.appealError.fields && t.appealError.fields.map(e => i.a.createElement("div", {
+						}))), a.appealError && a.appealError.fields && a.appealError.fields.map(e => i.a.createElement("div", {
 							className: d.a.errorMessage,
 							key: e.field
 						}, e.msg)), i.a.createElement("fieldset", {
 							className: d.a.submitButtonPanel
 						}, i.a.createElement(h.l, {
 							className: d.a.submitButton,
-							disabled: e || t.appealPending
-						}, t.appealPending ? n.fbt._("Pending", null, {
+							disabled: e || a.appealPending
+						}, a.appealPending ? n.fbt._("Pending", null, {
 							hk: "3FtnOm"
 						}) : n.fbt._("Submit", null, {
 							hk: "4aU3dh"
@@ -556,53 +556,52 @@
 				render() {
 					const {
 						props: e,
-						state: a
+						state: t
 					} = this;
 					if (!e.currentUser) return null;
-					const t = e.currentUser.isFPR || !a.eligibleForAppeal;
+					const a = e.currentUser.isFPR || !t.eligibleForAppeal;
 					return i.a.createElement("div", {
 						className: d.a.content
 					}, i.a.createElement("h1", {
 						className: d.a.appealPageHeader
 					}, n.fbt._("Appeal suspension", null, {
 						hk: "3LDNeF"
-					})), a.appealSuccess ? this.renderConfirmationPage() : this.renderForm(t))
+					})), t.appealSuccess ? this.renderConfirmationPage() : this.renderForm(a))
 				}
 			}
-			a.default = Object(u.b)(E(_))
+			t.default = Object(u.b)(_(E))
 		},
-		"./src/reddit/pages/AppealUniquePage/index.tsx": function(e, a, t) {
+		"./src/reddit/pages/AppealUniquePage/index.tsx": function(e, t, a) {
 			"use strict";
-			t.r(a);
-			var n = t("./node_modules/fbt/lib/FbtPublic.js"),
-				r = t("./node_modules/react/index.js"),
-				i = t.n(r),
-				l = t("./node_modules/react-redux/es/index.js"),
-				s = t("./node_modules/reselect/es/index.js"),
-				o = t("./src/lib/validateEmail/index.ts"),
-				c = t("./src/reddit/actions/toaster.ts"),
-				d = t("./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.tsx"),
-				p = t("./src/reddit/contexts/ApiContext.tsx"),
-				m = t("./src/reddit/controls/Button/index.tsx"),
-				u = t("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
-				h = t("./src/reddit/controls/Form/index.tsx"),
-				b = t("./src/reddit/endpoints/appeal/index.ts"),
-				f = t("./src/reddit/pages/AppealPage/index.m.less"),
-				g = t.n(f),
-				x = t("./src/reddit/selectors/user.ts"),
-				k = t("./src/redditGQL/types.ts");
-			const y = "https://www.redditinc.com/policies/content-policy",
-				C = "https://www.reddithelp.com/en/categories/rules-reporting/account-and-community-restrictions/suspensions",
-				E = {
-					[k.m.PrescriptivePeriodExpired]: "You've passed the six-month period for submitting an appeal on this decision",
-					[k.m.ExistingAppeal]: "You've already appealed this decision",
-					[k.m.NoMatchingDecision]: "This appeal is not connected to this account"
+			a.r(t);
+			var n = a("./node_modules/fbt/lib/FbtPublic.js"),
+				r = a("./node_modules/react/index.js"),
+				i = a.n(r),
+				l = a("./node_modules/react-redux/es/index.js"),
+				s = a("./node_modules/reselect/es/index.js"),
+				o = a("./src/reddit/actions/toaster.ts"),
+				c = a("./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.tsx"),
+				d = a("./src/reddit/contexts/ApiContext.tsx"),
+				p = a("./src/reddit/controls/Button/index.tsx"),
+				m = a("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
+				u = a("./src/reddit/controls/Form/index.tsx"),
+				h = a("./src/reddit/endpoints/appeal/index.ts"),
+				b = a("./src/reddit/pages/AppealPage/index.m.less"),
+				f = a.n(b),
+				g = a("./src/reddit/selectors/user.ts"),
+				x = a("./src/redditGQL/types.ts");
+			const k = "https://www.redditinc.com/policies/content-policy",
+				y = "https://www.reddithelp.com/en/categories/rules-reporting/account-and-community-restrictions/suspensions",
+				C = {
+					[x.m.PrescriptivePeriodExpired]: "You've passed the six-month period for submitting an appeal on this decision",
+					[x.m.ExistingAppeal]: "You've already appealed this decision",
+					[x.m.NoMatchingDecision]: "This appeal is not connected to this account"
 				},
 				_ = Object(s.c)({
-					currentUser: x.m
+					currentUser: g.m
 				}),
-				v = Object(l.b)(_);
-			class F extends i.a.Component {
+				E = Object(l.b)(_);
+			class v extends i.a.Component {
 				constructor() {
 					super(...arguments), this.isUnmounted = !1, this.state = {
 						appealError: !1,
@@ -613,35 +612,25 @@
 						descriptionDirty: !0,
 						eligibleForAppeal: !1,
 						appealEligibility: null,
-						email: "",
-						emailDirty: !0,
-						emailValid: !0,
 						policyCheckboxChecked: !1,
 						policyCheckboxDirty: !0,
 						submitWasClicked: !1
 					}, this.componentDidMount = async () => {
 						const {
 							id: e
-						} = this.props.match.params, a = await Object(b.c)(this.props.gqlContext(), e);
-						if (!this.isUnmounted && a.ok && Object(b.d)(a.body)) {
-							const e = a.body.data.identity.adminDecisions[0].appealEligibility;
+						} = this.props.match.params, t = await Object(h.c)(this.props.gqlContext(), e);
+						if (!this.isUnmounted && t.ok && Object(h.d)(t.body)) {
+							const e = t.body.data.identity.adminDecisions[0].appealEligibility;
 							this.setState({
 								canShowWarning: !0,
-								eligibleForAppeal: e === k.m.Eligible,
+								eligibleForAppeal: e === x.m.Eligible,
 								appealEligibility: e
 							})
-						} else Object(c.d)()
+						} else Object(o.d)()
 					}, this.handleDescriptionChange = e => {
 						this.setState({
 							description: e.currentTarget.value,
 							descriptionDirty: !0
-						})
-					}, this.handleEmailChange = e => {
-						const a = e.currentTarget.value;
-						this.setState({
-							email: a,
-							emailDirty: !0,
-							emailValid: Object(o.a)(a, !0)
 						})
 					}, this.handlePolicyCheckboxClick = () => {
 						this.setState({
@@ -651,25 +640,24 @@
 					}, this.handleSubmit = async () => {
 						const {
 							props: e,
-							state: a
+							state: t
 						} = this, {
-							id: t
+							id: a
 						} = e.match.params;
 						if (this.setState({
 								descriptionDirty: !1,
-								emailDirty: !1,
 								policyCheckboxDirty: !1,
 								submitWasClicked: !0
-							}), a.emailValid && a.description.length > 0 && a.policyCheckboxChecked) {
-							if (a.appealPending) return;
+							}), t.description.length > 0 && t.policyCheckboxChecked) {
+							if (t.appealPending) return;
 							this.setState({
 								appealPending: !0
 							});
-							const e = await Object(b.f)(this.props.gqlContext(), {
-								message: a.description,
-								id: t
+							const e = await Object(h.f)(this.props.gqlContext(), {
+								message: t.description,
+								id: a
 							});
-							e.ok && Object(b.e)(e.body) ? this.setState({
+							e.ok && Object(h.e)(e.body) ? this.setState({
 								appealSuccess: !0
 							}) : this.setState({
 								appealError: !0,
@@ -677,86 +665,83 @@
 							})
 						}
 					}, this.getCheckboxText = () => i.a.createElement("label", null, n.fbt._("I have read the {=Reddit Content Policy} and the {=Suspensions help article} .", [n.fbt._param("=Reddit Content Policy", i.a.createElement("a", {
-						className: g.a.link,
+						className: f.a.link,
 						target: "_blank",
-						href: y,
+						href: k,
 						rel: "noopener noreferrer"
 					}, n.fbt._("Reddit Content Policy", null, {
 						hk: "1zrL2W"
 					}))), n.fbt._param("=Suspensions help article", i.a.createElement("a", {
-						className: g.a.link,
+						className: f.a.link,
 						target: "_blank",
-						href: C,
+						href: y,
 						rel: "noopener noreferrer"
 					}, n.fbt._("Suspensions help article", null, {
 						hk: "1M9zrX"
 					})))], {
 						hk: "3Fr8Lf"
-					})), this.renderConfirmationPage = () => i.a.createElement(h.a, {
-						className: g.a.appealForm
+					})), this.renderConfirmationPage = () => i.a.createElement(u.a, {
+						className: f.a.appealForm
 					}, i.a.createElement("div", {
-						className: g.a.appealFormHeader
+						className: f.a.appealFormHeader
 					}, n.fbt._("Appeal received", null, {
 						hk: "3lQu7u"
 					})), i.a.createElement("div", {
-						className: g.a.appealFormDescription
+						className: f.a.appealFormDescription
 					}, n.fbt._("Thanks for submitting your request. We will review your submission and be in touch if the status of your account's restriction is changed. Please note that suspensions which were correctly issued will not be reversed or lifted prematurely.", null, {
 						hk: "2VTm7m"
 					}))), this.renderForm = e => {
 						const {
-							props: a,
-							state: t
+							props: t,
+							state: a
 						} = this, {
 							canShowWarning: r,
 							description: l,
 							descriptionDirty: s,
-							email: o,
-							emailDirty: c,
-							emailValid: p,
-							policyCheckboxChecked: b,
-							policyCheckboxDirty: f,
-							submitWasClicked: x,
-							appealEligibility: k
-						} = t;
-						return i.a.createElement(i.a.Fragment, null, r && e && this.renderWarning(k), i.a.createElement(h.a, {
-							className: g.a.appealForm,
+							policyCheckboxChecked: o,
+							policyCheckboxDirty: d,
+							submitWasClicked: h,
+							appealEligibility: b
+						} = a;
+						return i.a.createElement(i.a.Fragment, null, r && e && this.renderWarning(b), i.a.createElement(u.a, {
+							className: f.a.appealForm,
 							onSubmit: this.handleSubmit
 						}, i.a.createElement("div", {
-							className: g.a.appealFormHeader
+							className: f.a.appealFormHeader
 						}, n.fbt._("Submit an appeal", null, {
 							hk: "1CoPRt"
 						})), i.a.createElement("div", {
-							className: g.a.appealFormDescription
+							className: f.a.appealFormDescription
 						}, n.fbt._("If you have reviewed the {=Reddit Content Policy} and our {=Suspensions help article} and believe your account has been wrongfully suspended, submit this form and we'll review your request.", [n.fbt._param("=Reddit Content Policy", i.a.createElement("a", {
-							className: g.a.link,
+							className: f.a.link,
 							target: "_blank",
-							href: y,
+							href: k,
 							rel: "noopener noreferrer"
 						}, n.fbt._("Reddit Content Policy", null, {
 							hk: "4qL67J"
 						}))), n.fbt._param("=Suspensions help article", i.a.createElement("a", {
-							className: g.a.link,
+							className: f.a.link,
 							target: "_blank",
-							href: C,
+							href: y,
 							rel: "noopener noreferrer"
 						}, n.fbt._("Suspensions help article", null, {
 							hk: "3LTtzC"
 						})))], {
 							hk: "2Unawp"
 						})), i.a.createElement("fieldset", {
-							className: g.a.appealFormFieldSet
-						}, i.a.createElement(d.b, {
-							className: g.a.labeledInput,
+							className: f.a.appealFormFieldSet
+						}, i.a.createElement(c.b, {
+							className: f.a.labeledInput,
 							disabled: !0,
 							label: n.fbt._("Username", null, {
 								hk: "1vE7k6"
 							}),
-							state: x ? d.d.Valid : void 0,
-							value: a.currentUser.displayText
+							state: h ? c.d.Valid : void 0,
+							value: t.currentUser.displayText
 						}), i.a.createElement("div", {
-							className: g.a.appealFormFieldComment
+							className: f.a.appealFormFieldComment
 						}, n.fbt._("You can only appeal the account that you are logged into. If you are having trouble logging into another account, troubleshoot in our {=Help Center} .", [n.fbt._param("=Help Center", i.a.createElement("a", {
-							className: g.a.link,
+							className: f.a.link,
 							href: "https://www.reddithelp.com/",
 							target: "_blank",
 							rel: "noopener noreferrer"
@@ -764,84 +749,63 @@
 							hk: "1nt3UL"
 						})))], {
 							hk: "39gK6E"
-						}))), a.currentUser.hasVerifiedEmail ? null : i.a.createElement("fieldset", {
-							className: g.a.appealFormFieldSet
-						}, i.a.createElement(d.b, {
-							className: g.a.labeledInput,
-							disabled: e || t.appealPending,
-							label: n.fbt._("Email address (optional)", null, {
-								hk: "kQmzp"
-							}),
-							maxLength: 100,
-							onChange: this.handleEmailChange,
-							state: !o || c ? void 0 : p ? d.d.Valid : d.d.Invalid,
-							type: "email",
-							value: o
-						}), p || c ? null : i.a.createElement("div", {
-							className: g.a.errorMessage
-						}, n.fbt._("Enter a valid email address", null, {
-							hk: "2NC6Ve"
-						})), i.a.createElement("div", {
-							className: g.a.appealFormFieldComment
-						}, n.fbt._("We will use this email address if we need to contact you for additional information.", null, {
-							hk: "3cAASn"
 						}))), i.a.createElement("fieldset", {
-							className: g.a.appealFormFieldSet
+							className: f.a.appealFormFieldSet
 						}, i.a.createElement("div", {
-							className: g.a.appealFormFieldDescription
+							className: f.a.appealFormFieldDescription
 						}, n.fbt._("Help us understand why you have not violated our policy and have been suspended in error.", null, {
 							hk: "AxUTy"
 						})), i.a.createElement("div", {
-							className: g.a.appealFormField
-						}, i.a.createElement(d.c, {
-							className: g.a.labeledTextArea,
-							disabled: e || t.appealPending,
+							className: f.a.appealFormField
+						}, i.a.createElement(c.c, {
+							className: f.a.labeledTextArea,
+							disabled: e || a.appealPending,
 							label: n.fbt._("Brief description", null, {
 								hk: "Zpp5W"
 							}),
 							maxLength: 250,
 							onChange: this.handleDescriptionChange,
-							state: s ? void 0 : l ? d.d.Valid : d.d.Invalid,
+							state: s ? void 0 : l ? c.d.Valid : c.d.Invalid,
 							value: l
 						}), !l && !s && i.a.createElement("div", {
-							className: g.a.errorMessage
+							className: f.a.errorMessage
 						}, n.fbt._("Enter a brief description", null, {
 							hk: "1HEyz"
 						})), i.a.createElement("div", {
-							className: g.a.textAreaCounter
-						}, n.fbt._("{length}", [n.fbt._param("length", (l.length / 250).toString())], {
+							className: f.a.textAreaCounter
+						}, n.fbt._("{length}", [n.fbt._param("length", l.length.toString())], {
 							hk: "3fYpQM"
-						})))), i.a.createElement("div", {
-							className: g.a.policyCheckboxWrapper
-						}, i.a.createElement(u.a, {
-							className: g.a.policyCheckbox,
-							disabled: e || t.appealPending,
-							isSelected: b,
+						}), "/ ", 250..toString()))), i.a.createElement("div", {
+							className: f.a.policyCheckboxWrapper
+						}, i.a.createElement(m.a, {
+							className: f.a.policyCheckbox,
+							disabled: e || a.appealPending,
+							isSelected: o,
 							text: this.getCheckboxText(),
 							onClick: this.handlePolicyCheckboxClick
-						}), b || f ? null : i.a.createElement("div", {
-							className: g.a.checkboxErrorMessage
+						}), o || d ? null : i.a.createElement("div", {
+							className: f.a.checkboxErrorMessage
 						}, n.fbt._("Required", null, {
 							hk: "zBEsu"
-						}))), t.appealError && i.a.createElement("div", {
-							className: g.a.errorMessage
+						}))), a.appealError && i.a.createElement("div", {
+							className: f.a.errorMessage
 						}, n.fbt._("Oops, something went wrong. Refresh and try again.", null, {
 							hk: "pDGGC"
 						})), i.a.createElement("fieldset", {
-							className: g.a.submitButtonPanel
-						}, i.a.createElement(m.l, {
-							className: g.a.submitButton,
-							disabled: e || t.appealPending
-						}, t.appealPending ? n.fbt._("Pending", null, {
+							className: f.a.submitButtonPanel
+						}, i.a.createElement(p.l, {
+							className: f.a.submitButton,
+							disabled: e || a.appealPending
+						}, a.appealPending ? n.fbt._("Pending", null, {
 							hk: "3FtnOm"
 						}) : n.fbt._("Submit", null, {
 							hk: "4aU3dh"
 						})))))
 					}, this.renderWarning = e => i.a.createElement("div", {
-						className: g.a.appealFormWarning
+						className: f.a.appealFormWarning
 					}, i.a.createElement("div", {
-						className: g.a.appealFormWarningHeader
-					}, n.fbt._("{text}", [n.fbt._param("text", `${E[e]}`)], {
+						className: f.a.appealFormWarningHeader
+					}, n.fbt._("{text}", [n.fbt._param("text", `${C[e]}`)], {
 						hk: "1l5LDo"
 					})))
 				}
@@ -851,20 +815,20 @@
 				render() {
 					const {
 						props: e,
-						state: a
+						state: t
 					} = this;
 					if (!e.currentUser) return null;
-					const t = e.currentUser.isFPR || !a.eligibleForAppeal;
+					const a = e.currentUser.isFPR || !t.eligibleForAppeal;
 					return i.a.createElement("div", {
-						className: g.a.content
+						className: f.a.content
 					}, i.a.createElement("h1", {
-						className: g.a.appealPageHeader
+						className: f.a.appealPageHeader
 					}, n.fbt._("Appeal suspension", null, {
 						hk: "3LDNeF"
-					})), a.appealSuccess ? this.renderConfirmationPage() : this.renderForm(t))
+					})), t.appealSuccess ? this.renderConfirmationPage() : this.renderForm(a))
 				}
 			}
-			a.default = Object(p.b)(v(F))
+			t.default = Object(d.b)(E(v))
 		},
 		"./src/redditGQL/operations/AppealEligibility.json": function(e) {
 			e.exports = JSON.parse('{"id":"5b6b7dbe1d77"}')
@@ -874,4 +838,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Appeal.0092339f0b627c5429a9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Appeal.0d4d3adf4987e87fe761.js.map
