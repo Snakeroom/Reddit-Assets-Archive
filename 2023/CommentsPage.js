@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.0119533fb6cff20c0687.js
-// Retrieved at 7/27/2023, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.1fc07e5cdcdd5f1e50c5.js
+// Retrieved at 7/27/2023, 4:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "CollectionCommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba", "Governance~ModListing~Reddit~ReportFlow", "CollectionCommentsPage~ModProgressModule~NewCommunityProgress", "Governance~ModListing~Reddit", "ModListing~Reddit~StandalonePostPage", "CollectionCommentsPage~SearchResults", "AchievementsActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -24382,9 +24382,10 @@
 					onFollowPostClick: z,
 					onSubscribed: Z
 				} = e;
-				const Y = A,
-					Q = G && Object(y.i)(G),
-					X = Object(i.e)(e => {
+				const Y = A;
+				let Q = G && Object(y.i)(G);
+				null == Q && (Q = !1);
+				const X = Object(i.e)(e => {
 						if (!Q) return !0;
 						const t = Object(j.Jb)(e, B.author || "");
 						return !t || t.enableFollowers
@@ -24414,7 +24415,8 @@
 					tooltipType: R ? p.f.Lightbox : void 0,
 					post: B,
 					showSub: W,
-					subredditOrProfile: G
+					subredditOrProfile: G,
+					isProfile: Q
 				}), o.a.createElement(m.a, {
 					className: S.a.postBadges,
 					displayText: G ? G.displayText : null,
@@ -50398,4 +50400,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.0119533fb6cff20c0687.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.1fc07e5cdcdd5f1e50c5.js.map

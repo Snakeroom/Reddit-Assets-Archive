@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.f927ca0855d507543b4d.js
-// Retrieved at 7/25/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.16bf7c90910affcfcfb2.js
+// Retrieved at 7/27/2023, 4:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "AchievementsActions"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -5995,9 +5995,10 @@
 					onFollowPostClick: G,
 					onSubscribed: Y
 				} = e;
-				const J = R,
-					Z = z && Object(O.i)(z),
-					X = Object(i.e)(e => {
+				const J = R;
+				let Z = z && Object(O.i)(z);
+				null == Z && (Z = !1);
+				const X = Object(i.e)(e => {
 						if (!Z) return !0;
 						const t = Object(k.Jb)(e, D.author || "");
 						return !t || t.enableFollowers
@@ -6027,7 +6028,8 @@
 					tooltipType: A ? p.f.Lightbox : void 0,
 					post: D,
 					showSub: H,
-					subredditOrProfile: z
+					subredditOrProfile: z,
+					isProfile: Z
 				}), o.a.createElement(u.a, {
 					className: P.a.postBadges,
 					displayText: z ? z.displayText : null,
@@ -11489,4 +11491,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.f927ca0855d507543b4d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.16bf7c90910affcfcfb2.js.map

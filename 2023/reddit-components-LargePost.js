@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.910b663d85270661f07a.js
-// Retrieved at 7/27/2023, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.d4e9060eab95d3ebadcc.js
+// Retrieved at 7/27/2023, 4:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -7206,9 +7206,10 @@
 					onFollowPostClick: q,
 					onSubscribed: Q
 				} = e;
-				const Y = D,
-					J = H && Object(y.i)(H),
-					Z = Object(a.e)(e => {
+				const Y = D;
+				let J = H && Object(y.i)(H);
+				null == J && (J = !1);
+				const Z = Object(a.e)(e => {
 						if (!J) return !0;
 						const t = Object(C.Jb)(e, F.author || "");
 						return !t || t.enableFollowers
@@ -7238,7 +7239,8 @@
 					tooltipType: L ? p.f.Lightbox : void 0,
 					post: F,
 					showSub: W,
-					subredditOrProfile: H
+					subredditOrProfile: H,
+					isProfile: J
 				}), r.a.createElement(m.a, {
 					className: S.a.postBadges,
 					displayText: H ? H.displayText : null,
@@ -10483,4 +10485,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.910b663d85270661f07a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.d4e9060eab95d3ebadcc.js.map
