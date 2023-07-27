@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.4cbce657b47449775e74.js
-// Retrieved at 7/25/2023, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.910b663d85270661f07a.js
+// Retrieved at 7/27/2023, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~RichTextEditor~reddit-components-MediumPost~reddit-components-NotificationUnit-Button~removal~87f825ba"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -718,51 +718,51 @@
 		"./src/reddit/actions/comment/authoring.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "f", (function() {
-				return he
+				return Oe
 			})), s.d(t, "r", (function() {
-				return ve
-			})), s.d(t, "p", (function() {
 				return _e
+			})), s.d(t, "p", (function() {
+				return ge
 			})), s.d(t, "t", (function() {
-				return ye
-			})), s.d(t, "w", (function() {
 				return je
-			})), s.d(t, "q", (function() {
+			})), s.d(t, "w", (function() {
 				return Ce
+			})), s.d(t, "q", (function() {
+				return ke
 			})), s.d(t, "v", (function() {
-				return Ie
-			})), s.d(t, "o", (function() {
 				return Ne
+			})), s.d(t, "o", (function() {
+				return we
 			})), s.d(t, "m", (function() {
-				return Pe
+				return Te
 			})), s.d(t, "b", (function() {
-				return Re
+				return Ae
 			})), s.d(t, "c", (function() {
-				return Le
-			})), s.d(t, "s", (function() {
 				return De
-			})), s.d(t, "g", (function() {
+			})), s.d(t, "s", (function() {
 				return Be
-			})), s.d(t, "h", (function() {
+			})), s.d(t, "g", (function() {
 				return Fe
-			})), s.d(t, "k", (function() {
+			})), s.d(t, "h", (function() {
 				return Ue
+			})), s.d(t, "k", (function() {
+				return ze
 			})), s.d(t, "e", (function() {
-				return We
+				return Ke
 			})), s.d(t, "d", (function() {
-				return Ve
-			})), s.d(t, "a", (function() {
 				return qe
-			})), s.d(t, "j", (function() {
+			})), s.d(t, "a", (function() {
 				return Qe
+			})), s.d(t, "j", (function() {
+				return Ye
 			})), s.d(t, "i", (function() {
-				return Xe
-			})), s.d(t, "l", (function() {
 				return $e
-			})), s.d(t, "u", (function() {
+			})), s.d(t, "l", (function() {
 				return et
-			})), s.d(t, "n", (function() {
+			})), s.d(t, "u", (function() {
 				return tt
+			})), s.d(t, "n", (function() {
+				return st
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
@@ -818,16 +818,17 @@
 						}
 					}).then(e => !e.ok || e.body.data.isValidComment)
 				},
-				B = async (e, t, s, n) => {
-					const o = {
+				B = async (e, t, s, n, o) => {
+					const r = {
 						api_type: "json",
 						return_rtjson: !0,
-						thing_id: t
+						thing_id: t,
+						recaptcha_token: o
 					};
-					return s.commentMode === P.i.MARKDOWN ? o.text = s.text : (o.text = null, o.richtext_json = n), Object(E.a)(Object(j.a)(e, [k.a]), {
+					return s.commentMode === P.i.MARKDOWN ? r.text = s.text : (r.text = null, r.richtext_json = n), Object(E.a)(Object(j.a)(e, [k.a]), {
 						method: g.ob.POST,
 						endpoint: Object(S.a)(Object(T.a)(Object(R.a)(`${e.apiUrl}/api/comment.json`))),
-						data: o
+						data: r
 					}).then(e => e.ok ? e.body.json ? e.body.json.errors.length ? {
 						...e,
 						ok: !1,
@@ -917,11 +918,12 @@
 			var de = s("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				le = s("./src/reddit/selectors/platform.ts"),
 				ue = s("./src/reddit/selectors/posts.ts"),
-				me = s("./src/reddit/selectors/user.ts"),
-				pe = s("./src/reddit/actions/comment/index.ts"),
-				be = s("./src/reddit/actions/comment/constants.ts");
-			const fe = Object(o.a)(be.m),
-				he = e => {
+				me = s("./src/reddit/selectors/tracking.ts"),
+				pe = s("./src/reddit/selectors/user.ts"),
+				be = s("./src/reddit/actions/comment/index.ts"),
+				fe = s("./src/reddit/actions/comment/constants.ts");
+			const he = Object(o.a)(fe.m),
+				Oe = e => {
 					let {
 						hasFocus: t,
 						draftKey: s
@@ -929,28 +931,28 @@
 					return async (e, n) => {
 						const o = n();
 						if (!!o.features.comments.drafts[s])
-							if (Object(me.U)(o) && t) {
-								const n = fe({
+							if (Object(pe.U)(o) && t) {
+								const n = he({
 									hasFocus: t,
 									draftKey: s
 								});
 								e(Object(c.startChangeUsernameFlow)(n))
-							} else e(fe({
+							} else e(he({
 								hasFocus: t,
 								draftKey: s
 							}))
 					}
 				},
-				Oe = Object(o.a)(be.L),
-				xe = Object(o.a)(be.H),
-				ve = Object(o.a)(be.N),
-				_e = Object(o.a)(be.M),
-				ge = Object(o.a)(be.K),
-				Ee = async (e, t, s, n, o) => {
+				xe = Object(o.a)(fe.L),
+				ve = Object(o.a)(fe.H),
+				_e = Object(o.a)(fe.N),
+				ge = Object(o.a)(fe.M),
+				Ee = Object(o.a)(fe.K),
+				ye = async (e, t, s, n, o) => {
 					const r = n.ok && n.body,
 						a = r && r.comment && r.comment.id;
 					await J.g(e, s, t, o, a)
-				}, ye = "Toxicity_Warning__Modal", je = e => async (t, s, n) => {
+				}, je = "Toxicity_Warning__Modal", Ce = e => async (t, s, n) => {
 					let {
 						gqlContext: o
 					} = n;
@@ -963,11 +965,11 @@
 						editorMode: d
 					} = e;
 					if (H.d.enableToxicityWarning(r)) {
-						if (!(await D(o(), i, c, d))) return void t(Object(l.i)(ye))
+						if (!(await D(o(), i, c, d))) return void t(Object(l.i)(je))
 					}
-					t(Ce(e))
-				}, Ce = e => async (t, s) => {
-					t(Object(l.g)(ye));
+					t(ke(e))
+				}, ke = e => async (t, s) => {
+					t(Object(l.g)(je));
 					const n = s(),
 						o = Object(de.a)(n),
 						r = Object(de.c)(n);
@@ -984,13 +986,13 @@
 							},
 							isSkipOnboarding: r
 						})
-					} else t(Se(e, !1))
+					} else t(Ie(e, !1))
 				};
 
-			function ke(e, t) {
+			function Se(e, t) {
 				return e === P.i.MARKDOWN && ce(t)
 			}
-			const Se = (e, t, s, o) => {
+			const Ie = (e, t, s, o) => {
 					let {
 						postId: r,
 						commentsPageKey: c,
@@ -1018,10 +1020,10 @@
 							S = Object(oe.f)(j, {
 								commentId: k
 							}),
-							I = Object(me.m)(j);
+							I = Object(pe.m)(j);
 						if (!I) return;
 						if (S && !C) return;
-						t || e(Oe({
+						t || e(xe({
 							draftKey: k,
 							draft: l,
 							commentsPageKey: c,
@@ -1039,9 +1041,9 @@
 						let w;
 						const T = t && s ? s : Object(G.e)(l, j.uploads),
 							R = Object(G.f)(T, j.uploads);
-						if ((w = ke(N, j) ? await F(E(), r, null, l, T) : await B(g(), r, l, T)).ok) {
+						if ((w = Se(N, j) ? await F(E(), r, null, l, T) : await B(g(), r, l, T, Object(me.a)(j))).ok) {
 							const s = w.body;
-							if (e(ve({
+							if (e(_e({
 									...s,
 									headCommentId: Object(ne.w)(j, {
 										commentsPageKey: c
@@ -1071,7 +1073,7 @@
 							const s = w.error && w.error.fields && w.error.fields[0] ? w.error.fields[0].msg : n.fbt._("Something went wrong", null, {
 								hk: "LWFS0"
 							});
-							e(ge({
+							e(Ee({
 								draftKey: k,
 								error: w.error
 							})), C || e(Object(h.f)({
@@ -1080,10 +1082,10 @@
 								text: s
 							}))
 						}
-						Ee(v(), c, u, w, null == R ? void 0 : R.metadata).then(() => w.ok && u === P.i.RICH_TEXT ? Object(V.b)(V.a.CommentComposer) : void 0), p || Object(f.d)(), t && Object(Y.a)()
+						ye(v(), c, u, w, null == R ? void 0 : R.metadata).then(() => w.ok && u === P.i.RICH_TEXT ? Object(V.b)(V.a.CommentComposer) : void 0), p || Object(f.d)(), t && Object(Y.a)()
 					}
 				},
-				Ie = e => async (t, s, n) => {
+				Ne = e => async (t, s, n) => {
 					let {
 						gqlContext: o
 					} = n;
@@ -1097,9 +1099,9 @@
 					} = e, m = s(), p = Object(le.e)(m);
 					let b = "";
 					if (p && (b = p.name), H.d.enableToxicityWarning(m)) {
-						if (!(await D(o(), b, d, u))) return void t(Object(l.i)(ye))
+						if (!(await D(o(), b, d, u))) return void t(Object(l.i)(je))
 					}
-					t(Ne({
+					t(we({
 						commentsPageKey: a,
 						draftKey: c,
 						parentCommentDepth: i,
@@ -1107,12 +1109,8 @@
 						formData: d,
 						editorMode: u
 					}))
-				}, Ne = e => async (t, s) => {
-					t(Object(l.g)(ye)), await t(Object(b.b)({
-						action: a.a.CommentSubmit,
-						catchAndLogError: !0,
-						experiment: x.K
-					}));
+				}, we = e => async (t, s) => {
+					t(Object(l.g)(je));
 					const n = s(),
 						o = Object(de.a)(n),
 						r = Object(de.c)(n);
@@ -1129,85 +1127,97 @@
 							},
 							isSkipOnboarding: r
 						})
-					} else t(we(e, !1))
-				}, we = (e, t, s, n) => async (o, r, a) => {
+					} else t(Pe(e, !1))
+				}, Pe = (e, t, s, n) => async (o, r, c) => {
 					let {
-						apiContext: c,
-						gqlContext: d
-					} = a;
-					var l;
+						apiContext: d,
+						gqlContext: l
+					} = c;
+					var u;
 					const {
-						parentCommentId: u,
-						commentsPageKey: m,
-						parentCommentDepth: p,
-						draftKey: b,
-						formData: h,
-						editorMode: O
-					} = e, x = r(), v = Object(oe.c)(x, {
-						commentId: u
-					}), _ = v && Object(se.d)(x, {
-						postId: v.postId
-					}) && Object(re.e)(x), g = v && Object(se.d)(x, {
-						postId: v.postId
-					}), E = g ? Object(G.b)() : b, y = Object(oe.f)(x, {
-						commentId: E
-					}), j = Object(me.m)(x);
-					if (!j) return;
-					if (y && !g) return;
-					t || o(Oe({
-						draftKey: E,
-						draft: h,
-						commentsPageKey: m,
-						optimisticComment: g && v ? Object(G.c)({
-							temporalId: E,
-							draft: h,
-							post: Object(ue.F)(x, {
-								postId: v.postId
-							}),
-							author: j,
-							subredditId: (null === (l = Object(le.e)(x)) || void 0 === l ? void 0 : l.id) || "",
-							parentId: v.id
-						}) : void 0
-					})), _ || o(Re({
-						parentCommentId: u,
-						commentsPageKey: m
+						parentCommentId: m,
+						commentsPageKey: p,
+						parentCommentDepth: h,
+						draftKey: O,
+						formData: v,
+						editorMode: _
+					} = e;
+					await o(Object(b.b)({
+						action: a.a.CommentSubmit,
+						catchAndLogError: !0,
+						experiment: x.K
 					}));
-					const C = h.commentMode,
-						k = t && s ? s : Object(G.e)(h, x.uploads),
-						S = Object(G.f)(k, x.uploads);
-					let I;
-					if ((I = ke(C, x) ? await F(d(), null, u, h, k) : await B(c(), u, h, k)).ok) {
-						if (o(_e({
-								...I.body,
-								parentCommentId: u,
-								commentsPageKey: m,
-								draftKey: E,
-								depth: p + 1,
-								upload: S
+					const g = r(),
+						E = Object(oe.c)(g, {
+							commentId: m
+						}),
+						y = E && Object(se.d)(g, {
+							postId: E.postId
+						}) && Object(re.e)(g),
+						j = E && Object(se.d)(g, {
+							postId: E.postId
+						}),
+						C = j ? Object(G.b)() : O,
+						k = Object(oe.f)(g, {
+							commentId: C
+						}),
+						S = Object(pe.m)(g);
+					if (!S) return;
+					if (k && !j) return;
+					t || o(xe({
+						draftKey: C,
+						draft: v,
+						commentsPageKey: p,
+						optimisticComment: j && E ? Object(G.c)({
+							temporalId: C,
+							draft: v,
+							post: Object(ue.F)(g, {
+								postId: E.postId
+							}),
+							author: S,
+							subredditId: (null === (u = Object(le.e)(g)) || void 0 === u ? void 0 : u.id) || "",
+							parentId: E.id
+						}) : void 0
+					})), y || o(Ae({
+						parentCommentId: m,
+						commentsPageKey: p
+					}));
+					const I = v.commentMode,
+						N = t && s ? s : Object(G.e)(v, g.uploads),
+						w = Object(G.f)(N, g.uploads);
+					let P;
+					if ((P = Se(I, g) ? await F(l(), null, m, v, N) : await B(d(), m, v, N, Object(me.a)(g))).ok) {
+						if (o(ge({
+								...P.body,
+								parentCommentId: m,
+								commentsPageKey: p,
+								draftKey: C,
+								depth: h + 1,
+								upload: w
 							})), t) {
-							const e = Object(le.i)(x);
+							const e = Object(le.i)(g);
 							Object(i.a)(!!e)
 						}
 					} else {
-						if (I.error) {
-							if (!v) return;
-							const e = t && n ? n : Object(G.d)(h, x.uploads);
+						if (P.error) {
+							if (!E) return;
+							const e = t && n ? n : Object(G.d)(v, g.uploads);
 							J.f({
-								state: x,
+								state: g,
 								bodyText: e,
-								postId: v.postId,
-								parentId: u,
-								error: I.error,
-								uploadMetadata: null == S ? void 0 : S.metadata
+								postId: E.postId,
+								parentId: m,
+								error: P.error,
+								uploadMetadata: null == w ? void 0 : w.metadata
 							})
 						}
-						o(ge({
-							draftKey: E,
-							error: I.error
+						o(Ee({
+							draftKey: C,
+							error: P.error
 						}))
 					}
-					Ee(r(), m, O, I, null == S ? void 0 : S.metadata), _ || Object(f.d)(), t && Object(Y.a)()
-				}, Pe = () => async e => {
+					ye(r(), p, _, P, null == w ? void 0 : w.metadata), y || Object(f.d)(), t && Object(Y.a)()
+				}, Te = () => async e => {
 					const t = Object(Y.b)();
 					if (t) {
 						const {
@@ -1220,21 +1230,21 @@
 							},
 							isSkipOnboarding: i
 						} = t;
-						i && e(Object(u.skipOnboardingModal)()), o ? await e(Se({
+						i && e(Object(u.skipOnboardingModal)()), o ? await e(Ie({
 							...t.comment,
 							postId: o
-						}, !0, r, a)) : n && void 0 !== s && await e(we({
+						}, !0, r, a)) : n && void 0 !== s && await e(Pe({
 							...t.comment,
 							parentCommentId: n,
 							parentCommentDepth: s
 						}, !0, r, a))
 					}
-				}, Te = Object(o.a)(be.s), Re = Object(o.a)(be.r), Ae = Object(o.a)(be.n), Me = (Object(o.a)(be.i), Object(o.a)(be.o)), Le = (Object(o.a)(be.v), (e, t, s) => async (o, r, a) => {
+				}, Re = Object(o.a)(fe.s), Ae = Object(o.a)(fe.r), Me = Object(o.a)(fe.n), Le = (Object(o.a)(fe.i), Object(o.a)(fe.o)), De = (Object(o.a)(fe.v), (e, t, s) => async (o, r, a) => {
 					let {
 						apiContext: i
 					} = a;
 					const c = e === P.i.RICH_TEXT;
-					if (!t || "object" == typeof t && Object($.I)(t)) o(Me({
+					if (!t || "object" == typeof t && Object($.I)(t)) o(Le({
 						editorMode: e,
 						draftKey: s,
 						content: c ? $.j : ""
@@ -1244,7 +1254,7 @@
 						const r = await Object(K.a)(i(), e, c ? t : JSON.stringify(t));
 						if (r.ok) {
 							const t = r.body.output;
-							o(Object(p.a)(s)), o(Me({
+							o(Object(p.a)(s)), o(Le({
 								editorMode: e,
 								draftKey: s,
 								content: t
@@ -1257,7 +1267,7 @@
 							})
 						}))
 					}
-				}), De = e => {
+				}), Be = e => {
 					let {
 						commentsPageKey: t,
 						parentCommentId: s,
@@ -1266,7 +1276,7 @@
 					return async (e, o) => {
 						const a = o(),
 							i = Object(r.a)(X.c.replyToComment, s);
-						if (!Object(me.S)(o()) && !Object(de.a)(a)) return e(Object(d.openRegisterModal)()), void e(Object(l.k)({
+						if (!Object(pe.S)(o()) && !Object(de.a)(a)) return e(Object(d.openRegisterModal)()), void e(Object(l.k)({
 							actionSource: l.a.Reply,
 							redirectUrl: Object(ne.m)(o(), {
 								commentId: s
@@ -1274,7 +1284,7 @@
 						}));
 						const u = a.features.comments.replyFormOpen[t],
 							m = u && u[s];
-						if ((m || u && n) && (Object.keys(u).forEach(s => u[s] && e(Re({
+						if ((m || u && n) && (Object.keys(u).forEach(s => u[s] && e(Ae({
 								parentCommentId: s,
 								commentsPageKey: t
 							}))), m)) return;
@@ -1306,44 +1316,44 @@
 								draftType: X.c.replyToComment,
 								rtJson: b,
 								text: ""
-							}, Object(me.U)(a)) {
-							const n = Te({
+							}, Object(pe.U)(a)) {
+							const n = Re({
 								parentCommentId: s,
 								commentsPageKey: t,
 								draftKey: i,
 								formData: x
 							});
 							e(Object(c.startChangeUsernameFlow)(n))
-						} else e(Te({
+						} else e(Re({
 							parentCommentId: s,
 							commentsPageKey: t,
 							draftKey: i,
 							formData: x
 						}))
 					}
-				}, Be = e => async t => {
-					t(Object(pe.r)(e)), t(We(e))
-				}, Fe = e => {
+				}, Fe = e => async t => {
+					t(Object(be.r)(e)), t(Ke(e))
+				}, Ue = e => {
 					let {
 						parentCommentId: t,
 						commentsPageKey: s
 					} = e;
 					return async e => {
-						e(Re({
+						e(Ae({
 							parentCommentId: t,
 							commentsPageKey: s
-						})), e(De({
+						})), e(Be({
 							parentCommentId: t,
 							commentsPageKey: s
-						})), e(Object(pe.r)({
+						})), e(Object(be.r)({
 							commentId: t,
 							commentsPageKey: s
 						}))
 					}
-				}, Ue = (e, t) => s => s(Ae({
+				}, ze = (e, t) => s => s(Me({
 					draftKey: e,
 					formData: t
-				})), ze = Object(o.a)(be.u), We = e => {
+				})), We = Object(o.a)(fe.u), Ke = e => {
 					let {
 						commentId: t,
 						commentMode: s,
@@ -1353,7 +1363,7 @@
 					} = e;
 					return async (e, a) => {
 						const i = a();
-						i.user.account && (J.c(i), e(ze({
+						i.user.account && (J.c(i), e(We({
 							commentId: t,
 							commentsPageKey: n,
 							draftKey: o,
@@ -1366,7 +1376,7 @@
 							}
 						})))
 					}
-				}, Ke = Object(o.a)(be.F), He = Object(o.a)(be.E), Ge = Object(o.a)(be.G), Ve = Object(o.a)(be.j), qe = Object(o.a)(be.f), Qe = e => {
+				}, He = Object(o.a)(fe.F), Ge = Object(o.a)(fe.E), Ve = Object(o.a)(fe.G), qe = Object(o.a)(fe.j), Qe = Object(o.a)(fe.f), Ye = e => {
 					let {
 						id: t,
 						commentsPageKey: s,
@@ -1380,13 +1390,13 @@
 						} = a;
 						const d = r();
 						if (!d.user.account) return;
-						e(Ke({
+						e(He({
 							draftKey: n
 						})), J.d(d);
 						const l = Object(G.e)(o, d.uploads),
 							u = o.commentMode;
 						let m;
-						if ((m = ke(u, d) ? await (async (e, t, s, n, o) => {
+						if ((m = Se(u, d) ? await (async (e, t, s, n, o) => {
 								const r = o === P.i.MARKDOWN,
 									a = {
 										commentId: t,
@@ -1458,26 +1468,26 @@
 								})
 							})(i(), t, o, l, u)).ok) {
 							const o = m.body;
-							e(Ge({
+							e(Ve({
 								commentId: t,
 								commentsPageKey: s,
 								draftKey: n
-							})), e(Object(pe.j)({
+							})), e(Object(be.j)({
 								[t]: {
 									...o.comment
 								}
 							}))
-						} else e(He({
+						} else e(Ge({
 							draftKey: n,
 							error: m.error
 						}))
 					}
-				}, Ye = Object(o.a)(be.C), Je = Object(o.a)(be.B), Ze = Object(o.a)(be.D), Xe = (e, t) => async (s, n, o) => {
+				}, Je = Object(o.a)(fe.C), Ze = Object(o.a)(fe.B), Xe = Object(o.a)(fe.D), $e = (e, t) => async (s, n, o) => {
 					let {
 						apiContext: r
 					} = o;
 					const a = n();
-					s(Ye({
+					s(Je({
 						id: e
 					})), J.a(e, a);
 					const i = await ((e, t) => Object(E.a)(Object(j.a)(e, [k.a]), {
@@ -1497,33 +1507,33 @@
 						...e,
 						error: e.error || Object(I.a)()
 					}))(r(), e);
-					i.ok ? s(Ze({
+					i.ok ? s(Xe({
 						id: e,
 						postId: t
-					})) : s(Je({
+					})) : s(Ze({
 						id: e,
 						error: i.error
 					}))
-				}, $e = e => async (t, s, n) => {
+				}, et = e => async (t, s, n) => {
 					let {
 						apiContext: o
 					} = n;
 					const r = !s().features.comments.models[e].sendReplies;
-					t(Object(pe.j)({
+					t(Object(be.j)({
 						[e]: {
 							sendReplies: r
 						}
-					})), (await Object(W.p)(o(), e, r)).ok || t(Object(pe.j)({
+					})), (await Object(W.p)(o(), e, r)).ok || t(Object(be.j)({
 						[e]: {
 							sendReplies: !r
 						}
 					}))
-				}, et = (e, t) => async (s, o, r) => {
+				}, tt = (e, t) => async (s, o, r) => {
 					let {
 						gqlContext: a
 					} = r;
 					var i, c, d, l, u, m;
-					s(Object(pe.c)());
+					s(Object(be.c)());
 					const p = e => Object(h.f)(Object(h.e)(e, te.b.Error));
 					if (((null === (c = null === (i = o().pages) || void 0 === i ? void 0 : i.comments) || void 0 === c ? void 0 : c.followed) || []).length === v.a) s(p(n.fbt._("You've reached your post follow limit", null, {
 						hk: "3ebRql"
@@ -1534,7 +1544,7 @@
 								id: e,
 								expiresAt: Date.now() + 6048e5
 							};
-						if (s(Object(pe.p)(i)), (await ((e, t) => Object(y.a)(e, {
+						if (s(Object(be.p)(i)), (await ((e, t) => Object(y.a)(e, {
 								...z,
 								variables: {
 									input: t
@@ -1553,13 +1563,13 @@
 								kind: te.b.SuccessCommunityGreen,
 								text: e
 							}))
-						} else s(Object(pe.p)(i)), s(p(n.fbt._("Sorry, we had trouble doing that. Please try again.", null, {
+						} else s(Object(be.p)(i)), s(p(n.fbt._("Sorry, we had trouble doing that. Please try again.", null, {
 							hk: "2N0vVk"
 						})))
 					}
 				};
 
-			function tt(e) {
+			function st(e) {
 				let {
 					commentId: t,
 					commentsPageKey: s
@@ -1570,7 +1580,7 @@
 							commentId: t
 						});
 					if (!r) return;
-					e(xe({
+					e(ve({
 						commentId: t,
 						commentsPageKey: s
 					}));
@@ -1591,7 +1601,7 @@
 								commentsPageKey: s
 							});
 						if (!t || null === n) return;
-						await e(Ne({
+						await e(we({
 							commentsPageKey: s,
 							draftKey: r.id,
 							parentCommentDepth: n,
@@ -1599,7 +1609,7 @@
 							formData: a,
 							editorMode: r.media.rteMode
 						}))
-					} else await e(Ce({
+					} else await e(ke({
 						postId: r.postId,
 						commentsPageKey: s,
 						draftKey: r.id,
@@ -10473,4 +10483,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.4cbce657b47449775e74.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.910b663d85270661f07a.js.map
